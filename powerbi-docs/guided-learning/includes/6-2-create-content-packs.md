@@ -1,4 +1,4 @@
-I denne lektion opretter vi en *indholdspakke* med eksisterende artefakter, som vi allerede har i Power BI, og deler dem med kolleger.
+I denne lektion opretter vi en *indholdspakke* med eksisterende artefakter, som vi allerede har i Power BI, og deler dem med kolleger. 
 
 I **Mit arbejdsområde** har jeg et dashboard, rapporten nedenunder og datasættet. Jeg vil dele dem som en pakke med personer i min organisation, så de kan genbruge dem.
 
