@@ -1,0 +1,17 @@
+- name: Dokumenter
+  href: /
+  topicHref: /
+  items:
+    - name: Power BI
+      tocHref: /power-bi/
+      topicHref: /power-bi/
+      items:
+        - name: Developer
+          tocHref: /power-bi/developer/
+          topicHref: /power-bi/developer/
+        - name: Automatiseret læring
+          tocHref: /power-bi/guided-learning/
+          topicHref: /power-bi/guided-learning/
+        - name: Report Server
+          tocHref: /power-bi/report-server/
+          topicHref: /power-bi/report-server/
