@@ -12,16 +12,16 @@ metadata:
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 10/27/2017
+  ms.date: 12/05/2017
   ms.author: davidi
 items:
 - durationInMinutes: 1
-  content: "Tilknyt flere datakilder, og kombiner dem, så de danner en unik datamodel, som passer til dine behov.\n"
-  ms.openlocfilehash: 6486ec39aa624f4387c6006637b9b77e47fe0c2a
-  ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+  content: "Ved hjælp af **modelleringsegenskaberne** i **Power BI** kan du tilknytte flere datakilder og kombinere dem, så de danner en unik datamodel, som passer til dine behov.\n"
+  ms.openlocfilehash: 760a683fd4267f2dc1fc3e59783770ad4904dcfb
+  ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 11/15/2017
+  ms.lasthandoff: 12/06/2017
 - title: Introduktion til udformning af dine data
   durationInMinutes: 3
   content: >
@@ -71,4 +71,4 @@ items:
 
 
     [!INCLUDE [](includes/2-6a-explore-time-based-data.md)]
-- content: "Du har fuldført afsnittet **Udformning** på kurset med vejledning til Power BI.\0"
+- content: "Det kører for dig. Bliv bare ved med at lære mere om Power BI! Du har fuldført afsnittet **Udformning** på kurset med vejledning til Power BI. Så gælder det visualiseringer.\0"

@@ -6,22 +6,22 @@ metadata:
   audience: Business User
   level: Beginner
   nextTutorialHref: modeling
-  nextTutorialTitle: Modellering
+  nextTutorialTitle: Udformning
   displayType: one-column
   author: davidiseminger
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 10/27/2017
+  ms.date: 12/05/2017
   ms.author: davidi
 items:
 - durationInMinutes: 1
-  content: "Udforsk og få mere at vide om de mange forskellige måder, du kan hente og arbejde med data i Power BI.\n"
-  ms.openlocfilehash: b994ce3414ac359333199c2174570ee314193341
-  ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+  content: "Dataene er i hjertet af Power BI. I sektionen **Automatiseret læring** kan du få mere at vide om, hvordan du henter og arbejder med data i Power BI.\n"
+  ms.openlocfilehash: a490c763a04fb3558ebc6e973ff1ec00d18c876c
+  ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 11/15/2017
+  ms.lasthandoff: 12/06/2017
 - title: Oversigt over Power BI Desktop
   durationInMinutes: 4
   content: >
@@ -64,4 +64,4 @@ items:
 
 
     [!INCLUDE [](includes/1-5-cleaning-irregular-data.md)]
-- content: "Du har fuldført afsnittet **Hent data** i Power BI Automatiseret læring.\0"
+- content: "Sådan! Du har fuldført afsnittet **Hentning af data** i Automatiseret læring for Microsoft Power BI. Næste trin er at få mere at vide om **Modellering**, hvilket behandles i den næste selvstudium.\0"
