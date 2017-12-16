@@ -4,13 +4,13 @@ Du gjorde det! **Tillykke!** Du har gennemført kurset**Automatiseret læring** 
 
 Dette er det sidste afsnit (og det sidste emne, medmindre du vil lære DAX) på kurset, så hvis du gennemgik alle afsnittene i streg, skal du lige klappe dig selv på ryggen. Godt arbejde! Du er nu velbevandret i disse **vigtige begreber**:
 
-* Hvad [er Power BI](0-0-what-is-power-bi.md)
-* [Komponenterne](0-0b-building-blocks-power-bi.md) i Power BI
-* [At hente](1-2-connect-to-data-sources-in-power-bi-desktop.md) og [udforme](2-1-intro-modeling-data.md) data
-* [Visualiseringer](3-1-intro-visualizations.md)
-* [Udforskning af data](4-0-intro-power-bi-service.md) i Power BI-tjenesten
-* At bruge [Excel og Power BI](5-1-intro-excel-data.md) sammen
-* Og at [publicere og dele](6-0-intro-content-packs-groups.md) dit arbejde
+* Hvad [er Power BI](../gettingstarted.yml#step-1)
+* [Komponenterne](../gettingstarted.yml#step-3) i Power BI
+* [At hente](../gettingdata.yml#step-3) og [udforme](../modeling.yml#step-1) data
+* [Visualiseringer](../visualizations.yml#step-1)
+* [Udforskning af data](../exploringdata.yml#step-1) i Power BI-tjenesten
+* At bruge [Excel og Power BI](../powerbiandexcel.yml#step-1) sammen
+* Og at [publicere og dele](../publishingandsharing.yml#step-1) dit arbejde
 
 Det er meget viden, og nu hvor du har fået styr på det hele, er du klar til at tage det brug! Her er nogle **links til downloads** eller til at få din browser **tilknyttet Power BI-tjenesten**:
 

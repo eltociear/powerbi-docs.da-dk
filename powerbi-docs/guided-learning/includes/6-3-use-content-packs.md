@@ -32,5 +32,5 @@ Men jeg kan redigere dashboardet, rapporten og selv datasættene, hvis jeg vil.
 
 Så indholdspakker er en nem måde at genbruge indhold, der er oprettet af andre personer i din organisation.
 
-Videre til næste lektion: [Opret en indholdspakke i Power BI](6-4-update-content-pack.md).
+Videre til næste lektion!
 
