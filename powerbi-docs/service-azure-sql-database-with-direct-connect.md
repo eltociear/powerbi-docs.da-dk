@@ -18,10 +18,10 @@ ms.workload: powerbi
 ms.date: 08/10/2017
 ms.author: asaxton
 ms.openlocfilehash: 83613f0ed915a03b65b90d4bf61e37568b922182
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.sourcegitcommit: c2deaff54434da67698a14cc00172a2119ed1a56
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database med DirectQuery
 Få mere at vide om, hvordan du kan oprette direkte forbindelse til Azure SQL Database og oprette rapporter, der bruger livedata. Du kan beholde dine data ved kilden i stedet for i Power IB.
@@ -58,5 +58,5 @@ Dit fulde gyldige servernavn og databasenavn kan findes i Azure Portal.
 [Brug DirectQuery i Power BI Desktop](desktop-use-directquery.md)  
 [Kom i gang med Power BI](service-get-started.md)  
 [Hent data til Power BI](service-get-data.md)  
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
