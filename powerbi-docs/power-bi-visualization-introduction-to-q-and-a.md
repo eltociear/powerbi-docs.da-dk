@@ -57,7 +57,7 @@ Hvordan kunne vi oprette dette samme kurvediagram ved hjælp af Spørgsmål og s
    Når du er færdig med at skrive dit spørgsmål, er resultatet præcis det samme diagram, som vi så i rapporten.  Men det er meget hurtigere at lave det sådan her!
    
    ![](media/power-bi-visualization-introduction-to-q-and-a/powerbi-qna-areachart.png)
-3. Ligesom når du arbejder med rapporter, har du i Spørgsmål og svar adgang til ruderne Visualiseringer, Filtre og Felter.  Åbn disse ruder for at finde ud af mere og ændre din visualisering.
+3. Ligesom når du arbejder med rapporter, har du i Spørgsmål og svar adgang til ruderne Visualiseringer, Filtre og Felter.  Åbn disse ruder for at finde ud af mere og ændre din visual.
 4. Du kan sætte diagrammet fast på dit dashboard ved at vælge tegnestiftikonet ![](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png).
 
 ## <a name="next-steps"></a>Næste trin
