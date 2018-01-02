@@ -62,7 +62,7 @@ Nu hvor vores datasæt er blevet importeret, så lad os komme i gang med at besv
 1. I ruden Fields skal du vælge **Sales** > **This Year Sales** > **Værdi**.
    
     ![](media/service-report-create-new/power-bi-report-step1.png)
-2. Konvertér dit visuelle element til en måler ved at vælge skabelonen Gauge ![](media/service-report-create-new/powerbi-gauge-icon.png) fra ruden **Visualizations**.
+2. Konvertér din visual til en måler ved at vælge skabelonen Gauge ![](media/service-report-create-new/powerbi-gauge-icon.png) fra ruden **Visualizations**.
    
     ![](media/service-report-create-new/power-bi-report-step2.png)
 3. Træk **Sales** > **This Year Sales** > **Goal** til feltet **Target value**. Det ser ud til, at vi er meget tæt på vores mål.
@@ -79,7 +79,7 @@ Vores marketingchef har nogle yderligere spørgsmål, vi skal besvare. Hun vil g
 2. Fjern markeringen af måleren. I ruden Felter skal du vælge **Sales** > **This Year Sales** > **Value**og vælge **Sales** > **Last Year Sales**.
    
     ![](media/service-report-create-new/power-bi-report-step4.png)
-3. Konvertér dit visuelle element til et områdediagram ved at vælge skabelonen Area chart ![](media/service-report-create-new/power-bi-areachart-icon.png) i ruden **Visualizations**.
+3. Konvertér din visual til et områdediagram ved at vælge skabelonen Area chart ![](media/service-report-create-new/power-bi-areachart-icon.png) i ruden **Visualizations**.
 4. Vælg **Time** > **Period** for at føje den til feltet **Axis**.
    
     ![](media/service-report-create-new/power-bi-report-step5.png)
@@ -93,12 +93,12 @@ Vores marketingchef har nogle yderligere spørgsmål, vi skal besvare. Hun vil g
 8. Brug udsnitsværktøjet til at søge efter mønstre og indsigt efter område (District).
    
    ![](media/service-report-create-new/power-bi-slicer-video2.gif)  
-9. Du kan eventuelt fortsætte med at tilføje visuelle elementer.
+9. Du kan eventuelt fortsætte med at tilføje visualiseringer.
 
 ## <a name="next-steps"></a>Næste trin
 * [Opret en kopi af en rapport](power-bi-report-copy.md)
 * [Gem rapporten](service-report-save.md)    
 * [Tilføj en ny side i rapporten](power-bi-report-add-page.md)  
-* Se, hvordan du kan [fastgøre visuelle elementer til et dashboard](service-dashboard-pin-tile-from-report.md)    
+* Se, hvordan du kan [fastgøre visualiseringer til et dashboard](service-dashboard-pin-tile-from-report.md)    
 * Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
 

@@ -1,7 +1,6 @@
 ## <a name="list-of-available-data-source-types"></a>Liste over tilgængelige datakildetyper
 | **Datakilde** | **Live/DirectQuery** | **Brugerkonfigureret manuel eller planlagt opdatering** |
 | --- | --- | --- | --- |
-| Amazon Redshift |Ja |Ja |
 | Analysis Services Tabular |Ja |Ja |
 | Analysis Services Multidimensional |Ja |Ja |
 | Fil |Nej |Ja |

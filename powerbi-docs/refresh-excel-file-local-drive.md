@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: fc061d2f8c85a53028e6de82e4a1e21057be6c75
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: 0adca4316cbb43a2097133a1346948b79b87bdfd
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-a-local-drive"></a>Opdater et datasæt, der er baseret på en Excel-projektmappe på et lokalt drev
 ## <a name="whats-supported"></a>Hvad understøttes?
@@ -56,7 +56,7 @@ Når du bruger Power Query (Hent og omdan data i Excel 2016) til at oprette forb
 I **Navigator** skal du klikke på **Indlæs til ...**  
     ![](media/refresh-excel-file-local-drive/refresh_loadtodm_1.png)
 
-Eller du kan åbne Query Editor ved at klikke på **Rediger** i Navigator. Der kan du klikke på **Luk og indlæs ...**  
+Eller du kan åbne Query Editor ved at klikke på **Rediger** i Navigator. Der kan du klikke på **Luk og indlæs til ...**  
     ![](media/refresh-excel-file-local-drive/refresh_loadtodm_2.png)
 
 Derefter skal du i **Indlæs til** sørge for at vælge **Føj disse data til datamodellen**.  
@@ -66,12 +66,12 @@ Derefter skal du i **Indlæs til** sørge for at vælge **Føj disse data til da
 Det er ikke noget problem. Når du bruger Power Pivot til at oprette forbindelse til og forespørge om data fra en lokal eller onlinedatakilde, indlæses dataene automatisk i datamodellen.
 
 ## <a name="how-do-i-schedule-refresh"></a>Hvordan kan jeg planlægge en opdatering?
-Når du konfigurerer en tidsplan for opdatering, opretter Power BI direkte forbindelse til datakilderne vha. forbindelsesoplysningerne og legitimationsoplysningerne i datasættet for at forespørge om opdaterede data. Derefter indlæses de opdaterede data i datasættet. Alle visuelle elementer i rapporter og dashboards, der er baseret på dette datasæt i Power BI-tjenesten, opdateres også.
+Når du konfigurerer en tidsplan for opdatering, oprettes der direkte forbindelse til datakilderne i Power BI vha. forbindelsesoplysningerne og legitimationsoplysningerne i datasættet for at hente opdaterede data. Derefter indlæses de opdaterede data i datasættet. Alle visuelle elementer i rapporter og dashboards, der er baseret på dette datasæt i Power BI-tjenesten, opdateres også.
 
 Du kan finde oplysninger om, hvordan du konfigurerer en tidsplan for opdatering, under [Konfigurer tidsplan for opdatering](refresh-scheduled-refresh.md).
 
 ## <a name="when-things-go-wrong"></a>Når det går galt
-Når det ikke går som planlagt, skyldes det normalt, at Power BI ikke kan logge på datakilder, eller at gatewayen er offline, når datasættet opretter forbindelse til en datakilde i det lokale miljø. Kontrollér, at Power BI kan logge på datakilder. Hvis en adgangskode, du bruger til at logge på en datakilde med, ændres, eller Power BI logges af datakilden, skal du prøve at logge på datakilderne igen vha. legitimationsoplysningerne for datakilden.
+Når tingene går galt, skyldes det som regel, at Power BI ikke kan logge på datakilder, at gatewayen er offline, eller hvis datasættet opretter forbindelse til en datakilde i det lokale miljø. Kontrollér, at Power BI kan logge på datakilderne. Hvis en adgangskode, du bruger til at logge på en datakilde, ændres, eller Power BI logges af datakilden, kan du prøve at logge på datakilderne igen vha. legitimationsoplysningerne for datakilden.
 
 Sørg for, at indstillingen **Send mig en mail med meddelelse om opdateringsfejl** er markeret. Du vil have det at vide med det samme, hvis en planlagt opdatering mislykkes.
 
@@ -79,12 +79,12 @@ Sørg for, at indstillingen **Send mig en mail med meddelelse om opdateringsfejl
 >Opdatering understøttes ikke for OData-feeds, der er tilknyttet og forespurgt fra Power Pivot. Brug Power Query, når du bruger en OData-feed som datakilde.
 
 ## <a name="troubleshooting"></a>Fejlfinding
-Nogle gange går opdateringen af data muligvis ikke som forventet. Det skyldes typisk et problem i forbindelse med en gateway. Se artiklerne om fejlfinding af gatewayen for at få oplysninger om værktøjer og kendte problemer.
+Nogle gange går opdateringen af data muligvis ikke som forventet. Dette skyldes som regel et problem i forbindelse med en gateway. Se artiklerne om fejlfinding af gatewayen for at få oplysninger om værktøjer og kendte problemer.
 
 [Fejlfinding af datagateway i det lokale miljø](service-gateway-onprem-tshoot.md)
 
 [Fejlfinding af Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 ## <a name="next-steps"></a>Næste trin
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

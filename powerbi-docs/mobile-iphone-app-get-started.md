@@ -127,7 +127,7 @@ Her er nogle andre ting, du kan gøre i iPhone-appen med dashboards og rapporter
 * Se dine Power BI-felter på dit [Apple Watch](mobile-apple-watch.md).
 * Indstil [databeskeder](mobile-set-data-alerts-in-the-mobile-apps.md) for dine data.
 * Del [Power BI-dashboards](mobile-share-dashboard-from-the-mobile-apps.md).
-* [Anmærk og del](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) et felt, en rapport eller et visuelt element.
+* [Anmærk og del](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) et felt, en rapport eller en visualisering.
 * [Scan en Power BI QR-kode](mobile-apps-qr-code.md) for at åbne et relateret dashboardfelt eller en rapport.
 * [Opret billedfelter](mobile-iphone-app-get-started.md) med din iPhone-app.
 * Vis [beskeder om opdateringer til din Power BI-konto](mobile-apps-notification-center.md), f.eks dashboards, som kolleger deler med dig.

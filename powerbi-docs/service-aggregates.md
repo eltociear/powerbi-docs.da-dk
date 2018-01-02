@@ -43,7 +43,7 @@ Du kan med fordel bruge det særlige afsnit til slut i denne artikel kaldet **Ti
 ## <a name="change-how-a-numeric-field-is-aggregated"></a>Tilpas måden, hvorpå et numerisk felt aggregeres
 Lad os antage, at du har et diagram, der sammenlægger salgsdata for forskellige områder, men du hellere vil beregne gennemsnittet. 
 
-1. Føj målet til et visuelt element i rapportens Redigeringsvisning.
+1. Føj målet til en visualisering i rapportens Redigeringsvisning.
 2. Find det pågældende felt i ruden Visualizations, højreklik, og vælg aggregeringstypen, du skal bruge. Hvis du ikke kan se den ønskede aggregering, skal du kontakte ejeren af datasættet. Problemet kan skyldes, at feltet er blevet kategoriseret på en bestemt måde af ejeren.  
    
    ![](media/service-aggregates/aggregate_new.png)
@@ -125,7 +125,7 @@ Sp: Jeg har et punktdiagram, og jeg vil *ikke* have, at mit felt aggregerer.  Hv
 
 Sv: Føj feltet til intervallet **Oplysninger** og ikke til intervallerne X- eller Y-akser.
 
-Sp: Når jeg føjer et tekstfelt til et visuelt element, så indstilles de fleste af dem automatisk til sum, men nogle indstilles automatisk til gennemsnit eller antal eller en anden aggregering.  Hvorfor er standardakkumuleringen ikke altid den samme?
+Sp: Når jeg føjer et tekstfelt til en visualisering, så indstilles de fleste af dem automatisk til sum, men nogle indstilles automatisk til gennemsnit eller antal eller en anden aggregering.  Hvorfor er standardakkumuleringen ikke altid den samme?
 
 Sv: Datasætejere har mulighed for at indstille standardopsummeringen for hvert felt. Hvis du er ejer af et datasæt, skal du ændre standardopsummeringen på fanen **Udformning** i Power BI Desktop.
 

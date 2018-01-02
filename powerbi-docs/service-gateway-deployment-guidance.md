@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 3caf9f8aef802e8423f6a3940e55aba99331b912
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: dee83471e0c8e2506902ac5bdb163163430bbb9a
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Vejledning i at installere en datagateway til Power BI
 Denne artikel indeholder vejledning og overvejelser ved installation af en datagateway i dit netværksmiljø. En **gateway** er software, der gør det nemmere at få adgang til data, der er placeret på et privat netværk i det lokale miljø til efterfølgende brug i en cloudtjeneste som Power BI. Denne artikel giver en trinvis vejledning i at installere og konfigurere **datagatewayen i det lokale miljø**.

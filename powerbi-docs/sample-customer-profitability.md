@@ -120,7 +120,7 @@ Lad os se på branchen *Distribution*.
    
    ![](media/sample-customer-profitability/customer8.png)
 
-Vi kan ligeledes granske andre brancher og endog føje kunder til vores visuelle elementer for at få indsigt i årsagerne til Valerys præstation.
+Vi kan ligeledes granske andre brancher og endog føje kunder til vores visuals for at få indsigt i årsagerne til Valerys præstation.
 
 Dette er et sikkert miljø at lege i. Du kan altid vælge ikke at gemme dine ændringer. Hvis du gemmer dem, kan du altid gå til **Hent data** for at få en ny kopi af dette eksempel.
 

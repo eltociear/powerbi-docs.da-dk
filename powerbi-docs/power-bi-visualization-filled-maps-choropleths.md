@@ -30,7 +30,7 @@ Et udfyldt kort bruger skygger eller toner eller mønstre til at vise, hvordan e
 ![](media/power-bi-visualization-filled-maps-choropleths/large_map.png)
 
 ## <a name="what-is-sent-to-bing"></a>Hvad sendes til Bing
-Power BI integreres med Bing for at angive standardkortkoordinaterne (en proces, der kaldes geokodning). Når du opretter en kortvisualisering i Power BI-tjenesten eller Power BI Desktop, sendes dataene i feltbeholderne **Location**, **Latitude** og **Longitude** ( der bruges til at oprette det pågældende visuelle element) til Bing.
+Power BI integreres med Bing for at angive standardkortkoordinaterne (en proces, der kaldes geokodning). Når du opretter en kortvisualisering i Power BI-tjenesten eller Power BI Desktop, sendes dataene i feltbeholderne **Location**, **Latitude** og **Longitude** ( der bruges til at oprette den pågældende visualisering) til Bing.
 
 Du kan finde flere oplysninger om de data, der sendes til Bing, og få tip til at få større succes med geokodning under [Tip og råd til kortvisualiseringer](power-bi-map-tips-and-tricks.md).
 
@@ -82,11 +82,11 @@ I denne video opretter Kim et grundlæggende kort og konverterer det til et udfy
 ## <a name="highlighting-and-cross-filtering"></a>Fremhævning og krydsfiltrering
 Du kan få mere at vide om brug af ruden Filters under [Føj et filter til en rapport](power-bi-report-add-filter.md).
 
-Fremhævning af en placering på et udfyldt kort krydsfiltrerer de andre visuelle elementer på rapportsiden ... og omvendt. 
+Fremhævning af en placering på et udfyldt kort krydsfiltrerer de andre visualiseringer på rapportsiden ... og omvendt. 
 
 For at følge med kan du kopiere og indsætte dit udfyldte kort på siden **Sentiment** i *Sales and Marketing*-rapporten. 
 
-1. Vælg en stat på det udfyldte kort.  Dette fremhæver de andre visuelle elementer på siden. Hvis du f.eks. vælger **Texas**, kan du se, at Tillid (sentiment) er 74, at Texas ligger i det centrale distrikt \#23, og at det meste af salgsmængden stammer fra segmenterne Redigering og styring.   
+1. Vælg en stat på det udfyldte kort.  Dette fremhæver de andre visualiseringer på siden. Hvis du f.eks. vælger **Texas**, kan du se, at Tillid (sentiment) er 74, at Texas ligger i det centrale distrikt \#23, og at det meste af salgsmængden stammer fra segmenterne Redigering og styring.   
    ![](media/power-bi-visualization-filled-maps-choropleths/img008.png)
 2. På kurvediagrammet kan du skifte mellem **Nej** og **Ja**. Dette filtrerer det udfyldte kort for at vise Tillid for VanArsdel og VanArsdels konkurrenter.  
    ![](media/power-bi-visualization-filled-maps-choropleths/img009.gif)
@@ -104,8 +104,8 @@ Hvis du ikke har adgang til data om breddegrad og længdegrad, [kan du følge di
 Du kan få hjælp til kortvisualiseringer under [Tip og råd til kortvisualiseringer](power-bi-map-tips-and-tricks.md).
 
 ## <a name="next-steps"></a>Næste trin
-[Tilføj det udfyldte kort som et dashboardfelt (fastgør visualiseringen)](service-dashboard-tiles.md)    
- [Føj et visuelt element til en rapport](power-bi-report-add-visualizations-i.md)  
+[Tilføj det udfyldte kort som et dashboardfelt (fastgør visual)](service-dashboard-tiles.md)    
+ [Føj en visualisering til en rapport](power-bi-report-add-visualizations-i.md)  
  [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)    
  [Skift den visualiseringstype, der anvendes](power-bi-report-change-visualization-type.md)      
 Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)

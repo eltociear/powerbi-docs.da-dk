@@ -24,7 +24,7 @@ ms.contentlocale: da-DK
 ms.lasthandoff: 11/13/2017
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Fra Excel-projektmappe til fantastisk rapport på ingen tid
-Din chef vil gerne se en rapport om dine seneste salgstal kombineret med dine seneste kampagneannoncer, inden dagen er omme. Men de seneste data befinder sig på forskellige systemer hos tredjeparter og i filer på din bærbare computer. Tidligere har det taget timevis at oprette visuelle elementer og formatere en rapport. Du begynder at blive bekymret.
+Din chef vil gerne se en rapport om dine seneste salgstal kombineret med dine seneste kampagneannoncer, inden dagen er omme. Men de seneste data befinder sig på forskellige systemer hos tredjeparter og i filer på din bærbare computer. Tidligere har det taget timevis at oprette visuals og formatere en rapport. Du begynder at blive bekymret.
 
 Bare rolig. Med Power BI kan du oprette en imponerende rapport på ingen tid.
 
@@ -69,7 +69,7 @@ Bemærk, at dataene fra tabellen din Excel-projektmappe vises i ruden Felter. Un
 
 ![](media/service-from-excel-to-stunning-report/pbi_report_fields.png)
 
-Nu kan du begynde at oprette visuelle elementer. Din chef vil gerne se profit over tid. I ruden Fields skal du trække **Profit** over på rapportlærredet. Power BI viser et søjlediagram som standard. Derefter skal du trække **Date** over på rapportlærredet. Power BI opdaterer søjlediagrammet for at vise profit efter dato.
+Nu kan du begynde at oprette visualiseringer. Din chef vil gerne se profit over tid. I ruden Fields skal du trække **Profit** over på rapportlærredet. Power BI viser et søjlediagram som standard. Derefter skal du trække **Date** over på rapportlærredet. Power BI opdaterer søjlediagrammet for at vise profit efter dato.
 
 ![](media/service-from-excel-to-stunning-report/pbi_report_pin-new.png)
 
@@ -81,11 +81,11 @@ Din chef vil gerne vide, hvilke lande/områder der er mest rentable. Imponer hen
 
 ![](media/service-from-excel-to-stunning-report/pbi_report_map-new.png)
 
-Hvad med at vise et visuelt element for salg efter produkt og markedssegment? Nemt nok. Markér afkrydsningsfelterne ud for Sales, Product og Segment i ruden Fields. Power BI opretter straks et liggende søjlediagram. Du kan ændre diagramtypen ved at vælge et af ikonerne i menuen Visualizations. Du kan f.eks. ændre det til et stablet liggende søjlediagram.  Hvis du vil sortere diagrammet, skal du vælge ellipsen (...) > **Sort by**.
+Hvad med at vise en visual for salg efter produkt og markedssegment? Nemt nok. Markér afkrydsningsfelterne ud for Sales, Product og Segment i ruden Fields. Power BI opretter straks et liggende søjlediagram. Du kan ændre diagramtypen ved at vælge et af ikonerne i menuen Visualizations. Du kan f.eks. ændre det til et stablet liggende søjlediagram.  Hvis du vil sortere diagrammet, skal du vælge ellipsen (...) > **Sort by**.
 
 ![](media/service-from-excel-to-stunning-report/pbi_barchart-new.png)
 
-Fastgør alle dine visuelle elementer til dashboardet. Du er klar til at dele dem med dine kollegaer.
+Fastgør alle dine visuals til dashboardet. Du er klar til at dele dem med dine kollegaer.
 
 ![](media/service-from-excel-to-stunning-report/pbi_report.png)
 

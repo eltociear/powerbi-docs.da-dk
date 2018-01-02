@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/01/2017
 ms.author: sirsu
-ms.openlocfilehash: 7f01ed805358b5b74a32ae26fb757f592c617088
-ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
+ms.openlocfilehash: 4cf430880ade8bafb345fef3f5d7fec228cb6272
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
 Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner i **Power BI-tjenesten**. Du kan finde relaterede oplysninger om nyheder under:
@@ -167,7 +167,7 @@ Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerb
 
 **28. april 2016**
 
-* [Hurtigt indsigt på dashboardfelter](service-insights.md#run-quick-insights-on-a-dashboard-tile): Når du får vist et felt i Fokustilstand, skal du klikke på Hent indsigt for at søge i feltet og dets relaterede data efter korrelationer, udenforliggende værdier, tendenser, sæsonudsving, ændringspunkter i tendenser og større faktorer automatisk, i løbet af få sekunder.
+* [Hurtigt indsigt på dashboardfelter](service-insights.md): Når du får vist et felt i Fokustilstand, skal du klikke på Hent indsigt for at søge i feltet og dets relaterede data efter korrelationer, udenforliggende værdier, tendenser, sæsonudsving, ændringspunkter i tendenser og større faktorer automatisk, i løbet af få sekunder.
 
 Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerbi.microsoft.com/blog/find-more-insights-in-your-dashboards-with-quick-insights/)
 

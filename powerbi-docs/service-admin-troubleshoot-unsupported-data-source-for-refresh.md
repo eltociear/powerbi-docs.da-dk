@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 93820e12602aa10754e3f905640c5e9b29cd7cc9
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: d95b9d7ca8cae1e4311ef679093814c51a9ba3c0
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Fejlfinding af ikke-understøttet datakilde til opdatering
 Du får muligvis vist en fejl, når du forsøger at konfigurere et datasæt til planlagt opdatering.
@@ -46,9 +46,9 @@ Hvis du ikke er sikker på, hvilken datakilde, der er blevet brugt, kan du finde
 ## <a name="next-steps"></a>Næste trin
 [Dataopdatering](refresh-data.md)  
 [Power BI Gateway - Personal](personal-gateway.md)  
-[Datagateway i det lokale miljø](service-gateway-onprem.md)  
-[Fejlfinding af datagateway i det lokale miljø](service-gateway-onprem-tshoot.md)  
-[Fejlfinding af Power BI Gateway - Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)  
+[Datagateway i lokalt miljø](service-gateway-onprem.md)  
+[Fejlfinding af datagateway i lokalt miljø](service-gateway-onprem-tshoot.md)  
+[Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -39,7 +39,7 @@ Denne artikel omhandler følgende.
 * [Slet et felt](#delete)
   
   > [!TIP]
-  > Hvis du vil ændre det visuelle element, der vises på selve feltet, skal du slette feltet og tilføje et nyt [dashboard-felt](service-dashboard-tiles.md).
+  > Hvis du vil ændre visualiseringen, der vises på selve feltet, skal du slette feltet og tilføje et nyt [dashboard-felt](service-dashboard-tiles.md).
   > 
   > 
 
@@ -99,7 +99,7 @@ Når du vælger et felt, føres du som standard hen til rapporten, hvor feltet b
 <a name="delete"></a>
 
 ## <a name="delete-the-tile"></a>Slet feltet
-* Vælg ikonet **Slet felt** ![](media/service-dashboard-edit-tile/power-bi-delete-tile-icon.png) for at slette feltet. Når du sletter et felt, slettes den underliggende rapport eller det visuelle element ikke.
+* Vælg ikonet **Slet felt** ![](media/service-dashboard-edit-tile/power-bi-delete-tile-icon.png) for at slette feltet. Når du sletter et felt, slettes den underliggende rapport eller visualiseringen ikke.
 
 - - -
 ## <a name="next-steps"></a>Næste trin
