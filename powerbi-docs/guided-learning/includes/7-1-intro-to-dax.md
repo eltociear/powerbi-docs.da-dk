@@ -5,7 +5,7 @@ Velkommen til afsnittet Power BI **Automatiseret læring**, der er lavet for at 
 ## <a name="dax-and-this-guided-learning-video-series"></a>DAX og denne videoserie om Automatiseret læring
 Målet for dette afsnit, **Automatiseret læring**, er at lære om de grundlæggende elementer i DAX – hvordan du skal tænke om DAX, hvordan det fungerer og de mest nyttige funktioner som forklaret (og som lært med masser af erfaring) af en DAX-ekspert, [ Alberto Ferrari](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit).
 
-![](media/7-1-intro-to-dax/intro_dax_6_alberto_ferrari.png)
+![Portræt af Alberto Ferrari](media/7-1-intro-to-dax/intro_dax_6_alberto_ferrari.png)
 
 Videoer i dette afsnit, **Automatiseret læring**, om **DAX** lærer dig de grundlæggende funktioner i DAX ud fra, hvordan DAX-formelsproget fungerer. Dette er nyttigt, når du opretter DAX-formler fra bunden, men det er også meget nyttigt for at forstå, hvordan Power BI opretter de DAX-formler, når du opretter forespørgsler i **Forespørgselseditoren**.
 

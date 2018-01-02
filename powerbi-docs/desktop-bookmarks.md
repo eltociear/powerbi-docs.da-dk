@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: davidi
-ms.openlocfilehash: a5542e7a4c0b1d5014a6fce0042c07fec7398ab4
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: e60ff6d06e4ac0cddf398ccfc1d30e4d97e0773c
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi-preview"></a>Brug bogmærker til at dele indsigt og oprette tekstenheder i Power BI (prøveversion)
 Hvis du bruger **bogmærker** i Power BI, kan du indfange den visning af en rapportside, der er konfigureret i øjeblikket, herunder filtrering af og tilstanden for visuelle elementer, og senere gå tilbage til denne tilstand ved ganske enkelt at vælge det gemte bogmærke. 
@@ -153,6 +153,7 @@ I denne foreløbige version af **bogmærker** er der et par begrænsninger og ov
 * Hvis du tilføjer et visuelt element på en rapportside, når du har oprettet et bogmærke, vises det visuelle element i standardtilstanden. Det betyder også, at hvis du vil indføre et udsnitsværktøj på en side, hvor du tidligere har oprettet bogmærker, optræder udsnittet i standardtilstanden.
 * Hvis du flytter rundt på visuelle elementer, efter at der er oprettet et bogmærke, afspejles det i bogmærket. 
 * Du *skal* have mindst ét bogmærke i rapporten, når du publicerer den i **Power BI-tjenesten**, hvis bogmærker skal være tilgængelige i tjenesten. Det er et krav for alle de rapporter, du publicerer.
+* Fordi bogmærker i øjeblikket er en funktion i forhåndvisning, er de endnu ikke tilgængelige i [**Power BI Desktop til rapportserveren**](report-server/quickstart-create-powerbi-report.md).
 
 ## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om de funktioner, der ligner eller interagerer med bogmærker, i følgende artikler:

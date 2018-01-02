@@ -27,9 +27,9 @@ ms.lasthandoff: 11/13/2017
 Her ser vi på, hvordan du kan bruge Power BI-tilbuddet (gratis) i din organisation. En organisation betyder, at du har en lejer og kan administrere brugere og tjenester inden for denne lejer. Som administrator kan du styre licenstildeling, eller du kan tillade, at brugere tilmelder sig som enkeltpersoner. Vi skal se på licensen til Power BI (gratis), og hvordan du kan styre individuelle tilmeldinger.
 
 ## <a name="individual-sign-up-versus-license-assignment"></a>Individuel tilmelding over for licenstildeling
-Brugerne i organisationen kan få adgang til Power BI på to forskellige måder. De kan individuelt tilmelde sig Power BI, eller du kan tildele dem en Power BI-licens på Office 365-administrationsportalen.
+Brugerne i organisationen kan få adgang til Power BI på to forskellige måder. De kan selv tilmelde sig Power BI, eller du kan tildele dem en Power BI-licens på Office 365-administrationsportalen.
 
-Det formindsker arbejdsbyrden fra organisationens administratorer at tillade individuelle tilmeldinger ved at lade de brugere, der er interesseret i Power BI, tilmelde sig gratis.
+Det betyder mindre arbejde for organisationens administratorer, hvis de brugere, der er interesseret i Power BI, selv tilmelder sig.
 
 Du kan få mere kontrol ved at blokere individuel tilmelding og selv tildele Power BI-licenser i Office 365 Administration. Det giver dig mulighed for specifikt at bestemme, hvem der har adgang til hvilke tjenester i din organisation. Det er også en god mulighed, hvis du skal håndtere overvågning og har brug for præcist at vide, hvem der kan bruge hvad.
 
@@ -40,7 +40,7 @@ I Office 365 Administration under **Fakturering** > **Licenser** kan du muligvis
 
 Denne blok af licenser vises, når en person første gang har tilmeldt sig Power BI som enkeltperson. Under denne proces bliver licensblokken knyttet til din organisation, og en licens tildeles den bruger, der tilmelder sig.
 
-Hvis du blokerer individuel brugertilmelding, og ingen har tilmeldt sig, får du ikke vist denne licensblok. Du kan enten tillade enkelte brugere at tilmelde sig og få én brugertilmelding, eller du kan få gratis licenser via Office 365-forløbet med at tilføje abonnementer, som er det næste vi taler om.
+Hvis du blokerer individuel brugertilmelding, og ingen har tilmeldt sig, får du ikke vist denne licensblok. Du kan enten tillade, at brugerne selv tilmelder sig, og få én brugertilmelding, eller du kan få gratis licenser via Office 365-abonnementsflowet, som er det næste, vi taler om.
 
 Når Power BI-licensblokken (gratis) er tilgængelig, kan du tildele disse licenser til dine brugere. Du kan finde flere oplysninger om, hvordan du tildeler licenser, under [Tildel licenser til brugere i Office 365](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
