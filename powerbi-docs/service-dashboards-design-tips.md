@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/27/2017
+ms.date: 12/24/2017
 ms.author: mihart
-ms.openlocfilehash: 757415a2b0ddd8fa7f1d9799e31e4266bfc8076f
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 83b813ccdc9ed0ef232f5eede715ad3a795253d0
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips til udformning af et fantastisk Power BI-dashboard
 Nu, hvor du har oprettet et dashboard og tilføjet nogle felter, kan du overveje, hvordan du ikke bare gør dit dashboard flot, men også funktionelt. Generelt betyder det, at man sørger for, at den vigtigste information er tydelig, og at udseendet er rent og ryddeligt.
@@ -54,7 +54,7 @@ Hvis tekst og visualiseringer på dit dashboard alle har samme størrelse, kan l
 
 Men husk at angive kontekst.  
 
-Læs om [oprettelse af et felt med blot et tal](power-bi-visualization-big-number.md).
+Læs om [oprettelse af et felt med blot et tal](power-bi-visualization-card.md).
 
 ### <a name="put-the-most-important-information-in-the-upper-corner"></a>Placer de vigtigste oplysninger i øverste hjørne
 De fleste læser oppefra og ned, så sæt det højeste detaljeniveau øverst, og vis flere detaljer, efterhånden som du bevæger dig i den retning, modtagerne læser (venstre mod højre, højre mod venstre).
@@ -85,5 +85,5 @@ For at kunne mestre kunsten at lave et godt dashboard-design bør du overveje at
 ## <a name="next-steps"></a>De næste trin
 [Dashboards i Power BI](service-dashboards.md)  
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)  
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

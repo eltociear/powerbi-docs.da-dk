@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/26/2017
+ms.date: 12/24/2017
 ms.author: mihart
-ms.openlocfilehash: d93b98b0a34a0a83efc00a066864709b771c5110
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: d0a4a465442ed3a6750ce10ab9a3a40e17b88be1
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Fra Excel-projektmappe til fantastisk rapport på ingen tid
 Din chef vil gerne se en rapport om dine seneste salgstal kombineret med dine seneste kampagneannoncer, inden dagen er omme. Men de seneste data befinder sig på forskellige systemer hos tredjeparter og i filer på din bærbare computer. Tidligere har det taget timevis at oprette visuals og formatere en rapport. Du begynder at blive bekymret.
@@ -105,5 +105,5 @@ Næste trin
 * [Kom i gang med Power BI-tjenesten](service-get-started.md)
 * [Kom i gang med Power BI Desktop](desktop-getting-started.md)
 * [Power BI – Grundlæggende begreber](service-basic-concepts.md)
-* Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

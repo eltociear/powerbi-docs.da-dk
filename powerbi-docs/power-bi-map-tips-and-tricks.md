@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/05/2017
+ms.date: 12/24/2017
 ms.author: mihart
-ms.openlocfilehash: f189ab5b195a945b6a21ea868cf29257e30c0d20
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: 5ab075ede78ad5c08858878d6652e9b102a87fca
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tip og tricks til Power BI-kortvisualiseringer
 Power BI kan integreres med Bing Maps for at angive standardkortkoordinater (en proces, der kaldes geokodning), så du kan oprette kort. De bruger algoritmer til at identificere den korrekte placering, men nogle gange benyttes et kvalificeret gæt. Hvis forsøg i Power BI ikke kan oprette kortvisualiseringer automatisk, gør det brug af Bing Maps.  
@@ -94,5 +94,5 @@ Når du bruger detailudledning med geografiske hierarkier, er det vigtigt at vid
 
 [Power BI-visualiseringer](power-bi-report-visualizations.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

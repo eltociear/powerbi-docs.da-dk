@@ -15,20 +15,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/14/2017
+ms.date: 12/21/2017
 ms.author: mihart
-ms.openlocfilehash: e3c3f59bc5d27e19bbd6256b6692782fc115ff28
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 202f92b9c7089a4bd9bb5dd976051bba47da632e
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Bedste praksis for design af rapporter og visuals
 <!-- Shared newnav Include -->
 [!INCLUDE [newnavbydefault](./includes/newnavbydefault.md)]
 
 ## <a name="introduction"></a>Introduktion
-Dette whitepaper indeholder de bedste praksisser for design af rapporter i Power BI. Vi starter med planlægning og diskuterer de designprincipper, du kan anvende på dine rapporter og på de sider og visuals, der udgør rapporten.  Mange af disse bedste praksisser gælder også for dashboarddesign.
+Dette whitepaper indeholder de bedste praksisser for design af rapporter i Power BI. Den begynder med planlægning og diskuterer de designprincipper, du kan anvende på dine rapporter samt på de sider og visualiseringer, der udgør rapporten.  Mange af disse bedste praksisser gælder også for dashboarddesign.
 
 Vi håber, at du kan bruge dette whitepaper som udgangspunkt, og du vil anvende det, du lærer, på dine egne rapporter og visuals, samt at du vil fortsætte samtalen på community.powerbi.com. BI-rapportdesign og brug af visualisering er et varmt emne i øjeblikket, og der er mange meningsdannere, bloggere og websteder der virkelig går i dybden med dette emne (vi har angivet nogle stykker i slutningen).   
 
@@ -818,5 +818,5 @@ Nu er det blevet tid til, at du skal prøve disse bedste praksisser af i praksis
 ### <a name="book-recommendations"></a>Boganbefalinger
 Der findes mange god bøger, som teams kan bruge til at læse op på visuelle designteknikker. Stephen Fews bog *Information Dashboard Design* kommer man ikke udenom. Han går yderligere i detaljer i de to andre bøger *Show Me the Numbers* og *Now You See It*. Few og andre har fået inspiration fra Edward R. Tufte, hvis bog *The Visual Display of Quantitative Information* betragtes som en klassiker inden for emnet. Tufte har også skrevet *Visual Explanations*, *Envisioning Information* og *Beautiful Evidence*. Andy Kirks nye bog *Data Visualization: A Handbook for Data Driven Design* er et andet glimrende forslag. Andre forfattere, som kan anbefales, er: Lachlan James, William McKnight og Boris Evelson (Forrester), Darkhorse Analytics.
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

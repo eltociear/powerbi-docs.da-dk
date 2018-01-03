@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: dfc7552b1a6035a2e75ded010ddb7c57931c79ad
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 34574cf73d12d91df7a497cf297a9ecda9f5cc57
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Fastgør et felt til et Power BI-dashboard fra en rapport
 ## <a name="pinning-tiles-from-a-report"></a>Fastgørelse af felter fra en rapport
@@ -59,7 +59,7 @@ Nu skal du oprette dit eget dashboard ved hjælp af en af Power BI-eksempelrappo
 5. Vælg dashboardet med det nye felt fra navigationsruden. Markér feltet for at gå tilbage til rapporten. Eller [rediger feltets visning og funktionsmåde](service-dashboard-edit-tile.md).
 
 ## <a name="pin-an-entire-report-page"></a>Fastgør en hel rapportside
-En anden mulighed er at fastgøre en hel rapportside til et dashboard. Dette er en nem metode til at fastgøre mere end én visualisering ad gangen.  Når du fastgør en hel side, er felterne også *live*, og du kan interagere med dem til højre på dashboardet. Og de ændringer, du foretager på visualiseringerne tilbage i rapporteditoren, f.eks. ved at tilføje et filter eller ændre de felter, der bruges i diagrammet, afspejles også i dashboardfeltet.  
+En anden mulighed er at fastgøre en hel rapportside til et dashboard. Dette er en nem metode til at fastgøre mere end én visualisering ad gangen.  Når du fastgør en hel side, er felterne også *dynamiske*, og du kan interagere med dem direkte på dashboardet. Og de ændringer, du foretager på visualiseringerne tilbage i rapporteditoren, f.eks. ved at tilføje et filter eller ændre de felter, der bruges i diagrammet, afspejles også i dashboardfeltet.  
 
 Du kan få mere at vide under [Fastgør en hel rapportside](service-dashboard-pin-live-tile-from-report.md)
 
@@ -74,5 +74,5 @@ Du kan få mere at vide under [Fastgør en hel rapportside](service-dashboard-pi
 
 [Grundlæggende begreber i Power BI](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

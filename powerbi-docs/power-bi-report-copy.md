@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/25/2017
+ms.date: 12/23/2017
 ms.author: mihart
-ms.openlocfilehash: a5a82694cb48a23e572c49a350439335276cabf9
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 8425b631bb64911081861dc4a21de04b698f0f67
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="create-a-new-report-from-an-existing-report"></a>Opret en ny rapport ud fra en eksisterende rapport
 Du har måske en rapport, der allerede har forbindelse til dit datasæt, og har nogle visuelle elementer, som du gerne vil bruge igen eller redigere.  Hvorfor ikke blot kopiere denne rapport som udgangspunkt for en ny rapport?  Fremgangsmåden er som følger:
@@ -46,4 +46,3 @@ Du har måske en rapport, der allerede har forbindelse til dit datasæt, og har 
 [Opret nye visualiseringer](power-bi-report-add-visualizations-ii.md)
 
 [Slet visualiseringer](service-delete.md), du ikke har brug for
-
