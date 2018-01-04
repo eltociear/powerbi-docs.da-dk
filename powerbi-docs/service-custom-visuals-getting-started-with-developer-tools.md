@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/05/2017
+ms.date: 11/30/2017
 ms.author: asaxton
-ms.openlocfilehash: e84c5045906cb91f028f0c33b5af8164871d8882
-ms.sourcegitcommit: 12236d08c27c7ee3fabb7ef9d767e9dee693f8aa
+ms.openlocfilehash: bdba3cb9a7dc64dbf71a48a7ae2223e74c302b70
+ms.sourcegitcommit: 0f6db65997db604e8e9afc9334cb65bb7344d0dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Brug udviklerværktøjer til at oprette brugerdefinerede visuals
 Du kan bruge visuals til at opfylde dine brugeres behov og matche din apps design. Få mere at vide om, hvordan du opretter brugerdefinerede visuals til Power BI med udviklerværktøjer.
@@ -347,8 +347,8 @@ Få mere at vide om [Less](http://lesscss.org/).
 ## <a name="debugging"></a>Fejlfinding
 Se [fejlfindingsvejledningen](https://github.com/Microsoft/PowerBI-visuals/blob/master/tools/debugging.md) for tips til fejlfinding af et brugerdefineret visual.
 
-## <a name="submit-your-visual-to-the-office-store"></a>Send dit visual til Office store
-Du kan blive inkluderet i Office store. Se [Publicer brugerdefinerede visuals til Office store](developer/office-store.md) for at få flere oplysninger om denne proces.
+## <a name="submit-your-visual-to-appsource"></a>Overfør din visual til AppSource
+Du kan angive din visual, så andre kan bruge den, ved at sende den til AppSource. Se [Publicer brugerdefinerede visuals til AppSource](developer/office-store.md) for at få flere oplysninger om denne proces.
 
 ## <a name="troubleshooting"></a>Fejlfinding
 **Pbivi-kommando blev ikke fundet (eller tilsvarende fejl)**

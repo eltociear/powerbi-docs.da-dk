@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 8f009e382321d296191d861245e005c1ffb7ee33
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.openlocfilehash: c0689b969c1956d0344afb2bc8aef7bda32c159e
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Kom i gang med Power BI Desktop
 Velkommen til **Introduktionsvejledning til Power BI Desktop**. Med denne korte præsentation af Power BI Desktop får du en idé om, hvordan det fungerer, og du får mulighed for at sætte skub i oprettelsen af robust datamodeller – sammen med fantastiske rapporter – som styrker din indsats på business intelligence-området. 
@@ -43,6 +43,10 @@ Hvis du har travlt, kan du tage en visuel tur gennem denne vejledning på få mi
 
 Hvis du vil have en mere grundig forståelse, kan du læse hver sektion, udføre disse trin, og slutte af med at få din egen Power BI Desktop-fil, der er klar til at blive postet på **Power BI**-tjenesten og blive delt med andre.
 
+>[!NOTE]
+>Der er også en separat og specialiseret version af **Power BI** kaldet [**Power BI-rapportserver**](report-server/get-started.md), som er til kunder, der har brug for, at deres data og rapportering skal forblive i det lokale miljø. Til brug med denne specialiserede version er der også en separat og specialiseret version af **Power BI Desktop** kaldet **Power BI Desktop til Power BI-rapportserver**, som kun fungerer sammen med rapportserver-versionen af Power BI. Denne artikel beskriver den almindelige **Power BI Desktop**.
+
+
 ## <a name="how-power-bi-desktop-works"></a>Sådan fungerer Power BI Desktop
 Med Power BI Desktop kan du *oprette forbindelse til data* (normalt flere datakilder), *forme disse data* (med forespørgsler, der opretter nyttige, overbevisende datamodeller) og bruge denne model til at *oprette rapporter* (som andre kan benytte, bygge videre på og dele).
 
@@ -51,6 +55,8 @@ Når trinnene er gennemgået tilfredsstillende – forbinde, forme og rapportere
 I Power BI Desktop centraliseres, forenkles og strømlines det, der ellers kan være en spredt, usammenhængende og besværlig proces til design og oprettelse af business intelligence-lagre og -rapporter.
 
 Er du klar til at prøve? Lad os komme i gang.
+
+
 
 ## <a name="install-and-run-power-bi-desktop"></a>Installér og kør Power BI Desktop
 Du kan downloade Power BI Desktop fra **Power BI**-tjenesten ved at vælge **tandhjuls**ikonet og derefter vælge **Power BI Desktop**.
@@ -94,7 +100,7 @@ Vælg **Hent data \> Web**, og indsæt adressen.
 
  ![](media/desktop-getting-started/gettingstarted_8.png)
 
-Når du vælger **OK**, begynder **forespørgsel**sfunktionen i Power BI Desktop at arbejde. Forespørgslen kontakter webressourcen, og i **navigator**vinduet returneres resultaterne fra den pågældende webside. I dette tilfælde blev der fundet en tabel (*Tabel 0*) og det generelle webdokument. Vi er interesseret i tabellen, så vi vælger den på listen. I **navigator**vinduet vises et eksempel.
+Når du vælger **OK**, begynder **forespørgsel**sfunktionen i Power BI Desktop at arbejde. Forespørgslen kontakter webressourcen, og i **navigator**vinduet returneres resultaterne fra den pågældende webside. I dette tilfælde blev der fundet en tabel (*Tabel 0*) og det generelle webdokument. Vi er interesseret i tabellen, så vi vælger den på listen. I **navigatorvinduet** vises der et eksempel.
 
  ![](media/desktop-getting-started/datasources_fromnavigatordialog.png)
 
@@ -151,9 +157,9 @@ Vi skal foretage lidt flere ændringer for at får forespørgslen helt på plads
 Hvert af disse trin er vist under **[Form og kombiner data i Power BI Desktop](desktop-shape-and-combine-data.md)**. Du kan se nærmere på den side eller fortsætte med dette dokument for at se, hvad du herefter kan gøre. Næste sektion fortsættes umiddelbart efter, at ovenstående ændringer er implementeret.
 
 ## <a name="combine-data"></a>Kombiner data
-Dataene omkring de forskellige stater er interessante og kan bruges til at skabe yderligere analyser og forespørgsler. Men der er et problem: De fleste data anvender forkortelser på to bogstaver for statkoder og ikke statens fulde navn. Vi skal bruge en måde at knytte forkortelserne for staterne med deres navne på.
+Dataene omkring de forskellige stater er interessante og kan bruges til at skabe yderligere analyser og forespørgsler. Men der er et problem: De fleste data anvender forkortelser på to bogstaver for statskoder og ikke statens fulde navn. Vi skal bruge en måde at knytte forkortelserne for staterne til deres navne på.
 
-Vi er heldige: Der er en anden offentlig datakilde, som gør lige præcis dette, men den skal formes en del, før vi kan knytte den til vores pensioneringstabel. Her er webressourcen med forkortelser for stater:
+Vi er heldige. Der er en anden offentlig datakilde, som gør lige præcis dette, men den skal formes en del, før vi kan knytte den til vores pensioneringstabel. Her er webressourcen med forkortelser for stater:
 
 <http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
 
@@ -201,14 +207,14 @@ Vinduet **Flet** åbnes, og vi bliver bedt om at vælge, hvilken tabel vi vil fl
 
  ![](media/desktop-getting-started/shapecombine_merge.png)
 
-Der oprettes en **NyKolonne** i slutningen af forespørgslen, som er indholdet af tabellen (forespørgsel), der blev flettet med den eksisterende forespørgsel. Alle kolonner fra den flettede forespørgsel samles i **NyKolonne**, men du kan vælge at **udvide** tabellen og inkludere de ønskede kolonner. Hvis du vil udvide den flettede tabel og vælge, hvilke kolonner der skal inkluderes, skal du vælge udvidelsesikonet (![](media/desktop-getting-started/gettingstarted_29_expandicon.png)). Vinduet **Udvid** vises.
+Den nye kolonne **NewColumn** oprettes i slutningen af forespørgslen, som er indholdet af tabellen (forespørgsel), der blev flettet med den eksisterende forespørgsel. Alle kolonner fra den flettede forespørgsel samles i **NyKolonne**, men du kan vælge at **udvide** tabellen og inkludere de ønskede kolonner. Hvis du vil udvide den flettede tabel og vælge, hvilke kolonner der skal inkluderes, skal du vælge udvidelsesikonet (![](media/desktop-getting-started/gettingstarted_29_expandicon.png)). Vinduet **Udvid** vises.
 
  ![](media/desktop-getting-started/shapecombine_mergeexpand.png)
 
 I dette tilfælde vil vi kun have kolonnen *Statskode*, så vi vælger kun den pågældende kolonne og vælger derefter **OK**. Vi fjerne markeringen i afkrydsningsfeltet fra **Brug det oprindelige kolonnenavn som præfiks**, da vi ikke skal bruge det. Hvis vi bevarer markeringen, vil den flettede kolonne blive navngivet *NyKolonne.Statskode* (det oprindelige kolonnenavn, eller *NyKolonne* efterfulgt af et punktum, hvorefter kolonnenavnet føres ind i forespørgslen).
 
 >[!NOTE]
->Vil du prøve at importere tabellen *NyKolonne*? Du kan eksperimentere lidt, og hvis du ikke kan lide resultat, skal du bare slette dette trin på listen **Anvendte trin** i ruden **Forespørgselsindstillinger**. Din forespørgsel vender tilbage til tilstanden før trinnet **Udvid** blev anvendt. Du har mulighed for at prøve det af, så mange gange du har lyst, indtil udvidelsesprocessen ser ud, som den skal.
+>Vil du prøve at importere tabellen *NyKolonne*? Du kan eksperimentere lidt, og hvis du ikke kan lide resultatet, skal du bare slette dette trin på listen **Anvendte trin** i ruden **Forespørgselsindstillinger**. Din forespørgsel vender tilbage til tilstanden før trinnet **Udvid** blev anvendt. Du har mulighed for at prøve det af, så mange gange du har lyst, indtil udvidelsesprocessen ser ud, som den skal.
 
 Vi har nu en enkelt forespørgsel (tabel), der kombinerer to datakilder, som er blevet formet efter vores behov. Denne forespørgsel kan fungere som udgangspunkt for mange ekstra, interessante dataforbindelser – f.eks. boligomkostningsstatistikker, demografi eller jobmuligheder i en vilkårlig stat.
 
@@ -330,7 +336,7 @@ Du kan finde flere oplysninger om oprettelse, deling og ændring af dashboards u
 Der er alle mulige forskellige overbevisende datarelaterede miks og visualiseringer, du kan oprette vha. Power BI Desktop og Power BI-tjenesten. Du kan finde flere oplysninger i næste sektion.
 
 ## <a name="next-steps"></a>Næste trin
-Der er mange forskellige ting, du kan gøre med Power BI Desktop. Du kan finde flere oplysninger om funktionerne i følgende ressourcer:
+Du kan gøre mange forskellige ting med Power BI Desktop. Du kan finde flere oplysninger om funktionerne i følgende ressourcer:
 
 * [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)
