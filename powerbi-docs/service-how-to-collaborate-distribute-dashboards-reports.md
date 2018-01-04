@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/14/2017
+ms.date: 12/05/2017
 ms.author: maggies
-ms.openlocfilehash: 1ee8cc60d5c18cb09915029088824ade89d2b39f
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: a77c9a9816ef47ae4b342b2cd3a08b18c90f70de
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="how-should-i-collaborate-and-share-dashboards-and-reports-in-power-bi"></a>Hvordan bør jeg samarbejde og dele dashboards og rapporter i Power BI?
 Du kan oprette dashboards og rapporter. Måske samarbejder du også med kolleger om dem. Du kan derefter give andre adgang til dem. Hvordan distribueres de på bedste vis?
@@ -54,7 +54,7 @@ Lad os sige, at du gerne vil distribuere dit dashboard til en bred målgruppe. D
 
 ![Ikonet Publicer app](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
-Apps er lette at finde og installere i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)). Du kan sende virksomhedens brugere et direkte link til appen, eller de kan søge efter den i AppSource. Hvis din Power BI-administrator giver dig tilladelser, kan du automatisk installere en app i dine kollegers Power BI-konti. Læs mere om at [publicere dine apps](service-create-distribute-apps.md#publish-your-app). 
+Apps er lette at finde og installere i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)). Du kan sende virksomhedens brugere et direkte link til appen, eller de kan søge efter den i AppSource. Læs mere om at [publicere dine apps](service-create-distribute-apps.md#publish-your-app). 
 
 Efter de har installeret en app, kan de få den vist i deres browser eller mobilenhed.
 

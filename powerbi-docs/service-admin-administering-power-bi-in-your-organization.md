@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/05/2017
+ms.date: 11/28/2017
 ms.author: asaxton
-ms.openlocfilehash: 3ee74e9a7f2f174b37e582089e0d9a1d6c433831
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 180e80ee327342b26849aa63a3910337737ac9ad
+ms.sourcegitcommit: 7742f952c20695dfb475f74965c0065b02c01521
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="administering-power-bi-in-your-organization"></a>Administrere Power BI i din organisation
 Microsoft Power BI sætter brugerne i stand til at visualisere data, dele opdagelser og samarbejde på intuitive nye måder. Lær mere ved at se [Introduktion til Power BI](service-get-started.md).
@@ -60,6 +60,7 @@ Du kan finde flere oplysninger om Power BI-tjenesteadministratorrollen under [Be
 * [Er der andre yderligere ting, jeg skal være forberedt på?](#are-there-any-additional-things-i-should-be-prepared-for)
 * [Er det gratis? Skal jeg betale for disse licenser?](#is-this-free-will-i-be-charged-for-these-licenses)
 * [Hvor findes min Power BI-lejer?](#where-is-my-power-bi-tenant-located)
+* [Hvad er Power BI SLA (Serviceniveauaftale)?](#what-is-the-power-bi-sla)
 
 **Sikkerhed i Power BI**
 
@@ -256,6 +257,9 @@ Du kan fjerne en bruger fra lejeren vha. standardprocessen i Office 365 Administ
 ### <a name="where-is-my-power-bi-tenant-located"></a>Hvor findes min Power BI-lejer?
 Lær, hvordan du finder ud af, hvor din Power BI-lejer er, også kendt som dataregion, ved at se [Hvor findes min Power BI-lejer?](service-admin-where-is-my-tenant-located.md)
 
+### <a name="what-is-the-power-bi-sla"></a>Hvad er Power BI SLA?
+Hvis du vil have oplysninger om Power BI SLA (Serviceniveauaftale), skal du konsultere artiklen [Licensvilkår og dokumentation](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) i sektionen **Licenser** på webstedet Microsoft Licensing.
+
 ## <a name="security-in-power-bi"></a>Sikkerhed i Power BI
 ### <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Opfylder Power BI nationale, regionale og branchespecifikke overholdelseskrav?
 Få mere at vide om Power BI-overholdelse ved at se [Microsoft Center for sikkerhed og rettighedsadministration](http://go.microsoft.com/fwlink/?LinkId=785324).
@@ -274,7 +278,7 @@ Power BI er bygget på grundlag af Office 365, der igen er bygget på Azure-tjen
 [Administration af brugerkonto i Office 365](https://technet.microsoft.com/library/office-365-user-account-management.aspx)  
 [Administration af gruppe i Office 365](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1)  
 [Administrer din gruppe i Power BI og Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md)  
-[Hvidbog til Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
+[Hvidbog om Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

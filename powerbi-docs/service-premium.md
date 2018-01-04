@@ -1,5 +1,5 @@
 ---
-title: "Power BI Pro-indhold – hvad er det?"
+title: "Power BI Premium – hvad er det?"
 description: "Power BI Premium er dedikeret kapacitet for din organisation eller dit team og giver dig mere pålidelig ydeevne og større datamængder, uden at du skal købe licenser pr. bruger."
 services: powerbi
 documentationcenter: 
@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/10/2017
+ms.date: 12/05/2017
 ms.author: asaxton
-ms.openlocfilehash: 816f1151b6f49ace8151f1c26aee18a8c746ff08
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 7c1536693490252029d51ddc619eaa7266095403
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="power-bi-premium---what-is-it"></a>Power BI Premium – hvad er det?
 Power BI Premium indeholder ressourcer, der er dedikeret til at køre Power BI-tjenesten for din organisation eller dit team og giver dig en mere pålidelig ydeevne og større datamængder. Premium giver også mulighed for omfattende distribution af indhold, uden at du skal købe licenser pr. bruger til fremvisere.
@@ -69,9 +69,13 @@ Power BI Premium er tilgængelig i nodekonfigurationer med andre v-kerne-kapacit
 
 * P-noder kan bruges til integrerede installationer eller tjenesteinstallationer
 * EM-noder kan kun bruges til integrerede installationer
+* EM1 og EM2 
+* Links i denne tabel kan kun fungere korrekt for brugere, der er globale Office 365-administratorer – andre får vist fejlmeddelelsen 404. 
 
-| Kapacitetsnode | Samlet antal kerner<br/>*(Backend + frontend)* | Backend-kerner | Frontend-kerner | DirectQuery/dynamiske forbindelsesgrænser | Maks. antal sidegengivelser med størst belastning | Tilgængelighed |
+| Kapacitetsnode | Kerner i alt<br/>*(Backend + frontend)* | Backendkerner | Frontendkerner | Grænser for DirectQuery/liveforbindelser | Maks. antal sidegengivelser med størst belastning | Tilgængelighed |
 | --- | --- | --- | --- | --- | --- | --- |
+| [EM1 (for hver måned)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 v-kerne |.5 kerner 2,5 GB RAM |0,5 kerner |3.75 pr. sekund |150-300 |Tilgængelig |
+| [EM2 (for hver måned)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 v-kerner |1 kerne, 5 GB RAM |1 kerne |7.5 pr. sekund |301-600 |Tilgængelig |
 | [EM3 (for hver måned)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4-v-kerner |2 kerner, 10 GB RAM |2 kerner | |601-1.200 |Tilgængelig |
 | [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8-v-kerner |4 kerner, 25 GB RAM |4 kerner |30 pr. sekund |1.201-2.400 |Tilgængelig ([månedsabonnement](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) findes også) |
 | [P2](https://portal.office.com/SubscriptionDetails?OfferId=062F2AA7-B4BC-4B0E-980F-2072102D8605&adminportal=1) |16-v-kerner |8 kerner, 50 GB RAM |8 kerner |60 pr. sekund |2.401-4.800 |Tilgængelig |

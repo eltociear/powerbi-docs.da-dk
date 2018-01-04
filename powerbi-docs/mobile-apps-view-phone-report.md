@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 12/06/2017
 ms.author: maggies
-ms.openlocfilehash: 54a1b81cc4281db7a622668ba205c1c57d5e396d
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: f3e02da2c0e793f3eb334c39852f5cd23534ad3f
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Få vist Power BI-rapporter, der er optimeret til din telefon
 Når du opretter en Power BI-rapport i Power BI Desktop, kan du også oprette en version af [rapporten optimeret til visning i Power BI-appen på en telefon](desktop-create-phone-report.md).
@@ -39,8 +39,8 @@ Alle andre funktioner i Power BI-rapporterne kan stadig bruges i de rapporter, d
 * [Rapporter på iPhone-telefoner](mobile-reports-in-the-mobile-apps.md). 
 * [Rapporter på Android-telefoner](mobile-reports-in-the-mobile-apps.md).
 
-## <a name="filter-the-report-page-on-an-iphone"></a>Filtrer rapportsiden på en iPhone
-Hvis der er defineret filtre i en rapport, der er optimeret til telefoner, kan du bruge filtrene, når du får vist rapporten på en iPhone. 
+## <a name="filter-the-report-page-on-a-phone"></a>Filtrer rapportsiden på en telefon
+Hvis der er defineret filtre i en rapport, der er optimeret til telefoner, kan du bruge filtrene, når du får vist rapporten på en telefon. 
 
 1. Tryk på filterikonet ![Telefonfilterikon](media/mobile-apps-view-phone-report/power-bi-phone-filter-icon.png) nederst på siden. 
 2. Brug grundlæggende eller avanceret filtrering for at få vist de resultater, du er interesseret i.

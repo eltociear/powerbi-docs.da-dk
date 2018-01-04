@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/09/2017
+ms.date: 11/30/2017
 ms.author: asaxton
-ms.openlocfilehash: 1ab1590146f8b9714a27735cd556dd0203ecc6bf
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: c10ca76ac96090ff1facbdd28210b680392aae8d
+ms.sourcegitcommit: 0f6db65997db604e8e9afc9334cb65bb7344d0dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Brug sikkerhed på rækkeniveau med integreret Power BI-indhold
 Sikkerhed på rækkeniveau kan bruges til at begrænse brugernes adgang til data i en rapport eller et datasæt. Det betyder, at brugerne kan bruge den samme rapport, men de får vist forskellige data. Sikkerhed på rækkeniveau kan med fordel bruges, når du integrerer rapporter fra Power BI.
@@ -130,7 +130,7 @@ Nu hvor alle delene er samlet, vil brugerne kun få vist de data, de har tillade
 ## <a name="working-with-analysis-services-live-connections"></a>Arbejde med Analysis Services-liveforbindelser
 Sikkerhed på rækkeniveau kan bruges med Analysis Services-liveforbindelser for lokale servere. Der er nogle specifikke begreber, du bør kende, når du bruger denne type forbindelse.
 
-Den eksisterende identitet, der leveres for egenskaben username, skal være en Windows-bruger med tilladelser til Analysis Services-serveren.
+Den faktiske identitet, der leveres for egenskaben brugernavn, skal være en Windows-bruger med tilladelser til Analysis Services-serveren.
 
 **Konfigurer en datagateway i det lokale miljø**
 
@@ -141,11 +141,11 @@ En [datagateway i det lokale miljø](../service-gateway-onprem.md) bruges, når 
 Roller kan angives med identiteten i et integreringstoken. Hvis der ikke angives nogen rolle, vil det brugernavn, der blev angivet, blive brugt til at løse de tilknyttede roller.
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
-* Tildeling af brugere til roller i Power BI-tjenesten påvirker ikke sikkerhed på rækkeniveau, når du bruger et integreringstoken.
+* Tildeling af brugere til roller i Power BI-tjenesten påvirker ikke sikkerheden på rækkeniveau, når du bruger et integreringstoken.
 * Selvom Power BI-tjenesten ikke anvender indstillingen for sikkerhed på rækkeniveau på administratorer eller medlemmer med redigeringsrettigheder, vil den blive anvendt på dataene, når du angiver en identitet med et integreringstoken.
 * Overførsel af identitetsoplysningerne ved kald til GenerateToken understøttes kun for læsning af og skrivning til rapporten. Understøttelse af andre ressourcer vil blive tilgængelig på et senere tidspunkt.
 * Analysis Services-liveforbindelser understøttes på lokale servere.
-* Azure Analysis Services-liveforbindelser understøttes ikke.
+* Liveforbindelser i Azure Analysis Services understøtter filtrering efter roller, men er ikke dynamisk efter brugernavn.
 * Hvis der ikke skal bruges sikkerhed på rækkeniveau på det underliggende datasæt, må GenerateToken-anmodningen **ikke** indeholde en eksisterende identitet.
 * Hvis det underliggende datasæt er en cloudmodel (cachelagret model eller DirectQuery), skal den eksisterende identitet indeholde mindst én rolle. Eller vil der ikke ske nogen rolletildeling.
 * Du kan kun angive én identitet på listen over identiteter. Vi bruger en liste, så det på et senere tidspunkt skal blive muligt at angive tokens, der dækker flere identiteter, ved integration i dashboards.

@@ -15,16 +15,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 12/08/2017
 ms.author: maggies
-ms.openlocfilehash: 7a32885efb0813cc430f37952ca4fc9c5e435121
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 0dd906bc1b165793e9ff91f64324eeb8e1d1266c
+ms.sourcegitcommit: b780b7108fd9b52398b8377b52836f0e0fedc96e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="create-reports-optimized-for-the-power-bi-phone-apps"></a>Opret rapporter, der er optimeret til Power BI-telefonapps
-Når du [opretter en rapport i Power BI Desktop](desktop-report-view.md), kan du forbedre oplevelsen ved at bruge den i mobilapps på telefoner ved at oprette en version af rapporten beregnet til telefonen. Du tilpasser din rapport til telefonen ved at omarrangere og tilpasse visualiseringer og måske ikke inkludere alle for at få en optimal oplevelse. Du kan også [oprette *dynamiske* visualiseringer](desktop-create-responsive-visuals.md), der tilpasses flot til visning på en telefon. Og hvis du føjer filtre til din rapport, vises disse filtre automatisk i telefonrapporten på en iPhone. Læserne af din rapport kan se dem og filtrere rapporten med dem.
+Når du [opretter en rapport i Power BI Desktop](desktop-report-view.md), kan du forbedre oplevelsen ved at bruge den i mobilapps på telefoner ved at oprette en version af rapporten beregnet til telefonen. Du tilpasser din rapport til telefonen ved at omarrangere og tilpasse visualiseringer og måske ikke inkludere alle for at få en optimal oplevelse. Du kan også oprette [*dynamiske* visuals](#optimize-a-visual-for-any-size) og [dynamiske udsnitsværktøjer](#enhance-slicers-to-to-work-well-in-phone-reports), der tilpasses flot til visning på en telefon. Og hvis du føjer filtre til din rapport, vises disse filtre automatisk i telefonrapporten. Læserne af din rapport kan se dem og filtrere rapporten med dem.
 
 ![Optimeret rapport på en telefon](media/desktop-create-phone-report/07-power-bi-phone-report-portrait.png)
 
@@ -56,7 +56,7 @@ Når du har [oprettet en rapport i Power BI Desktop](desktop-report-view.md), ka
    ![Tilpas størrelsen på en visualisering](media/desktop-create-phone-report/03_resizing_a_viz_to_grid.gif)
 
 ## <a name="optimize-a-visual-for-any-size"></a>Optimer en visualisering til enhver størrelse
-Du kan indstille visualiseringerne på dit dashboard eller i din rapport til at være *dynamiske*, så de ændres dynamisk for at vise den maksimale mængde data og indsigt, uanset skærmstørrelse.
+Du kan indstille visualiseringerne på dit dashboard eller i din rapport til at være *dynamiske*, så de ændres dynamisk for at vise den maksimale mængde data og indsigt, uanset skærmstørrelse. 
 
 Når visualiseringen ændrer størrelse, prioriterer Power BI datavisningen ved f.eks. at fjerne udfyldning og flytte signaturforklaringen automatisk, så den vises over visualiseringen, således at visualiseringen forbliver informativ, selvom den bliver mindre.
 
@@ -82,10 +82,14 @@ Du kan vælge, om du vil gøre hver enkelt visualisering dynamisk. Læs mere om 
 Udsnit muliggør filtrering af rapportdata på lærredet. Når du designer udsnit i den almindelige tilstand til rapportskrivning, kan du modificere nogle udsnitsindstillinger for at gøre dem mere anvendelige i telefonrapporter:
 
 * Beslut, om læserne af rapporten kun kan vælge et eller flere elementer.
-* Gør udsnittet lodret eller vandret. 
 * Placer en boks omkring udsnittet for at gøre rapporten nemmere at scanne.
+* Gør udsnitsværktøjet lodret, vandret eller *dynamisk*. 
 
-Læs mere om at [oprette udsnit i Power BI-tjenesten](guided-learning/visualizations.yml#step-4).
+Hvis du gør udsnitsværktøjet dynamisk, når du ændrer dets størrelse og form, vises flere eller færre indstillinger. Det kan være højt, kort, bredt eller smalt. Du kan gøre det så lille, at det blot bliver et filterikon på rapportsiden. 
+
+![Dynamisk udsnitsværktøj i Power Bi](media/desktop-create-phone-report/power-bi-slicer-2-rows.png)
+
+Læs mere om [oprettelse af dynamiske udsnit](power-bi-slicer-filter-responsive.md).
 
 ## <a name="publish-a-phone-report"></a>Udgiv en telefonrapport
 * Udgiv en telefonversion af en rapport ved at [udgive hovedrapporten fra Power BI Desktop til Power BI-tjenesten](desktop-upload-desktop-files.md), så udgives telefonversionen på samme tid.

@@ -3,7 +3,7 @@ title: "Installér Power BI Desktop optimeret til Power BI-rapportserver"
 description: Se, hvordan du kan installere Power BI Desktop optimeret til Power BI-rapportserver
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: maggiesMSFT
 manager: kfile
 backup: 
 editor: 
@@ -15,33 +15,49 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 06/20/2017
-ms.author: asaxton
-ms.openlocfilehash: 5fd5f41523ffcba03eb4749a9560922bcff42a7c
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.date: 12/06/2017
+ms.author: maggies
+ms.openlocfilehash: 589a77624169e9fb59999109668439c5f729c5f5
+ms.sourcegitcommit: 7248b5e449b2495d6baef385470d18edfacec457
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installér Power BI Desktop optimeret til Power BI-rapportserver
 Se, hvordan du kan installere Power BI Desktop optimeret til Power BI-rapportserver.
 
-Du skal downloade og installere Power BI Desktop optimeret til Power BI-rapportserver. Dette er en anden udgivelse end Power BI Desktop, der bruges med Power BI-tjenesten. Dette er nødvendigt for at sikre, at rapportserveren kan interagere med en kendt version af rapporterne og modellen. 
+For at oprette Power BI-rapporter til Power BI-rapportserver skal du downloade og installere Power BI Desktop optimeret til Power BI-rapportserver. Dette er en anden udgivelse end Power BI Desktop, der bruges med Power BI-tjenesten. Versionen af Power BI Desktop til Power BI-tjenesten indeholder f.eks. funktioner til eksempelvisning, der er tilgængelige i Power BI-rapportserverversionen, når de er udgivet. Når du bruger denne udgivelse, sikrer du, at rapportserveren kan interagere med en kendt version af rapporterne og modellen. 
 
 > [!NOTE]
-> Power BI Desktop og Power BI Desktop optimeret til Power BI-rapportserver kan installeres på samme computer.
-> 
-> 
+> Du kan installere Power BI Desktop og Power BI Desktop optimeret til Power BI-rapportserver side om side på samme computer.
 
-## <a name="download-and-install"></a>Download og installér
-Du kan downloade Power BI Desktop optimeret til Power BI-rapportserver fra [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=837581) eller fra rapportserverens webportal.
+## <a name="download-and-install-power-bi-desktop"></a>Download og installér Power BI Desktop
 
-Når du har downloadet installationsprogrammet, kan du installere Power BI Desktop.
+Den nemmeste måde til at sikre, at du har den nyeste version af Power BI Desktop optimeret til Power BI-rapportserver, er ved at starte fra webportalen på rapportserveren.
+
+1. På webportalen Rapportserver skal du vælge pilen **Download** > **Power BI Desktop**.
+
+    ![Download Power BI Desktop fra webportalen](media/install-powerbi-desktop/report-server-download-web-portal.png)
+
+    Du kan også gå direkte til [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=861076) (optimeret til Power BI-rapportserver – oktober 2017) i Microsoft Download Center.
+
+2. På siden Download Center skal du vælge **Download**.
+
+3. Afhængigt af din computer skal du vælge: 
+
+    - **PBIDesktopRS.msi** (32-bit-version) eller
+
+    - **PBIDesktopRS_x64.msi** (64-bit-version).
+
+1. Når du har downloadet installationsprogrammet, skal du køre installationsguiden til Power BI Desktop (oktober 2017).
+2. Til sidst i installationsprocessen skal du markere **Start Power BI Desktop nu**.
+   
+    Programmet starter automatisk, og du er klar til at gå i gang.
 
 ## <a name="verify-you-are-using-the-correct-version"></a>Kontrollér, at du har den korrekte version
 Du kan kontrollere, om du bruger den rigtige version af Power BI Desktop ved at se startskærmbilledet eller titellinjen i Power BI Desktop. I titellinjen kan du se måneden og årstallet for udgivelsen.
 
-![](media/install-powerbi-desktop/powerbi-desktop-rs-title-bar.png "Titellinjen i Power BI Desktop")
+![Titellinjen til Power BI Desktop optimeret til Power BI-rapportserveren](media/quickstart-create-powerbi-report/report-server-desktop-october-2017-version.png)
 
 I Power BI Desktop-versionen til Power BI-tjenesten vises måned og årstal ikke i titellinjen.
 

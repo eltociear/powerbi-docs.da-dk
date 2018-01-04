@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 12/04/2017
 ms.author: mihart
-ms.openlocfilehash: ef064c636880db5d1b6c6106fe742972a7ed3a3c
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 0bb540a4c27729999bbb1780a7d5a203d67d3a7c
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Eksempel på HR til Power BI: Få en rundvisning
 HR-afdelingen anvender samme rapporteringsmodel i forskellige virksomheder, også selvom de tilhører forskellige brancher og har forskellige størrelser. Dette eksempel kigger på nyansættelser, aktive medarbejdere og medarbejdere, der er ophørt med at arbejde, med det formål at forsøge at afdække tendenser i ansættelsesstrategien. Vores overordnede formål er at forstå:
@@ -36,7 +36,7 @@ Dette eksempel er et i en række, som illustrerer, hvordan du kan bruge Power BI
 
 Vil du følge med? I [Power BI-tjenesten](https://powerbi.com) skal du gå til **Hent data > Eksempler > Eksempel på HR > Tilslut** for at få din egen kopi af eksemplet.
 
-Du kan også nøjes med at [downloade datasættet (Excel-projektmappe)](http://go.microsoft.com/fwlink/?LinkId=529780) til dette eksempel.
+Du kan også [kun downloade datasættet (Excel-projektmappe)](http://go.microsoft.com/fwlink/?LinkId=529780) for dette eksempel. Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Du kan se de rå data ved at vælge **Power Pivot > Administrer**.
 
 ## <a name="new-hires"></a>Nyansættelser
 Lad os undersøge nyansættelser først.
@@ -118,7 +118,7 @@ I feltet [Spørgsmål og svar](service-how-to-q-and-a.md) kan du angive et spør
    
    Bemærk, at de fleste af de forkerte ansættelser af kvinder er under 30.
 
-Dette er et sikkert miljø at agere i. Du kan altid vælge ikke at gemme dine ændringer. Hvis du gemmer dem, kan du altid gå til **Hent data** for at få en ny kopi af dette eksempel.
+Dette er et sikkert miljø at agere i. Du kan altid vælge ikke at gemme dine ændringer. Hvis du gemme dem, kan du altid gå til **Hent data** for at få en ny kopi af dette eksempel.
 
 ## <a name="next-steps-connect-to-your-data"></a>Næste trin: Opret forbindelse til dine data
 Vi håber, at denne rundtur har vist, hvordan Power BI-dashboards, spørgsmål og svar samt rapporter kan give indsigt i HR-data. Nu er det din tur – opret forbindelse til dine egne data. Med Power BI kan du oprette forbindelse til en lang række datakilder. Få mere at vide om, hvordan du [kommer i gang med Power BI](service-get-started.md).  

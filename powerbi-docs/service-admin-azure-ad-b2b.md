@@ -15,19 +15,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/14/2017
+ms.date: 12/07/2017
 ms.author: asaxton
-ms.openlocfilehash: 5dabaa09923203c31572b413f8674b76028b7483
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 147ec28e64cf271843fcffdd14abe005345170e0
+ms.sourcegitcommit: 7248b5e449b2495d6baef385470d18edfacec457
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B
 
 Power BI kan integreres med Azure Active Directory Business-til-business (Azure AD B2B) for at tillade sikker distribution af Power BI-indhold til gæstebrugere uden for organisationen, mens du stadig bevarer kontrollen over de interne data.
 
 > [!VIDEO https://www.youtube.com/embed/xxQWEQ1NnlY]
+
+> [!NOTE]
+> Denne funktion er i øjeblikket ikke tilgængelig med Power BI-mobilapps. Du kan få vist Power BI-indhold, der deles med Azure AD B2B i en browser på en mobil enhed. 
 
 ## <a name="invite-guest-users"></a>Inviter gæstebrugere
 
@@ -93,6 +96,12 @@ Tildeling af en Power BI Pro-licens til gæstebrugeren i din lejer gør det muli
 Gæstebrugeren har allerede en Power BI Pro-licens, der er tildelt i deres lejer.
 
 ![Gæstebrugeren medbringer sin egen licens](media/service-admin-azure-ad-b2b/license-approach3.png)
+
+## <a name="limitations"></a>Begrænsninger
+
+* Eksterne B2B-gæster er udelukkende begrænset til forbrug af indhold. Eksterne B2B-gæster kan få vist apps, dashboards og rapporter samt eksportere data og oprette mailabonnementer på dashboards og rapporter. De kan ikke få adgang til arbejdsområder eller udgive deres eget indhold.
+* Denne funktion er i øjeblikket ikke tilgængelig med Power BI-mobilapps. Du kan få vist Power BI-indhold, der deles med Azure AD B2B i en browser på en mobil enhed.
+* Brug af gæstebrugere med Power BI understøttes ikke i suveræne clouds (offentlige myndigheder).
 
 ## <a name="next-steps"></a>Næste trin
 

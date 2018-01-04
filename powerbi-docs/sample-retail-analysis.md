@@ -15,19 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 12/04/2017
 ms.author: mihart
-ms.openlocfilehash: cfd085913ea1ef2cf08942ca4570f98eba34a3d4
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.openlocfilehash: 09e245e625c9e0859f93837e56b564218e327926
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på analyse af detailhandel til Power BI: Få en introduktion
 
 Dette dashboard med et brancheeksempel og underliggende rapport analyserer data om detailsalg for varer, der er solgt på tværs af flere butikker og distrikter. De metriske værdier sammenligner dette års resultat med sidste års på følgende områder: salg, enheder, bruttoavance og varians samt analyse af nye butikker. Der er anvendt rigtige data fra obviEnce ([www.obvience.com](http://www.obvience.com)), der er blevet anonymiseret.
 
-Du kan også nøjes med at [downloade datasættet (Excel-projektmappe) til dette eksempel](http://go.microsoft.com/fwlink/?LinkId=529778).
+[!Note] Du kan også nøjes med at [downloade datasættet (Excel-projektmappe) til dette eksempel](http://go.microsoft.com/fwlink/?LinkId=529778). Projektmappen indeholder Power View-ark, som du kan få vist og redigere.  Du kan se de rå data ved at vælge **Power Pivot > Administrer**. 
 
 ![](media/sample-retail-analysis/retail1.png)
 
@@ -142,5 +142,5 @@ Vi håber, at denne rundtur har vist, hvordan Power BI-dashboards, spørgsmål o
 * [Download Excel-projektmappen til dette Power BI-eksempel](http://go.microsoft.com/fwlink/?LinkId=529778)    
 * [Hent data (til Power BI)](service-get-data.md)    
 * [Power BI – Grundlæggende begreber](service-basic-concepts.md)    
-* Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

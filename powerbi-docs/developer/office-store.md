@@ -1,6 +1,6 @@
 ---
-title: Udgiv brugerdefinerede visualiseringer i Office Store
-description: "Få mere at vide om, hvordan du kan udgive dine visualiseringer i Office Store, så andre kan finde og bruge dem."
+title: Publicer brugerdefinerede visuals i AppSource
+description: "Få mere at vide om, hvordan du kan udgive din brugerdefinerede visual i AppSource, så andre kan finde og bruge den."
 services: powerbi
 documentationcenter: 
 author: guyinacube
@@ -15,22 +15,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/20/2017
+ms.date: 12/5/2017
 ms.author: asaxton
-ms.openlocfilehash: 13456711e6c3bdce4554df7b7fbc0e4e9943987a
-ms.sourcegitcommit: 12236d08c27c7ee3fabb7ef9d767e9dee693f8aa
+ms.openlocfilehash: 0d3608d30fdf689c2121e65c5c4cafb861c88c2e
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/06/2017
 ---
-# <a name="publish-custom-visuals-to-the-office-store"></a>Udgiv brugerdefinerede visualiseringer i Office Store
-Få mere at vide om, hvordan du kan udgive dine visualiseringer i Office Store, så andre kan finde og bruge dem.
+# <a name="publish-custom-visuals-to-appsource"></a>Publicer brugerdefinerede visuals i AppSource
+Få mere at vide om, hvordan du kan udgive din brugerdefinerede visual i AppSource, så andre kan finde og bruge den. Office
 
-Når du har oprettet en visualisering, kan du udgive den i Office Store, så andre kan finde og bruge den. Det kræver nogle forberedelser, før du kan gøre det. Du kan finde flere oplysninger om, hvordan du opretter en visualisering, under [Brug udviklerværktøjerne til at oprette brugerdefinerede visualiseringer](../service-custom-visuals-getting-started-with-developer-tools.md).
+Når du har oprettet en brugerdefineret visual, kan du udgive den i AppSource, så andre kan finde og bruge den. Det kræver nogle forberedelser, før du kan gøre det. Du kan finde flere oplysninger om, hvordan du opretter en visualisering, under [Brug udviklerværktøjerne til at oprette brugerdefinerede visualiseringer](../service-custom-visuals-getting-started-with-developer-tools.md).
 
-![](media/office-store/powerbi-custom-visual-store.png)
+![](media/office-store/AppSource_01.jpg)
 
-Hvad er Office Store? Det er det sted, hvor du kan finde apps (tilføjelsesprogrammer) til din Office 365-software. [Office Store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) er det sted, hvor millioner af Office 365-brugere går hen for at finde løsninger, der kan hjælpe dem med at arbejde mere effektivt, give dem større indsigt eller opnå flottere resultater end før.
+Hvad er AppSource? Kort sagt er det stedet, hvor du finder SaaS-apps og -tilføjelsesprogrammer til dine Microsoft-produkter og -tjenester. [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals) forbinder millioner af brugere af Office 365, Dynamics 365, Cortana Intelligence og andre med løsninger, der kan hjælpe dem med at arbejde mere effektivt, med større indsigt eller smukkere end før.
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Forberedelser, inden du indsender en brugerdefineret visualisering
 Når du er færdig med at kode og teste den brugerdefinerede visualisering, og du har føjet den til en pbiviz-fil, skal du sørge for at have følgende klar, når du vil indsende den.
@@ -53,18 +53,18 @@ Du skal som det første sende en mail til det Power BI-team, der tager sig af br
 Vedhæft .pbiviz-filen og .pbix-eksempelrapportfilen i din mail. Power BI-teamet sender instruktioner og en XML-fil til app-pakken, som du skal overføre. Du skal bruge denne XML-app-pakke for at kunne indsende visualiseringen via Office Developer Center.
 
 > [!NOTE]
-> Det vil tage yderligere to uger, før en opdatering til en eksisterende visualisering når produktionsmiljøet, efter at den er blevet godkendt i butikken. Det forbedrer kvaliteten og sikrer, at eksisterende rapporter ikke ødelægges.
+> Det vil tage yderligere to uger, før en opdatering til eksisterende visuals når produktionsmiljøet, efter at den er blevet godkendt i butikken. Det forbedrer kvaliteten og sikrer, at eksisterende rapporter ikke ødelægges.
 > 
 > 
 
-## <a name="submitting-to-the-office-store"></a>Send ind til Office Store
-Når du har fået XML-app-pakken fra Power BI-teamet, skal du navigere til [Office Developer Center](https://sellerdashboard.microsoft.com/Application/Summary) for at indsende visualiseringen til Office Store.
+## <a name="submitting-to-appsource"></a>Indsend til AppSource
+Når du har fået XML-app-pakken fra Power BI-teamet, skal du navigere til [Developer Center](https://sellerdashboard.microsoft.com/Application/Summary) for at indsende din visual til AppSource.
 
 > [!NOTE]
 > Du skal have en gyldig Office-udviklerkonto for at logge på [Office Developer Center](https://dev.office.com/). En Office-udviklerkonto skal være en Microsoft-konto (Live ID, f.eks. hotmail.com eller outlook.com).
 > 
 > [!IMPORTANT]
-> Inden du sender visualiseringen til Office Store, skal du sende en mail med .pbiviz- og .pbix-filen til Power BI-teamet. Power BI-teamet overfører så filerne til den offentlige shareserver. Ellers vil filerne ikke kunne hentes i Office Store. Du skal sende filerne, hver gang du indsender en ny visualisering, opdaterer en eksisterende visualisering og retter afviste indsendelser til Office Store.
+> Inden du sender din visual til AppSource, skal du sende en mail med .pbiviz- og .pbix-filen til Power BI-teamet. Power BI-teamet overfører så filerne til den offentlige shareserver. Ellers vil filerne ikke kunne hentes i butikken. Du skal sende filerne, hver gang du indsender en ny visual, opdaterer en eksisterende visual og retter afviste indsendelser.
 > 
 > 
 

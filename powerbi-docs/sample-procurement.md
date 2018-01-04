@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 12/04/2017
 ms.author: mihart
-ms.openlocfilehash: 576ddfbbf52a2738dd32597479ffd03d554a5256
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 957e7c05907f1fc75eddeb271c664f898203e591
+ms.sourcegitcommit: 7248b5e449b2495d6baef385470d18edfacec457
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på indkøbsanalyse for Power BI: Få en introduktion
 Dette brancheeksempel på et dashboard og den underliggende rapport tager udgangspunkt i en produktionsvirksomheds udgifter til leverandører efter kategori og placering. I eksemplet udforsker vi følgende områder:
@@ -36,7 +36,7 @@ Dette eksempel er en del af en række, der illustrerer, hvordan du kan bruge Pow
 
 Vil du følge med? I [Power BI-tjenesten](https://powerbi.com) skal du gå til **Get Data > Samples > Procurement Analysis Sample > Connect** for at få din egen kopi af eksemplet.
 
-Du kan også [kun downloade datasættet (Excel-projektmappe)](http://go.microsoft.com/fwlink/?LinkId=529784) for dette eksempel.
+[!Note] Du kan også [kun downloade datasættet (Excel-projektmappe)](http://go.microsoft.com/fwlink/?LinkId=529784) for dette eksempel. Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Du kan se de rå data ved at vælge **Power Pivot > Administrer**.
 
 ## <a name="spending-trends"></a>Udgiftstendenser
 Lad os først se på udgiftstendenser efter kategori og placering.  

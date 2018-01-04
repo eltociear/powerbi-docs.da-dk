@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 12/05/2017
 ms.author: mihart
-ms.openlocfilehash: ecd984ab23c4480b2e615635a8d2f337e2a9a50f
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.openlocfilehash: 7ff8ba4557c829551b97e51f411269e3ba8fbdea
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Eksempel på salg og marketing til Power BI: Få en introduktion
 **Eksempel på salg og marketing** indeholder et dashboard og en rapport tilhørende et fiktivt produktionsfirma ved navn VanArsdel Ltd. Dette dashboard blev oprettet af Vanarsdels marketingchef (CMO) for at kunne holde øje med udviklingen i branchen og virksomhedens markedsandel, produktvolumen, salg og tillid.
@@ -30,7 +30,7 @@ VanArsdel har mange konkurrenter, men er førende inden for branchen. Marketingc
 
 Dette eksempel er en del af en række, der illustrerer, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Der er anvendt rigtige data fra obviEnce (www.obvience.com), der er blevet anonymiseret.
 
-Du kan også nøjes med at [downloade datasættet (Excel-projektmappe) til dette eksempel](http://go.microsoft.com/fwlink/?LinkId=529785).
+[!Note] Du kan også nøjes med at [downloade datasættet (Excel-projektmappe) til dette eksempel](http://go.microsoft.com/fwlink/?LinkId=529785). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Du kan se de rå data ved at vælge **Power Pivot > Administrer**.
 
 ![](media/sample-sales-and-marketing/sales1.png)
 

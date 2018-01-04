@@ -14,13 +14,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/13/2017
+ms.date: 12/11/2017
 ms.author: maggies
-ms.openlocfilehash: 58af226f6c3d93fffc805e23fcf1bda0d055058d
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 27ead0a3104693aff4a6fc3c2641c207ad44dc09
+ms.sourcegitcommit: bb577045145b2e6e5807622a53cefa2d46574618
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Opret og publicer apps med dashboards og rapporter i Power BI
 
@@ -32,7 +32,7 @@ Forretningsbrugere har ofte brug for flere Power BI-dashboards og -rapporter for
 
 Med Power BI-apps, der nu findes i prøveversion, kan du oprette samlinger af dashboards og rapporter og publicere disse apps til hele organisationen eller til bestemte personer eller grupper. Som forfatter til rapporten eller administrator gør apps det nemmere for dig at administrere tilladelser til samlinger af dashboards.
 
-Forretningsbrugere kan få dine apps på flere måder. Hvis Power BI-administratoren giver dig tilladelse, kan du automatisk installere dem i dine kollegers Power BI-konti. Ellers kan de installere dine apps fra Microsoft AppSource, eller du kan sende dem et direkte link. De kan nemt finde og vende tilbage til dit indhold, fordi det hele er samlet på ét sted. De får automatisk opdateringer, og du kan styre, hvor ofte dataene opdateres. Læs mere om [appoplevelsen for forretningsbrugere](service-install-use-apps.md).
+Virksomhedsbrugere kan installere disse apps fra Microsoft AppSource, eller du kan sende dem et direkte link. De kan nemt finde og vende tilbage til dit indhold, fordi det hele er samlet på ét sted. De får automatisk opdateringer, og du kan styre, hvor ofte dataene opdateres. Læs mere om [appoplevelsen for forretningsbrugere](service-install-use-apps.md).
 
 ### <a name="apps-and-organizational-content-packs"></a>Apps og organisationsindholdspakker
 Apps er en udviklet form af organisationsindholdspakker. Hvis du allerede har organisationsindholdspakker, vil de fortsætte med at fungere side om side med apps.
@@ -119,15 +119,13 @@ Når dashboards og rapporter i apparbejdsområdet er klar, kan du publicere dem 
    
      ![Appindhold](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-4. Endelig skal du i **Adgang** beslutte, hvem der har adgang til appen, enten alle i organisationen eller specifikke personer eller maildistributionslister. Hvis du har de rette tilladelser, kan du vælge at installere appen til modtagerne automatisk.
-   
-     ![Appadgang](media/service-create-distribute-apps/power-bi-apps-access.png)
+4. Endelig skal du i **Adgang** beslutte, hvem der har adgang til appen: enten alle i organisationen eller specifikke personer eller Active Directory-sikkerhedsgrupper. 
 
 5. Når du vælger **Udfør**, får du vist en meddelelse med en bekræftelse af, at den er klar til at blive publiceret. I dialogboksen, der vises efter udførelse, kan du indsætte URL-adressen, der er et direkte link til denne app, og sende den til personer, som du har delt den med.
    
      ![Afslutning af appen](media/service-create-distribute-apps/power-bi-apps-success.png)
 
-De forretningsbrugere, som du har publiceret appen til, kan finde den på flere forskellige måder. Hvis du kunne installere den automatisk, vises den for det første under Apps på deres Power BI-konto.  Du kan sende dem det direkte link til appen, eller de kan søge efter det i Microsoft AppSource, hvor de kan se alle de apps, de har adgang til. Når de efterfølgende går til Apps, får de hver gang vist denne app på deres liste.
+De virksomhedsbrugere, som du har publiceret appen til, kan finde den på flere forskellige måder. Du kan sende dem det direkte link til appen, eller de kan søge efter det i Microsoft AppSource, hvor de kan se alle de apps, de har adgang til. Når de efterfølgende går til Apps, får de hver gang vist denne app på deres liste.
 
 Læs mere om [appoplevelsen for forretningsbrugere](service-install-use-apps.md).
 

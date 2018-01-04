@@ -15,19 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 7774153ff73fb67a434ac79016507a2e94cf40f1
-ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
+ms.openlocfilehash: 6fbd9f56099e4053524a04680c0d4c0c366ce068
+ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="troubleshooting-power-bi-gateway---personal"></a>Fejlfinding af Power BI Gateway – Personal
 Nedenfor gennemgås nogle almindelige problemer, der kan opstå, når du bruger Power BI Gateway – Personal.
 
 > [!NOTE]
-> Hvis der opstår et problem, der ikke er angivet nedenfor, kan du bede om yderligere hjælp på [communitywebstedet](http://community.powerbi.com/), eller du kan oprette en [supportanmodning](https://powerbi.microsoft.com/support/).
+> Den aktuelle version af gatewayen til personlig brug er **datagateway i det lokale miljø (personlig)**. Opdater din installation, hvis du vil bruge denne version.
 > 
 > 
 
@@ -112,7 +112,7 @@ Hvis du får vist en fejl, der opstår ved opdatering af dashboardfelter, så sk
 
 ## <a name="tools-for-troubleshooting"></a>Værktøjer til fejlfinding
 ### <a name="refresh-history"></a>Opdateringshistorik
-**Opdateringshistorikken** kan hjælpe dig med at se, hvilke fejl der er opstået, såvel som at vise nyttige data, hvis du får brug for at oprette en supportanmodning. Du kan få vist både planlagte opdateringer samt opdateringer efter behov. Sådan får du vist **Opdateringshistorikken**.
+**Opdateringshistorikken** kan hjælpe dig med at se, hvilke fejl der er opstået, såvel som at vise nyttige data, hvis du får brug for at oprette en supportanmodning. Du kan få vist både planlagte opdateringer samt opdateringer efter behov. Sådan får du vist **Opdater historik**.
 
 1. I Power BI-navigationsruden i **Datasæt** skal du vælge et datasæt &gt; Åbn menu &gt; **Planlæg opdatering**.
    ![](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh.png)
@@ -155,5 +155,5 @@ Du kan alternativt gå til **Temp-mappen** (% temp %) og søge efter filer, der 
 [Power BI-gateway – personal](personal-gateway.md)  
 [Fejlfinding af feltfejl](refresh-troubleshooting-tile-errors.md)  
 [Fejlfinding af datagateway i det lokale miljø](service-gateway-onprem-tshoot.md)  
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

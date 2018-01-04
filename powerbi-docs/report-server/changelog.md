@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/17/2017
-ms.author: jaimeta
-ms.openlocfilehash: e56976943e58aba8c9ef36c576a16ab5eba4c796
-ms.sourcegitcommit: 7d4ad2ba92a932d7cc6637348e0774be6623559e
+ms.date: 12/11/2017
+ms.author: tankas
+ms.openlocfilehash: ced415662c2dc39b6491cb79d121f3cd77719fe4
+ms.sourcegitcommit: be55922d7f43f458aea0160ec8fdfb1a0b5a0c00
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -32,6 +32,10 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
 ## <a name="october-2017"></a>Oktober 2017
 
 - **Power BI-rapportserver**
+    - *Version 1.1.6551.5155 (Build 14.0.600.438) udgivet: 11. december 2017*
+        - Fejlrettelser
+            - Der kunne ikke gemmes data efter opdatering til bestemte Power BI Desktop-rapporter.
+
     - *Version 1.1.6530.30789 (Build 14.0.600.437), udgivet: 17. november 2017*
         - Fejlrettelser
             - Rettelse til grundlæggende godkendelsesscenarier 
@@ -88,7 +92,7 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
 
 [Brugerhåndbog](user-handbook-overview.md)  
 [Administratorhåndbog](admin-handbook-overview.md)  
-[Hurtig introduktion: Installér Power BI-rapportserver](quickstart-install-report-server.md)  
+[Hurtigstart: Installér Power BI Report Server](quickstart-install-report-server.md)  
 [Installér Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 

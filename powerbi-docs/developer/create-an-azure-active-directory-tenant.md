@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/09/2017
-ms.author: asaxton
-ms.openlocfilehash: 3e48f08237767a4c0cc5e1a8ddfc70a9087fbc1c
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.date: 11/30/2017
+ms.author: mihart
+ms.openlocfilehash: 22d939dbd0a582611f2f4e90e2306456376e211b
+ms.sourcegitcommit: 910258a5ad8b6861e81ae02c57286db221c37375
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/02/2017
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Opret en Azure Active Directory-lejer, du kan bruge med Power BI
 Du kan få mere at vide om, hvordan du opretter en ny Azure Active Directory-lejer (Azure AD), du kan bruge sammen med det brugerdefinerede program vha. Power BI REST-API'er.
@@ -33,7 +33,7 @@ Når du har en Azure AD-lejer, kan du definere et program og tildele tilladelser
 Din organisation har muligvis allerede en Azure AD-lejer, som du kan bruge til dit program. Du kan bruge denne lejer til dine programbehov, eller du kan oprette en ny lejer specielt til dit program. I denne artikel ser vi nærmere på, hvordan du opretter en ny lejer.
 
 ## <a name="create-an-azure-active-directory-tenant"></a>Opret en Azure Active Directory-lejer
-Hvis du vil integrere Power BI i dit brugerdefinerede program, skal du definere et program i Azure AD. Det gør du vha. en mappe i Azure AD. Dette er din lejer. Hvis din organisation endnu ikke har en lejer, fordi den ikke bruger Power BI- eller Office 365, skal du oprette en. Du skal muligvis også oprette en, hvis du ikke vil have, at dit program bliver blandet med organisationens lejer. Det giver dig mulighed for at holde tingene adskilt.
+Hvis du vil integrere Power BI i dit brugerdefinerede program, skal du definere et program i Azure AD. Det gør du vha. en mappe i Azure AD. Dette er din lejer. Hvis din organisation endnu ikke har en lejer, fordi den ikke bruger Power BI eller Office 365, [skal du oprette en](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Du skal muligvis også oprette en, hvis du ikke vil have, at dit program bliver blandet med organisationens lejer. Det giver dig mulighed for at holde tingene adskilt.
 
 Eller måske vil du kun oprette et program til testformål.
 

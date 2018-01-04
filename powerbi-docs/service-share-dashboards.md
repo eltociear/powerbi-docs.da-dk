@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.author: maggies
-ms.openlocfilehash: 0b50568e49df8e2594519028b90d5d833d17c6b7
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.openlocfilehash: 276f663b8454ef0938222576cec13fcfb073e2cf
+ms.sourcegitcommit: bb577045145b2e6e5807622a53cefa2d46574618
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="share-your-power-bi-dashboards-with-coworkers-and-others"></a>Del dine Power BI-dashboards med kollegaer og andre
 *Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Power BI har [flere måder at samarbejde og distribuere dine dashboards på](service-how-to-collaborate-distribute-dashboards-reports.md), og deling er bare én.
@@ -91,6 +91,8 @@ Kun ejeren af dashboardet kan slå gendeling til og fra.
    * **Læs** for at forhindre vedkommende i at dele med andre.
    * **Fjern adgang** for at forhindre vedkommende i overhovedet at se dashboardet.
 
+4. I dialogboksen **Fjern adgang** skal du beslutte, om du også vil fjerne adgangen til relateret indhold, som f.eks. rapporter og datasæt. Hvis du fjerner elementer med et advarselsikon ![Power BI-advarselsikon](media/service-share-dashboards/power-bi-warning-icon.png), er det bedst at fjerne relateret indhold, fordi det ikke kan vises korrekt.
+
 ## <a name="share-a-dashboard-with-people-outside-your-organization"></a>Del et dashboard med personer uden for din organisation
 Når du deler med personer uden for din organisation, modtager de en mail med et link til det delte dashboard, og de skal logge på Power BI for at få vist dashboardet. Hvis de ikke har en licens til Power BI Pro, kan de tilmelde sig en, når de klikker på linket.
 
@@ -116,8 +118,35 @@ Ting, du skal være opmærksom på angående deling af dashboards:
 * Hvis dine kollegaer allerede har adgang til et bestemt dashboard, kan du sende et direkte link til dette dashboard ved blot at kopiere URL-adressen, når du er på dashboardet. Eksempel: `https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx`
 * Hvis dine kolleger allerede har adgang til et bestemt dashboard, kan du på samme måde [sende et direkte link til den underliggende rapport](service-share-reports.md). 
 
+## <a name="troubleshoot-sharing"></a>Fejlfinding af deling
+
+### <a name="my-dashboard-recipients-see-a-lock-icon-in-a-tile-or-a-permission-required-message"></a>Mine dashboardmodtagere ser et låseikon i et felt eller en meddelelse med "Tilladelse påkrævet"
+
+Hvis de personer, du deler med, kan se et felt, der er låst i et dashboard eller en meddelelse med "Tilladelse påkrævet", når de forsøger at få vist en rapport, skal du give dem tilladelse til det underliggende datasæt. Sådan gør du:
+
+1. Gå til fanen **Datasæt** på listen over indhold.
+
+1. Vælg ellipsen (**...** ) ud for datasættet > **Administrer tilladelser**.
+
+    ![Administrer tilladelser](media/service-share-dashboards/power-bi-sharing-manage-permissions.png)
+
+3. Vælg **Tilføj bruger**.
+
+    ![Vælg Tilføj bruger](media/service-share-dashboards/power-bi-share-dataset-add-user.png)
+
+1. Angiv de komplette mailadresser til enkeltpersoner, distributionsgrupper eller sikkerhedsgrupper. Du kan ikke dele med dynamiske distributionslister.
+
+    ![Tilføj mailadresser](media/service-share-dashboards/power-bi-add-user-dataset.png)
+
+5. Vælg **Tilføj**
+
+### <a name="i-cant-share-a-dashboard"></a>Jeg kan ikke dele et dashboard
+
+For at dele et dashboard skal du have tilladelse til at dele det underliggende indhold igen – alle relaterede rapporter og datasæt. Hvis du ser en meddelelse, hvor der står, du ikke må dele, skal du bede rapportens forfatter om at give dig tilladelse til at dele rapporterne og datasættene igen.
+
+
 ## <a name="next-steps"></a>Næste trin
-* Har du feedback? Gå til [webstedet for Power BI-community'et](https://community.powerbi.com/) med dine forslag.
+* Har du feedback? Kom med dine forslag på [webstedet for Power BI-community'et](https://community.powerbi.com/).
 * [Hvordan kan jeg samarbejde på og dele dashboards og rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Del kun en Power BI-rapport](service-share-reports.md)
 * Har du spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/).

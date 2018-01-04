@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/29/2017
+ms.date: 12/04/2017
 ms.author: mihart
-ms.openlocfilehash: c51984aed112b62143ab132672b331cd0f97c7a1
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 878738eb3f588c461b687451062a1641479e77ed
+ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på analyse af salgsmuligheder til Power BI: Få en introduktion
 **Opportunity Tracking Sample** indeholder et dashboard (og en tilknyttet rapport) for en softwarevirksomhed, der har 2 salgskanaler: *direkte* og *partner*. Salgschefen har oprettet dette dashboard for at spore muligheder og omsætning efter område, handlens størrelse samt kanal.
@@ -38,7 +38,8 @@ Salgschefen er afhængig af 2 målinger af indtægter:
 
 Dette eksempel er en del af en række, der illustrerer, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Der er anvendt rigtige data fra obviEnce ([www.obvience.com)](http://www.obvience.com/), som er blevet anonymiseret.
 
-Du kan også nøjes med at [downloade datasættet (Excel-projektmappe)](http://go.microsoft.com/fwlink/?LinkId=529782) til dette eksempel.  
+>[!Note] 
+Du kan også nøjes med at [downloade datasættet (Excel-projektmappe) til dette eksempel](http://go.microsoft.com/fwlink/?LinkId=529782). Projektmappen indeholder Power View-ark, som du kan få vist og redigere.  Du kan se de rå data ved at vælge **Power Pivot > Administrer**. 
 
 ![](media/sample-opportunity-analysis/opportunity1.png)
 

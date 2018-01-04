@@ -15,21 +15,21 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/08/2017
+ms.date: 12/12/2017
 ms.author: davidi
-ms.openlocfilehash: a4a348d88bc9613c2d18766ff1ea398538088c9b
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.openlocfilehash: 1eff7cbb6fd54993440d309cb14622295daa3d19
+ms.sourcegitcommit: be55922d7f43f458aea0160ec8fdfb1a0b5a0c00
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Hvad er nyt i den nyeste opdatering af Power BI Desktop?
 
-## <a name="november-2017-update-2524921202"></a>November 2017-opdatering (2.52.4921.202)
+## <a name="december-2017-update-2534954481-"></a>Opdatering for december 2017 (2.53.4954.481)
 
-Du kan nu [downloade den seneste version af Power BI Desktop](https://powerbi.microsoft.com/desktop). Hvis du kører Windows 10, kan du også få **Power BI Desktop** fra Windows Store. De månedlige versioner er de samme, uanset hvilken måde du installerer **Power BI Desktop** på. Du kan finde flere oplysninger i [denne artikel](desktop-get-the-desktop.md). 
+Nu kan du [downloade den nyeste version af Power BI Desktop](https://powerbi.microsoft.com/desktop). Hvis du kører Windows 10, kan du også få **Power BI Desktop** fra Windows Store. De månedlige versioner er de samme, uanset hvilken måde du installerer **Power BI Desktop** på. Du kan finde flere oplysninger i [denne artikel](desktop-get-the-desktop.md). 
 
-Denne måned er der en hel bunke opdateringer til **Power BI Desktop**. 
+Med december følger en julesæk fuld af opdateringer til **Power BI Desktop**, og den er propfyldt med funktioner og gaver til glæde for alle business intelligence-orienterede børn (og voksne). Og vi lover, at ingen får kul.
 
 Linkene ud for hver opdatering betyder følgende:
 
@@ -44,40 +44,39 @@ Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 
 ### <a name="reporting"></a>Rapportering
 
--   Regelbaseret betinget formatering til tabel- og -matrixvisualiseringer [[video]](https://youtu.be/sI3yRjdnJ7w?t=55s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting) 
--   Cellejustering for tabel- og matrixvisualiseringer [[video]](https://youtu.be/sI3yRjdnJ7w?t=4m16s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#alignment) 
--   Kontrollér arrangering af visualiseringer i valgruden [[video]](https://youtu.be/sI3yRjdnJ7w?t=6m21s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#selectionPane) 
--   Lås objekter i din rapport [[video]](https://youtu.be/sI3yRjdnJ7w?t=9m2s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#lock) 
--   Esri Plus-abonnement er nu tilgængeligt for ArcGIS Maps til Power BI  [[video]](https://youtu.be/sI3yRjdnJ7w?t=10m31s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#esriPlus) 
--   Rapportindstillinger til langsomme datakilder [[video]](https://youtu.be/sI3yRjdnJ7w?t=16m11s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#slowDataSource) 
--   Bedre ydeevne for filtrering [[video]](https://youtu.be/sI3yRjdnJ7w?t=20m9s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#filtering) 
--   Nyligt udgivne brugerdefinerede visualiseringer [[video]](https://youtu.be/sI3yRjdnJ7w?t=20m50s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#customVisuals) 
+-   Spørgsmål og svar om oprettelse af rapporter [[video]](https://youtu.be/ZPU8B-1BxjI?t=8s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#QandA) 
+-   Tværgående fremhævning til bogmærker [[video]](https://youtu.be/ZPU8B-1BxjI?t=4m18s)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting) 
+-   Større bogmærkefleksibilitet [[video]](https://youtu.be/ZPU8B-1BxjI?t=4m18s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility) 
+-   Ruden Feltegenskaber og feltbeskrivelser[[video]](https://youtu.be/ZPU8B-1BxjI?t=13m19s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#fieldPropertiesPane) 
+-   Punktvisualiseringer på baggrund af x- og y-aksegrupperinger  [[video]](https://youtu.be/ZPU8B-1BxjI?t=15m12s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#scatterChart) 
+-   Stikprøvetagning med høj tæthed for kort, baseret på breddegrad og længdegrad  [[video]](https://youtu.be/ZPU8B-1BxjI?t=17m3s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#highDensityMaps) 
+-   Dynamiske udsnitsværktøjer  [[video]](https://youtu.be/sI3yRjdnJ7w?t=20m9s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#responsive) 
+-   Nyligt udgivne brugerdefinerede visualiseringer [[video]](https://youtu.be/ZPU8B-1BxjI?t=18m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#customVisuals) 
 
 
 ### <a name="analytics"></a>Analyse
 
--   Formatering på celleniveau for flerdimensionale AS-modeller til kort med flere rækker [[video]](https://youtu.be/sI3yRjdnJ7w?t=27m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#cellLevelFormatting) 
+-   Analysér filtrerer andre visuals [[video]](https://youtu.be/ZPU8B-1BxjI?t=28m53s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals) 
 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
 
--   Impala-connector – understøttelse af Windows-godkendelse [[video]](https://youtu.be/sI3yRjdnJ7w?t=28m9s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#impala) 
-
-
-### <a name="other"></a>Andet
-
--   Redigering af forespørgsel – tilføj kolonne fra eksempelforbedringer  [[video]](https://youtu.be/sI3yRjdnJ7w?t=28m34s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#addColumnFromExamples) 
+-   Adobe Analytics-forbindelse [[video]](https://youtu.be/ZPU8B-1BxjI?t=30m35s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#AdobeAnalytics) 
+-   HDInsight Interactive Query-forbindelse [[video]](https://youtu.be/ZPU8B-1BxjI?t=31m13s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#HDInsightInteractiveQuery) 
+-   Data.World-forbindelse [[video]](https://youtu.be/sI3yRjdnJ7w?t=28m9s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#Data.World) 
+-   Forbedringer til SAP BW-forbindelse [[video]](https://youtu.be/sI3yRjdnJ7w?t=28m9s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#SAPBW) 
+-   IBM Netezza-forbindelse er nu generelt tilgængelig [[video]](https://youtu.be/sI3yRjdnJ7w?t=28m9s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#IBMNetezza) 
 
 
 
 > [!NOTE]
 > Du kan også [se alle de datakilder, du kan bruge i Power BI Desktop](desktop-data-sources.md). Vi opdaterer hele tiden listen med nye datakilder, så kig tilbage ofte.
 
-Vil du have flere oplysninger om disse opdateringer? Se nærmere på [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-desktop-september-2017-feature-summary), hvor du kan få mere detaljerede oplysninger om hver af de nye funktioner (dette er de samme referencer til blogindlæg på listen herover).
+Vil du have flere oplysninger om disse opdateringer? Se nærmere på [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/), hvor du kan få mere detaljerede oplysninger om hver af de nye funktioner (dette er de samme referencer til blogindlæg på listen herover).
 
 I følgende video beskrives og vises hver af disse opdateringer. Du kan også se videoen i blogindlægget.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sI3yRjdnJ7w" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZPU8B-1BxjI" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
 > Du kan også læse om [nyhederne i Power BI-tjenesten](service-whats-new.md) og se [nyhederne i mobileapperne til Power BI](mobile-whats-new-in-the-mobile-apps.md).

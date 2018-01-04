@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 12/05/2017
 ms.author: maggies
-ms.openlocfilehash: cff6a984f4c3d47bbf7dcd3df43253c318b2bf50
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 97fb3625848210f6222317cf3fc48eea305ef04d
+ms.sourcegitcommit: 7248b5e449b2495d6baef385470d18edfacec457
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Kom i gang med Power BI-mobilapp til Windows 10
 Med Power BI-mobilappen til Windows 10 får du Power BI på din tablet eller telefon med opdateret, touchaktiveret mobiladgang til dine virksomhedsoplysninger. Se og interager med virksomhedens dashboards, uanset hvor du er &#150; direkte fra [Start i Windows](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -35,11 +35,9 @@ Derefter kan du interagere med dine dashboards og rapporter, udforske dataene og
 ## <a name="first-things-first"></a>Det vigtigste først
 * [**Hent Power BI-mobilappen til Windows 10**](http://go.microsoft.com/fwlink/?LinkID=526478) fra Windows Store.
   
-  > [!NOTE]
-  > Din enhed skal køre Windows 10. Appen fungerer bedst på enheder med mindst 2 GB RAM og 8 GB internt lager. Det kan køre på enheder med mindst 1 GB RAM.
-  > 
-  > 
-* Se mere om [nyhederne i Power Bi-mobilappsene](mobile-whats-new-in-the-mobile-apps.md).
+  Din enhed skal køre Windows 10. Appen fungerer på enheder med mindst 3 GB RAM og 8 GB internt lager.
+   
+* Find ud af, [hvad der er nyt i Power Bi-mobilapperne](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="sign-up-for-the-power-bi-service-on-the-web"></a>Tilmeld dig Power BI-tjenesten på internettet
 Hvis du endnu ikke har tilmeldt dig, kan du gå til [Power BI-tjenesten](http://powerbi.com/) og tilmelde din egen konto for at oprette og lagre dashboards og rapporter samt samle dine data. Log på Power BI fra din Windows 10-enhed for at se dine egne dashboards overalt.
@@ -96,7 +94,7 @@ Find hurtigt dine dashboards, rapporter og apps ved at skrive i søgefeltet, som
    ![Relevante søgeresultater](media/mobile-windows-10-phone-app-get-started/pbi_win10_search_m.png)
 
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Find dit indhold i Power BI-mobilappsene
-Dine dashboards og rapporter gemmes forskellige steder i Power BI-mobilappsene alt efter, hvor de kom fra. Læs [Sådan finder du dit indhold i mobilappsene](mobile-apps-find-content-mobile-devices.md). Desuden kan du altid søge efter noget, du har i Power BI-mobilappsene. 
+Dine dashboards og rapporter gemmes forskellige steder i Power BI-mobilapperne, alt efter hvor de kom fra. Læs [Sådan finder du dit indhold i mobilapperne](mobile-apps-find-content-mobile-devices.md). Desuden kan du altid søge efter noget, du har i Power BI-mobilappsene. 
 
 ![Navigation i venstre side af Power BI](media/mobile-windows-10-phone-app-get-started/power-bi-win10-left-nav.png)
 
@@ -117,7 +115,7 @@ Læs mere om [favoritter i Power BI-mobilappsene](mobile-apps-favorites.md).
 Her er nogle andre ting, du kan gøre i Power BI-appen til Windows 10-enheder med dashboards og rapporter i Power BI samt Reporting Services-mobilrapporter og -KPI'er på Reporting Services-webportalen
 
 ### <a name="power-bi-dashboards-and-reports"></a>Power BI-dashboards og -rapporter
-* Se [dine apps](service-install-use-apps.md).
+* Få vist [dine apps](service-install-use-apps.md).
 * Se dine [dashboards](mobile-apps-view-dashboard.md).
 * [Fastgør Power BI-felter og -dashboards](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) som dynamiske felter på startskærmen på din enhed.
 * [Del felter](mobile-share-tile-windows-10-phone-app.md).
