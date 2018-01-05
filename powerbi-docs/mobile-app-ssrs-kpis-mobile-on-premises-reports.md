@@ -15,20 +15,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 12/18/2017
 ms.author: maggies
-ms.openlocfilehash: 99fceab5904deaa510edd213c349dcfb2e38ac28
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 5bbd2f09187e9fac16f6cc4b9ac3ff59a888ed7f
+ms.sourcegitcommit: ea247cb3cfc1cac076d4b076c1ad8e2fc37e15a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Vis rapporter og KPI'er fra rapportserveren i det lokale miljø i Power BI-mobilapps
 Gælder for:
 
 | ![iPhone](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/iphone-logo-50-px.png) | ![iPad](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/ipad-logo-50-px.png) | ![Android-telefon](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-phone-logo-50-px.png) | ![Android-tablet](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/android-tablet-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhones |iPads |Android-telefoner |Android-tablets |
+| iPhones |iPad-tablets |Android-telefoner |Android-tablets |
 
 Power BI-mobilapps leverer live, touchaktiveret mobiladgang til dine firmaoplysninger i det lokale miljø via Power BI-rapportserver og SQL Server 2016 Reporting Services (SSRS). 
 
@@ -63,7 +63,14 @@ Du kan se Power BI-rapporter, Reporting Services-mobilrapporter og KPI'er i Powe
 3. Tryk på **Opret forbindelse til server**.
    
     ![Opret forbindelse til server](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-android-server-sign-in.png)
-4. Udfyld serveradressen og dit brugernavn og din adgangskode. Brug dette format til serveradressen:
+
+     Mobilappen skal have adgang til serveren på en eller anden måde. Der er et par måder at gøre det på:
+
+    - Den nemmeste måde er at være på samme netværk/anvende en VPN-forbindelse.
+    - Det er muligt at bruge en Web Application Proxy til at oprette forbindelse, hvis du er uden for organisationen. Du kan få flere oplysninger under [Brug af OAuth til at oprette forbindelse til Reporting Services](mobile-oauth-ssrs.md). 
+    - Åbn en forbindelse (port) i firewallen.
+
+1. Udfyld serveradressen og dit brugernavn og din adgangskode. Brug dette format til serveradressen:
    
      `http://<servername>/reports`
    
@@ -71,12 +78,9 @@ Du kan se Power BI-rapporter, Reporting Services-mobilrapporter og KPI'er i Powe
    
      `https://<servername>/reports`
    
-   > [!NOTE]
-   > Inkluder **http** eller **https** foran forbindelsesstrengen.
-   > 
-   > 
+   Inkluder **http** eller **https** foran forbindelsesstrengen.
    
-    ![Dialogfeltet Opret forbindelse til server](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-connect-to-server-dialog.png)
+    ![Dialogboksen Opret forbindelse til server](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ios-connect-to-server-dialog.png)
 5. (Valgfrit) Under **Avancerede indstillinger** kan du give serveren et brugervenligt, hvis du vil.
 6. Nu kan du se serveren på den venstre navigationsbjælke – i dette eksempel hedder den "power bi-rapportserver".
    
@@ -100,7 +104,7 @@ Du kan markere KPI'er og rapporter som favoritter på webportalen og derefter se
 
 * Tryk på **Favoritter**.
   
-   ![Favoritter i venstre navigationsrude](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server.png)
+   ![Favoritter i venstre navigationsrude](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-ipad-faves-pbi-report-server-update.png)
   
    Dine foretrukne KPI'er og rapporter fra webportalen findes alle på denne side sammen med Power BI-dashboards i Power BI-tjenesten:
   
