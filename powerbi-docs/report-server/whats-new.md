@@ -97,7 +97,7 @@ Vi har udgivet en [gennemgang af, hvordan du tilføjer Office Online Server (OOS
 * har en PowerPivot-datamodel.
 
 ### <a name="support-for-new-table-and-matrix-visuals"></a>Understøttelse af nye tabel- og matrixvisuals
-Power BI-rapportserver understøtter nu de nye Power BI-tabel- og matrixvisuals. Hvis du vil oprette rapporter med disse visuelle elementer, skal du bruge en opdateret version af Power BI Desktop-udgave til versionen fra oktober 2017. Den kan ikke installeres side om side med versionen af Power BI Desktop fra juni 2017. Hvis du vil have den seneste version af Power BI Desktop, skal du vælge **Avancerede indstillinger for hentning af filer** på [siden til download af Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
+Power BI-rapportserver understøtter nu de nye Power BI-tabel- og matrixvisuals. Hvis du vil oprette rapporter med disse visuals, skal du bruge en opdateret version af Power BI Desktop-udgave til versionen fra oktober 2017. Den kan ikke installeres side om side med versionen af Power BI Desktop fra juni 2017. Hvis du vil have den seneste version af Power BI Desktop, skal du vælge **Avancerede indstillinger for hentning af filer** på [siden til download af Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
 
 ## <a name="june-2017"></a>Juni 2017
 * Power BI-rapportserver er blevet gjort offentligt tilgængeligt (GA).
@@ -105,7 +105,7 @@ Power BI-rapportserver understøtter nu de nye Power BI-tabel- og matrixvisuals.
 ## <a name="may-2017"></a>Maj 2017
 * Prøveversion af Power BI-rapportserver gjort tilgængelig
 * Mulighed for at publicere Power BI-rapporter i det lokale miljø
-  * Understøttelse af brugerdefinerede visuelle elementer
+  * Understøttelse af brugerdefinerede visuals
   * Kun understøttelse af Analysis Services-liveforbindelser, men med flere datakilder på vej.
   * Appen Power BI - Mobil er blevet opdateret til at vise Power BI-rapporter, der hostes i Power BI-rapportserver
 * Forbedret samarbejde i rapporter med kommentarer

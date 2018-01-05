@@ -43,13 +43,13 @@ I hvert enkelt tilfælde oprettes et datasæt, og det vises i Mit arbejdsområde
 
 Et datasæt kan hente data fra en eller flere datakilder. Du kan f.eks. bruge Power BI Desktop til at hente data fra en SQL-database i din organisation og få andre data fra et OData-feed online. Derefter oprettes et enkelt datasæt, når du publicerer filen til Power BI, men det vil have datakilder til både SQL-databasen og OData-feedet.
 
-Et datasæt indeholder oplysninger om datakilderne, legitimationsoplysninger til datakilderne og i de fleste tilfælde et undersæt af data, der er kopieret fra datakilden. Når du opretter visuelle elementer i rapporter og dashboards, ser du på data i datasættet, eller hvis det er en liveforbindelse som Azure SQL Database, definerer datasættet dataene, du kan se, direkte fra datakilden. Hvis der er tale om en liveforbindelse til Analysis Services stammer datasætdefinitionen fra Analysis Services direkte.
+Et datasæt indeholder oplysninger om datakilderne, legitimationsoplysninger til datakilderne og i de fleste tilfælde et undersæt af data, der er kopieret fra datakilden. Når du opretter visualiseringer i rapporter og dashboards, ser du på data i datasættet, eller hvis det er en liveforbindelse som Azure SQL Database, definerer datasættet dataene, du kan se, direkte fra datakilden. Hvis der er tale om en liveforbindelse til Analysis Services stammer datasætdefinitionen fra Analysis Services direkte.
 
 > *Når du opdaterer data, opdaterer du dataene i det datasæt, der er gemt i Power BI fra din datakilde. Denne opdatering er en fuld opdatering og ikke trinvis.*
 > 
 > 
 
-Når du opdaterer data i et datasæt, uanset om det er ved hjælp af Opdater nu, eller ved at indstille en tidsplan for opdatering, bruger Power BI oplysninger i datasættet til at oprette forbindelse til de datakilder, der er defineret for den, efterspørger opdaterede data og indlæser derefter de opdaterede data i datasættet. Alle visuelle elementer i dine rapporter eller dashboards, der er baseret på dataene, opdateres automatisk.
+Når du opdaterer data i et datasæt, uanset om det er ved hjælp af Opdater nu, eller ved at indstille en tidsplan for opdatering, bruger Power BI oplysninger i datasættet til at oprette forbindelse til de datakilder, der er defineret for den, efterspørger opdaterede data og indlæser derefter de opdaterede data i datasættet. Alle visualiseringer i dine rapporter eller dashboards, der er baseret på dataene, opdateres automatisk.
 
 Før vi fortsætter, er der noget andet, som er meget vigtigt at få med:
 
@@ -71,14 +71,14 @@ Dette synkroniserer din Power BI Desktop- eller Excel-fil mellem Power BI-tjenes
 Dette henviser til at opdatere datasættet i Power BI-tjenesten med data fra den oprindelige datakilde. Dette gøres enten ved hjælp af planlagte opdateringer eller Opdater nu. Det kræver en gateway i forbindelse med datakilder i lokale miljøer.
 
 ### <a name="tile-refresh"></a>Opdatering af felter
-Opdatering af felter opdaterer cachen for feltvisualiseringer på dashboardet, når dataene ændres. Dette sker ca. hvert 15. minut. Du kan desuden gennemtvinge en opdatering af felter ved at vælge **ellipsen (...)** i øverste højre hjørne af et dashboard og derefter vælge **Opdater dashboardfelter**.
+Opdatering af felter opdaterer cachen for feltvisuals på dashboardet, når dataene ændres. Dette sker ca. hvert 15. minut. Du kan desuden gennemtvinge en opdatering af felter ved at vælge **ellipsen (...)** i øverste højre hjørne af et dashboard og derefter vælge **Opdater dashboardfelter**.
 
 ![](media/refresh-data/dashboard-tile-refresh.png)
 
 Yderligere oplysninger om almindelige fejl under opdatering af felter finder du under [Fejlfinding af feltfejl](refresh-troubleshooting-tile-errors.md).
 
 ### <a name="visual-container-refresh"></a>Opdatering af visuelle beholdere
-Opdatering af visuelle beholdere opdaterer de cachelagrede visuelle elementer i rapporten, når dataene ændres.
+Opdatering af visuelle beholdere opdaterer de cachelagrede visuals i rapporten, når dataene ændres.
 
 ## <a name="what-can-be-refreshed"></a>Hvad kan opdateres?
 I Power BI kan du typisk bruge Hent data til at importere data fra en fil på et lokalt drev, OneDrive eller SharePoint Online, publicere en rapport fra Power BI Desktop eller oprette direkte forbindelse til en database i clouden i din egen organisation. Stort set alle data i Power BI kan opdateres, men om du behøver det eller ej, afhænger af hvad dit datasæt er baseret på, og de datakilder det har forbindelse til. Lad os se på, hvordan hver af disse metoder opdaterer data.
@@ -161,7 +161,7 @@ Opdateringsfunktionerne for et datasæt, der er en del af en organisationsindhol
 Du kan få mere at vide i [Introduktion til organisationsindholdspakker](service-organizational-content-pack-introduction.md).
 
 ## <a name="live-connections-and-directquery-to-on-premises-data-sources"></a>Liveforbindelser og DirectQuery til datakilder i det lokale miljø
-Med datagatewayen i det lokale miljø kan du sende forespørgsler fra Power BI til dine datakilder i det lokale miljø. Når du arbejder med et visuelt element, sendes forespørgsler fra Power BI direkte til databasen. Derefter returneres opdaterede data, og visuelle elementer opdateres. Da der er en direkte forbindelse mellem Power BI og databasen, er det ikke nødvendigt at planlægge en opdatering.
+Med datagatewayen i det lokale miljø kan du sende forespørgsler fra Power BI til dine datakilder i det lokale miljø. Når du arbejder med en visualisering, sendes forespørgsler fra Power BI direkte til databasen. Derefter returneres opdaterede data, og visualiseringer opdateres. Da der er en direkte forbindelse mellem Power BI og databasen, er det ikke nødvendigt at planlægge en opdatering.
 
 Når der oprettes forbindelse til en SQL Service Analysis Services (SSAS)-datakilde ved hjælp af en liveforbindelse, kan liveforbindelsen til SSAS-kilden i modsætning til DirectQuery køre mod cachen, selvom den indlæser en rapport. Denne adfærd forbedrer indlæsningsydeevnen for rapporten. Du kan sende en forespørgsel om de seneste data fra SSAS-datakilden ved hjælp af knappen til **opdatering**. Ejere af SSAS-datakilder kan konfigurere hyppigheden for planlagt opdatering af cachen for datasættet for at sikre, at rapporterne er så opdaterede, som de kræver. 
 
@@ -184,9 +184,9 @@ Når du konfigurerer en datakilde med datagatewayen i det lokale miljø, kan du 
 Læs mere i [Datagateways i det lokale miljø](service-gateway-onprem.md)
 
 ## <a name="databases-in-the-cloud"></a>Databaser i clouden
-Med DirectQuery er der en direkte forbindelse mellem Power BI og databasen i clouden. Når du arbejder med et visuelt element, sendes forespørgsler fra Power BI direkte til databasen. Derefter returneres opdaterede data, og visuelle elementer opdateres. Og fordi både Power BI-tjenesten og datakilden er i clouden, er det ikke nødvendigt at have en personlig gateway.
+Med DirectQuery er der en direkte forbindelse mellem Power BI og databasen i clouden. Når du arbejder med en visualisering, sendes forespørgsler fra Power BI direkte til databasen. Derefter returneres opdaterede data, og visualiseringer opdateres. Og fordi både Power BI-tjenesten og datakilden er i clouden, er det ikke nødvendigt at have en personlig gateway.
 
-Hvis der ingen brugerinteraktion er i det visuelle element, opdateres dataene automatisk ca. en gang i timen. Du kan ændre denne opdateringsfrekvens ved hjælp af indstillingen *Planlagt cacheopdatering* og angive opdateringshyppigheden.
+Hvis der ingen brugerinteraktion er i visualiseringen, opdateres dataene automatisk ca. en gang i timen. Du kan ændre denne opdateringsfrekvens ved hjælp af indstillingen *Planlagt cacheopdatering* og angive opdateringshyppigheden.
 
 Hvis du vil angive frekvensen, skal du vælge **tandhjulsikonet** i øverste højre hjørne af Power BI-tjenesten og derefter vælge **Indstillinger**.
 

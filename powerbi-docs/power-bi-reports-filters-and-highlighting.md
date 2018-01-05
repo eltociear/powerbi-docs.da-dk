@@ -32,7 +32,7 @@ Du kan filtrere og fremhæve rapporter i Power BI på mange forskellige måder. 
 * De måder, hvorpå du kan [oprette og bruge filtre og fremhævning i redigeringsvisning/rapporter, som du ejer](power-bi-report-add-filter.md). Når du har redigeringsrettigheder til en rapport, kan du oprette, ændre og slette filtre og fremhævning i rapporter.
 * De måder, hvorpå du kan [oprette filtre og fremhævning i en rapport, der deles med dig eller i redigeringsvisning for rapporter](service-interact-with-a-report-in-reading-view.md). Her har du færre valgmuligheder, men Power BI giver dig stadig en lang række muligheder for filtrering og fremhævning.  
 * [En detaljeret præsentation af de filter- og fremhævningsmuligheder, der er tilgængelige i redigeringsvisning](power-bi-how-to-report-filter.md), herunder et detaljeret indblik i filtertyperne (f.eks. dato og klokkeslæt, numerisk og tekst) og forskellen mellem grundlæggende og avancerede indstillinger.
-* Nu hvor du ved, hvordan filtre og fremhævning fungerer som standard, [kan du lære, hvordan du ændrer, hvordan visuelle elementer på en side filtrerer og fremhæver hinanden](service-reports-visual-interactions.md)
+* Nu hvor du ved, hvordan filtre og fremhævning fungerer som standard, [kan du lære, hvordan du ændrer, hvordan visualiseringer på en side filtrerer og fremhæver hinanden](service-reports-visual-interactions.md)
 
 > [!TIP]
 > Hvordan ved Power BI, hvordan data er knyttet til hinanden?  Programmet bruger relationerne imellem de forskellige tabeller og felter i den underliggende [datamodel](https://support.office.com/article/Create-a-Data-Model-in-Excel-87e7a54c-87dc-488e-9410-5c75dbcb0f7b?ui=en-US&rs=en-US&ad=US) til at få elementer på en rapportside til at interagere med hinanden.
@@ -42,7 +42,7 @@ Du kan filtrere og fremhæve rapporter i Power BI på mange forskellige måder. 
 ## <a name="introduction-to-filters-and-highlighting-in-reports-using-the-filters-pane"></a>Introduktion til filtre og fremhævning i rapporter ved hjælp af ruden Filtre
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-add-filter-reading-view.png)
 
-Filtre og fremhævning kan anvendes ved hjælp af ruden **Filtre** eller ved at lave fremhævninger direkte på selve rapporten (ad hoc, se nederst på siden). Ruden Filtre viser de tabeller og felter, der bruges i rapporten, og eventuelle filtre, der anvendes. Filtrene er opdelt i **Filtre på sideniveau**, **Filtre på rapportniveau** og **Filtre på visualiseringsniveau**.  Du kan kun se filtre på visualiseringsniveau, hvis du har valgt et visuelt element på rapportlærredet.
+Filtre og fremhævning kan anvendes ved hjælp af ruden **Filtre** eller ved at lave fremhævninger direkte på selve rapporten (ad hoc, se nederst på siden). Ruden Filtre viser de tabeller og felter, der bruges i rapporten, og eventuelle filtre, der anvendes. Filtrene er opdelt i **Filtre på sideniveau**, **Filtre på rapportniveau** og **Filtre på visualiseringsniveau**.  Du kan kun se filtre på visualiseringsniveau, hvis du har valgt en visualisering på rapportlærredet.
 
 > [!TIP]
 > Hvis der står **Alle** ud for filteret, betyder det, at hele feltet inkluderes som et filter.  **Kæde(Alle)** på skærmbilledet nedenfor viser f.eks., at denne rapportside inkluderer data om alle butikskæderne.  På den anden side viser filteret på rapportniveau for **Regnskabsåret er 2013 eller 2014**, at rapporten kun indeholder data for regnskabsårene 2013 og 2014.
@@ -62,7 +62,7 @@ Hvis du kun har adgang til en rapport i læsevisning, ser ruden Filtre cirka så
 
 Denne side i rapporten har 6 filtre på sideniveau og 1 filter på rapportniveau.
 
-Vælg et visuelt element for at se, om der eksisterer filtre på visualiseringsniveau. På billedet nedenfor anvendes der 6 filtre på boblediagrammet.
+Vælg en visual for at se, om der eksisterer filtre på visualiseringsniveau. På billedet nedenfor anvendes der 6 filtre på boblediagrammet.
 
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-filter-visual-level.png)
 
@@ -78,7 +78,7 @@ Som i læsevisning (ovenfor) kan vi se, at denne side i rapporten har 6 filtre p
 Men i redigeringsvisning kan vi gøre meget mere med filtre og fremhævning. Den vigtigste forskel er, at vi kan tilføje nye filtre. Få mere at vide om, hvordan du gør dette og meget andet i artiklen [Føj et filter til en rapport](power-bi-report-add-filter.md)
 
 ## <a name="ad-hoc-filterting-and-highlighting"></a>Ad hoc-filtre og -fremhævning
-Vælg et felt på rapportlærredet for at filtrere og fremhæve resten af siden. Vælg et tomt område i den samme visualisering for at fjerne det. Denne type filtrering og fremhævning gemmes ikke sammen med rapporten, men det er en sjov, hurtig måde at udforske dataeffekter på. Hvis du vil finjustere, hvordan denne type krydsfiltrering og krydsfremhævning fungerer, kan du se mere under [Visuelle interaktioner](service-reports-visual-interactions.md)
+Vælg et felt på rapportlærredet for at filtrere og fremhæve resten af siden. Vælg et tomt område i den samme visual for at fjerne det. Denne type filtrering og fremhævning gemmes ikke sammen med rapporten, men det er en sjov, hurtig måde at udforske dataeffekter på. Hvis du vil finjustere, hvordan denne type krydsfiltrering og krydsfremhævning fungerer, kan du se mere under [Visuelle interaktioner](service-reports-visual-interactions.md)
 
 ![](media/power-bi-reports-filters-and-highlighting/power-bi-adhoc-filter.gif)
 
@@ -89,7 +89,7 @@ Vælg et felt på rapportlærredet for at filtrere og fremhæve resten af siden.
 
 [Få en præsentation af rapportfiltre](power-bi-how-to-report-filter.md)
 
-[Rediger, hvordan visuelle elementer i rapporter krydsfiltrerer og krydsfremhæver hinanden](service-reports-visual-interactions.md)
+[Rediger, hvordan visuals i rapporter krydsfiltrerer og krydsfremhæver hinanden](service-reports-visual-interactions.md)
 
 Få mere at vide om [rapporter i Power BI](service-reports.md)
 

@@ -25,7 +25,7 @@ ms.contentlocale: da-DK
 ms.lasthandoff: 11/13/2017
 ---
 # <a name="combo-chart-in-power--tutorial"></a>Kombinationsdiagram i Power  (selvstudium)
-I Power BI er et kombinationsdiagram et enkelt visuelt element, der kombinerer et kurvediagram og et søjlediagram. Ved at kombinere disse to diagrammer kan du hurtigere sammenligne dine data.
+I Power BI er et kombinationsdiagram en enkelt visualisering, der kombinerer et kurvediagram og et søjlediagram. Ved at kombinere disse to diagrammer kan du hurtigere sammenligne dine data.
 
 Kombinationsdiagrammer kan have en eller to Y-akser.
 
@@ -34,7 +34,7 @@ Kombinationsdiagrammer er et fantastisk valg i følgende tilfælde:
 
 * Når du har et kurvediagram og et søjlediagram med den samme X-akse.
 * Til at sammenligne flere målinger med forskellige værdiintervaller.
-* Til at illustrere sammenhængen mellem to målinger i ét visuelt element.
+* Til at illustrere sammenhængen mellem to målinger i én visualisering.
 * Til at kontrollere, om en måling opfylder målet, der er defineret af en anden måling
 * Til at spare plads på lærredet.
 
@@ -58,8 +58,8 @@ Log på Power BI for at oprette dit eget kombinationsdiagram, og vælg **Hent da
     c.  Vælg **Time**\>**FiscalMonth** for at føje det til beholderen **Axis**. 
    
     ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Vælg ellipsen (...) i øverste højre hjørne af det visuelle element, og vælg **Sort by FiscalMonth**.
-6. Konverter søjlediagrammet til et kombinationsdiagram. Vælg søjlediagrammet, og vælg derefter **Line and clustered column chart** fra fanen **Visualizations**.
+5. Vælg ellipsen (...) i øverste højre hjørne af visualiseringen, og vælg **Sort by FiscalMonth**.
+6. Konvertér søjlediagrammet til et kombinationsdiagram. Vælg søjlediagrammet, og vælg derefter **Line and clustered column chart** fra fanen **Visualizations**.
    
     ![](media/power-bi-visualization-combo-chart/converttocombo_new2.png)
 7. Fra ruden **Fields** kan du derefter trække **Sales** \> **Last Year Sales** til beholderen **Line Values**.
@@ -79,7 +79,7 @@ I denne opgave skal vi sammenligne bruttomargen og salg.
 2. Tilføj **This Year Sales > Value** og **Last Year Sales** i kurvediagrammet. Skalaen for **GM% Last Year** er meget mindre end skalaen for **Sales**, hvilket gør det svært at sammenligne.      
    
    ![](media/power-bi-visualization-combo-chart/flatline_new.png)
-3. Hvis du vil gøre det nemmere at læse og fortolke det visuelle element, skal du konvertere kurvediagrammet til et Kurve- og stablet søjlediagram.
+3. Hvis du vil gøre det nemmere at læse og fortolke en visual, skal du konvertere kurvediagrammet til et Kurve- og stablet søjlediagram.
    
    ![](media/power-bi-visualization-combo-chart/converttocombo_new.png)
 4. Træk **Gross Margin% Last Year** fra **Column Values** til **Line Values**. Der oprettes to akser i Power BI, og datasættene kan derfor skaleres forskelligt. Det kan ses ved, at den venstre akse måles i dollar, mens den højre akse måles i procent.
@@ -109,14 +109,14 @@ Nu kan du f.eks.:
 ## <a name="highlighting-and-cross-filtering"></a>Fremhævning og krydsfiltrering
 Du kan få mere at vide om brug af ruden Filters under [Føj et filter til en rapport](power-bi-report-add-filter.md).
 
-Fremhævning af en kolonne eller kurve i kombinationsdiagrammet krydsfiltrerer andre visuelle elementer på rapportsiden ... og omvendt.
+Fremhævning af en kolonne eller kurve i kombinationsdiagrammet krydsfiltrerer andre visualiseringer på rapportsiden ... og omvendt.
 
 ## <a name="next-steps"></a>Næste trin
-[Føj et visuelt element til en rapport](power-bi-report-add-visualizations-i.md)
+[Føj en visualisering til en rapport](power-bi-report-add-visualizations-i.md)
 
-[Visuelle elementer i Power BI-rapporter](power-bi-report-visualizations.md)
+[Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
 
-[Typer af visuelle elementer i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+[Typer af visualiseringer i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)
 

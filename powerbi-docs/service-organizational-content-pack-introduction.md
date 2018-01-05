@@ -29,7 +29,7 @@ ms.lasthandoff: 11/13/2017
 > 
 > 
 
-Distribuerer du jævnligt rapporter via mail til dit team? Prøv dette i stedet: Lav en pakke med dine dashboards, rapporter, Excel-projektmapper og datasæt, og publicer dem for dit team som en *organisationsindholdspakke*. Indholdspakker, du opretter, er nemme for dit team at finde &#151; de findes alle sammen i AppSource. Da de er en del af Power BI, udnytter de alle funktionerne i Power BI, herunder interaktiv udforskning af data, nye visuelle elementer, spørgsmål og svar, integration med andre datakilder, opdatering af data med mere.
+Distribuerer du jævnligt rapporter via mail til dit team? Prøv dette i stedet: Lav en pakke med dine dashboards, rapporter, Excel-projektmapper og datasæt, og publicer dem for dit team som en *organisationsindholdspakke*. Indholdspakker, du opretter, er nemme for dit team at finde &#151; de findes alle sammen i AppSource. Da de er en del af Power BI, udnytter de alle funktionerne i Power BI, herunder interaktiv udforskning af data, nye visuals, spørgsmål og svar, integration med andre datakilder, opdatering af data med mere.
 
 ![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 

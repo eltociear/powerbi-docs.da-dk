@@ -63,25 +63,25 @@ Eller opret din egen træstruktur. I denne vejledning bruges Retail Analysis Sam
    > 
 5. Hold markøren over **Chain** for at få vist værktøjstippet til den del af **Category**.  Hvis du f.eks. holder markøren over **Lindseys** i rektanglet **040 Juniors**, vises værktøjstippet for Lindsey's del af kategorien Juniors.  
    ![](media/power-bi-visualization-treemaps/treemaphoverdetail_new.png)
-6. [Tilføj træstrukturen som et dashboardfelt (fastgør det visuelle element)](service-dashboard-tiles.md). 
+6. [Tilføj træstrukturen som et dashboardfelt (fastgør din visual)](service-dashboard-tiles.md). 
 7. [Gem rapporten](service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Fremhævning og krydsfiltrering
 Du kan få mere at vide om brug af ruden Filtre under [Føj et filter til en rapport](power-bi-report-add-filter.md).
 
-Fremhævning af en kategori eller detaljer i en træstruktur krydsfremhæver og krydsfiltrerer de andre visuelle elementer på rapportsiden ... og vice versa. For at følge med skal du enten tilføje nogle visuelle elementer på den samme side eller kopiere/indsætte træstrukturen på en rapportside, hvor der allerede er andre visuelle elementer.
+Fremhævning af en kategori eller detaljer i en træstruktur krydsfremhæver og krydsfiltrerer de andre visualiseringer på rapportsiden ... og vice versa. For at følge med skal du enten tilføje nogle visuals på den samme side eller kopiere/indsætte træstrukturen på en rapportside, hvor der allerede er andre visuals.
 
 1. Vælg enten Category eller Chain i en kategori på træstrukturen.  Dette krydsfremhæver de andre visualiseringer på siden. Hvis du f.eks. vælger **050 Shoes**, kan du se, at sidste års salg af sko var 3.640.471 USD, hvoraf 2.174.185 USD kom fra Fashions Direct.  
    ![](media/power-bi-visualization-treemaps/treemaphiliting.png)
 2. I cirkeldiagrammet **Last Year Sales by Chain** skal du vælge udsnittet **Fashions Direct**.  
    ![](media/power-bi-visualization-treemaps/treemapnoowl.gif)
-3. Hvis du vil administrere, hvordan diagrammer krydsfremhæver og krydsfiltrerer hinanden, skal du se [Interaktioner mellem visuelle elementer i en Power BI-rapport](service-reports-visual-interactions.md)
+3. Hvis du vil administrere, hvordan diagrammer krydsfremhæver og krydsfiltrerer hinanden, skal du se [Interaktioner mellem visualiseringer i en Power BI-rapport](service-reports-visual-interactions.md)
 
 ## <a name="next-steps"></a>Næste trin
 [Rapporter i Power BI](service-reports.md)  
-[Føj et visuelt element til en rapport](power-bi-report-add-visualizations-i.md)  
-[Typer af visuelle elementer i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-[ Fastgør et visuelt element til et dashboard](service-dashboard-pin-tile-from-report.md)  
+[Føj en visualisering til en rapport](power-bi-report-add-visualizations-i.md)  
+[Typer af visualiseringer i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+[ Fastgør en visualisering til et dashboard](service-dashboard-pin-tile-from-report.md)  
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)  
 [Prøv det – det er gratis!](https://powerbi.com/)
 
