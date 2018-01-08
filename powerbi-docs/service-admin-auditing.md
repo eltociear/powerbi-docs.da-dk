@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/28/2017
+ms.date: 12/12/2017
 ms.author: asaxton
-ms.openlocfilehash: 49df0d0a44ceae3e36f45f6523f39a0b5bb1b6a0
-ms.sourcegitcommit: 7742f952c20695dfb475f74965c0065b02c01521
+ms.openlocfilehash: c4c62ab5c24b7abe2760535da0a6cf69982c7174
+ms.sourcegitcommit: 2bd3c16fd300e41c6e3de29a24543491c1d53354
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="using-auditing-within-your-organization"></a>Brug af overvågning i din organisation
 
@@ -35,6 +35,16 @@ Du kan filtrere overvågningsdataene efter datointerval, bruger, dashboard, rapp
 
 > [!NOTE]
 > Overvågningsfunktionen i Power BI er i eksempelvisning og er tilgængelig i alle dataområder.
+
+## <a name="requirements"></a>Krav
+Du skal opfylde disse krav for at få adgang til overvågningslogger:
+
+- Du skal have en Exchange Online-licens (inkluderet i Office 365 Enterprise E3- og E5- abonnementer) for at få adgang til sektionen overvågning i Office 365 Security & Compliance Center.
+- Du skal enten være global administrator eller have en Exchange-administratorrolle, der giver adgang til overvågningsloggen. 
+
+  Exchange-administratorroller styres via Exchange Administration. Du kan finde flere oplysninger under [Tilladelser i Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx).
+
+- Hvis du har adgang til overvågningsloggen, men du ikke er global administrator eller administrator af Power BI-tjenesten, vil du ikke have adgang til portalen Power BI Administration. I dette tilfælde skal du have en direkte forbindelse til Office 365 Security & Compliance Center.
 
 ## <a name="enabling-auditing-functionality-in-the-power-bi-admin-portal"></a>Aktivér overvågningsfunktionalitet i Power BI-administrationsportalen
 
@@ -70,8 +80,8 @@ Hvis du vil overvåge dine Power BI-logfiler, skal du besøge O365 Security & Co
    ![](media/service-admin-auditing/powerbi-admin.png)
 
 3. Vælg **Overvågningslogger**.
-4. 
-5. Vælg **Gå til O365 Administration**.
+ 
+4. Vælg **Gå til O365 Administration**.
    
    ![](media/service-admin-auditing/audit-log-o365-admin-center.png)
 

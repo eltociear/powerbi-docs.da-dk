@@ -15,18 +15,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/30/2017
+ms.date: 12/21/2017
 ms.author: asaxton
-ms.openlocfilehash: c10ca76ac96090ff1facbdd28210b680392aae8d
-ms.sourcegitcommit: 0f6db65997db604e8e9afc9334cb65bb7344d0dc
+ms.openlocfilehash: 491be8983967b1a5dce6579411f194117602b00c
+ms.sourcegitcommit: 70e9239e375ae03744fb9bc122d5fc029fb83469
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Brug sikkerhed på rækkeniveau med integreret Power BI-indhold
-Sikkerhed på rækkeniveau kan bruges til at begrænse brugernes adgang til data i en rapport eller et datasæt. Det betyder, at brugerne kan bruge den samme rapport, men de får vist forskellige data. Sikkerhed på rækkeniveau kan med fordel bruges, når du integrerer rapporter fra Power BI.
+Sikkerhed på rækkeniveau (Row Level Security eller RLS) kan bruges til at begrænse brugeradgang til data i dashboards, felter, rapporter og datasæt. Flere forskellige brugere kan arbejde med de samme artefakter og stadig få vist forskellige data. Integrering understøtter RLS.
 
-Hvis du integrerer til brugere, som ikke bruger Power BI (appen ejer dataene), hvilket sædvanligvis er et ISV-scenario, er denne artikel lige noget for dig. Du skal konfigurere integreringstokenet for at tage højde for brugeren og rollen. Læs nedenfor, hvordan du gør.
+Du bør læse denne artikel, hvis du integrerer for brugere, der ikke anvender Power Bi (appen ejer dataene), hvilket er typisk ved et Independent Software Vendor-scenarie (ISV). Du skal konfigurere integreringstokenet for at tage højde for brugeren og rollen. Læs nedenfor, hvordan du gør.
 
 Hvis du integrerer til Power BI-brugere (brugeren ejer dataene) i din organisation, fungerer sikkerhed på rækkeniveau på samme måde, som det gør direkte i Power BI-tjenesten. Der er ikke mere, du skal gøre i dit program. Du kan finde flere oplysninger i [Sikkerhed på rækkeniveau med Power BI](../service-admin-rls.md).
 
@@ -34,7 +34,7 @@ Hvis du integrerer til Power BI-brugere (brugeren ejer dataene) i din organisati
 
 Hvis du vil benytte sikkerhed på rækkeniveau, er der tre vigtige begreber, du skal kende: brugere, roller og regler. Lad os se nærmere på dem:
 
-**Brugere** – dette er de faktiske slutbrugere, der får vist rapporter. I Power BI Embedded identificeres brugerne ved hjælp af egenskaben username i et integreringstoken.
+**Brugere** – slutbrugere, der får vist artefakten (dashboardet, feltet, rapporten eller datasættet). I Power BI Embedded identificeres brugerne ved hjælp af egenskaben username i et integreringstoken.
 
 **Roller** – brugerne tilhører roller. En rolle er en objektbeholder til regler og kan have navne i stil med *Sales Manager* eller *Sales Rep*. Du opretter roller i Power BI Desktop. Du kan finde flere oplysninger i [Sikkerhed på rækkeniveau med Power BI Desktop](../desktop-rls.md).
 
@@ -85,11 +85,11 @@ Nu hvor du har konfigureret roller i Power BI Desktop, er der nogle opgaver, du 
 
 Brugerne godkendes af dit program, og integreringstokens bruges til at give en bruger adgang til en bestemt rapport i Power BI Embedded. Der findes ingen specifikke oplysninger om, hvem brugeren er, i Power BI Embedded. Hvis sikkerhed på rækkeniveau skal fungere, skal du overføre ekstra kontekst som en del af dit integreringstoken i form af identiteter. Det gør du ved hjælp af [GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx)-API'en.
 
-[GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx)-API'en accepterer en liste over identiteter med angivelse af de relevante datasæt. I øjeblikket kan du kun angive ét id. Understøttelse af flere datasæt vil blive tilføjet (til integration i dashboardet) på et senere tidspunkt. Hvis sikkerhed på rækkeniveau skal fungere, skal du overføre følgende som en del af identiteten.
+[GenerateToken](https://msdn.microsoft.com/library/mt784614.aspx)-API'en accepterer en liste over identiteter med angivelse af de relevante datasæt. Hvis sikkerhed på rækkeniveau skal fungere, skal du overføre følgende som en del af identiteten.
 
 * **username (obligatorisk)** – dette er en streng, der kan bruges til at identificere brugeren, når reglerne for sikkerhed på rækkeniveau anvendes. Du kan kun angive én enkelt bruger.
 * **roles (obligatorisk)** – en streng med de roller, der skal vælges, når reglerne for sikkerhed på rækkeniveau anvendes. Hvis du overfører mere end én rolle, skal de overføres som en strengmatrix.
-* **dataset (obligatorisk)** – det datasæt, der gælder for den rapport, du integrerer. Du kan kun angive ét datasæt på listen over datasæt. Understøttelse af flere datasæt vil blive tilføjet (til integration i dashboardet) på et senere tidspunkt.
+* **dataset (obligatorisk)** – det datasæt, der gælder for det artefakt, du integrerer. 
 
 Du kan oprette integreringstokenet ved hjælp af metoden **GenerateTokenInGroup** på **PowerBIClient.Reports**. Det er kun rapporter, der understøttes i øjeblikket.
 
@@ -125,7 +125,7 @@ Hvis du kalder REST-API'en, accepterer den opdaterede API nu en ekstra JSON-matr
 }
 ```
 
-Nu hvor alle delene er samlet, vil brugerne kun få vist de data, de har tilladelse til at få vist ifølge sikkerheden på rækkeniveau, når de logger på programmet for at få vist denne rapport.
+Nu hvor alle delene er samlet, vil brugerne kun få vist de data, de har tilladelse til at få vist ifølge sikkerheden på rækkeniveau, når de logger på programmet for at få vist dette artefakt.
 
 ## <a name="working-with-analysis-services-live-connections"></a>Arbejde med Analysis Services-liveforbindelser
 Sikkerhed på rækkeniveau kan bruges med Analysis Services-liveforbindelser for lokale servere. Der er nogle specifikke begreber, du bør kende, når du bruger denne type forbindelse.
@@ -143,12 +143,11 @@ Roller kan angives med identiteten i et integreringstoken. Hvis der ikke angives
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 * Tildeling af brugere til roller i Power BI-tjenesten påvirker ikke sikkerheden på rækkeniveau, når du bruger et integreringstoken.
 * Selvom Power BI-tjenesten ikke anvender indstillingen for sikkerhed på rækkeniveau på administratorer eller medlemmer med redigeringsrettigheder, vil den blive anvendt på dataene, når du angiver en identitet med et integreringstoken.
-* Overførsel af identitetsoplysningerne ved kald til GenerateToken understøttes kun for læsning af og skrivning til rapporten. Understøttelse af andre ressourcer vil blive tilgængelig på et senere tidspunkt.
 * Analysis Services-liveforbindelser understøttes på lokale servere.
 * Liveforbindelser i Azure Analysis Services understøtter filtrering efter roller, men er ikke dynamisk efter brugernavn.
 * Hvis der ikke skal bruges sikkerhed på rækkeniveau på det underliggende datasæt, må GenerateToken-anmodningen **ikke** indeholde en eksisterende identitet.
-* Hvis det underliggende datasæt er en cloudmodel (cachelagret model eller DirectQuery), skal den eksisterende identitet indeholde mindst én rolle. Eller vil der ikke ske nogen rolletildeling.
-* Du kan kun angive én identitet på listen over identiteter. Vi bruger en liste, så det på et senere tidspunkt skal blive muligt at angive tokens, der dækker flere identiteter, ved integration i dashboards.
+* Hvis det underliggende datasæt er en cloudmodel (cachelagret model eller DirectQuery), skal den eksisterende identitet indeholde mindst én rolle, eller vil der ikke blive tildelt en rolle.
+* En liste over identiteter gør det muligt at have flere identitetstokens ved integrering i dashboardet. For alle andre artefakter vil listen indeholde en enkelt identitet.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

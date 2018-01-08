@@ -15,18 +15,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 12/15/2017
 ms.author: maggies
-ms.openlocfilehash: 589a77624169e9fb59999109668439c5f729c5f5
-ms.sourcegitcommit: 7248b5e449b2495d6baef385470d18edfacec457
+ms.openlocfilehash: c1c38d9d98c92963534081049cdcc6a557313639
+ms.sourcegitcommit: ea247cb3cfc1cac076d4b076c1ad8e2fc37e15a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installér Power BI Desktop optimeret til Power BI-rapportserver
 Se, hvordan du kan installere Power BI Desktop optimeret til Power BI-rapportserver.
 
-For at oprette Power BI-rapporter til Power BI-rapportserver skal du downloade og installere Power BI Desktop optimeret til Power BI-rapportserver. Dette er en anden udgivelse end Power BI Desktop, der bruges med Power BI-tjenesten. Versionen af Power BI Desktop til Power BI-tjenesten indeholder f.eks. funktioner til eksempelvisning, der er tilgængelige i Power BI-rapportserverversionen, når de er udgivet. Når du bruger denne udgivelse, sikrer du, at rapportserveren kan interagere med en kendt version af rapporterne og modellen. 
+For at oprette Power BI-rapporter til Power BI-rapportserver skal du downloade og installere Power BI Desktop optimeret til Power BI-rapportserver. Dette er en anden udgivelse end Power BI Desktop, der bruges med Power BI-tjenesten. Versionen af Power BI Desktop til Power BI-tjenesten indeholder f.eks. prøveversionsfunktioner, som ikke er tilgængelige i versionen Power BI-rapportserver, før de er udgivet. Når du bruger denne udgivelse, sikrer du, at rapportserveren kan interagere med en kendt version af rapporterne og modellen. 
 
 > [!NOTE]
 > Du kan installere Power BI Desktop og Power BI Desktop optimeret til Power BI-rapportserver side om side på samme computer.
@@ -49,7 +49,7 @@ Den nemmeste måde til at sikre, at du har den nyeste version af Power BI Deskto
 
     - **PBIDesktopRS_x64.msi** (64-bit-version).
 
-1. Når du har downloadet installationsprogrammet, skal du køre installationsguiden til Power BI Desktop (oktober 2017).
+1. Når du har downloadet installationsprogrammet, skal du køre installationsguiden til Power BI Desktop (oktober 2017). 
 2. Til sidst i installationsprocessen skal du markere **Start Power BI Desktop nu**.
    
     Programmet starter automatisk, og du er klar til at gå i gang.
@@ -69,6 +69,36 @@ Hvis du havde installeret Power BI Desktop og derefter installerede Power BI Des
 Du kan til enhver tid starte med at åbne den version af Power BI Desktop, du vil bruge. Og derefter kan du åbne filen fra Power BI Desktop.
 
 Hvis du redigerer en Power BI-rapport i Power BI-rapportserver eller opretter en ny Power BI-rapport fra webportalen, er det altid den korrekte version Power BI Destop, der åbnes.
+
+## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
+Rapporter i Power BI-rapportserver og i Power BI-tjenesten (http://powerbi.com) fungerer stort set ens, men nogle enkelte funktioner er forskellige.
+
+### <a name="in-a-browser"></a>I en browser
+Power BI-rapportserver understøtter alle visualiseringer, herunder:
+
+* Brugerdefinerede visuals
+
+Rapporter i Power BI-rapportserver understøtter ikke:
+
+* R-visuals
+* ArcGIS-kort
+* Brødkrummer
+* Prøveversionsfunktioner i Power Bi Desktop
+
+### <a name="in-the-power-bi-mobile-apps"></a>I Power BI-mobilappsene
+Rapporter i Power BI-rapportserver understøtter al den grundlæggende funktionalitet i [Power BI-mobilappsene](../mobile-apps-for-mobile-devices.md), herunder:
+
+* [Rapport med telefonlayout](../desktop-create-phone-report.md): Du kan optimere en rapport til Power BI-mobilapps. På din mobiltelefon har optimerede rapporter et særligt ikon, ![ikonet for rapport med telefonlayout](media/quickstart-create-powerbi-report/power-bi-rs-mobile-optimized-icon.png), og layout.
+  
+    ![Rapport optimeret til telefoner](media/quickstart-create-powerbi-report/power-bi-rs-mobile-optimized-report.png)
+
+Rapporter i Power BI-rapportserver understøtter ikke disse funktioner i Power BI-mobilappsene:
+
+* R-visuals
+* ArcGIS-kort
+* Brugerdefinerede visuals
+* Brødkrummer
+* Geofiltering eller stregkoder
 
 ## <a name="next-steps"></a>Næste trin
 Nu, hvor du har installeret Power BI Desktop, kan du begynde at oprette Power BI-rapporter.

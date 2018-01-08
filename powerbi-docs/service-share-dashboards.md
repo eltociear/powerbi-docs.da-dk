@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/11/2017
+ms.date: 12/18/2017
 ms.author: maggies
-ms.openlocfilehash: 276f663b8454ef0938222576cec13fcfb073e2cf
-ms.sourcegitcommit: bb577045145b2e6e5807622a53cefa2d46574618
+ms.openlocfilehash: 4cc7f12eb4964c67ae9f91cfcb51eac77d690555
+ms.sourcegitcommit: ea247cb3cfc1cac076d4b076c1ad8e2fc37e15a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/19/2017
 ---
 # <a name="share-your-power-bi-dashboards-with-coworkers-and-others"></a>Del dine Power BI-dashboards med kollegaer og andre
 *Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Power BI har [flere måder at samarbejde og distribuere dine dashboards på](service-how-to-collaborate-distribute-dashboards-reports.md), og deling er bare én.
@@ -122,7 +122,11 @@ Ting, du skal være opmærksom på angående deling af dashboards:
 
 ### <a name="my-dashboard-recipients-see-a-lock-icon-in-a-tile-or-a-permission-required-message"></a>Mine dashboardmodtagere ser et låseikon i et felt eller en meddelelse med "Tilladelse påkrævet"
 
-Hvis de personer, du deler med, kan se et felt, der er låst i et dashboard eller en meddelelse med "Tilladelse påkrævet", når de forsøger at få vist en rapport, skal du give dem tilladelse til det underliggende datasæt. Sådan gør du:
+De personer, du deler med, kan få vist et låst felt i et dashboard eller meddelelsen "Tilladelse påkrævet", når de forsøger at få vist en rapport.
+
+![Låst felt i Power Bi](media/service-share-dashboards/power-bi-locked_tile_small.png)
+
+Her er du nødt til at give brugerne tilladelse til at tilgå det underliggende datasæt. Sådan gør du:
 
 1. Gå til fanen **Datasæt** på listen over indhold.
 
