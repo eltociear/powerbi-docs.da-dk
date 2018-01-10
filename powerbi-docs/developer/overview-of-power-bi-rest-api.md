@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 07/20/2017
 ms.author: asaxton
-ms.openlocfilehash: 23a77e2b8ac8754b122888e3d0d64f2c3886b61b
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 5a6d760667608feb07932b9175b6949387b33f9a
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Hvad kan udviklere bruge Power BI til?
 Power BI viser dashboards, der er interaktive, og som kan oprettes og opdateres fra mange forskellige datakilder i realtid. Du kan bruge alle programmeringssprog, der understøtter REST-kald, til at oprette apps, der kan integreres med et Power BI-dashboard i realtid. Du kan også integrere Power BI-felter og -rapporter i apps.
@@ -59,8 +59,7 @@ Eksemplerne på Power BI Developer omfatter elementer til integration af dashboa
 ## <a name="developer-tools"></a>Udviklerværktøjer
 Følgende er værktøjer, du kan bruge som en hjælp, når du udvikler Power BI-elementer.
 
-* [Interaktiv API-konsol til Apiari](http://docs.powerbi.apiary.io/)
-* [Integreret JavaScript-eksempel](https://microsoft.github.io/PowerBI-JavaScript/demo)
+* [Integreringseksempel til JavaScript](https://microsoft.github.io/PowerBI-JavaScript/demo)
 
 ## <a name="next-steps"></a>Næste trin
 [Overfør data til et datasæt](walkthrough-push-data.md)  

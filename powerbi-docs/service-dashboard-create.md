@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 05/09/2017
 ms.author: mihart
-ms.openlocfilehash: dac5628756898a20fe139447bc2d165ba804320c
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 67cc9508d71fa29303d09e8901294a2d6b7f8a56
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Opret et Power BI-dashboard fra en rapport
 Du har læst [Dashboards i Power BI](service-dashboards.md), og nu vil du oprette dit eget. Der er mange forskellige måder at oprette et dashboard på – fra en rapport, fra bunden, fra et datasæt, ved at kopiere et eksisterende dashboard og meget mere.  Dette emne og denne video viser dig, hvordan du opretter et nyt dashboard ved at fastgøre visualiseringer fra en eksisterende rapport.
@@ -64,7 +64,7 @@ Vi importerer et af eksempeldatasættene i Power BI og bruger det til at oprette
 1. Bliv i samme arbejdsområde, og vælge fanen **Rapporter**. Den nyligt importerede rapport vises med en gul stjerne. Markér navnet på rapporten for at åbne den.
    
     ![](media/service-dashboard-create/power-bi-reports.png)
-2. Rapporten åbnes i [læsevisning](service-interact-with-a-report-in-reading-view.md). Bemærk, at den har to faner nederst: Discount Analysis (Rabatanalyse) og Spend Overview (Udgiftsoversigt). Hver fane repræsenterer en side i rapporten.
+2. Rapporten åbnes i [læsevisning](service-reading-view-and-editing-view.md). Bemærk, at den har to faner nederst: Discount Analysis (Rabatanalyse) og Spend Overview (Udgiftsoversigt). Hver fane repræsenterer en side i rapporten.
    
     ![](media/service-dashboard-create/power-bi-reading-view.png)
 3. Peg på en visualisering for at få vist de tilgængelige indstillinger. Hvis du vil føje en visualisering til et dashboard, skal du vælge ikonet til fastgørelse ![](media/service-dashboard-create/power-bi-pin-icon.png).
@@ -93,5 +93,5 @@ Tillykke med oprettelsen af dit første dashboard! Nu, hvor du har et dashboard,
 * [Dashboards i Power BI](service-dashboards.md)
 * [Tip til udformning af et fantastisk dashboard](service-dashboards-design-tips.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

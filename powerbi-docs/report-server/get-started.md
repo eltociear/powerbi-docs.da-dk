@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/01/2017
-ms.author: asaxton
-ms.openlocfilehash: 86b0c188d2fada9b42e05bf037dc0630a8c75428
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: maghan
+ms.openlocfilehash: a1dc05e722d4b50321b1fc825eeab9284d2d88b5
+ms.sourcegitcommit: eec6b47970bf69ed30638d1a20051f961ba792f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/06/2018
 ---
 # <a name="get-started-with-power-bi-report-server"></a>Kom i gang med Power BI Report Server
 Opret, udrul og administrer Power BI, mobile og sideinddelte rapporter i det lokale miljø med udvalget af brugsklare værktøjer og tjenester, som Power BI Report Server indeholder.
@@ -62,9 +62,9 @@ Mere om [webportalen](https://docs.microsoft.com/sql/reporting-services/web-port
 ## <a name="power-bi-reports"></a>Power BI-rapporter
 ![](media/get-started/powerbi-reports.png)
 
-En Power BI-rapport er en visning med flere perspektiver af et datasæt med visualiseringer, som repræsenterer forskellige resultater og indsigt fra dette datasæt.  En rapport kan have en enkelt visualisering eller sider fulde af visualiseringer. Afhængigt af din jobfunktion kan du være en, der oprettet rapporter, og/eller du kan være en, der forbruger eller bruger rapporter.
+En Power BI-rapport er en visning med flere perspektiver af et datasæt med visualiseringer, som repræsenterer forskellige resultater og indsigter fra dette datasæt.  En rapport kan have en enkelt visualisering eller sider fulde af visualiseringer. Afhængigt af din jobfunktion kan du være en, der oprettet rapporter, og/eller du kan være en, der forbruger eller bruger rapporter.
 
-Rapporter er baseret på et enkelt datasæt. Visualiseringerne i en rapport repræsenterer en stump oplysninger. Og visualiseringerne er ikke statiske. Du kan tilføje og fjerne data, ændre visualiseringstyper og anvende filtre og udsnit, når du graver dig ned i dataene for at finde indsigt og lede efter svar. En rapport er som et dashboard, blot i endnu højere grad, meget interaktiv og kan virkelig tilpasses, og visualiseringerne opdateres, når de underliggende data ændres.
+Rapporter er baseret på et enkelt datasæt. Visualiseringerne i en rapport repræsenterer en guldgrube af oplysninger. Og visualiseringerne er ikke statiske. Du kan tilføje og fjerne data, ændre visualiseringstyper og anvende filtre og udsnit, når du graver i dataene for at finde indsigt og lede efter svar. En rapport er som et dashboard, blot i endnu højere grad, meget interaktiv og kan virkelig tilpasses, og visualiseringerne opdateres, når de underliggende data ændres.
 
 ## <a name="paginated-reports"></a>Sideinddelte rapporter
 ![](media/get-started/paginated-reports.png)
@@ -81,8 +81,8 @@ Mere [dokumentation til Report Server-udviklere](https://docs.microsoft.com/sql/
 ## <a name="next-steps"></a>Næste trin
 [Brugerhåndbog](user-handbook-overview.md)  
 [Administratorhåndbog](admin-handbook-overview.md)  
-[Hurtigstart: Installer Power BI Report Server](quickstart-install-report-server.md)  
-[Installer Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[Hurtigstart: Installér Power BI Report Server](quickstart-install-report-server.md)  
+[Installér Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

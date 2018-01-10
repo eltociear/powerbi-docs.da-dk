@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
 ms.author: asaxton
-ms.openlocfilehash: b45a6f76a710bc158d0d1763ca10f2125164952a
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 92409e447bf9bc32b83c22650d5b41aef6bb4414
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Trin 3: Opret et datasæt i Power BI
 Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
@@ -32,7 +32,7 @@ Du kalder en REST-ressource ved at bruge en URL-adresse, som finder ressourcen, 
 
 For at godkende en Power BI REST-handling skal du føje det token, du fik under [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md), til en anmodningsheader:
 
-Når du kalder handlingen [Opret datasæt](https://msdn.microsoft.com/library/mt203562.aspx), oprettes der et nyt datasæt. Hvis du vil se eksempler på, hvordan du bruger Power BI REST-API'en, skal du se [Power BI REST-API på APIARY](http://docs.powerbi.apiary.io/).
+Når du kalder handlingen [Opret datasæt](https://msdn.microsoft.com/library/mt203562.aspx), oprettes der et nyt datasæt. 
 
 ![](media/walkthrough-push-data-create-dataset/powerbi-developer-create-dataset.png)
 
@@ -238,8 +238,7 @@ Nedenfor kan du se den [komplette kodeliste](#code).
 [Opret datasæt](https://msdn.microsoft.com/library/mt203562.aspx)  
 [Send data til et Power BI-dashboard](walkthrough-push-data.md)  
 [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
-[Reference til Power BI REST-API](https://msdn.microsoft.com/library/mt147898.aspx)  
-[Power BI REST-API på APIARY](http://docs.powerbi.apiary.io/)  
+[Power BI REST-API-reference](https://msdn.microsoft.com/library/mt147898.aspx)  
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

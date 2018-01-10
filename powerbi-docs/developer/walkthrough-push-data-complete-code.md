@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
 ms.author: asaxton
-ms.openlocfilehash: 128b30dcb932dd629d1219fc92da7283918ea467
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 137ff1157d15b5a62ab7a66f30b1ba043747f75d
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Komplet kodeliste til push af data til et datasæt
 Denne artikel er en del af en trinvis gennemgang af [push af data til et datasæt](walkthrough-push-data.md).
@@ -237,7 +237,7 @@ Når du har fulgt trin 2 til 5 i **Push af data til et datasæt**, bør din komp
 [Føj rækker til en Power BI-tabel](walkthrough-push-data-add-rows.md)  
 [Power BI REST-API-reference](https://msdn.microsoft.com/library/mt147898.aspx)  
 [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
-[Power BI REST-API på APIARY](http://docs.powerbi.apiary.io/)  
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/10/2017
+ms.date: 01/05/2017
 ms.author: asaxton
-ms.openlocfilehash: e62b08614a38502fb79f48f369013d32fd538659
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: aba135a0a790025f732379ecb07157f1150d999c
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Overfør data til et Power BI-datasæt
 Med Power BI-API'en kan du overføre data til et Power BI-datasæt. Et eksempel kunne f.eks. være, at du vil forlænge en eksisterende forretningsarbejdsproces for at overføre vigtige data til dit datasæt. I dette tilfælde vil du overføre et salg og marketing-datasæt, som indeholder en varetabel, til et andet datasæt.
@@ -38,13 +38,13 @@ Før du begynder at overføre data til et datasæt, skal du have en Azure AD- (A
 Det næste afsnit er en generel beskrivelse af de handlinger i Power BI-API'en, der overfører data.
 
 ## <a name="power-bi-api-operations-to-push-data"></a>Handlinger i Power BI-API'en til overførsel af data
-Med Power BI REST API'en kan du overføre datakilder til Power BI. Når en app føjer rækker til et datasæt, opdateres felterne i dashboardet automatisk med de opdaterede data. Hvis du vil overføre data, skal du bruge handlingen [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) sammen med handlingen [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx). Hvis du vil finde et datasæt, skal du bruge handlingen [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx). Du kan overføre et gruppe-id for alle disse handlinger, hvis du vil arbejde med en gruppe. Brug handlingen [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx) for at få vist en oversigt over alle gruppe-id'er. Hvis du vil se eksempler på, hvordan du kan bruge Power BI REST API'en, skal du se [Power BI REST API på APIARY](http://docs.powerbi.apiary.io/).
+Med Power BI REST API'en kan du overføre datakilder til Power BI. Når en app føjer rækker til et datasæt, opdateres felterne i dashboardet automatisk med de opdaterede data. Hvis du vil overføre data, skal du bruge handlingen [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) sammen med handlingen [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx). Hvis du vil finde et datasæt, skal du bruge handlingen [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx). Du kan overføre et gruppe-id for alle disse handlinger, hvis du vil arbejde med en gruppe. Brug handlingen [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx) for at få vist en oversigt over alle gruppe-id'er.
 
 Her er de handlinger, du skal bruge for at overføre data til et datasæt:
 
 * [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)
-* [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)
-* [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx)
+* [Hent datasæt](https://msdn.microsoft.com/library/mt203567.aspx)
+* [Tilføj rækker](https://msdn.microsoft.com/library/mt203561.aspx)
 * [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx)
 
 Du kan oprette et datasæt i Power BI ved at overføre en JSON-streng (JavaScript Object Notation) til Power BI-tjenesten. Hvis du vil have mere at vide om JSON, skal du se [Om JSON](http://json.org/).
@@ -125,7 +125,6 @@ For at komme i gang med at overføre data til et datasæt skal du se [Trin 1: Re
 [Tilføj rækker](https://msdn.microsoft.com/library/mt203561.aspx)  
 [Hent grupper](https://msdn.microsoft.com/library/mt243842.aspx)  
 [Introduktion til JSON](http://json.org/)  
-[Oversigt over Power BI REST-API'en](overview-of-power-bi-rest-api.md)  
-[Power BI REST-API på APIARY](http://docs.powerbi.apiary.io/)  
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+[Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

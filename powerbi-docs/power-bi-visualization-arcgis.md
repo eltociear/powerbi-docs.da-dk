@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/04/2018
 ms.author: mihart
-ms.openlocfilehash: 83d569c071d70576856ff301c8e0967ef607d512
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: a1f424229a05b7f4b5507100287719f8d4cac005
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>ArcGIS-kort i Power BI-tjenesten og Power BI Desktop fra Esri
 Dette selvstudium er skrevet fra den person, der opretter et ArcGIS korts synspunkt. Når en opretter deler et ArcGIS-kort med en kollega, kan den pågældende kollega få vist og interagere med kortet, men ikke gemme ændringer. Du kan få mere at vide om visning af et ArcGIS-kort under [Interaktion med ArcGIS-kort](power-bi-visualizations-arcgis.md).
@@ -33,15 +33,14 @@ Kombinationen af ArcGIS-kort og Power BI tager kort til et helt nyt niveau, som 
 
 > [!TIP]
 > GIS står for Geographic Information Science (Geografisk informationsvidenskab).
-> 
-> 
+
 
 Nedenstående eksempel bruger et mørkegråt canvas til at vise det regionale salg som et termisk kort i forhold til et demografisk lag for medianen for den disponible indtægt i 2016. Som du kan se, hvis du læser videre, tilbyder ArcGIS-kort næsten ubegrænsede kortmuligheder, demografiske data og endnu mere overbevisende kortvisualiseringer, så du kan fremvise dine data på den bedst mulige måde.
 
 ![](media/power-bi-visualization-arcgis/power-bi-intro-arcgis.png)
 
 > [!TIP]
-> Besøg [Esris side på Power BI](https://www.esri.com/powerbi) for at se de mange eksempler og læse anbefalinger. Og derefter Esris [side med introduktion til ArcGIS Maps for Power BI](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
+> Besøg [Esris side på Power BI](https://www.esri.com/powerbi) for at se de mange eksempler og læse anbefalinger. Og se derefter Esris [side med introduktion til ArcGIS Maps for Power BI](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
 
 ## <a name="user-consent"></a>Brugerens samtykke
 ArcGIS Maps for Power BI leveres af [Esri](https://www.esri.com). Din brug af ArcGIS Maps for Power BI er omfattet af Esris vilkår og politik for beskyttelse af personlige oplysninger. Power BI-brugere, der gerne vil bruge ArcGIS-kort til visuelle elementer i Power BI, skal acceptere dialogboksen til samtykke.
@@ -282,7 +281,7 @@ En værdi på 1 (decimal) aktiverer ArcGIS Maps for Power BI.
 En værdi på 0 (decimal) deaktiverer ArcGIS Maps for Power BI.
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
-ArcGIS Maps for Power BI er tilgængelig i følgende tjenester og programmer:
+ArcGIS-kort til Power BI er tilgængeligt i følgende tjenester og programmer:
 
 <table>
 <tr><th>Tjeneste/app</th><th>Tilgængelighed</th></tr>
@@ -291,7 +290,7 @@ ArcGIS Maps for Power BI er tilgængelig i følgende tjenester og programmer:
 <td>Ja</td>
 </tr>
 <tr>
-<td>Power BI-tjenesten (PowerBI.com)</td>
+<td>Power BI-tjeneste (PowerBI.com)</td>
 <td>Ja</td>
 </tr>
 <tr>
@@ -299,7 +298,7 @@ ArcGIS Maps for Power BI er tilgængelig i følgende tjenester og programmer:
 <td>Ja</td>
 </tr>
 <tr>
-<td>Power BI – publicer på internettet</td>
+<td>Power BI publiceret til internettet</td>
 <td>Nej</td>
 </tr>
 <tr>
@@ -307,7 +306,7 @@ ArcGIS Maps for Power BI er tilgængelig i følgende tjenester og programmer:
 <td>Nej</td>
 </tr>
 <tr>
-<td>Power BI-tjenesten (Embedding) (PowerBI.com)</td>
+<td>Integration af Power BI-tjenesten (PowerBI.com)</td>
 <td>Nej</td>
 </tr>
 </table>

@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/05/2017
 ms.author: asaxton
-ms.openlocfilehash: 4dd18fba5b5e3da0f8973a77166551086cc3f3cf
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 8285cbbc2d8dee653863cad50036da58362c32d1
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-a-report-into-an-app-for-your-organization"></a>Integrer en rapport i en app for din organisation
 Få mere at vide om, hvordan du integrerer en rapport i en webapp ved hjælp af REST-API-kald sammen med Power BI JavaScript-API'en, når du integrerer for din organisation.
@@ -54,7 +54,7 @@ I applikationen skal du først hente et **adgangstoken** fra Azure AD, før du k
 Du henter en **Power BI**-rapport ved at bruge handlingen [Hent rapporter](https://msdn.microsoft.com/library/mt634543.aspx), hvorved **Power BI**-rapporter hentes. Du kan få et rapport-id fra listen over rapporter.
 
 ### <a name="get-reports-using-an-access-token"></a>Hent rapporter ved hjælp af et adgangstoken
-Du kan bruge det **adgangstoken**, du fik under [trin 2](#step-2-get-an-access-token-from-azure-ad), til at kalde handlingen [Hent rapporter](https://msdn.microsoft.com/library/mt634543.aspx). Handlingen [Hent rapporter](https://msdn.microsoft.com/library/mt634543.aspx) returnerer en liste over rapporter. Du kan få en enkelt rapport på listen over rapporter. Nedenfor finder du en komplet C#-metode til at hente en rapport. Hvis du vil se eksempler på, hvordan du kan bruge Power BI REST-API'en, skal du se [Power BI REST-API på APIARY](http://docs.powerbi.apiary.io/).
+Du kan bruge det **adgangstoken**, du fik under [trin 2](#step-2-get-an-access-token-from-azure-ad), til at kalde handlingen [Hent rapporter](https://msdn.microsoft.com/library/mt634543.aspx). Handlingen [Hent rapporter](https://msdn.microsoft.com/library/mt634543.aspx) returnerer en liste over rapporter. Du kan få en enkelt rapport på listen over rapporter. Nedenfor finder du en komplet C#-metode til at hente en rapport. 
 
 Du skal inkludere en *godkendelsesheader* i formatet *Bearer {adgangstoken}* for at kunne foretage REST-API-kaldet.
 

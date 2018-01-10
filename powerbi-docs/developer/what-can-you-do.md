@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 07/20/2017
 ms.author: asaxton
-ms.openlocfilehash: a10cd93a06d14e3e66fd9cce480dc0ec99e67aeb
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: c5dfbbf5150dbf8ddb4388ac64f6c313eedd578e
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Hvad kan udviklere bruge Power BI til?
 Power BI tilbyder en bred vifte af muligheder for udviklere. Det går fra integration til brugerdefinerede visualiseringer og streaming af datasæt.
@@ -44,14 +44,13 @@ Du kan bruge Power BI-API til at overføre data til et datasæt. Det giver dig m
 Du kan finde flere oplysninger under [Overfør data til et dashboard](walkthrough-push-data.md)
 
 ## <a name="next-steps"></a>Næste trin
-[Integration med Power BI](embedding.md)  
+[Integrer med Power BI](embedding.md)  
 [Sådan overfører du indhold fra samlinger i arbejdsområdet i Power BI Embedded til Power BI](migrate-from-powerbi-embedded.md)  
 [Git-lager for JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Git-lager for Power BI C#](https://github.com/Microsoft/PowerBI-CSharp)  
 [Publicer brugerdefinerede visualiseringer i Office Store](office-store.md)  
 [Git-lager for Power BI-visualiseringer](https://github.com/Microsoft/PowerBI-visuals)  
-[Integreret JavaScript-eksempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
-[Power BI-API på Apiary](http://docs.powerbi.apiary.io/#)  
+[Integreringseksempel til JavaScript](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Hvidbog til Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

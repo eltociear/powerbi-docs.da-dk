@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/31/2017
-ms.author: asaxton
-ms.openlocfilehash: d351a117307e86c7b0750e9bcdf813b08b28bb0f
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: maghan
+ms.openlocfilehash: 433581f77cfeaa002cffeecd927ba8751fc46617
+ms.sourcegitcommit: eec6b47970bf69ed30638d1a20051f961ba792f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/06/2018
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 Læs om nyheder i Power BI-rapportserver. Dette dækker de primære funktionsområder og opdateres i takt med, at der frigives nye elementer.
@@ -114,7 +114,7 @@ Power BI-rapportserver understøtter nu de nye Power BI-tabel- og matrixvisuals.
 [Produktbemærkninger til Power BI-rapportserver](release-notes.md)  
 [Brugerhåndbog](user-handbook-overview.md)  
 [Administratorhåndbog](admin-handbook-overview.md)  
-[Hurtig introduktion: Installér Power BI-rapportserver](quickstart-install-report-server.md)  
+[Hurtigstart: Installér Power BI Report Server](quickstart-install-report-server.md)  
 [Installér Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 

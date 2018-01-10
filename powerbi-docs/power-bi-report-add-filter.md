@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: d409633129c6c203e897d76c0acf043bf09ea29d
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: bd358b8e986313ba665326de0ff2722e0113554d
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="add-a-filter-to-a-power-bi-report-in-editing-view"></a>Føj et filter til en rapport i Power Bi (i redigeringsvisning)
 > [!TIP]
@@ -30,13 +30,13 @@ ms.lasthandoff: 11/13/2017
 > 
 
 ## <a name="what-is-the-difference-between-report-filters-in-editing-view-versus-reading-view"></a>Hvad er forskellen mellem rapportfiltrene i redigeringsvisning i forhold til læsevisning?
-Du kan interagere med rapporter i to forskellige tilstande: [Læsevisning](service-interact-with-a-report-in-reading-view.md) og [Redigeringsvisning](service-interact-with-a-report-in-editing-view.md).  Og de filterfunktioner, der er tilgængelige, afhænger af hvilken tilstand du arbejder i.
+Du kan interagere med rapporter i to forskellige tilstande: [Læsevisning](service-reading-view-and-editing-view.md) og [Redigeringsvisning](service-interact-with-a-report-in-editing-view.md).  Og de filterfunktioner, der er tilgængelige, afhænger af hvilken tilstand du arbejder i.
 
-* Du kan tilføje rapport- og sidefiltre samt visuelle filtre i redigeringsvisningen. Når du gemmer rapporten, gemmes filtrene sammen med den. Personer, der ser på rapporten i læsevisning, kan arbejde med de filtre, som du har tilføjet, men ikke gemme deres ændringer.
+* Du kan tilføje rapport- og sidefiltre samt visualiseringsfiltre i redigeringsvisning. Når du gemmer rapporten, gemmes filtrene sammen med den. Personer, der ser på rapporten i læsevisning, kan arbejde med de filtre, som du har tilføjet, men ikke gemme deres ændringer.
 * I læsevisning kan du arbejde med alle filtre til rapporter, sider og visualiseringer, der allerede findes i rapporten, men du kan ikke gemme dine filterændringer.
 
 > [!NOTE]
-> I denne artikel beskrives det, hvordan du opretter filtre i **redigeringsvisning**  til rapporter.  Du kan finde flere oplysninger om filtre i læsevisning i afsnittet om [brug af filtre i læsevisning](service-interact-with-a-report-in-reading-view.md).
+> I denne artikel beskrives det, hvordan du opretter filtre i **redigeringsvisning**  til rapporter.  Du kan finde flere oplysninger om filtre i læsevisning i afsnittet om [brug af filtre i læsevisning](service-reading-view-and-editing-view.md).
 > 
 > 
 
@@ -146,9 +146,9 @@ Hvis du ikke får vist ruden Felter, skal du sikre dig, at du er i [Redigeringsv
 
   [Filtre og fremhævning i rapporter](power-bi-reports-filters-and-highlighting.md)
 
-[Arbejd med filtre og fremhævning i læsevisning for en rapport](service-interact-with-a-report-in-reading-view.md)
+[Arbejd med filtre og fremhævning i læsevisning for en rapport](service-reading-view-and-editing-view.md)
 
 [Rediger, hvordan visualiseringer i rapporter krydsfiltrerer og krydsfremhæver hinanden](service-reports-visual-interactions.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

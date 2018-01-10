@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/18/2017
+ms.date: 01/08/2018
 ms.author: maggies
-ms.openlocfilehash: 4cc7f12eb4964c67ae9f91cfcb51eac77d690555
-ms.sourcegitcommit: ea247cb3cfc1cac076d4b076c1ad8e2fc37e15a1
+ms.openlocfilehash: d0fbe2ca891096cf8b1ae2145260c3341c451658
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="share-your-power-bi-dashboards-with-coworkers-and-others"></a>Del dine Power BI-dashboards med kollegaer og andre
 *Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Power BI har [flere måder at samarbejde og distribuere dine dashboards på](service-how-to-collaborate-distribute-dashboards-reports.md), og deling er bare én.
@@ -110,7 +110,7 @@ Hvis du sender et link fra en Power BI-mobilapp til personer uden for din organi
 Ting, du skal være opmærksom på angående deling af dashboards:
 
 * Generelt set kan se du og dine kollegaer se de samme data i dashboardet. Hvis du derfor har tilladelse til at se flere data, end de kan, vil de kunne se alle dine data i dit dashboard. Men hvis [sikkerhed på rækkeniveau (RLS)](service-admin-rls.md) er anvendt på datasættet, der er underliggende for et dashboard, bruges legitimationsoplysningerne for hver person til at afgøre, hvilke data de kan få adgang til.
-* Alle, som du deler dashboardet med, kan se det og interagere med dine rapporter i [Læsevisning](service-report-open-in-reading-view.md). De kan ikke oprette rapporter eller gemme ændringer af eksisterende rapporter.
+* Alle, som du deler dashboardet med, kan se det og interagere med dine rapporter i [Læsevisning](service-reading-view-and-editing-view.md). De kan ikke oprette rapporter eller gemme ændringer af eksisterende rapporter.
 * Ingen kan se eller hente datasættet.
 * Alle kan manuelt [opdatere dashboardets data](refresh-data.md).
 * Hvis du bruger Office 365 til mail, kan du dele med medlemmer af en distributionsgruppe ved at angive den mailadresse, der er knyttet til distributionsgruppen.

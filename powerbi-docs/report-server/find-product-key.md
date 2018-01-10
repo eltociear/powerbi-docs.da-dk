@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/01/2017
-ms.author: asaxton
-ms.openlocfilehash: 64bf842bec0598210e54d73ee2697586fce96a1f
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: maghan
+ms.openlocfilehash: 13bf32939630a813f2f942fc2075f25c7bc1374a
+ms.sourcegitcommit: eec6b47970bf69ed30638d1a20051f961ba792f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/06/2018
 ---
 # <a name="how-to-find-your-report-server-product-key"></a>Sådan finder du produktnøglen til din rapportserver
 Se, hvordan du finder produktnøglen til din Power BI-rapportserver, så du kan installere din server i et produktionsmiljø.
@@ -54,7 +54,7 @@ Hvis du har en SQL Server Enterprise SA-aftale, kan du få din produktnøgle fra
 ## <a name="next-steps"></a>Næste trin
 [Hurtigstart: Installér Power BI-rapportserver](quickstart-install-report-server.md)  
 [Installér Power BI Desktop optimeret til Power BI-rapportserver](install-powerbi-desktop.md)  
-[Installér Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[Installer Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

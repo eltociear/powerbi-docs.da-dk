@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/21/2017
 ms.author: asaxton
-ms.openlocfilehash: 491be8983967b1a5dce6579411f194117602b00c
-ms.sourcegitcommit: 70e9239e375ae03744fb9bc122d5fc029fb83469
+ms.openlocfilehash: ffaf4439f48b23dcff8e965b5bea1aeaf19afcc0
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Brug sikkerhed på rækkeniveau med integreret Power BI-indhold
 Sikkerhed på rækkeniveau (Row Level Security eller RLS) kan bruges til at begrænse brugeradgang til data i dashboards, felter, rapporter og datasæt. Flere forskellige brugere kan arbejde med de samme artefakter og stadig få vist forskellige data. Integrering understøtter RLS.
@@ -91,7 +91,7 @@ Brugerne godkendes af dit program, og integreringstokens bruges til at give en b
 * **roles (obligatorisk)** – en streng med de roller, der skal vælges, når reglerne for sikkerhed på rækkeniveau anvendes. Hvis du overfører mere end én rolle, skal de overføres som en strengmatrix.
 * **dataset (obligatorisk)** – det datasæt, der gælder for det artefakt, du integrerer. 
 
-Du kan oprette integreringstokenet ved hjælp af metoden **GenerateTokenInGroup** på **PowerBIClient.Reports**. Det er kun rapporter, der understøttes i øjeblikket.
+Du kan oprette integreringstokenet ved hjælp af metoden **GenerateTokenInGroup** på **PowerBIClient.Reports**. 
 
 Du kan f.eks. ændre eksemplet [PowerBIEmbedded_AppOwnsData](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data). *Home\HomeController.cs line 76 and 77* kunne opdateres fra:
 

@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/19/2017
 ms.author: asaxton
-ms.openlocfilehash: 0b2e0208814fdd68ef7c6f0bcc1cf6ffa1fe42da
-ms.sourcegitcommit: a658b1c936e382f46a19eeb9cc26016cd7b1d756
+ms.openlocfilehash: 70ffefa9845f8440205460ee0083f8dc334b7c81
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-a-tile-into-an-app-user-owns-data"></a>Integrer et felt i en app (brugeren ejer dataene)
 Få mere at vide om, hvordan du integrerer et felt i en webapp ved hjælp af REST-API-kald sammen med Power BI JavaScript-API'en, når du integrerer for din organisation.
@@ -56,7 +56,7 @@ Hvis du vil hente et **Power BI**-felt, skal du bruge handlingen [Hent felter](h
 Du skal hente et dashboard-id, før du kan få feltet. Du kan finde oplysninger om, hvordan du henter et dashboard, under [Integrer et dashboard i en app (brugeren ejer dataene)](integrate-dashboard.md).
 
 ### <a name="get-tiles-using-an-access-token"></a>Hent felter ved hjælp af et adgangstoken
-Du kan bruge det **adgangstoken**, du fik på [trin 2](#step-2-get-an-access-token-from-azure-ad), til at kalde handlingen [Hent felter](https://msdn.microsoft.com/library/mt465741.aspx). Handlingen [Hent felter](https://msdn.microsoft.com/library/mt465741.aspx) returnerer en liste over felter. Du kan få et enkelt felt på listen over felter. Nedenfor finder du en komplet C#-metode til at hente et felt. Hvis du vil se eksempler på, hvordan du kan bruge Power BI REST-API'en, skal du se [Power BI REST-API på APIARY](http://docs.powerbi.apiary.io/).
+Du kan bruge det **adgangstoken**, du fik på [trin 2](#step-2-get-an-access-token-from-azure-ad), til at kalde handlingen [Hent felter](https://msdn.microsoft.com/library/mt465741.aspx). Handlingen [Hent felter](https://msdn.microsoft.com/library/mt465741.aspx) returnerer en liste over felter. Du kan få et enkelt felt på listen over felter. Nedenfor finder du en komplet C#-metode til at hente et felt. 
 
 Du skal inkludere en *godkendelsesheader* i formatet *Bearer {adgangstoken}* for at kunne foretage REST-API-kaldet.
 

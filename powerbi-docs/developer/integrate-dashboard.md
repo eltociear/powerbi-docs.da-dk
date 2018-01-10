@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/05/2017
 ms.author: asaxton
-ms.openlocfilehash: f3968fd9fb89e868754bb6025a23fdbd028a3965
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: fdcefb11187e92063f239967cf4d245347f54683
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-a-dashboard-into-an-app-for-your-organization"></a>Integrer et dashboard i en app for din organisation
 Få mere at vide om, hvordan du integrerer et dashboard i en webapp ved hjælp af REST-API-kald sammen med Power BI JavaScript-API'en, når du integrerer for din organisation.
@@ -35,20 +35,20 @@ Før du begynder, skal du have en **Power BI**-konto. Hvis du ikke har en konto,
 > 
 > 
 
-Hvis du vil integrere et dashboard i en webapp, skal du bruge **Power BI** REST-API'en eller Power BI C#-SDK'en og et Azure Active Directory-godkendelses**adgangstoken** for at hente et dashboard. Derefter skal du indlæse dashboardet ved hjælp af det samme adgangstoken. **Power BI**-API'en giver programmeringsmæssig adgang til visse **Power BI**-ressourcer. Du kan finde flere oplysninger i [Oversigt over Power BI REST-API'en](https://msdn.microsoft.com/library/dn877544.aspx) og [Power BI JavaScript-API'en](https://github.com/Microsoft/PowerBI-JavaScript).
+Hvis du vil integrere et dashboard i en webapp, skal du bruge **Power BI** REST-API'en eller Power BI C#-SDK'en og et Azure Active Directory-godkendelses**adgangstoken** for at hente et dashboard. Derefter skal du indlæse dashboardet ved hjælp af det samme adgangstoken. **Power BI**-API'en giver programmeringsmæssig adgang til visse **Power BI**-ressourcer. Du kan finde flere oplysninger under [Oversigt over Power BI REST-API](https://msdn.microsoft.com/library/dn877544.aspx) og [Power BI JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Hent eksemplet
 I denne artikel vises den kode, der bruges i [integrate-dashboard-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app) på GitHub. Hvis du vil følge med i gennemgangen, kan du hente eksemplet.
 
-## <a name="step-1---register-an-app-in-azure-ad"></a>Trin 1: Registrer en app i Azure AD
+## <a name="step-1---register-an-app-in-azure-ad"></a>Trin 1 – Registrer en app i Azure AD
 Du skal registrere din app i Azure AD, før du kan foretage REST API-kald. Du kan finde flere oplysninger i [Registrer en Azure AD-app for at integrere Power BI-indhold](register-app.md).
 
 Hvis du har hentet [eksemplet Integrate a dashboard](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-dashboard-web-app), skal du bruge det **klient-id** og den **klienthemmelighed**, du får efter registreringen, så eksemplet kan godkendes i Azure AD. Du kan konfigurere eksemplet ved at ændre **klient-id'et** og **klienthemmeligheden** i filen *cloud.config*.
 
 ![](media/integrate-dashboard/powerbi-embed-dashboard-register-app4.png)
 
-## <a name="step-2---get-an-access-token-from-azure-ad"></a>Trin 2: Hent et adgangstoken i Azure AD
-Du skal først hente et **adgangstoken** fra Azure AD i din app, før du kan foretage kald til Power BI REST-API'en. Du kan finde flere oplysninger i [Godkend brugere, og hent et Azure AD-adgangstoken til din Power BI-app](get-azuread-access-token.md).
+## <a name="step-2---get-an-access-token-from-azure-ad"></a>Trin 2 – Få et adgangstoken fra Azure AD
+I applikationen skal du først hente et **adgangstoken** fra Azure AD, før du kan foretage kald til Power BI REST-API'en. Du kan finde flere oplysninger i [Godkend brugere, og hent et Azure AD-adgangstoken til din Power BI-app](get-azuread-access-token.md).
 
 ## <a name="step-3---get-a-dashboard"></a>Trin 3 – hent et dashboard
 Hvis du vil hente et **Power BI**-dashboard, skal du bruge handlingen [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx), som henter en liste over **Power BI**-dashboards. Du kan hente et dashboard-id fra listen over dashboards.
@@ -56,7 +56,7 @@ Hvis du vil hente et **Power BI**-dashboard, skal du bruge handlingen [Get Dashb
 ![](media/integrate-dashboard/powerbi-embed-dashboard-get-dashboards.png)
 
 ### <a name="get-dashboards-using-an-access-token"></a>Hent dashboards ved hjælp af et adgangstoken
-Du kan bruge det **adgangstoken**, du fik på [trin 2](#step-2-get-an-access-token-from-azure-ad), til at kalde handlingen [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx). Handlingen [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) returnerer en liste over dashboards. Du kan hente et enkelt dashboard på listen over dashboards. Nedenfor finder du en komplet C#-metode til at hente et dashboard. Hvis du vil se eksempler på, hvordan du kan bruge Power BI REST-API'en, skal du se [Power BI REST-API på APIARY](http://docs.powerbi.apiary.io/).
+Du kan bruge det **adgangstoken**, du fik på [trin 2](#step-2-get-an-access-token-from-azure-ad), til at kalde handlingen [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx). Handlingen [Get Dashboards](https://msdn.microsoft.com/library/mt465739.aspx) returnerer en liste over dashboards. Du kan hente et enkelt dashboard på listen over dashboards. Nedenfor finder du en komplet C#-metode til at hente et dashboard. 
 
 Du skal inkludere en *godkendelsesheader* i formatet *Bearer {adgangstoken}* for at kunne foretage REST-API-kaldet.
 

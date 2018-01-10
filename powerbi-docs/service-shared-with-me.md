@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 68e1fdfe5fd86b247d05c5d93d9e6b724a8b07ba
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 63497e7d517bed8aeba8abefcc4e48c628e06252
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="display-the-power-bi-dashboards-that-have-been-shared-with-me"></a>Vis de Power BI-dashboards, der er blevet delt med mig
 ## <a name="shared-with-me"></a>Delt med mig
@@ -34,7 +34,7 @@ Se Amanda forklare **Delt med mig**-indholdslisten og vise dig, hvordan du navig
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
-Du får mange muligheder for at interagere med dashboard'et og den underliggende rapport, afhængigt af de tilladelser, ejeren giver dig. Disse omfatter at kunne oprette kopier af dashboard'et, åbne rapporten [i Læsevisning](service-interact-with-a-report-in-reading-view.md) og dele videre med andre kollegaer.
+Du får mange muligheder for at interagere med dashboard'et og den underliggende rapport, afhængigt af de tilladelser, ejeren giver dig. Disse omfatter at kunne oprette kopier af dashboard'et, åbne rapporten [i Læsevisning](service-reading-view-and-editing-view.md) og dele videre med andre kollegaer.
 
 ## <a name="actions-available-from-the-shared-with-me-screen"></a>Handlinger, der er tilgængelige fra **Delt med mig**-skærmen
 * Vælg stjerneikonet for at [gøre et dashboard til favorit](service-dashboard-favorite.md).

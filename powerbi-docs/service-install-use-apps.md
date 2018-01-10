@@ -16,11 +16,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/05/2017
 ms.author: maggies
-ms.openlocfilehash: 87fd7f9b881c6af482cc3a644e77b0a95ea1743c
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 604aed25b4702525cfbecde9c6fe18ded8c41994
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer og brug apps med dashboards og rapporter i Power BI
 I Power BI samler *apps* relaterede dashboards og rapporter på ét sted. Personer i din organisation kan oprette og distribuere apps med vigtige forretningsoplysninger. [Eksterne tjenester](service-connect-to-services.md), du muligvis allerede bruger, f.eks. Google Analytics og Microsoft Dynamics CRM, tilbyder også Power BI-apps. 
@@ -63,7 +63,7 @@ Du kan også søge efter og installere apps, du har adgang til fra Microsoft App
 3. Vælg **Hent det nu** for at føje den til siden Apps. 
 
 ## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Interager med dashboards og rapporter i appen
-Nu kan du udforske dataene i dashboardene og rapporterne i appen. Du har adgang til alle almindelige Power BI-interaktioner som filtrering, fremhævning, sortering og analyse. Læs om at [interagere med rapporter i Power BI](service-interact-with-a-report-in-reading-view.md). 
+Nu kan du udforske dataene i dashboardene og rapporterne i appen. Du har adgang til alle almindelige Power BI-interaktioner som filtrering, fremhævning, sortering og analyse. Læs om at [interagere med rapporter i Power BI](service-reading-view-and-editing-view.md). 
 
 Du kan ikke gemme ændringer, du foretager, men du kan altid [eksportere dataene til Excel ](power-bi-visualization-export-data.md) fra en tabel eller et andet visuelt element i en rapport.
 

@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/01/2017
-ms.author: asaxton
-ms.openlocfilehash: 74f55e34623f840d8a62942e0d5cce5924e79866
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: maghan
+ms.openlocfilehash: 82f77c808ce4d022409e7e35ce74b46c44b344bb
+ms.sourcegitcommit: eec6b47970bf69ed30638d1a20051f961ba792f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/06/2018
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Konfigurer Kerberos til at bruge Power BI-rapporter
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -223,7 +223,7 @@ Mens denne konfiguration bør fungere i de fleste tilfælde, kan der med Kerbero
 
 ## <a name="next-steps"></a>Næste trin
 [Administratorhåndbog](admin-handbook-overview.md)  
-[Hurtigstart: Installér Power BI-rapportserver](quickstart-install-report-server.md)  
+[Hurtigstart: Installér Power BI Report Server](quickstart-install-report-server.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

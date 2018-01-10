@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: d974fbac281fc8f1d74553d1342f7056fa8d7b03
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: baa94483b8174d62d0f7e27d726bb59dbb0b4c10
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
 ## <a name="what-is-a-power-bi-report"></a>Hvad er en Power BI-rapport?
@@ -71,7 +71,7 @@ Her er nogle emner opdelt efter rolle, som kan hjælpe dig med at komme i gang.
 
 ### <a name="if-you-will-be-receiving-and-consuming-reports"></a>Hvis du skal modtage og bruge rapporter
 * Start med en [præsentation af Power BI-tjenesten](service-basic-concepts.md), så du ved, hvor du kan finde rapporter og værktøjer til rapporten.
-* Få mere at vide om, hvordan du [åbner en rapport](service-report-open-in-reading-view.md) og al den interaktion, der er tilgængelig i [Læsevisning](service-dashboard-tiles.md).
+* Få mere at vide om, hvordan du [åbner en rapport](service-report-open.md) og al den interaktion, der er tilgængelig i [Læsevisning](service-reading-view-and-editing-view.md).
 * Bliv fortrolig med rapporter ved at se præsentationen af et af vores [eksempler](sample-tutorial-connect-to-the-samples.md).  
 * Har du ikke brug for rapporten mere? Du kan [fjerne den](service-delete.md).
 * Hvis du vil se, hvilke datasæt, rapporten bruger, og hvilke dashboards der har felter, der er fastgjort fra rapporten, [kan du få vist relateret indhold](service-related-content.md).
@@ -86,5 +86,5 @@ Her er nogle emner opdelt efter rolle, som kan hjælpe dig med at komme i gang.
 
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

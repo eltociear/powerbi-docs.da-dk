@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: f6d0f320dd18520c94ada531ee87aacbd562f5d7
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+ms.openlocfilehash: 50fd10596ea7ebba1284f78b4056f7afbd0e3400
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="save-a-report-in-power-bi-service-and-power-bi-desktop"></a>Gem en rapport i Power BI-tjenesten og Power BI Desktop
 Når du har foretaget ændringer af en rapport i Power BI, kan du gemme den, gemme den med et nyt navn eller bare lukke den uden at gemme dine ændringer. Lad os sige, at du åbner rapporten, opretter en visualisering og fastgør den til dashboardet. Hvis du lukker den nu uden at gemme dine ændringer, forbliver feltet på dashboardet, men visualiseringen gemmes ikke i rapporten. Når du klikker på dette felt på dashboardet, åbnes rapporten, men visualiseringen i rapporten er gået tabt.
@@ -35,7 +35,7 @@ Når du har foretaget ændringer af en rapport i Power BI, kan du gemme den, gem
 1. Hvis du forsøger at navigere væk fra en rapport, og rapporten indeholder ændringer, vises en meddelelse i Power BI.
    
    ![](media/service-report-save/power-bi-unsaved.png)
-2. En anden måde at gemme rapporten på er ved at vælge **FIL** \> **Gem** eller **Gem som**. Hvis du er i [Læsevisning](service-interact-with-a-report-in-reading-view.md), kan du kun se muligheden Gem som. 
+2. En anden måde at gemme rapporten på er ved at vælge **FIL** \> **Gem** eller **Gem som**. Hvis du er i [Læsevisning](service-reading-view-and-editing-view.md), kan du kun se muligheden Gem som. 
    
    ![](media/service-report-save/power-bi-save-new.png)
 3. Hvis dette er en ny rapport (Gem) eller en ny version af en eksisterende rapport (Gem som), skal du give den et beskrivende navn.  **Rapporten føjes til det aktive arbejdsområde**.
