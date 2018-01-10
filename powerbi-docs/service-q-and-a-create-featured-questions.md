@@ -16,29 +16,29 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/05/2017
+ms.date: 12/24/2017
 ms.author: mihart
-ms.openlocfilehash: d29008365ab7df8f0bcd8297bfd5dc2f41c0e3a4
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 4b8a606cd110c13a615be88d49f04e68b3f2cbe6
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Opret udvalgte spørgsmål til Spørgsmål og svar i Power BI
 Hvis du ejer et datasæt, kan du tilføje dine egne udvalgte spørgsmål i det pågældende datasæt.  Og Spørgsmål og svar i Power BI viser disse spørgsmål til kollegaer, der bruger dit datasæt.  De udvalgte spørgsmål giver dine kollegaer en ide om, hvilke typer af spørgsmål, de kan stille om datasættet. Det er op til dig, hvilke udvalgte spørgsmål, du tilføjer – tilføj populære spørgsmål, spørgsmål, der viser interessante resultater, eller spørgsmål, der kan være svære at sætte ord på.
 
-Se Will tilføje nogle udvalgte spørgsmål i Spørgsmål og svar i Power BI, og derefter bruge disse udvalgte spørgsmål til at udforske sit datasæt. Følg derefter den trinvise vejledning under videoen for selv at prøve det.
+Se Will tilføje nogle udvalgte spørgsmål i Spørgsmål og svar i Power BI, og derefter bruge disse udvalgte spørgsmål til at udforske sit datasæt. Følg derefter den trinvise vejledning under videoen for at prøve det selv.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E1mIAyEXuF4" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Udvalgte spørgsmål i Spørgsmål og svar er også tilgængelige i [Microsoft Power BI-appen til iOS på iPads, iPhones og iPod Touch-enheder](mobile-apps-ios-qna.md).
+> Udvalgte spørgsmål i Spørgsmål og svar er også tilgængelige i [Microsoft Power BI-appen til iOS på iPads, iPhones og iPod Touch-enheder](mobile-apps-ios-qna.md) samt i prøveversionen af Spørgsmål og svar til Power BI Desktop. Men oprettelse af spørgsmålene er kun tilgængelig i Power BI-tjenesten (app.powerbi.com).
 > 
 > 
 
 I denne artikel anvendes [Retail Analysis Sales-eksemplet](sample-datasets.md).
 
-1. Klik på feltet til spørgsmål i Spørgsmål og svar.   Bemærk, at Spørgsmål og svar allerede hjælper ved at vise en liste over udtryk, der findes i datasættet.
+1. Markér feltet Spørgsmål og svar øverst i dashboardet.   Bemærk, at Spørgsmål og svar allerede hjælper ved at vise en liste over udtryk, der findes i datasættet.
 2. Hvis du vil føje noget til listen, skal du vælge tandhjulsikonet i øverste højre hjørne af Power BI.  
    ![](media/service-q-and-a-create-featured-questions/pbi_gearicon2.jpg)
 3. Vælg **Indstillinger** &gt; **Datasæt** &gt; **Retail Analysis Sample** &gt; **Udvalgte spørgsmål i Spørgsmål og svar**.  
@@ -57,5 +57,5 @@ I denne artikel anvendes [Retail Analysis Sales-eksemplet](sample-datasets.md).
 [Spørgsmål og svar i Power BI](service-q-and-a.md)  
 [Selvstudium: Introduktion til Spørgsmål og svar i Power BI](power-bi-visualization-introduction-to-q-and-a.md)  
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)  
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

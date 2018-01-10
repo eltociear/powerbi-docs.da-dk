@@ -1,6 +1,6 @@
 ---
 title: "Føj et link til et tekstfelt i en rapport"
-description: "Føj et link til et tekstfelt i en rapport"
+description: "Føj et link til et tekstfelt i Power BI-tjenesten og Desktop"
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -16,16 +16,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 846e6625345bbecb2611615f929f0b55338830e2
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 9533985238fa9fb40bbab4e9ddd459aaaaffc135
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Føj et link til et tekstfelt i en rapport
-Tekstfelter kan føjes til rapporter, fastgøres til dashboards fra rapporter og føjes direkte til dashboards. Links kan føjes til et tekstfelt, uanset hvor det befinder sig. **I dette emne beskrives tekstfelter i rapporter.**
+Tekstfelter kan føjes til rapporter, fastgøres til dashboards fra rapporter og føjes direkte til dashboards. Links kan føjes til et tekstfelt, uanset hvor det befinder sig. **I dette emne beskrives tekstfelter i rapporter i Power BI-tjenesten (ikke Power BI Desktop).**
 
 > **Bemærk**! Du kan finde oplysninger om links i Power BI-tabeller og -matrixer under [Links i tabeller](power-bi-hyperlinks-in-tables.md). Du kan se flere oplysninger om tilføjelse af tekstfelter i dit **dashboard** under [Tilføj et felt direkte fra dashboardet ](service-dashboard-add-widget.md). 
 > 
@@ -47,7 +47,7 @@ Tekstfelter kan føjes til rapporter, fastgøres til dashboards fra rapporter og
    
    ![](media/service-add-hyperlink-to-text-box/power-bi-test-link.png)
    
-   * Vælg linket i tekstfeltet for at få URL-adressen vist
+   * Placer markøren et sted i den markerede tekst for at få vist URL-adressen.  
      
       ![](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-edit.png)
    * Vælg URL-adressen for at åbne siden i et nyt browservindue.
@@ -63,5 +63,5 @@ Tekstfelter kan føjes til rapporter, fastgøres til dashboards fra rapporter og
 
 [Føj et tekstfelt til et dashboard](service-dashboard-add-widget.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

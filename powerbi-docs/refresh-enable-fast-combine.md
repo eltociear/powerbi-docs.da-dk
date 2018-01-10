@@ -17,11 +17,11 @@ ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: a622c3f0402e0f8216f64a93cf687eaa63fd8067
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 1e68f7df5214e038df8bcd1584acb815c0af98bf
+ms.sourcegitcommit: 70e9239e375ae03744fb9bc122d5fc029fb83469
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="disable-privacy-setting-in-power-bi-gateway---personal"></a>Deaktiver indstillingerne for beskyttelse af personlige oplysninger i Power BI Gateway – Personlig
 > [!NOTE]
@@ -59,6 +59,7 @@ Du kan bruge følgende trin til at aktivere Kombiner hurtigt for din personlige 
     Hvis du ikke er administrator på computeren, er den placeret her.
    
     <pre><code>C:\Users\[username]\AppData\Local\Power BI Personal Gateway\1.0\Configurator\Connector</code></pre>
+    
 2. Tilføj elementet **&lt;EnableFastCombine&gt;** med værdien true i konfigurationsfilen. Når du tilføjer dette element, slås **Kombiner hurtigt** til.
    
    <pre><code>&lt;EnableFastCombine&gt;true&lt;/EnableFastCombine&gt;</code></pre>
@@ -77,6 +78,7 @@ Du kan bruge følgende trin til at aktivere Kombiner hurtigt for din personlige 
     Hvis du ikke er administrator på computeren, er den placeret her.
    
     <pre><code>C:\Users\[username]\AppData\Local\Power BI Personal Gateway\1.0\Configurator\Connector</code></pre>
+
 2. Fjern elementet **&lt;EnableFastCombine&gt;** fra konfigurationsfilen. Hvis du fjerner elementet, slås **Kombiner hurtigt** fra.
 3. Afslut og genstart skærmen til konfiguration af gatewayen.
 4. Der vises ikke længere en status om, at **Kombiner hurtigt** er aktiveret.

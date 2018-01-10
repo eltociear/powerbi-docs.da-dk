@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/27/2017
+ms.date: 12/23/2017
 ms.author: mihart
-ms.openlocfilehash: 231bf7febb19583414d976cc612d06c2caa1e246
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 91c185a082cebc6a9196e0e86898fe366363f8c2
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="funnel-charts-tutorial"></a>Tragtformede diagrammer (selvstudium)
 Et tragtformet diagram hjælper dig med at visualisere en lineær proces, der har fortløbende forbundne faser. Et eksempel: Et tragtformet salgsdiagram, hvor der holdes øje med kunder gennem forskellige faser: Potentielt kundeemne \> Kvalificeret kundeemne \> Kundeemne \> Kontrakt \> Lukket.  I korte træk afspejler tragtens form tilstanden af den proces, du holder øje med.
@@ -59,15 +59,15 @@ I denne video kan du se, hvordan Will opretter et tragtformet diagram ved hjælp
 
 Nu kan du oprette dit eget tragtformede diagram, der viser antallet af salgsmuligheder i hvert salgstrin.
 
-I denne vejledning bruges Opportunity Analysis Sample. For at kunne følge med skal du [downloade prøveeksemplet](sample-datasets.md), logge på Power BI og vælge **Get Data \> Samples \> Opportunity Analysis Sample \> Connect**.
+I denne vejledning bruges Opportunity Analysis Sample. Du skal [downloade eksemplet](sample-datasets.md) til Power BI-tjenesten (app.powerbi.com) eller Power BI Desktop, så du kan følge med.   
 
-1. Start på en [tom rapportside ](power-bi-report-add-page.md)i [Redigeringsvisning](service-interact-with-a-report-in-editing-view.md), og vælg feltet **SalesStage** \> **Sales Stage**.  
+1. Start på en [tom rapportside](power-bi-report-add-page.md), og vælg feltet **SalesStage** \> **Sales Stage**. Hvis du bruger Power BI-tjenesten, skal du åbne rapporten i [Redigeringsvisning](service-interact-with-a-report-in-editing-view.md).
    
     ![](media/power-bi-visualization-funnel-charts/funnelselectfield_new.png)
 2. [Konvertér diagrammet](power-bi-report-change-visualization-type.md) til en tragt. Bemærk, at **Sales Stage** også er under **Group**. 
 3. I ruden **Fields** skal du vælge **Fact** \> **Opportunity Count**.
    
-    ![](media/power-bi-visualization-funnel-charts/funnelfinal_new.png)
+    ![](media/power-bi-visualization-funnel-charts/power-bi-funnel.png)
 4. Når du holder over en søjle, vises en masse oplysninger.
    
    * Navnet på fasen
@@ -90,14 +90,13 @@ Fremhævning af en søjle i et tragtformet diagram krydsfiltrerer andre visualis
 2. Under [Interaktion med visualiseringer i Power BI](service-reports-visual-interactions.md) kan du se, hvordan du angiver indstillinger for krydsfremhævning og krydsfiltrering af visualiseringer.
 
 ## <a name="create-a-funnel-chart-in-qa"></a>Opret et tragtformet diagram i Spørgsmål og svar
-Fremhæv det dashboard, hvor mindst én visualisering er fastgjort fra datasættet "Opportunity Tracking".  Når du skriver et spørgsmål i Spørgsmål og svar, søges der i Power BI efter svar i alle de datasæt, der er knyttet til det valgte dashboard (dvs. hvor felter er fastgjort til dashboardet). Du kan finde flere oplysninger under [Power BI – Grundlæggende begreber](service-basic-concepts.md).
+Åbn dashboardet Opportunity Analysis Sample (Eksempel med analyse af salgsmuligheder), der har mindst én visualisering fastgjort fra datasættet Opportunity Analysis Sample.  Når du skriver et spørgsmål i Spørgsmål og svar, søges der i Power BI efter svar i alle de datasæt, der er knyttet til det valgte dashboard (dvs. hvor felter er fastgjort til dashboardet). Du kan finde flere oplysninger under [Power BI – Grundlæggende begreber](service-basic-concepts.md).
 
-1. Fremhæv et dashboard, hvor mindst ét felt er fastgjort fra datasættet "Opportunity Tracking".
-2. Begynd at skrive dit spørgsmål i spørgsmålsfeltet i Spørgsmål og svar.
+1. I dashboardet Opportunity Analysis Sample skal du begynde at skrive dit spørgsmål i feltet til spørgsmål og svar.
    
    ![](media/power-bi-visualization-funnel-charts/funnelfromqna_new.png)
    
-   Sørg for at tilføje "som tragtformet", så Power BI ved, hvilken visualiseringstype du foretrækker.
+2. Sørg for at tilføje "som tragtformet", så Power BI ved, hvilken visualiseringstype du foretrækker.
 
 ## <a name="next-steps"></a>Næste trin
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
@@ -106,5 +105,5 @@ Fremhæv det dashboard, hvor mindst én visualisering er fastgjort fra datasætt
 
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/30/2017
 ms.author: asaxton
-ms.openlocfilehash: 83f143427ce74f593ea6e8d99f8a6b127ee4488d
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: cf0eeaa16e7dc3576cb774cb7bb7dfef9c4486d0
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="purchasing-power-bi-pro"></a>Køb Power BI Pro
 Power BI Pro er til brugere, der publicerer rapporter, deler dashboards, samarbejder med kolleger i arbejdsområder og er engageret i andre relaterede aktiviteter – og gør det muligt at:
@@ -40,12 +40,12 @@ Du kan få mere at vide om Power BI Premium, og hvordan Power BI Pro passer til 
 Under [Priser på Power BI](https://powerbi.microsoft.com/pricing/) finder du de nyeste oplysninger om priser på Power BI Pro samt en tabel over de medfølgende funktioner.
 
 ## <a name="in-service-power-bi-pro-60-day-trial-for-individuals"></a>Power BI Pro i fuld drift i en 60-dages prøveperiode for enkeltpersoner
-Når du har tilmeldt dig din gratis konto, kan du også vælge at prøve Pro gratis i 60 dage. Du får adgang til alle Pro-funktionerne i hele prøveperioden. Power BI Pro har alle funktionerne fra den gratis version af Power BI samt yderligere funktioner til deling og samarbejde. Se [Priser på Power BI](https://powerbi.microsoft.com/pricing), hvis du vil have mere at vide. Log på Power BI for at få en 60-dages gratis prøveversion af Power BI Pro, og prøv én af disse Power BI Pro-funktioner:
+Når du har tilmeldt dig din gratis konto, kan du også vælge at prøve Pro gratis i 60 dage. Du får adgang til alle Pro-funktionerne i hele prøveperioden. Power BI Pro har alle funktionerne fra den gratis version af Power BI samt yderligere funktioner til deling og samarbejde. Se [Priser på Power BI](https://powerbi.microsoft.com/pricing), hvis du vil have flere oplysninger. Log på Power BI for at få en 60-dages gratis prøveperiode på Power BI Pro, og prøv én af disse Power BI Pro-funktioner:
 
-* [Opret et apparbejdsomåde](service-create-distribute-apps.md)
+* [Opret et app-arbejdsområde](service-create-distribute-apps.md)
 * [Del et dashboard](service-share-dashboards.md)
 
-Når du prøver en af disse funktioner, bliver du bedt om at starte din gratis prøveversion. Du kan også vælge at bruge den ved at gå til tandhjulsikonet og vælge **Administrer personligt lager**. Vælg derefter **Prøv Pro gratis** til højre.
+Når du prøver en af disse funktioner, bliver du bedt om at starte din gratis prøveperiode. Du kan også vælge den ved at gå til tandhjulsikonet og vælge **Administrer personligt lager**. Vælg derefter **Prøv Pro gratis** til højre.
 
 ![](media/service-admin-purchasing-power-bi-pro/powerbi-pro-trial1.png)
 
@@ -119,6 +119,11 @@ Når du befinder dig i tjenesten, kan du bekræfte, at du har en Pro-konto, ved 
 
 ![](media/service-admin-purchasing-power-bi-pro/powerbi-pro3.png)
 
+## <a name="grace-period"></a>Respitperiode
+Der er en 30-dages respitperiode, efter en Power BI Pro-licens er udløbet. 
+
+Power BI Pro har den samme abonnementslivscyklus som Office 365. Du kan finde flere oplysninger under [Hvad sker der med mine data og adgang, når mit abonnement på Office 365 til virksomheder slutter?](https://support.office.com/en-us/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
+
 ## <a name="next-steps"></a>Næste trin
 [Tilmelding via selvbetjening til Power BI](service-self-service-signup-for-power-bi.md)  
 [Power BI (gratis) i din organisation](service-admin-service-free-in-your-organization.md)  
@@ -127,5 +132,5 @@ Når du befinder dig i tjenesten, kan du bekræfte, at du har en Pro-konto, ved 
 [Sådan køber du Power BI Premium](service-admin-premium-purchase.md)  
 [Whitepaper om Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

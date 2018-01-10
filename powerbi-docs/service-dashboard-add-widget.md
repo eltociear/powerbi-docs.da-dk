@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/31/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 20760bec773c6f1d2a3cbbfaefd0651b97cbe601
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 3aa70a6382164cb8284e1a5f61ae73f66e54d2f3
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="add-image-text-video-and-more-to-your-dashboard"></a>Føj billede, tekst, video og mere til dit dashboard
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
@@ -42,7 +42,7 @@ Med kontrolelementet **Tilføj felt** kan du direkte føje et billede, et tekstf
 Lad os antage, at du vil have dit firmalogo på dashboardet eller et andet billede. Du skal gemme billedfilen online og oprette en kæde til den. Kontrollér, at der ikke kræves særlige legitimationsoplysninger for at få adgang til billedfilen. Eksempelvis kræver OneDrive og SharePoint godkendelse, så billeder, der er gemt der, kan ikke føjes til et dashboard på denne måde.  
 
 1. Vælg **Billede** > **Næste**.
-2. Føj billedoplysninger til ruden **Feltoplysninger**.
+2. Føj billedoplysninger til ruden **Tilføj billedfelt**.
    
     ![](media/service-dashboard-add-widget/pbi-widget-add-image-new.png)
    
@@ -56,16 +56,16 @@ Lad os antage, at du vil have dit firmalogo på dashboardet eller et andet bille
 ## <a name="add-a-text-box-or-dashboard-heading"></a>Tilføj et tekstfelt eller en dashboardoverskrift
 1. Vælg **Tekstfelt > Næste**.
    
-    ![](media/service-dashboard-add-widget/power-bi-add-text-box-new.png)
-   
    > **BEMÆRK**! Du kan tilføje en dashboardoverskrift ved at skrive overskriften i tekstfeltet og forøge skrifttypen.
-   > 
    > 
 2. Formatér tekstfeltet:
    
    * Hvis du vil have vist en titel over tekstfeltet, skal du vælge **Vis titel og undertitel** og skrive en titel og/eller undertitel.
    * Angiv og formatér indholdet for tekstfeltet.  
-   * Angiv eventuelt et tilpasset link til titlen.  Vi har dog i dette eksempel tilføjet hyperlinks i selve tekstfeltet, så lad bare feltet **Angiv tilpasset link** være umarkeret.
+   * Angiv eventuelt et tilpasset link til titlen. Et brugerdefineret link kan være et eksternt websted eller et dashboard eller en rapport i arbejdsområdet. Vi har dog i dette eksempel tilføjet hyperlinks i selve tekstfeltet, så lad bare feltet **Angiv tilpasset link** være umarkeret.
+
+     ![](media/service-dashboard-add-widget/power-bi-add-textbox.png)
+   
 3. Vælg **Anvend**.  Tilpas størrelsen på, og flyt tekstfeltet efter behov på dashboardet.
    
    ![](media/service-dashboard-add-widget/pbi-widget-text-added-new.png)
@@ -74,7 +74,7 @@ Lad os antage, at du vil have dit firmalogo på dashboardet eller et andet bille
 Når du føjer et YouTube- eller Vimeo-videofelt til dit dashboard, afspilles videoen direkte på dashboardet.
 
 1. Vælg **Video > Næste**.
-2. Føj videooplysninger til ruden **Feltoplysninger**.
+2. Føj videooplysninger til ruden **Tilføj videooplysninger**.
    
     ![](media/service-dashboard-add-widget/power-bi-add-video-new.png)
    
@@ -100,7 +100,7 @@ Indsæt eller skriv HTML-indhold.  Power BI føjer det til dit dashboard som et 
    
    * Hvis du vil have vist en titel over feltet, skal du vælge *Vis titel og undertitel* og skrive en titel og/eller undertitel.
    * Angiv integreringskoden. I dette eksempel skal vi kopiere og indsætte et Twitter-feed.
-   * Vælg **Anvend**.  Tilpas størrelsen på, og flyt feltet til videoindholdet som nødvendigt på dashboardet.
+3. Vælg **Anvend**.  Tilpas størrelsen på, og flyt feltet til videoindholdet som nødvendigt på dashboardet.
      
       ![](media/service-dashboard-add-widget/pbi-widget-code-added-new.png)
 
@@ -157,5 +157,5 @@ Sådan foretager du ændringer af et felt...
 ## <a name="next-steps"></a>Næste trin
 [Dashboardfelter](service-dashboard-tiles.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/).
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/).
 

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 12/19/2017
 ms.author: asaxton
-ms.openlocfilehash: 8527ffb7d9e16bcf55216bc6e0bcd60feec12e16
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 0b2e0208814fdd68ef7c6f0bcc1cf6ffa1fe42da
+ms.sourcegitcommit: a658b1c936e382f46a19eeb9cc26016cd7b1d756
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="integrate-a-tile-into-an-app-user-owns-data"></a>Integrer et felt i en app (brugeren ejer dataene)
 Få mere at vide om, hvordan du integrerer et felt i en webapp ved hjælp af REST-API-kald sammen med Power BI JavaScript-API'en, når du integrerer for din organisation.
@@ -35,7 +35,7 @@ Før du begynder denne gennemgang, skal du have en konto til **Power BI**. Hvis 
 > 
 > 
 
-Hvis du vil integrere et felt i en webapp, skal du bruge **Power BI** REST-API'en eller Power BI C#-SDK'en og et Azure Active Directory-godkendelses**adgangstoken** for at hente et felt. Derefter skal du indlæse feltet vha. det samme adgangstoken. API'en til **Power BI** leverer programadgang til visse **Power BI**-ressourcer. Du kan finde flere oplysninger i [Oversigt over Power BI REST-API'en](https://msdn.microsoft.com/library/dn877544.aspx) og [Power BI JavaScript-API'en](https://github.com/Microsoft/PowerBI-JavaScript).
+Hvis du vil integrere et felt i en webapp, skal du bruge **Power BI** REST-API'en eller Power BI C#-SDK'en og et Azure Active Directory-godkendelses**adgangstoken** for at hente et felt. Derefter skal du indlæse feltet vha. det samme adgangstoken. API'en til **Power BI** leverer programadgang til visse **Power BI**-ressourcer. Du kan finde flere oplysninger under [Oversigt over Power BI REST-API](https://msdn.microsoft.com/library/dn877544.aspx) og [Power BI JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Download eksemplet
 I denne artikel vises den kode, der bruges i [integrate-tile-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-tile-web-app) på GitHub. Hvis du vil følge med i gennemgangen, kan du hente eksemplet.
@@ -47,8 +47,8 @@ Hvis du har hentet [integrate-tile-web-app](https://github.com/Microsoft/PowerBI
 
 ![](media/integrate-tile/powerbi-embed-dashboard-register-app4.png)
 
-## <a name="step-2---get-an-access-token-from-azure-ad"></a>Trin 2 – Få en adgangstoken fra Azure AD
-I din app skal du først hente et **adgangstoken** fra Azure AD, før du kan foretage kald til Power BI REST API. Du kan finde flere oplysninger i [Godkend brugere, og få et Azure AD-adgangstoken til din Power BI-app](get-azuread-access-token.md).
+## <a name="step-2---get-an-access-token-from-azure-ad"></a>Trin 2 – Få et adgangstoken fra Azure AD
+I applikationen skal du først hente et **adgangstoken** fra Azure AD, før du kan foretage kald til Power BI REST-API'en. Du kan finde flere oplysninger i [Godkend brugere, og få et Azure AD-adgangstoken til din Power BI-app](get-azuread-access-token.md).
 
 ## <a name="step-3---get-a-tile"></a>Trin 3 – Hent et felt
 Hvis du vil hente et **Power BI**-felt, skal du bruge handlingen [Hent felter](https://msdn.microsoft.com/library/mt465741.aspx), som henter en liste over **Power BI**-felter fra et bestemt dashboard. Fra listen over felter kan du få et felt-id og en integreret URL-adresse.
@@ -236,9 +236,11 @@ https://app.powerbi.com/embed?dashboardId={dashboard_id}&tileId={tile_id}&groupI
 ```
 
 ## <a name="next-steps"></a>Næste trin
-Du kan finde en prøveapp på GitHub, som du kan gennemse. Du kan finde flere oplysninger under [integrate-tile-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-tile-web-app).
+[Feltet Integrer](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Tile-Embed) i PowerBI-JavaScript Wiki
 
-Du kan finde flere oplysninger om JavaScript API'en i [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+[Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+
+Eksemplet [integrate-tile-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-tile-web-app) på GitHub.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

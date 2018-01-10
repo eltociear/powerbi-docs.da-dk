@@ -94,7 +94,7 @@
           href: service-admin-premium-manage.md
         - name: Understøttelse af store datasæt
           href: service-premium-large-datasets.md
-        - name: Ofte stillede spørgsmål til Power BI Premium
+        - name: Ofte stillede spørgsmål om Power BI Premium
           href: service-premium-faq.md
         - name: Produktbemærkninger til Power BI Premium
           href: service-premium-release-notes.md
@@ -454,11 +454,9 @@
           href: power-bi-visualization-treemaps.md
         - name: 'Selvstudium: Vandfaldsdiagrammer i Power BI'
           href: power-bi-visualization-waterfall-charts.md
-        - name: Opret et felt med et højt nummer for et Power BI-dashboard ved at stille et spørgsmål
-          href: power-bi-visualization-big-number.md
-        - name: Opret et felt med et højt nummer fra en rapport i Power BI
-          href: power-bi-visualization-big-number-report.md
-        - name: Opret avanceret analytics og visualiseringer med R-scripts i Power BI
+        - name: 'Selvstudium: Kort (felter med store tal) i Power BI'
+          href: power-bi-visualization-card.md
+        - name: Opret avancerede analyser og visualiseringer med R-scripts i Power BI
           href: service-r-visuals.md
     - name: Data fra filer
       items:
@@ -610,7 +608,7 @@
           href: service-admin-troubleshoot-excel-workbook-data.md
         - name: Fejlfinding af feltfejl
           href: refresh-troubleshooting-tile-errors.md
-        - name: 'Sådan opdaterer du dine indholdspakke-legitimationsoplysninger til, hvis opdatering mislykkedes'
+        - name: 'Sådan opdaterer du dine legitimationsoplysninger til Xero-indholdspakken, hvis opdatering mislykkedes'
           href: service-refresh-xero-credentials.md
 - name: Power BI Desktop
   items:
@@ -938,6 +936,8 @@
           href: developer/integrate-report.md
         - name: Integrer indhold i din app (app ejer data)
           href: developer/embed-sample-for-customers.md
+        - name: Indlejr brugerdefinerede layout i en app
+          href: developer/embedded-custom-layout.md
         - name: Opret en Azure Active Directory-lejer
           href: developer/create-an-azure-active-directory-tenant.md
         - name: Registrer en app

@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/27/2017
+ms.date: 12/23/2017
 ms.author: mihart
-ms.openlocfilehash: c1801db4135d6d97a940e593de37ca2886194b53
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 17073390cf19b742730712a8d39a353c7d541cd6
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="scatter-charts-and-bubble-charts-in-power-bi-tutorial"></a>Punktdiagrammer og boblediagrammer i Power BI (selvstudium)
 Et punktdiagram har altid to værdiakser for at vise ét sæt numeriske data langs en vandret akse og et andet sæt numeriske værdier langs en lodret akse. Diagrammet viser punkter ved skæringspunktet for en numerisk x- og y-værdi og kombinerer disse værdier i enkelte datapunkter. Disse datapunkter kan være fordelt jævnt eller ujævnt på tværs af den vandrette akse afhængigt af dataene.
@@ -47,25 +47,30 @@ Et boblediagram erstatter datapunkterne med bobler, hvor boble*størrelsen* repr
 * Til brug med kvadranter.
 
 ## <a name="create-a-scatter-chart"></a>Opret et punktdiagram
+Se denne video for at se Will oprette et punktdiagram, og følg derefter nedenstående trin for at oprette et selv.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PVcfPoVE3Ys?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Åbn eksemplet Retail Analysis Sample i [redigeringsvisning](service-interact-with-a-report-in-editing-view.md), og [tilføj en ny rapportside](power-bi-report-add-page.md).
-2. Vælg **Sales** > **Sales Per Sq Ft** og **Sales** > **Total Sales Variance %** i ruden Felter.
-3. Vælg **District > District** i ruden Felter.
+
+I denne vejledning bruges Retail Analysis Sample (Eksempel på detailhandelsanalyse). Du skal [downloade eksemplet](sample-datasets.md) til Power BI-tjenesten (app.powerbi.com) eller Power BI Desktop, så du kan følge med.   
+
+1. Start på en [tom rapportside](power-bi-report-add-page.md), og vælg felterne **Sales** \> **Sales Per Sq Ft** og **Sales** > **Total Sales Variance %**. Hvis du bruger Power BI-tjenesten, skal du åbne rapporten i [Redigeringsvisning](service-interact-with-a-report-in-editing-view.md).
+ 
+2. Vælg **District > District** i ruden Felter.
    
-    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_pre_convert.png)
+    ![](media/power-bi-visualization-scatter/power-bi-bar-chart.png)
 4. Konvertér til et punktdiagram. Vælg ikonet Punktdiagram i ruden Visualiseringer.
    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_icon.png).
 5. Træk **District** fra **Detaljer** til **Forklaring**.
    
-    ![](media/power-bi-visualization-scatter/pbi_scatter_chart_new.png)
+    ![](media/power-bi-visualization-scatter/power-bi-scatter.png)
 
 Nu har jeg et punktdiagram, der viser Total Sales Variance % langs Y-aksen og Sales Per Square Feet langs X-aksen.  Datapunkternes farver repræsenterer distrikterne.  Nu tilføjer jeg en tredje dimension.
 
 ## <a name="create-a-bubble-chart"></a>Opret et boblediagram
 1. Træk **Sales** > **This Year Sales** > **Value** til området **Størrelse**. 
    
-   ![](media/power-bi-visualization-scatter/pbi_scatter_chart_size.png)
+   ![](media/power-bi-visualization-scatter/power-bi-bubble.png)
 2. Peg på en boble.  Boblens størrelse afspejler værdien af **This Year Sales**.
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
@@ -93,5 +98,5 @@ Du kan oprette et nyt felt ved at [bruge Forespørgselseditor i Power BI Desktop
 
 [Prøv det – det er gratis!](https://powerbi.com/)  
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

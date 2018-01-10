@@ -1,5 +1,5 @@
 ---
-title: "Fastgør et felt til et Power BI-dashboard fra Spørgsmål og svar"
+title: "Fastgør et felt til et dashboard fra Spørgsmål og svar"
 description: "Dokumentation i at fastgøre et felt til et Power BI-dashboard fra spørgsmålsfeltet Spørgsmål og svar"
 services: powerbi
 documentationcenter: 
@@ -15,19 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/09/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: f37c0f9e433f1ac8c6bb8f7f3fa4b513fb4b4652
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 8a876c5a05fcdadff1a874148f5d56465bcc8c62
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Fastgør et felt til et dashboard fra Spørgsmål og svar
 ## <a name="how-to-pin-a-tile-from-qa"></a>Sådan fastgør du et felt fra Spørgsmål og svar
 Spørgsmål og svar er Power BI's ad hoc-rapporteringsværktøj. Brug for at finde en bestemt indsigt? Stil et spørgsmål om dine data, og få svar i form af en visualisering.
 
-> **BEMÆRK**! Åbn [eksemplet på detailhandelsanalyse](sample-retail-analysis.md) for at følge med.
+Spørgsmål og svar er tilgængelig fra dashboards og rapporter. I denne artikel åbner vi Spørgsmål og svar fra et dashboard. Dashboards er tilgængelige i Power BI-tjenesten, men ikke i Power BI Desktop. Åbn [dashboardet Retail Analysis Sample](sample-retail-analysis.md) (Eksempel på detailhandelsanalyse) for at følge med.
 > 
 > 
 
@@ -40,8 +40,10 @@ Spørgsmål og svar er Power BI's ad hoc-rapporteringsværktøj. Brug for at fin
    giver spørgsmålsfeltet dig forslag.
 4. Hvis du vil føje diagrammet til dit dashboard som et felt, skal du vælge nålen ![](media/service-dashboard-pin-tile-from-q-and-a/pbi_pintile.png) øverst til højre på canvasset.
 5. Fastgør feltet til et eksisterende dashboard eller til et nyt dashboard. 
-   
-   * Eksisterende dashboard: Vælg navnet på dashboardet på rullelisten. Dine valg vil være begrænset til kun disse dashboards i det aktuelle arbejdsområde.
+
+   ![](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-to-dashboard.png)
+
+   * Eksisterende dashboard: Vælg navnet på dashboardet på rullelisten. Du vil kun kunne vælge blandt de dashboards, der findes i det aktuelle arbejdsområde.
    * Nyt dashboard: Skriv navnet på det nye dashboard, og det vil blive føjet til dit aktuelle arbejdsområde.
 6. Vælg **Fastgør**.
    
@@ -62,5 +64,5 @@ Spørgsmål og svar er Power BI's ad hoc-rapporteringsværktøj. Brug for at fin
 [Omdøb, tilpas størrelse, tilføj et hyperlink, flyt feltet og meget mere](service-dashboard-edit-tile.md)    
 [Få vist dit dashboardfelt i fokustilstand](service-focus-mode.md)     
 [Tilbage til Spørgsmål og svar i Power BI](service-q-and-a.md)  
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

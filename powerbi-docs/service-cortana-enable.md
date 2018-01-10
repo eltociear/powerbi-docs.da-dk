@@ -11,13 +11,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/30/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 6c096cfb76a1d8697cef3d157efcda41e57a1510
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: b18157f28dcaf2e9b130bdc3bd5547312e45a4f9
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="enable-cortana-to-access-power-bi-reports-and-their-underlying-datasets"></a>Gør Cortana i stand til at få adgang til Power BI-rapporter (og deres underliggende datasæt)
 Du har læst [Introduktion til Cortana og Power BI](service-cortana-intro.md) (hvis ikke, kan du læse den først og derefter vende tilbage). Og nu vil du selv prøve.  Før du kan stille spørgsmål på naturligt sprog i Cortana og finde svar fra data, der er gemt i Power BI-***rapporter***, er der nogle få krav. Du skal specifikt gøre følgende.
@@ -47,11 +47,10 @@ Du skal logge på Power BI-tjenesten (ikke Power BI Desktop) og gentage disse tr
 2. Det datasæt, der er knyttet til denne rapport, er **Contoso Sales**.
    
     ![Datasættet Contoso Sales](media/service-cortana-enable/power-bi-identify-dataset.png)
-3. Vælg tandhjulsikonet i øverste højre hjørne af Power BI-tjenesten, og vælg **Indstillinger**.
+3. Til højre for datasætnavnet skal du vælge **ellipsen (...) > Indstillinger**.  
    
-    ![Vælg indstillinger](media/service-cortana-enable/power-bi-cortana-settings.png)
-4. Vælg fanen **Datasæt**, og vælg datasættet, der skal aktiveres for Cortana, på listen til venstre.
-5. Vælg **Spørgsmål og svar og Cortana** > **Tillad Cortana at få adgang til dette datasæt** > **Anvend**.
+    ![Vælg indstillinger](media/service-cortana-enable/power-bi-settings-cortana.png)
+4. Vælg **Spørgsmål og svar og Cortana** > **Tillad Cortana at få adgang til dette datasæt** > **Anvend**.
    
    ![Cortana-adgang til datasæt](media/service-cortana-enable/power-bi-cortana-enable-new.png)
    
@@ -67,16 +66,19 @@ Du skal logge på Power BI-tjenesten (ikke Power BI Desktop) og gentage disse tr
 ## <a name="add-your-power-bi-credentials-to-windows"></a>Føj dine Power BI-legitimationsoplysninger til Windows
 Du skal køre Windows 10 version 1511 eller nyere.
 
-1. Find ud af, hvilken Windows 10-version du kører. Åbn **Indstillinger** > **System** > **Om**.
-   
+1. Find ud af, hvilken Windows 10-version du kører. Åbn **Indstillinger**.
+    ![Åbn indstillinger for Windows](media/service-cortana-enable/power-bi-cortana-windows.png).
+
+    Vælg derefter **System > Om**. Nederst på skærmen får du vist **Windows-specifikationer > Version**.
+
    * Hvis du har Windows 10 version 1511 (Windows 10 november 2015-opdatering) indtil 1607, skal du tilføje din arbejds- eller skolekonto og Microsoft-konto (fuldfør trin 2 og 3 nedenfor).
    * Hvis du har Windows 10 version 1607 (Windows 10 juli 2016-opdatering) eller senere, skal du tilføje din arbejds- eller skolekonto (fuldfør kun trin 2 nedenfor).
-2. Tilføj din arbejds- eller skolekonto for Cortana.
+1. Tilføj din arbejds- eller skolekonto for Cortana.
    
    * Åbn **Indstillinger** > **Konti**.
      
        ![Indstillinger - Konti](media/service-cortana-enable/power-bi-windows-accounts.png)
-   * Rul ned til bunden, og vælg **Tilføj en arbejds- eller skolekonto**.
+   * Rul ned til bunden, og vælg **Tilføj en arbejds- eller skolekonto**. Eller vælg **Adgang til arbejde eller skole > Opret forbindelse** på siden **Konti**.
      
      ![Tilføj arbejdskonto](media/service-cortana-enable/power-bi-add-work-account2.png)
 
@@ -87,5 +89,5 @@ Cortana vil bruge denne arbejds- eller skolekonto til at kontrollere, om der i P
 
 [Fejlfinding af problemer med integration mellem Cortana og Power BI](service-cortana-troubleshoot.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

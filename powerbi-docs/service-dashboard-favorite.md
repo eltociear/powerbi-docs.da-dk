@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 9dc9cb883e1d62c282501e628f52c13267d830b6
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 4c4c31f6289f6b3d12b619b7c6c297d861177fbf
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="favorite-dashboards-in-the-power-bi-service"></a>Foretrukne dashboards i Power BI-tjenesten
 Når du gør et dashboard til en *favorit*, kan du få adgang til det fra alle dine arbejdsområder.  Favoritter er normalt dem, du besøger oftest.
@@ -32,7 +32,7 @@ Når du gør et dashboard til en *favorit*, kan du få adgang til det fra alle d
 > 
 > 
 
-Du kan også vælge et enkelt dashboard som et [fremhævet dashboard](service-dashboard-featured.md) i Power BI.
+Du kan også vælge et enkelt dashboard som et [udvalgt dashboard](service-dashboard-featured.md) i Power BI-tjenesten.
 
 ## <a name="add-a-dashboard-as-a-favorite"></a>Tilføj et dashboard som en *favorit*
 Se Amanda føje favoritter til sit arbejdsområde, og følg derefter den trinvise vejledning under videoen for selv at prøve det.
@@ -40,7 +40,7 @@ Se Amanda føje favoritter til sit arbejdsområde, og følg derefter den trinvis
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
 
-1. Åbn et dashboard, som du ofte bruger. Selv dashboards, der er blevet delt med dig, kan være en *favorit*.
+1. Åbn et dashboard, som du ofte bruger. Selv dashboards, der er blevet delt med dig, kan være *favoritter*.
 2. Vælg **Favorit** eller stjerneikonet ![](media/service-dashboard-favorite/power-bi-favorite-icon.png) i øverste højre hjørne af Power BI-tjenesten.
    
    ![](media/service-dashboard-favorite/powerbi-dashboard-favorite.png)
@@ -50,7 +50,7 @@ Se Amanda føje favoritter til sit arbejdsområde, og følg derefter den trinvis
    ![](media/service-dashboard-favorite/power-bi-dashboard-favorite.png)
 
 ## <a name="working-with-favorites"></a>Arbejd med *favoritter*
-1. Du kan få vist dine fem seneste favoritter fra et hvilket som helst arbejdsområde ved at vælge pilen til højre for **Favoritter**.  Herfra kan du vælge et foretrukket dashboard for at åbne det. Kun de seneste fem favoritter vises (alfabetisk). Hvis du har mere end fem favoritter, skal du vælge **Se alle** for at åbne skærmbilledet Favoritter (se nr. 2 herunder). 
+1. Du kan få adgang til dine favoritter fra et hvilket som helst arbejdsområde ved at vælge pilen til højre for **Favoritter**.  Herfra kan du vælge et foretrukket dashboard for at åbne det. Kun fem favoritter vises (alfabetisk). Hvis du har mere end fem favoritter, skal du vælge **Se alle** for at åbne skærmbilledet Favoritter (se nr. 2 herunder). 
    
    ![](media/service-dashboard-favorite/power-bi-favorite-flyout-new.png)
 2. Hvis du vil se **alle** de dashboards, du har tilføjet som favoritter, skal du i venstre navigationsrude vælge **Favoritter** eller ikonet for favoritter ![](media/service-dashboard-favorite/power-bi-favorites-icon.png).  
@@ -60,7 +60,7 @@ Se Amanda føje favoritter til sit arbejdsområde, og følg derefter den trinvis
    Herfra kan du vælge et dashboard for at åbne det eller dele et dashboard med kolleger.
 
 ## <a name="unfavorite-a-dashboard"></a>Fjern et dashboard fra favoritter
-Bruger du ikke længere et dashboard så ofte, som du plejede?  Du kan fjerne det fra favoritter. Når du fjerner et dashboard fra favoritter, fjernes det fra dine favoritter, men ikke fra Power BI.
+Bruger du ikke længere et dashboard så ofte, som du plejede?  Du kan fjerne det fra favoritter. Når du fjerner et dashboard fra favoritter, fjernes det fra listen med dine favoritter, men ikke fra Power BI.
 
 1. Vælg **Favoritter** i venstre navigationsrude for at åbne skærmbilledet **Favoritter**.
    
@@ -76,5 +76,5 @@ Bruger du ikke længere et dashboard så ofte, som du plejede?  Du kan fjerne de
 
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

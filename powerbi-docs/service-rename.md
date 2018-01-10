@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/08/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: d39fd80b834afc37fb1db43a083f9037a3b83ef1
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 33954aab1d6e79efc985f3e0d3c4d026f529b691
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="rename-almost-anything-in-power-bi-service"></a>Omdøb næsten alt i Power BI-tjenesten
 I denne artikel kan du lære at omdøbe et dashboard, en rapport, en rapportside, en projektmappe, et datasæt, en app og et arbejdsområde i Power BI-tjenesten.
@@ -40,7 +40,7 @@ I denne artikel kan du lære at omdøbe et dashboard, en rapport, en rapportside
 | Indhold i **Delt med mig** |Nej |Nej |
 
 ## <a name="rename-a-dashboard-report-or-workbook"></a>Omdøb et dashboard, en rapport eller en projektmappe
-1. Start i et arbejdsområde, og vælg fanen **Dashboards**, **Rapporter** eller **Projektmapper**. Hold markøren over elementet for at omdøbe, og vælg tandhjulsikonet ![](media/service-rename/powerbi-cog-icon.png).
+1. Start i et arbejdsområde, og vælg fanen **Dashboards**, **Rapporter** eller **Projektmapper**. Hold markøren over elementet for at omdøbe, og vælg tandhjulsikonet ![](media/service-rename/powerbi-cog-icon.png). Hvis der ikke er noget tandhjulsikon, har du ikke tilladelse til at omdøbe.
    
    ![](media/service-rename/power-bi-workspace-dashboards.png)
 2. Skriv det nye navn på siden Indstillinger, og vælg **Gem**.
@@ -67,7 +67,7 @@ I denne artikel kan du lære at omdøbe et dashboard, en rapport, en rapportside
 Alle med administratortilladelser kan omdøbe et apparbejdsområde.
 
 1. Start i det arbejdsområde, du vil omdøbe.
-2. I øverste højre hjørne skal du vælge ellipsen (...) og vælge **Rediger arbejdsområde**.  
+2. I øverste højre hjørne skal du vælge ellipsen (...) og vælge **Rediger arbejdsområde**. Hvis du ikke får vist denne indstilling, har du ikke tilladelser til at omdøbe dette arbejdsområde. 
    
     ![](media/service-rename/power-bi-edit-workspace.png)
 3. Skriv et nyt navn til arbejdsområdet, og vælg **Gem**.
@@ -93,5 +93,5 @@ Kan du ikke lide navnet på en side i din Power BI-rapport?  Et nyt navn er kun 
 * Hvis det element, der skal omdøbes, er blevet delt med dig eller er en del af en indholdspakke, kan du ikke se tandhjulsikonet, og du kan ikke få adgang til Indstillinger.
 * Hvis du ikke kan se ellipsen (...) på fanen **Datasæt**, skal du udvide dit browservindue.
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

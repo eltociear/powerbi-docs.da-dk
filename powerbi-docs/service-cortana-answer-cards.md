@@ -15,20 +15,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/29/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 2abaa2ae00b353af46c267083f879cbf9536b397
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 79e10c7d47eb5105e0c3e79bd3451315eae6d27e
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>Du kan bruge Power BI-tjenesten eller Power BI Desktop til at oprette en tilpasset svarside til Cortana
 Få det fulde udbytte ud af Power BI ved at oprette særlige rapportsider, *Cortana-svarsider* (optræder undertiden også under benævnelsen "Cortana-svarkort"), udviklet specielt til at besvare Cortana spørgsmål.
 
 ![](media/service-cortana-answer-cards/power-bi-cortana.png)
 
-> [!NOTE]
+> [!IMPORTANT]
 > Hvis du prøver eksempelvisning af Cortana- og Power BI-**dashboard**, kan du springe resten af denne artikel over. Der er ingen krav om konfiguration, før Cortana er i stand til at søge i dine Power BI-dashboards.
 > 
 > 
@@ -63,7 +63,7 @@ En *Cortana-svarside* i en rapport har en størrelse specielt afpasset til Corta
    > Undgå at bruge ord, der også er kolonnenavne, for at få bedre resultater.
    > 
    > 
-6. Hvis rapporten indeholder sideniveaufiltre, kan du eventuelt angive **Kræv enkeltvalg**. Cortana viser kun denne rapport som et svar, hvis et – og kun ét – af filterelementerne er angivet i spørgsmålet.
+6. Hvis rapporten indeholder sideniveaufiltre, kan du eventuelt angive **Kræv enkeltvalg**. Cortana viser kun denne rapport som et svar, hvis et – og kun ét – af filterelementerne er angivet i spørgsmålet. **Kræv enkeltvalg** findes i bunden i ruden **Filtre**.
    
    > [!NOTE]
    > Du behøver ikke at indstille **Kræv enkeltvalg** for at bede Cortana om at vise en rapport med sideniveaufiltre.  "vis salg for Charlotte Lindseys" vil f.eks. vise svarsiden uanset indstillingen Kræver enkeltvalg.
@@ -98,5 +98,5 @@ Resultater med svar med en høj score (f.eks et fuldstændigt match på et speci
 
 Kan du stadigvæk ikke få Cortana til at fungere med Power BI?  Prøv [Cortana-fejlfindingsværktøj](service-cortana-troubleshoot.md).
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

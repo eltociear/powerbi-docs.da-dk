@@ -1,6 +1,6 @@
 ---
 title: KPI-visualiseringer (selvstudium)
-description: opret KPI i power bi
+description: opret KPI i Power BI-tjenesten og Power BI Desktop
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/09/2017
+ms.date: 12/21/2017
 ms.author: mihart
-ms.openlocfilehash: 23b322c9fbc4c203a5b20aa45bb41c2cb6cb7f0f
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: f0efc9e18c5d23c6e52768b4c8e30233ff433356
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="kpi-visuals-tutorial"></a>KPI-visualiseringer (selvstudium)
 Et nøgletal (KPI) er en visuel ledetråd, der viser fremgangen mod et målbart mål. Du kan finde flere oplysninger om KPI'er ved at se [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
@@ -42,30 +42,34 @@ Et nøgletal (KPI) er baseret på et bestemt mål og er designet til at hjælpe 
 > 
 
 ## <a name="how-to-create-a-kpi"></a>Sådan opretter du et KPI
-Log på Power BI for at følge med, og vælg **Hent Data > Eksempler > Retail Analysis Sample**. Vi opretter et KPI, der måler vores fremgang mod et salgsmål.
+Hvis du selv vil følge med, skal du logge på Power BI-tjenesten og vælge **Hent data > Eksempler > Retail Analysis Sample (Eksempel på detailhandelsanalyse)**. Vi opretter et KPI, der måler vores fremgang mod et salgsmål.
 
-Eller se Sådan opretter du enkelte metrikvisualiseringer: mål, kort og nøgletal.
+Eller du kan se med, når Will viser, hvordan du opretter visualiseringer med en enkelt måling: målere, kort og KPI'er.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1. Vælg **Sales > Total Units This Year**.  Dette er indikatoren.
-2. Tilføj **Time > Month**.  Dette repræsenterer tendensen.
-3. VIGTIGT: Sorter diagrammet efter **Month**. Når du konverterer visualiseringen til et KPI, er der ikke muligt at sortere.
-4. Konverter visualiseringen til et KPI ved at vælge ikonet KPI i visualiseringsruden.
+1. Åbn rapporten i [Redigeringstilstand](service-reading-view-and-editing-view.md), og [tilføj en ny side](power-bi-report-add-page.md).    
+2. Vælg **Sales > Total Units This Year**.  Dette er indikatoren.
+3. Tilføj **Time > Month**.  Dette repræsenterer tendensen.
+4. VIGTIGT: Sorter diagrammet efter **Month**. Når du konverterer visualiseringen til et KPI, er der ikke muligt at sortere.
+
+    ![](media/power-bi-visualization-kpi/power-bi-sort-by-month.png)
+5. Konverter visualiseringen til et KPI ved at vælge ikonet KPI i visualiseringsruden.
    
     ![](media/power-bi-visualization-kpi/power-bi-kpi-icon.png)
-5. Tilføj et mål. Tilføj sidste års salg som målet. Træk **Total Units Last Year** til feltet **Target goals**.
+6. Tilføj et mål. Tilføj sidste års salg som målet. Træk **Total Units Last Year** til feltet **Target goals**.
    
     ![](media/power-bi-visualization-kpi/power-bi-kpi.png)
-6. Du kan eventuelt formatere KPI'et ved at vælge malerrulleikonet for at åbne ruden Formatering.
+7. Du kan eventuelt formatere KPI'et ved at vælge malerrulleikonet for at åbne ruden Formatering.
    
    * **Indicator** – -styrer indikatorens visningsenheder og decimalpladser.
    * **Trend axis** – når den er slået **Til**, vises tendensaksen som baggrund i KPI-visualiseringen.  
    * **Goals** – når det er slået **Til**, viser visualiseringen målet og afstanden til målet som en procentdel.
-   * **Status** – nogle KPI'er anses som *bedre* for højere værdier, og nogle anses som *bedre* for lavere værdier. For eksempel indtægter vs. ventetid. En højere værdi for indtjening er typisk bedre i forhold til en højere værdi for ventetiden – det anses normalt som værre. Denne indstilling muliggør valget af en KPI-funktionsmåde. Statusvalget er som standard, **høj er bedre**.
-7. Når du har KPI'et, som du vil have det, skal du [fastgøre det til et dashboard](service-dashboard-pin-tile-from-report.md).
+   * **Farvekodning > Retning** – nogle KPI'er anses som *bedre* for højere værdier, og nogle anses som *bedre* for lavere værdier. For eksempel indtægter i forhold til ventetid. En højere værdi for indtjening er typisk bedre i forhold til en højere værdi for ventetid. Vælg **høj er bedre**, og rediger eventuelt farveindstillingerne.
 
-KPI'er er også tilgængelige på dine mobilenheder – så du altid har fingeren på virksomhedens puls.
+1. Når du har KPI'et, som du vil have det, skal du [fastgøre det til et dashboard](service-dashboard-pin-tile-from-report.md).
+
+KPI'er er også tilgængelige på dine mobilenheder, så du altid har fingeren på virksomhedens puls.
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 * Hvis KPI'et ikke ligner det ovenfor, kan det skyldes, at du skal sortere efter måned. Da KPI'er ikke har en sorteringsindstilling, skal du sorterer efter måned, *før* du konverterer din visualisering til et KPI.
@@ -75,7 +79,7 @@ KPI'er er også tilgængelige på dine mobilenheder – så du altid har fingere
 
 [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
 
-[Power BI – Grundlæggende begreber](service-basic-concepts.md)
+[Power BI – grundlæggende begreber](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

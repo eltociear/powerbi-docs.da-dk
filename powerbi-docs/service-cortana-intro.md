@@ -11,13 +11,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/25/2017
+ms.date: 12/13/2017
 ms.author: mihart
-ms.openlocfilehash: 458c6663697f8c968915c54dba1c80be422c0f80
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: d64ab6b9a94171c99eb0956efce89f59b5174d41
+ms.sourcegitcommit: 2bd3c16fd300e41c6e3de29a24543491c1d53354
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Find og vis hurtigt dine Power BI-data ved hjælp af Cortana til Power BI
 Brug Cortana på tværs af dine Windows 10-enheder for at få omgående svar på vigtige forretningsspørgsmål. Ved at integrere med Power BI kan Cortana hente vigtige oplysninger direkte fra Power BI-dashboards og -rapporter. Alt hvad der kræves, er version Windows 10 November 2015 eller nyere, Cortana, Power BI og adgang til mindst ét datasæt.
@@ -85,13 +85,19 @@ Når du stiller et spørgsmål i Cortana, svarer Power BI fra rapportsider, der 
      ![](media/service-cortana-intro/power-bi-cortana-searchbox.png)
 2. Når Cortana er klar, kan du skrive eller indtale dit spørgsmål i Cortana-søgelinjen. Cortana viser de tilgængelige resultater. Hvis der er et Power BI-dashboard, der svarer til spørgsmålet, vises det under **Bedste match** eller **Power BI**.
    
-     ![Cortana-søgning finder Power BI-dashboard](media/service-cortana-intro/power-bi-cortana-searching2.png "Cortana finder et Power BI-dashboard")
+     ![Cortana-søgning finder Power BI-dashboard](media/service-cortana-intro/power-bi-cortana-search-hr.png "Cortana finder et Power BI-dashboard")
    
    > [!NOTE]
    > Kun engelsk understøttes på nuværende tidspunkt.
    > 
    > 
-3. Åbn dashboardet i Power BI ved at vælge navnet på dashboardet. 
+3. Vælg dashboardet for at åbne det i Cortana.
+
+    ![Vælg Power BI-dashboardet](media/service-cortana-intro/power-bi-cortana-dashboard.png "Vælg Power BI-dashboardet")
+
+    Du kan ændre layoutet ved [at redigere *telefonvisningen* af dashboardet](service-create-dashboard-mobile-phone-view.md). 
+
+1. Fra Cortana har du også mulighed for at åbne dashboardet i Power BI-tjenesten eller Power BI – Mobil. Åbn dashboardet i Power BI-tjenesten ved at vælge **Open on web** (Åbn på internettet). 
    
    ![Åbn dashboardet fra Cortana](media/service-cortana-intro/power-bi-dashboard-opens.png "Åbn dashboardet fra Cortana")   
 4. Lad os bruge Cortana til at søge efter en rapport. Vi skal kende en [rapport, der indeholder en side med et Cortana-svarkort ](service-cortana-answer-cards.md). I dette eksempel indeholder en rapport med navnet "Cortana-New-Stores" et Cortana-svarkort med navnet "cortana stores".  

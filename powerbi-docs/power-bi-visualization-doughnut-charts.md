@@ -15,32 +15,33 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/27/2017
+ms.date: 12/23/2017
 ms.author: mihart
-ms.openlocfilehash: 2f428095eb57c5358770f1d6d8572316d2b84c37
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: f3401fac7b0e7e6b5b5404a5a837822772e1d70f
+ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="doughnut-charts-in-power-bi-tutorial"></a>Kransediagrammer i Power BI (selvstudium)
 Et kransediagram ligner meget et cirkeldiagram og viser relationen mellem dele af en helhed. Den eneste forskel er, at centreret i det er tomt og giver plads til en etiket eller et ikon.
 
 ## <a name="create-a-doughnut-chart"></a>Opret et kransediagram
-Log på Power BI for at følge fremgangsmåden, og vælg **Hent Data** \> **Eksempler**  \>  **Eksempel på detailhandelsanalyse** \> **Opret forbindelse**. 
+I denne vejledning benyttes eksemplet Retail Analysis Sample (Eksempel på detailhandelsanalyse)til at oprette et kransediagram, der viser dette års salg efter kategori. Du skal [downloade eksemplet](sample-datasets.md) til Power BI-tjenesten (app.powerbi.com) eller Power BI Desktop, så du kan følge med.
 
-1. Fra dashboardet skal du markere feltet **Total stores** (Butikker i alt) for at åbne rapporten "Eksempel på detailhandelsanalyse".
-2. Vælg **Rediger rapport** for at åbne rapporten i Redigeringsvisning.
-3. [Tilføj en ny rapportside](power-bi-report-add-page.md).
-4. Opret et kransediagram, der viser dette års salg efter kategori.
+1. Start på en [tom rapportside](power-bi-report-add-page.md), og vælg feltet **SalesStage** \> **Sales Stage**. Hvis du bruger Power BI-tjenesten, skal du åbne rapporten i [Redigeringsvisning](service-interact-with-a-report-in-editing-view.md).
+
+2. I ruden Felter skal du vælge **Sales** \> **Last Year Sales**.  
    
-   * I ruden **Felter** skal du markere **Sales** \> **Last Year Sales** (Salg/Sidste års salg).
-   * Konvertér til et kransediagram. Hvis sidste års salg ikke findes i området **Værdier**, skal du trække det derhen.
+3. Vælg ikonet for kransediagram ![ikon for kransediagram]() i ruden Visualiseringer for at konvertere dit liggende søjlediagram til et kransediagram. Hvis **Last Year Sales** ikke findes i området **Værdier**, skal du trække det derhen.
      
-       ![](media/power-bi-visualization-doughnut-charts/convertdonut.png)
-   * Vælg **Element** \> **Kategori** for at føje det til området **Forklaring**. 
+   ![](media/power-bi-visualization-doughnut-charts/power-bi-doughnut-chart.png)
+
+4. Vælg **Element** \> **Kategori** for at føje det til området **Forklaring**. 
      
-       ![](media/power-bi-visualization-doughnut-charts/doughnuttutorial.png)
+    ![](media/power-bi-visualization-doughnut-charts/power-bi-doughnut-done.png)
+
+5. Du kan eventuelt [tilpasse størrelsen og farven på diagrammets tekst](power-bi-visualization-customize-title-background-and-legend.md). 
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 * Summen af kransediagrammets værdier skal give 100 %.
@@ -54,7 +55,7 @@ Log på Power BI for at følge fremgangsmåden, og vælg **Hent Data** \> **Ekse
 
 [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
 
-[Power BI – Grundlæggende begreber](service-basic-concepts.md)
+[Power BI – grundlæggende begreber](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

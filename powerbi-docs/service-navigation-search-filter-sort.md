@@ -15,36 +15,27 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/09/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 40528aa3401f690daed17fa9bf73cd6c90edcf62
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 2dcf3b50b9019880a9a7a11c863bed88783214c7
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
-# <a name="searching-and-sorting-content-in-power-bi"></a>Søg i og sortér dit indhold i Power BI
-Med en kombination af automatisk organisation, brugertagging, søgning og sortering i Power BI kan du hurtigt finde det, som du har brug for, i Power BI-tjenesten.
+# <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigation: Søg i, find og sortér dit indhold i Power BI-tjenesten
+Der er mange forskellige måder at navigere rundt i dit indhold i Power BI-tjenesten på. Indholdet organiseres i fire arbejdsområder efter type: dashboards, rapporter, projektmapper og datasæt.  Indholdet er også sorteret efter forbrug: Favoritter, seneste, apps, delt med mig og udvalgt. Med disse forskellige stier til dit indhold kan du hurtigt finde det, du søger, i Power BI-tjenesten.  
 
-## <a name="how-power-bi-helps-you-navigate-your-content"></a>Sådan hjælper Power BI dig med at navigere rundt i dit indhold
-Power BI-tjenesten organiserer dit indhold på flere måder.  Først adskiller det dit indhold i dashboards, rapporter, projektmapper og datasæt. Du får vist denne organisation på mange af skærmbillederne i Power BI. Power BI-tjenesten klassificerer derefter dit indhold, så det bliver endnu nemmere at finde det ønskede hurtigt. Se på den venstre navigationslinje.
+>[!NOTE] 
+>Denne artikel gælder for Power BI-tjenesten (app.powerbi.com) og ikke Power BI Desktop.
 
-![](media/service-navigation-search-filter-sort/power-bi-newnav.png)
+## <a name="navigation-within-workspaces"></a>Navigation i arbejdsområder
 
-Indhold, som du opretter til eget brug, er tilgængeligt i **Mit arbejdsområde**, indhold, du opretter og deler med en gruppe, er tilgængeligt i et **apparbejdsområde**, indhold, som du vil have hurtig adgang til, gemmes i **Favoritter**, indhold, der deles med dig, er tilgængeligt i **Delt med mig** og det indhold, du sidst har set, findes også i **Seneste**.
+Power BI-tjenesten opdeler indholdet i dit arbejdsområde efter type: dashboards, rapporter, projektmapper og datasæt. Når du vælger et arbejdsområde, får du vist denne opdeling. I dette eksempel har apparbejdsområdet navnet "Sales and marketing app sample" og indeholder to dashboards, seks rapporter, en projektmappe og fem datasæt.
 
-Du kan finde flere oplysninger i [Sådan er indhold organiseret i Power BI-tjenesten](service-basic-concepts.md)
+![](media/service-navigation-search-filter-sort/workspaces.gif)
 
-> **BEMÆRK**! En yderligere måde at organisere indholdet på er at vælge det dashboard, du forventer at se oftest, og angive det som dit *foretrukne* dashboard. Hver gang du åbner Power BI-tjenesten, bliver dette dashboard vist først. Du kan finde flere oplysninger i [Fremhævet dashboard](service-dashboard-featured.md).
-> 
-> 
-
-## <a name="favorite-dashboards-and-apps"></a>Foretrukne dashboards og apps
-Har du en række dashboards og apps, som du ofte besøger? Ved at [indstille dem som *favoritter*](service-dashboard-favorite.md) er de altid tilgængelige i den venstre navigationslinje.
-
-![](media/service-navigation-search-filter-sort/power-bi-favorite-flyout.png).
-
-Arbejde med favoritter er beskrevet mere detaljeret i artiklen [Favoritter i Power BI-tjenesten](service-dashboard-favorite.md).
+________________________________________
 
 ## <a name="searching-and-sorting-in-workspaces"></a>Søgning og sortering i arbejdsområder
 Der er fire indholdsfaner i et arbejdsområde: Dashboards, Rapporter, Projektmapper og Datasæt.  Hver af disse faner indeholder et søgefelt og en sorteringsknap.  Når du starter med Power BI-tjenesten, er det måske ikke en stor hjælp, da du kun har et eller to elementer pr. fane.  Men med tiden kan dine lister med indhold blive lange.  Brug søgning og sortering til at nemt kan finde det, du har brug for.
@@ -58,11 +49,24 @@ Der er fire indholdsfaner i et arbejdsområde: Dashboards, Rapporter, Projektmap
   
    ![](media/service-navigation-search-filter-sort/power-bi-sort-alpha.png)
 
+## <a name="navigation-using-the-left-navbar"></a>Navigation ved hjælp af den venstre navigationslinje
+Den venstre navigationslinje klassificerer dit indhold, så det bliver endnu nemmere at finde det ønskede hurtigt.  
+
+![](media/service-navigation-search-filter-sort/power-bi-newnav.png)
+
+
+
+Indhold, som du opretter til eget brug, er tilgængeligt i **Mit arbejdsområde**, indhold, du opretter og deler med en gruppe, er tilgængeligt i et **apparbejdsområde**, indhold, som deles med dig, er tilgængeligt i **Delt med mig**, og det indhold, du sidst har set, findes i **Seneste**.
+
+Derudover kan du mærke indhold som [foretrukket](service-dashboard-favorite.md) og [udvalgt](service-dashboard-featured.md). Vælg det dashboard, du forventer at se oftest, og angiv det som dit *foretrukne* dashboard. Hver gang du åbner Power BI-tjenesten, bliver dette dashboard vist først. Har du en række dashboards og apps, som du ofte besøger? Når du angiver dem som favoritter, er de altid tilgængelige i den venstre navigationslinje.
+
+![](media/service-navigation-search-filter-sort/power-bi-favorite-flyout.png).
+
+
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 * For datasæt er **Sortér efter** ikke tilgængelig efter ejer.
 
 ## <a name="next-steps"></a>Næste trin
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
-
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

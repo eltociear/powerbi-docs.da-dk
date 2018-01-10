@@ -1,6 +1,6 @@
 ---
-title: "Typerne af Quick Insights, der understøttes af Power BI"
-description: Quick Insights med Power BI.
+title: "Indsigtstyper, der understøttes af Power BI"
+description: Hurtige indsigter og Vis indsigter i Power BI.
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -15,21 +15,21 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/03/2017
+ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 13f5614cf121b17d8ae4dff9653f5789372f7f49
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 53e5e67da9bacd9fc9dcbb770747823647aa3a3c
+ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/21/2017
 ---
-# <a name="types-of-quick-insights-supported-by-power-bi"></a>Typerne af Quick Insights, der understøttes af Power BI
-## <a name="how-does-quick-insights-work"></a>Hvordan fungerer Quick Insights?
+# <a name="types-of-insights-supported-by-power-bi"></a>Indsigtstyper, der understøttes af Power BI
+## <a name="how-does-insights-work"></a>Hvordan fungerer indsigter?
 Power BI søger hurtigt gennem forskellige undersæt i datasættet og anvender samtidig et sæt avancerede algoritmer for at finde indsigt, der kan være interessant. Power BI scanner så meget af et datasæt som muligt i et tildelt tidsrum.
 
-Du kan køre Quick Insights mod et datasæt eller et felt (Relateret indsigt).   
+Du kan køre indsigt i forhold til et datasæt eller et dashboardfelt.   
 
-## <a name="what-types-of-quick-insights-can-we-find"></a>Hvilken typer Quick Insights kan vi finde?
+## <a name="what-types-of-insights-can-we-find"></a>Hvilke typer indsigter kan vi finde?
 Det er nogle af de algoritmer, vi bruger:
 
 ## <a name="category-outliers-topbottom"></a>Kategori med udenforliggende værdier (top/bund)
@@ -78,9 +78,9 @@ Registrerer for data på tværs af en tidsserie, når der er specifikke datoer o
 ![](media/service-insight-types/pbi_auto_insight_types_time_series_outliers.png)
 
 ## <a name="next-steps"></a>Næste trin
-[Power BI Quick Insights](service-insights.md)
+[Power BI-indsigter](service-insights.md)
 
-Hvis du ejer et datasæt, [kan du optimere det til Quick Insights](service-insights-optimize.md)
+Hvis du ejer et datasæt, [kan du optimere det til indsigter](service-insights-optimize.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
