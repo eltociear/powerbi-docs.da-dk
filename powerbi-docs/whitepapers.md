@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/14/2017
+ms.date: 01/05/2018
 ms.author: asaxton
-ms.openlocfilehash: a4ceeda4d56853df42da8e5c644b3946878a89f0
-ms.sourcegitcommit: 2bd3c16fd300e41c6e3de29a24543491c1d53354
+ms.openlocfilehash: 893f9a9b539b2facd62f74f8ecaebe42a4e7fcaa
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="whitepapers-for-power-bi"></a>Whitepapers til Power BI
 
@@ -41,5 +41,6 @@ Whitepapers gør det muligt at udforske Power BI-emner på et mere detaljeret ni
 | [Sikkerhed](service-admin-power-bi-security.md) |Giver en detaljeret beskrivelse af sikkerheden i Power BI. |
 | [Sikring af modellen for tabellarisk BI-semantik](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |I denne rapport introduceres sikkerhedsmodellen for tabellarisk BI-semantik og Power BI. Du lærer at oprette roller, implementere dynamiske sikkerhed, konfigurere repræsentationsindstillinger, administrere roller og vælge en metode til oprettelse af forbindelse til modeller, der fungerer i sikkerhedskonteksten for dit netværk. |
 | [Vejledning i kapacitetsplanlægning i Power BI-rapportserver](report-server/capacity-planning.md) |Denne rapports primære sigte er at give en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af adskillelige gennemførsler af belastningstest ved forskellige arbejdsbelastninger i forhold til en rapportserver. |
-|[Planlægning og installation af Power BI Premium](https://aka.ms/Premium-Capacity-Planning-Deployment) | Teknisk hvidbog med best practices og vejledning i planlægning, installation og brug af Power BI Premium. 
+| [Planlægning og installation af Power BI Premium](https://aka.ms/Premium-Capacity-Planning-Deployment)| Denne rapport indeholder en vejledning og bedste praksis for planlægning og installation af Premium-kapacitet for veldefinerede arbejdsbelastninger.|
+
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

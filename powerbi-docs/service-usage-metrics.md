@@ -18,17 +18,17 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/27/2017
 ms.author: mihart
-ms.openlocfilehash: 0fca4788c29f42390a286509acd0675292fc6684
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 04709b76b8e3e464b5384fa2bf137cd79b0749a7
+ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Forbrugsdata for dashboards og rapporter
 Hvis du opretter dashboards og rapporter, kan forbrugsdata hjælpe dig med at forestå deres indvirkning. Når du kører enten forbrugsdata for dashboards eller rapporter, opdager du, hvordan disse dashboards og rapporter anvendes i hele organisationen: Hvad bruges, af hvem og til hvilke formål.  
 
 > [!NOTE]
-> Forbrugsdata henter forbrug, når du integrerer dashboards og rapporter, men ikke, når du bruger [Publicer på internettet](service-publish-to-web.md)
+> Forbrugsdata vil spore brugen af rapporter, som er integreret i SharePoint Online. De vil også spore integreringen af dashboards og rapporter via både flowet "bruger ejer legitimationsoplysninger" og "app ejer legitimationsoplysninger". Forbrugsdata sporer ikke brugen af rapporter, der er integreret via [publicer på internettet](service-publish-to-web.md).
 > 
 > 
 
@@ -177,5 +177,5 @@ Svar: Rapporten med forbrugsdata indeholder kun rapporter (eller dashboards), de
 ## <a name="next-steps"></a>Næste trin
 [Gør et dashboard til favorit](service-dashboard-favorite.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

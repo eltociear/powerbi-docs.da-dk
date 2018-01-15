@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/18/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 83c63ee2bed5ae7674223cf2fc3f9241308926e9
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 22dc1c9b703b500625a5aed23b6187fd3f616dde
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="drill-down-in-a-visualization-in-power-bi"></a>Detailudledning i en visualisering i Power BI
 ## <a name="drill-down-requires-a-hierarchy"></a>Detailudledning kræver et hierarki
@@ -54,7 +54,7 @@ Der findes to forskellige måder til at analysere ned (og op) i din visualiserin
 ## <a name="method-1-for-drill-down"></a>Metode 1 til detailudledning
 Denne metode bruger ikonerne for detailudledning, der vises i de øverste hjørner af selve visualiseringen.
 
-1. I Power BI skal du åbne en rapport i [Læsevisning](service-report-open-in-reading-view.md) eller [Redigeringsvisning](service-reading-view-and-editing-view.md). Detailudledning kræver en visualisering med et hierarki. 
+1. I Power BI skal du åbne en rapport i [Læsevisning eller Redigeringsvisning](service-reading-view-and-editing-view.md). Detailudledning kræver en visualisering med et hierarki. 
    
    I animationen herunder er vist et hierarki.  Visualiseringen har et hierarki bestående af område, by, postnummer og bynavn. Hvert område har en eller flere byer, hver by har et eller flere postnumre osv. Som standard viser visualiseringen kun områdedata, fordi *Område* vises først på listen.
    
@@ -75,7 +75,7 @@ Denne metode bruger ikonerne for detailudledning, der vises i de øverste hjørn
 ## <a name="method-2-for-drill-down"></a>Metode 2 til detailudledning
 Denne metode bruger **Explore**-rullelisten fra den øverste menulinje i Power BI.
 
-1. I Power BI skal du åbne en rapport i [Læsevisning](service-report-open-in-reading-view.md) eller [Redigeringsvisning](service-reading-view-and-editing-view.md). Detailudledning kræver en visualisering med et hierarki. 
+1. I Power BI skal du åbne en rapport i [Læsevisning eller Redigeringsvisning](service-reading-view-and-editing-view.md). Detailudledning kræver en visualisering med et hierarki. 
    
    I billedet herunder er vist et hierarki.  Visualiseringen har et hierarki bestående af område, by, postnummer og bynavn. Hvert område har en eller flere byer, hver by har et eller flere postnumre osv. Som standard viser visualiseringen kun områdedata, fordi *Område* vises først på listen.
    
@@ -106,5 +106,5 @@ Denne metode bruger **Explore**-rullelisten fra den øverste menulinje i Power B
 
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

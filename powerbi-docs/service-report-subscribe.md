@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/21/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 8faa60dee8c1785d5560ac34c5eb50288488e893
-ms.sourcegitcommit: 910258a5ad8b6861e81ae02c57286db221c37375
+ms.openlocfilehash: 66e75d638595113b2df67650896a407ae5d13e88
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/02/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="subscribe-to-a-power-bi-report-or-dashboard"></a>Abonner på en rapport eller et dashboard i Power BI
 Det har aldrig været nemmere at holde dig opdateret om dine vigtigste dashboards og rapporter. Abonner på rapportsider og dashboards, der betyder mest for dig, og Power BI sender et snapshot til din indbakke. Fortæl Power BI, hvor ofte du gerne vil modtage mails: fra en gang om dagen til en gang om ugen. Mail og snapshot bruger det sprog, der er angivet i Power BI-indstillinger. Hvis der ikke er defineret noget sprog, bruger Power BI det aktuelle browsersprog.
@@ -65,7 +65,7 @@ Se Sirui konfigurere et mailabonnement for en rapport. Følg derefter den trinvi
    ![](media/service-report-subscribe/power-bi-view-related-screen.png)
 
 ## <a name="subscribe-to-a-report-page"></a>Abonner på en rapportside
-1. Åbn rapporten i [Læsevisning](service-report-open-in-reading-view.md).
+1. Åbn rapporten i [Læsevisning](service-reading-view-and-editing-view.md).
 2. Vælg **Abonner** på den øverste menulinje.
    
    ![](media/service-report-subscribe/power-bi-subscribe-icon.png)
@@ -109,6 +109,7 @@ Et abonnement slutter, hvis Pro-licensen udløber, dashboardet eller rapporten s
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 * Abonnement er på nuværende tidspunkt ikke tilgængeligt for dashboards eller rapporter, der stammer fra indholdspakker eller Power BI-apps. Men der er en alternativ løsning... opret en kopi af rapporten/dashboardet, og føj abonnementer til denne version i stedet.
+* Rapportsideabonnementer er bundet til navnet på siden i rapporten. Hvis du abonnerer på en rapportside og omdøber den, skal du genoprette dit abonnement
 * For mailabonnementer på datasæt med direkte forbindelse får du kun mails, når dataene ændres. Så hvis der finder en opdatering sted, men ingen dataændringer, sender Power BI dig ikke en mail.
 * Mailabonnementer understøtter ikke de fleste [brugerdefinerede visuelle elementer](power-bi-custom-visuals.md).  Den eneste undtagelse er de brugerdefinerede visuelle elementer, der er blevet [certificeret](power-bi-custom-visuals-certified.md).  
 * Mailabonnementer sendes med rapportens tilstande for standardfilter og -udsnit. De ændringer af standarderne, du foretager, inden du abonnerer, vises ikke i mailen.    

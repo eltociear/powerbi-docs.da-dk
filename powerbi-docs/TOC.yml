@@ -350,15 +350,11 @@
           href: service-analyze-in-excel.md
         - name: 'Rediger, hvordan visualiseringer interagerer i en rapport'
           href: service-reports-visual-interactions.md
-        - name: Åbn en Power BI-rapport i Læsevisning
-          href: service-report-open-in-reading-view.md
-        - name: Gå fra Læsevisning til Redigeringsvisning i Power BI
+        - name: Åbn en Power BI-rapport i Læsevisning eller Redigeringsvisning
           href: service-reading-view-and-editing-view.md
         - name: Interager med en rapport i Redigeringsvisning i Power BI
           href: service-interact-with-a-report-in-editing-view.md
-        - name: Interager med en rapport i Læsevisning i Power BI
-          href: service-interact-with-a-report-in-reading-view.md
-        - name: Tips og tricks til oprettelse af rapporter i Power BI service
+        - name: Tips og tricks til oprettelse af rapporter i Power BI-tjenesten
           href: power-bi-reports-tips-and-tricks-for-creating.md
         - name: Analytics-rude
           href: service-analytics-pane.md
@@ -1006,8 +1002,6 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848277'
     - name: Ressourcer
       items:
-        - name: Apiary
-          href: 'https://go.microsoft.com/fwlink/?linkid=848278'
         - name: Integreret JavaScript-demonstration
           href: 'https://go.microsoft.com/fwlink/?linkid=848279'
         - name: Eksempler
@@ -1052,6 +1046,8 @@
           href: report-server/data-sources.md
         - name: Opret forbindelse til datakilder
           href: report-server/connect-data-sources.md
+        - name: 'Få adgang til delte datasæt såsom OData-feeds '
+          href: report-server/access-dataset-odata.md
         - name: Konfigurer planlagt opdatering
           href: report-server/configure-scheduled-refresh.md
         - name: Føj kommentarer til en rapport

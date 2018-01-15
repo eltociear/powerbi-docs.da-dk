@@ -1,6 +1,6 @@
 ---
 title: Find dashboards, rapporter og apps i Power BI-mobilapps
-description: Se, hvor du kan finde dine dashboards og rapporter i Power BI-mobilappsene alt efter, hvor de kom fra.
+description: "Læs om, hvor du kan finde dine dashboards, rapporter og apps i Power BI-mobilappsene, alt efter hvor de kom fra."
 services: powerbi
 documentationcenter: 
 author: maggiesMSFT
@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 01/04/2018
 ms.author: maggies
-ms.openlocfilehash: 6dca860e4711d85b4b53c31c91ba4cba20bbe6e7
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: d63ef5ad9ee59901917fb9bf9c28358c9aa542e8
+ms.sourcegitcommit: 25489cf87c31fc107a5337fa1dd36506897c4bbb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="find-your-dashboards-reports-and-apps-in-the-power-bi-mobile-apps"></a>Find dine dashboards, rapporter og apps i Power BI-mobilapps
 Gælder for:
@@ -49,7 +49,7 @@ Du har muligvis forbindelser til en eller flere Power BI-rapportservere eller SQ
 ## <a name="3-apps"></a>3. Apps
 En app er en samling af dashboards og rapporter, som er bygget specifikt til din organisation for at give adgang til vigtige målinger, der kan hjælpe med hurtigere og nemmere at træffe beslutninger på baggrund af data. I Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) er apps nemme at finde og installere. Når du har installeret dem, kan du se dem fra enhver enhed. 
 
-![Ny navigation i Power BI](media/mobile-apps-find-content-mobile-devices/power-bi-mobile-apps.png)
+![Ny navigation i Power BI](media/mobile-apps-find-content-mobile-devices/power-bi-apps-mobile-apps.png)
 
 Med apps hentes alle de opdateringer, som forfatteren laver, automatisk, og forfatteren styrer også en tidsplan for, hvor ofte dataene opdateres. Du skal ikke selv holde øje med, om du får hentet forfatterens ændringer.
 
@@ -85,5 +85,5 @@ Du kan altid søge efter dit Power BI-indhold fra siderne **Favoritter**, **Apps
 
 ## <a name="next-steps"></a>Næste trin
 * [Introduktion til Power BI](service-get-started.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-communityet](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

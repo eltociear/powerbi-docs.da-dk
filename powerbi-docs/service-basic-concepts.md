@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 6e1e74f26ab1d0a0a59bc33b9d1068807918e18e
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+ms.openlocfilehash: bebd31bbdbd2a571d565c6939199eedd7ecdb049
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – grundlæggende begreber for Power BI-tjenesten
 
@@ -95,7 +95,7 @@ Datasæt kan opdateres, omdøbes, udforskes og fjernes. Brug et datasæt til at 
 ## <a name="reports"></a>Rapporter
 En Power BI-rapport er en eller flere sider med visualiseringer (diagrammer og grafer, f.eks. kurvediagrammer, cirkeldiagrammer, træstrukturdiagrammer og mange, mange flere). Visualiseringer kaldes også ***visuelle elementer***. Alle visualiseringerne i en rapport stammer fra et enkelt datasæt. Rapporter kan oprettes fra bunden i Power BI, kan importeres med dashboards, som kolleger deler med dig, eller kan oprettes, når du opretter forbindelse til datasæt fra Excel, Power BI Desktop, databaser, SaaS-programmer og [apps](service-get-data.md).  Når du f.eks. opretter forbindelse til en Excel-projektmappe, der indeholder Power View-ark, opretter Power BI en rapport, der er baseret på de ark. Og når du opretter forbindelse til et SaaS-program, importerer Power BI en færdigbygget rapport.
 
-Der er to forskellige tilstande, som du kan se og interagere med rapporter i: [Læsevisning](service-report-open-in-reading-view.md) og [Redigeringsvisning](service-interact-with-a-report-in-editing-view.md).  Kun forfatteren af rapporten, medejerne og dem, der har tilladelse, har adgang til alle den udforskning, udformning, oprettelse og delingsfunktionen i ***Redigeringsvisning*** for denne rapport. Og de personer, de deler rapporten med, kan udforske og interagere med rapport ved hjælp af ***Læsevisning***.   
+Der er to forskellige tilstande, som du kan se og interagere med rapporter i: [Læsevisning og Redigeringsvisning](service-reading-view-and-editing-view.md).  Kun forfatteren af rapporten, medejerne og dem, der har tilladelse, har adgang til alle den udforskning, udformning, oprettelse og delingsfunktionen i ***Redigeringsvisning*** for denne rapport. Og de personer, de deler rapporten med, kan udforske og interagere med rapport ved hjælp af ***Læsevisning***.   
 
 Når du åbner et arbejdsområde, vises de tilknyttede rapporter under fanen **Rapporter**. Hver rapport på listen repræsenterer én eller flere siders visualiseringer, der er baseret på et af de underliggende datasæt. Hvis du vil åbne en rapport, skal du blot markere den. 
 

@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 4610523d7c18246394974083c948b7bc018b4da1
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 692bcad734c2c011fc81fedf9fb8870d518cab06
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="view-related-content-in-power-bi-service"></a>Få vist relateret indhold i Power BI-tjenesten
 Ruden **Relateret indhold** viser, hvordan din Power BI-tjenestes indhold – dashboards, rapporter og datasæt – er forbundet.  Og det bliver bedre: Fra denne rude kan du udføre almindelige opgaver som opdatering, omdøbning, generering af indsigter og meget mere. Vælg en relateret rapport eller dashboard, så åbnes den i dit Power BI-arbejdsområde.   
@@ -74,7 +74,7 @@ I et arbejdsområde skal du vælge fanen **Rapporter** og derefter vælge ikonet
 <br>
 **Metode 2**
 
-Åbn rapporten i [Læsevisning](service-interact-with-a-report-in-reading-view.md), og vælg   ![](media/service-related-content/power-bi-view-related-new.png) fra den øverste menulinje.
+Åbn rapporten i [Læsevisning](service-reading-view-and-editing-view.md), og vælg ![](media/service-related-content/power-bi-view-related-new.png) fra den øverste menulinje.
 
 Ruden **Relateret indhold** åbnes. Den viser det tilknyttede datasæt og alle dashboards, der har mindst ét felt, der er fastgjort fra rapporten. Til denne rapport er der visualiseringer, der er fastgjort til to forskellige dashboards.
 
@@ -97,11 +97,11 @@ Her kan du handle direkte på det relaterede indhold.  Vælg f.eks. et dashboard
 
 ## <a name="limitations-and-troubleshooting"></a>Begrænsninger og fejlfinding
 * Hvis din browser ikke har tilstrækkelig plads, kan du ikke se en indstilling for **Få vist relaterede**, men du får stadig vist ikonet Få vist relaterede ![](media/service-related-content/power-bi-view-related-icon-new.png) . Vælg ikonet for at åbne ruden **Relateret indhold**.
-* Hvis du vil åbne Relateret indhold for en rapport, skal du være i [Læsevisning](service-interact-with-a-report-in-reading-view.md).
+* Hvis du vil åbne Relateret indhold for en rapport, skal du være i [Læsevisning](service-reading-view-and-editing-view.md).
 * Relateret indhold er ikke tilgængeligt i Power BI Desktop.
 * Funktionen Relateret indhold fungerer ikke for streamingdatasæt.
 
 ## <a name="next-steps"></a>Næste trin
 * [Introduktion til Power BI-tjenesten](service-get-started.md)
-* Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

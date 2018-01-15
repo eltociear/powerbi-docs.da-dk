@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/29/2017
 ms.author: mihart
-ms.openlocfilehash: 3710b8136a5f8f00d78047d9468dce0d6e68377f
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: da3d4359fab37d1c5ee5f9d214cc5dba0fa9b680
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Få en præsentation af ruden Rapportfiltre
 Denne artikel ser nærmere på ruden Rapportfiltre. Du får vist ruden i Redigeringsvisning og Læsevisning for Power BI-rapporter.
@@ -29,7 +29,7 @@ Denne artikel ser nærmere på ruden Rapportfiltre. Du får vist ruden i Rediger
 Der er mange forskellige måder at filtrere data på i Power BI, og vi anbefaler, at du først læser [Om filtre og fremhævning](power-bi-reports-filters-and-highlighting.md).
 
 ## <a name="working-with-filters"></a>Arbejde med filtre
-Rapporter kan åbnes i [Redigeringsvisning](service-interact-with-a-report-in-editing-view.md) eller [Læsevisning](service-interact-with-a-report-in-reading-view.md). I Redigeringsvisning, kan rapportejere [føje filtre til en rapport](power-bi-report-add-filter.md), og disse filtre gemmes sammen med rapporten. Personer, der får vist rapporten i Læsevisning kan arbejde med filtrene, men de kan ikke gemme filterændringer i rapporten.
+Rapporter kan åbnes i [Redigeringsvisning eller Læsevisning](service-reading-view-and-editing-view.md). I Redigeringsvisning, kan rapportejere [føje filtre til en rapport](power-bi-report-add-filter.md), og disse filtre gemmes sammen med rapporten. Personer, der får vist rapporten i Læsevisning, kan arbejde med filtrene, men de kan ikke gemme filterændringer i rapporten.
 
 ## <a name="filters-in-reading-view"></a>Filtre i Læsevisning
 Når en rapport er åbnet i Læsevisning, vises ruden Filtre i højre side af rapportcanvassen. Hvis du ikke kan se ruden, skal du vælge pilen i øverste højre hjørne for at udvide den.
@@ -122,12 +122,12 @@ Hvis feltværdierne repræsenterer en dato eller et klokkeslæt, kan du angive e
 
 ## <a name="next-steps"></a>Næste trin
 [Filtre og fremhævning i rapporter](power-bi-reports-filters-and-highlighting.md)  
-[Arbejde med filtre og fremhævning i Læsevisning for en rapport](service-interact-with-a-report-in-reading-view.md)  
+[Arbejde med filtre og fremhævning i Læsevisning for en rapport](service-reading-view-and-editing-view.md)  
 [Opret filtre i Redigeringsvisning for en rapport](power-bi-report-add-filter.md)  
 [Rediger, hvordan visualiseringer i rapporter krydsfiltrerer og krydsfremhæver hinanden](service-reports-visual-interactions.md)
 
 Læs mere om [rapporter i Power BI](service-reports.md)  
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/24/2017
 ms.author: mihart
-ms.openlocfilehash: 650e02ea7d6f31fce9e5a0a458c41d6daa3fa9e1
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+ms.openlocfilehash: 57c441c489bf71db4b45bdfb96821b3cc2dcdec3
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Indstillinger for sidevisning i en Power BI-rapport
 Vi forstår, at det er af afgørende betydning at holde dit rapportlayout helt perfekt. Sommetider kan det være udfordrende, fordi du og dine kollegaer får vist disse rapporter på skærme med forskellige højde-bredde-forhold og størrelser. 
@@ -45,7 +45,7 @@ I Power BI-tjenesten skal du åbne en rapport og vælge **Vis** fra den øverste
 
 ![](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
-Indstillinger for Sidevisning er tilgængelige i både [Læsevisning](service-interact-with-a-report-in-reading-view.md) og [Redigeringsvisning](service-interact-with-a-report-in-editing-view.md). I Redigeringsvisning kan ejeren af en rapport tildele indstillinger for sidevisning til individuelle rapportsider, så disse indstillinger gemmes sammen med rapporten. Når en kollega åbner den pågældende rapport i Læsevisning, får vedkommende vist rapportsiderne ved hjælp af ejerens indstillinger.  I Læsevisning kan kolleger ændre *nogle* af indstillingerne for sidevisning, men ændringerne gemmes ikke, når rapporten afsluttes.
+Indstillinger for Sidevisning er tilgængelige i både [Læsevisning og Redigeringsvisning](service-reading-view-and-editing-view.md). I Redigeringsvisning kan ejeren af en rapport tildele indstillinger for sidevisning til individuelle rapportsider, så disse indstillinger gemmes sammen med rapporten. Når en kollega åbner den pågældende rapport i Læsevisning, får vedkommende vist rapportsiderne ved hjælp af ejerens indstillinger.  I Læsevisning kan kolleger ændre *nogle* af indstillingerne for sidevisning, men ændringerne gemmes ikke, når rapporten afsluttes.
 
 ##    <a name="page-view-settings"></a>Indstillinger for Sidelayout
 Det første sæt indstillinger for *Sidelayout* styrer visningen af din rapportside i forhold til browservinduet.  Vælg mellem:

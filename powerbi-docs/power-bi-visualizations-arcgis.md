@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/23/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 511f01494410215451d9f77ff637c7cfce8e89b3
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 6d2c14de83fcea1e9067fd3868b7559c3becce14
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interaktion med ArcGIS-kort i Power BI
 Dette emne skrives fra en persons synspunkt, hvor vedkommende *bruger* et ArcGIS-kort i Power BI-tjenesten, på Desktop eller på mobil. Når en forfatter deler et ArcGIS-kort med dig, kan du interagere med kortet på mange måder.  Hvis du vil vide mere om oprettelse af et ArcGIS-kort, kan du se [ArcGIS-kort efter Esri-selvstudium](power-bi-visualization-arcgis.md).
@@ -62,7 +62,7 @@ ArcGIS Maps for Power BI har tre markeringstilstande. Du kan maksimalt vælge 25
 <br/>
 
 ## <a name="interacting-with-an-arcgis-map"></a>Interaktion med et ArcGIS-kort
-De funktioner, der er tilgængelige for dig, afhænger af om du er *forfatter* (den person, der har udarbejdet kortet) eller *forbruger* (en, som deler et ArcGIS-kort). Hvis du interagerer med et ArcGIS-kort som forbruger (dvs [læsevisning](service-interact-with-a-report-in-reading-view.md)), har du mulighed for at benytte følgende handlinger.
+De funktioner, der er tilgængelige for dig, afhænger af om du er *forfatter* (den person, der har udarbejdet kortet) eller *forbruger* (en, som deler et ArcGIS-kort). Hvis du interagerer med et ArcGIS-kort som forbruger (dvs. [Læsevisning](service-reading-view-and-editing-view.md)), har du mulighed for at benytte følgende handlinger.
 
 * Som det er tilfældet med andre visualiseringstyper, kan du [fastgøre de underliggende data til dashboards](service-dashboard-pin-tile-from-report.md), [få dem vist](service-reports-show-data.md) og/eller [eksportere dem](power-bi-visualization-export-data.md), og du kan se kortet i [fokustilstand](service-focus-mode.md) og [fuld skærm](service-fullscreen-mode.md).    
 * Udvid ruden **Filtre** for at udforske kortet ved hjælp af filtre. Når du lukker rapporten, bliver de filtre, som du har anvendt, ikke gemt.    

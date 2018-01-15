@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/09/2017
-ms.author: asaxton
-ms.openlocfilehash: 4a8ea2acfcfe41192b82addfe52dbe67a0df8088
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.date: 01/04/2018
+ms.author: maghan
+ms.openlocfilehash: 1eaa549bf42c17cd2bd857efd4d50b991e862ea0
+ms.sourcegitcommit: 25489cf87c31fc107a5337fa1dd36506897c4bbb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Oversigt over indholdspakkeprogrammet for Power BI-tjenesten
 En indholdspakke er out-of-box-indhold, der gør det muligt for brugerne øjeblikkeligt at få indsigt i data fra en kilde. En indholdspakke fokuserer sædvanligvis på et bestemt forretningsscenario og giver indsigt i data for en rolle, et domæne eller en arbejdsproces.
@@ -49,6 +49,7 @@ Hvis du vil oprette og indsende en indholdspakke, der skal publiceres i Power BI
 * Du skal have et SaaS-program, der bruges af erhvervsbrugere.
 * Dit SaaS-program skal indeholde brugerdata, der kan visualiseres i Power BI.
 * Dit SaaS-program skal have en API, der er tilgængelig via offentligt internet. API'en skal helst være en REST baseret på et API- eller OData-feed. Power BI-indholdspakker understøtter flere godkendelsestyper som Basisgodkendelse, OAuth 2.0 og API-nøgle. 
+* Dit SaaS-program er godkendt til udgivelse af en indholdspakke. Send din anmodning til pbiservicesapps@microsoft.com. Vi vil vurdere hver indsendelse ud fra relevans og forventet brug. 
 * Signeret partneraftale. Det gør du på [indsendelsestrinnet](template-content-pack-testing.md#submission).
 
 Gennemse afsnittet om [oprettelse](template-content-pack-authoring.md) for at få flere oplysninger om de tekniske krav.

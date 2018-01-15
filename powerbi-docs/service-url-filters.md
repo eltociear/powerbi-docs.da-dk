@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/4/2017
+ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 80a5a668056d1a3f3f2b53600e80f399be4a5e08
-ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
+ms.openlocfilehash: 8a818c26a6f9afd134133464b972091faaad093d
+ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 Når du åbner en rapport i Power BI-tjenesten, har hver side i rapporten sin egen entydige URL-adresse. Hvis du vil filtrere denne rapportside, kan du bruge ruden Filtre på rapportcanvasset.  Eller du kan føje parametre for forespørgselsstrengen til URL-adressen for at filtrere rapporten. Du har måske en rapport, du vil vise til kollegaer, og du vil filtrere den på forhånd for dem. Det kan du f.eks. gøre ved at starte med URL-standardadressen til rapporten, føje filterparametrene til URL-adressen og derefter sende dem hele URL-adressen via mail.
@@ -41,7 +41,7 @@ URL?filter=***Tabel***/***Felt*** eq '***værdi***'
 * I navnene for **Tabel** og **Felt** skelnes der mellem store og små bogstaver, men ikke i **værdi**.
 * Felter, der er skjult i rapportvisningen, kan stadig filtreres.
 * **Værdi** skal omgives af enkelte anførselstegn.
-* Felttypen skal være en streng.
+* Felttypen skal være et tal eller en streng
 * Tabel- og feltnavne må ikke indeholde mellemrum.
 
 Hvis det stadig er forvirrende, kan du fortsætte med at læse og vi undersøger det nærmere.  
@@ -108,7 +108,7 @@ Der kan være nogle tilfælde, hvor dette er nyttigt, når du vil se forskellige
 Der er et par ting, du skal være opmærksom på, når du bruger parametre for forespørgselsstrengen.
 
 * Filtrering af forespørgselsstrengen fungerer ikke sammen med [Publicer på internettet](service-publish-to-web.md) eller Power BI Embedded.   
-* Felttypen skal være en streng.
+* Felttypen skal være et tal eller en streng.
 * Tabel- og feltnavne må ikke indeholde mellemrum.
 
 ## <a name="next-steps"></a>Næste trin
