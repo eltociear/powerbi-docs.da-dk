@@ -12,7 +12,7 @@
           href: service-free-vs-pro.md
         - name: Datakilder til Power BI
           href: service-get-data.md
-        - name: Den nye navigationsoplevelse med Power BI
+        - name: Find rundt i Power BI – navigationsoplevelse
           href: service-the-new-power-bi-experience.md
         - name: 10 tips til at få hjælp
           href: service-tips-for-finding-help.md
@@ -68,7 +68,7 @@
           href: sample-retail-analysis.md
     - name: Almindelige opgaver
       items:
-        - name: Foretrukne dashboards i Power BI
+        - name: 'Foretrukne dashboards, rapporter og apps i Power BI'
           href: service-dashboard-favorite.md
         - name: 'Udskriv et dashboard, udskriv et dashboard-felt, udskriv en rapportside'
           href: service-print.md
@@ -780,7 +780,7 @@
           href: desktop-add-custom-column.md
         - name: Opret responsive visualiseringer i Power BI
           href: desktop-create-responsive-visuals.md
-        - name: Brug indbyggede hierarki-etiketter i Power BI Desktop (Eksempelvisning)
+        - name: Brug indbyggede hierarkinavne i Power BI Desktop (Prøveversion)
           href: desktop-inline-hierarchy-labels.md
         - name: Brug det numeriske interval-udsnitsværktøj
           href: desktop-slicer-numeric-range.md
