@@ -15,20 +15,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 07/19/2017
+ms.date: 01/16/2018
 ms.author: maggies
-ms.openlocfilehash: 60804fabd6bf863b4d7bc642116bb3998b058009
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 6ed6f2898fa99075c6130cd60c083f619b6ba258
+ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Få vist dine data offline i Power BI-mobilapps
 Gælder for:
 
 | ![iPhone](media/mobile-apps-offline-data/iphone-logo-50-px.png) | ![iPad](media/mobile-apps-offline-data/ipad-logo-50-px.png) | ![Android-telefon](media/mobile-apps-offline-data/android-phone-logo-50-px.png) | ![Android-tablet](media/mobile-apps-offline-data/android-tablet-logo-50-px.png) | ![Windows 10](media/mobile-apps-offline-data/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
-| iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-enheder |
+| iPhones |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-enheder |
 
 En fordel ved at få vist Power BI i en mobilapp i stedet for i en mobilbrowser er, at du kan se dine data, selvom du ikke har oprettet forbindelse til et netværk. 
 
