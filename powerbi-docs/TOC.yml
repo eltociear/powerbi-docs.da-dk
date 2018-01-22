@@ -266,26 +266,36 @@
           href: service-data-classification.md
     - name: Stil spørgsmål til dine data
       items:
-        - name: Spørgsmål og svar i Power BI
-          href: service-q-and-a.md
-        - name: Sådan kan du bruge Power BI Spørgsmål og svar
-          href: service-how-to-q-and-a.md
-        - name: 'Selvstudium: Kom i gang med Power BI Spørgsmål og svar'
-          href: power-bi-visualization-introduction-to-q-and-a.md
-        - name: Brug af Spørgsmål og svar med Power BI Gateway – Enterprise data (Eksempelvisning)
-          href: service-q-and-a-direct-query.md
-        - name: Få dine data til at fungere godt med Spørgsmål og svar i Power BI
-          href: service-prepare-data-for-q-and-a.md
-        - name: Introduktion til Cortana til Power BI
-          href: service-cortana-intro.md
-        - name: Aktiver Cortana til Power BI
-          href: service-cortana-enable.md
-        - name: Opret udvalgte spørgsmål til Power BI Spørgsmål og svar
-          href: service-q-and-a-create-featured-questions.md
-        - name: Tips og tricks til at stille spørgsmål med Spørgsmål og svar i Power BI
-          href: service-q-and-a-tips.md
-        - name: Fejlfinding af Cortana
-          href: service-cortana-troubleshoot.md
+        - name: Oversigt
+          items:
+            - name: Spørgsmål og svar i Power BI
+              href: power-bi-q-and-a.md
+            - name: Introduktion til Cortana til Power BI
+              href: service-cortana-intro.md
+        - name: Hurtig introduktion
+          items:
+            - name: Kom i gang vha. spørgsmål og svar om Power BI
+              href: power-bi-visualization-introduction-to-q-and-a.md
+        - name: Selvstudier
+          items:
+            - name: Brug spørgsmål og svar til at oprette visualiseringer og oprette rapporter
+              href: power-bi-tutorial-q-and-a.md
+        - name: Sådan gør du
+          items:
+            - name: Brug af Spørgsmål og svar med Power BI Gateway – Enterprise data (Eksempelvisning)
+              href: service-q-and-a-direct-query.md
+            - name: Få dine data til at fungere godt med Spørgsmål og svar i Power BI
+              href: service-prepare-data-for-q-and-a.md
+            - name: Aktiver Cortana til Power BI
+              href: service-cortana-enable.md
+            - name: Opret udvalgte spørgsmål til Spørgsmål og svar i Power BI
+              href: service-q-and-a-create-featured-questions.md
+        - name: Ressourcer
+          items:
+            - name: Tip og tricks til at stille spørgsmål med Spørgsmål og svar i Power BI
+              href: service-q-and-a-tips.md
+            - name: Fejlfinding af Cortana
+              href: service-cortana-troubleshoot.md
     - name: Del dit arbejde
       items:
         - name: Hvordan kan jeg samarbejde på og dele dashboards og rapporter?
