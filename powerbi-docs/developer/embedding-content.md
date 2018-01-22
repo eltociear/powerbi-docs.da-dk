@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/19/2017
+ms.date: 01/11/2018
 ms.author: asaxton
-ms.openlocfilehash: 76435200df843acc4ba60ebab09633aa8f5c258d
-ms.sourcegitcommit: a658b1c936e382f46a19eeb9cc26016cd7b1d756
+ms.openlocfilehash: e614273c21dd5c222816700f0d42888e661ba1e0
+ms.sourcegitcommit: e623f8e5f715bd40a049b6448ca57b80de998cb4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="embed-your-power-bi-dashboards-reports-and-tiles"></a>Integrer dine Power BI-dashboards, -rapporter og -felter
 
@@ -138,6 +138,9 @@ Hvis du integrerer for dine kunder, skal du gøre følgende.
 * Hvis du bruger en separat lejer til udvikling, skal du sørge for, at dine apparbejdsområder og dine dashboards og rapporter er tilgængelige i produktionsmiljøet. Kontrollér, at du opretter appen i Azure AD for din produktionslejer og tildeler de relevante apptilladelser som angivet under Trin 1.
 * Køb den kapacitet, der opfylder dine behov. Du kan bruge tabellen nedenfor til at få overblik over, hvor meget kapacitet du skal bruge til Power BI Embedded. Du kan finde flere oplysninger i [Hvidbogen om planlægning af analysekapacitet til Embedded](https://aka.ms/pbiewhitepaper). Når du er klar til at købe, kan du gøre det på [Microsoft Azure-portalen](https://portal.azure.com). Du kan finde flere oplysninger om, hvordan du opretter kapacitet til Power BI Embedded, under [Opret kapacitet til Power BI Embedded på Azure-portalen](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 
+> [!IMPORTANT]
+> Da integrerede tokens kun er beregnet til udviklingstest, er antallet af integrerede tokens, der kan genereres fra en Power BI-masterkonto, begrænset. Der [skal købes en kapacitet](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) til integrerede produktionsscenarier. Der er ingen grænse for generering af integrerede tokens, når der er købt en kapacitet.
+
 | Kapacitetsnode | Kerner i alt<br/>*(Backend + frontend)* | Backendkerner | Frontendkerner | Grænser for DirectQuery/liveforbindelser | Maks. antal sidegengivelser i spidstimen |
 | --- | --- | --- | --- | --- | --- |
 | A1 |1 v-kerner |0,5 kerner, 3 GB RAM |0,5 kerner | 5 pr. sekund |1-300 |
@@ -152,6 +155,8 @@ Hvis du integrerer for dine kunder, skal du gøre følgende.
     ![Tildel et apparbejdsområde til en kapacitet](media/embedding-content/powerbi-embedded-premium-capacity.png)
 
 * Udrul den opdaterede app til produktion, og begynd at integrere dine Power BI-dashboards og -rapporter.
+
+
 
 ## <a name="admin-settings"></a>Administratorindstillinger
 

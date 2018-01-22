@@ -15,18 +15,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 01/16/2018
 ms.author: davidi
-ms.openlocfilehash: 70cb015b0f5c4aa952c33c6dd94da5292f9678d7
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 258962cbc9ea60b31676a1bcfb10f7906c6e0f74
+ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Figurkort i Power BI Desktop (prøveversion)
 I Power BI Desktop kan du oprette visualiseringen **Figurkort** for at vise relative sammenligninger mellem områder på et kort ved at anvende forskellige farver for forskellige områder. I modsætning til visualiseringen **Kort** kan **Figurkort** ikke vise nøjagtige geografiske lokationer med datapunkter på et kort. I stedet er det primære formål at vise relative sammenligninger af områder på et kort ved at farvelægge dem forskelligt.
 
-Visualiseringen **Figurkort** er baseret på ESRI/TopoJSON-kort, der kan anvendes med brugerdefinerede kort, som du opretter, for eksempel geografiske kort, arrangement af siddepladser og andet. Muligheden for at oprette brugerdefinerede kort findes ikke i denne prøveversion af **Figurkort**, men brugerdefinerede kort aktiveres i den endelige version, som forventes at komme med den næste månedlige opdatering til Power BI Desktop.
+Visualiseringen **Figurkort** er baseret på ESRI/TopoJSON-kort, der kan anvendes med brugerdefinerede kort, som du opretter, for eksempel geografiske kort, arrangement af siddepladser og andet. Muligheden for at bruge brugerdefinerede kort er ikke tilgængelig i denne evalueringsversion af **Figurkort**.
 
 ## <a name="creating-shape-maps"></a>Opret figurkort
 Du kan afprøve kontrolelementet **Figurkort** med de kort, som medfølger i denne prøveversion, eller du kan bruge dine egne brugerdefinerede kort, så længe de opfylder de krav, der er angivet i afsnittet **Brug brugerdefinerede kort** nedenfor.
@@ -95,8 +95,9 @@ Du kan angive en ny kolonne ved at skrive et nyt kolonnenavn (i den tomme kolonn
 Du skal være opmærksom på nogle få ting i forbindelse med denne prøveversion af **Figurkort**:
 
 * Visualiseringen **Figurkort** er en prøveversion og skal aktiveres i Power BI Desktop. Du kan aktivere **Figurkort** ved at vælge **Fil > Indstillinger > Indstillinger > Funktioner til eksempelvisning** og derefter markere afkrydsningsfeltet **Figurkort**.
-* Du skal også angive værdier i feltet **Værdier** for at klassificeringen **Forklaring** virker korrekt. Vi forventer, at vi har fået udbedret disse småfejl med udgivelsen af **Figurkort**.
-* Når vi udgiver **Figurkort**, vil brugergrænsefladen vise kortnøglerne for det aktuelt valgte kort. I denne prøveversion kan du referere til kortområdenøglerne i tabellerne i afsnittet **Områdenøgler** i denne artikel.
+* Du skal også angive værdier i feltet **Værdier** for at klassificeringen **Forklaring** virker korrekt
+* I den endelige udgave af **Figurkort**, vil brugergrænsefladen vise kortnøglerne for det aktuelt valgte kort (der er ikke angivet nogen dato for den endelige udgave, og **Figurkort** er stadig en prøveversion). I denne prøveversion kan du referere til kortområdenøglerne i tabellerne i afsnittet **Områdenøgler** i denne artikel.
+* Den visuelle fremstilling i **Figurkort** kan maksimal vise op til 1.000 datapunkter.
 
 ## <a name="region-keys"></a>Områdenøgler
 Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurkort**.

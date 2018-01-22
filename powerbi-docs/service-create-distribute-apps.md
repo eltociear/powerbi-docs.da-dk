@@ -14,13 +14,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/11/2017
+ms.date: 01/16/2018
 ms.author: maggies
-ms.openlocfilehash: 27ead0a3104693aff4a6fc3c2641c207ad44dc09
-ms.sourcegitcommit: bb577045145b2e6e5807622a53cefa2d46574618
+ms.openlocfilehash: 89c376451199aec0a6f464f3298df44d468f37d2
+ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Opret og publicer apps med dashboards og rapporter i Power BI
 
@@ -53,12 +53,7 @@ Som udvikler af apps skal du bruge en licens til Power BI Pro. Der er to mulighe
 
 Du kan føje kollegaer til disse arbejdsområder som medlemmer eller administratorer. Alle medlemmer af apparbejdsområdet og administratorer skal have licens til Power BI Pro. I arbejdsområdet kan alle samarbejde i dashboards, rapporter og andre artikler, som du vil publicere til en større målgruppe eller endda hele organisationen. 
 
-Når indholdet er klar, kan du publicere appen. Du kan sende et direkte link til denne større målgruppe, eller de kan finde din app under fanen Apps ved at gå til **Download and explore more apps from AppSource** (Download og udforsk flere apps fra AppSource). Disse personer kan ikke ændre indholdet af appen, men de kan interagere med det enten i Power BI-tjenesten eller en af mobilappsene – og selv filtrere, markere og sortere data. 
-
-### <a name="how-are-app-workspaces-different-from-group-workspaces"></a>Hvordan adskiller apparbejdsområder sig fra gruppearbejdsområder?
-Alle eksisterende gruppearbejdsområder kan fungere som apparbejdsområder, og du kan publicere apps fra begge disse arbejdsområder. Her er ét sted, hvor app- og gruppearbejdsområder er forskellige: Du opretter et apparbejdsområde som et sted, hvor du kan oprette og placere en bestemt app. Der er en en til en-relation mellem appen og indholdet i apparbejdsområdet. Alt i apparbejdsområdet vil foregå i appen, når du publicerer den. 
-
-Nu, hvor du har fået indsigt i apps og apparbejdsområder, kan vi begynde at oprette og publicere en app. 
+Når indholdet er klar, skal du vælge, hvilke dashboards og rapporter, som du ønsker at udgive, og derefter skal du udgive appen. Du kan sende et direkte link til denne større målgruppe, eller de kan finde din app under fanen Apps ved at gå til **Download and explore more apps from AppSource** (Download og udforsk flere apps fra AppSource). Disse personer kan ikke ændre indholdet af appen, men de kan interagere med det enten i Power BI-tjenesten eller en af mobilappsene – og selv filtrere, markere og sortere data. 
 
 ## <a name="create-an-app-workspace"></a>Opret et apparbejdsområde
 [!INCLUDE [powerbi-service-create-app-workspace](./includes/powerbi-service-create-app-workspace.md)]

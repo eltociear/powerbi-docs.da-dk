@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/21/2017
+ms.date: 01/10/2018
 ms.author: davidi
-ms.openlocfilehash: c00281d6b9e8a75df3b08cf1f99d0c9357129816
-ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
+ms.openlocfilehash: a90926d14289ff0a904f29b7b43f70aa2cbc3130
+ms.sourcegitcommit: afd6e9e6f8b192b26486cd04d2cbc9de046911b3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="use-kerberos-for-sso-single-sign-on-from-power-bi-to-on-premises-data-sources"></a>Brug Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø
 Du kan få problemfri forbindelse med enkeltlogon, så Power BI-rapporter og -dashboards kan opdatere fra data i det lokale miljø, ved at konfigurere din datagateway i det lokale miljø med Kerberos. Datagatewayen i det lokale miljø gør det muligt at foretage enkeltlogon (SSO) ved hjælp af DirectQuery, som den bruger til at oprette forbindelse til datakilder i det lokale miljø.
@@ -63,11 +63,15 @@ Der følger flere oplysninger om disse trin:
 
 
 > [!NOTE]
-> Hvis du vil aktivere SSO til SAP HANA, skal du anvende følgende to HANA-specifikke konfigurationsrettelser til SAP:
->    1. Opgrader SAP HANA-serveren med SAP HANA-programrettelse 122.13, som er udgivet af SAP i slutningen af oktober 2017. 
+> Hvis du vil aktivere SSO til SAP HANA, skal du sikre dig, at følgende HANA-specifikke konfigurationsrettelser overholdes til SAP:
+>    1. Kontrollér, at SAP HANA-serveren kører version 2.00.022* eller højere/senere. 
 >    2. Installér SAP's seneste HANA ODBC-driver på gatewaycomputeren.  Minimumversionen er HANA ODBC version 2.00.020.00 fra august 2017.
+>
+> Følgende links til programrettelserne og opgraderinger fra SAP kan være nyttige. Bemærk, at du skal logge på følgende ressourcer ved hjælp af din konto til SAP Support, og SAP kan ændre eller opdatere disse links.
 > 
-
+> * [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386) 
+> * [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324) 
+> * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
 
 
 ## <a name="errors-from-an-insufficient-kerberos-configuration"></a>Fejl fra en utilstrækkelig Kerberos-konfiguration

@@ -16,29 +16,26 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/28/2017
+ms.date: 01/09/2018
 ms.author: mihart
-ms.openlocfilehash: a876b770d52bb114eaff0f299ce1683119b86cd8
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.openlocfilehash: c7a782880c2bc3fe4743d635bbc76dfc41660909
+ms.sourcegitcommit: afd6e9e6f8b192b26486cd04d2cbc9de046911b3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="getting-around-in-power-bi-service"></a>Navigation i Power BI-tjenesten
-
-Hvis du har brugt Power BI-tjenesten i et stykke tid nu, har du sikkert bemærket, at vi har foretaget betydelige ændringer i brugergrænsefladen.  De fleste af disse ændringer påvirker den måde, dit indhold (dashboards, rapporter og datasæt) er organiseret, og de stier (klik) du tager for at udføre opgaver med dette indhold. 
+## <a name="the-left-navigation-pane"></a>Den venstre navigationsrude
 
 ![](media/service-the-new-power-bi-experience/power-bi-navbar-bigger.png)
-
-## <a name="how-do-i"></a>Hvordan kan jeg...
-Til de af jer, der kender den tidligere grænseflade til Power BI-tjenesten, hjælper denne referenceguide dig med at finde ud af, hvordan du kan udføre noget i den nye brugergrænseflade. Vi er klar over, at det i begyndelsen kan være forvirrende, men vi tror på, at efterhånden som du bruger det, vil du opdage mange tidsbesparende fordele ved det nye layout. 
 
 **Oversigtsvejledning**
 
 | Handling | Ny (aktuel) sti |
 | --- | --- | --- |
-| Gør et dashboard til favorit |Arbejdsområde > Dashboards, og vælg stjerneikonet for at gøre det gult |
-| Få vist en liste over dine foretrukne dashboards |Vælg **Favoritter** fra venstre navigationsrude |
+| Vælg et dashboard eller en rapport som favorit |Arbejdsområde > Dashboards eller arbejdsområde > Rapport, og vælg stjerneikonet for at gøre det gult |
+| Vælg en app som favorit | Vælg **Apps** i venstre navigationsrude, og markér stjernen ud for app-navnet
+| Få vist en liste over dine favoritter |Vælg **Favoritter** fra venstre navigationsrude |
 | Få vist en liste over senest besøgte dashboards og rapporter |Vælg **Seneste** fra venstre navigationsrude |
 | Få vist en liste over dashboards, der er blevet delt med dig |Vælg **Delt med mig** fra venstre navigationsrude |
 | Del et dashboard |Åbn et dashboard, og vælg **Del**, eller opret og publicer en app |
@@ -54,62 +51,57 @@ Til de af jer, der kender den tidligere grænseflade til Power BI-tjenesten, hj�
 | Opret en app |Arbejdsområde > Opret apparbejdsområde |
 | Få vist en liste over alle dashboards, rapporter og datasæt, som du ejer |Arbejdsområder > Mit arbejdsområde |
 
-## <a name="why-did-we-change-the-navigation-experience-for-power-bi-service"></a>Hvorfor ændrede vi navigationsoplevelsen til Power BI-tjenesten?
-* strømlinede listerne til dashboards, rapporter, projektmapper og datasæt    
-* tilføjede pop op-menuer med hurtig adgang til foretrukne, nyeste, og valg af arbejdsområde    
-* tilføjede en metode til at identificere relateret indhold til dashboards, rapporter og datasæt    
-* tilføjede et separat indholdsområde til projektmapper    
-* oprettede et separat område til dine foretrukne dashboards    
-* oprettede et separat område til indhold, der er blevet delt med dig 
-* oprettede et separat område til dit seneste indhold  
-* reducerede antallet af klik, der kræves for at udføre opgaver – kombinerede listerne over indhold og de handlinger, du kan udføre for det indhold, på samme skærm. For eksempel det, at skifte mellem dashboards og rapporter.</td></tr></table>
+## <a name="common-tasks"></a>Almindelige opgaver
 
-Se Amanda give dig en rundvisning i den nye navigationsoplevelse, hvor hun forklarer og demonstrerer forbedringerne.  Følg derefter den trinvise vejledning under videoen for selv at udforske det.
+Se Amanda give dig en rundvisning i den nye navigationsoplevelse i Power BI-tjenesten.  Følg derefter den trinvise vejledning under videoen for selv at udforske det.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 
-## <a name="weve-added-some-brand-new-features"></a>Vi har tilføjet nogle helt nye funktioner
-Følg den trinvise vejledning for selv at udforske det.
 
-### <a name="view-content-dashboards-reports-workbooks-datasets-workspaces-apps"></a>Vis indhold (dashboards, rapporter, projektmapper, datasæt, arbejdsområder, apps)
+## <a name="view-content-dashboards-reports-workbooks-datasets-workspaces-apps"></a>Vis indhold (dashboards, rapporter, projektmapper, datasæt, arbejdsområder, apps)
 Lad os starte med at se på, hvordan det grundlæggende indhold (dashboards, rapporter, datasæt, projektmapper) er organiseret. Før dette var alt dit indhold angivet i venstre navigationsrude. Nu har du stadig denne mulighed, men standarden er at vise efter indholdstype i konteksten af et arbejdsområde. Vælg et arbejdsområde i venstre navigationsrude, og fanerne for det tilknyttede indhold (dashboards, rapporter, projektmapper, datasæt) udfylder Power BI-lærredet til højre.
 
 Hvis du har Power BI (gratis), kan du kun se ét arbejdsområde-- **Mit arbejdsområde**.
 
 ![](media/service-the-new-power-bi-experience/power-bi-new-nav.gif)
 
-### <a name="favorite-dashboards"></a>Gør dashboards til favoritter
-Med **Favoritter** kan du hurtigt få adgang til de dashboards, der er vigtigst for dig.  
+### <a name="favorite-dashboards-reports-and-apps"></a>Foretrukne dashboards, rapporter og apps
+Med **Favoritter** kan du hurtigt få adgang til det indhold, der er vigtigst for dig.  
 
-1. Med dashboardet åbent skal du vælge **Favorit** fra det øverste højre hjørne.
+1. Med dashboardet eller rapporten åben skal du vælge **Favorit** i det øverste højre hjørne.
    
    ![](media/service-the-new-power-bi-experience/powerbi-dashboard-favorite.png)
    
    **Favoritter** ændres til **Fjern fra Favoritter**, og stjerneikonet bliver gult.
    
    ![](media/service-the-new-power-bi-experience/power-bi-unfavorite2.png)
-2. Du kan få vist en liste over alle dashboards, du har tilføjet som favoritter, ved i den venstre navigationsrude at vælge pilen til højre for **Favoritter**. Da den venstre navigationsrude er en permanent funktion i Power BI-tjenesten, har du adgang til denne liste overalt i Power BI-tjenesten.
+
+2. Til en app skal du vælge **Apps** i venstre navigationsrude, holde musen over appen, og vælg stjernen for at angive den som en favorit.
+
+2. Du kan få vist en liste over alt det indhold, du har tilføjet som favoritter, ved i den venstre navigationsrude at vælge pilen til højre for **Favoritter**. Da den venstre navigationsrude er en permanent funktion i Power BI-tjenesten, har du adgang til denne liste overalt i Power BI-tjenesten.
    
     ![](media/service-the-new-power-bi-experience/power-bi-favorite-flyout.png)
    
-    Herfra kan du vælge et dashboard for at åbne det.
+    Herfra kan du vælge et dashboard, en rapport eller en app, du vil åbne.
+
 3. For at åbne ruden **Favoritter** i den venstre navigationsrude skal du vælge **Favoritter** eller vælge ikonet Favoritter ![](media/service-the-new-power-bi-experience/powerbi-star-icon.png).
    
    ![](media/service-the-new-power-bi-experience/power-bi-favorites-screen.png)
    
-   Herfra kan du vælge et dashboard for at åbne det, se, hvem der ejer et dashboard, fjerne et dashboard fra favoritter eller dele et dashboard med kolleger.
-4. En anden måde at markere et dashboard som en favorit er fra fanen **Dashboards**.  Åbn kun det arbejdsområde, der indeholder dashboardet, og vælg stjerneikonet til venstre for navnet på dashboardet.
+   Her kan du åbne, finde indholdet, fjerne fra favoritter eller dele indhold med kollegaer.
+
+1. En anden måde at markere et dashboard eller en rapport som en favorit er fra fanen **Dashboards** eller **Rapporter** i arbejdsområdet.  Du skal blot åbne arbejdsområdet for at få vist indholdsvisningen og markere stjerneikonet til venstre for navnet.
    
    ![](media/service-the-new-power-bi-experience/power-bi-favorite-dashboard-new.png)
 
-Hvis du vil vide mere, kan du se [Gør et dashboard til favorit](service-dashboard-favorite.md)
+Du kan få flere oplysninger i [Favoritter](service-dashboard-favorite.md)
 
 ### <a name="recents"></a>Seneste
-Du kan hurtigt få adgang til rapporter og dashboards, som du har fået adgang til for nylig, ved at gå til ruden **Seneste**. Dette omfatter indhold fra alle dine arbejdsområder.
+Du kan hurtigt få adgang til det indhold, som du har fået adgang til for nylig, ved at gå til ruden **Seneste**. Dette omfatter indhold fra alle dine arbejdsområder.
 
   ![](media/service-the-new-power-bi-experience/power-bi-recent-new.png)
 
-På samme måde som med Favoritter kan du hurtigt få adgang til dine Seneste overalt i Power BI-tjenesten ved at vælge pilen ud for **Seneste** i venstre navigationsrude.
+På samme måde som med Favoritter kan du hurtigt få adgang til dine seneste opslag overalt i Power BI-tjenesten ved at vælge pilen ud for **Seneste** i venstre navigationsrude.
 
   ![](media/service-the-new-power-bi-experience/power-bi-recent-flyout-new.png)
 
@@ -123,7 +115,7 @@ En app er en samling af dashboards og rapporter, der er bygget til at levere vig
 Du kan få mere at vide i **Apparbejdsområder** (nedenfor) og [Hvad er Power BI-apps](service-install-use-apps.md).
 
 ### <a name="shared-with-me"></a>Delt med mig
-**Delt med mig** er placeringen for alle dashboards, som kollegaer har delt med dig.  Filtrer efter dashboardets ejer, brug søgefeltet til at finde ud af, hvad der er relevant, og sortér elementerne efter dato.  Og for delt indhold, som du ofte besøger, er det endnu nemmere at angive dem som favoritter direkte fra visningen **Delt med mig**.
+**Delt med mig** er placeringen for alt indhold, som kollegaer har delt med dig.  Filtrer efter dashboardets ejer, brug søgefeltet til at finde ud af, hvad der er relevant, og sortér elementerne efter dato.  Og for delt indhold, som du ofte besøger, er det endnu nemmere at angive dem som favoritter direkte fra visningen **Delt med mig**.
 
 ![](media/service-the-new-power-bi-experience/power-bi-shared-new.png)
 
@@ -153,7 +145,7 @@ Skift arbejdsområder ved at vælge **Arbejdsområder** i venstre navigationsrud
 ![](media/service-the-new-power-bi-experience/power-bi-workspacesnew2.png)
 
 ### <a name="search-and-sort-content"></a>Søg og sortér indholdet
-Den nye indholdsvisning gør det lettere at søge efter, filtrere og sortere dit indhold. Hvis du vil søge efter et dashboard, en rapport eller en projektmappe, skal du skrive i søgeområdet. Power BI filtrerer kun det indhold, der har søgestrengen som en del af navnet.
+Indholdsvisningen gør det lettere at søge efter, filtrere og sortere dit indhold. Hvis du vil søge efter et dashboard, en rapport eller en projektmappe, skal du skrive i søgeområdet. Power BI filtrerer kun det indhold, der har søgestrengen som en del af navnet.
 
 ![](media/service-the-new-power-bi-experience/power-bi-search-sortnew.png)
 
@@ -164,5 +156,7 @@ Du kan også sortere indholdet efter navn eller ejer.
 Hvis du vil vide mere, kan du se [Power BI-navigation: søg, sortér, filtrer](service-navigation-search-filter-sort.md)
 
 ## <a name="next-steps"></a>Næste trin
+[Grundlæggende begreber](service-basic-concepts.md) i Power BI-tjenesten    
+
 Har du spørgsmål eller feedback? [Besøg Power BI-communityforummet](http://community.powerbi.com/t5/Navigation-Preview-Forum/bd-p/NavigationPreview)
 

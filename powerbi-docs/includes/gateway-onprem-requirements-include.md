@@ -1,7 +1,7 @@
 ## <a name="requirements"></a>Krav
 **Minimumskrav:**
 
-* .NET 4.5 Framework
+* .NET 4.6 Framework
 * 64-bit-version af Windows 7 / Windows Server 2008 R2 (eller nyere)
 
 **Anbefalet:**

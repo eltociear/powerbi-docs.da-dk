@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/11/2017
 ms.author: tankas
-ms.openlocfilehash: ced415662c2dc39b6491cb79d121f3cd77719fe4
-ms.sourcegitcommit: be55922d7f43f458aea0160ec8fdfb1a0b5a0c00
+ms.openlocfilehash: deff79bba0f7f191a8343629300c725f3150e509
+ms.sourcegitcommit: a44c29bbc220ecb1ed80810cb1e7df0db8ea611a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -32,6 +32,13 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
 ## <a name="october-2017"></a>Oktober 2017
 
 - **Power BI-rapportserver**
+    - *Version 1.1.6582.41691 (Build 14.0.600.442), udgivet: 10. januar 2018*
+        - Sikkerhedsopdateringer
+        - Fejlrettelser
+            - Rettelse til Model.GetParameters, der returnerer 400
+            - Rettelse til angivelsen af delte datasæt til eksisterende sideinddelte rapporter (RDL)
+            - Rettelse til ExecutionNotFoundException, når du eksporterer en rapport med forskellige parameterværdier til PDF-fil
+
     - *Version 1.1.6551.5155 (Build 14.0.600.438) udgivet: 11. december 2017*
         - Fejlrettelser
             - Der kunne ikke gemmes data efter opdatering til bestemte Power BI Desktop-rapporter.
@@ -61,6 +68,9 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
             - Forbedringer af Hjælp til handicappede
 
 - **Power BI Desktop (optimeret til Power BI-rapportserver)**
+    - *Version: 2.51.4885.2501 (oktober 2017), udgivet: 10. januar 2018*
+        - Sikkerhedsopdateringer
+
     - *Version: 2.51.4885.1423 (oktober 2017), udgivet: 17. november 2017*
         - Fejlrettelser
             - Rettelse af 32-bit Power BI Desktop, som ikke kunne køre på x86-operativsystemer
@@ -74,6 +84,9 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
 ## <a name="june-2017"></a>Juni 2017
 
 - **Power BI-rapportserver**
+    - *Build 14.0.600.309, udgivet: 10. januar 2018*
+        - Sikkerhedsopdateringer
+
     - *Build 14.0.600.305, udgivet: 19. september 2017*  
         - Fejlrettelser
             - Opdatering til den seneste [Bing Maps Web Control](https://msdn.microsoft.com/library/mt712542.aspx)
@@ -87,6 +100,10 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
 
     - *Build 14.0.600.271, udgivet: 12. juni 2017*
         - Første udgivelse af Power BI-rapportserver
+
+- **Power BI Desktop (optimeret til Power BI-rapportserver)**
+    - *Version: 2.47.4766.4901 (juni 2017), udgivet 10. januar 2018*
+        - Sikkerhedsopdateringer
 
 ## <a name="next-steps"></a>Næste trin
 
