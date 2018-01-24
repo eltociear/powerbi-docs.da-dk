@@ -126,7 +126,7 @@ Hvis en dato f.eks. bruges i en subtraktionshandling med en anden datatype, konv
 
 **Multiplikation(*)**
 
-| Operator(*) | INTEGER | CURRENCY | REAL | Date/time |
+| Operator(\*) | INTEGER | CURRENCY | REAL | Date/time |
 | --- | --- | --- | --- | --- |
 | INTEGER |INTEGER |CURRENCY |REAL |INTEGER |
 | CURRENCY |CURRENCY |REAL |CURRENCY |CURRENCY |
