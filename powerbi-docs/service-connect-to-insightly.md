@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: 822d38dc84ca4473bae64339b8dafc1414bc856b
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: d506b45cf2a5c41ab1a6d05edb233c214606a316
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-insightly-with-power-bi"></a>Opret forbindelse til Insightly med Power BI
 Visualiser og del dine Insightly CRM-data i Power BI med Insightly-indholdspakken. Opret forbindelse til Power BI vha. din Insightly API-nøgle for at få vist og oprette rapporter og dashboards på baggrund af dine CRM-data. Med Power BI kan du analysere dine data på helt nye måder, oprette effektive grafer og diagrammer og få vist kontakter, kundeemner og organisationer på et kort.
@@ -47,8 +47,8 @@ Opret forbindelse til [Insightly-indholdspakken](https://app.powerbi.com/getdata
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](service-q-and-a.md) øverst i dashboardet
-* [Rediger felterne](service-dashboard-edit-tile.md) i dashboardet.
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
 * [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
 * Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
 
@@ -87,7 +87,7 @@ Dine data importeres via Insightly-API'en, som indeholder en daglig grænse, der
 De angivne rapporter bruger standardfelter fra Insightly og indeholder muligvis ikke din tilpasninger. Rediger rapporten for at få vist alle de tilgængelige felter.
 
 ## <a name="next-steps"></a>Næste trin
-[Introduktion til Power BI](service-get-started.md)
+[Kom i gang med Power BI](service-get-started.md)
 
 [Hent data i Power BI](service-get-data.md)
 

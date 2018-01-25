@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: ec225639ed23f57735081d556c1ac3283dc4d691
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: c2d8e22758e3d28a3851b99140876ff1646a6be0
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-troux-for-power-bi"></a>Opret forbindelse til Troux til Power BI
 Med Troux-indholdspakken kan du visualisere dit Enterprise Architecture-lager på helt nye måder direkte i Power BI. Indholdspakken giver dig indsigt i din virksomheds egenskaber, de programmer, der leverer disse egenskaber, og de teknologier, der understøtter disse programmer, som kan tilpasses fuldt ud ved hjælp af Power BI.
@@ -44,14 +44,14 @@ Opret forbindelse til [Troux-indholdspakken](https://app.powerbi.com/getdata/ser
 5. Som **Godkendelsesmetode** skal du vælge **Grundlæggende** og angive dit brugernavn og din adgangskode (der skelnes mellem små og store bogstaver), og derefter skal du vælge **Log på**.
    
     ![](media/service-connect-to-troux/creds.png)
-6. Efter godkendelsen starter importprocessen automatisk. Når processen er færdig, vises et nyt dashboard samt rapport og model i navigationsruden. Vælg dashboardet for at få vist dine importerede data.
+6. Efter godkendelsen starter importprocessen automatisk. Når processen er fuldført, vises et nyt dashboard samt en ny rapport og model i navigationsruden. Vælg dashboardet for at få vist de importerede data.
    
      ![](media/service-connect-to-troux/dashboard.png)
 
 **Hvad nu?**
 
-* Prøv at [stille et spørgsmål i feltet Spørgsmål og svar](service-q-and-a.md) øverst i dashboardet
-* [Rediger felterne](service-dashboard-edit-tile.md) i dashboardet.
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
 * [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
 * Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
 
@@ -67,7 +67,7 @@ Dit kundeplejeteam kan give dig den entydige URL-adresse til dit Troux OData-fee
 Hvis du får vist en timeoutfejl, når du har angivet legitimationsoplysninger, skal du prøve at oprette forbindelse igen.
 
 ## <a name="next-steps"></a>Næste trin
-[Kom i gang i Power BI](service-get-started.md)
+[Kom i gang med Power BI](service-get-started.md)
 
 [Hent data i Power BI](service-get-data.md)
 

@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/01/2017
 ms.author: sirsu
-ms.openlocfilehash: 8b03eb9659d4f2c984200db16daa6de017e73de7
-ms.sourcegitcommit: 7517c068db806f12bb0b953e9a1bd4249ca12da5
+ms.openlocfilehash: 87233cfe4290546478899d81d7a39714c75963eb
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
 Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner i **Power BI-tjenesten**. Du kan finde relaterede oplysninger om nyheder under:
@@ -470,7 +470,7 @@ Se vores [blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/13/power-bi-week
 
 **6. oktober 2015**
 
-* Med Spørgsmål og svar i Power BI kan du udforske dine data ved hjælp af enkle, intuitive spørgsmål og få svar i form af interaktive diagrammer og grafer. I denne udgivelse har vi tilføjet en funktion, der kan hjælpe dig med at komme i gang med Spørgsmål og svar i Power BI, selvom du ikke ved noget om dataene. For at komme i gang med dette skal du [gå til et hvilket som helst dashboard og klikke på linket "Sådan spørger du" i nærheden af spørgsmålsfeltet for Spørgsmål og svar](service-how-to-q-and-a.md). Power BI giver dig en række forslag, der er baseret på dine data.
+* Med Spørgsmål og svar i Power BI kan du udforske dine data ved hjælp af enkle, intuitive spørgsmål og få svar i form af interaktive diagrammer og grafer. I denne udgivelse har vi tilføjet en funktion, der kan hjælpe dig med at komme i gang med Spørgsmål og svar i Power BI, selvom du ikke ved noget om dataene. For at komme i gang med dette skal du [gå til et hvilket som helst dashboard og klikke på linket "Sådan spørger du" i nærheden af spørgsmålsfeltet for Spørgsmål og svar](power-bi-tutorial-q-and-a.md). Power BI giver dig en række forslag, der er baseret på dine data.
 * For to uger siden introducerede vi understøttelse af indsætning af figurer på rapportlærredet i Power BI Desktop. I denne uge kan vi med glæde meddele, at du nu kan tilføje figurer på dit rapportlærred, når du opretter og/eller redigerer rapporter i Power BI-webappen.
 * Vi har tilføjet muligheden for at slå meddelelser via mail fra, når du deler et dashboard. Du skal blot fjerne markeringen i afkrydsningsfeltet "Send meddelelse via mail til modtagere" i Power BI-dialogboksen til deling. Du får vist en URL-adresse – kopiér og del denne URL-adresse med dine kollegaer for at give dem adgang til dashboardet.
 * Microsoft Dynamics NAV er en forretningsstyringsløsning til små og mellemstore organisationer. Den giver kunderne en komplet løsning til deres virksomheder, hvor de får større kontrol over deres økonomi og forretningsprocesser. Power BI-indholdspakken indeholder køreklare rapporter til Dynamics NAV-brugere, f.eks. for omsætning og resultat, pipeline af salgsmuligheder, lønsomhed og meget mere. Disse metrikværdier er organiseret på et dashboard, der kan tilpasses fuldt ud, så du nemt kan oprette forbindelse og med det samme begynde at udforske dine data.

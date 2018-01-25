@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 01/19/2018
 ms.author: davidi
-ms.openlocfilehash: 053afc2c085a045c3fe0c8ce70a541d132966640
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: 647b042d10768f4ecbb3083384efa9000202a11f
+ms.sourcegitcommit: a973bc6adc88507932e7e1535a74208e3842f5c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 01/20/2018
 ---
 # <a name="data-refresh-in-power-bi"></a>Opdatering af data i Power BI
 At sørge for altid at have de nyeste data er ofte kritisk for at kunne tage de rigtige beslutninger. Du har muligvis allerede brugt Hent data i Power BI til at oprette forbindelse til og overføre data, så du kunne oprette nogle rapporter og et dashboard. Nu skal du sikre dig, at dataene virkelig er de nyeste og bedste.
@@ -112,7 +112,7 @@ Hvis du lagrer dine filer på OneDrive eller SharePoint Online og opretter forbi
 | Hent data (på båndet) bruges til at oprette forbindelse til og sende en forespørgsel om data fra alle viste onlinedatakilder. |Nej |Ja |Nej (se nedenfor) |
 | Hent data bruges til at oprette forbindelse til og udforske en live-Analysis Services-database. |Ja |Nej |Ja |
 | Hent data bruges til at oprette forbindelse til og udforske en understøttet DirectQuery-datakilde i det lokale miljø. |Ja |Nej |Ja |
-| Hent data bruges til at oprette forbindelse til og sende forespørgsler om data fra en Azure SQL Database, Azure SQL Data Warehouse, Azure HDInsight Spark. |Ja (én gang i timen) |Nej |Nej |
+| Hent data bruges til at oprette forbindelse til og sende forespørgsler om data fra en Azure SQL Database, Azure SQL Data Warehouse, Azure HDInsight Spark. |Ja |Ja |Nej |
 | Hent data bruges til at oprette forbindelse til og sende en forespørgsel om data fra alle viste datakilder i det lokale miljø undtagen Hadoop-filer (HDFS) og Microsoft Exchange. |Nej |Ja |Ja |
 
 > [!NOTE]

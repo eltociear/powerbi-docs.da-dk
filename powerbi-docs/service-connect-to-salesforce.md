@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: 6998f273a7e40cae2c7a50f043f79eec540b4789
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 0a001bec56caf5a8c125afef53b1fbaa6f712eee
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Opret forbindelse til Salesforce med Power BI
 Med Power BI kan du kan nemt oprette forbindelse til din konto på Salesforce.com. Når du opretter denne forbindelse, hentes dine data, du får automatisk et dashboard og rapporter baseret på dine data.
@@ -66,7 +66,7 @@ Du kan ændre dette dashboard for at få vist dine data, som du ønsker. Du kan 
 
 **Hvad nu?**
 
-* Prøv at [stille et spørgsmål i feltet Spørgsmål og svar](service-q-and-a.md) øverst i dashboardet
+* Prøv at [stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboardet
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboardet
 * [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport
 * Dit datasæt vil være programsat til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**

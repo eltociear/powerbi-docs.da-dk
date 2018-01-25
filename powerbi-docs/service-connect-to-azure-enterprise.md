@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: 39c3fd776e3aed821c7c10c1e905d7400ca64efd
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 9e19246d6caa8111ab4e61b5dc8fd6207ea1099e
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-microsoft-azure-enterprise-with-power-bi"></a>Opret forbindelse til Microsoft Azure Enterprise med Power BI
 Udforsk og overvåg dine Microsoft Azure Enterprise-data i Power BI med Power BI-indholdspakken. Dataene opdateres automatisk én gang dagligt.
@@ -41,17 +41,17 @@ Opret forbindelse til den [Microsoft Azure Enterprise-indholdspakken](https://ap
 4. Angiv URL-adressen til Azure-miljøet, det antal måneder, du vil importere data for, og dit Azure Enterprise-tilmeldingsnummer. URL-adressen til dit Azure-miljø er `https://ea.azure.com` eller `https://ea.windowsazure.cn`. Se detaljer om, hvordan du [finder de pågældende parametre](#FindingParams), nedenfor.
    
     ![](media/service-connect-to-azure-enterprise/params.png)
-5. Angiv din adgangsnøgle for at oprette forbindelse. Du kan finde nøglen til din tilmelding i din Azure EA-portal.
+5. Angiv din Access-nøgle for at oprette forbindelse. Du finder nøglen til tilmelding på Azure EA Portal.
    
     ![](media/service-connect-to-azure-enterprise/creds.png)
-6. Importprocessen starter automatisk. Når processen er færdig, vises et nyt dashboard samt rapport og model i navigationsruden. Vælg dashboardet for at få vist dine importerede data.
+6. Importprocessen starter automatisk. Når processen er fuldført, vises et nyt dashboard samt en ny rapport og model i navigationsruden. Vælg dashboardet for at få vist de importerede data.
    
    ![](media/service-connect-to-azure-enterprise/dashboard.png)
 
 **Hvad nu?**
 
-* Prøv at [stille et spørgsmål i feltet Spørgsmål og svar](service-q-and-a.md) øverst i dashboardet
-* [Rediger felterne](service-dashboard-edit-tile.md) i dashboardet.
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
 * [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
 * Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
 
@@ -59,11 +59,11 @@ Opret forbindelse til den [Microsoft Azure Enterprise-indholdspakken](https://ap
 Azure Enterprise-indholdspakken indeholder månedlige rapporteringsdata for det interval af måneder, du angiver under forbindelsesflowet. Intervallet er et fleksibelt vindue, så de datoer, der medtages, bliver opdateret, når datasættet opdateres.
 
 ## <a name="system-requirements"></a>Systemkrav
-Indholdspakken kræver adgang til virksomhedsfunktioner på Azure-portalen.
+Indholdspakken kræver adgang til virksomhedsfunktioner på Azure Portal.
 
 <a name="FindingParams"></a>
 
-## <a name="finding-parameters"></a>Sådan finder du parametre
+## <a name="finding-parameters"></a>Søg efter parametre
 Power BI-rapportering er tilgængeligt for EA-kunder af typen Direct, Partner og Indirect, som kan få vist faktureringsoplysninger. Læs nedenfor, hvis du vil have oplysninger om at finde hver af de værdier, der forventes i forbindelsesflowet.
 
 **URL-adresse til Azure-miljøet**
@@ -74,7 +74,7 @@ Power BI-rapportering er tilgængeligt for EA-kunder af typen Direct, Partner og
 
 **Antal måneder**
 
-* Dette skal være et tal mellem 1-36, der repræsenterer det antal måneder (fra i dag) du vil importere data for.
+* Dette skal være et tal mellem 1-36, der repræsenterer det antal måneder (fra i dag), du vil importere data for.
 
 **Tilmeldingsnummer**
 
@@ -82,9 +82,9 @@ Power BI-rapportering er tilgængeligt for EA-kunder af typen Direct, Partner og
   
     ![](media/service-connect-to-azure-enterprise/params2.png)
 
-**Adgangsnøgle**
+**Access-nøgle**
 
-* Du kan finde din nøgle på Azure Enterprise Portal, under "Download Usage" > "API Access Key"
+* Du finder din nøgle på Azure Enterprise Portal under "Download Usage" > "API Access Key"
   
     ![](media/service-connect-to-azure-enterprise/creds2.png)
 
@@ -93,7 +93,7 @@ Power BI-rapportering er tilgængeligt for EA-kunder af typen Direct, Partner og
 * Hvis du vil have yderligere hjælp til at konfigurere Azure Enterprise Power BI-pakken, skal du logge på Azure Enterprise Portal for at få vist API-hjælpefilen under "Help" og yderligere oplysninger under Reports -> Download Usage -> API Access Key.
 
 ## <a name="next-steps"></a>Næste trin
-[Kom i gang i Power BI](service-get-started.md)
+[Kom i gang med Power BI](service-get-started.md)
 
 [Hent data i Power BI](service-get-data.md)
 

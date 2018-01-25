@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 05/31/2017
+ms.date: 01/18/2018
 ms.author: mihart
-ms.openlocfilehash: 81f7b4a68b66a2bfbdf285007ff4ff636c326a6c
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.openlocfilehash: 800808a8c09166b8a5b1389b9a54fb57cfa13b12
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="dashboards-in-power-bi-service"></a>Dashboards i Power BI-tjenesten
 
@@ -50,19 +50,19 @@ Et dashboard er ikke kun et flot billede. Det er yderst interaktivt og kan i vid
 
 | **Egenskab** | **Dashboards** | **Rapporter** |
 | --- | --- | --- |
-| Sider |Én side |En eller flere sider |
-| Datakilder |En eller flere rapporter og et eller flere datasæt pr. dashboard |Et enkelt datasæt pr. rapport |
-| Tilgængelig i Power BI Desktop |Nej |Ja, der kan oprettes og vises rapporter i Desktop. |
-| Fastgørelse |Eksisterende visualiseringer (felter) kan kun fastgøres fra det aktuelle dashboard til dine andre dashboards. |Visualiseringer kan fastgøres (som felter) til et hvilket som helst af dine dashboards. Hele rapportsider kan fastgøres til et hvilket som helst af dine dashboards. |
-| Abonnement |Der kan ikke abonneres på et dashboard. |Der kan abonneres på rapportsider. |
-| Filtrering |Der kan ikke filtreres eller laves udsnit. |Der er mange forskellige måder at filtrere, fremhæve og lave udsnit på. |
-| Angivelse af beskeder |Der kan oprettes beskeder, som sendes via mail, når visse betingelser er opfyldt. |Nej |
-| Udvalgt |Ét dashboard kan angives som dit "udvalgte" dashboard. |Der kan oprettes en udvalgt rapport. |
+| Sider |Én side |Én eller flere sider |
+| Datakilder |Én eller flere rapporter og et eller flere datasæt pr. dashboard |Et enkelt datasæt pr. rapport |
+| Tilgængelig i Power BI Desktop |Nej |Ja, der kan oprettes og vises rapporter i Desktop |
+| Fastgørelse |Eksisterende visualiseringer (felter) kan kun fastgøres fra det aktuelle dashboard til dine andre dashboards |Visualiseringer kan fastgøres (som felter) til et hvilket som helst af dine dashboards. Hele rapportsider kan fastgøres til et hvilket som helst af dine dashboards. |
+| Abonnement |Der kan ikke abonneres på et dashboard |Der kan abonneres på rapportsider |
+| Filtrering |Der kan ikke filtreres eller laves udsnit |Der er mange forskellige måder at filtrere, fremhæve og lave udsnit på |
+| Angivelse af beskeder |Der kan oprettes beskeder, som sendes via mail, når visse betingelser er opfyldt |Nej |
+| Udvalgt |Ét dashboard kan angives som dit "udvalgte" dashboard |Der kan ikke oprettes en udvalgt rapport |
 | Forespørgsler på et naturligt sprog |Tilgængelig via dashboard |Ikke tilgængelig via rapporter |
-| Kan visualiseringstypen ændres? |Nej. Faktisk så opdateres en fastgjort visualisering på dashboardet ikke, hvis en rapportejer ændrer visualiseringstypen i rapporten. |Ja |
+| Kan visualiseringstypen ændres? |Nej. Faktisk opdateres en fastgjort visualisering på dashboardet ikke, hvis en rapportejer ændrer visualiseringstypen i rapporten |Ja |
 | Kan underliggende datasættabeller og felter ses? |Nej. Data kan eksporteres, men tabeller og felter på selve dashboardet kan ikke ses. |Ja. Datasættabeller, felter og værdier kan ses. |
-| Oprettelse af visualiseringer |Begrænset til tilføjelse af knapper til dashboardet ved hjælp af "Tilføj felt". |Ved hjælp af Redigeringstilladelser kan mange forskellige typer visualiseringer oprettes, brugerdefinerede visualiseringer kan tilføjes, visualiseringer kan redigeres og meget mere. |
-| Tilpasning |Der kan foretages handlinger for visualiseringerne (felterne), f.eks. flytte og arrangere, tilpasse størrelsen, tilføje links, omdøbe, slette og få vist hele skærmen. Men selve dataene og visualiseringerne er skrivebeskyttede. |I Læsevisning kan du publicere, integrere, filtrere, eksportere, downloade som .pbix, få vist relateret indhold, generere QR-koder og analysere i Excel med mere.  I Redigeringsvisning kan du foretage alle de ovennævnte handlinger og meget mere. |
+| Oprettelse af visualiseringer |Begrænset til tilføjelse af knapper til dashboardet ved hjælp af "Tilføj felt" |Mange forskellige typer visualiseringer kan oprettes, brugerdefinerede visualiseringer kan tilføjes, visualiseringer kan redigeres m.m. ved hjælp af Redigeringstilladelser |
+| Tilpasning |Der kan foretages handlinger for visualiseringerne (felterne), f.eks. flytte og arrangere, tilpasse størrelsen, tilføje links, omdøbe, slette og få vist hele skærmen. Men selve dataene og visualiseringerne er skrivebeskyttede. |I Læsevisning kan du publicere, integrere, filtrere, eksportere, downloade som .pbix, få vist relateret indhold, generere QR-koder og analysere i Excel m.m.  I Redigeringsvisning kan du foretage alle de ovennævnte handlinger og meget mere. |
 
 ## <a name="dashboard-creators-and-dashboard-consumers"></a>Dashboardforfattere og dashboardbrugere
 Afhængigt af din rolle kan du være en person, der opretter dashboards til egen brug eller til at dele med kolleger. Du vil måske lære, hvordan du opretter og deler dashboards. Eller du kan være en person, der modtager dashboards fra andre. Du vil måske lære, hvordan du forstår og interagerer med dashboardet.
@@ -82,7 +82,7 @@ Power BI Pro er påkrævet både for at dele et dashboard og få vist et delt da
 * Få mere at vide om [dashboardfelter](service-dashboard-tiles.md), og hvad der sker, når du vælger et.
 * Kan du ikke lide et dashboards udseende?  Du kan [tilpasse størrelsen, flytte og omdøbe felterne](service-dashboard-edit-tile.md).
 * Vil du holde øje med et enkelt dashboardfelt og modtage en mail, når den når en bestemt grænse? [Opret beskeder for felterne](service-set-data-alerts.md).
-* Stil spørgsmål om dit dashboard. Få mere at vide om, hvordan du bruger [Spørgsmål og svar i Power BI](service-how-to-q-and-a.md) til at stille et spørgsmål om dine data og få svar i form af en visualisering.
+* Stil spørgsmål om dit dashboard. Få mere at vide om, hvordan du bruger [Spørgsmål og svar i Power BI](power-bi-tutorial-q-and-a.md) til at stille et spørgsmål om dine data og få svar i form af en visualisering.
 
 > [!TIP]
 > Hvis du ikke kunne finde det, du ledte efter her, kan du bruge indholdsfortegnelsen til venstre.

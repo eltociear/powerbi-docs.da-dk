@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: 97a799ade391d0691ff7ecd4c362ce225ffa0ab9
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: e13abe206b4f46726e196a3423bd1fad21391be5
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-sql-sentry-with-power-bi"></a>Opret forbindelse til SQL Sentry med Power BI
 Det er nemt at analysere dine ydelsesdata indsamlet af SQL Sentry med Power BI. Power BI henter dine data og opretter derefter et standarddashboard og relaterede rapporter baseret på disse data.
@@ -35,7 +35,7 @@ Opret forbindelse til [SQL Sentry-indholdspakken](https://app.powerbi.com/groups
 1. Vælg **Hent data** nederst i venstre navigationsrude.
    
    ![](media/service-connect-to-sql-sentry/pbi_getdata.png)
-2. Vælg **Hent** i feltet **Tjenester**.
+2. Markér **Hent** i feltet **Tjenester**.
    
    ![](media/service-connect-to-sql-sentry/pbi_getservices.png) 
 3. Vælg **SQL Sentry  \> Hent**.
@@ -64,12 +64,12 @@ Opret forbindelse til [SQL Sentry-indholdspakken](https://app.powerbi.com/groups
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](service-q-and-a.md) øverst i dashboardet
-* [Rediger felterne](service-dashboard-edit-tile.md) i dashboardet.
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
 * [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
-* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved brug af **Opdater nu**
+* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
 
-## <a name="whats-included"></a>Følgende er inkluderet
+## <a name="whats-included"></a>Det følgende er inkluderet
 Følgende data er tilgængelige fra SQL Sentry i Power BI:
 
 | Tabelnavn | Beskrivelse |
@@ -99,7 +99,7 @@ Hvis data fra nogle af dine apps ikke vises i Power BI, skal du kontrollere for 
 Hvis du ikke er ejeren af SQL Sentry-databasen, der synkroniseres til <https://cloud.sqlsentry.com>, skal du kontakte administratoren for at sikre, at du har rettigheder til at få vist de indsamlede data.
 
 ## <a name="next-steps"></a>Næste trin
-[Introduktion til Power BI](service-get-started.md)
+[Kom i gang med Power BI](service-get-started.md)
 
 [Hent data til Power BI](service-get-data.md)
 

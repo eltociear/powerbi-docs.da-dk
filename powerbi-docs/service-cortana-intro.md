@@ -11,13 +11,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/13/2017
+ms.date: 01/13/2018
 ms.author: mihart
-ms.openlocfilehash: d64ab6b9a94171c99eb0956efce89f59b5174d41
-ms.sourcegitcommit: 2bd3c16fd300e41c6e3de29a24543491c1d53354
+ms.openlocfilehash: 648880925f343032c24cda612da58ef2fdadcf80
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Find og vis hurtigt dine Power BI-data ved hjælp af Cortana til Power BI
 Brug Cortana på tværs af dine Windows 10-enheder for at få omgående svar på vigtige forretningsspørgsmål. Ved at integrere med Power BI kan Cortana hente vigtige oplysninger direkte fra Power BI-dashboards og -rapporter. Alt hvad der kræves, er version Windows 10 November 2015 eller nyere, Cortana, Power BI og adgang til mindst ét datasæt.
@@ -70,7 +70,7 @@ Hvis dit dashboard har en titel med mere end ét ord, returner Cortana kun dette
 ### <a name="cortana-and-reports"></a>Cortana og rapporter
  Cortana kan finde svar i rapporter, som indeholder [sider, der er udviklet specielt til visning af Cortana](service-cortana-answer-cards.md). Du skal blot stille spørgsmål ved hjælp af titlen eller nøgleord fra en af disse specialrapportsider.  
 
-Den underliggende teknologi for rapporter er brug af [Microsofts Power BI Spørgsmål og svar](service-q-and-a.md).
+Den underliggende teknologi for rapporter er brug af [Microsofts Power BI Spørgsmål og svar](power-bi-q-and-a.md).
 
 Når du stiller et spørgsmål i Cortana, svarer Power BI fra rapportsider, der er udviklet specielt til Cortana. Potentielle svar bestemmes løbende af Cortana direkte fra Cortanas *svarkort*, der allerede er oprettet i Power BI.  Du skal blot åbne et resultat i Power BI for at udforske et svar yderligere.
 

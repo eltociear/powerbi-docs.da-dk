@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: e9fda17bd9560ac564cb6b3ae6c34b986a6bc2aa
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+ms.openlocfilehash: 6948f0e333ba1136f6fda8fa0f62b146cefdd710
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Læsevisning og Redigeringsvisning i rapporter i Power BI-tjenesten
 Der er to forskellige tilstande til at få vist og interagere med rapporter i Power BI-tjenesten (ikke Power BI Desktop): Læsevisning og Redigeringsvisning. Læsevisning er tilgængelig for alle brugere og er især designet til *forbrugere* af data, mens Redigeringsvisning kun er tilgængelig for *oprettere* og ejere af rapporter. 
@@ -56,7 +56,7 @@ Alle rapportfunktionerne i Power BI-tjenesten er ikke er angivet i dette diagram
 | [Rapport **Visning** Indstillinger](power-bi-report-display-settings.md) | Ja, med visse undtagelser. | Ja, alle, herunder gitterlinjer, fastgørelse og låsning. |
 | [Opret tidsplan for opdatering](refresh-data.md) | Nej  | Ja |
 | [Abonner på en rapport](service-report-subscribe.md) | Ja | Nej |
-| [Spørgsmål og svar – stil spørgsmål i rapporter](service-q-and-a.md) | Nej  | Ja |
+| [Spørgsmål og svar – stil spørgsmål i rapporter](power-bi-q-and-a.md) | Nej  | Ja |
 | [Få vist forbrugsdata ](service-usage-metrics.md) | Ja, på rapportcanvassen. | Ja, på rapportlisten (indholdsvisning) |
 | [Få vist relaterede](service-related-content.md) | Ja, på rapportcanvassen. | Ja, på rapportlisten (indholdsvisning) |
 | [Gem en rapport](service-report-save.md) | Ja, men kun ved hjælp af **Gem som**. | Ja |

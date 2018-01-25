@@ -17,41 +17,41 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: 22d490a58fd522b805d9709a1e697d1d2e89df6c
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 408f41e1a50b895166308fcba129d86f5c05d0e7
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Opret forbindelse til Zuora med Power BI
-Med Zuora til Power BI kan du visualisere vigtige omsætnings-, fakturerings- og abonnementsdata. Brug standarddashboardet og rapporter til at analysere brugstendenser, spore faktureringer og betalinger og overvåge tilbagevendende indtægt eller til at tilpasse dem, så de imødekommer dine særlige behov i forbindelse med dashboard og rapportering. 
+Med Zuora til Power BI kan du visualisere vigtige omsætnings-, fakturerings- og abonnementsdata. Brug standarddashboardet og rapporter til at analysere brugstendenser, spore faktureringer og betalinger og overvåge tilbagevendende indtægt eller til at tilpasse dem, så de imødekommer dine særlige behov i forbindelse med dashboard og rapportering.
 
 Opret forbindelse til [Zuora](https://app.powerbi.com/getdata/services/Zuora) til Power BI.
 
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
 1. Vælg **Hent data** nederst i venstre navigationsrude.
-   
+
    ![](media/service-connect-to-zuora/getdata.png)
 2. I feltet **Tjenester** skal du vælge **Hent**.
-   
+
    ![](media/service-connect-to-zuora/services.png)
 3. Vælg **Zuora** \> **Hent**.
-   
+
    ![](media/service-connect-to-zuora/zuora.png)
 4. Angiv URL-adressen til Zuora. Dette er normalt "https://www.zuora.com". Se detaljer om at [finde de pågældende parametre](#FindingParams) nedenfor.
-   
+
    ![](media/service-connect-to-zuora/params.png)
 5. Som **Godkendelsesmetode** skal du vælge **Grundlæggende**, angive dit brugernavn og din adgangskode (der skelnes mellem små og store bogstaver) og derefter vælge **Log på**.
-   
+
     ![](media/service-connect-to-zuora/creds.png)
 6. Efter godkendelsen starter importprocessen automatisk. Når processen er fuldført, vises et nyt dashboard samt en ny rapport og model i navigationsruden. Vælg dashboardet for at få vist de importerede data.
-   
+
      ![](media/service-connect-to-zuora/dashboard.png)
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](service-q-and-a.md) øverst i dashboardet
-* [Rediger felterne](service-dashboard-edit-tile.md) i dashboardet.
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
 * [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
 * Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
 
@@ -108,7 +108,6 @@ Angiv den URL-adresse, du typisk logger på for at få adgang til dine Zuora-dat
 Zuora-indholdspakken henter fra mange forskellige dele af din Zuora-konto. Hvis du ikke bruger visse funktioner, vises de tilsvarende felter/rapporter muligvis som tomme. Hvis du har problemer med indlæsning, skal du kontakte Power BI-support.
 
 ## <a name="next-steps"></a>Næste trin
-[Introduktion til Power BI](service-get-started.md)
+[Kom i gang med Power BI](service-get-started.md)
 
 [Hent data i Power BI](service-get-data.md)
-

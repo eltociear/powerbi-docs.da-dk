@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/27/2017
 ms.author: mihart
-ms.openlocfilehash: 6d043f21635308def7b119c072a7f99c118e901d
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: d92edce9ae1332c4a0c73be5db93201c9b87dc86
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="the-power-bi-samples-a-tutorial"></a>Power BI-eksemplerne, et selvstudium
 <!-- Shared newnav Include -->
@@ -91,7 +91,7 @@ Udforsk nu dashboardet, datasættet og rapporten på egen hånd. Der er mange fo
     ![](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > Hvis feltet var blevet oprettet ved brug af [Power BI Q&A](service-q-and-a.md), ville Q&A-siden være blevet åbent i stedet for.
+   > Hvis feltet var blevet oprettet ved brug af [Power BI Q&A](power-bi-q-and-a.md), ville Q&A-siden være blevet åbent i stedet for.
    > 
    > 
 4. Tilbage på fanen **Datasæt** har du flere muligheder for at udforske dit datasæt.  Du kan ikke åbne det for at se alle rækkerne og kolonnerne (ligesom du kan i Power BI Desktop eller Excel).  Når en person deler en indholdspakke med kollegaer, ønsker de typisk at dele indsigt og ikke give deres kollegaer direkte adgang til dataene. Men det betyder ikke, at du ikke kan udforske datasættet.  
@@ -112,5 +112,5 @@ Udforsk nu dashboardet, datasættet og rapporten på egen hånd. Der er mange fo
 
 [Datakilder til Power BI](service-get-data.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: dac3392ff7b86a2dcda0415a7d271c9140dcd534
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 5dfd8c154b402f305e7de0c255040347b7fd4193
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="connect-to-uservoice-with-power-bi"></a>Opret forbindelse til UserVoice med Power BI
 Det er nemt at spore og udforske dine UserVoice-data med Power BI og UserVoice-indholdspakken. Power BI henter dine data, herunder anmodninger, forslag og tilfredshedsvurderinger, og opretter derefter et færdigt dashboard og rapporter ud fra de pågældende data.
@@ -59,8 +59,8 @@ Opret forbindelse til [UserVoice-indholdspakken](https://app.powerbi.com/getdata
 
 **Hvad nu?**
 
-* Prøv at [stille et spørgsmål i feltet Spørgsmål og svar](service-q-and-a.md) øverst i dashboardet
-* [Rediger felterne](service-dashboard-edit-tile.md) i dashboardet.
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
 * [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
 * Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved brug af **Opdater nu**
 
@@ -87,7 +87,7 @@ Hvis du får vist denne fejlmeddelelse, mens dataene indlæses, skal du kontroll
 UserVoice-indholdspakken til Power BI bruger UserVoices API'er til at hente dine data. Sørg for at overvåge dit API-forbrug, så du ikke overskrider din grænse. Hvis du har en stor mængde data i din UserVoice-konto, kan du for at minimere påvirkningen på dit API-forbrug ændre hyppigheden for opdatering fra den nuværende standardindstilling, som er én gang dagligt, til kun at opdatere på hverdage eller hver anden dag, afhængigt af dine behov. Et andet forslag er at få én administrator til at oprette indholdspakken og dele den med resten af teamet i stedet for, at hver eneste administrator i organisationen skal oprette sin egen, hvilket bidrager til unødvendig belastning på API'erne
 
 ## <a name="next-steps"></a>Næste trin
-[Kom i gang i Power BI](service-get-started.md)
+[Kom i gang med Power BI](service-get-started.md)
 
 [Hent data i Power BI](service-get-data.md)
 

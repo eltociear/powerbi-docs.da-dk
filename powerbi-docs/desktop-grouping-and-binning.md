@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 01/19/2018
 ms.author: davidi
-ms.openlocfilehash: b94ede61185e2029e259fd851eaa022737346210
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 6d398a7594cfde65d878cbd317a2669b945da9e6
+ms.sourcegitcommit: a973bc6adc88507932e7e1535a74208e3842f5c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/20/2018
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Brug gruppering og gruppering i beholder i Power BI Desktop
 Når der oprettes visualiseringer i **Power BI Desktop**, samles dine data i dele (eller **grupper**) baseret på de værdier, der bliver fundet i de underliggende data. Det er ofte fint, men der kan være tilfælde, hvor du gerne vil justere, hvordan disse dele vises. Eksempel: Du vil måske placere tre produktkategorier i én større kategori (én *gruppe*). Det kan også være, at du vil se salgstal, der er placeret i beholderstørrelser på USD 1.000.000 i stedet for jævnt fordelt på USD 923.983.
@@ -69,7 +69,7 @@ Når du vælger **OK**, kan du se, at der vises et nyt felt i ruden **Felter**, 
 
 ![](media/desktop-grouping-and-binning/grouping-binning_7.png)
 
-Du kan se, hvordan **gruppering i beholdere** fungerer i denne [video](https://youtu.be/UXEYSvgvMaQ?t=12m17s).
+Du kan se, hvordan **gruppering i beholdere** fungerer i denne [video](https://www.youtube.com/watch?v=BRvdZSfO0DY).
 
 Så nemt er det at bruge **gruppering** og **gruppering i beholder** til at sikre, at dine data vises lige præcis på den måde, du gerne vil, i dine visualiseringer.
 
