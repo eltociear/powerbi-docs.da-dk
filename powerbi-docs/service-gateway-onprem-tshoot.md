@@ -114,7 +114,7 @@ Denne fejl kan opstå af forskellige årsager. Sørg for at kontrollere, at du k
 
 I **Vis detaljer** får du vist fejlkoden **DM_GWPipeline_UnknownError**.
 
-Du kan også se i hændelseslogfilerne >  **	Logfiler for programmer og tjenester** > **datagatewaytjenesten i det lokale miljø** for at få flere oplysninger.
+Du kan også se i hændelseslogfilerne > **Logfiler for programmer og tjenester** > **datagatewaytjenesten i det lokale miljø** for at få flere oplysninger.
 
 ### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Fejl: Der opstod en fejl under forsøget på at oprette forbindelse til <server>. Detaljer: "Vi har nået den ønskede datagateway, men gatewayen kan ikke få adgang til datakilden i det lokale miljø".
 Vi kunne ikke oprette forbindelse til den angivne datakilde. Sørg for at kontrollere de oplysninger, der er angivet for denne datakilde.

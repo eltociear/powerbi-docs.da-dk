@@ -298,7 +298,7 @@
               href: service-cortana-troubleshoot.md
     - name: Del dit arbejde
       items:
-        - name: Hvordan kan jeg samarbejde på og dele dashboards og rapporter?
+        - name: Hvordan kan jeg samarbejde og dele dashboards og rapporter?
           href: service-how-to-collaborate-distribute-dashboards-reports.md
         - name: Installer og brug apps med dashboards og rapporter
           href: service-install-use-apps.md
@@ -308,9 +308,9 @@
           href: service-organizational-content-pack-introduction.md
         - name: Opret og publicer en organisationsindholdspakke (selvstudium)
           href: service-organizational-content-pack-create-and-publish.md
-        - name: Del et dashboard med kolleger og andre
+        - name: Del dashboards og rapporter
           href: service-share-dashboards.md
-        - name: Del en rapport med kolleger
+        - name: Del en filtreret rapport
           href: service-share-reports.md
         - name: Publicer fra Power BI på internettet
           href: service-publish-to-web.md

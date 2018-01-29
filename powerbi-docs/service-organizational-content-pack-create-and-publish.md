@@ -66,7 +66,7 @@ Vil du følge med? I [Power BI-tjenesten](https://powerbi.com) skal du gå til *
    
    4.  **Upload et billede eller logo** for at gøre det nemmere for gruppemedlemmer at finde indholdspakken &#151; det er hurtigere at scanne efter et billede, end det er at finde tekst. I skærmbilledet nedenfor har vi brugt et billede af søjlediagramfeltet Opportunity Count 100% (Optælling af salgsmulighed 100%).
    
-   5.  Vælg dashboardet  **	Eksempel på analyse af salgsmuligheder** for at føje det til indholdspakken.  Power BI tilføjer automatisk den tilknyttede rapport og det tilknyttede datasæt. Du kan tilføje andre, hvis du vil.
+   5.  Vælg dashboardet **Eksempel på analyse af salgsmuligheder** for at føje det til indholdspakken.  Power BI tilføjer automatisk den tilknyttede rapport og det tilknyttede datasæt. Du kan tilføje andre, hvis du vil.
    
       > [!NOTE]
       >  Det er kun de dashboards, rapporter, datasæt og projektmapper, som du kan redigere, der vises. Hvis der er nogen, der er delt med dig, er de derfor ikke vist på listen.
