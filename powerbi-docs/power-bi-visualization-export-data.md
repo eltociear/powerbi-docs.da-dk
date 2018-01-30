@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/10/2018
+ms.date: 01/20/2018
 ms.author: mihart
-ms.openlocfilehash: 1df7eb485ac9b9de1007cc2fccbf8141ee4fdcc1
-ms.sourcegitcommit: afd6e9e6f8b192b26486cd04d2cbc9de046911b3
+ms.openlocfilehash: 8567326cb685a03fd1af618aad5310234677ab6d
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="export-data-from-visualizations"></a>Eksportér data fra visualiseringer
 Hvis du gerne vil se de data, der bruges til at oprette en visualisering, kan du [få vist de pågældende data i Power BI](service-reports-show-data.md) eller eksportere dataene til Excel som en .xlsx- eller .csv-fil.   
@@ -74,8 +74,7 @@ Hvis du vil følge med, skal du åbne [eksempelrapporten med en indkøbsanalyse]
    
    >[!WARNING]
    >Eksport af underliggende data giver brugerne mulighed at se alle de detaljerede data – for alle kolonner i dataene. Administratorer af Power BI-tjenesten kan slå denne funktion fra for deres organisation. Hvis du ejer datasættet, kan du angive, at beskyttede kolonner skal være "skjult", så de ikke vises på listen Felt i Desktop- eller Power BI-tjenesten.
-   > 
-   > 
+   
    
    **Underliggende data**: Vælg denne indstilling, hvis der er et aggregat i visualiseringen, og du gerne vil se alle underliggende detaljer. Generelt fjernes aggregeringen, hvis du vælger *Underliggende data*. Når du vælger **Eksportér**, eksporteres data til en .xlsx-fil, og du bliver i browseren bedt om at gemme filen. Når du har gemt den, skal du åbne filen i Excel.
    
@@ -85,7 +84,9 @@ Hvis du vil følge med, skal du åbne [eksempelrapporten med en indkøbsanalyse]
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 * Det maksimale antal rækker, der kan eksporteres fra **Power BI Desktop** og **Power BI-tjenesten** til CSV, er 30.000.
-* Det maksimale antal rækker, der kan eksporteres til .xlsx i **Power BI-tjenesten** er 150.000 for Pro-brugere og 30.000 for Gratis-brugere.
+* Det maksimale antal rækker, der kan eksporteres til .xlsx er 150.000.
+* Eksport ved hjælp af *Underliggende data* fungerer ikke, hvis datakilden er en direkte forbindelse til Analysis Services, og versionen er fra før 2016, og tabellerne i modellen ikke har en entydig nøgle.  
+* Eksport ved hjælp af *Underliggende data* fungerer ikke, hvis indstillingen *Vis elementer uden data* er aktiveret for visualiseringen, der skal eksporteres.
 * Når du bruger DirectQuery, er den maksimale datamængde, som kan eksporteres, 16 MB. Det kan medføre, at der eksporteres færre rækker end det maksimale antal, især hvis der er mange kolonner, hvis der er data, det er vanskeligt at komprimere, samt andre faktorer, der øger filstørrelsen og reducerer antallet af eksporterede rækker.
 * I Power BI understøttes kun eksport i visualiseringer, som anvender grundlæggende aggregater. Eksportér er ikke tilgængelig for visualiseringer, der anvender model- eller rapportmålinger.
 * Brugerdefinerede visualiseringer og R-visualiseringer understøttes ikke i øjeblikket.

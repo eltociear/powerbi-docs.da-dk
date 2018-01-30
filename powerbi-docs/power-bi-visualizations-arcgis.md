@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 01/21/2018
 ms.author: mihart
-ms.openlocfilehash: 6d2c14de83fcea1e9067fd3868b7559c3becce14
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+ms.openlocfilehash: 797b22ed6f07e64d7e4970f8f0dfe5e93a7c0ec4
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interaktion med ArcGIS-kort i Power BI
 Dette emne skrives fra en persons synspunkt, hvor vedkommende *bruger* et ArcGIS-kort i Power BI-tjenesten, på Desktop eller på mobil. Når en forfatter deler et ArcGIS-kort med dig, kan du interagere med kortet på mange måder.  Hvis du vil vide mere om oprettelse af et ArcGIS-kort, kan du se [ArcGIS-kort efter Esri-selvstudium](power-bi-visualization-arcgis.md).
@@ -31,7 +31,6 @@ Kombinationen af ArcGIS-kort og Power BI tager kort til et helt nyt niveau, som 
 
 > [!TIP]
 > GIS står for Geographic Information Science (Geografisk informationsvidenskab).
-> 
 > 
 
 Det eksempel, vi bruger, er det samme ArcGIS-kort, der er oprettet i [ArcGIS-kort efter Esri-selvstudium](power-bi-visualization-arcgis.md). I det ses der nærmere på sidste års salg efter by, og der bruges et vejkort, boblesymboler, der repræsenterer størrelse, og et referencelag til gennemsnitlig husstandsindtægt. Kortet indeholder 3 nåle og én radius for køretid (i mørklilla).
@@ -99,7 +98,7 @@ ArcGIS-kort til Power BI er tilgængeligt i følgende tjenester og programmer:
 <td>Ja</td>
 </tr>
 <tr>
-<td>Power BI-tjeneste (PowerBI.com)</td>
+<td>Power BI-tjenesten (app.powerbi.com)</td>
 <td>Ja</td>
 </tr>
 <tr>

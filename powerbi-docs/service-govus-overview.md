@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 01/23/2018
 ms.author: davidi
-ms.openlocfilehash: 9c8e2b44c128db283bef65198204e4aee1bfdd7a
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 2832849d887795c2af0750f01e929045f75c12fe
+ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til kunder i den amerikanske stat
 **Power BI-tjenesten** har en tilgængelig version for kunder i den amerikanske stat som en del af abonnementer for **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til kunder i den amerikanske stat og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten**.
@@ -45,11 +45,24 @@ Følgende funktioner er tilgængelige for **Power BI US Government**-kunder, som
 * Alle data er krypteret i både Azure SQL- og Blob-lager til Power BI
 * Opret forbindelse til tjenester med [indholdspakker](service-connect-to-services.md)
 
+## <a name="connectivity-between-government-and-public-azure-cloud-services"></a>Forbindelse mellem Government- og Public Azure Cloud-tjenester 
+
+Azure er fordelt blandt adskillige cloud-tjenester. Som standard har lejere tilladelse til at åbne firewall-regler til en cloud-specifik forekomst, men tvær-cloudnetværk er anderledes og kræver åbning af specifikke firewall-regler for at kommunikere mellem tjenester. Hvis du er en Power BI-kunde, og du har eksisterende SQL-forekomster i den offentlige cloud, som du har brug for at få adgang til, skal du åbne specifikke firewallregler i SQL til Azure Government Cloud IP-plads, for de følgende datacentre:
+
+* USGov Iowa
+* USGov Virginia
+* USGov Texas
+* USGov Arizona
+
+IP-pladser er tilgængelige i den offentlige cloud, men for government cloud-tjenesten, skal du oprette en anmodning om support i Azure for at bede om IP-områderne for ovenstående datacentre. 
+
+
 ## <a name="limitations-of-power-bi-us-government"></a>Begrænsninger for Power BI US Government
 Nogle af de funktioner, der er tilgængelige i den kommercielle version af **Power BI-tjenesten**, er *ikke* tilgængelige i **Power BI-tjenesten** til kunder i den amerikanske stat. Power BI-teamet arbejder aktivt på at gøre disse funktioner tilgængelige for kunder i den amerikanske stat og vil opdatere denne artikel, når disse funktioner bliver tilgængelige.
 
 * **Power BI US Government** er kun tilgængelig som en **Pro**-licens. Henvisninger til Power BI-licenser (gratis) på en administrationsportal (eller som brugere) kører i en kommerciel cloud til Power BI-tjenesten.
 * **Overvågning** – overvågning er ikke tilgængelig via portalen Office 365 Security and Compliance.
+* **Power BI-indhold i Cortana** - Power BI-resultater vises ikke i søgeresultater i Cortana, der omfatter resultaterne for dit Power BI-indhold (dashboards, rapporter og apps) samt resultater, der viser Cortana-optimerede rapportsider for bestemte nøgleord.
 
 Hvis du har gratis **Power BI**-licenser knyttet til din konto, kører disse konti i en kommerciel version af **Power BI**-tjenesten og er ikke en del af **Power BI US Government**-tilbuddet. For de gratis kontis vedkommende kan der opstå følgende problemer:
 

@@ -15,31 +15,36 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/19/2018
 ms.author: mihart
-ms.openlocfilehash: c29ea77eab09657b5c21fe97322464523b0621dc
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 4ef3991fc285adc84cdcb5efca00c2f9486e9825
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="power-bi-videos"></a>Power BI-videoer
 Vi har en YouTube-kanal til Power BI! Du kan besøge [vores kanal](https://www.youtube.com/user/mspowerbi/videos) og, hvis du ikke kender til Power BI, er det en god idé at starte med [Analysér og visualiser data med Power BI-afspilningsliste](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP).
 
-* Denne video viser nogle tip til optimering af dine data til Power BI. Lær, hvordan du bedst formaterer dataene, før du uploader dem til tjenesten.
+Her er et par videoer fra afspilningslisten, som kan hjælpe dig med at komme i gang.
+
+* Oversigt over Power BI-tjenesten og Power BI Desktop.
   
   <iframe width="500" height="281" src="https://www.youtube.com/embed/l2wy4XgQIu0" frameborder="0" allowfullscreen></iframe>
-* Det er hurtigt og nemt at uploade filer fra din lokale computer med Power BI. Få mere at vide om, hvordan du gør!
+* Samarbejde og deling.
   
-  <iframe width="500" height="281" src="https://www.youtube.com/embed/ETj-z3NyY_o" frameborder="0" allowfullscreen></iframe>
-* Brug af OneDrive er en fantastisk måde at oprette forbindelse til dine data på og sikre, at de altid er opdaterede
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/5DABLeJzQYM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+* Oversigt over Power BI-mobil
   
-  <iframe width="500" height="281" src="https://www.youtube.com/embed/6cOjiV_klrs" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/07uBWhaCo78" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+* Power BI for udviklere
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/47uXJW1GIUY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  
 
 ## <a name="watch-some-of-our-new-uploads"></a>Se nogle af vores nye uploads
-* [Tidsintelligens](https://youtu.be/MNAaHw4PxzE)
-* [Gruppering](https://youtu.be/51n2itS7K5I)
-* [SAP HANA](https://youtu.be/FOjJLvsIACc)
+* [Datoudsnit](https://youtu.be/V7i82ZZm0vw)
+* [Brugerdefinerede visualiseringer](https://youtu.be/d-rXAJ3_uAo)
+* [Beskeder i Power BI-tjenesten](https://youtu.be/JbL2-HJ8clE)
 
 ## <a name="more-videos"></a>Flere videoer
 Se følgende samling af kilder og indhold for flere videoer.

@@ -1,5 +1,5 @@
 ---
-title: "Radiale målerdiagrammer i Power BI (selvstudium)"
+title: "Selvstudium – Radiale målerdiagrammer i Power BI"
 description: "Selvstudium: Radiale målerdiagrammer i Power BI"
 services: powerbi
 documentationcenter: 
@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/21/2018
 ms.author: mihart
-ms.openlocfilehash: 7299b95cb3dd1fab4edce1764c69e1b2657ef547
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 354bfc01231f0f11aabd533bf29f987dec7c9771
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="radial-gauge-charts-in-power-bi-tutorial"></a>Radiale målerdiagrammer i Power BI (selvstudium)
 Et radialt målerdiagram har en cirkulær bue og viser en enkelt værdis status i forhold til et mål/en KPI.  Målet, eller målværdien, er repræsenteret med en streg (nål). Statussen mod målet repræsenteres med en skygge.  Den værdi, der repræsenterer statussen, vises med fed i buen. Alle de mulige værdier er fordelt langs buen fra minimumværdien (længst til venstre) til maksimumværdien (længst til højre).
@@ -39,17 +39,25 @@ Radiale målere er fantastiske til:
 * Vise statussen for en enkelt måling.
 * Vise oplysninger, der er hurtige at skimme og forstå.
 
+### <a name="prerequisites"></a>Forudsætninger
+ - Power BI-tjenesten eller Power BI Desktop
+ - Projektmappen Financial Sample: [download eksemplet direkte](http://go.microsoft.com/fwlink/?LinkID=521962).
+
 ## <a name="create-a-basic-radial-gauge"></a>Opret en grundlæggende radial måler
-I disse instruktioner bruges eksemplet Financial Sample. Hvis du vil følge med, kan du [downloade eksemplet](http://go.microsoft.com/fwlink/?LinkID=521962) til din computer, logge på Power BI og vælge **Hent data \> Filer \> Lokal fil > Åbn**. 
+Denne vejledning bruger Power BI-tjenesten. Følg med ved at logge på Power BI og åbne filen Excel Financial Sample.  
 
 Eller du kan se med, når Will viser, hvordan du opretter visualiseringer med en enkelt måling: målere, kort og KPI'er.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-### <a name="step-1-open-the-financial-sample-excel-file"></a>Trin 1: Åbn Excel-filen Financial Sample.
-1. [Download Excel-filen med eksemplet Financial Sample](sample-financial-download.md).
-2. Åbn filen i Power BI ved at vælge **Hent data \> Filer** og gå til det sted, hvor du gemte filen. Vælg **Importér**. Financial Sample-filen tilføjes i dit arbejdsområde som et datasæt.
-3. Vælg **Financial Sample** for at åbne det i udforskningstilstand.
+### <a name="step-1-open-the-financial-sample-excel-file"></a>Trin 1: Åbn filen Financial Sample i Excel
+1. [Download Excel-filen med eksemplet Financial Sample](sample-financial-download.md), hvis du ikke allerede har gjort det. Husk, hvor du gemmer den.
+
+2. Åbn filen i ***Power BI-tjeneste*** ved at vælge **Hent data\> Filer**, og gå til det sted, hvor du gemte filen. Vælg **Importér**. Financial Sample-filen tilføjes i dit arbejdsområde som et datasæt.
+
+3. Vælg **Financial Sample** på indholdslisten **Datasæt** for at åbne det i udforskningstilstand.
+
+    ![](media/power-bi-visualization-radial-gauge-charts/power-bi-dataset.png)
 
 ### <a name="step-2-create-a-gauge-to-track-gross-sales"></a>Trin 2: Opret en måler for at spore bruttoomsætningen (Gross Sales)
 1. Vælg **Gross Sales** i ruden **Felter**.
@@ -117,5 +125,5 @@ På trin 2 brugte Power BI feltet Værdi til automatisk at angive en minimum- (s
 
 [Power BI – grundlæggende begreber](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -15,19 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/24/2017
+ms.date: 01/19/2018
 ms.author: mihart
-ms.openlocfilehash: 5e4788e57bd1836d3d5db10dfb86e2c71c00c34f
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+ms.openlocfilehash: 7d9869c16b88cb410073644bdae94173b9cea023
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 ## <a name="power-bi-visualizations"></a>Visualiseringer i Power BI
 Vi tilføjer løbende nye visualiseringer, så hold dig orienteret her.
 
-Og besøg [Office-butikken](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), hvor du finder en stadigt større liste over brugerdefinerede visualiseringer, du kan downloade og bruge i dine egne dashboards og rapporter. Er du i det kreative hjørne? [Få mere at vide om, hvordan du opretter og tilføjer dine egne visualiseringer på communitywebstedet](developer/office-store.md).  
+Og besøg [Office AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals), hvor du finder en stadigt større liste over [brugerdefinerede visuals](power-bi-custom-visuals.md), du kan downloade og bruge i dine egne dashboards og rapporter. Er du i det kreative hjørne? [Få mere at vide om, hvordan du opretter og føjer dine egne visuals til dette communitywebsted](developer/office-store.md).  
 
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Liste over de visualiseringer, der er tilgængelige i Power BI
 Du kan bruge alle disse visualiseringer i Power BI-rapporter, de kan specificeres under Spørgsmål og svar, og du kan fastgøre dem til dashboards.

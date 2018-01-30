@@ -15,18 +15,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/04/2017
+ms.date: 01/20/2018
 ms.author: mihart
-ms.openlocfilehash: 878738eb3f588c461b687451062a1641479e77ed
-ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
+ms.openlocfilehash: 8ee889246c7ceae82195faa62232a987a541b076
+ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på analyse af salgsmuligheder til Power BI: Få en introduktion
-**Opportunity Tracking Sample** indeholder et dashboard (og en tilknyttet rapport) for en softwarevirksomhed, der har 2 salgskanaler: *direkte* og *partner*. Salgschefen har oprettet dette dashboard for at spore muligheder og omsætning efter område, handlens størrelse samt kanal.
 
-Salgschefen er afhængig af 2 målinger af indtægter:
+## <a name="overview-of-the-opportunity-analysis-sample"></a>Oversigt over eksemplet på analyse af salgsmuligheder
+**Eksempel på analyse af salgsmuligheder** indeholder et dashboard (og en tilknyttet rapport) for en softwarevirksomhed, der har 2 salgskanaler: *direkte* og *partner*. Salgschefen har oprettet dette dashboard for at spore muligheder og omsætning efter område, handlens størrelse samt kanal.
+
+Salgschefen er afhængig af to målinger af indtægter:
 
 * **Indtægter** – dette er en sælgers estimat over, hvad vedkommende mener omsætningen vil blive.
 * **Indregnede indtægter** – dette beregnes som indtægter X sandsynligheds-% og anerkendes generelt som værende en mere nøjagtig indikator for de faktiske salgsindtægter. Sandsynligheden afhænger af, hvor i ***salgsfasen*** handlen befinder sig.
@@ -36,23 +38,51 @@ Salgschefen er afhængig af 2 målinger af indtægter:
   * Proposal – 60 %  
   * Finalize – 80 %
 
+  ![](media/sample-opportunity-analysis/opportunity1.png)
+
 Dette eksempel er en del af en række, der illustrerer, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Der er anvendt rigtige data fra obviEnce ([www.obvience.com)](http://www.obvience.com/), som er blevet anonymiseret.
 
->[!Note] 
-Du kan også nøjes med at [downloade datasættet (Excel-projektmappe) til dette eksempel](http://go.microsoft.com/fwlink/?LinkId=529782). Projektmappen indeholder Power View-ark, som du kan få vist og redigere.  Du kan se de rå data ved at vælge **Power Pivot > Administrer**. 
+## <a name="prerequisites"></a>Forudsætninger
 
-![](media/sample-opportunity-analysis/opportunity1.png)
+ Før du kan bruge eksemplet, skal du først hente det som en indholdspakke, .pbix-fil eller Excel-projektmappe.
+
+### <a name="get-the-content-pack-for-this-sample"></a>Hent indholdspakken for dette eksempel
+
+1. Åbn Power BI-tjenesten (app.powerbi.com), og log på.
+2. Vælg **Hent data** i nederste venstre hjørne.
+   
+    ![](media/sample-datasets/power-bi-get-data.png)
+3. Vælg ikonet **Eksempler** på siden Hent data, der vises.
+   
+   ![](media/sample-datasets/power-bi-samples-icon.png)
+4. Vælg **Eksempel på analyse af salgsmuligheder**, og vælg **Opret forbindelse**.  
+  
+   ![Hent data](media/sample-opportunity-analysis/opportunity-connect.png)
+   
+5. Power BI importerer indholdspakken og føjer et nyt dashboard, en rapport og et datasæt til dit aktuelle arbejdsområde. Det nye indhold er markeret med en gul stjerne. 
+   
+   ![Stjerne](media/sample-opportunity-analysis/opportunity-asterisk.png)
+  
+### <a name="get-the-pbix-file-for-this-sample"></a>Hent .pbix-filen knyttet til dette eksempel
+
+Du kan også hente eksemplet som en pbix-fil, som er beregnet til brug med Power BI Desktop. 
+
+ * [Eksempel på analyse af salgsmuligheder](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity%20Analysis%20Sample%20PBIX.pbix)
+
+### <a name="get-the-excel-workbook-for-this-sample"></a>Hent Excel-projektmappen for dette eksempel
+Du kan også [kun downloade datasættet (Excel-projektmappe)](http://go.microsoft.com/fwlink/?LinkId=529782) for dette eksempel. Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Du kan se de rå data ved at vælge **Power Pivot > Administrer**.
+
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Hvad fortæller vores dashboard os?
 Salgschefen har oprettet et dashboard for at spore de vigtigste målepunkter. Når hun ser noget interessant, kan hun vælge et felt for at grave ned i dataene.
 
 1. Virksomhedens indtægter er $2 milliarder, og indregnede indtægter er $461 millioner.
 2. Antal salgsmuligheder og indtægter følger et velkendt tragtformet mønster, hvor totaler formindskes hvert efterfølgende trin.
-3. De fleste af vores salgsmuligheder er i det østlige område. 
+3. De fleste af vores salgsmuligheder er i det østlige område.
 4. Store salgsmuligheder genererer større indtægter end mellemstore eller små muligheder.
-5. Store partnerhandler genererer større indtægter: $8 millioner i gennemsnit i forhold til $6 millioner for direkte salg. 
+5. Store partnerhandler genererer større indtægter: $8 millioner i gennemsnit i forhold til $6 millioner for direkte salg.
 
-Eftersom indsatsen for at få handlen i hus er den samme, uanset om handlen er klassificeret som stor, mellemstor eller lille, bør vores virksomhed grave ned i dataene for at lære mere om store muligheder. 
+Eftersom indsatsen for at få handlen i hus er den samme, uanset om handlen er klassificeret som stor, mellemstor eller lille, bør vores virksomhed grave ned i dataene for at lære mere om store muligheder.
 
 Vælg feltet **Opportunity Count by Partner Driven and Sales Stage** for at åbne side 1 i rapporten.  
 ![](media/sample-opportunity-analysis/opportunity2.png)
@@ -63,8 +93,8 @@ Vælg feltet **Opportunity Count by Partner Driven and Sales Stage** for at åbn
 
 * East er vores største område med hensyn til antallet af salgsmuligheder.  
 * Vælg hvert område ét ad gangen på cirkeldiagrammet for at filtrere siden. For hvert område forfølger partnere markant flere store muligheder.   
-* Søjlediagrammet Opportunity Count by Partner Driven and Opportunity Size viser tydeligt, at de fleste af de store salgsmuligheder er partnerdrevet, og flere af de små og mellemstore muligheder ikke er partnerdrevet. 
-* Vælg hver salgsfase i det liggende søjlediagram nederst til venstre for at se forskellen i regionalt antal, og læg mærke til, at selvom East er vores største område med hensyn til antal, har alle tre sammenlignelige antal i faserne Solution, Proposal og Finalize. Det betyder, at vi lukker en højere procentdel af handler i Central og West. 
+* Søjlediagrammet Opportunity Count by Partner Driven and Opportunity Size viser tydeligt, at de fleste af de store salgsmuligheder er partnerdrevet, og flere af de små og mellemstore muligheder ikke er partnerdrevet.
+* Vælg hver salgsfase i det liggende søjlediagram nederst til venstre for at se forskellen i regionalt antal, og læg mærke til, at selvom East er vores største område med hensyn til antal, har alle tre sammenlignelige antal i faserne Solution, Proposal og Finalize. Det betyder, at vi lukker en højere procentdel af handler i Central og West.
 
 ### <a name="page-2-of-our-report-is-titled-revenue-overview"></a>Side 2 i vores rapport har titlen "Revenue Overview".
 Denne side ser på samme måde på dataene, men med et indtægtsperspektiv i stedet for antal.  
@@ -82,8 +112,8 @@ Det er tydeligt, at vores partnere er bedre til at sælge til kunder.  Det kan g
 Denne side ser på tilsvarende data, men opdeler dem efter område og fase.  
 ![](media/sample-opportunity-analysis/opportunity5.png)
 
-* Filtrering efter East (vælg **East** i cirkeldiagrammet) viser, at salgsmuligheder i det østlige er næsten lige opdelt mellem partnerdrevet og ikke-partnerdrevet. 
-* Store salgsmuligheder er mest almindelige i det centrale område, små salgsmuligheder er mest almindelige i det østlige område, og mellemstore salgsmuligheder er mest almindelige i det vestlige område. 
+* Filtrering efter East (vælg **East** i cirkeldiagrammet) viser, at salgsmuligheder i det østlige er næsten lige opdelt mellem partnerdrevet og ikke-partnerdrevet.
+* Store salgsmuligheder er mest almindelige i det centrale område, små salgsmuligheder er mest almindelige i det østlige område, og mellemstore salgsmuligheder er mest almindelige i det vestlige område.
 
 ### <a name="page-4-of-our-report-is-titled-upcoming-opportunities"></a>Side 4 i vores rapport har titlen "Upcoming Opportunities"
 Vi ser igen på lignende faktorer, men denne gang fra et dato-/klokkeslætsperspektiv.  
@@ -101,4 +131,3 @@ Dette er et sikkert miljø at lege i. Du kan altid vælge ikke at gemme dine æn
 Vi håber, at denne rundtur har vist, hvordan Power BI-dashboards, Spørgsmål og svar samt rapporter kan give indsigt i data til sporing af salgsmuligheder. Nu er det din tur – opret forbindelse til dine egne data. Med Power BI kan du oprette forbindelse til en lang række datakilder. Få mere at vide om, hvordan du [kommer i gang med Power BI](service-get-started.md).
 
 [Download eksempler](sample-datasets.md)  
-

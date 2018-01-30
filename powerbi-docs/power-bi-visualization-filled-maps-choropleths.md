@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/19/2018
 ms.author: mihart
-ms.openlocfilehash: 08b01048823d928d5c07fd4ad86764bc13921a31
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 2c15cf503a7c66a3b89e45cc338ee5174e5f24e7
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="filled-maps-choropleths-in-power-bi-tutorial"></a>Udfyldte kort (Choropleths) i Power BI (selvstudium)
 Et udfyldt kort bruger skygger eller toner eller mønstre til at vise, hvordan en værdi varierer i forhold på tværs af et geografisk område eller en region.  Fremvis hurtigt disse relative forskelle med skygger, der går fra lys (mindre-hyppige/lavere) til mørk (mere-hyppige/mere).    
@@ -31,6 +31,11 @@ Et udfyldt kort bruger skygger eller toner eller mønstre til at vise, hvordan e
 
 ## <a name="what-is-sent-to-bing"></a>Hvad sendes til Bing
 Power BI integreres med Bing for at angive standardkortkoordinaterne (en proces, der kaldes geokodning). Når du opretter en kortvisualisering i Power BI-tjenesten eller Power BI Desktop, sendes dataene i feltbeholderne **Location**, **Latitude** og **Longitude** ( der bruges til at oprette den pågældende visualisering) til Bing.
+
+Du eller din administrator skal muligvis opdatere firewallen for at tillade adgang til URL-adresser, som Bing bruger til geokodning.  URL-adresserne er:
+* https://dev.virtualearth.net/REST/V1/Locations
+* https://platform.bing.com/geo/spatial/v1/public/Geodata
+* https://www.bing.com/api/maps/mapcontrol
 
 Du kan finde flere oplysninger om de data, der sendes til Bing, og få tip til at få større succes med geokodning under [Tip og råd til kortvisualiseringer](power-bi-map-tips-and-tricks.md).
 
@@ -108,5 +113,5 @@ Du kan få hjælp til kortvisualiseringer under [Tip og råd til kortvisualiseri
  [Føj en visualisering til en rapport](power-bi-report-add-visualizations-i.md)  
  [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)    
  [Skift den visualiseringstype, der anvendes](power-bi-report-change-visualization-type.md)      
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

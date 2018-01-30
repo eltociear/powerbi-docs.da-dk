@@ -15,23 +15,53 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 01/20/2018
 ms.author: mihart
-ms.openlocfilehash: ebf10d6045bc1d0d0c260dffa7fbc68cfbc4528b
-ms.sourcegitcommit: 54da95f184dd0f7bb59bb0bc8775a1d93129b195
+ms.openlocfilehash: 40bb1c80b1dcc9625bdb3f47ec98b51a7be114fd
+ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på analyse af it-forbrug til Power BI: Få en introduktion
+
+## <a name="overview-of-the-it-spend-analysis-sample"></a>Oversigt over eksemplet på analyse af it-forbrug
 [Indholdspakken](service-organizational-content-pack-introduction.md) (dashboard, rapport og datasæt) til analysen af it-forbruget analyserer de planlagte omkostninger over for de faktiske omkostninger i en it-afdeling. Sammenligningen hjælper os med at forstå, om virksomheden har lagt en god plan for året, og giver os mulighed for at undersøge de områder, som afviger væsentligt fra planen. Virksomheden i eksemplet gennemgår en årlig planlægningscyklus og genererer et nyt 'Seneste estimat' (Latest Estimate, LE) hvert kvartal for at gøre det nemmere at analysere ændringer i it-forbruget i løbet af regnskabsåret.
+
+![](media/sample-it-spend/it1.png)
 
 Dette eksempel er en del af en række, der illustrerer, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Der er anvendt rigtige data fra obviEnce (<http://obvience.com/>), der er blevet anonymiseret.
 
->[!Note] 
-Du kan [kun downloade datasættet (Excel-projektmappe) til dette eksempel](http://go.microsoft.com/fwlink/?LinkId=529783). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Få vist de rå data. Vælg **Power Pivot > Administrer**.
+## <a name="prerequisites"></a>Forudsætninger
 
-![](media/sample-it-spend/it1.png)
+ Før du kan bruge eksemplet, skal du først hente det som en indholdspakke, .pbix-fil eller Excel-projektmappe.
+
+### <a name="get-the-content-pack-for-this-sample"></a>Hent indholdspakken for dette eksempel
+
+1. Åbn Power BI-tjenesten (app.powerbi.com), og log på.
+2. Vælg **Hent data** i nederste venstre hjørne.
+   
+    ![](media/sample-datasets/power-bi-get-data.png)
+3. Vælg ikonet **Eksempler** på siden Hent data, der vises.
+   
+   ![](media/sample-datasets/power-bi-samples-icon.png)
+4. Vælg **Eksempel på analyse af it-forbrug**, og vælg **Opret forbindelse**.  
+  
+   ![Hent data](media/sample-it-spend/it-connect.png)
+   
+5. Power BI importerer indholdspakken og føjer et nyt dashboard, en rapport og et datasæt til dit aktuelle arbejdsområde. Det nye indhold er markeret med en gul stjerne. 
+   
+   ![Stjerne](media/sample-it-spend/it-asterisk.png)
+  
+### <a name="get-the-pbix-file-for-this-sample"></a>Hent .pbix-filen knyttet til dette eksempel
+
+Du kan også hente eksemplet som en pbix-fil, som er beregnet til brug med Power BI Desktop. 
+
+ * [IT Spend Analysis Sample](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix)
+
+### <a name="get-the-excel-workbook-for-this-sample"></a>Hent Excel-projektmappen for dette eksempel
+Du kan også [kun downloade datasættet (Excel-projektmappe)](http://go.microsoft.com/fwlink/?LinkId=529783) for dette eksempel. Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Du kan se de rå data ved at vælge **Power Pivot > Administrer**.
+
 
 ## <a name="the-it-spend-analysis-sample-dashboard"></a>Dashboardet IT Spend Analysis Sample
 De to talfelter på dashboardet, **Var Plan %** og **Variance Latest Estimate % Quarter 3**, giver os et overblik over, hvor godt vi klarer os i forhold til planen og i forhold til estimatet for det seneste kvartal (LE3 = Latest Estimate Quarter 3). Samlet set er vi omtrent 6 % fra planen. Lad os undersøge årsagen til denne varians – hvornår, hvor og hvilken kategori?
@@ -43,19 +73,19 @@ Når du vælger dashboardfeltet **Var Plan % by Sales Region**, føres du til si
 
 Men det kan være vildledende kun at kigge på dette diagram og udlede konklusioner. Vi er nødt til at se på de faktiske dollarbeløb for at få tingene i det rette perspektiv.
 
-1. Vælg **Aus and NZ** i diagrammet Var Plan % by Sales Region, og hold øje med diagrammet Var Plan by IT Area. 
-   
+1. Vælg **Aus and NZ** i diagrammet Var Plan % by Sales Region, og hold øje med diagrammet Var Plan by IT Area.
+
    ![](media/sample-it-spend/it3.png)
 2. Vælg nu **USA**. Du har fat i det – Australien er en virkelig lille del af vores samlede forbrug sammenlignet med USA.
-   
+
     Så vi begrænsede det til USA, hvad nu? Lad os undersøge, hvilken kategori i USA der forårsager variansen.
 
 ## <a name="ask-questions-of-the-data"></a>Stil spørgsmål til dataene
 1. Vælg **IT Spend Analysis Sample** på den øverste navigationslinje for at vende tilbage til dashboardene.
 2. Skriv "show IT areas, var plan % and var le3 % bar chart" i spørgsmålsfeltet.
-   
-   ![](media/sample-it-spend/it4.png) 
-   
+
+   ![](media/sample-it-spend/it4.png)
+
    I det første it-område **Infrastructure** er procentdelen ændret drastisk mellem den første variansplan og variansplanens seneste estimat.
 
 ## <a name="ytd-spend-by-cost-elements-page"></a>Siden "YTD Spend by Cost Elements"
@@ -67,14 +97,14 @@ Infrastruktur skiller sig ud med enorm positiv varians i forhold til planen.
 
 1. Klik på dette felt for at gå til siden "YTD Spend by Cost Elements" i rapporten IT Spend Analysis Sample.
 2. Klik på bjælken **Infrastructure** i diagrammet "Var Plan % and Var LE3 % by IT Area" nederst til venstre, og hold øje med variansen i forhold til planen i "Var Plan % by Sales Region" til venstre.
-   
+
     ![](media/sample-it-spend/it6.png)
 3. Klik på navnet på hver Cost Element Group i udsnittet for at finde omkostningselementet med en stor varians.
 4. Når **Other** er valgt, skal du klikke på **Infrastructure** i IT Area og klikke på underområderne i udsnittet IT Sub Area for at finde underområdet med den største varians.  
-   
+
    Vi kan se en enorm varians i **Networking**.
-   
-   Firmaet valgte tilsyneladende at give sine medarbejdere telefontjenester som et frysegode, men dette træk var ikke planlagt. 
+
+   Firmaet valgte tilsyneladende at give sine medarbejdere telefontjenester som et frysegode, men dette træk var ikke planlagt.
 
 ## <a name="plan-variance-analysis-page"></a>Siden "Plan Variance Analysis"
 Klik på fanen "Plan Variance Analysis" nederst i rapporten for at gå til side 3 i rapporten.
@@ -97,4 +127,3 @@ Dette er et sikkert miljø at lege i. Du kan altid vælge ikke at gemme dine æn
 
 ## <a name="next-steps-connect-to-your-data"></a>Næste trin: Opret forbindelse til dine data
 Vi håber, at denne rundtur viser, hvordan Power BI-dashboards, spørgsmål og svar og rapporter kan give indsigt i data om it-forbrug. Nu er det din tur – opret forbindelse til dine egne data. Med Power BI kan du oprette forbindelse til en lang række datakilder. Få mere at vide om, hvordan du [kommer i gang med Power BI](service-get-started.md).
-
