@@ -15,23 +15,55 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/29/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: 9a100b7d13c11a8bd066b72a570f45d0c2bc08be
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 82e909962a0ed1db50f2ba3729988fd7aacadc80
+ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Eksempel på kunderentabilitet til Power BI: Få en rundvisning
-Indholdspakken "Eksempel på kunderentabilitet" indeholder et dashboard, en rapport og datasæt for en virksomhed, der producerer markedsføringsmateriale. Dette dashboard blev oprettet af en økonomidirektør med henblik på at se nøgletal knyttet til sine fem afdelingschefer (dvs. direktører), produkter, kunder og bruttoavance (BA). Hun kan hurtigt se, hvilke faktorer der påvirker lønsomheden.
+Indholdspakken "Eksempel på kunderentabilitet" indeholder et dashboard, en rapport og datasæt for en virksomhed, der producerer markedsføringsmateriale. Dette dashboard blev oprettet af en CFO med henblik på at se nøgletal knyttet til sine fem afdelingschefer (dvs. direktører), produkter, kunder og bruttoavance (BA). Hun kan hurtigt se, hvilke faktorer der påvirker lønsomheden.
 
 Dette eksempel er en del af en række, der illustrerer, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Der er anvendt rigtige data fra obviEnce ([www.obvience.com](http://www.obvience.com/)), der er blevet anonymiseret.
 
-Du kan også nøjes med at [downloade datasættet (Excel-projektmappe) til dette eksempel](http://go.microsoft.com/fwlink/?LinkId=529781).  
-![](media/sample-customer-profitability/power-bi-dash.png)
+## <a name="prerequisites"></a>Forudsætninger
+
+Før du kan bruge eksemplet, skal du først hente det som en indholdspakke, .pbix-fil eller Excel-projektmappe.
+
+### <a name="get-the-content-pack-for-this-sample"></a>Hent indholdspakken for dette eksempel
+
+1. Åbn Power BI-tjenesten (app.powerbi.com), og log på.
+2. Vælg **Hent data** i nederste venstre hjørne.
+   
+    ![](media/sample-datasets/power-bi-get-data.png)
+3. Vælg ikonet **Eksempler** på siden Hent data, der vises.
+   
+   ![](media/sample-datasets/power-bi-samples-icon.png)
+4. Vælg **Eksempel på kunderentabilitet**, og vælg derefter **Opret forbindelse**.  
+   
+   ![Hent data](media/sample-customer-profitability/get-supplier-sample.png)
+5. Power BI importerer indholdspakken og føjer et nyt dashboard, en rapport og et datasæt til dit aktuelle arbejdsområde. Det nye indhold er markeret med en gul stjerne. Brug eksemplerne til give Power BI en testkørsel.  
+   
+   ![Stjerne](media/sample-customer-profitability/supplier-sample-asterisk.png)
+  
+### <a name="get-the-pbix-file-for-this-sample"></a>Hent .pbix-filen knyttet til dette eksempel
+
+Du kan også hente eksemplet som en pbix-fil, som er beregnet til brug med Power BI Desktop. 
+
+- [Customer Profitability Sample](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer Profitability Sample PBIX.pbix)
+
+### <a name="get-the-excel-workbook-for-this-sample"></a>Hent Excel-projektmappen for dette eksempel
+
+Du kan også nøjes med at downloade datasættet [(Excel-projektmappen) for dette eksempel](http://go.microsoft.com/fwlink/?LinkId=529781). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Du kan se de rå data ved at vælge **Power Pivot > Administrer**.
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Hvad fortæller vores dashboard os?
+
+Under **Mit arbejdsområde** skal du finde dashboardet for eksempel på Kunderentabilitet:
+
+![Dashboard for eksempel på Kunderentabilitet](media/sample-customer-profitability/power-bi-dash.png)
+
 ### <a name="company-wide-dashboard-tiles"></a>Virksomhedsdækkende dashboardfelter
 Disse felter giver vores økonomidirektør et overblik over vigtige virksomhedsdata.  Når hun ser noget interessant, kan hun vælge et felt for at grave ned i dataene.
 
@@ -123,6 +155,8 @@ Lad os se på branchen *Distribution*.
 Vi kan ligeledes granske andre brancher og endog føje kunder til vores visuals for at få indsigt i årsagerne til Valerys præstation.
 
 Dette er et sikkert miljø at lege i. Du kan altid vælge ikke at gemme dine ændringer. Hvis du gemmer dem, kan du altid gå til **Hent data** for at få en ny kopi af dette eksempel.
+
+Du kan også nøjes med at [downloade datasættet (Excel-projektmappe) til dette eksempel](http://go.microsoft.com/fwlink/?LinkId=529781).
 
 ## <a name="next-steps-connect-to-your-data"></a>Næste trin: Opret forbindelse til dine data
 Vi håber, at denne rundtur har vist, hvordan Power BI-dashboards, spørgsmål og svar og rapporter kan give indsigt i kundedata. Nu er det din tur – opret forbindelse til dine egne data. Med Power BI kan du oprette forbindelse til en lang række datakilder. Få mere at vide om, hvordan du [kommer i gang med Power BI](service-get-started.md).

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 01/23/2018
 ms.author: maggies
-ms.openlocfilehash: 3515a57f88db1c8a7b12706680c0aade8b2cdbfa
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 610234a221c5ab1de976f9d554292395760efa0f
+ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -50,7 +50,7 @@ Power BI-rapporter er gemt på forskellige steder i mobilappen, afhængigt af hv
   ![Telefonrapport i liggende format](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
 
 ## <a name="view-reports-optimized-for-phones"></a>Vis rapporter, der er optimeret til telefoner
-Den, der opretter en rapport i Power BI, kan oprette et rapportlayout, som er specifikt optimeret til telefoner. Hvis en rapport er optimeret til telefoner, vises den med et særligt ikon på listen over rapporter ![Ikon for rapport, der er optimeret til telefoner](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
+Den, der opretter en rapport i Power BI, kan oprette et rapportlayout, som er specifikt optimeret til telefoner. Rapportsider optimeret til telefoner har supplerende funktionalitet: F.eks. kan du analysere og sortere i visuals i fokustilstand, og du kan tilgå [filtrene, som rapportens forfatter har føjet til rapportsiden](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). Hvis en rapport er optimeret til telefoner, vises den med et særligt ![Telefonrapport-ikon](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
 
 ![Åbn en rapport, der er optimeret til telefoner](media/mobile-reports-in-the-mobile-apps/power-bi-android-phone-report.png)
 
@@ -58,7 +58,7 @@ Når du får vist rapporten på en telefon, åbnes den i stående format.
 
 ![Rapport i stående format](media/mobile-reports-in-the-mobile-apps/07-power-bi-phone-report-portrait.png)
 
-En rapport kan have flere sider, hvor nogle er optimeret til telefoner, mens andre sider ikke er. Hvis det er tilfældet, skifter visningen fra stående til liggende format på de enkelte sider, når du bladrer i rapporten.
+ En rapport kan have flere sider, hvor nogle er optimeret til telefoner, mens andre sider ikke er. Hvis det er tilfældet, skifter visningen fra stående til liggende format på de enkelte sider, når du bladrer i rapporten.
 
 Læs mere om [rapporter, der er optimeret til visning på telefoner](mobile-apps-view-phone-report.md).
 

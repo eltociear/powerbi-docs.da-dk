@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/23/2017
 ms.author: mihart
-ms.openlocfilehash: 44c248d1a99a10c69b3fb7c78e68320fdc5cd2b2
-ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
+ms.openlocfilehash: 2d8ed3c30d289646504071daca098df1f41f6aab
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="scatter-charts-and-bubble-charts-in-power-bi-tutorial"></a>Punktdiagrammer og boblediagrammer i Power BI (selvstudium)
 Et punktdiagram har altid to værdiakser for at vise ét sæt numeriske data langs en vandret akse og et andet sæt numeriske værdier langs en lodret akse. Diagrammet viser punkter ved skæringspunktet for en numerisk x- og y-værdi og kombinerer disse værdier i enkelte datapunkter. Disse datapunkter kan være fordelt jævnt eller ujævnt på tværs af den vandrette akse afhængigt af dataene.
@@ -30,6 +30,8 @@ Et punktdiagram har altid to værdiakser for at vise ét sæt numeriske data lan
 Et boblediagram erstatter datapunkterne med bobler, hvor boble*størrelsen* repræsenterer en yderligere dimension af dataene.
 
 ![](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
+
+Du kan fastsætte antallet af datapunkter  
 
 ## <a name="when-to-use-a-scatter-chart-or-bubble-chart"></a>Hvornår skal man bruge et punktdiagram eller boblediagram?
 ### <a name="scatter-charts-are-a-great-choice"></a>Punktdiagrammer er praktiske til følgende situationer:
@@ -39,7 +41,7 @@ Et boblediagram erstatter datapunkterne med bobler, hvor boble*størrelsen* repr
 * Hvis du vil ændre den vandrette akse til en logaritmisk skala.
 * Hvis du vil vise projektmappedata, der inkluderer par eller grupperede værdisæt. I et punktdiagram kan du tilpasse akseskalaerne uafhængigt af hinanden for at afsløre flere oplysninger om grupperede værdier.
 * Til at vise mønstre i store datasæt, for eksempel ved at vise lineære eller ikke-lineære tendenser, klynger og udenforliggende værdier.
-* Til at sammenligne et stort antal datapunkter uanset tid. Jo flere data du inkluderer i et punktdiagram, jo bedre sammenligninger kan du foretage.
+* Til at sammenligne store antal datapunkter uden hensyntagen til tiden.  Jo flere data, du medtager i et punktdiagram, jo bedre er sammenligningerne, du kan udføre.
 
 ### <a name="bubble-charts-are-a-great-choice"></a>Boblediagrammer er praktiske til følgende situationer:
 * Hvis dine data har 3 dataserier, som hver indeholder et sæt af værdier.
@@ -76,13 +78,20 @@ Nu har jeg et punktdiagram, der viser Total Sales Variance % langs Y-aksen og Sa
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 3. Du kan eventuelt [formatere farver, navne, titler, baggrund og mere i dine visualiseringer](service-getting-started-with-color-formatting-and-axis-properties.md).
 
-## <a name="accessibility"></a>Tilgængelighed
+   Du kan også ændre mærkeformen til diamant, trekant eller firkant:
 
-Du kan gøre dit punktdiagram eller boblediagram mere tilgængeligt for personer med handicap ved hjælp af *mærkeformer*. 
+   ![Firkantet mærke](media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
 
-Hvis du vil vælge mærkeformer, skal du vælge afsnittet **Format** i ruden **Visualiseringer**, udvide afsnittet **Former** og derefter vælge en mærkeform.
+4. Du kan også vælge at indstille antallet af datapunkter, der skal vises i dit boblediagram, i afsnittet **Format** på ruden **Visualiseringer** ved at udvide kortet **Generelt** og justere **Datamængde**. Standarden er 3500. 
+ 
+    ![Datamængde](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
 
-![Mærkeform](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
+   > [!NOTE]
+   > Da flere datapunkter kan føre til en længere indlæsningstid, hvis du vælger at publicere rapporter med grænser i den højere ende af skalaen, skal du sørge for at afprøve dine rapporter på tværs af internettet og mobilnettet samt sørge for, at ydeevnen opfylder dine brugeres forventninger.
+
+5.   Hvis du evt. vil vælge mærkeformen, skal du udvide kortet **Figurer** og derefter vælge en mærkeform.
+
+      ![Mærkeform](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 ### <a name="your-scatter-chart-has-only-one-data-point"></a>**Dit punktdiagram har kun ét datapunkt**

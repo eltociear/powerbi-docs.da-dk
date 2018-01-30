@@ -1,5 +1,5 @@
 ---
-title: "Opret udvalgte spørgsmål til Spørgsmål og svar i Power BI"
+title: "Sådan oprettes udvalgte spørgsmål til Spørgsmål og svar i Power BI"
 description: "Dokumentation om, hvordan man opretter udvalgte spørgsmål til Spørgsmål og svar i Power BI"
 services: powerbi
 documentationcenter: 
@@ -16,16 +16,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/24/2017
+ms.date: 01/18/2018
 ms.author: mihart
-ms.openlocfilehash: 4b8a606cd110c13a615be88d49f04e68b3f2cbe6
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+ms.openlocfilehash: e6a83796afe6afab02ec463d3dd2074d1fdc529a
+ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Opret udvalgte spørgsmål til Spørgsmål og svar i Power BI
-Hvis du ejer et datasæt, kan du tilføje dine egne udvalgte spørgsmål i det pågældende datasæt.  Og Spørgsmål og svar i Power BI viser disse spørgsmål til kollegaer, der bruger dit datasæt.  De udvalgte spørgsmål giver dine kollegaer en ide om, hvilke typer af spørgsmål, de kan stille om datasættet. Det er op til dig, hvilke udvalgte spørgsmål, du tilføjer – tilføj populære spørgsmål, spørgsmål, der viser interessante resultater, eller spørgsmål, der kan være svære at sætte ord på.
+Hvis du ejer et datasæt, kan du tilføje dine egne udvalgte spørgsmål i det pågældende datasæt.  Og Spørgsmål og svar i Power BI viser disse spørgsmål til kollegaer, der bruger (*forbruger*) dit datasæt.  De udvalgte spørgsmål giver dine kollegaer en ide om, hvilke typer af spørgsmål, de kan stille om datasættet. Det er op til dig, hvilke udvalgte spørgsmål, du tilføjer – tilføj populære spørgsmål, spørgsmål, der viser interessante resultater, eller spørgsmål, der kan være svære at sætte ord på.
 
 Se Will tilføje nogle udvalgte spørgsmål i Spørgsmål og svar i Power BI, og derefter bruge disse udvalgte spørgsmål til at udforske sit datasæt. Følg derefter den trinvise vejledning under videoen for at prøve det selv.
 
@@ -33,7 +33,6 @@ Se Will tilføje nogle udvalgte spørgsmål i Spørgsmål og svar i Power BI, og
 
 > [!NOTE]
 > Udvalgte spørgsmål i Spørgsmål og svar er også tilgængelige i [Microsoft Power BI-appen til iOS på iPads, iPhones og iPod Touch-enheder](mobile-apps-ios-qna.md) samt i prøveversionen af Spørgsmål og svar til Power BI Desktop. Men oprettelse af spørgsmålene er kun tilgængelig i Power BI-tjenesten (app.powerbi.com).
-> 
 > 
 
 I denne artikel anvendes [Retail Analysis Sales-eksemplet](sample-datasets.md).
@@ -54,7 +53,7 @@ I denne artikel anvendes [Retail Analysis Sales-eksemplet](sample-datasets.md).
    ![](media/service-q-and-a-create-featured-questions/power-bi-filled-map.png)
 
 ### <a name="next-steps"></a>Næste trin
-[Spørgsmål og svar i Power BI](service-q-and-a.md)  
+[Spørgsmål og svar i Power BI](power-bi-q-and-a.md)  
 [Selvstudium: Introduktion til Spørgsmål og svar i Power BI](power-bi-visualization-introduction-to-q-and-a.md)  
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

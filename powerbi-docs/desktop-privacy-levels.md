@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 01/19/2018
 ms.author: davidi
-ms.openlocfilehash: 733e24f44c63b8887c3c8b00999f7cea22581a86
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 743f9dc0a96c2816693695f4ca2878aba09873df
+ms.sourcegitcommit: a973bc6adc88507932e7e1535a74208e3842f5c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/20/2018
 ---
 # <a name="power-bi-desktop-privacy-levels"></a>Niveauer for beskyttelse af personlige oplysninger i Power BI Desktop
 I **Power BI Desktop** angiver niveauerne for beskyttelse af personlige oplysninger et isolationsniveau, der definerer, i hvilket omfang én datakilde isoleres fra andre datakilder. Et begrænsende isolationsniveau blokerer oplysninger, så de ikke udveksles mellem datakilder, men det kan reducere funktionaliteten og have indflydelse på ydeevnen.
@@ -69,6 +69,10 @@ Hvis du vil konfigurere niveauet for beskyttelse af personlige oplysninger for e
 
 > **Sikkerhedsbemærkning:** Hvis du aktiverer **Niveauer for beskyttelse af personlige oplysninger** ved at vælge **Ignorer beskyttelsesniveauerne, og øg muligvis ydeevnen** i dialogboksen **Niveauer for beskyttelse af personlige oplysninger**, kan der muligvis vises følsomme eller fortrolige data for en uautoriseret person. Aktivér ikke **Niveauer for beskyttelse af personlige oplysninger**, medmindre du er sikker på, at datakilden ikke indeholder følsomme eller fortrolige data.
 > 
+> 
+
+> [!CAUTION]
+> Indstillingen **Ignorer niveauerne for beskyttelse af personlige oplysninger, og øg muligvis ydeevnen** fungerer ikke i Power BI-tjenesten. Power BI Desktop-rapporter med denne indstilling aktiveret, som derefter publiceres til Power BI-tjenesten, vil som sådan *ikke* afspejle denne funktionalitet, når den bruges i tjenesten.
 > 
 
 **Konfigurer niveauer for beskyttelse af personlige oplysninger**

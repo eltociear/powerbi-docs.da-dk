@@ -1,6 +1,6 @@
 ---
-title: Visualiseringer i Power BI
-description: Dokumentation om visualiseringer i Microsoft Power BI.
+title: Oversigt over rapportvisualiseringer i Power BI-tjenesten og Desktop
+description: Oversigt over rapportvisualiseringer (visuals) i Microsoft Power BI.
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -16,16 +16,24 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 01/21/2018
 ms.author: mihart
-ms.openlocfilehash: 7b23ec8bf284de5419db98c326b206e205e253ec
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: bb9244268a0a68f7b15877ae7ff567fe35cb2a1a
+ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="visualizations-in-power-bi"></a>Visualiseringer i Power BI
-Du kan bruge datavisualiseringer til at interagere med dine data for at få indsigt i virksomheden. Opret og tilpas visualiseringer i dine rapporter, og fastgør dem på dine dashboards.   
+# <a name="visualizations-in-power-bi-reports"></a>Visualiseringer i Power BI-rapporter
+Visualiseringer (dvs. visuals) viser indsigter, der er blevet registreret i dataene. En rapport i Power BI har muligvis en enkelt side med én visual, eller den kan have sider fulde af visuals. I Power BI-tjenesten kan visuals [fastgøres fra rapporter til dashboards](service-dashboard-pin-tile-from-report.md). 
+
+Det er vigtigt at skelne mellem rapporters *forfattere* og rapporters *forbrugere* Hvis du er personen, der opretter eller redigerer rapporten, så er du forfatter.  Forfattere har tilladelse til at redigere rapporten og dens underliggende datasæt. Det betyder, at du i Power BI Desktop kan åbne datasættet i Datavisning og oprette visuals i Rapportvisning. Det betyder, at du i Power BI-tjenesten kan åbne datasæt eller rapporter i rapporteditoren i [Redigeringsvisning](service-reading-view-and-editing-view.md). Hvis en rapport eller et dashboard er blevet [delt med dig](service-shared-with-me.md), så er du rapportens **forbruger**. Du kan få vist og interagere med rapporten og dens visuals, men du kan ikke gemme ændringerne.
+
+Der er mange forskellige typer visuals, der fås direkte fra ruden VISUALISERINGER i Power BI. 
+
+![](media/power-bi-report-visualizations/power-bi-visualizations.png)
+
+Du kan desuden tilgå mange flere muligheder ved at besøge [webstedet for Microsoft AppSource-community'et](https://appsource.microsoft.com), hvor du kan finde og downloade[brugerdefinerede visuals](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) leveret af Microsoft og community'et.    
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
@@ -36,18 +44,18 @@ Du kan bruge datavisualiseringer til at interagere med dine data for at få inds
 [Opret visualiseringer](power-bi-report-add-visualizations-i.md) på siderne i dine rapporter. Gennemse [listen over visualiseringer og vores selvstudier om visualiseringer.](power-bi-visualization-types-for-reports-and-q-and-a.md) 
 
 ## <a name="upload-a-custom-visualization-and-use-it-in-power-bi"></a>Upload en brugerdefineret visualisering, og brug den i Power BI
-Tilføj en brugerdefineret visualisering, som du selv har oprettet, eller som du har fundet i [Office Store](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Er du i det kreative hjørne? Dyk ned i kildekoden, brug udviklerværktøjerne til at oprette en ny visualiseringstype, og [del den med communityet](http://visuals.powerbi.com)
+Tilføj en brugerdefineret visualisering, som du selv har oprettet, eller som du har fundet på [webstedet for Microsoft AppSource-community'et](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). Er du i det kreative hjørne? Dyk ned i kildekoden, brug [udviklerværktøjer](service-custom-visuals-getting-started-with-developer-tools.md) til at oprette en ny visualiseringstype, og [del den med community'et](developer/office-store.md)
 
 ## <a name="change-the-visualization-type"></a>Ret visualiseringstypen
 Prøv at [vælge en anden type visualisering](power-bi-report-change-visualization-type.md) for at se, hvilken der fungerer bedst med dine data.
 
 ## <a name="pin-the-visualization"></a>Fastgør visualiseringen
-Når du har fået tilpasset visualiseringen til det, du har brug for, kan du [fastgøre den på dashboardet](service-dashboard-pin-tile-from-report.md) som et felt. Hvis du ændrer visualiseringen i rapporten, efter at du har fastgjort den, ændres feltet på dashboardet ikke.
+Når du har fået tilpasset visualiseringen til det, du har brug for i Power BI-tjenesten, kan du [fastgøre den på et dashboard](service-dashboard-pin-tile-from-report.md) som et felt. Hvis du ændrer visualiseringen, der bruges i rapporten, når du har fastgjort den, så ændres feltet på dashboardet ikke – et kurvediagram forbliver et kurvediagram, selvom du har ændret det til et kransediagram i rapporten.
 
 ## <a name="next-steps"></a>Næste trin
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 [Rapporter i Power BI](service-reports.md)  
 [Dashboards i Power BI](service-dashboards.md)  
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)  
-Har du flere spørgsmål? [Prøv Power BI-communityet](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
