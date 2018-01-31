@@ -3,7 +3,7 @@ title: Tilmelding til Power BI som enkeltperson
 description: "Få mere at vide om, hvordan du tilmelder dig Power BI og begynder at bruge det til personlige rapporter og visualiseringsopgaver, der passer til dine behov."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/09/2017
-ms.author: asaxton
-ms.openlocfilehash: b09c497f04a59819f42e1841dd79912d19303041
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.author: maghan
+ms.openlocfilehash: 728d19b468ed4a58d598ad417a2767186cfdcb96
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Tilmelding til Power BI som enkeltperson
 Få mere at vide om, hvordan du tilmelder dig Power BI og begynder at bruge det til personlige rapporter og visualiseringsopgaver, der passer til dine behov.
@@ -117,13 +117,13 @@ Derefter kan du vælge **Start prøveperiode**.
 ![](media/service-self-service-signup-for-power-bi/powerbi-pro-trial2.png)
 
 >[!NOTE]
->Brugere, der benytter sig af denne Power BI Pro-prøveperiode inde i produktet, vises ikke i Office 365-administrationsportalen som Power BI Pro-prøvebrugere (de vises som gratis Power BI-brugere). De vises dog som Power BI Pro-prøvebrugere på siden **Administrer lager** i Power BI.
+>Brugere, der benytter sig af denne Power BI Pro-prøveversion inde i produktet, vises ikke i Office 365-administrationsportalen som Power BI Pro-prøvebrugere (de vises som gratis Power BI-brugere). De vises dog som Power BI Pro-prøvebrugere på siden **Administrer lager** i Power BI.
 
 >[!NOTE]
 >Hvis du er it-administrator og ønsker at hente og installere Power BI-prøvelicenser til flere brugere i din organisation, uden at de enkelte brugere skal acceptere vilkårene, kan du tilmelde dig et [Power BI Pro-prøveabonnement](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO). Du skal være global administrator eller faktureringsadministrator i Office 365, eller du skal oprette en ny lejer for at tilmelde dig en administratorprøveversion. Du kan få mere at vide under [Køb af Power BI Pro](service-admin-purchasing-power-bi-pro.md).
 > 
 > [!NOTE]
-> Med tilgængeligheden af Power BI Premium og ændringerne i tilbuddet om det gratis Power BI d. 1. juni 2017 er du muligvis berettiget til en udvidet Pro-prøveversion. Du kan få mere at vide under [Aktivering af udvidet Pro-prøveversion](service-extended-pro-trial.md).
+> Med tilgængeligheden af Power BI Premium og ændringerne i tilbuddet om det gratis Power BI 1. juni 2017, er du muligvis berettiget til en udvidet Pro-prøveversion. Du kan få mere at vide under [Aktivering af udvidet Pro-prøveversion](service-extended-pro-trial.md).
 > 
 > 
 
@@ -151,5 +151,5 @@ I mange tilfælde kan tilmelding til Power BI foretages ved at følge den enkle 
 [Power BI Premium – hvad er det?](service-premium.md)  
 [Hvidbog til Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

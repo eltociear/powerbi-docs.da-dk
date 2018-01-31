@@ -3,7 +3,7 @@ title: "Brug udviklerværktøjer til at oprette brugerdefinerede visuals"
 description: "Du kan bruge visuals til at opfylde dine brugeres behov og matche din apps design. Få mere at vide om, hvordan du opretter brugerdefinerede visuals til Power BI med udviklerværktøjer."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/30/2017
-ms.author: asaxton
-ms.openlocfilehash: bdba3cb9a7dc64dbf71a48a7ae2223e74c302b70
-ms.sourcegitcommit: 0f6db65997db604e8e9afc9334cb65bb7344d0dc
+ms.author: maghan
+ms.openlocfilehash: c7ed6a9b8acc74c9d4e39ff21a10624a208847f4
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Brug udviklerværktøjer til at oprette brugerdefinerede visuals
 Du kan bruge visuals til at opfylde dine brugeres behov og matche din apps design. Få mere at vide om, hvordan du opretter brugerdefinerede visuals til Power BI med udviklerværktøjer.

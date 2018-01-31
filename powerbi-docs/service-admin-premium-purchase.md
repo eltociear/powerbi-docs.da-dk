@@ -3,7 +3,7 @@ title: "Sådan køber du Power BI Premium"
 description: "Få mere at vide om, hvordan du kan administrere Power BI Premium og give adgang til indhold for hele organisationen."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/17/2017
-ms.author: asaxton
-ms.openlocfilehash: 6dd0191a480274e7a9b03b182113edd4c734c2ef
-ms.sourcegitcommit: bb577045145b2e6e5807622a53cefa2d46574618
+ms.author: maghan
+ms.openlocfilehash: c24d1d973870fc0d50dc95cc1a8822487cd51091
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Sådan køber du Power BI Premium
 Få mere at vide om, hvordan du kan købe Power BI Premium-kapacitet til din organisation.

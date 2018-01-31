@@ -3,7 +3,7 @@ title: "Ofte stillede spørgsmål om Power BI Premium"
 description: "Gennemse en liste med ofte stillede spørgsmål og svar om tilbuddene i Power BI Premium."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/20/2017
-ms.author: asaxton
-ms.openlocfilehash: 8764e4ca69d8d7ce7580147c52abe868cd49d2f5
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: maghan
+ms.openlocfilehash: ccec7821b206e9cd935756f45c0960d23fc28737
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="power-bi-premium-faq"></a>Ofte stillede spørgsmål om Power BI Premium
 Gennemse en liste med ofte stillede spørgsmål og svar om tilbuddene i Power BI Premium.
@@ -50,7 +50,7 @@ Power BI Premium består af kapacitet i Power BI-tjenesten, der udelukkende er a
 Power BI Pro er til de brugere, der publicerer rapporter, deler dashboards, samarbejder med kolleger i arbejdsområder og er engageret i andre relaterede aktiviteter og f.eks.:
 
 * Redigerer og gemmer brugerdefinerede visninger.
-* Opretter personlige dashboards (fastgøres til nye dashboard).
+* Oprette personlige dashboards (fastgøres til nye dashboard).
 * Analyserer data i Excel eller Power BI Desktop.
 * Deler med understøttelse af Excel Web App.
 * Deler dashboards og samarbejder med Office 365 Grupper.

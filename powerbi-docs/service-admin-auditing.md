@@ -3,7 +3,7 @@ title: "Brug af overvågning i din organisation"
 description: "Få mere at vide om, hvordan du kan bruge overvågning med Power BI til at overvåge og undersøge udførte handlinger. Du kan bruge Security & Compliance Center eller PowerShell."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/12/2017
-ms.author: asaxton
-ms.openlocfilehash: c4c62ab5c24b7abe2760535da0a6cf69982c7174
-ms.sourcegitcommit: 2bd3c16fd300e41c6e3de29a24543491c1d53354
+ms.author: maghan
+ms.openlocfilehash: 4aca31605b0627929951c34dfb74aa736c89a04f
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="using-auditing-within-your-organization"></a>Brug af overvågning i din organisation
 
