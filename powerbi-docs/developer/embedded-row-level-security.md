@@ -3,7 +3,7 @@ title: "Brug sikkerhed på rækkeniveau med integreret Power BI-indhold"
 description: "Få mere at vide om, hvordan du integrerer Power BI-indhold i dit program."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/21/2017
-ms.author: asaxton
-ms.openlocfilehash: ffaf4439f48b23dcff8e965b5bea1aeaf19afcc0
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+ms.author: maghan
+ms.openlocfilehash: b9d39e2214b20677141a6e6beb9d61b628c320c2
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Brug sikkerhed på rækkeniveau med integreret Power BI-indhold
 Sikkerhed på rækkeniveau (Row Level Security eller RLS) kan bruges til at begrænse brugeradgang til data i dashboards, felter, rapporter og datasæt. Flere forskellige brugere kan arbejde med de samme artefakter og stadig få vist forskellige data. Integrering understøtter RLS.

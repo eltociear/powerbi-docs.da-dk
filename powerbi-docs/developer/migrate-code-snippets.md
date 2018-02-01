@@ -3,7 +3,7 @@ title: "Kodestykker til overførsel af indhold fra Power BI Embedded"
 description: "Her får du nogle kodestykker til de grundlæggende handlinger, der skal bruges til overførsel af indhold"
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 07/21/2017
-ms.author: asaxton
-ms.openlocfilehash: 39be2f2fad9b111bf99c7df2905a90833a2751a3
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: maghan
+ms.openlocfilehash: c868c039e8edfe218c2a578402690a40ed1f3030
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-embedded"></a>Kodestykker til overførsel af indhold fra Power BI Embedded
 Her får du nogle kodestykker til de grundlæggende handlinger, der skal bruges til overførsel af indhold. Hvis du arbejder med relaterede flows til bestemte rapporttyper, skal du se [Sådan overfører du indhold fra samlinger i arbejdsområdet i Power BI Embedded til Power BI](migrate-from-powerbi-embedded.md#content-migration).
@@ -235,10 +235,10 @@ I dette kodestykke antager vi, at det datasæt, der skal overføres, allerede fi
 [Sådan overfører du indhold fra samlinger i arbejdsområdet i Power BI Embedded til Power BI](migrate-from-powerbi-embedded.md)  
 [Sådan integrerer du Power BI-dashboards, -rapporter og -felter](embedding-content.md)  
 [Power BI Premium – hvad er det?](../service-premium.md)  
-[JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
-[Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
+[Git-lager til JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript)  
+[Git-lager til Power BI C#](https://github.com/Microsoft/PowerBI-CSharp)  
 [Integreret JavaScript-eksempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Hvidbog til Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

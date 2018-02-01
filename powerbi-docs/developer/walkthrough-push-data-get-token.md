@@ -3,7 +3,7 @@ title: Hent et adgangstoken til godkendelse
 description: "Gennemgang til push af data – hent et adgangstoken til godkendelse"
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/10/2017
-ms.author: asaxton
-ms.openlocfilehash: 068baa78315bfc7e4f7078ed47596a480dbe3765
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.author: maghan
+ms.openlocfilehash: b2bec0ed32133c6882365ec257840cc3bf0b6119
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Trin 2: Hent et adgangstoken til godkendelse
 Denne artikel er en trinvis gennemgang af, hvordan du kan [pushe data til et datasæt](walkthrough-push-data.md).
@@ -119,7 +119,7 @@ Herunder kan du se den [komplette kode](#code).
 
 <a name="code"/>
 
-## <a name="complete-code-listing"></a>Komplet kode
+## <a name="complete-code-listing"></a>Komplet kodeliste
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
@@ -189,5 +189,5 @@ Herunder kan du se den [komplette kode](#code).
 [Push data til et Power BI-datasæt](walkthrough-push-data.md)  
 [Oversigt over Power BI REST-API'en](overview-of-power-bi-rest-api.md)  
 [Power BI REST-API-reference](https://msdn.microsoft.com/library/mt147898.aspx)  
-Har du flere spørgsmål? [Prøv Power BI-communityet](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

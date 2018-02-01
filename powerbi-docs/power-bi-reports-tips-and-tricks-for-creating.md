@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/29/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: ea4666c9a1af0a7d3f21c8088cdce0a1935d1bf4
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 2d82cee4a825be9c38b3545210e182924147c0f3
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="tips-for-creating-stunning-reports"></a>Tips til oprettelse af flotte rapporter
 Oprettelse og arbejde med rapporter i Power BI-tjenesten og i Power BI Desktop ligner meget hinanden, så de fleste af disse links gælder for begge.
@@ -49,5 +49,5 @@ Communitymedlem Miguel Myers er Data Scientist og Graphic Designer.
 
 [Rapporter i Power BI](service-reports.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

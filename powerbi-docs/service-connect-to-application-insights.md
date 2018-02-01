@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: fe4b35a6132a1d36f48e54e1c779454009402340
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+ms.openlocfilehash: 0ec1ca9bccabd923b67fc1f49da4b7321ba11141
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="connect-to-application-insights-with-power-bi"></a>Opret forbindelse til Application Insights med Power BI
 Brug Power BI til at oprette effektive brugerdefinerede dashboards fra telemetrien [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/). Få oplysninger om din apptelemetri på nye måder. Kombiner målepunkter fra flere apps eller komponenttjenester på ét dashboard. Denne første version af Power BI-indholdspakken til Application Insights indeholder widgets til målinger, der er relateret til almindeligt forbrug, f.eks. aktive brugere, sidevisning, sessioner, browser- og operativsystemversion samt geografisk fordeling af brugere på et kort.
@@ -61,6 +61,7 @@ Opret forbindelse til [Application Insights-indholdspakken til Power BI](https:/
 ## <a name="whats-included"></a>Følgende er inkluderet
 Application Insights-indholdspakken indeholder følgende tabeller og målepunkter:  
 
+     ´´´
     - ApplicationDetails  
     - UniqueUsersLast7Days   
     - UniqueUsersLast30Days   
@@ -76,11 +77,12 @@ Application Insights-indholdspakken indeholder følgende tabeller og målepunkte
     - SessionsDailyLast30Days   
     - SessionsByCountryLast7Days   
     - SessionsByCountryLast30Days   
-    - PageViewsByCountryDailyLast30Days   
+    - PageViewsByCountryDailyLast30Days  
+   ´´´ 
 
 <a name="FindingAppInsightsParams"></a>
 
-## <a name="finding-parameters"></a>Find parametre
+## <a name="finding-parameters"></a>Søgning efter parametre
 Ressourcenavnet, ressourcegruppen og abonnements-id'et findes alt sammen på Azure-portalen. Når navnet vælges, åbnes en detaljeret visning, og du kan bruge Essentials-rullelisten til at finde alle de værdier, du har brug for.
 
 ![Application Insights-parametre](media/service-connect-to-application-insights/pbi_contpkappinsitparams.png)

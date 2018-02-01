@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 11/02/2017
+ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: 95fccd70b536a26baf93bf4735750e5599e3021f
-ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
+ms.openlocfilehash: 8f8a090714a7dabcc189304428f03161f3d47abc
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="manage-your-data-source---sql-server"></a>Administrer din datakilde – SQL Server
 Når du har installeret datagatewayen i det lokale miljø, kan du tilføje datakilder, der kan bruges sammen med gatewayen. I denne artikel kan du se, hvordan du arbejder med gateways og datakilder. Du kan bruge SQL Server-datakilden enten til planlagte opdateringer eller DirectQuery.
@@ -82,7 +82,7 @@ Du kan konfigurere niveauet for beskyttelse af personlige oplysninger for dataki
 ![](media/service-gateway-enterprise-manage-sql/datasourcesettings9.png)
 
 ## <a name="remove-a-data-source"></a>Fjern en datakilde
-Hvis du fjerner en datakilde, ødelægger det alle dashboards eller rapporter, der er baseret på den pågældende datakilde.  
+Hvis du fjerner en datakilde, ødelægger det alle dashboards eller rapporter, der anvender den pågældende datakilde.  
 
 Hvis du vil fjerne en datakilde, skal du gå til datakilden > **Fjern**.
 
@@ -97,7 +97,7 @@ Under fanen Administratorer for gatewayen kan du tilføje og fjerne brugere (ell
 Under fanen Brugere for datakilden kan du tilføje og fjerne brugere eller sikkerhedsgrupper, som kan bruge denne datakilde.
 
 > [!NOTE]
-> Listen med brugere bestemmer kun, hvem der har tilladelse til at publicere rapporter. Rapporternes ejere kan oprette dashboards eller indholdspakker og dele dem med andre brugere.
+> Listen over brugere kan kun bruges til at styre, hvem der har tilladelse til at publicere rapporter. Rapporternes ejere kan oprette dashboards eller indholdspakker og dele dem med andre brugere.
 > 
 > 
 
@@ -111,7 +111,7 @@ Når du har oprettet datakilden, bliver den tilgængelig til brug med enten Dire
 > 
 > 
 
-Forbindelsen mellem dit datasæt og datakilden i gatewayen er baseret på dit servernavn og databasenavn. Disse skal stemme overens. Hvis du f.eks. angiver en IP-adresse for servernavnet i **Power BI Desktop**, skal du bruge IP-adressen til datakilden i konfigurationen af gatewayen. Hvis du bruger *SERVER\FOREKOMST* i Power BI Desktop, skal du bruge det samme i den datakilde, der er konfigureret for gatewayen.
+Linket mellem dit datasæt og datakilden i gatewayen er baseret på dit servernavn og databasenavn. Disse skal stemme overens. Hvis du f.eks. angiver en IP-adresse for servernavnet i **Power BI Desktop**, skal du bruge IP-adressen til datakilden i konfigurationen af gatewayen. Hvis du bruger *SERVER\FOREKOMST* i Power BI Desktop, skal du bruge det samme i den datakilde, der er konfigureret for gatewayen.
 
 Det er tilfældet for både DirectQuery og planlagt opdatering.
 
@@ -130,5 +130,5 @@ Hvis du er angivet under fanen **Brugere** for den datakilde, der er konfigurere
 * [Datagateway i det lokale miljø – detaljeret](service-gateway-onprem-indepth.md)  
 * [Fejlfinding af datagateway i det lokale miljø](service-gateway-onprem-tshoot.md)
 * [Brug Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md). 
-* Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

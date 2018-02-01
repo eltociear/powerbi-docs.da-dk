@@ -3,7 +3,7 @@ title: Brug af den samme konto til Power BI og Azure
 description: "Sådan bruger du samme kontologon til Power BI og Azure"
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/28/2017
-ms.author: asaxton
-ms.openlocfilehash: a601e4252e8c2b3bc130b61139ffb528742ea7ea
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: maghan
+ms.openlocfilehash: b2659747a875ee6bb14c0ec52f7d4fa71d233ed9
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="using-the-same-account-for-power-bi-and-azure"></a>Brug af den samme konto til Power BI og Azure
 Hvis du både bruger Power BI og Azure, kan du med fordel bruge samme logon til begge tjenester, så du ikke er nødt til at indtaste din adgangskode to gange.
@@ -41,5 +41,5 @@ Du kan tilføje din organisationskonto som en medadministrator i Azure.  Sådan 
 
 Næste gang du logger på Azure-administrationsportalen, skal du bruge din organisationsmailadresse.
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

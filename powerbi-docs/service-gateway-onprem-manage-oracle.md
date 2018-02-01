@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: 820bd1fabbb2770b938160420ac0e5bf97ece703
-ms.sourcegitcommit: 8f72ce6b35aa25979090a05e3827d4937dce6a0d
+ms.openlocfilehash: fee1179f5a42c70721324e21f1ce87e4ae9ad132
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="manage-your-data-source---oracle"></a>Administrer din datakilde – Oracle
 Når du har installeret datagatewayen i det lokale miljø, skal du tilføje datakilder, der kan bruges sammen med gatewayen. I denne artikel kan du se, hvordan du arbejder med gateways og datakilder. Du kan bruge Oracle-datakilden til enten planlagte opdateringer eller DirectQuery.
@@ -101,7 +101,7 @@ Derefter skal du angive oplysninger om datakilden, herunder **Server** og **Data
 Du skal også vælge en **Godkendelsesmetode**.  Denne kan enten være **Windows** eller **Basis**.  Du skal vælge **Basis**, hvis du skal bruge en konto, der er oprettet i Oracle i stedet for Windows-godkendelse. Indtast derefter legitimationsoplysningerne, der skal bruges til denne datakilde.
 
 > [!NOTE]
-> Alle forespørgsler til datakilden kører ved hjælp af disse legitimationsoplysninger. Du kan få mere at vide om, hvordan [legitimationsoplysninger](service-gateway-onprem.md#credentials) gemmes, i den primære artikel om datagateways i det lokale miljø.
+> Alle forespørgsler til datakilden kører ved hjælp af disse legitimationsoplysninger. Du kan finde flere oplysninger i hovedartiklen om datagateways i det lokale miljø, hvor det beskrives, hvordan du gemmer [legitimationsoplysninger](service-gateway-onprem.md#credentials).
 > 
 > 
 
@@ -117,7 +117,7 @@ Du kan konfigurere niveauet for beskyttelse af personlige oplysninger for dataki
 ![](media/service-gateway-onprem-manage-oracle/datasourcesettings9.png)
 
 ## <a name="remove-a-data-source"></a>Fjern en datakilde
-Hvis du fjerner en datakilde, ødelægger det alle dashboards eller rapporter, der er baseret på den pågældende datakilde.  
+Hvis du fjerner en datakilde, ødelægger det alle dashboards eller rapporter, der anvender den pågældende datakilde.  
 
 Hvis du vil fjerne en datakilde, skal du gå til datakilden > **Fjern**.
 
@@ -132,7 +132,7 @@ Under fanen Administratorer for gatewayen kan du tilføje og fjerne brugere (ell
 Under fanen Brugere for datakilden kan du tilføje og fjerne brugere eller sikkerhedsgrupper, som kan bruge denne datakilde.
 
 > [!NOTE]
-> Listen med brugere bestemmer kun, hvem der har tilladelse til at publicere rapporter. Rapporternes ejere kan oprette dashboards eller indholdspakker og dele dem med andre brugere. Brugere, der anvender rapporten eller dashboardet, behøver ikke være på brugerlisten.
+> Listen over brugere kan kun bruges til at styre, hvem der har tilladelse til at publicere rapporter. Rapporternes ejere kan oprette dashboards eller indholdspakker og dele dem med andre brugere. Brugere, der anvender rapporten eller dashboardet, behøver ikke være på brugerlisten.
 > 
 > 
 
@@ -153,7 +153,7 @@ Det er tilfældet for både DirectQuery og planlagt opdatering.
 ### <a name="using-the-data-source-with-directquery-connections"></a>Brug af datakilden med DirectQuery-forbindelser
 Du skal sikre dig, at servernavn og databasenavn stemmer overens mellem Power BI Desktop og den konfigurerede datakilde for gatewayen. Du skal også at sikre dig, at din bruger er angivet på fanen **Brugere** i datakilden for at kunne publicere DirectQuery-datasæt. Valget til DirectQuery sker i Power BI Desktop, når du importerer data første gang. [Få mere at vide](desktop-use-directquery.md)
 
-Når du publicerer fra enten Power BI Desktop eller **Hent Data**, bør dine rapporter begynde at fungere. Det kan tage flere minutter, efter du har oprettet en datakilde i gatewayen, før forbindelsen kan bruges.
+Når du publicerer fra enten Power BI Desktop eller **Hent data**, bør dine rapporter begynde at fungere. Det kan tage flere minutter, efter du har oprettet datakilden i gatewayen, før forbindelsen kan bruges.
 
 ### <a name="using-the-data-source-with-scheduled-refresh"></a>Brug datakilden med planlagt opdatering
 Hvis du er angivet på fanen **Brugere** for den datakilde, der er konfigureret i gatewayen, og server- og databasenavn stemmer overens, får du vist gatewayen som en mulighed, der kan bruges sammen med planlagt opdatering.

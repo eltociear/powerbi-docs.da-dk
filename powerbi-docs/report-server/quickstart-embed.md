@@ -3,7 +3,7 @@ title: "Indlejring af rapport ved hjælp af en iFrame"
 description: "Installationen af selve Power BI-rapportserver er meget hurtig. Download, installation og konfiguration er hurtigt overstået, og du kan få det hele op at køre på få minutter."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/09/2017
 ms.author: maghan
-ms.openlocfilehash: 0019b0a8d3fa628a1b3932a4c19eba0bf0d66ee3
-ms.sourcegitcommit: eec6b47970bf69ed30638d1a20051f961ba792f2
+ms.openlocfilehash: 56835bfb25c8c930099fadf710137f69fa89fc2e
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="quickstart-embed-a-power-bi-report-using-an-iframe-and-url-parameters"></a>Hurtigstart: Integrer en Power BI-rapport ved hjælp af en iFrame og URL-parametre
 

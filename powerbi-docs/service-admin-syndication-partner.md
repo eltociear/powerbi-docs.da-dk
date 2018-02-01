@@ -3,7 +3,7 @@ title: "Det var ikke muligt at føje Power BI til O365-partner"
 description: "Det var ikke muligt at føje Power BI til en Office 365-syndikeringspartner. Den syndikerede model er en indkøbsmodel, der bruges af Office 365."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 09/05/2017
-ms.author: asaxton
-ms.openlocfilehash: e5b2540461464e64acac4bc3b2be2e6ac5ee3f1d
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: maghan
+ms.openlocfilehash: 69d069ebb1620aebb90fa1a9325ab4b73726d909
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Det var ikke muligt at føje Power BI til en partners Office 365-abonnement
 Office 365 giver virksomheder mulighed for at forhandle Office 365 samlet og integreret med deres egne løsninger, hvorved slutkunder får adgang til et enkelt kontaktpunkt for køb, fakturering og support.

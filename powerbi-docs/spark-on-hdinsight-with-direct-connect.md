@@ -3,7 +3,7 @@ title: Spark on HDInsight med DirectQuery
 description: Spark on HDInsight med DirectQuery
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/28/2017
-ms.author: asaxton
-ms.openlocfilehash: 41e29c343480930878ccce888b0c613f0c960cd8
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.author: maghan
+ms.openlocfilehash: c2b0f2fab2b9ccd2540ad45d6156ce9547513deb
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="spark-on-hdinsight-with-directquery"></a>Spark on HDInsight med DirectQuery
 Med Spark on Azure HDInsight med DirectQuery kan du oprette dynamiske rapporter, der er baseret på data og målinger, du allerede har i din Spark-klynge. Med DirectQuery sendes forespørgsler tilbage til din Azure HDInsight Spark-klynge, mens du udforsker dataene i rapportvisning. Denne oplevelse foreslås for brugere, der kender de enheder, de opretter forbindelse til.
@@ -79,5 +79,5 @@ Du kan også tildele flere ressourcer på Azure-portalen under **Configuration**
 [Kom i gang: Opret Apache Spark-klyngen på HDInsight Linux, og kør interaktive forespørgsler ved hjælp af Spark SQL](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-jupyter-spark-sql)  
 [Introduktion til Power BI](service-get-started.md)  
 [Hent data til Power BI](service-get-data.md)  
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

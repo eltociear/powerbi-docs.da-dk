@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: d65bdf17997809cd4bcaa2718da42ba41398bcf4
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: d9702f49b7d1c7589bea06ddb44384e97d6055fc
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="manage-your-sap-hana-data-source"></a>Administrer din SAP HANA-datakilde
 Når du har installeret datagatewayen i det lokale miljø, skal du tilføje datakilder, der kan bruges sammen med gatewayen. I denne artikel kan du se, hvordan du arbejder med gateways og datakilder. Du kan bruge SAP HANA-datakilden enten til planlagte opdateringer eller DirectQuery.
@@ -59,7 +59,7 @@ Du kan derefter vælge **Datakildetype** på listen.
 Derefter skal du angive oplysninger om datakilden, herunder **Server**, **Brugernavn** og **Adgangskode**.
 
 > [!NOTE]
-> Alle forespørgsler til datakilden kører ved hjælp af disse legitimationsoplysninger. Du kan få mere at vide om, hvordan [legitimationsoplysninger](service-gateway-onprem.md#credentials) gemmes, i den primære artikel om datagateways i det lokale miljø.
+> Alle forespørgsler til datakilden kører ved hjælp af disse legitimationsoplysninger. Du kan finde flere oplysninger i hovedartiklen om datagateways i det lokale miljø, hvor det beskrives, hvordan du gemmer [legitimationsoplysninger](service-gateway-onprem.md#credentials).
 > 
 > 
 
@@ -75,7 +75,7 @@ Du kan konfigurere niveauet for beskyttelse af personlige oplysninger for dataki
 ![](media/service-gateway-enterprise-manage-sap/datasourcesettings9.png)
 
 ## <a name="remove-a-data-source"></a>Fjern en datakilde
-Hvis du fjerner en datakilde, ødelægger det alle dashboards eller rapporter, der er baseret på den pågældende datakilde.  
+Hvis du fjerner en datakilde, ødelægger det alle dashboards eller rapporter, der anvender den pågældende datakilde.  
 
 Hvis du vil fjerne en datakilde, skal du gå til datakilden > **Fjern**.
 
@@ -90,31 +90,31 @@ Under fanen Administratorer for gatewayen kan du tilføje og fjerne brugere (ell
 Under fanen Brugere for datakilden kan du tilføje og fjerne brugere eller sikkerhedsgrupper, som kan bruge denne datakilde.
 
 > [!NOTE]
-> Listen med brugere bestemmer kun, hvem der har tilladelse til at publicere rapporter. Rapporternes ejere kan oprette dashboards eller indholdspakker og dele dem med andre brugere.
+> Listen over brugere kan kun bruges til at styre, hvem der har tilladelse til at publicere rapporter. Rapporternes ejere kan oprette dashboards eller indholdspakker og dele dem med andre brugere.
 > 
 > 
 
 ![](media/service-gateway-enterprise-manage-sap/datasourcesettings5.png)
 
-## <a name="using-the-data-source"></a>Brug af datakilden
+## <a name="using-the-data-source"></a>Brug datakilden
 Når du har oprettet datakilden, bliver den tilgængelig til brug med enten DirectQuery-forbindelser eller via planlagt opdatering.
 
 > [!NOTE]
-> Server- og databasenavn skal stemme overens mellem Power BI Desktop og datakilden i den lokale datagateway!
+> Server- og databasenavn skal stemme overens mellem Power BI Desktop og datakilden i datagatewayen i det lokale miljø!
 > 
 > 
 
-Forbindelsen mellem dit datasæt og datakilden i gatewayen er baseret på dit servernavn og databasenavn. Disse skal stemme overens. Hvis du f.eks. angiver en IP-adresse for servernavnet i Power BI Desktop, skal du bruge IP-adressen til datakilden i konfigurationen af gatewayen. Hvis du bruger *SERVER\FOREKOMST* i Power BI Desktop, skal du bruge det samme i den datakilde, der er konfigureret for gatewayen.
+Linket mellem dit datasæt og datakilden i gatewayen er baseret på dit servernavn og databasenavn. Disse skal stemme overens. Hvis du f.eks. angiver en IP-adresse for servernavnet i Power BI Desktop, skal du bruge IP-adressen til datakilden i konfigurationen af gatewayen. Hvis du bruger *SERVER\FOREKOMST* i Power BI Desktop, skal du bruge det samme i den datakilde, der er konfigureret for gatewayen.
 
 Det er tilfældet for både DirectQuery og planlagt opdatering.
 
 ### <a name="using-the-data-source-with-directquery-connections"></a>Brug af datakilden med DirectQuery-forbindelser
 Du skal sikre dig, at servernavn og databasenavn stemmer overens mellem Power BI Desktop og den konfigurerede datakilde for gatewayen. Du skal også at sikre dig, at din bruger er angivet på fanen **Brugere** i datakilden for at kunne publicere DirectQuery-datasæt. Valget til DirectQuery sker i Power BI Desktop, når du importerer data første gang. [Få mere at vide](desktop-use-directquery.md)
 
-Når du publicerer fra enten Power BI Desktop eller **Hent Data**, bør dine rapporter begynde at fungere. Det kan tage flere minutter, efter du har oprettet en datakilde i gatewayen, før forbindelsen kan bruges.
+Når du publicerer fra enten Power BI Desktop eller **Hent data**, bør dine rapporter begynde at fungere. Det kan tage flere minutter, efter du har oprettet datakilden i gatewayen, før forbindelsen kan bruges.
 
 ### <a name="using-the-data-source-with-scheduled-refresh"></a>Brug datakilden med planlagt opdatering
-Hvis du er angivet på fanen **Brugere** for den datakilde, der er konfigureret i gatewayen, og server- og databasenavn stemmer overens, får du vist gatewayen som en mulighed, der kan bruges sammen med planlagt opdatering.
+Hvis du er angivet under fanen **Brugere** for den datakilde, der er konfigureret i gatewayen, og server- og databasenavn stemmer overens, får du vist gatewayen som en mulighed, der kan bruges sammen med planlagt opdatering.
 
 ![](media/service-gateway-enterprise-manage-sap/powerbi-gateway-enterprise-schedule-refresh.png)
 
@@ -122,5 +122,5 @@ Hvis du er angivet på fanen **Brugere** for den datakilde, der er konfigureret 
 [Datagateway i det lokale miljø](service-gateway-onprem.md)  
 [Datagateway i det lokale miljø – detaljeret](service-gateway-onprem-indepth.md)  
 [Fejlfinding af datagateway i det lokale miljø](service-gateway-onprem-tshoot.md)  
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -3,7 +3,7 @@ title: "Overførselsværktøj i Power BI Embedded"
 description: "Du kan bruge dette overførselsværktøj til at kopiere dine rapporter fra Power BI Embedded Azure-tjenesten (PaaS) til Power BI-tjenesten (SaaS)."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/21/2017
-ms.author: asaxton
-ms.openlocfilehash: 2efcf5b4f1a0384c50b9a39864de2af8271d1299
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: maghan
+ms.openlocfilehash: e1892d17b61347379965c192287d2f814640a02d
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Overførselsværktøj i Power BI Embedded
 Du kan bruge dette overførselsværktøj til at kopiere dine rapporter fra Power BI Embedded Azure-tjenesten (PaaS) til Power BI-tjenesten (SaaS).
@@ -258,13 +258,13 @@ Nu, hvor dine rapporter er overført fra Power BI Embedded Azure-tjenesten til P
 Du kan finde flere oplysninger under [Sådan overfører du indhold fra arbejdsområdesamlinger i Power BI Embedded til Power BI](migrate-from-powerbi-embedded.md).
 
 ## <a name="next-steps"></a>Næste trin
-[Integration med Power BI](embedding.md)  
-[Sådan overfører du indhold fra arbejdsområdesamlinger i Power BI Embedded til Power BI](migrate-from-powerbi-embedded.md)  
+[Integrer med Power BI](embedding.md)  
+[Sådan overfører du indhold i arbejdsområdesamlingen i Power BI Embedded til Power BI](migrate-from-powerbi-embedded.md)  
 [Power BI Premium – hvad er det?](../service-premium.md)  
-[JavaScript API Git repo](https://github.com/Microsoft/PowerBI-JavaScript)  
-[Power BI C# Git repo](https://github.com/Microsoft/PowerBI-CSharp)  
+[Git-lager til JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript)  
+[Git-lager til Power BI C#](https://github.com/Microsoft/PowerBI-CSharp)  
 [Integreret JavaScript-eksempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Hvidbog til Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
