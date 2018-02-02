@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/22/2018
 ms.author: davidi
-ms.openlocfilehash: 6b2002348ae7e8ef2bb2e112eb8be967d0c68545
-ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
+ms.openlocfilehash: 4ca79e960bc0370789ee735ba6b5391cbb8b110f
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint-preview"></a>Eksportér rapporter fra Power BI til PowerPoint (preview)
 Med Power BI kan du nu publicere din rapport i **Microsoft PowerPoint** og nemt oprette et slidesæt ud fra din Power BI-rapport. Når du **eksporterer til PowerPoint**, sker der følgende:
@@ -89,7 +89,9 @@ Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbe
 * Sider i PowerPoint oprettes altid i 9:16-standardstørrelsen, uanset de oprindelige sidestørrelser eller dimensioner i Power BI-rapporten.
 * Rapporter, der ejes af en bruger uden for dit Power BI-lejerdomæne (f.eks. en rapport, der ejes af nogen uden for din organisation og er delt med dig), kan ikke publiceres til PowerPoint.
 * Hvis du deler et dashboard med en person uden for din organisation (og dermed en bruger, der ikke er i din Power BI-lejer), kan denne bruger ikke eksportere det delte dashboards tilknyttede rapporter til PowerPoint. Hvis du f.eks. er aaron@contoso.com, kan du dele med david@cohowinery.com. Men david@cohowinery.com kan ikke eksportere de tilknyttede rapporter til PowerPoint.
-* Hver rapportside eksporteres som tidligere nævnt som et enkelt billede i PowerPoint-filen. 
+* Hver rapportside eksporteres som tidligere nævnt som et enkelt billede i PowerPoint-filen.
+* I Power BI-tjenesten anvendes din Power BI-sprogindstilling for PowerPoint-eksporten. Hvis du vil se eller indstille dine sprogindstillinger, skal du vælge tandhjulsikonet ![](media/service-report-subscribe/power-bi-settings-icon.png) **> Indstillinger > Generelt > Sprog**.
+* **Downloadtidspunktet** på det forreste slide af den eksporterede PowerPoint-fil svarer til eksporttidspunktet iht. den tidszone, der er angivet på din computer.
 
 ## <a name="next-steps"></a>Næste trin
 [Analysér i Excel](service-analyze-in-excel.md)

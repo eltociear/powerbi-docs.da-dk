@@ -1,5 +1,5 @@
 ---
-title: "Fastgør en hel rapportside til et Power BI-dashboard "
+title: "Sådan fastgør du en hel rapportside til et Power BI-dashboard "
 description: "Dokumentationen om, hvordan du fastgør en hel dynamisk rapportside til et Power BI-dashboard fra en rapport."
 services: powerbi
 documentationcenter: 
@@ -16,16 +16,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: ee8e7541db7f40a5d01607c6551ee734eb9f3d5b
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 8174a3043d544191032ec65e3b9a1710547b18ab
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Fastgør en hel rapportside, som et dynamisk felt, til et Power BI-dashboard
-En anden måde at tilføje et nyt [dashboardfelt](service-dashboard-tiles.md) på er ved at fastgøre en hel rapportside.  Dette er en nem metode til at fastgøre mere end én visualisering ad gangen.  Når du fastgør en hel side, er felterne også *dynamiske*, og du kan interagere med dem direkte på dashboardet. Og de ændringer, du foretager af visualiseringerne i rapporteditoren, f.eks. ved at tilføje et filter eller ændre de felter, der bruges i diagrammet, afspejles også i dashboardfeltet.  
+En anden måde at tilføje et nyt [dashboardfelt](service-dashboard-tiles.md) på er ved at fastgøre en hel rapportside. Dette er en nem metode til at fastgøre mere end én visualisering ad gangen.  Når du fastgør en hel side, er felterne også *dynamiske*, og du kan interagere med dem direkte på dashboardet. Og de ændringer, du foretager af visualiseringerne i rapporteditoren, f.eks. ved at tilføje et filter eller ændre de felter, der bruges i diagrammet, afspejles også i dashboardfeltet.  
+
+Det er kun muligt at fastgøre dynamiske felter fra rapporter på dashboards i Power BI-tjenesten (app.powerbi.com).
 
 > [!NOTE]
 > Du kan ikke fastgøre felter fra rapporter, der deles med dig.
@@ -59,5 +61,5 @@ Se Amanda fastgøre en dynamisk rapportside til et dashboard, og følg derefter 
 ## <a name="next-steps"></a>Næste trin
 [Dashboards i Power BI](service-dashboards.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

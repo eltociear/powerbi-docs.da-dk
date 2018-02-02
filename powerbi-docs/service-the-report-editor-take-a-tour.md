@@ -1,5 +1,5 @@
 ---
-title: "Rapporteditoren... Få en introduktion"
+title: "Hurtig introduktion – Rapporteditoren ... Få en rundvisning"
 description: "Rapporteditoren... Få en introduktion."
 services: powerbi
 documentationcenter: 
@@ -16,20 +16,26 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/30/2017
+ms.date: 01/23/2018
 ms.author: mihart
-ms.openlocfilehash: e5ee6db22fe0fa7fd1e61ebbfb7dbee9d3458159
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 8ecee2c5de9959937b5afa56cdf5b3679c5b9a5e
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="the-report-editortake-a-tour"></a>Rapporteditoren... Få en introduktion
+## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Redigering af rapporter i Power BI-tjenesten og Power BI Desktop
 Rapporteditoren i Power BI-tjenesten og rapporteditoren i Power BI Desktop ligner hinanden meget. Videoen viser rapporteditoren i Power BI Desktop, og denne artikel viser rapporteditoren i Power BI-tjenesten. 
+
+## <a name="the-difference-between-report-creators-and-report-consumers"></a>Forskellen mellem *oprettere* og *forbrugere* af rapporter
+Muligheden for at oprette og redigere en rapport er begrænset til rapportejere (dvs. *oprettere*). Hvis du *forbruger* en rapport, der er blevet delt med dig, vil du stadig kunne åbne og interagere med rapporten i Power BI-tjenesten vha. [Kun læsevisning](service-reading-view-and-editing-view.md), men alle de robuste og omfattende funktioner er ikke tilgængelige for rapportopretteren.  
+
+Hvis du vil vide mere om læsevisning i forbindelse med rapporter, skal du se under [Læsevisning og redigeringsvisning i Power BI-tjenesten](service-reading-view-and-editing-view.md) 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-I Power BI-tjenesten er *rapporteditoren* kun tilgængelig i [Redigeringsvisning](service-reading-view-and-editing-view.md). Du skal være rapportejer for at åbne en rapport i Redigeringsvisning.
+I Power BI-tjenesten er *rapporteditoren* kun tilgængelig i [Redigeringsvisning](service-reading-view-and-editing-view.md). Du skal være rapportejer eller rapportopretter for at åbne en rapport i Redigeringsvisning.
 
 Power BI-rapporteditoren består af 3 afsnit:  
 
@@ -87,7 +93,9 @@ Med ruden Analytics i Power BI-tjenesten kan du føje dynamiske referencelinjer 
 
 - - -
 ## <a name="the-filters-pane"></a>Ruden Filtre
-Få vist, angiv og rediger filtre for side, rapport, detaljeadgang og visuelt niveau.
+Brug ruden Filtre til at få vist, angive og redigere faste filtre til dine rapporter på side-, rapport-, detaljeadgangs- og visualiseringsniveau. Ja, du kan udføre ad hoc-filtrering på rapportsider og visualiseringer ved at vælge elementer i visualiseringerne eller ved at anvende værktøjer, f.eks. udsnitsværktøjer, men når du bruger ruden Filtre, gemmes filtertilstanden i rapporten. 
+
+Ruden Filtre indeholder en af fire effektive funktioner – muligheden for at filtrere ved hjælp af et felt, ***der er ikke allerede bruges i en af visualiseringerne i rapporten***. Lad mig forklare. Når du opretter en rapportside, føjer Power BI automatisk alle de felter, du bruger i dine visualiseringer, til filterområdet i ruden Filtre på visualiseringsniveau.  Men hvis du vil angive en visualisering, en side, en detaljeadgang eller et rapportfilter vha. et felt, der ikke bruges i en visualisering i øjeblikket, skal du bare trække det til en filterbucket.   
 
 ![](media/service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
 
@@ -125,13 +133,9 @@ Rapportcanvasset er det sted, dit arbejde vises. Når du bruger ruderne Felter, 
 ## <a name="next-steps"></a>Næste trin:
 [Opret en rapport](service-report-create-new.md)
 
-[Rediger en rapport](service-interact-with-a-report-in-editing-view.md)
-
-Få mere at vide om [rapporter i Power BI](service-reports.md)
-
-[Introduktion til Power BI](service-get-started.md)
+Læs mere om rapporter i [Power BI-tjenesten](service-reports.md), [Power BI Desktop](desktop-report-view.md) og [Power BI – Mobil](mobile-apps-view-phone-report.md).
 
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

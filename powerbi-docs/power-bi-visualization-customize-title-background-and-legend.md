@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: 424e96c5315bd41fc79999555097602f629a1285
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 52ad27e0f809ed5c3cf4ae22f0d536f88cae0f0c
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds-tutorial"></a>Tilpas visualiseringstitler, -forklaringer og baggrunde (selvstudium)
 I dette selvstudium lærer du et par forskellige måder, hvorpå du kan tilpasse dine visualiseringer.   Der findes mange muligheder for at tilpasse dine visualiseringer. Den bedste måde at lære dem at kende på, er ved at prøve sig frem med indstillingerne under fanen Formatering (vælg ikonet med malerullen).  I denne artikel kan du se, hvordan du tilpasser en visualiserings titel, forklaring og baggrund.  
@@ -33,9 +33,12 @@ Se Amanda tilpasse visualiseringerne i hendes rapport (spol frem til 4:50 i vide
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
+### <a name="prerequisites"></a>Forudsætninger
+- Power BI-tjenesten eller Power BI Desktop
+- Retail Analysis Sample
 
 ## <a name="customize-visualization-titles-in-reports"></a>Tilpas titler på visualiseringer i rapporter
-Hvis du vil følge med, skal du logge på app.powerbi og [åbne rapporten Retail Analysis Sample](sample-datasets.md) i [redigeringsvisning](service-interact-with-a-report-in-editing-view.md).
+Hvis du vil følge med, skal du logge på Power BI-tjenesten (app.powerbi.com) og [åbne rapporten Retail Analysis Sample](sample-datasets.md) i [redigeringsvisning](service-interact-with-a-report-in-editing-view.md).
 
 > [!NOTE]
 > Når du fastgør en visualisering på et dashboard, bliver den til et dashboardfelt.  Selve felterne kan også tilpasses med [nye titler og undertitler, links og tilpasning af størrelsen](service-dashboard-edit-tile.md).
@@ -120,9 +123,8 @@ Udvid indstillingerne under Baggrund i det samme søjlediagram.
 | Vandfaldsdiagram |ja |ja |ja |
 
 ## <a name="next-steps"></a>Næste trin
-Få mere at vide om [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)  
 [Tilpas X- og Y-aksen](power-bi-visualization-customize-x-axis-and-y-axis.md)  
 [Tilpas farver og akseegenskaber](service-getting-started-with-color-formatting-and-axis-properties.md)  
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)  
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

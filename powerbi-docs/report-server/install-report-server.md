@@ -3,7 +3,7 @@ title: "Installér Power BI-rapportserver"
 description: 'Find ud af, hvordan du installerer Power BI-rapportserver. '
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/08/2017
+ms.date: 01/29/2018
 ms.author: maghan
-ms.openlocfilehash: 93a91ae70a43281f9a30292adb8bcdffb3033223
-ms.sourcegitcommit: eec6b47970bf69ed30638d1a20051f961ba792f2
+ms.openlocfilehash: 340e4a79e4ab0950143ea1af4f1c9a1f9c54b64c
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/06/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="install-power-bi-report-server"></a>Installér Power BI-rapportserver
 
@@ -29,9 +29,11 @@ Find ud af, hvordan du installerer Power BI-rapportserver.
 
  **Download** ![download](media/install-report-server/download.png "download")
 
-Hvis du vil downloade Power BI-rapportserver, skal du gå til [Rapportering i det lokale miljø med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/). Hvis du vil hente Power BI Desktop optimeret til Power BI-rapportserver, skal du gå til [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=837581).
+Hvis du vil downloade Power BI-rapportserver, skal du gå til [Rapportering i det lokale miljø med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/). 
 
-![tip](media/install-report-server/fyi-tip.png "tip") Se de aktuelle produktbemærkninger i [Power BI-rapportserver – produktbemærkninger](release-notes.md).
+Gå til Microsoft Downloade Center for at downloade [Microsoft Power BI Desktop](https://go.microsoft.com/fwlink/?linkid=861076) (optimeret til Power BI-rapportserver – oktober 2017).
+
+![tip](media/install-report-server/fyi-tip.png "tip") Se de aktuelle produktbemærkninger i [Power BI Report Server – produktbemærkninger](release-notes.md).
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/zacaEb9A4F0?showinfo=0" frameborder="0" allowfullscreen></iframe>
 

@@ -1,6 +1,6 @@
 ---
-title: Tabelvisualiseringer i Power BI-rapporter og -dashboards (selvstudium)
-description: Tip til at arbejde med tabelvisualiseringer i Power BI-rapporter og dashboards, herunder, hvordan du tilpasser kolonnebredder.
+title: "Selvstudium – tabelvisualiseringer i Power BI-rapporter og -dashboards (selvstudium)"
+description: Selvstudium til at arbejde med tabelvisualiseringer i Power BI-rapporter og dashboards, herunder, hvordan du tilpasser kolonnebredder.
 services: powerbi
 documentationcenter: 
 author: mihart
@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/27/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: e4a2e162ca193af756e7182fb118bc7e72d38d28
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 4785df6bbc14bf0da4500a9cffdcd47381e412f4
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="working-with-tables-in-power-bi-reports-and-dashboards-tutorial"></a>Arbejd med tabeller i Power BI-rapporter og -dashboards (selvstudium)
 En tabel er et gitter, der indeholder relaterede data i logiske serier af rækker og kolonner. Den kan også indeholde overskrifter og en række til totaler. Tabeller fungerer godt med kvantitative sammenligninger, hvor du får vist mange værdier for en enkelt kategori. Denne tabel viser for eksempel fem forskellige målinger for **Category**.
@@ -40,11 +40,16 @@ Tabeller er et godt valg til at:
 > Hvis en tabel indeholder for mange værdier, kan du overveje at konvertere den til en matrix og/eller bruge detailudledning.
 > 
 > 
+## <a name="prerequisites"></a>Forudsætninger
+ - Power BI-tjenesten eller Power BI Desktop
+ - Retail Analysis Sample
+
 
 ## <a name="create-a-table"></a>Opret en tabel
-Hvis du selv vil følge med i trinnene i dette selvstudium, skal du logge på Power BI og vælge **Hent data > Eksempler > Eksempel på detailhandelsanalyse**. I selvstudiet kan du oprette den tabel, der vises herover, for at få vist salgsværdierne efter varekategori.
+I selvstudiet kan du oprette den tabel, der vises herover, for at få vist salgsværdierne efter varekategori. Log på Power BI-tjenesten for at følge fremgangsmåden, og vælg **Hent Data \>Eksempler \> Eksempel på detailhandelsanalyse > Opret forbindelse**, og vælg **Gå til dashboard. Oprettelse af en visualisering kræver redigeringsrettigheder til datasættet og rapporten. Heldigvis kan alle Power BI-eksemplerne redigeres. Hvis en rapport er blevet delt med dig, kan du ikke oprette visualiseringer i den.
 
-1. Vælg fanen Datasæt under **Mit arbejdsområde**, og rul ned til datasættet Detailhandelsanalyse, som du lige har tilføjet.  Vælg ikonet **Opret rapport**.
+1. I navigationsruden til venstre skal du vælge **Arbejdsområder > Mit arbejdsområde**.    
+2. Vælg fanen Datasæt, og rul ned til eksempeldatasættet Detailhandelsanalyse, som du lige har tilføjet.  Vælg ikonet **Opret rapport**.
    
     ![](media/power-bi-visualization-tables/power-bi-create-report.png)
 2. Vælg **Item** > **Category** i rapporteditoren.  Power BI opretter automatisk en tabel over alle kategorierne.
@@ -115,5 +120,5 @@ Nogle gange kan Power BI afskære en kolonneoverskrift i en rapport og på et da
 
 ![](media/power-bi-visualization-tables/resizetable.gif)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

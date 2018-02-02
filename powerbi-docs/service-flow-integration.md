@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/30/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: efab2e6be1d376a0da70c13bb66144ba34afa58c
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+ms.openlocfilehash: edae145e8eef6dfe7a2c4cea3a7f467f6f7961a9
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="microsoft-flow-and-power-bi"></a>Microsoft Flow og Power BI
 
@@ -35,7 +35,9 @@ Se, hvordan Sirui opretter et Flow, der sender en detaljeret mail til kollegaer,
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YhmNstC39Mw" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="create-a-flow-that-is-triggered-by-a-power-bi-data-alert"></a>Opret et flow, der udløses af databeskeder i Power BI
-Denne vejledning viser, hvordan du opretter to forskellige flows; et fra en skabelon og et fra bunden. Følg med ved at [oprette en databesked i Power BI](service-set-data-alerts.md) og [tilmelde dig Microsoft Flow](https://flow.microsoft.com/en-us/#home-signup) (det er gratis!).
+
+### <a name="prerequisites"></a>Forudsætninger
+Denne vejledning viser, hvordan du opretter to forskellige flows; et fra en skabelon og et fra bunden. Hvis du vil følge med, [skal du oprette en databesked i Power BI](service-set-data-alerts.md), oprette en gratis Slack-konto og [tilmelde dig Microsoft Flow](https://flow.microsoft.com/en-us/#home-signup) (det er gratis!).
 
 ## <a name="create-a-flow-that-uses-power-bi---from-a-template"></a>Opret et flow, der bruger Power BI – fra en skabelon
 I denne opgave skal vi bruge en skabelon til at oprette et enkelt flow, der udløses af en databesked i Power BI (meddelelse).
@@ -47,39 +49,40 @@ I denne opgave skal vi bruge en skabelon til at oprette et enkelt flow, der udl�
 3. Vælg **Opret fra skabelon**.
    
     ![](media/service-flow-integration/power-bi-template.png)
-4. Brug søgefeltet til at finde Power BI-skabeloner, og vælg **Send en meddelelse til en Slack-kanal, når en Power BI-databesked udløses**.
+4. Brug søgefeltet til at finde Power BI-skabeloner, og vælg **Send en mail til en målgruppe, når en Power BI-databesked udløses > Fortsæt**.
    
-    ![](media/service-flow-integration/power-bi-template2.png)
-5. Vælg **Brug denne skabelon**.
-   
-   ![](media/service-flow-integration/power-bi-use-template.png)
-6. Hvis du bliver spurgt, skal du oprette forbindelse til Slack og Power BI ved at vælge **Log på** og derefter følge anvisningerne. En grøn markering fortæller dig, om du er logget på.  Når du har bekræftet dine tilslutninger, skal du vælge **Fortsæt**.
-   
-   ![](media/service-flow-integration/power-bi-flow-signin.png)
+    ![](media/service-flow-integration/power-bi-flow-alert.png)
+
 
 ### <a name="build-the-flow"></a>Byg flowet
-Denne skabelon indeholder en udløser (Power BI-databesked om nye olympiske medaljer til Irland) og en handling (send en meddelelse til Slack). Når du vælger et felt, viser Flow dynamisk indhold, du kan inkludere.  I dette eksempel inkluderer vi feltværdien og feltets URL-adresse i meddelelsens brødtekst.
+Denne skabelon indeholder en udløser (Power BI-databesked om nye olympiske medaljer til Irland) og en handling (send en mail). Når du vælger et felt, viser Flow dynamisk indhold, du kan inkludere.  I dette eksempel inkluderer vi feltværdien og feltets URL-adresse i meddelelsens brødtekst.
 
-![](media/service-flow-integration/power-bi-flow-template.png)
+![](media/service-flow-integration/power-bi-template1.png)
 
 1. Vælg Power BI-databeskeden fra rullemenuen i udløseren. Vælg **Ny medalje til Irland**. Hvis du vil vide mere om, hvordan du opretter en besked, skal du læse [Databeskeder i Power BI](service-set-data-alerts.md).
    
    ![](media/service-flow-integration/power-bi-trigger-flow.png)
-2. Hvis du vil sende data til Slack, skal du indtaste et kanalnavn og en meddelelse (du kan også vælge den standardmeddelelse, Flow opretter). Bemærk, det dynamiske indhold vi har medtaget i meddelelsens tekstfelt.
+2. Angiv en eller flere gyldige mailadresser, og vælg derefter **Rediger** (vist nedenfor) eller **Tilføj dynamisk indhold**. 
    
-   > [!NOTE]
-   > Medtag "@" i starten af dit kanalnavn.  Hvis Slack-kanalen f.eks. har navnet "kanalA", skal du indtaste "@channelA" i Flow.
-   > 
-   > 
-   
-   ![](media/service-flow-integration/power-bi-flow-slacker.png)
-3. Når du er færdig, skal du vælge **Opret flow** eller **Gem flow**.  Flowet er oprettet og vurderet.  Flow giver dig besked, hvis det finder fejl.
-4. Hvis der er fundet fejl, skal du vælge **Rediger flow** for at løse dem, ellers skal du vælge **Udført** for at køre det nye flow.
+   ![](media/service-flow-integration/power-bi-flow-email.png)
+
+3. Flow opretter en titel og meddelelse for dig, som du kan beholde eller ændre. Alle de værdier, du angav, da du oprettede beskeden i Power BI, er tilgængelige til brug – du skal bare placere markøren og vælge i det område, der er fremhævet med gråt. 
+
+   ![](media/service-flow-integration/power-bi-flow-email-default.png)
+
+1.  Hvis du f.eks. har oprettet en beskedtitel i Power BI af typen **Vi har vundet endnu en medalje**, kan du vælge **Beskedtitel** for at føje teksten til emnefeltet i din mail.
+
+    ![](media/service-flow-integration/power-bi-flow-message.png)
+
+    Du kan også acceptere standardbrødteksten i mailen eller oprette din egen. Ovenstående eksempel indeholder nogle få ændringer af meddelelsen.
+
+1. Når du er færdig, skal du vælge **Opret flow** eller **Gem flow**.  Flowet er oprettet og vurderet.  Flow giver dig besked, hvis det finder fejl.
+2. Hvis der er fundet fejl, skal du vælge **Rediger flow** for at løse dem, ellers skal du vælge **Udført** for at køre det nye flow.
    
    ![](media/service-flow-integration/power-bi-flow-running.png)
-5. Åbn din Slack-konto for at få vist meddelelsen.  
+5. Når databeskeden udløses, sendes der en mail til de angivne adresser.  
    
-   ![](media/service-flow-integration/power-bi-slack-message.png)
+   ![](media/service-flow-integration/power-bi-flow-email2.png)
 
 ## <a name="create-a-flow-that-uses-power-bi---from-scratch-blank"></a>Opret et Flow, der bruger Power BI – fra bunden
 I denne opgave skal vi oprette et enkelt flow fra bunden, der udløses af en databesked i Power BI (meddelelse).
@@ -88,12 +91,12 @@ I denne opgave skal vi oprette et enkelt flow fra bunden, der udløses af en dat
 2. Vælg **Mine flow** > **Opret fra blank**.
    
    ![](media/service-flow-integration/power-bi-my-flows.png)
-3. Brug søgefeltet til at finde en Power BI-udløser, og vælg **Udløs et flow med en Power BI-datastyret besked**.
+3. Brug søgefeltet til at finde en Power BI-udløser, og vælg **Power BI – når en datadrevet besked udløses**.
 
 ### <a name="build-your-flow"></a>Byg dit flow
 1. Vælg navnet på beskeden på rullelisten.  Hvis du vil vide mere om, hvordan du opretter en besked, skal du læse [Databeskeder i Power BI](service-set-data-alerts.md).
    
-    ![](media/service-flow-integration/power-bi-totalstores.png)
+    ![](media/service-flow-integration/power-bi-totalstores2.png)
 2. Vælg **Nyt trin** > **Tilføj en handling**.
    
    ![](media/service-flow-integration/power-bi-new-step.png)
@@ -115,5 +118,5 @@ I denne opgave skal vi oprette et enkelt flow fra bunden, der udløses af en dat
 * [Indstil databeskeder i Power BI-tjenesten](service-set-data-alerts.md)
 * [Indstil databeskeder på din iPhone](mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Indstil databeskeder i Power BI-mobilappen til Windows 10](mobile-set-data-alerts-in-the-mobile-apps.md)
-* Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

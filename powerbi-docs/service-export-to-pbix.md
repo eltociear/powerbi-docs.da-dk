@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/20/2018
+ms.date: 01/24/2018
 ms.author: mihart
-ms.openlocfilehash: 259007c76b7b53ba0ea55a28fbdd189469383364
-ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
+ms.openlocfilehash: 7c0bd2f342385f71fd91bb81a284ef41deb46169
+ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Eksportér en rapport fra Power BI-tjenesten til Desktop (eksempelvisning)
 I Power BI Desktop kan du eksportere (også kaldet *downloade*) en rapport til Power BI-tjenesten ved at gemme rapporten og vælge **Publicer**. Du kan også eksportere i den anden retning og downloade en rapport fra Power BI-tjenesten til Desktop. Filtypenavnet for filer, der eksporteres, i begge retninger, er *.pbix*.
@@ -37,7 +37,7 @@ Følg disse trin for at downloade .pbix-filen:
 2. Vælg **Filer > Download rapport** på menulinjen.
    
    > [!NOTE]
-   > Rapporten skal have været [oprettet ved hjælp af Power BI Desktop](guided-learning/publishingandsharing.yml#step-2) efter 23. november 2016 – eller opdateret siden da – for at kunne downloade rapporten. Hvis det ikke er tilfældet, er menupunktet *Download rapport* nedtonet i Power BI-tjenesten.
+   > Rapporten skal være [oprettet ved hjælp af Power BI Desktop](guided-learning/publishingandsharing.yml#step-2) efter 23. november 2016 – og opdateret efterfølgende – for at den kan downloades. Hvis det ikke er tilfældet, er menupunktet *Download rapport* nedtonet i Power BI-tjenesten.
    > 
    > 
 3. Under oprettelse af .pbix-filen vises fremskridt på et statusbanner. Når filen er klar, bliver du bedt om at åbne eller gemme .pbix-filen. Navnet på filen stemmer overens med titlen på rapporten.
@@ -59,7 +59,7 @@ Følg disse trin for at downloade .pbix-filen:
 Der er nogle vigtige overvejelser og begrænsninger, som er knyttet til download (eksport) af en *.pbix*-fil fra Power BI-tjenesten.
 
 * Hvis du vil hente filen, skal du have adgang til at redigere rapporten
-* Rapporten skal stamme fra **Power BI Desktop** og være blevet *publiceret* til **Power BI-tjenesten**, eller .pbix skal have været *uploadet* til tjenesten.
+* Rapporten skal være oprettet ved hjælp af **Power BI Desktop** og være blevet *publiceret* til **Power BI-tjenesten**, eller .pbix skal være *uploadet* til tjenesten.
 * Rapporter skal være publiceret eller opdateret efter 23. november 2016. Rapporter publiceret før dette tidspunkt kan ikke downloades.
 * Denne funktion vil ikke fungere sammen med rapporter, der oprindeligt er oprettet i **Power BI-tjenesten**, herunder indholdspakker.
 * Du skal altid bruge den seneste version af **Power BI Desktop** ved åbning af downloadede filer. Downloadede *.pbix*-filer åbnes muligvis ikke i versioner af **Power BI Desktop**, der ikke er de nyeste.

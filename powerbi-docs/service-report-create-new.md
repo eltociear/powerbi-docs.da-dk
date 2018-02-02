@@ -1,5 +1,5 @@
 ---
-title: "Opret en ny rapport ud fra et datasæt "
+title: "Selvstudium – Opret en ny rapport ud fra et datasæt "
 description: "Opret en ny Power BI-rapport ud fra et datasæt."
 services: powerbi
 documentationcenter: 
@@ -15,20 +15,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/24/2018
 ms.author: mihart
-ms.openlocfilehash: f4afb1eaa1b3012fdbdb0eff35e9eff695cc32e4
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 7405f2c5663c071d58253f2103c9c7d778ea8299
+ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="create-a-new-power-bi-report-by-importing-a-dataset"></a>Opret en ny Power BI-rapport ved at importere et datasæt
 Du har læst [Rapporter i Power BI](service-reports.md), og nu vil du oprette din egen. Der er mange forskellige måder at oprette en rapport på, og i denne artikel starter vi med at oprette en meget grundlæggende rapport ud fra et Excel-datasæt. Når du har forstået de grundlæggende ting i forbindelse med at oprette en rapport, vejleder de **Næste trin** for neden dig gennem de mere avancerede rapportemner.  
 
 > **TIP!** Hvis du vil oprette en rapport ved at kopiere en eksisterende rapport, skal du se [Kopiér en rapport](power-bi-report-copy.md)
 > 
-> 
+### <a name="prerequisites"></a>Forudsætninger
+- Power BI-tjenesten (se [Desktop-rapportvisning](desktop-report-view.md) for at få oplysninger om oprettelse af rapporter ved hjælp af Power BI Desktop   
+- Eksempel på detailhandelsanalyse
 
 ## <a name="import-the-dataset"></a>Importér datasættet
 Denne metode til oprettelse af en rapport starter med et datasæt og et tomt rapportlærred. For at kunne følge med skal du [downloade Excel-datasættet Retail Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529778) og gemme det på OneDrive for Business (anbefales) eller lokalt.
@@ -83,7 +85,7 @@ Vores marketingchef har nogle yderligere spørgsmål, vi skal besvare. Hun vil g
 4. Vælg **Time** > **Period** for at føje den til feltet **Axis**.
    
     ![](media/service-report-create-new/power-bi-report-step5.png)
-5. For at sortere visualiseringen skal du vælge ellipsen og vælge **Sort by Period**.
+5. Hvis du vil sortere visualiseringen efter tidsperiode, skal du vælge ellipsen og vælge **Sortér efter periode**.
 6. Nu vil vi tilføje udsnittet. Markér et tomt område på lærredet, og vælg skabelonen Slicer ![](media/service-report-create-new/power-bi-slicer-icon.png). Så tilføjes der et tomt udsnitsværktøj på lærredet.
    
     ![](media/service-report-create-new/power-bi-report-step6.png)    
@@ -93,12 +95,11 @@ Vores marketingchef har nogle yderligere spørgsmål, vi skal besvare. Hun vil g
 8. Brug udsnitsværktøjet til at søge efter mønstre og indsigt efter område (District).
    
    ![](media/service-report-create-new/power-bi-slicer-video2.gif)  
-9. Du kan eventuelt fortsætte med at tilføje visualiseringer.
+
+Fortsæt med at udforske dine data og tilføje visualiseringer. Når du finder interessant viden, kan du [fastgøre den til et dashboard](service-dashboard-pin-tile-from-report.md).
 
 ## <a name="next-steps"></a>Næste trin
-* [Opret en kopi af en rapport](power-bi-report-copy.md)
-* [Gem rapporten](service-report-save.md)    
 * [Tilføj en ny side i rapporten](power-bi-report-add-page.md)  
-* Se, hvordan du kan [fastgøre visualiseringer til et dashboard](service-dashboard-pin-tile-from-report.md)    
-* Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+* Se, hvordan du kan [fastgøre visualiseringer til et dashboard](service-dashboard-pin-tile-from-report.md)   
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

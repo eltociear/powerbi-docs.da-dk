@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 01/25/2018
 ms.author: maggies
-ms.openlocfilehash: b9bdde9e258af733dd182f3ea3bd814520a31e8c
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: ad46bd02ffc3c745b63e716759007219421edfd8
+ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-an-ipad"></a>Introduktion til Power BI-mobilappen på en iPad
 Microsoft Power BI til iOS på iPad giver den mobile BI-oplevelse til Power BI, Power BI Report Server og Reporting Services. Få vist og interager med dit firmas dashboards lokalt og i clouden overalt, med direkte, berøringsfølsom mobiladgang. Udforsk dataene i dashboards, og del dem med dine kollegaer i mails eller sms'er. 
@@ -41,7 +41,7 @@ Find ud af, [hvad der er nyt i Power Bi-mobilapperne](mobile-whats-new-in-the-mo
 [Download iPad-appen](http://go.microsoft.com/fwlink/?LinkId=522062) fra Apple App Store.
 
 > [!NOTE]
-> Din iPad skal som minimum køre iOS 9.0. 
+> Din iPad skal som minimum køre iOS 10. 
 > 
 > 
 
@@ -93,7 +93,7 @@ Dine dashboards og rapporter gemmes forskellige steder i Power BI-mobilapperne, 
     Som standard søges i alle dashboards og rapporter, men du kan kun søge ét sted ad gangen.
 
 ## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>Få vist dine foretrukne dashboards, KPI'er og rapporter
-På siden Favoritter i mobilapperne får du vist alle dine foretrukne Power BI-dashboards sammen med Power BI Report Server- og Reporting Services-KPI'er og -rapporter. Når du gør et dashboard til en *favorit* i Power BI-mobilappen, kan du få adgang til det fra alle dine enheder, herunder Power BI-tjenesten i din browser. 
+På siden Favoritter i mobilappsene får du vist alle dine favorit-Power BI-dashboards sammen med Power BI Report Server- og Reporting Services-KPI'er og -rapporter. Når du gør et dashboard til en *favorit* i Power BI-mobilappen, kan du få adgang til det fra alle dine enheder, herunder Power BI-tjenesten i din browser. 
 
 * Tryk på **Favoritter**.
   
@@ -105,7 +105,7 @@ På siden Favoritter i mobilapperne får du vist alle dine foretrukne Power BI-d
 
 Læs mere om [favoritter i Power BI-mobilapperne](mobile-apps-favorites.md).
 
-## <a name="enterprise-support-for-the-power-bi-mobile-apps"></a>Erhvervssupport til Power BI-mobilapperne
+## <a name="enterprise-support-for-the-power-bi-mobile-apps"></a>Erhvervssupport til Power BI-mobilappsene
 Virksomheder kan bruge Microsoft Intune til at styre enheder og apps, herunder Power BI-mobilapperne til Android og iOS.
 
 Microsoft Intune giver organisationerne mulighed for at kontrollere ting som at anmode om adgangskode, kontrollere, hvordan data skal håndteres af programmet, og kryptere appdata, selv når appen ikke er i brug.
@@ -133,9 +133,9 @@ Her er nogle andre ting, du kan gøre i iPad-appen med dashboards og rapporter i
 ### <a name="reports-and-kpis-on-the-report-server-web-portals"></a>Rapporter og KPI'er på rapportserverens webportaler
 * [Få vist rapporter og KPI'er på webportalen](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) i Power BI-mobilappen til iOS-enheder.
 * Opret [KPI'er på webportalen](https://docs.microsoft.com/sql/reporting-services/working-with-kpis-in-reporting-services).
-* Opret [rapporter i Power BI Desktop, og publicer dem på webportalen til Power BI-rapportserver](report-server/quickstart-create-powerbi-report.md)
+* Oprette [rapporter i Power BI Desktop og publicere dem på Power BI Rapport Server](report-server/quickstart-create-powerbi-report.md)-webportalen
 
 ### <a name="see-also"></a>Se også
-* [Introduktion til Power BI](service-get-started.md)  
+* [Kom i gang med Power BI](service-get-started.md)  
 * Har du spørgsmål? Prøv at spørge [Power BI-community'et](http://community.powerbi.com/)
 

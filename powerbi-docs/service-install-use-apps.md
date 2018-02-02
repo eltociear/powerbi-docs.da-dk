@@ -14,13 +14,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/05/2017
+ms.date: 01/24/2018
 ms.author: maggies
-ms.openlocfilehash: 604aed25b4702525cfbecde9c6fe18ded8c41994
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+ms.openlocfilehash: a833961bd2f9ad3af77c6d90a95c0e5b1c307d1a
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer og brug apps med dashboards og rapporter i Power BI
 I Power BI samler *apps* relaterede dashboards og rapporter på ét sted. Personer i din organisation kan oprette og distribuere apps med vigtige forretningsoplysninger. [Eksterne tjenester](service-connect-to-services.md), du muligvis allerede bruger, f.eks. Google Analytics og Microsoft Dynamics CRM, tilbyder også Power BI-apps. 
@@ -31,10 +31,10 @@ Apps er lette at finde og installere i Power BI-tjenesten ([https://powerbi.com]
 
 Med apps ser du automatisk ændringerne, hver gang appens forfatteren udgiver opdateringer. Forfatteren styrer også, hvor ofte dataene er planlagt til opdatering, så du ikke skal bekymre dig om at holde dem opdateret. 
 
-Har du planer om at oprette en app? Se [Opret og publicer apps i Power BI](service-create-distribute-apps.md) for at få flere oplysninger.
+Har du planer om at oprette en app? Du kan få flere oplysninger under [Opret og udgiv apps i Power BI](service-create-distribute-apps.md).
 
 ## <a name="get-a-new-app"></a>Hent en ny app
-Du kan hente apps på to forskellige måder. Appforfatteren kan sende dig et direkte link til en app, eller du kan søge efter den i AppSource, hvor du kan se alle de apps, du har adgang til. I Power BI på din mobilenhed kan du kun installere den fra et direkte link, og ikke fra AppSource. 
+Du kan hente apps på nogle forskellige måder. Appforfatteren kan installere appen automatisk i din Power BI-konto eller sende dig et direkte link til en app, eller du kan søge efter den i AppSource, hvor du kan se alle de apps, du har adgang til. I Power BI på din mobilenhed kan du kun installere den fra et direkte link, og ikke fra AppSource. Hvis appens forfatter installerer appen automatisk, kan du se den på listen over apps.
 
 ### <a name="install-an-app-from-a-direct-link"></a>Installer en app fra et direkte link
 Den nemmeste måde selv at installere en ny app på er at få et direkte link fra appens forfatter. Power BI opretter et installationslink, som forfatteren kan sende til dig.

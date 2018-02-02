@@ -1,5 +1,5 @@
 ---
-title: Links i tabeller
+title: "Sådan føjes et hyperlink til en tabel"
 description: Links i tabeller
 services: powerbi
 documentationcenter: 
@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/30/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: e399553b9a31adb79bed73977409d5d88140ad88
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: a5a38934ab684691921c480a02024376a4655b8b
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="hyperlinks-in-tables"></a>Links i tabeller
 I dette emne kan du lære at bruge Power BI Desktop til at oprette links. Når de er oprettet, kan du bruge enten Power BI Desktop eller Power BI-tjenesten til at tilføje disse links i tabeller og matricer i din rapport. 
@@ -85,10 +85,15 @@ En anden metode til at tilføje links i dine Power BI-tabeller og -matricer er a
    
    ![](media/power-bi-hyperlinks-in-tables/hyperlinksintables.gif)
 
+## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
+Spørgsmål: Kan jeg bruge en brugerdefineret URL-adresse som et hyperlink i en tabel eller en matrix?    
+Svar: Nej. Du kan bruge et linkikon. Hvis du har brug for brugerdefineret tekst til dine hyperlinks, og din liste over URL-adresser er kort, bør du overveje at bruge et tekstfelt i stedet for.
+
+
 ## <a name="next-steps"></a>Næste trin
 [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
 
-[Power BI – Grundlæggende begreber](service-basic-concepts.md)
+[Power BI – grundlæggende begreber](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

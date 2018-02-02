@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/23/2018
+ms.date: 01/25/2018
 ms.author: maggies
-ms.openlocfilehash: 610234a221c5ab1de976f9d554292395760efa0f
-ms.sourcegitcommit: 1a5446c3136dc0787f2a1d5b8cad1113704301ba
+ms.openlocfilehash: 51006f70d0be13f08de7047f0097f7530d32a470
+ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -63,7 +63,7 @@ Når du får vist rapporten på en telefon, åbnes den i stående format.
 Læs mere om [rapporter, der er optimeret til visning på telefoner](mobile-apps-view-phone-report.md).
 
 ## <a name="use-slicers-to-filter-a-report-page"></a>Brug udsnit til at filtrere en rapportside
-Når du designer en rapport i Power BI-tjenesten [(https://powerbi.com)](https://powerbi.com), skal du huske på, at ruden Filtre ikke vises på telefoner, men du kan [se udsnit på en rapportside](power-bi-visualization-slicers.md). Du kan tilføje udsnit i en rapport, så du og dine kolleger kan bruge udsnittene til at filtrere siden på en telefon.
+Når du opretter en rapport i Power BI Desktop eller Power BI-tjenesten, bør du overveje at [føje udsnit til en rapportside](power-bi-visualization-slicers.md). Du og dine kolleger kan bruge udsnittene til at filtrere siden i en browser og i mobilapps. Når du får vist rapporten på en telefon, kan du se og interagere med udsnittene i liggende tilstand og på en side, der er optimeret til telefonens lodrette tilstand.
 
 * Når du vælger en værdi i et udsnit på rapportsiden, filtreres de andre visualiseringer på siden.
   

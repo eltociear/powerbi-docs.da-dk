@@ -16,34 +16,41 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: f2edc291c28b865eb956361cf0f9b4740f59c77c
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: e5435af7441a1e9b706ac4dc58b544c44a94410a
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="static-content-in-power-bi-reports"></a>Statisk indhold i Power BI-rapporter
-Føj tekstbokse og figurer til en rapport i Power BI-tjenesten i Redigeringsvisning. 
+Tekstfelter og figurer kan føjes til rapporter ved hjælp af Power BI-tjenesten og Power BI Desktop. I begge tilfælde skal du have redigeringstilladelser til rapporten. Hvis en rapport er blevet delt med dig, har du ikke ret til at redigere den. 
 
-> **Bemærk**! I Power BI Desktop kan du også [føje statiske billeder til din rapport](guided-learning/visualizations.yml#step-11) som vist i denne video.
+Se med, når Will bruger Power BI Desktop til at [føje statiske billeder til en rapport](guided-learning/visualizations.yml#step-11), og følg derefter nedenstående trin for at prøve det selv ved hjælp af Power BI-tjenesten i stedet.
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew" frameborder="0" allowfullscreen></iframe>
 > 
-> 
 
 ## <a name="add-a-text-box-to-a-report"></a>Føj et tekstfelt til en rapport
-1. Placer markøren et vilkårligt sted på rapportlærredet, og vælg **Tekstfelt**.
+1. Åbn en rapport i redigeringsvisning.
+
+2. Placer markøren et vilkårligt tomt sted på rapportlærredet, og vælg **Tekstfelt**.
    
    ![](media/power-bi-reports-add-text-and-shapes/pbi_textbox.png)
 2. Indtast din tekst i tekstfeltet, og formatér eventuelt skrifttype, farve og tekstjustering. 
    
    ![](media/power-bi-reports-add-text-and-shapes/pbi_textbox2new.png)
-3. Placer tekstfeltet ved at vælge det grå område øverst og trække. Hvis du vil tilpasse tekstfeltets størrelse, kan du markere og trække i et af omridsets håndtag. 
+3. Placer tekstfeltet ved at vælge det grå område øverst og trække. Hvis du vil tilpasse tekstfeltets størrelse, skal du markere og trække i et af omridsets håndtag. 
    
    ![](media/power-bi-reports-add-text-and-shapes/textboxsmaller.gif)
-4. Vælg et tomt område på rapportlærredet for at lukke tekstfeltet.
+
+4. Mens tekstfeltet er markeret, skal du tilføje yderligere formatering i ruden VISUALISERINGER. I dette eksempel har vi formateret baggrunden og kanten. Du kan også oprette en nøjagtig størrelse og placering for et tekstfelt.  
+
+   ![](media/power-bi-reports-add-text-and-shapes/power-bi-borders.png)
+
+5. Vælg et tomt område på rapportlærredet for at lukke tekstfeltet. 
+
 5. Vælg tegnestiftikonet ![](media/power-bi-reports-add-text-and-shapes/pbi_pintile.png) for at fastgøre tekstfeltet til et dashboard. 
 
 ## <a name="add-a-shape-to-a-report"></a>Føj en figur til en rapport
@@ -55,20 +62,15 @@ Føj tekstbokse og figurer til en rapport i Power BI-tjenesten i Redigeringsvisn
    Tilpas din figur i ruden **Formatér figur**. I dette eksempel har vi lavet en rød pil med en mørkerød kant, der er roteret 90 grader.
    
    ![](media/power-bi-reports-add-text-and-shapes/power-bi-arrrow.png)
-3. Vælg det grå område øverst, og træk for at placere figuren. Og hvis du vil tilpasse figurens størrelse, kan du vælge og trække i et af omridsets håndtag. 
+3. Vælg det grå område øverst, og træk for at placere figuren. Og hvis du vil tilpasse figurens størrelse, kan du vælge og trække i et af omridsets håndtag. Som med tekstfeltet kan du også oprette en nøjagtig størrelse og placering for en figur.
 
-> **Bemærk**: Figurer kan ikke fastgøres til et dashboard. 
+> **BEMÆRK**! Figurer kan ikke fastgøres til et dashboard, medmindre der er tale om en visualisering, når du [fastgør en dynamisk side](service-dashboard-pin-live-tile-from-report.md). 
 > 
 > 
 
 ### <a name="next-steps"></a>Næste trin
 [Føj et hyperlink til et tekstfelt](service-add-hyperlink-to-text-box.md)
 
-[Rapporter i Power BI](service-reports.md)
-
-[Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
-
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
-
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

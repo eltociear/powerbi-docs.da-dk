@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: a707a7b590804d24d60d17590408afbdf8f81f4c
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: ef2e89ba2bac451ce0230829bbf4aa0b60713899
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Almindelige forespørgselsopgaver i Power BI Desktop
 Når du arbejder i vinduet **Forespørgselseditor** i Power BI Desktop, er der nogle få opgaver, der udføres jævnligt. Dette dokument beskriver disse opgaver og indeholder links til flere oplysninger. 
@@ -69,7 +69,7 @@ Det samme gælder for andre dataforbindelser. Hvis godkendelse er nødvendig for
 Hvis du vil have en trinvis vejledning til, hvordan du opretter forbindelse til data i Power BI Desktop, skal du se [Opret forbindelse til data i Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471635).
 
 ## <a name="shape-and-combine-data"></a>Form og kombiner data
-Du kan nemt forme og kombinere data ved hjælp af Forespørgselseditor. Dette afsnit indeholder nogle eksempler på, hvordan du kan forme data. Hvis du vil have en mere komplet demonstration af, hvordan du former og kombinere data, skal du se ****[Form og kombiner data med Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644).
+Du kan nemt forme og kombinere data ved hjælp af Forespørgselseditor. Dette afsnit indeholder nogle eksempler på, hvordan du kan forme data. Hvis du vil have en mere komplet demonstration af, hvordan du former og kombinere data, skal du se **[Form og kombiner data med Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644)**.
 
 I det forrige afsnit tilsluttede vi to datasæt – en Excel-projektmappe og en webressource. Når dataene indlæses i Forespørgselseditor, får vi vist følgende, hvor forespørgslen fra websiden er valgt (blandt de tilgængelige forespørgsler, der er angivet i ruden **Forespørgsler** i venstre side af vinduet Forespørgselseditor).
 

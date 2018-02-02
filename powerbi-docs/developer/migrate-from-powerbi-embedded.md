@@ -3,7 +3,7 @@ title: "Sådan overfører du indhold fra arbejdsområdesamlinger i Power BI Embe
 description: "Se, hvordan du overfører fra Power BI Embedded til Power BI-tjenesten og udnytter fordelene ved at integrere i apps."
 services: powerbi
 documentationcenter: 
-author: guyinacube
+author: markingmyname
 manager: kfile
 backup: 
 editor: 
@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 07/21/2017
-ms.author: asaxton
-ms.openlocfilehash: 430f1d1a49e510bac66c448b2dceaad1f2537073
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.date: 08/24/2018
+ms.author: maghan
+ms.openlocfilehash: 59d395d11839903108f811ff4a6022ea04cadc8f
+ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-migrate-power-bi-embedded-workspace-collection-content-to-power-bi"></a>Sådan overfører du indhold fra arbejdsområdesamlinger i Power BI Embedded til Power BI
 Se, hvordan du overfører fra Power BI Embedded til Power BI-tjenesten og udnytter fordelene ved at integrere i apps.
@@ -174,14 +174,11 @@ I din app kan du knytte de brugere, du administrerer i appen, til en *master*bru
 Når du er klar til at skifte til produktionsmiljøet, skal du bruge følgende.
 
 * Hvis du bruger en separat lejer til udvikling, skal du sikre, at dine apparbejdsområder med dashboards og rapporter er tilgængelige i dit produktionsmiljø. Du skal også sikre, at du har oprettet appen i Azure AD for din produktionslejer, og at du har tildelt de nødvendige apptilladelser som angivet på trin 1.
-* Køb den kapacitet, der passer med dit behov. Du kan se [Hvidbog med kapacitetsplanlægning](https://aka.ms/pbiewhitepaper), hvis du vil vide mere om, hvad du skal bruge. Når du er klar til at købe, kan du gøre det i [Office 365 Administration](https://portal.office.com/adminportal/home#/catalog).
-  
-  > [AZURE.INFORMATION] Hvis du vil vide, hvordan du køber Power BI Premium, skal du se [Sådan køber du Power BI Premium](../service-admin-premium-purchase.md).
-  > 
-  > 
+* Køb den kapacitet, der opfylder dine behov. I dette [whitepaper om planlægning af integreret analysekapacitet](https://aka.ms/pbiewhitepaper) kan du få oplysninger, så du kan få en bedre forståelse af, hvilken størrelse og type af kapacitet du har brug for. Du kan [købe kapacitet](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) i Azure.
 * Rediger apparbejdsområdet, og tildel det til en Premium-kapacitet under avanceret.
-  
+ 
     ![](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity.png)
+    
 * Implementer din opdaterede app i produktionen, og begynd at integrere rapporter fra Power BI-tjenesten.
 
 ## <a name="after-migration"></a>Efter overførslen
@@ -198,9 +195,9 @@ Du bør rydde op i Azure.
 [Power BI Premium – hvad er det?](../service-premium.md)  
 [Git-lager til JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript)  
 [Git-lager til Power BI C#](https://github.com/Microsoft/PowerBI-CSharp)  
-[Eksempel på JavaScript-integrering](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
-[Hvidbog for kapacitetsplanlægning af integreret analyse](https://aka.ms/pbiewhitepaper)  
-[Hvidbog til Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
+[Integreringseksempel til JavaScript](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
+[Hvidbog om planlægning af analysekapacitet til Embedded](https://aka.ms/pbiewhitepaper)  
+[Hvidbog om Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

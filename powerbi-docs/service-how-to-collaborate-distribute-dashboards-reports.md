@@ -1,11 +1,11 @@
 ---
-title: "Hvordan bør jeg samarbejde og dele dashboards og rapporter i Power BI?"
+title: Hvordan kan jeg samarbejde og dele i Power BI?
 description: "I Power BI kan du samarbejde om og dele dashboards, rapporter og felter på flere forskellige måder. Hver har særskilte fordele."
 services: powerbi
 documentationcenter: 
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
+backup: lukaszp
 editor: 
 tags: 
 qualityfocus: monitoring
@@ -15,16 +15,16 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/05/2017
+ms.date: 01/24/18
 ms.author: maggies
-ms.openlocfilehash: a77c9a9816ef47ae4b342b2cd3a08b18c90f70de
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+ms.openlocfilehash: 032d07616464dcda8cc4cc38b1440936e5393a98
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-should-i-collaborate-and-share-dashboards-and-reports-in-power-bi"></a>Hvordan bør jeg samarbejde og dele dashboards og rapporter i Power BI?
-Du kan oprette dashboards og rapporter. Måske samarbejder du også med kolleger om dem. Du kan derefter give andre adgang til dem. Hvordan distribueres de på bedste vis?
+Du har oprettet dashboards og rapporter. Måske samarbejder du også med kolleger om dem. Du kan derefter give andre adgang til dem. Hvordan distribueres de på bedste vis?
 
 I denne artikel sammenligner vi disse muligheder for at samarbejde og dele i Power BI: 
 
@@ -34,7 +34,7 @@ I denne artikel sammenligner vi disse muligheder for at samarbejde og dele i Pow
 * Publicering på internettet, hvor alle kan se og interagere med dem.
 * Udskrivning. 
 
-Uanset hvilken indstilling du vælger, skal du bruge en [Power BI Pro-licens](service-free-vs-pro.md) for at dele, ellers skal indholdet være i [Premium-kapacitet](service-premium.md). Licenskrav varierer alt efter kollegerne, der får vist dine dashboards, afhængigt af din valgte indstilling. De følgende afsnit går længere ned i detaljen. Forslag? Power BI-teamet tager meget gerne mod din feedback, så gå til [webstedet for Power BI-community'et](https://community.powerbi.com/).
+Uanset hvilken indstilling du vælger, skal du bruge en [Power BI Pro-licens](service-free-vs-pro.md) for at dele, ellers skal indholdet være i [Premium-kapacitet](service-premium.md). Licenskrav varierer alt efter kollegerne, der får vist dine dashboards, afhængigt af din valgte indstilling. De følgende afsnit går længere ned i detaljen. 
 
 ![Apps i Power BI-tjenesten](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-home-blog.png)
 
@@ -54,7 +54,7 @@ Lad os sige, at du gerne vil distribuere dit dashboard til en bred målgruppe. D
 
 ![Ikonet Publicer app](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
-Apps er lette at finde og installere i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)). Du kan sende virksomhedens brugere et direkte link til appen, eller de kan søge efter den i AppSource. Læs mere om at [publicere dine apps](service-create-distribute-apps.md#publish-your-app). 
+Apps er lette at finde og installere i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)). Du kan sende virksomhedens brugere et direkte link til appen, eller de kan søge efter den i AppSource. Hvis din Power BI-administrator giver dig tilladelser, kan du automatisk installere en app i dine kollegers Power BI-konti. Læs mere om at [publicere dine apps](service-create-distribute-apps.md#publish-your-app). 
 
 Efter de har installeret en app, kan de få den vist i deres browser eller mobilenhed.
 
@@ -69,9 +69,7 @@ Du skal have en Power BI Pro-licens for at dele dit indhold, og det samme skal b
 
 Du kan også dele med brugere uden for din organisation. De kan også få vist og interagere med dashboardet, men de kan ikke dele det. 
 
-Flere oplysninger om [deling af et dashboard](service-share-dashboards.md) fra Power BI-tjenesten.
-
-Du kan også [dele et direkte link til en rapport](service-share-reports.md) og tilsidesætte dashboardet. Du kan føje et filter til linket, så modtagere ser en filtreret visning af din rapport.
+Flere oplysninger om [deling af dashboards og rapporter ](service-share-dashboards.md) fra Power BI-tjenesten. Du kan også føje et filter til et link og [dele en filtreret visning af din rapport](service-share-reports.md).
 
 ## <a name="annotate-and-share-from-the-power-bi-mobile-apps"></a>Anmærk og del fra Power BI-mobilapps
 Du kan i Power BI-mobilapps til iOS- og Android-enheder anmærke et felt, rapport eller visuelt element og derefter dele det med alle pr. mail. 

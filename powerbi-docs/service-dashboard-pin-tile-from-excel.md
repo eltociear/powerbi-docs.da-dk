@@ -1,5 +1,5 @@
 ---
-title: "Fastgør et felt til et Power BI-dashboard fra Excel"
+title: "Sådan fastgør du et felt til et Power BI-dashboard fra Excel"
 description: "Fastgør et felt til et Power BI-dashboard fra Excel på OneDrive for Business. Fastgør intervaller, diagrammer, tabeller"
 services: powerbi
 documentationcenter: 
@@ -16,13 +16,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/26/2017
+ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: 855ecbe74fa4bf4ab1b1f81f22f2bab278adddb9
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 06edf8aae58dbcf2e22cf5d1ea13bf6350465853
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fastgør et felt til et Power BI-dashboard fra Excel
 Før du kan fastgøre et felt fra din Excel-projektmappe, skal du oprette forbindelse mellem denne projektmappe og Power BI-tjenesten (app.powerbi.com). Når der oprettes forbindelse til en projektmappe, overføres der grundlæggende set en sammenkædet skrivebeskyttet version af denne projektmappe til Power BI-tjenesten, så du kan fastgøre intervaller til dashboards. Du kan endda fastgøre et helt regneark til et dashboard.  
@@ -40,13 +40,18 @@ Når du vælger **Opret forbindelse**, vises din projektmappe i Power BI på sam
 Du kan ikke redigere din projektmappe i Power BI. Men hvis du har brug for at foretage ændringer, kan du vælge blyantsikonet under fanen **Projektmapper** i arbejdsområdet og derefter vælge at redigere projektmappen i Excel Online eller åbne den i Excel på din computer. Alle ændringer, du foretager, gemmes i projektmappen på OneDrive.
 
 1. Upload din projektmappe til OneDrive for Business.
-2. [Opret forbindelse til projektmappen](service-excel-workbook-files.md) fra Power BI.
+2. Fra Power BI skal du [oprette forbindelse til denne projektmappe](service-excel-workbook-files.md) ved at vælge **Hent Data > Filer > OneDrive – Business** og gå til den placering, hvor du har gemt Excel-filen. Markér filen, og vælg **Opret forbindelse > Opret forbindelse**.
+
+   ![](media/service-dashboard-pin-tile-from-excel/power-bi-connect.png)
+
 3. I Power BI føjes projektmappen til fanen **Projektmapper** i arbejdsområdet.  Ikonet ![](media/service-dashboard-pin-tile-from-excel/pbi_workbookicon.png) angiver, at dette er en Excel-projektmappe, og en gul stjerne angiver, at den er ny.
    
-    Ændringer, du foretager af projektmappen i Power BI, gemmes ikke og påvirker ikke den oprindelige projektmappe på OneDrive for Business. Hvis du sorterer, filtrerer eller ændrer værdierne i Power BI, kan disse ændringer ikke gemmes eller fastgøres. Hvis du vil opdatere projektmappen, skal du vælge blyantsikonet for at åbne den i Excel Online. Det kan tage et par minutter, før ændringer af projektmappen i Excel Online opdateres i felterne.     
-   
+    
    ![](media/service-dashboard-pin-tile-from-excel/power-bi-workbooks.png)
 4. Åbn projektmappen i Power BI ved at vælge navnet på projektmappen.
+
+    Ændringer, du foretager af projektmappen i Power BI, gemmes ikke og påvirker ikke den oprindelige projektmappe på OneDrive for Business. Hvis du sorterer, filtrerer eller ændrer værdierne i Power BI, kan disse ændringer ikke gemmes eller fastgøres. Hvis du vil foretage ændringer, der skal gemmes, skal du vælge **Rediger** i øverste højre hjørne for at åbne og redigere i Excel Online eller Excel. Det kan tage et par minutter at opdatere felterne på dashboardene med ændringer, der foretages på denne måde.
+   
    
    ![](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
 
@@ -62,7 +67,7 @@ Du kan ikke redigere din projektmappe i Power BI. Men hvis du har brug for at fo
    * Eksisterende dashboard: Vælg navnet på dashboardet på rullelisten.
    * Nyt dashboard: Skriv navnet på det nye dashboard.
    
-   ![](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
+    ![](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
 4. Vælg **Fastgør**. En meddelelse om fuldførelse (næsten helt oppe i højre hjørne) giver dig besked om, at området er blevet føjet til dit dashboard som et felt. 
    
     ![](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
@@ -80,6 +85,8 @@ Et felt, der er oprettet ud fra en tabel eller en pivottabel, viser hele tabelle
 ## <a name="view-the-workbook-linked-to-the-tile"></a>Få vist den projektmappe, der er sammenkædet med feltet
 Hvis du vælger et felt til projektmappen, åbnes den sammenkædede projektmappe i Power BI. Da projektmappefilen er placeret på ejerens OneDrive for Business, kræver visning af projektmappen, at du har læsetilladelse til projektmappen. Hvis du ikke har tilladelse, får du vist en fejlmeddelelse.  
 
+ ![](media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif)
+
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 Funktioner, der ikke understøttes: Power BI bruger Excel Services til at hente felterne i projektmappen. Eftersom nogle funktioner fra Excel ikke understøttes i Excel Services REST API, vil de derfor ikke kunne ses på felter i Power BI. Eksempel: minidiagrammer, betinget formatering angivet via ikoner og klokkeslætsudsnit. Se en fuldstændig liste over ikke-understøttede funktioner i [Ikke-understøttede funktioner i Excel Services REST API](http://msdn.microsoft.com/library/office/ff394477.aspx)
 
@@ -88,7 +95,5 @@ Funktioner, der ikke understøttes: Power BI bruger Excel Services til at hente 
 
 [Hent data fra Excel-projektmapper](service-excel-workbook-files.md)
 
-[Dashboards i Power BI](service-dashboards.md)
-
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

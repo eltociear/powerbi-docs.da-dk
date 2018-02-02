@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/08/2018
 ms.author: mihart
-ms.openlocfilehash: 66e75d638595113b2df67650896a407ae5d13e88
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+ms.openlocfilehash: fc697437ff9f5fb6b8dd49f6513c728d1b8ddfeb
+ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="subscribe-to-a-power-bi-report-or-dashboard"></a>Abonner på en rapport eller et dashboard i Power BI
 Det har aldrig været nemmere at holde dig opdateret om dine vigtigste dashboards og rapporter. Abonner på rapportsider og dashboards, der betyder mest for dig, og Power BI sender et snapshot til din indbakke. Fortæl Power BI, hvor ofte du gerne vil modtage mails: fra en gang om dagen til en gang om ugen. Mail og snapshot bruger det sprog, der er angivet i Power BI-indstillinger. Hvis der ikke er defineret noget sprog, bruger Power BI det aktuelle browsersprog.
@@ -119,6 +119,7 @@ Et abonnement slutter, hvis Pro-licensen udløber, dashboardet eller rapporten s
 * Abonnementer mislykkes muligvis på dashboards og rapporter med meget store billeder på grund af størrelsesbegrænsninger for mails.    
 * Power BI afbryder automatisk opdatering på datasæt, der er knyttet til dashboards og rapporter, som ikke er blevet besøgt i mere end to måneder.  Men hvis du føjer et abonnement til et dashboard eller en rapport, standses det ikke midlertidigt, selvom det ikke besøges.    
 * Hvis du ikke modtager abonnementsmailene, skal du kontrollere, at din brugers hovednavn (UPN) kan modtage mails. [Power BI-teamet arbejder på at slække på dette krav](https://community.powerbi.com/t5/Issues/No-Mail-from-Cloud-Service/idc-p/205918#M10163), så hold dig opdateret. 
+* Din Power BI-sprogindstilling bruges i sendte rapporter og på dine dashboards. Standardsproget er engelsk. Hvis du vil se eller indstille dine sprogindstillinger, skal du vælge tandhjulsikonet ![](media/service-report-subscribe/power-bi-settings-icon.png) **> Indstillinger > Generelt > Sprog**.
 
 ## <a name="next-steps"></a>Næste trin
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)    

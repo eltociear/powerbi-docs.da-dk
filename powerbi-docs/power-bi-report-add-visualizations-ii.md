@@ -15,16 +15,21 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/28/2017
+ms.date: 01/23/2018
 ms.author: mihart
-ms.openlocfilehash: 2b3f25c772a049d10bc03941db677c67c844da8b
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 40d6ee1f1448856b444201532caffd4b8c904c85
+ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="part-2-add-visualizations-to-a-power-bi-report-tutorial"></a>Del 2 – Føj visualiseringer til en Power BI-rapport (selvstudium)
 I [Del 1](power-bi-report-add-visualizations-ii.md) oprettede du en grundlæggende visualisering ved at markere afkrydsningsfelter ud for feltnavne.  I Del 2 lærer du, hvordan du bruger træk og slip samt benytter ruderne **Felter** og **Visualiseringer** til at oprette og redigere visualiseringer.
+
+### <a name="prerequisites"></a>Forudsætninger
+- [Del 1](power-bi-report-add-visualizations-ii.md)
+- Power BI-tjenesten – visualiseringer kan føjes til rapporter ved hjælp af Power BI-tjenesten eller Power BI Desktop. I dette selvstudium bruges Power BI-tjenesten. 
+- Retail Analysis Sample
 
 ## <a name="create-a-new-visualization"></a>Opret en ny visualisering
 I dette selvstudium gennemgår vi vores Retail Analysis-datasæt og opretter nogle få vigtige visualiseringer.
@@ -64,7 +69,6 @@ I dette selvstudium gennemgår vi vores Retail Analysis-datasæt og opretter nog
 ## <a name="next-steps"></a>Næste trin
 * Du kan finde flere oplysninger om ruden Felter under [Rapporteditoren... få en præsentation](service-the-report-editor-take-a-tour.md).   
 * Hvis du vil vide, hvordan du filtrerer og fremhæver dine visualiseringer, skal du se [Filtre og fremhævning i Power BI-rapporter](power-bi-reports-filters-and-highlighting.md).  
-* Hvis du vil vide, hvordan bruger og ændrer sammenlægninger, skal du se [Sammenlægninger i rapporter](service-aggregates.md).  
 * Få mere at vide om [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md).  
-* Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/).
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
