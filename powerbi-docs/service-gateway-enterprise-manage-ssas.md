@@ -192,7 +192,7 @@ Når du markerer et element på listen, kan du vælge at omarrangere listen ved 
 
 ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names-entry-selected.png)
 
-### <a name="using-wildcard-"></a>Brug af jokertegn (*)
+### <a name="using-wildcard-"></a>Brug af jokertegn (\*)
 Du kan bruge et jokertegn i strengen **Erstat (Oprindeligt navn)**. Det kan kun bruges alene og ikke sammen med andre strengdele. Dette gør det muligt at tage alle brugere og overføre en enkelt værdi til datakilden. Det er nyttigt, når du gerne vil have, at alle brugere i organisationen benytter den samme bruger i det lokale miljø.
 
 ### <a name="test-a-mapping-rule"></a>Test en tilknytningsregel
