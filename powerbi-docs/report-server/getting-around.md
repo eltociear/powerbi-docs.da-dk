@@ -32,7 +32,7 @@ Du kan se webportalen i alle moderne browsere. Rapporter og KPI'er er organisere
 
 * **Power BI-rapporter** oprettet med Power BI Desktop: Se dem i webportalen og Power BI-mobilappsene.
 * **Sideinddelte rapporter** oprettet i Report Builder: moderne udseende, dokumenter med fast layout, der er optimeret til udskrivning.
-* **KPI'er** oprettet direkte på webportalen.
+* **KPI'er** oprettet direkte i webportalen.
 
 Du kan gennemse mapperne på rapportserveren eller søge efter specifikke rapporter i webportalen. Du kan få vist en rapport, dens generelle egenskaber og indsætte kopier af rapporten, der er registreret i rapporthistorikken. Afhængigt af dine rettigheder kan du muligvis også abonnere på rapporter og få dem leveret til din mailindbakke eller en delt mappe i filsystemet.
 
@@ -170,7 +170,7 @@ Du kan skjule elementer på webportalen, og du kan vælge at få vist skjulte el
     ![Vis skjulte elementer.](media/getting-around/report-server-web-portal-show-hidden-grayed.png)
 
 ## <a name="search-for-items"></a>Søg efter elementer
-Du kan søge efter et team, så får du vist alt, hvad du har adgang til. Resultaterne er inddelt i KPI'er, rapporter, datasæt og andre elementer. Du kan derefter interagere med resultaterne og føje dem til dine favoritter.  
+Du kan indtaste et søgeord, så får du vist alt, hvad du har adgang til. Resultaterne er inddelt i KPI'er, rapporter, datasæt og andre elementer. Du kan derefter interagere med resultaterne og føje dem til dine favoritter.  
 
 ![Søg efter elementer](media/getting-around/report-server-web-portal-search.png)
 
