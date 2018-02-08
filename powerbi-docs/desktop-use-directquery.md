@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/25/2017
+ms.date: 12/25/2017
 ms.author: davidi
-ms.openlocfilehash: 268c06569199bc00b28918b46a142942c9e03ba6
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+ms.openlocfilehash: d3643ae398c037c375c8e67360794047a6f66ed7
+ms.sourcegitcommit: 7bf22bb1136fdb0f962422e16e837187f090827c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Brug DirectQuery i Power BI Desktop
 Når du opretter forbindelse til din datakilde i **Power BI Desktop**, er det altid muligt at importere en kopi af dataene til **Power BI Desktop**. For nogle datakilder findes der en anden mulighed: du kan oprette direkte forbindelse til datakilden med **DirectQuery**.
@@ -61,7 +61,7 @@ Der er i øjeblikket nogle få begrænsninger ved at bruge **DirectQuery**:
 * Som standard er de begrænsninger, der gælder for DAX-udtryk, tilladt i målinger. Du kan se flere oplysninger efter denne punktopstilling.
 * Der er en grænse på 1 million rækker for returnering af data, når du bruger **DirectQuery**. Dette påvirker ikke de aggregeringer eller beregninger, der bruges til at oprette det datasæt, der returneres ved hjælp af **DirectQuery**. Det påvirker kun de returnerede rækker. Du kan for eksempel aggregere 10 millioner rækker med en forespørgsel, der kører på datakilden, og præcist returnere resultaterne for den aggregering til Power BI ved hjælp af **DirectQuery**, så længe der returneres mindre end 1 million rækker til Power BI. Hvis der ville blive returneret mere end 1 million rækker fra **DirectQuery**, vil Power BI returnere en fejl.
 
-For at sikre at de forespørgsler, der sendes til den underliggende datakilde, har en acceptabel ydeevne, pålægges der som standard begrænsninger på målingerne. Avancerede brugere kan vælge at tilsidesætte denne begrænsning ved at vælge **Fil > Indstillinger** og derefter vælge **Indstillinger > Indstillinger og indstillinger > DirectQuery** og derefter vælge indstillingen *Tillad ubegrænsede foranstaltninger i DirectQuery-tilstand**. Når du har valgt denne indstilling, kan du bruge ethvert DAX-udtryk, der er gyldigt for en måling. Brugerne skal dog være opmærksomme på, at nogle udtryk, der har en god ydeevne, når dataene importeres, kan være langsomme i backend-kilden, når der bruges DirectQuery-tilstand.
+For at sikre at de forespørgsler, der sendes til den underliggende datakilde, har en acceptabel ydeevne, pålægges der som standard begrænsninger på målingerne. Avancerede brugere kan vælge at tilsidesætte denne begrænsning ved at vælge **Fil > Indstillinger** og derefter vælge **Indstillinger > Indstillinger og indstillinger > DirectQuery** og derefter vælge indstillingen *Tillad ubegrænsede foranstaltninger i DirectQuery-tilstand*. Når du har valgt denne indstilling, kan du bruge ethvert DAX-udtryk, der er gyldigt for en måling. Brugerne skal dog være opmærksomme på, at nogle udtryk, der har en god ydeevne, når dataene importeres, kan være langsomme i backend-kilden, når der bruges DirectQuery-tilstand.
 
 ## <a name="important-considerations-when-using-directquery"></a>Vigtige overvejelser i forbindelse med brugen af DirectQuery
 Der skal tages højde for følgende tre punkter, når der bruges **DirectQuery**:
