@@ -398,6 +398,8 @@
           href: power-bi-visualization-best-practices.md
         - name: Brugerdefinerede visualiseringer i Power BI
           href: power-bi-custom-visuals.md
+        - name: Brugerdefinerede visualiseringer til organisationer i Power BI
+          href: power-bi-custom-visuals-organization.md
         - name: 'Selvstudium: Del 1, Føj visualiseringer til en rapport i Power BI'
           href: power-bi-report-add-visualizations-i.md
         - name: 'Selvstudium: Del 2, Føj visualiseringer til en rapport i Power BI'
@@ -730,6 +732,8 @@
       items:
         - name: Datavisning i Power BI Desktop
           href: desktop-data-view.md
+        - name: Datatabeller i Power BI Desktop
+          href: desktop-date-tables.md
         - name: Relationsvisning i Power BI Desktop
           href: desktop-relationship-view.md
         - name: Opret og administrer relationer i Power BI Desktop
@@ -758,8 +762,12 @@
           href: desktop-qna-in-reports.md
         - name: Ruden Analytics i Power BI Desktop
           href: desktop-analytics-pane.md
+        - name: Flere markeringer i Power BI
+          href: desktop-multi-select.md
         - name: Brug af indsigter i Power BI Desktop
           href: desktop-insights.md
+        - name: Udsnit i Power BI Desktop
+          href: desktop-slicers.md
         - name: Bogmærker i Power BI
           href: desktop-bookmarks.md
         - name: Brug rapporttemaer
