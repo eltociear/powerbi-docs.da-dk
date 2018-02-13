@@ -852,51 +852,51 @@
       items:
         - name: Power BI-mobilapps til mobile enheder
           href: mobile-apps-for-mobile-devices.md
-        - name: Find dine dashboards og rapporter på din mobilenhed
+        - name: 'Find dashboards, rapporter og apps på en mobilenhed'
           href: mobile-apps-find-content-mobile-devices.md
-        - name: Hvad er nyt i mobilapps til Power BI
+        - name: Nyheder i mobilappsene
           href: mobile-whats-new-in-the-mobile-apps.md
     - name: Alle mobilapps
       items:
         - name: Power BI til iOS-apps
           href: mobile-ios-ipad-iphone-apps.md
-        - name: Vis rapporter og KPI'er i det lokale miljø i Power BI-mobilapps
+        - name: Få vist rapporter og KPI'er i det lokale miljø i mobilappsene
           href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-        - name: Dashboards til mobil Power BI
+        - name: Dashboards i mobilappsene
           href: mobile-apps-view-dashboard.md
-        - name: Rapporter i Power BI-mobilapps
+        - name: Rapporter i mobilappsene
           href: mobile-reports-in-the-mobile-apps.md
         - name: Interager med felter i mobilapps
           href: mobile-tiles-in-the-mobile-apps.md
         - name: Del et dashboard via Power BI-mobilapps
           href: mobile-share-dashboard-from-the-mobile-apps.md
-        - name: Foretrukne elementer i Power BI-mobilapps
+        - name: Favoritter i mobilappsene
           href: mobile-apps-favorites.md
-        - name: Hent Power BI-data fra den virkelige verden med mobilapps
+        - name: Hent Power BI-data fra den virkelige verden med mobilappsene
           href: mobile-apps-data-in-real-world-context.md
-        - name: Scan en Power BI QR-kode fra din telefon
+        - name: Scan en QR-kode med din telefon
           href: mobile-apps-qr-code.md
-        - name: Modtag meddelelser i Power BI-mobilapps
+        - name: Modtag meddelelser i mobilappsene
           href: mobile-apps-notification-center.md
-        - name: 'Anmærk og del et felt, en rapport eller en visualisering i mobilapps'
+        - name: Anmærk og del i mobilappsene
           href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
-        - name: Indstil databeskeder i Power BI-mobilapps
+        - name: Angiv vigtige databeskeder i mobilappsene
           href: mobile-set-data-alerts-in-the-mobile-apps.md
-        - name: Filtrer en rapport ud fra placering i Power BI-mobilapps
+        - name: Filtrer en rapport ud fra placering i mobilappsene
           href: mobile-apps-geographic-filtering.md
         - name: Stil spørgsmål om dine data i iOS-mobilapps (Selvstudium)
           href: mobile-apps-ios-qna.md
         - name: 'Opret en dybt link, der fører til en bestemt placering'
           href: mobile-apps-deep-link-specific-location.md
-        - name: Få vist dine data offline i Power BI-mobilapps
+        - name: Få vist dine data offline i mobilappsene
           href: mobile-apps-offline-data.md
-        - name: 'Få vist og interager med Power BI-rapporter, der er optimeret til din telefon'
+        - name: 'Få vist og interager med rapporter, der er optimeret til din telefon'
           href: mobile-apps-view-phone-report.md
         - name: Konfiguration af mobilapps med Intune
           href: service-admin-mobile-intune.md
-        - name: Bruger OAuth til at oprette forbindelse til Reporting Services
+        - name: Brug af OAuth til at oprette forbindelse til Reporting Services
           href: mobile-oauth-ssrs.md
-        - name: Understøttede sprog i Power BI-mobilapps
+        - name: Understøttede sprog i mobilappsene
           href: mobile-apps-supported-languages.md
     - name: iPad-app (Power BI til iOS)
       items:
@@ -906,9 +906,9 @@
       items:
         - name: Kom i gang med Power BI til iOS-app på en iPhone
           href: mobile-iphone-app-get-started.md
-        - name: Power BI Apple Watch-app
+        - name: Power BI-app til Apple Watch
           href: mobile-apple-watch.md
-        - name: Scan en stregkode fra Power BI-appen på din iPhone
+        - name: Scan en stregkode med appen på din iPhone
           href: mobile-apps-scan-barcode-iphone.md
     - name: Power BI-app til Android-telefoner
       items:
@@ -924,7 +924,7 @@
       items:
         - name: Kom i gang med Power BI-mobilapp til Windows 10
           href: mobile-windows-10-phone-app-get-started.md
-        - name: Få vist Reporting Services mobilrapporter og KPI'er i Power BI-mobilapp til Windows 10
+        - name: Få vist Reporting Services-mobilrapporter og KPI'er i mobilappen til Windows 10
           href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
         - name: Fastgør et Power BI-felt eller -dashboard til startskærmen
           href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
