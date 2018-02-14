@@ -17,11 +17,11 @@ ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: 02012b531ba43ec5f17e47f2b273b75ef8b2d9ec
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: 72445988ff4080b7c24f09f797f2038b957631ef
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Administrer din datakilde – Analysis Services
 Når du har installeret datagatewayen i det lokale miljø, skal du tilføje datakilder, der kan bruges sammen med gatewayen. I denne artikel kan du se, hvordan du arbejder med gateways og datakilder. Du kan bruge Analysis Services-datakilden til enten planlagte opdateringer eller direkte forbindelser.
@@ -89,17 +89,6 @@ Du kan klikke på **Tilføj**, når du har udfyldt det hele.  Du kan nu bruge de
 Du kan konfigurere niveauet for beskyttelse af personlige oplysninger for datakilden. Dette styrer, hvordan data kan blandes. Dette bruges kun for planlagte opdateringer. Det gælder ikke direkte forbindelser. [Få mere at vide](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
 
 ![](media/service-gateway-enterprise-manage-ssas/datasourcesettings9.png)
-
-## <a name="get-data-experience-for-analysis-services-in-power-bi-site"></a>'Hent Data'-oplevelse i Analysis Services på Power BI-webstedet
-En entydig indstilling for Analysis Services er at bruge Hent Data direkte i Power BI-tjenesten. Du kan oprette forbindelse til en live Analysis Services-datakilde, der er konfigureret i gatewayen uden brug af Power BI Desktop. Din konto skal være opført på fanen **Brugere** for datakilden, under gatewayen, for at den kan blive vist på listen. Benyt følgende fremgangsmåde for at oprette forbindelse til datakilden:
-
-1. Vælg **Hent data** i Power BI-tjenesten.
-2. Vælg **Databaser**.
-3. Vælg **SQL Server Analysis Services** > **Opret forbindelse**.
-4. Vælg en datakilde på listen. De Analysis Services-datakilder, du har adgang til, vises på en liste her.
-5. Vælg den model, du vil oprette forbindelse til. Vælg derefter **Opret forbindelse**.
-
-Du får vist et datasæt med navnet på serveren. Du kan derefter vælge dette datasæt og begynde at oprette rapporter på den. Det fungerer i forbindelse med dynamiske data.
 
 ## <a name="usernames-with-analysis-services"></a>Brugernavne med Analysis Services
 Hver gang en bruger interagerer med en rapport, der har forbindelse til Analysis Services, overføres det effektive brugernavn til gatewayen og derefter til den lokale Analysis Services-server. Den mailadresse, du logger på Power BI med, er den, vi sender til Analysis Services, som den effektive bruger. Den overføres i forbindelsesegenskaben [EffectiveUserName](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth). Denne mailadresse skal svare til et UPN, der er defineret i det lokale Active Directory-domæne. UPN'et er en egenskab for en Active Directory-konto. Den pågældende Windows-konto skal være til stede i en Analysis Services-rolle. Hvis der ikke findes et match i Active Directory, kan der ikke logges på. [Få mere at vide](https://msdn.microsoft.com/library/ms677605.aspx)

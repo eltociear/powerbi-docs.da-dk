@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/19/2017
 ms.author: maghan
-ms.openlocfilehash: 99b6391dc48772e21dd64038699a3365225167eb
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 78be1a631a167a3b32ecb7d884a3428dc6a362b0
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Integrer med rapportwebdelen i SharePoint Online
 
@@ -98,12 +98,6 @@ Ellers kan du også give brugerne adgang til din rapport ved at gøre følgende.
 
 2. Del dashboardet med de brugere, der skal have adgang til rapporten. Du kan finde flere oplysninger i [Del et dashboard med kolleger og andre](service-share-dashboards.md).
 
-## <a name="allowing-free-users-access-to-reports"></a>Giv Free-brugere adgang til rapporter
-
-Free-brugere kan få vist rapporter, der er integreret med Power BI-webdelen til SharePoint Online. Du giver adgang til Free-brugere på samme måde, som du gør med Pro-brugere, som beskrevet i [Giv adgang til rapporter](#granting-access-to-reports) ovenfor. Det arbejdsområde, hvor rapporten er placeret, skal også understøttes af Power BI Premium-kapaciteten. 
-
-Hvis du f.eks. har en rapport i et apparbejdsområde, skal du tildele apparbejdsområdet til en Power BI Premium-kapacitet. Du skal også føje Free-brugeren til listen over medlemmer af det apparbejdsområde.
-
 ## <a name="web-part-settings"></a>Indstillinger for webdele
 
 Nedenfor findes en beskrivelse af de indstillinger, der kan tilpasses til Power BI-webdelen til SharePoint Online.
@@ -160,5 +154,5 @@ Du skal kontakte ejeren af SharePoint Online-siden for at få hjælp til at udbe
 [Del et dashboard med kolleger og andre](service-share-dashboards.md)  
 [Power BI Premium – hvad er det?](service-premium.md)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/) 
 

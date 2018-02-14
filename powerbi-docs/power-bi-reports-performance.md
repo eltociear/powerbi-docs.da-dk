@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/12/2017
 ms.author: v-mamcge
-ms.openlocfilehash: 251503064cca2c0365df74ed0c21b296fb30a7a8
-ms.sourcegitcommit: 1791b8f10332c680a1552d5361a6e01b75091385
+ms.openlocfilehash: 99267fa0ffa1910f9dab920f939082aadb55d6aa
+ms.sourcegitcommit: ad9bd4e52471b1179f46f847960d5ed79c0c0761
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 02/11/2018
 ---
 # <a name="power-bi-performance-best-practices"></a>Power BI-ydeevne – bedste praksis 
 Denne artikel giver vejledning i at oprette hurtige og pålidelige rapporter i Power BI.  
@@ -142,7 +142,7 @@ Netværksventetid kan påvirke rapporters ydeevne ved at øge den tid, der kræv
 
 Funktioner som f.eks. [Azure Speed Test](http://azurespeedtest.azurewebsites.net/) kan give en praj om netværksventetiden mellem klienten og Azure-området. Generelt bør du begrænse indvirkningen af netværksventetider ved at stræbe efter at holde datakilder, gateways og din Power BI-klynge så tæt på hinanden som muligt. Hvis netværksventetid er et problem, kan du prøve at finde gateways og datakilder, der ligger tættere på din Power BI-klynge ved at placere dem på virtuelle maskiner. 
 
-Hvis du yderligere vil afhjælpe netværksventetid, bør du overveje at bruge [Azure ExpressRoute](https://azure.microsoft.com/en-us/services/expressroute/), som er i stand til at oprette hurtigere og mere pålidelige netværksforbindelser mellem dine klienter og Azure-datacentre. 
+Hvis du yderligere vil afhjælpe netværksventetid, bør du overveje at bruge [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/), som er i stand til at oprette hurtigere og mere pålidelige netværksforbindelser mellem dine klienter og Azure-datacentre. 
 
 ## <a name="next-steps"></a>Næste trin
 - [Planlægning af en installation af Power BI Enterprise](https://aka.ms/pbienterprisedeploy) med komplette retningslinjer for Power BI-installationer i stor skala 

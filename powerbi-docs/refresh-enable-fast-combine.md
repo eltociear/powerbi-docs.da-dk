@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 02/06/2018
 ms.author: davidi
-ms.openlocfilehash: 1e68f7df5214e038df8bcd1584acb815c0af98bf
-ms.sourcegitcommit: 70e9239e375ae03744fb9bc122d5fc029fb83469
+ms.openlocfilehash: 5d754dbdd5d52e7a5b123755015e656d9fb2cea2
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="disable-privacy-setting-in-power-bi-gateway---personal"></a>Deaktiver indstillingerne for beskyttelse af personlige oplysninger i Power BI Gateway – Personlig
 > [!NOTE]
@@ -45,7 +45,7 @@ Du kan løse fejlen ved at aktivere **Kombiner hurtigt**. **Kombiner hurtigt** i
 > 
 
 ## <a name="what-is-fast-combine"></a>Hvad er Kombiner hurtigt?
-Hvis du vil vide mere om niveauer for beskyttelse af personlige oplysninger og Kombiner hurtigt, kan du se [Niveauer for beskyttelse af personlige oplysninger](https://support.office.com/en-us/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540). Som standard vil niveauerne for beskyttelse af personlige oplysninger blive indstillet til at være private, hvilket kan medføre ovennævnte fejl. Det skyldes, at indstillingen vil isolere datakilden fra andre datakilder. Et eksempel, hvor dette kan være et problem, er en forespørgsel med parametre, der henter input fra en anden datakilde.
+Hvis du vil vide mere om niveauer for beskyttelse af personlige oplysninger og Kombiner hurtigt, kan du se [Niveauer for beskyttelse af personlige oplysninger](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540). Som standard vil niveauerne for beskyttelse af personlige oplysninger blive indstillet til at være private, hvilket kan medføre ovennævnte fejl. Det skyldes, at indstillingen vil isolere datakilden fra andre datakilder. Et eksempel, hvor dette kan være et problem, er en forespørgsel med parametre, der henter input fra en anden datakilde.
 
 Hvis du slår Kombiner hurtigt til, ignoreres indstillingen for beskyttelse af personlige oplysninger for at tillade, at forespørgslen kan udføres.
 
@@ -85,7 +85,7 @@ Du kan bruge følgende trin til at aktivere Kombiner hurtigt for din personlige 
 
 ## <a name="next-steps"></a>Næste trin
 [Datagateway i det lokale miljø (personlig tilstand) – den nye version af den personlige gateway](service-gateway-personal-mode.md)
-[Niveauer for beskyttelse af personlige oplysninger](https://support.office.com/en-us/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)  
+[Niveauer for beskyttelse af personlige oplysninger](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)  
 [Almindelige forespørgselsopgaver i Power BI Desktop](desktop-common-query-tasks.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

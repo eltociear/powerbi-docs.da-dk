@@ -14,20 +14,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 02/09/2018
 ms.author: maggies
-ms.openlocfilehash: 340df05c0fcf4e839f8c6223d513ec55964fb5de
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 90d6e6f80be49e8d1c2a9605558a57834e24e285
+ms.sourcegitcommit: ad9bd4e52471b1179f46f847960d5ed79c0c0761
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/11/2018
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Filtrer en rapport efter geografisk placering i Power BI-mobilapps
 Gælder for:
 
 | ![iPhone](media/mobile-apps-geographic-filtering/iphone-logo-50-px.png) | ![iPad](media/mobile-apps-geographic-filtering/ipad-logo-50-px.png) | ![Android-telefon](media/mobile-apps-geographic-filtering/android-phone-logo-50-px.png) | ![Android-tablet](media/mobile-apps-geographic-filtering/android-tablet-logo-50-px.png) | ![Android-tablet](media/mobile-apps-geographic-filtering/win-10-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |:--- |
-| iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-telefoner |
+| iPhones |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-telefoner |
 
 Når du får vist en Power BI-rapport på din mobilenhed, vises der da et lille ikon med en tavlenål i øverste højre hjørne? Hvis der gør det, kan du filtrere rapporten baseret på din geografiske placering.
 
@@ -58,5 +58,5 @@ Læs mere om at [konfigurere geografisk filtrering](desktop-mobile-geofiltering.
 ### <a name="next-steps"></a>Næste trin
 * [Opret forbindelse til Power BI-data fra den virkelige verden](mobile-apps-data-in-real-world-context.md) med mobilappen
 * [Datakategorisering i Power BI Desktop](desktop-data-categorization.md) 
-* Har du spørgsmål? [Prøv at spørge Power BI-communityet](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
