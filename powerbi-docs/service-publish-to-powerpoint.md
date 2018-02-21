@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/22/2018
 ms.author: davidi
-ms.openlocfilehash: 4ca79e960bc0370789ee735ba6b5391cbb8b110f
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: 5ebfa2f54c26c0b4c3321120558e1cccb8bce146
+ms.sourcegitcommit: ed49510adee96042c02d6bdadbfcf8a2e566fbf8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint-preview"></a>Eksportér rapporter fra Power BI til PowerPoint (preview)
 Med Power BI kan du nu publicere din rapport i **Microsoft PowerPoint** og nemt oprette et slidesæt ud fra din Power BI-rapport. Når du **eksporterer til PowerPoint**, sker der følgende:
@@ -64,6 +64,8 @@ Når du åbner den PowerPoint-fil, som Power BI har eksporteret, kan du finde no
 1. Den første side i slidesættet indeholder navnet på din rapport og et link, så du kan få den rapport, som slidesættet er baseret på, **vist i Power BI**.
 2. Du får også vist nogle nyttige oplysninger om rapporten, herunder den *seneste dataopdatering*, som rapporten er baseret på, og *dato og klokkeslæt for download*, som er det klokkeslæt og den dato, hvor Power BI-rapporten blev eksporteret til en PowerPoint-fil.
 3. Hver rapportside er en separat slide, sådan som det er vist i venstre navigationsrude.
+4. Din publicerede rapport er gengivet på det sprog, der er angivet under dine Power BI-indstillinger, og ellers i henhold til indstillingen for landestandard i din browser. Hvis du vil se eller indstille dine sprogindstillinger, skal du vælge tandhjulsikonet ![](media/service-report-subscribe/power-bi-settings-icon.png) **> Indstillinger > Generelt > Sprog**. Du kan finde oplysninger om landestandard i [Understøttede sprog og lande/områder til Power BI](supported-languages-countries-regions.md).
+5. PowerPoint-præsentationen indeholder en forsideslide med tidspunktet for eksporten i den korrekte tidszone.
 
 Når du skifter til en bestemt slide, kan du se, at hver rapportside er et uafhængigt billede.
 
