@@ -3,7 +3,7 @@ title: Opret forbindelse til Acumatica med Power BI
 description: Acumatica til Power BI
 services: powerbi
 documentationcenter: 
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
-ms.author: yshoukry
-ms.openlocfilehash: 66d1544797008b4ed4c0ce2c7acd041aa60b967b
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+ms.author: sarinas
+ms.openlocfilehash: f03bc074c398796ddf0435662e7ee928799116d0
+ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Opret forbindelse til Acumatica med Power BI
 Med Power BI Acumatica-indholdspakken kan du hurtigt få indsigt i dine data med salgsmuligheder. Power BI henter dine data, herunder salgsmuligheder og kunder og opretter derefter et standarddashboard og relaterede rapporter, der er baseret på disse data.

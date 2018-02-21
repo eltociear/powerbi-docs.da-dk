@@ -3,7 +3,7 @@ title: Opret forbindelse til Microsoft Dynamics NAV med Power BI
 description: Microsoft Dynamics NAV til Power BI
 services: powerbi
 documentationcenter: 
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
-ms.author: yshoukry
-ms.openlocfilehash: 7d5db73a05a74de934fa8ac630f673fe4f5bb3af
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: sarinas
+ms.openlocfilehash: 884ef223234d8827e58a37befe2e5d18a45e480e
+ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="connect-to-microsoft-dynamics-nav-with-power-bi"></a>Opret forbindelse til Microsoft Dynamics NAV med Power BI
 Det er nemt at få indsigt i dine Microsoft Dynamics NAV-data med Power BI. Power BI henter dine data, både salg og finans, og opbygger derefter en app med et dashboard og rapporter, der er baseret på disse data. Power BI skal bruge dine tilladelser til de tabeller, som data hentes fra, i dette tilfælde salgs- og finansdata. Flere oplysninger om kravene nedenfor. Når du har installeret appen, kan du få vist dashboardet og rapporterne i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) og i Power BI-mobilapperne. 
@@ -62,9 +62,9 @@ Dashboards og rapporter indeholder data fra følgende tabeller (forskel på stor
 * ItemSalesAndProfit  
 * ItemSalesByCustomer  
 * powerbifinance  
-* SalesDashboard  
+* SalgDashboard  
 * SalesOpportunities  
-* SalesOrdersBySalesPerson  
+* SalgOrdrerEfterSælger  
 * TopCustomerOverview  
 
 ## <a name="system-requirements"></a>Systemkrav

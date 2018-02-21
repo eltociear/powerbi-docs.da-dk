@@ -3,7 +3,7 @@ title: Opret forbindelse til Microsoft Dynamics Marketing med Power BI
 description: Microsoft Dynamics Marketing til Power BI
 services: powerbi
 documentationcenter: 
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
-ms.author: yshoukry
-ms.openlocfilehash: 2800dc496d32c099024db0960c87912afb3b79d7
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+ms.author: sarinas
+ms.openlocfilehash: 3b05064265e951e64d1f34d801555e837fc4d8fb
+ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="connect-to-microsoft-dynamics-marketing-with-power-bi"></a>Opret forbindelse til Microsoft Dynamics Marketing med Power BI
 Med Microsoft Dynamics Marketing-indholdspakken til Power BI kan du nemt få adgang til og analysere dine data fra Dynamics Marketing. Indholdspakken bruger en beskrivende model, som lægges oven på OData-feed'et, med alle de enheder og mål, der skal bruges, som f.eks. programmer, kampagner, marketingkontakter og firmaer, kundeemner, kundeemneinteraktioner og kundemnepoint, marketingmails og websteder, funktionsmæssige bemærkninger, budgetter, finansielle transaktioner, nøgletal for ydeevne og meget mere. 

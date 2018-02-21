@@ -3,7 +3,7 @@ title: Opret forbindelse til Application Insights Opret forbindelse til Power BI
 description: Application Insights til Power BI
 services: powerbi
 documentationcenter: 
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
-ms.author: yshoukry
-ms.openlocfilehash: 0bbbbccefedd437204e1981cb1cc88493373330b
-ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
+ms.author: sarinas
+ms.openlocfilehash: d2a58de38c15599556419a6ebd219dd3a522c27a
+ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="connect-to-application-insights-with-power-bi"></a>Opret forbindelse til Application Insights med Power BI
 Brug Power BI til at oprette effektive brugerdefinerede dashboards fra telemetrien [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/). Få oplysninger om din apptelemetri på nye måder. Kombiner målepunkter fra flere apps eller komponenttjenester på ét dashboard. Denne første version af Power BI-indholdspakken til Application Insights indeholder widgets til målinger, der er relateret til almindeligt forbrug, f.eks. aktive brugere, sidevisning, sessioner, browser- og operativsystemversion samt geografisk fordeling af brugere på et kort.

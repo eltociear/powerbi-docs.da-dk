@@ -3,7 +3,7 @@ title: Opret forbindelse til Adobe Analytics med Power BI
 description: Opret forbindelse til Adobe Analytics fra Power BI for en app, der viser dine kontodata i et dashboard og i rapporter.
 services: powerbi
 documentationcenter: 
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
-ms.author: yshoukry
-ms.openlocfilehash: 2d4d5e71c87a90ef917ea91dd0b7d178a5c0cbfc
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.author: sarinas
+ms.openlocfilehash: d73887c4f74d501057b3c35f5d9f404d4862b2a9
+ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Opret forbindelse til Adobe Analytics med Power BI
 For at oprette forbindelse til Adobe Analytics via Power BI skal du starte med at oprette forbindelse til din Adobe Analytics Marketing Cloud-konto. Du får en app med et Power BI-dashboard og et sæt af Power BI-rapporter, der giver indsigt i trafikken på dit websted og brugerdimensioner. Dataene opdateres automatisk én gang dagligt. Du kan interagere med dashboards og rapporter, men du kan ikke gemme ændringer.

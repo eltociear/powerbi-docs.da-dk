@@ -3,7 +3,7 @@ title: Opret forbindelse til Mandrill med Power BI
 description: Mandrill til Power BI
 services: powerbi
 documentationcenter: 
-author: joeshoukry
+author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
 editor: 
@@ -16,12 +16,12 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
-ms.author: yshoukry
-ms.openlocfilehash: 92b069bded7fc6a22480d8190c1b8d0f53f959e4
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+ms.author: sarinas
+ms.openlocfilehash: 32058acfe0c7631791e718d54c6d81f4dd707c50
+ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="connect-to-mandrill-with-power-bi"></a>Opret forbindelse til Mandrill med Power BI
 Power BI-indholdspakken trækker data fra din Mandrill-konto og opretter et dashboard, et sæt rapporter og et datasæt, så du kan udforske dine data. Brug Mandrills analyser til hurtigt for at få overblik over dine nyhedsbreve eller din markedsføringskampagne. Dataene er indstillet til daglig opdatering for at sikre, at de data, du overvåger, er opdaterede.
