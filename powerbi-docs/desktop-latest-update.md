@@ -15,28 +15,28 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/10/2018
+ms.date: 02/06/2018
 ms.author: davidi
-ms.openlocfilehash: 4fd120b3c44c7a748bdfd42378c3c3aa43e2ad7d
-ms.sourcegitcommit: a44c29bbc220ecb1ed80810cb1e7df0db8ea611a
+ms.openlocfilehash: d1b63fd4d3346fecb2226547bb1c43e0ef59e2d0
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Hvad er nyt i den nyeste opdatering af Power BI Desktop?
 
-## <a name="january-2018-update-2544970761-"></a>Januar 2018-opdatering (2.54.4970.761)
+## <a name="february-2018-update-2555010521"></a>Opdatering i februar 2018 (2.55.5010.521)
 
 Nu kan du [downloade den nyeste version af Power BI Desktop](https://powerbi.microsoft.com/desktop). Hvis du kører Windows 10, kan du også få **Power BI Desktop** fra Windows Store. De månedlige versioner er de samme, uanset hvilken måde du installerer **Power BI Desktop** på. Du kan finde flere oplysninger i [denne artikel](desktop-get-the-desktop.md). 
 
-Vi er ved at ringe det nye år ind med en samling af opdateringer til **Power BI Desktop**, og vores nytårsfortsæt er at sørge for, at der kommer flere.
+Vi er glade for opdateringerne til **Power BI Desktop** i denne måned, og vi håber, at du også bliver lige så glade for dem som for en æske chokolade.
 
 Linkene ud for hver opdatering betyder følgende:
 
--   **[video]** angiver, at videoen afspilles på en ny fane i browseren, når funktionen beskrives.
--   Til nogle funktioner findes der en **[artikel]**, hvor funktionen beskrives mere detaljeret.
--   De fleste funktioner i den månedlige opdatering beskrives i et **[blog]**indlæg.
--   Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
+* **[video]** angiver, at videoen afspilles på en ny fane i browseren, når funktionen beskrives.
+* Til nogle funktioner findes der en **[artikel]**, hvor funktionen beskrives mere detaljeret.
+* De fleste funktioner i den månedlige opdatering beskrives i et **[blog]**indlæg.
+* Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
 Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
 
@@ -44,33 +44,47 @@ Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 
 ### <a name="reporting"></a>Rapportering
 
--   Vise og skjule sider [[video]](https://youtu.be/W8Pp5wuCXJw?t=20s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages) 
--   Styre baggrundsfarve for datanavn i kartesiske og visuelle elementer med kort [[video]](https://youtu.be/W8Pp5wuCXJw?t=3m13s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#dataLabelBackground) 
--   Forøge det område, der bruges til akseetiketter i diagrammer [[video]](https://youtu.be/W8Pp5wuCXJw?t=5m10s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#axisSize) 
--   Kontrolelement til udfyldning af værktøjslinje/kolonne [[video]](https://youtu.be/W8Pp5wuCXJw?t=6m40s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#padding) 
--   Vise datoer som et hierarki (eksempel) [[video]](https://youtu.be/W8Pp5wuCXJw?t=7m41s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#dateHierarchy) 
--   Føj en ankerdato til et relativt datoudsnit [[video]](https://youtu.be/W8Pp5wuCXJw?t=9m22s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#anchorDate) 
--   Top N-valg i spørgsmål og svar [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#topN) 
--   Mange nye brugerdefinerede visualiseringer [[video]](https://youtu.be/W8Pp5wuCXJw?t=11m32s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#customVisuals) 
+* Markér flere datapunkter på tværs af flere sider [[video]](https://youtu.be/KeVB5RwMzJo?t=23s) [[artikel]](desktop-multi-select.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight) 
+* Synkroniser udsnitsværktøjer på tværs af flere sider i en rapport [[video]](https://youtu.be/KeVB5RwMzJo?t=3m33s) [[artikel]](desktop-slicers.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers) 
+* Forbedring af udsnitsværktøjet til numerisk område – fastgørelse af heltal (prøveversion) [[video]](https://youtu.be/KeVB5RwMzJo?t=8m44s) [[artikel]](desktop-slicer-numeric-range.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#rangeSlicer) 
+* Hurtigere geokodning på Bing Kort (webprøveversion) – op til seks gange hurtigere [[video]](https://youtu.be/KeVB5RwMzJo?t=10m18s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#geocoding) 
+* Overløb af datanavne i søjlediagrammer i visualiseringer [[video]](https://youtu.be/KeVB5RwMzJo?t=12m31s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#overflow) 
+* Søgning i ruderne Formatering og Analyse [[video]](https://youtu.be/KeVB5RwMzJo?t=14m46s) [[artikel]](desktop-analytics-pane.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search) 
+
+
+### <a name="custom-visuals"></a>Brugerdefinerede visuelle elementer
+
+* Brugerdefinerede visualiseringer til organisationer (prøveversion) [[video]](https://youtu.be/KeVB5RwMzJo?t=19m23s) [[artikel]](power-bi-custom-visuals-organization.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#organizationalVisuals) 
 
 
 ### <a name="analytics"></a>Analyse
 
--   Hurtig måling af korrelationskoefficient [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#correlationCoefficient) 
+* Angiv en brugerdefineret datatabel [[video]](https://youtu.be/KeVB5RwMzJo?t=16m4s) [[artikel]](desktop-date-tables.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
+* Hurtigmålinger er nu generelt tilgængelige [[video]](https://youtu.be/KeVB5RwMzJo?t=17m52s) [[artikel]](desktop-quick-measures.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
 
--   Understøttelse af Azure Active Directory-godkendelse til Azure SQL Database og Data Warehouse-connectors [[video]](https://youtu.be/W8Pp5wuCXJw?t=21m42s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#AADauth) 
+* Forbedringer af DirectQuery via SAP HANA (prøveversion) [[video]](https://youtu.be/KeVB5RwMzJo?t=30m1s) [[artikel]](desktop-directquery-sap-hana.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#saphana) 
+
+### <a name="other"></a>Andet
+
+* Forbedringer af ydeevne i DirectQuery [[video]](https://youtu.be/KeVB5RwMzJo?t=32m24s) [[artikel]](desktop-directquery-about.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#dqPerf) 
+* Forbedringer af ydeevnen ved åbn og gem [[video]](https://youtu.be/KeVB5RwMzJo?t=33m40s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#savePerf) 
+* Forbedringer af *Vis elementer uden data* [[video]](https://youtu.be/KeVB5RwMzJo?t=34m6s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#showItemsWithNoData) 
+* Vedvarende filterstyring til kommende funktioner i **Power BI-tjenesten** [[video]](https://youtu.be/KeVB5RwMzJo?t=34m56s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#persistentFilters) 
+
 
 
 > [!NOTE]
 > Du kan også [se alle de datakilder, du kan bruge i Power BI Desktop](desktop-data-sources.md). Vi opdaterer hele tiden listen med nye datakilder, så kig tilbage ofte.
 
-Vil du have flere oplysninger om disse opdateringer? Se nærmere på [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/), hvor du kan få mere detaljerede oplysninger om hver af de nye funktioner (dette er de samme referencer til blogindlæg på listen herover).
+Vil du have flere oplysninger om disse opdateringer? Se nærmere på [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary), hvor du kan få mere detaljerede oplysninger om hver af de nye funktioner (dette er de samme referencer til blogindlæg på listen herover).
+
 
 I følgende video beskrives og vises hver af disse opdateringer. Du kan også se videoen i blogindlægget.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/W8Pp5wuCXJw" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KeVB5RwMzJo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 
 > [!NOTE]
 > Du kan også læse om [nyhederne i Power BI-tjenesten](service-whats-new.md) og se [nyhederne i mobileapperne til Power BI](mobile-whats-new-in-the-mobile-apps.md).

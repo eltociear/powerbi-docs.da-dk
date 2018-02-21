@@ -15,26 +15,24 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: add95532f645c143aea0f58200f9e3b1467320d0
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 02498ff745a2e06a49ed6064a4f7eefebff305f8
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Brug af ruden Analytics i Power BI Desktop
-Med ruden **Analytics** i **Power BI Desktop** kan du tilføje dynamiske *referencelinjer* for visuelle elementer og give vigtige tendenser eller indsigt fokus. Ruden **Analytics** findes i området **Visualiseringer** i Power BI Desktop med start fra august 2016-versionen (version 2.37.4464.321 eller nyere) eller som vist nedenfor.
+Med ruden **Analytics** i **Power BI Desktop** kan du tilføje dynamiske *referencelinjer* for visuelle elementer og give vigtige tendenser eller indsigt fokus. Du finder ruden **Analytics** i området **Visualiseringer** i Power BI Desktop.
 
 ![](media/desktop-analytics-pane/analytics-pane_1.png)
 
 > [!NOTE]
 > Ruden **Analytics** vises kun, når du vælger en visuel effekt på Power BI Desktop-lærredet.
-> 
-> 
 
-## <a name="enable-forecasting-preview"></a>Aktivér Prognose (prøveversion)
-Derudover kan du med september 2016-versionen af **Power BI Desktop** (version 2.39.4526.362 eller nyere) også udføre *prognoser* fra ruden **Analytics**. Du skal aktivere denne prøveversionsfunktion ved at gå til **Filer > Indstillinger > Indstillinger** og derefter vælge **Funktioner i prøveversion** i venstre rude. Markér afkrydsningsfeltet ud for **Prognose** for at aktivere funktionen som vist i følgende billede. Du skal genstarte **Power BI Desktop**, før ændringerne kan træde i kraft.
+## <a name="search-within-the-analytics-pane"></a>Søg i ruden Analytics
+Fra og med udgivelsen af **Power BI Desktop** i februar 2018 (version 2.55.5010.201 eller nyere) kan du søge i ruden **Analytics**, hvilket er et underafsnit af ruden **Visualiseringer**. Som vist på nedenstående billede vises et søgefelt, når ruden **Analytics** er markeret.
 
 ![](media/desktop-analytics-pane/analytics-pane_1b.png)
 
@@ -116,7 +114,7 @@ Slutteligt kan ikke-kartesianske visuelle effekter i øjeblikket ikke anvende dy
 * Tabel
 
 ## <a name="next-steps"></a>Næste trin
-Der er mange forskellige ting, du kan gøre med Power BI Desktop. Du kan finde flere oplysninger om funktionerne i følgende ressourcer:
+Du kan gøre mange forskellige ting med Power BI Desktop. Du kan finde flere oplysninger om funktionerne i følgende ressourcer:
 
 * [Nyheder i Power BI Desktop](desktop-latest-update.md)
 * [Download Power BI Desktop](desktop-get-the-desktop.md)

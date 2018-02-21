@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: c09e3502a607661cbe90ff068220c51c9196734e
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 262245dab44ae904b51d6cb1449082171631dc09
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="analyze-in-excel"></a>Analysér i Excel
 Der er tidspunkter, hvor du måske vil bruge Excel til at få vist og interagere med et datasæt, du har i Power BI. Det kan du gøre med **Analysér i Excel**, og du kan få adgang til pivottabel-, diagram- og udsnitsfunktioner i Excel, der er baseret på datasættet, der findes i Power BI.
@@ -32,6 +32,7 @@ Der er et par krav til brugen af **Analysér i Excel**:
 * **Analysér i Excel** understøttes for Microsoft Excel 2010 SP1 og nyere.
 * Pivottabeller i Excel understøtter ikke træk og slip-sammenlægning af numeriske felter. Dit datasæt i Power BI *skal have foruddefinerede målinger*.
 * Nogle organisationer har muligvis gruppepolitikregler, der forhindrer installation af de krævede **Analysér i Excel**-opdateringer i Excel. Hvis du ikke kan installere opdateringerne, skal du kontakte din administrator.
+* Der kræves en Pro-licens til **Analysér i Excel**. Hvis du vil vide mere om forskellene i funktionaliteten mellem en gratis licens og en Pro-licens, skal du se [Power BI (gratis) vs. Power BI Pro](service-free-vs-pro.md). 
 
 ## <a name="how-does-it-work"></a>Hvordan fungerer det?
 Når du vælger **Analysér i Excel** i menuen med tre prikker (...), der er tilknyttet et datasæt eller en rapport i **Power BI**, opretter Power BI en .ODC-fil og downloader den fra browseren til din computer.

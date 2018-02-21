@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/05/2017
+ms.date: 02/05/2018
 ms.author: maghan
-ms.openlocfilehash: eb2072b0beadf3f6f2cf702f35f56441bc38c7ff
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: b2e41884ca799ca07223a4b5444e39b38aa2102a
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="power-bi-premium---what-is-it"></a>Power BI Premium – hvad er det?
 Power BI Premium indeholder ressourcer, der er dedikeret til at køre Power BI-tjenesten for din organisation eller dit team og giver dig en mere pålidelig ydeevne og større datamængder. Premium giver også mulighed for omfattende distribution af indhold, uden at du skal købe licenser pr. bruger til fremvisere.
@@ -46,7 +46,7 @@ Der er to kapacitetstyper i Power BI. Delt kapacitet og Power BI Premium-kapacit
 | Integreret API og kontrolelementer |![](media/service-premium/not-available.png "Ikke tilgængelig") |![](media/service-premium/available.png "Tilgængelig")<sup>2</sup> |
 | **Publicer Power BI-rapporter i det lokale miljø** |![](media/service-premium/not-available.png "Ikke tilgængelig") |![](media/service-premium/available.png "Tilgængelig") |
 
-*<sup>1</sup> Gratis brugerforbrug i apps omfatter visning af indhold i web og mobil ved hjælp af Spørgsmål og svar, Hurtig indsigt, Cortana, eksport til CSV, Excel og PowerPoint.*  
+*<sup>1</sup> Gratis brugerforbrug i apps omfatter visning af indhold i web og mobil ved hjælp af Spørgsmål og svar, Hurtig indsigt, Cortana, eksport til CSV, Excel og PowerPoint. Der kræves en Pro-licens til andre aktiviteter, der ikke er angivet, f.eks. oprettelse af rapporter baseret på delte datasæt og Analysér i Excel. Få mere at vide om funktionaliteten i [den gratis version af Power BI sammenlignet med Pro-versionen](service-free-vs-pro.md).*  
 *<sup>2</sup> Fremtidige forbedringer i Power BI Premium efter GA.*
 
 ### <a name="premium-capacity"></a>Premium-kapacitet

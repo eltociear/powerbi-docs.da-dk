@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/10/2018
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: 2a65b8b895d6461efa29290dbd9d09639358678d
-ms.sourcegitcommit: a44c29bbc220ecb1ed80810cb1e7df0db8ea611a
+ms.openlocfilehash: 71a86c29c1ac690233016d91c4a66111978d47ba
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -30,6 +30,56 @@ I denne artikel beskrives tidligere opdateringer til **Power BI Desktop**. For d
 I de følgende afsnit beskrives tidligere måneders opdateringer til **Power BI Desktop**.
 
 Du kan til enhver tid [downloade den seneste version af Power BI Desktop](https://powerbi.microsoft.com/desktop). Hvis du kører Windows 10, kan du også få **Power BI Desktop** fra Windows Store. De månedlige versioner er de samme, uanset hvilken måde du installerer **Power BI Desktop** på. Du kan finde flere oplysninger i [denne artikel](desktop-get-the-desktop.md). 
+
+
+## <a name="january-2018-update-2544970761"></a>Opdatering i januar 2018 (2.54.4970.761)
+
+Vi startede det nye år med en samling af opdateringer til **Power BI Desktop**, og vores nytårsfortsæt er at sørge for, at der kommer flere.
+
+Linkene ud for hver opdatering betyder følgende:
+
+* **[video]** angiver, at videoen afspilles på en ny fane i browseren, når funktionen beskrives.
+* Til nogle funktioner findes der en **[artikel]**, hvor funktionen beskrives mere detaljeret.
+* De fleste funktioner i den månedlige opdatering beskrives i et **[blog]**indlæg.
+-   Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
+
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
+
+Følgende opdateringer var nye i **Power BI Desktop** i januar:
+
+### <a name="reporting"></a>Rapportering
+
+-   Vise og skjule sider [[video]](https://youtu.be/W8Pp5wuCXJw?t=20s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages) 
+-   Styre baggrundsfarve for datanavn i kartesiske og visuelle elementer med kort [[video]](https://youtu.be/W8Pp5wuCXJw?t=3m13s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#dataLabelBackground) 
+-   Forøge det område, der bruges til akseetiketter i diagrammer [[video]](https://youtu.be/W8Pp5wuCXJw?t=5m10s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#axisSize) 
+-   Kontrolelement til udfyldning af værktøjslinje/kolonne [[video]](https://youtu.be/W8Pp5wuCXJw?t=6m40s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#padding) 
+-   Vise datoer som et hierarki (eksempel) [[video]](https://youtu.be/W8Pp5wuCXJw?t=7m41s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#dateHierarchy) 
+-   Føj en ankerdato til et relativt datoudsnit [[video]](https://youtu.be/W8Pp5wuCXJw?t=9m22s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#anchorDate) 
+-   Top N-valg i spørgsmål og svar [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#topN) 
+-   Mange nye brugerdefinerede visualiseringer [[video]](https://youtu.be/W8Pp5wuCXJw?t=11m32s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#customVisuals) 
+
+### <a name="analytics"></a>Analyse
+
+-   Hurtig måling af korrelationskoefficient [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#correlationCoefficient) 
+
+
+### <a name="data-connectivity"></a>Dataforbindelse
+
+-   Understøttelse af Azure Active Directory-godkendelse til Azure SQL Database og Data Warehouse-connectors [[video]](https://youtu.be/W8Pp5wuCXJw?t=21m42s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#AADauth) 
+
+
+> [!NOTE]
+> Du kan også [se alle de datakilder, du kan bruge i Power BI Desktop](desktop-data-sources.md). Vi opdaterer hele tiden listen med nye datakilder, så kig tilbage ofte.
+
+Vil du have flere oplysninger om disse opdateringer? Se nærmere på [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/), hvor du kan få mere detaljerede oplysninger om hver af de nye funktioner (dette er de samme referencer til blogindlæg på listen herover).
+
+I følgende video beskrives og vises hver af disse opdateringer. Du kan også se videoen i blogindlægget.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W8Pp5wuCXJw" frameborder="0" allowfullscreen></iframe>
+
+> [!NOTE]
+> Du kan også læse om [nyhederne i Power BI-tjenesten](service-whats-new.md) og se [nyhederne i mobilappsene til Power BI](mobile-whats-new-in-the-mobile-apps.md).
+
 
 
 ## <a name="december-2017-update-2534954481-"></a>Opdatering for december 2017 (2.53.4954.481)

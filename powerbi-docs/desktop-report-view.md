@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: 3715f2b877073357975af76495f955ff204cbc73
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 5ae0ef1ec5b13699f3ae5c502d29529841a7a726
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Rapportvisning i Power BI Desktop
 Hvis du har arbejdet med Power BI, ved du, hvor let det er at oprette rapporter med dynamiske perspektiver, og som giver indsigt i dine data. Power BI har også mere avancerede funktioner i Power BI Desktop. Med Power BI Desktop kan du oprette avancerede forespørgsler, mikse data fra flere kilder, oprette relationer mellem tabeller med mere.
@@ -62,6 +62,24 @@ Hvis du vil slette en side, skal du klikke på **X** på fanen for siden nederst
 
 > [!NOTE]
 > Rapporter og visualiseringer kan ikke fastgøres til et dashboard i Power BI Desktop. Hvis du vil gøre dette, skal du [udgive fra Power BI Desktop](desktop-upload-desktop-files.md) på dit Power BI-websted.
-> 
-> 
+
+## <a name="hide-report-pages"></a>Skjul rapportsider
+
+Når du opretter en rapport, kan du også skjule sider i rapporten. Det kan være nyttigt, hvis du har brug for at oprette underliggende data eller visualiseringer i rapporten, men ikke ønsker, at disse sider skal være synlige for andre, f.eks. når du opretter tabeller eller understøttende visualiseringer, som bruges på andre rapportsider. Der kan være mange andre kreative årsager til, at du vil oprette en rapportside og derefter skjule den i en rapport, du vil publicere. 
+
+Det er nemt at skjule en rapportside. Du skal blot højreklikke på rapportsidens fane og vælge **Skjul** i den menu, der vises.
+
+![](media/desktop-report-view/report-view_05.png)
+
+Du skal dog gøre nogle få overvejelser, når du skjuler en rapportside:
+
+* Du kan stadig se en skjult rapportvisning i **Power BI Desktop**, selvom sidens titel er nedtonet. På følgende billede er side 4 skjult.
+
+    ![](media/desktop-report-view/report-view_06.png)
+
+* Du *kan ikke* se en skjult rapportside, når du får vist rapporten i **Power BI-tjenesten**.
+
+* Det er *ikke* en sikkerhedsforanstaltning at skjule en rapportside. Brugerne kan stadig tilgå siden, og sidens indhold er stadig tilgængelig vha. detaljeadgang og andre metoder.
+
+* Når en side er skjult, vises der ingen navigationspile i Visningstilstand.
 

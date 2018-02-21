@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: cee6cd859507105b7fc0c7e7075478d3a876f7bb
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: 6d63236254906619f7244db9f57af162a19a70d6
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Brug udsnitsværktøjet til numerisk område i Power BI Desktop
 Med **udsnitsværktøjet til numerisk område** kan du anvende alle former for filtre på alle numeriske kolonner i din datamodel. Du kan vælge at filtrere **mellem** tal, **mindre end eller lig med** et tal eller **større end eller lig med** et tal. Det lyder måske meget enkelt, men det er en effektiv måde at filtrere dine data på.
@@ -56,6 +56,11 @@ Når vi vælger **Mindre end eller lig med**, forsvinder venstre håndtag (den l
 Og endelig, hvis vi vælger **Større end eller lig med** forsvinder højre håndtag til skyderen (den højeste værdi), og vi kan justere den laveste værdi, som vist på følgende billede. Nu vises der kun elementer, der har en *UnitPrice*, som er større end eller lig med 750.56, i de visuelle elementer på rapportsiden.
 
 ![](media/desktop-slicer-numeric-range/slicer-numeric-range_7.png)
+
+## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer-preview"></a>Fastgør til hele tal ved hjælp af udsnitsværktøj til numerisk område (prøveversion)
+
+Fra og med udgivelsen af **Power BI Desktop** fra februar 2018, fastgør dit udsnitsværktøj til numerisk område til hele tal. Dermed kan udsnitsværktøjet nemt afstemme to hele tal. Fastgørelse til hele tal gælder ikke for decimalfiltre.
+
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 Følgende begrænsninger og overvejelser, der aktuelt gælder for **udsnitsværktøjet til numerisk område**

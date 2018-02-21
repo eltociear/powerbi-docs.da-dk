@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: 0d6d66016663ed0e12d8f3da854ec1e9f7da7eae
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: ceccf00879d3ac17f907f5dce296bb03bb0227d2
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="using-directquery-in-power-bi"></a>Brug af DirectQuery i Power BI
 Du kan oprette forbindelse til alle mulige forskellige datakilder, når du bruger **Power BI Desktop** eller **Power BI-tjenesten**, og du kan oprette disse dataforbindelser på forskellige måder. Du kan enten *importere* data i Power BI, hvilket er den mest almindelige måde at hente data på, eller du kan oprette forbindelse direkte til dataene i det oprindelige kildelager, der også er kendt som **DirectQuery**. I denne artikel beskrives **DirectQuery** og dens egenskaber, herunder følgende emner:
@@ -269,14 +269,21 @@ Når du definerer modellen, skal du overveje at gøre følgende:
 ### <a name="report-design-guidance"></a>Vejledning i rapportdesign
 Når du opretter en rapport vha. en DirectQuery-forbindelse, skal den være i overensstemmelse med følgende retningslinjer:
 
+* **Overvej at bruge indstillinger til Reduktion af forespørgsel:** Med Power BI får du indstillinger i rapporten til at sende færre forespørgsler og til at deaktivere visse interaktioner, der ellers ville resultere i en dårlig oplevelse, hvis de deraf følgende forespørgsler tager lang tid at udføre. Du får adgang til disse indstillinger i **Power BI Desktop** ved at gå til **Fil > Indstillinger > Indstillinger** og vælge **Reduktion af forespørgsel**. 
+
+   ![](media/desktop-directquery-about/directquery-about_03b.png)
+
+    Ved at markere afkrydsningsfelter under **Reduktion af forespørgsel** kan du deaktivere krydsfremhævning på tværs af hele rapporten. Du kan også få vist en knap af typen *Anvend* for udsnitsværktøjer og/eller filtermarkeringer, hvilket giver dig mulighed for at foretage mange valg med udsnitsværktøjer og filtre. Det resulterer i, at der ikke sendes nogen forespørgsler, før du klikker på knappen **Anvend** på udsnitsværktøjet. Dine valg bruges derefter til at filtrere dataene.
+
+    Disse indstillinger anvendes på din rapport, mens du interagerer med den i **Power BI Desktop**, og når brugerne gør brug af rapporten i **Power BI-tjenesten**.
+
 * **Anvend filtre først:** Du skal altid anvende de relevante filtre når du begynder at oprette en visualisering. I stedet for f.eks. at trække TotalSalgsmængde Produktnavn ind skal du filtrere efter et bestemt år og anvende filteret på År helt fra starten af. Dette skyldes, at hvert enkelt trin i oprettelsen af en visualisering sender en forespørgsel, og selvom det er muligt derefter at foretage en anden ændring, før den første forespørgsel er fuldført, så giver det stadig en unødvendig belastning på den underliggende kilde. Når du anvender filtre tidligt, reducerer det generelt omkostningerne ved disse mellemliggende forespørgsler. Hvis du ikke anvender filtre tidligt, kan det også resultere i, at du rammer grænsen på 1 mio. rækker, som angivet ovenfor.
 * **Begræns antallet af visualiseringer på en side:** Når en side er åbnet (eller et udsnitsværktøj på sideniveau eller et filter er ændret), opdateres alle visualiseringerne på en side. Der er også en grænse for antallet af forespørgsler, der sendes parallelt. Derfor opdateres nogle visualiseringer i rækkefølge, når antallet af visualiseringer øges, hvilket medfører, at den tid, det tager at opdatere hele siden, øges tilsvarende. Derfor anbefales det at begrænse antallet af visualiseringer på en enkelt side og i stedet have flere enkle sider.
 * **Overvej at slå interaktion mellem visualiseringer fra:** Som standard kan visualiseringer på en rapportside bruges til tværgående filtrering og tværgående fremhævning af de andre visualiseringer på siden. Hvis "1999" f.eks. er valgt i cirkeldiagrammet, er søjlediagrammet fremhævet på tværs for at vise salget efter kategori for "1999".                                                                  
   
   ![](media/desktop-directquery-about/directquery-about_04.png)
   
-  Denne interaktion kan dog kontrolleres, som beskrevet [i denne artikel](service-reports-visual-interactions.md). I DirectQuery kræver en sådan krydsfiltrering og fremhævning på tværs, at der sendes forespørgsler til den underliggende kilde. Der for skal interaktion være slået fra, hvis det vil tage urimeligt lang tid at svare på brugernes valg.
-* **Overvej kun at dele rapporten:** Der er forskellige måder at dele indhold på, når du har publiceret det i **Power BI-tjenesten**. I forbindelse med DirectQuery tilrådes det at overveje kun deling af den afsluttede rapport i stedet for at tillade, at andre brugere må oprette nye rapporter (og potentielt støder på problemer med ydeevnen for de visualiseringer, de opretter).
+  I DirectQuery kræver en sådan krydsfiltrering og -fremhævning, at der sendes forespørgsler til den underliggende kilde. Derfor bør interaktionen være slået fra, hvis det vil tage urimeligt lang tid at svare på brugernes valg. Denne interaktion kan dog slås fra enten for hele rapporten (som beskrevet ovenfor ifm. *indstillinger for Reduktion af forespørgsel*) eller på ad hoc-basis (som beskrevet [i denne artikel](service-reports-visual-interactions.md)).
 
 Ud over ovenstående liste over forslag skal du bemærke, at hver af følgende rapporteringsegenskaber kan medføre problemer med ydeevnen:
 
@@ -294,6 +301,8 @@ Ud over ovenstående liste over forslag skal du bemærke, at hver af følgende r
 * **Median:** Normalt sendes evt. samlinger (Sum, Count Distinct osv.) til den underliggende kilde. Det gælder dog ikke for medianen, da denne samling generelt ikke understøttes af den underliggende kilde. I så fald hentes detaljerede data fra den underliggende kilde, og medianen beregnes ud fra de returnerede resultater. Dette er rimeligt, når medianen skal beregnes i forhold til et lille antal resultater, men der vil opstå problemer med ydeevnen (eller forespørgselsfejl på grund af grænsen på 1 mio. rækker), hvis kardinaliteten er stor.  Medianen Landebefolkning er muligvis rimelig, men medianen Salgspris er muligvis ikke.
 * **Avancerede tekstfiltre ("indeholder"' og lignende):** Når du filterer på en tekstkolonne, tillades filtre som "indeholder" og "begynder med" osv. i forbindelse med avanceret filtrering. Disse filtre kan medføre forringet ydeevne for nogle datakilder. Standardfilteret "indeholder" skal især ikke bruges, hvis det, der reelt ønskes er et præcist match ("er" eller "er ikke"). Selvom resultaterne kan være de samme, afhængigt af de faktiske data, kan ydeevnen være markant anderledes på grund af brugen af indekser.
 * **Udsnitsværktøjer til flere markeringer:** Som standard tillader udsnitsværktøjer kun, at der foretages én enkelt markering. Tilladelse af flere markeringer i filtre kan medføre problemer med ydeevnen, da brugeren vælger et sæt elementer i udsnitsværktøjet (f.eks. de ti produkter, vedkommende er interesseret i). Derefter vil hver enkelt ny markering medføre, at der sendes forespørgsler til backendkilden. Selvom brugeren kan markere det næste element, før forespørgslen er udført, resulterer det i en ekstra belastning af den underliggende kilde.
+
+* **Overvej at slå totaler fra i visualiseringer:** Som standard vises totaler og subtotaler i tabeller og matrixer. I mange tilfælde skal der sendes separate forespørgsler til den underliggende kilde for at hente værdierne for sådanne totaler. Dette gælder, når *DistinctCount*-samling bruges eller i alle tilfælde, når DirectQuery via SAP BW eller SAP HANA bruges. Sådanne totaler bør slås fra (ved hjælp af ruden **Format**), hvis de ikke er påkrævet. 
 
 ### <a name="diagnosing-performance-issues"></a>Diagnosticering af problemer med ydeevnen
 I denne sektion beskrives det, hvordan problemer med ydeevnen diagnosticeres, og hvordan du kan få mere detaljerede oplysninger om, hvordan rapporterne kan optimeres.

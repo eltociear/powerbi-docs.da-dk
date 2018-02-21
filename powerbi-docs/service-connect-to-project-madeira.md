@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: yshoukry
-ms.openlocfilehash: bf65b900f315f74c5ca81980e6371d92923cb97d
-ms.sourcegitcommit: c3be4de522874fd73fe6854333b379b85619b907
+ms.openlocfilehash: cde5199ad65e69f3304cfe244b549f1e7ae61e97
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="connect-to-project-madeira-with-power-bi"></a>Opret forbindelse til projektet "Madeira" med Power BI
 Det er let at få indblik i dataene for projektet "Madeira" med Power BI og indholdspakken til projektet "Madeira". I Power BI hentes dine data, både salgs- og finansdata, og derefter bygges en app med et brugerdefineret dashboard og rapporter, der er baseret på disse data.
@@ -47,7 +47,7 @@ Opret forbindelse til [analyseindholdspakken til projektet "Madeira"](https://ap
     >[!NOTE]
     >Du skal være superbruger på projektet "Madeira".
    
-    ![](media/service-connect-to-project-madeira/creds.png)
+   ![](media/service-connect-to-project-madeira/creds.png)
 6. Når der er oprettet forbindelse, indlæses der automatisk et dashboard, en rapport og et datasæt. Når processen er fuldført, opdateres felterne med data fra din konto.  
    
     ![](media/service-connect-to-project-madeira/dashboard.png)
@@ -95,12 +95,14 @@ Når du klikker på OK, oprettes der en nøgle, så du kan kopiere den til felte
 ## <a name="troubleshooting"></a>Fejlfinding
 Power BI-dashboardet er baseret på de udgivne webtjenester, der er angivet ovenfor, og det viser data fra demovirksomheden eller din egen virksomhed, hvis du importerer data fra din aktuelle økonomiløsning. Hvis der går noget galt, indeholder dette afsnit midlertidige løsninger til de mest almindelige problemer.
 
-** "Parametrene blev ikke valideret. Kontrollér, at alle parametrene er gyldige" ** Hvis du får vist denne fejl, når du har angivet URL-adressen til projektet "Madeira", skal du kontrollere, om følgende betingelser er opfyldt:  
+**"Parametrene blev ikke valideret. Kontrollér, at alle parametrene er gyldige".**
 
-    - URL-adressen følger dette mønster præcist: https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')  
-    - Slet eventuel tekst efter firmanavnet i parentes  
-    - Kontrollér, at der ikke er nogen efterstillet skråstreg i slutningen af URL-adressen.  
-    - Kontrollér, at URL-adressen benytter en sikker forbindelse, som angivet af den URL-adresse, der starter med https.  
+Hvis du får vist denne fejl, når du har angivet URL-adressen til projektet "Madeira", skal du kontrollere, om følgende betingelser er opfyldt:  
+
+   - URL-adressen følger dette mønster præcist: https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')  
+   - Slet eventuel tekst efter firmanavnet i parentes  
+   - Kontrollér, at der ikke er nogen efterstillet skråstreg i slutningen af URL-adressen.  
+   - Kontrollér, at URL-adressen benytter en sikker forbindelse, som angivet af den URL-adresse, der starter med https.  
 
 **"Logon mislykkedes"** Hvis du får vist fejlmeddelelsen "Logon mislykkedes", når du logger på dashboardet vha. legitimationsoplysningerne til projektet "Madeira", kan det skyldes et af følgende problemer:  
 

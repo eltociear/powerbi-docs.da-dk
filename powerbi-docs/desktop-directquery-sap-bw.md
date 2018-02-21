@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: 10557146b0b640450779049a30dd8f394686f57a
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: 8abb327181af031df508f0629cbc09053a9a7927
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="directquery-and-sap-business-warehouse-bw"></a>DirectQuery og SAP Business Warehouse (BW)
 Du kan oprette forbindelse til **SAP Business Warehouse (BW)**-datakilder direkte ved hjælp af **DirectQuery**. Da der arbejdes med OLAP/flere dimensioner i SAP BW, er der mange vigtige forskelle mellem DirectQuery via SAP BW og relationskilder som SQL Server. Disse forskelle kan opsummeres på følgende måde:
@@ -74,13 +74,9 @@ I følgende tabel vises alle SAP BW-funktioner, der ikke understøttes fuldt ud,
 | Attributter |Det er ikke muligt at få adgang til attributterne for en egenskab i Power BI. |
 | Slutbrugerens sprogindstilling |Den landestandard, der bruges til at oprette forbindelse til SAP BW, er angivet som en del af forbindelsesoplysningerne, og den afspejler ikke landestandarden for den endelige forbruger af rapporten. |
 | Tekstvariabler |I SAP BW kan feltnavne indeholde pladsholdere for variabler (f.eks. "$YEAR$ Actuals"), der erstattes med den valgte værdi. Feltet vises f.eks. som "2016 Actuals" i BEx-værktøjer, hvis året 2016 er valgt som variabel. <br/> <br/> Kolonnenavnet i Power BI ændres ikke afhængigt af variabelværdien, og det vises derfor som "$YEAR$ Actuals".  Men kolonnenavnet kan derefter ændres i Power BI. |
+| Kundehookvariabler | Kundehookvariabler fremvises ikke af den offentlige API og understøttes derfor ikke af Power BI. |
+| Karakteristiske strukturer | Eventuelle karakteristiske strukturer i den underliggende SAP BW-kilde vil resultere i, at der bliver fremvist en "eksplosion" af målinger i Power BI. Fire målinger vil f.eks. blive fremvist ved to målinger "Sales" (Salg) og "Costs" (Omkostninger) og en karakteristisk struktur, der indeholder "Budget" (Budget) og "Actual" (Reel): Sales.Budget, Sales.Actual, Costs.Budget, Costs.Actual. |
 
-## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
-I følgende tabel vises begrænsninger i betaversionen af SAP BW-connectoren.
-
-| Begrænsning | Beskrivelse |
-| --- | --- |
-| Ingen opdatering |Knappen Opdater er deaktiveret, og visuelle elementer/metadata kan ikke opdateres. |
 
 ## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om DirectQuery i følgende ressourcer:

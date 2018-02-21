@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/04/2018
+ms.date: 02/06/2018
 ms.author: maggies
-ms.openlocfilehash: d63ef5ad9ee59901917fb9bf9c28358c9aa542e8
-ms.sourcegitcommit: 25489cf87c31fc107a5337fa1dd36506897c4bbb
+ms.openlocfilehash: 23a3fc38b1cf284f79b3515b25ec0396b79fb267
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="find-your-dashboards-reports-and-apps-in-the-power-bi-mobile-apps"></a>Find dine dashboards, rapporter og apps i Power BI-mobilapps
 Gælder for:
@@ -41,7 +41,11 @@ Dine dashboards, rapporter og apps gemmes forskellige steder i Power BI-mobilapp
 5. [Arbejdsområder](mobile-apps-find-content-mobile-devices.md#5-workspaces)
 
 ## <a name="1-favorites"></a>1. Favoritter
-Saml de dashboards og apps, du bruger mest, ved at markere dem som favoritter. Læs mere om [favoritter i Power BI-mobilappsene](mobile-apps-favorites.md).
+Du kan samle de dashboards, rapporter og apps, du får vist oftest, ved at markere dem som favoritter. 
+
+![Favoritter i Power BI-mobilapps](media/mobile-apps-find-content-mobile-devices/power-bi-android-favorites-reports.png)
+
+Læs mere om [favoritter i Power BI-mobilapperne](mobile-apps-favorites.md).
 
 ## <a name="2-report-servers"></a>2. Rapportservere
 Du har muligvis forbindelser til en eller flere Power BI-rapportservere eller SQL Server Reporting Services-servere i det lokale miljø. Hvis du har det, vises KPI'er, Power BI-rapporter og sideinddelte rapporter på serveren her. Hvis du har markeret nogle af dem som favoritter på serveren, vises de også på listen Favoritter. Læs mere om at [få vist KPI'er og rapporter i det lokale miljø i Power BI-mobilappsene](mobile-app-ssrs-kpis-mobile-on-premises-reports.md).
@@ -65,9 +69,9 @@ I Power BI-mobilappsene kan du se alle de apps, du allerede har installeret. En 
 I Power BI-tjenesten kan du gå til Microsoft AppSource for at søge efter andre apps, men ikke fra Power BI-mobilappsene. 
 
 ## <a name="4-shared-with-me"></a>4. Delt med mig
-Her finder du de dashboards, som dine kolleger har delt med dig. Du kan filtrere efter ejeren af dashboardet, eller du kan søge efter det, du gerne vil finde. Hvis der er delt indhold, du besøger ofte, kan du markere det som favorit direkte fra **Delt med mig** ved at trykke på de tre prikker (...).
+Her finder du de dashboards og rapporter, som dine kolleger har delt med dig. Du kan filtrere efter ejeren eller søge efter det, du gerne vil finde. I forbindelse med delt indhold, du besøger ofte, kan du markere det som favorit direkte fra **Delt med mig** ved at trykke på ellipsen (**…**).
 
-![Ny navigation i Power BI](media/mobile-apps-find-content-mobile-devices/power-bi-mobile-shared-with-me-fave.png)
+![Power Bi Delt med mig](media/mobile-apps-find-content-mobile-devices/power-bi-android-shared-fave.png)
 
 ## <a name="5-workspaces"></a>5. Arbejdsområder
 *Apparbejdsområder* er testmiljøer i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)), hvor du kan samarbejde med dine kolleger om at oprette en samling af dashboards og rapporter. Derefter kan du distribuere samlingen som en *app*. 

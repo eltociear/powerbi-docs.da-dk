@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/05/2018
 ms.author: davidi
-ms.openlocfilehash: ff29fa49cc3ad1a57ae0d09596b6e0d086b4d349
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: 0056fe1d5a2881f1415fe5889ab563a27bb8648d
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="use-the-matrix-visual-in-power-bi-desktop"></a>Brug matrixvisualisering i Power BI Desktop
 Når du bruger **Matrix**-visualisering kan du oprette matrixvisualiseringer (også kaldet *tabeller*) i rapporter i **Power BI Desktop** og få tværgående fremhævning af elementer i matrixen med andre visualiseringer. Derudover kan du vælge rækker, kolonner og endda individuelle celler og tværgående fremhævning. Endelig kan du udnytte pladsen i layoutet bedre, fordi matrixvisualisering understøtter et trinvist layout.
@@ -34,6 +34,19 @@ Der er mange funktioner knyttet til matrixen, og vi vil gennemgå dem i følgend
 > Fra og med udgivelsen i juli 2017 af **Power BI Desktop** afspejler matrix- og tabelvisualiseringer formatering (herunder farver) fra det anvendte **rapporttema**. Det er måske ikke de farver, du forventer til din matrixvisualisering, og du kan ændre dem i konfigurationen **Rapporttema**. Se [**Use Report Themes in Power BI Desktop**](desktop-report-themes.md) (Brug rapporttemaer i Power BI Desktop), hvor du kan finde flere oplysninger om temaer.
 > 
 > 
+
+## <a name="understanding-how-power-bi-calculates-totals"></a>Sådan beregner Power BI totaler
+
+Før du begynder at læse om, hvordan du bruger **Matrix**-visualiseringen, er det vigtigt at forstå, hvordan Power BI beregner værdierne for total og subtotal i tabeller og matrixer. I rækker med total og subtotal evalueres målingen henover alle rækker i de underliggende data – det er *ikke* kun en simpel addition af værdierne i de synlige og viste rækker. Det betyder, at du kan ende med at have en anden værdi i rækken med total, end hvad du regnede med. 
+
+Se følgende **Matrix**-visualiseringer. 
+
+![](media/desktop-matrix-visual/matrix-visual_3.png)
+
+I dette eksempel vises *Beløb* for hver sælger/dato-kombination i hver række i **Matrix**-visualiseringen længst til højre. Men da en sælger vises for flere datoer, kan tallene forekomme mere end én gang. Den nøjagtige total fra de underliggende data og en simpel addition af de synlige værdier kan derfor ikke sidestilles. Dette er et almindeligt mønster, når den værdi, du regner på, er på den "ene" side i en en til mange-relation.
+
+Når du arbejder med totaler og subtotaler, skal du huske på, at disse værdier er baseret på de underliggende data og ikke kun på de synlige værdier. 
+
 
 ## <a name="using-drill-down-with-the-matrix-visual"></a>Brug detailudledning til matrixvisualiseringen
 Med **Matrix**-visualiseringen kan du foretage en mængde interessante aktiviteter til detailudledning, der ikke var tilgængelig før. Dette omfatter mulighed for at foretage detailudledning ved hjælp af rækker, kolonner og endda til individuelle afsnit og celler. Lad os se på, hvordan hver enkelt af disse fungerer.
@@ -144,16 +157,12 @@ Begge fremgangsmåde giver samme resultat. Hvis du vælger *Avancerede kontrolel
 
 ![](media/desktop-matrix-visual/matrix-visual_19.png)
 
-## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
-I denne version af **Matrix** er der et par begrænsninger og overvejelser, du skal være opmærksom på.
+## <a name="next-steps"></a>Næste trin
 
-* Detailudledning for kolonner kan kun udføres ved hjælp af genvejsmenuen, og der er i øjeblikket ingen indikation i visualiseringen på, at du kan foretage detailudledning på række- eller kolonnegrupper
-* Du kan kun udvide alle elementer på et niveau på én gang og ikke udvide én kategori ad gangen
-* Du kan få vist **See Records** (Se poster) i en menu, når du højreklikker på en kolonneoverskrift, men det fungerer ikke
-* Der er i øjeblikket ingen række med *Grand total* (Hovedtotal)
-* Hvis du deaktiverer subtotalrækken i det trinvise layout, har det ingen virkning
-* Kolonneoverskrifter kan afkortes, hvis indre grupper har tekst, der er kortere end den ydre gruppe
-* Ændring af indrykning i det trinvise layout bør ikke indrykke den yderste rækkegruppes indrykning
+Du vil måske også være interesseret i følgende artikler:
 
-Vi vil altid gerne høre din mening. Vi foretager i øjeblikket en **undersøgelse** af denne **Matrix**-visualisering, så hvis du har et par minutter, vil vi gerne bede dig om at [deltage i undersøgelsen](https://www.instant.ly/s/PYXT1).
+* [Brug gitterlinjer og fastgørelse til gitter i Power BI Desktop-rapporter](desktop-gridlines-snap-to-grid.md)
+* [Datakilder i Power BI Desktop](desktop-data-sources.md)
+* [Datatyper i Power BI Desktop](desktop-data-types.md)
 
+ 

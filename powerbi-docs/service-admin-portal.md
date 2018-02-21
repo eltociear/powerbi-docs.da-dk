@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/02/2018
+ms.date: 02/06/2018
 ms.author: maghan
-ms.openlocfilehash: 36f2b591f53e7d9e930048cdedde114348466147
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 7e19e37bf024ec30db58057de54e3039ed7b80b2
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administrationsportal
 
@@ -36,11 +36,11 @@ Alle brugere får vist **Administrationsportalen** under tandhjulsikonet. Bruger
 Din konto skal være markeret som en **Global administrator** i Office 365 eller Azure Active Directory, eller skal være tildelt Power BI-tjenesteadministratorrollen for at få adgang til Power BI-administrationsportalen. Du kan finde flere oplysninger om Power BI-tjenesteadministratorrollen under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md). Benyt følgende fremgangsmåde for at tilgå Power BI-administrationsportalen.
 
 1. Vælg tandhjulet Indstillinger i øverste højre hjørne af Power BI-tjenesten.
-2. Vælg **Administrationsportalen**.
+2. Vælg **Administrationsportal**.
 
 ![](media/service-admin-portal/powerbi-admin-settings.png)
 
-I portalen er der fem faner. Disse er beskrevet nedenfor.
+Der er seks faner på portalen. Disse er beskrevet nedenfor.
 
 * [Forbrugsdata](#usage-metrics)
 * [Brugere](#users)
@@ -48,6 +48,7 @@ I portalen er der fem faner. Disse er beskrevet nedenfor.
 * [Lejerindstillinger](#tenant-settings)
 * [Premium-indstillinger](#premium-settings)
 * [Integrer koder](#embed-codes)
+* [Visualiseringer til virksomheder](#Organization-visuals)
 
 ![](media/service-admin-portal/powerbi-admin-landing-page.png)
 
@@ -269,6 +270,46 @@ For at få flere oplysninger om, hvordan du administrerer Premium-indstillinger,
 
 Som administrator kan du få vist integreringskoder, der er genereret for din lejer. Du har handlingerne til visning af rapporten og sletning af integreringskoden for at tilbagekalde den.
 
+## <a name="organization-visuals"></a>Visualiseringer til virksomheder
+
+På fanen med visualiseringer til virksomheder kan du udrulle og administrere brugerdefinere visualiseringer i din virksomhed. Det betyder, at du nemt kan udrulle brugerdefinerede visualiseringer, der er beskyttet af ejendomsret, i virksomheden, så forfattere af rapporter nemt kan finde og importere disse visualiseringer direkte fra Power BI Desktop til deres rapporter.
+ 
+På siden vises alle de brugerdefinerede visualiseringer, der i øjeblikket er udrullet i virksomhedens lager.
+ 
+![](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
+
+### <a name="add-a-new-custom-visual"></a>Tilføj en ny brugerdefineret visualisering
+
+Vælg **Tilføj en brugerdefineret visualisering** for at føje en ny brugerdefineret visualisering til listen
+
+![](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
+
+> [!WARNING]
+> En brugerdefineret visualisering kan indeholde kode, der udgør en risiko for sikkerheden eller personlige oplysninger. Sørg for at have tillid til forfatteren af og kilden til den brugerdefinerede visualisering, før du udruller den i det oprindelige lager.
+> 
+
+Udfyld felterne:
+ 
+* Vælg en .pbiviz-fil (påkrævet): Vælg den brugerdefinerede visualiseringsfil, du vil uploade. Det er kun brugerdefinerede visualiseringer med versioneret API, der understøttes. Læs her, hvad det betyder.
+Før du uploader en brugerdefineret visualisering, bør du gennemgå den for at sikre, at sikkerhed og beskyttelse af personlige oplysninger stemmer overens med din virksomheds standarder. Læs mere om brugerdefinerede visualiseringer.
+ 
+* Navngiv din brugerdefinerede visualiseringer (påkrævet): Angiv en kort titel på visualiseringen, så brugerne af Power BI Desktop nemt kan forstå, hvad de kan bruge den til.
+ 
+* Ikon (påkrævet): Den ikonfil, der vises i grænsefladen i Power BI Desktop.
+ 
+* Beskrivelse: En kort beskrivelse af visualiseringen, som giver brugerne mere kontekst og flere oplysninger.
+ 
+Vælg "Anvend" for at starte uploadanmodningen. Hvis uploadet lykkes, kan du se det nye element på listen. Hvis uploadet mislykkes, får du vist en passende fejlmeddelelse.
+ 
+### <a name="delete-a-custom-visual-from-the-list"></a>Slet en brugerdefineret visualisering fra listen
+
+Vælg ikonet Papirkurv for at slette visualiseringen permanent fra lageret.
+Vigtigt! Du kan ikke fortryde en sletning. Når visualiseringen er slettet, vil den øjeblikkeligt holde op med at blive gengivet i eksisterende rapporter. Selvom du uploader den samme visualisering igen, erstatter den ikke den tidligere visualisering, som blev slettet. Brugerne skal importere den nye visualisering igen og erstatte den forekomst, de har i deres rapporter.
+ 
+### <a name="how-to-update-a-visual"></a>Sådan opdaterer du en visualisering
+
+Hvis du vil opdatere en visualisering i lageret, fordi der er en ny version af visualiseringen (f.eks. fejlrettelser, ny funktionalitet osv.), skal du uploade den nye fil (sørg for, at visualiserings-id'et er uændret) som en ny post på listen. Husk at angive de korrekte oplysninger i titlen og beskrivelsen (f.eks. "Min visualisering v2.0"). Næste gang brugerne tilgår virksomhedens lager fra Power BI Desktop, kan de importere den nye version, og de bliver spurgt, om de vil erstatte den aktuelle version, de har i rapporten.
+ 
 ## <a name="next-steps"></a>Næste trin
 
 [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md)  

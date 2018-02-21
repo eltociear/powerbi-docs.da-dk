@@ -14,13 +14,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/06/2018
 ms.author: maggies
-ms.openlocfilehash: fadeaedbcc61626b7f1265ac44480c55a60f4fe0
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+ms.openlocfilehash: 23c52f7eb66e4e7b0683a2392f0fc60ad76ea243
+ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Opret og publicer apps med dashboards og rapporter i Power BI
 
@@ -64,6 +64,8 @@ Tilføjelse af indhold foregår på samme måde, som når du føjer indhold til 
 
 * [Opret forbindelse til services](service-connect-to-services.md) som f.eks. Microsoft Dynamics CRM, Salesforce eller Google Analytics.
 * [Hent data fra filer](service-get-data-from-files.md) f.eks. Excel-, CSV- eller Power BI Desktop-filer (PBIX).
+
+Når du får vist indhold i et apparbejdsområde, vises ejeren som navnet på apparbejdsområdet.
 
 ## <a name="add-an-image-to-your-app-optional"></a>Føj et billede til din app (valgfrit)
 Power BI opretter som standard en lille farvet cirkel for din app med appens forbogstaver. Det kan også være, at du vil tilpasse den med et billede. Hvis du vil tilføje et billede, skal du have en Exchange Online-licens.

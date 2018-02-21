@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/16/2018
+ms.date: 02/09/2018
 ms.author: maggies
-ms.openlocfilehash: 9ed87e17d617e7492287f3f0d0c54da1c21b3a53
-ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
+ms.openlocfilehash: 3ce4aa6117f5c3267f821af765d6b70fcb7eacd9
+ms.sourcegitcommit: ad9bd4e52471b1179f46f847960d5ed79c0c0761
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/11/2018
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -29,6 +29,24 @@ Du kan finde relaterede oplysninger om nyheder under:
 * [Power BI-teamets blog til mobilapps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheder i Power BI Desktop](desktop-latest-update.md)  
 * [Nyheder i Power BI-tjenesten](service-whats-new.md)  
+
+## <a name="january-2018"></a>Januar 2018
+
+### <a name="report-favorites"></a>Favoritrapporter
+
+Markér rapporter som favoritter, så de vises på siden **Favoritter**. Læs mere om [favoritter i Power BI-mobilapperne](mobile-apps-favorites.md).
+
+### <a name="view-shared-reports"></a>Få vist delte rapporter
+
+Når nogen deler en rapport med dig nu, vises den på siden **Delt med mig** sammen med dashboards.
+
+### <a name="improved-hyperlink-support"></a>Forbedret linkunderstøttelse
+
+Du kan nu trykke på links i brugerdefinerede visualiseringer for at åbne dem i din mobilbrowser.
+
+### <a name="intune-integration-android"></a>Intune-integration (Android)
+
+Understøttelse af betinget adgang ved hjælp af administration af mobilenheder i Intune.
 
 ## <a name="december-2017"></a>December 2017
 

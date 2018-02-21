@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/01/2017
-ms.author: sirsu
-ms.openlocfilehash: 87233cfe4290546478899d81d7a39714c75963eb
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+ms.date: 02/07/2018
+ms.author: nikhilga
+ms.openlocfilehash: b60e883d1f5c143270c52bd3ae8a7100593a7dfe
+ms.sourcegitcommit: ad9bd4e52471b1179f46f847960d5ed79c0c0761
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/11/2018
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
 Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner i **Power BI-tjenesten**. Du kan finde relaterede oplysninger om nyheder under:
@@ -35,6 +35,23 @@ Du kan også tjekke YouTube-kanalerne for at få mere at vide om nyheder og funk
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
+## <a name="january-2018"></a>Januar 2018
+*   Del Power BI-rapporter, og føj dem til favoritter.
+*   Understøttelse af OAuth2- og DirectQuery-enkeltlogon til Azure SQL Database og Data Warehouse.
+*   Overvågning i området: Overvågningslogge gemmes nu i det samme Office 365-område som deres lejer.
+*   General tilgængelighed af SharePoint Online [Power BI-rapportwebdel](https://go.microsoft.com/fwlink/p/?LinkId=825698).
+*   Administratorstyring af at mulighed for at slå visning af brugerdefinerede visualiseringer fra for alle brugere i lejeren.
+*   Understøttelse af planlagt opdatering til Azure Analysis Services (AAS).
+
+## <a name="previous-months-2017"></a>Forrige måneder (2017)
+## <a name="october-and-november-2017"></a>Oktober og november 2017
+*   Selektiv publicering af indhold med [Power BI Apps](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
+*   Ekstern brugerdistribution med [Azure Active Directory B2B](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/).
+* Anbefalinger til AI-drevne apps.
+* Opdateringer af grænsefladen på felter i dashboard.
+* Understøttelse af mailabonnementer til apps. 
+* Detaljeret administratorstyring ifm. [publicer på internettet](https://docs.microsoft.com/en-us/power-bi/service-admin-portal#export-and-sharing-settings).
+
 ## <a name="september-2017"></a>September 2017
 * Del dashboards med gratisbrugere med Premium.
 * Allokering af kapaciteter efter dine virksomhedsbehov med gruppering af v-kerner.
@@ -42,7 +59,6 @@ Du kan også tjekke YouTube-kanalerne for at få mere at vide om nyheder og funk
 * [PubNub-blokering](https://www.pubnub.com/docs/blocks-catalog/power-bi-realtime-dashboards) til nemt at overføre data til REST-API'er
 * Forbedret indlæsningsydeevne for [forbrugsdata](service-usage-metrics.md).
 
-## <a name="previous-months-2017"></a>Forrige måneder (2017)
 ### <a name="august-2017"></a>August 2017
 * Kend din målgruppe med [forbrugsdata for hver enkelt bruger](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
 * Kom i gang med [Power BI-tjenesteapps](service-connect-to-services.md) til onlinetjenester.
