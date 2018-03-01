@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/27/2017
 ms.author: davidi
-ms.openlocfilehash: 8ff1d5be4e360aa5afb8b6bd704f3426957466ef
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+LocalizationGroup: Get started
+ms.openlocfilehash: e4015d0de5c11a9726089a62825950dc0532205d
+ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Tilmeld din US Government-organisation til Power BI-tjenesten
 **Power BI-tjenesten** har en version tilgængelig for offentlige myndigheder i USA som en del af abonnementer på **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til offentlige myndigheder i USA og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten**.
@@ -45,12 +46,14 @@ Hvis din organisation er ny **Office Government Cloud**-kunde, skal du følge ne
 
 > [!NOTE]
 > Disse trin skal udføres af administratoren af portalen.
-> 
-> 
+>
 
-1. Gå til [https://products.office.com/en-us/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government). 
-    >[!NOTE]
-    >Hvis du ikke vil tilmelde dig Office Government Cloud lige nu, skal du kontakte din salgsrepræsentant.
+1. Gå til [https://products.office.com/en-us/government/office-365-web-services-for-government](https://products.office.com/en-us/government/office-365-web-services-for-government).
+
+>[!NOTE]
+>Hvis du ikke vil tilmelde dig Office Government Cloud lige nu, skal du kontakte din salgsrepræsentant.
+>
+
 2. Vælg Office G3, og udfyld formularen til en prøveversion af Office
 3. Når du er blevet Office Cloud-kunde, skal du gå videre til proceduren nedenfor for "Eksisterende Office Government Cloud-kunder"
 
