@@ -18,11 +18,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/10/2018
 ms.author: mihart
-ms.openlocfilehash: 79a47126c43f61d3495a948bf1a30f3d918429f3
-ms.sourcegitcommit: afd6e9e6f8b192b26486cd04d2cbc9de046911b3
+LocalizationGroup: Common tasks
+ms.openlocfilehash: 779ef2c532d0b580f4a3d19c50815193d03c2f07
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-power-bi-service"></a>Foretrukne dashboards, rapporter og apps i Power BI-tjenesten
 Når du gør indhold til en *favorit*, kan du få adgang til det fra alle dine arbejdsområder.  Favoritter er normalt det indhold, du besøger oftest.
