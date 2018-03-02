@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 02/07/2018
 ms.author: nikhilga
-ms.openlocfilehash: b60e883d1f5c143270c52bd3ae8a7100593a7dfe
-ms.sourcegitcommit: ad9bd4e52471b1179f46f847960d5ed79c0c0761
+LocalizationGroup: Get started
+ms.openlocfilehash: b3e12a9bdfa6643351cdfc82ce9051197df6ee1e
+ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/11/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
 Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner i **Power BI-tjenesten**. Du kan finde relaterede oplysninger om nyheder under:
@@ -631,9 +632,9 @@ Se [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-service
 
 **31. marts 2015**
 
-* ** GitHub **-dashboards har nye visuals, der fokuserer på opbygning af community, forbedrede beregninger og forbedret layout
-* ** SendGrid **-dashboards har nye visuals og et nyt layout til at hjælpe dig med at finde bedre indsigt
-* Du kan nu bruge ** træstrukturer i Spørgsmål og svar ** ved at bruge udtrykket 'as treemap' i slutningen af din forespørgsel
+* **GitHub**-dashboards har nye visuals, der fokuserer på opbygning af community, forbedrede beregninger og forbedret layout
+* **SendGrid**-dashboards har nye visuals og et nyt layout til at hjælpe dig med at finde bedre indsigt
+* Du kan nu bruge **træstrukturer i Spørgsmål og svar** ved at bruge udtrykket 'as treemap' i slutningen af din forespørgsel
 * Du kan nu **fastgøre træstrukturer** fra Spørgsmål og svar og rapporter 
 * Mange fejlrettelser!
 

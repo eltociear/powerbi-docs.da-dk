@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/22/2018
 ms.author: mihart
-ms.openlocfilehash: 1e53fd4b22710909e300a61b4c03aae01cff8973
-ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
+LocalizationGroup: Samples
+ms.openlocfilehash: 2ce970ee31b06447055d059ed9b604c169713030
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Eksempel på kunderentabilitet til Power BI: Få en rundvisning
 
@@ -33,7 +34,7 @@ Indholdspakken "Eksempel på kunderentabilitet" indeholder et dashboard, en rapp
 Dette eksempel er en del af en række, der illustrerer, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Der er anvendt rigtige data fra obviEnce ([www.obvience.com](http://www.obvience.com/)), der er blevet anonymiseret. Dataene er tilgængelige i flere formater: indholdspakke/app, Excel-projektmappe eller .pbix Power BI Desktop-fil. Se [eksempeldatasæt](sample-datasets.md).
 
 ## <a name="prerequisites"></a>Forudsætninger
-Vil du følge med? I denne vejledning bruges Power BI-tjenesten og eksempelindholdspakken "Kunderentabilitet".   Da rapportoplevelserne ligner hinanden meget, kan du også følge med ved hjælp af Power BI Desktop og PBIX-eksempelfilen. Du finder instruktioner til oprettelse af forbindelse til indholdspakken og PBIX-filen nedenfor.
+Vil du følge med? I dette selvstudium bruges Power BI-tjenesten og eksempelindholdspakken "Kunderentabilitet".  Da rapportoplevelserne ligner hinanden rigtig meget, kan du også følge med vha. Power BI Desktop og PBIX-eksempelfilen. Du finder instruktioner til oprettelse af forbindelse til indholdspakken og PBIX-filen nedenfor.
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Hent indholdspakken for dette eksempel
 
@@ -53,7 +54,7 @@ Vil du følge med? I denne vejledning bruges Power BI-tjenesten og eksempelindho
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hent .pbix-filen knyttet til dette eksempel
 
-Du kan også hente eksemplet som en pbix-fil, som er beregnet til brug med Power BI Desktop. [Customer Profitability Sample](<http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer>> Profitability Sample PBIX.pbix)
+Du kan også hente eksemplet som en pbix-fil, som er beregnet til brug med Power BI Desktop. [Eksempel på kunderentabilitet](<http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer>> Rentabilitetseksempel PBIX.pbix)
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hent Excel-projektmappen for dette eksempel
 
