@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: 48c9e18592a06437c001a51a6f7b6bb77c4c719d
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+LocalizationGroup: Create reports
+ms.openlocfilehash: 8893e9f048f10f2c9c4d5bf787382b7cf65f54a9
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="use-report-themes-in-power-bi-desktop-preview"></a>Brug rapporttemaer i Power BI Desktop (prøveversion)
 Med **rapporttemaer** kan du anvende et farvetema i hele rapporten, f.eks virksomhedens farver, sæsonmæssige farver eller andre farvetemaer, som du gerne vil anvende for en rapport. Når du anvender et **rapporttema**, bruges farver fra det valgte tema for alle visuelle elementer i rapporten (med nogle få undtagelser, der er beskrevet senere i denne artikel).

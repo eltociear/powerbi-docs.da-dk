@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/29/2018
 ms.author: maggies
-ms.openlocfilehash: d7c27792b9eefc97c39f9211fe246e81d0932a80
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+LocalizationGroup: Share your work
+ms.openlocfilehash: 1837bc36ac4707663b5583699b0090ac9a692eb7
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Samarbejd i dit Power BI-apparbejdsområde
 Power BI-apparbejdsområder er fantastiske steder, hvor du kan samarbejde med dine kollegaer på dashboards, rapporter og datasæt om at oprette *apps*. Der er, hvad arbejdsområder er udviklet til – samarbejde. Når du er færdig med at samarbejde på dine dashboards og rapporter med kollegaer, pakker du det som en app og distribuerer den. Læs mere om [oprettelse af apps og apparbejdsområder i Power BI](service-create-distribute-apps.md). 

@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: selvar
-ms.openlocfilehash: 9321572b41a3719f218030565d159e4dc8105863
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+LocalizationGroup: Connect to data
+ms.openlocfilehash: 982b027ebf7605cdc0ce122759d5f3837d23c0ed
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="tutorial-dynamic-row-level-security-with-analysis-services-tabular-model"></a>Selvstudium: Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel
 I denne vejledning vises de trin, der er nødvendige for at implementere **sikkerhed på rækkeniveau** i din **Analysis Services-tabelmodel**, og det vises, hvordan du bruger det i en rapport i Power BI. Trinnene i dette selvstudium er designet for at give dig mulighed for at følge med i og lære at udføre de nødvendige trin ved at gennemføre et eksempel på et datasæt.

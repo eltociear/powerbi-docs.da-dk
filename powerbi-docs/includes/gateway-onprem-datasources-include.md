@@ -7,6 +7,7 @@
 | Mappe |Nej |Ja |
 | IBM DB2 |Nej |Ja |
 | IBM Informix Database |Nej |Ja |
+| IBM Netezza |Ja |Ja |
 | Impala |Ja |Ja |
 | MySQL |Nej |Ja |
 | OData |Nej |Ja |

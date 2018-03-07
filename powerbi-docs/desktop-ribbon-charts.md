@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 8a558019eaf01af066fe5669bcbd82bd4e0c5229
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Create reports
+ms.openlocfilehash: 3dab818c863f00c97635d00ba07e75eb3c8e5b37
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Brug bånddiagrammer i Power BI
 Du kan bruge **bånddiagrammer** i **Power BI** til at visualisere data og hurtigt finde ud af, hvilken kategori af data der har den højeste placering (største værdi). Bånddiagrammer er effektive til at vise ændringer af placeringer, hvor den højeste placering (værdi) altid vises øverst for hver tidsperiode. Bånddiagrammer er tilgængelige i **Power BI Desktop** fra og med udgivelsen i september 2017 og i efterfølgende opdateringer til **Power BI-tjenesten**.
@@ -50,7 +51,7 @@ Ved hjælp af disse formateringsindstillinger for bånddiagrammer kan du justere
 ## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om **Power BI Desktop**, og hvordan du kommer i gang, i følgende artikler.
 
-* [Introduktion til Power BI Desktop](desktop-getting-started.md)
+* [Kom i gang med Power BI Desktop](desktop-getting-started.md)
 * [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)
 * [Opret forbindelse til data i Power BI Desktop](desktop-connect-to-data.md)

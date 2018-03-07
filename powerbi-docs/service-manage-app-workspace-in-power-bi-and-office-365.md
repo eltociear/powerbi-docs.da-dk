@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
-ms.openlocfilehash: 173c02c2d44236539c81edc2612e944b01641653
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Share your work
+ms.openlocfilehash: d8aac093b06910d5d32c2e5d33951db9448757c4
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Administrer dit apparbejdsområde i Power BI og Office 365
 Som opretter eller administrator af et [apparbejdsområde i Power BI](service-install-use-apps.md) eller i Office 365 kan du administrere visse aspekter i arbejdsområdet i Power BI. Andre aspekter kan du administrere i Office 365. 
@@ -81,5 +82,5 @@ Når du distribuerer din app fra apparbejdsområdet, bliver det billede, du tilf
 ## <a name="next-steps"></a>Næste trin
 * [Hvad er apps i Power BI?](service-install-use-apps.md)
 * [Opret apps og apparbejdsområder i Power BI](service-create-distribute-apps.md)
-* Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

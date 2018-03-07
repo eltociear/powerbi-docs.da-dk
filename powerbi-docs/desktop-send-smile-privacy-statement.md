@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 17215f8a1c9aa0da40c52b5dd957c2a7d8c5613b
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Learn more
+ms.openlocfilehash: f9aa1570fe9386e5f8e726097a1c88d448dc2da1
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="power-bi-desktop-send-a-smile-privacy-statement"></a>Erklæring om beskyttelse af personlige oplysninger for Send en smiley i Power BI Desktop
 Hos Microsoft bestræber vi os på at beskytte dine personlige oplysninger og samtidig levere produkter, der giver dig den ønskede ydeevne, effektivitet og brugervenlighed. I denne erklæring om beskyttelse af personlige oplysninger forklares mange af fremgangsmåderne for indsamling og anvendelse af data i forbindelse med feedback på Microsoft Power BI Desktop *Send en smiley*. Det gælder ikke for andre online eller offline Microsoft-websteder, -produkter eller -tjenester.

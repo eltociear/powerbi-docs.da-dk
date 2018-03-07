@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 7e959054300dafcab5f38bfce121fe0ac91dca06
-ms.sourcegitcommit: f2b38777ca74c28f81b25e2f739e4835a0ffa75d
+LocalizationGroup: Learn more
+ms.openlocfilehash: acdaa95908cd03006170eb06ddfc780c836c64ac
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Selvstudium: Opret beregnede kolonner i Power BI Desktop
 Nogle gange indeholder de data, du analyserer, ikke et bestemt felt, du skal bruge for at få de resultater, du er ude efter. Det er her, beregnede kolonner kommer ind i billedet. Beregnede kolonner gør brug af DAX-formler (Data Analysis Expressions) til at definere en kolonnes værdi. Disse værdier kan være næsten alt, f.eks. sammensætning af tekstværdier fra nogle andre kolonner andre steder i modellen eller beregning af en numerisk værdi fra andre værdier. Lad os f.eks. sige, at dine data har kolonnen By og Stat (som felter på listen Felter), men du vil gerne have et enkelt felt af typen Placering, der indeholder begge som en enkelt værdi, f.eks. Miami, FL. Det er præcis det, beregnede kolonner er beregnede til.

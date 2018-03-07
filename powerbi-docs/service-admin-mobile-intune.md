@@ -17,11 +17,12 @@ ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 06/28/2017
 ms.author: maghan
-ms.openlocfilehash: 97f28a845be24baa7633f0cf4fcac29d4d1e74e9
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+LocalizationGroup: Administration
+ms.openlocfilehash: 2ac008a1b71a4e4df4e6515c85ec11e95dac7205
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Konfiguration af mobilapps med Microsoft Intune
 Microsoft Intune giver organisationer mulighed for at administrere enheder og programmer. Power BI-mobilprogrammerne til iOS og Android, integrerer med Intune, så du kan administrere programmet på dine enheder og styre sikkerheden. Ved hjælp af konfigurationspolitikker kan du kontrollere ting som at anmode om pinkode for at give adgang, kontrollere, hvordan data håndteres af programmet, og kryptere programdata, selv når appen ikke er i brug.

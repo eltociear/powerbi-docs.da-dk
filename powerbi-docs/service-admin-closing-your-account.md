@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/28/2017
 ms.author: maghan
-ms.openlocfilehash: 2e3e7257e60cfcd92bd5091f67fb1acccb865fdf
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+LocalizationGroup: Administration
+ms.openlocfilehash: 11287df09e14793b7c6652b7959d5c0a0499b3fb
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="closing-your-power-bi-account"></a>Lukning af din Power BI-konto
 Hvis du ikke vil bruge Power BI længere, kan du bede os om at lukke din Power BI-konto.  Når din konto er lukket, kan du ikke længere logge på Power BI.  Desuden slettes alle kundedata, du har uploadet eller oprettet i Power BI, i overensstemmelse med politikken for opbevaring af data i servicebetingelserne for Power BI.

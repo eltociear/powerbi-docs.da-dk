@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 32d5d2033805c1c7b32eff590bc2380e6dec6bbc
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Data from databases
+ms.openlocfilehash: f07abb6b878ba96c1e5a84168ded6e466c8fb18e
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="azure-and-power-bi"></a>Azure og Power BI
 Med **Azure**-tjenester og **Power BI** kan du gøre din databehandling til analyser og rapporter, der giver indsigt i din virksomhed i realtid. Uanset om din databehandling er cloudbaseret eller foregår i det lokale miljø, om den er enkel eller kompleks, leveres fra én enkelt kilde eller er i stor skala, kører via datalager eller i realtid, så har Azure og Power BI indbygget de rette forbindelses- og integrationsegenskaber til at skabe resultater ud fra din business intelligence.

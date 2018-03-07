@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: ec1bd6b8edbf77c7c9d0d7af069e243d8f96c0bd
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Create reports
+ms.openlocfilehash: cb23034c207bd272f716e8074bb3702ea30e893a
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="sort-by-column-in-power-bi-desktop"></a>Sortér efter kolonne i Power BI Desktop
 I **Power BI Desktop** og **Power BI-tjenesten** kan du ændre, hvordan en visuel gengivelse ser ud, ved at sortere den efter forskellige datafelter. Ved at ændre, hvordan du sorterer en visuel gengivelse, kan du fremhæve de oplysninger, du vil formidle, og sikre, at den visuelle gengivelse afspejler den tendens, som du vil vise.

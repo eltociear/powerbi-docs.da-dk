@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: b75ea1028694a9dab32073ce70180e61798d7d28
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: 02b8c2e8ed9a8a4ca0c8aaf9848699f3ca3c24c8
+ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-to-project-madeira-with-power-bi"></a>Opret forbindelse til projektet "Madeira" med Power BI
 Det er let at få indblik i dataene for projektet "Madeira" med Power BI og indholdspakken til projektet "Madeira". I Power BI hentes dine data, både salgs- og finansdata, og derefter bygges en app med et brugerdefineret dashboard og rapporter, der er baseret på disse data.
@@ -106,8 +107,8 @@ Hvis du får vist denne fejl, når du har angivet URL-adressen til projektet "Ma
 
 **"Logon mislykkedes"** Hvis du får vist fejlmeddelelsen "Logon mislykkedes", når du logger på dashboardet vha. legitimationsoplysningerne til projektet "Madeira", kan det skyldes et af følgende problemer:  
 
-    - Den konto, du bruger, har ikke tilladelse til at læse data for projektet "Madeira" fra din konto. Kontrollér din brugerkonto for projektet "Madeira", og sørg for, at du har brugt den rette webtjenesteadgangsnøgle som adgangskode, og prøv derefter igen.  
-    - Den instans for projektet "Madeira", du prøver at oprette forbindelse til, har ikke et gyldigt SSL-certifikat. I dette tilfælde vises en mere detaljeret fejlmeddelelse ("det var ikke muligt at etablere en SSL-relation, der er tillid til"). Bemærk, at selvsignerede certifikater ikke understøttes.  
+   - Den konto, du bruger, har ikke tilladelse til at læse data for projektet "Madeira" fra din konto. Kontrollér din brugerkonto for projektet "Madeira", og sørg for, at du har brugt den rette webtjenesteadgangsnøgle som adgangskode, og prøv derefter igen.  
+   - Den instans for projektet "Madeira", du prøver at oprette forbindelse til, har ikke et gyldigt SSL-certifikat. I dette tilfælde vises en mere detaljeret fejlmeddelelse ("det var ikke muligt at etablere en SSL-relation, der er tillid til"). Bemærk, at selvsignerede certifikater ikke understøttes.  
 
 **"Ups"** Hvis du får vist en "Oops"-fejldialogboks, når du bekræfter godkendelsesdialogboksen, skyldes det som oftest et problem med at oprette forbindelse til dataene for indholdspakken. Bekræft, at URL-adressen følger det mønster, der blev angivet tidligere:  
     https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')
