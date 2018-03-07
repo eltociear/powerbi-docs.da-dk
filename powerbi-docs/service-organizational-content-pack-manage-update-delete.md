@@ -17,15 +17,16 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
-ms.openlocfilehash: 86d5ddd1643a713e3094ef39d9fbb46f9a1efc69
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Share your work
+ms.openlocfilehash: 4e48ce4269def6764630322ac798a8dd0e491861
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Administrer, opdater og slet organisationsindholdspakker
 > [!NOTE]
-> Har du hørt om de nye *apps*? Apps er ny måde at sende indhold til store målgrupper på i Power BI. Vi anbefaler at bruge apps i stedet for organisationsindholdspakker eller skrivebeskyttede arbejdsområder. Få [mere at vide om apps](service-install-use-apps.md).
+> Har du hørt om de nye *apps*? Apps er den nye måde at sende indhold til store målgrupper på i Power BI. Vi anbefaler at bruge apps i stedet for organisationsindholdspakker eller skrivebeskyttede arbejdsområder. Få [mere at vide om apps](service-install-use-apps.md).
 > 
 > 
 
@@ -94,5 +95,5 @@ Du kan kun slette en indholdspakke fra AppSource, hvis du har oprettet den.
 ## <a name="next-steps"></a>Næste trin
 * [Introduktion til organisationsindholdspakker](service-organizational-content-pack-introduction.md)
 * [Opret og distribuer en app i Power BI](service-create-distribute-apps.md) 
-* Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

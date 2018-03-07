@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/25/2017
+ms.date: 12/25/2017
 ms.author: davidi
-ms.openlocfilehash: d4b1d1866fc56d48960539a420819d99afc13eb1
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+LocalizationGroup: Create reports
+ms.openlocfilehash: 17a66c362124616796eb48a7052d89226555df3b
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="use-insights-in-power-bi-desktop-preview"></a>Brug indsigt i Power BI Desktop (prøveversion)
 Du kan bede **Power BI Desktop** om at forklare forøgelser eller reduktioner i diagrammer og få hurtige og automatiske indsigtsanalyser om dine data. Du skal blot højreklikke på et datapunkt og vælge **Analysér > Forklar reduktionen** (eller forøgelsen, hvis den tidligere linje var lavere), så leveres der indsigt til dig i et brugervenligt vindue.

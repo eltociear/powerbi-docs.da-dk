@@ -1,7 +1,28 @@
--- titel: Form og kombiner data i Power BI Desktop beskrivelse: Form og kombiner data i Power BI Desktop-tjenester: powerbi documentationcenter: '' forfatter: davidiseminger manager: kfile sikkerhedskopi: '' editor: '' tags: '' qualityfocus: no qualitydate: ''
-
-ms.service: powerbi ms.devlang: NA ms.topic: article ms.tgt_pltfrm: NA ms.workload: powerbi ms.date: 01/30/2018 ms.author: davidi
-
+---
+title: Form og kombiner data i Power BI Desktop
+description: Form og kombiner data i Power BI Desktop
+services: powerbi
+documentationcenter: 
+author: davidiseminger
+manager: kfile
+backup: 
+editor: 
+tags: 
+qualityfocus: no
+qualitydate: 
+ms.service: powerbi
+ms.devlang: NA
+ms.topic: article
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
+ms.date: 01/30/2018
+ms.author: davidi
+LocalizationGroup: Transform and shape data
+ms.openlocfilehash: c8f2419ae2898a59907763392eb86b4877b4fd75
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="shape-and-combine-data-in-power-bi-desktop"></a>Form og kombiner data i Power BI Desktop
 I **Power BI Desktop** kan du oprette forbindelse til mange forskellige typer datakilder og derefter forme dataene til dine behov. At *forme* data betyder, at dataene skal transformeres – for eksempel omdøbning af kolonner eller tabeller, ændring af tekst til tal, fjernelse af rækker, angivelse af den første række som overskrifter osv. At *kombinere* data betyder, at der oprettes forbindelse til to eller flere datakilde, dataene formes efter behov, og de konsolideres derefter i én forespørgsel.

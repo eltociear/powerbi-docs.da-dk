@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: 47abc345d773fe9274a1dc814b7799a956e909fc
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+LocalizationGroup: Troubleshooting
+ms.openlocfilehash: 97c3cdf1a7ba47f60cd78e9f424ba7af550f1527
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="resolve-issues-importing-access-and-xls-files-in-power-bi-desktop"></a>Løs problemer med at importere Access- og .xls-filer i Power BI Desktop
 I **Power BI Desktop** bruger både **Access-databaser** og tidligere versioner af **Excel-projektmapper** (.xls-filer af typen Excel 2007-2003) *Access-databaseprogrammet*. Der er tre almindelige situationer, som kan forhindre Access-databaseprogrammet i at fungere korrekt:

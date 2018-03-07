@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: fe0270b577e9bbcec1caf969a9ccdca7e5377290
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: 04f1c71aa70d171b6a786ab8bdc32dc9686b14c3
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-twilio-with-power-bi"></a>Opret forbindelse til Twilio med Power BI
 Med Microsoft Twilio-indholdspakken til Power BI kan du hente data ind i Power BI, og der oprettes et [Twilio-dashboard](https://powerbi.microsoft.com/integrations/twilio) og en rapport, der viser indsigt i dine data. Du kan også oprette brugerdefinerede rapporter og dashboard på det datasæt, Power BI opretter. Dataene opdateres en gang om dagen, så du altid ser på de seneste data.

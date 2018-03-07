@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: c7316871de31392f74b1656545fc7a1fbc16fc56
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+LocalizationGroup: Model your data
+ms.openlocfilehash: 2e1aed189f858bee3b1d110df5b91caed88f479b
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="measures-in-power-bi-desktop"></a>Målinger i Power BI Desktop
 Du kan få hjælp af **Power BI Desktop** til at oprette indsigt i dine data med nogle få klik. Men nogle gange indeholder disse data bare ikke alt det, du skal bruge for at få svar på nogle af dine vigtigste spørgsmål. Det kan målinger hjælpe dig med.

@@ -17,15 +17,16 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
-ms.openlocfilehash: 7ea0fbf09196af9ffecaf5ae54ea0754fdd44a0b
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Share your work
+ms.openlocfilehash: 00ddec3dbf4087935a7c3583138dabb2a83f0ae5
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion til organisationsindholdspakker i Power BI
 > [!NOTE]
-> Har du hørt om de nye *apps*? Apps er ny måde at sende indhold til store målgrupper på i Power BI. Vi anbefaler at bruge apps i stedet for organisationsindholdspakker eller skrivebeskyttede arbejdsområder. Få [mere at vide om apps](service-install-use-apps.md).
+> Har du hørt om de nye *apps*? Apps er den nye måde at sende indhold til store målgrupper på i Power BI. Vi anbefaler at bruge apps i stedet for organisationsindholdspakker eller skrivebeskyttede arbejdsområder. Få [mere at vide om apps](service-install-use-apps.md).
 > 
 > 
 
@@ -85,5 +86,5 @@ Alle medlemmer af distributionsgruppen har de samme tilladelser til dataene som 
 * [Opret og publicer en organisationsindholdspakke](service-organizational-content-pack-create-and-publish.md)
 * [Opret og distribuer en app i Power BI](service-create-distribute-apps.md) 
 * [Power BI – Grundlæggende begreber](service-basic-concepts.md)
-* Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

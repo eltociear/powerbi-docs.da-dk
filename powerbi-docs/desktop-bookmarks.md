@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: d09dcf28989f19fa901cb5f829e1149b9b64567f
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+LocalizationGroup: Create reports
+ms.openlocfilehash: 3a56983f48d80cf39b89958db4327e3632ee733e
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi-preview"></a>Brug bogmærker til at dele indsigt og oprette tekstenheder i Power BI (prøveversion)
 Hvis du bruger **bogmærker** i Power BI, kan du indfange den visning af en rapportside, der er konfigureret i øjeblikket, herunder filtrering af og tilstanden for visuelle elementer, og senere gå tilbage til denne tilstand ved ganske enkelt at vælge det gemte bogmærke. 

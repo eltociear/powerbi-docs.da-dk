@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 21a02c4d8dabd445afaadb43529489b3253d3599
-ms.sourcegitcommit: d91436de68a0e833ecff18d976de9d9431bc4121
+LocalizationGroup: Create reports
+ms.openlocfilehash: 714d9e0378cff0c03e26999d240857108e4ec5ad
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Udsnit med høj tæthed i Power BI-punktdiagrammer
 Fra og med udgivelsen af **Power BI Desktop** fra september 2017 og opdateringerne til **Power BI-tjenesten**, er der en ny algoritme til udsnit tilgængelig, som forbedrer den måde, punktdiagrammer viser data på med høj tæthed.

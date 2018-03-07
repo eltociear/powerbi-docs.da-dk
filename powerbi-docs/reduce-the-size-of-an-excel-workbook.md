@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 09/06/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 2d6d55b8b93ce23528490a3e72616806ebc09beb
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Data from files
+ms.openlocfilehash: ff05fb9a80e9e4efff066eb71173db78a856bf2c
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="reduce-the-size-of-an-excel-workbook-to-view-it-in-power-bi"></a>Reducer størrelsen på en Excel-projektmappe for at få den vist i Power BI
 Du kan uploade en Excel-projektmappe, der er mindre end 1 GB, til Power BI. En Excel-projektmappe kan omfatte to dele: en datamodel og resten af rapporten, dvs. hovedindholdet i regnearket. Hvis rapporten ligger under følgende størrelsesgrænser, kan du gemme den til **OneDrive for Business**, oprette forbindelse til den fra Power BI og se den i Excel Online:

@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: 8f821ce7081f341f0614ea7c8e3a006adabf3e4f
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: 2c7072cca04033242ee9b07f0f3c1f82160cb332
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-alpine-metrics-sales-predictions-with-power-bi"></a>Opret forbindelse til Alpine Metrics Sales Predictions med Power BI
 Alpine Metrics leverer avanceret Predictive Sales-procesoptimering i clouden og efter behov til små og store salgsorganisationer. Alpine Metrics Sales Predictions-indholdspakken til Power BI indeholder målinger, som f.eks. potentielle og forventede salg og risici, så du får bedre indsigt i fremtiden for din virksomhed. 

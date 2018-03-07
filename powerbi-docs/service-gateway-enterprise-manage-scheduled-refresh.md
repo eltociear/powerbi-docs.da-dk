@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 07/20/2017
+ms.date: 12/06/2017
 ms.author: davidi
-ms.openlocfilehash: 844f887a32dcd9f0749c769ee92d92fe6c81316c
-ms.sourcegitcommit: b3ee37e1587f1269ee7dd9daf1685a06dea3b50c
+LocalizationGroup: Gateways
+ms.openlocfilehash: 8002cf2df278cd3329b62b5322a6faabc9394f57
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/23/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="manage-your-data-source---importscheduled-refresh"></a>Administrer din datakilde – Import/Planlagt opdatering
 Når du har installeret datagatewayen i det lokale miljø, skal du tilføje datakilder, der kan bruges sammen med gatewayen. Denne artikel indeholder oplysninger om, hvordan du arbejder med gateways og datakilder, der bruges til planlagt opdatering, i modsætning til DirectQuery eller direkte forbindelser.
@@ -125,5 +126,5 @@ Hvis du er angivet på fanen **Brugere** for den datakilde, der er konfigureret 
 [Datagateway i det lokale miljø](service-gateway-onprem.md)  
 [Datagateway i det lokale miljø – detaljeret](service-gateway-onprem-indepth.md)  
 [Fejlfinding af datagateway i det lokale miljø](service-gateway-onprem-tshoot.md)  
-Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

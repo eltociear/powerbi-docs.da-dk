@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: maggies
-ms.openlocfilehash: 16bb7d3eaeb573ced7af3401f0d9beb18a4a958b
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+LocalizationGroup: Reports
+ms.openlocfilehash: 4bd635fbb68f128d0c4f37631f05d0f2b8d9bf7d
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-a-qr-code-for-a-report-in-power-bi-to-use-in-the-mobile-apps"></a>Opret en QR-kode for en rapport i Power BI, som skal bruges i mobilappsene
 QR-koder i Power BI kan forbinde noget i den virkelige verden direkte med relaterede BI-oplysninger &#150; du behøver ikke at navigere eller søge.
@@ -56,7 +57,7 @@ I Power BI oprettes QR-koden som en JPG-fil, der er klar til udskrivning.
 3. Klip QR-koden langs kanterne, og klæb den fast et sted, der er relevant for rapporten. 
 
 ## <a name="next-steps"></a>Næste trin
-* [Opret forbindelse til Power BI-data fra den virkelige verden](mobile-apps-data-in-real-world-context.md) med mobilapps
+* [Opret forbindelse til Power BI-data fra den virkelige verden](mobile-apps-data-in-real-world-context.md) med mobilappsene
 * [Scan en Power BI QR-kode fra din mobilenhed](mobile-apps-qr-code.md)
 * [Opret en QR-kode for et felt](service-create-qr-code-for-tile.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
