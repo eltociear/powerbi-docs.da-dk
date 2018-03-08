@@ -39,7 +39,7 @@ Dette eksempel er en del af en række, der illustrerer, hvordan du kan bruge Pow
 
 ## <a name="prerequisites"></a>Forudsætninger
 
- Før du kan bruge eksemplet, skal du først hente det som en [indholdspakke](https://docs.microsoft.com/en-us/power-bi/sample-procurement#get-the-content-pack-for-this-sample), [.pbix-fil](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement Analysis Sample PBIX.pbix) eller [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529784).
+ Før du kan bruge eksemplet, skal du først downloade det som en [indholdspakke](https://docs.microsoft.com/en-us/power-bi/sample-procurement#get-the-content-pack-for-this-sample), [.pbix-fil](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement Analysis Sample PBIX.pbix) eller [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529784).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Hent indholdspakken for dette eksempel
 

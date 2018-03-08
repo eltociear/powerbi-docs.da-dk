@@ -40,7 +40,7 @@ Der er anvendt rigtige data fra obviEnce ([www.obvience.com](http://www.obvience
 
 ## <a name="prerequisites"></a>Forudsætninger
 
- Før du kan bruge eksemplet, skal du først hente det som en [indholdspakke](https://docs.microsoft.com/en-us/power-bi/sample-supplier-quality#get-the-content-pack-for-this-sample), [.pbix-fil](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix) eller [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529779).
+ Før du kan bruge eksemplet, skal du først downloade det som en [indholdspakke](https://docs.microsoft.com/en-us/power-bi/sample-supplier-quality#get-the-content-pack-for-this-sample), [.pbix-fil](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix) eller [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529779).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Hent indholdspakken for dette eksempel
 
