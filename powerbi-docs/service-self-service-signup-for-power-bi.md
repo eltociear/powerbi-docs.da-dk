@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/09/2017
+ms.date: 03/02/2018
 ms.author: maghan
 LocalizationGroup: Get started
-ms.openlocfilehash: ccd3a42a6cbcc716683b6da536ca2ecdacc11aaf
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: b098c87796306bedb8f9da43971d093f464dd4bd
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Tilmelding til Power BI som enkeltperson
 Få mere at vide om, hvordan du tilmelder dig Power BI og begynder at bruge det til personlige rapporter og visualiseringsopgaver, der passer til dine behov.
@@ -40,23 +40,24 @@ Hvis du ikke er en del af en eksisterende organisation, der bruger Office 365, k
 
 > [!NOTE]
 > Hvis du er en del af en organisation, kan individuel tilmelding være deaktiveret. Se [Individuel tilmelding er deaktiveret](#individual-sign-up-has-been-turned-off) for at få flere oplysninger, hvis du får en fejlmeddelelse, der viser, at funktionen er blevet deaktiveret.
-> 
-> 
+>
 
-## <a name="what-you-need-to-sign-up"></a>Krav til dig før tilmeldingen
-Hvis du vil tilmelde dig Power BI, skal du have en arbejdsmailadresse. En personlig mailadresse kan ikke bruges til Power BI-tjenesten.
+## <a name="what-you-need-to-sign-up"></a>Hvad har du brug for for at tilmelde dig?
 
-<a name="what-email-address-can-be-used-with-power-bi"/>
+Hvis du vil tilmelde dig Power BI, skal du have en arbejdsmailadresse. En personlig mailadresse kan ikke bruges til at tilmelde sig Power BI.
 
 ### <a name="what-email-address-can-be-used-with-power-bi"></a>Hvilken mailadresse kan bruges til Power BI?
-Power BI kræver, at du bruger en arbejds- eller skolemailadresse til at tilmelde dig. Power BI understøtter ikke mailadresser, der leveres af forbrugermailtjenester eller udbydere af telekommunikation. Det omfatter outlook.com, hotmail.com, gmail.com og mange andre.
+Power BI kræver, at du bruger en arbejds- eller skolemailadresse til at tilmelde dig. Du kan ikke tilmelde dig Power BI med en mailadresse, der leveres af forbrugermailtjenester eller udbydere af telekommunikation. Det omfatter outlook.com, hotmail.com, gmail.com og mange andre.
 
 Hvis du forsøger at tilmelde dig med en personlig mailadresse, får du vist en meddelelse om, at du skal bruge en arbejds- eller skolemailadresse.
 
 > [!NOTE]
-> Power BI understøtter ikke selvbetjeningstilmelding med .gov- eller .mil-adresser på nuværende tidspunkt. Kontakt din Office 365-administrator.
-> 
-> 
+> Du kan tilmelde dig Power BI med adresser af typen .gov eller .mil. Du kan finde flere oplysninger i [Tilmeld din US Government-organisation til Power BI-tjenesten](https://docs.microsoft.com/en-us/power-bi/service-govus-signup).
+>
+
+> [!NOTE]
+> Når du har tilmeldt dig, kan du [invitere gæstebrugere](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) til at se indhold i din Power BI-lejer med en hvilken som helst mailadresse, inklusive personlige konti.
+>
 
 ## <a name="which-one-do-you-need"></a>Hvilken skal du vælge?
 Du kan afgøre, hvilken du har brug for ved at gennemgå det, der er inkluderet i hver licenstype. Gratisbrugere har adgang til de fleste af tjenesternes funktioner med undtagelse af delings- og samarbejdsfunktioner. Power BI Pro-brugere kan bruge alle funktioner i tjenesten, men det er ikke gratis. Hvis du ikke har behov for at dele indhold, kan gratisversionen være det bedste valg. Du kan få mere at vide på [siden Priser på Power BI ](https://powerbi.microsoft.com//pricing/).
@@ -141,7 +142,7 @@ I mange tilfælde kan tilmelding til Power BI foretages ved at følge den enkle 
 
 | **Symptom/fejlmeddelelse** | **Årsag og løsning** |
 | --- | --- |
-| **Personlige mailadresser (f.eks. nancy@gmail.com)** Under tilmeldingen modtager du en meddelelse som følgende: <br /><br /> *Du har angivet en personlig mailadresse: Angiv din arbejdsmailadresse, så vi kan gemme dit firmas data på sikker vis.* <br /><br /> eller <br /><br /> *Det ligner en personlig mailadresse. Angiv din arbejdsmailadresse, så vi kan sætte dig i forbindelse med andre i dit firma. Og bare rolig. Vi deler ikke din adresse med nogen.* |Power BI understøtter ikke mailadresser, der leveres af forbrugermailtjenester eller udbydere af telekommunikation. <br /><br /> Prøv at fuldføre tilmeldingen igen ved at bruge en mailadresse, du har fået tildelt af din skole eller dit arbejde. <br /><br /> Hvis du stadig ikke kan tilmelde dig og er villig til at gennemføre en mere avanceret tilmeldingsproces, kan du [tilmelde dig et nyt Office 365-prøveabonnement og bruge denne mailadresse til tilmeldingen](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
+| **Personlige mailadresser (f.eks. nancy@gmail.com)** Under tilmeldingen modtager du en meddelelse som følgende: <br /><br /> *Du har angivet en personlig mailadresse: Angiv din arbejdsmailadresse, så vi kan gemme dit firmas data på sikker vis.* <br /><br /> eller <br /><br /> *Det ligner en personlig mailadresse. Angiv din arbejdsmailadresse, så vi kan sætte dig i forbindelse med andre i dit firma. Og bare rolig. Vi deler ikke din adresse med nogen.* |Power BI understøtter ikke mailadresser, der leveres af forbrugermailtjenester eller udbydere af telekommunikation. <br /><br /> Prøv at fuldføre tilmeldingen igen ved at bruge en mailadresse, du har fået tildelt af din skole eller dit arbejde. <br /><br /> Hvis du stadig ikke kan tilmelde dig og er villig til at gennemføre en mere avanceret tilmeldingsproces, kan du [tilmelde dig et nyt Office 365-prøveabonnement og bruge denne mailadresse til tilmeldingen](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). <br /><br /> Inviter brugerkontoen som en [Azure B2B-gæst](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b). |
 | **Selvbetjeningstilmelding deaktiveret** Under tilmeldingen modtager du en meddelelse som følgende: <br /><br /> *Vi kan ikke færdiggøre din tilmelding. Din it-afdeling har deaktiveret tilmelding til Microsoft Power BI. Kontakt it-afdelingen for at fuldføre tilmeldingen.* <br /><br /> eller <br /><br /> *Det ligner en personlig mailadresse. Angiv din arbejdsmailadresse, så vi kan sætte dig i forbindelse med andre i dit firma. Og bare rolig. Vi deler ikke din adresse med nogen.* |Din virksomheds it-administrator har deaktiveret selvbetjeningstilmelding for Power BI. <br /><br /> Kontakt it-administratoren, og bed vedkommende om at følge instruktionerne nedenfor for at gøre det muligt for eksisterende brugere at tilmelde sig Power BI og tillade nye brugere at deltage i din eksisterende lejer, så du kan fuldføre tilmeldingen. <br/><br/> Dette problem kan også opstå, hvis du har tilmeldt dig Office 365 via en partner. [Få mere at vide](service-admin-syndication-partner.md) <br /><br /> [Power BI i din organisation](https://support.office.com/en-ca/article/Power-BI-in-your-Organization-d7941332-8aec-4e5e-87e8-92073ce73dc5#BKMK_HowCanIAllowO365Tenant) |
 | **Mailadressen er ikke et Office 365-id** Under tilmeldingen modtager du en meddelelse som følgende: <br /><br /> *Vi kan ikke finde dig på contoso.com.  Bruger du et andet id på arbejdet eller i skolen? <br /><br />Prøv at logge på med det, og hvis det ikke virker, skal du kontakte din it-afdeling.* |Din organisation bruger id'er til at logge på Office 365 og andre Microsoft-tjenester, som er anderledes end din mailadresse.  Din mailadresse kan f.eks. være Nancy.Smith@contoso.com, men dit id er nancys@contoso.com. <br /><br /> For at fuldføre tilmeldingen skal du bruge det id, som din organisation har tildelt dig, til at logge på Office 365 eller andre Microsoft-tjenester.  Hvis du ikke ved, hvad det er, kan du kontakte din it-administrator. <br /><br /> Hvis du stadig ikke kan tilmelde dig og har mulighed for at gennemføre en mere avanceret tilmeldingsproces, kan du [tilmelde dig et nyt Office 365-prøveabonnement og bruge denne mailadresse til tilmeldingen](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
 
