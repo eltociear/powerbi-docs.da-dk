@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
-ms.openlocfilehash: 0723b3a7155626f875044fa813a522ef6d4923df
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+LocalizationGroup: Learn more
+ms.openlocfilehash: 4cab3ed114d03d42c6acf1bf62f70e7d920e16b2
+ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="tutorial-analyzing-sales-data-from-excel-and-an-odata-feed"></a>Selvstudium: Analysér salgsdata fra Excel og et OData-feed
 Med **Power BI Desktop** kan du oprette forbindelse til alle mulige forskellige typer datakilder og derefter kombinere og forme dem på måder, der gør det muligt at skabe interessante og overbevisende dataanalyser og visualiseringer. I dette selvstudium kan du se, hvordan du kombinerer data fra to datakilder. 
@@ -34,7 +35,7 @@ Sådan ser den færdige rapport ud:
 
 ![](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/18.png)
 
-Hvis du vil følge trinnene i dette selvstudium, skal du bruge projektmappen Products, som du kan downloade**:**[ klik ](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)[her](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)[ for at downloade ](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)**[Products.xlsx](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)**[. ](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)
+Hvis du vil følge trinnene i dette selvstudium, skal du bruge projektmappen Products, som du kan downloade: **[Klik her for at downloade Products.xlsx](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/Products.xlsx)**
 
 I dialogboksen **Save As** kan du kalde filen for **Products.xlsx**.
 
@@ -82,7 +83,7 @@ Når du udfører forespørgselsaktiviteter i Forespørgselseditor, bliver foresp
 | Skift datatype |Ændret type |Table.TransformColumnTypes(\#"Fjernede andre kolonner",{{"UnitsInStock", Int64.Type}}) |
 
 ## <a name="task-2-import-order-data-from-an-odata-feed"></a>Opgave 2: Importér ordredata fra et OData-feed
-I denne opgave skal du hente ordredataene. Dette trin repræsenterer, at der oprettes forbindelse til et salgssystem. Du kan importere data til Power BI Desktop fra OData-eksempelfeedet Northwind på følgende URL, som du kan kopiere (og derefter indsætte) i trinenen herunder: <http://services.odata.org/V3/Northwind/Northwind.svc/> 
+I denne opgave skal du hente ordredataene. Dette trin repræsenterer, at der oprettes forbindelse til et salgssystem. Du kan importere data til Power BI Desktop fra OData-eksempelfeedet Northwind på følgende URL-adresse, som du kan kopiere (og derefter indsætte) i trinnene herunder: <http://services.odata.org/V3/Northwind/Northwind.svc/> 
 
 ### <a name="step-1-connect-to-an-odata-feed"></a>Trin 1: Opret forbindelse til et OData-feed
 1. Gå til båndet **Hjem** i Forespørgselseditor, og vælg **Hent data**.

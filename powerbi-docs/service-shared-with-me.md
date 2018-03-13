@@ -16,17 +16,18 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: 63497e7d517bed8aeba8abefcc4e48c628e06252
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 6c29f0915009fced89c80e05f40b91c467e505ce
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="display-the-power-bi-dashboards-that-have-been-shared-with-me"></a>Vis de Power BI-dashboards, der er blevet delt med mig
 ## <a name="shared-with-me"></a>Delt med mig
-![](media/service-shared-with-me/power-bi-share-dash.png)
+![Delingsikon](media/service-shared-with-me/power-bi-share-dash.png)
 
 Når en kollega deler et dashboard med dig, føjes dets navn din **Delt med mig**-liste. Dashboard'et er kun tilgængeligt fra **Delt med mig** og er ikke tilgængeligt fra et arbejdsområde eller fra **Apps**.
 
@@ -38,8 +39,8 @@ Du får mange muligheder for at interagere med dashboard'et og den underliggende
 
 ## <a name="actions-available-from-the-shared-with-me-screen"></a>Handlinger, der er tilgængelige fra **Delt med mig**-skærmen
 * Vælg stjerneikonet for at [gøre et dashboard til favorit](service-dashboard-favorite.md).
-* [Fjern et dashboard](service-delete.md)  ![](media/service-shared-with-me/power-bi-delete-icon.png)
-* Nogle dashboards kan deles igen![](media/service-shared-with-me/power-bi-share-icon-new.png)
+* [Fjern et dashboard](service-delete.md) ![affaldsspandsikon](media/service-shared-with-me/power-bi-delete-icon.png)
+* Nogle dashboards kan deles igen  ![delingsikon](media/service-shared-with-me/power-bi-share-icon-new.png)
 * Hvis dine lister over dashboards bliver lange, kan du desuden [bruge søgefeltet og sortering for at finde det, du har brug for](service-navigation-search-filter-sort.md).
   
   > [!NOTE]
@@ -51,7 +52,7 @@ Du får mange muligheder for at interagere med dashboard'et og den underliggende
 ## <a name="filter-shared-dashboards-by-owner"></a>Filtrer delte dashboards efter ejer
 Indholdet i **Delt med mig**-skærmen kan filtreres yderligere efter indholdsejer. Hvis jeg f.eks. vælger **Amanda**, får jeg kun vist det dashboard, som Amanda har delt med mig.
 
-![](media/service-shared-with-me/power-bi-owner.png)
+![dashboard filtreret efter ejer](media/service-shared-with-me/power-bi-owner.png)
 
 ## <a name="next-steps"></a>Næste trin
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)  

@@ -18,11 +18,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/20/2017
 ms.author: mihart
-ms.openlocfilehash: 352efd894eb58823c9f506089ee28b7d11b30687
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+LocalizationGroup: Ask questions of your data
+ms.openlocfilehash: 80fb45e8f0d181779c699c081006b6610248dc50
+ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Fejlfinding i Cortana til Power BI
 Denne artikel er en del af en serie. Hvis du ikke allerede har gjort det, anbefaler vi, at du læser de følgende tre artikler.
@@ -95,7 +96,7 @@ Har du stadig problemer?  Nu er et godt tidspunkt til at køre værktøjet til f
    Da vi fik et resultat, ved vi nu, at Cortana **er** aktiveret i Power BI. Dette indsnævrer problemet til noget på Windows-siden eller sprogindstillingen for Cortana, eller at der er mere end 100 datasæt aktiveret for Cortana.
 
 ### <a name="having-trouble-retrieving-answers-from-a-dashboard"></a>Har du problemer med at hente svar fra et dashboard?
-Søger du efter et dashboard, der er blevet delt med dig?  Åbn Power BI > **Delt med mig**, og find navnet på dashboardet.  Skriv derefter navnet i feltet *Utterances**.
+Søger du efter et dashboard, der er blevet delt med dig?  Åbn Power BI > **Delt med mig**, og find navnet på dashboardet.  Skriv derefter navnet i feltet **Utterances**.
 
 ![Åbn Delt med mig i Power BI](media/service-cortana-troubleshoot/power-bi-cortana-shared-with-me.png)
 

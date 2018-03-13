@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/21/2017
 ms.author: mihart
-ms.openlocfilehash: 202f92b9c7089a4bd9bb5dd976051bba47da632e
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+LocalizationGroup: Visualizations
+ms.openlocfilehash: 634dc4efe6553a9de91716552a21563f5405fa69
+ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Bedste praksis for design af rapporter og visuals
 <!-- Shared newnav Include -->
@@ -215,7 +216,7 @@ Når du angiver baggrunde til rapportsider, skal du vælge farver, som ikke over
 
 Du er ikke ved at lave et kunstværk, men en funktionel rapport. Vælg en farve, der øger elementernes læselighed og får dem til at træde frem i rapporten.  
 
-I følge en undersøgelse af brugen af farve og visualiseringer på websider øger større kontraster mellem farver forståelseshastigheden (*The effect of text and background colour on visual search of Web pages** og **Determining Users’ Perception of Web Page Visual Complexity and Aesthetic Characteristics*.)
+I følge en undersøgelse af brugen af farve og visualiseringer på websider øger større kontraster mellem farver forståelseshastigheden (The effect of text and background colour on visual search of Web pages og **Determining Users’ Perception of Web Page Visual Complexity and Aesthetic Characteristics**).
 
 Vi har anvendt nogle af disse bedste praksisser for farvevalg i vores eksempelrapport (Figur 20 og 21) nedenfor. Det mest bemærkelsesværdige er, at vi har ændret baggrundsfarven til sort.  Gul blev for lyst og var anstrengende for øjnene.  Og i diagrammet "Count of athlete name by year and medal class" gik den gule del af søjlerne i et med den gule baggrund.  Ved hjælp af en sort (eller hvid) baggrund får vi maksimal kontrast, og vores visuals bliver vores fokuspunkt.
 

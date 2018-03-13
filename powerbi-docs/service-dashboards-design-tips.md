@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/24/2017
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 83b813ccdc9ed0ef232f5eede715ad3a795253d0
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 769d669f00c87e6139d8ff2cb8640739d09edf7a
+ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips til udformning af et fantastisk Power BI-dashboard
 Nu, hvor du har oprettet et dashboard og tilføjet nogle felter, kan du overveje, hvordan du ikke bare gør dit dashboard flot, men også funktionelt. Generelt betyder det, at man sørger for, at den vigtigste information er tydelig, og at udseendet er rent og ryddeligt.
@@ -50,7 +51,7 @@ Vis dit dashboard i [fuld skærm](service-fullscreen-mode.md) uden forstyrrelser
 
 ### <a name="make-the-most-important-information-biggest"></a>Gør de vigtigste oplysninger størst
 Hvis tekst og visualiseringer på dit dashboard alle har samme størrelse, kan læserne have vanskeligt ved at fokusere på, hvad der er vigtigst. For eksempel er kortvisualiseringer en god måde at fremhæve et vigtigt tal på:  
-![](media/service-dashboards-design-tips/pbi_card.png)
+![Kortvisualisering](media/service-dashboards-design-tips/pbi_card.png)
 
 Men husk at angive kontekst.  
 

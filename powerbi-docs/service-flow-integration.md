@@ -16,14 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/22/2018
+ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 527978a3559abdc7c46b08569af40b769e9054e4
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: b38866b2a9989af529e89cd358f25716072c46bb
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="microsoft-flow-and-power-bi"></a>Microsoft Flow og Power BI
 
@@ -46,44 +46,44 @@ I denne opgave skal vi bruge en skabelon til at oprette et enkelt flow, der udl�
 1. Log på Microsoft Flow (flow.microsoft.com).
 2. Vælg **Mine flow**.
    
-   ![](media/service-flow-integration/power-bi-my-flows.png)
+   ![Menulinjen Flow](media/service-flow-integration/power-bi-my-flows.png)
 3. Vælg **Opret fra skabelon**.
    
-    ![](media/service-flow-integration/power-bi-template.png)
+    ![Menulinjen Mine flows](media/service-flow-integration/power-bi-template.png)
 4. Brug søgefeltet til at finde Power BI-skabeloner, og vælg **Send en mail til en målgruppe, når en Power BI-databesked udløses > Fortsæt**.
    
-    ![](media/service-flow-integration/power-bi-flow-alert.png)
+    ![søgeresultater](media/service-flow-integration/power-bi-flow-alert.png)
 
 
 ### <a name="build-the-flow"></a>Byg flowet
 Denne skabelon indeholder en udløser (Power BI-databesked om nye olympiske medaljer til Irland) og en handling (send en mail). Når du vælger et felt, viser Flow dynamisk indhold, du kan inkludere.  I dette eksempel inkluderer vi feltværdien og feltets URL-adresse i meddelelsens brødtekst.
 
-![](media/service-flow-integration/power-bi-template1.png)
+![flowskabelon](media/service-flow-integration/power-bi-template1.png)
 
 1. Vælg Power BI-databeskeden fra rullemenuen i udløseren. Vælg **Ny medalje til Irland**. Hvis du vil vide mere om, hvordan du opretter en besked, skal du læse [Databeskeder i Power BI](service-set-data-alerts.md).
    
-   ![](media/service-flow-integration/power-bi-trigger-flow.png)
+   ![rulleliste for vigtig besked](media/service-flow-integration/power-bi-trigger-flow.png)
 2. Angiv en eller flere gyldige mailadresser, og vælg derefter **Rediger** (vist nedenfor) eller **Tilføj dynamisk indhold**. 
    
-   ![](media/service-flow-integration/power-bi-flow-email.png)
+   ![Skærmbilledet Send en mail](media/service-flow-integration/power-bi-flow-email.png)
 
 3. Flow opretter en titel og meddelelse for dig, som du kan beholde eller ændre. Alle de værdier, du angav, da du oprettede beskeden i Power BI, er tilgængelige til brug – du skal bare placere markøren og vælge i det område, der er fremhævet med gråt. 
 
-   ![](media/service-flow-integration/power-bi-flow-email-default.png)
+   ![Skærmbilledet Send en mail](media/service-flow-integration/power-bi-flow-email-default.png)
 
 1.  Hvis du f.eks. har oprettet en beskedtitel i Power BI af typen **Vi har vundet endnu en medalje**, kan du vælge **Beskedtitel** for at føje teksten til emnefeltet i din mail.
 
-    ![](media/service-flow-integration/power-bi-flow-message.png)
+    ![opret mailteksten](media/service-flow-integration/power-bi-flow-message.png)
 
     Du kan også acceptere standardbrødteksten i mailen eller oprette din egen. Ovenstående eksempel indeholder nogle få ændringer af meddelelsen.
 
 1. Når du er færdig, skal du vælge **Opret flow** eller **Gem flow**.  Flowet er oprettet og vurderet.  Flow giver dig besked, hvis det finder fejl.
 2. Hvis der er fundet fejl, skal du vælge **Rediger flow** for at løse dem, ellers skal du vælge **Udført** for at køre det nye flow.
    
-   ![](media/service-flow-integration/power-bi-flow-running.png)
+   ![meddelelse om fuldførelse](media/service-flow-integration/power-bi-flow-running.png)
 5. Når databeskeden udløses, sendes der en mail til de angivne adresser.  
    
-   ![](media/service-flow-integration/power-bi-flow-email2.png)
+   ![mail med vigtig besked](media/service-flow-integration/power-bi-flow-email2.png)
 
 ## <a name="create-a-flow-that-uses-power-bi---from-scratch-blank"></a>Opret et Flow, der bruger Power BI – fra bunden
 I denne opgave skal vi oprette et enkelt flow fra bunden, der udløses af en databesked i Power BI (meddelelse).
@@ -91,28 +91,28 @@ I denne opgave skal vi oprette et enkelt flow fra bunden, der udløses af en dat
 1. Log på Microsoft Flow.
 2. Vælg **Mine flow** > **Opret fra blank**.
    
-   ![](media/service-flow-integration/power-bi-my-flows.png)
+   ![Menulinje øverst i Flow](media/service-flow-integration/power-bi-my-flows.png)
 3. Brug søgefeltet til at finde en Power BI-udløser, og vælg **Power BI – når en datadrevet besked udløses**.
 
 ### <a name="build-your-flow"></a>Byg dit flow
 1. Vælg navnet på beskeden på rullelisten.  Hvis du vil vide mere om, hvordan du opretter en besked, skal du læse [Databeskeder i Power BI](service-set-data-alerts.md).
    
-    ![](media/service-flow-integration/power-bi-totalstores2.png)
+    ![vælg navnet på den vigtige besked](media/service-flow-integration/power-bi-totalstores2.png)
 2. Vælg **Nyt trin** > **Tilføj en handling**.
    
-   ![](media/service-flow-integration/power-bi-new-step.png)
+   ![tilføj et nyt trin](media/service-flow-integration/power-bi-new-step.png)
 3. Søg efter **Outlook**, og vælg **Opret begivenhed**.
    
-   ![](media/service-flow-integration/power-bi-create-event.png)
+   ![Byg flowet](media/service-flow-integration/power-bi-create-event.png)
 4. Udfyld begivenhedens felter. Når du vælger et felt, viser Flow dynamisk indhold, du kan inkludere.
    
-   ![](media/service-flow-integration/power-bi-flow-event.png)
+   ![fortsæt med at bygge flowet](media/service-flow-integration/power-bi-flow-event.png)
 5. Vælg **Opret flow**, når du er færdig.  Flow gemmer og vurderer flowet. Vælg **Udført** for at køre dette flow, hvis der ikke er nogen fejl.  Det nye flow er føjet til din side **Mine flow**.
    
-   ![](media/service-flow-integration/power-bi-flow-running.png)
+   ![Fuldfør flowet](media/service-flow-integration/power-bi-flow-running.png)
 6. Når flowet udløses af Power BI-databeskeden, modtager du en Outlook-begivenhedsmeddelelse svarende til denne.
    
-    ![](media/service-flow-integration/power-bi-flow-notice.png)
+    ![Flowet udløser en Outlook-meddelelse](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## <a name="next-steps"></a>Næste trin
 * [Kom i gang med Microsoft Flow](https://flow.microsoft.com/en-us/documentation/getting-started/)

@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/07/2018
+ms.date: 03/01/2018
 ms.author: maikelson
-ms.openlocfilehash: a16ed05732f5031f0a6f33522d52bb501e241c4f
-ms.sourcegitcommit: db37f5cef31808e7882bbb1e9157adb973c2cdbc
+ms.openlocfilehash: eb1f158dd054d9e1e462b556897fde8a74ae4bc3
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
@@ -39,6 +39,10 @@ Kom i gang med disse populære webinarer, når det passer dig
 <br>ved Miranda Li
 <br>[Se nu](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Simply-Compelling-Seven-Tips-to-Better-Visualization-Design/m-p/173401?Is=Website)
 
+**Få mere at vide om at navigere i et Power BI Dashboard på 20 minutter** (webinaret er på engelsk)
+<br>ved Miguel Martinez
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
+
 **Bedre sammen: Fem fordele Excel-brugere får ved at bruge Power BI**
 <br>ved Carlos Otero og Miguel Martinez
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
@@ -49,36 +53,14 @@ Kom i gang med disse populære webinarer, når det passer dig
 
 Tilmeld dig for at høre fra Power BI-eksperter og deltage i livesessioner med spørgsmål og svar
 
-**Serie af webinarer om Office 365 til finansansvarlige – Episode 2: Automatiser tilbagevendende rapporter, og aktivér selvbetjeningsanalyse**
-<br>ved Mark Traverso og Miguel Martinez
-<br>*15. februar, kl. 12:00 PM PST, kl. 15:00 PM EST*
+**Webinarserie om Power BI-implementeringsstruktur: Del 1 – Implementering: Implementer en datadrevet kultur**. Webinaret er evt. på engelsk.
+<br>ved Manu Kanwarpal
+<br>*Den 8. marts kl. 9:00 PST, kl. 12:00 EST*
 
-Få tip, tricks og bedste praksis, så du kan få mere ud af dit daglige arbejde ved hjælp af Office 365.
+Skift organisationens tankesæt til en datadrevet kultur, og tilmeld dig den webinarserie, der giver dig en implementeringsstruktur til Power BI fra Microsoft. Det kan være en udfordring selv at skulle implementere BI (business intelligence), og erhvervelsen af disse værktøjer er kun den første del af rejsen. En vellykket implementering kræver en ændring af personer, processer og teknologi.
+Dette webinar er det første af en serie på fem, som låser op for potentialet ved Power BI i din organisation.
 
-[Tilmeld dig, og se med den 15. februar](https://aka.ms/Office365FinanceProsPBI)
-
-**Sådan sælger du BI-løsninger med Microsoft**
-<br>ved Tamer Farag
-<br>*15. februar, kl. 8:00 AM PST, kl. 11:00 AM EST*
-
-Tilmeld dig dette webinar, og få mere at vide om, hvordan du bliver partner med Microsoft, så du kan få del af Business Intelligence-markedet. Få et overblik over vores mest opdaterede læringsressourcer, marketingmateriale, incitamenter og tilbud, som kan hjælpe dig med at opbygge din praksis og få den til at vækste. Få samtidig mere at vide om, hvordan du bliver fremhævet på PowerBI.com og AppSource.com, så du sikrer, at Microsoft-kunder og -sælgere fokuserer på dine løsninger og tilbud.
-
-[Tilmeld dig, og se med den 15. februar](https://infopedia.eventbuilder.com/event?eventid=l9d4s7)
-
-**Få mere at vide om at navigere i et Power BI Dashboard på 20 minutter** (webinaret er på engelsk)
-<br>ved Miguel Martinez
-<br>*21. februar, kl. 10.00 PST, kl. 13.00 EST*
-
-Har du nogensinde åbnet et Power BI Dashboard og bare tænkt – hvad gør jeg nu?  Hvordan navigerer jeg i programmet for at finde de data, der betyder noget for mig? Begrænser du brugen af filtre og udsnit af frygt for at "ødelægge noget"?  Du skal ikke være bange. Se med her for at få mere at vide om, hvordan du navigerer i et Power BI Dashboard. Vi fører dig gennem de mest almindelige funktioner, der bruges af andre ledere til at gå i detaljen med de ønskede data, når der er brug for det.
-
-[Tilmeld dig og se med den 21. februar](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
-
-**Visualiser offentlige eller private datasæt med den nye forbindelse til Power BI og data.world**
-<br>*22. februar, kl. 10:00 AM PST, kl. 13:00 PM EST*
-
-I samarbejde med data.world har Microsoft udgivet en ny forbindelse, der giver dig mulighed for at importere data.world-datasæt i Power BI Desktop. Tilmeld dig, og få mere at vide om, hvordan du drager fordel af denne nye fantastiske forbindelse og gør brug af det effektive data.world-community til at dele og samarbejde med andre om din datahistorie.
-
-[Tilmeld dig, og se med den 22. februar](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
+[Tilmeld dig, og se med den 8. marts](https://info.microsoft.com/ww-landing-powerbi-adoption.html?Is=Website)
 
 >[Deltag i kommende webinarer fra Power BI-community'et](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
 
@@ -110,7 +92,15 @@ Se optagne sessioner når som helst
 <br>ved Jon Thompson fra Blue Margin og Jim Pastor fra Elgin Fastener Group
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/digital-transformation-in-manufacturing.html?Is=Website)
 
+**Visualiser offentlige eller private datasæt med den nye forbindelse til Power BI og data.world**
+<br>ved Patrick McGarry og Miguel Martinez
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
+
 ### <a name="advanced-topics"></a>Avancerede emner ###
+
+**Serie af webinarer om Office 365 til finansansvarlige – Episode 2: Automatiser tilbagevendende rapporter, og aktivér selvbetjeningsanalyse**
+<br>ved Mark Traverso og Miguel Martinez
+<br>[Tilmeld dig, og se det nu](https://aka.ms/Office365FinanceProsPBI)
 
 **Sådan implementerer du en vellykket datastyringsstrategi, som gør din organisation mere sikker**
 <br>ved Ajay Anandan

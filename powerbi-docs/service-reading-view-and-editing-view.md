@@ -15,18 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.author: mihart
-ms.openlocfilehash: 6948f0e333ba1136f6fda8fa0f62b146cefdd710
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+LocalizationGroup: Reports
+ms.openlocfilehash: 6eca438c9e12d99f925aef864ed9b74e16ef30b7
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Læsevisning og Redigeringsvisning i rapporter i Power BI-tjenesten
 Der er to forskellige tilstande til at få vist og interagere med rapporter i Power BI-tjenesten (ikke Power BI Desktop): Læsevisning og Redigeringsvisning. Læsevisning er tilgængelig for alle brugere og er især designet til *forbrugere* af data, mens Redigeringsvisning kun er tilgængelig for *oprettere* og ejere af rapporter. 
 
-![](media/service-reading-view-and-editing-view/power-bi-creators-consumers.png)
+![Kunst af rapportoprettere og rapportforbrugere](media/service-reading-view-and-editing-view/power-bi-creators-consumers.png)
 
 ## <a name="report-reading-view"></a>Rapport i Læsevisning
 
@@ -83,17 +84,17 @@ Husk, at kun rapportopretteren og -ejeren(erne) kan åbne en rapport i Redigerin
 
 1. Rapporten åbnes som standard i Læsevisning. Du kan se, du er i Læsevisning, hvis du får vist en indstillingen **Rediger rapport**. Hvis **Rediger rapport** er nedtonet, har du ikke rettigheder til at åbne rapporten i Redigeringsvisning.
 
-   ![](media/service-reading-view-and-editing-view/power-bi-edit-report-grey.png)
+   ![Rediger rapport er nedtonet](media/service-reading-view-and-editing-view/power-bi-edit-report-grey.png)
 
 2. Hvis **Rediger rapport** ikke er nedtonet, skal du vælge den for at åbne rapporten i Redigeringsvisning. 
    
-   ![](media/service-reading-view-and-editing-view/power-bi-edit-report.png)
+   ![Indstillingen Rediger rapport](media/service-reading-view-and-editing-view/power-bi-edit-report.png)
    
    Rapporten er nu i Redigeringsvisning og bruger de samme [visningsindstillinger](power-bi-report-display-settings.md), som du sidst brugte i Læsevisning.
 
 2. Du vender tilbage til Læsevisning ved at vælge **Læsevisning** på den øverste navigationslinje.
    
-    ![](media/service-reading-view-and-editing-view/power-bi-reading-view.png)
+    ![Indstillingen Læsevisning](media/service-reading-view-and-editing-view/power-bi-reading-view.png)
 
 
 

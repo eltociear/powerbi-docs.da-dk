@@ -15,19 +15,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.author: mihart
-ms.openlocfilehash: baa94483b8174d62d0f7e27d726bb59dbb0b4c10
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+LocalizationGroup: Reports
+ms.openlocfilehash: 664e07b1a772c0eb5d14372061511bc86c671b64
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
 ## <a name="what-is-a-power-bi-report"></a>Hvad er en Power BI-rapport?
 En Power BI-***rapport*** er en visning med flere perspektiver af et datasæt med visualiseringer, som repræsenterer forskellige resultater og indsigt fra dette datasæt.  En rapport kan have en enkelt visualisering eller sider fulde af visualiseringer. Afhængigt af din jobfunktion kan du være én, der *opretter* rapporter, og/eller du kan være én, der *forbruger* eller bruger rapporter.
 
-![](media/service-reports/reportview.png)
+![rapportside](media/service-reports/reportview.png)
 
 Denne rapport indeholder tre sider (eller faner), og vi ser i øjeblikket siden "Store Sales Overview". På denne side er der seks forskellige visualiseringer og en sidetitel. Visualiseringer kan være *fastgjort* til dashboards, og når denne fastgjorte visualisering bliver valgt, åbner den den rapport, den var fastgjort til.
 

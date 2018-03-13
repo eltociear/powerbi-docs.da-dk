@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/07/2018
+ms.date: 03/01/2018
 ms.author: mihart
-ms.openlocfilehash: 1d9c183a7fab95caa44221bd2d252ab92889b3f4
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+ms.openlocfilehash: c5177f4ccce8e8e274944cdcb539ca65a8f87ca8
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="open-a-report-in-power-bi-service-apppowerbicom"></a>Åbn en rapport i Power BI-tjenesten (app.powerbi.com)
 Rapporter er tilgængelige i Power BI-tjenesten, Power BI Desktop, Power BI - Mobil og endda Power BI Embedded. Denne artikel gælder for åbning af rapporter i ***Power BI-tjenesten***.
@@ -32,11 +32,11 @@ Der er to forskellige tilstande til at få vist og interagere med rapporter i Po
 
 1. Start i et arbejdsområde, og vælg fanen **Rapporter** for at få vist alle rapporter i dette arbejdsområde.  
    
-   ![](media/service-report-open/power-bi-open-report.png)
-1. Vælg rapportens navn for at åbne rapporten i Læsevisning.  
+   ![Fanen Rapporter i et arbejdsområde](media/service-report-open/power-bi-open-report.png)
+2. Vælg rapportens navn for at åbne rapporten i Læsevisning.  
    
-    ![](media/service-report-open/power-bi-reading-view.png)
-1. Der er [så meget, du kan gøre i Læsevisning](service-reading-view-and-editing-view.md).  Denne eksempelrapport indeholder flere sider, så du kan starte med at udforske hver fane nederst på rapportlærredet. 
+    ![rapport i Læsevisning](media/service-report-open/power-bi-reading-view.png)
+3. Der er [så meget, du kan gøre i Læsevisning](service-reading-view-and-editing-view.md).  Denne eksempelrapport indeholder flere sider, så du kan starte med at udforske hver fane nederst på rapportlærredet. 
 
 ## <a name="open-a-report-from-a-dashboard"></a>Åbn en rapport fra et dashboard
 Der er mange andre måder at åbne en rapport. Du kan f.eks. starte på et dashboard og vælge et felt, der er oprettet ud fra en rapport.  Når flisen vælges, åbnes rapporten i Læsevisning. [Åbn eksempeldashboardet Salg og marketing](sample-datasets.md) for at følge med.
@@ -47,34 +47,34 @@ Der er mange andre måder at åbne en rapport. Du kan f.eks. starte på et dashb
 
 2.  I dette eksempel har vi valgt søjlediagramfeltet "Enheder i alt ÅTD...".
 
-    ![](media/service-report-open/power-bi-dashboard.png)
+    ![dashboard med valgt felt](media/service-report-open/power-bi-dashboard.png)
 
 3.  Den tilknyttede rapport åbner i Læsevisning. Bemærk, at vi er på siden "ÅTD-kategori". Dette er rapportsiden, der indeholder det søjlediagram, vi har valgt på dashboardet.
 
-    ![](media/service-report-open/power-bi-report.png)
+    ![rapport, der er åbnet i Læsevisning](media/service-report-open/power-bi-report.png)
 
 4. Bliv i Læsevisning eller vælg **Rediger rapport** for at åbne rapporten i Redigeringsvisning. Vær opmærksom på, at kun brugere med redigeringsrettigheder for denne rapport kan åbne den i redigeringstilstand.
 
-    ![](media/service-report-open/power-bi-edit-report.png)
+    ![Rapporteditor, der viser ikonet Rediger rapport](media/service-report-open/power-bi-edit-report.png)
 
 ## <a name="create-a-brand-new-report-from-a-dataset"></a>Opret en ny rapport ud fra et datasæt
 Og én metode mere til at åbne en rapport er fra et datasæt. Når du starter fra et datasæt, vil rapportcanvasset være tomt, så denne metode anbefales til *oprettere* af rapporter, som er interesserede i at oprette en ny rapport, der er baseret på et datasæt, som vedkommende ejer. Som eksemplet ovenfor, skal du downloade [Eksempelprogrammet salg og marketing](sample-datasets.md) for at følge med.
 
 1. Start i arbejdsområdet, der indeholder det datasæt, du vil bruge som udgangspunkt for en rapport.
 
-   ![](media/service-report-open/power-bi-workspace.png)
+   ![venstre navigationsrude, der viser apparbejdsområder](media/service-report-open/power-bi-workspace.png)
 
 2. Vælg fanen **Datasæt** for at få vist listen over alle datasæt i dette arbejdsområde. Dette kaldes listen over **Datasætindhold**.
    
-   ![](media/service-report-open/power-bi-dataset.png)
+   ![liste over datasæt](media/service-report-open/power-bi-dataset.png)
 
 1. Find datasættet og vælg ikonet **Opret rapport** for at åbne datasættet i redigeringsvisning. Hvis du ikke har redigeringsrettigheder til et datasæt, kan du ikke åbne det. 
    
-    ![](media/service-report-open/power-bi-create-report.png)
+    ![datasæt med ikonet Opret rapport](media/service-report-open/power-bi-create-report.png)
 
 3. Datasættet åbnes i rapporteditoren. Du får vist de datafelter, der vises til højre, som kun venter på, at du begynder at udforske og oprette visualiseringer. 
 
-   ![](media/service-report-open/power-bi-blank-canvas.png)
+   ![rapportcanvas](media/service-report-open/power-bi-blank-canvas.png)
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Der er stadig flere måder at åbne en rapport
 Når du bliver mere fortrolig med at navigere i Power BI-tjenesten, finder du ud af hvilke arbejdsprocesser, der fungerer bedst for dig. Der er et par enkelte andre måder at få adgang til rapporter på:

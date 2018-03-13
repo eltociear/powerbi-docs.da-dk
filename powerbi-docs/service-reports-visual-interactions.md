@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/10/2018
+ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: a7c4db0044772c28a3cb7a62649de3001945246c
-ms.sourcegitcommit: afd6e9e6f8b192b26486cd04d2cbc9de046911b3
+LocalizationGroup: Reports
+ms.openlocfilehash: 7e2ef4a1ec49335a49e7f934a7606b2fe64f755c
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="visualization-interactions-in-a-power-bi-report"></a>Visuelle interaktioner i en Power BI-rapport
 Hvis du har redigeringsrettigheder til en rapport, kan du bruge **Visuelle interaktioner** til at ændre, hvor visualiseringer på en rapportside påvirker hinanden. 
@@ -44,24 +45,24 @@ Denne artikel viser, hvordan du kan bruge **visuelle interaktioner** i Power BI-
 2. Vis indstillingerne for **visuelle interaktioner**.
     - Vælg på rullelisten for menulinjen Rapport i Power BI-tjenesten.
 
-       ![](media/service-reports-visual-interactions/power-bi-visual-interaction.png)
+       ![Rulleliste med visuelle interaktioner](media/service-reports-visual-interactions/power-bi-visual-interaction.png)
 
     - Vælg **Format > Interaktioner** under Desktop.
 
-        ![](media/service-reports-visual-interactions/pbi-visual-interaction-desktop.png)
+        ![vælg Format og derefter Interaktioner](media/service-reports-visual-interactions/pbi-visual-interaction-desktop.png)
 
 3. Hvis du vil aktivere interaktionskontrolelementerne for visualisering, skal du vælge **Rediger interaktioner**. Power BI tilføjes ikoner for tværgående filter og tværgående fremhævning til alle de andre visualiseringer på rapportsiden.
    
-    ![](media/service-reports-visual-interactions/power-bi-icons-on.png)
+    ![rapport, hvor Visuelle interaktioner er slået til](media/service-reports-visual-interactions/power-bi-icons-on.png)
 3. Find ud af, hvilke indvirkning den valgte visualisering skal have på de andre.  Og gentag eventuelt for alle andre visualiseringer på rapportsiden.
    
-   * Hvis den skal filtrere visualiseringen i tværgående retning, skal du vælge **filterikonet** ![](media/service-reports-visual-interactions/pbi-filter-icon-outlined.png).
-   * Hvis den skal fremhæve visualiseringen i tværgående retning, skal du vælge **fremhævningsikonet** ![](media/service-reports-visual-interactions/pbi-highlight-icon-outlined.png).
-   * Hvis den ikke skal have nogen indvirkning, kan du vælge ikonet for **ingen indvirkning** ![](media/service-reports-visual-interactions/pbi-noimpact-icon-outlined.png).
+   * Hvis den skal filtrere visualiseringen i tværgående retning, skal du vælge ikonet **Filter** ![filterikon](media/service-reports-visual-interactions/pbi-filter-icon-outlined.png).
+   * Hvis den skal fremhæve visualiseringen i tværgående retning, skal du vælge ikonet **Fremhæv** ![fremhævningsikon](media/service-reports-visual-interactions/pbi-highlight-icon-outlined.png).
+   * Hvis den ikke skal have nogen indvirkning, kan du vælge ikonet **Ingen indvirkning** ![ingen indvirkning-ikon](media/service-reports-visual-interactions/pbi-noimpact-icon-outlined.png).
 
 4. Hvis du vil aktivere kontrolelementer til detailudledning, skal du vælge **Boring filtrerer andre visuelle elementer**.  Når du analyserer ned (og op) i en visualisering, ændres de andre visualiseringer på rapportsiden for at afspejle det aktuelle valg af detailudledning. 
 
-   ![](media/service-reports-visual-interactions/drill2.gif)
+   ![video om aktivering af analyseringskontrolelementer](media/service-reports-visual-interactions/drill2.gif)
 
 ### <a name="next-steps"></a>Næste trin
 [Sådan bruger du rapportfiltre](power-bi-how-to-report-filter.md)

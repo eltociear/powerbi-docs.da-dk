@@ -16,14 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 4ffa00f92a6ee1275c1f8a691369cfd54363aa98
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 45f10ab7fef7669adbbc836e67a4daaed267905e
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="opt-in-for-power-bi-preview-features"></a>Tilmeld dig Power BI-prøveversionsfunktioner
 ## <a name="what-are-preview-features"></a>Hvad er *prøveversionsfunktioner*?
@@ -37,10 +37,10 @@ I takt med at vi foretager forbedringer af Power BI, frigiver vi nogle nye funkt
 ## <a name="find-previews-and-turn-them-on-and-off"></a>Find prøveversioner, og aktivér (deaktiver) dem
 1. Åbn menuen Indstillinger ved at vælge tandhjulsikonet i øverste højre hjørne af Power BI-skærmen, og vælg **Indstillinger**.
    
-   ![](media/service-preview-features/power-bi-settings.png).
+   ![Menuen Indstillinger](media/service-preview-features/power-bi-settings.png).
 2. Vælg fanen **Generelt**. Hvis der er en prøveversion, kan du enten se en indstilling for **prøveversion** eller også vises en prøveversion til venstre.  I dette eksempel er der en prøveversion for ArcGIS Maps. 
    
-   ![](media/service-preview-features/power-bi-preview-arcgis.png)
+   ![Fanen Generelt](media/service-preview-features/power-bi-preview-arcgis.png)
 3. Vælg alternativknappen **Til**, eller markér afkrydsningsfeltet for at prøve den nye oplevelse. Vælg derefter **Anvend**.
 4. Du deaktiverer prøveversionen ved at følge trin 1-3 ovenfor og vælge **Fra** i trin 3 eller fjerne markeringen af afkrydsningsfeltet og vælge **Anvend**.
 

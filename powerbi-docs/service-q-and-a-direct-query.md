@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/18/2018
+ms.date: 03/01/2018
 ms.author: mihart
-ms.openlocfilehash: 49e0b976fcee8c18edc14f80df2786e5ebf3fedc
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+LocalizationGroup: Ask questions of your data
+ms.openlocfilehash: 7c33e1d3719b30569996425ed247c1eac87b78f1
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="enable-qa-for-live-connections"></a>Aktivér Spørgsmål og svar til direkte forbindelser
 ## <a name="what-is-on-premises-data-gateway--what-is-a-live-connection"></a>Hvad er datagateway i lokalt miljø?  Hvad er en direkte forbindelse?
@@ -44,15 +45,15 @@ Her finder du flere oplysninger:
 ## <a name="enable-qa"></a>Aktivering af Spørgsmål og svar
 Når du har konfigureret datagateway'en, kan du oprette forbindelse til dine data fra Power BI.  Opret et dashboard ved hjælp af dataene i det lokale miljø, eller overfør en .pbix-fil, der bruger lokale data.  Du har måske også allerede data i lokalt miljø i dashboards, rapporter og datasæt, der er blevet delt med dig.
 
-1. I øverste højre hjørne af Power BI skal du vælge tandhjulsikonet ![](media/service-q-and-a-direct-query/power-bi-cog.png) og vælge **Indstillinger**.
+1. I øverste højre hjørne af Power BI skal du vælge tandhjulsikonet ![tandhjulsikon](media/service-q-and-a-direct-query/power-bi-cog.png) og vælge **Indstillinger**.
    
-   ![](media/service-q-and-a-direct-query/powerbi-settings.png)
+   ![Menuen Indstillinger](media/service-q-and-a-direct-query/powerbi-settings.png)
 2. Vælg **Datasæt**, og vælg det datasæt, der aktiverer Spørgsmål og svar.
    
-   ![](media/service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
+   ![Skærmbilledet Datasæt i menuen Indstillinger](media/service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
 3. Udvid **Spørgsmål og svar og Cortana**, vælg afkrydsningsfeltet for **Aktivér Spørgsmål og svar for dette datasæt**, og vælg **Anvend**.
    
-    ![](media/service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
+    ![Udvidet område til spørgsmål og svar](media/service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
 
 ## <a name="what-data-is-cached-and-how-is-privacy-protected"></a>Hvilke data cachelagres, og hvordan beskyttes privatliv?
 Når du aktiverer Spørgsmål og svar for dataene i det lokale miljø, cachelagres et undersæt af dine data i tjenesten. Det sker for at sikre, at Spørgsmål og svar fungerer sammen med en rimelig ydeevne. Power BI udelukker værdier med flere end 24 tegn fra cachelagring. Cachen slettes inden for et par timer, når du deaktiverer Spørgsmål og svar ved at fjerne markeringen **Aktivér Spørgsmål og svar for dette datasæt**, eller når du sletter dit datasæt.

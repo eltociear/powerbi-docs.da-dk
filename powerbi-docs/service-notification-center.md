@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/23/2017
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 430ff5ad86636d96ca693ff7fc1ac1bb0d16b5cc
-ms.sourcegitcommit: 74fbbca81a056dda19b3647ae058005aba5296f5
+LocalizationGroup: Dashboards
+ms.openlocfilehash: afa3753d04cfb74c2673d222a0b1e6b07a1f5118
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="power-bi-notifications"></a>Power BI-meddelelser
 Meddelelsescenteret er et sekventielt feed af oplysninger, der er knyttet til din Power BI-oplevelse. Åbn det for at se meddelelser om nye dashboards, der er delt med dig, ændringer af dit gruppeområde, oplysninger om Power BI-begivenheder og -møder, beskeder, du har indstillet, og meget mere. Du kan [indstille beskeder i Power BI-tjenesten](service-set-data-alerts.md) og også i Power BI-mobilapps.
@@ -34,13 +35,13 @@ Se Amanda gennemgå meddelelser, hun har modtaget, administrere sine meddelelser
 
 1. Når du logger på Power BI, føjes nye meddelelser, der blev sendt til dig, mens du var offline, til dit feed. Hvis du har nye meddelelser, vises en gul boble sammen med antallet af nye elementer i Power BI.
    
-   ![](media/service-notification-center/power-bi-new-notification.png)
+   ![Ikon for ny meddelelse](media/service-notification-center/power-bi-new-notification.png)
 2. Vælg meddelelsesikonet på Power BI-menulinjen.
    
-   ![](media/service-notification-center/power-bi-notifications-icon.png)
+   ![øverste menulinje, hvor ikonet for meddelelser er valgt](media/service-notification-center/power-bi-notifications-icon.png)
 3. Meddelelser vises med de nyeste øverst, og ulæste meddelelser er fremhævet. Meddelelser gemmes i 90 dage, medmindre du sletter dem hurtigere, eller når de når den maksimale grænse på 100.
    
-   ![](media/service-notification-center/power-bi-notifications.png)
+   ![Meddelelsescenter](media/service-notification-center/power-bi-notifications.png)
 4. Hvis du vil afvise en meddelelse, skal du vælge ikonet X.
 
 ### <a name="next-steps"></a>Næste trin

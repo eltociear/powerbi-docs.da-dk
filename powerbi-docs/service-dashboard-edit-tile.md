@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/20/2018
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 5c208ab13398987350d2acd72e29dbc4d6a6c4a1
-ms.sourcegitcommit: 2ae323fbed440c75847dc55fb3e21e9c744cfba0
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 98856d551e0f124d7ea3e038623e2340ceeb18b8
+ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Rediger eller fjern et dashboard-felt
 
@@ -54,23 +55,23 @@ Denne artikel omhandler følgende.
 ## <a name="create-a-new-visualization-and-pin-it-to-the-dashboard"></a>Opret en ny visualisering, og fastgør den til dashboardet
 1. Vælg feltet "Beløb" i dashboardet Eksempel på analyse af it-forbrug for at åbne rapporten.
 
-    ![](media/service-dashboard-edit-tile/power-bi-amount-tile.png)
+    ![Feltet Beløb](media/service-dashboard-edit-tile/power-bi-amount-tile.png)
 
 2. Åbn rapporten i Redigeringsvisning ved at vælge **Rediger rapport** på den øverste menulinje.
 
 3. Tilføj en ny rapportside ved at vælge plustegnet (+) nederst i rapporten.
 
-    ![](media/service-dashboard-edit-tile/power-bi-add-page.png)
+    ![plusikon](media/service-dashboard-edit-tile/power-bi-add-page.png)
 
 4. Fra ruden FELTER skal du vælge **Fakta > Beløb** og **Forretningsområde > Forretningsområde**.
  
 5. Vælg ikonet for Kransediagram i ruden VISUALISERINGER for at konvertere visualiseringen til et kransediagram.
 
-    ![](media/service-dashboard-edit-tile/power-bi-donut-chart.png)
+    ![Ruden Visualiseringer](media/service-dashboard-edit-tile/power-bi-donut-chart.png)
 
 5. Vælg tegnestiftikonet, og fastgør kransediagrammet til eksempeldashboardet Analyse af it-forbrug.
 
-   ![](media/service-dashboard-edit-tile/power-bi-pin.png)
+   ![peg på et felt](media/service-dashboard-edit-tile/power-bi-pin.png)
 
 6. Når "Udført" vises, skal du vælge **Gå til dashboard**. Du bliver bedt om at gemme dine ændringer. Vælg **Gem**.
 
@@ -86,24 +87,23 @@ Find det nye felt på dashboardet. Vælg, og hold feltet for at trække det til 
 ## <a name="resize-the-tile"></a>Tilpas feltets størrelse
 Et felt kan tilpasses til mange forskellige størrelser – fra 1x1 feltenheder og op til 5x5. Vælg og træk i håndtaget (i nederste højre hjørne) for at tilpasse feltets størrelse.
 
-![](media/service-dashboard-edit-tile/pbigif_resizetile4.gif)
+![video](media/service-dashboard-edit-tile/pbigif_resizetile4.gif)
 
 - - -
 ## <a name="the-ellipses--menu"></a>Ellipse (...)-menuen
 
 1. Vælg ellipsen (...) i feltets øverste højre hjørne. 
    
-   ![](media/service-dashboard-edit-tile/power-bi-tile.png)
+   ![feltellipse](media/service-dashboard-edit-tile/power-bi-tile.png)
 
 2. Peg på feltet "Konto", og vælg ellipsen for at få vist indstillingerne. De tilgængelige indstillinger afhænger af felttypen.  For eksempel er de tilgængelige indstillinger for et dynamisk felt forskellige fra de tilgængelige indstillinger for et felt til standardvisualisering. Hvis et dashboard er blevet delt med dig (du ejer det ikke), har du desuden har færre indstillinger.
 
-   ![](media/service-dashboard-edit-tile/power-bi-tile-menu-new.png)
+   ![menuen Ellipseindstillinger](media/service-dashboard-edit-tile/power-bi-tile-menu-new.png)
 
 3. Vælg **Rediger oplysninger** for at åbne vinduet "Feltoplysninger". 
 
     Tilpas feltets titel og standardfunktion.  Måske vil du f.eks. gerne have, at når en *forbruger* vælger et felt i stedet for at åbne rapporten, der blev brugt til at oprette det pågældende felt, så vises et nyt dashboard i stedet.  
    
-   ![](media/service-dashboard-edit-tile/power-bi-tile-menu-new.png)
 
 
 <a name="rename"></a>
@@ -111,7 +111,7 @@ Et felt kan tilpasses til mange forskellige størrelser – fra 1x1 feltenheder 
 ### <a name="rename-the-tile"></a>Omdøb feltet
 Øverst i vinduet "Feltoplysninger" kan du ændre **Titel** til **Brugt beløb**.
 
-![](media/service-dashboard-edit-tile/power-bi-tile-title.png)
+![Vinduet Feltoplysninger](media/service-dashboard-edit-tile/power-bi-tile-title.png)
 
 
 <a name="hyperlink"></a>
@@ -123,27 +123,27 @@ Når du vælger et felt, føres du normalt hen til rapporten, hvor feltet blev o
 
 2. Vælg **Link til et dashboard eller en rapport i det aktuelle arbejdsområde**, og vælg derefter på rullemenuen.  Jeg har valgt eksempeldashboardet HR i dette eksempel. Hvis du ikke allerede har dette eksempel i arbejdsområdet, så kan du tilføje det og gå tilbage til dette trin, eller du kan vælge et andet dashboard. 
 
-    ![](media/service-dashboard-edit-tile/power-bi-custom-link.png)
+    ![Dialogboksen Funktionalitet](media/service-dashboard-edit-tile/power-bi-custom-link.png)
 
 3. Vælg **Anvend**.
 
 4. Den nye titel vises på feltet.  Og når du vælger feltet, så åbner Power BI HR-dashboardet. 
 
-    ![](media/service-dashboard-edit-tile/power-bi-title.png)
+    ![felttitel](media/service-dashboard-edit-tile/power-bi-title.png)
 
 <a name="different"></a>
 
 ### <a name="pin-the-tile-to-a-different-dashboard"></a>Fastgør feltet til et andet dashboard
-1. Vælg **Fastgør felt** på ellipsens rullemenu ![](media/service-dashboard-edit-tile/pinnooutline.png).
+1. Vælg **Fastgør felt** ![tegnestiftsikon](media/service-dashboard-edit-tile/pinnooutline.png) i rullemenuen for ellipsen.
 2. Vælg, om du vil fastgøre en dublet af dette felt til et eksisterende dashboard eller til et nyt dashboard. 
    
-   ![](media/service-dashboard-edit-tile/pbi_pintoanotherdash.png)
+   ![Dialogboksen Fastgør til dashboard](media/service-dashboard-edit-tile/pbi_pintoanotherdash.png)
 3. Vælg **Fastgør**.
 
 <a name="delete"></a>
 
 ### <a name="delete-the-tile"></a>Slet feltet
-1. Hvis du vil fjerne et felt permanent fra et dashboard, skal du vælge **Slet felt** ![](media/service-dashboard-edit-tile/power-bi-delete-tile-icon.png) på ellipsens rullemenu. 
+1. Hvis du vil fjerne et felt permanent fra et dashboard, skal du vælge **Slet felt** ![sletteikon](media/service-dashboard-edit-tile/power-bi-delete-tile-icon.png) i rullemenuen for ellipsen. 
 
 2. Når du sletter et felt, slettes den underliggende visualisering ikke. Åbn den underliggende rapport ved at vælge feltet "Beløb". Åbn den sidste side i rapporten for at se, at den oprindelige visualisering ikke er blevet slettet fra rapporten. 
 

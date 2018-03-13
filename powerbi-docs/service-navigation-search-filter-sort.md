@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: f76bc638893a06545fb5a71ec633dd470fd47dd8
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 26308afc86ce83a24a40b078770db35213f600e0
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigation: Søg i, find og sortér dit indhold i Power BI-tjenesten
 Der er mange forskellige måder at navigere rundt i dit indhold i Power BI-tjenesten på. Indholdet organiseres i fire arbejdsområder efter type: dashboards, rapporter, projektmapper og datasæt.  Indholdet er også sorteret efter forbrug: Favoritter, seneste, apps, delt med mig og udvalgt. Med disse forskellige stier til dit indhold kan du hurtigt finde det, du søger, i Power BI-tjenesten.  
@@ -34,26 +34,26 @@ Der er mange forskellige måder at navigere rundt i dit indhold i Power BI-tjene
 
 Power BI-tjenesten opdeler indholdet i dit arbejdsområde efter type: dashboards, rapporter, projektmapper og datasæt. Når du vælger et arbejdsområde, får du vist denne opdeling. I dette eksempel har apparbejdsområdet navnet "Sales and marketing app sample" og indeholder to dashboards, seks rapporter, en projektmappe og fem datasæt.
 
-![](media/service-navigation-search-filter-sort/workspaces.gif)
+![video](media/service-navigation-search-filter-sort/workspaces.gif)
 
 ________________________________________
 
 ## <a name="searching-and-sorting-in-workspaces"></a>Søgning og sortering i arbejdsområder
 Der er fire indholdsfaner i et arbejdsområde: Dashboards, Rapporter, Projektmapper og Datasæt.  Hver af disse faner indeholder et søgefelt og en sorteringsknap.  Når du starter med Power BI-tjenesten, er det måske ikke en stor hjælp, da du kun har et eller to elementer pr. fane.  Men med tiden kan dine lister med indhold blive lange.  Brug søgning og sortering til at nemt kan finde det, du har brug for.
 
-![](media/service-navigation-search-filter-sort/power-bi-search-sort2.png)
+![Fanen Dashboards](media/service-navigation-search-filter-sort/power-bi-search-sort2.png)
 
 * Angiv et søgeord for at finde et match på det aktuelle skærmbillede
   
-   ![](media/service-navigation-search-filter-sort/power-bi-search2.png)
+   ![angiv et søgeord](media/service-navigation-search-filter-sort/power-bi-search2.png)
 * Vælg sorteringsknappen for at få vist indstillinger for den aktuelle side. Indstillingerne bruges til at sortere efter navn eller ejer.
   
-   ![](media/service-navigation-search-filter-sort/power-bi-sort-alpha.png)
+   ![menuen Sortér](media/service-navigation-search-filter-sort/power-bi-sort-alpha.png)
 
 ## <a name="navigation-using-the-left-navbar"></a>Navigation ved hjælp af den venstre navigationslinje
-Den venstre navigationslinje klassificerer dit indhold, så det bliver endnu nemmere at finde det ønskede hurtigt.  
+I den venstre navigationsrude klassificeres dit indhold, så det bliver endnu nemmere at finde det ønskede hurtigt.  
 
-![](media/service-navigation-search-filter-sort/power-bi-newnav.png)
+![venstre navigationsrude](media/service-navigation-search-filter-sort/power-bi-newnav.png)
 
 
 
@@ -61,7 +61,7 @@ Indhold, som du opretter til eget brug, er tilgængeligt i **Mit arbejdsområde*
 
 Derudover kan du mærke indhold som [foretrukket](service-dashboard-favorite.md) og [udvalgt](service-dashboard-featured.md). Vælg det dashboard, du forventer at se oftest, og angiv det som dit *foretrukne* dashboard. Hver gang du åbner Power BI-tjenesten, bliver dette dashboard vist først. Har du en række dashboards og apps, som du ofte besøger? Når du angiver dem som favoritter, er de altid tilgængelige i den venstre navigationslinje.
 
-![](media/service-navigation-search-filter-sort/power-bi-favorite-flyout.png).
+![Pop op-vinduet Favoritter](media/service-navigation-search-filter-sort/power-bi-favorite-flyout.png).
 
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding

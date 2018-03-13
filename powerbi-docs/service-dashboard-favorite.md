@@ -16,14 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/10/2018
+ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 779ef2c532d0b580f4a3d19c50815193d03c2f07
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 82f8575c019790820aa46c75e095f8ef64bb6fde
+ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-power-bi-service"></a>Foretrukne dashboards, rapporter og apps i Power BI-tjenesten
 Når du gør indhold til en *favorit*, kan du få adgang til det fra alle dine arbejdsområder.  Favoritter er normalt det indhold, du besøger oftest.
@@ -42,31 +42,31 @@ Se Amanda føje favoritter til sit arbejdsområde, og følg derefter den trinvis
 
 
 1. Åbn et dashboard eller en rapport, som du ofte bruger. Selv indhold, der er blevet delt med dig, kan være en *favorit*.
-2. Vælg **Favorit** eller stjerneikonet ![](media/service-dashboard-favorite/power-bi-favorite-icon.png) i øverste højre hjørne af Power BI-tjenesten.
+2. Vælg **Favorit** eller ikonet Stjerne ![stjerneikon](media/service-dashboard-favorite/power-bi-favorite-icon.png) i øverste højre hjørne af Power BI-tjenesten.
    
-   ![](media/service-dashboard-favorite/powerbi-dashboard-favorite.png)
+   ![ikonet Favoritter](media/service-dashboard-favorite/powerbi-dashboard-favorite.png)
    
    Du kan også gøre et dashboard eller en rapport til favorit fra fanen **Dashboards** eller indholdsvisningen **Rapporter** i arbejdsområdet.
    
-   ![](media/service-dashboard-favorite/power-bi-dashboard-favorite.png)
+   ![Fanen Dashboard med en gul stjerne](media/service-dashboard-favorite/power-bi-dashboard-favorite.png)
 
 ## <a name="add-an-app-as-a-favorite"></a>Tilføj en app som en *favorit*
 
 1. Vælg **Apps** i venstre navigationsrude.
 
-  ![](media/service-dashboard-favorite/power-bi-favorite-apps.png)
+   ![dashboard](media/service-dashboard-favorite/power-bi-favorite-apps.png)
 
-2. Hold musen over en app til at få vist flere detaljer.  Vælg stjerneikonet ![](media/service-dashboard-favorite/power-bi-favorite-icon.png) for at gøre et dashboard til favorit.
+2. Hold musen over en app til at få vist flere detaljer.  Vælg ikonet Stjerne ![stjerneikon](media/service-dashboard-favorite/power-bi-favorite-icon.png)  for at gøre det til favorit.
    
-   ![](media/service-dashboard-favorite/power-bi-favorite-app.png)
+   ![peg på en app](media/service-dashboard-favorite/power-bi-favorite-app.png)
 
 ## <a name="working-with-favorites"></a>Arbejd med *favoritter*
 1. Du kan få adgang til dine favoritter fra et hvilket som helst arbejdsområde ved at vælge pilen til højre for **Favoritter**.  Herfra kan du vælge en favorit for at åbne den. Kun fem favoritter vises (alfabetisk). Hvis du har mere end fem, skal du vælge **Se alle** for at åbne skærmbilledet Favoritter (se nr. 2 herunder). 
    
-   ![](media/service-dashboard-favorite/power-bi-favorite-flyout-new.png)
-2. Hvis du vil se **alt** det indhold, du har tilføjet som favoritter, skal du i venstre navigationsrude vælge **Favoritter** eller ikonet for favoritter ![](media/service-dashboard-favorite/power-bi-favorites-icon.png).  
+   ![Pop op-vinduet Favoritter](media/service-dashboard-favorite/power-bi-favorite-flyout-new.png)
+2. Hvis du vil se **alt** det indhold, du har tilføjet som favoritter, skal du i venstre navigationsrude vælge **Favoritter** eller ikonet Favoritter ![stjerneikon](media/service-dashboard-favorite/power-bi-favorites-icon.png).  
    
-    ![](media/service-dashboard-favorite/power-bi-favorites-screen.png)
+    ![vinduet favorit](media/service-dashboard-favorite/power-bi-favorites-screen.png)
    
    Her kan du udføre handlinger: åbne, identificere ejere og endda dele med dine kollegaer.
 
@@ -75,7 +75,7 @@ Bruger du ikke længere en rapport så ofte, som du plejede?  Du kan fjerne det 
 
 1. Vælg **Favoritter** i venstre navigationsrude for at åbne skærmbilledet **Favoritter**.
    
-   ![](media/service-dashboard-favorite/power-bi-unfavorites-screen.png)
+   ![Skærmbilledet Favoritter](media/service-dashboard-favorite/power-bi-unfavorites-screen.png)
 2. Vælg den gule stjerne ud for det indhold, der skal fjernes som favorit.
 
 > **Bemærk**! Du kan også fjerne et dashboard, en rapport eller en app som favorit. Du skal blot åben og fjerne markeringen det gule ikon.   

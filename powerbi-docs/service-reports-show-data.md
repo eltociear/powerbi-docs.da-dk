@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: b9e72c57ccd165ed02424e303c5ec54f179868e0
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+LocalizationGroup: Visualizations
+ms.openlocfilehash: b85fe5cf70c915a3355c80a61f01a32216450f03
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="show-the-data-that-was-used-to-create-the-visualization"></a>Vis de data, der blev brugt til at oprette visualiseringen
 ## <a name="show-data"></a>Vis data
@@ -38,16 +39,16 @@ Du kan også eksportere de data, der bruges til at oprette visualiseringen som e
 1. I Power BI-tjenesten skal du åbne en rapport i [Læsevisning eller Redigeringsvisning](service-reading-view-and-editing-view.md) og vælge en visualisering.  Åbn Rapportvisning i Power BI Desktop.
 2. Hvis du vil have vist de underliggende data for visualiseringen, skal du vælge **Udforsk** > **Få vist data**.
    
-   ![](media/service-reports-show-data/power-bi-show-data.png)
+   ![vælg Få vist data](media/service-reports-show-data/power-bi-show-data.png)
 3. Som standard vises dataene under visualiseringen.
    
-   ![](media/service-reports-show-data/power-bi-explore-show-data.png)
+   ![visning af visualisering og lodrette data](media/service-reports-show-data/power-bi-explore-show-data.png)
 4. Hvis du vil ændre retningen, skal du vælge lodret layout ![](media/service-reports-show-data/power-bi-vertical-icon-new.png) i øverste højre hjørne af visualiseringen.
    
-   ![](media/service-reports-show-data/power-bi-explore-show-data2.png)
+   ![visning af visualisering og vandrette data](media/service-reports-show-data/power-bi-explore-show-data2.png)
 5. Hvis du vil eksportere dataene til en .csv-fil, skal du vælge ellipsen og vælge **Eksportér data**.
    
-    ![](media/service-reports-show-data/power-bi-export-data-new.png)
+    ![Vælg Eksportér data](media/service-reports-show-data/power-bi-export-data-new.png)
    
     Du kan finde flere oplysninger om eksport af data til Excel under [Eksportér data fra Power BI-visualiseringer](power-bi-visualization-export-data.md).
 6. Hvis du vil skjule dataene, skal du fjerne markeringen af **Udforsk** > **Få vist data**.

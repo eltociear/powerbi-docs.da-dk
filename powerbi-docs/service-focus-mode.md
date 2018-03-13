@@ -16,14 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 1a4290d06d623b21b64e1ff03fb0382a55dc2a3c
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 40ef141046db4b8dac9cf47f7f043ca306d2fadb
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="display-a-dashboard-tile-or-report-visual-in-focus-mode"></a>Vis et dashboardfelt eller en rapportvisualisering i fokustilstand
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
@@ -36,39 +36,41 @@ Med ***fokuseringstilstand*** kan du udvide (åbne i et nyt vindue) et visuelt e
 > Fokus adskiller sig fra [fuldskærmstilstand](service-fullscreen-mode.md).
 > 
 ## <a name="focus-mode-for-dashboard-tiles"></a>Fokustilstand for dashboardfelter
-1. Peg på feltet visualisering, vælg ellipsen (...) og vælg **Åbn i fokustilstand** ![](media/service-focus-mode/power-bi-dashboard-focus-mode.png).  
+1. Peg på feltet visualisering, vælg ellipsen (...) og vælg **Åbn i fokustilstand** 
+
+    ![ellipsemenu for felt](media/service-focus-mode/power-bi-dashboard-focus-mode.png).
    
 2. Feltet åbnes og hele rapportlærredet udfyldes. 
 
-   ![](media/service-focus-mode/power-bi-tile-focus.png)
+   ![feltet udfylder rapportlærred](media/service-focus-mode/power-bi-tile-focus.png)
 
 3. Udvid filterruden for at få vist alle de filtre, der er anvendt på dette visuelle element.
    
-   ![](media/service-focus-mode/power-bi-focus-filters.png)
+   ![fokustilstand med ruden Filtre](media/service-focus-mode/power-bi-focus-filters.png)
 
 4. Udforsk yderligere ved at ændre filtrene, og hvis du finder noget interessant, kan du fastgøre det visuelle element til et dashboard.
 
 5. Forlad fokustilstand, og vend tilbage til dashboardet ved at vælge **< Afslut fokustilstand** (i det øverste venstre hjørne af din visual).
    
-    ![](media/service-focus-mode/power-bi-tile-exit-focus.png)    
+    ![afslut fokustilstand](media/service-focus-mode/power-bi-tile-exit-focus.png)    
 
 
 ## <a name="focus-mode-for-report-visualizations"></a>Fokustilstand for rapportvisualiseringer
 
-1. Peg på rapportvisualiseringen, og vælg ikonet **fokustilstand** ![](media/service-focus-mode/pbi_popout.jpg).  
+1. Peg på rapportvisualiseringen, og vælg ikonet **fokustilstand** ![fokustilstandsikon](media/service-focus-mode/pbi_popout.jpg).  
    
-   ![](media/service-focus-mode/power-bi-hover-focus.png)
+   ![fokusikonet vises på feltet](media/service-focus-mode/power-bi-hover-focus.png)
 2. Visualiseringen åbnes og udfylder hele lærredet. 
 
    
-   ![](media/service-focus-mode/power-bi-display-focus-newer2.png)
+   ![visualisering i fokustilstand](media/service-focus-mode/power-bi-display-focus-newer2.png)
 3. Udvid filterruden for at få vist alle de filtre, der er anvendt på dette visuelle element.
    
-   ![](media/service-focus-mode/power-bi-display-focus-filters.png)
+   ![fokustilstand med skærmbilledet Filtre](media/service-focus-mode/power-bi-display-focus-filters.png)
 4. Udforsk yderligere ved at ændre filtrene, og hvis du finder noget interessant, kan du fastgøre det visuelle element til et dashboard.   
 5. Forlad fokustilstand, og vend tilbage til rapporten ved at vælge **Tilbage til rapport** (i det øverste venstre hjørne af din visual). 
    
-    ![](media/service-focus-mode/power-bi-exit-focus-report.png)  
+    ![afslut fokustilstand](media/service-focus-mode/power-bi-exit-focus-report.png)  
 
 ## <a name="go-from-focus-mode-to-full-screen-mode"></a>Gå fra fokustilstand til fuldskærmsvisning
 I fokustilstand kan feltet eller din visual derefter [ses i fuld skærm (tv-tilstand.)](service-fullscreen-mode.md) Fuldskærmsvisning vises uden forstyrrende menuer og navigationsknapper.
