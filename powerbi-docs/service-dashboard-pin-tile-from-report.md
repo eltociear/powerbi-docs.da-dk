@@ -16,13 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 34574cf73d12d91df7a497cf297a9ecda9f5cc57
-ms.sourcegitcommit: 6ea8291cbfcb7847a8d7bc4e2b6abce7eddcd0ea
+LocalizationGroup: Dashboards
+ms.openlocfilehash: 8fbc2ecafb34339a68b4ca5ecd0fa063082644a2
+ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Fastgør et felt til et Power BI-dashboard fra en rapport
 ## <a name="pinning-tiles-from-a-report"></a>Fastgørelse af felter fra en rapport
@@ -45,7 +46,7 @@ Nu skal du oprette dit eget dashboard ved hjælp af en af Power BI-eksempelrappo
 
 1. Peg på den visualisering, du vil fastgøre, og vælg derefter fastgørelsesikonet ![](media/service-dashboard-pin-tile-from-report/pbi_pintile_small.png). Power BI åbner skærmbilledet **Fastgør til dashboard**.
    
-     ![](media/service-dashboard-pin-tile-from-report/pbi_themes2.png)
+     ![Fastgør til dashboardvindue](media/service-dashboard-pin-tile-from-report/pbi_themes2.png)
 2. Beslut, om du vil fastgøre til et eksisterende dashboard eller et nyt dashboard.
    
    * Eksisterende dashboard: Vælg navnet på dashboardet på rullelisten. Dashboards, der er blevet delt med dig, vises ikke på rullelisten.
@@ -55,7 +56,7 @@ Nu skal du oprette dit eget dashboard ved hjælp af en af Power BI-eksempelrappo
    
    En meddelelse om fuldførelse (næsten helt oppe i højre hjørne) giver dig besked om, at visualiseringen er blevet føjet til dit dashboard som et felt.
    
-   ![](media/service-dashboard-pin-tile-from-report/pinsuccess.png)
+   ![meddelelse om fuldførelse](media/service-dashboard-pin-tile-from-report/pinsuccess.png)
 5. Vælg dashboardet med det nye felt fra navigationsruden. Markér feltet for at gå tilbage til rapporten. Eller [rediger feltets visning og funktionsmåde](service-dashboard-edit-tile.md).
 
 ## <a name="pin-an-entire-report-page"></a>Fastgør en hel rapportside

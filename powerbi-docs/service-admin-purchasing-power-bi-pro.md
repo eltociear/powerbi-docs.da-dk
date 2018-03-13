@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/30/2017
 ms.author: maghan
-ms.openlocfilehash: 6019cde4864087c75b22663ff5461790d4e24961
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+LocalizationGroup: Administration
+ms.openlocfilehash: c4fa2e0e2927f8050648884e1833adf618a7d4f5
+ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="purchasing-power-bi-pro"></a>Køb Power BI Pro
 Power BI Pro er til brugere, der publicerer rapporter, deler dashboards, samarbejder med kolleger i arbejdsområder og er engageret i andre relaterede aktiviteter – og gør det muligt at:
@@ -63,7 +64,7 @@ Derefter kan du vælge **Start prøveperiode**.
 > Med tilgængeligheden af Power BI Premium og ændringerne i tilbuddet om det gratis Power BI 1. juni 2017, er du muligvis berettiget til en udvidet Pro-prøveversion. Du kan få mere at vide under [Aktivering af udvidet Pro-prøveversion](service-extended-pro-trial.md).
 
 ### <a name="what-this-looks-like-within-the-service"></a>Sådan ser det ud i tjenesten
-Når du befinder dig i tjenesten, kan du bekræfte, at du har en Pro-prøvekonto, ved at gå til **tandhjulsikonet* og vælge og køre **Administrer personligt lager**.
+Når du befinder dig i tjenesten, kan du bekræfte, at du har en Pro-prøvekonto, ved at gå til **tandhjulsikonet** og vælge **Administrer personligt lager**.
 
 ![](media/service-admin-purchasing-power-bi-pro/powerbi-pro-trial3.png)
 

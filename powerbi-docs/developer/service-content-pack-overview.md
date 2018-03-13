@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/04/2018
+ms.date: 02/20/2018
 ms.author: maghan
-ms.openlocfilehash: f0a50c0aba1a05c55236192a730c3187cb37c055
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 2cc78b3d2a877e465d5f4bdc67f501b7de87f88e
+ms.sourcegitcommit: 20dd809a2ef8c0d6c6f677baadb5f57f41438cbe
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Oversigt over indholdspakkeprogrammet for Power BI-tjenesten
 En indholdspakke er out-of-box-indhold, der gør det muligt for brugerne øjeblikkeligt at få indsigt i data fra en kilde. En indholdspakke fokuserer sædvanligvis på et bestemt forretningsscenario og giver indsigt i data for en rolle, et domæne eller en arbejdsproces.
@@ -64,9 +64,9 @@ Indholdspakker giver dig indsigt og metrikker, der fokuserer på et bestemt forr
 * Overvej at tilbyde mere end kun én indholdspakke til de enkelte scenarier.  
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
-**Kan jeg bygge en indholdspakke til Power BI-tjenesten for et SaaS-tredjepartsprogram, som jeg ikke ejer?**
+**Kan jeg som tredjepart bygge en indholdspakke til Power BI-tjenesten for et SaaS-program, som jeg ikke ejer?**
 
-Nej, vi kræver i øjeblikket en signeret partneraftale med ejeren af SaaS-programmet, før indholdspakken publiceres i tjenesten.
+Vi kræver en signeret partneraftale med ejeren af SaaS-programmet, før en indholdspakke publiceres i tjenesten. Som tredjepart skal du facilitere signeringen af partneraftalen med ejeren af SaaS-programmet.
 
 **Jeg har ikke en offentlig udvikler-API til min tjeneste. Kan jeg stadig bygge en indholdspakke til Power BI-tjenesten, der henter data direkte fra datalageret?**
 
@@ -76,9 +76,13 @@ Nej, indholdspakker til Power BI-tjenesten kræver en udvikler-API, der er tilg�
 
 Indholdspakker til Power BI-tjenesten understøtter alle REST-API- eller OData-feeds. Power BI kan arbejde med flere godkendelsestyper, herunder Basisgodkendelse, OAuth2.0 og API-nøgle. Du kan finde flere oplysninger om de tekniske krav i artiklen om [oprettelse](template-content-pack-authoring.md#dashboard).
 
+**Jeg har en indholdspakke, der er publiceret i Power BI. Hvordan kan jeg opdatere den?**
+
+Publicerede indholdspakker kan opdateres én gang om måneden. Opdateringsanmodninger, der er sendt til [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com) før den sidste dag i den aktuelle måned, publiceres i den første uge i den følgende måned.
+
 **Jeg har flere spørgsmål om tjenesteindholdspakker. Hvordan kan jeg kontakte dig?**
 
-Du kan sende dine spørgsmål via e-mail til pbiservicesapps@microsoft.com
+Du kan sende dine spørgsmål via mail til [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com)
 
 ## <a name="support"></a>Support
 Hvis du får brug for support, mens du udvikler, skal du bruge [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Dette websted overvåges og administreres. Kundehændelser finder hurtigt vej til det relevante team.

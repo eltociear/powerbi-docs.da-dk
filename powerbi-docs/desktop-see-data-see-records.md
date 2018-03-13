@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 02/22/2018
 ms.author: davidi
-ms.openlocfilehash: a61a5d46c2f663ff7e8388a862f5649487504092
-ms.sourcegitcommit: 7249ff35c73adc2d25f2e12bc0147afa1f31c232
+LocalizationGroup: Learn more
+ms.openlocfilehash: c44a5140fe40217aac170abb0b351197803b6299
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="use-see-data-and-see-records-in-power-bi-desktop"></a>Brug Vis data og Vis poster i visualiseringer i Power BI Desktop
 I **Power BI Desktop** kan du analysere alle visualiseringers detaljer og få vist en tekstrepræsentation af dataene eller enkelte dataelementer for en valgt visualisering. Disse funktioner kaldes nogle gange for *klikfrekvens*, *detaljeadgang* eller *detaljeadgang til oplysninger*.
@@ -69,6 +70,9 @@ Du kan også fokuserer på ét dataelement i en visualisering og analysere de un
 Når du har valgt **Vis poster**, fokuserer **Power BI Desktop** på dette enkelte dataelement og dedikerer canvasområdet til at vise dataene for dette element, som vist på følgende billede.
 
 ![](media/desktop-see-data-see-records/see-data-see-records_8.png)
+
+> [!NOTE]
+> Du kan ikke gemme ændringer fra data, der bliver vist (eller redigeret af brugere) i visningen **Se poster**, i en rapport.
 
 Hvis du vil vende tilbage til rapporten, skal du vælge knappen **Tilbage til rapport** i øverste venstre hjørne på canvasset.
 

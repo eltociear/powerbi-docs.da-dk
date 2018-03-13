@@ -16,18 +16,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: 8a818c26a6f9afd134133464b972091faaad093d
-ms.sourcegitcommit: 804ee18b4c892b7dcbd7d7d5d987b16ef16fc2bb
+LocalizationGroup: Reports
+ms.openlocfilehash: 5015886d0314c767bc16fe223c7db91adb0fd2bb
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 Når du åbner en rapport i Power BI-tjenesten, har hver side i rapporten sin egen entydige URL-adresse. Hvis du vil filtrere denne rapportside, kan du bruge ruden Filtre på rapportcanvasset.  Eller du kan føje parametre for forespørgselsstrengen til URL-adressen for at filtrere rapporten. Du har måske en rapport, du vil vise til kollegaer, og du vil filtrere den på forhånd for dem. Det kan du f.eks. gøre ved at starte med URL-standardadressen til rapporten, føje filterparametrene til URL-adressen og derefter sende dem hele URL-adressen via mail.
 
-![](media/service-url-filters/power-bi-report2.png)
+![Power BI-rapport i tjenesten](media/service-url-filters/power-bi-report2.png)
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/WQFtN8nvM4A?list=PLv2BtOtLblH3YE_Ycas5B1GtcoFfJXavO&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -36,7 +37,7 @@ Syntaksen er forholdsvis enkel. Start med URL-adressen til rapporten, tilføj et
 
 URL?filter=***Tabel***/***Felt*** eq '***værdi***'
 
-![](media/service-url-filters/power-bi-filter-urls7b.png)
+![URL-adresse med filter](media/service-url-filters/power-bi-filter-urls7b.png)
 
 * I navnene for **Tabel** og **Felt** skelnes der mellem store og små bogstaver, men ikke i **værdi**.
 * Felter, der er skjult i rapportvisningen, kan stadig filtreres.
@@ -49,7 +50,7 @@ Hvis det stadig er forvirrende, kan du fortsætte med at læse og vi undersøger
 ## <a name="filter-on-a-field"></a>Filtrer på et felt
 Lad os antage, at URL-adressen til rapporten er følgende.
 
-![](media/service-url-filters/power-bi-filter-urls6.png)
+![Starter URL-adresse](media/service-url-filters/power-bi-filter-urls6.png)
 
 Og vi kan se i vores kortvisualisering (ovenfor), at vi har butikker i North Carolina.
 
@@ -61,7 +62,7 @@ Hvis du vil filtrere rapporten, så der kun vises data for butikker i "NC" (Nort
 
 ?filter=Store/Territory eq 'NC'
 
-![](media/service-url-filters/power-bi-filter-urls7.png)
+![URL-adresse med filter](media/service-url-filters/power-bi-filter-urls7.png)
 
 >[!NOTE]
 >*NC* er en værdi, som er lagret i feltet **Territory** i tabellen **Store**.

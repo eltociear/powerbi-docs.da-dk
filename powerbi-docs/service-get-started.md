@@ -16,23 +16,23 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/23/2017
+ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: aacc31c3ebb31bf6f8077a2bf802e8127048a431
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: cbb7697e3d3dbc92c2917b0a80deadfc0b9fd5a0
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="get-started-with-power-bi-service-apppowerbicom"></a>Kom i gang med Power BI-tjenesten (app.powerbi.com)
 Dette selvstudium hjælper dig med at komme i gang med ***Power BI-tjenesten***. Hvis du vil have et overblik over, hvordan Power BI-tjenesten passer sammen med de andre Power BI-tilbud, anbefaler vi kraftigt, at du starter med at læse [Hvad er Power BI](guided-learning/gettingstarted.yml#step-1).
 
-![](media/service-get-started/power-bi-components.png)
+![kunst, der viser relationen mellem Desktop, tjeneste, mobil](media/service-get-started/power-bi-components.png)
 
 Power BI-tjenesten har en gratis version og en Pro-version. Uanset hvilken version du bruger, skal du åbne en browser og skrive app.powerbi.com for at åbne Power BI-tjenesten, *hvis du allerede har en konto*. Hvis du er ny bruger, anbefaler vi, at du starter på www.powerbi.com i stedet. Herfra kan du få mere at vide om Power BI, inden du logger på tjenesten.  Når du er klar til at prøve det, kan du vælge linket, hvor du kan **tilmelde dig gratis**, der vises i øverste højre hjørne. Hvis din administrator allerede har aktiveret Power BI for dig, skal du ikke bruge knappen til gratis tilmelding, men i stedet gå direkte til app.powerbi.com. 
 
-![](media/service-get-started/power-bi-sign-up.png)
+![Log på, eller tilmeld dig gratis](media/service-get-started/power-bi-sign-up.png)
 
 Hvis du ønsker hjælp til Power BI Desktop, kan du se [Kom i gang med Desktop](desktop-getting-started.md). Hvis du ønsker hjælp til Power BI – Mobil, kan du se [Power BI-mobilapps til mobilenheder](mobile-apps-for-mobile-devices.md).
 
@@ -58,27 +58,27 @@ Her er et eksempel på at hente data fra en CSV-fil. Har du lyst til at deltage 
 1. [Log på Power BI](http://www.powerbi.com/). Har du ikke en konto? Helt i orden, du kan tilmelde dig gratis.
 2. Power BI åbnes i browseren. Vælg **Hent data** nederst på venstre navigationslinje.
    
-   ![](media/service-get-started/getdata3.png)
+   ![hent data](media/service-get-started/getdata3.png)
 3. Vælg **Filer**. 
    
-   ![](media/service-get-started/gs1.png)
+   ![hent filer](media/service-get-started/gs1.png)
 4. Gå til filen på din computer, og vælg **Åbn**. Hvis filen er gemt i OneDrive for Business, skal du vælge denne mulighed. Hvis du har gemt den lokalt, skal du vælge **Lokal fil**. 
    
-   ![](media/service-get-started/gs2.png)
+   ![Hent data > Skærmbilledet Filer](media/service-get-started/gs2.png)
 5. Til dette selvstudium vælger vi **Importér** for at tilføje Excel-filen som et datasæt, som vi derefter kan bruge til at oprette rapporter og dashboards. Hvis du vælger **Overfør**, uploades hele Excel-projektmappen til Power BI, hvor du kan åbne og redigere den i Excel online.
    
-   ![](media/service-get-started/power-bi-import.png)
+   ![vælg Importér](media/service-get-started/power-bi-import.png)
 6. Vælg **Vis datasæt**, når dit datasæt er klar, for at åbne det i rapporteditoren. 
 
-    ![](media/service-get-started/power-bi-gs.png)
+    ![Dialogboksen Dit datasæt er parat](media/service-get-started/power-bi-gs.png)
 
     Da vi endnu ikke har oprettet nogen visualiseringer, er rapportcanvasset tomt.
 
-    ![](media/service-get-started/power-bi-report-editor.png)
+    ![tomt rapportlærred](media/service-get-started/power-bi-report-editor.png)
 
 6. Kig nærmere på den øverste menulinje, og læg mærke til, at der er en indstilling for **Læsevisning**. Eftersom du har mulighed for at vælge Læsevisning, betyder det, at du i øjeblikket er i **Redigeringsvisning**. 
 
-    ![](media/service-get-started/power-bi-editing-view.png)
+    ![Indstillingen Læsevisning](media/service-get-started/power-bi-editing-view.png)
 
     Når du er Redigeringsvisning, kan du oprette og redigere dine egne rapporter, fordi du er *ejer* af rapporten altså en *opretter*. Når du deler din rapport med kollegaer, kan de kun interagere med rapporten i Læsevisning, da de er *forbrugere*. Få mere at vide om [Læsevisning og Redigeringsvisning](service-reading-view-and-editing-view.md).
     
@@ -91,49 +91,49 @@ Nu hvor du har forbindelse til data, kan du begynde at udforske.  Vi har fundet 
     
 1. I rapporteditoren bruger vi ruden **Felter** i højre side for at oprette en visualisering.  Markér afkrydsningsfeltet ud for **Gross Sales** og **Date**.
    
-   ![](media/service-get-started/fields.png)
+   ![Listen Felter](media/service-get-started/fields.png)
 
 2. Power BI analyserer dataene og opretter en visualisering.  Hvis du har valgt **Date** først, får du vist en tabel.  Hvis du har valgt **Gross Sales** først, får du vist et diagram. Skift til en anden måde at vise dine data på. Lad os se disse data som et kurvediagram. Vælg ikonet for kurvediagram (også kendt som en skabelon) i **ruden Visualiseringer**.
    
-   ![](media/service-get-started/gettingstart5new.png)
+   ![rapporteditor med valgt ikon](media/service-get-started/gettingstart5new.png)
 
 3. Det ser interessant ud, så lad os *fastgøre* det til et dashboard. Peg på visualiseringen med musen, og vælg **ikonet med tegnestiften**.  Når du fastgør denne visualisering, gemmes den på dashboardet og holdes opdateret, så du kan spore den seneste værdi på et øjeblik.
    
-   ![](media/service-get-started/pinnew.png)
+   ![tegnestiftikon](media/service-get-started/pinnew.png)
 
 5. Da det er en ny rapport, skal du gemme den, før du kan fastgøre en visualisering på et dashboard. Giv din rapport et navn (f.eks. *Salg over tid*), og vælg **Gem og fortsæt**. 
    
-   ![](media/service-get-started/pbi_getstartsaveb4pinnew.png)
+   ![Dialogboksen Gem rapport](media/service-get-started/pbi_getstartsaveb4pinnew.png)
    
 6. Lad os fastgøre kurvediagrammet til et nyt dashboard, og give det navnet "Økonomisk eksempel til selvstudium". 
    
-   ![](media/service-get-started/power-bi-pin.png)
+   ![navngiv rapporten](media/service-get-started/power-bi-pin.png)
    
  1. Vælg **Fastgør**.
    
     En meddelelse om fuldførelse (næsten helt oppe i højre hjørne) giver dig besked om, at visualiseringen er blevet føjet til dit dashboard som et felt.
    
-    ![](media/service-get-started/power-bi-pin-success.png)
+    ![Fastgjort til dashboarddialogboks](media/service-get-started/power-bi-pin-success.png)
 
 8. Vælg **Gå til dashboard** for at se kurvediagrammet fastgjort som et felt til dit helt nye dashboard. Gør dit dashboard endnu bedre ved at tilføje flere visualiseringsfelter og [omdøbe, ændre størrelsen på, sammenkæde og flytte felter](service-dashboard-edit-tile.md).
    
-   ![](media/service-get-started/power-bi-new-dashboard.png)
+   ![dashboard med fastgjort visualisering](media/service-get-started/power-bi-new-dashboard.png)
    
    Vælg det nye felt på dashboardet for til enhver tid at vende tilbage til rapporten. Power BI vender tilbage til rapporteditoren i Læsevisning. Hvis du vil skifte tilbage til Redigeringsvisning, skal du vælge **Rediger rapport** på den øverste menulinje. Når du er i Redigeringsvisning, kan du fortsætte med at udforske og fastgøre felter. 
 
 ## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>Trin 3: Fortsæt med at udforske via Spørgsmål og svar (forespørgsel på naturligt sprog)
 1. Hvis du vil foretage en hurtig udforskning af dine data, kan du prøve at stille et spørgsmål i feltet Spørgsmål og svar. Feltet Spørgsmål og svar er placeret øverst i dit dashboard (**stil et spørgsmål om dataene**) og i den øverste menulinje i din rapport (**stil et spørgsmål**). Prøv for eksempel at skrive "hvilket segment havde den største omsætning".
    
-   ![](media/service-get-started/powerbi-qna.png)
+   ![Spørgsmål og svar om lærred](media/service-get-started/powerbi-qna.png)
 
-2. Spørgsmål og svar søger efter svar og præsenterer dem i form af en visualisering. Vælg fastgørelsesikonet ![](media/service-get-started/pbi_pinicon.png) for også at vise denne visualisering på dit dashboard.
+2. Spørgsmål og svar søger efter svar og præsenterer dem i form af en visualisering. Vælg fastgørelsesikonet ![tegnestiftikon](media/service-get-started/pbi_pinicon.png) for også at vise denne visualisering på dit dashboard.
 3. Fastgør visualiseringen på dashboardet "Økonomisk eksempel til selvstudium".
    
-    ![](media/service-get-started/power-bi-pin2.png)
+    ![Dialogboksen Fastgør til dashboard](media/service-get-started/power-bi-pin2.png)
 
 4. Vend tilbage til dit dashboard, hvor du kan se det nye felt.
 
-   ![](media/service-get-started/power-bi-final-dashboard.png)
+   ![dashboard med fastgjort diagram](media/service-get-started/power-bi-final-dashboard.png)
 
 ## <a name="next-steps"></a>Næste trin
 Er du klar til at prøve mere?  Her er nogle fantastiske måder at udforske Power BI på.

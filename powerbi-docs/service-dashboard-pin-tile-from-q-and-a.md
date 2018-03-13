@@ -15,13 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/17/2018
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: a3df29b478675eeeec876863299c0a33073fb381
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+LocalizationGroup: Dashboards
+ms.openlocfilehash: bd9f49c338afc413107ee811bf9ee33c3e9737a4
+ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="pin-a-tile-to-a-dashboard-from-qa"></a>Fastgør et felt til et dashboard fra Spørgsmål og svar
 ## <a name="how-to-pin-a-tile-from-qa"></a>Sådan fastgør du et felt fra Spørgsmål og svar
@@ -34,16 +35,16 @@ I denne vejledning bruger vi Power BI-tjenesten (app.powerbi.com) til at åbne e
 
 1. Åbn et [dashboard](service-dashboards.md) med mindst ét felt fastgjort fra en rapport. Når du stiller et spørgsmål, leder Power BI efter svaret i de datasæt, hvor et felt er fastgjort til dette dashboard.  Du kan få flere oplysninger i [Hent data](service-get-data.md).
 2. I spørgsmålsfeltet øverst i dit dashboard skal du begynde at indtaste, hvad du vil vide om dine data.  
-   ![](media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png)
+   ![Boks med spørgsmål og svar](media/service-dashboard-pin-tile-from-q-and-a/power-bi-question-box.png)
 3. Mens du f.eks. skriver "last year sales by month and territory"...  
-   ![](media/service-dashboard-pin-tile-from-q-and-a/power-bi-type-q-and-a.png)
+   ![skriv et spørgsmål](media/service-dashboard-pin-tile-from-q-and-a/power-bi-type-q-and-a.png)
 
    giver spørgsmålsfeltet dig forslag.
 4. Hvis du vil føje diagrammet til dit dashboard som et felt, skal du vælge nålen ![](media/service-dashboard-pin-tile-from-q-and-a/pbi_pintile.png) øverst til højre på canvasset. Hvis dashboardet er blevet delt med dig, kan det ikke fastgøres til nogen visualiseringer.
 
 5. Fastgør feltet til et eksisterende dashboard eller et nyt dashboard.
 
-   ![](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-to-dashboard.png)
+   ![Fastgør til dashboarddialogboks](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin-to-dashboard.png)
 
    * Eksisterende dashboard: Vælg navnet på dashboardet på rullelisten. Du vil kun kunne vælge blandt de dashboards, der findes i det aktuelle arbejdsområde.
    * Nyt dashboard: Skriv navnet på det nye dashboard, og det vil blive føjet til dit aktuelle arbejdsområde.
@@ -52,15 +53,15 @@ I denne vejledning bruger vi Power BI-tjenesten (app.powerbi.com) til at åbne e
 
    En meddelelse om fuldførelse (næsten helt oppe i højre hjørne) giver dig besked om, at visualiseringen er blevet føjet til dit dashboard som et felt.  
 
-   ![](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin.png)
+   ![Fastgjort til dashboard](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pin.png)
 7. Vælg **Gå til dashboard** for at se det nye felt. Der kan du [omdøbe, tilpasse størrelsen på, tilføje et link til, flytte feltet m.m.](service-dashboard-edit-tile.md) på dit dashboard.
 
-   ![](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned.png)
+   ![dashboard med felter](media/service-dashboard-pin-tile-from-q-and-a/power-bi-pinned.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 * Når du begynder at indtaste et spørgsmål, begynder Spørgsmål og svar straks at søge efter det bedste svar fra alle de datasæt, der er knyttet til det aktuelle dashboard.  Det "aktuelle dashboard" er det dashboard, der er angivet på den øverste navigationslinje. For eksempel er dette spørgsmål blevet stillet i dashboardet **Retail Analysis Sample**, der er en del af **mihart**-apparbejdsområdet.
 
-  ![](media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar.png)
+  ![brødkrummer](media/service-dashboard-pin-tile-from-q-and-a/power-bi-navbar.png)
 * **Hvordan ved Spørgsmål og svar, hvilke datasæt der skal bruges**?  Spørgsmål og svar har adgang til alle datasæt, der har mindst en visualisering fastgjort til det pågældende dashboard.
 
 * **Hvis feltet med spørgsmål ikke vises**. Rådfør dig med din Power BI-administrator. Administratoren kan deaktivere Spørgsmål og svar.

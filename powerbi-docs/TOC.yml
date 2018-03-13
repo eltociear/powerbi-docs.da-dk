@@ -664,11 +664,13 @@
           href: desktop-ssas-multidimensional.md
         - name: Opret forbindelse til CSV-filer i Power BI Desktop
           href: desktop-connect-csv.md
-        - name: Opret forbindelse til en Impala database i Power BI Desktop (Eksempelvisning)
+        - name: Opret forbindelse til Adobe Analytics i Power BI Desktop (eksempelvisning)
+          href: desktop-connect-csv.md
+        - name: Opret forbindelse til en Impala-database i Power BI Desktop
           href: desktop-connect-impala.md
         - name: Opret forbindelse til et OData-feed i Power BI Desktop
           href: desktop-connect-odata.md
-        - name: Opret forbindelse til en Amazon Redshift database i Power BI Desktop (Eksempelvisning)
+        - name: Opret forbindelse til en Amazon Redshift-database i Power BI Desktop
           href: desktop-connect-redshift.md
         - name: Opret forbindelse til en webside fra Power BI Desktop
           href: desktop-connect-to-web.md
@@ -768,6 +770,8 @@
           href: desktop-slicers.md
         - name: Bogmærker i Power BI
           href: desktop-bookmarks.md
+        - name: Opret brugerdefinerede værktøjstip til rapporter (eksempelvisning)
+          href: desktop-tooltips.md
         - name: Brug rapporttemaer
           href: desktop-report-themes.md
         - name: Brug Hurtigmålinger

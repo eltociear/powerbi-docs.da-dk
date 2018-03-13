@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/5/2017
 ms.author: maghan
-ms.openlocfilehash: 03be98e9aa2bd4d91357cc00208d82bd0116f69c
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 761f6a85d0f975f4178adfce830a6c73578aec73
+ms.sourcegitcommit: 20dd809a2ef8c0d6c6f677baadb5f57f41438cbe
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publicer brugerdefinerede visuals i AppSource
 Få mere at vide om, hvordan du kan udgive din brugerdefinerede visual i AppSource, så andre kan finde og bruge den. Office
@@ -86,7 +86,7 @@ Følg nedenstående trin for at indsende din visualisering.
    * *Titel på indsendelse:* Navnet på din indsendelse i Developer Center.
    * *Version:* Versionsnummeret udfyldes automatisk fra app-pakken til tilføjelsesprogrammet.
    * *Udgivelsesdato (UTC):* Vælg den dato, din app skal frigives i butikken. Hvis du vælger en dato i fremtiden, vil appen ikke være tilgængelig før den dato.
-   * *Kategori:* Den første kategori udfyldes automatisk som "Datavisualisering + BI". Der er den måde, alle brugerdefinerede Power BI-visualiseringer mærkes. Du kan angive op til to ekstra kategorier for at gøre det nemmere for brugerne at søge efter din visualisering.
+   * *Kategori:* Den første kategori udfyldes automatisk som "Datavisualisering + BI". Sådan tagges alle brugerdefinerede Power BI-visualiseringer. Du kan angive op til to ekstra kategorier for at gøre det nemmere for brugerne at søge efter din visualisering
    * *Testnoter:* Dette felt er valgfrit og kan bruges, hvis du vil angive nogle instruktioner til testerne hos Microsoft.
    * *Min app kalder, understøtter, indeholder eller bruger kryptografi eller kryptering:* Undlad at markere dette afkrydsningsfelt.
    * *Gør dette tilføjelsesprogram tilgængeligt i kataloget med Office-tilføjelsesprogrammer på iPad:* Undlad at markere dette afkrydsningsfelt.
@@ -121,7 +121,7 @@ Følg nedenstående trin for at indsende din visualisering.
     > Hvis du vælger en anden indstilling end gratis, eller køb i app er muligt i den indsendte visualisering, vil den blive afvist.
     > 
     > 
-17. Du kan nu vælge **Gem som kladde" og indsende den senere, eller du kan vælge **Send til godkendelse** for at indsende visualiseringen til Office Store med det samme.
+17. Du kan nu vælge **Gem som kladde** og indsende den senere, eller du kan vælge **Send til godkendelse** for at indsende visualiseringen til Office Store med det samme.
 
 ## <a name="tracking-submission-status-and-usage"></a>Se statussen for indsendelsen og brugsdata
 Du kan gennemse [valideringspolitikkerne](https://dev.office.com/officestore/docs/validation-policies#13-power-bi-custom-visuals).

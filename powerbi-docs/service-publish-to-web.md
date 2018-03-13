@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/27/2017
 ms.author: maghan
-ms.openlocfilehash: 890c748c7e7502394fd2e6e024521e99082a1c77
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+LocalizationGroup: Share your work
+ms.openlocfilehash: ee1b403eaa8456266b452ff34814dc4f4059d9a6
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -135,7 +136,7 @@ Brugerdefinerede visuelle elementer, der understøttes i **Publicer på internet
 **Publicer på internettet** understøttes for langt de fleste datakilder og rapporter i Power BI-tjenesten, men følgende understøttes ikke i øjeblikket eller er ikke tilgængelige med Publicer på internettet:
 
 1. Rapporter med sikkerhed på rækkeniveau.
-2. Rapporter med Analysis Services Tabular, der hostes i det lokale miljø.
+2. Rapporter, der bruger en vilkårlig Live Connection-datakilde, herunder Analysis Services Tabular, der hostes af Analysis Service Multidimensional, Azure Analysis Services og Power BI Service i det lokale miljø.
 3. Rapporter, der er delt med dig direkte eller via en organisationsindholdspakke.
 4. Rapporter i en gruppe, hvor du ikke er redigeringsmedlem.
 5. Visuelle "R"-elementer understøttes ikke i øjeblikket i Publicer på internettet-rapporter.

@@ -16,14 +16,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 103edc93dafb9615e08692965258ffc61905baf1
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 972e816dcd833b6ae0e7bd26b760952066aa5ac8
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="recent-content-in-power-bi-service"></a>**Nyligt** indhold i Power BI-tjeneste
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 02/24/2018
 ## <a name="what-is-recent-content"></a>Hvad er nyligt indhold
 Seneste indhold er de seneste elementer, du har læst, op til maksimalt 20 elementer.  Det omfatter: dashboards, rapporter, apps og projektmapper på tværs af alle dine arbejdsområder.
 
-![](media/service-recent/power-bi-recent-screen.png)
+![Vinduet Seneste indhold](media/service-recent/power-bi-recent-screen.png)
 
 Se Amanda demonstrere, hvordan indholdslisterne **Seneste** udfyldes, og følg derefter den trinvise vejledning under videoen for at prøve det selv.
 
@@ -40,11 +40,11 @@ Se Amanda demonstrere, hvordan indholdslisterne **Seneste** udfyldes, og følg d
 ## <a name="display-recent-content"></a>Vis nyligt indhold
 Hvis du vil se de fem elementer, du senest har besøgt, skal du på den venstre navigationslinje vælge pilen til højre for **Seneste**.  Herfra kan du vælge nyligt indhold for at åbne. Kun de fem seneste elementer vises på listen.
 
-![](media/service-recent/power-bi-recent-flyout-new.png)
+![Pop op-vinduet Seneste indhold](media/service-recent/power-bi-recent-flyout-new.png)
 
-Hvis du har mere end fem elementer, du har besøgt for nylig, skal du vælge **Se alle** for at åbne skærmen Seneste (se nedenfor). Du kan også vælge **Seneste**, eller ikonet Seneste ![](media/service-recent/power-bi-recent-icon.png) på venstre navigationslinje.
+Hvis du har mere end fem elementer, du har besøgt for nylig, skal du vælge **Se alle** for at åbne skærmen Seneste (se nedenfor). Du kan også vælge **Seneste**, eller ikonet Seneste ![Seneste-ikon](media/service-recent/power-bi-recent-icon.png) på venstre navigationslinje.
 
-![](media/service-recent/power-bi-recent-list.png)
+![vis alt det nylige indhold](media/service-recent/power-bi-recent-list.png)
 
 Herfra kan du interagere med indholdet, som du kan med de særskilte faner med [**Dashboards**](service-dashboards.md), [**Rapporter**](service-reports.md) og **Projektmapper**, og på skærmen [**Apps**](service-install-use-apps.md).
 

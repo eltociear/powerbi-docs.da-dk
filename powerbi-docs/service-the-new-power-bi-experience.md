@@ -16,19 +16,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/09/2018
+ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 38a3923469d64cc0761ea0e1b1b39005f6904d40
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 516834a652cf1be246439a5f6cfa734b93f744bd
+ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="getting-around-in-power-bi-service"></a>Navigation i Power BI-tjenesten
 ## <a name="the-left-navigation-pane"></a>Den venstre navigationsrude
 
-![](media/service-the-new-power-bi-experience/power-bi-navbar-bigger.png)
+![venstre navigationsrude](media/service-the-new-power-bi-experience/power-bi-navbar-bigger.png)
 
 **Oversigtsvejledning**
 
@@ -64,61 +64,61 @@ Lad os starte med at se på, hvordan det grundlæggende indhold (dashboards, rap
 
 Hvis du har Power BI (gratis), kan du kun se ét arbejdsområde-- **Mit arbejdsområde**.
 
-![](media/service-the-new-power-bi-experience/power-bi-new-nav.gif)
+![kort video om arbejdsområde](media/service-the-new-power-bi-experience/power-bi-new-nav.gif)
 
 ### <a name="favorite-dashboards-reports-and-apps"></a>Foretrukne dashboards, rapporter og apps
 Med **Favoritter** kan du hurtigt få adgang til det indhold, der er vigtigst for dig.  
 
 1. Med dashboardet eller rapporten åben skal du vælge **Favorit** i det øverste højre hjørne.
    
-   ![](media/service-the-new-power-bi-experience/powerbi-dashboard-favorite.png)
+   ![tilføj favorit](media/service-the-new-power-bi-experience/powerbi-dashboard-favorite.png)
    
    **Favoritter** ændres til **Fjern fra Favoritter**, og stjerneikonet bliver gult.
    
-   ![](media/service-the-new-power-bi-experience/power-bi-unfavorite2.png)
+   ![fjern favorit](media/service-the-new-power-bi-experience/power-bi-unfavorite2.png)
 
 2. Til en app skal du vælge **Apps** i venstre navigationsrude, holde musen over appen, og vælg stjernen for at angive den som en favorit.
 
 2. Du kan få vist en liste over alt det indhold, du har tilføjet som favoritter, ved i den venstre navigationsrude at vælge pilen til højre for **Favoritter**. Da den venstre navigationsrude er en permanent funktion i Power BI-tjenesten, har du adgang til denne liste overalt i Power BI-tjenesten.
    
-    ![](media/service-the-new-power-bi-experience/power-bi-favorite-flyout.png)
+    ![pop op-vinduet favoritter](media/service-the-new-power-bi-experience/power-bi-favorite-flyout.png)
    
     Herfra kan du vælge et dashboard, en rapport eller en app, du vil åbne.
 
 3. For at åbne ruden **Favoritter** i den venstre navigationsrude skal du vælge **Favoritter** eller vælge ikonet Favoritter ![](media/service-the-new-power-bi-experience/powerbi-star-icon.png).
    
-   ![](media/service-the-new-power-bi-experience/power-bi-favorites-screen.png)
+   ![åbn skærmbilledet Favoritter](media/service-the-new-power-bi-experience/power-bi-favorites-screen.png)
    
    Her kan du åbne, finde indholdet, fjerne fra favoritter eller dele indhold med kollegaer.
 
 1. En anden måde at markere et dashboard eller en rapport som en favorit er fra fanen **Dashboards** eller **Rapporter** i arbejdsområdet.  Du skal blot åbne arbejdsområdet for at få vist indholdsvisningen og markere stjerneikonet til venstre for navnet.
    
-   ![](media/service-the-new-power-bi-experience/power-bi-favorite-dashboard-new.png)
+   ![markér som favorit](media/service-the-new-power-bi-experience/power-bi-favorite-dashboard-new.png)
 
 Du kan få flere oplysninger i [Favoritter](service-dashboard-favorite.md)
 
 ### <a name="recents"></a>Seneste
 Du kan hurtigt få adgang til det indhold, som du har fået adgang til for nylig, ved at gå til ruden **Seneste**. Dette omfatter indhold fra alle dine arbejdsområder.
 
-  ![](media/service-the-new-power-bi-experience/power-bi-recent-new.png)
+  ![Ruden Seneste](media/service-the-new-power-bi-experience/power-bi-recent-new.png)
 
 På samme måde som med Favoritter kan du hurtigt få adgang til dine seneste opslag overalt i Power BI-tjenesten ved at vælge pilen ud for **Seneste** i venstre navigationsrude.
 
-  ![](media/service-the-new-power-bi-experience/power-bi-recent-flyout-new.png)
+  ![Pop op-vinduet Seneste](media/service-the-new-power-bi-experience/power-bi-recent-flyout-new.png)
 
 Hvis du vil vide mere, kan du se [Seneste i Power BI](service-recent.md)
 
 ### <a name="apps"></a>Apps
 En app er en samling af dashboards og rapporter, der er bygget til at levere vigtige målepunkter samlet på ét sted. Du kan få apps, der er interne i din virksomhed, og også [apps til eksterne tjenester](service-connect-to-services.md), f.eks. Google Analytics og Microsoft Dynamics CRM. 
 
-![](media/service-the-new-power-bi-experience/power-bi-apps.png)
+![Ruden Apps](media/service-the-new-power-bi-experience/power-bi-apps.png)
 
 Du kan få mere at vide i **Apparbejdsområder** (nedenfor) og [Hvad er Power BI-apps](service-install-use-apps.md).
 
 ### <a name="shared-with-me"></a>Delt med mig
 **Delt med mig** er placeringen for alt indhold, som kollegaer har delt med dig.  Filtrer efter dashboardets ejer, brug søgefeltet til at finde ud af, hvad der er relevant, og sortér elementerne efter dato.  Og for delt indhold, som du ofte besøger, er det endnu nemmere at angive dem som favoritter direkte fra visningen **Delt med mig**.
 
-![](media/service-the-new-power-bi-experience/power-bi-shared-new.png)
+![Ruden Delt med mig](media/service-the-new-power-bi-experience/power-bi-shared-new.png)
 
 Hvis du vil vide mere, kan du se [Delt med mig](service-shared-with-me.md)
 
@@ -130,7 +130,7 @@ Hvis du ikke er medlem af et apparbejdsområde eller er en administrator, kan du
 #### <a name="my-workspace"></a>Mit arbejdsområde
 **Mit arbejdsområde** gemmer alt det indhold, som du ejer. Tænk på det som din personlige sandkasse eller arbejdsområde til dit eget indhold. Du kan dele indhold fra Mit arbejdsområde med kolleger. I Mit arbejdsområde er dit indhold organiseret i fire faner: dashboards, rapporter, projektmapper og datasæt.
 
-![](media/service-the-new-power-bi-experience/power-bi-my-workspace2.png)
+![Skærmbilledet Mit arbejdsområde](media/service-the-new-power-bi-experience/power-bi-my-workspace2.png)
 
 #### <a name="app-workspaces"></a>Apparbejdsområder
 Apps og apparbejdsområder er en funktion i Power BI Pro. Hvis du forfatter dashboards og rapporter for andre, skal du bruge apparbejdsområder til dette. Et apparbejdsområde er der, hvor du opretter appen, så hvis du vil oprette en app, skal du først oprette apparbejdsområdet. De er udviklingen i gruppearbejdsområder – midlertidige områder og objektbeholdere til indhold i appen.  Du og dine kollegaer kan samarbejde på dashboards, rapporter og andre typer indhold, som du planlægger at distribuere til et bredere publikum eller endda til hele organisationen.
@@ -139,20 +139,20 @@ Du kan få mere at vide i [Opret og distribuer en app i Power BI](service-create
 
 Som med **Mit arbejdsområde** er dit indhold organiseret i fire faner: dashboards, rapporter, projektmapper og datasæt.
 
-![](media/service-the-new-power-bi-experience/power-bi-app-workspace.png)
+![Apparbejdsområde](media/service-the-new-power-bi-experience/power-bi-app-workspace.png)
 
 Skift arbejdsområder ved at vælge **Arbejdsområder** i venstre navigationsrude.
 
-![](media/service-the-new-power-bi-experience/power-bi-workspacesnew2.png)
+![Vælg et arbejdsområde](media/service-the-new-power-bi-experience/power-bi-workspacesnew2.png)
 
 ### <a name="search-and-sort-content"></a>Søg og sortér indholdet
 Indholdsvisningen gør det lettere at søge efter, filtrere og sortere dit indhold. Hvis du vil søge efter et dashboard, en rapport eller en projektmappe, skal du skrive i søgeområdet. Power BI filtrerer kun det indhold, der har søgestrengen som en del af navnet.
 
-![](media/service-the-new-power-bi-experience/power-bi-search-sortnew.png)
+![søg efter et dashboard](media/service-the-new-power-bi-experience/power-bi-search-sortnew.png)
 
 Du kan også sortere indholdet efter navn eller ejer.  
 
-![](media/service-the-new-power-bi-experience/power-bi-sort.png)
+![sortér indhold](media/service-the-new-power-bi-experience/power-bi-sort.png)
 
 Hvis du vil vide mere, kan du se [Power BI-navigation: søg, sortér, filtrer](service-navigation-search-filter-sort.md)
 

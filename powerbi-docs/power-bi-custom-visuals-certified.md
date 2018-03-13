@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 02/13/2018
 ms.author: mihart
-ms.openlocfilehash: 94a01f1d302d455dbcfe52ce39f5cb0b1ac4aa29
-ms.sourcegitcommit: 05018ef2fe8439a9e8f599c696b8c3cee67e3958
+ms.openlocfilehash: cc50e4e8830aca3951da6004b8ada3913aff28ed
+ms.sourcegitcommit: 743e44fc8730fea0f7149916080b0c6d7eb6359d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="getting-a-custom-visual-certified"></a>Sådan får du en brugerdefineret visualisering *certificeret*
 ## <a name="what-is-meant-by-certified"></a>Hvad menes der med *certificeret*?
@@ -50,7 +50,9 @@ Sådan indsender du en brugerdefineret visualisering til certificering:
    * Titel: Anmodning om certificering af visualisering    
    * Link til GitHub-lageret, der hoster visualiseringens kildekode    
    * Overhold kravene (se ovenfor)    
-   * Bestå gennemgangen af koden og sikkerheden    2. Microsofts team for brugerdefinerede visualiseringer giver dig besked, når din brugerdefinerede visualisering er certificeret og føjet til listen over certificerede visualiseringer (nedenfor) eller afvises med en rapport over de problemer, der skal løses. Det er udviklerens ansvar at vedligeholde en åben kommunikationslinje med Microsoft og opdatere deres godkendte visualiseringer efter behov.
+   * Bestå gennemgangen af koden og sikkerheden    
+
+2. Microsofts team for brugerdefinerede visualiseringer giver dig besked, når din brugerdefinerede visualisering er certificeret og føjet til listen over certificerede visualiseringer (nedenfor) eller afvises med en rapport over de problemer, der skal løses. Det er udviklerens ansvar at vedligeholde en åben kommunikationslinje med Microsoft og opdatere deres godkendte visualiseringer efter behov.
 
 ## <a name="removal-of-power-bi-certified-custom-visuals"></a>Fjernelse af certificerede brugerdefinerede Power BI-visualiseringer
 Microsoft kan, efter eget skøn, fjerne en visualisering fra listen over godkendte visualiseringer.  
@@ -117,6 +119,7 @@ Microsoft kan, efter eget skøn, fjerne en visualisering fra listen over godkend
 | [Afspilningsakse (dynamisk udsnitsværktøj)](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380981) | |
 | [Power-KPI](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381083) | [Video](https://youtu.be/IvfIP3E6-1Q) |
 | [Power-KPI-matrix](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381299) | [Video](https://youtu.be/1enze8pcGzY) |
+| [Kvadrantdiagram fra MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381011) | [Video](https://youtu.be/ppBnyhqWNC0) |
 | [Radardiagram](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380771) | |
 | [Cirkeldiagram fra MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380824) | [Video](https://youtu.be/pDToHDFHnq8) |
 | [Roterende diagram fra MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381007) | [Video](https://youtu.be/d5xBCMmb3hU) |
@@ -129,6 +132,7 @@ Microsoft kan, efter eget skøn, fjerne en visualisering fra listen over godkend
 | [Sunburst](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380767) | |
 | [Heatmaptabel](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380818) | |
 | [Omdrejningstæller](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380937) | [Video](https://youtu.be/C3OXdETbS9o) |
+| [Tekstfilter](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104381309) | |
 | [Tekstombrydning fra MAQ Software](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380826) | |
 | [Termometer](https://appsource.microsoft.com/en-us/product/office/WA104379807) | |
 | [Diagram med tidsserieopdeling](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380897) | |

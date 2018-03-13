@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
-ms.openlocfilehash: d747b357315e275fae2f65d7e4e961f4867807a3
-ms.sourcegitcommit: c24e5d7bd1806e0d637e974b5143ab5125298fc6
+LocalizationGroup: Connect to services
+ms.openlocfilehash: 78f128e870bbf775c805438464342612d5ba8382
+ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="connect-to-marketo-with-power-bi"></a>Opret forbindelse til Marketo med Power BI
 Power BI-indholdspakken til Marketo giver dig mulighed at få indsigt i din Marketo-konto med data om kundeemner og de tilhørende aktiviteter. Når du opretter denne forbindelse, hentes dine data, og du får automatisk et dashboard og relaterede rapporter baseret på disse data.
@@ -78,7 +79,7 @@ Alle datoer er i UTC. Alt efter hvilken tidszone din konto er i, kan datoer vari
 
 **Oplysninger om API-grænser**
 
-Import af data fra Marketo bruger Marketo API'er. Hver Marketo-kunde har en samlet grænse på 10.000 API-kald pr. dag, der er delt mellem alle programmer, som bruger Marketo API'erne. Du må bruge API'erne til andre integrationer samt Power BI-integrationen. Flere oplysninger om API'erne findes i: <http://developers.marketo.com/documentation/rest/>.
+Import af data fra Marketo bruger Marketo API'er. Hver Marketo-kunde har en samlet grænse på 10.000 API-kald pr. dag, der er delt mellem alle programmer, som bruger Marketo API'erne. Du må bruge API'erne til andre integrationer samt Power BI-integrationen. Du kan få flere oplysninger om API'erne her: <http://developers.marketo.com/documentation/rest/>.
 
 Mængden af API-kald, som Power BI foretager til Marketo, afhænger af datamængden på din Marketo-konto. Power BI importerer alle kundeemner og aktiviteter for det sidste år. Her er et eksempel på data fra Marketo og mængden af API-kald, der bruges af Power BI, når du importerer:  
 
