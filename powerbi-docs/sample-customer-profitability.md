@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/28/2018
+ms.date: 03/13/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: c0aaa29a0d933da9fa61d08628766963144e0f76
-ms.sourcegitcommit: c45498071d582dcca264216863906ffaae382523
+ms.openlocfilehash: b7931cb97ff1c409cc2524e31d079dd770160ec4
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/01/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Eksempel på kunderentabilitet til Power BI: Få en rundvisning
 
@@ -40,21 +40,22 @@ Vil du følge med? I dette selvstudium bruges Power BI-tjenesten og eksempelindh
 
 1. Åbn Power BI-tjenesten (app.powerbi.com), og log på.
 2. Vælg **Hent data** i nederste venstre hjørne.
-   
+
     ![](media/sample-datasets/power-bi-get-data.png)
 3. Vælg ikonet **Eksempler** på siden Hent data, der vises.
-   
+
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Vælg **Eksempel på kunderentabilitet**, og vælg derefter **Opret forbindelse**.  
-   
+
    ![Hent data](media/sample-customer-profitability/get-supplier-sample.png)
 5. Power BI importerer indholdspakken og føjer et nyt dashboard, en rapport og et datasæt til dit aktuelle arbejdsområde. Det nye indhold er markeret med en gul stjerne. Brug eksemplerne til give Power BI en testkørsel.  
-   
+
    ![Stjerne](media/sample-customer-profitability/supplier-sample-asterisk.png)
-  
+
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hent .pbix-filen knyttet til dette eksempel
 
-Du kan også hente eksemplet som en pbix-fil, som er beregnet til brug med Power BI Desktop. [Eksempel på kunderentabilitet](<http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer>> Rentabilitetseksempel PBIX.pbix)
+Du kan også hente eksemplet som en pbix-fil, som er beregnet til brug med Power BI Desktop.
+[Customer Profitability Sample](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer Profitability Sample PBIX.pbix)
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hent Excel-projektmappen for dette eksempel
 
@@ -87,13 +88,13 @@ Ved hjælp af felterne i højre side af dashboardet får du et teamscorecard. Ø
 
 ![](media/sample-customer-profitability/power-bi-manager2.png)
 
-- Alle direktører, med undtagelse af Carlos, har allerede overskredet deres salgsmål. Men Carlos' faktiske salg er det højeste. 
+- Alle direktører, med undtagelse af Carlos, har allerede overskredet deres salgsmål. Men Carlos' faktiske salg er det højeste.
 - Annelies BA% er den laveste, men vi kan se en konstant stigning siden marts.
-- Men Valery har oplevet et væsentligt fald i sin BA%. 
-- Og Andrew har haft et svingende år. 
+- Men Valery har oplevet et væsentligt fald i sin BA%.
+- Og Andrew har haft et svingende år.
 
 ## <a name="explore-the-dashboards-underlying-data"></a>Udforsk dashboardets underliggende data
-Dette dashboard indeholder felter, der linker til en rapport og til en Excel-projektmappe. 
+Dette dashboard indeholder felter, der linker til en rapport og til en Excel-projektmappe.
 
 ### <a name="open-the-excel-online-data-source"></a>Åbn Excel Online-datakilden
 To felter på dette dashboard "Mål vs. Faktisk" og "Indtægtsstigning år for år" er fastgjort fra en Excel-projektmappe. Når du vælger et af disse felter, åbnes datakilden i Power BI – i dette tilfælde Excel Online.
@@ -112,14 +113,14 @@ To felter på dette dashboard "Mål vs. Faktisk" og "Indtægtsstigning år for �
 
 4. Fortsæt med at udforske, og hvis du finder noget interessant, skal du vælge **Pinkode** ![](media/sample-customer-profitability/power-bi-excel-pin.png) i øverste højre hjørne for at [fastgøre det til et dashboard](service-dashboard-pin-tile-from-excel.md).
 
-5. Brug pil tilbage i browseren for at vende tilbage til dashboardet. 
+5. Brug pil tilbage i browseren for at vende tilbage til dashboardet.
 
 ### <a name="open-the-underlying-power-bi-report"></a>Åbn den underliggende Power BI-rapport
-De fleste af felterne på dashboardet med Eksempel på kunderentabilitet er fastjort fra den underliggende eksempelrapport Kunderentabilitet. 
+De fleste af felterne på dashboardet med Eksempel på kunderentabilitet er fastjort fra den underliggende eksempelrapport Kunderentabilitet.
 
-1. Vælg et af disse felter for at åbne rappporten i Læsevisning. 
+1. Vælg et af disse felter for at åbne rappporten i Læsevisning.
 
-2. Rapporten indeholder tre sider. Hver fane nederst i rapporten repræsenterer en side. 
+2. Rapporten indeholder tre sider. Hver fane nederst i rapporten repræsenterer en side.
 
     ![](media/sample-customer-profitability/power-bi-report-tabs.png)
 
@@ -155,10 +156,10 @@ Hvor meget varierer lønsomheden efter branche? Hvordan fordeler produkter og ku
 
 På boblediagrammet kigger økonomidirektøren efter de største bobler, fordi de har den største indvirkning på indtægten. Hvis du filtrerer siden efter cheferne ved at klikke på deres navne i områdediagrammet, så er det let at se hver chefs indvirkning efter branchesegment.
 
-* Andrews indvirkning ses i mange forskellige branchesegmenter med meget varierende BA% (mest positiv) og Var%. 
-* Annelies diagram er tilsvarende, bortset fra at hun kun koncentrerer sig om en håndfuld branchesegmenter med fokus på det delstatsmæssige segment og fokus på Gladius-produkt. 
-* Carlos har klar fokus på segmentet for serviceydelser med et godt overskud. Han har markant forbedret varians % for højteknologisegmentet, og et nyt segment for ham, industri, præsterede rigtigt godt sammenlignet med budgettet. 
-* Tina arbejder inden for en håndfuld segmenter og har den højeste BA%, men hendes bobler er generelt små, hvilket viser, at hendes indvirkning på virksomhedens bundlinje er minimal. 
+* Andrews indvirkning ses i mange forskellige branchesegmenter med meget varierende BA% (mest positiv) og Var%.
+* Annelies diagram er tilsvarende, bortset fra at hun kun koncentrerer sig om en håndfuld branchesegmenter med fokus på det delstatsmæssige segment og fokus på Gladius-produkt.
+* Carlos har klar fokus på segmentet for serviceydelser med et godt overskud. Han har markant forbedret varians % for højteknologisegmentet, og et nyt segment for ham, industri, præsterede rigtigt godt sammenlignet med budgettet.
+* Tina arbejder inden for en håndfuld segmenter og har den højeste BA%, men hendes bobler er generelt små, hvilket viser, at hendes indvirkning på virksomhedens bundlinje er minimal.
 * Valery, som kun har ansvaret for et enkelt produkt, arbejder i kun fem branchesegmenter. Hendes indvirkning er sæsonafhængig, men leverer altid en stor boble, hvilket viser, at hun har en stor indvirkning på virksomhedens bundlinje. Er branchen forklaringen på hendes negative præstation?
 
 ### <a name="executive-scorecard"></a>Chefscorecard
@@ -174,9 +175,9 @@ Med hensyn til vores analyse kunne det være gavnligt at få fastlagt, hvilken b
     ![](media/sample-customer-profitability/power-bi-ask-question.png)
 
 3. Skriv **samlet omsætning efter branche for Valery**. Se, hvordan visualiseringen opdateres, mens du skriver spørgsmålet.
-   
+
     ![](media/sample-customer-profitability/power-bi-qna.png)
-   
+
    Distribution er det største indtægtsområde for Valery.
 
 ### <a name="dig-deeper-by-adding-filters"></a>Grav dybere ned ved at tilføje filtre
@@ -184,15 +185,15 @@ Lad os se på branchen *Distribution*.
 
 1. Åbn rapportsiden "Branchemargenanalyse".
 2. Uden at vælge en visualisering på rapportsiden skal du udvide filterruden til højre (hvis den ikke allerede er udvidet). Ruden Filtre bør kun vise filtre på Sideniveau.  
-   
+
    ![](media/sample-customer-profitability/power-bi-filters.png)
 3. Find filteret for **Branche**, og vælg pilen for at udvide listen. Lad os tilføje et sidefilter for Distributionsbranchen. Først skal du rydde alle markeringer ved at rydde afkrydsningfeltet **Vælg alle**. Vælg derefter kun **Distribution.**  
-   
+
    ![](media/sample-customer-profitability/customer7.png)
 4. Områdediagrammet "Bruttoavance efter måned og chefnavn" fortæller os, at kun Valery og Tina har kunder i denne branche, og at Valery kun arbejdede med denne branche fra juni til november.   
-5. Vælg **Tina** og derefter **Valery** i områdediagramforklaringen "Bruttoavance efter måned og chef". Bemærk, at Tinas andel af "Samlet indtægt efter produkt" er meget lille i forhold til Valery. 
+5. Vælg **Tina** og derefter **Valery** i områdediagramforklaringen "Bruttoavance efter måned og chef". Bemærk, at Tinas andel af "Samlet indtægt efter produkt" er meget lille i forhold til Valery.
 6. Hvis du vil se den faktiske indtægt, skal du bruge Spørgsmål og svar til at spørge om **samlet indtægt pr. direktør til distribution efter scenarie**.  
-   
+
      ![](media/sample-customer-profitability/power-bi-qna2.png)
 
     Vi kan ligeledes granske andre brancher og endog føje kunder til vores visuals for at få indsigt i årsagerne til Valerys præstation.
@@ -205,4 +206,3 @@ Du kan også nøjes med at [downloade datasættet (Excel-projektmappe) til dette
 Vi håber, at denne rundtur har vist, hvordan Power BI-dashboards, spørgsmål og svar og rapporter kan give indsigt i kundedata. Nu er det din tur – opret forbindelse til dine egne data. Med Power BI kan du oprette forbindelse til en lang række datakilder. Få mere at vide om, hvordan du [kommer i gang med Power BI](service-get-started.md).
 
 [Tilbage til eksempler i Power BI](sample-datasets.md)  
-

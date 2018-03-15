@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/18/2018
+ms.date: 03/13/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 8ff3470f45ec84798c9fe7302b31a8fe364f18c9
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 8a2b330ee134bf8aeb94315b90e71824ec1eb8ef
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Hvilke eksempeldata er tilgængelige til brug med Power BI?
 Lad os antage, at du ikke kender Power BI og vil afprøve det, men ikke har nogen data.  Eller måske har du et datasæt, men da du ikke (endnu) forstår, hvordan Power BI fungerer, er du bekymret for, om du på en eller anden måde kommer til at beskadige datasættet?
@@ -106,16 +106,16 @@ Indholdspakker er det eneste eksempelformat, der er tilgængeligt fra Power BI. 
 ### <a name="get-and-open-a-sample-content-pack-in-power-bi-service"></a>Hent og åbn en eksempelindholdspakke i Power BI-tjenesten
 1. Åbn Power BI-tjenesten (app.powerbi.com), og log på.
 2. Vælg **Hent data** i nederste venstre hjørne.
-   
+
     ![](media/sample-datasets/power-bi-get-data.png)
 3. Vælg ikonet **Eksempler** på siden Hent data, der vises.
-   
+
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Vælg et af eksemplerne for at åbne en beskrivelse af det pågældende eksempel. Vælg derefter **Opret forbindelse**.  
-   
+
    ![](media/sample-datasets/power-bi-connect.png)
 5. Power BI importerer indholdspakken og føjer et nyt dashboard, en rapport og et datasæt til dit aktuelle arbejdsområde. Det nye indhold er markeret med en gul stjerne. Brug eksemplerne til give Power BI en testkørsel.  
-   
+
    ![](media/sample-datasets/power-bi-asterisk.png)
 
 Nu hvor du har data, er du i gang.  Afprøv nogle af vores selvstudier ved hjælp af eksempelindholdspakkerne eller ved blot at åbne Power BI-tjenesten og udforske det.
@@ -124,7 +124,7 @@ Nu hvor du har data, er du i gang.  Afprøv nogle af vores selvstudier ved hjæl
 Alle eksempelindholdspakkerne er også tilgængelige som en Excel-projektmappe. Excel-projektmapperne er udviklet til brug med Power BI-tjenesten.  
 
 1. Download filerne hver for sig ved hjælp af linkene nedenfor, eller [download en zip-fil med alle eksempelfilerne](http://go.microsoft.com/fwlink/?LinkId=535020). Hvis du er mere erfaren bruger, kan du vælge at downloade Excel-projektmapperne for udforske eller redigere datamodellerne.
-   
+
    * [Retail Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529778)
    * [Supplier Quality Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529779)
    * [Human Resources Sample](http://go.microsoft.com/fwlink/?LinkId=529780)
@@ -134,35 +134,35 @@ Alle eksempelindholdspakkerne er også tilgængelige som en Excel-projektmappe. 
    * [Procurement Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529784)
    * [Sales and Marketing Sample](http://go.microsoft.com/fwlink/?LinkId=529785)
 2. Gem den downloadede fil. Det gør en forskel, hvor du gemmer filen.
-   
+
    * ![](media/sample-datasets/power-bi-local-file2.png)  **Lokal** – Hvis du gemmer filen på et lokalt drev på din computer eller en anden placering i din organisation fra Power BI, kan du importere filen til Power BI. Filen bliver på den lokale harddisk, så det er ikke hele filen, der importeres til Power BI. Der sker det, at et nyt datasæt oprettes på dit Power BI-websted, og data, og i nogle tilfælde datamodellen, indlæses i datasættet. Hvis filen indeholder rapporter, vises de på Power BI-webstedet under Rapporter.
    * ![](media/sample-datasets/power-bi-onedrive-file.png)**OneDrive - Business** – Hvis du har OneDrive for Business, og du logger på med den samme konto, du bruger til at logge på Power BI, er det den klart mest effektive metode at holde dit arbejde i Excel, Power BI eller en .CSV-fil synkroniseret med datasættet, rapporter og dashboards i Power BI. Da både Power BI og OneDrive findes i clouden, opretter Power BI forbindelse til din fil på OneDrive ca. hver time. Hvis der findes ændringer, opdateres datasættet, rapporter og dashboards automatisk i Power BI.
    * ![](media/sample-datasets/power-bi-onedrive-file.png)**OneDrive - personlig** – Hvis du gemmer dine filer på din egen OneDrive-konto, får du mange af de samme fordele som med OneDrive for Business. Den største forskel er, at når du første gang opretter forbindelse til din fil (med funktionen Hent data > Filer > OneDrive - personlig), skal du logge på OneDrive med din Microsoft-konto, hvilket normalt er anderledes, end hvad du bruger til at logge på Power BI. Når du logger på med OneDrive med din Microsoft-konto, skal du sørge for at vælge indstillingen Forbliv logget på. På denne måde kan Power BI oprette forbindelse til din fil ca. hver time og sikre, at dit datasæt i Power BI er synkroniseret.
    * ![](media/sample-datasets/power-bi-sharepoint2.png) **SharePoint - teamwebsteder**    Lagring af dine Power BI-filer på SharePoint – teamwebsteder er stort set det samme som at gemme på OneDrive for Business. Den største forskel er, hvordan du opretter forbindelse til filen fra Power BI. Du kan angive en URL-adresse, eller du kan oprette forbindelse til rodmappen.
 3. Åbn Power BI-tjenesten (app.powerbi.com), og log på.
-   
+
    > [!TIP]
    > Du kan på nuværende tidspunkt have behov for oprette et nyt dashboard og navngive det efter den fil, du planlægger at importere.  Når du importerer Excel-datasættet, vil Power BI ellers ikke kunne oprette et nyt dashboard, der er navngivet efter eksemplet, men vil i stedet føje et felt til det dashboard, der i øjeblikket er åbent. Hvis du vælger dette felt, føres du til datasættets rapport. Det gør ikke den store forskel, da du altid kan oprette et nyt dashboard senere, men du sparer et trin eller to ved at starte med et nyt dashboard.
-   > 
-   > 
+   >
+   >
 4. Vælg **Hent data** i nederste venstre hjørne.
-   
+
     ![](media/sample-datasets/power-bi-get-data.png)
 5. Vælg **Filer > Hent** på siden Hent data, der vises.
-   
+
      ![](media/sample-datasets/power-bi-files.png)
 6. Gå til den placering, hvor du har downloadet og gemt eksemplet.
-   
+
    ![](media/sample-datasets/power-bi-files3.png)
 7. Vælg filen, i dette tilfælde **Procurement Analysis Sample.xlsx**, som blev gemt på OneDrive for Business, og vælg **Opret forbindelse**.
-   
+
    ![](media/sample-datasets/power-bi-connect2.png)
 8. Vælg, om du vil importere dataene eller overføre projektmappen til Power BI, og se dem præcist som i Excel online.
-   
+
     ![](media/sample-datasets/power-bi-import.png)
 9. Hvis du vælger **Importér**, importerer Power BI eksempelprojektmappen og tilføjer den som et nyt datasæt med navnet **Procurement Analysis Sample**.  Hvis projektmappen indeholder Power View-ark, -tabeller eller -områder eller en datamodel, opretter Power BI også en rapport (med det samme navn). Og hvis du ikke allerede har et dashboard åbent, opretter Power BI et nyt dashboard. (Hvis du havde et dashboard åbent, da du klikkede på **Hent data**, får du vist et nyt tomt felt i dette dashboard.  Når du klikker på dette felt, føres du til rapporten for det datasæt, du lige har tilføjet). Det nye indhold er navngivet efter eksemplet og markeret med en gul stjerne.
 10. Når skærmbilledet **Dit datasæt er parat!** vises, skal du vælge **Vis datasæt** eller **Hurtig indsigt** eller blot bruge den venstre navigationslinje i Power BI til at finde og åbne den tilknyttede rapport eller det tilknyttede dashboard.  
-    
+
      ![](media/sample-datasets/power-bi-ready.png)
 
 ### <a name="optional-take-a-look-at-the-excel-samples-from-inside-excel-itself"></a>(Valgfrit) Se på Excel-eksemplerne inde fra Excel
@@ -170,18 +170,18 @@ Alle eksempelindholdspakkerne er også tilgængelige som en Excel-projektmappe. 
 
 * Når du først åbner en eksempelprojektmappe i Excel, kan du få vist to advarsler. Den første siger, at projektmappen er i beskyttet visning. Vælg **Aktivér redigering**. Den anden siger muligvis, at projektmappen har forbindelser til eksterne data. Vælg **Aktivér indhold**.
 * Hver projektmappe indeholder flere ark. Da disse Excel-eksempler alle har mindst ét Power View-ark med visualiseringer, bliver resultatet et datasæt **og** en rapport, når du importerer Excel-filen til Power BI.
-  
+
    Du skal muligvis [aktivere tilføjelsesprogrammet Power View](https://support.office.com/article/Create-a-Power-View-sheet-in-Excel-2013-B23D768D-7586-47FE-97BD-89B80967A405#__toc328591957).
 * Så hvor er de faktiske data? De er i Power Pivot-datamodellen. Vælg **Administrer datamodel** under fanen **PowerPivot** for at se dataene.
-  
-    Kan du ikke se fanen PowerPivot? [Aktivér tilføjelsesprogrammet Power Pivot](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8). 
+
+    Kan du ikke se fanen PowerPivot? [Aktivér tilføjelsesprogrammet Power Pivot](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8).
 * Fanen Info indeholder oplysninger om obviEnce, firmaet, der oprettede eksemplet.
 
 ## <a name="the-power-bi-samples-as-pbix-files"></a>Power BI-eksemplerne som .pbix-filer
 Alle eksempelindholdspakkerne er også tilgængelige som en Power BI .pbix-fil. .pbix-filerne er udviklet til brug med Power BI Desktop.  
 
 1. Download filerne enkeltvist ved hjælp af linkene nedenfor.
-   
+
    * [Retail Analysis Sample](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail Analysis Sample PBIX.pbix)
    * [Supplier Quality Analysis Sample](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix)
    * [Human Resources Sample](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human Resources Sample PBIX.pbix)
@@ -192,7 +192,7 @@ Alle eksempelindholdspakkerne er også tilgængelige som en Power BI .pbix-fil. 
    * [Sales and Marketing Sample](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales and Marketing Sample PBIX.pbix)
 2. Gem den downloadede fil.
 3. Vælg **Filer > Åbn** i Desktop, og naviger til det sted, hvor du har gemt .pbix-eksemplet.
-   
+
    ![](media/sample-datasets/power-bi-desktop-open.png)
 4. Vælg .pbix-filen for at åbne den i Desktop.
 
@@ -204,4 +204,3 @@ Alle eksempelindholdspakkerne er også tilgængelige som en Power BI .pbix-fil. 
 [Datakilder til Power BI](service-get-data.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-
