@@ -20,10 +20,10 @@ ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 3638c99b0dfafa8a90a6c911051e203f3e6037c4
-ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Fastgør en hel rapportside, som et dynamisk felt, til et Power BI-dashboard
 En anden måde at tilføje et nyt [dashboardfelt](service-dashboard-tiles.md) på er ved at fastgøre en hel rapportside. Dette er en nem metode til at fastgøre mere end én visualisering ad gangen.  Når du fastgør en hel side, er felterne også *dynamiske*, og du kan interagere med dem direkte på dashboardet. Og de ændringer, du foretager af visualiseringerne i rapporteditoren, f.eks. ved at tilføje et filter eller ændre de felter, der bruges i diagrammet, afspejles også i dashboardfeltet.  
@@ -50,7 +50,7 @@ Se Amanda fastgøre en dynamisk rapportside til et dashboard, og følg derefter 
    * Eksisterende dashboard: Vælg navnet på dashboardet på rullelisten. Dashboards, der er blevet delt med dig, vises ikke på rullelisten.
    * Nyt dashboard: Skriv navnet på det nye dashboard.
      
-     ![Fastgør til dashboarddialogboks](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page-dialog.png)
+     ![Dialogboksen Fastgør til dashboard](media/service-dashboard-pin-live-tile-from-report/pbi-pin-live-page-dialog.png)
 4. Vælg **Fastgør dynamisk**. En meddelelse om fuldførelse (næsten helt oppe i højre hjørne) giver dig besked om, at siden er blevet føjet til dit dashboard som et felt.
 
 ## <a name="open-the-dashboard-to-see-the-pinned-live-tile"></a>Åbn dashboardet for at se det fastgjorte felt
