@@ -862,6 +862,8 @@
       items:
         - name: Power BI til iOS-apps
           href: mobile-ios-ipad-iphone-apps.md
+        - name: Power BI til Mixed Reality
+          href: mobile-mixed-reality-app.md
         - name: Få vist rapporter og KPI'er i det lokale miljø i mobilappsene
           href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
         - name: Dashboards i mobilappsene

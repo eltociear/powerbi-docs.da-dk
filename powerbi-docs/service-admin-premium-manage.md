@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 10/10/2017
 ms.author: maghan
 LocalizationGroup: Premium
-ms.openlocfilehash: c94cbdbeaf6c7186b21a22c318a4195dbc509da3
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: a6040871652484ad5de70a0d73e14a13742fe56a
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Administrer kapaciteter i Power BI Premium og Power BI Embedded
 Få mere at vide om, hvordan du kan administrere kapaciteter i Power BI Premium og Power BI Embedded, som indeholder dedikerede ressourcer til dit indhold.
@@ -44,7 +44,7 @@ Du kan finde flere oplysninger i [Hvad er Power BI Premium?](service-premium.md)
 Hvis du vil drage fordel af dedikeret kapacitet, skal du købe et abonnement på Power BI Premium i Office 365 Administration eller oprette en Power BI Embedded-ressource på Microsoft Azure-portalen. Du kan få flere oplysninger i nedenstående ressourcer:
 
 * **Power BI Premium:** [Sådan køber du Power BI Premium](service-admin-premium-purchase.md)
-* **Power BI Embedded:** Kommer snart.
+* **Power BI Embedded:** [Opret Power BI Embedded-kapacitet på Azure Portal](https://docs.microsoft.com/en-us/azure/power-bi-embedded/create-capacity)
 
 Når du køber Power BI Premium-varenumre, modtager din lejer det tilsvarende antal v-kerner til at køre kapaciteter. Køb af f.eks. Power BI Premium P3-varenumre giver lejeren adgang til 32 v-kerner.
 
