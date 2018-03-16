@@ -15,21 +15,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 03/07/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3a01f7c8ab679e2820261c7947a9561ff5513d60
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: e7f37a076f913d50f5a6b654aa79b50d61bc5add
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>Opret en QR-kode for et felt i Power BI, som skal bruges i mobilappsene
 QR-koder i Power BI kan forbinde noget i den virkelige verden direkte med relaterede BI-oplysninger &#151; du behøver ikke at navigere eller søge.
 
 Du kan oprette en QR-kode i Power BI-tjenesten for felter i et hvilket som helst dashboard, selv i dashboards, du ikke kan redigere. Anbring derefter QR-koden på en central placering. Du kan f.eks. indsætte den i en mail eller udskrive den og indsætte den på en bestemt placering. 
 
-De kollegaer, du har delt dashboardet med, kan [scanne QR-koden for at få adgang til feltet direkte fra deres mobilenheder](mobile-apps-qr-code.md). De kan bruge enten den QR-kodescanner, der findes i Power BI-appen, eller andre QR-scannere, der er installeret på deres enheder. .
+De kollegaer, du har delt dashboardet med, kan [scanne QR-koden for at få adgang til feltet direkte fra deres mobilenheder](mobile-apps-qr-code.md). De kan bruge enten den QR-kodescanner, der findes i Power BI-appen, eller andre QR-scannere, der er installeret på deres enheder.
+
 
 ## <a name="create-a-qr-code-for-a-tile"></a>Opret en QR-kode for et felt
 1. Åbn et dashboard i Power BI-tjenesten.

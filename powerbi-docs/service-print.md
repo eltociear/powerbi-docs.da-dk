@@ -20,10 +20,10 @@ ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
 ms.openlocfilehash: d8b4175f83415821e1ff9b63e3c53cd8f869b54f
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="printing-from-power-bi-service"></a>Udskriv fra Power BI-tjenesten
 Udskriv et helt dashboard, et dashboardfelt, en rapportside eller en rapportvisualisering fra Power BI-tjenesten. Rapporter kan kun udskrives med én side ad gangen – du kan ikke udskrive hele rapporten på en gang.
