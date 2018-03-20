@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/07/2017
+ms.date: 03/02/2018
 ms.author: maghan
 LocalizationGroup: Administration
-ms.openlocfilehash: 09bd3064c7a694355255cb3cca29ade02986d42e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 55394392de78bcd1a2c38ecf92dd3218c8660132
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B
 
@@ -31,7 +31,14 @@ Power BI kan integreres med Azure Active Directory Business-til-business (Azure 
 > [!VIDEO https://www.youtube.com/embed/xxQWEQ1NnlY]
 
 > [!NOTE]
+> Du skal **aktivere** funktionen [Eksport- og delingsindstillinger](service-admin-portal.md#export-and-sharing-settings) under Lejer-indstillingerne på Power BI administrationsportalen, før du inviterer gæstebrugere.
+
+> [!NOTE]
 > Denne funktion er i øjeblikket ikke tilgængelig med Power BI-mobilapps. Du kan få vist Power BI-indhold, der deles med Azure AD B2B i en browser på en mobil enhed. 
+
+## <a name="who-can-you-invite"></a>Hvem kan du invitere?
+
+Du kan invitere gæstebrugere, der benytter en hvilken som helst mailadresse, f.eks. gmail.com, outlook.com eller hotmail.com. I Azure B2B kaldes disse for "Sociale id'er". Du kan finde flere oplysninger ved at se [Azure B2B](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ## <a name="invite-guest-users"></a>Inviter gæstebrugere
 
@@ -63,8 +70,9 @@ Gæstebrugeren skal vælge **Introduktion** i den invitation, de får på mail. 
 
 ### <a name="ad-hoc-invites"></a>Ad hoc-invitationer
 
-Du kan til enhver tid invitere en ekstern bruger ved at føje vedkommende til en apps adgangsliste, når du publicerer den.
+Du kan når som helst invitere en ekstern bruger ved at føje personen til dit dashboard eller din rapport via delingsbrugergrænsefladen eller din app via adgangssiden.
 
+Her er et eksempel på, hvad du skal gøre, når du inviterer en ekstern bruger til at anvende en app.
 ![Ekstern bruger føjet til appens adgangsliste](media/service-admin-azure-ad-b2b/power-bi-app-access.png)
 
 Gæstebrugeren modtager en mail, der angiver, at appen er blevet delt med vedkommende.
@@ -98,8 +106,9 @@ Gæstebrugeren har allerede en Power BI Pro-licens, der er tildelt i deres lejer
 
 ![Gæstebrugeren medbringer sin egen licens](media/service-admin-azure-ad-b2b/license-approach3.png)
 
-## <a name="limitations"></a>Begrænsninger
+## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
+* Når du inviterer gæstebrugere, som benytter personlige mailkonti, f.eks. gmail.com, outlook.com eller hotmail.com, kan du følge denne [integrerede video](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-redemption-experience) for at se et eksempel på, hvordan en bruger skal tilmelde sig.
 * Eksterne B2B-gæster er udelukkende begrænset til forbrug af indhold. Eksterne B2B-gæster kan få vist apps, dashboards og rapporter samt eksportere data og oprette mailabonnementer på dashboards og rapporter. De kan ikke få adgang til arbejdsområder eller udgive deres eget indhold.
 * Denne funktion er i øjeblikket ikke tilgængelig med Power BI-mobilapps. Du kan få vist Power BI-indhold, der deles med Azure AD B2B i en browser på en mobil enhed.
 * Brug af gæstebrugere med Power BI understøttes ikke i suveræne clouds (offentlige myndigheder).

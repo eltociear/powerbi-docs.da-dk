@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1b8b6dc3932ec4bc1eddd24c91a81a0eaafae479
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 34e756a661ec580e2c0eea8fc53378566eccf305
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="run-r-scripts-in-power-bi-desktop"></a>Kør R-scripts i Power BI Desktop
 Du kan køre R-scripts direkte i **Power BI Desktop** og importere de resulterende datasæt i en datamodel i Power BI Desktop.
@@ -31,7 +31,7 @@ Du kan køre R-scripts direkte i **Power BI Desktop** og importere de resulteren
 Hvis du vil køre R-scripts i Power BI Desktop, skal du installere **R** på din lokale maskine. Du kan downloade og installere **R** gratis fra mange forskellige steder, herunder [downloadsiden for Revolution Open](https://mran.revolutionanalytics.com/download/) og [CRAN Repository](https://cran.r-project.org/bin/windows/base/). Den aktuelle version af R-script i Power BI Desktop understøtter Unicode-tegn og mellemrum (tomme tegn) i installationsstien.
 
 ## <a name="run-r-scripts"></a>Kør R-scripts
-Ved hjælp af få trin kan du køre R-scripts og oprette en datamodel, hvorfra du kan oprette rapporter og dele dem i Power BI-tjenesten. R-script i Power BI Desktop understøtter nu talformater, der indeholder decimaler (.) og kommaer (,).
+Med blot nogle få trin i Power BI Desktop kan du køre R-scripts og oprette en datamodel, hvorfra du kan oprette rapporter og dele dem i Power BI tjenesten. R-script i Power BI Desktop understøtter nu talformater, der indeholder decimaler (.) og kommaer (,).
 
 ### <a name="prepare-an-r-script"></a>Klargør et R-script
 Hvis du vil køre et R-script i Power BI Desktop, skal du oprette scriptet i dit lokale R-udviklingsmiljø og sørge for, at det kører korrekt.
@@ -41,14 +41,14 @@ Hvis du vil køre scriptet i Power BI Desktop, skal du kontrollere, at scriptet 
 Når du forbereder og kører et R-script i Power BI Desktop, er der et par begrænsninger:
 
 * Det er kun datarammer, der importeres, derfor skal du sørge for, at de data, du vil importere til Power BI, er repræsenteret i en dataramme
-* Kolonner, der skrives som Kompleks og Vektor importeres ikke, og de erstattes af fejlværdier i den oprettede tabel.
+* Kolonner, der skrives som Kompleks og Vektor importeres ikke, og de erstattes af fejlværdier i den oprettede tabel
 * Værdier, der ikke er tilgængelige oversættes til NULL-værdier i Power BI Desktop
 * Der opstår timeout for R-scripts, som har kørt i mere end 30 minutter
 * Interaktive kald i R-scriptet, f.eks. afventer brugerinput, stopper kørslen af scriptet
 * Når arbejdsmappen angives i R-scriptet, *skal* du definere en fuld sti til arbejdsmappen i stedet for en relativ sti
 
 ### <a name="run-your-r-script-and-import-data"></a>Kør R-scriptet, og importér data
-1. I Power BI Desktop findes dataconnectoren for R-scriptet under **Hent data**. Hvis du vil køre R-scriptet, skal du vælge **Hent data &gt; Mere...**  og derefter vælge **Andet &gt; R-script** som vist på følgende billede.
+1. I Power BI Desktop findes dataconnectoren for R-scriptet under **Hent data**. Hvis du vil køre R-scriptet, skal du vælge **Hent data &gt; Mere...**  og derefter vælge **Andet &gt; R-script** som vist på følgende billede:
    
    ![](media/desktop-r-scripts/r-scripts-1.png)
 2. Hvis R er installeret på din lokale maskine, vælges den senest installerede version som R-programmet. Du skal blot kopiere scriptet ind i scriptvinduet og vælge **OK**.
@@ -58,9 +58,9 @@ Når du forbereder og kører et R-script i Power BI Desktop, er der et par begr�
    
    ![](media/desktop-r-scripts/r-scripts-3.png)
    
-   Hvis R er installeret men ikke er identificeret, kan du udtrykkeligt angive dets placering i tekstfeltet, som vises, når du udvider **Indstillinger for R-installation**. På billedet ovenfor er stien *C:\Program Files\R\R-3.2.0* udtrykkeligt angivet i tekstfeltet.
+   Hvis R er installeret, men ikke er identificeret, kan du udtrykkeligt angive dets placering i tekstfeltet, som vises, når du udvider **Indstillinger for R-installation**. På billedet ovenfor er stien *C:\Program Files\R\R-3.2.0* udtrykkeligt angivet i tekstfeltet.
    
-   Indstillingerne for R-installation findes centralt i sektionen om R-scripts i dialogboksen Indstillinger. Hvis du vil angive indstillingerne for din R-installation, skal du vælge **Filer > Indstillinger og indstillinger**  og derefter vælge **Indstillinger > R-script**. Hvis der er flere R-installationer tilgængelige, vises der en rullemenu, hvor du kan vælge, hvilken installation der skal bruges.
+   Indstillingerne for R-installation findes centralt i sektionen om R-scripts i dialogboksen Indstillinger. Du angiver indstillingerne for din R-installation ved at vælge **Filer > Indstillinger**  og derefter **Indstillinger > R-script**. Hvis der er flere R-installationer tilgængelige, vises der en rullemenu, hvor du kan vælge, hvilken installation der skal bruges.
    
    ![](media/desktop-r-scripts/r-scripts-4.png)
 4. Vælg **OK** for at køre R-scriptet. Når scriptet køres, kan du vælge de resulterende datarammer, der skal føjes til Power BI-modellen.

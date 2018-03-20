@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/25/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ec124ef4ae34b064e217b3ce646a329d538e4214
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: df45bbaa142b2c476a6391b1c43638e1ee76c3ae
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Brug DirectQuery i Power BI Desktop
 Når du opretter forbindelse til din datakilde i **Power BI Desktop**, er det altid muligt at importere en kopi af dataene til **Power BI Desktop**. For nogle datakilder findes der en anden mulighed: du kan oprette direkte forbindelse til datakilden med **DirectQuery**.
@@ -83,7 +83,7 @@ Der skal tages højde for følgende tre punkter, når der bruges **DirectQuery**
 ## <a name="publish-to-the-power-bi-service"></a>Publicer til Power BI-tjenesten
 De rapporter, der oprettes ved hjælp af **DirectQuery**, kan publiceres til Power BI-tjenesten.
 
-Hvis datakilden ikke behøver **datagatewayen i det lokale miljø**  (**Azure SQL Database**, **Azure SQL Data Warehouse** eller **Redshift**), skal der angives legitimationsoplysninger, før den publicerede rapport vises i Power BI-tjenesten.
+Hvis den anvendte datakilde ikke behøver **datagatewayen i det lokale miljø** (**Azure SQL Database**, **Azure SQL Data Warehouse** eller **Redshift**), skal der angives legitimationsoplysninger, før den publicerede rapport vises i Power BI tjenesten.
 
 Du kan angive legitimationsoplysninger ved at vælge tandhjulsikonet **Indstillinger** i Power BI og derefter vælge **Indstillinger**.
 
@@ -95,7 +95,7 @@ Vinduet **Indstillinger** vises i Power BI. Der skal du vælge fanen **Datasæt*
 
 Indtil der er angivet legitimationsoplysninger, vil det medføre fejl, når der åbnes en publiceret rapport eller et datasæt udforskes med en **DirectQuery**-forbindelse til sådanne datakilder.
 
-For andre datakilder end **Azure SQL Database**, **Azure SQL Data Warehouse** og **Redshift**, der bruger DirectQuery, skal der installeres en **datagateway i det lokale miljø**, og datakilden skal være registreret, for at der kan oprettes en dataforbindelse. Du kan [læse mere om datagateways i det lokale miljø](http://go.microsoft.com/fwlink/p/?LinkID=627094).
+I forbindelse med andre datakilder end **Azure SQL Database**, **Azure SQL Data Warehouse** og **Redshift**, der bruger DirectQuery, skal der installeres en **datagateway i det lokale miljø**, og datakilden skal være registreret, før der kan oprettes en dataforbindelse. Du kan [få mere at vide om datagateways i det lokale miljø](http://go.microsoft.com/fwlink/p/?LinkID=627094).
 
 ## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om **DirectQuery** i følgende ressourcer:

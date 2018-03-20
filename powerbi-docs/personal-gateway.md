@@ -18,15 +18,15 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 06ed973b3b16f5ac8ed8bef484d48af994a4e5f2
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 7a523284bd777d87b7ac42ba7e9ff82ee7bdf623
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personal
+# <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personlig
 > [!NOTE]
-> Der er en ny version af den personlige gateway til Power BI, der kaldes **datagateway i det lokale miljø (personlig tilstand)**. I følgende artikel beskrives den tidligere version af den personlige gateway, der blev kaldt **Power BI Gateway – Personal**, og som udgår og stopper med at virke efter den 31. juli 2017. Du kan finde oplysninger om den nye version af den personlige gateway, herunder, hvordan du installerer den nye version, i [ artiklen **Datagateway i det lokale miljø (personlig tilstand)**](service-gateway-personal-mode.md).
+> Der er en ny version af den personlige gateway til Power BI, som kaldes **datagateway i det lokale miljø (personlig tilstand)**. I følgende artikel beskrives den tidligere version af den personlige gateway, der blev kaldt **Power BI Gateway – Personal**, og som udgår og stopper med at virke efter den 31. juli 2017. Du kan finde oplysninger om den nye version af den personlige gateway, herunder, hvordan du installerer den nye version, i [ artiklen **Datagateway i det lokale miljø (personlig tilstand)**](service-gateway-personal-mode.md).
 > 
 > 
 
@@ -90,7 +90,7 @@ Lad os se nærmere på hvert trin.
 
 ### <a name="download-and-install-a-gateway"></a>Download og installér en gateway
 > [!NOTE]
-> Der er en ny version af den personlige gateway til Power BI, der kaldes **datagateway i det lokale miljø (personlig tilstand)**. I denne artikel beskrives den tidligere version af den personlige gateway, der blev kaldt **Power BI Gateway – Personal**, og som udgår og stopper med at virke efter den 31. juli 2017. Du kan finde oplysninger om den nye version af den personlige gateway, herunder, hvordan du installerer den nye version, i [ artiklen **Datagateway i det lokale miljø (personlig tilstand)**](service-gateway-personal-mode.md).
+> Der er en ny version af den personlige gateway til Power BI, som kaldes **datagateway i det lokale miljø (personlig tilstand)**. I denne artikel beskrives den tidligere version af den personlige gateway, der blev kaldt **Power BI Gateway – Personal**, og som udgår og stopper med at virke efter den 31. juli 2017. Du kan finde oplysninger om den nye version af den personlige gateway, herunder, hvordan du installerer den nye version, i [ artiklen **Datagateway i det lokale miljø (personlig tilstand)**](service-gateway-personal-mode.md).
 > 
 > 
 
@@ -101,7 +101,7 @@ Du skal vælge **Personlig gateway** i stedet for **Datagateway i det lokale mil
 Det er nemt at installere en gateway. Du skal vælge den placering, hvor du vil installere den, og du skal læse og acceptere licensaftalen som for ethvert andet program. Der er dog nogle vigtige ting, du skal vide. Du skal vide, hvilken type computer du installerer gatewayen på, og du skal vide, hvilken type konto du bruger til at logge på Windows på computeren.
 
 > [!NOTE]
-> Gatewayen skal have adgang til datakilden. Hvis din personlige computer ikke kan oprette forbindelse til datakilden, kan du overveje at installere en [datagateway i det lokale miljø](service-gateway-onprem.md) på en computer, der har adgang til datakilden. Et eksempel på dette kan være SQL Server, der er installeret på en virtuel maskine (VM) i Azure. Din personlige computer har muligvis ikke adgang til den virtuelle maskine. I stedet kan du installere datagatewayen i det lokale miljø på den virtuelle maskine og konfigurere en datakilde i Power BI-tjenesten.
+> Gatewayen skal have adgang til datakilden. Hvis din personlige computer ikke kan oprette forbindelse til datakilden, kan du overveje at installere en [datagateway i det lokale miljø](service-gateway-onprem.md) på en computer, der har adgang til datakilden. Et eksempel på dette kan være SQL Server, der er installeret på en virtuel maskine (VM) i Azure. Din personlige computer har muligvis ikke adgang til den virtuelle maskine. Du kan i stedet installere datagatewayen i det lokale miljø på den virtuelle maskine og konfigurere en datakilde i Power BI tjenesten.
 > 
 > 
 

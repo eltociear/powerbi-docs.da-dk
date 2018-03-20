@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/21/2017
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 634dc4efe6553a9de91716552a21563f5405fa69
-ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
+ms.openlocfilehash: 868d05891d1b2cb24dfae60b7f3bee405ff7d08f
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Bedste praksis for design af rapporter og visuals
 <!-- Shared newnav Include -->
@@ -53,7 +53,7 @@ Oprettelsen af en rapport begynder, før du opretter din første visual, fordi e
 
 Svaret på disse spørgsmål driver dit design. Alle rapporter fortæller en historie. Sørg for, at denne historie stemmer overens med de forretningsmæssige behov. Det kan være fristende at tilføje visuals, der viser dramatisk indsigt, men hvis denne indsigt ikke stemmer overens med de forretningsmæssige behov, så er rapporten ikke nyttig – og faktisk kan disse visuals ende med at være distraherende for brugerne. Du kan også komme ud for, at de oplysninger, der skal bruges for at træffe denne beslutning, ikke kan aflæses ud fra disse data. Kan denne rapport bruges til at måle, hvad der er behov for?
 
-Rapporter kan bruges til at overvåge, afdække, spore, forudsige, måle, administrere, teste og meget mere. Hvis det forretningsmæssige behov f.eks. er en salgsrapport, der måler resultater, kan du oprette en rapport, der ser på det aktuelle salg, sammenligner det med tidligere salg, sammenligner med konkurrenter og medtager nogle KPI'er, der udløser beskeder.  Måske lan læseren dykke ned i salgstallene for at undersøge store aftaler eller problemer med forsyningskæden, der kan have indflydelse på salget.  En anden mulighed er at se salg efter butik, område, produkt, sæson og meget mere.
+Rapporter kan bruges til at overvåge, afdække, spore, forudsige, måle, administrere, teste og meget mere. Hvis det forretningsmæssige behov f.eks. er en salgsrapport, der måler resultater, kan du oprette en rapport, der ser på det aktuelle salg, sammenligner det med tidligere salg, sammenligner med konkurrenter og medtager nogle KPI'er, der udløser beskeder.  Måske lan læseren dykke ned i salgstallene for at undersøge store aftaler eller problemer med forsyningskæden, der kan have indflydelse på salget.  En anden detailudledning er at se salg efter butik, område, produkt, sæson og meget mere.
 
 Kend kunderne til rapporten, og design en rapport, det benytter velkendt terminologi og leverer data med et detalje- og kompleksitetsniveau, som passer til kundernes vidensniveau. Har du mere end én type kunde? Én størrelse passer ikke altid alle. Design separate rapportsider baseret på ekspertise, og sørg for at navngive alle sider tydeligt, så kunderne kan selv kan finde rundt. En anden mulighed er at bruge udsnitsværktøjer, så kunderne selv kan skræddersy siden til dem selv. Involver kunden i planlægningsfasen for at undgå at komme til at lave det, du tror, kunden har brug for.  Vær forberedt på at starte forfra og gentage.
 

@@ -18,16 +18,16 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 316272f77b55fa7a803bffb596b7bad6da93cced
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 998f33eb2251814839a2d456da2624981e6114ab
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="import-excel-workbooks-into-power-bi-desktop"></a>Importér Excel-projektmapper til Power BI Desktop
-Med **Power BI Desktop** kan du nemt importere Excel-projektmapper, der indeholder forespørgsler fra Power-forespørgsel, Power Pivot-modeller og regneark fra Power-visning, til Power BI Desktop. Rapporter og visualiseringer oprettes automatisk på basis af Excel-projektmappen, og når de er importeret, kan du fortsætte med at forbedre og tilpasse rapporterne i Power BI Desktop ved hjælp af de eksisterende funktioner og nye funktioner, der udgives sammen de månedlige opdateringer af Power BI Desktop.
+Med **Power BI Desktop** kan du nemt importere Excel projektmapper, der indeholder forespørgsler fra Power-forespørgsel, Power Pivot-modeller og regneark fra Power-visning, til Power BI Desktop. Rapporter og visualiseringer oprettes automatisk på basis af Excel-projektmappen, og når de er importeret, kan du fortsætte med at forbedre og tilpasse rapporterne i Power BI Desktop ved hjælp af de eksisterende funktioner og nye funktioner, der udgives sammen de månedlige opdateringer af Power BI Desktop.
 
-Fremover planlægger vi at udvide kommunikationen mellem Excel og Power BI Desktop (f.eks. import/eksport). Den aktuelle mulighed for at importere projektmapper til Power BI Desktop gør det muligt for eksisterende Excel-brugere at komme i gang med Power BI Desktop.
+Planen er fremover at udvide kommunikationen mellem Excel og Power BI Desktop (f.eks. import/eksport). Den aktuelle mulighed for at importere projektmapper til Power BI Desktop gør det muligt for eksisterende Excel brugere at komme i gang med Power BI Desktop.
 
 ## <a name="how-do-i-import-an-excel-workbook"></a>Hvordan importerer jeg en Excel-projektmappe?
 Hvis du vil importere en projektmappe, skal du gå til Power BI Desktop og vælge **Filer -\> Importér -\> Indhold i Excel-projektmappe**.
@@ -41,7 +41,7 @@ Der vises et vindue, hvor du kan vælge den projektmappe, der skal importeres. D
 > 
 > 
 
-Når en projektmappe er markeret, analyseres projektmappen i Power BI Desktop, og den konverteres til en Power BI Desktop-fil (.pbix). Bemærk, at dette kun skal udføres én gang. Når Power BI Desktop-filen er oprettet med disse trin, har Power BI Desktop-filen ingen afhængigheder til den oprindelige Excel-projektmappe og kan redigeres eller ændres (og gemmes og deles), uden at det påvirker den oprindelige projektmappe.
+Når en projektmappe er markeret, analyseres projektmappen i Power BI Desktop, og den konverteres til en Power BI Desktop-fil (.pbix). Denne handling skal kun udføres én gang. Når Power BI Desktop-filen er oprettet ved hjælp af disse trin, er Power BI Desktop-filen ikke afhængig af den oprindelige Excel projektmappe og kan redigeres eller ændres (og gemmes og deles), uden at det påvirker den oprindelige projektmappe.
 
 ![](media/desktop-import-excel-workbooks/importexceltopbi_2.png)
 
@@ -62,18 +62,17 @@ Power BI Desktop kan importere følgende elementer, der kaldes også *objekter*,
 | --- | --- |
 | Forespørgsler i Power-forespørgsel |Alle forespørgsler i Power-forespørgsel fra Excel konverteres til forespørgsler i Power BI Desktop. Hvis der var defineret forespørgselsgrupper i Excel-projektmappen, replikeres samme organisering i Power BI Desktop. Alle forespørgsler indlæses, medmindre de er indstillet til "Opret kun forbindelse" i Excel. Funktionsmåden Indlæs kan tilpasses i dialogboksen **Egenskaber** under fanen **Hjem** i **forespørgselseditoren** i Power BI Desktop. |
 | Eksterne dataforbindelser i Power Pivot |Alle eksterne dataforbindelser i Power Pivot konverteres til forespørgsler i Power BI Desktop. |
-| Sammenkædede tabeller eller aktuelle projektmappetabeller |Hvis der er en regnearkstabel i Excel, der er knyttet til datamodellen eller knyttet til en forespørgsel (ved hjælp af *tabellen From* eller funktionen *Excel.CurrentWorkbook()* i M), vises følgende indstillinger     1. Importér tabellen til Power BI Desktop-filen. Dette er et engangsøjebliksbillede af data, og herefter kan du ikke redigere dataene i tabellen i Power BI Desktop. Der er en størrelsesbegrænsning på 1 million tegn (i alt, med alle kolonneoverskrifter og celler) for tabeller, der er oprettet ved hjælp af denne indstilling.    2. Bevar forbindelsen til den oprindelige projektmappe. Du kan også bevare forbindelsen til den oprindelige Excel-projektmappe, så henter Power BI Desktop det seneste indhold i denne tabel, hver gang den opdateres, på samme måde som enhver anden forespørgsel, der oprettes i forhold til en Excel-projektmappe i Power BI Desktop. |
-| Beregnede kolonner, målinger, datakategorier og datarelationer for datamodeller |Disse objekter for datamodeller konverteres til de tilsvarende objekter i Power BI Desktop. Bemærk, at der er visse datakategorier, som ikke er tilgængelige i Power BI Desktop endnu, f.eks. **Billede**. I disse tilfælde nulstilles oplysningerne om datakategorien for de pågældende kolonner. |
-| Regneark i Power-visning |Der oprettes en ny rapportside for alle regneark i Power-visning i Excel. Navnet på og rækkefølgen af disse rapportsider stemmer overens med den oprindelige Excel-projektmappe. |
+| Sammenkædede tabeller eller aktuelle projektmappetabeller |Hvis der er en regnearkstabel i Excel, der er knyttet til datamodellen eller knyttet til en forespørgsel (ved hjælp af *tabellen From* eller funktionen *Excel.CurrentWorkbook()* i M), vises følgende indstillinger:
+  1. Importér tabellen til Power BI Desktop-filen. Denne tabel er et engangsøjebliksbillede af dataene, og herefter kan du ikke redigere dataene i tabellen i Power BI Desktop. Der er en størrelsesbegrænsning på 1 million tegn (i alt, med alle kolonneoverskrifter og celler) for tabeller, der er oprettet ved hjælp af denne indstilling.    
+  2. Bevar forbindelsen til den oprindelige projektmappe. Du kan også bevare forbindelsen til den oprindelige Excel-projektmappe, så henter Power BI Desktop det seneste indhold i denne tabel, hver gang den opdateres, på samme måde som enhver anden forespørgsel, der oprettes i forhold til en Excel-projektmappe i Power BI Desktop. | | Beregnede kolonner i datamodellen, målinger, KPI'er, datakategorier og relationer |Disse datamodelobjekter konverteres til et tilsvarende objekt i Power BI Desktop. Bemærk, at visse datakategorier ikke er tilgængelige i Power BI Desktop endnu, f.eks. **Billede**. I disse tilfælde nulstilles oplysningerne om datakategorien for de pågældende kolonner. | | Regneark i Power-visning |Der oprettes en ny rapportside for hvert regneark i Power-visning i Excel. Navnet på og rækkefølgen af disse rapportsider stemmer overens med den oprindelige Excel-projektmappe. |
 
 ## <a name="are-there-any-limitations-to-importing-a-workbook"></a>Er der ingen begrænsninger for import af en projektmappe?
-Der er et par begrænsninger for import af en projektmappe i Power BI Desktop, og de er følgende:
+Der er et par begrænsninger for import af en projektmappe i Power BI Desktop, som du kan se på følgende liste:
 
 1. **Eksterne forbindelser til Analysis Services-tabelmodeller:** I Excel 2013 er det muligt at oprette forbindelse til SQL Server Analysis Services-tabelmodeller og oprette rapporter i Power-visning ud fra disse modeller uden at skulle importere dataene. Denne type forbindelse understøttes i øjeblikket ikke i forbindelse med import af Excel-projektmapper til Power BI Desktop, men vil være tilgængelig i en kommende opdatering. I mellemtiden skal du genskabe disse eksterne forbindelser i Power BI Desktop.
-2. **KPI'er:** Denne type datamodelobjekt understøttes i øjeblikket ikke i Power BI Desktop. Derfor springes KPI'er over i forbindelse med import af en Excel-projektmappe til Power BI Desktop.
-3. **Hierarkier:** Denne type datamodelobjekt understøttes i øjeblikket ikke i Power BI Desktop. Derfor springes hierarkier over i forbindelse med import af en Excel-projektmappe til Power BI Desktop.
-4. **Binære datakolonner:** Denne type datamodelkolonne understøttes i øjeblikket ikke i Power BI Desktop. Binære datakolonner fjernes fra den tabel, der oprettes i Power BI Desktop.
-5. **Ikke-understøttede elementer i Power-visning:** Der er nogle funktioner i Power-visning, der ikke er tilgængelige i Power BI Desktop endnu, f.eks. temaer eller visse typer af visualiseringer (punktdiagram med afspilningsakse, funktionsmåder for detailudledning osv.). Disse ikke-understøttede visualiseringer medfører meddelelser om *ikke-understøttet visualisering* på deres tilsvarende placeringer i Power BI Desktop-rapporten, som du kan slette eller omkonfigurere efter behov.
-6. **Navngivne områder, der bruger**  ***tabellen From*** **i Power-forespørgsel, eller som bruger**  ***Excel.CurrentWorkbook*** **i M:** Import af disse navngivne områdedata i Power BI Desktop understøttes i øjeblikket ikke, men er planlagt som en opdatering til Power BI Desktop. Disse navngivne områder indlæses i øjeblikket i Power BI Desktop som en forbindelse til den eksterne Excel-projektmappe.
-7. **PowerPivot til SSRS:** Eksterne PowerPivot-forbindelser til SSRS (SQL Server Reporting Services) understøttes ikke i øjeblikket, da datakilden i øjeblikket ikke er tilgængelig i Power BI Desktop.
+2. **Hierarkier:** Denne type datamodelobjekt understøttes i øjeblikket ikke i Power BI Desktop. Derfor springes hierarkier over i forbindelse med import af en Excel-projektmappe til Power BI Desktop.
+3. **Binære datakolonner:** Denne type datamodelkolonne understøttes i øjeblikket ikke i Power BI Desktop. Binære datakolonner fjernes fra den tabel, der oprettes i Power BI Desktop.
+4. **Ikke-understøttede elementer i Power-visning:** Der er nogle funktioner i Power-visning, der ikke er tilgængelige i Power BI Desktop endnu, f.eks. temaer eller visse typer af visualiseringer (punktdiagram med afspilningsakse, funktionsmåder for detailudledning osv.). Disse ikke-understøttede visualiseringer medfører meddelelser om *ikke-understøttet visualisering* på deres tilsvarende placeringer i Power BI Desktop-rapporten, som du kan slette eller omkonfigurere efter behov.
+5. **Navngivne områder, der bruger**  ***tabellen From*** **i Power-forespørgsel, eller som bruger**  ***Excel.CurrentWorkbook*** **i M:** Import af disse navngivne områdedata i Power BI Desktop understøttes i øjeblikket ikke, men er planlagt som en opdatering til Power BI Desktop. Disse navngivne områder indlæses i øjeblikket i Power BI Desktop som en forbindelse til den eksterne Excel-projektmappe.
+6. **PowerPivot til SSRS:** Eksterne PowerPivot-forbindelser til SSRS (SQL Server Reporting Services) understøttes ikke i øjeblikket, da datakilden i øjeblikket ikke er tilgængelig i Power BI Desktop.
 

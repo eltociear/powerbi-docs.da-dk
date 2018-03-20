@@ -19,11 +19,11 @@ ms.workload: powerbi
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 516834a652cf1be246439a5f6cfa734b93f744bd
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.openlocfilehash: 82aedf3defc1a3154c884c18b90dc27195847e9a
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="getting-around-in-power-bi-service"></a>Navigation i Power BI-tjenesten
 ## <a name="the-left-navigation-pane"></a>Den venstre navigationsrude
@@ -98,7 +98,7 @@ Med **Favoritter** kan du hurtigt få adgang til det indhold, der er vigtigst fo
 Du kan få flere oplysninger i [Favoritter](service-dashboard-favorite.md)
 
 ### <a name="recents"></a>Seneste
-Du kan hurtigt få adgang til det indhold, som du har fået adgang til for nylig, ved at gå til ruden **Seneste**. Dette omfatter indhold fra alle dine arbejdsområder.
+Få hurtigt vist det indhold, du har fået adgang til for nylig, ved at gå til ruden **Seneste**. Dette omfatter indhold fra alle dine arbejdsområder.
 
   ![Ruden Seneste](media/service-the-new-power-bi-experience/power-bi-recent-new.png)
 

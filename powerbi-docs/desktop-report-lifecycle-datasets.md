@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fff56b220579a19505337f2ac9697cd3e61e83cb
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 948c87e3e594ebb0ca2f75f747f7dd6fe36e18e7
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Opret forbindelse til datasæt i Power BI-tjenesten fra Power BI Desktop
 Du kan oprette en direkte forbindelse til et delt datasæt i Power Bi-tjenesten og oprette mange forskellige rapporter fra det samme datasæt. Dette betyder, at du kan forfine din datamodel i Power Bi Desktop, udgive den til Power BI-tjenesten, hvorefter du og andre kan oprette mange forskellige rapporter (i separate .pbix-filer) fra den samme fælles datamodel. Denne funktion kaldes **Direkte forbindelse til Power BI-tjeneste**.
@@ -116,8 +116,8 @@ Når du bruger **Direkte forbindelse til Power BI-tjeneste**, er der et par begr
 * Da det er en direkte forbindelse, er venstrenavigation og modeller deaktiveret, ligesom funktionsmåden når der er oprettet forbindelse til **SQL Server Analysis Services**.
 * Da det er en direkte forbindelse er RLS (sikkerhed på række- og rolleniveau), OneDrive for Business og andre lignende forbindelsesfunktionsmåder tvunget, ligesom de er det, når der er oprettet forbindelse til **SQL Server Analysis Services**.
 * Når du vælger, hvilket datasæt der skal oprettes forbindelse til i **Power BI-tjenesten**, anvendes søgefeltet kun for arbejdsområder, der er udvidet.
-* Hvis du ændrer den originale delte -pbix-fil, overskrives datasættet og rapporten, der er delt i **Power BI-tjenesten**.
-* Du kan ikke erstatte den oprindeligt delte rapport. Forsøg på at gøre dette resulterer i en advarsel, der beder dig om at omdøbe filen og udgive den.
+* Hvis ejeren ændrer den originale delte .pbix-fil, overskrives datasættet og rapporten, der er delt i **Power BI tjenesten**.
+* Medlemmer af et arbejdsområde kan ikke erstatte den oprindeligt delte rapport. Forsøg på at gøre dette resulterer i en advarsel, der beder dig om at omdøbe filen og udgive den.
 * Hvis du sletter det delte datasæt i **Power BI-tjenesten**, så vil andre **Power BI Desktop** (.pbix-filer) ikke længere fungere korrekt eller vise deres værdier.
 * Hvad angår indholdspakker skal du først oprette en kopi af en indholdspakke, inden den bruges som basis for at dele en .pbix-rapport eller et .pbix-datasæt til **Power BI-tjenesten**.
 * Hvad angår indholdspakker fra *Min organisation* kan du, når de er kopieret, ikke erstatte rapporten, der er oprettet på tjenesten, og/eller en rapport, der er oprettet som en del af kopiering af en indholdspakke med en direkte forbindelse. Forsøg på at gøre dette resulterer i en advarsel, der beder dig om at omdøbe filen og udgive den. I denne situation kan du kun erstatte udgivne rapporter, der er direkte forbundne.

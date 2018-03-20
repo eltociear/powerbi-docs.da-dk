@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/25/2018
 ms.author: maggies
-ms.openlocfilehash: e824c1e582b8ed3cf0953b59b790e90271a6d38c
-ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
+ms.openlocfilehash: 9a2f381ea97fb62d85841cbfcace8352007dd60b
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-an-iphone-or-ipod-touch"></a>Kom i gang med Power BI-mobilappen på iPhone eller iPod Touch
 Microsoft Power BI til iOS-appen på iPhone eller iPod Touch leverer BI-mobiloplevelsen til Power BI, Power BI-rapportserver og Reporting Services. Få vist og interagér med dit firmas dashboards i det lokale miljø og i clouden overalt med direkte, berøringsfølsom mobiladgang. Udforsk data i dashboards, og del dem med dine kollegaer i mails eller sms-beskeder. Og hold dig ajour med dine mest tidsfølsomme data på dit [Apple Watch](mobile-apple-watch.md).  
@@ -31,11 +31,11 @@ Microsoft Power BI til iOS-appen på iPhone eller iPod Touch leverer BI-mobilopl
 Du kan oprette Power BI-rapporter i Power BI Desktop og publicere dem:
 
 * [Publicer dem til Power BI-tjenesten](service-get-started.md), og opret dashboards.
-* [Publicer dem lokalt til Power BI-rapportserver](report-server/quickstart-create-powerbi-report.md).
+* [Publicer dem i det lokale miljø på Power BI rapportserver](report-server/quickstart-create-powerbi-report.md).
 
-Derefter interagerer du med dine dashboards og rapporter i Power BI-appen til iPhone, hvad enten det er i det lokale miljø eller i clouden.
+Derefter interagerer du med dine dashboards og rapporter i Power BI appen til iPhone, hvad enten det er i det lokale miljø eller i cloudmiljøet.
 
-Se [nyheder i Power Bi-mobilappsene](mobile-whats-new-in-the-mobile-apps.md).
+Find ud af, [hvad der er nyt i Power Bi-mobilapperne](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="download-the-app"></a>Download appen
 [Download iOS-appen](http://go.microsoft.com/fwlink/?LinkId=522062 "Download iPhone-appen") fra Apple App Store til din iPhone eller iPod Touch.
@@ -140,4 +140,5 @@ Her er nogle andre ting, du kan gøre i iPhone-appen med dashboards og rapporter
 ### <a name="see-also"></a>Se også
 * [Kom i gang med Power BI](service-get-started.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+
 

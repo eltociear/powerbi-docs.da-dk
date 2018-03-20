@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 572f64cc0e6ba97c62c9a088c60cf3887bacc6ae
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: aba599f4ab5bcc9d1f5c0446e4476a169ca5e2c4
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="using-directquery-in-power-bi"></a>Brug af DirectQuery i Power BI
 Du kan oprette forbindelse til alle mulige forskellige datakilder, når du bruger **Power BI Desktop** eller **Power BI-tjenesten**, og du kan oprette disse dataforbindelser på forskellige måder. Du kan enten *importere* data i Power BI, hvilket er den mest almindelige måde at hente data på, eller du kan oprette forbindelse direkte til dataene i det oprindelige kildelager, der også er kendt som **DirectQuery**. I denne artikel beskrives **DirectQuery** og dens egenskaber, herunder følgende emner:
@@ -75,7 +75,7 @@ Når du bruger **Get Data** i **Power BI Desktop** til at oprette forbindelse ti
 * Ved indlæsning importeres der dog ingen data i Power BI-lageret. Når du bygger en visualisering i **Power BI Desktop**, sendes forespørgsler i stedet til den underliggende datakilde for at hente de nødvendige data. Den tid, det derefter tager at opdatere visualiseringen, afhænger af den underliggende datakildes ydeevne.
 * Eventuelle ændringer i de underliggende data afspejles ikke i eksisterende visualiseringer med det samme. Det er stadig nødvendigt at opdatere, hvorefter de nødvendige forespørgsler sendes igen for hver enkelt visualisering, og derefter opdateres visualiseringen efter behov.
 * Ved publicering af rapporten i **Power BI-tjenesten**, oprettes der igen et datasæt i Power BI-tjenesten, som det var tilfældet i forbindelse med import. Der inkluderes dog *ingen data* i det pågældende datasæt.
-* Når du åbner en eksisterende rapport i **Power BI-tjenesten**, eller du opretter en ny, sendes der igen en forespørgsel til den underliggende datakilde for at hente de nødvendige data. Afhængigt af placeringen af den oprindelige datakilde kan det være nødvendigt at konfigurere en datagateway i det lokale miljø, lige som den er påkrævet i importtilstanden, hvis dataene opdateres.
+* Når du åbner en eksisterende rapport i **Power BI-tjenesten**, eller du opretter en ny, sendes der igen en forespørgsel til den underliggende datakilde for at hente de nødvendige data. Afhængigt af placeringen af den oprindelige datakilde kan det være nødvendigt at konfigurere en datagateway i det lokale miljø, ligesom den er påkrævet i importtilstanden, hvis dataene opdateres.
 * Visualiseringer eller hele rapportsider kan fastgøres som dashboardfelter. Hvis du vil sikre dig, at åbningen af et dashboard sker hurtigt, skal felterne automatisk opdateres i henhold til en tidsplan (f.eks. hver time). Opdateringsfrekvensen kan styres, så den afspejler, hvor ofte dataene ændres, og hvor vigtigt det er at få vist de allernyeste data. Derfor afspejler felterne dataene ved den seneste opdatering, når du åbner et dashboard, og ikke nødvendigvis de allernyeste ændringer, der er foretaget af den underliggende kilde. Et åbent dashboard kan altid opdateres, så du sikrer dig, at det er ajour.    
 
 ### <a name="live-connections"></a>Liveforbindelser
@@ -88,7 +88,7 @@ Den situation, der er beskrevet i den foregående sektion gælder også i forbin
 
 Funktionsmåden for rapporter i forbindelse med SSAS ved publicering til **Power BI-tjenesten** svarer til DirectQuery-rapporter på følgende måde:
 
-* Når du åbner en eksisterende rapport i **Power BI-tjenesten** eller opretter en ny rapport, sendes der en forespørgsel til den underliggende SSAS-kilde (som muligvis kræver en datagateway i det lokale miljø)
+* Når du åbner en eksisterende rapport i **Power BI tjenesten** eller opretter en ny rapport, sendes der en forespørgsel til den underliggende SSAS-kilde (som muligvis kræver en datagateway i det lokale miljø)
 * Dashboardfelterne opdateres automatisk efter en tidsplan (f.eks hver time, eller hvilken frekvens, der nu er defineret)
 
 Der er dog også vigtige forskelle, bl.a. at identiteten af den bruger, der åbner rapporten, altid sendes til den underliggende SSAS-datakilde for dynamiske forbindelser.

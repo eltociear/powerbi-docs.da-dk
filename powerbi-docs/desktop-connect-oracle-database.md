@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6308b2e201b669bf17ee636677232b365d62e332
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 4126a5f4fc7b8a398d39cad7c14e87e179ab3175
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="connect-to-an-oracle-database"></a>Opret forbindelse til en Oracle-database
 Hvis du vil oprette forbindelse til en Oracle-database med **Power BI Desktop**, skal den korrekte Oracle-klientsoftware være installeret på den computer, der kører Power BI Desktop. Hvilken Oracle-klientsoftware du bruger, afhænger af, hvilken version af Power BI Desktop du har installeret – **32-bit** versionen eller **64-bit** versionen.
@@ -30,7 +30,7 @@ Hvis du vil oprette forbindelse til en Oracle-database med **Power BI Desktop**,
 **Understøttede versioner**: Oracle 9 og nyere, Oracle-klientsoftware 8.1.7 og nyere.
 
 ## <a name="determining-which-version-of-power-bi-desktop-is-installed"></a>Sådan finder du ud af, hvilken version af Power BI Desktop der er installeret
-For at finde ud af, hvilken version af Power BI Desktop der er installeret, skal du vælge **Filer > Om** og derefter kigge på linjen **Version:**. På følgende billede er der installeret en 64-bit version af Power BI Desktop:
+For at finde ud af, hvilken version af Power BI Desktop der er installeret, skal du vælge **Filer > Hjælp > Om** og derefter kigge på linjen **Version:**. På følgende billede er der installeret en 64-bit version af Power BI Desktop:
 
 ![](media/desktop-connect-oracle-database/connect-oracle-database_1.png)
 
@@ -44,7 +44,7 @@ Til **64-bit** versioner af Power BI Desktop skal du bruge følgende link til at
 * [64-bit ODAC 12c version 4 (12.1.0.2.4) til Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
 ## <a name="connect-to-an-oracle-database"></a>Opret forbindelse til en Oracle-database
-Når den rette Oracle-klientdriver er installeret, kan du oprette forbindelse til en Oracle-database. Benyt følgende fremgangsmåde for at oprette forbindelse.
+Når den rette Oracle-klientdriver er installeret, kan du oprette forbindelse til en Oracle-database. Benyt følgende fremgangsmåde for at oprette forbindelse:
 
 1. Åbn vinduet Hent data, og vælg **Database > Oracle-database**
    

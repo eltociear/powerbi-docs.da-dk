@@ -17,11 +17,11 @@ ms.workload: powerbi
 ms.date: 02/22/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d711e2276f2ac170ed54152d54c023261ca9c0bc
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: c2f2fcca7c1d915f94960824d32a5d4f18a978b6
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Opret og publicer apps med dashboards og rapporter i Power BI
 
@@ -174,6 +174,8 @@ Her er nogle ting, du skal huske på, når du pusher apps til slutbrugerne:
 * Hvis brugeren ikke kan se appen på Apps-listen med det samme, skal browseren opdateres eller lukkes og genåbnes.
 
 * Prøv ikke at overvælde brugerne. Pas på ikke at pushe for mange apps, da brugerne skal have en opfattelse af, at de forudinstallerede apps er nyttige for dem. Det er bedst at kontrollere, hvem der kan pushe apps til slutbrugerne, for at koordinere timingen. Du kan etablere en kontakt i organisationen i forbindelse med push af apps til slutbrugerne.
+
+* Gæstebrugere, der ikke har accepteret en invitation, får ikke installeret apps automatisk.  
 
 ## <a name="unpublish-an-app"></a>Annuller publicering af en app
 Et medlem af et apparbejdsområde kan annullerer publicering af appen.

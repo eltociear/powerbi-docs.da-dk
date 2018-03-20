@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 85ac8564efca953d338bef9aab8b59699d992c19
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: ff28f5d43b065ae798e2e9f275c8e8b59e9ee1ce
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 Med Power BI Desktop kan du oprette forbindelse til data fra mange forskellige kilder. Der findes en komplet liste over tilgængelige datakilder nederst på siden.
@@ -78,13 +78,14 @@ Kategorien **Database** indeholder følgende dataforbindelser:
 * Oracle-database
 * IBM DB2-database
 * IBM Informix-database (beta)
-* IBM Netezza (beta)
+* IBM Netezza
 * MySQL-database
 * PostgreSQL-database
 * Sybase-database
 * Teradata-database
 * SAP HANA-database
-* SAP Business Warehouse-server
+* SAP Business Warehouse Application Server
+* SAP Business Warehouse Message Server (beta)
 * Amazon Redshift
 * Impala
 * Google BigQuery (beta)
@@ -103,13 +104,14 @@ Kategorien **Azure** indeholder følgende dataforbindelser:
 
 * Azure SQL Database
 * Azure SQL Data Warehouse
-* Azure Analysis Services-database (beta)
+* Azure Analysis Services-database
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB (beta)
 * Azure Data Lake Store
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark (beta)
+* HDInsight Interactive Query (beta)
 
 På følgende billede vises vinduet **Hent data** for **Azure**.
 
@@ -121,6 +123,7 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * SharePoint Online-liste
 * Microsoft Exchange Online
 * Dynamics 365 (online)
+* Dynamics NAV (beta)
 * Dynamics 365 for Financials (beta)
 * Common Data Service (beta)
 * Microsoft Azure Consumption Insights (beta)
@@ -128,23 +131,24 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Salesforce-objekter
 * Salesforce-rapporter
 * Google Analytics
+* Adobe Analytics
 * appFigures (beta)
 * comScore Digital Analytix (beta)
 * Dynamics 365 for Customer Insights (beta)
+* Data.World – Get Dataset (beta)
 * Facebook
 * GitHub (beta)
-* Kusto (beta)
 * MailChimp (beta)
+* Marketo (beta)
 * Mixpanel (beta)
-* Planview Enterprise (beta)
-* Projectplace (beta)
+* Planview Enterprise One – PRM (beta)
+* Planview Projectplace (beta)
 * QuickBooks Online (beta)
 * Smartsheet
 * SparkPost (beta)
-* SQL Sentry (beta)
 * Stripe (beta)
 * SweetIQ (beta)
-* Troux (beta)
+* Planview Enterprise One – CMT (beta)
 * Twilio (beta)
 * tyGraph (beta)
 * Webtrends (beta)
@@ -157,6 +161,7 @@ På følgende billede vises vinduet **Hent data** for **Onlinetjenester**.
 Kategorien **Andet** indeholder følgende dataforbindelser:
 
 * Vertica (beta)
+* Kusto (beta)
 * Web
 * SharePoint-liste
 * OData-feed
@@ -203,4 +208,3 @@ Du kan gøre mange forskellige ting med Power BI Desktop. Du kan finde flere opl
 * [Datatyper i Power BI Desktop](desktop-data-types.md)
 * [Udform og kombiner data med Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Almindelige forespørgselsopgaver i Power BI Desktop](desktop-common-query-tasks.md)    
-

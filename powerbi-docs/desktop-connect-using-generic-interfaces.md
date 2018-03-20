@@ -18,21 +18,21 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e4415f4315400e7ff11c356badee19eebace82b7
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5c28a53f4421c88bfc6237813ce6fdb76cc160cd
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="connect-to-data-using-generic-interfaces-in-power-bi-desktop"></a>Opret forbindelse til data med generiske grænseflader i Power BI Desktop
-Du kan oprette forbindelse til en lang række forskellige datakilder i **Power BI Desktop** ved hjælp af de indbyggede dataforbindelser, der strækker sig lige fra **Access-databaser** til **Zendesk**-ressourcer, som vist i vinduet **Hent data**. Du kan også oprette forbindelse til mange *andre* typer datakilder, hvilket giver dig endnu flere muligheder for at oprette forbindelse, ved hjælp af de generiske grænseflader (f.eks **ODBC** eller **REST API'er**), der er indbygget i **Power BI Desktop**.
+Du kan oprette forbindelse til en lang række forskellige datakilder i **Power BI Desktop** ved hjælp af de indbyggede dataforbindelser, der strækker sig lige fra **Access-databaser** til **Zendesk**-ressourcer, som vist i vinduet **Hent data**. Du kan også oprette forbindelse til mange *andre* typer datakilder for at få endnu flere muligheder for at oprette forbindelse ved hjælp af de generiske grænseflader (f.eks **ODBC** eller **REST API'er**), der er indbygget i **Power BI Desktop**.
 
 ![](media/desktop-connect-using-generic-interfaces/generic-data-interfaces_1.png)
 
 ## <a name="power-bi-desktop-data-interfaces"></a>Datagrænseflader i Power BI Desktop
 **Power BI Desktop** indeholder en stadig stigende samling af dataforbindelser, der er udviklet til at oprette forbindelse til en bestemt datakilde. Dataforbindelsen **SharePoint-liste** leverer f.eks. specifikke felter og understøttende oplysninger under den forbindelsessekvens, der er udviklet til **SharePoint-lister**. Det samme er gældende for de andre datakilder, der findes i det vindue, der vises, når du vælger **Hent data > Flere...**  (som vist i det forrige billede).
 
-Desuden kan du i **Power BI Desktop** oprette forbindelse til de datakilder, der ikke er specifikt identificeret på listerne **Hent Data**, ved hjælp af en af følgende generiske datagrænseflader:
+Desuden kan du i **Power BI Desktop** oprette forbindelse til de datakilder, der ikke er identificeret på listerne **Hent data**, ved hjælp af en af følgende generiske datagrænseflader:
 
 * **ODBC**
 * **OLE DB**
@@ -44,7 +44,7 @@ Ved at angive de relevante parametre i de forbindelsesvinduer, som disse generis
 
 Du kan finde en liste over de datakilder, disse generiske grænseflader kan få adgang til, i de følgende afsnit.
 
-Kan du ikke finde den datakilde, du vil bruge med **Power BI Desktop**? [Fortæl os](https://ideas.powerbi.com/) det, så vi kan føje den til listen over ideer og anmodninger.
+Kan du ikke finde den datakilde, du vil bruge med **Power BI Desktop**? Indsend din idé til Power BI teamets [liste over idéer og anmodninger](https://ideas.powerbi.com/).
 
 ## <a name="data-sources-accessible-through-odbc"></a>Datakilder, der er tilgængelige via ODBC
 Med **ODBC**-connectoren i **Power BI Desktop** kan du importere data fra en ODBC-driver fra en tredjepart ved at angive et **datakildenavn** eller en  *forbindelsesstreng*. Du kan også vælge at angive en SQL-sætning, som skal køres mod ODBC-driveren.
@@ -114,7 +114,7 @@ Følgende liste indeholder nogle eksempler på de datakilder, som **Power BI Des
 | R Script |Statistiske R-filer |[R Script-vejledning fra CRAN](https://cran.r-project.org/doc/manuals/R-data.html) |
 
 ## <a name="next-steps"></a>Næste trin
-Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Hvis du vil have mere at vide om datakilder, kan du se følgende ressourcer:
+Du kan oprette forbindelse til mange forskellige typer datakilder ved hjælp af **Power BI Desktop**. Du kan finde flere oplysninger om datakilder i følgende ressourcer:
 
 * [Introduktion til Power BI Desktop](desktop-getting-started.md)
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)

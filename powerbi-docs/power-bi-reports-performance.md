@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/12/2017
 ms.author: v-mamcge
 LocalizationGroup: Reports
-ms.openlocfilehash: 5f22d39c17ddbbd06a9ed38eeb162d1106607105
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: e584f48f5d3650821aac094ebfde7eef5261cc36
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="power-bi-performance-best-practices"></a>Power BI-ydeevne – bedste praksis 
 Denne artikel giver vejledning i at oprette hurtige og pålidelige rapporter i Power BI.  
@@ -130,11 +130,11 @@ Du kan identificere de forespørgsler, der bruger den længste CPU-tid, som igen
 
 ## <a name="gateway-best-practices"></a>Gateway – bedste praksisser 
 
-Gatewayen i det lokale miljø er et fantastisk værktøj til at forbinde Power BI-tjenesten med dataene i dit lokale miljø. Men samtidig kan dårlig planlægning gøre, at den bliver en flaskehals for rapporters ydeevne. Dette er tilfældet for DirectQuery-/direkte forbindelse-datasæt, hvor alle forespørgsler og forespørgselssvar passerer igennem gatewayen. Nedenfor nævnes nogle bedste praksisser til sikring af højtydende gateways: 
+Datagatewayen i det lokale miljø er et fantastisk værktøj til at forbinde Power BI tjenesten med dataene i dit lokale miljø. Men samtidig kan dårlig planlægning gøre, at den bliver en flaskehals for rapporters ydeevne. Dette er tilfældet for DirectQuery-/direkte forbindelse-datasæt, hvor alle forespørgsler og forespørgselssvar passerer igennem gatewayen. Nedenfor nævnes nogle bedste praksisser til sikring af højtydende gateways: 
  
 - **Brug Enterprise-tilstand**, i modsætning til personlig tilstand. 
 - **Anbefalede hardwarespecifikationer for gatewayen** – 8 CPU-kerner, 16 GB RAM. 
-- **Konfigurer overvågning** – konfigurer overvågning af ydeevnen på gatewaymaskinen for at se, om gatewayen er ved at blive overbelastet og en flaskehals. Du kan finde flere oplysninger i [Problemløsning af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md).
+- **Konfigurer overvågning** – konfigurer overvågning af ydeevnen på gatewaymaskinen for at se, om gatewayen er ved at blive overbelastet og en flaskehals. Du kan finde flere oplysninger i [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md).
 - **Skaler op eller skaler ud** – Hvis gatewayen rent faktisk er ved at blive en flaskehals, så bør du overveje at skalere op (dvs. at flytte gatewayen til en stærkere maskine med mere CPU og RAM) eller skalere ud (f.eks. fordele datasæt til forskellige gateways). 
 - **Separat import vs. DirectQuery** – hvis du skalerer ud, skal du overveje at adskille gatewayene, der er ansvarlige for import i forhold til dem, der er ansvarlige for DirectQuery. 
  

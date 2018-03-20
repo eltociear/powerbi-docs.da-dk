@@ -18,18 +18,18 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d15aeaf90e748b9ba14a0160042d2db4f36d3150
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 71a2908357164cf93870800947ae5fa0aa04c75c
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datatyper i Power BI Desktop
 I denne artikel beskrives de datatyper, der understøttes i Power BI Desktop, og DAX-udtryk (Data Analysis Expressions). 
 
 Når du indlæser data i Power BI Desktop, vil programmet forsøge at konvertere datatypen for kildekolonnen til en datatype, der bedre understøtter mere effektiv lagring, mere effektive beregninger samt datavisualisering. Hvis en kolonne med værdier, som du importerer fra Excel, for eksempel ikke indeholder decimalværdier, konverterer Power BI Desktop hele kolonnen med data til en heltal-datatype, hvilket er mere velegnet til lagring af heltal.
 
-Dette er vigtigt, da nogle DAX-funktioner har særlige krav til datatyper. I mange tilfælde konverterer DAX implicit datatypen for dig, men der er nogle tilfælde hvor det ikke sker.  Hvis DAX-funktionen f.eks. har brug for datatypen Date (Dato), og datatypen for kolonnen er Text (Tekst), fungerer DAX-funktionen ikke korrekt.  Det er derfor både vigtigt og nyttigt at anvende den korrekte datatype for en kolonne. Implicitte konverteringer beskrives senere i denne artikel.
+Dette koncept er vigtigt, da der er specielle krav til datatyper for nogle DAX-funktioner. I mange tilfælde konverterer DAX implicit datatypen for dig, men der er nogle tilfælde hvor det ikke sker.  Hvis DAX-funktionen f.eks. har brug for datatypen Date (Dato), og datatypen for kolonnen er Text (Tekst), fungerer DAX-funktionen ikke korrekt.  Det er derfor både vigtigt og nyttigt at anvende den korrekte datatype for en kolonne. Implicitte konverteringer beskrives senere i denne artikel.
 
 ## <a name="determine-and-specify-a-columns-data-type"></a>Angiv en kolonnes datatype
 I Power BI Desktop kan du angive en kolonnes datatype i forespørgselseditoren eller i datavisningen eller rapportvisningen:
@@ -42,7 +42,7 @@ I Power BI Desktop kan du angive en kolonnes datatype i forespørgselseditoren e
 
 ![](media/desktop-data-types/pbiddatatypesindatareportview.png)
 
-Rullelisten Datatype i forespørgselseditoren har to datatyper, der ikke i øjeblikket er til stede i data- eller rapportvisningen: **Date/Time/Timezone** (Dato/klokkeslæt/tidszone) og **Duration** (Varighed). Når en kolonne med disse datatyper indlæses i modellen og vises i data- eller rapportvisingen, konverteres en kolonne med datatypen Date/Time/Timezone (Dato/klokkeslæt/tidszone) til datatypen Date/Time (Dato/klokkeslæt), og en kolonne med datatypen Duration (Varighed) konverteres til et decimaltal.
+Rullelisten Datatype i forespørgselseditoren har to datatyper, der ikke i øjeblikket er til stede i data- eller rapportvisningen: **Date/Time/Timezone** (Dato/klokkeslæt/tidszone) og **Duration** (Varighed). Når en kolonne med disse datatyper indlæses i modellen og vises i data- eller rapportvisningen, konverteres en kolonne med datatypen Dato/klokkeslæt/tidszone til datatypen Dato/klokkeslæt, og en kolonne med datatypen Varighed konverteres til et decimaltal.
 
 ### <a name="number-types"></a>Taltyper
 Power BI Desktop understøtter tre taltyper:
@@ -67,7 +67,7 @@ Power BI Desktop understøtter fem dato/klokkeslæt-datatyper i forespørgselsvi
 **Duration** – repræsenterer et tidsrum. Den konverteres til en decimaltalstype, når den indlæses i modellen.  Som decimaltalstype kan den lægges til eller trækkes fra et dato/klokkeslæt-felt med korrekte resultater.  Som decimaltalstype kan du nemt bruge den i visuelle effekter, der viser størrelse.
 
 ### <a name="text-type"></a>Teksttype
-**Text** – en datastreng med et Unicode-tegn. Kan være strenge, tal eller datoer, der er repræsenteret i et tekstformat. Den maksimale strenglængde er 268.435.456 Unicode-tegn (256 megategn) eller 536.870.912 byte.
+**Text** – en datastreng med et Unicode-tegn. Det kan være strenge, tal eller datoer, der repræsenteres i et tekstformat. Den maksimale strenglængde er 268.435.456 Unicode-tegn (256 megategn) eller 536.870.912 byte.
 
 ### <a name="truefalse-type"></a>True/false-type
 **True/False** – en boolesk værdi, der er enten true eller false.
@@ -125,7 +125,7 @@ Hvis en dato f.eks. bruges i en subtraktionshandling med en anden datatype, konv
 > 
 > 
 
-**Multiplikation(*)**
+**Multiplikation (*)**
 
 | Operator(\*) | INTEGER | CURRENCY | REAL | Date/time |
 | --- | --- | --- | --- | --- |
@@ -155,7 +155,7 @@ Følgende DAX-udtryk illustrerer denne funktionsmåde:
 
 =IF(FALSE()\>"true","Expression is true", "Expression is false"), returneres "Expression is true"
 
-=IF("12"\>12,"Expression is true", "Expression is false"), returneres "Expression is true".
+=IF("12"\>12,"Expression is true", "Expression is false"), returneres "Expression is true"
 
 =IF("12"=12,"Expression is true", "Expression is false"), returneres "Expression is false"
 
@@ -169,7 +169,7 @@ Konverteringer udføres implicit for numeriske typer eller dato/klokkeslæt-type
 | Date/time |REAL |REAL |REAL |Date/Time |
 
 ### <a name="handling-blanks-empty-strings-and-zero-values"></a>Håndtering af tomme værdier, tomme strenge og nulværdier
-I DAX repræsenteres en null-værdi, tom værdi, en tom celle eller en manglende værdi med den samme værditype, nemlig BLANK. Du kan generere tomme værdier ved hjælp af funktionen BLANK og undersøge, om der er tomme værdier ved hjælp af den logiske funktion ISBLANK.
+I DAX repræsenteres en null-værdi, en tom værdi, en tom celle eller en manglende værdi med den samme nye værditype, nemlig BLANK. Du kan generere tomme værdier ved hjælp af funktionen BLANK og undersøge, om der er tomme værdier ved hjælp af den logiske funktion ISBLANK.
 
 Håndteringen af tomme værdier i handlinger som f.eks. addition eller sammenkædning afhænger af den pågældende funktion. I følgende tabel vises en oversigt over forskellen mellem DAX- og Microsoft Excel-formler, i forhold til hvordan tomme celler håndteres.
 

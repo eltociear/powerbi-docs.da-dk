@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/09/2017
+ms.date: 03/08/2018
 ms.author: maghan
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: c97f60e39d68060c8eb3396bac4eb7725dab9c86
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: adc78cceb8a6b6edd06896e53a1a64cf0d28b2b8
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="using-an-alternate-email-address"></a>Brug en alternativ mailadresse
 Som standard bruges den mailadresse, du brugte ved tilmeldingen til Power BI, til at sende dig opdateringer omkring aktiviteter i Power BI.  Hvis nogen for eksempel sender en invitation til dig om deling af indhold, sendes den til denne mailadresse.
@@ -45,6 +45,19 @@ Nogle gange vil du have disse mails sendt til en alternativ mailadresse i stedet
 > Når du ændrer denne indstilling, er det stadig den oprindelige mailadresse, der bruges til at sende oplysninger om opdateringer af tjenesten, nyhedsbreve og andre typer kampagneoplysninger.  Disse sendes altid til den mailadresse, du oprindeligt brugte ved tilmeldingen til Power BI.
 > 
 > 
+
+## <a name="updating-through-azure-active-directory"></a>Opdatering via Azure Active Directory
+Når du skal registrere et integreringstoken til AAD (Azure Active Directory) til Power BI, kan du bruge tre forskellige typer mails. De tre forskellige typer er:
+
+* hovedmailadressen, der er knyttet til en brugers AAD-konto
+* UPN-mailadressen (UserPrincipalName – brugerens hovednavn)
+* matrixattributten for den "anden" mailadresse
+
+Power BI vælger, hvilken mail der skal bruges, på baggrund af følgende kriterier:
+1.  Hvis mailattributten i AAD-lejerens brugerobjekt er til stede, så bruger Power BI denne mailattribut til mailadressen
+2.  Hvis UPN-mailen *ikke* er en mailadresse på domænet **\*.onmicrosoft.com** (oplysningerne efter "@"-symbolet), så bruger Power BI denne mailattribut til mailadressen
+3.  Hvis matrixattributten for den anden "mail" i AAD-brugerobjektet til stede, så bruges den første mail på denne liste (da der kan være en liste over mails i denne attribut)
+4. Hvis ingen af ovenstående betingelser er til stede, så bruges UPN-adressen
 
 ## <a name="updating-with-powershell"></a>Opdater via PowerShell
 Du kan også opdatere den alternative mailadresse via PowerShell til Azure Active Directory. Det gør du med kommandoen [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser).

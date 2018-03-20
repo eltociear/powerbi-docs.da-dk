@@ -1,6 +1,6 @@
 ---
 title: "Introduktion til Power BI-mobilappen på Android-tablets"
-description: "Få mere at vide om, hvordan du kan få adgang til Power BI på din Android-tablet, så du har adgang til virksomhedsoplysninger i det lokale miljø og i clouden, uanset hvor du er."
+description: "Få mere at vide om, hvordan du kan få adgang til Power BI på din Android tablet, så du har adgang til virksomhedsoplysninger i det lokale miljø og i cloudmiljøet, uanset hvor du er."
 services: powerbi
 documentationcenter: 
 author: maggiesMSFT
@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: bd96466a8a8c19a495540b93a512cb62746a6837
-ms.sourcegitcommit: 284b09d579d601e754a05fba2a4025723724f8eb
+ms.openlocfilehash: 407f4d8c2faf26b9837b24318c24c118786e21ae
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-tablets"></a>Introduktion til Power BI-mobilappen på Android-tablets
 Power BI-mobilappen til Android-tablets giver dig en god mobiloplevelse med Power BI, Power BI-rapportserver og Reporting Services. Få vist og interager med dit firmas dashboards lokalt og i clouden overalt, med direkte, berøringsfølsom mobiladgang. Udforsk dataene i dashboards, og del dem med dine kollegaer i mails eller sms'er. 
@@ -86,14 +86,14 @@ Du kan få vist og interagere med eksemplerne på dine Power BI-dashboards, men 
    ![Reporting Services-eksempler](media/mobile-android-tablet-app-get-started/power-bi-android-tablet-ssrs-samples.png)
 
 ## <a name="search-for-a-dashboard-or-report"></a>Søg efter et dashboard eller en rapport
-* Tryk på forstørrelsesglasset i øverste højre hjørne ![Ikonet Søg](media/mobile-android-tablet-app-get-started/power-bi-ipad-search-icon.png), skriv derefter det ord, der skal findes.
+* Tryk på forstørrelsesglasset i øverste højre hjørne ![Ikonet Søg](media/mobile-android-tablet-app-get-started/power-bi-ipad-search-icon.png), og skriv derefter det ord, der skal findes.
   
     ![Søgeresultater](media/mobile-android-tablet-app-get-started/power-bi-android-tablet-search.png)
   
-    Som standard søges i alle dashboards og rapporter, men du kan kun søge ét sted ad gangen.
+    Som standard søges der i alle dashboards og rapporter, men du kan kun søge på én ad gangen.
 
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Find dit indhold i Power BI-mobilappsene
-Dine dashboards og rapporter gemmes forskellige steder i Power BI-mobilappsene alt efter, hvor de kom fra. Læs [Sådan finder du dit indhold i mobilappsene](mobile-apps-find-content-mobile-devices.md). Desuden kan du altid søge efter noget, du har i Power BI-mobilappsene. 
+Dine dashboards og rapporter gemmes forskellige steder i Power BI-mobilapperne, alt efter hvor de kom fra. Læs [Sådan finder du dit indhold i mobilapperne](mobile-apps-find-content-mobile-devices.md). Desuden kan du altid søge efter noget, du har i Power BI-mobilappsene. 
 
 ![Venstre navigationsrude i Power BI](media/mobile-android-tablet-app-get-started/power-bi-mobile-new-nav-no-numbers.png)
 
@@ -108,12 +108,12 @@ På siden Favoritter i mobilappsene får du vist alle dine foretrukne Power BI-d
   
    ![Siden Favoritter](media/mobile-android-tablet-app-get-started/power-bi-android-tablet-favorites.png)
 
-Læs mere om [favoritter i Power BI-mobilappsene](mobile-apps-favorites.md).
+Læs mere om [favoritter i Power BI-mobilapperne](mobile-apps-favorites.md).
 
 ## <a name="enterprise-support-for-the-power-bi-mobile-apps"></a>Erhvervssupport til Power BI-mobilappsene
-Virksomheder kan bruge Microsoft Intune til at styre enheder og programmer, herunder Power BI-mobilappsene til Android og iOS.
+Virksomheder kan bruge Microsoft Intune til at styre enheder og apps, herunder Power BI-mobilapperne til Android og iOS.
 
-Microsoft Intune giver organisationerne mulighed for at kontrollere ting som at anmode om adgangskode, kontrollere, hvordan data skal håndteres af programmet, og kryptere programdata, selv når appen ikke er i brug.
+Microsoft Intune giver virksomhederne mulighed for at kontrollere ting som anmode om adgangspinkode, kontrollere, hvordan data skal håndteres af programmet, og kryptere programdata, selv når appen ikke er i brug.
 
 > [!NOTE]
 > Hvis du bruger Power BI-mobilappen på din Android-enhed, og din virksomhed har konfigureret Microsoft Intune MAM, er dataopdatering i baggrunden slået fra. Næste gang du bruger appen, vil Power BI opdatere dataene fra Power BI-tjenesten på internettet.
@@ -126,19 +126,20 @@ Læs mere om [konfiguration af Power BI-mobilapps til Android med Microsoft Intu
 Her er nogle andre ting, du kan gøre i Android-tabletappen til Power BI med dashboards og rapporter i Power BI samt rapporter og KPI'er på webportalerne til Power BI-rapportserver eller Reporting Services.
 
 ### <a name="power-bi-dashboards-and-reports"></a>Power BI-dashboards og -rapporter
-* Se [dine apps](service-install-use-apps.md).
+* Få vist [dine apps](service-install-use-apps.md).
 * Se dine [dashboards](mobile-apps-view-dashboard.md).
 * [Anmærk og del felter](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md).
-* Del [dashboards](mobile-share-dashboard-from-the-mobile-apps.md).
-* [Scan en Power BI QR-kode](mobile-apps-qr-code.md) for at åbne et relateret dashboardfelt eller en rapport.
-* Vis [beskeder om opdateringer til din Power BI-konto](mobile-apps-notification-center.md), f.eks dashboards, som kolleger deler med dig.
+* Dele [dashboards](mobile-share-dashboard-from-the-mobile-apps.md).
+* [Scanne en Power BI QR-kode](mobile-apps-qr-code.md) for at åbne et relateret dashboardfelt eller en rapport.
+* Få vist [beskeder om opdateringer til din Power BI-konto](mobile-apps-notification-center.md), f.eks dashboards, som kolleger deler med dig.
 
 ### <a name="reports-and-kpis-on-the-power-bi-report-server-and-reporting-services-web-portals"></a>Rapporter og KPI'er på webportalerne for Power BI-rapportserver og Reporting Services
 * [Få vist rapporter og KPI'er på webportalen](mobile-app-ssrs-kpis-mobile-on-premises-reports.md) i Power BI-mobilappen til Android-enheder.
-* Opret [KPI'er på webportalen](https://docs.microsoft.com/sql/reporting-services/working-with-kpis-in-reporting-services).
-* Opret [rapporter i Power BI Desktop, og publicer dem på webportalen til Power BI-rapportserver](report-server/quickstart-create-powerbi-report.md)
+* Oprette [KPI'er på webportalen](https://docs.microsoft.com/sql/reporting-services/working-with-kpis-in-reporting-services).
+* Oprette [rapporter i Power BI Desktop og publicere dem på Power BI Rapport Server](report-server/quickstart-create-powerbi-report.md)-webportalen
 
 ### <a name="see-also"></a>Se også
 * [Download Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867) fra Android App Store.
-* [Introduktion til Power BI](service-get-started.md)
+* [Kom i gang med Power BI](service-get-started.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+
