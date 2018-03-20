@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/05/2018
+ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: b0d7dc85b9795b432b461d48894404417850b9bc
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 4997c29941608c12a89598b6e9cb1b1ad3aa2fe8
+ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -31,6 +31,69 @@ I denne artikel beskrives tidligere opdateringer til **Power BI Desktop**. For d
 I de følgende afsnit beskrives tidligere måneders opdateringer til **Power BI Desktop**.
 
 Du kan til enhver tid [downloade den seneste version af Power BI Desktop](https://powerbi.microsoft.com/desktop). Hvis du kører Windows 10, kan du også få **Power BI Desktop** fra Windows Store. De månedlige versioner er de samme, uanset hvilken måde du installerer **Power BI Desktop** på. Du kan finde flere oplysninger i [denne artikel](desktop-get-the-desktop.md). 
+
+
+## <a name="february-2018-update-2555010521"></a>Opdatering i februar 2018 (2.55.5010.521)
+
+Vores hjerter flød over af kærlighed med opdateringerne til **Power BI Desktop** i februar, og vi håber, at du synes, de var lige så gode som en æske chokolade.
+
+Linkene ud for hver opdatering betyder følgende:
+
+* **[video]** angiver, at videoen afspilles på en ny fane i browseren, når funktionen beskrives.
+* Til nogle funktioner findes der en **[artikel]**, hvor funktionen beskrives mere detaljeret.
+* De fleste funktioner i den månedlige opdatering beskrives i et **[blog]**indlæg.
+* Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
+
+Du kan også se videoen med de **seneste opdateringer** for denne måned fra starten direkte i denne artikel. Det gør du ved at klikke på ikonet **afspil** på videobilledet under listen med opdateringer.
+
+Følgende opdateringer var nye i **Power BI Desktop** i februar 2018:
+
+### <a name="reporting"></a>Rapportering
+
+* Markér flere datapunkter på tværs af flere sider [[video]](https://youtu.be/KeVB5RwMzJo?t=23s) [[artikel]](desktop-multi-select.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight) 
+* Synkroniser udsnitsværktøjer på tværs af flere sider i en rapport [[video]](https://youtu.be/KeVB5RwMzJo?t=3m33s) [[artikel]](desktop-slicers.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers) 
+* Forbedring af udsnitsværktøjet til numerisk område – fastgørelse af heltal (prøveversion) [[video]](https://youtu.be/KeVB5RwMzJo?t=8m44s) [[artikel]](desktop-slicer-numeric-range.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#rangeSlicer) 
+* Hurtigere geokodning på Bing Kort (webprøveversion) – op til seks gange hurtigere [[video]](https://youtu.be/KeVB5RwMzJo?t=10m18s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#geocoding) 
+* Overløb af datanavne i søjlediagrammer i visualiseringer [[video]](https://youtu.be/KeVB5RwMzJo?t=12m31s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#overflow) 
+* Søgning i ruderne Formatering og Analyse [[video]](https://youtu.be/KeVB5RwMzJo?t=14m46s) [[artikel]](desktop-analytics-pane.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search) 
+
+
+### <a name="custom-visuals"></a>Brugerdefinerede visuelle elementer
+
+* Brugerdefinerede visualiseringer til organisationer (prøveversion) [[video]](https://youtu.be/KeVB5RwMzJo?t=19m23s) [[artikel]](power-bi-custom-visuals-organization.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#organizationalVisuals) 
+
+
+### <a name="analytics"></a>Analyse
+
+* Angiv en brugerdefineret datatabel [[video]](https://youtu.be/KeVB5RwMzJo?t=16m4s) [[artikel]](desktop-date-tables.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
+* Hurtigmålinger er nu generelt tilgængelige [[video]](https://youtu.be/KeVB5RwMzJo?t=17m52s) [[artikel]](desktop-quick-measures.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
+
+### <a name="data-connectivity"></a>Dataforbindelse
+
+* Forbedringer af DirectQuery via SAP HANA (prøveversion) [[video]](https://youtu.be/KeVB5RwMzJo?t=30m1s) [[artikel]](desktop-directquery-sap-hana.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#saphana) 
+
+### <a name="other"></a>Andet
+
+* Forbedringer af ydeevne i DirectQuery [[video]](https://youtu.be/KeVB5RwMzJo?t=32m24s) [[artikel]](desktop-directquery-about.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#dqPerf) 
+* Forbedringer af ydeevnen ved åbn og gem [[video]](https://youtu.be/KeVB5RwMzJo?t=33m40s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#savePerf) 
+* Forbedringer af *Vis elementer uden data* [[video]](https://youtu.be/KeVB5RwMzJo?t=34m6s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#showItemsWithNoData) 
+* Vedvarende filterstyring til kommende funktioner i **Power BI-tjenesten** [[video]](https://youtu.be/KeVB5RwMzJo?t=34m56s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#persistentFilters) 
+
+
+
+> [!NOTE]
+> Du kan også [se alle de datakilder, du kan bruge i Power BI Desktop](desktop-data-sources.md). Vi opdaterer hele tiden listen med nye datakilder, så kig tilbage ofte.
+
+Vil du have flere oplysninger om disse opdateringer? Se nærmere på [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary), hvor du kan få mere detaljerede oplysninger om hver af de nye funktioner (dette er de samme referencer til blogindlæg på listen herover).
+
+
+I følgende video beskrives og vises hver af disse opdateringer. Du kan også se videoen i blogindlægget.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KeVB5RwMzJo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+> [!NOTE]
+> Du kan også læse om [nyhederne i Power BI-tjenesten](service-whats-new.md) og se [nyhederne i mobilappsene til Power BI](mobile-whats-new-in-the-mobile-apps.md).
 
 
 ## <a name="january-2018-update-2544970761"></a>Opdatering i januar 2018 (2.54.4970.761)
@@ -44,7 +107,7 @@ Linkene ud for hver opdatering betyder følgende:
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]**indlæg.
 -   Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
-Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
+Du kan også se videoen med de **seneste opdateringer** for denne måned fra starten direkte i denne artikel. Det gør du ved at klikke på ikonet **afspil** på videobilledet under listen med opdateringer.
 
 Følgende opdateringer var nye i **Power BI Desktop** i januar:
 
@@ -83,7 +146,7 @@ I følgende video beskrives og vises hver af disse opdateringer. Du kan også se
 
 
 
-## <a name="december-2017-update-2534954481-"></a>Opdatering for december 2017 (2.53.4954.481)
+## <a name="december-2017-update-2534954481"></a>Opdatering i december 2017 (2.53.4954.481)
 
 Med december fulgte en julesæk fuld af opdateringer til **Power BI Desktop**, og den var propfyldt med funktioner og gaver til glæde for alle business intelligence-orienterede børn (og voksne).
 
@@ -350,9 +413,9 @@ Følgende opdateringer var nye i **Power BI Desktop** i juli:
 -   Dynamisk layout for visualiseringer (preview)  [[video]](https://youtu.be/4X96ow7FnSY?t=12m14s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals)
 -   Nyt vandfaldsdiagram – detaljer [[video]](https://youtu.be/4X96ow7FnSY?t=14m29s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#waterfall)
 -   Opdateringer til brugerdefinerede visualiseringer [[video]](https://youtu.be/4X96ow7FnSY?t=17m34s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#customVisuals)
-    -   Detaljeret fladekort [[video]](https://youtu.be/4X96ow7FnSY?t=18m11s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownChoropleth)
-    -   Detaljeret kartogram [[video]](https://youtu.be/4X96ow7FnSY?t=19m14s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownCartogram)
-    -   Detaljeret afspiller [[video]](https://youtu.be/4X96ow7FnSY?t=20m17s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownPlayer)
+    -   Analysér ned i fladekort [[video]](https://youtu.be/4X96ow7FnSY?t=18m11s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownChoropleth)
+    -   Analysér ned i kartogram [[video]](https://youtu.be/4X96ow7FnSY?t=19m14s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownCartogram)
+    -   Analysér ned i afspiller [[video]](https://youtu.be/4X96ow7FnSY?t=20m17s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#drilldownPlayer)
     -   Certificerede brugerdefinerede visualiseringer [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#certifiedCustomVisuals)
 
 
@@ -831,7 +894,7 @@ Følgende opdateringer er nye i Power BI Desktop i denne måned:
 
 ### <a name="report-view"></a>Rapportvisning:
 
--   Detailudledning (eller gå tilbage) i kurvediagrammer [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=3m1s)
+-   Analysér ned (eller op igen) i kurvediagrammer [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=3m1s)
 -   Fortløbende akse for datoaksen [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=3m48s)
 -   Generel adgang til indbyggede hierarkier [[artikel]](desktop-inline-hierarchy-labels.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=4m6s)
 -   Foruddefinerede matrixtypografier (svarer til tabelformatering i Excel) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[video]](https://youtu.be/0VvG7Eqoke8?t=4m59s)
@@ -1038,7 +1101,7 @@ I april fik vores fantastiske Power BI-kunder endnu en række praktiske opdateri
 
 -   Ekstra typografier til tabelkort, matrixkort og kort med flere rækker
 -   Tendenslinjer i enkeltstående visualiseringer
--   Ny handling til detailudledning – **Se Poster**
+-   Ny analysehandling – **Se poster**
 -   Automatisk kortzoom under detailudledning/filtrering
 -   Indbyggede hierarkinavne til udvidet visning (prøveversion – [se artiklen](desktop-inline-hierarchy-labels.md))
 
@@ -1141,7 +1204,7 @@ Lad os kaste os ud i flere opdateringer denne måned! Det er skudår, så der er
 ### <a name="report-view"></a>Rapportvisning:
 
 -   Se de data, der ligger til grund for en visualisering (inklusive *Eksportér data til CSV*)
--   Kortforbedringer – afbildning af kort med kun breddegrad/længdegrad
+-   Kortforbedringer – afbildning af kort kun med breddegrad/længdegrad
 -   Understøttelse af KPI-forbrug (inklusive navigationshierarki og KPI-tendenser for SSAS MD)
 -   SSAS-udforskningstilstand: understøtter **Vis mapper** i ruden **Felter**
 -   Forbedringer af båndets layout: kontekstafhængig fane med **Rapporteringsværktøjer**
@@ -1164,12 +1227,12 @@ Lad os kaste os ud i flere opdateringer denne måned! Det er skudår, så der er
 -   JSON File-connector
 -   SQL Sentry-connector
 -   Understøttelse af CSV-filer, som ikke har en fast bredde
--   Exchange-connector – OAuth-understøttelse
--   SharePoint-listeconnector – validering af URL-adresser
+-   Exchange connector – OAuth-understøttelse
+-   SharePoint listeconnector – validering af URL-adresser
 -   Databaseconnectors – mulighed for at deaktivere navigationskolonner i eksempelvisning af forespørgsler (optimering af ydeevnen)
--   Web-connector – bedre detaljering af legitimationsoplysninger
+-   Web-connector – bedre styring af legitimationsoplysninger
 -   Forbedringer i dialogboksen **Angiv data**
--   SAP HANA – understøttelse af SSO med Windows-godkendelse (kun Power BI Desktop)
+-   SAP HANA – understøttelse af enkeltlogon med Windows godkendelse (kun Power BI Desktop)
 -   SAP HANA – understøttelse af navne på **felter**
 -   Alfabetisk sortering af kolonner i **Markér kolonner**
 -   Forbedret ydeevne i omdøbning/fjernelse/sortering af kolonner
@@ -1363,7 +1426,7 @@ Med oktober følger en ny stor samling af opdateringer til Power BI Desktop:
 
 
 ### <a name="data-transformations"></a>Datatransformationer:
--   Filtrer efter "ikketidligste/seneste dato"
+-   Filtrer efter "ikke tidligste/seneste dato"
 -   Filtrer efter "er i tidligere N minutter/timer/sekunder"
 -   Kopiér/indsæt forespørgsler mellem Power BI Desktop og Excel
 -   Understøttelse af specialtegn i Opdel kolonne
@@ -1396,7 +1459,7 @@ Med denne store samling af opdateringer får du 44 nye funktioner:
 - Understøtter nu indsættelse af former på rapportcanvas
 - Forbedringer i ruden Felter
     - Søgefelt, der gør det nemmere at finde felter efter navn
-    - "Udvid/Skjul alle" giver nemmere navigation, når der er flere tabeller i ruden Felter
+    - "Udvid/Skjul alle" forbedrer navigation, når der er flere tabeller i ruden Felter
     - Understøtter kardinalitet i felter og erstatning af 1 element med træk og slip
     - Yderligere indstillinger til formatering af datanavne
     - Forbedringer til kartesiske diagramakser:
@@ -1426,11 +1489,11 @@ Med denne store samling af opdateringer får du 44 nye funktioner:
 - Understøttelse af Spark-distributioner i det lokale miljø
 - Understøttelse af SharePoint lister fra websteder, der ikke er på engelsk
 - Exchange connector – bedre understøttelse, der nu tillader forbindelser til flere postkasser
-- Excel-projektmappe-connector – automatisk registrering af kolonnetype, når der importeres .XLS-filer
+- Excel projektmappeconnector – automatisk registrering af kolonnetype, når der importeres .XLS-filer
 - Indstillingen "Vælg relaterede tabeller", når der oprettes forbindelse til databasekilder
 - Forbedring af legitimationsoplysninger til Active Directory-connector, så der kan angives alternative Windows-legitimationsoplysninger
 - Forbedret aktivering af funktioner, når der indlæses funktioner fra en datakilde, f.eks. en database
-- Funktionen "Importér indhold i Excel-projektmappe", der blev frigivet i sidste måned, understøtter nu også eksterne forbindelser til Analysis Services-tabelmodeller
+- Funktionen "Importér indhold i Excel projektmappe", der blev frigivet i sidste måned, understøtter nu også eksterne forbindelser til Analysis Services-tabelmodeller
 - Ny indstilling, "Slet alle", for poster i dialogboksen Indstillinger for datakilde
 - Indstillingen "Tillad import af relationer under opdatering"
 
@@ -1514,7 +1577,7 @@ Følgende funktioner er blevet tilføjet i denne opdatering:
 
 -   Understøttelse af Exchange UPN-legitimationsoplysninger i Exchange connector.
 
-Foruden alle de nye funktioner **oversætter vi Power BI Desktop til 42 sprog**. Se en komplet liste over sprog, og installér din version fra [vores officielle downloadside](https://www.microsoft.com/download/details.aspx?id=45331).
+Foruden alle disse nye funktioner **oversætter vi også Power BI Desktop til 42 sprog.** Se en komplet liste over sprog, og installér din version fra [vores officielle downloadside](https://www.microsoft.com/download/details.aspx?id=45331).
 
 Se følgende video for at få flere detaljer om denne opdatering:
 
@@ -1542,7 +1605,7 @@ Følgende funktioner er blevet tilføjet i denne opdatering:
 
 -   Nye tekstkolonnefiltre – **Begynder ikke med** og **Slutter ikke med**
 
--   Forbedringer til dialogboksen Beskyttelsesniveauer
+-   Dialogboksen Forbedrede niveauer for beskyttelse af personlige oplysninger
 
 Se følgende video for at få flere detaljer om denne opdatering:
 
@@ -1626,7 +1689,7 @@ Følgende funktioner er blevet tilføjet eller forbedret i denne opdatering:
 - Forbedringer af ydeevnen
 - Dynamics CRM Online-connector
     > [!NOTE]
-    > I øjeblikket er det kun URL-adresser på domænet crm.microsoft.com, der accepteres i denne dialogboks. Dette omfatter ikke lejere, der ikke er i produktionsmiljøer. Problemet vil være løst i martsopdateringen. Den midlertidige løsning er at oprette forbindelse til dette feed ved hjælp af "Fra OData".*
+    > I øjeblikket er det kun URL-adresser på domænet crm.microsoft.com, der accepteres i denne dialogboks. Dette omfatter ikke lejere, der ikke er i produktionsmiljøer. Problemet løsses med opdateringen i marts. Den midlertidige løsning er at oprette forbindelse til dette feed ved hjælp af "Fra OData".*
 - Forbedringer til dialogboksen Navigator
     -   Bedre oplevelse med eksempelvisning af flerdimensionelle kilder (Analysis Services og SAP BusinessObjects)
     -   Indstillingen Vis markerede elementer

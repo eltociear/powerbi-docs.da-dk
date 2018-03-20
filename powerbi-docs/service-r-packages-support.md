@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 67b4e6420177d2b268838b3052e29f230025cfb8
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 189e9ed8bb63df4fdbebc5eaa11625bef4592d38
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>R-pakker i Power BI-tjenesten
 Du kan bruge det effektive [R-programmeringssprog](https://www.r-project.org/) til at skabe visuelle elementer i Power BI-tjenesten. Mange R-pakker understøttes i Power BI-tjenesten (og der understøttes hele tiden flere og flere), og nogle pakker understøttes ikke.
@@ -36,12 +36,12 @@ De R-pakker, der understøttes i **Power BI-tjenesten**, står i følgende afsni
 Der er en række krav og begrænsninger for R-pakker:
 
 * Power BI-tjenesten understøtter i de fleste tilfælde R-pakker med gratis og open source-softwarelicenser, f.eks. GPL-2, GPL-3, MIT+ osv.
-* Power BI-tjenesten understøtter pakker, der er publiceret i CRAN. Tjenesten understøtter ikke private eller brugerdefinerede R-pakker. Vi anbefaler, at brugere gør deres private pakker tilgængelige på CRAN, før de anmoder om, at pakken gøres tilgængelig i Power BI-tjenesten.
-* For **Power BI Desktop** er der to variationer for R-pakker:
+* Power BI-tjenesten understøtter pakker, der er publiceret i CRAN. Tjenesten understøtter ikke private eller brugerdefinerede R-pakker. Brugerne opfordres til at gøre deres private pakker tilgængelige på CRAN, før de anmoder om, at pakken gøres tilgængelig i Power BI tjenesten.
+* Der er to variationer af R-pakker til **Power BI Desktop**:
   
   * For R-visuals kan du installere en vilkårlig pakke, herunder brugerdefinerede R-pakker
   * For brugerdefinerede R-visuals understøttes kun offentlige CRAN-pakker til automatisk installation af pakkerne.
-* Af hensyn til sikkerhed og beskyttelse af personlige oplysninger understøtter vi i øjeblikket ikke R-pakker, der leverer klient-/serverforespørgsler via internettet (f.eks. RgoogleMaps) i tjenesten. Brug af netværk er blokeret for denne type forsøg. Se afsnittet nedenfor for at få en liste over understøttede og ikke-understøttede R-pakker.
+* R-pakker, der leverer klient-/serverforespørgsler via internettet (f.eks. RgoogleMaps) i tjenesten, understøttes ikke af hensyn til sikkerheden og beskyttelse af personlige oplysninger. Brug af netværk er blokeret for denne type forsøg. Se afsnittet nedenfor for at få en liste over understøttede og ikke-understøttede R-pakker.
 * Godkendelsesprocessen for at medtage en ny R-pakke har et træ af afhængigheder. Nogle afhængigheder, der skal være installeret i tjenesten, kan ikke understøttes.
 
 ## <a name="r-packages-that-are-supported-in-power-bi"></a>R-pakker, der understøttes i Power BI
@@ -116,7 +116,7 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 | cubature |1.1-2 |https://cran.r-project.org/web/packages/cubature/index.html |
 | cvTools |0.3.2 |https://cran.r-project.org/web/packages/cvTools/index.html |
 | data.table |1.9.6 |https://cran.r-project.org/web/packages/data.table/index.html |
-| Data.tree |0.7.0 |https://cran.r-project.org/web/packages/data.tree/index.html |
+| data.tree |0.7.0 |https://cran.r-project.org/web/packages/data.tree/index.html |
 | date |1.2-34 |https://cran.r-project.org/web/packages/date/index.html |
 | dbscan |0.9-7 |https://cran.r-project.org/web/packages/dbscan/index.html |
 | deal |1.2-37 |https://cran.r-project.org/web/packages/deal/index.html |
@@ -202,7 +202,7 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 | heavy |0.3 |https://cran.r-project.org/web/packages/heavy/index.html |
 | HH |3.1-25 |https://cran.r-project.org/web/packages/HH/index.html |
 | HI |0.4 |https://cran.r-project.org/web/packages/HI/index.html |
-| Highcharter |0.5.0 |https://cran.r-project.org/web/packages/highcharter/index.html |
+| highcharter |0.5.0 |https://cran.r-project.org/web/packages/highcharter/index.html |
 | Hmisc |3.17-3 |https://cran.r-project.org/web/packages/Hmisc/index.html |
 | HSAUR |1.3-7 |https://cran.r-project.org/web/packages/HSAUR/index.html |
 | ifultools |2.0-1 |https://cran.r-project.org/web/packages/ifultools/index.html |
@@ -296,7 +296,7 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 | pcaPP |1.9-60 |https://cran.r-project.org/web/packages/pcaPP/index.html |
 | pdc |1.0.3 |https://cran.r-project.org/web/packages/pdc/index.html |
 | PerformanceAnalytics |1.4.3541 |https://cran.r-project.org/web/packages/PerformanceAnalytics/index.html |
-| Plotly |4.5.6 |https://cran.r-project.org/web/packages/plotly/index.html |
+| plotly |4.5.6 |https://cran.r-project.org/web/packages/plotly/index.html |
 | plotmo |3.1.4 |https://cran.r-project.org/web/packages/plotmo/index.html |
 | plotrix |3.6-1 |https://cran.r-project.org/web/packages/plotrix/index.html |
 | pls |2.5-0 |https://cran.r-project.org/web/packages/pls/index.html |
@@ -325,7 +325,7 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 | Rcpp |0.12.3 |https://cran.r-project.org/web/packages/Rcpp/index.html |
 | RcppArmadillo |0.6.600.4.0 |https://cran.r-project.org/web/packages/RcppArmadillo/index.html |
 | RcppEigen |0.3.2.8.1 |https://cran.r-project.org/web/packages/RcppEigen/index.html |
-| redmonder |0.2.0 |https://cran.r-project.org/web/packages/Redmonder/index.html |
+| Redmonder |0.2.0 |https://cran.r-project.org/web/packages/Redmonder/index.html |
 | registry |0.3 |https://cran.r-project.org/web/packages/registry/index.html |
 | relimp |1.0-5 |https://cran.r-project.org/web/packages/relimp/index.html |
 | reshape |0.8.5 |https://cran.r-project.org/web/packages/reshape/index.html |
@@ -396,7 +396,7 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 | tm |0.6-2 |https://cran.r-project.org/web/packages/tm/index.html |
 | topicmodels |0.2-3 |https://cran.r-project.org/web/packages/topicmodels/index.html |
 | tree |1.0-37 |https://cran.r-project.org/web/packages/tree/index.html |
-| Treemap |2.4-2 |https://cran.r-project.org/web/packages/treemap/index.html |
+| Træstruktur |2.4-2 |https://cran.r-project.org/web/packages/treemap/index.html |
 | tseries |0.10-34 |https://cran.r-project.org/web/packages/tseries/index.html |
 | tsfa |2014.10-1 |https://cran.r-project.org/web/packages/tsfa/index.html |
 | tsoutliers |0.6 |https://cran.r-project.org/web/packages/tsoutliers/index.html |

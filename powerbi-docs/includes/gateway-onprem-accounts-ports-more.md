@@ -2,7 +2,7 @@
 Brugere skal logge på med enten en arbejds- eller skolekonto. Dette er din organisationskonto. Hvis du har tilmeldt dig et tilbud på Office 365 og ikke angav din rigtige arbejdsmailadresse, kan den se ud som nancy@contoso.onmicrosoft.com. På en cloudtjeneste gemmes din konto i en lejer i Azure Active Directory (AAD). I de fleste tilfælde vil AAD-kontoens UPN svare til mailadressen.
 
 ## <a name="windows-service-account"></a>Windows-tjenestekonto
-Datagatewayen i det lokale miljø er konfigureret til at bruge *NT SERVICE\PBIEgwService* for legitimationsoplysninger til logon på Windows-tjenesten. Som standard er rettighederne de samme som i forbindelse med Log på som en tjeneste. Dette er i forbindelse med den computer, du installerer gatewayen på.
+Datagatewayen i det lokale miljø er konfigureret til at bruge *NT SERVICE\PBIEgwService* som legitimationsoplysninger til logon på Windows tjenesten. Som standard er rettighederne de samme som i forbindelse med Log på som en tjeneste. Dette er i forbindelse med den computer, du installerer gatewayen på.
 
 > [!NOTE]
 > Hvis du har valgt personlig tilstand, skal du konfigurere kontoen til Windows-tjenesten separat.
@@ -66,7 +66,7 @@ Til fremtidig reference kan du genstarte *Windows-gatewaytjenesten* fra dialogbo
 ![](./media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
 ## <a name="support-for-tls-1112"></a>Understøttelse af TLS 1.1/1.2
-Med opdateringen fra august 2017 og senere opdateringer bruger datagatewayen i det lokale miljø TLS 1.1 eller 1.2 (Transport Layer Security) til at kommunikere med **Power BI-tjenesten** som standard. Tidligere versioner af datagatewayen i det lokale miljø bruger som standard TLS 1.0. Fra den 15. marts 2018 slutter understøttelsen af TLS 1.0, herunder gatewayens mulighed for at interagere med **Power BI-tjenesten** via TLS 1.0. Fra den dato skal du derfor opgradere installationerne af datagatewayen i det lokale miljø til udgaven fra august 2017 eller en nyere udgave for at sikre, at din gateway fortsat fungerer.
+Med opdateringen fra august 2017 og senere opdateringer bruger datagatewayen i det lokale miljø som standard TLS 1.1 eller 1.2 (Transport Layer Security) til at kommunikere med **Power BI tjenesten**. Tidligere versioner af datagatewayen i det lokale miljø bruger som standard TLS 1.0. Fra den 15. marts 2018 slutter understøttelsen af TLS 1.0, herunder gatewayens mulighed for at interagere med **Power BI tjenesten** via TLS 1.0. Så inden da skal du opgradere installationerne af datagatewayen i det lokale miljø til udgaven fra august 2017 eller en nyere udgave for at sikre, at din gateway fortsat fungerer.
 
 Det er vigtigt at bemærke, at TLS 1.0 stadig understøttes af datagatewayen i det lokale miljø fra før 1. november, og den bruges af gatewayen som fallback-løsning. Hvis du vil sikre, at al gatewaytrafik bruger TLS 1.1 eller 1.2 (og for at forhindre, at der bruges TLS 1.0 på din gateway), skal du tilføje eller ændre følgende registreringsdatabasenøgler på den computer, hvor gatewaytjenesten kører:
 

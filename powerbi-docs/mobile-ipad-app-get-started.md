@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 01/25/2018
 ms.author: maggies
-ms.openlocfilehash: ad46bd02ffc3c745b63e716759007219421edfd8
-ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
+ms.openlocfilehash: a35197e7775fb1b0dfec5c0905706f44d6f14494
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-an-ipad"></a>Introduktion til Power BI-mobilappen på en iPad
 Microsoft Power BI til iOS på iPad giver den mobile BI-oplevelse til Power BI, Power BI Report Server og Reporting Services. Få vist og interager med dit firmas dashboards lokalt og i clouden overalt, med direkte, berøringsfølsom mobiladgang. Udforsk dataene i dashboards, og del dem med dine kollegaer i mails eller sms'er. 
@@ -31,9 +31,9 @@ Microsoft Power BI til iOS på iPad giver den mobile BI-oplevelse til Power BI, 
 Du kan oprette Power BI-rapporter i Power BI Desktop og publicere dem:
 
 * [Publicer dem til Power BI-tjenesten](service-get-started.md), og opret dashboards.
-* [Publicer dem til Power BI Report Server i det lokale miljø](report-server/quickstart-create-powerbi-report.md).
+* [Publicer dem i det lokale miljø på Power BI rapportserver](report-server/quickstart-create-powerbi-report.md).
 
-Derefter interagerer du i Power BI-appen til iPad med dine dashboards og rapporter, både lokalt og i clouden.
+Derefter interagerer du med dine dashboards og rapporter i Power BI appen til iPad, hvad enten det er i det lokale miljø eller i cloudmiljøet.
 
 Find ud af, [hvad der er nyt i Power Bi-mobilapperne](mobile-whats-new-in-the-mobile-apps.md).
 
@@ -138,4 +138,5 @@ Her er nogle andre ting, du kan gøre i iPad-appen med dashboards og rapporter i
 ### <a name="see-also"></a>Se også
 * [Kom i gang med Power BI](service-get-started.md)  
 * Har du spørgsmål? Prøv at spørge [Power BI-community'et](http://community.powerbi.com/)
+
 

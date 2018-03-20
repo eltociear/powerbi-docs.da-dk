@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 8b7fb21e533fecbfe93481741ae53b0073f6a776
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 937cbf39d08bd830c16e9b2634f3d5a747689f54
+ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="query-overview-in-power-bi-desktop"></a>Oversigt over forespørgsler i Power BI Desktop
 Med **Power BI Desktop** kan du oprette forbindelse til alverdens data, oprette overbevisende og grundlæggende rapporter og dele dit arbejde med andre – der derefter kan bygge videre på dit arbejde og udvide deres business intelligence.
@@ -102,7 +102,7 @@ I venstre rude vises antallet af aktive forespørgsler og navnet på forespørgs
 ![](media/desktop-query-overview/queryoverview_theleftpane.png)
 
 ## <a name="the-center-data-pane"></a>Midterste rude (dataruden)
-I den midterste rude, eller dataruden, vises der data fra den valgte forespørgsel. Det er her, meget af arbejdet fra forespørgselsvisningen udføres.
+I den midterste rude, eller dataruden, vises data fra den valgte forespørgsel. Det er her, meget af arbejdet fra forespørgselsvisningen udføres.
 
 På følgende billede vises den webdataforbindelse, der er oprettet tidligere, kolonnen **Samlet resultat** er markeret, og der højreklikkes på sidehovedet for at få vist de tilgængelige menupunkter. Bemærk, at mange af disse menupunkter i genvejsmenuen er de samme som knapperne under fanerne på båndet.  
 

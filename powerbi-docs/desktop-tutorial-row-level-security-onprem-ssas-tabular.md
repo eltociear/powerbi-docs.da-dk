@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 982b027ebf7605cdc0ce122759d5f3837d23c0ed
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 67b347be9974605156d02cbbf179126c68ae91e8
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="tutorial-dynamic-row-level-security-with-analysis-services-tabular-model"></a>Selvstudium: Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel
 I denne vejledning vises de trin, der er nødvendige for at implementere **sikkerhed på rækkeniveau** i din **Analysis Services-tabelmodel**, og det vises, hvordan du bruger det i en rapport i Power BI. Trinnene i dette selvstudium er designet for at give dig mulighed for at følge med i og lære at udføre de nødvendige trin ved at gennemføre et eksempel på et datasæt.
@@ -85,9 +85,9 @@ Der er udgivet mange artikler, som beskriver, hvordan du definerer dynamisk sikk
 9. Denne formel angiver, at alle kolonner skal opfylde den falske booleske betingelse. Derfor kan der ikke forespørges om kolonner i tabellen **DimUserSecurity**.
 10. Nu skal vi behandle og udrulle modellen. [I denne artikel](https://msdn.microsoft.com/library/hh231693.aspx) kan du få hjælp til installation af modellen.
 
-## <a name="task-3-adding-data-sources-within-your-on-premises-data-gateway"></a>Opgave 3: Tilføj datakilder i din lokale datagateway
+## <a name="task-3-adding-data-sources-within-your-on-premises-data-gateway"></a>Opgave 3: Tilføjelse af datakilder i din datagateway i det lokale miljø
 1. Når din tabelmodel er installeret og klar til forbrug, skal du tilføje en datakildeforbindelse til din lokale Analysis Services-tabelserver på din Power BI-portal.
-2. Hvis du vil give **Power BI-tjenesten** adgang til din lokale analysetjeneste, skal der være installeret og konfigureret en **[lokal datagateway](service-gateway-onprem.md)** i dit miljø.
+2. Hvis du vil give **Power BI tjenesten** adgang til din analysetjeneste i det lokale miljø, skal du i dit miljø have installeret og konfigureret en **[datagateway i det lokale miljø](service-gateway-onprem.md)**.
 3. Når gatewayen er konfigureret korrekt, skal du oprette en datakildeforbindelse til din forekomst af **Analysis Services**-tabellen. I denne artikel kan du få hjælp til at [tilføje datakilden på Power BI-portalen](service-gateway-enterprise-manage-ssas.md).
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/pbi_gateway.png)

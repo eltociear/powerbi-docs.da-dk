@@ -15,9 +15,9 @@ Der er nogle få ting, du skal være opmærksom på, uanset hvilken tiltand af g
 
 * Begge gateways kræver et 64-bit Windows-operativsystem.
 * Gateways kan ikke installeres på en domænecontroller.
-* Du kan installere op til to datagateways i det lokale miljø på den samme computer, der kører i hver enkelt tilstand (Personlig og standard). 
+* Du kan installere op til to datagateways i det lokale miljø på den samme computer; en i hver tilstand (personlig og standard). 
 * Du kan ikke have mere end én gateway, der kører i den samme tilstand på samme computer.
-* Du kan installere flere datagateways i det lokale miljø på forskellige computere og administrere dem alle fra den samme grænseflade i Power BI til administration af gateways (undtagen Personlig, se følgende punkttegn).
+* Du kan installere flere datagateways i det lokale miljø på forskellige computere og administrere dem alle fra den samme grænseflade i Power BI til administration af gateways (undtagen personlig, se følgende punktopstilling).
 * Du kan kun have én gateway i tilstanden Personlig for hver Power BI-bruger. Hvis du installerer endnu en gateway i personlig tilstand for den samme bruger, selv på en anden computer, erstatter den nyeste installation den tidligere eksisterende installation.
 
 ![On-prem-data-gateway-install-powerbi](./media/gateway-onprem-install-include/on-prem-data-gateway-install-powerbi.png)

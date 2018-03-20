@@ -18,16 +18,16 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: f9e30b3feb5f9b85a87686e4484bba035ff839aa
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: f2749976772d2bc2e3d48ca355925cafad93fe0c
+ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakilder til Power BI-tjenesten
 Dataene er i hjertet af Power BI. Når du udforsker data, opretter diagrammer og dashboards, stiller spørgsmål med Spørgsmål og svar, får alle disse visualiseringer og svar, som du ser, rent faktisk deres underliggende data fra et datasæt. Men hvor kommer dette datasæt fra? Fra en datakilde.
 
-I denne artikel skal vi gennemgå de forskellige typer datakilder, du kan oprette forbindelse til fra Power BI-tjenesten. Husk på, at der også er mange typer datakilder, du kan hente data fra. Men de kan muligvis kræve, at der først bruges Power BI Desktop eller Excels avancerede dataforespørgsels- og modelleringsfunktioner. Det kan du læse mere om senere. Lad os i mellemtiden se på de forskellige typer datakilder, du kan oprette forbindelse til direkte fra webstedet for Power BI-tjenesten.
+I denne artikel gennemgås de forskellige typer datakilder, du kan oprette forbindelse til fra Power BI tjenesten. Husk på, at der også er mange typer datakilder, du kan hente data fra. Men de kan muligvis kræve, at der først bruges Power BI Desktop eller Excels avancerede dataforespørgsels- og modelleringsfunktioner. Det kan du læse mere om senere. Lad os i mellemtiden se på de forskellige typer datakilder, du kan oprette forbindelse til direkte fra webstedet for Power BI tjenesten.
 
 Du kan hente data fra enhver af disse datakilder i Power BI ved at klikke på **Mit arbejdsområde** > **Hent Data**.
 
@@ -36,7 +36,7 @@ Du kan hente data fra enhver af disse datakilder i Power BI ved at klikke på **
 ## <a name="files"></a>Filer
 ![](media/service-get-data/pbi_getdata_files.png)
 
-**Excel** (.xlsx, xlxm) – Excel er unikt i og med, at en projektmappe kan indeholde både data, du selv har lagt ind i regneark, og du kan forespørge på og indlæse data fra eksterne datakilder ved hjælp af Power-forespørgsel (Hent og omdan i Excel 2016) eller Power Pivot. Du kan importere data, der er i tabellerne i regneark (dataene *skal* være i en tabel), eller importere data, der er indlæst i en datamodel. Du kan få flere oplysninger i [Hent data fra Excel](service-get-data-from-files.md).
+**Excel** (.xlsx, xlxm) � Excel er unikt i og med, at en projektmappe både kan indeholde data, du selv har lagt ind i regneark, og du kan forespørge på og indlæse data fra eksterne datakilder ved hjælp af Power-forespørgsel (Hent og omdan i Excel 2016) eller Power Pivot. Du kan importere data, der er i tabellerne i regneark (dataene *skal* være i en tabel), eller importere data, der er indlæst i en datamodel. Du kan få flere oplysninger i [Hent data fra Excel](service-get-data-from-files.md).
 
 **Power BI Desktop** (.pbix) – Du kan bruge Power BI Desktop til at forespørge på og indlæse data fra eksterne datakilder, udvide din datamodel med målinger og relationer samt oprette rapporter. Du kan importere din Power BI Desktop-fil til dit Power BI-websted. Power BI Desktop er bedst til mere erfarne brugere, der har en god forståelse af deres datakilder, dataforespørgsel og omdannelse samt datamodelleringsbegreber. Du kan finde flere oplysninger i [Opret forbindelse til data i Power BI Desktop](desktop-connect-to-data.md).
 
@@ -44,7 +44,7 @@ Du kan hente data fra enhver af disse datakilder i Power BI ved at klikke på **
 
 Til andre filtyper som XML-tabel (.xml) eller tekstfiler (.txt) kan du bruge Hent og omdan til at forespørge på, omdanne og indlæse disse data i en Excel- eller Power BI Desktop-fil først. Du kan derefter importere Excel- eller Power BI Desktop-filen til Power BI.
 
-Det gør også en stor forskel, hvor du gemmer dine filer. OneDrive for Business giver den største fleksibilitet og integration med Power BI. Hvis du gemmer dine filer på den lokale harddisk, er det fint, men hvis du vil opdatere dataene, skal der udføres nogle få ekstra trin. Der findes flere oplysninger i de artikler, der linkes til.
+Det gør også en stor forskel, hvor du gemmer dine filer. OneDrive for Business giver den største fleksibilitet og integration med Power BI. Hvis du gemmer dine filer på dit lokale drev, er det fint, men hvis du vil opdatere dataene, skal der udføres nogle få ekstra trin. Der findes flere oplysninger i de artikler, der linkes til.
 
 ## <a name="content-packs"></a>Indholdspakker
 ![](media/service-get-data/pbi_getdata_contentpacks.png)
@@ -60,9 +60,9 @@ Indholdspakker indeholder alle data og rapporter, du har brug for – allerede f
 
 **Databaser i clouden** – Fra Power BI-tjenesten kan du oprette direkte forbindelse til Azure SQL Database, Azure SQL Data Warehouse, Spark on Azure HD Insight og SQL Server Analysis Services ved hjælp af DirectQuery. Forbindelser fra Power BI til disse databaser er live. Det betyder, at når du har oprettet forbindelse til eksempelvis en Azure SQL Database, og du begynder at udforske dens data ved at oprette rapporter i Power BI, udføres der en forespørgsel direkte til databasen, når du opretter udsnit af dine data eller føjer et andet felt til en visualisering. Du kan få mere at vide i [Azure og Power BI](service-azure-and-power-bi.md).
 
-**Databaser i det lokale miljø** – Fra Power BI-tjenesten kan du oprette forbindelse til SQL Server Analysis Services-tabelmodeldatabaser. En Power BI Enterprise-gateway er obligatorisk. Hvis du er i tvivl om, hvordan du opretter forbindelse til din organisations tabelmodeldatabase, kan du kontakte administratoren eller it-afdelingen. Du kan få mere at vide i [SQL Server Analysis-tabeldata i Power BI](sql-server-analysis-services-tabular-data.md).
+**Databaser i det lokale miljø** – Fra Power BI-tjenesten kan du oprette forbindelse til SQL Server Analysis Services-tabelmodeldatabaser. En Power BI Enterprise-gateway er obligatorisk. Hvis du er i tvivl om, hvordan du opretter forbindelse til din organisations tabellariske modeldatabase, kan du kontakte administratoren eller it-afdelingen. Du kan få mere at vide i [SQL Server Analysis-tabeldata i Power BI](sql-server-analysis-services-tabular-data.md).
 
-For andre typer af databaser i din organisation skal du først bruge Power BI Desktop eller Excel til at oprette forbindelse til, forespørge på og indlæse data i en datamodel. Du kan derefter importere din fil til Power BI, hvor der oprettes et datasæt. Hvis du konfigurerer planlagt opdatering, vil Power BI bruge forbindelsesoplysningerne fra filen sammen med indstillinger for opdatering, som du konfigurerer, til at oprette direkte forbindelse til datakilden og forespørge på opdateringer. Disse opdateringer indlæses derefter i datasættet i Power BI. Du kan finde flere oplysninger i [Opret forbindelse til data i Power BI Desktop](desktop-connect-to-data.md).
+I forbindelse med andre typer af databaser i din organisation skal du først bruge Power BI Desktop eller Excel til at oprette forbindelse til, forespørge på og indlæse data i en datamodel. Du kan derefter importere din fil til Power BI, hvor der oprettes et datasæt. Hvis du konfigurerer planlagt opdatering, vil Power BI bruge forbindelsesoplysningerne fra filen sammen med indstillinger for opdatering, som du konfigurerer, til at oprette direkte forbindelse til datakilden og forespørge på opdateringer. Disse opdateringer indlæses derefter i datasættet i Power BI. Du kan finde flere oplysninger i [Opret forbindelse til data i Power BI Desktop](desktop-connect-to-data.md).
 
 ## <a name="what-if-my-data-comes-from-a-different-source"></a>Hvad nu, hvis mine data kommer fra en anden kilde?
 Der er bogstaveligt talt hundredvis af forskellige datakilder, som du kan bruge sammen med Power BI. Men uanset hvor du henter dataene fra, skal disse data være i et format, som Power BI-tjenesten kan bruge til at oprette rapporter og dashboards, besvare spørgsmål med Spørgsmål og svar osv.
@@ -71,9 +71,9 @@ Nogle datakilder har allerede deres data i et format, der er klar til Power BI-t
 
 I andre tilfælde kan det være nødvendigt at forespørge på og indlæse de ønskede data i en fil. Lad os for eksempel antage, at du har logistikdata i en data warehouse-database på en server i din organisation. I Power BI-tjenesten kan du ikke oprette direkte forbindelse til denne database og begynde at udforske dataene (medmindre det er en tabelmodeldatabase). Du kan dog bruge Power BI Desktop eller Excel til at forespørge på og indlæse disse logistikdata i en datamodel, som du derefter gemmer som en fil. Du kan derefter importere filen til Power BI, hvor der oprettes et datasæt.
 
-Nu tænker du nok "Men disse logistikdata på denne database ændres hver dag. Hvordan sikrer jeg, at mit datasæt i Power BI er opdateret?� Forbindelsesoplysningerne fra Power BI Desktop- eller Excel-filen importeres til datasættet sammen med dataene. Hvis du konfigurerer planlagt opdatering eller udfører en manuel opdatering af datasættet, vil Power BI bruge forbindelsesoplysningerne fra datasættet, sammen med et par andre indstillinger, til at oprette direkte forbindelse til databasen, søge efter opdateringer og indlæse disse opdateringer i datasættet. Det vil sandsynligvis kræve en Power BI-gateway for at sikre dataoverførsel mellem den lokale server og Power BI. Visualiseringer i rapporter og dashboards opdateres automatisk.
+Nu tænker du nok �Men disse logistikdata på denne database ændres hver dag. Hvordan sikrer jeg, at mit datasæt i Power BI er opdateret?� Forbindelsesoplysningerne fra Power BI Desktop- eller Excel-filen importeres til datasættet sammen med dataene. Hvis du konfigurerer planlagt opdatering eller udfører en manuel opdatering af datasættet, vil Power BI bruge forbindelsesoplysningerne fra datasættet, sammen med et par andre indstillinger, til at oprette direkte forbindelse til databasen, søge efter opdateringer og indlæse disse opdateringer i datasættet. Det vil sandsynligvis kræve en Power BI-gateway for at sikre dataoverførsel mellem den lokale server og Power BI. Visualiseringer i rapporter og dashboards opdateres automatisk.
 
-Forstår du, bare fordi du ikke kan oprette forbindelse til din datakilde direkte fra Power BI-tjenesten, betyder det ikke, at du ikke kan hente disse data ind i Power BI. Det kræver måske blot lige et par yderligere trin og lidt hjælp fra it-afdelingen. Se [Datakilder i Power BI Desktop](desktop-data-sources.md) for at få flere oplysninger.
+Forstår du, bare fordi du ikke kan oprette forbindelse til din datakilde direkte fra Power BI tjenesten, betyder det ikke, at du ikke kan hente disse data ind i Power BI. Det kræver måske blot lige et par yderligere trin og lidt hjælp fra it-afdelingen. Se [Datakilder i Power BI Desktop](desktop-data-sources.md) for at få flere oplysninger.
 
 ## <a name="some-more-details"></a>Lidt flere oplysninger
 Du vil se, at begreberne datasæt og datakilde bruges meget i Power BI. De bruges ofte synonymt, men er rent faktisk to forskellige ting, omend relaterede.
@@ -91,7 +91,7 @@ Indholdspakker fra tjenester opdateres automatisk. I de fleste tilfælde en gang
 
 Azure SQL Database, Azure SQL Data Warehouse og Spark på Azure HDInsight er unikke, fordi de er datakilder i clouden. Da Power BI-tjenesten også er i clouden, kan Power BI kan oprette liveforbindelse til dem ved hjælp af DirectQuery. Hvad du ser i Power BI er altid synkroniseret, og det er ikke nødvendigt at konfigurere opdatering.
 
-SQL Server Analysis Services er unik i og med, at når du opretter forbindelse til den fra Power BI, er det en liveforbindelse på samme måde som en Azure-database i clouden, men selve databasen er på en server i organisationen. Denne type forbindelse kræver en Power BI-gateway, som normalt er konfigureret af en it-afdeling.
+SQL Server Analysis Services er unik i og med, at når du opretter forbindelse til den fra Power BI, er det en liveforbindelse på samme måde som en Azure database i cloudmiljøet, men selve databasen er på en server i organisationen. Denne type forbindelse kræver en Power BI-gateway, som normalt er konfigureret af en it-afdeling.
 
 Opdatering af data er en supervigtig del af Power BI og alt for omfattende til at behandle her. Hvis du vil have en grundig forståelse, kan du finde oplysninger i [Opdatering af data i Power BI](refresh-data.md).
 

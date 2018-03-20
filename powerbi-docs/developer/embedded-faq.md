@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/15/2018
+ms.date: 03/07/2018
 ms.author: maghan
-ms.openlocfilehash: 9d387208b1ace0b0f0fd700b471e07e3b2584883
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 52ff1095c063be867354a23e0e8e4908a4b4e1d7
+ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -66,7 +66,7 @@ Power BI er tilgængeligt nu.
 
 ## <a name="technical"></a>Tekniske spørgsmål
 
-### <a name="what-is-the-difference-between-the-a-skus-in-azure-and-em-skus-in-office-365"></a>Hvad er forskellen mellem A-SKU'er i Azure og EM-SKU'er i Office 365?
+### <a name="what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365"></a>Hvad er forskellen mellem A SKU'erne i Azure og EM-SKU'erne i Office 365?
 
 PowerBI.com er en virksomhedsløsning, der indeholder mange funktioner som f.eks. socialt samarbejde, mailabonnement, osv. i en SaaS-ydelse
 
@@ -128,6 +128,10 @@ Brug PowerBI.com til at tildele/fjerne tildelte arbejdsområder fra Power BI Emb
 
 Det sydøstlige Australien, det sydlige Brasilien, det centrale Canada, det østlige USA 2, det vestlige Indien, det østlige Japan, det nordlige-centrale USA, det nordlige Europa, det sydlige-centrale USA, Sydøstasien, det sydlige Storbritannien, Vesteuropa, det vestlige USA og det vestlige USA 2.
 
+### <a name="what-type-of-content-pack-data-can-be-embedded"></a>Hvilken type indholdspakke med data kan integreres?
+
+**Dashboards** og **felter**, der er bygget på baggrund af indholdspakker med datasæt *kan ikke* integreres, men **rapporter** bygget på baggrund af en indholdspakke med datasæt *kan* godt integreres.
+
 ## <a name="licensing"></a>Licensering
 
 ### <a name="how-do-i-purchase-power-bi-embedded"></a>Hvordan køber jeg Power BI Embedded?
@@ -170,7 +174,7 @@ Kunder kan ændre deres brug på timebasis. Der er ingen månedlig eller årlig 
 
 ### <a name="where-is-power-bi-embedded-available-us-government-germany-china-what-is-the-timing"></a>Hvor er Power BI Embedded tilgængelig? USA's regering? Tyskland? Kina? Hvad er tidsindstillingen?
 
-Power BI Embedded er tilgængeligt i Azure kommercielle skybaseret tjeneste hos GA.  Sovereign sky-tjeneste bliver tilføjet i fremtiden.
+Power BI Embedded er tilgængelig i kommercielle Azure cloudmiljøer og i US Government-cloudmiljøet.  En national cloud bliver tilgængelig i Tyskland og Kina i fremtiden.
 
 ### <a name="is-power-bi-embedded-available-for-non-profits-and-educational"></a>Er Power BI Embedded tilgængelig for almennyttige organisationer og uddannelsesinstitutioner?
 

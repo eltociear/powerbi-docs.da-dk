@@ -1,6 +1,6 @@
 ## <a name="general"></a>Generelt
 **Spørgsmål:** Hvad hedder den faktiske Windows-tjeneste?  
-**Svar:** Gatewayen kaldes i for Gatewaytjeneste i det lokale miljø under Tjenester
+**Svar:** Gatewayen kaldes datagateway i det lokale miljø i tjenesterne
 
 **Spørgsmål:** Hvilke krav er der til gatewayen?  
 **Svar:** Du kan se afsnittet om krav i den primære [gatewayartikel](../service-gateway-onprem.md).
