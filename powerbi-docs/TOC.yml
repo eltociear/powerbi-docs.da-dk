@@ -14,7 +14,7 @@
           href: service-get-data.md
         - name: Find rundt i Power BI – navigationsoplevelse
           href: service-the-new-power-bi-experience.md
-        - name: '10 tip til, hvordan du får hjælp'
+        - name: 10 tips til at få hjælp
           href: service-tips-for-finding-help.md
         - name: Søgning og sortering af indhold
           href: service-navigation-search-filter-sort.md
@@ -70,7 +70,7 @@
       items:
         - name: 'Foretrukne dashboards, rapporter og apps i Power BI'
           href: service-dashboard-favorite.md
-        - name: 'Udskriv et dashboard, udskriv et dashboardfelt, udskriv en rapportside'
+        - name: 'Udskriv et dashboard, udskriv et dashboard-felt, udskriv en rapportside'
           href: service-print.md
         - name: Seneste indhold
           href: service-recent.md
@@ -250,7 +250,7 @@
           href: service-insights.md
         - name: 'Typerne af Quick Insights, der understøttes af Power BI'
           href: service-insight-types.md
-        - name: Optimer dine data til Power BI Hurtig indsigt
+        - name: Optimer dine data til Power BI Quick Insights
           href: service-insights-optimize.md
         - name: Udvalgte dashboards i Power BI
           href: service-dashboard-featured.md
@@ -262,7 +262,7 @@
           href: service-dashboard-add-image.md
         - name: Dashboard data-klassificering
           href: service-data-classification.md
-    - name: Stil dine data spørgsmål
+    - name: Stil spørgsmål til dine data
       items:
         - name: Oversigt
           items:
@@ -282,15 +282,15 @@
           items:
             - name: Brug af Spørgsmål og svar med Power BI Gateway – Enterprise data (Eksempelvisning)
               href: service-q-and-a-direct-query.md
-            - name: Få dine data til at virke sammen med Spørgsmål og svar i Power BI
+            - name: Få dine data til at fungere godt med Spørgsmål og svar i Power BI
               href: service-prepare-data-for-q-and-a.md
-            - name: Aktivér Cortana til Power BI
+            - name: Aktiver Cortana til Power BI
               href: service-cortana-enable.md
-            - name: Opret udvalgte spørgsmål til Power BI Spørgsmål og svar
+            - name: Opret udvalgte spørgsmål til Spørgsmål og svar i Power BI
               href: service-q-and-a-create-featured-questions.md
         - name: Ressourcer
           items:
-            - name: 'Tip og tricks til, hvordan du stiller spørgsmål med Spørgsmål og svar i Power BI'
+            - name: Tip og tricks til at stille spørgsmål med Spørgsmål og svar i Power BI
               href: service-q-and-a-tips.md
             - name: Fejlfinding af Cortana
               href: service-cortana-troubleshoot.md
@@ -304,13 +304,13 @@
           href: service-create-distribute-apps.md
         - name: 'Organisationsindholdspakker: Introduktion'
           href: service-organizational-content-pack-introduction.md
-        - name: Opret og udgiv en organisationsindholdspakke (selvstudium)
+        - name: Opret og publicer en organisationsindholdspakke (selvstudium)
           href: service-organizational-content-pack-create-and-publish.md
         - name: Del dashboards og rapporter
           href: service-share-dashboards.md
         - name: Del en filtreret rapport
           href: service-share-reports.md
-        - name: Udgiv fra Power BI på internettet
+        - name: Publicer fra Power BI på internettet
           href: service-publish-to-web.md
         - name: Integrer rapport i SharePoint Online
           href: service-embed-report-spo.md
@@ -356,13 +356,13 @@
           href: power-bi-how-to-report-filter.md
         - name: Analysér i Excel
           href: service-analyze-in-excel.md
-        - name: 'Rediger den måde, visualiseringer interagerer i en rapport'
+        - name: 'Rediger, hvordan visualiseringer interagerer i en rapport'
           href: service-reports-visual-interactions.md
         - name: Åbn en Power BI-rapport i Læsevisning eller Redigeringsvisning
           href: service-reading-view-and-editing-view.md
         - name: Interager med en rapport i Redigeringsvisning i Power BI
           href: service-interact-with-a-report-in-editing-view.md
-        - name: 'Tip og tricks til, hvordan du opretter rapporter i Power BI-tjenesten'
+        - name: Tips og tricks til oprettelse af rapporter i Power BI-tjenesten
           href: power-bi-reports-tips-and-tricks-for-creating.md
         - name: Analytics-rude
           href: service-analytics-pane.md
@@ -382,7 +382,7 @@
           href: power-bi-report-copy-paste-page.md
         - name: Eksporter en rapport fra Power BI service til Skrivebord (Eksempelsvisning)
           href: service-export-to-pbix.md
-        - name: Filtrer en rapport med forespørgselsstrengparametre i URL-adressen
+        - name: Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
           href: service-url-filters.md
         - name: Bedste praksis for oprettelse af hurtige og pålidelige rapporter i Power BI
           href: power-bi-reports-performance.md
@@ -394,11 +394,11 @@
           href: power-bi-visualization-types-for-reports-and-q-and-a.md
         - name: Bedste praksisser for visualisering
           href: power-bi-visualization-best-practices.md
-        - name: Tilpas visualiseringer i Power BI
+        - name: Brugerdefinerede visualiseringer i Power BI
           href: power-bi-custom-visuals.md
         - name: Brugerdefinerede visualiseringer til organisationer i Power BI
           href: power-bi-custom-visuals-organization.md
-        - name: 'Selvstudium: Del I – føj visualiseringer til en Power BI-rapport'
+        - name: 'Selvstudium: Del 1, Føj visualiseringer til en rapport i Power BI'
           href: power-bi-report-add-visualizations-i.md
         - name: 'Selvstudium: Del 2, Føj visualiseringer til en rapport i Power BI'
           href: power-bi-report-add-visualizations-ii.md
@@ -556,6 +556,10 @@
           href: service-admin-service-free-in-your-organization.md
         - name: Køb Power BI Pro
           href: service-admin-purchasing-power-bi-pro.md
+        - name: Tildeling af Power BI Pro
+          href: service-admin-assigning-power-bi-pro-licenses.md
+        - name: Power BI Pro i din organisation
+          href: service-admin-power-bi-pro-in-your-organization.md
         - name: Power BI styrings- og installationsmetoder
           href: service-admin-governance.md
         - name: Power BI sikkerhed
@@ -616,11 +620,11 @@
           href: service-admin-troubleshoot-excel-workbook-data.md
         - name: Fejlfinding af feltfejl
           href: refresh-troubleshooting-tile-errors.md
-        - name: 'Sådan opdaterer du dine legitimationsoplysninger til din indholdspakke fra Xero, hvis opdateringen mislykkedes'
+        - name: 'Sådan opdaterer du dine legitimationsoplysninger til Xero-indholdspakken, hvis opdatering mislykkedes'
           href: service-refresh-xero-credentials.md
 - name: Power BI Desktop
   items:
-    - name: Kom godt i gang
+    - name: Kom i gang
       items:
         - name: Hent Power BI Desktop
           href: desktop-get-the-desktop.md
@@ -762,7 +766,7 @@
           href: desktop-analytics-pane.md
         - name: Flere markeringer i Power BI
           href: desktop-multi-select.md
-        - name: Brug af indsigt i Power BI Desktop
+        - name: Brug af indsigter i Power BI Desktop
           href: desktop-insights.md
         - name: Udsnit i Power BI Desktop
           href: desktop-slicers.md
@@ -774,7 +778,7 @@
           href: desktop-report-themes.md
         - name: Brug Hurtigmålinger
           href: desktop-quick-measures.md
-        - name: Brug af What if-parametre
+        - name: Brug af Hvad hvis-parametre
           href: desktop-what-if.md
         - name: Brug detaljeadgang
           href: desktop-drillthrough.md
@@ -802,15 +806,15 @@
           href: desktop-add-column-from-example.md
         - name: Tilføj en brugerdefineret kolonne
           href: desktop-add-custom-column.md
-        - name: Opret dynamiske visualiseringer i Power BI
+        - name: Opret responsive visualiseringer i Power BI
           href: desktop-create-responsive-visuals.md
         - name: Brug indbyggede hierarkinavne i Power BI Desktop (Prøveversion)
           href: desktop-inline-hierarchy-labels.md
-        - name: Brug af udsnitsværktøjet til numerisk område
+        - name: Brug det numeriske interval-udsnitsværktøj
           href: desktop-slicer-numeric-range.md
         - name: 'Opret hurtigt reagerende udsnitsværktøj, som du kan ændre størrelsen på'
           href: power-bi-slicer-filter-responsive.md
-        - name: Opret brugerdefinerede Power BI-svarkort til Cortana
+        - name: Opret tilpassede Power BI-svarkort for Cortana
           href: service-cortana-answer-cards.md
         - name: Sikkerhed på rækkeniveau
           href: desktop-rls.md
@@ -850,7 +854,7 @@
   items:
     - name: Kom i gang
       items:
-        - name: Power BI-apps til mobilenheder
+        - name: Power BI-mobilapps til mobile enheder
           href: mobile-apps-for-mobile-devices.md
         - name: 'Find dashboards, rapporter og apps på en mobilenhed'
           href: mobile-apps-find-content-mobile-devices.md
@@ -888,15 +892,15 @@
           href: mobile-apps-geographic-filtering.md
         - name: Stil spørgsmål om dine data i iOS-mobilapps (Selvstudium)
           href: mobile-apps-ios-qna.md
-        - name: Opret et dybt link til en bestemt placering
+        - name: 'Opret en dybt link, der fører til en bestemt placering'
           href: mobile-apps-deep-link-specific-location.md
         - name: Få vist dine data offline i mobilappsene
           href: mobile-apps-offline-data.md
         - name: 'Få vist og interager med rapporter, der er optimeret til din telefon'
           href: mobile-apps-view-phone-report.md
-        - name: Konfigurer mobilapps med Intune
+        - name: Konfiguration af mobilapps med Intune
           href: service-admin-mobile-intune.md
-        - name: Sådan bruges OAuth til at oprette forbindelse til Reporting Services
+        - name: Brug af OAuth til at oprette forbindelse til Reporting Services
           href: mobile-oauth-ssrs.md
         - name: Understøttede sprog i mobilappsene
           href: mobile-apps-supported-languages.md
@@ -908,7 +912,7 @@
       items:
         - name: Kom i gang med Power BI til iOS-app på en iPhone
           href: mobile-iphone-app-get-started.md
-        - name: Power BI Apple Watch-app
+        - name: Power BI-app til Apple Watch
           href: mobile-apple-watch.md
         - name: Scan en stregkode med appen på din iPhone
           href: mobile-apps-scan-barcode-iphone.md
@@ -924,19 +928,19 @@
           href: mobile-android-tablet-app-get-started.md
     - name: Power BI-app til Windows 10-enheder
       items:
-        - name: Kom i gang med Power BI-mobilappen til Windows 10
+        - name: Kom i gang med Power BI-mobilapp til Windows 10
           href: mobile-windows-10-phone-app-get-started.md
         - name: Få vist Reporting Services-mobilrapporter og KPI'er i mobilappen til Windows 10
           href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
-        - name: Sæt et Power BI-felt eller -dashboard på startskærmen
+        - name: Fastgør et Power BI-felt eller -dashboard til startskærmen
           href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-        - name: Se Power BI i præsentationstilstand på Surface Hub
+        - name: Få vist Power BI i præsentationstilstand på Surface Hub
           href: mobile-windows-10-app-presentation-mode.md
 - name: Power BI Developer
   items:
     - name: Oversigt
       items:
-        - name: Hvad kan udviklere gøre med Power BI?
+        - name: Hvad kan udviklere bruge Power BI til?
           href: developer/what-can-you-do.md
         - name: Hvad kan jeg bruge Power BI-API'en til?
           href: developer/overview-of-power-bi-rest-api.md
@@ -954,7 +958,7 @@
           href: developer/integrate-tile.md
         - name: Integrer en Power BI-rapport i en app (brugeren ejer data)
           href: developer/integrate-report.md
-        - name: Integrer indhold i din app (appen ejer dataene)
+        - name: Integrer indhold i din app (app ejer data)
           href: developer/embed-sample-for-customers.md
         - name: Indlejr brugerdefinerede layout i en app
           href: developer/embedded-custom-layout.md
@@ -980,9 +984,9 @@
           href: developer/embedded-faq.md
     - name: Opret en brugerdefineret visualisering
       items:
-        - name: Opret en brugerdefineret visualisering med udviklerværktøjerne
+        - name: Opret en brugerdefineret visualisering med Udviklerværktøj
           href: service-custom-visuals-getting-started-with-developer-tools.md
-        - name: Certificer en brugerdefineret visualisering
+        - name: Få en brugerdefineret visualisering certificeret
           href: power-bi-custom-visuals-certified.md
     - name: Overfør data til et dashboard
       items:
@@ -1024,19 +1028,19 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848277'
     - name: Ressourcer
       items:
-        - name: Demo af integration med JavaScript
+        - name: Integreret JavaScript-demonstration
           href: 'https://go.microsoft.com/fwlink/?linkid=848279'
         - name: Eksempler
           href: 'https://go.microsoft.com/fwlink/?linkid=851293'
         - name: Power BI-community
           href: 'https://go.microsoft.com/fwlink/?linkid=848280'
-        - name: Stakoverløb
+        - name: Stack Overflow
           href: 'https://go.microsoft.com/fwlink/?linkid=848281'
-- name: Power BI-rapportserver
+- name: Power BI Report Server
   items:
     - name: Oversigt
       items:
-        - name: Kom godt i gang
+        - name: Kom i gang
           href: report-server/get-started.md
         - name: Hvad er nyt
           href: report-server/whats-new.md
@@ -1044,11 +1048,11 @@
           href: report-server/changelog.md
         - name: Support-tidslinje
           href: report-server/support-timeline.md
-    - name: Brugervejledning
+    - name: Brugerhåndbog
       items:
         - name: Oversigt
           href: report-server/user-handbook-overview.md
-        - name: Naviger i indhold
+        - name: Navigering i indhold
           href: report-server/getting-around.md
         - name: 'Hurtigstart: Power BI-rapporter'
           href: report-server/quickstart-create-powerbi-report.md
@@ -1080,11 +1084,11 @@
           href: report-server/quickstart-embed.md
         - name: Fejlfinding i forbindelse med planlagt opdatering
           href: report-server/scheduled-refresh-troubleshoot.md
-    - name: Administratorvejledning
+    - name: Administratorhåndbog
       items:
         - name: Oversigt
           href: report-server/admin-handbook-overview.md
-        - name: Krav til hardware og software
+        - name: Hardware- og softwarekrav
           href: report-server/system-requirements.md
         - name: Find din produktnøgle
           href: report-server/find-product-key.md
@@ -1106,7 +1110,7 @@
           href: report-server/capacity-planning.md
         - name: Excel-projektmapper
           href: report-server/excel-oos.md
-    - name: Udviklervejledning
+    - name: Udvikler-håndbog
       items:
         - name: Oversigt
           href: report-server/developer-handbook-overview.md
