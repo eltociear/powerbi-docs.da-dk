@@ -1,28 +1,28 @@
 ---
-title: "Slet et dashboard, en rapport, en projektmappe, et datasæt eller et arbejdsområde fra Power BI"
-description: "Få mere at vide, hvordan du sletter næsten alt fra Power BI"
+title: Slet et dashboard, en rapport, en projektmappe, et datasæt eller et arbejdsområde fra Power BI
+description: Få mere at vide, hvordan du sletter næsten alt fra Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/02/2018
+ms.date: 03/03/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 3d20b27b24851872b05a9c7dccb383032e1d65b8
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 9c8c7e7406b70f35f0669dfc3e565671777665ad
+ms.sourcegitcommit: 3841bcdb5e664568defe3d6a6e6b8cab3cd7087f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Slet næsten alt i Power BI-tjenesten
 I denne artikel kan du lære, hvordan du sletter et dashboard, en rapport, en projektmappe, et datasæt, en app og et arbejdsområde i Power BI-tjenesten.
