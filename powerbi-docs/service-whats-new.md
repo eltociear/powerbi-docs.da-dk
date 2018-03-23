@@ -2,27 +2,28 @@
 title: Nyheder i Power BI-tjenesten
 description: Nyheder i Power BI-tjenesten
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
 backup: sirsu
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/07/2018
+ms.date: 03/22/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: b3e12a9bdfa6643351cdfc82ce9051197df6ee1e
-ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
+ms.openlocfilehash: a388f090eac1896c7f47d7d16251c419fc4c33c2
+ms.sourcegitcommit: 3841bcdb5e664568defe3d6a6e6b8cab3cd7087f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/23/2018
+---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
 Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner i **Power BI-tjenesten**. Du kan finde relaterede oplysninger om nyheder under:
@@ -36,7 +37,17 @@ Du kan også tjekke YouTube-kanalerne for at få mere at vide om nyheder og funk
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="january-2018"></a>Januar 2018
+## <a name="march-2018"></a>Marts 2018
+* [Faste filtre](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) i Power BI-tjenesten.
+* Del indhold med brugere vha. deres personlige mailkonti. Udvidelse af [Azure Active Directory B2B](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/).
+
+## <a name="previous-months-2018"></a>Forrige måneder (2018)
+### <a name="february-2018"></a>Februar 2018
+* Installér automatisk [Power BI-apps](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps) for slutbrugere.
+* P4- og P5-kapaciteter under Power BI Premium
+* Eksempelvisning af [brugerdefinerede organisationsvisualiseringer](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-organization).
+
+### <a name="january-2018"></a>Januar 2018
 *   Del Power BI-rapporter, og føj dem til favoritter.
 *   Understøttelse af OAuth2- og DirectQuery-enkeltlogon til Azure SQL Database og Data Warehouse.
 *   Overvågning i området: Overvågningslogge gemmes nu i det samme Office 365-område som deres lejer.
