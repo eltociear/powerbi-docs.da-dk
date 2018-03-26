@@ -2,26 +2,26 @@
 title: Hvad er nyt i mobilapps til Power BI
 description: Hvad er nyt i mobilapps til Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/15/2018
+ms.date: 03/13/2018
 ms.author: maggies
-ms.openlocfilehash: 530e4a2dc47a2d790dde3d7d1e7a2faeb7d79732
-ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
+ms.openlocfilehash: 5c2573bf4a3900b4d4216170e843263bc41a4e07
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -30,11 +30,21 @@ Du kan finde relaterede oplysninger om nyheder under:
 * [Nyheder i Power BI Desktop](desktop-latest-update.md)  
 * [Nyheder i Power BI-tjenesten](service-whats-new.md)  
 
+## <a name="march-2018"></a>Marts 2018
+
+### <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI til Mixed Reality-app (Eksempel)
+
+Vi har udviklet Power BI til Mixed Reality-appen for at give dig nemmere adgang til dine data overalt. Se dine dashboards og rapporter i en virtuel verden, eller placer dem, så du kan se dem på særlige steder i dine omgivelser. Læs mere om den nye [Power BI til Mixed Reality-app](mobile-mixed-reality-app.md).
+
 ## <a name="february-2018"></a>Februar 2018
 
 ### <a name="share-reports"></a>Del rapporter
 
 Nu kan du dele en rapport direkte fra mobilapps. Få mere at vide om [deling af dashboards og rapporter fra mobilapps](mobile-share-dashboard-from-the-mobile-apps.md)
+
+### <a name="improved-tooltips"></a>Forbedrede værktøjstip
+
+Når du trykker på visualiseringen af en rapport og holder den inde for at få vist værktøjstip, kan du nu trække fingeren hen over visualiseringen for at få vist oplysninger om de enkelte datapunkter.
 
 ## <a name="january-2018"></a>Januar 2018
 

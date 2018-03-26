@@ -2,14 +2,14 @@
 title: Brug af ruden Analytics i Power BI Desktop
 description: Opret dynamiske referencelinjer til visuelle effekter i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 24f6f9037937049d24321791046aaf7a14e9fb6f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 369d99406cd286be7cf1afb3c02c98c1711531ae
+ms.sourcegitcommit: 93e7362fc47319959b6992dfd037effdf831d010
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Brug af ruden Analytics i Power BI Desktop
 Med ruden **Analytics** i **Power BI Desktop** kan du tilføje dynamiske *referencelinjer* for visuelle elementer og give vigtige tendenser eller indsigt fokus. Du finder ruden **Analytics** i området **Visualiseringer** i Power BI Desktop.
@@ -60,7 +60,7 @@ Få vist de tilgængelige dynamiske referencelinjer for en visuel effekt ved at 
    ![](media/desktop-analytics-pane/analytics-pane_3.png)
 3. Vælg **+ Tilføj** for at oprette en ny linje. Du kan derefter angive et navn på linjen ved at dobbeltklikke på tekstfeltet og derefter skrive navnet.
    
-   Du har en række forskellige indstillinger for linjen. Du kan f.eks. vælge dens *farve*, *gennemsigtighed*, *typografi* og *position* (forhold til den visuelle effekts dataelementer), og om du vil medtage etiketten. Og som det vigtigste kan du vælge, hvilken **Måling** i den visuelle effekt, du ønsker, at linjen skal være baseret på, ved at vælge rullemenuen **Måling**, som automatisk er udfyldt med dataelementer fra den visuelle effekt. I dette tilfælde vælger vi *Weather* (Vejr) som målingen, mærker den *Average Weather* (Gennemsnitligt vejr) og tilpasser nogle af de andre indstillinger, som vist nedenfor.
+   Du har en række forskellige indstillinger for linjen. Du kan f.eks. vælge dens *farve*, *gennemsigtighed*, *typografi* og *position* (forhold til den visuelle effekts dataelementer), og om du vil medtage etiketten. Og du kan vælge, hvilken **Måling** i den visuelle effekt du ønsker, at linjen skal være baseret på, ved at vælge rullemenuen **Måling**, som automatisk er udfyldt med dataelementer fra den visuelle effekt. I dette tilfælde vælger vi *Weather* (Vejr) som målingen, mærker den *Average Weather* (Gennemsnitligt vejr) og tilpasser nogle af de andre indstillinger, som vist nedenfor.
    
    ![](media/desktop-analytics-pane/analytics-pane_4.png)
 4. Hvis du vil have vist et datanavn, skal du slå skyderen **Datanavn** til. Når du gør dette, får du mange yderligere indstillinger for dit datanavn som vist i følgende billede.

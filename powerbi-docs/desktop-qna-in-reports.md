@@ -1,15 +1,15 @@
 ---
-title: "Brug af Spørgsmål og svar i Power BI Desktop"
-description: "Du kan nu bruge et naturligt sprog til forespørgsler i Power BI Desktop ved hjælp af Spørgsmål og svar"
+title: Brug af Spørgsmål og svar i Power BI Desktop
+description: Du kan nu bruge et naturligt sprog til forespørgsler i Power BI Desktop ved hjælp af Spørgsmål og svar
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/12/2017
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: dacbb31e8e32abfcb34e565958620d579f68b4f2
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d6075832d77f6bea7d7d8588719c4a002cdbf298
+ms.sourcegitcommit: 93e7362fc47319959b6992dfd037effdf831d010
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Brug Spørgsmål og svar i Power BI Desktop til forespørgsler på et naturligt sprog
 Det er effektivt, når du bruger almindelige udtryk og naturligt sprog til dataforespørgsler. Endnu mere effektiv er det, når dataene svarer dig, hvilket Spørgsmål og svar i **Power BI Desktop** gør muligt for dig.
@@ -33,7 +33,7 @@ I afsnittene nedenfor beskriver vi, hvordan du justerer din model, så den funge
 
 ## <a name="add-missing-relationships"></a>Tilføj manglende relationer
 
-Hvis der mangler relationer mellem tabeller i modellen, så kan hverken Power BI-rapporter eller Spørgsmål og svar fortolke, hvordan disse tabeller skal forbindes, hvis du benytter forespørgsler med dem. Relationerne er hjørnestenen i en god model. Eksempelvis kan du ikke bede om "det samlede salg for kunder i Seattle", hvis relationen mellem tabellen *ordrer* og tabellen *kunder* mangler. Følgende billeder viser eksempler på en model, der skal forbedres, og en model, der er klar til Spørgsmål og svar.
+Hvis der mangler relationer mellem tabeller i modellen, kan hverken Power BI-rapporter eller Spørgsmål og svar fortolke, hvordan disse tabeller skal forbindes, hvis du benytter forespørgsler med dem. Relationerne er hjørnestenen i en god model. Eksempelvis kan du ikke bede om "det samlede salg for kunder i Seattle", hvis relationen mellem tabellen *ordrer* og tabellen *kunder* mangler. Følgende billeder viser eksempler på en model, der skal forbedres, og en model, der er klar til Spørgsmål og svar.
 
 **Skal forbedres**
 
@@ -50,7 +50,7 @@ Valget af tabeller og kolonner er yderst vigtigt for Spørgsmål og svar. Hvis d
 
 Selvom Spørgsmål og svar kan benytte basal orddeling og registrering af flertalsformer, så forudsætter Spørgsmål og svar, at dine tabel- og kolonnenavne præcist afspejler deres indhold.
 
-Tænk over et andet eksempel. Forestil dig, at du har tabellen *Personer*, der indeholder for- og efternavne og medarbejdernumre, og du har en anden tabel ved navn *Medarbejdere*, der indeholder medarbejdernumre, jobnumre og startdatoer. Strukturen giver måske mening for personer, der er bekendt med modellen, men når andre benytter forespørgslen "tæl medarbejdere", så får de vist antallet af rækker fra tabellen "Medarbejdere", hvilket nok ikke er optimalt, idet det er tallet for hver eneste job, som hver medarbejder har haft nogensinde. Det er meget bedre at omdøbe tabellerne, så de afspejler deres sande indhold.
+Tænk over et andet eksempel. Forestil dig, at du har en tabel med navnet *Personer*, der indeholder for- og efternavne og medarbejdernumre, og en anden tabel med navnet *Medarbejdere*, der indeholder medarbejdernumre, jobnumre og startdatoer. Strukturen giver måske mening for personer, der er bekendt med modellen, men når andre benytter forespørgslen "tæl medarbejdere", så får de vist antallet af rækker fra tabellen "Medarbejdere", hvilket nok ikke er optimalt, idet det er tallet for hver eneste job, som hver medarbejder har haft nogensinde. Det er meget bedre at omdøbe tabellerne, så de afspejler deres sande indhold.
 
 **Skal forbedres**
 
@@ -93,7 +93,7 @@ Egenskaben **Sortér efter kolonne** tillader sortering efter én kolonne for au
 
 Bare rolig, vi foreslår ikke, at du skal redefinere hele din model. Men der er visse strukturer, som ganske enkelt er så svære, at Spørgsmål og svar ikke vil håndtere dem særlig godt. Hvis du udfører noget grundlæggende normalisering af strukturen af din model, øges Power BI-rapporternes brugbarhed væsentligt, hvilket også gælder Spørgsmål og svar-resultaternes nøjagtighed.
 
-Den generelle regel, du bør følge, er som følger: Hver unikke "ting", som brugeren taler om, bør repræsenteres af nøjagtigt ét modelobjekt (tabel eller kolonne). Så hvis dine brugere taler om kunder, så bør der være ét *kunde*-objekt. Og hvis dine brugere taler om salg, så bør der være ét *salg*-objekt. Det lyder enkelt, ikke? Det kan det også være, afhængigt af hvilken formatering dataene, du starter med, har. Der er rig mulighed for dataformatering i **Forespørgselseditoren**, hvis du får brug for det, mens mange af de mere enkle transformationer kan udføres ved blot at bruge beregninger i Power BI-modellen.
+Den generelle regel, du bør følge, er som følger: Hver unikke "ting", som brugeren taler om, bør repræsenteres af nøjagtigt ét modelobjekt (tabel eller kolonne). Så hvis dine brugere taler om kunder, bør der være ét *kunde*-objekt. Og hvis dine brugere taler om salg, bør der være ét *salg*-objekt. Det lyder enkelt, ikke? Det kan det også være, afhængigt af hvilken formatering dataene, du starter med, har. Der er rig mulighed for dataformatering i **Forespørgselseditoren**, hvis du får brug for det, mens mange af de mere enkle transformationer kan udføres ved blot at bruge beregninger i Power BI-modellen.
 
 De følgende sektioner indeholder nogle gængse transformationer, som du kan få brug for at udføre.
 
@@ -154,7 +154,7 @@ Hvis du på samme måde har en "fulde navn"-kolonne for en person, så bør du t
 
 ### <a name="create-new-tables-for-multi-value-columns"></a>Opret nye tabeller for flerværdikolonner
 
-En lignende situation forekommer, hvis kilden, hvorfra du importerer dataene, indeholder flerværdikolonner, så rækker Power BI-rapporter (og Spørgsmål og svar) ikke ind i kolonnen for at opdele dens indhold. Så hvis du f.eks. har en Komponist-kolonne, der indeholder navnene på flere komponister til en sang, så bør du opdele den i flere rækker i en særskilt tabel over *Komponister*.
+En lignende situation forekommer, hvis kilden, hvorfra du importerer dataene, indeholder flerværdikolonner, så rækker Power BI-rapporter (og Spørgsmål og svar) ikke ind i kolonnen for at opdele dens indhold. Så hvis du f.eks. har en Komponist-kolonne, der indeholder navnene på flere komponister til en sang, bør du opdele den i flere rækker i en særskilt tabel over *Komponister*.
 
 **Skal forbedres**
 
@@ -180,11 +180,11 @@ Den eneste undtagelse for reglen "normalisering er bedre" opstår, når der er f
 
 Dette trin gælder specielt for Spørgsmål og svar (og ikke for Power BI-rapporter generelt). Brugere har ofte en række ord, som de bruger til at henvise til det samme, som f.eks. samlet salg, nettosalg, samlet nettosalg. Power BI-modellen giver mulighed for, at disse synonymer kan føjes til tabeller og kolonner inden for modellen. 
 
-Dette kan være et særdeles vigtigt trin. Selv med helt enkle tabel- og kolonnenavne så benytter brugere af Spørgsmål og svar sig af forespørgsler med nogle ord, der lige falder dem ind, og vælger ikke ordene på en foruddefineret liste over kolonner. Jo mere fornuftige synonymer, du kan tilføje, jo bedre er brugernes oplevelse med din rapport. For at tilføje synonymer skal du i visningen **Relationer** vælge knappen Synonymer på båndet, som vist på det følgende billede.
+Dette kan være et særdeles vigtigt trin. Selv med helt enkle tabel- og kolonnenavne så benytter brugere af Spørgsmål og svar sig af forespørgsler med nogle ord, der lige falder dem ind, og vælger ikke ordene på en foruddefineret liste over kolonner. Jo mere fornuftige synonymer, du kan tilføje, jo bedre er brugernes oplevelse med din rapport. Hvis du vil tilføje synonymer, skal du vælge knappen Synonymer på båndet i visningen **Relationer**, som vist på følgende billede.
 
 ![Føj synonymer til Spørgsmål og svar](media/desktop-qna-in-reports/desktop-qna_21.png)
 
-Feltet **Synonymer** vises i højre side af **Power BI Desktop**, hvor du kan tilføje dine synonymer, som vist på det følgende billede.
+Feltet **Synonymer** vises i højre side af **Power BI Desktop**, hvor du kan tilføje dine synonymer, som vist på følgende billede.
 
 ![Føj synonymer til Spørgsmål og svar](media/desktop-qna-in-reports/desktop-qna_22.png)
 

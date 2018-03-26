@@ -1,15 +1,15 @@
 ---
 title: Opret forbindelse til en webside fra Power BI Desktop
-description: "Opret nemt forbindelse til og brug data på en webside i Power BI Desktop"
+description: Opret nemt forbindelse til og brug data på en webside i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0ee3ff3b3ca33ea4760f9f08b4e05cbd65e2ab34
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 23984d8e64445d869062e942eb6155ff58b0d0ae
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="connect-to-a-web-page-from-power-bi-desktop"></a>Opret forbindelse til en webside fra Power BI Desktop
 Du kan oprette forbindelse til en webside og importere data i Power BI Desktop for at bruge dem i dine visualiseringer og datamodeller.
@@ -47,7 +47,7 @@ Når du vælger **Indlæs**, importerer Power BI Desktop de valgte elementer og 
 
 Så nemt er det at oprette forbindelse til en webside og hente sidens data ind i Power BI Desktop.
 
-Herfra kan du trække felterne til Rapportcanvas og oprette alle de visualiseringer, du vil. Du kan også arbejde i disse data fra denne webside på samme måde som med andre data – du kan udforme dem, oprette relationer mellem dem og andre datakilder i din model og ellers gøre, hvad du vil for at oprette lige præcis den Power BI-rapport, du vil have.
+Herfra kan du trække felterne til Rapportcanvas og oprette alle de visualiseringer, du vil. Du kan også bruge dataene fra denne webside på samme måde som andre data – du kan f.eks. forme dem, oprette relationer mellem dem og andre datakilder i din model og udføre andre handlinger for at oprette præcist den Power BI-rapport, du ønsker.
 
 Hvis du vil se yderligere oplysninger om, hvordan du opretter forbindelse til en webside, skal du se [guiden Introduktion til Power BI Desktop](desktop-getting-started.md).
 

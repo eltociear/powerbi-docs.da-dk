@@ -2,14 +2,14 @@
 title: Analysis Services flerdimensionelle data i Power BI Desktop
 description: Analysis Services flerdimensionelle data i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,16 +18,16 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6009f938d2dc8961dc63cb0ac6b08459f41f3ea3
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 18f80073bf690cd6fc64f94d25f8aad8bf5044e1
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Opret forbindelse til SSAS flerdimensionelle modeller i Power BI Desktop
 Med Power BI Desktop har du adgang til **SSAS flerdimensionelle modeller**, der ofte refereres til som **SSAS MD**.
 
-Hvis du vil oprette forbindelse til en **SSAS MD**-database, skal du vælge **Importér data &gt; Database &gt; SQL Server Analysis Services Database**  som vist på følgende billede.
+Hvis du vil oprette forbindelse til en **SSAS MD**-database, skal du vælge **Hent data &gt; Database &gt; SQL Server Analysis Services Database**  som vist på følgende billede:
 
 ![](media/desktop-ssas-multidimensional/ssas-multidimensional-2.png)
 
@@ -37,13 +37,13 @@ Hvis du vil oprette forbindelse til en **SSAS MD**-database, skal du vælge **Im
 I følgende afsnit beskrives egenskaber og funktioner i Power BI- og SSAS MD-forbindelser.
 
 ### <a name="tabular-metadata-of-multidimensional-models"></a>Metadata for tabeller i flerdimensionelle modeller
-I følgende tabel vises overensstemmelsen mellem flerdimensionelle objekter og metadata for tabeller, der returneres til Power BI Desktop. Power BI forespørger modellen for metadata for tabeller og kører, baseret på de returnerede metadata, relevante DAX-forespørgsler mod Analysis Services, når du opretter en visualisering som f.eks en tabel, en matrix, et diagram eller et udsnit.
+I følgende tabel vises overensstemmelsen mellem flerdimensionelle objekter og metadata for tabeller, der returneres til Power BI Desktop. Når du opretter en visualisering, f.eks en tabel, en matrix, et diagram eller et udsnit, forespørger Power BI modellen efter metadata for tabeller og kører relevante DAX-forespørgsler i Analysis Services baseret på de returnerede metadata.
 
 | BISM-flerdimensionelt objekt | Metadata for tabeller |
 | --- | --- |
 | Kube |Model |
 | Kubedimension |Tabel |
-| Dimensionsattributter (nøgler), navn) |Kolonner |
+| Dimensionsattributter (nøgler), navn |Kolonner |
 | Målegruppe |Tabel |
 | Måling |Måling |
 | Målinger uden tilknyttet målegruppe |I tabellen, der kaldes *Målinger* |
@@ -58,7 +58,7 @@ Målegrupper i en flerdimensionel kube vises i Power BI som tabeller med ∑ for
 I en flerdimensionel model kan du definere et sæt af målinger eller KPI'er i en kube, som skal være placeret i en *visningsmappe*, hvilket kan hjælpe med at forenkle komplekse modeller. Power BI genkender visningsmapper i metadata for tabeller og viser målinger og KPI'er i visningsmapperne. KPI'er i flerdimensionelle databaser understøtter *Værdi*, *Mål*, *Statusgrafik* og *Tendensgrafik*.
 
 ### <a name="dimension-attribute-type"></a>Dimensionsattributtyper
-Flerdimensionelle modeller understøtter også tilknytning af dimensionsattributter med specifikke dimensionsattributtyper. F.eks. vises en **Geografi**-dimension, hvor dimensionsattributterne *By*, *Stat/provins*, *Land/område* og *Postnummer* har relevante geografityper tilknyttet, i metadata for tabeller. Power BI genkender metadataene, hvilket giver dig mulighed for at oprette kortvisualiseringer. Du kan genkende disse tilknytninger vha. *kort*-ikonet ud for elementet i ruden **Felt** i Power BI.
+Flerdimensionelle modeller understøtter også tilknytning af dimensionsattributter med specifikke dimensionsattributtyper. Der vises f.eks. en **Geografi**-dimension, hvor dimensionsattributterne *By*, *Stat/provins*, *Land/område* og *Postnummer* har relevante geografityper tilknyttet, i metadata for tabeller. Power BI genkender metadataene, hvilket giver dig mulighed for at oprette kortvisualiseringer. Du kan genkende disse tilknytninger vha. *kort*-ikonet ud for elementet i ruden **Felt** i Power BI.
 
 Power BI kan også gengive billeder, når du angiver et felt, der indeholder URL-adresser (Uniform Resource Locator) for billederne. Du kan angive disse felter som typen *ImageURL* i SQL Server Data Tools (eller senere i Power BI), og deres typeoplysninger oplyses til Power BI i metadata for tabeller. Power BI kan derefter hente disse billeder fra URL-adressen, og vise dem i visuelle elementer.
 
@@ -71,7 +71,7 @@ Flerdimensionelle modeller understøtter oprettelse af forskellige typer af *ber
 * Beregnede medlemmer på attributhierarkier og ikke sidestillede til *Alle*
 * Beregnede medlemmer på brugerhierarkier
 
-Flerdimensionel model viser *beregnede medlemmer på attributhierarkier* som værdier i en kolonne. Der er nogle få ekstra indstillinger og begrænsninger ved visning af denne type beregnet medlem:
+I flerdimensionelle modeller vises *beregnede medlemmer på attributhierarkier* som værdier i en kolonne. Der er nogle få ekstra indstillinger og begrænsninger ved visning af denne type beregnet medlem:
 
 * Dimensionsattributten kan have et valgfrit *UnknownMember*
 * En attribut, der indeholder beregnede medlemmer, må ikke være nøgleattribut for dimensionen, medmindre den er den eneste attribut for dimensionen

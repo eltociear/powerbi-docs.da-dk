@@ -1,50 +1,58 @@
 ---
-title: "Føj en visualisering, side eller detaljeadgang eller et rapportfilter til en rapport"
-description: "Føj et sidefilter, visualiseringsfilter eller rapportfilter til en rapport i Power BI"
+title: Føj en visualisering, side eller detaljeadgang eller et rapportfilter til en rapport
+description: Føj et sidefilter, visualiseringsfilter eller rapportfilter til en rapport i Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: monitoring
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 03/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: d30941e49915122864976868d36418d53844b927
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: e222b9bddc3e7c204a728e207b8969cdf13d605f
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
-# <a name="add-a-filter-to-a-power-bi-report-in-editing-view"></a>Føj et filter til en rapport i Power Bi (i redigeringsvisning)
+# <a name="add-a-filter-to-a-power-bi-service-report-in-editing-view"></a>Føj et filter til en rapport i Power Bi-tjenesten (i redigeringsvisning)
 > [!TIP]
 > Det anbefales, at du først læser [Om filtre og markering i Power BI-rapporter](power-bi-reports-filters-and-highlighting.md).
+
+Eksemplerne i denne artikel er baseret på Power BI-tjenesten. Trinnene er dog stort set de samme i Power BI Desktop.
 > 
 > 
 
 ## <a name="what-is-the-difference-between-report-filters-in-editing-view-versus-reading-view"></a>Hvad er forskellen mellem rapportfiltrene i redigeringsvisning i forhold til læsevisning?
 Du kan interagere med rapporter i to forskellige tilstande: [Læsevisning](service-reading-view-and-editing-view.md) og [Redigeringsvisning](service-interact-with-a-report-in-editing-view.md).  Og de filterfunktioner, der er tilgængelige, afhænger af hvilken tilstand du arbejder i.
 
-* Du kan tilføje rapport- og sidefiltre samt visualiseringsfiltre i redigeringsvisning. Når du gemmer rapporten, gemmes filtrene sammen med den. Personer, der ser på rapporten i læsevisning, kan arbejde med de filtre, som du har tilføjet, men ikke gemme deres ændringer.
-* I læsevisning kan du arbejde med alle filtre til rapporter, sider og visualiseringer, der allerede findes i rapporten, men du kan ikke gemme dine filterændringer.
+* Du kan tilføje rapport- og sidefiltre samt visualiseringsfiltre i redigeringsvisning. Når du gemmer rapporten, gemmes filtrene sammen med den. Personer, der åbner rapporten i Læsevisning, kan arbejde med de filtre, du har tilføjet.
+* I Læsevisning kan du arbejde med alle de filtre for rapporter, detaljeadgang, sider og visualiseringer, der allerede findes i rapporten, men du kan ikke tilføje nye filtre. De ændringer, du foretager i ruden Filtre, gemmes sammen med rapporten, også selvom rapporten er åbnet i en mobilapp.  
 
 > [!NOTE]
-> I denne artikel beskrives det, hvordan du opretter filtre i **redigeringsvisning**  til rapporter.  Du kan finde flere oplysninger om filtre i læsevisning i afsnittet om [brug af filtre i læsevisning](service-reading-view-and-editing-view.md).
-> 
-> 
+> I denne artikel beskrives det, hvordan du opretter filtre i **redigeringsvisning**  til rapporter.  Du kan finde flere oplysninger om filtre i Læsevisning i afsnittet om [brug af filtre i læsevisning](service-reading-view-and-editing-view.md).
 
-## <a name="visual-filters-page-filters-drillthrough-filters-and-report-filters"></a>Visuelle filtre, sidefiltre, filtre til detaljeadgang og rapportfiltre
-Et **sidefilter** gælder for alle visuelle elementer på rapportsiden. Et **visuelt filter** gælder for et enkelt visuelt element på rapportsiden. Og et **rapportfilter** gælder for alle sider i rapporten.
 
-![](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
+## <a name="filters-available-in-the-power-bi-filters-pane"></a>Tilgængelige filtre i ruden *Filtre* i Power BI
+Uanset om du bruger Desktop-versionen eller Power BI-tjenesten, vises ruden Filtre i højre side af rapportcanvasset. Hvis ruden Filtre ikke er vist, skal du vælge ikonet ">"øverst til højre for at udvide den.
+
+Der findes fire typer filtre.
+
+- **Sidefilter** gælder for alle visuelle elementer på rapportsiden.     
+- **Visuelt filter** gælder for et enkelt visuelt element på rapportsiden.    
+- **Detaljeadgangsfilter** gælder for en bestemt enhed i en rapport.    
+- **Rapportfilter** gælder for alle sider i rapporten.    
+
+    ![](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
 
 ## <a name="add-a-filter-to-a-specific-visualization-aka-visual-filter"></a>Føj et filter til en bestemt visualisering (også kaldet visuelt filter)
 Der er to måder, du kan gøre dette på: 
@@ -130,11 +138,11 @@ Lad os se, hvordan filteret til detaljeadgang fungerer.
 3. Vælg i ruden Felter det felt, du vil tilføje som et nyt filter på rapporteringsniveau, og træk det til området **Filtre på rapporteringsniveau**.  
 4. Vælg de værdier, du vil filtrere efter (se [Sådan bruger du rapportfiltre](power-bi-how-to-report-filter.md)).
 
-De visuelle elementer på den aktive side og på alle sider i rapporten ændres for at afspejle det nye filter. Hvis du gemmer din rapport med filteret, kan rapportlæsere interagere med filteret i læsevisning og markere eller fjerne markering af værdier.
+    De visuelle elementer på den aktive side og på alle sider i rapporten ændres for at afspejle det nye filter. Hvis du gemmer din rapport med filteret, kan rapportlæsere interagere med filteret i læsevisning og markere eller fjerne markering af værdier.
 
 1. Vælg tilbage-pilen for at vende tilbage til den forrige rapportside.
 
-## <a name="troubleshooting"></a>Fejlfinding
+## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 ### <a name="why-your-visual-level-filter-and-page-level-filter-may-return-different-results"></a>Derfor kan dit filter på visualiseringsniveau og dit filter på sideniveau returnere forskellige resultater
 Når du tilføjer et filter på visualiseringsniveau, filtrerer Power BI ud fra de sammenlagte resultater.  Standardsammenlægningen er Sum, men du kan [ændre sammenlægningstypen](service-aggregates.md).  
 

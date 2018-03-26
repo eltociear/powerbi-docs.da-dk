@@ -2,38 +2,40 @@
 title: Oversigt over Power BI-filterruden
 description: Oversigt over filterruden for rapporter i Power BI-tjenesten og Power BI Dashboard
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: monitoring
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/22/2018
+ms.date: 03/15/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 83aed39c8a652ed5b38c18b67f1cdccfc7884240
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 00b0b116aa59ebab1d963a8803f788040761d9f5
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Få en præsentation af ruden Rapportfiltre
 Denne artikel ser nærmere på ruden Rapportfiltre. Du får vist ruden i [redigeringsvisning og læsevisning i Power BI-tjenesten](service-reading-view-and-editing-view.md) og i [rapportvisning i Power BI Desktop](desktop-report-view.md).
 
 Der er mange forskellige måder at filtrere data på i Power BI, og vi anbefaler, at du først læser [Om filtre og fremhævning](power-bi-reports-filters-and-highlighting.md).
 
-## <a name="working-with-filters"></a>Arbejde med filtre
-Rapporter kan åbnes i [Redigeringsvisning eller Læsevisning](service-reading-view-and-editing-view.md). I Redigeringsvisning, kan rapportejere [føje filtre til en rapport](power-bi-report-add-filter.md), og disse filtre gemmes sammen med rapporten. Personer, der får vist rapporten i Læsevisning, kan arbejde med filtrene, men de kan ikke gemme filterændringer i rapporten.
+## <a name="working-with-the-report-filters-pane"></a>Arbejde med ruden Filtre i rapporter
+I Power BI Desktop åbnes rapporter i Rapportvisning. I Power BI-tjenesten kan rapporter åbnes i enten [Redigeringsvisning eller Læsevisning](service-reading-view-and-editing-view.md). I Redigeringsvisning og i Desktop-versionens Rapportvisning kan rapportejere [føje filtre til en rapport](power-bi-report-add-filter.md) og gemme filtrene sammen med rapporten. Personer, der åbner rapporten i Læsevisning, kan arbejde med filtrene, men kan ikke tilføje nye filtre i rapporten.
 
-## <a name="filters-in-reading-view"></a>Filtre i Læsevisning
-Når en rapport er åbnet i læsevisning, vises filterruden i højre side af rapportcanvassen. Hvis du ikke kan se ruden, skal du vælge pilen i øverste højre hjørne for at udvide den.
+I Power BI-tjenesten gemmes de ændringer, du foretager i ruden Filtre, sammen med rapporten og overføres til mobilversionen af rapporten. Du kan nulstille ruden Filtre til opretterens standardindstilling ved at vælge **Nulstil til standard** på den øverste menulinje.     
+
+## <a name="open-the-filters-pane"></a>Åbning af ruden Filtre
+Når en rapport er åbnet, vises ruden Filtre i højre side af rapportcanvasset. Hvis du ikke kan se ruden, skal du vælge pilen i øverste højre hjørne for at udvide den. Hvis du er i Power BI-tjenestens Læsevisning, er ruden Filtre den eneste tilgængelige rude i højre side.
 
 I dette eksempel har vi valgt en visualisering, der indeholder seks filtre. Der er også filtre på rapportsiden. De er angivet under overskriften **Filtre på sideniveau**. Der er ét [detaljeadgangsfilter](power-bi-report-add-filter.md), og et filter for hele rapporten: **FiscalYear** is 2013 or 2014.
 
@@ -43,20 +45,24 @@ Ordet **Alle** er vist ud for nogle af filtrene, og det betyder, at alle værdie
 
 Alle, der får vist denne rapport, kan arbejde med disse filtre.
 
-* få vist oplysninger om filteret ved at holde musen henover og vælge pilen ud for filteret.
+* Få vist oplysninger om filtret ved at pege på det med musen, og vælg pilen ud for filteret.
   
    ![](media/power-bi-how-to-report-filter/power-bi-expan-filter.png)
-* skift filteret. Du kan f.eks. ændre **Lindseys** til **Fashions Direct**.
+* Skift filtret. Du kan f.eks. ændre **Lindseys** til **Fashions Direct**.
   
      ![](media/power-bi-how-to-report-filter/power-bi-filter-chain.png)
-* slet filteret ved at markere **x** ud for filternavnet.
+
+* Nulstil filtrene til den oprindelige tilstand ved at vælge **Nulstil til standard** på den øverste menulinje.    
+    ![](media/power-bi-how-to-report-filter/power-bi-reset-to-default.png)
+    
+* Slet filtret ved at vælge **x** ud for filternavnet.
   
-  Sletning af et filter, fjerner det fra listen, men det sletter ikke dataene i rapporten.  Hvis du f.eks. sletter filteret **FiscalYear is 2013 or 2014**, forekommer dataene for regnskabsårene stadig i rapporten, men de filtreres ikke længere til kun at vise 2013 og 2014. De viser alle de regnskabsår, som dataene indeholder.  Når du sletter filteret, kan du dog ikke redigere det igen, da det er fjernet fra listen. Det er bedre at rydde filteret ved at vælge viskelæderikonet ![](media/power-bi-how-to-report-filter/power-bi-eraser-icon.png).
+  Sletning af et filter, fjerner det fra listen, men det sletter ikke dataene i rapporten.  Hvis du f.eks. sletter filtret **FiscalYear is 2013 or 2014**, bevares dataene for de to regnskabsår i rapporten, men rapporten filtreres ikke længere til kun at vise 2013 og 2014. Den viser alle de regnskabsår, som dataene indeholder.  Når du sletter filteret, kan du dog ikke redigere det igen, da det er fjernet fra listen. Det er bedre at rydde filteret ved at vælge viskelæderikonet ![](media/power-bi-how-to-report-filter/power-bi-eraser-icon.png).
   
   ![](media/power-bi-how-to-report-filter/power-bi-delete-filter.png)
 
 ## <a name="filters-in-editing-view"></a>Filtre i Redigeringsvisning
-Når en rapport er åbnet i Læsevisning, vises ruden Filtre i højre side af rapportcanvassen i den nederste halvdel af **ruden Visualisering**. Hvis du ikke kan se ruden, skal du vælge pilen i øverste højre hjørne for at udvide den.
+Når en rapport er åbnet i Desktop-versionens eller i Power BI-tjenestens Redigeringsvisning, vises ruden Filtre i højre side af rapportcanvassen i den nederste halvdel af **ruden Visualisering**. Hvis du ikke kan se ruden, skal du vælge pilen i øverste højre hjørne for at udvide den.
 
 ![](media/power-bi-how-to-report-filter/power-bi-all-filters.png).  
 
@@ -73,16 +79,16 @@ Hvis du vil have vist indstillingerne for et bestemt filter, skal du vælge pil 
 ![](media/power-bi-how-to-report-filter/pbi_filterlistdropdown.jpg)
 
 ## <a name="clear-a-filter"></a>Ryd et filter
- Vælg viskelæderikonet ![](media/power-bi-how-to-report-filter/pbi_erasericon.jpg) i enten den avancerede eller grundlæggende filtreringstilstand for at nulstille filteret. 
+ Vælg viskelæderikonet ![](media/power-bi-how-to-report-filter/pbi_erasericon.jpg) i enten den avancerede eller grundlæggende filtreringstilstand for at fjerne filtret. 
 
 ## <a name="add-a-filter"></a>Tilføj et filter
-* I redigeringsvisning skal du føje et filter til en visualisering, side, detaljeadgang eller rapport ved at vælge et felt på ruden Felter og trække det til den ønskede filterbrønd, hvor du kan se teksten **Træk felter hertil**. Når et felt er blevet tilføjet som et filter, kan du finjustere det vha. kontrolelementerne til grundlæggende og avanceret filtrering (beskrevet nedenfor).
+* I Desktop-versionens eller Power BI-tjenestens Redigeringsvisning skal du føje et filter til en visualisering, side, detaljeadgang eller rapport ved at vælge et felt i ruden Felter og trække det til den ønskede filterbrønd, hvor du kan se teksten **Træk felter hertil**. Når et felt er blevet tilføjet som et filter, kan du finjustere det vha. kontrolelementerne til grundlæggende og avanceret filtrering (beskrevet nedenfor).
 
 - **Hvis du trækker et nyt felt til filtreringsområdet på visualiseringsniveau**, føjes feltet ikke til visualiseringen, men du kan filtrere visualiseringen med det nye felt. I nedenstående eksempel føjes **Kæde** til visualiseringen som et nyt filter. Bemærk, at hvis du bare tilføjer **Kæde** som et filter, ændres visualiseringen ikke, før du anvender kontrolelementerne til grundlæggende eller avanceret filtrering.
 
     ![](media/power-bi-how-to-report-filter/power-bi-visual-filter.gif)
 
-* Alle de felter, der bruges til at oprette en visualisering, findes også som filtre. Du skal først vælge en visualisering for at aktivere den. De felter, der bruges i visualiseringen, angives i ruden Visualiseringer (hvis du er i Redigeringsvisning) og i ruden Filtre under overskriften **Filtre på visualiseringsniveau**.
+* Alle de felter, der bruges til at oprette en visualisering, findes også som filtre. Du skal først vælge en visualisering for at aktivere den. De felter, der bruges i visualiseringen, angives i ruden Visualiseringer og i ruden Filtre under overskriften **Filtre på visualiseringsniveau**.
   
    ![](media/power-bi-how-to-report-filter/power-bi-visual-filter.png)  
   

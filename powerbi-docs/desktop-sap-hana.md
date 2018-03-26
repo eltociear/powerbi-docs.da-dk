@@ -2,14 +2,14 @@
 title: Brug SAP HANA i Power BI Desktop
 description: Brug SAP HANA i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,16 +18,16 @@ ms.workload: powerbi
 ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: da99de218594d09a8cd76aafa9fc227b648ba7af
-ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
+ms.openlocfilehash: 1c8f3bfc64c6ab895d62749d4d4bc0d2d70d0a9b
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="use-sap-hana-in-power-bi-desktop"></a>Brug SAP HANA i Power BI Desktop
 Med Power BI Desktop har du nu adgang til **SAP HANA**-databaser. Hvis du vil bruge **SAP HANA**, skal SAP HANA ODBC-driveren være installeret på den lokale klientcomputer, for at Power BI Desktop **SAP HANA**-dataforbindelsen skal fungere korrekt. Du kan hente SAP HANA ODBC-driveren fra [SAP Software Download Center](https://support.sap.com/swdc). Herfra kan du søge efter SAP HANA CLIENT til Windows-computere. Da strukturen i **SAP Software Download Center** ofte ændres, kan vi ikke give en mere specifik vejledning til, hvordan du henter programmet.
 
-Hvis du vil oprette forbindelse til en **SAP HANA**-database, skal du vælge **Hent data > Database > SAP HANA-database** som vist i følgende billede.
+Hvis du vil oprette forbindelse til en **SAP HANA**-database, skal du vælge **Hent data > Database > SAP HANA-database** som vist på følgende billede:
 
 ![](media/desktop-sap-hana/sap-hana-1.png)
 
@@ -40,9 +40,9 @@ I denne version understøttes **SAP HANA** i [DirectQuery](desktop-directquery-s
 ### <a name="supported-features-for-sap-hana"></a>Understøttede funktioner til SAP HANA
 Denne version indeholder mange funktioner til **SAP HANA** som vist på listen nedenfor:
 
-* Power BI-forbindelseskomponenten til **SAP HANA** bruger SAP ODBC-driveren til at give den bedste brugeroplevelse.
+* Power BI-forbindelseskomponenten til **SAP HANA** bruger SAP ODBC-driveren for at give den bedste brugeroplevelse.
 * **SAP HANA** understøtter både DirectQuery og Import.
-* Power BI understøtter HANA-oplysningsmodeller (f.eks visningerne Analytics og Calc), og navigation er optimeret.
+* Power BI understøtter HANA-oplysningsmodeller (f.eks visningerne Analytics og Calc) og har optimeret navigation.
 * Med **SAP HANA** kan du også bruge funktionen Direct SQL til at oprette forbindelse til række- og kolonnetabeller.
 * Indeholder optimeret navigation for HANA-modeller.
 * Power BI understøtter **SAP HANA**-parametrene Variabler og Input.

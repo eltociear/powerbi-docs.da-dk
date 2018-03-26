@@ -1,39 +1,39 @@
 ---
-title: "Læsevisning og Redigeringsvisning i Power BI-tjenesten"
-description: "Detaljeret oversigt over forskellen mellem Læsevisning og Redigeringsvisning for rapporter i Power BI-tjenesten"
+title: Læsevisning og Redigeringsvisning i Power BI-tjenesten
+description: Detaljeret oversigt over forskellen mellem Læsevisning og Redigeringsvisning for rapporter i Power BI-tjenesten
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/01/2018
+ms.date: 03/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 6eca438c9e12d99f925aef864ed9b74e16ef30b7
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.openlocfilehash: a9cb6e3d3fe244a3d530efeb2624e3cc5a799e55
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Læsevisning og Redigeringsvisning i rapporter i Power BI-tjenesten
-Der er to forskellige tilstande til at få vist og interagere med rapporter i Power BI-tjenesten (ikke Power BI Desktop): Læsevisning og Redigeringsvisning. Læsevisning er tilgængelig for alle brugere og er især designet til *forbrugere* af data, mens Redigeringsvisning kun er tilgængelig for *oprettere* og ejere af rapporter. 
+Der er to forskellige tilstande til at få vist og interagere med rapporter i Power BI-tjenesten (ikke Power BI Desktop): Læsevisning og Redigeringsvisning. Læsevisning er tilgængelig for alle brugere og er især designet til *forbrugere* af data, mens Redigeringsvisning kun er tilgængelig for *oprettere* og ejere af rapporter.
 
 ![Kunst af rapportoprettere og rapportforbrugere](media/service-reading-view-and-editing-view/power-bi-creators-consumers.png)
 
 ## <a name="report-reading-view"></a>Rapport i Læsevisning
 
- Læsevisning hjælper dig med at udforske og interagere med rapporten – det er en god og sikker måde at lege med og at lære dine data at kende. Læsevisning er udviklet til *forbrugere* af rapporter – de personer, der åbner rapporter fra Apps, eller som har rapporter, der [deles med dem](service-share-dashboards.md). Læsevisning sikrer, at hvert enkelt forbruger af en bestemt rapport ser den samme rapport, de samme visualiseringer, hvor de samme filtre anvendes.  Forbrugerne kan interagere med rapporten, men ikke gemme ændringerne.
+ Læsevisning hjælper dig med at udforske og interagere med rapporten – det er en god og sikker måde at lege med og at lære dine data at kende. Læsevisning er udviklet til *forbrugere* af rapporter – de personer, der åbner rapporter fra Apps, eller som har rapporter, der [deles med dem](service-share-dashboards.md). Læsevisning sikrer, at hver forbruger af en bestemt rapport ser den samme rapport og de samme visualiseringer og eventuelt med anvendelse af de samme filtre.  Forbrugere kan interagere med rapporterne og udskifte de eksisterende filtre (og gemme ændringerne sammen med rapporten), men de kan ikke tilføje nye filtre.
 
->**Bemærk**! I nogle tilfælde kan rapportforbrugeren se forskellige data på grund af sikkerhed på rækkeniveau og datatilladelser. 
+>**Bemærk**! I nogle tilfælde kan rapportforbrugeren se forskellige data på grund af sikkerhed på rækkeniveau og datatilladelser.
 
 ## <a name="report-editing-view"></a>Rapport i Redigeringsvisning
 
@@ -42,7 +42,7 @@ Redigeringsvisning er kun tilgængelig for de personer, der oprettede rapporten,
 Redigeringsvisning er udviklet til *oprettere* af rapporter. Dette er stedet, hvor oprettere importerer og opretter forbindelse til datasæt, udforsker dataene og opretter rapporter og dashboards. I Redigeringsvisning kan *oprettere* gå endnu mere i dybden med deres data ved at tilføje og fjerne felter, ændre visualiseringstype, oprette nye visualiseringer og tilføje og slette visualiseringer og sider fra rapporten. De kan derefter dele de rapporter, de opretter, med kolleger.
 
 ## <a name="reading-view-versus-editing-view"></a>Læsevisning i forhold til Redigeringsvisning
-Alle rapportfunktionerne i Power BI-tjenesten er ikke er angivet i dette diagram! Det viser kun de rapportopgaver, der ikke er tilgængelige i **både** Læsevisning og Redigeringsvisning. 
+Alle rapportfunktionerne i Power BI-tjenesten er ikke er angivet i dette diagram! Det viser kun de rapportopgaver, der ikke er tilgængelige i **både** Læsevisning og Redigeringsvisning.
 
 
 |Opgave  | Læsevisning  | Redigeringsvisning |
@@ -52,7 +52,7 @@ Alle rapportfunktionerne i Power BI-tjenesten er ikke er angivet i dette diagram
 | [Opret eller rediger en rapport](service-report-create-new.md) | Nej  | Ja |
 | [Del en rapport](service-share-reports.md)| Ja | Ja, og du kan også administrere tilladelser, herunder give andre *ejertilladelser*. |
 | [Opret vedvarende (permanente) filtre for visuelt niveau, detaljeadgangsfiltre, filtre for sideniveau og rapportniveau fra ruden Filtre](power-bi-report-add-filter.md) | Nej  | Ja |
-| [Brug ruden Rapportfiltre](power-bi-how-to-report-filter.md) | Ja, du kan bruge de eksisterende filtre, men ændringer gemmes ikke med rapporten. | Ja |
+| [Brug ruden Rapportfiltre](power-bi-how-to-report-filter.md) | Ja, du kan bruge de eksisterende filtre og gemme ændringerne sammen med rapporten, men du kan ikke tilføje nye filtre. | Ja |
 | [Brug ruden Rapportanalyse](service-analytics-pane.md) | Nej | Ja |
 | [Rapport **Visning** Indstillinger](power-bi-report-display-settings.md) | Ja, med visse undtagelser. | Ja, alle, herunder gitterlinjer, fastgørelse og låsning. |
 | [Opret tidsplan for opdatering](refresh-data.md) | Nej  | Ja |
@@ -86,14 +86,14 @@ Husk, at kun rapportopretteren og -ejeren(erne) kan åbne en rapport i Redigerin
 
    ![Rediger rapport er nedtonet](media/service-reading-view-and-editing-view/power-bi-edit-report-grey.png)
 
-2. Hvis **Rediger rapport** ikke er nedtonet, skal du vælge den for at åbne rapporten i Redigeringsvisning. 
-   
+2. Hvis **Rediger rapport** ikke er nedtonet, skal du vælge den for at åbne rapporten i Redigeringsvisning.
+
    ![Indstillingen Rediger rapport](media/service-reading-view-and-editing-view/power-bi-edit-report.png)
-   
+
    Rapporten er nu i Redigeringsvisning og bruger de samme [visningsindstillinger](power-bi-report-display-settings.md), som du sidst brugte i Læsevisning.
 
 2. Du vender tilbage til Læsevisning ved at vælge **Læsevisning** på den øverste navigationslinje.
-   
+
     ![Indstillingen Læsevisning](media/service-reading-view-and-editing-view/power-bi-reading-view.png)
 
 
@@ -101,5 +101,4 @@ Husk, at kun rapportopretteren og -ejeren(erne) kan åbne en rapport i Redigerin
 ### <a name="next-steps"></a>Næste trin
 Der er mange forskellige måder at interagere med en rapport i Læsevisning, foretage udsnit og opdele dataene for at få indsigt og svar på dine spørgsmål.  I det næste emne, [Interager med en rapport i Læsevisning](service-interact-with-a-report-in-editing-view.md), beskrives nogle af disse udførligt.    
 Tilbage til [rapporter i Power BI](service-reports.md)    
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/) 
-
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
