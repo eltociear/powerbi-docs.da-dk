@@ -1,27 +1,27 @@
 ---
 title: Whitepapers til Power BI
-description: "Whitepapers gør det muligt at udforske Power BI-emner på et mere detaljeret niveau."
+description: Whitepapers gør det muligt at udforske Power BI-emner på et mere detaljeret niveau.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/05/2018
+ms.date: 03/16/2018
 ms.author: maghan
-ms.openlocfilehash: ac3f2b52374df0ea9a153a97548e40420388181d
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 5e9e0ea009e403b89af7ff67e81062433ba56b80
+ms.sourcegitcommit: 863df35192b9aba1e7c22a64bc8df24418416730
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="whitepapers-for-power-bi"></a>Whitepapers til Power BI
 
@@ -42,5 +42,6 @@ Whitepapers gør det muligt at udforske Power BI-emner på et mere detaljeret ni
 | [Sikring af modellen for tabellarisk BI-semantik](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |I denne rapport introduceres sikkerhedsmodellen for tabellarisk BI-semantik og Power BI. Du lærer at oprette roller, implementere dynamiske sikkerhed, konfigurere repræsentationsindstillinger, administrere roller og vælge en metode til oprettelse af forbindelse til modeller, der fungerer i sikkerhedskonteksten for dit netværk. |
 | [Vejledning i kapacitetsplanlægning i Power BI-rapportserver](report-server/capacity-planning.md) |Denne rapports primære sigte er at give en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af adskillelige gennemførsler af belastningstest ved forskellige arbejdsbelastninger i forhold til en rapportserver. |
 | [Planlægning og installation af Power BI Premium](https://aka.ms/Premium-Capacity-Planning-Deployment)| Denne rapport indeholder en vejledning og bedste praksis for planlægning og installation af Premium-kapacitet for veldefinerede arbejdsbelastninger.|
+| [Power BI og SAP BW](https://aka.ms/powerbiandsapbw)| I dette dokument beskrives, hvordan SAP-kunder kan integrere Power BI i eksisterende SAP Business Warehouse (BW)-systemer.|
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

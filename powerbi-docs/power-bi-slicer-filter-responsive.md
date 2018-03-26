@@ -1,15 +1,15 @@
 ---
-title: "Opret et dynamisk udsnitsværktøj, som du kan ændre størrelsen på i Power BI"
-description: "Få mere at vide om, hvordan du opretter et dynamisk udsnitsværktøj, du kan ændre størrelsen på, så det passer til din rapport"
+title: Opret et dynamisk udsnitsværktøj, som du kan ændre størrelsen på i Power BI
+description: Få mere at vide om, hvordan du opretter et dynamisk udsnitsværktøj, du kan ændre størrelsen på, så det passer til din rapport
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/08/2017
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: feba171d6a81f7e9760df2d9fabecce2cc544dc2
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 2ab907dd15e43892147967902fbb94d09ef4125b
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="create-a-responsive-slicer-you-can-resize-in-power-bi-preview"></a>Opret et dynamisk udsnitsværktøj, du kan ændre størrelsen på i Power BI (Eksempel)
 
@@ -78,7 +78,7 @@ Læs mere om, hvordan du opretter [rapporter, der er optimeret til Power BI-mobi
 
 ## <a name="make-a-time-or-range-slicer-responsive"></a>Gør et udsnitsværktøj til tid eller område dynamisk
 
-Du kan benytte den samme fremgangsmåde til at gøre et udsnitsværktøj til et felt eller område dynamisk. Når du har slået **Dynamisk** **Til**, så vil du lægge mærke til et par ting:
+Du kan benytte den samme fremgangsmåde til at gøre et udsnitsværktøj til tid eller område dynamisk. Når du har slået **Dynamisk** **Til**, så vil du lægge mærke til et par ting:
 
 - Visuelle elementer optimerer rækkefølgen af inputfelter afhængigt af, hvilken størrelse der er tilladt på lærredet. 
 - Dataelementvisningen er optimeret for at gøre udsnitsværktøjet så praktisk anvendeligt som muligt, baseret på størrelsen der er tilladt på lærredet. 

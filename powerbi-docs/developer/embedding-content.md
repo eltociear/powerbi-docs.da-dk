@@ -1,27 +1,27 @@
 ---
-title: "Sådan integrerer du Power BI-dashboards, -rapporter og -felter"
-description: "Få mere at vide om, hvordan du integrerer Power BI-indhold i din app."
+title: Sådan integrerer du Power BI-dashboards, -rapporter og -felter
+description: Få mere at vide om, hvordan du integrerer Power BI-indhold i din app.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/11/2018
+ms.date: 03/12/2018
 ms.author: maghan
-ms.openlocfilehash: ff39d6847a296622d8ce0903370d17d41662df0c
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 014601a4c85be53d6fd06a455d04e5ee1f8daf2d
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="embed-your-power-bi-dashboards-reports-and-tiles"></a>Integrer dine Power BI-dashboards, -rapporter og -felter
 
@@ -88,6 +88,10 @@ Du skal registrere din app i Azure AD, før du kan foretage REST-API-kald. Du ka
 Hvis du integrerer dashboards og rapporter for dine kunder, skal disse dashboards og rapporter placeres i et apparbejdsområde. Den *hovedkonto*, der er nævnt ovenfor, skal være administrator af apparbejdsområdet.
 
 [!INCLUDE [powerbi-service-create-app-workspace](../includes/powerbi-service-create-app-workspace.md)]
+
+> [!NOTE]
+> En bruger, der ikke har administratorrettigheder, kan kun oprette op til 250 apparbejdsområder. Hvis du vil oprette flere app-arbejdsområder, skal du bruge en lejeradministratorkonto.
+>
 
 ### <a name="create-and-upload-your-reports"></a>Opret og upload nye rapporter
 

@@ -1,34 +1,32 @@
 ---
 title: Nyheder i Power BI-rapportserver
-description: "Læs om nyheder i Power BI-rapportserver. Dette dækker de primære funktionsområder og opdateres i takt med, at der frigives nye elementer."
+description: Læs om nyheder i Power BI-rapportserver. Dette dækker de primære funktionsområder og opdateres i takt med, at der frigives nye elementer.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/31/2017
-ms.author: maghan
-ms.openlocfilehash: 2ac4efa4e1eff5099fa3732b0fa753b04941979e
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.date: 03/19/2018
+ms.author: maggies
+ms.openlocfilehash: 4f149baccf551762589c17bd6d6ba17c36f4da37
+ms.sourcegitcommit: 0473a155495a7a9ba4b899d0815100426718b7ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 Læs om nyheder i Power BI-rapportserver. Dette dækker de primære funktionsområder og opdateres i takt med, at der frigives nye elementer.
 
 Hvis du vil downloade Power BI-rapportserver og Power BI Desktop optimeret til Power BI-rapportserver, skal du gå til [Rapportering i det lokale miljø med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
-
-![tip](media/whats-new/fyi-tip.png "tip") Se de aktuelle produktbemærkninger i [Power BI-rapportserver – produktbemærkninger](release-notes.md).
 
 Du kan finde relaterede oplysninger om nyheder under:
 
@@ -37,6 +35,103 @@ Du kan finde relaterede oplysninger om nyheder under:
 * [Nyheder i mobilappsene til Power BI](../mobile-whats-new-in-the-mobile-apps.md)
 * [Power BI-temaets blog](https://powerbi.microsoft.com/blog/)
 
+## <a name="march-2018-release"></a>Version fra marts 2018
+
+Den nye version af Power BI Desktop optimeret til Power BI-rapportserver fra marts 2018 indeholder en lang række nye funktioner. Her er de nye funktioner efter område: 
+- [Visualisering](#visuals-updates)
+- [Rapportering](#reporting)
+- [Analyse](#analytics)
+- [Ydeevne](#performance)
+- [Rapportserver](#report-server)
+- [Andet](#other-improvements)
+
+### <a name="highlights-of-this-release"></a>Højdepunkter i denne version
+
+Blandt de mange nye funktioner er følgende funktioner særligt interessante.
+
+#### <a name="rule-based-conditional-formatting-for-table-and-matrixhttpspowerbimicrosoftcomblogpower-bi-desktop-november-2017-feature-summaryconditionalformatting"></a>[Regelbaseret betinget formatering til tabel og matrix](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting)
+ 
+Opret regler baseret på betingelser. Du kan f.eks. farvelægge baggrunden eller vælge skrifttypefarven for en kolonne baseret på tabellens eller matrixens specifikke forretningslogik.
+
+#### <a name="show-and-hide-pageshttpspowerbimicrosoftcomblogpower-bi-desktop-january-2018-feature-summaryhidepages"></a>[Vis og skjul sider](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
+
+Du ønsker at give læserne adgang til din rapport, men nogle af siderne er ikke helt færdige. Nu kan du skjule dem, til de er færdige. Du kan også skjule sider i den normale navigation og give læsere adgang til en side ved hjælp af bogmærker eller detaljeadgang.
+
+#### <a name="bookmarkinghttpspowerbimicrosoftcomblogpower-bi-desktop-march-2018-feature-summarybookmarking"></a>[Bogmærker](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking)
+
+Opret bogmærker, som fortæller om dataene i din rapport.
+
+- [Krydsfremhævning for bogmærker](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting): Bogmærker bevarer og viser rapportsidens krydsfremhævninger på det tidspunkt, bogmærket blev oprettet.
+- [Større fleksibilitet med bogmærker](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility): Bogmærker afspejler de egenskaber, du angiver i din rapport, og påvirker udelukkende de visualiseringer, du vælger.
+
+#### <a name="multi-select-data-points-across-multiple-chartshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarycrosshighlight"></a>[Markér flere datapunkter på tværs af diagrammer](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
+
+Markér flere datapunkter i flere diagrammer, og anvend krydsfiltrering på hele siden.
+
+#### <a name="sync-slicers-across-multiple-pages-of-your-reporthttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarysyncslicers"></a>[Synkroniser udsnitsværktøjer på tværs af flere sider i en rapport](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#syncSlicers)
+
+Et udsnitsværktøj kan anvendes på én, to eller flere sider i en rapport.
+
+#### <a name="quick-measureshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summaryquickmeasures"></a>[Hurtigmålinger](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
+
+Opret nye målinger baseret på eksisterende målinger og numeriske kolonner i en tabel.
+
+#### <a name="drilling-down-filters-other-visualshttpspowerbimicrosoftcomblogpower-bi-desktop-december-feature-summarydrillfiltersothervisuals"></a>[Detaljeudledning filtrerer andre visualiseringer](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
+
+Når du foretager detaljeudledning i en bestemt kategori i en visualisering, kan du vælge at filtrere alle visualiseringerne på siden efter den pågældende kategori.
+
+### <a name="visuals-updates"></a>Opdateringer til visualiseringer
+
+- [Cellejustering for tabel og matrix](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#alignment)
+- [Vis enheder og præcisionskontrolelementer for kolonnerne Tabel og Matrix](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#displayUnits)
+- [Overløb af datanavne i søjlediagrammer i visualiseringer](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#overflow)
+- [Styre baggrundsfarve for datanavn i kartesiske og visuelle elementer med kort](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#dataLabelBackground)
+- [Kontrolelement til udfyldning af værktøjslinje/kolonne](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#padding)
+- [Forøge område, der bruges til akseetiketter i diagrammer](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#axisSize)
+- [Punktvisualiseringer på baggrund af x- og y-aksegrupperinger](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#scatterChart)
+- [Stikprøvetagning med høj tæthed for kort, baseret på breddegrad og længdegrad](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#highDensityMaps)
+- [Dynamiske udsnitsværktøjer](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#responsive)
+- [Føj en ankerdato til et relativt datoudsnit](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#anchorDate)
+
+### <a name="reporting"></a>Rapportering
+
+- [Slå overskriften i visualiseringer fra i Læsetilstand for en rapport](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualHeader)
+- [Rapportindstillinger til langsomme datakilder](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#slowDataSource)
+- [Forbedret standardplacering af visualiseringer](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualPlacement)
+- [Kontrollér arrangering af visualiseringer i valgruden](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#selectionPane)
+- [Lås objekter i din rapport](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#lock)
+- [Søgning i ruderne Formatering og Analyse](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search)
+- [Ruden Feltegenskaber og feltbeskrivelser](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#fieldPropertiesPane)
+
+### <a name="analytics"></a>Analyse
+
+- [UTCNOW() og UTCTODAY()](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#utcDAX)
+- [Markér brugerdefineret datotabel](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
+- [Detaljeudledning filtrerer andre visualiseringer](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
+- [Formatering på celleniveau for flerdimensionelle AS-modeller til kort med flere rækker](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#cellLevelFormatting)
+ 
+### <a name="performance"></a>Ydeevne
+
+- [Forbedring af ydeevnen ved filtrering](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#filtering)
+- [Forbedring af ydeevnen for DirectQuery](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#dqPerf)
+- [Forbedring af ydeevnen ved åbn og gem](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#savePerf)
+- [Forbedring af "Vis elementer uden data"](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#showItemsWithNoData)
+ 
+### <a name="report-server"></a>Rapportserver 
+
+#### <a name="export-to-accessible-pdf"></a>Eksport til tilgængelig PDF
+
+Når du eksporterer en sideinddelt rapport (RDL) til PDF, kan du nu eksportere til en tilgængelig/tagget PDF-fil. Filen fylder mere, men skærmlæsere og andre hjælpemidler har nemmere ved at læse og navigere i den. Tilgængelig PDF aktiveres ved at angive indstillingen **AccessiblePDF** under enhedsoplysninger til **Sand**. Se [PDF-indstillinger for enhedsoplysninger](https://docs.microsoft.com/sql/reporting-services/pdf-device-information-settings) og [Ændring af indstillinger for enhedsoplysninger](https://docs.microsoft.com/sql/reporting-services/customize-rendering-extension-parameters-in-rsreportserver-config#changing-device-information-settings).
+
+
+### <a name="other-improvements"></a>Andre forbedringer
+
+- [Forbedret Tilføj kolonne fra eksempler](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#addColumnFromExamples)
+- [Hurtiglink til rådgivningstjenester](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#consultingServices)
+- [Forbedret fejlrapportering](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#errors)
+- [Visning af tidligere fejl, du har oplevet](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#viewErrors)
+
+ 
 ## <a name="october-2017-release"></a>Udgivelse fra oktober 2017
 ### <a name="power-bi-report-data-sources"></a>Power BI-rapportdatakilder
 Power BI-rapporter i Power BI-rapportserver kan oprette forbindelse til en række forskellige datakilder. Du kan importere data og planlægge dataopdateringer, eller du kan forespørge på dem direkte ved hjælp af DirectQuery eller en liveforbindelse til SQL Server Analysis Services. Se listen over datakilder, der understøtter planlagt opdatering, og dem, der understøtter DirectQuery, i "Power BI-rapportdatakilder i Power BI-rapportserver".
@@ -111,7 +206,6 @@ Power BI-rapportserver understøtter nu de nye Power BI-tabel- og matrixvisuals.
 * Forbedret samarbejde i rapporter med kommentarer
 
 ## <a name="next-steps"></a>Næste trin
-[Produktbemærkninger til Power BI-rapportserver](release-notes.md)  
 [Brugerhåndbog](user-handbook-overview.md)  
 [Administratorhåndbog](admin-handbook-overview.md)  
 [Hurtigstart: Installér Power BI Report Server](quickstart-install-report-server.md)  

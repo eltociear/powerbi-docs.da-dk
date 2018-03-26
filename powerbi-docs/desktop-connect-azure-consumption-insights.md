@@ -1,15 +1,15 @@
 ---
 title: Opret forbindelse til Azure Consumption Insights-data i Power BI Desktop (beta)
-description: "Du kan nemt oprette forbindelse til Azure og få indsigt i forbrugs- og brugsdata ved hjælp af Power BI Desktop"
+description: Du kan nemt oprette forbindelse til Azure og få indsigt i forbrugs- og brugsdata ved hjælp af Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9127f7b2e19a304c514d5e6449cf1ceb7ecddb13
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 1e82ec988389790a3d96cb6f98f0db5d1a385fda
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Opret forbindelse til Azure Consumption Insights i Power BI Desktop (beta)
 Ved hjælp af connectoren **Azure Consumption Insights** kan du bruge **Power BI Desktop** til at oprette forbindelse til Azure og få detaljerede data og oplysninger om din organisations brug af Azure-tjenester. Du kan også oprette målinger, brugerdefinerede kolonner og visuelle elementer, som kan rapporteres og deles, om din organisations brug af Azure. Denne version af connectoren **Azure Consumption and Insights** er en betaversion, som måske ændres.
@@ -42,7 +42,7 @@ I den dialogboks, der vises, skal du angive dit *tilmeldingsnummer*.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
 
-* Du kan hente dit tilmeldingsnummer på [Azure Enterprise Portal](https://ea.azure.com) på den placering, der vises på følgende billede.
+* Du kan hente dit tilmeldingsnummer på [Azure Enterprise Portal](https://ea.azure.com) på den placering, der er vist på følgende billede:
   
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_08.png)
   
@@ -61,7 +61,7 @@ Når du har angivet din *adgangsnøgle* og valgt **Opret forbindelse**, åbnes v
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04.png)
 
 > [!NOTE]
-> Tabellerne *Summary og *PriceSheet* er kun tilgængelige for API-nøglen på tilmeldingsniveau. Derudover har dataene i disse tabeller som standard den aktuelle måneds data for *Usage* og *PriceSheet*. Tabellerne *Summary* og *MarketPlace* er ikke begrænset til den aktuelle måned.
+> Tabellerne *Summary* og *PriceSheet* er kun tilgængelige for API-nøglen på tilmeldingsniveau. Derudover har dataene i disse tabeller som standard den aktuelle måneds data for *Usage* og *PriceSheet*. Tabellerne *Summary* og *MarketPlace* er ikke begrænset til den aktuelle måned.
 > 
 > 
 
@@ -80,20 +80,20 @@ Når du har indlæst data ved hjælp af connectoren **Azure Consumption Insights
 
 Azure indeholder også en samling af brugerdefinerede eksempelforespørgsler, som du kan hente ved hjælp af en tom forespørgsel. For at gøre det skal du gå til båndet **Hjem** i **Power BI Desktop**, vælge rullelistepilen i **Hent data** og derefter vælge **Tom forespørgsel**. Det kan du også gøre i **forespørgselseditoren** ved at højreklikke i ruden **Forespørgsler** til venstre og derefter vælge **Ny forespørgsel > Tom forespørgsel** i den menu, der vises.
 
-På **formellinjen** skal du skrive følgende:
+Skriv følgende på **formellinjen**:
 
     = MicrosoftAzureConsumptionInsights.Contents
 
-Der vises en samling eksempler, som du kan se på følgende billede.
+Der vises en samling eksempler som vist på følgende billede:
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_07.png)
 
 Når du arbejder med rapporter og opretter forespørgsler, kan du bruge følgende:
 
-* Hvis du vil definere antallet af måneder fra og med dags dato, skal du bruge *noOfMonths*
+* Hvis du vil definere antallet af måneder fra og med dags dato, skal du bruge *numberOfMonth*
   * Brug en værdi mellem 1 og 36 til at repræsentere antallet af måneder – fra dags dato – du vil importere. Det anbefales, at du højst henter 12 måneders data, for at undgå begrænsninger for import og begrænsninger for mængden af data, der er tilladt for forespørgsler i Power BI.
 * Hvis du vil definere en månedsperiode i et historisk tidsvindue, skal du bruge *startBillingDataWindow* og *endBillingDataWindow*
-* Brug *ikke* *noOfMonths* sammen med *startBillingDataWindow* eller *endBillingDataWindow*
+* Brug *ikke* *numberOfMonth* sammen med *startBillingDataWindow* eller *endBillingDataWindow*
 
 ## <a name="migrating-from-the-azure-enterprise-connector"></a>Overfør fra Azure Enterprise Connector
 Nogle kunder har oprettet visuelle elementer ved hjælp af *Azure Enterprise Connector (beta)*, som ophører og erstattes med connectoren **Azure Consumption Insights**. Connectoren **Azure Consumption Insights** indeholder funktioner og forbedringer, der omfatter følgende:
@@ -108,7 +108,7 @@ For at hjælpe kunder med at skifte til den nyere **Azure Consumption Insights**
 I første trin skal der oprettes forbindelse ved hjælp af connectoren **Azure Consumption Insights** som beskrevet detaljeret tidligere i denne artikel. I dette trin skal du vælge **Hent data > Tom forespørgsel** på båndet **Hjem** i **Power BI Desktop**.
 
 ### <a name="step-2-use-the-advanced-editor-to-create-a-query"></a>Trin 2: Brug den avancerede editor til at oprette en forespørgsel
-I **forespørgselseditoren** skal du vælge **Avanceret editor** i sektionen **Forespørgsel** på båndet **Hjem**. I vinduet **Avanceret editor**, der åbnes, skal du angive følgende forespørgsel.
+I **forespørgselseditoren** skal du vælge **Avanceret editor** i sektionen **Forespørgsel** på båndet **Hjem**. Angiv følgende forespørgsel i vinduet **Avanceret editor**, der åbnes:
 
     let    
         enrollmentNumber = "100",
@@ -131,10 +131,10 @@ Derefter skal du flytte de brugerdefinerede kolonner eller målinger, du har opr
    
    ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_11.png)
 3. Omdøb *Query1* til navnet på den oprindelige detaljetabel.
-4. Opret nye målinger og brugerdefinerede kolonner i tabellen ved at højreklikke på tabellen og vælge **Ny måling**, og klip og indsæt derefter dine gemte målinger og kolonner, når de er helt færdige.
+4. Opret nye målinger og brugerdefinerede kolonner i tabellen ved at højreklikke på tabellen og vælge **Ny måling**. Klip og indsæt derefter dine gemte målinger og kolonner, når de er helt færdige.
 
 ### <a name="step-4-re-link-tables-that-had-relationships"></a>Trin 4: Sammenkæd igen tabeller, der havde relationer
-Mange dashboards indeholder flere tabeller, der bruges til opslag eller filtrering, datotabeller eller tabeller, der bruges til brugerdefinerede projekter. De kan løse de fleste andre problemer ved at genoprette disse relationer. Her kan du se, hvordan du gør.
+Mange dashboards indeholder flere tabeller, der bruges til opslag eller filtrering, f.eks. datotabeller eller tabeller til brugerdefinerede projekter. De kan løse de fleste andre problemer ved at genoprette disse relationer. Her kan du se, hvordan du gør.
 
 - Under fanen **Udformning** i **Power BI Desktop** skal du vælge **Administrer relationer** for at åbne et vindue, hvor du kan oprette relationer i modellen. Sammenkæd igen tabellerne efter behov.
    

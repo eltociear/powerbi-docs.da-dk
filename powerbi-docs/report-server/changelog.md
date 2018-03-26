@@ -1,15 +1,15 @@
 ---
-title: "Ændringslog for Power BI-rapportserver"
-description: "Denne ændringslog er for Power BI-rapportserver, og den viser nye elementer sammen med fejlrettelser til hvert frigivet build."
+title: Ændringslog for Power BI-rapportserver
+description: Denne ændringslog er for Power BI-rapportserver, og den viser nye elementer sammen med fejlrettelser til hvert frigivet build.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: jtarquino
 manager: jonhp
 backup: maggies
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -17,17 +17,35 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/11/2017
 ms.author: tankas
-ms.openlocfilehash: deff79bba0f7f191a8343629300c725f3150e509
-ms.sourcegitcommit: a44c29bbc220ecb1ed80810cb1e7df0db8ea611a
+ms.openlocfilehash: 7c460955aba71bfb3a89d94aa6000c7bdd451ac2
+ms.sourcegitcommit: 0473a155495a7a9ba4b899d0815100426718b7ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
 Denne ændringslog er for Power BI-rapportserver, og den viser nye elementer sammen med fejlrettelser til hvert frigivet build.
 
-Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder i Power BI-rapportserver](whats-new.md).
+Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder i Power BI-rapportserver](whats-new.md). 
+
+## <a name="march-2018"></a>Marts 2018
+- **Power BI-rapportserver**
+    - *Version 1.2.6648.38132 (Build 15.0.2.378), udgivet: 19. marts 2018*
+        - Sikkerhedsopdateringer
+        - Forbedringer af Hjælp til handicappede
+        - Fejlrettelser
+            - Rettelse af et problem med parametersynlighed for sideinddelte rapporter (RDL) ved genindlæsning efter en redigering af rapportegenskaber
+            - Rettelse af et problem på webportalen, hvor cookien for glidende udløb ignoreres ved godkendelse af brugerdefinerede formularer
+            - Rettelse af et problem, hvor der oprettes forskellige rækkehøjder ved eksport til Word, hvis rækkeindholdet er tomt
+            - Rettelse af et problem for sideinddelte rapporter (RDL), hvor en udtryksbaseret forbindelsesstreng slettes, når datakildens legitimationsoplysninger ændres
+            - Rettelse af et problem, så det nu er muligt at anvende KPI'er med tekstværdier
+            - Rettelse af et problem for sideinddelte rapporter (RDL), så det nu er muligt at føje et nyt datasæt til en eksisterende sideinddelt rapport (RDL)
+            - Rettelse af andre problemer med stabilitet og brugervenlighed
+
+- **Power BI Desktop (optimeret til Power BI-rapportserver)**
+    - Version: 2.56.5023.1043 (marts 2018), udgivet: 19. marts 2018
+        - Indeholder ændringer, der kræves for at oprette forbindelse med Power BI-rapportserver (marts 2018)
 
 ## <a name="october-2017"></a>Oktober 2017
 

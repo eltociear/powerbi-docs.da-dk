@@ -2,26 +2,26 @@
 title: Scan en Power BI QR-kode fra din mobilenhed
 description: QR-koder i Power BI kan forbinde noget i den virkelige verden direkte med relaterede BI-oplysninger i Power BI-mobilappen til iPhone-telefoner og Android-enheder.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 03/13/2018
 ms.author: maggies
-ms.openlocfilehash: 80c8de8626f2d891a7875933ee72a43dd5d7f09e
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 2716452f285d8df0aa0d3b89c2b9b36aa87cc5cc
+ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Scan en Power BI QR-kode fra din mobilenhed
 Gælder for:
@@ -36,10 +36,10 @@ Et eksempel kan være, at en kollega har [oprettet en QR-kode i Power BI-tjenest
 
 Du kan scanne QR-koden for at få direkte adgang til feltet eller rapporten direkte fra din telefon. Det gør du ved hjælp af scanneren i Power BI-appen eller en anden scannerapp, du har installeret på din telefon. 
 
+Hvis din kollega ikke har delt dashboardet eller rapporten med dig, kan du anmode om adgang direkte fra mobilappen. 
+
 > [!NOTE]
-> Hvis din kollega ikke har delt dashboardet eller rapporten med dig, kan du anmode om adgang direkte fra mobilappen.
-> 
-> 
+> Du kan også [scanne en QR-kode for en rapport med Power BI til Mixed Reality-appen](mobile-mixed-reality-app.md#scan-a-report-qr-code-in-holographic-view).
 
 ## <a name="scan-a-power-bi-qr-code-on-your-iphone-with-the-power-bi-scanner"></a>Scan en Power BI QR-kode på din iPhone med Power BI-scanneren
 1. Åbn den globale navigationsmenu ![](media/mobile-apps-qr-code/power-bi-iphone-global-nav-button.png) øverst til venstre i Power BI-mobilappen. 
@@ -80,5 +80,6 @@ Du kan scanne QR-koden for at få direkte adgang til feltet eller rapporten dire
 * [Opret forbindelse til Power BI-data fra den virkelige verden](mobile-apps-data-in-real-world-context.md) med mobilappen
 * [Opret en QR-kode for et felt i Power BI-tjenesten](service-create-qr-code-for-tile.md)
 * [Opret en QR-kode for en rapport i Power BI-tjenesten](service-create-qr-code-for-report.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-communityet](http://community.powerbi.com/)
+* Du kan også [scanne en QR-kode med Power BI til Mixed Reality-appen](mobile-mixed-reality-app.md).
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
