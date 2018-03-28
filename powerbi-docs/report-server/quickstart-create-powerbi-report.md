@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 3/19/2018
+ms.date: 3/22/2018
 ms.author: maggies
-ms.openlocfilehash: 5295a62897c740872480b905f3aef4af37ca0942
-ms.sourcegitcommit: 93e7362fc47319959b6992dfd037effdf831d010
+ms.openlocfilehash: 7c0f7ad804a61aeade6f120f2a2d2bd048219ee2
+ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="quickstart-create-a-power-bi-report-for-power-bi-report-server"></a>Hurtigstart: Opret en Power BI-rapport til Power BI-rapportserver
 Du kan gemme og administrere Power BI-rapporter i det lokale miljø på Microsoft Power BI-rapportservers webportal, på samme måde som du kan gemme Power BI-rapporter i skyen i Power BI-tjenesten (https://powerbi.com). Du kan oprette og redigere rapporter i Power BI Desktop og publicere dem på webportalen. Derefter kan rapportlæsere i din organisation få dem vist i en browser eller i en Power BI-mobilapp på en mobilenhed.
@@ -54,7 +54,7 @@ Hvis du allerede har oprettet Power BI-rapporter i Power BI Desktop, er du næst
    
     Programmet starter automatisk, og du er klar til at gå i gang. Du kan se, at du har den rigtige version, hvis der står "Power BI Desktop (marts 2018)" i titellinjen.
 
-    ![Power BI Desktop marts 2018-version](media/quickstart-create-powerbi-report/report-server-desktop-october-2017-version.png)
+    ![Power BI Desktop marts 2018-version](media/quickstart-create-powerbi-report/report-server-desktop-march-2018.png)
 
 3. Hvis du ikke kender til Power BI Desktop, bør du overveje at se videoerne på velkomstskærmbilledet.
    

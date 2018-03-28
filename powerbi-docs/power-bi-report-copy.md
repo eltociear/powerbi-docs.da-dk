@@ -2,27 +2,27 @@
 title: Kopiering af en rapport i Power BI
 description: Opret en ny rapport i Power BI ud fra en anden rapport.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 01/09/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 63d545f24db126566d5c7f9c485e9cc4fd0e079e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: f7b4230a6dc9089008928145863fe70977fb92f4
+ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="create-a-new-report-from-an-existing-report"></a>Opret en ny rapport ud fra en eksisterende rapport
 Du har måske en rapport, der allerede har forbindelse til dit datasæt, og har nogle visuelle elementer, som du gerne vil bruge igen eller redigere.  Hvorfor ikke blot kopiere denne rapport som udgangspunkt for en ny rapport?  Fremgangsmåden er som følger:
