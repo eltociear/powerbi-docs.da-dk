@@ -1,15 +1,15 @@
 ---
-title: "Brug rapporttemaer i Power BI Desktop (prøveversion)"
-description: "Få mere at vide om, hvordan du bruger en brugerdefineret farvepalet og anvender den for en hel rapport i Power BI Desktop"
+title: Brug rapporttemaer i Power BI Desktop (prøveversion)
+description: Få mere at vide om, hvordan du bruger en brugerdefineret farvepalet og anvender den for en hel rapport i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8893e9f048f10f2c9c4d5bf787382b7cf65f54a9
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 9161966897811820935c72ac1657ceca58da403a
+ms.sourcegitcommit: 3841bcdb5e664568defe3d6a6e6b8cab3cd7087f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="use-report-themes-in-power-bi-desktop-preview"></a>Brug rapporttemaer i Power BI Desktop (prøveversion)
 Med **rapporttemaer** kan du anvende et farvetema i hele rapporten, f.eks virksomhedens farver, sæsonmæssige farver eller andre farvetemaer, som du gerne vil anvende for en rapport. Når du anvender et **rapporttema**, bruges farver fra det valgte tema for alle visuelle elementer i rapporten (med nogle få undtagelser, der er beskrevet senere i denne artikel).
@@ -163,7 +163,7 @@ Hvis du vil oprette et udvidet JSON-filformat med mere detaljeret kontrol over f
         }
     }
 
-For afsnittene **visualName** og **cardName** kan du angive et bestemt visuelt element og cardName, eller du kan bruge en stjerne ("*"), hvis du gerne vil have, at indstillingen skal gælde for alle visuelle elementer eller alle kort, som indeholder en egenskab for et bestemt visuelt element. Du kan bruge stjernen ("*"), når du vil anvende en indstilling globalt i rapporten, f.eks en skriftstørrelse eller en bestemt skrifttypefamilie, der skal bruges i alle visuelle elementer i rapporten.
+For afsnittene **visualName** og **cardName** kan du angive et bestemt visuelt element og cardName, eller du kan bruge en stjerne ("\*"), hvis du gerne vil have, at indstillingen skal gælde for alle visuelle elementer eller alle kort, som indeholder en egenskab for et bestemt visuelt element. Du kan bruge stjernen ("\*"), når du vil anvende en indstilling globalt i rapporten, f.eks en skriftstørrelse eller en bestemt skrifttypefamilie, der skal bruges i alle visuelle elementer i rapporten.
 
 > [!NOTE]
 > Du skal kun angive de formateringselementer, som skal påvirkes. De formateringselementer, der ikke er omfattet af JSON-filen, vender blot tilbage til deres standardværdier og -indstillinger.
