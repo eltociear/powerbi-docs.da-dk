@@ -668,8 +668,8 @@
           href: desktop-ssas-multidimensional.md
         - name: Opret forbindelse til CSV-filer i Power BI Desktop
           href: desktop-connect-csv.md
-        - name: Opret forbindelse til Adobe Analytics i Power BI Desktop (eksempelvisning)
-          href: desktop-connect-csv.md
+        - name: Opret forbindelse til Adobe Analytics i Power BI Desktop
+          href: desktop-connect-adobe-analytics.md
         - name: Opret forbindelse til en Impala-database i Power BI Desktop
           href: desktop-connect-impala.md
         - name: Opret forbindelse til et OData-feed i Power BI Desktop
@@ -960,6 +960,8 @@
           href: developer/integrate-report.md
         - name: Integrer indhold i din app (app ejer data)
           href: developer/embed-sample-for-customers.md
+        - name: Integrer Power BI indhold i et program til dine kunder til Sovereign Clouds
+          href: developer/embed-sample-for-customers-sovereign-clouds.md
         - name: Indlejr brugerdefinerede layout i en app
           href: developer/embedded-custom-layout.md
         - name: Opret en Azure Active Directory-lejer
