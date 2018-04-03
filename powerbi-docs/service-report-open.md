@@ -1,15 +1,15 @@
 ---
-title: "Åbn en rapport i Læsevisning eller Redigeringsvisning i Power Bi-tjenesten"
-description: "Åbn en Power BI-rapport i Læsevisning eller Redigeringsvisning"
+title: Åbn en rapport i Læsevisning eller Redigeringsvisning i Power Bi-tjenesten
+description: Åbn en Power BI-rapport i Læsevisning eller Redigeringsvisning
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
