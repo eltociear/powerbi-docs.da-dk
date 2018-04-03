@@ -2,14 +2,14 @@
 title: Brug en alternativ mailadresse
 description: Brug en alternativ mailadresse
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -55,7 +55,7 @@ Når du skal registrere et integreringstoken til AAD (Azure Active Directory) ti
 
 Power BI vælger, hvilken mail der skal bruges, på baggrund af følgende kriterier:
 1.  Hvis mailattributten i AAD-lejerens brugerobjekt er til stede, så bruger Power BI denne mailattribut til mailadressen
-2.  Hvis UPN-mailen *ikke* er en mailadresse på domænet **\*.onmicrosoft.com** (oplysningerne efter "@"-symbolet), så bruger Power BI denne mailattribut til mailadressen
+2.  Hvis UPN-mailen *ikke* er en mailadresse på domænet **\*.onmicrosoft.com** (oplysningerne efter "\@"-symbolet), så bruger Power BI denne mailattribut til mailadressen
 3.  Hvis matrixattributten for den anden "mail" i AAD-brugerobjektet til stede, så bruges den første mail på denne liste (da der kan være en liste over mails i denne attribut)
 4. Hvis ingen af ovenstående betingelser er til stede, så bruges UPN-adressen
 
