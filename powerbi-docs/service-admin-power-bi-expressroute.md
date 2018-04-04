@@ -2,14 +2,14 @@
 title: Power BI og ExpressRoute
 description: Power BI og ExpressRoute
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: 30bc1c58d02634748acfc2dce4fbfbec51fa6cba
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: faf438e9f76a7a929f7369dc91ef4edb4fbef42d
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="power-bi-and-expressroute"></a>Power BI og ExpressRoute
 Du kan bruge **Power BI** og **ExpressRoute** til at oprette en privat netværksforbindelse fra din organisation til Power BI (eller bruge en ISP's colocation-facilitet), der omgår internettet og sørger for en bedre sikkerhed for følsomme Power BI-data og -forbindelser.
@@ -49,7 +49,7 @@ De to overordnede undtagelser for Power BI ved anvendelse af ExpressRoute er:
 * Statiske filer, der er hentet fra **netværk, der leverer indhold** og websteder
 * **Telemetri**-data, der sendes via det offentlige Internet
 
-Power BI bruger flere **netværk, der leverer indhold** eller websteder til effektivt at distribuere det nødvendige statiske indhold og filer til brugere baseret på geografisk landestandard via det offentlige internet. Disse statiske filer omfatter produktoverførsler (f.eks. **Power BI Desktop**, **datagateway i det lokale miljø** eller **Power BI-Indholdspakker** fra forskellige uafhængige tjenesteudbydere), browserkonfigurationsfiler, der bruges til at starte og etablere relevante efterfølgende forbindelser med Power BI, samt den indledende sikre Power BI-logonside – de faktiske legitimationsoplysninger sendes kun over ExpressRoute.   
+Power BI bruger flere **netværk, der leverer indhold** eller websteder til effektivt at distribuere det nødvendige statiske indhold og filer til brugere baseret på geografisk landestandard via det offentlige internet. Disse statiske filer omfatter produktoverførsler (f.eks. **Power BI Desktop**, **datagateway i det lokale miljø** eller **Power BI-indholdspakker** fra forskellige uafhængige tjenesteudbydere), browserkonfigurationsfiler, der bruges til at starte og etablere relevante efterfølgende forbindelser med Power BI, samt den indledende sikre Power BI-logonside – de faktiske legitimationsoplysninger sendes kun via ExpressRoute.   
 
 Visse **telemetridata** sendes også over det offentlige internet og over ExpressRoute. Telemetridata omfatter statistikker over brug og lignende data, som sendes til tjenester, der bruges til at overvåge brug og aktivitet.
 
@@ -94,5 +94,5 @@ Nogle **brugerdefinerede visuals** er oprettet af tredjeparter, andre er oprette
 Dette dokument berører ikke brug af Power BI-mobilapps.  
 
 ### <a name="on-premises-data-gateway-and-expressroute"></a>Datagateway og ExpressRoute i det lokale miljø
-Når en **datagateway i det lokale miljø** bruges med Power BI, er overførsler ExpressRoute-kompatible med undtagelse af brugeraktiviteterne, der er dokumenteret i afsnittet **Power BI SaaS-program og ExpressRoute** tidligere i dette emne.  
+Når en **datagateway i det lokale miljø** bruges med Power BI, er overførsler kompatible med ExpressRoute med undtagelse af brugeraktiviteterne, der er dokumenteret i afsnittet **Power BI SaaS-program og ExpressRoute** tidligere i dette emne.  
 

@@ -2,14 +2,14 @@
 title: Brug af SAP BW Connector i Power BI Desktop
 description: Brug af SAP BW Connector i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0486cb7887ae068b55de94a3d842843c094c8a29
-ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
+ms.openlocfilehash: 84ee8e7c6dd92c5400b6e9d44fab03ad347084d9
+ms.sourcegitcommit: e31fc1f6e4af427f8b480c8dbc537c3617c9b2c0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Brug af SAP BW Connector i Power BI Desktop
 Med Power BI Desktop har du adgang til data i **SAP BusinessWarehouse (BW)**.
@@ -38,7 +38,7 @@ Når du vil bruge **SAP BW Connector**, skal du gennemføre følgende installati
    ![](media/desktop-sap-bw-connector/sap_bw_2a.png)
 
 ## <a name="sap-bw-connector-features"></a>Funktioner i SAP BW Connector
-Med **SAP BW Connectors** i Power BI Desktop kan du importere data fra dine **SAP Business Warehouse Server**-kuber, eller du kan bruge DirectQuery med **SAP BW Connector**. 
+Med **SAP BW Connectors** i Power BI Desktop kan du importere data fra dine **SAP Business Warehouse Server**-kuber eller bruge DirectQuery. 
 
 Du kan finde flere oplysninger om **SAP BW Connector**, og hvordan du bruger den med DirectQuery, i artiklen [DirectQuery og SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 

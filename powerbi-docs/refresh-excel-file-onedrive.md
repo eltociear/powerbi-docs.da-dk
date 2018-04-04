@@ -1,15 +1,15 @@
 ---
-title: "Opdater et datasæt, der er baseret på en Excel-projektmappe - cloud"
-description: "Opdater et datasæt baseret på en Excel-arbejdsmappe på OneDrive eller SharePoint Online"
+title: Opdater et datasæt, der er baseret på en Excel-projektmappe - cloud
+description: Opdater et datasæt baseret på en Excel-arbejdsmappe på OneDrive eller SharePoint Online
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: c20ba2a33a88ba8c6ab27cf60b02babf3ebb4cad
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: ff5a13e842473f276b183f524b2ee5c17e173c96
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-onedrive-or-sharepoint-online"></a>Opdater et datasæt baseret på en Excel-arbejdsmappe på OneDrive eller SharePoint Online
 Du kan importere Excel-arbejdsmapper, der er gemt på din lokale computer eller lagret i clouden, som f.eks. OneDrive for Business eller SharePoint Online. Vi vil nu se på fordelene ved at bruge cloudlagring til dine Excel-filer. Du kan finde flere oplysninger om, hvordan du importerer Excel-filer til Power BI, under [Hent data fra Excel-projektmappefiler](service-excel-workbook-files.md).
@@ -106,7 +106,7 @@ Sørg for, at indstillingen **Send mig en mail med meddelelse om opdateringsfejl
 ## <a name="troubleshooting"></a>Fejlfinding
 Nogle gange går opdateringen af data muligvis ikke som forventet. Dette skyldes som regel et problem i forbindelse med en gateway. Se artiklerne om fejlfinding af gatewayen for at få oplysninger om værktøjer og kendte problemer.
 
-[Fejlfinding af datagateway i det lokale miljø](service-gateway-onprem-tshoot.md)
+[Foretag fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)
 
 [Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)
 

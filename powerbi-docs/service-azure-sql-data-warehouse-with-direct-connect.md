@@ -2,27 +2,27 @@
 title: Azure SQL Data Warehouse med DirectQuery
 description: Azure SQL Data Warehouse med DirectQuery
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/10/2017
+ms.date: 03/22/2018
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 6d7cb2161702b844866af66896dbadb35ad801ed
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 87b49833b5c0d1d634d440e947659a12ac87b66c
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="azure-sql-data-warehouse-with-directquery"></a>Azure SQL Data Warehouse med DirectQuery
 Med Azure SQL Data Warehouse med DirectQuery kan du oprette dynamiske rapporter, der er baseret på data og målinger, du allerede har i Azure SQL Data Warehouse. Med DirectQuery sendes forespørgsler tilbage til dit Azure SQL Data Warehouse i realtid, når du udforsker dataene. Dette, kombineret med skalaen for SQL Data Warehouse, gør det muligt for brugere at oprette dynamiske rapporter på få minutter med terabytes af data. Desuden kan brugere med indførelsen af knappen **Åbn i Power BI** oprette direkte forbindelse fra Power BI til deres SQL Data Warehouse uden at skulle angive oplysninger manuelt.
@@ -84,9 +84,13 @@ Din fulde servernavn og databasenavn kan findes i Azure Preview-portalen. Bemær
 
 ![](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
+> [!NOTE]
+> Hvis din Power BI-lejer befinder sig i det samme område som Azure SQL Data Warehouse, er der ingen gebyrer for udgående data. Du kan se, hvor din Power BI-befinder sig, ved hjælp af [disse instruktioner](https://docs.microsoft.com/en-us/power-bi/service-admin-where-is-my-tenant-located).
+>
+
 ## <a name="next-steps"></a>Næste trin
 [Kom i gang med Power BI](service-get-started.md)  
 [Hent data til Power BI](service-get-data.md)  
 [Azure SQL Data Warehouse](https://azure.microsoft.com/en-us/documentation/services/sql-data-warehouse/)  
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
