@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/13/2018
+ms.date: 03/20/2018
 ms.author: maggies
-ms.openlocfilehash: 5c2573bf4a3900b4d4216170e843263bc41a4e07
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 29241b4c0f059540e6f1496f04b3044ebbd7d68b
+ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -35,6 +35,18 @@ Du kan finde relaterede oplysninger om nyheder under:
 ### <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI til Mixed Reality-app (Eksempel)
 
 Vi har udviklet Power BI til Mixed Reality-appen for at give dig nemmere adgang til dine data overalt. Se dine dashboards og rapporter i en virtuel verden, eller placer dem, så du kan se dem på særlige steder i dine omgivelser. Læs mere om den nye [Power BI til Mixed Reality-app](mobile-mixed-reality-app.md).
+
+### <a name="share-reports-and-dashboards-externally"></a>Del rapporter og dashboards eksternt
+
+Del dashboards og rapporter med brugere uden for din organisation direkte fra appen. Ekstern deling er aktiveret for både organisationskonti og sociale konti. 
+
+### <a name="persistent-filters"></a>Faste filtre
+
+Når du angiver filtre og udsnitsværktøj i Power BI på internettet, gemmes dit valg af filtre også i mobilappen, så du kan hurtigt fortsætte dit arbejde, hvor du slap.
+
+### <a name="refresh-reports-on-the-ipad"></a>Opdater rapporter på iPad
+
+Der er nu en opdateringsknap i Power BI-rapporter i iPad-appen.
 
 ## <a name="february-2018"></a>Februar 2018
 
