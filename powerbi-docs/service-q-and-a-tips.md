@@ -1,15 +1,15 @@
 ---
-title: "Tip og tricks til at stille spørgsmål med Spørgsmål og svar i Power BI"
-description: "Tip og tricks til at stille spørgsmål med Spørgsmål og svar i Power BI"
+title: Tip og tricks til at stille spørgsmål med Spørgsmål og svar i Power BI
+description: Tip og tricks til at stille spørgsmål med Spørgsmål og svar i Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/18/2018
 ms.author: jastru
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: bdf1f161e0a95bda5b37d9c43a3bdcc6bde1066a
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 28ebd938b1121e1d2d453a9c9e72592b1c814742
+ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tip til at stille spørgsmål med Spørgsmål og svar i Power BI
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Ord og terminologi, som Spørgsmål og svar genkender
@@ -94,9 +94,6 @@ Spørgsmål og svar gør sit bedste for at sikre, at svaret præcist afspejler d
 * foreslår automatisk tilsvarende termer fra det eller de underliggende datasæt, når du flytter markøren tilbage i spørgsmålsfeltet.
 * viser spørgsmålet igen baseret på dataene i det eller de underliggende datasæt. Det er med til at sikre, at Spørgsmål og svar har forstået dit spørgsmål, da Spørgsmål og svar erstatter de ord, du brugte, med synonymer fra det eller de underliggende datasæt.
 * nedtoner ord, som ikke genkendes.
-
-## <a name="combine-results-from-more-than-one-dataset"></a>Kombiner resultater fra mere end ét datasæt
-En af Power BI's stærkeste funktioner er muligheden for at kombinere data fra forskellige datasæt.  Så der er ingen grund til at begrænse dine spørgsmål til et enkelt datasæt – stil spørgsmål, der henter data fra mere end ét datasæt. Hvis mit dashboard indeholder felter fra Retail Analysis Sample og et datasæt for delstatspopulation, kan jeg f.eks. spørge *vis antal butikker efter delstatspopulation som søjlediagram faldende*.
 
 ## <a name="dont-stop-now"></a>Stop ikke her
 Hold samtalen i gang, når Spørgsmål og svar har vist dine resultater! Brug de interaktive funktioner i visualiseringen og Spørgsmål og svar til at afdække mere indsigt.

@@ -1,27 +1,27 @@
 ---
 title: Udforsk rapporter i Power BI-mobilappsene
-description: "Se, hvordan du kan få vist og interagere med rapporter i Power BI-mobilappsene på din telefon eller tablet. Du kan oprette rapporter i Power BI-tjenesten eller Power BI Desktop og derefter interagere med dem i mobilappsene. "
+description: 'Se, hvordan du kan få vist og interagere med rapporter i Power BI-mobilappsene på din telefon eller tablet. Du kan oprette rapporter i Power BI-tjenesten eller Power BI Desktop og derefter interagere med dem i mobilappsene. '
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/25/2018
+ms.date: 03/22/2018
 ms.author: maggies
-ms.openlocfilehash: 51006f70d0be13f08de7047f0097f7530d32a470
-ms.sourcegitcommit: be5223b62e9a5d57c52f8588d4e539d814751dd6
+ms.openlocfilehash: 6edd5a6e9606150d4b489a79cdb5ca57ac2f8cce
+ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -33,7 +33,7 @@ Gælder for:
 En Power BI-rapport er en interaktiv visning af dine data, hvor visualiseringer repræsenterer forskellige resultater og indsigter fra disse data. At få vist rapporter i Power BI-mobilapps er det sidste trin i en proces med tre trin.
 
 1. [Opret rapporter i Power BI Desktop](desktop-report-view.md). Du kan endda [optimere en rapport til telefoner](mobile-apps-view-phone-report.md) i Power BI Desktop. 
-2. Publicer disse rapporter til Power BI-tjenesten [(https://powerbi.com)](https://powerbi.com) eller [Power BI-rapportserver](report-server/get-started.md).  
+2. Publicer disse rapporter i Power BI-tjenesten [(https://powerbi.com)](https://powerbi.com) eller [Power BI-rapportserver](report-server/get-started.md).  
 3. Derefter kan du interagere med rapporterne i Power BI-mobilappsene.
 
 ## <a name="open-a-power-bi-report-in-the-mobile-app"></a>Åbn en Power BI-rapport i mobilappen
@@ -50,7 +50,9 @@ Power BI-rapporter er gemt på forskellige steder i mobilappen, afhængigt af hv
   ![Telefonrapport i liggende format](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
 
 ## <a name="view-reports-optimized-for-phones"></a>Vis rapporter, der er optimeret til telefoner
-Den, der opretter en rapport i Power BI, kan oprette et rapportlayout, som er specifikt optimeret til telefoner. Rapportsider optimeret til telefoner har supplerende funktionalitet: F.eks. kan du analysere og sortere i visuals i fokustilstand, og du kan tilgå [filtrene, som rapportens forfatter har føjet til rapportsiden](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). Hvis en rapport er optimeret til telefoner, vises den med et særligt ![Telefonrapport-ikon](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
+Den, der opretter en rapport i Power BI, kan oprette et rapportlayout, som er specifikt optimeret til telefoner. Rapportsider optimeret til telefoner har supplerende funktionalitet: F.eks. kan du analysere og sortere i visuals i fokustilstand, og du kan tilgå [filtrene, som rapportens forfatter har føjet til rapportsiden](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). Rapporten åbnes på din telefon filtreret efter de værdier, der filtreres efter i rapporten på internettet, sammen med en meddelelse om, at der er aktive filtre på siden. Du kan ændre filtrene på telefonen.
+
+Hvis en rapport er optimeret til telefoner, vises den med et særligt ikon på listen over rapporter ![Ikon for rapport, der er optimeret til telefoner](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
 
 ![Åbn en rapport, der er optimeret til telefoner](media/mobile-reports-in-the-mobile-apps/power-bi-android-phone-report.png)
 
@@ -63,7 +65,7 @@ Når du får vist rapporten på en telefon, åbnes den i stående format.
 Læs mere om [rapporter, der er optimeret til visning på telefoner](mobile-apps-view-phone-report.md).
 
 ## <a name="use-slicers-to-filter-a-report-page"></a>Brug udsnit til at filtrere en rapportside
-Når du opretter en rapport i Power BI Desktop eller Power BI-tjenesten, bør du overveje at [føje udsnit til en rapportside](power-bi-visualization-slicers.md). Du og dine kolleger kan bruge udsnittene til at filtrere siden i en browser og i mobilapps. Når du får vist rapporten på en telefon, kan du se og interagere med udsnittene i liggende tilstand og på en side, der er optimeret til telefonens lodrette tilstand.
+Når du opretter en rapport i Power BI Desktop eller Power BI-tjenesten, bør du overveje at [føje udsnit til en rapportside](power-bi-visualization-slicers.md). Du og dine kolleger kan bruge udsnittene til at filtrere siden i en browser og i mobilapps. Når du får vist rapporten på en telefon, kan du se og interagere med udsnittene i liggende tilstand og på en side, der er optimeret til telefonens lodrette tilstand. Hvis du vælger en værdi i et udsnitsværktøj eller et filter i browseren, vælges værdien også, når du får vist siden i mobilappen. Du får vist en meddelelse om, at der er aktive filtre på siden.  
 
 * Når du vælger en værdi i et udsnit på rapportsiden, filtreres de andre visualiseringer på siden.
   

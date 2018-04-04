@@ -2,14 +2,14 @@
 title: Brugerdefinerede visualiseringer i Power BI
 description: Brugerdefinerede visualiseringer i Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 02/06/2018
 ms.author: maghan
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 66b4af61ebc46afa65403f9e5d5fa47289c0a07b
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 6e5459492879cccbd2f18c572140eabfd0ab0f1c
+ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="custom-visuals-in-power-bi"></a>Brugerdefinerede visualiseringer i Power BI
 Når du opretter eller redigerer en Power BI-rapport, er der mange forskellige tilgængelige visualiseringstyper, du kan bruge. Disse visualiseringer vises i ruden **Visualiseringer**. Når du downloader Power BI Desktop eller åbner Power BI-tjenesten (app.powerbi.com), får du dette sæt "forudpakkede" visualiseringer med.
@@ -47,7 +47,7 @@ Brugerdefinerede visualiseringer er pakker, der indeholder kode til at gengive d
 > 
 > 
 
-## <a name="organization-visuals-preview"></a>Visualiseringer til virksomheder (prøveversion)
+## <a name="organization-visuals"></a>Visualiseringer til virksomheder
 
 Power BI-administratorer kan udrulle brugerdefinerede visualiseringer i deres virksomheder, så forfattere af rapporter nemt kan finde og bruge den brugerdefinerede visualisering, som administratoren har godkendt til brug i virksomheden. Dette giver administratoren mulighed for at vælge, hvilke specifikke brugerdefinerede visualiseringer der kan udrulles i virksomheden, og giver dem en nem måde at administrere (dvs. opdatere version, deaktivere/aktivere) disse visualiseringer på. For forfatteren af rapporten er dette en nem måde at finde virksomhedsspecifikke visualiseringer på, og det er også en problemfri måde at opdatere disse visualiseringer på.
 

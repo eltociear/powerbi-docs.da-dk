@@ -1,13 +1,13 @@
 ---
-title: "Anmærk og del i Power BI-mobilapps"
-description: "Læs mere om at anmærke og dele felter, rapporter og visualiseringer fra Microsoft Power BI-mobilappen til iOS og Android. "
+title: Anmærk og del i Power BI-mobilapps
+description: 'Læs mere om at anmærke og dele felter, rapporter og visualiseringer fra Microsoft Power BI-mobilappen til iOS og Android. '
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: monitoring
 qualitydate: 02/28/2017
 ms.service: powerbi
@@ -15,20 +15,20 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/12/2017
+ms.date: 03/20/2018
 ms.author: maggies
-ms.openlocfilehash: f62d743a9d1d49444b118c1cb63a45dc7255d852
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 12dd7e2dcce655b6cde370877f56c4d57e18dbd9
+ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Anmærk og del et felt, en rapport eller en visualisering i Power BI-mobilapps
 Gælder for:
 
 | ![iPhone](media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/iphone-logo-50-px.png) | ![iPad](media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/ipad-logo-50-px.png) | ![Android-telefon](media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/android-phone-logo-50-px.png) | ![Android-tablet](media/mobile-annotate-and-share-a-tile-from-the-mobile-apps/android-tablet-logo-50-px.png) |
 |:--- |:--- |:--- |:--- |
-| iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |
+| iPhones |iPad-tablets |Android-telefoner |Android-tablets |
 
 Du kan anmærke og dele et øjebliksbillede af et felt, en rapport eller en visualisering fra Power BI-mobilappen på iOS- og Android-enheder. Dine modtagere kan se det, præcis som det var, når du sender mailen med et link. Du kan sende et øjebliksbillede af felter til alle – ikke kun til kolleger på samme maildomæne. Du kan tilføje anmærkninger – streger, tekst eller stempler – før du deler.
 
@@ -36,7 +36,7 @@ Du kan anmærke og dele et øjebliksbillede af et felt, en rapport eller en visu
 
 *En rapport med anmærkninger*
 
-Mailen med øjebliksbilledet af et felt, en rapport eller en visualisering inkluderer også et link til det faktiske objekt i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)). Dine modtagere kan klikke på linket og gå direkte til feltet, rapporten eller visualiseringen, hvis både du og modtagerne har Power BI Pro-licenser, eller hvis indholdet er i en [Premium-kapacitet](service-premium.md), og du allerede har delt et element med disse modtagere. 
+Mailen med snapshottet af feltet, rapporten eller visualiseringen indeholder også et link til det faktiske objekt i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)). Dine modtagere kan klikke på linket og gå direkte til feltet, rapporten eller visualiseringen, hvis både du og modtagerne har Power BI Pro-licenser, eller hvis indholdet er i en [Premium-kapacitet](service-premium.md), og du allerede har delt et element med disse modtagere. 
 
 Du kan også [dele et felt fra Power BI-mobilappen til Windows 10-enheder](mobile-share-tile-windows-10-phone-app.md), men du kan ikke anmærke det.
 
@@ -81,5 +81,5 @@ Du kan også [dele et felt fra Power BI-mobilappen til Windows 10-enheder](mobil
 
 ## <a name="next-steps"></a>Næste trin
 * [Del et dashboard fra din Power BI-mobilapp](mobile-share-dashboard-from-the-mobile-apps.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-communityet](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
