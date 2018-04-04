@@ -1,15 +1,15 @@
 ---
 title: Administrer kapaciteter i Power BI Premium og Power BI Embedded
-description: "Få mere at vide om, hvordan du kan administrere Power BI Premium og give adgang til indhold til hele organisationen."
+description: Få mere at vide om, hvordan du kan administrere Power BI Premium og give adgang til indhold til hele organisationen.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 10/10/2017
 ms.author: maghan
 LocalizationGroup: Premium
-ms.openlocfilehash: a6040871652484ad5de70a0d73e14a13742fe56a
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 556f91464e8a08b5cb149648be2b097578964af9
+ms.sourcegitcommit: ae4d771b883b654358a6a94dd784ea9bdf3d3aa3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Administrer kapaciteter i Power BI Premium og Power BI Embedded
 Få mere at vide om, hvordan du kan administrere kapaciteter i Power BI Premium og Power BI Embedded, som indeholder dedikerede ressourcer til dit indhold.
@@ -47,6 +47,10 @@ Hvis du vil drage fordel af dedikeret kapacitet, skal du købe et abonnement på
 * **Power BI Embedded:** [Opret Power BI Embedded-kapacitet på Azure Portal](https://docs.microsoft.com/en-us/azure/power-bi-embedded/create-capacity)
 
 Når du køber Power BI Premium-varenumre, modtager din lejer det tilsvarende antal v-kerner til at køre kapaciteter. Køb af f.eks. Power BI Premium P3-varenumre giver lejeren adgang til 32 v-kerner.
+
+> [!NOTE]
+> Du har 30 dage med fuld adgang, når dit abonnement ophører, men herefter bliver dit indhold delt igen. Modeller, der er > 1 GB understøttes ikke af en almindelig delt licens.
+>
 
 ## <a name="capacity-admins"></a>Kapacitetsadministratorer
 > [!NOTE]
