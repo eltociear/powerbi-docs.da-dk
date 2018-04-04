@@ -1,15 +1,15 @@
 ---
 title: Deaktiver indstillingerne for beskyttelse af personlige oplysninger
-description: "Sådan kan du slå Kombiner hurtigt til i den personlige gateway for at deaktivere indstillingerne for beskyttelse af personlige oplysninger ved opdatering."
+description: Sådan kan du slå Kombiner hurtigt til i den personlige gateway for at deaktivere indstillingerne for beskyttelse af personlige oplysninger ved opdatering.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,15 +18,15 @@ ms.workload: powerbi
 ms.date: 02/06/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 54d5f5ec2db890de0fbcef5ef0633548b90a6079
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: b8ec52f3c8bcb4051bd0ac9064786ddbfd15d9fe
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="disable-privacy-setting-in-power-bi-gateway---personal"></a>Deaktiver indstillingerne for beskyttelse af personlige oplysninger i Power BI Gateway – Personlig
 > [!NOTE]
-> Der er en ny version af den personlige gateway til Power BI, der kaldes **datagateway i det lokale miljø (personlig tilstand)**. I følgende artikel beskrives den tidligere version af den personlige gateway, der blev kaldt **Power BI Gateway – Personal**, og som udgår og stopper med at virke efter den 31. juli 2017. Du kan finde oplysninger om den nye version af den personlige gateway, herunder, hvordan du installerer den nye version, i [ artiklen **Datagateway i det lokale miljø (personlig tilstand)**](service-gateway-personal-mode.md). Kombiner hurtigt er også tilgængeligt i den nye version af den personlige gateway, og den beskrives også i den artikel.
+> Der er en ny version af den personlige gateway til Power BI, som kaldes **datagateway i det lokale miljø (personlig tilstand)**. I følgende artikel beskrives den tidligere version af den personlige gateway, der blev kaldt **Power BI Gateway – Personal**, og som udgår og stopper med at virke efter den 31. juli 2017. Du kan finde oplysninger om den nye version af den personlige gateway, herunder, hvordan du installerer den nye version, i [ artiklen **Datagateway i det lokale miljø (personlig tilstand)**](service-gateway-personal-mode.md). Kombiner hurtigt er også tilgængeligt i den nye version af den personlige gateway, og den beskrives også i den artikel.
 > 
 > 
 
@@ -51,7 +51,7 @@ Hvis du vil vide mere om niveauer for beskyttelse af personlige oplysninger og K
 Hvis du slår Kombiner hurtigt til, ignoreres indstillingen for beskyttelse af personlige oplysninger for at tillade, at forespørgslen kan udføres.
 
 ## <a name="turn-on-fast-combine"></a>Slå Kombiner hurtigt til
-Du kan bruge følgende trin til at aktivere Kombiner hurtigt for din personlige gateway. Denne indstilling findes ikke for gatewayen i det lokale miljø.
+Du kan bruge følgende trin til at aktivere Kombiner hurtigt for din personlige gateway. Datagatewayen i det lokale miljø har ikke denne indstilling.
 
 1. Åbn **ConnectorConfig.xml**.  Den kan være placeret to forskellige steder på din computer.  Hvis du er administrator på computeren, er den placeret her.
    

@@ -2,14 +2,14 @@
 title: Opdatering af data i Power BI
 description: Opdatering af data i Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/19/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 23709342f522d029e01cf7192627e179d260fa8d
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: decd8a072ba644c9d67a7a0005b752423d32984a
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="data-refresh-in-power-bi"></a>Opdatering af data i Power BI
 At sørge for altid at have de nyeste data er ofte kritisk for at kunne tage de rigtige beslutninger. Du har muligvis allerede brugt Hent data i Power BI til at oprette forbindelse til og overføre data, så du kunne oprette nogle rapporter og et dashboard. Nu skal du sikre dig, at dataene virkelig er de nyeste og bedste.
@@ -166,7 +166,7 @@ Med datagatewayen i det lokale miljø kan du sende forespørgsler fra Power BI t
 
 Når der oprettes forbindelse til en SQL Service Analysis Services (SSAS)-datakilde ved hjælp af en liveforbindelse, kan liveforbindelsen til SSAS-kilden i modsætning til DirectQuery køre mod cachen, selvom den indlæser en rapport. Denne adfærd forbedrer indlæsningsydeevnen for rapporten. Du kan sende en forespørgsel om de seneste data fra SSAS-datakilden ved hjælp af knappen til **opdatering**. Ejere af SSAS-datakilder kan konfigurere hyppigheden for planlagt opdatering af cachen for datasættet for at sikre, at rapporterne er så opdaterede, som de kræver. 
 
-Når du konfigurerer en datakilde med datagatewayen i det lokale miljø, kan du bruge denne datakilde som planlagt opdateringsmulighed. Det ville være et alternativ til at bruge den personlige gateway.
+Når du konfigurerer en datakilde med datagatewayen i det lokale miljø, kan du bruge denne datakilde som den planlagte opdateringsmulighed. Det ville være et alternativ til at bruge den personlige gateway.
 
 > [!NOTE]
 > Hvis dit datasæt er konfigureret til en live- eller DirectQuery-forbindelse, opdateres datasæt ca. en gang i timen, eller når der arbejdes med dataene. Du kan tilpasse *opdateringshyppigheden* manuelt i indstillingen *Planlagt cacheopdatering* i Power BI-tjenesten.

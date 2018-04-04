@@ -1,137 +1,91 @@
 ---
-title: "Køb Power BI Pro"
-description: "Power BI Pro er til brugere, der publicerer rapporter, deler dashboards, samarbejder med kolleger i arbejdsområder og er engageret i andre relaterede aktiviteter."
+title: Køb Power BI Pro
+description: Power BI Pro er til brugere, der publicerer rapporter, deler dashboards, samarbejder med kolleger i arbejdsområder og er engageret i andre relaterede aktiviteter.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 06/30/2017
+ms.date: 03/22/2018
 ms.author: maghan
 LocalizationGroup: Administration
-ms.openlocfilehash: c4fa2e0e2927f8050648884e1833adf618a7d4f5
-ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
+ms.openlocfilehash: 8b0b49e5c628f5e01bb2368d9bc471acc5342f97
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="purchasing-power-bi-pro"></a>Køb Power BI Pro
-Power BI Pro er til brugere, der publicerer rapporter, deler dashboards, samarbejder med kolleger i arbejdsområder og er engageret i andre relaterede aktiviteter – og gør det muligt at:
 
-* Analysere data i Excel eller Power BI Desktop
-* Dele med understøttelse af Excel Web App
-* Dele dashboards og samarbejde med apparbejdsområder
-* Få vist delt indhold
-* Integrere indhold med Microsoft Teams
+Med Power BI Pro kan du publicere rapporter, dele dashboards, samarbejde med kolleger i arbejdsområder og foretage andre relaterede aktiviteter. Du kan finde flere oplysninger om, hvordan din organisation kan få fordel af Power BI Pro, under [Power BI Pro i din organisation](service-admin-power-bi-pro-in-your-organization.md).
 
-It-administratorer har nogle forskellige muligheder for at bruge Power BI Pro i din organisation. Du kan købe Power BI Pro gennem Office 365 Administration eller gennem din Microsoft-repræsentant eller -partner. I denne artikel ser vi på de to mulige prøveversioner af Power BI Pro, og hvordan man køber som en organisation.
+## <a name="purchasing-power-bi-pro-through-office-365-admin-center"></a>Køb af Power BI Pro gennem Office 365 Administration
 
-Du kan få mere at vide om Power BI Premium, og hvordan Power BI Pro passer til Premium-tilbudene, under [Power BI Premium – Hvad er det?](service-premium.md).
+It-administratorer af Office kan købe Power BI Pro enten som en del af et Office 365 Enterprise E5-abonnement eller som et separat Power BI Pro-abonnement. Du kan derefter tildele Power BI Pro-licenser til de relevante brugere. Du kan finde flere oplysninger om, hvordan du tildeler licenser, under [Tildel licenser til brugere i Office 365](https://support.office.com/en-us/article/assign-licenses-to-users-in-office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US).
+
+Hvis du er it-administrator af Office kan du købe Power BI Pro ved at benytte følgende fremgangsmåde:
+
+1. Naviger til [Office 365 Administration](https://portal.office.com/adminportal/home#/homepage).
+2. Vælg Fakturering i navigationsruden til venstre, og klik derefter på Abonnementer.
+
+    ![navigationsrude](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro/service-purchasing-power-bi-pro-01.png)
+
+3. Klik på Tilføj abonnementer øverst til højre på siden Abonnementer.
+
+    ![abonnement](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro/service-purchasing-power-bi-pro-02.png)
+
+4. Find det ønskede abonnement:
+
+    Vælg Office 365 Enterprise E5 under Enterprise Suite
+
+    ![Office E5-abonnement](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro/service-purchasing-power-bi-pro-03.png)
+
+    Vælg Power BI Pro under Andre planer
+
+    ![PBI-abonnement](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro/service-purchasing-power-bi-pro-04.png)
+
+5. Peg på ellipserne (…) for det ønskede abonnement, og vælg Køb nu.
+
+    ![Køb nu](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro/service-purchasing-power-bi-pro-05.png)
+
+6. Vælg, om du vil betale pr. måned eller for et helt år ad gangen.
+7. Angiv det ønskede antal licenser under Hvor mange brugere ønsker du?, og klik for at gå til kassen eller føje til indkøbskurven, og fuldfør transaktionen.
+8. Kontrollér, at abonnementet nu er vist på siden Abonnementer.
+
+   ![Erhvervet abonnement](media/service-admin-purchasing-power-bi-pro/service-purchasing-power-bi-pro/service-purchasing-power-bi-pro-06.png)
+
+> [!NOTE]
+> Du kan tilføje flere licenser efter det første køb. Vælg Power BI Pro-abonnementet på siden Abonnementer, og klik på Tilføj/fjern licenser.
+>
 
 ## <a name="pricing"></a>Priser
-Under [Priser på Power BI](https://powerbi.microsoft.com/pricing/) finder du de nyeste oplysninger om priser på Power BI Pro samt en tabel over de medfølgende funktioner.
 
-## <a name="in-service-power-bi-pro-60-day-trial-for-individuals"></a>Power BI Pro i fuld drift i en 60-dages prøveperiode for enkeltpersoner
-Når du har tilmeldt dig din gratis konto, kan du også vælge at prøve Pro gratis i 60 dage. Du får adgang til alle Pro-funktionerne i hele prøveperioden. Power BI Pro har alle funktionerne fra den gratis version af Power BI samt yderligere funktioner til deling og samarbejde. Se [Priser på Power BI](https://powerbi.microsoft.com/pricing), hvis du vil have flere oplysninger. Log på Power BI for at få en 60-dages gratis prøveperiode på Power BI Pro, og prøv én af disse Power BI Pro-funktioner:
-
-* [Opret et app-arbejdsområde](service-create-distribute-apps.md)
-* [Del et dashboard](service-share-dashboards.md)
-
-Når du prøver en af disse funktioner, bliver du bedt om at starte din gratis prøveperiode. Du kan også vælge den ved at gå til tandhjulsikonet og vælge **Administrer personligt lager**. Vælg derefter **Prøv Pro gratis** til højre.
-
-![](media/service-admin-purchasing-power-bi-pro/powerbi-pro-trial1.png)
-
-Derefter kan du vælge **Start prøveperiode**.
-
-![](media/service-admin-purchasing-power-bi-pro/powerbi-pro-trial2.png)
-
-> [!NOTE]
-> Brugere, der benytter sig af denne Power BI Pro-prøveversion inde i produktet, vises ikke i Office 365-administrationsportalen som Power BI Pro-prøvebrugere (de vises som gratis Power BI-brugere). De vises dog som Power BI Pro-prøvebrugere på siden **Administrer lager** i Power BI.
-
-> [!NOTE]
-> Hvis du er it-administrator og ønsker at hente og installere Power BI-prøvelicenser til flere brugere i din organisation, uden at de enkelte brugere skal acceptere vilkårene, kan du tilmelde dig et [Power BI Pro-prøveabonnement](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO). Du skal være global administrator eller faktureringsadministrator i Office 365, eller du skal oprette en ny lejer for at tilmelde dig en administratorprøveversion. Du kan få mere at vide under [Køb af Power BI Pro](service-admin-purchasing-power-bi-pro.md).
-
-> [!NOTE]
-> Med tilgængeligheden af Power BI Premium og ændringerne i tilbuddet om det gratis Power BI 1. juni 2017, er du muligvis berettiget til en udvidet Pro-prøveversion. Du kan få mere at vide under [Aktivering af udvidet Pro-prøveversion](service-extended-pro-trial.md).
-
-### <a name="what-this-looks-like-within-the-service"></a>Sådan ser det ud i tjenesten
-Når du befinder dig i tjenesten, kan du bekræfte, at du har en Pro-prøvekonto, ved at gå til **tandhjulsikonet** og vælge **Administrer personligt lager**.
-
-![](media/service-admin-purchasing-power-bi-pro/powerbi-pro-trial3.png)
-
-## <a name="subscription-trial-in-office-365"></a>Prøveabonnement i Office 365
-Du kan få Power BI Pro som en prøveversion til din organisation. Når du har abonnementet, kan du tildele Power BI Pro-licenser til dine brugere. Du kan få mere at vide om, hvordan du tildeler licenser, under [Tildel licenser til brugere i Office 365](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
-
-> [!NOTE]
-> Der er en grænse på én organisationsprøveversion pr. lejer. Det betyder, at hvis en person allerede har anvendt Power BI Pro (prøveversion) på din lejer, kan du ikke gøre det igen. Hvis du har brug for hjælp til dette, kan du kontakte [Office 365-faktureringssupport](https://support.office.microsoft.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671&ui=en-US&rs=en-US&ad=US#BKMK_call_support).
-> 
-
-1. Naviger til [Office 365 Administration](https://portal.office.com/admin/default.aspx).
-2. I den venstre navigationsrude skal du vælge Fakturering > Abonnementer.
-3. Vælg Tilføj abonnementer + i højre side.
-4. Under Andre planer skal du holde musemarkøren over ellipsen (…) til Power BI Pro og vælge Start gratis prøveversion.
-   
-    ![](media/service-admin-purchasing-power-bi-pro/organization-pro-trial1.png)
-5. Vælg Prøv nu på bekræftelsesskærmbilledet.
-6. Vælg Fortsæt på ordrekvitteringen.
-
-Under **Fakturering** > **Abonnementer** kan du se **Power BI Pro (prøveversion)** angivet med 25 tilgængelige licenser. Dette er prøveperiode på én måned.
-
-### <a name="what-this-looks-like-within-the-service"></a>Sådan ser det ud i tjenesten
-Når du befinder dig i tjenesten, kan du bekræfte, at du har en Pro-konto, ved at gå til **tandhjulsikonet** og vælge og køre **Administrer personligt lager**. Der er ingen angivelse af, at dette er en prøveversionsbruger.
-
-![](media/service-admin-purchasing-power-bi-pro/powerbi-pro3.png)
-
-## <a name="purchase-subscription-in-office-365"></a>Køb abonnement i Office 365
-Du kan købe Power BI Pro til din organisation via Office 365 Administration. Når du har abonnementet, kan du tildele Power BI Pro-licenser til dine brugere. Du kan få mere at vide om, hvordan du tildeler licenser, under [Tildel licenser til brugere i Office 365](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
-
-1. Naviger til [Office 365 Administration](https://portal.office.com/admin/default.aspx).
-2. I den venstre navigationsrude skal du vælge Fakturering > Abonnementer.
-3. Vælg Tilføj abonnementer + i højre side.
-4. Under Andre planer skal du føre musen over ellipsen (…) for Power BI Pro og vælge Køb nu.
-   
-    ![](media/service-admin-purchasing-power-bi-pro/organization-pro1.png)
-5. Angiv det antal licenser, du vil tilføje, og vælg derefter Gå til kassen eller Føj til indkøbskurv.
-   
-   > [!NOTE]
-   > Du kan tilføje mere på et senere tidspunkt, hvis det er nødvendigt.
-   > 
-   > 
-6. Angiv de nødvendige oplysninger i udtjekningsflowet.
-
-> [!NOTE]
-> Hvis du allerede har Power BI Pro (prøveversion), kommer du direkte til kasseskærmbilledet, hvor du bliver bedt om at angive det ønskede antal licenser.
-> 
-> 
-
-Under **Fakturering** > **Abonnementer** vil du kunne se **Power BI Pro** angivet. Hvis du beslutter senere, at du vil tilføje flere licenser, kan du gå tilbage til **Tilføj abonnementer** og vælge **Rediger licensantal**.
-
-### <a name="what-this-looks-like-within-the-service"></a>Sådan ser det ud i tjenesten
-Når du befinder dig i tjenesten, kan du bekræfte, at du har en Pro-konto, ved at gå til **tandhjulsikonet** og vælge og køre **Administrer personligt lager**.
-
-![](media/service-admin-purchasing-power-bi-pro/powerbi-pro3.png)
-
-## <a name="grace-period"></a>Respitperiode
-Der er en 30-dages respitperiode, efter en Power BI Pro-licens er udløbet. 
-
-Power BI Pro har den samme abonnementslivscyklus som Office 365. Du kan finde flere oplysninger under [Hvad sker der med mine data og adgang, når mit abonnement på Office 365 til virksomheder slutter?](https://support.office.com/en-us/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
+Du kan finde de nyeste priser under [Priser på Power BI](https://powerbi.microsoft.com/en-us/pricing/).
 
 ## <a name="next-steps"></a>Næste trin
-[Tilmelding via selvbetjening til Power BI](service-self-service-signup-for-power-bi.md)  
-[Power BI (gratis) i din organisation](service-admin-service-free-in-your-organization.md)  
-[Aktivering af den udvidede Pro-prøveversion](service-extended-pro-trial.md)  
-[Power BI Premium – hvad er det?](service-premium.md)  
-[Sådan køber du Power BI Premium](service-admin-premium-purchase.md)  
-[Whitepaper om Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
+[Tilmelding via selvbetjening til Power BI](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)
+<br/>
+[Power BI (gratis) i din organisation](service-admin-service-free-in-your-organization.md)
+<br/>
+[Power BI Pro i din organisation](service-admin-power-bi-pro-in-your-organization.md)
+<br/>
+[Aktivering af den udvidede Pro-prøveversion](service-extended-pro-trial.md)
+<br/>
+[Tildeling af Power BI Pro-licenser](service-admin-assigning-power-bi-pro-licenses.md)
+<br/>
+[Power BI Premium – hvad er det?](service-admin-premium-manage.md)
+<br/>
+[Sådan køber du Power BI Premium](service-admin-premium-purchase.md)
+<br/>
+[Whitepaper om Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 
-Flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-
+Flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -1,15 +1,15 @@
 ---
-title: "Opdater et datasæt, der er baseret på en Excel-projektmappe - lokalt"
-description: "Opdater et datasæt, der er baseret på en Excel-projektmappe på et lokalt drev"
+title: Opdater et datasæt, der er baseret på en Excel-projektmappe - lokalt
+description: Opdater et datasæt, der er baseret på en Excel-projektmappe på et lokalt drev
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: a38ee72643f5eb95f0d637dbe7bfbc67e2ee656d
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 903f53378f2a9c8efce5bc8c6028f89add7df8c5
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-a-local-drive"></a>Opdater et datasæt, der er baseret på en Excel-projektmappe på et lokalt drev
 ## <a name="whats-supported"></a>Hvad understøttes?
@@ -82,9 +82,9 @@ Sørg for, at indstillingen **Send mig en mail med meddelelse om opdateringsfejl
 ## <a name="troubleshooting"></a>Fejlfinding
 Nogle gange går opdateringen af data muligvis ikke som forventet. Dette skyldes som regel et problem i forbindelse med en gateway. Se artiklerne om fejlfinding af gatewayen for at få oplysninger om værktøjer og kendte problemer.
 
-[Fejlfinding af datagateway i det lokale miljø](service-gateway-onprem-tshoot.md)
+[Foretag fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)
 
-[Fejlfinding af Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
+[Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 ## <a name="next-steps"></a>Næste trin
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

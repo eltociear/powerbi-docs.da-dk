@@ -1,14 +1,14 @@
 ---
 title: Konfigurer planlagt opdatering
-description: "Følgende forklarer, hvordan man vælger en gateway og konfigurerer planlagt opdatering."
+description: Følgende forklarer, hvordan man vælger en gateway og konfigurerer planlagt opdatering.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
+backup: ''
+editor: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -17,11 +17,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: dec6b60b4dfddd9a4c55ee01cb7b9dc6b8c71cd3
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: af8895b90b2f3315fb0cfd71351dbe65c108071e
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configuring-scheduled-refresh"></a>Konfigurering af planlagt opdatering
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/24/2018
 
 Hvis dine datasæt understøtter planlagt opdatering ved hjælp af Opdater nu og Planlæg opdatering, er der et par krav og indstillinger, som er vigtige for, at opdateringen bliver en succes. Det er: **Gatewayforbindelse**, **Legitimationsoplysninger for datakilde** og **Planlæg opdatering**. Lad os se nærmere på dem hver især.
 
-Følgende beskriver de muligheder, der er for både [Power BI Gateway – Personal](personal-gateway.md) og [en gateway i det lokale miljø](service-gateway-onprem.md).
+Følgende beskriver de tilgængelige muligheder for både [Power BI Gateway – Personal](personal-gateway.md) og [gatewayen i det lokale miljø](service-gateway-onprem.md).
 
 Du kan gøre følgende for at åbne skærmen til planlægning af opdatering.
 
@@ -70,7 +70,7 @@ Du skal kun logge på datakilder, første gang du opdaterer det pågældende dat
 Hvis noget går galt, har problemet som regel enten noget at gøre med, at gatewayen er offline, fordi den ikke kunne logge på Windows og starte tjenesten, eller at Power BI ikke kunne logge på datakilderne for at anmode om opdaterede data. Hvis opdateringen mislykkes, skal du tjekke datasættets indstillinger. Hvis gatewaytjenesten er offline, kan du se fejlen under Gatewaystatus. Hvis Power BI ikke kan logge på datakilderne, kan du se fejlen under Legitimationsoplysninger til datakilde.
 
 ### <a name="on-premises-data-gateway"></a>Datagateway i det lokale miljø
-Hvis du bruger en datagateway i det lokale miljø til at opdatere data, skal du ikke angive legitimationsoplysninger, da de defineres for datakilden af gatewayadministratorerne.
+Hvis du bruger datagatewayen i det lokale miljø til at opdatere data, skal du ikke angive legitimationsoplysninger, da de defineres for datakilden af gatewayadministratoren.
 
 ![](media/refresh-scheduled-refresh/data-source-credentials-egw.png)
 
@@ -123,15 +123,15 @@ Visse datasæt understøttes i forhold til forskellige gateways til planlagte op
 ## <a name="troubleshooting"></a>Fejlfinding
 Nogle gange går opdateringen af data muligvis ikke som forventet. Dette skyldes som regel et problem i forbindelse med en gateway. Se artiklerne om fejlfinding af gatewayen for at få oplysninger om værktøjer og kendte problemer.
 
-[Fejlfinding af datagateway i det lokale miljø](service-gateway-onprem-tshoot.md)
+[Foretag fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)
 
-[Fejlfinding af Power BI Gateway – Personal](service-admin-troubleshooting-power-bi-personal-gateway.md)
+[Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
 ## <a name="next-steps"></a>Næste trin
 [Opdatering af data i Power BI](refresh-data.md)  
 [Power BI Gateway - Personal](personal-gateway.md)  
-[Datagateway i lokalt miljø](service-gateway-onprem.md)  
-[Fejlfinding af datagateway i lokalt miljø](service-gateway-onprem-tshoot.md)  
+[Datagateway i det lokale miljø](service-gateway-onprem.md)  
+[Foretag fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
 [Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

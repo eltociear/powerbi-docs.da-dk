@@ -2,14 +2,14 @@
 title: 'Project Online: Opret forbindelse til data via Power BI Desktop'
 description: 'Project Online: Opret forbindelse til data via Power BI Desktop'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1f5fa21845167d2d9d419f163429fd1f025c1749
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 0577c6e3ce89e51c767273b634f6d3d88875eead
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="project-online-connect-to-data-through-power-bi-desktop"></a>Project Online: Opret forbindelse til data via Power BI Desktop
 Du kan oprette forbindelse til data i Project Online via Power BI Desktop.
@@ -38,10 +38,12 @@ Du kan oprette forbindelse til data i Project Online via Power BI Desktop.
    
    Hvis adressen til dit Project Web App-websted ligner adressen https://\<tenantname\>.sharepoint.com/sites/pwa, skal den adresse, du indtaster til dit OData-feed, være https://\<tenantname\>.sharepoint.com/sites/pwa/\_api/Projectdata.
    
-   I vores eksempel bruger vi https://contoso.sharepoint.com/sites/pwa/default.aspx
+   I dette eksempel bruger vi https://contoso.sharepoint.com/sites/pwa/default.aspx
 5. Power BI Desktop beder dig om at blive godkendt med din Office 365-konto. Vælg Organisationskonto, og angiv derefter dine legitimationsoplysninger.
    
    ![](media/desktop-project-online-connect-to-data/image.png)
+
+Bemærk, at der som minimum skal være adgang til Oversigtsfremviser på Project Web App-webstedet via den konto, du bruger til at oprette forbindelse til OData-feedet. 
 
 Herfra kan du vælge, hvilke tabeller du vil oprette forbindelse til, og lave en forespørgsel.  Vil du gerne vide, hvordan du kommer i gang?  I følgende blogindlæg vises, hvordan du opretter et diagram for en statusrapport ud fra dine Project Online-data.  I blogindlægget henvises der til, hvordan du kan bruge Power Query til at oprette forbindelse til Project Online, men det gælder også for Power BI Desktop.
 

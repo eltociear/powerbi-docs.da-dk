@@ -1,27 +1,27 @@
 ---
-title: "Power BI-rapportdatakilder på Power BI-rapportserver"
-description: "Power BI-rapporter kan oprette forbindelse til forskellige datakilder. Der er forskellige datakilder tilgængelige, afhængigt af hvordan dataene bruges."
+title: Power BI-rapportdatakilder på Power BI-rapportserver
+description: Power BI-rapporter kan oprette forbindelse til forskellige datakilder. Der er forskellige datakilder tilgængelige, afhængigt af hvordan dataene bruges.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/01/2017
+ms.date: 03/21/2018
 ms.author: maghan
-ms.openlocfilehash: caa45aab2c31974abb041a82eb2216ebee2eb148
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 3777c58bae36d6115b51b64e0422529fe390a13c
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakilder på Power BI-rapportserver
 Power BI-rapporter kan oprette forbindelse til forskellige datakilder. Der er forskellige datakilder tilgængelige, afhængigt af hvordan dataene bruges. Dataene kan importeres, eller der kan foretages forespørgsler om data direkte ved hjælp af DirectQuery eller en direkte forbindelse til SQL Server Analysis Services.
@@ -34,6 +34,7 @@ Disse datakilder gælder kun for Power BI-rapporter, der bruges på Power BI-rap
 > 
 
 ## <a name="list-of-supported-data-sources"></a>Liste over understøttede datakilder
+
 Det er muligt, at andre datakilder fungerer, selvom de ikke står på listen over understøttede datakilder.
 
 | **Datakilde** | **Cachelagrede data** | **Planlagt opdatering** | **Live/DirectQuery** |
@@ -48,7 +49,7 @@ Det er muligt, at andre datakilder fungerer, selvom de ikke står på listen ove
 | Amazon Redshift |Ja |Nej |Nej |
 | Azure Blob Storage |Ja |Ja |Nej |
 | Azure Data Lake Store |Ja |Nej |Nej |
-| Azure HDInsight (HDFS) |Ja |Ja |Nej |
+| Azure HDInsight (HDFS) |Ja |Nej |Nej |
 | Azure HDInsight (Spark) |Ja |Ja |Nej |
 | Azure Table Storage |Ja |Ja |Nej |
 | Dynamics 365 (online) |Ja |Nej |Nej |
@@ -119,6 +120,100 @@ Det er muligt, at andre datakilder fungerer, selvom de ikke står på listen ove
 > Sikkerhed på rækkeniveau, der er konfigureret på datakilden, skal fungere for bestemte DirectQuery-forbindelser (SQL Server, Azure SQL Database, Oracle og Teradata) og direkte forbindelser, hvis vi antager, at Kerberos er konfigureret korrekt i dit miljø.
 > 
 > 
+
+## <a name="list-of-supported-authentication-methods-for-model-refresh"></a>Liste over understøttede godkendelsesmetoder i forbindelse med opdatering af modellen
+
+Power BI-rapportserver understøtter ikke OAuth-baseret godkendelse i forbindelse med opdatering af modellen. Nogle datakilder, f.eks. Excel- eller Access-databaser, gør brug af et separat trin som Filer eller Web til at oprette forbindelse til data.
+
+| **Datakilde** | **Anonym godkendelse** | **Nøglegodkendelse** | **Brugernavn og adgangskode** | **Windows-godkendelse** |
+| --- | --- | --- | --- | --- |
+| SQL Server-database |Nej |Nej |Ja |Ja |
+| SQL Server Analysis Services |Nej |Nej |Ja |Ja |
+| Web |Ja |Nej |Ja |Ja |
+| Azure SQL Database |Nej |Nej |Ja |Nej |
+| Azure SQL Data Warehouse |Nej |Nej |Ja |Nej |
+| Active Directory |Nej |Nej |Ja |Ja |
+| Amazon Redshift |Nej |Nej |Nej |Nej |
+| Azure Blob Storage |Ja |Ja |Nej |Nej |
+| Azure Data Lake Store |Nej |Nej |Nej |Nej |
+| Azure HDInsight (HDFS) |Nej |Nej |Nej |Nej |
+| Azure HDInsight (Spark) |Ja |Ja |Nej |Nej |
+| Azure Table Storage |Nej |Ja |Nej |Nej |
+| Dynamics 365 (online) |Nej |Nej |Nej |Nej |
+| Facebook |Nej |Nej |Nej |Nej |
+| Mappe |Nej |Nej |Nej |Ja |
+| Google Analytics |Nej |Nej |Nej |Nej |
+| Hadoop File (HDFS) |Nej |Nej |Nej |Nej |
+| IBM DB2-database |Nej |Nej |Ja |Ja |
+| Impala |Nej |Nej |Nej |Nej |
+| Microsoft Exchange |Nej |Nej |Nej |Nej |
+| Microsoft Exchange Online |Nej |Nej |Nej |Nej |
+| MySQL-database |Nej |Nej |Ja |Ja |
+| OData-feed |Ja |Ja |Ja |Ja |
+| ODBC |Ja |Nej |Ja |Ja |
+| OLE DB |Ja |Nej |Ja |Ja |
+| Oracle Database |Nej |Nej |Ja |Ja |
+| PostgreSQL-database |Nej |Nej |Ja |Nej |
+| Power BI-tjeneste |Nej |Nej |Nej |Nej |
+| R Script |Nej |Nej |Nej |Nej |
+| Salesforce-objekter |Nej |Nej |Nej |Nej |
+| Salesforce-rapporter |Nej |Nej |Nej |Nej |
+| SAP Business Warehouse-server |Nej |Nej |Ja |Nej |
+| SAP HANA-database |Nej |Nej |Ja |Ja |
+| SharePoint-mappe (i det lokale miljø) |Ja |Nej |Nej |Ja |
+| SharePoint-liste (i det lokale miljø) |Ja |Nej |Nej |Ja |
+| SharePoint Online-liste |Nej |Nej |Nej |Nej |
+| Snowflake |Nej |Nej |Nej |Nej |
+| Sybase-database |Nej |Nej |Ja |Ja |
+| Teradata-database |Nej |Nej |Ja |Ja |
+| appFigures (beta) |Nej |Nej |Nej |Nej |
+| Azure Analysis Services-database (beta) |Nej |Nej |Nej |Nej |
+| Azure Cosmos DB (beta) |Nej |Nej |Nej |Nej |
+| Azure HDInsight Spark (beta) |Nej |Nej |Nej |Nej |
+| Common Data Service (beta) |Nej |Nej |Nej |Nej |
+| comScore Digital Analytix (beta) |Nej |Nej |Nej |Nej |
+| Dynamics 365 for Customer Insights (beta) |Nej |Nej |Nej |Nej |
+| Dynamics 365 for Financials (beta) |Nej |Nej |Nej |Nej |
+| GitHub (beta) |Nej |Nej |Nej |Nej |
+| Google BigQuery (beta) |Nej |Nej |Nej |Nej |
+| IBM Informix-database (beta) |Nej |Nej |Nej |Nej |
+| IBM Netezza (beta) |Nej |Nej |Nej |Nej |
+| Kusto (beta) |Nej |Nej |Nej |Nej |
+| MailChimp (beta) |Nej |Nej |Nej |Nej |
+| Microsoft Azure Consumption Insights (beta) |Nej |Nej |Nej |Nej |
+| Mixpanel (beta) |Nej |Nej |Nej |Nej |
+| Planview Enterprise (beta) |Nej |Nej |Nej |Nej |
+| Projectplace (beta) |Nej |Nej |Nej |Nej |
+| QuickBooks Online (beta) |Nej |Nej |Nej |Nej |
+| Smartsheet |Nej |Nej |Nej |Nej |
+| Spark (beta) |Nej |Nej |Nej |Nej |
+| SparkPost (beta) |Nej |Nej |Nej |Nej |
+| SQL Sentry (beta) |Nej |Nej |Nej |Nej |
+| Stripe (beta) |Nej |Nej |Nej |Nej |
+| SweetIQ (beta) |Nej |Nej |Nej |Nej |
+| Troux (beta) |Nej |Nej |Nej |Nej |
+| Twilio (beta) |Nej |Nej |Nej |Nej |
+| tyGraph (beta) |Nej |Nej |Nej |Nej |
+| Vertica (beta) |Nej |Nej |Nej |Nej |
+| Visual Studio Team Services (beta) |Nej |Nej |Nej |Nej |
+| Webtrends (beta) |Nej |Nej |Nej |Nej |
+| Zendesk (beta) |Nej |Nej |Nej |Nej |
+
+## <a name="list-of-supported-authentication-methods-for-directquery"></a>Liste over understøttede godkendelsesmetoder i forbindelse med DirectQuery
+
+Power BI-rapportserver understøtter ikke OAuth-baseret godkendelse i forbindelse med DirectQuery.
+
+| **Datakilde** | **Anonym godkendelse** | **Nøglegodkendelse** | **Brugernavn og adgangskode** | **Windows-godkendelse** | **Integreret Windows-godkendelse** |
+| --- | --- | --- | --- | --- | --- |
+| SQL Server-database |Nej |Nej |Ja |Ja |Ja |
+| SQL Server Analysis Services |Nej |Nej |Ja |Ja |Ja |
+| Azure SQL Database |Nej |Nej |Ja |Nej |Nej |
+| Azure SQL Data Warehouse |Nej |Nej |Ja |Nej |Nej |
+| Oracle Database |Nej |Nej |Ja |Ja |Ja |
+| SAP Business Warehouse-server |Nej |Nej |Ja |Nej |Ja |
+| SAP HANA-database |Nej |Nej |Ja |Ja |Nej |
+| Teradata-database |Nej |Nej |Ja |Ja |Ja |
+
 
 ## <a name="next-steps"></a>Næste trin
 Nu hvor datakilden er valgt, kan du [oprette en rapport](quickstart-create-powerbi-report.md) ved hjælp af dataene fra denne datakilde.

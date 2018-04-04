@@ -1,15 +1,15 @@
 ---
 title: Vejledning i at installere en datagateway til Power BI
-description: "Få de bedste praksisser og overvejelser ved installation af en gateway til Power BI."
+description: Få de bedste praksisser og overvejelser ved installation af en gateway til Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,20 +18,20 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 992c3cbeb9899a784cc8df9fdca9a29f57aa7e81
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 9438b9563d17cff8ce334e48bc34a4f3fa6acf1c
+ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Vejledning i at installere en datagateway til Power BI
-Denne artikel indeholder vejledning og overvejelser ved installation af en datagateway i dit netværksmiljø. En **gateway** er software, der gør det nemmere at få adgang til data, der er placeret på et privat netværk i det lokale miljø til efterfølgende brug i en cloudtjeneste som Power BI. Denne artikel giver en trinvis vejledning i at installere og konfigurere **datagatewayen i det lokale miljø**.
+Denne artikel indeholder vejledning og overvejelser ved installation af en datagateway i dit netværksmiljø. En **gateway** er software, der gør det nemmere at få adgang til data, der er placeret på et privat netværk i det lokale miljø til efterfølgende brug i en cloudtjeneste som Power BI. Denne artikel indeholder en vejledning til udrulningen og konfiguration af **datagatewayen i det lokale miljø**.
 
 ![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_01.png)
 
-Hvis du vil vide mere om **datagateway i det lokale miljø**, inklusive et link til installationsvejledningen, så kan du se [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-gateways-march-update/).
+Hvis du vil vide mere om **datagatewayen i det lokale miljø** og få et link til at installere den, skal du se [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-gateways-march-update/).
 
-## <a name="installation-considerations-for-the-on-premises-data-gateway"></a>Overvejelser ved installationen af datagatewayen i det lokale miljø
+## <a name="installation-considerations-for-the-on-premises-data-gateway"></a>Overvejelser i forbindelse med installationen af datagatewayen i det lokale miljø
 Før vi begynder på en detaljeret gennemgang af installation og udrulning, er der en række overvejelser, som du bør holde dig for øje. De nedenstående afsnit beskriver vigtige faktorer, som du bør tage i betragtning.
 
 ### <a name="number-of-users"></a>Antal brugere
@@ -53,7 +53,7 @@ Brugen af gatewayen kan variere afhængigt af den brugte forbindelsestype. Du b�
 * **Planlagt opdatering**: Afhængigt af din forespørgselstørrelse og antallet af foretagne opdateringer pr. dag kan du vælge at forblive mellem de anbefalede mindstekrav til hardware eller opgradere til en computer med større ydeevne. Hvis en given forespørgsel ikke foldes, så sker transformationen på gatewayens computer og dermed drager gatewayens computer fordel af at have mere tilgængelig RAM.
 * I relation til **DirectQuery**: En forespørgsel sendes hver gang, en given bruger åbner rapporten eller gransker data. Så hvis du forventer, at flere end 1000 brugere tilgår data samtidigt, så bør du sørge for, at din computer har robuste og kapacitetstunge hardwarekomponenter. Flere CPU-kerner vil resultere i et forbedret gennemløb for en **DirectQuery**-forbindelse.
 
-Der er følgende krav til en maskine, hvorpå du installerer en **datagateway i det lokale miljø**:
+Der er følgende krav til den computer, du installerer en **datagateway i det lokale miljø** på:
 
 **Minimum:**
 
@@ -86,12 +86,12 @@ Der er mange ydelsestællere, der kan bruges til at evaluere og vurdere aktivite
 
 Disse tællere kan tilgås fra **Windows Ydelsesmåler** og kan forbruges af ethvert rapporteringsværktøj, du bruger til dette formål. Du kan få en detaljeret gennemgang af, hvordan du bruger gatewayens ydelsesovervågning med Power BI i det følgende community-oprettede blogindlæg.
 
-* [Overvågning af datagateways i det lokale miljø](https://insightsquest.com/2016/08/08/monitor-on-premises-data-gateways/)
+* [Overvåg datagateways i det lokale miljø](https://insightsquest.com/2016/08/08/monitor-on-premises-data-gateways/)
 
 #### <a name="logs"></a>Logfiler
 Konfigurations- og tjenestelogfiler viser en anden dimension af, hvad der sker med din gateway. Du skal altid kontrollere dine gateway-logfiler, når forbindelsen ikke fungerer som forventet, idet ikke alle fejlmeddelelser vises på Power BI-tjenesten.
 
-Du kan let få vist alle logfiler på din lokale computer ved at bruge knappen *Exportlogfiler* på **datagatewayen i det lokale miljø**, når du genåbner gatewayen efter den indledende installation er færdig og derefter vælger **Diagnostik > Eksportlogfiler**.
+Du kan let få vist alle logfiler på din lokale computer ved at bruge knappen *Eksportlogfiler* på **datagatewayen i det lokale miljø**, når du genåbner gatewayen efter den indledende installation er færdig og derefter vælger **Diagnostik > Eksportlogfiler**.
 
 #### <a name="additional-logging"></a>Yderligere logføring
 På gatewayen udføres som standard grundlæggende logføring. Hvis du er i gang med at efterforske gateway-problemer og har brug for flere oplysninger om forespørgselsforbindelsen, så kan du midlertidigt aktivere *Detaljeret logføring* for at indsamle yderligere logføringoplysninger. Dette gøres ved at vælge **Diagnostik > Yderligere logføring** i den installerede gateway.
@@ -145,7 +145,7 @@ Derfra kan du vælge en gateway og se en liste over gateway-administratorer. De 
 
 ## <a name="next-steps"></a>Næste trin
 [Konfiguration af proxyindstillinger](service-gateway-proxy.md)  
-[Fejlfinding af datagateway i det lokale miljø](service-gateway-onprem-tshoot.md)  
+[Foretag fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
 [Ofte stillede spørgsmål vedrørende datagateway i det lokale miljø](service-gateway-onprem-faq.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
