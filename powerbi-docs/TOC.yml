@@ -726,9 +726,9 @@
           href: desktop-shape-and-combine-data.md
         - name: Almindelige Query-opgaver i Power BI Desktop
           href: desktop-common-query-tasks.md
-        - name: Brug Shape Maps i Power BI Desktop (Eksempelvisning)
+        - name: Brug Figurkort i Power BI Desktop (prøveversion)
           href: desktop-shape-map.md
-        - name: Kombiner binære
+        - name: Kombiner filer (binære filer)
           href: desktop-combine-binaries.md
     - name: Modeller dine data
       items:
