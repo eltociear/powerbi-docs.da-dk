@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 03/23/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: c4f05645f98e67fcf81c61d91bfdccb9612ed46b
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 7b8d3b4202ff08b5b97765fe20abe37c41518a31
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
@@ -75,14 +75,14 @@ Du kan også tjekke YouTube-kanalerne for at få mere at vide om nyheder og funk
 ### <a name="august-2017"></a>August 2017
 * Kend din målgruppe med [forbrugsdata for hver enkelt bruger](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
 * Kom i gang med [Power BI-tjenesteapps](service-connect-to-services.md) til onlinetjenester.
-* Oprettelse af forbindelse til IBM Netezza med datagatewayen i det lokale miljø både via import og DirectQuery-forbindelse.
+* Oprettelse af forbindelse til IBM Netezza med datagatewayen i det lokale miljø via både forbindelsestilstanden Import og DirectQuery.
 * [Dynamisk RLS](developer/embedded-row-level-security.md) understøttes nu af Power BI Embedded.
 * Avanceret [filtrerings-API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) er nu føjet til 1.7-versionen af API'en til brugerdefinerede visuelle elementer.
 
 ### <a name="july-2017"></a>Juli 2017
 * Understøttelse af [mailabonnementer](service-report-subscribe.md) på dashboards.
 * Kontrol og diagnosticering af, hvorfor indlæsningstiden er ringe for dashboards, der anvender Inspektion af ydeevne.
-* Nu understøttes også Snowflake og SAP BusinessWarehouse DirectQuery med datagateway i det lokale miljø.
+* Nu understøttes også Snowflake og SAP BusinessWarehouse DirectQuery med datagatewayen i det lokale miljø.
 * Nye [API'er til administration af dataopdatering](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/) i Power BI-tjenesten.
 
 ### <a name="june-2017"></a>Juni 2017
