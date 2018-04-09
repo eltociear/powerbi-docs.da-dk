@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9438b9563d17cff8ce334e48bc34a4f3fa6acf1c
-ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
+ms.openlocfilehash: 3c1b0059ac39c8d8024fd840c0cf35bc9700a9aa
+ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Vejledning i at installere en datagateway til Power BI
 Denne artikel indeholder vejledning og overvejelser ved installation af en datagateway i dit netværksmiljø. En **gateway** er software, der gør det nemmere at få adgang til data, der er placeret på et privat netværk i det lokale miljø til efterfølgende brug i en cloudtjeneste som Power BI. Denne artikel indeholder en vejledning til udrulningen og konfiguration af **datagatewayen i det lokale miljø**.
@@ -46,7 +46,7 @@ Hvis samtlige brugere tilgår en given rapport på samme tidspunkt på dagen, b�
 Der findes en begrænsning i **Power BI**, der kun tillader *én* gateway pr. *rapport*, så selvom en rapport er baseret på flere datakilder, så skal alle disse kilder gå gennem en enkelt gateway. Men hvis et dashboard er baseret på *adskillige* rapporter, så kan du bruge en dedikeret gateway til hver bidragende rapport og derigennem distribuere gateway-belastningen mellem de pågældende rapporter, der bidrager til det enkelte dashboard.
 
 ### <a name="connection-type"></a>Forbindelsestype
-**Power BI** giver mulighed for to typer forbindelser, **DirectQuery** og **Import**. Ikke alle datakilder understøtter begge forbindelsestyper, og mange årsager kan bidrage til, at man vælger den ene frem for den anden, som f.eks. sikkerhedskrav, ydeevne, datagrænser og datamodelstørrelser. Du kan få mere at vide om forbindelsestype og understøttede datakilder i *listen over tilgængelige datakildetyper* i [artiklen om datagateway i det lokale miljø](service-gateway-onprem.md).
+**Power BI** giver mulighed for to typer forbindelser: **DirectQuery** og **Import**. Ikke alle datakilder understøtter begge forbindelsestyper, og mange årsager kan bidrage til, at man vælger den ene frem for den anden, som f.eks. sikkerhedskrav, ydeevne, datagrænser og datamodelstørrelser. Du kan få mere at vide om forbindelsestype og understøttede datakilder i *listen over tilgængelige datakildetyper* i [artiklen om datagateway i det lokale miljø](service-gateway-onprem.md).
 
 Brugen af gatewayen kan variere afhængigt af den brugte forbindelsestype. Du bør f.eks. altid prøve at adskille **DirectQuery**-datakilder fra **Planlagt opdatering**-datakilder, når det er muligt (hvis altså de er i forskellige rapporter og kan adskilles). Dette forhindrer, at gatewayen ophobes med tusindvis af DirectQuery-anmodninger samtidigt med morgenens planlagte opdatering af en stor datamodelstørrelse, der bruges til virksomhedens primære dashboard. Følgende overvejelser bør tages i hver situation:
 

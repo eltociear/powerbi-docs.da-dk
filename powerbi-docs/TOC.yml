@@ -770,6 +770,8 @@
           href: desktop-insights.md
         - name: Udsnit i Power BI Desktop
           href: desktop-slicers.md
+        - name: Brug af knapper i Power BI
+          href: desktop-buttons.md
         - name: Bogmærker i Power BI
           href: desktop-bookmarks.md
         - name: Opret brugerdefinerede værktøjstip til rapporter (eksempelvisning)
