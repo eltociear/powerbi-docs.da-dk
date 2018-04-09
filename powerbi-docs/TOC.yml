@@ -992,6 +992,8 @@
           href: service-custom-visuals-getting-started-with-developer-tools.md
         - name: Få en brugerdefineret visualisering certificeret
           href: power-bi-custom-visuals-certified.md
+        - name: Publicer brugerdefinerede visuals i AppSource
+          href: developer/office-store.md
     - name: Overfør data til et dashboard
       items:
         - name: Overfør data til et dashboard
