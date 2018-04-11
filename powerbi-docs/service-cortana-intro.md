@@ -1,11 +1,11 @@
 ---
-title: "Find og vis hurtigt dine Power BI-rapporter og -dashboards ved hjælp af Cortana"
-description: "Brug Cortana med Power BI til at få svar fra dine data. Fungerer i øjeblikket sammen med rapporter og dashboards."
+title: Find og vis hurtigt dine Power BI-rapporter og -dashboards ved hjælp af Cortana
+description: Brug Cortana med Power BI til at få svar fra dine data. Fungerer i øjeblikket sammen med rapporter og dashboards.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-editor: 
+editor: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

@@ -1,12 +1,12 @@
 ---
-title: "Selvstudium – brug af Spørgsmål og svar på et dashboard eller i en rapport"
-description: "Selvstudium i, hvordan du kan bruge Spørgsmål og svar i Power BI til at oprette nye visualiseringer på dashboards og i rapporter."
+title: Selvstudium – brug af Spørgsmål og svar på et dashboard eller i en rapport
+description: Selvstudium i, hvordan du kan bruge Spørgsmål og svar i Power BI til at oprette nye visualiseringer på dashboards og i rapporter.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

@@ -1,15 +1,15 @@
 ---
-title: "Opret forbindelse til filer i OneDrive til et Power BI-apparbejdsområde"
-description: "Læs om at lagre og oprette forbindelse til dine Excel-, CSV- og Power BI Desktop-filer på OneDrive til dit Power BI-apparbejdsområde."
+title: Opret forbindelse til filer i OneDrive til et Power BI-apparbejdsområde
+description: Læs om at lagre og oprette forbindelse til dine Excel-, CSV- og Power BI Desktop-filer på OneDrive til dit Power BI-apparbejdsområde.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

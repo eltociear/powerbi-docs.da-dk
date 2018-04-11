@@ -1,15 +1,15 @@
 ---
-title: "Afbryd forbindelsen fra en organisationsindholdspakke – Power BI"
-description: "Læs om, hvordan du fjerner forbindelsen til en organisationsindholdspakke ved at slette dens datasæt i Power BI."
+title: Afbryd forbindelsen fra en organisationsindholdspakke – Power BI
+description: Læs om, hvordan du fjerner forbindelsen til en organisationsindholdspakke ved at slette dens datasæt i Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

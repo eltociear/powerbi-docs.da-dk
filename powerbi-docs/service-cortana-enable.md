@@ -1,11 +1,11 @@
 ---
-title: "Aktivér Cortana til Power BI"
-description: "Brug Cortana med Power BI til at få svar fra dine data. Aktivér Cortana for hvert Power BI-datasæt, og gør derefter Cortana i stand til at få adgang til dine datasæt fra Windows-enheder."
+title: Aktivér Cortana til Power BI
+description: Brug Cortana med Power BI til at få svar fra dine data. Aktivér Cortana for hvert Power BI-datasæt, og gør derefter Cortana i stand til at få adgang til dine datasæt fra Windows-enheder.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-editor: 
+editor: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

@@ -2,14 +2,14 @@
 title: Opret forbindelse til Adobe Analytics med Power BI
 description: Opret forbindelse til Adobe Analytics fra Power BI for en app, der viser dine kontodata i et dashboard og i rapporter.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: SarinaJoan
 manager: kfile
 backup: maggiesMSFT
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

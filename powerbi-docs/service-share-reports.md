@@ -1,13 +1,13 @@
 ---
 title: Filtrer og del Power BI-rapporter med kolleger
-description: "Få mere at vide om, hvordan du deler Power BI-rapporter og filtrerede rapporter med kolleger i din organisation."
+description: Få mere at vide om, hvordan du deler Power BI-rapporter og filtrerede rapporter med kolleger i din organisation.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: lukaszp
-editor: 
-tags: 
+editor: ''
+tags: ''
 featuredvideoid: 0tUwn8DHo3s
 qualityfocus: complete
 qualitydate: 06/22/2016
