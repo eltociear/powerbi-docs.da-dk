@@ -1,31 +1,31 @@
 ---
-title: "Fejlfinding af datagateway i det lokale miljø"
-description: "Artiklen viser, hvordan du kan foretage fejlfinding af problemer, som du har med datagatewayen i det lokale miljø. Der angives mulige løsninger på kendte problemer samt værktøjer, der kan være en hjælp for dig."
+title: Fejlfinding af datagatewayen i det lokale miljø
+description: Artiklen viser, hvordan du kan foretage fejlfinding af problemer, som du har med datagatewayen i det lokale miljø. Der angives mulige løsninger på kendte problemer samt værktøjer, der kan være en hjælp for dig.
 services: powerbi
-documentationcenter: 
-author: davidiseminger
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 11/21/2017
-ms.author: davidi
+ms.date: 03/23/2018
+ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1651f18194cd47582376b52bb6359db10a330c27
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 094a43925c184c6cbce8b023ba4aae655f379dd9
+ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/08/2018
 ---
-# <a name="troubleshooting-the-on-premises-data-gateway"></a>Fejlfinding af datagateway i det lokale miljø
-Denne artikel beskriver nogle almindelige problemer, som kan opstå, når du bruger **datagateway i det lokale miljø**.
+# <a name="troubleshooting-the-on-premises-data-gateway"></a>Fejlfinding af datagatewayen i det lokale miljø
+I denne artikel beskrives nogle almindelige problemer, som kan opstå, når du bruger **datagatewayen i det lokale miljø**.
 
 <!-- Shared Community & support links Include -->
 [!INCLUDE [gateway-onprem-tshoot-support-links-include](./includes/gateway-onprem-tshoot-support-links-include.md)]
@@ -56,7 +56,7 @@ Oplysninger blev modtaget fra Power BI-tjenesten til gatewayen. Oplysninger blev
 I slutningen af konfigurationen kaldes Power BI-tjenesten igen for at bekræfte gatewayen. Power BI-tjenesten rapporterer ikke gatewayen som *live*. Kommunikationen kan muligvis gennemføres, hvis Windows-tjenesten startes igen. Du kan indsamle og gennemse logfilerne som angivet nedenfor, hvis du vil have flere oplysninger.
 
 ### <a name="script-error-during-sign-into-power-bi"></a>Scriptfejl under logon til Power BI
-Du kan modtage en scriptfejl, når du logger på Power BI som led i konfigurationen af datagatewayen i det lokale miljø. Problemet bør blive løst med installation af følgende sikkerhedsopdatering. Den kan installeres via Windows Update.
+Du modtager måske en scriptfejl, når du logger på Power BI som led i konfigurationen af datagatewayen i det lokale miljø. Problemet bør blive løst med installation af følgende sikkerhedsopdatering. Den kan installeres via Windows Update.
 
 [MS16-051: Sikkerhedsopdatering til Internet Explorer: 10. maj 2016 (KB 3154070)](https://support.microsoft.com/kb/3154070)
 
@@ -78,12 +78,12 @@ Benyt følgende fremgangsmåde for at løse problemet.
 1. Fjern gatewayen.
 2. Slet følgende mappe.
    
-        c:\Program Files\on-premises data gateway
+        c:\Program Files\On-premises data gateway
 3. Installer gatewayen igen.
 4. Anvend evt. genoprettelsesnøglen til at gendanne en eksisterende gateway.
 
 ### <a name="support-for-tls-1112"></a>Understøttelse af TLS 1.1/1.2
-Med opdateringen fra august 2017 og senere opdateringer bruger datagatewayen i det lokale miljø TLS 1.1 eller 1.2 (Transport Layer Security) til at kommunikere med **Power BI-tjenesten** som standard. Tidligere versioner af datagatewayen i det lokale miljø bruger som standard TLS 1.0. Fra den 1. november 2017 slutter understøttelsen af TLS 1.0, og fra den dato skal du derfor opgradere installationerne af datagatewayen i det lokale miljø til udgaven fra august 2017 eller en nyere udgave for at sikre, at din gateway fortsat fungerer.
+Med opdateringen fra august 2017 og senere opdateringer bruger datagatewayen i det lokale miljø som standard TLS 1.1 eller 1.2 (Transport Layer Security) til at kommunikere med **Power BI tjenesten**. Tidligere versioner af datagatewayen i det lokale miljø bruger som standard TLS 1.0. Fra den 1. november 2017 slutter understøttelsen af TLS 1.0, så fra den dato skal du derfor opgradere installationerne af datagatewayen i det lokale miljø til udgaven fra august 2017 eller en nyere udgave for at sikre, at din gateway fortsat fungerer.
 
 Det er vigtigt at bemærke, at TLS 1.0 stadig understøttes af datagatewayen i det lokale miljø fra før 1. november, og den bruges af gatewayen som fallback-løsning. Hvis du vil sikre, at al gatewaytrafik bruger TLS 1.1 eller 1.2 (og for at forhindre, at der bruges TLS 1.0 på din gateway), skal du tilføje eller ændre følgende registreringsdatabasenøgler på den computer, hvor gatewaytjenesten kører:
 
@@ -164,7 +164,7 @@ Dette sker, hvis du har en enkelt række, der er større end 4 MB. Du er nødt t
 ### <a name="error-the-server-name-provided-doesnt-match-the-server-name-on-the-sql-server-ssl-certificate"></a>Fejl: Det servernavn, du har angivet, stemmer ikke overens med servernavnet på SQL Server SSL-certifikatet.
 Dette kan ske, når det angivne certifikat-CN er for serverens fuldt kvalificerede domænenavn (FQDN), men du kun har angivet serverens netbios-navn. Dette vil medføre en uoverensstemmelse for certifikatet. For at løse dette problem skal du få servernavnet i gatewayens datakilde og PBIX-filen til at bruge serverens fuldt kvalificerede navn.
 
-### <a name="i-dont-see-the-on-premises-data-gateway-persent-when-configuring-scheduled-refresh"></a>Jeg kan ikke se datagatewayen i det lokale miljø ved konfigurering af planlagt opdatering.
+### <a name="i-dont-see-the-on-premises-data-gateway-persent-when-configuring-scheduled-refresh"></a>Jeg kan ikke se datagatewayen i det lokale miljø, når jeg konfigurerer en planlagt opdatering.
 Dette kan skyldes nogle forskellige scenarier.
 
 1. Navnet på serveren og databasen stemmer ikke overens med det, der er angivet i Power BI Desktop, og den datakilde, der er konfigureret for gatewayen. Disse skal have samme værdi. De er ikke forskel på store og små bogstaver.
@@ -314,11 +314,13 @@ from [dbo].[V_CustomerOrders] as [$Table])
 GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
 ```
 
-### <a name="microsoftpowerbidatamovementpipelinegatewaycoredllconfig"></a>Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
-I filen *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* skal du ændre `TraceVerbosity`-værdien fra `4` til `5`. Filen er som standard placeret i *C:\Programmer\On-premises data gateway*. Ændring af denne indstilling begynder at logføre detaljerede indtastninger i gatewayens logfil. Dette omfatter indtastninger, der viser varighed.
+### <a name="microsoftpowerbidatamovementpipelinediagnosticsdllconfig"></a>Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config
+I filen *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* skal du ændre `TracingVerbosity`-værdien fra `4` til `5`. Filen er som standard placeret i *C:\Programmer\On-premises data gateway*. Ændring af denne indstilling begynder at logføre detaljerede indtastninger i gatewayens logfil. Dette omfatter indtastninger, der viser varighed. Du kan også aktivere detaljerede poster ved at aktivere knappen "Yderligere logføring" i gatewayprogrammet i det lokale miljø.
+
+   ![yderligere logføring](media/service-gateway-onprem-tshoot/additional-logging.png)
 
 > [!IMPORTANT]
-> Aktivering af TraceVerbosity til `5` kan øge logfilens størrelse markant afhængigt af brugen af gatewayen. Når du er færdig med at gennemgå logfilerne, kan du indstille TraceVerbosity til `4`. Det anbefales ikke at lade denne indstilling være aktiveret i længere tid.
+> Aktivering af TracingVerbosity til `5` kan øge logfilens størrelse markant afhængigt af brugen af gatewayen. Når du er færdig med at gennemgå logfilerne, kan du indstille TraceVerbosity til `4`. Det anbefales ikke at lade denne indstilling være aktiveret i længere tid.
 > 
 > 
 
@@ -352,6 +354,72 @@ Når du vil fastlægge den tid, det tog at forespørge på datakilden, kan du g�
    > 
    > 
 
+## <a name="kerberos"></a>Kerberos
+
+Hvis den underliggende databaseserver og datagatewayen i det lokale miljø ikke er konfigureret korrekt til [begrænset Kerberos-delegering](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md), skal du aktivere [detaljeret logføring](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) på gatewayen og, som udgangspunkt for fejlfindingen, foretage undersøgelser baseret på fejlene/sporene i gatewayens logfiler.
+
+### <a name="impersonationlevel"></a>ImpersonationLevel
+
+ImpersonationLevel er relateret til SPN-konfigurationen eller den lokale politikindstilling.
+
+```
+[DataMovement.PipeLine.GatewayDataAccess] About to impersonate user DOMAIN\User (IsAuthenticated: True, ImpersonationLevel: Identification)
+```
+
+**Løsning**
+
+Følg disse trin til at løse problemet:
+1. Konfigurer et SPN for gatewayen i det lokale miljø
+2. Konfigurer begrænset delegering i dit Active Directory (AD)
+
+### <a name="failedtoimpersonateuserexception-failed-to-create-windows-identity-for-user-userid"></a>FailedToImpersonateUserException: Windows-identiteten for brugerid'et blev ikke oprettet
+
+FailedToImpersonateUserException sker, hvis du ikke kan repræsentere en anden bruger. Det kan også ske, hvis den konto, du forsøger at repræsentere, er fra et andet domæne end det, som domænet for gatewaytjenesten er på (dette er en begrænsning).
+
+**Løsning**
+* Kontrollér, at konfigurationen er korrekt iht. trinnene i afsnittet ImpersonationLevel ovenfor
+* Kontrollér, at det brugerid, der gøres forsøg på at repræsentere, er til en gyldig AD-konto
+
+### <a name="general-error-1033-error-while-parsing-protocol"></a>Generel fejl; 1033-fejl under parsing af protokollen
+
+Du får vist 1033-fejlen, når dit eksterne id, som er konfigureret i SAP HANA, ikke stemmer overens med logon, hvis brugeren repræsenteres ved hjælp af UPN (alias@domain.com). Øverst i logfilerne kan du se følgende, som vist nedenfor: "Original UPN "alias@domain.com" replaced with a new UPN "alias@domain.com"."
+
+```
+[DM.GatewayCore] SingleSignOn Required. Original UPN 'alias@domain.com' replaced with new UPN 'alias@domain.com'.
+```
+
+**Løsning**
+* SAP HANA kræver, at den repræsenterede bruger anvender attributten sAMAccountName i AD (brugeralias). Hvis dette ikke er korrekt, får du vist 1033-fejlen.
+
+    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount.png)
+
+* I logfilerne bør du se sAMAccountName (alias) og ikke UPN, som er aliasset efterfulgt af domænet (alias@doimain.com)
+
+    ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
+
+```
+      <setting name="ADUserNameReplacementProperty" serializeAs="String">
+        <value>sAMAccount</value>
+      </setting>
+      <setting name="ADServerPath" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="CustomASDataSource" serializeAs="String">
+        <value />
+      </setting>
+      <setting name="ADUserNameLookupProperty" serializeAs="String">
+        <value>AADEmail</value>
+```
+
+### <a name="sap-aglibodbchdb-dllhdbodbc-communication-link-failure-10709-connection-failed-rte-1-kerberos-error-major-miscellaneous-failure-851968-minor-no-credentials-are-available-in-the-security-package"></a>[SAP AG][LIBODBCHDB DLL][HDBODBC] Communication link failure;-10709 Connection failed (RTE:[-1] Kerberos error. Major: "Miscellaneous failure [851968]", minor: "No credentials are available in the security package"
+
+Du får vist meddelelsen "-10709 Connection failed", hvis din delegering ikke er konfigureret korrekt i AD.
+
+**Løsning**
+* Kontrollér, at du har SAP Hana-serveren på fanen Delegering i AD for kontoen til gatewaytjenesten
+
+   ![fanen delegering](media/service-gateway-onprem-tshoot/delegation-in-AD.png)
+
 <!-- Shared Troubleshooting tools Include -->
 [!INCLUDE [gateway-onprem-tshoot-tools-include](./includes/gateway-onprem-tshoot-tools-include.md)]
 
@@ -378,4 +446,3 @@ Du kan finde yderligere oplysninger om fejlfinding af opdateringsscenarier i art
 [Administrer din datakilde – SQL Server](service-gateway-enterprise-manage-sql.md)  
 [Administrer din datakilde – Import/Planlagt opdatering](service-gateway-enterprise-manage-scheduled-refresh.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-

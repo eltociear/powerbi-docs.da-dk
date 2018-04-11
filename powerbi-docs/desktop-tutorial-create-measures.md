@@ -1,15 +1,15 @@
 ---
-title: "Selvstudium: Opret dine egne målinger i Power BI Desktop"
-description: "Selvstudium: Opret dine egne målinger i Power BI Desktop"
+title: 'Selvstudium: Opret dine egne målinger i Power BI Desktop'
+description: 'Selvstudium: Opret dine egne målinger i Power BI Desktop'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,242 +18,192 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 96295ced577ddb18b8c56031278bf9a81cddf981
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: f3a58d8acc7d8eb24954e9db0c0db91eacad2f9a
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Selvstudium: Opret dine egne målinger i Power BI Desktop
-Nogle af de stærkeste løsninger til dataanalyse i Power BI Desktop kan oprettes ved hjælp af målinger. Målinger hjælper os med at udføre beregninger på vores data, når vi arbejder med rapporterne. I dette selvstudium lærer du, hvordan du kan oprette nogle af dine egne grundlæggende målinger i Power BI Desktop.
+Du kan oprette nogle af de mest effektive løsninger til dataanalyse i Power BI Desktop ved hjælp af målinger. Målinger hjælper dig med at udføre beregninger på dine data, når du arbejder med dine rapporter. I dette selvstudium lærer du, hvordan du skal forstå målinger, og hvordan du opretter dine egne grundlæggende målinger i Power BI Desktop.
 
-Denne artikel er for de Power BI-brugere, som allerede har erfaring med Power BI Desktop, og som er klar til at arbejde med mere avancerede modeller. Du bør allerede have kendskab til at bruge Hent data og Forespørgselseditor til at importere data, arbejde med flere relaterede tabeller og tilføje felter på dit rapportcanvas. Hvis du ikke har erfaring med Power BI Desktop, skal du se [Introduktion til Power BI Desktop](desktop-getting-started.md).
+### <a name="prerequisites"></a>Forudsætninger
+- Denne artikel er beregnet til Power BI-brugere, som allerede har erfaring med Power BI Desktop, så de kan oprette mere avancerede modeller. Du bør allerede have kendskab til at bruge Hent data og Forespørgselseditor til at importere data, arbejde med flere relaterede tabeller og tilføje felter på dit rapportcanvas. Hvis du ikke har erfaring med Power BI Desktop, skal du se [Introduktion til Power BI Desktop](desktop-getting-started.md).
+  
+- Download filen [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), som indeholder data om onlinesalget for det fiktive firma Contoso, Inc. Dataene blev importeret fra en database, så du kan ikke oprette forbindelse til datakilden eller få dem vist i Forespørgselseditor. Udpak filen på din computer, og åbn den derefter i Power BI Desktop.
 
-Hvis du vil følge trinnene i dette selvstudium, skal du downloade filen [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip). Den indeholder data om onlinesalget for det fiktive firma Contoso, Inc. Da dataene i filen er importeret fra en database, kan du ikke oprette forbindelse til datakilden eller se den i Forespørgselseditor. Når du har hentet filen til din computer, kan du åbne den i Power BI Desktop.
+## <a name="understand-measures"></a>Forstå målinger
 
-## <a name="what-are-these-measures-all-about"></a>Hvad handler disse målinger om?
-Målinger oprettes ofte automatisk, for eksempel hvis du markerer afkrydsningsfeltet id for **SalesAmount** i tabellen **Sales** på feltlisten, eller hvis du trækker **SalesAmount** til dit rapportcanvas.
+Målinger oprettes oftest automatisk for dig. I filen Contoso Sales Sample skal du markere afkrydsningsfeltet ved siden af feltet **SalesAmount** i tabellen **Sales** i brønden Felter. Du kan også trække **SalesAmount** til rapportcanvasset. Der vises en ny visualisering med et søjlediagram, hvor du kan se den samlede sum af alle værdier i kolonnen SalesAmount i tabellen Sales.
 
-![](media/desktop-tutorial-create-measures/measurestut_salesamountinfieldlist.png)
+![Diagrammet SalesAmount](media/desktop-tutorial-create-measures/meastut_salesamountchart.png)
 
-Der vises en ny diagramvisualisering som denne:
+Alle felter, der vises i brønden Felter med et sigmaikon, ![sigmaikon](media/desktop-tutorial-create-measures/meastut_sigma.png) er numeriske, og værdierne kan sammenlægges. I stedet for at vise en tabel med alle to millioner rækker af værdierne for SalesAmount, har Power BI Desktop registreret en numerisk datatype og automatisk oprettet og beregnet en måling for at sammenlægge dataene. Sum er standardsammenlægningen for en numerisk datatype, men du kan nemt anvende forskellige sammenlægninger, f.eks. gennemsnit eller antal. Det er vigtigt at forstå sammenlægninger for at forstå målinger, da alle målinger vil udføre en form for sammenlægning. 
 
-![](media/desktop-tutorial-create-measures/meastut_salesamountchart.png)
+Hvis du vil ændre diagramsammenlægningen til gennemsnit, skal du i området **Værdi** i ruden Visualiseringer klikke på pilen i rullemenuen ved siden af **SalesAmount** og vælge **Gennemsnit**. Visualiseringen ændres til et gennemsnit af alle salgsværdierne i feltet SalesAmount.
 
-Der oprettes et søjlediagram med det samlede salg fra feltet SalesAmount.  Feltet SalesAmount er blot en kolonne med navnet SalesAmount i tabellen Sales, som allerede er blevet importeret.
+![Diagram for SalesAmount med gennemsnit](media/desktop-tutorial-create-measures/meastut_salesamountaveragechart.png)
 
-Kolonnen SalesAmount indeholder mere end to millioner rækker med salgsværdier. Du undrer dig måske over, hvorfor du ikke får vist en tabel med rækkerne med alle disse værdier. Det skyldes, at Power BI Desktop ved, at alle værdierne i SalesAmount er en numerisk datatype og at du sandsynligvis vil arbejde videre med dem ved at lægge dem sammen, finde gennemsnittet, tælle dem osv.
+Du kan ændre typen af sammenlægningen, afhængigt af det resultat du vil have vist, men det er ikke alle typer af sammenlægninger, der kan anvendes for alle numeriske datatyper. For feltet SalesAmount vil sammenlægningen Sum og Gennemsnit for eksempel give mening. Det kan også give mening at bruge Minimum og Maksimum. Værdierne i feltet SalesAmount er valuta, så selvom de er numeriske, vil Antal ikke give så meget mening for dette felt.
 
-Når et felt på listen Felter vises med sigmaikonet ![](media/desktop-tutorial-create-measures/meastut_sigma.png), betyder det, at feltet er numerisk, og at du kan bruge værdierne til beregninger. Da du i dette tilfælde valgte SalesAmount, oprettede Power BI Desktop sin egen måling, og summen af alle salgsbeløb beregnes og vises i diagrammet.
+De værdier, der beregnes ud fra målinger, ændres på baggrund af dine interaktioner i rapporten. Hvis du for eksempel trækker feltet **RegionCountryName** fra tabellen **Geography** til diagrammet, vises det gennemsnitlige salgsbeløb for hvert land.
 
-Sum er standardfunktionen, når du vælger et felt med en numerisk datatype, men det er nemt at vælge en anden type aggregering.
+![Salgsbeløb efter land](media/desktop-tutorial-create-measures/meastut_salesamountavchartbyrcn.png)
 
-Hvis du klikker på den nedadvendte pil ud for **SalesAmount** i området **Værdier**, kan du vælge **Gennemsnit**.
+Når resultatet af en måling ændres på grund af en interaktion med rapporten, påvirkes målingens *kontekst*. Hver gang du arbejder med visualiseringer i rapporten, ændrer du konteksten for, hvordan en måling beregner og viser resultater.
 
-![](media/desktop-tutorial-create-measures/meastut_salesamountaverage.png)
+## <a name="create-and-use-your-own-measures"></a>Opret og brug dine egne målinger
 
-Visualiseringen ændres til et gennemsnit af alle salgsværdierne i feltet SalesAmount.
+I de fleste tilfælde beregner og returnerer Power BI automatisk værdier i henhold til de typer af felter og sammenlægninger, du vælger, men i nogle tilfælde vil du måske oprette dine egne målinger for at udføre mere komplekse og unikke beregninger. I Power BI Desktop kan du oprette dine egne målinger ved at bruge DAX-formelsproget (Data Analysis Expressions). 
 
-![](media/desktop-tutorial-create-measures/meastut_salesamountaveragechart.png)
+I DAX-formler bruges der mange af de samme funktioner og operatorer samt den samme syntaks som i Excel-formler. DAX-funktionerne er dog designet til at arbejde med relationelle data og udføre mere dynamiske beregninger, når du interagerer med dine rapporter. Der er mere end 200 DAX-funktioner, som kan udføre alt lige fra enkle sammenlægninger, som Sum og Gennemsnit, til mere komplekse statistik- og filtreringsfunktioner. Der findes mange ressourcer, hvor du kan få mere at vide om DAX. Når du er færdig med dette selvstudium, kan vi anbefale [Grundlæggende DAX i Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
 
-Du kan ændre typen af aggregering til den type resultat, du vil have vist, men det er ikke alle typer aggregering, der kan bruges med alle numeriske datatyper. For feltet SalesAmount vil aggregeringerne Sum og Gennemsnit for eksempel give mening. Det kan også give mening at bruge Minimum og Maksimum. Men Antal vil ikke give så meget mening, da værdierne er valutaværdier, selvom feltet er angivet som numerisk.
+Når du har oprettet din egen måling, føjes den til listen Felter i den tabel, du vælger, og kaldes for *modelmåling*. Nogle af fordelene ved modelmålinger er, at du kan navngive dem, ligesom du vil, hvilket gør det nemmere at identificere dem. Du kan også bruge dem som argumenter i andre DAX-udtryk, og du kan få dem til at udføre komplekse beregninger meget hurtigt.
 
-Det er vigtigt at forstå aggregeringer for at forstå målinger, da alle målinger vil udføre en type aggregering. Senere kommer der nogle flere eksempler med Sum, når du opretter dine egne målinger.
+>[!TIP]
+>Fra og med udgivelsen af Power BI Desktop i februar 2018 er mange almindelige beregninger tilgængelige som **hurtigmålinger**, som skriver DAX-formler for dig på baggrund af dine input i dialogboksen. Disse hurtige, effektive beregninger er også gode til at lære om DAX og forsyne dine egne tilpassede målinger. Hvis du vil oprette eller udforske hurtigmålinger, skal du vælge **Ny hurtigmåling** på listen **Flere indstillinger** i en tabel eller under **Beregninger** under fanen Hjem på båndet. Du kan finde flere oplysninger om oprettelse og brug af hurtigmålinger under [Brug hurtigmålinger](desktop-quick-measures.md).
 
-De værdier, der beregnes ud fra målinger, ændres altid baseret på interaktionerne i rapporten. Hvis du for eksempel trækker feltet **RegionCountryName** fra tabellen **Geography** til diagrammet, vises det gennemsnitlige salgsbeløb for hvert land.
+### <a name="create-a-measure"></a>Opret en måling
 
-![](media/desktop-tutorial-create-measures/meastut_salesamountavchartbyrcn.png)
+Du vil analysere din nettoomsætning ved at trække rabatter og returneringer fra det samlede salgsbeløb. Uanset hvilken kontekst du har i din visualisering, har du brug for en måling, der trækker summen af DiscountAmount og ReturnAmount fra summen af SalesAmount. Der er ikke noget felt for nettoomsætning på listen Felter, men du har byggeklodserne til at oprette din egen måling, der kan beregne nettoomsætningen. 
 
-Når resultatet af en måling ændres på grund af en interaktion med rapporten, påvirkes målingens *kontekst*. Hver gang du arbejder med rapporten, ændrer du konteksten for, hvordan en måling beregnes og viser resultatet.
-
-I de fleste tilfælde vil Power BI beregne og returnere værdier ifølge de tilføjede felter og de valgte typer aggregering. Men i andre tilfælde skal du muligvis oprette dine egne målinger for at kunne udføre mere komplekse beregninger.
-
-I Power BI Desktop kan du oprette dine egne målinger ved at bruge DAX-formelsproget (Data Analysis Expressions). DAX-formler ligner Excel-formler en hel del. DAX bruger mange af de samme funktioner, operatorer og samme syntaks som Excel-formler. Funktionerne i DAX er dog designet til at arbejde med relationelle data og udføre mere dynamiske beregninger, når der interageres med rapporter.
-
-Der er mere end 200 DAX-funktioner, som kan udføre alt lige fra enkle aggregeringer som Sum og Gennemsnit til mere komplekse statistik- og filterfunktioner. Jeg vil ikke gå alt for meget i detaljer med DAX-sproget her, men der er mange ressourcer, du kan bruge for at lære mere. Når du er færdig med dette selvstudium, kan vi anbefale [Grundlæggende DAX i Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
-
-Når du opretter dine egne målinger, tilføjes de på listen Felter for den ønskede tabel. Dette kaldes en *modelmåling*, og den gemmes i tabellen som et felt. En af de store fordele ved modelmålinger er, at du kan kalde dem det, du vil, så de er nemmere at identificere. De kan også bruges som argument i andre DAX-udtryk, og du kan oprette målinger, der udfører komplekse beregninger hurtigt.
-
-## <a name="lets-create-our-own-measure"></a>Lad os oprette en måling
-Det kan for eksempel være for at analysere nettoomsætningen. Som du kan se på listen over felter i tabellen Sales, er der ikke et felt med navnet NetSales. Men der findes de ting, der skal bruges til at beregne nettoomsætningen.
-
-Du skal bruge en måling, der kan fratrække rabatter og returvarer fra salgsbeløbene. Da målingen skal beregne et resultat for enhver kontekst i visualiseringen, skal summen af DiscountAmount og ReturnAmount trækkes fra summen af SalesAmount. Det kan måske virke lidt forvirrende, men det bliver logisk lige om lidt.
-
-### <a name="net-sales"></a>Nettoomsætning
-1.  Højreklik på eller klik på de tre prikker til højre for tabellen **Sales** på feltlisten, og klik derefter på **Ny måling**. Dette sikrer, at den nye måling gemmes i tabellen Sales, hvor den er nem at finde igen.
+1.  Højreklik på tabellen **Sales** i brønden Felter, eller hold over tabellen, og vælg ellipsen **Flere indstillinger** (...). Vælg derefter **Ny måling**. På den måde gemmes din nye måling i tabellen Sales, hvor den er nemmere at finde igen.
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure.png)
+    ![Ny måling](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure.png)
     
-    > [!TIP]
-    > Du kan også oprette en ny måling ved at klikke på knappen Ny måling under fanen Hjem på båndet i Power BI Desktop.
-    > 
-    > ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasureribbon.png)
-    > 
-    > Når du opretter en måling fra båndet, kan målingen blive oprettet i enhver af tabellerne. Selvom en måling ikke behøver at tilhøre en bestemt tabel, vil det være nemmere at finde den, hvis du opretter den i den tabel, der giver mest mening for dig. Hvis du vil placere den i en bestemt tabel, skal du først klikke på tabellen for at markere den. Klik derefter på Ny måling. I dette eksempel opretter vi den første måling i tabellen Sales.
-    > 
-    > 
+    Du kan også oprette en ny måling ved at vælge **Ny måling** i gruppen Beregninger under fanen Hjem på Power BI Desktop-båndet.
     
-    Formellinjen vises langs toppen af dit rapportcanvas. Her kan du omdøbe målingen og angive en DAX-formel.
+    ![Ny måling via båndet](media/desktop-tutorial-create-measures/meastut_netsales_newmeasureribbon.png)
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formulabar.png)
+    >[!TIP]
+    >Når du opretter en måling via båndet, kan den blive oprettet i en hvilken som helst tabel, så den vil være nemmere at finde, hvis du opretter den der, hvor du har planlagt at bruge den. Du skal derfor først markere tabellen Sales for at aktivere den og derefter vælge **Ny måling**. 
     
-    Lad os give den nye måling et navn. Som standard kaldes en ny måling blot for Mål. Hvis du ikke omdøber den, og du opretter efterfølgende målinger, navngives de Mål 2, Mål 3 osv. Det skal være nemt at finde målingen igen, så jeg foreslår navnet Net Sales.
+    Formellinjen vises langs toppen af rapportcanvasset, hvor du kan omdøbe målingen og angive en DAX-formel.
     
-2. Fremhæv **Mål** på formellinjen, og skriv derefter **Net Sales**.
+    ![Formellinje](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formulabar.png)
     
-    Nu kan du begynde at skrive en formel.
+2.  En ny måling kaldes som standard blot for Måling. Hvis du ikke omdøber den, vil yderligere målinger blive kaldt for Måling 2, Måling 3 osv. Det er bedst, hvis dine målinger er nemme at identificere, så fremhæv **Måling** på formellinjen, og skriv derefter **Net Sales**.
     
-3.  Skriv et **S** efter lighedstegnet. Der vises en rulleliste med forslag, hvor du kan se alle de DAX-funktioner, som starter med bogstavet S. Når du skriver flere bogstaver, justeres listen til de relevante funktioner. Vælg **SUM** ved at rulle ned, og tryk derefter på Enter.
+3.  Nu kan du begynde at skrive en formel. Begynd at skrive **Sum** efter lighedstegnet. I takt med at du skriver, vises en rullemenu med forslag, hvor alle DAX-funktioner, der starter med det bogstav, du skriver, vises. Rul ned, hvis det er nødvendigt, for at vælge **SUM** på listen, og tryk derefter på Enter.
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_s.png)
+    ![Vælg SUM](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_s.png)
     
-    Når du har trykket på Enter, vises der en startparentes sammen med en anden forslagsliste over alle de kolonner, du kan bruge som argument i SUM-funktionen.
+    Der vises en startparentes sammen med en anden rullemenu med en forslagsliste over alle tilgængelige kolonner, du kan bruge som argument i SUM-funktionen.
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_sum.png)
+    ![Vælg kolonne](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_sum.png)
     
-    Et udtryk vises altid mellem en start- og slutparentes. I dette tilfælde vil udtrykket indeholde et enkelt argument, der overføres til funktionen SUM: den kolonne, hvor værdierne skal lægges sammen. Du kan indsnævre listen over kolonner ved at skrive det første bogstav i kolonnenavnet. I dette eksempel er det kolonnen SalesAmount, så hvis du skriver salesam, indsnævres listen til kun to elementer. Og de er faktisk den samme kolonne. Den ene viser kun [SalesAmount], fordi vi opretter vores måling i samme tabel som kolonnen SalesAmount findes i. For den anden vises tabelnavnet foran kolonnenavnet.
+    Udtryk vises altid mellem en start- og slutparentes. Dit udtryk indeholder et enkelt argument, som skal bruges i SUM-funktionen: kolonnen SalesAmount. Begynd at skrive "SalesAmount", indtil der kun er én værdi tilbage på listen: Sales(SalesAmount). Navnet på kolonnen, som kommer før navnet på tabellen, kaldes for kolonnens *fulde navn*. Med fulde navne på kolonner er det nemmere at læse dine formler. 
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_salesam.png)
-    
-    Det er generelt en god idé altid at angive det fuldt kvalificerede kolonnenavn. Det vil gøre det nemmere at læse formlerne.
+    ![Vælg SalesAmount](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_salesam.png)
     
 4. Vælg **Sales[SalesAmount]**, og skriv derefter en slutparentes.
     
     > [!TIP]
     > Syntaksfejl skyldes ofte, at der mangler en slutparentes, eller at den er placeret forkert.
-    > 
-    > 
     
-    Nu skal de to andre kolonner trækkes fra.
     
-5.  Skriv et mellemrum efter slutparentesen for det første udtryk, og indtast derefter et minustegn (**-**) efterfulgt af et mellemrum. Angiv derefter en ny SUM-funktion med kolonnen **Sales[DiscountAmount]** som argument.
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_discamount.png)
+5.  Sådan trækker du de to andre kolonner fra:
+    1. Skriv et mellemrum, et minustegn (**-**) og endnu et mellemrum efter slutparentesen for det første udtryk. 
+    2. Angiv en anden SUM-funktion, og begynd at skrive "DiscountAmount", indtil du kan vælge kolonnen **Sales[DiscountAmount]** som argument. Tilføj en slutparentes. 
+    3. Angiv et mellemrum, endnu et minustegn, et mellemrum, en anden SUM-funktion med **Sales[ReturnAmount]** som argument og en slutparentes.
     
-    Der begynder at mangle plads til formlen. Men det er ikke noget problem.
+    ![Fuldstændig formel](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_discamount.png)
     
-6.  Klik på den nedadvendte pil i højre side af formellinjen.
+6.  Tryk på Enter, eller klik på fluebenet på formellinjen for at afslutte og validere formlen. Den validerede måling er nu klar til brug på listen Felter for tabellen Sales. 
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_chevron.png)
+    ![Måling på listen Felter](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_complete.png)
     
-    Nu er der mere plads. Nu kan du skrive nye dele af formlen på en ny linje ved at trykke på Alt+Enter. Du kan også flytte ting ved at trykke på tabulatortasten.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_expanded.png)
-    
-    Nu kan du tilføje den sidste del af formlen.
-    
-7.  Tilføj et ekstra minustegn efterfulgt af en anden SUM-funktion med kolonnen **Sales[ReturnAmount]** som argument.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_complete.png)
-    
-    Nu ser formlen færdig ud.
+Hvis du løber tør for plads til at angive en formel eller vil angive den over flere linjer, skal du vælge pilen til højre for formellinjen for at åbne for mere plads.
 
-8.  Tryk på Enter, eller klik på fluebenet på formellinjen for at afslutte formlen. Formlen valideres og tilføjes på feltlisten i tabellen Sales.
+![Pil i formel](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_chevron.png)
 
-### <a name="lets-add-our-new-measure-to-a-report"></a>Nu kan du tilføje den nye måling i en rapport
-Nu kan du tilføje målingen Net Sales på dit rapportcanvas, og så beregnes nettoomsætningen for de øvrige felter, der føjes til rapporten. Lad os se på nettoomsætningen efter salg.
+Du kan adskille dele af formlen over flere linjer ved at trykke på **Alt + Enter** eller ved at flytte ting over ved hjælp af **tabulatortasten**.
 
-1.  Træk målingen **Net Sales** fra tabellen **Sales** til dit rapportcanvas.
+![Udvidet formel](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_expanded.png)
+
+### <a name="use-your-measure-in-the-report"></a>Brug målingen i rapporten
+Du kan nu føje målingen Net Sales til rapportcanvasset og beregne nettoomsætningen for alle andre felter, du føjer til rapporten. Sådan ser du nettoomsætning efter land:
+
+1. Markér målingen **Net Sales** i tabellen **Sales**, eller træk den ind i rapportcanvasset.
     
-2. Træk nu feltet **RegionCountryName** fra tabellen **Geography** til diagrammet.
+2. Markér feltet **RegionCountryName** i tabellen **Geography**, eller træk det til diagrammet.
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_byrcn.png)
+    ![Nettoomsætning efter land](media/desktop-tutorial-create-measures/meastut_netsales_byrcn.png)
     
-    Nu kan du tilføje flere data.
+Hvis du vil se forskellen mellem nettoomsætning og samlet salg efter land, skal du vælge feltet **SalesAmount** eller trække det til diagrammet. 
+
+![Salgsbeløb og nettoomsætning efter land](media/desktop-tutorial-create-measures/meastut_netsales_byrcnandsalesamount.png)
+
+Der bruges nu to målinger i diagrammet: SalesAmount, som blev beregnet automatisk, og Net Sales, som du oprettede. Hver måling blev beregnet i henhold til konteksten i et andet felt, RegionCountryName.
     
-3.  Træk feltet **SalesAmount** til diagrammet for at se forskellen mellem nettoomsætningen og salgsbeløbet.
+### <a name="use-your-measure-with-a-slicer"></a>Brug målingen sammen med et udsnitsværktøj
+
+Du kan nu tilføje et udsnitsværktøj, så du kan filtrere nettoomsætningen og salgsbeløbet yderligere efter kalenderår.
     
-    Nu indeholder diagrammet to målinger. SalesAmount, der blev opsummeret automatisk, samt målingen Net Sales, som du lige har oprettet. I begge tilfælde blev resultaterne beregnet i konteksten for et andet felt i diagrammet, som er landene i RegionCountryName.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_byrcnandsalesamount.png)
-    
-    Nu kan du tilføje et udsnit, så du yderligere kan opdele nettoomsætningen og salgsbeløbet efter kalenderår.
-    
-4.  Klik på et tomt område ud for diagrammet, og klik derefter på visualiseringen Tabel under **Visualiseringer**.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_blanktablevisbutton.png)
-    
-    Dette opretter en tom tabelvisualisering på dit rapportcanvas.
+1.  Klik på et tomt område ved siden af diagrammet, og vælg derefter visualiseringen **Tabel** under **Visualiseringer**. Dette opretter en tom tabelvisualisering på dit rapportcanvas.
     
     ![](media/desktop-tutorial-create-measures/meastut_netsales_blanktable.png)
     
-5.  Træk feltet **Year** fra tabellen **Calendar** til den nye tomme tabel.
+2.  Træk feltet **Year** fra tabellen **Calendar** til den nye tomme tabelvisualisering. Da Year er et numerisk felt, beregner Power BI Desktop værdierne, men det giver ikke meget mening som en sammenlægning. 
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_yearaggtable.png)
+    ![Sammenlægningen Year](media/desktop-tutorial-create-measures/meastut_netsales_yearaggtable.png)
     
-    Da Year er et numerisk felt, vil Power BI Desktop lægge værdierne sammen og vise et diagram. Men det er ikke så praktisk til et udsnit.
+3.  Under **Værdier** i ruden Visualiseringer skal du vælge rullemenuen ved siden **Year** og derefter vælge **Opsummer ikke**. De enkelte år vises nu i tabellen.
     
-6. Under **Værdier** skal du klikke på pilen ud for **Year** og derefter klikke på **Opsummer ikke**.
+    ![Opsummer ikke](media/desktop-tutorial-create-measures/meastut_netsales_year_donotsummarize.png)
     
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_year_donotsummarize.png)
-    
-    Nu kan du ændre feltet Year i tabelvisualiseringen til et udsnit.
+4.  Vælg ikonet **Udsnitsværktøj** i ruden Visualiseringer for at konvertere den nye tabel til et udsnit.
 
-    7.  Klik på visualiseringen **Udsnit** under **Visualiseringer**.
+    ![Skift til udsnitsværktøj](media/desktop-tutorial-create-measures/meastut_netsales_year_changetoslicer.png)
+    
+5.  Vælg en vilkårlig værdi i udsnittet **Year** for at filtrere diagrammet **Net Sales and Sales Amount by Country** følgeligt. Målingerne Net Sales og SalesAmount genberegner og viser resultater i henhold til konteksten af det valgte felt for Year. 
+    
+    ![Diagram med udsnit efter Year](media/desktop-tutorial-create-measures/meastut_netsales_chartslicedbyyear.png)
 
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_year_changetoslicer.png)
-    
-    Nu vises Year som et udsnit. Nu kan du vælge enkelte eller flere år, hvorefter visualiseringerne i rapporten tilpasses efter de valgte indstillinger i udsnittet.
-    
-8. Prøv at klikke på **2013**. Du kan se, at diagrammet ændres. Målingerne Net Sales og SalesAmount genberegnes og viser resultaterne for 2013. Igen er konteksten for beregningen af målingerne og visningen af resultaterne blevet ændret.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_netsales_chartslicedbyyear.png)
+### <a name="use-your-measure-in-another-measure"></a>Brug din måling i en anden måling
 
-## <a name="lets-create-another-measure"></a>Lad os oprette en anden måling
-Nu ved du, hvordan du kan oprette dine egne målinger, så lad os oprette en mere.
+Du ønsker at finde ud af, hvilke produkter der har den højeste nettoomsætning pr. solgt enhed, så du har brug for en måling, der opdeler nettoomsætning efter mængden af solgte enheder. Du kan oprette en ny måling, der opdeler resultatet af målingen Net Sales efter summen af Sales[SalesQuantity].
 
-### <a name="net-sales-per-unit"></a>Net sales per unit
-Hvad nu, hvis jeg gerne vil se, hvilket produkt der er solgt flest af i antal?
+1.  Opret en ny måling med navnet **Net Sales per unit** i tabellen Sales.
+    
+2.  Begynd at skrive **Net Sales** i formellinjen. På forslagslisten kan du se, hvad du kan tilføje. Vælg **[Net Sales]**.
+    
+    ![Formel med Net Sales](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2a.png)
+    
+    Du kan også referere til en måling ved blot at begynde at skrive en startparentes (**[**). På forslagslisten kan du kun se målinger, du kan føje til formlen.
+    
+    ![Parenteser viser kun målinger](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2b.png)
+    
+3.  Angiv et mellemrum, en divisionsoperator (**/**), endnu et mellemrum, en SUM-funktion, og skriv derefter **Quantity**. På forslagslisten kan du se alle de kolonner, hvor Quantity indgår i navnet. Vælg **Sales[SalesQuantity]**, skriv slutparentesen, og tryk på Enter, eller markér afkrydsningsfeltet for at validere formlen. Formlen skal se sådan ud:
+    
+    `Net Sales per Unit = [Net Sales] / SUM(Sales[SalesQuantity])`
+    
+4. Markér målingen **Net Sales per Unit** i tabellen Sales, eller træk den ind i et tomt område på rapportcanvasset. I diagrammet kan du se nettoomsætningen pr. enhed for alle solgte produkter, hvilket ikke er meget informativt. 
+    
+    ![Samlet nettoomsætning pr. enhed](media/desktop-tutorial-create-measures/meastut_nspu_chart.png)
+    
+5. Ret diagrammets visualiseringstype til **Træstruktur** for at få et andet layout.
+    
+    ![Skift til træstruktur](media/desktop-tutorial-create-measures/meastut_nspu_changetotreemap.png)
+    
+6. Markér feltet **Product Category**, eller træk det ind i træstrukturen eller i feltet Gruppe i ruden Visualiseringer. Nu har du nogle gode oplysninger!
+    
+    ![Træstruktur efter Product Category](media/desktop-tutorial-create-measures/meastut_nspu_byproductcat.png)
+    
+7. Prøv at fjerne feltet **ProductCategory** og i stedet trække feltet **ProductName** ind i diagrammet. 
+    
+    ![Træstruktur efter Product Name](media/desktop-tutorial-create-measures/meastut_nspu_byproductname.png)
+    
+Nu leger vi bare lidt med tingene, men du må indrømme, at det er ret smart. Eksperimentér med andre måder at filtrere og formatere visualiseringen på.
 
-Til det formål kan du oprette en ny måling. Til denne beregning skal du dividere nettoomsætningen med antal solgte enheder. Det vil sige, at målingen Net Sales skal divideres med summen af Sales[SalesQuantity].
-
-1.  Opret en ny måling med navnet **Net Sales per Unit** i tabellen Sales eller Products.
-    
-    Til denne måling skal du bruge målingen Net Sales, som du oprettede tidligere. Med DAX kan du lave en reference til andre målinger i formlen.
-    
-2.  Start med at skrive **Net Sales**. Forslagslisten viser, hvad du kan tilføje. Vælg **[Net Sales]**.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2a.png)
-    
-    Du kan også referere til en anden måling ved blot at starte med at skrive en kantet venstreparentes (**[**). Forslagslisten viser nu kun de målinger, du kan tilføje i formlen.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2b.png)
-    
-3.  Angiv et mellemrum lige efter **[Net Sales]**, derefter et divisionstegn (**/**), angiv funktionen SUM, og skriv derefter **Quantity** for antal. Forslagslisten viser alle de kolonner, som har Quantity i navnet. Vælg **Sales[SalesQuantity]**. Formlen skulle nu se sådan ud:
-    
-    > **Net Sales per Unit = [Net Sales] / SUM(Sales[SalesQuantity])**
-    > 
-    > 
-    
-    Ret smart, ikke? Det er forholdsvis nemt at skrive DAX-formler ved hjælp af søgefunktionen og forslagslisten. Nu kan du se, hvad du kan få vist med den nye måling Net Sales per Unit.
-    
-4. Træk målingen **Net Sales per Unit** til et tomt område på dit rapportcanvas.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_nspu_chart.png)
-    
-    Det ser ikke videre interessant ud. Men bare rolig.
-    
-5.  Ret diagrammets visualiseringstype til **Træstruktur**.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_nspu_changetotreemap.png)
-    
-6. Træk nu feltet **ProductCategory** fra tabellen **ProductCategory** til området **Gruppe**.
-    
-    ![](media/desktop-tutorial-create-measures/meastut_nspu_byproductcat.png)
-    
-    Det er brugbare oplysninger, men hvad nu, hvis du vil se nettoomsætningen pr. produkt?
-    
-7. Fjern feltet **ProductCategory**, og træk i stedet feltet **ProductName** fra tabellen **Product** til området **Gruppe**. 
-    
-    ![](media/desktop-tutorial-create-measures/meastut_nspu_byproductname.png)
-    
-    Nu leger vi bare lidt med tingene, men du må indrømme, at det er ret smart. Vi kan naturligvis filtrere træstrukturen på en lang række måder, som jeg ikke lige vil komme nærmere ind på i dette selvstudium.
-
-## <a name="what-weve-learned"></a>Det har du lært
-Med målinger har du mulighed for effektivt at få en større indsigt i dine data. Hvordan du opretter målinger ved hjælp af formellinjen. Du kan navngive målinger, som du vil, og med forslagslisten er det nemt at finde og vælge de rette elementer, du vil tilføje i formler. Du har fået en introduktion til kontekst, hvor resultatet af beregningen af målinger ændres i forhold til andre felter eller andre udtryk i dine formler i målinger.
+## <a name="what-youve-learned"></a>Det har du lært
+Målinger er effektive til at få indsigt i data. Du har lært, hvordan du opretter målinger ved hjælp af formellinjen, navngiver dem, så de giver mest mening, og finder og vælger de korrekte formelelementer ved hjælp af DAX-forslagslisten. Du har også fået en introduktion til kontekst, hvor resultatet af beregninger i målinger ændres i henhold til andre felter eller andre udtryk i formlerne.
 
 ## <a name="next-steps"></a>Næste trin
-Hvis du vil vide mere om DAX-formler og oprette mere avancerede målinger, skal du se [Grundlæggende DAX i Power BI Desktop](desktop-quickstart-learn-dax-basics.md). Denne artikel har fokus på de grundlæggende koncepter i DAX, for eksempel syntaks, funktioner og en dybere forståelse af kontekst.
-
-Husk at føje [DAX-reference (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx) til dine favoritter. Det er her, du finder detaljerede oplysninger om DAX-syntaks, operatorer og de mere end 200 DAX-funktioner.
+- Hvis du vil vide mere om hurtigmålinger i Power BI Desktop, der udfører mange almindelige beregninger for dig, skal du se [Brug hurtigmålinger til nemt at udføre almindelige og effektive beregninger](desktop-quick-measures.md).
+  
+- Hvis du vil vide mere om DAX-formler og oprette mere avancerede målinger, skal du se [Grundlæggende DAX i Power BI Desktop](desktop-quickstart-learn-dax-basics.md). Denne artikel har fokus på de grundlæggende koncepter i DAX, for eksempel syntaks, funktioner og en dybere forståelse af kontekst.
+  
+- Husk at føje [DAX-reference (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx) til dine favoritter. Det er her, du finder detaljerede oplysninger om DAX-syntaks, operatorer og de mere end 200 DAX-funktioner.
 

@@ -1,15 +1,15 @@
 ---
-title: "Selvstudium: Facebook-analyse ved hjælp af Power BI Desktop"
-description: "Selvstudium: Facebook-analyse ved hjælp af Power BI Desktop"
+title: 'Selvstudium: Facebook-analyse ved hjælp af Power BI Desktop'
+description: 'Selvstudium: Facebook-analyse ved hjælp af Power BI Desktop'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,213 +18,234 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: e0bdec7d2774fd5c6641041af14b2170d7223151
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 6113ab53e36dd035772c0bd9812f9870a6404eac
+ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Selvstudium: Facebook-analyse ved hjælp af Power BI Desktop
-I dette selvstudium lærer du, hvordan du kan importere og visualisere data fra **Facebook**. I løbet af selvstudiet lærer du, hvordan du opretter forbindelse til en specifik Facebook-side (Power BI-siden), anvender trin til transformation af data og opretter nogle visualiseringer.
 
-Her er de trin, som du skal igennem:
+I dette selvstudium lærer du, hvordan du importerer data fra Facebook og bruger dem i Power BI Desktop. Du kommer til at oprette forbindelse til og importere data fra Power BI's Facebook-side, anvende transformationer på de importerede data og bruge dataene i rapportvisualiseringer.
 
-* **Opgave 1:** Opret forbindelse til en Facebook-side
-* **Opgave 2**: Opret visualiseringer ved hjælp af rapportvisningen
-  
-  * **Trin 1**: Opret en træstrukturvisualisering
-* **Opgave 3**: Form data i forespørgselsvisningen
-  
-  * **Trin 1**: Opdel kolonnen med dato/klokkeslæt i to
-  * **Trin 2**: Tilføj en aggregeret værdi fra en relateret tabel
-* **Opgave 4**: Opret flere visualiseringer ved hjælp af rapportvisning
-  
-  * **Trin 1**: Indlæs forespørgslen i rapporten
-  * **Trin 2**: Opret et kurvediagram og et liggende søjlediagram
+## <a name="connect-to-a-facebook-page"></a>Opret forbindelse til en Facebook-side
 
-## <a name="task-1-connect-to-a-facebook-page"></a>**Opgave 1: Opret forbindelse til en Facebook-side**
-I denne opgave skal du importere data fra webstedet [Microsoft Power BI Facebook](https://www.facebook.com/microsoftbi) (her er det webadressen: *https://www.facebook.com/microsoftbi)*.
+I dette selvstudium bruges der data fra [Microsoft Power BI's Facebook-side](https://www.facebook.com/microsoftbi) (*https://www.facebook.com/microsoftbi*). Du behøver ikke nogen særlige legitimationsoplysninger for at oprette forbindelse og importere dataene fra denne side bortset fra en personlig Facebook-konto.
 
-Alle kan oprette forbindelse til den side og følge disse trin. Det kræver ingen særlige legitimationsoplysninger (ud over til din egen Facebook-konto, som du kan bruge i disse trin).
-
-![](media/desktop-tutorial-facebook-analytics/1.png)
-
-1. Vælg **Hent data** i dialogboksen **Introduktion** eller under fanen **Hjem** på båndet.
-2. Dialogboksen **Hent data** vises, hvor du kan vælge mellem forskellige datakilder. Vælg **Facebook** under gruppen **Onlinetjenester**.
+1. Åbn Power BI Desktop, og vælg **Hent data** i dialogboksen **Introduktion**. Du kan også vælge **Hent data** på fanen **Hjem** på båndet og derefter vælge **Mere...**.
    
-   ![](media/desktop-tutorial-facebook-analytics/t_fb_getdataother.png)
+2. I dialogboksen **Hent data** skal du vælge **Facebook** i gruppen **Onlinetjenester** og derefter vælge **Opret forbindelse**.
    
-   Når du vælger **Opret forbindelse**, vises der en dialogboks med en advarsel om risikoen ved at bruge en tredjepartstjeneste.
+   ![Hent data](media/desktop-tutorial-facebook-analytics/t_fb_getdataother.png)
    
-   ![](media/desktop-tutorial-facebook-analytics/t_fb_connectingtotps.png)
-3. Når du vælger Fortsæt, vises dialogboksen **Facebook**, hvor du kan indsætte sidenavnet (**microsoftbi**) i tekstfeltet **Brugernavn**. Vælg **Indlæg** på rullelisten **Forbindelse**.
+   Der vises en dialogboks med en advarsel om risikoen ved at bruge en tredjepartstjeneste.
    
-   ![](media/desktop-tutorial-facebook-analytics/2.png)
-4. Klik på **OK**.
+   ![Advarsel om tredjepart](media/desktop-tutorial-facebook-analytics/t_fb_connectingtotps.png)
+   
+3. Vælg **Fortsæt**. Dialogboksen **Facebook** vises.
+   
+4. Skriv eller indsæt sidenavnet **microsoftbi** i tekstfeltet **Brugernavn**, vælg **Opslag** i rullemenuen **Forbindelse**, og vælg derefter **OK**.
+   
+   ![Opret forbindelse](media/desktop-tutorial-facebook-analytics/2.png)
+   
 5. Når du bliver bedt om dine legitimationsoplysninger, skal du logge på med din egen Facebook-konto og give Power BI adgang via din konto.
    
-   ![](media/desktop-tutorial-facebook-analytics/facebookcredentials.png)
+   ![Legitimationsoplysninger](media/desktop-tutorial-facebook-analytics/facebookcredentials.png)
 
-Når du har oprettet forbindelse til siden, kan du se, at der indlæses data til modellen. 
-
-![](media/desktop-tutorial-facebook-analytics/t_fb_1-loadpreview.png)
-
-Dataene vises i **Forespørgselseditor**. **Forespørgselseditor** er en del af Power BI Desktop, men det indlæses i et separat vindue. Det er her, du kan udføre alle transformationer på dine dataforbindelser.
-
-![](media/desktop-tutorial-facebook-analytics/t_fb_1-intoqueryeditor.png)
-
-Når dine data ser ud, som du vil have det, kan du indlæse dem i Power BI Desktop. Vælg **Luk og indlæs** under fanen **Hjem** på båndet.
-
-![](media/desktop-tutorial-facebook-analytics/t_fb_1-loadandclose.png)
-
-Der vises en dialogboks med statussen for indlæsningen af data i Power BI Desktop-datamodellen.
-
-![](media/desktop-tutorial-facebook-analytics/t_fb_1-loading.png)
-
-Når dataene er indlæst, kommer du til visningen **Rapport**, hvor kolonnerne fra tabellen kan ses på listen **Felter** i højre side.
-
-![](media/desktop-tutorial-facebook-analytics/fbdesigner1.png)
-
-## <a name="task-2-create-visualizations-using-the-report-view"></a>**Opgave 2: Opret visualiseringer ved hjælp af rapportvisningen**
-Nu, hvor dataene er indlæst fra tabellen, kan du hurtigt og nemt få indsigt i dataene ved hjælp af visualiseringer.
-
-**Trin 1**: Opret en træstrukturvisualisering
-
-Det er nemt at oprette en visualisering. Du skal blot trække et felt fra **listen Felter** over på dit **rapportcanvas**.
-
-Træk feltet **type** til dit **rapportcanvas**. Power BI Desktop opretter en ny visualisering på dit **rapportcanvas**. Derefter kan du trække **type** fra **Felter** (det samme felt, som du lige har trukket til dit **rapportcanvas**) til området **Værdi** for at oprette en visualisering af typen **Liggende søjlediagram**.
-
-![](media/desktop-tutorial-facebook-analytics/fbdesigner2.png)
-
-Det er nemt at ændre typen af visualisering ved at vælge et andet ikon i ruden **Visualiseringer**. Jeg prøver at ændre typen til **Træstruktur** ved at vælge ikonet fra **Visualiseringer**, som du kan se det i det følgende billede.
-
-![](media/desktop-tutorial-facebook-analytics/fbdesigner3.png)
-
-Nu vil jeg tilføje en forklaring og ændre farve på et datapunkt. Vælg ikonet **Format** i ruden **Visualiseringer**. Ikonet **Format** ligner en malerulle.
-
-![](media/desktop-tutorial-facebook-analytics/fbdesigner3a.png)
-
-Når du vælger pil ned ud for **Forklaring**, udvides sektionen for at vise, hvordan du kan tilpasse forklaringen for den valgte visualisering. Her har jeg valgt følgende:
-
-* Jeg flyttede skyderen **Forklaring** til **Til**, så der vises en forklaring.
-* Jeg valgte **Højre** på rullelisten **Placering**.
-* Jeg flyttede skyderen **Titel** til **Til**, så der vises en forklaring.
-* Jeg skrev **type** som titel til forklaringen
-
-I følgende billede kan du allerede se disse ændringer.
-
-![](media/desktop-tutorial-facebook-analytics/fbdesigner3b.png)
-
-Nu vil jeg ændre farven på et af datapunkterne. Linkdatapunktet skal være blåt, så det er tættere på standardfarven for links.
-
-Vælg pilen ud for **Datafarver** for at udvide den sektion. Datapunkterne vises med en vælgerpil ud for hver farve, som gør det muligt at vælge forskellige farver for hvert datapunkt.
-
-![](media/desktop-tutorial-facebook-analytics/fbdesigner3c.png)
-
-Når du klikker på rullepilen med farver ud for et datapunkt, vises der en dialogboks, hvor du kan vælge en farve. Her har jeg valgt lyseblå.
-
-![](media/desktop-tutorial-facebook-analytics/fbdesigner3d.png)
-
-Det var bedre. I det efterfølgende billede kan du se, hvordan farven er blevet anvendt på datapunktet i visualiseringen, og at forklaringen blev opdateret automatisk med værdierne fra **Datafarver**.
-
-![](media/desktop-tutorial-facebook-analytics/fbdesigner3e.png)
-
-## <a name="task-3-shape-data-in-the-table"></a>**Opgave 3: Form data i tabellen**
-Nu, hvor du har importeret tabellen og er begyndt at visualisere den, vil du nok bemærke, at det er vigtigt at udføre forskellige typer formning og oprydning i data, for at du kan få mest muligt ud af dem.
-
-**Trin 1**: Opdel kolonnen med dato/klokkeslæt i to
-
-I dette trin opdeler jeg kolonnen **created\_time** for både at få fat i datoværdien og klokkeslætsværdien. Når du er i Power BI Desktop, og du vil ændre en eksisterende forespørgsel, skal du starte **Forespørgselseditor**. Det gør du ved at vælge **Rediger forespørgsler** under fanen **Hjem**.
-
-![](media/desktop-tutorial-facebook-analytics/t_fb_editquery.png)
-
-1. I gitteret i **Forespørgselseditor** skal du rulle til højre, indtil du finder kolonnen **created\_time**.
-2. Højreklik på en kolonneoverskrift i gitteret med **forespørgselseksemplet**, og klik på **Opdel kolonne \> Efter afgrænser** for at opdele kolonnen. Vælg **Brugerdefineret** i rullelisten med afgrænsere, og skriv **"T"**. Bemærk, at denne funktion også kan vælges i gruppen **Administrer kolonner** under fanen **Hjem** på båndet.
+   Når du har oprettet forbindelse til Power BI's Facebook-side, kan du se en eksempelvisning af sidens data med **Opslag**. 
    
-   ![](media/desktop-tutorial-facebook-analytics/9.png)
+   ![Eksempelvisning af data](media/desktop-tutorial-facebook-analytics/t_fb_1-loadpreview.png)
    
-   ![](media/desktop-tutorial-facebook-analytics/10.png)
-3. Jeg omdøber de oprettede kolonner til **created\_date** og **created\_time**.
-4. Vælg den nye kolonne **created\_time**, og gå til fanen **Tilføj kolonne** under **Forespørgselsvisning**, og vælg **Klokkeslæt\>Time** i gruppen **Fra dato og klokkeslæt**. Dette tilføjer en ny kolonne, som kun indeholder timekomponenten fra klokkeslættet.
+## <a name="shape-and-transform-the-imported-data"></a>Udform og transformér de importerede data
+
+Du vil gerne se og vise, hvilke opslag der har fået flest kommentarer i tidens løb, men du har bemærket, at dataene i **created_time** i eksempelvisningen af data under **Opslag** er svære at læse og forstå, og at der slet ikke er nogen kommentarer. Du skal udføre og rense dataene for at få flest mulige oplysninger ud af dem. Du kan bruge **Power-forespørgselseditor** i Power BI Desktop til at redigere dataene, før eller efter du importerer dem i Power BI Desktop. 
+
+### <a name="split-the-datetime-column"></a>Opdel kolonnen med dato/klokkeslæt
+
+Adskil først værdierne dato og tid i kolonnen **created_time**, så den bliver mere læsevenlig. 
+
+1. Vælg **Rediger** i eksempelvisningen af Facebook-dataene. 
    
-   ![](media/desktop-tutorial-facebook-analytics/11.png)
-5. Ret typen for den nye **Hour**-kolonne til **Heltal** ved at gå til fanen **Hjem** og vælge rullelisten **Datatype** eller ved at højreklikke på kolonnen og vælge **Transformér\>Heltal**.
+   ![Redigering af data i eksempelvisning](media/desktop-tutorial-facebook-analytics/t_fb_1-editpreview.png)
    
-   ![](media/desktop-tutorial-facebook-analytics/12.png)
-
-**Trin 2**: Tilføj en aggregeret værdi fra en relateret tabel
-
-I dette trin skal du tilføje antallet af delinger fra den indlejrede værdi, så du kan bruge den i visualiseringerne.
-
-1. Fortsæt med at rulle til højre, indtil du kan se kolonnen **shares**. Den indlejrede værdi angiver, at vi skal foretage endnu en transformering for at kunne få fat i de faktiske værdier.
-2. Øverst til højre i kolonneoverskriften skal du vælge ikonet ![](media/desktop-tutorial-facebook-analytics/14.png) for at åbne **Udvid/Aggreger**. Vælg **count**, og tryk på **OK**. Dette filføjer antallet af delinger for hver række i tabellen.
+   **Power-forespørgselseditor** i Power BI Desktop åbner i et nyt vindue, og eksempelvisningen af dataene fra Power BI's Facebook-side vises. 
    
-   ![](media/desktop-tutorial-facebook-analytics/15.png)
+   ![Power-forespørgselseditor](media/desktop-tutorial-facebook-analytics/t_fb_1-intoqueryeditor.png)
    
-   Når dataene er indlæst, omdøber jeg kolonnen til **shares** ved at dobbeltklikke på kolonnenavnet, højreklikke på kolonnen eller på båndet under **Forespørgselsvisning**, vælger **Omdøb** i gruppen **En hvilken som helt kolonne** under fanen **Transformér** .
-3. Til sidst ændrer jeg den nye kolonne **shares** til **Heltal**. Med kolonnen valgt kan typen ændres ved at højreklikke på kolonnen og vælge **Transformér\>Heltal** eller ved at navigere til fanen **Hjem** og vælge rullelisten **Datatype**.
-
-### <a name="query-steps-created"></a>Oprettede forespørgselstrin
-Når du udfører transformeringer i forespørgselsvisning, oprettes og vises forespørgselstrinnene på listen **ANVENDTE TRIN** i ruden **Forespørgselsindstillinger**. Hvert forespørgselstrin har en tilsvarende forespørgselsformel, som også kaldes "M"-sproget.
-
-![](media/desktop-tutorial-facebook-analytics/16.png)
-
-| Opgave | Forespørgselstrin | Formel |
-| --- | --- | --- |
-| Opret forbindelse til en Facebook-datakilde |Kilde |Facebook.Graph  (&quot;https://graph.facebook.com/microsoftbi/posts&quot;) |
-| **Opdel kolonner** for at få de værdier, du skal bruge |Opdel kolonne efter afgrænser |Table.SplitColumn  (Source,&quot;created_time&quot;,Splitter.SplitTextByDelimiter(&quot;T&quot;),{&quot;created_time.1&quot;, &quot;created_time.2&quot;}) |
-| **Ret typen** for de nye kolonner (automatisk trin) |Ændret type |Table.TransformColumnTypes  (#&quot;Opdel kolonne efter afgrænser&quot;,{{&quot;created_time.1&quot;, type date}, {&quot;created_time.2&quot;, type time}}) |
-| Omdøb en kolonne |Omdøbte kolonner |Table.RenameColumns  (#&quot;Ændret type&quot;,{{&quot;created_time.1&quot;, &quot;created_date&quot;}, {&quot;created_time.2&quot;, &quot;created_time&quot;}}) |
-| Indsæt en kolonne |Indsat time |Table.AddColumn  (#&quot;Omdøbte kolonner&quot;, &quot;Hour&quot;, each Time.Hour([created_time]), type number) |
-| Ret typen |Ændret type1 |Table.TransformColumnTypes  (#&quot;Indsat time&quot;,{{&quot;Hour&quot;, type text}}) |
-| Udvid værdierne i en indlejret tabel |Udvid shares |Table.ExpandRecordColumn  (#&quot;Ændret type1&quot;, &quot;shares&quot;, {&quot;count&quot;}, {&quot;shares.count&quot;}) |
-| Omdøb kolonnen |Omdøbte kolonner1 |Table.RenameColumns  (#&quot; Udvid shares&quot;,{{&quot;shares.count&quot;, &quot;shares&quot;}}) |
-| **Ret typen** |Ændret type2 |Table.TransformColumnTypes  (#&quot;Omdøbte kolonner1&quot;,{{&quot;shares&quot;, Int64.Type}}) |
-
-## <a name="task-4-create-additional-visualizations-using-the-report-view"></a>**Opgave 4: Opret flere visualiseringer ved hjælp af rapportvisning**
-Nu, hvor dataene er konverteret til de former, vi skal bruge i resten af analysen, kan vi indlæse den færdige tabel i vores rapport og oprette flere visualiseringer.
-
-**Trin 1**: Indlæs forespørgslen i rapporten
-
-Når forespørgselsresultaterne skal indlæses i rapporten, skal vi vælge **Luk og anvend** i **Forespørgselseditor**. Dette indlæser ændringerne i Power BI Desktop og lukker **Forespørgselseditor**.
-
-![](media/desktop-tutorial-facebook-analytics/t_fb_1-loadandclose.png)
-
-I Power BI Desktop skal vi sikre, at vi er i visningen **Rapport**. Vælg ikonet fra den øverste venstre linje i Power BI Desktop.
-
-![](media/desktop-tutorial-facebook-analytics/17.png)
-
-**Trin 2**: Opret et kurvediagram og et liggende søjlediagram
-
-Når du vil oprette en visualisering, kan du trække felter fra listen **Felter** og placere dem på dit **rapportcanvas**.
-
-1. Træk feltet **shares** til dit **rapportcanvas** for at oprette et liggende søjlediagram. Træk derefter feltet created\_date til diagrammet, hvorefter Power BI Desktop ændrer visualiseringen til et **Kurvediagram**.
+2. Vælg kolonnen **created_time**. Bemærk, at datatypen Tekst i øjeblikket anvendes, hvilket betegnes med et ikon af typen **ABC** i kolonneoverskriften. Højreklik på overskriften, og vælg **Opdel kolonne > Efter separator** i rullemenuen, eller vælg **Opdel kolonne > Efter separator** under **Transformér** på fanen Hjem på båndet.  
    
-   ![](media/desktop-tutorial-facebook-analytics/19.png)
-2. Derefter skal du trække feltet **shares** og placere det på dit **rapportcanvas**. Træk nu feltet **Hour** til sektionen **Akse** på listen **Felter**.
+   ![Opdel kolonne efter separator](media/desktop-tutorial-facebook-analytics/delimiter1.png)
    
-   ![](media/desktop-tutorial-facebook-analytics/20.png)
-3. Det er nemt at ændre typen af visualisering ved at klikke på et andet ikon i ruden **Visualiseringer**. Pilen i billedet herunder peger på ikonet **Liggende søjlediagram**.
+3. I dialogboksen **Opdel kolonne efter separator** skal du vælge **Brugerdefineret** i rullemenuen, angive **T** (det tegn, der starter tidsdelen i værdien created_time) i inputfeltet og vælge **OK**. 
    
-   ![](media/desktop-tutorial-facebook-analytics/21.png)
-4. Ret visualiseringen typen til **Liggende søjlediagram**.
-5. Dit **liggende søjlediagram** oprettes, men akserne ser ikke ud, som de gerne skulle. Jeg synes, at de skal sorteres i den omvendte rækkefølge (fra højeste til laveste). Vælg pil ned ud for **Y-akse** for at udvide den sektion. Jeg ændrer typen af aksen fra **Fortløbende** til **Efter kategori** for at få den sorteret, som jeg gerne vil (i billedet herunder vises aksen før valget – i det næste billede kan du se resultatet).
+   ![Dialogboksen Opdel kolonne efter separator](media/desktop-tutorial-facebook-analytics/delimiter2.png)
+   
+   Kolonnen opdeles i to kolonner, der indeholder strengene før og efter separatoren **T**, og kaldes henholdsvist **created_time.1** og **created_time.2**. Bemærk, at Power BI automatisk har registreret og ændret datatyperne til **Dato** for den første kolonne og **Tid** for den anden kolonne, og at dato- og tidsværdierne er blevet formateret, så de er mere læsevenlige.
+   
+4. Omdøb kolonnerne ved at dobbeltklikke på hver kolonneoverskrift eller ved at markere hver kolonne og derefter vælge **Omdøb** i gruppen **En hvilken som helst kolonne** under fanen **Transformér** på båndet. Skriv derefter nye kolonneoverskrifter **created_date** og **created_time**.
+   
+   ![Nye dato- og tidskolonner](media/desktop-tutorial-facebook-analytics/delimiter3.png)
+   
+### <a name="expand-the-nested-column"></a>Udvid den indlejrede kolonne
 
-![](media/desktop-tutorial-facebook-analytics/22.png)
+Nu hvor dataene for dato og tid er, som du ønsker, kan du få vist kommentarer ved at udvide en indlejret kolonne. 
 
-Det var bedre. Nu er der tre visualiseringer på siden, og jeg kan tilpasse størrelsen på dem, så de fylder hele rapportsiden.
+1. Markér kolonnen **object_link**, og vælg derefter ikonet ![ikonet udvid](media/desktop-tutorial-facebook-analytics/14.png) for at åbne dialogboksen **Udvid/Sammenfat**. Vælg **forbindelser**, og vælg derefter **OK**. 
+   
+   ![Udvid object_link](media/desktop-tutorial-facebook-analytics/expand1.png)
+   
+   Kolonneoverskriften ændres til **object_link.connections**.
+2. Vælg igen ikonet ![ikonet udvid](media/desktop-tutorial-facebook-analytics/14.png) øverst i kolonnen **object_link.connections**, vælg **kommentarer**, og vælg derefter **OK**. Kolonneoverskriften ændres til **object_link.connections.comments**.
+   
+3. Vælg ikonet ![ikonet udvid](media/desktop-tutorial-facebook-analytics/14.png) øverst i kolonnen **object_link.connections.comments**, og vælg denne gang **Sammenfat** i stedet for Udvid i dialogboksen. Vælg **# Antal id'er**, og vælg derefter **OK**. 
+   
+   ![Sammenfattede kommentarer](media/desktop-tutorial-facebook-analytics/expand2.png)
+   
+   Antallet af kommentarer for hver meddelelse vises nu i kolonnen. 
+   
+4. Omdøb kolonnen **Count of object_link.connections.comments.id** til **Number of comments**.
+   
+5. Vælg pilen i rullemenuen ved siden af overskriften **Number of comments**, og vælg **Sortér faldende** for at se opslag sorteret efter flest til færrest kommentarer. 
+   
+   ![Kommentarer pr. meddelelse](media/desktop-tutorial-facebook-analytics/data-fixed.png)
+   
+### <a name="review-query-steps"></a>Gennemse forespørgselstrin
 
-![](media/desktop-tutorial-facebook-analytics/23.png)
+Idet du udformede og transformerede data i **Power-forespørgselseditor**, blev hvert trin registreret i området **Anvendte trin** i ruden **Forespørgselsindstillinger** i højre side af vinduet Power-forespørgselseditor. Du kan gå tilbage igennem de Anvendte trin for at se nøjagtigt, hvilke ændringer du har lavet, og redigere, slette eller omarrangere dem, hvis det er nødvendigt. Dette kan dog være risikabelt, da ændring af foregående trin kan bryde senere trin. 
 
-Som du kan se, er det nemt at tilpasse visualiseringer i din rapport, så du kan præsentere dataene på den måde, du vil. Med Power BI Desktop er det nemt at hente data fra en lang række forskellige datakilder og forme dem til dine behov for at kunne fremvise analyser visuelt og interaktivt. Når din rapport er færdig, kan du [uploade den til Power BI](desktop-upload-desktop-files.md) og oprette dashboards ud fra den, som du derefter kan dele med andre Power BI-brugere.
+Efter du har anvendt datatransformationerne indtil nu, bør dine Anvendte trin ligne følgende:
+   
+   ![Anvendte trin](media/desktop-tutorial-facebook-analytics/applied-steps.png)
+   
+   >[!TIP]
+   >De underliggende data for Anvendte trin er formler, som er skrevet på **Power-forespørgselssproget**, der også er kendt som **M**-sproget. Hvis du vil se og redigere formlerne, skal du vælge **Avanceret editor** i gruppen **Forespørgsel** under fanen Hjem på båndet. 
 
-Du kan hente slutresultatet fra dette selvstudium [her](http://download.microsoft.com/download/1/4/E/14EDED28-6C58-4055-A65C-23B4DA81C4DE/FacebookAnalytics.pbix)
+### <a name="import-the-transformed-data"></a>Importér de transformerede data
 
-### <a name="where-else-can-i-get-more-information"></a>Hvor kan jeg finde flere oplysninger?
+Når du er tilfreds med dataene, skal du vælge **Luk og anvend** > **Luk og anvend** under fanen Hjem på båndet for at importere dem i Power BI Desktop. 
+   
+   ![Luk og anvend](media/desktop-tutorial-facebook-analytics/t_fb_1-loadandclose.png)
+   
+   Der vises en dialogboks med statussen for indlæsningen af data i Power BI Desktop-datamodellen. 
+   
+   ![Indlæsning af data](media/desktop-tutorial-facebook-analytics/t_fb_1-loading.png)
+   
+   Når dataene er indlæst, vises de i Rapportvisningen som en ny forespørgsel på listen Felter.
+   
+   ![Ny forespørgsel](media/desktop-tutorial-facebook-analytics/fb-newquery.png)
+   
+## <a name="use-the-data-in-report-visualizations"></a>Brug dataene i rapportvisualiseringer 
+
+Nu, hvor du har importeret dataene fra Facebook-siden, kan du hurtigt og nemt få indsigt i dataene ved hjælp af visualiseringer. Det er nemt at oprette en visualisering. Du skal blot markere et felt eller trække det fra listen **Felter** til rapportcanvasset.
+
+### <a name="create-a-bar-chart"></a>Opret et liggende søjlediagram
+
+1. I Rapportvisning i Power BI Desktop skal du vælge **message** på listen Felter eller trække den til canvasset. En tabel med alle opslagsmeddelelser vises på canvasset. 
+   
+   ![Ny forespørgsel](media/desktop-tutorial-facebook-analytics/table-viz.png)
+   
+2. Når du har markeret tabellen, skal du også markere **Number of comments** på listen Felter eller trække den ind i tabellen. 
+   
+3. Vælg ikonet **Stablet liggende søjlediagram** i ruden Visualiseringer. Tabellen ændres til et liggende søjlediagram med antallet af kommentarer pr. opslag. 
+   
+   ![Liggende søjlediagram](media/desktop-tutorial-facebook-analytics/barchart1.png)
+   
+4. Vælg ellipsen (...) i øverste højre hjørne af visualiseringen, og vælg derefter **Sortér efter antal kommentarer** for at sortere tabellen faldende efter antallet af kommentarer. 
+   
+   ![Sortér efter antallet af kommentarer](media/desktop-tutorial-facebook-analytics/barchart2.png)
+   
+5. Bemærk, at de fleste kommentarer er knyttet til **tomme** meddelelser. Disse opslag kan have været historier, links, videoer eller andet indhold, der ikke er tekst. Hvis du vil bortfiltrere tomme rækker, skal du vælge **message (alle)** under **Filtre** nederst i ruden Visualiseringer, vælge **Markér alle** og derefter vælge **Tomme** for at fjerne markeringen af den. Filterindtastningen ændres til **message er ikke (Tomme)**, så forsvinder rækken Tomme fra diagramvisualiseringen. 
+   
+   ![Bortfiltrer tomme](media/desktop-tutorial-facebook-analytics/barchart3.png)
+   
+### <a name="format-the-chart"></a>Formatér diagrammet
+
+Visualiseringen bliver mere interessant, men du kan ikke se meget af teksten i opslagene i diagrammet. Gør følgende for at få vist mere af opslagene:
+
+1. Ved hjælp af håndtagene i diagramvisualiseringen kan du tilpasse størrelsen af diagrammet, så det bliver så stort som muligt. 
+   
+2. Med diagrammet markeret skal du vælge **ikonet Formatér** (malerrullen) i ruden Visualiseringer.
+   
+3. Vælg pilen i rullemenuen ved siden af **Y-akse**, og træk skyderen ved siden af **Maksimumstørrelse** hele vejen til højre (50 %). 
+4. Reducer også **Tekststørrelsen** til **10**, så der kan være mere tekst.
+   
+   ![Formatering af ændringer](media/desktop-tutorial-facebook-analytics/barchart4.png)
+   
+   Der vises nu mere af indholdet i opslagene i diagrammet. 
+   
+   ![Vis mere af opslagene](media/desktop-tutorial-facebook-analytics/barchart5.png)
+   
+Der vises ikke nøjagtige værdier på diagrammets X-akse (antal kommentarer), og det ser lidt malplaceret ud nederst i diagrammet. Du beslutter dig for at bruge datanavne i stedet. 
+
+1. Vælg ikonet Formatér, og vælg derefter skyderen ved siden af **X-akse** for at slå den **Fra**. 
+   
+2. Vælg skyderen ved siden af **Datanavne** for at slå dem **Til**. Nu vises det nøjagtige antal kommentarer for hvert opslag i diagrammet.
+   
+   ![Anvend datanavne](media/desktop-tutorial-facebook-analytics/barchart6.png)
+   
+### <a name="edit-the-data-type"></a>Rediger datatypen
+
+Det nærmer sig, men datanavnene har alle decimalen **,0**, hvilket er distraherende og misvisende, da **antallet af opslag** antal vil være et heltal. Du skal ændre datatypen for kolonnen **Number of posts** til heltal.
+
+1. Du redigerer datatypen ved at højreklikke på **Query1** på listen Felter eller holde over den og vælge ellipsen **Flere indstillinger** (...) og derefter vælge **Rediger forespørgsel**. Du kan også vælge **Rediger forespørgsel** i området **Eksterne data** under fanen Hjem på båndet og derefter vælge **Rediger forespørgsler** i rullemenuen. **Power-forespørgselseditor** i Power BI Desktop åbnes i et separat vindue.
+   
+   ![Rediger forespørgsel via listen Felter](media/desktop-tutorial-facebook-analytics/editquery1.png)     ![Rediger forespørgsler via båndet](media/desktop-tutorial-facebook-analytics/t_fb_editquery.png)
+   
+2. I Power-forespørgselseditor skal du vælge kolonnen **Number of comments** og ændre datatypen til **Heltal** ved at gøre et af følgende: 
+   - Vælg ikonet **1,2** ved siden af kolonneoverskriften **Number of comments**, og vælg **Heltal** i rullemenuen, eller
+   - højreklik på kolonneoverskriften, og vælg **Skift type > Heltal**, eller
+   - vælg **Datatype: decimaltal** i gruppen **Transformér** under fanen Hjem, eller vælg **Heltal** i gruppen **En hvilken som helst kolonne** under fanen **Transformér**.
+   
+   Ikonet i kolonneoverskriften ændres til **123**, hvilket betegner datatypen Heltal.
+   
+   ![Skift datatype](media/desktop-tutorial-facebook-analytics/change-datatype.png)
+   
+3. Vælg **Luk og anvend**, eller blot **Anvend** for at anvende ændringerne, mens vinduet Power-forespørgselseditor fortsat er åbent. Når ændringerne er blevet indlæst, bliver datanavnene i diagrammet heltal. 
+   
+   ![Diagram med heltal](media/desktop-tutorial-facebook-analytics/vis-3.png)
+   
+### <a name="create-a-date-slicer"></a>Opret et dataudsnit
+
+Du vil visualisere antallet af kommentarer i løbet af en tidsperiode. Du kan oprette en visualisering med udsnit for at filtrere diagramdataene efter forskellige tidsrammer. 
+
+1. Klik på et tomt området på canvasset, og vælg derefter **ikonet Udsnit** i ruden Visualiseringer. En tom udsnitsvisualisering vises. 
+   
+   ![Vælg ikonet for udsnit](media/desktop-tutorial-facebook-analytics/slicer1.png)
+   
+2. Vælg feltet **created_date** på listen Felter, eller træk det til det nye udsnit. Udsnittet ændres til et udsnit med et datointerval baseret på feltets datatype for Dato.
+   
+   ![Udsnit med skyderen Datointerval](media/desktop-tutorial-facebook-analytics/slicer2.png)
+   
+3. Flyt skyderhåndtagene for at vælge forskellige datointervaller, og bemærk, hvordan diagramdataene filtreres tilsvarende. Du kan også vælge datofelterne i udsnittet, og angive specifikke datoer, eller vælge dem i et pop op-vindue med en kalender.
+    
+   ![Udsnit af data](media/desktop-tutorial-facebook-analytics/slicer3.png)
+   
+### <a name="format-the-visualizations"></a>Formatér visualiseringerne
+
+Du beslutter dig for at give diagrammet en mere beskrivende og spændende titel. 
+
+1. Med diagrammet markeret skal du vælge ikonet **Formatér** og derefter pilen i rullemenuen for at udvide **Titel**.
+2. Ret **Titelteksten** til **Kommentar pr. opslag**. 
+3. Vælg pilen i rullemenuen ved siden af **Skrifttypefarve**, og vælg derefter en grøn farve for at matche de grønne søjler i visualiseringerne.
+4. Øg **Tekststørrelsen** til **10**, og ret **Skrifttypefamilien** til **Segoe (Bold)**.
+
+![Formatér diagramtitel](media/desktop-tutorial-facebook-analytics/formatting1.png)
+
+Eksperimentér med andre formateringsindstillinger for at ændre udseendet af visualiseringerne. 
+
+![Visualiseringer](media/desktop-tutorial-facebook-analytics/vis-1.png)
+
+## <a name="create-more-visualizations"></a>Opret flere visualiseringer
+
+Som du kan se, er det nemt at tilpasse visualiseringer i din rapport, så dataene kan præsenteres på den måde, du vil. Prøv f.eks. at bruge de importerede Facebook-data til at oprette dette søjlediagram med antal kommentarer i løbet af en tidsperiode.
+
+![Kurvediagram](media/desktop-tutorial-facebook-analytics/moreviz.png)
+
+Med Power BI Desktop er det nemt at hente data fra en lang række forskellige datakilder og forme dem til dine analysebehov for at kunne visualisere disse data på omfattende og interaktive måder. Når din rapport er færdig, kan du [uploade den til Power BI-tjenesten](desktop-upload-desktop-files.md) og oprette dashboards ud fra den, som du derefter kan dele med andre Power BI-brugere.
+
+## <a name="next-steps"></a>Næste trin
 * [Læs andre selvstudier til Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=521937)
 * [Se videoer om Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=519322)
 * [Besøg Power BI-forummet](http://go.microsoft.com/fwlink/?LinkID=519326)
 * [Læs Power BI-bloggen](http://go.microsoft.com/fwlink/?LinkID=519327)
-
-
 

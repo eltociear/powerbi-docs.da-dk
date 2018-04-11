@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/01/2018
 ms.author: mihart
-ms.openlocfilehash: c5177f4ccce8e8e274944cdcb539ca65a8f87ca8
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.openlocfilehash: 17921d1fe28a1b4c0640748123efe4b70982b18d
+ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="open-a-report-in-power-bi-service-apppowerbicom"></a>Åbn en rapport i Power BI-tjenesten (app.powerbi.com)
 Rapporter er tilgængelige i Power BI-tjenesten, Power BI Desktop, Power BI - Mobil og endda Power BI Embedded. Denne artikel gælder for åbning af rapporter i ***Power BI-tjenesten***.
@@ -78,7 +78,7 @@ Og én metode mere til at åbne en rapport er fra et datasæt. Når du starter f
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Der er stadig flere måder at åbne en rapport
 Når du bliver mere fortrolig med at navigere i Power BI-tjenesten, finder du ud af hvilke arbejdsprocesser, der fungerer bedst for dig. Der er et par enkelte andre måder at få adgang til rapporter på:
-- Fra den venstre navigationsrude ved hjælp af **Favoritter**, **Seneste**, **Apps* og **Deles med mig**. 
+- Fra den venstre navigationsrude ved hjælp af **Favoritter**, **Seneste**, **Apps** og **Delt med mig**. 
 - Brug [Få vist relaterede](service-related-content.md)
 - I en mail, når nogen [deler med dig](service-share-reports.md), eller du [angiver en advarsel](service-set-data-alerts.md).    
 - Fra dit [Meddelelsescenter](service-notification-center.md)    

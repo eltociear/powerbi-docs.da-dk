@@ -2,14 +2,14 @@
 title: 'Tredjepartstjeneste: Google Analytics-connector til Power BI Desktop'
 description: 'Tredjepartstjeneste: Google Analytics-connector til Power BI Desktop'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e05f64b52c34b3f038994e9cac8a9b7e6aebc7ad
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: fdd48073d80176eff1576633c2e9f15bdd430a60
+ms.sourcegitcommit: ae4d771b883b654358a6a94dd784ea9bdf3d3aa3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="google-analytics-connector-for-power-bi-desktop"></a>Google Analytics-connector til Power BI Desktop
 > [!NOTE]
@@ -33,7 +33,7 @@ ms.lasthandoff: 02/24/2018
 Du kan oprette forbindelse til Google Analytics-data ved hjælp af **Google Analytics**-connectoren. Du opretter forbindelse ved at følge disse trin:
 
 1. Vælg **Hent data** på båndet **Hjem** i **Power BI Desktop**.
-2. I vinduet **Hent data** skal du vælge **Andet** blandt kategorierne i venstre rude.
+2. I vinduet **Hent data** skal du vælge **Online Services** blandt kategorierne i ruden til venstre.
 3. Vælg **Google Analytics** blandt valgmulighederne i højre rude.
 4. Vælg **Opret forbindelse** nederst i vinduet.  
    ![](media/service-google-analytics-connector/tps_googleanalytics_1.png)

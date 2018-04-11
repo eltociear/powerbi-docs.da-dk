@@ -1,15 +1,15 @@
 ---
-title: "Datagateway i det lokale miljø (personlig tilstand)"
-description: "Datagateway til Power BI, som enkeltpersoner kan bruge til at oprette forbindelse til data i det lokale miljø"
+title: Datagateway i det lokale miljø (personlig tilstand)
+description: Datagateway til Power BI, som enkeltpersoner kan bruge til at oprette forbindelse til data i det lokale miljø
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/14/2017
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2bd3604a3f16c6977c52c1b3484ac024445c65bb
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 777e5f27954890fe842096c0f2633f6803ebf319
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Datagateway i det lokale miljø (personlig tilstand)
 Du kan bruge datakilder i det lokale miljø og oprette Power BI-rapporter og -dashboards ved hjælp af en gateway. En **gateway** er software, der gør det nemmere at få adgang til data, som er gemt på et privat netværk i det lokale miljø. Derefter giver den dig mulighed for at bruge disse data i onlinetjenester som **Power BI-tjenesten**. **Datagatewayen i det lokale miljø (personlig tilstand)** er en opdatering, som er blevet udgivet for nylig, til Power BI Gateway. Den giver enkeltpersoner mulighed for at installere en gateway på deres egen computer og få adgang til data i det lokale miljø.
@@ -89,7 +89,7 @@ Hvis du brugte **Kombiner hurtigt** med den tidligere gateway, skal du benytte f
 1. Åbn følgende fil ved hjælp af Stifinder:
    
    ```
-   %localappdata%\Microsoft\on-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
+   %localappdata%\Microsoft\On-premises data gateway (personal mode)\Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
    ```
 2. Tilføj følgende tekst nederst i filen:
    
@@ -107,7 +107,7 @@ Der er et par ting, du skal overveje, når du bruger **datagatewayen i det lokal
   * *Den valgte brugerkonto stemmer ikke overens med kravene i programmet. Brug en anden konto.*
   * For at løse fejlen skal du vælge *Brug en anden konto* og logge på igen. 
 
-Følgende datakilder understøttes i øjeblikket ikke for **datagatewayen i det lokale miljø (personlig tilstand)**:
+Følgende datakilder understøttes ikke i øjeblikket for **datagatewayen i det lokale miljø (personlig tilstand)**:
 
 * ADO.NET 
 * CurrentWorkbook

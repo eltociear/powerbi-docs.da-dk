@@ -1,31 +1,31 @@
 ---
-title: "Datagateway i det lokale miljø"
-description: "Dette er en oversigt over datagatewayen til Power BI i det lokale miljø. Du kan bruge denne gateway til at arbejde med DirectQuery-datakilder. Du kan også bruge denne gateway til at opdatere clouddatasæt med data i det lokale miljø."
+title: Datagateway i det lokale miljø
+description: Dette er en oversigt over datagatewayen i det lokale miljø til Power BI. Du kan bruge denne gateway til at arbejde med DirectQuery-datakilder. Du kan også bruge denne gateway til at opdatere clouddatasæt med data i det lokale miljø.
 services: powerbi
-documentationcenter: 
-author: davidiseminger
+documentationcenter: ''
+author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 02/22/2018
-ms.author: davidi
+ms.date: 03/26/2018
+ms.author: maghan
 LocalizationGroup: Gateways
-ms.openlocfilehash: c9025194ebe8ce6b1829aacd9d74bff5d9c55e3c
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 1c0bd455d8b2dd34cc7d9ef20b0e75c5457034d2
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="on-premises-data-gateway"></a>Datagateway i det lokale miljø
-En datagateway i det lokale miljø fungerer som en bro, der giver hurtig og sikker dataoverførsel mellem lokale data (data, der ikke er i cloudmiljøet) og Power BI-, Microsoft Flow-, Logic Apps- og PowerApps-tjenesterne.
+En datagateway i det lokale miljø fungerer som en bro, der giver hurtig og sikker dataoverførsel mellem data i det lokale miljø (data, der ikke er i cloudmiljøet) og tjenesterne Power BI, Microsoft Flow, Logic Apps og PowerApps.
 
 Du kan bruge en enkelt gateway sammen med forskellige tjenester på samme tid. Hvis du både bruger Power BI og PowerApps, kan der bruges en enkelt gateway til begge dele. Det afhænger af den konto, du logger på med.
 
@@ -91,8 +91,13 @@ Når du føjer en datakilde til gatewayen, skal du angive legitimationsoplysning
 <!-- How the gateway works -->
 [!INCLUDE [gateway-onprem-how-it-works-include](./includes/gateway-onprem-how-it-works-include.md)]
 
+## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
+* [Azure Information Protection](https://docs.microsoft.com/en-us/microsoft-365/enterprise/protect-files-with-aip
+) understøttes ikke i øjeblikket
+* [Access Online](https://products.office.com/en-us/access) understøttes ikke i øjeblikket
+
 ## <a name="troubleshooting"></a>Fejlfinding
-Hvis du har problemer med at installere og konfigurere en gateway, skal du se [Fejlfinding af datagateway i det lokale miljø](service-gateway-onprem-tshoot.md). Hvis du mener, at du har et problem med din firewall, skal du se afsnittet om [firewall eller proxy](service-gateway-onprem-tshoot.md#firewall-or-proxy) i artiklen om fejlfinding.
+Hvis du har problemer med at installere og konfigurere en gateway, skal du se [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md). Hvis du mener, at du har et problem med din firewall, skal du se afsnittet om [firewall eller proxy](service-gateway-onprem-tshoot.md#firewall-or-proxy) i artiklen om fejlfinding.
 
 Hvis du mener, at du oplever proxyproblemer med gatewayen, skal du se [Konfiguration af proxyindstillinger for Power BI-gateways](service-gateway-proxy.md).
 
@@ -102,8 +107,8 @@ Hvis du mener, at du oplever proxyproblemer med gatewayen, skal du se [Konfigura
 [Administrer din datakilde – SQL Server](service-gateway-enterprise-manage-sql.md)  
 [Administrer din datakilde – Oracle](service-gateway-onprem-manage-oracle.md)  
 [Administrer din datakilde – Import/Planlagt opdatering](service-gateway-enterprise-manage-scheduled-refresh.md)  
-[Datagateway i det lokale miljø, detaljeret](service-gateway-onprem-indepth.md)  
+[Datagateway i det lokale miljø – detaljeret](service-gateway-onprem-indepth.md)  
 [Datagateway i det lokale miljø (personlig tilstand) – den nye version af den personlige gateway](service-gateway-personal-mode.md)
-[Konfiguration af proxyindstillinger for datagateway i det lokale miljø](service-gateway-proxy.md)  
+[Konfiguration af proxyindstillinger for datagatewayen i det lokale miljø](service-gateway-proxy.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

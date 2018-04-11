@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/11/2017
 ms.author: tankas
-ms.openlocfilehash: 7c460955aba71bfb3a89d94aa6000c7bdd451ac2
-ms.sourcegitcommit: 0473a155495a7a9ba4b899d0815100426718b7ac
+ms.openlocfilehash: 1345cfee8eb92b9b4e3cf883f19edddee859a1c3
+ms.sourcegitcommit: c9905e625ba14dc28ad23835f320e49631c51d0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -31,6 +31,12 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
 
 ## <a name="march-2018"></a>Marts 2018
 - **Power BI-rapportserver**
+    - *Version 1.2.6660.39920 (Build 15.0.2.389), udgivet: 28. marts 2018*
+        - Fejlrettelser
+            - Til Power BI-rapporter (PBIX): Programrettelse af Eksport data, der ikke virker i forbindelse med Power BI-visualiseringer
+            - Til Power BI-rapporter (PBIX): Programrettelse af URL-filtre, der ikke virker
+            - Til sideinddelte rapporter (RDL): Programrettelse af billeder, der ikke vises korrekt i IE 11 efter opgraderingen til udgaven af Power BI-rapportserver fra marts
+
     - *Version 1.2.6648.38132 (Build 15.0.2.378), udgivet: 19. marts 2018*
         - Sikkerhedsopdateringer
         - Forbedringer af Hjælp til handicappede

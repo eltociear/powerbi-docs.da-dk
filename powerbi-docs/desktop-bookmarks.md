@@ -1,15 +1,15 @@
 ---
-title: "Brug af bogmærker i Power BI"
-description: "Du kan bruge bogmærker i Power BI Desktop til at gemme visninger og indstillinger i dine rapporter og oprette præsentationer med tekstenheder"
+title: Brug af bogmærker i Power BI
+description: Du kan bruge bogmærker i Power BI Desktop til at gemme visninger og indstillinger i dine rapporter og oprette præsentationer med tekstenheder
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,25 +18,25 @@ ms.workload: powerbi
 ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 706662e9fd7c6bd41015b286a7b7f1025e40a15e
-ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
+ms.openlocfilehash: 1660f129ef5c93cf5aed5a3a5eda3c835e1885c1
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Brug bogmærker til at dele indsigt og oprette historier i Power BI 
-Hvis du bruger **bogmærker** i Power BI, kan du indfange den visning af en rapportside, der er konfigureret i øjeblikket, herunder filtrering af og tilstanden for visuelle elementer, og senere gå tilbage til denne tilstand ved ganske enkelt at vælge det gemte bogmærke. 
+Ved hjælp af **bogmærker** i Power BI kan du indfange den visning af en rapportside, der er konfigureret i øjeblikket, herunder filtrering af og tilstanden for visualiseringer, og senere gå tilbage til denne tilstand ved ganske enkelt at vælge det gemte bogmærke. 
 
 Du kan også oprette en samling af bogmærker, arrangere dem i den ønskede rækkefølge og efterfølgende gennemgå hvert bogmærke i en præsentation for at fremhæve en række indsigter eller den tekstenhed, du vil fortælle med dine visuelle elementer og rapporter. 
 
 ![Bogmærker i Power BI](media/desktop-bookmarks/bookmarks_01.png)
 
-Bogmærker kan bruges til mange ting. Du kan bruge dem til at holde styr på din egen fremskridt, når du opretter rapporter (det er nemt at tilføje, slette og omdøbe bogmærker), og du kan oprette bogmærker, hvis du vil oprette en PowerPoint-lignende præsentation, der gennemgår bogmærker i en bestemt rækkefølge og dermed fortæller en historie med din rapport. Der kan også være andre anvendelsesmuligheder, afhængigt af hvordan du mener, at bogmærker bedst kan bruges.
+Bogmærker kan bruges til mange ting. Du kan bruge dem til at holde styr på dit eget fremskridt, når du opretter rapporter (det er nemt at tilføje, slette og omdøbe bogmærker), og du kan oprette bogmærker, hvis du vil lave en PowerPoint-lignende præsentation, der gennemgår bogmærker i en bestemt rækkefølge og dermed fortæller en historie med din rapport. Der kan også være andre anvendelsesmuligheder, afhængigt af hvordan du mener, at bogmærker bedst kan bruges.
 
 ### <a name="enable-the-bookmarks-preview-versions-prior-to-march-2018"></a>Aktivér eksempelvisning af bogmærker (versioner fra før marts 2018)
 Bogmærker er generelt tilgængelige fra og med versionen fra marts 2018 af Power BI Desktop. 
 
-Det anbefales altid at opgradere til den nyeste version. Hvis din version af Power BI Desktop er fra før marts 2018, kan du prøve den nye funktion til **bogmærker** fra og med versionen af **Power BI Desktop** fra **oktober 2017** samt i **Power BI tjenesten** i forbindelse med rapporter, hvor bogmærker er aktiveret. Du aktiverer eksempelvisningen ved at vælge **Fil > Indstillinger > Indstillinger > Funktioner til eksempelvisning** og derefter markere afkrydsningsfeltet ud for **Bogmærker**. 
+Det anbefales altid at opgradere til den nyeste version. Hvis din version af Power BI Desktop derimod er fra før marts 2018, kan du prøve funktionen til **bogmærker** fra og med versionen af **Power BI Desktop** fra **oktober 2017** samt i **Power BI-tjenesten** i forbindelse med rapporter, hvor bogmærker er aktiveret. Du aktiverer eksempelvisningen ved at vælge **Fil > Indstillinger > Indstillinger > Funktioner til eksempelvisning** og derefter markere afkrydsningsfeltet ud for **Bogmærker**. 
 
 ![Aktivér bogmærker i vinduet Indstillinger](media/desktop-bookmarks/bookmarks_02.png)
 
@@ -63,7 +63,7 @@ Konfigurer en rapportside, som du ønsker, den skal vises i bogmærket. Når din
 
 ![Tilføj et bogmærke](media/desktop-bookmarks/bookmarks_04.png)
 
-**Power BI Desktop** opretter et bogmærke og giver det et standardnavn. Du kan nemt *omdøbe* et bogmærke, *slette* det eller *opdatere* et bogmærke ved at vælge ellipsen ud for navnet på bogmærket og derefter vælge en handling i den menu, der vises.
+**Power BI Desktop** opretter et bogmærke og giver det et standardnavn. Du kan nemt *omdøbe*, *slette* eller *opdatere* et bogmærke ved at vælge ellipsen ud for bogmærkets navn og derefter vælge en handling i den viste menu.
 
 ![Vælg undermenuen for et bogmærke ved hjælp af ellipsen](media/desktop-bookmarks/bookmarks_05.png)
 
@@ -72,7 +72,7 @@ Når du har et bogmærke, kan du få vist det ved ganske enkelt at klikke på bo
 ## <a name="arranging-bookmarks"></a>Arranger bogmærker
 Når du opretter bogmærker, finder du måske ud af, at den rækkefølge, som du opretter dem i, ikke nødvendigvis er den rækkefølge, som de skal vises i. Ikke noget problem. Du kan nemt ændre rækkefølgen af bogmærker.
 
-I ruden **Bogmærker** skal du bare trække og slippe bogmærkerne for at ændre rækkefølgen som vist på følgende billede. Den gule streg mellem bogmærker angiver, hvor det bogmærke, du trækker, placeres.
+I ruden **Bogmærker** skal du blot trække og slippe bogmærkerne for at ændre rækkefølgen som vist på følgende billede. Den gule streg mellem bogmærker angiver, hvor det bogmærke, du trækker, placeres.
 
 ![Skift rækkefølgen for bogmærker ved at trække og slippe](media/desktop-bookmarks/bookmarks_06.png)
 
@@ -84,12 +84,12 @@ Når du har en samling af bogmærker, du vil vise i en bestemt rækkefølge, kan
 I tilstanden **Vis** er der nogle funktioner, du skal lægge mærke til:
 
 1. Navnet på bogmærket vises på bogmærkets titellinje, der vises nederst på lærredet.
-2. Bogmærkets titellinje har pile, som du kan bruge til at flytte til næste eller forrige bogmærke
+2. Bogmærkets titellinje har pile, som du kan bruge til at flytte til næste eller forrige bogmærke.
 3. Du kan afslutte tilstanden **Vis** ved at vælge **Afslut** i ruden **Bogmærker** eller ved at vælge krydset (**X**) i bogmærkets titellinje. 
 
 ![Funktioner på bogmærkers titellinje](media/desktop-bookmarks/bookmarks_07.png)
 
-Når du er i tilstanden **Vis**, kan du lukke ruden **Bogmærker** (ved at klikke på krydset (X) i ruden) for at give mere plads til præsentationen. Og mens du er i tilstanden **Vis**, er alle visuelle elementer interaktive og tilgængelige for tværgående fremhævning, som når du interagerer med dem. 
+Når du er i tilstanden **Vis**, kan du lukke ruden **Bogmærker** (ved at klikke på krydset (X) i ruden) for at give mere plads til præsentationen. Mens du er i tilstanden **Vis**, er alle visualiseringer interaktive og tilgængelige for tværgående fremhævning, ligesom når du interagerer med dem. 
 
 ## <a name="visibility---using-the-selection-pane"></a>Synlighed – med ruden Markering
 Med udgivelsen af bogmærker introduceres den nye rude **Markering** også. Ruden **Markering** indeholder en liste over alle objekter på den aktuelle side, og du kan markere objektet og angive, om et bestemt objekt skal være synligt. 

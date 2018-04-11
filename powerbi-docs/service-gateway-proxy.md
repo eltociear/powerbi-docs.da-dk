@@ -1,31 +1,31 @@
 ---
-title: "Konfigurer proxyindstillinger for datagateway i det lokale miljø"
-description: "Oplysninger om konfiguration af proxyindstillinger for datagateway i det lokale miljø."
+title: Konfiguration af proxyindstillinger for datagatewayen i det lokale miljø
+description: Oplysninger om konfiguration af proxyindstillinger for datagatewayen i det lokale miljø.
 services: powerbi
-documentationcenter: 
-author: davidiseminger
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 11/21/2017
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 27b8d36ed870501170efdb81c40edb6cb4727499
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 130f4dcea4bc168bd71cd6d8c7c623bfca95d259
+ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/08/2018
 ---
-# <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Konfigurer proxyindstillinger for datagateway i det lokale miljø
-Dit arbejdsmiljø kan kræve, at du går gennem en proxy for at få adgang til internettet. Det kan forhindre den lokale datagateway i at oprette forbindelse til tjenesten.
+# <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Konfiguration af proxyindstillinger for datagatewayen i det lokale miljø
+Dit arbejdsmiljø kan kræve, at du går gennem en proxy for at få adgang til internettet. Dette kan forhindre datagatewayen i det lokale miljø i at oprette forbindelse til tjenesten.
 
 ## <a name="does-your-network-use-a-proxy"></a>Bruger netværket en proxy?
 I følgende indlæg på superuser.com beskrives, hvordan du kan forsøge at afgøre, om du har en proxy på netværket.
@@ -70,7 +70,7 @@ Når du konfigurerer proxyindstillingerne til at bruge standardlegitimationsoply
 > 
 
 ### <a name="change-the-on-premises-data-gateway-service-account"></a>Skift kontoen til datagatewaytjenesten i det lokale miljø
-1. Skift Windows-tjenestekontoen for **datagatewaytjenesten i det lokale miljø**.
+1. Skift kontoen til Windows-tjenesten for **datagatewaytjenesten i det lokale miljø**.
    
     Standardkontoen for denne tjeneste er *NT SERVICE\PBIEgwService*. Du skal ændre denne til en domænebrugerkonto i Active Directory-domænet. Eller du skal bruge en administreret tjenestekonto for at undgå at ændre adgangskoden.
    
@@ -82,7 +82,7 @@ Når du konfigurerer proxyindstillingerne til at bruge standardlegitimationsoply
         net stop PBIEgwService
    
         net start PBIEgwService
-3. Start **datagatewaykonfiguratoren i det lokale miljø**. Du kan vælge knappen Start i Windows og søge efter *lokal datagateway*.
+3. Start **konfiguratoren til datagatewayen i det lokale miljø**. Du kan vælge Windows-startknappen og søge efter *datagateway i det lokale miljø*.
 4. Log på Power BI.
 5. Gendan gatewayen ved hjælp af din genoprettelsesnøgle.
    

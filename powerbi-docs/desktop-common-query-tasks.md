@@ -1,15 +1,15 @@
 ---
-title: "Almindelige forespørgselsopgaver i Power BI Desktop"
-description: "Almindelige forespørgselsopgaver i Power BI Desktop"
+title: Almindelige forespørgselsopgaver i Power BI Desktop
+description: Almindelige forespørgselsopgaver i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 4d0a8b9a1f855c373b43c5c78ec41b6bc34d1d18
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 37c5e55d426d308fe8ea7de5c6604a9c66f81896
+ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Almindelige forespørgselsopgaver i Power BI Desktop
 Når du arbejder i vinduet **Forespørgselseditor** i Power BI Desktop, er der nogle få opgaver, der udføres jævnligt. Dette dokument beskriver disse opgaver og indeholder links til flere oplysninger. 
@@ -45,7 +45,7 @@ Den første dataforbindelse er en Excel-projektmappe. Den anden er en webressour
 De trin, der er nødvendige for at oprette forbindelse til begge disse datakilder, er, hvor de almindelige forespørgselsopgaver begynder.
 
 ## <a name="connect-to-data"></a>Opret forbindelse til data
-Hvis du vil oprette forbindelse til data i Power BI Desktop, skal du vælge knappen **Hent data** under fanen **Hjem** på båndet. Der vises en menu med de mest almindelige datakilder i Power BI Desktop. Vælg knappen **Mere...**  nederst i menuen for at få vist en komplet liste over de datakilder, der kan oprettes forbindelse til i Power BI Desktop. Du kan finde flere oplysninger i [Datakilder i Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471643).
+Hvis du vil oprette forbindelse til data i Power BI Desktop, skal du vælge knappen **Hent data** under fanen **Hjem** på båndet. Der vises en menu med de mest almindelige datakilder i Power BI Desktop. Vælg knappen **Mere...**  nederst i menuen for at få vist en komplet liste over de datakilder, der kan oprettes forbindelse til i Power BI Desktop. Du kan finde flere oplysninger i [Datakilder i Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-data-sources).
 
 ![](media/desktop-common-query-tasks/commonquerytasks_getdata.png)
 
@@ -67,22 +67,22 @@ Vælg **OK**, og præcis som før undersøges mappen i Power BI Desktop, og de d
 
 Det samme gælder for andre dataforbindelser. Hvis godkendelse er nødvendig for at oprette en dataforbindelse, bliver du bedt om at angive de relevante legitimationsoplysninger i Power BI Desktop.
 
-Hvis du vil have en trinvis vejledning til, hvordan du opretter forbindelse til data i Power BI Desktop, skal du se [Opret forbindelse til data i Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471635).
+Hvis du vil have en trinvis vejledning til, hvordan du opretter forbindelse til data i Power BI Desktop, skal du se [Opret forbindelse til data i Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-connect-to-data).
 
 ## <a name="shape-and-combine-data"></a>Form og kombiner data
-Du kan nemt forme og kombinere data ved hjælp af Forespørgselseditor. Dette afsnit indeholder nogle eksempler på, hvordan du kan forme data. Hvis du vil have en mere komplet demonstration af, hvordan du former og kombinere data, skal du se **[Form og kombiner data med Power BI Desktop](https://powerbi.uservoice.com/knowledgebase/articles/471644)**.
+Du kan nemt forme og kombinere data ved hjælp af Forespørgselseditor. Dette afsnit indeholder nogle eksempler på, hvordan du kan forme data. Hvis du vil have en mere komplet demonstration af, hvordan du former og kombinere data, skal du se **[Form og kombiner data med Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-shape-and-combine-data)**.
 
-I det forrige afsnit tilsluttede vi to datasæt – en Excel-projektmappe og en webressource. Når dataene indlæses i Forespørgselseditor, får vi vist følgende, hvor forespørgslen fra websiden er valgt (blandt de tilgængelige forespørgsler, der er angivet i ruden **Forespørgsler** i venstre side af vinduet Forespørgselseditor).
+I det forrige afsnit tilsluttede vi to datasæt – en Excel-projektmappe og en webressource. Når dataene indlæses i Forespørgselseditor, får vi vist følgende, hvor forespørgslen fra websiden er valgt (taget fra de tilgængelige forespørgsler, der er angivet i ruden **Forespørgsler** i venstre side af vinduet Forespørgselseditor).
 
 ![](media/desktop-common-query-tasks/commonquerytasks_querypaneloaded.png)
 
 Når du former data, konverterer du en datakilde til den form og det format, der opfylder dine behov. I dette tilfælde har vi ikke brug for den første kolonne med navnet *Header*, så den fjerner vi.
 
-Du kan finde mange af kommandoerne på båndet og i en kontekstafhængig genvejsmenu i **Forespørgselseditor**. Når jeg f.eks. højreklikker på kolonnen *Header*, kan jeg bruge den menu, der vises, til at fjerne kolonnen. Jeg kan også markere kolonnen og derefter vælge knappen **Fjern kolonner** på båndet.
+Du kan finde mange af kommandoerne på båndet og i en kontekstafhængig genvejsmenu i **Forespørgselseditor**. Når du f.eks. højreklikker på kolonnen *Header*, kan du bruge den viste menu til at fjerne kolonnen. Du kan også markere kolonnen og derefter vælge knappen **Fjern kolonner** på båndet.
 
 ![](media/desktop-common-query-tasks/commonquerytasks_removecolumns.png)
 
-Der er mange andre måder, jeg kunne forme dataene i denne forespørgsel på. Jeg kunne fjerne et vilkårligt antal rækker fra toppen eller fra bunden. Jeg kunne indsætte kolonner, opdele kolonner, erstatter værdier og udføre andre opgaver, der former dataene, for at få Forespørgselseditor til at vise dataene, som jeg vil have det.
+Der er mange andre måder, du kan forme dataene i denne forespørgsel på. Du kan fjerne et vilkårligt antal rækker fra toppen eller fra bunden. Du kan indsætte kolonner, opdele kolonner, erstatte værdier og udføre andre opgaver, der former dataene, for at få Forespørgselseditor til at vise dataene, som du vil have det.
 
 ## <a name="group-rows"></a>Gruppér rækker
 Du kan gruppere værdierne i flere rækker i én enkelt værdi i Forespørgselseditor. Det kan være nyttigt, når du opsummerer det antal produkter, der tilbydes, det samlede salg eller antallet af studerende.
@@ -95,10 +95,12 @@ Lad os at finde ud af, hvor mange instanser hver stat har. Dette omfatter skoled
 
 Vinduet **Gruppér efter...** vises. Når rækker grupperes i Forespørgselseditor, oprettes der en ny kolonne, som resultaterne fra **Gruppér efter** placeres i. Du kan justere handlingen **Gruppér efter** på følgende måder:
 
-1. *Gruppér efter* – dette er den kolonne, der skal grupperes. Den markerede kolonne vælges i Forespørgselseditor, men du kan ændre det til en hvilken som helst kolonne i tabellen i dette vindue.
+1. *Gruppér efter* – dette er den kolonne, der skal grupperes. Den markerede kolonne vælges i Forespørgselseditor, men du kan ændre den til en hvilken som helst kolonne i tabellen i dette vindue.
 2. *Nyt kolonnenavn* – der foreslås et navn til den nye kolonne i Forespørgselseditor, der er baseret på den handling, som anvendes på den kolonne, der grupperes. Men du kan også selv vælge et navn til den nye kolonne.
 3. *Handling* – her angiver du den handling, som anvendes i Forespørgselseditor.
-4. *Tegnene +/-* – du kan udføre aggregeringshandlinger (**Gruppér efter**) på flere kolonner og udføre flere aggregeringer samtidigt direkte fra vinduet **Gruppér efter**. Dette opretter en ny kolonne i Forespørgselseditor (ud fra dine valg i dette vindue), som er baseret på flere kolonner. Vælg knappen **+** for at indsætte flere kolonner eller tilføje flere aggregeringer til handlingen **Gruppér efter**. Du kan fjerne en kolonne eller aggregering ved at vælge ikonet -. Så prøv det, og se, hvordan det kommer til at se ud. 
+4. *Tilføj gruppering* og *Tilføj aggregering* – disse indstillinger vises, efter du har valgt indstillingen **Avanceret**. Du kan udføre grupperingshandlinger (handlinger af typen **Gruppér efter**) på flere kolonner og udføre flere aggregeringer samtidigt direkte fra vinduet **Gruppér efter**. Der oprettes en ny kolonne i Forespørgselseditor (ud fra dine valg i dette vindue), som er baseret på flere kolonner. 
+
+Vælg knappen **Tilføj gruppering** eller **Tilføj aggregering** for at føje flere grupperinger eller aggregeringer til en handling af typen **Gruppér efter**. Du kan fjerne en gruppering eller aggregering ved at vælge ikonet **...** og vælge **Slet**. Så prøv det, og se, hvordan det kommer til at se ud.
    
    ![](media/desktop-common-query-tasks/commonquerytasks_groupbynumbered.png)
 
@@ -126,7 +128,7 @@ Når du vælger **OK**, vises tabellen i Forespørgselseditor ifølge de indstil
 ## <a name="create-custom-columns"></a>Opret brugerdefinerede kolonner
 Du kan oprette brugerdefinerede formler i Forespørgselseditor, som køres på flere kolonner i tabellen. Resultaterne af disse formler vises derefter i en ny, brugerdefineret kolonne. Forespørgselseditor gør det nemt at oprette brugerdefinerede kolonner.
 
-Vælg **Tilføj brugerdefineret kolonne** under fanen **Tilføj kolonne** på båndet i Forespørgselseditor.
+Vælg **Brugerdefineret kolonne** under fanen **Tilføj kolonne** på båndet i Forespørgselseditor.
 
 ![](media/desktop-common-query-tasks/commonquerytasks_customcolumn.png)
 
@@ -147,7 +149,7 @@ Alle anvendte trin for hver forespørgsel bevares som tekst i Forespørgselsedit
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitorbutton.png)
 
-Her kan du se, hvordan **Avanceret editor** ser ud med de forespørgselstrin, der er tilknyttet den viste forespørgsel **USA\_StudentEnrollment**. Disse trin oprettes på det formelsprog i Power-forespørgsel, som ofte kaldes **M**. Du kan finde flere oplysninger i [Få mere at vide om formler i Power-forespørgsel](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f?ui=en-US&rs=en-US&ad=US). Hvis du vil se selve sprogspecifikationen, skal du downloade [Microsoft Power Query for Excel Formula Language Specification](http://go.microsoft.com/fwlink/?linkid=320633).
+Her kan du se, hvordan **Avanceret editor** ser ud med de forespørgselstrin, der er tilknyttet den viste forespørgsel **USA\_StudentEnrollment**. Disse trin oprettes på det formelsprog i Power-forespørgsel, som ofte kaldes **M**. Du kan finde flere oplysninger i [Få mere at vide om formler i Power-forespørgsel](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f?ui=en-US&rs=en-US&ad=US). Hvis du vil se selve sprogspecifikationen, skal du downloade [sprogspecifikationen for Microsoft Power-forespørgsel til Excel-formler](http://go.microsoft.com/fwlink/?linkid=320633).
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
 

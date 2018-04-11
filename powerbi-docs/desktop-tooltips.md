@@ -1,15 +1,15 @@
 ---
-title: "Brug af værktøjstipsider i rapporter i Power BI"
-description: "Med værktøjstipsider i Power BI Desktop kan du oprette omfattende værktøjstip for visualiseringer, som vises, når du holder over dem, i dine rapporter"
+title: Brug af værktøjstipsider i rapporter i Power BI
+description: Med værktøjstipsider i Power BI Desktop kan du oprette omfattende værktøjstip for visualiseringer, som vises, når du holder over dem, i dine rapporter
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,18 +18,18 @@ ms.workload: powerbi
 ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2905dbc51e684ec39ac36a76c7024db0fe15cc18
-ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
+ms.openlocfilehash: 87733126c4772b88c4e58cf60f9640668faf9cc7
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop-preview"></a>Opret værktøjstip baseret på rapportsider i Power BI Desktop (prøveversion)
 Du kan oprette visuelt omfattende **værktøjstip til rapporter**, som vises, når du holder over visualiseringer, på baggrund af rapportsider, du opretter i **Power BI Desktop**. Ved at oprette en rapportside, der fungerer som et værktøjstip, kan dine brugerdefinerede værktøjstip indeholde visualiseringer, billeder og mange andre samlinger af elementer, du opretter på en rapportside. 
 
 ![Værktøjstip til rapporter i Power BI Desktop](media/desktop-tooltips/desktop-tooltips_00a.png)
 
-Du kan oprette så mange værktøjstipsider, du vil. Hver værktøjstipside kan tilknyttes et eller flere felter i rapport, så når du holder over en visualisering, som indeholder det valgte felt, vises det værktøjstip, du oprettede på din værktøjstipside, filtreret efter det datapunkt, som musen holder over. 
+Du kan oprette så mange værktøjstipsider, du vil. Hver værktøjstipside kan tilknyttes et eller flere felter i rapporten, så når du holder over en visualisering, som indeholder det valgte felt, vises det værktøjstip, du oprettede på din værktøjstipside, filtreret efter det datapunkt, som musen holder over. 
 
 Du kan gøre mange forskellige interessante ting med værktøjstip i rapporter. Herunder kan du se, hvordan du opretter værktøjstip, og hvad du skal gøre for at konfigurere dem.
 
@@ -91,7 +91,7 @@ Hvis du vil angive et værktøjstip manuelt, skal du vælge den visualisering, d
 
 ![Værktøjstipkort for en individuel visualisering](media/desktop-tooltips/desktop-tooltips_09.png)
 
-På rullelisten **Side** skal du vælge den værktøjstipside, du vil bruge til den valgte visualisering. Bemærk, at det kun er rapportsider, der er angivet som sider af typen **Værktøjstip**, der vises i dialogboksen.
+På rullelisten **Side** skal du derefter vælge den værktøjstipside, du vil bruge til den valgte visualisering. Bemærk, at det kun er rapportsider, der er angivet som sider af typen **Værktøjstip**, der vises i dialogboksen.
 
 ![Vælg en værktøjstipside til manuel angivelse af værktøjstip](media/desktop-tooltips/desktop-tooltips_10.png)
 

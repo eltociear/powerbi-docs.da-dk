@@ -1,15 +1,15 @@
 ---
 title: Introduktion til Power BI-gateways
-description: "Lær det grundlæggende om datagateways til Power BI."
+description: Lær det grundlæggende om datagateways til Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: e56af5ae1c59afc7d7aef01450bb1c778eb70b14
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: bf01bb7764db09d6afe24e520f2d185c191ef56c
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="getting-started-with-power-bi-gateways"></a>Introduktion til Power BI-gateways
 Velkommen til vejledningen **Introduktion til Power BI-gateways**. Denne korte gennemgang gør dig bekendt med, hvad en gateway gør, hvordan den fungerer, og hvordan du får din egen gateway installeret, konfigureret og op at køre.  
@@ -84,9 +84,9 @@ Der er et par ting at være opmærksom på i forbindelse med denne beslutning:
 
 * Begge gateways kræver 64-bit Windows-operativsystemer.
 * Gateways kan ikke installeres på en domænecontroller.
-* Du kan installere op til to datagateways i det lokale miljø på den samme computer, en i hver tilstand (personlig og standard). 
+* Du kan installere op til to datagateways i det lokale miljø på den samme computer; en i hver tilstand (personlig og standard). 
 * Du kan ikke have mere end én gateway, der kører i den samme tilstand på samme computer.
-* Du kan installere flere datagateways i det lokale miljø på forskellige computere og administrere dem alle fra den samme grænseflade i Power BI til administration af gateways (undtagen personlige, se følgende punkttegn).
+* Du kan installere flere datagateways i det lokale miljø på forskellige computere og administrere dem alle fra den samme grænseflade i Power BI til administration af gateways (undtagen personlig; se følgende punktopstilling).
 * Du kan kun have én gateway i personlig tilstand, der kører for hver bruger af Power BI. Hvis du installerer endnu en gateway i personlig tilstand for den samme bruger, selv på en anden computer, erstatter den nyeste installation den tidligere eksisterende installation.
 
 Når vi vælger **Næste**, starter installationen af gatewayen. Du skal angive, hvor den vil blive installeret, og standardplaceringen er normalt bedst.
@@ -160,7 +160,7 @@ Når du gør det, vises panelet **Indstillinger for datakilde** i den højre rud
 Vi har nu en gateway installeret, og du er klar til at tilføje datakilder. Fantastisk! Se ressourcerne i følgende afsnit for at få oplysninger om datakilder, flere oplysninger om brug af gateways og andre nyttige oplysninger.
 
 ## <a name="next-steps"></a>Næste trin
-[Brug datagatewayen i det lokale miljø](service-gateway-onprem.md)  
+[Brug af datagatewayen i det lokale miljø](service-gateway-onprem.md)  
 [Datagateway i det lokale miljø – detaljeret](service-gateway-onprem-indepth.md)  
 [Datagateway i det lokale miljø (personlig tilstand)](service-gateway-personal-mode.md)
 [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
