@@ -1,15 +1,15 @@
 ---
-title: "Ofte stillede spørgsmål vedrørende datagateway i lokalt miljø"
-description: "Her følger ofte stillede spørgsmål vedrørende datagateway i lokalt miljø. Her samler vi ofte stillede spørgsmål vedrørende gateway'en på ét sted."
+title: Ofte stillede spørgsmål vedrørende datagateway i lokalt miljø
+description: Dette er ofte stillede spørgsmål vedrørende datagatewayen i det lokale miljø. Her samler vi ofte stillede spørgsmål vedrørende gateway'en på ét sted.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: d06a83584bb1b270eb10f6c7098358e718f3492f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 93771e4f6e7969ac0b26aaa87a240c2261150776
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="on-premises-data-gateway-faq"></a>Ofte stillede spørgsmål vedrørende datagateway i lokalt miljø
 <!-- Shared FAQ shared Include -->
@@ -33,7 +33,7 @@ ms.lasthandoff: 02/24/2018
 **Svar:** Nej. Dette understøttes ikke på nuværende tidspunkt.
 
 **Spørgsmål:** Kan jeg bruge gateway'en til at oprette forbindelse til en flerdimensionel (OLAP)-forekomst.  
-**Svar:** Ja! Datagateway'en i lokalt miljø understøtter dynamiske forbindelser til såvel Analysis Services-tabelmodeller som flerdimensionelle modeller.
+**Svar:** Ja! Datagatewayen i det lokale miljø understøtter direkte forbindelser til såvel Analysis Services-tabelmodeller som flerdimensionelle modeller.
 
 **Spørgsmål:** Hvad sker der, hvis jeg installerer gateway'en på en computer med et andet domæne end min lokale server, der bruger Windows-godkendelse?  
 **Svar:** Vi garanterer ikke noget i dette tilfælde. Det afhænger alt sammen af tillidsforholdet mellem de to domæner. Hvis de to forskellige domæner er i en pålidelig domænemodel, er gateway'en muligvis i stand til at oprette forbindelse til Analysis Services-serveren, og det effektive brugernavn kan løses. Hvis det ikke er tilfældet, kan der opstå en loginfejl.
@@ -61,7 +61,7 @@ ms.lasthandoff: 02/24/2018
 **Spørgsmål:** Behøver jeg at opgradere den personlige gateway?
 **Svar:** Nej, du kan blive ved med at bruge den personlige gateway til Power BI.
 
-**Spørgsmål:** Hvor ofte bliver felter i et dashboard i Power BI opdateret, når forbindelsen er oprettet via den lokale datagateway?  
+**Spørgsmål:** Hvor ofte bliver felter i et dashboard i Power BI opdateret, når forbindelsen er oprettet via datagatewayen i det lokale miljø?  
 **Svar:** Hvert 10. minut. DirectQuery-forbindelser er bare sådan. Det betyder ikke, at et felt udsteder en forespørgsel til din lokale server og viser nye data hvert 10. minut.
 
 **Spørgsmål:** Kan jeg uploade Excel-projektmapper med Power Pivot-datamodeller, opretter forbindelse til datakilder i det lokale miljø? Har jeg brug for en gateway til dette scenarie?  
@@ -78,7 +78,7 @@ ms.lasthandoff: 02/24/2018
 
 ## <a name="next-steps"></a>Næste trin
 [Datagateway i lokalt miljø](service-gateway-onprem.md)  
-[Datagateway i lokalt miljø, detaljeret](service-gateway-onprem-indepth.md)  
-[Fejlfinding af datagateway i lokalt miljø](service-gateway-onprem-tshoot.md)  
+[Datagateway i det lokale miljø – detaljeret](service-gateway-onprem-indepth.md)  
+[Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

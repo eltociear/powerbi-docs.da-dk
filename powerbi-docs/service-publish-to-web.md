@@ -1,28 +1,28 @@
 ---
-title: "Publicer på internettet fra Power BI"
-description: "Med Power BI Publicer på internettet kan du nemt integrere interaktive Power BI-visualiseringer online, f.eks. i blogindlæg, på websteder, via mails eller sociale medier på enhver enhed."
+title: Publicer på internettet fra Power BI
+description: Med Power BI Publicer på internettet kan du nemt integrere interaktive Power BI-visualiseringer online, f.eks. i blogindlæg, på websteder, via mails eller sociale medier på enhver enhed.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 11/27/2017
+ms.date: 03/28/2018
 ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: 089cd84f493343822293cb6e74330d26e2a8bcd6
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 31e40efee8c4d67ec524212996ac6d7a8caf1852
+ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -133,13 +133,16 @@ Brugerdefinerede visuelle elementer, der understøttes i **Publicer på internet
 
 ## <a name="limitations"></a>Begrænsninger
 
-**Publicer på internettet** understøttes for langt de fleste datakilder og rapporter i Power BI-tjenesten, men følgende understøttes ikke i øjeblikket eller er ikke tilgængelige med Publicer på internettet:
+**Publicer på internettet** understøttes for langt de fleste datakilder og rapporter i Power BI-tjenesten, men følgende **understøttes i øjeblikket ikke eller er ikke tilgængelige** med Publicer på internettet:
 
 1. Rapporter med sikkerhed på rækkeniveau.
-2. Rapporter, der bruger en vilkårlig Live Connection-datakilde, herunder Analysis Services Tabular, der hostes af Analysis Service Multidimensional, Azure Analysis Services og Power BI Service i det lokale miljø.
+2. Rapporter, der bruger en vilkårlig Live Connection-datakilde, herunder Analysis Services Tabular, der hostes i det lokale miljø, Analysis Service Multidimensional og Azure Analysis Services.
 3. Rapporter, der er delt med dig direkte eller via en organisationsindholdspakke.
 4. Rapporter i en gruppe, hvor du ikke er redigeringsmedlem.
 5. Visuelle "R"-elementer understøttes ikke i øjeblikket i Publicer på internettet-rapporter.
+6. Eksport af data fra visualiseringer i en rapport, som er publiceret på internettet
+7. ArcGIS Maps til Power BI-visualiseringer
+8. [Fortrolige eller beskyttede oplysninger](#publish-to-web-from-power-bi)
 
 ## <a name="tenant-setting"></a>Lejerindstillinger
 
@@ -177,7 +180,7 @@ Du skal være Microsoft Power BI-bruger for at anvende **Publicer på internette
 
 ## <a name="how-it-works-technical-details"></a>Sådan fungerer det (tekniske detaljer)
 
-Når du opretter en integreringskode ved hjælp af **Publicer på internettet**, gøres rapporten synlig for brugere på internettet. Den er offentligt tilgængelig, så du kan forvente, at brugerne nemt kan dele rapporten via sociale medier på et senere tidspunkt. Når brugere får vist rapporten, enten ved at åbne den direkte offentlige URL-adresse eller se den integreret på en webside eller blog, cachelagrer Power BI rapportdefinitionen og resultaterne af de forespørgsler, der kræves for at få vist rapporten. Denne metode sikrer, at rapporten kan ses af tusindvis af samtidige brugere uden nogen indflydelse på ydeevnen.  
+Når du opretter en integreringskode ved hjælp af **Publicer på internettet**, gøres rapporten synlig for brugere på internettet. Den er offentligt tilgængelig, så du kan forvente, at brugerne nemt kan dele rapporten via sociale medier på et senere tidspunkt. Når brugere får vist rapporten, enten ved at åbne den direkte offentlige URL-adresse eller se den integreret på en webside eller blog, cachelagrer Power BI rapportdefinitionen og resultaterne af de forespørgsler, der kræves for at få vist rapporten. Denne metode sikrer, at rapporten kan ses af tusindvis af samtidige brugere uden nogen indflydelse på ydeevnen.
 
 Cachelageret er langvarigt, så hvis du opdaterer rapportdefinitionen (f.eks. hvis du ændrer dens visningstilstand) eller opdaterer rapportdataene, kan det tage cirka en time, før ændringerne afspejles i den version af rapporten, der ses af brugerne. Det anbefales derfor, at du planlægger dit arbejde på forhånd og først opretter integreringskoden for **Publicer på internettet**, når du er tilfreds med indstillingerne.
 

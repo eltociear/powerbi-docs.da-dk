@@ -18,14 +18,14 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 9161966897811820935c72ac1657ceca58da403a
-ms.sourcegitcommit: 3841bcdb5e664568defe3d6a6e6b8cab3cd7087f
+ms.openlocfilehash: 8f5b80497850b8e61bd7df97c3c88777265d7a6b
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="use-report-themes-in-power-bi-desktop-preview"></a>Brug rapporttemaer i Power BI Desktop (prøveversion)
-Med **rapporttemaer** kan du anvende et farvetema i hele rapporten, f.eks virksomhedens farver, sæsonmæssige farver eller andre farvetemaer, som du gerne vil anvende for en rapport. Når du anvender et **rapporttema**, bruges farver fra det valgte tema for alle visuelle elementer i rapporten (med nogle få undtagelser, der er beskrevet senere i denne artikel).
+Med **rapporttemaer** kan du anvende et farvetema i hele rapporten, f.eks virksomhedens farver, sæsonmæssige farver eller andre farvetemaer, som du gerne vil anvende. Når du anvender et **rapporttema**, bruges farver fra det valgte tema for alle visuelle elementer i rapporten (med nogle få undtagelser, der er beskrevet senere i denne artikel).
 
 ![](media/desktop-report-themes/report-themes_1.png)
 
@@ -62,7 +62,7 @@ JSON-filen har følgende påkrævede linjer:
 
 * **name** – dette er temanavnet, som er det eneste påkrævede felt.
 * **dataColors** – en liste over hexkode-farvekoder til brug sammen med data i visuelle elementer i Power BI Desktop. Listen kan indeholde et vilkårligt antal farver.
-* **background**, **foreground** og **tableAccent** – disse værdier er de farver, der skal bruges i de visuelle elementer i **tabellen** og i **matrixen**. Hvordan farverne bruges, afhænger af den specifikke tabel- eller matrixtypografi, der anvendes. De visuelle elementer i en **tabel** og **matrix** anvender disse typografier som standard.
+* **background**, **foreground** og **tableAccent** – disse værdier er de farver, der skal bruges i visualiseringer i **tabellen** og i **matrixen**. Hvordan farverne bruges, afhænger af den specifikke tabel- eller matrixtypografi, der anvendes. De visuelle elementer i en **tabel** og **matrix** anvender disse typografier som standard.
 
 Hvis du vil anvende en typografi for et visuelt element i en **tabel** eller **matrix**, skal du markere det visuelle element og vælge sektionen **Format** i ruden **Visualization** (Visuel effekt) og derefter udvide **matrixtypografien** og vælge en typografi på rullelisten **Style** (Typografi).
 
@@ -78,7 +78,7 @@ Hvis du vil oprette din egen JSON-fil, kan du nemt klippe og sætte teksten fra 
         "tableAccent": "#568410"
     }
 
-Herefter kan du angive din egen hexkode for de valgte farver.
+Herefter kan du angive din egen hexfarvekode for de valgte farver.
 
 Fra og med udgivelsen af **Power BI Desktop** i september 2017 kan JSON-filen være meget mere kompleks. I JSON-filen angiver du kun den formatering, der skal påvirkes, og alt andet, der *ikke* er angivet i JSON-filen, vender blot tilbage til Power BI-standardindstillingerne.
 
@@ -91,7 +91,7 @@ Du kan finde oplysninger om formatet af den detaljerede JSON-fil i afsnittet om 
 ## <a name="how-report-theme-colors-stick-to-your-reports"></a>Sådan fastgøres rapporttemafarver til dine rapporter
 Når du publicerer rapporten til **Power BI-tjenesten**, bliver rapporttemafarverne ved med at være de samme.
 
-Desuden vises rapporttemaet i sektionen **Data colors** (Datafarver) i panelet **Format**. Når vi f.eks. har benyttet en masse grønne og brune farver fra **Skt. Patricks dag-temaet**, kan vi se følgende, når vi markerer et visuelt element og går til **Format > Data colors (Datafarver)**.
+Desuden vises rapporttemaet i sektionen **Data colors** (Datafarver) i panelet **Format**. Når vi f.eks. har benyttet en masse grønne og brune farver fra **Skt. Patricks dag-temaet**, kan vi se følgende, når vi markerer en visualisering og går til **Format > Datafarver**.
 
 ![](media/desktop-report-themes/report-themes_8.png)
 
@@ -100,7 +100,7 @@ Se alle de grønne farver? Det skyldes, at disse farver var en del af det **rapp
 ### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Situationer, hvor rapporttemafarver ikke bliver i rapporterne
 Hvis du anvender et brugerdefineret farvesæt (eller en enkelt farve) for et bestemt datapunkt i et visuelt element, tilsidesætter brugen af et rapporttema *ikke* den brugerdefinerede farve for datapunktet.
 
-Hvis du har angiver farven for et datapunkt manuelt ved hjælp af afsnittet Theme colors (Temafarver) i farvepaletten, vil farven/farverne *ikke* blive opdateret, når du anvender et nyt rapporttema. Hvis du vil have standardfarverne tilbage (så de ikke opdateres, når du anvender et nyt rapporttema), kan du vælge **Revert to default** (Vend tilbage til standard) i paletten med **temafarver**.
+Hvis du derudover har angivet farven for et datapunkt manuelt ved hjælp af afsnittet Temafarver i farvepaletten, vil farven (eller farverne) *ikke* blive opdateret, når du anvender et nyt rapporttema. Hvis du vil have standardfarverne tilbage (så de ikke opdateres, når du anvender et nyt rapporttema), kan du vælge **Revert to default** (Vend tilbage til standard) i paletten med **temafarver**.
 
 ![](media/desktop-report-themes/report-themes_9.png)
 

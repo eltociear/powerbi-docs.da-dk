@@ -2,27 +2,27 @@
 title: Power BI-administrationsportal
 description: Administrationsportalen giver adgang til lejeradministration af Power BI i virksomheden. Den indeholder elementer som f.eks. forbrugsdata, adgang til Office 365 Administration og indstillinger.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/02/2018
-ms.author: maghan
+ms.date: 04/02/2018
+ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 1ce2bc2746773c344251b89173b5825940eb0174
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: f60822dced9cea4aab47956cb3e9dea40ef20a55
+ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administrationsportal
 
@@ -163,7 +163,7 @@ Brugere får vist andre indstillinger i brugergrænsefladen, baseret på hvad in
 |**Integrer koder** i administrationsportalen|Status afspejler et af følgende:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret|Status vises som **Deaktiveret**|Status afspejler et af følgende:<br>* Aktiv<br>* Ikke understøttet<br>* Blokeret<br><br>Hvis en bruger ikke er godkendt baseret på lejeren indstilling, vises status som **krænket**.|
 |Eksisterende publicerede rapporter|Alle aktiveret|Alle deaktiveret|Rapporter fortsætter med at gengive for alle.|
 
-### <a name="export-data"></a>Eksport af data
+### <a name="export-data"></a>Eksportér data
 
 Brugere i virksomheden kan eksportere data fra et felt eller visualisering. [Få mere at vide](power-bi-visualization-export-data.md)
 
@@ -326,8 +326,8 @@ Vigtigt! Du kan ikke fortryde en sletning. Når visualiseringen er slettet, vil 
  
 ### <a name="how-to-update-a-visual"></a>Sådan opdaterer du en visualisering
 
-Hvis du vil opdatere en visualisering i lageret, fordi der er en ny version af visualiseringen (f.eks. fejlrettelser, ny funktionalitet osv.), skal du uploade den nye fil (sørg for, at visualiserings-id'et er uændret) som en ny post på listen. Husk at angive de korrekte oplysninger i titlen og beskrivelsen (f.eks. "Min visualisering v2.0"). Næste gang brugerne tilgår virksomhedens lager fra Power BI Desktop, kan de importere den nye version, og de bliver spurgt, om de vil erstatte den aktuelle version, de har i rapporten.
- 
+Hvis du vil opdatere en visualisering, fordi der er en ny version af visualiseringen (f.eks. fejlrettelser, ny funktionalitet etc.), skal du vælge ikonet **Opdater** og uploade den nye fil. Sørg for, at id'et for visualiseringen ikke ændres. Den nye fil erstatter den forrige fil for alle rapporter i hele organisationen. Hvis der er risiko for, at den nye version af visualiseringen vil bryde brugen eller datastrukturen af den forrige version af visualiseringen, skal du ikke erstatte den forrige version. Du skal i stedet oprette en ny post for den nye version af visualiseringen. Føj f.eks. et nyt versionsnummer (version X.X) til titlen af den nye angivne visualisering. På den måde bliver det tydeligt, at det er den samme visualisering blot med et opdateret versionsnummer, så funktionaliteten i eksisterende rapporter ikke brydes. Sørg igen for, at id'et for visualiseringen ikke ændres. Næste gang brugerne derefter tilgår virksomhedens lager fra Power BI Desktop, kan de importere den nye version, og de bliver spurgt, om de vil erstatte den aktuelle version, de har i rapporten.
+
 ## <a name="next-steps"></a>Næste trin
 
 [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md)  

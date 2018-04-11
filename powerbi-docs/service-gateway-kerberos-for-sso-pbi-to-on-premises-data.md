@@ -1,15 +1,15 @@
 ---
-title: "Brug Kerberos på gatewayen i det lokale miljø til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø"
-description: "Konfigurer din gateway med Kerberos for at aktivere SSO fra Power BI til datakilder i det lokale miljø"
+title: Brug Kerberos på gatewayen i det lokale miljø til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø
+description: Konfigurer din gateway med Kerberos for at aktivere SSO fra Power BI til datakilder i det lokale miljø
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,14 +18,14 @@ ms.workload: powerbi
 ms.date: 03/09/2018
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 834800b26e8dd3738f274a73aa4ff9b36402a3d9
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: f60709e45e844ff7ab1a9c6bf3cb669c567dfcc8
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="use-kerberos-for-sso-single-sign-on-from-power-bi-to-on-premises-data-sources"></a>Brug Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø
-Du kan få problemfri forbindelse med enkeltlogon, så Power BI-rapporter og -dashboards kan opdatere fra data i det lokale miljø, ved at konfigurere din datagateway i det lokale miljø med Kerberos. Datagatewayen i det lokale miljø gør det muligt at foretage enkeltlogon (SSO) ved hjælp af DirectQuery, som den bruger til at oprette forbindelse til datakilder i det lokale miljø.
+Du kan få problemfri forbindelse med enkeltlogon, så Power BI-rapporter og -dashboards kan opdateres fra data i det lokale miljø, ved at konfigurere din datagateway i det lokale miljø med Kerberos. Datagatewayen i det lokale miljø gør det muligt at foretage enkeltlogon (SSO) ved hjælp af DirectQuery, som den bruger til at oprette forbindelse til datakilder i det lokale miljø.
 
 Følgende datakilder understøttes i øjeblikket – SQL Server, SAP HANA og Teradata – alle baseret på [Kerberos-begrænset delegering](https://technet.microsoft.com/library/jj553400.aspx).
 
@@ -94,7 +94,7 @@ På grund af den utilstrækkelige Kerberos-konfiguration kunne gatewayen ikke re
 Der skal være konfigureret flere elementer, hvis Kerberos-begrænset delegering skal fungere korrekt, herunder *tjenestens hovednavn* (SPN) og delegeringsindstillinger i tjenestekonti.
 
 ### <a name="prerequisite-1-install--configure-the-on-premises-data-gateway"></a>Forudsætning 1: Installér og konfigurer datagatewayen i det lokale miljø
-Denne version af datagatewayen i det lokale miljø understøtter en lokal opgradering samt indstillingsovertagelse af eksisterende gateways.
+Denne version af datagatewayen i det lokale miljø understøtter en direkte opgradering samt indstillingsovertagelse af eksisterende gateways.
 
 ### <a name="prerequisite-2-run-the-gateway-windows-service-as-a-domain-account"></a>Forudsætning 2: Kør gatewayens Windows-tjeneste som en domænekonto
 I en standardinstallation kører gatewayen som en tjenestekonto på en lokal computer (specifikt *NT-tjeneste\PBIEgwService*) som det, der er vist i følgende billede:
@@ -103,10 +103,10 @@ I en standardinstallation kører gatewayen som en tjenestekonto på en lokal com
 
 Når **Kerberos-begrænset delegering** skal aktiveres, skal gatewayen køre som en domænekonto, medmindre AAD allerede er synkroniseret med dit lokale Active Directory (med AAD DirSync/Connect). Hvis denne ændring af kontoen skal fungere korrekt, har du to valgmuligheder:
 
-* Hvis du er startet med en tidligere version af datagatewayen i det lokale miljø, skal du følge alle fem trin i rækkefølge meget præcist (herunder kørsel af gatewaykonfiguratoren i trin 3), der er beskrevet i følgende artikel:
+* Hvis du startede med en tidligere version af datagatewayen i det lokale miljø, skal du følge alle fem trin i rækkefølge meget præcist (herunder kørsel af gatewaykonfiguratoren i trin 3), som beskrevet i følgende artikel:
   
   * [Ændring af gatewaytjenestekontoen til en domænebruger](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/#changing-the-gateway-service-account-to-a-domain-user)
-  * Hvis du allerede har installeret prøveversionen af datagatewayen i det lokale miljø, er der en ny måde, styret i brugergrænsefladen, at skifte tjenestekonti på direkte fra gatewaykonfiguratoren. Se afsnittet **Skift af gatewayen til en domænekonto** mod slutningen af denne artikel.
+  * Hvis du allerede har installeret prøveversionen af datagatewayen i det lokale miljø, er der en ny måde, der styres i brugergrænsefladen, at skifte tjenestekonti på direkte fra gatewaykonfiguratoren. Se afsnittet **Skift af gatewayen til en domænekonto** mod slutningen af denne artikel.
 
 > [!NOTE]
 > Hvis AAD DirSync/Connect er konfigureret, og brugerkonti er synkroniseret, behøver gatewaytjenesten ikke at udføre lokale AD-opslag på kørselstidspunktet, og du kan bruge den lokale tjeneste-SID (i stedet for at kræve en domænekonto) til gatewaytjenesten. Konfigurationstrinnene i den Kerberos-begrænsede delegering, der er skitseret i denne artikel, er de samme som den pågældende konfiguration (de anvendes simpelthen på basis af tjeneste-SID'en i stedet for domænekonto).
@@ -186,7 +186,7 @@ Med udgangspunkt i disse eksempelnavne og -indstillinger er konfigurationstrinne
     
     Højreklik og åbn **Egenskaber** for **Repræsenter en klient efter godkendelse**, og kontrollér listen over konti. Den skal omfatte gatewaytjenestekontoen (**PBIEgwTest\GatewaySvc**).
 17. Fra listen over politikker under **Tildeling af brugerrettigheder** skal du vælge **Optræd som en del af operativsystemet (SeTcbPrivilege)**. Kontrollér, at gatewaytjenestekontoen også er medtaget på listen over konti.
-18. Genstart processen for tjenesten med **datagateway i det lokale miljø**.
+18. Genstart processen for tjenesten med **datagatewayen i det lokale miljø**.
 
 ## <a name="running-a-power-bi-report"></a>Kørsel af en Power BI-rapport
 Når alle de konfigurationstrin, der er skitseret tidligere i denne artikel, er fuldført, kan du bruge siden til **administration af gateway** i Power BI til at konfigurere datakilden, og under **Avancerede indstillinger** dér kan du aktivere SSO og derefter publicere rapporter og datasæt med binding til den pågældende datakilde.
@@ -196,9 +196,9 @@ Når alle de konfigurationstrin, der er skitseret tidligere i denne artikel, er 
 Denne konfiguration fungerer i de fleste tilfælde. Med Kerberos kan der dog være forskellige konfigurationer afhængigt af dit miljø. Hvis rapporten stadig ikke kan indlæses, skal du kontakte domæneadministratoren for at få problemet undersøgt yderligere.
 
 ## <a name="switching-the-gateway-to-a-domain-account"></a>Skift af gatewayen til en domænekonto
-Vi har tidligere i denne artikel gennemgået skift af gateway fra en lokal tjenestekonto til en, der kører som en domænekonto ved hjælp af brugergrænsefladen **datagateway i det lokale miljø**. Her er de trin, der er nødvendige for at kunne gøre dette.
+Vi har tidligere i denne artikel gennemgået skift af gateway fra en lokal tjenestekonto til en, der kører som en domænekonto, ved hjælp af brugergrænsefladen i **datagatewayen i det lokale miljø**. Her er de trin, der er nødvendige for at kunne gøre dette.
 
-1. Start konfigurationsværktøjet**datagateway i det lokale miljø**.
+1. Start konfigurationsværktøjet til **datagatewayen i det lokale miljø**.
    
    ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_10.png)
 2. Vælg knappen**Sign-in** (Logon) på hovedsiden, og log på med din Power BI-konto.
@@ -208,7 +208,7 @@ Vi har tidligere i denne artikel gennemgået skift af gateway fra en lokal tjene
    ![](media/service-gateway-kerberos-for-sso-pbi-to-on-premises-data/kerberos-sso-on-prem_11.png)
 
 ## <a name="next-steps"></a>Næste trin
-Du kan finde flere oplysninger om **datagateway i det lokale miljø** og **DirectQuery** i følgende ressourcer:
+Du kan finde flere oplysninger om **datagatewayen i det lokale miljø** og **DirectQuery** i følgende ressourcer:
 
 * [Datagateway i det lokale miljø](service-gateway-onprem.md)
 * [DirectQuery i Power BI](desktop-directquery-about.md)

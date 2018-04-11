@@ -1,28 +1,28 @@
 ---
-title: "Administrer din datakilde – Oracle"
-description: "Sådan administrerer du en datagateway i det lokale miljø samt de datakilder, der hører til denne gateway."
+title: Administrer din datakilde – Oracle
+description: Sådan administrerer du en datagateway i det lokale miljø og de datakilder, der hører til denne gateway.
 services: powerbi
-documentationcenter: 
-author: davidiseminger
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 01/24/2018
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 538904ea8ddb64d530daade143cc290046994464
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: c72cab8d93c4deb3ebe6565a9f0684991783ae3c
+ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="manage-your-data-source---oracle"></a>Administrer din datakilde – Oracle
 Når du har installeret datagatewayen i det lokale miljø, skal du tilføje datakilder, der kan bruges sammen med gatewayen. I denne artikel kan du se, hvordan du arbejder med gateways og datakilder. Du kan bruge Oracle-datakilden til enten planlagte opdateringer eller DirectQuery.
@@ -42,7 +42,7 @@ Til **32-bit** versioner af Power BI Desktop skal du bruge følgende link til at
 
 * [32-bit Oracle Data Access Components (ODAC) med Oracle Developer Tools til Visual Studio (12.1.0.2.4)](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
 
-Til **64-bit** versioner af Power BI Desktop eller til den lokale datagateway skal du bruge følgende link til at downloade og installere **64-bit** Oracle-klienten:
+Til **64-bit** versioner af Power BI Desktop eller til datagatewayen i det lokale miljø skal du bruge følgende link til at downloade og installere **64-bit** Oracle-klienten:
 
 * [64-bit ODAC 12.2c Release 1 (12.2.0.1.0) til Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
@@ -102,7 +102,7 @@ Derefter skal du angive oplysninger om datakilden, herunder **Server** og **Data
 Du skal også vælge en **Godkendelsesmetode**.  Denne kan enten være **Windows** eller **Basis**.  Du skal vælge **Basis**, hvis du skal bruge en konto, der er oprettet i Oracle i stedet for Windows-godkendelse. Indtast derefter legitimationsoplysningerne, der skal bruges til denne datakilde.
 
 > [!NOTE]
-> Alle forespørgsler til datakilden kører ved hjælp af disse legitimationsoplysninger. Du kan finde flere oplysninger i hovedartiklen om datagateways i det lokale miljø, hvor det beskrives, hvordan du gemmer [legitimationsoplysninger](service-gateway-onprem.md#credentials).
+> Alle forespørgsler til datakilden kører ved hjælp af disse legitimationsoplysninger. Du kan finde flere oplysninger om, hvordan du gemmer [legitimationsoplysninger](service-gateway-onprem.md#credentials) i hovedartiklen om datagateways i det lokale miljø.
 > 
 > 
 
@@ -147,7 +147,7 @@ Når du har oprettet datakilden, bliver den tilgængelig til brug med enten Dire
 > 
 > 
 
-Forbindelsen mellem dit datasæt og datakilden i gatewayen er baseret på dit servernavn og databasenavn. Disse skal stemme overens! Hvis du f.eks. angiver en IP-adresse for servernavnet i Power BI Desktop, skal du bruge IP-adressen til datakilden i konfigurationen af gatewayen. Dette navn skal også stemme overens med et alias defineret i filen tnsnames.ora. Se flere oplysninger om filen tnsnames.ora i [Installér Oracle-klienten](#installing-the-oracle-client).
+Linket mellem dit datasæt og datakilden i gatewayen er baseret på dit servernavn og databasenavn. Disse skal stemme overens! Hvis du f.eks. angiver en IP-adresse for servernavnet i Power BI Desktop, skal du bruge IP-adressen til datakilden i konfigurationen af gatewayen. Dette navn skal også stemme overens med et alias defineret i filen tnsnames.ora. Se flere oplysninger om filen tnsnames.ora i [Installér Oracle-klienten](#installing-the-oracle-client).
 
 Det er tilfældet for både DirectQuery og planlagt opdatering.
 
@@ -182,7 +182,7 @@ Se yderligere fejlfindingsoplysninger i forbindelse med gatewayen i [Fejlfinding
 ## <a name="next-steps"></a>Næste trin
 [Datagateway i det lokale miljø](service-gateway-onprem.md)  
 [Datagateway i det lokale miljø – detaljeret](service-gateway-onprem-indepth.md)  
-[Fejlfinding af datagateway i det lokale miljø](service-gateway-onprem-tshoot.md)  
+[Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
 [Power BI Premium](service-premium.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

@@ -1,15 +1,15 @@
 ---
-title: "Brug af Spørgsmål og svar via direkte forbindelser"
-description: "Dokumentationen til brug for forespørgsler på naturlige sprog via Power BI-spørgsmål og svar med direkte forbindelser til Analysis Services-data og datagateway i lokalt miljø."
+title: Brug af Spørgsmål og svar via direkte forbindelser
+description: Dokumentationen til brug for forespørgsler på naturlige sprog via Power BI-spørgsmål og svar med direkte forbindelser til Analysis Services-data og datagatewayen i det lokale miljø.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
 backup: mihart
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,17 +18,17 @@ ms.workload: powerbi
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 7c33e1d3719b30569996425ed247c1eac87b78f1
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.openlocfilehash: c6fa26d85d362af0d66276509f4e52ba718d338a
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="enable-qa-for-live-connections"></a>Aktivér Spørgsmål og svar til direkte forbindelser
-## <a name="what-is-on-premises-data-gateway--what-is-a-live-connection"></a>Hvad er datagateway i lokalt miljø?  Hvad er en direkte forbindelse?
+## <a name="what-is-on-premises-data-gateway--what-is-a-live-connection"></a>Hvad er en datagateway i det lokale miljø?  Hvad er en direkte forbindelse?
 Datasæt i Power BI kan importeres til Power BI, eller du kan oprette en direkte forbindelse til dem. Datasæt til direkte forbindelser bliver ofte kaldt "on-premises (i det lokale miljø)". De direkte forbindelser administreres ved hjælp af en [gateway](service-gateway-onprem.md), og data og forespørgsler sendes frem og tilbage ved hjælp af direkte forespørgsler.
 
-## <a name="qa-for-on-premises-data-gateway-datasets"></a>Spørgsmål og svar til datasæt i datagateway i lokalt miljø
+## <a name="qa-for-on-premises-data-gateway-datasets"></a>Spørgsmål og svar til datasæt i datagatewayen i det lokale miljø
 Hvis du vil bruge Spørgsmål og svar med datasæt, får du adgang via en gateway, men du skal aktivere dem først.
 
 Når Power BI er aktiveret, opretter den et indeks for datakilden og uploader et undersæt af disse data til Power BI for at aktivere funktionen for at stille spørgsmål. Det kan tage flere minutter at oprette det første indeks, og Power BI vedligeholder og opdaterer indekset automatisk, når data ændres. Når du bruger Spørgsmål og svar med disse datasæt, fungerer det på samme måde som med data, der er publiceret til Power BI. Det fulde sæt af funktioner, der er tilgængelige i Spørgsmål og svar-oplevelsen, er understøttet i begge tilfælde, herunder brug af datakilden med Cortana.
@@ -39,7 +39,7 @@ Da Power BI-spørgsmål og svar bruger værdierne for tekst og skema fra din dat
 
 Her finder du flere oplysninger:
 
-* Hvad er [datagateway i lokalt miljø](service-gateway-onprem.md)?
+* Hvad er [datagatewayen i det lokale miljø](service-gateway-onprem.md)?
 * [Introduktion til Power BI-spørgsmål og svar](power-bi-q-and-a.md)
 
 ## <a name="enable-qa"></a>Aktivering af Spørgsmål og svar
@@ -61,9 +61,9 @@ Når du aktiverer Spørgsmål og svar for dataene i det lokale miljø, cachelagr
 ## <a name="considerations-and-troubleshooting"></a>Emner og fejlfinding
 Under Visningsfasen til denne funktion er der flere begrænsninger:
 
-* Til at begynde med er funktionen kun tilgængelig for SQL Server 2016 Analysis Services Tabular-datakilder. Funktionen er optimeret til at arbejde med data i tabelformat. Nogle funktioner er tilgængelige for flerdimensionelle datakilder, men den fulde oplevelse med Spørgsmål og svar understøttes endnu ikke for flerdimensionelle. Der udrulles løbende flere datakilder, som understøttes af den lokale datagateway.
+* Til at begynde med er funktionen kun tilgængelig for SQL Server 2016 Analysis Services Tabular-datakilder. Funktionen er optimeret til at arbejde med data i tabelformat. Nogle funktioner er tilgængelige for flerdimensionelle datakilder, men den fulde oplevelse med Spørgsmål og svar understøttes endnu ikke for flerdimensionelle. Der udrulles løbende flere datakilder, som understøttes af datagatewayen i det lokale miljø.
 * Fuld understøttelse af sikkerhed på rækkeniveau, der er defineret i SQL Server Analysis Services, er ikke tilgængelig til at begynde med i den offentlige prøveversion. Når der stilles spørgsmål i Spørgsmål og svar, kan den automatiske udfyldning af spørgsmål under skrivningen vise strengværdier, som brugerne ikke har adgang til. Dog overholdes den RLS, der er defineret i modellen, for visning af rapporter og diagrammer, så ingen underliggende numeriske data kan fremvises. Indstillinger til at styre denne funktionsmåde vil blive udgivet i kommende opdateringer.
-* Direkte forbindelser understøttes kun med datagateway i lokalt miljø. Denne funktion kan derfor ikke bruges med den personlige gateway.
+* Direkte forbindelser understøttes kun med datagatewayen i det lokale miljø. Denne funktion kan derfor ikke bruges med den personlige gateway.
 
 ## <a name="next-steps"></a>Næste trin
 [Datagateway i lokalt miljø](service-gateway-onprem.md)  

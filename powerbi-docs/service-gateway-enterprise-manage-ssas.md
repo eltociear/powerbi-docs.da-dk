@@ -1,15 +1,15 @@
 ---
-title: "Administrer din datakilde – Analysis Services"
-description: "Sådan administrerer du en datagateway i det lokale miljø samt de datakilder, der hører til denne gateway. Dette omhandler Analysis Services i både flerdimensionel og tabellarisk tilstand."
+title: Administrer din datakilde – Analysis Services
+description: Sådan administrerer du en datagateway i det lokale miljø samt de datakilder, der hører til denne gateway. Dette omhandler Analysis Services i både flerdimensionel og tabellarisk tilstand.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6ce9a6d962098b3f40c351d0319c4b7908f4e4f7
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 59fc3db101de246aaf4ab08c7916b25497b74fd2
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Administrer din datakilde – Analysis Services
 Når du har installeret datagatewayen i det lokale miljø, skal du tilføje datakilder, der kan bruges sammen med gatewayen. I denne artikel kan du se, hvordan du arbejder med gateways og datakilder. Du kan bruge Analysis Services-datakilden til enten planlagte opdateringer eller direkte forbindelser.
@@ -76,7 +76,7 @@ Derefter skal du angive oplysninger om datakilden, herunder **Server** og **Data
 Den **brugernavn** og den **adgangskode**, som du angiver, bruges af gatewayen til at oprette forbindelse til Analysis Services-forekomsten.
 
 > [!NOTE]
-> Den Windows-konto, du angiver, skal have administratorrettigheder på serveren for den forekomst, som du opretter forbindelse til. Hvis adgangskoden til kontoen er angivet til at udløbe, kan brugerne få en forbindelsesfejl, hvis adgangskoden ikke er opdateret for datakilden. Du kan få mere at vide om, hvordan [legitimationsoplysninger](service-gateway-onprem.md#credentials) gemmes, i den primære artikel om datagateways i det lokale miljø.
+> Den Windows-konto, du angiver, skal have administratorrettigheder på serveren for den forekomst, som du opretter forbindelse til. Hvis adgangskoden til kontoen er angivet til at udløbe, kan brugerne få en forbindelsesfejl, hvis adgangskoden ikke er opdateret for datakilden. Du kan finde flere oplysninger i hovedartiklen om datagateways i det lokale miljø, hvor det beskrives, hvordan du gemmer [legitimationsoplysninger](service-gateway-onprem.md#credentials).
 > 
 > 
 
@@ -144,7 +144,7 @@ Der sker følgende i **Power BI-tjenesten**:
 - For hver forespørgsel fra en Power BI AAD-bruger til en SSAS-server i det lokale miljø overføres en UPN-streng, f.eks.:firstName.lastName@contoso.com
 
 > [!NOTE]
-> Manuelle UPN-brugertilknytninger, der er defineret i konfigurationen af Power BI-datakilden, anvendes stadig, *før* brugernavnsstrengen sendes til datagatewayen i det lokale miljø.
+> Manuelle UPN-brugertilknytninger, der er defineret i konfigurationen af Power BI-datakilden, anvendes stadig, *før* brugernavnestrengen sendes til datagatewayen i det lokale miljø.
 > 
 > 
 
@@ -159,7 +159,7 @@ I datagatewayen i det lokale miljø med konfigurerbar brugerdefineret brugertilk
 Sådan konfigurerer du gatewayen til at udføre AD-opslaget:
 
 1. Download og installér den nyeste gateway
-2. I gatewayen skal du ændre **datagatewaytjenesten i det lokale miljø**, så den kører med en domænekonto (i stedet for en lokal tjenestekonto – ellers fungerer AD-opslaget ikke korrekt på kørselstidspunktet). Du skal genstarte gatewaytjenesten, for at ændringerne kan træde i kraft.  Gå til gateway-appen på din maskine (søg efter "datagateway i det lokale miljø "). Det gør du ved at gå til **Tjenesteindstillinger > Rediger tjenestekonto**. Kontrollér, at du har genoprettelsesnøglen til denne gateway, da du skal gendanne den på den samme maskine, medmindre du vil oprette en ny gateway i stedet. 
+2. I gatewayen skal du ændre **datagatewaytjenesten i det lokale miljø**, så den kører med en domænekonto (i stedet for en lokal tjenestekonto – ellers fungerer AD-opslaget ikke korrekt på kørselstidspunktet). Du skal genstarte gatewaytjenesten, for at ændringerne kan træde i kraft.  Gå til gatewayappen på din maskine (søg efter "datagateway i det lokale miljø "). Det gør du ved at gå til **Tjenesteindstillinger > Rediger tjenestekonto**. Kontrollér, at du har genoprettelsesnøglen til denne gateway, da du skal gendanne den på den samme maskine, medmindre du vil oprette en ny gateway i stedet. 
 3. Gå til installationsmappen for gatewayen, *C:\Program Files\On-premises data gateway* som administrator for at sikre, at du har skriverettigheder, og rediger følgende fil:
    
        Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
@@ -245,6 +245,6 @@ Hvis du er angivet under fanen **Brugere** for den datakilde, der er konfigurere
 ## <a name="next-steps"></a>Næste trin
 [Datagateway i det lokale miljø](service-gateway-onprem.md)  
 [Datagateway i det lokale miljø – detaljeret](service-gateway-onprem-indepth.md)  
-[Fejlfinding af datagateway i det lokale miljø](service-gateway-onprem-tshoot.md)  
+[Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

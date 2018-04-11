@@ -1,31 +1,31 @@
 ---
-title: "Datagateway i det lokale miljø – detaljeret"
-description: "Denne artikel ser detaljeret på gatewayen i det lokale miljø. Vi ser på, hvordan tjenesten fungerer sammen med Azure Active Directory og dit lokale Active Directory, når du arbejder med Analysis Services"
+title: Datagateway i det lokale miljø – detaljeret
+description: Denne artikel ser detaljeret på gatewayen i det lokale miljø. Vi ser på, hvordan tjenesten fungerer sammen med Azure Active Directory og dit lokale Active Directory, når du arbejder med Analysis Services
 services: powerbi
-documentationcenter: 
-author: davidiseminger
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 12/06/2017
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7283ee62838779590bbc01eb8b4348cfc7873dc1
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5f081dff246c478f1b9ee3c918de2099b8382100
+ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Datagateway i det lokale miljø – detaljeret
-Det er muligt for brugere i din organisation at få adgang til lokale data (som de allerede er godkendt til at få adgang til), men før disse brugere kan oprette forbindelse til datakilden i det lokale miljø, skal en lokal datagateway installeres og konfigureres. Gatewayen muliggør hurtig og sikker kommunikation bag kulisserne mellem en bruger i clouden, til din lokale datakilde og derefter tilbage til clouden.
+Det er muligt for brugere i din organisation at få adgang til data i det lokale miljø (som de allerede er godkendt til at få adgang til), men før disse brugere kan oprette forbindelse til datakilden i det lokale miljø, skal der installeres og konfigureres en datagateway i det lokale miljø. Gatewayen muliggør hurtig og sikker kommunikation bag kulisserne mellem en bruger i clouden, til din lokale datakilde og derefter tilbage til clouden.
 
 Installation og konfiguration af en gateway foretages normalt af en administrator. Der kræves muligvis særlig viden om dine lokale servere, og administratortilladelser til serveren kan i nogle tilfælde være påkrævet.
 
@@ -120,13 +120,13 @@ Installation af gatewayen mislykkes af og til. Eller måske ser det ud til, at g
 
 I andre tilfælde kan der være problemer med den type af mailadresse, som brugere logger på med, eller Analysis Services kan ikke fortolke et effektivt brugernavn. Hvis du har flere domæner med tillidsforhold mellem dem, og din gateway er i ét domæne og Analysis Services i et andet, kan det sommetider medføre nogle problemer.
 
-I stedet for at beskrive fejlfinding af gatewayen her har vi lagt en række fejlfindingstrin ind i en anden artikel. [Fejlfinding af datagateway i det lokale miljø](service-gateway-onprem-tshoot.md). Forhåbentlig får du ikke problemer. Men hvis du gør, bør det være en hjælp at forstå, hvordan det fungerer, og det samme gælder artiklen om fejlfinding.
+I stedet for at beskrive, hvordan du foretager fejlfinding af problemer med gatewayen her, har vi beskrevet en række fejlfindingstrin i en anden artikel: [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md). Forhåbentlig får du ikke problemer. Men hvis du gør, bør det være en hjælp at forstå, hvordan det fungerer, og det samme gælder artiklen om fejlfinding.
 
 <!-- Account and Port information -->
 [!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]
 
 ## <a name="next-steps"></a>Næste trin
-[Fejlfinding af datagateway i det lokale miljø](service-gateway-onprem-tshoot.md)  
+[Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
 [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/)  
 [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

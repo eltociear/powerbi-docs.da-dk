@@ -1,15 +1,15 @@
 ---
-title: "Ofte stillede spørgsmål om Power BI Premium"
-description: "Gennemse en liste med ofte stillede spørgsmål og svar om tilbuddene i Power BI Premium."
+title: Ofte stillede spørgsmål om Power BI Premium
+description: Gennemse en liste med ofte stillede spørgsmål og svar om tilbuddene i Power BI Premium.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 09/20/2017
 ms.author: maghan
 LocalizationGroup: Premium
-ms.openlocfilehash: 315b39942befdbbd3dd36ca86d1cb3ff7288403d
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: c5d96b0aa9ce02abf3e88d83718d70a3b8033897
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="power-bi-premium-faq"></a>Ofte stillede spørgsmål om Power BI Premium
 Gennemse en liste med ofte stillede spørgsmål og svar om tilbuddene i Power BI Premium.
@@ -120,7 +120,7 @@ Du kan finde oplysninger om den udvidede Pro-prøveversion under [Aktivering af 
 
 ## <a name="power-bi-free"></a>Power BI (gratis)
 **Hvilke funktioner føjes til den gratis tjeneste?**  
-Fra den 1. juni 2017 har den gratis tjeneste funktioner, der svarer til Power BI Pro, undtagen deling, distribution på virksomhedsniveau og samarbejde. Dette omfatter denne samme 10 GB-begrænsning for arbejdsområder, op til 8 daglige planlagte opdateringer for datasæt og en streamingdatahastighed på maks. 1 mio./time. Der er også adgang til alle datakilder, herunder dem, der er tilgængelige via den lokale datagateway.
+Fra den 1. juni 2017 har den gratis tjeneste funktioner, der svarer til Power BI Pro, undtagen deling, distribution på virksomhedsniveau og samarbejde. Dette omfatter denne samme 10 GB-begrænsning for arbejdsområder, op til 8 daglige planlagte opdateringer for datasæt og en streamingdatahastighed på maks. 1 mio./time. Der er også adgang til alle datakilder, herunder dem, der er tilgængelige via datagatewayen i det lokale miljø.
 
 **Hvilke Power BI Pro-funktioner er ikke tilgængelige i den gratis tjeneste?**  
 Deling af peer to peer-dashboard, apparbejdsområder (tidligere kaldet gruppearbejdsområder), Analysér i Excel og Power BI-apps (medmindre der er Premium-kapacitet) er funktioner, der kun fås i Power BI Pro.

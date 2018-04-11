@@ -1,15 +1,15 @@
 ---
-title: "Klynger med høj tilgængelighed for en datagateway i det lokale miljø"
-description: "Du kan oprette klynger af datagateways i det lokale miljø for at solre en høj tilgængelighed for din virksomhed."
+title: Klynger med høj tilgængelighed for en datagateway i det lokale miljø
+description: Du kan oprette klynger af datagateways i det lokale miljø for at sikre en høj tilgængelighed for din virksomhed.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,19 +18,19 @@ ms.workload: powerbi
 ms.date: 12/05/2017
 ms.author: davidi
 LocalizationGroup: Gateways
-ms.openlocfilehash: 717451afc35614e9c356e5748f39f0302fa6244e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 9ad1d4288184368dbb294bfafa69fe005780b322
+ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="high-availability-clusters-for-on-premises-data-gateway"></a>Klynger med høj tilgængelighed for en datagateway i det lokale miljø
-Du kan oprette **klynger med høj tilgængelighed** af **datagatewayinstallationer i det lokale miljø** for at sikre dig, at din organisation kan få adgang til dataressourcer i det lokale miljø, som bruges i Power BI-rapporter og på dashboards. Disse klynger giver gatewayadministratorer mulighed for at gruppere gateways og dermed undgå enkelte fejlpunkter under oprettelse af adgang til datakilder i det lokale miljø. I denne artikel beskrives de trin, som du kan udføre for at oprette en klynge af datagateways i det lokale miljø med høj tilgængelighed samt de bedste fremgangsmåder i forbindelse med konfigurationen af dem. Gatewayklynger med høj tilgængelighed kræver opdateringen fra november 2017 eller nyere til datagatewayen i det lokale miljø.
+Du kan oprette installationer med **klynger af datagateways** **i det lokale miljø med høj tilgængelighed** for at sikre, at din organisation kan få adgang til dataressourcer i det lokale miljø, som bruges i Power BI-rapporter og på dashboards. Disse klynger giver gatewayadministratorer mulighed for at gruppere gateways og dermed undgå enkelte fejlpunkter under oprettelse af adgang til datakilder i det lokale miljø. I denne artikel beskrives de trin, som du kan udføre for at oprette en klynge af datagateways i det lokale miljø med høj tilgængelighed samt de bedste fremgangsmåder i forbindelse med konfigurationen af dem. Gatewayklynger med høj tilgængelighed kræver opdateringen fra november 2017 eller nyere til datagatewayen i det lokale miljø.
 
 
 ## <a name="setting-up-high-availability-clusters-of-gateways"></a>Konfiguration af gatewayklynger med høj tilgængelighed
 
-Under installationen af **datagateways i det lokale miljø** kan du angive, om gatewayen, skal føjes til en eksisterende gatewayklynge. 
+Under installationen af **datagatewayen i det lokale miljø** kan du angive, om gatewayen skal føjes til en eksisterende gatewayklynge. 
 
 ![](media/service-gateway-high-availability-clusters/gateway_clusters_01.png)
 
@@ -63,7 +63,7 @@ Hvis du vil køre PowerShell-kommandoerne i tabellen, skal du først gøre følg
     Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
     ```
 
-3. Derefter skal du gå til installationsmappen for datagatewayen i det lokale miljø i PowerShell-vinduet og importere det nødvendige modul vha. følgende kommando:
+3. Derefter skal du navigere til installationsmappen for datagatewayen i det lokale miljø i PowerShell-vinduet og importere det nødvendige modul vha. følgende kommando:
 
     ```
     Import-Module .\OnPremisesDataGatewayHAMgmt.psm1
@@ -90,7 +90,7 @@ Når disse trin er fuldført, kan du bruge kommandoerne i følgende tabel til at
 -   [Administrer din datakilde – Import/Planlagt opdatering](service-gateway-enterprise-manage-scheduled-refresh.md)  
 -   [Datagateway i det lokale miljø, detaljeret](service-gateway-onprem-indepth.md)  
 -   [Datagateway i det lokale miljø (personlig tilstand)](service-gateway-personal-mode.md)
--   [Konfiguration af proxyindstillinger for datagateway i det lokale miljø](service-gateway-proxy.md)  
+-   [Konfigurer proxyindstillinger for datagatewayen i det lokale miljø](service-gateway-proxy.md)  
 -   [Brug Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

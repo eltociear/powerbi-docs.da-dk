@@ -1,28 +1,28 @@
 ---
-title: "Administrer din datakilde – SQL"
-description: "Sådan administrerer du en datagateway i det lokale miljø samt de datakilder, der hører til denne gateway."
+title: Administrer din datakilde – SQL
+description: Sådan administrerer du en datagateway i det lokale miljø og de datakilder, der hører til denne gateway.
 services: powerbi
-documentationcenter: 
-author: davidiseminger
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 01/24/2018
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5e1bbc86ea56dfbc692d8a81cbeb4bc38d872c2b
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 563c0c65ab7c696449732ad01a0f20ca87383d15
+ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="manage-your-data-source---sql-server"></a>Administrer din datakilde – SQL Server
 Når du har installeret datagatewayen i det lokale miljø, kan du tilføje datakilder, der kan bruges sammen med gatewayen. I denne artikel kan du se, hvordan du arbejder med gateways og datakilder. Du kan bruge SQL Server-datakilden enten til planlagte opdateringer eller DirectQuery.
@@ -67,7 +67,7 @@ Derefter skal du angive oplysninger om datakilden, herunder **Server** og **Data
 Du skal også vælge en **Godkendelsesmetode**.  Denne kan enten være **Windows** eller **Basis**.  Du skal vælge **Basis**, hvis du skal bruge SQL-godkendelse i stedet for Windows-godkendelse. Indtast derefter legitimationsoplysningerne, der skal bruges til denne datakilde.
 
 > [!NOTE]
-> Alle forespørgsler på datakilden kører ved hjælp af disse legitimationsoplysninger, medmindre Kerberos SSO (enkeltlogon) er konfigureret og aktiveret for datakilden. Med SSO bruger Importér datasæt de gemte legitimationsoplysninger, men DirectQuery-datasæt benytter den aktuelle bruger af Power BI til at udføre forespørgslerne ved hjælp af SSO. Du kan få flere oplysninger i hovedartiklen om den lokale datagateway for at lære mere om, hvordan [legitimationsoplysninger](service-gateway-onprem.md#credentials) gemmes, eller i artiklen med oplysninger om, hvordan [Kerberos til SSO (enkeltlogon) bruges fra Power BI til lokale datakilder](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md).
+> Alle forespørgsler på datakilden kører ved hjælp af disse legitimationsoplysninger, medmindre Kerberos SSO (enkeltlogon) er konfigureret og aktiveret for datakilden. Med SSO bruger Importér datasæt de gemte legitimationsoplysninger, men DirectQuery-datasæt benytter den aktuelle bruger af Power BI til at udføre forespørgslerne ved hjælp af SSO. I hovedartiklen om datagatewayen i det lokale miljø kan du finde flere oplysninger om, hvordan du gemmer [legitimationsoplysninger](service-gateway-onprem.md#credentials). Du kan også se artiklen, hvori det beskrives, hvordan [Kerberos til SSO (enkeltlogon) bruges fra Power BI til datakilder i det lokale miljø](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md).
 > 
 > 
 
@@ -129,7 +129,7 @@ Hvis du er angivet under fanen **Brugere** for den datakilde, der er konfigurere
 ## <a name="next-steps"></a>Næste trin
 * [Datagateway i det lokale miljø](service-gateway-onprem.md)  
 * [Datagateway i det lokale miljø – detaljeret](service-gateway-onprem-indepth.md)  
-* [Fejlfinding af datagateway i det lokale miljø](service-gateway-onprem-tshoot.md)
+* [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)
 * [Brug Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md). 
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
