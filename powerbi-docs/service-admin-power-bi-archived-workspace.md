@@ -1,28 +1,28 @@
 ---
-title: "Arkiveret arbejdsområde i Power BI"
-description: "Arkiveret arbejdsområde i Power BI efter at have administreret din Office 365-lejer"
+title: Arkiveret arbejdsområde i Power BI
+description: Arkiveret arbejdsområde i Power BI efter at have administreret din Office 365-lejer
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 06/28/2017
-ms.author: maghan
+ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 34625c6c093e6ad4255b6e9e153c84d4cb3881d4
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 254857072df2b06fbdeb2af0a53d262e98f8f254
+ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="power-bi-archived-workspace"></a>Arkiveret arbejdsområde i Power BI
 Med Power BI kan alle tilmelde sig og begynde at bruge tjenesten i løbet af et par minutter.  Senere kan det være, at din organisations it-afdeling måske vælger at overtage administrationen af Power BI for brugere i din organisation.  Hvis it-afdelingen tager over, vil du få fordel af central administration af brugere og tilladelser i din organisation, og du får måske også gavn af strømlinet logon ved brug af samme brugernavn og adgangskode, du bruger til andre tjenester i din organisation. 

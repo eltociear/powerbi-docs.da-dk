@@ -1,40 +1,33 @@
 ---
-title: "Opret forbindelse til Adobe Analytics i Power BI Desktop (prøveversion)"
+title: Opret forbindelse til Adobe Analytics i Power BI Desktop
 description: Opret nemt forbindelse til og brug Adobe Analytics i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/09/2018
+ms.date: 04/04/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: efd6d066e2f98f86248730917c2f4aa0c8a39983
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 4488cd373fae22c4494ac697602536496ffc9b00
+ms.sourcegitcommit: e571de2afa3f34fac06a6aab0df0e8940cb00a0d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/05/2018
 ---
-# <a name="connect-to-adobe-analytics-in-power-bi-desktop-preview"></a>Opret forbindelse til Adobe Analytics i Power BI Desktop (prøveversion)
+# <a name="connect-to-adobe-analytics-in-power-bi-desktop"></a>Opret forbindelse til Adobe Analytics i Power BI Desktop 
 I **Power BI Desktop** kan du oprette forbindelse til **Adobe Analytics** og bruge de underliggende data på samme måde som enhver anden datakilde i Power BI Desktop. 
 
 ![Hent data fra Adobe Analytics](media/desktop-connect-adobe-analytics/connect-adobe-analytics_01.png)
-
-## <a name="enable-the-adobe-analytics-connector-preview"></a>Aktivér prøveversionen af Adobe Analytics-connector 
-Da **Adobe Analytics**-connector i øjeblikket er en prøveversion, skal du aktivere prøveversionsfunktionen, før connectoren er tilgængelig i vinduet **Hent data**. Du aktiverer prøveversionsfunktionen ved at vælge **Filer > Indstillinger > Indstillinger> Funktioner til eksempelvisning** i Power BI Desktop og derefter markere afkrydsningsfeltet ud for **Bogmærker**. 
-
-![Aktivér prøveversionen af Adobe Analytics-connector under Indstillinger](media/desktop-connect-adobe-analytics/connect-adobe-analytics_02.png)
-
-Du skal genstarte **Power BI Desktop**, når du har aktiveret prøveversionen af Adobe Analytics-connectoren.
 
 ## <a name="connect-to-adobe-analytics-data"></a>Opret forbindelse til Adobe Analytics-data
 Du opretter forbindelse til **Adobe Analytics**-data ved at vælge **Hent data** på båndet **Hjem** i Power BI Desktop. Vælg **Onlinetjenester** under kategorier til venstre, så kan du se **Adobe Analytics-connector**.
