@@ -1,14 +1,14 @@
 ---
 title: Opret og publicer apps med dashboards og rapporter i Power BI
-description: "Få mere at vide om, hvordan du opretter og publicerer apps, der er samlinger af dashboards og rapporter, som er udviklet til at levere vigtige målepunkter for din organisation."
+description: Få mere at vide om, hvordan du opretter og publicerer apps, der er samlinger af dashboards og rapporter, som er udviklet til at levere vigtige målepunkter for din organisation.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

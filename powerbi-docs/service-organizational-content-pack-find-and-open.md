@@ -1,15 +1,15 @@
 ---
-title: "Find og opret forbindelse til organisationsindholdspakker – Power BI"
-description: "Find og åbn en organisationsindholdspakke i Power BI"
+title: Find og opret forbindelse til organisationsindholdspakker – Power BI
+description: Find og åbn en organisationsindholdspakke i Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

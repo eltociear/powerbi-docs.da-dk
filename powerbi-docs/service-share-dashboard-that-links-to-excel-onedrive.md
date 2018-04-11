@@ -1,15 +1,15 @@
 ---
-title: "Del dashboards, der er knyttet til en Excel-fil på OneDrive – Power BI"
-description: "Læs om deling af dashboards, der er tilknyttet en Excel-projektmappe på OneDrive for Business, med felter, der er fastgjort fra den projektmappe."
+title: Del dashboards, der er knyttet til en Excel-fil på OneDrive – Power BI
+description: Læs om deling af dashboards, der er tilknyttet en Excel-projektmappe på OneDrive for Business, med felter, der er fastgjort fra den projektmappe.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

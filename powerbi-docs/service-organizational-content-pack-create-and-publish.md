@@ -1,15 +1,15 @@
 ---
-title: "Opret og publicer en organisationsindholdspakke – PowerBi"
-description: "I dette selvstudium opretter du en organisationsindholdspakke, begrænser adgangen til en bestemt gruppe og publicerer den i biblioteket til din organisationsindholdspakke på Power BI."
+title: Opret og publicer en organisationsindholdspakke – PowerBi
+description: I dette selvstudium opretter du en organisationsindholdspakke, begrænser adgangen til en bestemt gruppe og publicerer den i biblioteket til din organisationsindholdspakke på Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

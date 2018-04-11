@@ -1,15 +1,15 @@
 ---
-title: "Administrer dit apparbejdsområde i Power BI og Office 365"
-description: "Apparbejdsområder i Power BI er en samarbejdsbaseret oplevelse bygget på Office 365-grupper. Administrer dine apparbejdsområder i både Power BI og Office 365."
+title: Administrer dit apparbejdsområde i Power BI og Office 365
+description: Apparbejdsområder i Power BI er en samarbejdsbaseret oplevelse bygget på Office 365-grupper. Administrer dine apparbejdsområder i både Power BI og Office 365.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

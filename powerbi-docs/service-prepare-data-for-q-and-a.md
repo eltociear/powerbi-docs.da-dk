@@ -1,15 +1,15 @@
 ---
-title: "Sådan får du dine Excel-data til at fungere godt med Spørgsmål og svar i Power BI"
-description: "Sådan får du dine data til at fungere godt med Spørgsmål og svar i Power BI"
+title: Sådan får du dine Excel-data til at fungere godt med Spørgsmål og svar i Power BI
+description: Sådan får du dine data til at fungere godt med Spørgsmål og svar i Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

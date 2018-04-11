@@ -1,13 +1,13 @@
 ---
 title: Del Power BI-dashboards og -rapporter med kolleger og andre
-description: "Sådan deler du Power BI-dashboards og -rapporter med kolleger i og uden for din organisation, og det du skal vide om at dele."
+description: Sådan deler du Power BI-dashboards og -rapporter med kolleger i og uden for din organisation, og det du skal vide om at dele.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: lukaszp
-editor: 
-tags: 
+editor: ''
+tags: ''
 featuredvideoid: 0tUwn8DHo3s
 qualityfocus: monitoring
 qualitydate: 08/14/2017

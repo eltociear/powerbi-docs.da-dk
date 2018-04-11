@@ -1,15 +1,15 @@
 ---
 title: Introduktion til organisationsindholdspakker i Power BI
-description: "Læs om at pakke dine dashboards, rapporter, Excel-projektmapper og datasæt som organisationsindholdspakker, som du kan dele med dine kollegaer."
+description: Læs om at pakke dine dashboards, rapporter, Excel-projektmapper og datasæt som organisationsindholdspakker, som du kan dele med dine kollegaer.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -30,7 +30,7 @@ ms.lasthandoff: 02/24/2018
 > 
 > 
 
-Distribuerer du jævnligt rapporter via mail til dit team? Prøv dette i stedet: Lav en pakke med dine dashboards, rapporter, Excel-projektmapper og datasæt, og publicer dem for dit team som en *organisationsindholdspakke*. Indholdspakker, du opretter, er nemme for dit team at finde &#151; de findes alle sammen i AppSource. Da de er en del af Power BI, udnytter de alle funktionerne i Power BI, herunder interaktiv udforskning af data, nye visuals, spørgsmål og svar, integration med andre datakilder, opdatering af data med mere.
+Distribuerer du jævnligt rapporter via mail til dit team? Prøv dette i stedet: Lav en pakke med dine dashboards, rapporter, Excel-projektmapper og datasæt, og publicer dem for dit team som en *organisationsindholdspakke*. Indholdspakker, du opretter, er nemme for dit team at finde & #151; de findes alle sammen i AppSource. Da de er en del af Power BI, udnytter de alle funktionerne i Power BI, herunder interaktiv udforskning af data, nye visuals, spørgsmål og svar, integration med andre datakilder, opdatering af data med mere.
 
 ![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 

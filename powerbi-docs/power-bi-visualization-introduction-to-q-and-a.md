@@ -1,15 +1,15 @@
 ---
-title: "Hurtig introduktion – Kom i gang med Power BI Spørgsmål og svar"
-description: "Hurtig introduktion – Kom i gang med Spørgsmål og svar i Power BI-tjenesten ved hjælp af eksemplet på detailhandelsanalyse"
+title: Hurtig introduktion – Kom i gang med Power BI Spørgsmål og svar
+description: Hurtig introduktion – Kom i gang med Spørgsmål og svar i Power BI-tjenesten ved hjælp af eksemplet på detailhandelsanalyse
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

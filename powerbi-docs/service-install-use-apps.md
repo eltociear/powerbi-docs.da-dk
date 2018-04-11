@@ -1,12 +1,12 @@
 ---
 title: Installer og brug apps med dashboards og rapporter i Power BI
-description: "I Power BI samler apps relaterede dashboards og rapporter på ét sted."
+description: I Power BI samler apps relaterede dashboards og rapporter på ét sted.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: monitoring
 qualitydate: 10/02/2017
 ms.service: powerbi

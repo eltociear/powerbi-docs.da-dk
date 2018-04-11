@@ -1,13 +1,13 @@
 ---
 title: Hvordan kan jeg samarbejde og dele i Power BI?
-description: "I Power BI kan du samarbejde om og dele dashboards, rapporter, felter og apps på forskellige måder. Hver har særskilte fordele."
+description: I Power BI kan du samarbejde om og dele dashboards, rapporter, felter og apps på forskellige måder. Hver har særskilte fordele.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: lukaszp
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: monitoring
 qualitydate: 02/28/2017
 ms.service: powerbi

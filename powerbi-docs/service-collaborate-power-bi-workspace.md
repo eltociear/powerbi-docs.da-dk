@@ -1,15 +1,15 @@
 ---
-title: "Samarbejd i dit Power BI-apparbejdsområde"
-description: "Læs om at samarbejde på Power BI Desktop-filer i apparbejdsområdet og med Office 365-tjenester som f.eks. deling af filer på OneDrive for Business, samtaler i Exchange, kalender og opgaver."
+title: Samarbejd i dit Power BI-apparbejdsområde
+description: Læs om at samarbejde på Power BI Desktop-filer i apparbejdsområdet og med Office 365-tjenester som f.eks. deling af filer på OneDrive for Business, samtaler i Exchange, kalender og opgaver.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
 backup: ajayan
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article

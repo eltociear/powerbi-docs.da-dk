@@ -1,16 +1,16 @@
 ---
 title: Fejlfinding i Cortana til Power BI
-description: "Hvis du har problemer med at bruge Cortana med Power BI, kan du prøve disse forslag."
+description: Hvis du har problemer med at bruge Cortana med Power BI, kan du prøve disse forslag.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-featuredvideoid: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
