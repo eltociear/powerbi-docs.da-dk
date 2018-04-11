@@ -1,28 +1,28 @@
 ---
 title: Power BI (gratis) i din organisation
-description: "Denne artikel ser på dine muligheder med Power BI (gratis) fra et organisationsperspektiv. Hvis du er administrator af din lejer, kan du her se, hvordan du administrerer gratis tilmeldinger."
+description: Denne artikel ser på dine muligheder med Power BI (gratis) fra et organisationsperspektiv. Hvis du er administrator af din lejer, kan du her se, hvordan du administrerer gratis tilmeldinger.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 09/05/2017
-ms.author: maghan
+ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: ec266cd2631797a1bbbef686824f78b0f1e3e14a
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5da8b4cbb86766e6b411af902fce4bf18f480612
+ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="power-bi-free-in-your-organization"></a>Power BI (gratis) i din organisation
 Her ser vi på, hvordan du kan bruge Power BI-tilbuddet (gratis) i din organisation. En organisation betyder, at du har en lejer og kan administrere brugere og tjenester inden for denne lejer. Som administrator kan du styre licenstildeling, eller du kan tillade, at brugere tilmelder sig som enkeltpersoner. Vi skal se på licensen til Power BI (gratis), og hvordan du kan styre individuelle tilmeldinger.
