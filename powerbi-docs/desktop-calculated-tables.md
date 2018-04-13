@@ -2,14 +2,14 @@
 title: Brug af beregnede tabeller i Power BI Desktop
 description: Beregnede tabeller i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 8bf8d2629d6a0bd88a85fa468547586e93502721
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 41017e1570a518e26305b6195531bcff889dbd9c
+ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-calculated-tables-in-power-bi-desktop"></a>Brug af beregnede tabeller i Power BI Desktop
 Med beregnede tabeller kan du føje en ny tabel til modellen. Men i stedet for at forespørge efter og indlæse værdier i din nye tabels kolonner fra en datakilde kan du oprette en DAX-formel (Data Analysis Expressions), der definerer værdierne i tabellen. I Power BI Desktop oprettes der beregnede kolonner ved hjælp af funktionen Ny tabel i Rapportvisning eller Datavisning.
@@ -71,7 +71,15 @@ Beregnede tabeller kan defineres af et DAX-udtryk, der returnerer en tabel, heru
 
 Du kan bruge beregnede tabeller med DAX for at løse mange analyseproblemer. Vi har kun givet en hurtig introduktion til beregnede tabeller her. Når du begynder at arbejde med beregnede tabeller, er her nogle af de mest almindelige DAX-tabelfunktioner, som måske kan være nyttige:
 
-&lt;TABLE&gt; DISTINCT VALUES CROSSJOIN UNION NATURALINNERJOIN NATURALLEFTOUTERJOIN INTERSECT CALENDAR CALENDARAUTO
+* DISTINCT
+* VÆRDIER
+* CROSSJOIN
+* UNION
+* NATURALINNERJOIN
+* NATURALLEFTOUTERJOIN
+* INTERSECT
+* CALENDAR
+* CALENDARAUTO
 
 Du kan se disse og andre DAX-funktioner, der returnerer en tabel, under [Reference til DAX-funktioner](https://msdn.microsoft.com/ee634396.aspx).
 

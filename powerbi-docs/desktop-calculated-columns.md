@@ -2,14 +2,14 @@
 title: Brug af beregnede kolonner i Power BI Desktop
 description: Beregnede kolonner i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: e9d1820bff2768f2169530ec49cfa2963bff9baa
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 4a47e707969b592ec27c79558699638ce14f8640
+ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-calculated-columns-in-power-bi-desktop"></a>Brug beregnede kolonner i Power BI Desktop
 Med beregnede kolonner kan du føje nye data til en tabel, der allerede findes i din model. Men i stedet for at forespørge efter og indlæse værdier i din nye kolonne fra en datakilde kan du oprette en DAX-formel (Data Analysis Expressions), der definerer værdierne i kolonnen. I Power BI Desktop oprettes der beregnede kolonner ved hjælp af funktionen Ny kolonne i rapportvisningen.
@@ -54,7 +54,7 @@ Nu har Jeff det felt, han ønsker.
 
 ![](media/desktop-calculated-columns/calccolinpbid_citystatefield.png)
 
-Han kan føje det til sit rapportlærred sammen med antallet af forsendelser. Meget hurtigt og med en meget lille indsats har Jeff nu feltet City, State. Han kan føje det til stort set alle former for visualisering. Jeff opdager endda, at når han opretter en kortvisualisering, ved Power BI Desktop også, hvordan værdierne for City, State i hans nye kolonne skal læses.
+Han kan føje det til sit rapportlærred sammen med antallet af forsendelser. Jeff har nu meget hurtigt og uden det store arbejde et felt af typen City, State, som han kan føje til stort set alle visualiseringstyper. Jeff ser, at når han opretter en kortvisualisering, ved Power BI Desktop tilmed, hvordan værdierne for City, State i hans nye kolonne skal læses.
 
 ![](media/desktop-calculated-columns/calccolinpbid_citystatemap.png)
 

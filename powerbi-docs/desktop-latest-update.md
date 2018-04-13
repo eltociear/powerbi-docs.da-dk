@@ -2,12 +2,12 @@
 title: Hvad er nyt i den nyeste opdatering af Power BI Desktop?
 description: Hvad er nyt i den nyeste opdatering af Power BI Desktop?
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: complete
 qualitydate: 05/31/2016
 ms.service: powerbi
@@ -15,22 +15,22 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/09/2018
+ms.date: 04/04/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 8dda30e988b4ab47eb32a85d746aeed38d565f2b
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 08dbb8c68ba7ca50766f104d0a7581c9f876f6d1
+ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Hvad er nyt i den nyeste opdatering af Power BI Desktop?
 
-## <a name="march-2018-update-2565023861"></a>Opdatering i marts 2018 (2.56.5023.861)
+## <a name="april-2018-update-2575068501"></a>Opdatering fra april 2018 (2.57.5068.501)
 
 Nu kan du [downloade den nyeste version af Power BI Desktop](https://powerbi.microsoft.com/desktop). Hvis du kører Windows 10, kan du også få **Power BI Desktop** fra Windows Store. De månedlige versioner er de samme, uanset hvilken måde du installerer **Power BI Desktop** på. Du kan finde flere oplysninger i [denne artikel](desktop-get-the-desktop.md). 
 
-Vi føler os lige så heldige som en firkløver med denne måneds opdateringer til **Power BI Desktop**.
+Vi mener det, når vi siger, at vi er meget glade for denne måneds opdateringer til **Power BI Desktop**. Vi fordeler opdateringerne over en håndfuld områder og håber, at de vil hjælpe dig med at forbedre dine fremtidige rapporter med fantastiske, smukke visualiseringer. 
 
 Linkene ud for hver opdatering betyder følgende:
 
@@ -45,40 +45,39 @@ Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 
 ### <a name="reporting"></a>Rapportering
 
-* Værktøjstip til rapportsiden [[video]](https://youtu.be/kuI6MMzDh34?t=16s) [[artikel]]() [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips) 
-* Angivelse af bogmærker er nu generelt tilgængelige [[video]](https://youtu.be/kuI6MMzDh34?t=9m2s) [[artikel]](desktop-bookmarks.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#bookmarking) 
-* Vis enheder og præcisionskontrolelementer for kolonnerne Tabel og Matrix [[video]](https://youtu.be/kuI6MMzDh34?t=11m1s) [[artikel]](desktop-slicer-numeric-range.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#displayUnits) 
-* Slå overskriften i visualiseringer fra i Læsetilstand for en rapport [[video]](https://youtu.be/kuI6MMzDh34?t=12m25s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualHeader) 
-* Forbedret standardplacering af visualiseringer [[video]](https://youtu.be/kuI6MMzDh34?t=14m45s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#visualPlacement) 
+* Spørgsmål og svar til Stifinder [[video]](https://youtu.be/W_Nb73Od_AI?t=13s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#Q&AExplorer) 
+* Knapper til at udløse handlinger [[video]](https://youtu.be/W_Nb73Od_AI?t=9m42s) [[artikel]](desktop-buttons.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#buttons) 
+* Stregtype i kombinationsdiagram [[video]](https://youtu.be/W_Nb73Od_AI?t=16m55s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#comboLines) 
+* Forbedret standardsortering af visualiseringer [[video]](https://youtu.be/W_Nb73Od_AI?t=19m21s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#sort) 
+* Numerisk udsnitsværktøj er nu generelt tilgængelig [[video]](https://youtu.be/W_Nb73Od_AI?t=21m13s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#numericSlicer) 
+
+### <a name="analytics"></a>Analyse
+
+* Opdater dit sproglige skema [[video]](https://youtu.be/W_Nb73Od_AI?t=22m) [[artikel]](power-bi-custom-visuals-organization.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#linguisticSchema) 
+* Ny DAX-funktion: COMBINEVALUES() [[video]](https://youtu.be/W_Nb73Od_AI?t=23m37s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#combineValues) 
 
 ### <a name="custom-visuals"></a>Brugerdefinerede visuelle elementer
 
-* Mange nye brugerdefinerede visualiseringer [[video]](https://youtu.be/kuI6MMzDh34?t=15m43s) [[artikel]](power-bi-custom-visuals-organization.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#customVisuals) 
+* Visualiseringer til organisationer er nu generelt tilgængelige [[video]](https://youtu.be/W_Nb73Od_AI?t=26m11s) [[artikel]](power-bi-custom-visuals-organization.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#organizationalVisuals) 
+* Mange nye brugerdefinerede visualiseringer [[video]](https://youtu.be/W_Nb73Od_AI?t=28m8s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#overviewByCloudScope) 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
 
-* Forbedringer af Visual Studio Team Services-forbindelseskomponent [[video]](https://youtu.be/kuI6MMzDh34?t=32m) [[artikel]](desktop-multi-select.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#vsts) 
-* Forbedringer af SAP HANA forbindelseskomponent [[video]](https://youtu.be/kuI6MMzDh34?t=32m44s) [[artikel]](desktop-directquery-sap-hana.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#saphana) 
-  * Flerdimensionel understøttelse af DirectQuery er nu generel tilgængelig
-  * Understøttelse af validering af SSL-certifikat
-* SAP BW DirectQuery er nu generel tilgængelig [[video]](https://youtu.be/kuI6MMzDh34?t=34m10s) [[artikel]](desktop-directquery-sap-hana.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#sapBW) 
-* Azure Analysis Services-forbindelseskomponenten er nu generel tilgængelig [[video]](https://youtu.be/kuI6MMzDh34?t=34m10s) [[artikel]](desktop-directquery-sap-hana.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#azureAS) 
+* Adobe Analytics-connector er nu generel tilgængelig [[video]](https://youtu.be/kuI6MMzDh34?t=32m) [[artikel]](desktop-multi-select.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#adobeAnalytics) 
+* Forbedret SAP HANA-connector: Portvalg [[video]](https://youtu.be/kuI6MMzDh34?t=32m44s) [[artikel]](desktop-directquery-sap-hana.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#sapHana) 
+* Dynamics 365 Business Central-connector [[video]](https://youtu.be/kuI6MMzDh34?t=34m10s) [[artikel]](desktop-directquery-sap-hana.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#dynamics365BusinessCentral) 
 
-### <a name="other"></a>Andet
 
-* Forbedret fejlrapportering [[video]](https://youtu.be/kuI6MMzDh34?t=34m51s) [[artikel]](desktop-directquery-about.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#errors) 
-* Få vist tidligere fejl, du har oplevet [[video]](https://youtu.be/kuI6MMzDh34?t=34m51s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#viewErrors) 
 
 > [!NOTE]
 > Du kan også [se alle de datakilder, du kan bruge i Power BI Desktop](desktop-data-sources.md). Vi opdaterer hele tiden listen med nye datakilder, så kig tilbage ofte.
 
-Vil du have flere oplysninger om disse opdateringer? Se nærmere på [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary), hvor du kan få mere detaljerede oplysninger om hver af de nye funktioner (dette er de samme referencer til blogindlæg på listen herover).
+Vil du have flere oplysninger om disse opdateringer? Se nærmere på [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary), hvor du kan få mere detaljerede oplysninger om hver af de nye funktioner (dette er de samme referencer til blogindlæg på listen herover).
 
 
 I følgende video beskrives og vises hver af disse opdateringer. Du kan også se videoen i blogindlægget.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kuI6MMzDh34" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W_Nb73Od_AI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 > [!NOTE]
 > Du kan også læse om [nyhederne i Power BI-tjenesten](service-whats-new.md) og se [nyhederne i mobileapperne til Power BI](mobile-whats-new-in-the-mobile-apps.md).

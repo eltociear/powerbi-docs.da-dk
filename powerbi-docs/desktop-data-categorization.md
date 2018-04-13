@@ -2,14 +2,14 @@
 title: Datakategorisering i Power BI Desktop
 description: Datakategorisering i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 00b70b6e56d11d0d7dda959f1983cc4631f53ff9
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: cc66655e49860160b43afa5d1acb688c37468212
+ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="data-categorization-in-power-bi-desktop"></a>Datakategorisering i Power BI Desktop
 I **Power BI Desktop** kan du angive datakategorien for en kolonne, så Power BI Desktop ved, hvordan dens værdier skal behandles i en visualisering.
@@ -40,7 +40,7 @@ Skal Power BI Desktop behandle koderne i kolonnen GeoCode som en forkortelse for
 **Sådan angiver du en datakategori**
 
 1. I Rapportvisning eller Datavisning på listen **Felter** skal du vælge det felt, der skal sorteres efter en anden kategorisering.
-2. På båndet skal du på fanen **Modellering af dataværktøjer** klikke på rullelisten **Datakategori:**.  Dermed får du vist listen over mulige datakategorier, du kan vælge imellem til kolonnen.  Nogle valgmuligheder kan være deaktiveret, hvis de ikke fungerer med den aktuelle datatype for kolonnen.  Hvis en kolonne f.eks. er en binær datatype, kan du ikke vælge geografiske datakategorier i Power BI Desktop. 
+2. På fanen **Modellering** på båndet skal du klikke på rullelisten **Datakategori:**.  Dermed får du vist listen over mulige datakategorier, du kan vælge imellem til kolonnen.  Nogle valgmuligheder kan være deaktiveret, hvis de ikke fungerer med den aktuelle datatype for kolonnen.  Hvis en kolonne f.eks. er en binær datatype, kan du ikke vælge geografiske datakategorier i Power BI Desktop. 
 
 ![](media/desktop-data-categorization/datacategorization.gif)
 
