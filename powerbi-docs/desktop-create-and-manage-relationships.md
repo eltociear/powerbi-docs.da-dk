@@ -2,14 +2,14 @@
 title: Opret og administrer relationer i Power BI Desktop
 description: Opret og administrer relationer i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: cd0f89766a07d468942735d5da0d99e5c6d1c87f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 0e9d1ed73abcd7234a96b28da638db649130c08e
+ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Opret og administrer relationer i Power BI Desktop
 Når du importerer flere tabeller, er det muligt, at du skal udføre analyser ved hjælp af data fra alle disse tabeller. Der skal være relationer mellem disse tabeller, før du kan beregne præcise resultater og vise korrekte oplysninger i dine rapporter. I Power BI Desktop er det nemt at oprette disse relationer. I de fleste tilfælde behøver du faktisk ikke at foretage dig noget – funktionen Registrer automatisk kan gøre det for dig. Men i nogle tilfælde skal du muligvis selv oprette relationer, eller det kan være nødvendigt at foretage ændringer i en relation. I begge tilfælde er det vigtigt at forstå relationer i Power BI Desktop, og hvordan du opretter og redigerer dem.
@@ -40,35 +40,35 @@ Under fanen **Hjem** skal du klikke på **Administrer relationer** \> **Automati
 2. I dialogboksen**Opret relation** skal du vælge en tabel på den første rulleliste med tabeller og derefter vælge den kolonne, du vil bruge i relationen.
 3. I den anden rulleliste med tabeller skal du vælge den anden tabel, du ønsker i relationen, vælge den anden kolonne, du vil bruge, og derefter klikke på **OK**.
 
-![](media/desktop-create-and-manage-relationships/manualrelationship.gif)
+![](media/desktop-create-and-manage-relationships/manualrelationship2.gif)
 
-Som standard konfigurerer Power BI Desktop automatisk egenskaberne Kardinalitet (retning), Tværgående filterretning og Aktiv for din nye relation. Du kan dog ændre disse under Avancerede indstillinger, hvis det er nødvendigt. Du kan få mere at vide ved at gå til afsnittet Om avancerede indstillinger senere i denne artikel.
+Som standard konfigurerer Power BI Desktop automatisk egenskaberne Kardinalitet (retning), Tværgående filterretning og Aktiv for din nye relation. Du kan dog ændre disse, hvis det er nødvendigt. Du kan finde flere oplysninger i afsnittet Om yderligere indstillinger senere i denne artikel.
 
 ## <a name="edit-a-relationship"></a>Rediger en relation
 1. Under fanen **Hjem** skal du klikke på **Administrer relationer**.
 2. I dialogboksen**Administrer relationer** skal du vælge relationen og derefter klikke på **Rediger**.
 
-## <a name="configure-advanced-options"></a>Konfigurer Avancerede indstillinger
-Når du opretter eller redigerer en relation, kan du konfigurere avancerede indstillinger.  Avancerede indstillinger konfigureres som standard automatisk baseret på et bedste gæt. Disse indstillinger kan være forskellige for de enkelte relationer baseret på dataene i kolonnerne.
+## <a name="configure-additional-options"></a>Konfigurer yderligere indstillinger
+Når du opretter eller redigerer en relation, kan du konfigurere yderligere indstillinger.  Yderligere indstillinger konfigureres som standard automatisk baseret på et bedste gæt. Disse indstillinger kan være forskellige for de enkelte relationer baseret på dataene i kolonnerne.
 
 ## <a name="cardinality"></a>Kardinalitet
 **Mange til en(\*: 1)** – Dette er den mest almindelige, dvs. standardtypen. Det betyder, at kolonnen i én tabel kan have mere end én forekomst af en værdi, og at den anden relaterede tabel, der ofte kaldes opslagstabellen, kun har én forekomst af en værdi.
 
 **En til en (1:1)** – Det betyder, at kolonnen i én tabel kun har én forekomst af en bestemt værdi, og at den anden relaterede tabel kun har én forekomst af en bestemt værdi.
 
-I afsnittet Om avancerede indstillinger senere i denne artikel kan du finde flere oplysninger om, hvornår du skal ændre kardinaliteten.
+I afsnittet Om yderligere indstillinger senere i denne artikel kan du finde flere oplysninger om, hvornår du skal ændre kardinaliteten.
 
 ## <a name="cross-filter-direction"></a>Tværgående filterretning
 **Begge** – Dette er den mest almindelige, dvs. standardretningen. Det betyder, at begge tabeller i forbindelse med filtrering behandles, som om de er en enkelt tabel.  Det fungerer fint sammen med en enkelt tabel, der har flere opslagstabeller, som omgiver den.  Et eksempel kan være en tabel med faktiske salgsværdier med en opslagstabel for afdeling.  Dette kaldes også en stjerneskemakonfiguration (en central tabel med flere opslagstabeller).  Men hvis du har to eller flere tabeller, der også har opslagstabeller (hvor nogle af dem er fælles), er det ikke en god ide at bruge indstillingen Begge.  Hvis vi fortsætter med eksemplet, skal du i dette tilfælde også have en budgetsalgstabel, der registrerer målbudgettet for hver afdeling.  Og afdelingstabellen er knyttet til både salgs- og budgettabellen.  Undgå indstillingen Begge for denne form for konfiguration.
 
 **Enkelt** – Det betyder, at filtreringsindstillinger i tilknyttede tabeller fungerer i den tabel, hvor værdierne aggregeres. Hvis du importerer en datamodel fra Power Pivot i Excel 2013 eller tidligere, har alle relationer en enkelt retning. 
 
-I afsnittet Om avancerede indstillinger senere i denne artikel kan du finde flere oplysninger om, hvornår du skal ændre den tværgående filterretning.
+I afsnittet Om yderligere indstillinger senere i denne artikel kan du finde flere oplysninger om, hvornår du skal ændre den tværgående filterretning.
 
 ## <a name="make-this-relationship-active"></a>Aktivér denne relation
 Når denne indstilling er markeret, betyder det, at relationen fungerer som den aktive standardrelation.  I de tilfælde, hvor der er mere end én relation mellem to tabeller, gør den aktive relation det muligt for Power BI Desktop automatisk at oprette visualiseringer, der inkluderer begge tabeller.
 
-I afsnittet Om avancerede indstillinger senere i denne artikel kan du finde flere oplysninger om, hvornår du skal gøre en bestemt relation aktiv.
+I afsnittet Om yderligere indstillinger senere i denne artikel kan du finde flere oplysninger om, hvornår du skal gøre en bestemt relation aktiv.
 
 ## <a name="understanding-relationships"></a>Om relationer
 Når du har knyttet to tabeller til en relation, kan du arbejde med dataene i begge tabeller, som om de var en enkelt tabel. På den måde undgår du at skulle bekymre dig om relationsdetaljer, og du behøver ikke at fladgøre disse tabeller til en enkelt tabel, før du importerer dem.  I mange situationer kan Power BI Desktop automatisk oprette relationer for dig, så det er måske slet ikke nødvendigt at oprette disse relationer selv. Hvis Power BI Desktop ikke med en høj grad af sikkerhed kan afgøre, om der findes en relation mellem to tabeller, oprettes relationen ikke automatisk. Hvis det er tilfældet, skal du oprette relationen.   
@@ -123,11 +123,11 @@ Kan du huske de kolonner, vi så i begge tabeller med et projektnavn men med væ
 
 Hvorfor disse kolonner? Hvis vi ser på kolonnen Project i tabellen ProjectHours, kan vi se værdier som Blue, Red, Yellow, Orange osv. Vi kan faktisk se flere rækker, der indeholder den samme værdi. Vi har mange farveværdier for Project.
 
-Hvis vi kigger på kolonnen ProjName i tabellen CompanyProject, kan vi se, at der kun er én af hver farveværdi for projektet. Hver farveværdi i denne tabel er entydig, og det er vigtigt, da vi kan oprette en relation mellem disse to tabeller. I dette tilfælde en mange til en-relation. I en mange til en-relation skal mindst én kolonne i en af tabellerne indeholde entydige værdier. Der findes nogle avancerede indstillinger for nogle relationer, og dem vil vi kigge på senere, men indtil videre opretter vi en relation mellem Project-kolonnerne i hver af vores to tabeller.
+Hvis vi kigger på kolonnen ProjName i tabellen CompanyProject, kan vi se, at der kun er én af hver farveværdi for projektet. Hver farveværdi i denne tabel er entydig, og det er vigtigt, da vi kan oprette en relation mellem disse to tabeller. I dette tilfælde en mange til en-relation. I en mange til en-relation skal mindst én kolonne i en af tabellerne indeholde entydige værdier. Der findes nogle yderligere indstillinger for nogle relationer, og dem kigger vi på senere, men indtil videre opretter vi en relation mellem Project-kolonnerne i hver af vores to tabeller.
 
 ### <a name="to-create-the-new-relationship"></a>Sådan opretter du en ny relation
 1. Klik på **Administrer relationer**.
-2. I **Administrer relationer** skal du klikke på **Ny**. Derved åbnes dialogboksen **Opret relation**, hvor vi kan vælge de tabeller, kolonner og eventuelle avancerede indstillinger, vi vil bruge til vores relation.
+2. I **Administrer relationer** skal du klikke på **Ny**. Derved åbnes dialogboksen **Opret relation**, hvor vi kan vælge de tabeller, kolonner og eventuelle yderligere indstillinger, vi vil bruge til vores relation.
 3. I den første tabel skal du vælge **ProjectHours** og derefter vælge kolonnen **Project**. Dette er mange-siden i vores relation.
 4. I den anden tabel skal du vælge **CompanyProject** og derefter vælge kolonnen **ProjName**. Dette er én-siden i vores relation.  
 5. Klik på **OK** både i dialogboksen **Opret relation** og dialogboksen **Administrer relationer**.
@@ -146,12 +146,12 @@ Når vi opsummerer timer efter prioritet, søger Power BI Desktop efter hver for
 
 Det var faktisk ret nemt, og med Registrer automatisk behøver du måske slet ikke at gøre så meget.
 
-## <a name="understanding-advanced-options"></a>Om avancerede indstillinger
-Når der oprettes en relation enten med Registrer automatisk, eller du opretter den manuelt, konfigurerer Power BI Desktop automatisk avancerede indstillinger baseret på dataene i tabellerne. Du kan konfigurere egenskaber for avancerede relationer ved at udvide Avancerede indstillinger i dialogboksen Opret/Rediger relation.
+## <a name="understanding-additional-options"></a>Om yderligere indstillinger
+Når der oprettes en relation enten vha. Registrer automatisk, eller ved at du opretter den manuelt, konfigurerer Power BI Desktop automatisk yderligere indstillinger på baggrund af dataene i tabellerne. Du kan konfigurere disser yderligere indstillinger for relationer, som befinder sig i den nederste del af dialogboksen Opret/rediger relation.
 
- ![](media/desktop-create-and-manage-relationships/candmrel_advancedoptions.png)
+ ![](media/desktop-create-and-manage-relationships/candmrel_advancedoptions2.png)
 
-Som sagt angives disse som regel automatisk, og du behøver ikke at gøre noget. Men der er mange situationer, hvor det kan være en god ide at konfigurere avancerede indstillinger selv.
+Som sagt angives disse som regel automatisk, og du behøver ikke at gøre noget. Men der er mange situationer, hvor det kan være en god idé at konfigurere disse indstillinger selv.
 
 ## <a name="future-updates-to-the-data-require-a-different-cardinality"></a>Fremtidige opdateringer af dataene kræver en anden kardinalitet
 Power BI Desktop kan som regel automatisk se, hvad der er den bedste kardinalitet for relationen.  Hvis du vil tilsidesætte den automatiske indstilling, fordi du ved, at dataene ændres i fremtiden, kan du vælge det i kardinalitetsfunktionen. Lad os se på et eksempel, hvor vi skal vælge en anden kardinalitet.
@@ -179,7 +179,7 @@ I tabellen CompanyProjectPriority nedenfor kan du se en liste over alle virksomh
 
 Hvis vi opretter en relation mellem kolonnen Project i tabellen CompanyProjectPriority og kolonnen ApprovedProjects i tabellen ProjectBudget, sker der følgende:
 
- ![](media/desktop-create-and-manage-relationships/candmrel_create_compproj_appproj.png)
+ ![](media/desktop-create-and-manage-relationships/candmrel_create_compproj_appproj2.png)
 
 Kardinaliteten angives automatisk til en til en (1:1), og den tværgående filtrering angives til Begge (som vist).  Dette skyldes, at for Power BI Desktop ser den bedste kombination af de to tabeller i virkeligheden ud som følger:
 
@@ -219,9 +219,9 @@ Men lad sige, at du ved, at dataene ændres, næste gang du opdaterer dem. En op
 | Blue |A |80000 |6/1/2013 |
 | Red |B |90000 |6/1/2013 |
 
-I denne nye kombinerede tabel indeholder kolonnen Project gentagne værdier.  De to oprindelige tabeller har ikke en en til en-relation, når tabellen er opdateret. Da vi i dette tilfælde ved, at disse fremtidige opdateringer vil medføre, at kolonnen Project får identiske værdier, vil vi angive kardinaliteten til en mange til én-relation (\*: 1), hvor mange er på ProjectBudget-siden, og én er på CompanyProject-siden.
+I denne nye kombinerede tabel indeholder kolonnen Project gentagne værdier.  De to oprindelige tabeller har ikke en en til en-relation, når tabellen er opdateret. Da vi i dette tilfælde ved, at disse fremtidige opdateringer vil medføre, at kolonnen Project får dubletter, vil vi angive kardinaliteten til en mange til én-relation (\*: 1), hvor mange er på ProjectBudget-siden, og én er på CompanyProjectPriority-siden.
 
-## <a name="adjusting-cross-filter-direction-for-a-complex-set-of-tables-of-relationships"></a>Juster den tværgående filterretning for et avanceret sæt tabeller med relationer
+## <a name="adjusting-cross-filter-direction-for-a-complex-set-of-tables-and-relationships"></a>Juster den tværgående filterretning for at få et avanceret sæt tabeller med relationer
 For de fleste relationer er den tværgående filterretning angivet til 'Begge'.  I mere sjældne tilfælde kan det dog være nødvendigt at angive noget andet end standardværdien, f.eks. hvis du importerer en model fra en ældre version af Power-Pivot, hvor hver relation er angivet til en enkelt retning. 
 
 Indstillingen Begge gør det muligt for Power BI Desktop at behandle alle aspekter af de tilknyttede tabeller, som om de var en enkelt tabel.  Der kan dog være situationer, hvor Power BI Desktop ikke kan angive en relations tværgående filterretning til 'Begge' og samtidig sørge for, at et entydigt sæt standarder er tilgængeligt for rapportering. Hvis en relations tværgående filterretning ikke er angivet til Begge, skyldes det som regel, at det ville medføre tvetydighed.  Hvis standardindstillingen for tværgående filtrering ikke virker for dig, kan du prøve at angive den til en bestemt tabel eller Begge.
@@ -250,7 +250,7 @@ Tværgående filterretning kan ikke bruges sammen med et mere generelt mønster,
 
  ![](media/desktop-create-and-manage-relationships/candmrel_crossfilterwithloops.png)
 
-Hvis du har et tabelmønster med løkker som i dette eksempel, kan tværgående filtrering oprette et tvetydigt sæt af relationer. Hvis du f.eks. opsummerer et felt fra TableX og derefter vælger at filtrere efter et felt i TableY, er det ikke tydeligt, i hvilken retning filteret skal gå – fra øverste tabel eller nederste tabel. Et almindeligt eksempel for denne form for mønster er, at TableX er en salgstabel med faktiske data, og TableY indeholder budgetdata. Tabellerne i midten er opslagstabeller, som begge tabeller bruger, f.eks. Division eller Region. 
+Hvis du har et tabelmønster med løkker som i dette eksempel, kan tværgående filtrering oprette et tvetydigt sæt af relationer. Hvis du f.eks. opsummerer et felt fra TableX og derefter vælger at filtrere efter et felt i TableY, er det ikke tydeligt, i hvilken retning filteret skal gå – fra øverste tabel eller nederste tabel. Et almindeligt eksempel på denne form for mønster er, at TableX er en salgstabel med faktiske data, og at TableY indeholder budgetdata. Tabellerne i midten er opslagstabeller, som begge tabeller bruger, f.eks. Division eller Region. 
 
 På samme måde som med aktive/inaktive relationer tillader Power BI Desktop ikke, at en relation angives til Begge, hvis det medfører tvetydighed i rapporter. Du kan løse dette problem på flere forskellige måder. Her er de to mest almindelige måder:
 

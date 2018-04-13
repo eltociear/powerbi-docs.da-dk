@@ -1,14 +1,14 @@
 ---
-title: "Markér et stregkodefelt i Power BI Desktop til mobilapps"
-description: "Når du markerer et stregkodefelt i modellen i Power BI Desktop, kan du automatisk filtrere data efter stregkoder i Power BI-appen på din iPhone."
+title: Markér et stregkodefelt i Power BI Desktop til mobilapps
+description: Når du markerer et stregkodefelt i modellen i Power BI Desktop, kan du automatisk filtrere data efter stregkoder i Power BI-appen på din iPhone.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -17,11 +17,11 @@ ms.workload: powerbi
 ms.date: 01/16/2018
 ms.author: maggies
 LocalizationGroup: Model your data
-ms.openlocfilehash: acac005938eb5f97a4a745dd9be72540438ed6ed
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 45cca153bbc65c5bad6c0f2ba8d41fbec4682ca5
+ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="tag-barcodes-in-power-bi-desktop-for-the-mobile-apps"></a>Markér stregkoder i Power BI Desktop til mobilapps
 I Power BI Desktop kan du [kategorisere data](desktop-data-categorization.md) i en kolonne, så Power BI Desktop ved, hvordan værdier skal behandles i visualiseringer i en rapport. Du kan også kategorisere en kolonne som **stregkode**. Når du eller dine kollegaer [scanner en stregkode på et produkt med Power BI-appen](mobile-apps-scan-barcode-iphone.md) på jeres iPhone, får I vist alle de rapporter, der indeholder denne stregkode. Når du åbner rapporten i mobilappen, filtrerer Power BI automatisk rapporten efter data, der er relateret til denne stregkode.
@@ -52,7 +52,7 @@ Power BI genkender følgende stregkoder, hvis du kan tagge dem i en Power Bi-rap
 
 ## <a name="next-steps"></a>Næste trin
 * [Scan en stregkode fra Power BI-appen på din iPhone](mobile-apps-scan-barcode-iphone.md)
-* [Udsted ved hjælp af scanning af stregkoder på en iPhone](mobile-apps-scan-barcode-iphone.md#issues-with-scanning-a-barcode)
+* [Problemer med scanning af stregkoder på en iPhone](mobile-apps-scan-barcode-iphone.md#issues-with-scanning-a-barcode)
 * [Datakategorisering i Power BI Desktop](desktop-data-categorization.md)  
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

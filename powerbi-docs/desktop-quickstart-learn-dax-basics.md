@@ -1,15 +1,15 @@
 ---
-title: "Grundlæggende DAX i Power BI Desktop"
-description: "Grundlæggende DAX i Power BI Desktop"
+title: Grundlæggende DAX i Power BI Desktop
+description: Grundlæggende DAX i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 1b6a08ffbc7d1edfe0a86b6eb0a84702dec22da0
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 474cca86151925ee4991d477a6127536180808a8
+ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>Grundlæggende DAX i Power BI Desktop
 Denne artikel henvender sig til nye brugere af Power BI Desktop. Hensigten med den er, at du får en hurtig og nem introduktion til, hvordan du kan bruge DAX (Data Analysis Expressions) til at løse en række grundlæggende problemer med beregning og dataanalyse. Vi vil gennemgå nogle grundlæggende oplysninger, en række opgaver, du kan udføre, og et par test for at se, hvad du har lært. Når du har gennemgået denne artikel, bør du have en god forståelse af de vigtigste grundlæggende begreber i DAX.
@@ -40,7 +40,7 @@ Vi vil fokusere på forståelse af DAX-formler, der bruges i beregninger, specie
 
 **Eksempelprojektmappe**
 
-Den bedste måde at lære DAX at kende på er ved at oprette nogle grundlæggende formler, bruge dem med faktiske data og selv se resultaterne. Til eksempler og opgaver her bruges Contoso-salgseksemplet til prøveversionen af Power BI Desktop-filen. Dette er den samme eksempelfil, der er anvendt i selvstudiet: Artiklen Create your own measures in Power BI Desktop (Opret dine egne målinger i Power BI Desktop). Du kan hente den [her](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip).
+Den bedste måde at lære DAX at kende på er ved at oprette nogle grundlæggende formler, bruge dem med faktiske data og selv se resultaterne. Til eksempler og opgaver her bruges Contoso-salgseksemplet til prøveversionen af Power BI Desktop-filen. Dette er den samme eksempelfil, der blev anvendt i artiklen [Selvstudium: Opret dine egne målinger i Power BI Desktop](desktop-tutorial-create-measures.md). Her er den [eksempelfil](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip), du skal downloade.
 
 ## <a name="lets-begin"></a>Lad os komme i gang!
 Vi vil basere forståelsen af DAX på tre grundlæggende begreber: *Syntaks*, *Funktioner* og *Kontekst*. Der er naturligvis andre vigtige begreber i DAX, men forståelse af disse tre begreber giver det bedste grundlag til opbygning af dine DAX-færdigheder.
@@ -72,7 +72,7 @@ Når du vil prøve at forstå DAX, er det ofte nyttigt at opdele hvert enkelt el
 
 Når den føjes til en rapport, beregner og returnerer denne måling værdier ved at sammenlægge salgsbeløb for hver af de andre felter, som er medtaget. f.eks. Cell Phones in the USA (Mobiltelefoner i USA).
 
-Det kan godt være, at du tænker "Udfører denne måling ikke præcis det samme, som hvis jeg bare ville føje feltet SalesAmount til min rapport?" Jo, det gør den. Men der er en god grund til at oprette vores egne måling, der sammenlægger værdier fra feltet SalesAmount: Vi kan bruge den som et argument i andre formler. Det virker muligvis en smule forvirrende lige nu, men i takt med, at dine færdigheder med DAX-formler øges, vil viden om dette gøre dine formler og din model mere effektiv. Senere vil du faktisk kunne se målingen Samlet salg blive vist som et argument i andre formler.
+Det kan godt være, at du tænker "Udfører denne måling ikke præcis det samme, som hvis jeg bare ville føje feltet SalesAmount til min rapport?" Jo, det gør den. Men der er en god grund til at oprette vores egne måling, der sammenlægger værdier fra feltet SalesAmount: Vi kan bruge den som et argument i andre formler. Det virker muligvis en smule forvirrende lige nu, men i takt med, at dine færdigheder med DAX-formler øges, vil viden om dette gøre dine formler og din model mere effektiv. Senere vil du faktisk kunne se målingen Total Sales blive vist som et argument i andre formler.
 
 Lad os gennemgå et par andre ting om denne formel. Vi har specielt introduceret en funktion, [SUM](https://msdn.microsoft.com/library/ee634387.aspx). Funktioner er formler, der er skrevet på forhånd, og som gør det nemmere at udføre komplekse beregninger og manipulationer med tal, datoer, tid, tekst og meget mere. Du får mere at vide om funktioner senere.
 
@@ -83,7 +83,7 @@ Du kan også se, at kolonnen [SalesAmount] fik tabellen Sales foranstillet, som 
 > 
 > 
 
-Det er vigtigt, at formlerne har den korrekte syntaks. Hvis syntaksen ikke er korrekt, vil der i de fleste tilfælde blive returneret en syntaksfejl. I andre tilfælde kan syntaksen være korrekt, men værdierne, der returneres, er muligvis ikke, hvad du forventer. DAX-editoren i Power BI Desktop indeholder forslag; en funktion, der bruges til at oprette syntaktisk korrekte formler ved at hjælpe dig med at vælge de korrekte elementer.
+Det er vigtigt, at formlerne har den korrekte syntaks. Hvis syntaksen ikke er korrekt, vil der i de fleste tilfælde blive returneret en syntaksfejl. I andre tilfælde kan syntaksen være korrekt, men værdierne, der returneres, er muligvis ikke, hvad du forventer. DAX-editoren i Power BI Desktop indeholder en funktion med forslag, der bruges til at oprette syntaktisk korrekte formler ved at hjælpe dig med at vælge de korrekte elementer.
 
 Lad os oprette en simpel formel. Denne opgave vil være med til at give dig en bedre forståelse af formelsyntaks, og hvordan forslagsfunktionen i formellinjen kan hjælpe dig.
 
@@ -104,14 +104,13 @@ For at udføre denne opgave skal du åbne filen Contoso Sales Sample Power BI De
    
 5.  Mellem parentesen **()** til funktionen **CALCULATE** skal du skrive **Sales[SalesAmount**. Dette er det første udtryksargument til vores CALCULATE-funktion.
     
-6.  Skriv et komma (**,**) for at angive det første filter, skriv derefter **PREVIOUSQUARTER** efterfulgt af en venstreparentes...
+6.  Skriv et komma (**,**) for at angive det første filter, skriv derefter **PREVIOUSQUARTER** efterfulgt af en startparentes.
     
     Du skal bruge tidsintelligensfunktionen PREVIOUSQUARTER til at filtrere vores SUM-resultater efter det forrige kvartal.
     
 7.  Skriv **Calendar[DateKey]** i **parentesen** til funktionen PREVIOUSQUARTER.
     
     Funktionen PREVIOUSQUARTER har ét argument, som er en kolonne, der indeholder et sammenhængende datoområde.
-    >
     
 8.  Sørg for, at begge argumenter, der overføres til funktionen PREVIOUSQUARTER og funktionen CALCULATE, lukkes af to afsluttende parenteser **))**.
     
@@ -125,7 +124,7 @@ Du gjorde det! Du har lige oprettet en måling ved hjælp af DAX og endda en, de
 
 ![](media/desktop-quickstart-learn-dax-basics/qsdax_3_chart.png)
 
-Du er lige blevet introduceret til flere vigtige aspekter af DAX-formler. Denne formel inkluderede for det første to funktioner. Bemærk, at funktionen [PREVIOUSQUARTER](https://msdn.microsoft.com/library/ee634385.aspx), en tidsintelligens, indlejres som et argument, der overføres til [CALCULATE](https://msdn.microsoft.com/library/ee634825.aspx), en filterfunktion. DAX-formler kan indeholde op til 64 indlejrede funktioner. Det er usandsynligt, at en formel nogen sinde vil indeholde så mange indlejrede funktioner. En sådan formel ville reelt være særdeles vanskelig at oprette og foretage fejlfinding af og ville sandsynligvis heller ikke være ret hurtig.
+Du er lige blevet introduceret til flere vigtige aspekter af DAX-formler. Denne formel inkluderede for det første to funktioner. Bemærk, at [PREVIOUSQUARTER](https://msdn.microsoft.com/library/ee634385.aspx), der er en tidsintelligensfunktion, indlejres som et argument, der overføres til filtreringsfunktionen [CALCULATE](https://msdn.microsoft.com/library/ee634825.aspx). DAX-formler kan indeholde op til 64 indlejrede funktioner. Det er usandsynligt, at en formel nogen sinde vil indeholde så mange indlejrede funktioner. En sådan formel ville reelt være særdeles vanskelig at oprette og foretage fejlfinding af og ville sandsynligvis heller ikke være ret hurtig.
 
 I denne formel har du også brugt filtre. Filtre begrænser det, der beregnes. I dette tilfælde valgte du ét filter som et argument, hvilket faktisk er resultatet af en anden funktion. Du får mere at vide om filtre senere.
 
@@ -144,7 +143,7 @@ Svarene er angivet i slutningen af denne artikel.
 ### <a name="functions"></a>Funktioner
 Funktioner er foruddefinerede formler, der udfører beregninger ved hjælp af bestemte værdier, kaldet argumenter, i en bestemt rækkefølge eller struktur. Argumenter kan være andre funktioner, en anden formel, et udtryk, kolonnereferencer, tal, tekst, logiske værdier som f.eks. TRUE eller FALSE eller konstanter.
 
-DAX indeholder følgende kategorier af funktioner: [Dato og klokkeslæt](https://msdn.microsoft.com/library/ee634786.aspx), [Tidsintelligens](https://msdn.microsoft.com/library/ee634763.aspx)[,](https://msdn.microsoft.com/library/ee634552.aspx)[Oplysninger](https://msdn.microsoft.com/library/ee634552.aspx), [ Logisk](https://msdn.microsoft.com/library/ee634365.aspx)[,](https://msdn.microsoft.com/library/ee634365.aspx)[Matematisk](https://msdn.microsoft.com/library/ee634241.aspx), [Statistisk](https://msdn.microsoft.com/library/ee634822.aspx), [Tekst](https://msdn.microsoft.com/library/ee634938.aspx), [Overordnet/underordnet](https://msdn.microsoft.com/library/mt150102.aspx) og [Andet](https://msdn.microsoft.com/library/mt150101.aspx). Hvis du kender funktioner i formler i Excel, vil mange af funktionerne i DAX virke bekendte for dig. Men DAX-funktioner er imidlertid helt specielle på følgende måder:
+DAX indeholder følgende kategorier af funktioner: [Dato og klokkeslæt](https://msdn.microsoft.com/library/ee634786.aspx), [Tidsintelligens](https://msdn.microsoft.com/library/ee634763.aspx),[Oplysninger](https://msdn.microsoft.com/library/ee634552.aspx), [Logisk](https://msdn.microsoft.com/library/ee634365.aspx),[Matematisk](https://msdn.microsoft.com/library/ee634241.aspx), [Statistisk](https://msdn.microsoft.com/library/ee634822.aspx), [Tekst](https://msdn.microsoft.com/library/ee634938.aspx), [Overordnet/underordnet](https://msdn.microsoft.com/library/mt150102.aspx) og [Andet](https://msdn.microsoft.com/library/mt150101.aspx). Hvis du kender funktioner i formler i Excel, vil mange af funktionerne i DAX virke bekendte for dig. Men DAX-funktioner er imidlertid helt specielle på følgende måder:
 
 * En DAX-funktion refererer altid til en hel kolonne eller tabel. Hvis du kun vil bruge bestemte værdier fra en tabel eller kolonne, kan du føje filtre til formlen.
 * Har du behov for at tilpasse beregningerne række for række, har DAX funktioner, der giver dig mulighed for at bruge den aktuelle rækkeværdi eller en relateret værdi som en form for argument, så du kan foretage beregninger, der varierer alt efter indhold. Du får mere at vide om kontekst senere.
@@ -172,7 +171,7 @@ Det er nemmest at tænke på rækkekontekst som den aktuelle række. Den er rele
 
 Filterkontekst er lidt sværere at forstå end rækkekontekst. Det er nemmest at tænke på filterkontekst som: Et eller flere filtre, der anvendes i en beregning, som angiver et resultat eller en værdi.
 
-Filterkontekst bruges ikke i stedet for rækkekontekst, men anvendes i stedet som en tilføjelse til rækkekontekst. Hvis du f.eks. vil foretage yderligere begrænsning af de værdier, der skal medtages i en beregning, kan du anvende en filterkontekst, som ikke kun angiver rækkekonteksten, men også kun angiver en bestemt værdi (filter) i denne rækkekontekst.
+Filterkontekst bruges ikke i stedet for rækkekontekst, men anvendes i stedet som en tilføjelse til rækkekontekst. Hvis du f.eks. vil foretage yderligere begrænsning af de værdier, der skal inkluderes i en beregning, kan du anvende en filterkontekst, som ikke kun angiver rækkekonteksten, men også kun angiver en bestemt værdi (filter) i denne rækkekontekst.
 
 Filterkontekst kan nemt ses i dine rapporter. Når du f.eks. føjer SamletPris til en visualisering og derefter tilføjer År og Område, definerer du en filterkontekst, der vælger en delmængde af data baseret på et givet år og område.
 
