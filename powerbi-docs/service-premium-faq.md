@@ -3,7 +3,7 @@ title: Ofte stillede spørgsmål om Power BI Premium
 description: Gennemse en liste med ofte stillede spørgsmål og svar om tilbuddene i Power BI Premium.
 services: powerbi
 documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -16,13 +16,13 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/20/2017
-ms.author: maghan
+ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: c5d96b0aa9ce02abf3e88d83718d70a3b8033897
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: 102937b5e899d997cebb5fde44e74f2a71dcfda8
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="power-bi-premium-faq"></a>Ofte stillede spørgsmål om Power BI Premium
 Gennemse en liste med ofte stillede spørgsmål og svar om tilbuddene i Power BI Premium.

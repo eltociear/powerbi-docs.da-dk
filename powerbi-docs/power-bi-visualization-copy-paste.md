@@ -1,28 +1,28 @@
 ---
-title: "Kopiér og indsæt en visualisering i Power BI"
-description: "Kopiér og indsæt en visualisering i Power BI"
+title: Kopiér og indsæt en visualisering i Power BI
+description: Kopiér og indsæt en visualisering i Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8074845fc2f48ba8b06134cfefcbf8f15ace5350
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 8e00bb4ca2e39462624a489dd96bbd2b266aa6c3
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="copy-and-paste-a-visualization-in-power-bi-service-and-power-bi-desktop"></a>Kopiér og indsæt en visualisering i Power BI-tjenesten og Power BI Desktop
 Kopiering og indsættelse af en visualisering kræver redigeringsrettigheder til rapporten. I Power BI-tjenesten betyder det, at rapporten skal åbnes i [Redigeringsvisning](service-reading-view-and-editing-view.md).
@@ -33,9 +33,7 @@ Kopiering og indsættelse af en visualisering kræver redigeringsrettigheder til
    ![](media/power-bi-visualization-copy-paste/copypasteviznew.gif)
 
 ### <a name="next-steps"></a>Næste trin
-Mere om [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
-
-[Power BI – Grundlæggende begreber](service-basic-concepts.md)  
+Få mere at vide om [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -2,28 +2,28 @@
 title: KPI-visualiseringer (selvstudium)
 description: opret KPI i Power BI-tjenesten og Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: xmja6EpqaO0
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/21/2017
+ms.date: 03/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1a937b77135d6ad7843a6e0be779c235a1073f46
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 4d6af52f10f16d973dc97ed0da1ed74bf63ec2cc
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="kpi-visuals-tutorial"></a>KPI-visualiseringer (selvstudium)
 Et nøgletal (KPI) er en visuel ledetråd, der viser fremgangen mod et målbart mål. Du kan finde flere oplysninger om KPI'er ved at se [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
@@ -76,11 +76,8 @@ KPI'er er også tilgængelige på dine mobilenheder, så du altid har fingeren p
 * Hvis KPI'et ikke ligner det ovenfor, kan det skyldes, at du skal sortere efter måned. Da KPI'er ikke har en sorteringsindstilling, skal du sorterer efter måned, *før* du konverterer din visualisering til et KPI.
 
 ## <a name="next-steps"></a>Næste trin
-[Rapporter i Power BI](service-reports.md)
 
 [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
-
-[Power BI – grundlæggende begreber](service-basic-concepts.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

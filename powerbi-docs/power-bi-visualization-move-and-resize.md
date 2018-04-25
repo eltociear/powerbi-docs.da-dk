@@ -1,28 +1,28 @@
 ---
-title: "Flyt og tilpas størrelsen på en visualisering, og få den til at skille sig ud"
-description: "Flyt og tilpas størrelsen på en visualisering i en rapport i Power BI-tjenesten og Desktop"
+title: Flyt og tilpas størrelsen på en visualisering, og få den til at skille sig ud
+description: Flyt og tilpas størrelsen på en visualisering i en rapport i Power BI-tjenesten og Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a46df6e225a5546f58e4f111d9cd3920a128614c
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 66df86d0db9767f29a1fdca637b95bb66cd9252d
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="move-and-resize-a-visualization-in-a-report-in-power-bi-service-and-power-bi-desktop"></a>Flyt og tilpas størrelsen på en visualisering i en rapport i Power BI-tjenesten og Power BI Desktop
 Kun rapportoprettere og -ejere kan flytte og tilpasse størrelsen på visualiseringer. I Power BI-tjenesten (app.powerbi.com) betyder det, at rapporten skal åbnes i [Redigeringsvisning](service-reading-view-and-editing-view.md).
@@ -43,9 +43,5 @@ Kun rapportoprettere og -ejere kan flytte og tilpasse størrelsen på visualiser
 
 ## <a name="next-steps"></a>Næste trin
 [Tilpas størrelsen på en visualisering på et dashboard](service-dashboard-edit-tile.md)  
-
-[Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)  
-
-[Power BI – grundlæggende begreber](service-basic-concepts.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

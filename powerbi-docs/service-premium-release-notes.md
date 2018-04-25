@@ -1,28 +1,28 @@
 ---
-title: "Produktbemærkninger til Power BI Premium"
-description: "Læs produktbemærkningerne til Power BI Premium, som er en dedikeret kapacitet for din organisation eller dit team."
+title: Produktbemærkninger til Power BI Premium
+description: Læs produktbemærkningerne til Power BI Premium, som er en dedikeret kapacitet for din organisation eller dit team.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/11/2017
-ms.author: maghan
+ms.author: mgblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: e25677f615f4aa5b1489604814cebc6916809c41
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 91126fa362dd6bca3e85b28959b5059825cd8a07
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="power-bi-premium-release-notes"></a>Produktbemærkninger til Power BI Premium
 Disse er produktbemærkningerne til Power BI Premium, som er en dedikeret kapacitet, der giver din organisation eller dit team mere pålidelig ydeevne, større datamængder og mulighed for at distribuere indhold uden licenser pr. bruger til fremvisere.
