@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/13/2018
+ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a9cb6e3d3fe244a3d530efeb2624e3cc5a799e55
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 1ccc4eeff54bff91a9ed245fdb82462768b65264
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Læsevisning og Redigeringsvisning i rapporter i Power BI-tjenesten
 Der er to forskellige tilstande til at få vist og interagere med rapporter i Power BI-tjenesten (ikke Power BI Desktop): Læsevisning og Redigeringsvisning. Læsevisning er tilgængelig for alle brugere og er især designet til *forbrugere* af data, mens Redigeringsvisning kun er tilgængelig for *oprettere* og ejere af rapporter.
@@ -48,7 +48,6 @@ Alle rapportfunktionerne i Power BI-tjenesten er ikke er angivet i dette diagram
 |Opgave  | Læsevisning  | Redigeringsvisning |
 |-------------------------|-------|-------|
 |**Rapporter som helhed**  |
-||||
 | [Opret eller rediger en rapport](service-report-create-new.md) | Nej  | Ja |
 | [Del en rapport](service-share-reports.md)| Ja | Ja, og du kan også administrere tilladelser, herunder give andre *ejertilladelser*. |
 | [Opret vedvarende (permanente) filtre for visuelt niveau, detaljeadgangsfiltre, filtre for sideniveau og rapportniveau fra ruden Filtre](power-bi-report-add-filter.md) | Nej  | Ja |
@@ -63,12 +62,10 @@ Alle rapportfunktionerne i Power BI-tjenesten er ikke er angivet i dette diagram
 | [Gem en rapport](service-report-save.md) | Ja, men kun ved hjælp af **Gem som**. | Ja |
 | [Slet en rapport](service-delete.md) | Nej  | Ja |
 |**Rapportsider** |
-||||
 | [Tilføj eller omdøb en rapportside](power-bi-report-add-page.md)  | Nej  | Ja  |
 | [Dupliker en rapportside](power-bi-report-copy-paste-page.md) | Nej  | Ja |
 | [Slet rapportside](service-delete.md) | nej | ja |
 |**Arbejd med rapportvisualiseringer**|
-||||
 | [Føj visualiseringer til en rapport](power-bi-report-add-visualizations-i.md) | Nej  | Ja |
 | [Føj tekstfelter og figurer til en rapport](power-bi-reports-add-text-and-shapes.md) | Nej  | Ja |
 | [Brug ruden rapportformatering](service-the-report-editor-take-a-tour.md) | Nej | Ja |

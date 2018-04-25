@@ -1,28 +1,28 @@
 ---
-title: "Power BI til Office 365 er udgået"
-description: "Power BI til Office 365 er udgået. Se, hvordan du bruger og administrerer det aktuelle Power BI."
+title: Power BI til Office 365 er udgået
+description: Power BI til Office 365 er udgået. Se, hvordan du bruger og administrerer det aktuelle Power BI.
 services: powerbi
-documentationcenter: 
-author: davidiseminger
+documentationcenter: ''
+author: mgblythe
 manager: kfile
 backup: amandacofsky
-editor: 
-tags: 
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 12/06/2017
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: c83ae371153443f48fa6996e4024119ca3d94d04
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 34e739ef47207b2f3fe3f9d5536c7941164bae98
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="power-bi-for-office-365-is-retired"></a>Power BI til Office 365 er udgået
 Power BI til Office 365, der er en tidligere version af Power BI, er overgået til den aktuelle version af [Power BI](https://powerbi.microsoft.com). Brugere, som tidligere har brugt **Power BI til Office 365**, kan bruge den aktuelle version af Power BI. Du kan [få mere at vide om Power BI](service-get-started.md).

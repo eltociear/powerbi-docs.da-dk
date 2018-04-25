@@ -1,32 +1,32 @@
 ---
-title: "Føj et link til et tekstfelt i en rapport"
-description: "Føj et link til et tekstfelt i Power BI-tjenesten og Desktop"
+title: Føj et link til et tekstfelt i en rapport
+description: Føj et link til et tekstfelt i Power BI-tjenesten og Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-featuredvideoid: 
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/20/2017
+ms.date: 03/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 95352c72dfca1c1439f89d532dbcfcc5cd26758c
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 13edfd3f6968af66f96e3690f2509ba8a7158bbe
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Føj et link til et tekstfelt i en rapport
-Tekstfelter kan føjes til rapporter, fastgøres til dashboards fra rapporter og føjes direkte til dashboards. Links kan føjes til et tekstfelt, uanset hvor det befinder sig. **I dette emne beskrives tekstfelter i rapporter i Power BI-tjenesten (ikke Power BI Desktop).**
+Tekstfelter kan føjes til rapporter, fastgøres til dashboards fra rapporter og føjes direkte til dashboards. Links kan føjes til et tekstfelt, uanset hvor det befinder sig.  
 
 > **Bemærk**! Du kan finde oplysninger om links i Power BI-tabeller og -matrixer under [Links i tabeller](power-bi-hyperlinks-in-tables.md). Du kan se flere oplysninger om tilføjelse af tekstfelter i dit **dashboard** under [Tilføj et felt direkte fra dashboardet ](service-dashboard-add-widget.md). 
 > 
@@ -61,8 +61,6 @@ Tekstfelter kan føjes til rapporter, fastgøres til dashboards fra rapporter og
 
 ## <a name="next-steps"></a>Næste trin
 [Tekstfelter i Power BI-rapporter](power-bi-reports-add-text-and-shapes.md)
-
-[Føj et tekstfelt til et dashboard](service-dashboard-add-widget.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
