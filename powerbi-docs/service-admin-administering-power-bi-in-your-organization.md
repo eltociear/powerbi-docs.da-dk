@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 11/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 64dd0239026d3529129924b8d89eb5cc2642a9af
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: d5cb48469cc5ed5b49da841552bf7426ad29c3fb
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="administering-power-bi-in-your-organization"></a>Administrere Power BI i din organisation
 Microsoft Power BI sætter brugerne i stand til at visualisere data, dele opdagelser og samarbejde på intuitive nye måder. Lær mere ved at se [Introduktion til Power BI](service-get-started.md).
@@ -185,8 +185,6 @@ Du skal installere den seneste 64-bit version af [Azure Active Directory Module 
 Hvis organisationen allerede har et eksisterende Office 365-miljø, og alle brugerne i organisationen har Office 365-konti, ændres identitetsstyringen ikke.
 
 Hvis organisationen allerede har et eksisterende Office 365-miljø, men det ikke er alle brugerne i organisationen, der har Office 365-konti, opretter vi en bruger i lejeren og tildeler licenser på baggrund af brugernes arbejds- eller skolemailadresser. Det betyder, at antallet af brugere, som du administrerer på et givent tidspunkt, vil vokse, efterhånden som brugerne i organisationen tilmelder sig tjenesten.
-
-Hvis du administrerer dit bibliotek i et lokalt miljø og bruger Active Directory Federation Services (AD FS), føjer Microsoft ikke brugere til lejeren, og brugere, der forsøger at tilmelde sig lejeren, modtager en meddelelse om at kontakte organisationens administrator.
 
 Hvis din organisation ikke har et Office 365-miljø, der er sluttet til dit maildomæne, er der ingen ændring i, hvordan du administrerer identiteter. Brugerne føjes til en ny brugermappe udelukkende for cloudmiljøet, og du får mulighed for at overtage lejeradministrationen og administrere dem.
 

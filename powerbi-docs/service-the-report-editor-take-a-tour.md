@@ -1,29 +1,29 @@
 ---
-title: "Hurtig introduktion – Rapporteditoren ... Få en rundvisning"
-description: "Rapporteditoren... Få en introduktion."
+title: Hurtig introduktion – Rapporteditoren ... Få en rundvisning
+description: Rapporteditoren... Få en introduktion.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
+backup: ''
+editor: ''
 featuredvideoid: IkJda4O7oGs
-tags: 
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/28/2018
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: ea40bafdc3c210771e5dd02368df41d3d9287baf
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.openlocfilehash: b134fe1e5d14f3707391888951178553d5cda7e5
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="the-report-editortake-a-tour"></a>Rapporteditoren... Få en introduktion
 ## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Redigering af rapporter i Power BI-tjenesten og Power BI Desktop
@@ -56,7 +56,6 @@ Det indhold, der vises i rapporteditoren, varierer i forhold til valg, du foreta
 |  |  |
 | --- | --- |
 | ![](media/service-the-report-editor-take-a-tour/power-bi-panes.png) |<ul><li>Øverst i ruden Visualisering identificeres den type visuelle element, der bruges. I dette eksempel et grupperet søjlediagram.<br><br></li> <li>Nederst i ruden Visualisering (du skal muligvis rulle ned) vises de felter, der bruges i det visuelle element. Dette diagram bruger FiscalMonth, DistrictManager og Total Sales Variance. <br><br></li><li>Ruden Filtre (du skal muligvis rulle ned) viser alle de filtre, der er anvendt. <br><br></li><li>Ruden Felter indeholder de tilgængelige tabeller, og hvis du udvider en tabels navn, de felter, der udgør tabellen. Med gul skrifttype ved du, at mindst ét felt fra denne tabel bruges i visualiseringen.<br><br></li><li>![malerrulleikon](media/service-the-report-editor-take-a-tour/power-bi-paint-roller-icon.png) Vælg malerrulleikonet for at vise formateringsruden for den valgte visualisering.<br><br></li><li>![forstørrelsesglasikon](media/service-the-report-editor-take-a-tour/power-bi-magnifying-icon.png) Vælg forstørrelsesglasikonet for at få vist ruden Analystics.</ul> |
-|  | |
 
 ## <a name="the-visualizations-pane-from-top-to-bottom"></a>Ruden visualiseringer (oppefra og ned)
 ![toppen af ruden Visualiseringer](media/service-the-report-editor-take-a-tour/selectviz.png)
