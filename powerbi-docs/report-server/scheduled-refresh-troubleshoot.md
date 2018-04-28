@@ -1,15 +1,15 @@
 ---
 title: Fejlfinding i forbindelse med planlagt opdatering i Power BI Report Server
-description: "I denne artikel beskrives ressourcer, der er tilgængelige til fejlfinding i forbindelse med planlagt opdatering i Power BI Report Server."
+description: I denne artikel beskrives ressourcer, der er tilgængelige til fejlfinding i forbindelse med planlagt opdatering i Power BI Report Server.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: 466505ae2c4050629e8bbcc4ff90cde520d31375
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: cf084492a7b5d1ecc10ff933eeaef4cdbdc14022
+ms.sourcegitcommit: bdb1fee3612bcc66153dcad8c4db2e99fb041014
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="troubleshoot-scheduled-refresh-in-power-bi-report-server"></a>Fejlfinding i forbindelse med planlagt opdatering i Power BI Report Server
 I denne artikel beskrives ressourcer, der er tilgængelige til fejlfinding i forbindelse med planlagt opdatering i Power BI Report Server.
@@ -60,7 +60,6 @@ Følgende indstillinger kan bruges til at påvirke planlagt opdatering. Indstill
 
 | Indstilling | Beskrivelse |
 | --- | --- |
-| EnablePowerBIReportEmbeddedModels |Aktiverer eller deaktiverer muligheden for at bruge importerede data i dine rapporter. Gyldige værdier er sand eller falsk. |
 | MaxFileSizeMb |Maksimal filstørrelse for uploadede rapporter. Standard er 1000 MB (1 GB). Maksimal værdi er 2000 MB (2 GB). |
 | ModelCleanupCycleMinutes |Definerer, hvor ofte modellen kontrolleres for at fjerne den fra hukommelsen. Standard er 15 minutter. |
 | ModelExpirationMinutes |Definerer, hvor lang tid der går, før modellen udløber, baseret på tidspunkt for sidste brug, og den fjernes. Standard er 60 minutter. |
