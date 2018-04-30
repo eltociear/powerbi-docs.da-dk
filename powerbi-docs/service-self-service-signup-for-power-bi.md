@@ -1,13 +1,13 @@
 ---
 title: Tilmelding til Power BI som enkeltperson
-description: "Få mere at vide om, hvordan du tilmelder dig Power BI og begynder at bruge det til personlige rapporter og visualiseringsopgaver, der passer til dine behov."
+description: Få mere at vide om, hvordan du tilmelder dig Power BI og begynder at bruge det til personlige rapporter og visualiseringsopgaver, der passer til dine behov.
 services: powerbi
-documentationcenter: 
-author: markingmyname
+documentationcenter: ''
+author: mgblythe
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: monitoring
 qualitydate: 08/02/2017
 ms.service: powerbi
@@ -16,13 +16,13 @@ ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/02/2018
-ms.author: maghan
+ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: b098c87796306bedb8f9da43971d093f464dd4bd
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 7f40fdfd3e9784ab05fe0f44612cea6d48d739fe
+ms.sourcegitcommit: 20adb55065af8e2f48387a00e64c72cf6d700f0f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Tilmelding til Power BI som enkeltperson
 Få mere at vide om, hvordan du tilmelder dig Power BI og begynder at bruge det til personlige rapporter og visualiseringsopgaver, der passer til dine behov.
@@ -68,7 +68,7 @@ Resten af denne artikel ser på, hvordan man tilmelder sig de forskellige versio
 Den hurtigste måde at tilmelde sig Power BI på er ved at tilmelde sig en Power BI-konto (gratis). Denne konto er gratis, og du kan derigennem bruge mange af de funktioner, der er tilgængelige i tjenesten.
 
 > [!NOTE]
-> Hvis du modtager en meddelelse om, at vi allerede kender dig, kan du prøve at navigere til https://app.powerbi.com og logge på.
+> Hvis du modtager en meddelelse om, at vi allerede kender dig, kan du prøve at gå til https://app.powerbi.com og logge på.
 > 
 > 
 
@@ -88,7 +88,7 @@ Hvis du vil tilmelde dig Power BI, kan du gøre følgende.
    
     ![](media/service-self-service-signup-for-power-bi/powerbi-free-signup4.png)
 6. Klik på linket i mailen for at bekræfte din mailadresse. Herefter sendes du tilbage til tilmeldingsproceduren. Du skal muligvis angive nogle flere oplysninger om dig selv.
-7. Du sendes derefter til https://app.powerbi.com, hvor du kan begynde at bruge Power BI som gratis-bruger.
+7. Du sendes derefter til https://app.powerbi.com, hvor du kan begynde at bruge Power BI som gratis bruger.
 
 ### <a name="what-this-looks-like-within-the-service"></a>Sådan ser det ud i tjenesten
 Når du befinder dig i tjenesten, kan du bekræfte, at du har en gratis konto, ved at gå til **tandhjulsikonet** og vælge **Administrer personligt lager**.
