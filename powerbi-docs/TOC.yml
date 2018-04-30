@@ -846,10 +846,12 @@
           href: desktop-send-smile-privacy-statement.md
     - name: Fejlfinding
       items:
-        - name: 'Løs problemer, når Access-databaser og Excel-regneark importerer til Power BI Desktop og Power Query'
-          href: desktop-access-database-errors.md
+        - name: Løs problemer under logon på Power BI Desktop
+          href: desktop-troubleshooting-sign-in.md
         - name: 'Løs problemer, når Power BI Desktop startes'
           href: desktop-error-launching-desktop.md
+        - name: 'Løs problemer, når Access-databaser og Excel-regneark importerer til Power BI Desktop og Power Query'
+          href: desktop-access-database-errors.md
 - name: Power BI-mobilapps
   items:
     - name: Kom i gang
@@ -1070,9 +1072,9 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848709'
         - name: Arbejd med KPIer
           href: 'https://go.microsoft.com/fwlink/?linkid=849021'
-        - name: Understøttede datakilder
+        - name: Power BI-rapportdatakilder (.pbix)
           href: report-server/data-sources.md
-        - name: Opret forbindelse til datakilder
+        - name: Sideinddelte rapportdatakilder (.rdl)
           href: report-server/connect-data-sources.md
         - name: 'Få adgang til delte datasæt såsom OData-feeds '
           href: report-server/access-dataset-odata.md

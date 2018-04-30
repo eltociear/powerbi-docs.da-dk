@@ -3,7 +3,7 @@ title: Datagateway i det lokale miljø
 description: Dette er en oversigt over datagatewayen i det lokale miljø til Power BI. Du kan bruge denne gateway til at arbejde med DirectQuery-datakilder. Du kan også bruge denne gateway til at opdatere clouddatasæt med data i det lokale miljø.
 services: powerbi
 documentationcenter: ''
-author: markingmyname
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -16,13 +16,13 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
 ms.date: 03/26/2018
-ms.author: maghan
+ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1c0bd455d8b2dd34cc7d9ef20b0e75c5457034d2
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: ee696e4d967e995771480d660de260b6d3b755cd
+ms.sourcegitcommit: 0cae0e6e1fd06b6465721702b2d0bb8333eb5afb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="on-premises-data-gateway"></a>Datagateway i det lokale miljø
 En datagateway i det lokale miljø fungerer som en bro, der giver hurtig og sikker dataoverførsel mellem data i det lokale miljø (data, der ikke er i cloudmiljøet) og tjenesterne Power BI, Microsoft Flow, Logic Apps og PowerApps.
@@ -95,6 +95,11 @@ Når du føjer en datakilde til gatewayen, skal du angive legitimationsoplysning
 * [Azure Information Protection](https://docs.microsoft.com/en-us/microsoft-365/enterprise/protect-files-with-aip
 ) understøttes ikke i øjeblikket
 * [Access Online](https://products.office.com/en-us/access) understøttes ikke i øjeblikket
+
+## <a name="tenant-level-administration"></a>Administration på lejerniveau 
+
+Der er i øjeblikket ikke ét enkelt sted, hvor lejeradministratorer kan administrere alle de gateways, som andre brugere har installeret og konfigureret.  Hvis du er en lejeradministrator, anbefaler vi, at du beder brugerne i din organisation om at tilføje dig som administrator af hver enkelt gateway, de installerer. Dette gør det muligt for dig at administrere alle gateways i din organisation via siden Indstillinger for Gateway eller en via [PowerShell-kommandoer](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters). 
+
 
 ## <a name="troubleshooting"></a>Fejlfinding
 Hvis du har problemer med at installere og konfigurere en gateway, skal du se [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md). Hvis du mener, at du har et problem med din firewall, skal du se afsnittet om [firewall eller proxy](service-gateway-onprem-tshoot.md#firewall-or-proxy) i artiklen om fejlfinding.
