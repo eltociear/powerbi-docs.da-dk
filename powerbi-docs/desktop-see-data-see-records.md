@@ -2,14 +2,14 @@
 title: Vis data og poster i visualiseringer i Power BI Desktop
 description: Brug funktionerne Vis data og Vis poster i Power BI Desktop til at analysere oplysninger
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,78 +18,81 @@ ms.workload: powerbi
 ms.date: 02/22/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: c44a5140fe40217aac170abb0b351197803b6299
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 507c2e5e6d9f41e3342019cc8f051dd1e11954cc
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-see-data-and-see-records-in-power-bi-desktop"></a>Brug Vis data og Vis poster i visualiseringer i Power BI Desktop
-I **Power BI Desktop** kan du analysere alle visualiseringers detaljer og få vist en tekstrepræsentation af dataene eller enkelte dataelementer for en valgt visualisering. Disse funktioner kaldes nogle gange for *klikfrekvens*, *detaljeadgang* eller *detaljeadgang til oplysninger*.
+I **Power BI Desktop** kan du analysere alle visualiseringers detaljer og få vist en tekstrepræsentation af de underliggende data eller enkelte dataposter for den valgte visual. Disse funktioner kaldes nogle gange for *klikfrekvens*, *detaljeadgang* eller *detaljeadgang til oplysninger*.
 
-Du kan bruge **Vis poster** til at få vist de underliggende rækker for ét valgt dataelement fra en visualisering eller bruge **Vis data** til at få vist en tekstversion af de værdier, der bruges i visualiseringen. Der er nogle begrænsninger ved brug af **Vis data** og **Vis poster**, hvilket beskrives i slutningen af denne artikel.
+Du kan bruge **Vis data** til at få vist en tekstversion af de værdier, der bruges af den valgte visualisering, eller bruge **Vis poster** til at få vist alle dataene for en valgt post eller et valgt datapunkt. 
 
-![](media/desktop-see-data-see-records/see-data-see-records_1.png)
+![Vis data og Vis poster](media/desktop-see-data-see-records/see-data-record.png)
 
-## <a name="using-see-data-in-power-bi-desktop"></a>Brug af Vis data i Power BI Desktop
-Knappen **Vis data** er placeret på fanen **Data/analyse** under sektionen **Værktøjer til visualiseringer** på båndet.
+>[!IMPORTANT]
+>**Vis Data** og **Vis poster** understøtter kun følgende visualiseringstyper:
+>  - Liggende søjlediagram
+>  - Søjlediagram
+>  - Kransediagram
+>  - Kartogram
+>  - Tragt
+>  - Kort
+>  - Cirkeldiagram
+>  - Treemap
 
-![](media/desktop-see-data-see-records/see-data-see-records_2.png)
+## <a name="use-see-data-in-power-bi-desktop"></a>Brug af Vis data i Power BI Desktop
 
-Du kan også **få vist data** ved at højreklikke på en visualisering og derefter vælge **Vis data** i den menu, der vises.
+**Vis Data** viser de data, der ligger under en visualisering. **Vis data** er placeret på fanen **Data/Analysér** i sektionen **Visual Tools** på båndet, når en visualisering vælges.
 
-![](media/desktop-see-data-see-records/see-data-see-records_3.png)
+![Vis data på båndet](media/desktop-see-data-see-records/see-data1.png)
 
-> [!NOTE]
-> Du skal holde over et datapunkt i visualiseringen, før højrekliksmenuen er tilgængelig.
-> 
-> 
+Du kan også få vist dataene ved at højreklikke på en visualisering og derefter vælge **Vis Data** i den menu, der vises, eller ved at vælge ellipsen for **flere indstillinger** (...) i øverste højre hjørne af en visualisering og derefter vælge **Vis Data**.
 
-Når du vælger **Vis data**, fokuserer **Power BI Desktop** på den visualisering og de data, du har valgt, og dedikerer plads på canvasset til at vise denne visualisering og tekstrepræsentationen af dataene. Visualiseringen vises på den øverste halvdel af lærredet, og dataene vises på den nederste halvdel, som vist på følgende billede. Dette er den *vandrette* visning.
-
-![](media/desktop-see-data-see-records/see-data-see-records_4.png)
-
-Du kan også skifte til en *lodret visning* (eller tilbage til *vandret visning*) ved at vælge ikonet i øverste højre hjørne.
-
-![](media/desktop-see-data-see-records/see-data-see-records_5.png)
-
-Hvis du vil vende tilbage til rapporten, skal du vælge **< Tilbage til rapport** i øverste venstre hjørne på canvasset.
-
-![](media/desktop-see-data-see-records/see-data-see-records_6.png)
-
-## <a name="using-see-records-in-power-bi-desktop"></a>Brug af Vis poster i Power BI Desktop
-Du kan også fokuserer på ét dataelement i en visualisering og analysere de underliggende data. Når en visualisering vælges, er der to måder at bruge **Vis poster** på: Du kan aktivere til/fra-knappen **Vis poster** på båndet **Data/analyse** og derefter klikke på et dataelement, eller du kan højreklikke på et dataelement og vælge **Vis poster** i den menu, der vises.
-
-![](media/desktop-see-data-see-records/see-data-see-records_7.png)
+![Vis Data, højreklik](media/desktop-see-data-see-records/see-data2.png)&nbsp;&nbsp;![Vis Data, flere indstillinger](media/desktop-see-data-see-records/see-data3.png)
 
 > [!NOTE]
-> Hvis den valgte visualisering ikke understøtter **Vis poster**, er knappen nedtonet på båndet.
-> 
-> 
+> Du skal pege på et datapunkt i den pågældende visual, før højrekliksmenuen er tilgængelig.
 
-Når du har valgt **Vis poster**, fokuserer **Power BI Desktop** på dette enkelte dataelement og dedikerer canvasområdet til at vise dataene for dette element, som vist på følgende billede.
+Når du vælger **Vis data** eller **Få vist Data**, vises den pågældende visual og tekstrepræsentationen af dataene på canvasset i Power BI Desktop. I den *vandrette visning* vises den pågældende visual på den øverste halvdel af canvasset, og dataene vises på den nederste halvdel. 
 
-![](media/desktop-see-data-see-records/see-data-see-records_8.png)
+![vandret visning](media/desktop-see-data-see-records/see-data4a.png)
+
+Du kan skifte mellem den vandrette visning og en *lodret visning* ved at vælge ikonet i øverste højre hjørne på canvasset.
+
+![Skift til lodret visning](media/desktop-see-data-see-records/see-data4.png)
+
+Du vender tilbage til rapporten ved at vælge **< Tilbage til rapport** i øverste venstre hjørne på canvasset.
+
+![Tilbage til rapport](media/desktop-see-data-see-records/see-data5.png)
+
+## <a name="use-see-records-in-power-bi-desktop"></a>Brug af Vis poster i Power BI Desktop
+
+Du kan også fokusere på ét dataelement i en visualisering og analysere de underliggende data. Du bruger **Vis poster** ved at vælge en visualisering, derefter vælge **Vis poster** på fanen **Data/Analysér** i afsnittet **Visual Tools** på båndet og derefter vælge et datapunkt eller en datarække på visualiseringen. 
+
+![Vis poster på båndet](media/desktop-see-data-see-records/see-record1.png)
 
 > [!NOTE]
-> Du kan ikke gemme ændringer fra data, der bliver vist (eller redigeret af brugere) i visningen **Se poster**, i en rapport.
+> Hvis knappen **Vis poster** på båndet er deaktiveret og nedtonet, betyder det, at den valgte visualisering ikke understøtter **Vis poster**.
 
-Hvis du vil vende tilbage til rapporten, skal du vælge knappen **Tilbage til rapport** i øverste venstre hjørne på canvasset.
+Du kan også højreklikke på et dataelement og vælge **Vis poster** i den menu, der vises.
 
-## <a name="limitations"></a>Begrænsninger
-Der er nogle få begrænsninger, som skal overvejes, når **Vis data** eller **Vis poster** bruges:
+![Vis poster ved at højreklikke](media/desktop-see-data-see-records/see-record2.png)
 
-* Det er kun følgende visualiseringstyper, der understøttes:
-  * **Søjle**
-  * **Kolonne**
-  * **Kort**
-  * **Trækort**
-  * **Kartogram**
-  * **Cirkel**
-  * **Krans**
-  * **Tragtformet**
-* Du kan ikke bruge **Vis poster**, når der benyttes en beregnet måling i visualiseringen
-* Du kan ikke bruge **Vis poster**, når du har forbindelse til en live flerdimensionel model
+Når du vælger **Vis poster** for et dataelement, vises alle de data, der er tilknyttet det valgte element, på canvasset i Power BI Desktop. 
+
+![](media/desktop-see-data-see-records/see-record3.png)
+
+Du vender tilbage til rapporten ved at vælge **< Tilbage til rapport** i øverste venstre hjørne på canvasset.
+
+![](media/desktop-see-data-see-records/see-record4.png)
+
+> [!NOTE]
+>**Vis poster** har følgende begrænsninger:
+> - Du kan ikke ændre dataene i visningen **Vis poster** og gemme dem i rapporten.
+> - Du kan ikke bruge **Vis poster**, når der benyttes en beregnet måling i den pågældende visual.
+> - Du kan ikke bruge **Vis poster**, når du har forbindelse til en live flerdimensionel model.
 
 ## <a name="next-steps"></a>Næste trin
 **Power BI Desktop** indeholder mange forskellige funktioner til formatering af rapporter og dataadministration. I følgende ressourcer kan du se nogle eksempler:

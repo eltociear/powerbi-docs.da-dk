@@ -1,32 +1,32 @@
 ---
-title: "Del 1, Føj visualiseringer til en rapport i Power BI (selvstudium)"
-description: "Selvstudium: Del 1, Føj visualiseringer til en rapport i Power BI"
+title: Del 1, Føj visualiseringer til en rapport i Power BI (selvstudium)
+description: 'Selvstudium: Del 1, Føj visualiseringer til en rapport i Power BI'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: IkJda4O7oGs
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/08/2018
+ms.date: 03/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b81061c25b453fc35e1490c3ded2d9c9770d4599
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: b6fdc11b19e130272cf715f4cff58721f46dd6e8
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="part-i-add-visualizations-to-a-power-bi-report-tutorial"></a>Del 1, Føj visualiseringer til en rapport i Power BI (selvstudium)
-I denne artikel får du en hurtig introduktion til at oprette en visualisering i en rapport.  Hvis du vil læse om mere avanceret indhold, skal du [se Del II](power-bi-report-add-visualizations-ii.md). Se Amanda demonstrere nogle få metoder til at oprette, redigere og formatere visualiseringer på et rapportcanvas. Prøv det derefter selv ved hjælp af [Sales and Marketing-eksemplet](sample-datasets.md) for at oprette din egen rapport.
+I denne artikel får du en hurtig introduktion til at oprette en visualisering i en rapport ved enten at bruge Power BI-tjenesten eller Power BI Desktop.  Hvis du vil læse om mere avanceret indhold, skal du [se Del II](power-bi-report-add-visualizations-ii.md). Se Amanda demonstrere nogle få metoder til at oprette, redigere og formatere visualiseringer på et rapportcanvas. Prøv det derefter selv ved hjælp af [Sales and Marketing-eksemplet](sample-datasets.md) for at oprette din egen rapport.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 

@@ -1,15 +1,15 @@
 ---
-title: "Opret Power BI-visualiseringer ved hjælp af R"
-description: "Opret Power BI-visualiseringer ved hjælp af R"
+title: Opret Power BI-visualiseringer ved hjælp af R
+description: Opret Power BI-visualiseringer ved hjælp af R
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e2e59e3b9d718fa2e0c8c3411968fd4ab66a5851
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: e1768da4ace3fd18b181a46f48e3247cebd1cff0
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-power-bi-visuals-using-r"></a>Opret Power BI-visualiseringer ved hjælp af R
 Med **Power BI Desktop** kan du bruge **R** til at visualisere dine data.
@@ -41,21 +41,27 @@ Når du har angivet R-installationen, er du klar til at oprette R-visualiseringe
 1. Vælg ikonet **R-visualisering** i ruden **Visualisering**, som vist på følgende billede, for at tilføje en R-visualisering.
    
    ![](media/desktop-r-visuals/r-visuals-3.png)
-2. Når du føjer en R-visualisering til en rapport, sker der følgende i **Power BI Desktop**:
+
+   Når du føjer en R-visualisering til en rapport, sker der følgende i **Power BI Desktop**:
    
    - Der vises en pladsholder for R-visualiseringen på rapportcanvasset.
    
    - **R-scripteditoren** vises nederst i den midterste rude.
    
    ![](media/desktop-r-visuals/r-visuals-4.png)
-3. Føj derefter de felter, du vil bruge i R-scriptet, til sektionen **Værdier** i brønden **Felter** på samme måde som med alle andre **Power BI Desktop**-visualiseringer. Det er kun de felter, der er føjet til brønden **Felter**, der er tilgængelige i R-scriptet, og du kan tilføje nye felter eller fjerne unødvendige felter fra brønden **Felter**, mens du arbejder med R-scriptet i **R-scripteditoren til Power BI Desktop**. Det registreres automatisk i **Power BI Desktop**, hvilke felter du har tilføjet eller fjernet.
+
+2. Føj derefter de felter, du vil bruge i R-scriptet, til sektionen **Værdier** i brønden **Felter** på samme måde som med alle andre **Power BI Desktop**-visualiseringer. 
+    
+    Kun de felter, der er føjet til området **Felter**, er tilgængelige i R-scriptet. Du kan tilføje nye felter eller fjerne unødvendige felter i området **Felter**, mens du arbejder med R-scriptet i **R-scripteditoren til Power BI Desktop**. Det registreres automatisk i **Power BI Desktop**, hvilke felter du har tilføjet eller fjernet.
    
    > [!NOTE]
    > Standardsammenlægningstypen for R-visualiseringer er *Opsummer ikke*.
    > 
    > 
    
-1. Du kan nu bruge de valgte data til at oprette en afbildning. I takt med at du vælger felter, genererer **R-scripteditoren** understøttende bindingskode for R-scriptet baseret på dine valg i den grå sektion øverst i editorruden. I takt med at du vælger eller fjerner flere felter, genereres eller fjernes der tilsvarende automatisk understøttende kode i R-scripteditoren.
+3. Du kan nu bruge de valgte data til at oprette en afbildning. 
+
+    I takt med at du vælger felter, genererer **R-scripteditoren** understøttende bindingskode for R-scriptet baseret på dine valg i den grå sektion øverst i editorruden. I takt med at du vælger eller fjerner flere felter, genereres eller fjernes der tilsvarende automatisk understøttende kode i R-scripteditoren.
    
    I det viste eksempel på følgende billede er tre felter valgt: hp, gear og drat. Som resultat af disse valg genererer R-scripteditoren følgende bindingskode:
    
@@ -67,56 +73,56 @@ Når du har angivet R-installationen, er du klar til at oprette R-visualiseringe
    ![](media/desktop-r-visuals/r-visuals-5.png)
    
    > [!TIP]
-   > I nogle tilfælde ønsker du måske ikke automatisk gruppering, eller du vil måske have alle rækker vist, inklusive dubletter. I disse tilfælde kan du føje et indeksfelt til dit datasæt, hvilket medfører, at alle rækker opfattes som værende entydige og forhindrer gruppering.
+   > I nogle tilfælde ønsker du måske ikke automatisk gruppering, eller du vil måske have alle rækker vist, inklusive dubletter. I disse tilfælde kan du føje et indeksfelt til dit datasæt, hvilket medfører, at alle rækker opfattes som værende entydige, og gruppering derfor forhindres.
    > 
    > 
    
-   Den genererede dataramme kaldes **dataset**, og der kan opnås adgang til udvalgte kolonner ved hjælp af deres respektive navne. Du kan for eksempel få adgang til feltet gear ved at skrive *dataset$gear* i R-scriptet. Brug enkelt anførselstegn i forbindelse med felter, der indeholder mellemrum eller specialtegn.
-2. Idet datarammen genereres automatisk ved hjælp af de felter, du har valgt, er du klar til at skrive et R-script, der resulterer i afbildning på R-standardenheden. Når scriptet er fuldført, skal du vælge **Kør** på titellinjen i **R-scripteditoren** (**Kør** er i højre side af titellinjen).
+   Den genererede dataramme kaldes et **dataset**, og der kan opnås adgang til udvalgte kolonner ved hjælp af deres respektive navne. Du kan for eksempel få adgang til feltet gear ved at skrive *dataset$gear* i R-scriptet. Brug enkelt anførselstegn i forbindelse med felter, der indeholder mellemrum eller specialtegn.
+
+4. Idet datarammen genereres automatisk ved hjælp af de felter, du har valgt, kan du skrive et R-script, der resulterer i afbildning på R-standardenheden. Når scriptet er fuldført, skal du vælge **Kør** på titellinjen i **R-scripteditoren** (**Kør** er i højre side af titellinjen).
    
-    Når **Kør** er valgt, identificeres afbildningen i **Power BI Desktop**, og den præsenteres på canvasset.
-   Da processen udføres på din lokale R-installation, skal du kontrollere, at alle påkrævede pakker er installeret.
+    Når du vælger **Kør**, identificeres afbildningen i **Power BI Desktop**, og den præsenteres på canvasset. Eftersom processen udføres på din lokale R-installation, skal du kontrollere, at alle påkrævede pakker er installeret.
    
    Visualiseringen afbildes igen i **Power BI Desktop**, når en eller flere af følgende hændelser opstår:
    
-   * **Kør** vælges på titellinjen i **R-scripteditoren**
+   * Når du vælger **Kør** på titellinjen i **R-scripteditoren**
    * Når data ændres pga. opdatering, filtrering eller fremhævning af data
 
-På følgende billede vises et eksempel på den tilsvarende afbildningskode, og korrelationen mellem forskellige biltypers egenskaber afbildes.
+    På følgende billede vises et eksempel på den tilsvarende afbildningskode, og korrelationen mellem forskellige biltypers egenskaber afbildes.
 
-![](media/desktop-r-visuals/r-visuals-6.png)
+    ![](media/desktop-r-visuals/r-visuals-6.png)
 
-Hvis du vil have en større visning af visualiseringerne, kan du minimere **R-scripteditoren**. Som med alle andre visualiseringer i **Power BI Desktop** kan du filtrere på tværs af afbildningen af korrelationen ved kun at vælge sportsvogne i kransevisualiseringen (den runde visualisering til højre på eksempelbilledet ovenfor).
+5. Hvis du vil have en større visning af visualiseringerne, kan du minimere **R-scripteditoren**. Som med alle andre visualiseringer i **Power BI Desktop** kan du filtrere på tværs af afbildningen af korrelationen ved kun at vælge sportsvogne i kransevisualiseringen (den runde visualisering til højre på eksempelbilledet ovenfor).
 
-![](media/desktop-r-visuals/r-visuals-7.png)
+    ![](media/desktop-r-visuals/r-visuals-7.png)
 
-Du kan også ændre R-scriptet for at tilpasse visualiseringen og benytte dig af effektiviteten i R ved at føje parametre til kommandoen for afbildningen.
+6. Du kan også ændre R-scriptet for at tilpasse visualiseringen og benytte dig af effektiviteten i R ved at føje parametre til kommandoen for afbildningen.
 
-Den oprindelige kommando for afbildning var følgende:
+    Den oprindelige kommando for afbildning var følgende:
 
     corrplot(M, method = "color",  tl.cex=0.6, tl.srt = 45, tl.col = "black")
 
-Med nogle få ændringer i R-scriptet er kommandoen nu følgende:
+    Med nogle få ændringer i R-scriptet er kommandoen nu følgende:
 
     corrplot(M, method = "circle", tl.cex=0.6, tl.srt = 45, tl.col = "black", type= "upper", order="hclust")
 
-Som et resultat heraf afbildes der nu cirkler i R-visualiseringen, det er kun den øverste halvdel, der er inkluderet, og matrixen til klyngeopdeling af egenskaberne omarrangeres, som vist på følgende billede.
+    Som et resultat heraf afbildes der nu cirkler i R-visualiseringen, det er kun den øverste halvdel, der er inkluderet, og matrixen til klyngeopdeling af egenskaberne omarrangeres, som vist på følgende billede.
 
-![](media/desktop-r-visuals/r-visuals-8.png)
+    ![](media/desktop-r-visuals/r-visuals-8.png)
 
-Ved udførelse af et R-script, der resulterer i en fejl, afbildes R-visualiseringen ikke, og der vises en fejlmeddelelse på canvasset. Du kan få flere oplysninger om fejlen ved at vælge **Se detaljer** i fejlmeddelelsen på canvasset i R-visualiseringen.
+    Ved udførelse af et R-script, der resulterer i en fejl, afbildes R-visualiseringen ikke, og der vises en fejlmeddelelse på canvasset. Du kan få flere oplysninger om fejlen ved at vælge **Se detaljer** i fejlmeddelelsen på canvasset i R-visualiseringen.
 
-![](media/desktop-r-visuals/r-visuals-9.png)
+    ![](media/desktop-r-visuals/r-visuals-9.png)
 
-> **Sikkerhed i forbindelse med R-scripts:** R-visualiseringer oprettes på baggrund af R-scripts, som kan indeholde kode, der udgør en sikkerhedsrisiko eller en risiko for dine personlige oplysninger. Første gang en bruger forsøger at få vist eller interagere med en R-visualisering, vises en sikkerhedsadvarsel. Du skal kun aktivere R-visualiseringer, hvis du har tillid til forfatteren og kilden, eller når du har gennemset og forstået R-scriptet.
-> 
-> 
+    > **Sikkerhed i forbindelse med R-scripts:** R-visualiseringer oprettes på baggrund af R-scripts, som kan indeholde kode, der udgør en sikkerhedsrisiko eller en risiko for dine personlige oplysninger. Første gang en bruger forsøger at få vist eller interagere med en R-visualisering, vises en sikkerhedsadvarsel. Du skal kun aktivere R-visualiseringer, hvis du har tillid til forfatteren og kilden, eller når du har gennemset og forstået R-scriptet.
+    > 
+    > 
 
 ## <a name="known-limitations"></a>Kendte begrænsninger
 Der er nogle få begrænsninger for R-visualiseringer i **Power BI Desktop**:
 
-* Begrænsninger for datastørrelse – Data, der bruges af R-visualiseringen til afbildning, er begrænset til 150.000 rækker. Hvis der vælges mere end 150.000 rækker, er det kun de øverste 150.000 rækker, der bruges, og der vises en meddelelse på billedet.
-* Begrænsning af beregningstid – Hvis en beregning af en R-visualisering overskrider 5 minutter, opstår der timeout for udførelsen, hvilket medfører en fejl.
+* Begrænsninger for datastørrelse – Data, der bruges af R-visualiseringen til afbildning, er begrænset til 150.000 rækker. Hvis der er valgt flere end 150.000 rækker, bruges kun de øverste 150.000 rækker, og der vises en meddelelse på billedet.
+* Begrænsning af beregningstid – hvis en beregning af en R-visualisering overskrider fem minutter, opstår der timeout for udførelsen, hvilket medfører en fejl.
 * Relationer – På samme måde som med andre Power BI Desktop-visualiseringer opstår der en fejl, hvis der vælges datafelter fra forskellige tabeller, hvor der ikke er defineret en relation.
 * R-visualiseringer opdateres, når data opdateres, filtreres eller fremhæves. Selve billedet er dog ikke interaktivt og må ikke være kilden til tværgående filtrering.
 * R-visualiseringer reagerer på fremhævning af andre visualiseringer, men du kan ikke klikke på elementer i R-visualiseringen for at filtrere på tværs af andre elementer.

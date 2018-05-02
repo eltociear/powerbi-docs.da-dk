@@ -15,27 +15,22 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/12/2017
+ms.date: 04/10/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 46f8d11d45423a9f7df96ac4d1e59c5d805304a7
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 23fa4ea28631e7545a1d68cd1f631eb087c56b98
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-auditing-within-your-organization"></a>Brug af overvågning i din organisation
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zj4kA39jV_4?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Få mere at vide om, hvordan du kan bruge overvågning med Power BI til at overvåge og undersøge udførte handlinger. Du kan bruge Security & Compliance Center eller PowerShell.
 
 Det kan være vigtigt at vide, hvem der udfører en bestemt handling på et element i din Power BI-lejer, for at hjælpe din organisation med at opfylde sine krav, for eksempel efterleve lovmæssig kravoverholdelse og datastyring.
 
 Du kan filtrere overvågningsdataene efter datointerval, bruger, dashboard, rapport, datasæt og aktivitetstype. Du kan også downloade aktiviteterne i en CSV-fil (fil med kommaseparerede værdier), der kan analyseres offline.
-
-> [!NOTE]
-> Overvågningsfunktionen i Power BI er i eksempelvisning og er tilgængelig i alle dataområder.
 
 ## <a name="requirements"></a>Krav
 Du skal opfylde disse krav for at få adgang til overvågningslogger:
@@ -47,28 +42,8 @@ Du skal opfylde disse krav for at få adgang til overvågningslogger:
 
 - Hvis du har adgang til overvågningsloggen, men du ikke er global administrator eller administrator af Power BI-tjenesten, vil du ikke have adgang til portalen Power BI Administration. I dette tilfælde skal du have en direkte forbindelse til Office 365 Security & Compliance Center.
 
-## <a name="enabling-auditing-functionality-in-the-power-bi-admin-portal"></a>Aktivér overvågningsfunktionalitet i Power BI-administrationsportalen
-
-Du skal aktivere overvågning for din organisation, hvis du vil arbejde med rapporter. Du kan gøre dette i lejerindstillingerne på administrationsportalen.
-
-1. Vælg **tandhjulsikonet** øverst til højre.
-
-2. Vælg **Administrationsportal**.
-   
-   ![](media/service-admin-auditing/powerbi-admin.png)
-
-3. Vælg **Lejerindstillinger**.
-   
-   ![](media/service-admin-auditing/powerbi-admin-tenant-settings.png)
-
-4. Slå **Opret overvågningslogge for intern aktivitetsovervågning og overholdelse** til.
-
-5. Vælg **Anvend**.
-
-Power BI starter med at logføre forskellige aktiviteter, som dine brugere udfører i Power BI. Det tager op til 48 timer, før logfilerne vises i O365 Security & Compliance Center. Du kan finde flere oplysninger om, hvilke aktiviteter der logføres, på [listen over aktiviteter, der overvåges af Power BI](#list-of-activities-audited-by-power-bi).
-
 > [!NOTE]
-> Hvis du vil aktivere overvågning for Power BI i din lejer, skal du have mindst én Exchange-postkasselicens i din lejer.
+> Hvis du vil have vist overvågningslogs for Power BI i din lejer, skal du have mindst én Exchange-postkasselicens i din lejer.
 
 ## <a name="accessing-your-audit-logs"></a>Adgang til dine overvågningslogge
 

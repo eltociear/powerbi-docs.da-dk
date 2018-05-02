@@ -2,27 +2,27 @@
 title: Kortvisualiseringer (dvs. felter med store tal)
 description: Opret en kortvisualisering i Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/24/2017
+ms.date: 03/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f38f3bb19be268cba4745c88aa98d09c080c773e
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 3e30e0f742d97817583ecdfd72df65a8658ec977
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="card-visualizations"></a>Kortvisualiseringer
 Nogle gange er et enkelt tal det vigtigste, du vil finde frem til på dit Power BI-dashboard eller i din Power BI-rapport som f.eks. salg i alt, markedsandel fra år til år eller salgsmuligheder i alt. Denne type visualisering kaldes et *kort*. Som med næsten alle de oprindelige Power BI-visualiseringer kan kort oprettes ved hjælp af rapporteditoren eller Spørgsmål og svar.
@@ -91,6 +91,25 @@ Feltet til spørgsmål er den nemmeste måde at oprette et kort på. Feltet til 
 - Hvis du ikke kan se feltet til spørgsmål, skal du kontakte system- eller lejeradministratoren.    
 - Hvis du bruger Desktop og dobbeltklikker på et tomt sted i en rapport, og Spørgsmål og svar ikke åbnes, kan det være nødvendigt at aktivere funktionen.  Vælg **Fil > Indstillinger > Indstillinger > Funktioner til eksempelvisning > Q&A**, og genstart Desktop.
 
+## <a name="format-a-card"></a>Formatér et kort
+Du har mange muligheder for at ændre etiketter, tekst, farve og meget mere. Den bedste måde at få mere at vide på er ved at oprette et kort og derefter udforske formateringsruden. Her er nogle af de formateringsindstillinger, der er tilgængelige. 
+
+1. Start med at åbne formateringsruden ved at vælge ikonet med malerullen. 
+
+    ![](media/power-bi-visualization-card/power-bi-format-card.png)
+2. Udvid **Dataetiket**, og rediger farven, størrelsen og skrifttypefamilien. Hvis du havde tusindvis af butikker, kunne du bruge **Vis enheder** til at få vist antallet af butikker i tusinder samt styre decimalerne. For eksempel 125.8K i stedet for 125.832,00.
+
+3.  Udvid **Kategorietiket**, og rediger farven og størrelsen.
+
+    ![](media/power-bi-visualization-card/power-bi-card-format.png)
+
+4. Udvid **Baggrund**, og flyt skyderen til Til.  Nu kan du ændre baggrundsfarven og gennemsigtigheden.
+
+    ![](media/power-bi-visualization-card/power-bi-format-color.png)
+
+5. Fortsæt med at udforske formateringsindstillingerne, indtil dit kort er præcis, som du vil det. 
+
+    ![](media/power-bi-visualization-card/power-bi-formatted.png)
 
 ## <a name="next-steps"></a>Næste trin
 [Dashboardfelter i Power BI](service-dashboard-tiles.md)

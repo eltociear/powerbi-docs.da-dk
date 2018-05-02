@@ -2,14 +2,14 @@
 title: Brug What if-parametre til at visualisere variabler i Power BI Desktop
 description: Opret din egen What if-variabel for at forestille dig og visualisere variabler i Power BI-rapporter
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,18 +18,18 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5222b6ba99c9e61d1070f66115b90aa29099fd8d
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5c6aa2639b8991cd7a9e1527c780bdbe21ad64b9
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-use-a-what-if-parameter-to-visualize-variables-in-power-bi-desktop"></a>Opret og brug What if-parametre til at visualisere variabler i Power BI Desktop
 Fra og med udgivelsen af **Power BI Desktop** fra august 2017 kan du oprette **What if**-variabler til dine rapporter, arbejde med variablen som et udsnit og dermed visualisere og angive andre nøgleværdier i dine rapporter.
 
 ![](media/desktop-what-if/what-if_01.png)
 
-**What if**-parameteren findes under fanen **Modellering** i **Power BI Desktop**. Når du gør dette, vises der en dialogboks, hvor du kan konfigurere parameteren.
+**What if**-parameteren er under fanen **Modellering** i **Power BI Desktop**. Når du vælger den, vises der en dialogboks, hvor du kan konfigurere parameteren.
 
 ## <a name="creating-a-what-if-parameter"></a>Opret en What if-parameter
 Hvis du vil oprette en **What if**-parameter, skal du vælge knappen **What if** under fanen **Modellering** i **Power BI Desktop**. På følgende billede har vi oprettet en parameter, der kaldes *Discount percentage* og angivet datatypen til *decimaltal*. Værdien i *Minimum* er nul, og værdien i *Maksimum* er 0,50 (halvtreds procent). Vi har også angivet *Forøgelse* til 0,05 eller fem procent. Det angiver, hvor meget parameteren justeres, når der arbejdes med den i en rapport.
@@ -37,7 +37,7 @@ Hvis du vil oprette en **What if**-parameter, skal du vælge knappen **What if**
 ![](media/desktop-what-if/what-if_02.png)
 
 > [!NOTE]
-> I forbindelse med decimaltal skal du sørge for at skrive det foranstillede nul, dvs. 0,50 og ikke bare ,50 i dette felt. Ellers valideres tallet ikke, og knappen **OK** kan ikke vælges.
+> I forbindelse med decimaltal skal du sørge for at skrive det foranstillede nul, dvs. 0,50 og ikke bare ,50. Ellers valideres tallet ikke, og knappen **OK** kan ikke vælges.
 > 
 > 
 
@@ -49,7 +49,7 @@ Ud over at oprette parameteren medfører oprettelsen af en **What if**-parameter
 
 ![](media/desktop-what-if/what-if_04.png)
 
-Det er vigtigt at bemærke, at når du har oprettet en **What if**-parameter, bliver både parameteren og målingen en del af modellen. Så de er tilgængelige i hele rapporten og kan bruges på andre rapportsider. Og fordi de er en del af modellen, kan du slette udsnittet fra rapportsiden, og hvis du vil have det tilbage, skal du bare vælge **What if**-parameteren på listen **Felter** og trække den over på lærredet (og derefter ændre det visuelle element til et udsnit) for at få **What if**-parameteren i din rapport igen.
+Det er vigtigt at bemærke, at når du har oprettet en **What if**-parameter, bliver både parameteren og målingen en del af modellen. D er altså tilgængelige i hele rapporten og kan bruges på andre rapportsider. Og fordi de er en del af modellen, kan du slette udsnittet fra rapportsiden, eller hvis du vil have det tilbage, skal du bare vælge **What if**-parameteren på listen **Felter** og trække den over på canvasset (og derefter ændre det pågældende visual til et udsnit) for at få parameteren i din rapport igen.
 
 ## <a name="using-a-what-if-parameter"></a>Brug en What if-parameter
 Lad os oprette et simpelt eksempel på, hvordan du kan bruge en **What if**-parameter. Vi oprettede **What if**-parameteren i forrige afsnit. Nu skal vi prøve at bruge den ved at oprette en ny måling, hvis værdi justeres i forhold til skyderen. For at gøre dette opretter vi en ny måling.
@@ -62,7 +62,7 @@ Når vi indtaster formlen for målingen i formellinjen og navnet **Sales after D
 
 ![](media/desktop-what-if/what-if_06.png)
 
-Vi opretter derefter et visuelt kolonneelement med *OrderDate* på aksen og både *SalesAmount* og målingen *Sales after Discount*, der netop er oprettet, som værdier.
+Vi opretter derefter en kolonnevisual med *OrderDate* på aksen og både *SalesAmount* og målingen *Sales after Discount*, der netop er oprettet, som værdier.
 
 ![](media/desktop-what-if/what-if_07.png)
 

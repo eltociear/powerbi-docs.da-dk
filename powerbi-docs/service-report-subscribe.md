@@ -1,31 +1,31 @@
 ---
-title: "Abonner på Power BI-rapporter og -dashboards"
-description: "Få mere at vide om, hvordan du selv og andre abonnerer på et snapshot af en rapport og et dashboard i Power BI."
+title: Abonner på rapporter og dashboards i Power BI-tjenesten
+description: Få mere at vide om, hvordan du selv og andre abonnerer på et snapshot af en rapport og et dashboard i Power BI.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: saQx7G0pxhc
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/28/2018
+ms.date: 03/21/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 11e9a2ba499c6db2c75434d13c62bc53704a7cb3
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: af93d9d49b25fe2bc8fefcc2128dea74effc65ec
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="subscribe-to-a-power-bi-report-or-dashboard"></a>Abonner på en rapport eller et dashboard i Power BI
+# <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service-apppowerbicom"></a>Abonner på en rapport eller et dashboard i Power BI-tjenesten (app.powerbi.com)
 Det har aldrig været nemmere at holde dig opdateret om dine vigtigste dashboards og rapporter. Abonner på rapportsider og dashboards, der betyder mest for dig, og Power BI sender et snapshot til din indbakke. Fortæl Power BI, hvor ofte du gerne vil modtage mails: fra en gang om dagen til en gang om ugen. 
 
 Det sprog, der er angivet under Power BI-indstillingerne, bruges til mail og snapshot (se [Understøttede sprog og lande/regioner til Power BI](supported-languages-countries-regions.md)). Hvis der ikke er angivet et sprog, bruger Power BI det sprog, der stemmer overens med indstillingen for landestandard i din aktuelle browser. Hvis du vil se eller indstille dine sprogindstillinger, skal du vælge ![tandhjulsikonet](media/service-report-subscribe/power-bi-settings-icon.png) **> Indstillinger > Generelt > Sprog**. 

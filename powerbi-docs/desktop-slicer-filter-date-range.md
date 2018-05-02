@@ -1,15 +1,15 @@
 ---
 title: Brug et relativt datoudsnit eller -filter i Power BI Desktop
-description: "Lær, hvordan du bruger et udsnitsværktøj eller -filter til at begrænse relative datoområder i Power BI Desktop"
+description: Lær, hvordan du bruger et udsnitsværktøj eller -filter til at begrænse relative datoområder i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/05/2017
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0432998e44cdb1bf95a41225b73d805ec2a2379f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 668c26cb2c2f6cda669280b2541fb5ccf8a44f27
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-relative-date-slicer-and-filter-in-power-bi-desktop"></a>Brug et relativt datoudsnit og -filter i Power BI Desktop
 Med det **relative datoudsnit** eller det **relative datofilter** kan du anvende tidsbaserede filtre på en hvilken som helst datokolonne i datamodellen. Du kan f.eks. bruge det **relative datoudsnit** til kun at vise salgsdata, der er oprettet i løbet af de sidste 30 dage (eller måned eller kalendermåneder osv.). Og når du opdaterer dataene, anvender den relative tidsperiode automatisk den relevante relative datobegrænsning.
@@ -40,7 +40,7 @@ Hvis du vælger karaten i øverste højre hjørne af det **relative datoudsnit**
 
 For det relative datoudsnit skal du vælge *Relativ*.
 
-Du kan derefter vælge indstillingerne. For den første rulleliste i det *relative datoudsnit* kan du vælge mellem følgende muligheder:
+Du kan derefter vælge indstillingerne. Du har følgende valgmuligheder for den første rulleliste i det *relative datoudsnit*:
 
 * Sidste
 * Næste
@@ -52,7 +52,7 @@ Disse valg vises på billedet nedenfor.
 
 Den næste (midterste) indstilling i det *relative datoudsnit* gør det muligt at indtaste et tal for at definere det relative datoområde.
 
-Den tredje indstilling giver dig mulighed for at vælge datomålingen, og du kan vælge mellem følgende muligheder:
+Den tredje indstilling giver dig mulighed for at vælge datomålingen. Du har følgende valgmuligheder:
 
 * Dage
 * Uger
@@ -66,7 +66,7 @@ Disse valg vises på billedet nedenfor.
 
 ![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter_05.png)
 
-Hvis du vælger *Måneder* på listen og input 2 i midterste indstilling. Der sker følgende: Hvis dags dato er 20. juli, viser de data, der er inkluderet i de visuelle elementer, som er begrænset af udsnittet, data for de to forrige måneder fra og med 20. maj og frem til 20. juli (dags dato).
+Hvis du vælger *Måned* på denne liste og angiver 2 i den midterste indstilling, sker følgende: Hvis dags dato er 20. juli, viser de data, der er inkluderet i de visuals, som er begrænset af udsnittet, data for de to forrige måneder fra og med 20. maj og frem til 20. juli (dags dato).
 
 Hvis du til sammenligning har valgt *Måneder (kalender)*, viser de begrænsede visuelle elementer data fra 1. maj til 30. juni (de to sidste hele kalendermåneder).
 

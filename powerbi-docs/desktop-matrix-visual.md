@@ -1,15 +1,15 @@
 ---
 title: Brug matrixvisualisering i Power BI Desktop
-description: "Få mere at vide, hvordan matrixvisualisering giver mulighed for trinvist layout og findelt fremhævning i Power BI Desktop"
+description: Få mere at vide, hvordan matrixvisualisering giver mulighed for trinvist layout og findelt fremhævning i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,14 +18,14 @@ ms.workload: powerbi
 ms.date: 02/05/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: de40c8ee25c5facc1c4396c807d38784c11e8bca
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: fdab0ee5a4804bcb05e936f4e6a9455127d352fa
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-matrix-visual-in-power-bi-desktop"></a>Brug matrixvisualisering i Power BI Desktop
-Når du bruger **Matrix**-visualisering kan du oprette matrixvisualiseringer (også kaldet *tabeller*) i rapporter i **Power BI Desktop** og få tværgående fremhævning af elementer i matrixen med andre visualiseringer. Derudover kan du vælge rækker, kolonner og endda individuelle celler og tværgående fremhævning. Endelig kan du udnytte pladsen i layoutet bedre, fordi matrixvisualisering understøtter et trinvist layout.
+Når du bruger visualiseringen **Matrix**, kan du oprette matrixvisualiseringer (også kaldet *tabeller*) i rapporter i **Power BI Desktop** og få tværgående fremhævning af elementer i matrixen med andre visualiseringer. Derudover kan du vælge rækker, kolonner og endda individuelle celler og tværgående fremhævning. Endelig kan du udnytte pladsen i layoutet bedre, fordi matrixvisualisering understøtter et trinvist layout.
 
 ![](media/desktop-matrix-visual/matrix-visual_2a.png)
 
@@ -38,7 +38,7 @@ Der er mange funktioner knyttet til matrixen, og vi vil gennemgå dem i følgend
 
 ## <a name="understanding-how-power-bi-calculates-totals"></a>Sådan beregner Power BI totaler
 
-Før du begynder at læse om, hvordan du bruger **Matrix**-visualiseringen, er det vigtigt at forstå, hvordan Power BI beregner værdierne for total og subtotal i tabeller og matrixer. I rækker med total og subtotal evalueres målingen henover alle rækker i de underliggende data – det er *ikke* kun en simpel addition af værdierne i de synlige og viste rækker. Det betyder, at du kan ende med at have en anden værdi i rækken med total, end hvad du regnede med. 
+Før du begynder at læse om, hvordan du bruger **Matrix**-visualiseringen, er det vigtigt at forstå, hvordan Power BI beregner værdierne for total og subtotal i tabeller og matrixer. I rækker med total og subtotal evalueres målingen henover alle rækker i de underliggende data – det er *ikke* kun en simpel addition af værdierne i de synlige og viste rækker. Det betyder, at du kan ende med at have en anden værdi i rækken Total, end hvad du regnede med. 
 
 Se følgende **Matrix**-visualiseringer. 
 
@@ -63,11 +63,11 @@ Når der er oprettet gruppering for visualiseringen i sektionen **Rækker**, vis
 
 ![](media/desktop-matrix-visual/matrix-visual_5.png)
 
-Som der er tilfældet med funktionsmåden til detailudledning og udvidelse i andre visualiseringer kan vi ved at vælge disse knapper bruge detailudledning (eller sikkerhedskopiering) gennem hierarkiet. I dette tilfælde kan vi foretage detailudledning fra *Kategori* til *Underkategori* som vist i følgende billede, hvor ikonet for vis detaljer for ét niveau (fork) er valgt.
+Som der er tilfældet med funktionsmåden til detailudledning og udvidelse i andre visualiseringer kan vi ved at vælge disse knapper bruge detailudledning (eller sikkerhedskopiering) gennem hierarkiet. I dette tilfælde kan vi foretage detailudledning fra *Kategori* til *Underkategori* som vist på følgende billede, hvor ikonet for vis detaljer for ét niveau (fork) er valgt.
 
 ![](media/desktop-matrix-visual/matrix-visual_6.png)
 
-Ud over at bruge disse ikoner kan du højreklikke på en af rækkeoverskrifterne og foretage detailudledning ved at vælge i menuen, der vises.
+Ud over at bruge disse ikoner kan du højreklikke på en af rækkeoverskrifterne og foretage detailudledning ved at foretage et valg i den menu, der vises.
 
 ![](media/desktop-matrix-visual/matrix-visual_7.png)
 
@@ -77,11 +77,11 @@ Valg af **Foretag detailudledning** udvider matrixen for *det pågældende* ræk
 
 ![](media/desktop-matrix-visual/matrix-visual_8.png)
 
-Vi kan også klikke på ikonet for **færre detaljer** for at komme tilbage til den forrige visning af øverste niveau. Hvis vi derefter vælger **Vis næste niveau** i genvejsmenuen, får vi vist en alfabetiske liste over alle elementer på næste niveau (i dette tilfælde feltet *Underkategori*) uden den hierarkiske kategorisering på højere niveau.
+Du kan også klikke på ikonet for **færre detaljer** for at komme tilbage til den forrige visning af øverste niveau. Hvis du derefter vælger **Vis næste niveau** i genvejsmenuen, får du vist en alfabetiske liste over alle elementer på næste niveau (i dette tilfælde feltet *Underkategori*) uden den hierarkiske kategorisering på højere niveau.
 
 ![](media/desktop-matrix-visual/matrix-visual_8a.png)
 
-Når vi klikker på ikonet for **færre detaljer** i øverste venstre hjørne for at få matrixen til at vise alle kategorier på øverste niveau og derefter højreklikker igen og vælger **Udvid til næste niveau**, får vi vist følgende:
+Når du klikker på ikonet for **færre detaljer** i øverste venstre hjørne for at få matrixen til at vise alle kategorier på øverste niveau og derefter højreklikker igen og vælger **Udvid til næste niveau**, får du vist følgende:
 
 ![](media/desktop-matrix-visual/matrix-visual_9.png)
 
@@ -96,7 +96,7 @@ Når vi i **Matrix**-visualiseringen højreklikker på en kolonne, får vi mulig
 
 ![](media/desktop-matrix-visual/matrix-visual_11.png)
 
-Når der er valgt **Foretag detailudledning**, vises næste niveau i kolonnehierarkiet for *Deluxe*, hvilket i dette tilfælde er *Farve*.
+Når du vælger **Foretag detailudledning**, vises næste niveau i kolonnehierarkiet for *Deluxe*, hvilket i dette tilfælde er *Farve*.
 
 ![](media/desktop-matrix-visual/matrix-visual_12.png)
 
@@ -114,11 +114,11 @@ I den *oprindelige* version af matrixvisualiseringen blev underkategorier vist i
 
 ![](media/desktop-matrix-visual/matrix-visual_14.png)
 
-I det følgende billede kan du se en rigtig **Matrix**-visualisering med **trinvist layout**. Bemærk, at kategorien *Computers* har underkategorier (Computers Accessories (Computertilbehør), Desktops (Stationære computere), Laptops (Bærbare computere), Monitors (Skærme) og osv.) let indrykket, hvilket visuelt giver et meget renere og mere komprimeret indtryk.
+På det følgende billede kan du se en rigtig **matrix**-visualisering med **trinvist layout**. Bemærk, at kategorien *Computers* har underkategorier (Computers Accessories (Computertilbehør), Desktops (Stationære computere), Laptops (Bærbare computere), Monitors (Skærme) og osv.) let indrykket, hvilket visuelt giver et meget renere og mere komprimeret indtryk.
 
 ![](media/desktop-matrix-visual/matrix-visual_13.png)
 
-Du kan nemt justere indstillingerne for det **trinvise layout**. Når visualiseringen **Matrix** er valgt i sektionen **Format** (malerrulleikonet) i ruden **Visualiseringer**, kan du udvide sektionen **Rækkeoverskrifter**. Der er to muligheder: til/fra-knappen til **trinvist layout** (som slår det til eller fra) og **indrykningen af det trinvise layout** (angiver mængden af indrykning i pixels).
+Du kan nemt justere indstillingerne for det trinvise layout. Når visualiseringen **Matrix** er valgt i sektionen **Format** (malerrulleikonet) i ruden **Visualiseringer**, kan du udvide sektionen **Rækkeoverskrifter**. Du har to muligheder: Til/fra-knappen til **trinvist layout** (som slår det til eller fra) og **indrykningen af det trinvise layout** (angiver mængden af indrykning i pixel).
 
 ![](media/desktop-matrix-visual/matrix-visual_15.png)
 
@@ -136,21 +136,21 @@ I sektionen **Format** i ruden **Visualiseringer** kan du udvide kortet **Subtot
 Den samme proces gælder for kolonnesubtotaler.
 
 ## <a name="cross-highlighting-with-matrix-visuals"></a>Tværgående fremhævning med matrixvisualiseringer
-Med **Matrix**-visualiseringen kan alle elementer i matrixen vælges som basis for tværgående fremhævning. Når du markerer en kolonne i en **Matrix**, fremhæves kolonnen, og det samme gør andre visuelle elementer på rapportsiden. Dette har været en almindelig funktion i andre visualiseringer, og markering af et datapunkt og nu **Matrix**-visualiseringen kan få del i den.
+Med **matrix**-visualiseringen kan du vælge alle elementer i matrixen som basis for tværgående fremhævning. Når du markerer en kolonne i en **Matrix**, fremhæves kolonnen, og det samme gør andre visuelle elementer på rapportsiden. Dette har været en almindelig funktion i andre visuals og markeringer af et datapunkt, og nu kan **matrix**-visualiseringen få del i den.
 
 Derudover fungerer Ctrl+klik også for tværgående fremhævning. I eksemplet herunder er en samling underkategorier f.eks. markeret i **Matrix**-visualiseringen. Bemærk, hvordan elementer, der ikke er valgt i visualiseringen, er nedtonet, og hvordan de andre visualiseringer på siden afspejler de valg, der er foretaget i **Matrix**-visualiseringen.
 
 ![](media/desktop-matrix-visual/matrix-visual_16.png)
 
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Skygge og skrifttypefarver med matrixvisualiseringer
-Når du bruger **Matrix**-visualiseringen kan du anvende **betinget formatering** (farver og skygge) til baggrunden af celler i matrixen, og du kan anvende betinget formatering til selve teksten og værdierne.
+Når du bruger **matrix**-visualiseringen kan du anvende **betinget formatering** (farver og skygge) til baggrunden af celler i matrixen, og du kan anvende betinget formatering til selve teksten og værdierne.
 
 Hvis du vil anvende betinget formatering, kan du gøre et af følgende, når en matrixvisualisering er valgt:
 
 * Højreklik på feltet i ruden **Felter**, og vælg **Betinget formatering** i menuen.
   
   ![](media/desktop-matrix-visual/matrix-visual_17.png)
-* Du kan også udvide kortet **Betinget formatering** i ruden **Format** og indstille skyderen til **Til** for enten **Baggrundsfarveskalaer** eller **Skriftfarveskalaer**. Når en af dem aktiveres, vises et link for *Avancerede kontrolelementer*, hvor du kan tilpasse farver og værdier for farveformateringen.
+* Du kan også udvide kortet **Betinget formatering** i ruden **Format** og indstille skyderen til **Til** for enten **Baggrundsfarveskalaer** eller **Skriftfarveskalaer**. Når du aktiverer en af indstillingerne, vises et link til *avancerede kontrolelementer*, så du kan tilpasse farver og værdier for farveformateringen.
   
   ![](media/desktop-matrix-visual/matrix-visual_18.png)
 

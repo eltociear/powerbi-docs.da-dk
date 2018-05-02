@@ -2,14 +2,14 @@
 title: Brug R-drevne brugerdefinerede visuelle elementer i Power BI
 description: Brug R-drevne brugerdefinerede visuelle elementer i Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,14 +18,14 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d43b9ec0d471c8a824d3c4d081a38f3bea6ad1e9
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 30bb3628b48bbee66622afa30b3364eeacf054ca
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-r-powered-custom-visuals-in-power-bi"></a>Brug R-drevne brugerdefinerede visuelle elementer i Power BI
-I **Power BI Desktop** og **Power BI-tjenesten**, kan du bruge R-drevne brugerdefinerede visuelle elementer uden kendskab til R og uden et R-script. Det giver dig mulighed for at udnytte den analytiske og visuelle kraft i visuelle R-elementer og R-scripts uden at skulle lære R eller programmere.
+I **Power BI Desktop** og **Power BI-tjenesten** kan du bruge R-drevne brugerdefinerede visuals uden at have kendskab til R og uden et R-script. Det giver dig mulighed for at udnytte den analytiske og visuelle kraft i visuelle R-elementer og R-scripts uden at skulle lære R eller programmere.
 
 Hvis du vil bruge R-drevne, brugerdefinerede, visuelle elementer, vælger og downloader du først det brugerdefinerede, visuelle R-element, som du ønsker at bruge, fra galleriet [ **AppSource** ](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) med **brugerdefinerede visuelle elementer** til Power BI.
 
@@ -34,25 +34,24 @@ Hvis du vil bruge R-drevne, brugerdefinerede, visuelle elementer, vælger og dow
 I de følgende afsnit beskrives det, hvordan du vælger, indlæser og bruger R-drevne visuelle elementer i **Power BI Desktop**.
 
 ## <a name="use-r-custom-visuals"></a>Brug brugerdefinerede, visuelle R-elementer
-Hvis du vil bruge brugerdefinerede visuelle R-drevne elementer, skal du downloade hvert enkelte visuelle element fra biblioteket med **brugerdefinerede visuelle elementer**. Derefter kan du bruge det visuelle element som enhver anden type visuelt element i **Power BI Desktop**. Der er to måder, hvorpå du kan få brugerdefinerede visuelle elementer – du kan downloade dem fra webstedet **AppSource**, eller du kan søge i og få dem inde fra **Power BI Desktop**. 
+Hvis du vil bruge brugerdefinerede R-drevne visuals, skal du downloade hver enkelte visual fra biblioteket med **brugerdefinerede visuals** og derefter bruge det pågældende visual som enhver anden type visual i **Power BI Desktop**. Der er to måder, hvorpå du kan få brugerdefinerede visuals – du kan downloade dem fra webstedet **AppSource**, eller du kan søge i og få dem inde fra **Power BI Desktop**. 
 
 ### <a name="get-custom-visuals-from-appsource"></a>Hent brugerdefinerede visuelle elementer fra AppSource
 
-Her er de trin, du skal gennemgå for at gennemse og vælge visuelle elementer på webstedet **AppSource**:
+Her er den fremgangsmåde, du skal benytte for at gennemse og vælge visuals på webstedet **AppSource**:
 
-1. Gå til biblioteket [Power BI visuelle elementer](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1), som findes på adressen [https://appsource.microsoft.com](https://appsource.microsoft.com/). Markér afkrydsningsfeltet *Power BI apps* under *Afgræns efter produkt*, og vælg derefter linket **Se alle**.
+1. Gå til biblioteket med visuals i Power BI, som du finder på [https://appsource.microsoft.com](https://appsource.microsoft.com/). Markér afkrydsningsfeltet *Power BI apps* under *Afgræns efter produkt*, og vælg derefter linket **Se alle**.
    
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_2a.png)
 
-2. Vælg **Power BI visuals** fra listen over tilføjelsesprogrammer i venstre rude. 
-
+2. Vælg [Brugerdefinerede visuals i Power BI](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) på bibliotekssiden **Brugerdefinerede visuals i Power BI** på listen over tilføjelsesprogrammer i venstre rude.
 
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_2b.png)
 
 3. Vælg det **visuelle element**, som du er interesseret i at bruge, fra galleriet. Derefter sendes du videre til en side, som beskriver det visuelle element. Tryk på knappen **Hent det nu** for at downloade.
    
    > [!NOTE]
-> For at kunne redigere i **Power BI Desktop** skal du have R installeret på din lokale computer. Men når brugere vil se et visuelt R-drevet element i **Power BI-tjenesten**, behøver de *ikke* at have R installeret lokalt.
+    > For at kunne redigere i **Power BI Desktop** skal du have R installeret på din lokale computer. Men når brugere vil have vist et R-drevet visual i **Power BI-tjenesten**, behøver de ikke at have R installeret lokalt.
    > 
    > 
    
@@ -63,7 +62,7 @@ Her er de trin, du skal gennemgå for at gennemse og vælge visuelle elementer p
    * [CRAN](https://cran.r-project.org/)
    * [MRO](https://mran.microsoft.com/)
 
-4. Når det visuelle element er downloadet (hvilket svarer til at downloade enhver anden fil via din browser), skal du gå til **Power BI Desktop** og højreklikke på ellipsen (...) i ruden **Visualiseringer** og vælge **Importér fra fil**.
+4. Når det pågældende visual er downloadet (hvilket svarer til at downloade enhver anden fil via din browser), skal du gå til **Power BI Desktop** og klikke på ellipsen (...) i ruden **Visualiseringer** og vælge **Importér fra fil**.
    
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_4a.png)
 5. Du bliver advaret om at importere et brugerdefineret visuelt element som vist på følgende billede:
@@ -79,23 +78,23 @@ Her er de trin, du skal gennemgå for at gennemse og vælge visuelle elementer p
    
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_8.png)
 
-Herfra kan du tilføje data til det visuelle element på samme måde som med andre visuelle **Power BI Desktop**-elementer. Når du er færdig, kan du se dine afsluttede visuelle elementer på lærredet. I det følgende visuelle element blev det R-drevne visuelle element **Prognose** brugt sammen med Forenede Nationers (FN) forudsigelser af fødselshyppighed (det visuelle element til venstre).
+9. Herfra kan du tilføje data til det visuelle element på samme måde som med andre visuelle **Power BI Desktop**-elementer. Når du er færdig, kan du se dine afsluttede visuelle elementer på lærredet. I det følgende visuelle element blev det R-drevne visuelle element **Prognose** brugt sammen med Forenede Nationers (FN) forudsigelser af fødselshyppighed (det visuelle element til venstre).
 
-![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_10.png)
+    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_10.png)
 
-Som ethvert andet visuelt **Power BI Desktop**-element kan du udgive denne rapport med dens R-drevne visuelle elementer til **Power BI-tjenesten** og dele den med andre.
+    Som ethvert andet visuelt **Power BI Desktop**-element kan du udgive denne rapport med dens R-drevne visuelle elementer til **Power BI-tjenesten** og dele den med andre.
 
-Besøg biblioteket ofte - der tilføjes nye visuelle elementer hele tiden.
+    Besøg biblioteket ofte - der tilføjes nye visuelle elementer hele tiden.
 
 ### <a name="get-custom-visuals-from-within-power-bi-desktop"></a>Importér brugerdefinerede visuelle elementer fra **Power BI Desktop**
 
-Du kan også importere brugerdefinerede visuelle elementer fra **Power BI Desktop**. I **Power BI Desktop** skal du højreklikke på ellipsen (...) i ruden **Visualiseringer** og vælge **Import from store**.
+1. Du kan også importere brugerdefinerede visuelle elementer fra **Power BI Desktop**. I **Power BI Desktop** skal du klikke på ellipsen (...) i ruden **Visualiseringer** og vælge **Importér fra Marketplace**.
    
    ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_4a.png)
 
-Når du gør dette, åbnes dialogboksen **Power BI Custom Visuals**, hvor du kan rulle gennem de brugerdefinerede, visuelle elementer, som er til rådighed, og vælge det, du kan lide. Du kan søge efter navn, vælge en kategori eller blot rulle gennem de tilgængelige visuelle elementer. Når du er klar, skal du blot vælge **Tilføj** for at føje det brugerdefinerede, visuelle element til **Power BI Desktop**.
+2. Når du gør det, åbnes dialogboksen **Brugerdefinerede visuals i Power BI**, hvor du kan rulle gennem de brugerdefinerede visuals, som er til rådighed, og vælge det, du kan lide. Du kan søge efter navn, vælge en kategori eller blot rulle gennem de tilgængelige visuelle elementer. Når du er klar, skal du blot vælge **Tilføj** for at føje det brugerdefinerede, visuelle element til **Power BI Desktop**.
 
-![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_12.png)
+   ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_12.png)
 
 ## <a name="contribute-r-powered-custom-visuals"></a>Bidrag med R-drevne brugerdefinerede visuelle elementer
 Hvis du opretter dine egne visuelle R-elementer i dine rapporter, kan du dele dem globalt ved at bidrage med dine brugerdefinerede, visuelle elementer til **galleriet med brugerdefinerede visuelle elementer**. Bidrag er oprettet via GitHub, og processen er beskrevet på følgende placering:
@@ -109,27 +108,30 @@ R-drevne, brugerdefinerede, visuelle elementer har visse afhængigheder, der ska
 * Fejl i R-scriptet, som det visuelle element er baseret på
 * R-pakker mangler eller er forældede
 
-I følgende afsnit beskrives de fejlfindingstrin, som du kan gennemgå for at afhjælpe opståede problemer.
+I følgende afsnit beskrives de fejlfindingstrin, som du kan gennemgå for at afhjælpe de problemer, der måtte opstå.
 
 ### <a name="missing-or-outdated-r-packages"></a>Manglende eller forældede R-pakker
 Når du forsøger at installere et R-drevet visuelt element, kan der opstå fejl, når der findes manglende eller forældede R-pakker. Årsagen er normalt en af følgende:
 
 * R-installationen er ikke kompatibel med R-pakken
-* En firewall, antivirussoftware eller proxyindstillinger forhindrer R i at oprette forbindelse til internettet
+* Firewallen, antivirussoftwaren eller proxyindstillingerne forhindrer R i at oprette forbindelse til internettet
 * Internetforbindelsen er langsom, eller der er et problem med internetforbindelsen
 
-Power BI-teamet arbejder aktivt på mindske disse problemer, før de opstår hos dig, og den næste Power BI Desktop omfatter opdateringer, der har til formål at løse disse problemer. Indtil da kan du prøve en af de følgende løsninger for at afhjælpe problemerne:
+Power BI-teamet arbejder aktivt på at mindske disse problemer, før de opstår hos dig, og den næste Power BI Desktop omfatter opdateringer, der har til formål at løse disse problemer. Indtil da kan du prøve en af de følgende løsninger for at afhjælpe problemerne:
 
 1. Fjern det brugerdefinerede visuelle element, og installer det derefter igen. Dette starter en ny installation af R-pakkerne.
-2. Hvis din installation af R ikke er aktuel, skal du opgradere din R-installation og derefter fjerne/geninstallere det brugerdefinerede, visuelle element som beskrevet i det forrige trin.
+2. Hvis din installation af R ikke er aktuel, skal du opgradere din R-installation og derefter fjerne/geninstallere det brugerdefinerede visual som beskrevet i det forrige trin.
    
-   * Understøttede R-versioner er angivet i beskrivelsen af hvert R-drevne brugerdefinerede visuelle element, som vist på følgende billede.
+   Understøttede R-versioner er angivet i beskrivelsen af hvert R-drevne brugerdefinerede visuelle element, som vist på følgende billede.
+   
      ![](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_11.png)
      > [!NOTE]
-> Du kan beholde den oprindelige R-installation og kun tilknytte Power BI Desktop til den aktuelle version, som du installerer. Gå til **Fil > Indstillinger > Indstillinger > R scripting**.
+    > Du kan beholde den oprindelige R-installation og kun knytte Power BI Desktop til den aktuelle version, som du installerer. Gå til **Fil > Indstillinger > Indstillinger > R scripting**.
+    >
+    >
 3. Installer R-pakker manuelt vha. en R-konsol. Fremgangsmåden er følgende:
    
-   a.  Download installationsscriptet for det R-drevne visuelle element, og gem filen på et lokalt drev.
+   a.  Download installationsscriptet for det R-drevne visual, og gem filen på et lokalt drev.
    
    b.  Fra R-konsollen skal du køre følgende:
    

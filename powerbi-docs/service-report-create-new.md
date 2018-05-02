@@ -1,36 +1,36 @@
 ---
-title: "Selvstudium – Opret en ny rapport ud fra et datasæt "
-description: "Opret en ny Power BI-rapport ud fra et datasæt."
+title: 'Selvstudium – Opret en ny rapport ud fra et datasæt '
+description: Opret en ny Power BI-rapport ud fra et datasæt.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: monitoring
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/01/2018
+ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 7da16deb3e5919d509a5cbbb7fd845914c8c4ea4
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.openlocfilehash: e6c4a614f19a6ba7b9e24c199b7f291e7f57f098
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="create-a-new-power-bi-report-by-importing-a-dataset"></a>Opret en ny Power BI-rapport ved at importere et datasæt
-Du har læst [Rapporter i Power BI](service-reports.md), og nu vil du oprette din egen. Der er mange forskellige måder at oprette en rapport på, og i denne artikel starter vi med at oprette en meget grundlæggende rapport ud fra et Excel-datasæt. Når du har forstået de grundlæggende ting i forbindelse med at oprette en rapport, vejleder de **Næste trin** for neden dig gennem de mere avancerede rapportemner.  
+# <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Opret en ny rapport i Power BI-tjenesten ved at importere et datasæt
+Du har læst [Rapporter i Power BI](service-reports.md), og nu vil du oprette din egen. Der er mange forskellige måder at oprette en rapport på, og i denne artikel starter vi med at oprette en meget grundlæggende rapport ud fra et Excel-datasæt ved hjælp af Power BI-tjenesten. Når du har forstået de grundlæggende ting i forbindelse med at oprette en rapport, vejleder de **Næste trin** for neden dig gennem de mere avancerede rapportemner.  
 
 > **TIP!** Hvis du vil oprette en rapport ved at kopiere en eksisterende rapport, skal du se [Kopiér en rapport](power-bi-report-copy.md)
 > 
 ### <a name="prerequisites"></a>Forudsætninger
-- Power BI-tjenesten (se [Desktop-rapportvisning](desktop-report-view.md) for at få oplysninger om oprettelse af rapporter ved hjælp af Power BI Desktop   
+- Power BI-tjenesten (se [Desktop-rapportvisning](desktop-report-view.md) for at få oplysninger om oprettelse af rapporter ved hjælp af Power BI Desktop)  
 - Eksempel på detailhandelsanalyse
 
 ## <a name="import-the-dataset"></a>Importér datasættet

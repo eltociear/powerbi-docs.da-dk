@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/20/2018
+ms.date: 04/13/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 0ca6a21e67e7ab1d2a0c0daa8da07052041db139
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 4552e08c5291ee5f0ce268e796e1a9148eb64be2
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Understøttede sprog og lande/områder til Power BI
 
@@ -153,9 +153,9 @@ Uanset om du downloader Power BI Desktop eller installerer den fra Windows Store
 
 1. Gå til **Filer** > **Indstillinger** > **Indstillinger** i Power BI Desktop.
 2. Vælg **Internationale indstillinger** under **Aktuel fil**.
-3. Vælg en anden landestandard i feltet **Landestandard**. 
+3. Vælg en anden landestandard i feltet **Landestandarden for import**. 
    
-   ![Dialogboksen Indstillinger i Power BI Desktop](media/supported-languages-countries-regions/pbi_supptdlangs_locale.png)
+   ![Dialogboksen Indstillinger i Power BI Desktop](media/supported-languages-countries-regions/power-bi_supptdlangs-locale.png)
 4. Vælg **OK**.
 
 ### <a name="choose-the-language-for-the-model-in-power-bi-desktop"></a>Vælg sproget for modellen i Power BI Desktop

@@ -1,15 +1,15 @@
 ---
-title: "Brug bånddiagrammer i Power BI"
-description: "Opret og brug bånddiagrammer i Power BI-tjenesten og Power BI Desktop"
+title: Brug bånddiagrammer i Power BI
+description: Opret og brug bånddiagrammer i Power BI-tjenesten og Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,14 +18,14 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3dab818c863f00c97635d00ba07e75eb3c8e5b37
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: fb1c85e8c7b4a9c8e92019e4917af16b83ae580c
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Brug bånddiagrammer i Power BI
-Du kan bruge **bånddiagrammer** i **Power BI** til at visualisere data og hurtigt finde ud af, hvilken kategori af data der har den højeste placering (største værdi). Bånddiagrammer er effektive til at vise ændringer af placeringer, hvor den højeste placering (værdi) altid vises øverst for hver tidsperiode. Bånddiagrammer er tilgængelige i **Power BI Desktop** fra og med udgivelsen i september 2017 og i efterfølgende opdateringer til **Power BI-tjenesten**.
+Du kan bruge bånddiagrammer i **Power BI** til at visualisere data og hurtigt finde ud af, hvilken kategori af data der har den højeste placering (største værdi). Bånddiagrammer er effektive til at vise ændringer af placeringer, hvor den højeste placering (værdi) altid vises øverst for hver tidsperiode. Bånddiagrammer er tilgængelige i **Power BI Desktop** fra og med udgivelsen i september 2017 og i efterfølgende opdateringer til **Power BI-tjenesten**.
 
 ![](media/desktop-ribbon-charts/ribbon-charts_01.png)
 

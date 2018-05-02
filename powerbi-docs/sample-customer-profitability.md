@@ -1,35 +1,35 @@
 ---
-title: "Selvstudium – Eksempel på kunderentabilitet til Power BI: Få en rundvisning"
-description: "Eksempel på kunderentabilitet til Power BI: Få en rundvisning"
+title: 'Selvstudium – Eksempel på kunderentabilitet til Power BI: Få en rundvisning'
+description: 'Eksempel på kunderentabilitet til Power BI: Få en rundvisning'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: amandacofsky
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/13/2018
+ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: b7931cb97ff1c409cc2524e31d079dd770160ec4
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 8c6d01cf1a89ea8e61506cc28344c77fe0276e47
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Eksempel på kunderentabilitet til Power BI: Få en rundvisning
 
 ## <a name="overview-of-the-customer-profitability-sample"></a>Oversigt over eksemplet på kunderentabilitet
 Indholdspakken "Eksempel på kunderentabilitet" indeholder et dashboard, en rapport og datasæt for en virksomhed, der producerer markedsføringsmateriale. Dette dashboard blev oprettet af en økonomidirektør med henblik på at se nøgletal knyttet til sine fem afdelingschefer (dvs. direktører), produkter, kunder og bruttoavance (BA). Hun kan hurtigt se, hvilke faktorer der påvirker lønsomheden.
 
-![](media/sample-customer-profitability/power-bi-dash.png)
+![Power BI-dashboard](media/sample-customer-profitability/power-bi-dash.png)
 
 Dette eksempel er en del af en række, der illustrerer, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Der er anvendt rigtige data fra obviEnce ([www.obvience.com](http://www.obvience.com/)), der er blevet anonymiseret. Dataene er tilgængelige i flere formater: indholdspakke/app, Excel-projektmappe eller .pbix Power BI Desktop-fil. Se [eksempeldatasæt](sample-datasets.md).
 
@@ -41,10 +41,10 @@ Vil du følge med? I dette selvstudium bruges Power BI-tjenesten og eksempelindh
 1. Åbn Power BI-tjenesten (app.powerbi.com), og log på.
 2. Vælg **Hent data** i nederste venstre hjørne.
 
-    ![](media/sample-datasets/power-bi-get-data.png)
+    ![hent data](media/sample-datasets/power-bi-get-data.png)
 3. Vælg ikonet **Eksempler** på siden Hent data, der vises.
 
-   ![](media/sample-datasets/power-bi-samples-icon.png)
+   ![Ikonet Eksempler](media/sample-datasets/power-bi-samples-icon.png)
 4. Vælg **Eksempel på kunderentabilitet**, og vælg derefter **Opret forbindelse**.  
 
    ![Hent data](media/sample-customer-profitability/get-supplier-sample.png)
@@ -73,7 +73,7 @@ Under **Mit arbejdsområde** skal du finde dashboardet for eksempel på Kunderen
 
 2. Gennemse felterne i venstre side af dashboardet.
 
-    ![](media/sample-customer-profitability/power-bi-manager.png)
+    ![felter til ledere](media/sample-customer-profitability/power-bi-manager.png)
 
 - Vores firmas bruttoavance er på 42,5 %.
 - Vi har 80 kunder.
@@ -86,7 +86,7 @@ Under **Mit arbejdsområde** skal du finde dashboardet for eksempel på Kunderen
 ### <a name="manager-specific-dashboard-tiles"></a>Chefspecifikke dashboardfelter
 Ved hjælp af felterne i højre side af dashboardet får du et teamscorecard. Økonomidirektøren skal holde styr på sine chefer, og disse felter giver hende et godt overblik over fortjenesten – vha. BA%. Hvis BA%-tendensen er uventet for en given chef, så kan hun undersøge det nærmere.
 
-![](media/sample-customer-profitability/power-bi-manager2.png)
+![BA% til ledere](media/sample-customer-profitability/power-bi-manager2.png)
 
 - Alle direktører, med undtagelse af Carlos, har allerede overskredet deres salgsmål. Men Carlos' faktiske salg er det højeste.
 - Annelies BA% er den laveste, men vi kan se en konstant stigning siden marts.
@@ -99,7 +99,7 @@ Dette dashboard indeholder felter, der linker til en rapport og til en Excel-pro
 ### <a name="open-the-excel-online-data-source"></a>Åbn Excel Online-datakilden
 To felter på dette dashboard "Mål vs. Faktisk" og "Indtægtsstigning år for år" er fastgjort fra en Excel-projektmappe. Når du vælger et af disse felter, åbnes datakilden i Power BI – i dette tilfælde Excel Online.
 
-![](media/sample-customer-profitability/power-bi-excel-online.png)
+![Excel Online](media/sample-customer-profitability/power-bi-excel-online.png)
 
 1. Vælg et af de felter, der er fastgjort fra Excel. Excel Online åbnes i Power BI-tjenesten.
 2. Bemærk, at projektmappen har tre faner med data. Åben "Indtægt".
@@ -107,11 +107,11 @@ To felter på dette dashboard "Mål vs. Faktisk" og "Indtægtsstigning år for �
     a. Vælg **Carlos Grilo** vha. skyderen "Direktør".   
     b. Den første pivottabel fortæller os, at Carlos' indtægter for det bedste produkt, Primus, er faldet med 152 % siden sidste år. Og YoY-diagrammet viser, at han i de fleste måneder er under budget.  
 
-    ![](media/sample-customer-profitability/power-bi-pivotchart.png)
+    ![Pivottabel](media/sample-customer-profitability/power-bi-pivotchart.png)
 
-    ![](media/sample-customer-profitability/power-bi-carlos.png)
+    ![resultater for Carlos](media/sample-customer-profitability/power-bi-carlos.png)
 
-4. Fortsæt med at udforske, og hvis du finder noget interessant, skal du vælge **Pinkode** ![](media/sample-customer-profitability/power-bi-excel-pin.png) i øverste højre hjørne for at [fastgøre det til et dashboard](service-dashboard-pin-tile-from-excel.md).
+4. Fortsæt med at udforske, og hvis du finder noget interessant, skal du vælge **Pinkode** ![ikon for pinkode](media/sample-customer-profitability/power-bi-excel-pin.png) i øverste højre hjørne for at [fastgøre det til et dashboard](service-dashboard-pin-tile-from-excel.md).
 
 5. Brug pil tilbage i browseren for at vende tilbage til dashboardet.
 
@@ -122,14 +122,14 @@ De fleste af felterne på dashboardet med Eksempel på kunderentabilitet er fast
 
 2. Rapporten indeholder tre sider. Hver fane nederst i rapporten repræsenterer en side.
 
-    ![](media/sample-customer-profitability/power-bi-report-tabs.png)
+    ![3 faner nederst](media/sample-customer-profitability/power-bi-report-tabs.png)
 
     * "Teamscorecard" fokuserer på de fem chefers præstation og deres "forretningsbøger."
     * "Branchemargenanalyse" beskriver en måde at analysere vores lønsomhed på sammenlignet med tilstanden i hele branchen.
     * "Chefscorecard" giver et overblik over hver af vores chefer formateret til at blive vist i Cortana.
 
 ### <a name="team-scorecard-page"></a>Siden Teamscorecard
-![](media/sample-customer-profitability/customer2.png)
+![Rapportsiden Teamscorecard](media/sample-customer-profitability/customer2.png)
 
 Lad os se nærmere på to af teammedlemmerne, og på hvad det giver os af indsigter. Vælg Andrews navn i udsnitsværktøjet til venstre for at filtrere rapportsiden og kun få vist data om Andrew.
 
@@ -138,7 +138,7 @@ Lad os se nærmere på to af teammedlemmerne, og på hvad det giver os af indsig
 * "Indtægter dette år and Indtægtsvariation % for budget pr. måned" viser, at tallene for udbyttet har ligget jævnt. Men hvis du filtrerer ved at klikke på firkanten for **Central** i områdetræstrukturen, så opdager du, at Andrew kun har indtægter i marts og kun i Indiana. Er dette bevidst eller noget, der skal undersøges nærmere?
 
 Nu videre til Valery. Vælg Valerys navn i udsnitsværktøjet for at filtrere rapportsiden og kun få vist data om hende.  
-![](media/sample-customer-profitability/customer3.png)
+![Udsnit Executive for Vaery Ushalov](media/sample-customer-profitability/customer3.png)
 
 * Bemærk det røde KPI for **Status for Indtægter dette år**. Dette skal helt sikkert undersøges nærmere.
 * Hendes svingende indtægtstal tegner også et bekymrende billede – hun opfylder ikke sine indtægtsmargener.
@@ -150,7 +150,7 @@ Fortsæt med at grave for at finde ud af, hvorfor Valerys område ikke klarer si
 
 ### <a name="industry-margin-analysis"></a>Branchemargenanalyse
 Denne rapportside indeholder et andet udsnit af dataene. Den ser på bruttoavancen for hele branchen, opdelt efter segment. Økonomidirektøren bruger denne side til at sammenligne virksomheds- og afdelingsdata som en hjælp til at forklare tendenser og lønsomhed. Du undrer dig måske over, hvorfor områdediagrammet "Bruttoavancemargen efter måned og chefnavn" er på denne side, siden den er teamspecifik. Den er placeret her, fordi vi så kan filtrere siden efter afdelingschef.  
-![](media/sample-customer-profitability/customer6.png)
+![Rapportsiden Branchemargenanalyse](media/sample-customer-profitability/customer6.png)
 
 Hvor meget varierer lønsomheden efter branche? Hvordan fordeler produkter og kunder sig efter branche? Vælg en eller flere brancher øverst til venstre. (Start fra CPG-branche) Vælg viskelæderikonet for at rydde filteret.
 
@@ -172,11 +172,11 @@ Med hensyn til vores analyse kunne det være gavnligt at få fastlagt, hvilken b
 
 2.  På menulinjen øverst kan du vælge **Stil et spørgsmål** for at åbne dialogboksen Spørgsmål og svar.
 
-    ![](media/sample-customer-profitability/power-bi-ask-question.png)
+    ![Stil et spørgsmål om dine data](media/sample-customer-profitability/power-bi-ask-question.png)
 
 3. Skriv **samlet omsætning efter branche for Valery**. Se, hvordan visualiseringen opdateres, mens du skriver spørgsmålet.
 
-    ![](media/sample-customer-profitability/power-bi-qna.png)
+    ![skriv spørgsmål i feltet til spørgsmål](media/sample-customer-profitability/power-bi-qna.png)
 
    Distribution er det største indtægtsområde for Valery.
 
@@ -186,15 +186,15 @@ Lad os se på branchen *Distribution*.
 1. Åbn rapportsiden "Branchemargenanalyse".
 2. Uden at vælge en visualisering på rapportsiden skal du udvide filterruden til højre (hvis den ikke allerede er udvidet). Ruden Filtre bør kun vise filtre på Sideniveau.  
 
-   ![](media/sample-customer-profitability/power-bi-filters.png)
+   ![Filtre på sideniveau](media/sample-customer-profitability/power-bi-filters.png)
 3. Find filteret for **Branche**, og vælg pilen for at udvide listen. Lad os tilføje et sidefilter for Distributionsbranchen. Først skal du rydde alle markeringer ved at rydde afkrydsningfeltet **Vælg alle**. Vælg derefter kun **Distribution.**  
 
-   ![](media/sample-customer-profitability/customer7.png)
+   ![Filtrer efter distribution](media/sample-customer-profitability/customer7.png)
 4. Områdediagrammet "Bruttoavance efter måned og chefnavn" fortæller os, at kun Valery og Tina har kunder i denne branche, og at Valery kun arbejdede med denne branche fra juni til november.   
 5. Vælg **Tina** og derefter **Valery** i områdediagramforklaringen "Bruttoavance efter måned og chef". Bemærk, at Tinas andel af "Samlet indtægt efter produkt" er meget lille i forhold til Valery.
 6. Hvis du vil se den faktiske indtægt, skal du bruge Spørgsmål og svar til at spørge om **samlet indtægt pr. direktør til distribution efter scenarie**.  
 
-     ![](media/sample-customer-profitability/power-bi-qna2.png)
+     ![skriv et spørgsmål i feltet til spørgsmål for at få vist søjlediagram](media/sample-customer-profitability/power-bi-qna2.png)
 
     Vi kan ligeledes granske andre brancher og endog føje kunder til vores visuals for at få indsigt i årsagerne til Valerys præstation.
 

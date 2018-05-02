@@ -1,5 +1,5 @@
 ---
-title: Find og vis hurtigt dine Power BI-rapporter og -dashboards ved hjælp af Cortana
+title: Find og vis hurtigt dine rapporter og dashboards ved hjælp af Cortana
 description: Brug Cortana med Power BI til at få svar fra dine data. Fungerer i øjeblikket sammen med rapporter og dashboards.
 services: powerbi
 documentationcenter: ''
@@ -14,11 +14,11 @@ ms.workload: powerbi
 ms.date: 01/13/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 11bba0ec026650e59b8757b207f5f6d596499f0a
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 46be9e170b0bdfb1aa18cfcdb126a16b78c9aa9d
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Find og vis hurtigt dine Power BI-data ved hjælp af Cortana til Power BI
 Brug Cortana på tværs af dine Windows 10-enheder for at få omgående svar på vigtige forretningsspørgsmål. Ved at integrere med Power BI kan Cortana hente vigtige oplysninger direkte fra Power BI-dashboards og -rapporter. Alt hvad der kræves, er version Windows 10 November 2015 eller nyere, Cortana, Power BI og adgang til mindst ét datasæt.

@@ -1,39 +1,43 @@
 ---
-title: "Vis dashboards, dashboardfelter, rapportsider og rapportvisualiseringer i fuldskærmsvisning"
-description: "Vis dashboards, dashboardfelter, rapportvisualiseringer og rapportsider i fuldskærmsvisning – også kaldet *TV-tilstand*."
+title: Vis dashboards, felter, rapportsider og visualiseringer i fuldskærmsvisning
+description: Vis dashboards, dashboardfelter, rapportvisualiseringer og rapportsider i fuldskærmsvisning – også kaldet *TV-tilstand*.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-featuredvideoid: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/01/2018
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 23241edc3b7fec6b4cf10c422fc7744268ed2cdc
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 8fc102d7ec13a7d1c18706028d99ecfef9812baf
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="full-screen-mode-in-power-bi"></a>Fuldskærmsvisning i Power BI
+# <a name="full-screen-mode-in-power-bi-service"></a>Fuldskærmsvisning i Power BI-tjenesten
 ## <a name="what-is-full-screen-mode"></a>Hvad er fuldskærmsvisning?
 ![fuldskærmsvisning af dashboard før og efter](media/service-fullscreen-mode/power-bi-full-screen-comparison.png)
 
-Vis dit indhold (dashboards, rapportsider, felter og visuelle elementer) uden forstyrrende menuer og navigationslinjer.  Du får en rendyrket og komplet visning af dit indhold med et øjekast – hele tiden. Dette kaldes også tv-tilstand. Den tilgængelige funktionalitet i fuldskærmsvisning varierer afhængigt af indhold.  
+Få vist dit Power BI-indhold (dashboards, rapportsider, felter og visualiseringer) uden forstyrrende menuer og navigationslinjer.  Du får en rendyrket og komplet visning af dit indhold med et øjekast – hele tiden. Dette kaldes også tv-tilstand. Den tilgængelige funktionalitet i fuldskærmsvisning varierer afhængigt af indhold. 
+
+Hvis du bruger Power BI – Mobil, er [fuld skærm tilgængelig for Windows 10 Mobile-apps](mobile-windows-10-app-presentation-mode.md). Power BI Desktop har ikke en fuldskærmstilstand for rapporter eller visualiseringer, men har Tilpas til siden for [relationsvisning](desktop-report-view.md) og [fokustilstand for rapportvisuals](service-focus-mode.md).
+
+ 
 
 Nogle situationer, hvor det giver mening at bruge fuldskærmstilstand, er følgende:
 
-* Præsentation af dit dashboard, felt, et visuelt element eller en rapport på et møde eller en konference.
+* Præsentation af dit dashboard, felt, en visual eller en rapport på et møde eller en konference.
 * Visning på et kontor på en dedikeret stor skærm eller projektor.
 * Visning på en lille skærm.
 * Gennemse i låst tilstand – du kan røre skærmen eller holde musen over felter uden at åbne underliggende rapporter eller dashboards.

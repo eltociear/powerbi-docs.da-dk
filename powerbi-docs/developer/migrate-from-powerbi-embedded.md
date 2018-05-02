@@ -1,15 +1,15 @@
 ---
-title: "Sådan overfører du indhold fra Power BI Workspace Collection til Power BI"
-description: "Se, hvordan du overfører fra Power BI Workspace Collection til Power BI Embedded og udnytter fordelene ved at integrere i apps."
+title: Sådan overfører du indhold fra Power BI Workspace Collection til Power BI
+description: Se, hvordan du overfører fra Power BI Workspace Collection til Power BI Embedded og udnytter fordelene ved at integrere i apps.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.Embedded: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/06/2018
 ms.author: maghan
-ms.openlocfilehash: c8ad315976dd1ca47d6b4dc2fd9a191a11e044c7
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 5cf1be502267b14075ac6160ce93fce47941d3c2
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded
 Se, hvordan du overfører fra Power BI Workspace Collection til Power BI Embedded og udnytter fordelene ved at integrere i apps.
@@ -58,8 +58,7 @@ Der skal findes følgende konti i din lejer.
 
 > [!NOTE]
 > Disse konti skal have Power BI Pro-licenser for at kunne bruge apparbejdsområder.
-> 
-> 
+>
 
 1. En lejeradministratorbruger.
    
@@ -71,10 +70,13 @@ Der skal findes følgende konti i din lejer.
    
     Appens backend gemmer legitimationsoplysninger for denne konto og bruger den til at få et Azure AD-token til brug med Power BI REST API'erne. Denne konto bruges til at generere integreringstokenet til appen. Kontoen skal også være administrator for de apparbejdsområder, der blev oprettet til integrering.
    
-   > [!NOTE]
-   > Dette er blot en almindelig brugerkonto i organisationen, der bruges til integrering.
-   > 
-   > 
+> [!NOTE]
+> Dette er blot en almindelig brugerkonto i organisationen, der bruges til integrering.
+>
+
+> [!NOTE]
+> Hvis App-Only Token Authentication er et krav til din app, skal du klikke [her](mailto:pbieci@microsoft.com?Subject=App-only%20token%20requirement) for at kontakte os.
+>
 
 ## <a name="app-registration-and-permissions"></a>Appregistrering og tilladelser
 Du skal registrere en app i Azure AD og tildele den visse tilladelser.
@@ -126,13 +128,13 @@ Cachelagrede datasæt, der refererer til PBIX-filer, og som havde importerede da
 #### <a name="directquery-dataset--report"></a>DirectQuery-datasæt og -rapport
 **Proces**
 
-1. Udfør et kald til GET https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources, og gem den forbindelsesstreng, du modtager.
+1. Udfør et kald til GET https://api.powerbi.com/v1.0/collections/{collection_id}/workspaces/{wid}/datasets/{dataset_id}/Default.GetBoundGatewayDataSources og gem forbindelsesstreng er modtaget.
 2. Udfør et kald til API'et Download PBIX fra PaaS-arbejdsområdet.
 3. Gem PBIX.
 4. Udfør et kald til Import PBIX til SaaS-arbejdsområdet.
-5. Opdater forbindelsesstrengen med et kald til POST https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
-6. Få et GW-id og et datakilde-id med et kald til GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
-7. Opdater brugerens legitimationsoplysninger med et kald til PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
+5. Opdater forbindelsesstreng ved at udføre et kald – POST  https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.SetAllConnections
+6. Hent GW-id og datakilde-id ved at udføre et kald – GET https://api.powerbi.com/v1.0/myorg/datasets/{dataset_id}/Default.GetBoundGatewayDataSources
+7. Opdater brugerens legitimationsoplysninger ved at udføre et kald – PATCH https://api.powerbi.com/v1.0/myorg/gateways/{gateway_id}/datasources/{datasource_id}
 
 #### <a name="old-dataset--reports"></a>Gamle datasæt og rapporter
 Dette er de datasæt/rapporter, der er oprettet før oktober 2016. Download PBIX understøtter ikke de PBIX'er, som blev uploadet før oktober 2016

@@ -1,29 +1,29 @@
 ---
 title: Forbrugsdata for dashboards og rapporter
-description: "Sådan får du vist, gemmer og bruger Forbrugsdata til Power BI-dashboards og -rapporter. Mål og forøg din indvirkning med forbrugsdata for indholdsoprettere."
+description: Sådan får du vist, gemmer og bruger Forbrugsdata til Power BI-dashboards og -rapporter. Mål og forøg din indvirkning med forbrugsdata for indholdsoprettere.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-featuredvideoid: 
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/28/2018
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 1ad8425917153f2f9662041dc594817857f8f499
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: d12f59f768b98bbc974258592f236176ecf52b3f
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Forbrugsdata for dashboards og rapporter
 Hvis du opretter dashboards og rapporter, kan forbrugsdata hjælpe dig med at forestå deres indvirkning. Når du kører enten forbrugsdata for dashboards eller rapporter, opdager du, hvordan disse dashboards og rapporter anvendes i hele organisationen: Hvad bruges, af hvem og til hvilke formål.  
@@ -53,7 +53,7 @@ Når du vælger **Forbrugsdata** eller ikonet ![forbrugsdataikonj](media/service
 
 Rapporter med forbrugsdata vises ikke i **Seneste**, **Arbejdsområder**, **Favoritter** eller andre indholdslister. De kan ikke føjes til en app. Hvis du fastgør et felt fra en rapport med forbrugsdata til et dashboard, kan dette dashboard ikke føjes til en app eller indholdspakke.
 
-Hvis du vil grave ned i rapportdataene eller oprette dine egne rapporter i forhold til datasættet, kan du bruge **Gem som** (se [Gem rapporten med forbrugsdata som en Power BI-rapport med alle funktioner](#save-the-usage-metrics-report-as-a-full-featured-power-bi-report).
+Hvis du vil grave ned i rapportdataene eller oprette dine egne rapporter i forhold til datasættet, kan du bruge **Gem som** (se [Gem rapporten med forbrugsdata som en Power BI-rapport med alle funktioner](#Save-the-Usage-Metrics-report-as-a-full-featured-Power-BI-report-(personalize)).
 
 ## <a name="open-a-usage-metrics-report-for-a-dashboard-or-report"></a>Åbn en rapport med forbrugsdata for et dashboard eller en rapport
 1. Start i arbejdsområdet, der indeholder dashboardet eller rapporten.

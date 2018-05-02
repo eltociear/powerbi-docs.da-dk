@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/16/2017
+ms.date: 04/13/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8089c796441fd4200b146da6330dd5c208bf8b30
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 62624d35f1fb477c4daf2ffcef92bb18fb8a6a8e
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Opret forbindelse til Salesforce med Power BI
 Med Power BI kan du kan nemt oprette forbindelse til din konto på Salesforce.com. Når du opretter denne forbindelse, hentes dine data, du får automatisk et dashboard og rapporter baseret på dine data.
@@ -70,13 +70,15 @@ Du kan ændre dette dashboard for at få vist dine data, som du ønsker. Du kan 
 * Prøv at [stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboardet
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboardet
 * [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport
-* Dit datasæt vil være programsat til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
+* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
 
-## <a name="system-requirements"></a>Systemkrav
-* Forbindelse til en Salesforce-produktionskonto, der har adgang til API aktiveret
-* Tilladelse tildelt til Power BI-appen under logon
-* Kontoen har tilstrækkelige API-kald til at trække og opdatere dataene
-* Der kræves et gyldigt godkendelsestoken for at opdatere. Sørg for, at du har importeret fem eller færre Salesforce-datasæt, da Salesforce har en begrænsning på fem godkendelsestokens pr. program
+## <a name="system-requirements-and-considerations"></a>Systemkrav og overvejelser
+- Forbindelse til en Salesforce-produktionskonto, der har adgang til API aktiveret
+- Tilladelse tildelt til Power BI-appen under logon
+- Kontoen har tilstrækkelige API-kald til at trække og opdatere dataene
+- Der kræves et gyldigt godkendelsestoken for at opdatere. Sørg for, at du har importeret fem eller færre Salesforce-datasæt, da Salesforce har en begrænsning på fem godkendelsestokens pr. program
+- Salesforce Reports-API'en har en begrænsning, der understøtter op til 2.000 rækker med data.
+
 
 ## <a name="troubleshooting"></a>Fejlfinding
 Hvis der opstår fejl, skal du gennemse ovenstående krav. Bemærk også, at muligheden for at logge på et brugerdefineret domæne eller et sandkassedomæne ikke understøttes i øjeblikket.

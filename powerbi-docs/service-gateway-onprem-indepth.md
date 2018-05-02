@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5f081dff246c478f1b9ee3c918de2099b8382100
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 5480768fc088b3a32a1af222d38e3829298e8f0d
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Datagateway i det lokale miljø – detaljeret
 Det er muligt for brugere i din organisation at få adgang til data i det lokale miljø (som de allerede er godkendt til at få adgang til), men før disse brugere kan oprette forbindelse til datakilden i det lokale miljø, skal der installeres og konfigureres en datagateway i det lokale miljø. Gatewayen muliggør hurtig og sikker kommunikation bag kulisserne mellem en bruger i clouden, til din lokale datakilde og derefter tilbage til clouden.
@@ -87,10 +87,7 @@ Cloudtjenesterne kender kun til konti på Azure Active Directory. Det har ingen 
    Du kan oprette en konto på Azure-portalen eller i Office 365-administrationsportalen, og kontonavnet matcher UPN i den lokale Active Directory-konto.
 2. Du kan bruge værktøjet [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) til at synkronisere lokale konti med din Azure Active Directory-lejer.
    
-   Værktøjet Azure AD Connect indeholder indstillinger til synkronisering af kataloger og adgangskoder. Hvis du ikke er administrator af lejere eller lokal domæneadministrator, skal du kontakte it-administratoren for at få dette konfigureret.
-3. Du kan konfigurere ADFS (Active Directory Federation Services).
-   
-   Du kan knytte din ADFS-server til din AAD-lejer med værktøjet [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/). ADFS gør brug af katalogsynkronisering beskrevet ovenfor, men giver mulighed for enkeltlogon (SSO). Hvis du f.eks. er på dit arbejdsnetværk, når du opretter forbindelse til en cloudtjeneste, og går til logon, bliver du muligvis ikke bedt om at angive et brugernavn eller en adgangskode. Du skal drøfte med din it-administrator, om dette er tilgængeligt for din organisation.
+   Azure AD Connect-værktøjet indeholder indstillinger til katalogsynkronisering og konfiguration af godkendelse, inklusive synkronisering af adgangskodehash, pass-through-godkendelse og samling af identiteter. Hvis du ikke er administrator af lejere eller lokal domæneadministrator, skal du kontakte it-administratoren for at få dette konfigureret.
 
 Ved at bruge Azure AD Connect sikrer du, at UPN'et matcher mellem AAD og dit lokale Active Directory.
 

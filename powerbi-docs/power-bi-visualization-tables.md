@@ -1,29 +1,29 @@
 ---
-title: "Selvstudium – tabelvisualiseringer i Power BI-rapporter og -dashboards (selvstudium)"
+title: Tabelvisualiseringer i Power BI-rapporter og -dashboards (selvstudium)
 description: Selvstudium til at arbejde med tabelvisualiseringer i Power BI-rapporter og dashboards, herunder, hvordan du tilpasser kolonnebredder.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-featuredvideoid: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/22/2018
+ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d41fd5085912ec74312fa4a4b25060cbd4afba94
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: a36e2afcda7c741c871b07c526ab010f77290a3b
+ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="working-with-tables-in-power-bi-reports-and-dashboards-tutorial"></a>Arbejd med tabeller i Power BI-rapporter og -dashboards (selvstudium)
 En tabel er et gitter, der indeholder relaterede data i logiske serier af rækker og kolonner. Den kan også indeholde overskrifter og en række til totaler. Tabeller fungerer godt med kvantitative sammenligninger, hvor du får vist mange værdier for en enkelt kategori. Denne tabel viser for eksempel fem forskellige målinger for **Category**.
@@ -69,15 +69,21 @@ Der er mange måder, hvorpå du kan formatere en tabel, og jeg beskriver kun nog
 
 * Prøv at formatere tabelgitteret. Her har jeg tilføjet et blåt lodret gitter, tilføjet mellemrum mellem rækkerne og forstørret kanten og tekststørrelsen en smule.
   
-    ![](media/power-bi-visualization-tables/power-bi-table-grid2-new.png)
+    ![](media/power-bi-visualization-tables/power-bi-table-gridnew.png)
   
     ![](media/power-bi-visualization-tables/power-bi-table-grid3.png)
 * I kolonneoverskrifterne har jeg ændret baggrundsfarven, tilføjet en kant og øget skriftstørrelsen. 
   
-    ![](media/power-bi-visualization-tables/power-bi-table-column.png)
+    ![](media/power-bi-visualization-tables/power-bi-table-column-headers.png)
+
   
     ![](media/power-bi-visualization-tables/power-bi-table-column2.png)
-* Efter lidt yderligere formatering ser den endelige tabel sådan ud. Da der er så mange formateringsindstillinger, kan det være en god idé at starte med en almindelig tabel, åbne ruden Formatering ![](media/power-bi-visualization-tables/power-bi-format.png) og så ellers prøve dig frem. 
+
+* Du kan også formatere enkelte kolonner og kolonneoverskrifter. Start ved at udvide **feltformatering**, og vælg den kolonne, der skal formateres, på rullelisten. Afhængigt af kolonneværdierne kan du med feltformateringen angive oplysninger som: visningsenheder, skriftfarve, antal decimaler, baggrund, justering med mere. Når du har valgt de ønskede indstillinger, kan du beslutte, om du også vil anvende disse indstillinger til sidehovedet og rækken Totaler.
+
+    ![](media/power-bi-visualization-tables/power-bi-field-formatting.png)
+
+* Efter lidt yderligere formatering ser den endelige tabel sådan ud. Da der er så mange formateringsindstillinger, kan det være en god idé at starte med standardformateringen, åbne ruden Formatering ![](media/power-bi-visualization-tables/power-bi-format.png) og så ellers prøve dig frem. 
   
     ![](media/power-bi-visualization-tables/power-bi-table-format.png)
 

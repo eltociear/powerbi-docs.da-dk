@@ -12,16 +12,16 @@ qualityfocus: no
 qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/20/2018
+ms.date: 04/09/2018
 ms.author: maggies
-ms.openlocfilehash: 29241b4c0f059540e6f1496f04b3044ebbd7d68b
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 9caf6e6867c55d3c601ac417add173d0af091897
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -29,6 +29,17 @@ Du kan finde relaterede oplysninger om nyheder under:
 * [Power BI-teamets blog til mobilapps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheder i Power BI Desktop](desktop-latest-update.md)  
 * [Nyheder i Power BI-tjenesten](service-whats-new.md)  
+
+## <a name="april-2018"></a>April 2018
+
+### <a name="mobile-drill-down-and-drill-up"></a>Detailudledning og færre detaljer på mobilenheder
+
+Nu kan du foretage detailudledning og få vist færre detaljer i visuals i rapporter på din mobilenhed. Du får adgang til denne nye funktion ved at trykke og holde nede på en visual i en rapport for at åbne værktøjstippet og derefter trykke på detaljeknapperne for at udforske dataene i dybden.
+
+### <a name="persistent-filters"></a>Faste filtre
+
+Vi har for nylig opdateret rapportfiltrene og -udsnittene, så de gemmes automatisk fra Power BI på webserveren til Power BI-mobilappen. Nu gemmes de filtre og udsnit, du har angivet i mobilappen, automatisk i Power BI på internettet.
+
 
 ## <a name="march-2018"></a>Marts 2018
 

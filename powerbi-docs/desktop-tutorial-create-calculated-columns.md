@@ -2,14 +2,14 @@
 title: 'Selvstudium: Opret beregnede kolonner i Power BI Desktop'
 description: 'Selvstudium: Opret beregnede kolonner i Power BI Desktop'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,135 +18,126 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: acdaa95908cd03006170eb06ddfc780c836c64ac
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 526659cfe0631eb9cb43ff6b47729a8a6227ec68
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Selvstudium: Opret beregnede kolonner i Power BI Desktop
-Nogle gange indeholder de data, du analyserer, ikke et bestemt felt, du skal bruge for at få de resultater, du er ude efter. Det er her, beregnede kolonner kommer ind i billedet. Beregnede kolonner gør brug af DAX-formler (Data Analysis Expressions) til at definere en kolonnes værdi. Disse værdier kan være næsten alt, f.eks. sammensætning af tekstværdier fra nogle andre kolonner andre steder i modellen eller beregning af en numerisk værdi fra andre værdier. Lad os f.eks. sige, at dine data har kolonnen By og Stat (som felter på listen Felter), men du vil gerne have et enkelt felt af typen Placering, der indeholder begge som en enkelt værdi, f.eks. Miami, FL. Det er præcis det, beregnede kolonner er beregnede til.
 
-Beregnede kolonner er lig med målinger, da begge er baseret på en DAX-formel, men adskiller sig fra hinanden på den måde, de bruges på. Målinger bruges mest i området Værdier af en visualisering, til at beregne resultater, der er baseret på andre felter, som du har i en række i en tabel eller på en akse, i en forklaring eller i et gruppeområde i en visualisering. Beregnede kolonner bruges derimod, når du gerne vil have kolonnens resultater på den pågældende række i tabellen eller på akse-, forklarings- eller gruppeområdet.
+Nogle gange indeholder de data, du analyserer, ikke et bestemt felt, du skal bruge for at få de resultater, du er ude efter. Det er her, *beregnede kolonner* kommer ind i billedet. Beregnede kolonner benytter DAX-formler (Data Analysis Expressions) til at definere en kolonnes værdier, alt fra at lægge tekstværdier sammen ud fra et par forskellige kolonner til beregning af en numerisk værdi fra andre værdier. Lad os f.eks. sige, at dine data har felterne **By** og **Stat**, men du vil gerne have et enkelt felt af typen **Placering**, der indeholder begge som en enkelt værdi, f.eks. Miami, FL. Det er præcis det, beregnede kolonner er beregnede til.
 
-I dette selvstudium lærer du, hvordan du kan oprette nogle af dine egne beregnede kolonner i Power BI Desktop. Selvstudiet er til de Power BI-brugere, som allerede har erfaring med Power BI Desktop, og som er klar til at arbejde med mere avancerede modeller. Du bør allerede have kendskab til at bruge forespørgsler til at importere data, arbejde med flere relaterede tabeller og tilføje felter på dit rapportcanvas. Hvis du ikke har erfaring med Power BI Desktop, skal du se [Introduktion til Power BI Desktop](desktop-getting-started.md).
+Beregnede kolonner er lig med [målinger](desktop-tutorial-create-measures.md), da begge er baseret på DAX-formler, men adskiller sig fra hinanden på den måde, de bruges på. Du bruger ofte målinger i området **Værdier** for en visualisering til at beregne resultater, der er baseret på andre felter. Du bruger beregnede kolonner som nye **felter** i rækker, akser, forklaringer og gruppeområder for visualiseringer.
 
-Hvis du vil følge trinnene i dette selvstudium, skal du downloade filen [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip). Dette er den samme eksempelfil, der bruges til selvstudiet [Opret dine egne målinger i Power BI Desktop](desktop-tutorial-create-measures.md). Den indeholder data om salget for det fiktive firma Contoso, Inc. Da dataene i filen er importeret fra en database, kan du ikke oprette forbindelse til datakilden eller se den i Forespørgselseditor. Når du har hentet filen til din computer, kan du åbne den i Power BI Desktop.
+I dette selvstudium lærer du, hvordan du kan oprette beregnede kolonner og bruge dem i rapportvisualiseringer i Power BI Desktop. 
 
-## <a name="lets-create-a-calculated-column"></a>Lad os oprette en beregnet kolonne
-Lad os sige, at vi gerne vil have vist produktkategorier sammen med produktunderkategorier i en enkelt værdi for rækker, som mobiltelefoner – tilbehør, mobiltelefoner – Smart telefoner og PDA'er osv. I rapportvisning eller datavisning (vi bruger rapportvisning her), hvis vi ser på vores produkttabeller på listen over felter, kan vi se, at der ikke er nogen felter, der indeholder det, vi gerne vil have. Vi har dog feltet ProductCategory og feltet ProductSubcategory i hver deres tabel.
+### <a name="prerequisites"></a>Forudsætninger
+- Denne artikel er beregnet til Power BI-brugere, som allerede har erfaring med Power BI Desktop, så de kan oprette mere avancerede modeller. Du bør allerede have kendskab til at bruge **Hent data** og **Forespørgselseditor** til at importere data, arbejde med flere relaterede tabeller og tilføje felter på dit rapportcanvas. Hvis du ikke har erfaring med Power BI Desktop, skal du se [Introduktion til Power BI Desktop](desktop-getting-started.md).
+  
+- I selvstudiet bruges [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), som er det samme eksempel, der bruges i selvstudiet [Opret dine egne målinger i Power BI Desktop](desktop-tutorial-create-measures.md). Disse salgsdata fra det fiktive firma Contoso, Inc. blev importeret fra en database, så du behøver ikke at oprette forbindelse til datakilden eller se den i Forespørgselseditor. Download og udpak filen på din computer, og åbn den derefter i Power BI Desktop.
 
- ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_nonewcol.png)
+## <a name="create-a-calculated-column-with-values-from-related-tables"></a>Opret en beregnet kolonne med værdier fra relaterede tabeller
 
-Vi opretter en ny beregnet kolonne, der skal kombinere værdier fra disse to kolonner til nye værdier for vores nye kolonne. Vi skal altså kombinere data fra to forskellige tabeller i én enkelt kolonne. Eftersom vi vil benytte DAX til at oprette vores nye kolonne, kan vi udnytte alle fordelene for den model, vi allerede har, herunder relationerne mellem forskellige tabeller, der allerede findes.
+I din salgsrapport vil du gerne have vist produktkategorier sammen med produktunderkategorier som enkeltværdier, f.eks. mobiltelefoner – tilbehør, mobiltelefoner – smartphones og PDA'er osv. Der er ingen felter på listen **Felter**, der giver dig disse data, men der er et felt af typen **ProductCategory** og et felt af typen **ProductSubcategory** i hver sin tabel. Du kan oprette en beregnet kolonne, der kombinerer værdier fra disse to kolonner. DAX-formler kan udnytte alle fordelene ved den model, vi allerede har, herunder relationerne mellem forskellige tabeller, der allerede findes. 
 
-### <a name="to-create-a-productfullcategory-column"></a>Sådan oprettes en kolonne af typen ProductFullCategory
-1.  Højreklik på eller klik på pil ned på tabellen **ProductSubCategory** på feltlisten, og klik derefter på **New Column** (Ny kolonne). På den måde sikres det, at vores nye kolonne føjes til tabellen ProductSubCategory.
+ ![Kolonner på listen Felter](media/desktop-tutorial-create-calculated-columns/create1.png)
+
+1.  Vælg ellipsen for **flere indstillinger** (...), eller højreklik på tabellen **ProductSubcategory** på listen Felter, og vælg derefter **New Column** (Ny kolonne). Dette opretter den nye kolonne i tabellen ProductSubcategory.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_newcolumn.png)
+    ![Ny kolonne](media/desktop-tutorial-create-calculated-columns/create2.png)
     
-    Formellinjen vises langs toppen af dit rapportcanvas eller datagitter. Her kan du omdøbe kolonnen og angive en DAX-formel.
+    Formellinjen vises langs toppen af rapportcanvasset, hvor du kan navngive kolonnen og angive en DAX-formel.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_newcolumnformula.png)
+    ![Formellinje](media/desktop-tutorial-create-calculated-columns/create3.png)
     
-    En ny beregnet kolonne hedder som standard blot Column (Kolonne). Hvis du ikke omdøber den, og du opretter efterfølgende kolonner, navngives de Column2, Column3 osv. Vi vil gerne have, at kolonnerne kan identificeres, så vi giver vores nye kolonne et nyt navn.
+2.  En ny beregnet kolonne hedder som standard blot Column (Kolonne). Hvis du ikke omdøber den, navngives nye ekstra kolonner Column 2, Column 3 osv. Din kolonne skal være lettere at identificere, så eftersom navnet **Column** (Kolonne) allerede er markeret på formellinjen, kan du omdøbe den ved at indtaste **ProductFullCategory** og derefter indtaste et lighedstegn (**=**).
     
-2.  Eftersom navnet **Column** (Kolonne) allerede er fremhævet på formellinjen, skal du blot skrive **ProductFullCategory**.
+3.  Værdierne i den nye kolonne skal starte med navnet ProductCategory. Eftersom denne kolonne er i en anden, men relateret tabel, kan du bruge funktionen [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) til at hjælpe med at hente kolonnen.
     
-    Nu kan du begynde at skrive en formel. Værdierne i den nye kolonne skal starte med navnet ProductCategory fra tabellen ProductCategory. Eftersom denne kolonne er i en anden, men relateret tabel, skal vi bruge funktionen [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) til at hjælpe os med at hente kolonnen.
+    Skriv et **r** efter lighedstegnet. På en rulleliste vises alle de DAX-funktioner, der begynder med r. Når du vælger en funktion, vises en beskrivelse af funktionens effekt. Efterhånden som du skriver, skaleres forslagslisten tættere på den funktion, du har brug for. Vælg **RELATED**, og tryk derefter på **Enter**.
     
-3.  Skriv et **R** efter lighedstegnet. Herefter får du vist en rulleliste med forslag til alle de DAX-funktioner, der begynder med R. Jo mere du skriver, desto tættere kommer listen på den funktion, vi har brug for. Du får vist en beskrivelse af funktionen ud for funktionen. Vælg **RELATED** ved at rulle ned, og tryk derefter på Enter.
+    ![Vælg RELATED](media/desktop-tutorial-create-calculated-columns/create4.png)
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_1.png)
+    En venstreparentes vises sammen med en anden liste med forslag over de relaterede kolonner, du kan sende til funktionen RELATED, med beskrivelser og oplysninger om forventede parametre. 
     
-    Der vises en startparentes sammen med en anden forslagsliste over alle de kolonner, du kan bruge som argument i RELATED-funktionen. Der vises også en beskrivelse og oplysninger om de parametre, der forventes.
+    ![Vælg ProductCategory](media/desktop-tutorial-create-calculated-columns/create5.png)
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_2.png)
-    
-    Et udtryk vises altid mellem en start- og slutparentes. I dette tilfælde indeholder udtrykket et enkelt argument, der overføres til funktionen RELATED: den relaterede kolonne, værdierne skal returneres fra. Listen over kolonner indsnævres automatisk til kun at vise de kolonner, der er relateret. I dette tilfælde vil vi have kolonnen ProductCategory i tabellen ProductCategory.
-    
-    Vælg **ProductCategory [ProductCategory]**, og skriv derefter en slutparentes.
+4.  I dette tilfælde skal du bruge kolonnen **ProductCategory** i tabellen **ProductCategory**. Vælg **ProductCategory[ProductCategory]**, tryk på **Enter**, og angiv derefter en slutparentes.
     
     > [!TIP]
-    > Syntaksfejl skyldes ofte, at der mangler en slutparentes, eller at den er placeret forkert. Men ofte tilføjes den automatisk i Power BI Desktop, hvis du glemmer den.
-    > 
-    > 
+    > Syntaksfejl skyldes oftest en manglende eller forkert placeret slutparentes, selvom Power BI Desktop nogle gange tilføjer den for dig.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_3.png)
+4. ProductCategories og ProductSubcategories skal adskilles af tankestreger og mellemrum i de nye værdier, så efter slutparentesen i det første udtryk skal du indtaste et mellemrum, et ampersand (**&**), dobbelte anførselstegn (**"**), mellemrum, tankestreg (**-**), endnu et mellemrum, endnu et dobbelt anførselstegn og endnu et ampersand. Din formel skal se sådan ud:
     
-4. Vi tilføjer en bindestreg for at adskille hver værdi, så efter slutparentesen i det første udtryk skal du lave et mellemrum, et &-tegn (&), anførselstegn, mellemrum, bindestreg (-), endnu et mellemrum, et anførselstegn og derefter endnu et &-tegn. Din formel skal se sådan ud:
-    
-    **ProductFullCategory = RELATED(ProductCategory[ProductCategory]) & " - " &**
+    `ProductFullCategory = RELATED(ProductCategory[ProductCategory]) & " - " &`
     
     > [!TIP]
-    > Klik på den nedadvendte pil i højre side af formellinjen for at udvide formeleditoren. Klik på Alt & Enter for at gå en linje ned og tabulator for at flytte ting.
-    > 
-    > 
+    > Klik på den nedadvendte pil i højre side af formellinjen for at udvide formeleditoren, hvis du har brug for mere plads. Klik på **Alt + Enter** i teksteditoren for at gå en linje ned og **tabulator** for at flytte ting.
     
-5.  Til sidst skal du indtaste endnu en åbningsparentes og derefter markere kolonnen **[ProductSubcategory]** for at afslutte formlen. Din formel skal se sådan ud:
+5.  Indtast endnu en venstreparentes (**[**), og vælg derefter kolonnen **[ProductSubcategory]** for at afslutte formlen. 
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_5.png)
+    ![Vælg ProductSubcategory](media/desktop-tutorial-create-calculated-columns/create6.png)
     
-    Du kan se, at vi ikke har brugt endnu en RELATED-funktion i det andet udtryk, der kalder ProductSubcategory-kolonnen. Dette skyldes, at denne kolonne allerede er i den samme tabel, som vi opretter den nye kolonne i. Vi kan indtaste [ProductCategory] med tabelnavnet (fuldt kvalificeret) eller uden (ikke-kvalificeret).
+    Du havde ikke brug for endnu en RELATED-funktion til at kalde tabellen ProductSubcategory i det andet udtryk, fordi du er ved at oprette den beregnede kolonne i denne tabel. Du kan indtaste [ProductCategory] med tabelnavnspræfikset (fuldt kvalificeret) eller uden (ikke-kvalificeret).
     
-6.  Afslut formlen ved at trykke på Enter eller ved at klikke på fluebenet i formellinjen. Formlen valideres og tilføjes på feltlisten i tabellen **ProductSubcategory**.
+6.  Afslut formlen ved at trykke på **Enter** eller ved at klikke på fluebenet i formellinjen. Formlen valideres, og kolonnenavnet **ProductFullCategory** vises i tabellen **ProductSubcategory** på listen over felter. 
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_pfc_6.png)
+    ![Afsluttet ProductFullCategory-kolonne](media/desktop-tutorial-create-calculated-columns/create7.png)
     
-    Læg mærke til, at beregnede kolonner får et særligt ikon på feltlisten. Det viser, at de indeholder en formel. De ser kun sådan ud i Power BI Desktop. I Power BI-tjenesten (Power BI-webstedet) er det ikke muligt at ændre en formel, hvorfor et beregnet kolonnefelt ikke har et ikon.
+    >[!NOTE]
+    >I Power BI Desktop får beregnede kolonner et særligt ikon på feltlisten, der viser, at de indeholder formler. I Power BI-tjenesten (dit Power BI-websted) er det ikke muligt at ændre formler, hvorfor beregnede kolonner ikke har et ikon.
     
-## <a name="lets-add-our-new-column-to-a-report"></a>Lad os føje den nye kolonne til en rapport
-Vi kan nu føje vores nye ProductFullCategory-kolonne til rapportcanvasset. Lad os se på SalesAmount efter ProductFullCategory.
+## <a name="use-your-new-column-in-a-report"></a>Brug den nye kolonne i en rapport
 
-Træk kolonnen **ProductFullCategory** fra tabellen **ProductSubcategory** til rapportcanvasset, og træk derefter feltet **SalesAmount** fra tabellen **Sales** ind i diagrammet.
+Nu kan du bruge den nye kolonne ProductFullCategory til at kigge på SalesAmount efter ProductFullCategory.
 
-![](media/desktop-tutorial-create-calculated-columns/calccol_fileds_report_1.png)
+1. Vælg eller træk kolonnen **ProductFullCategory** fra tabellen **ProductSubcategory** til rapportcanvasset for at oprette en tabel, der viser alle ProductFullCategory-navne.
+   
+   ![Tabellen ProductFullCategory](media/desktop-tutorial-create-calculated-columns/vis1.png)
+    
+2. Vælg eller træk feltet **SalesAmount** fra tabellen **Sales** til tabellen for at få vist salgsbeløbet for hver produktkategori.
+   
+   ![SalesAmount efter tabellen ProductFullCategory](media/desktop-tutorial-create-calculated-columns/vis2.png)
+    
+## <a name="create-a-calculated-column-that-uses-an-if-function"></a>Opret en beregnet kolonne, der benytter en IF-funktion
 
-## <a name="lets-create-another"></a>Lad os oprette en anden beregnet kolonne
-Nu ved du, hvordan du kan oprette en beregnet kolonne, så lad os oprette en mere.
+Contoso Sales-eksemplet indeholder salgsdata for både aktive og inaktive butikker. Du vil sikre, at salget for aktive butikker adskilles tydeligt fra salget i inaktive butikker i din rapport ved at oprette et felt af typen Active StoreName. I den nye beregnede kolonne Active StoreName, vises alle aktive butikker med butikkens fulde navn, mens inaktive butikker grupperes under "Inactive". 
 
-Contoso Sales-salgseksemplet i Power BI Desktop-modellen indeholder salgsdata for både aktive og inaktive butikker. Vi vil gerne gøre det tydeligt, at de data, der vises for inaktive butikker, fremstår som inaktive. Vi vil gerne have et felt med navnet Active StoreName. Vi er derfor nødt til at oprette endnu en kolonne. I dette tilfælde vil vi gerne have vist butikkens navn som "Inaktiv", når en butik er inaktiv, men have vist butikkens rigtige navn, når der er tale om en aktiv butik.
+Tabellen Stores indeholder heldigvis en kolonne ved navn **Status** med værdier som "On" for aktive butikker og "Off" for inaktive butikker, som vi kan bruge til at oprette værdier for vores nye kolonne Active StoreName. Din DAX-formel bruger den logiske funktion [IF](https://msdn.microsoft.com/library/ee634824.aspx) til at kontrollere alle butikkernes status og returnerer en bestemt værdi, afhængigt af resultatet. Hvis en butiks status er "On" (Aktiveret), returnerer formlen butikkens navn. Hvis den er "Off" (Deaktiveret), tildeler formlen et "Inactive" til Active StoreName. 
 
-Heldigvis er der en kolonne med navnet Status i tabellen Stores (Butikker) med værdien On (Aktiveret) for aktive butikker og Off (Deaktiveret) for inaktive butikker. Vi kan kontrollere værdierne for hver række i kolonnen Status for at oprette nye værdier i vores nye kolonne.
 
-### <a name="to-create-an-active-storename-column"></a>Sådan oprettes en kolonne af typen Active StoreName
-1.  Opret en ny beregnet kolonne med navnet **Active StoreName** i tabellen **Stores**.
+1.  Opret en ny beregnet kolonne med navnet **Active StoreName** i tabellen **Stores** på formellinjen.
     
-    I denne kolonne kontrollerer DAX-formlen den enkelte butiks status. Hvis en butiks status er On (Aktiveret), returneres butikkens navn. Hvis den er Off (Deaktiveret), får den navnet "Inactive" (Inaktiv). Vi bruger den logiske funktion [IF](https://msdn.microsoft.com/library/ee634824.aspx) til at kontrollere butikkens status og returnere en bestemt værdi, hvis resultatet er true eller false.
+2.  Efter tegnet **=** skal du begynde at skrive **IF**. På forslagslisten kan du se, hvad du kan tilføje. Vælg **IF**.
     
-2.  Begynd med at skrive **IF**. Forslagslisten viser, hvad du kan tilføje. Vælg **IF**.
+    ![Vælg IF](media/desktop-tutorial-create-calculated-columns/if1.png)
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_1.png)
+3.  Det første argument for IF er en logisk test af, om en butiks status er "On". Indtast en venstreparentes **[**, som oplister kolonner fra tabellen Stores, og vælg **[Status]**.
     
-    Det første argument for IF er en logisk test. Vi vil gerne afprøve, om en butik har status "On" (Aktiveret).
+    ![Vælg Status](media/desktop-tutorial-create-calculated-columns/if2.png)
     
-3.  Indtast en startparentes **[** , som gør det muligt for os at vælge kolonner fra tabellen Stores. Vælg **[Status]**.
+4.  Lige efter **[Status]** skal du skrive **= "On"** og derefter skrive et komma (**,**) for at afslutte argumentet. Værktøjstippet foreslår, at du skal tilføje en værdi, der skal returneres, hvis resultatet er TRUE.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_2.png)
+    ![Tilføj TRUE-værdi](media/desktop-tutorial-create-calculated-columns/if3.png)
     
-4.  Lige efter **[Status]** skal du skrive **= "On"** og derefter et komma (**,**) for at angive det andet argument. Værktøjstippet angiver, at vi skal tilføje den værdi, der skal bruges, når resultatet er true.
+5.  Hvis butikkens status er "On" (Aktiveret), vil du have vist butikkens navn. Skriv en venstreparentes **[**, og vælg kolonnen **[StoreName]**, og skriv derefter endnu et komma. Værktøjstippet angiver nu, at du skal tilføje en værdi, der skal returneres, hvis resultatet er FALSE. 
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_3.png)
+    ![Tilføj værdien FALSE](media/desktop-tutorial-create-calculated-columns/if4.png)
     
-5.  Hvis butikken er On (Aktiveret), vil vi have vist butikkens navn. Skriv en startparentes **[**, og vælg kolonnen **[StoreName]**, og skriv derefter et andet komma, så vi kan indtaste vores tredje argument.
+6.  Du vil have, at værdien er *Inactive*, så skriv **"Inactive"**, og afslut derefter formlen ved at trykke på **Enter** eller ved at vælge fluebenet i formellinjen. Formlen valideres, og navnet på den nye kolonne vises i tabellen **Stores** på listen over felter.
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_step5.png)
+    ![Kolonnen Active StoreName](media/desktop-tutorial-create-calculated-columns/if5.png)
     
-6.  Vi skal tilføje den værdi, der skal angives, når resultatet er false. I dette tilfælde **"Inactive"**.
+8.  Du kan bruge den nye Active StoreName-kolonne i visualiseringer på samme måde som et hvilket som helst andet felt. Hvis du vil have vist SalesAmounts efter Active StoreName, skal du vælge feltet **Active StoreName** og trække det til canvasset, og derefter vælge feltet **SalesAmount** eller trække det til tabellen. I denne tabel vises aktive butikker separat efter navn, mens inaktive butikker er grupperet tilsidst som *Inactive*. 
     
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_step6.png)
+    ![SalesAmount efter tabellen Active StoreName](media/desktop-tutorial-create-calculated-columns/if6.png)
     
-7.  Afslut formlen ved at trykke på Enter eller ved at klikke på fluebenet i formellinjen. Formlen valideres og tilføjes på feltlisten i tabellen Stores.
-    
-    Vi kan nu bruge vores nye Active StoreName-kolonne i visualiseringer på samme måde som et hvilket som helst andet felt. I dette diagram vises butikker med statussen On (Aktiveret) enkeltvist efter navn, men butikker med statussen Off (Deaktiveret) grupperes og vises som inaktive. 
-    
-    ![](media/desktop-tutorial-create-calculated-columns/calccol_activestore_viz.png)
-    
-## <a name="what-weve-learned"></a>Det har du lært
-Beregnede kolonner kan forbedre vores data og give bedre indsigt. Du har lært, hvordan du opretter beregnede kolonner ved at bruge formellinjen, hvordan du bruger forslagslisten, og hvordan du bedst navngiver nye kolonner.
+## <a name="what-youve-learned"></a>Det har du lært
+Beregnede kolonner kan forbedre vores data og give bedre indsigt. Du har lært at oprette beregnede kolonner på feltlisten og formellinjen, bruge forslagslister og værktøjstip til at hjælpe med at oprette formler, kalde DAX-funktioner som f.eks. RELATED og IF med de korrekte argumenter og bruge beregnede kolonner i rapportvisualiseringer.
 
 ## <a name="next-steps"></a>Næste trin
-Hvis du vil vide mere om DAX-formler og oprette beregnede kolonner med mere avancerede DAX-formler, skal du se [Grundlæggende DAX i Power BI Desktop](desktop-quickstart-learn-dax-basics.md). Denne artikel har fokus på de grundlæggende koncepter i DAX, for eksempel syntaks, funktioner og en dybere forståelse af kontekst.
+Hvis du vil vide mere om DAX-formler og oprette beregnede kolonner med mere avancerede formler, skal du se [Grundlæggende DAX i Power BI Desktop](desktop-quickstart-learn-dax-basics.md). Denne artikel har fokus på de grundlæggende koncepter i DAX, for eksempel syntaks, funktioner og en dybere forståelse af kontekst.
 
 Husk at føje [DAX-reference (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx) til dine favoritter. Det er her, du finder detaljerede oplysninger om DAX-syntaks, operatorer og de mere end 200 DAX-funktioner.
 

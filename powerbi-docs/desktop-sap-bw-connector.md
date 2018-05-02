@@ -15,17 +15,19 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/06/2018
+ms.date: 04/09/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 84ee8e7c6dd92c5400b6e9d44fab03ad347084d9
-ms.sourcegitcommit: e31fc1f6e4af427f8b480c8dbc537c3617c9b2c0
+ms.openlocfilehash: d644f13f6c9b8ada62a0862fdcf92518512828f7
+ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Brug af SAP BW Connector i Power BI Desktop
-Med Power BI Desktop har du adgang til data i **SAP BusinessWarehouse (BW)**.
+Med Power BI Desktop har du adgang til data i **SAP Business Warehouse (BW)**.
+
+Du kan få oplysninger om, hvordan SAP-kunder kan integrere Power BI i deres eksisterende SAP Business Warehouse (BW)-systemer i [Hvidbog til Power BI og SAP BW](https://aka.ms/powerbiandsapbw).
 
 ## <a name="installation-of-sap-bw-connector"></a>Installation af SAP BW Connector
 Når du vil bruge **SAP BW Connector**, skal du gennemføre følgende installationstrin:
@@ -115,3 +117,4 @@ Du kan finde flere oplysninger om SAP HANA og DirectQuery i følgende ressourcer
 * [DirectQuery og SAP HANA](desktop-directquery-sap-hana.md)
 * [DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakilder, der understøttes af DirectQuery](desktop-directquery-data-sources.md)
+* [Hvidbog til Power BI og SAP BW](https://aka.ms/powerbiandsapbw)
