@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 4/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b5da2bf43f2d38e0828571e2b9d404feb615ac69
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.openlocfilehash: 7be260a5989ffb6a9dc1b72dad90d227e0b6295b
+ms.sourcegitcommit: bdb1fee3612bcc66153dcad8c4db2e99fb041014
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Brug detaljeadgang i Power BI Desktop
 Med **detaljeadgang** i **Power BI Desktop** kan du oprette en side i rapporten, som fokuserer på et bestemt objekt – f.eks. en leverandør, en kunde eller en producent. Når denne rapportside er i fokus, kan brugere højreklikke på et datapunkt på andre rapportsider og få detaljeadgang til siden med fokus for at få oplysninger, der er filtreret i forhold til denne kontekst.
@@ -45,8 +45,8 @@ Med **detaljeadgang** i **Power BI Desktop** kan du oprette en side i rapporten,
 ## <a name="use-your-own-image-for-a-back-button"></a>Brug dit eget billede på en Tilbage-knap    
  Eftersom knappen Tilbage er et billede, kan du erstatte billedet af dette visual med et hvilket som helst billede, og det fungerer stadig som en Tilbage-knap, der sender brugere af rapporten tilbage til den oprindelige side.
 
-1. Du bruger dit eget billede på en Tilbage-knap ved at placere et billede på siden Detaljeadgang.
-2. Vælg det visual, du vil bruge, og angiv skyderen for **Tilbage-knappen** til Til. Billedet fungerer nu som en Tilbage-knap.
+1. På fanen **Startside** skal du klikke på **Billede** og derefter finde billedet og placere det på siden detaljeadgang.
+2. Vælg det nye billede på siden Detaljeadgang og indstil skyderen for **Link** til On i afsnittet Formatér billede, og angiv **Type** til **Tilbage**. Billedet fungerer nu som en Tilbage-knap.
 
     ![](media/desktop-drillthrough/drillthrough_05.png)
 
