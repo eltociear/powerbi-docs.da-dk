@@ -2,26 +2,27 @@
 title: Publicer og del
 metadata:
   title: Publicer og del | Microsoft Power BI
-  description: "Data er mest effektive, når de deles med andre. Lær, hvordan du udgiver, eksporterer, deler og distribuerer Power BI-dataindsigt."
+  description: Data er mest effektive, når de deles med andre. Lær, hvordan du udgiver, eksporterer, deler og distribuerer Power BI-dataindsigt.
   audience: Business User
   level: Beginner
-  nextTutorialHref: introductiontodax
+  nextTutorialHref: introductiontodax.yml
   nextTutorialTitle: Introduktion til DAX
   displayType: one-column
   author: davidiseminger
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 12/06/2017
+  ms.date: 05/02/2018
   ms.author: davidi
-  ms.openlocfilehash: cc8560f56cba1f8bb0dc3d7faedf44433318288b
-  ms.sourcegitcommit: 7bf22bb1136fdb0f962422e16e837187f090827c
+  ms.openlocfilehash: 32729b224866381b41be53ac1eb8f7f1874903b4
+  ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 02/06/2018
+  ms.lasthandoff: 05/04/2018
 items:
 - durationInMinutes: 1
-  content: "Data er mest effektive, når de deles med andre. Lær, hvordan du udgiver, eksporterer, deler og distribuerer Power BI-dataindsigt.\n"
+  content: >
+    Data er mest effektive, når de deles med andre. Lær, hvordan du udgiver, eksporterer, deler og distribuerer Power BI-dataindsigt.
 - title: Introduktion til indholdspakker, sikkerhed og grupper
   durationInMinutes: 2
   content: >
@@ -36,7 +37,7 @@ items:
 
 
     [!INCLUDE [](includes/4-1-publish-reports.md)]
-- title: "Udskriv og eksportér dashboards og rapporter"
+- title: Udskriv og eksportér dashboards og rapporter
   durationInMinutes: 4
   content: >
     > [!Video https://www.youtube.com/embed/gauDt5ZV74I?rel=0]
@@ -92,15 +93,15 @@ items:
 
 
     [!INCLUDE [](includes/6-4a-integrate-onedrive-for-business.md)]
-- title: "Udgiv på internettet"
+- title: Udgiv på internettet
   durationInMinutes: 5
   content: >
     > [!Video https://www.youtube.com/embed/jNPOaLP9hlc?rel=0]
 
 
     [!INCLUDE [](includes/6-6-publish-to-web.md)]
-- title: "Afslutning af Power BI Automatiseret læring"
+- title: Afslutning af Power BI Automatiseret læring
   durationInMinutes: 4
   content: >
     [!INCLUDE [](includes/6-5-guided-learning-completion.md)]
-- content: "Du har fuldført sektionen **Udgivelse og deling** i Automatiseret læring for Power BI. Hvis du vil have en introduktion til DAX, der er det sprog, der bruges til at oprette Power BI-forespørgsler, skal du fortsætte til det næste selvstudium.\0"
+- content: Du har fuldført sektionen **Udgivelse og deling** i Automatiseret læring for Power BI. Hvis du vil have en introduktion til DAX, der er det sprog, der bruges til at oprette Power BI-forespørgsler, skal du fortsætte til det næste selvstudium.

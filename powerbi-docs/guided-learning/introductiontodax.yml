@@ -2,7 +2,7 @@
 title: Introduktion til DAX
 metadata:
   title: Introduktion til DAX | Microsoft Power BI
-  description: "Få mere at vide, hvordan du opretter og arbejder med DAX af en veletableret ekspert."
+  description: Få mere at vide, hvordan du opretter og arbejder med DAX af en veletableret ekspert.
   audience: Business User
   level: Beginner
   displayType: one-column
@@ -10,16 +10,17 @@ metadata:
   manager: kfile
   ms.service: powerbi
   ms.topic: get-started-article
-  ms.date: 12/05/2017
+  ms.date: 05/02/2018
   ms.author: davidi
-  ms.openlocfilehash: 5553a2b4dc3856cb90f1d392709fb313acf3c4d8
-  ms.sourcegitcommit: 7bf22bb1136fdb0f962422e16e837187f090827c
+  ms.openlocfilehash: 51c99cf6290cb6eaf27e12021415e24b927060fc
+  ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 02/06/2018
+  ms.lasthandoff: 05/04/2018
 items:
 - durationInMinutes: 1
-  content: "Få mere at vide om, hvordan du opretter og arbejder med DAX, af en veletableret ekspert.\n"
+  content: >
+    Få mere at vide om, hvordan du opretter og arbejder med DAX, af en veletableret ekspert.
 - title: Introduktion til DAX
   durationInMinutes: 9
   content: >
@@ -62,4 +63,4 @@ items:
 
 
     [!INCLUDE [](includes/7-6-dax-tables-and-filtering.md)]
-- content: "Du har fuldført afsnittet **Introduktion til DAX** i Automatiseret læring i Power BI. Sikke en rejse! Hvis du har gennemgået disse selvstudier i rækkefølge, har du afsluttet alle sektioner om **Automatiseret læring**. Sådan! Nu skal du gå til **Power BI** for at oprette overbevisende rapporter og dashboards, der fortæller din historie.\0"
+- content: Du har fuldført afsnittet **Introduktion til DAX** i Automatiseret læring i Power BI. Sikke en rejse! Hvis du har gennemgået disse selvstudier i rækkefølge, har du afsluttet alle sektioner om **Automatiseret læring**. Sådan! Nu skal du gå til **Power BI** for at oprette overbevisende rapporter og dashboards, der fortæller din historie.
