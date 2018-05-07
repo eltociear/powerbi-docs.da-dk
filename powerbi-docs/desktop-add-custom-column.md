@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 15d492aba39da23a06ac2f13bce676e0123a332c
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.openlocfilehash: f982ba613bef66514aab39b43cf0fe92b1b7b81c
+ms.sourcegitcommit: bdb1fee3612bcc66153dcad8c4db2e99fb041014
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Tilføj en brugerdefineret kolonne i Power BI Desktop
 Du kan nemt føje en ny brugerdefineret kolonne med data til din model ved hjælp af **forespørgselseditoren** i **Power BI Desktop**. Du kan oprette og omdøbe din brugerdefinerede kolonne ved hjælp af knapper til oprettelse af [M-formler](https://msdn.microsoft.com/library/mt270235.aspx), der definerer din brugerdefinerede kolonne. M-formlen har et [indholdssæt med omfattende funktionsreference](https://msdn.microsoft.com/library/mt779182.aspx). 
@@ -40,7 +40,7 @@ Når **forespørgselseditoren** er startet, og der er indlæst nogle data, kan d
 
 ![](media/desktop-add-custom-column/add-custom-column_02.png)
 
-Når du gør det, åbnes vinduet **Tilføj brugerdefineret kolonne**, som beskrives i det følgende afsnit.
+Vinduet **Tilføj brugerdefineret kolonne** vises. Vinduet beskrives i det følgende afsnit.
 
 ## <a name="the-add-custom-column-window"></a>Vinduet Tilføj brugerdefineret kolonne
 I vinduet **Tilføj brugerdefineret kolonne** kan du se en liste over tilgængelige felter i ruden til højre, navnet på din brugerdefinerede kolonne øverst (du kan omdøbe den ved ganske enkelt at skrive et nyt navn i dette tekstfelt) og den [**M**-formel](https://msdn.microsoft.com/library/mt779182.aspx), du opretter (eller skriver), afhængigt af hvilke felter du indsætter fra højre, hvilke operatorer du tilføjer, og hvordan du ellers bygger den formel, som din nye brugerdefinerede kolonne defineres ud fra. 
@@ -54,7 +54,7 @@ Efterhånden som du skriver formlen og bygger din kolonne, kan du nederst i vind
 
 ![](media/desktop-add-custom-column/add-custom-column_04.png)
 
-Men hvis der er nogen form for fejl i syntaksen, vises der et gul advarselsikon sammen med den registrerede fejl, og et link, der placerer markøren (i formlen) der, hvor fejlen er registreret.
+Hvis der er fejl i syntaksen, vises der i stedet et gult advarselsikon sammen med den registrerede fejl og et link, som placerer markøren (i formlen) der, hvor fejlen er registreret.
 
 ![](media/desktop-add-custom-column/add-custom-column_05.png)
 
