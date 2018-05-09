@@ -1,28 +1,28 @@
 ---
-title: "Power BI til kunder i den amerikanske stat – oversigt"
-description: "For kunder i den amerikanske stat: Få mere at vide om funktionerne og begrænsningerne for tjenesten Power BI US Government"
+title: Power BI til kunder i den amerikanske stat – oversigt
+description: 'For kunder i den amerikanske stat: Få mere at vide om funktionerne og begrænsningerne for tjenesten Power BI US Government'
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/05/2018
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: b3682deb1897647a7de6f32dc87a4d7ed8bc2c9f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: fc917b3a6754c0e9badc11b0d331ae1328bf089c
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til kunder i den amerikanske stat
 **Power BI-tjenesten** har en tilgængelig version for kunder i den amerikanske stat som en del af abonnementer for **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til kunder i den amerikanske stat og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten**.
@@ -61,6 +61,7 @@ IP-pladser er tilgængelige i den offentlige cloud, men for government cloud-tje
 ## <a name="limitations-of-power-bi-us-government"></a>Begrænsninger for Power BI US Government
 Nogle af de funktioner, der er tilgængelige i den kommercielle version af **Power BI-tjenesten**, er *ikke* tilgængelige i **Power BI-tjenesten** til kunder i den amerikanske stat. Power BI-teamet arbejder aktivt på at gøre disse funktioner tilgængelige for kunder i den amerikanske stat og vil opdatere denne artikel, når disse funktioner bliver tilgængelige.
 
+* **Integrer i SharePoint Online** – Det er ikke muligt at integrere indhold i SharePoint Online ved hjælp af Power BI-webdelen.
 * **Power BI US Government** er kun tilgængelig som en **Pro**-licens. Henvisninger til Power BI-licenser (gratis) på en administrationsportal (eller som brugere) kører i en kommerciel cloud til Power BI-tjenesten.
 * **Overvågning** – overvågning er ikke tilgængelig via portalen Office 365 Security and Compliance.
 * **Power BI-indhold i Cortana** - Power BI-resultater vises ikke i søgeresultater i Cortana, der omfatter resultaterne for dit Power BI-indhold (dashboards, rapporter og apps) samt resultater, der viser Cortana-optimerede rapportsider for bestemte nøgleord.

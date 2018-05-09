@@ -1,6 +1,6 @@
 ---
 title: Udforsk rapporter i Power BI-mobilappsene
-description: 'Se, hvordan du kan få vist og interagere med rapporter i Power BI-mobilappsene på din telefon eller tablet. Du kan oprette rapporter i Power BI-tjenesten eller Power BI Desktop og derefter interagere med dem i mobilappsene. '
+description: Se, hvordan du kan få vist og interagere med rapporter i Power BI-mobilappsene på din telefon eller tablet. Du kan oprette rapporter i Power BI-tjenesten eller Power BI Desktop og derefter interagere med dem i mobilappsene.
 services: powerbi
 documentationcenter: ''
 author: maggiesMSFT
@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/22/2018
 ms.author: maggies
-ms.openlocfilehash: 6edd5a6e9606150d4b489a79cdb5ca57ac2f8cce
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: a7bd77ec65fd3897c6e9af9acd2a20a229565415
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -50,7 +50,7 @@ Power BI-rapporter er gemt på forskellige steder i mobilappen, afhængigt af hv
   ![Telefonrapport i liggende format](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
 
 ## <a name="view-reports-optimized-for-phones"></a>Vis rapporter, der er optimeret til telefoner
-Den, der opretter en rapport i Power BI, kan oprette et rapportlayout, som er specifikt optimeret til telefoner. Rapportsider optimeret til telefoner har supplerende funktionalitet: F.eks. kan du analysere og sortere i visuals i fokustilstand, og du kan tilgå [filtrene, som rapportens forfatter har føjet til rapportsiden](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). Rapporten åbnes på din telefon filtreret efter de værdier, der filtreres efter i rapporten på internettet, sammen med en meddelelse om, at der er aktive filtre på siden. Du kan ændre filtrene på telefonen.
+Den, der opretter en rapport i Power BI, kan oprette et rapportlayout, som er specifikt optimeret til telefoner. Rapportsider optimeret til telefoner har supplerende funktionalitet: Du kan f.eks. analysere og sortere i visuals, og du kan få adgang til de [filtre, som rapportens forfatter har føjet til rapportsiden](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). Rapporten åbnes på din telefon filtreret efter de værdier, der filtreres efter i rapporten på internettet, sammen med en meddelelse om, at der er aktive filtre på siden. Du kan ændre filtrene på telefonen.
 
 Hvis en rapport er optimeret til telefoner, vises den med et særligt ikon på listen over rapporter ![Ikon for rapport, der er optimeret til telefoner](media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
 
@@ -64,7 +64,7 @@ Når du får vist rapporten på en telefon, åbnes den i stående format.
 
 Læs mere om [rapporter, der er optimeret til visning på telefoner](mobile-apps-view-phone-report.md).
 
-## <a name="use-slicers-to-filter-a-report-page"></a>Brug udsnit til at filtrere en rapportside
+## <a name="use-slicers-to-filter-a-report"></a>Brug udsnit til at filtrere en rapport
 Når du opretter en rapport i Power BI Desktop eller Power BI-tjenesten, bør du overveje at [føje udsnit til en rapportside](power-bi-visualization-slicers.md). Du og dine kolleger kan bruge udsnittene til at filtrere siden i en browser og i mobilapps. Når du får vist rapporten på en telefon, kan du se og interagere med udsnittene i liggende tilstand og på en side, der er optimeret til telefonens lodrette tilstand. Hvis du vælger en værdi i et udsnitsværktøj eller et filter i browseren, vælges værdien også, når du får vist siden i mobilappen. Du får vist en meddelelse om, at der er aktive filtre på siden.  
 
 * Når du vælger en værdi i et udsnit på rapportsiden, filtreres de andre visualiseringer på siden.
@@ -73,7 +73,7 @@ Når du opretter en rapport i Power BI Desktop eller Power BI-tjenesten, bør du
   
   I denne illustration filtrerer udsnittet søjlediagrammet, så der kun vises værdier for juli måned.
 
-## <a name="cross-filter-and-highlight-a-power-bi-report-page"></a>Krydsfiltrer og fremhæv en Power BI-rapportside
+## <a name="cross-filter-and-highlight-a-report"></a>Krydsfiltrer og fremhæv en rapport
 Når du vælger en værdi i en visualisering, filtreres de øvrige visualiseringer ikke. I stedet fremhæves de relaterede værdier i de andre visualiseringer.
 
 * Tryk på en værdi i en visualisering.
@@ -88,8 +88,8 @@ Når du vælger en værdi i en visualisering, filtreres de øvrige visualisering
    ![Sortér en visualisering](media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-sort.png)
 * Hvis du vil vende sorteringsrækkefølgen, skal du trykke på de tre prikker (**...**) igen og derefter trykke på det samme feltnavn igen.
 
-## <a name="drill-down-and-up-in-a-visual-on-an-ipad-or-a-tablet"></a>Detailudledning i en visualisering på en iPad eller en tablet
-Hvis forfatteren til en rapport har tilføjet denne funktion i en visualisering, kan du bruge detailudledning i visualiseringer på en iPad eller tablet for at se de værdier, som er brugt til en del af visualiseringen. Du kan [tilføje detailudledning i en visualisering](power-bi-visualization-drill-down.md) i Power BI Desktop eller Power BI-tjenesten. 
+## <a name="drill-down-on-an-ipad-or-a-tablet"></a>Foretag detailudledning på en iPad eller en tablet
+Hvis forfatteren til en rapport har tilføjet funktionen for detailudledning i en visual, kan du bruge detailudledning i en visual på en iPad eller tablet for at se de værdier, som er brugt til en del af denne visual. Du kan [tilføje detailudledning i en visualisering](power-bi-visualization-drill-down.md) i Power BI Desktop eller Power BI-tjenesten. 
 
 > [!NOTE]
 > I øjeblikket kan du ikke bruge detailudledning i kort på iPad eller andre tablets.

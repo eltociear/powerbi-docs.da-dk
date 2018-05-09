@@ -2,27 +2,27 @@
 title: Datakilder til Power BI
 description: Datakilder til Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: identified
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: f2749976772d2bc2e3d48ca355925cafad93fe0c
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 70f1b5faa496c28dc39347831d4216db3ad07c59
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakilder til Power BI-tjenesten
 Dataene er i hjertet af Power BI. Når du udforsker data, opretter diagrammer og dashboards, stiller spørgsmål med Spørgsmål og svar, får alle disse visualiseringer og svar, som du ser, rent faktisk deres underliggende data fra et datasæt. Men hvor kommer dette datasæt fra? Fra en datakilde.

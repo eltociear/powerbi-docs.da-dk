@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/06/2018
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1660f129ef5c93cf5aed5a3a5eda3c835e1885c1
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: 492eed949fd47b8f057bc67b127ba774b2218887
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Brug bogmærker til at dele indsigt og oprette historier i Power BI 
 Ved hjælp af **bogmærker** i Power BI kan du indfange den visning af en rapportside, der er konfigureret i øjeblikket, herunder filtrering af og tilstanden for visualiseringer, og senere gå tilbage til denne tilstand ved ganske enkelt at vælge det gemte bogmærke. 
@@ -69,6 +69,10 @@ Konfigurer en rapportside, som du ønsker, den skal vises i bogmærket. Når din
 
 Når du har et bogmærke, kan du få vist det ved ganske enkelt at klikke på bogmærket i ruden **Bogmærker**. 
 
+Du kan også vælge, om de enkelte bogmærker skal anvende *data*egenskaber, f.eks. filtre og udsnit, *visnings*egenskaber, f.eks. spotlight og synlighed, og sideændringer, der viser den side, som kunne ses, da bogmærket blev tilføjet. Disse funktioner er nyttige, når du bruger bogmærker til at skifte mellem visuelle typer – i dette tilfælde vil du sandsynligvis deaktivere dataegenskaber, så filtre ikke nulstilles, efterhånden som brugerne ændrer visuelle typer. 
+
+Du kan foretage sådanne ændringer ved at vælge ellipsen ud for bogmærkets navn, som vist på forrige billede, og derefter markere eller fjerne markeringen i afkrydsningsfeltet ud for *Data*, *Visning* og andre objekter. 
+
 ## <a name="arranging-bookmarks"></a>Arranger bogmærker
 Når du opretter bogmærker, finder du måske ud af, at den rækkefølge, som du opretter dem i, ikke nødvendigvis er den rækkefølge, som de skal vises i. Ikke noget problem. Du kan nemt ændre rækkefølgen af bogmærker.
 
@@ -105,13 +109,13 @@ Når der tilføjes et bogmærke, gemmes synlighedsstatus for de enkelte objekter
 Det er vigtigt at bemærke, at **udsnitsværktøjer** fortsat filtrerer en rapportside, uanset om de er synlige. Du kan derfor oprette mange forskellige bogmærker med forskellige indstillinger for udsnitsværktøj og få en enkelt rapportside vist på forskellige måder (og fremhæve forskellig indsigt) i forskellige bogmærker.
 
 ## <a name="bookmarks-for-shapes-and-images"></a>Bogmærker for figurer og billeder
-Du kan også knytte figurer og billeder til bogmærker. Når du bruger denne funktion, og du klikker på et objekt, vises det bogmærke, der er knyttet til objektet. 
+Du kan også knytte figurer og billeder til bogmærker. Når du bruger denne funktion, og du klikker på et objekt, vises det bogmærke, der er knyttet til objektet. Det kan især være nyttigt, når du arbejder med knapper. Du kan få mere at vide ved at læse artiklen om [brug af knapper i Power BI](desktop-buttons.md). 
 
-Hvis du vil knytte et bogmærke til et objekt, skal du vælge **Link** i ruden **Formatér figur**, som vist på følgende billede.
+Hvis du vil knytte et bogmærke til et objekt, skal du vælge objektet og derefter udvide sektionen **Handling** i ruden **Formatér figur**, som vist på følgende billede.
 
 ![Tilføj et bogmærkelink til et objekt](media/desktop-bookmarks/bookmarks_10.png)
 
-Når du slår skyderen **Link** **til**, kan du vælge, om objektet skal være et link eller et bogmærke. Hvis du vælger et bogmærke, kan du vælge, hvilket af dine bogmærker objektet skal knyttes til.
+Når du slår skyderen **Handling** **til**, kan du vælge, om objektet skal være en tilbage-knap, et bogmærke eller en spørgsmål og svar-kommando. Hvis du vælger et bogmærke, kan du vælge, hvilket af dine bogmærker objektet skal knyttes til.
 
 Du kan gøre mange forskellige interessante ting med bogmærker, der har tilknyttet et objekt. Du kan oprette en visuel tabel med indhold på din rapportside, eller du kan angive forskellige visninger (f.eks. visuelle typer) med de samme oplysninger ved bare at klikke på et objekt.
 
@@ -138,9 +142,7 @@ Når **Spotlight** derimod er valgt i ellipsemenuen for det visuelle element, se
 Hvis en af tilstandene er markeret, når der tilføjes et bogmærke, bevares denne tilstand (fokus eller spotlight) i bogmærket.
 
 ## <a name="bookmarks-in-the-power-bi-service"></a>Bogmærker i Power BI-tjenesten
-Når du publicerer en rapport i **Power BI-tjenesten** med mindst ét bogmærke, kan du få vist og interagere med disse bogmærker i **Power BI-tjenesten**. For de enkelte rapporter, som du publicerer, skal du have mindst ét bogmærke, der er oprettet i rapporten, før du publicerer den, for at bogmærkefunktionen er tilgængelig i **Power BI-tjenesten**.
-
-Når bogmærker er tilgængelige i en rapport, kan du vælge **Vis > ruden Markering** eller **Vis > ruden Bogmærker** for at få vist hver af disse ruder.
+Når du publicerer en rapport i **Power BI-tjenesten** med mindst ét bogmærke, kan du få vist og interagere med disse bogmærker i **Power BI-tjenesten**. Når bogmærker er tilgængelige i en rapport, kan du vælge **Vis > ruden Markering** eller **Vis > ruden Bogmærker** for at få vist hver af disse ruder.
 
 ![Få vist bogmærker og markeringsruder i Power BI-tjenesten](media/desktop-bookmarks/bookmarks_14.png)
 
@@ -151,11 +153,10 @@ Bemærk, at du skal bruge titellinjen for det grå bogmærke til at navigere run
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 I denne version af **bogmærker** er der nogle få begrænsninger og overvejelser at tage betragtning.
 
-* Brugerdefinerede visuelle elementer fungerer ikke med bogmærker, hvis de er *kilden* til filteret. Hvis du bruger brugerdefinerede visuelle elementer til at filtrere elementer på en side (f.eks.firkantede udsnit) og vender tilbage til denne side ved hjælp af et bogmærke, er siden måske filtreret, men det brugerdefinerede visuelle element opdateres ikke for at vise, hvordan siden filtreres. 
-* Den tværgående fremhævningstilstand for en rapportrude gemmes *ikke*, når du opretter et bogmærke. 
+* De fleste brugerdefinerede visuals fungerer fint sammen med bogmærker. Hvis du oplever problemer med et bogmærke og en brugerdefineret visual, kan du kontakte forfatteren af denne visual og bede om at få føjet understøttelse af bogmærker til deres visuals. 
 * Hvis du tilføjer et visuelt element på en rapportside, når du har oprettet et bogmærke, vises det visuelle element i standardtilstanden. Det betyder også, at hvis du vil indføre et udsnitsværktøj på en side, hvor du tidligere har oprettet bogmærker, optræder udsnittet i standardtilstanden.
 * Hvis du flytter rundt på visuelle elementer, efter at der er oprettet et bogmærke, afspejles det i bogmærket. 
-* Du *skal* have mindst ét bogmærke i rapporten, når du publicerer den i **Power BI-tjenesten**, hvis bogmærker skal være tilgængelige i tjenesten. Det er et krav for alle de rapporter, du publicerer.
+
 
 ## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om de funktioner, der ligner eller interagerer med bogmærker, i følgende artikler:

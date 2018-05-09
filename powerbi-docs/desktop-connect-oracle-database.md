@@ -1,28 +1,28 @@
 ---
 title: Opret forbindelse til en Oracle-database
-description: "Trin og downloads, der er nødvendige for at oprette forbindelse mellem Oracle og Power BI Desktop"
+description: Trin og downloads, der er nødvendige for at oprette forbindelse mellem Oracle og Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 4/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4126a5f4fc7b8a398d39cad7c14e87e179ab3175
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: e898fb3f7024b4041616770d6fe1d8e8469878dd
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="connect-to-an-oracle-database"></a>Opret forbindelse til en Oracle-database
 Hvis du vil oprette forbindelse til en Oracle-database med **Power BI Desktop**, skal den korrekte Oracle-klientsoftware være installeret på den computer, der kører Power BI Desktop. Hvilken Oracle-klientsoftware du bruger, afhænger af, hvilken version af Power BI Desktop du har installeret – **32-bit** versionen eller **64-bit** versionen.
@@ -49,7 +49,7 @@ Når den rette Oracle-klientdriver er installeret, kan du oprette forbindelse ti
 1. Åbn vinduet Hent data, og vælg **Database > Oracle-database**
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
-2. I dialogboksen **Oracle-database**, der åbnes, skal du angive navnet på serveren og vælge **Opret forbindelse**. Hvis der kræves et SID, kan du angive det i formatet: *servernavn/SID*.
+2. I dialogboksen **Oracle-database**, der åbnes, skal du angive navnet på serveren og vælge **Opret forbindelse**. Hvis der kræves et SID, kan du angive det i følgende format: *servernavn/SID*, hvor SID er databasens entydige navn. Hvis formatet *servernavn/SID* ikke virker, kan du prøve at bruge *servernavn/tjenestenavn*, hvor tjenestenavn er det alias, der bruges, når der oprettes forbindelse.
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
 3. Hvis du vil importere data ved hjælp af en oprindelig databaseforespørgsel, kan du anbringe din forespørgsel i feltet **SQL-sætning**, der bliver tilgængelig, når du udvider sektionen **Avancerede indstillinger** i dialogboksen **Oracle-database**.

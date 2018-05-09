@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/12/2018
 ms.author: maghan
-ms.openlocfilehash: 014601a4c85be53d6fd06a455d04e5ee1f8daf2d
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 2caf5adc442a5794a23e3ed5af478f5467068b14
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="embed-your-power-bi-dashboards-reports-and-tiles"></a>Integrer dine Power BI-dashboards, -rapporter og -felter
 
@@ -143,7 +143,7 @@ Hvis du integrerer for dine kunder, skal du gøre følgende.
 * Køb den kapacitet, der opfylder dine behov. Du kan bruge tabellen nedenfor til at få overblik over, hvor meget kapacitet du skal bruge til Power BI Embedded. Du kan finde flere oplysninger i [Hvidbogen om planlægning af analysekapacitet til Embedded](https://aka.ms/pbiewhitepaper). Når du er klar til at købe, kan du gøre det på [Microsoft Azure-portalen](https://portal.azure.com). Du kan finde flere oplysninger om, hvordan du opretter kapacitet til Power BI Embedded, under [Opret kapacitet til Power BI Embedded på Azure-portalen](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 
 > [!IMPORTANT]
-> Da integrerede tokens kun er beregnet til udviklingstest, er antallet af integrerede tokens, der kan genereres fra en Power BI-masterkonto, begrænset. Der [skal købes en kapacitet](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) til integrerede produktionsscenarier. Der er ingen grænse for generering af integrerede tokens, når der er købt en kapacitet.
+> Da integrerede tokens kun er beregnet til udviklingstest, er antallet af integrerede tokens, der kan genereres fra en Power BI-masterkonto, begrænset. Der [skal købes en kapacitet](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) til integrerede produktionsscenarier. Der er ingen grænse for generering af integrerede tokens, når der er købt en kapacitet. Gå til [Hent tilgængelige funktioner](https://msdn.microsoft.com/en-us/library/mt846473.aspx) for at undersøge, hvor mange gratis integrerede tokens der er blevet brugt.
 
 | Kapacitetsnode | Kerner i alt<br/>*(Backend + frontend)* | Backendkerner | Frontendkerner | Grænser for DirectQuery/liveforbindelser | Maks. antal sidegengivelser i spidstimen |
 | --- | --- | --- | --- | --- | --- |

@@ -1,28 +1,28 @@
 ---
-title: "Løs problemer, når Power BI Desktop startes"
-description: "Løs problemer, når Power BI Desktop startes"
+title: Løs problemer, når Power BI Desktop startes
+description: Løs problemer, når Power BI Desktop startes
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/24/2018
+ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 43263afb63fa0350a240cae602f4a2acf8ef8edd
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 2014524b3209a67bd0f0aaa3d1ddf00042227c4d
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="resolve-issues-when-power-bi-desktop-will-not-launch"></a>Løs problemer, når Power BI Desktop ikke vil starte
 I **Power BI Desktop** kan brugere, der har installeret og kører tidligere versioner af **Power BI datagatewayen i det lokale miljø**, blive blokeret, så de ikke kan starte Power BI Desktop. Det skyldes administrative politikbegrænsninger, som Power BI gatewayen i det lokale miljø har angivet for navngivne pipes på den lokale computer. 
@@ -39,10 +39,12 @@ Hvis du ikke længere har brug for Power BI datagatewayen i det lokale miljø, k
 ### <a name="resolution-3-run-power-bi-desktop-with-administrator-privilege"></a>Løsning 3: Kør Power BI Desktop med administratorrettigheder
 Du kan også starte Power BI Desktop som administrator, hvilket også gør det muligt for Power BI Desktop at starte. Det anbefales stadig, at du installerer den nyeste version af Power BI datagatewayen i det lokale miljø, som beskrevet tidligere i denne artikel.
 
+Det er vigtigt at bemærke, at Power BI Desktop er udviklet som en arkitektur til flere processer, og flere af disse processer kommunikerer ved hjælp af navngivne Windows-pipes. Der kan være andre processer, som er i konflikt med disse navngivne pipes. Den mest almindelige årsag til denne konflikt er sikkerhed, herunder situationer, hvor antivirussoftware eller firewalls kan blokere pipes eller omdirigere trafik til en bestemt port. Du kan muligvis løse problemet ved at starte Power BI Desktop med administratorrettigheder. Hvis det ikke er muligt at starte med administratorrettigheder, kan du kontakte din administrator for at finde ud af, hvilke sikkerhedsregler der anvendes, som forhindrer kommunikation fra navngivne pipes, og whiteliste Power BI Desktop og de respektive underprocesser.
+
 ## <a name="help-with-other-issues-when-launching-power-bi-desktop"></a>Hjælp til andre problemer, når du starter Power BI Desktop
 Vi bestræber os på at dække så mange af de problemer, der kan opstå i forbindelse med **Power BI Desktop**, som muligt. Vi kigger jævnligt på problemer, der kan påvirke mange kunder, og inkluderer dem i vores artikler.
 
-Hvis problemet med at starte **Power BI Desktop** ikke er knyttet til datagatewayen i det lokale miljø, eller hvis tidligere løsninger ikke virker, kan du sende en supporthændelse til [Power BI support](https://support.powerbi.com) (https://support.powerbi.com) for at få hjælp til at identificere og løse problemet.
+Hvis problemet med at starte **Power BI Desktop** ikke er knyttet til datagatewayen i det lokale miljø, eller hvis tidligere løsninger ikke virker, kan du sende en supporthændelse til [Power BI-support](https://support.powerbi.com) (https://support.powerbi.com)) for at få hjælp til at identificere og løse problemet.
 
 Hvis der fremover opstår andre problemer med **Power BI Desktop** (det håber vi ikke!), er det en god ide at aktivere sporing og indsamle logfiler, så vi bedre kan isolere og identificere problemet. Hvis du vil aktivere sporing, skal du vælge **Filer > Indstillinger > Indstillinger**, vælge **Diagnosticering** og derefter markere **Aktivér sporing** under *Indstillinger for diagnosticering*. Vi er klar over, at **Power BI Desktop** skal køre, for at du kan angive denne indstilling, som er mere nyttig, hvis der fremover opstår problemer med at starte **Power BI Desktop**.
 

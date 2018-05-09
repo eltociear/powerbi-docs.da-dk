@@ -1,39 +1,32 @@
 ---
-title: "Konfigurer din rapportserver til at være vært for Excel-projektmapper ved hjælp af Office Online Server (OOS)"
-description: "Foruden at kunne få vist Power BI-rapporter på webportalen kan virksomhedsbrugere nu gøre det samme med Excel-projektmapper i Power BI-rapportserver."
+title: Host Excel-projektmapper ved hjælp af OOS (Office Online Server) – Power BI Report Server
+description: Ud over at vise Power BI-rapporter på webportalen kan Power BI Report Server hoste Excel-projektmapper ved hjælp af OOS (Office Online Server).
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 08/23/2017
+ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: a9d5c1b8da8935a535ed112030a5c2a40132f176
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: f2ff2b695ca548572294a4705235ae1c2b0046c5
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Konfigurer din rapportserver til at være vært for Excel-projektmapper ved hjælp af Office Online Server (OOS)
-Foruden at få vist Power BI-rapporter i webportalen kan virksomhedsbrugerne nu gøre det samme med Excel-projektmapper i Power BI-rapportserver, hvilket giver dem én samlet placering til at publicere og få vist deres Microsoft BI-indhold til selvbetjening.
+Ud over at vise Power BI-rapporter på webportalen kan Power BI Report Server hoste Excel-projektmapper ved hjælp af OOS [(Office Online Server)](https://docs.microsoft.com/officeonlineserver/office-online-server-overview). Rapportserveren bliver en samlet placering, hvor du kan udgive og se Microsoft BI-indhold til selvbetjening.
 
-> [!NOTE]
-> Denne funktion er medtaget som eksempelfunktion i August 2017-prøveversionen. Du kan finde flere oplysninger i [Nyheder i Power BI-rapportserver](whats-new.md).
-> 
-> 
-
-![Excel-rapporter vises fra rapportserverens webportal.](media/excel-oos/excel-in-pbirs.png)
-
-Det er muligt ved hjælp af [Office Online Server](https://technet.microsoft.com/library/jj219437\(v=office.16\).aspx) (OOS).
+![Excel-rapporter vist fra rapportserverens webportal](media/excel-oos/excel-in-pbirs.png)
 
 ## <a name="prepare-server-to-run-office-online-server"></a>Klargør server til at køre Office Online Server
 Udfør disse procedurer på den server, der kører Office Online Server. Serveren skal være Windows Server 2012 R2 eller Windows Server 2016. Windows Server 2016 kræver Office Online Server April 2017 eller nyere.
@@ -92,7 +85,7 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 
 **Parametre**
 
-* **–InternalURL** er det fuldt kvalificerede domænenavn (FQDN) for den server, der kører Office Online Server, for eksempel http://servernavn.contoso.com.
+* **–InternalURL** er det fuldt kvalificerede domænenavn (FQDN) for den server, der kører Office Online Server, f.eks. http://servername.contoso.com.
 * **–ExternalURL** er den FQDN-sti, der kan fås adgang til på internettet.
 * **–CertificateName** er certifikatets læsevenlige navn.
 
@@ -105,7 +98,7 @@ New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp
 
 **Parametre**
 
-* **–InternalURL** er navnet på den server, der kører Office Online Server, for eksempel http://servernavn.
+* **–InternalURL** er navnet på den server, der kører Office Online Server, f.eks. http://servername.
 * **–AllowHttp** konfigurerer farmen til at bruge HTTP.
 
 ### <a name="verify-that-the-office-online-server-farm-was-created-successfully"></a>Kontrollér, at Office Online Server-farmen blev oprettet

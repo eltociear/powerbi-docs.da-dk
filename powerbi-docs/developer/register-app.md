@@ -1,27 +1,27 @@
 ---
 title: Registrer en app for at integrere Power BI-indhold
-description: "Få mere at vide om, hvordan du registrerer et program i Azure Active Directory, som skal bruges til at integrere Power BI-indhold."
+description: Få mere at vide om, hvordan du registrerer et program i Azure Active Directory, som skal bruges til at integrere Power BI-indhold.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/05/2017
+ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: cc9a4c7a29ddb84e6230d42f31a9c6a0427008f1
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: e3d0e8b98135e232809cd2b5e3fc06827b1f480e
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="register-an-azure-ad-app-to-embed-power-bi-content"></a>Registrer en Azure AD-app for at integrere Power BI-indhold
 Få mere at vide om, hvordan du registrerer et program i Azure Active Directory (Azure AD), som skal bruges til at integrere Power BI-indhold.
@@ -58,6 +58,22 @@ Sådan registrerer du dit program ved hjælp af værktøjet Power BI App Registr
 7. Vælg **Register App** (Registrer app).
    
     Derefter få du et **Klient-id**. Hvis du har valgt **Server-side Web app** (Serverbaseret webapp), får du også en **Klienthemmelighed**. **Klient-id** kan hentes fra Azure-portalen på et senere tidspunkt, hvis det er nødvendigt. Hvis du mister den pågældende **Klienthemmelighed**, skal du oprette en ny på Azure-portalen.
+
+8. Du skal gå til Azure for at vælge **Giv tilladelser**.
+> [!Note]
+    > Du skal være global administrator af Azure-lejeren for at fuldføre dette
+>
+
+* Gå til Azure.
+* Søg efter og vælg **Appregistreringer**.
+* Vælg din app.
+* Vælg **Indstillinger**.
+* Vælg **Krævede tilladelser**.
+* Vælg **Power BI-tjeneste** for at bekræfte de tilladelser, du har valgt på webstedet til registrering af appen.
+* Vælg **Giv tilladelser**.
+
+
+
 
 Du kan nu bruge det registrerede program som del af dit tilpassede program til at kommunikere med Power BI-tjenesten.
 
@@ -190,4 +206,5 @@ Du vil foretrække at være logget på enten via *hovedkontoen*, der er anvendt 
 Nu, hvor du har registreret dit program i Azure AD, skal du godkende brugere i dit program. Du kan finde flere oplysninger under [Godkend brugere, og få et Azure AD-adgangstoken til din Power BI-app](get-azuread-access-token.md).
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+
 

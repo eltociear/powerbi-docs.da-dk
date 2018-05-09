@@ -3,7 +3,7 @@ title: Brug Kerberos på gatewayen i det lokale miljø til SSO (enkeltlogon) fra
 description: Konfigurer din gateway med Kerberos for at aktivere SSO fra Power BI til datakilder i det lokale miljø
 services: powerbi
 documentationcenter: ''
-author: davidiseminger
+author: mgblythe
 manager: kfile
 backup: ''
 editor: ''
@@ -16,13 +16,13 @@ ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/09/2018
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: f60709e45e844ff7ab1a9c6bf3cb669c567dfcc8
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: 344e6ecc31748d58f0803f95aed53badfa6be4f2
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-kerberos-for-sso-single-sign-on-from-power-bi-to-on-premises-data-sources"></a>Brug Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø
 Du kan få problemfri forbindelse med enkeltlogon, så Power BI-rapporter og -dashboards kan opdateres fra data i det lokale miljø, ved at konfigurere din datagateway i det lokale miljø med Kerberos. Datagatewayen i det lokale miljø gør det muligt at foretage enkeltlogon (SSO) ved hjælp af DirectQuery, som den bruger til at oprette forbindelse til datakilder i det lokale miljø.
@@ -64,19 +64,18 @@ Der følger flere oplysninger om disse trin:
 
 
 > [!NOTE]
-> Hvis du vil aktivere SSO til SAP HANA, skal du sikre, at følgende SAP HANA specifikke konfigurationsrettelser overholdes for SAP:
-> 1. Kontrollér, at SAP HANA serveren kører den påkrævede minimumversion, hvilket afhænger af niveauet af din SAP HANA serverplatform:
-> * [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
-> * [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
-> * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
+> Sådan aktiverer du SSO til SAP HANA:
 >
-> 2. Installér SAP's seneste HANA ODBC-driver på gatewaycomputeren.  Minimumversionen er HANA ODBC version 2.00.020.00 fra august 2017.
+> - Kontrollér, at SAP HANA serveren kører den påkrævede minimumversion, hvilket afhænger af niveauet af din SAP HANA serverplatform:
+>     - [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
+>     - [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
+>     - [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
 >
-> Følgende links til programrettelserne og opgraderinger fra SAP kan være nyttige. Bemærk, at du skal logge på følgende ressourcer ved hjælp af din konto til SAP Support, og SAP kan ændre eller opdatere disse links.
-> 
-> * [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386) 
-> * [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324) 
-> * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
+> - Installér SAP's seneste HANA ODBC-driver på gatewaycomputeren.  Minimumversionen er HANA ODBC version 2.00.020.00 fra august 2017.
+>
+> Du kan finde flere oplysninger om, hvordan du konfigurerer og angiver enkeltlogon for SAP HANA ved hjælp af Kerberos, i emnet [Enkeltlogon ved hjælp af Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/en-US/1885fad82df943c2a1974f5da0eed66d.html) i SAP HANA-sikkerhedsvejledningen og linkene fra denne side, især SAP Note 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory]. 
+>
+>
 
 
 ## <a name="errors-from-an-insufficient-kerberos-configuration"></a>Fejl fra en utilstrækkelig Kerberos-konfiguration

@@ -1,28 +1,28 @@
 ---
 title: Tilmelding til Power BI for offentlige myndigheder i USA
-description: "For offentlige myndigheder i USA, få mere at vide om, hvordan du tilmelder din US Government-organisation til Power BI US Government-tjenesten"
+description: For offentlige myndigheder i USA, få mere at vide om, hvordan du tilmelder din US Government-organisation til Power BI US Government-tjenesten
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/27/2017
+ms.date: 04/24/2017
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e4015d0de5c11a9726089a62825950dc0532205d
-ms.sourcegitcommit: d91b7bf18d5c504037134f375886633379f28ede
+ms.openlocfilehash: a52aaaffb5f66ba5596e788183ef52753f08c8bf
+ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Tilmeld din US Government-organisation til Power BI-tjenesten
 **Power BI-tjenesten** har en version tilgængelig for offentlige myndigheder i USA som en del af abonnementer på **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til offentlige myndigheder i USA og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten**.
@@ -97,12 +97,7 @@ Gå til **Fakturering > Abonnementer**, og vælg **Power BI Pro for Government**
 ### <a name="whitelisting-instructions"></a>Whitelisting-instruktioner
 *Whitelisting* er en proces, som Power BI-teknikere bruger til at flytte kunder fra det kommercielle cloudmiljø til det sikre, Government-cloudmiljø. Dette sikrer, at funktioner, der er tilgængelige i US Government-clouden, fungerer som forventet. Alle eksisterende (eller nye) offentlige myndigheder i USA, der køber US Government **Power BI**-tjenester for første gang, *skal* iværksætte følgende whitelisting-proces. Processen skal udføres inden opsætning eller overflytning til US Government **Power BI**-tjenester. 
 
-Hvis din lejer skal overføres via *whitelisting* til US Government-clouden, skal du udfylde en relevant supportanmodning via det følgende link. Du skal være opmærksom på, at anmodningen kun kan udføres af administratorer:
-
-* [*Whitelisting* – onlinesupportanmodning](https://powerbi.microsoft.com/clouds/)
-* Sørg for, at du har medtaget domænet, der skal overføres via *whitelisting* og mailadressen til Microsoft-repræsentanten, der arbejder med dig under processen.
-
-*Whitelisting*-processen tager ca. tre uger, hvor Power BI-teknikere udfører de relevante ændringer for at sikre, at din lejer fungerer korrekt i US Government-clouden.
+Hvis du vil have *whitelistet* din lejer for clouden for den amerikanske regering, skal du kontakte Microsoft-kontoteamet for at få hjælp til whitelisting. Du skal være opmærksom på, at anmodningen kun kan udføres af administratorer. *Whitelisting*-processen tager ca. tre uger, hvor Power BI-teknikere udfører de relevante ændringer for at sikre, at din lejer fungerer korrekt i US Government-clouden.
 
 Kunder, der overflyttes fra Power BI **gratis**-licenser til **Power BI US Government** (og pr. definition, overflyttes til de tilknyttede **Pro**-licensfunktioner beskrevet tidligere i denne artikel), vil opleve problemerne, der er beskrevet i det følgende afsnit i denne artikel, indtil deres lejer er overført via *whitelisting* af Power BI-teknikere.
 
