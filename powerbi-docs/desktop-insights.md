@@ -1,28 +1,28 @@
 ---
-title: "Brug indsigt i Power BI Desktop (prøveversion)"
-description: "Du kan let få indsigt i forøgelser eller reduktioner i Power BI Desktop"
+title: Brug indsigt i Power BI Desktop (prøveversion)
+description: Du kan let få indsigt i forøgelser eller reduktioner i Power BI Desktop
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/25/2017
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 17a66c362124616796eb48a7052d89226555df3b
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 2a98e0e5f79819c7530f713d2ccb541a18b0ce6c
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="use-insights-in-power-bi-desktop-preview"></a>Brug indsigt i Power BI Desktop (prøveversion)
 Du kan bede **Power BI Desktop** om at forklare forøgelser eller reduktioner i diagrammer og få hurtige og automatiske indsigtsanalyser om dine data. Du skal blot højreklikke på et datapunkt og vælge **Analysér > Forklar reduktionen** (eller forøgelsen, hvis den tidligere linje var lavere), så leveres der indsigt til dig i et brugervenligt vindue.
@@ -51,7 +51,7 @@ Ved at vælge små ikoner nederst i vandfaldet kan du vælge at få indsigt til 
 
 Du kan bruge ikonerne med *tommel op* og *tommel ned* øverst på siden til at give feedback på det visuelle element og funktionen.
 
-Og læg især mærke til, at knappen  **+**  øverst i det visuelle element gør det muligt at tilføje det valgte visuelle element i rapporten på samme måde, som hvis du havde oprettet det visuelle element manuelt. Du kan derefter formatere eller på anden måde justere det tilføjede visuelle element på samme måde som alle andre visuelle elementer i rapporten. Du kan kun tilføje et visuelt element for den valgte indsigt, når du redigerer en rapport i **Power BI Desktop**.
+Og læg især mærke til, at knappen **+** øverst i det visuelle element gør det muligt at tilføje det valgte visuelle element i rapporten på samme måde, som hvis du havde oprettet det visuelle element manuelt. Du kan derefter formatere eller på anden måde justere det tilføjede visuelle element på samme måde som alle andre visuelle elementer i rapporten. Du kan kun tilføje et visuelt element for den valgte indsigt, når du redigerer en rapport i **Power BI Desktop**.
 
 Du kan bruge indsigt, når rapporten er i læse- eller redigeringstilstand, hvilket betyder, at du både kan analyse data og oprette visuelle elementer, som du nemt kan føje til dine rapporter.
 

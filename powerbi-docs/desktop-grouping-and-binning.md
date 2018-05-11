@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 01/19/2018
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b4bc8af482dd2fa2084889eb98c6be2857271451
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.openlocfilehash: 9e8cfc89ba1556f2c6c28c4ddafc7a1bfad3029f
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Brug gruppering og gruppering i beholder i Power BI Desktop
 Når der oprettes visuals i **Power BI Desktop**, samles dine data i dele (eller grupper) baseret på de værdier, der bliver fundet i de underliggende data. Det er ofte fint, men der kan være tilfælde, hvor du gerne vil justere, hvordan disse dele vises. Eksempel: Du vil måske placere tre produktkategorier i én større kategori (én *gruppe*). Det kan også være, at du vil se salgstal, der er placeret i beholderstørrelser på USD 1.000.000 i stedet for jævnt fordelt på USD 923.983.

@@ -1,5 +1,5 @@
 ---
-title: 'Selvstudium – Opret en ny rapport ud fra et datasæt '
+title: 'Opret en ny rapport ud fra et datasæt '
 description: Opret en ny Power BI-rapport ud fra et datasæt.
 services: powerbi
 documentationcenter: ''
@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: e6c4a614f19a6ba7b9e24c199b7f291e7f57f098
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.openlocfilehash: c6b156157d9d286bae6b93a217ca1b9502534498
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Opret en ny rapport i Power BI-tjenesten ved at importere et datasæt
 Du har læst [Rapporter i Power BI](service-reports.md), og nu vil du oprette din egen. Der er mange forskellige måder at oprette en rapport på, og i denne artikel starter vi med at oprette en meget grundlæggende rapport ud fra et Excel-datasæt ved hjælp af Power BI-tjenesten. Når du har forstået de grundlæggende ting i forbindelse med at oprette en rapport, vejleder de **Næste trin** for neden dig gennem de mere avancerede rapportemner.  

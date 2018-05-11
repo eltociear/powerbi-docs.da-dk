@@ -1,28 +1,28 @@
 ---
-title: "Markér flere dataelementer i visualiseringer ved hjælp af Power BI Desktop"
+title: Markér flere dataelementer i visualiseringer ved hjælp af Power BI Desktop
 description: Du kan markere flere datapunkter i visualiseringer i Power BI Desktop ved blot at anvende Ctrl + klik
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/05/2018
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f3018274c390920579cb7b60a589d00abdd4a5ce
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 406fa7e53ac295ff3d474454ff99d5a3c5d00266
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="multi-select-data-elements-in-visuals-using-power-bi-desktop"></a>Markér flere dataelementer i visualiseringer ved hjælp af Power BI Desktop
 
