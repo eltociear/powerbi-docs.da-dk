@@ -15,13 +15,13 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/20/2018
+ms.date: 04/26/2018
 ms.author: maikelson
-ms.openlocfilehash: 598266306657337e8190075b2a5e42de2b7d2144
-ms.sourcegitcommit: 20adb55065af8e2f48387a00e64c72cf6d700f0f
+ms.openlocfilehash: 9fa7f56f102ae098c870ae0e6e12f56cc26d0fde
+ms.sourcegitcommit: 0cae0e6e1fd06b6465721702b2d0bb8333eb5afb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
@@ -42,6 +42,14 @@ Planlæg en effektiv udrulning af Power BI for din organisation, og udforsk de s
 <br>[Tilmeld dig for at se med nu – del 3 – Tjenesteadministration: Styring af Power BI-tjenesten](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
 <br>[Tilmeld dig for at se med nu – del 2 – Styring: Styr din brug af Power BI](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
 <br>[Tilmeld dig for at se med nu – del 1 – Indføring: Indfør en datadrevet kultur](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+
+**Få mere at vide om Power BI Embedded på 20 minutter** (webinaret er på engelsk)
+<br>af Megan Asarrane og Colin Murphy
+<br>*23. maj 2018 kl. 10:00 PST, kl. 13:00 EST*
+
+Vi præsenterer dette webinar for at give dig en introduktion til Power BI Embedded. Efter dette webinar har brugerne en forståelse af, hvad Power BI Embedded er, de næste trin for at komme i gang med produktet, og hvor de kan finde hjælp/ressourcer.
+
+[Tilmeld dig, og se med den 23. maj](https://info.microsoft.com/ww-landing-power-bi-embedded-in-20-min.html?Is=Website)
 
 >[Deltag i kommende webinarer fra Power BI-community'et](https://powerbi.microsoft.com/en-us/blog/tag/community-webinar?Is=Website)
 
@@ -103,7 +111,7 @@ Se optagne sessioner når som helst
 <br>ved Patrick McGarry og Miguel Martinez
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
 
-### <a name="community"></a>Lokalsamfund ###
+### <a name="community"></a>Community ###
 
 **Fortæl en historie med dine data og Power BI** (webinaret er på engelsk)
 <br>ved Tristan Malherbe
@@ -132,8 +140,9 @@ Se optagne sessioner når som helst
 <br>[Tilmeld dig for at se med](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
 <br>[Hent Advanced Analytics Starter Kit for at følge med](https://aka.ms/pbiaawebinar)
 
-**Serie af webinarer om Office 365 til finansansvarlige – Episode 2: Automatiser tilbagevendende rapporter, og aktivér selvbetjeningsanalyse**
-<br>ved Mark Traverso og Miguel Martinez
+**Webinarserien Office 365 Finance Pros**
+<br>af Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky og Miguel Martinez
+<br>Få tip, tricks og bedste praksis, så du kan få mere ud af dit daglige arbejde ved hjælp af Office 365.
 <br>[Tilmeld dig, og se det nu](https://aka.ms/Office365FinanceProsPBI)
 
 **Bliv en full stack-Jedi til Power BI – en gennemgang af Power BI's mest avancerede funktioner via Star Wars-data** (webinaret er på engelsk)
