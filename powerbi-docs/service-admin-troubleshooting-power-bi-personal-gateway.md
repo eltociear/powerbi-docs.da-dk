@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: d321d70fe201af500feb35ef4e5ea1df6cc558f0
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.openlocfilehash: 2f5ca353d26b83a8c8cce5356724b351cb9d1621
+ms.sourcegitcommit: 9fa954608e78dcdb8d8a503c3c9b01c43ca728ab
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="troubleshooting-power-bi-gateway---personal"></a>Fejlfinding af Power BI Gateway – Personal
 Nedenfor gennemgås nogle almindelige problemer, der kan opstå, når du bruger Power BI Gateway – Personal.
@@ -76,11 +76,11 @@ Du kan få denne fejl i Indstillinger for \<datasæt\>, hvis du har en planlagt 
 
 **Fejl: [Dataene kan ikke kombineres] &lt;forespørgselsdel&gt;/&lt;... &gt;/&lt;...&gt; får adgang til datakilder med niveauer for beskyttelse af personlige oplysninger, der ikke kan bruges sammen. Genopbyg denne datakombination.**
 
-**Svaret**: Denne fejl opstår på grund begrænsninger for niveauet for beskyttelse af personlige oplysninger og typerne af datakilder, du bruger. [Få mere at vide](refresh-enable-fast-combine.md)
+**Svaret**: Denne fejl opstår på grund begrænsninger for niveauet for beskyttelse af personlige oplysninger og typerne af datakilder, du bruger.
 
 **Fejl: Fejl i datakilde: Vi kan ikke konvertere værdien "\[Tabel\]" til typen Tabel.**
 
-**Svaret**: Denne fejl opstår på grund begrænsninger for niveauet for beskyttelse af personlige oplysninger og typerne af datakilder, du bruger. [Få mere at vide](refresh-enable-fast-combine.md)
+**Svaret**: Denne fejl opstår på grund begrænsninger for niveauet for beskyttelse af personlige oplysninger og typerne af datakilder, du bruger.
 
 **Fejl: Der er ikke tilstrækkelig plads til denne række.**
 

@@ -18,13 +18,14 @@ ms.workload: powerbi
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 899cef8c4e441c49f40acc7873348fe80a7b5f9d
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 6920e31c1f72bf51eeefb7b515f8e54c8fafbfd9
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Vejledning i at installere en datagateway til Power BI
+
 Denne artikel indeholder vejledning og overvejelser ved installation af en datagateway i dit netværksmiljø. En **gateway** er software, der gør det nemmere at få adgang til data, der er placeret på et privat netværk i det lokale miljø til efterfølgende brug i en cloudtjeneste som Power BI. Denne artikel indeholder en vejledning til udrulningen og konfiguration af **datagatewayen i det lokale miljø**.
 
 ![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_01.png)
@@ -145,7 +146,7 @@ Derfra kan du vælge en gateway og se en liste over gateway-administratorer. De 
 
 ## <a name="next-steps"></a>Næste trin
 [Konfiguration af proxyindstillinger](service-gateway-proxy.md)  
-[Foretag fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
+[Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
 [Ofte stillede spørgsmål vedrørende datagateway i det lokale miljø](service-gateway-onprem-faq.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

@@ -1,16 +1,16 @@
 ---
-title: "Hurtig introduktion – Opret et Power BI-dashboard fra en rapport"
+title: Opret et Power BI-dashboard fra en rapport
 description: Opret et Power BI-dashboard fra en rapport
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-featuredvideoid: 
-qualityfocus: 
-qualitydate: 
+backup: ''
+editor: ''
+tags: ''
+featuredvideoid: ''
+qualityfocus: ''
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,11 +18,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: 33e003c4e45cf851dbdf2bc602807a57d1ba49af
-ms.sourcegitcommit: ab5192675729949d89de212acae48dd51294ad78
+ms.openlocfilehash: e995795496612d8eb8561cacd8bb4d31e1db394b
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Opret et Power BI-dashboard fra en rapport
 Du har læst [Dashboards i Power BI](service-dashboards.md), og nu vil du oprette dit eget. Der er mange forskellige måder at oprette et dashboard på – fra en rapport, fra bunden, fra et datasæt, ved at kopiere et eksisterende dashboard og meget mere.  
@@ -81,7 +81,7 @@ Vi importerer et af eksempeldatasættene i Power BI og bruger det til at oprette
     ![peg på et felt](media/service-dashboard-create/power-bi-hover.png)
 4. Da vi opretter et nyt dashboard, skal du markere indstillingen for **nyt dashboard** og give den et navn.
 
-   ![Fastgør til dashboarddialogboks](media/service-dashboard-create/power-bi-pin-tile.png)
+   ![Dialogboksen Fastgør til dashboard](media/service-dashboard-create/power-bi-pin-tile.png)
 5. Når du vælger **Fastgør**, opretter Power BI det nye dashboard i det aktuelle arbejdsområde. Når meddelelsen **Fastgjort til dashboard** vises, skal du vælge **Gå til dashboard**. Hvis du bliver bedt om at gemme rapporten, skal du vælge **Gem**.
 
      ![meddelelse om fuldførelse](media/service-dashboard-create/power-bi-pin-success.png)
@@ -90,7 +90,7 @@ Vi importerer et af eksempeldatasættene i Power BI og bruger det til at oprette
    ![dashboard med et felt](media/service-dashboard-create/power-bi-pinned.png)
 7. Markér feltet for at vende tilbage til rapporten. Fastgør nogle flere felter til det nye dashboard. Når vinduet **Fastgør til dashboard** vises, skal du denne gang vælge **Eksisterende dashboard**.  
 
-   ![Fastgør til dashboarddialogboks](media/service-dashboard-create/power-bi-existing-dashboard.png)
+   ![Dialogboksen Fastgør til dashboard](media/service-dashboard-create/power-bi-existing-dashboard.png)
 
 ## <a name="pin-an-entire-report-page-to-the-dashboard"></a>Fastgør en hel rapportside til dashboardet
 I stedet for at fastgøre én visualisering ad gangen, kan du [fastgøre en hel rapportside som et *dynamisk felt*](service-dashboard-pin-live-tile-from-report.md). Lad os gøre det.
@@ -105,7 +105,7 @@ I stedet for at fastgøre én visualisering ad gangen, kan du [fastgøre en hel 
 
 3. Når vinduet **Fastgør til dashboard** vises, skal du vælge **Eksisterende dashboard**.
 
-   ![Fastgør til dashboarddialogboks](media/service-dashboard-create/power-bi-pin-live2.png)
+   ![Dialogboksen Fastgør til dashboard](media/service-dashboard-create/power-bi-pin-live2.png)
 
 4. Når du får vist en meddelelse om, at handlingen er udført, skal du vælge **Gå til dashboard**. Der kan du se de felter, du har fastgjort fra rapporten. I nedenstående eksempel har vi fastgjort to felter fra side 1 i rapporten, og ét dynamisk felt, som udgør side 2 i rapporten.
 

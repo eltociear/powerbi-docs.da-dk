@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: cf773de0744ca67df9d13cb934efdc6bbc4991f9
-ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
+ms.openlocfilehash: eb14e9f0a0139b092127ba7686910e0016bb1bb6
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Opdater et datasæt, der er gemt på OneDrive eller SharePoint Online
 Hvis du importerer filer fra OneDrive eller SharePoint Online til Power BI-tjenesten, kan du nemt sikre, at det arbejde, du udfører i **Power BI Desktop**, altid er synkroniseret med Power BI-tjenesten.
@@ -78,7 +78,7 @@ Sørg for, at indstillingen **Send mig en mail med meddelelse om opdateringsfejl
 ## <a name="troubleshooting"></a>Fejlfinding
 Nogle gange går opdateringen af data muligvis ikke som forventet. Dette skyldes som regel et problem i forbindelse med en gateway. Se artiklerne om fejlfinding af gatewayen for at få oplysninger om værktøjer og kendte problemer.
 
-[Foretag fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)
+[Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)
 
 [Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)
 

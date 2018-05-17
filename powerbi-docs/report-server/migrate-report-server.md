@@ -1,15 +1,15 @@
 ---
-title: "Overfør en rapportserverinstallation"
-description: "Få mere at vide om, hvordan du overfører din eksisterende SQL Server Reporting Services-forekomst til en forekomst af Power BI Report Server."
+title: Overfør en rapportserverinstallation
+description: Få mere at vide om, hvordan du overfører din eksisterende SQL Server Reporting Services-forekomst til en forekomst af Power BI Report Server.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 09/05/2017
 ms.author: maghan
-ms.openlocfilehash: 67fe876bb9de92cc7f4c0c140f7c016f01216cdd
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 9983956ccb33cc9c45fd1ac316fb74d07eb3acf5
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="migrate-a-report-server-installation"></a>Overfør en rapportserverinstallation
 Få mere at vide om, hvordan du overfører din eksisterende SQL Server Reporting Services-forekomst (SSRS) til en forekomst af Power BI Report Server.
@@ -107,7 +107,7 @@ Overførsel fra en Power BI Report Server er den samme proces som overførsel fr
 
 ## <a name="next-steps"></a>Næste trin
 [Administratorhåndbog](admin-handbook-overview.md)  
-[Hurtigstart: Installer Power BI Report Server](quickstart-install-report-server.md)  
+[Installer Power BI-rapportserver](install-report-server.md)  
 [Scriptet med værktøjet rs.exe og webtjenesten](https://docs.microsoft.com/sql/reporting-services/tools/script-with-the-rs-exe-utility-and-the-web-service)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/19/2018
 ms.author: maggies
-ms.openlocfilehash: 995b1aab5547369ef9c4ceebae3f69c268107164
-ms.sourcegitcommit: 0473a155495a7a9ba4b899d0815100426718b7ac
+ms.openlocfilehash: dd6ab0afdb171a1cdb1267adee8bb1c411596dff
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="support-timeline-for-power-bi-report-server"></a>Supporttidslinje til Power BI Report Server
 Power BI Report Server udgives nogle få gange om året. Vigtige opdateringer og sikkerhedsopdateringer er tilgængelige, indtil den næste version bliver offentlig tilgængelig (GA). Efter den næste version vil den forrige version fortsat modtage sikkerhedsopdateringer i den resterende tid af de 12 måneder, hvor supporten løber.
@@ -46,7 +46,7 @@ Hvis du vil downloade Power BI-rapportserver og Power BI Desktop optimeret til P
 [Nyheder i Power BI-rapportserver](whats-new.md)  
 [Brugerhåndbog](user-handbook-overview.md)  
 [Administratorhåndbog](admin-handbook-overview.md)  
-[Hurtigstart: Installér Power BI Report Server](quickstart-install-report-server.md)  
+[Installer Power BI-rapportserver](install-report-server.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

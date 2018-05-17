@@ -17,11 +17,11 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/28/2018
 ms.author: maghan
-ms.openlocfilehash: 4faf32419c0b02ceadb495832ed90d312b823773
-ms.sourcegitcommit: c9905e625ba14dc28ad23835f320e49631c51d0f
+ms.openlocfilehash: 5d0d679a9b5d3bea494915dc981e155ad69eeac6
+ms.sourcegitcommit: 1c7780e0dfe0b6b8322e6fafdd0693177db455d2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/29/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Integrer et Power BI-dashboard eller -felt eller en Power BI-rapporter i dit program til nationale cloudmiljøer
 Få mere at vide om, hvordan du integrerer et dashboard, et felt eller en rapport i en webapp ved hjælp af Power BI .NET SDK sammen med Power BI JavaScript API, når du integrerer til dine kunder. Dette er det typiske ISV-scenario.
@@ -38,7 +38,7 @@ Power BI understøtter også nationale (private) cloudmiljøer. Hvert nationalt 
 
 ![Integreret dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-Før du begynder denne gennemgang, skal du have en **Power BI**-konto. Hvis du ikke har konfigureret en konto, kan du [tilmelde dig en Power BI-konto til offentlige myndigheder i USA](../service-govus-signup.md) eller [en konto i cloudmiljøet Power BI til Tyskland](https://powerbi.microsoft.com/en-us/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1).
+Før du begynder denne gennemgang, skal du have en **Power BI**-konto. Hvis du ikke har konfigureret en konto, kan du [tilmelde dig en Power BI-konto til offentlige myndigheder i USA](../service-govus-signup.md) eller [en konto i cloudmiljøet Power BI til Tyskland](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1).
 
 > [!NOTE]
 > Vil du integrere et dashboard for din organisation i stedet? Se i [Integrer et dashboard i en app for din organisation](integrate-dashboard.md).
@@ -54,7 +54,7 @@ I denne artikel vises den kode, der bruges i [eksemplet Embedding for your custo
     2. Opdater klient-id (klient-id i oprindelig app), gruppe-id, bruger (din overordnede bruger) og adgangskoden i Web.config-filen.
     3. Tilføj GCC-parametrene i web.config-filen som følger.
 
-```
+```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
 
 <add key="resourceUrl" value="https://analysis.usgovcloudapi.net/powerbi/api" />
@@ -69,7 +69,7 @@ I denne artikel vises den kode, der bruges i [eksemplet Embedding for your custo
     2. Opdater klient-id (klient-id i oprindelig app), gruppe-id, bruger (din overordnede bruger) og adgangskoden i Web.config-filen.
     3. Tilføj DoDCON-parametrene i web.config-filen som følger.
 
-```
+```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
 
 <add key="resourceUrl" value="https://high.analysis.usgovcloudapi.net/powerbi/api" />
@@ -84,7 +84,7 @@ I denne artikel vises den kode, der bruges i [eksemplet Embedding for your custo
     2. Opdater klient-id (klient-id i oprindelig app), gruppe-id, bruger (din overordnede bruger) og adgangskoden i Web.config-filen.
     3. Tilføj DoDCON-parametrene i web.config-filen som følger.
 
-```
+```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
 
 <add key="resourceUrl" value="https://mil.analysis.usgovcloudapi.net/powerbi/api" />
@@ -99,7 +99,7 @@ I denne artikel vises den kode, der bruges i [eksemplet Embedding for your custo
     2. Opdater klient-id (klient-id i oprindelig app), gruppe-id, bruger (din overordnede bruger) og adgangskoden i Web.config-filen.
     3. Tilføj parametrene for cloudmiljøet Power BI til Tyskland i web.config-filen som følger.
 
-```
+```xml
 <add key="authorityUrl" value=https://login.microsoftonline.de/common/oauth2/authorize/" />
 
 <add key="resourceUrl" value="https://analysis.cloudapi.de/powerbi/api" />
@@ -142,7 +142,7 @@ Før du integrerer dit Power BI-indhold, er der nogle ting, du skal gøre for at
 ### <a name="create-the-power-bi-client-with-your-access-token"></a>Opret Power BI-klienten med dit eget adgangstoken
 Brug dit adgangstoken til at oprette dit Power BI-klientobjekt, som gør det muligt for dig at interagere med API'erne til Power BI. Det gør du ved at omgive AccessToken med objektet *Microsoft.Rest.TokenCredentials*.
 
-```
+```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.Rest;
 using Microsoft.PowerBI.Api.V2;
@@ -163,7 +163,7 @@ Du kan finde et eksempel på dette i **Controllers\HomeController.cs** i [prøve
 
 **Dashboard**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -176,7 +176,7 @@ Dashboard dashboard = dashboards.Value.FirstOrDefault();
 
 **Felt**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -197,7 +197,7 @@ Tile tile = tiles.Value.FirstOrDefault();
 
 **Rapport**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -220,7 +220,7 @@ Dette forudsætter, at der oprettes en klasse for **EmbedConfig** og **TileEmbed
 
 **Dashboard**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -239,7 +239,7 @@ var embedConfig = new EmbedConfig()
 
 **Felt**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -259,7 +259,7 @@ var embedConfig = new TileEmbedConfig()
 
 **Rapport**
 
-```
+```csharp
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
@@ -282,7 +282,7 @@ Du kan finde et eksempel på dette i [prøveappen Embedding for your organizatio
 
 **Views\Home\EmbedDashboard.cshtml**
 
-```
+```csharp
 <script src="~/scripts/powerbi.js"></script>
 <div id="dashboardContainer"></div>
 <script>
@@ -320,7 +320,7 @@ Du kan finde et eksempel på dette i [prøveappen Embedding for your organizatio
 
 **Views\Home\EmbedTile.cshtml**
 
-```
+```csharp
 <script src="~/scripts/powerbi.js"></script>
 <div id="tileContainer"></div>
 <script>
@@ -362,7 +362,7 @@ Du kan finde et eksempel på dette i [prøveappen Embedding for your organizatio
 
 **Views\Home\EmbedReport.cshtml**
 
-```
+```csharp
 <script src="~/scripts/powerbi.js"></script>
 <div id="reportContainer"></div>
 <script>
@@ -407,7 +407,7 @@ Du kan finde et eksempel på dette i [prøveappen Embedding for your organizatio
 
 * Du kan finde en prøveapp på GitHub, som du kan gennemse. Ovenstående eksempler er baseret på denne prøveapp. Du kan finde flere oplysninger i [Prøveappen Embedding for your organization](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 * Du kan finde flere oplysninger om JavaScript API i [JavaScript-API til Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
-* Du kan finde flere oplysninger om cloudmiljøet Power BI til Tyskland i [Ofte stillede spørgsmål om cloudmiljøet Power BI til Tyskland](https://docs.microsoft.com/en-us/power-bi/service-govde-faq)
+* Du kan finde flere oplysninger om cloudmiljøet Power BI til Tyskland i [Ofte stillede spørgsmål om cloudmiljøet Power BI til Tyskland](https://docs.microsoft.com/power-bi/service-govde-faq)
 * [Sådan overfører du indhold fra Power BI Workspace Collection til Power BI](migrate-from-powerbi-embedded.md)
 
 Begrænsninger og overvejelser

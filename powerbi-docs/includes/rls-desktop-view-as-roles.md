@@ -7,9 +7,9 @@ I dialogboksen **Vis som roller** kan du ændre visningen for det, der vises for
 
 ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
 
-Du skal vælge den rolle, du har oprettet, og derefter vælge **OK** for at anvende rollen på det, du får vist. Rapporterne gengiver kun de data, der er relevante for rollen.
+Vælg den rolle, du har oprettet, og vælg derefter **OK** for at anvende rollen på det, du får vist. Rapporterne gengiver kun de data, der er relevante for rollen.
 
-Du kan også vælge Anden bruger og angive en specifik bruger. Det er bedst at angive UPN (User Principal Name), da det er det navn, som Power BI-tjenesten bruger. Vælg **OK** for at få gengivet rapporterne baseret på det, som brugeren kan se. 
+Du kan også vælge **Anden bruger** og angive en specifik bruger. Det er bedst at angive UPN (User Principal Name), da det er det navn, som Power BI-tjenesten bruger. Vælg **OK** for at få gengivet rapporterne baseret på det, som brugeren kan se. 
 
 ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
 

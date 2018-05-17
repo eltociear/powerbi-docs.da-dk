@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 974194cb04701e2dc21814a0945227ad9c4b770c
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: 67e0008383147763654d8e3a053384d28f4a57f7
+ms.sourcegitcommit: 50016425005d2e929c8c606c2d0d393342e05d39
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="use-inline-hierarchy-labels-in-power-bi-desktop"></a>Brug indbyggede hierarkietiketter i Power BI Desktop
 **Power BI Desktop** understøtter brugen af **indbyggede hierarkietiketter**, som er den første af to funktioner, der skal bruges til at forbedre den hierarkiske detailudledning. Den anden funktion, som i øjeblikket er under udvikling, er muligheden for at bruge indlejrede hierarkietiketter (hold øje med den – der sker jævnligt opdateringer).   
@@ -30,35 +30,41 @@ ms.lasthandoff: 05/04/2018
 ## <a name="how-inline-hierarchy-labels-work"></a>Sådan fungerer indbyggede hierarkietiketter
 Med indbyggede hierarkietiketter kan du se hierarkietiketter, når du udvider visuelle elementer ved hjælp af funktionen **Udvid alle**. En af fordelene ved at se disse hierarkietiketter er, at du også kan vælge at **sortere** efter disse forskellige hierarkietiketter, når du udvider dine hierarkiske data.
 
-### <a name="using-the-built-in-expand-all-feature-without-sorting-by-hierarchy-labels"></a>Brug den indbyggede funktion Udvid alle (uden at sortere efter hierarkietiketter)
-Før vi kigger på, hvordan indbyggede hierarkietiketter fungerer, skal vi se på, hvordan standardfunktionen **Udvid alle** fungerer. Det hjælper os med at forstå (og sætte pris på), hvor nyttige indbyggede hierarkietiketter kan være.
+### <a name="using-the-built-in-expand-feature-without-sorting-by-hierarchy-labels"></a>Brug den indbyggede funktion Udvid (uden at sortere efter hierarkietiketter)
+Før vi kigger på, hvordan indbyggede hierarkietiketter fungerer, skal vi se på, hvordan standardfunktionen **Udvid til næste niveau** fungerer. Det hjælper os med at forstå (og sætte pris på), hvor nyttige indbyggede hierarkietiketter kan være.
 
-På følgende billede vises et visuelt element i et liggende søjlediagram for årligt salg. Når du højreklikker, du kan vælge **Udvid alle**.
+På følgende billede vises et visuelt element i et liggende søjlediagram for årligt salg. Når du højreklikker på en søjle, kan du vælge **Udvid til næste niveau**.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_4.png)
+![Udvid genvejsmenu](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-menu.png)
 
-Når **Udvid alle** er markeret, udvider det visuelle element datohierarkiet fra *År* til *Kvartal*, som vist på følgende billede.
+> [!NOTE]
+> Som et alternativ til at højreklikke på en søjle kan du vælge knappen *Udvid* øverst til venstre for visualiseringen.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_5.png)
+  ![Knappen Udvid](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-expand-button-finger.png)
+
+
+Når **Udvid til næste niveau** er markeret, udvider det visuelle element datohierarkiet fra *År* til *Kvartal*, som vist på følgende billede.
+
+![Visual udvidet til år og kvartal](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-qty-year-quarter.png)
 
 Bemærk, at etiketterne *År* og *Kvartal* vises indlejret sammen. Dette etiketskema fortsætter, efterhånden som du bruger **Udvid alle** ned til bunden af hierarkiet.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_6.png)
+![Visual udvidet til år, kvartal og måned](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-qty-year-quarter-month.png)
 
 Sådan fungerer det indbyggede *Dato*-hierarki, der er knyttet til felter, som har datatypen *dato/klokkeslæt*. Lad os gå videre til næste afsnit og se på, hvordan den nye funktion for indbyggede hierarkietiketter adskiller sig.
 
 ### <a name="using-inline-hierarchy-labels"></a>Brug indbyggede hierarkietiketter
-Lad os nu se på en anden diagramtype – ved hjælp af data med uformelle hierarkier. I det følgende visuelle element har vi et liggende søjlediagram med **Salgsbeløb**, der bruger *Farve* som akse. I disse data udgør *Farve* og *Klasse* et uformelt hierarki. Her kan du igen vælge *Udvid alle* for at analysere ned i hierarkiet.
+Lad os nu se på en anden diagramtype – ved hjælp af data med uformelle hierarkier. I det følgende visuelle element har vi et liggende søjlediagram med **Mængde**, der bruger *ProductName* som akse. I disse data danner *ProductName* og *ShipCountry* et uformelt hierarki. Her kan du igen vælge *Udvid til næste niveau* for at analysere ned i hierarkiet.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_7.png)
+![Diagram med uformelt hierarki](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-top-expand.png)
 
-Hvis du vælger **Udvid alle**, vises næste niveau med indbygget visning af hierarkietiketter. Som standard er indbyggede hierarkier sorteret efter måleværdien – i dette tilfælde **Salgsbeløb**. Hvis indbyggede hierarkietiketter er aktiveret, kan du også vælge at sortere disse data efter hierarki ved at vælge ellipsen i øverste højre hjørne (**...** ) og derefter vælge **Sortér efter > Farveklasse** som vist på følgende billede.
+Hvis du vælger **Udvid til næste niveau**, vises næste niveau med indbygget visning af hierarkietiketter. Som standard er indbyggede hierarkier sorteret efter måleværdien – i dette tilfælde **Mængde**. Hvis indbyggede hierarkietiketter er aktiveret, kan du også vælge at sortere disse data efter hierarki ved at vælge ellipsen i øverste højre hjørne (**...** ) og derefter vælge **Sortér efter ProductName ShipCountry** som vist på følgende billede.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_8.png)
+![Diagram med uformelt hierarki sorteret som standard](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-sort-quantity.png)
 
-Når **Farveklasse** er valgt, sorteres dataene på baggrund af det valgte uformelle hierarki som vist på følgende billede.
+Når **ShipCountry** er valgt, sorteres dataene på baggrund af det valgte uformelle hierarki som vist på følgende billede.
 
-![](media/desktop-inline-hierarchy-labels/inlinehierarchy_9.png)
+![Diagram med uformelt hierarki sorteret som uformelt hierarki](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-sorted.png)
 
 > [!NOTE]
 > Funktionen for indbyggede hierarkietiketter tillader endnu ikke, at det indbyggede tidshierarki sorteres efter værdi. Det kan kun sorteres efter hierarkiets rækkefølge.

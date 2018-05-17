@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/05/2018
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 89dae54ed1faaa868ca022360480540de9dbe295
-ms.sourcegitcommit: e31fc1f6e4af427f8b480c8dbc537c3617c9b2c0
+ms.openlocfilehash: bad0a8cb7f0f6eab7414d06ee5545e9499ccdc95
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="using-directquery-in-power-bi"></a>Brug af DirectQuery i Power BI
 Du kan oprette forbindelse til alle mulige forskellige datakilder, når du bruger **Power BI Desktop** eller **Power BI-tjenesten**, og du kan oprette disse dataforbindelser på forskellige måder. Du kan enten *importere* data i Power BI, hvilket er den mest almindelige måde at hente data på, eller du kan oprette forbindelse direkte til dataene i det oprindelige kildelager, der også er kendt som **DirectQuery**. I denne artikel beskrives **DirectQuery** og dens egenskaber, herunder følgende emner:

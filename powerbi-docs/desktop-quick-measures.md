@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/05/2018
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a7f877512d5b0f897fb98d2db205d1418d25c71a
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: 992282438ceac88dce759b60dc26f0767d0b1f86
+ms.sourcegitcommit: 9fa954608e78dcdb8d8a503c3c9b01c43ca728ab
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Brug Hurtigmålinger til nemt at udføre almindelige og effektive beregninger
 Du kan bruge **Hurtigmålinger** til nemt og hurtigt at udføre almindelige og effektive beregninger. En **Hurtigmåling** kører et sæt DAX-kommandoer i baggrunden (du skal ikke selv skrive DAX-formler – det bliver gjort for dig) baseret på input, du angiver i en dialogboks, hvorefter resultaterne vises i din rapport. Det bedste af det hele er, at du kan se den DAX-formel, der udføres af hurtigmålingen og så enten bruge den eller udvide den med din egen DAX-viden.
@@ -43,8 +43,6 @@ Du skal genstarte **Power BI Desktop**, når du har markeret indstillingen.
 Du kan oprette en **hurtigmåling** ved at højreklikke på et felt under **Felter** i **Power BI Desktop** og vælge **Ny hurtigmåling** i den viste menu.
 
 ![](media/desktop-quick-measures/quick-measures_01.png)
-
-**Ny hurtigmåling** vises kun, hvis der er modellering tilgængeligt for det indlæste datasæt. Det betyder, at **Ny hurtigmåling** ikke vises for dynamiske forbindelser, når du højreklikker på listen **Felter**, med undtagelse af dynamiske SSAS-forbindelser. 
 
 Hvis du bruger dynamiske forbindelser med SQL Server Analysis Services (SSAS) vil nogle **hurtigmålinger** være tilgængelige. I **Power BI Desktop** kan du kun se de **hurtigmålinger**, som understøttes for den version af SSAS, der oprettes forbindelse til. Hvis du har oprettet forbindelse til en dynamisk SSAS-datakilde, og du ikke kan se nogle **hurtigmålinger** på listen, skyldes det, at den version af SSAS, du har oprettet forbindelse til, ikke understøtter den DAX-måling, der bruges til at implementere disse **hurtigmålinger**.
 
@@ -141,9 +139,10 @@ Når du har tilpasset målingen til det ønskede, kan du omdøbe den, som du vil
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 Der er nogle få begrænsninger og overvejelser, du skal være opmærksom på.
 
-* **Hurtigmålinger** er kun tilgængelige, hvis du kan ændre modellen. Det kan du ikke, hvis du arbejder med DirectQuery eller de fleste typer dynamiske forbindelser (dynamiske SSAS-forbindelser understøttes som beskrevet tidligere).
+* **Hurtigmålinger** er kun tilgængelige, hvis du kan ændre modellen. Det kan du ikke, hvis du arbejder med nogle direkte forbindelser (direkte SSAS-forbindelser i tabelformat understøttes som beskrevet tidligere).
 * Den måling, der blev tilføjet under **Felter**, kan bruges i enhver visualisering i rapporten.
 * Du kan til enhver tid se den DAX-formel, der er knyttet til en **hurtigmåling**, ved at vælge den oprettede måling under **Felter** og derefter se formlen på **formellinjen**.
+* Du kan ikke oprette tidsintelligente hurtigmålinger, når du arbejder i DirectQuery-tilstand. De DAX-funktioner, der bruges i disse hurtigmålinger, har indflydelse på ydeevnen, når de oversættes til T-SQL-sætninger, der sendes til din datakilde.
 
 > [!WARNING]
 > Hurtigmålinger genererer i øjeblikket *kun* DAX-formler med komma som argumentseparator. Hvis din version af **Power BI Desktop** er oversat til et sprog, hvor der bruges decimalkomma, vil hurtigmålingerne ikke virke korrekt.
@@ -151,7 +150,7 @@ Der er nogle få begrænsninger og overvejelser, du skal være opmærksom på.
 > 
 
 ### <a name="time-intelligence-and-quick-measures"></a>Tidsintelligens og hurtigmålinger
-Fra og med den opdatering af **Power BI Desktop**, der udkom i oktober 2017, kan du bruge dine egne brugerdefinerede datotabeller med **hurtigmålinger** under kategorien Tidsintelligens. Hvis din datamodel har en brugerdefineret datotabel, kan du bruge den primære datokolonne i tabellen til hurtigmålinger med tidsintelligens. Du *skal* sikre, at den primære datokolonne i tabellen var markeret som Datotabel, da modellen blev bygget, som det er beskrevet i [denne artikel](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular).
+Fra og med den opdatering af **Power BI Desktop**, der udkom i oktober 2017, kan du bruge dine egne brugerdefinerede datotabeller med **hurtigmålinger** under kategorien Tidsintelligens. Hvis du ikke bruger en ekstern model i tabelformat skal du sikre, at den primære datokolonne i tabellen var markeret som Datotabel, da modellen blev bygget, som beskrevet i [denne artikel](https://docs.microsoft.com/sql/analysis-services/tabular-models/specify-mark-as-date-table-for-use-with-time-intelligence-ssas-tabular). Hvis du importerer din egen datotabel, skal du sørge for at markere den som en datotabel, som beskrevet i [denne artikel](https://docs.microsoft.com/power-bi/desktop-date-tables)
 
 ### <a name="additional-information-and-examples"></a>Yderligere oplysninger og eksempler
 Vi forventer at kunne tilbyde eksempler og vejledning til alle beregninger med **hurtigmålinger**, så kom snart tilbage igen for at se mere.

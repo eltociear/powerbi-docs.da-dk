@@ -1,13 +1,13 @@
 ---
-title: "Selvstudium – Brug af Power BI-eksempler."
-description: 'Selvstudium: Brug af Power BI-eksempler'
+title: Brug af Power BI-eksempler
+description: Brug af Power BI-eksempler
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: monitoring
 qualitydate: 03/08/2017
 ms.service: powerbi
@@ -18,13 +18,13 @@ ms.workload: powerbi
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 8255b14fea75f3a2f83629a6beb8fe3281d012e4
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 3a9cf39d3601a3f1c6b35d20726144cb404bdbe2
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="the-power-bi-samples-a-tutorial"></a>Power BI-eksemplerne, et selvstudium
+# <a name="the-power-bi-samples"></a>Power BI-eksemplerne
 
 Vi anbefaler at starte med artiklen [Eksempeldatasæt til Power BI](sample-datasets.md). I den artikel lærer du alt om eksemplerne. Hvordan du får dem, hvor du gemmer dem, hvordan du bruger dem og nogle af historierne, som hvert eksempel fortæller. Når du har fået styr på det grundlæggende, så vend tilbage til dette selvstudium.   
 

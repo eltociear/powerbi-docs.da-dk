@@ -14,14 +14,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: af8895b90b2f3315fb0cfd71351dbe65c108071e
-ms.sourcegitcommit: 1fe3ababba34c4e7aea08adb347ec5430e0b38e4
+ms.openlocfilehash: 99db15bc117c11457b88bdc2dbff2540eac00d05
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="configuring-scheduled-refresh"></a>Konfigurering af planlagt opdatering
 
@@ -123,7 +123,7 @@ Visse datasæt understøttes i forhold til forskellige gateways til planlagte op
 ## <a name="troubleshooting"></a>Fejlfinding
 Nogle gange går opdateringen af data muligvis ikke som forventet. Dette skyldes som regel et problem i forbindelse med en gateway. Se artiklerne om fejlfinding af gatewayen for at få oplysninger om værktøjer og kendte problemer.
 
-[Foretag fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)
+[Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)
 
 [Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
@@ -131,7 +131,7 @@ Nogle gange går opdateringen af data muligvis ikke som forventet. Dette skyldes
 [Opdatering af data i Power BI](refresh-data.md)  
 [Power BI Gateway - Personal](personal-gateway.md)  
 [Datagateway i det lokale miljø](service-gateway-onprem.md)  
-[Foretag fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
+[Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
 [Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 ---
-title: Hurtig introduktion – Kom i gang med Power BI Spørgsmål og svar
-description: Hurtig introduktion – Kom i gang med Spørgsmål og svar i Power BI-tjenesten ved hjælp af eksemplet på detailhandelsanalyse
+title: Kom i gang vha. spørgsmål og svar om Power BI
+description: Kom i gang med Spørgsmål og svar i Power BI-tjenesten ved hjælp af eksemplet på detailhandelsanalyse
 services: powerbi
 documentationcenter: ''
 author: mihart
@@ -18,13 +18,13 @@ ms.workload: powerbi
 ms.date: 01/16/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 0f4f56431fd0c667411c302f4f30f0c395269e4a
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: aa9b90521d2bf8df88676756135442a22277a4e8
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="get-started-with-power-bi-qa-quickstart"></a>Kom i gang med Spørgsmål og svar i Power BI (hurtig introduktion)
+# <a name="get-started-with-power-bi-qa"></a>Kom i gang vha. spørgsmål og svar om Power BI
 ## <a name="use-power-bi-qa-with-the-retail-analysis-sample"></a>Brug Spørgsmål og svar i Power BI sammen med eksemplet på detailhandelsanalyse
 Den hurtigste måde at få svar ud af dine data på er nogle gange at stille et spørgsmål på et naturligt sprog.  I denne hurtige introduktion ser vi på to forskellige måder at lave den samme visualisering på: 1, ved at integrere den i en rapport og 2, ved at stille et spørgsmål med Spørgsmål og svar. Vi vil bruge Power BI-tjenesten, men processen er næsten identisk med Power BI Desktop.
 

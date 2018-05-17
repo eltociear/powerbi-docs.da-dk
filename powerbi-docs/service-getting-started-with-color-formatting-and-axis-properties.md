@@ -2,27 +2,27 @@
 title: Introduktion til farveformatering og akseegenskaber
 description: Introduktion til farveformatering og akseegenskaber
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1c6698f4e85dcbf41b79bf4289890b2e60365254
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 38f7a59bcc34ff404c26d178f4fb16ffe4da70d7
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="getting-started-with-color-formatting-and-axis-properties"></a>Introduktion til farveformatering og akseegenskaber
 I **Power BI** kan du ændre farven på dataserier, datapunkter og endda baggrunden til visualiseringer. Du kan også ændre, hvordan x- og y-aksen vises, så du har fuld kontrol over, hvordan dine dashboards og rapporter vises.

@@ -1,15 +1,15 @@
 ---
-title: "Skift størrelsen på en rapportside (selvstudium)"
-description: 'Selvstudium: Skift visningsindstillingerne for en side i en Power BI-rapport'
+title: Skift størrelsen på en rapportside
+description: Skift visningsindstillingerne for en side i en Power BI-rapport
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: modifying
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,13 +18,13 @@ ms.workload: powerbi
 ms.date: 01/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 9ec589655a3dc9b3e19def76cee2f20c48a512b2
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 8381f3100676b6e20f7fb748045c4852b30c45b9
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="change-the-size-of-a-report-page-tutorial"></a>Skift størrelsen på en rapportside (selvstudium)
+# <a name="change-the-size-of-a-report-page"></a>Skift størrelsen på en rapportside
 I den [tidligere artikel og video](power-bi-report-display-settings.md) lærte du to forskellige måder at styre sidevisning i Power BI-rapporter: **Vis** og **Sidestørrelse**. Sidevisning og Sidestørrelse fås i både Power BI-tjenesten og Power BI Desktop med næsten samme udseende og funktionsmåde, men i dette selvstudium bruger vi Power BI-tjenesten.
 
 ### <a name="prerequisites"></a>Forudsætninger

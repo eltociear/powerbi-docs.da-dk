@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: eb37cb0551a613cf85d5b5dd2608b018a3a05250
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 83eb0f534a7aa98746e04a63d5474138159393f8
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="connect-to-github-with-power-bi"></a>Opret forbindelse til GitHub med Power BI
 Med GitHub-indholdspakken til Power BI kan du få indsigt i et GitHub-lager med data om bidrag, problemer, pull-anmodninger og aktive brugere.
@@ -100,10 +100,9 @@ Den første del, "Azure", er ejeren, og den anden del, "azure-sdk-for-php", er s
 Hvis det er nødvendigt, kan du kontrollere dine GitHub-legitimationsoplysninger.  
 
 1. Gå til GitHub-webstedet i et andet browservindue, og log på GitHub. Du kan se, at du er logget på, i øverste højre hjørne af GitHub-webstedet.    
-2. I GitHub skal du navigere til URL-adressen på det lager, du vil have adgang til i Power BI. For eksempel: https://github.com/dotnet/corefx.  
+2. I GitHub skal du navigere til URL-adressen på det lager, du vil have adgang til i Power BI. Eksempel: https://github.com/dotnet/corefx.  
 3. Når du er tilbage i Power BI, kan du prøve at oprette forbindelse til GitHub. Brug navnene på lageret og lagerejeren af det samme lager i dialogboksen Konfigurer GitHub.  
 
 ## <a name="next-steps"></a>Næste trin
 * [Introduktion til Power BI](service-get-started.md)
 * [Hent data](service-get-data.md)
-

@@ -15,14 +15,14 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2017
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 474cca86151925ee4991d477a6127536180808a8
-ms.sourcegitcommit: c80fbf5b12754ce217cb47a17cb5400b1036a8f2
+ms.openlocfilehash: 86f229ecf60a1e1ef89213eed83521a8fadd64a2
+ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>Grundlæggende DAX i Power BI Desktop
 Denne artikel henvender sig til nye brugere af Power BI Desktop. Hensigten med den er, at du får en hurtig og nem introduktion til, hvordan du kan bruge DAX (Data Analysis Expressions) til at løse en række grundlæggende problemer med beregning og dataanalyse. Vi vil gennemgå nogle grundlæggende oplysninger, en række opgaver, du kan udføre, og et par test for at se, hvad du har lært. Når du har gennemgået denne artikel, bør du have en god forståelse af de vigtigste grundlæggende begreber i DAX.
@@ -66,7 +66,7 @@ Formlen inkluderer følgende syntakselementer:
 
 Når du vil prøve at forstå DAX, er det ofte nyttigt at opdele hvert enkelt element i et sprog, som du tænker og taler på hver dag. Du kan f.eks. læse denne formel som:
 
->  *Beregn (=) SUM af værdierne i kolonnen [SalesAmount] i tabellen Sales for den måling, der er navngivet Samlet salg.*
+> *Beregn (=) SUM af værdierne i kolonnen [SalesAmount] i tabellen Sales for den måling, der er navngivet Samlet salg.*
 > 
 > 
 

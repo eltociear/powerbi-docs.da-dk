@@ -15,28 +15,28 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 05/02/2018
+ms.date: 05/07/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f9ef31815f82775fd228f170073ee576c299ed45
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: 460221ed9cf35b4c5db9509085a819519202d4a3
+ms.sourcegitcommit: 50016425005d2e929c8c606c2d0d393342e05d39
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Brug udsnitsværktøjet til numerisk område i Power BI Desktop
 Med **udsnitsværktøjet til numerisk område** kan du anvende alle former for filtre på alle numeriske kolonner i din datamodel. Du kan vælge at filtrere **mellem** tal, **mindre end eller lig med** et tal eller **større end eller lig med** et tal. Det lyder måske meget enkelt, men det er en effektiv måde at filtrere dine data på.
 
-![](media/desktop-slicer-numeric-range/slicer-numeric-range_2.png)
+![Visual med udsnitsværktøjet til numerisk område](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-0.png)
 
 ## <a name="using-the-numeric-range-slicer"></a>Brug udsnitsværktøjet til numerisk område
-Du kan bruge udsnitsværktøjet til numerisk område på samme måde som alle andre udsnitsværktøjer. Du skal bare oprette et **udsnitsværktøj**, der er synligt for din rapport, og derefter vælge en numerisk værdi for **Felt**-værdien. På følgende billede er feltet *UnitPrice* markeret.
+Du kan bruge udsnitsværktøjet til numerisk område på samme måde som alle andre udsnitsværktøjer. Du skal bare oprette et **udsnitsværktøj**, der er synligt for din rapport, og derefter vælge en numerisk værdi for **Felt**-værdien. På følgende billede er feltet *LineTotal* markeret.
 
-![](media/desktop-slicer-numeric-range/slicer-numeric-range_3.png)
+![Opret et numerisk interval-udsnitsværktøj](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-1-create.png)
 
-Hvis du vælger karaten i øverste højre hjørne af **udsnitsværktøjet til numerisk område**, vises der en menu.
+Hvis du vælger linket pil ned i øverste højre hjørne af **udsnitsværktøjet til numerisk område**, vises der en menu.
 
-![](media/desktop-slicer-numeric-range/slicer-numeric-range_4.png)
+![Menu for udsnitsværktøj til numerisk område](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-2-between.png)
 
 I forbindelse med det numeriske område kan du vælge mellem følgende tre muligheder:
 
@@ -44,29 +44,27 @@ I forbindelse med det numeriske område kan du vælge mellem følgende tre mulig
 * Mindre end eller lig med
 * Større end eller lig med
 
-Når du vælger **Mellem** i menuen, vises der en skyder, og du kan filtrere efter numeriske værdier, der ligger mellem tallene. Udover at bruge selve skyderen kan du også klikke i felterne og skrive værdierne. Det er praktisk, når du vil opdele specifikke heltal, men kornetheden ved at flytte skyderen gør det vanskeligt at lande nøjagtigt på tallet.
+Når du vælger **Mellem** i menuen, vises der en skyder, og du kan filtrere efter numeriske værdier, der ligger mellem tallene. Udover at bruge selve skyderen kan du også klikke i felterne og skrive værdierne. Det er praktisk, når du vil opdele specifikke tal, men kornetheden ved at flytte skyderen gør det vanskeligt at lande nøjagtigt på tallet.
 
-På følgende billede er rapportsiden filtreret for *UnitPrice*-værdier mellem 500 og 1500.
+På følgende billede er rapportsiden filtreret for *LineTotal*-værdier mellem 2500.00 og 6000.00.
 
-![](media/desktop-slicer-numeric-range/slicer-numeric-range_5.png)
+![Udsnitsværktøjet til numerisk område med Mellem](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-3-between-range.png)
 
-Når vi vælger **Mindre end eller lig med**, forsvinder venstre håndtag (den laveste værdi) for skyderen, og vi kan kun justere den øvre grænse for skyderen. På følgende billede angiver vi skyderen til 497.17.
+Når vi vælger **Mindre end eller lig med**, forsvinder venstre håndtag (den laveste værdi) for skyderen, og vi kan kun justere den øvre grænse for skyderen. På følgende billede angiver vi skyderen til maksimalt 5928.19.
 
-![](media/desktop-slicer-numeric-range/slicer-numeric-range_6.png)
+![Udsnitsværktøjet til numerisk område med Mindre end](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-4-less-than.png)
 
-Og endelig, hvis vi vælger **Større end eller lig med** forsvinder højre håndtag til skyderen (den højeste værdi), og vi kan justere den laveste værdi, som vist på følgende billede. Nu vises der kun elementer, der har en *UnitPrice*, som er større end eller lig med 750.56, i de visuelle elementer på rapportsiden.
+Og endelig, hvis vi vælger **Større end eller lig med** forsvinder højre håndtag til skyderen (den højeste værdi), og vi kan justere den laveste værdi, som vist på følgende billede. Nu vises der kun elementer, der har en *LineTotal*, som er større end eller lig med 4902.99, i de visuelle elementer på rapportsiden.
 
-![](media/desktop-slicer-numeric-range/slicer-numeric-range_7.png)
+![Udsnitsværktøjet til numerisk område med Større end](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-5-greater-than.png)
 
-## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer-preview"></a>Fastgør til hele tal ved hjælp af udsnitsværktøj til numerisk område (prøveversion)
+## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>Fastgør til hele tal ved hjælp af udsnitsværktøj til numerisk område
 
-Fra og med udgivelsen af **Power BI Desktop** fra februar 2018, fastgør dit udsnitsværktøj til numerisk område til hele tal. Dermed kan udsnitsværktøjet nemt afstemme to hele tal. Fastgørelse til hele tal gælder ikke for decimalfiltre.
+Udsnitsværktøjet til numerisk område fastgøres til heltal, medmindre det er et decimalområde. Dermed kan udsnitsværktøjet nemt afstemme to hele tal. 
 
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
-Følgende begrænsninger og overvejelser, der aktuelt gælder for **udsnitsværktøjet til numerisk område**
+Følgende begrænsninger og overvejelser, der aktuelt gælder for **udsnitsværktøjet til numerisk område**:
 
 * **Udsnitsværktøjet til numerisk område** filtrerer i øjeblikket alle underliggende rækker i dataene, ingen aggregerede værdier. Hvis f.eks. feltet *Sales Amount* bruges, filtreres der efter alle transaktioner, der er baseret på *Sales Amount*, ikke summen af *Sales Amount* for hvert datapunkt i et visuelt element.
-* Den fungerer i øjeblikket ikke sammen med målinger
-* I øjeblikket er **udsnitsværktøjet til numerisk område** kun tilgængeligt i **Power BI Desktop**. Hvis en rapport, der bruger **udsnitsværktøjet til numerisk område**, er publiceret i **Power BI-tjenesten**, anvendes filteret stadig, men det vises som et listeudsnit.
-
+* Den fungerer i øjeblikket ikke sammen med målinger.

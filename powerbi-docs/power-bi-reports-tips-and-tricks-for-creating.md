@@ -18,11 +18,11 @@ ms.workload: powerbi
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: d9500f2c3d385e96b9133a3b634fe06f9769936e
-ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
+ms.openlocfilehash: f1b92cf370dfdfdbeadd71ee954030aa8a79d338
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Tips og tricks til oprettelse af rapporter i Power BI Desktop og Power BI-tjenesten
 For at få mest muligt ud af dine data skal du nogle gange have lidt ekstra hjælp. Vi har samlet nogle tip og tricks, som du kan bruge, når du opretter rapporter i Microsoft Power BI Desktop, Power BI-tjenesten *og* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-udgaver, hvor tilføjelsesprogrammet Power Pivot er aktiveret, og Power-forespørgsel er installeret og aktiveret.
@@ -166,7 +166,7 @@ Det kan undertiden være nyttigt at beregne oversigtsstatistikker for et datasæ
 ### <a name="using-dax-for-the-first-time"></a>Brug DAX for første gang
 DAX er sproget til beregning af formler i Power BI Desktop.  Det er optimeret til BI-analyser.  Det adskiller sig måske en smule fra det, du kender, hvis du kun har brugt en forespørgselssprog, der ligner SQL. Der findes meget gode ressourcer, som du kan læse for at lære at bruge DAX, både online og i andet materiale.
 
-[Hurtigstart: Grundlæggende DAX i Power BI Desktop](desktop-quickstart-learn-dax-basics.md)
+[Få mere at vide om grundlæggende DAX-funktioner i Power BI Desktop](desktop-quickstart-learn-dax-basics.md)
 
 [Henvisning til DAX (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx)
 
