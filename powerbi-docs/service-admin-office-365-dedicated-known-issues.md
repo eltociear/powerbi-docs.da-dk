@@ -1,28 +1,20 @@
 ---
 title: Office 365 Dedicated-kunder – kendte problemer
 description: Support til Office 365 Dedicated-kunder – kendte problemer. I dette emne beskrives de problemer, der er specifikke for en Office 365 Dedicated-kunde. Dette omfatter begrænsninger i gruppefunktionen samt iPhone-appen med brugerdefinerede domæner.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 4ba9aaf309e7cc749ee9293b0bb906a26b81e59c
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: cedb3e1572fbf20a32abe4f28b38030539502124
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="office-365-dedicated-customers---known-issues"></a>Office 365 Dedicated-kunder – kendte problemer
 Power BI understøttes nu til Office 365 Dedicated-kunder.  Hvis du er O365 Dedicated-kunde, kan du logge på med en konto fra denne lejer og bruge Power BI. Der er to kendte problemer i øjeblikket.

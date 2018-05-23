@@ -1,27 +1,19 @@
 ---
 title: Host Excel-projektmapper ved hjælp af OOS (Office Online Server) – Power BI Report Server
 description: Ud over at vise Power BI-rapporter på webportalen kan Power BI Report Server hoste Excel-projektmapper ved hjælp af OOS (Office Online Server).
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: 06783c6e5eabd04a1adc955e5f43521337b748eb
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 8a002105fcb9f5dc07197aac5722a57c7bba14b6
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Konfigurer din rapportserver til at være vært for Excel-projektmapper ved hjælp af Office Online Server (OOS)
 Ud over at vise Power BI-rapporter på webportalen kan Power BI Report Server hoste Excel-projektmapper ved hjælp af OOS [(Office Online Server)](https://docs.microsoft.com/officeonlineserver/office-online-server-overview). Rapportserveren bliver en samlet placering, hvor du kan udgive og se Microsoft BI-indhold til selvbetjening.

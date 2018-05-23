@@ -1,27 +1,19 @@
 ---
-title: "Vis præsentationstilstand på Surface Hub, Windows 10 – Power BI I"
-description: "Se, hvordan du får vist Power BI-rapporter på Surface Hub, og hvordan du får vist Power BI-dashboards, -rapporter og -felter i fuldskærmsvisning på Windows 10-enheder."
-services: powerbi
-documentationcenter: 
+title: Vis præsentationstilstand på Surface Hub, Windows 10 – Power BI I
+description: Se, hvordan du får vist Power BI-rapporter på Surface Hub, og hvordan du får vist Power BI-dashboards, -rapporter og -felter i fuldskærmsvisning på Windows 10-enheder.
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: cd4fa5d694b76a93ccb017ec17473e8f2775ed85
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 13bfd1d587d59c1c87f03605dbe62f60fa90f5c6
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="view-reports-in-presentation-mode-on-surface-hub-and-windows-10---power-bi"></a>Vis rapporter i præsentationstilstand på Surface Hub og i Windows 10 – Power BI
 Du kan få vist rapporter i præsentationstilstand på Surface Hub, og du kan få vist dashboards, rapporter og felter i fuldskærmsvisning på Windows 10-enheder. 
@@ -82,5 +74,5 @@ Præsentationstilstand er som standard aktiveret i Surface Hub, men hvis det er 
 
 ## <a name="next-steps"></a>Næste trin
 * [Få vist dashboards og rapporter i fuldskærmsvisning fra Power BI-tjenesten](service-fullscreen-mode.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-communityet](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

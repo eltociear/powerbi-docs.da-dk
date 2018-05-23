@@ -1,27 +1,19 @@
 ---
 title: Optimering af Power BI-dashboard til telefoner
-description: "Det er nemt at oprette en brugerdefineret visning af et dashboard, der er specialdesignet til visning på mobiltelefoner. Prøv det nu."
-services: powerbi
-documentationcenter: 
+description: Det er nemt at oprette en brugerdefineret visning af et dashboard, der er specialdesignet til visning på mobiltelefoner. Prøv det nu.
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: e31e64aff0801cacaf02b7ea33e6ed3885dd349c
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 45c426c3750d25cc262d0b1ddafc63307500fa00
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="optimize-power-bi-dashboard-for-phones"></a>Optimering af Power BI-dashboard til telefoner
 ### <a name="anytime-is-the-right-time-to-create-a-great-dashboard"></a>Du kan lige så godt oprette et fantastisk dashboard nu som senere

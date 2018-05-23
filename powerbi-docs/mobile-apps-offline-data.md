@@ -1,27 +1,19 @@
 ---
-title: "Få vist dine data offline i Power BI-mobilapps"
-description: "Se, hvilken fordel du kan få ved at få vist Power BI i en mobilapp i stedet for i en mobilbrowser: du kan se dine data, selvom du ikke har oprettet forbindelse til et netværk."
-services: powerbi
-documentationcenter: 
+title: Få vist dine data offline i Power BI-mobilapps
+description: 'Se, hvilken fordel du kan få ved at få vist Power BI i en mobilapp i stedet for i en mobilbrowser: du kan se dine data, selvom du ikke har oprettet forbindelse til et netværk.'
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: maggies
-ms.openlocfilehash: 6ed6f2898fa99075c6130cd60c083f619b6ba258
-ms.sourcegitcommit: 259d7689bcb1683d4d63a245a9b02becea072139
+ms.openlocfilehash: 5dd171ccd7d8859286abeac2f87771b454421448
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Få vist dine data offline i Power BI-mobilapps
 Gælder for:

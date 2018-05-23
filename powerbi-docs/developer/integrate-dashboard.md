@@ -1,27 +1,19 @@
 ---
 title: Integrer et dashboard i en app for din organisation
-description: "Få mere at vide om, hvordan du kan integrere et dashboard i en webapp ved hjælp af API'er til Power BI."
-services: powerbi
-documentationcenter: 
+description: Få mere at vide om, hvordan du kan integrere et dashboard i en webapp ved hjælp af API'er til Power BI.
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: maghan
-ms.openlocfilehash: e85b745798fd33ffbb5061f4c156054d2218bfb1
-ms.sourcegitcommit: 2ceea44d3606c15b57142c37649c9d481ec4becc
+ms.openlocfilehash: 979b76350b9867bbc684a70bd89a82f88993e625
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="integrate-a-dashboard-into-an-app-for-your-organization"></a>Integrer et dashboard i en app for din organisation
 Få mere at vide om, hvordan du integrerer et dashboard i en webapp ved hjælp af REST-API-kald sammen med Power BI JavaScript-API'en, når du integrerer for din organisation.
