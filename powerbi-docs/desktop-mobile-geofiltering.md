@@ -1,27 +1,19 @@
 ---
 title: Angiv geografiske filtre i Power BI Desktop til mobilapps
-description: "Når du har angivet geografisk filtrering i din model i Power BI Desktop, kan du automatisk filtrere data efter din placering i Power BI-mobilapps."
-services: powerbi
-documentationcenter: 
+description: Når du har angivet geografisk filtrering i din model i Power BI Desktop, kan du automatisk filtrere data efter din placering i Power BI-mobilapps.
 author: maggiesMSFT
 manager: kfile
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: maggies
 LocalizationGroup: Model your data
-ms.openlocfilehash: 5fa7e303c51ac4e4a5ca0a949dabfafe3c166e74
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: ed8a0990c9da2da877c32a0ef44c676f91e0f493
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="set-geographic-filters-in-power-bi-desktop-for-the-mobile-apps"></a>Angiv geografiske filtre i Power BI Desktop til mobilapps
 I Power BI Desktop kan du [kategorisere geografiske data](desktop-data-categorization.md) i en kolonne, så Power BI Desktop ved, hvordan værdier skal behandles i visualiseringer i en rapport. En yderligere fordel er, at når du eller dine kollegaer får vist den pågældende rapport i Power BI-mobilappsene, leverer Power BI automatisk de geografiske filtre, der stemmer overens med jeres placering. 
