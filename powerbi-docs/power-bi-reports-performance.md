@@ -1,28 +1,20 @@
 ---
-title: "Power BI-ydeevne – bedste praksis"
-description: "Denne artikel indeholder en vejledning i at oprette hurtige og pålidelige rapporter i Power BI"
-services: powerbi
-documentationcenter: 
+title: Power BI-ydeevne – bedste praksis
+description: Denne artikel indeholder en vejledning i at oprette hurtige og pålidelige rapporter i Power BI
 author: MarkMcGeeAtAquent
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: monitoring
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 12/12/2017
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: v-mamcge
 LocalizationGroup: Reports
-ms.openlocfilehash: e584f48f5d3650821aac094ebfde7eef5261cc36
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 78dcd0ac0735bfbb3c22678d6bda1397120360cd
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="power-bi-performance-best-practices"></a>Power BI-ydeevne – bedste praksis 
 Denne artikel giver vejledning i at oprette hurtige og pålidelige rapporter i Power BI.  
@@ -96,8 +88,14 @@ Bemærk, at for DirectQuery og direkte forbindelse, så opdateres denne forespø
 ## <a name="understand-custom-visual-performance"></a>Forstå brugerdefinerede visuelle elementers ydeevne 
 Sørg for at gennemprøve hvert brugerdefinerede visuelle element for at sikre høj ydeevne. Brugerdefinerede visuelle elementer med dårlig optimering kan påvirke hele rapportens ydeevne negativt. 
  
-## <a name="deep-dive-into-query-performance-with-sql-profiler-and-power-bi-desktop"></a>Gå i dybden med forespørgslers ydeevne med SQL Profiler og Power BI Desktop 
-For at dykke længere ned i, hvilke visuelle elementer der optager mest tid og ressourcer, så kan du forbinde SQL Profiler til Power BI Desktop for at få et fuldt overblik over forespørgslers ydeevne. Følg nedenstående anvisninger: 
+## <a name="deep-dive-into-query-performance-with-sql-profiler-and-power-bi-desktop"></a>Gå i dybden med forespørgslers ydeevne med SQL Profiler og Power BI Desktop
+
+For at dykke længere ned i, hvilke visuelle elementer der optager mest tid og ressourcer, så kan du forbinde SQL Profiler til Power BI Desktop for at få et fuldt overblik over forespørgslers ydeevne.
+
+> [!NOTE]
+> Power BI Desktop understøtter, at der oprettes forbindelse til en port til diagnosticering. Med porten til diagnosticering kan andre værktøjer oprette forbindelse til og udføre sporing til diagnosticering. *Det understøttes ikke at ændre modellen! Ændringer i modellen vil muligvis beskadige data eller medføre tab af data.*
+
+Følg nedenstående anvisninger:
   
 1. **Installér SQL Server Profiler, og kør Power BI Desktop** 
 

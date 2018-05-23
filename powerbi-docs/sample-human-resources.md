@@ -1,28 +1,20 @@
 ---
-title: "Eksempel på HR: Få en rundvisning"
-description: "Eksempel på HR til Power BI: Få en rundvisning"
-services: powerbi
-documentationcenter: 
+title: 'Eksempel på HR: Få en rundvisning'
+description: 'Eksempel på HR til Power BI: Få en rundvisning'
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 7cd91ad5d6b43803745e5c6a12b6168e17f376af
-ms.sourcegitcommit: 743e44fc8730fea0f7149916080b0c6d7eb6359d
+ms.openlocfilehash: 2f9051142568ff7e6451acc38d30295f2930d0a6
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Eksempel på HR til Power BI: Få en rundvisning
 
@@ -79,7 +71,7 @@ Lad os undersøge nyansættelser først.
 
 Bemærk følgende:
 
-* Kombinationsdiagrammet **Antal nyansættelser, nyansættelser i samme periode sidste år og aktive ÅfÅ % Ændring efter måned** viser, at vi har ansat flere personer hver måned i år sammenlignet med sidste år &#151; væsentligt flere personer i nogle måneder.
+* Kombinationsdiagrammet **Antal nyansættelser, nyansættelser i samme periode sidste år og aktive ÅfÅ % Ændring efter måned** viser, at vi har ansat flere personer hver måned i år sammenlignet med sidste år & #151; væsentligt flere personer i nogle måneder.
 * I kombinationsdiagrammet **Antal nyansættelser og antal aktive medarbejdere efter område og etnicitet**, bemærk, at vi ansætter færre personer i området **Øst**.
 * Vandfaldsdiagrammet **Nyansættelser ÅfÅ var efter aldersgruppe** viser, at vi hovedsageligt ansætter yngre personer. Dette kan skyldes, at jobbene hovedsageligt er deltidsjob.
 * Cirkeldiagrammet **Antal nyansættelser efter køn** viser en ret ligelig fordeling.

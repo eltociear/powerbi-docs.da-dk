@@ -1,28 +1,20 @@
 ---
 title: Ofte stillede spørgsmål vedrørende datagateway i lokalt miljø
 description: Dette er ofte stillede spørgsmål vedrørende datagatewayen i det lokale miljø. Her samler vi ofte stillede spørgsmål vedrørende gateway'en på ét sted.
-services: powerbi
-documentationcenter: ''
-author: davidiseminger
+author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: powerbi
+ms.component: powerbi-gateways
+ms.topic: conceptual
 ms.date: 01/24/2018
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 93771e4f6e7969ac0b26aaa87a240c2261150776
-ms.sourcegitcommit: 65426de556cd7207cbc4f478198664e25c33a769
+ms.openlocfilehash: b4ecec3b2e53c2fea0fcbb7d78d1114da1a105ed
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="on-premises-data-gateway-faq"></a>Ofte stillede spørgsmål vedrørende datagateway i lokalt miljø
 <!-- Shared FAQ shared Include -->

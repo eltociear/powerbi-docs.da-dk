@@ -1,28 +1,20 @@
 ---
 title: Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B
 description: Power BI kan integreres med Azure Active Directory Business-til-business (Azure AD B2B) for at tillade sikker distribution af Power BI-indhold til gæstebrugere uden for organisationen.
-services: powerbi
-documentationcenter: ''
 author: mgblythe
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-admin
+ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 16820050ad879b128482af5754bc53973449f982
-ms.sourcegitcommit: 8552a34df8e6141eb704314c1a019992901d6e78
+ms.openlocfilehash: 2cd096303412ef2ecbf65d818cfa70a007767da9
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B
 
@@ -62,7 +54,7 @@ En planlagt invitation udføres i Microsoft Azure-portalen i Azure AD eller ved 
 
 4. Vælg **Inviter**.
 
-Hvis du vil invitere mere end én gæstebruger, skal du bruge PowerShell. Du kan finde flere oplysninger i [Azure Active Directory B2B-samarbejdskode og PowerShell-eksempler](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-code-samples).
+Hvis du vil invitere mere end én gæstebruger, skal du bruge PowerShell. Du kan finde flere oplysninger i [Azure Active Directory B2B-samarbejdskode og PowerShell-eksempler](https://docs.microsoft.com/azure/active-directory/b2b/code-samples).
 
 Gæstebrugeren skal vælge **Introduktion** i den invitation, de får på mail. Gæstebrugeren føjes derefter til lejeren.
 
@@ -111,7 +103,7 @@ Gæstebrugeren har allerede en Power BI Pro-licens, der er tildelt i deres lejer
 * Når du inviterer gæstebrugere, som benytter personlige mailkonti, f.eks. gmail.com, outlook.com eller hotmail.com, kan du følge denne [integrerede video](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-redemption-experience) for at se et eksempel på, hvordan en bruger skal tilmelde sig.
 * Eksterne B2B-gæster er udelukkende begrænset til forbrug af indhold. Eksterne B2B-gæster kan få vist apps, dashboards og rapporter samt eksportere data og oprette mailabonnementer på dashboards og rapporter. De kan ikke få adgang til arbejdsområder eller udgive deres eget indhold.
 * Denne funktion er i øjeblikket ikke tilgængelig med Power BI-mobilapps. Du kan få vist Power BI-indhold, der deles med Azure AD B2B i en browser på en mobil enhed.
-* Brug af gæstebrugere med Power BI understøttes ikke i suveræne clouds (offentlige myndigheder).
+* Denne funktion er i øjeblikket ikke tilgængelig med rapportwebdelen til Power BI SharePoint Online.
 
 ## <a name="next-steps"></a>Næste trin
 

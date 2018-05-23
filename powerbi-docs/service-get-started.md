@@ -1,32 +1,24 @@
 ---
 title: Introduktion til Power BI-tjenesten
 description: Introduktion til Power BI-tjenesten
-services: powerbi
-documentationcenter: 
 author: adamw
 manager: kfile
-backup: 
-editor: 
-tags: 
+ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
-qualityfocus: monitoring
-qualitydate: 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: cbb7697e3d3dbc92c2917b0a80deadfc0b9fd5a0
-ms.sourcegitcommit: 85d18d9f11a4ce4d4ed65e4544d13da6c2d9b1d4
+ms.openlocfilehash: d66653ebe9232cb6da2f3c53b01e791ca9966db9
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="get-started-with-power-bi-service-apppowerbicom"></a>Kom i gang med Power BI-tjenesten (app.powerbi.com)
-Dette selvstudium hjælper dig med at komme i gang med ***Power BI-tjenesten***. Hvis du vil have et overblik over, hvordan Power BI-tjenesten passer sammen med de andre Power BI-tilbud, anbefaler vi kraftigt, at du starter med at læse [Hvad er Power BI](guided-learning/gettingstarted.yml#step-1).
+Dette selvstudium hjælper dig med at komme i gang med ***Power BI-tjenesten***. Hvis du vil have et overblik over, hvordan Power BI-tjenesten passer sammen med de andre Power BI-tilbud, anbefaler vi kraftigt, at du starter med at læse [Hvad er Power BI](guided-learning/gettingstarted.yml?tutorial-step=1).
 
 ![kunst, der viser relationen mellem Desktop, tjeneste, mobil](media/service-get-started/power-bi-components.png)
 

@@ -1,29 +1,21 @@
 ---
-title: "Eksportér data fra en Power BI-visualisering"
-description: "Eksportér data fra en rapportvisualisering og en dashboardvisualisering, og få dem vist i Excel."
-services: powerbi
-documentationcenter: 
+title: Eksportér data fra en Power BI-visualisering
+description: Eksportér data fra en rapportvisualisering og en dashboardvisualisering, og få dem vist i Excel.
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+ms.reviewer: ''
 featuredvideoid: jtlLGRKBvXY
-qualityfocus: no
-qualitydate: 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b5e5463f19c95106a026770ad987f013f472e541
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5a3192910faf41bee925eb4938098bccb6434bb2
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="export-data-from-visualizations"></a>Eksportér data fra visualiseringer
 Hvis du gerne vil se de data, der bruges til at oprette en visualisering, kan du [få vist de pågældende data i Power BI](service-reports-show-data.md) eller eksportere dataene til Excel som en .xlsx- eller .csv-fil.   

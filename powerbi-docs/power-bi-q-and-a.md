@@ -1,34 +1,31 @@
 ---
 title: Oversigt over Spørgsmål og svar i Power BI-tjenesten og Desktop
 description: Oversigtsemne i dokumentationen om forespørgsler i naturligt sprog i Spørgsmål og svar i Power BI.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: ''
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
+ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: c48e118a6708cae901a01d1956b6a3d0ea6c0561
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: a1d39d10982f1d598ffce7e978c1b030e0a442d4
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="qa-in-power-bi-service-and-power-bi-desktop"></a>Spørgsmål og svar i Power BI-tjenesten og Power BI Desktop
 ## <a name="what-is-qa"></a>Hvad er Spørgsmål og svar?
 Den hurtigste måde at få svar ud af dine data på er nogle gange at stille et spørgsmål på et naturligt sprog. For eksempel "Hvad var den samlede omsætning sidste år".  Brug Spørgsmål og svar til at udforske dine data ved hjælp af intuitive funktioner på et naturligt sprog, og få svar i form af diagrammer og grafer. Spørgsmål og svar adskiller sig fra en søgemaskine – Spørgsmål og svar giver kun resultater om dataene i Power BI.
 
 Denne artikel er udgangspunktet for alt, der har med Spørgsmål og svar at gøre. Vælg et link nedenfor for at få mere at vide om, hvordan Spørgsmål og svar fungerer i Power BI-tjenesten (dashboards og rapporter), Power BI Desktop (rapporter), Power BI Embedded og Power BI – Mobil.  
+
+> [!NOTE]
+> **Power BI Q&A** understøtter kun besvarelse af forespørgsler på et naturligt sprog på engelsk. Du kan også prøve en prøveversion, hvor de stillede spørgsmål er på spansk. I **Power BI Desktop** skal du gå til **Fil**, **Indstillinger**, **Indstillinger** og se efter fanen **Funktioner til eksempelvisning**. Markér afkrydsningsfeltet **Understøttelse af spansk for spørgsmål og svar**.  
+>
+>
 
 ![](media/power-bi-q-and-a/pbi_qa_boxsalessqft.png)
 

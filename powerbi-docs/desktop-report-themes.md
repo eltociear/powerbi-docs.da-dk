@@ -1,28 +1,20 @@
 ---
 title: Brug rapporttemaer i Power BI Desktop (prøveversion)
 description: Få mere at vide om, hvordan du bruger en brugerdefineret farvepalet og anvender den for en hel rapport i Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8f4f8c257404eaca97f419603bac386da5bf7446
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: 8ad48c0e5b78dabee7b1851c75b01e7fda611c1d
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="use-report-themes-in-power-bi-desktop-preview"></a>Brug rapporttemaer i Power BI Desktop (prøveversion)
 Med **rapporttemaer** kan du anvende et farvetema i hele rapporten, f.eks virksomhedens farver, sæsonmæssige farver eller andre farvetemaer, som du gerne vil anvende. Når du anvender et **rapporttema**, bruges farver fra det valgte tema for alle visuelle elementer i rapporten (med nogle få undtagelser, der er beskrevet senere i denne artikel).
@@ -149,7 +141,7 @@ JSON-basisfilen har fem påkrævede linjer:
 
 * **name** – dette er temanavnet, som er det eneste påkrævede felt.
 * **dataColors** – en liste over hexkode-farvekoder til brug sammen med data i visuelle elementer i Power BI Desktop. Listen kan indeholde et vilkårligt antal farver.
-* **background**, **foreground** og **tableAccent** – disse værdier er de farver, der skal bruges i de visuelle elementer i **tabellen** og i **matrixen**. Hvordan farverne bruges, afhænger af den specifikke tabel- eller matrixtypografi, der anvendes. De visuelle elementer i en **tabel** og **matrix** anvender disse typografier som standard.
+* **background**, **foreground** and **tableAccent** – Disse værdier er farver, der skal anvendes i forskellige typer visualiseringer. **foreground** anvendes til tekst i tekstfelter, tekst til KPI-mål, tekst i kort med flere rækker, kortværditekst, tekst til målere, tekst til lodrette udsnitselementer og tekster med totaler og værdier for **table** og **matrix**. **background** anvendes til knapfyld og baggrunden i navne på kombinationsdiagrammer. Hvordan farverne bruges, afhænger af den specifikke typografi, der anvendes. De visuelle elementer i en **tabel** og **matrix** anvender disse typografier som standard.
 
 Hvis du vil oprette et udvidet JSON-filformat med mere detaljeret kontrol over formateringen, skal du føje et afsnit af typen **visualStyles** til JSON-filen og indlejre formateringsspecifikke data i dette afsnit. Formatet af afsnittet **visualStyles** ser ud på følgende måde:
 

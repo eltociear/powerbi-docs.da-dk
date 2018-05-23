@@ -1,28 +1,20 @@
 ---
-title: "10 tips til at få hjælp til dine Power BI-spørgsmål"
-description: "Her er 10 måder at få hjælp, når du har spørgsmål om, hvordan Power BI fungerer"
-services: powerbi
-documentationcenter: 
+title: 10 tips til at få hjælp til dine Power BI-spørgsmål
+description: Her er 10 måder at få hjælp, når du har spørgsmål om, hvordan Power BI fungerer
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 0984e00dbe6b82a2b5b9cfc07f318ded03961f64
-ms.sourcegitcommit: 4217430c3419046c3a90819c34f133ec7905b6e7
+ms.openlocfilehash: 297805d187ccdea2c04e0b79ad86723ec80d3f80
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 tips til at få hjælp til dine Power BI-spørgsmål
 Bliver du nogensinde frustreret, når du bruger Power BI, eller har problemer, fordi du ikke kan få svar på dine spørgsmål om Power Bi, når du skal bruge dem – dvs. "lige til tiden"? 
@@ -52,7 +44,7 @@ Passer videoer bedre til din læringsstil? Power BI har to sæt, du kan være in
 ## <a name="6-attend-training"></a>6 Deltag i kurser
 De tilgængelige kursusmuligheder er næsten uendelige – fra personlige kurser til korte videoer.
 
-* [Vejledt læring](guided-learning/gettingstarted.yml#step-1) på Power BI-webstedet.
+* [Vejledt læring](guided-learning/gettingstarted.yml?tutorial-step=1) på Power BI-webstedet.
 * [Gratis Power BI-webinarer](webinars.md), direkte og efter behov på Power BI-webstedet.
 
 Du kan finde flere muligheder online, som f.eks.:

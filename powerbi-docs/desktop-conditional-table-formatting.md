@@ -1,28 +1,20 @@
 ---
 title: Betinget formatering af tabeller i Power BI Desktop
 description: Anvend brugerdefineret formatering på tabeller
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 05/08/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1626c2af5906004b6b4f79f4830f003b96e241fc
-ms.sourcegitcommit: 509be8852ba7595b9441c9479224f9dca298b26d
+ms.openlocfilehash: 9599b40940c9d9cca254bb2ed2e87c161cce371f
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="conditional-formatting-in-tables"></a>Betinget formatering af tabeller
 Med betinget formatering af tabeller kan du angive brugerdefinerede baggrundsfarver for celler baseret på celleværdier eller baseret på andre værdier eller felter, og du kan bruge gradueringsfarver. Du får adgang til betinget formatering på følgende måde: I brønden **Felter** i ruden **Visualiseringer** i Power BI Desktop skal du vælge pil ned ved siden af værdien i brønden **Værdier**, som du vil formatere (eller du skal højreklikke på feltet). Du kan kun administrere betinget formatering for felter i området **Værdier** under **Felter**.

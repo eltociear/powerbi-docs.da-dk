@@ -1,28 +1,20 @@
 ---
-title: "Sådan eksporterer du en rapport fra Power BI-tjenesten til Desktop (eksempelvisning)"
+title: Sådan eksporterer du en rapport fra Power BI-tjenesten til Desktop (eksempelvisning)
 description: Download en rapport fra Power BI-tjenesten til en Power BI Desktop-fil
-services: powerbi
-documentationcenter: 
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 0cda094f3104b32f9bad31bf5030e235eb7ce83d
-ms.sourcegitcommit: 0a16dc12bb2d39c19e6b0002b673a8c1d81319c9
+ms.openlocfilehash: 90f7cddec13159c445dc97f7adeea790020f8c72
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Eksportér en rapport fra Power BI-tjenesten til Desktop (eksempelvisning)
 I Power BI Desktop kan du eksportere (også kaldet *downloade*) en rapport til Power BI-tjenesten ved at gemme rapporten og vælge **Publicer**. Du kan også eksportere i den anden retning og downloade en rapport fra Power BI-tjenesten til Desktop. Filtypenavnet for filer, der eksporteres, i begge retninger, er *.pbix*.
@@ -38,7 +30,7 @@ Følg disse trin for at downloade .pbix-filen:
 2. Vælg **Filer > Download rapport** på menulinjen.
    
    > [!NOTE]
-   > Rapporten skal være [oprettet ved hjælp af Power BI Desktop](guided-learning/publishingandsharing.yml#step-2) efter 23. november 2016 – og opdateret efterfølgende – for at den kan downloades. Hvis det ikke er tilfældet, er menupunktet *Download rapport* nedtonet i Power BI-tjenesten.
+   > Rapporten skal være [oprettet ved hjælp af Power BI Desktop](guided-learning/publishingandsharing.yml?tutorial-step=2) efter 23. november 2016 – og opdateret efterfølgende – for at den kan downloades. Hvis det ikke er tilfældet, er menupunktet *Download rapport* nedtonet i Power BI-tjenesten.
    > 
    > 
 3. Under oprettelse af .pbix-filen vises fremskridt på et statusbanner. Når filen er klar, bliver du bedt om at åbne eller gemme .pbix-filen. Navnet på filen stemmer overens med titlen på rapporten.

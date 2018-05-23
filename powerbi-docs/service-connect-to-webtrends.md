@@ -1,28 +1,20 @@
 ---
 title: Opret forbindelse til Webtrends med Power BI
 description: Webtrends til Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 9c8772430143b974fb389eac2f2ad3e74748fd3f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 89eda507e0b908fe746cb13c0c6477baed07ba3c
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-webtrends-with-power-bi"></a>Opret forbindelse til Webtrends med Power BI
 Webtrends-indholdspakken til Power BI indeholder en række køreklare målepunkter, f.eks. samlede sidevisninger og besøg efter trafikkilde. Visualisering af dine Webtrends-data i Power BI starter med at oprette forbindelse til din Webtrends-konto. Du kan bruge det dashboard og de rapporter, som følger med, eller tilpasse dem for at fremhæve de oplysninger, som betyder mest for dig.  Dataene opdateres automatisk én gang dagligt.
@@ -102,7 +94,7 @@ Dine legitimationsoplysninger er de samme som dem, du angiver, når du logger p�
 ![](media/service-connect-to-webtrends/webtrendscreds.png)
 
 ## <a name="troubleshooting"></a>Fejlfinding
-Der kan opstå en fejl under indlæsning af indholdspakken, efter du har angivet dine legitimationsoplysninger. Hvis du ser meddelelsen "Ups" under indlæsningen, skal du gennemse fejlfindingsforslagene nedenfor. Hvis du stadig oplever problemer, skal du indsende en supportanmodning til https://support.powerbi.com
+Der kan opstå en fejl under indlæsning af indholdspakken, efter du har angivet dine legitimationsoplysninger. Hvis du ser meddelelsen "Ups" under indlæsningen, skal du gennemse fejlfindingsforslagene nedenfor. Hvis du stadig oplever problemer, skal du indsende en supportanmodning på https://support.powerbi.com
 
 1. Det korrekte profil-id bruges: Se under [Søgning efter parametre](#FindingParams) for at få flere oplysninger.
 2. Brugeren har adgang til de rapporter, der er angivet i afsnittet ["Følgende er inkluderet"](#Included)

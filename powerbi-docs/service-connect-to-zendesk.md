@@ -1,28 +1,20 @@
 ---
 title: Opret forbindelse til Zendesk med Power BI
 description: Zendesk til Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 52adef9d30ec269e6e3a954632a54814b241623d
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 997dd8b598e67d590723c72fb35245c3b3486c8b
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-zendesk-with-power-bi"></a>Opret forbindelse til Zendesk med Power BI
 Zendesk-indholdspakken indeholder et Power BI-dashboard og et sæt Power BI-rapporter, der giver indsigt i dine billetvolumener og agentydeevne. Du kan bruge dashboardet og rapporterne, som følger med, eller tilpasse dem for at fremhæve de oplysninger, som betyder mest for dig.  Dataene opdateres automatisk én gang dagligt. 
@@ -42,7 +34,7 @@ Opret forbindelse til [Zendesk-indholdspakken](https://app.powerbi.com/getdata/s
 3. Vælg **Zendesk** \> **Hent.**
    
    ![](media/service-connect-to-zendesk/zendesk.png)
-4. Angiv den URL-adresse, som er knyttet til din konto. Den vil være i formatet **https://company.zendesk.com**. Se oplysninger om at [finde disse parametre](#FindingParams) nedenfor.
+4. Angiv den URL-adresse, som er knyttet til din konto. Den skal være i formatet **https://company.zendesk.com**. Du kan se oplysninger om, hvordan du [finder disse parametre](#FindingParams), nedenfor.
    
    ![](media/service-connect-to-zendesk/pbi_zendeskconnect.png)
 5. Angiv dine Zendesk-legitimationsoplysninger, når du bliver bedt om dem.  Vælg **oAuth 2** som Godkendelsesmetode, og klik på **Log på**. Følg Zendesk-godkendelsesprocessen. (Hvis du er allerede er logget på Zendesk i din browser, bliver du muligvis ikke bedt om legitimationsoplysninger).

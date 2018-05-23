@@ -1,28 +1,20 @@
 ---
-title: "Sådan føjes et hyperlink til en tabel"
+title: Sådan føjes et hyperlink til en tabel
 description: Links i tabeller
-services: powerbi
-documentationcenter: 
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: identified
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 69c9943045777950c52d21a441c87a67dd9feab1
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d696a7492f1295f2e2c9b39088b0eacdb66b15ca
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="hyperlinks-in-tables"></a>Links i tabeller
 I dette emne kan du lære at bruge Power BI Desktop til at oprette links. Når de er oprettet, kan du bruge enten Power BI Desktop eller Power BI-tjenesten til at tilføje disse links i tabeller og matricer i din rapport. 
@@ -53,7 +45,7 @@ Proceduren for at tilføje et link afhænger af, om du har importeret dataene el
    * Markér diagrammet for at aktivere det.
    * Vælg ikonet med malerullen ![](media/power-bi-hyperlinks-in-tables/power-bi-paintroller.png) for at åbne fanen Formatering.
    * Udvid **Værdier**, find **URL-adresseikon**et, og slå det **Til.**
-6. (Valgfrit) [Publicer rapporten fra Power BI Desktop til Power BI-tjenesten](guided-learning/publishingandsharing.yml#step-2), og åbn rapporten i Power BI-tjenesten. Linkene fungerer også der.
+6. (Valgfrit) [Publicer rapporten fra Power BI Desktop til Power BI-tjenesten](guided-learning/publishingandsharing.yml?tutorial-step=2), og åbn rapporten i Power BI-tjenesten. Linkene fungerer også der.
 
 ### <a name="for-data-connected-with-directquery"></a>For data, der oprettes forbindelse til via DirectQuery
 Du kan ikke oprette en ny kolonne i DirectQuery-tilstand.  Men hvis dine data allerede indeholder URL-adresser, kan du lave dem til links.
@@ -61,7 +53,7 @@ Du kan ikke oprette en ny kolonne i DirectQuery-tilstand.  Men hvis dine data al
 1. I rapportvisningen skal du oprette en tabel med et felt, der indeholder URL-adresser.
 2. Vælg kolonnen, og på fanen **Udformning** skal du vælge rullelisten for **Datakategori**.
 3. Vælg **Web URL**. Links bliver blå og understreget.
-4. (Valgfrit) [Publicer rapporten fra Power BI Desktop til Power BI-tjenesten](guided-learning/publishingandsharing.yml#step-2), og åbn rapporten i Power BI-tjenesten. Linkene fungerer også der.
+4. (Valgfrit) [Publicer rapporten fra Power BI Desktop til Power BI-tjenesten](guided-learning/publishingandsharing.yml?tutorial-step=2), og åbn rapporten i Power BI-tjenesten. Linkene fungerer også der.
 
 ## <a name="create-a-table-or-matrix-hyperlink-in-excel-power-pivot"></a>Opret et tabel- eller matrixlink i Excel Power Pivot
 En anden metode til at tilføje links i dine Power BI-tabeller og -matricer er at oprette links i datasættet, før du importerer/opretter forbindelse til datasættet fra Power BI. I dette eksempel bruges der en Excel-projektmappe.

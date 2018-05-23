@@ -1,28 +1,20 @@
 ---
 title: Opret forbindelse til comScore Digital Analytix med Power BI
 description: comScore Digital Analytix til Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c7e476cb9e5a210ce2d37691c44ed05dd9f3c256
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: bc9a8637416bdea50e955c1aea73bbcfeed51bb6
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-comscore-digital-analytix-with-power-bi"></a>Opret forbindelse til comScore Digital Analytix med Power BI
 Visualiser og udforsk dine comScore Digital Analytix-data i Power BI med Power BI-indholdspakken. Dataene opdateres automatisk én gang dagligt.
@@ -71,7 +63,7 @@ Få mere at vide om, hvordan du finder alle dine comScore-parametre, nedenfor.
 
 Det datacenter, du opretter forbindelse til, bestemmes af den webadresse, du navigerer til i comScore.
 
-Hvis du bruger https://dax.comscore.com, skal du angive "US", og hvis du bruger https://dax.comscore.eu, skal du angive "EU".
+Hvis du bruger https://dax.comscore.com, skal du angive "US", hvis du bruger https://dax.comscore.eu, skal du angive "EU".
 
 ![](media/service-connect-to-connect-to/comscore_url.png) 
 

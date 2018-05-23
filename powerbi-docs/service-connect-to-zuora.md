@@ -1,28 +1,20 @@
 ---
 title: Opret forbindelse til Zuora med Power BI
 description: Zuora til Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2f7e4c666cf6ec3cb69424a3922f5feedd61bf89
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: f283a8ed273dcb609e9d5160adbeb714e8935ab9
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Opret forbindelse til Zuora med Power BI
 Med Zuora til Power BI kan du visualisere vigtige omsætnings-, fakturerings- og abonnementsdata. Brug standarddashboardet og rapporter til at analysere brugstendenser, spore faktureringer og betalinger og overvåge tilbagevendende indtægt eller til at tilpasse dem, så de imødekommer dine særlige behov i forbindelse med dashboard og rapportering.
@@ -39,7 +31,7 @@ Opret forbindelse til [Zuora](https://app.powerbi.com/getdata/services/Zuora) ti
 3. Vælg **Zuora** \> **Hent**.
 
    ![](media/service-connect-to-zuora/zuora.png)
-4. Angiv URL-adressen til Zuora. Dette er normalt "https://www.zuora.com". Se detaljer om at [finde de pågældende parametre](#FindingParams) nedenfor.
+4. Angiv URL-adressen til Zuora. Dette vil typisk være "https://www.zuora.com" . Du kan se oplysninger om, hvordan [du finder disse parametre](#FindingParams) nedenfor.
 
    ![](media/service-connect-to-zuora/params.png)
 5. Som **Godkendelsesmetode** skal du vælge **Grundlæggende**, angive dit brugernavn og din adgangskode (der skelnes mellem små og store bogstaver) og derefter vælge **Log på**.

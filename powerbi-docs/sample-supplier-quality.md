@@ -1,28 +1,20 @@
 ---
-title: "Eksempel på analyse af leveringskvalitet til Power BI: Få en introduktion"
-description: "Eksempel på analyse af leveringskvalitet til Power BI: Få en introduktion"
-services: powerbi
-documentationcenter: 
+title: 'Eksempel på analyse af leveringskvalitet til Power BI: Få en introduktion'
+description: 'Eksempel på analyse af leveringskvalitet til Power BI: Få en introduktion'
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/19/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 5636ccd4685205b2b01dd4c591942d7d2670bc48
-ms.sourcegitcommit: 743e44fc8730fea0f7149916080b0c6d7eb6359d
+ms.openlocfilehash: 5089fef7c0292f1a6651b23eea814cc6cd9da9ce
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på analyse af leveringskvalitet til Power BI: Få en introduktion
 
@@ -53,7 +45,7 @@ Der er anvendt rigtige data fra obviEnce ([www.obvience.com](http://www.obvience
    ![](media/sample-datasets/power-bi-samples-icon.png)
 4. Vælg **Supplier Quality Analysis Sample**, og vælg **Opret forbindelse**.  
   
-   ![Supplier Quality Analysis Sample](media/sample-supplier-quality/supplier16.png)
+   ![Eksempel på analyse af leverandørkvalitet](media/sample-supplier-quality/supplier16.png)
    
 5. Power BI importerer indholdspakken og føjer et nyt dashboard, en rapport og et datasæt til dit aktuelle arbejdsområde. Det nye indhold er markeret med en gul stjerne. 
    

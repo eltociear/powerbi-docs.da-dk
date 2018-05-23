@@ -1,28 +1,20 @@
 ---
 title: Opret forbindelse til Acumatica med Power BI
 description: Acumatica til Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: af1a34d280aaa1a795a7a2490c97874e0c4d1838
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: ea5ce2e1e635149c91fbcf38d84e3093af7915c9
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Opret forbindelse til Acumatica med Power BI
 Med Power BI Acumatica-indholdspakken kan du hurtigt få indsigt i dine data med salgsmuligheder. Power BI henter dine data, herunder salgsmuligheder og kunder og opretter derefter et standarddashboard og relaterede rapporter, der er baseret på disse data.
@@ -73,7 +65,7 @@ Acumatica OData-slutpunktet er formateret som følger og skal bruge HTTPS:
 
     https://[sitedomain]/odata/[companyname]
 
-Programwebstedets domæne kan findes i browserens adresselinje, når du er logget på Acumatica. I eksemplet nedenfor er webstedsdomænet "https://pbi.acumatica.com", så det OData-slutpunkt, der skal angives, vil være "https://pbi.acumatica.com/odata".
+Programwebstedets domæne kan findes i browserens adresselinje, når du er logget på Acumatica. I eksemplet nedenfor er webstedsdomænet "https://pbi.acumatica.com", så det OData-slutpunkt, der skal angives, skal være "https://pbi.acumatica.com/odata".
 
  ![](media/service-connect-to-acumatica/url.png)
 

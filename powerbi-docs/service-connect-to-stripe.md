@@ -1,28 +1,20 @@
 ---
 title: Opret forbindelse til Stripe med Power BI
 description: Stripe til Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8d5c99f901471d61ec8483e1f8c898071ce8c25c
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 533a8ae7f0030c70ed5212c890215a2b43d8e870
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-stripe-with-power-bi"></a>Opret forbindelse til Stripe med Power BI
 Visualiser og udforsk dine Stripe-data i Power BI med Power BI-indholdspakken. Power BI Stripe-indholdspakken trækker data ind om dine kunder, gebyrer, begivenheder og fakturaer. Dataene indeholder de seneste titusinde hændelser og 5.000 gebyrer over de seneste 30 dage. Indholdet opdateres automatisk en gang om dagen med en tidsplan, du styrer. 

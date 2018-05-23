@@ -1,28 +1,20 @@
 ---
 title: Del dashboards, der er knyttet til en Excel-fil på OneDrive – Power BI
 description: Læs om deling af dashboards, der er tilknyttet en Excel-projektmappe på OneDrive for Business, med felter, der er fastgjort fra den projektmappe.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ajayan
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ajayan
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 56dec052240c60543831ef05624943e3d71f953a
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: c8afcb15097a4d9a0d15f76304085f81daa17809
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="share-a-power-bi-dashboard-that-links-to-an-excel-file-in-onedrive"></a>Del et Power BI-dashboard, der linker til en Excel-fil i OneDrive
 I Power BI kan du [oprette forbindelse til Excel-projektmapper på OneDrive for Business](service-excel-workbook-files.md) og fastgøre felter til et dashboard fra den projektmappe. Når du deler det dashboard eller opretter en indholdspakke, der indeholder dette dashboard:

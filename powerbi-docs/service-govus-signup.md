@@ -1,28 +1,20 @@
 ---
 title: Tilmelding til Power BI for offentlige myndigheder i USA
 description: For offentlige myndigheder i USA, få mere at vide om, hvordan du tilmelder din US Government-organisation til Power BI US Government-tjenesten
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 04/24/2017
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a52aaaffb5f66ba5596e788183ef52753f08c8bf
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.openlocfilehash: 17d7c07cb35eb9046b6fcfe8da5a85ee15fe7eaf
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Tilmeld din US Government-organisation til Power BI-tjenesten
 **Power BI-tjenesten** har en version tilgængelig for offentlige myndigheder i USA som en del af abonnementer på **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til offentlige myndigheder i USA og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten**.
@@ -130,7 +122,7 @@ For at identificere brugere i din lejer, der kører den gratis licens af Power B
 Du kan gøre mange forskellige ting med Power BI. Yderligere oplysninger og læring, herunder en artikel, der viser, hvordan du tilmelder dig tjenesten, findes i følgende ressourcer:
 
 * [Oversigt over Power BI til US Government](service-govus-overview.md)
-* [Automatiseret læring til Power BI](guided-learning/gettingstarted.yml#step-1)
+* [Automatiseret læring til Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)
 * [Kom i gang med Power BI-tjenesten](service-get-started.md)
 * [Kom i gang med Power BI Desktop](desktop-getting-started.md)
 

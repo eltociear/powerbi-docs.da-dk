@@ -1,28 +1,20 @@
 ---
 title: Brug detaljeadgang i Power BI Desktop
 description: Lær, hvordan du kan analysere data på en ny rapportside i Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 05/08/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d0c78643d285099f7b7856704ac7ee350ff9f93a
-ms.sourcegitcommit: 509be8852ba7595b9441c9479224f9dca298b26d
+ms.openlocfilehash: 8c9a0d075c6d55baa1f518874fa668a3f0db8cb3
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Brug detaljeadgang i Power BI Desktop
 Med **detaljeadgang** i **Power BI Desktop** kan du oprette en side i rapporten, som fokuserer på et bestemt objekt – f.eks. en leverandør, en kunde eller en producent. Når denne rapportside er i fokus, kan brugere højreklikke på et datapunkt på andre rapportsider og få detaljeadgang til siden med fokus for at få oplysninger, der er filtreret i forhold til denne kontekst.
@@ -71,6 +63,14 @@ Når du derefter udfører detaljeadgang på et visuelt element, kan du se, hvilk
 ![midlertidige filtre med kursiv](media/desktop-drillthrough/drillthrough_07.png)
 
 Bemærk, at du kan gøre dette med sider med værktøjstip, men det giver en forkert oplevelse (værktøjstippet ser ikke ud til at fungere korrekt), så det anbefales ikke at gøre det med værktøjstip.
+
+## <a name="add-a-measure-to-drillthrough"></a>Føj et mål til detaljeadgang
+
+Ud over at overføre alle filtre til vinduet med detaljeadgang kan du også tilføje et mål (eller en numerisk kolonne med en opsummering) i detaljeområdet. Du skal blot trække detaljeadgangsfeltet til Detaljeadgang-kortet for at anvende det. 
+
+![føj et mål til detaljeadgang](media/desktop-drillthrough/drillthrough_08.png)
+
+Når du tilføjer et mål (eller en numerisk kolonne med en opsummering), kan du få adgang til siden, når feltet bruges i området *Værdi* for en visualisering.
 
 Så nemt er det at bruge **detaljeadgang** i dine rapporter. Det kan give dig en udvidet visning af de enhedsoplysninger, du vælger til dit detaljeadgangsfilter.
 

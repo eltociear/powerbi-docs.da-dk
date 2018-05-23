@@ -1,28 +1,20 @@
 ---
 title: Opret forbindelse til de tjenester, du bruger med Power BI
 description: Opret forbindelse til flere af de tjenester, du bruger til at køre din virksomhed, f.eks. Salesforce, Microsoft Dynamics CRM og Google Analytics.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 01/29/2018
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c1df66100206198f3de32bea9859261d51d3774d
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5b8a438ed354f246c5ac1d5ac0d0488db19633dd
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Opret forbindelse til de tjenester, du bruger med Power BI
 Du kan oprette forbindelse til flere af de tjenester, du bruger til at køre din virksomhed, f.eks. Salesforce, Microsoft Dynamics og Google Analytics. Du kan starte Power BI vha. dine legitimationsoplysninger for at oprette forbindelse til tjenesten. Derefter oprettes der en Power BI-app med et dashboard og et sæt Power BI-rapporter, som automatisk viser dine data og giver et visuelt indblik i din virksomhed. 
@@ -31,7 +23,7 @@ Log på Power BI for at få vist alle de [tjenester, du kan oprette forbindelse 
 
 ![AppSource-apps](media/service-connect-to-services/overview.png)
 
-Når du har installeret appen, kan du få vist dashboardet og rapporterne i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) og i Power BI-mobilappsene. 
+Når du har installeret appen, kan du få vist dashboardet og rapporterne i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) og i Power BI-mobilapperne. 
 
 ![Google Analytics-app i Power BI-mobilappen](media/service-connect-to-services/power-bi-service-mobile-app-240.png)
 

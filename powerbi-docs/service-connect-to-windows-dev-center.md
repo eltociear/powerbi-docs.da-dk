@@ -1,28 +1,20 @@
 ---
 title: Opret forbindelse til Windows Udviklingscenter med Power BI
 description: Windows Udviklingscenter til Power BI
-services: powerbi
-documentationcenter: ''
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 246c1dc22d120ac01fe5276bbd0a2dd95b0dbc1f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 6cdb4d6684ec97786c7fd10da7d22515a24e9dbc
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-windows-dev-center-with-power-bi"></a>Opret forbindelse til Windows Udviklingscenter med Power BI
 Udforsk og overvåg dine app-analysedata fra Windows Udviklingscenter i Power BI med Power BI-indholdspakken. Dataene opdateres automatisk én gang dagligt.
@@ -73,7 +65,7 @@ Denne indholdspakke kræver mindst én app, der er publiceret i Windows Store og
 ## <a name="finding-parameters"></a>Søg efter parametre
 Du kan finde program-id'et for en app ved at gå til app-identitetssiden under App-administration.
 
-Program-id'et findes i slutningen af din URL-adresse til Windows 10 Store, https://www.microsoft.com/store/apps/ **{programid}**
+Program-id'et er angivet sidst i URL-adressen til Windows 10 Store, https://www.microsoft.com/store/apps/ **{applicationId}**
 
 ## <a name="next-steps"></a>Næste trin
 [Kom i gang med Power BI](service-get-started.md)

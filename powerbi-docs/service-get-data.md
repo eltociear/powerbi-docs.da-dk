@@ -1,28 +1,20 @@
 ---
 title: Datakilder til Power BI
 description: Datakilder til Power BI
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: identified
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 70f1b5faa496c28dc39347831d4216db3ad07c59
-ms.sourcegitcommit: f679c05d029ad0765976d530effde744eac23af5
+ms.openlocfilehash: 183d0fdcf164ca706dd1704ea1c503f59ca7d715
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakilder til Power BI-tjenesten
 Dataene er i hjertet af Power BI. Når du udforsker data, opretter diagrammer og dashboards, stiller spørgsmål med Spørgsmål og svar, får alle disse visualiseringer og svar, som du ser, rent faktisk deres underliggende data fra et datasæt. Men hvor kommer dette datasæt fra? Fra en datakilde.
@@ -36,7 +28,7 @@ Du kan hente data fra enhver af disse datakilder i Power BI ved at klikke på **
 ## <a name="files"></a>Filer
 ![](media/service-get-data/pbi_getdata_files.png)
 
-**Excel** (.xlsx, xlxm) � Excel er unikt i og med, at en projektmappe både kan indeholde data, du selv har lagt ind i regneark, og du kan forespørge på og indlæse data fra eksterne datakilder ved hjælp af Power-forespørgsel (Hent og omdan i Excel 2016) eller Power Pivot. Du kan importere data, der er i tabellerne i regneark (dataene *skal* være i en tabel), eller importere data, der er indlæst i en datamodel. Du kan få flere oplysninger i [Hent data fra Excel](service-get-data-from-files.md).
+**Excel** (.xlsx, xlxm) Excel er unikt i og med, at en projektmappe både kan indeholde data, du selv har lagt ind i regneark, og du kan forespørge på og indlæse data fra eksterne datakilder ved hjælp af Power-forespørgsel (Hent og omdan i Excel 2016) eller Power Pivot. Du kan importere data, der er i tabellerne i regneark (dataene *skal* være i en tabel), eller importere data, der er indlæst i en datamodel. Du kan få flere oplysninger i [Hent data fra Excel](service-get-data-from-files.md).
 
 **Power BI Desktop** (.pbix) – Du kan bruge Power BI Desktop til at forespørge på og indlæse data fra eksterne datakilder, udvide din datamodel med målinger og relationer samt oprette rapporter. Du kan importere din Power BI Desktop-fil til dit Power BI-websted. Power BI Desktop er bedst til mere erfarne brugere, der har en god forståelse af deres datakilder, dataforespørgsel og omdannelse samt datamodelleringsbegreber. Du kan finde flere oplysninger i [Opret forbindelse til data i Power BI Desktop](desktop-connect-to-data.md).
 
@@ -71,7 +63,7 @@ Nogle datakilder har allerede deres data i et format, der er klar til Power BI-t
 
 I andre tilfælde kan det være nødvendigt at forespørge på og indlæse de ønskede data i en fil. Lad os for eksempel antage, at du har logistikdata i en data warehouse-database på en server i din organisation. I Power BI-tjenesten kan du ikke oprette direkte forbindelse til denne database og begynde at udforske dataene (medmindre det er en tabelmodeldatabase). Du kan dog bruge Power BI Desktop eller Excel til at forespørge på og indlæse disse logistikdata i en datamodel, som du derefter gemmer som en fil. Du kan derefter importere filen til Power BI, hvor der oprettes et datasæt.
 
-Nu tænker du nok �Men disse logistikdata på denne database ændres hver dag. Hvordan sikrer jeg, at mit datasæt i Power BI er opdateret?� Forbindelsesoplysningerne fra Power BI Desktop- eller Excel-filen importeres til datasættet sammen med dataene. Hvis du konfigurerer planlagt opdatering eller udfører en manuel opdatering af datasættet, vil Power BI bruge forbindelsesoplysningerne fra datasættet, sammen med et par andre indstillinger, til at oprette direkte forbindelse til databasen, søge efter opdateringer og indlæse disse opdateringer i datasættet. Det vil sandsynligvis kræve en Power BI-gateway for at sikre dataoverførsel mellem den lokale server og Power BI. Visualiseringer i rapporter og dashboards opdateres automatisk.
+Nu tænker du nok Men disse logistikdata på denne database ændres hver dag. Hvordan sikrer jeg, at mit datasæt i Power BI er opdateret? Forbindelsesoplysningerne fra Power BI Desktop- eller Excel-filen importeres til datasættet sammen med dataene. Hvis du konfigurerer planlagt opdatering eller udfører en manuel opdatering af datasættet, vil Power BI bruge forbindelsesoplysningerne fra datasættet, sammen med et par andre indstillinger, til at oprette direkte forbindelse til databasen, søge efter opdateringer og indlæse disse opdateringer i datasættet. Det vil sandsynligvis kræve en Power BI-gateway for at sikre dataoverførsel mellem den lokale server og Power BI. Visualiseringer i rapporter og dashboards opdateres automatisk.
 
 Forstår du, bare fordi du ikke kan oprette forbindelse til din datakilde direkte fra Power BI tjenesten, betyder det ikke, at du ikke kan hente disse data ind i Power BI. Det kræver måske blot lige et par yderligere trin og lidt hjælp fra it-afdelingen. Se [Datakilder i Power BI Desktop](desktop-data-sources.md) for at få flere oplysninger.
 
