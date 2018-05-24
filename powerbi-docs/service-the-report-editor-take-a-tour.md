@@ -17,7 +17,7 @@ ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/17/2018
 ---
-# <a name="the-report-editortake-a-tour"></a>Rapporteditoren... Få en introduktion
+# <a name="the-report-editortake-a-tour"></a>Rapporteditoren: Tag en rundvisning
 ## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Redigering af rapporter i Power BI-tjenesten og Power BI Desktop
 Rapporteditoren i Power BI-tjenesten og rapporteditoren i Power BI Desktop ligner hinanden meget. Videoen viser rapporteditoren i Power BI Desktop, og denne artikel viser rapporteditoren i Power BI-tjenesten. 
 

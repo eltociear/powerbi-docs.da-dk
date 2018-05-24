@@ -7,14 +7,14 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/20/2018
+ms.date: 05/22/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: b7fb59e7fca6a3211b542b2a942565d6865e560c
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: c504280257a959ccd7a46e61b9d377c22b76c14d
+ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="language-modeling-and-the-linguistic-schema"></a>Sproglig udformning og det sproglige skema 
 Det er effektivt, når du bruger almindelige udtryk og naturligt sprog til dataforespørgsler. Det er endnu mere effektiv, når dataene svarer, hvilket er, hvad der sker i Spørgsmål og svar i Power BI. Når du stiller et spørgsmål i Spørgsmål og svar i Power BI, forsøger den så vidt muligt at finde det rette svar. 
@@ -53,10 +53,7 @@ Det anbefales, at du bruger Visual Studio Code til at redigere YAML-filer med sp
 
     ![Hvordan vil du åbne denne fil](media/power-bi-q-and-a-linguistic-schema/power-bi-visual-code.png)
 
-4. I Visual Studio Code skal du installere udvidelsen YAML Support by Red Hat.
-
-   
-
+4. I Visual Studio Code skal du installere udvidelsen YAML Support by Red Hat.    
     a. Vælg fanen **Udvidelser** (den sidste til venstre) eller Ctrl + Skift + X.    
     ![udvidelsesikon](media/power-bi-q-and-a-linguistic-schema/power-bi-extensions.png)    
     b. Søg efter "yaml", og vælg **YAML Support by Red Hat** på listen.    

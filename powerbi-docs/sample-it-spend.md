@@ -7,16 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 05/20/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 206d9866b9bb4e47fea5dba58afbc8cdcf28b675
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 0d2790266254f1e9dac07b99acb19550cd3ed364
+ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på analyse af it-forbrug til Power BI: Få en introduktion
+# <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på analyse af it-forbrug til Power BI: Tag en rundvisning
 
 ## <a name="overview-of-the-it-spend-analysis-sample"></a>Oversigt over eksemplet på analyse af it-forbrug
 [Indholdspakken](service-organizational-content-pack-introduction.md) (dashboard, rapport og datasæt) til analysen af it-forbruget analyserer de planlagte omkostninger over for de faktiske omkostninger i en it-afdeling. Sammenligningen hjælper os med at forstå, om virksomheden har lagt en god plan for året, og giver os mulighed for at undersøge de områder, som afviger væsentligt fra planen. Virksomheden i eksemplet gennemgår en årlig planlægningscyklus og genererer et nyt 'Seneste estimat' (Latest Estimate, LE) hvert kvartal for at gøre det nemmere at analysere ændringer i it-forbruget i løbet af regnskabsåret.
@@ -27,7 +27,7 @@ Dette eksempel er en del af en række, der illustrerer, hvordan du kan bruge Pow
 
 ## <a name="prerequisites"></a>Forudsætninger
 
- Før du kan bruge eksemplet, skal du først downloade det som en [indholdspakke](https://docs.microsoft.com/en-us/power-bi/sample-it-spend#get-the-content-pack-for-this-sample), [.pbix-fil](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT Spend Analysis Sample PBIX.pbix) eller [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529783).
+ Før du kan bruge eksemplet, skal du først downloade det som en [indholdspakke](https://docs.microsoft.com/en-us/power-bi/sample-it-spend#get-the-content-pack-for-this-sample), [.pbix-fil](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT-Spend-Analysis-Sample-PBIX.pbix) eller [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529783).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Hent indholdspakken for dette eksempel
 

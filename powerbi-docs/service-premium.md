@@ -79,7 +79,7 @@ Power BI Premium er tilgængelig i nodekonfigurationer med andre v-kerne-kapacit
 * Frontend-v-kernerne er ansvarlige for webtjenesten, dashboardet og dokumentstyringen af rapporter, administration af adgangsrettigheder, planlægning, API'er, uploads og downloads og generelt alt, hvad der er relateret til brugeroplevelsen.
 * Backend-v-kernerne er ansvarlige for det tunge arbejde: behandling af forespørgsler, cachestyring, kørsel af R-servere, dataopdatering, behandling på naturligt sprog, feeds i realtid og gengivelse af rapporter og billeder på serversiden. Med backend-v-kernerne er der også reserveret en bestemt mængde hukommelse. Det er især vigtigt at have tilstrækkelig hukommelse i forbindelse med store datamodeller eller med et stort antal aktive datasæt.
 
-## <a name="power-bi-report-server"></a>Power BI Report Server
+## <a name="power-bi-report-server"></a>Power BI-rapportserver
 Power BI Premium omfatter retten til at køre Power BI Report Server i det lokale miljø. Du kan finde flere oplysninger i [Kom i gang med Power BI Report Server](report-server/get-started.md).
 
 ## <a name="next-steps"></a>Næste trin

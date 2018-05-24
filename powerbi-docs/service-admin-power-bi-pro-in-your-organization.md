@@ -85,7 +85,7 @@ Benyt følgende fremgangsmåde til at indhente et prøveabonnement på Office 36
 5. Vælg Prøv nu på skærmbilledet med ordrebekræftelsen.
 6. Vælg Fortsæt på ordrekvitteringen.
 
-## <a name="purchasing-power-bi-pro"></a>Køb Power BI Pro
+## <a name="purchasing-power-bi-pro"></a>Køb af Power BI Pro
 
 Du kan købe Power BI Pro gennem Microsoft Office 365 eller gennem en certificeret Microsoft-partner. Du kan finde flere oplysninger om, hvordan du køber Power BI Pro, under [Køb Power BI Pro](service-admin-purchasing-power-bi-pro.md).
 

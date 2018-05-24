@@ -191,7 +191,7 @@ Power BI Embedded konvergeres med Power BI-tjenesten og købes, klargøres og ad
 **Hvilke ændringer foretages af Power BI Desktop?**  
 Der er ikke foretaget ændringer af Power BI Desktop.
 
-## <a name="power-bi-report-server"></a>Power BI Report Server
+## <a name="power-bi-report-server"></a>Power BI-rapportserver
 **Hvorfor er Power BI Report server inkluderet i Power BI Premium i stedet for at blive solgt som et separat produkt?**  
 Power BI Premium gør det muligt at have BI-aktiver i det lokale miljø sammen med Power BI Report Server. Power BI Report Server er en server i det lokale miljø-server, der muliggør installation og distribution af interaktive rapporter i Power BI og sideinddelte rapporter inden for organisationens firewalls grænser. Med Power BI Premium kan det samme antal virtuelle kerner, som en organisation klargør i clouden, installeres i det lokale miljø via Power BI Report Server uden at skulle opdele kapaciteten. Organisationer kan vælge Power BI i clouden eller vælge at beholde rapporter i det lokale miljø med Power BI Report Server og flytte til clouden i eget tempo.
 

@@ -7,16 +7,16 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 05/20/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: c90ca6fa46bd9f00786423cad6e8fdfcaf82e1f8
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 1133c524999dcc00c81ff163fe7c6777f6b9f817
+ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på analyse af salgsmuligheder til Power BI: Få en introduktion
+# <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på analyse af salgsmuligheder til Power BI: Tag en rundvisning
 
 ## <a name="overview-of-the-opportunity-analysis-sample"></a>Oversigt over eksemplet på analyse af salgsmuligheder
 **Eksempel på analyse af salgsmuligheder** indeholder et dashboard (og en tilknyttet rapport) for en softwarevirksomhed, der har 2 salgskanaler: *direkte* og *partner*. Salgschefen har oprettet dette dashboard for at spore muligheder og omsætning efter område, handlens størrelse samt kanal.
@@ -37,7 +37,7 @@ Dette eksempel er en del af en række, der illustrerer, hvordan du kan bruge Pow
 
 ## <a name="prerequisites"></a>Forudsætninger
 
- Før du kan bruge eksemplet, skal du først downloade det som en [indholdspakke](https://docs.microsoft.com/en-us/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample), [.pbix-fil](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity Analysis Sample PBIX.pbix) eller [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529782).
+ Før du kan bruge eksemplet, skal du først downloade det som en [indholdspakke](https://docs.microsoft.com/en-us/power-bi/sample-opportunity-analysis#get-the-content-pack-for-this-sample), [.pbix-fil](http://download.microsoft.com/download/9/1/5/915ABCFA-7125-4D85-A7BD-05645BD95BD8/Opportunity-Analysis-Sample-PBIX.pbix) eller [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529782).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Hent indholdspakken for dette eksempel
 

@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/17/2018
 ---
-# <a name="optimize-your-data-for-power-bi-quick-insights"></a>Optimer dine data til Power BI Quick Insights
+# <a name="optimize-your-data-for-power-bi-quick-insights"></a>Optimer dine data til Power BI Hurtig indsigt
 Vil du forbedre Quick Insights-resultater?  Hvis du er ejer af datasæt, skal du prøve følgende:
 
 * Skjul eller vis kolonner i dit datasæt. Power BI Quick Insights søger ikke i skjulte kolonner.  Derfor skal du skjule duplikerede eller unødvendige kolonner og vise interessante kolonner.

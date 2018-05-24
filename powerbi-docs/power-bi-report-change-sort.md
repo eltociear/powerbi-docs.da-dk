@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/17/2018
 ---
-# <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Rediger, hvordan et diagram sorteres i en rapport i Power BI
+# <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Rediger den måde, et diagram sorteres på, i en Power BI-rapport
 I en Power BI-rapport kan du sortere de fleste visualiseringer alfabetisk efter navnene på kategorierne i diagrammet eller efter de numeriske værdier for hver kategori. Dette diagram er f.eks. sorteret efter lagernavn.
 
 ![](media/power-bi-report-change-sort/pbi_chartsortcategory.png)

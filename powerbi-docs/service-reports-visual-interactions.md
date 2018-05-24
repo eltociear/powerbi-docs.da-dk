@@ -1,5 +1,5 @@
 ---
-title: Rediger, hvordan visualiseringer interagerer i en rapport
+title: Rediger den måde, visualiseringer interagerer i en rapport
 description: Dokumentation til, hvordan visuelle interaktioner indstilles i en rapport i Microsoft Power BI-tjenesten og i en Power BI Desktop-rapport.
 author: mihart
 manager: kfile

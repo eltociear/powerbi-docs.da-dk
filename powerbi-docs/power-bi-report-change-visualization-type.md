@@ -16,7 +16,7 @@ ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/17/2018
 ---
-# <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Skift visualiseringstype i en Power BI-rapport
+# <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Rediger typen af visualisering i en Power BI-rapport
 Prøv forskellige visualiseringstyper i Power BI-tjenesten og Power BI Desktop for at se, hvilken type der illustrerer dine data bedst. 
 
 1. Åbn en rapport, der allerede har mindst én visualisering.   
