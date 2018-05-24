@@ -1,27 +1,19 @@
 ---
 title: Registrer en app i Azure AD
-description: "Gennemgang – overfør data til et datasæt – registrer en app i Azure AD"
-services: powerbi
-documentationcenter: 
+description: Gennemgang – overfør data til et datasæt – registrer en app i Azure AD
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 48ab2a51a479269b8846288b64089964a0544681
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: 660f79eab32ae7ade5cea990c6fc152bb9507297
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="step-1-register-an-app-with-azure-ad"></a>Trin 1: Registrer en app i Azure AD
 Denne artikel er en del af en trinvis vejledning til, hvordan du [overfører data til et datasæt](walkthrough-push-data.md).
@@ -39,7 +31,7 @@ Nedenfor kan du se, hvordan du registrerer en app i Azure AD.
 2. Klik på **Log på med din eksisterende konto**, og log på din Power BI-konto.
 3. Angiv et **navn på appen**, f.eks. "Prøveapp til overførsel af data".
 4. I **Apptype** skal du vælge **Oprindelige app**.
-5. Angiv en **URL-adresse til omdirigering**, f.eks **https://login.live.com/oauth20_desktop.srf**. Når du har en **oprindelig klientapp**, giver en URI til omdirigering **Azure AD** flere oplysninger om den app, der skal godkendes. Standard-URI'en for en klientapp er https://login.live.com/oauth20_desktop.srf.
+5. Angiv en **URL-adresse til omdirigering**, f.eks **https://login.live.com/oauth20_desktop.srf**. Når du har en **oprindelig klientapp**, giver en URI til omdirigering **Azure AD** flere oplysninger om den app, der skal godkendes. Den Uri, der er standard for en klient-app, er https://login.live.com/oauth20_desktop.srf.
 6. I **Vælg de API'er, der skal opnås adgang til** skal du vælge **Læs og skriv alle datasæt**. Hvis du vil se en liste over alle tilladelser i Power BI-appen, skal du gå til [Tilladelser i Power BI](power-bi-permissions.md).
 7. Klik på **Registrer app**, og gem det **klient-id**, der oprettes. Et **klient-id** identificerer appen i Azure AD.
 

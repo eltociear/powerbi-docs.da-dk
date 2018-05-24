@@ -1,27 +1,19 @@
 ---
-title: "Brug udviklerværktøjer til at oprette brugerdefinerede visuals"
-description: "Du kan bruge visuals til at opfylde dine brugeres behov og matche din apps design. Få mere at vide om, hvordan du opretter brugerdefinerede visuals til Power BI med udviklerværktøjer."
-services: powerbi
-documentationcenter: 
+title: Brug udviklerværktøjer til at oprette brugerdefinerede visuals
+description: Du kan bruge visuals til at opfylde dine brugeres behov og matche din apps design. Få mere at vide om, hvordan du opretter brugerdefinerede visuals til Power BI med udviklerværktøjer.
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: c7ed6a9b8acc74c9d4e39ff21a10624a208847f4
-ms.sourcegitcommit: 5e1f7d2673efe25c47b9b9f315011055bfe92c8f
+ms.openlocfilehash: 8b5da248b6992c8ae3e8d30caf4f0fc6c47bdcf5
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Brug udviklerværktøjer til at oprette brugerdefinerede visuals
 Du kan bruge visuals til at opfylde dine brugeres behov og matche din apps design. Få mere at vide om, hvordan du opretter brugerdefinerede visuals til Power BI med udviklerværktøjer.
@@ -87,7 +79,7 @@ For at oprette et brugerdefineret visual skal du installere NodeJS. NodeJS er p�
     --install-cert  Install localhost certificate
     </code></pre>
 
-<a name"ssl-setup"></a>
+<a name="ssl-setup"></a>
 
 ### <a name="server-certificate-setup"></a>Server Certificate-opsætning
 For at aktivere en direkte eksempelvisning af dine visuals skal du bruge en https-server, der er tillid til. Før du kan starte, skal du installere et SSL-certifikat, som vil give visuelle aktiver adgang til at blive indlæst i din webbrowser. 
@@ -97,9 +89,24 @@ For at aktivere en direkte eksempelvisning af dine visuals skal du bruge en http
 > 
 > 
 
-Du skal køre den følgende kommando for at *tilføje* et certifikat.
+Du skal køre følgende kommando for at *oprette* et certifikat.
+
+    pbiviz --create-cert
+
+> [!NOTE]
+> Du får vist en meddelelse med placeringsstien til certifikatet og et nyligt oprettet adgangsudtryk.
+> 
+> 
+
+
+Kør følgende kommandeo for at *installere* certifikatet.
 
     pbiviz --install-cert
+    
+> [!NOTE]
+> Du bør få vist en meddelelse om, at du skal bruge det nyligt oprettede adgangsudtryk til at installere et PFX-certifikat.
+> 
+> 
 
 **Windows OS**
 

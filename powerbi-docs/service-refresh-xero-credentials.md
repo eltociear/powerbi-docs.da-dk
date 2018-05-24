@@ -1,28 +1,20 @@
 ---
-title: "Sådan opdaterer du dine legitimationsoplysninger til Xero-indholdspakken"
-description: "Hvis du bruger Xero Power BI-indholdspakken, kan du have oplevet et problem med indholdspakkens daglige opdatering på grund af en nylig hændelse på Power BI-tjenesten."
-services: powerbi
-documentationcenter: 
+title: Sådan opdaterer du dine legitimationsoplysninger til Xero-indholdspakken
+description: Hvis du bruger Xero Power BI-indholdspakken, kan du have oplevet et problem med indholdspakkens daglige opdatering på grund af en nylig hændelse på Power BI-tjenesten.
 author: SarinaJoan
 manager: kfile
-backup: maggiesMSFT
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: sarinas
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 2be07994ebd136fa3cd99cd3d64967618cde7258
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5978443f05e039c34ff023f235624968b5eb8a3e
+ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-to-refresh-your-xero-content-pack-credentials-if-refresh-failed"></a>Sådan opdaterer du dine legitimationsoplysninger til Xero-indholdspakken, hvis opdatering mislykkedes
 Hvis du bruger Xero Power BI-indholdspakken, kan du have oplevet nogle problemer med indholdspakkens daglige opdatering på grund af en nylig hændelse på Power BI-tjenesten.

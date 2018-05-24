@@ -1,28 +1,20 @@
 ---
 title: Opret forbindelse til en Impala-database i Power BI Desktop
 description: Du kan nemt oprette forbindelse til og bruge en Impala-database i Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bef087b485573ba9a629887bfb05d875c88c8b4c
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.openlocfilehash: 9b00120a0c4c22ba8f031663ab19d94d2c482d3b
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="connect-to-an-impala-database-in-power-bi-desktop"></a>Opret forbindelse til en Impala-database i Power BI Desktop
 I Power BI Desktop kan du oprette forbindelse til en **Impala**-database og bruge de underliggende data på samme måde som enhver anden datakilde i Power BI Desktop.
@@ -36,7 +28,7 @@ I vinduet **Impala**, der åbnes, skal du skrive eller indsætte navnet på din 
 
 ![](media/desktop-connect-impala/connect_impala_3a.png)
 
-Når du bliver spurgt, skal du skrive dit brugernavn og din adgangskode eller oprette forbindelse anonymt – begge metoder understøttes.
+Angiv dine legitimationsoplysninger, når du bliver bedt om det, eller opret forbindelse anonymt. Impala-connectoren understøtter Anonymouse, Basic (brugernavn + adgangskode) og Windows-godkendelse.
 
 ![](media/desktop-connect-impala/connect_impala_4.png)
 
@@ -52,7 +44,7 @@ Når du har oprettet forbindelse, vises der et vindue af typen **Navigator**, hv
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 Der er et par begrænsninger og overvejelser, du skal være opmærksom på i forbindelse med **Impala**-forbindelsen:
 
-* Fremtidige planer omfatter aktivering af understøttelse af opdatering ved hjælp af **Power BI Gateway**.
+* Connectoren Impala understøttes i datagatewayen i det lokale miljø vha. en af de tre understøttede godkendelsesmetoder.
 
 ## <a name="next-steps"></a>Næste trin
 Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:

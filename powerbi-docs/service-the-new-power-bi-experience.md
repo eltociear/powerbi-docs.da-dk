@@ -8,14 +8,14 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: quickstart
-ms.date: 05/07/2018
+ms.date: 05/18/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 157103ff224cf0d71e2ca14106903b9c89fdc3d4
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 004b9c921de9e94cb52f90cdea4815acd6162175
+ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Hurtig introduktion – Navigation i Power BI-tjenesten
 
@@ -125,6 +125,19 @@ Du kan også sortere indholdet efter navn eller ejer.
 ![sortér indhold](media/service-the-new-power-bi-experience/power-bi-sort.png)
 
 Hvis du vil vide mere, kan du se [Power BI-navigation: søg, sortér, filtrer](service-navigation-search-filter-sort.md)
+
+## <a name="clean-up-resources"></a>Fjern ressourcer
+Når du er færdig med denne hurtige introduktion, kan du slette eksemplet Analyse af detailhandel i form af et dashboard, en rapport og et datasæt, hvis du vil.
+
+1. Åbn Power BI-tjenesten (app.powerbi.com), og log på.    
+2. Vælg **Arbejdsområder > Mit arbejdsområde** i navigationsruden til venstre.  
+    Har du bemærket, at den gul stjerne angiver, at der er tale om en favorit?    
+3. På fanen **Dashboards** skal du vælge skraldespandsikonet **Slet** ud for dashboardet Analyse af detailhandel.    
+
+    ![slet dashboard](media/service-the-new-power-bi-experience/power-bi-cleanup.png)
+
+4. Vælg fanen **Rapporter**, og gør det samme for rapporten Analyse af detailhandel.
+1. Vælg fanen **Datasæt**, og gør det samme for datasættet Analyse af detailhandel.
 
 ## <a name="next-steps"></a>Næste trin
 

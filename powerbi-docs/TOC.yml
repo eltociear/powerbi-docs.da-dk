@@ -846,7 +846,9 @@
           items:
             - name: Kom i gang med Power BI til Android-app
               href: mobile-android-app-get-started.md
-            - name: Løs 'der er ikke tillid til din virksomheds SSL-certifikat'
+            - name: Løsning af "Der er ikke tillid til din virksomheds SSL-certifikat"
+              href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
+            - name: Løsning af "Det er nødvendigt at opdatere Android System Webview"
               href: mobile-android-error-update-android-system-webview.md
         - name: iOS
           items:

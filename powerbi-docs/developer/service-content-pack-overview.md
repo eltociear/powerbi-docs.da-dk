@@ -1,27 +1,19 @@
 ---
 title: Oversigt over indholdspakkeprogrammet for Power BI-tjenesten
 description: Program for indholdspakkecertificering
-services: powerbi
-documentationcenter: 
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 02/20/2018
 ms.author: maghan
-ms.openlocfilehash: 2cc78b3d2a877e465d5f4bdc67f501b7de87f88e
-ms.sourcegitcommit: 20dd809a2ef8c0d6c6f677baadb5f57f41438cbe
+ms.openlocfilehash: cfb9727a41d602ce14bfd2a403a87e82d2f0e94d
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Oversigt over indholdspakkeprogrammet for Power BI-tjenesten
 En indholdspakke er out-of-box-indhold, der gør det muligt for brugerne øjeblikkeligt at få indsigt i data fra en kilde. En indholdspakke fokuserer sædvanligvis på et bestemt forretningsscenario og giver indsigt i data for en rolle, et domæne eller en arbejdsproces.
@@ -85,7 +77,7 @@ Publicerede indholdspakker kan opdateres én gang om måneden. Opdateringsanmodn
 Du kan sende dine spørgsmål via mail til [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com)
 
 ## <a name="support"></a>Support
-Hvis du får brug for support, mens du udvikler, skal du bruge [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Dette websted overvåges og administreres. Kundehændelser finder hurtigt vej til det relevante team.
+Hvis du vil have support under udvikling, skal du bruge [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Dette websted overvåges og administreres. Kundehændelser finder hurtigt vej til det relevante team.
 
 ## <a name="next-step"></a>Næste trin
 [Oprettelse](template-content-pack-authoring.md)

@@ -1,27 +1,19 @@
 ---
-title: "Introduktion til Power BI-mobilappen på en iPad"
-description: "Få mere at vide om, hvordan Microsoft Power BI til iOS-appen på iPad giver dig Power BI med mobiladgang til forretningsoplysninger lokalt og i clouden."
-services: powerbi
-documentationcenter: 
+title: Introduktion til Power BI-mobilappen på en iPad
+description: Få mere at vide om, hvordan Microsoft Power BI til iOS-appen på iPad giver dig Power BI med mobiladgang til forretningsoplysninger lokalt og i clouden.
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: identified
-qualitydate: 08/08/2016
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 01/25/2018
 ms.author: maggies
-ms.openlocfilehash: a35197e7775fb1b0dfec5c0905706f44d6f14494
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: ded3ad829a0c9a2d4892a5a06250f60a93662c61
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-an-ipad"></a>Introduktion til Power BI-mobilappen på en iPad
 Microsoft Power BI til iOS på iPad giver den mobile BI-oplevelse til Power BI, Power BI Report Server og Reporting Services. Få vist og interager med dit firmas dashboards lokalt og i clouden overalt, med direkte, berøringsfølsom mobiladgang. Udforsk dataene i dashboards, og del dem med dine kollegaer i mails eller sms'er. 
@@ -46,7 +38,7 @@ Find ud af, [hvad der er nyt i Power Bi-mobilapperne](mobile-whats-new-in-the-mo
 > 
 
 ## <a name="sign-up-for-the-power-bi-service"></a>Tilmeld dig Power BI-tjenesten
-Gå til Power BI (https://powerbi.com) for at tilmelde dig tjenesten, hvis du ikke allerede har gjort det. Det er gratis.
+Gå til Power BI (https://powerbi.com)) for at tilmelde dig tjenesten, hvis du ikke allerede har gjort det. Det er gratis.
 
 ## <a name="get-started-with-the-power-bi-app"></a>Introduktion til Power BI-appen
 1. Åbn Power BI-appen i iPad.

@@ -1,34 +1,26 @@
 ---
 title: Udforsk dine data i Power BI-mobilappen til iOS-enheder
-description: "Få vist og arbejd med dine dashboards og rapporter i Power BI og mobilrapporter i Reporting Services og KPI'er på din iPad, iPhone, Apple Watch og iPod Touch."
-services: powerbi
-documentationcenter: 
+description: Få vist og arbejd med dine dashboards og rapporter i Power BI og mobilrapporter i Reporting Services og KPI'er på din iPad, iPhone, Apple Watch og iPod Touch.
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: 0b09706b8d8f7f4dbf9c2f8d3f6fc844383ce6be
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: b0785555e288084f97d06d05161ebef78d21731c
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="explore-your-data-on-the-power-bi-mobile-app-for-ios-devices"></a>Udforsk dine data i Power BI-mobilappen til iOS-enheder
 Microsoft Power BI-appen til iOS giver mobil BI-oplevelse på iPad, iPhone, Apple Watch og iPod Touch. Apps giver live, touchaktiveret mobil adgang til dine vigtige forretningsoplysninger, så du kan få vist og interagere med din organisations dashboards og rapporter i Power BI og mobilrapporter i Reporting Services og KPI'er fra et hvilket som helst sted. Udforsk dataene i dine dashboards, og del dem med dine kollegaer i mails eller tekstmeddelelser.
 
 ![iPhone og iPad](media/mobile-ios-ipad-iphone-apps/pbi_ipad_iphonedevices.png)
 
-Gå til Power BI (https://powerbi.com) for at tilmelde dig Power BI-tjenesten.
+Gå til Power BI (https://powerbi.com)) for at tilmelde dig Power BI-tjenesten.
 
 Find ud af, [hvad der er nyt i Power BI-mobilappsene](mobile-whats-new-in-the-mobile-apps.md).
 

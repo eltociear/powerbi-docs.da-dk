@@ -1,38 +1,22 @@
 ---
-title: 'Fejl: '
-corporate: 
-ssl: 
-certificate: 
-is: 
-untrusted": 
-'-': 
-power: 
-bi": 
-description: "Når du logger på Power BI-appen til Android, kan du få vist meddelelsen \"Godkendelsen lykkedes ikke, da denne enhed ikke har tillid til din virksomheds SSL-certifikat"
-.": 
-services: powerbi
-documentationcenter: 
+title: Løsning af "Der er ikke tillid til din virksomheds SSL-certifikat"
+description: Når du logger på Power BI-appen til Android, kan du få vist meddelelsen "Godkendelsen lykkedes ikke, da denne enhed ikke har tillid til din virksomheds SSL-certifikat
+.": ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 10/13/2017
+ms.component: powerbi-mobile
+ms.topic: conceptual
+ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 4ef29c0cab96e21045f30805d7445aa34d37697a
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 494e148a62675aab1a6e799c4e4b61f022483d9f
+ms.sourcegitcommit: aa8045e42b979206c600bce4a8d17de1f0620462
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="error-corporate-ssl-certificate-is-untrusted---power-bi"></a>Fejl: "Der er ikke tillid til din virksomheds SSL-certifikat" – Power BI
+# <a name="fixing-corporate-ssl-certificate-is-untrusted---power-bi"></a>Løsning af "Der er ikke tillid til din virksomheds SSL-certifikat" – Power BI
 Når du logger på Microsoft Power BI-appen til Android, kan du få vist meddelelsen "Godkendelsen lykkedes ikke, da denne enhed ikke har tillid til din virksomheds SSL-certifikat. Kontakt virksomhedens it-administrator." 
 
 Løsningen afhænger af, hvilket operativsystem du har på din Android-enhed, men der er en række andre problemer, der kan medføre denne fejl.
@@ -60,5 +44,5 @@ Hvis du bruger en brugerdefineret godkendelsesserver, kan det skyldes, at certif
 
 ## <a name="next-steps"></a>Næste trin
 * [Download Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867) fra Android App Store.
-* Har du spørgsmål? [Prøv at spørge Power BI-communityet](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

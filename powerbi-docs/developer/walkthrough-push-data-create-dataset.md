@@ -1,34 +1,26 @@
 ---
-title: "Opret et datasæt"
-description: "Gennemgang – Send data til et datasæt – Opret et datasæt i Power BI"
-services: powerbi
-documentationcenter: 
+title: Opret et datasæt
+description: Gennemgang – Send data til et datasæt – Opret et datasæt i Power BI
 author: markingmyname
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 31677a3d92ece6944825eccad190863f67c3a145
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.openlocfilehash: c94f0a94cfc2e59942a17b542efb7b1bb641174c
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Trin 3: Opret et datasæt i Power BI
 Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
 
 I **trin 2** af Send data til et datasæt, [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md), fik du et token til godkendelse til **Azure AD**. I dette trin skal du bruge dette token for at kalde handlingen [Opret datasæt](https://msdn.microsoft.com/library/mt203562.aspx).
 
-Du kalder en REST-ressource ved at bruge en URL-adresse, som finder ressourcen, og sende en JSON-streng (JavaScript Object Notation), som beskriver datasættet, til Power BI-tjenesteressourcen. En REST-ressource identificerer den del af Power BI-tjenesten, som du vil arbejde med. For at sende data til datasættet skal målressourcen være et **datasæt**. URL-adressen, der identificerer et datasæt, er https://api.PowerBI.com/v1.0/myorg/datasets. Hvis du sender data i en gruppe, er URL-adressen https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets.
+Du kalder en REST-ressource ved at bruge en URL-adresse, som finder ressourcen, og sende en JSON-streng (JavaScript Object Notation), som beskriver datasættet, til Power BI-tjenesteressourcen. En REST-ressource identificerer den del af Power BI-tjenesten, som du vil arbejde med. For at sende data til datasættet skal målressourcen være et **datasæt**. Den URL-adresse, der identificerer et datasæt, er https://api.PowerBI.com/v1.0/myorg/datasets. Hvis du pusher data i en gruppe, er URL-adressen https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets.
 
 For at godkende en Power BI REST-handling skal du føje det token, du fik under [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md), til en anmodningsheader:
 

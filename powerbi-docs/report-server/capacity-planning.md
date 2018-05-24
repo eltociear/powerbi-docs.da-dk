@@ -1,27 +1,19 @@
 ---
-title: "Vejledning i kapacitetsplanlægning i Power BI-rapportserver"
-description: "Denne rapport omfatter en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af gennemførslen af belastningstest ved forskellige arbejdsbelastninger. "
-services: powerbi
-documentationcenter: 
+title: Vejledning i kapacitetsplanlægning i Power BI-rapportserver
+description: 'Denne rapport omfatter en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af gennemførslen af belastningstest ved forskellige arbejdsbelastninger. '
 author: parthsha
 manager: kfile
-backup: maghan
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: maghan
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
-ms.openlocfilehash: 36d12e520cd53abc0159e698f3f469f62f884c95
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 94f137f0b8627bf34e78d9ac36574c64dd5d4752
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Vejledning i kapacitetsplanlægning i Power BI-rapportserver
 Power BI-rapportserver er en selvbetjenings-BI og virksomhedsrapporteringsløsning, som kunder kan installere i deres lokale miljø, bag deres firewall. Løsningen kombinerer den interaktive rapporteringskapacitet i Power BI Desktop med serverplatformen i SQL Server Reporting Services i det lokale miljø. I takt med virksomheders stigende og omfattende brug af analyser og rapportering, kan det være en udfordring at udarbejde et budget, der tager højde for de skalerbare løsninger til hardwareinfrastrukturen og de softwarelicenser, der kræves til en virksomheds brugergrundlag. Denne rapports primære sigte er at give en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af adskillelige gennemførsler af belastningstest ved forskellige arbejdsbelastninger i forhold til en rapportserver. Organisationers rapporterings-, forespørgsels- og brugsmønstre varierer betydeligt, men resultaterne forelagt i denne rapport kan, sammen med de anvendte faktiske test og en detaljeret beskrivelse af deres gennemførselsmetode, bruges som referencepunkt for alle, der er i den tidlige planlægningsfase i processen med at installere Power BI-rapportserver.
@@ -57,7 +49,7 @@ Installationen af Power BI-rapportserveren omfattede de følgende virtuelle mask
 Se tillæg 1.1 Power BI-rapportservertopologi og tillæg 1.2 Konfiguration af Power BI-rapportservers virtuelle maskine for en grundig beskrivelse af konfigurationen af hver virtuelle maskine, der bruges i topologien.
 
 ### <a name="tests"></a>Test
-De brugte test i belastningstestkørslerne er offentligt tilgængelige i et GitHub-projekt kaldet Reporting Services LoadTest (se https://github.com/Microsoft/Reporting-Services-LoadTest). Dette værktøj tillader brugere at granske egenskaber inden for ydeevne, pålidelighed, skalerbarhed og gendannelse hos SQL Server Reporting Services og Power BI-rapportserveren. Dette projekt består af fire grupper prøvesager:
+De brugte test i belastningstestkørslerne er offentligt tilgængelige i et GitHub-projekt kaldet Reporting Services LoadTest (Se https://github.com/Microsoft/Reporting-Services-LoadTest). Dette værktøj tillader brugere at granske egenskaber inden for ydeevne, pålidelighed, skalerbarhed og gendannelse hos SQL Server Reporting Services og Power BI-rapportserveren. Dette projekt består af fire grupper prøvesager:
 
 * Test med simuleret gengivelse af Power BI-rapporter,
 * Test med simuleret gengivelse af mobile rapporter,
@@ -121,7 +113,7 @@ De resultater, der er fremlagt i denne rapport, er opnået ved at udføre en spe
 ### <a name="1-topology"></a>1 Topologi
 **1.1 Power BI-rapportservertopologi**
 
-For udelukkende at fokusere på Power BI-rapportserverens funktionsmåde under forskellige konfigurationer, så blev der brugt en fast VM-konfiguration for hver type computer (med undtagelse af computeren der var vært for Power BI-rapportserveren). Hver computer blev klargjort i overensstemmelse med anden generation (v2) D Serie-computere med Premium Storage-harddiske. Du kan finde detaljerede oplysninger om hver VM-størrelse i afsnittet "Generelt" på adressen https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
+For udelukkende at fokusere på Power BI-rapportserverens funktionsmåde under forskellige konfigurationer, så blev der brugt en fast VM-konfiguration for hver type computer (med undtagelse af computeren der var vært for Power BI-rapportserveren). Hver computer blev klargjort i overensstemmelse med anden generation (v2) D Serie-computere med Premium Storage-harddiske. Du kan finde detaljerede oplysninger om størrelsen af hver enkelt VM i afsnittet "Generel" på https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
 
 | Type af virtuel maskine | Processor | Hukommelse | Azure VM-størrelse |
 | --- | --- | --- | --- |
@@ -131,7 +123,7 @@ For udelukkende at fokusere på Power BI-rapportserverens funktionsmåde under f
 
 **1.2 Konfiguration af Power BI-rapportservers virtuelle maskine** 
 
-Forskellige konfigurationer af processor og hukommelse er blevet brugt til den virtuelle maskine, der hoster Power BI-rapportserveren. Til forskel fra andre VM'er er denne computer blevet klargjort i overensstemmelse med tredje generation (v3) D Serie-computere med Premium Storage-harddiske. Du kan finde detaljerede oplysninger om hver VM-størrelse i afsnittet "Generelt" på adressen https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
+Forskellige konfigurationer af processor og hukommelse er blevet brugt til den virtuelle maskine, der hoster Power BI-rapportserveren. Til forskel fra andre VM'er er denne computer blevet klargjort i overensstemmelse med tredje generation (v3) D Serie-computere med Premium Storage-harddiske. Du kan finde detaljerede oplysninger om størrelsen af denne VM i afsnittet "Generel" på https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/.
 
 | Virtuel maskine | Processor | Hukommelse | Azure VM-størrelse |
 | --- | --- | --- | --- |
@@ -144,8 +136,8 @@ Hvis du vil køre værktøjet Reporting Services LoadTest på din eller en Micro
 1. Klon Reporting Services LoadTest-projektet fra GitHub (https://github.com/Microsoft/Reporting-Services-LoadTest).
 2. Du kan finde en løsningsfil med navnet RSLoadTests.sln i projektmappen. Åbn denne fil i Visual Studio 2015 eller nyere.
 3. Find ud af, om du vil køre dette værktøj på installationen af Power BI-rapportserveren eller på en installation af Power BI-rapportserveren i Microsoft Azure. Hvis du vil køre den på din egen installation, skal du gå til trin 5.
-4. Følg instruktionerne på adressen https://github.com/Microsoft/Reporting-Services-LoadTest#create-a-sql-server-reporting-services-load-environment-in-azure for at oprette et Power BI-rapportservermiljø i Azure.
-5. Følg vejledningen på adressen https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution , når du er færdig med at installere miljøet.
+4. Følg instruktionerne på https://github.com/Microsoft/Reporting-Services-LoadTest#create-a-sql-server-reporting-services-load-environment-in-azure for at oprette et Power BI-rapportservermiljø på Azure.
+5. Når du har udrullet miljøet, skal du følge instruktionerne på https://github.com/Microsoft/Reporting-Services-LoadTest#load-test-execution for at køre de relevante tests.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

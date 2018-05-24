@@ -1,27 +1,19 @@
 ---
-title: "Kom i gang med Power BI-mobilappen på en iPhone"
-description: "Få mere at vide om, hvordan Microsoft Power BI til iOS-appen på iPhone giver dig Power BI med mobiladgang til oplysninger i det lokale miljø i virksomheden og i clouden."
-services: powerbi
-documentationcenter: 
+title: Kom i gang med Power BI-mobilappen på en iPhone
+description: Få mere at vide om, hvordan Microsoft Power BI til iOS-appen på iPhone giver dig Power BI med mobiladgang til oplysninger i det lokale miljø i virksomheden og i clouden.
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: complete
-qualitydate: 05/04/2016
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-mobile
+ms.topic: conceptual
 ms.date: 01/25/2018
 ms.author: maggies
-ms.openlocfilehash: 9a2f381ea97fb62d85841cbfcace8352007dd60b
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 9a3177dc0fe80ebc6c1041ce64b1186cb5865e37
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-an-iphone-or-ipod-touch"></a>Kom i gang med Power BI-mobilappen på iPhone eller iPod Touch
 Microsoft Power BI til iOS-appen på iPhone eller iPod Touch leverer BI-mobiloplevelsen til Power BI, Power BI-rapportserver og Reporting Services. Få vist og interagér med dit firmas dashboards i det lokale miljø og i clouden overalt med direkte, berøringsfølsom mobiladgang. Udforsk data i dashboards, og del dem med dine kollegaer i mails eller sms-beskeder. Og hold dig ajour med dine mest tidsfølsomme data på dit [Apple Watch](mobile-apple-watch.md).  
@@ -46,7 +38,7 @@ Find ud af, [hvad der er nyt i Power Bi-mobilapperne](mobile-whats-new-in-the-mo
 > 
 
 ## <a name="sign-up-for-the-power-bi-service"></a>Tilmeld dig Power BI-tjenesten
-Gå til Power BI (https://powerbi.com) for at hente tjenesten, hvis du ikke allerede har gjort det. Det er gratis.
+Gå til Power BI (https://powerbi.com)) for tjenesten, hvis du ikke allerede har gjort det. Det er gratis.
 
 ## <a name="get-started-with-the-power-bi-app"></a>Kom i gang med Power BI-appen
 1. Åbn Power BI-appen på din iPhone.
