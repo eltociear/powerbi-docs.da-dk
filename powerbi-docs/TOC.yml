@@ -96,6 +96,8 @@
                   href: service-print.md
                 - name: Abonner på en rapport eller et dashboard
                   href: service-report-subscribe.md
+                - name: Mange måder at åbne en rapport på
+                  href: service-report-open.md
                 - name: Omdøb indhold i Power BI
                   href: service-rename.md
                 - name: Få vist dashboards og rapporter i fuld skærmtilstand (tv-tilstand)
