@@ -1,28 +1,20 @@
 ---
 title: Installér Power BI Desktop optimeret til Power BI-rapportserver
 description: Se, hvordan du kan installere Power BI Desktop optimeret til Power BI-rapportserver
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 03/22/2018
 ms.author: maggies
-ms.openlocfilehash: b67cfbcb495fef45ec3f44ceab77b794a9110617
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 2061bb5afde8c19693eb565b298fabedebae89ac
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33813685"
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34310400"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installér Power BI Desktop optimeret til Power BI-rapportserver
 Se, hvordan du kan installere Power BI Desktop optimeret til Power BI-rapportserver.
@@ -112,7 +104,8 @@ Nu, hvor du har installeret Power BI Desktop, kan du begynde at oprette Power BI
 
 [Opret en Power BI-rapport til Power BI-rapportserveren](quickstart-create-powerbi-report.md)  
 [Kom i gang med Power BI Desktop](../desktop-getting-started.md)  
-[Oversigt over udviklerhåndbog, Power BI-rapportserver](user-handbook-overview.md)
+Guidet læring: [Introduktion til Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)
+[Oversigt over brugerhåndbog, Power BI-rapportserver](user-handbook-overview.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

@@ -1,29 +1,20 @@
 ---
 title: 'Selvstudium: Udforsk Power BI-rapportserver i en VM'
 description: I dette selvstudium skal du oprette en virtuel maskine med Power BI-rapportserveren, der allerede er installeret, og udforske webportalen.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
-ms.component: powerbi-report-server
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
+ms.component: powerbi-report-server
 ms.topic: tutorial
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 05/05/2018
+ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: a77dceac19368fc7997f79513b0b5f946a914dfc
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 38985014407a4d64998e25f6944f57aedcc67309
+ms.sourcegitcommit: aa8045e42b979206c600bce4a8d17de1f0620462
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33813938"
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34444997"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Selvstudium: Udforsk webportalen til Power BI-rapportserver i en VM
 I dette selvstudium skal du oprette en virtuel Azure-maskine med Power BI-rapportserver, der allerede er installeret, så du kan få vist, redigere og administrere eksempler på Power BI og sideinddelte rapporter samt KPI'er.
@@ -58,6 +49,8 @@ Power BI-teamet har heldigvis oprettet en VM, der leveres sammen med Power BI-ra
 5. Opret et brugernavn og en adgangskode.
 
 6. For **Ressourcegruppe** skal du bevare **Opret ny** og kalde den **reportserverresourcegroup**.
+
+    Hvis du gennemgår selvstudiet mere end én gang, skal du give ressourcegruppen et andet navn efter den første gang. Du kan ikke bruge samme navn på ressourcegruppen to gange i ét abonnement. 
 
 7. Bevar de andre standarder > **OK**.
 
@@ -166,6 +159,8 @@ Du kan få vist og interagere med Power BI-rapporter på webportalen og starte P
 
     ![Power BI Desktop](media/tutorial-explore-report-server-web-portal/power-bi-report-server-power-bi-desktop.png)
 
+     Brug den version af Power BI Desktop, der er installeret på VM'en. Du kan ikke skifte mellem domæner for at uploade en rapport.
+
 3. Udvid tabellen Kunder i ruden Felter, og træk feltet Beskæftigelse til Filtre på rapporteringsniveau.
 
     ![Træk et felt til ruden Filtre](media/tutorial-explore-report-server-web-portal/power-bi-report-server-desktop-filter.png)
@@ -252,7 +247,9 @@ Nu, hvor du er færdig med dette selvstudium, kan du slette ressourcegruppen, de
 
 ## <a name="next-steps"></a>Næste trin
 
-I dette selvstudium har du oprettet en VM med Power BI-rapportserveren. Du har prøvet nogle af funktionerne på webportalen, og du har åbnet en Power BI-rapport og en sideinddelt rapport i deres respektive editors. Du kan få mere at vide om, hvordan du opretter rapporter til Power BI-rapportserveren, ved at læse videre.
+I dette selvstudium har du oprettet en VM med Power BI-rapportserveren. Du har prøvet nogle af funktionerne på webportalen, og du har åbnet en Power BI-rapport og en sideinddelt rapport i deres respektive editors. Denne VM har SQL Server Analysis Services-datakilder installeret, så du kan prøve at oprette dine egne Power BI-rapporter og sideinddelte rapporter med de samme datakilder. 
+
+Du kan få mere at vide om, hvordan du opretter rapporter til Power BI-rapportserveren, ved at læse videre.
 
 > [!div class="nextstepaction"]
 > [Opret en Power BI-rapport til Power BI-rapportserveren](./quickstart-create-powerbi-report.md)
