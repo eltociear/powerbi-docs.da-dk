@@ -1,20 +1,20 @@
 ---
 title: Hvad kan udviklere bruge Power BI til?
 description: Power BI tilbyder en bred vifte af muligheder for udviklere. Det går fra integration til brugerdefinerede visualiseringer og streaming af datasæt.
-services: powerbi
 author: markingmyname
 ms.author: maghan
 ms.date: 05/03/2018
 ms.topic: overview
 ms.service: powerbi
+ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 473052ee652c1fd6e68294efdbd7334cbb2df714
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: ee9f5b2e89a1746267090da3485076d67a99d6f9
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33810960"
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34290562"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Hvad kan udviklere bruge Power BI til?
 

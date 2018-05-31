@@ -1,29 +1,21 @@
 ---
 title: Bedste praksis for design af rapporter og visuals (whitepaper)
 description: 'Whitepaper: Bedste praksis for at designe rapporter i Power BI'
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: ''
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 26d04c77967a8223672cbe174a3c45e6d12602ea
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 8716e6b5b75c7cd3db1b8daecfaae240f0647a50
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33813363"
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34297256"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Bedste praksis for design af rapporter og visuals
 <!-- Shared newnav Include -->

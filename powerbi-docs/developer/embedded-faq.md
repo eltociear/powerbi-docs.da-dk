@@ -1,28 +1,20 @@
 ---
 title: Ofte stillede spørgsmål om Power BI Embedded
 description: Gennemse en liste med ofte stillede spørgsmål og svar om Power BI Embedded.
-services: powerbi
-documentationcenter: ''
 author: markingmyname
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-developer
+ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: f2d457c04f9db2bdd57f363ccb0c09e2496aefd6
-ms.sourcegitcommit: 1c7780e0dfe0b6b8322e6fafdd0693177db455d2
+ms.openlocfilehash: 255efac5d5bf73bca3126f869d4c7434d5c6ef0f
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/14/2018
-ms.locfileid: "34163316"
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34289734"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -59,7 +51,7 @@ Der kan være situationer, hvor en ISV (typisk en større) ønsker at bruge en P
 
 ### <a name="how-many-embed-tokens-can-i-create"></a>Hvor mange integrerede tokens kan jeg oprette?
 
-Med en PRO-licens er integrerede tokens kun beregnet til udvikling og udviklingstest, så antallet af integrerede tokens, der kan genereres fra en Power BI-masterkonto, er begrænset. Du skal [købe en kapacitet](#technical) for at kunne integrere i et produktionsmiljø. Der er ingen grænse for hvor mange integrerede tokens, du kan generere, når der er købt en kapacitet. Gå til [Hent tilgængelige funktioner](https://msdn.microsoft.com/library/mt846473.aspx) for at undersøge den brugsværdi, der angiver brugen af integrerede tokens i procent.
+Med en PRO-licens er integrerede tokens kun beregnet til udviklingstest, så antallet af integrerede tokens, der kan genereres fra en Power BI-masterkonto, er begrænset. Du skal [købe en kapacitet](#technical) for at kunne integrere i et produktionsmiljø. Der er ingen grænse for hvor mange integrerede tokens, du kan generere, når der er købt en kapacitet. Gå til [Hent tilgængelige funktioner](https://msdn.microsoft.com/library/mt846473.aspx) for at undersøge den brugsværdi, der angiver brugen af integrerede tokens i procent.
 
 ## <a name="technical"></a>Tekniske spørgsmål
 
