@@ -1,30 +1,22 @@
 ---
 title: Tabelvisualiseringer i Power BI-rapporter og -dashboards
 description: Selvstudium til at arbejde med tabelvisualiseringer i Power BI-rapporter og dashboards, herunder, hvordan du tilpasser kolonnebredder.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: ''
-qualityfocus: ''
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0f7084cf2e0ad4db88ad99bd969ada20ba40aa57
-ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
+ms.openlocfilehash: 37f4e06aee41b8741dd3a1a1a52e3237fbd893a3
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33812627"
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34293254"
 ---
 # <a name="working-with-tables-in-power-bi-reports-and-dashboards"></a>Arbejd med tabeller i Power BI-rapporter og -dashboards
 En tabel er et gitter, der indeholder relaterede data i logiske serier af rækker og kolonner. Den kan også indeholde overskrifter og en række til totaler. Tabeller fungerer godt med kvantitative sammenligninger, hvor du får vist mange værdier for en enkelt kategori. Denne tabel viser for eksempel fem forskellige målinger for **Category**.
