@@ -1,29 +1,31 @@
 ---
-title: "Kom i gang med Power BI-mobilappen på Android-telefoner"
-description: "Få mere at vide om, hvordan Android-mobilappen til Microsoft Power BI giver dig Power BI med mobiladgang til oplysninger lokalt i virksomheden og i skyen."
+title: Introduktion til Power BI-mobilappen på Android-enheder
+description: Få mere at vide om, hvordan Android-mobilappen til Microsoft Power BI giver dig Power BI med mobiladgang til oplysninger lokalt i virksomheden og i skyen.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: complete
 qualitydate: 05/18/2016
 ms.service: powerbi
 ms.devlang: NA
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.component: powerbi-mobile
+ms.date: 05/07/2018
 ms.author: maggies
-ms.openlocfilehash: aed84f27ff838456b519283f45ae5f58feaf2521
-ms.sourcegitcommit: ee5d044db99e253c27816e0ea6bdeb9e39a2cf41
+ms.openlocfilehash: 16d3755af688a3bfb99964957f284fde3c658328
+ms.sourcegitcommit: 773ba0d1cc1d1fcee8e666e1c20450f5e343c5c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/10/2018
+ms.locfileid: "33946026"
 ---
-# <a name="get-started-with-the-power-bi-mobile-app-on-android-phones"></a>Kom i gang med Power BI-mobilappen på Android-telefoner
+# <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Introduktion til Power BI-mobilappen på Android-enheder
 Android-appen til Microsoft Power BI leverer BI-mobiloplevelsen til Power BI, Power BI Report Server og Reporting Services. Få vist og interager med dit firmas dashboards lokalt og i skyen overalt – med direkte, berøringsfølsom mobiladgang. Udforsk dataene i dashboards, og del dem med dine kollegaer i mails eller tekstmeddelelser. 
 
 ![Dashboard i Power BI til Android-appen](media/mobile-android-app-get-started/power-bi-android-dashboard-optimized-090117.png)
@@ -33,34 +35,37 @@ Du kan oprette Power BI-rapporter i Power BI Desktop og publicere dem:
 * [Publicer dem til Power BI-tjenesten](service-get-started.md), og opret dashboards.
 * [Publicer dem i det lokale miljø på Power BI rapportserver](report-server/quickstart-create-powerbi-report.md).
 
-Derefter interagerer du med dine dashboards og rapporter i Power BI appen til Android telefoner, hvad enten det er i det lokale miljø eller i cloudmiljøet.
+Derefter interagerer du i Power BI-appen til Android med dine dashboards og rapporter, både lokalt og i clouden.
 
 Find ud af, [hvad der er nyt i Power Bi-mobilapperne](mobile-whats-new-in-the-mobile-apps.md).
 
-## <a name="first-things-first"></a>Det vigtigste først
-* **Hent appen**  [Hent Power BI til Android-app](http://go.microsoft.com/fwlink/?LinkID=544867) fra Google Play Butik.
+## <a name="prerequisites"></a>Forudsætninger
+
+### <a name="get-the-app"></a>Hent appen
+
+[Download Power BI til Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867) fra Google Play.
   
-  Power BI kan køre på en række forskellige Android-telefoner. Din telefon skal køre operativsystemet Android 5.0 eller nyere. Hvis du vil kontrollere versionen på din telefon, skal du gå til **Indstillinger** > **Om enheden** > **Android-version**. 
-* **Start, når du åbner appen**....Uden hverken at tilmelde dig eller logge på kan du, når du åbner appen, gennemse logon-siderne for at få et hurtigt overblik over ting, du kan gøre med Power BI-appen på din Android-telefon. Tryk på **Spring over** for at få vist og undersøge eksemplerne og få praktisk erfaring med appen. Du kan når som helst [gå tilbage til eksemplerne](mobile-android-app-get-started.md#try-the-power-bi-and-reporting-services-samples) fra startsiden for dashboards.
-* Se mere om [nyhederne i Power Bi-mobilappsene](mobile-whats-new-in-the-mobile-apps.md).
+Power BI kan køre på en lang række forskellige Android-enheder, der kører operativsystemet Android 5.0 eller nyere. Hvis du vil kontrollere det på din enhed, skal du gå til **Indstillinger** > **Om enheden** > **Android-version**. 
+
+**Start, når du åbner appen**    
+Når du åbner appen, kan du uden hverken at tilmelde dig eller logge på gennemse logonsiderne for at få et hurtigt overblik over ting, du kan gøre med Power BI-appen på din Android-enhed. Tryk på **Spring over** for at få vist og gennemse eksemplerne og få praktisk erfaring med appen. Du kan når som helst [gå tilbage til eksemplerne](mobile-android-app-get-started.md#try-the-power-bi-and-reporting-services-samples) fra startsiden for dashboards.
+
+Se mere om [nyhederne i Power Bi-mobilappsene](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="sign-up-for-the-power-bi-service-on-the-web"></a>Tilmeld dig Power BI-tjenesten på internettet
-Hvis du endnu ikke har tilmeldt dig, kan du gå til [Power BI-tjenesten (http://powerbi.com/)](http://powerbi.com/) og tilmelde din egen konto for at oprette og lagre dashboards og rapporter samt samle dine data. Log på Power BI fra din Android-telefon for at se dine egne dashboards overalt.
+Hvis du endnu ikke har tilmeldt dig, kan du gå til [Power BI-tjenesten (http://powerbi.com/)](http://powerbi.com/) og tilmelde din egen konto for at oprette og lagre dashboards og rapporter samt samle dine data. Log derefter på Power BI fra din Android-enhed for at se dine egne dashboards overalt.
 
 1. I Power BI-tjenesten skal du trykke på [Tilmeld](http://go.microsoft.com/fwlink/?LinkID=513879) for at oprette en Power BI-konto.
 2. Gå i gang med at [oprette dine egne dashboards og rapporter](service-get-started.md).
 
-## <a name="get-started-with-the-power-bi-app-on-your-phone"></a>Kom i gang med Power BI-appen på din telefon
-1. Fra startskærmen på din Android-telefon åbner du Power BI til Android-app.
+## <a name="get-started-with-the-power-bi-app-on-your-device"></a>Kom i gang med Power BI-appen på din enhed
+1. Fra startskærmen på din Android-enhed åbner du Power BI til Android-app.
    
    ![Power BI-ikonet](media/mobile-android-app-get-started/power-bi-logo-android.png)
 2. Tryk på **Power BI** for at få vist dine Power BI-dashboards og -rapporter.  
    
-   > [!IMPORTANT]
-   > Hvis du får en meddelelse om, at Power BI ikke kan logge dig på, kan du læse ["Godkendelsen lykkedes ikke, da der ikke er tillid til din virksomheds SSL-certifikat"](mobile-android-app-error-corporate-ssl-account-is-untrusted.md) for at få oplysninger om, hvordan du kan udbedre problemet.
-   > 
-   > 
-   
+   Hvis du får en meddelelse om, at Power BI ikke kan logge dig på, kan du læse ["Godkendelsen lykkedes ikke, da der ikke er tillid til din virksomheds SSL-certifikat"](mobile-android-app-error-corporate-ssl-account-is-untrusted.md) for at få oplysninger om, hvordan du kan udbedre problemet.
+
    Tryk på **Report Server** for at få vist dine Power BI Report Server- og Reporting Services-rapporter samt KPI'er.
    
    ![Log på Power BI](media/mobile-android-app-get-started/power-bi-connect-to-login.png)
@@ -120,7 +125,7 @@ Microsoft Intune giver virksomhederne mulighed for at kontrollere ting som anmod
 Læs mere om [konfiguration af Power BI-mobilapps til Android med Microsoft Intune](service-admin-mobile-intune.md). 
 
 ## <a name="next-steps"></a>Næste trin
-Her er nogle andre ting, du kan gøre i Android-telefonappen til Power BI med dashboards og rapporter i Power BI samt rapporter og KPI'er i Power BI Report Server- eller Reporting Services-webportalen.
+Her er nogle andre ting, du kan gøre i Android-enhedsappen til Power BI med dashboards og rapporter i Power BI samt rapporter og KPI'er i Power BI-rapportserveren eller Reporting Services-webportalen.
 
 ### <a name="power-bi-dashboards-and-reports"></a>Power BI-dashboards og -rapporter
 * Få vist [dine apps](service-install-use-apps.md).
@@ -130,7 +135,7 @@ Her er nogle andre ting, du kan gøre i Android-telefonappen til Power BI med da
 * Få vist [dine apps](service-install-use-apps.md).
 * [Anmærke og dele fliser](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md).
 * Dele [dashboards](mobile-share-dashboard-from-the-mobile-apps.md).
-* [Scanne en Power BI QR-kode](mobile-apps-qr-code.md) for at åbne et relateret dashboardfelt eller en rapport. 
+* [Scanne en Power BI QR-kode](mobile-apps-qr-code.md) med din Android-telefon for at åbne et relateret dashboardfelt eller en relateret rapport. 
 * Få vist [beskeder om opdateringer til din Power BI-konto](mobile-apps-notification-center.md), f.eks dashboards, som kolleger deler med dig.
 
 ### <a name="reports-and-kpis-on-the-power-bi-report-server-and-reporting-services-web-portals"></a>Rapporter og KPI'er på webportalerne for Power BI-rapportserver og Reporting Services

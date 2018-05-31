@@ -1,16 +1,16 @@
 ---
-title: "Træstrukturer i Power BI (selvstudium)"
-description: "Selvstudium: Træstrukturer i Power BI"
+title: Trækort i Power BI
+description: Trækort i Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 featuredvideoid: IkJda4O7oGs
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -19,13 +19,14 @@ ms.workload: powerbi
 ms.date: 01/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a803256e5902ffc19e77c67a450d4895982b4b8b
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 5c9ce6b7b25170e87ea3474519036e854b15e940
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33813202"
 ---
-# <a name="treemaps-in-power-bi-tutorial"></a>Træstrukturer i Power BI (selvstudium)
+# <a name="treemaps-in-power-bi"></a>Trækort i Power BI
 Træstrukturer viser hierarkiske data som et sæt af indlejrede rektangler.  Hvert niveau i hierarkiet er repræsenteret af et farvet rektangel (ofte kaldte en "gren"), der indeholder andre rektangler ("blade").  Pladsen inde i hvert rektangel allokeres ud fra den kvantitative værdi, der måles, hvor rektanglerne er arrangeret efter størrelse fra øverste til venstre (størst) til nederst til højre (mindst).
 
 ![](media/power-bi-visualization-treemaps/pbi-nancy_viz_treemap.png)
@@ -44,7 +45,7 @@ Træstrukturer er et godt valg:
 
 ### <a name="prerequisites"></a>Forudsætninger
  - Power BI-tjenesten eller Power BI Desktop
- - Retail Analysis Sample
+ - Eksempel på analyse af detailhandel
 
 ## <a name="create-a-basic-treemap"></a>Opret en grundlæggende træstruktur
 Vil du gerne se en anden oprette en træstruktur først?  Gå til 2:10 i denne video for at se Amanda oprette en træstruktur.

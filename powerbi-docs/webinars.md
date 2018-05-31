@@ -1,27 +1,20 @@
 ---
 title: Power BI-webinarer
 description: Power BI-webinarer
-services: powerbi
-documentationcenter: ''
 author: maikelson
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 04/26/2018
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 05/09/2018
 ms.author: maikelson
-ms.openlocfilehash: 9fa7f56f102ae098c870ae0e6e12f56cc26d0fde
-ms.sourcegitcommit: 0cae0e6e1fd06b6465721702b2d0bb8333eb5afb
+ms.openlocfilehash: 29aba440f92f37763dd9887b5fa7511d6191a5f7
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34299280"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
@@ -31,17 +24,13 @@ Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når
 
 Tilmeld dig for at høre fra Power BI-eksperter og deltage i livesessioner med spørgsmål og svar
 
-**[Webinarserie om struktur til indføring af Power BI.](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
-<br>ved Manu Kanwarpal og Paul Henwood
-<br>*Marts, april og maj 2018 kl. 9:00PST, 12:00 EST*
+**Få den rette indsigt via Power BI og Visio**
+<br>af Shakun Grover
+<br>*22. maj 2018 kl. 10:00 PST, kl. 13:00 EST*
 
-Planlæg en effektiv udrulning af Power BI for din organisation, og udforsk de små forskelle ved effektiv SaaS-administration. Dette webinar er det første af en serie på fem, som låser op for potentialet ved Power BI i din organisation.
+Deltag i dette webinar for at lære, hvordan du kombinerer Power BI-dashboards og Microsoft Visio-diagrammer for at få effektiv visuel indsigt. Visio og Power BI er yderst visuelle og supplerer hinanden på en naturlig måde. I Visio kan du oprette illustrerende diagrammer, f.eks. arbejdsprocesser og layout fra den virkelige verden, der er forbundet med hinanden. Power BI hjælper dig med at bygge intuitive dashboards ved hjælp af diagrammer og kort, hvor du kan måle nøgletalsindikatorer og spore mål.
 
-[Tilmeld dig for at se med den 1. maj – del 5 – Udrulning af Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
-<br>[Tilmeld dig for at se med nu – del 4 – Sikkerhed: Opbevar dine data sikkert med Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
-<br>[Tilmeld dig for at se med nu – del 3 – Tjenesteadministration: Styring af Power BI-tjenesten](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
-<br>[Tilmeld dig for at se med nu – del 2 – Styring: Styr din brug af Power BI](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
-<br>[Tilmeld dig for at se med nu – del 1 – Indføring: Indfør en datadrevet kultur](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+[Tilmeld dig, og se med den 22. maj](https://info.microsoft.com/ww-landing-powerbi-and-visio.html?Is=Website)
 
 **Få mere at vide om Power BI Embedded på 20 minutter** (webinaret er på engelsk)
 <br>af Megan Asarrane og Colin Murphy
@@ -88,6 +77,10 @@ Se optagne sessioner når som helst
 **Sådan designer du visuelt imponerende Power BI-rapporter**
 <br>ved Charles Sterling
 <br>[Se nu](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
+
+**Mere end regneark**
+<br>af Gohul Shanmugalingam
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/CA-PowerBI-WBNR-FY18-05May-09-DataBeyondtheSpreadsheet-MCW0006385_01Registration-ForminBody.html?Is=Website)
 
 **Transformér en rapport fra god til strålende!**
 <br>ved Reid Havens
@@ -139,6 +132,14 @@ Se optagne sessioner når som helst
 <br>ved Nagasaikiran Kambhampati og Miguel Martinez
 <br>[Tilmeld dig for at se med](https://info.microsoft.com/ww-landing-advanced-analytics-excel-powerbi.html?Is=Website)
 <br>[Hent Advanced Analytics Starter Kit for at følge med](https://aka.ms/pbiaawebinar)
+
+**[Webinarserie om struktur til indføring af Power BI.](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
+<br>ved Manu Kanwarpal og Paul Henwood
+<br>[Tilmeld dig for at se med nu – del 1 – Indføring: Indfør en datadrevet kultur](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+<br>[Tilmeld dig for at se med nu – del 2 – Styring: Styr din brug af Power BI](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
+<br>[Tilmeld dig for at se med nu – del 3 – Tjenesteadministration: Styring af Power BI-tjenesten](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
+<br>[Tilmeld dig for at se med nu – del 4 – Sikkerhed: Opbevar dine data sikkert med Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
+<br>[Tilmeld dig for at se med nu – del 5 – Udrulning af Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
 
 **Webinarserien Office 365 Finance Pros**
 <br>af Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky og Miguel Martinez
