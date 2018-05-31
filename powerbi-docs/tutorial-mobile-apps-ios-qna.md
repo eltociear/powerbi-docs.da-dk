@@ -1,20 +1,29 @@
 ---
 title: 'Selvstudium: Stil spørgsmål med den virtuelle Spørgsmål og svar-analytiker i iOS-apps – Power BI'
 description: I denne vejledning kan du stille spørgsmål om eksempeldata med dine egne ord ved hjælp af den virtuelle Spørgsmål og svar-analytiker i Power BI-mobilappen på din iOS-enhed.
+services: powerbi
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+backup: ''
+editor: ''
+tags: ''
+qualityfocus: no
+qualitydate: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
+ms.devlang: NA
 ms.topic: tutorial
+ms.tgt_pltfrm: NA
+ms.workload: powerbi
 ms.date: 05/08/2018
 ms.author: maggies
-ms.openlocfilehash: 5c8afc963c67493c30821048736d914d3aec278e
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 270a6ef9f9c9559ae5dd303249fd372c5f4d2b79
+ms.sourcegitcommit: 773ba0d1cc1d1fcee8e666e1c20450f5e343c5c1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34297854"
+ms.lasthandoff: 05/10/2018
+ms.locfileid: "33945911"
 ---
 # <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-ios-apps---power-bi"></a>Selvstudium: Stil spørgsmål om dine data ved hjælp af den virtuelle Spørgsmål og svar-analytiker i iOS-apps – Power BI
 
@@ -37,7 +46,7 @@ I dette selvstudium skal du:
 > * Downloade et eksempeldashboard og en eksempelrapport til Power BI
 > * Se, hvilken udvalgt indsigt mobilappen foreslår
 
-Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
+Hvis du ikke er tilmeldt Power BI, skal du [tilmelde dig en gratis prøveversion](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
