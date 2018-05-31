@@ -15,25 +15,26 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/06/2018
+ms.date: 05/08/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4bfdbaaa305f80195fd08155ecca744444495aeb
-ms.sourcegitcommit: 00b4911ab5fbf4c2d5ffc000a3d95b3149909c28
+ms.openlocfilehash: 1558f78f8f496814ac7745afe9b86f327ef7772b
+ms.sourcegitcommit: 509be8852ba7595b9441c9479224f9dca298b26d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/09/2018
+ms.locfileid: "33923448"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 Med Power BI Desktop kan du oprette forbindelse til data fra mange forskellige kilder. Der findes en komplet liste over tilgængelige datakilder nederst på siden.
 
 Hvis du vil oprette forbindelse til data, skal du vælge **Hent data** på båndet **Hjem**. Hvis du vælger pil ned eller teksten **Hent data** på knappen, vises menuen med de **mest almindelige** datatyper på følgende billede:
 
-![](media/desktop-data-sources/data-sources_1.png)
+![Hent data i Power BI Desktop](media/desktop-data-sources/data-sources_01.png)
 
 Hvis du vælger **Mere...** i menuen **Mest almindelige**, vises vinduet **Hent data**. Du kan også åbne vinduet **Hent data** (og omgå menuen **Mest almindelige**) ved at vælge **ikonet** **Hent data** direkte.
 
-![](media/desktop-data-sources/data-sources_2.png)
+![Knappen Hent data](media/desktop-data-sources/data-sources_02.png)
 
 > [!NOTE]
 > Power BI-teamet udvider hele tiden de datakilder, der er tilgængelige for **Power BI Desktop** og **Power BI-tjenesten**. Du kan derfor ofte se tidlige versioner af igangværende datakilder markeret som *Beta* eller *Preview*. Alle datakilder, der er markeret som *Beta* eller *Preview*, har begrænset support og funktionalitet og skal ikke bruges i produktionsmiljøer.
@@ -46,6 +47,7 @@ Datatyper er organiseret i følgende kategorier:
 * Alle
 * Fil
 * Database
+* Power BI
 * Azure
 * Onlinetjenester
 * Andet
@@ -63,12 +65,7 @@ Kategorien **Fil** indeholder følgende dataforbindelser:
 
 På følgende billede vises vinduet **Hent data** for **Fil**.
 
-![](media/desktop-data-sources/data-sources_3.png)
-
-> [!NOTE]
-> I tidligere versioner af Power BI Desktop var **CSV** og **Tekst** separate dataforbindelsestyper. Disse dataforbindelser er samlet til **CSV/Tekst**.
-> 
-> 
+![Hent data > Filer](media/desktop-data-sources/data-sources_03.png)
 
 Kategorien **Database** indeholder følgende dataforbindelser:
 
@@ -88,8 +85,9 @@ Kategorien **Database** indeholder følgende dataforbindelser:
 * SAP Business Warehouse Message Server (beta)
 * Amazon Redshift
 * Impala
-* Google BigQuery (beta)
+* Google BigQuery
 * Snowflake
+* Exasol
 
 > [!NOTE]
 > Nogle databaseforbindelser kræver, at du aktiverer dem ved at vælge **Filer > Indstillinger > Indstillinger** og derefter vælger **Funktioner til eksempelvisning** og aktiverer forbindelsen. Hvis du ikke kan se nogle af de forbindelser, der er nævnt ovenfor, og du vil bruge dem, skal du kontrollere dine indstillinger for **Funktioner til eksempelvisning**. Bemærk også, at alle datakilder, der er markeret som *Beta* eller *Preview*, har begrænset support og funktionalitet og skal ikke bruges i produktionsmiljøer.
@@ -98,7 +96,16 @@ Kategorien **Database** indeholder følgende dataforbindelser:
 
 På følgende billede vises vinduet **Hent data** for **Database**.
 
-![](media/desktop-data-sources/data-sources_4.png)
+![Hent data > Databaser](media/desktop-data-sources/data-sources_04.png)
+
+Kategorien **Power BI** indeholder følgende dataforbindelser:
+
+* Power BI-datasæt
+* Power BI-datagrupper (beta)
+
+På følgende billede vises vinduet **Hent data** for **Power BI**.
+
+![Hent data > Power BI](media/desktop-data-sources/data-sources_05.png)
 
 Kategorien **Azure** indeholder følgende dataforbindelser:
 
@@ -112,19 +119,20 @@ Kategorien **Azure** indeholder følgende dataforbindelser:
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark (beta)
 * HDInsight Interactive Query (beta)
+* Azure KustoDB (beta)
 
 På følgende billede vises vinduet **Hent data** for **Azure**.
 
-![](media/desktop-data-sources/data-sources_5.png)
+![Hent data > Azure](media/desktop-data-sources/data-sources_06.png)
 
 Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 
-* Power BI-tjeneste
 * SharePoint Online-liste
 * Microsoft Exchange Online
 * Dynamics 365 (online)
 * Dynamics NAV (beta)
-* Dynamics 365 for Financials (beta)
+* Dynamics 365 Business Central
+* Common Data Service til Apps (beta)
 * Common Data Service (beta)
 * Microsoft Azure Consumption Insights (beta)
 * Visual Studio Team Services (beta)
@@ -153,15 +161,15 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * tyGraph (beta)
 * Webtrends (beta)
 * Zendesk (beta)
+* TeamDesk (beta)
 
 På følgende billede vises vinduet **Hent data** for **Onlinetjenester**.
 
-![](media/desktop-data-sources/data-sources_6b.png)
+![Hent data > Onlinetjenester](media/desktop-data-sources/data-sources_07.png)
 
 Kategorien **Andet** indeholder følgende dataforbindelser:
 
 * Vertica (beta)
-* Kusto (beta)
 * Web
 * SharePoint-liste
 * OData-feed
@@ -176,7 +184,7 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 
 På følgende billede vises vinduet **Hent data** for **Andet**.
 
-![](media/desktop-data-sources/data-sources_7a.png)
+![Hent data > Andet](media/desktop-data-sources/data-sources_08.png)
 
 > [!NOTE]
 > På nuværende tidspunkt er det ikke muligt at oprette forbindelse til brugerdefinerede datakilder, der er beskyttet via Azure Active Directory.
@@ -186,15 +194,15 @@ På følgende billede vises vinduet **Hent data** for **Andet**.
 ## <a name="connecting-to-a-data-source"></a>Opret forbindelse til en datakilde
 For at oprette forbindelse til en datakilde skal du vælge datakilden i vinduet **Hent data** og vælge **Opret forbindelse**. På følgende billede er **Web** valgt fra kategorien **Andet** for dataforbindelsen.
 
-![](media/desktop-data-sources/data-sources_7b.png)
+![Opret forbindelse til web](media/desktop-data-sources/data-sources_08a.png)
 
 Der vises et forbindelsesvindue, som er specifikt for typen af dataforbindelse. Hvis der kræves legitimationsoplysninger, bliver du bedt om at angive dem. På følgende billede vises en URL-adresse, der angives for at oprette forbindelse til en webdatakilde.
 
-![](media/desktop-data-sources/datasources_fromwebbox.png)
+![angive web-URL-adresse](media/desktop-data-sources/datasources_fromwebbox.png)
 
 Når der er angivet forbindelsesoplysninger for URL-adressen eller ressourcen, skal du vælge **OK**. Power BI Desktop opretter forbindelse til datakilden og viser de tilgængelige datakilder i **navigatoren**.
 
-![](media/desktop-data-sources/datasources_fromnavigatordialog.png)
+![Skærmen Navigator](media/desktop-data-sources/datasources_fromnavigatordialog.png)
 
 Du kan enten indlæse data ved at vælge knappen **Indlæs** nederst i ruden **Navigator**, eller du kan redigere forespørgslen, før du indlæser data, ved at vælge knappen **Rediger**.
 

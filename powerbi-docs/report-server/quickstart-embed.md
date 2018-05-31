@@ -1,108 +1,107 @@
 ---
-title: "Indlejring af rapport ved hjælp af en iFrame"
-description: "Installationen af selve Power BI-rapportserver er meget hurtig. Download, installation og konfiguration er hurtigt overstået, og du kan få det hele op at køre på få minutter."
-services: powerbi
-documentationcenter: 
+title: Indlejring af rapport ved hjælp af en iFrame
+description: Integrer en rapport på Power BI-rapportserveren i en iFrame på SharePoint Server
 author: markingmyname
-manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
-ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 11/09/2017
 ms.author: maghan
-ms.openlocfilehash: 56835bfb25c8c930099fadf710137f69fa89fc2e
-ms.sourcegitcommit: 6e693f9caf98385a2c45890cd0fbf2403f0dbb8a
+ms.date: 05/04/2018
+ms.topic: quickstart
+ms.service: powerbi
+ms.component: powerbi-report-server
+ms.custom: mvc
+manager: kfile
+ms.openlocfilehash: 8d7653e6f390959df745fa2b19076ee89b26b1bc
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34293691"
 ---
-# <a name="quickstart-embed-a-power-bi-report-using-an-iframe-and-url-parameters"></a>Hurtigstart: Integrer en Power BI-rapport ved hjælp af en iFrame og URL-parametre
+# <a name="quickstart-embed-a-power-bi-report-server-report-using-an-iframe-in-sharepoint-server"></a>Hurtig introduktion: Integrer en rapport på Power BI-rapportserveren ved hjælp af en iFrame på SharePoint Server
 
-Du kan integrere en hvilken som helst rapport ved hjælp af en iFrame i dit program. 
+I denne hurtige introduktion lærer du, hvordan du integrerer en rapport på Power BI-rapportserveren ved hjælp af en iFrame på en SharePoint-side. Hvis du arbejder med SharePoint Online, skal Power BI-rapportserveren være offentligt tilgængelig. I SharePoint Online fungerer den Power BI-webdel, der fungerer med Power BI-tjenesten, ikke med Power BI-rapportserveren. 
 
-## <a name="url-parameter"></a>URL-parameter
+![iFrame-eksempel](media/quickstart-embed/quickstart_embed_01.png)
+## <a name="prerequisites"></a>Forudsætninger
+* [Power BI-rapportserveren](https://powerbi.microsoft.com/en-us/report-server/) skal være installeret og konfigureret.
+* [Power BI Desktop, der er optimeret til Power BI-rapportserveren](install-powerbi-desktop.md), skal være installeret.
+* Der skal være installeret og konfigureret et [SharePoint](https://docs.microsoft.com/en-us/sharepoint/install/install)-miljø.
 
-For en hvilken som helst URL-adresse til en rapport kan du tilføje forespørgselsstrengparameteren `?rs:Embed=true`.
+## <a name="creating-the-power-bi-report-server-report-url"></a>Opret URL-adressen til Power BI-rapportserveren
 
-Eksempel:
+1. Download eksemplet fra GitHub – [Blogdemo](https://github.com/Microsoft/powerbi-desktop-samples).
 
-```
-http://myserver/reports/powerbi/Sales?rs:embed=true
-```
+    ![download PBIX-eksempelfil](media/quickstart-embed/quickstart_embed_14.png)
 
-Dette fungerer på alle rapporttyper i Power BI-rapportserver.
+2. Åbn PBIX eksempelfilen fra GitHub i **Power BI Desktop optimeret til Power BI-rapportserveren**.
 
-## <a name="iframe"></a>iFrame
+    ![Værktøjet PBI RS Desktop](media/quickstart-embed/quickstart_embed_02.png)
 
-Når du har din URL-adresse, kan du oprette en iFrame inden for en webside som vært for rapporten.
+3. Gem rapporten på **Power BI-rapportserveren**. 
 
-Eksempel:
+    ![Gem på PBI RS](media/quickstart-embed/quickstart_embed_03.png)
 
-```
-<iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
-```
+4. Få vist rapporten på **webportalen**.
 
-## <a name="url-filter"></a>URL-filter
+    ![Webportal](media/quickstart-embed/quickstart_embed_04.png)
 
-Du kan føje en forespørgselsstrengparameter til URL-adressen for at filtrere de data, der returneres i Power BI-rapporten.
+### <a name="capturing-the-url-parameter"></a>Hent URL-parameteren
 
-Syntaksen er enkel. Start med URL-adressen til rapporten, tilføj et spørgsmålstegn og derefter denne filtersyntaks.
+Når du har din URL-adresse, kan du oprette en iFrame på en SharePoint-side, der er vært for rapporten. I forbindelse med URL-adresser til rapporter på Power BI-rapportserveren kan du tilføje querystring-parameteren `?rs:embed=true` for at integrere din rapport i en iFrame. 
 
-URL?filter=***Tabel***/***Felt*** eq '***værdi***'
+   Eksempel:
+    ``` 
+    http://myserver/reports/powerbi/Sales?rs:embed=true
+    ```
+## <a name="embedding-a-power-bi-report-server-report-in-a-sharepoint-iframe"></a>Integrer en rapport på Power BI-rapportserveren i en SharePoint iFrame
 
-Vær opmærksom på følgende:
+1. Naviger til en SharePoint-side med **webstedsindhold**.
 
-- I navnene for **Tabel** og **Felt** skelnes der mellem store og små bogstaver, men ikke i **værdi**.
-- Du kan filtrere en rapport med felter, der er skjult fra rapportvisningen.
-- **Værdi** skal omgives af enkelte anførselstegn.
-- Felttypen skal være en streng.
-- Tabel- og feltnavne må ikke indeholde mellemrum.
+    ![Side med webstedsindhold](media/quickstart-embed/quickstart_embed_05.png)
 
-###  <a name="example-filter-on-a-field"></a>Eksempel: Filtrer på et felt
+2. Vælg den side, hvor du vil tilføje din rapport.
 
-Tag f.eks. [Retail Analysis Sample](../sample-datasets.md) (Eksempel på detailhandelsanalyse). Lad os antage, at dette er URL-adressen til rapporten på rapportserveren i en mappe med navnet "power-bi":
+    ![App til side med webstedsindhold](media/quickstart-embed/quickstart_embed_06.png)
 
-```
-https://report-server/reports/power-bi/Retail-Analysis-Sample
-```
+3. Vælg tandhjulet i øverste højre hjørne, og vælg **Rediger side**.
 
-Du kan se, at kortvisualiseringen i Retail Analysis Sample viser butikker i North Carolina og andre stater.
+    ![Indstillingen Rediger side](media/quickstart-embed/quickstart_embed_07.png)
 
-![Kortvisualisering af Retail Analysis Sample](media/quickstart-embed/report-server-retail-analysis-sample-map.png)
+4. Vælg **Tilføj webdel**.
 
-*NC* er værdien for North Carolina, som er lagret i feltet **Territory** (Område) i tabellen **Store** (Butik). Så hvis du vil filtrere rapporten for kun at få vist data for butikker i North Carolina, skal du tilføje følgende i URL-adressen:
+    ![Tilføj webdel](media/quickstart-embed/quickstart_embed_08.png)
 
-?filter=Store/Territory eq 'NC'
+5. Under **Kategorier** skal du vælge **Medier og indhold**, under **Dele** skal du vælge **Indholdsredigering**, og vælg derefter **Tilføj**.
 
-Nu er rapporten filtreret for North Carolina, så alle visualiseringer på rapportsiden viser kun data for North Carolina.
+    ![Vælg webdelen Indholdsredigering](media/quickstart-embed/quickstart_embed_09.png) ![Vælg Tilføj](media/quickstart-embed/quickstart_embed_091.png)
 
-![Filtreret visualisering for Retail Analysis Sample](media/quickstart-embed/report-server-retail-analysis-sample-filtered-map.png)
+6. Vælg **Klik her for at tilføje nyt indhold**.
 
-### <a name="create-a-dax-formula-to-filter-on-multiple-values"></a>Opret en DAX-formel for at filtrere på flere værdier
+    ![Tilføj nyt indhold](media/quickstart-embed/quickstart_embed_10.png)
 
-En anden metode til at filtrere på flere felter er at oprette en beregnet kolonne i Power BI Desktop, som sammenkæder to felter med en enkelt værdi. Derefter kan du filtrere på denne værdi.
+7. På båndet skal du vælge fanen **Formatér tekst** og derefter vælge **Rediger kilde**.
 
-For eksempel har Retail Analysis Sample to felter: Territory (Område) og Chain (Kæde). I Power BI Desktop kan du [oprette en beregnet kolonne](../desktop-tutorial-create-calculated-columns.md) (felt) med navnet TerritoryChain. Husk, at navnet på **Felt** ikke må indeholde mellemrum. Her er DAX-formlen for den pågældende kolonne.
+     ![Rediger kilde](media/quickstart-embed/quickstart_embed_11.png)
 
-TerritoryChain = [Territory] & "-" & [Chain]
+8. I vinduet Rediger kilde skal du indsætte iFrame-koden og vælge OK.
 
-Publicer rapporten på Power BI-rapportserver, og brug derefter URL-forespørgselsstrengen til at filtrere for kun at vise data for Lindseys-butikker i NC.
+    ![iFrame-kode](media/quickstart-embed/quickstart_embed_12.png)
 
-```
-https://report-server/reports/power-bi/Retail-Analysis-Sample?filter=Store/TerritoryChain eq 'NC-Lindseys'
+     Eksempel:
+     ```
+     <iframe width="800" height="600" src="http://myserver/reports/powerbi/Sales?rs:embed=true" frameborder="0" allowFullScreen="true"></iframe>
+     ```
 
-```
+9. På båndet skal du vælge fanen **Side** og derefter vælge **Stop redigering**.
+
+    ![Stop redigering](media/quickstart-embed/quickstart_embed_13.png)
+
+10. Nu kan du se rapporten på siden.
+
+    ![iFrame-eksempel](media/quickstart-embed/quickstart_embed_01.png)
 
 ## <a name="next-steps"></a>Næste trin
 
 [Hurtigstart: Opret en Power BI-rapport til Power BI-rapportserver](quickstart-create-powerbi-report.md)  
 [Hurtigstart: Opret en sideinddelt rapport for Power BI-rapportserver](quickstart-create-paginated-report.md)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/) 

@@ -1,329 +1,237 @@
 ---
 title: Integrer Power BI-indhold i en app til dine kunder
-description: Få mere at vide om, hvordan du kan integrere et dashboard, et felt eller en rapport i en webapp ved hjælp af API'er til Power BI til dine kunder.
+description: Få mere at vide om, hvordan du kan integrere en rapport, et dashboard eller et felt i en webapp ved hjælp af API'er til Power BI til dine kunder.
 services: powerbi
-documentationcenter: ''
 author: markingmyname
-manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
-ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/11/2018
 ms.author: maghan
-ms.openlocfilehash: 779ae9a6df285b58c83021f87ed593af9ec0b3fb
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.date: 05/07/2018
+ms.topic: tutorial
+ms.service: powerbi
+ms.custom: mvc
+manager: kfile
+ms.openlocfilehash: 2d4fdee8d3e4cca60294acd0a9167da1f048afa5
+ms.sourcegitcommit: 9fa954608e78dcdb8d8a503c3c9b01c43ca728ab
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
+ms.locfileid: "34051927"
 ---
-# <a name="embed-a-power-bi-dashboard-tile-or-report-into-your-application"></a>Integrer Power BI-dashboards, -felter eller -rapporter i din app
-Få mere at vide om, hvordan du integrerer et dashboard, et felt eller en rapport i en webapp ved hjælp af Power BI .NET SDK sammen med Power BI JavaScript API, når du integrerer til dine kunder. Dette er det typiske ISV-scenario.
+# <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Selvstudium: Integrer en rapport, et dashboard eller et felt i Power BI i et program til dine kunder
+Med **Power BI Embedded i Azure** kan du integrere rapporter, dashboards eller felter i et program, så dine kunder kan dele data. Dette er typisk i et scenarie med en **ISV-udvikler**, der bruger **appen ejer data**-strukturen. **Appen ejer data** betyder, at der integreres Power BI-indhold til dine egne kunder. Brugeren af Power BI-indhold kan f.eks. få vist rapporter, dashboards eller felter uden at skulle logge på **Power BI**. I dette selvstudium vises, hvordan du kan integrere en rapport i et program ved hjælp af **Power BI** .NET SDK sammen med **Power BI** JavaScript-API'en, når du bruger **Power BI Embedded i Azure**  til dine kunder ved hjælp af **appen ejer data**.
 
-![Integreret dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
+I dette selvstudium lærer du, hvordan du kan:
+>[!div class="checklist"]
+>* Registrere en app i Azure.
+>* Integrere en rapport, et dashboard eller et felt i et program ved hjælp af Power BI Embedded i Azure.
 
-Før du begynder, skal du have en **Power BI Pro**-konto. Hvis du ikke har en konto, kan du [oprette en gratis Power BI-konto](../service-self-service-signup-for-power-bi.md) og derefter tilmelde dig og modtage en [Power BI Pro-prøveversion](../service-self-service-signup-for-power-bi.md#in-service-power-bi-pro-60-day-trial), eller du kan oprette din egen [Azure Active Directory-lejer](create-an-azure-active-directory-tenant.md) til testbrug.
+## <a name="prerequisites"></a>Forudsætninger
+For at komme i gang skal du have en **Power BI Pro**-konto og en **Microsoft Azure**-konto.
 
-> [!NOTE]
-> Vil du integrere et dashboard for din organisation i stedet? Se i [Integrer et dashboard i en app for din organisation](integrate-dashboard.md).
-> 
-> 
+* Hvis du ikke er tilmeldt **Power BI Pro**, kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/en-us/pricing/), før du begynder.
+* Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), før du begynder.
+* Du skal have din egen konfiguration af [Azure Active Directory-lejer](create-an-azure-active-directory-tenant.md).
+* Du skal have [Visual Studio](https://www.visualstudio.com/) installeret (version 2013 eller nyere).
 
-Hvis du vil integrere et dashboard i en webapp, skal du bruge API'en til **Power BI** og et **adgangstoken** til Azure Active Directory for at hente et dashboard. Derefter skal du indlæse dashboardet ved hjælp af et integrationstoken. API'en til **Power BI** leverer programadgang til visse **Power BI**-ressourcer. Du kan finde flere oplysninger i [Oversigt over Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx), [Power BI .NET SDK](https://github.com/Microsoft/PowerBI-CSharp) og [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+## <a name="setup-your-embedded-analytics-development-environment"></a>Konfigurer dit integrerede analyseudviklingsmiljø
 
-## <a name="download-the-sample"></a>Hent eksemplet
-I denne artikel vises den kode, der bruges i [eksemplet Embedding for your organization](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data) på GitHub. Hvis du vil følge med i gennemgangen, kan du hente eksemplet.
+Før du begynder at integrere rapporter, dashboards eller felter i din app, skal du sikre dig, at du kan integrere i dit miljø. Du skal gøre følgende som en del af konfigurationen.
 
-## <a name="step-1---register-an-app-in-azure-ad"></a>Trin 1 – Registrer en app i Azure AD
-Du skal registrere din app i Azure AD, før du kan foretage REST API-kald. Du kan finde flere oplysninger i [Registrer en Azure AD-app for at integrere Power BI-indhold](register-app.md).
+### <a name="register-an-application-in-azure-active-directory-azure-ad"></a>Registrer et program i Azure Active Directory (Azure AD)
 
-Hvis du har hentet [eksemplet Embedding for your organization](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), skal du bruge det **klient-id**, du får efter registreringen, så det kan godkendes i Azure AD. Du kan konfigurere prøveappen ved at ændre **clientId** i filen *web.config*.
+Du kan registrere dit program i Azure Active Directory, så dit program får adgang til Power BI REST-API'er. Det giver dig mulighed for at oprette et id for dit program og angive tilladelser til Power BI REST-ressourcer.
 
-## <a name="step-2---get-an-access-token-from-azure-ad"></a>Trin 2: Få en adgangstoken fra Azure AD
-I applikationen skal du først hente et **adgangstoken** fra Azure AD, før du kan foretage kald til Power BI REST-API'en. Du kan finde flere oplysninger i [Godkend brugere, og få et Azure AD-adgangstoken til din Power BI-app](get-azuread-access-token.md).
+1. Acceptér [vilkårene for Microsoft Power BI API](https://powerbi.microsoft.com/api-terms).
 
-Du kan se eksempler på dette i hver indholdselementopgave i **Controllers\HomeController.cs**.
+2. Log på [Azure-portalen](https://portal.azure.com).
+ 
+    ![Azure-hovedportal](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
-## <a name="step-3---get-a-content-item"></a>Trin 3: Hent et indholdselement
-Før du integrerer dit Power BI-indhold, er der nogle ting, du skal gøre for at sikre, at det bliver korrekt integreret. Selvom alle disse trin kan udføres direkte med REST API, er .NET SDK blevet brugt til prøveappen og eksemplerne her.
+3. Vælg **Alle tjenester** i navigationsruden til venstre, vælg **Appregistreringer**, og vælg derefter **Registrering af nyt program**.
+   
+    ![Søg efter programregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
+    ![Registrering af nyt program](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
 
-### <a name="create-the-power-bi-client-with-your-access-token"></a>Opret Power BI-klienten med dit eget adgangstoken
-Brug dit adgangstoken til at oprette dit Power BI-klientobjekt, som gør det muligt for dig at interagere med API'erne til Power BI. Det gør du ved at omgive AccessToken med objektet *Microsoft.Rest.TokenCredentials*.
+4. Følg prompterne, og opret et nyt program. I forbindelse med "apps ejer data" skal du bruge **Oprindelig** for programtypen. Du skal også angive en **omdirigerings-URI**, som **Azure Active Directory** bruger til at returnere tokensvar. Angiv en værdi, der er specifik for dit program (f.eks.: http://localhost:13526/redirect).
 
-```
-using Microsoft.IdentityModel.Clients.ActiveDirectory;
-using Microsoft.Rest;
-using Microsoft.PowerBI.Api.V2;
+    ![Opret app](media/embed-sample-for-customers/embed-sample-for-customers-005.png)
 
-var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
+### <a name="apply-permissions-to-your-application-within-azure-active-directory"></a>Anvend tilladelser til dit program i Azure Active Directory
 
-// Create a Power BI Client object. It will be used to call Power BI APIs.
-using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
-{
-    // Your code to embed items.
-}
-```
+Du skal aktivere yderligere tilladelser til dit program ud over det, der er angivet på siden til appregistrering. Du skal være logget på via den *hovedkonto*, der er anvendt til integrering, som skal være en global administratorkonto.
 
-### <a name="get-the-content-item-you-want-to-embed"></a>Hent det indholdselementet, du vil integrere
-Du kan bruge Power BI-klientobjektet til at hente en reference til det element, du vil integrere. Du kan integrere dashboards, felter eller rapporter. Her er et eksempel på, hvordan du henter det første dashboard, felt eller den første rapport fra et givent arbejdsområde.
+### <a name="use-the-azure-active-directory-portal"></a>Brug Azure Active Directory-portalen
 
-Du kan finde et eksempel på dette i **Controllers\HomeController.cs** i [prøveappen App Owns Data](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
+1. Gå til [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) (Appregistreringer) på Azure-portalen, og vælg den app, du bruger til at integrere.
+   
+    ![Vælg app](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
-**Dashboard**
+2. Vælg **Indstillinger**, og vælg derefter **Påkrævede tilladelser** under **API-adgang**.
+   
+    ![Påkrævede tilladelser](media/embed-sample-for-customers/embed-sample-for-customers-008.png)
 
-```
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
+3. Vælg **Azure Active Directory**, og kontrollér, at **Åbn mappen som den bruger, der er logget på** er markeret. Vælg **Gem**.
+   
+    ![Windows Azure Active Directory-tilladelser](media/embed-sample-for-customers/embed-sample-for-customers-011.png)
 
-// You will need to provide the GroupID where the dashboard resides.
-ODataResponseListDashboard dashboards = client.Dashboards.GetDashboardsInGroup(GroupId);
+4. Vælg **Tilføj**
 
-// Get the first report in the group.
-Dashboard dashboard = dashboards.Value.FirstOrDefault();
-```
+    ![Tilføj tilladelser](media/embed-sample-for-customers/embed-sample-for-customers-012.png)
 
-**Felt**
+5. Vælg **Vælg en API**.
 
-```
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
+    ![Tilføj API-adgang](media/embed-sample-for-customers/embed-sample-for-customers-013.png)
 
-// To retrieve the tile, you first need to retrieve the dashboard.
+6. Vælg **Power BI-tjeneste**, og vælg derefter **Vælg**.
 
-// You will need to provide the GroupID where the dashboard resides.
-ODataResponseListDashboard dashboards = client.Dashboards.GetDashboardsInGroup(GroupId);
+    ![Vælg PBI-tjenester](media/embed-sample-for-customers/embed-sample-for-customers-014.png)
 
-// Get the first report in the group.
-Dashboard dashboard = dashboards.Value.FirstOrDefault();
+7. Vælg alle tilladelser under **Delegated Permission** (Delegerede tilladelser). Du skal vælge dem én for én for at kunne gemme dine valg. Vælg **Gem**, når du er færdig.
+   
+    ![Vælg delegerede tilladelser](media/embed-sample-for-customers/embed-sample-for-customers-015.png)
 
-// Get a list of tiles from a specific dashboard
-ODataResponseListTile tiles = client.Dashboards.GetTilesInGroup(GroupId, dashboard.Id);
+8. I **Required permissions** (Krævede tilladelser), skal du vælge **Grant Permissions** (Tildel tilladelser).
+   
+    Handlingen **Grant Permissions** (Tildel tilladelser) skal bruges til *hovedkontoen* for at undgå at blive bedt af Azure AD om at angive dit samtykke. Hvis kontoen, der udfører denne handling, er en Global administrator, giver du tilladelser til alle brugere i organisationen til programmet. Hvis kontoen, der udfører denne handling, er *hovedkontoen* og ikke en global administrator, giver du kun tilladelser til *hovedkontoen*  til programmet.
+   
+    ![Tildel tilladelser i dialogboksen til krævede tilladelser](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
 
-// Get the first tile in the group.
-Tile tile = tiles.Value.FirstOrDefault();
-```
+### <a name="create-your-power-bi-embedded-dedicated-capacity-in-azure"></a>Opret din Power BI Embedded-dedikerede kapacitet i Azure
 
-**Rapport**
+1. Log på [Azure-portalen](https://portal.azure.com).
 
-```
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
+    ![Azure-hovedportal](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
-// You will need to provide the GroupID where the dashboard resides.
-ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(GroupId);
+2. Vælg **Alle tjenester** i navigationsruden til venstre, og vælg **Power BI Embedded**.
 
-// Get the first report in the group.
-Report report = reports.Value.FirstOrDefault();
-```
+    ![PBIE-søgning](media/embed-sample-for-customers/embed-sample-for-customers-017.png)
 
-### <a name="create-the-embed-token"></a>Opret integrationstokenet
-Du skal oprette et integrationstoken, som kan bruges fra JavaScript API'en. Dette integrationstoken er specifikt for det element, du er ved at integrere. Det betyder, at hver gang du integrere Power BI-indhold, skal du oprette et nyt integrationstoken for det. Du kan finde flere oplysninger, herunder hvilket **adgangsniveau** du skal bruge, i [GenerateToken API](https://msdn.microsoft.com/library/mt784614.aspx).
-
-> [!IMPORTANT]
-> Da integrerede tokens kun er beregnet til udviklingstest, er antallet af integrerede tokens, der kan genereres fra en Power BI-masterkonto, begrænset. Der [skal købes en kapacitet](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) til integrerede produktionsscenarier. Der er ingen grænse for generering af integrerede tokens, når der er købt en kapacitet. Gå til [Hent tilgængelige funktioner](https://msdn.microsoft.com/en-us/library/mt846473.aspx) for at undersøge, hvor mange gratis integrerede tokens der er blevet brugt.
+3. Følg prompterne, og angiv de rette oplysninger, der skal bruges til at oprette en ny **Power BI Embedded**-dedikeret kapacitet, og vælg derefter **Opret**. Når du vælger **Prisniveau**, skal du gennemse tabellen nedenfor for at afgøre, hvilket niveau der passer til bedst til dine behov. Vælg derefter **Opret**, og vent på, at ressourcen fuldføres.
 
-Du kan finde et eksempel på dette i **Controllers\HomeController.cs** i [prøveappen Embedding for your organization](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
-
-Dette forudsætter, at der oprettes en klasse for **EmbedConfig** og **TileEmbedConfig**. Du kan finde et eksempel på dette i **Models\EmbedConfig.cs** og **Models\TileEmbedConfig.cs**.
+    ![Konfiguration af PBIE](media/embed-sample-for-customers/embed-sample-for-customers-018.png)
 
-**Dashboard**
-
-```
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
+| Kapacitetsnode | Kerner i alt<br/>*(Backend + frontend)* | Backendkerner | Frontendkerner | Grænser for DirectQuery/liveforbindelser | Maks. antal sidegengivelser i spidstimen |
+| --- | --- | --- | --- | --- | --- |
+| A1 |1 v-kerner |0,5 kerner, 3 GB RAM |0,5 kerner | 5 pr. sekund |1-300 |
+| A2 |2 v-kerner |1 kerne, 5 GB RAM |1 kerne | 10 pr. sekund |301-600 |
+| A3 |4 v-kerner |2 kerner, 10 GB RAM |2 kerner | 15 pr. sekund |601-1.200 |
+| A4 |8 v-kerner |4 kerner, 25 GB RAM |4 kerner |30 pr. sekund |1.201-2.400 |
+| A5 |16 v-kerner |8 kerner, 50 GB RAM |8 kerner |60 pr. sekund |2.401-4.800 |
+| A6 |32 v-kerner |16 kerner, 100 GB RAM |16 kerner |120 pr. sekund |4.801-9600 |
 
-// Generate Embed Token.
-var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Dashboards.GenerateTokenInGroup(GroupId, dashboard.Id, generateTokenRequestParameters);
-
-// Generate Embed Configuration.
-var embedConfig = new EmbedConfig()
-{
-    EmbedToken = tokenResponse,
-    EmbedUrl = dashboard.EmbedUrl,
-    Id = dashboard.Id
-};
-```
+Nu kan du få vist den nye **Power BI Embedded-dedikerede kapacitet**.
 
-**Felt**
-
-```
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
+   ![PBIE-dedikeret kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-019.png)
 
-// Generate Embed Token for a tile.
-var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Tiles.GenerateTokenInGroup(GroupId, dashboard.Id, tile.Id, generateTokenRequestParameters);
-
-// Generate Embed Configuration.
-var embedConfig = new TileEmbedConfig()
-{
-    EmbedToken = tokenResponse,
-    EmbedUrl = tile.EmbedUrl,
-    Id = tile.Id,
-    dashboardId = dashboard.Id
-};
-```
-
-**Rapport**
-
-```
-using Microsoft.PowerBI.Api.V2;
-using Microsoft.PowerBI.Api.V2.Models;
-
-// Generate Embed Token.
-var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(GroupId, report.Id, generateTokenRequestParameters);
-
-// Generate Embed Configuration.
-var embedConfig = new EmbedConfig()
-{
-    EmbedToken = tokenResponse,
-    EmbedUrl = report.EmbedUrl,
-    Id = report.Id
-};
-```
-
-
-
-## <a name="step-4---load-an-item-using-javascript"></a>Trin 4: Indlæs et element, ved hjælp af JavaScript
-Du kan bruge JavaScript til at indlæse et dashboard i et div-element på din webside. Modellen EmbedConfig/TileEmbedConfig bruges sammen med visninger for et dashboard, et felt eller en rapport i dette eksempel. Hvis du vi se et komplet eksempel, hvor JavaScript API'en bruges, kan du bruge [prøveappen Microsoft Power BI Embedded](https://microsoft.github.io/PowerBI-JavaScript/demo).
-
-Du kan finde et eksempel på dette i [prøveappen Embedding for your organization](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
-
-**Views\Home\EmbedDashboard.cshtml**
-
-```
-<script src="~/scripts/powerbi.js"></script>
-<div id="dashboardContainer"></div>
-<script>
-    // Read embed application token from Model
-    var accessToken = "@Model.EmbedToken.Token";
-
-    // Read embed URL from Model
-    var embedUrl = "@Html.Raw(Model.EmbedUrl)";
-
-    // Read dashboard Id from Model
-    var embedDashboardId = "@Model.Id";
-
-    // Get models. models contains enums that can be used.
-    var models = window['powerbi-client'].models;
-
-    // Embed configuration used to describe the what and how to embed.
-    // This object is used when calling powerbi.embed.
-    // This also includes settings and options such as filters.
-    // You can find more information at https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embed-Configuration-Details.
-    var config = {
-        type: 'dashboard',
-        tokenType: models.TokenType.Embed,
-        accessToken: accessToken,
-        embedUrl: embedUrl,
-        id: embedDashboardId
-    };
-
-    // Get a reference to the embedded dashboard HTML element
-    var dashboardContainer = $('#dashboardContainer')[0];
-
-    // Embed the dashboard and display it within the div container.
-    var dashboard = powerbi.embed(dashboardContainer, config);
-</script>
-```
-
-**Views\Home\EmbedTile.cshtml**
-
-```
-<script src="~/scripts/powerbi.js"></script>
-<div id="tileContainer"></div>
-<script>
-    // Read embed application token from Model
-    var accessToken = "@Model.EmbedToken.Token";
-
-    // Read embed URL from Model
-    var embedUrl = "@Html.Raw(Model.EmbedUrl)";
-
-    // Read tile Id from Model
-    var embedTileId = "@Model.Id";
-
-    // Read dashboard Id from Model
-    var embedDashboardeId = "@Model.dashboardId";
-
-    // Get models. models contains enums that can be used.
-    var models = window['powerbi-client'].models;
-
-    // Embed configuration used to describe the what and how to embed.
-    // This object is used when calling powerbi.embed.
-    // This also includes settings and options such as filters.
-    // You can find more information at https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embed-Configuration-Details.
-    var config = {
-        type: 'tile',
-        tokenType: models.TokenType.Embed,
-        accessToken: accessToken,
-        embedUrl: embedUrl,
-        id: embedTileId,
-        dashboardId: embedDashboardeId
-    };
-
-    // Get a reference to the embedded tile HTML element
-    var tileContainer = $('#tileContainer')[0];
-
-    // Embed the tile and display it within the div container.
-    var tile = powerbi.embed(tileContainer, config);
-</script>
-```
-
-**Views\Home\EmbedReport.cshtml**
-
-```
-<script src="~/scripts/powerbi.js"></script>
-<div id="reportContainer"></div>
-<script>
-    // Read embed application token from Model
-    var accessToken = "@Model.EmbedToken.Token";
-
-    // Read embed URL from Model
-    var embedUrl = "@Html.Raw(Model.EmbedUrl)";
-
-    // Read report Id from Model
-    var embedReportId = "@Model.Id";
-
-    // Get models. models contains enums that can be used.
-    var models = window['powerbi-client'].models;
-
-    // Embed configuration used to describe the what and how to embed.
-    // This object is used when calling powerbi.embed.
-    // This also includes settings and options such as filters.
-    // You can find more information at https://github.com/Microsoft/PowerBI-JavaScript/wiki/Embed-Configuration-Details.
-    var config = {
-        type: 'report',
-        tokenType: models.TokenType.Embed,
-        accessToken: accessToken,
-        embedUrl: embedUrl,
-        id: embedReportId,
-        permissions: models.Permissions.All,
-        settings: {
-            filterPaneEnabled: true,
-            navContentPaneEnabled: true
-        }
-    };
-
-    // Get a reference to the embedded report HTML element
-    var reportContainer = $('#reportContainer')[0];
-
-    // Embed the report and display it within the div container.
-    var report = powerbi.embed(reportContainer, config);
-</script>
-```
-
-## <a name="next-steps"></a>Næste trin
-Du kan finde en prøveapp på GitHub, som du kan gennemse. Ovenstående eksempler er baseret på denne prøveapp. Du kan finde flere oplysninger i [Prøveappen Embedding for your organization](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
-
-Du kan finde flere oplysninger om JavaScript API'en i [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
-
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+## <a name="setup-your-power-bi-environment"></a>Konfigurer dit Power BI-miljø
 
+### <a name="create-an-app-workspace"></a>Opret et apparbejdsområde
+
+Hvis du integrerer rapporter, dashboards eller felter til dine kunder, skal du placere dit indhold i et apparbejdsområde. *Hovedkontoen* skal være administrator af apparbejdsområdet.
+
+1. Start med at oprette arbejdsområdet. Vælg **Arbejdsområder** > **Opret apparbejdsområde**. Det bliver det sted, hvor du skal placere indhold, som dit program skal have adgang til.
+
+    ![Opret arbejdsområde](media/embed-sample-for-customers/embed-sample-for-customers-020.png)
+
+2. Giv arbejdsområdet et navn. Hvis det tilsvarende **Arbejdsområde-id** ikke er tilgængeligt, skal du redigere det og angive et entydigt id. Dette vil også være navnet på appen.
+
+    ![Navngiv arbejdsområde](media/embed-sample-for-customers/embed-sample-for-customers-021.png)
+
+3. Du kan angive nogle forskellige indstillinger. Hvis du vælger **Offentligt** kan alle i din organisation se, hvad arbejdsområdet indeholder. **Privat** betyder, at det kun er medlemmerne af arbejdsområdet, der kan se indholdet.
+
+    ![Privat/Offentligt](media/embed-sample-for-customers/embed-sample-for-customers-022.png)
+
+    Du kan ikke ændre indstillingen Offentligt/Privat, efter at du har oprettet gruppen.
+
+4. Du kan også vælge, om medlemmer har adgang til at **redigere** eller har **skrivebeskyttet** adgang.
+
+    ![Tilføj medlemmer](media/embed-sample-for-customers/embed-sample-for-customers-023.png)
+
+5. Tilføj mailadresser på de personer, du vil give adgang til arbejdsområdet, og vælg **Tilføj**. Du kan ikke tilføje gruppealiasser. Kun enkeltpersoner.
+
+6. Beslut, om hver person skal være medlem eller administrator. Administratorer kan redigere selve arbejdsområdet, herunder tilføje andre medlemmer. Medlemmer kan redigere indholdet i arbejdsområdet, medmindre de har skrivebeskyttet adgang. Både administratorer og medlemmer kan udgive appen.
+
+7. Udvid **Avanceret**, aktivér **Dedikeret kapacitet**, og vælg derefter den **Power BI Embedded-dedikerede kapacitet**, du har oprettet. Vælg derefter **Gem**.
+
+    ![Tilføj medlemmer](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
+
+Du kan nu se det nye arbejdsområde. Power BI opretter arbejdsområdet og åbner det. Det vises på listen over de arbejdsområder, du er medlem af. Da du er administrator, kan du vælge de tre prikker (…) for at gå tilbage og ændre arbejdsområdet, tilføje nye medlemmer eller ændre deres tilladelser.
+
+   ![Nyt arbejdsområde](media/embed-sample-for-customers/embed-sample-for-customers-025.png)
+
+### <a name="create-and-publish-your-reports"></a>Opret og udgiv dine rapporter
+
+Du kan oprette rapporter og datasæt ved hjælp af Power BI Desktop og derefter udgive disse rapporter til et apparbejdsområde. Den slutbruger, der udgiver rapporterne, skal have en Power BI Pro-licens for at kunne udgive til et apparbejdsområde.
+
+1. Download eksemplet [Blogdemo](https://github.com/Microsoft/powerbi-desktop-samples) fra GitHub.
+
+    ![eksempelrapport](media/embed-sample-for-customers/embed-sample-for-customers-026-1.png)
+
+2. Åbn en PBIX-eksempelrapport i **Power BI Desktop**
+
+   ![PBI-skrivebordsrapport](media/embed-sample-for-customers/embed-sample-for-customers-027.png)
+
+3. Udgiv på **apparbejdsområdet**
+
+   ![PBI-skrivebordsrapport](media/embed-sample-for-customers/embed-sample-for-customers-028.png)
+
+    Nu kan du se rapporten online i Power BI-tjenesten
+
+   ![PBI-skrivebordsrapport](media/embed-sample-for-customers/embed-sample-for-customers-029.png)
+
+## <a name="embed-your-content"></a>Integrer dit indhold
+
+1. Download [eksemplet, hvor appen ejer data,](https://github.com/Microsoft/PowerBI-Developer-Samples) fra GitHub for at komme i gang.
+
+    ![Appen ejer data-programeksempel](media/embed-sample-for-customers/embed-sample-for-customers-026.png)
+
+2. Åbn filen Web.config i eksempelprogrammet. Der er 5 felter, som du skal udfylde for at køre programmet. **clientID**, **groupId**, **reportId**, **pbiUsername** og **pbiPassword**.
+
+      ![Web Config-fil](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
+
+    * Udfyld **clientId** med **program-id'et** fra **Azure**. **clientId** bruges af programmet til at identificere sig selv over for de brugere, som du anmoder om tilladelser fra. Hvis du vil hente **clientId**, skal du følge disse trin:
+
+        1. Log på [Azure-portalen](https://portal.azure.com).
+
+        ![Azure-hovedportal](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
+
+        2. Vælg **Alle tjenester** i navigationsruden til venstre, og vælg **Appregistreringer**.
+
+        ![Søg efter programregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
+        3. Vælg det program, du vil hente **clientId** for.
+
+        ![Vælg app](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
+
+      4. Du kan se et **program-id**, der er angivet som GUID. Brug dette **program-id** som **clientId** for programmet.
+
+        ![clientId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)     
+
+    * Udfyld **groupId** med **apparbejdsområde-GUID'et** fra Power BI.
+
+        ![groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+
+    * Udfyld **reportId** med **rapport-GUID'et** fra Power BI.
+
+        ![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)    
+
+    * Udfyld **pbiUsername** med den overordnede brugers Power BI-konto.
+    * Udfyld **pbiPassword** med adgangskoden for den overordnede brugers Power BI-konto.
+
+3. Kør programmet!
+
+    Først skal du vælge **Kør** i **Visual Studio**.
+
+    ![Kør programmet](media/embed-sample-for-customers/embed-sample-for-customers-033.png)
+
+    Vælg derefter **Integrer rapport**. Afhængigt af hvilket indhold du vælger at udføre test med – rapporter, dasboards eller felter – skal du vælge den pågældende indstilling i programmet.
+
+    ![Vælg indhold](media/embed-sample-for-customers/embed-sample-for-customers-034.png)
+ 
+    Du kan nu se rapporten i eksempelprogrammet.
+
+    ![Se program](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
+
+Hvis du vil se et komplet eksempel, hvor JavaScript API'en bruges, kan du bruge [værktøjet Playground](https://microsoft.github.io/PowerBI-JavaScript/demo). Med dette værktøj kan du nemt prøve dig frem med forskellige typer af Power BI Embedded-eksempler. Du kan også få flere oplysninger om JavaScript-API'en ved at gå til siden [PowerBI-JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki).
+
+Hvis du har flere spørgsmål om Power BI Embedded, kan du gå til siden med [ofte stillede spørgsmål](embedded-faq.md).  Hvis du har problemer med Power Bi Embedded i dit program, kan du gå til siden med [fejlfinding](embedded-troubleshoot.md).
+
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/) 

@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/21/2018
 ms.author: davidi
-ms.openlocfilehash: d4c32d82fb25fcce47900080d3c454623e14cd74
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.openlocfilehash: f28df3bff1759c1a0b06d49710a8c7df017229fa
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33810891"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips og tricks til oprettelse af rapporter i Power BI Desktop
 For at få mest muligt ud af dine data skal du nogle gange have lidt ekstra hjælp. Vi har samlet nogle tip og tricks, som du kan bruge, når du opretter rapporter i Microsoft Power BI Desktop *og* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-udgaver, hvor tilføjelsesprogrammet Power Pivot er aktiveret, og Power-forespørgsel er installeret og aktiveret. 
@@ -112,7 +113,7 @@ I Power BI Desktop kan du bruge et beregnet felt til at definere et histogram.  
 
 Gem dine ændringer, og vend tilbage til din rapport.  Føj \<Kolonnenavn\> og Frekvens til en tabel, og konvertér den derefter til et liggende søjlediagram.  Sørg for, at \<Kolonnenavn\> er på x-aksen, og at det beregnede felt Frekvens er på y-aksen.
 
-## <a name="tips-and-tricks-for-creating-relationships-in-power-bi-desktop"></a>Tip og gode råd til oprettelse af relationer i Power BI Desktop
+## <a name="tips-and-tricks-for-creating-relationships-in-power-bi-desktop"></a>Tips og tricks til oprettelse af relationer i Power BI Desktop
 Når du indlæser detaljedata fra flere kilder, vil problemer som null-værdier, tomme værdier eller dubletværdier ofte forhindre dig i at oprette relationer. 
 
 Lad os tage et kig på et eksempel: 
@@ -155,7 +156,7 @@ Du har nu en dimensionstabel, som du kan bruge til at relatere til CustomerIndic
 Forespørgselseditoren er et meget effektivt værktøj til manipulation af data, da det kan forme og rydde dem, så de er klar til visualisering og modellering. Der er et par mønstre, som du skal være opmærksom på.
 
 ### <a name="temporary-columns-can-be-deleted-after-computing-a-result"></a>Midlertidige kolonner kan slettes efter at have beregnet et resultat
-Ofte skal du oprette en beregning i Power BI Desktop, der transformerer data fra flere kolonner til en enkelt ny kolonne.  Det kan være avanceret.  En nem måde at løse problemet på er at opdele handlingen i flere trin.  Start med at kopiere de første kolonner. Opret derefter trinnene som midlertidige kolonner. Opret derefter en kolonne til det endelige resultat.  Du kan derefter slette de midlertidige kolonner, så det endelige datasæt ikke er rodet. Dette er muligt, fordi forespørgselsfanen udfører trinnene i rækkefølge. 
+Ofte skal du oprette en beregning i Power BI Desktop, der transformerer data fra flere kolonner til enkelt ny kolonne.  Det kan være avanceret.  En nem måde at løse problemet på er at opdele handlingen i flere trin.  Start med at kopiere de første kolonner. Opret derefter trinnene som midlertidige kolonner. Opret derefter en kolonne til det endelige resultat.  Du kan derefter slette de midlertidige kolonner, så det endelige datasæt ikke er rodet. Dette er muligt, fordi forespørgselsfanen udfører trinnene i rækkefølge. 
 
 ### <a name="duplicate-or-reference-queries-followed-by-merge-to-original-query"></a>Dublet- eller referenceforespørgsler, der er efterfulgt af fletning til den oprindelige forespørgsel
 Det kan undertiden være nyttigt at beregne oversigtsstatistikker for et datasæt.  Den nemme måde at gøre det på er at dublere eller referere til forespørgslen under forespørgselsfanen. Brug derefter **Gruppér efter** til at beregne oversigtsstatistikken.  Oversigtsstatistikken kan hjælpe dig med at normalisere dataene i de oprindelige data, så det er nemmere at sammenligne dem som i .  Dette er især nyttigt, når du vil sammenligne individuelle værdier med helheden.  Det kan du gøre ved at gå til den oprindelige forespørgsel og vælge fletteindstillingen.  Derefter skal du flette data fra forespørgslen med oversigtsstatistikken for at matche de relevante id'er.  Du er nu klar til at normalisere de data, der skal bruges til din analyse.
@@ -163,7 +164,7 @@ Det kan undertiden være nyttigt at beregne oversigtsstatistikker for et datasæ
 ## <a name="using-dax-for-the-first-time"></a>Brug DAX for første gang
 DAX er sproget til beregning af formler i Power BI Desktop.  Det er optimeret til BI-analyser.  Det adskiller sig måske en smule fra det, du kender, hvis du kun har brugt en forespørgselssprog, der ligner SQL. Der findes meget gode ressourcer, som du kan læse for at lære at bruge DAX, både online og i andet materiale. 
 
-[Hurtigstart: Grundlæggende DAX i Power BI Desktop](desktop-quickstart-learn-dax-basics.md)
+[Få mere at vide om grundlæggende DAX-funktioner i Power BI Desktop](desktop-quickstart-learn-dax-basics.md)
 
 [Henvisning til DAX (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx)
 

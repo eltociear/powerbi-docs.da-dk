@@ -18,11 +18,12 @@ ms.workload: powerbi
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c1b0d87d432dc337a1dab5d13bba10cc8c99dd14
-ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
+ms.openlocfilehash: 26d04c77967a8223672cbe174a3c45e6d12602ea
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33813363"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Bedste praksis for design af rapporter og visuals
 <!-- Shared newnav Include -->
@@ -262,7 +263,7 @@ Og til sidst skal du under **Titel** ændre **Skriftfarve** til hvid og tilføje
 
 **Rektangulær figur**
 
-Rektanglet er også forsvundet i den sorte baggrund.  For at løse dette kan du markere figuren og slå **Baggrund** til i ruden **Formatér figur**.
+Rektanglet er også forsvundet i den sorte baggrund.  For at løse dette kan du markere figuren og slå **Baggrund** Til i ruden **Formatér figur**.
 
 ![](media/power-bi-visualization-best-practices/power-bi-shape-format.png)
 
@@ -626,7 +627,7 @@ Her finder du flere oplysninger:
 
 * [Tilpas X- og Y-akserne](power-bi-visualization-customize-x-axis-and-y-axis.md)
 * [Kurvediagrammer og uregelmæssige intervaller](http://www.perceptualedge.com/articles/visual_business_intelligence/line_graphs_and_irregular_intervals.pdf)
-* [Kurvediagrammer 101](http://www.columnfivemedia.com/data-visualization-101-line-charts)
+* [Grundlæggende om kurvediagrammer](http://www.columnfivemedia.com/data-visualization-101-line-charts)
 
 ### <a name="barcolumn-charts"></a>Søjlediagrammer/liggende søjlediagrammer
 ![](media/power-bi-visualization-best-practices/power-bi-bar-chart.png)
@@ -655,7 +656,7 @@ Hvis kurvediagrammer er standarden for at se på data over tid, er liggende søj
 
 Her finder du flere oplysninger om søjlediagrammer og liggende søjlediagrammer:
 
-* [Liggende søjlediagrammer 101](http://blog.newscred.com/article/data-visualization-101-bar-charts)
+* [Grundlæggende om liggende søjlediagrammer](http://blog.newscred.com/article/data-visualization-101-bar-charts)
 * [Datavisualiseringskatalog: Liggende søjlediagram](http://www.datavizcatalogue.com/methods/bar_chart.html#.VYV-hY3bLJw)
 * [Datavisualiseringskatalog: Multisæt af liggende søjlediagrammer](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
 
@@ -734,7 +735,7 @@ Hvis du vil gøre dette, skal du åbne ruden Formatering, udvide **Y-aksen** og 
 
 Her finder du flere oplysninger:
 
-* [Selvstudium: Kombinationsdiagram i Power BI](power-bi-visualization-combo-chart.md)
+* [Kombinationsdiagram i Power BI](power-bi-visualization-combo-chart.md)
 * [Faren ved dobbeltskalerede akser i visuals](http://www.perceptualedge.com/articles/visual_business_intelligence/dual-scaled_axes.pdf)
 
 ### <a name="scatter-chart"></a>Punktdiagram
@@ -756,7 +757,7 @@ Hvis du tilføjer en afspilningsakse, kan du lade som om, du er Hans Rosling og 
 * Punkt- og boblediagrammer er fantastiske historiefortællere. Men de er ikke så nyttige, når du vil udforske data.  Dette er det, Stephen Few påpeger i afsnittet nedenfor *Styrken ved denne tilgang er, når den bruges til at fortælle en historie. Når Rosling fortæller, hvad der sker i diagrammet, når boblerne flytter rundt og ændrer værdi, og påpeger, hvad han vil have os til at se, så vækkes oplysningerne til live. Animerede boblediagrammer er dog meget mindre effektive til at udforske og udlede betydningen af data på egen hånd. Jeg tvivler på, at Rosling bruger denne metode til at opdage historierne, men kun til at fortælle dem, når de er kendt. Vi kan ikke følge mere end én boble ad gangen, når de flytter rundt, så vi er nødt til at køre animationen igen og igen for at forsøge at få en ide om, hvad der sker. Vi kan føje spor til valgte bobler, hvilket gør det muligt at følge hele den sti, disse bobler har flyttet sig, men hvis der bruges spor til mere end nogle få bobler, kan diagrammet hurtigt blive for rodet. I bund og grund forsøger jeg at pointere, at dette ikke er den bedste metode til at vise oplysninger til udforskning og analyse.*
 * Føj navne til X- og Y-aksen for at hjælpe med at fortælle historien.  Især med boblediagrammer er der mange komponenter i spil, og navne gør det lettere for læserne at forstå en visual.
 * Tilføj datanavne for at gøre det lettere at fortolke en visual.  Især med boblediagrammer kan det være svært at skelne mellem ensartede farver, når du har mange elementer i forklaringen.  I den ovenstående visual er forklaringsfarverne for Surinam, Columbia og Ecuador meget ensartede.
-* Har du oprettet et punktdiagram og kan kun se ét datapunkt, der lægger alle værdierne på X- og Y-aksen sammen? Eller sammenlægger dit diagram alle værdierne langs en enkelt vandret eller lodret linje?  For at løse dette problem skal du tilføje et felt i området **Oplysninger** for at fortælle Power BI, hvordan værdierne skal grupperes. Feltet skal være entydigt for hvert punkt, der skal afbildes. Hvis du har brug for hjælp, kan du se [selvstudiet om punktdiagrammer og boblediagrammer i Power BI](power-bi-visualization-scatter.md).
+* Har du oprettet et punktdiagram og kan kun se ét datapunkt, der lægger alle værdierne på X- og Y-aksen sammen? Eller sammenlægger dit diagram alle værdierne langs en enkelt vandret eller lodret linje?  For at løse dette problemet skal du tilføje et felt i området **Oplysninger** for at fortælle Power BI, hvordan værdierne skal grupperes. Feltet skal være entydigt for hvert punkt, der skal afbildes. Hvis du har brug for hjælp, kan du se [selvstudiet om punktdiagrammer og boblediagrammer i Power BI](power-bi-visualization-scatter.md).
 
 ### <a name="tree-map-charts"></a>Trækortdiagrammer
 ![](media/power-bi-visualization-best-practices/power-bi-treemap.png)
@@ -810,8 +811,8 @@ KPI'er viser værdi, status, mål, afvigelse fra mål og tendens på den samme m
 
 Her finder du flere oplysninger:
 
-* [Selvstudium: Radiale målerdiagrammer i Power BI](power-bi-visualization-radial-gauge-charts.md)
-* [Selvstudium: KPI'er i Power BI](power-bi-visualization-kpi.md)
+* [Radiale målerdiagrammer i Power BI](power-bi-visualization-radial-gauge-charts.md)
+* [KPI'er i Power BI](power-bi-visualization-kpi.md)
 
 ## <a name="conclusion"></a>Konklusion
 Nu er det blevet tid til, at du skal prøve disse bedste praksisser af i praksis.  Bevar forbindelsen, og del dine egne bedste praksisser. Er du uenig i vores anbefalinger, eller har du fundet en enestående årsag til at "bryde reglerne?"  Det vil vi også meget gerne høre om.  

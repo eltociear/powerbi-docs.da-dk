@@ -18,11 +18,12 @@ ms.workload: powerbi
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 2a92426061b37753c529b84a1de6b8068cb3bc5f
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.openlocfilehash: 79d72cefbf6c6e5cf27aa0e4f90b4a1eb3114013
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33810914"
 ---
 # <a name="using-calculated-columns-in-power-bi-desktop"></a>Brug beregnede kolonner i Power BI Desktop
 Med beregnede kolonner kan du føje nye data til en tabel, der allerede findes i din model. Men i stedet for at forespørge efter og indlæse værdier i din nye kolonne fra en datakilde kan du oprette en DAX-formel (Data Analysis Expressions), der definerer værdierne i kolonnen. I Power BI Desktop oprettes der beregnede kolonner ved hjælp af funktionen Ny kolonne i rapportvisningen.
@@ -59,7 +60,7 @@ Han kan føje det til sit rapportlærred sammen med antallet af forsendelser. Je
 ![](media/desktop-calculated-columns/calccolinpbid_citystatemap.png)
 
 ## <a name="learn-more"></a>Få mere at vide
-Vi har kun givet en hurtig introduktion til beregnede kolonner her. Husk at se selvstudiet [Opret beregnede kolonner i Power BI Desktop](desktop-tutorial-create-calculated-columns.md), hvor du kan downloade en eksempelfil og få trinvise vejledninger i, hvordan du opretter flere kolonner. 
+Vi har kun givet en hurtig introduktion til beregnede kolonner her. Husk at se selvstudiet [Selvstudium: Opret beregnede kolonner i Power BI Desktop](desktop-tutorial-create-calculated-columns.md), hvor du kan downloade en eksempelfil og få trinvise vejledninger i, hvordan du opretter flere kolonner. 
 
 Du kan få mere at vide om DAX under [Grundlæggende DAX i Power BI Desktop](desktop-quickstart-learn-dax-basics.md).
 

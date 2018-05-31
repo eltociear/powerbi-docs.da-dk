@@ -1,6 +1,6 @@
 ---
-title: 'Selvstudium: Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel i Power BI'
-description: 'Selvstudium: Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel'
+title: Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel i Power BI
+description: Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel
 services: powerbi
 documentationcenter: ''
 author: selvarms
@@ -18,13 +18,14 @@ ms.workload: powerbi
 ms.date: 10/12/2017
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 34ad1c6568dfd73dc65d561e4fed7bf8c4c63fbc
-ms.sourcegitcommit: e31fc1f6e4af427f8b480c8dbc537c3617c9b2c0
+ms.openlocfilehash: 85b76c5defe2fe20b5e90fbc7a8b094e28c40481
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33810845"
 ---
-# <a name="tutorial-dynamic-row-level-security-with-analysis-services-tabular-model"></a>Selvstudium: Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel
+# <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel
 I dette selvstudium vises de trin, der er nødvendige for at implementere **sikkerhed på rækkeniveau** i din **Analysis Services-tabelmodel**, og det vises, hvordan du bruger det i en Power BI-rapport. Trinnene i dette selvstudium er designet for at give dig mulighed for at følge med i og lære at udføre de nødvendige trin ved at gennemføre et eksempel på et datasæt.
 
 I løbet af dette selvstudium beskrives trinnene nedenfor udførligt, hvilket hjælper dig med at forstå, hvad du skal gøre for at implementere dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodellen:

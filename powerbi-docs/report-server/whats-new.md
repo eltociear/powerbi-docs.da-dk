@@ -15,25 +15,31 @@ ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 03/19/2018
+ms.date: 04/19/2018
 ms.author: maggies
-ms.openlocfilehash: 4f149baccf551762589c17bd6d6ba17c36f4da37
-ms.sourcegitcommit: 0473a155495a7a9ba4b899d0815100426718b7ac
+ms.openlocfilehash: 21769ee9c88dd2310da2a86be8dbadd1f17522ff
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33813248"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 Læs om nyheder i Power BI-rapportserver. Dette dækker de primære funktionsområder og opdateres i takt med, at der frigives nye elementer.
 
 Hvis du vil downloade Power BI-rapportserver og Power BI Desktop optimeret til Power BI-rapportserver, skal du gå til [Rapportering i det lokale miljø med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
 
-Du kan finde relaterede oplysninger om nyheder under:
+Kontrollér også disse kilder for at holde dig ajour med nye funktioner i Power BI-rapportserveren.
+
+* [Microsoft Power BI-blog](https://powerbi.microsoft.com/blog/)
+* [SQL Server Reporting Services-teamets blog](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
+* [Guy in a Cube YouTube-kanal](https://aka.ms/guyinacube)
+
+Du kan finde relaterede oplysninger om nyheder i Power BI under:
 
 * [Nyheder i Power BI-tjenesten](../service-whats-new.md)
 * [Nyheder i Power BI Desktop](../desktop-latest-update.md)
 * [Nyheder i mobilappsene til Power BI](../mobile-whats-new-in-the-mobile-apps.md)
-* [Power BI-temaets blog](https://powerbi.microsoft.com/blog/)
 
 ## <a name="march-2018-release"></a>Version fra marts 2018
 
@@ -103,7 +109,7 @@ Når du foretager detaljeudledning i en bestemt kategori i en visualisering, kan
 - [Søgning i ruderne Formatering og Analyse](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search)
 - [Ruden Feltegenskaber og feltbeskrivelser](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#fieldPropertiesPane)
 
-### <a name="analytics"></a>Analyse
+### <a name="analytics"></a>Analytics
 
 - [UTCNOW() og UTCTODAY()](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#utcDAX)
 - [Markér brugerdefineret datotabel](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
@@ -208,7 +214,7 @@ Power BI-rapportserver understøtter nu de nye Power BI-tabel- og matrixvisuals.
 ## <a name="next-steps"></a>Næste trin
 [Brugerhåndbog](user-handbook-overview.md)  
 [Administratorhåndbog](admin-handbook-overview.md)  
-[Hurtigstart: Installér Power BI Report Server](quickstart-install-report-server.md)  
+[Installer Power BI-rapportserver](install-report-server.md)  
 [Installér Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 

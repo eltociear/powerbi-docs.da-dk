@@ -1,33 +1,34 @@
 ---
-title: Form og kombiner data i Power BI Desktop
-description: Form og kombiner data i Power BI Desktop
-services: powerbi
-documentationcenter: ''
+title: Form og kombiner data fra flere kilder
+description: I dette selvstudium lærer du, hvordan du former og kombinerer data i Power BI Desktop
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/30/2018
+ms.component: powerbi-desktop
+ms.topic: tutorial
+ms.date: 05/03/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 0bb2f8a8d9299d525085a8ba7d2ecabdcd9e6c78
-ms.sourcegitcommit: afa10c016433cf72d6d366c024b862187a8692fd
+ms.openlocfilehash: 27479add7839e1078e76bbb6523b287f10194566
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34288745"
 ---
-# <a name="shape-and-combine-data-in-power-bi-desktop"></a>Form og kombiner data i Power BI Desktop
-I **Power BI Desktop** kan du oprette forbindelse til mange forskellige typer datakilder og derefter forme dataene til dine behov. At *forme* data betyder, at dataene skal transformeres – for eksempel omdøbning af kolonner eller tabeller, ændring af tekst til tal, fjernelse af rækker, angivelse af den første række som overskrifter osv. At *kombinere* data betyder, at der oprettes forbindelse til to eller flere datakilde, dataene formes efter behov, og de konsolideres derefter i én forespørgsel.
+# <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Selvstudium: Form og kombiner data i Power BI Desktop
 
-I denne artikel beskrives, hvordan en forespørgsel formes ved hjælp af Power BI Desktop, og nogle af de mest almindelige opgaver fremhæves. Den forespørgsel, der bruges her, er beskrevet mere detaljeret under [Introduktion til Power BI Desktop](desktop-getting-started.md), hvor du også kan se, hvordan de opretter forespørgslen fra bunden.
+I **Power BI Desktop** kan du oprette forbindelse til mange forskellige typer datakilder og derefter forme dataene til dine behov, så du kan oprette visuelle rapporter, som du kan dele med andre. At *forme* data betyder, at dataene skal transformeres – for eksempel omdøbning af kolonner eller tabeller, ændring af tekst til tal, fjernelse af rækker, angivelse af den første række som overskrifter osv. At *kombinere* data betyder, at der oprettes forbindelse til to eller flere datakilde, dataene formes efter behov, og de konsolideres derefter i én forespørgsel.
+
+I dette selvstudium lærer du, hvordan du kan:
+
+* Forme data ved hjælp af **forespørgselseditoren**
+* Oprette forbindelse til en datakilde
+* Oprette forbindelse til en anden datakilde
+* Kombinere datakilderne og oprette en datamodel, der skal bruges i rapporter
+
+I dette selvstudium vises, hvordan en forespørgsel formes ved hjælp af Power BI Desktop, og nogle af de mest almindelige opgaver fremhæves. Den forespørgsel, der bruges her, er beskrevet mere detaljeret under [Introduktion til Power BI Desktop](desktop-getting-started.md), hvor du også kan se, hvordan de opretter forespørgslen fra bunden.
 
 Det er praktisk at vide, at du kan bruge genvejsmenuer og båndet i **Forespørgselseditor** i Power BI Desktop. Det meste af det, du kan vælge på båndet **Transformér**, er også tilgængeligt, hvis du højreklikker på et element (f.eks. en kolonne) og vælger i den viste menu.
 

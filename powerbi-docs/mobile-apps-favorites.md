@@ -1,27 +1,28 @@
 ---
 title: Favoritter i Power BI-mobilapps
-description: "Læs, hvordan du føjer dine Power BI-dashboards, -rapporter og -apps samt rapporter og KPI'er i Power BI-rapportserver og Reporting Services til Favoritter og får dem vist i mobilapps."
+description: Læs, hvordan du føjer dine Power BI-dashboards, -rapporter og -apps samt rapporter og KPI'er i Power BI-rapportserver og Reporting Services til Favoritter og får dem vist i mobilapps.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 02/09/2018
+ms.date: 05/05/2018
 ms.author: maggies
-ms.openlocfilehash: d3b53618f43652fffcb53502fd9d55ef91f2aff3
-ms.sourcegitcommit: ad9bd4e52471b1179f46f847960d5ed79c0c0761
+ms.openlocfilehash: 4edffdbf918e4ccf7e31821d359df54dfc275f46
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/11/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33812144"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Føj til Favoritter, og få dem vist i Power BI-mobilapps
 Gælder for:
@@ -80,7 +81,7 @@ Du kan føje et dashboard eller en rapport til Favoritter fra listen over dashbo
     ![Android-stjernen Favoritter](media/mobile-apps-favorites/power-bi-android-favorite-in-dashboard.png)
 
 ## <a name="make-favorite-power-bi-report-server-and-reporting-services-reports-and-kpis"></a>Gør Power BI-rapportserver- og Reporting Services-rapporter og -KPI'er til favoritter
-Du kan se dine foretrukne Power BI-rapportserver- og Reporting Services-rapporter og -KPI'er i Power BI-mobilapps, men du kan ikke gøre dem til favoritter i mobilapps. Du kan [angive dem som favoritter på webportalen](report-server/getting-around.md#tag-your-favorite-reports-and-kpis). 
+Du kan se dine foretrukne Power BI-rapportserver- og Reporting Services-rapporter og -KPI'er i Power BI-mobilapps, men du kan ikke gøre dem til favoritter i mobilapps. Du kan [angive dem som favoritter på webportalen](report-server/tutorial-explore-report-server-web-portal.md#tag-your-favorites). 
 
 ## <a name="next-steps"></a>Næste trin
 * [Foretrukne dashboards i Power BI-tjenesten](service-dashboard-favorite.md) 

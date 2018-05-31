@@ -15,36 +15,82 @@ ms.devlang: NA
 ms.topic: get-started-article
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 04/04/2018
+ms.date: 05/07/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 50dd3dcf791cd3f2e366957ad37c830b7f4c35f2
-ms.sourcegitcommit: e571de2afa3f34fac06a6aab0df0e8940cb00a0d
+ms.openlocfilehash: 11e1b210d6d90f0f813f378775daac36e53dbaf0
+ms.sourcegitcommit: 509be8852ba7595b9441c9479224f9dca298b26d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 05/09/2018
+ms.locfileid: "33917176"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
 I denne artikel beskrives tidligere opdateringer til **Power BI Desktop**. For den seneste måneds udgave kan du se [Seneste opdateringer til **Power BI Desktop**](desktop-latest-update.md).
 
-I de følgende afsnit beskrives tidligere måneders opdateringer til **Power BI Desktop**.
-
 Du kan til enhver tid [downloade den seneste version af Power BI Desktop](https://powerbi.microsoft.com/desktop). Hvis du kører Windows 10, kan du også få **Power BI Desktop** fra Windows Store. De månedlige versioner er de samme, uanset hvilken måde du installerer **Power BI Desktop** på. Du kan finde flere oplysninger i [denne artikel](desktop-get-the-desktop.md). 
-
-
-Vi føler os lige så heldige som en firkløver med opdateringer til **Power BI Desktop** i marts.
 
 Linkene ud for hver opdatering betyder følgende:
 
 * **[video]** angiver, at videoen afspilles på en ny fane i browseren, når funktionen beskrives.
 * Til nogle funktioner findes der en **[artikel]**, hvor funktionen beskrives mere detaljeret.
-* De fleste funktioner i den månedlige opdatering beskrives i et **[blog]**indlæg.
+* De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
 Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
 
-Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
+I de følgende afsnit beskrives tidligere måneders opdateringer til **Power BI Desktop**.
+
+## <a name="april-2018-update-2575068501"></a>Opdatering fra april 2018 (2.57.5068.501)
+
+Vi mener det, når vi siger, at vi er meget glade for aprils opdateringer til **Power BI Desktop**. Vi har fordelt opdateringerne over en håndfuld områder og håber, at de vil hjælpe dig med at forbedre dine fremtidige rapporter med fantastiske, smukke visualiseringer. 
+
+
+### <a name="reporting"></a>Rapportering
+
+* Spørgsmål og svar til Stifinder [[video]](https://youtu.be/W_Nb73Od_AI?t=13s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#Q&AExplorer) 
+* Knapper til at udløse handlinger [[video]](https://youtu.be/W_Nb73Od_AI?t=9m42s) [[artikel]](desktop-buttons.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#buttons) 
+* Stregtype i kombinationsdiagram [[video]](https://youtu.be/W_Nb73Od_AI?t=16m55s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#comboLines) 
+* Forbedret standardsortering af visualiseringer [[video]](https://youtu.be/W_Nb73Od_AI?t=19m21s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#sort) 
+* Numerisk udsnitsværktøj er nu generelt tilgængelig [[video]](https://youtu.be/W_Nb73Od_AI?t=21m13s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#numericSlicer) 
+
+### <a name="analytics"></a>Analytics
+
+* Opdater dit sproglige skema [[video]](https://youtu.be/W_Nb73Od_AI?t=22m) [[artikel]](power-bi-custom-visuals-organization.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#linguisticSchema) 
+* Ny DAX-funktion: COMBINEVALUES() [[video]](https://youtu.be/W_Nb73Od_AI?t=23m37s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#combineValues) 
+
+### <a name="custom-visuals"></a>Brugerdefinerede visuelle elementer
+
+* Visualiseringer til organisationer er nu generelt tilgængelige [[video]](https://youtu.be/W_Nb73Od_AI?t=26m11s) [[artikel]](power-bi-custom-visuals-organization.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#organizationalVisuals) 
+* Mange nye brugerdefinerede visualiseringer [[video]](https://youtu.be/W_Nb73Od_AI?t=28m8s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#overviewByCloudScope) 
+
+### <a name="data-connectivity"></a>Dataforbindelse
+
+* Adobe Analytics-connector er nu generel tilgængelig [[video]](https://youtu.be/kuI6MMzDh34?t=32m) [[artikel]](desktop-multi-select.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#adobeAnalytics) 
+* Forbedret SAP HANA-connector: Portvalg [[video]](https://youtu.be/kuI6MMzDh34?t=32m44s) [[artikel]](desktop-directquery-sap-hana.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#sapHana) 
+* Dynamics 365 Business Central-connector [[video]](https://youtu.be/kuI6MMzDh34?t=34m10s) [[artikel]](desktop-directquery-sap-hana.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary/#dynamics365BusinessCentral) 
+
+
+
+> [!NOTE]
+> Du kan også [se alle de datakilder, du kan bruge i Power BI Desktop](desktop-data-sources.md). Vi opdaterer hele tiden listen med nye datakilder, så kig tilbage ofte.
+
+Vil du have flere oplysninger om disse opdateringer? Se nærmere på [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2018-feature-summary), hvor du kan få mere detaljerede oplysninger om hver af de nye funktioner (dette er de samme referencer til blogindlæg på listen herover).
+
+
+I følgende video beskrives og vises hver af disse opdateringer. Du kan også se videoen i blogindlægget.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W_Nb73Od_AI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+> [!NOTE]
+> Du kan også læse om [nyhederne i Power BI-tjenesten](service-whats-new.md) og se [nyhederne i mobilappsene til Power BI](mobile-whats-new-in-the-mobile-apps.md).
+
+
+
+## <a name="march-2018-update-"></a>Marts 2018-opdatering ()
+
+Vi føler os lige så heldige som en firkløver med opdateringer til **Power BI Desktop** i marts. Følgende opdateringer var nye i **Power BI Desktop** i marts:
 
 ### <a name="reporting"></a>Rapportering
 
@@ -96,7 +142,7 @@ Linkene ud for hver opdatering betyder følgende:
 
 * **[video]** angiver, at videoen afspilles på en ny fane i browseren, når funktionen beskrives.
 * Til nogle funktioner findes der en **[artikel]**, hvor funktionen beskrives mere detaljeret.
-* De fleste funktioner i den månedlige opdatering beskrives i et **[blog]**indlæg.
+* De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** indlæg.
 * Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
 Du kan også se videoen med de **seneste opdateringer** for denne måned fra starten direkte i denne artikel. Det gør du ved at klikke på ikonet **afspil** på videobilledet under listen med opdateringer.
@@ -118,7 +164,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i februar 2018:
 * Brugerdefinerede visualiseringer til organisationer (prøveversion) [[video]](https://youtu.be/KeVB5RwMzJo?t=19m23s) [[artikel]](power-bi-custom-visuals-organization.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#organizationalVisuals) 
 
 
-### <a name="analytics"></a>Analyse
+### <a name="analytics"></a>Analytics
 
 * Angiv en brugerdefineret datatabel [[video]](https://youtu.be/KeVB5RwMzJo?t=16m4s) [[artikel]](desktop-date-tables.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
 * Hurtigmålinger er nu generelt tilgængelige [[video]](https://youtu.be/KeVB5RwMzJo?t=17m52s) [[artikel]](desktop-quick-measures.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#quickMeasures) 
@@ -159,7 +205,7 @@ Linkene ud for hver opdatering betyder følgende:
 
 * **[video]** angiver, at videoen afspilles på en ny fane i browseren, når funktionen beskrives.
 * Til nogle funktioner findes der en **[artikel]**, hvor funktionen beskrives mere detaljeret.
-* De fleste funktioner i den månedlige opdatering beskrives i et **[blog]**indlæg.
+* De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** indlæg.
 -   Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
 Du kan også se videoen med de **seneste opdateringer** for denne måned fra starten direkte i denne artikel. Det gør du ved at klikke på ikonet **afspil** på videobilledet under listen med opdateringer.
@@ -177,7 +223,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i januar:
 -   Top N-valg i spørgsmål og svar [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#topN) 
 -   Mange nye brugerdefinerede visualiseringer [[video]](https://youtu.be/W8Pp5wuCXJw?t=11m32s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#customVisuals) 
 
-### <a name="analytics"></a>Analyse
+### <a name="analytics"></a>Analytics
 
 -   Hurtig måling af korrelationskoefficient [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#correlationCoefficient) 
 
@@ -209,7 +255,7 @@ Linkene ud for hver opdatering betyder følgende:
 
 -   **[video]** angiver, at videoen afspilles på en ny fane i browseren, når funktionen beskrives.
 -   Til nogle funktioner findes der en **[artikel]**, hvor funktionen beskrives mere detaljeret.
--   De fleste funktioner i den månedlige opdatering beskrives i et **[blog]**indlæg.
+-   De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** indlæg.
 -   Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
 Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
@@ -228,7 +274,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i december:
 -   Nyligt udgivne brugerdefinerede visualiseringer [[video]](https://youtu.be/ZPU8B-1BxjI?t=18m25s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#customVisuals) 
 
 
-### <a name="analytics"></a>Analyse
+### <a name="analytics"></a>Analytics
 
 -   Analysér filtrerer andre visuals [[video]](https://youtu.be/ZPU8B-1BxjI?t=28m53s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals) 
 
@@ -264,7 +310,7 @@ Linkene ud for hver opdatering betyder følgende:
 
 -   **[video]** angiver, at videoen afspilles på en ny fane i browseren, når funktionen beskrives.
 -   Til nogle funktioner findes der en **[artikel]**, hvor funktionen beskrives mere detaljeret.
--   De fleste funktioner i den månedlige opdatering beskrives i et **[blog]**indlæg.
+-   De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** indlæg.
 -   Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
 Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
@@ -323,7 +369,7 @@ Linkene ud for hver opdatering betyder følgende:
 
 -   **[video]** angiver, at videoen afspilles på en ny fane i browseren, når funktionen beskrives.
 -   Til nogle funktioner findes der en **[artikel]**, hvor funktionen beskrives mere detaljeret.
--   De fleste funktioner i den månedlige opdatering beskrives i et **[blog]**indlæg.
+-   De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** indlæg.
 -   Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
 Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
@@ -940,7 +986,7 @@ I august kom der en lang række nye funktioner til Power BI Desktop:
 
 -   **[video]** angiver, at videoen afspilles på en ny fane i browseren, når funktionen beskrives.
 -   Til nogle funktioner findes der en **[artikel]**, hvor funktionen beskrives mere detaljeret.
--   De fleste funktioner i den månedlige opdatering beskrives i et **[blog]**indlæg.
+-   De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** indlæg.
 -   Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
 Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilleder under listen med opdateringer.

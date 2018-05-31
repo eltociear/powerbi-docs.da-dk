@@ -1,29 +1,22 @@
 ---
-title: 'Hurtigstart: Opret en Power BI-rapport til Power BI-rapportserver'
+title: Opret en Power BI-rapport til Power BI-rapportserveren
 description: Få mere at vide om, hvordan du opretter en Power BI-rapport til Power BI-rapportserver med nogle få hurtige trin.
-services: powerbi
-documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 3/22/2018
 ms.author: maggies
-ms.openlocfilehash: 7c0f7ad804a61aeade6f120f2a2d2bd048219ee2
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: 9f5ea2a83fff37be07933669403b7eb53ceb09c0
+ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34310471"
 ---
-# <a name="quickstart-create-a-power-bi-report-for-power-bi-report-server"></a>Hurtigstart: Opret en Power BI-rapport til Power BI-rapportserver
+# <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Opret en Power BI-rapport til Power BI-rapportserveren
 Du kan gemme og administrere Power BI-rapporter i det lokale miljø på Microsoft Power BI-rapportservers webportal, på samme måde som du kan gemme Power BI-rapporter i skyen i Power BI-tjenesten (https://powerbi.com). Du kan oprette og redigere rapporter i Power BI Desktop og publicere dem på webportalen. Derefter kan rapportlæsere i din organisation få dem vist i en browser eller i en Power BI-mobilapp på en mobilenhed.
 
 ![Power BI-rapport i webportalen](media/quickstart-create-powerbi-report/report-server-powerbi-report.png)
@@ -131,11 +124,10 @@ Rapporter i Power BI-rapportserver understøtter ikke disse funktioner i Power B
 
 ## <a name="next-steps"></a>Næste trin
 ### <a name="power-bi-desktop"></a>Power BI Desktop
-Der er så mange fantastiske ressourcer til at oprette rapporter i Power BI Desktop. Disse links er et godt sted at starte.
+Der er så mange fantastiske ressourcer til at oprette rapporter i Power BI Desktop. Dette link er et godt udgangspunkt.
 
-* [Introduktion til Power BI Desktop](../desktop-getting-started.md)
-* Automatiseret læring: [Introduktion til Power BI Desktop](../guided-learning/gettingdata.yml#step-2)
-
+* [Kom i gang med Power BI Desktop](../desktop-getting-started.md)
+* Automatiseret læring: [Introduktion til Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)
 
 ### <a name="power-bi-report-server"></a>Power BI Report Server
 * [Installer Power BI Desktop optimeret til Power BI-rapportserver](install-powerbi-desktop.md)  

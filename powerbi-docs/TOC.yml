@@ -1022,7 +1022,7 @@
           href: report-server/system-requirements.md
         - name: Browser-support
           href: report-server/browser-support.md
-        - name: Rapportserver til administratorer
+        - name: Administratoroversigt
           href: report-server/admin-handbook-overview.md
         - name: Grundlæggende om rapportserver
           items:
@@ -1080,6 +1080,8 @@
               href: report-server/migrate-report-server.md
             - name: Konfigurer Kerberos til at bruge Power BI-rapporter
               href: report-server/configure-kerberos-powerbi-reports.md
+            - name: Konfigurer mobilappen til fjernadgang
+              href: report-server/configure-powerbi-mobile-apps-remote.md
             - name: Excel-projektmapper
               href: report-server/excel-oos.md
     - name: Reference

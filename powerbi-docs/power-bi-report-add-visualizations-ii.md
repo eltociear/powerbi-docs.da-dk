@@ -1,15 +1,15 @@
 ---
-title: "Del 2 – Føj visualiseringer til en Power BI-rapport (selvstudium)"
-description: "Selvstudium: Del 2 – Føj visualiseringer til en Power BI-rapport"
+title: Del 2, Føj visualiseringer til en rapport i Power BI
+description: Del 2, Føj visualiseringer til en rapport i Power BI
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: mihart
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
 ms.devlang: NA
 ms.topic: article
@@ -18,19 +18,20 @@ ms.workload: powerbi
 ms.date: 01/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 567bece0089a01170e218af9606331e44cb7834f
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: 39f11f2740918e5ec3fc62c86c72bac4544d5ff6
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33814306"
 ---
-# <a name="part-2-add-visualizations-to-a-power-bi-report-tutorial"></a>Del 2 – Føj visualiseringer til en Power BI-rapport (selvstudium)
+# <a name="part-2-add-visualizations-to-a-power-bi-report"></a>Del 2, Føj visualiseringer til en rapport i Power BI
 I [Del 1](power-bi-report-add-visualizations-ii.md) oprettede du en grundlæggende visualisering ved at markere afkrydsningsfelter ud for feltnavne.  I Del 2 lærer du, hvordan du bruger træk og slip samt benytter ruderne **Felter** og **Visualiseringer** til at oprette og redigere visualiseringer.
 
 ### <a name="prerequisites"></a>Forudsætninger
 - [Del 1](power-bi-report-add-visualizations-ii.md)
 - Power BI-tjenesten – visualiseringer kan føjes til rapporter ved hjælp af Power BI-tjenesten eller Power BI Desktop. I dette selvstudium bruges Power BI-tjenesten. 
-- Retail Analysis Sample
+- Eksempel på analyse af detailhandel
 
 ## <a name="create-a-new-visualization"></a>Opret en ny visualisering
 I dette selvstudium gennemgår vi vores Retail Analysis-datasæt og opretter nogle få vigtige visualiseringer.

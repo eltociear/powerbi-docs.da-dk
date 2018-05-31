@@ -1,31 +1,24 @@
 ---
-title: Introduktion til formatering af Power BI-visualiseringer (selvstudium)
-description: 'Selvstudium: Tilpas visualiseringstitel, -baggrund og -forklaring'
-services: powerbi
-documentationcenter: 
+title: Introduktion til formatering af Power BI-visualiseringer
+description: Tilpas visualiseringens titel, baggrund og forklaring
 author: mihart
 manager: kfile
-backup: 
-editor: 
+ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
-tags: 
-qualityfocus: monitoring
-qualitydate: 
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e81f4e9ede3591accc94576291179b4fd40215e5
-ms.sourcegitcommit: 88c8ba8dee4384ea7bff5cedcad67fce784d92b0
+ms.openlocfilehash: d65281539bcc27ce24971a6da0945908ba65e754
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34297095"
 ---
-# <a name="customize-visualization-titles-legends-and-backgrounds-tutorial"></a>Tilpas visualiseringstitler, -forklaringer og baggrunde (selvstudium)
+# <a name="customize-visualization-titles-legends-and-backgrounds"></a>Tilpas visualiseringernes titler, forklaringer og baggrunde
 I dette selvstudium lærer du et par forskellige måder, hvorpå du kan tilpasse dine visualiseringer.   Der findes mange muligheder for at tilpasse dine visualiseringer. Den bedste måde at lære dem at kende på, er ved at prøve sig frem med indstillingerne under fanen Formatering (vælg ikonet med malerullen).  I denne artikel kan du se, hvordan du tilpasser en visualiserings titel, forklaring og baggrund.  
 
 Det er ikke alle visualiseringer, der kan tilpasses. [Se en komplet oversigt](#list).  
@@ -36,7 +29,7 @@ Se Amanda tilpasse visualiseringerne i hendes rapport (spol frem til 4:50 i vide
 
 ### <a name="prerequisites"></a>Forudsætninger
 - Power BI-tjenesten eller Power BI Desktop
-- Retail Analysis Sample
+- Eksempel på analyse af detailhandel
 
 ## <a name="customize-visualization-titles-in-reports"></a>Tilpas titler på visualiseringer i rapporter
 Hvis du vil følge med, skal du logge på Power BI-tjenesten (app.powerbi.com) og [åbne rapporten Retail Analysis Sample](sample-datasets.md) i [redigeringsvisning](service-interact-with-a-report-in-editing-view.md).

@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 03/22/2018
 ms.author: maggies
-ms.openlocfilehash: c22e909130767abd1dc6f0aa00d76e1fb6b99ee7
-ms.sourcegitcommit: fe859130099d923ee30da6091efcc70a264dcba6
+ms.openlocfilehash: b67cfbcb495fef45ec3f44ceab77b794a9110617
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33813685"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installér Power BI Desktop optimeret til Power BI-rapportserver
 Se, hvordan du kan installere Power BI Desktop optimeret til Power BI-rapportserver.
@@ -109,9 +110,8 @@ Hvis du har en tidligere version af rapportserveren, skal du have den tilsvarend
 ## <a name="next-steps"></a>Næste trin
 Nu, hvor du har installeret Power BI Desktop, kan du begynde at oprette Power BI-rapporter.
 
-[Hurtigstart: Opret en Power BI-rapport til Power BI-rapportserver](quickstart-create-powerbi-report.md)  
-[Introduktion til Power BI Desktop](../desktop-getting-started.md)  
-Automatiseret læring: [Introduktion til Power BI Desktop](../guided-learning/gettingdata.yml#step-2)  
+[Opret en Power BI-rapport til Power BI-rapportserveren](quickstart-create-powerbi-report.md)  
+[Kom i gang med Power BI Desktop](../desktop-getting-started.md)  
 [Oversigt over udviklerhåndbog, Power BI-rapportserver](user-handbook-overview.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

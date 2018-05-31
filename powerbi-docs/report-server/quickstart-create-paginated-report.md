@@ -1,29 +1,22 @@
 ---
-title: 'Hurtigstart: Opret en sideinddelt rapport for Power BI-rapportserver'
-description: "Få mere at vide om, hvordan du opretter en sideinddelt rapport for Power BI-rapportserver med nogle få hurtige trin."
-services: powerbi
-documentationcenter: 
+title: Opret en sideinddelt rapport til Power BI-rapportserver
+description: Få mere at vide om, hvordan du opretter en sideinddelt rapport for Power BI-rapportserver med nogle få hurtige trin.
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
-qualityfocus: no
-qualitydate: 
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
-ms.openlocfilehash: 1e77a1ef92826010d6bc2fa28749a2ee17bbe723
-ms.sourcegitcommit: 99cc3b9cb615c2957dde6ca908a51238f129cebb
+ms.openlocfilehash: 75810bfad9efd5a0ea42a07d44a61d4f92f7f232
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34294910"
 ---
-# <a name="quickstart-create-a-paginated-report-for-power-bi-report-server"></a>Hurtigstart: Opret en sideinddelt rapport for Power BI-rapportserver
+# <a name="create-a-paginated-report-for-power-bi-report-server"></a>Opret en sideinddelt rapport til Power BI-rapportserver
 Som navnet antyder så kan sideinddelte rapporter løbe op i mange sider. De er udformet i et fast format og tillader præcis tilpasning. Sideinddelte rapporter er .rdl-filer.
 
 Du kan gemme og administrere sideinddelte rapporter på Power BI-rapportserverens webportal nøjagtigt som på SQL Server Reporting Services (SSRS)-webportalen. Du kan oprette og redigere dem i Report Builder eller Rapportdesigner i SQL Server Data Tools (SSDT) og derefter publicere dem på den ene eller anden portal. Derefter kan rapportlæsere i din organisation få vist dem i en browser eller i en Power BI-mobilapp på en mobilenhed.
