@@ -1,75 +1,96 @@
 ---
-title: "Stil spørgsmål med den virtuelle Spørgsmål og svar-analytiker i iOS-apps – Power BI"
-description: "I denne vejledning kan du prøve at stille spørgsmål om disse eksempeldata med dine egne ord ved hjælp af den virtuelle Spørgsmål og svar-analytiker i Power BI-mobilappen på din iOS-enhed."
+title: Virtuel Spørgsmål og svar-analytiker i iOS-apps – Power BI
+description: Stil spørgsmål om eksempeldata med dine egne ord ved hjælp af den virtuelle Spørgsmål og svar-analytiker i Power BI-mobilappen på din iOS-enhed.
 services: powerbi
-documentationcenter: 
+documentationcenter: ''
 author: maggiesMSFT
 manager: kfile
-backup: 
-editor: 
-tags: 
+backup: ''
+editor: ''
+tags: ''
 qualityfocus: no
-qualitydate: 
+qualitydate: ''
 ms.service: powerbi
+ms.component: powerbi-mobile
 ms.devlang: NA
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 10/13/2017
+ms.date: 05/05/2018
 ms.author: maggies
-ms.openlocfilehash: 531d067566a03289f0806d21309e9db7cfb837b1
-ms.sourcegitcommit: d803e85bb0569f6b357ba0586f5702c20d27dac4
+ms.openlocfilehash: eaa8960de53b5c3e48c4bd619469beeec384b033
+ms.sourcegitcommit: 493f160d04ed411ff4741c599adc63ba1f65230f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33812167"
 ---
-# <a name="ask-questions-about-your-data-with-the-qa-virtual-analyst-in-ios-apps---power-bi"></a>Stil spørgsmål om dine data ved hjælp af den virtuelle Spørgsmål og svar-analytiker i iOS-apps – Power BI
-Kan anvendes med:
+# <a name="qa-virtual-analyst-in-ios-apps---power-bi"></a>Virtuel Spørgsmål og svar-analytiker i iOS-apps – Power BI
+
+Den nemmeste måde at få mere at vide om dine data er at stille spørgsmål om dem med dine egne ord. I denne artikel kan du stille spørgsmål og få vist udvalgt indsigt i eksempeldata med den virtuelle Spørgsmål og svar-analytiker i Microsoft Power BI-mobilappen på iPad, iPhone og iPod Touch. 
+
+Gælder for:
 
 | ![iPhone](media/mobile-apps-ios-qna/iphone-logo-50-px.png) | ![iPad](media/mobile-apps-ios-qna/ipad-logo-50-px.png) |
 |:--- |:--- |
-| iPhone-telefoner |iPads |
+| iPhone-telefoner |iPad-tablets |
 
-Den nemmeste måde at få mere at vide om dine data er at stille spørgsmål om dem med dine egne ord. Prøv at stille spørgsmål og få vist udvalgt indsigt i eksempeldata i denne vejledning ved hjælp af den virtuelle Spørgsmål og svar-analytiker.
+Den virtuelle Spørgsmål og svar-analytiker er en BI-samtaleoplevelse, der har adgang til underliggende Spørgsmål og svar-data i Power BI-tjenesten [(https://powerbi.com)](https://powerbi.com). Den foreslår indsigt i data, og du kan skrive eller indtale dine egne spørgsmål.
 
 ![Bedste virtuelle Spørgsmål og svar-analytiker](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-top-sale-intro.png)
 
-I Microsoft Power BI-mobilappen på din iPad, iPhone og iPod Touch er den virtuelle Spørgsmål og svar-analytiker en almindelig BI-oplevelse, der udvider den tidligere version af Spørgsmål og svar i iOS. Den virtuelle Spørgsmål og svar-analytiker har stadig adgang til underliggende Spørgsmål og svar-data i Power BI-tjenesten [(https://powerbi.com)](https://powerbi.com). Du kan stadig skrive eller stille et spørgsmål, og den leverer også dataindsigt i kontekst.
+Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
 
-## <a name="download-the-samples"></a>Download eksemplerne
-Det første skridt i vejledningen er at downloade eksemplerne på detailhandelsanalyse og analyse af salgsmuligheder i Power BI-tjenesten.
+## <a name="prerequisites"></a>Forudsætninger
 
-* I dit arbejdsområde på Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)):
+### <a name="install-the-power-bi-for-ios-app"></a>Installér Power BI til iOS-apps
+[Download iOS-appen](http://go.microsoft.com/fwlink/?LinkId=522062 "Download iPhone-appen") fra Apple App Store til din iPad, iPhone eller iPod Touch.
 
-  * Skal du vælge **Hent Data** > **Eksempler** > **Eksempel på analyse af salgsmuligheder** > **Tilslut**.
-  * Når eksemplet på analyse af salgsmuligheder er downloadet, skal du vælge **Hent Data** > **Eksempler** > **Eksempel på detailhandelsanalyse**  >  **Tilslut**.
+Disse versioner understøtter Power BI til iOS-app:
+- iPad med iOS 10 eller nyere.
+- iPhone 5 og nyere med iOS 10 eller nyere. 
+- iPod Touch med iOS 10 eller nyere.
 
-## <a name="try-featured-insights"></a>Prøv udvalgt indsigt
-1. Åbn Power BI-appen på din iPhone eller iPad, og naviger til dashboard'et med eksemplet på analyse af salgsmuligheder.
-2. Tryk på ikonet for den virtuelle Spørgsmål og svar-analytiker ![Ikonet for den virtuelle Spørgsmål og svar-analytiker](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png) i handlingsmenuen i bunden af siden (øverst på siden på en iPad).
+### <a name="download-samples"></a>Download eksempler
+Det første skridt er at downloade eksemplerne på detailhandelsanalyse og analyse af salgsmuligheder i Power BI-tjenesten.
 
-     ![Dashboard med eksempel på analyse af salgsmuligheder](media/mobile-apps-ios-qna/power-bi-ios-qna-opportunity-analysis.png)
+**Hent eksemplet på detailhandelsanalyse**
 
-     Den virtuelle Spørgsmål og svar-analytiker i Power BI indeholder nogle forslag til at komme i gang.
+1. Åbn Power BI-tjenesten (app.powerbi.com), og log på.
 
-     ![knap for udvalgt indsigt](media/mobile-apps-ios-qna/power-bi-ios-qna-suggest-insights.png)
-3. Tryk på **udvalgt indsigt**.
+2. Vælg **Arbejdsområder**, **Mit arbejdsområde** i navigationsruden til venstre.
 
-     Den virtuelle Spørgsmål og svar-analytiker foreslår nogle indsigtsmuligheder.
-4. Rul til højre, og tryk på **Indsigt 2**.
+3. Vælg **Hent data** i nederste venstre hjørne.
+   
+    ![](media/mobile-apps-ios-qna/power-bi-get-data.png)
 
-    ![Indsigt 2-knappen](media/mobile-apps-ios-qna/power-bi-ios-qna-suggest-insight-2.png)
+3. Vælg ikonet **Eksempler** på siden Hent data.
+   
+   ![](media/mobile-apps-ios-qna/power-bi-samples-icon.png)
 
-     Den virtuelle Spørgsmål og svar-analytiker viser Indsigt 2.
+4. Vælg **Eksempel på detailhandelsanalyse**.
+ 
+    ![Eksempel på detailhandelsanalyse](media/mobile-apps-ios-qna/power-bi-rs.png)
+ 
+8. Vælg **Opret forbindelse**.  
+  
+   ![Eksempel på detailhandelsanalyse](media/mobile-apps-ios-qna/retail16.png)
+   
+5. Power BI importerer indholdspakken og føjer et nyt dashboard, en rapport og et datasæt til dit aktuelle arbejdsområde.
+   
+   ![Eksempel på detailhandelsanalyse](media/mobile-apps-ios-qna/power-bi-service-retail-sample.png)
 
-    ![Indsigt 2](media/mobile-apps-ios-qna/power-bi-ios-qna-show-insight-2.png)
-5. Tryk på diagrammet for at åbne den i fokuseringstilstand.
+**Hent eksemplet på analyse af salgsmuligheder**
 
-    ![Indsigt 2-diagram i fokuseringstilstand](media/mobile-apps-ios-qna/power-bi-ios-qna-open-insight-2.png)
-6. Tryk på pilen i øverste venstre hjørne for at gå tilbage til den virtuelle Spørgsmål og svar-analytikeroplevelse.
+- Gennemgå de samme trin, som du har udført for eksemplet på detailhandelsanalyse, men i trin 4 skal du vælge **Eksempel på analyse af salgsmuligheder**.
+
+    ![Eksempel på detailhandelsanalyse](media/mobile-apps-ios-qna/power-bi-oa.png)
+  
+OK, du er nu klar til at få vist eksemplerne på din iOS-enhed.
 
 ## <a name="try-asking-questions-on-your-iphone-or-ipad"></a>Prøv at stille spørgsmål på din iPhone eller iPad
-1. Åbn Power BI-appen på din iPhone eller iPad, og naviger til dashboard'et med eksemplet på detailhandelsanalyse.
+1. På din iPhone eller iPad skal du trykke på knappen til global navigation ![knap til global navigation](media/mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png) > **Arbejdsområder** > **Mit arbejdsområde** og åbne dashboardet med eksemplet på analyse af salgsmulighed.
+
 2. Tryk på ![ikonet for den virtuelle Spørgsmål og svar-analytiker](media/mobile-apps-ios-qna/power-bi-ios-q-n-a-icon.png) i handlingsmenuen i bunden af siden (øverst på siden på en iPad).
      Den virtuelle Spørgsmål og svar-analytiker indeholder nogle forslag til at komme i gang.
 3. Skriv **vis**, tryk på **salg** på forslagslisten > **Send** ![Send ikon](media/mobile-apps-ios-qna/power-bi-ios-qna-send-icon.png).

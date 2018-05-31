@@ -1,31 +1,24 @@
 ---
-title: Selvstudium – Kombinationsdiagram
+title: Kombinationsdiagram i Power BI
 description: Dette selvstudium om kombinationsdiagrammer forklarer, hvornår de bruges, og hvordan de oprettes i Power BI-tjenesten og Desktop.
-services: powerbi
-documentationcenter: ''
 author: mihart
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
+ms.reviewer: ''
 featuredvideoid: lnv66cTZ5ho
-qualityfocus: monitoring
-qualitydate: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-desktop
+ms.topic: conceptual
 ms.date: 01/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b5e89a9a1f2e88ed793dff6457b58fd9ac609ef5
-ms.sourcegitcommit: e571de2afa3f34fac06a6aab0df0e8940cb00a0d
+ms.openlocfilehash: 9288c44194a7eabebfa9888b1bca0023a54950e8
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34293576"
 ---
-# <a name="combo-chart-in-power--tutorial"></a>Kombinationsdiagram i Power  (selvstudium)
+# <a name="combo-chart-in-power-bi"></a>Kombinationsdiagram i Power BI
 I Power BI er et kombinationsdiagram en enkelt visualisering, der kombinerer et kurvediagram og et søjlediagram. Ved at kombinere disse to diagrammer kan du hurtigere sammenligne dine data.
 
 Kombinationsdiagrammer kan have en eller to Y-akser.
@@ -121,7 +114,7 @@ Fremhævning af en kolonne eller kurve i kombinationsdiagrammet fører til tvær
 
 [Overblik over visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
 
-[Typer af visualiseringer i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
+[Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)
 

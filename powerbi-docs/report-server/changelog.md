@@ -1,27 +1,20 @@
 ---
 title: Ændringslog for Power BI-rapportserver
 description: Denne ændringslog er for Power BI-rapportserver, og den viser nye elementer sammen med fejlrettelser til hvert frigivet build.
-services: powerbi
-documentationcenter: ''
 author: jtarquino
-manager: jonhp
-backup: maggies
-editor: ''
-tags: ''
-qualityfocus: no
-qualitydate: ''
+manager: kfile
+ms.reviewer: maggies
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
+ms.component: powerbi-report-server
+ms.topic: conceptual
 ms.date: 12/11/2017
-ms.author: tankas
-ms.openlocfilehash: 67b9a162d689a8615a3e2459295eab6dad6d2364
-ms.sourcegitcommit: 312390f18b99de1123bf7a7674c6dffa8088529f
+ms.author: jtarquino
+ms.openlocfilehash: 65ad5e6ca9fbdd71643f71fa56186ee3d01d2dd1
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34295670"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -31,6 +24,24 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
 
 ## <a name="march-2018"></a>Marts 2018
 - **Power BI-rapportserver**
+    - *Version 1.2.6690.34729 (Build 15.0.2.402), udgivet: 27. april 2018*
+        - Fejlrettelser
+            - Aktivér overførsel af SQL Server Reporting Services 2017-kataloger
+            - Power BI-rapporter (PBIX)
+                - Rapporter kan opdateres, når en server konfigureres til at anvende brugerdefineret godkendelse
+                - Hvis du ændrer egenskaberne for en rapport, nulstilles legitimationsoplysningerne for datakilden ikke
+            - Sideinddelte rapporter (RDL)
+                - Brug af `Lookup()` eller afledte funktioner som `LookupSet()` og `MultiLookup()` i RDL-udtryk resulterer ikke længere i `#Error`
+                - Sammenkædede rapporter respekterer sidestørrelsen for destinationsrapporten under udskrivning
+                - Der kan oprettes abonnementer for sammenkædede rapporter, der bruger overlappende parametre
+                - Standarder for parametre med flere værdier kan ændres, når du bruger IE11
+                - Leveringsindstillingerne for datadrevet abonnement kan redigeres
+                - Abonnementer kan ses og redigeres under kørsel af abonnementet
+                - Hvis der angives legitimationsoplysninger for datakilden, fjernes udtryksbaserede forbindelsesstrenge ikke
+            - KPI'er
+                - Tendenslinjer opdateres, når data opdateres
+            - Generelle forbedringer af stabilitet
+
     - *Version 1.2.6660.39920 (Build 15.0.2.389), udgivet: 28. marts 2018*
         - Fejlrettelser
             - Til Power BI-rapporter (PBIX): Programrettelse af Eksport data, der ikke virker i forbindelse med Power BI-visualiseringer
@@ -120,7 +131,7 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
 
     - *Build 14.0.600.301, udgivet: 11. juli 2017*
         - Fejlrettelser
-            - Koden {{UserId}} fortolkes som de gemte legitimationsoplysninger i stedet for den bruger, der kører rapporten i Power BI-rapporter
+            - Koden `{{UserId}}` fortolkes som de gemte legitimationsoplysninger i stedet for den bruger, der kører rapporten i Power BI-rapporter
             - Nogle billeder gengives ikke i rapporter i Power BI-rapportserver
             - Det var ikke muligt at ændre navnet på en Power BI-rapport i Power BI-rapportserver
             - Der kunne ikke indlæses brugerdefinerede visuelle elementer i Power BI-mobilappen (det kræver geninstallation af mobilappen for at rydde op i det lokale cachelager)
@@ -136,7 +147,7 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
 
 [Brugerhåndbog](user-handbook-overview.md)  
 [Administratorhåndbog](admin-handbook-overview.md)  
-[Hurtigstart: Installér Power BI Report Server](quickstart-install-report-server.md)  
+[Installer Power BI-rapportserver](install-report-server.md)  
 [Installér Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 

@@ -17,11 +17,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: 24e4dbaf6ede92436ff05c8cb57756e3ab7e8526
-ms.sourcegitcommit: 3f2f254f6e8d18137bae879ddea0784e56b66895
+ms.openlocfilehash: f2d457c04f9db2bdd57f363ccb0c09e2496aefd6
+ms.sourcegitcommit: 1c7780e0dfe0b6b8322e6fafdd0693177db455d2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/14/2018
+ms.locfileid: "34163316"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -58,7 +59,7 @@ Der kan være situationer, hvor en ISV (typisk en større) ønsker at bruge en P
 
 ### <a name="how-many-embed-tokens-can-i-create"></a>Hvor mange integrerede tokens kan jeg oprette?
 
-Med en PRO-licens er integrerede tokens kun beregnet til udvikling og udviklingstest, så antallet af integrerede tokens, der kan genereres fra en Power BI-masterkonto, er begrænset. Du skal [købe en kapacitet](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) for at kunne integrere i et produktionsmiljø. Der er ingen grænse for hvor mange integrerede tokens, du kan generere, når der er købt en kapacitet.
+Med en PRO-licens er integrerede tokens kun beregnet til udvikling og udviklingstest, så antallet af integrerede tokens, der kan genereres fra en Power BI-masterkonto, er begrænset. Du skal [købe en kapacitet](#technical) for at kunne integrere i et produktionsmiljø. Der er ingen grænse for hvor mange integrerede tokens, du kan generere, når der er købt en kapacitet. Gå til [Hent tilgængelige funktioner](https://msdn.microsoft.com/library/mt846473.aspx) for at undersøge den brugsværdi, der angiver brugen af integrerede tokens i procent.
 
 ## <a name="technical"></a>Tekniske spørgsmål
 
@@ -164,10 +165,6 @@ Ja, du kan bruge din [Azure-kredit](https://azure.microsoft.com/free/) til Power
 
 Idet Power BI Embedded er en del af Azure, er det muligt at bruge tjenesten med [USD200 kreditten, der modtages ved tilmeldingen til Azure](https://azure.microsoft.com/free/).
 
-### <a name="is-there-a-limit-to-the-number-of-embed-tokens-a-power-bi-master-account-can-generate"></a>Er der en grænse for, hvor mange integrerede tokens en Power BI-masterkonto kan oprette? 
-
-Ja, det er begrænset, fordi disse integrerede tokens kun er til udviklingstest. Der [skal købes en kapacitet](#technical) til integrerede produktionsscenarier. Der er ingen grænse for generering af integrerede tokens, når der er købt en kapacitet. Gå til [Hent tilgængelige funktioner](https://msdn.microsoft.com/en-us/library/mt846473.aspx) for at undersøge, hvor mange gratis integrerede tokens der er blevet brugt.
-
 ### <a name="is-power-bi-embedded-available-for-sovereign-clouds-us-government-germany-china"></a>Er Power BI Embedded tilgængelig for suveræne cloudløsninger (den amerikanske regering, Tyskland, Kina)?
 
 Power BI Embedded er tilgængelig for visse [suveræne cloudløsninger](embed-sample-for-customers-sovereign-clouds.md). Det er stadig **IKKE** tilgængeligt for cloudløsninger i Kina.
@@ -176,9 +173,47 @@ Power BI Embedded er tilgængelig for visse [suveræne cloudløsninger](embed-sa
 
 Almennyttige organisationer og uddannelsesinstitutioner kan købe Azure. Der er ingen særlige priser for disse typer kunder i Azure.
 
+## <a name="power-bi-workspace-collection"></a>Power BI Workspace Collection
+
+### <a name="what-is-power-bi-workspace-collection"></a>Hvad er Power BI Workspace Collection?
+
+**Power BI Workspace Collection** (**Power BI Embedded** Version 1) er en løsning, der er baseret på Azure-ressourcen **Power BI Workspace Collection**. Denne løsning gør det muligt at oprette **Power BI Embedded**-programmer til dine kunder ved hjælp af Power BI-indhold under **Power BI Workspace Collection**-løsningen, dedikerede-API'er og nøgler til arbejdsområdesamlinger til godkendelse af programmet til Power BI.
+
+### <a name="can-i-migrate-from-power-bi-workspace-collection-to-power-bi-embedded"></a>Kan jeg overføre indhold fra Power BI Workspace Collection til Power BI Embedded?
+
+1. Du kan bruge overførselsværktøjet til at klone indhold fra **Power BI Workspace Collection** til Power BI – https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded#content-migration.
+
+2. Start med den **Power BI Embedded**-program-POC, der bruger Power BI-indhold.
+
+3. Når du er klar til produktion, skal du købe en **Power BI Embedded**-dedikeret kapacitet og tildele dit Power BI-indhold (arbejdsområde) til denne kapacitet.
+
+>[!Note]
+Du kan fortsætte med at bruge **Power BI Workspace Collection**, når du opretter parallelt med en **Power BI Embedded**-løsning. Når du er klar, kan du flytte kunden til den nye **Power BI Embedded**-løsning og lade **Power BI Workspace Collection**-løsningen udgå.
+
+Du kan finde flere oplysninger under [Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded](https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded)
+
+### <a name="is-power-bi-workspace-collection-on-a-path-to-be-deprecated"></a>Frarådes det senere at bruge Power BI Workspace Collection på en sti?
+
+Ja, men kunder, der allerede bruger **Power BI Workspace Collection**-løsningen, kan fortsætte med at bruge den, indtil det frarådes. Kunder kan også oprette nye arbejdsområdesamlinger og **Power BI Embedded**-programmer, der stadig bruger **Power BI Workspace Collection**-løsningen.
+
+Det betyder dog også, at der ikke føjes nye funktioner til **Power BI Workspace Collection**-løsninger, og at kunder opfordres til at planlægge overførsel af deres data til den nye **Power BI Embedded**-løsning.
+### <a name="when-will-power-bi-workspace-collection-support-be-discontinued"></a>Hvornår ophører support til Power BI Workspace Collection?
+
+Kunder, der allerede bruger **Power BI Workspace Collections**-løsningen, kan fortsætte med at bruge den indtil udgangen af juni 2018 eller indtil udgangen af deres supportaftale.
+
+### <a name="in-what-regions-can-pbi-workspace-collection-be-created"></a>I hvilke områder kan der oprettes PBI Workspace Collection?
+
+De tilgængelige områder er det sydøstlige Australien, det sydlige Brasilien, det centrale Canada, det østlige USA 2, det østlige Japan, det nordcentrale USA, det nordlige Europa, det sydcentrale USA, Sydøstasien, det sydlige Storbritannien, det vestlige Europa, det vestlige Indien og det vestlige USA.
+
+### <a name="why-should-i-migrate-from-pbi-workspace-collection-to-power-bi-embedded"></a>Hvorfor skal jeg overføre indhold fra PBI Workspace Collection til Power BI Embedded?
+
+Der er nye funktioner og egenskaber, som introduceres i **Power BI Embedded**-løsningen, som ikke findes i **Power BI Workspace Collection**.
+
+Nogle af funktionerne er:
+* Alle PBI-datakilder understøttes i modsætning til de 2 datakilder, der er inkluderet i **Power BI Workspace Collection**). 
+* Nye funktioner, f.eks. Spørgsmål og svar, opdatering, bogmærker, integrering af dashboards og felter, brugerdefineret menu osv., understøttes kun i **Power BI Embedded**-løsningen.
+* Model for fakturering af kapacitet.
+
 Du kan finde flere oplysninger under [Fejlfinding af det integrerede program](embedded-troubleshoot.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-
-
-

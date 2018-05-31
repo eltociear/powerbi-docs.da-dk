@@ -18,11 +18,12 @@ ms.workload: powerbi
 ms.date: 04/13/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 4552e08c5291ee5f0ce268e796e1a9148eb64be2
-ms.sourcegitcommit: df94efc51f261113fa90ebdf3fe68dd149cc4936
+ms.openlocfilehash: 62eab4de4dc46695f7bfd922333d588ed863f2bc
+ms.sourcegitcommit: c29525cbac2e747edb4dd3a1841084bb0ce42582
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/08/2018
+ms.locfileid: "33871472"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Understøttede sprog og lande/områder til Power BI
 
@@ -165,6 +166,11 @@ Du kan ud over angivelse af sproget for Power BI Desktop-programmet også angive
 - Hvordan vi sammenligner og sorterer strenge. Eftersom tyrkisk indeholder to i'er, kan de to ende i forskellige rækkefølger ved sortering, afhængigt af sorteringen i databasen. 
 - Det sprog, der bruges i Power BI Desktop, ved oprettelse af skjulte datotabeller fra datofelter. Felter kaldes f.eks. Monat/Måned/Mois, osv.
 
+> [!NOTE]
+> Power BI-modellen bruger i øjeblikket en landestandard, hvor der ikke skelnes mellem store og små bogstaver (og som ikke er kana-følsom), så "ABC" og "abc" behandles på samme måde. Hvis "ABC" indlæses i databasen først, indlæses andre strenge, der kun afviger i forbindelse med brugen af store og små bogstaver, f.eks. "Abc", ikke som en separat værdi.
+> 
+>
+
 Sådan angives modelsproget.
 
 1. Gå til **Filer** > **Indstillinger** > **Indstillinger** i Power BI Desktop.
@@ -173,6 +179,10 @@ Sådan angives modelsproget.
 
     ![Angiv modelsprog i Power BI Desktop](media/supported-languages-countries-regions/power-bi-supported-model-languages.png)
 
+> [!NOTE]
+> Når du har oprettet en Power BI-model, kan sproget i den ikke ændres.
+> 
+>
 
 ## <a name="languages-for-the-help-documentation"></a>Sprog til hjælpedokumentationen
 Hjælp er lokaliseret på disse 10 sprog: 

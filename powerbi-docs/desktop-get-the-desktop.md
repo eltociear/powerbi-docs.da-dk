@@ -1,28 +1,21 @@
 ---
 title: Hent Power BI Desktop
 description: Download og installér Power BI Desktop
-services: powerbi
-documentationcenter: ''
 author: davidiseminger
 manager: kfile
-backup: ''
-editor: ''
-tags: ''
-qualityfocus: monitoring
-qualitydate: 08/15/2017
+ms.reviewer: ''
 ms.service: powerbi
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: powerbi
-ms.date: 01/24/2018
+ms.component: powerbi-desktop
+ms.topic: conceptual
+ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a03e859e769f880b0c627080a864b41e96fc138b
-ms.sourcegitcommit: 8132f7edc6879eda824c900ba90b29cb6b8e3b21
+ms.openlocfilehash: eee341314b309eda119dd282eafd18188f8fdfd0
+ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/17/2018
+ms.locfileid: "34286629"
 ---
 # <a name="get-power-bi-desktop"></a>Hent Power BI Desktop
 Med **Power BI Desktop** kan du oprette avancerede forespørgsler, modeller og rapporter, som visualiserer data. Med **Power BI Desktop** kan du oprette datamodeller, oprette rapporter og dele dit arbejde ved at udgive det i Power BI-tjenesten.  **Power BI Desktop** kan downloades gratis.
@@ -82,7 +75,7 @@ Der er et par overvejelser og begrænsninger i forbindelse med at installere **P
 > Du kan ikke installere den downloadede version (MSI) og **Microsoft Store**-versionen af **Power BI Desktop** på samme computer (hvilket også kaldes for en *side om side*-installation). Du skal fjerne **Power BI Desktop** manuelt, før du downloader den fra **Microsoft Store**
 > 
 > [!NOTE]
-> Power BI-rapportserverversionen af **Power BI Desktop** er en separat version og adskiller sig fra de versioner, der er beskrevet i denne artikel. Du kan finde oplysninger om rapportserverversionen af **Power BI Desktop** i artiklen [Hurtigstart: Opret en Power BI-rapport til Power BI-rapportserver](report-server/quickstart-create-powerbi-report.md).
+> Power BI-rapportserverversionen af **Power BI Desktop** er en separat version og adskiller sig fra de versioner, der er beskrevet i denne artikel. Du kan finde oplysninger om rapportserverversionen af **Power BI Desktop** under [Opret en Power BI-rapport til Power BI-rapportserveren](report-server/quickstart-create-powerbi-report.md).
 > 
 > 
 
