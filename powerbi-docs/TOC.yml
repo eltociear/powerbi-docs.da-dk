@@ -898,32 +898,14 @@
       items:
         - name: Hvad kan jeg bruge Power BI-API'en til?
           href: developer/overview-of-power-bi-rest-api.md
-        - name: Ofte stillede spørgsmål
-          href: developer/embedded-faq.md
         - name: Power BI-tilladelser
           href: developer/power-bi-permissions.md
         - name: Sikkerhed på rækkeniveau (RLS)
           href: developer/embedded-row-level-security.md
-        - name: Integration af Q&A
-          href: developer/qanda.md
+        - name: Ofte stillede spørgsmål
+          href: developer/embedded-faq.md
     - name: Sådan gør du
       items:
-        - name: Sådan integrerer du dit indhold
-          href: developer/embedding-content.md
-        - name: Overfør data til et dashboard
-          href: developer/walkthrough-push-data.md
-        - name: Sådan overføres Power BI Embedded
-          href: developer/migrate-from-powerbi-embedded.md
-        - name: Integrer et dashboard i en app (brugeren ejer data)
-          href: developer/integrate-dashboard.md
-        - name: Integrer et Power BI-felt i en app (brugeren ejer data)
-          href: developer/integrate-tile.md
-        - name: Integrer en Power BI-rapport i en app (brugeren ejer data)
-          href: developer/integrate-report.md
-        - name: Integrer indhold i din app (app ejer data)
-          href: developer/embed-sample-for-customers.md
-        - name: Integrer indhold i din app til nationale clouds (appen ejer dataene)
-          href: developer/embed-sample-for-customers-sovereign-clouds.md
         - name: Opret en brugerdefineret visualisering
           items:
             - name: Opret en brugerdefineret visualisering med Udviklerværktøj
@@ -936,8 +918,20 @@
               href: developer/office-store.md
         - name: Integration
           items:
-            - name: Integrering med Power BI
+            - name: Integration med Power BI
               href: developer/embedding.md
+            - name: Sådan integrerer du dit indhold
+              href: developer/embedding-content.md
+            - name: Integrer et dashboard i en app (brugeren ejer data)
+              href: developer/integrate-dashboard.md
+            - name: Integrer et Power BI-felt i en app (brugeren ejer data)
+              href: developer/integrate-tile.md
+            - name: Integrer en Power BI-rapport i en app (brugeren ejer data)
+              href: developer/integrate-report.md
+            - name: Integrer indhold i din app (app ejer data)
+              href: developer/embed-sample-for-customers.md
+            - name: Integrer indhold i din app til nationale clouds (appen ejer dataene)
+              href: developer/embed-sample-for-customers-sovereign-clouds.md
             - name: Indlejr brugerdefinerede layout i en app
               href: developer/embedded-custom-layout.md
             - name: Opret en Azure Active Directory-lejer
@@ -946,14 +940,20 @@
               href: developer/register-app.md
             - name: Godkend til Power BI service
               href: developer/get-azuread-access-token.md
+            - name: Integration af Q&A
+              href: developer/qanda.md
+            - name: Sådan overføres Power BI Embedded
+              href: developer/migrate-from-powerbi-embedded.md
             - name: Overførselsværktøj i Power BI Embedded
               href: developer/migrate-tool.md
             - name: Overflytning af kodestykker
               href: developer/migrate-code-snippets.md
             - name: Fejlfinding af det integrerede program
               href: developer/embedded-troubleshoot.md
-        - name: Overfør data til et dashboard
+        - name: Push data
           items:
+            - name: Overfør data til et dashboard
+              href: developer/walkthrough-push-data.md
             - name: Registrer en app i Azure AD
               href: developer/walkthrough-push-data-register-app-with-azure-ad.md
             - name: Hent en adgangstoken til godkendelse
@@ -990,6 +990,8 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848277'
     - name: Ressourcer
       items:
+        - name: Onboarding Experience Tool til integration
+          href: 'https://aka.ms/embedsetup'
         - name: JavaScript-eksemplet Playground
           href: 'https://go.microsoft.com/fwlink/?linkid=848279'
         - name: Eksempler
@@ -1002,7 +1004,7 @@
   items:
     - name: Oversigt
       items:
-        - name: Hvad er Power BI Report Server?
+        - name: Hvad er Power BI-rapportserveren?
           href: report-server/get-started.md
         - name: Sammenlign Power BI Report Server med tjenesten
           href: report-server/compare-report-server-service.md
@@ -1150,7 +1152,7 @@
   items:
     - name: Oversigt
       items:
-        - name: Hvad er Power BI Administration?
+        - name: Hvad er Power BI-administration?
           href: service-admin-administering-power-bi-in-your-organization.md
     - name: Hurtige introduktioner
       items:
