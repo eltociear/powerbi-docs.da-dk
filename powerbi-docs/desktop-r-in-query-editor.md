@@ -11,10 +11,11 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 091f17e89bd4fb9658e777f63ac2017239e32b71
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34287319"
 ---
 # <a name="using-r-in-query-editor"></a>Brug af R i forespørgselseditoren
 Du kan bruge **R**, som er et programmeringssprog, der bruges af statistikere, datavidenskabsfolk og dataanalytikere, i **forespørgselseditoren** i Power BI Desktop. Denne integration af R i **forespørgselseditoren** gør det muligt at udføre datarensning ved hjælp af R og udføre avanceret dataudformning og -analyser i datasæt, herunder fuldførelse af manglende data, forudsigelser og klyngedannelse, blot for at nævne nogle få. **R** er et effektivt sprog og kan bruges i **forespørgselseditoren** til at forberede din datamodel og oprette rapporter.

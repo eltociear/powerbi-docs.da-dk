@@ -11,10 +11,11 @@ ms.date: 04/13/2018
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: a6e683318c00a800f69334f90ce3a71d74489030
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34290516"
 ---
 # <a name="optimize-a-power-bi-visual-for-any-size"></a>Optimer en Power BI-visualisering til enhver størrelse
 Som standard er visuals *dynamiske*, når du opretter en ny rapport, så de ændres dynamisk for at vise den maksimale mængde data og indsigt, uanset skærmstørrelse. Du kan angive, at visuals i ældre rapporter også skal ændre størrelse dynamisk.

@@ -11,10 +11,11 @@ ms.date: 05/22/2018
 ms.author: mihart
 LocalizationGroup: Samples
 ms.openlocfilehash: b6ef85549b729b1a91aa4a9a5f4686dcbbabaeb1
-ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34471979"
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Hvilke eksempeldata er tilgængelige til brug med Power BI?
 Lad os antage, at du ikke kender Power BI og vil afprøve det, men ikke har nogen data.  Eller måske har du et datasæt, men da du ikke (endnu) forstår, hvordan Power BI fungerer, er du bekymret for, om du på en eller anden måde kommer til at beskadige datasættet?

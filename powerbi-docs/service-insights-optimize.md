@@ -11,12 +11,13 @@ ms.date: 03/02/2017
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: eed9b668cccf3bc8252d70f1dee94675063a8844
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34247751"
 ---
-# <a name="optimize-your-data-for-power-bi-quick-insights"></a>Optimer dine data til Power BI Hurtig indsigt
+# <a name="optimize-your-data-for-power-bi-quick-insights"></a>Optimer dine data til Power BI Quick Insights
 Vil du forbedre Quick Insights-resultater?  Hvis du er ejer af datasæt, skal du prøve følgende:
 
 * Skjul eller vis kolonner i dit datasæt. Power BI Quick Insights søger ikke i skjulte kolonner.  Derfor skal du skjule duplikerede eller unødvendige kolonner og vise interessante kolonner.

@@ -11,10 +11,11 @@ ms.date: 10/17/2017
 ms.author: mblythe
 LocalizationGroup: Premium
 ms.openlocfilehash: 2789f2e3e8198ddc0363fb07488f5fe8f39441a6
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34297371"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Sådan køber du Power BI Premium
 Få mere at vide om, hvordan du kan købe Power BI Premium-kapacitet til din organisation.

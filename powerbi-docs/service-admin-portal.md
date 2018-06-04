@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 7d6ad3cea224de097d5ebc81d33dbffa52b33378
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 5b4a35d9cdfa820956201e7fee20251b3c5ac0b7
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584294"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administrationsportal
 
@@ -209,7 +210,7 @@ Gå hertil for at få mere at vide om [Push af apps](service-create-distribute-a
 Brugere i virksomheden kan stille spørgsmål til deres data ved hjælp af Cortana.
 
 > [!NOTE]
-> Denne indstilling gælder for hele virksomheden og kan ikke begrænses til bestemte grupper.
+> Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
 
 ### <a name="use-analyze-in-excel-with-on-premises-datasets"></a>Brug Analysér i Excel med datasæt i det lokale miljø
 Brugere i virksomheden kan bruge Excel til at se og interagere med Power BI-datasæt i det lokale miljø. [Få mere at vide](service-analyze-in-excel.md)
@@ -238,7 +239,7 @@ Brugerne i organisationen kan interagere med og dele brugerdefinerede visualiser
 Brugere i virksomheden kan interagere med og dele visuelle elementer oprettet med R-scripts. [Få mere at vide](service-r-visuals.md)
 
 > [!NOTE]
-> Denne indstilling gælder for hele virksomheden og kan ikke begrænses til bestemte grupper.
+> Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
 
 ## <a name="audit-settings"></a>Indstillinger for overvågning
 
@@ -249,7 +250,7 @@ Brugere i virksomheden kan overvåge handlinger, der udføres i Power BI af andr
 Denne indstilling skal være aktiveret, for at overvågningslogposter bliver registreret.
 
 > [!NOTE]
-> Denne indstilling gælder for hele virksomheden og kan ikke begrænses til bestemte grupper.
+> Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
 
 ## <a name="dashboard-settings"></a>Indstillinger for dashboard
 
@@ -258,7 +259,7 @@ Denne indstilling skal være aktiveret, for at overvågningslogposter bliver reg
 Brugere i virksomheden kan markere dashboards med klassificeringsangivelser, der angiver sikkerhedsniveauer for dashboards. [Få mere at vide](service-data-classification.md)
 
 > [!NOTE]
-> Denne indstilling gælder for hele virksomheden og kan ikke begrænses til bestemte grupper.
+> Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
 
 ## <a name="developer-settings"></a>Indstillinger for udviklere
 

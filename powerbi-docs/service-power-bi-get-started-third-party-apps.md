@@ -11,10 +11,11 @@ ms.date: 08/10/2017
 ms.author: maghan
 LocalizationGroup: Get started
 ms.openlocfilehash: 7ac6cee3331333b40119d6f5ab014b2e39d2ef23
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34251743"
 ---
 # <a name="get-started-with-third-party-apps"></a>Introduktion til tredjepartsapps
 Med Power BI kan du bruge en app, som er bygget af en virksomhed eller en enkeltperson, som ikke er Microsoft. Du kan f.eks. bruge en app fra en tredjepart, som integreres i Power BI-felter i et specialbygget webprogram. Når du bruger en tredjepartsapp, bliver du bedt om at tildele det pågældende program visse tilladelser til din Power BI-konto og dine Power BI-ressourcer. Det er vigtigt, at du kun giver tilladelser til programmer, du kender og har tillid til. Tilladelser til et program kan tilbagekaldes når som helst. Se [Tilbagekald tilladelser for tredjepartsapps](#revoke).

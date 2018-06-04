@@ -12,10 +12,11 @@ ms.date: 05/18/2018
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 004b9c921de9e94cb52f90cdea4815acd6162175
-ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34471588"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Hurtig introduktion – Navigation i Power BI-tjenesten
 
@@ -23,7 +24,7 @@ Nu, hvor du kender de grundlæggende funktioner i Power BI, kan vi kigge på **P
  
 ## <a name="prerequisites"></a>Forudsætninger
 
-- Hvis du ikke er tilmeldt Power BI, skal du [tilmelde dig en gratis prøveversion](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
+- Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
 
 - Læs om [grundlæggende begreber i Power BI-tjenesten](service-basic-concepts.md)
 
@@ -127,7 +128,7 @@ Du kan også sortere indholdet efter navn eller ejer.
 Hvis du vil vide mere, kan du se [Power BI-navigation: søg, sortér, filtrer](service-navigation-search-filter-sort.md)
 
 ## <a name="clean-up-resources"></a>Fjern ressourcer
-Når du er færdig med denne hurtige introduktion, kan du slette eksemplet Analyse af detailhandel i form af et dashboard, en rapport og et datasæt, hvis du vil.
+Når du er færdig med denne hurtige introduktion, kan du slette dashboardet med eksemplet på detailhandelsanalysen samt tilhørende rapport og datasæt, hvis du vil.
 
 1. Åbn Power BI-tjenesten (app.powerbi.com), og log på.    
 2. Vælg **Arbejdsområder > Mit arbejdsområde** i navigationsruden til venstre.  
@@ -137,7 +138,7 @@ Når du er færdig med denne hurtige introduktion, kan du slette eksemplet Analy
     ![slet dashboard](media/service-the-new-power-bi-experience/power-bi-cleanup.png)
 
 4. Vælg fanen **Rapporter**, og gør det samme for rapporten Analyse af detailhandel.
-1. Vælg fanen **Datasæt**, og gør det samme for datasættet Analyse af detailhandel.
+1. Vælg fanen **Datasæt**, og gør det samme for datasættet Detailhandelsanalyse.
 
 ## <a name="next-steps"></a>Næste trin
 

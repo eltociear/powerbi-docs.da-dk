@@ -11,10 +11,11 @@ ms.date: 04/24/2017
 ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: 17d7c07cb35eb9046b6fcfe8da5a85ee15fe7eaf
-ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34310475"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Tilmeld din US Government-organisation til Power BI-tjenesten
 **Power BI-tjenesten** har en version tilgængelig for offentlige myndigheder i USA som en del af abonnementer på **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til offentlige myndigheder i USA og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten**.

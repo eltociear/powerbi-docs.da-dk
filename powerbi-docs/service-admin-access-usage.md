@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 1f482cf9e3f0cf344a2808ca778839a50d851ac7
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 50ace772c24b2a9e706e82ca16ddcb36d8b6b60c
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722195"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Find Power BI-brugere, der er logget på
 Hvis du er en lejeradministrator, og du vil se, hvem der er logget på Power BI, kan du bruge Azure Active Directory-adgang og anvendelsesrapporter til at skabe synlighed.
@@ -60,7 +61,7 @@ I skærmbilledet Aktivitet kan du vælge **Download** på værktøjslinjen. Dett
 Du kan bruge PowerShell til at eksportere logondataene. Et [eksempel](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples#powershell-script) er tilgængeligt i Azure AD-dokumentationen.
 
 > [!NOTE]
-> Hvis PowerShell-eksemplet skal kunne fungere, skal du sørge for at følge [betingelserne for at få adgang til Azure AD-rapporterings-API'en](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-api-prerequisites).
+> Hvis PowerShell-eksemplet skal kunne fungere, skal du sørge for at følge [betingelserne for at få adgang til Azure AD-rapporterings-API'en](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites).
 > 
 > 
 
