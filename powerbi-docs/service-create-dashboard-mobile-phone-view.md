@@ -11,10 +11,11 @@ ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 4d237a308e059ce712872860031f122de9d6795c
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34238415"
 ---
 # <a name="create-a-view-of-a-power-bi-dashboard-optimized-for-mobile-phones"></a>Opret en visning af et Power BI-dashboard optimeret til mobiltelefoner
 Når du får vist dashboards i Power BI-mobilappen på en telefon, vil du opdage, at dashboardfelterne er placeret et ad gangen efter hinanden, alle med den samme størrelse. Du kan i Power BI-tjenesten oprette en tilpasset visning af et dashboard, som du ejer, specifikt til telefoner.
