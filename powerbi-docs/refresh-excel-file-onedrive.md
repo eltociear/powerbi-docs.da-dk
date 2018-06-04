@@ -11,10 +11,11 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
 ms.openlocfilehash: b7a49a04ed344d6977dba5ac739c0f0d41aca5b9
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34239124"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-onedrive-or-sharepoint-online"></a>Opdater et datasæt baseret på en Excel-arbejdsmappe på OneDrive eller SharePoint Online
 Du kan importere Excel-arbejdsmapper, der er gemt på din lokale computer eller lagret i clouden, som f.eks. OneDrive for Business eller SharePoint Online. Vi vil nu se på fordelene ved at bruge cloudlagring til dine Excel-filer. Du kan finde flere oplysninger om, hvordan du importerer Excel-filer til Power BI, under [Hent data fra Excel-projektmappefiler](service-excel-workbook-files.md).

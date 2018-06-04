@@ -11,10 +11,11 @@ ms.date: 01/29/2018
 ms.author: maggies
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 5b8a438ed354f246c5ac1d5ac0d0488db19633dd
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34239252"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Opret forbindelse til de tjenester, du bruger med Power BI
 Du kan oprette forbindelse til flere af de tjenester, du bruger til at køre din virksomhed, f.eks. Salesforce, Microsoft Dynamics og Google Analytics. Du kan starte Power BI vha. dine legitimationsoplysninger for at oprette forbindelse til tjenesten. Derefter oprettes der en Power BI-app med et dashboard og et sæt Power BI-rapporter, som automatisk viser dine data og giver et visuelt indblik i din virksomhed. 

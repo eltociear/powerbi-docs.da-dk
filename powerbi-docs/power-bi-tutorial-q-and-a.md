@@ -10,10 +10,11 @@ ms.date: 01/17/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
 ms.openlocfilehash: 0e98c68e62f36114257052171e0928db25853f24
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34239482"
 ---
 # <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Selvstudium: Sådan bruger du Spørgsmål og svar til at oprette visualiseringer og rapporter
 I [Oversigt over Spørgsmål og svar](power-bi-q-and-a.md) blev du introduceret til Spørgsmål og svar i Power BI og fik defineret forskellen mellem *forbrugere* (får dashboards og rapporter delt med sig) og *forfattere* (ejer de underliggende rapporter og datasæt). Den første del af dette selvstudium er primært beregnet til forbrugere af dashboards ved hjælp af Power BI-tjenesten. Desuden er den anden del beregnet til forfattere af rapporter ved hjælp af enten Power BI-tjenesten eller Power BI Desktop. [Spørgsmål og svar og Power BI-mobil](mobile-apps-ios-qna.md) og [Spørgsmål og svar med Power BI Embedded](developer/qanda.md) behandles i særskilte artikler.
