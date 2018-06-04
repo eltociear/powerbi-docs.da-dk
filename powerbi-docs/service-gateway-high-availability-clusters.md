@@ -11,10 +11,11 @@ ms.date: 12/05/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
 ms.openlocfilehash: e15983bf754a2fc1e2fe9ae376eedbed36e20ce4
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34298774"
 ---
 # <a name="high-availability-clusters-for-on-premises-data-gateway"></a>Klynger med høj tilgængelighed for en datagateway i det lokale miljø
 Du kan oprette installationer med **klynger af datagateways** **i det lokale miljø med høj tilgængelighed** for at sikre, at din organisation kan få adgang til dataressourcer i det lokale miljø, som bruges i Power BI-rapporter og på dashboards. Disse klynger giver gatewayadministratorer mulighed for at gruppere gateways og dermed undgå enkelte fejlpunkter under oprettelse af adgang til datakilder i det lokale miljø. I denne artikel beskrives de trin, som du kan udføre for at oprette en klynge af datagateways i det lokale miljø med høj tilgængelighed samt de bedste fremgangsmåder i forbindelse med konfigurationen af dem. Gatewayklynger med høj tilgængelighed kræver opdateringen fra november 2017 eller nyere til datagatewayen i det lokale miljø.

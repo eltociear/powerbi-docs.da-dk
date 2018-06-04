@@ -11,10 +11,11 @@ ms.date: 05/21/2018
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 8cfa3190acd4ef2ae2e1123f22d8f6221147afb1
-ms.sourcegitcommit: e6db826c2f43a69e4c63d5f4920baa8f66bc41be
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34456082"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Selvstudium: Opret dine egne målinger i Power BI Desktop
 Du kan oprette nogle af de mest effektive løsninger til dataanalyse i Power BI Desktop ved hjælp af målinger. Målinger hjælper dig med at udføre beregninger på dine data, når du arbejder med dine rapporter. I dette selvstudium lærer du, hvordan du skal forstå målinger, og hvordan du opretter dine egne grundlæggende målinger i Power BI Desktop.

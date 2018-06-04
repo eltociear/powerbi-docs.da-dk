@@ -8,20 +8,20 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/11/2018
+ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7b43e6e3c679474113cb0f1301f335c6bb8249ff
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 82015b3e0c497f58b0505804adc852ebfb7a0202
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584317"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Forbrugsdata for dashboards og rapporter
 Hvis du opretter dashboards og rapporter, kan forbrugsdata hjælpe dig med at forestå deres indvirkning. Når du kører enten forbrugsdata for dashboards eller rapporter, opdager du, hvordan disse dashboards og rapporter anvendes i hele organisationen: Hvad bruges, af hvem og til hvilke formål.  
 
-> [!NOTE]
-> Forbrugsdata vil spore brugen af rapporter, som er integreret i SharePoint Online. De vil også spore integreringen af dashboards og rapporter via både flowet "bruger ejer legitimationsoplysninger" og "app ejer legitimationsoplysninger". Forbrugsdata sporer ikke brugen af rapporter, der er integreret via [publicer på internettet](service-publish-to-web.md).
+Forbrugsdata vil spore brugen af rapporter, som er integreret i SharePoint Online. De vil også spore integreringen af dashboards og rapporter via både flowet "bruger ejer legitimationsoplysninger" og "app ejer legitimationsoplysninger". Forbrugsdata sporer ikke brugen af rapporter, der er integreret via [publicer på internettet](service-publish-to-web.md).
 
 Disse rapporter med forbrugsdata er skrivebeskyttet. Men du kan tilpasse en rapport med forbrugsdata ved hjælp af "Gem som". Det opretter et helt nyt datasæt og konverterer den skrivebeskyttede rapport til en Power BI-rapport med alle funktioner, som du kan redigere. Den tilpassede rapport indeholder ikke blot data for det valgte dashboard eller den valgte rapport, men ved at fjerne standardfilteret har du nu adgang til forbrugsdata for alle dashboards eller alle rapporter i det valgte arbejdsområde.
 

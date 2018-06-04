@@ -9,11 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/06/2018
 ms.author: maghan
-ms.openlocfilehash: 8fbefc7f1b6a9841dcb9c3d34d850c7e8e392881
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: ea323419e38aab7360bb817a56ae4c7c662998ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34689843"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Kodestykker til overførsel af indhold fra Power BI Workspace Collection
 Her får du nogle kodestykker til de grundlæggende handlinger, der skal bruges til overførsel af indhold. Hvis du arbejder med relaterede flows til bestemte rapporttyper, skal du se [Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded](migrate-from-powerbi-embedded.md#content-migration).

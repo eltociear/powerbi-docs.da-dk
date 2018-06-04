@@ -11,10 +11,11 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: a090a74399f607caaf193e474d60b57a4355bc9a
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34291460"
 ---
 # <a name="use-inline-hierarchy-labels-in-power-bi-desktop"></a>Brug indbyggede hierarkietiketter i Power BI Desktop
 **Power BI Desktop** understøtter brugen af **indbyggede hierarkietiketter**, som er den første af to funktioner, der skal bruges til at forbedre den hierarkiske detailudledning. Den anden funktion, som i øjeblikket er under udvikling, er muligheden for at bruge indlejrede hierarkietiketter (hold øje med den – der sker jævnligt opdateringer).   
