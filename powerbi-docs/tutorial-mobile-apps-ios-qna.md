@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: tutorial
 ms.date: 05/08/2018
 ms.author: maggies
-ms.openlocfilehash: 5c8afc963c67493c30821048736d914d3aec278e
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 8cb9e78898228aa7dad82db76d1d7da1a7151702
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34297854"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34561419"
 ---
 # <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-ios-apps---power-bi"></a>Selvstudium: Stil spørgsmål om dine data ved hjælp af den virtuelle Spørgsmål og svar-analytiker i iOS-apps – Power BI
 
@@ -132,5 +132,5 @@ Når du er færdig med selvstudiet, kan du slette dashboardet med eksemplet på 
 
 Du har prøvet den virtuelle Spørgsmål og svar-assistent i Power BI-mobilapps til iOS. Få mere at vide om Spørgsmål og svar i Power BI-tjenesten.
 > [!div class="nextstepaction"]
-> [Spørgsmål og svar i Power BI-tjenesten](/.power-bi-q-and-a.md)
+> [Spørgsmål og svar i Power BI-tjenesten](power-bi-q-and-a.md)
 

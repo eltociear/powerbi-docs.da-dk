@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 01/05/2018
 ms.author: maghan
 ms.openlocfilehash: 9ec0ace4cf92d559da4a2b1bd1aa0f918e2b09dc
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34294933"
 ---
 # <a name="accessing-shared-datasets-as-odata-feeds-in-power-bi-report-server"></a>Adgang til delte datasæt som OData-feeds i Power BI-rapportserver
 Du kan få adgang til delte datasæt fra Power BI Desktop med et OData-feed.

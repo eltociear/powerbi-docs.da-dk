@@ -11,10 +11,11 @@ ms.date: 09/11/2017
 ms.author: mgblythe
 LocalizationGroup: Premium
 ms.openlocfilehash: 3cf20899e705328c9f63bdbede4c30bd69488762
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34298314"
 ---
 # <a name="power-bi-premium-release-notes"></a>Produktbemærkninger til Power BI Premium
 Disse er produktbemærkningerne til Power BI Premium, som er en dedikeret kapacitet, der giver din organisation eller dit team mere pålidelig ydeevne, større datamængder og mulighed for at distribuere indhold uden licenser pr. bruger til fremvisere.

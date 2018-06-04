@@ -11,10 +11,11 @@ ms.date: 02/06/2018
 ms.author: maggies
 LocalizationGroup: Get started
 ms.openlocfilehash: e72e3bcca4254b957580775196d4919e88452773
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34253087"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Ofte stillede spørgsmål om Power BI
 * Hvis du har andre spørgsmål, kan du [prøve at spørge Power BI-community'et](http://community.powerbi.com/).
@@ -69,7 +70,7 @@ Power BI-tjenesten [https://powerbi.com](https://powerbi.com) fås ikke som en p
 ### <a name="on-premises-data-gateway"></a>Datagateway i det lokale miljø
 Du kan bruge Power BI og Power BI Desktop til på sikker vis at oprette forbindelse til dine egne datakilder i det lokale miljø. Du kan bruge [datagateway i det lokale miljø](service-gateway-onprem.md) til at oprette live-forbindelse til din SQL Server Analysis Services-server i det lokale miljø og andre datakilder. Du kan også indstille en planlagt opdatering med en centraliseret gateway. Hvis en gateway ikke er tilgængelig, kan du opdatere data fra datakilder i det lokale miljø ved hjælp af [Power BI Gateway - Personal](personal-gateway.md).
 
-### <a name="power-bi-report-server"></a>Power BI-rapportserver
+### <a name="power-bi-report-server"></a>Power BI Report Server
 Power BI-rapportserver er en løsning, som du installerer i dit eget miljø til oprettelse, publicering og administration af rapporter. De leveres derefter til forskellige brugere på forskellige måder; i en webbrowser, på deres mobilenhed eller som en mail i deres indbakke. Læs mere om [Power BI-rapportserver](report-server/get-started.md).
 
 ### <a name="power-bi-mobile-apps"></a>Power BI-mobilapps

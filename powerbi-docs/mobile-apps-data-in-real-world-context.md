@@ -10,10 +10,11 @@ ms.topic: conceptual
 ms.date: 03/13/2018
 ms.author: maggies
 ms.openlocfilehash: d6896686f89cc5b5eba1ec5f5e23d1e857da3c9c
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34297624"
 ---
 # <a name="get-data-from-the-real-world-with-the-power-bi-mobile-apps"></a>Hent data fra den virkelige verden med Power BI-mobilappsene
 Power BI-mobilapps kan forbinde den virkelige verden direkte med relaterede BI-oplysninger på en række forskellige måder. 
