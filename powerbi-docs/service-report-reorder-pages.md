@@ -1,5 +1,5 @@
 ---
-title: Flyt rundt på sider i en rapport i Power BI
+title: Omarranger siderne i en rapport i Power BI
 description: Omarranger siderne i en rapport i Power BI-tjenesten og Power BI Desktop
 author: mihart
 manager: kfile
@@ -11,12 +11,13 @@ ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: 205df68a380c9c8b33ce11fae5509c555ec506cb
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34237460"
 ---
-# <a name="reorder-pages-in-a-report-in-power-bi"></a>Flyt rundt på sider i en rapport i Power BI
+# <a name="reorder-pages-in-a-report-in-power-bi"></a>Omarranger siderne i en rapport i Power BI
 En rapport i Power BI består af én eller flere sider.  Hver side har en fane nederst.  Hvis du vil ændre rækkefølgen af en rapport, skal du blot vælge og trække fanen til den nye placering.
 
 ![video](media/service-report-reorder-pages/reorder.gif)
