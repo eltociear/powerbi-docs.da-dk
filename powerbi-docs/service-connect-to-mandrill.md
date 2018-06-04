@@ -11,10 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 5e12e32d947779f4ebc5bc2d238125c7359c08fe
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34242289"
 ---
 # <a name="connect-to-mandrill-with-power-bi"></a>Opret forbindelse til Mandrill med Power BI
 Power BI-indholdspakken trækker data fra din Mandrill-konto og opretter et dashboard, et sæt rapporter og et datasæt, så du kan udforske dine data. Brug Mandrills analyser til hurtigt for at få overblik over dine nyhedsbreve eller din markedsføringskampagne. Dataene er indstillet til daglig opdatering for at sikre, at de data, du overvåger, er opdaterede.

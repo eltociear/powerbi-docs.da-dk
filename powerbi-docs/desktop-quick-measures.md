@@ -11,10 +11,11 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: f8eb978aaacd345a29f2d9e2395fad419a651be0
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34289757"
 ---
 # <a name="use-quick-measures-to-easily-perform-common-and-powerful-calculations"></a>Brug Hurtigmålinger til nemt at udføre almindelige og effektive beregninger
 Du kan bruge **Hurtigmålinger** til nemt og hurtigt at udføre almindelige og effektive beregninger. En **Hurtigmåling** kører et sæt DAX-kommandoer i baggrunden (du skal ikke selv skrive DAX-formler – det bliver gjort for dig) baseret på input, du angiver i en dialogboks, hvorefter resultaterne vises i din rapport. Det bedste af det hele er, at du kan se den DAX-formel, der udføres af hurtigmålingen og så enten bruge den eller udvide den med din egen DAX-viden.

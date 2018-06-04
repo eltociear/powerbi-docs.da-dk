@@ -11,10 +11,11 @@ ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 84347678033f3042dc5fd15d311d8e04e855a336
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34285893"
 ---
 # <a name="add-a-column-from-an-example-in-power-bi-desktop"></a>Tilføj en kolonne ud fra et eksempel i Power BI Desktop
 Fra og med udgivelsen af **Power BI Desktop** i april 2017 kan du føje nye kolonner af data til modellen ved hjælp af **Forespørgselseditor** ved blot at angive en eller flere eksempelværdier for den nye kolonne. Du kan oprette et nyt kolonneeksempel ud fra en aktuel markering eller angive input baseret på alle (eller de markerede) kolonner i en bestemt tabel.

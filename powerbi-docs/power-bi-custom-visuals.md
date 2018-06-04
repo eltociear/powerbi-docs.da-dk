@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 02/06/2018
 ms.author: maghan
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 58cf5383f034b47708aa6b75ca5ead3e79b8e270
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: d8c3a33a3ae6166d33ea7a613917616613b84696
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721449"
 ---
 # <a name="custom-visuals-in-power-bi"></a>Brugerdefinerede visualiseringer i Power BI
 Når du opretter eller redigerer en Power BI-rapport, er der mange forskellige tilgængelige visualiseringstyper, du kan bruge. Disse visualiseringer vises i ruden **Visualiseringer**. Når du downloader Power BI Desktop eller åbner Power BI-tjenesten (app.powerbi.com), får du dette sæt "forudpakkede" visualiseringer med.
@@ -53,10 +54,10 @@ Hvad er AppSource? Helt enkelt er det det sted, hvor du finder apps, tilføjelse
 
 ### <a name="certified-visuals"></a>Certificerede visualiseringer
 
-Certificerede Power BI-visualiseringer er visualiseringer på markedspladser, der har bestået yderligere strenge test ift. kvalitet, og understøttes i yderligere scenarier, f.eks. [mailabonnementer](https://docs.microsoft.com/en-us/power-bi/service-report-subscribe) og [eksport til PowerPoint](https://docs.microsoft.com/en-us/power-bi/service-publish-to-powerpoint).
-Hvis du vil have vist en liste over certificerede brugerdefinerede visualiseringer eller indsende dine egne, skal du se under [Certificerede brugerdefinerede visualiseringer](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-certified).
+Certificerede Power BI-visualiseringer er visualiseringer på markedspladser, der har bestået yderligere strenge test ift. kvalitet, og understøttes i yderligere scenarier, f.eks. [mailabonnementer](https://docs.microsoft.com/power-bi/service-report-subscribe) og [eksport til PowerPoint](https://docs.microsoft.com/power-bi/service-publish-to-powerpoint).
+Hvis du vil have vist en liste over certificerede brugerdefinerede visualiseringer eller indsende dine egne, skal du se under [Certificerede brugerdefinerede visualiseringer](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified).
 
-Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til AppSource? Se under [Introduktion til Udviklerværktøj](https://docs.microsoft.com/en-us/power-bi/service-custom-visuals-getting-started-with-developer-tools), og få mere at vide om, hvordan du [publicerer brugerdefinerede visualiseringer på AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals).
+Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til AppSource? Se under [Introduktion til Udviklerværktøj](https://docs.microsoft.com/power-bi/service-custom-visuals-getting-started-with-developer-tools), og få mere at vide om, hvordan du [publicerer brugerdefinerede visualiseringer på AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals).
 
 ### <a name="import-a-custom-visuals-from-a-file"></a>Importér en brugerdefineret visualisering fra en fil
 

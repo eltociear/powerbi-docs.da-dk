@@ -11,10 +11,11 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 39c6c11e4815df507431648b1d317f9a62a4b1c3
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34299188"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>R-pakker i Power BI-tjenesten
 Du kan bruge det effektive [R-programmeringssprog](https://www.r-project.org/) til at skabe visuelle elementer i Power BI-tjenesten. Mange R-pakker understøttes i Power BI-tjenesten (og der understøttes hele tiden flere og flere), og nogle pakker understøttes ikke.
@@ -62,8 +63,8 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 | BAS |1.1.0 |https://cran.r-project.org/web/packages/BAS/index.html |
 | base64enc |0.1-3 |https://cran.r-project.org/web/packages/base64enc/index.html |
 | bayesm |3.0-2 |https://cran.r-project.org/web/packages/bayesm/index.html |
-| bayesQR |2.2 |https://cran.r-project.org/web/packages/bayesQR/index.html |
-| bayesSurv |2.6 |https://cran.r-project.org/web/packages/bayesSurv/index.html |
+| bayesQR |2,2 |https://cran.r-project.org/web/packages/bayesQR/index.html |
+| bayesSurv |2,6 |https://cran.r-project.org/web/packages/bayesSurv/index.html |
 | BayesTree |0.3-1.3 |https://cran.r-project.org/web/packages/BayesTree/index.html |
 | BayHaz |0.1-3 |https://cran.r-project.org/web/packages/BayHaz/index.html |
 | bbemkr |2 |https://cran.r-project.org/web/packages/bbemkr/index.html |
@@ -95,7 +96,7 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 | catnet |1.14.8 |https://cran.r-project.org/web/packages/catnet/index.html |
 | caTools |1.17.1 |https://cran.r-project.org/web/packages/caTools/index.html |
 | cclust |0.6-20 |https://cran.r-project.org/web/packages/cclust/index.html |
-| class |7.3-14 |https://cran.r-project.org/web/packages/class/index.html |
+| klasse |7.3-14 |https://cran.r-project.org/web/packages/class/index.html |
 | clue |0.3-51 |https://cran.r-project.org/web/packages/clue/index.html |
 | cluster |2.0.3 |https://cran.r-project.org/web/packages/cluster/index.html |
 | coda |0.18-1 |https://cran.r-project.org/web/packages/coda/index.html |
@@ -170,7 +171,7 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 | ggmap |2.6.1 |https://cran.r-project.org/web/packages/ggmap/index.html |
 | ggmcmc |0,8 |https://cran.r-project.org/web/packages/ggmcmc/index.html |
 | ggplot2 |2.1.0 |https://cran.r-project.org/web/packages/ggplot2/index.html |
-| ggrepel |0.5 |https://cran.r-project.org/web/packages/ggrepel/index.html |
+| ggrepel |0,5 |https://cran.r-project.org/web/packages/ggrepel/index.html |
 | ggthemes |3.0.2 |https://cran.r-project.org/web/packages/ggthemes/index.html |
 | glmmBUGS |2.3 |https://cran.r-project.org/web/packages/glmmBUGS/index.html |
 | glmnet |2.0-5 |https://cran.r-project.org/web/packages/glmnet/index.html |
@@ -283,7 +284,7 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 | pacbpred |0.92.2 |https://cran.r-project.org/web/packages/pacbpred/index.html |
 | party |1.0-25 |https://cran.r-project.org/web/packages/party/index.html |
 | partykit |1.0-5 |https://cran.r-project.org/web/packages/partykit/index.html |
-| PAWL |0.5 |https://cran.r-project.org/web/packages/PAWL/index.html |
+| PAWL |0,5 |https://cran.r-project.org/web/packages/PAWL/index.html |
 | pbivnorm |0.6.0 |https://cran.r-project.org/web/packages/pbivnorm/index.html |
 | pcaPP |1.9-60 |https://cran.r-project.org/web/packages/pcaPP/index.html |
 | pdc |1.0.3 |https://cran.r-project.org/web/packages/pdc/index.html |
@@ -305,7 +306,7 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 | psych |1.5.8 |https://cran.r-project.org/web/packages/psych/index.html |
 | qap |0.1-0 |https://cran.r-project.org/web/packages/qap/index.html |
 | qdapRegex |0.6.0 |https://cran.r-project.org/web/packages/qdapRegex/index.html |
-| qcc |2.6 |https://cran.r-project.org/web/packages/qcc/index.html |
+| qcc |2,6 |https://cran.r-project.org/web/packages/qcc/index.html |
 | quadprog |1.5-5 |https://cran.r-project.org/web/packages/quadprog/index.html |
 | quantreg |5.21 |https://cran.r-project.org/web/packages/quantreg/index.html |
 | qvcalc |0.9-0 |https://cran.r-project.org/web/packages/qvcalc/index.html |

@@ -11,10 +11,11 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 3575a94ede595b4d83fef0cddcbb279ea7a533c0
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34285525"
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Brug bånddiagrammer i Power BI
 Du kan bruge bånddiagrammer i **Power BI** til at visualisere data og hurtigt finde ud af, hvilken kategori af data der har den højeste placering (største værdi). Bånddiagrammer er effektive til at vise ændringer af placeringer, hvor den højeste placering (værdi) altid vises øverst for hver tidsperiode. Bånddiagrammer er tilgængelige i **Power BI Desktop** fra og med udgivelsen i september 2017 og i efterfølgende opdateringer til **Power BI-tjenesten**.

@@ -11,10 +11,11 @@ ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 223cd6442f8856a2e7a7cabe234e6539cd119d4a
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34291437"
 ---
 # <a name="using-calculated-tables-in-power-bi-desktop"></a>Brug af beregnede tabeller i Power BI Desktop
 Med beregnede tabeller kan du føje en ny tabel til modellen. Men i stedet for at forespørge efter og indlæse værdier i din nye tabels kolonner fra en datakilde kan du oprette en DAX-formel (Data Analysis Expressions), der definerer værdierne i tabellen. I Power BI Desktop oprettes der beregnede kolonner ved hjælp af funktionen Ny tabel i Rapportvisning eller Datavisning.
