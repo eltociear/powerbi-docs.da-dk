@@ -12,10 +12,11 @@ ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 ms.openlocfilehash: 2a5e654062c056308431b2a94f7e2da4e3d46d17
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34240877"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interaktion med ArcGIS-kort i Power BI
 Dette emne skrives fra en persons synspunkt, hvor vedkommende *bruger* et ArcGIS-kort i Power BI-tjenesten, på Desktop eller på mobil. Når en forfatter deler et ArcGIS-kort med dig, kan du interagere med kortet på mange måder.  Hvis du vil vide mere om oprettelse af et ArcGIS-kort, kan du se [ArcGIS-kort efter Esri-selvstudium](power-bi-visualization-arcgis.md).
