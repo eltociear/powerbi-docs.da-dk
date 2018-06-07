@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 891e9d35be271f6479a832b234a69132736f09a5
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 6e1b2960eee8f436f8dbce660e755a5d0b39a68e
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721564"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Fejlfinding i forbindelse med opdatering af scenarier
 Her kan du finde oplysninger om forskellige scenarier, som du kan stå overfor, når du opdaterer data i Power BI-tjenesten.
@@ -56,6 +57,14 @@ Den maksimale størrelse for datasæt, der importeres i **Power BI-tjenesten**, 
 
 ## <a name="scheduled-refresh-timeout"></a>Timeout for planlagt opdatering
 Planlagt opdatering for importerede datasæt får timeout efter to timer. Denne timeout er øget til fem timer for datasæt på **Premium**-arbejdsområder. Hvis du støder på denne grænse, kan du overveje at reducere dit datasæts størrelse eller kompleksitet eller overveje at inddele datasættet i mindre dele.
+
+## <a name="access-to-the-resource-is-forbidden"></a>Der er ikke adgang til ressourcen  
+Denne fejl kan opstå, hvis cachelagrede legitimationsoplysninger er udløbet. Ryd din browsers cache ved at logge på Power BI og gå til https://app.powerbi.com?alwaysPromptForContentProviderCreds=true. Dette gennemtvinger en opdatering af dine legitimationsoplysninger. 
+    
+    
+## <a name="data-refresh-failure-because-of-password-change-or-expired-credentials"></a>Fejl under opdatering af data på grund af ændret adgangskode eller udløbne legitimationsoplysninger 
+Dataopdateringen kan også mislykkes på grund af udløbne cachelagrede legitimationsoplysninger. Ryd din browsers cache ved at logge på Power BI og gå til https://app.powerbi.com?alwaysPromptForContentProviderCreds=true. Dette gennemtvinger en opdatering af dine legitimationsoplysninger.
+
 
 ## <a name="next-steps"></a>Næste trin
 [Dataopdatering](refresh-data.md)  

@@ -8,15 +8,15 @@ featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/05/2018
+ms.date: 05/25/2018
 ms.author: v-thepet
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 77c1dbe528b218fe3b51992f548325bb8916c22c
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 75ae82e43987cb42b858fe4350330fda3692cf97
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34297348"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721495"
 ---
 # <a name="slicers-in-power-bi"></a>Udsnitsværktøjer i Power BI
 Du vil gerne give rapportlæserne mulighed for at se de overordnede salgstal, men samtidig fremhæve resultaterne for individuelle distriktsledere (District Manager) og forskellige tidsperioder. Du kan oprette separate rapporter eller diagrammer til sammenligning, eller du kan bruge udsnit. Et udsnit er en alternativ metode til filtrering, som begrænser den del af datasættet, der vises i andre visualiseringer i en rapport. 
@@ -43,6 +43,13 @@ Der er følgende begrænsninger for udsnit i Power BI:
 ## <a name="create-slicers"></a>Opret udsnit
 
 Du kan oprette et udsnit ved at vælge udnitsikonet og derefter vælge det datafelt, du vil filtrere efter (eller trække det til feltet **Felter** i ruden **Visualiseringer**), eller du kan vælge eller trække datafeltet først for at oprette en visualisering og derefter vælge udsnitsikonet for at ændre visualiseringen til et udsnit. Forskellige datatyper opretter forskellige typer udsnit med forskellige effekter og indstillinger. 
+
+Når du ændrer en rapport første gang, vil knappen **Nulstil til standard** lyse op. Dette er en påmindelse om, at du har foretaget en ændring i de oprindelige rapportindstillinger. Hvis du navigerer væk fra rapporten, gemmes ændringen. Når du vender tilbage til rapporten, skal du ikke oprette nye udsnit.  Hvis du vil nulstille rapporten til forfatterens standardindstillinger, skal du dog vælge knappen **Nulstil til standard** på den øverste menulinje.
+
+![knappen gendan til standard](media/power-bi-visualization-slicers/power-bi-reset-to-default.png)
+
+> [!NOTE]
+> Hvis knappen **Nulstil til standard** forbliver deaktiveret, betyder det enten, at rapportens forfatter har deaktiveret funktionen for rapporten, eller det betyder, at rapporten indeholder en brugerdefineret visualisering. Du skal blot pege på knappen for at læse værktøjstippet for at få en forklaring. 
 
 **Sådan opretter du et nyt udsnit for at filtrere data efter District Manager**
 

@@ -8,15 +8,15 @@ featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 05/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b9c67b1c493d885b0a1b1a21e27c652afaaa513e
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 91836970bda7e72c99977f360e2c0531a20bef20
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34296980"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584110"
 ---
 # <a name="scatter-charts-and-bubble-charts-in-power-bi"></a>Punktdiagrammer og boblediagrammer i Power BI
 Et punktdiagram har altid to værdiakser for at vise ét sæt numeriske data langs en vandret akse og et andet sæt numeriske værdier langs en lodret akse. Diagrammet viser punkter ved skæringspunktet for en numerisk x- og y-værdi og kombinerer disse værdier i enkelte datapunkter. Disse datapunkter kan være fordelt jævnt eller ujævnt på tværs af den vandrette akse afhængigt af dataene.
@@ -81,7 +81,7 @@ Nu tilføjer jeg en tredje dimension.
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 
-3. Hvis du vil indstille antallet af datapunkter, der skal vises i dit boblediagram, skal du i afsnittet **Format** på ruden **Visualiseringer** udvide kortet **Generelt** og justere **Datamængde**. Du kan angive, at den maksimale datamængde skal være et vilkårligt tal op til 10.000 (standard er 3.500).
+3. Hvis du vil indstille antallet af datapunkter, der skal vises i dit boblediagram, skal du i afsnittet **Format** på ruden **Visualiseringer** udvide kortet **Generelt** og justere **Datamængde**. Du kan angive, at den maksimale datamængde skal være et vilkårligt tal op til 10.000. Når du når til højere tal, anbefaler vi, at du tester det først for at sikre, at der bibeholdes en brugbar ydeevne. 
 
     ![Datamængde](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
 

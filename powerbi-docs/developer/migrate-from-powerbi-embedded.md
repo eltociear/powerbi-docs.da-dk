@@ -6,13 +6,14 @@ manager: kfile
 ms.reviewer: ''
 ms.Embedded: powerbi
 ms.topic: conceptual
-ms.date: 03/06/2018
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: bfee68658816d46e23a3b66f9b04b2069704a2b8
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 67b52fa94ee3af9da3bfcae17f69a72e1aa46c77
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34689777"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded
 Se, hvordan du overfører fra Power BI Workspace Collection til Power BI Embedded og udnytter fordelene ved at integrere i apps.
@@ -26,9 +27,14 @@ Den nuværende Power BI Workspace Collection er fortsat tilgængelig i en begræ
 > [!IMPORTANT]
 > Selvom overførslen vil være afhængig af Power BI Embedded, er brugerne af din applikation ikke afhængige af Power BI, når de bruger et **integreringstoken**. De behøver ikke at tilmelde sig Power BI for at få vist det integrerede indhold i din app. Du kan bruge denne integreringstilgang i forbindelse med Embedded for brugere uden Power BI.
 > 
-> 
 
 ![](media/migrate-from-powerbi-embedded/powerbi-embed-flow.png)
+
+Inden du begynder overførslen til det nye Power BI Embedded, kan du tage en hurtig gennemgang, der hjælper dig med at konfigurere dit nye Power BI Embedded-miljø ved hjælp af [Onboarding Experience Tool](https://aka.ms/embedsetup).
+
+Vælg den løsning, der er den rette for dig:
+* **Embed for your customers** – når du er interesseret i en løsning, hvor [appen ejer dataene](https://aka.ms/embedsetup/AppOwnsData). Med [Embedding for your customers](embedding.md#embedding-for-your-customers) kan du integrere dashboards og rapporter for de brugere, der ikke har en konto til Power BI. 
+* **Embed for your organization** – når du er interesseret i en løsning, hvor [brugeren ejer dataene](https://aka.ms/embedsetup/UserOwnsData). Med [Embedding for your organization](embedding.md#embedding-for-your-organization) kan du udvide Power BI-tjenesten.
 
 ## <a name="prepare-for-the-migration"></a>Forbered overførslen
 Der er et par ting, du skal gøre som forberedelse til at overføre fra Power BI Workspace Collection til Power BI Embedded. Du skal have adgang til en lejer og til en bruger med en Power BI Pro-licens.
@@ -63,10 +69,6 @@ Der skal findes følgende konti i din lejer.
    
 > [!NOTE]
 > Dette er blot en almindelig brugerkonto i organisationen, der bruges til integrering.
->
-
-> [!NOTE]
-> Hvis App-Only Token Authentication er et krav til din app, skal du klikke [her](mailto:pbieci@microsoft.com?Subject=App-only%20token%20requirement) for at kontakte os.
 >
 
 ## <a name="app-registration-and-permissions"></a>Appregistrering og tilladelser

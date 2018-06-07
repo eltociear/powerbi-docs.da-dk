@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 75810bfad9efd5a0ea42a07d44a61d4f92f7f232
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: e996b1399ff4dde96d122e747cf1f07db3a44876
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34294910"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721817"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Opret en sideinddelt rapport til Power BI-rapportserver
 Som navnet antyder så kan sideinddelte rapporter løbe op i mange sider. De er udformet i et fast format og tillader præcis tilpasning. Sideinddelte rapporter er .rdl-filer.
@@ -94,7 +94,7 @@ Når rapporten er klar, kan du gemme den på Power BI-rapportserveren.
 Der er mange fantastiske ressourcer til design af rapporter i Report Builder og i Rapportdesigner i SQL Server Data Tools. Report Builder-selvstudier er et godt sted at starte.
 
 * [Report Builder-selvstudier](https://docs.microsoft.com/sql/reporting-services/report-builder-tutorials)
-* [Brugerhåndbog til Power BI-rapportserver](user-handbook-overview.md)  
+* [Hvad er Power BI-rapportserveren?](get-started.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

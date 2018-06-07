@@ -9,11 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: 2108d8fc290a5af568a3e06ae5986e82413b680b
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: fa142a34da003328ef509c319faf24d556023440
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34720805"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Fejlfinding af det integrerede program
 
@@ -74,7 +75,7 @@ En fiddler-optagelse kan være påkrævet med henblik på yderligere efterforskn
 
 En fiddler-optagelse kan være påkrævet med henblik på yderligere efterforskning. Der kan være flere grunde til en 403-fejl.
 
-* Brugeren har overskredet det antal integrerede tokens, der kan genereres på en delt kapacitet. Du skal købe Azure-kapacitet for at generere integrerede tokens og tildele arbejdsområdet til den pågældende kapacitet. Se [Opret Power BI Embedded-kapacitet på Azure Portal](https://docs.microsoft.com/en-us/azure/power-bi-embedded/create-capacity).
+* Brugeren har overskredet det antal integrerede tokens, der kan genereres på en delt kapacitet. Du skal købe Azure-kapacitet for at generere integrerede tokens og tildele arbejdsområdet til den pågældende kapacitet. Se [Opret Power BI Embedded-kapacitet på Azure Portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 * Azure AD auth-tokenet kan være udløbet.
 * Den godkendte bruger er ikke medlem af gruppen (programarbejdsområde).
 * Den godkendte bruger er ikke en administrator af gruppen (programarbejdsområde).
@@ -132,6 +133,53 @@ Hvis brugeren ikke kan se rapporten eller dashboardet, skal du sørge for, at ra
 **Rapport- eller dashboard-ydeevne er langsom**
 
 Åbn filen fra Power BI Desktop, eller internt i powerbi.com, og bekræft, at ydeevnen er acceptabel for at udelukke, at der er problemer med dit program eller integrations-API'er.
+
+## <a name="onboarding-experience-tool-for-embedding"></a>Onboarding Experience Tool til integration
+
+Du kan gennemgå [Onboarding Experience Tool](https://aka.ms/embedsetup) for hurtigt at downloade en eksempelapp. Derefter kan du sammenligne din app med eksemplet.
+
+### <a name="prerequisites"></a>Forudsætninger
+
+Kontrollér, at du opfylder de krævede forudsætninger, før du bruger Onboarding Experience Tool. Du skal have en **Power BI Pro**-konto og et **Microsoft Azure**-abonnement.
+
+* Hvis du ikke er tilmeldt **Power BI Pro**, kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/en-us/pricing/), før du begynder.
+* Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), før du begynder.
+* Du skal have din egen konfiguration af [Azure Active Directory-lejer](create-an-azure-active-directory-tenant.md).
+* Du skal have [Visual Studio](https://www.visualstudio.com/) installeret (version 2013 eller nyere).
+
+### <a name="common-issues"></a>Almindelige problemer
+
+Nogle af de mest almindelige problemer, som du kan støde på med Onboarding Experience Tool, er:
+
+#### <a name="using-the-embed-for-your-customers-sample-application"></a>Brug af eksempelappen Embed for your customers
+
+Hvis du arbejder med **Embed for your customers**, skal du gemme og udpakke filen *PowerBI-Developer-Samples.zip*. Derefter skal du åbne mappen *PowerBI-Developer-Samples-master\App Owns Data* og køre filen *PowerBIEmbedded_AppOwnsData.sln*.
+
+Når du vælger **Grant permissions**, får du vist følgende fejl:
+
+    AADSTS70001: Application with identifier <client ID> was not found in the directory <directory ID>
+
+Du kan løse fejlen ved at lukke pop op-vinduet, vente nogle sekunder og prøve igen. Det kan være nødvendigt at gentage dette nogle gange. Et tidsinterval er årsag til problemet, hvor programregistreringsprocessen ikke kan fuldføres, når den er tilgængelig for eksterne API'er.
+
+Følgende fejlmeddelelse vises, når eksempelappen køres:
+
+    Password is empty. Please fill password of Power BI username in web.config.
+
+Denne fejl opstår, fordi den eneste værdi, der ikke bliver overført til eksempelappen, er din brugeradgangskode. Åbn filen Web.config i løsningen, og udfyld feltet pbiPassword med din brugeradgangskode.
+
+#### <a name="using-the-embed-for-your-organization-sample-application"></a>Brug af eksempelappen Embed for your organization
+
+Hvis du arbejder med **Embed for your organization**, skal du gemme og udpakke filen *PowerBI-Developer-Samples.zip*. Derefter skal du åbne mappen *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* og køre filen *pbi-saas-embed-report.sln*.
+
+Når du kører eksempelappen **Embed for your organization**, får du følgende fejl:
+
+    AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application: <client ID>
+
+Dette skyldes, at den URL-adresse til omdirigering, der er angivet for webserverprogrammet, er forskellig fra URL-adressen i eksemplet. Hvis du vil registrere eksempelappen, skal du bruge *http://localhost:13526/* som URL-adresse til omdirigering.
+
+Hvis du vil redigere det registrerede program, skal du lære at redigere den [AAD-registrerede app](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), så appen kan give adgang til web-API'erne.
+
+Hvis du vil redigere Power BI-brugerprofilen eller -dataene, skal du lære, hvordan du redigere dine [Power BI-data](https://docs.microsoft.com/en-us/power-bi/service-basic-concepts).
 
 Du kan finde flere oplysninger under [Ofte stillede spørgsmål om Power BI Embedded](embedded-faq.md).
 

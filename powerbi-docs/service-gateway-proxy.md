@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ab5afb36458d7e1b5271a356bb1532ba77de6408
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: c0ad0c22d0787eaaa45cb36c74c01f6a1d1f85e3
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722652"
 ---
 # <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Konfiguration af proxyindstillinger for datagatewayen i det lokale miljø
 Dit arbejdsmiljø kan kræve, at du går gennem en proxy for at få adgang til internettet. Dette kan forhindre datagatewayen i det lokale miljø i at oprette forbindelse til tjenesten.
@@ -50,6 +51,19 @@ Standardproxykonfigurationen er følgende.
     </system.net>
 
 Standardkonfigurationen fungerer sammen med Windows-godkendelse. Hvis din proxy bruger en anden form for godkendelse, skal du ændre indstillingerne. Hvis du ikke er sikker, skal du kontakte netværksadministratoren.
+
+Ud over at bruge standardlegitimationsoplysninger kan du tilføje et <proxy>-element for at definere indstillingerne for proxyserveren. Du kan f.eks. angive, at din datagateway i det lokale miljø altid skal bruge proxyen til lokale ressourcer ved at angive parameteren bypassonlocal til falsk. Det kan være en hjælp til fejlfinding, hvis du vil registrere alle https-anmodninger, der stammer fra en datagateway i det lokale miljø i proxylogfilerne. Følgende eksempelkonfiguration angiver, at alle anmodninger skal gå gennem en bestemt proxy med IP-adressen 192.168.1.10.
+
+    <system.net>
+        <defaultProxy useDefaultCredentials="true">
+            <proxy  
+                autoDetect="false"  
+                proxyaddress="http://192.168.1.10:3128"  
+                bypassonlocal="false"  
+                usesystemdefault="true"
+            />  
+        </defaultProxy>
+    </system.net>
 
 Hvis du vil vide mere om konfiguration af proxyelementerne for .NET-konfigurationsfiler, kan du se [defaultProxy-element (netværksindstillinger)](https://msdn.microsoft.com/library/kd3cf2ex.aspx).
 

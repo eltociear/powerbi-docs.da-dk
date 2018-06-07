@@ -9,11 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
-ms.openlocfilehash: 94f137f0b8627bf34e78d9ac36574c64dd5d4752
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 3c3295483112ae0b5475e15c2073faba86dfff30
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34561810"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Vejledning i kapacitetsplanlægning i Power BI-rapportserver
 Power BI-rapportserver er en selvbetjenings-BI og virksomhedsrapporteringsløsning, som kunder kan installere i deres lokale miljø, bag deres firewall. Løsningen kombinerer den interaktive rapporteringskapacitet i Power BI Desktop med serverplatformen i SQL Server Reporting Services i det lokale miljø. I takt med virksomheders stigende og omfattende brug af analyser og rapportering, kan det være en udfordring at udarbejde et budget, der tager højde for de skalerbare løsninger til hardwareinfrastrukturen og de softwarelicenser, der kræves til en virksomheds brugergrundlag. Denne rapports primære sigte er at give en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af adskillelige gennemførsler af belastningstest ved forskellige arbejdsbelastninger i forhold til en rapportserver. Organisationers rapporterings-, forespørgsels- og brugsmønstre varierer betydeligt, men resultaterne forelagt i denne rapport kan, sammen med de anvendte faktiske test og en detaljeret beskrivelse af deres gennemførselsmetode, bruges som referencepunkt for alle, der er i den tidlige planlægningsfase i processen med at installere Power BI-rapportserver.
@@ -49,7 +50,7 @@ Installationen af Power BI-rapportserveren omfattede de følgende virtuelle mask
 Se tillæg 1.1 Power BI-rapportservertopologi og tillæg 1.2 Konfiguration af Power BI-rapportservers virtuelle maskine for en grundig beskrivelse af konfigurationen af hver virtuelle maskine, der bruges i topologien.
 
 ### <a name="tests"></a>Test
-De brugte test i belastningstestkørslerne er offentligt tilgængelige i et GitHub-projekt kaldet Reporting Services LoadTest (Se https://github.com/Microsoft/Reporting-Services-LoadTest). Dette værktøj tillader brugere at granske egenskaber inden for ydeevne, pålidelighed, skalerbarhed og gendannelse hos SQL Server Reporting Services og Power BI-rapportserveren. Dette projekt består af fire grupper prøvesager:
+De brugte test i belastningstestkørslerne er offentligt tilgængelige i et GitHub-projekt kaldet [Reporting Services LoadTest](https://github.com/Microsoft/Reporting-Services-LoadTest). Dette værktøj tillader brugere at granske egenskaber inden for ydeevne, pålidelighed, skalerbarhed og gendannelse hos SQL Server Reporting Services og Power BI-rapportserveren. Dette projekt består af fire grupper prøvesager:
 
 * Test med simuleret gengivelse af Power BI-rapporter,
 * Test med simuleret gengivelse af mobile rapporter,

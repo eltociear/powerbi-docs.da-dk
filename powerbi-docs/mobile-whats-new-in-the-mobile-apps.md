@@ -7,13 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/23/2018
+ms.date: 05/21/2018
 ms.author: maggies
-ms.openlocfilehash: 5bd38c7973a4820b98e6591a12a8950987759b93
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 0e4401499ab54707970b928366c67a9dcf7d587a
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34482170"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -21,6 +22,12 @@ Du kan finde relaterede oplysninger om nyheder under:
 * [Power BI-teamets blog til mobilapps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheder i Power BI Desktop](desktop-latest-update.md)  
 * [Nyheder i Power BI-tjenesten](service-whats-new.md)  
+
+## <a name="may-2018"></a>Maj 2018
+
+### <a name="configure-power-bi-ios-mobile-apps-for-report-servers-remotely"></a>Konfigurer Power BI iOS-mobilapps eksternt for rapportservere
+
+Din it-administrator kan nu bruge et MDM-værktøj til at konfigurere adgang til en rapportserver for Power BI iOS-mobilappen. Se [Konfigurer Power BI iOS-mobilapps eksternt for rapportservere](report-server/configure-powerbi-mobile-apps-remote.md) for at få flere oplysninger.
 
 ## <a name="april-2018"></a>April 2018
 

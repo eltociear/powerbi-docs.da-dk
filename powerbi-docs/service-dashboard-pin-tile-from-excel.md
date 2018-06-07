@@ -8,14 +8,15 @@ featuredvideoid: l8JoB7w0zJA
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 05/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d6bb6bbed1d5423acbcf53ac50717debdfea4eaa
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 6cdcff66d48ede031a635e44e3a40af4e321c0c5
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584064"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fastgør et felt til et Power BI-dashboard fra Excel
 Før du kan fastgøre et felt fra din Excel-projektmappe, skal du oprette forbindelse mellem denne projektmappe og Power BI-tjenesten (app.powerbi.com). Når der oprettes forbindelse til en projektmappe, overføres der grundlæggende set en sammenkædet skrivebeskyttet version af denne projektmappe til Power BI-tjenesten, så du kan fastgøre intervaller til dashboards. Du kan endda fastgøre et helt regneark til et dashboard.  
@@ -65,14 +66,14 @@ Du kan ikke redigere din projektmappe i Power BI. Men hvis du har brug for at fo
     ![Fastgjort til dashboarddialogboks](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)
 5. Vælg **Gå til dashboard**. Herfra kan du [omdøbe, sammenkæde, flytte og tilpasse størrelsen af](service-dashboard-edit-tile.md) den fastgjorte visualisering. Som standard åbnes projektmappen i Power BI, når du vælger det fastgjorte felt.
 
-## <a name="pin-an-entire-table-or-pivot-chart-to-a-dashboard"></a>Fastgør en hel tabel eller et pivotdiagram til et dashboard
+## <a name="pin-an-entire-table-or-pivottable-to-a-dashboard"></a>Fastgør en hel tabel eller en pivottabel på et dashboard
 Følg trinnene herover, bortset fra at du i stedet for at markere et celleområde skal markere en hel tabel eller pivottabel.
 
 Hvis du vil fastgøre en tabel, skal du markere hele tabelområdet og sørge for at medtage overskrifterne.  Hvis du vil fastgøre en pivottabel, skal du medtage alle synlige dele af pivottabellen, herunder filtre, hvis de bruges.
 
  ![vælg celler](media/service-dashboard-pin-tile-from-excel/pbi_selecttable.png)
 
-Et felt, der er oprettet ud fra en tabel eller en pivottabel, viser hele tabellen.  Hvis du tilføjer/fjerner/filtrerer rækker eller kolonner i den oprindelige projektmappe, vil de også blive tilføjet/fjernet/filtreret i feltet.
+Et felt, der oprettes ud fra en tabel eller pivottabel, viser hele tabellen.  Hvis du tilføjer/fjerner/filtrerer rækker eller kolonner i den oprindelige projektmappe, vil de også blive tilføjet/fjernet/filtreret i feltet.
 
 ## <a name="view-the-workbook-linked-to-the-tile"></a>Få vist den projektmappe, der er sammenkædet med feltet
 Hvis du vælger et felt til projektmappen, åbnes den sammenkædede projektmappe i Power BI. Da projektmappefilen er placeret på ejerens OneDrive for Business, kræver visning af projektmappen, at du har læsetilladelse til projektmappen. Hvis du ikke har tilladelse, får du vist en fejlmeddelelse.  

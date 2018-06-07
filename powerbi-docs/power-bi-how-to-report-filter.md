@@ -7,14 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/15/2018
+ms.date: 05/25/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: b0a18d5befe49a3ffaa400b0e081d88720cdd28c
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 6d0a1afe27372c808e63adb34fda96e978b2e2be
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721380"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Få en præsentation af ruden Rapportfiltre
 Denne artikel ser nærmere på ruden Rapportfiltre. Du får vist ruden i [redigeringsvisning og læsevisning i Power BI-tjenesten](service-reading-view-and-editing-view.md) og i [rapportvisning i Power BI Desktop](desktop-report-view.md).
@@ -22,7 +23,7 @@ Denne artikel ser nærmere på ruden Rapportfiltre. Du får vist ruden i [redige
 Der er mange forskellige måder at filtrere data på i Power BI, og vi anbefaler, at du først læser [Om filtre og fremhævning](power-bi-reports-filters-and-highlighting.md).
 
 ## <a name="working-with-the-report-filters-pane"></a>Arbejde med ruden Filtre i rapporter
-I Power BI Desktop åbnes rapporter i Rapportvisning. I Power BI-tjenesten kan rapporter åbnes i enten [Redigeringsvisning eller Læsevisning](service-reading-view-and-editing-view.md). I Redigeringsvisning og i Desktop-versionens Rapportvisning kan rapportejere [føje filtre til en rapport](power-bi-report-add-filter.md) og gemme filtrene sammen med rapporten. Personer, der åbner rapporten i Læsevisning, kan arbejde med filtrene, men kan ikke tilføje nye filtre i rapporten.
+I Power BI Desktop åbnes rapporter i Rapportvisning. I Power BI-tjenesten kan rapporter åbnes i enten [Redigeringsvisning eller Læsevisning](service-reading-view-and-editing-view.md). I Redigeringsvisning og i Desktop-versionens Rapportvisning kan rapportejere [føje filtre til en rapport](power-bi-report-add-filter.md) og gemme filtrene sammen med rapporten. De personer, der åbner rapporten i Læsevisning, kan arbejde med filtrene og gemme deres ændringer, men de kan ikke tilføje nye filtre i rapporten.
 
 I Power BI-tjenesten gemmes de ændringer, du foretager i ruden Filtre, sammen med rapporten og overføres til mobilversionen af rapporten. Du kan nulstille ruden Filtre til opretterens standardindstilling ved at vælge **Nulstil til standard** på den øverste menulinje.     
 

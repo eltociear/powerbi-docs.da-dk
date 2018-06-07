@@ -8,14 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 05/25/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5a3192910faf41bee925eb4938098bccb6434bb2
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 4d67499c571d736da3a8cebed5826c708911cc4d
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584156"
 ---
 # <a name="export-data-from-visualizations"></a>Eksportér data fra visualiseringer
 Hvis du gerne vil se de data, der bruges til at oprette en visualisering, kan du [få vist de pågældende data i Power BI](service-reports-show-data.md) eller eksportere dataene til Excel som en .xlsx- eller .csv-fil.   
@@ -31,7 +32,7 @@ Se med, når Will eksporterer dataene fra en af visualiseringerne i hans rapport
 2. Vælg ikonet **Eksportér data**.
    
     ![](media/power-bi-visualization-export-data/pbi_export_dash.png)
-3. Dataene eksporteres til en .csv-fil. Hvis visualiseringen er filtreret, filtreres de downloadede data også.
+3. Dataene eksporteres til en .csv-fil. Hvis visualiseringen er filtreret, filtreres de downloadede data også.    
 4. Via browseren bliver du bedt om at gemme filen.  Når du har gemt den, kan du åbne .csv-filen i Excel.
    
     ![](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
@@ -84,6 +85,7 @@ Hvis du vil følge med, skal du åbne [eksempelrapporten med en indkøbsanalyse]
 * I Power BI understøttes kun eksport i visualiseringer, som anvender grundlæggende aggregater. Eksportér er ikke tilgængelig for visualiseringer, der anvender model- eller rapportmålinger.
 * Brugerdefinerede visualiseringer og R-visualiseringer understøttes ikke i øjeblikket.
 * Eksportér data er ikke tilgængelig for brugere uden for organisationen, som bruger et dashboard, der er blevet delt med dem. 
+* I Power BI kan et felt (kolonne) omdøbes ved at dobbeltklikke på feltet og skrive et nyt navn.  Det nye navn kaldes et *alias*. Det er muligt at have dublerede feltnavne i en Power BI-rapport, men det understøttes ikke i Excel.  Hvis dataene eksporteres til Excel, vil feltaliasserne derfor bliver gendannet med de oprindelige feltnavne.  
 * Hvis der er Unicode-tegn i .csv-filen, vises teksten muligvis ikke korrekt i Excel. Det fungerer dog fint, hvis du åbner den i Notesblok. Valutasymboler og fremmedord er eksempler på Unicode-tegn. En midlertidig løsning på dette er at importere csv-filen i Excel i stedet for at åbne filen direkte. Hvis du vil dette, skal du gøre som følger:
   
   1. Åbn Excel

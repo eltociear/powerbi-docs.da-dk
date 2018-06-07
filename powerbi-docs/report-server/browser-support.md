@@ -9,11 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/25/2018
 ms.author: maghan
-ms.openlocfilehash: 23eea014ca4554a2df676cf1fe0be54c2b69d15a
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: b340ba2f2798c518d1705c03f7ec526a43bc019d
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721771"
 ---
 # <a name="browser-support-for-power-bi-report-server"></a>Browsersupport til Power BI Report Server
 Få mere at vide om, hvilke browserversioner der understøtter administration og visning af Power BI Report Server og Report Viewer-kontrolelementerne.
@@ -46,7 +47,7 @@ Herunder finder du den aktuelle liste over browsere, der understøtter webportal
 
 * Google Chrome (+)
   
-  **(+) ** Seneste offentligt udgivne version
+  **(+)**  Seneste offentligt udgivne version
 
 ## <a name="browser-requirements-for-the-report-viewer-web-control-2015"></a>Krav til browseren for Report Viewer-webkontrollen (2015)
 Herunder finder du den aktuelle liste over browsere, der understøtter Report Viewer-webportalen. Rapportfremviseren understøtter visning af rapporter fra webportalen.
@@ -64,7 +65,7 @@ Herunder finder du den aktuelle liste over browsere, der understøtter Report Vi
 
 * Apple Safari (+)
   
-  **(+) ** Seneste offentligt udgivne version
+  **(+)**  Seneste offentligt udgivne version
 
 ### <a name="authentication-requirements"></a>Krav til godkendelse
 Browserne understøtter specifikke godkendelsesmetoder, der skal håndteres af rapportserveren, for at klientanmodningen kan fuldføres. I følgende tabel angives de standardgodkendelsestyper, der understøttes af alle de browsere, der fungerer med et Windows-operativsystem.
@@ -77,7 +78,7 @@ Browserne understøtter specifikke godkendelsesmetoder, der skal håndteres af r
 | **Mozilla Firefox**(+) |NTLM, Basic |NTLM |Ja. Standardgodkendelsesindstillingerne fungerer sammen med Firefox. |
 | **Apple Safari**(+) |NTLM, Basic |Basic |Ja. Standardgodkendelsesindstillingerne fungerer sammen med Safari. |
 
- **(+) ** Seneste offentligt udgivne version
+ **(+)**  Seneste offentligt udgivne version
 
 ### <a name="script-requirements-for-viewing-reports"></a>Scriptkrav for at få vist rapporter
 Konfigurer webbrowseren til at køre scripts for at kunne bruge rapportfremviseren.
@@ -108,10 +109,10 @@ Brug en browser med aktivering af scriptsupport. Hvis browseren ikke kan køre s
 * Google Chrome (+)
 * Mozilla Firefox (+)
   
-  **(+) ** Seneste offentligt udgivne version
+  **(+)**  Seneste offentligt udgivne version
 
 ## <a name="next-steps"></a>Næste trin
-[Administratorhåndbog](admin-handbook-overview.md)  
+[Administratoroversigt](admin-handbook-overview.md)  
 [Installer Power BI-rapportserver](install-report-server.md)  
 [Installér Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)

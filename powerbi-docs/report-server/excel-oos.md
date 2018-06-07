@@ -9,11 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 04/23/2018
 ms.author: maghan
-ms.openlocfilehash: 8a002105fcb9f5dc07197aac5722a57c7bba14b6
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 705de47a1e89d765f34eadfcd35064ccde7aa66b
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481894"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Konfigurer din rapportserver til at være vært for Excel-projektmapper ved hjælp af Office Online Server (OOS)
 Ud over at vise Power BI-rapporter på webportalen kan Power BI Report Server hoste Excel-projektmapper ved hjælp af OOS [(Office Online Server)](https://docs.microsoft.com/officeonlineserver/office-online-server-overview). Rapportserveren bliver en samlet placering, hvor du kan udgive og se Microsoft BI-indhold til selvbetjening.
@@ -167,7 +168,7 @@ Når du vælger en Excel-projektmappe på webportalen, efter at du har angivet r
 * Du har kun læseadgang til projektmapper.
 
 ## <a name="next-steps"></a>Næste trin
-[Administratorhåndbog](admin-handbook-overview.md)  
+[Administratoroversigt](admin-handbook-overview.md)  
 [Installer Power BI-rapportserver](install-report-server.md)  
 [Installér Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)

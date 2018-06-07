@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 05/24/2018
 ms.author: maggies
-ms.openlocfilehash: f739104bc9b67e51792e6e76da08b9e6dbb7cef3
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 9b896c9db6c1368c5e435df21c28cd99b8dda15f
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34293231"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721702"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Administrer indhold på webportalen 
 Webportalen Power BI-rapportserver er en placering i det lokale miljø til visning, lagring og administration af dine Power BI-rapporter, dine mobile og sideinddelte rapporter og KPI'er.
@@ -67,9 +67,7 @@ Power BI-rapportserver tilbyder detaljeret kontrol over de elementer, som du gem
 Læs mere om [arbejde med abonnementer i webportalen](https://docs.microsoft.com/sql/reporting-services/working-with-subscriptions-web-portal).
 
 ## <a name="next-steps"></a>Næste trin
-[Brugerhåndbog](user-handbook-overview.md)  
-[Sideinddelte rapporter](quickstart-create-paginated-report.md)  
-[Power BI-rapporter](quickstart-create-powerbi-report.md)
+[Hvad er Power BI-rapportserveren?](get-started.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

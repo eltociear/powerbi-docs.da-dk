@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 04/19/2018
+ms.date: 05/21/2018
 ms.author: maggies
-ms.openlocfilehash: 391edc8a2187f9a4af43b93f0713d40e41f6e943
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 07c393425d2a04376a4fcf81c2c35a0e115eeaee
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34295416"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481946"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 Læs om nyheder i Power BI-rapportserver. Dette dækker de primære funktionsområder og opdateres i takt med, at der frigives nye elementer.
@@ -32,6 +32,12 @@ Du kan finde relaterede oplysninger om nyheder i Power BI under:
 * [Nyheder i Power BI-tjenesten](../service-whats-new.md)
 * [Nyheder i Power BI Desktop](../desktop-latest-update.md)
 * [Nyheder i mobilappsene til Power BI](../mobile-whats-new-in-the-mobile-apps.md)
+
+## <a name="may-2018"></a>Maj 2018
+
+### <a name="configure-power-bi-ios-mobile-apps-for-report-servers-remotely"></a>Konfigurer Power BI iOS-mobilapps eksternt for rapportservere
+
+Som it-administrator kan du bruge din organisations MDM-værktøj til eksternt at konfigurere adgang til en rapportserver for Power BI iOS-mobilapps. Se [Konfigurer Power BI iOS-mobilapps eksternt for rapportservere](configure-powerbi-mobile-apps-remote.md) for at få flere oplysninger.
 
 ## <a name="march-2018-release"></a>Version fra marts 2018
 
@@ -204,7 +210,7 @@ Power BI-rapportserver understøtter nu de nye Power BI-tabel- og matrixvisuals.
 * Forbedret samarbejde i rapporter med kommentarer
 
 ## <a name="next-steps"></a>Næste trin
-[Brugerhåndbog](user-handbook-overview.md)  
+[Hvad er Power BI-rapportserveren?](get-started.md) 
 [Administratorhåndbog](admin-handbook-overview.md)  
 [Installer Power BI-rapportserver](install-report-server.md)  
 [Installér Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  

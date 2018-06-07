@@ -10,11 +10,12 @@ ms.topic: conceptual
 ms.date: 03/26/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 21ceec0ea522bd45a937096bcd778f2695c1edc3
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 4eb9f8e0b8548fbecd4e5d2e2fd47c4c3acd2bd6
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34722810"
 ---
 # <a name="on-premises-data-gateway"></a>Datagateway i det lokale miljø
 
@@ -93,6 +94,11 @@ Når du føjer en datakilde til gatewayen, skal du angive legitimationsoplysning
 
 Der er i øjeblikket ikke ét enkelt sted, hvor lejeradministratorer kan administrere alle de gateways, som andre brugere har installeret og konfigureret.  Hvis du er en lejeradministrator, anbefaler vi, at du beder brugerne i din organisation om at tilføje dig som administrator af hver enkelt gateway, de installerer. Dette gør det muligt for dig at administrere alle gateways i din organisation via siden Indstillinger for Gateway eller en via [PowerShell-kommandoer](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters). 
 
+## <a name="enabling-outbound-azure-connections"></a>Aktivér udgående Azure-forbindelser 
+Datagatewayen i det lokale miljø bruger Azure Service Bus til cloudforbindelsen og opretter tilsvarende udgående forbindelser til det tilknyttede Azure-område. Som standard er dette placeringen af din Power BI-lejer. Se [Hvor er min Power BI-lejer placeret?](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
+Hvis en firewall blokerer udgående forbindelser, skal du konfigurere firewallen for at tillade udgående forbindelser fra datagatewayen i det lokale miljø til det tilknyttede Azure-område. Se [Microsoft Azure Datacenter IP-områder](https://www.microsoft.com/en-us/download/details.aspx?id=41653) for at få oplysninger om IP-adresseintervallet for hvert Azure-datacenter.
+> [!NOTE]
+> IP-adresseområderne kan ændres over tid, så sørg for, at du downloader de nyeste oplysninger med jævne mellemrum. 
 
 ## <a name="troubleshooting"></a>Fejlfinding
 Hvis du har problemer med at installere og konfigurere en gateway, skal du se [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md). Hvis du mener, at du har et problem med din firewall, skal du se afsnittet om [firewall eller proxy](service-gateway-onprem-tshoot.md#firewall-or-proxy) i artiklen om fejlfinding.

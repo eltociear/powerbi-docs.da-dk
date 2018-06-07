@@ -7,13 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/30/2017
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 043bd43ac6d0abcd4cc4bae54f4ee57cc4ef2a41
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 2e899593cbe3453381dd2d3457cec97467aec4d6
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34561741"
 ---
 # <a name="embedding-with-power-bi"></a>Integrering med Power BI
 Power BI tilbyder API'er til integrering af dine dashboards og rapporter i applikationer. Power BI-API'erne tilbyder en ensartet række egenskaber og adgang til de nyeste funktioner i Power BI, som f.eks. dashboards, gateways og apparbejdsområder, når du integrerer indhold.
@@ -32,11 +33,13 @@ Med integrering i forbindelse med din organisation har du mulighed for at udvide
 
 Se følgende for integrering i forbindelse med din organisation:
 
+* [Integrer en rapport i en app](integrate-report.md)
 * [Integrer et dashboard i en app](integrate-dashboard.md)
 * [Integrer et felt i en app](integrate-tile.md)
-* [Integrer en rapport i en app](integrate-report.md)
 
 Funktionaliteten i selvbetjeningsportalen, f.eks. rediger, gem og meget mere, er tilgængelig via [JavaScript-API'en](https://github.com/Microsoft/PowerBI-JavaScript) ved integrering i forbindelse med Power BI-brugere.
+
+Du kan gennemgå [Onboarding Experience Tool for at integrere for din organisation](https://aka.ms/embedsetup/UserOwnsData) og hurtigt komme i gang med og downloade en eksempelapp, hvor du kan se, hvordan du integrerer en rapport for din organisation.
 
 ## <a name="embedding-for-your-customers"></a>Integrer for dine kunder
 Integrering for dine kunder giver mulighed for at integrere dashboards og rapporter for brugere, der ikke har en Power BI-konto. Dine kunder behøver ikke at have kendskab til Power BI. Der skal bruges mindst én Power BI-konto til at oprette et integreret program. Power BI Pro-kontoen fungerer som en masterkonto for dit program. Tænk på denne konto som en proxykonto. Power BI Pro-kontoen giver dig også mulighed for at generere integreringstokens, der giver adgang til dashboards og rapporter i Power BI-tjenesten, som ejes/administreres af dit program. 
@@ -50,11 +53,12 @@ Hvis du vil integrere dashboards, rapporter og felter, kan du bruge de samme API
 > [!IMPORTANT]
 > Integrering er afhængig af Power BI-tjenesten, men dine kunder er ikke afhængige af Power Bi. De behøver ikke at tilmelde sig Power BI for at få vist det integrerede indhold i din app.
 > 
-> 
 
 Når du er klar til at overgå til produktion, skal apparbejdsområdet tildeles en kapacitet. Power BI Embedded i Microsoft Azure tilbyder kapacitet, som du kan bruge til dine applikationer.
 
 Du kan finde oplysninger om, hvordan du integrerer under [Sådan integrerer du Power BI-dashboards, -rapporter og -felter](embedding-content.md).
+
+Du kan gennemgå [Onboarding Experience Tool for at integrere for dine kunder](https://aka.ms/embedsetup/AppOwnsData) og hurtigt komme i gang med og downloade en eksempelapp, hvor du kan se, hvordan du integrerer en rapport for dine kunder.
 
 Hvis du bruger tjenesten Power BI Workspace Collections i Azure, kan du finde oplysninger om, hvordan du overfører indhold under [Overfør indhold fra tjenesten Power BI Workspace Collections i Azure](migrate-from-powerbi-embedded.md).
 

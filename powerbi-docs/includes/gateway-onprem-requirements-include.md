@@ -13,6 +13,7 @@
 **Relaterede overvejelser:**
 
 * Gatewayen kan ikke installeres på en domænecontroller
+* Hvis du planlægger at bruge Windows-godkendelse, skal du installere en gateway på en computer, der er medlem af det samme Active Directory-miljø som datakilderne.
 * Du skal ikke installere en gateway på en computer, f.eks. en bærbar computer, der kan slukkes, sættes i slumretilstand eller ikke har forbindelse til internettet, da gatewayen ikke kan køre under disse omstændigheder. Desuden kan gatewayens ydeevne blive påvirket af et trådløst netværk.
 * Analysis Services er ikke påkrævet for at bruge gatewayen. Du kan bruge gatewayen til at oprette forbindelse til en Analysis Services-datakilde.
 

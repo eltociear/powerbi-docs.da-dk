@@ -8,15 +8,15 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/21/2018
+ms.date: 05/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9288c44194a7eabebfa9888b1bca0023a54950e8
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 6cc9b9cafe2b3efdb8e51e89c203e2cb123e909a
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34293576"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584271"
 ---
 # <a name="combo-chart-in-power-bi"></a>Kombinationsdiagram i Power BI
 I Power BI er et kombinationsdiagram en enkelt visualisering, der kombinerer et kurvediagram og et søjlediagram. Ved at kombinere disse to diagrammer kan du hurtigere sammenligne dine data.
@@ -105,6 +105,7 @@ Nu kan du f.eks.:
 
 * [Tilføje kombinationsdiagrammet som et dashboardfelt](service-dashboard-tiles.md).
 * [Gem rapporten](service-report-save.md).
+* [Gør rapporten tilgængelig for personer med handicap](desktop-accessibility.md)
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Tværgående fremhævning og krydsfiltrering
 

@@ -24,3 +24,6 @@ Du kan tvinge gatewayen til at kommunikere med Azure Service Bus ved hjælp af H
 ### <a name="error-failed-to-add-user-to-group---2147463168---pbiegwservice---performance-log-users---"></a>Fejl: Brugeren kunne ikke føjes til gruppen.  (-2147463168   PBIEgwService   Performance Log Users   )
 Du får evt. vist denne fejlmeddelelse, hvis du forsøger at installere gatewayen på en domænecontroller. Installation på en domænecontroller understøttes ikke. Du skal installere gatewayen på en computer, der ikke er en domænecontroller.
 
+### <a name="installation-fails"></a>Installationen mislykkedes
+Du kan komme ud for, at en installation mislykkes, hvis antivirussoftwaren på computeren er forældet. Du kan enten opdatere antivirussoftwaren eller deaktivere antivirusfunktionen for gatewayen, indtil du har installeret, og derefter aktivere antivirussoftwaren igen.
+

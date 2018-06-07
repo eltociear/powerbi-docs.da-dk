@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 05/18/2018
 ms.author: maghan
-ms.openlocfilehash: 228402dd2137f0cf2f3d480ff1acee10d2f28c51
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 1dbca883bc4df2bde743963db7994361616be192
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34296382"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721909"
 ---
 # <a name="admin-overview-power-bi-report-server"></a>Administratoroversigt, Power BI-rapportserver
 Denne artikel indeholder en administrationsoversigt over Power BI-rapportserveren, der er en placering i det lokale miljø til lagring og administration af dine Power BI- og mobilrapporter samt dine sideinddelte rapporter. I denne artikel introduceres begreber i forbindelse med planlægning, udrulning og administration af din Power BI-rapportserver, og den indeholder links til flere oplysninger.
@@ -24,7 +24,7 @@ Denne artikel indeholder en administrationsoversigt over Power BI-rapportservere
 
 
 ## <a name="installing-and-migration"></a>Installation og overførsel
-Du skal installere Power BI-rapportserver for at begynde at bruge den. Vi har oplysninger, som gør det muligt for dig at håndtere denne opgave.
+Du skal installere Power BI-rapportserveren for at begynde at bruge den. Vi har artikler, der beskriver, hvordan du håndterer denne opgave.
 
 Før du begynder at installere, opgradere eller overføre til Power BI-rapportserver, skal du tage et kig på [systemkravene](system-requirements.md) for rapportserveren.
 
@@ -34,7 +34,7 @@ Hvis du anvender en ny Power BI-rapportserver, kan du hente hjælp i følgende d
 [Installer Power BI-rapportserver](install-report-server.md)
 
 ### <a name="migration"></a>Overførsel
-Der findes ingen opgradering til SQL Server Reporting Services. Hvis du har en eksisterende SQL Server Reporting Services-udgave, som du vil gøre til Power BI-rapportserver, skal du overføre den. Der er også andre årsager til, at det måske vil være en god idé at foretage en overførsel. Gennemse overførselsdokumentet for at få flere oplysninger.
+Der findes ingen opgradering til SQL Server Reporting Services. Hvis du har en eksisterende SQL Server Reporting Services-udgave, som du vil gøre til Power BI-rapportserver, skal du overføre den. Der kan også være andre årsager til at foretage en overførsel. Gennemse overførselsdokumentet for at få flere oplysninger.
 
 [Overfør en rapportserverinstallation](migrate-report-server.md)
 

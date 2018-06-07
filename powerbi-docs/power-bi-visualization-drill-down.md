@@ -1,5 +1,5 @@
 ---
-title: Detailudledning i en visualisering i Power BI
+title: Analysetilstand i en visualisering i Power BI
 description: Dette dokument viser, hvordan man foretager detailudledning i en visualisering i Microsoft Power BI-tjenesten og Power BI Desktop.
 author: mihart
 manager: kfile
@@ -8,17 +8,19 @@ featuredvideoid: MNAaHw4PxzE
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/26/2018
+ms.date: 05/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d622e6b461668d1972a78f6844bd269fb6596061
-ms.sourcegitcommit: dcde910817720c05880ffe24755034f916c9b890
+ms.openlocfilehash: f0ac0ca1bd03f06e2b7679ab4afc1b9193286f5b
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34584202"
 ---
-# <a name="drill-down-in-a-visualization-in-power-bi"></a>Detailudledning i en visualisering i Power BI
-## <a name="drill-down-requires-a-hierarchy"></a>Detailudledning kræver et hierarki
+# <a name="drill-mode-in-a-visualization-in-power-bi"></a>Analysetilstand i en visualisering i Power BI
+
+## <a name="drill-requires-a-hierarchy"></a>Analysetilstand kræver et hierarki
 Når et visuelt element har et hierarki, kan du foretage detailudledning for at finde flere detaljer. Du har f.eks. en visualisering, der kigger på optælling af olympiske medaljer ud fra et hierarki udgjort af sport, disciplin og begivenhed. Som standard viser visualiseringen medaljeoptælling ud fra sportsgren – gymnastik, skiløb, vandsport osv. Men eftersom den har et hierarki, vises et stadigt mere detaljeret billede, når der vælges visuelle elementer (f.eks. søjle, linje eller boble). Vælg elementet **vandsport** for at få vist data for svømning, udspring og vandpolo.  Vælg elementet **udspring** for at få vist detaljer for vippe, platform og discipliner med synkronudspring.
 
 Du kan føje hierarkier til rapporter, som du ejer, men ikke til rapporter, der deles med dig.
@@ -35,64 +37,134 @@ Datoer er en entydig type i hierarkiet. Når du føjer et datofelt til en visual
 > [!NOTE]
 > Hvis du vil vide mere om at oprette hierarkier ved hjælp af Power BI Desktop, kan du se videoen [Sådan oprettes og tilføjes hierarkier](https://youtu.be/q8WDUAiTGeU)
 > 
-> 
 
-## <a name="two-methods-to-drill-down"></a>To metoder til detailudledning
-Du har to forskellige måder til at analysere ned (og op) i din visualisering.  Begge er beskrevet i denne artikel. Begge metoder resulterer det samme, så brug den metode, du bedst kan lide.
+## <a name="prerequisites"></a>Forudsætninger
+
+1. I Power BI-tjenesten eller Power BI Desktop kræver analysetilstand en visualisering med et hierarki. 
+   
+2. For at komme videre skal du [åbne eksemplet med detailanalyse](sample-datasets.md) og oprette en træstruktur, der kigger på **Samlet antal enheder dette år** (værdier) efter **Område**, **By**, **Postnummer** og **Navn** (gruppe).  Træstrukturen har et hierarki bestående af område, by, postnummer og bynavn. Hvert område har en eller flere byer, hver by har et eller flere postnumre osv. Som standard viser visualiseringen kun områdedata, fordi *Område* vises først på listen.
+   
+   ![](media/power-bi-visualization-drill-down/power-bi-hierarcy-list.png)
+
+2. Det kan være svært at forstå, hvordan de forskellige ikoner til analyse arbejder sammen, så lad os filtrere træstrukturen, så den kun viser 2 af de mindste områder: **KY** og **TN**. Vælg træstrukturen, og under **Filtre på visualiseringsniveau** skal du udvide **Område** og vælge **KY** og **TN**.
+
+    ![filter for KY og TN](media/power-bi-visualization-drill-down/power-bi-filter.png)    
+
+   Nu vises der kun to områder i træstrukturen.
+
+   ![ikon for dobbelt analyse](media/power-bi-visualization-drill-down/power-bi-territories.png)
+
+## <a name="three-ways-to-access-the-drill-features"></a>Tre måder at få adgang til funktionerne til analyse
+Du har flere muligheder for at få adgang til detailudledning, få vist flere detaljer og udvide de funktioner til visualisering, som har hierarkier. I denne artikel kan du se, hvordan du bruger den første mulighed nedenfor. Når du har en grundlæggende forståelse af detailudledning og udvidelse, vil du opdage, at alle tre metoder udfører det samme. Du kan prøve dem af for at finde den, du synes bedst om.
+
+- Peg på en visualisering for at få vist og bruge ikonerne.  
+
+    ![sti for analyse](media/power-bi-visualization-drill-down/power-bi-hover.png)
+
+- Højreklik på en visualisering for at få vist og bruge menuen.
+    
+    ![genvejsmenu](media/power-bi-visualization-drill-down/power-bi-drill-menu.png)
+
+- På menulinjen i Power BI skal du vælge knappen **Udforsk**.
+
+   ![](media/power-bi-visualization-drill-down/power-bi-explore.png)
+
+## <a name="drill-pathways"></a>Stier for analyse
+### <a name="drill-down"></a>Detailudledning
+Der er flere måder, hvorpå du kan få vist flere detaljer i din visualisering. ***Detailudledning*** fører dig til næste niveau i hierarkiet, så hvis du ser på niveauet **Område**, kan du gå ned til niveauet By, derefter Postnummer og til sidst til Navn. Hvert trin på stien viser nye oplysninger.
+
+![sti for analyse](media/power-bi-visualization-drill-down/power-bi-drill-path.png)
+
+### <a name="expand"></a>Udvid
+
+***Udvid*** føjer et ekstra hierarkiniveau til den aktuelle visning. Hvis du kigger på niveauet **Område**, kan du udvide og tilføje detaljer om by, postnummer og navn til din træstruktur. Hvert trin på stien viser de samme oplysninger og tilføjer et niveau med nye oplysninger.
+
+![sti for udvidelse](media/power-bi-visualization-drill-down/power-bi-expand-path.png)
+
+Du kan også vælge at bruge detailudledning eller at udvide for ét felt ad gangen eller alle felter på en gang. 
+
+## <a name="drill-down-all-fields-at-a-time"></a>Brug detailudledning på alle felter på en gang
+
+1. Start på det øverste niveau i træstrukturen for at få vist data for KY og TN. Udvid træstrukturen ved at vælge et af håndtagene og trække mod højre. 
+
+    ![træstruktur, der viser 2 tilstande](media/power-bi-visualization-drill-down/power-bi-drill-down.png) .
+
+2. Hvis du vil bruge detailudledning på ***alle felter på en gang***, skal du vælge dobbeltpilen i øverste venstre hjørne af visualiseringens ![dobbeltikon for detailudledning](media/power-bi-visualization-drill-down/power-bi-drill-icon3.png) . Din træstruktur viser nu bydata for Kentucky og Tennessee. 
+
+    ![ikon for dobbelt analyse](media/power-bi-visualization-drill-down/power-bi-drill-down1.png)
+   
+5. Brug detailudledning én gang mere til postnummerniveauet i hierarkiet.
+
+    ![ikon for dobbelt analyse](media/power-bi-visualization-drill-down/power-bi-drill-down2.png)
+
+3. Hvis du vil gå et niveau op igen, skal du vælge pil op i øverste venstre hjørne af visualiseringen ![](media/power-bi-visualization-drill-down/power-bi-drill-icon5.png).
+
+
+## <a name="drill-down-one-field-at-a-time"></a>Detailudledning på ét felt ad gangen
+Denne metode bruger ikonet for detailudledning, som vises i øverste højre hjørne af selve visualiseringen. 
+
+1. Vælg ikonet for detailudledning for at aktivere det ![detailudledning slået til](media/power-bi-visualization-drill-down/power-bi-drill-icon2.png). Nu kan du bruge detailudledning for ***ét felt ad gangen***. 
+   
+   ![](media/power-bi-visualization-drill-down/power-bi-drill-icon-new.png)
+
+   Hvis du ikke aktiverer detailudledning, sker der ikke detailudledning men krydsfiltrering af de andre diagrammer på rapportsiden, når der vælges en visualisering (f.eks en søjle eller boble).
+
+2. Vælg *bladet* for **TN**. Din træstruktur viser nu alle de byer i Tennessee, hvor der er en butik. 
+
+    ![](media/power-bi-visualization-drill-down/power-bi-drill-down-one1.png)
+
+2. Her kan du fortsætte detailudledning for Tennesee, eller du kan foretage detailudledning for en bestemt by i Tennesee, eller du kan i stedet udvide (se **Udvid alle felter på en gang** nedenfor). Lad os fortsætte med detailudledning på ét felt ad gangen.  Vælg **Knoxville, TN**. Din træstruktur viser postnummeret for din butik i Knoxville. 
+
+   ![](media/power-bi-visualization-drill-down/power-bi-drill-down-one2.png)
+
+    Bemærk, at titlen ændres, når du foretager detailudledning eller fjerner detaljerne igen.  
+
+## <a name="expand-all-and-expand-one-field-at-a-time"></a>Udvid alle, og udvid ét felt ad gangen
+Det er ikke så praktisk at have en træstruktur, der kun viser et postnummer.  Så lad os udvide ét niveau ned i hierarkiet.  
+
+1. Med træstrukturen aktiveret kan du vælge ikonet *udvid ned* ![ikonet udvid ned](media/power-bi-visualization-drill-down/power-bi-drill-icon6.png). Din træstruktur viser nu 2 niveauer af vores hierarki: postnummer og butiksnavn. 
+
+    ![viser postnummer og butiksnavn](media/power-bi-visualization-drill-down/power-bi-expand1.png)
+
+2. Hvis du vil se alle fire hierarkiniveauer for Tennesee, skal du vælge pilen til at gå et niveau op, indtil du kommer til niveau to, **Samlet antal enheder i år efter område og by**, i træstrukturen. 
+
+    ![](media/power-bi-visualization-drill-down/power-bi-drill-down-one1.png)
+
+
+3. Sørg for, at detailudledning stadig er slået til på ![detailudledning slået til](media/power-bi-visualization-drill-down/power-bi-drill-icon2.png) , og vælg ikonet *udvid ned* ![ikonet udvid ned](media/power-bi-visualization-drill-down/power-bi-drill-icon6.png). Din træstruktur viser nu nogle flere detaljer. I stedet for kun at vise by og stat vises postnummer også. 
+
+    ![ikon for dobbelt analyse](media/power-bi-visualization-drill-down/power-bi-expand-one3.png)
+
+4. Vælg ikonet *udvid ned* en gang mere for at få vist alle fire hierarkiniveauer med detaljer for Tennesee i din træstruktur. Peg på et blad for at få vist flere detaljer.
+
+   ![træstruktur med data for Tennesee](media/power-bi-visualization-drill-down/power-bi-expand-all.png)
+
+## <a name="drilling-filters-other-visuals"></a>Analyse filtrerer andre visualiseringer
+Når du arbejder med analysetilstand, skal du beslutte, hvordan detailudledning og udvidelse påvirker andre visualiseringer på siden. 
+
+Som standard vil detailudledning ikke filtrere andre visualiseringer i en rapport. Men funktionen kan aktiveres i Power BI Desktop og Power BI-tjenesten. 
+
+1. I Desktop skal du vælge fanen **Format** og derefter markere afkrydsningsfeltet **Detailudledning filtrerer andre visualiseringer**.
+
+    ![indstilling i Power BI Desktop](media/power-bi-visualization-drill-down/power-bi-drill-filters-desktop.png)
+
+2. Når du nu udfører detailudledning (eller får vist flere detaljer eller udvider) i en visualisering med et hierarki, vil handlingen filtrere de øvrige visualiseringer på siden. 
+
+    ![indstilling i Desktop](media/power-bi-visualization-drill-down/power-bi-drill-filters.png)
+
+    ![indstilling i Desktop](media/power-bi-visualization-drill-down/power-bi-drill-filters2.png)
 
 > [!NOTE]
-> For at komme videre skal du [åbne eksemplet med detailanalyse](sample-datasets.md) i Power BI-tjenesten og oprette en træstruktur, der kigger på **Samlet antal enheder dette år** (værdier) efter **Område**, **By**, **Postnummer** og **Navn** (gruppe).  
-> 
-> 
+> Hvis du vil aktivere dette i Power BI-tjenesten, skal du vælge **Interaktioner mellem visualiseringer> Detailudledning filtrerer andre visualiseringer**.
+>
+> ![indstilling i Power BI-tjenesten](media/power-bi-visualization-drill-down/power-bi-drill-filters-service.png)
 
-## <a name="method-one-for-drill-down"></a>Metode 1 til analysering
-Denne metode bruger ikonerne for detailudledning, der vises i de øverste hjørner af selve visualiseringen.
 
-1. I Power BI skal du åbne en rapport i [Læsevisning eller Redigeringsvisning](service-reading-view-and-editing-view.md). Detailudledning kræver en visualisering med et hierarki. 
-   
-   I animationen herunder er vist et hierarki.  Visualiseringen har et hierarki bestående af område, by, postnummer og bynavn. Hvert område har en eller flere byer, hver by har et eller flere postnumre osv. Som standard viser visualiseringen kun områdedata, fordi *Område* vises først på listen.
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-hierarcy-list.png)
-2. For at aktivere detailudledning skal du vælge pilikonet i øverste højre hjørne af visualiseringen. Når ikonet er mørkt, er detailudledning aktiveret. Hvis du ikke aktiverer detailudledning, sker der krydsfiltrering af de andre diagrammer på rapportsiden, når der vælges et visuelt element (f.eks en søjle eller boble).    
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-drill-icon.png)
-3. Hvis du vil analysere **ét felt ad gangen**, skal du vælge et af elementerne i din visualisering. I et liggende søjlediagram betyder det, at du skal klikke på en af søjlerne. I en træstruktur betyder det, at du skal klikke på et af **bladene**. Bemærk, at titlen ændres, når du foretager detailudledning eller fjerner detaljerne igen. I denne animation ændres navnet fra "Samlet antal enheder dette år efter område" til "Samlet antal enheder dette år efter område og by" og derefter fra "Samlet antal enheder dette år efter område, by og postnummer" til "Samlet antal enheder dette år efter område, by, postnummer og navn". Og for at fjerne detaljerne igen skal du vælge ikonet for **Fjern detaljer**![](media/power-bi-visualization-drill-down/power-bi-drill-icon5.png) i øverste venstre hjørne af visualiseringen som vist nedenfor.
-   
-   ![](media/power-bi-visualization-drill-down/drill.gif)
-4. For at analysere ***alle felterne ned på én gang*** skal du vælge dobbeltpilen i øverste venstre hjørne af visualiseringen.
-   
-   ![](media/power-bi-visualization-drill-down/pbi_drillall.png)
-5. For at fjerne detaljerne igen skal du vælge pil op i øverste venstre hjørne af visualiseringen.
-   
-   ![](media/power-bi-visualization-drill-down/pbi_drillup2.png)
-
-## <a name="method-two-for-drill-down"></a>Metode 2 til analysering
-Denne metode bruger **Explore**-rullelisten fra den øverste menulinje i Power BI.
-
-1. I Power BI skal du åbne en rapport i [Læsevisning eller Redigeringsvisning](service-reading-view-and-editing-view.md). Detailudledning kræver en visualisering med et hierarki. 
-   
-   I billedet herunder er vist et hierarki.  Visualiseringen har et hierarki bestående af område, by, postnummer og bynavn. Hvert område har en eller flere byer, hver by har et eller flere postnumre osv. Som standard viser visualiseringen kun områdedata, fordi *Område* vises først på listen.
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-hierarcy-list.png)
-2. For at aktivere detailudledning skal du vælge en visualisering og fra den øverste menulinje i Power BI vælge **Udforsk** > **Detailudledning**. Ikonet for detailudledning i øverste højre hjørne af visualiseringen ændres til sort baggrund. ![](media/power-bi-visualization-drill-down/power-bi-drill-icon2.png)  
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-explore2.png)
-3. Når indstillingen er aktiveret, skal du analysere ét felt ned ad gangen ved at vælge et af bladene i træstrukturen. I dette eksempel er området med navnet **NC** valgt for at få vist det samlede antal enheder, der er solgt i år i North Carolina ud fra by.
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-drilldown-1.png)
-4. For at analysere alle felterne ned på én gang skal du vælge **Udforsk** > **Vis næste niveau**.
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-show-next-level.png)
-5. For at fjerne detaljerne igen skal du vælge **Udforsk** > **Fjern dig fra detaljerne**.
-   
-   ![](media/power-bi-visualization-drill-down/power-bi-drill-up2.png)
-
-6. Hvis du vil se de data, der bruges til at oprette visualiseringen, skal du vælge **Se data**. Dataene vises i en rude under visualiseringen. Denne rude vises fortsat, efterhånden som du fortsætter med at foretage detailudledning via det visuelle element. Du kan finde flere oplysninger under [Vis data, der bruges til at oprette det visuelle element](service-reports-show-data.md).
 
 ## <a name="understanding-the-hierarchy-axis-and-hierarchy-group"></a>Om hierarkiaksen og hierarkigruppen
 Du kan tænke på hierarkiaksen og hierarkigruppen som de mekanismer, du kan bruge til at øge og reducere detaljeringsgraden af de data, du vil have vist. Alle data, der kan organiseres i kategorier og underkategorier, er kvalificeret til at have et hierarki. Det inkluderer, selvfølgelig, datoer og klokkeslæt.
 
-Du kan oprette en visualisering i Power BI for at få et hierarki ved at vælge et eller flere datafelter, der skal føjes til enten brønden **Akse** eller brønden **Gruppe** sammen med de data, du vil undersøge som datafelter i brønden **Værdier**. Du ved, om dine data er hierarkiske, hvis ikonerne Analysetilstand vises i øverste venstre og højre hjørne af visualiseringen. 
+Du kan oprette en visualisering i Power BI for at få et hierarki ved at vælge et eller flere datafelter, der skal føjes til enten brønden **Akse** eller brønden **Gruppe** sammen med de data, du vil undersøge som datafelter i brønden **Værdier**. Du ved, om dine data er hierarkiske, hvis ikonerne for *Analysetilstand* vises i øverste venstre og højre hjørne af visualiseringen. 
 
 I bund og grund er det praktisk at tænke på to typer hierarkiske data:
 - Dato- og klokkeslætsdata – Hvis du har et datafelt med en DateTime-datatype, har du allerede hierarkiske data. I Power BI oprettes automatisk et hierarki ti eventuelle datafelter, hvis værdier kan fortolkes i en [DateTime](https://msdn.microsoft.com/library/system.datetime.aspx)-struktur. Du skal kun bruge ét DateTime-felt til brønden **Akse** eller **Gruppe**.

@@ -7,14 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 06/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1bf5f83265c9d4fc11532b647207f8d273aab50c
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: b1bfe0e35015cd32024b381a1859330cd8f1862a
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34721104"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Opret forbindelse til datasæt i Power BI-tjenesten fra Power BI Desktop
 Du kan oprette en direkte forbindelse til et delt datasæt i Power Bi-tjenesten og oprette mange forskellige rapporter fra det samme datasæt. Dette betyder, at du kan forfine din datamodel i Power Bi Desktop, udgive den til Power BI-tjenesten, hvorefter du og andre kan oprette mange forskellige rapporter (i separate .pbix-filer) fra den samme fælles datamodel. Denne funktion kaldes **Direkte forbindelse til Power BI-tjeneste**.
@@ -35,6 +36,8 @@ Alle er vilde med hendes rapport og datasæt, og det er her, problemerne begynde
 
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Opret forbindelse til et Power BI-datasæt ved brug af en direkte forbindelse
 Når Anna har oprettet sin rapport (og oprettet datasættet, som den er baseret på), udgiver hun den til **Power BI-tjenesten**, og den vises på hendes teams arbejdsområde i Power BI-tjenesten. Nu kan alle på hendes arbejdsområde se og bruge rapporten.
+
+Hvis du vil vide mere om arbejdsområder, kan du se [apparbejdsområder](service-create-distribute-apps.md#app-workspaces).
 
 Andre medlemmer af Annas arbejdsområde kan nu oprette en direkte forbindelse til hendes delte datamodel (ved at bruge funktionen **Direkte forbindelse til Power BI-tjeneste**) og oprette deres egne unikke rapporter fra *hendes originale datasæt*.
 

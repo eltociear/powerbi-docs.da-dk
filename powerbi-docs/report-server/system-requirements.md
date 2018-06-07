@@ -7,13 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 11/01/2017
+ms.date: 05/18/2018
 ms.author: maghan
-ms.openlocfilehash: 2963dbe2a5d1109e4396568624e16bf49d98da10
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 3b0e9c148b86d8bf762a31cca5c3421df454502d
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34481716"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Hardware- og softwarekrav til installation af Power BI-rapportserver
 Her kan du finde minimumskrav til hardware og for at kunne installere og køre Power BI-rapportserver.
@@ -57,7 +58,7 @@ Power BI-rapportserver installerer standardværdier for at konfigurere de hovedi
  Mens rapportserveren kan installeres i et miljø, der har en skrivebeskyttet domænecontroller (RODC), skal Reporting Services have adgang til en domænecontroller med læse-/skriveadgang for at fungere korrekt. Hvis Reporting Services kun har adgang til en skrivebeskyttet domænecontroller, kan der opstå fejl under forsøg på at administrere tjenesten.
 
 ## <a name="power-bi-reports-and-analysis-services-live-connections"></a>Power BI-rapporter og Analysis Services-liveforbindelser
-Du kan bruge en liveforbindelse til tabellariske eller flerdimensionelle forekomster. Analysis Services-serveren skal være den korrekte version og udgave, og den skal fungere korrekt.
+Du kan bruge en liveforbindelse til tabellariske eller flerdimensionelle forekomster. Analysis Services-serveren skal være den korrekte version og udgave for at fungere korrekt.
 
 | **Serverversion** | **Påkrævet SKU** |
 | --- | --- |
@@ -66,8 +67,8 @@ Du kan bruge en liveforbindelse til tabellariske eller flerdimensionelle forekom
 | 2016 og nyere |Standard-SKU eller nyere |
 
 ## <a name="next-steps"></a>Næste trin
-[Brugerhåndbog](user-handbook-overview.md)  
-[Administratorhåndbog](admin-handbook-overview.md)  
+[Hvad er Power BI-rapportserveren?](get-started.md)  
+[Administratoroversigt](admin-handbook-overview.md)  
 [Installer Power BI-rapportserver](install-report-server.md)  
 [Installér Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)

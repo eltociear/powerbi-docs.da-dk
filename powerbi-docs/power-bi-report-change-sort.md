@@ -7,16 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 05/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6b70a9ef7774d1ba49bc5bf825a5c1cde47197f2
-ms.sourcegitcommit: 998b79c0dd46d0e5439888b83999945ed1809c94
+ms.openlocfilehash: 3c32fc3cc9dc2b16384016ca624d4dd3a773aacb
+ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34561787"
 ---
-# <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Rediger den måde, et diagram sorteres på, i en Power BI-rapport
+# <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Rediger, hvordan et diagram sorteres i en rapport i Power BI
 I en Power BI-rapport kan du sortere de fleste visualiseringer alfabetisk efter navnene på kategorierne i diagrammet eller efter de numeriske værdier for hver kategori. Dette diagram er f.eks. sorteret efter lagernavn.
 
 ![](media/power-bi-report-change-sort/pbi_chartsortcategory.png)
@@ -29,6 +30,13 @@ Det er nemt at ændre sorteringen fra en kategori (gem navn) til en værdi (salg
    ![](media/power-bi-report-change-sort/sortby.gif)
 
    **BEMÆRK!** Det er ikke alle visuelle elementer, der kan sorteres.  Følgende visuelle elementer kan f.eks. ikke sorteres: Træstruktur, Kort (Map), Kartogram, Punkt, Måler, Kort (Card), Kort med flere rækker, Vandfald.
+
+## <a name="saving-changes-you-make-to-sort-order"></a>Gem dine ændringer af sorteringsrækkefølgen
+Power BI-rapporter bevarer filtre, udsnit, sortering og andre ændringer af datavisning. Hvis du navigerer væk fra en rapport og vender tilbage igen senere, er dine ændringer blevet gemt.  Hvis du vil ændre indstillingerne tilbage til de indstillinger, som rapportforfatteren oprindeligt valgte, skal du vælge **Nulstil til standard** på den øverste menulinje. 
+
+![fast sortering](media/power-bi-report-change-sort/power-bi-reset-to-default.png)
+
+Hvis knappen **Nulstil til standard** er nedtonet, betyder det, at rapportens forfatter har deaktiveret muligheden for at gemme dine egne ændringer.
 
 <a name="other"></a>
 ## <a name="sorting-using-other-criteria"></a>Sortering ved hjælp af andre kriterier
