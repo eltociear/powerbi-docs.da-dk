@@ -1,25 +1,25 @@
 ---
 title: Power BI til Mixed Reality-app (Eksempel)
-description: Se dine dashboards og rapporter i Power BI til Mixed Reality-appen enten i en virtuel verden eller på særlige steder i dine omgivelser.
+description: Se dine dashboards og rapporter i Power BI til Mixed Reality-appen (prøveversion) enten i en virtuel verden eller på særlige steder i dine omgivelser.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/13/2018
+ms.date: 06/05/2018
 ms.author: maggies
-ms.openlocfilehash: 32ef06cfdefe4ff1554cfe5f449d69583569f158
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 15c59d25814a50ce09b5b52accd0f88d74871a34
+ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34721426"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799320"
 ---
 # <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI til Mixed Reality-app (Eksempel)
-Se dine dashboards og rapporter i Power BI til Mixed Reality-appen i en virtuel verden, eller placer dem, så du kan se dem på særlige steder i dine omgivelser. 
+Se dine dashboards og rapporter i Power BI til Mixed Reality-appen (prøveversion) i en virtuel verden, eller placer dem, så du kan se dem på særlige steder i dine omgivelser. 
 
-Download prøveversionen af Power BI til Mixed Reality-appen i Windows Store for at få vist dine dashboards og rapporter. Interager med dem i den virtuelle verden, og vælg dem, du vil placere. 
+[Download Power BI til Mixed Reality](https://www.microsoft.com/p/power-bi-mobile/9nblgggzlxn1?activetab=pivot%3aoverviewtab)-appen fra Windows Store. I Windows Store hedder appen "Power BI - Mobil". Interager med dine dashboards og rapporter i den virtuelle verden, og vælg dem, du vil placere. 
 
 ## <a name="two-views-windows-classic-and-holographic"></a>To visninger: Windows klassisk og Windows Holographic
 

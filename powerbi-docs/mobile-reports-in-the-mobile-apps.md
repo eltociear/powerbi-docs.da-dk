@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 06/05/2018
 ms.author: maggies
-ms.openlocfilehash: 6d7ab55c3ecbb13b40354f67263d597f0e1179f7
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 5b4d5ea7970dd44cfebadca6935452688515aef5
+ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297670"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799412"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -81,25 +81,30 @@ Når du vælger en værdi i en visualisering, filtreres de øvrige visualisering
    ![Sortér en visualisering](media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-sort.png)
 * Hvis du vil vende sorteringsrækkefølgen, skal du trykke på de tre prikker (**...**) igen og derefter trykke på det samme feltnavn igen.
 
-## <a name="drill-down-on-an-ipad-or-a-tablet"></a>Foretag detailudledning på en iPad eller en tablet
-Hvis forfatteren til en rapport har tilføjet funktionen for detailudledning i en visual, kan du bruge detailudledning i en visual på en iPad eller tablet for at se de værdier, som er brugt til en del af denne visual. Du kan [tilføje detailudledning i en visualisering](power-bi-visualization-drill-down.md) i Power BI Desktop eller Power BI-tjenesten. 
+## <a name="drill-down-and-up-in-a-visual"></a>Analysér ned og op i en visualisering
+Hvis forfatteren til en rapport har gjort det muligt at analysere ned i en visualisering, kan du gør det for at se de værdier, som er brugt til en del af den. Du kan [tilføje detailudledning i en visualisering](power-bi-visualization-drill-down.md) i Power BI Desktop eller Power BI-tjenesten. 
 
-> [!NOTE]
-> I øjeblikket kan du ikke bruge detailudledning i kort på iPad eller andre tablets.
-> 
-> 
+* Tryk på et datapunkt i en visualisering for at få vist værktøjstippet. Hvis du kan analysere ned, findes der pile nederst i værktøjstippet, som du kan trykke på. 
+  
+  ![Detailudledning i en visualisering](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-tooltip.png)
 
-* Tryk på en visualisering. Hvis der vises pil op og pil ned i hjørnerne i toppen ![Ikonerne Vis færre detaljer og Analysér ned](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-down.png), kan du bruge detailudledning. Hvis du vil have vist flere detaljer om en værdi, skal du trykke på pilen i øverste højre hjørne og derefter trykke på en værdi i visualiseringen &#150; i dette tilfælde den mørkeblå FD-04-boble.
+* Hvis du vil have vist færre detaljer igen, skal du trykke på pil op i værktøjstippet.
   
-  ![Detailudledning i en visualisering](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-one.png)
-* Hvis du vil have vist færre detaljer igen, skal du trykke på pil op i øverste venstre hjørne.
-  
-  ![Færre detaljer](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up.png)
+  ![Færre detaljer](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-tooltip.png)
 
-## <a name="go-back-to-my-workspace"></a>Gå tilbage til Mit arbejdsområde
-* Tryk på pilen ud for rapportnavnet, og tryk på **Mit arbejdsområde**.
-  
-  ![Gå op igen](media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-back.png)
+* Du kan også analysere ned i alle datapunkterne i visualiseringen. Åbn den i fokustilstand, tryk på ikonet Udforsk, og vælg derefter Vis alle næste niveauer. Du kan også udvide, så du får vist det nuværende og næste niveau.
+
+   ![Detailudledning i Power BI](media/mobile-reports-in-the-mobile-apps/power-bi-drill-down-all.png)
+
+## <a name="drill-through-from-one-page-to-another"></a>Analysér ned fra én side til en anden
+
+Når der er mulighed for *detaljeadgang*, og du trykker på en bestemt del af en visualisering, føres du til en anden side i rapporten, der er filtreret, så den værdi, du har klikket på, vises. En forfatter af en rapport kan angive en eller flere muligheder for detaljeadgang, som hver især fører dig til en anden side. Hvis det er tilfældet, kan du vælge, hvilken mulighed du vil. I eksemplet nedenfor kan du vælge mellem at analysere ned til **forbrug pr. forretningsområde** eller **planlægning pr. forretningsområde**, når du trykker på værdien i måleren.
+
+![Detaljeadgang i rapport i Power BI Mobile](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-through-it-spent-report.png)
+
+Når du analyserer ned, kan du bruge knappen Tilbage til at komme tilbage til den forrige rapportside.
+
+Læs om, hvordan du [tilføjer detaljeadgang i Power BI Desktop](desktop-drillthrough.md).
 
 ## <a name="next-steps"></a>Næste trin
 * [Få vist og interager med Power BI-rapporter, der er optimeret til din telefon](mobile-apps-view-phone-report.md)
