@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 5b4a35d9cdfa820956201e7fee20251b3c5ac0b7
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 376fb2a6167e020e5d65c7d634ef05cd366b1aa2
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34584294"
+ms.locfileid: "34755133"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administrationsportal
 
@@ -92,7 +92,7 @@ Når du klikker på **Gå til O365 Administration**, så føres du direkte til O
 
 ## <a name="audit-logs"></a>Overvågningslogge
 
-Den tredje fane i administrationsportalen er **Overvågningslogge**. Loggene er placeret inden for Office 365 Security & Compliance Center. Dette afsnit giver dig hurtig adgang til dette område inden for Office 365. 
+Den tredje fane i administrationsportalen er **Overvågningslogge**. Loggene er placeret inden for Office 365 Security & Compliance Center. Dette afsnit giver dig hurtig adgang til dette område inden for Office 365.
 
 Du kan finde flere oplysninger om overvågningslogge under [Overvågning af Power BI i din virksomhed](service-admin-auditing.md)
 
@@ -227,8 +227,6 @@ Brugere i virksomheden kan bruge ArcGIS Maps for Power BI (prøveversion)-visual
 ### <a name="enable-custom-visuals-for-the-entire-organization"></a>Aktivér brugerdefinerede visualiseringer for hele organisationen
 Brugerne i organisationen kan interagere med og dele brugerdefinerede visualiseringer. [Få mere at vide](power-bi-custom-visuals.md)
 
-![Indstillinger for brugerdefinerede visualiseringer](media/service-admin-portal/powerbi-admin-custom-visuals.png)
-
 > [!NOTE]
 > Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
 
@@ -247,7 +245,7 @@ Brugere i virksomheden kan interagere med og dele visuelle elementer oprettet me
 
 Brugere i virksomheden kan overvåge handlinger, der udføres i Power BI af andre brugere i virksomheden. [Få mere at vide](service-admin-auditing.md)
 
-Denne indstilling skal være aktiveret, for at overvågningslogposter bliver registreret.
+Denne indstilling skal være aktiveret, for at overvågningslogposter bliver registreret. Der kan være op til 48 timers forsinkelse, fra at du aktiverer overvågning, til at du får vist data i overvågningsloggen. Hvis du ikke får vist data med det samme, skal du tjekke overvågningsloggene senere. Der kan være en lignende forsinkelse mellem at få tilladelse til at få vist overvågningslogge og til at kunne åbne logfilerne.
 
 > [!NOTE]
 > Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.

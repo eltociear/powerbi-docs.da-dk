@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/06/2018
+sktopms.date: 06/01/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: e72e3bcca4254b957580775196d4919e88452773
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e8af4695ba54fee91820552802cf18d8a758e8b0
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34253087"
+ms.locfileid: "34755041"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Ofte stillede spørgsmål om Power BI
 * Hvis du har andre spørgsmål, kan du [prøve at spørge Power BI-community'et](http://community.powerbi.com/).
 * Har du stadig problemer? Besøg [supportsiden for Power BI](https://powerbi.microsoft.com/support/).
 
 ## <a name="what-is-microsoft-power-bi"></a>Hvad er Microsoft Power BI?
-[Power BI](https://powerbi.microsoft.com/) er en cloudbaseret analysetjeneste til virksomheder, der gør det muligt for alle at visualisere og analysere data hurtigere, mere effektivt og forståeligt. Det forbinder brugere med en bred række data gennem brugervenlige dashboards, interaktive rapporter og overbevisende visualiseringer, der gør data levende.
+Power BI er en cloudbaseret analysetjeneste til virksomheder, der gør det muligt for alle at visualisere og analysere data hurtigere, mere effektivt og forståeligt. Det forbinder brugere med en bred række data gennem brugervenlige dashboards, interaktive rapporter og overbevisende visualiseringer, der gør data levende. Læs mere om [Hvad er Power BI](power-bi-overview.md).
 
 ## <a name="whats-the-difference-between-power-bi-and-power-bi-pro"></a>Hvad er forskellen mellem Power BI og Power BI Pro?
 Power BI omfatter mange forskellige slags funktioner, der hjælper dig med at komme i gang med at granske data på en helt ny måde. Power BI Pro indeholder alle de samme fantastiske funktioner som findes i Power BI og desuden funktioner som f.eks. større lagringskapacitet, hyppigere planlagte dataopdateringer end kun dagligt, live-datakilder med fuld interaktivitet, grupper m.m. Få mere at vide om [forskellene mellem Power BI Pro og den gratis Power BI](https://powerbi.microsoft.com/pricing).
@@ -33,36 +33,20 @@ Power BI Desktop er gratis. Der findes en 60-dages gratis prøveversion af Power
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Hvad hvis jeg har spørgsmål til Power BI Premium?
 For spørgsmål knyttet til Power BI Premium henvises til [Power BI Premium – ofte stillede spørgsmål](service-premium-faq.md).
 
-## <a name="are-users-who-signed-up-after-may-3-2017-eligible-for-the-extended-pro-trial"></a>Er brugere, som tilmeldte sig efter d. 3. maj 2017, berettiget til den udvidede Pro-prøveversion?
-Brugere, der har tilmeldt sig den gratis Power BI på eller efter 3. maj 2017, er ikke berettiget til den udvidede Pro-prøveversion. Men de er berettiget til den almindelige 60-dages Pro-prøveversion.
-
-## <a name="how-do-i-find-out-who-in-my-organization-is-eligible-for-the-extended-pro-trial"></a>Hvordan finder jeg ud af, hvem i min organisation der er berettiget til den udvidede Pro-prøveversion?
-Der er ikke en direkte måde at finde ud af det på, men du kan få vist rapporten over integrerede programmer i Azure Active Directory for Power BI for at se, hvem der er aktive brugere i din organisation. Disse aktive brugere i berettigelsesperioden, og som er på gratis licenser, modtager pop op-beskeden. Du kan finde flere oplysninger i [Find Power BI-brugere, der har logget på](service-admin-access-usage.md).
-
-> [!NOTE]
-> Azure AD-rapporten angiver ikke, om en bruger er gratis bruger af Pro i Power BI. Den rapporterer kun om, hvilke brugerne der har logget på Power BI, og at de er logget på. Hvis en bruger er angivet i denne rapport, betyder det ikke nødvendigvis, at vedkommende er berettiget til den udvidede Pro-prøveversion.
-> 
-> 
+## <a name="how-do-i-find-out-who-in-my-organization-has-a-power-bi-account"></a>Hvordan finder jeg ud af, hvem der har en Power BI-konto i min organisation?
+Du kan få vist rapporten over integrerede programmer i Azure Active Directory for Power BI for at se de aktive brugere i din organisation. Azure AD-rapporten angiver ikke, om en bruger er gratis bruger af Pro i Power BI. Den rapporterer kun, hvilke brugere der har logget på Power BI, og hvornår de loggede på. Du kan finde flere oplysninger i [Find Power BI-brugere, der er logget på](service-admin-access-usage.md).
 
 ## <a name="what-is-power-bi-desktop"></a>Hvad er Power BI Desktop?
-[Power BI Desktop](https://powerbi.microsoft.com/designer) er et gratis desktopprogram, du kan installere direkte på din egen computer. Power BI Desktop fungerer sammenhængende med Power BI-tjenesten ved at levere avanceret datagranskning, shaping, modellering og rapportoprettelse med stærkt interaktive visualiseringer. Du kan gemme dit arbejde på en fil og publicere dine data og rapporter direkte på dit Power BI-websted, hvor de kan deles med andre.
+Power BI Desktop er et gratis skrivebordsprogram, du kan installere direkte på din egen computer. Power BI Desktop fungerer sammenhængende med Power BI-tjenesten ved at levere avanceret datagranskning, shaping, modellering og rapportoprettelse med stærkt interaktive visualiseringer. Du kan gemme dit arbejde på en fil og publicere dine data og rapporter direkte på dit Power BI-websted, hvor de kan deles med andre. Læs mere om [Hvad er Power BI Desktop](desktop-what-is-desktop.md).
 
 ## <a name="what-do-i-need-to-use-power-bi"></a>Hvad kræver det, for at jeg kan bruge Power BI?
-Kun en webbrowser og arbejdsmailadresse.
-
->[!NOTE]
->Arbejdsmailadresser med endelsen .gov og .mil understøttes ikke i øjeblikket.
+Kun en webbrowser og arbejdsmailadresse. Du kan tilmelde dig med en .gov- og .mil-mailadresse. Du kan finde flere oplysninger i [Tilmeld din US Government-organisation til Power BI-tjenesten](service-govus-signup.md) 
 
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Hvorfor skal jeg logge på med min arbejdsmail?
 Power BI understøtter ikke mailadresser, der leveres af forbrugermailtjenester eller udbydere af telekommunikation. Få mere at vide om [den selvbetjente tilmeldingsproces til Power BI](service-self-service-signup-for-power-bi.md).
 
-## <a name="which-work-email-addresses-are-supported"></a>Hvilke arbejdsmailadresser understøttes?
-Arbejdsmailadresser med endelsen **.edu** og **.org** understøttes.
-
-Mailadresser med endelsen **.gov** og **.mil** understøttes ikke i øjeblikket.
-
 ## <a name="is-government-academic-and-non-profit-pricing-available-for-power-bi"></a>Tilbydes Power BI til en pris for offentlige myndigheder, uddannelsesinstitutioner eller almennyttige organisationer?
-Ja, en pris til almennyttige organisationer tilbydes ved køb direkte hos Microsoft. Du kan få mere at vide og tilmelde dig på [Microsoft Product Donation](https://www.microsoft.com/about/philanthropies/product-donations/products/powerbi/)-webstedet. Priser til offentlige myndigheder og uddannelsesinstitutioner tilbydes gennem MOSP/Direct, EA og åbne licenseringsprogrammer. Priser til offentlige myndigheder fås også i syndikering. Power BI fås endnu ikke til US Government Community Cloud (GCC).
+Ja, en pris til almennyttige organisationer tilbydes ved køb direkte hos Microsoft. Du kan få mere at vide og tilmelde dig på [Microsoft Product Donation](https://www.microsoft.com/about/philanthropies/product-donations/products/powerbi/)-webstedet. Priser til offentlige myndigheder og uddannelsesinstitutioner tilbydes gennem MOSP/Direct, EA og åbne licenseringsprogrammer. Priser til offentlige myndigheder fås også i syndikering. 
 
 ## <a name="is-power-bi-available-on-premises"></a>Fås Power BI til det lokale miljø?
 Power BI-tjenesten [https://powerbi.com](https://powerbi.com) fås ikke som en privat, intern cloudtjeneste. Men du har tre andre muligheder for at få vist og arbejde med data i det lokale miljø. 

@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 04/10/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 04dc755eb7d575aa8438b4a5000ad40549c6220f
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: bcf012d94dedfd912479c3e51e0de388b177c294
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297072"
+ms.locfileid: "34755018"
 ---
 # <a name="using-auditing-within-your-organization"></a>Brug af overvågning i din organisation
 
 Få mere at vide om, hvordan du kan bruge overvågning med Power BI til at overvåge og undersøge udførte handlinger. Du kan bruge Security & Compliance Center eller PowerShell.
 
-Det kan være vigtigt at vide, hvem der udfører en bestemt handling på et element i din Power BI-lejer, for at hjælpe din organisation med at opfylde sine krav, for eksempel efterleve lovmæssig kravoverholdelse og datastyring.
+Det kan være vigtigt at vide, hvem der udfører en bestemt handling på et element i din Power BI-lejer, for at hjælpe din organisation med at opfylde sine krav, for eksempel efterleve lovmæssig kravoverholdelse og datastyring. Du kan bruge overvågning i Power BI, hvis du vil overvåge brugernes handlinger, f.eks. "Vis rapport" og "Vis dashboard". Du kan ikke bruge overvågning til at overvåge tilladelser. 
 
 Du kan filtrere overvågningsdataene efter datointerval, bruger, dashboard, rapport, datasæt og aktivitetstype. Du kan også downloade aktiviteterne i en CSV-fil (fil med kommaseparerede værdier), der kan analyseres offline.
 
@@ -29,18 +29,18 @@ Du kan filtrere overvågningsdataene efter datointerval, bruger, dashboard, rapp
 Du skal opfylde disse krav for at få adgang til overvågningslogger:
 
 - Du skal have en Exchange Online-licens (inkluderet i Office 365 Enterprise E3- og E5- abonnementer) for at få adgang til sektionen overvågning i Office 365 Security & Compliance Center.
-- Du skal enten være global administrator eller have en Exchange-administratorrolle, der giver adgang til overvågningsloggen. 
 
-  Exchange-administratorroller styres via Exchange Administration. Du kan finde flere oplysninger under [Tilladelser i Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx).
+- Du skal enten være global administrator eller have en Exchange-administratorrolle, der giver adgang til overvågningsloggen. Exchange-administratorroller styres via Exchange Administration. Du kan finde flere oplysninger under [Tilladelser i Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx).
 
 - Hvis du har adgang til overvågningsloggen, men du ikke er global administrator eller administrator af Power BI-tjenesten, vil du ikke have adgang til portalen Power BI Administration. I dette tilfælde skal du have en direkte forbindelse til Office 365 Security & Compliance Center.
 
-> [!NOTE]
-> Hvis du vil have vist overvågningslogs for Power BI i din lejer, skal du have mindst én Exchange-postkasselicens i din lejer.
+- Hvis du vil have vist overvågningslogs for Power BI i din lejer, skal du have mindst én Exchange-postkasselicens i din lejer.
 
 ## <a name="accessing-your-audit-logs"></a>Adgang til dine overvågningslogge
 
-Hvis du vil overvåge dine Power BI-logfiler, skal du besøge O365 Security & Compliance Center.
+Hvis du vil overvåge dine Power BI-logge, skal du besøge O365 Security & Compliance Center.
+
+Der kan være op til 48 timers forsinkelse, fra at du aktiverer overvågning, til at du får vist data i overvågningsloggen. Hvis du ikke får vist data med det samme, skal du tjekke overvågningsloggene senere. Der kan være en lignende forsinkelse mellem at få tilladelse til at få vist overvågningslogge og til at kunne åbne logfilerne.
 
 1. Vælg **tandhjulsikonet** øverst til højre.
 
@@ -56,8 +56,7 @@ Hvis du vil overvåge dine Power BI-logfiler, skal du besøge O365 Security & Co
 
 Alternativt kan du navigere til [Office 365 | Security & Compliance](https://protection.office.com/#/unifiedauditlog).
 
-> [!NOTE]
-> Hvis du vil give konti, der ikke er administratorkonti, adgang til overvågningslogfilen, skal du tildele tilladelser i Exchange Online-administration. Du kan for eksempel tildele en bruger til en eksisterende rollegruppe, f.eks. administration af organisation, eller du kan oprette en ny rollegruppe med rollen Overvågningslogger. Du kan finde flere oplysninger under [Tilladelser i Exchange Online](https://technet.microsoft.com/library/jj200692\(v=exchg.150\).aspx).
+Hvis du vil give konti, der ikke er administratorkonti, adgang til overvågningslogfilen, skal du tildele tilladelser i Exchange Online-administration. Du kan for eksempel tildele en bruger til en eksisterende rollegruppe, f.eks. administration af organisation, eller du kan oprette en ny rollegruppe med rollen Overvågningslogger. Du kan finde flere oplysninger under [Tilladelser i Exchange Online](https://technet.microsoft.com/library/jj200692\(v=exchg.150\).aspx).
 
 ## <a name="search-only-power-bi-activities"></a>Søg kun i Power BI-aktiviteter
 

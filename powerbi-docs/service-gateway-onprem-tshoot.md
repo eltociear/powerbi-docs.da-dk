@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/02/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: e688561b6b669aab68c4251fa5e25157dc219cd6
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e689e031395130bab8ad80d5d06936a9dabaf852
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722994"
+ms.locfileid: "34755064"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Fejlfinding af datagatewayen i det lokale miljø
 I denne artikel beskrives nogle almindelige problemer, som kan opstå, når du bruger **datagatewayen i det lokale miljø**.
@@ -149,6 +149,9 @@ Du skal samarbejde med domæneadministratorerne om at bekræfte tillidsforholdet
 **Det var ikke muligt at få vist datagatewayens datakilder i oplevelsen "Hent Data" for Analysis Services fra Power BI-tjenesten**
 
 Sørg for, at din konto er angivet under fanen **Brugere** i datakilden i konfigurationen af gatewayen. Hvis du ikke har adgang til gatewayen, kan du kontakte administratoren af gatewayen og bede dem om at bekræfte. Det er kun konti på listen **Brugere**, der kan se datakilden, som er vist på Analysis Services-listen.
+
+### <a name="error-you-dont-have-any-gateway-installed-or-configured-for-the-data-sources-in-this-dataset"></a>Fejl: Du har ikke nogen gateway, der er installeret eller konfigureret til datakilderne i dette datasæt
+Kontrollér, at du har føjet en eller flere datakilder til gatewayen, som beskrevet i [Tilføj en datakilde](service-gateway-manage.md#add-a-data-source). Hvis gatewayen ikke vises på administrationsportalen under **Administrer gateways**, skal du prøve at rydde browsercachen eller logge af tjenesten og derefter logge på igen.
 
 ## <a name="datasets"></a>Datasæt
 ### <a name="error-there-is-not-enough-space-for-this-row"></a>Fejl: Der er ikke tilstrækkelig plads til denne række.
