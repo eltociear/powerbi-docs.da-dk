@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/21/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: c0ad0c22d0787eaaa45cb36c74c01f6a1d1f85e3
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ef554d7190709565610336169b4883d71970f822
+ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722652"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799550"
 ---
 # <a name="configuring-proxy-settings-for-the-on-premises-data-gateway"></a>Konfiguration af proxyindstillinger for datagatewayen i det lokale miljø
 Dit arbejdsmiljø kan kræve, at du går gennem en proxy for at få adgang til internettet. Dette kan forhindre datagatewayen i det lokale miljø i at oprette forbindelse til tjenesten.
@@ -50,7 +50,7 @@ Standardproxykonfigurationen er følgende.
         <defaultProxy useDefaultCredentials="true" />
     </system.net>
 
-Standardkonfigurationen fungerer sammen med Windows-godkendelse. Hvis din proxy bruger en anden form for godkendelse, skal du ændre indstillingerne. Hvis du ikke er sikker, skal du kontakte netværksadministratoren.
+Standardkonfigurationen fungerer sammen med Windows-godkendelse. Hvis din proxy bruger en anden form for godkendelse, skal du ændre indstillingerne. Hvis du ikke er sikker, skal du kontakte netværksadministratoren. Grundlæggende proxygodkendelse anbefales ikke, og forsøg på at bruge grundlæggende proxygodkendelse kan medføre fejl, som resulterer i, at gatewayen ikke konfigureres korrekt. Brug en stærkere proxygodkendelsesmetode for at løse problemet.
 
 Ud over at bruge standardlegitimationsoplysninger kan du tilføje et <proxy>-element for at definere indstillingerne for proxyserveren. Du kan f.eks. angive, at din datagateway i det lokale miljø altid skal bruge proxyen til lokale ressourcer ved at angive parameteren bypassonlocal til falsk. Det kan være en hjælp til fejlfinding, hvis du vil registrere alle https-anmodninger, der stammer fra en datagateway i det lokale miljø i proxylogfilerne. Følgende eksempelkonfiguration angiver, at alle anmodninger skal gå gennem en bestemt proxy med IP-adressen 192.168.1.10.
 
@@ -93,6 +93,10 @@ Når du konfigurerer proxyindstillingerne til at bruge standardlegitimationsoply
 5. Gendan gatewayen ved hjælp af din genoprettelsesnøgle.
    
     Det betyder, at den nye tjenestekonto kan dekryptere gemte legitimationsoplysninger for datakilder.
+    
+> [!NOTE]
+> Når du ændrer tjenestekontoen direkte vha. kontrolpanelet for tjenester, opdateres ACL'er ikke automatisk. Du skal til at sikre dig, at den nye tjenestekonto har adgang til installationsfilerne og -mappen. Du kan finde mappen med gatewayinstallationen under C:\Program Files\On-premises data gateway. 
+> 
 
 ## <a name="next-steps"></a>Næste trin
 [Datagateway i det lokale miljø (personlig tilstand)](service-gateway-personal-mode.md)

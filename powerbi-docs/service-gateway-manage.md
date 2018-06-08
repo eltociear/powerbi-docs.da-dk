@@ -10,21 +10,25 @@ ms.topic: conceptual
 ms.date: 04/18/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: aec57dc8d015afe80c9cc9cde83c2d1fd6ba26b0
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 8369566712e24c035ac0ec07cc7d5a219041a400
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722583"
+ms.locfileid: "34755156"
 ---
 # <a name="manage-a-power-bi-gateway"></a>Administrer en Power BI-gateway
 
-Når du har [installeret en Power BI-datagateway](service-gateway-install.md), kan du administrere den via området **Administrer gateways** i Power BI-tjenesten, i gatewayappen på din lokale computer og via PowerShell-scripts. I denne artikel fokuseres der på Power BI-tjenesten. Hvis du lige har installeret en gateway, anbefales det, at du så [tilføjer en datakilde](#add-a-data-source) og derefter [tilføjer brugere](#add-users-to-a-data-source), så de kan få adgang til datakilden.
+Når du har [installeret en Power BI-datagateway](service-gateway-install.md), kan du administrere den på baggrund af dine krav. I dette emne kan du få mere at vide om, hvordan du tilføjer og fjerner datakilder og brugere, genstarter en gateway samt overfører, gendanner, overtager og fjerner en gateway. 
+
+Du kan administrere en gateway vha. området **Administrer gateways**i Power BI-tjenesten, i gatewayappen på din lokale computer og via PowerShell-scripts. I denne artikel fokuseres der på Power BI-tjenesten. 
+
+Hvis du lige har installeret en gateway, anbefales det, at du så [tilføjer en datakilde](#add-a-data-source) og derefter [tilføjer brugere](#add-users-to-a-data-source), så de kan få adgang til datakilden.
 
 
 ## <a name="manage-data-sources"></a>Administrer datakilder
 
-Power BI understøtter mange datakilder i det lokale miljø, og de har hver især sine egne krav. I dette eksempel viser vi dig, hvordan du tilføjer SQL Server som en datakilde, men trinnene er de samme for andre datakilder.
+Power BI understøtter mange datakilder i det lokale miljø, og de har hver især sine egne krav. En gateway kan bruges til en enkelt datakilde eller flere datakilder. I dette eksempel viser vi dig, hvordan du tilføjer SQL Server som en datakilde, men trinnene er de samme for andre datakilder.
 
 
 ### <a name="add-a-data-source"></a>Tilføj en datakilde
@@ -113,6 +117,14 @@ Når administratorer bruger menupunktet **Administrer gateways**, der findes und
 
 Alle nye anmodninger af typen **Planlagt opdatering** og DirectQuery-handlinger omdirigeres automatisk til den primære instans for en given gatewayklynge. Hvis den primære gatewayinstans ikke er online, dirigeres anmodningen til en anden gatewayinstans i klyngen.
 
+
+## <a name="share-a-gateway"></a>Del en gateway
+
+Du kan ikke *dele* en gateway som sådan, men du kan føje administratorer til gatewayen, og du kan føje brugere til gatewayens datakilder. 
+
+Når du har installeret en gateway, er du som standard administrator af denne gateway. Som vist tidligere kan du tilføje andre personer som administratorer. Disse administratorer kan tilføje datakilder, konfigurere og fjerne gatewayen.
+
+Du kan også tildele brugere til de datakilder, du opretter under hver af din gateways. Brugerne kan derefter bruge disse datakilder til at opdatere Power BI-rapporter. De kan dog ikke ændre datakilderne eller gatewayindstillingerne.
 
 ## <a name="migrate-restore-or-take-over-a-gateway"></a>Overfør, gendan eller overtag en gateway
 

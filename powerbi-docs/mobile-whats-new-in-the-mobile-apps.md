@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/21/2018
+ms.date: 06/05/2018
 ms.author: maggies
-ms.openlocfilehash: 0e4401499ab54707970b928366c67a9dcf7d587a
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 9cf6e1a0b4e711f696d9728850352a53ac8442f6
+ms.sourcegitcommit: b25ae650643b0a62f33d7c1741307137b9cec316
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34482170"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799619"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -25,9 +25,26 @@ Du kan finde relaterede oplysninger om nyheder under:
 
 ## <a name="may-2018"></a>Maj 2018
 
-### <a name="configure-power-bi-ios-mobile-apps-for-report-servers-remotely"></a>Konfigurer Power BI iOS-mobilapps eksternt for rapportservere
+### <a name="mobile-drill-through-all-mobile-apps"></a>Detaljeret mobilgennemgang: alle mobilapps
+
+Du kan gennemgå den fra et udvalgt datapunkt til en anden rapportside i mobilappsene, hvis rapportens forfatter har defineret denne handling. 
+
+### <a name="back-button-all-mobile-apps"></a>Knappen Tilbage: alle mobilapps
+
+Når du nu navigerer gennem en rapport vha. en strygebevægelse, ved at vælge en rapportside på proceslinjen eller vha. en detaljeret gennemgang, kan du vha. knappen Tilbage komme tilbage til den forrige side, du kiggede på. 
+
+### <a name="dashboard-themes-all-mobile-apps"></a>Dashboardtemaer: alle mobilapps
+
+Når rapportens forfatter tilpasser dashboardtemaer i Power BI-tjenesten, ændres udseendet af dashboardet også i mobilappen. Du kan dog ikke se baggrundsbillederne.
+
+### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: Konfigurer fjernadgang for Power BI iOS-mobilapps til en rapportserver
 
 Din it-administrator kan nu bruge et MDM-værktøj til at konfigurere adgang til en rapportserver for Power BI iOS-mobilappen. Se [Konfigurer Power BI iOS-mobilapps eksternt for rapportservere](report-server/configure-powerbi-mobile-apps-remote.md) for at få flere oplysninger.
+
+### <a name="power-bi-for-mixed-reality-app-preview"></a>Power BI til Mixed Reality-app (Eksempel)
+
+Appen Power BI for Mixed Reality er nu tilgængelig i Microsoft Store. Se dine dashboards og rapporter i en virtuel verden, eller placer dem, så du kan se dem på særlige steder i dine omgivelser. Se den nye video [Introduktion til Power BI på Hololens](https://www.youtube.com/watch?v=J_X_nOFUBss) for at se konteksten, eller læst artiklen om den nye [Power BI for Mixed Reality-app](mobile-mixed-reality-app.md).
+
 
 ## <a name="april-2018"></a>April 2018
 

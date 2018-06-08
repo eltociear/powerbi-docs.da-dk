@@ -94,10 +94,6 @@
                   href: service-focus-mode.md
                 - name: 'Udskriv et dashboard, udskriv et dashboard-felt, udskriv en rapportside'
                   href: service-print.md
-                - name: Abonner på en rapport eller et dashboard
-                  href: service-report-subscribe.md
-                - name: Mange måder at åbne en rapport på
-                  href: service-report-open.md
                 - name: Omdøb indhold i Power BI
                   href: service-rename.md
                 - name: Få vist dashboards og rapporter i fuld skærmtilstand (tv-tilstand)
@@ -238,12 +234,16 @@
                   href: service-dashboard-themes.md
             - name: Rapporter
               items:
+                - name: Mange måder at åbne en rapport på
+                  href: service-report-open.md
                 - name: 'Rediger, hvordan et diagram sorteres i en rapport i Power BI'
                   href: power-bi-report-change-sort.md
                 - name: Eksportér data fra en visualisering
                   href: power-bi-visualization-export-data.md
                 - name: Sådan bruger du rapportfiltre
                   href: power-bi-how-to-report-filter.md
+                - name: Abonner på en rapport eller et dashboard
+                  href: service-report-subscribe.md
             - name: Publicer
               items:
                 - name: Power BI Publisher til Excel
@@ -252,22 +252,6 @@
                   href: service-publish-to-powerpoint.md
         - name: Arbejd i Power BI
           items:
-            - name: Fra Excel-projektmappe til fantastisk rapport på ingen tid
-              href: service-from-excel-to-stunning-report.md
-            - name: Brug spørgsmål og svar til at oprette visualiseringer og oprette rapporter
-              href: power-bi-tutorial-q-and-a.md
-            - name: Hent data fra Excel-projektmappefiler
-              href: service-excel-workbook-files.md
-            - name: Opret en ny rapport ud fra et datasæt
-              href: service-report-create-new.md
-            - name: Interager med en rapport i Redigeringsvisning i Power BI
-              href: service-interact-with-a-report-in-editing-view.md
-            - name: Hvordan kan jeg samarbejde og dele dashboards og rapporter?
-              href: service-how-to-collaborate-distribute-dashboards-reports.md
-            - name: Opret og distribuer apps med dashboards og rapporter
-              href: service-create-distribute-apps.md
-            - name: Konfigurer planlagt opdatering
-              href: refresh-scheduled-refresh.md
             - name: Dashboards
               items:
                 - name: Opret et dashboard fra en rapport
@@ -304,6 +288,8 @@
                   href: service-data-classification.md
             - name: Stil spørgsmål til dine data
               items:
+                - name: Brug spørgsmål og svar til at oprette visualiseringer og oprette rapporter
+                  href: power-bi-tutorial-q-and-a.md
                 - name: Brug af Spørgsmål og svar med Power BI Gateway – Enterprise data (Eksempelvisning)
                   href: service-q-and-a-direct-query.md
                 - name: Få dine data til at fungere godt med Spørgsmål og svar i Power BI
@@ -318,6 +304,10 @@
                   href: power-bi-q-and-a-linguistic-schema.md
             - name: Del dit arbejde
               items:
+                - name: Hvordan kan jeg samarbejde og dele dashboards og rapporter?
+                  href: service-how-to-collaborate-distribute-dashboards-reports.md
+                - name: Opret og distribuer apps med dashboards og rapporter
+                  href: service-create-distribute-apps.md
                 - name: Del en filtreret rapport
                   href: service-share-reports.md
                 - name: Publicer fra Power BI på internettet
@@ -354,6 +344,10 @@
                   href: power-bi-report-add-filter.md
                 - name: Gem en rapport i Power BI
                   href: service-report-save.md
+                - name: Opret en ny rapport ud fra et datasæt
+                  href: service-report-create-new.md
+                - name: Interager med en rapport i Redigeringsvisning i Power BI
+                  href: service-interact-with-a-report-in-editing-view.md
                 - name: Analysér i Excel
                   href: service-analyze-in-excel.md
                 - name: 'Rediger, hvordan visualiseringer interagerer i en rapport'
@@ -382,6 +376,10 @@
                   href: power-bi-visualizations-arcgis.md
             - name: Data fra filer
               items:
+                - name: Fra Excel-projektmappe til fantastisk rapport på ingen tid
+                  href: service-from-excel-to-stunning-report.md
+                - name: Hent data fra Excel-projektmappefiler
+                  href: service-excel-workbook-files.md
                 - name: Hent data fra Power BI Desktop-filer
                   href: service-desktop-files.md
                 - name: Hent data fra kommaseparerede værdifiler(.csv)
@@ -406,6 +404,8 @@
                   href: service-azure-and-power-bi.md
             - name: Opdatering af data
               items:
+                - name: Konfigurer planlagt opdatering
+                  href: refresh-scheduled-refresh.md
                 - name: 'Opdater et datasæt, der er oprettet via en Power BI Desktop-fil – lokalt'
                   href: refresh-desktop-file-local-drive.md
                 - name: 'Opdater et datasæt, der er oprettet via en Power BI Desktop-fil – cloud'
@@ -796,7 +796,7 @@
   items:
     - name: Oversigt
       items:
-        - name: Hvad er Power BI-mobilapps?
+        - name: Hvad er mobilappsene?
           href: mobile-apps-for-mobile-devices.md
     - name: Hurtige introduktioner
       items:
@@ -808,20 +808,20 @@
           href: tutorial-mobile-apps-ios-qna.md
     - name: Begreber
       items:
-        - name: Hvad er nyt i mobilapps til Power BI
+        - name: Nyheder i mobilappsene
           href: mobile-whats-new-in-the-mobile-apps.md
-        - name: Hent Power BI-data fra den virkelige verden med mobilapps
+        - name: Hent data fra den virkelige verden med mobilappsene
           href: mobile-apps-data-in-real-world-context.md
-        - name: Få vist dine data offline i Power BI-mobilapps
+        - name: Få vist dine data offline i mobilappsene
           href: mobile-apps-offline-data.md
+        - name: Power BI til Mixed Reality-app (Eksempel)
+          href: mobile-mixed-reality-app.md
     - name: Sådan gør du
       items:
         - name: Alle mobilapps
           items:
             - name: Få vist rapporter i det lokale miljø i mobilappsene
               href: mobile-app-ssrs-kpis-mobile-on-premises-reports.md
-            - name: Power BI til Mixed Reality-app (Eksempel)
-              href: mobile-mixed-reality-app.md
             - name: Del et dashboard via Power BI-mobilapps
               href: mobile-share-dashboard-from-the-mobile-apps.md
             - name: Interager med felter i mobilapps
@@ -850,7 +850,7 @@
               href: service-admin-mobile-intune.md
         - name: Android-enheder
           items:
-            - name: Kom i gang med Power BI til Android-app
+            - name: Kom i gang med Android-appen
               href: mobile-android-app-get-started.md
             - name: Løsning af "Der er ikke tillid til din virksomheds SSL-certifikat"
               href: mobile-android-app-error-corporate-ssl-account-is-untrusted.md
@@ -858,7 +858,7 @@
               href: mobile-android-error-update-android-system-webview.md
         - name: iOS
           items:
-            - name: Kom i gang med Power BI til iOS-appen
+            - name: Kom i gang med iOS-appen
               href: mobile-iphone-app-get-started.md
             - name: Kom i gang med iPad-appen
               href: mobile-ipad-app-get-started.md
@@ -866,27 +866,27 @@
               href: mobile-apps-ios-qna.md
             - name: Power BI-app til Apple Watch
               href: mobile-apple-watch.md
-            - name: Scan en stregkode fra Power BI-appen på din iPhone
+            - name: Scan en stregkode med appen på din iPhone
               href: mobile-apps-scan-barcode-iphone.md
             - name: Power BI til iOS-apps
               href: mobile-ios-ipad-iphone-apps.md
         - name: iOS og Android
           items:
-            - name: 'Anmærk og del et felt, en rapport eller en visualisering i mobilapps'
+            - name: Anmærk og del i mobilappsene
               href: mobile-annotate-and-share-a-tile-from-the-mobile-apps.md
         - name: Power BI-app til Windows 10-enheder
           items:
-            - name: Kom i gang med Power BI-mobilapp til Windows 10
+            - name: Kom i gang med mobilappen til Windows 10
               href: mobile-windows-10-phone-app-get-started.md
             - name: Fastgør et dashboard til startskærmen
               href: mobile-pin-dashboard-start-screen-windows-10-phone-app.md
-            - name: Få vist Reporting Services mobilrapporter og KPI'er i Power BI-mobilapp til Windows 10
+            - name: Få vist Reporting Services-mobilrapporter og KPI'er i appen til Windows 10
               href: mobile-app-windows-10-ssrs-kpis-mobile-reports.md
             - name: Få vist Power BI på Surface Hub
               href: mobile-windows-10-app-presentation-mode.md
     - name: Ressourcer
       items:
-        - name: Understøttede sprog i Power BI-mobilapps
+        - name: Understøttede sprog i mobilappsene
           href: mobile-apps-supported-languages.md
 - name: Power BI for udviklere
   items:
@@ -914,8 +914,6 @@
           items:
             - name: Opret en brugerdefineret visualisering med Udviklerværktøj
               href: service-custom-visuals-getting-started-with-developer-tools.md
-            - name: Gennemse brugerdefinerede visualiseringer for sikkerhed og beskyttelse af personlige oplysninger
-              href: service-custom-visuals-review-for-security-and-privacy.md
             - name: Få en brugerdefineret visualisering certificeret
               href: power-bi-custom-visuals-certified.md
             - name: Publicer brugerdefinerede visuals i AppSource
@@ -983,7 +981,7 @@
     - name: Reference
       items:
         - name: REST API'er
-          href: developer/rest-api-reference.md
+          href: 'https://docs.microsoft.com/rest/api/power-bi/'
         - name: 'Git-lager for Power BI C#'
           href: 'https://go.microsoft.com/fwlink/?linkid=848273'
         - name: Henter .NET SDK

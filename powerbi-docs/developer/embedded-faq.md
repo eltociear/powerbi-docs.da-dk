@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: d7baa305c514d084f6390754d516b238794bcdbf
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 3e1b3b59fff26242e662d90365a6b8acc98259e6
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34721012"
+ms.locfileid: "34754926"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -103,8 +103,7 @@ Godkendelse og godkendelse af programbrugerne bliver implementeret af ISV'en, IS
 
 Hvis du allerede har en Azure AD-lejer, kan du bruge din eksisterende mappe, eller du kan oprette en ny Azure AD-lejer med henblik på at sørge for dit integrerede programindholds sikkerhed.
 
-Hvis du skal have et AAD-token, kan du bruge et af Azure Active Directory-godkendelsesbibliotekerne. Der er klientbiblioteker til flere platforme.
-https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries
+Hvis du skal have et AAD-token, kan du bruge et af Azure Active Directory-godkendelsesbibliotekerne – https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries. Der er klientbiblioteker til flere platforme.
 
 ### <a name="how-is-power-bi-embedded-different-from-other-azure-services"></a>Hvordan er Power BI Embedded anderledes end andre Azure-tjenester?
 

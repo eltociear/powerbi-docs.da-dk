@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/05/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 980aa830e38e49613b54ad473ef23eb7eac78ed2
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 04963d513fa397e75c34f0650bf55fb31c1490f2
+ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722787"
+ms.locfileid: "34755087"
 ---
 # <a name="power-bi-premium---what-is-it"></a>Power BI Premium – hvad er det?
 Power BI Premium indeholder ressourcer, der er dedikeret til at køre Power BI-tjenesten for din organisation eller dit team og giver dig en mere pålidelig ydeevne og større datamængder. Premium giver også mulighed for omfattende distribution af indhold, uden at du skal købe licenser pr. bruger til fremvisere.
@@ -61,9 +61,8 @@ Som standard vil dit arbejdsområde være i delt kapacitet. Dette omfatter dit p
 ### <a name="premium-capacity-nodes"></a>Premium-kapacitetsnoder
 Power BI Premium er tilgængelig i nodekonfigurationer med andre v-kerne-kapaciteter. Du kan finde flere oplysninger om specifikke SKU-tilbud og priser under [Priser på Power BI](https://powerbi.microsoft.com/pricing/). Der findes også en [omkostningsberegner](https://powerbi.microsoft.com/calculator/). Du kan finde oplysninger om planlægning af integreret analysekapacitet i [Hvidbog om planlægning af en Power BI Enterprise-installation](https://aka.ms/pbienterprisedeploy).
 
-* P-noder kan bruges til integrerede installationer eller tjenesteinstallationer
-* EM-noder kan kun bruges til integrerede installationer
-* EM1 og EM2 
+* P-noder kan bruges til integrerede installationer eller tjenesteinstallationer.
+* EM-noder kan kun bruges til integrerede installationer. EM-noder har ikke adgang til Premium-funktioner, f.eks. deling af apps med brugere, der ikke har en Power BI Pro-licens.
 
 >[!NOTE]
 >Links i denne tabel kan kun fungere korrekt for brugere, der er globale Office 365-administratorer – andre får vist fejlmeddelelsen 404. 
