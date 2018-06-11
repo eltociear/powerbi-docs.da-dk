@@ -1136,6 +1136,8 @@
           href: service-gateway-onprem-manage-oracle.md
         - name: Administrer din virksomheds datakilde - import/planlagt opdatering
           href: service-gateway-enterprise-manage-scheduled-refresh.md
+        - name: Flet datakilder i det lokale miljø og i cloudmiljøet
+          href: service-gateway-mashup-on-premises-cloud.md
         - name: Brug Kerberos til enkeltlogon (SSO)
           href: service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md
         - name: Konfigurer proxyindstillinger
