@@ -10,17 +10,15 @@ ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 03f1c9948b3c178f39d369fddece36a5fcd05e4f
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 8e31d3128e38453212a8a0ecef2a139fa2d0f356
+ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297463"
+ms.lasthandoff: 06/09/2018
+ms.locfileid: "35250539"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Konfiguration af mobilapps med Microsoft Intune
 Microsoft Intune giver organisationer mulighed for at administrere enheder og programmer. Power BI-mobilprogrammerne til iOS og Android, integrerer med Intune, så du kan administrere programmet på dine enheder og styre sikkerheden. Ved hjælp af konfigurationspolitikker kan du kontrollere ting som at anmode om pinkode for at give adgang, kontrollere, hvordan data håndteres af programmet, og kryptere programdata, selv når appen ikke er i brug.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9HF-qsdQvHw?list=PLv2BtOtLblH1nPVPU2etFzTNmpz49dwXm" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="general-mobile-device-management-configuration"></a>Konfiguration af generel administration af mobilenheder
 Denne artikel er ikke tænkt som en komplet konfigurationsvejledning til Microsoft Intune. Hvis du lige nu integrerer med Intune, er der et par ting, du skal sikre dig, at du har konfigureret. [Få mere at vide](https://technet.microsoft.com/library/jj676587.aspx)

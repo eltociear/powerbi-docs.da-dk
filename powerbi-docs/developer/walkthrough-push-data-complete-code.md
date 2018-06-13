@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: e5866b249d95cd3b05c7d769fe0cdbab984a978d
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a41acec10e2801d046185d34c64e4d51b5e9dae0
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34289918"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813083"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Komplet kodeliste til push af data til et datasæt
 Denne artikel er en del af en trinvis gennemgang af [push af data til et datasæt](walkthrough-push-data.md).
@@ -228,7 +228,7 @@ Når du har fulgt trin 2 til 5 i **Push af data til et datasæt**, bør din komp
 [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md)  
 [Hent et datasæt, der kan føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md)  
 [Føj rækker til en Power BI-tabel](walkthrough-push-data-add-rows.md)  
-[Power BI REST-API-reference](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI REST-API-reference](https://docs.microsoft.com/rest/api/power-bi/)  
 [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
 
 

@@ -4,8 +4,6 @@ Der kan opstå mange problemer, hvis gatewayversionen er forældet.  Det er gene
 ## <a name="common-issues"></a>Almindelige problemer
 Her er nogle almindelige problemer og løsninger, som har hjulpet en række kunder i miljøer, der begrænser adgangen til internettet.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-t7RO6mHATI?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
 ### <a name="authentication-to-proxy-server"></a>Godkendelse til proxyserver
 Din kræver muligvis godkendelse fra en domænebrugerkonto. Gatewayen anvender som standard et tjeneste-SID til brugerens logon på Windows-tjenesten. Hvis du ændrer brugeren til en domænebruger, kan det hjælpe. Du kan få mere at vide i [Ændring af gatewaytjenestekontoen til en domænebruger](../service-gateway-proxy.md#changing-the-gateway-service-account-to-a-domain-user).
 

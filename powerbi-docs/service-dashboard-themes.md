@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/30/2018
+ms.date: 06/05/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1ea92be426312a738e03d78454a4c83a82b233c5
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 331dc45f3049fe77145b86ffafd363162c74a589
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722514"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813796"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Brug Dashboard-temaer i Power BI-tjenesten
 Med **dashboardtemaer** kan du anvende et farvetema på hele dit dashboard, f.eks virksomhedens farver, sæsonmæssige farver eller andre farvetemaer, som du gerne vil anvende. Når du anvender et **dashboardtema**, bruges farver fra det valgte tema for alle visualiseringer på dashboardet (med nogle få undtagelser, der er beskrevet senere i denne artikel).
 
 ![eksempeldashboard med tema](media/service-dashboard-themes/power-bi-full-dashboard-theme.png)
 
-Hvis du ændrer farverne i rapportvisualiseringerne på dashboardet, påvirker det ikke visualiseringerne i rapporten. Når du fastgør felter fra en rapport, hvor der allerede er [anvendt et rapporttema](/desktop-report-themes.md), kan du vælge at beholde det aktuelle tema eller at bruge dashboardtemaet.
+Hvis du ændrer farverne i rapportvisualiseringerne på dashboardet, påvirker det ikke visualiseringerne i rapporten. Når du fastgør felter fra en rapport, hvor der allerede er [anvendt et rapporttema](desktop-report-themes.md), kan du vælge at beholde det aktuelle tema eller at bruge dashboardtemaet.
 
 
 ## <a name="prerequisites"></a>Forudsætninger

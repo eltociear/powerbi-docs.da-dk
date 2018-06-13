@@ -8,12 +8,12 @@ ms.Embedded: powerbi
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 67b52fa94ee3af9da3bfcae17f69a72e1aa46c77
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d9dfdf3f77629a58b324945815a8608fa45f509f
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34689777"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813497"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded
 Se, hvordan du overfører fra Power BI Workspace Collection til Power BI Embedded og udnytter fordelene ved at integrere i apps.
@@ -159,7 +159,7 @@ Ud over det indhold, du overførte fra Power BI Workspace Collection, kan du opr
 
 ## <a name="rebuild-your-application"></a>Byg din app igen
 1. Du skal ændre din app til at bruge Power BI REST API'er og rapportplaceringen på powerbi.com.
-2. Byg din AuthN/AuthZ-godkendelse igen ved hjælp af *master*kontoen til din app. Du kan med fordel bruge et [integreringstoken](https://msdn.microsoft.com/library/mt784614.aspx) for at give brugeren tilladelse til at agere på vegne af andre brugere.
+2. Byg din AuthN/AuthZ-godkendelse igen ved hjælp af *master*kontoen til din app. Du kan med fordel bruge et [integreringstoken](https://docs.microsoft.com/rest/api/power-bi/embedtoken) for at give brugeren tilladelse til at agere på vegne af andre brugere.
 3. Integrer dine rapporter fra powerbi.com i din app.
 
 ## <a name="map-your-users-to-a-power-bi-user"></a>Knyt dine brugere til en Power BI-bruger

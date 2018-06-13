@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/09/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 0589ef3ad4f55a9684f0a7b31ed6421936c3e5c2
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: db32f7d0d3f7ca7b6943ca5347dc349c8c44be85
+ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34299165"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35301843"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
@@ -24,7 +24,7 @@ Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner 
 - [Nyheder i Power BI Desktop](desktop-latest-update.md)  
 - [Nyheder i mobilappsene til Power BI](mobile-whats-new-in-the-mobile-apps.md)  
 - [Power BI-temaets blog](https://powerbi.microsoft.com/blog/)
-- [Produktbemærkninger til virksomhedsprogrammer, foråret '18,](https://aka.ms/bagspring2018releasenotes_internal) fra Dynamics 365: De nyeste opdateringer til vores virksomhedsprogrammer samt nye funktioner til at bygge dine programmer og udvidelser til vores platform. 
+- [Produktbemærkninger til virksomhedsprogrammer, foråret '18,](http://aka.ms/businessappsreleasenotes) fra Dynamics 365: De nyeste opdateringer til vores virksomhedsprogrammer samt nye funktioner til at bygge dine programmer og udvidelser til vores platform. 
 
 Du kan også tjekke YouTube-kanalerne for at få mere at vide om nyheder og funktioner.
 

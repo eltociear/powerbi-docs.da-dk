@@ -1,5 +1,5 @@
 ---
-title: Produktbemærkninger til Power BI-rapportserver
+title: Foretag udvikling med REST API'er til Power BI-rapportserver
 description: REST API leverer programadgang til objekterne i et katalog til Power BI-rapportserver.
 author: markingmyname
 manager: kfile
@@ -9,14 +9,15 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: a1cbcc6d265504bc93ef6447a6be381ca6399063
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 08c8075fe275ff1472d3e9845f954ef4d029b373
+ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34721748"
+ms.lasthandoff: 06/09/2018
+ms.locfileid: "35250424"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Foretag udvikling med REST API'er til Power BI-rapportserver
+
 Power BI-rapportserver understøtter REST API'er (Representational State Transfer). REST API'er er tjenesteslutpunkter, der understøtter et sæt HTTP-handlinger (metoder), der leverer, opretter, henter, opdaterer eller sletter adgang for ressourcer i en rapportserver.
 
 REST API leverer programadgang til objekterne i et katalog til Power BI-rapportserver. Mapper, rapporter, KPI'er, datakilder, datasæt, opdateringsplaner, abonnementer osv. er eksempler på objekter. Med brug af REST API kan du, f.eks. navigere i mappehierarkiet, finde indholdet af en mappe eller hente en rapportdefinition. Du kan desuden oprette, opdatere og slette objekter. Eksempler på arbejdet med objekter er upload af en rapport, afvikling af en opdateringsplan, sletning af en mappe osv.
@@ -24,6 +25,7 @@ REST API leverer programadgang til objekterne i et katalog til Power BI-rapports
 [!INCLUDE [GDPR-related guidance](../includes/gdpr-hybrid-note.md)]
 
 ## <a name="components-of-a-rest-api-requestresponse"></a>Komponenter i anmodning/svar for en REST API
+
 Et anmodning/svar-par til en REST API kan opdeles i fem komponenter:
 
 * **Anmodningens URI**, der består af: `{URI-scheme} :// {URI-host} / {resource-path} ? {query-string}`. Selvom anmodningens URI er medtaget i anmodningsmeddelelsens header, tager vi den her ud særskilt, fordi de fleste sprog eller frameworks kræver, at du overfører den særskilt fra anmodningsmeddelelsen.
@@ -46,15 +48,17 @@ Et anmodning/svar-par til en REST API kan opdeles i fem komponenter:
   * MIME-kodede svarobjekter returneres i brødteksten i HTTP-svaret, f.eks. et svar fra en GET-metode, der returnerer data. Disse objekter returneres typisk i et struktureret format, f.eks. JSON eller XML, som angivet i `Content-type`-svarheaderen.
 
 ## <a name="api-documentation"></a>API-dokumentation
+
 Til en moderne REST API er der for brug for moderne API-dokumentation. REST API er bygget på OpenAPI-specifikationen (også kaldet swagger-specifikationen), og dokumentation er tilgængelig på [SwaggerHub](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0). Ud over at dokumentere API'en hjælper SwaggerHub med at oprette et klientbibliotek i et sprog efter eget valg – JavaScript, TypeScript, C#, Java, Python, Ruby og meget mere.
 
 ## <a name="testing-api-calls"></a>Test af API-kald
+
 [Fiddler](http://www.telerik.com/fiddler) er et værktøj til test af HTTP-anmodnings-/svarmeddelelser. Fiddler er en gratis webfejlfindingsproxy, der kan opfange dine REST-anmodninger, og som gør det lettere at diagnosticere HTTP-anmodnings-/svarmeddelelser.
 
 ## <a name="next-steps"></a>Næste trin
+
 Se de tilgængelige API'er på [SwaggerHub](https://app.swaggerhub.com/apis/microsoft-rs/PBIRS/2.0).
 
 Der findes eksempler på [GitHub](https://github.com/Microsoft/Reporting-Services). Eksemplet omfatter en HTML5-app, der er baseret på TypeScript, React og webpack sammen med et PowerShell-eksempel.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-
