@@ -900,8 +900,18 @@
           href: developer/embed-sample-for-customers.md
     - name: Begreber
       items:
-        - name: Hvad kan jeg bruge Power BI-API'en til?
-          href: developer/overview-of-power-bi-rest-api.md
+        - name: Arbejde med REST-API'er til Power BI
+          items:
+            - name: Hvad kan jeg bruge Power BI-API'en til?
+              href: developer/overview-of-power-bi-rest-api.md
+            - name: Begrænsninger for REST-API'er til Power BI
+              href: developer/api-rest-api-limitations.md
+            - name: Egenskaber for datasæt
+              href: developer/api-dataset-properties.md
+            - name: Versionering af datamodel
+              href: developer/api-data-model-versioning.md
+        - name: Opret en brugerdefineret visualisering med Udviklerværktøj
+          href: service-custom-visuals-getting-started-with-developer-tools.md
         - name: Power BI-tilladelser
           href: developer/power-bi-permissions.md
         - name: Sikkerhed på rækkeniveau (RLS)
@@ -966,8 +976,10 @@
               href: developer/walkthrough-push-data-get-datasets.md
             - name: Tilføj rækker til en tabel
               href: developer/walkthrough-push-data-add-rows.md
-            - name: Færdiggør kodeliste
+            - name: Komplet kodeliste
               href: developer/walkthrough-push-data-complete-code.md
+            - name: Politik for automatisk opbevaring for data i realtid
+              href: developer/api-automatic-retention-policy-for-real-time-data.md
         - name: Indholdspakke-certificering
           items:
             - name: Indholdspakke-certificeringsprogram
