@@ -9,23 +9,23 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: c94f0a94cfc2e59942a17b542efb7b1bb641174c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c6cbdf9effa3264eadf19de97be864cc3f152e8b
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290309"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812416"
 ---
 # <a name="step-3-create-a-dataset-in-power-bi"></a>Trin 3: Opret et datasæt i Power BI
 Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
 
-I **trin 2** af Send data til et datasæt, [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md), fik du et token til godkendelse til **Azure AD**. I dette trin skal du bruge dette token for at kalde handlingen [Opret datasæt](https://msdn.microsoft.com/library/mt203562.aspx).
+I **trin 2** af Send data til et datasæt, [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md), fik du et token til godkendelse til **Azure AD**. I dette trin skal du bruge dette token for at kalde handlingen [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets).
 
 Du kalder en REST-ressource ved at bruge en URL-adresse, som finder ressourcen, og sende en JSON-streng (JavaScript Object Notation), som beskriver datasættet, til Power BI-tjenesteressourcen. En REST-ressource identificerer den del af Power BI-tjenesten, som du vil arbejde med. For at sende data til datasættet skal målressourcen være et **datasæt**. Den URL-adresse, der identificerer et datasæt, er https://api.PowerBI.com/v1.0/myorg/datasets. Hvis du pusher data i en gruppe, er URL-adressen https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets.
 
 For at godkende en Power BI REST-handling skal du føje det token, du fik under [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md), til en anmodningsheader:
 
-Når du kalder handlingen [Opret datasæt](https://msdn.microsoft.com/library/mt203562.aspx), oprettes der et nyt datasæt. 
+Når du kalder handlingen [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets), oprettes der et nyt datasæt. 
 
 ![](media/walkthrough-push-data-create-dataset/powerbi-developer-create-dataset.png)
 
@@ -228,10 +228,11 @@ Nedenfor kan du se den [komplette kodeliste](#code).
 ## <a name="next-steps"></a>Næste trin
 [Hent et datasæt for at føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md)  
 [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md)  
-[Opret datasæt](https://msdn.microsoft.com/library/mt203562.aspx)  
+[PostDataset](https://docs.microsoft.com/rest/api/power-bi/datasets_postdataset)  
+[PostDatasetInGroup](https://docs.microsoft.com/rest/api/power-bi/datasets_postdatasetingroup)  
 [Send data til et Power BI-dashboard](walkthrough-push-data.md)  
 [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
-[Power BI REST-API-reference](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI REST-API-reference](https://docs.microsoft.com/rest/api/power-bi/)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

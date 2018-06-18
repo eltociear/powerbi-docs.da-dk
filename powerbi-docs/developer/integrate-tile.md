@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: maghan
-ms.openlocfilehash: 6ad2138ab37b20fa16a5455ab167ec9e6b7e159c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: afed2bc87e7e358d9ba02a465c43d223f6e7cba3
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34288308"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813773"
 ---
 # <a name="integrate-a-tile-into-an-app-user-owns-data"></a>Integrer et felt i en app (brugeren ejer dataene)
 Få mere at vide om, hvordan du integrerer et felt i en webapp ved hjælp af REST-API-kald sammen med Power BI JavaScript-API'en, når du integrerer for din organisation.
@@ -28,7 +28,7 @@ Før du begynder denne gennemgang, skal du have en konto til **Power BI**. Hvis 
 > 
 > 
 
-Hvis du vil integrere et felt i en webapp, skal du bruge **Power BI** REST-API'en eller Power BI C#-SDK'en og et Azure Active Directory-godkendelses**adgangstoken** for at hente et felt. Derefter skal du indlæse feltet vha. det samme adgangstoken. API'en til **Power BI** leverer programadgang til visse **Power BI**-ressourcer. Du kan finde flere oplysninger under [Oversigt over Power BI REST-API](https://msdn.microsoft.com/library/dn877544.aspx) og [Power BI JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript).
+Hvis du vil integrere et felt i en webapp, skal du bruge **Power BI** REST-API'en eller Power BI C#-SDK'en og et Azure Active Directory-godkendelses**adgangstoken** for at hente et felt. Derefter skal du indlæse feltet vha. det samme adgangstoken. **Power BI**-API'en leverer programmatisk adgang til visse **Power BI**-ressourcer. Du kan finde flere oplysninger under [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) og [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Download eksemplet
 I denne artikel vises den kode, der bruges i [integrate-tile-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-tile-web-app) på GitHub. Hvis du vil følge med i gennemgangen, kan du hente eksemplet.
@@ -44,12 +44,12 @@ Hvis du har hentet [integrate-tile-web-app](https://github.com/Microsoft/PowerBI
 I applikationen skal du først hente et **adgangstoken** fra Azure AD, før du kan foretage kald til Power BI REST-API'en. Du kan finde flere oplysninger i [Godkend brugere, og få et Azure AD-adgangstoken til din Power BI-app](get-azuread-access-token.md).
 
 ## <a name="step-3---get-a-tile"></a>Trin 3 – Hent et felt
-Hvis du vil hente et **Power BI**-felt, skal du bruge handlingen [Hent felter](https://msdn.microsoft.com/library/mt465741.aspx), som henter en liste over **Power BI**-felter fra et bestemt dashboard. Fra listen over felter kan du få et felt-id og en integreret URL-adresse.
+Hvis du vil hente et **Power BI**-felt, skal du bruge handlingen [Hent felter](https://docs.microsoft.com/rest/api/power-bi/dashboards/gettiles), som henter en liste over **Power BI**-felter fra et bestemt dashboard. Fra listen over felter kan du få et felt-id og en integreret URL-adresse.
 
 Du skal hente et dashboard-id, før du kan få feltet. Du kan finde oplysninger om, hvordan du henter et dashboard, under [Integrer et dashboard i en app (brugeren ejer dataene)](integrate-dashboard.md).
 
 ### <a name="get-tiles-using-an-access-token"></a>Hent felter ved hjælp af et adgangstoken
-Du kan bruge det **adgangstoken**, du fik på [trin 2](#step-2-get-an-access-token-from-azure-ad), til at kalde handlingen [Hent felter](https://msdn.microsoft.com/library/mt465741.aspx). Handlingen [Hent felter](https://msdn.microsoft.com/library/mt465741.aspx) returnerer en liste over felter. Du kan få et enkelt felt på listen over felter. Nedenfor finder du en komplet C#-metode til at hente et felt. 
+Du kan bruge det **adgangstoken**, du fik på [trin 2](#step-2-get-an-access-token-from-azure-ad), til at kalde handlingen [Hent felter](https://docs.microsoft.com/rest/api/power-bi/dashboards/gettiles). Handlingen [Hent felter](https://docs.microsoft.com/rest/api/power-bi/dashboards/gettiles) returnerer en liste over felter. Du kan få et enkelt felt på listen over felter. Nedenfor finder du en komplet C#-metode til at hente et felt. 
 
 Du skal inkludere en *godkendelsesheader* i formatet *Bearer {adgangstoken}* for at kunne foretage REST-API-kaldet.
 
@@ -216,7 +216,7 @@ Hvis du har downloadet og kørt [integrate-tile-web-app](https://github.com/Micr
 ![Integreret felt i webprogram](media/integrate-tile/powerbi-embedded-tile.png)
 
 ## <a name="working-with-groups-app-workspaces"></a>Arbejde med grupper (apparbejdsområder)
-Hvis du vil integrere et felt fra en gruppe (apparbejdsområde), skal du hente listen over alle tilgængelige felter på en gruppes dashboard ved hjælp af følgende REST-API-kald. Du kan finde flere oplysninger om dette REST-API-kald under [Hent felter](https://msdn.microsoft.com/library/mt465741.aspx). Du skal have tilladelser til denne gruppe, for at anmodningen returnerer resultater.
+Hvis du vil integrere et felt fra en gruppe (apparbejdsområde), skal du hente listen over alle tilgængelige felter på en gruppes dashboard ved hjælp af følgende REST-API-kald. Du kan finde flere oplysninger om dette REST-API-kald under [Hent felter](https://docs.microsoft.com/rest/api/power-bi/dashboards/gettiles). Du skal have tilladelser til denne gruppe, for at anmodningen returnerer resultater.
 
 ```
 https://api.powerbi.com/v1.0/myorg/groups/{groupId}/dashboards/{dashboard_id}/tiles

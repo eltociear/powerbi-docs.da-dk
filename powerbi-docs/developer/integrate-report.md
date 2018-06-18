@@ -7,13 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 10/05/2017
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: d2fa65587fdbd85aabd429d531b79e9e614d2f49
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 032e0ed05d56d2d7f1e2b41cfd922999ff43ea94
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813359"
 ---
 # <a name="integrate-a-report-into-an-app-for-your-organization"></a>Integrer en rapport i en app for din organisation
 Få mere at vide om, hvordan du integrerer en rapport i en webapp ved hjælp af REST-API-kald sammen med Power BI JavaScript-API'en, når du integrerer for din organisation.
@@ -27,10 +28,14 @@ Før du begynder denne gennemgang, skal du have en **Power BI**-konto. Hvis du i
 > 
 > 
 
-Du integrerer en rapport i en webapp ved hjælp af **Power BI** REST-API'en eller Power BI C#-SDK'en og et **adgangstoken** til Azure AD-godkendelse (Active Directory) for at hente en rapport. Derefter skal du indlæse rapporten ved hjælp af det samme adgangstoken. **Power BI**-API'en leverer programmatisk adgang til visse **Power BI**-ressourcer. Du kan finde flere oplysninger under [Oversigt over Power BI REST-API](https://msdn.microsoft.com/library/dn877544.aspx) og [Power BI JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript).
+Du integrerer en rapport i en webapp ved hjælp af **Power BI** REST-API'en eller Power BI C#-SDK'en og et **adgangstoken** til Azure AD-godkendelse (Active Directory) for at hente en rapport. Derefter skal du indlæse rapporten ved hjælp af det samme adgangstoken. **Power BI**-API'en leverer programmatisk adgang til visse **Power BI**-ressourcer. Du kan finde flere oplysninger under [Power BI REST-API](https://docs.microsoft.com/rest/api/power-bi/) og [Power BI JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Download eksemplet
 I denne artikel vises den kode, der bruges i [integrate-report-web-app](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/User%20Owns%20Data/integrate-report-web-app) på GitHub. For at kunne følge med i denne gennemgang skal du downloade eksemplet.
+
+Du kan også gennemgå [Onboarding Experience Tool](https://aka.ms/embedsetup/UserOwnsData) for hurtigt at komme i gang og downloade en eksempelapp.
+
+Hvis du vælger at konfigurere miljøet manuelt, kan du dog fortsætte nedenfor.
 
 ## <a name="step-1---register-an-app-in-azure-ad"></a>Trin 1 – Registrer en app i Azure AD
 Du skal registrere din app i Azure AD, før du kan foretage REST API-kald. Du kan finde flere oplysninger under [Registrer en Azure AD-app for at integrere Power BI-indhold](register-app.md).
@@ -43,10 +48,10 @@ Hvis du har downloadet [integrate-report-web-app](https://github.com/Microsoft/P
 I applikationen skal du først hente et **adgangstoken** fra Azure AD, før du kan foretage kald til Power BI REST-API'en. Du kan finde flere oplysninger under [Godkend brugere, og få et Azure AD-adgangstoken til din Power BI-app](get-azuread-access-token.md).
 
 ## <a name="step-3---get-a-report"></a>Trin 3 – Hent en rapport
-Du henter en **Power BI**-rapport ved at bruge handlingen [Hent rapporter](https://msdn.microsoft.com/library/mt634543.aspx), hvorved **Power BI**-rapporter hentes. Du kan få et rapport-id fra listen over rapporter.
+Du henter en **Power BI**-rapport ved at bruge handlingen [Hent rapporter](https://docs.microsoft.com/rest/api/power-bi/reports/getreports), hvorved **Power BI**-rapporter hentes. Du kan få et rapport-id fra listen over rapporter.
 
 ### <a name="get-reports-using-an-access-token"></a>Hent rapporter ved hjælp af et adgangstoken
-Du kan bruge det **adgangstoken**, du fik under [trin 2](#step-2-get-an-access-token-from-azure-ad), til at kalde handlingen [Hent rapporter](https://msdn.microsoft.com/library/mt634543.aspx). Handlingen [Hent rapporter](https://msdn.microsoft.com/library/mt634543.aspx) returnerer en liste over rapporter. Du kan få en enkelt rapport på listen over rapporter. Nedenfor finder du en komplet C#-metode til at hente en rapport. 
+Du kan bruge det **adgangstoken**, du fik under [trin 2](#step-2-get-an-access-token-from-azure-ad), til at kalde handlingen [Hent rapporter](https://docs.microsoft.com/rest/api/power-bi/reports/getreports). Handlingen [Hent rapporter](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) returnerer en liste over rapporter. Du kan få en enkelt rapport på listen over rapporter. Nedenfor finder du en komplet C#-metode til at hente en rapport. 
 
 Du skal inkludere en *godkendelsesheader* i formatet *Bearer {adgangstoken}* for at kunne foretage REST-API-kaldet.
 
@@ -213,7 +218,7 @@ Hvis du har downloadet og kørt [integrate-report-web-app](https://github.com/Mi
 ![Eksempel på en integreret rapport](media/integrate-report/powerbi-embedded-report.png)
 
 ## <a name="working-with-groups-app-workspaces"></a>Arbejde med grupper (apparbejdsområder)
-Hvis du vil integrere en rapport fra en gruppe (apparbejdsområde), skal du hente listen over alle tilgængelige rapporter på en gruppes dashboard ved hjælp af følgende REST-API-kald. Du kan finde flere oplysninger om dette REST-API-kald under [Hent rapporter](https://msdn.microsoft.com/library/mt634543.aspx). Du skal have tilladelser i denne gruppe, for at anmodningen returnerer resultater.
+Hvis du vil integrere en rapport fra en gruppe (apparbejdsområde), skal du hente listen over alle tilgængelige rapporter på en gruppes dashboard ved hjælp af følgende REST-API-kald. Du kan finde flere oplysninger om dette REST-API-kald under [Hent rapporter](https://docs.microsoft.com/rest/api/power-bi/reports/getreports). Du skal have tilladelser i denne gruppe, for at anmodningen returnerer resultater.
 
 ```
 https://api.powerbi.com/v1.0/myorg/groups/{group_id}/reports

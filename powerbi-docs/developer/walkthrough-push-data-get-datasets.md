@@ -9,19 +9,19 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: c550b911eef43ade98b3bc771e3f13929b805e11
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ae8919bbe06c729cc43e230146c4c1a216a80168
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34287618"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813225"
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Trin 4: Hent et datasæt for at indsætte rækker i en Power BI-tabel
 Denne artikel er en del af en trinvis vejledning til, hvordan du [overfører data til et datasæt](walkthrough-push-data.md).
 
-På **trin 3** i overførslen af data til et datasæt, [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md), kaldte du handlingen [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) for at oprette et datasæt i Power BI. På dette trin skal du bruge handlingen [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx) og Newtonsoft.Json til at hente et datasæt-id. Du kan bruge datasættet på trin 4 til at indsætte rækker i et datasæt. 
+På **trin 3** i overførslen af data til et datasæt, [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md), kaldte du handlingen [Create Dataset](https://docs.microsoft.com/rest/api/power-bi/datasets) for at oprette et datasæt i Power BI. På dette trin skal du bruge handlingen [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/getdatasets) og Newtonsoft.Json til at hente et datasæt-id. Du kan bruge datasættet på trin 4 til at indsætte rækker i et datasæt. 
 
-Hvis du vil overføre data til et Power BI-datasæt, skal du henvise til tabellen i datasættet. Hvis du vil henvise til en tabel i et datasæt, skal du først hente et **datasæt-id**. Du henter et **datasæt-id** ved hjælp af handlingen [Get Dataset](https://msdn.microsoft.com/library/mt203567.aspx). Handlingen **Get Dataset** returnerer en JSON-streng, der indeholder en liste over alle datasæt i Power BI. Den anbefalede måde at deserialisere en JSON-streng er med [Newtonsoft.Json](http://www.newtonsoft.com/json).
+Hvis du vil overføre data til et Power BI-datasæt, skal du henvise til tabellen i datasættet. Hvis du vil henvise til en tabel i et datasæt, skal du først hente et **datasæt-id**. Du kan hente et **datasæt-id** ved hjælp af handlingen [Get Dataset By ID](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasetbyid). Handlingen **Get Dataset By ID** returnerer en JSON-streng, der indeholder en liste over alle datasæt i Power BI. Den anbefalede måde at deserialisere en JSON-streng er med [Newtonsoft.Json](http://www.newtonsoft.com/json).
 
 Sådan henter du et datasæt.
 
@@ -267,10 +267,10 @@ Nedenfor kan du se den [komplette kodeliste](#code).
 ## <a name="next-steps"></a>Næste trin
 [Indsæt rækker i en Power BI-tabel](walkthrough-push-data-add-rows.md)  
 [Newtonsoft.Json](http://www.newtonsoft.com/json)  
-[Hent datasæt](https://msdn.microsoft.com/library/mt203567.aspx)  
+[Hent datasæt](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)  
 [Overfør data til Power BI](walkthrough-push-data.md)  
 [Oversigt over Power BI REST-API'en](overview-of-power-bi-rest-api.md)  
-[Power BI REST-API-reference](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI REST-API-reference](https://docs.microsoft.com/rest/api/power-bi/)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

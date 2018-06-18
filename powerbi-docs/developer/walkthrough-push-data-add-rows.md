@@ -9,19 +9,19 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 382d600a6e50d926fc61163ea1b0e4f1273fdcc9
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: b6fdd950b77dedf9f5180f7cbc90d40c786051c7
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34287526"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812531"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Trin 5: Føj rækker til en Power BI-tabel
 Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
 
-I **trin 4** af Overfør data til et datasæt, [Få et datasæt til at føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md) brugte du handlingen [Hent datasæt](https://msdn.microsoft.com/library/mt203567.aspx) og Newtonsoft.Json til at hente et datasæt-id. I dette trin bruger du dataset-id'et med handlingen [Tilføj rækker](https://msdn.microsoft.com/library/mt203561.aspx) for at føje rækker til et **Power BI**-datasæt. 
+I **trin 4** af Overfør data til et datasæt, [Få et datasæt til at føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md) brugte du handlingen [Hent datasæt](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) og Newtonsoft.Json til at hente et datasæt-id. På dette trin bruger du dataset-id'et med handlingen [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) for at føje rækker til et **Power BI**-datasæt. 
 
-Når du kalder handlingen [Tilføj rækker](https://msdn.microsoft.com/library/mt203561.aspx), føjer du rækker til et datasæt.
+Når du kalder handlingen [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows), føjer du rækker til et datasæt.
 
 ![](media/walkthrough-push-data-add-rows/powerbi-developer-add-rows.png)
 
@@ -308,9 +308,8 @@ Nedenfor kan du se den [komplette kodeliste](#code).
     }
 
 ## <a name="next-steps"></a>Næste trin
-[Tilføj rækker](https://msdn.microsoft.com/library/mt203561.aspx)  
 [Send data til et Power BI-dashboard](walkthrough-push-data.md)  
 [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
-[Power BI REST-API-reference](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI REST-API-reference](https://docs.microsoft.com/rest/api/power-bi/)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -1,26 +1,27 @@
 ---
-title: Brug af OAuth til at oprette forbindelse til Reporting Services
-description: Få mere at vide om, hvordan du konfigurerer dit miljø til at understøtte OAuth-godkendelse med Power BI-mobilappen for at kunne oprette forbindelse til Reporting Services 2016 eller nyere.
+title: Brug OAuth til at oprette forbindelse til Power BI-rapportserver og SSRS
+description: Få mere at vide om, hvordan du konfigurerer dit miljø til at understøtte OAuth-godkendelse med Power BI-mobilappen for at oprette forbindelse til SQL Server Reporting Services 2016 eller nyere.
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/10/2017
+ms.date: 06/07/2018
 ms.author: maghan
-ms.openlocfilehash: 4c9b2f5233ab984e57bf48978284441850c0c48f
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: ba8a0c6868e84cf9d675fff8f69a34b4befc9b61
+ms.sourcegitcommit: b7839f2aa68c3626f55ee7e49c8392169d1ec67e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34852204"
 ---
-# <a name="using-oauth-to-connect-to-reporting-services"></a>Brug af OAuth til at oprette forbindelse til Reporting Services
-Få mere at vide om, hvordan du konfigurerer dit miljø til at understøtte OAuth-godkendelse med Power BI-mobilappen for at kunne oprette forbindelse til Reporting Services 2016 eller nyere.
+# <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Brug OAuth til at oprette forbindelse til Power BI-rapportserver og SSRS
+Få mere at vide om, hvordan du konfigurerer dit miljø til at understøtte OAuth-godkendelse med Power BI-mobilappen for at oprette forbindelse til Power BI-rapportserver og SQL Server Reporting Services 2016 eller nyere.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
 
-Tidligere understøttede Power BI-mobilappen kun grundlæggende godkendelse, vha. HTTPS, af Reporting Services for at kunne vise mobilrapporter eller KPI'er. Mange organisationer tillader ikke denne type konfiguration af sikkerhedsmæssige årsager. Med en opdatering til Power BI-mobilappen kan du nu bruge OAuth til at oprette forbindelse til Reporting Services. Windows Server 2016 indeholder forbedringer til rollen Web Application Proxy for at tillade denne type godkendelse.
+Du kan bruge OAuth til at oprette forbindelse til Power BI-rapportserver og Reporting Services for at få vist mobilrapporter eller KPI'er. Windows Server 2016 indeholder forbedringer til rollen Web Application Proxy (WAP) for at tillade denne type godkendelse. Bemærk, at denne konfiguration ikke understøtter visning af Power BI-rapporter i Power BI-mobilapps. Du kan dog se dem i en browser på en mobilenhed. Hvis du vil have vist Power BI-rapporter i mobilappen, skal du bruge Windows-godkendelse.
 
 ## <a name="requirements"></a>Krav
 Windows Server 2016 er påkrævet til WAP- (Web Application Proxy) og ADFS-serverne (Active Directory Federation Services). Du behøver ikke at have et Windows 2016-domæne på funktionsniveau.
@@ -202,7 +203,8 @@ Når du har valgt **Log på**, kan du se elementerne fra Reporting Services-serv
 Du kan aktivere multifaktorgodkendelse for at aktivere yderligere sikkerhed for dit miljø. Du kan få mere at vide under [Konfigurer ADFS 2016 og Azure MFA](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/configure-ad-fs-2016-and-azure-mfa).
 
 ## <a name="troubleshooting"></a>Fejlfinding
-**Du får vist fejlen Det lykkedes ikke at logge på SSRS-serveren. Kontrollér serverkonfigurationen.**
+
+### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-please-verify-server-configuration"></a>Du får vist fejlen Det lykkedes ikke at logge på SSRS-serveren. Kontrollér serverkonfigurationen.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 

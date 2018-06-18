@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: bd0565420382fc22af67b1363b41f6d8ed6e92ab
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 6147f41ea99ad4a0416f6aa9c01288102f792771
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290746"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812922"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Tilgængelighed i Power BI Desktop-rapporter
 **Power BI Desktop** indeholder funktioner, der gør det nemmere for personer med et handicap at bruge og interagere med **Power BI Desktop**-rapporter. Funktionerne omfatter muligheden for at bruge en rapport ved hjælp tastaturet eller en skærmlæser, bruge tabulatortasten til at sætte fokus på forskellige objekter på en side og bruge markører i visualiseringer.
@@ -66,6 +66,23 @@ Følgende tip kan hjælpe dig med at oprette **Power BI Desktop**-rapporter med 
 * Kontrollér, at der er tilstrækkelig kontrast mellem teksten og eventuelle baggrundsfarver i dine rapporter.
 * Brug tekststørrelser og skrifttyper, der er nemme at læse. En lille tekststørrelse eller skrifttyper, der kan være vanskelige at læse, hjælper ikke i forbindelse med tilgængelighed.
 * Medtag en titel, akseetiketter og datanavne i alle visuelle elementer.
+
+## <a name="high-contrast-support-for-reports"></a>Understøttelse af stor kontrast i rapporter
+
+Når du bruger stor kontrast i Windows, anvendes disse indstillinger og den valgte farvepalet også i rapporter i **Power BI Desktop**. 
+
+![Indstillinger for stor kontrast](media/desktop-accessibility/accessibility_05.png)
+
+**Power BI Desktop** registrerer automatisk, hvilket tema med stor kontrast der bruges i Windows, og indstillingerne anvendes i dine rapporter. Farverne med høj kontrast vil også følge rapporten, når den publiceres på Power BI-tjenesten eller andre steder.
+
+![Indstillinger for stor kontrast](media/desktop-accessibility/accessibility_05b.png)
+
+Power BI-tjenesten forsøger også at registrere de indstillinger for stor kontrast, der er valgt i Windows, men hvor effektiv og nøjagtig registreringen er, afhænger af den browser, er bruges med Power BI-tjenesten. Hvis du vil angive temaet manuelt i Power BI-tjenesten, kan du vælge **Vis > Farver med høj kontrast** og derefter vælge det tema, du vil bruge i rapporten.
+
+![Indstillinger for stor kontrast i Power BI-tjenesten](media/desktop-accessibility/accessibility_06.png)
+
+Når du er i **Power BI Desktop** vil du sikkert bemærke, at nogle områder som **Visualiseringer** og **Felter** ikke anvender farveskemaerne med stor kontrast i Windows.
+
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 Der er et par kendte problemer og begrænsninger i forbindelse med tilgængelighedsfunktioner, hvilket er beskrevet på følgende liste:

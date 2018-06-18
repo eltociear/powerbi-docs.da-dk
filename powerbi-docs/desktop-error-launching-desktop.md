@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 99ee9e87584202420239658a3522ad82cb383227
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: bdf3791d74510b1630bc13c279ed0cd5ebddc3ec
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34286537"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813451"
 ---
 # <a name="resolve-issues-when-power-bi-desktop-will-not-launch"></a>Løs problemer, når Power BI Desktop ikke vil starte
 I **Power BI Desktop** kan brugere, der har installeret og kører tidligere versioner af **Power BI datagatewayen i det lokale miljø**, blive blokeret, så de ikke kan starte Power BI Desktop. Det skyldes administrative politikbegrænsninger, som Power BI gatewayen i det lokale miljø har angivet for navngivne pipes på den lokale computer. 
@@ -33,6 +33,13 @@ Hvis du ikke længere har brug for Power BI datagatewayen i det lokale miljø, k
 Du kan også starte Power BI Desktop som administrator, hvilket også gør det muligt for Power BI Desktop at starte. Det anbefales stadig, at du installerer den nyeste version af Power BI datagatewayen i det lokale miljø, som beskrevet tidligere i denne artikel.
 
 Det er vigtigt at bemærke, at Power BI Desktop er udviklet som en arkitektur til flere processer, og flere af disse processer kommunikerer ved hjælp af navngivne Windows-pipes. Der kan være andre processer, som er i konflikt med disse navngivne pipes. Den mest almindelige årsag til denne konflikt er sikkerhed, herunder situationer, hvor antivirussoftware eller firewalls kan blokere pipes eller omdirigere trafik til en bestemt port. Du kan muligvis løse problemet ved at starte Power BI Desktop med administratorrettigheder. Hvis det ikke er muligt at starte med administratorrettigheder, kan du kontakte din administrator for at finde ud af, hvilke sikkerhedsregler der anvendes, som forhindrer kommunikation fra navngivne pipes, og whiteliste Power BI Desktop og de respektive underprocesser.
+
+## <a name="resolve-issues-when-connecting-to-sql-server"></a>Løs problemer, når der oprettes forbindelse til SQL Server
+Hvis der vises en fejlmeddelelse, der svarer til følgende, når du opretter forbindelse til en SQL Server-database, kan du ofte løse problemet ved at starte **Power BI Desktop** som administrator, og opret derefter SQL Server-forbindelse:
+
+    "An error happened while reading data from the provider: 'Could not load file or assembly 'System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=xxxxxxxxxxxxx' or one of its dependencies. Either a required impersonation level was not provided, or the provided impersonation level is invalid. (Exception from HRESULT: 0x80070542)'"
+
+Når du starter som administrator og opretter forbindelse, registreres de påkrævede DLL'er korrekt. Herefter er det ikke nødvendigt at starte Power BI Desktop som administrator.
 
 ## <a name="help-with-other-issues-when-launching-power-bi-desktop"></a>Hjælp til andre problemer, når du starter Power BI Desktop
 Vi bestræber os på at dække så mange af de problemer, der kan opstå i forbindelse med **Power BI Desktop**, som muligt. Vi kigger jævnligt på problemer, der kan påvirke mange kunder, og inkluderer dem i vores artikler.

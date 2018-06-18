@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/05/2017
 ms.author: maghan
-ms.openlocfilehash: 76d07c8384123a303c8801a45ecd05b9e6ed0321
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 96b29c9dc6c384b663ef375d4968dedb011bd05d
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34289458"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813106"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Overfør data til et Power BI-datasæt
 Med Power BI-API'en kan du overføre data til et Power BI-datasæt. Et eksempel kunne f.eks. være, at du vil forlænge en eksisterende forretningsarbejdsproces for at overføre vigtige data til dit datasæt. I dette tilfælde vil du overføre et salg og marketing-datasæt, som indeholder en varetabel, til et andet datasæt.
@@ -31,14 +31,14 @@ Før du begynder at overføre data til et datasæt, skal du have en Azure AD- (A
 Det næste afsnit er en generel beskrivelse af de handlinger i Power BI-API'en, der overfører data.
 
 ## <a name="power-bi-api-operations-to-push-data"></a>Handlinger i Power BI-API'en til overførsel af data
-Med Power BI REST API'en kan du overføre datakilder til Power BI. Når en app føjer rækker til et datasæt, opdateres felterne i dashboardet automatisk med de opdaterede data. Hvis du vil overføre data, skal du bruge handlingen [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) sammen med handlingen [Add Rows](https://msdn.microsoft.com/library/mt203561.aspx). Hvis du vil finde et datasæt, skal du bruge handlingen [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx). Du kan overføre et gruppe-id for alle disse handlinger, hvis du vil arbejde med en gruppe. Brug handlingen [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx) for at få vist en oversigt over alle gruppe-id'er.
+Med Power BI REST API'en kan du overføre datakilder til Power BI. Når en app føjer rækker til et datasæt, opdateres felterne i dashboardet automatisk med de opdaterede data. Hvis du vil overføre data, skal du bruge handlingen [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) sammen med handlingen [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows). Hvis du vil finde et datasæt, skal du bruge handlingen [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets). Du kan overføre et gruppe-id for alle disse handlinger, hvis du vil arbejde med en gruppe. Brug handlingen [Get Groups](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) for at få vist en oversigt over alle gruppe-id'er.
 
 Her er de handlinger, du skal bruge for at overføre data til et datasæt:
 
-* [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)
-* [Hent datasæt](https://msdn.microsoft.com/library/mt203567.aspx)
-* [Tilføj rækker](https://msdn.microsoft.com/library/mt203561.aspx)
-* [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx)
+* [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset)
+* [Hent datasæt](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)
+* [Post Rows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows)
+* [Hent grupper](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups)
 
 Du kan oprette et datasæt i Power BI ved at overføre en JSON-streng (JavaScript Object Notation) til Power BI-tjenesten. Hvis du vil have mere at vide om JSON, skal du se [Om JSON](http://json.org/).
 
@@ -113,10 +113,6 @@ For at komme i gang med at overføre data til et datasæt skal du se [Trin 1: Re
 
 ## <a name="next-steps"></a>Næste trin
 [Tilmeld dig Power BI](create-an-azure-active-directory-tenant.md)  
-[Opret datasæt](https://msdn.microsoft.com/library/mt203562.aspx)  
-[Hent datasæt](https://msdn.microsoft.com/library/mt203567.aspx)  
-[Tilføj rækker](https://msdn.microsoft.com/library/mt203561.aspx)  
-[Hent grupper](https://msdn.microsoft.com/library/mt243842.aspx)  
 [Introduktion til JSON](http://json.org/)  
 [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

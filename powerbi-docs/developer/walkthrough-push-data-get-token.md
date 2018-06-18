@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 640c6dac9a896cff55bddad46ceef8bce7ccae14
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 238d068e5083c8f46ac3299faddd4e0872f0654d
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34289366"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812623"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Trin 2: Hent et adgangstoken til godkendelse
 Denne artikel er en trinvis gennemgang af, hvordan du kan [pushe data til et datasæt](walkthrough-push-data.md).
@@ -104,7 +104,7 @@ Tilføj denne kode i Program {...}.
        #endregion
 ```
 
-Når du har hentet et godkendelsestoken, kan du kalde enhver Power BI-handling. På næste trin kan du se, hvordan du kalder handlingen [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx) for at oprette et datasæt, der kan pushe dataene til et dashboard.
+Når du har hentet et godkendelsestoken, kan du kalde enhver Power BI-handling. På næste trin kan du se, hvordan du kalder handlingen [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) for at oprette et datasæt, der kan sende data til et dashboard.
 
 På næste trin kan du se, hvordan du [opretter et datasæt i Power BI](walkthrough-push-data-create-dataset.md).
 
@@ -181,6 +181,6 @@ Herunder kan du se den [komplette kode](#code).
 [Azure AD-godkendelsesbibliotek til .NET NuGet-pakke](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
 [Push data til et Power BI-datasæt](walkthrough-push-data.md)  
 [Oversigt over Power BI REST-API'en](overview-of-power-bi-rest-api.md)  
-[Power BI REST-API-reference](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI REST-API-reference](https://docs.microsoft.com/rest/api/power-bi/)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

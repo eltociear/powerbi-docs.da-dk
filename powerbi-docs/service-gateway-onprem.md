@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/26/2018
+ms.date: 06/05/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4eb9f8e0b8548fbecd4e5d2e2fd47c4c3acd2bd6
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c91e257d79e9d16fa5a7a58b696d58aefaaaaf92
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722810"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34812807"
 ---
 # <a name="on-premises-data-gateway"></a>Datagateway i det lokale miljø
 
@@ -47,7 +47,9 @@ Du kan bruge en liveforbindelse til tabellariske eller flerdimensionelle forekom
 [!INCLUDE [gateway-onprem-datasources-include](./includes/gateway-onprem-datasources-include.md)]
 
 ## <a name="download-and-install-the-on-premises-data-gateway"></a>Download og installér datagatewayen i det lokale miljø
-Hvis du vil downloade gatewayen, skal du vælge **Datagateway** i menuen Downloads. Download [datagatewayen i det lokale miljø](http://go.microsoft.com/fwlink/?LinkID=820925).
+Hvis du vil downloade gatewayen, skal du vælge **Datagateway** i menuen Downloads. Download [datagatewayen i det lokale miljø](http://go.microsoft.com/fwlink/?LinkID=820925). 
+
+Bemærk, at du kan opdatere datagatewayen i det lokale miljø ved at geninstallere gatewayen som beskrevet i dette afsnit. Når du opdaterer gatewayen (ved at geninstallere), bevares dine indstillinger for gatewayen.
 
 ![](media/service-gateway-onprem/powerbi-download-data-gateway.png)
 
@@ -56,9 +58,8 @@ Hvis du vil downloade gatewayen, skal du vælge **Datagateway** i menuen Downloa
 
 ## <a name="install-the-gateway-in-personal-mode"></a>Installér gatewayen i personlig tilstand
 > [!NOTE]
-> Personal fungerer kun med Power BI.
-> 
-> 
+> Den personlige version af gatewayen kan kun bruges med Power BI.
+
 
 Når den personlige gateway er installeret, skal du starte **guiden Konfiguration af Power BI Gateway – Personal**.
 

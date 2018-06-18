@@ -7,13 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/12/2018
+ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 6824436af46caaa78d5ae23d1e1047f27bd30bba
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: cb84cb2f4242cb120f187c27bb1b1675177c33a2
+ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34813037"
 ---
 # <a name="embed-your-power-bi-dashboards-reports-and-tiles"></a>Integrer dine Power BI-dashboards, -rapporter og -felter
 
@@ -21,9 +22,9 @@ Få mere at vide om, hvordan du integrerer Power BI-indhold i din app.
 
 Microsoft [annoncerede Power BI Premium](https://powerbi.microsoft.com/blog/microsoft-accelerates-modern-bi-adoption-with-power-bi-premium/), en ny kapacitetsbaseret licensmodel, der giver øget fleksibilitet i forhold til den måde, brugerne får adgang til, deler og distribuerer indhold. Den nye model giver også øget skalerbarhed og ydeevne til Power BI-tjenesten. Power BI Embedded blev også annonceret. Det giver mulighed for at oprette kapacitet i Microsoft Azure. Power BI Embedded fokuserer på din app og dine kunder. 
 
-Denne artikel gennemgår, hvordan du integrerer dit Power BI-indhold for både din organisation og dine kunder. Fremgangsmåden for de to scenarier er ens. Du får besked, hvis et trin kun gælder integration for kunder.
+Denne artikel gennemgår, hvordan du integrerer dit Power BI-indhold for både din organisation og dine kunder. Fremgangsmåden for de to scenarier er ens. Det vises, hvis et trin kun gælder integration for kunder.
 
-Der er nogle opgaver, du skal udføre i din app, før du kan integrere for dine kunder. Vi vil gennemgå de trin, der er nødvendige for, at du kan oprette og bruge integreret indhold i din app.
+Der er nogle opgaver, du skal udføre i din app, før du kan integrere for dine kunder. Vi gennemgår de trin, der er nødvendige for, at du kan oprette og bruge integreret indhold i din app.
 
 > [!NOTE]
 > Power BI-API'erne refererer stadig til apparbejdsområder som grupper. Alle referencer til grupper betyder, at du arbejder med apparbejdsområder.
@@ -34,14 +35,21 @@ Før du begynder at integrere dashboards og rapporter i din app, skal du sikre d
 
 * [Kontrollér, at du har en Azure Active Directory-lejer](embedding-content.md#azureadtenant)
 * [Opret en Power BI Pro-konto](embedding-content.md#proaccount)
-* [Registrer din Azure Active Directory-app og dine tilladelser](embedding-content.md#appreg)
+
+Du kan gennemgå [Onboarding lbudExperience Tool](https://aka.ms/embedsetup) for hurtigt at komme i gang og downloade en eksempelapp.
+
+Vælg den løsning, der er den rette for dig:
+* Med [Embedding for your customers](embedding.md#embedding-for-your-customers) kan du integrere dashboards og rapporter for de brugere, der ikke har en konto til Power BI. Kør løsningen [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData).
+* Med [Embedding for your organization](embedding.md#embedding-for-your-organization) kan du udvide Power BI-tjenesten. Kør løsningen [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData).
+
+Hvis du vælger at konfigurere miljøet manuelt, kan du dog fortsætte nedenfor. 
 
 > [!NOTE]
-> Power BI-kapacitet er ikke påkrævet, for at du kan udvikle din app. Udviklerne af appen skal have en Power BI Pro-licens.
+> Dedikeret kapacitet er ikke påkrævet, for at du kan udvikle din app. Udviklerne af appen skal have en Power BI Pro-licens.
 
 ### <a name="azureadtenant"></a>Azure Active Directory-lejer
 
-Du skal bruge en Azure Active Directory-lejer for at integrere elementer fra Power BI. Denne lejer skal have mindst én Power BI Pro-bruger. Du skal også definere en Azure AD-app i lejeren. Du kan bruge en eksisterende Azure AD-lejer eller oprette en ny specielt til integreringsformål.
+Du skal bruge en Azure Active Directory-lejer (Azure AD) for at integrere elementer fra Power BI. Denne lejer skal have mindst én Power BI Pro-bruger. Du skal også definere en Azure AD-app i lejeren. Du kan bruge en eksisterende Azure AD-lejer eller oprette en ny specielt til integreringsformål.
 
 Du skal afgøre, hvilken lejerkonfiguration der skal bruges, hvis du integrerer for dine kunder.
 
@@ -61,13 +69,13 @@ Følgende konti skal være oprettet i din lejer og have en Power BI Pro-licens, 
 
 Det anbefales, at den globale administratorbruger til organisationen og lejeren ikke bruges som den konto, appen bruger, hvis du integrerer for kunder. Det er med til at begrænse den adgang, som appkontoen har i lejeren. Det anbefales, at administratorbrugeren er administrator af alle de apparbejdsområder, der oprettes til integreringsformål.
 
-#### <a name="accounts-for-analysts-that-will-create-content"></a>Konti for analytikere, der opretter indhold
+#### <a name="accounts-for-analysts-that-create-content"></a>Konti for analytikere, der opretter indhold
 
 Du kan have flere brugere, som opretter indhold til Power BI. Du skal have en Power BI Pro-konto til hver enkelt analytiker, der opretter og udruller indhold til Power BI.
 
 #### <a name="an-application-master-user-account-for-embedding-for-your-customers"></a>En *apphovedbrugerkonto* til integration for dine kunder
 
-Hovedkontoen er den konto, som bruges i din app, når du integrerer indhold for dine kunder. Scenariet er typisk for ISV-apps. Hovedkontoen er faktisk den eneste påkrævede konto, du skal bruge i din organisation. Det kan også bruges som administrator- og analytikerkonto, men det anbefales ikke. Legitimationsoplysningerne til denne konto gemmes i appens backend og bruges til at hente et godkendelsestoken til Azure AD, som skal bruges med Power BI-API'erne. Kontoen bruges til at generere et integreringstoken i appen til dine kunder.
+Hovedkontoen er den konto, som bruges i din app, når du integrerer indhold for dine kunder. Scenariet er typisk for ISV-apps. Hovedkontoen er den eneste påkrævede konto, du skal bruge i din organisation. Det kan også bruges som administrator- og analytikerkonto, men det anbefales ikke. Legitimationsoplysningerne til denne konto gemmes i appens backend og bruges til at hente et godkendelsestoken til Azure AD, som skal bruges med Power BI-API'erne. Denne konto genererer et integreringstoken til appen, som du kan bruge til dine kunder.
 
 Hovedkontoen er blot en almindelig bruger med en Power BI Pro-licens, som du bruger i appen. Kontoen skal være administrator af det apparbejdsområde, der bruges til at integrere.
 
@@ -105,7 +113,7 @@ Hvis du **integrerer for dine kunder**, hvilket er typisk for ISV'er, skal du se
 
 * [Integrer et dashboard, et felt eller en rapport i din app](embed-sample-for-customers.md)
 
-Når du integrerer for dine kunder, skal du bruge et integreringstoken. Du kan få mere at vide under [Opret et token](https://msdn.microsoft.com/library/mt784614.aspx).
+Når du integrerer for dine kunder, skal du bruge et integreringstoken. Du kan få flere oplysninger i [Integreringstoken](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 ## <a name="step-3-promote-your-solution-to-production"></a>Trin 3: Gør din løsning produktionsklar
 
@@ -115,7 +123,7 @@ Det kræver nogle ekstra trin at gøre din løsning produktionsklar.
 
 Hvis du integrerer for din organisation, behøver du blot at fortælle de andre, hvordan de henter appen. 
 
-Gratis brugere kan bruge det indhold, der er integreret fra et apparbejdsområde (gruppe), hvis arbejdsområdet har kapaciteten til det. Angiv den gratis bruger som medlem af apparbejdsområdet (gruppen). Hvis du ikke gør det, får du en 401-fejl om uautoriseret adgang. I tabellen nedenfor kan du se en oversigt over de Power BI Premium-SKU'er, der er tilgængelige i Office 365.
+Gratis brugere kan bruge det indhold, der er integreret fra et apparbejdsområde (gruppe), hvis arbejdsområdet har dedikeret kapacitet. Angiv den gratis bruger som medlem af apparbejdsområdet (gruppen). Hvis du ikke gør det, får du en 401-fejl om uautoriseret adgang. I tabellen nedenfor kan du se en oversigt over de Power BI Premium-SKU'er, der er tilgængelige i Office 365.
 
 | Kapacitetsnode | Kerner i alt<br/>*(Backend + frontend)* | Backendkerner | Frontendkerner | Grænser for DirectQuery/liveforbindelser | Maks. antal sidegengivelser i spidstimen |
 | --- | --- | --- | --- | --- | --- |
@@ -127,6 +135,10 @@ Gratis brugere kan bruge det indhold, der er integreret fra et apparbejdsområde
 > [!NOTE]
 > Du skal være en global administrator eller faktureringsadministrator i din lejer for at kunne købe Power BI Premium. Hvis du vil have mere at vide om, hvordan du køber Power BI Premium, skal du se [Sådan køber du Power BI Premium](../service-admin-premium-purchase.md).
 
+>[!Note]
+>[Konfigurer dit integrerede analyseudviklingsmiljø for din organisation.](#step-1-setup-your-embedded-analytics-development-environment)
+>
+
 ### <a name="embedding-for-your-customers"></a>Integrer for dine kunder
 
 Hvis du integrerer for dine kunder, skal du gøre følgende.
@@ -135,7 +147,7 @@ Hvis du integrerer for dine kunder, skal du gøre følgende.
 * Køb den kapacitet, der opfylder dine behov. Du kan bruge tabellen nedenfor til at få overblik over, hvor meget kapacitet du skal bruge til Power BI Embedded. Du kan finde flere oplysninger i [Hvidbogen om planlægning af analysekapacitet til Embedded](https://aka.ms/pbiewhitepaper). Når du er klar til at købe, kan du gøre det på [Microsoft Azure-portalen](https://portal.azure.com). Du kan finde flere oplysninger om, hvordan du opretter kapacitet til Power BI Embedded, under [Opret kapacitet til Power BI Embedded på Azure-portalen](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 
 > [!IMPORTANT]
-> Da integrerede tokens kun er beregnet til udviklingstest, er antallet af integrerede tokens, der kan genereres fra en Power BI-masterkonto, begrænset. Der [skal købes en kapacitet](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) til integrerede produktionsscenarier. Der er ingen grænse for generering af integrerede tokens, når der er købt en kapacitet. Gå til [Hent tilgængelige funktioner](https://msdn.microsoft.com/en-us/library/mt846473.aspx) for at undersøge, hvor mange gratis integrerede tokens der er blevet brugt.
+> Da integrerede tokens kun er beregnet til udviklingstest, er antallet af integrerede tokens, der kan genereres fra en Power BI-hovedkonto, begrænset. Der [skal købes en kapacitet](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) til integrerede produktionsscenarier. Der er ingen grænse for generering af integrerede tokens, når der er købt dedikeret kapacitet. Gå til [Tilgængelige funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures) for at undersøge, hvor mange gratis integrerede tokens der er blevet brugt.
 
 | Kapacitetsnode | Kerner i alt<br/>*(Backend + frontend)* | Backendkerner | Frontendkerner | Grænser for DirectQuery/liveforbindelser | Maks. antal sidegengivelser i spidstimen |
 | --- | --- | --- | --- | --- | --- |
@@ -146,13 +158,15 @@ Hvis du integrerer for dine kunder, skal du gøre følgende.
 | A5 |16 v-kerner |8 kerner, 50 GB RAM |8 kerner |60 pr. sekund |2.401-4.800 |
 | A6 |32 v-kerner |16 kerner, 100 GB RAM |16 kerner |120 pr. sekund |4.801-9600 |
 
-* Rediger apparbejdsområdet, og tildel det til en kapacitet under Avanceret.
+* Rediger apparbejdsområdet, og tildel det til en dedikeret kapacitet under Avanceret.
 
     ![Tildel et apparbejdsområde til en kapacitet](media/embedding-content/powerbi-embedded-premium-capacity.png)
 
 * Udrul den opdaterede app til produktion, og begynd at integrere dine Power BI-dashboards og -rapporter.
 
-
+>[!Note]
+>[Konfigurer dit integrerede analyseudviklingsmiljø for dine kunder.](#step-1-setup-your-embedded-analytics-development-environment) 
+>
 
 ## <a name="admin-settings"></a>Administratorindstillinger
 
@@ -171,4 +185,3 @@ Globale administratorer, eller Power BI-tjenesteadministratorer, kan slå muligh
 [Hvidbog om Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
 Flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-
