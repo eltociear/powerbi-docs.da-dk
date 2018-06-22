@@ -72,7 +72,7 @@ Lad os undersøge nyansættelser først.
 
 Bemærk følgende:
 
-* Kombinationsdiagrammet **Antal nyansættelser, nyansættelser i samme periode sidste år og aktive ÅfÅ % Ændring efter måned** viser, at vi har ansat flere personer hver måned i år sammenlignet med sidste år & #151; væsentligt flere personer i nogle måneder.
+* Kombinationsdiagrammet **Antal nyansættelser, nyansættelser i samme periode sidste år og aktive ÅfÅ % Ændring efter måned** viser, at vi har ansat flere personer hver måned i år sammenlignet med sidste år &#151; væsentligt flere personer i nogle måneder.
 * I kombinationsdiagrammet **Antal nyansættelser og antal aktive medarbejdere efter område og etnicitet**, bemærk, at vi ansætter færre personer i området **Øst**.
 * Vandfaldsdiagrammet **Nyansættelser ÅfÅ var efter aldersgruppe** viser, at vi hovedsageligt ansætter yngre personer. Dette kan skyldes, at jobbene hovedsageligt er deltidsjob.
 * Cirkeldiagrammet **Antal nyansættelser efter køn** viser en ret ligelig fordeling.
