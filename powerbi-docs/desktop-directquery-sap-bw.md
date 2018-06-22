@@ -15,6 +15,7 @@ ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34288561"
 ---
 # <a name="directquery-and-sap-business-warehouse-bw"></a>DirectQuery og SAP Business Warehouse (BW)
 Du kan oprette forbindelse til **SAP Business Warehouse (BW)**-datakilder direkte ved hjælp af **DirectQuery**. Da der arbejdes med OLAP/flere dimensioner i SAP BW, er der mange vigtige forskelle mellem DirectQuery via SAP BW og relationskilder som SQL Server. Disse forskelle kan opsummeres på følgende måde:

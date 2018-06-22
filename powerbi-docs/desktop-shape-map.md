@@ -15,6 +15,7 @@ ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34290953"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Figurkort i Power BI Desktop (prøveversion)
 I Power BI Desktop kan du oprette visualiseringen **Figurkort** for at vise relative sammenligninger mellem områder på et kort ved at anvende forskellige farver for forskellige områder. I modsætning til visualiseringen **Kort** kan **Figurkort** ikke vise nøjagtige geografiske lokationer med datapunkter på et kort. I stedet er det primære formål at vise relative sammenligninger af områder på et kort ved at farvelægge dem forskelligt.

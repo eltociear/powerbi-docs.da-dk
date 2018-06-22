@@ -15,6 +15,7 @@ ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34291897"
 ---
 # <a name="using-organization-custom-visuals-in-power-bi"></a>Brug af brugerdefinerede visualiseringer til virksomheder i Power BI
 
