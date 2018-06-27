@@ -11,17 +11,17 @@ ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
 ms.openlocfilehash: c47722fda28fc45289858f082a0838f583b53dbb
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34296774"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Sammenlign Power BI-rapportserveren med Power BI-tjenesten
 
 Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigtige forskelle. I denne tabel forklares det, hvad der er hvad.
 
-| Funktioner | Power BI Report Server | Power BI Service | Noter
+| Funktioner | Power BI-rapportserver | Power BI-tjeneste | Noter
 |---------|---------|---------|---------|
 | Installation | I det lokale miljø eller i hostet cloud | Cloud | Power BI-rapportserveren kan installeres i Azure VM'er (hostet cloud), hvis det er givet i licens via Power BI Premium
 | Kildedata | Cloud og/eller i det lokale miljø | Cloud og/eller i det lokale miljø |  

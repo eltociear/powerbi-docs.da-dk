@@ -11,10 +11,10 @@ ms.date: 03/07/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 3b0bf5e54ad6486134eb641d276fc9233b001157
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34249703"
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>Opret en QR-kode for et felt i Power BI, som skal bruges i mobilappsene
@@ -25,7 +25,7 @@ Du kan oprette en QR-kode i Power BI-tjenesten for felter i et hvilket som helst
 De kollegaer, du har delt dashboardet med, kan [scanne QR-koden for at få adgang til feltet direkte fra deres mobilenheder](mobile-apps-qr-code.md). De kan bruge enten den QR-kodescanner, der findes i Power BI-appen, eller andre QR-scannere, der er installeret på deres enheder.
 
 
-## <a name="create-a-qr-code-for-a-tile"></a>Opret en QR-kode for et felt
+## <a name="create-a-qr-code-for-a-tile"></a>Opret en QR-kode til et felt
 1. Åbn et dashboard i Power BI-tjenesten.
 2. Vælg ellipsen (...) i øverste højre hjørne af feltet, og vælg **Fokustilstand** ![](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
 3. Vælg ellipsen (...) i øverste højre hjørne, og vælg **Generér QR-kode**. 

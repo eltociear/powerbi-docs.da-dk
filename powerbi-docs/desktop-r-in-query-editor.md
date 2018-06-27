@@ -11,10 +11,10 @@ ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 091f17e89bd4fb9658e777f63ac2017239e32b71
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34287319"
 ---
 # <a name="using-r-in-query-editor"></a>Brug af R i forespørgselseditoren
@@ -23,7 +23,7 @@ Du kan bruge **R**, som er et programmeringssprog, der bruges af statistikere, d
 ## <a name="installing-r"></a>Installation af R
 Hvis du vil bruge **R** i Power BI Desktops **forespørgselseditor**, skal du installere **R** på din lokale maskine. Du kan downloade og installere **R** gratis fra mange forskellige steder, herunder [downloadsiden for Revolution Open](https://mran.revolutionanalytics.com/download/) og [CRAN Repository](https://cran.r-project.org/bin/windows/base/).
 
-## <a name="using-r-in-query-editor"></a>Brug af R i forespørgselseditoren
+## <a name="using-r-in-query-editor"></a>Brug af R i Forespørgselseditor
 Du kan se, hvordan du bruger **R** i **Forespørgselseditor** ved at kigge på et eksempel fra et aktiemarkeds datasæt, der er baseret på en CSV-fil, som du kan [downloade herfra](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv), og derefter følge med. Fremgangsmåden i dette eksempel er følgende:
 
 1. Først skal du indlæse data i **Power BI Desktop**. I dette eksempel skal du indlæse filen *EuStockMarkets_NA.csv* og vælge **Hent data > CSV** på båndet **Hjem** i **Power BI Desktop**.

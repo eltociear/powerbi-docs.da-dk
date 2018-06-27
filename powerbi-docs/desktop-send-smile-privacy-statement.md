@@ -11,13 +11,13 @@ ms.date: 03/06/2018
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: ff42531dbff46dd95c92832c6aee2d341eb3d93f
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34288216"
 ---
-# <a name="power-bi-desktop-send-a-smile-privacy-statement"></a>Erklæring om beskyttelse af personlige oplysninger for Send en smiley i Power BI Desktop
+# <a name="power-bi-desktop-send-a-smile-privacy-statement"></a>Erklæring om beskyttelse af personlige oplysninger for Send a Smile i Power BI Desktop
 
 Fra og med marts 2018-versionen af **Power BI Desktop** gøres der brug af platformen Windows Fejlrapportering i forbindelse med fejlrapportering i stedet for funktionaliteten *Send en smiley* eller *Send en sur smiley*. Du kan finde flere oplysninger om platformen Windows Fejlrapportering på [bloggen om beskyttelse af personlige oplysninger i Windows](https://blogs.windows.com/windowsexperience/2018/01/24/microsoft-introduces-new-privacy-tools-ahead-of-data-privacy-day/). 
 

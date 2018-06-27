@@ -11,10 +11,10 @@ ms.date: 04/18/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
 ms.openlocfilehash: 936e794b187366e91cf550c16379216ddf1fbf36
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
+ms.lasthandoff: 06/26/2018
 ms.locfileid: "34298544"
 ---
 # <a name="install-a-gateway-for-power-bi"></a>Installér en gateway til Power BI
@@ -30,7 +30,7 @@ Gatewayen kører på den computer, hvor du installerer den, så sørg for at ins
 
 1. I øverste højre hjørne i Power BI-tjenesten skal du vælge **ikonet Download** ![ikonet Download](media/service-gateway-install/icon-download.png) > **Datagateway**.
 
-    ![Datagateway](media/service-gateway-install/data-gateway.png)
+    ![Data Gateway](media/service-gateway-install/data-gateway.png)
 
 2. På downloadsiden skal du vælge knappen **DOWNLOAD GATEWAY**.
 
@@ -48,7 +48,7 @@ Gatewayen kører på den computer, hvor du installerer den, så sørg for at ins
 
 6. Angiv den konto, du bruger til at logge på Power BI > **Log på**.
 
-    ![Mailadresse](media/service-gateway-install/email-address.png)
+    ![E-mailadresse](media/service-gateway-install/email-address.png)
 
     Gatewayen er knyttet til din Power BI-konto, og du kan administrere gateways fra Power BI-tjenesten. Du er nu logget på din konto.
 
