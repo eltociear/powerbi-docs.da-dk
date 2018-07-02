@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 280b76bd7a950f9f66834b4707c1144485008a3c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: adb5d744a8eb99fce056a07ddb97b6cd7a82a8b4
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34250579"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36964854"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Fejlfinding i Cortana til Power BI
 Denne artikel er en del af en serie. Hvis du ikke allerede har gjort det, anbefaler vi, at du læser de følgende tre artikler.
@@ -30,7 +30,7 @@ Denne artikel er en del af en serie. Hvis du ikke allerede har gjort det, anbefa
 Hvis du stadig har problemer med at integrere Cortana i Power BI, er du kommet til det rette sted. Benyt følgende fremgangsmåde til at diagnosticere og løse problemet.
 
 ## <a name="why-doesnt-cortana-find-answers-from-my-power-bi-reports-or-dashboards"></a>Hvorfor kan Cortana ikke finde svar fra mine Power BI-rapporter eller -dashboards?
-1. Har du en Power BI-konto?  Hvis ikke, så [tilmeld dig gratis](service-self-service-signup-for-power-bi.md).
+1. Har du en Power BI-konto?  Hvis ikke, så kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/get-started/).
 2. Fungerer Cortana?  Kan du se Cortana-ikonet på proceslinjen?
 
     ![](media/service-cortana-troubleshoot/power-bi-cortana-icon.png)
