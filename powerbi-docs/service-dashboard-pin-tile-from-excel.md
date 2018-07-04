@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 6cdcff66d48ede031a635e44e3a40af4e321c0c5
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 90f32e96a6e2c7777c5d1535314e2c85989e1932
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34584064"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599588"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fastgør et felt til et Power BI-dashboard fra Excel
 Før du kan fastgøre et felt fra din Excel-projektmappe, skal du oprette forbindelse mellem denne projektmappe og Power BI-tjenesten (app.powerbi.com). Når der oprettes forbindelse til en projektmappe, overføres der grundlæggende set en sammenkædet skrivebeskyttet version af denne projektmappe til Power BI-tjenesten, så du kan fastgøre intervaller til dashboards. Du kan endda fastgøre et helt regneark til et dashboard.  
@@ -60,7 +60,7 @@ Du kan ikke redigere din projektmappe i Power BI. Men hvis du har brug for at fo
    * Eksisterende dashboard: Vælg navnet på dashboardet på rullelisten.
    * Nyt dashboard: Skriv navnet på det nye dashboard.
    
-    ![Dialogboksen Fastgør til dashboard](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
+     ![Dialogboksen Fastgør til dashboard](media/service-dashboard-pin-tile-from-excel/pbi_dashdialog1.png)
 4. Vælg **Fastgør**. En meddelelse om fuldførelse (næsten helt oppe i højre hjørne) giver dig besked om, at området er blevet føjet til dit dashboard som et felt. 
    
     ![Fastgjort til dashboarddialogboks](media/service-dashboard-pin-tile-from-excel/power-bi-go-to-dashboard.png)

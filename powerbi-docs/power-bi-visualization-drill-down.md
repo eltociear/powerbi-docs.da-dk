@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f0ac0ca1bd03f06e2b7679ab4afc1b9193286f5b
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: dbe98d69ce800ef57e6def59003dce56b7be56cd
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34584202"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600914"
 ---
 # <a name="drill-mode-in-a-visualization-in-power-bi"></a>Analysetilstand i en visualisering i Power BI
 
@@ -179,11 +179,11 @@ I dette eksempel skal du følge med vha. [eksemplet på detailhandelsanalyse](sa
 
 Selvom datafeltet Akse er **Måned**, opretter det stadigt en kategori af typen **År** i brønden **Akse**. Det er fordi, Power BI giver den komplette DateTime-struktur for alle de værdier, der læses. Øverst i hierarkiet vises årets data.
 
-![](media\power-bi-visualization-drill-down/power-bi-hierarchical-axis-datetime-1.png)
+![](media/power-bi-visualization-drill-down/power-bi-hierarchical-axis-datetime-1.png)
 
 Når tilstanden Analysér ned er slået til, skal du klikke på søjlen i diagrammet for at gå ét niveau ned i hierarkiet. Du får vist tre søjler med dataene for de tilgængelige kvartaler. Derefter skal du vælge **Udvid alle ét niveau ned i hierarkiet** i ikonerne øverst til venstre. Derefter skal du gøre det samme igen for at få vist hierarkiets nederste niveau, der viser resultater for hver enkelt måned.
 
-![](media\power-bi-visualization-drill-down/power-bi-hierarchical-axis-datetime-2.png)
+![](media/power-bi-visualization-drill-down/power-bi-hierarchical-axis-datetime-2.png)
 
 Bortset fra visualiseringen kan vi se hierarkiet afspejlet i de data, der gengives for hver enkelt rapport. I følgende tabel vises resultaterne for **Vis data** i en rapportanalyse for en enkelt måned eller for alle måneder. 
 
@@ -192,8 +192,8 @@ Bemærk, at dataene er de samme for kvartals- og årsrapporter, men når du anal
 
 |Udvidelsestilstand|År|Kvartal|Måned|Dag|
 | ---|:---:|:---:|:---:|---|
-|Enkelt|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-year.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-quarter.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-one-month.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-one-day.png)|
-|Alle|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-year.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-quarter.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-month.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-day.png)|
+|Enkelt|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-year.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-quarter.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-one-month.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-one-day.png)|
+|Alle|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-year.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-quarter.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-all-month.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-all-day.png)|
 
 
 ### <a name="hierarchical-category-data"></a>Hierarkiske kategoridata
@@ -201,20 +201,20 @@ Data, der er modelleret fra samlinger og undersamlinger, er hierarkiske. Det er 
 
 I dette eksempel skal du følge med vha. [eksemplet på detailhandelsanalyse](sample-datasets.md). Opret en visualisering med et stablet søjlediagram, der viser **Samlede enheder dette år** (værdier) efter **Territorium**, **By**, **Postnummer** og **Navn** (gruppe).  
 
-![](media\power-bi-visualization-drill-down/power-bi-hierarchical-axis-category-1.png)
+![](media/power-bi-visualization-drill-down/power-bi-hierarchical-axis-category-1.png)
 
 Når tilstanden Analysér ned er slået til, skal du vælge **Udvid alle ét niveau ned i hierarkiet** tre gange via ikonerne øverst til venstre.
 Du skal være på det nederste niveau i hierarkiet, hvor du kan se resultaterne for Territorium, By og Postnummer.
 
-![](media\power-bi-visualization-drill-down/power-bi-hierarchical-axis-category-2.png)
+![](media/power-bi-visualization-drill-down/power-bi-hierarchical-axis-category-2.png)
 
 Bortset fra visualiseringen kan vi se hierarkiet afspejlet i de data, der gengives for hver enkelt rapport. I følgende tabel vises resultaterne for **Vis data** i en rapportanalyse for et enkelt territorium eller for alle territorier. Efterhånden som du analyserer, kan du se, hvordan den enkelte rapport bliver mere specifik, og rapporten for "alle territorier" indeholder flere data.
 
 
 | Udvidelsestilstand|Distrikt|By|Postnummer|Navn|
 | ---|:---:|:---:|:---:|---|
-|Enkelt|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-territory.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-one-territory-city.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-one-territory-city-postal.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-one-territory-city-postal-name.png)|
-|Alle|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-territory.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city-postal.png)|![](media\power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city-postal-name.png)|
+|Enkelt|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-territory.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-one-territory-city.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-one-territory-city-postal.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-one-territory-city-postal-name.png)|
+|Alle|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-territory.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city-postal.png)|![](media/power-bi-visualization-drill-down/power-bi-hierarchical-all-territory-city-postal-name.png)|
 
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
