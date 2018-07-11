@@ -1,4 +1,5 @@
 ### <a name="on-premises-data-gateway"></a>Datagateway i det lokale miljø
+
 | **Datakilde** |
 | --- |
 | Analysis Services Tabular |

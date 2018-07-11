@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/24/2018
 ms.author: maggies
-ms.openlocfilehash: 9b896c9db6c1368c5e435df21c28cd99b8dda15f
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 354ba336407f200d2c311f6bf0de91967cf3f5d1
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721702"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598133"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Administrer indhold på webportalen 
 Webportalen Power BI-rapportserver er en placering i det lokale miljø til visning, lagring og administration af dine Power BI-rapporter, dine mobile og sideinddelte rapporter og KPI'er.
@@ -38,9 +38,9 @@ Programmet til webportalen kører i en browser. Når du starter webportalen, afh
     Se listen over [understøttede webbrowsere og versioner](browser-support.md).
 2. Indtast webportalens URL-adresse i adresselinjen.
    
-    URL-adressen er som standard *http://[ComputerName]/reports*.
+    URL-adressen er som standard <em>http://[ComputerName]/reports</em>.
    
-    Rapportserveren er muligvis konfigureret til at bruge en bestemt port. For eksempel *http://[ComputerName]:80/reports* eller *http://[ComputerName]:8080/reports*.
+    Rapportserveren er muligvis konfigureret til at bruge en bestemt port. For eksempel <em>http://[ComputerName]:80/reports</em> eller <em>http://[ComputerName]:8080/reports</em>.
    
     Du kan se, at webportalen deler elementer ind i disse kategorier:
    

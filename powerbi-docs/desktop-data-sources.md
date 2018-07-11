@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b7e08f586c0c1f0bf7409735683bc9c1cd6aa969
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: ade1e9377ddcb014cc71909c7256533a0e74d606
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34286859"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136450"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 Med Power BI Desktop kan du oprette forbindelse til data fra mange forskellige kilder. Der findes en komplet liste over tilgængelige datakilder nederst på siden.
@@ -203,7 +203,7 @@ Det er det eneste, du skal gøre for at oprette forbindelse til datakilder i Pow
 ## <a name="next-steps"></a>Næste trin
 Du kan gøre mange forskellige ting med Power BI Desktop. Du kan finde flere oplysninger om funktionerne i følgende ressourcer:
 
-* [Introduktion til Power BI Desktop](desktop-getting-started.md)
+* [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 * [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)
 * [Datatyper i Power BI Desktop](desktop-data-types.md)
 * [Udform og kombiner data med Power BI Desktop](desktop-shape-and-combine-data.md)

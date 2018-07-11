@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: d3b3e077ac3dadf92a1c25d3704a4f59adea588b
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: ec8f1e40cac1c98bcfb5049d1fe8dd7397b616d6
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34296221"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598829"
 ---
 # <a name="power-bi-security"></a>Power BI-sikkerhed
 Du kan finde en detaljeret beskrivelse af Power BI-sikkerhed ved at [downloade hvidbogen om Power BI-sikkerhed](http://go.microsoft.com/fwlink/?LinkId=829185):
@@ -48,7 +48,7 @@ Den stiplede linje i billedet herover af **Back End**-klyngen viser grænsen mel
 ## <a name="user-authentication"></a>Brugergodkendelse
 Power BI bruger Azure Active Directory ([AAD](http://azure.microsoft.com/services/active-directory/)) til at godkende brugere, der logger på Power BI-tjenesten, og bruger igen Power BI-logonoplysningerne, når en bruger forsøger at få adgang til ressourcer, som kræver godkendelse. Brugere logger på Power BI-tjenesten ved hjælp af den mailadresse, der blev brugt til at oprette deres Power BI-konto. Power BI bruger den pågældende logonmail som det *effektive brugernavn*, der videresendes til ressourcer, når en bruger forsøger at oprette forbindelse til data. Det *effektive brugernavn* knyttes derefter til en *brugers hovednavn* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)) og fortolkes til den tilknyttede Windows-domænekonto, som godkendelse gælder i forhold til.
 
-For organisationer, der brugte arbejdsmails til at logge på Power BI (f.eks.  *david@contoso.com*), er tilknytningen af det *effektive brugernavn* til UPN ligetil. For organisationer, der ikke brugte arbejdsmails til at logge på Power BI (f.eks. *david@contoso.onmicrosoft.com*), vil tilknytning mellem AAD og de lokale legitimationsoplysninger kræve [katalogsynkronisering](https://technet.microsoft.com/library/jj573653.aspx) for at fungere korrekt.
+For organisationer, der brugte arbejdsmails til at logge på Power BI (f.eks. <em>david@contoso.com</em>), er tilknytningen af det *effektive brugernavn* til UPN ligetil. For organisationer, der ikke brugte arbejdsmails til at logge på Power BI (f.eks. <em>david@contoso.onmicrosoft.com</em>), vil tilknytning mellem AAD og de lokale legitimationsoplysninger kræve [katalogsynkronisering](https://technet.microsoft.com/library/jj573653.aspx) for at fungere korrekt.
 
 Platformssikkerhed i forbindelse med Power BI indeholder også miljøsikkerhed med flere lejere, netværkssikkerhed og mulighed for at tilføje ekstra sikkerhedsforanstaltninger baseret på AAD.
 

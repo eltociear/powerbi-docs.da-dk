@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/06/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3550a3fc0cfc51b61e1d7e51a50c2a36325f2388
-ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
+ms.openlocfilehash: 2547be7f7bdadb7f991db54230d4fd791941838d
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250579"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600059"
 ---
 # <a name="merge-or-append-on-premises-and-cloud-data-sources"></a>Flet eller tilføj datakilder i det lokale miljø og i clouden
 
@@ -38,17 +38,17 @@ Med datagatewayen i det lokale miljø kan du flette eller tilføje datakilder i 
 
 4. Under denne gatewayklynge kan du tilføje en [datakilde i det lokale miljø](service-gateway-enterprise-manage-scheduled-refresh.md#add-a-data-source), som skal bruges i dine forespørgsler. Du behøver ikke at tilføje datakilder i clouden her.
 
-4. Upload Power BI Desktop-filen med de forespørgsler, der kombinerer datakilder i det lokale miljø og i clouden, til Power BI-tjenesten.
+5. Upload Power BI Desktop-filen med de forespørgsler, der kombinerer datakilder i det lokale miljø og i clouden, til Power BI-tjenesten.
 
-5. På siden **Datasætindstillinger** for det nye datasæt:
+6. På siden **Datasætindstillinger** for det nye datasæt:
 
-    - For kilden i det lokale miljø skal du vælge den gateway, der er knyttet til datakilden.
+   - For kilden i det lokale miljø skal du vælge den gateway, der er knyttet til datakilden.
 
-    - Under **Legitimationsoplysninger for datakilde** skal du redigere legitimationsoplysningerne for datakilden efter behov.
+   - Under **Legitimationsoplysninger for datakilde** skal du redigere legitimationsoplysningerne for datakilden efter behov.
 
-    ![Indstillinger for datasæt](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
+     ![Indstillinger for datasæt](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
 
-6. Med cloudlegitimationsoplysningerne kan du nu opdatere datasættet ved hjælp af **Opdater nu**, eller du kan planlægge at opdatere med jævne mellemrum.
+7. Med cloudlegitimationsoplysningerne kan du nu opdatere datasættet ved hjælp af **Opdater nu**, eller du kan planlægge at opdatere med jævne mellemrum.
 
 
 ## <a name="next-steps"></a>Næste trin

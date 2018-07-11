@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 472be555bb4c46da41eb762c1eeae14ef991e742
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: ed9ab95aace7ab1ff0774732241bdd4a7fffcb15
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34290861"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600983"
 ---
 # <a name="using-directquery-in-power-bi"></a>Brug af DirectQuery i Power BI
 Du kan oprette forbindelse til alle mulige forskellige datakilder, når du bruger **Power BI Desktop** eller **Power BI-tjenesten**, og du kan oprette disse dataforbindelser på forskellige måder. Du kan enten *importere* data i Power BI, hvilket er den mest almindelige måde at hente data på, eller du kan oprette forbindelse direkte til dataene i det oprindelige kildelager, der også er kendt som **DirectQuery**. I denne artikel beskrives **DirectQuery** og dens egenskaber, herunder følgende emner:
@@ -152,7 +152,7 @@ Når du bruger **DirectQuery**, kan mange af disse modelforbedringer stadig fore
     
     Det skyldes, at en sådan måling kan medføre en dårlig ydeevne, hvis der er et meget stort antal varer.
 * **Beregnede tabeller understøttes ikke:** Mulighed for at definere en beregnet tabel vha. et DAX-udtryk understøttes ikke i DirectQuery-tilstand.
-* **Relationsfiltrering er begrænset til en enkelt retning:** Når du bruger DirectQuery, er det ikke muligt at angive retningen På tværs af filtre for en relation til "Begge". I nedenstående tre tabeller vil det f.eks. ikke være muligt at oprette en visualisering, der viser hver enkelt Customer[Gender] og antallet af Product[Category], der er købt af hver enkelt. Brugen af denne type tovejsfiltrering er beskrevet [i dette detaljerede whitepaper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional cross-filtering in Analysis Services 2016 and Power BI.docx) (rapporten præsenterer eksempler i forbindelse med SQL Server Analysis Services, men de grundlæggende pointer gælder også for Power BI).
+* **Relationsfiltrering er begrænset til en enkelt retning:** Når du bruger DirectQuery, er det ikke muligt at angive retningen På tværs af filtre for en relation til "Begge". I nedenstående tre tabeller vil det f.eks. ikke være muligt at oprette en visualisering, der viser hver enkelt Customer[Gender] og antallet af Product[Category], der er købt af hver enkelt. Brugen af denne type tovejsfiltrering er beskrevet [i dette detaljerede whitepaper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) (rapporten præsenterer eksempler i forbindelse med SQL Server Analysis Services, men de grundlæggende pointer gælder også for Power BI).
   
   ![](media/desktop-directquery-about/directquery-about_01.png)
   

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 779bfb3e69a76d0fe9e9a34d6576b2054de89cc1
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: aa7fcc720861d1459183aaf7a82a2af8912eb5b6
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34253613"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599742"
 ---
 # <a name="data-refresh-in-power-bi"></a>Opdatering af data i Power BI
 At sørge for altid at have de nyeste data er ofte kritisk for at kunne tage de rigtige beslutninger. Du har muligvis allerede brugt Hent data i Power BI til at oprette forbindelse til og overføre data, så du kunne oprette nogle rapporter og et dashboard. Nu skal du sikre dig, at dataene virkelig er de nyeste og bedste.
@@ -101,6 +101,7 @@ Dataopdatering understøttes for Power BI Desktop-filer og Excel-projektmapper, 
 Hvis du lagrer dine filer på OneDrive eller SharePoint Online og opretter forbindelse til dem fra Power BI, får du stor fleksibilitet. Men fordi du får al den fleksibilitet, er det også en af de løsninger, der er sværest at forstå. Planlagte opdateringer af filer, der er gemt i OneDrive eller på SharePoint Online, er anderledes end opdatering af pakker. Du kan få mere at vide i afsnittet [Opdateringstyper](#types-of-refresh).
 
 ### <a name="power-bi-desktop-file"></a>Power BI Desktop-fil
+
 | **Datakilde** | **Automatisk opdatering** | **Brugerkonfigureret manuel eller planlagt opdatering** | **Gateway påkrævet** |
 | --- | --- | --- | --- |
 | Hent data (på båndet) bruges til at oprette forbindelse til og sende en forespørgsel om data fra alle viste onlinedatakilder. |Nej |Ja |Nej (se nedenfor) |
@@ -117,6 +118,7 @@ Hvis du lagrer dine filer på OneDrive eller SharePoint Online og opretter forbi
 Se flere oplysninger under [Opdater et datasæt, der er baseret på en Power BI Desktop-fil på OneDrive](refresh-desktop-file-onedrive.md).
 
 ### <a name="excel-workbook"></a>Excel-projektmappe
+
 | **Datakilde** | **Automatisk opdatering** | **Brugerkonfigureret manuel eller planlagt opdatering** | **Gateway påkrævet** |
 | --- | --- | --- | --- |
 | Tabeller med data i et regneark, der ikke er indlæst i Excel-datamodellen. |Ja, én gang i timen *(kun OneDrive/SharePoint Online)* |Kun manuelt *(kun OneDrive/SharePoint Online)* |Nej |
@@ -131,6 +133,7 @@ Se flere oplysninger under [Opdater et datasæt, der er baseret på en Power BI 
 Du kan få mere at vide under [Opdater et datasæt baseret på en Excel-arbejdsmappe på OneDrive](refresh-excel-file-onedrive.md).
 
 ### <a name="comma-separated-value-csv-file-on-onedrive-or-sharepoint-online"></a>Fil med kommaseparerede værdier (.csv) på OneDrive eller SharePoint Online
+
 | **Datakilde** | **Automatisk opdatering** | **Brugerkonfigureret manuel eller planlagt opdatering** | **Gateway påkrævet** |
 | --- | --- | --- | --- |
 | Enkel kommasepareret værdi |Ja, én gang i timen |Kun manuelt |Nej |
@@ -145,6 +148,7 @@ Der er to typer indholdspakker i Power BI:
 **Organisationsindholdspakker**: oprettes og deles af brugere i din egen organisation. Forbrugere af indholdspakker kan ikke oprette en tidsplan for opdatering eller opdatere manuelt. Kun personen, der har oprettet indholdspakken, kan konfigurere opdatering af datasættene i indholdspakken. Indstillinger til opdateringer nedarves i datasættet.
 
 ### <a name="content-packs-from-online-services"></a>Indholdspakker fra onlinetjenester
+
 | **Datakilde** | **Automatisk opdatering** | **Brugerkonfigureret manuel eller planlagt opdatering** | **Gateway påkrævet** |
 | --- | --- | --- | --- |
 | Onlinetjenester i Hent data-tjenester&gt; |Ja |Ja |Nej |
@@ -237,7 +241,7 @@ I dette tilfælde kan du manuelt opdatere dataene i SalesReport.xlsx-datasættet
 > 
 > 
 
-Hvis du vil vide mere, kan du se [Excel-data i Power BI](service-excel-workbook-files.md), [Power BI Gateway – Personal](personal-gateway.md), [Datagateway i det lokale miljø](service-gateway-onprem.md), [Opdater et datasæt, der er baseret op en Excel-projektmappe på et lokalt drev](refresh-excel-file-local-drive.md).
+Hvis du vil vide mere, kan du se [Excel-data i Power BI](service-excel-workbook-files.md), [Power BI Gateway – Personal](service-gateway-personal-mode.md), [Datagateway i det lokale miljø](service-gateway-onprem.md), [Opdater et datasæt, der er baseret op en Excel-projektmappe på et lokalt drev](refresh-excel-file-local-drive.md).
 
 ### <a name="power-bi-desktop-file-with-data-from-an-odata-feed"></a>Power BI Desktop-fil med data fra et OData-feed
 I dette tilfælde skal du bruge Hent data i Power BI Desktop for at oprette forbindelse til og importere censusdata fra et OData-feed.  Du opretter flere rapporter i Power BI Desktop og navngiver derefter filen WACensus og gemmer den på et delt drev i din virksomhed. Du publicerer derefter filen til Power BI-tjenesten.
@@ -270,7 +274,7 @@ Du kan se flere oplysninger om fejlfinding i [Værktøjer til fejlfinding i forb
 ## <a name="next-steps"></a>Næste trin
 [Værktøjer til fejlfinding af opdateringsfejl](service-gateway-onprem-tshoot.md)  
 [Fejlfinding i forbindelse med opdatering af scenarier](refresh-troubleshooting-refresh-scenarios.md)  
-[Power BI Gateway – Personal](personal-gateway.md)  
+[Power BI Gateway – Personal](service-gateway-personal-mode.md)  
 [Datagateway i det lokale miljø](service-gateway-onprem.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 019aa1425d05fcfdc4415570acdc29e7a684dc25
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 88b8b4a50913cd45c5e4ff80a5d5e0ded2eb4cdb
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34290953"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600738"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Figurkort i Power BI Desktop (prøveversion)
 I Power BI Desktop kan du oprette visualiseringen **Figurkort** for at vise relative sammenligninger mellem områder på et kort ved at anvende forskellige farver for forskellige områder. I modsætning til visualiseringen **Kort** kan **Figurkort** ikke vise nøjagtige geografiske lokationer med datapunkter på et kort. I stedet er det primære formål at vise relative sammenligninger af områder på et kort ved at farvelægge dem forskelligt.
@@ -40,23 +40,23 @@ Power BI Desktop opretter et tomt designlærred for **figurkortet**.
 Gør følgende for at oprette et **figurkort**:
 
 1. I ruden **Felter** skal du trække et datafelt med navne på områder (eller forkortelser) til feltet **Placering** og et datamålingsfelt til feltet **Farvemætning** (der vises ikke et kort endnu).
-   
+
    > [!NOTE]
-> Se afsnittet **Hent kortdata** herunder for at få oplysninger om, hvordan du hurtigt kan hente kortdata til test af **Figurkort**.
+   > Se afsnittet **Hent kortdata** herunder for at få oplysninger om, hvordan du hurtigt kan hente kortdata til test af **Figurkort**.
    > 
    > 
-   
+
    ![](media/desktop-shape-map/shape-map_3a.png)
 2. I ruden **Format** skal du udvide **Figur** og vælge på rullemenuen **Standardkort** for at få vist dine data. På nuværende tidspunkt vises gengivelsen af kortet som vist i følgende billede.
-   
+
    ![](media/desktop-shape-map/shape-map_3b.png)
-   
+
    > [!NOTE]
-> I afsnittet **Områdenøgler** sidst i denne artikel kan du se en samling af tabeller, som indeholder kortområdenøgler, du kan bruge til at teste visualiseringen **Figurkort**.
+   > I afsnittet **Områdenøgler** sidst i denne artikel kan du se en samling af tabeller, som indeholder kortområdenøgler, du kan bruge til at teste visualiseringen **Figurkort**.
    > 
    > 
 3. Derefter kan du ændre kortprojiceringen og zoomindstillinger samt farverne på datapunkterne under indstillingerne i ruden **Format**. Du kan også ændre zoomindstillingerne. Du kan for eksempel ændre farver, angive maksimum- og minimumværdier med mere.
-   
+
    ![](media/desktop-shape-map/shape-map_3d.png)
 4. Du kan også tilføje en kolonne med kategoridata i feltet **Forklaring** og klassificere kortområderne baseret på kategorier.
 
@@ -114,6 +114,7 @@ Du skal være opmærksom på nogle få ting i forbindelse med denne prøveversio
 Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurkort**.
 
 ### <a name="australia-states"></a>Australien: delstater
+
 | id | forkortelse | iso | navn | postal |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
@@ -126,6 +127,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | au-act |ACT |AU-ACT |Australian Capital Territory |ACT |
 
 ### <a name="austria-states"></a>Østrig: delstater
+
 | id | iso | navn | navn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
@@ -139,6 +141,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | at-bu |AT-1 |Burgenland |Burgenland |BU |
 
 ### <a name="brazil-states"></a>Brasilien: delstater
+
 | id |
 | --- |
 | Tocantins |
@@ -174,6 +177,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | Litigated Zone 4 |
 
 ### <a name="canada-provinces"></a>Canada: provinser
+
 | id | iso | navn | postnummer |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
@@ -191,6 +195,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | ca-ab |CA-AB |Alberta |AB |
 
 ### <a name="france-regions"></a>Frankrig: regioner
+
 | id | navn | navn-en |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
@@ -217,6 +222,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | Aquitaine |Aquitaine |Aquitaine |
 
 ### <a name="germany-states"></a>Tyskland: delstater
+
 | id | iso | navn | navn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
@@ -237,6 +243,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | de-bw |DE-BW |Baden-Württemberg |Baden-Wurttemberg |BW |
 
 ### <a name="ireland-counties"></a>Irland: amter
+
 | id |
 | --- |
 | Wicklow |
@@ -267,6 +274,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | Carlow |
 
 ### <a name="italy-regions"></a>Italien: regioner
+
 | id | iso | navn | navn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
@@ -291,6 +299,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | it-ab |IT-65 |Abruzzo |Abruzzo |AB |
 
 ### <a name="mexico-states"></a>Mexico: delstater
+
 | id | abreviatura | iso | navn | navn-en | postnummer |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
@@ -327,6 +336,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | mx-agu |Ags. |MX-AGU |Aguascalientes |Aguascalientes |AG |
 
 ### <a name="netherlands-provinces"></a>Nederlandene: provinser
+
 | id | iso | navn | navn-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
@@ -343,6 +353,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | nl-dr |NL-DR |Drenthe |Drenthe |
 
 ### <a name="uk-countries"></a>Storbritannien: lande/områder
+
 | id | iso | navn |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
@@ -351,6 +362,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | gb-eng |GB-ENG |England |
 
 ### <a name="usa-states"></a>USA: stater
+
 | id | navn | postnummer |
 | --- | --- | --- |
 | us-mi |Michigan |MI |

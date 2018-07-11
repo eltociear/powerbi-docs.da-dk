@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f283a8ed273dcb609e9d5160adbeb714e8935ab9
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 57e1e8ce015db9b5f88f7b685c80092023540a6f
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251927"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599129"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Opret forbindelse til Zuora med Power BI
 Med Zuora til Power BI kan du visualisere vigtige omsætnings-, fakturerings- og abonnementsdata. Brug standarddashboardet og rapporter til at analysere brugstendenser, spore faktureringer og betalinger og overvåge tilbagevendende indtægt eller til at tilpasse dem, så de imødekommer dine særlige behov i forbindelse med dashboard og rapportering.
@@ -32,7 +32,7 @@ Opret forbindelse til [Zuora](https://app.powerbi.com/getdata/services/Zuora) ti
 3. Vælg **Zuora** \> **Hent**.
 
    ![](media/service-connect-to-zuora/zuora.png)
-4. Angiv URL-adressen til Zuora. Dette vil typisk være "https://www.zuora.com" . Du kan se oplysninger om, hvordan [du finder disse parametre](#FindingParams) nedenfor.
+4. Angiv URL-adressen til Zuora. Dette vil typisk være "<https://www.zuora.com>" . Du kan se oplysninger om, hvordan [du finder disse parametre](#FindingParams) nedenfor.
 
    ![](media/service-connect-to-zuora/params.png)
 5. Som **Godkendelsesmetode** skal du vælge **Grundlæggende**, angive dit brugernavn og din adgangskode (der skelnes mellem små og store bogstaver) og derefter vælge **Log på**.

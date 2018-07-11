@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/02/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: e689e031395130bab8ad80d5d06936a9dabaf852
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a99200707c8fc7de4fea2e32fe83238011bbf46c
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34755064"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926580"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Fejlfinding af datagatewayen i det lokale miljø
 I denne artikel beskrives nogle almindelige problemer, som kan opstå, når du bruger **datagatewayen i det lokale miljø**.
@@ -31,10 +31,10 @@ I denne artikel beskrives nogle almindelige problemer, som kan opstå, når du b
 Gatewayen kører som en Windows-tjeneste, så du kan starte og stoppe den på flere måder. Du kan f.eks. åbne en kommandoprompt med administratorrettigheder på den computer, hvor gatewayen kører, og derefter køre en af følgende kommandoer:
 
 * Kør følgende kommando for at stoppe tjenesten:
-  
+
     '''   net stop PBIEgwService   '''
 * Kør følgende kommando for at starte tjenesten:
-  
+
     '''   net start PBIEgwService   '''
 
 ### <a name="error-failed-to-create-gateway-please-try-again"></a>Fejl: Gateway kunne ikke oprettes. Prøv igen.
@@ -70,7 +70,7 @@ Benyt følgende fremgangsmåde for at løse problemet.
 
 1. Fjern gatewayen.
 2. Slet følgende mappe.
-   
+
         c:\Program Files\On-premises data gateway
 3. Installer gatewayen igen.
 4. Anvend evt. genoprettelsesnøglen til at gendanne en eksisterende gateway.
@@ -129,11 +129,11 @@ Du kan bekræfte dette ved at gøre følgende.
 
 1. Opret forbindelse til Analysis Services-computeren i SQL Server Management Studio. Medtag EffectiveUserName for den pågældende bruger i egenskaberne for avanceret forbindelse, og se, om dette gengiver fejlen.
 2. Du kan bruge værktøjet dsacls Active Directory til at kontrollere, om attributten er angivet. Dette værktøj findes sædvanligvis på en domænecontroller. Du skal kende det entydige domænenavn for kontoen og videregive dette til værktøjet.
-   
+
         dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
-   
+
     Du ønsker at få vist noget, der ligner nedenstående, i resultaterne.
-   
+
             Allow BUILTIN\Windows Authorization Access Group
                                           SPECIAL ACCESS for tokenGroupsGlobalAndUniversal
                                           READ PROPERTY
@@ -184,15 +184,15 @@ Du kan få bekræftet dette ved at gøre som angivet herunder.
 
 1. Find det effektive brugernavn i [gatewaylogfilerne](#logs).
 2. Når du har den værdi, der sendes, skal du bekræfte, at den er korrekt. Hvis det er din bruger, kan du bruge følgende kommando fra en kommandoprompt til at se, hvad UPN bør være. UPN ligner en mailadresse.
-   
+
         whoami /upn
 
 Du kan eventuelt se, hvad Power BI henter fra Azure Active Directory.
 
-1. Gå til [https://graphexplorer.cloudapp.net](https://graphexplorer.cloudapp.net).
+1. Gå til [https://developer.microsoft.com/graph/graph-explorer](https://developer.microsoft.com/graph/graph-explorer).
 2. Vælg **Log på** øverst til højre.
 3. Kør følgende forespørgsel. Du får vist et ret stort JSON-svar.
-   
+
         https://graph.windows.net/me?api-version=1.5
 4. Søg efter **userPrincipalName**.
 
@@ -206,7 +206,7 @@ Du kan finde det datacenterområde, du befinder dig i, ved at gøre følgende:
 1. Vælg **?** i øverste højre hjørne af Power BI-tjenesten.
 2. Vælg **Om Power BI**.
 3. Dit dataområde vises i **Dine data er lagret i**.
-   
+
     ![](media/service-gateway-onprem-tshoot/power-bi-data-region.png)
 
 Hvis du stadig ikke kan komme videre, kan du prøve at få en netværkssporing ved hjælp af et værktøj som [fiddler](#fiddler) eller netsh, selvom disse er avancerede indsamlingsmetoder, og det kan være nødvendigt at få hjælp til at analysere de indsamlede data. Du kan kontakte [support](https://support.microsoft.com) for at få hjælp.
@@ -329,6 +329,7 @@ I filen *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* skal du
 <a name="activities"></a>
 
 ### <a name="activity-types"></a>Aktivitetstyper
+
 | Aktivitetstype | Beskrivelse |
 | --- | --- |
 | MGEQ |Forespørgsler udført via ADO.NET. Dette omfatter DirectQuery-datakilder. |
@@ -342,9 +343,9 @@ Når du vil fastlægge den tid, det tog at forespørge på datakilden, kan du g�
 2. Søg efter en [aktivitetstype](#activities) for at finde forespørgslen. Et eksempel på dette ville være MGEQ.
 3. Notér den anden GUID, da dette er anmodnings-id'et.
 4. Fortsæt med at søge efter MGEQ, indtil du finder indtastningen FireActivityCompletedSuccessfullyEvent med varigheden. Du kan bekræfte, at indtastningen har samme anmodnings-id. Varighed vil være i millisekunder.
-   
+
         DM.EnterpriseGateway Verbose: 0 : 2016-09-26T23:08:56.7940067Z DM.EnterpriseGateway    baf40f21-2eb4-4af1-9c59-0950ef11ec4a    5f99f566-106d-c8ac-c864-c0808c41a606    MGEQ    21f96cc4-7496-bfdd-748c-b4915cb4b70c    B8DFCF12 [DM.Pipeline.Common.TracingTelemetryService] Event: FireActivityCompletedSuccessfullyEvent (duration=5004)
-   
+
    > [!NOTE]
    > FireActivityCompletedSuccessfullyEvent er en detaljeret indtastning. Denne indtastning logføres ikke, medmindre TraceVerbosity er på niveau 5.
    > 
@@ -423,12 +424,12 @@ Du får vist meddelelsen "-10709 Connection failed", hvis din delegering ikke er
 Når gatewayen bruges til planlagt opdatering, kan **Opdater historik** hjælpe dig med at se, hvilke fejl der er opstået samt levere brugbare data, hvis du får brug for at oprette en supportanmodning. Du kan få vist både planlagte opdateringer samt opdateringer efter behov. Sådan får du vist **Opdater historik**.
 
 1. I Power BI-navigationsruden i **Datasæt** skal du vælge et datasæt &gt; Åbn menu &gt; **Planlæg opdatering**.
-   
+
     ![](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 2. I **Indstillinger for...** &gt;**Planlæg opdatering** skal du vælge **Opdater historik**.
-   
+
     ![](media/service-gateway-onprem-tshoot/scheduled-refresh-2.png)
-   
+
     ![](media/service-gateway-onprem-tshoot/refresh-history.png)
 
 Du kan finde yderligere oplysninger om fejlfinding af opdateringsscenarier i artiklen [Fejlfinding i forbindelse med opdatering af scenarier](refresh-troubleshooting-refresh-scenarios.md).

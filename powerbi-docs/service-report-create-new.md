@@ -10,21 +10,21 @@ ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 377ea4acc1a6fb41101571ac3ed0be2f3e50889b
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 872045a52f2f13829d26de8dd288ac723dcd2788
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34246151"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599522"
 ---
 # <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Opret en ny rapport i Power BI-tjenesten ved at importere et datasæt
 Du har læst [Rapporter i Power BI](service-reports.md), og nu vil du oprette din egen. Der er mange forskellige måder at oprette en rapport på, og i denne artikel starter vi med at oprette en meget grundlæggende rapport ud fra et Excel-datasæt ved hjælp af Power BI-tjenesten. Når du har forstået de grundlæggende ting i forbindelse med at oprette en rapport, vejleder de **Næste trin** for neden dig gennem de mere avancerede rapportemner.  
 
 > **TIP!** Hvis du vil oprette en rapport ved at kopiere en eksisterende rapport, skal du se [Kopiér en rapport](power-bi-report-copy.md)
 > 
-### <a name="prerequisites"></a>Forudsætninger
-- Power BI-tjenesten (se [Desktop-rapportvisning](desktop-report-view.md) for at få oplysninger om oprettelse af rapporter ved hjælp af Power BI Desktop)  
-- Eksempel på detailhandelsanalyse
+> ### <a name="prerequisites"></a>Forudsætninger
+> - Power BI-tjenesten (se [Desktop-rapportvisning](desktop-report-view.md) for at få oplysninger om oprettelse af rapporter ved hjælp af Power BI Desktop)  
+> - Eksempel på detailhandelsanalyse
 
 ## <a name="import-the-dataset"></a>Importér datasættet
 Denne metode til oprettelse af en rapport starter med et datasæt og et tomt rapportlærred. For at kunne følge med skal du [downloade Excel-datasættet Retail Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529778) og gemme det på OneDrive for Business (anbefales) eller lokalt.

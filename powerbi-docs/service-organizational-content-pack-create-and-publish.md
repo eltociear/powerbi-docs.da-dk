@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/08/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f8b1e94ca0923c3e2ba509df266cec0f05596ab1
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b95ff0d9102377b6aeb59488a565f7bcb9a65566
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34852181"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598592"
 ---
 # <a name="create-and-publish-a-power-bi-organizational-content-pack-tutorial"></a>Opret og publicer en organisationsindholdspakke til Power BI (selvstudium)
 > [!NOTE]
@@ -43,24 +43,24 @@ Vil du følge med? I [Power BI-tjenesten](https://powerbi.com) skal du gå til *
    
    Husk på, at organisationens bibliotek med indholdspakker kan ende med at have hundredvis af indholdspakker publiceret for organisationen eller for grupperne. Brug lidt tid på at give indholdspakken et navn, der giver mening, at tilføje en god beskrivelse og vælge den rette målgruppe.  Brug ord, der vil gøre det nemt at finde din indholdspakke i søgninger.
    
-   1.  Vælg **Bestemte grupper**, og angiv komplette mailadresser til enkeltpersoner, [Office 365-grupper](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), distributionsgrupper eller sikkerhedsgrupper. Eksempel:
+   1. Vælg **Bestemte grupper**, og angiv komplette mailadresser til enkeltpersoner, [Office 365-grupper](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), distributionsgrupper eller sikkerhedsgrupper. Eksempel:
       
-         salesmgrs@contoso.com; sales@contoso.com
+        salesmgrs@contoso.com; sales@contoso.com
       
       Til dette selvstudium kan du prøve at bruge din egen eller din gruppes mailadresse.
    
-   2.  Navngiv indholdspakken **Salgsmuligheder**.
+   2. Navngiv indholdspakken **Salgsmuligheder**.
    
       > [!TIP]
       > Overvej at lade navnet på dashboardet indgå i navnet på indholdspakken. På den måde finder dine kollegaer nemmere dashboardet, når der oprettes forbindelse til din indholdspakke.
       > 
       > 
    
-   3.  Anbefalet: Tilføj en **beskrivelse**. På den måde kan kolleger nemmere finde de indholdspakker, de skal bruge. Ud over en beskrivelse kan du tilføje nøgleord, som dine kolleger kan bruge til at søge efter denne indholdspakke. Medtag kontaktoplysninger, hvis dine kolleger har spørgsmål eller brug for hjælp.
+   3. Anbefalet: Tilføj en **beskrivelse**. På den måde kan kolleger nemmere finde de indholdspakker, de skal bruge. Ud over en beskrivelse kan du tilføje nøgleord, som dine kolleger kan bruge til at søge efter denne indholdspakke. Medtag kontaktoplysninger, hvis dine kolleger har spørgsmål eller brug for hjælp.
    
-   4.  **Upload et billede eller logo** for at gøre det nemmere for gruppemedlemmer at finde indholdspakken &#151; det er hurtigere at scanne efter et billede, end det er at finde tekst. I skærmbilledet nedenfor har vi brugt et billede af søjlediagramfeltet Opportunity Count 100% (Optælling af salgsmulighed 100%).
+   4. **Upload et billede eller logo** for at gøre det nemmere for gruppemedlemmer at finde indholdspakken &#151; det er hurtigere at scanne efter et billede, end det er at finde tekst. I skærmbilledet nedenfor har vi brugt et billede af søjlediagramfeltet Opportunity Count 100% (Optælling af salgsmulighed 100%).
    
-   5.  Vælg dashboardet **Eksempel på analyse af salgsmuligheder** for at føje det til indholdspakken.  Power BI tilføjer automatisk den tilknyttede rapport og det tilknyttede datasæt. Du kan tilføje andre, hvis du vil.
+   5. Vælg dashboardet **Eksempel på analyse af salgsmuligheder** for at føje det til indholdspakken.  Power BI tilføjer automatisk den tilknyttede rapport og det tilknyttede datasæt. Du kan tilføje andre, hvis du vil.
    
       > [!NOTE]
       >  Det er kun de dashboards, rapporter, datasæt og projektmapper, som du kan redigere, der vises. Hvis der er nogen, der er delt med dig, er de derfor ikke vist på listen.
@@ -71,7 +71,7 @@ Vil du følge med? I [Power BI-tjenesten](https://powerbi.com) skal du gå til *
    
    6. Hvis du har Excel-projektmapper, kan du se dem under Rapporter med et Excel-ikon. Du kan også føje dem til indholdspakken.
    
-     ![](media/service-organizational-content-pack-create-and-publish/pbi_orgcontpkexcel.png)
+      ![](media/service-organizational-content-pack-create-and-publish/pbi_orgcontpkexcel.png)
    
       > [!NOTE]
       > Hvis medlemmer af gruppen ikke kan se Excel-projektmappen, må du eventuelt [dele projektmappen med dem i OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c).

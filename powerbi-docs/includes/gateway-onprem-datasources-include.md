@@ -1,4 +1,5 @@
 ## <a name="list-of-available-data-source-types"></a>Liste over tilgængelige datakildetyper
+
 | **Datakilde** | **Live/DirectQuery** | **Brugerkonfigureret manuel eller planlagt opdatering** |
 | --- | --- | --- | --- |
 | Analysis Services Tabular |Ja |Ja |

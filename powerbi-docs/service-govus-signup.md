@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2017
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 17d7c07cb35eb9046b6fcfe8da5a85ee15fe7eaf
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 70e73e5d567c7c6c24aae0ca5478dae2cd6c7f6f
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34310475"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136312"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Tilmeld din US Government-organisation til Power BI-tjenesten
 **Power BI-tjenesten** har en version tilgængelig for offentlige myndigheder i USA som en del af abonnementer på **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til offentlige myndigheder i USA og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten**.
@@ -125,5 +125,5 @@ Du kan gøre mange forskellige ting med Power BI. Yderligere oplysninger og lær
 * [Oversigt over Power BI til US Government](service-govus-overview.md)
 * [Automatiseret læring til Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)
 * [Kom i gang med Power BI-tjenesten](service-get-started.md)
-* [Kom i gang med Power BI Desktop](desktop-getting-started.md)
+* [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 

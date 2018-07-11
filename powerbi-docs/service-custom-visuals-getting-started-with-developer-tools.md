@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: 8b5da248b6992c8ae3e8d30caf4f0fc6c47bdcf5
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a9663951035a697a9fb1f8732d2ce418950078f4
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34296291"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600373"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Brug udviklerværktøjer til at oprette brugerdefinerede visuals
 Du kan bruge visuals til at opfylde dine brugeres behov og matche din apps design. Få mere at vide om, hvordan du opretter brugerdefinerede visuals til Power BI med udviklerværktøjer.
@@ -32,14 +32,14 @@ For at oprette et brugerdefineret visual skal du installere NodeJS. NodeJS er p�
 
 1. Download og installer [NodeJS](https://nodejs.org). Version 4.0 eller senere er påkrævet, men det anbefales at have 5.0 eller nyere.
 2. Installer kommandolinjeværktøjerne. Kør den følende kommando fra en kommandoprompt.
-   
+
         npm install -g powerbi-visuals-tools
 3. Du kan bekræfte, at værktøjerne er installeret ved at køre den følgende kommando uden nogen parametre.
-   
+
         pbiviz
-   
+
     Du bør se hjælp-outputtet.
-   
+
     <pre><code>
          +syyso+/
     oms/+osyhdhyso/
@@ -59,22 +59,22 @@ For at oprette et brugerdefineret visual skal du installere NodeJS. NodeJS er p�
                /dmmh /mmmm/ /osyhhy/
                  //   dmmd
                        ++
-   
+
        PowerBI Custom Visual Tool
-   
+
     Usage: pbiviz [options] [command]
-   
+
     Commands:
-   
+
     new [name]        Create a new visual
     info              Display info about the current visual
     start             Start the current visual
     package           Package the current visual into a pbiviz file
     update [version]  Updates the api definitions and schemas in the current visual. Changes the version if specified
     help [cmd]        display help for [cmd]
-   
+
     Options:
-   
+
     -h, --help      output usage information
     -V, --version   output the version number
     --install-cert  Install localhost certificate
@@ -103,7 +103,7 @@ Du skal køre følgende kommando for at *oprette* et certifikat.
 Kør følgende kommandeo for at *installere* certifikatet.
 
     pbiviz --install-cert
-    
+
 > [!NOTE]
 > Du bør få vist en meddelelse om, at du skal bruge det nyligt oprettede adgangsudtryk til at installere et PFX-certifikat.
 > 
@@ -112,20 +112,20 @@ Kør følgende kommandeo for at *installere* certifikatet.
 **Windows OS**
 
 1. Vælg **Installer certificat...**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows.png)
 2. Vælg **Aktuel bruger**, og vælg derefter **Næste**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows2.png)
 3. Vælg **Placer alle certifikater i følgende certifikatlager**, og vælg **Gennemse...**.
 4. Vælg **Nøglecentre, der er tillid til**, og vælg **OK**. Vælg **Næste**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows3.png)
 5. Vælg **Udfør**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows4.png)
 6. Vælg **Ja** i dialogboksen med en sikkerhedsadvarsel.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows5.png)
 7. Luk alle åbne browsere.
 
@@ -137,13 +137,13 @@ Kør følgende kommandeo for at *installere* certifikatet.
 **OSX**
 
 1. Hvis låsen øverst til venstre er låst, så skal du vælge den for at låse den op. Find *localhost*, og dobbeltklik på certifikatet.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx.png)
 2. Vælg **Hav altid tillid til**, og luk vinduet.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx2.png)
 3. Indtast dit brugernavn og din adgangskode. Vælg **Opdater indstillinger**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx3.png)
 4. Luk alle åbne browsere.
 
@@ -157,15 +157,15 @@ For at aktivere en direkte eksempelvisning af dit brugerdefinerede visual, skal 
 
 1. Gennemse og log på [app.powerbi.com](https://app.powerbi.com).
 2. Vælg **tandhjulsikonet**, og vælg derefter **Indstillinger**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-settings.png)
 3. Vælg **Udvikler**, og vælg derefter **Aktivér udviklervisual til afprøvning**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-settings-enable-developer-live-preview.png)
 4. Vælg dit **Udviklervisualt** i ruden **Visualisering**.
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
-   
+
    > [!NOTE]
    > Dette kræver, at du har kørt `pbiviz start` fra mappen med visuelle elementer på din udviklercomputer. Du kan få flere oplysninger om, hvordan du opretter et visual under [Opret et nyt visual](#create-a-new-visual) i denne artikel.
    > 
@@ -196,11 +196,11 @@ Du kan afspille dit visual ved at gøre følgende.
 1. Åbn en prompt.
 2. Skift din mappe til mappen med dit visual. Dette er mappen, der indeholder `pbiviz.json`-filen.
 3. Kør følgende kommando.
-   
+
     ```
     pbiviz start
     ```
-   
+
     ![](media/service-custom-visuals-getting-started-with-developer-tools/powerbi-start-visual.png)
 
 Hvis du er på den forkerte placering, får du vist en fejl svarende til den nedenstående.
@@ -249,7 +249,7 @@ Du kan pakke dit visual ved at gøre følgende.
 1. Åbn en prompt.
 2. Skift din mappe til mappen med dit visual. Dette er mappen, der indeholder `pbiviz.json`-filen.
 3. Kør følgende kommando.
-   
+
     ```
     pbiviz package
     ```
@@ -294,6 +294,7 @@ Dette vil opdatere dit visual til API-version 1.2.0. Du kan udskifte `1.2.0` med
 Det visuelle projekt er mappen, der bliver oprettet, når du afspiller `pbiviz new`-kommandoen. 
 
 ### <a name="file-structure"></a>Filstruktur
+
 | Element | Beskrivelse |
 | --- | --- |
 | assets/ |Bruges til at lagre visuelle aktiver (ikon, skærmbilleder, osv.). |

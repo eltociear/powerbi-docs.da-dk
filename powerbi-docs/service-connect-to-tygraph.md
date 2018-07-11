@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 11073e7df57d4717e27fa73c6a5e1e315a9a8dcc
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 4e9e10f713be50707909c68b104f82cada6777b6
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241130"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599041"
 ---
 # <a name="connect-to-tygraph--with-power-bi"></a>Opret forbindelse til tyGraph med Power BI
 Visualiser og udforsk dine tyGraph-data i Power BI med Power BI-indholdspakken. Start med at oprette forbindelse til din tyGraph-konto, og indlæs dashboardet, rapporter og datasæt. Indholdet omfatter indsigt, f.eks. Measure of Active Engagement (MAE-score) og de største bidragsydere. Tilpas det yderligere for at fremhæve de oplysninger, som betyder mest for dig.  Dataene opdateres automatisk i overensstemmelse med en tidsplan, du har angivet.
@@ -42,7 +42,7 @@ Opret forbindelse til [tyGraph til Power BI](https://app.powerbi.com/getdata/ser
    
     **Hvis du ikke er en Yammer-bekræftet administrator**
    
-    tyGraph-indholdspakken kræver en tyGraph-konto, der er oprettet af en Yammer-bekræftet administrator. Når du har oprettet supplerende nøgler, kan de udstedes til brugere i den samme organisation. Hvis din bekræftede administrator endnu ikke har oprettet en tyGraph-konto, kan du kontakte vedkommende for at få det gjort. Hvis vedkommende har gjort det, kan du anmode om en nøgle ved at sende en mail til <mailto:support@unlimitedviz.com>.
+    tyGraph-indholdspakken kræver en tyGraph-konto, der er oprettet af en Yammer-bekræftet administrator. Når du har oprettet supplerende nøgler, kan de udstedes til brugere i den samme organisation. Hvis din bekræftede administrator endnu ikke har oprettet en tyGraph-konto, kan du kontakte vedkommende for at få det gjort. Hvis vedkommende har gjort det, kan du anmode om en nøgle ved at sende en mail til <support@unlimitedviz.com>.
    
     ![](media/service-connect-to-tygraph/creds.png)
 6. Efter en vellykket godkendelse starter importprocessen automatisk. Når processen er færdig, vises et nyt dashboard samt rapport og model i navigationsruden. Vælg dashboardet for at få vist de importerede data.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b4e45d2ce20e42b4289ffcaaf7c487e4ae746ca0
-ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
+ms.openlocfilehash: 7feb562c5d2d96c4d726b93393a0b4a26c658415
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35301751"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37134748"
 ---
 # <a name="connect-to-an-impala-database-in-power-bi-desktop"></a>Opret forbindelse til en Impala-database i Power BI Desktop
 I Power BI Desktop kan du oprette forbindelse til en **Impala**-database og bruge de underliggende data på samme måde som enhver anden datakilde i Power BI Desktop.
@@ -50,7 +50,7 @@ Der er et par begrænsninger og overvejelser, du skal være opmærksom på i for
 ## <a name="next-steps"></a>Næste trin
 Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:
 
-* [Introduktion til Power BI Desktop](desktop-getting-started.md)
+* [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)
 * [Udform og kombiner data med Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Opret forbindelse til Excel-projektmapper i Power BI Desktop](desktop-connect-excel.md)   

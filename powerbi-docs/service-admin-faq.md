@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4c8601e15a415e680028b2259a4c2b8e56dbd3b4
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: dce044a3f143ba85732c8345639ea57f44f05d5f
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297233"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926581"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration af Power BI – ofte stillede spørgsmål
 
@@ -41,14 +41,13 @@ Denne artikel omhandler ofte stillede spørgsmål om Power BI-administration. Du
 * [Hvordan fjerner jeg Power BI for brugere, der allerede er tilmeldt?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Hvordan får jeg besked, når nye brugere tilmelder sig min lejer?](#how-do-i-know-when-new-users-have-joined-my-tenant)
 * [Er der andre yderligere ting, jeg skal være forberedt på?](#are-there-any-additional-things-i-should-be-prepared-for)
-* [Er det gratis? Skal jeg betale for disse licenser?](#is-this-free-will-i-be-charged-for-these-licenses)
 * [Hvor findes min Power BI-lejer?](#where-is-my-power-bi-tenant-located)
 * [Hvad er Power BI SLA (Serviceniveauaftale)?](#what-is-the-power-bi-sla)
 
 **Sikkerhed i Power BI**
 
 * [Opfylder Power BI nationale, regionale og branchespecifikke overholdelseskrav?](#does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements)
-* [Hvordan fungerer sikkerhed i Power BI?](#how-does-security-work-in-power-bi?)
+* [Hvordan fungerer sikkerhed i Power BI?](#how-does-security-work-in-power-bi)
 
 ## <a name="sign-up-for-power-bi"></a>Tilmeld dig Power BI
 ### <a name="how-do-users-sign-up-for-power-bi"></a>Hvordan tilmelder brugerne sig Power BI?
@@ -232,10 +231,7 @@ Du oplever måske en stigning i anmodninger om nulstilling af adgangskode. Se [N
 
 Du kan fjerne en bruger fra lejeren vha. standardprocessen i Office 365 Administration. Men hvis brugeren stadig har en aktiv mailadresse fra organisationen, kan vedkommende tilmelde sig igen, medmindre du blokerer alle brugere fra at tilmelde sig.
 
-### <a name="is-this-free-will-i-be-charged-for-these-licenses"></a>Er det gratis? Skal jeg betale for disse licenser?
-**Power BI (gratis)**-licenser er til den gratis version af Power BI. Hvis du er interesseret i yderligere funktioner, så se [Power BI Pro-versionen](service-premium.md).
-
-### <a name="where-is-my-power-bi-tenant-located"></a>Hvor findes min Power BI-lejer?
+### <a name="where-is-my-power-bi-tenant-located"></a>Hvor er min Power BI-lejer placeret?
 Lær, hvordan du finder ud af, hvor din Power BI-lejer er, også kendt som dataregion, ved at se [Hvor findes min Power BI-lejer?](service-admin-where-is-my-tenant-located.md)
 
 ### <a name="what-is-the-power-bi-sla"></a>Hvad er Power BI SLA?
@@ -252,7 +248,6 @@ Power BI er bygget på grundlag af Office 365, der igen er bygget på Azure-tjen
 [Power BI-administrationsportal](service-admin-portal.md)  
 [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md)  
 [Tilmelding via selvbetjening til Power BI](service-self-service-signup-for-power-bi.md)  
-[Power BI (gratis) i din organisation](service-admin-service-free-in-your-organization.md)  
 [Køb Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Power BI Premium – hvad er det?](service-premium.md)  
 [Sådan køber du Power BI Premium](service-admin-premium-purchase.md)  

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2b5959049b65d32eebf7f484e8485ff59a10f459
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5bb3f49ef49ed7bbaeb3f52e0711247e0abdc615
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34286077"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37134679"
 ---
 # <a name="use-insights-in-power-bi-desktop-preview"></a>Brug indsigt i Power BI Desktop (prøveversion)
 Du kan bede **Power BI Desktop** om at forklare forøgelser eller reduktioner i diagrammer og få hurtige og automatiske indsigtsanalyser om dine data. Du skal blot højreklikke på et datapunkt og vælge **Analysér > Forklar reduktionen** (eller forøgelsen, hvis den tidligere linje var lavere), så leveres der indsigt til dig i et brugervenligt vindue.
@@ -72,7 +72,7 @@ Desuden understøttes følgende modeltyper og datakilder ikke i øjeblikket for 
 ## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om **Power BI Desktop**, og hvordan du kommer i gang, i følgende artikler.
 
-* [Kom i gang med Power BI Desktop](desktop-getting-started.md)
+* [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 * [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)
 * [Opret forbindelse til data i Power BI Desktop](desktop-connect-to-data.md)

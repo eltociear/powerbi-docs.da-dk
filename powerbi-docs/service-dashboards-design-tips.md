@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 9c67aa0982733847cdca7d6079fa8887e6c1d1d2
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 7da86135a391f8a6206a913a1e13df423ad96fbd
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34247041"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944968"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips til udformning af et fantastisk Power BI-dashboard
 Nu, hvor du har oprettet et dashboard og tilføjet nogle felter, kan du overveje, hvordan du ikke bare gør dit dashboard flot, men også funktionelt. Generelt betyder det, at man sørger for, at den vigtigste information er tydelig, og at udseendet er rent og ryddeligt.
@@ -59,7 +59,7 @@ De fleste læser oppefra og ned, så sæt det højeste detaljeniveau øverst, og
 ## <a name="use-the-right-visualization-for-the-data-and-format-it-for-easy-reading"></a>Brug den rigtige visualisering til dataene, og formatér den, så den er letlæselig
 Undgå at variere visualiseringerne bare for variationens skyld.  Visualiseringer skal give et overblik og være enkle at "læse" og forstå.  En enkel grafisk visualisering er nok til visse data og visualiseringer. Men andre data kan kræve en mere kompleks visualisering - brug titler og etiketter og andre brugerdefinerede hjælpemidler til at hjælpe læseren.  
 
-* [Vælg relevante datavisualiseringer](http://blogs.msdn.com/b/microsoft_business_intelligence1/archive/2012/10/08/best-practices-in-data-visualization.aspx). Vær forsigtig med at bruge diagrammer, der forvrænger virkeligheden, medføre udgangspunkt, dvs. 3D-diagrammer. Vær opmærksom på, at det er vanskeligt for den menneskelige hjerne at fortolke cirkulære former. Cirkeldiagrammer, kransediagrammer, målere og andre cirkulære diagramtyper kan se flotte ud, men de er ikke den bedste metode til visualisering af data.
+* [Vælg relevante datavisualiseringer](https://www.youtube.com/watch?v=-tdkUYrzrio). Vær forsigtig med at bruge diagrammer, der forvrænger virkeligheden, medføre udgangspunkt, dvs. 3D-diagrammer. Vær opmærksom på, at det er vanskeligt for den menneskelige hjerne at fortolke cirkulære former. Cirkeldiagrammer, kransediagrammer, målere og andre cirkulære diagramtyper kan se flotte ud, men de er ikke den bedste metode til visualisering af data.
 * Vær konsekvent med diagramskalaer på akser, sortering af diagramdimensioner og også de farver, som bruges til dimensionsværdier i diagrammer.
 * Sørg for, at kode kvantitative data pænt. Brug ikke mere end tre eller fire tal ved visning af tal. Vis måleenheder for et eller to tal til venstre for decimalkommaet og skala for tusindtals- eller millionseparatorer, dvs. 3,4 millioner og ikke 3.400.000.
 * Bland ikke præcisions- og tidsniveauer. Sørg for, at tidsrammerne forstås korrekt.  Undgå at have et diagram, der har sidste måned ud for filtrerede diagrammer fra en bestemt måned i året.

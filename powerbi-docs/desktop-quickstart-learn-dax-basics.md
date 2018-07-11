@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 49f6e073d40ef00413ba38dd709780758cf1e448
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 1c9f838261658a77fa8a4d019e610de72649bbbb
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34291022"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37600768"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>Grundlæggende DAX i Power BI Desktop
 Denne artikel henvender sig til nye brugere af Power BI Desktop. Hensigten med den er, at du får en hurtig og nem introduktion til, hvordan du kan bruge DAX (Data Analysis Expressions) til at løse en række grundlæggende problemer med beregning og dataanalyse. Vi vil gennemgå nogle grundlæggende oplysninger, en række opgaver, du kan udføre, og et par test for at se, hvad du har lært. Når du har gennemgået denne artikel, bør du have en god forståelse af de vigtigste grundlæggende begreber i DAX.
@@ -83,33 +83,33 @@ Lad os oprette en simpel formel. Denne opgave vil være med til at give dig en b
 ### <a name="task-create-a-measure-formula"></a>Opgave: Opret en målingsformel
 For at udføre denne opgave skal du åbne filen Contoso Sales Sample Power BI Desktop.
     
-1.  I rapportvisning skal du på feltlisten højreklikke på tabellen **Sales** og derefter klikke på **New Measure**.
+1. I rapportvisning skal du på feltlisten højreklikke på tabellen **Sales** og derefter klikke på **New Measure**.
     
-2.  I formellinjen skal du erstatte **Measure** ved at indtaste et nyt målingsnavn **Salg i forrige kvartal**.
+2. I formellinjen skal du erstatte **Measure** ved at indtaste et nyt målingsnavn **Salg i forrige kvartal**.
     
-3.  Skriv **SUM** efter lighedstegnet efterfulgt af en venstreparentes.
+3. Skriv **SUM** efter lighedstegnet efterfulgt af en venstreparentes.
     
-    I stedet for at indtaste navnet på en kolonne, der med det samme skal optælles, indtaster vi en anden funktion for at *filtrere* de data, der skal optælles.
+   I stedet for at indtaste navnet på en kolonne, der med det samme skal optælles, indtaster vi en anden funktion for at *filtrere* de data, der skal optælles.
     
-4.  Skriv **CALCULATE** mellem parenteserne efterfulgt af en venstreparentes.
+4. Skriv **CALCULATE** mellem parenteserne efterfulgt af en venstreparentes.
     
-    Du skal bruge CALCULATE-funktionen til at filtrere de beløb, som vi vil optælle efter et argument, som vi sender til funktionen CALCULATE. Dette er, hvad der refereres til som indlejrede funktioner. Funktionen CALCULATE har mindst to argumenter. Det første er udtrykket, der skal evalueres, og det andet er et filter.
+   Du skal bruge CALCULATE-funktionen til at filtrere de beløb, som vi vil optælle efter et argument, som vi sender til funktionen CALCULATE. Dette er, hvad der refereres til som indlejrede funktioner. Funktionen CALCULATE har mindst to argumenter. Det første er udtrykket, der skal evalueres, og det andet er et filter.
    
-5.  Mellem parentesen **()** til funktionen **CALCULATE** skal du skrive **Sales[SalesAmount**. Dette er det første udtryksargument til vores CALCULATE-funktion.
+5. Mellem parentesen **()** til funktionen **CALCULATE** skal du skrive **Sales[SalesAmount**. Dette er det første udtryksargument til vores CALCULATE-funktion.
     
-6.  Skriv et komma (**,**) for at angive det første filter, skriv derefter **PREVIOUSQUARTER** efterfulgt af en startparentes.
+6. Skriv et komma (**,**) for at angive det første filter, skriv derefter **PREVIOUSQUARTER** efterfulgt af en startparentes.
     
-    Du skal bruge tidsintelligensfunktionen PREVIOUSQUARTER til at filtrere vores SUM-resultater efter det forrige kvartal.
+   Du skal bruge tidsintelligensfunktionen PREVIOUSQUARTER til at filtrere vores SUM-resultater efter det forrige kvartal.
     
-7.  Skriv **Calendar[DateKey]** i **parentesen** til funktionen PREVIOUSQUARTER.
+7. Skriv **Calendar[DateKey]** i **parentesen** til funktionen PREVIOUSQUARTER.
     
-    Funktionen PREVIOUSQUARTER har ét argument, som er en kolonne, der indeholder et sammenhængende datoområde.
+   Funktionen PREVIOUSQUARTER har ét argument, som er en kolonne, der indeholder et sammenhængende datoområde.
     
-8.  Sørg for, at begge argumenter, der overføres til funktionen PREVIOUSQUARTER og funktionen CALCULATE, lukkes af to afsluttende parenteser **))**.
+8. Sørg for, at begge argumenter, der overføres til funktionen PREVIOUSQUARTER og funktionen CALCULATE, lukkes af to afsluttende parenteser **))**.
     
    Din formel skal se sådan ud:
     
-    **Salg i forrige kvartal = CALCULATE(SUM(Sales[SalesAmount]), PREVIOUSQUARTER(Calendar[DateKey]))**
+   **Salg i forrige kvartal = CALCULATE(SUM(Sales[SalesAmount]), PREVIOUSQUARTER(Calendar[DateKey]))**
     
 9. Klik på markeringen ![](media/desktop-quickstart-learn-dax-basics/qsdax_syntax_taskcheckmark.png) i formellinjen, eller tryk på Enter for at validere formlen og føje den til modellen.
 

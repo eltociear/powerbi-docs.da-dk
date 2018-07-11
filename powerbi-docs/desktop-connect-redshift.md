@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b1085c3715d9b4b75925cec1b94ec49b0f5792f7
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: c90d2ecf5c3722dfa3991d7001f7c5054e48e6a6
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813129"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135116"
 ---
 # <a name="connect-to-amazon-redshift-in-power-bi-desktop"></a>Opret forbindelse til Amazon Redshift i Power BI Desktop
 I **Power BI Desktop** kan du oprette forbindelse til en **Amazon Redshift**-database og bruge de underliggende data på samme måde som enhver anden datakilde i Power BI Desktop.
@@ -45,7 +45,7 @@ Når du har foretaget valg i vinduet **Navigator**, kan du enten **indlæse** el
 ## <a name="next-steps"></a>Næste trin
 Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:
 
-* [Introduktion til Power BI Desktop](desktop-getting-started.md)
+* [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)
 * [Udform og kombiner data med Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Opret forbindelse til Excel-projektmapper i Power BI Desktop](desktop-connect-excel.md)   

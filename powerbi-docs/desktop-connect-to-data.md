@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 50a5d3d97e90879dcb542c441f129f468a95c6c7
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 4b1077b62baeee2412620e6ee2aa6aabc6838863
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34285548"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136381"
 ---
 # <a name="connect-to-data-in-power-bi-desktop"></a>Opret forbindelse til data i Power BI Desktop
 I Power BI Desktop kan du nemt oprette forbindelse til en stadig større verden af data. Hvis du ikke har Power BI Desktop, kan du [downloade](http://go.microsoft.com/fwlink/?LinkID=521662) og installere det.
@@ -67,7 +67,7 @@ Det er selvfølgelig en simpel model med en enkelt dataforbindelse. De fleste Po
 ### <a name="next-steps"></a>Næste trin
 Du kan gøre mange forskellige ting med Power BI Desktop. Du kan finde flere oplysninger om funktionerne i følgende ressourcer:
 
-* [Introduktion til Power BI Desktop](desktop-getting-started.md)
+* [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 * [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)
 * [Udform og kombiner data med Power BI Desktop](desktop-shape-and-combine-data.md)

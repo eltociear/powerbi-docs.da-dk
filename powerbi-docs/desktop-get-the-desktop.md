@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 52ef1f6526b83a54ba26fdffaf8150049c55880d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 319c636c660aff3ab651475e2d7b553fef49b8cd
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813313"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137324"
 ---
 # <a name="get-power-bi-desktop"></a>Hent Power BI Desktop
 Med **Power BI Desktop** kan du oprette avancerede forespørgsler, modeller og rapporter, som visualiserer data. Med **Power BI Desktop** kan du oprette datamodeller, oprette rapporter og dele dit arbejde ved at udgive det i Power BI-tjenesten.  **Power BI Desktop** kan downloades gratis.
@@ -108,9 +108,9 @@ Nogle brugere støder på en fejl, der svarer til følgende, når du bruger en f
 Du kan som regel løse problemet ved at opdatere til den aktuelle version af Power BI Desktop.
 
 ## <a name="next-steps"></a>Næste trin
-Når du får **Power BI Desktop** installeret, kan følgende indhold hjælpe dig med at komme hurtigt i gang:
+Når du får **Power BI Desktop** installeret, kan følgende indhold hjælpe dig med at komme i gang hurtigt:
 
-* [Introduktion til Power BI Desktop](desktop-getting-started.md)
+* [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 * [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)
 * [Opret forbindelse til data i Power BI Desktop](desktop-connect-to-data.md)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/05/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 67863b261bb8f3490d20ad21786313541df33388
-ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
+ms.openlocfilehash: a86b1d6823a1d889b47015d1213a9a056c537703
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250309"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926645"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Det var ikke muligt at føje Power BI til en partners Office 365-abonnement
 Office 365 giver virksomheder mulighed for at forhandle Office 365 samlet og integreret med deres egne løsninger, hvorved slutkunder får adgang til et enkelt kontaktpunkt for køb, fakturering og support.
@@ -33,7 +33,7 @@ Hvis du ikke kan købe Power BI direkte, og alt afhængigt af hvilken type af Po
 
 [Power BI (gratis)](#power-bi-free)
 
-[Power BI Pro og Premium](#power-bi-pro)
+[Power BI Pro og Premium](#power-bi-pro-and-premium)
 
 ## <a name="power-bi-free"></a>Power BI (gratis)
 Hvis du er tilfreds med den gratis version af Power BI, kan du tilmelde dig den gratis tjeneste. Som standard er individuelle tilmeldinger, også kaldet ad-hoc-abonnementer, deaktiveret. Når du forsøger at tilmelde dig Power BI, får du vist en meddelelse om, at it-afdelingen har slået tilmelding til Microsoft Power BI fra.

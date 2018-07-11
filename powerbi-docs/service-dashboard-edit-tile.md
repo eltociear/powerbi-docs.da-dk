@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 07db52bd2ffd881417f7ff59647c6779f7dc6bce
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: e2df8ecd746e34b85a3fdd15943ff6eda5712663
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248336"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598972"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Rediger eller fjern et dashboard-felt
 
@@ -35,12 +35,12 @@ Denne artikel omhandler følgende.
 * [Fastgør et felt til et andet dashboard](#different)
 * [Slet et felt](#delete)
   
- > [!TIP]
- > Hvis du vil ændre visualiseringen, der vises på selve feltet, skal du slette feltet og tilføje et nyt [dashboard-felt](service-dashboard-tiles.md).
- > 
+  > [!TIP]
+  > Hvis du vil ændre visualiseringen, der vises på selve feltet, skal du slette feltet og tilføje et nyt [dashboard-felt](service-dashboard-tiles.md).
 
- ### <a name="prerequisites"></a>Forudsætninger
- 1. For at følge med skal du åbne Power BI-tjenesten (ikke Power BI Desktop) og [downloade eksemplet på analyse af it-forbrug](sample-it-spend.md). Når "Udført" vises, skal du vælge **Gå til dashboard**
+  
+## <a name="prerequisites"></a>Forudsætninger
+For at følge med skal du åbne Power BI-tjenesten (ikke Power BI Desktop) og [downloade eksemplet på analyse af it-forbrug](sample-it-spend.md). Når "Udført" vises, skal du vælge **Gå til dashboard**
 
 - - -
 <a name="create"></a>

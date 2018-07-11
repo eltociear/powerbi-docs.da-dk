@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fd4198bb6b826f8d4af22e83e313c4c0b8101024
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 016237c95d3494435931e143ff34dbe4a82abb55
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34299303"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599651"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>Opret visuelle R-elementer i Power BI-tjenesten
 Power BI-tjenesten understøtter visning og interaktion med visuelle elementer, der er oprettet med R-scripts. Visuelle elementer, der er oprettet med R-scripts, også kaldet *R-visuals*, kan vise avanceret dataformatering og analyse, f.eks. prognoser, ved hjælp af styrken i R's omfattende analyse- og visualiseringsfunktioner.
@@ -37,7 +37,7 @@ Når rapporten er oprettet i **Power BI Desktop**, kan du udgive rapporten på P
 
 Vær opmærksom på, at ikke alle R-pakker understøttes på tjenesten. Se de understøttede pakker sidst i denne artikel for at få vist listen over pakker, der understøttes i øjeblikket på Power BI-tjenesten.
 
-Du kan downloade denne [Power BI Desktop-eksempelfil](http://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample SL.pbix) (.pbix-fil), der indeholder nogle visuelle R-elementer, for at se, hvordan det fungerer, og for at eksperimentere.
+Du kan downloade denne [Power BI Desktop-eksempelfil](http://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix-fil), der indeholder nogle visuelle R-elementer, for at se, hvordan det fungerer, og for at eksperimentere.
 
 Visuelle R-elementer, der er oprettet i **Power BI Desktop**, og derefter publiceres på Power BI-tjenesten, fungerer i de fleste tilfælde som andre visuelle elementer på Power BI-tjenesten. Du kan arbejde med, filtrere, oprette udsnit af og fastgøre dem til et dashboard eller dele dem med andre. Du kan finde flere oplysninger om at dele dashboards og visuelle elementer under [Del et dashboard med kolleger og andre](service-share-dashboards.md). Én forskel fra andre visuelle elementer er, at visuelle R-elementer ikke kan vise værktøjstip og ikke kan bruges til at filtrere andre visuelle elementer.
 

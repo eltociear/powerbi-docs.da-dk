@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: b7a49a04ed344d6977dba5ac739c0f0d41aca5b9
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 6be8c6b5837fc9e9a0b8456b7c545e7f942eabe5
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34239124"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092201"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-onedrive-or-sharepoint-online"></a>Opdater et datasæt baseret på en Excel-arbejdsmappe på OneDrive eller SharePoint Online
 Du kan importere Excel-arbejdsmapper, der er gemt på din lokale computer eller lagret i clouden, som f.eks. OneDrive for Business eller SharePoint Online. Vi vil nu se på fordelene ved at bruge cloudlagring til dine Excel-filer. Du kan finde flere oplysninger om, hvordan du importerer Excel-filer til Power BI, under [Hent data fra Excel-projektmappefiler](service-excel-workbook-files.md).
@@ -45,7 +45,7 @@ I Power BI understøttes "Opdater nu" og "Planlæg opdatering" for de datasæt, 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive eller OneDrive for Business. Hvad er forskellen?
 Hvis du har både et personligt OneDrive og OneDrive for Business, anbefales det, at du opbevarer alle filer, som du vil importere til Power BI, i OneDrive for Business. Årsag: Du bruger sandsynligvis to forskellige konti til at logge på dem.
 
-Når du opretter forbindelse til OneDrive for Business i Power BI, sker det normalt automatisk, fordi den konto, du bruger til at logge på Power BI med, ofte er den samme konto, der bruges til at logge på OneDrive for Business. Men med et personligt OneDrive kan du logge på med en anden [Microsoft-konto](http://www.microsoft.com/account/default.aspx).
+Når du opretter forbindelse til OneDrive for Business i Power BI, sker det normalt automatisk, fordi den konto, du bruger til at logge på Power BI med, ofte er den samme konto, der bruges til at logge på OneDrive for Business. Men med et personligt OneDrive kan du logge på med en anden [Microsoft-konto](https://account.microsoft.com).
 
 Når du logger på med din Microsoft-konto, skal du vælge Forbliv logget på. Power BI kan derefter synkronisere eventuelle opdateringer, som du foretager i filen i Power BI Desktop, med datasæt i Power BI  
     ![](media/refresh-excel-file-onedrive/refresh_signin_keepmesignedin.png)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 58e6dc99198eb4f031dd28b5c80cc8babb03dbfb
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: d5f2fa0abe6f0503ce5f41387f66db928ae0267e
+ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247258"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37145404"
 ---
 # <a name="troubleshooting-power-bi-gateway---personal"></a>Fejlfinding af Power BI Gateway – Personal
 Nedenfor gennemgås nogle almindelige problemer, der kan opstå, når du bruger Power BI Gateway – Personal.
@@ -146,7 +146,7 @@ Du kan alternativt gå til **Temp-mappen** (% temp %) og søge efter filer, der 
 ## <a name="next-steps"></a>Næste trin
 [Konfiguration af proxyindstillinger for Power BI Gateways](service-gateway-proxy.md)  
 [Opdatering af data](refresh-data.md)  
-[Power BI-gateway – personal](personal-gateway.md)  
+[Power BI-gateway – personal](service-gateway-personal-mode.md)  
 [Fejlfinding af feltfejl](refresh-troubleshooting-tile-errors.md)  
 [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

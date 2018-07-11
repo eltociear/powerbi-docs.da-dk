@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: c2b9a106c4007af868cf69902ce511da8e03e75f
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: e4ffc542a9564ba3893245ef637b3edd01c38640
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34244555"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598749"
 ---
 # <a name="change-the-size-of-a-report-page"></a>Skift størrelsen på en rapportside
 I den [tidligere artikel og video](power-bi-report-display-settings.md) lærte du to forskellige måder at styre sidevisning i Power BI-rapporter: **Vis** og **Sidestørrelse**. Sidevisning og Sidestørrelse fås i både Power BI-tjenesten og Power BI Desktop med næsten samme udseende og funktionsmåde, men i dette selvstudium bruger vi Power BI-tjenesten.
@@ -31,19 +31,19 @@ I den [tidligere artikel og video](power-bi-report-display-settings.md) lærte d
    ![](media/power-bi-change-report-display-settings/pbi_fit_to_page.png)
 2. Sørg for, at der ikke er valgt nogen visuelle effekter på lærredet. Vælg **Vis** og gennemse visningsindstillingerne.
 
-    * I Læsetilstand ser du dette.
+   * I Læsetilstand ser du dette.
 
      ![](media/power-bi-change-report-display-settings/power-bi-page-view-menu-new.png)
-    * I Redigeringstilstand ser du dette.
+   * I Redigeringstilstand ser du dette.
 
-    ![](media/power-bi-change-report-display-settings/power-bi-view-editing-view.png)
+     ![](media/power-bi-change-report-display-settings/power-bi-view-editing-view.png)
 
-1. Lad os se, hvordan siden ser ud til, vha. indstillingen **Faktisk størrelse**.
+3. Lad os se, hvordan siden ser ud til, vha. indstillingen **Faktisk størrelse**.
 
    ![](media/power-bi-change-report-display-settings/power-bi-actal-size2.png)
 
    Ikke fantastisk. Dashboardet har nu dobbelte rullepaneler.
-2. Skift til **Tilpas til bredde**.
+4. Skift til **Tilpas til bredde**.
 
    ![](media/power-bi-change-report-display-settings/pbi_fit_to_width.png)
 

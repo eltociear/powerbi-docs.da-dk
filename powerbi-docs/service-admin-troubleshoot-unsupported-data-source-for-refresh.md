@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 9ea17fd80c928ee0193ca94aac88fa00f362a523
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 864e7a3d78386f6996d866f45558add3b51faa69
+ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34240460"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37145183"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Fejlfinding af ikke-understøttet datakilde til opdatering
 Du får muligvis vist en fejl, når du forsøger at konfigurere et datasæt til planlagt opdatering.
@@ -39,7 +39,7 @@ Hvis du ikke er sikker på, hvilken datakilde, der er blevet brugt, kan du finde
 
 ## <a name="next-steps"></a>Næste trin
 [Dataopdatering](refresh-data.md)  
-[Power BI Gateway - Personal](personal-gateway.md)  
+[Power BI Gateway - Personal](service-gateway-personal-mode.md)  
 [Datagateway i det lokale miljø](service-gateway-onprem.md)  
 [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
 [Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)  

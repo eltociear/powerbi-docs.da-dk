@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 7a0a4f6296df351272a69ca30c8a8c08e1f9bcbc
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5d889787b6ae7e6331522bbef1a6f1c748d4533d
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34287848"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136335"
 ---
 # <a name="combine-files-binaries-in-power-bi-desktop"></a>Kombiner filer (binære) i Power BI Desktop
 En effektiv måde at importere data på i **Power BI Desktop** er at kombinere flere filer, som har det samme skema, til en enkelt logisk tabel. I versionen af **Power BI Desktop** fra november 2016 (og efterfølgende versioner) er denne praktiske og populære metode blevet nemmere og mere omfattende, som beskrevet i denne artikel.
@@ -58,7 +58,7 @@ Derudover kan du nemt kan anvende yderligere transformations- eller udtræknings
 ## <a name="next-steps"></a>Næste trin
 Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:
 
-* [Introduktion til Power BI Desktop](desktop-getting-started.md)
+* [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)
 * [Udform og kombiner data med Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Opret forbindelse til CSV-filer i Power BI Desktop](desktop-connect-csv.md)   

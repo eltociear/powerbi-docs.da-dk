@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ec5b46dcfebf614e70a0b8ebf858af7b34906eae
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 8813294f359c6bd6e1bb01fa3cc2ec3f5eb3d280
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34290700"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598251"
 ---
 # <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>Brug links til OneDrive for Business i Power BI Desktop
 Mange brugere har Excel-projektmapper gemt på deres OneDrive for Business-drev, som vil være velegnet til brug med Power BI Desktop. Med **Power BI Desktop** kan du bruge onlinelinks til **Excel**-filer, der er gemt i **OneDrive for Business**, til at oprette rapporter og visualiseringer. Du kan bruge en **OneDrive for Business**-gruppekonto eller din egen **OneDrive for Business**-konto.
@@ -26,7 +26,7 @@ Der kræves nogle få specifikke trin, før du kan hente et onlinelink fra **One
 1. Gå til placeringen af OneDrive for Business ved hjælp af en browser. Højreklik på den fil, du vil bruge, og vælg **Åbn i Excel**.
    
    > [!NOTE]
-> Grænsefladen i browseren ligner måske ikke helt følgende billede. Der er mange måder at vælge **Åbn i Excel** på for filer i grænsefladen for browseren med **OneDrive for Business**. Du kan bruge en hvilken som helst indstilling, der giver dig mulighed for at åbne filen i Excel.
+   > Grænsefladen i browseren ligner måske ikke helt følgende billede. Der er mange måder at vælge **Åbn i Excel** på for filer i grænsefladen for browseren med **OneDrive for Business**. Du kan bruge en hvilken som helst indstilling, der giver dig mulighed for at åbne filen i Excel.
    > 
    > 
    

@@ -7,19 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 06/13/2018
 ms.author: maghan
-ms.openlocfilehash: 3b0e9c148b86d8bf762a31cca5c3421df454502d
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c2784bf8e8dca857ae2a1b55d1ad8560e552cafb
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34481716"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37780552"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Hardware- og softwarekrav til installation af Power BI-rapportserver
 Her kan du finde minimumskrav til hardware og for at kunne installere og køre Power BI-rapportserver.
 
 ## <a name="processor-memory-and-operating-system-requirements"></a>Krav til processor, hukommelse og operativsystem
+
 | Komponent | Krav |
 | --- | --- |
 | .NET Framework |4.6<br><br>Du kan installere .NET Framework manuelt fra [Microsoft .NET Framework 4.6 (webinstallation) til Windows](http://support.microsoft.com/kb/3045560).<br/><br/> Du kan få yderligere oplysninger, anbefalinger og vejledning om .NET Framework 4.6 i [.NET Framework-installationsvejledning for udviklere](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>Windows 8.1 og Windows Server 2012 R2 kræver [KB2919355](http://support.microsoft.com/kb/2919355), før du installerer .NET Framework 4.6. |
@@ -41,8 +42,6 @@ SQL Server bruges til at hoste rapportserverdatabaserne. Forekomsten af SQL Serv
 * SQL Server 2016
 * SQL Server 2014
 * SQL Server 2012
-* SQL Server 2008 R2
-* SQL Server 2008
 
 Oprettelse af rapportserverdatabasen på en fjerncomputer kræver, at du konfigurerer forbindelsen til at bruge en domænebrugerkonto eller en tjenestekonto, som har netværksadgang. Hvis du beslutter at bruge en ekstern SQL Server-forekomst, skal du overveje grundigt, hvilke legitimationsoplysninger rapportserveren skal bruge til at oprette forbindelse til SQL Server-forekomsten. Få mere at vide i [Konfigurer en rapportservers databaseforbindelse](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)
 

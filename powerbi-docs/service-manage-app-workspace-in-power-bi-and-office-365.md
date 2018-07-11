@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 859ab3fdfd06040d8bbf131ab91ea6c9f84deb40
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d298c750d23e22ef0a6b2791916add13bb260ad0
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241941"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965199"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Administrer dit apparbejdsområde i Power BI og Office 365
 Som opretter eller administrator af et [apparbejdsområde i Power BI](service-install-use-apps.md) eller i Office 365 kan du administrere visse aspekter i arbejdsområdet i Power BI. Andre aspekter kan du administrere i Office 365. 
@@ -33,7 +33,7 @@ Som opretter eller administrator af et [apparbejdsområde i Power BI](service-in
 * Se gruppens mailadresse.
 * Slette gruppen.
 
-Du skal bruge en [Power BI Pro](service-free-vs-pro.md)-licens for at være administrator eller medlem af et apparbejdsområde. Dine appbrugere har også brug for en Power BI Pro-licens, medmindre dit apparbejdsområde er i kraft af en Power BI Premium-kapacitet. I så fald kan forretningsbrugere i stedet få adgang til din app med en gratis licens til Power BI. Læs [Hvad er Power BI Premium?](service-premium.md) for at få flere oplysninger.
+Du skal bruge en [Power BI Pro](service-free-vs-pro.md)-licens for at være administrator eller medlem af et apparbejdsområde. Dine appbrugere har også brug for en Power BI Pro-licens, medmindre dit apparbejdsområde er i kraft af en Power BI Premium-kapacitet. Læs [Hvad er Power BI Premium?](service-premium.md) for at få flere oplysninger.
 
 ## <a name="edit-your-app-workspace-in-power-bi"></a>Rediger dit apparbejdsområde i Power BI
 1. I Power BI-tjenesten skal du vælge pilen ud for **Arbejdsområder** > vælge ellipsen (**...** ) ud for navnet på dit arbejdsområde > **Rediger arbejdsområde**. 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d65281539bcc27ce24971a6da0945908ba65e754
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 1a39b347a68cb5557ffff7758efbfba86884b5ce
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297095"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598995"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Tilpas visualiseringernes titler, forklaringer og baggrunde
 I dette selvstudium lærer du et par forskellige måder, hvorpå du kan tilpasse dine visualiseringer.   Der findes mange muligheder for at tilpasse dine visualiseringer. Den bedste måde at lære dem at kende på, er ved at prøve sig frem med indstillingerne under fanen Formatering (vælg ikonet med malerullen).  I denne artikel kan du se, hvordan du tilpasser en visualiserings titel, forklaring og baggrund.  
@@ -41,26 +41,26 @@ Hvis du vil følge med, skal du logge på Power BI-tjenesten (app.powerbi.com) o
 
 1. Gå til siden "New Stores" i rapporten, og vælg søjlediagrammet "Open Store Count by Open Month".
 2. I ruden Visualiseringer kan du vælge ikonet med malerullen for at få vist formateringsindstillingerne.  og vælg **Titel** for at udvide den sektion.  
-   
+
    ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-formatting-menu.png)
 3. Slå **Titel** til eller fra ved at vælge skyderen Til (eller Fra). Lad den stå på **Til**.  
-   
+
    ![](media/power-bi-visualization-customize-title-background-and-legend/onoffslider.png)
 4. Jeg retter **Titeltekst** ved at skrive **Store count by month opened** i tekstfeltet.  
 5. Ret **Skriftfarve** til orange og **Baggrundsfarve** til gul.
-   
+
    * Vælg rullelisten, og vælg en farve fra **Temafarver**, **Seneste farver** eller **Brugerdefineret farve**.
    * Vælg rullelisten for at lukke farvevinduet.  
      ![](media/power-bi-visualization-customize-title-background-and-legend/customizecolorpicker.png)
-   
+
    Du kan til enhver tid gendanne de oprindelige farver ved at vælge **Vend tilbage til standard** i farvevinduet.
 6. Øg tekststørrelsen til 12.
 7. Den sidste tilpasning af diagramtitlen er at justere placeringen, så den står midt i visualiseringen. Som standard er titlen venstrejusteret.  
    ![](media/power-bi-visualization-customize-title-background-and-legend/customizealign.png)
-   
+
     På dette punkt i selvstudiet skulle **titlen** i dit søjlediagram se nogenlunde sådan ud:  
     ![](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
-   
+
     Hvis du vil fjerne alle tilpasningerne af titlen, skal du vælge **Vend tilbage til standard** nederst i ruden **Titel**.  
     ![](media/power-bi-visualization-customize-title-background-and-legend/revertall.png)
 
@@ -69,29 +69,30 @@ Udvid indstillingerne under Baggrund i det samme søjlediagram.
 
 1. Du kan slå baggrunden til og fra ved at angive skyderen til Til (eller Fra). Lad den stå på **Til**.
 2. Skift baggrundsfarve til 74 % grå.
-   
+
    * Vælg rullelisten, og vælg en grå farve fra **Temafarver**, **Seneste farver** eller **Brugerdefineret farve**.
    * Ret Gennemsigtighed til 74 %.   
      ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
-   
+
    Hvis du vil fjerne alle tilpasningerne af baggrunden, skal du vælge **Vend tilbage til standard** nederst i ruden **Baggrund**.
 
 ## <a name="customize-visualization-legends"></a>Tilpas forklaringer i en visualisering
 1. Åbn rapportsiden **Overview**, og vælg diagrammet "Total Sales Variance by FiscalMonth and District Manager".
 2. Under fanen Visualiseringer skal du vælge ikonet med malerullen for at åbne ruden Formatering.  
 3. Udvid indstillingerne under **Forklaring**.
-   
+
       ![](media/power-bi-visualization-customize-title-background-and-legend/legend.png)
 4. Du kan slå forklaringen til og fra ved at angive skyderen til Til (eller Fra). Lad den stå på **Til**.
 5. Flyt forklaringen til venstre side af visualiseringen.    
 6. Føj en titel til forklaringen ved at slå **Titel** **Til**, og skriv **Chefer** i feltet **Navn på forklaring**.
    ![](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
-   
+
    Hvis du vil fjerne alle tilpasningerne af forklaringen, skal du vælge **Vend tilbage til standard** nederst i ruden **Forklaring**.
 
 <a name="list"></a>
 
 ## <a name="visualization-types-that-can-be-customized"></a>Visualiseringstyper, der kan tilpasses
+
 | Visualisering | Titel | Baggrund | Forklaring |
 |:--- |:--- |:--- |:--- |
 | Områdediagram |ja |ja |ja |

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: aa4bc70fa67af4e3b82b8ed9a4eb16851d98eaeb
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a4c931b671840ca78f340005c30aeb92454ca2a6
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297141"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599175"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Administrer din datakilde – Analysis Services
 Når du har installeret datagatewayen i det lokale miljø, skal du tilføje datakilder, der kan bruges sammen med gatewayen. I denne artikel kan du se, hvordan du arbejder med gateways og datakilder. Du kan bruge Analysis Services-datakilden til enten planlagte opdateringer eller direkte forbindelser.
@@ -52,7 +52,7 @@ Hvis du fjerner en gateway, slettes også eventuelle datakilder under denne gate
 
 1. Vælg tandhjulsikonet ![](media/service-gateway-enterprise-manage-ssas/pbi_gearicon.png) i øverste højre hjørne > **Administrer gateways**.
 2. Gateway > **Fjern**
-   
+
    ![](media/service-gateway-enterprise-manage-ssas/datasourcesettings7.png)
 
 ## <a name="add-a-data-source"></a>Tilføj en datakilde
@@ -119,15 +119,13 @@ Benyt følgende fremgangsmåde for at komme til UPN-tilknytningsskærmen.
 2. Udvid den gateway, der indeholder Analysis Services-datakilden. Eller hvis du ikke har oprettet Analysis Services-datakilden, kan du gøre det på nuværende tidspunkt.
 3. Vælg datakilden, og vælg derefter fanen **Brugere**.
 4. Vælg **Tilknyt brugernavne**.
-   
+
     ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_02.png)
 
 Derefter får du vist indstillinger til at tilføje regler samt foretage test for en angiven bruger.
 
 > [!NOTE]
-> Du kan komme til at foretage ændringer af en bruger ved en fejl. Hvis **Erstat (Oprindelig værdi)** f.eks. er *@contoso.com*, og **Med (Nyt navn)** er *@contoso.local*, erstattes alle brugere med et tegn, der indeholder *@contoso.com*, af *@contoso.local*. Hvis **Erstat (Oprindeligt navn)** er *dave@contoso.com*, og **Med (Nyt navn)** er *dave@contoso.local*, sendes en bruger med logonnet v-dave@contoso.com som v-dave*@contoso.local*.
-> 
-> 
+> Du kan komme til at foretage ændringer af en bruger ved en fejl. Hvis **Erstat (Oprindelig værdi)** f.eks. er <em>@contoso.com</em>, og **Med (Nyt navn)** er <em>@contoso.local</em>, erstattes alle brugere med et tegn, der indeholder <em>@contoso.com</em>, af <em>@contoso.local</em>. Hvis **Erstat (Oprindeligt navn)** er <em>dave@contoso.com</em>, og **Med (Nyt navn)** er <em>dave@contoso.local</em>, sendes en bruger med logonnet v-dave@contoso.com som v-dave<em>@contoso.local</em>.
 
 ### <a name="ad-lookup-mapping"></a>Tilknytning af AD-opslag
 Hvis du vil udføre AD-opslag i det lokale miljø for at tilknytte AAD UPN'er til Active Directory-brugere igen, skal du benytte fremgangsmåden i dette afsnit. Lad os se, hvordan det fungerer.
@@ -147,17 +145,17 @@ I datagatewayen i det lokale miljø med konfigurerbar brugerdefineret brugertilk
 2. Slå attributten på den AD-person (f.eks *mail*) op, der er baseret på den indgående UPN-streng ("firstName.lastName@contoso.com") fra **Power BI-tjenesten**.
 3. Hvis AD-opslaget mislykkes, forsøger den at bruge det UPN, der blev overført som EffectiveUser til SSAS.
 4. Hvis AD-opslaget lykkes, hentes *UserPrincipalName* for den pågældende AD-person. 
-5. Mailadressen for *UserPrincipalName* overføres som *EffectiveUser* til SSAS, f.eks.:*Alias@corp.on-prem.contoso*
+5. Mailadressen for *UserPrincipalName* overføres som *EffectiveUser* til SSAS, f.eks.:<em>Alias@corp.on-prem.contoso</em>
 
 Sådan konfigurerer du gatewayen til at udføre AD-opslaget:
 
 1. Download og installér den nyeste gateway
 2. I gatewayen skal du ændre **datagatewaytjenesten i det lokale miljø**, så den kører med en domænekonto (i stedet for en lokal tjenestekonto – ellers fungerer AD-opslaget ikke korrekt på kørselstidspunktet). Du skal genstarte gatewaytjenesten, for at ændringerne kan træde i kraft.  Gå til gatewayappen på din maskine (søg efter "datagateway i det lokale miljø "). Det gør du ved at gå til **Tjenesteindstillinger > Rediger tjenestekonto**. Kontrollér, at du har genoprettelsesnøglen til denne gateway, da du skal gendanne den på den samme maskine, medmindre du vil oprette en ny gateway i stedet. 
 3. Gå til installationsmappen for gatewayen, *C:\Program Files\On-premises data gateway* som administrator for at sikre, at du har skriverettigheder, og rediger følgende fil:
-   
+
        Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 4. Rediger følgende to konfigurationsværdier i henhold til *dine* Active Directory-attributkonfigurationer af AD-brugerne. De konfigurationsværdier, der vises nedenfor, er kun nogle eksempler – du skal angive dem ud fra konfigurationen af Active Directory. 
-   
+
    ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
 5. Genstart **datagatewaytjenesten i det lokale miljø**, for at konfigurationsændringen kan træde i kraft.
 

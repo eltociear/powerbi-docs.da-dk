@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: e6dbd431a1ea37195a6cbb6e3d9a39d79a4e9b0d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 96c1709c1d85b8a960be9c96b6839b69b4f22eaa
+ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248129"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37145450"
 ---
 # <a name="configuring-scheduled-refresh"></a>Konfigurering af planlagt opdatering
 
@@ -26,7 +26,7 @@ ms.locfileid: "34248129"
 
 Hvis dine datasæt understøtter planlagt opdatering ved hjælp af Opdater nu og Planlæg opdatering, er der et par krav og indstillinger, som er vigtige for, at opdateringen bliver en succes. Det er: **Gatewayforbindelse**, **Legitimationsoplysninger for datakilde** og **Planlæg opdatering**. Lad os se nærmere på dem hver især.
 
-Følgende beskriver de tilgængelige muligheder for både [Power BI Gateway – Personal](personal-gateway.md) og [gatewayen i det lokale miljø](service-gateway-onprem.md).
+Følgende beskriver de tilgængelige muligheder for både [Power BI Gateway – Personal](service-gateway-personal-mode.md) og [gatewayen i det lokale miljø](service-gateway-onprem.md).
 
 Du kan gøre følgende for at åbne skærmen til planlægning af opdatering.
 
@@ -123,7 +123,7 @@ Nogle gange går opdateringen af data muligvis ikke som forventet. Dette skyldes
 
 ## <a name="next-steps"></a>Næste trin
 [Opdatering af data i Power BI](refresh-data.md)  
-[Power BI Gateway - Personal](personal-gateway.md)  
+[Power BI Gateway - Personal](service-gateway-personal-mode.md)  
 [Datagateway i det lokale miljø](service-gateway-onprem.md)  
 [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
 [Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)  

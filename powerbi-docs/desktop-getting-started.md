@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 606ef1f1c69643852a94a7d83ece93cca8940e7a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 175852a05c4964e6a476abf50684d9ffc12c4468
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34309917"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599863"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Kom i gang med Power BI Desktop
 Velkommen til **Introduktionsvejledning til Power BI Desktop**. Med denne korte præsentation af Power BI Desktop får du en idé om, hvordan det fungerer, og du får mulighed for at sætte skub i oprettelsen af robust datamodeller – sammen med fantastiske rapporter – som styrker din indsats på business intelligence-området. 
@@ -313,7 +313,7 @@ I **Power BI**-tjenesten vises den første side i rapporten. Nederst på siden k
 
 Du kan foretage ændringer i en rapport i **Power BI**-tjenesten ved at vælge **Rediger rapport** øverst i rapportcanvassen.
 
-Hvis du vil gemme din rapport, skal du vælge **Filer\> Gem som** i tjenesten. Der er alle mulige forskellige interessante visualiseringer, du kan oprette i **Power BI**-tjenesten på baggrund af din rapport og fastgøre til et *dashboard*. Du kan få mere at vide om dashboards i **Power BI**-tjenesten**[ under Tip til design af et fantastisk dashboard](service-dashboards-design-tips.md)**.
+Hvis du vil gemme din rapport, skal du vælge **Filer\> Gem som** i tjenesten. Der er alle mulige forskellige interessante visualiseringer, du kan oprette i **Power BI**-tjenesten på baggrund af din rapport og fastgøre til et *dashboard*. Du kan få mere at vide om dashboards i **Power BI**-tjenesten<strong>[ under Tip til design af et fantastisk dashboard](service-dashboards-design-tips.md)</strong>.
 
  ![](media/desktop-getting-started/gsg_share5.png)
 

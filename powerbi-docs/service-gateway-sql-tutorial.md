@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/03/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2dc47d1fdf539c20cc0aabadd65b0401dc172ae8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 087813feb7db96a320c48ed6b2433a7183446c71
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298958"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926507"
 ---
 # <a name="tutorial-connect-to-on-premises-data-in-sql-server"></a>Selvstudium: Opret forbindelse til lokale data i SQL Server
 
@@ -128,7 +128,7 @@ Nu, hvor du har eksempeldata, du kan arbejde med, skal du oprette forbindelse ti
 
 ## <a name="add-sql-server-as-a-gateway-data-source"></a>Tilføj SQL Server som en datakilde til gatewayen
 
-I Power BI Desktop opretter du direkte forbindelse til SQL Server, men Power BI-tjenesten kræver en gateway for at fungere som bro. Nu kan du tilføje din instans af SQL Server som datakilde for den gateway, som du oprettede i en tidligere artikel (angivet under [Forudsætninger](#prereqisites)). 
+I Power BI Desktop opretter du direkte forbindelse til SQL Server, men Power BI-tjenesten kræver en gateway for at fungere som bro. Nu kan du tilføje din instans af SQL Server som datakilde for den gateway, som du oprettede i en tidligere artikel (angivet under [Forudsætninger](#prerequisites)). 
 
 1. I øverste højre hjørne af Power BI-tjenesten skal du vælge tandhjulsikonet ![tandhjulsikonet for indstillinger](media/service-gateway-sql-tutorial/icon-gear.png) > **Administrer gateways**.
 
@@ -142,15 +142,17 @@ I Power BI Desktop opretter du direkte forbindelse til SQL Server, men Power BI-
 
     ![Angiv datakildeindstillinger](media/service-gateway-sql-tutorial/data-source-settings.png)
 
-    | Indstilling | Værdi |
-    | ---    | ---   |
-    | **Navn på datakilde**       | test-sql-source      |
-    | **Datakildetype**       | SQL Server      |
-    | **Server**       |  Navnet på din instans af SQL Server (skal være identisk med det, du har angivet i Power BI Desktop)    |
-    | **Database**       | TestGatewayDocs      |
-    | **Godkendelsesmetode**       | Windows      |
-    | **Brugernavn**        |  Den konto, f.eks. michael@contoso.com, du bruger til at oprette forbindelse til SQL Server     |
-    | **Adgangskode**       |  Adgangskoden til den konto, du bruger til at oprette forbindelse til SQL Server    |
+
+   |          Indstilling           |                                               Værdi                                                |
+   |---------------------------|----------------------------------------------------------------------------------------------------|
+   |   **Navn på datakilde**    |                                          test-sql-source                                           |
+   |   **Datakildetype**    |                                             SQL Server                                             |
+   |        **Server**         | Navnet på din instans af SQL Server (skal være identisk med det, du har angivet i Power BI Desktop) |
+   |       **Database**        |                                          TestGatewayDocs                                           |
+   | **Godkendelsesmetode** |                                              Windows                                               |
+   |       **Brugernavn**        |             Den konto, f.eks. michael@contoso.com, du bruger til at oprette forbindelse til SQL Server             |
+   |       **Adgangskode**        |                   Adgangskoden til den konto, du bruger til at oprette forbindelse til SQL Server                    |
+
 
 4. Vælg **Tilføj** Du får vist *Forbindelsen er oprettet*, når processen lykkes.
 

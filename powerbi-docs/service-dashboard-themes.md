@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 331dc45f3049fe77145b86ffafd363162c74a589
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.openlocfilehash: d17694d6dd2e2133b80d326a8aa86194d5710946
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813796"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944646"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Brug Dashboard-temaer i Power BI-tjenesten
 Med **dashboardtemaer** kan du anvende et farvetema på hele dit dashboard, f.eks virksomhedens farver, sæsonmæssige farver eller andre farvetemaer, som du gerne vil anvende. Når du anvender et **dashboardtema**, bruges farver fra det valgte tema for alle visualiseringer på dashboardet (med nogle få undtagelser, der er beskrevet senere i denne artikel).
@@ -89,7 +89,6 @@ Når temaet er uploadet, anvendes farverne automatisk på alle felterne i dashbo
 
     ![Brug destinationstema](media/service-dashboard-themes/power-bi-use-destination.png)
 
-* Dashboardtemaer understøttes ikke i øjeblikket, når dashboardet vises integreret med REST API'et, på mobilenheder eller for eksterne brugere.    
 * Dashboardtemaer kan ikke anvendes på fastgjorte dynamiske rapportsider, iframe-felter, SSRS-felter, projektmappefelter eller billeder.
 * Dashboardtemaer kan ses på mobilenheder, men du kan kun oprette et dashboardtema i Power BI-tjenesten. 
 * Brugerdefinerede dashboardtemaer virker kun med felter, der er fastgjort fra rapporter. 
