@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: b479c46ffe3e51ad5f15cc9884a2ea02626a4cc5
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34244624"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38876876"
 ---
 # <a name="connect-to-google-analytics-with-power-bi"></a>Opret forbindelse til Google Analytics med Power BI
 For at oprette forbindelse til Google Analytics via Power BI skal du starte med at oprette forbindelse til din Google Analytics-konto. Du får et Power BI-dashboard og et sæt af Power BI-rapporter, der giver indsigt i trafikken på dit websted og brugerdimensioner. Du kan interagere med dashboards og rapporter, men du kan ikke gemme ændringer. Dataene opdateres automatisk én gang dagligt.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 44756e45a6f9944f9d52afa98709b1a3f7b5b6e1
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: fde23a47bb0f4034e213a652d60241ff625921d3
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137485"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38877325"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Almindelige forespørgselsopgaver i Power BI Desktop
 Når du arbejder i vinduet **Forespørgselseditor** i Power BI Desktop, er der nogle få opgaver, der udføres jævnligt. Dette dokument beskriver disse opgaver og indeholder links til flere oplysninger. 
@@ -38,7 +38,7 @@ Den første dataforbindelse er en Excel-projektmappe. Den anden er en webressour
 De trin, der er nødvendige for at oprette forbindelse til begge disse datakilder, er, hvor de almindelige forespørgselsopgaver begynder.
 
 ## <a name="connect-to-data"></a>Opret forbindelse til data
-Hvis du vil oprette forbindelse til data i Power BI Desktop, skal du vælge knappen **Hent data** under fanen **Hjem** på båndet. Der vises en menu med de mest almindelige datakilder i Power BI Desktop. Vælg knappen **Mere...**  nederst i menuen for at få vist en komplet liste over de datakilder, der kan oprettes forbindelse til i Power BI Desktop. Du kan finde flere oplysninger i [Datakilder i Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-data-sources).
+Hvis du vil oprette forbindelse til data i Power BI Desktop, skal du vælge knappen **Hent data** under fanen **Hjem** på båndet. Der vises en menu med de mest almindelige datakilder i Power BI Desktop. Vælg knappen **Mere...**  nederst i menuen for at få vist en komplet liste over de datakilder, der kan oprettes forbindelse til i Power BI Desktop. Du kan finde flere oplysninger i [Datakilder i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-data-sources).
 
 ![](media/desktop-common-query-tasks/commonquerytasks_getdata.png)
 
@@ -60,10 +60,10 @@ Vælg **OK**, og præcis som før undersøges mappen i Power BI Desktop, og de d
 
 Det samme gælder for andre dataforbindelser. Hvis godkendelse er nødvendig for at oprette en dataforbindelse, bliver du bedt om at angive de relevante legitimationsoplysninger i Power BI Desktop.
 
-Hvis du vil have en trinvis vejledning til, hvordan du opretter forbindelse til data i Power BI Desktop, skal du se [Opret forbindelse til data i Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-connect-to-data).
+Hvis du vil have en trinvis vejledning til, hvordan du opretter forbindelse til data i Power BI Desktop, skal du se [Opret forbindelse til data i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-connect-to-data).
 
 ## <a name="shape-and-combine-data"></a>Form og kombiner data
-Du kan nemt forme og kombinere data ved hjælp af Forespørgselseditor. Dette afsnit indeholder nogle eksempler på, hvordan du kan forme data. Hvis du vil have en mere komplet demonstration af, hvordan du former og kombinere data, skal du se **[Form og kombiner data med Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-shape-and-combine-data)**.
+Du kan nemt forme og kombinere data ved hjælp af Forespørgselseditor. Dette afsnit indeholder nogle eksempler på, hvordan du kan forme data. Hvis du vil have en mere komplet demonstration af, hvordan du former og kombinere data, skal du se **[Form og kombiner data med Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data)**.
 
 I det forrige afsnit tilsluttede vi to datasæt – en Excel-projektmappe og en webressource. Når dataene indlæses i Forespørgselseditor, får vi vist følgende, hvor forespørgslen fra websiden er valgt (taget fra de tilgængelige forespørgsler, der er angivet i ruden **Forespørgsler** i venstre side af vinduet Forespørgselseditor).
 

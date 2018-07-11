@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/31/2018
 ms.author: maghan
-ms.openlocfilehash: f4aac424d448dcb3e2dd722efe54db99d318ba80
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: aa51d516e903908fb2b0121f9bbed41d54f5e670
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599478"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38924995"
 ---
 # <a name="register-an-azure-ad-app-to-embed-power-bi-content"></a>Registrer en Azure AD-app for at integrere Power BI-indhold
 Få mere at vide om, hvordan du registrerer et program i Azure Active Directory (Azure AD), som skal bruges til at integrere Power BI-indhold.
@@ -23,7 +23,6 @@ Du kan registrere dit program i Azure AD, så dit program får adgang til Power 
 
 > [!IMPORTANT]
 > Før du kan registrere et Power BI-app, skal du have en [Azure Active Directory-lejer og en organisationsbruger](create-an-azure-active-directory-tenant.md). Hvis du ikke har tilmeldt dig Power BI med en bruger i din lejer, fuldføres registreringen af appen ikke.
-> 
 > 
 
 Der er to måder at registrere din app på. Den første er med brug af [værktøjet Power BI App Registration](https://dev.powerbi.com/apps/) , men du kan også vælge at gøre det direkte fra Azure-portalen. Værktøjet Power BI App Registration er den nemmeste løsning, fordi der ikke er mange felter, der skal udfyldes. Brug Azure-portalen, hvis du vil foretage ændringer i din app.
@@ -45,7 +44,7 @@ Sådan registrerer du dit program ved hjælp af værktøjet Power BI App Registr
    
     **URL-adresse til startsiden** er kun tilgængelig, hvis du vælger **Server-side Web app** for programtypen.
    
-    For eksemplerne på *integrering for kunderne* og *integrate-dashboard-web-app* vil URL-adressen til omdirigering være `http://localhost:13526/redirect`. For eksemplet på rapporten og feltet vil URL-adressen til omdirigering være `http://localhost:13526/`.
+    For eksemplerne på *integrering for kunderne* og *integrate-dashboard-web-app* vil **URL-adressen til omdirigering** være `http://localhost:13526/Redirect`. For eksemplet på rapporten og feltet vil **URL-adressen til omdirigering** være `http://localhost:13526/`.
 6. Vælg API'erne til den app, der har adgang. Du kan få flere oplysninger om adgangstilladelser til Power BI i [Power BI-tilladelser](power-bi-permissions.md).
    
     ![](media/register-app/app-registration-apis.png)
@@ -83,7 +82,7 @@ Din anden mulighed for at registrere dit program er at gør det direkte på Azur
 5. Følg prompterne, og opret et nyt program.
    
    * Angiv URL-adressen til logon for webapps, hvilket vil sige basis-URL-adressen for din app, hvor brugere kan logge på, f.eks. `http://localhost:13526`.
-   * Til oprindelige programmer skal du angive en omdirigerings-URI , som Azure AD bruger til at returnere token-svar. Angiv en værdi, der er specifik for dit program, f.eks. `http://myapplication/redirect`
+   * Til oprindelige programmer skal du angive en **omdirigerings-URI**, som Azure AD bruger til at returnere token-svar. Angiv en værdi, der er specifik for dit program, f.eks. `http://myapplication/Redirect`
 
 Du kan finde flere oplysninger om, hvordan du registrerer programmer i Azure Active Directory i [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) (Integrering af programmer med Azure Active Directory)
 
