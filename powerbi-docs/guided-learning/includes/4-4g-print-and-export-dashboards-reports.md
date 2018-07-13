@@ -1,4 +1,4 @@
-Du kan nogle gange have behov for at tage en udskreven rapport eller dashboard med til et møde, eller for at du kan dele det med andre. Med Power BI kan du lave udskifter af dine visuelle elementer på et par forskellige måder.
+Du kan nogle gange have behov for at tage en udskreven rapport eller dashboard med til et møde, eller for at du kan dele det med andre. Med Power BI kan du lave udskrifter af dine visualiseringer på et par forskellige måder.
 
 Vælg ellipsen (tre prikker) i øverste højre side af Power BI-tjenesten, og vælg **Udskriv dashboard**.
 
