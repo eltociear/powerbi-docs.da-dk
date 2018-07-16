@@ -896,8 +896,10 @@
           href: developer/what-can-you-do.md
     - name: Selvstudier
       items:
-        - name: Integrer indhold til kunder
+        - name: Integrer indhold til dine kunder
           href: developer/embed-sample-for-customers.md
+        - name: Integrer indhold til din organisation
+          href: developer/embed-sample-for-your-organization.md
     - name: Begreber
       items:
         - name: Arbejde med REST-API'er til Power BI
@@ -934,12 +936,8 @@
               href: developer/embedding.md
             - name: Sådan integrerer du dit indhold
               href: developer/embedding-content.md
-            - name: Integrer et dashboard i en app (brugeren ejer data)
-              href: developer/integrate-dashboard.md
-            - name: Integrer et Power BI-felt i en app (brugeren ejer data)
-              href: developer/integrate-tile.md
-            - name: Integrer en Power BI-rapport i en app (brugeren ejer data)
-              href: developer/integrate-report.md
+            - name: Sådan integrerer du fra en app
+              href: developer/embed-from-apps.md
             - name: Integrer indhold i din app til nationale clouds (appen ejer dataene)
               href: developer/embed-sample-for-customers-sovereign-clouds.md
             - name: Indlejr brugerdefinerede layout i en app
