@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: d9e2f76c63ee9ebff01080686277a3fbb5af46f3
-ms.sourcegitcommit: d1a0da8638c5d957b884ca9412275ee8880d4b14
+ms.openlocfilehash: a8833cb6b41ea76d50814975ada6239690a0c196
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37900071"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38877412"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Selvstudium: Integrer en rapport, et dashboard eller et felt i Power BI i et program til dine kunder
 Med **Power BI Embedded i Azure** kan du integrere rapporter, dashboards eller felter i et program vha. **App owns data**. **App owns data** handler om at have et program, der bruger Power BI som sin integrerede analyseplatform. Dette er normalt et **ISV-udvikler**-scenarie. Som **ISV-udvikler** kan du oprette Power BI-indhold, der viser rapporter, dashboards eller dele i et program, der er fuldt integreret og interaktivt, uden at brugere af programmet behøver at have en Power BI-licens, eller endda uden at være klar over, at der er tale om Power BI. I dette selvstudium vises, hvordan du kan integrere en rapport i et program ved hjælp af **Power BI** .NET SDK sammen med **Power BI** JavaScript-API'en, når du bruger **Power BI Embedded i Azure**  til dine kunder ved hjælp af **appen ejer data**.
@@ -54,7 +54,7 @@ Du kan registrere dit program i Azure Active Directory, så dit program får adg
     ![Søg efter programregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![Registrering af nyt program](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
 
-4. Følg prompterne, og opret et nyt program. I forbindelse med "apps ejer data" skal du bruge **Oprindelig** for programtypen. Du skal også angive en **omdirigerings-URI**, som **Azure Active Directory** bruger til at returnere tokensvar. Angiv en værdi, der er specifik for dit program (f.eks.: `http://localhost:13526/redirect`).
+4. Følg prompterne, og opret et nyt program. I forbindelse med "apps ejer data" skal du bruge **Oprindelig** for programtypen. Du skal også angive en **omdirigerings-URI**, som **Azure Active Directory** bruger til at returnere tokensvar. Angiv en værdi, der er specifik for dit program (f.eks.: `http://localhost:13526/Redirect`).
 
     ![Opret app](media/embed-sample-for-customers/embed-sample-for-customers-005.png)
 
