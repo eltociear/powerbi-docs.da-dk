@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6592405de2d76c14334c8c31e4af84cd5a090ed9
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 1a9b9c8c7cde59cf7cd05b383070183b219159da
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247544"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136266"
 ---
 # <a name="connect-to-sweetiq-with-power-bi"></a>Opret forbindelse til SweetIQ med Power BI
 Power BI-indholdspakken henter data fra din SweetIQ-konto, og der oprettes standardindhold, så du nemt kan udforske dine data. Du kan bruge SweetIQ-indholdspakken til at analysere data om dine placeringer, annoncer, bedømmelser og anmeldelser. Dataene er indstillet til daglig opdatering for at sikre, at de data, du overvåger, er opdateret.
@@ -54,7 +54,7 @@ Vælg et klient-id for en af de klienter, din konto har adgang til. Du kan finde
 Kontakt administratoren for at få din API-nøgle for at få adgang til dataene for en bestemt klient.
 
 ## <a name="next-steps"></a>Næste trin
-[Kom i gang med Power BI](service-get-started.md)
+[Hvad er Power BI?](power-bi-overview.md)
 
 [Hent data til Power BI](service-get-data.md)
 

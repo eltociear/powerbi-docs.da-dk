@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 920e61ed173e979a92958e56f9e0276f26288b3f
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 7fe40fa3ea4a80198c3b06d2594c7ad0837ee923
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34250669"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136174"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-power-bi-service"></a>Foretrukne dashboards, rapporter og apps i Power BI-tjenesten
 Når du gør indhold til en *favorit*, kan du få adgang til det fra alle dine arbejdsområder.  Favoritter er normalt det indhold, du besøger oftest.
@@ -76,7 +76,7 @@ Bruger du ikke længere en rapport så ofte, som du plejede?  Du kan fjerne det 
 > 
 
 ## <a name="next-steps"></a>Næste trin
-[Introduktion til Power BI](service-get-started.md)
+[Hvad er Power BI?](power-bi-overview.md)
 
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)
 

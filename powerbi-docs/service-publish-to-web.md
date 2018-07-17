@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/28/2018
 ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: b85ffb97948976e25347039dfa4f81dda9f1ea7c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 2e02b4dfe9798eed393a0097ef4f220746acfdf6
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34254849"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092339"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -135,7 +135,8 @@ Brugerdefinerede visuelle elementer, der understøttes i **Publicer på internet
 5. Visuelle "R"-elementer understøttes ikke i øjeblikket i Publicer på internettet-rapporter.
 6. Eksport af data fra visualiseringer i en rapport, som er publiceret på internettet
 7. ArcGIS Maps til Power BI-visualiseringer
-8. [Fortrolige eller beskyttede oplysninger](#publish-to-web-from-power-bi)
+8. Rapporter med DAX-målinger på rapportniveau
+9. [Fortrolige eller beskyttede oplysninger](#publish-to-web-from-power-bi)
 
 ## <a name="tenant-setting"></a>Lejerindstillinger
 

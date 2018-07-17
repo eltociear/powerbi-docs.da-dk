@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 05/19/2018
 ms.author: mihart
-ms.openlocfilehash: bf196ccf45e964f6fc1044723f7232eaf60230e7
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: fda707d3f36e6db2157d04887780bb957567a523
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34471795"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136243"
 ---
 # <a name="power-bi-videos"></a>Power BI-videoer
 Vi har en YouTube-kanal til Power BI! Du kan besøge [vores kanal](https://www.youtube.com/user/mspowerbi/videos) og, hvis du ikke kender til Power BI, er det en god idé at starte med [Analysér og visualiser data med Power BI-afspilningsliste](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP).
@@ -46,7 +46,7 @@ Se følgende samling af kilder og indhold for flere videoer.
 * [Guy in a Cube-kanal](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w) – nye videoer om funktioner og egenskaber i Power BI
 
 ## <a name="next-steps"></a>Næste trin
-[Introduktion til Power BI](service-get-started.md)
+[Hvad er Power BI?](power-bi-overview.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 84a2fe350c1146591aa89c5900c10f2747e90cf3
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3323258304f8c36131caf6ef269d9befa6cfbb96
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297440"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136519"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Introduktion til Power BI-mobilappen på Android-enheder
 Android-appen til Microsoft Power BI leverer BI-mobiloplevelsen til Power BI, Power BI Report Server og Reporting Services. Få vist og interager med dit firmas dashboards lokalt og i skyen overalt – med direkte, berøringsfølsom mobiladgang. Udforsk dataene i dashboards, og del dem med dine kollegaer i mails eller tekstmeddelelser. 
@@ -23,7 +23,7 @@ Android-appen til Microsoft Power BI leverer BI-mobiloplevelsen til Power BI, Po
 
 Du kan oprette Power BI-rapporter i Power BI Desktop og publicere dem:
 
-* [Publicer dem til Power BI-tjenesten](service-get-started.md), og opret dashboards.
+* [Publicer dem til Power BI-tjenesten](power-bi-overview.md), og opret dashboards.
 * [Publicer dem i det lokale miljø på Power BI rapportserver](report-server/quickstart-create-powerbi-report.md).
 
 Derefter interagerer du i Power BI-appen til Android med dine dashboards og rapporter, både lokalt og i clouden.
@@ -136,7 +136,7 @@ Her er nogle andre ting, du kan gøre i Android-enhedsappen til Power BI med das
 
 ### <a name="see-also"></a>Se også
 * [Download Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867) fra Android App Store.
-* [Kom i gang med Power BI](service-get-started.md)
+* [Hvad er Power BI?](power-bi-overview.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
 

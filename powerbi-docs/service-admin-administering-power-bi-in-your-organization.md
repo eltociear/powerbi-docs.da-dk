@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 05/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 5e69ed0010c5a2ff496b761f54b4cf2561f9b4ca
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 1f3c871d4ac47a110f2085ef1bdccb166fc00643
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34297417"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944301"
 ---
 # <a name="what-is-power-bi-administration"></a>Hvad er Power BI-administration?
 
@@ -73,12 +73,12 @@ Der er flere værktøjer, der er relateret til Power BI-administration, og de vi
 
 | **Værktøj** | **Typiske opgaver** |
 | --- | --- |
-| Power BI-administrationsportal |<ul><li>Bloker brugeres adgang til Power BI<br><li>Opnå og arbejd med Premium-kapacitet<br><li>Opnå tjenestekvalitet<br><li>Administrer klassificering af virksomhedsdata<br><li>Hjælp til at gennemtvinge udgivelse af indhold og dele politikker<br><li>Administrer arbejdsområder<br><li>Udgiv brugerdefinerede visuelle elementer<br><li>Kontrollér koder, der bruges til at integrere Power BI i andre programmer<br><li>Foretag fejlfinding af dataadgang og andre problemer</ul>|
-| Office 365 Administration |<ul><li>Administrer brugertilmelding<br><li>Køb og tildel Pro-licenser</ul>|
-| Office 365 Security & Compliance Center |<ul><li>Gennemse og administrer overvågning af hændelser</ul>|
-| Azure Active Directory (AAD) på Azure-portalen |<ul><li>Konfigurer betinget adgang til Power BI-ressourcer via AAD<br><li>Klargør Power BI Embedded-kapacitet</ul>|
-| PowerShell-cmdlet'er |<ul><li>Administrer arbejdsområder og andre aspekter af Power BI via scripts</ul>|
-| Administrative API'er |<ul><li>Opret brugerdefinerede administrative værktøjer for at lette arbejdet for en Power BI-administrator. Power BI Desktop kan f.eks. bruge disse API'er til at oprette rapporter ud fra data, der er relateret til administration</ul>|
+| Power BI-administrationsportal |<ul><li>Opnå og arbejd med Premium-kapacitet</li><li>Opnå tjenestekvalitet</li><li>Administrer klassificering af virksomhedsdata</li><li>Hjælp til at gennemtvinge udgivelse af indhold og dele politikker</li><li>Administrer arbejdsområder<br><li>Udgiv brugerdefinerede visuelle elementer</li><li>Kontrollér koder, der bruges til at integrere Power BI i andre programmer</li><li>Foretag fejlfinding af dataadgang og andre problemer</li></ul>|
+| Office 365 Administration |<ul><li>Administrer brugertilmelding</li><li>Køb og tildel Pro-licenser</li><li>Bloker brugeres adgang til Power BI</li></ul>|
+| Office 365 Security & Compliance Center |<ul><li>Gennemse og administrer overvågning af hændelser</li></ul>|
+| Azure Active Directory (AAD) på Azure-portalen |<ul><li>Konfigurer betinget adgang til Power BI-ressourcer via AAD</li><li>Klargør Power BI Embedded-kapacitet</li></ul>|
+| PowerShell-cmdlet'er |<ul><li>Administrer arbejdsområder og andre aspekter af Power BI via scripts</li></ul>|
+| Administrative API'er og SDK |<ul><li>Opret brugerdefinerede administrative værktøjer for at lette arbejdet for en Power BI-administrator. Power BI Desktop kan f.eks. bruge disse API'er til at oprette rapporter ud fra data, der er relateret til administration</li></ul>|
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -1,6 +1,6 @@
 ---
-title: Introduktion til Power BI-tjenesten
-description: Introduktion til Power BI-tjenesten
+title: Kom i gang med Power BI-tjenesten (Power BI online)
+description: Kom i gang med Power BI online (app.powerbi.com)
 author: adamw
 manager: kfile
 ms.reviewer: ''
@@ -8,22 +8,37 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: d66653ebe9232cb6da2f3c53b01e791ca9966db9
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 1c4f710cd048fc2c2828f0386d23328c164bb3fb
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34310124"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598637"
 ---
-# <a name="get-started-with-power-bi-service-apppowerbicom"></a>Kom i gang med Power BI-tjenesten (app.powerbi.com)
-Dette selvstudium hjælper dig med at komme i gang med ***Power BI-tjenesten***. Hvis du vil have et overblik over, hvordan Power BI-tjenesten passer sammen med de andre Power BI-tilbud, anbefaler vi kraftigt, at du starter med at læse [Hvad er Power BI](guided-learning/gettingstarted.yml?tutorial-step=1).
+# <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Selvstudium: Kom i gang med Power BI-tjenesten (app.powerbi.com)
+Dette selvstudium hjælper dig med at komme i gang med ***Power BI-tjenesten***. Hvis du vil have et overblik over, hvordan Power BI-tjenesten passer sammen med de andre Power BI-tilbud, anbefaler vi kraftigt, at du starter med at læse [Hvad er Power BI](power-bi-overview.md).
 
 ![kunst, der viser relationen mellem Desktop, tjeneste, mobil](media/service-get-started/power-bi-components.png)
 
-Power BI-tjenesten har en gratis version og en Pro-version. Uanset hvilken version du bruger, skal du åbne en browser og skrive app.powerbi.com for at åbne Power BI-tjenesten, *hvis du allerede har en konto*. Hvis du er ny bruger, anbefaler vi, at du starter på www.powerbi.com i stedet. Herfra kan du få mere at vide om Power BI, inden du logger på tjenesten.  Når du er klar til at prøve det, kan du vælge linket, hvor du kan **tilmelde dig gratis**, der vises i øverste højre hjørne. Hvis din administrator allerede har aktiveret Power BI for dig, skal du ikke bruge knappen til gratis tilmelding, men i stedet gå direkte til app.powerbi.com. 
+I dette selvstudium kan du udføre følgende trin:
+
+> [!div class="checklist"]
+> * Find andet Kom godt i gang-indhold til Power BI-tjenesten
+> * Log på din Power BI-onlinekonto, eller opret én, hvis du ikke allerede har en
+> * Åbn Power BI-tjenesten
+> * Hent nogle data, og åbn dem i rapportvisning
+> * Brug dataene til at oprette visualiseringer, og gem som en rapport
+> * Opret et dashboard ved at fastgøre felter fra rapporten
+> * Tilføj en anden visualisering til dit dashboard ved hjælp af værktøjet Spørgsmål og svar i naturligt sprog
+> * Fjern ressourcer ved at slette datasæt, rapport og dashboard
+
+## <a name="sign-up-for-power-bi-service"></a>Tilmeld dig Power BI-tjeneste
+Hvis du ikke er tilmeldt [Power BI](https://app.powerbi.com/signupredirect?pbi_source=web), kan du tilmelde dig en gratis prøveversion af Power BI Pro, før du begynder.
+
+Du skal åbne en browser og skrive app.powerbi.com for at åbne Power BI-tjenesten, hvis du allerede har en konto. 
 
 ![Log på, eller tilmeld dig gratis](media/service-get-started/power-bi-sign-up.png)
 
@@ -36,10 +51,9 @@ Besøg vores [afspilningsliste på YouTube](https://www.youtube.com/playlist?lis
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 > 
-> 
-> 
 
-Med Microsoft Power BI kan du holde dig ajour med de oplysninger, der er vigtige for dig.  Med Power BI-tjenesten hjælper ***dashboards*** dig med at holde styr på din virksomhed.  Dine dashboards viser ***felter***, som du kan klikke på for at åbne ***rapporter***, der skal udforskes yderligere.  Opret forbindelse til flere ***datasæt*** for at samle alle relevante data på ét sted. Har brug for hjælp til at forstå de komponenter, der udgør Power BI?  Se [Power BI – Grundlæggende begreber](service-basic-concepts.md).
+## <a name="what-is-power-bi-service"></a>Hvad er Power BI-tjeneste?
+Microsoft Power BI-tjenesten kaldes nogle gange også Power BI online eller app.powerbi.com. Med Power BI kan du holde dig ajour med de oplysninger, der er vigtige for dig.  Med Power BI-tjenesten hjælper ***dashboards*** dig med at holde styr på din virksomhed.  Dine dashboards viser ***felter***, som du kan klikke på for at åbne ***rapporter***, der skal udforskes yderligere.  Opret forbindelse til flere ***datasæt*** for at samle alle relevante data på ét sted. Har brug for hjælp til at forstå de komponenter, der udgør Power BI?  Se [Power BI – Grundlæggende begreber](service-basic-concepts.md).
 
 Hvis du har vigtige data i Excel- eller CSV-filer, kan du oprette et Power BI-dashboard for at holde dig opdateret, uanset hvor du er, og dele indsigt med andre.  Har du et abonnement på en SaaS-app som for eksempel Salesforce?  Kom godt i gang ved at oprette forbindelse til Salesforce og automatisk oprette et dashboard ud fra disse data, eller [tjek alle de andre SaaS-apps](service-get-data.md), du kan oprette forbindelse til. Hvis du er en del af en organisation, kan du se, om der er publiceret [apps](service-create-distribute-apps.md) til dig.
 
@@ -48,7 +62,7 @@ Læs om alle de andre måder at [hente data til Power BI](service-get-data.md) p
 ## <a name="step-1-get-data"></a>Trin 1: Hent data
 Her er et eksempel på at hente data fra en CSV-fil. Har du lyst til at deltage i dette selvstudium? [Download denne CSV-eksempelfil](http://go.microsoft.com/fwlink/?LinkID=521962).
 
-1. [Log på Power BI](http://www.powerbi.com/). Har du ikke en konto? Helt i orden, du kan tilmelde dig gratis.
+1. [Log på Power BI](http://www.powerbi.com/). Har du ikke en konto? Helt i orden, du kan tilmelde dig og få en gratis prøveversion.
 2. Power BI åbnes i browseren. Vælg **Hent data** nederst på venstre navigationslinje.
    
    ![hent data](media/service-get-started/getdata3.png)
@@ -94,23 +108,23 @@ Nu hvor du har forbindelse til data, kan du begynde at udforske.  Vi har fundet 
    
    ![tegnestiftikon](media/service-get-started/pinnew.png)
 
-5. Da det er en ny rapport, skal du gemme den, før du kan fastgøre en visualisering på et dashboard. Giv din rapport et navn (f.eks. *Salg over tid*), og vælg **Gem og fortsæt**. 
+4. Da det er en ny rapport, skal du gemme den, før du kan fastgøre en visualisering på et dashboard. Giv din rapport et navn (f.eks. *Salg over tid*), og vælg **Gem og fortsæt**. 
    
    ![Dialogboksen Gem rapport](media/service-get-started/pbi_getstartsaveb4pinnew.png)
    
-6. Lad os fastgøre kurvediagrammet til et nyt dashboard, og give det navnet "Økonomisk eksempel til selvstudium". 
+5. Lad os fastgøre kurvediagrammet til et nyt dashboard, og give det navnet "Økonomisk eksempel til selvstudium". 
    
    ![navngiv rapporten](media/service-get-started/power-bi-pin.png)
    
- 1. Vælg **Fastgør**.
+1. Vælg **Fastgør**.
    
     En meddelelse om fuldførelse (næsten helt oppe i højre hjørne) giver dig besked om, at visualiseringen er blevet føjet til dit dashboard som et felt.
    
     ![Fastgjort til dashboarddialogboks](media/service-get-started/power-bi-pin-success.png)
 
-8. Vælg **Gå til dashboard** for at se kurvediagrammet fastgjort som et felt til dit helt nye dashboard. Gør dit dashboard endnu bedre ved at tilføje flere visualiseringsfelter og [omdøbe, ændre størrelsen på, sammenkæde og flytte felter](service-dashboard-edit-tile.md).
+6. Vælg **Gå til dashboard** for at se kurvediagrammet fastgjort som et felt til dit helt nye dashboard. Gør dit dashboard endnu bedre ved at tilføje flere visualiseringsfelter og [omdøbe, ændre størrelsen på, sammenkæde og flytte felter](service-dashboard-edit-tile.md).
    
-   ![dashboard med fastgjort visualisering](media/service-get-started/power-bi-new-dashboard.png)
+   ![Dashboard med fastgjort visualisering](media/service-get-started/power-bi-new-dashboard.png)
    
    Vælg det nye felt på dashboardet for til enhver tid at vende tilbage til rapporten. Power BI vender tilbage til rapporteditoren i Læsevisning. Hvis du vil skifte tilbage til Redigeringsvisning, skal du vælge **Rediger rapport** på den øverste menulinje. Når du er i Redigeringsvisning, kan du fortsætte med at udforske og fastgøre felter. 
 
@@ -128,26 +142,21 @@ Nu hvor du har forbindelse til data, kan du begynde at udforske.  Vi har fundet 
 
    ![dashboard med fastgjort diagram](media/service-get-started/power-bi-final-dashboard.png)
 
+## <a name="clean-up-resources"></a>Fjern ressourcer
+Nu, hvor du har gennemført selvstudiet, kan du slette datasættet, rapporten og dashboardet. 
+
+1. Vælg **My Workspace** på navigationslinjen til venstre.
+2. Vælg fanen **Datasæt**, og find det datasæt, du har importeret i dette selvstudium.  
+3. Vælg ellipserne (...) > **Slet**.
+
+    ![Slet datasættet](media/service-get-started/power-bi-delete.jpg)
+
+    Når du sletter datasættet, sletter du også rapporten og dashboardet. 
+
+
 ## <a name="next-steps"></a>Næste trin
 Er du klar til at prøve mere?  Her er nogle fantastiske måder at udforske Power BI på.
 
-* [Opret forbindelse til et andet datasæt](service-get-data.md).
-* [Del dit dashboard](service-share-dashboards.md) med dine kollegaer.
-* Læs [tip til design af dashboards](service-dashboards-design-tips.md).
-* Få vist dine dashboards med en [Power BI-app på en mobilenhed](mobile-apps-for-mobile-devices.md)
-
-Er du ikke helt klar til at springe i med samlede ben? Start med disse emner, der er udarbejdet til at gøre dig komfortabel med Power BI.
-
-* [Få mere at vide om, hvordan rapporter, datasæt, dashboards og felter passer sammen](service-basic-concepts.md)
-* Gå til vores websted med [automatiseret læring til Power BI](guided-learning/index.md), og prøv et par (meget korte) kurser
-* Se nogle [Power BI-videoer](videos.md)
-* [Se, hvilke eksempler vi har, som du kan bruge](sample-datasets.md)
-
-### <a name="stay-in-touch-with-power-bi"></a>Hold dig ajour med Power BI
-* Følg [@MSPowerBI på Twitter](https://twitter.com/mspowerbi)
-* Abonner på vores [YouTube-videokanal](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
-* Se vores [webinarer med introduktion til Power BI](webinars.md) efter behov
-* Er du usikker på, hvor du kan finde hjælp? Se vores side [10 tip til at få hjælp](service-tips-for-finding-help.md)
-
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+> [!div class="nextstepaction"]
+> [Opret forbindelse til de onlinetjenester, du bruger](./service-connect-to-services.md)
 

@@ -8,22 +8,23 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/27/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 387780371a82ab4f2c834683ab522258d130e18e
-ms.sourcegitcommit: b3b32b9b3935706d7caa091833bd32259d7ff6ee
+ms.openlocfilehash: 002c1c256a0d78601d112e4ee34326c0914f9ac1
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34755248"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599683"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Forbrugsdata for dashboards og rapporter
 Hvis du opretter dashboards og rapporter, kan forbrugsdata hjælpe dig med at forestå deres indvirkning. Når du kører enten forbrugsdata for dashboards eller rapporter, opdager du, hvordan disse dashboards og rapporter anvendes i hele organisationen: Hvad bruges, af hvem og til hvilke formål.  
 
-  > **Bemærk!** Forbrugsdata vil spore brugen af de rapporter, som er integreret i SharePoint Online. Forbrugsdata sporer dog ikke integrationen af dashboards og rapporter via processerne "brugerens egne legitimationsoplysninger" eller "appens egne legitimationsoplysninger". Forbrugsdata sporer heller ikke brugen af de rapporter, der er integreret via [publicer på internettet](service-publish-to-web.md).
+> [!NOTE]
+> Forbrugsdata vil spore brugen af rapporter, som er integreret i SharePoint Online. Forbrugsdata sporer dog ikke integrationen af dashboards og rapporter via processerne "brugerens egne legitimationsoplysninger" eller "appens egne legitimationsoplysninger". Forbrugsdata sporer heller ikke brugen af de rapporter, der er integreret via [publicer på internettet](service-publish-to-web.md).
 
-Disse rapporter med forbrugsdata er skrivebeskyttet. Men du kan tilpasse en rapport med forbrugsdata ved hjælp af "Gem som". Det opretter et helt nyt datasæt og konverterer den skrivebeskyttede rapport til en Power BI-rapport med alle funktioner, som du kan redigere. Den tilpassede rapport indeholder ikke blot data for det valgte dashboard eller den valgte rapport, men ved at fjerne standardfilteret har du nu adgang til forbrugsdata for alle dashboards eller alle rapporter i det valgte arbejdsområde.
+Disse rapporter med forbrugsdata er skrivebeskyttet. Men du kan tilpasse en rapport med forbrugsdata ved hjælp af "Gem som". Det opretter et helt nyt datasæt og konverterer den skrivebeskyttede rapport til en Power BI-rapport med alle funktioner, som du kan redigere. Den tilpassede rapport indeholder ikke blot data for det valgte dashboard eller den valgte rapport, men ved at fjerne standardfilteret har du nu adgang til forbrugsdata for alle dashboards eller alle rapporter i det valgte arbejdsområde. Og du kan også se navnene på dine slutbrugere.
 
 ![forbrugsdatarapport](media/service-usage-metrics/power-bi-dashboard-usage-metrics-update-3.png)
 
@@ -33,7 +34,7 @@ At vide, hvordan dit indhold bruges, hjælper dig med at demonstrere din indvirk
 Du kan kun køre rapporter med forbrugsdata i Power BI-tjenesten.  Men hvis du gemmer en rapport med forbrugsdata eller fastgør den til et dashboard, vil du kunne åbne og interagere med denne rapport på mobile enheder.
 
 ### <a name="prerequisites"></a>Forudsætninger
-- Forbrugsdatafunktionen henter forbrugsoplysninger fra alle brugere, både af den gratis version og Pro. Der kræves dog en Pro-licens for at køre og få adgang til forbrugsdata.
+- Forbrugsdatafunktionen henter forbrugsoplysninger fra alle brugere, uanset hvilken licens de er tildelt. Der kræves dog en Power BI Pro-licens for at køre og få adgang til forbrugsdata.
 - Forbrugsdata er angivet på dashboards eller i rapporter i det valgte arbejdsområde. Hvis du vil have adgang til forbrugsdata for et bestemt dashboard eller en rapport, skal du:    
     • have redigeringsadgang til dashboardet eller rapporten   
     • have en Pro-licens
@@ -50,26 +51,24 @@ Hvis du vil grave ned i rapportdataene eller oprette dine egne rapporter i forho
 ## <a name="open-a-usage-metrics-report-for-a-dashboard-or-report"></a>Åbn en rapport med forbrugsdata for et dashboard eller en rapport
 1. Start i arbejdsområdet, der indeholder dashboardet eller rapporten.
 2. Vælg ikonet for **Forbrugsdata** ![forbrugsdataikon](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) på indholdslisten til arbejdsområdet eller fra selve dashboardet eller rapporten.
-   
+
     ![Fanen Dashboards](media/service-usage-metrics/power-bi-run-usage-metrics-report.png)
-   
+
     ![vælg Forbrugsdata](media/service-usage-metrics/power-bi-run-usage-metrics-report2.png)
 3. Den første gang, du gør dette, opretter Power BI rapporten med forbrugsdata og giver dig besked, når den er klar.
-   
+
     ![dataene er klar](media/service-usage-metrics/power-bi-usage-metrics-ready.png)    
 4. Vælg **Få vist forbrugsdata** for at åbne resultaterne.
-   
+
     Forbrugsdata vil være en stærk partner, når du arbejder på at udrulle og vedligeholde Power BI-dashboards og -rapporter. Har du overvejet, hvilke sider af din rapport der er mest nyttige, og hvilke du bør udfase? Opret udsnit efter **Rapportside** for at finde ud af det. Har du overvejet, om du skal oprette et mobilt layout til dashboardet? Opret udsnit efter **Platforme** for at finde ud af, hvor mange brugere der tilgår dit indhold via mobilapps vs. via en webbrowser.
 
 5. Du kan også holde markøren over en visualisering og vælge ikonet med tegnestiften for at føje visualiseringen til et dashboard. Eller du kan vælge **Fastgør en dynamisk side** øverst på menulinjen for at føje hele siden til et dashboard. Fra dashboardet kan du lettere overvåge forbrugsdata eller dele dem med andre.
-   
-   > **BEMÆRK**! Hvis du fastgør et felt fra en rapport med forbrugsdata til et dashboard, kan dette dashboard ikke føjes til en app eller indholdspakke.
-   > 
-   > 
 
-<br><br>
+    > [!NOTE]
+    > Hvis du fastgør et felt fra en rapport med forbrugsdata til et dashboard, kan dette dashboard ikke føjes til en app eller indholdspakke.
 
 ## <a name="what-metrics-are-reported"></a>Hvilke data rapporteres der?
+
 | Data | Dashboard | Rapport | Beskrivelse |
 | --- | --- | --- | --- |
 | Udsnit for distributionsmetode |ja |ja |Hvordan brugerne fik adgang til indholdet. Der er 3 mulige metoder: Brugere kan få adgang til dashboardet eller rapporten ved at være medlem af et [apparbejdsområde](service-the-new-power-bi-experience.md), ved at få indholdet [delt med dem](service-share-dashboards.md) eller ved at installere en indholdspakke/app.  Bemærk, at visninger via en app tælles som "indholdspakke". |
@@ -108,16 +107,16 @@ Når du opretter en kopi ved hjælp af "Gem som" (tilpasset), konverterer Power 
 
 
 1. Vælg **Filer > Gem som** fra den allerede opbyggede rapport med forbrugsdata. Power BI konverterer rapporten med forbrugsdata til en Power BI-rapport med alle funktioner. Det kaldes en *tilpasset* rapport med forbrugsdata. Den tilpassede anvendelsesrapport og datasættet gemmes i det aktuelle arbejdsområde, der er navngivet **mihart*.
-   
+
     ![Gem som](media/service-usage-metrics/power-bi-save-as.png)
 2. Åbn rapporten i redigeringsvisning, og [arbejd med den som med enhver anden Power BI-rapport](service-interact-with-a-report-in-editing-view.md). Du kan for eksempel tilføje nye sider og oprette nye visualiseringer, tilføje filtre, formatere skrifttyper og farver osv.
-   
+
     ![åbn en rapport i redigeringsvisning](media/service-usage-metrics/power-vi-editing-view.png)
 3. Alternativt kan du starte med det nye datasæt og oprette en rapport fra bunden.
-   
+
     ![Fanen Datasæt](media/service-usage-metrics/power-bi-new-dataset.png)
 4. Den nye rapport gemmes i det aktuelle arbejdsområde (mihart) og føjes også til indholdslisten **Seneste**.
-   
+
     ![Fanen Rapporter](media/service-usage-metrics/power-bi-new-report.png)
 
 ### <a name="remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace"></a>Fjern filteret for at få vist ***alle*** forbrugsdataene i arbejdsområdet
@@ -126,26 +125,28 @@ Du skal fjerne et filter for at se dataene for alle dashboards eller for alle ra
 Hvis du f.eks. har brugt dashboardet med navnet "Europæisk salg" til at oprette denne nye tilpassede rapport, vises kun forbrugsdata fra dashboardet "Europæisk salg". Sådan fjerner du filteret og aktiverer data fra alle dashboards i dette arbejdsområde:
 
 1. Åbn den tilpassede rapport i redigeringsvisning.
-   
+
     ![vælg Rediger rapport](media/service-usage-metrics/power-bi-editing-view.png)
 2. Find bucket'en **Filtre på rapporteringsniveau** i ruden Filtre, og fjern filteret ved at vælge "x".
-   
+
     ![fjern filteret](media/service-usage-metrics/power-bi-report-level-filter2.png)
-   
+
     Nu viser din tilpassede rapport data for hele arbejdsområdet.
 
 ## <a name="admin-controls-for-usage-metrics---for-power-bi-administrators"></a>Kontrolelementer til forbrugsdata – til administratorer af Power BI
 Rapporter med forbrugsdata er en funktion, som Power BI- eller Office 365-administratoren kan slå til eller fra. Administratorer har detaljeret kontrol over, hvilke brugere der har adgang til forbrugsdata. De er slået til som standard for alle brugere i organisationen.
 
 1. Åbn administrationsportalen ved at vælge tandhjulsikonet øverst til højre i Power BI-tjenesten, og vælg **Administrationsportal**.
-   
+
     ![vælg tandhjulsikonet](media/service-usage-metrics/power-bi-admin-portal-new.png)
 2. Vælg **Lejerindstillinger** på administrationsportalen, og vælg **Forbrugsdata for oprettere af indhold**.
-   
+
     ![Administrationsportal](media/service-usage-metrics/power-bi-usage-settings.png)
 3. Aktivér (eller deaktiver) forbrugsdata, og vælg **Anvend**.
-   
+
     ![Forbrugsdata er aktiveret](media/service-usage-metrics/power-bi-tenant-settings-updated.png)
+
+Brugerspecifikke data er som standard aktiveret for forbrugsdata, og kontooplysninger om oprettere af indhold indgår i rapporten med forbrugsdata. Hvis du ikke vil medtage disse oplysninger for nogle eller alle brugere, kan du deaktivere funktionen for nærmere angivne sikkerhedsgrupper eller for en hel organisation. Kontooplysninger vises derefter i rapporten som *Ikke-navngivet*.
 
 Når administratorer deaktiverer forbrugsdata for hele organisationen, kan de bruge indstillingen til **sletning af alt eksisterende indhold i forbrugsdata** for at slette alle eksisterende rapporter og dashboardfelter, der blev oprettet ved hjælp af rapporter og datasæt med forbrugsdata. Denne indstilling fjerner al adgang til forbrugsdata for alle brugere i organisationen, som muligvis allerede anvender dem. Vær forsigtig, fordi sletning af eksisterende indhold i forbrugsdata ikke kan fortrydes.
 

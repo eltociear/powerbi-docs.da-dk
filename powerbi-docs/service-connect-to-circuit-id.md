@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 0cc0125f35dc90a03eeaeed0d5e69c0a5c3115ae
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 56be5b6a0618dea28ac286f5cbaa0c019d9037d2
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34241153"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135990"
 ---
 # <a name="connect-to-circuit-id-with-power-bi"></a>Opret forbindelse til Circuit ID med Power BI
 Du kan nemt analysere dine kommunikationsdata fra Circuit ID med Power BI. Power BI henter dine data og opretter derefter et standarddashboard og relaterede rapporter baseret på disse data. Når du har oprettet forbindelsen, kan du udforske dine data og tilpasse dashboardet efter dine behov. Dataene opdateres automatisk hver dag.
@@ -47,7 +47,7 @@ Opret forbindelse til [Circuit ID-indholdspakken](https://app.powerbi.com/getdat
 * Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
 
 ## <a name="next-steps"></a>Næste trin
-[Kom i gang med Power BI](service-get-started.md)
+[Hvad er Power BI?](power-bi-overview.md)
 
 [Hent data til Power BI](service-get-data.md)
 

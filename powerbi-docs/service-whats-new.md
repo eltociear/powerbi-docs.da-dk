@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/09/2018
+ms.date: 06/06/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: db32f7d0d3f7ca7b6943ca5347dc349c8c44be85
-ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
+ms.openlocfilehash: 750dbf2593981e8fc9ad5f2f66219d6bf6fd641c
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35301843"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137462"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
@@ -31,11 +31,19 @@ Du kan også tjekke YouTube-kanalerne for at få mere at vide om nyheder og funk
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="april-2018"></a>April 2018
+## <a name="may-2018"></a>Maj 2018
+* [Temadashboards](https://docs.microsoft.com/en-us/power-bi/service-dashboard-themes) i Power BI-tjenesten.
+* [Trinvis opdatering](https://docs.microsoft.com/en-us/power-bi/service-premium-incremental-refresh) med Premium.
+* Anmod om adgang til arbejdsgang for [Power BI-apps](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
+* Få opdateringer af Data for at gøre det nemmere for brugerne at finde [Power BI-apps](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
+* Indstillinger til at aktivere og deaktivere [Faste filtre](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) i Power BI-tjenesten.
+* Azure B2B inviterer forbedringer af arbejdsgangen for rapporter.
+
+## <a name="previous-months-2018"></a>Forrige måneder (2018)
+### <a name="april-2018"></a>April 2018
 * [Hvidbog over Power BI GDPR](http://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 * [Overvågningslogge](https://docs.microsoft.com/power-bi/service-admin-auditing) for Power BI-tjenesten er som standard slået til for Office 365-lejer.
 
-## <a name="previous-months-2018"></a>Forrige måneder (2018)
 ### <a name="march-2018"></a>Marts 2018
 * [Faste filtre](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) i Power BI-tjenesten.
 * Del indhold med brugere vha. deres personlige mailkonti. Udvidelse af [Azure Active Directory B2B](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/).
@@ -63,7 +71,7 @@ Du kan også tjekke YouTube-kanalerne for at få mere at vide om nyheder og funk
 * Detaljeret administratorstyring ifm. [publicer på internettet](https://docs.microsoft.com/en-us/power-bi/service-admin-portal#export-and-sharing-settings).
 
 ## <a name="september-2017"></a>September 2017
-* Del dashboards med gratisbrugere med Premium.
+* I Premium-kapacitet deles dashboards med brugere, der ikke har en Power BI Pro-licens.
 * Allokering af kapaciteter efter dine virksomhedsbehov med gruppering af v-kerner.
 * Øjeblikkelig op- eller nedskalering af kapaciteter med et enkelt klik.
 * [PubNub-blokering](https://www.pubnub.com/docs/blocks-catalog/power-bi-realtime-dashboards) til nemt at overføre data til REST-API'er
@@ -222,7 +230,7 @@ Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerb
 
 ***Analysér i Excel***
 
-* [Analysér i Excel](service-analyze-in-excel.md) tilgængelig for alle brugere: Muligheden for at få adgang til Power BI-datamodeller i Excel er blevet udvidet til alle brugere – både gratis og Pro.
+* [Analysér i Excel](service-analyze-in-excel.md) tilgængelig for alle brugere: Muligheden for at få adgang til Power BI-datamodeller i Excel er blevet udvidet til alle brugere, uanset hvilken licens de er tildelt.
 * Forbedret oplevelse for konti med flere brugere: Hvis du har mere end én Power BI-brugerkonto, er det nu nemmere at logge på.
 
 Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerbi.microsoft.com/blog/power-bi-service-april-update-expressroute-for-power-bi/)
@@ -567,7 +575,7 @@ Se [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-service
 
 **24. juli 2015**
 
-* Vi er glade for at kunne meddele, at Power BI er blevet offentligt tilgængeligt. Du kan fortsætte med at bruge den gratis version af Power BI, eller du kan tilmelde dig [Power BI Pro](service-self-service-signup-for-power-bi.md). Som en del af udgivelsen af den offentligt tilgængelige version tilbyder vi nogle fantastiske nye funktioner:
+* Vi er glade for at kunne meddele, at Power BI er blevet offentligt tilgængeligt. Tilmeld dig [Power BI Pro](service-self-service-signup-for-power-bi.md) i dag. Som en del af udgivelsen af den offentligt tilgængelige version tilbyder vi nogle fantastiske nye funktioner:
 * En ny oplevelse af visualisering og oprettelse af rapporter: Det nye lærred har et større udvalg af visuelle elementer, større kontrol over formatering af titler, forklaringer, akser, farver, baggrunde med mere.
 * [Power BI-grupper](service-create-distribute-apps.md): Grupper giver en fantastisk samarbejdsoplevelse, der er baseret på Office 365-grupper.
 * [Organisationsindholdspakker](service-organizational-content-pack-introduction.md): Power BI gør det ekstremt enkelt at oprette dashboards og rapporter, og nu kan brugerne publicere dette indhold i organisationens indholdsgalleri.
@@ -661,7 +669,7 @@ Se [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-service
 * Pålideligheden ved opdatering med OneDrive er blevet forbedret.  Nogle situationer, hvor projektmapper ikke blev opdateret fra OneDrive, er blevet løst.
 
 ## <a name="next-steps"></a>Næste trin
-[Introduktion til Power BI](service-get-started.md)  
+[Hvad er Power BI?](power-bi-overview.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

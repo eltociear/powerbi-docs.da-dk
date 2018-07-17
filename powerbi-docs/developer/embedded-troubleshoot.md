@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 04/23/2018
+ms.date: 07/03/2018
 ms.author: maghan
-ms.openlocfilehash: ad23161985cc2721562cfdfd9128e326db887ece
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b3c9599ea3ce01094bb75d9b036fb25b1ca7109a
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813152"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926553"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Fejlfinding af det integrerede program
 
@@ -96,6 +96,44 @@ Programmets backend skal muligvis opdatere godkendelsestokenet før kaldet til G
     {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
 ```
 
+## <a name="authentication"></a>Godkendelse
+
+### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Godkendelsen mislykkedes med AADSTS70002 eller AADSTS50053
+
+**(AADSTS70002: Fejl under validering af legitimationsoplysninger. AADSTS50053: Du har prøvet at logge på for mange gange med forkert bruger-ID eller adgangskode)**
+
+Hvis du bruger Power BI Embedded, Azure AD Direkte godkendelse og modtager meddelelser, når du logger ind, såsom ***fejl: uautoriseret_klient, fejlbeskrivelse:AADSTS70002: Fejl under validering af legitimationsoplysninger. AADSTS50053: Du har prøvet at logge på for mange gange med forkert bruger-ID eller adgangskode***, fordi direkte godkendelse er blevet slået fra, fra og med 14/6/2018.
+
+Vi anbefaler, at du bruger [betinget adgang til Azure AD – Microsoft Azure Active Directory](https://cloudblogs.microsoft.com/enterprisemobility/2018/06/07/azure-ad-conditional-access-support-for-blocking-legacy-auth-is-in-public-preview/), der understøtter af blokering af ældre godkendelse, eller [gennemgående godkendelse fra Azure AD Directory](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).
+
+Dette kan dog aktiveres igen ved hjælp af en [Azure AD-politik](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications), der enten kan begrænses til organisationen eller være en [tjenesteprincipal](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+
+**_Vi anbefaler, at du kun aktiverer for dent enkelte program og udelukkende som en løsning._**
+
+Hvis du vil oprette denne politik, skal du være **Global Administrator** for den mappe, hvor du opretter politikken og tildelingen. Her er et eksempel på et script til oprettelse af politikken og tildeling af den til SP for dette program:
+
+1. Installér [Azure AD PowerShell-modulet som prøveversion](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+
+2. Kør følgende powershell-kommandoer linje for linje (Sørg for, at variablen $sp ikke har mere end 1 program som resultat).
+
+```powershell
+Connect-AzureAD
+```
+
+```powershell
+$sp = Get-AzureADServicePrincipal -SearchString "Name_Of_Application"
+```
+
+```powershell
+$policy = New-AzureADPolicy -Definition @("{`"HomeRealmDiscoveryPolicy`":{`"AllowCloudPasswordValidation`":true}}") -DisplayName EnableDirectAuth -Type HomeRealmDiscoveryPolicy -IsOrganizationDefault $false
+```
+
+```powershell
+Add-AzureADServicePrincipalPolicy -Id $sp.ObjectId -RefObjectId $policy.Id 
+```
+
+Efter tildeling af politikken skal du vente ca. 15-20 sekunder for overførsel inden afprøvning.
+
 **Generering af token mislykkes ved angivelse af effektiv identitet**
 
 GenerateToken kan mislykkes af forskellige grunde, når effektiv identitet er angivet.
@@ -113,6 +151,30 @@ Du kan benytte følgende metoder for at bekræfte årsagen:
 * Hvis IsEffectiveIdentityRolesRequired er sandt, så er Rolle påkrævet.
 * DatasetId er obligatorisk for enhver EffectiveIdentity.
 * For Analysis Services skal den overordnede bruger være en gateway-administrator.
+
+### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: Tildelingen kræver administratorrettigheder
+
+**_Symptomer:_**</br>
+Når en ikke-administratorbruger forsøger at logge på et program første gang og giver samtykke, får hun følgende fejl:
+* ConsentTest skal have tilladelse til at få adgang til ressourcer i din organisation, som kun en administrator kan tildele. Bed en administrator om at give tilladelse til dette program, før du kan bruge det.
+* AADSTS90094: Tildelingen kræver administratorrettigheder.
+
+    ![Samtykketest](media/embedded-troubleshoot/consent-test-01.png)
+
+En administratorbruger kan logge på og give samtykke.
+
+**_Hovedårsag:_**</br>
+Brugersamtykke er deaktiveret for lejeren.
+
+**_Der er flere mulige fejlrettelser:_**
+
+*Aktivere brugersamtykke for hele lejeren (alle brugere, alle programmer)*
+1. I Azure-portal, gå til "Azure Active Directory" = > "Brugere og grupper" = > "Brugerindstillinger"
+2. Aktivér "Brugerne må give samtykke til, at apps får adgang til virksomhedsdata på deres vegne", og gem ændringerne
+
+    ![Fejlrettelse af samtykketest](media/embedded-troubleshoot/consent-test-02.png)
+
+*Tildel tilladelser af en administrator* Tildel tilladelser til programmet af en administrator – enten til hele lejeren eller til en bestemt bruger.
 
 ## <a name="data-sources"></a>Datakilder
 
@@ -175,7 +237,7 @@ Når du kører eksempelappen **Embed for your organization**, får du følgende 
 
     AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application: <client ID>
 
-Dette skyldes, at den URL-adresse til omdirigering, der er angivet for webserverprogrammet, er forskellig fra URL-adressen i eksemplet. Hvis du vil registrere eksempelappen, skal du bruge *http://localhost:13526/* som URL-adresse til omdirigering.
+Dette skyldes, at den URL-adresse til omdirigering, der er angivet for webserverprogrammet, er forskellig fra URL-adressen i eksemplet. Hvis du vil registrere eksempelappen, skal du bruge `http://localhost:13526/` som URL-adresse til omdirigering.
 
 Hvis du vil redigere det registrerede program, skal du lære at redigere den [AAD-registrerede app](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), så appen kan give adgang til web-API'erne.
 

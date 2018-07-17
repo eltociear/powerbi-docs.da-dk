@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 7402bc638f27175e1c8e1f733fefd508850d9943
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 75636885da6357a756508558841c99435aa5f442
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34245576"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092178"
 ---
 # <a name="enable-qa-for-live-connections"></a>Aktivér Spørgsmål og svar til direkte forbindelser
 ## <a name="what-is-on-premises-data-gateway--what-is-a-live-connection"></a>Hvad er en datagateway i det lokale miljø?  Hvad er en direkte forbindelse?
@@ -56,6 +56,7 @@ Under Visningsfasen til denne funktion er der flere begrænsninger:
 
 * Til at begynde med er funktionen kun tilgængelig for SQL Server 2016 Analysis Services Tabular-datakilder. Funktionen er optimeret til at arbejde med data i tabelformat. Nogle funktioner er tilgængelige for flerdimensionelle datakilder, men den fulde oplevelse med Spørgsmål og svar understøttes endnu ikke for flerdimensionelle. Der udrulles løbende flere datakilder, som understøttes af datagatewayen i det lokale miljø.
 * Fuld understøttelse af sikkerhed på rækkeniveau, der er defineret i SQL Server Analysis Services, er ikke tilgængelig til at begynde med i den offentlige prøveversion. Når der stilles spørgsmål i Spørgsmål og svar, kan den automatiske udfyldning af spørgsmål under skrivningen vise strengværdier, som brugerne ikke har adgang til. Dog overholdes den RLS, der er defineret i modellen, for visning af rapporter og diagrammer, så ingen underliggende numeriske data kan fremvises. Indstillinger til at styre denne funktionsmåde vil blive udgivet i kommende opdateringer.
+* Sikkerhed på objektniveau (OLS) understøttes ikke. Spørgsmål og svar overholder ikke sikkerhed på objektniveau og kan afsløre tabel- eller kolonnenavne til brugere, som ikke har adgang til dem. Du skal aktivere RLS for at sikre, at også værdier er sikret korrekt. 
 * Direkte forbindelser understøttes kun med datagatewayen i det lokale miljø. Denne funktion kan derfor ikke bruges med den personlige gateway.
 
 ## <a name="next-steps"></a>Næste trin

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a604f50889d4443ba7c8e7da580275e579f69d15
-ms.sourcegitcommit: 4b61588e3ab3c8bbb17276402dbf7fa00085a266
+ms.openlocfilehash: e2b61f84b459d3b14c2cd066e0261dcdb1b8a5ef
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35301820"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965498"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administrationsportal
 
@@ -99,6 +99,8 @@ Du kan finde flere oplysninger om overvågningslogge under [Overvågning af Powe
 ## <a name="tenant-settings"></a>Lejerindstillinger
 
 Den tredje fane i administrationsportalen er **Lejerindstillinger**. Lejerindstillingerne giver dig yderligere kontrol over, hvilke funktioner der gøres tilgængelige i din virksomhed. Hvis du har bekymringer omkring følsomme data, kan det være, at nogle af vores funktioner ikke er passende for din virksomhed, eller du vil måske kun have, at en given funktion er tilgængelig for en bestemt gruppe. Hvis det er tilfældet, kan du slå funktionen fra i din lejer.
+
+Brugerspecifikke data er f.eks. aktiveret for forbrugsdata som standard, og kontooplysninger om oprettere af indhold indgår i rapporten med forbrugsdata. Hvis du ikke vil medtage disse oplysninger for nogle eller alle brugere, kan du deaktivere funktionen for nærmere angivne sikkerhedsgrupper eller for en hel organisation. Kontooplysninger vises derefter i rapporten som *Ikke-navngivet*.
 
 ![](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
@@ -235,7 +237,7 @@ Brugerne i organisationen kan interagere med og dele brugerdefinerede visualiser
 
 ## <a name="r-visuals-settings"></a>R visuals – indstillinger
 
-### <a name="interact-with-an-dshare-r-visuals"></a>Interager med en dshare R visuals
+### <a name="interact-with-and-share-r-visuals"></a>Interager med og del R-visualiseringer
 
 Brugere i virksomheden kan interagere med og dele visuelle elementer oprettet med R-scripts. [Få mere at vide](service-r-visuals.md)
 

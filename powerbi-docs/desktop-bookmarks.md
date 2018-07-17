@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d350593f3a5168d959711e1ca2bbbd8a86524187
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a69cccafa9651bbda44ea2154ebe68463c9da907
+ms.sourcegitcommit: 7e0335bd8c263b5f8ba4303b986ddc450d842297
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34288055"
+ms.lasthandoff: 06/23/2018
+ms.locfileid: "36330116"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Brug bogmærker til at dele indsigt og oprette historier i Power BI 
 Ved hjælp af **bogmærker** i Power BI kan du indfange den visning af en rapportside, der er konfigureret i øjeblikket, herunder filtrering af og tilstanden for visualiseringer, og senere gå tilbage til denne tilstand ved ganske enkelt at vælge det gemte bogmærke. 
@@ -58,13 +58,13 @@ Konfigurer en rapportside, som du ønsker, den skal vises i bogmærket. Når din
 
 **Power BI Desktop** opretter et bogmærke og giver det et standardnavn. Du kan nemt *omdøbe*, *slette* eller *opdatere* et bogmærke ved at vælge ellipsen ud for bogmærkets navn og derefter vælge en handling i den viste menu.
 
-![Vælg undermenuen for et bogmærke ved hjælp af ellipsen](media/desktop-bookmarks/bookmarks_05.png)
+![Vælg undermenuen for et bogmærke ved hjælp af ellipserne](media/desktop-bookmarks/bookmarks_05.png)
 
 Når du har et bogmærke, kan du få vist det ved ganske enkelt at klikke på bogmærket i ruden **Bogmærker**. 
 
 Du kan også vælge, om de enkelte bogmærker skal anvende *data*egenskaber, f.eks. filtre og udsnit, *visnings*egenskaber, f.eks. spotlight og synlighed, og sideændringer, der viser den side, som kunne ses, da bogmærket blev tilføjet. Disse funktioner er nyttige, når du bruger bogmærker til at skifte mellem visuelle typer – i dette tilfælde vil du sandsynligvis deaktivere dataegenskaber, så filtre ikke nulstilles, efterhånden som brugerne ændrer visuelle typer. 
 
-Du kan foretage sådanne ændringer ved at vælge ellipsen ud for bogmærkets navn, som vist på forrige billede, og derefter markere eller fjerne markeringen i afkrydsningsfeltet ud for *Data*, *Visning* og andre objekter. 
+Du kan foretage sådanne ændringer ved at vælge ellipserne ud for bogmærkets navn, som vist på forrige billede, og derefter markere eller fjerne markeringen i afkrydsningsfeltet ud for *Data*, *Visning* og andre objekter. 
 
 ## <a name="arranging-bookmarks"></a>Arranger bogmærker
 Når du opretter bogmærker, finder du måske ud af, at den rækkefølge, som du opretter dem i, ikke nødvendigvis er den rækkefølge, som de skal vises i. Ikke noget problem. Du kan nemt ændre rækkefølgen af bogmærker.

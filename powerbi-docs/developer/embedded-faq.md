@@ -3,18 +3,18 @@ title: Ofte stillede spørgsmål om Power BI Embedded
 description: Gennemse en liste med ofte stillede spørgsmål og svar om Power BI Embedded.
 author: markingmyname
 manager: kfile
+ms.author: maghan
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/25/2018
-ms.author: maghan
-ms.openlocfilehash: bcdb20d22790b74b54caca5d21325039d6e718bf
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.date: 06/22/2018
+ms.openlocfilehash: 07d51448083f61725157d3ea37c5d9dc73e85157
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34812738"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599944"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -76,7 +76,7 @@ Her er en delvis liste over forskelle, som du kan bruge i hver.
 |  |A-SKU (Power BI Embedded)  |EM-SKU (Power BI Premium)  |P-SKU (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Køb     |Azure-portal |Office |Office |
-|Use cases |* Integrer indhold i dit eget program |* Integrer indhold i dit eget program<br>* Del indhold med Power BI FREE-brugere uden for PowerBI.com og integrer i andre SaaS-programmer (SharePoint, Teams) |* Integrer indhold i dit eget program<br>* Del indhold med Power BI FREE-brugere uden for PowerBI.com og integrer i andre SaaS-programmer (SharePoint, Teams)<br>* Del indhold med Power BI FREE-brugere via PowerBI.com  |
+|Use cases |* Integrer indhold i dit eget program |* Integrer indhold i dit eget program<br>* Del indhold med Power BI FREE-brugere uden for PowerBI.com og integrer i andre SaaS-programmer (SharePoint, [Teams](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/)) |* Integrer indhold i dit eget program<br>* Del indhold med Power BI FREE-brugere uden for PowerBI.com og integrer i andre SaaS-programmer (SharePoint, Teams)<br>* Del indhold med Power BI FREE-brugere via PowerBI.com  |
 |Fakturering |Pr. time |Månedlig |Månedlig |
 |Tilsagn  |Intet tilsagn |Årligt  |Månedligt/årligt |
 |Differentiering |Fuld elasticitet, kan skaleres op / ned, pausestille / genoptage ressourcer i Azure-portalen eller gennem API  |Kan bruges til at integrere indhold i SharePoint Online og Microsoft Teams |Kombiner integration i programmer og brug Power BI-tjenesten i den samme egenskab |
@@ -95,6 +95,58 @@ Overvågning vha. Azure er omfattet af køreplanen på kort sigt. Azure-ressourc
 
 Selvom der ikke er nogen skalering nu, så er alle API'erne tilgængelige for skalering når som helst.
 
+### <a name="why-creatingscalingresuming-a-capacity-results-in-putting-the-capacity-into-a-suspended-state"></a>Hvorfor afbrydes kapaciteten midlertidigt, når man opretter/skalerer/genoptager en kapacitet?
+
+Klargøring af en kapacitet (skalering/genoptagelse/oprettelse) kan mislykkes. Den, som kalder klargøringsopkaldet, skal kontrollere en kapacitets ProvisioningState med Få oplysninger om API: [Kapaciteter – Få oplysninger](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities/getdetails).
+
+### <a name="why-can-i-only-create-pbie-in-a-specific-region"></a>Hvorfor kan jeg kun oprette PBIE i et bestemt område?
+
+Du kan kun oprette PBIE-kapaciteter for dit PBI-lejerområder.
+
+### <a name="how-can-i-find-what-is-my-pbi-tenant-region"></a>Hvordan kan jeg se mit PBI-lejerområde?
+
+Du kan bruge PBI-portalen til at finde ud af, hvad er dit PBI-lejerområde er.
+
+https://app.powerbi.com/ > ? > Om Power BI
+
+![Om Power BI](media/embedded-faq/about-01.png)
+![Lejerområde](media/embedded-faq/tenant-location-01.png)
+
+### <a name="what-is-supported-with-the-communicating-sequential-processes-csp-channel"></a>Hvad understøttes med CSP-kanalen (kommunikerende sekventielle processer)?
+
+* Du kan oprette PBIE for din lejer med abonnementstype CSP
+* Partnerkonto kan logge på kundelejer og købe PBIE for kundelejeren, angive kundelejerbruger som administrator af Power BI-kapacitet
+
+### <a name="why-do-i-get-an-unsupported-account-message"></a>Hvorfor får jeg en meddelelse om en ikke-understøttet konto?
+
+Power BI kræver, at du tilmelder dig med en organisationskonto. Forsøg på at tilmelde sig til Power BI med en MSA (Microsoft-konto) understøttes ikke.
+
+### <a name="can-i-use-apis-to-create--manage-azure-capacities"></a>Kan jeg bruge API'er til at oprette og administrere Azure-kapaciteter?
+
+Ja. Der er Powershell-cmdlet'er og ARM API'er, du kan bruge til at oprette og administrere PBIE ressourcer.
+
+* Rest API'er – https://docs.microsoft.com/rest/api/power-bi-embedded/
+* PowerShell-cmdlet'er – https://docs.microsoft.com/powershell/module/azurerm.powerbiembedded/
+
+### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Hvilken rolle har PBI's integrerede dedikerede kapacitet i en PBI-integreret løsning?
+
+For at [gøre din løsning produktionsklar](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production) har du brug for Power BI-indhold (app-arbejdsområde, du bruger i din app, der tildeles en dedikeret kapacitet).
+
+### <a name="what-are-the-azure-regions-pbi-embedded-is-available"></a>Hvilke Azure-områder er tilgængelige i PBI integreret?
+
+[PAM](https://ecosystemmanager.azurewebsites.net/home) (EcoManager) – se produkttilgængelighedsstyringen
+
+Tilgængelige områder (16 – samme områder som Power BI)
+* USA (6) – Det østlige USA, Det østlige USA 2, Det nordcentrale USA, Det sydcentrale USA, Det vestlige USA, Det vestlige USA 2
+* Europa (2) – Det nordlige Europa, Det vestlige Europa
+* Asien og Stillehavsområdet (2) – Det sydøstlige Asien, Det østlige Asien
+* Brasilien (1) – Det sydlige Brasilien
+* Japan (1) – Østjapan
+* Australien (1) – Det sydøstlige Australien
+* Indien (1) – Vestindien
+* Canada (1) – Det centrale Canada
+* Storbritannien (1) – Det sydlige Storbritannien
+
 ### <a name="what-is-the-authentication-model-for-power-bi-embedded"></a>Hvilken godkendelsesmodel benyttes i Power BI Embedded?
 
 Power BI Embedded vil fortsat bruge Azure AD til godkendelse af master-brugeren (en udpeget Power BI Pro-licenseret bruger), der godkender programmet internt i Power BI.
@@ -104,6 +156,17 @@ Godkendelse og godkendelse af programbrugerne bliver implementeret af ISV'en, IS
 Hvis du allerede har en Azure AD-lejer, kan du bruge din eksisterende mappe, eller du kan oprette en ny Azure AD-lejer med henblik på at sørge for dit integrerede programindholds sikkerhed.
 
 Hvis du skal have et AAD-token, kan du bruge et af Azure Active Directory-godkendelsesbibliotekerne – https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries. Der er klientbiblioteker til flere platforme.
+
+### <a name="my-application-already-uses-aad-for-user-authentication-how-can-we-use-this-identity-when-authenticating-to-power-bi-in-a-user-owns-data-scenario"></a>Mit program allerede bruger AAD til brugergodkendelse. Hvordan kan vi bruge dette id til godkendelse til Power BI i et scenarie, hvor "Bruger ejer Data"? 
+
+Det er standard OAuth på vegne af flow (https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api) programmet skal være konfigureret til at kræve tilladelser til Power BI-tjenesten (med de påkrævede områder), og når du har et bruger-token til din app, skal du bare kalde ADAL API AcquireTokenAsync ved hjælp af brugeradgangstoken og angive Power BI-ressourcens URL-adresse ressource-id. Se kodestykke nedenfor, der viser, hvordan dette kan gøres:
+
+```csharp
+var context = new AD.AuthenticationContext(authorityUrl);
+var userAssertion = new AD.UserAssertion(userAccessToken);
+var clientAssertion = new AD.ClientAssertionCertificate(MyAppId, MyAppCertificate)
+var authenticationResult = await context.AcquireTokenAsync(resourceId, clientAssertion, userAssertion);
+```
 
 ### <a name="how-is-power-bi-embedded-different-from-other-azure-services"></a>Hvordan er Power BI Embedded anderledes end andre Azure-tjenester?
 
@@ -181,8 +244,8 @@ Almennyttige organisationer og uddannelsesinstitutioner kan købe Azure. Der er 
 
 3. Når du er klar til produktion, skal du købe en **Power BI Embedded**-dedikeret kapacitet og tildele dit Power BI-indhold (arbejdsområde) til denne kapacitet.
 
->[!Note]
-Du kan fortsætte med at bruge **Power BI Workspace Collection**, når du opretter parallelt med en **Power BI Embedded**-løsning. Når du er klar, kan du flytte kunden til den nye **Power BI Embedded**-løsning og lade **Power BI Workspace Collection**-løsningen udgå.
+> [!Note]
+> Du kan fortsætte med at bruge **Power BI Workspace Collection**, når du opretter parallelt med en **Power BI Embedded**-løsning. Når du er klar, kan du flytte kunden til den nye **Power BI Embedded**-løsning og lade **Power BI Workspace Collection**-løsningen udgå.
 
 Du kan finde flere oplysninger under [Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded](https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded)
 

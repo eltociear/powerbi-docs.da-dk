@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b4462d8ef5037cf4fe76a6ff061b7993e8d8ec44
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 1ce4fe4e80138995e7ec356b92f31e45f3a2c920
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34245599"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599778"
 ---
 # <a name="connect-to-project-madeira-with-power-bi"></a>Opret forbindelse til projektet "Madeira" med Power BI
 Det er let at få indblik i dataene for projektet "Madeira" med Power BI og indholdspakken til projektet "Madeira". I Power BI hentes dine data, både salgs- og finansdata, og derefter bygges en app med et brugerdefineret dashboard og rapporter, der er baseret på disse data.
@@ -33,7 +33,7 @@ Opret forbindelse til [analyseindholdspakken til projektet "Madeira"](https://ap
     ![](media/service-connect-to-project-madeira/services.png)
 3. Vælg **projektet "Madeira"**, og vælg derefter **Hent**.  
     ![](media/service-connect-to-project-madeira/projectmadeira.png)
-4. Når du bliver bedt om det, skal du angive URL-adressen til projektet "Madeira". URL-adressen skal følge dette mønster nøjagtigt https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US') med dit firmanavn fra projekt “Madeira”. Bemærk, at der er ingen efterstillet skråstreg til sidst, og forbindelsen skal være https. Se, hvordan du finder denne URL-adresse, [nedenfor](#FindingParams).  
+4. Når du bliver bedt om det, skal du angive URL-adressen til projektet "Madeira". URL-adressen skal følge dette mønster nøjagtigt <https://mycronusus.projectmadeira.com:7048/NAV/OData/Company('CRONUS%20US>') med dit firmanavn fra projekt “Madeira”. Bemærk, at der er ingen efterstillet skråstreg til sidst, og forbindelsen skal være https. Se, hvordan du finder denne URL-adresse, [nedenfor](#FindingParams).  
    
     ![](media/service-connect-to-project-madeira/params.png)
 5. Når du bliver bedt om det, skal du vælge Basic som godkendelsesmetode, angive mailadressen for projektet "Madeira" som brugernavn og derefter angive webtjenesteadgangsnøglen for din konto til projektet "Madeira" som adgangskode. Hvis du er allerede er logget på projektet "Madeira" browseren, bliver du muligvis ikke bedt om at angive legitimationsoplysninger. Se, hvordan du opretter denne adgangsnøgle, [nedenfor](#FindingParams).  
@@ -93,10 +93,10 @@ Power BI-dashboardet er baseret på de udgivne webtjenester, der er angivet oven
 
 Hvis du får vist denne fejl, når du har angivet URL-adressen til projektet "Madeira", skal du kontrollere, om følgende betingelser er opfyldt:  
 
-   - URL-adressen følger dette mønster præcist: https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')  
-   - Slet eventuel tekst efter firmanavnet i parentes  
-   - Kontrollér, at der ikke er nogen efterstillet skråstreg i slutningen af URL-adressen.  
-   - Kontrollér, at URL-adressen benytter en sikker forbindelse, som angivet af den URL-adresse, der starter med https.  
+- URL-adressen følger dette mønster præcist: https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>')  
+- Slet eventuel tekst efter firmanavnet i parentes  
+- Kontrollér, at der ikke er nogen efterstillet skråstreg i slutningen af URL-adressen.  
+- Kontrollér, at URL-adressen benytter en sikker forbindelse, som angivet af den URL-adresse, der starter med https.  
 
 **"Logon mislykkedes"** Hvis du får vist fejlmeddelelsen "Logon mislykkedes", når du logger på dashboardet vha. legitimationsoplysningerne til projektet "Madeira", kan det skyldes et af følgende problemer:  
 
@@ -104,16 +104,16 @@ Hvis du får vist denne fejl, når du har angivet URL-adressen til projektet "Ma
    - Den instans for projektet "Madeira", du prøver at oprette forbindelse til, har ikke et gyldigt SSL-certifikat. I dette tilfælde vises en mere detaljeret fejlmeddelelse ("det var ikke muligt at etablere en SSL-relation, der er tillid til"). Bemærk, at selvsignerede certifikater ikke understøttes.  
 
 **"Ups"** Hvis du får vist en "Oops"-fejldialogboks, når du bekræfter godkendelsesdialogboksen, skyldes det som oftest et problem med at oprette forbindelse til dataene for indholdspakken. Bekræft, at URL-adressen følger det mønster, der blev angivet tidligere:  
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')
+    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>')
 
 Det er en almindelig fejl at angive den fulde URL-adresse for en bestemt webtjeneste:  
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('*CRONUS%20US*')/powerbifinance
+    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/Company('<em>CRONUS%20US</em>')/powerbifinance
 
 Eller du har glemt at angive firmanavnet:   
-    https://*mycronusus*.projectmadeira.com:7048/NAV/OData/
+    https://<em>mycronusus</em>.projectmadeira.com:7048/NAV/OData/
 
 ## <a name="next-steps"></a>Næste trin
-[Kom i gang med Power BI](service-get-started.md)
+[Hvad er Power BI?](power-bi-overview.md)
 
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)
 

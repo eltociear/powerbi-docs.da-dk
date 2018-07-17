@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: cd129d898f7ac958a3441754e87366aa1a9dddca
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: f4a7e8d0ad254f2b5130026d793629a0cf4cf3be
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34238241"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137278"
 ---
 # <a name="connect-to-github-with-power-bi"></a>Opret forbindelse til GitHub med Power BI
 Med GitHub-indholdspakken til Power BI kan du få indsigt i et GitHub-lager med data om bidrag, problemer, pull-anmodninger og aktive brugere.
@@ -97,5 +97,5 @@ Hvis det er nødvendigt, kan du kontrollere dine GitHub-legitimationsoplysninger
 3. Når du er tilbage i Power BI, kan du prøve at oprette forbindelse til GitHub. Brug navnene på lageret og lagerejeren af det samme lager i dialogboksen Konfigurer GitHub.  
 
 ## <a name="next-steps"></a>Næste trin
-* [Introduktion til Power BI](service-get-started.md)
+* [Hvad er Power BI?](power-bi-overview.md)
 * [Hent data](service-get-data.md)

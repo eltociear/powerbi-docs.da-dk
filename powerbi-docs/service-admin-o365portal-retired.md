@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 024bdce00ba6ec7b9c1027163776a71e77aaf91d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: c0090cb81ebaebc6b4cec70163374be4f1f37980
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34456105"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37135806"
 ---
 # <a name="power-bi-for-office-365-is-retired"></a>Power BI til Office 365 er udgået
 Power BI til Office 365, der er en tidligere version af Power BI, er overgået til den aktuelle version af [Power BI](https://powerbi.microsoft.com). Brugere, som tidligere har brugt **Power BI til Office 365**, kan bruge den aktuelle version af Power BI. Du kan [få mere at vide om Power BI](service-get-started.md).
@@ -28,8 +28,8 @@ Administrationsportalen til **Power BI til Office 365** er ikke længere tilgæn
 Se [Power BI-administrationsportalen](service-admin-portal.md), hvis du vil have mere at vide.
 
 ## <a name="next-steps"></a>Næste trin
-[Introduktion til Power BI](service-get-started.md)
+[Hvad er Power BI?](power-bi-overview.md)
 
-[Introduktion til Power BI Desktop](desktop-getting-started.md)
+[Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 
-[Administrering af Power BI i din virksomhed](service-admin-administering-power-bi-in-your-organization.md)
+[Administrer Power BI i din organisation](service-admin-administering-power-bi-in-your-organization.md)

@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/18/2017
 ms.author: maggies
-ms.openlocfilehash: aa4aac1b0628fb0670a4265095ba2abcae3c1dcf
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 2ca419e1e07485ad29c486d8626e78d9605c8468
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34292564"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965015"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Indstil databeskeder i Power BI-mobilapps
 Gælder for:
@@ -25,7 +25,7 @@ Gælder for:
 
 Du kan indstille beskeder på dashboards i Power BI-mobilapps og i Power BI-tjenesten. Beskeder informerer dig, når dataene på dine dashboards ændres ud over de grænser, du har angivet. Du kan bruge beskeder med de felter, der indeholder et enkelt tal, for eksempel kort og målere, men ikke med data, der streames. Du kan indstille databeskeder på din mobilenhed og få dem vist i Power BI-tjenesten og omvendt. Du kan kun se de databeskeder, du indstiller, også selvom du deler et dashboard eller et øjebliksbillede af et felt.
 
-Du kan angive beskeder på felter, hvis du har en licens til Power BI Pro, eller hvis du har en gratis licens til Power BI og det delte dashboard er i en Premium-kapacitet. 
+Du kan angive beskeder på felter, hvis du har en licens til Power BI Pro, eller hvis det delte dashboard er i en Premium-kapacitet. 
 
 > [!WARNING]
 > Datadrevne beskeder indeholder oplysninger om dine data. Hvis din enhed bliver stjålet, anbefaler vi, at du går til Power BI-tjenesten og slår alle regler for datadrevne beskeder fra. 

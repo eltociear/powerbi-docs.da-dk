@@ -7,15 +7,15 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/22/2018
+ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: c504280257a959ccd7a46e61b9d377c22b76c14d
-ms.sourcegitcommit: 2b9ef93bbff5c741ba55ea0502f642632683d593
+ms.openlocfilehash: 08a65e7d312b0f57ec2824431bd00456c06860be
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/24/2018
-ms.locfileid: "34471887"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36945198"
 ---
 # <a name="language-modeling-and-the-linguistic-schema"></a>Sproglig udformning og det sproglige skema 
 Det er effektivt, når du bruger almindelige udtryk og naturligt sprog til dataforespørgsler. Det er endnu mere effektiv, når dataene svarer, hvilket er, hvad der sker i Spørgsmål og svar i Power BI. Når du stiller et spørgsmål i Spørgsmål og svar i Power BI, forsøger den så vidt muligt at finde det rette svar. 
@@ -340,7 +340,7 @@ Et andet eksempel ville være at føje de alternative udtryk "medarbejdere sælg
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 Hvis du har foretaget en ændring af en. lsdl.yaml-fil, der ikke stemmer overens med formatet i det sproglige skema, kan du nu se følgende fejl i valideringer, der angiver problemer: 
 
-    ![yaml file showing errors](media/power-bi-q-and-a-linguistic-schema/power-bi-yaml-errors.png)
+![yamlfilen viser fejl](media/power-bi-q-and-a-linguistic-schema/power-bi-yaml-errors.png)
 
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 09/11/2017
 ms.author: mgblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 3cf20899e705328c9f63bdbede4c30bd69488762
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 52c6293bacb2cae1d74a7a0459c61fe3c3bc201f
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34298314"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944347"
 ---
 # <a name="power-bi-premium-release-notes"></a>Produktbemærkninger til Power BI Premium
 Disse er produktbemærkningerne til Power BI Premium, som er en dedikeret kapacitet, der giver din organisation eller dit team mere pålidelig ydeevne, større datamængder og mulighed for at distribuere indhold uden licenser pr. bruger til fremvisere.
 
-* Brugere med gratis Power BI-licenser kan nu se dashboards, der deles med dem fra Premium-arbejdsområder i Power BI-tjenesten.
+* Alle brugere, uanset hvilken licens de er tildelt, kan nu se dashboards, der deles med dem fra Premium-arbejdsområder i Power BI-tjenesten.
 * Kapacitetsadministratorer får nu automatisk tilladelser til tildeling af kapacitet.
 * Dynamiske sikkerhed på rækkeniveau (RLS) er nu tilgængelig for tilfælde med integreret brug. Du kan finde flere oplysninger i [Sikkerhed på rækkeniveau (RLS) med integreret analyse](developer/embedded-row-level-security.md).
 * Distribution af Power BI-apps for brugere i andre AAD-lejere ved hjælp af powerbi.com understøttes ikke endnu. Vi arbejder på at gøre det muligt.

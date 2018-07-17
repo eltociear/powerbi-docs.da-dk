@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 236a3d1bde84d4259d921d44730057a4e2fd3591
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e1320135ba0abb737a487036948c2822d0c337ae
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34256742"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136496"
 ---
 # <a name="spark-on-hdinsight-with-directquery"></a>Spark on HDInsight med DirectQuery
 Med Spark on Azure HDInsight med DirectQuery kan du oprette dynamiske rapporter, der er baseret på data og målinger, du allerede har i din Spark-klynge. Med DirectQuery sendes forespørgsler tilbage til din Azure HDInsight Spark-klynge, mens du udforsker dataene i rapportvisning. Denne oplevelse foreslås for brugere, der kender de enheder, de opretter forbindelse til.
@@ -26,6 +26,10 @@ Med Spark on Azure HDInsight med DirectQuery kan du oprette dynamiske rapporter,
 > 
 
 Du kan bruge følgende trin til at oprette forbindelse til din Spark på Azure HDInsight-datakilde ved hjælp af DirectQuery i Power BI-tjenesten.
+
+> [!Important]
+> Vi har forbedret vores netværksmuligheder til Spark.  For at få den bedste oplevelse og oprette forbindelse til din Spark-datakilde kan du bruge Power BI Desktop.  Når du har bygget din model og rapport, kan du udgive den på Power BI-tjenesten.  Den direkte forbindelse til Spark i Power BI-tjenesten frarådes nu.
+>
 
 1. Vælg **Hent data** nederst i venstre navigationsrude.
    
@@ -71,7 +75,7 @@ Du kan også tildele flere ressourcer på Azure-portalen under **Configuration**
 
 ## <a name="next-steps"></a>Næste trin
 [Kom i gang: Opret Apache Spark-klyngen på HDInsight Linux, og kør interaktive forespørgsler ved hjælp af Spark SQL](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-jupyter-spark-sql)  
-[Introduktion til Power BI](service-get-started.md)  
+[Hvad er Power BI?](power-bi-overview.md)  
 [Hent data til Power BI](service-get-data.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 0d11c1bd865aade1ad54a361a0616f6426da1a67
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: da9a4ffad948a43077d864e442af36b0db6bb617
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248405"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136956"
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
 ## <a name="what-is-a-power-bi-report"></a>Hvad er en Power BI-rapport?
@@ -76,7 +76,7 @@ Her er nogle emner opdelt efter rolle, som kan hjælpe dig med at komme i gang.
 > 
 
 ## <a name="next-steps"></a>Næste trin
-[Introduktion til Power BI](service-get-started.md) 
+[Hvad er Power BI?](power-bi-overview.md) 
 
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)
 

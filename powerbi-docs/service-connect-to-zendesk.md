@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 997dd8b598e67d590723c72fb35245c3b3486c8b
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: afcaae9499aa1c7e1461030cfa6b5d7b35a47188
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242440"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37136013"
 ---
 # <a name="connect-to-zendesk-with-power-bi"></a>Opret forbindelse til Zendesk med Power BI
 Zendesk-indholdspakken indeholder et Power BI-dashboard og et sæt Power BI-rapporter, der giver indsigt i dine billetvolumener og agentydeevne. Du kan bruge dashboardet og rapporterne, som følger med, eller tilpasse dem for at fremhæve de oplysninger, som betyder mest for dig.  Dataene opdateres automatisk én gang dagligt. 
@@ -84,6 +84,6 @@ URL-adressen til Zendesk skal være den samme som den URL-adresse, du bruger til
 Hvis du har problemer med at oprette forbindelse, skal du kontrollere din Zendesk URL-adresse og bekræfte, at du bruger en Zendesk-administratorkonto.
 
 ## <a name="next-steps"></a>Næste trin
-* [Introduktion til Power BI](service-get-started.md)
+* [Hvad er Power BI?](power-bi-overview.md)
 * [Hent data](service-get-data.md)
 

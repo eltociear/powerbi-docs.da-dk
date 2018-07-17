@@ -7,27 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 07/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d0cc0ce18a187280c48be0c84bf9adf680ea3ea4
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 11be5cd6f5b97fe612bf42a37228518ab2fbb227
+ms.sourcegitcommit: d1a0da8638c5d957b884ca9412275ee8880d4b14
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813428"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37900048"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Brug af SAP BW Connector i Power BI Desktop
 Med Power BI Desktop har du adgang til data i **SAP Business Warehouse (BW)**.
 
 Du kan få oplysninger om, hvordan SAP-kunder kan integrere Power BI i deres eksisterende SAP Business Warehouse (BW)-systemer i [Hvidbog til Power BI og SAP BW](https://aka.ms/powerbiandsapbw).
 
-Fra og med juni 2018-udgivelsen af **Power BI Desktop** kan du bruge SAP BW-connectoren med en implementering, der har store forbedringer i ydeevne og funktioner. Denne opdaterede version af SAP BW-connectoren er udviklet af Microsoft og kaldes **Implementation 2.0**. Du kan vælge enten standarden **SAP BW Connector** eller **Implementation 2.0 SAP Connector**. I de følgende afsnit beskrives installationen af hver version. Du kan vælge den ene eller den anden connector, når du opretter forbindelse til SAP BW fra Power BI Desktop.
+Fra og med juni 2018-udgivelsen af **Power BI Desktop** kan du bruge SAP BW-connectoren med en implementering, der har store forbedringer i ydeevne og funktioner. Denne opdaterede version af SAP BW-connectoren er udviklet af Microsoft og kaldes **Implementation 2.0**. Du kan vælge enten version 1 (v1) af **SAP BW Connector** eller **Implementation 2.0 SAP Connector**. I de følgende afsnit beskrives installationen af hver version. Du kan vælge den ene eller den anden connector, når du opretter forbindelse til SAP BW fra Power BI Desktop.
 
 Vi foreslår, at du bruger **Implementation 2.0 SAP Connector**, når det er muligt.
 
-## <a name="installation-of-the-standard-sap-bw-connector"></a>Installation af SAP BW-standardconnectoren
-Vi anbefaler, at du bruger Implementation 2.0 SAP Connector, når det er muligt (se instruktionerne i følgende afsnit). I dette afsnit beskrives installationen af standarden **SAP BW Connector**, som du kan installere ved at følgende installationstrinnene:
+## <a name="installation-of-version-1-of-the-sap-bw-connector"></a>Installation af version 1 af SAP BW-connectoren
+Vi anbefaler, at du bruger Implementation 2.0 SAP Connector, når det er muligt (se instruktionerne i følgende afsnit). I dette afsnit beskrives installationen af version 1 af **SAP BW Connector**, som du kan installere ved at følgende installationstrinnene:
 
 1. Installér biblioteket **SAP NetWeaver** på din lokale computer. Du kan hente biblioteket **SAP Netweaver** fra SAP-administratoren eller direkte fra [SAP Software Download Center](https://support.sap.com/swdc). Da strukturen i **SAP Software Download Center** ofte ændres, kan vi ikke give en mere specifik vejledning til, hvordan du henter programmet. **SAP NetWeaver**-biblioteket er som regel medtaget i installationen af SAP-klientværktøjer.
    
@@ -54,11 +54,11 @@ Når du installerer, skal du vælge **Install assemblies to GAC** i vinduet *Opt
 ![Valgfri installationstrin for SAP](media/desktop-sap-bw-connector/sap_bw_2b.png)
 
 > [!NOTE]
-> SAP BW-standardimplementeringer kræver Netweaver DLL-filer. Hvis du bruger Implementation 2.0 af SAP-connectoren, og du ikke bruger standardversionen, er Netweaver DLL-filerne ikke påkrævet.
+> Den første version af SAP BW-standardimplementeringer kræver Netweaver DLL-filer. Hvis du bruger Implementation 2.0 af SAP-connectoren, og du ikke bruger den første version, er Netweaver DLL-filerne ikke påkrævet.
 
 
-## <a name="standard-sap-bw-connector-features"></a>Funktioner i SAP BW-standardconnectoren
-Med standarden **SAP BW Connector** i Power BI Desktop kan du importere data fra dine **SAP Business Warehouse Server**-kuber eller bruge DirectQuery. 
+## <a name="version-1-sap-bw-connector-features"></a>Funktioner i version 1 af SAP BW Connector
+Med version 1 af **SAP BW Connector** i Power BI Desktop kan du importere data fra dine **SAP Business Warehouse Server**-kuber eller bruge DirectQuery. 
 
 Du kan finde flere oplysninger om **SAP BW Connector**, og hvordan du bruger den med DirectQuery, i artiklen [DirectQuery og SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
@@ -101,7 +101,7 @@ Du skal oprette en ny forbindelse for at bruge Implementation 2.0 af SAP BW-conn
 
     ![Dialogboksen SAP-forbindelse](media/desktop-sap-bw-connector/sap_bw_7.png)
 
-3. Vælg **OK**. Derefter er **Navigator** den samme som beskrevet i det tidligere afsnit for SAP BW-standardconnectoren. 
+3. Vælg **OK**. Derefter er **Navigator** den samme som beskrevet i det tidligere afsnit for version 1 af SAP BW-connectoren. 
 
 ### <a name="new-options-for-implementation-20"></a>Nye indstillinger for Implementation 2.0 
 
@@ -163,7 +163,7 @@ Det er kun muligt at ændre eksisterende rapporter til at bruge **Implementation
 
     ![forespørgselstykke](media/desktop-sap-bw-connector/sap_bw_12.png)
 
-4. Vi har gjort alt for at gøre Implementation 2.0 af SAP BW-connectoren kompatibel med SAP BW-standardconnectoren. Der kan dog være nogle forskelle på grund af de forskellige SAP BW MDX-udførelsestilstande. Du kan forsøge at løse eventuelle uoverensstemmelser ved at skifte til en anden udførelsestilstand.
+4. Vi har gjort alt for at gøre Implementation 2.0 af SAP BW-connectoren kompatibel med version 1 af SAP BW-connectoren. Der kan dog være nogle forskelle på grund af de forskellige SAP BW MDX-udførelsestilstande. Du kan forsøge at løse eventuelle uoverensstemmelser ved at skifte til en anden udførelsestilstand.
 
 ## <a name="troubleshooting"></a>Fejlfinding
 Dette afsnit indeholder fejlfindingssituationer (og løsninger) til arbejdet med **SAP BW**-connectoren.

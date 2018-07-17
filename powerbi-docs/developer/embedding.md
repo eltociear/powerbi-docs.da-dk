@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 05/25/2018
+ms.date: 06/22/2018
 ms.author: maghan
-ms.openlocfilehash: 2e899593cbe3453381dd2d3457cec97467aec4d6
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 82a4c9c58567f5ace943363b7bed59fa744e85a5
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34561741"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36944094"
 ---
 # <a name="embedding-with-power-bi"></a>Integrering med Power BI
 Power BI tilbyder API'er til integrering af dine dashboards og rapporter i applikationer. Power BI-API'erne tilbyder en ensartet række egenskaber og adgang til de nyeste funktioner i Power BI, som f.eks. dashboards, gateways og apparbejdsområder, når du integrerer indhold.
@@ -29,7 +29,7 @@ Du kan få vist et eksempel på, hvordan integrering fungerer under [Eksempel p�
 ## <a name="embedding-for-your-organization"></a>Integrering i forbindelse med din organisation
 Med integrering i forbindelse med din organisation har du mulighed for at udvide Power BI-tjenesten. Dette kræver, at brugerne af dit program logger på Power BI-tjenesten, når de vil have vist deres indhold. Når en person i din organisation logger på, har vedkommende kun adgang til dashboards og rapporter, der er delt med ham eller hende i Power BI-tjenesten. 
 
-*Eksempler på integrering i forbindelse med din organisation omfatter intern webapplikationer, SharePoint Online-webdelen og integrering med Microsoft Teams.*
+*Eksempler på integrering i forbindelse med din organisation omfatter intern webapplikationer, SharePoint Online-webdelen og integrering med [Microsoft Teams (du skal have administratorrettigheder)](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/).*
 
 Se følgende for integrering i forbindelse med din organisation:
 

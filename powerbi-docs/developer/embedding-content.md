@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: cb84cb2f4242cb120f187c27bb1b1675177c33a2
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.openlocfilehash: 8a912791777c631208ee40d37c5eaad56806ccf9
+ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813037"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36945262"
 ---
 # <a name="embed-your-power-bi-dashboards-reports-and-tiles"></a>Integrer dine Power BI-dashboards, -rapporter og -felter
 
@@ -35,6 +35,9 @@ Før du begynder at integrere dashboards og rapporter i din app, skal du sikre d
 
 * [Kontrollér, at du har en Azure Active Directory-lejer](embedding-content.md#azureadtenant)
 * [Opret en Power BI Pro-konto](embedding-content.md#proaccount)
+* [Appregistrering og tilladelser](embedding-content.md#appreg)
+* [Opret apparbejdsområder](embedding-content.md#appws)
+* [Opret og upload dine rapporter](embedding-content.md#createreports)
 
 Du kan gennemgå [Onboarding lbudExperience Tool](https://aka.ms/embedsetup) for hurtigt at komme i gang og downloade en eksempelapp.
 
@@ -67,7 +70,7 @@ Følgende konti skal være oprettet i din lejer og have en Power BI Pro-licens, 
 
 #### <a name="an-organizationtenant-admin-user"></a>En administratorbruger til organisationen og lejeren
 
-Det anbefales, at den globale administratorbruger til organisationen og lejeren ikke bruges som den konto, appen bruger, hvis du integrerer for kunder. Det er med til at begrænse den adgang, som appkontoen har i lejeren. Det anbefales, at administratorbrugeren er administrator af alle de apparbejdsområder, der oprettes til integreringsformål.
+Det anbefales, at den globale administratorbruger til organisationen og lejeren ikke bruges som den konto, appen bruger, hvis du integrerer for kunder. Det er med til at begrænse den adgang, som appkontoen har i lejeren. Administratorbrugeren skal være administrator af alle de apparbejdsområder, der oprettes til integreringsformål.
 
 #### <a name="accounts-for-analysts-that-create-content"></a>Konti for analytikere, der opretter indhold
 
@@ -83,7 +86,7 @@ Hovedkontoen er blot en almindelig bruger med en Power BI Pro-licens, som du bru
 
 Du skal registrere din app i Azure AD, før du kan foretage REST-API-kald. Du kan finde flere oplysninger under [Registrer en Azure AD-app for at integrere Power BI-indhold](register-app.md).
 
-### <a name="create-app-workspaces"></a>Opret apparbejdsområder
+### <a name="appws"></a>Opret apparbejdsområder
 
 Hvis du integrerer dashboards og rapporter for dine kunder, skal disse dashboards og rapporter placeres i et apparbejdsområde. Den *hovedkonto*, der er nævnt ovenfor, skal være administrator af apparbejdsområdet.
 
@@ -93,13 +96,17 @@ Hvis du integrerer dashboards og rapporter for dine kunder, skal disse dashboard
 > En bruger, der ikke har administratorrettigheder, kan kun oprette op til 250 apparbejdsområder. Hvis du vil oprette flere app-arbejdsområder, skal du bruge en lejeradministratorkonto.
 >
 
-### <a name="create-and-upload-your-reports"></a>Opret og upload nye rapporter
+### <a name="createreports"></a>Opret og upload dine rapporter
 
 Du kan oprette rapporter og datasæt ved hjælp af Power BI Desktop og derefter udgive disse rapporter til et apparbejdsområde. Den slutbruger, der udgiver rapporterne, skal have en Power BI Pro-licens for at kunne udgive til et apparbejdsområde.
 
 ## <a name="step-2-embed-your-content"></a>Trin 2: Integrer dit indhold
 
-Du skal godkende med Power BI i din app. Hvis du integrerer indhold for dine kunder, skal du gemme legitimationsoplysningerne til *hovedkontoen* i din app. Du kan finde flere oplysninger under [Godkend brugere, og få et Azure AD-adgangstoken til din Power BI-app](get-azuread-access-token.md).
+Du skal godkende med Power BI i din app. Hvis du integrerer indhold for dine kunder, skal du gemme legitimationsoplysningerne til *hovedkontoen* i din app.
+
+> [!NOTE]
+> Du kan finde flere oplysninger om godkendelse af brugere, mens du integrerer dine kunder, i [Godkend brugere, og få et Azure AD-token til din Power BI-app](get-azuread-access-token.md).
+>
 
 Når du har godkendt, skal du bruge Power BI REST-API'erne og JavaScript-API'erne til at integrere dashboards og rapporter i din app. 
 
@@ -123,7 +130,7 @@ Det kræver nogle ekstra trin at gøre din løsning produktionsklar.
 
 Hvis du integrerer for din organisation, behøver du blot at fortælle de andre, hvordan de henter appen. 
 
-Gratis brugere kan bruge det indhold, der er integreret fra et apparbejdsområde (gruppe), hvis arbejdsområdet har dedikeret kapacitet. Angiv den gratis bruger som medlem af apparbejdsområdet (gruppen). Hvis du ikke gør det, får du en 401-fejl om uautoriseret adgang. I tabellen nedenfor kan du se en oversigt over de Power BI Premium-SKU'er, der er tilgængelige i Office 365.
+Alle brugere, uanset hvilken licens de er tildelt, kan bruge det indhold, der er integreret fra et apparbejdsområde (gruppe), hvis arbejdsområdet har dedikeret kapacitet. Når det er sagt, skal du udtrykkeligt tilføje alle brugere, der ikke har en Power BI Pro-licens, til app-arbejdsområdet. Ellers får du en 401-uautoriseret fejl. I tabellen nedenfor kan du se en oversigt over de Power BI Premium-SKU'er, der er tilgængelige i Office 365.
 
 | Kapacitetsnode | Kerner i alt<br/>*(Backend + frontend)* | Backendkerner | Frontendkerner | Grænser for DirectQuery/liveforbindelser | Maks. antal sidegengivelser i spidstimen |
 | --- | --- | --- | --- | --- | --- |

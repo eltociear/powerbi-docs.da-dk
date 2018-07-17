@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 10/13/2017
+ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 4680ab3709f1a2cbe56445e6719ea4de15396eb0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5601ab79832f2d52622f5c13ecd23f346408f08e
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34297647"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37598609"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Udforsk felter i Power BI-mobilappsene
 Kan anvendes med:
@@ -40,7 +40,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   *For eksempel er de valgte værdier i dette kurvediagram **Dette års salg** og **Sidste års salg** i **August**.*  
+   <em>For eksempel er de valgte værdier i dette kurvediagram **Dette års salg</em>* og **Sidste års salg** i **August**.*  
    
    Tryk på en cirkeludsnit i et cirkeldiagram for at få vist dets værdi øverst i diagrammet.  
    
@@ -107,7 +107,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
    ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_bartile0316.png)
    
-   *I dette liggende søjlediagram vises værdierne for linjen **Decor** øverst i diagrammet.*
+   <em>I dette liggende søjlediagram vises værdierne for linjen **Decor</em>* øverst i diagrammet.*
    
    Tryk på ikonet **Fuld skærm** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) for at åbne feltet i fuldskærmsvisning uden navigation og menulinjer.
    
@@ -126,6 +126,6 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
 4. Tryk på pilen Tilbage eller knappen Tilbage for at lukke feltet og vende tilbage til dashboardet.
 
 ## <a name="next-steps"></a>Næste trin
-* [Introduktion til Power BI](service-get-started.md)
+* [Hvad er Power BI?](power-bi-overview.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

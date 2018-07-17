@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 321e66fd5ed185a92c98bf7832dc3b71944be98d
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ffbad48df6665d5dff6c4eca97e86e6f2850565f
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34689708"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137542"
 ---
 # <a name="data-alerts-in-power-bi-service"></a>Databeskeder i Power BI-tjenesten
 Angiv beskeder, så du får besked, når dataene på dine dashboards ændres ud over de grænser, du har angivet. 
@@ -104,6 +104,6 @@ Der er mange måder, du kan administrere dine beskeder på: fra selve dashboardf
 ## <a name="next-steps"></a>Næste trin
 [Opret et Microsoft Flow, der indeholder en databesked](service-flow-integration.md)    
 [Angiv databeskeder på din mobilenhed](mobile-set-data-alerts-in-the-mobile-apps.md)    
-[Introduktion til Power BI](service-get-started.md)    
+[Hvad er Power BI?](power-bi-overview.md)    
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

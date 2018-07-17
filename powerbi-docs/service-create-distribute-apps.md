@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/22/2018
+ms.date: 06/20/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6efd54d868a5a1f2d8d657d352c7133d4036b0b6
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 25aa03c12b36bf19c05fe01dc6c24a0e4a3a2416
+ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34254826"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36965291"
 ---
 # <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Opret og publicer apps med dashboards og rapporter i Power BI
 
@@ -22,17 +22,15 @@ I Power BI kan du oprette *apps* for at samle relaterede dashboards og rapporter
 
 ![Power BI-apps](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
-Forretningsbrugere har ofte brug for flere Power BI-dashboards og -rapporter for at kunne drive deres virksomhed. Apps kombinerer alle delene, så brugerne ikke behøver at huske på navne og placeringer for alle disse dashboards.  
-
-Med Power BI-apps, der nu findes i prøveversion, kan du oprette samlinger af dashboards og rapporter og publicere disse apps til hele organisationen eller til bestemte personer eller grupper. Som forfatter til rapporten eller administrator gør apps det nemmere for dig at administrere tilladelser til samlinger af dashboards.
+Forretningsbrugere har ofte brug for flere Power BI-dashboards og -rapporter for at kunne drive deres virksomhed. Apps kombinerer alle delene, så brugerne ikke behøver at huske på navne og placeringer for alle disse dashboards. Med Power BI-apps kan du oprette samlinger af dashboards og rapporter og publicere disse apps til hele organisationen eller til bestemte personer eller grupper. Som forfatter til rapporten eller administrator gør apps det nemmere for dig at administrere tilladelser til samlinger af dashboards.
 
 Forretningsbrugere kan få dine apps på flere måder. Hvis Power BI-administratoren giver dig tilladelse, kan du automatisk installere dem i dine kollegers Power BI-konti. Ellers kan de installere dine apps fra Microsoft AppSource, eller du kan sende dem et direkte link. De kan nemt finde og vende tilbage til dit indhold, fordi det hele er samlet på ét sted. De får automatisk opdateringer, og du kan styre, hvor ofte dataene opdateres. Læs mere om [appoplevelsen for forretningsbrugere](service-install-use-apps.md).
 
 ### <a name="licenses-for-apps"></a>Licenser til apps
-Som udvikler af apps skal du bruge en licens til Power BI Pro. Der er to muligheder for din appbrugere.
+Som udvikler af apps skal du bruge en licens til Power BI Pro. Der er to muligheder for din appbrugere at se din app på.
 
-* Mulighed 1: Alle forretningsbrugere skal have licens til **Power BI Pro** for at få vist din app. 
-* Mulighed 2: Gratisbrugere i din organisation kan få vist appindhold, hvis din app er placeret i Power BI Premium-kapacitet. Læs [Hvad er Power BI Premium?](service-premium.md) for at få flere oplysninger.
+* Mulighed 1: En app-bruger har fået tildelt en **Power BI Pro**-licens. 
+* Mulighed 2: En app-bruger har ikke fået tildelt en **Power BI Pro**-licens, men appen er placeret i en Power BI Premium-kapacitet. Læs [Hvad er Power BI Premium?](service-premium.md) for at få flere oplysninger.
 
 ### <a name="apps-and-organizational-content-packs"></a>Apps og organisationsindholdspakker
 Apps er en udviklet form af organisationsindholdspakker. Hvis du allerede har organisationsindholdspakker, vil de fortsætte med at fungere side om side med apps.

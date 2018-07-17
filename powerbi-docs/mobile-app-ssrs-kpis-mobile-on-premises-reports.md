@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 05/21/2018
+ms.date: 06/13/2018
 ms.author: maggies
-ms.openlocfilehash: 999fdf0376973d6550a5c4e214b4315db01e74e0
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 32d73b4be55190b908353083b497581cb1b08c6e
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34482239"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37599018"
 ---
 # <a name="view-on-premises-report-server-reports-and-kpis-in-the-power-bi-mobile-apps"></a>Vis rapporter og KPI'er fra rapportserveren i det lokale miljø i Power BI-mobilapps
 
@@ -103,6 +103,9 @@ Nu kan du få vist og interagere med KPI'er og Power BI-rapporter på rapportser
 Power BI-rapporter, Reporting Services-mobilrapporter og KPI'er vises i de samme mapper, som de er placeret i på Reporting Services-webportalen. 
 
 * Tryk på en Power BI-rapport ![Ikon for Power BI-rapport](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-report-icon.png). Den åbnes i vandret tilstand, og du kan interagere med den i Power BI-appen.
+
+    > [!NOTE]
+  > Analysér ned og op er i øjeblikket ikke aktiveret i Power BI-rapporter på en Power BI-rapportserver.
   
     ![Power BI-rapport](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-iphone-report-server-report.png)
 * I Power BI Desktop kan ejere [optimere en rapport](desktop-create-phone-report.md) til Power BI-mobilapps. På din mobiltelefon har optimerede rapporter et særligt ikon, ![ikonet for Optimeret Power BI-rapport](media/mobile-app-ssrs-kpis-mobile-on-premises-reports/power-bi-rs-mobile-optimized-icon.png), og layout.
@@ -129,6 +132,6 @@ Du kan markere KPI'er og rapporter som favoritter på webportalen og derefter se
 3. Tryk på **Fjern server**.
 
 ## <a name="next-steps"></a>Næste trin
-* [Introduktion til Power BI](service-get-started.md)  
+* [Hvad er Power BI?](power-bi-overview.md)  
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

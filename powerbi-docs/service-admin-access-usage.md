@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 50ace772c24b2a9e706e82ca16ddcb36d8b6b60c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: c1ac019b0d6f80c3129b105336f71a71e0925648
+ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34722195"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926530"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Find Power BI-brugere, der er logget på
 Hvis du er en lejeradministrator, og du vil se, hvem der er logget på Power BI, kan du bruge Azure Active Directory-adgang og anvendelsesrapporter til at skabe synlighed.
@@ -25,9 +25,7 @@ Hvis du er en lejeradministrator, og du vil se, hvem der er logget på Power BI,
 Du kan få adgang til aktivitetsrapporten i den [nye](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-sign-ins) og den [klassiske](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports) webportal i Azure Active Directory (Azure AD). Mens videoen ovenfor bruger den klassiske portal som et eksempel, fremhæves den nye portal i denne artikel.
 
 > [!NOTE]
-> Denne aktivitetsrapport indeholder både Power BI (gratis)- og Pro-brugere, men identificerer dem ikke efter hvilken licens, de har.
-> 
-> 
+> Denne aktivitetsrapport identificerer ikke, hvilken type licens hver bruger har.
 
 ## <a name="requirements"></a>Krav
 Følgende er kravene for at få vist logonaktivitetsrapporten.
@@ -70,7 +68,7 @@ Data, der er relateret til logonaktivitet, kan være tilgængelige i op til 30 d
 
 ## <a name="next-steps"></a>Næste trin
 [Logonaktivitetsrapporter i Azure Active Directory-portalen (ny portal)](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-sign-ins)  
-[Få vist dine adgangs- og brugsrapporter (klassisk portal)](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports#view-or-download-a-report)  
+[Få vist dine adgangs- og brugsrapporter (klassisk portal)](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)  
 [Logoneksempel i et PowerShell-script](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples#powershell-script)  
 [Politikker til opbevaring af Azure Active Directory-rapport](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-retention)  
 [Brug af overvågning i din organisation](service-admin-auditing.md)  

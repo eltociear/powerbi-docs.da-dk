@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 53c4250949a696f4abbd0722cf89207f2c8d37c8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 166d61c78f8e85a91dafa5de698d782b456834a7
+ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813842"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37601631"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -28,7 +28,7 @@ Linkene ud for hver opdatering betyder følgende:
 * **[video]** angiver, at videoen afspilles på en ny fane i browseren, når funktionen beskrives.
 * Til nogle funktioner findes der en **[artikel]**, hvor funktionen beskrives mere detaljeret.
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** indlæg.
-* Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
+* Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel eller video.
 
 Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
 
@@ -255,7 +255,7 @@ Linkene ud for hver opdatering betyder følgende:
 * **[video]** angiver, at videoen afspilles på en ny fane i browseren, når funktionen beskrives.
 * Til nogle funktioner findes der en **[artikel]**, hvor funktionen beskrives mere detaljeret.
 * De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** indlæg.
--   Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
+* Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
 
 Du kan også se videoen med de **seneste opdateringer** for denne måned fra starten direkte i denne artikel. Det gør du ved at klikke på ikonet **afspil** på videobilledet under listen med opdateringer.
 
@@ -1844,15 +1844,15 @@ Følgende funktioner er blevet tilføjet eller forbedret i denne opdatering:
     -   Bedre oplevelse med eksempelvisning af flerdimensionelle kilder (Analysis Services og SAP BusinessObjects)
     -   Indstillingen Vis markerede elementer
     -   Bedre søgefunktion i navigatortræet
--   Nye transformationer
-    -   Handlinger for alder og subtrahering til dato/klokkeslæt-kolonner
-    -   Aggregeringskolonner: mulighed for at deaktivere præfikset for nye kolonner
--   Forbedringer til feltlisten
-    -   Udvid/skjul tabeller
-    -   Skjul/vis felter
-    -   Optimeret layout (afstand, margener og skrifttyper)
--   Navigation mellem rapportsider ved hjælp af tastaturet
--   Mange fejlrettelser
+- Nye transformationer
+  -   Handlinger for alder og subtrahering til dato/klokkeslæt-kolonner
+  -   Aggregeringskolonner: mulighed for at deaktivere præfikset for nye kolonner
+- Forbedringer til feltlisten
+  -   Udvid/skjul tabeller
+  -   Skjul/vis felter
+  -   Optimeret layout (afstand, margener og skrifttyper)
+- Navigation mellem rapportsider ved hjælp af tastaturet
+- Mange fejlrettelser
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/-bZFeS1S1wU" frameborder="0" allowfullscreen></iframe>
 

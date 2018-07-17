@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-sktopms.date: 06/01/2018
+sktopms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6341d5b3bba051cc31fe95f526450e03c14d4b69
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 08772389df36e72e4f8c83239ba396773070f61a
+ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964808"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37145381"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Ofte stillede spørgsmål om Power BI
 * Hvis du har andre spørgsmål, kan du [prøve at spørge Power BI-community'et](http://community.powerbi.com/).
@@ -54,9 +54,9 @@ Ja, en pris til almennyttige organisationer tilbydes ved køb direkte hos Micros
 Power BI-tjenesten [https://powerbi.com](https://powerbi.com) fås ikke som en privat, intern cloudtjeneste. Men du har tre andre muligheder for at få vist og arbejde med data i det lokale miljø. 
 
 ### <a name="on-premises-data-gateway"></a>Datagateway i det lokale miljø
-Du kan bruge Power BI og Power BI Desktop til på sikker vis at oprette forbindelse til dine egne datakilder i det lokale miljø. Du kan bruge [datagateway i det lokale miljø](service-gateway-onprem.md) til at oprette live-forbindelse til din SQL Server Analysis Services-server i det lokale miljø og andre datakilder. Du kan også indstille en planlagt opdatering med en centraliseret gateway. Hvis en gateway ikke er tilgængelig, kan du opdatere data fra datakilder i det lokale miljø ved hjælp af [Power BI Gateway - Personal](personal-gateway.md).
+Du kan bruge Power BI og Power BI Desktop til på sikker vis at oprette forbindelse til dine egne datakilder i det lokale miljø. Du kan bruge [datagateway i det lokale miljø](service-gateway-onprem.md) til at oprette live-forbindelse til din SQL Server Analysis Services-server i det lokale miljø og andre datakilder. Du kan også indstille en planlagt opdatering med en centraliseret gateway. Hvis en gateway ikke er tilgængelig, kan du opdatere data fra datakilder i det lokale miljø ved hjælp af [Power BI Gateway - Personal](service-gateway-personal-mode.md).
 
-### <a name="power-bi-report-server"></a>Power BI-rapportserver
+### <a name="power-bi-report-server"></a>Power BI Report Server
 Power BI-rapportserver er en løsning, som du installerer i dit eget miljø til oprettelse, publicering og administration af rapporter. De leveres derefter til forskellige brugere på forskellige måder; i en webbrowser, på deres mobilenhed eller som en mail i deres indbakke. Læs mere om [Power BI-rapportserver](report-server/get-started.md).
 
 ### <a name="power-bi-mobile-apps"></a>Power BI-mobilapps
@@ -138,6 +138,7 @@ Du kan som i mange andre Microsoft-tjenester og -software benytte en nem måde a
 * For at **fortryde** din seneste handling, eller de seneste par handlinger, skal du trykke på CTRL+Z.
 
 ## <a name="next-steps"></a>Næste trin
+* [Hvad er Power BI?](power-bi-overview.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 * Har du stadig problemer? Besøg [supportsiden for Power BI](https://powerbi.microsoft.com/support/)
 
