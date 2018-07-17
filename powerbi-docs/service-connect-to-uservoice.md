@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2761b2bd1230e18b5dd4e0b69342e55ed33d0983
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: e44d4bb48289b515797167fb3b91a9bbf0d2bcdd
+ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34250820"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37092155"
 ---
 # <a name="connect-to-uservoice-with-power-bi"></a>Opret forbindelse til UserVoice med Power BI
 Det er nemt at spore og udforske dine UserVoice-data med Power BI og UserVoice-indholdspakken. Power BI henter dine data, herunder anmodninger, forslag og tilfredshedsvurderinger, og opretter derefter et færdigt dashboard og rapporter ud fra de pågældende data.
@@ -35,7 +35,7 @@ Opret forbindelse til [UserVoice-indholdspakken](https://app.powerbi.com/getdata
 3. Vælg **UserVoice**, og vælg derefter **Hent**.
    
    ![](media/service-connect-to-uservoice/uservoice.png)
-4. Når du bliver spurgt, skal du angive din URL-adresse til UserVoice. URL-adressen skal følge dette mønster nøjagtigt https://fabrikam.uservoice.com, hvor "fabrikam" erstattes med navnet på dit produkt eller din tjeneste.
+4. Når du bliver spurgt, skal du angive din URL-adresse til UserVoice. URL-adressen skal følge dette mønster nøjagtigt `https://fabrikam.uservoice.com`, hvor "fabrikam" erstattes med navnet på dit produkt eller din tjeneste.
    
    >[!NOTE]
    >Der er ingen efterstillet skråstreg til sidst, og forbindelsen er i http**s**.
@@ -63,7 +63,7 @@ Opret forbindelse til [UserVoice-indholdspakken](https://app.powerbi.com/getdata
 
 Hvis du får vist denne fejl, når du har skrevet din URL-adresse til UserVoice. Kontrollér, at følgende betingelser er opfyldt:
 
-* URL-adressen følger nøjagtigt mønsteret "https://fabrikam.uservoice.com", hvor "fabrikam" er erstattet med det korrekte præfiks for URL-adressen for UserVoice.
+* URL-adressen følger nøjagtigt mønsteret `https://fabrikam.uservoice.com`, hvor "fabrikam" er erstattet med det korrekte præfiks for URL-adressen for UserVoice.
 * Kontrollér, at alle bogstaver er små bogstaver.
 * Kontrollér, at URL-adressen er i 'http**s**'-format.
 * Kontrollér, at der ikke er nogen efterstillet skråstreg i slutningen af URL-adressen.

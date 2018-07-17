@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 94b019f04fb6fabcad3092524fd2724015a6d8e1
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 7cc2519353be7f83f69cdc6dda9d5f1a8ccc33a3
+ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242184"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37137009"
 ---
 # <a name="connect-to-microsoft-dynamics-marketing-with-power-bi"></a>Opret forbindelse til Microsoft Dynamics Marketing med Power BI
 Med Microsoft Dynamics Marketing-indholdspakken til Power BI kan du nemt få adgang til og analysere dine data fra Dynamics Marketing. Indholdspakken bruger en beskrivende model, som lægges oven på OData-feed'et, med alle de enheder og mål, der skal bruges, som f.eks. programmer, kampagner, marketingkontakter og firmaer, kundeemner, kundeemneinteraktioner og kundemnepoint, marketingmails og websteder, funktionsmæssige bemærkninger, budgetter, finansielle transaktioner, nøgletal for ydeevne og meget mere. 
@@ -70,7 +70,7 @@ Hvis du stadig har problemer, kan du åbne en supportanmodning for at kontakte P
 * Fra webstedet for Power BI-support (hvor du læser denne artikel) skal du vælge **Kontakt Support** til højre på siden.
 
 ## <a name="next-steps"></a>Næste trin
-[Hent Data til Power BI](service-get-data.md)
+[Hent data til Power BI](service-get-data.md)
 
-[Kom i gang med Power BI](service-get-started.md)
+[Hvad er Power BI?](power-bi-overview.md)
 
