@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/03/2018
+ms.date: 07/09/2018
 ms.author: maghan
-ms.openlocfilehash: b3c9599ea3ce01094bb75d9b036fb25b1ca7109a
-ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
+ms.openlocfilehash: d6b30d97b1982ceca34579751e412a279b0d8881
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37926553"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38877018"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Fejlfinding af det integrerede program
 
@@ -102,13 +102,11 @@ Programmets backend skal muligvis opdatere godkendelsestokenet før kaldet til G
 
 **(AADSTS70002: Fejl under validering af legitimationsoplysninger. AADSTS50053: Du har prøvet at logge på for mange gange med forkert bruger-ID eller adgangskode)**
 
-Hvis du bruger Power BI Embedded, Azure AD Direkte godkendelse og modtager meddelelser, når du logger ind, såsom ***fejl: uautoriseret_klient, fejlbeskrivelse:AADSTS70002: Fejl under validering af legitimationsoplysninger. AADSTS50053: Du har prøvet at logge på for mange gange med forkert bruger-ID eller adgangskode***, fordi direkte godkendelse er blevet slået fra, fra og med 14/6/2018.
+Hvis du bruger Power BI Embedded, Azure AD Direkte godkendelse og modtager meddelelser, når du logger ind, såsom ***fejl: uautoriseret_klient, fejlbeskrivelse:AADSTS70002: Fejl under validering af legitimationsoplysninger. AADSTS50053: Du har prøvet at logge på for mange gange med et forkert bruger-id eller en forkert adgangskode***, fordi direkte godkendelse er blevet slået fra som standard fra og med 14/6/2018.
 
-Vi anbefaler, at du bruger [betinget adgang til Azure AD – Microsoft Azure Active Directory](https://cloudblogs.microsoft.com/enterprisemobility/2018/06/07/azure-ad-conditional-access-support-for-blocking-legacy-auth-is-in-public-preview/), der understøtter af blokering af ældre godkendelse, eller [gennemgående godkendelse fra Azure AD Directory](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).
+Dette kan aktiveres igen ved hjælp af en [Azure AD-politik](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications), der enten kan begrænses til organisationen eller en [tjenesteprincipal](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
-Dette kan dog aktiveres igen ved hjælp af en [Azure AD-politik](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications), der enten kan begrænses til organisationen eller være en [tjenesteprincipal](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
-
-**_Vi anbefaler, at du kun aktiverer for dent enkelte program og udelukkende som en løsning._**
+Vi anbefaler, at du kun aktiverer dette pr. app.
 
 Hvis du vil oprette denne politik, skal du være **Global Administrator** for den mappe, hvor du opretter politikken og tildelingen. Her er et eksempel på et script til oprettelse af politikken og tildeling af den til SP for dette program:
 

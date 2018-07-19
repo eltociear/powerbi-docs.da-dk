@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 10/10/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 08d5d5b8d44d1ebceab2bb41ddbb244afda64fb6
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 24d585af19dd774cdf6fe7dafb66c12e02d311f9
+ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36945037"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38924786"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Administrer kapaciteter i Power BI Premium og Power BI Embedded
-Få mere at vide om, hvordan du kan administrere kapaciteter i Power BI Premium og Power BI Embedded, som indeholder dedikerede ressourcer til dit indhold.
+Lær, hvordan du kan administrere Power BI Premium- og Power BI Embedded-kapaciteter, som leverer dedikerede ressourcer til dit indhold.
 
 ![Indstillingsskærm for Power BI-kapacitet](media/service-admin-premium-manage/premium-capacity-management.png)
 
@@ -33,6 +33,16 @@ Kapacitet er helt gennemskueligt for slutbrugere. De vil fortsat kunne bruge Pow
 
 Du kan finde flere oplysninger i [Hvad er Power BI Premium?](service-premium.md).
 
+### <a name="capacity-admins"></a>Kapacitetsadministratorer
+> [!NOTE]
+> Kapacitetsadministratorer (til Power BI Embedded-kapacitet) er defineret inden for Microsoft Azure-portalen.
+
+Når du er tilknyttet en kapacitet som kapacitetsadministrator, så har du fuld kontrol over kapaciteten og dens administrative funktioner. Du kan tilføje flere kapacitetsadministratorer (kun Power BI Premium) eller give brugere rettigheder knyttet til kapacitetstildeling fra Power BI-administrationsportalen. Du kan massetildele arbejdsområder til en kapacitet og få vist forbrugsdata på en kapacitet.
+
+Hver kapacitet har sine egne administratorer. Når en kapacitetsadministrator defineres til en kapacitet, så giver det ikke vedkommende adgang til alle kapaciteter i organisationen. Kapacitetsadministratorer har ikke adgang til alle områder af Power BI Administration som standard, som f.eks. forbrugsdata, overvågningslogger eller lejerindstillinger. Kapacitetsadministratorer har heller ikke tilladelse til at konfigurere nye kapaciteter eller ændre varenumrene for eksisterende kapaciteter. Kun globale administratorer eller Power BI-tjenesteadministratorer har adgang til disse elementer.
+
+Alle Office 365 Globale administratorer og Power BI-administratorer er automatisk kapacitetsadministratorer af både Power BI Premium-kapacitet og Power BI Embedded-kapacitet.
+
 ## <a name="purchase-capacity"></a>Køb kapacitet
 Hvis du vil drage fordel af dedikeret kapacitet, skal du købe et abonnement på Power BI Premium i Office 365 Administration eller oprette en Power BI Embedded-ressource på Microsoft Azure-portalen. Du kan få flere oplysninger i nedenstående ressourcer:
 
@@ -43,21 +53,9 @@ Når du køber Power BI Premium-varenumre, modtager din lejer det tilsvarende an
 
 > [!NOTE]
 > Du har 30 dage med fuld adgang, når dit abonnement ophører, men herefter bliver dit indhold delt igen. Modeller, der er > 1 GB understøttes ikke af en almindelig delt licens.
->
 
-## <a name="capacity-admins"></a>Kapacitetsadministratorer
-> [!NOTE]
-> Kapacitetsadministratorer (til Power BI Embedded-kapacitet) er defineret inden for Microsoft Azure-portalen.
->
->
 
-Når du er tilknyttet en kapacitet som kapacitetsadministrator, så har du fuld kontrol over kapaciteten og dens administrative funktioner. Du kan tilføje flere kapacitetsadministratorer (kun Power BI Premium) eller give brugere rettigheder knyttet til kapacitetstildeling fra Power BI-administrationsportalen. Du kan massetildele arbejdsområder til en kapacitet og få vist forbrugsdata på en kapacitet.
-
-Hver kapacitet har sine egne administratorer. Når en kapacitetsadministrator defineres til en kapacitet, så giver det ikke vedkommende adgang til alle kapaciteter i organisationen. Kapacitetsadministratorer har ikke adgang til alle områder af Power BI Administration som standard, som f.eks. forbrugsdata, overvågningslogger eller lejerindstillinger. Kapacitetsadministratorer har heller ikke tilladelse til at konfigurere nye kapaciteter eller ændre varenumrene for eksisterende kapaciteter. Kun globale administratorer eller Power BI-tjenesteadministratorer har adgang til disse elementer.
-
-Alle Office 365 Globale administratorer og Power BI-administratorer er automatisk kapacitetsadministratorer af både Power BI Premium-kapacitet og Power BI Embedded-kapacitet.
-
-## <a name="managing-capacity"></a>Administrering af kapacitet
+## <a name="manage-capacity"></a>Administrer kapacitet
 Når du har købt kapacitetsnoder i Office 365, skal du derefter konfigurere en ny kapacitet. Dette gøres via [Power BI-administrationsportalen](service-admin-portal.md). I administrationsportalen kan du se afsnittet kaldet **Kapacitetsindstillinger**. Det er her, at du skal administrere Power BI Premium-kapaciteter for organisationen.
 
 ![Kapacitetsindstillinger i administrationsportalen](media/service-admin-premium-manage/admin-portal-premium.png)
@@ -96,8 +94,6 @@ Du kan vælge **tandhjulsikonet (indstillinger)** under handlinger i skærmbille
 
 > [!NOTE]
 > Power BI Embedded-kapacitetsindstillinger administreres i Microsoft Azure-portalen.
->
->
 
 ### <a name="change-capacity-size-power-bi-premium"></a>Tilpas kapacitetsstørrelse (Power BI Premium)
 Power BI-administratorer og Office 365 Globale administratorer tilpasser størrelsen af Power BI Premium-kapaciteten ved at vælge **Tilpas kapacitetsstørrelse**. Kapacitetsadministratorer, der ikke er Power BI-administrator eller Office 365 Global administrator, har ikke adgang til denne indstilling.
@@ -128,35 +124,6 @@ Du kan tildele yderligere **Kapacitetsadministratorer** til Power BI Premium-kap
 ![](media/service-admin-premium-manage/capacity-user-permissions.png)
 
 ![](media/service-admin-premium-manage/capacity-user-permissions2.png)
-
-## <a name="usage-measurements-power-bi-premium"></a>Målinger af forbrug (Power BI Premium)
-For hver kapacitet kan du se målinger af forbrug for CPU, hukommelse, hukommelsesudskiftning og direkte forespørgsel. Vi anbefaler, at disse tal overvåges for at sørge for, at brugerne oplever god ydeevne af kapaciteten:
-
-![Forbrug de sidste syv dage](media/service-admin-premium-manage/premium-dashboard-tiles.png)
-
-> [!NOTE]
-> Power BI Embedded-kapacitetsforbrug overvåges på Azure-portalen.
-
-| Data | Beskrivelse |
-| --- | --- |
-| CPU |Det antal gange, CPU-forbruget har overskredet 80 %. |
-| Hukommelsesudskiftning |Repræsenterer hukommelsesforbrug på backend-kerner. Disse data angiver specifikt, hvor mange gange datasæt ryddes fra hukommelsen pga. hukommelsesforbrug grundet brugen af flere datasæt. |
-| Hukommelsesbrug |Gennemsnitligt hukommelsesforbrug vist i GB. |
-| DQ/s | Det antal gange, antallet af direkte forespørgsler og direkte forbindelser har overskredet 80 % af grænsen. <br> <br> * Vi begrænser det samlede antal forespørgsler i relation til DirectQuery og direkte forbindelse pr. sekund.<br><br>* Grænserne er 30/s for P1, 60/s for P2 og 120/s for P3.<br><br> * Forespørgsler i relation til DirectQuery og direkte forbindelse indgår også i de ovenstående begrænsninger. Hvis du f.eks. har 15 DirectQueries og 15 direkte forbindelser på et sekund, er grænsen nået.<br/><br>* Dette gælder ligeligt for forbindelser i det lokale miljø og cloudbaserede forbindelser. |
-
-Målepunkter afspejler udnyttelse i løbet af den seneste uge.  Hvis du vil se en mere detaljeret visning af målepunkter, kan du gøre det ved at klikke på et af oversigtsfelterne.  Derved åbnes detaljerede diagrammer over de enkelte målepunkter for din Premium-kapacitet.  Disse diagrammer opsummeres for hver time i løbet af den seneste uge og kan hjælpe med at identificere, hvornår du har haft særlige hændelser relateret til ydeevne i din Premium-kapacitet.  
-
-![Detaljeret diagram over forbrug, CPU](media/service-admin-premium-manage/premium-usage-detailed-chart-cpu.png)
-
-![Detaljeret diagram over forbrug, Hukommelsesudskiftning](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-thrashing.png)
-
-
-![Detaljeret diagram over forbrug, Hukommelsesstørrelse](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-size.png)
-
-
-![Detaljeret diagram over forbrug, Hukommelsesudskiftning](media/service-admin-premium-manage/premium-usage-detailed-chart-dq.png)
-
-Du kan også eksportere de underliggende data for et eller flere målepunkter til en CSV-fil.  Via denne eksport får du detaljerede oplysninger i tre minutters intervaller for hver dag fra den seneste uge.
 
 ## <a name="assign-a-workspace-to-a-capacity"></a>Tildel et arbejdsområde til en kapacitet
 Et arbejdsområde kan tildeles en kapacitet på nogle få måder.
@@ -193,6 +160,36 @@ For at flytte en kapacitet til et arbejdsområde skal du have administratortilla
 5. Vælg **Gem**.
 
 Når du har gemt, flyttes arbejdsområdet og al dets indhold til Premium-kapacitet, uden at slutbrugerne oplever nogen tjenesteafbrydelser.
+
+
+## <a name="monitor-capacity-usage"></a>Overvåg kapacitetsforbrug
+For hver kapacitet kan du se målinger af forbrug for CPU, hukommelse, hukommelsesudskiftning og direkte forespørgsel. Vi anbefaler, at disse tal overvåges for at sørge for, at brugerne oplever god ydeevne af kapaciteten:
+
+![Forbrug de sidste syv dage](media/service-admin-premium-manage/premium-dashboard-tiles.png)
+
+> [!NOTE]
+> Power BI Embedded-kapacitetsforbrug overvåges på Azure-portalen.
+
+| Data | Beskrivelse |
+| --- | --- |
+| CPU |Det antal gange, CPU-forbruget har overskredet 80 %. |
+| Hukommelsesudskiftning |Repræsenterer hukommelsesforbrug på backend-kerner. Disse data angiver specifikt, hvor mange gange datasæt ryddes fra hukommelsen pga. hukommelsesforbrug grundet brugen af flere datasæt. |
+| Hukommelsesbrug |Gennemsnitligt hukommelsesforbrug vist i GB. |
+| DQ/s | Det antal gange, antallet af direkte forespørgsler og direkte forbindelser har overskredet 80 % af grænsen. <br> <br> * Vi begrænser det samlede antal forespørgsler i relation til DirectQuery og direkte forbindelse pr. sekund.<br><br>* Grænserne er 30/s for P1, 60/s for P2 og 120/s for P3.<br><br> * Forespørgsler i relation til DirectQuery og direkte forbindelse indgår også i de ovenstående begrænsninger. Hvis du f.eks. har 15 DirectQueries og 15 direkte forbindelser på et sekund, er grænsen nået.<br/><br>* Dette gælder ligeligt for forbindelser i det lokale miljø og cloudbaserede forbindelser. |
+
+Målepunkter afspejler udnyttelse i løbet af den seneste uge.  Hvis du vil se en mere detaljeret visning af målepunkter, kan du gøre det ved at klikke på et af oversigtsfelterne.  Derved åbnes detaljerede diagrammer over de enkelte målepunkter for din Premium-kapacitet.  Disse diagrammer opsummeres for hver time i løbet af den seneste uge og kan hjælpe med at identificere, hvornår du har haft særlige hændelser relateret til ydeevne i din Premium-kapacitet.  
+
+![Detaljeret diagram over forbrug, CPU](media/service-admin-premium-manage/premium-usage-detailed-chart-cpu.png)
+
+![Detaljeret diagram over forbrug, Hukommelsesudskiftning](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-thrashing.png)
+
+
+![Detaljeret diagram over forbrug, Hukommelsesstørrelse](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-size.png)
+
+
+![Detaljeret diagram over forbrug, Hukommelsesudskiftning](media/service-admin-premium-manage/premium-usage-detailed-chart-dq.png)
+
+Du kan også eksportere de underliggende data for et eller flere målepunkter til en CSV-fil.  Via denne eksport får du detaljerede oplysninger i tre minutters intervaller for hver dag fra den seneste uge.
 
 ## <a name="what-premium-looks-like-for-users"></a>Premium-brugergrænsefladen
 I de fleste tilfælde bemærker brugere slet ikke, at de er i en Premium-kapacitet. Deres dashboards og rapporter fungerer uden problemer. Arbejdsområder, der er i Premium-kapacitet, markeres visuelt med en diamantikon ud for de pågældende arbejdsområder.
