@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1c9948ad5c09b3123d898bf8841243d6e5fa83fd
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 63cb1fe3061d1ba48e71a4ac09862fce29dd9196
+ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34553559"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39032042"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Integrer med rapportwebdelen i SharePoint Online
 
@@ -84,7 +84,7 @@ Integrering af en rapport i SharePoint Online giver ikke automatisk brugere till
 > [!IMPORTANT]
 > Sørg for at gennemse, hvem der kan få vist rapporten, i Power BI-tjenesten, og giv adgang til dem, der er ikke angivet.
 
-Du kan give adgang til rapporten i Power BI-tjenesten på to måder. Hvis du bruger en Office 365-gruppe til at oprette SharePoint Online-teamwebstedet, kan du angive brugeren som medlem af apparbejdsområdet i Power BI-tjenesten. Dette sikrer, at brugerne kan få vist indholdet af den pågældende gruppe. Du kan finde flere oplysninger under [Opret og distribuer en app i Power BI](service-create-distribute-apps.md).
+Du kan give adgang til rapporten i Power BI-tjenesten på to måder. Hvis du bruger en Office 365-gruppe til at kompilere dit SharePoint Online-teamwebsted, kan du angive brugeren som medlem af **apparbejdsområdet i Power BI-tjenesten** og på **SharePoint-siden**. Dette sikrer, at brugerne kan få vist indholdet af den pågældende gruppe. Du kan finde flere oplysninger under [Opret og distribuer en app i Power BI](service-create-distribute-apps.md).
 
 Ellers kan du også give brugerne adgang til din rapport ved at gøre følgende.
 
@@ -129,7 +129,7 @@ Du skal kontakte ejeren af SharePoint Online-siden for at få hjælp til at udbe
 
 ## <a name="known-issues-and-limitations"></a>Kendte problemer og begrænsninger
 
-* **Fejl: "Der opstod en fejl, prøv at logge af og på igen og derefter besøge denne side igen. Korrelations-id: udefineret, HTTP-svarstatus: 400, serverens fejlkode 10001, meddelelse: manglende opdateringstoken"**
+* Fejl: "Der opstod en fejl. Prøv at logge af og på igen, og besøg derefter denne side igen. Korrelations-id: udefineret, HTTP-svarstatus: 400, serverens fejlkode 10001, meddelelse: manglende opdateringstoken"
   
   Hvis du får vist denne fejl, kan du prøve en af følgende fremgangsmåder.
   
@@ -154,5 +154,4 @@ Du skal kontakte ejeren af SharePoint Online-siden for at få hjælp til at udbe
 [Del et dashboard med kolleger og andre](service-share-dashboards.md)  
 [Power BI Premium – hvad er det?](service-premium.md)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/) 
-
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

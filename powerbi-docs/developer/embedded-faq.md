@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/22/2018
-ms.openlocfilehash: 07d51448083f61725157d3ea37c5d9dc73e85157
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: f3602f44bd2ab98e115f904baa89429db918637c
+ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599944"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39032065"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -76,7 +76,7 @@ Her er en delvis liste over forskelle, som du kan bruge i hver.
 |  |A-SKU (Power BI Embedded)  |EM-SKU (Power BI Premium)  |P-SKU (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Køb     |Azure-portal |Office |Office |
-|Use cases |* Integrer indhold i dit eget program |* Integrer indhold i dit eget program<br>* Del indhold med Power BI FREE-brugere uden for PowerBI.com og integrer i andre SaaS-programmer (SharePoint, [Teams](https://powerbi.microsoft.com/en-us/blog/power-bi-teams-up-with-microsoft-teams/)) |* Integrer indhold i dit eget program<br>* Del indhold med Power BI FREE-brugere uden for PowerBI.com og integrer i andre SaaS-programmer (SharePoint, Teams)<br>* Del indhold med Power BI FREE-brugere via PowerBI.com  |
+|Use cases |* Integrer indhold i dit eget program |* Integrer indhold i dit eget program<br>* Integrer indhold i andre SaaS-programmer ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Integrer indhold i dit eget program<br>* Integrer indhold i andre SaaS-programmer ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Del indhold med Power BI-brugere via [Power BI-tjenesten](https://powerbi.microsoft.com/en-us/)  |
 |Fakturering |Pr. time |Månedlig |Månedlig |
 |Tilsagn  |Intet tilsagn |Årligt  |Månedligt/årligt |
 |Differentiering |Fuld elasticitet, kan skaleres op / ned, pausestille / genoptage ressourcer i Azure-portalen eller gennem API  |Kan bruges til at integrere indhold i SharePoint Online og Microsoft Teams |Kombiner integration i programmer og brug Power BI-tjenesten i den samme egenskab |
