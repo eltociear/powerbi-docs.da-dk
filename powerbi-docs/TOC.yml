@@ -322,6 +322,10 @@
                   href: service-collaborate-power-bi-workspace.md
                 - name: Administrer din gruppe i Power BI og Office 365
                   href: service-manage-app-workspace-in-power-bi-and-office-365.md
+                - name: 'Del et dashboard, der er sammenkædet med en Excel-projektmappe på OneDrive for Business'
+                  href: service-share-dashboard-that-links-to-excel-onedrive.md
+            - name: Indholdspakker
+              items:
                 - name: 'Administrer, opdater og slet organisationsindholdspakker'
                   href: service-organizational-content-pack-manage-update-delete.md
                 - name: 'Organisationsindholdspakker: Kopiér, opdater og få adgang'
@@ -332,8 +336,16 @@
                   href: service-organizational-content-pack-create-and-publish.md
                 - name: Flyt din forbindelse til en organisationsindholdspakke
                   href: service-organizational-content-pack-disconnect.md
-                - name: 'Del et dashboard, der er sammenkædet med en Excel-projektmappe på OneDrive for Business'
-                  href: service-share-dashboard-that-links-to-excel-onedrive.md
+                - name: Certificering
+                  items:
+                    - name: Program for indholdspakkecertificering
+                      href: service-content-pack-overview.md
+                    - name: Skabelon til oprettelse af Indholdspakke
+                      href: template-content-pack-authoring.md
+                    - name: Skabelon til test af Indholdspakke
+                      href: template-content-pack-testing.md
+                    - name: Skabelon til oplevelse af Indholdspakke
+                      href: template-content-pack-experience.md
             - name: Rapporter
               items:
                 - name: Opret en ny rapport ud fra en eksisterende rapport
@@ -890,58 +902,34 @@
           href: mobile-apps-supported-languages.md
 - name: Power BI for udviklere
   items:
-    - name: Oversigt
+    - name: Integreret analyse
       items:
-        - name: Hvad kan udviklere bruge Power BI til?
-          href: developer/what-can-you-do.md
-    - name: Selvstudier
-      items:
-        - name: Integrer indhold til dine kunder
-          href: developer/embed-sample-for-customers.md
-        - name: Integrer indhold til din organisation
-          href: developer/embed-sample-for-your-organization.md
-    - name: Begreber
-      items:
-        - name: Arbejde med REST-API'er til Power BI
+        - name: Oversigt
           items:
-            - name: Hvad kan jeg bruge Power BI-API'en til?
-              href: developer/overview-of-power-bi-rest-api.md
-            - name: Begrænsninger for REST-API'er til Power BI
-              href: developer/api-rest-api-limitations.md
-            - name: Egenskaber for datasæt
-              href: developer/api-dataset-properties.md
-            - name: Versionering af datamodel
-              href: developer/api-data-model-versioning.md
-        - name: Opret en brugerdefineret visualisering med Udviklerværktøj
-          href: service-custom-visuals-getting-started-with-developer-tools.md
-        - name: Power BI-tilladelser
-          href: developer/power-bi-permissions.md
-        - name: Sikkerhed på rækkeniveau (RLS)
-          href: developer/embedded-row-level-security.md
-        - name: Ofte stillede spørgsmål
-          href: developer/embedded-faq.md
-    - name: Sådan gør du
-      items:
-        - name: Opret en brugerdefineret visualisering
-          items:
-            - name: Opret en brugerdefineret visualisering med Udviklerværktøj
-              href: service-custom-visuals-getting-started-with-developer-tools.md
-            - name: Få en brugerdefineret visualisering certificeret
-              href: power-bi-custom-visuals-certified.md
-            - name: Publicer brugerdefinerede visuals i AppSource
-              href: developer/office-store.md
-        - name: Integration
-          items:
-            - name: Integration med Power BI
+            - name: Integrering med Power BI
               href: developer/embedding.md
+        - name: Selvstudier
+          items:
+            - name: Integrer indhold til kunder
+              href: developer/embed-sample-for-customers.md
+            - name: Integrer indhold til din organisation
+              href: developer/embed-sample-for-your-organization.md
+        - name: Begreber
+          items:
+            - name: Sikkerhed på rækkeniveau (RLS)
+              href: developer/embedded-row-level-security.md
+            - name: Ofte stillede spørgsmål
+              href: developer/embedded-faq.md
+            - name: Power BI-tilladelser
+              href: developer/power-bi-permissions.md
+        - name: Sådan gør du
+          items:
             - name: Sådan integrerer du dit indhold
               href: developer/embedding-content.md
             - name: Sådan integrerer du fra en app
               href: developer/embed-from-apps.md
             - name: Integrer indhold i din app til nationale clouds (appen ejer dataene)
               href: developer/embed-sample-for-customers-sovereign-clouds.md
-            - name: Indlejr brugerdefinerede layout i en app
-              href: developer/embedded-custom-layout.md
             - name: Opret en Azure Active Directory-lejer
               href: developer/create-an-azure-active-directory-tenant.md
             - name: Registrer en app
@@ -952,15 +940,103 @@
               href: developer/qanda.md
             - name: Sådan overføres Power BI Embedded
               href: developer/migrate-from-powerbi-embedded.md
-            - name: Overførselsværktøj i Power BI Embedded
-              href: developer/migrate-tool.md
-            - name: Overflytning af kodestykker
-              href: developer/migrate-code-snippets.md
             - name: Fejlfinding af det integrerede program
               href: developer/embedded-troubleshoot.md
-        - name: Push data
+        - name: Reference
           items:
-            - name: Overfør data til et dashboard
+            - name: Henter .NET SDK
+              href: 'https://go.microsoft.com/fwlink/?linkid=848274'
+            - name: Indlejr brugerdefinerede layout i en app
+              href: developer/embedded-custom-layout.md
+            - name: Overflytning af kodestykker
+              href: developer/migrate-code-snippets.md
+        - name: Ressourcer
+          items:
+            - name: Udviklingscenter
+              href: 'https://powerbi.microsoft.com/en-us/developers/'
+            - name: Onboarding Experience Tool til integration
+              href: 'https://aka.ms/embedsetup'
+            - name: JavaScript-eksemplet Playground
+              href: 'https://go.microsoft.com/fwlink/?linkid=848279'
+            - name: Power BI JavaScript-wiki
+              href: 'https://github.com/Microsoft/powerbi-javascript/wiki'
+            - name: Git-lager for JavaScript
+              href: 'https://go.microsoft.com/fwlink/?linkid=848276'
+            - name: 'Git-lager for Power BI C#'
+              href: 'https://go.microsoft.com/fwlink/?linkid=848273'
+            - name: Eksempler
+              href: 'https://go.microsoft.com/fwlink/?linkid=851293'
+            - name: Overførselsværktøj i Power BI Embedded
+              href: developer/migrate-tool.md
+            - name: Power BI-community
+              href: 'https://go.microsoft.com/fwlink/?linkid=848280'
+            - name: Stack Overflow
+              href: 'https://go.microsoft.com/fwlink/?linkid=848281'
+    - name: Opret brugerdefinerede visualiseringer
+      items:
+        - name: Oversigt
+          items:
+            - name: Tilføjelse af brugerdefinerede visualiseringer i Power BI
+              href: 'https://microsoft.github.io/PowerBI-visuals/docs/latest/overview/'
+        - name: Selvstudier
+          items:
+            - name: Udvikling af en brugerdefineret visualisering i Power BI
+              href: 'https://microsoft.github.io/PowerBI-visuals/docs/latest/step-by-step-lab/developing-a-power-bi-custom-visual/'
+        - name: Begreber
+          items:
+            - name: Brug af funktionalitet
+              href: 'https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/capabilities/'
+            - name: Tilknytning af datavisning
+              href: 'https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/dataviewmappings/'
+            - name: Objekt og egenskaber
+              href: 'https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/objects-and-properties/'
+            - name: Avanceret redigeringstilstand
+              href: 'https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/advanced-edit-mode/'
+            - name: Vejledning til overførsel til versioneret API
+              href: 'https://microsoft.github.io/PowerBI-visuals/docs/latest/concepts/migrating-to-versioned-api-guide/'
+        - name: Sådan gør du
+          items:
+            - name: Få en brugerdefineret visualisering certificeret
+              href: power-bi-custom-visuals-certified.md
+            - name: Publicer brugerdefinerede visuals i AppSource
+              href: developer/office-store.md
+        - name: Reference
+          items:
+            - name: API'er
+              href: 'https://microsoft.github.io/PowerBI-visuals/api/references/ivisualhost/'
+        - name: Ressourcer
+          items:
+            - name: Udviklingscenter
+              href: 'https://powerbi.microsoft.com/en-us/developers/'
+            - name: Opret en brugerdefineret visualisering med Udviklerværktøj
+              href: service-custom-visuals-getting-started-with-developer-tools.md
+            - name: Eksempler
+              href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
+            - name: Git-lager for brugerdefinerede visualiseringer
+              href: 'https://go.microsoft.com/fwlink/?linkid=848277'
+    - name: Automatisering
+      items:
+        - name: Oversigt
+          items:
+            - name: Hvad kan jeg bruge Power BI-API'en til?
+              href: developer/overview-of-power-bi-rest-api.md
+        - name: Selvstudier
+          items: null
+        - name: Begreber
+          items:
+            - name: Politik for automatisk opbevaring for data i realtid
+              href: developer/api-automatic-retention-policy-for-real-time-data.md
+            - name: Push data
+              items:
+                - name: Begrænsninger for REST-API'er til Power BI
+                  href: developer/api-rest-api-limitations.md
+                - name: Egenskaber for datasæt
+                  href: developer/api-dataset-properties.md
+                - name: Versionering af datamodel
+                  href: developer/api-data-model-versioning.md
+        - name: Sådan gør du
+          items:
+            - name: Overfør data til et datasæt
               href: developer/walkthrough-push-data.md
             - name: Registrer en app i Azure AD
               href: developer/walkthrough-push-data-register-app-with-azure-ad.md
@@ -970,46 +1046,24 @@
               href: developer/walkthrough-push-data-create-dataset.md
             - name: Få et datasæt til at tilføje rækker
               href: developer/walkthrough-push-data-get-datasets.md
-            - name: Tilføj rækker til en tabel
+            - name: Føj rækker til en tabel
               href: developer/walkthrough-push-data-add-rows.md
+        - name: Reference
+          items:
+            - name: REST API'er
+              href: 'https://docs.microsoft.com/rest/api/power-bi'
+            - name: Reference til Power BI REST-API
+              href: developer/rest-api-reference.md
             - name: Komplet kodeliste
               href: developer/walkthrough-push-data-complete-code.md
-            - name: Politik for automatisk opbevaring for data i realtid
-              href: developer/api-automatic-retention-policy-for-real-time-data.md
-        - name: Indholdspakke-certificering
+        - name: Ressourcer
           items:
-            - name: Indholdspakke-certificeringsprogram
-              href: developer/service-content-pack-overview.md
-            - name: Skabelon til oprettelse af Indholdspakke
-              href: developer/template-content-pack-authoring.md
-            - name: Skabelon til test af Indholdspakke
-              href: developer/template-content-pack-testing.md
-            - name: Skabelon til oplevelse af Indholdspakke
-              href: developer/template-content-pack-experience.md
-    - name: Reference
-      items:
-        - name: REST API'er
-          href: 'https://docs.microsoft.com/rest/api/power-bi/'
-        - name: 'Git-lager for Power BI C#'
-          href: 'https://go.microsoft.com/fwlink/?linkid=848273'
-        - name: Henter .NET SDK
-          href: 'https://go.microsoft.com/fwlink/?linkid=848274'
-        - name: Git-lager for JavaScript
-          href: 'https://go.microsoft.com/fwlink/?linkid=848276'
-        - name: Git-lager for brugerdefinerede visualiseringer
-          href: 'https://go.microsoft.com/fwlink/?linkid=848277'
-    - name: Ressourcer
-      items:
-        - name: Onboarding Experience Tool til integration
-          href: 'https://aka.ms/embedsetup'
-        - name: JavaScript-eksemplet Playground
-          href: 'https://go.microsoft.com/fwlink/?linkid=848279'
-        - name: Eksempler
-          href: 'https://go.microsoft.com/fwlink/?linkid=851293'
-        - name: Power BI-community
-          href: 'https://go.microsoft.com/fwlink/?linkid=848280'
-        - name: Stack Overflow
-          href: 'https://go.microsoft.com/fwlink/?linkid=848281'
+            - name: Udviklingscenter
+              href: 'https://powerbi.microsoft.com/en-us/developers/'
+            - name: 'Git-lager for Power BI C#'
+              href: 'https://go.microsoft.com/fwlink/?linkid=848273'
+            - name: Henter .NET SDK
+              href: 'https://go.microsoft.com/fwlink/?linkid=848274'
 - name: Power BI Report Server
   items:
     - name: Oversigt
