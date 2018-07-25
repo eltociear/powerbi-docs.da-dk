@@ -530,6 +530,12 @@
       items:
         - name: Hvad er nyt i den nyeste opdatering af Power BI Desktop?
           href: desktop-latest-update.md
+        - name: Sammensatte modeller i Power BI Desktop (Preview)
+          href: desktop-composite-models.md
+        - name: Mange til mange-relationer i Power BI Desktop (Preview)
+          href: desktop-many-to-many-relationships.md
+        - name: Lagringstilstand i Power BI Desktop (Preview)
+          href: desktop-storage-mode.md
         - name: Tovejskrydsfiltrering i Power BI Desktop (eksempelvisning)
           href: desktop-bidirectional-filtering.md
         - name: Power BI og DirectQuery
@@ -670,6 +676,8 @@
               href: desktop-import-and-display-kpis.md
         - name: Opret rapporter
           items:
+            - name: Visuelle elementer til rapporter
+              href: desktop-visual-elements-for-reports.md
             - name: Spørgsmål og svar i Power BI Desktop
               href: desktop-qna-in-reports.md
             - name: Ruden Analytics i Power BI Desktop
@@ -1244,6 +1252,8 @@
               href: service-premium-large-datasets.md
             - name: Trinvis opdatering
               href: service-premium-incremental-refresh.md
+            - name: Multi-Geo-support (Preview)
+              href: service-admin-premium-multi-geo.md
             - name: Ofte stillede spørgsmål om Power BI Premium
               href: service-premium-faq.md
             - name: Produktbemærkninger til Power BI Premium
