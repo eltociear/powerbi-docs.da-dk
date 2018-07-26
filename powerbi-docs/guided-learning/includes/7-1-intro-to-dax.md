@@ -3,7 +3,7 @@ Velkommen til afsnittet Power BI **Automatiseret læring**, der er lavet for at 
 **DAX** står for **Data Analysis Expressions**, og det er det formelsprog, der bruges i Power BI (det bruges også af Power BI i baggrunden). DAX findes også i andre tilbud fra Microsoft, f.eks. Power Pivot og SSAS-tabel, men denne samling af emner i Automatiseret læring fokuserer på, hvordan DAX bruges – og kan bruges af dig – i Power BI.
 
 ## <a name="dax-and-this-guided-learning-video-series"></a>DAX og denne videoserie om Automatiseret læring
-Målet for dette afsnit, **Automatiseret læring**, er at lære om de grundlæggende elementer i DAX – hvordan du skal tænke om DAX, hvordan det fungerer og de mest nyttige funktioner som forklaret (og som lært med masser af erfaring) af en DAX-ekspert, [ Alberto Ferrari](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit).
+Målet for dette afsnit, **Automatiseret læring**, er at lære om de grundlæggende elementer i DAX – hvordan du skal tænke om DAX, hvordan det fungerer og de mest nyttige funktioner som forklaret (og som lært med masser af erfaring) af en DAX-ekspert, [ Alberto Ferrari](http://www.sqlbi.com/learning-dax).
 
 ![Portræt af Alberto Ferrari](media/7-1-intro-to-dax/intro_dax_6_alberto_ferrari.png)
 

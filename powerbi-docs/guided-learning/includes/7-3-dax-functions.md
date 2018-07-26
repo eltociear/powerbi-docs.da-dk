@@ -89,7 +89,7 @@ DAX indeholder følgende **datofunktioner**:
 
 Selvom disse funktioner kan bruges til at beregne og udtrække oplysninger fra *datoværdier*, gælder de ikke for tidsintelligens, som bruger en datotabel.
 
-> Videoindholdet er fra [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Videoindholdet er fra [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
 > 
 > 
 

@@ -15,7 +15,7 @@ Funktionen **RELATED** fungerer på *mange til en*-relationer, mens **RELATEDTAB
 
 Du kan bruge relationelle funktioner til at oprette udtryk, der indeholder værdier på tværs af flere tabeller. DAX returnerer et resultat med disse funktioner, uanset hvor lang kæden af relationen er.
 
-> Videoindholdet er fra [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Videoindholdet er fra [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
 > 
 > 
 

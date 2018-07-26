@@ -10,7 +10,7 @@ Variabler kan være alle slags datatyper, herunder hele tabeller.
 
 Vær opmærksom på, at hver gang du refererer til en variabel i dit DAX-udtryk, skal Power BI genberegne dens værdi i henhold til din definition. Derfor er det en god idé at undgå gentagne variabler i funktionen.
 
-> Videoindholdet er fra [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Videoindholdet er fra [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
 > 
 > 
 

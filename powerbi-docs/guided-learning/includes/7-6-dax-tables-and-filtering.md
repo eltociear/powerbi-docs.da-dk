@@ -34,7 +34,7 @@ Power BI og DAX indeholder værdier, der ikke er korrekt krydsindekseret. Hvis d
 
 Du kan også oprette hele beregnede tabeller ved hjælp af DAX-funktioner. Beregnede tabeller, der er oprettet ved hjælp af DAX, kræver funktionerne **NAVN** og **TABEL**. Beregnede tabeller kan bruges som enhver anden tabel, herunder ved oprettelse af relationer.
 
-> Videoindholdet er fra [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Videoindholdet er fra [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
 > 
 > 
 

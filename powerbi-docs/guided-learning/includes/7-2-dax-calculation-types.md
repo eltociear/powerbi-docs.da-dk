@@ -57,7 +57,7 @@ De obligatoriske elementer til en beregnet måling er de samme som til en beregn
 * et nyt målingsnavn
 * mindst én funktion eller ét udtryk
 
-> Videoindholdet er fra [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax/?utm_source=powerbi&utm_medium=marketing&utm_campaign=after-summit)
+> Videoindholdet er fra [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
 > 
 > 
 
