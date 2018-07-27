@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/19/2018
 ms.author: davidi
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3c91a6a70899a4a59c3d98cd9ab948284df5b662
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 144cdace662b5f6dbe546a213e07f087d634dcff
+ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298383"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39256003"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tip og tricks til farveformatering i Power BI
 Power BI indeholder mange forskellige måder at tilpasse dine dashboards og rapporter på. Denne artikel indeholder en samling af tip, som kan gøre dine Power BI-visualiseringer mere overbevisende, interessante og tilpasset efter dine behov.
@@ -97,7 +97,7 @@ Læg mærke til på dette første billede, hvordan søjlerne i diagrammet afspej
 
 ![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_12.png)
 
-Lad os se, hvad der sker, hvis vi angiver numeriske værdier i værdifelterne **Minimum** og **Maksimum**, som er under farvevælgerne **Minimum** og **Maksimum** (vises på følgende billede). Lad os indstille **Minimum** til 20.000.000 og indstille **Maksimum** til 20.000.000.
+Lad os se, hvad der sker, hvis vi angiver numeriske værdier i værdifelterne **Minimum** og **Maksimum**, som er under farvevælgerne **Minimum** og **Maksimum** (vises på følgende billede). Lad os angive 20.000.000 som **Minimum** og angive 20.000.001 som **Maksimum**.
 
 Ved at angive disse værdier anvendes farveforløb ikke længere på værdierne i diagrammet, der er under **Minimum** eller over **Maksimum**. En søjle med en værdi over værdien **Maksimum** har farven grøn, og en søjle med en værdi under værdien **Minimum** har farven rød.
 

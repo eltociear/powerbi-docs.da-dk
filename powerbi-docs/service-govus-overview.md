@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 94f4bf71f0b97b202ce05f1caadee43ccea6a733
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: f7c619a5696a6f432f24e5e2c875cfde335ab32c
+ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37135921"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39256049"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til kunder i den amerikanske stat
 **Power BI-tjenesten** har en tilgængelig version for kunder i den amerikanske stat som en del af abonnementer for **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til kunder i den amerikanske stat og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten**.
@@ -58,7 +58,7 @@ Nogle af de funktioner, der er tilgængelige i den kommercielle version af **Pow
 * **Power BI US Government** er kun tilgængelig som en **Pro**-licens. Henvisninger til Power BI-licenser (gratis) på en administrationsportal (eller som brugere) kører i en kommerciel cloud til Power BI-tjenesten.
 * **Overvågning** – overvågning er nu tilgængeligt via portalen Office 365 Security and Compliance fra juni 2018.
 * **Power BI-indhold i Cortana** - Power BI-resultater vises ikke i søgeresultater i Cortana, der omfatter resultaterne for dit Power BI-indhold (dashboards, rapporter og apps) samt resultater, der viser Cortana-optimerede rapportsider for bestemte nøgleord.
-* **Deling med eksterne brugere** – deling er tilladt inden for en Power BI-lejer. Fra juni 2018 kan du også dele med brugere uden for din Power BI-lejer.
+* **Deling med eksterne brugere** – deling er tilladt inden for en Power BI-lejer. Fra juni 2018 kan du også dele med brugere uden for din Power BI-lejer. Se [Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B](service-admin-azure-ad-b2b.md).
 * **Forbrugsmålinger for dashboards og rapporter** – forbrugsmålinger er ikke tilgængelige for rapporter og dashboards. Kunder kan bruge data i overvågningsloggen til at få forbrugsoplysninger om indhold i deres organisation.
 
 Hvis du har gratis **Power BI**-licenser knyttet til din konto, kører disse konti i en kommerciel version af **Power BI**-tjenesten og er ikke en del af **Power BI US Government**-tilbuddet. For de gratis kontis vedkommende kan der opstå følgende problemer:
