@@ -682,8 +682,10 @@
               href: desktop-qna-in-reports.md
             - name: Ruden Analytics i Power BI Desktop
               href: desktop-analytics-pane.md
-            - name: Brug af indsigter i Power BI Desktop
+            - name: Brug indsigter til at forklare stigninger og fald
               href: desktop-insights.md
+            - name: 'Brug indsigter til at finde, hvor distributionen er anderledes i diagrammer'
+              href: desktop-insights-find-where-different.md
             - name: Bogmærker i Power BI
               href: desktop-bookmarks.md
             - name: Brug rapporttemaer
