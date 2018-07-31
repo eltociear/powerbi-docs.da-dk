@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/06/2018
+ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 72a900b1661a77e5b31c1d68b5726d989b236f7b
-ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
+ms.openlocfilehash: b26fbfccc3b0a98761ecc1444af4e535339c96de
+ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39031996"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39210278"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Tilgængelighed i Power BI Desktop-rapporter
 Power BI indeholder funktioner, der gør det nemmere for personer med et handicap at bruge og interagere med Power BI-rapporter. Funktionerne omfatter muligheden for at bruge en rapport ved hjælp tastaturet eller en skærmlæser, bruge tabulatortasten til at sætte fokus på forskellige objekter på en side og bruge markører i visualiseringer.
@@ -47,8 +47,12 @@ Du kan trykke på **Alt+Skift+F11** for at få vist en tilgængelighedsversion a
 
 > [!NOTE]
 > Funktionen "Vis data" er kun tilgængelig for skærmlæsere med brug af denne tastaturgenvej. Hvis du åbner Vis data via indstillingen i visualiseringens overskrift, vil det ikke være tilgængelig for skærmlæsere.
-> 
-> 
+
+Fra og med udgivelsen af **Power BI Desktop** i juli 2018 har udsnit nu tilgængelighedsfunktioner indbygget. Når du vælger et udsnit, kan du bruge Ctrl+pil højre til at justere værdien af udsnittet for at skifte mellem de forskellige kontrolelementer i udsnittet. Når du trykker på Ctrl+pil højre første gang, vil fokus f.eks. være på viskelæderet, og hvis du trykker på mellemrumstasten, svarer det til at klikke på viskelæderknappen, hvilket sletter alle værdierne i udsnittet. 
+
+Du kan flytte gennem kontrolelementerne i et udsnit ved at trykke på tabulatortasten. Hvis du trykker på tabulatortasten, når fokus er på viskelæderet, flyttes til rullelisten, og med endnu et tryk på tabulatortasten flyttes fokus til den første værdi i udsnittet (hvis der er flere værdier i udsnittet, f.eks. et interval). 
+
+![Tryk på Ctrl+pil højre i Power BI Desktop for at tilpasse et element eller værdier i et udsnit, tryk på mellemrumstasten for at vælge elementet, og tilpas værdien.](media/desktop-accessibility/accessibility_07.png)
 
 Disse tilgængelighedstilføjelser er oprettet for at give brugere mulighed for at bruge alle funktioner i Power BI-rapporter ved hjælp af en skærmlæser og tastaturnavigation.
 

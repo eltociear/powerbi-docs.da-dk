@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/06/2018
+ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1f53b0efc2195221fbcbe45f03102d2c98e8eef3
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: b2437074fb6beff4b1be62287d547111488862e3
+ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34232102"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39210324"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop-preview"></a>Opret værktøjstip baseret på rapportsider i Power BI Desktop (prøveversion)
 Du kan oprette visuelt omfattende **værktøjstip til rapporter**, som vises, når du holder over visualiseringer, på baggrund af rapportsider, du opretter i **Power BI Desktop**. Ved at oprette en rapportside, der fungerer som et værktøjstip, kan dine brugerdefinerede værktøjstip indeholde visualiseringer, billeder og mange andre samlinger af elementer, du opretter på en rapportside. 
@@ -119,6 +119,7 @@ Når en visualisering fremhæves på tværs i en rapport, viser værktøjstippen
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 I denne foreløbige version af **værktøjstip** for rapporter er der nogle få begrænsninger og overvejelser, du skal være opmærksom på.
 
+* Fra og med udgivelsen af **Power BI Desktop** i juli 2018 understøttes visualiseringerne Tabel og Matrix for værktøjstip. 
 * Værktøjstip til rapporter understøttes ikke, når du får vist rapporter i mobilapps eller i indbyggede miljøer, herunder Publicer til web. 
 * Værktøjstip til rapporter understøttes ikke for brugerdefinerede visualiseringer. 
 * Klynger understøttes ikke i øjeblikket som felter, der kan vises i værktøjstip til rapporter. 

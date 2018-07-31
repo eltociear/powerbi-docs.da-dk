@@ -7,15 +7,15 @@ ms.reviewer: ajayan
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/08/2018
+ms.date: 07/19/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1b7a111e1b240a37211c17bce4d497de2d864074
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 45e9207ffa666e33b298e82bbc78e07c226b780e
+ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "34852296"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39182788"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Administrer, opdater og slet organisationsindholdspakker
 > [!NOTE]
@@ -52,7 +52,7 @@ Når du foretager og gemmer en ændring af det dashboard, som du inkluderede i e
 4. Foretag de nødvendige ændringer i vinduet **Opdater indholdspakke**, og vælg **Opdater**. Meddelelsen **Udført** vises.
    
    * Opdateringen anvendes automatisk for gruppemedlemmer, som ikke har tilpasset indholdspakken.
-   * Gruppemedlemmer, som har tilpasset indholdspakken, modtager en meddelelse om, at der er en ny version.  De kan gå til AppSource og hente den opdaterede indholdspakke uden at miste deres personligt tilpassede version.  De har nu to versioner: den personligt tilpassede version og den opdaterede indholdspakke.  I den personligt tilpassede version er alle fliser fra den oprindelige indholdspakke væk.  Men fliser, der er fastgjort fra andre rapporter, vises stadig.    
+   * Gruppemedlemmer, som har tilpasset indholdspakken, modtager en meddelelse om, at der er en ny version.  De kan gå til AppSource og hente den opdaterede indholdspakke uden at miste deres personligt tilpassede version.  De har nu to versioner: den personligt tilpassede version og den opdaterede indholdspakke.  I den personligt tilpassede version er alle fliser fra den oprindelige indholdspakke væk.  Men fliser, der er fastgjort fra andre rapporter, vises stadig. Hvis ejeren af indholdspakken sletter det datasæt, som indholdspakken er baseret på, vil hele rapporten forsvinde.  
 
 ## <a name="update-the-audience-expand-or-restrict-access"></a>Opdater målgruppen: Udvid eller begræns adgangen
 En anden ændring, der er tilgængelig for oprettere af indholdspakker, er at udvide og begrænse adgang til indholdspakken.  Du har måske publiceret en indholdspakke til en bred målgruppe, og du har besluttet dig for at begrænse adgangen til en mindre gruppe.  

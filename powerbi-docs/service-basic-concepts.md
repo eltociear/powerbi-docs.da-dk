@@ -8,15 +8,15 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 07/19/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 0536dc6fd637db07c0e26a4ed7f0da1071b646eb
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: a1719f8a6f9f4ad3989aa498c584b337cd9fdd00
+ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137416"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39182742"
 ---
 # <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – grundlæggende begreber for Power BI-tjenesten
 
@@ -48,9 +48,9 @@ Du kan også vælge at se denne video, før du læser resten af denne artikel.  
 De fire overordnede elementer i Power BI er: ***dashboards***, ***rapporter***, ***projektmapper*** og ***datasæt***. Og de er alle organiseret i ***arbejdsområder***. Det er vigtigt at forstå arbejdsområder, før vi går videre til de fire overordnede elementer, så lad os starte der. 
 
 ## <a name="workspaces"></a>Arbejdsområder
-Arbejdsområder er objektbeholdere til dashboards, rapporter, projektmapper og datasæt i Power BI. Der er to typer arbejdsområder: **Mit arbejdsområde* og apparbejdsområder. Hvad er en *app*? En *app* i Power BI er en samling dashboards og rapporter, der er bygget til at levere vigtige metrikker til organisationen. Apps er interaktive, men kan ikke redigeres 
+Arbejdsområder er objektbeholdere til dashboards, rapporter, projektmapper og datasæt i Power BI. Der er to typer arbejdsområder: *Mit arbejdsområde* og *apparbejdsområder*. Hvad er en *app*? En *app* i Power BI er en samling dashboards og rapporter, der er bygget til at levere vigtige metrikker til organisationen. Apps er interaktive, men kan ikke redigeres. 
 
-- *Mit arbejdsområde* er et personligt arbejdsområde til Power BI-kunder, hvor de kan arbejde med deres indhold. Kun du har adgang til dit Mit arbejdsområde. Hvis du vil dele noget af dit indhold, har du flere muligheder: Du kan oprette et apparbejdsområde, hvor du kan bundte indholdet i en *app* og gøre det tilgængeligt for andre i din organisation, eller oprette et apparbejdsområde og give kolleger adgang til dette arbejdsområde, så du kan dele og samarbejde.     
+- *Mit arbejdsområde* er et personligt arbejdsområde til Power BI-kunder, hvor de kan arbejde med dit indhold. Kun du har adgang til dit Mit arbejdsområde. Du kan dele dashboards og rapporter fra Mit arbejdsområde. Hvis du vil samarbejde om dashboards og rapporter eller oprette en app, skal du arbejde i et apparbejdsområde.      
 -  *Apparbejdsområder* bruges til at samarbejde og dele indhold med kolleger. Det er også de steder, hvor du opretter, publicerer og administrerer apps for din organisation. De er en form for midlertidige områder og beholdere for det indhold, der udgør en Power BI-app. Du kan føje kolleger til dine apparbejdsområder og samarbejde om dashboards, rapporter, projektmapper og datasæt. Alle medlemmer af apparbejdsområdet skal bruge Power BI Pro-licenser, men appforbrugeren (de kolleger, der har adgang til apps) behøver ikke nødvendigvis at have Pro-licenser.  
 
 Du kan få mere at vide i afsnittet **Del dit arbejde** i indholdsfortegnelsen, som starter med [Hvordan skal jeg samarbejde og dele dashboards og rapporter](service-how-to-collaborate-distribute-dashboards-reports.md)
