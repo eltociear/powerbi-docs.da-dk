@@ -129,7 +129,7 @@ Der er så mange fantastiske ressourcer til at oprette rapporter i Power BI Desk
 * [Kom i gang med Power BI Desktop](../desktop-getting-started.md)
 * Automatiseret læring: [Introduktion til Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)
 
-### <a name="power-bi-report-server"></a>Power BI-rapportserver
+### <a name="power-bi-report-server"></a>Power BI Report Server
 * [Installer Power BI Desktop optimeret til Power BI-rapportserver](install-powerbi-desktop.md)  
 * [Hvad er Power BI-rapportserveren?](get-started.md)  
 

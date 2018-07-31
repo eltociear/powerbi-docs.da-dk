@@ -30,7 +30,7 @@ Gatewayen kører på den computer, hvor du installerer den, så sørg for at ins
 
 1. I øverste højre hjørne i Power BI-tjenesten skal du vælge **ikonet Download** ![ikonet Download](media/service-gateway-install/icon-download.png) > **Datagateway**.
 
-    ![Data Gateway](media/service-gateway-install/data-gateway.png)
+    ![Datagateway](media/service-gateway-install/data-gateway.png)
 
 2. På downloadsiden skal du vælge knappen **DOWNLOAD GATEWAY**.
 

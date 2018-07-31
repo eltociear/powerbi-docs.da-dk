@@ -21,7 +21,7 @@ ms.locfileid: "34296774"
 
 Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigtige forskelle. I denne tabel forklares det, hvad der er hvad.
 
-| Funktioner | Power BI-rapportserver | Power BI-tjeneste | Noter
+| Funktioner | Power BI Report Server | Power BI Service | Noter
 |---------|---------|---------|---------|
 | Installation | I det lokale miljø eller i hostet cloud | Cloud | Power BI-rapportserveren kan installeres i Azure VM'er (hostet cloud), hvis det er givet i licens via Power BI Premium
 | Kildedata | Cloud og/eller i det lokale miljø | Cloud og/eller i det lokale miljø |  
