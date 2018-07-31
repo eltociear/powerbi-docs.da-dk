@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 5601ab79832f2d52622f5c13ecd23f346408f08e
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: eda7f44c869829564703bda6112177234d3f2d44
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598609"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280127"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Udforsk felter i Power BI-mobilappsene
 Kan anvendes med:
@@ -92,7 +92,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
     ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10tileellpslink.png)
    
-    [Dele et øjebliksbillede af feltet](mobile-share-tile-windows-10-phone-app.md).
+    [Dele et øjebliksbillede af feltet](mobile-windows-10-phone-app-get-started.md).
    
     Trykke på **Åbn rapport** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) for at [få vist den bagvedliggende rapport](mobile-reports-in-the-mobile-apps.md).
    
@@ -120,7 +120,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
    ![](media/mobile-tiles-in-the-mobile-apps/power-bi-windows-10-center-map.png)
    
-   Tryk på ikonet Del snapshot ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_shareicon.png) for at [dele et felt](mobile-share-tile-windows-10-phone-app.md) med andre.   
+   Tryk på ikonet Del snapshot ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_shareicon.png) for at [dele et felt](mobile-windows-10-phone-app-get-started.md) med andre.   
    
    Tryk på ikonet Åbn rapport ![](media/mobile-tiles-in-the-mobile-apps/power-bi-ipad-open-report-icon.png) for at [få vist den rapport](mobile-reports-in-the-mobile-apps.md), som feltet er baseret på. 
 4. Tryk på pilen Tilbage eller knappen Tilbage for at lukke feltet og vende tilbage til dashboardet.

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7ff30c5852b1ec444c2842f614fe5c9ec198918e
-ms.sourcegitcommit: 638de55f996d177063561b36d95c8c71ea7af3ed
+ms.openlocfilehash: 7f938e881e71d241025ddc44aeb1a21daa61dcd9
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34289895"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39327867"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Brug DirectQuery i Power BI Desktop
 Når du opretter forbindelse til din datakilde i **Power BI Desktop**, er det altid muligt at importere en kopi af dataene til **Power BI Desktop**. For nogle datakilder findes der en anden mulighed: du kan oprette direkte forbindelse til datakilden med **DirectQuery**.
@@ -71,7 +71,7 @@ Der skal tages højde for følgende tre punkter, når der bruges **DirectQuery**
   
   Denne situation kan opstå med et simpelt diagram, der indeholder en kolonne med høj kardinalitet, hvor indstillingen for aggregering er angivet til *Opsummer ikke*. Visualiseringen skal kun have kolonner med en kardinalitet under 1 million, eller der skal være anvendt relevante filtre.
 * **Sikkerhed** – Alle de brugere, der anvender en publiceret rapport, opretter forbindelse til backend-datakilden ved hjælp af de legitimationsoplysninger, der angives efter publiceringen til Power BI-tjenesten. Det er samme situation som for de data, der er importeret: alle brugere ser de samme data, uanset hvilke sikkerhedsregler der er defineret i backend-kilden. Kunder, der ønsker sikkerhed pr. bruger implementeret med DirectQuery-kilder, skal bruge RLS. [Få mere at vide om RLS](service-admin-rls.md).
-* **Understøttede funktioner ** – Det er ikke alle funktioner i **Power BI Desktop**, der understøttes i **DirectQuery**-tilstand, eller som har begrænsninger. Desuden er der nogle funktioner i Power BI-tjenesten (som *Hurtige indsigter*), der ikke er tilgængelige for de datasæt, hvor der bruges **DirectQuery**. Når du skal beslutte, om du vil bruge **DirectQuery**, skal du derfor tage højde for begrænsningerne for sådanne funktioner i forbindelse med brug af **DirectQuery**.   
+* **Understøttede funktioner**  – Det er ikke alle funktioner i **Power BI Desktop**, der understøttes i **DirectQuery**-tilstand, eller som har begrænsninger. Desuden er der nogle funktioner i Power BI-tjenesten (som *Hurtige indsigter*), der ikke er tilgængelige for de datasæt, hvor der bruges **DirectQuery**. Når du skal beslutte, om du vil bruge **DirectQuery**, skal du derfor tage højde for begrænsningerne for sådanne funktioner i forbindelse med brug af **DirectQuery**.   
 
 ## <a name="publish-to-the-power-bi-service"></a>Publicer til Power BI-tjenesten
 De rapporter, der oprettes ved hjælp af **DirectQuery**, kan publiceres til Power BI-tjenesten.

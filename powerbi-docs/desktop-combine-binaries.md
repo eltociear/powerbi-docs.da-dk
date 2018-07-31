@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 5d889787b6ae7e6331522bbef1a6f1c748d4533d
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 4c40cf3f314bde1685548662987aae11a9ac601b
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136335"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39326688"
 ---
 # <a name="combine-files-binaries-in-power-bi-desktop"></a>Kombiner filer (binære) i Power BI Desktop
 En effektiv måde at importere data på i **Power BI Desktop** er at kombinere flere filer, som har det samme skema, til en enkelt logisk tabel. I versionen af **Power BI Desktop** fra november 2016 (og efterfølgende versioner) er denne praktiske og populære metode blevet nemmere og mere omfattende, som beskrevet i denne artikel.

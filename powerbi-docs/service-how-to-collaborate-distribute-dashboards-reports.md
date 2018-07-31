@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/09/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7c0037534fa61c5340206354beb6af04d3fc1f4a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5899274ba3cc8ce0a059978a9b83ae2a7fd08527
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249499"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280449"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Hvordan kan jeg samarbejde og dele i Power BI?
 
@@ -75,7 +75,7 @@ Du kan dele et snapshot af feltet, rapporten eller dit visual, og modtagerne ser
 
 Flere oplysninger om [anmærkning og deling af felter, rapporter og visuelle elementer](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) fra iOS- og Android-mobilapps.
 
-Du kan også [dele et snapshot af et felt](mobile-share-tile-windows-10-phone-app.md) fra Power BI-appen til Windows 10-enheder.
+Du kan også [dele et snapshot af et felt](mobile-windows-10-phone-app-get-started.md) fra Power BI-appen til Windows 10-enheder.
 
 ## <a name="publish-to-the-web"></a>Publicer på internettet
 Du kan publicere Power BI-rapporter til hele internettet ved at integrere interaktive visualiseringer i blogindlæg, websteder, sociale medier og andre online-meddelelser på enhver enhed. Alle på internettet kan få vist dine rapporter, og du har ingen kontrol over, hvem der kan se, hvad du har publiceret. Modtagerne skal ikke bruge en Power BI-licens. Publicering til internettet er kun tilgængeligt for rapporter, som du kan redigere. Du kan ikke publicere rapporter til internettet, hvis de er delt med dig, eller hvis de er i en app. Mere om [publicering på internettet](service-publish-to-web.md).

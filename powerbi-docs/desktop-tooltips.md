@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b2437074fb6beff4b1be62287d547111488862e3
-ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
+ms.openlocfilehash: c21d04da722e017210f7f83df3e1a5aa7dde1166
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39210324"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280748"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop-preview"></a>Opret værktøjstip baseret på rapportsider i Power BI Desktop (prøveversion)
 Du kan oprette visuelt omfattende **værktøjstip til rapporter**, som vises, når du holder over visualiseringer, på baggrund af rapportsider, du opretter i **Power BI Desktop**. Ved at oprette en rapportside, der fungerer som et værktøjstip, kan dine brugerdefinerede værktøjstip indeholde visualiseringer, billeder og mange andre samlinger af elementer, du opretter på en rapportside. 
@@ -124,6 +124,7 @@ I denne foreløbige version af **værktøjstip** for rapporter er der nogle få 
 * Værktøjstip til rapporter understøttes ikke for brugerdefinerede visualiseringer. 
 * Klynger understøttes ikke i øjeblikket som felter, der kan vises i værktøjstip til rapporter. 
 * Når du vælger et felt, der skal vises for værktøjstip til rapporter, når du bruger et felt i forhold til en kategori, vises visualiseringer, der indeholder det pågældende felt, kun det angivne værktøjstip, når der er overensstemmelse mellem opsummeringen og det valgte felt. 
+
 
 
 ## <a name="next-steps"></a>Næste trin

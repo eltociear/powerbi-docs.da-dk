@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/11/2017
 ms.author: maghan
-ms.openlocfilehash: 339390bba2e35101bdd42f7f51ab059473231575
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 51ad188479c11f5a0d16768eee8c533bdc71c59c
+ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290884"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39359926"
 ---
 # <a name="authenticate-users-and-get-an-azure-ad-access-token-for-your-power-bi-app"></a>Godkend brugere, og få et Azure AD-adgangstoken til din Power BI-app
 Få mere at vide om, hvordan du kan godkende brugere i din Power BI-applikation og hente et adgangstoken, der skal bruges sammen med REST-API'en.
@@ -190,7 +190,6 @@ var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "B
 Du kan finde oplysninger om, hvordan du bruger **await** under [await (C#-reference)](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/await)
 
 ## <a name="next-steps"></a>Næste trin
-Nu, hvor du har et adgangstoken, kan du kalde Power BI REST-API'en for at integrere indhold. Du kan finde oplysninger om, hvordan du integrerer dit indhold under [Sådan integrerer du Power BI-dashboards, -rapporter og -felter](embedding-content.md#step-2-embed-your-content).
+Nu, hvor du har et adgangstoken, kan du kalde Power BI REST-API'en for at integrere indhold. Du kan finde oplysninger om, hvordan du integrerer dit indhold under [Sådan integrerer du Power BI-dashboards, -rapporter og -felter](embed-sample-for-customers.md#embed-your-content-within-your-application).
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-

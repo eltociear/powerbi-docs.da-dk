@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/19/2018
 ms.author: maggies
-ms.openlocfilehash: 41a8b463ca95d0e4e0e0ba71dbd9ec9a1ce78920
-ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
+ms.openlocfilehash: 7149fd43d4214ed756eff61a523805ec9f50e1ae
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39182719"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280771"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -185,7 +185,7 @@ Læs [oversigten over funktioner i mobilapps for juli 2017](https://powerbi.micr
 
 **Ny menu: Apps** En app er en samling dashboards og rapporter, som er bygget specifikt til din organisation for at give adgang til vigtige målinger, der kan hjælpe med hurtigere og nemmere at træffe beslutninger på baggrund af data.
 
-Læs mere om [hvordan dit Power BI-indhold er organiseret](mobile-apps-find-content-mobile-devices.md).
+Læs mere om [hvordan dit Power BI-indhold er organiseret](mobile-apps-quickstart-view-dashboard-report.md).
 
 #### <a name="ios-and-android-devices"></a>iOS- og Android-enheder
 **Prøveversion af Power BI Report Server** Opret og publicer Power BI-rapporter i det lokale miljø. Du kan derefter [få vist og interagere med dem på din iOS- eller Android-mobilenhed](mobile-app-ssrs-kpis-mobile-on-premises-reports.md). 
@@ -241,7 +241,7 @@ Med Q&A kan du stille spørgsmål om dataene med dine egne ord, hvorefter Power 
 Du kan du have forbindelser til op til fem SSRS-servere (SQL Server Reporting Services) på samme tid.
 
 #### <a name="android-tablets"></a>Android-tablets
-**Power BI-mobilappen** til Android-tablets er nu tilgængelig globalt. Kom i gang med [Power BI til Android-tablet](mobile-android-tablet-app-get-started.md).
+**Power BI-mobilappen** til Android-tablets er nu tilgængelig globalt. Kom i gang med [Power BI til Android-tablet](mobile-android-app-get-started.md).
 
 #### <a name="ios-and-android-devices"></a>iOS- og Android-enheder
 **Ny menu til dashboard-felter** Naviger til den underliggende rapport, udvid feltet eller administrer en advarsel, alt sammen direkte i menuen på et felt på et dashboard. 
@@ -304,7 +304,7 @@ Læs [Oversigt over funktioner i Power BI-mobilapps i november 2016](https://pow
 #### <a name="android-tablets"></a>Android-tablets
 **Power BI-mobilappen til Android-tablets** Ja, prøveversionen er kommet.
 
-* Oplev [Power BI til Android-tablet](mobile-android-tablet-app-get-started.md)
+* Oplev [Power BI til Android-tablet](mobile-android-app-get-started.md)
 * Udforsk [mobile Reporting Services-rapporter og KPI'er på din Android-tablet](mobile-app-ssrs-kpis-mobile-on-premises-reports.md)
 
 #### <a name="android-devices"></a>Android-enheder
@@ -498,7 +498,7 @@ Alle forbedringerne i januar er allerede i den nye [Power BI-app til Windows 10-
 
 **R-felter og webwidgets** Få vist disse nye felttyper på dashboards på din mobilenhed.
 
-**Bing-dashboards** I Power BI-tjenesten kan du nu oprette [dashboards med Bing-søgeresultater](service-connect-to-bing.md) og få dem vist på din mobilenhed.
+**Bing-dashboards** I Power BI-tjenesten kan du nu oprette [dashboards med Bing-søgeresultater](service-connect-to-services.md) og få dem vist på din mobilenhed.
 
 **Rapportsider fastgjort som felter til dashboards** Nu hvor du kan fastgøre en hel rapportside til et dashboard i Power BI-tjenesten, kan du få vist rapportsider i Power BI-appen på din iPhone eller på din Android-telefon.
 
