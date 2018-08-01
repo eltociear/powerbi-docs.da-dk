@@ -108,7 +108,7 @@ En visualisering, der viser *State* (fra tabellen *CityData*) sammen med totalen
 
 ![tabelvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_09.png)
 
-Vær opmærksom på, at da denne løsning bruger staten fra tabellen *CityData*, vises der kun de ** stater, som findes i den tabel (derfor vises staten TX ikke). Selvom rækken med totalen indeholder alle **Sales** (inklusive dem for TX), vil detaljerne til forskel fra *Mange-1*-relationen ikke indeholde en tom række for de fejlbehæftede rækker. Der vil heller ikke være en tom række for *Sales*, hvor der var en null-værdi for *State*.
+Vær opmærksom på, at da denne løsning bruger staten fra tabellen *CityData*, vises der kun de *stater*, som findes i den tabel (derfor vises staten TX ikke). Selvom rækken med totalen indeholder alle **Sales** (inklusive dem for TX), vil detaljerne til forskel fra *Mange-1*-relationen ikke indeholde en tom række for de fejlbehæftede rækker. Der vil heller ikke være en tom række for *Sales*, hvor der var en null-værdi for *State*.
 
 Hvis *City* også blev føjet til visualiseringen, vil indbyggertallet pr. *City* være kendt, og *Sales* for *City* vil være en gentagelse af *Sales* for den tilsvarende *State* (som det normalt er tilfældet, når du grupperer en kolonne, der ikke relaterer til en aggregeret måling), som det kan ses i det følgende billede.
 

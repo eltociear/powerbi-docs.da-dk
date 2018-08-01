@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 183d0fdcf164ca706dd1704ea1c503f59ca7d715
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: fba2ea948190a59039766ffc2b5fab6189896ab8
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34252318"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39328482"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakilder til Power BI-tjenesten
 Dataene er i hjertet af Power BI. Når du udforsker data, opretter diagrammer og dashboards, stiller spørgsmål med Spørgsmål og svar, får alle disse visualiseringer og svar, som du ser, rent faktisk deres underliggende data fra et datasæt. Men hvor kommer dette datasæt fra? Fra en datakilde.
