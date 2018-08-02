@@ -1,21 +1,21 @@
 ---
 title: Brug Lagringstilstand i Power BI Desktop (Preview)
-description: Brug Lagringstilstand for at kontrollere, om data cachelagres i hukommelsen for rapporter i Power BI Desktop
+description: Brug Lagringstilstand til at kontrollere, om data cachelagres i hukommelsen for rapporter i Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 07/31/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 15580cd43e4bb2d286310868a8e853daff04f280
-ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
+ms.openlocfilehash: 28dcc4812a37b5ad3f514227f4e5fbcdfebeb579
+ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39210906"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388795"
 ---
 # <a name="storage-mode-in-power-bi-desktop-preview"></a>Lagringstilstand i Power BI Desktop (Preview)
 
@@ -33,9 +33,9 @@ Indstilling af **lagringstilstand** giver mange fordele. Du kan angive **lagring
 
 Indstillingen **lagringstilstand** i **Power BI Desktop** er én af tre relaterede funktioner:
 
-* **Sammensatte modeller** – gør det muligt for en rapport at have flere dataforbindelser, herunder DirectQuery-forbindelser eller import, i en hvilken som helst kombination.
-* **Mange-til-mange-relationer** – med **sammensatte modeller** kan du etablere **mange-til-mange-relationer** mellem tabeller, hvilket fjerner krav om entydige værdier i tabeller og fjerner tidligere omgåelser som f.eks. at introducere nye tabeller bare for at etablere relationer. 
-* **Lagringstilstand** – du kan nu angive, hvilke visuelle elementer, der kræver en forespørgsel til back-end-datakilder, og at dem, der ikke kræver det, bliver importeret, selvom de er baseret på DirectQuery, hvilket forbedrer kvaliteten og reducerer back-end-belastningen. Tidligere førte selv simple visuelle elementer til, at forespørgsler blev sendt tilbage til back-end-kilder. 
+* **Sammensatte modeller** – gør det muligt for en rapport at have flere dataforbindelser, herunder DirectQuery-forbindelser eller import, i en vilkårlig kombination af disse.
+* **Mange til mange-relationer** – med **sammensatte modeller** kan du oprette **mange til mange-relationer** mellem tabeller, fjerne kravene om entydige værdier i tabeller og fjerne tidligere løsninger som f.eks at introducere nye tabeller kun for at oprette relationer. 
+* **Lagringstilstand** – du kan nu angive, hvilke visuelle elementer der kræver en forespørgsel til backend-datakilder, og dem, hvor det ikke kræves, importeres, selvom de er baseret på DirectQuery, hvilket forbedrer kvaliteten og reducerer belastningen af backenden. Tidligere ville selv enkle visuelle elementer som udsnit igangsætte forespørgsler, der blev sendt til backend-kilderne. 
 
 Denne samling af tre relaterede funktioner knyttet til **sammensatte modeller** er hver beskrevet i særskilte artikler:
 
@@ -49,7 +49,7 @@ Funktionen **Lagringstilstand** fås i prøveversion og skal aktiveres i **Power
 
 ![aktivering af prøveversionsfunktioner](media/desktop-composite-models/composite-models_02.png)
 
-Du skal genstarte **Power BI Desktop** for at aktivere funktionen.
+Du skal genstarte **Power BI Desktop**, før funktionen kan bruges.
 
 ![genstart påkrævet, for at ændringerne kan træde i kraft](media/desktop-composite-models/composite-models_03.png)
 
@@ -118,7 +118,7 @@ Lad os fortsætte med eksemplet fra det forrige afsnit og antage, at vi anvender
 | *Geografi*             | Dual                 | 
 
 
-Når du angiver disse indstillinger for lagringstilstand, så sker der følgende under forudsætning af, at tabellen *Salg* har en betydelig datamængde.
+Når du angiver disse egenskabsindstillinger for lagringstilstand, sker der følgende under forudsætning af, at tabellen *Salg* har en betydelig datamængde.
 * Dimensionstabeller (*Dato*, *Kunde* og *Geografi*) cachelagres, så de indledende rapportindlæsningstider bør være hurtige, når der hentes udsnitsværktøjsværdier til visning.
 * De følgende resultater opnås ved ikke at cachelagre tabellen *Salg*:
     * Tiderne for dataopdateringer forkortes, og hukommelsesforbrug mindskes
@@ -157,7 +157,7 @@ Følgende forespørgsel er interessant, fordi den kombinerer begge kolonner. Den
 
 Forespørgslerne fra det forrige afsnit viser, at **Dual**-tabeller nogle gange finder indhold i cachen og andre gange ikke. Dette kan resultere i, at forskellige værdier returneres, hvis cachen er forældet. Udførelse af forespørgsler vil ikke forsøge at maskere dataproblemer ved f.eks. at filtrere DirectQuery-resultater for at matche cachelagrede værdier. Det er dit ansvar at kende dine dataflows, og du bør designe i henhold hertil. Der er fastlagt teknikker til at håndtere sådanne tilfælde ved kilden, hvis det er nødvendigt.
 
-**Dual**-lagringsmodellen er en ydeevneoptimering. Den må kun bruges på måder, der ikke kompromitterer adgangen til at opfylde forretningsbehov. For alternativ funktionalitet bør du overveje at bruge teknikkerne, der er beskrevet i artiklen [Mange-til-mange-relationer i Power BI Desktop (Preview)](desktop-many-to-many-relationships.md).
+**Dual**-lagringsmodellen er en ydeevneoptimering. Den må kun bruges på måder, der ikke kompromitterer evnen til at opfylde forretningsbehov. For alternativ funktionalitet bør du overveje at bruge teknikkerne, der er beskrevet i artiklen [Mange-til-mange-relationer i Power BI Desktop (Preview)](desktop-many-to-many-relationships.md).
 
 ## <a name="data-view"></a>Datavisning
 Hvis mindst én tabel i datasættet har angivet **lagringstilstanden** som enten Import eller Dual, så vises fanen **Datavisning**.
@@ -180,7 +180,7 @@ Følgende flerdimensionelle kilder kan ikke bruges med **sammensatte modeller**:
 
 Når du opretter forbindelse til disse flerdimensionelle datakilder ved hjælp af DirectQuery, kan du ikke også oprette forbindelse til en anden DirectQuery-kilde eller kombinere med importerede data.
 
-De eksisterende begrænsningerne ved at bruge DirectQuery gælder stadig, når du bruger **sammensatte modeller**. Mange af disse begrænsninger er nu pr. tabel afhængigt af tabellens **lagringstilstand**. En beregnet kolonne i en importeret tabel kan f.eks. referere til andre tabeller, men en beregnet kolonne i en DirectQuery-tabel er stadig begrænset til kun at referere til kolonner i den samme tabel. Andre begrænsninger gælder for modellen som helhed, hvis nogen af tabellerne i modellen er DirectQuery. For eksempel er funktionerne **QuickInsights** og **Q&A** ikke tilgængelige for en model, hvis nogen af tabellerne i den har en **lagringstilstand** for DirectQuery. 
+De eksisterende begrænsningerne ved at bruge DirectQuery gælder stadig, når du bruger **sammensatte modeller**. Mange af disse begrænsninger er nu pr. tabel afhængigt af tabellens **lagringstilstand**. En beregnet kolonne i en importeret tabel kan f.eks. referere til andre tabeller, men en beregnet kolonne i en DirectQuery-tabel er stadig begrænset til kun at referere til kolonner i den samme tabel. Andre begrænsninger gælder for modellen som helhed, hvis nogle af tabellerne i modellen er DirectQuery. For eksempel er funktionerne **QuickInsights** og **Q&A** ikke tilgængelige for en model, hvis nogen af tabellerne i den har en **lagringstilstand** for DirectQuery. 
 
 ## <a name="next-steps"></a>Næste trin
 
@@ -191,6 +191,6 @@ I følgende artikler beskrives sammensatte modeller yderligere, og du finder ogs
 
 Artikler om DirectQuery:
 
-* [Brug af DirectQuery i Power BI](desktop-directquery-about.md)
+* [Brug af DirectQuery in Power BI](desktop-directquery-about.md)
 * [Understøttede datakilder i forbindelse med DirectQuery i Power BI](desktop-directquery-data-sources.md)
 

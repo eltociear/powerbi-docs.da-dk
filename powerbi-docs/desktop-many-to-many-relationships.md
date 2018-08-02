@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 07/31/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 1105de002f6461589d61c6f0077cceeedaada471
-ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
+ms.openlocfilehash: 40799bb2716b2f6e85405e76c2a301acef3509aa
+ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39210890"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388749"
 ---
 # <a name="many-to-many-relationships-in-power-bi-desktop-preview"></a>Mange til mange-relationer i Power BI Desktop (Preview)
 
@@ -26,14 +26,14 @@ Med funktionen **Mange til mange-relationer**  i **Power BI Desktop** kan du joi
 Funktionen med **mange til mange-relationer** i **Power BI Desktop** er en del af en samling med tre relaterede funktioner:
 
 * **Sammensatte modeller** – gør det muligt for en rapport at have flere dataforbindelser, herunder DirectQuery-forbindelser eller import, i en vilkårlig kombination af disse.
-* **Mange til mange-relationer** – med **sammensatte modeller** kan du oprette **mange til mange-relationer** mellem tabeller, fjerne kravene om entydige værdier i tabeller og undgå tidligere løsninger som f.eks at introducere nye tabeller kun for at oprette relationer. 
+* **Mange til mange-relationer** – med **sammensatte modeller** kan du oprette **mange til mange-relationer** mellem tabeller, fjerne kravene om entydige værdier i tabeller og fjerne tidligere løsninger som f.eks at introducere nye tabeller kun for at oprette relationer. 
 * **Lagringstilstand** – du kan nu angive, hvilke visualiseringer der kræver en forespørgsel til backend-datakilder, og dem, hvor det ikke kræves, importeres, selvom de er baseret på DirectQuery, hvilket forbedrer ydeevnen og reducerer belastningen af backenden. Tidligere ville selv enkle visualiseringer som udsnit igangsætte forespørgsler, der blev sendt til backend-kilderne. 
 
 Denne samling af tre relaterede funktioner for **sammensatte modeller** er beskrevet i særskilte artikler:
 
 * **Sammensatte modeller** er beskrevet i detaljer i artiklen [sammensatte modeller i Power BI Desktop (Preview)](desktop-composite-models.md).
 * **Mange til mange-relationer** beskrives i denne artikel.
-* **Lagringstilstand** beskrives i sin egen artikel, [lagringstilstand i Power BI Desktop (Preview)](desktop-storage-mode.md).
+* **Lagringstilstand** er beskrevet i sin egen artikel: [Lagringstilstand i Power BI Desktop (Preview)](desktop-storage-mode.md).
 
 ## <a name="enabling-the-many-to-many-relationships-preview-feature"></a>Sådan aktiveres prøveversionen af mange til mange-relationer
 
@@ -50,7 +50,7 @@ Du skal genstarte **Power BI Desktop**, før funktionen kan bruges.
 
 Før funktionen til **mange til mange-relationer** blev introduceret, var det lidt mere vanskeligt at definere en relation mellem to tabeller i Power BI, da mindst én af de involverede kolonner i relationen skulle have entydige værdier. I mange tilfælde vil tabeller dog ikke have en kolonne med entydige værdier. 
 
-To tabeller kan f.eks. have en kolonne, der indeholder *Land*, men værdierne for *Land* var ikke entydige i nogen af tabellerne. Inden det var muligt at joinforbinde sådanne tabeller, var det nødvendigt med en løsning, hvor der blev tilføjet ekstra tabeller med de nødvendige entydige værdier i modellen. Funktionen **mange til mange-relationer** giver en alternativ metode, der gør det muligt for sådanne tabeller at blive joinforbundet direkte ved hjælp af en relation med en kardinalitet af **Mange til mange**.  
+To tabeller kan f.eks. have en kolonne, der indeholder *Country*, men værdierne for *Country* var ikke entydige i nogen af tabellerne. Inden det var muligt at joinforbinde sådanne tabeller, var det nødvendigt med en løsning, hvor der blev tilføjet ekstra tabeller med de nødvendige entydige værdier i modellen. Funktionen **mange til mange-relationer** giver en alternativ metode, der gør det muligt for sådanne tabeller at blive joinforbundet direkte ved hjælp af en relation med en kardinalitet af **Mange til mange**.  
 
 ## <a name="using-many-to-many-relationships"></a>Brug af mange til mange-relationer
 
@@ -110,7 +110,7 @@ En visualisering, der viser *State* (fra tabellen *CityData*) sammen med totalen
 
 Vær opmærksom på, at da denne løsning bruger staten fra tabellen *CityData*, vises der kun de *stater*, som findes i den tabel (derfor vises staten TX ikke). Selvom rækken med totalen indeholder alle **Sales** (inklusive dem for TX), vil detaljerne til forskel fra *Mange-1*-relationen ikke indeholde en tom række for de fejlbehæftede rækker. Der vil heller ikke være en tom række for *Sales*, hvor der var en null-værdi for *State*.
 
-Hvis *City* også blev føjet til visualiseringen, vil indbyggertallet pr. *City* være kendt, og *Sales* for *City* vil være en gentagelse af *Sales* for den tilsvarende *State* (som det normalt er tilfældet, når du grupperer en kolonne, der ikke relaterer til en aggregeret måling), som det kan ses i det følgende billede.
+Hvis *City* også blev føjet til visualiseringen, vil indbyggertallet pr. *City* være kendt, og *Sales* for *City* vil være en gentagelse af *Sales* for den tilsvarende *State* (som det normalt er tilfældet, når du grupperer en kolonne, der ikke er relateret til en aggregeret måling), som det kan ses på følgende billede.
 
 ![tabelvisualisering](media/desktop-many-to-many-relationships/many-to-many-relationships_10.png)
 
