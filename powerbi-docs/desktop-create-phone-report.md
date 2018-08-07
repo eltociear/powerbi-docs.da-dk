@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6ac85bcaba34f705b0f21efc86ed1583e69c8c2c
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 6cd1616dab92eb8709c5e89966259be591e4ede3
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721058"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280656"
 ---
 # <a name="create-reports-optimized-for-the-power-bi-phone-apps"></a>Opret rapporter, der er optimeret til Power BI-telefonapps
 Når du [opretter en rapport i Power BI Desktop](desktop-report-view.md), kan du forbedre oplevelsen ved at bruge den i mobilapps på telefoner ved at oprette en version af rapporten beregnet til telefonen. Du tilpasser din rapport til telefonen ved at omarrangere og tilpasse visualiseringer og måske ikke inkludere alle for at få en optimal oplevelse. Du kan også oprette [*dynamiske* visuals](#optimize-a-visual-for-any-size) og [dynamiske udsnitsværktøjer](#enhance-slicers-to-to-work-well-in-phone-reports), der tilpasses flot til visning på en telefon. Og hvis du føjer filtre til din rapport, vises disse filtre automatisk i telefonrapporten. Læserne af din rapport kan se dem og filtrere rapporten med dem.
@@ -72,7 +72,7 @@ Du kan vælge, om du vil gøre hver enkelt visualisering dynamisk. Læs mere om 
   
    ![Fjern en visualisering](media/desktop-create-phone-report/desktop-create-phone-report-7.gif)
 
-## <a name="enhance-slicers-to-to-work-well-in-phone-reports"></a>Gør udsnit bedre, så de fungerer godt i telefonrapporter
+## <a name="enhance-slicers-to-work-well-in-phone-reports"></a>Gør udsnit bedre, så de fungerer godt i telefonrapporter
 Udsnit muliggør filtrering af rapportdata på lærredet. Når du designer udsnit i den almindelige tilstand til rapportskrivning, kan du modificere nogle udsnitsindstillinger for at gøre dem mere anvendelige i telefonrapporter:
 
 * Beslut, om læserne af rapporten kun kan vælge et eller flere elementer.

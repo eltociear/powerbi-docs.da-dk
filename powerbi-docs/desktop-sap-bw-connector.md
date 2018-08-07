@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/06/2018
+ms.date: 07/26/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 11be5cd6f5b97fe612bf42a37228518ab2fbb227
-ms.sourcegitcommit: d1a0da8638c5d957b884ca9412275ee8880d4b14
+ms.openlocfilehash: 5db9b801fad3145cc864799062fe886c99da53aa
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37900048"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280196"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Brug af SAP BW Connector i Power BI Desktop
 Med Power BI Desktop har du adgang til data i **SAP Business Warehouse (BW)**.
 
-Du kan få oplysninger om, hvordan SAP-kunder kan integrere Power BI i deres eksisterende SAP Business Warehouse (BW)-systemer i [Hvidbog til Power BI og SAP BW](https://aka.ms/powerbiandsapbw).
+Du kan få oplysninger om, hvordan SAP-kunder kan integrere Power BI i deres eksisterende SAP Business Warehouse (BW)-systemer i [Hvidbog til Power BI og SAP BW](https://aka.ms/powerbiandsapbw). Du kan få flere oplysninger om brug af DirectQuery med SAP BW i artiklen [DirectQuery og SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
 Fra og med juni 2018-udgivelsen af **Power BI Desktop** kan du bruge SAP BW-connectoren med en implementering, der har store forbedringer i ydeevne og funktioner. Denne opdaterede version af SAP BW-connectoren er udviklet af Microsoft og kaldes **Implementation 2.0**. Du kan vælge enten version 1 (v1) af **SAP BW Connector** eller **Implementation 2.0 SAP Connector**. I de følgende afsnit beskrives installationen af hver version. Du kan vælge den ene eller den anden connector, når du opretter forbindelse til SAP BW fra Power BI Desktop.
 
@@ -38,9 +38,9 @@ Vi anbefaler, at du bruger Implementation 2.0 SAP Connector, når det er muligt 
 
 ## <a name="installation-of-implementation-20-sap-connector"></a>Installation af Implementation 2.0 SAP Connector
 
-**Implementation 2.0** af SAP-connectoren kræver SAP .NET Connector 3.0. Du kan [downloade SAP .NET Connector 3.0](https://go.microsoft.com/fwlink/?linkid=872300) fra SAPs websted ved at bruge dette link:
+**Implementation 2.0** af SAP-connectoren kræver SAP .NET Connector 3.0. Du kan [downloade SAP .NET Connector 3.0](https://support.sap.com/en/product/connectors/msnet.html) fra SAPs websted ved at bruge dette link:
 
-* [SAP .NET Connector 3.0](https://go.microsoft.com/fwlink/?linkid=872300)
+* [SAP .NET Connector 3.0](https://support.sap.com/en/product/connectors/msnet.html)
 
 Adgang til download kræver en gyldig S-bruger. Kunderne opfordres til at kontakte deres SAP Basis-team for at få SAP .NET Connector 3.0. 
 
@@ -207,6 +207,7 @@ Dette afsnit indeholder fejlfindingssituationer (og løsninger) til arbejdet med
 Du kan finde flere oplysninger om SAP og DirectQuery i følgende ressourcer:
 
 * [DirectQuery og SAP HANA](desktop-directquery-sap-hana.md)
+* [DirectQuery og SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md)
 * [DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakilder, der understøttes af DirectQuery](desktop-directquery-data-sources.md)
 * [Hvidbog til Power BI og SAP BW](https://aka.ms/powerbiandsapbw)

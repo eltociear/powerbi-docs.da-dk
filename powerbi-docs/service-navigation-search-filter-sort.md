@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 421ef9609872515ae462de574d67528835bb78ab
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b55f9854d129c4ff7a70117b8382fbdbaff80ce8
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34722833"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280265"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigation: Søg i, find og sortér dit indhold i Power BI-tjenesten
 Der er mange forskellige måder at navigere rundt i dit indhold i Power BI-tjenesten på. Indholdet organiseres i fire arbejdsområder efter type: dashboards, rapporter, projektmapper og datasæt.  Indholdet er også sorteret efter forbrug: Favoritter, seneste, apps, delt med mig og udvalgt. Med disse forskellige stier til dit indhold kan du hurtigt finde det, du søger, i Power BI-tjenesten.  

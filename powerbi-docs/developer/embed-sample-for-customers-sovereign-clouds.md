@@ -2,24 +2,26 @@
 title: Integrer Power BI-indhold i et program for dine kunder til nationale cloudmiljøer
 description: Få mere at vide om, hvordan du kan integrere et dashboard, et felt eller en rapport i en webapp ved hjælp af API'er til Power BI til dine kunder.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
-ms.topic: conceptual
-ms.date: 03/28/2018
-ms.author: maghan
-ms.openlocfilehash: ebbb004fe79bbae942243bc227e1c09fd51fa75f
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.topic: tutorial
+ms.date: 07/26/2018
+ms.openlocfilehash: 2d722428ce2029ef4689e6b4bf5dfcdd208baff8
+ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34813704"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39255865"
 ---
-# <a name="embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Integrer et Power BI-dashboard eller -felt eller en Power BI-rapporter i dit program til nationale cloudmiljøer
-Få mere at vide om, hvordan du integrerer et dashboard, et felt eller en rapport i en webapp ved hjælp af Power BI .NET SDK sammen med Power BI JavaScript API, når du integrerer til dine kunder. Dette er det typiske ISV-scenario.
+# <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Selvstudium: Integrer et Power BI-dashboard eller -felt eller en Power BI-rapport i dit program til nationale cloudmiljøer
+Få mere at vide om, hvordan du integrerer et dashboard, et felt eller en rapport i en webapp ved hjælp af Power BI .NET SDK sammen med Power BI JavaScript API, når du integrerer til dine kunder. Dette er et typisk ISV-scenario.
 
-Power BI understøtter også nationale (private) cloudmiljøer. Hvert nationalt cloudmiljø har sin eget tilhørsforhold. De forskellige nationale cloudmiljøer er:
+Power BI understøtter også nationale (private) cloudmiljøer.
+
+De forskellige nationale cloudmiljøer er:
 
 * U.S. Government Community Cloud (GCC)
 
@@ -29,77 +31,79 @@ Power BI understøtter også nationale (private) cloudmiljøer. Hvert nationalt 
 
 * Cloudmiljøet Power BI til Tyskland
 
+* Cloudmiljøet Power BI til Kina
+
 ![Integreret dashboard](media/embed-sample-for-customers/powerbi-embed-dashboard.png)
 
-Før du begynder denne gennemgang, skal du have en **Power BI**-konto. Hvis du ikke har konfigureret en konto, kan du [tilmelde dig en Power BI-konto til offentlige myndigheder i USA](../service-govus-signup.md) eller [en konto i cloudmiljøet Power BI til Tyskland](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1).
+Før du begynder denne gennemgang, skal du have en **Power BI**-konto. Hvis du ikke har konfigureret en konto, kan du [tilmelde dig en Power BI-konto til offentlige myndigheder i USA](../service-govus-signup.md), [en konto i cloudmiljøet Power BI til Tyskland](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) eller [en konto i cloudmiljøet Power BI til Kina](http://www.21vbluecloud.com/powerbi/), men det afhænger af typen af national cloud.
 
 > [!NOTE]
 > Vil du integrere et dashboard for din organisation i stedet? Se i [Integrer et dashboard i en app for din organisation](integrate-dashboard.md).
 >
 
-Hvis du vil integrere et dashboard i en webapp, skal du bruge API'en til **Power BI** og et **adgangstoken** til Azure Active Directory for at hente et dashboard. Derefter skal du indlæse dashboardet ved hjælp af et integrationstoken. **Power BI**-API'en leverer programmatisk adgang til visse **Power BI**-ressourcer. Du kan finde flere oplysninger under [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/), [Power BI .NET SDK](https://github.com/Microsoft/PowerBI-CSharp) og [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
+Hvis du vil integrere et dashboard i en webapp, skal du bruge API'en til **Power BI** og et **adgangstoken** til Azure Active Directory for at hente et dashboard. Derefter skal du indlæse dashboardet ved hjælp af et integrationstoken. **Power BI** API'en leverer programmeringsmæssig adgang til bestemte **Power BI**-ressourcer. Du kan finde flere oplysninger under [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/), [Power BI .NET SDK](https://github.com/Microsoft/PowerBI-CSharp) og [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Download eksemplet
 I denne artikel vises den kode, der bruges i [eksemplet Embedding for your customer](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData) på GitHub. For at kunne følge med i denne gennemgang skal du downloade eksemplet.
 
 * Government Community Cloud (GCC):
     1. Overskriv Cloud.config-filen med GCCCloud.config-indhold.
-    2. Opdater klient-id (klient-id i oprindelig app), gruppe-id, bruger (din overordnede bruger) og adgangskoden i Web.config-filen.
+    2. Opdater klient-id (klient-id i oprindelig app), gruppe-id, brugeren (din overordnede bruger) og adgangskoden i Web.config-filen.
     3. Tilføj GCC-parametrene i web.config-filen som følger.
 
 ```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
-
 <add key="resourceUrl" value="https://analysis.usgovcloudapi.net/powerbi/api" />
-
 <add key="apiUrl" value="https://api.powerbigov.us/" />
-
 <add key="embedUrlBase" value="https://app.powerbigov.us" />
 ```
 
 * Military Contractors (DoDCON):
     1. Overskriv Cloud.config-filen med TBCloud.config-indhold.
-    2. Opdater klient-id (klient-id i oprindelig app), gruppe-id, bruger (din overordnede bruger) og adgangskoden i Web.config-filen.
+    2. Opdater klient-id (klient-id i oprindelig app), gruppe-id, brugeren (din overordnede bruger) og adgangskoden i Web.config-filen.
     3. Tilføj DoDCON-parametrene i web.config-filen som følger.
 
 ```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
-
 <add key="resourceUrl" value="https://high.analysis.usgovcloudapi.net/powerbi/api" />
-
 <add key="apiUrl" value="https://api.high.powerbigov.us/" />
-
 <add key="embedUrlBase" value="https://app.high.powerbigov.us" />
 ```
 
 * Military (DoD):
     1. Overskriv Cloud.config-filen med PFCloud.config-indhold.
-    2. Opdater klient-id (klient-id i oprindelig app), gruppe-id, bruger (din overordnede bruger) og adgangskoden i Web.config-filen.
+    2. Opdater klient-id (klient-id i oprindelig app), gruppe-id, brugeren (din overordnede bruger) og adgangskoden i Web.config-filen.
     3. Tilføj DoDCON-parametrene i web.config-filen som følger.
 
 ```xml
 <add key="authorityUrl" value="https://login.windows.net/common/oauth2/authorize/" />
-
 <add key="resourceUrl" value="https://mil.analysis.usgovcloudapi.net/powerbi/api" />
-
 <add key="apiUrl" value="https://api.mil.powerbigov.us/" />
-
 <add key="embedUrlBase" value="https://app.mil.powerbigov.us" />
 ```
 
 * Parametre for cloudmiljøet Power BI til Tyskland
     1. Overskriv Cloud.config-filen med indhold for cloudmiljøet for Power BI til Tyskland.
-    2. Opdater klient-id (klient-id i oprindelig app), gruppe-id, bruger (din overordnede bruger) og adgangskoden i Web.config-filen.
+    2. Opdater klient-id (klient-id i oprindelig app), gruppe-id, brugeren (din overordnede bruger) og adgangskoden i Web.config-filen.
     3. Tilføj parametrene for cloudmiljøet Power BI til Tyskland i web.config-filen som følger.
 
 ```xml
 <add key="authorityUrl" value=https://login.microsoftonline.de/common/oauth2/authorize/" />
-
 <add key="resourceUrl" value="https://analysis.cloudapi.de/powerbi/api" />
-
 <add key="apiUrl" value="https://api.powerbi.de/" />
-
 <add key="embedUrlBase" value="https://app.powerbi.de" />
+```
+
+* Parametre for cloudmiljøet Power BI til Kina
+    1. Overskriv Cloud.config-filen med indhold for cloudmiljøet for [Power BI til Kina](https://github.com/Microsoft/PowerBI-Developer-Samples/blob/master/App%20Owns%20Data/PowerBIEmbedded_AppOwnsData/CloudConfigs/Power%20BI%20operated%20by%2021Vianet%20in%20China/Cloud.config).
+    2. Opdater klient-id (klient-id i oprindelig app), gruppe-id, brugeren (din overordnede bruger) og adgangskoden i Web.config-filen.
+    3. Tilføj parametrene for cloudmiljøet Power BI til Kina i web.config-filen som følger.
+
+```xml
+<add key="authorityUrl" value=https://login.chinacloudapi.cn/common/oauth2/authorize/" />
+<add key="resourceUrl" value="https://analysis.chinacloudapi.cn/powerbi/api" />
+<add key="apiUrl" value="https://api.powerbi.cn/" />
+<add key="embedUrlBase" value="https://app.powerbi.cn" />
 ```
 
 ## <a name="step-1---register-an-app-in-azure-ad"></a>Trin 1 – Registrer en app i Azure AD
@@ -113,11 +117,13 @@ Du skal registrere din app i Azure AD, før du kan foretage REST-API-kald. Du ka
 
 * Cloudmiljøet Power BI til Tyskland – https://app.powerbi.de/apps
 
+* Cloudmiljøet Power BI til Kina – https://app.powerbi.cn/apps
+
 Hvis du har hentet [eksemplet Embedding for your customer](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), skal du bruge det **klient-id**, du får efter registreringen, så det kan godkendes i Azure AD. Du kan konfigurere prøveappen ved at ændre **clientId** i filen *web.config*.
 
 
-## <a name="step-2---get-an-access-token-from-azure-ad"></a>Trin 2: Få en adgangstoken fra Azure AD
-I applikationen skal du først hente et **adgangstoken** fra Azure AD, før du kan foretage kald til Power BI REST-API'en. Du kan finde flere oplysninger under [Godkend brugere, og få et Azure AD-adgangstoken til din Power BI-app](get-azuread-access-token.md). Da der er forskellige tilhørsforhold til nationale cloudmiljøer, er der særskilte URL-adresser, hvorfra du kan hente et adgangstoken til din tilmelding.
+## <a name="step-2---get-an-access-token-from-azure-ad"></a>Trin 2 – Få et adgangstoken fra Azure AD
+I programmet skal du hente et **adgangstoken** fra Azure AD, før du kan foretage kald til Power BI REST-API'en. Du kan finde flere oplysninger under [Godkend brugere, og få et Azure AD-adgangstoken til din Power BI-app](get-azuread-access-token.md). Da der er forskellige tilhørsforhold til nationale cloudmiljøer, er der særskilte URL-adresser, hvorfra du kan hente et adgangstoken til din tilmelding.
 
 * Government Community Cloud (GCC) – https://login.microsoftonline.com
 
@@ -126,6 +132,8 @@ I applikationen skal du først hente et **adgangstoken** fra Azure AD, før du k
 * Military (DoD) – https://login.microsoftonline.us
 
 * Cloudmiljøet Power BI til Tyskland – https://login.microsoftonline.de
+
+* Cloudmiljøet Power BI til Kina – https://login.microsoftonline.cn
 
 Du kan se eksempler på dette i hver indholdselementopgave i **Controllers\HomeController.cs**.
 
@@ -142,7 +150,7 @@ using Microsoft.PowerBI.Api.V2;
 
 var tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bearer");
 
-// Create a Power BI Client object. It will be used to call Power BI APIs.
+// Create a Power BI Client object. This is used to call the Power BI APIs.
 using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 {
     // Your code to embed items.
@@ -160,7 +168,7 @@ Du kan finde et eksempel på dette i **Controllers\HomeController.cs** i [prøve
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
-// You will need to provide the GroupID where the dashboard resides.
+// You need to provide the GroupID where the dashboard resides.
 ODataResponseListDashboard dashboards = client.Dashboards.GetDashboardsInGroup(GroupId);
 
 // Get the first report in the group.
@@ -175,7 +183,7 @@ using Microsoft.PowerBI.Api.V2.Models;
 
 // To retrieve the tile, you first need to retrieve the dashboard.
 
-// You will need to provide the GroupID where the dashboard resides.
+// You need to provide the GroupID where the dashboard resides.
 ODataResponseListDashboard dashboards = client.Dashboards.GetDashboardsInGroup(GroupId);
 
 // Get the first report in the group.
@@ -194,7 +202,7 @@ Tile tile = tiles.Value.FirstOrDefault();
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
-// You will need to provide the GroupID where the dashboard resides.
+// You need to provide the GroupID where the dashboard resides.
 ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(GroupId);
 
 // Get the first report in the group.
@@ -205,7 +213,7 @@ Report report = reports.Value.FirstOrDefault();
 Du skal oprette et integrationstoken, som kan bruges fra JavaScript API'en. Dette integrationstoken er specifikt for det element, du er ved at integrere. Det betyder, at hver gang du integrere Power BI-indhold, skal du oprette et nyt integrationstoken for det. Du kan finde flere oplysninger, herunder hvilket **adgangsniveau** du skal bruge, i [Integreringstoken](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 > [!IMPORTANT]
-> Da integrerede tokens kun er beregnet til udviklingstest, er antallet af integrerede tokens, der kan genereres fra en Power BI-masterkonto, begrænset. Der [skal købes en kapacitet](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) til integrerede produktionsscenarier. Der er ingen grænse for generering af integrerede tokens, når der er købt en kapacitet.
+> Da integrerede tokens kun er beregnet til udviklingstest, er antallet af integrerede tokens, der kan genereres fra en Power BI-hovedkonto, begrænset. Der [skal købes en kapacitet](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) til integrerede produktionsscenarier. Der er ingen grænse for generering af integrerede tokens, når der er købt en kapacitet.
 
 Du kan finde et eksempel på dette i **Controllers\HomeController.cs** i [prøveappen Embedding for your organization](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 

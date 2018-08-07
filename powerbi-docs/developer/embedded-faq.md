@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/22/2018
-ms.openlocfilehash: f3602f44bd2ab98e115f904baa89429db918637c
-ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
+ms.openlocfilehash: f104d2e9e27cfb9af72813053c0d8cb14aaf2635
+ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39032065"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39359650"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -63,29 +63,32 @@ Power BI Embedded er en række API'er, der er tilgængelige for udviklere til pr
 
 Her er en delvis liste over forskelle, som du kan bruge i hver.
 
-|Udvalgt  |Power BI Embedded<br>(A-SKU'er) |Power BI Premium-kapacitet<br>(EM-SKU'er)  | 
-|---------|---------|---------|
-|Integrer artefakter fra arbejdsområder i en Power BI-app     |Azure-kapacitet |Office 365-kapacitet |
-|Power BI-licens påkrævet for at forbruge rapporter |Nej  |Ja |
-|Forbrug Power BI-rapporter i et integreret program |Ja  |Ja |
-|Forbrug Power BI-rapporter i SharePoint |Nej |Ja |
-|Forbrug Power BI-rapporter i Teams |Nej |Ja |
+| Udvalgt | Power BI Embedded | Power BI Premium-kapacitet | Power BI Premium-kapacitet |
+|----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
+|   | (A-SKU'er) | (EM-SKU'er) | (P-SKU'er) |
+| Integrer artefakter fra arbejdsområder i en Power BI-app | Azure-kapacitet | Office 365-kapacitet | Office 365-kapacitet |
+| Forbrug Power BI-rapporter i en integreret app | Ja | Ja | Ja |
+| Forbrug Power BI-rapporter i SharePoint | Nej | Ja | Ja |
+| Forbrug Power BI-rapporter i Dynamics | Nej | Ja | Ja |
+| Forbrug Power BI-rapporter i Teams | Nej | Ja | Ja |
+| Få adgang til indhold med en GRATIS Power BI-licens på Powerbi.com og i Power BI Mobile | Nej | Nej | Ja |
+| Få adgang til indhold med en GRATIS Power BI-licens integreret i MS Office-apps | Nej | Ja | Ja |
 
 ### <a name="power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario"></a>Power BI omfatter nu tre SKU'er til integration: A-SKU'er og P-SKU'er. Hvilken skal jeg købe til mit scenarie?
 
 |  |A-SKU (Power BI Embedded)  |EM-SKU (Power BI Premium)  |P-SKU (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Køb     |Azure-portal |Office |Office |
-|Use cases |* Integrer indhold i dit eget program |* Integrer indhold i dit eget program<br>* Integrer indhold i andre SaaS-programmer ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Integrer indhold i dit eget program<br>* Integrer indhold i andre SaaS-programmer ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Del indhold med Power BI-brugere via [Power BI-tjenesten](https://powerbi.microsoft.com/en-us/)  |
+|Use cases |* Integrer indhold i dit eget program |* Integrer indhold i dit eget program<br>* Integrer indhold i andre MS Office-apps ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Integrer indhold i dit eget program<br>* Integrer indhold i andre MS Office-apps ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Del indhold med Power BI-brugere via [Power BI-tjenesten](https://powerbi.microsoft.com/en-us/)  |
 |Fakturering |Pr. time |Månedlig |Månedlig |
 |Tilsagn  |Intet tilsagn |Årligt  |Månedligt/årligt |
 |Differentiering |Fuld elasticitet, kan skaleres op / ned, pausestille / genoptage ressourcer i Azure-portalen eller gennem API  |Kan bruges til at integrere indhold i SharePoint Online og Microsoft Teams |Kombiner integration i programmer og brug Power BI-tjenesten i den samme egenskab |
 
 ### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Hvad er forudsætningerne for at oprette en PBIE-kapacitet i Azure?
 
-- Du skal logge på din organisationsmappe (MSA-konti understøttes ikke).
-- Du skal have en Power BI-lejer, dvs. at mindst én bruger i din mappe har tilmeldt sig Power BI. 
-- Du skal have et Azure-abonnement i din organisationsmappe.
+* Du skal logge på din organisationsmappe (MSA-konti understøttes ikke).
+* Du skal have en Power BI-lejer, dvs. at mindst én bruger i din mappe har tilmeldt sig Power BI. 
+* Du skal have et Azure-abonnement i din organisationsmappe.
 
 ### <a name="how-can-i-monitor-capacity-consumption"></a>Hvordan kan jeg overvåge kapacitetsforbrug?
 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: cfc450216202f332f518955d28cb71df6aa0b800
-ms.sourcegitcommit: f2b106b5eb338a64f903e8ce6793bccb07f9440a
+ms.openlocfilehash: 544429528ed51dd2928eb82632f512ff3f7d5afd
+ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39105263"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39359725"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Selvstudium: Integrer en rapport, et dashboard eller et felt i Power BI i et program til din organisation
 I dette selvstudium vises, hvordan du kan integrere en rapport i et program ved hjælp af **Power BI** .NET SDK sammen med **Power BI** JavaScript-API'en, når du integrerer **Power BI** i et program til din organisation. Med **Power BI** kan du integrere rapporter, dashboards eller felter i et program vha. **brugeren ejer dataene**. **Brugeren ejer dataene** gør det muligt for programmet at udvide Power BI-tjenesten.
@@ -413,11 +413,28 @@ function updateEmbedReport() {
 Nu, hvor du er færdig med at udvikle dit program, er tiden kommet til at underbygge dit arbejdsområde med dedikerede kapacitet.
 
 ### <a name="create-a-dedicated-capacity"></a>Opret en dedikeret kapacitet
-Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for indholdet i dit apparbejdsområde. Hvis et arbejdsområde ikke er tildelt en dedikeret kapacitet, anses den som en delt kapacitet. Du kan oprette en dedikeret kapacitet ved hjælp af [Power BI Premium ](../service-admin-premium-purchase.md).
+Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for indholdet i dit apparbejdsområde. Du kan oprette en dedikeret kapacitet ved hjælp af [Power BI Premium ](../service-premium.md).
+
+I tabellen nedenfor kan du se en oversigt over de Power BI Premium-SKU'er, der er tilgængelige i [Office 365](../service-admin-premium-purchase.md).
+
+| Kapacitetsnode | V-kerner i alt<br/>*(Backend + frontend)* | Backend-v-kerner | Frontend-v-kerner | Grænser for DirectQuery/liveforbindelser | Maks. antal sidegengivelser i spidstimen |
+| --- | --- | --- | --- | --- | --- |
+| EM1 |1 v-kerner |0,5 v-kerner, 10 GB RAM |,5 v-kerner |3.75 pr. sekund |150-300 |
+| EM2 |2 v-kerner |1 v-kerne, 10 GB RAM |1 v-kerner |7.5 pr. sekund |301-600 |
+| EM3 |4 v-kerner |2 v-kerner, 10 GB RAM |2 v-kerner |15 pr. sekund |601-1.200 |
+| P1 |8 v-kerner |4 v-kerner, 25 GB RAM |4 v-kerner |30 pr. sekund |1.201-2.400 |
+| P2 |16 v-kerner |8 v-kerner, 50 GB RAM |8 v-kerner |60 pr. sekund |2.401-4.800 |
+| P3 |32 v-kerner |16 v-kerner, 100 GB RAM |16 v-kerner |120 pr. sekund |4.801-9600 |
+| P4 |64 v-kerner |32 v-kerner, 200 GB RAM |32 v-kerner |240 pr. sekund |9601-19200
+| P5 |128 v-kerner |64 v-kerner, 400 GB RAM |64 v-kerner |480 pr. sekund |19201-38400
+
+*Med **_EM-SKU'er_** **kan du** få adgang til indhold med en GRATIS Power BI-licens, når du prøver at integrere med **_MS Office-apps_**, men **du kan ikke få adgang til** indholdet med en GRATIS Power BI-licens, når du bruger **_Powerbi.com_** eller **_Power BI Mobile_**.*
+
+*Med**_P-SKU'er_** **kan du** få adgang til indhold med en GRATIS Power BI-licens, når du prøver at integrere med **_MS Office-apps_**, når du bruger **_Powerbi.com_**, eller når du **_bruger Power BI Mobile_**.*
 
 ### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Tildel et apparbejdsområde til en dedikeret kapacitet
 
-Når der er oprettet en dedikeret kapacitet, kan du tildele dit apparbejdsområde til den dedikerede kapacitet. Gennemgå følgende trin for at udføre denne handling.
+Når du opretter en dedikeret kapacitet, kan du tildele dit apparbejdsområde til den dedikerede kapacitet. Gennemgå følgende trin for at udføre denne handling.
 
 1. I **Power BI-tjenesten** skal du udvide arbejdsområder og vælge ellipsen for det arbejdsområde, du bruger til at integrere dit indhold i. Vælg derefter **Rediger arbejdsområder**.
 
@@ -431,13 +448,17 @@ Når der er oprettet en dedikeret kapacitet, kan du tildele dit apparbejdsområd
 
     ![arbejdsområde knyttet til en kapacitet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
 
+## <a name="admin-settings"></a>Administratorindstillinger
+
+Globale administratorer, eller Power BI-tjenesteadministratorer, kan slå muligheden for at bruge REST-API'erne til eller fra for en lejer. Power BI-administratorer kan angive denne indstilling for hele organisationen eller for enkelte sikkerhedsgrupper. Den er som standard aktiveret for hele organisationen. Det gør du via [Power BI-administratorportalen](../service-admin-portal.md).
+
 ## <a name="next-steps"></a>Næste trin
-I dette selvstudium har du lært, hvordan du integrerer Power BI-indhold i et program ved hjælp af din **Power BI-organisationskonto**. Nu kan du prøve at integrere Power BI-indhold i et program ved hjælp af apps.  Du kan også prøve at integrere Power BI-indhold til tredjepartskunder.
+I dette selvstudium har du lært, hvordan du integrerer Power BI-indhold i et program ved hjælp af din **Power BI-organisationskonto**. Nu kan du prøve at integrere Power BI-indhold i et program ved hjælp af apps.  Du kan også prøve at integrere Power BI-indhold for din kunder.
 
 > [!div class="nextstepaction"]
 > [Integrer fra apps](embed-from-apps.md)
 
 > [!div class="nextstepaction"]
->[Integrer til tredjepartskunder](embed-sample-for-customers.md)
+>[Integrer indhold for dine kunder](embed-sample-for-customers.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

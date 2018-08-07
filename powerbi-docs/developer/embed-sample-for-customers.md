@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: a8833cb6b41ea76d50814975ada6239690a0c196
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 781e34eadfccb89954c0a8548589e1bf89830079
+ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38877412"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39359748"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Selvstudium: Integrer en rapport, et dashboard eller et felt i Power BI i et program til dine kunder
 Med **Power BI Embedded i Azure** kan du integrere rapporter, dashboards eller felter i et program vha. **App owns data**. **App owns data** handler om at have et program, der bruger Power BI som sin integrerede analyseplatform. Dette er normalt et **ISV-udvikler**-scenarie. Som **ISV-udvikler** kan du oprette Power BI-indhold, der viser rapporter, dashboards eller dele i et program, der er fuldt integreret og interaktivt, uden at brugere af programmet behøver at have en Power BI-licens, eller endda uden at være klar over, at der er tale om Power BI. I dette selvstudium vises, hvordan du kan integrere en rapport i et program ved hjælp af **Power BI** .NET SDK sammen med **Power BI** JavaScript-API'en, når du bruger **Power BI Embedded i Azure**  til dine kunder ved hjælp af **appen ejer data**.
@@ -320,16 +320,31 @@ Hvis du vil se et komplet eksempel, hvor JavaScript API'en bruges, kan du bruge 
 
 ## <a name="move-to-production"></a>Flyt til produktion
 
-Nu, hvor du er færdig med at udvikle dit program, er tiden kommet til at underbygge dit arbejdsområde med dedikerede kapacitet. Dedikeret kapacitet er påkrævet for at flytte til produktionen.
+Nu, hvor du er færdig med at udvikle dit program, er tiden kommet til at underbygge dit arbejdsområde med en dedikeret kapacitet. Dedikeret kapacitet er påkrævet for at flytte til produktionen.
 
 ### <a name="create-a-dedicated-capacity"></a>Opret en dedikeret kapacitet
-Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for din kunde. Arbejdsområder, der ikke er knyttet til en dedikeret kapacitet, skal være i en delt kapacitet. Du kan oprette en dedikeret kapacitet ved hjælp af løsningen med [integreret dedikeret kapacitet i Power BI](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity) på Azure.
+Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for din kunde. Du kan købe en dedikeret kapacitet på [Microsoft Azure-portalen](https://portal.azure.com). Du kan finde flere oplysninger om, hvordan du opretter en kapacitet til Power BI Embedded, under [Opret kapacitet til Power BI Embedded på Azure-portalen](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+
+Brug tabellen nedenfor til at bestemme, hvilken kapacitet til Power BI Embedded der passer bedst til dine behov.
+
+| Kapacitetsnode | Kerner i alt<br/>*(Backend + frontend)* | Backendkerner | Frontendkerner | Grænser for DirectQuery/liveforbindelser | Maks. antal sidegengivelser i spidstimen |
+| --- | --- | --- | --- | --- | --- |
+| A1 |1 v-kerner |0,5 kerner, 3 GB RAM |0,5 kerner | 5 pr. sekund |1-300 |
+| A2 |2 v-kerner |1 kerne, 5 GB RAM |1 kerne | 10 pr. sekund |301-600 |
+| A3 |4 v-kerner |2 kerner, 10 GB RAM |2 kerner | 15 pr. sekund |601-1.200 |
+| A4 |8 v-kerner |4 kerner, 25 GB RAM |4 kerner |30 pr. sekund |1.201-2.400 |
+| A5 |16 v-kerner |8 kerner, 50 GB RAM |8 kerner |60 pr. sekund |2.401-4.800 |
+| A6 |32 v-kerner |16 kerner, 100 GB RAM |16 kerner |120 pr. sekund |4.801-9600 |
+
+**_Med A-SKU'er kan du ikke få adgang til Power BI-indhold med en GRATIS Power BI-licens._**
 
 PRO-licenser med integrerede tokens er kun beregnet til udviklingstest, så antallet af integrerede tokens, der kan genereres fra en Power BI-masterkonto, er begrænset. Du skal købe en dedikeret kapacitet for at kunne integrere i et produktionsmiljø. Der er ingen grænse for, hvor mange integrerede tokens, du kan generere vha. en dedikeret kapacitet. Gå til [Tilgængelige funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) for at undersøge den brugsværdi, der angiver brugen af integrerede tokens i procent. Forbrugsbeløbet er baseret på overordnet konto.
 
+Du kan finde flere oplysninger i [Hvidbogen om planlægning af analysekapacitet til Embedded](https://aka.ms/pbiewhitepaper).
+
 ### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Tildel et apparbejdsområde til en dedikeret kapacitet
 
-Når der er oprettet dedikeret kapacitet, kan du tildele apparbejdsområdet til den dedikerede kapacitet. Gennemgå følgende trin for at udføre denne handling.
+Når du opretter en dedikeret kapacitet, kan du tildele dit apparbejdsområde til den dedikerede kapacitet. Gennemgå følgende trin for at udføre denne handling.
 
 1. I **Power BI-tjenesten** skal du udvide arbejdsområder og vælge ellipsen for det arbejdsområde, du bruger til at integrere dit indhold i. Vælg derefter **Rediger arbejdsområder**.
 
@@ -339,6 +354,14 @@ Når der er oprettet dedikeret kapacitet, kan du tildele apparbejdsområdet til 
 
     ![Tildel dedikeret kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
-Hvis du har flere spørgsmål om Power BI Embedded, kan du gå til siden med [ofte stillede spørgsmål](embedded-faq.md).  Hvis du har problemer med Power Bi Embedded i dit program, kan du gå til siden med [fejlfinding](embedded-troubleshoot.md).
+3. Efter du har valgt **Gem**, burde du se en **rombe** ud for navnet på apparbejdsområdet.
+
+    ![arbejdsområde knyttet til en kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
+
+## <a name="next-steps"></a>Næste trin
+I dette selvstudium har du lært, hvordan du integrerer Power BI-indhold i en app for dine kunder. Du kan også prøve at integrere Power BI-indhold til din organisation.
+
+> [!div class="nextstepaction"]
+>[Integrer til din organisation](embed-sample-for-your-organization.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

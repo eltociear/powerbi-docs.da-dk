@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1e380a6821db7207d14e719fa5e070af38196b97
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 135e6ff76a0972bdedbff3eaf7ab1222f82a94ab
+ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34286928"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39331163"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Brug udsnitsværktøjet til numerisk område i Power BI Desktop
 Med **udsnitsværktøjet til numerisk område** kan du anvende alle former for filtre på alle numeriske kolonner i din datamodel. Du kan vælge at filtrere **mellem** tal, **mindre end eller lig med** et tal eller **større end eller lig med** et tal. Det lyder måske meget enkelt, men det er en effektiv måde at filtrere dine data på.
@@ -53,7 +53,7 @@ Og endelig, hvis vi vælger **Større end eller lig med** forsvinder højre hån
 
 ## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>Fastgør til hele tal ved hjælp af udsnitsværktøj til numerisk område
 
-Udsnitsværktøjet til numerisk område fastgøres til heltal, medmindre det er et decimalområde. Dermed kan udsnitsværktøjet nemt afstemme to hele tal. 
+Et udsnitsværktøj til et numerisk område fastgøres til heltal, hvis datatypen for det underliggende felt er **Heltal**. Dermed kan udsnitsværktøjet nemt afstemme to hele tal. Felter af typen **Decimaltal** kan indtastes eller vælges som brøkdele af et tal. Den formatering, der anvendes i tekstfeltet, matcher den formatering, der er anvendt i feltet, selvom du kan indtaste eller vælge mere præcise tal.
 
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
@@ -61,3 +61,4 @@ Følgende begrænsninger og overvejelser, der aktuelt gælder for **udsnitsværk
 
 * **Udsnitsværktøjet til numerisk område** filtrerer i øjeblikket alle underliggende rækker i dataene, ingen aggregerede værdier. Hvis f.eks. feltet *Sales Amount* bruges, filtreres der efter alle transaktioner, der er baseret på *Sales Amount*, ikke summen af *Sales Amount* for hvert datapunkt i et visuelt element.
 * Den fungerer i øjeblikket ikke sammen med målinger.
+* Du kan skrive et vilkårligt tal i tekstfelterne i et numerisk udsnitsværktøj, selvom det er uden for området af værdier i den underliggende kolonne. Her kan du konfigurere filtre, hvis du ved, at dataene kan blive ændret i fremtiden.

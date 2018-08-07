@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: b26fbfccc3b0a98761ecc1444af4e535339c96de
-ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
+ms.openlocfilehash: f07b5174d031c79f4d8f232c49836b54d95621f1
+ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39210278"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39256026"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Tilgængelighed i Power BI Desktop-rapporter
 Power BI indeholder funktioner, der gør det nemmere for personer med et handicap at bruge og interagere med Power BI-rapporter. Funktionerne omfatter muligheden for at bruge en rapport ved hjælp tastaturet eller en skærmlæser, bruge tabulatortasten til at sætte fokus på forskellige objekter på en side og bruge markører i visualiseringer.
@@ -40,6 +40,8 @@ Du kan skifte fokus mellem rapportens sidefaner eller objekter på en given rapp
 * Når der er fokus på en indlæst *rapportside*, skal du bruge *tabulatortasten* til at skifte fokus til de enkelte objekter på siden, som inkluderer alle tekstfelter, billeder, figurer og diagrammer. Skærmlæseren læser objektets type, objektets titel, hvis den har en sådan, og en beskrivelse af objektet, hvis rapportforfatteren har angivet det. 
 
 Hvis du, mens du navigere mellem visuelle elementer, vil interagere med dem yderligere, kan du trykke på **Alt+Skift+F10** for at flytte fokus til overskriften, der indeholder forskellige indstillinger, herunder sortering, eksport af de underliggende data for diagrammet og fokustilstand. 
+
+![Tryk på Alt+Skift+F10 i Power BI Desktop for at flytte fokus til den visuelle header](media/desktop-accessibility/accessibility_08.png)
 
 Du kan trykke på **Alt+Skift+F11** for at få vist en tilgængelighedsversion af vinduet *Vis data*. Med det kan du udforske data, der bruges i visualiseringen i en HTML-tabel, ved hjælp af de samme tastaturgenveje, du normalt anvender med din skærmlæser. 
 

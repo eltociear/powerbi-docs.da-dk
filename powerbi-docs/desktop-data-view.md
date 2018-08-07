@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/04/2018
+ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 2caa22152580d3de8c6ede585c43dedf4e624f88
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: fad7b8453b6d5d29a1f6c5d9d9ed49b0a8b8a66f
+ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813727"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39280334"
 ---
 # <a name="data-view-in-power-bi-desktop"></a>Datavisning i Power BI Desktop
 Med **Datavisning** kan du få hjælp til at undersøge, udforske og forstå data i din **Power BI Desktop**-model. Det er forskelligt fra den måde, du ser tabeller, kolonner og data på i **Forespørgselseditor**. Med Datavisning ser du dine data, *efter* de er blevet indlæst i modellen.
@@ -46,4 +46,5 @@ Du kan også filtrere og sortere data i **Datavisning**. I hver kolonne vises et
 
 Du kan filtrere de enkelte værdier, eller du kan bruge avanceret filtrering på basis af dataene i kolonnen. 
 
-
+> [!NOTE]
+> Når der oprettes en Power BI-model med en anden landestandard end den, du aktuelt anvender i brugergrænsefladen (modellen blev f.eks. oprettet med sproget engelsk (USA), og du får vist den på spansk), vises søgefeltet ikke i brugergrænsefladen for Datavisning for andet end tekstfelter.
