@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: fde23a47bb0f4034e213a652d60241ff625921d3
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: bec5bb108bc210f268db0392370e15d89c0352b7
+ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38877325"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39330207"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Almindelige forespørgselsopgaver i Power BI Desktop
 Når du arbejder i vinduet **Forespørgselseditor** i Power BI Desktop, er der nogle få opgaver, der udføres jævnligt. Dette dokument beskriver disse opgaver og indeholder links til flere oplysninger. 
@@ -31,7 +31,7 @@ Følgende almindelige forespørgselsopgaver vises her:
 
 Vi vil bruge dataforbindelser til at udføre disse opgaver. Du kan hente eller oprette forbindelse til disse data, hvis du vil gennemgå opgaverne selv.
 
-Den første dataforbindelse er en Excel-projektmappe. Den anden er en webressource, som også bruges i andet indhold i hjælpen til Power BI Desktop, og som kan åbnes her:
+Den første dataforbindelse er en Excel-projektmappe, som du kan downloade fra [dette link](http://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx). Den anden er en webressource, som også bruges i andet indhold i hjælpen til Power BI Desktop, og som kan åbnes her:
 
 [*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
