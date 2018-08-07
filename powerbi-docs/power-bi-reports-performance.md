@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: v-mamcge
 LocalizationGroup: Reports
-ms.openlocfilehash: 58ae70553264b8055603da66a4cfd71b5c74a3e9
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: b3bb1e6d7d7ce5b3fdc050f5df10af9f61acac92
+ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "37598842"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582565"
 ---
 # <a name="power-bi-performance-best-practices"></a>Power BI-ydeevne – bedste praksis 
 Denne artikel giver vejledning i at oprette hurtige og pålidelige rapporter i Power BI.  
@@ -24,8 +24,8 @@ Denne artikel giver vejledning i at oprette hurtige og pålidelige rapporter i P
 
 Jo flere data et visuelt element skal vise, jo langsommere er indlæsningen af det pågældende visuelle element. Dette princip kan synes indlysende, men glemmes dog let. Et eksempel: Lad os antage, at du har et stort datasæt. Oven i det opretter du en rapport med en tabel af tabellen. Slutbrugere benytter udsnitsværktøj på siden for at få adgang til de ønskede rækker – de er typisk kun interesserede i et fåtal af rækker.
 
-En hyppig fejl er, at standardvisningen af tabellen er ufiltreret – dvs. af samtlige 100M+ rækker. Dataene til disse rækker skal indlæses i hukommelsen og dekomprimeres ved hver opdatering. Dette belaster hukommelsen enormt. Løsningen: reducer det maksimale antal elementer, som tabellen viser, ved hjælp af filteret "Top N". Det maksimale antal elementer kan være meget større, end brugeren har brug for, f.eks. 10.000. Som et resultat heraf er slutbrugerens oplevelse uændret, men rapportens brug af hukommelsen faldt med flere ordrers størrelse, og ydeevnen blev forbedret tilsvarende. 
- 
+En hyppig fejl er, at standardvisningen af tabellen er ufiltreret – dvs. af samtlige 100M+ rækker. Dataene til disse rækker skal indlæses i hukommelsen og dekomprimeres ved hver opdatering. Dette belaster hukommelsen enormt. Løsningen: reducer det maksimale antal elementer, som tabellen viser, ved hjælp af filteret "Top N". Det maksimale antal elementer kan være meget større, end brugeren har brug for, f.eks. 10.000. Som et resultat heraf er slutbrugerens oplevelse uændret, men rapportens brug af hukommelsen faldt med flere ordrers størrelse, og ydeevnen blev forbedret tilsvarende.
+
 En tilsvarende tilgang til ovenstående anbefales stærkt til alle visuelle elementer på dine rapporter. Stil dig selv spørgsmålet, om alle dataene i dette visuelle element er nødvendige. Kan mængden af de viste data i det visuelle element på nogen måde begrænses via filtrering uden stort set at påvirke slutbrugerens oplevelse? Bemærk, at især tabeller kan være meget dyre. 
  
 ## <a name="limit-visuals-on-report-pages"></a>Begræns visuelle elementer på rapportsider 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 9366eff71e09b1f6c71c1f2519feb3d2392e3c58
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: 452226f8d5b8e0ca05fc4d9e81355c7a4c10e923
+ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092638"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582632"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Opret forbindelse til Acumatica med Power BI
 Med Power BI Acumatica-indholdspakken kan du hurtigt få indsigt i dine data med salgsmuligheder. Power BI henter dine data, herunder salgsmuligheder og kunder og opretter derefter et standarddashboard og relaterede rapporter, der er baseret på disse data.
@@ -37,7 +37,7 @@ Opret forbindelse til [Acumatica-indholdspakken](https://app.powerbi.com/getdata
    ![](media/service-connect-to-acumatica/acumatica.png)
 4. Angiv dit Acumatica OData-slutpunkt. Et OData-slutpunkt gør det muligt for et eksternt system at anmode om data fra Acumatica. Acumatica OData-slutpunktet er formateret som følger og skal bruge HTTPS:
    
-     https://[wedstedsdomæne]/OData/[firmanavn]
+     `https://[sitedomain]/odata/[companyname]`
    
    Firmanavnet er kun påkrævet, hvis du har en installation med flere firmaer. Der findes flere oplysninger om at finde denne parameter i kontoen til Acumatica nedenfor.
    
