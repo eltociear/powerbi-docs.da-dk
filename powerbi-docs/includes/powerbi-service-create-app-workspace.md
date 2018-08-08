@@ -1,4 +1,4 @@
-1. Start med at oprette arbejdsområdet. Vælg **Arbejdsområder** > **Opret apparbejdsområde**.
+1. Start med at oprette arbejdsområdet. Vælg **Arbejdsområder** > **Opret apparbejdsområde**. 
    
      ![Opret apparbejdsområde](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
    

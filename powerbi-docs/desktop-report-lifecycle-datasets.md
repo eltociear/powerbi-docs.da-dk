@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/02/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b1bfe0e35015cd32024b381a1859330cd8f1862a
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 4c4fbb5ea019ca439ecf063c91a69348ef33bbc2
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721104"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39623993"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Opret forbindelse til datasæt i Power BI-tjenesten fra Power BI Desktop
 Du kan oprette en direkte forbindelse til et delt datasæt i Power Bi-tjenesten og oprette mange forskellige rapporter fra det samme datasæt. Dette betyder, at du kan forfine din datamodel i Power Bi Desktop, udgive den til Power BI-tjenesten, hvorefter du og andre kan oprette mange forskellige rapporter (i separate .pbix-filer) fra den samme fælles datamodel. Denne funktion kaldes **Direkte forbindelse til Power BI-tjeneste**.
@@ -37,7 +37,7 @@ Alle er vilde med hendes rapport og datasæt, og det er her, problemerne begynde
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Opret forbindelse til et Power BI-datasæt ved brug af en direkte forbindelse
 Når Anna har oprettet sin rapport (og oprettet datasættet, som den er baseret på), udgiver hun den til **Power BI-tjenesten**, og den vises på hendes teams arbejdsområde i Power BI-tjenesten. Nu kan alle på hendes arbejdsområde se og bruge rapporten.
 
-Hvis du vil vide mere om arbejdsområder, kan du se [apparbejdsområder](service-create-distribute-apps.md#app-workspaces).
+Hvis du vil vide mere om arbejdsområder, kan du se [apparbejdsområder](service-create-workspaces.md).
 
 Andre medlemmer af Annas arbejdsområde kan nu oprette en direkte forbindelse til hendes delte datamodel (ved at bruge funktionen **Direkte forbindelse til Power BI-tjeneste**) og oprette deres egne unikke rapporter fra *hendes originale datasæt*.
 
