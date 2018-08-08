@@ -2,19 +2,19 @@
 title: Føj rækker til en tabel
 description: Se, hvordan du overfører data – føj rækker til en Power BI-tabel
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: b6fdd950b77dedf9f5180f7cbc90d40c786051c7
-ms.sourcegitcommit: 8ee0ebd4d47a41108387d13a3bc3e7e2770cbeb8
+ms.date: 08/01/2018
+ms.openlocfilehash: 7608d9098177805849ec61f0427ee5bc662d58c9
+ms.sourcegitcommit: 146b505b42f0d95d3ee73762441a43b6f3b3a891
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34812531"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39475654"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Trin 5: Føj rækker til en Power BI-tabel
 Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
@@ -307,9 +307,10 @@ Nedenfor kan du se den [komplette kodeliste](#code).
         }
     }
 
+Selvom vi angiver, at vi **_//Henter det første id_** i ovenstående kode, er den korrekte fremgangsmåde at søge i datasættet efter navn.
+
 ## <a name="next-steps"></a>Næste trin
 [Send data til et Power BI-dashboard](walkthrough-push-data.md)  
 [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
 [Power BI REST-API-reference](https://docs.microsoft.com/rest/api/power-bi/)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-

@@ -10,12 +10,12 @@ ms.topic: reference
 ms.date: 05/21/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 14b5f3d4b571df8ae672ee9731ed97555c476abd
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 7c970cd28a50dc15a7b721107b17ceade24c3bb2
+ms.sourcegitcommit: 146b505b42f0d95d3ee73762441a43b6f3b3a891
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 08/02/2018
-ms.locfileid: "34456016"
+ms.locfileid: "39475746"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datatyper i Power BI Desktop
 I denne artikel beskrives de datatyper, der understøttes i Power BI Desktop, og DAX-udtryk (Data Analysis Expressions). 
@@ -45,6 +45,11 @@ Power BI Desktop understøtter tre taltyper:
 **Fixed Decimal Number** – har en fast placering af decimaltegnet. Decimaltegnet har altid fire cifre til højre, og gør det muligt at have 19 signifikante cifre.  Den største værdi, den kan repræsentere, er 922.337.203.685.477,5807 (positiv eller negativ).  Typen med faste decimaltal er nyttig i de tilfælde, hvor afrunding kan medføre fejl.  Når du arbejder med mange tal, der har små decimalværdier, kan de nogle gange blive akkumuleret og resultere i, at et tal bliver lidt forkert.  Eftersom værdierne efter fire cifre til høre for decimaltegnet afkortes, kan typen med faste decimaltal forhindre denne type fejl.   Hvis du kender SQL Server, svarer denne datatype til SQL Servers decimal (19.4), eller valutadatatypen i Power Pivot. 
 
 **Whole Number** – repræsenterer en 64-bit (8-byte) heltalsværdi. Eftersom der er tale om et heltal, er der ingen cifre til højre for decimaltegnet. Værdien muliggør 19 cifre; positive eller negative heltal mellem -9.223.372.036.854.775.808 (-2^63) og 9.223.372.036.854.775.807 (2^63-1).  Den kan repræsentere det størst mulige tal for de forskellige numeriske datatyper.  Som med typen til faste decimaltal kan typen til heltal være nyttig i de tilfælde, hvor du skal kunne kontrollere afrundingen. 
+
+> [!NOTE]
+>  Datamodellen i Power BI Desktop understøtter 64-bit heltalsværdier, men det største tal, de visuelle elementer kan udtrykke sikkert er 9.007.199.254.740.991 (2^53-1) på grund af JavaScript-begrænsninger. Hvis du arbejder med højere tal i din datamodel, kan du reducere størrelsen via beregninger, før du føjer dem til et visuelt element 
+> 
+>
 
 ### <a name="datetime-types"></a>Dato/klokkeslæt-typer
 Power BI Desktop understøtter fem dato/klokkeslæt-datatyper i forespørgselsvisningen og tre i rapportvisningen og modellen.   Både Date/Time/Timezone (Dato/klokkeslæt/tidzone) og Duration (Varighed) konverteres ved indlæsning i modellen.

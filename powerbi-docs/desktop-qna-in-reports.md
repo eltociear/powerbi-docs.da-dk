@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8fd04b6c7fe83e7047d2eaecf4fb4b0e564f0e9f
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: a14ed61d8d7e72090a034319052600cb429e8c16
+ms.sourcegitcommit: 146b505b42f0d95d3ee73762441a43b6f3b3a891
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329632"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39475723"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Brug Spørgsmål og svar i Power BI Desktop til forespørgsler på et naturligt sprog
 Det er effektivt, når du bruger almindelige udtryk og naturligt sprog til dataforespørgsler. Endnu mere effektiv er det, når dataene svarer dig, hvilket Spørgsmål og svar i **Power BI Desktop** gør muligt for dig.
@@ -24,6 +24,11 @@ For at aktivere Spørgsmål og svar med henblik på at kunne fortolke den store 
 
 > [!NOTE]
 > Spørgsmål og svar er kun tilgængelig, når du arbejder med en model, der indeholder **importerede** data. Direkte forbindelser til SSAS- og DirectQuery-modeller understøttes ikke.
+>
+>
+
+> [!NOTE]
+> Spørgsmål og svar kræver følgende C runtime-opdatering, hvis du bruger en ældre version af Windows end Windows 10. Du kan prøve at installere vigtige opdateringer fra Windows Update eller installere den påkrævede komponent manuelt fra Microsoft (KB2999226). https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
 >
 >
 

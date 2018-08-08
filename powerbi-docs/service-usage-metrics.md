@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 002c1c256a0d78601d112e4ee34326c0914f9ac1
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: d0449087715b1fac82276810397167d2a5de8f28
+ms.sourcegitcommit: 9c0f990ffb66256eb342af8528987bb108069af6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "37599683"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501402"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Forbrugsdata for dashboards og rapporter
 Hvis du opretter dashboards og rapporter, kan forbrugsdata hjælpe dig med at forestå deres indvirkning. Når du kører enten forbrugsdata for dashboards eller rapporter, opdager du, hvordan disse dashboards og rapporter anvendes i hele organisationen: Hvad bruges, af hvem og til hvilke formål.  
@@ -149,6 +149,10 @@ Rapporter med forbrugsdata er en funktion, som Power BI- eller Office 365-admini
 Brugerspecifikke data er som standard aktiveret for forbrugsdata, og kontooplysninger om oprettere af indhold indgår i rapporten med forbrugsdata. Hvis du ikke vil medtage disse oplysninger for nogle eller alle brugere, kan du deaktivere funktionen for nærmere angivne sikkerhedsgrupper eller for en hel organisation. Kontooplysninger vises derefter i rapporten som *Ikke-navngivet*.
 
 Når administratorer deaktiverer forbrugsdata for hele organisationen, kan de bruge indstillingen til **sletning af alt eksisterende indhold i forbrugsdata** for at slette alle eksisterende rapporter og dashboardfelter, der blev oprettet ved hjælp af rapporter og datasæt med forbrugsdata. Denne indstilling fjerner al adgang til forbrugsdata for alle brugere i organisationen, som muligvis allerede anvender dem. Vær forsigtig, fordi sletning af eksisterende indhold i forbrugsdata ikke kan fortrydes.
+
+## <a name="usage-metrics-in-national-clouds"></a>Forbrugsværdier i nationale cloudmiljøer
+
+Power BI fås med forskellige nationale cloudmiljøer. Disse skyløsninger giver den samme sikkerhed, privatlivsbeskyttelse, overholdelse af standarder og gennemsigtighed som den globale version af Power BI kombineret med en unik lokal model, der lever op til lokale retningslinjer for levering af tjenester, dataopbevaring, adgang og kontrol. Forbrugsværdier er ikke tilgængelige i nationale cloudmiljøer pga. denne unikke model til lokale forordninger. Du kan få flere oplysninger under [nationale cloudmiljøer](https://powerbi.microsoft.com/en-us/clouds/).
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 Spørgsmål: Jeg kan ikke køre forbrugsdata på et dashboard eller en rapport    

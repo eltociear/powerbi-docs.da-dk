@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-sktopms.date: 06/28/2018
+sktopms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 08772389df36e72e4f8c83239ba396773070f61a
-ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
+ms.openlocfilehash: 5f117bdeb4e37986884c6a1021db1f361bdcddd3
+ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37145381"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582659"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Ofte stillede spørgsmål om Power BI
 * Hvis du har andre spørgsmål, kan du [prøve at spørge Power BI-community'et](http://community.powerbi.com/).
@@ -47,8 +47,8 @@ Kun en webbrowser og arbejdsmailadresse. Du kan tilmelde dig med en .gov- og .mi
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Hvorfor skal jeg logge på med min arbejdsmail?
 Power BI understøtter ikke mailadresser, der leveres af forbrugermailtjenester eller udbydere af telekommunikation. Få mere at vide om [den selvbetjente tilmeldingsproces til Power BI](service-self-service-signup-for-power-bi.md).
 
-## <a name="is-government-academic-and-non-profit-pricing-available-for-power-bi"></a>Tilbydes Power BI til en pris for offentlige myndigheder, uddannelsesinstitutioner eller almennyttige organisationer?
-Ja, en pris til almennyttige organisationer tilbydes ved køb direkte hos Microsoft. Du kan få mere at vide og tilmelde dig på [Microsoft Product Donation](https://www.microsoft.com/about/philanthropies/product-donations/products/powerbi/)-webstedet. Priser til offentlige myndigheder og uddannelsesinstitutioner tilbydes gennem MOSP/Direct, EA og åbne licenseringsprogrammer. Priser til offentlige myndigheder fås også i syndikering. 
+## <a name="is-government-academic-and-nonprofit-pricing-available-for-power-bi"></a>Tilbydes Power BI til en pris for offentlige myndigheder, uddannelsesinstitutioner eller nonprofitorganisationer?
+Ja, en pris til nonprofitorganisationer tilbydes ved køb direkte hos Microsoft. Du kan få mere at vide og tilmelde dig på [Microsoft Nonprofits](https://www.microsoft.com/en-us/nonprofits/power-bi)-webstedet. Priser til offentlige myndigheder og uddannelsesinstitutioner tilbydes gennem MOSP/Direct, EA og åbne licenseringsprogrammer. Priser til offentlige myndigheder fås også i syndikering. 
 
 ## <a name="is-power-bi-available-on-premises"></a>Fås Power BI til det lokale miljø?
 Power BI-tjenesten [https://powerbi.com](https://powerbi.com) fås ikke som en privat, intern cloudtjeneste. Men du har tre andre muligheder for at få vist og arbejde med data i det lokale miljø. 

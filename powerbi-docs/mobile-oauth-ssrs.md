@@ -9,19 +9,19 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2018
 ms.author: maghan
-ms.openlocfilehash: ba8a0c6868e84cf9d675fff8f69a34b4befc9b61
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3777d082d8e0d166abadd2ab89035d6895421f24
+ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34852204"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39415340"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Brug OAuth til at oprette forbindelse til Power BI-rapportserver og SSRS
 Få mere at vide om, hvordan du konfigurerer dit miljø til at understøtte OAuth-godkendelse med Power BI-mobilappen for at oprette forbindelse til Power BI-rapportserver og SQL Server Reporting Services 2016 eller nyere.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
 
-Du kan bruge OAuth til at oprette forbindelse til Power BI-rapportserver og Reporting Services for at få vist mobilrapporter eller KPI'er. Windows Server 2016 indeholder forbedringer til rollen Web Application Proxy (WAP) for at tillade denne type godkendelse. Bemærk, at denne konfiguration ikke understøtter visning af Power BI-rapporter i Power BI-mobilapps. Du kan dog se dem i en browser på en mobilenhed. Hvis du vil have vist Power BI-rapporter i mobilappen, skal du bruge Windows-godkendelse.
+Du kan bruge OAuth til at oprette forbindelse til Power BI-rapportserver og Reporting Services for at få vist mobilrapporter eller KPI'er. Windows Server 2016 indeholder forbedringer til rollen Web Application Proxy (WAP) for at tillade denne type godkendelse. Bemærk, at visning af Power BI-rapporter, der hostes på Power BI-rapportserver vha. WAP-godkendelse, ikke understøttes officielt på nuværende tidspunkt.
 
 ## <a name="requirements"></a>Krav
 Windows Server 2016 er påkrævet til WAP- (Web Application Proxy) og ADFS-serverne (Active Directory Federation Services). Du behøver ikke at have et Windows 2016-domæne på funktionsniveau.
