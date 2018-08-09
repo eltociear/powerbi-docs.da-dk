@@ -112,8 +112,6 @@
                   href: service-install-use-apps.md
                 - name: Find og opret forbindelse til en organisationsindholdspakke
                   href: service-organizational-content-pack-find-and-open.md
-                - name: Del dashboards og rapporter
-                  href: service-share-dashboards.md
                 - name: Kom i gang vha. spørgsmål og svar om Power BI
                   href: power-bi-visualization-introduction-to-q-and-a.md
             - name: Opret forbindelse til tjenester
@@ -306,9 +304,15 @@
                   href: power-bi-q-and-a-linguistic-schema.md
             - name: Del dit arbejde
               items:
-                - name: Hvordan kan jeg samarbejde og dele dashboards og rapporter?
+                - name: Hvordan samarbejder og deler jeg?
                   href: service-how-to-collaborate-distribute-dashboards-reports.md
-                - name: Opret og distribuer apps med dashboards og rapporter
+                - name: Del dashboards og rapporter
+                  href: service-share-dashboards.md
+                - name: Opret apparbejdsområder
+                  href: service-create-workspaces.md
+                - name: Opret de nye arbejdsområder (eksempelvisning)
+                  href: service-create-the-new-workspaces.md
+                - name: Publicer apps med dashboards og rapporter
                   href: service-create-distribute-apps.md
                 - name: Del en filtreret rapport
                   href: service-share-reports.md
