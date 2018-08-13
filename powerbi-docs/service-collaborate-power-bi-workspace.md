@@ -3,24 +3,25 @@ title: Samarbejd i dit Power BI-apparbejdsområde
 description: Læs om at samarbejde på Power BI Desktop-filer i apparbejdsområdet og med Office 365-tjenester som f.eks. deling af filer på OneDrive for Business, samtaler i Exchange, kalender og opgaver.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: cab0f0513d73a865407574d43f8cd65ca5d75a9e
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d059e8bb476f9862c372d9565581d58b336e81db
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34245448"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39623924"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Samarbejd i dit Power BI-apparbejdsområde
-Power BI-apparbejdsområder er fantastiske steder, hvor du kan samarbejde med dine kollegaer på dashboards, rapporter og datasæt om at oprette *apps*. Der er, hvad arbejdsområder er udviklet til – samarbejde. Når du er færdig med at samarbejde på dine dashboards og rapporter med kollegaer, pakker du det som en app og distribuerer den. Læs mere om [oprettelse af apps og apparbejdsområder i Power BI](service-create-distribute-apps.md). 
+Power BI-apparbejdsområder er fantastiske steder, hvor du kan samarbejde med dine kollegaer på dashboards, rapporter og datasæt om at oprette *apps*. Samarbejde slutter ikke med arbejdsområder i Power BI. Office 365 tilbyder andre gruppetjenester som f.eks. deling af filer på OneDrive for Business, samtaler i Exchange, delte kalendere og opgaver osv. Læs mere om [grupper i Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
 
-Samarbejde slutter ikke med arbejdsområder i Power BI. Office 365 tilbyder andre gruppetjenester som f.eks. deling af filer på OneDrive for Business, samtaler i Exchange, delte kalendere og opgaver osv. Læs mere om [grupper i Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
+> [!NOTE]
+> Prøveversionen af den nye arbejdsområdeoplevelse ændrer relationen mellem Power BI-arbejdsområder og Office 365-grupper. Du opretter ikke automatisk en Office 365-gruppe, hver gang du opretter et af de nye arbejdsområder. Læs om [oprettelse af nye arbejdsområder (prøveversion)](service-create-the-new-workspaces.md)
 
 Apparbejdsområder er kun tilgængelige med [Power BI Pro](service-free-vs-pro.md).
 

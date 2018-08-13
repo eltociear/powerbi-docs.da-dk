@@ -3,24 +3,23 @@ title: 'Organisationsindholdspakker: administrer og opdater'
 description: Læs om at administrere, opdatere og slette organisationsindholdspakker i Power BI.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 45e9207ffa666e33b298e82bbc78e07c226b780e
-ms.sourcegitcommit: f6fb681ec85313eb7b450edb8f190e9e7afbabca
+ms.openlocfilehash: d00ad254e25f8806f6cf2bc944e849e32167b1f8
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39182788"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624315"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Administrer, opdater og slet organisationsindholdspakker
 > [!NOTE]
-> Har du hørt om de nye *apps*? Apps er den nye måde at sende indhold til store målgrupper på i Power BI. Vi planlægger snart at fraråde organisationsindholdspakker, og vi anbefaler, at der bruges apps i stedet. Få [mere at vide om apps](service-install-use-apps.md).
-> 
+> Du kan ikke oprette organisationsindholdspakker eller installere dem i prøveversionen af nye arbejdsområdeoplevelser. Nu er det et godt tidspunkt at opgradere dine indholdspakker til apps, hvis du ikke er startet endnu. Få [mere at vide om den nye arbejdsområdeoplevelse](service-create-the-new-workspaces.md).
 > 
 
 Du kan pakke og dele dine dashboards, rapporter, Excel-projektmapper og datasæt med dine kollegaer som [organisationsindholdspakker](service-organizational-content-pack-introduction.md). Dine kollegaer kan bruge dem, som de er, eller de kan oprette deres egne kopier.

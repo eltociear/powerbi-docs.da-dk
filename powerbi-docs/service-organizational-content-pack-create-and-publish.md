@@ -3,33 +3,30 @@ title: Opret og publicer en organisationsindholdspakke – PowerBi
 description: I dette selvstudium opretter du en organisationsindholdspakke, begrænser adgangen til en bestemt gruppe og publicerer den i biblioteket til din organisationsindholdspakke på Power BI.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/08/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b95ff0d9102377b6aeb59488a565f7bcb9a65566
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 46cd5e2730d1b0e90fe37a93bbd4340ffb708348
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598592"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624246"
 ---
 # <a name="create-and-publish-a-power-bi-organizational-content-pack-tutorial"></a>Opret og publicer en organisationsindholdspakke til Power BI (selvstudium)
-> [!NOTE]
-> Har du hørt om de nye *apps*? Apps er den nye måde at sende indhold til store målgrupper på i Power BI. Vi planlægger snart at fraråde organisationsindholdspakker, og vi anbefaler, at der bruges apps i stedet. Få [mere at vide om apps](service-install-use-apps.md).
-> 
-> 
 
 I dette selvstudium opretter du en organisationsindholdspakke, giver adgang til en bestemt gruppe og publicerer den i biblioteket til din organisationsindholdspakke på Power BI.
 
 Oprettelse af indholdspakker adskiller sig fra deling af dashboards eller samarbejde på dem i en gruppe. Læs [Hvordan kan jeg samarbejde på og dele dashboards og rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md) for at finde det bedste valg til din situation.
 
+Oprettelse af en organisationsindholdspakke kræver en [Power BI Pro-konto](https://powerbi.microsoft.com/pricing) til dig og dine kollegaer. 
+
 > [!NOTE]
-> Oprettelse af en organisationsindholdspakke kræver en [Power BI Pro-konto](https://powerbi.microsoft.com/pricing) til dig og dine kollegaer.
-> 
+> Du kan ikke oprette eller installere organisationsindholdspakker i prøveversionen af nye arbejdsområdeoplevelser. Nu er det et godt tidspunkt at opgradere dine indholdspakker til apps, hvis du ikke er startet endnu. Få [mere at vide om den nye arbejdsområdeoplevelse](service-create-the-new-workspaces.md).
 > 
 
 Antag, at du er Release Manager hos Contoso, og at du er ved at gøre klar til lancering af et nyt produkt.  Du har oprettet et dashboard med rapporter, som du vil dele med de andre medarbejdere, der administrerer lanceringen. Du vil gerne samle dashboardet og rapporterne som en løsning, som dine kollegaer kan bruge. 

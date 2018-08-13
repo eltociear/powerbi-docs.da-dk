@@ -3,22 +3,25 @@ title: Opret forbindelse til filer i OneDrive til et Power BI-apparbejdsområde
 description: Læs om at lagre og oprette forbindelse til dine Excel-, CSV- og Power BI Desktop-filer på OneDrive til dit Power BI-apparbejdsområde.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukasz
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e1161e5e461b3b32e549c69cfa7987c8f799e0fd
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b1c68312f60761964194d7be810b5ee490785cb2
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34245333"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624108"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-app-workspace"></a>Opret forbindelse til filer, der lagres i OneDrive til dit Power BI-apparbejdsområde
 Når du har [oprettet et apparbejdsområde i Power BI](service-create-distribute-apps.md), kan du gemme dine Excel-, CSV- og Power BI Desktop-filer på OneDrive for Business til dit Power BI-apparbejdsområde. Du kan fortsætte med at opdatere de filer, du lagrer i OneDrive, og så afspejles opdateringerne automatisk i dine Power BI-rapporter og -dashboards baseret på filerne. 
+
+> [!NOTE]
+> Prøveversionen af den nye arbejdsområdeoplevelse ændrer relationen mellem Power BI-arbejdsområder og Office 365-grupper. Du opretter ikke automatisk en Office 365-gruppe, hver gang du opretter et af de nye arbejdsområder. Læs om [oprettelse af nye arbejdsområder (prøveversion)](service-create-the-new-workspaces.md)
 
 Tilføjelse af filer i dit apparbejdsområde er en proces med to trin: 
 

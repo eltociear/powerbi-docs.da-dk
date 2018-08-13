@@ -1,92 +1,47 @@
 ---
-title: Opret og publicer apps med dashboards og rapporter i Power BI
-description: Få mere at vide om, hvordan du opretter og publicerer apps, der er samlinger af dashboards og rapporter, som er udviklet til at levere vigtige målepunkter for din organisation.
+title: Publicer apps med dashboards og rapporter i Power BI
+description: Få mere at vide om, hvordan du publicerer apps, der er samlinger af dashboards og rapporter, som er udviklet til at levere vigtige målepunkter for din organisation.
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/20/2018
+ms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 25aa03c12b36bf19c05fe01dc6c24a0e4a3a2416
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 18189948e0873824feea781d2b6b6523bc968592
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38937177"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624131"
 ---
-# <a name="create-and-publish-apps-with-dashboards-and-reports-in-power-bi"></a>Opret og publicer apps med dashboards og rapporter i Power BI
+# <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Publicer apps med dashboards og rapporter i Power BI
 
-I Power BI kan du oprette *apps* for at samle relaterede dashboards og rapporter på én placering og derefter publicere dem til større persongrupper i din organisation. Du kan også oprette forbindelse til [Power BI apps til eksterne tjenester](service-connect-to-services.md), f.eks. Google Analytics og Microsoft Dynamics CRM.
+I Power BI kan du publicere *apps* med samlinger af relaterede dashboards og rapporter. Du opretter apps i *apparbejdsområder*, hvor du kan samarbejde om Power BI-indhold med dine kollegaer. Du kan derefter publicere de færdige apps til store grupper af personer i din organisation. Læs mere om [oprettelse af apparbejdsområder](service-create-workspaces.md).
 
 ![Power BI-apps](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
-Forretningsbrugere har ofte brug for flere Power BI-dashboards og -rapporter for at kunne drive deres virksomhed. Apps kombinerer alle delene, så brugerne ikke behøver at huske på navne og placeringer for alle disse dashboards. Med Power BI-apps kan du oprette samlinger af dashboards og rapporter og publicere disse apps til hele organisationen eller til bestemte personer eller grupper. Som forfatter til rapporten eller administrator gør apps det nemmere for dig at administrere tilladelser til samlinger af dashboards.
+Forretningsbrugere har ofte brug for flere Power BI-dashboards og -rapporter for at kunne drive deres virksomhed. Med Power BI-apps kan du oprette samlinger af dashboards og rapporter og publicere disse apps til hele organisationen eller til bestemte personer eller grupper. Hvis du er forfatter af rapporten eller administrator, gør apps det nemmere for dig at administrere tilladelser til disse samlinger.
 
-Forretningsbrugere kan få dine apps på flere måder. Hvis Power BI-administratoren giver dig tilladelse, kan du automatisk installere dem i dine kollegers Power BI-konti. Ellers kan de installere dine apps fra Microsoft AppSource, eller du kan sende dem et direkte link. De kan nemt finde og vende tilbage til dit indhold, fordi det hele er samlet på ét sted. De får automatisk opdateringer, og du kan styre, hvor ofte dataene opdateres. Læs mere om [appoplevelsen for forretningsbrugere](service-install-use-apps.md).
+Forretningsbrugere kan få dine apps på flere måder. Hvis Power BI-administratoren giver dig tilladelse, kan du automatisk installere apps i dine kollegaers Power BI-konti. Ellers kan de installere dine apps fra Microsoft AppSource, eller du kan sende dem et direkte link. De kan nemt finde og vende tilbage til dit indhold, fordi det hele er samlet på ét sted. De kan ikke ændre indholdet af appen, men de kan interagere med det enten i Power BI-tjenesten eller en af mobilappsene – og selv filtrere, markere og sortere data. De får automatisk opdateringer, og du kan styre, hvor ofte dataene opdateres. Læs mere om [appoplevelsen for forretningsbrugere](service-install-use-apps.md).
 
-### <a name="licenses-for-apps"></a>Licenser til apps
-Som udvikler af apps skal du bruge en licens til Power BI Pro. Der er to muligheder for din appbrugere at se din app på.
+**Vidste du det?** Power BI udgiver en ny prøveversion af arbejdsområdeoplevelsen. Læs [Opret nye arbejdsområder (prøveversion)](service-create-the-new-workspaces.md) for at se, hvordan arbejdsområder ændres i fremtiden. 
 
-* Mulighed 1: En app-bruger har fået tildelt en **Power BI Pro**-licens. 
-* Mulighed 2: En app-bruger har ikke fået tildelt en **Power BI Pro**-licens, men appen er placeret i en Power BI Premium-kapacitet. Læs [Hvad er Power BI Premium?](service-premium.md) for at få flere oplysninger.
-
-### <a name="apps-and-organizational-content-packs"></a>Apps og organisationsindholdspakker
-Apps er en udviklet form af organisationsindholdspakker. Hvis du allerede har organisationsindholdspakker, vil de fortsætte med at fungere side om side med apps.
-
-Nu, hvor du har fået overblik over apps, kan vi gennemgå *apparbejdsområder*, hvor du kan oprette apps. 
+## <a name="apps-and-organizational-content-packs"></a>Apps og organisationsindholdspakker
+Apps er en udviklet form af organisationsindholdspakker. Indholdspakker er ikke tilgængelige i prøveversionen af de nye arbejdsområdeoplevelser. Når den nye arbejdsområdeoplevelse er offentligt tilgængelig, kan du ikke bruge indholdspakker i arbejdsområder, du opretter derefter. Hvis du ikke allerede har gjort det, kan du begynde at overføre dine indholdspakker til apps.
 
 ## <a name="video-apps-and-app-workspaces"></a>Video: Apps og apparbejdsområder
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## <a name="app-workspaces"></a>Apparbejdsområder
-*Apparbejdsområder* er de steder, hvor du opretter apps, så du skal oprette et apparbejdsområde, før du opretter appen. Hvis du har prøvet at arbejde i et gruppearbejdsområde i Power BI, kender du allerede til apparbejdsområder. De er en udviklet form af gruppearbejdsområder – midlertidige områder og beholdere til indhold i appen. 
+## <a name="licenses-for-apps"></a>Licenser til apps
+Alle medlemmer af et apparbejdsområde skal have en Power BI Pro-licens. Der er to muligheder for appbrugere.
 
-Du kan føje kollegaer til disse arbejdsområder som medlemmer eller administratorer. Alle medlemmer af apparbejdsområdet og administratorer skal have licens til Power BI Pro. I arbejdsområdet kan alle samarbejde i dashboards, rapporter og andre artikler, som du vil publicere til en større målgruppe eller endda hele organisationen. 
-
-Når indholdet er klar, skal du vælge, hvilke dashboards og rapporter, som du ønsker at udgive, og derefter skal du udgive appen. Du kan sende et direkte link til denne større målgruppe, eller de kan finde din app under fanen Apps ved at gå til **Download and explore more apps from AppSource** (Download og udforsk flere apps fra AppSource). Disse personer kan ikke ændre indholdet af appen, men de kan interagere med det enten i Power BI-tjenesten eller en af mobilappsene – og selv filtrere, markere og sortere data. 
-
-## <a name="create-an-app-workspace"></a>Opret et apparbejdsområde
-[!INCLUDE [powerbi-service-create-app-workspace](./includes/powerbi-service-create-app-workspace.md)]
-
-Det er tomt, så nu skal du føje indhold til det. Bemærk, at når du opretter arbejdsområdet første gang, skal du muligvis vente omkring en time, før det er overført til Office 365. 
-
-Tilføjelse af indhold foregår på samme måde, som når du føjer indhold til Mit arbejdsområde, bortset fra at andre personer i arbejdsområdet også kan se det og arbejde med det. Den store forskel er, at når du er færdig, kan du publicere indholdet som en app. Fra apparbejdsområdet kan du uploade eller oprette forbindelse til filer, eller du kan oprette forbindelse til tjenester fra tredjepart på samme måde som i Mit arbejdsområde. Eksempel:
-
-* [Opret forbindelse til services](service-connect-to-services.md) som f.eks. Microsoft Dynamics CRM, Salesforce eller Google Analytics.
-* [Hent data fra filer](service-get-data-from-files.md) f.eks. Excel-, CSV- eller Power BI Desktop-filer (PBIX).
-
-Når du får vist indhold i et apparbejdsområde, vises ejeren som navnet på apparbejdsområdet.
-
-## <a name="add-an-image-to-your-app-optional"></a>Føj et billede til din app (valgfrit)
-Power BI opretter som standard en lille farvet cirkel for din app med appens forbogstaver. Det kan også være, at du vil tilpasse den med et billede. Hvis du vil tilføje et billede, skal du have en Exchange Online-licens.
-
-1. Vælg **Arbejdsområder**, vælg de tre prikker (...) ud for navnet på arbejdsområdet og derefter **Medlemmer**. 
-   
-     ![Vælg medlemmer af arbejdsområdet](media/service-create-distribute-apps/power-bi-apps-workspace-members.png)
-   
-    Outlook til Office 365-kontoen til arbejdsområdet åbnes i et nyt browservindue.
-2. Når du peger på den farvede cirkel øverst til venstre, bliver den til et blyantsikon. Vælg det.
-   
-     ![Office 365-blyantsikon](media/service-create-distribute-apps/power-bi-apps-workspace-edit-image.png)
-3. Vælg blyantsikonet igen, og find det billede, du vil bruge.
-   
-     ![Vælg blyanten igen](media/service-create-distribute-apps/power-bi-apps-workspace-edit-group.png)
-4. Vælg **Gem**.
-   
-     ![Vælg Gem](media/service-create-distribute-apps/power-bi-apps-workspace-save-image.png)
-   
-    Billedet erstatter den farvede cirkel i Office 365 Outlook-vinduet. 
-   
-     ![Tilpasset billede](media/service-create-distribute-apps/power-bi-apps-workspace-image-in-office-365.png)
-   
-    Efter nogle få minutter vises det også i appen i Power BI.
-   
-     ![Tilpasset billede](media/service-create-distribute-apps/power-bi-apps-image.png)
+* Mulighed 1: Alle forretningsbrugere skal have licens til **Power BI Pro** for at få vist din app. 
+* Mulighed 2: Hvis din app er placeret i en Power BI Premium-kapacitet, kan gratisbrugere i din organisation få vist appindhold. Læs [Hvad er Power BI Premium?](service-premium.md) for at få flere oplysninger.
 
 ## <a name="publish-your-app"></a>Publicer din app
-Når dashboards og rapporter i apparbejdsområdet er klar, kan du publicere dem som en app. Husk, at du ikke behøver at publicere alle rapporter og dashboards i arbejdsområdet. Du kan nøjes med at publicere dem, der er klar.
+Når dashboards og rapporter i dit arbejdsområde er klar, skal du vælge, hvilke dashboards og rapporter du vil publicere, og derefter publicerer du dem som en app. Du kan sende et direkte link til denne større målgruppe, eller de kan finde din app under fanen Apps ved at gå til **Download and explore more apps from AppSource** (Download og udforsk flere apps fra AppSource). 
 
 1. I listevisning i arbejdsområdet bestemmer du, hvilke dashboards og rapporter der skal medtages i appen.
 
@@ -116,19 +71,17 @@ Når dashboards og rapporter i apparbejdsområdet er klar, kan du publicere dem 
    
      ![Afslutning af appen](media/service-create-distribute-apps/power-bi-apps-success.png)
 
-De forretningsbrugere, som du har publiceret appen til, kan finde den på flere forskellige måder. Hvis du kan installere den automatisk, vises den under Apps på deres Power BI-konto. Du kan sende dem det direkte link til appen, eller de kan søge efter det i Microsoft AppSource, hvor de kan se alle de apps, de har adgang til. Når de efterfølgende går til Apps, får de vist denne app på deres liste, uanset, hvordan de får den.
-
 Læs mere om [appoplevelsen for forretningsbrugere](service-install-use-apps.md).
 
 ## <a name="change-your-published-app"></a>Skift din publicerede app
-Når du publicerer din app, vil du muligvis ændre eller opdatere den. Det er nemt at opdatere den, hvis du er administrator eller medlem af apparbejdsområdet. 
+Når du publicerer din app, vil du muligvis ændre eller opdatere den. Det er nemt at opdatere den, hvis du er administrator eller medlem af apparbejdsområdet eller bidragyder i et nyt apparbejdsområde. 
 
 1. Åbn apparbejdsområdet, der svarer til appen. 
    
      ![Åbn arbejdsområde](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
 2. Åbn dashboardet eller rapporten. Du kan se, at du kan foretage alle de ændringer, du vil.
    
-     Apparbejdsområdet er dit testområde, så dine ændringer ikke sendes live til appen, før du publicerer igen. Her kan du foretage ændringer, uden at det påvirker publicerede apps.  
+     Apparbejdsområdet er dit testområde, så dine ændringer sendes ikke live i appen, før du publicerer igen. Her kan du foretage ændringer, uden at det påvirker publicerede apps.  
  
 3. Gå tilbage til apparbejdsområdets liste over indhold, og vælg **Opdater app**.
    
@@ -140,18 +93,16 @@ Når du publicerer din app, vil du muligvis ændre eller opdatere den. Det er ne
 
 De personer, du har publiceret appen for, får automatisk vist den opdaterede version af appen. 
 
-# <a name="automatically-install-apps-for-end-users"></a>Installér automatisk apps for slutbrugere
-Du kan installere apps automatisk for slutbrugere, hvilket gør det lettere at distribuere de rette apps til de rette personer eller grupper.
+## <a name="automatically-install-apps-for-end-users"></a>Installér automatisk apps for slutbrugere
+Apps leverer data, som dine slutbrugere har behov for for at udføre deres job. Hvis en administrator giver dig tilladelse til det, kan du automatisk installere apps for slutbrugere, hvilket gør det lettere at distribuere de rette apps til de rette personer eller grupper. Din app vises automatisk på dine slutbrugeres appindholdsliste, så de ikke behøver at søge efter dem i Microsoft AppSource eller følge et installationslink. Det gør det lettere for dig at rulle Power BI-standardindhold ud til dine brugere.
 
-Apps leverer data, som dine slutbrugere har behov for for at udføre deres job. Nu kan du installere disse apps automatisk på Apps-indholdslisten i stedet for, at du skal finde dem i Microsoft AppSource eller følge et installationslink. Det gør det lettere for dig at rulle Power BI-standardindhold ud til dine brugere.
-
-## <a name="how-to-install-an-app-automatically-for-end-users"></a>Sådan installerer du automatisk en app for slutbrugere
-Når administratoren har aktiveret funktionen, er det muligt for appudgivere automatisk at vælge den nye indstilling **Installér appen automatisk**. Når afkrydsningsfeltet er ***markeret***, og appudgiveren vælger **Afslut** (eller **Opdater app** for eksisterende apps), pushes appen til alle de brugere eller grupper, der er defineret i sektionen **Tilladelser** på fanen **Adgang** i appen.
+### <a name="how-to-install-an-app-automatically-for-end-users"></a>Sådan installerer du automatisk en app for slutbrugere
+Når administratoren har givet dig tilladelser, har du en ny indstilling, hvor du kan **installere appen automatisk**. Når du markerer afkrydsningsfeltet og vælger **Afslut** (eller **Opdater app** for eksisterende apps), pushes appen til alle de brugere eller grupper, der er defineret i sektionen **Tilladelser** under fanen **Adgang** i appen.
 
 ![Aktivér push af apps](media/service-create-distribute-apps/power-bi-apps-access.png)
 
-## <a name="how-users-get-the-apps-that-were-pushed-to-them"></a>Sådan får brugerne de apps, der er pushet til dem
-Når du har pushet en app, vises den automatisk på Apps-listen. Du kan levere de apps, som en bruger eller jobrolle i organisationen har brug for at have lige ved hånden.
+### <a name="how-users-get-the-apps-that-were-pushed-to-them"></a>Sådan får brugerne de apps, der er pushet til dem
+Når du har pushet en app, vises den automatisk på Apps-listen. Du kan levere de apps, som specifikke brugere eller jobroller i organisationen har brug for at have lige ved hånden.
 
 ![Aktivér push af apps](media/service-create-distribute-apps/power-bi-apps-left-nav.png)
 
@@ -177,27 +128,9 @@ Et medlem af et apparbejdsområde kan annullerer publicering af appen.
 
 Denne handling fjerner installationen af appen for alle, du har udgivet den til, så de ikke længere har adgang til den. Den sletter ikke apparbejdsområdet eller dets indhold.
 
-## <a name="power-bi-apps-faq"></a>Ofte stillede spørgsmål om Power BI-apps
-### <a name="how-are-app-workspaces-different-from-group-workspaces"></a>Hvordan adskiller apparbejdsområder sig fra gruppearbejdsområder?
-Fra og med denne version har vi omdøbt alle gruppearbejdsområder til apparbejdsområder. Du kan publicere en app fra et hvilken som helst af disse arbejdsområder. Funktionaliteten forbliver i de fleste tilfælde på samme niveau som i gruppearbejdsområder. Vi planlægger følgende forbedringer af apparbejdsområder i løbet af de kommende måneder: 
-
-* Oprettelse af apparbejdsområder vil ikke føre til oprettelse af tilsvarende objekter i Office 365, som det f.eks. sker med gruppearbejdsområder. Du kan derfor oprette så mange apparbejdsområder, du vil, uden at bekymre dig om, at der oprettes forskellige Office 365-grupper i baggrunden (du kan stadig benytte en Office 365-gruppes OneDrive for Business til lagring af filer). 
-* I dag kan du kun føje enkeltpersoner til medlems- og administratorlisterne. Du vil snart kunne føje flere AD-sikkerhedsgrupper eller moderne grupper til disse lister, så administrationen bliver nemmere.  
-
-### <a name="how-are-apps-different-from-organizational-content-packs"></a>Hvordan adskiller apps sig fra organisationsindholdspakker?
-Apps er en udvikling og forenkling af indholdspakker med nogle få større forskelle. 
-
-* Når forretningsbrugere installerer en indholdspakke, mister den sin grupperede identitet: Den er bare en liste over dashboards og rapporter blandet med andre dashboards og rapporter. Apps bevarer på den anden side deres gruppering og identitet, også efter installationen. Det gør det nemt for forretningsbrugere at fortsætte med at navigere til dem hen over tid.
-* Du kan oprette flere indholdspakker fra et vilkårligt arbejdsområde, men en app har en en til en-relation til dens arbejdsområde. Vi mener, at det gør det lettere at forstå apps og vedligeholde dem i det lange løb. Se oversigtsafsnittet i Power BI-bloggen, hvis du vil vide mere om, hvordan vi planlægger at forbedre dette område. 
-* Vi vil over tid fraråde organisationsindholdspakker, og vi anbefaler derfor, at du begynder at oprette apps fra nu af.  
-
-### <a name="what-about-read-only-members-in-groups"></a>Hvad med medlemmer af grupper, som kun har læseadgang?
-I grupper kan du tilføje medlemmer med læseadgang, som kun kan få vist indholdet. Hovedproblemet med denne indfaldsvinkel var, at det ikke var mulige at tilføje sikkerhedsgrupper som medlemmer. 
-
-Med apps kan du publicere en skrivebeskyttet version af dit apparbejdsområdet til større målgrupper, herunder sikkerhedsgrupper. Du kan teste dine ændringer af dashboards og rapporter i appen, uden at det påvirker slutbrugerne. Vi anbefaler, at du fremover bruger apps på denne måde. Vi vil på sigt også fraråde medlemmer med læseadgang til arbejdsområder.  
-
 ## <a name="next-steps"></a>Næste trin
+* [Opret et apparbejdsområde](service-create-workspaces.md)
 * [Installér og brug apps i Power BI](service-install-use-apps.md)
 * [Power BI-apps til eksterne tjenester](service-connect-to-services.md)
-* [Power BI-administrationsportal](https://docs.microsoft.com/en-us/power-bi/service-admin-portal)
+* [Power BI-administrationsportal](https://docs.microsoft.com/power-bi/service-admin-portal)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

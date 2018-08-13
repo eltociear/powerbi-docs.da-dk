@@ -3,29 +3,29 @@ title: Find og opret forbindelse til organisationsindholdspakker – Power BI
 description: Find og åbn en organisationsindholdspakke i Power BI
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/08/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5ea86ab577298b6099487228cdf4c8a87e4fe421
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: 67072d690f09e922601c6b14ad1c150e2298040b
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280219"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624269"
 ---
 # <a name="find-and-connect-to-an-organizational-content-pack"></a>Find og opret forbindelse til en organisationsindholdspakke
-> [!NOTE]
-> Har du hørt om de nye *apps*? Apps er den nye måde at sende indhold til store målgrupper på i Power BI. Vi planlægger snart at fraråde organisationsindholdspakker, og vi anbefaler, at der bruges apps i stedet. Få [mere at vide om apps](service-install-use-apps.md).
-> 
-> 
 
 Når nogen publicerer en organisationsindholdspakke til din organisation til distribution eller sikkerhedsgrupper eller til [Office 365-grupper](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9), du er en del af, vises de i AppSource.  Gennemse eller søg i AppSource for at finde og åbne organisationsindholdspakkerne.
 
 Oprettelse af indholdspakker adskiller sig fra deling af dashboards eller samarbejde om dem i en gruppe. Læs [Hvordan kan jeg samarbejde på og dele dashboards og rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md) for at finde det bedste valg til din situation.
+
+> [!NOTE]
+> Du kan ikke oprette eller installere organisationsindholdspakker i prøveversionen af nye arbejdsområdeoplevelser. Nu er det et godt tidspunkt at opgradere dine indholdspakker til apps, hvis du ikke er startet endnu. Få [mere at vide om den nye arbejdsområdeoplevelse](service-create-the-new-workspaces.md).
+> 
 
 ## <a name="find-an-organizational-content-pack"></a>Find en organisationsindholdspakke
 [Power BI Pro](https://powerbi.microsoft.com/pricing)-brugere kan alle gå til AppSource, der viser indholdspakker, som deles med deres organisation, med distributions- eller sikkerhedsgrupper og med Office 365-grupper, de er en del af.  

@@ -8,15 +8,15 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/18/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e176f82e106c531410b8e9233b983c6e321bddf4
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: d683ce3d06e2ac6be6c51f257e4f9483e718e2d8
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34299050"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624385"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Del dine Power BI-dashboards og -rapporter med kolleger og andre
 *Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Med Power BI får du også [adskillige andre måder at samarbejde om og distribuere dashboards og rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -91,6 +91,8 @@ Det er kun ejeren af dashboardet eller rapporten, der kan slå videredeling til 
 
 4. I dialogboksen **Fjern adgang** skal du beslutte, om du også vil fjerne adgangen til relateret indhold, som f.eks. rapporter og datasæt. Hvis du fjerner elementer med et advarselsikon ![Power BI-advarselsikon](media/service-share-dashboards/power-bi-warning-icon.png), er det bedst at fjerne relateret indhold, fordi det ikke kan vises korrekt.
 
+    ![Dialogboks med advarsel om Power BI-deling](media/service-share-dashboards/power-bi-sharing-warning-dialog.png)
+
 ## <a name="share-a-dashboard-or-report-with-people-outside-your-organization"></a>Del et dashboard eller en rapport med personer uden for din organisation
 Når du deler med personer uden for din organisation, modtager de en mail med et link til det delte dashboard eller den delte rapport, og de skal logge på Power BI for at få det/den vist. Hvis de ikke har en Power BI Pro-licens, kan de tilmelde sig en, når de klikker på linket.
 
@@ -145,6 +147,8 @@ Her er du nødt til at give brugerne tilladelse til at tilgå det underliggende 
 ### <a name="i-cant-share-a-dashboard-or-report"></a>Jeg kan ikke dele et dashboard eller en rapport
 
 Hvis du vil dele et dashboard eller en rapport, skal du have tilladelse til at dele det underliggende indhold igen – alle relaterede rapporter og datasæt. Hvis du ser en meddelelse, hvor der står, du ikke må dele, skal du bede rapportens forfatter om at give dig tilladelse til at dele rapporterne og datasættene igen.
+
+![Meddelelsen "Kan ikke dele"](media/service-share-dashboards/power-bi-sharing-unable-to-share.png)
 
 
 ## <a name="next-steps"></a>Næste trin

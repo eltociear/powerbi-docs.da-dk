@@ -3,21 +3,26 @@ title: Afbryd forbindelsen fra en organisationsindholdspakke – Power BI
 description: Læs om, hvordan du fjerner forbindelsen til en organisationsindholdspakke ved at slette dens datasæt i Power BI.
 author: maggiesMSFT
 manager: kfile
-ms.reviewer: ajayan
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c0e7bddd23987377bfd8cf05bdfd1ab997e621ed
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 2389ed542a43b28296faf2eed2b69b4e83d227f5
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247636"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624154"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Fjern din forbindelse til en Power BI-organisationsindholdspakke
+
+> [!NOTE]
+> Du kan ikke oprette organisationsindholdspakker eller installere dem i prøveversionen af nye arbejdsområdeoplevelser. Nu er det et godt tidspunkt at opgradere dine indholdspakker til apps, hvis du ikke er startet endnu. Få [mere at vide om den nye arbejdsområdeoplevelse](service-create-the-new-workspaces.md).
+> 
+
 En kollega har oprettet en indholdspakke. Du har fundet den i AppSource og føjet den til dit Power BI-arbejdsområde. Nu har du ikke længere brug for den.  Hvordan fjerner du den?
 
 Hvis du vil fjerne en indholdspakke, skal du fjerne dens datasæt.  

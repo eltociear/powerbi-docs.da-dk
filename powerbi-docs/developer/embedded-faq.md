@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/22/2018
-ms.openlocfilehash: f104d2e9e27cfb9af72813053c0d8cb14aaf2635
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.openlocfilehash: ab637be12487029d17d7b1bfa89022dbae9aaa49
+ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39359650"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39415386"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -216,6 +216,8 @@ Power BI Embedded fakturerer på en forudsigelig timebaseret rate baseret på ty
 Det er obligatorisk for alle analytikere, der skal føje rapporter til et Power BI-arbejdsområde, for alle udviklere, der skal bruge REST API'er, for alle lejer-administratorer, der skal administrere Power BI-lejeren og -kapacitet at have en Power BI Pro-licens.
 
 Idet Power BI Embedded tillader brugen af Power BI-portalen til administration og validering af integreret indhold, så er Power BI Pro-licens påkrævet for at godkende App'en internt i PowerBI.com for at få adgang til rapporter i de korrekte lagre.
+
+Men hvis du vil [oprette/redigere integrerede rapporter](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) i dit eget program, behøver slutbrugeren ikke en Pro-licens, da det ikke er et krav, at slutbrugeren er Power BI-bruger.
 
 ### <a name="can-i-get-started-for-free"></a>Kan jeg komme i gang gratis?
 

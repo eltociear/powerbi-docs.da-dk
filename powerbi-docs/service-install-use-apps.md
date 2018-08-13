@@ -3,29 +3,30 @@ title: Installer og brug apps med dashboards og rapporter i Power BI
 description: I Power BI samler apps relaterede dashboards og rapporter på ét sted.
 author: maggiesMSFT
 manager: kfile
+ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/24/2018
+ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: de566aa22a7c48a27682a9c577f84eb6015ac8b7
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 464906acd17248c5a752d7febc4ab7b907c7cc46
+ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34242729"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39624362"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer og brug apps med dashboards og rapporter i Power BI
 I Power BI samler *apps* relaterede dashboards og rapporter på ét sted. Personer i din organisation kan oprette og distribuere apps med vigtige forretningsoplysninger. [Eksterne tjenester](service-connect-to-services.md), du muligvis allerede bruger, f.eks. Google Analytics og Microsoft Dynamics CRM, tilbyder også Power BI-apps. 
 
 ![Apps i Power BI](media/service-install-use-apps/power-bi-apps-left-nav.png)
 
-Det er nemt at finde og installere apps i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) og på din mobilenhed. Når du har installeret en app, behøver du ikke at huske navnene på mange forskellige dashboards, fordi de alle er samlet i appen, i webbrowseren eller på din mobilenhed.
+Det er nemt at finde og installere apps i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) og på din mobilenhed. Når du har installeret en app, behøver du ikke huske navnene på mange forskellige dashboards, fordi de alle er samlet i én app, i webbrowseren eller på din mobilenhed.
 
 Med apps ser du automatisk ændringerne, hver gang appens forfatteren udgiver opdateringer. Forfatteren styrer også, hvor ofte dataene er planlagt til opdatering, så du ikke skal bekymre dig om at holde dem opdateret. 
 
-Har du planer om at oprette en app? Du kan få flere oplysninger under [Opret og udgiv apps i Power BI](service-create-distribute-apps.md).
+Har du planer om at oprette en app? Se [Opret arbejdsområder med dine kollegaer i Power BI](service-create-distribute-apps.md) for at få flere oplysninger.
 
 ## <a name="get-a-new-app"></a>Hent en ny app
 Du kan hente apps på nogle forskellige måder. Appforfatteren kan installere appen automatisk i din Power BI-konto eller sende dig et direkte link til en app, eller du kan søge efter den i AppSource, hvor du kan se alle de apps, du har adgang til. I Power BI på din mobilenhed kan du kun installere den fra et direkte link, og ikke fra AppSource. Hvis appens forfatter installerer appen automatisk, kan du se den på listen over apps.
@@ -41,7 +42,7 @@ Når du klikker på linket i mailen, åbnes Power BI-tjenesten ([https://powerbi
 
 **På iOS- eller Android-mobilenhed** 
 
-Når du klikker på linket i mailen på din mobilenhed, installeres appen automatisk og åbner appens indholdsliste. 
+Når du klikker på linket i mailen på din mobilenhed, installeres appen automatisk og åbner appens indholdsliste i mobilappen. 
 
 ![Apps indholdsliste på mobilenhed](media/service-install-use-apps/power-bi-app-index-it-spend-360.png)
 
@@ -57,11 +58,11 @@ Du kan også søge efter og installere apps, du har adgang til fra Microsoft App
 3. Vælg **Hent det nu** for at føje den til siden Apps. 
 
 ## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Interager med dashboards og rapporter i appen
-Nu kan du udforske dataene i dashboardene og rapporterne i appen. Du har adgang til alle almindelige Power BI-interaktioner som filtrering, fremhævning, sortering og analyse. Læs om at [interagere med rapporter i Power BI](service-reading-view-and-editing-view.md). 
-
-Du kan ikke gemme ændringer, du foretager, men du kan altid [eksportere dataene til Excel ](power-bi-visualization-export-data.md) fra en tabel eller et andet visuelt element i en rapport.
+Nu kan du udforske dataene i dashboardene og rapporterne i appen. Du har adgang til alle almindelige Power BI-interaktioner som filtrering, fremhævning, sortering og analyse. Du kan også [eksportere dataene til Excel ](power-bi-visualization-export-data.md) fra en tabel eller et andet visuelt element i en rapport. Læs om at [interagere med rapporter i Power BI](service-reading-view-and-editing-view.md). 
 
 ![Eksportér data fra et visuelt Power BI-element](media/service-install-use-apps/power-bi-service-export-data-visual.png)
+
+
 
 ## <a name="next-steps"></a>Næste trin
 * [Opret og publicer apps i Power BI](service-create-distribute-apps.md)
