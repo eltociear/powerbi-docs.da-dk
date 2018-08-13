@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 203648affe06abe304d0e8a328b00189b42fa143
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: fa812801eb01529c3e364d69f041b7efd193c3ae
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39328390"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657868"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 Med Power BI Desktop kan du oprette forbindelse til data fra mange forskellige kilder. Der findes en komplet liste over tilgængelige datakilder nederst på siden.
@@ -93,7 +93,6 @@ På følgende billede vises vinduet **Hent data** for **Database**.
 Kategorien **Power BI** indeholder følgende dataforbindelser:
 
 * Power BI-datasæt
-* Power BI-datagrupper (beta)
 
 På følgende billede vises vinduet **Hent data** for **Power BI**.
 
@@ -167,8 +166,8 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * OData-feed
 * Active Directory
 * Microsoft Exchange
-* Hadoop-fil (HDFS)
-* Spark (beta)
+* Hadoop File (HDFS)
+* Spark
 * R Script
 * ODBC
 * OLE DB
