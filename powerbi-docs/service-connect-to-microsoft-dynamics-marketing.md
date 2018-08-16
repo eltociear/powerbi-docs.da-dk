@@ -54,7 +54,7 @@ Opret forbindelse til [Dynamics Marketing-indholdspakken](https://app.powerbi.co
 
 ## <a name="system-requirements"></a>Systemkrav
 * Du skal angive en gyldig URL-adresse til OData for en Dynamics Marketing-forekomst (indholdspakken fungerer ikke med en lokal CRM-version).  
-* En administrator skal aktivere OData-slutpunktet i indstillingerne for webstedet. Du kan finde adressen på OData-slutpunktet ved at gå til **Hjem \> Indstillinger \> Indstillinger for websted** i afsnittet **Organisationsdatatjeneste**.  URL-adressen til OData har formatet:  https:// [instance\_name].marketing.dynamics.com/analytics  
+* En administrator skal aktivere OData-slutpunktet i indstillingerne for webstedet. Du kan finde adressen på OData-slutpunktet ved at gå til **Hjem \> Indstillinger \> Indstillinger for websted** i afsnittet **Organisationsdatatjeneste**.  URL-adressen til OData har formatet:  https://[instance\_name].marketing.dynamics.com/analytics  
 * Den brugerkonto/identitet, du bruger til at få adgang til Microsoft Dynamics Marketing, skal være den samme som den, du er tilmeldt til brug med Power BI. Når du logger på Microsoft Dynamics Marketing, bliver du automatisk logget på med det samme id, du bruger til Power BI. Hvis du vil logge på Microsoft Dynamics Marketing med en anden konto, skal du registreres som en Power BI-bruger, der bruger den anden konto. Vi håber at kunne løse dette problem i en kommende version.   
 
 ## <a name="troubleshooting"></a>Fejlfinding
