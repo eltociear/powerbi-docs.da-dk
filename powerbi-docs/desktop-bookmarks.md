@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2b8c4066f3128899d2c3c8121d7c5d41768f89dc
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: fe52646eef029359ac0e41c5fb32be524076a22d
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327815"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657960"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Brug bogmærker til at dele indsigt og oprette historier i Power BI 
 Ved hjælp af **bogmærker** i Power BI kan du indfange den visning af en rapportside, der er konfigureret i øjeblikket, herunder filtrering af og tilstanden for visualiseringer, og senere gå tilbage til denne tilstand ved ganske enkelt at vælge det gemte bogmærke. 
@@ -113,6 +113,33 @@ Når du slår skyderen **Handling** **til**, kan du vælge, om objektet skal væ
 Du kan gøre mange forskellige interessante ting med bogmærker, der har tilknyttet et objekt. Du kan oprette en visuel tabel med indhold på din rapportside, eller du kan angive forskellige visninger (f.eks. visuelle typer) med de samme oplysninger ved bare at klikke på et objekt.
 
 Når du er i redigeringstilstand, kan du bruge Ctrl + klik for at følge linket, og når du ikke er i redigeringstilstand, skal du bare klikke på objektet for at følge linket. 
+
+## <a name="bookmark-groups"></a>Bogmærkegrupper
+
+Fra og med versionen af **Power BI Desktop** fra august 2018 kan du oprette og bruge bogmærkegrupper. En bogmærkegruppe er en samling af bogmærker, som du angiver, og som kan vises og organiseres som en gruppe. 
+
+Hvis du vil oprette en bogmærkegruppe, skal du holde Ctrl nede og vælge de bogmærker, du vil medtage i gruppen. Klik derefter på de tre prikker ud for et af de valgte bogmærker, og vælg **Gruppér** i den viste menu.
+
+![Opret en bogmærkegruppe](media/desktop-bookmarks/bookmarks_15.png)
+
+**Power BI Desktop** kalder automatisk gruppen for *Gruppe 1*. Hvis du vil omdøbe gruppen, skal du blot dobbeltklikke på navnet og give den et nyt navn.
+
+![Omdøb en bogmærkegruppe](media/desktop-bookmarks/bookmarks_16.png)
+
+Hvis du klikker på navnet på en bogmærkegruppe, bliver gruppen af bogmærker vist eller skjult. Selve gruppenavnet repræsenterer ikke et bogmærke. 
+
+Når du bruger funktionen **Vis** med bogmærker, gælder følgende:
+
+* Hvis det valgte bogmærke er i en gruppe, når du vælger **Vis** fra bogmærkerne, er det kun bogmærkerne *i den pågældende gruppe*, der vises. 
+
+* Hvis det valgte bogmærke ikke er en gruppe, eller den er på øverste niveau (f.eks navnet på en bogmærkegruppe), vises alle bogmærkerne for hele rapporten, herunder bogmærkerne i en gruppe. 
+
+Hvis du vil ophæve en gruppe af bogmærker, skal du vælge et bogmærke i en gruppe, klikke på de tre prikker og derefter vælge **Opdel gruppe** i den viste menu. 
+
+![Opdel en bogmærkegruppe](media/desktop-bookmarks/bookmarks_17.png)
+
+Hvis du vælger **Opdel gruppe** for et bogmærke i en gruppe, fjernes alle bogmærkerne fra gruppen (det er kun gruppen, der slettes, ikke selve bogmærkerne). Hvis du vil fjerne et enkelt bogmærke fra en gruppe, skal du vælge **Opdel gruppe** for et bogmærke i gruppen, hvilket fjerner gruppen, og derefter skal du vælge de medlemmer, du vil have i en ny gruppe (hold Ctrl nede, og klik på hvert bogmærke), og vælg **Gruppér** igen. 
+
 
 ## <a name="using-spotlight"></a>Brug Spotlight
 En anden funktion, der er udgivet sammen med bogmærker, er **Spotlight**. Du kan bruge **Spotlight** til at fremhæve et bestemt diagram, f.eks. når du viser dine bogmærker i tilstanden **Vis**.

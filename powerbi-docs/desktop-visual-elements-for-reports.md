@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/23/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: be4651d1658c80c84105a65bc48e4072ed203794
-ms.sourcegitcommit: 7bdb76bd80973c5e5174747b7e304705754fe647
+ms.openlocfilehash: a3e39e6326eb5b32cd72e2aefec74c07804b4639
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39217622"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657891"
 ---
 # <a name="use-visual-elements-to-enhance-power-bi-reports"></a>Brug visuelle elementer til at forbedre Power BI-rapporter
 
@@ -59,6 +59,9 @@ Når du har angivet din sidebaggrund til større end 50 % gennemsigtighed, vises
 ![Gennemsigtighed større end 50 % medfører en stiplet kant](media/desktop-visual-elements-for-reports/visual-elements-for-reports_04.png)
 
 Det er vigtigt at være opmærksom på, at den stiplede kant *kun* vises, når du redigerer rapporten. Den vises *ikke* for dem, der får vist din publicerede rapport, f.eks. når de får vist rapporten i **Power BI-tjenesten**.
+
+> [!NOTE]
+> Hvis du bruger mørke farver i baggrunden og angiver tekstfarven til hvid eller meget lys, skal du være opmærksom på, at funktionen **Eksportér til PDF** ikke medtager baggrunden, så hvid eller lys tekst vil være nærmest usynligt i den eksporterede PDF-fil. Se [Eksportér til PDF](desktop-export-to-pdf.md) for at få flere oplysninger om **Eksportér til PDF**.
 
 
 ## <a name="using-improved-visual-headers-in-power-bi-reports"></a>Brug af forbedrede visuelle overskrifter i Power BI-rapporter

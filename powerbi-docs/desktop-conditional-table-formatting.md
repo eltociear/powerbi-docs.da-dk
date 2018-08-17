@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 70aa61d6a02bea1b7058a68b20718008ace1b8c8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 61a30484713ac96d3bbb65355310007a52f300a5
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34480882"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657799"
 ---
 # <a name="conditional-formatting-in-tables"></a>Betinget formatering af tabeller 
 Med betinget formatering af tabeller kan du angive brugerdefinerede farver for celler baseret på celleværdier eller baseret på andre værdier eller felter, og du kan bruge gradueringsfarver. Du kan også få vist celleværdier med datalinjer. 
@@ -24,7 +24,7 @@ Du får adgang til betinget formatering på følgende måde: I brønden **Felter
 
 ![Menuen Betinget formatering](media/desktop-conditional-table-formatting/table-formatting-0-popup-menu.png)
 
-I de følgende afsnit beskrives hver af disse tre indstillinger for betinget formatering. En eller flere indstillinger kan kombineres i en enkelt tabelkolonne.
+I de følgende afsnit beskrives hver af indstillingerne for betinget formatering. En eller flere indstillinger kan kombineres i en enkelt tabelkolonne.
 
 > [!NOTE]
 > Når betinget formatering anvendes på en tabel, tilsidesættes alle brugerdefinerede tabelformater, som er anvendt i celler med betinget formatering.
@@ -95,3 +95,43 @@ Som standard er indstillingen **Vis kun linje** ikke markeret, så der vises bå
 Hvis indstillingen **Vis kun linje** er markeret, er det kun linjen, der vises i tabelcellen.
 
 ![Eksempeltabel kun med datalinjer](media/desktop-conditional-table-formatting/table-formatting-3-default-table-bars.png)
+
+## <a name="color-formatting-by-field-value"></a>Farveformatering efter feltværdi
+
+Du kan bruge en måling eller en kolonne, der specificerer en farve. Du kan enten angive en tekstværdi eller en heksadecimal kode for at anvende farven som baggrund eller skriftfarve i en tabel- eller matrixvisualisering. Du kan også oprette brugerdefineret logik for et bestemt felt og bruge logikken til at anvende den ønskede farve til skriften eller baggrunden.
+
+I den følgende tabel er der f.eks. en farve, der er tilknyttet hver produktmodel. 
+
+![Feltet ProductName med farvenavn](media/desktop-conditional-table-formatting/conditional-table-formatting_01.png)
+
+Hvis du vil formatere cellen baseret på dens feltværdi, skal du vælge dialogboksen **Betinget formatering** ved at højreklikke på kolonnen *Farve* for visualiseringen, og i dette tilfælde skal du vælge **Baggrundsfarve**  i menuen. 
+
+![Vælg baggrundsfarve i menu](media/desktop-conditional-table-formatting/conditional-table-formatting_02.png)
+
+I den viste dialogboks skal du vælge **Feltværdi** på rullelisten **Formatér efter** som vist i følgende billede.
+
+![Formatér efter feltværdi](media/desktop-conditional-table-formatting/conditional-table-formatting_03.png)
+
+Du kan gentage processen for skriftfarven. Resultatet i visualiseringen vil være en uigennemsigtig farve i kolonnen **color** som vist i følgende skærmbillede.
+
+![Formatér efter feltværdi](media/desktop-conditional-table-formatting/conditional-table-formatting_04.png)
+
+Du kan også oprette en DAX-beregning, der er baseret på din forretningslogik, og som giver forskellige heksadecimale koder baseret på de betingelser, du foretrækker. Dette er normalt nemmere end at oprette flere regler i dialogboksen Betinget formatering. Se eksemplet med feltet *ColorKPI* i følgende billede.
+
+![DAX-beregninger](media/desktop-conditional-table-formatting/conditional-table-formatting_05.png)
+
+Du kan derefter angive feltværdien for **Baggrundsfarve** på følgende måde.
+
+![Indstil feltfarve baseret på en KPI](media/desktop-conditional-table-formatting/conditional-table-formatting_06.png)
+
+Og du kan derefter få resultater som følgende matrix.
+
+![Matrixvisualisering med en farve, der er baseret på KPI-værdien](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
+
+Med lidt fantasi og DAX kan du oprette mange flere variationer.
+
+## <a name="next-steps"></a>Næste trin
+Du kan få flere oplysninger i følgende artikel:  
+
+* [Tip og tricks til farveformatering i Power BI](service-tips-and-tricks-for-color-formatting.md)  
+

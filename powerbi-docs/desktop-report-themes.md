@@ -1,5 +1,5 @@
 ---
-title: Brug rapporttemaer i Power BI Desktop (prøveversion)
+title: Brug rapporttemaer i Power BI Desktop
 description: Få mere at vide om, hvordan du bruger en brugerdefineret farvepalet og anvender den for en hel rapport i Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/02/2018
+ms.date: 08/08/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 757c1465d2451da8ebf340c7b9bfe1f4d9ff04f1
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 6aa3e6ba5a471176a6af2551344744cdc45697fb
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721173"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39657937"
 ---
-# <a name="use-report-themes-in-power-bi-desktop-preview"></a>Brug rapporttemaer i Power BI Desktop (prøveversion)
+# <a name="use-report-themes-in-power-bi-desktop"></a>Brug rapporttemaer i Power BI Desktop
 Med **rapporttemaer** kan du anvende et farvetema i hele rapporten, f.eks virksomhedens farver, sæsonmæssige farver eller andre farvetemaer, som du gerne vil anvende. Når du anvender et **rapporttema**, bruges farver fra det valgte tema for alle visuelle elementer i rapporten (med nogle få undtagelser, der er beskrevet senere i denne artikel).
 
 ![](media/desktop-report-themes/report-themes_1.png)
@@ -26,10 +26,14 @@ Anvendelse af et **rapporttema** kræver en JSON-fil med en grundlæggende struk
 
 Fra og med udgivelsen af **Power BI Desktop** i september 2017 kan du definere endnu flere rapporttemaelementer ved hjælp af en JSON-fil og tilpasse (og standardisere) næsten alle elementer ved hjælp af JSON-filen, som du kan ændre manuelt i ruden **Formatering**. Målet med udgivelsen fra september 2017 (og nyere) er at gøre det muligt at få fuld kontrol over, hvordan dine rapporter ser ud på et detaljeret niveau.
 
-### <a name="enable-report-themes-in-preview"></a>Eksempel på aktivering af rapporttemaer
-Du kan prøve den nye funktion **Rapporttemaer** fra og med den version af **Power BI Desktop**, der udgives i **marts 2017**. Hvis du vil aktivere denne eksempelfunktion, skal du vælge **Filer > Indstillinger > Indstillinger> Funktioner til eksempelvisning** og derefter markere afkrydsningsfeltet ud for **Brugerdefinerede rapporttemaer**. Du skal genstarte **Power BI Desktop**, når du har markeret indstillingen.
+### <a name="enable-report-themes"></a>Aktivér rapporttemaer
+Fra og med august 2018-versionen af **Power BI Desktop** vil rapporttemaer være generelt tilgængelige, og de skal ikke længere aktiveres. 
+
+Hvis du bruger en tidligere version af **Power BI Desktop**, kan du aktivere funktionen som en prøvefunktion ved at vælge **Fil > Indstillinger > Indstillinger > Funktioner til eksempelvisning** og derefter markere afkrydsningsfeltet ud for **Brugerdefinerede rapporttemaer**. Du skal genstarte **Power BI Desktop**, når du har markeret indstillingen.
 
 ![](media/desktop-report-themes/report-themes_2.png)
+
+Vi anbefaler, at du altid opgraderer til den nyeste version af **Power BI Desktop**, hvilket du kan gøre via et link i [Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="how-report-themes-work"></a>Sådan fungerer rapporttemaer
 Du anvender et rapporttema for en rapport i Power BI Desktop ved at vælge knappen **Switch Theme** (Skift tema) på båndet **Home** (Hjem) og derefter vælge **Import Theme** (Importér tema) på rullelisten.
@@ -54,7 +58,7 @@ Den grundlæggende JSON-fil, der er valgt i det forrige afsnit, (filen *St Patri
 JSON-filen har følgende påkrævede linjer:
 
 * **name** – dette er temanavnet, som er det eneste påkrævede felt.
-* **dataColors** – en liste over hexkode-farvekoder til brug sammen med data i visuelle elementer i Power BI Desktop. Listen kan indeholde et vilkårligt antal farver.
+* **dataColors** – en liste over heksadecimale farvekoder til brug sammen med data i visualiseringer i Power BI Desktop. Listen kan indeholde et vilkårligt antal farver.
 * **background**, **foreground** and **tableAccent** – Disse værdier er farver, der skal anvendes i forskellige typer visualiseringer. **foreground** anvendes til tekst i tekstfelter, tekst til KPI-mål, tekst i kort med flere rækker, kortværditekst, tekst til målere, tekst til lodrette udsnitselementer og tekster med totaler og værdier for **table** og **matrix**. **background** anvendes til knapfyld og baggrunden i navne på kombinationsdiagrammer. Hvordan farverne bruges, afhænger af den specifikke typografi, der anvendes. De visuelle elementer i en **tabel** og **matrix** anvender disse typografier som standard.
 
 Hvis du vil anvende en typografi for et visuelt element i en **tabel** eller **matrix**, skal du markere det visuelle element og vælge sektionen **Format** i ruden **Visualization** (Visuel effekt) og derefter udvide **matrixtypografien** og vælge en typografi på rullelisten **Style** (Typografi).
@@ -71,7 +75,7 @@ Hvis du vil oprette din egen JSON-fil, kan du nemt klippe og sætte teksten fra 
         "tableAccent": "#568410"
     }
 
-Herefter kan du angive din egen hexfarvekode for de valgte farver.
+Herefter kan du angive din egen heksadecimale farvekode for de valgte farver.
 
 Fra og med udgivelsen af **Power BI Desktop** i september 2017 kan JSON-filen være meget mere kompleks. I JSON-filen angiver du kun den formatering, der skal påvirkes, og alt andet, der *ikke* er angivet i JSON-filen, vender blot tilbage til Power BI-standardindstillingerne.
 
@@ -141,7 +145,7 @@ Her er nogle flere rapporttemaer, som du også kan bruge som udgangspunkt:
 JSON-basisfilen har fem påkrævede linjer:
 
 * **name** – dette er temanavnet, som er det eneste påkrævede felt.
-* **dataColors** – en liste over hexkode-farvekoder til brug sammen med data i visuelle elementer i Power BI Desktop. Listen kan indeholde et vilkårligt antal farver.
+* **dataColors** – en liste over heksadecimale farvekoder til brug sammen med data i visualiseringer i Power BI Desktop. Listen kan indeholde et vilkårligt antal farver.
 * **background**, **foreground** and **tableAccent** – Disse værdier er farver, der skal anvendes i forskellige typer visualiseringer. **foreground** anvendes til tekst i tekstfelter, tekst til KPI-mål, tekst i kort med flere rækker, kortværditekst, tekst til målere, tekst til lodrette udsnitselementer og tekster med totaler og værdier for **table** og **matrix**. **background** anvendes til knapfyld og baggrunden i navne på kombinationsdiagrammer. Hvordan farverne bruges, afhænger af den specifikke typografi, der anvendes. De visuelle elementer i en **tabel** og **matrix** anvender disse typografier som standard.
 
 Hvis du vil oprette et udvidet JSON-filformat med mere detaljeret kontrol over formateringen, skal du føje et afsnit af typen **visualStyles** til JSON-filen og indlejre formateringsspecifikke data i dette afsnit. Formatet af afsnittet **visualStyles** ser ud på følgende måde:

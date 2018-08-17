@@ -7,20 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 422f0ba97f5118ddc57e9102055a070deaf99b90
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 805487087de865c25f08a29243d672fafbc26ca2
+ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329609"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39658031"
 ---
 # <a name="getting-started-with-color-formatting-and-axis-properties"></a>Introduktion til farveformatering og akseegenskaber
 I **Power BI** kan du ændre farven på dataserier, datapunkter og endda baggrunden til visualiseringer. Du kan også ændre, hvordan x- og y-aksen vises, så du har fuld kontrol over, hvordan dine dashboards og rapporter vises.
 
 For at komme i gang skal du vælge en **rapport** i ruden **Mit arbejdsområde**. Vælg **Rediger rapport** i det øverste menuområde.  
+
 ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_1a.png)
 
 Når du er ved at redigere en rapport, og du har valgt en visualisering, åbnes ruden **Visualiseringer**, hvor du kan tilføje eller ændre visualiseringer. Direkte under de tilgængelige visualiseringer er der tre ikoner: ikonet **Felter** (en stak søjler), ikonet **Formatér** (en malerrulle) og ikonet **Analytics** (et forstørrelsesglas). På billedet herunder er ikonet **Felter** valgt, hvilket er angivet med en gul linje under ikonet.
@@ -28,6 +29,7 @@ Når du er ved at redigere en rapport, og du har valgt en visualisering, åbnes 
 ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_2a.png)
 
 Når du vælger **Formatér**, viser området under ikonet de farve- og aksetilpasninger, som er tilgængelige for den visualisering, der er valgt i øjeblikket.  
+
 ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_3a.png)
 
 Du kan tilpasse mange elementer i hver visualisering:
@@ -47,14 +49,13 @@ Du kan tilpasse mange elementer i hver visualisering:
 > [!NOTE]
 >  
 > Du kan ikke se alle disse elementer med hver enkelt visualiseringstype. Den visualisering, du vælger, vil påvirke, hvilke tilpasninger der er tilgængelige. Du kan f.eks. ikke se en x-akse, hvis du har et cirkeldiagram valgt, fordi cirkeldiagrammer ikke har en x-akse.
-> 
-> 
 
 Vær endvidere opmærksom på, at hvis du ikke har nogen visualisering valgt, vises **Filtre** i stedet for ikoner, hvilket gør det muligt at anvende filtre på alle visualiseringer på siden.
 
 Lad os se et par eksempler: det ene med farver, det andet med ændring af en akses egenskaber. Herfra bør du være klar til at tilpasse farver, akser og etiketter hele dagen lang.
 
 ## <a name="working-with-colors"></a>Arbejd med farver
+
 Lad os gennemgå de trin, der er nødvendige for at tilpasse farver i et diagram.
 
 1. Jeg vælger et **grupperet søjlediagram** på rapportcanvasset.
@@ -76,6 +77,7 @@ Lad os foretage nogle ændringer. Jeg kan vælge pil ned ud for farven for at fo
 Er du ikke helt glad for den ændring, du netop har foretaget? Brug **CTRL + Z** for at fortryde, som du er vant til at gøre.
 
 ## <a name="changing-axis-properties"></a>Rediger akseegenskaber
+
 Det er ofte nyttigt at ændre x-aksen eller y-aksen. På samme måde som at arbejde med farver kan du ændre en akse ved at vælge ikonet for pil ned til venstre for den akse, du vil ændre, som det vises på følgende billede.  
 ![](media/service-getting-started-with-color-formatting-and-axis-properties/gettingstartedcolor_7a.png)
 
@@ -88,11 +90,15 @@ Der er alle mulige forskellige farver at vælge mellem og mange flere tilpasning
 > [!NOTE]
 >  
 > Disse farve-, akse- og relaterede tilpasninger, der er tilgængelige, når ikonet **Formatér** er valgt, er også tilgængelige i Power BI Desktop.
-> 
-> 
 
-## <a name="next-step"></a>Næste trin
+## <a name="setting-color-from-text-values"></a>Indstil farve fra tekstværdier
+
+Fra og med august 2018-opdateringen til **Power BI Desktop** kan du indstille farver med en tekstværdi eller heksadecimal værdi for et rapportelement. Du kan finde flere oplysninger under [betinget formatering i tabeller](desktop-conditional-table-formatting.md).
+
+
+## <a name="next-steps"></a>Næste trin
 Du kan få flere oplysninger i følgende artikel:  
 
 * [Tip og tricks til farveformatering i Power BI](service-tips-and-tricks-for-color-formatting.md)  
+* [Betinget formatering af tabeller](desktop-conditional-table-formatting.md)
 
