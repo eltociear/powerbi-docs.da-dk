@@ -8,14 +8,14 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 05/18/2018
-ms.author: v-mamcge
+ms.author: kfile
 LocalizationGroup: Reports
-ms.openlocfilehash: b3bb1e6d7d7ce5b3fdc050f5df10af9f61acac92
-ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
+ms.openlocfilehash: 2e8888679f36b64a6fc5956a9ca10dc3d07dce1a
+ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582565"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40256910"
 ---
 # <a name="power-bi-performance-best-practices"></a>Power BI-ydeevne – bedste praksis 
 Denne artikel giver vejledning i at oprette hurtige og pålidelige rapporter i Power BI.  
@@ -46,10 +46,10 @@ Se [DirectQuery i SQL Server 2016 Analysis Services](https://blogs.msdn.microsof
  
 ## <a name="directquery-and-live-connection-understand-underlying-data-source-performance"></a>DirectQuery og Direkte forbindelse: få indsigt i underliggende datakilders ydeevne 
 
-I situationer med DirectQuery eller direkte forbindelse – når brugere besøger en Power BI-rapport, så sender Power BI forespørgsler i realtid til den underliggende datakilde. Når datakilden returnerer med forespørgselsdataene, så gengives rapporten. Som et resultat heraf afhænger din rapports ydeevne i disse tilfælde hovedsageligt af den underliggende datakildes ydeevne. 
- 
-I denne situation er det vigtigt at have forståelse for din underliggende datakildes ydeevne. Forskellige datakilder har forskellige værktøjer til forståelse af forespørgslers ydeevne. SQL Server og Azure SQL omfatter eksempelvis Query Store, som henter en oversigt over forespørgsler og deres kørselsstatistik. 
- 
+I situationer med DirectQuery eller direkte forbindelse – når brugere besøger en Power BI-rapport, så sender Power BI forespørgsler i realtid til den underliggende datakilde. Når datakilden returnerer med forespørgselsdataene, så gengives rapporten. Som et resultat heraf afhænger din rapports ydeevne i disse tilfælde hovedsageligt af den underliggende datakildes ydeevne.
+
+I denne situation er det vigtigt at have forståelse for din underliggende datakildes ydeevne. Forskellige datakilder har forskellige værktøjer til forståelse af forespørgslers ydeevne. SQL Server og Azure SQL omfatter eksempelvis Query Store, som henter en oversigt over forespørgsler og deres kørselsstatistik.
+
 Du kan bruge tommelfingerreglen om, at når du implementerer Power BI-rapporter, der er baseret på DirectQuery og direkte forbindelse, så kan du prøve at gøre som dine slutbrugere i Power BI Desktop. Hvis rapporten er lang tid om at indlæse i Power BI Desktop, så vil den næsten helt sikkert også være lang tid om at indlæse i dine slutbrugeres tjeneste. 
  
 ## <a name="directquery-best-practices"></a>DirectQuery – bedste praksis 
