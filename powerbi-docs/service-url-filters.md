@@ -2,31 +2,34 @@
 title: Tilføj Power BI-rapportparametre ved hjælp af URL-adressen
 description: Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen til URL-adressen, du kan endda filtrere på mere end ét felt.
 author: mihart
-manager: kfile
+manager: annebe
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 08/09/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 52ef5b568e63d759b38ee8210873783b6c205a2a
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 99df72454fce76c648cf2f354f3a8ec225284c09
+ms.sourcegitcommit: 52278d8e0c23ae5eaf46b10a6a2f1fb071a0f1cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36965521"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40256852"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
-Når du åbner en rapport i Power BI-tjenesten, har hver side i rapporten sin egen entydige URL-adresse. Hvis du vil filtrere denne rapportside, kan du bruge ruden Filtre på rapportcanvasset.  Eller du kan føje parametre for forespørgselsstrengen til URL-adressen for at filtrere rapporten. Du har måske en rapport, du vil vise til kollegaer, og du vil filtrere den på forhånd for dem. Det kan du f.eks. gøre ved at starte med URL-standardadressen til rapporten, føje filterparametrene til URL-adressen og derefter sende dem hele URL-adressen via mail.
+Når du åbner en rapport i Power BI-tjenesten, har hver side i rapporten sin egen entydige URL-adresse. Hvis du vil filtrere denne rapportside, kan du bruge ruden Filtre på rapportcanvasset.  Eller du kan føje forespørgselsstrengparametre til URL-adressen for at filtrere rapporten. Du har måske en rapport, du vil vise til kollegaer, og du vil filtrere den på forhånd for dem. Det kan du f.eks. gøre ved at starte med URL-standardadressen til rapporten, føje filterparametrene til URL-adressen og derefter sende dem hele den nye URL-adresse via mail.
 
 ![Power BI-rapport i tjenesten](media/service-url-filters/power-bi-report2.png)
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/WQFtN8nvM4A?list=PLv2BtOtLblH3YE_Ycas5B1GtcoFfJXavO&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+## <a name="uses-for-query-string-parameters"></a>Anvendelsesområder for forespørgselsstrengparametre
+Du kan f.eks. bruge parametre i forespørgselsstrengen, hvis du arbejder i Power BI Desktop og vil oprette en rapport, der indeholder links til andre Power BI-rapporter, men kun vil vise nogle af oplysningerne i de andre rapporter. Start med at filtrere rapporterne ved hjælp af forespørgselsstrengparametre, og gem URL-adresserne. Derefter skal du oprette en tabel i Desktop med de nye URL-adresser til rapporterne.  Derefter skal du publicere og dele rapporten.
+
+Et andet anvendelsesområde for forespørgselsstrengparametre er ved oprettelse af en avanceret Power BI-løsning.  Ved hjælp af DAX kan der oprettes en rapport, der dynamisk genererer en URL-adresse til en filtreret rapport baseret på de valg, som kunden udfører i den aktuelle rapport. Når kunderne vælger URL-adressen, får de kun vist de relevante oplysninger. 
 
 ## <a name="query-string-parameter-syntax-for-filtering"></a>Syntaks til parametre for forespørgselsstreng til filtrering
-Syntaksen er forholdsvis enkel. Start med URL-adressen til rapporten, tilføj et spørgsmålstegn, og tilføj derefter din filtersyntaks.
+Med parametre kan du filtrere rapporten efter en eller flere værdier. Værdierne kan indeholde mellemrum eller specialtegn. Den grundlæggende syntaks er forholdsvis enkel. Start med URL-adressen til rapporten, tilføj et spørgsmålstegn, og tilføj derefter din filtersyntaks.
 
 URL?filter=***Tabel***/***Felt*** eq '***værdi***'
 
@@ -34,9 +37,13 @@ URL?filter=***Tabel***/***Felt*** eq '***værdi***'
 
 * I navnene for **Tabel** og **Felt** skelnes der mellem store og små bogstaver, men ikke i **værdi**.
 * Felter, der er skjult i rapportvisningen, kan stadig filtreres.
-* **Værdi** skal omgives af enkelte anførselstegn.
-* Felttypen skal være et tal eller en streng
-* Tabel- og feltnavne må ikke indeholde mellemrum.
+
+### <a name="field-types"></a>Felttyper
+Felttypen kan være et tal, dato og klokkeslæt eller streng, og typen skal stemme overens med den type, der er angivet i datasættet.  Du kan f.eks. ikke angive en tabelkolonne af typen "streng", hvis du skal finde dato og klokkeslæt eller en numerisk værdi i et datasæt, der er indstillet som en dato (f.eks. tabel/strengkolonne er 1).
+
+* **Strenge** skal omgives af enkelte anførselstegn: 'leders navn'.
+* **Tal** kræver ingen særlig formatering
+* **Datoer og klokkeslæt** skal være omsluttet med enkelt anførselstegn og have ordet **DateTime** foranstillet.
 
 Hvis det stadig er forvirrende, kan du fortsætte med at læse og vi undersøger det nærmere.  
 
@@ -60,7 +67,6 @@ Hvis du vil filtrere rapporten, så der kun vises data for butikker i "NC" (Nort
 >[!NOTE]
 >*NC* er en værdi, som er lagret i feltet **Territory** i tabellen **Store**.
 > 
-> 
 
 Nu er rapporten filtreret for North Carolina, så alle visualiseringer på rapportsiden viser kun data for North Carolina.
 
@@ -73,7 +79,7 @@ Du kan også filtrere på flere felter ved at føje yderligere parametre til din
 ?filter=Store/Territory eq 'NC'
 ```
 
-Hvis du vil filtrere på flere felter, skal du tilføje en `and` og et andet felt i samme format som ovenfor. Her er et eksempel.
+Hvis du vil filtrere på flere felter, skal du tilføje et **and** og et andet felt i samme format som ovenfor. Her er et eksempel.
 
 ```
 ?filter=Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
@@ -81,8 +87,55 @@ Hvis du vil filtrere på flere felter, skal du tilføje en `and` og et andet fel
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/0sDGKxOaC8w?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
+## <a name="operators"></a>Operatorer
+Power BI understøtter mange operatorer ud over **og**. I nedenstående tabel vises disse operatorer sammen med den indholdstype, de understøtter.
 
-### <a name="using-dax-to-filter-on-multiple-values"></a>Brug DAX til at filtrere på flere værdier
+|operator  | definition | streng  | tal | Dato |  Eksempel|
+|---------|---------|---------|---------|---------|---------|
+|**and**     | og |  ja      | ja |  ja|  produkt/pris le 200 and pris gt 3,5 |
+|**eq**     | lig med |  ja      | ja   |  ja       | Adresse/By eq 'Redmond' |
+|**ne**     | ikke lig med |   ja      | ja  | ja        |  Adresse/By ne 'London' |
+|**ge**     |  større end eller lig med       | nej | ja |ja |  produkt/pris ge 10
+|**gt**     | større end        |nej | ja | ja  | produkt/pris gt 20
+|**le**     |   mindre end eller lig med      | nej | ja | ja  | produkt/pris le 100
+|**lt**     |  mindre end       | nej | ja | ja |  produkt/pris lt 20
+|**in****     |  inklusive       | nej | nej |  ja | Studerende/alder in (27, 29)
+
+
+\** Når du bruger **in**, kan værdierne til højre for **in** være en kommasepareret liste angivet i parenteser, eller det kan være et udtryk, der returnerer en samling.
+
+### <a name="numeric-data-types"></a>Numeriske datatyper
+Et URL-filter i Power BI kan inkludere tal i følgende formater.
+
+|Taltype  |Eksempel  |
+|---------|---------|
+|**integer**     |   5      |
+|**long**     |   5L eller 5l      |
+|**double**     |   5,5 eller 55e-1 eller 0,55e+1 eller 5D eller 5d eller 0,5e1D eller 0,5e1d eller 5,5D eller 5,5d eller 55e-1D eller 55e-1d     |
+|**decimal**     |   5M eller 5m eller 5,5M eller 5,5m      |
+|**float**     | 5F eller 5f eller 0,5e1F eller 0,5e-1d        |
+
+### <a name="date-data-types"></a>Datodatatyper
+Power BI understøtter både OData V3 og V4 for datatyperne **Date** og **DateTimeOffset**.  Datoer repræsenteres vha. EDM-formatet (2019-02-12T00:00:00). Det betyder, at når du angiver en dato som ÅÅÅÅ-MM-DD, vil Power BI fortolke den som ÅÅÅÅ-MM-DDT00:00:00.
+
+Hvorfor er den forskel vigtig? Lad os sige, at du oprette en forespørgselsstrengparameter **Tabel/Dato gt 2018-08-03**.  Vil resultaterne omfatter 3. august 2018 eller starte 4. august 2018? Da Power BI oversætter din forespørgsel til **Tabel/Dato gt 2018-08-03T00:00:00**, vil dine resultater inkludere alle de datoer, som ikke har et klokkeslæt, der kun består af nuller, da disse datoer vil være større end **2018-08-03T00:00:00**.
+
+## <a name="special-characters-in-url-filters"></a>Specialtegn i URL-filtre
+Specialtegn og mellemrum kræver yderligere formatering. Når din forespørgsel indeholder mellemrum, tankestreger eller andre ikke-ASCII-tegn, skal du foranstille en *escape-kode* (**_x**) og angive den 4-cifrede **Unicode**-værdi. Hvis Unicode-værdien er på mindre end 4 tegn, skal du foranstille nuller. Her vises nogle eksempler.
+
+|Identifikator  |Unicode-værdi  | Kode til Power BI  |
+|---------|---------|---------|
+|**Tabelnavn**     | Mellemrum: 0x20        |  Navn_x0020_på_x0020_tabel       |
+|**Kolonne**@**tal**     |   @: 0x40     |  Kolonne_x0040_tal       |
+|**[Kolonne]**     |  [:0x005B ]:0x0050       |  _x0058_Kolonne_x0050       |
+|**Kolonne+Plus**     | +:0x2B        |  Kolonne_x002B_Plus       |
+
+Navn_x0020_på_x0020_tabel/Kolonne_x002B_Plus eq 3 ![specialtegn til gengivelse af tabelvisualisering](media/service-url-filters/power-bi-special-characters1.png)
+
+
+Tabel_x0020_specialtegn/_x005B_Kolonne_x0020_Kantparenteser_x005D_ eq '[C]' ![specialtegn til gengivelse af tabelvisualisering](media/service-url-filters/power-bi-special-characters2.png)
+
+### <a name="use-dax-to-filter-on-multiple-values"></a>Brug DAX til at filtrere efter flere værdier
 En anden metode til at filtrere på flere felter er at oprette en beregnet kolonne, som sammenkæder to felter til en enkelt værdi. Derefter kan du filtrere på denne værdi.
 
 Vi har f.eks. to felter: Territory og Chain. [Opret en ny beregnet kolonne](desktop-tutorial-create-calculated-columns.md) (felt) med navnet TerritoryChain i Power BI Desktop. Husk, at navnet på **Felt** ikke må indeholde mellemrum. Her er DAX-formlen for den pågældende kolonne.
@@ -94,18 +147,22 @@ Publicer rapporten på Power BI-tjenesten, og brug derefter URL-forespørgselsst
     https://app.powerbi.com/groups/me/reports/8d6e300b-696f-498e-b611-41ae03366851/ReportSection3?filter=Store/TerritoryChain eq 'NC–Lindseys'
 
 ## <a name="pin-a-tile-from-a-filtered-report"></a>Fastgør et felt fra en filtreret rapport
-Når du har filtreret rapporten ved hjælp af parametre for forespørgselsstrengen, kan du kan fastgøre visualiseringer fra denne rapport til dit dashboard. Feltet på dashboardet viser de filtrerede data, og når dette dashboardfelt vælges, åbnes den rapport, der blev brugt til at oprette det.  Men filtreringen, du foretog ved hjælp af URL-adressen, gemmes ikke med rapporten, og når dashboardfeltet vælges, åbnes rapporten i ufiltreret tilstand.  Det betyder, at de data, der vises i dashboardfeltet, ikke svarer til de data, der vises i rapportvisualiseringen.
+Når du har filtreret rapporten ved hjælp af parametre for forespørgselsstrengen, kan du kan fastgøre visualiseringer fra denne rapport til dit dashboard.  Feltet på dashboardet viser de filtrerede data, og når dette dashboardfelt vælges, åbnes den rapport, der blev brugt til at oprette det.  Men filtreringen, du foretog ved hjælp af URL-adressen, gemmes ikke med rapporten, og når dashboardfeltet vælges, åbnes rapporten i ufiltreret tilstand.  Det betyder, at de data, der vises i dashboardfeltet, ikke svarer til de data, der vises i rapportvisualiseringen.
 
-Der kan være nogle tilfælde, hvor dette er nyttigt, når du vil se forskellige resultater: filtreret på dashboardet og ufiltreret i rapporten.
+Dette er nyttigt, når du vil se forskellige resultater: filtreret på dashboardet og ufiltreret i rapporten.
+
+> [!NOTE]
+> Fastgjorte felter med [dynamiske rapportsider](service-dashboard-pin-live-tile-from-report.md) understøtter endnu ikke URL-filtre. 
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 Der er et par ting, du skal være opmærksom på, når du bruger parametre for forespørgselsstrengen.
 
-* På Power BI-rapportserveren kan du [sende rapportparametre](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) ved at inkludere dem i en URL-adresse til rapporten. Disse parametre i URL-adressen har ikke noget præfiks, da de sendes direkte til det program, der behandler rapporten. 
+* Når du bruger operatoren *in*, skal værdierne til højre for *in* være en kommasepareret liste angivet i parenteser.    
+* På Power BI-rapportserveren kan du [sende rapportparametre](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) ved at inkludere dem i en URL-adresse til rapporten. Disse parametre i URL-adressen har ikke noget præfiks, da de sendes direkte til det program, der behandler rapporten.    
 * Filtrering af forespørgselsstrengen fungerer ikke sammen med [Publicer på internettet](service-publish-to-web.md) eller Power BI Embedded.   
-* Felttypen skal være et tal eller en streng.
-* Tabel- og feltnavne må ikke indeholde mellemrum.
-
+* Datatypen long er (2^53-1) på grund af begrænsninger i Javascript.
+* Fastgjorte felter med *dynamiske rapportsider* understøtter endnu ikke URL-filtre. 
+ 
 ## <a name="next-steps"></a>Næste trin
 [Fastgør en visualisering til et dashboard](service-dashboard-pin-tile-from-report.md)  
 [Tilmeld dig en gratis prøveversion](https://powerbi.microsoft.com/get-started/)
