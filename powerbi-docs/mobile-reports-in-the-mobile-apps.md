@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/05/2018
+ms.date: 08/17/2018
 ms.author: maggies
-ms.openlocfilehash: 5b4d5ea7970dd44cfebadca6935452688515aef5
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: eee7c4989c4856ab86cb4883f8004198da00e4fd
+ms.sourcegitcommit: 23bb84cd3e80ba7f03d559e48db322774d1a6fe0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34799412"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "40256855"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -84,7 +84,7 @@ Når du vælger en værdi i en visualisering, filtreres de øvrige visualisering
 ## <a name="drill-down-and-up-in-a-visual"></a>Analysér ned og op i en visualisering
 Hvis forfatteren til en rapport har gjort det muligt at analysere ned i en visualisering, kan du gør det for at se de værdier, som er brugt til en del af den. Du kan [tilføje detailudledning i en visualisering](power-bi-visualization-drill-down.md) i Power BI Desktop eller Power BI-tjenesten. 
 
-* Tryk på et datapunkt i en visualisering for at få vist værktøjstippet. Hvis du kan analysere ned, findes der pile nederst i værktøjstippet, som du kan trykke på. 
+* Tryk på og hold ned på et datapunkt i en visualisering for at få vist værktøjstippet. Hvis du kan analysere ned, findes der pile nederst i værktøjstippet, som du kan trykke på. 
   
   ![Detailudledning i en visualisering](media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-tooltip.png)
 

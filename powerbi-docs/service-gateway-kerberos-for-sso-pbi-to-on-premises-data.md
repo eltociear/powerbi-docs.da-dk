@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/09/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 402a39ef9e52fe61d80940a5050997ba19930209
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: bf5120b1c4d787dd13e21245b234207123221fc4
+ms.sourcegitcommit: 9d6f37fd32b965592bd7b108dea87b8e53b11334
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964831"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40257241"
 ---
 # <a name="use-kerberos-for-sso-single-sign-on-from-power-bi-to-on-premises-data-sources"></a>Brug Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø
 Du kan få problemfri forbindelse med enkeltlogon, så Power BI-rapporter og -dashboards kan opdateres fra data i det lokale miljø, ved at konfigurere din datagateway i det lokale miljø med Kerberos. Datagatewayen i det lokale miljø gør det muligt at foretage enkeltlogon (SSO) ved hjælp af DirectQuery, som den bruger til at oprette forbindelse til datakilder i det lokale miljø.
@@ -51,9 +51,7 @@ Der følger flere oplysninger om disse trin:
    - Brugerrepræsentation og forbindelse til databasen lykkes kun, hvis gatewaytjenestens konto er en domænekonto (eller en tjeneste-SID), og hvis Kerberos-begrænset delegering blev konfigureret, så databasen accepterer Kerberos-billetter fra gatewaytjenestens konto.  
    
    > [!NOTE]
-   > I forbindelse med tjeneste-SID, og hvis AAD DirSync/Connect er konfigureret, og brugerkonti er synkroniseret, behøver gatewaytjenesten ikke at udføre lokale AD-opslag på kørselstidspunktet, og du kan bruge den lokale tjeneste-SID (i stedet for at kræve en domænekonto) til gatewaytjenesten.  Konfigurationstrinnene i den Kerberos-begrænsede delegering, der er skitseret i dette dokument, er de samme (anvendelsen er blot baseret på tjeneste-SID i stedet for domænekonto).
-   > 
-   > 
+   > Med hensyn til tjenesten SID: Hvis AAD DirSync/Connect er konfigureret, og brugerkonti er synkroniseret, skal gatewaytjenesten ikke udføre lokale AD-opslag på kørselstidspunktet, og du kan bruge den lokale Service SID (i stedet for at kræve en domænekonto) for gatewaytjenesten. De trin til konfiguration af Kerberos Constrained Delegation, som er beskrevet i denne artikel, er de samme som den konfiguration (de anvendes blot på gatewayens computerobjekt i Active Directory i stedet for på domænekontoen).
 
 
 > [!NOTE]

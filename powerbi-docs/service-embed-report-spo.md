@@ -2,21 +2,21 @@
 title: Integrer med rapportwebdelen i SharePoint Online
 description: Med Power BI’s nye rapportwebdel til SharePoint Online kan du nemt kan integrere interaktive Power BI-rapporter på SharePoint Online-sider.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/25/2018
-ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: 63cb1fe3061d1ba48e71a4ac09862fce29dd9196
-ms.sourcegitcommit: ba3cab4613a2b815d46a213eff07a8a8ec22c17f
+ms.date: 08/16/2018
+ms.openlocfilehash: 85e04993639d3c2897d2d7dddc00e79fd4fdf0c6
+ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39032042"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40257251"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Integrer med rapportwebdelen i SharePoint Online
 
@@ -28,6 +28,7 @@ Når du bruger den nye indstilling **Integrer i SharePoint Online**, er de integ
 
 Der er et par krav for, at **Integrer i SharePoint Online**-rapporter kan fungere.
 
+* Du skal have en Power BI Pro-licens eller en [Power BI Premium-kapacitet (EM- eller P-SKU)](service-premium.md#premium-capacity-nodes) med en Power BI-licens.
 * Power BI-webdelen til SharePoint Online kræver [moderne sider](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 
 ## <a name="embed-your-report"></a>Integrer din rapport

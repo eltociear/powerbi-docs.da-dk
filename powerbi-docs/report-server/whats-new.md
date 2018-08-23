@@ -2,22 +2,23 @@
 title: Nyheder i Power BI-rapportserver
 description: Læs om nyheder i Power BI-rapportserver. Dette dækker de primære funktionsområder og opdateres i takt med, at der frigives nye elementer.
 author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/21/2018
-ms.author: maggies
-ms.openlocfilehash: 07c393425d2a04376a4fcf81c2c35a0e115eeaee
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.date: 08/16/2018
+ms.openlocfilehash: d9b0cc26a3662b49cd7ed14a3a645ddf2a4536bc
+ms.sourcegitcommit: 640382408111d6e9cd1b9dfad0b484e3c727e454
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34481946"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40258031"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
-Læs om nyheder i Power BI-rapportserver. Dette dækker de primære funktionsområder og opdateres i takt med, at der frigives nye elementer.
+
+Læs om nyheder i Power BI-rapportserver. I denne artikel beskrives de primære funktionsområder, og den opdateres, når der udgives nye elementer.
 
 Hvis du vil downloade Power BI-rapportserver og Power BI Desktop optimeret til Power BI-rapportserver, skal du gå til [Rapportering i det lokale miljø med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
 
@@ -33,15 +34,116 @@ Du kan finde relaterede oplysninger om nyheder i Power BI under:
 * [Nyheder i Power BI Desktop](../desktop-latest-update.md)
 * [Nyheder i mobilappsene til Power BI](../mobile-whats-new-in-the-mobile-apps.md)
 
+## <a name="august-2018"></a>August 2018
+
+I august 2018 kommer der mange nye funktioner i Power BI Desktop, som er optimeret til Power BI-rapportserver. Her er de nye funktioner efter område:
+
+- [Rapportering](#reporting)
+- [Analyse](#analytics)
+- [Modellering](#modeling)
+
+### <a name="highlights-of-the-august-2018-release"></a>Højdepunkter i august 2018-versionen
+
+Blandt de mange nye funktioner er følgende funktioner særligt interessante. Du kan finde flere oplysninger i dette [blogindlæg](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/).
+
+#### <a name="report-theming"></a>Rapporttemaer
+
+I august 2018-versionen af Power BI-rapportserver har vi tilføjet rapporttemaer, så du hurtigt kan anvende farver i hele din rapport, så den matcher et tema eller virksomhedens branding. Når du importerer et tema, bliver alle dine diagrammer automatisk opdateret til at bruge temafarverne, og du har adgang til temafarverne i farvepaletten. Du kan uploade en temafil ved hjælp af indstillingen **Importér tema** under knappen **Skift tema**.
+
+En temafil er en JSON-fil, der indeholder alle de farver, du vil bruge i din rapport, sammen med en standardformatering, du vil anvende på visualiseringer.
+Her er et eksempel på et JSON-tema, der kun opdaterer standardfarverne i rapporten:
+
+```json
+{
+"name": "waveform",
+"dataColors": [ "#31B6FD", "#4584D3", "#5BD078", "#A5D028", "#F5C040", "#05E0DB", "#3153FD", "#4C45D3", "#5BD0B0", "#54D028", "#D0F540", "#057BE0" ],
+"background":"#FFFFFF",
+"foreground": "#F2F2F2",
+"tableAccent":"#5BD078"
+}
+```
+
+#### <a name="conditional-formatting-by-a-different-field"></a>Betinget formatering af et andet felt
+
+Muligheden for at formatere en kolonne efter et andet felt i modellen er en af de betydelige forbedringer af betinget formatering.
+
+#### <a name="conditional-formatting-by-values"></a>Betinget formatering efter værdier
+
+En anden ny type betinget formatering er **Formatér efter feltværdi**. Med Formatér efter feltværdi kan du bruge et mål eller en kolonne, der specificerer en farve, enten ved at angive en heksadecimal kode eller et navn for at anvende farven som baggrundsfarve eller skriftfarve.
+
+#### <a name="report-page-tooltips"></a>Værktøjstip for rapportside
+
+Funktionen med værktøjstip på rapportsiden er inkluderet i august 2018-opdateringen af Power BI-rapportserver. Med denne funktion kan du designe en rapportside, der skal bruges som et brugerdefineret værktøjstip til andre visualiseringer i din rapport.
+
+#### <a name="log-axis-improvements"></a>Forbedringer af logaritmisk akse
+
+Vi har forbedret den logaritmiske akse i dine kartesiske diagrammer væsentligt. Det er nu muligt at vælge en logaritmisk skala for den numeriske akse i et kartesisk diagram, herunder kombinationsdiagrammer, når du har data, som er udelukkende positive eller udelukkende negative.
+
+#### <a name="sap-hana-sso-direct-query"></a>SAP HANA SSO Direct Query
+
+SAP HANA SSO Direct Query understøttes nu med Kerberos for Power BI-rapporter.
+
+>[!Note]
+>Dette scenarie understøttes kun, når SAP HANA behandles som en relationel datakilde med rapporter, du har oprettet i Power BI Desktop.  Hvis du vil aktivere dette i Power BI Desktop, skal du gå til DirectQuery-menuen under Indstillinger, markere "Behandl SAP HANA som en relationel kilde" og klikke på OK.
+
+#### <a name="custom-visuals"></a>Brugerdefinerede visuelle elementer
+
+- Med denne version leveres API version 1.13.0.
+
+- Nu kan brugerdefinerede visualiseringer falde tilbage på en tidligere version, der er kompatibel med den aktuelle version af server-API'et (hvis tilgængeligt).
+
+### <a name="reporting"></a>Rapportering 
+
+- [Rapporttemaer](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#theming)
+- [Knapper til at udløse handlinger](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#buttons)
+- [Stregtyper i kombinationsdiagram](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#comboLines)
+- [Forbedret standardsortering af visualiseringer](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#sort)
+- [Numerisk udsnit](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#numericSlicer)
+- [Synkronisering af avancerede udsnit](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#slicerSync)
+- [Forbedringer af logaritmisk akse](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#logAxis)
+- [Indstillinger for datanavne for tragtformet diagram](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#funnelChart)
+- [Angiv stregbredden til nul](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#lineStroke)
+- [Understøttelse af stor kontrast i rapporter](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#highContrast)
+- [Kontrolelementet kranseradius](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#donutRadius)
+- [Kontrolelement med navne på placering af cirkel- og kransediagram](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#detailLabels)
+- [Formatér datanavne separat for hver måling i et kombinationsdiagram](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#comboLabels)
+- [Ny visuel overskrift med større fleksibilitet og flere formateringsmuligheder](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#visualHeader)
+- [Formatering af baggrund](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#wallpaper)
+- [Værktøjstip til tabel og matrix](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#tableTooltips)
+- [Slå værktøjstip fra for visualiseringer](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#tooltips)
+- [Tilgængelighed for udsnit](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#slicerAccessibility)
+- [Forbedringer til fanen Formatering](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#formattingPane)
+- [Understøttelse af trinvise linjer i kurve- og kombinationsdiagrammer](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#steppedLine)
+- [Bedre sorteringsfunktioner](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#sorting)
+- [Udskriv rapporter via Eksportér til PDF (i Power BI Desktop)](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#print)
+- [Opret bogmærkegrupper](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#bookmarks)
+- [Tilpasning af udsnit](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#slicer)
+- [Værktøjstip for rapportside](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#reportPageTooltips)
+
+### <a name="analytics"></a>Analytics
+
+- [Ny DAX-funktion: COMBINEVALUES()](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#combineValues)
+- [Mål detaljeadgang](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#measureDrillthrough)
+- [Betinget formatering af et andet felt](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#conditionalFormattingField)
+- [Betinget formatering efter værdier](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#conditionalFormattingValue)
+
+### <a name="modeling"></a>Udformning
+
+- [Filtrering og sortering i datavisning](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#filterAndSort)
+- [Forbedret formatering af landestandarder](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#locale)
+- [Datakategorier til målinger](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#dataCategory)
+- [Statistiske DAX-funktioner](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#dax)
+
 ## <a name="may-2018"></a>Maj 2018
 
 ### <a name="configure-power-bi-ios-mobile-apps-for-report-servers-remotely"></a>Konfigurer Power BI iOS-mobilapps eksternt for rapportservere
 
 Som it-administrator kan du bruge din organisations MDM-værktøj til eksternt at konfigurere adgang til en rapportserver for Power BI iOS-mobilapps. Se [Konfigurer Power BI iOS-mobilapps eksternt for rapportservere](configure-powerbi-mobile-apps-remote.md) for at få flere oplysninger.
 
-## <a name="march-2018-release"></a>Version fra marts 2018
+## <a name="march-2018"></a>Marts 2018
 
-Den nye version af Power BI Desktop optimeret til Power BI-rapportserver fra marts 2018 indeholder en lang række nye funktioner. Her er de nye funktioner efter område: 
+Den nye version af Power BI Desktop optimeret til Power BI-rapportserver fra marts 2018 indeholder en lang række nye funktioner. Her er de nye funktioner efter område:
+
 - [Visualisering](#visuals-updates)
 - [Rapportering](#reporting)
 - [Analyse](#analytics)
@@ -49,12 +151,12 @@ Den nye version af Power BI Desktop optimeret til Power BI-rapportserver fra mar
 - [Rapportserver](#report-server)
 - [Andet](#other-improvements)
 
-### <a name="highlights-of-this-release"></a>Højdepunkter i denne version
+### <a name="highlights-of-the-march-2018-release"></a>Højdepunkter i marts 2018-versionen
 
 Blandt de mange nye funktioner er følgende funktioner særligt interessante.
 
 #### <a name="rule-based-conditional-formatting-for-table-and-matrixhttpspowerbimicrosoftcomblogpower-bi-desktop-november-2017-feature-summaryconditionalformatting"></a>[Regelbaseret betinget formatering til tabel og matrix](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#conditionalFormatting)
- 
+
 Opret regler baseret på betingelser. Du kan f.eks. farvelægge baggrunden eller vælge skrifttypefarven for en kolonne baseret på tabellens eller matrixens specifikke forretningslogik.
 
 #### <a name="show-and-hide-pageshttpspowerbimicrosoftcomblogpower-bi-desktop-january-2018-feature-summaryhidepages"></a>[Vis og skjul sider](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#hidePages)
@@ -113,20 +215,19 @@ Når du foretager detaljeudledning i en bestemt kategori i en visualisering, kan
 - [Markér brugerdefineret datotabel](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
 - [Detaljeudledning filtrerer andre visualiseringer](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#drillFiltersOtherVisuals)
 - [Formatering på celleniveau for flerdimensionelle AS-modeller til kort med flere rækker](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#cellLevelFormatting)
- 
+
 ### <a name="performance"></a>Ydeevne
 
 - [Forbedring af ydeevnen ved filtrering](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#filtering)
 - [Forbedring af ydeevnen for DirectQuery](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#dqPerf)
 - [Forbedring af ydeevnen ved åbn og gem](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#savePerf)
 - [Forbedring af "Vis elementer uden data"](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#showItemsWithNoData)
- 
-### <a name="report-server"></a>Rapportserver 
+
+### <a name="report-server"></a>Rapportserver
 
 #### <a name="export-to-accessible-pdf"></a>Eksport til tilgængelig PDF
 
 Når du eksporterer en sideinddelt rapport (RDL) til PDF, kan du nu eksportere til en tilgængelig/tagget PDF-fil. Filen fylder mere, men skærmlæsere og andre hjælpemidler har nemmere ved at læse og navigere i den. Tilgængelig PDF aktiveres ved at angive indstillingen **AccessiblePDF** under enhedsoplysninger til **Sand**. Se [PDF-indstillinger for enhedsoplysninger](https://docs.microsoft.com/sql/reporting-services/pdf-device-information-settings) og [Ændring af indstillinger for enhedsoplysninger](https://docs.microsoft.com/sql/reporting-services/customize-rendering-extension-parameters-in-rsreportserver-config#changing-device-information-settings).
-
 
 ### <a name="other-improvements"></a>Andre forbedringer
 
@@ -135,27 +236,34 @@ Når du eksporterer en sideinddelt rapport (RDL) til PDF, kan du nu eksportere t
 - [Forbedret fejlrapportering](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#errors)
 - [Visning af tidligere fejl, du har oplevet](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#viewErrors)
 
- 
-## <a name="october-2017-release"></a>Udgivelse fra oktober 2017
+## <a name="october-2017"></a>Oktober 2017
+
 ### <a name="power-bi-report-data-sources"></a>Power BI-rapportdatakilder
+
 Power BI-rapporter i Power BI-rapportserver kan oprette forbindelse til en række forskellige datakilder. Du kan importere data og planlægge dataopdateringer, eller du kan forespørge på dem direkte ved hjælp af DirectQuery eller en liveforbindelse til SQL Server Analysis Services. Se listen over datakilder, der understøtter planlagt opdatering, og dem, der understøtter DirectQuery, i "Power BI-rapportdatakilder i Power BI-rapportserver".
 
 ### <a name="scheduled-data-refresh-for-imported-data"></a>Planlagt dataopdatering for importerede data
+
 I Power BI-rapportserver kan du konfigurere planlagt opdatering af data for at sikre, at dataene er opdateret i Power BI-rapporter ved hjælp af en integreret model i stedet for en liveforbindelse eller DirectQuery. Med en integreret model importerer du dataene, så forbindelsen til den oprindelige datakilde afbrydes. Den skal opdateres for at holde dataene friske, og planlagt opdatering er måden at gøre det på. Læs mere om planlagt opdatering til Power BI-rapporter i Power BI-rapportserver.
 
 ### <a name="editing-power-bi-reports-from-the-server"></a>Redigering af Power BI-rapporter fra serveren
+
 Du kan åbne og redigere Power BI-rapportfiler (.pbix) fra serveren, men du får den oprindelige fil tilbage, du har uploadet.  Det betyder, at **hvis dataene er blevet opdateret af serveren, opdateres dataene ikke, når du åbner filen første gang**. Du skal opdatere manuelt lokalt for at se ændringen.
 
 ### <a name="large-file-uploaddownload"></a>Upload/download af store filer
+
 Du kan uploade filer på op til 2 GB, men som standard er denne grænse indstillet til 1 GB i indstillingerne for rapportserver i SQL Server Management Studio (SSMS).  Disse filer gemmes, som de er, i databasen til SharePoint, og der kræves ingen særlig konfiguration for SQL Server-kataloget.  
 
 ### <a name="accessing-shared-datasets-as-odata-feeds"></a>Få adgang til delte datasæt såsom OData-feeds
+
 Du kan få adgang til delte datasæt fra Power BI Desktop med et OData-feed. Du kan få mere at vide i [Få adgang til delte datasæt såsom OData-feeds på Power BI-rapportserver](access-dataset-odata.md).
 
 ### <a name="scale-out"></a>Scale-out
+
 Denne udgave understøtter scale-out. Brug en belastningsjustering, og angiv servertilknytning for at få den bedste oplevelse. Bemærk, at scenariet endnu ikke er optimeret til scale-out, så du får vist modeller, som kan være replikeret på tværs af flere noder. Scenariet fungerer uden Network Load Balancer og sticky sessions. Du vil dog ikke kun se et overforbrug af hukommelse på tværs af noder, fordi modellen indlæses N gange, men ydeevnen sænkes mellem forbindelserne, da modellen streames, når den rammer en ny node mellem anmodningerne.  
 
 ### <a name="administrator-settings"></a>Administratorindstillinger
+
 Administratorer kan angive følgende egenskaber for serverfarmen under Avancerede egenskaber i SSMS:
 
 * EnableCustomVisuals: Sand/Falsk
@@ -179,14 +287,17 @@ Administratorer kan angive følgende egenskaber for serverfarmen under Avancered
 ```
 
 ### <a name="developer-api"></a>Udvikler-API
+
 Udvikler-API'en (REST-API), der blev introduceret i SSRS 2017, er blevet udvidet til Power BI-rapportserver for at fungere sammen med både Excel-filer og .pbix-filer. En potentiel use case er programmeringsmæssigt at downloade filer fra serveren, opdatere dem og publicere dem igen. Dette er eksempelvis den eneste måde, hvorpå du kan opdatere Excel-projektmapper med PowerPivot-modeller.
 
 Bemærk, at der er en ny separat API til store filer, som vil blive opdateret i Power BI-rapportserverversionen af Swagger. 
 
 ### <a name="sql-server-analysis-services-ssas-and-the-power-bi-report-server-memory-footprint"></a>Hukommelsesfodaftryk for SQL Server Analysis Services (SSAS) og Power BI-rapportserver
+
 Power BI-rapportserver hoster nu SQL Server Analysis Services (SSAS) internt. Dette er ikke specifikt for planlagt opdatering. At hoste SSAS kan markant udvide hukommelsesfodaftrykket for rapportserveren. AS.ini-konfigurationsfilen findes på servernoderne, så hvis du kender SSAS, kan du opdatere indstillingerne, herunder største hukommelsesgrænse og cachelagring på disk osv. Se [Serveregenskaber i Analysis Services](https://docs.microsoft.com/sql/analysis-services/server-properties/server-properties-in-analysis-services), for at få mere at vide.
 
 ### <a name="viewing-and-interacting-with-excel-workbooks"></a>Få vist og interager med Excel-projektmapper
+
 Excel og Power BI indeholder en portefølje af værktøjer, som er de eneste af deres slags i branchen. Tilsammen giver de forretningsanalytikere mulighed for nemmere at indsamle, forme, analysere og udforske deres data visuelt. Foruden at få vist Power BI-rapporter i webportalen kan virksomhedsbrugerne nu gøre det samme med Excel-projektmapper i Power BI-rapportserver, hvilket giver dem én samlet placering til at publicere og få vist deres Microsoft BI-indhold til selvbetjening.
 
 Vi har udgivet en [gennemgang af, hvordan du tilføjer Office Online Server (OOS) i miljøet i din prøveversion af Power BI-rapportserver](excel-oos.md). Kunder, der har en volumenlicenskonto, kan downloade OOS fra Volume License Service Center uden omkostninger og få skrivebeskyttet funktionalitet. Efter konfigurationen kan brugerne få vist og interagere med Excel-projektmapper, der:
@@ -196,20 +307,24 @@ Vi har udgivet en [gennemgang af, hvordan du tilføjer Office Online Server (OOS
 * har en PowerPivot-datamodel.
 
 ### <a name="support-for-new-table-and-matrix-visuals"></a>Understøttelse af nye tabel- og matrixvisuals
+
 Power BI-rapportserver understøtter nu de nye Power BI-tabel- og matrixvisuals. Hvis du vil oprette rapporter med disse visuals, skal du bruge en opdateret version af Power BI Desktop-udgave til versionen fra oktober 2017. Den kan ikke installeres side om side med versionen af Power BI Desktop fra juni 2017. Hvis du vil have den seneste version af Power BI Desktop, skal du vælge **Avancerede indstillinger for hentning af filer** på [siden til download af Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
 
 ## <a name="june-2017"></a>Juni 2017
+
 * Power BI-rapportserver er blevet gjort offentligt tilgængeligt (GA).
 
 ## <a name="may-2017"></a>Maj 2017
+
 * Prøveversion af Power BI-rapportserver gjort tilgængelig
 * Mulighed for at publicere Power BI-rapporter i det lokale miljø
-  * Understøttelse af brugerdefinerede visuals
-  * Kun understøttelse af Analysis Services-liveforbindelser, men med flere datakilder på vej.
+  * understøttelse af brugerdefinerede visualiseringer
+  * Kun understøttelse af **Analysis Services-liveforbindelser**, men med flere datakilder på vej.
   * Appen Power BI - Mobil er blevet opdateret til at vise Power BI-rapporter, der hostes i Power BI-rapportserver
 * Forbedret samarbejde i rapporter med kommentarer
 
 ## <a name="next-steps"></a>Næste trin
+
 [Hvad er Power BI-rapportserveren?](get-started.md) 
 [Administratorhåndbog](admin-handbook-overview.md)  
 [Installer Power BI-rapportserver](install-report-server.md)  
@@ -217,4 +332,3 @@ Power BI-rapportserver understøtter nu de nye Power BI-tabel- og matrixvisuals.
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: a9663951035a697a9fb1f8732d2ce418950078f4
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 0d165505981f841c7dfe9688c7a95cea3b6777c3
+ms.sourcegitcommit: 8990028a348b642ba5c96f001fe3a4280f0166ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37600373"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40256819"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Brug udviklerværktøjer til at oprette brugerdefinerede visuals
 Du kan bruge visuals til at opfylde dine brugeres behov og matche din apps design. Få mere at vide om, hvordan du opretter brugerdefinerede visuals til Power BI med udviklerværktøjer.
@@ -178,10 +178,10 @@ Du kan nu begynde at udvikle dit visual.
 Du kan oprette et nyt visuelt projekt ved at køre den følgende kommando.
 
 ```
-pbiviz new My Visual name
+pbiviz new MyVisualName
 ```
 
-Du kan erstatte *Navn på visual* med det ønskede visuals navn. Dette kan ændres senere ved at redigere felterne `name` og `displayName` i den genererede `pbiviz.json`-fil.
+Du kan erstatte *MyVisualName* med det ønskede navn på visualiseringen. Dette kan ændres senere ved at redigere felterne `name` og `displayName` i den genererede `pbiviz.json`-fil.
 
 Denne kommando opretter en ny mappe i den direkte eksempelvisning, hvor kommandoen blev kørt. Den genererer en grundlæggende startskabelon for dit visual. Når kommandoen er udført, kan du åbne mappen og bruge dit foretrukne redigeringsprogram til at begynde arbejdet på det nye visual.
 

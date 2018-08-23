@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/02/2018
+ms.date: 08/15/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e2b61f84b459d3b14c2cd066e0261dcdb1b8a5ef
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: db77e3e7421074383f67bffad318e6f7f4c3df28
+ms.sourcegitcommit: 52278d8e0c23ae5eaf46b10a6a2f1fb071a0f1cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36965498"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40257344"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administrationsportal
 
@@ -100,42 +100,43 @@ Du kan finde flere oplysninger om overvågningslogge under [Overvågning af Powe
 
 Den tredje fane i administrationsportalen er **Lejerindstillinger**. Lejerindstillingerne giver dig yderligere kontrol over, hvilke funktioner der gøres tilgængelige i din virksomhed. Hvis du har bekymringer omkring følsomme data, kan det være, at nogle af vores funktioner ikke er passende for din virksomhed, eller du vil måske kun have, at en given funktion er tilgængelig for en bestemt gruppe. Hvis det er tilfældet, kan du slå funktionen fra i din lejer.
 
-Brugerspecifikke data er f.eks. aktiveret for forbrugsdata som standard, og kontooplysninger om oprettere af indhold indgår i rapporten med forbrugsdata. Hvis du ikke vil medtage disse oplysninger for nogle eller alle brugere, kan du deaktivere funktionen for nærmere angivne sikkerhedsgrupper eller for en hel organisation. Kontooplysninger vises derefter i rapporten som *Ikke-navngivet*.
-
 ![](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
 > [!NOTE]
 > Det kan tage op til ti minutter for indstillingen at træde i kraft for alle i din lejer.
 
-Indstillinger kan have tre tilstande, som er baseret på de indstillinger, du har angivet.
+Indstillingerne kan have tre tilstande:
 
-### <a name="disabled-for-the-entire-organization"></a>Deaktiveret for hele virksomheden
+* **Deaktiveret for hele organisationen**: Du kan deaktivere en funktion, så brugere ikke kan tilgå den.
 
-Du kan deaktivere en funktion, så brugere ikke kan tilgå den.
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
+* **Aktiveret for hele organisationen**: Du kan aktivere en funktion for hele virksomheden, hvorved alle brugere har adgang til den pågældende funktion.
 
-### <a name="enabled-for-the-entire-organization"></a>Aktiveret for hele virksomheden
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-Du kan aktivere en funktion for hele virksomheden, hvorved alle brugere har adgang til den pågældende funktion.
+* **Aktiveret for en del af organisationen**: Du kan også aktivere en funktion delvist for din virksomhed. Dette kan foregå på et par forskellige måder. Du kan aktivere den for hele din virksomhed med undtagelse af en bestemt gruppe brugere.
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
 
-### <a name="enabled-for-a-subset-of-the-organization"></a>Aktiveret for et udsnit af virksomheden
+    Du kan også aktivere funktionen udelukkende for en bestemt gruppe af brugere og også deaktivere den for en gruppe af brugere. Dette vil sørge for, at visse brugere ikke har adgang til funktionen, selvom de er medlemmer af den tilladte gruppe.
 
-Du kan også aktivere en funktion delvist for din virksomhed. Dette kan foregå på et par forskellige måder. Du kan aktivere den for hele din virksomhed med undtagelse af en bestemt gruppe brugere.
+    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
+De næste par afsnit giver et overblik over de forskellige typer af lejerindstillinger.
 
-Du kan også aktivere funktionen udelukkende for en bestemt gruppe af brugere og også deaktivere den for en gruppe af brugere. Dette vil sørge for, at visse brugere ikke har adgang til funktionen, selvom de er medlemmer af den tilladte gruppe.
+## <a name="workspace-settings"></a>Indstillinger for arbejdsområde
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+### <a name="create-workspaces-preview"></a>Opret arbejdsområder (prøveversion)
+Brugere i organisationen kan oprette apparbejdsområder til at samarbejde om dashboards, rapporter og andet indhold.
+
+Du kan finde flere oplysninger under [Opret de nye arbejdsområder](service-create-the-new-workspaces.md).
 
 ## <a name="export-and-sharing-settings"></a>Eksport- og delingsindstillinger
 
 ### <a name="share-content-to-external-users"></a>Deling af indhold med eksterne brugere
 
-Brugere i virksomheden kan dele dashboards med brugere uden for virksomheden.
+Brugere i organisationen kan dele dashboards med brugere uden for organisationen.
 
 ![](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
@@ -244,7 +245,7 @@ Brugere i virksomheden kan interagere med og dele visuelle elementer oprettet me
 > [!NOTE]
 > Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
 
-## <a name="audit-settings"></a>Indstillinger for overvågning
+## <a name="audit-and-usage-settings"></a>Indstillinger for overvågning og brug
 
 ### <a name="create-audit-logs-for-internal-activity-auditing-and-compliance"></a>Opret overvågningslogge for intern aktivitetsovervågning og overholdelse
 
@@ -254,6 +255,25 @@ Denne indstilling skal være aktiveret, for at overvågningslogposter bliver reg
 
 > [!NOTE]
 > Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
+
+### <a name="usage-metrics-for-content-creators"></a>Forbrugsdata for oprettere af indhold
+Brugere i organisationen kan se forbrugsdata for dashboards og rapporter, som de har oprettet. [Få mere at vide](service-usage-metrics.md).
+
+Du kan skifte indstillingen til **Aktiveret** og derefter angive, hvem der kan se forbrugsdata (hele organisationen eller bestemte sikkerhedsgrupper).
+
+> [!NOTE]
+> Husk, at det kan tage noget tid, før ændringer af indstillingerne for lejer træder i kraft.
+
+### <a name="per-user-data-in-usage-metrics-for-content-creators"></a>Brugerspecifikke data i forbrugsdata for indholdsforfattere
+Forbrugsdata for indholdsforfattere viser viste navne og mailadresser for de brugere, der har adgang til indhold. [Få mere at vide](service-usage-metrics.md).
+
+Du kan skifte indstillingen til **Aktiveret** og derefter angive, hvem der kan se viste navne og mailadresser i forbrugsdata (hele organisationen eller bestemte sikkerhedsgrupper).
+
+Brugerspecifikke data er som standard aktiveret for forbrugsdata, og kontooplysninger om indholdsforfattere indgår i rapporten med forbrugsdata. Hvis du ikke vil medtage disse oplysninger for nogle eller alle brugere, kan du deaktivere funktionen for nærmere angivne sikkerhedsgrupper eller for en hel organisation. Kontooplysninger vises derefter i rapporten som *Ikke-navngivet*.
+
+> [!NOTE]
+> Husk, at det kan tage noget tid, før ændringer af indstillingerne for lejer træder i kraft.
+
 
 ## <a name="dashboard-settings"></a>Indstillinger for dashboard
 
@@ -270,9 +290,9 @@ Brugere i virksomheden kan markere dashboards med klassificeringsangivelser, der
 
 Brugere i virksomheden kan integrere Power BI-dashboards og rapporter i Software as a Service (SaaS)-programmer. Hvis denne indstilling deaktiveres, kan brugere ikke bruge REST API'er til at integrere Power BI-indhold i deres program.
 
-## <a name="premium-settings"></a>Premium-indstillinger
+## <a name="capacity-settings"></a>Kapacitetsindstillinger
 
-Fanen Premium-indstillinger giver dig mulighed for at administrere en given Power BI Premium-kapacitet, der er blevet købt til din virksomhed. Alle brugere i virksomheden får vist fanen Premium-indstillinger, men kan kun se indholdet i den, hvis de er tildelt rollen som enten **Kapacitetsadministrator** eller er bruger med tildelingstilladelser. Hvis en bruger ikke har nogen tilladelser, vil vedkommende se den følgende meddelelse.
+Fanen Indstillinger for kapacitet giver dig mulighed for at administrere en given Power BI Premium-kapacitet, der er blevet købt til din virksomhed. Alle brugere i virksomheden får vist fanen Premium-indstillinger, men kan kun se indholdet i den, hvis de er tildelt rollen som enten **Kapacitetsadministrator** eller er bruger med tildelingstilladelser. Hvis en bruger ikke har nogen tilladelser, vil vedkommende se den følgende meddelelse.
 
 ![](media/service-admin-portal/premium-settings-no-access.png "Ingen adgang til Premium-indstillinger")
 
@@ -284,7 +304,7 @@ For at få flere oplysninger om, hvordan du administrerer Premium-indstillinger,
 
 Som administrator kan du få vist integreringskoder, der er genereret for din lejer. Du har handlingerne til visning af rapporten og sletning af integreringskoden for at tilbagekalde den.
 
-## <a name="organization-visuals"></a>Visualiseringer til virksomheder
+## <a name="organization-visuals"></a>Organisationens visuelle elementer
 
 På fanen med visualiseringer til virksomheder kan du udrulle og administrere brugerdefinere visualiseringer i din virksomhed. Det betyder, at du nemt kan udrulle brugerdefinerede visualiseringer, der er beskyttet af ejendomsret, i virksomheden, så forfattere af rapporter nemt kan finde og importere disse visualiseringer direkte fra Power BI Desktop til deres rapporter.
  

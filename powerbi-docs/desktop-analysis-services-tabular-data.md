@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f9c6d161149a4c862636a13ad88d3c43f2dbcd8a
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: cbec15b472e6cfad6134cc48970977132d61dd36
+ms.sourcegitcommit: 8990028a348b642ba5c96f001fe3a4280f0166ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329305"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40257158"
 ---
 # <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Brug af Analysis Services-tabeldata i Power BI Desktop
 Med Power BI Desktop er der to måder, du kan oprette forbindelse til og hente data fra dine SQL Server Analysis Services-tabelmodeller: Du kan udforske ved hjælp af en direkte forbindelse, eller du kan vælge elementer og importere til Power BI Desktop.
@@ -24,7 +24,9 @@ Lad os se nærmere på det.
 
 **Udforsk ved hjælp af en direkte forbindelse** – Når du bruger en direkte forbindelse, vises elementer i din tabelmodel eller dit tabelperspektiv, f.eks. tabeller, kolonner og målinger, på listen over felter i Power BI Desktop. Du kan bruge Power BI Desktops avancerede visualiserings- og rapportværktøjer til at udforske din tabelmodel på nye, meget interaktive måder.
 
-Der importeres ingen data fra tabelmodellen i Power BI Desktop, når du opretter en direkte forbindelse. Hver gang du interagerer med en visualisering, sendes der en forespørgsel i Power BI Desktop til tabelmodellen, og det resultat, du får vist, beregnes. Du ser altid de nyeste data. Husk på, at tabelmodeller er meget sikre. Elementer, der vises i Power BI Desktop, afhænger af dine tilladelser for den tabelmodel, du har oprettet forbindelse til.
+Der importeres ingen data fra tabelmodellen i Power BI Desktop, når du opretter en direkte forbindelse. Hver gang du interagerer med en visualisering, sendes der en forespørgsel i Power BI Desktop til tabelmodellen, og det resultat, du får vist, beregnes. Du får altid vist de nyeste data i tabelmodellen. De stammer enten fra den seneste behandling eller fra Direct Query-tabeller i tabelmodellen. 
+
+Husk på, at tabelmodeller er meget sikre. Elementer, der vises i Power BI Desktop, afhænger af dine tilladelser for den tabelmodel, du har oprettet forbindelse til.
 
 Når du har oprettet dynamiske rapporter i Power BI Desktop, kan du dele dem ved at publicere dem på dit Power BI-websted. Når du publicerer en Power BI Desktop-fil med en direkte forbindelse i en tabelmodel på dit Power BI websted, skal en administrator have installeret og konfigureret en datagateway i det lokale miljø. Du kan finde flere oplysninger under [Datagateway i det lokale miljø](service-gateway-onprem.md).
 

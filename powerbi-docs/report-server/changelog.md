@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: e0f90ccade44960cf24fd133b4caf46280b4a511
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ec97676fc043f9d8bd014465cc1fd2c0ffcca423
+ms.sourcegitcommit: 52278d8e0c23ae5eaf46b10a6a2f1fb071a0f1cc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34482124"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40257190"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -22,6 +22,18 @@ Denne ændringslog er for Power BI-rapportserver, og den viser nye elementer sam
 
 Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder i Power BI-rapportserver](whats-new.md). 
 
+## <a name="august-2018"></a>August 2018
+- **Power BI-rapportserver**
+    - *Version 1.3.6801.38816 (build 15.0.2.540), frigivet: 15. august 2018*
+        - Funktioner
+            - SAP HANA SSO Direct Query understøttes nu med Kerberos for Power BI-rapporter
+            - Brugerdefineret Visual API udgivet sammen med frigivelsen, version 1.13.0
+            - Brugerdefinerede visualiseringer går tilbage til en tidligere version, der er kompatibel med den aktuelle version af server-API'et (hvis tilgængeligt)
+
+- **Power BI Desktop (optimeret til Power BI-rapportserver)**
+    - *Version: 2.61.5192.64 (august 2018), frigivet: 15. august 2018*
+        - Indeholder ændringer, der kræves for at oprette forbindelse til Power BI-rapportserver (august 2018)         
+        
 ## <a name="march-2018"></a>Marts 2018
 - **Power BI-rapportserver**
     - *Version 1.2.6690.34729 (Build 15.0.2.402), udgivet: 27. april 2018*

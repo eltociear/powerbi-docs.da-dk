@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/07/2018
+ms.date: 08/17/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 36343b4db0481ea61fbfac1c791aa84760ee2c77
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: 271859dbc13e909d255e4287ae14e66b2d85724f
+ms.sourcegitcommit: 23bb84cd3e80ba7f03d559e48db322774d1a6fe0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624594"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "40256912"
 ---
 # <a name="create-the-new-workspaces-preview-in-power-bi"></a>Opret de nye arbejdsområder (prøveversion) i Power BI
 
@@ -112,8 +112,8 @@ De nye arbejdsområder tilbyder tre roller: administratorer, medlemmer og bidrag
 **Medlemmer kan:** 
 
 - Tilføje medlemmer eller andre med lavere tilladelser.
-- Publicere og opdatere apps.
-- Dele elementer og dele apps.
+- Publicer og opdater en app.
+- Del et element, eller del en app.
 - Give andre tilladelse til at dele elementer igen.
 - Gøre alt det, bidragydere kan gøre.
 
@@ -129,7 +129,7 @@ Vi udvikler arbejdsprocesser til anmodning om adgang i hele tjenesten, så bruge
 
 ## <a name="distribute-an-app"></a>Distribuer en app
 
-Når indholdet er klar, skal du vælge, hvilke dashboards og rapporter du vil publicere, og derefter skal du publicere det som en *app*. Dine kollegaer kan hente dine apps på flere måder. Du kan automatisk installere dem i dine kollegaers Power BI-konti, hvis Power BI-administratoren giver dig tilladelse til det. Ellers kan de søge efter og installere dine apps fra Microsoft AppSource, eller du kan sende dem et direkte link. De får automatisk opdateringer, og du kan styre, hvor ofte dataene opdateres. Se [Publicer apps med dashboards og rapporter i Power BI](service-create-distribute-apps.md) for at få flere oplysninger.
+Når indholdet er klar, skal du vælge, hvilke dashboards og rapporter du vil publicere, og derefter skal du publicere det som en *app*. Du kan oprette en app fra hvert arbejdsområde. Dine kollegaer kan hente dine apps på flere måder. Du kan automatisk installere dem i dine kollegaers Power BI-konti, hvis Power BI-administratoren giver dig tilladelse til det. Ellers kan de søge efter og installere dine apps fra Microsoft AppSource, eller du kan sende dem et direkte link. De får automatisk opdateringer, og du kan styre, hvor ofte dataene opdateres. Se [Publicer apps med dashboards og rapporter i Power BI](service-create-distribute-apps.md) for at få flere oplysninger.
 
 ## <a name="convert-old-app-workspaces-to-new-app-workspaces"></a>Konvertér gamle apparbejdsområder til nye apparbejdsområder
 
@@ -161,7 +161,7 @@ Der udvikles stadig flere funktioner i prøveversionen for nye arbejdsområder, 
 Nogle funktioner fungerer anderledes i forhold til aktuelle apparbejdsområder i de nye apparbejdsområder. Disse forskelle er tilsigtede baseret på feedback, vi har modtaget fra kunder, og de giver en mere fleksibel tilgang til samarbejdet via arbejdsområder:
 
 - Medlemmer kan eller kan ikke dele igen: erstattet af rollen som bidragyder
-- Skrivebeskyttede arbejdsområder: erstattet af den kommende seerrolle, som giver skrivebeskyttet adgang til indhold i et arbejdsområde.
+- Skrivebeskyttede arbejdsområder: I stedet for at tildele brugere til skrivebeskyttet adgang til et arbejdsområde skal du tildele brugere til en kommende Fremviser-rolle, hvilket gør det muligt for lignende skrivebeskyttet adgang til indholdet i et arbejdsområde.
 
 ## <a name="known-issues"></a>Kendte problemer
 

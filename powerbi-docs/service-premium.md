@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 02/05/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 15b64b917fed56e9d9ab6be2023060378324c794
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 81a03c7728d92bcc78dba9a02cbe4c45f582fd3d
+ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38925430"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40257004"
 ---
 # <a name="power-bi-premium---what-is-it"></a>Power BI Premium – hvad er det?
-Power BI Premium indeholder ressourcer, der er dedikeret til at køre Power BI-tjenesten for din organisation eller dit team og giver dig en mere pålidelig ydeevne og større datamængder. Premium giver også mulighed for omfattende distribution af indhold, uden at du skal købe licenser pr. bruger til fremvisere.
+Power BI Premium indeholder ressourcer, der er dedikeret til at køre Power BI-tjenesten for din organisation eller dit team. Det giver dig mere pålidelig ydeevne og gør det muligt at have større datamængder. Premium giver også mulighed for omfattende distribution af indhold, uden at du skal købe licenser pr. bruger til fremvisere.
 
 Du kan drage fordel af Power BI Premium ved at tildele arbejdsområder til en Premium-kapacitet. *Premium-kapacitet* er en dedikeret ressource for din organisation. Arbejdsområder, der ikke er knyttet til en Premium-kapacitet, vil være i en delt kapacitet.
 
-*Delt kapacitet* er oplevelsen, du er vant til med Power BI, hvor dine arbejdsbelastninger kører på databehandlingsressourcer, der deles med andre kunder. Der er pålagt flere grænser for individuelle brugere i delt kapacitet for at sikre kvaliteten af oplevelsen for alle brugere.
+Med *Delt kapacitet* kan dine arbejdsbelastninger køre på databehandlingsressourcer, der deles med andre kunder. Der er pålagt flere grænser for individuelle brugere i delt kapacitet for at sikre kvaliteten af oplevelsen for alle brugere.
 
 [!INCLUDE [powerbi-premium-illustration](./includes/powerbi-premium-illustration.md)]
 
@@ -33,7 +33,7 @@ Der er to kapacitetstyper i Power BI. Delt kapacitet og Power BI Premium-kapacit
 
 |  | Delt kapacitet | Power BI Premium-kapacitet |
 | --- | --- | --- |
-| **Opdateringshastighed** |8/dag |Ikke begrænset |
+| **Opdateringshastighed** |8/dag |48/dag |
 | **Isolering med dedikeret hardware** |![](media/service-premium/not-available.png "Ikke tilgængelig") |![](media/service-premium/available.png "Tilgængelig") |
 | **Enterprise Distribution til** ***alle brugere*** | | |
 | Apps og deling |![](media/service-premium/not-available.png "Ikke tilgængelig") |![](media/service-premium/available.png "Tilgængelig")<sup>1</sup> |
@@ -48,8 +48,8 @@ Hvis du vil bruge en Power BI Premium-kapacitet, skal du tildele et arbejdsområ
 
 Når et arbejdsområde bakkes op af Premium-kapacitet, kan du udnytte fordelene ved Power BI Premium.
 
-* Planlagte opdateringer: Brugere var tidligere begrænset til 8x om dagen ved planlægning af opdateringer med importerede modeller. Denne begrænsning fjernes for datasæt i Premium-arbejdsområder. Dette gælder ikke for indstillingerne for planlagt opdatering af cache til DirectQuery. De forbliver uændret mellem Premium- og delt kapacitet.
-* Isolering med dedikeret hardware – som den delte kapacitet fungerer, kan rapporternes og dashboardenes ydeevne blive påvirket af andre arbejdsbelastningers ressourcekrav i kapaciteten, til trods for vores sikkerhedsforanstaltninger mod det. Premium leverer omvendt mere ensartet, pålidelig ydeevne for dine arbejdsbelastninger ved at isolere det fra ikke-relaterede arbejdsbelastninger.
+* **Planlagte opdateringer**: med delt kapacitet er planlagte opdateringer for importerede modeller begrænset til 8 gange om dagen. Antallet af opdateringer er øget til 48 gange om dagen for datasæt i Premium-arbejdsområder. Dette gælder ikke for indstillingerne for planlagt opdatering af cache til DirectQuery. De forbliver uændret mellem Premium- og delt kapacitet.
+* **Isolering med dedikeret hardware**: Som den delte kapacitet fungerer, kan rapporternes og dashboardenes ydeevne blive påvirket af andre arbejdsbelastningers ressourcekrav i kapaciteten, til trods for vores sikkerhedsforanstaltninger mod det. Premium leverer omvendt mere ensartet, pålidelig ydeevne for dine arbejdsbelastninger ved at isolere det fra ikke-relaterede arbejdsbelastninger.
 
 Hvis en app bakkes op af Premium-kapacitet (dvs. den blev publiceret fra et apparbejdsområde, som i øjeblikket er tildelt til Premium), kan den publicerede app derefter anvendes af alle brugere i din organisation, uanset den licens de er tildelt.
 
@@ -69,7 +69,7 @@ Power BI Premium er tilgængelig i nodekonfigurationer med andre v-kerne-kapacit
 
 | Kapacitetsnode | V-kerner i alt<br/>*(Backend + frontend)* | Backend-v-kerner | Frontend-v-kerner | Grænser for DirectQuery/liveforbindelser | Maks. antal sidegengivelser med størst belastning | Tilgængelighed |
 | --- | --- | --- | --- | --- | --- | --- |
-| [EM1 (for hver måned)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 v-kerne |,5 v-kerner 2,5 GB RAM |,5 v-kerner |3.75 pr. sekund |150-300 |Tilgængelig |
+| [EM1 (for hver måned)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |1 v-kerne |0,5 v-kerner, 2,5 GB RAM |0,5 v-kerner |3.75 pr. sekund |150-300 |Tilgængelig |
 | [EM2 (for hver måned)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |2 v-kerner |1 v-kerne, 5 GB RAM |1 v-kerne |7.5 pr. sekund |301-600 |Tilgængelig |
 | [EM3 (for hver måned)](https://portal.office.com/SubscriptionDetails?OfferId=4004702D-749C-4F74-BF47-3048F1833780&adminportal=1) |4 v-kerner |2 v-kerner, 10 GB RAM |2 v-kerner | |601-1.200 |Tilgængelig |
 | [P1](https://portal.office.com/SubscriptionDetails?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1&adminportal=1) |8 v-kerner |4 v-kerner, 25 GB RAM |4 v-kerner |30 pr. sekund |1.201-2.400 |Tilgængelig ([månedsabonnement](https://portal.office.com/SubscriptionDetails?OfferId=E4C8EDD3-74A1-4D42-A738-C647972FBE81&adminportal=1) findes også) |

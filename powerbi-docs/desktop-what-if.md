@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 08/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e93c11b86ebc664af7350b217c2a6dd2853c2858
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 926ef4aedf7c56af6f79cbbf1c7810cb3aee670b
+ms.sourcegitcommit: 126e5eca8bfab6273581dabd7603df88be755240
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327700"
+ms.lasthandoff: 08/11/2018
+ms.locfileid: "40256875"
 ---
 # <a name="create-and-use-a-what-if-parameter-to-visualize-variables-in-power-bi-desktop"></a>Opret og brug What if-parametre til at visualisere variabler i Power BI Desktop
-Fra og med udgivelsen af **Power BI Desktop** fra august 2017 kan du oprette **What if**-variabler til dine rapporter, arbejde med variablen som et udsnit og dermed visualisere og angive andre nøgleværdier i dine rapporter.
+Fra og med august 2018-versionen af **Power BI Desktop** kan du oprette **What if**-variabler for dine rapporter, interagere med variablerne som udsnit og visualisere og kvantificere forskellige nøgleværdier i dine rapporter.
 
 ![](media/desktop-what-if/what-if_01.png)
 
