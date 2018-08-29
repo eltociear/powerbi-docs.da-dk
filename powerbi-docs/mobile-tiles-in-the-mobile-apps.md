@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: eda7f44c869829564703bda6112177234d3f2d44
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 20bdd4731cd4aad3c6412d1959de3be088a3457a
+ms.sourcegitcommit: ef4bf1439bc5655d1afc7fb97079ea0679e9124b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39280127"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43151946"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Udforsk felter i Power BI-mobilappsene
 Kan anvendes med:
@@ -28,10 +28,6 @@ Felter er dynamiske øjebliksbilleder af dine data, der er fastgjort til et dash
 Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer med dem. Du kan åbne felter med alle slags visuelle elementer, herunder felter, der er baseret på Bing og R.
 
 ## <a name="tiles-in-the-ios-apps"></a>Felter i iOS-appsene
-> [!NOTE]
-> Du kan [oprette billedfelter med din iPhone-app](mobile-iphone-app-get-started.md) og gemme dem på dine dashboards.
-> 
-> 
 
 1. Åbn et [dashboard i mobilappen til iOS](mobile-apps-view-dashboard.md).
 2. Tryk på et felt. Det åbnes i fokustilstand, hvor det er lettere at se og udforske feltdataene. I fokustilstand kan du:
@@ -40,7 +36,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-line-tile-values.png)
    
-   <em>For eksempel er de valgte værdier i dette kurvediagram **Dette års salg</em>* og **Sidste års salg** i **August**.*  
+   *For eksempel er de valgte værdier i dette kurvediagram **Dette års salg** og **Sidste års salg** i **August**.*  
    
    Tryk på en cirkeludsnit i et cirkeldiagram for at få vist dets værdi øverst i diagrammet.  
    
@@ -107,7 +103,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    
    ![](media/mobile-tiles-in-the-mobile-apps/pbi_win10ph_bartile0316.png)
    
-   <em>I dette liggende søjlediagram vises værdierne for linjen **Decor</em>* øverst i diagrammet.*
+   *I dette liggende søjlediagram vises værdierne for linjen **Decor** øverst i diagrammet.*
    
    Tryk på ikonet **Fuld skærm** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-full-screen-icon.png) for at åbne feltet i fuldskærmsvisning uden navigation og menulinjer.
    
