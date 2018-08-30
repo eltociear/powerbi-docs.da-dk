@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: f56e05e51090f37fdb0bcd295ec877ee73b5dac0
-ms.sourcegitcommit: 640382408111d6e9cd1b9dfad0b484e3c727e454
+ms.openlocfilehash: dc29336754be008b541f146fff7c5f8609472cd0
+ms.sourcegitcommit: dddb6f8d39131febadfd97efa0e0e1d728f4f5ff
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40257918"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42703000"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Konfigurer din rapportserver til at være vært for Excel-projektmapper ved hjælp af Office Online Server (OOS)
 
@@ -37,7 +37,7 @@ Udfør disse procedurer på den server, der kører Office Online Server. Servere
     ```
 
     **Windows Server 2016:**
-   
+
     ```
     Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,NET-Framework-Features,NET-Framework-45-Features,NET-Framework-Core,NET-Framework-45-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45,Windows-Identity-Foundation,Server-Media-Foundation
     ```
@@ -57,9 +57,9 @@ Hvis du vil bruge Excel Online-funktioner, der bruger eksterne data (for eksempe
 1. Download Office Online Server fra [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). Du finder overførslen under disse Office-produkter på VLSC-portalen. Til udviklingsmæssige formål kan du downloade OOS fra MSDN-abonnentoverførsler.
 2. Kør Setup.exe.
 3. På siden **Læs licensvilkårene for Microsoft-software** skal du vælge **Jeg accepterer vilkårene i denne aftale** og vælge **Fortsæt**.
-4. På siden **Vælg en filplacering** skal du vælge den mappe, hvor Office Online Server-filerne skal installeres, f.eks. *C:\Programmer\Microsoft Office Web Apps*, og vælge **Installér nu**. Hvis den angivne mappe ikke findes, bliver den oprettet for dig.
+4. På siden **Vælg en filplacering** skal du vælge den mappe, hvor Office Online Server-filerne skal installeres, f.eks. C:\Programmer\Microsoft Office Web Apps*, og vælge **Installér nu**. Hvis den angivne mappe ikke findes, bliver den oprettet for dig.
 
-    **_Vi anbefaler, at du installerer Office Online Server på systemdrevet._**
+    Vi anbefaler, at du installerer Office Online Server på systemdrevet.
 
 5. Når Office Online Server er installeret, skal du vælge **Luk**.
 

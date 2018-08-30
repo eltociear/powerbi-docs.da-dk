@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: f0f29cb88c77f3d7775670c0869ee55938327763
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: cbc1d6304a7ee34b489d93488115ceb80864a42d
+ms.sourcegitcommit: ef4bf1439bc5655d1afc7fb97079ea0679e9124b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39658006"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43151900"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Fejlfinding af datagatewayen i det lokale miljø
 
@@ -279,7 +279,7 @@ Her er en liste over tilgængelige ydelsestællere.
 | Antal åbne Miks-forbindelser mislykket pr. sekund |Antal handlinger på åbne Miks-forbindelser mislykket pr. sekund. |
 | Antal Miks-forespørgsler udført pr. sekund |Antal Miks-forespørgsler udført pr. sekund (gennemført eller mislykket). |
 | Antal Miks-forespørgsler mislykket pr. sekund |Antal mislykkede Miks-forespørgsler udført pr. sekund |
-| Antal OLEDB-forespørgsler med flere resultatsæt mislykket pr. sekund |Antal mislykkede OLEDB-forespørgsler med flere resultatsæt udført pr. sekund. |
+| Antal mislykkede OLEDB-forespørgsler med flere resultatsæt pr. sekund |Antal mislykkede OLEDB-forespørgsler med flere resultatsæt udført pr. sekund. |
 | Antal OLEDB-forespørgsler med flere resultatsæt udført pr. sekund |Antal OLEDB-forespørgsler med flere resultatsæt udført pr. sekund (gennemført eller mislykket). |
 | Antal åbne OLEDB-forbindelser udført pr. sekund |Antal handlinger på åbne OLEDB-forbindelser udført pr. sekund (gennemført eller mislykket). |
 | Antal åbne OLEDB-forbindelser mislykket pr. sekund |Antal handlinger på åbne OLEDB-forbindelser mislykket pr. sekund. |

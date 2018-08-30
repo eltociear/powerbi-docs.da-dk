@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/17/2018
+ms.date: 08/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 271859dbc13e909d255e4287ae14e66b2d85724f
-ms.sourcegitcommit: 23bb84cd3e80ba7f03d559e48db322774d1a6fe0
+ms.openlocfilehash: cde28e7c41a35c3bbc37d0da56313ad7f8698110
+ms.sourcegitcommit: 15b877343540bb7e21f1d5bbd3d6f64e66fa138c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "40256912"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42914513"
 ---
 # <a name="create-the-new-workspaces-preview-in-power-bi"></a>Opret de nye arbejdsområder (prøveversion) i Power BI
 
@@ -29,12 +29,13 @@ Med prøveversionen af de nye arbejdsområder kan du nu:
 - Oprette et arbejdsområde i Power BI uden at oprette en Office 365-gruppe.
 - Bruge mere detaljerede arbejdsområderoller til administration af mere fleksible tilladelser i et arbejdsområde.
  
-Når du opretter et af de nye arbejdsområder, opretter du ikke en underliggende tilknyttet Office 365-gruppe. Al administration af arbejdsområder sker i Power BI, ikke i Office 365. Du kan stadig føje en Office 365-gruppe til arbejdsområdet, hvis du fortsat vil administrere brugeradgang til indhold via Office 365-grupper. Men du kan derudover bruge sikkerhedsgrupper, distributionslister og tilføje enkeltpersoner direkte i Power BI, hvilket giver dig større fleksibilitet, når du administrerer adgang til arbejdsområder
+Når du opretter et af de nye arbejdsområder, opretter du ikke en underliggende tilknyttet Office 365-gruppe. Al administration af arbejdsområder sker i Power BI, ikke i Office 365. Du kan stadig føje en Office 365-gruppe til arbejdsområdet, hvis du fortsat vil administrere brugeradgang til indhold via Office 365-grupper. Men du kan derudover bruge sikkerhedsgrupper, distributionslister og tilføje enkeltpersoner direkte i Power BI, hvilket giver dig større fleksibilitet, når du administrerer adgang til arbejdsområder. Da administration af arbejdsområder nu foregår i Power BI, beslutter Power BI-administratorer, hvem i en organisation kan oprette arbejdsområder. Se [artiklen om Power BI-administrationsportal i afsnittet Arbejdsområder](service-admin-portal.md#workspace-settings) for at få flere oplysninger. 
 
 Du kan føje brugergrupper eller enkeltpersoner til de nye arbejdsområder som medlemmer, bidragydere eller administratorer. Alle i en brugergruppe får den rolle, du har defineret. Hvis en person er i flere brugergrupper, får personen det højeste tilladelsesniveau, der er angivet af rollen.  Se [Roller i de nye arbejdsområder](#roles-in-the-new-workspaces) senere i denne artikel for at få en forklaring på de forskellige roller.
 
 Alle de brugere, du føjer til et apparbejdsområde, skal have en Power BI Pro-licens. I arbejdsområdet kan disse brugere samarbejde om dashboards og rapporter, som du vil publicere til en større målgruppe eller måske til hele organisationen. Hvis du vil distribuere indhold til andre i din organisation, kan du tildele Power BI Pro-licenser til disse brugere eller anbringe arbejdsområdet i en Power BI Premium-kapacitet.
-Da dette er en funktion i prøveversion, er der nogle begrænsninger, som du skal være opmærksom på. Se <section link> senere i denne artikel for at få en forklaring på de aktuelle begrænsninger. Med de nye arbejdsområder giver vi nogle af funktionerne et nyt design. Se < section link > senere i denne artikel for at få en forklaring på de ændringer, du kan forvente vil være permanente sammen med prøveversionen.
+
+Med de nye arbejdsområder giver vi nogle af funktionerne et nyt design. Se [Funktioner for apparbejdsområder, som fungerer anderledes](#app-workspace-features-that-work-differently) senere i denne artikel for at få en forklaring på de ændringer, du kan forvente vil være permanente sammen med prøveversionen. Da dette er en funktion i prøveversion, er der nogle begrænsninger, som du skal være opmærksom på. Se [Kendte problemer](#known-issues) senere i denne artikel for at få en forklaring på de aktuelle begrænsninger. 
 
 ## <a name="roll-out-new-app-workspaces"></a>Udrul nye apparbejdsområder
 

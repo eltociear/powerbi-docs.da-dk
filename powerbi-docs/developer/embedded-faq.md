@@ -2,30 +2,30 @@
 title: Ofte stillede spørgsmål om Power BI Embedded
 description: Gennemse en liste med ofte stillede spørgsmål og svar om Power BI Embedded.
 author: markingmyname
-manager: kfile
 ms.author: maghan
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 06/22/2018
-ms.openlocfilehash: ab637be12487029d17d7b1bfa89022dbae9aaa49
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.date: 08/21/2018
+ms.openlocfilehash: 935932e92e5d95ae52957bf1360db8d2232286ad
+ms.sourcegitcommit: dddb6f8d39131febadfd97efa0e0e1d728f4f5ff
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39415386"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42702954"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
 * Hvis du har andre spørgsmål, kan du [prøve at spørge Power BI-community'et](http://community.powerbi.com/).
-* Har du stadig problemer? Besøg [supportsiden for Power BI](https://powerbi.microsoft.com/support/).
+* Har du stadig problemer? Gå til [supportsiden for Power BI](https://powerbi.microsoft.com/support/).
 
 ## <a name="general"></a>Generelt
 
 ### <a name="what-is-power-bi-embedded"></a>Hvad er Power BI Embedded?
 
-Microsoft Power BI Embedded tillader programudviklere at integrere flotte, fuldt interaktive rapporter, dashboards og felter i programmer, uden at de skal bruge tid og penge på at oprette deres egne datavisualiseringer og -kontrolelementer fra bunden.
+Microsoft Power BI Embedded (PBIE) tillader programudviklere at integrere flotte, fuldt interaktive rapporter i programmer, uden at de skal bruge tid og penge på at oprette deres egne datavisualiseringer og -kontrolelementer fra bunden.
 
 ### <a name="who-is-the-target-audience-for-power-bi-embedded"></a>Hvem er målgruppen for Power BI Embedded?
 
@@ -70,7 +70,7 @@ Her er en delvis liste over forskelle, som du kan bruge i hver.
 | Forbrug Power BI-rapporter i en integreret app | Ja | Ja | Ja |
 | Forbrug Power BI-rapporter i SharePoint | Nej | Ja | Ja |
 | Forbrug Power BI-rapporter i Dynamics | Nej | Ja | Ja |
-| Forbrug Power BI-rapporter i Teams | Nej | Ja | Ja |
+| Forbrug Power BI-rapporter i Teams (kun desktopapp) | Nej | Ja | Ja |
 | Få adgang til indhold med en GRATIS Power BI-licens på Powerbi.com og i Power BI Mobile | Nej | Nej | Ja |
 | Få adgang til indhold med en GRATIS Power BI-licens integreret i MS Office-apps | Nej | Ja | Ja |
 
@@ -79,10 +79,10 @@ Her er en delvis liste over forskelle, som du kan bruge i hver.
 |  |A-SKU (Power BI Embedded)  |EM-SKU (Power BI Premium)  |P-SKU (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Køb     |Azure-portal |Office |Office |
-|Use cases |* Integrer indhold i dit eget program |* Integrer indhold i dit eget program<br>* Integrer indhold i andre MS Office-apps ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Integrer indhold i dit eget program<br>* Integrer indhold i andre MS Office-apps ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Del indhold med Power BI-brugere via [Power BI-tjenesten](https://powerbi.microsoft.com/en-us/)  |
+|Use cases |* Integrer indhold i dit eget program |* Integrer indhold i dit eget program<br>* Integrer indhold i andre MS Office-apps ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams (kun desktopapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard)) |* Integrer indhold i dit eget program<br>* Integrer indhold i andre MS Office-apps ([SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Teams (kun desktopapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/), [Dynamics 365](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard))<br>* Del indhold med Power BI-brugere via [Power BI-tjenesten](https://powerbi.microsoft.com/en-us/)  |
 |Fakturering |Pr. time |Månedlig |Månedlig |
 |Tilsagn  |Intet tilsagn |Årligt  |Månedligt/årligt |
-|Differentiering |Fuld elasticitet, kan skaleres op / ned, pausestille / genoptage ressourcer i Azure-portalen eller gennem API  |Kan bruges til at integrere indhold i SharePoint Online og Microsoft Teams |Kombiner integration i programmer og brug Power BI-tjenesten i den samme egenskab |
+|Differentiering |Fuld elasticitet, kan skaleres op / ned, pausestille / genoptage ressourcer i Azure-portalen eller gennem API  |Kan bruges til at integrere indhold i SharePoint Online og Microsoft Teams (kun desktopapp) |Kombiner integration i programmer og brug Power BI-tjenesten i den samme egenskab |
 
 ### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Hvad er forudsætningerne for at oprette en PBIE-kapacitet i Azure?
 
@@ -126,7 +126,7 @@ Power BI kræver, at du tilmelder dig med en organisationskonto. Forsøg på at 
 
 ### <a name="can-i-use-apis-to-create--manage-azure-capacities"></a>Kan jeg bruge API'er til at oprette og administrere Azure-kapaciteter?
 
-Ja. Der er Powershell-cmdlet'er og ARM API'er, du kan bruge til at oprette og administrere PBIE ressourcer.
+Ja. Der er Powershell-cmdlet'er og ARM-API'er (Azure Resource Manager), du kan bruge til at oprette og administrere PBIE ressourcer.
 
 * Rest API'er – https://docs.microsoft.com/rest/api/power-bi-embedded/
 * PowerShell-cmdlet'er – https://docs.microsoft.com/powershell/module/azurerm.powerbiembedded/
@@ -273,7 +273,7 @@ Der er nye funktioner og egenskaber, som introduceres i **Power BI Embedded**-l�
 
 Nogle af funktionerne er:
 * Alle PBI-datakilder understøttes i modsætning til de 2 datakilder, der er inkluderet i **Power BI Workspace Collection**). 
-* Nye funktioner, f.eks. Spørgsmål og svar, opdatering, bogmærker, integrering af dashboards og felter, brugerdefineret menu osv., understøttes kun i **Power BI Embedded**-løsningen.
+* Nye funktioner, f.eks. Spørgsmål og svar, opdatering, bogmærker, integrering af dashboards og felter, brugerdefinerede menuer, understøttes kun i **Power BI Embedded**-løsningen.
 * Model for fakturering af kapacitet.
 
 ## <a name="onboarding-experience-tool-for-embedding"></a>Onboarding Experience Tool til integration
