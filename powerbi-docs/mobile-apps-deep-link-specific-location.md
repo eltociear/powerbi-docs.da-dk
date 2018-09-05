@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 3ea99d26418a583a6ca588879aeafcd114aeaa6e
-ms.sourcegitcommit: 16098be04df05bc8e3d44a99b4d143b622759c59
+ms.openlocfilehash: e1df06c07f767936d861788c89205bce20cd5582
+ms.sourcegitcommit: 60f637d8555fd59fd9a86de720b89b388fb85ac0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39615999"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43695127"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Opret et link til en bestemt placering i Power BI-mobilappsene
 Du kan oprette og bruge en URI til at linke til en bestemt placering (et *dybt link*) i Power BI-mobilappsene på alle mobilplatformene: iOS, Android og Windows 10.
@@ -68,7 +68,7 @@ Denne URI åbner en bestemt rapport i Power BI-mobilappen:
 
 Du kan finde det 36 tegn lange objekt-id for rapporten ved at gå til den pågældende rapport i Power BI-tjenesten (https://powerbi.com). Se eksempelvis den fremhævede del af denne URL-adresse:
 
-https://powerbi.com/groups/me/reports/**df9f0e94-31df-450b-b97f-4461a7e4d300**
+`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300`
 
 ## <a name="open-to-a-specific-report-page"></a>Åbn på en bestemt rapportside
 Denne URI åbner en bestemt rapportside i Power BI-mobilappen:
@@ -79,7 +79,7 @@ Rapportsiden hedder "ReportSection" efterfulgt af et tal. Igen skal du åbne rap
 
 Se eksempelvis den fremhævede del af denne URL-adresse:
 
-https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/**ReportSection11**
+`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/ReportSection11`
 
 ## <a name="open-in-full-screen-mode"></a>Åbn i fuldskærmsvisning
 Tilføj parameteren med fed skrift for at åbne på en bestemt rapport i fuldskærmsvisning:
@@ -95,7 +95,7 @@ Du kan også tilføje kontekst i strengen. Hvis du får brug for at kontakte os,
 
 Se eksempelvis den fremhævede del af denne URL-adresse: 
 
-https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/**&context=SlackDeepLink**
+`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/&context=SlackDeepLink`
 
 ## <a name="next-steps"></a>Næste trin
 Din feedback hjælper os med at afgøre, hvad der skal implementeres fremover, så husk at stemme på andre funktioner, du gerne vil se i Power BI-mobilapps. 
