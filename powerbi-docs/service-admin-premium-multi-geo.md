@@ -1,38 +1,39 @@
 ---
-title: Understøttelse af Multi-Geo i Power BI Premium (Preview)
+title: Multi-Geo-understøttelse af Power BI Premium (prøveversion)
 description: Få mere at vide om, hvordan du kan udrulle indhold til datacentre i andre områder end i Power BI-lejerens lokalområde.
 author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/18/2018
-ms.author: maggies
+ms.date: 08/31/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: b7e1222e5babf1226722c5bd1f5efe3dff4dc8c1
-ms.sourcegitcommit: 6faeb642721ee5abb41c04a8b729880c01c4d40e
+ms.openlocfilehash: 135217acbe6289edb73c39035f58df8babf32566
+ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39210901"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43300178"
 ---
-# <a name="multi-geo-support-in-power-bi-premium-preview"></a>Understøttelse af Multi-Geo i Power BI Premium (Preview)
-Multi-Geo er en Power BI Premium-funktion, som hjælper multinationale kunder med at opfylde regionale, industrispecifikke eller organisatoriske krav til dataopbevaring. Som en Power BI Premium-kunde kan du udrulle indhold til datacentre i andre områder end i Power BI-lejerens lokalområde. Du kan vælge at udrulle indhold til en af de følgende geografiske områder:
+# <a name="multi-geo-support-for-power-bi-premium-preview"></a>Multi-Geo-understøttelse af Power BI Premium (prøveversion)
 
-- USA 
-- Canada 
-- Storbritannien 
-- Brasilien 
-- Europa 
-- Japan 
-- Indien 
-- Asien og Stillehavsområdet 
-- Australien 
+Multi-Geo er en Power BI Premium-funktion, som hjælper multinationale kunder med at opfylde regionale, industrispecifikke eller organisatoriske krav til dataopbevaring. Som en Power BI Premium-kunde kan du udrulle indhold til datacentre i andre områder end i Power BI-lejerens lokalområde. Et geografisk område (geografi) kan dække mere end ét område. F.eks. er USA et geografisk område, og det vestlige centrale USA og det sydlige centrale USA er områder i USA. Du kan vælge at udrulle indhold til en af de følgende geografiske områder:
 
-Et geografisk område (geografi) kan dække mere end ét område. F.eks. er USA et geografisk område, og det vestlige centrale USA og det sydlige centrale USA er områder i USA. 
+- USA
+- Canada
+- Storbritannien
+- Brasilien
+- Europa
+- Japan
+- Indien
+- Asien og Stillehavsområdet
+- Australien
 
 Multi-Geo fås ikke til Power BI Germany, Power BI China drevet af 21Vianet eller Power BI til myndigheder i USA.
+
+Multi-Geo er nu også tilgængelig i Power BI Embedded. Læs mere på [Multi-Geo-understøttelse i Power BI Embedded (prøveversion)](developer/embedded-multi-geo.md).
 
 ## <a name="using-multi-geo"></a>Sådan bruges Multi-Geo
 
@@ -44,16 +45,16 @@ Når du har oprettet kapacitet, forbliver den i det pågældende område, og all
 
 ![Rediger arbejdsområde: Vælg en tilgængelig kapacitet. Power BI Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
 
-Du ser denne meddelelse, så du kan bekræfte ændringen. 
+Du ser denne meddelelse, så du kan bekræfte ændringen.
 
 ![Bekræftelse af ændring af tildelt arbejdsområde](media/service-admin-premium-multi-geo/power-bi-multi-geo-change-assigned-workspace-capacity.png)
 
 Du behøver ikke at nulstille gateway-legitimationsoplysningerne under en overførsel på dette tidspunkt.  Når de er lagret i området Premium-kapacitet, skal du nulstille dem ved overførsel.
-   
+
 Under overførsel kan det være, at visse handlinger mislykkes, såsom udgivelse af nye datasæt eller planlagt opdatering af data.  
 
 Følgende elementer er gemt i Premium-området, når Multi-Geo er aktiveret:
- 
+
 - Modeller (.ABF-filer) til import og Direct Query-datasæt
 - Forespørgselscache
 - R-billeder
@@ -66,7 +67,7 @@ Disse elementer forbliver i lejerens lokalområde:
 - Tjenestebusser til gateway-forespørgsler eller planlagt opdatering af jobs
 - Tilladelser
 - Datasæts legitimationsoplysninger
- 
+
 ## <a name="view-capacity-regions"></a>Få vist kapacitetsområder
 
 Du kan i Administrationsportalen få vist alle kapaciteterne for din Power BI-lejer og de områder, hvor de er placeret i øjeblikket.
@@ -80,7 +81,6 @@ Hvis du vil ændre området for eksisterende indhold, så har du to valgmulighed
 - Opret endnu en kapacitet, og flyt arbejdsområder. Gratisbrugere oplever ikke nogen nedetid, så længe lejeren har ledige v-kerner.
 - Hvis oprettelse af endnu en kapacitet ikke er en mulighed, kan du midlertidigt flytte indhold tilbage til delt kapacitet for Premium. Du behøver ikke ekstra v-kerner, men gratisbrugere vil opleve noget nedetid.
 
-
 ## <a name="move-content-out-of-multi-geo"></a>Flyt indhold ud af Multi-Geo  
 
 Du kan fjerne arbejdsområder fra Multi-Geo-kapacitet på to måder:
@@ -90,16 +90,17 @@ Du kan fjerne arbejdsområder fra Multi-Geo-kapacitet på to måder:
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 
-Bekræft, at enhver bevægelse, du indleder mellem områder, opfylder alle erhvervs- og myndighedsbestemmelser før igangsætning af dataoverførslen.
+- Bekræft, at enhver bevægelse, du indleder mellem områder, opfylder alle erhvervs- og myndighedsbestemmelser før igangsætning af dataoverførslen.
 
-En cachelagret forespørgsel, der er gemt i et fjernområde, forbliver i dette område som inaktive data. Dog kan andre data under overførsel føres frem og tilbage mellem flere geografiske områder. 
+- En cachelagret forespørgsel, der er gemt i et fjernområde, forbliver i dette område som inaktive data. Dog kan andre data under overførsel føres frem og tilbage mellem flere geografiske områder.
 
-Når du flytter data fra ét område til et andet i et Multi-Geo-miljø, kan kildedataene forblive i det område, hvorfra dataene blev flyttet, i op til 30 dage. I denne periode har slutbrugere ikke adgang til dem. De fjernes fra det pågældende område og destrueres i løbet perioden på 30 dage.
+- Når du flytter data fra ét område til et andet i et Multi-Geo-miljø, kan kildedataene forblive i det område, hvorfra dataene blev flyttet, i op til 30 dage. I denne periode har slutbrugere ikke adgang til dem. De fjernes fra det pågældende område og destrueres i løbet perioden på 30 dage.
 
-Multi-Geo medfører ikke en forbedring af ydeevnen generelt set. Indlæsning af rapporter og dashboards omfatter stadig anmodninger til det lokale område for metadata.
+- Multi-Geo medfører ikke en forbedring af ydeevnen generelt set. Indlæsning af rapporter og dashboards omfatter stadig anmodninger til det lokale område for metadata.
 
 ## <a name="next-steps"></a>Næste trin
 
-[Power BI Premium: Hvad er det?](service-premium.md)
+- [Power BI Premium: Hvad er det?](service-premium.md)
+- [Multi-Geo til Power BI Embedded-kapaciteter](developer/embedded-multi-geo.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

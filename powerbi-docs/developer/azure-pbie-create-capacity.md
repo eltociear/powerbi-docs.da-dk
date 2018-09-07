@@ -10,12 +10,12 @@ ms.devlang: csharp, javascript
 ms.topic: conceptual
 ms.reviewer: ''
 ms.date: 07/31/2018
-ms.openlocfilehash: 222a6368bc717880fee4f6ce6958455959b491bd
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.openlocfilehash: f364bb725c492c1bffd2493c1e2a48ee8c442a9e
+ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39360194"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43300040"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Opret Power BI Embedded-kapacitet på Azure-portalen
 
@@ -54,7 +54,7 @@ For at følge denne hurtige start skal du have følgende:
     |**Abonnement**|Det abonnement, som kapaciteten skal oprettes for.|
     |**Ressourcegruppe**|Den ressourcegruppe, der indeholder den nye kapacitet. Vælg mellem en eksisterende ressourcegruppe, eller opret en anden. Du kan finde flere oplysninger under [Oversigt over Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview).|
     |**Administrator af Power BI-kapacitet**|Administratorer af Power BI-kapacitet kan få vist kapaciteten på Power BI-administrationsportalen og give tildelingstilladelser til andre brugere. Administratoren af kapacitet er som standard din konto. Kapacitetsadministratoren skal findes i din Power BI-lejer.|
-    |**Placering**|Den placering, hvor Power BI hostes for din lejer. Denne indstilling angives automatisk, og du kan ikke vælge en anden placering.|
+    |**Placering**|Den placering, hvor Power BI hostes for din lejer. Din standardplacering er dit lokale område, men du kan ændre placeringen ved hjælp af [Multi-Geo-indstillinger](embedded-multi-geo.md).
     |**Prisniveau**|Vælg det varenummer (antal v-kerner og hukommelsesstørrelse), der opfylder dine behov.  Du kan finde flere oplysninger under [Power BI Embedded-prisberegner](https://azure.microsoft.com/pricing/details/power-bi-embedded/)|
 
 6. Vælg **Opret**.

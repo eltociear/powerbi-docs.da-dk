@@ -2,35 +2,35 @@
 title: Fejlfinding af det integrerede program
 description: Denne artikel beskriver nogle almindelige problemer, som kan opstå under integrationen af indhold fra Power BI.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 07/09/2018
-ms.author: maghan
-ms.openlocfilehash: d6b30d97b1982ceca34579751e412a279b0d8881
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.date: 08/31/2018
+ms.openlocfilehash: 48faf9ebde5860b59569a7e0a3a96664d06a1b0d
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38877018"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241562"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Fejlfinding af det integrerede program
 
-Denne artikel beskriver nogle almindelige problemer, som kan opstå under integrationen af indhold fra Power BI.
+I denne artikel beskrives nogle almindelige problemer, som kan opstå, når du integrerer indhold fra Power BI.
 
 ## <a name="tools-for-troubleshooting"></a>Værktøjer til fejlfinding
 
 ### <a name="fiddler-trace"></a>Fiddler-sporing
 
-[Fiddler](http://www.telerik.com/fiddler) er et gratis værktøj fra Telerik, der overvåger HTTP-trafik.  Du kan se det, der sendes frem og tilbage vha. Power BI-API'er fra klientcomputeren. Dette kan vise fejl og andre relaterede oplysninger.
+[Fiddler](http://www.telerik.com/fiddler) er et gratis værktøj fra Telerik, der overvåger HTTP-trafik.  Du kan se trafikken vha. Power BI-API'er fra klientcomputeren. Dette værktøj kan vise fejl og andre relaterede oplysninger.
 
 ![Fiddler-sporing](../includes/media/gateway-onprem-tshoot-tools-include/fiddler.png)
 
-### <a name="f12-in-browser-for-front-end-debugging"></a>F12 i browser for front-end fejlløsning
+### <a name="f12-in-browser-for-front-end-debugging"></a>F12 i browser for fejlfinding af front-end
 
-F12 starter udviklervinduet i din browser. Dette giver adgang til at se netværkstrafik og andre oplysninger.
+F12 starter udviklervinduet i din browser. Du kan bruge dette værktøj til at se netværkstrafik og andre oplysninger.
 
 ![F12 Browser-fejlfinding](media/embedded-troubleshoot/browser-f12.png)
 
@@ -38,7 +38,7 @@ F12 starter udviklervinduet i din browser. Dette giver adgang til at se netværk
 
 Dette kodestykke viser, hvordan du udtrækker fejloplysninger fra HTTP-undtagelse:
 
-```
+```csharp
 public static string GetExceptionText(this HttpOperationException exc)
 {
     var errorText = string.Format("Request: {0}\r\nStatus: {1} ({2})\r\nResponse: {3}",
@@ -52,16 +52,17 @@ public static string GetExceptionText(this HttpOperationException exc)
     return errorText;
 }
 ```
-Vi anbefaler, at du logfører anmodnings-id'er (og fejloplysninger med henblik på fejlfinding).
-Du bedes angive anmodnings-id'et, når du henvender dig til Microsoft Support.
+
+Vi anbefaler, at du logfører anmodnings-id'et (og fejloplysninger med henblik på fejlfinding).
+Oplys om anmodnings-id'et, når du henvender dig til Microsoft Support.
 
 ## <a name="app-registration"></a>Programregistrering
 
 **Fejl ved programregistrering**
 
-Fejlmeddelelser internt på Azure-portalen eller Power BI-programmets registreringsside angiver utilstrækkelige rettigheder. Hvis du vil registrere et program, skal du være administrator i Azure AD-lejeren, eller programregistreringer skal være aktiveret for brugere uden administratorstatus.
+Fejlmeddelelser internt på Azure-portalen eller Power BI-programmets registreringsside angiver utilstrækkelige rettigheder. For at registrere et program skal du være administrator i Azure AD-lejeren, eller programregistreringer skal være aktiveret for brugere uden administratorstatus.
 
-**Power BI-tjenesten vises ikke i Azure-portalen under registrering af et nyt program**
+**Power BI-tjenesten vises ikke på Azure-portalen, når et nyt program registreres**
 
 Mindst en bruger skal være tilmeldt Power BI. Hvis du ikke kan se **Power BI-tjeneste** på listen i API-listen, er ingen brugere tilmeldt Power BI.
 
@@ -75,7 +76,7 @@ En fiddler-optagelse kan være påkrævet med henblik på yderligere efterforskn
 
 En fiddler-optagelse kan være påkrævet med henblik på yderligere efterforskning. Der kan være flere grunde til en 403-fejl.
 
-* Brugeren har overskredet det antal integrerede tokens, der kan genereres på en delt kapacitet. Du skal købe Azure-kapacitet for at generere integrerede tokens og tildele arbejdsområdet til den pågældende kapacitet. Se [Opret Power BI Embedded-kapacitet på Azure Portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
+* Brugeren har overskredet antallet af integrerede tokens, der kan genereres på en delt kapacitet. Du skal købe Azure-kapacitet for at generere integrerede tokens og tildele arbejdsområdet til den pågældende kapacitet. Se [Opret Power BI Embedded-kapacitet på Azure Portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 * Azure AD auth-tokenet kan være udløbet.
 * Den godkendte bruger er ikke medlem af gruppen (programarbejdsområde).
 * Den godkendte bruger er ikke en administrator af gruppen (programarbejdsområde).
@@ -100,9 +101,9 @@ Programmets backend skal muligvis opdatere godkendelsestokenet før kaldet til G
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Godkendelsen mislykkedes med AADSTS70002 eller AADSTS50053
 
-**(AADSTS70002: Fejl under validering af legitimationsoplysninger. AADSTS50053: Du har prøvet at logge på for mange gange med forkert bruger-ID eller adgangskode)**
+**(AADSTS70002: Fejl under validering af legitimationsoplysninger. AADSTS50053: Du har forsøgt at logge på for mange gange med et forkert bruger-id eller en forkert adgangskode)**
 
-Hvis du bruger Power BI Embedded, Azure AD Direkte godkendelse og modtager meddelelser, når du logger ind, såsom ***fejl: uautoriseret_klient, fejlbeskrivelse:AADSTS70002: Fejl under validering af legitimationsoplysninger. AADSTS50053: Du har prøvet at logge på for mange gange med et forkert bruger-id eller en forkert adgangskode***, fordi direkte godkendelse er blevet slået fra som standard fra og med 14/6/2018.
+Hvis du bruger Power BI Embedded, Azure AD Direkte godkendelse og modtager meddelelser, når du logger på, f.eks. ***fejl: uautoriseret_klient, fejlbeskrivelse:AADSTS70002: Fejl under validering af legitimationsoplysninger. AADSTS50053: Du har prøvet at logge på for mange gange med et forkert bruger-id eller en forkert adgangskode***, fordi direkte godkendelse er slået fra som standard fra og med 14-06-2018.
 
 Dette kan aktiveres igen ved hjælp af en [Azure AD-politik](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications), der enten kan begrænses til organisationen eller en [tjenesteprincipal](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
@@ -112,7 +113,7 @@ Hvis du vil oprette denne politik, skal du være **Global Administrator** for de
 
 1. Installér [Azure AD PowerShell-modulet som prøveversion](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
-2. Kør følgende powershell-kommandoer linje for linje (Sørg for, at variablen $sp ikke har mere end 1 program som resultat).
+2. Kør følgende PowerShell-kommandoer linje for linje. (Sørg for, at variablen $sp ikke har mere end ét program som resultat).
 
 ```powershell
 Connect-AzureAD
@@ -153,7 +154,7 @@ Du kan benytte følgende metoder for at bekræfte årsagen:
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: Tildelingen kræver administratorrettigheder
 
 **_Symptomer:_**</br>
-Når en ikke-administratorbruger forsøger at logge på et program første gang og giver samtykke, får hun følgende fejl:
+Når en bruger, der ikke er administrator, forsøger at logge på et program første gang og giver samtykke, får hun følgende fejl:
 * ConsentTest skal have tilladelse til at få adgang til ressourcer i din organisation, som kun en administrator kan tildele. Bed en administrator om at give tilladelse til dette program, før du kan bruge det.
 * AADSTS90094: Tildelingen kræver administratorrettigheder.
 
@@ -167,7 +168,7 @@ Brugersamtykke er deaktiveret for lejeren.
 **_Der er flere mulige fejlrettelser:_**
 
 *Aktivere brugersamtykke for hele lejeren (alle brugere, alle programmer)*
-1. I Azure-portal, gå til "Azure Active Directory" = > "Brugere og grupper" = > "Brugerindstillinger"
+1. På Azure-portalen skal du gå til "Azure Active Directory" = > "Brugere og grupper" = > "Brugerindstillinger"
 2. Aktivér "Brugerne må give samtykke til, at apps får adgang til virksomhedsdata på deres vegne", og gem ændringerne
 
     ![Fejlrettelse af samtykketest](media/embedded-troubleshoot/consent-test-02.png)
@@ -178,11 +179,11 @@ Brugersamtykke er deaktiveret for lejeren.
 
 **ISV vil have andre legitimationsoplysninger til den samme datakilde**
 
-En datakilde kan have et enkelt sæt legitimationsoplysninger til én overordnet bruger. Hvis du har brug for at oprette andre legitimationsoplysninger, skal du oprette andre overordnede brugere. Derefter skal du tildele de andre legitimationsoplysninger til hver af den overordnede brugers kontekst og integrere vha. den pågældende brugers Azure AD-token.
+En datakilde kan have et enkelt sæt legitimationsoplysninger til én overordnet bruger. Hvis du har brug for at oprette andre legitimationsoplysninger, skal du oprette andre overordnede brugere. Derefter skal du tildele de andre legitimationsoplysninger til hver af den overordnede brugers kontekster og integrere vha. den pågældende brugers Azure AD-token.
 
 ## <a name="content-rendering"></a>Indholdsgengivelse
 
-**Gengivelse eller forbrug af integreret indhold mislykkes eller får timeout**
+**Gengivelse eller forbrug af integreret indhold mislykkes, eller der opstår timeout**
 
 Sørg for, at det integrerede token ikke er udløbet. Sørg for at kontrollere den integrerede tokens udløb og opdatere den. Du kan få flere oplysninger under [Opdatér token ved hjælp af JavaScript SDK](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example).
 
@@ -192,7 +193,41 @@ Hvis brugeren ikke kan se rapporten eller dashboardet, skal du sørge for, at ra
 
 **Rapport- eller dashboard-ydeevne er langsom**
 
-Åbn filen fra Power BI Desktop, eller internt i powerbi.com, og bekræft, at ydeevnen er acceptabel for at udelukke, at der er problemer med dit program eller integrations-API'er.
+Åbn filen fra Power BI Desktop eller internt i powerbi.com, og bekræft, at ydeevnen er acceptabel, for at udelukke, at der er problemer med dit program eller integrations-API'erne.
+
+## <a name="troubleshooting-your-embedded-application-with-the-ierror-object"></a>Fejlfinding af den integrerede app med IError-objektet
+
+Brug det [**IError-objekt**, der returneres af *fejl*hændelsen fra **JavaScript-SDK'en**](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Troubleshooting-and-debugging-of-embedded-parts), til at foretage fejlfinding af din app, så du bedre kan forstå årsagen til dine fejl.
+
+Når du har modtaget IError-objektet, skal du kigge i den relevante tabel over almindelige fejl, der svarer til den integreringstype, du bruger. Sammenlign **IError-egenskaberne** med dem i tabellen, og find mulige årsager til fejlen.
+
+### <a name="typical-errors-when-embedding-for-power-bi-users"></a>Typiske fejl, når du integrerer til Power BI-brugere
+
+| Meddelelse | Detaljeret meddelelse | Fejlkode | Mulige årsager |
+|-------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------|
+| TokenExpired | Adgangstokenet er udløbet. Send igen med et nyt adgangstoken | 403 | Udløbet token  |
+| PowerBIEntityNotFound | Rapporten blev ikke hentet | 404 | <li> Forkert rapport-id <li> Rapporten findes ikke  |
+| Ugyldige parametre | Parameteren powerbiToken er ikke angivet | I/T | <li> Der er ikke angivet et adgangstoken <li> Der er ikke angivet et rapport-id |
+| Rapporten blev ikke indlæst | Kunne ikke initialiseres – Klyngen kunne ikke fortolkes | 403 | * Forkert adgangstoken * Integreringstypen svarer ikke til tokentypen |
+| PowerBINotAuthorizedException | Rapporten blev ikke hentet | 401 | <li> Forkert gruppe-id <li> Uautoriseret gruppe |
+| TokenExpired | Adgangstokenet er udløbet. Send igen med et nyt adgangstoken. Der kunne ikke visuelt gengives en rapport med titlen: <visual title> | I/T | Udløbet token for forespørgselsdata |
+| OpenConnectionError | Visualiseringen kan ikke vises. Der kunne ikke visuelt gengives en rapport med titlen: <visual title> | I/T | Kapacitet, der er sat på pause eller slettet, mens en rapport, der er relateret til en kapacitet, var åben i en session |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Det modelskema, der er knyttet til denne rapport, kunne ikke indlæses. Kontrollér, at du har forbindelse til serveren, og prøv igen. | I/T | <li> Kapaciteten er midlertidigt afbrudt <li> Kapaciteten er slettet |
+
+### <a name="typical-errors-when-embedding-for-non-power-bi-users-using-an-embed-token"></a>Typiske fejl, der opstår, når du integrerer til brugere, der ikke har Power BI (ved hjælp af et integreret token)
+
+| Meddelelse | Detaljeret meddelelse | Fejlkode | Årsag(er) |
+|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------|
+| TokenExpired | Adgangstokenet er udløbet. Send igen med et nyt adgangstoken | 403 | Udløbet token  |
+| Rapporten blev ikke indlæst | Rapporten blev ikke hentet | 404 | <li> Forkert rapport-id <li> Rapporten findes ikke  |
+| Rapporten blev ikke indlæst | Rapporten blev ikke hentet | 403 | Rapport-id svarer ikke til tokenet |
+| LoadReportFailed | Rapporten blev ikke hentet | 500 | Det id, der er angivet af rapporten, er ikke et GUID |
+| Ugyldige parametre | Parameteren powerbiToken er ikke angivet | I/T | <li> Der er ikke angivet et adgangstoken <li> Der er ikke angivet et rapport-id |
+| LoadReportFailed | Kunne ikke initialiseres – Klyngen kunne ikke fortolkes | 403 | Forkert tokentype, ugyldigt token |
+| PowerBINotAuthorizedException | Rapporten blev ikke hentet | 401 | Forkert/uautoriseset gruppe-id |
+| TokenExpired | Adgangstokenet er udløbet. Send igen med et nyt adgangstoken. Der kunne ikke visuelt gengives en rapport med titlen: <visual title> | I/T | Udløbet token for forespørgselsdata |
+| OpenConnectionError | Visualiseringen kan ikke vises. Der kunne ikke visuelt gengives en rapport med titlen: <visual title> | I/T | Kapacitet, der er sat på pause eller slettet, mens en rapport, der er relateret til en kapacitet, var åben i en session |
+| ExplorationContainer_FailedToLoadModel_DefaultDetails | Det modelskema, der er knyttet til denne rapport, kunne ikke indlæses. Kontrollér, at du har forbindelse til serveren, og prøv igen. | I/T | <li> Kapaciteten er midlertidigt afbrudt <li> Kapaciteten er slettet |
 
 ## <a name="onboarding-experience-tool-for-embedding"></a>Onboarding Experience Tool til integration
 
@@ -209,7 +244,7 @@ Kontrollér, at du opfylder de krævede forudsætninger, før du bruger Onboardi
 
 ### <a name="common-issues"></a>Almindelige problemer
 
-Nogle af de mest almindelige problemer, som du kan støde på med Onboarding Experience Tool, er:
+Nogle af de mest almindelige problemer, som du kan støde på, når du tester Onboarding Experience Tool, er:
 
 #### <a name="using-the-embed-for-your-customers-sample-application"></a>Brug af eksempelappen Embed for your customers
 
@@ -244,3 +279,5 @@ Hvis du vil redigere Power BI-brugerprofilen eller -dataene, skal du lære, hvor
 Du kan finde flere oplysninger under [Ofte stillede spørgsmål om Power BI Embedded](embedded-faq.md).
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+
+Hvis du har brug for mere hjælp, kan du [kontakte support](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) eller [oprette en supportanmodning via Azure-portalen](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) og angive den eller de fejlmeddelelser, du støder på.

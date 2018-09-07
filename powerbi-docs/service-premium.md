@@ -2,25 +2,25 @@
 title: Power BI Premium – hvad er det?
 description: Power BI Premium er dedikeret kapacitet for din organisation eller dit team og giver dig mere pålidelig ydeevne og større datamængder, uden at du skal købe licenser pr. bruger.
 author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2018
-ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 81a03c7728d92bcc78dba9a02cbe4c45f582fd3d
-ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
+ms.openlocfilehash: f7024b3e4827201edb4137eb513333030e39059f
+ms.sourcegitcommit: 2bdcb9e9959302a35ee90a145e4ff832a02aacb9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40257004"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43250744"
 ---
 # <a name="power-bi-premium---what-is-it"></a>Power BI Premium – hvad er det?
 Power BI Premium indeholder ressourcer, der er dedikeret til at køre Power BI-tjenesten for din organisation eller dit team. Det giver dig mere pålidelig ydeevne og gør det muligt at have større datamængder. Premium giver også mulighed for omfattende distribution af indhold, uden at du skal købe licenser pr. bruger til fremvisere.
 
-Du kan drage fordel af Power BI Premium ved at tildele arbejdsområder til en Premium-kapacitet. *Premium-kapacitet* er en dedikeret ressource for din organisation. Arbejdsområder, der ikke er knyttet til en Premium-kapacitet, vil være i en delt kapacitet.
+Du kan drage fordel af Power BI Premium ved at tildele arbejdsområder til en Premium-kapacitet. *Premium-kapacitet* er en dedikeret ressource for din organisation. Arbejdsområder, der ikke er knyttet til en Premium-kapacitet, er i en delt kapacitet.
 
 Med *Delt kapacitet* kan dine arbejdsbelastninger køre på databehandlingsressourcer, der deles med andre kunder. Der er pålagt flere grænser for individuelle brugere i delt kapacitet for at sikre kvaliteten af oplevelsen for alle brugere.
 
@@ -29,6 +29,7 @@ Med *Delt kapacitet* kan dine arbejdsbelastninger køre på databehandlingsresso
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lNQDkN0GXzU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="capacity-tiers"></a>Kapacitetsniveauer
+
 Der er to kapacitetstyper i Power BI. Delt kapacitet og Power BI Premium-kapacitet. Her kan du se, hvad forskellen er mellem dem.
 
 |  | Delt kapacitet | Power BI Premium-kapacitet |
@@ -44,9 +45,10 @@ Der er to kapacitetstyper i Power BI. Delt kapacitet og Power BI Premium-kapacit
 *<sup>2</sup> Fremtidige forbedringer i Power BI Premium efter GA.*
 
 ### <a name="premium-capacity"></a>Premium-kapacitet
+
 Hvis du vil bruge en Power BI Premium-kapacitet, skal du tildele et arbejdsområde til en kapacitet. Du kan finde flere oplysninger om, hvordan du tildeler et arbejdsområde til en Premium-kapacitet, under [Administrer Power BI Premium](service-admin-premium-manage.md).
 
-Når et arbejdsområde bakkes op af Premium-kapacitet, kan du udnytte fordelene ved Power BI Premium.
+Når Premium-kapacitet understøtter et arbejdsområde, kan du udnytte fordelene ved Power BI Premium.
 
 * **Planlagte opdateringer**: med delt kapacitet er planlagte opdateringer for importerede modeller begrænset til 8 gange om dagen. Antallet af opdateringer er øget til 48 gange om dagen for datasæt i Premium-arbejdsområder. Dette gælder ikke for indstillingerne for planlagt opdatering af cache til DirectQuery. De forbliver uændret mellem Premium- og delt kapacitet.
 * **Isolering med dedikeret hardware**: Som den delte kapacitet fungerer, kan rapporternes og dashboardenes ydeevne blive påvirket af andre arbejdsbelastningers ressourcekrav i kapaciteten, til trods for vores sikkerhedsforanstaltninger mod det. Premium leverer omvendt mere ensartet, pålidelig ydeevne for dine arbejdsbelastninger ved at isolere det fra ikke-relaterede arbejdsbelastninger.
@@ -54,18 +56,20 @@ Når et arbejdsområde bakkes op af Premium-kapacitet, kan du udnytte fordelene 
 Hvis en app bakkes op af Premium-kapacitet (dvs. den blev publiceret fra et apparbejdsområde, som i øjeblikket er tildelt til Premium), kan den publicerede app derefter anvendes af alle brugere i din organisation, uanset den licens de er tildelt.
 
 ### <a name="shared-capacity"></a>Delt kapacitet
-Som standard vil dit arbejdsområde være i delt kapacitet. Dette omfatter dit personlige *Mit arbejdsområde* sammen med apparbejdsområder. En delt kapacitet er oplevelsen, du er vant til med Power BI, hvor dine arbejdsbelastninger kører på databehandlingsressourcer, der deles med andre kunder.
+
+Som standard er dit arbejdsområde i en delt kapacitet. Dette omfatter dit personlige *Mit arbejdsområde* sammen med apparbejdsområder. Delt kapacitet er den oplevelse, du er vant til, når du bruger Power BI, hvor dine arbejdsbelastninger kører på databehandlingsressourcer, der deles med andre kunder.
 
 <a name="premiumskus"/>
 
 ### <a name="premium-capacity-nodes"></a>Premium-kapacitetsnoder
+
 Power BI Premium er tilgængelig i nodekonfigurationer med andre v-kerne-kapaciteter. Du kan finde flere oplysninger om specifikke SKU-tilbud og priser under [Priser på Power BI](https://powerbi.microsoft.com/pricing/). Der findes også en [omkostningsberegner](https://powerbi.microsoft.com/calculator/). Du kan finde oplysninger om planlægning af integreret analysekapacitet i [Hvidbog om planlægning af en Power BI Enterprise-installation](https://aka.ms/pbienterprisedeploy).
 
 * P-noder kan bruges til integrerede installationer eller tjenesteinstallationer.
 * EM-noder kan kun bruges til integrerede installationer. EM-noder har ikke adgang til Premium-funktioner, f.eks. deling af apps med brugere, der ikke har en Power BI Pro-licens.
 
 >[!NOTE]
->Links i denne tabel kan kun fungere korrekt for brugere, der er globale Office 365-administratorer – andre får vist fejlmeddelelsen 404. 
+>Links i denne tabel kan kun fungere korrekt for brugere, der er globale Office 365-administratorer – andre får vist fejlmeddelelsen 404.
 
 | Kapacitetsnode | V-kerner i alt<br/>*(Backend + frontend)* | Backend-v-kerner | Frontend-v-kerner | Grænser for DirectQuery/liveforbindelser | Maks. antal sidegengivelser med størst belastning | Tilgængelighed |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -92,4 +96,3 @@ Power BI Premium omfatter retten til at køre Power BI Report Server i det lokal
 [Administrer Power BI i din virksomhed](service-admin-administering-power-bi-in-your-organization.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

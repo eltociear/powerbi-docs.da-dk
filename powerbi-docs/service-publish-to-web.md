@@ -2,33 +2,33 @@
 title: Publicer på internettet fra Power BI
 description: Med Power BI Publicer på internettet kan du nemt integrere interaktive Power BI-visualiseringer online, f.eks. i blogindlæg, på websteder, via mails eller sociale medier på enhver enhed.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/28/2018
-ms.author: maghan
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2e02b4dfe9798eed393a0097ef4f220746acfdf6
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: b305c684ccf0938cfa8f5d9a2aa06f27a8c8be12
+ms.sourcegitcommit: fb29c4bf7e598f962b453ac68091ca2189d6ae3b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092339"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43380330"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
 Med Power BI **Publicer på internettet** kan du nemt integrere interaktive Power BI-visualiseringer online, f.eks. i blogindlæg, på websteder, via mails eller sociale medier på enhver enhed.
 
-Du kan også nemt redigere, opdatere eller fjerne deling af dine publicerede visuelle elementer.
+Du kan også nemt redigere, opdatere eller fjerne deling af dine publicerede visualiseringer.
 
 > [!WARNING]
 > Når du bruger **Publicer på internettet**, kan den rapport eller det visuelle element, som du publicerer, ses af alle på internettet. Der bruges ingen godkendelse, når disse rapporter vises. Brug kun Publicer på internettet med rapporter og data, som alle på internettet (ikke-godkendte medlemmer af offentligheden) skal kunne se. Dette omfatter data på detaljeniveau, der er aggregeret i dine rapporter. Inden du publicerer denne rapport, skal du sikre, at du har ret til at dele dataene og visualiseringerne offentligt. Publicer ikke fortrolige eller beskyttede oplysninger. Hvis du er i tvivl, kan du kontrollere din organisations politikker inden publiceringen.
 
 ## <a name="how-to-use-publish-to-web"></a>Sådan bruger du Publicer på internettet
 
-**Publicer på internettet** er tilgængelig i rapporter i personlige arbejdsområder eller gruppearbejdsområder, du kan redigere.  Du kan ikke bruge Publicer på internettet med rapporter, der blev delt med dig, eller rapporter, der afhænger af sikkerhed på rækkeniveau for at beskytte dataene. Se afsnittet **Begrænsninger** herunder for at få vist en fuldstændig liste over situationer, hvor Publicer på internettet ikke understøttes. Gennemgå **advarslen** tidligere i denne artikel, før du bruger Publicer til internettet.
+**Publicer på internettet** er tilgængelig i rapporter i personlige arbejdsområder eller gruppearbejdsområder, du kan redigere.  Du kan ikke bruge Publicer på internettet med rapporter, der blev delt med dig, eller rapporter, der afhænger af sikkerhed på rækkeniveau for at beskytte dataene. Se afsnittet **Begrænsninger** herunder for at få vist en fuldstændig liste over situationer, hvor Publicer på internettet ikke understøttes. Gennemgå **advarslen** tidligere i denne artikel, før du bruger Publicer på internettet.
 
 Du kan se, hvordan denne funktion virker, i den følgende *korte video*. Følg derefter nedenstående fremgangsmåde for at prøve det selv.
 
@@ -65,7 +65,7 @@ Følgende tabel indeholder vejledning om visningstilstanden, og hvordan den vise
 
 | Visningstilstand | Sådan ser den ud, når den er integreret |
 | --- | --- |
-| ![](media/service-publish-to-web/publish_to_web6b.png) |**Tilpas til siden** anvender rapportens sidehøjde og -bredde. Hvis du indstiller siden til 'dynamiske' forhold som f.eks. 16:9 eller 4:3, skaleres dit indhold til at passe inden for den iFrame, du har angivet. Ved integration i en iFrame kan brug af **Tilpas til siden** resultere i **letterboxing**, hvor en grå baggrund vises i områder af iFrame, efter at indholdet er skaleret til at passe inden for iFrame. Angiv din iFrames højde/bredde hensigtsmæssigt for at minimere letterboxing. |
+| ![](media/service-publish-to-web/publish_to_web6b.png) |**Tilpas til siden** anvender rapportens sidehøjde og -bredde. Hvis du indstiller siden til "dynamiske" forhold, f.eks. 16:9 eller 4:3, skaleres dit indhold til at passe inden for den iFrame, du har angivet. Ved integration i en iFrame kan brug af **Tilpas til siden** resultere i **letterboxing**, hvor en grå baggrund vises i områder af iFrame, efter at indholdet er skaleret til at passe inden for iFrame. Angiv din iFrames højde/bredde hensigtsmæssigt for at minimere letterboxing. |
 | ![](media/service-publish-to-web/publish_to_web6d.png) |**Faktisk størrelse** sikrer, at rapporten bevarer sin størrelse som indstillet på rapportsiden. Dette kan medføre, at der er rullepaneler i din iFrame. Angiv højden og bredden på iFrame for at undgå rullepanelerne. |
 | ![](media/service-publish-to-web/publish_to_web6c.png) |**Tilpas til bredden** sikrer, at indholdet passer inden for det vandrette område til din iFrame. Der vises stadig en kant, men indholdet skaleres til at bruge al tilgængelig vandret plads. |
 
@@ -128,15 +128,16 @@ Brugerdefinerede visuelle elementer, der understøttes i **Publicer på internet
 
 **Publicer på internettet** understøttes for langt de fleste datakilder og rapporter i Power BI-tjenesten, men følgende **understøttes i øjeblikket ikke eller er ikke tilgængelige** med Publicer på internettet:
 
-1. Rapporter med sikkerhed på rækkeniveau.
-2. Rapporter, der bruger en vilkårlig Live Connection-datakilde, herunder Analysis Services Tabular, der hostes i det lokale miljø, Analysis Service Multidimensional og Azure Analysis Services.
-3. Rapporter, der er delt med dig direkte eller via en organisationsindholdspakke.
-4. Rapporter i en gruppe, hvor du ikke er redigeringsmedlem.
-5. Visuelle "R"-elementer understøttes ikke i øjeblikket i Publicer på internettet-rapporter.
-6. Eksport af data fra visualiseringer i en rapport, som er publiceret på internettet
-7. ArcGIS Maps til Power BI-visualiseringer
-8. Rapporter med DAX-målinger på rapportniveau
-9. [Fortrolige eller beskyttede oplysninger](#publish-to-web-from-power-bi)
+- Rapporter med sikkerhed på rækkeniveau.
+- Rapporter, der bruger en vilkårlig Live Connection-datakilde, herunder Analysis Services Tabular, der hostes i det lokale miljø, Analysis Service Multidimensional og Azure Analysis Services.
+- Rapporter, der er delt med dig direkte eller via en organisationsindholdspakke.
+- Rapporter i en gruppe, hvor du ikke er redigeringsmedlem.
+- Visuelle "R"-elementer understøttes ikke i øjeblikket i Publicer på internettet-rapporter.
+- Eksport af data fra visualiseringer i en rapport, som er publiceret på internettet
+- ArcGIS Maps til Power BI-visualiseringer
+- Rapporter med DAX-målinger på rapportniveau
+- Forespørgselsmodeller for enkeltlogon til data
+- [Fortrolige eller beskyttede oplysninger](#publish-to-web-from-power-bi)
 
 ## <a name="tenant-setting"></a>Lejerindstillinger
 

@@ -2,20 +2,20 @@
 title: Aggregeringer (sum, gennemsnit, maksimum, osv.) i visualiseringer
 description: Tilpas aggregeringen i et diagram (sum, gennemsnit, maksimum, osv.) i Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/04/2018
+ms.date: 08/29/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 39adfd04118362fa706f0840daa5c2520d899b5e
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: d48f99c8415b7b347a504525b0c6539d1e90f4dd
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247590"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241539"
 ---
 # <a name="aggregates-in-power-bi-visualizations"></a>Aggregeringer i Power BI-visualiseringer
 ## <a name="what-is-an-aggregate"></a>Hvad er en aggregering?
@@ -34,7 +34,7 @@ I eksemplet nedenfor:
 
    ![](media/service-aggregates/power-bi-aggregate-chart.png)
 
-Når du opretter en visualisering i Power BI, aggregeres numeriske felter (standarden er *sum*) over nogle kategorifelter.  For eksempel "Solgte enheder ***efter produkt***,"Solgte  enheder ***efter måned***"og "Produktionspris ***efter Segment***. Nogle numeriske felter kaldes også for **mål**. Det er nemt at identificere mål i Power BI-rapporteditoren – mål vises med symbolet ∑ på listen Felter. Du kan finde flere oplysninger under [Rapporteditoren... få en introduktion](service-the-report-editor-take-a-tour.md).
+Når du opretter en visualisering i Power BI, aggregeres numeriske felter (standarden er *sum*) over nogle kategorifelter.  For eksempel "Solgte enheder ***efter produkt***,"Solgte  enheder ***efter måned***"og "Produktionspris ***efter Segment***. Nogle numeriske felter kaldes også for **mål**. Det er nemt at identificere målinger i Power BI-rapporteditoren – målinger vises med symbolet ∑ på listen Felter. Du kan finde flere oplysninger under [Rapporteditoren... få en introduktion](service-the-report-editor-take-a-tour.md).
 
 ![](media/service-aggregates/power-bi-aggregate-fields.png)
 
@@ -45,7 +45,7 @@ Arbejdet med aggregeringer i Power BI kan være forvirrende; måske har du et nu
 
 Kilden til problemet er oftest måden, hvorpå feltet er defineret i datasættet. Måske er feltet defineret som tekst, hvilket forklarer, hvorfor sammenlægning eller beregning af gennemsnit ikke virker. Desværre [kan kun datasættets ejer ændre måden, hvorpå et felt er kategoriseret](desktop-measures.md). Så du kan løse problemet, hvis du har ejertilladelser til datasættet, enten i Desktop eller det program, der blev brugt til at oprette datasættet (f.eks. Excel). Ellers skal du kontakte ejeren af datasættet for at få hjælp.  
 
-Du kan med fordel bruge det særlige afsnit sidst i denne artikel kaldet **Tip og fejlfinding** for at få hjælp til at skære igennem forvirringen.  Hvis du ikke kan finde løsningen her, kan du stille dit spørgsmål i [Power BI-community-forummet](http://community.powerbi.com) for at få et hurtigt svar fra Power BI-teamet.
+Hvis du er forvirret, kan du gå til det særlige afsnit sidst i denne artikel kaldet **Tip og fejlfinding** for at få hjælp.  Hvis du ikke kan finde løsningen her, kan du stille dit spørgsmål i [Power BI-community-forummet](http://community.powerbi.com) for at få et hurtigt svar fra Power BI-teamet.
 
 ## <a name="change-how-a-numeric-field-is-aggregated"></a>Tilpas måden, hvorpå et numerisk felt aggregeres
 Lad os antage, at du har et diagram, der sammenlægger solgte enheder for forskellige produkter, men du hellere vil beregne gennemsnittet. 
@@ -129,9 +129,9 @@ Sv: Det felt, du har valgt, er sandsynligvis et beregnet mål eller avanceret m�
 
 Sp: Mit felt **er** numerisk, så hvorfor kan jeg kun vælge **Antal** og **Distinkt antal**?
 
-Sv. 1: Den sandsynlige forklaring er, at datasættets ejer, utilsigtet eller bevidst, *ikke* har klassificeret feltet som et tal. Hvis et datasæt for eksempel har et felt med **år**, så kan datasættets ejer kategorisere det som tekst, fordi der er større sandsynlighed for, at feltet **år** bliver talt (dvs. antallet af personer født i 1974), og ikke at det bliver opsummeret eller gennemsnitsberegnet. Hvis du er ejeren, kan du åbne datasættet i Power BI Desktop og bruge fanen **Udformning** for at ændre datatypen.  
+Sv. 1: Den sandsynlige forklaring er, at datasættets ejer, utilsigtet eller bevidst, *ikke* har klassificeret feltet som et tal. Hvis et datasæt for eksempel har et felt med **år**, kan datasættets ejer kategorisere det som tekst, fordi der er større sandsynlighed for, at feltet **år** bliver talt (f.eks. antallet af personer født i 1974), og ikke at det bliver lagt sammen, eller gennemsnittet bliver beregnet. Hvis du er ejeren, kan du åbne datasættet i Power BI Desktop og bruge fanen **Udformning** for at ændre datatypen.  
 
-Sv. 2: Hvis feltet har et lommeregnerikon, er det et *beregnet mål*, og hvert beregnede mål har sin egen hard-coded formel, der kun kan ændres af en datasætejer. Den benyttede beregning kan være en simpel aggregering, som f.eks. et gennemsnit eller en sum, men det kan også være noget mere kompliceret, som f.eks. en "procentdel af bidraget til forældrekategori" eller "løbende totalværdi siden årets begyndelse". I Power BI bliver der ikke opsummeret eller beregnet gennemsnit af resultaterne, men blot udført en genberegning (vha. den hard-coded formel) for hvert datapunkt.
+Sv. 2: Hvis feltet har et lommeregnerikon, er det et *beregnet mål*, og hvert beregnede mål har sin egen hard-coded formel, der kun kan ændres af en datasætejer. Den benyttede beregning kan være en simpel aggregering, som f.eks. et gennemsnit eller en sum, men det kan også være noget mere kompliceret, som f.eks. en "procentdel af bidraget til forældrekategori" eller "løbende totalværdi siden årets begyndelse". I Power BI sammenlægges eller beregnes der ikke gennemsnit af resultaterne, men der udføres bare en genberegning (vha. formlen med fast kode) for hvert datapunkt.
 
 Sv. 3:  En anden mulighed er, at du tabte feltet i en *bucket*, der kun tillader kategoriske værdier.  Hvis dette er tilfældet, så har du kun adgang til antal og distinkt antal.
 
@@ -139,6 +139,10 @@ Sv. 4: En tredje mulighed er, at du bruger feltet for en akse. Eksempelvis på e
 
 >[!NOTE]
 >Undtagelsen for denne regel er punktdiagrammer, som *kræver* aggregerede værdier for X- og Y-akserne.
+
+Sp: Hvorfor kan jeg kan ikke sammenlægge tekstfelter til SSAS-datakilder?
+
+Sv.: Dynamiske forbindelser til SSAS MD tillader ikke sammenlægninger på klientsiden. Dette omfatter første, sidste, gns, min, maks og sum.
 
 Sp: Jeg har et punktdiagram, og jeg vil *ikke* have, at mit felt aggregerer.  Hvordan gør jeg det?
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/10/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 24d585af19dd774cdf6fe7dafb66c12e02d311f9
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 5da624f92093111c1996d9b1c5080cd58a906a45
+ms.sourcegitcommit: 2bdcb9e9959302a35ee90a145e4ff832a02aacb9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38924786"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43250767"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Administrer kapaciteter i Power BI Premium og Power BI Embedded
 Lær, hvordan du kan administrere Power BI Premium- og Power BI Embedded-kapaciteter, som leverer dedikerede ressourcer til dit indhold.
@@ -163,33 +163,8 @@ Når du har gemt, flyttes arbejdsområdet og al dets indhold til Premium-kapacit
 
 
 ## <a name="monitor-capacity-usage"></a>Overvåg kapacitetsforbrug
-For hver kapacitet kan du se målinger af forbrug for CPU, hukommelse, hukommelsesudskiftning og direkte forespørgsel. Vi anbefaler, at disse tal overvåges for at sørge for, at brugerne oplever god ydeevne af kapaciteten:
 
-![Forbrug de sidste syv dage](media/service-admin-premium-manage/premium-dashboard-tiles.png)
-
-> [!NOTE]
-> Power BI Embedded-kapacitetsforbrug overvåges på Azure-portalen.
-
-| Data | Beskrivelse |
-| --- | --- |
-| CPU |Det antal gange, CPU-forbruget har overskredet 80 %. |
-| Hukommelsesudskiftning |Repræsenterer hukommelsesforbrug på backend-kerner. Disse data angiver specifikt, hvor mange gange datasæt ryddes fra hukommelsen pga. hukommelsesforbrug grundet brugen af flere datasæt. |
-| Hukommelsesbrug |Gennemsnitligt hukommelsesforbrug vist i GB. |
-| DQ/s | Det antal gange, antallet af direkte forespørgsler og direkte forbindelser har overskredet 80 % af grænsen. <br> <br> * Vi begrænser det samlede antal forespørgsler i relation til DirectQuery og direkte forbindelse pr. sekund.<br><br>* Grænserne er 30/s for P1, 60/s for P2 og 120/s for P3.<br><br> * Forespørgsler i relation til DirectQuery og direkte forbindelse indgår også i de ovenstående begrænsninger. Hvis du f.eks. har 15 DirectQueries og 15 direkte forbindelser på et sekund, er grænsen nået.<br/><br>* Dette gælder ligeligt for forbindelser i det lokale miljø og cloudbaserede forbindelser. |
-
-Målepunkter afspejler udnyttelse i løbet af den seneste uge.  Hvis du vil se en mere detaljeret visning af målepunkter, kan du gøre det ved at klikke på et af oversigtsfelterne.  Derved åbnes detaljerede diagrammer over de enkelte målepunkter for din Premium-kapacitet.  Disse diagrammer opsummeres for hver time i løbet af den seneste uge og kan hjælpe med at identificere, hvornår du har haft særlige hændelser relateret til ydeevne i din Premium-kapacitet.  
-
-![Detaljeret diagram over forbrug, CPU](media/service-admin-premium-manage/premium-usage-detailed-chart-cpu.png)
-
-![Detaljeret diagram over forbrug, Hukommelsesudskiftning](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-thrashing.png)
-
-
-![Detaljeret diagram over forbrug, Hukommelsesstørrelse](media/service-admin-premium-manage/premium-usage-detailed-chart-memory-size.png)
-
-
-![Detaljeret diagram over forbrug, Hukommelsesudskiftning](media/service-admin-premium-manage/premium-usage-detailed-chart-dq.png)
-
-Du kan også eksportere de underliggende data for et eller flere målepunkter til en CSV-fil.  Via denne eksport får du detaljerede oplysninger i tre minutters intervaller for hver dag fra den seneste uge.
+Power BI leverer en app til overvågning af kapacitetsbrug. Du kan finde flere oplysninger under [Overvåg Power BI Premium-kapaciteter i din organisation](service-admin-premium-monitor-capacity.md).
 
 ## <a name="what-premium-looks-like-for-users"></a>Premium-brugergrænsefladen
 I de fleste tilfælde bemærker brugere slet ikke, at de er i en Premium-kapacitet. Deres dashboards og rapporter fungerer uden problemer. Arbejdsområder, der er i Premium-kapacitet, markeres visuelt med en diamantikon ud for de pågældende arbejdsområder.

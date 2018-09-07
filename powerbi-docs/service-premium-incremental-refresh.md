@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/30/2018
 ms.author: chwade
 LocalizationGroup: Premium
-ms.openlocfilehash: 1b6a3c35abeff33e2fb1e0fecdc5c2a5c88e1530
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: fd62e90d4a4f348ee7b3a524f85725d517180068
+ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "34298176"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43300132"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Trinvis opdatering i Power BI Premium
 
@@ -43,6 +43,12 @@ Store datasæt, der kan indeholde milliarder af rækker, kan måske ikke være i
 
 Hvis du vil bruge trinvis opdatering i Power BI-tjenesten, skal du udføre filtrering ved hjælp af dato/klokkeslæt-parametrene i Power-forespørgsel med de reserverede navne **RangeStart** og **RangeEnd**, hvor der skelnes mellem store og små bogstaver.
 
+Når det er publiceret, overskrives parameterværdierne automatisk af Power BI-tjenesten. Det er ikke nødvendigt at angive dem under indstillinger for datasæt i tjenesten.
+ 
+Det er vigtigt, at filteret pushes til kildesystemet, når der sendes forespørgsler til opdatering. Det betyder, at datakilden skal understøtte "forespørgselsfoldning". På grund af de forskellige supportniveauer for forespørgselsfoldning af de enkelte datakilder anbefales det, at du kontrollerer den filterlogik, der er inkluderet i kildeforespørgslerne. Hvis dette ikke sker, anmoder alle forespørgsler om alle dataene fra kilden, og dermed tilsidesættes formålet med trinvis opdatering.
+ 
+Filteret bruges til at partitionere dataene i intervaller i Power BI-tjenesten. Det er ikke designet til at understøtte opdatering af den filtrerede datokolonne. En opdatering fortolkes som en indsætning og sletning (ikke en opdatering). Hvis sletningen sker i historikintervallet og ikke i det trinvis interval, registreres den ikke.
+
 I redigeringsfunktionen til Power-forespørgsel skal du vælge **Administrer parametre** for at definere parametrene med standardværdier.
 
 ![Administrer parametre](media/service-premium-incremental-refresh/manage-parameters.png)
@@ -61,9 +67,6 @@ Du skal sikre, at rækker filtreres, hvor kolonneværdien *er efter eller lig me
 > `(x as datetime) => Date.Year(x)*10000 + Date.Month(x)*100 + Date.Day(x)`
 
 Vælg **Luk og anvend** fra redigeringsfunktionen til Power-forespørgsel. Du får et undersæt af datasættet i Power BI Desktop.
-
-> [!NOTE]
-> Når det er publiceret, overskrives parameterværdierne automatisk af Power BI-tjenesten. Det er ikke nødvendigt at angive dem under indstillinger for datasæt.
 
 ### <a name="define-the-refresh-policy"></a>Definer opdateringspolitikken
 
@@ -102,9 +105,11 @@ Den første opdatering i Power BI-tjenesten kan tage længere tid, da alle fem �
 
 **En definition af disse intervaller kan være det eneste, du skal bruge, og i dette tilfælde kan du gå direkte til trinnet for publicering nedenfor. De ekstra rullemenuer bruges til avancerede funktioner.**
 
+### <a name="advanced-policy-options"></a>Avancerede politikindstillinger
+
 #### <a name="detect-data-changes"></a>Registrer dataændringer
 
-En trinvis opdatering på ti dage er selvfølgelig meget mere effektiv end en komplet opdatering på fem år. Men vi kan muligvis gøre det endnu bedre. Hvis du markerer afkrydsningsfeltet**Registrer dataændringer**, kan du vælge en dato/klokkeslæt-kolonne, der bruges til at identificere og kun opdatere de dage, hvor dataene er blevet ændret. Det er en forudsætning, at der findes en sådan kolonne i kildesystemet, der typisk bruges til overvågning. Maksimumværdien for denne kolonne evalueres for hver af perioderne i det trinvise interval. Hvis den ikke er ændret siden den seneste opdatering, er det ikke nødvendigt at opdatere perioden. I eksemplet kan det betyde en yderligere reduktion af den trinvise opdatering fra 10 til måske 2 dage.
+En trinvis opdatering på ti dage er selvfølgelig meget mere effektiv end en komplet opdatering på fem år. Men vi kan muligvis gøre det endnu bedre. Hvis du markerer afkrydsningsfeltet**Registrer dataændringer**, kan du vælge en dato/klokkeslæt-kolonne, der bruges til at identificere og kun opdatere de dage, hvor dataene er blevet ændret. Det er en forudsætning, at der findes en sådan kolonne i kildesystemet, der typisk bruges til overvågning. **Det må ikke være den samme kolonne, der bruges til at partitionere dataene med parametrene RangeStart/RangeEnd.** Maksimumværdien for denne kolonne evalueres for hver af perioderne i det trinvise interval. Hvis den ikke er ændret siden den seneste opdatering, er det ikke nødvendigt at opdatere perioden. I eksemplet kan det betyde en yderligere reduktion af den trinvise opdatering fra 10 til måske 2 dage.
 
 ![Registrer ændringer](media/service-premium-incremental-refresh/detect-changes.png)
 

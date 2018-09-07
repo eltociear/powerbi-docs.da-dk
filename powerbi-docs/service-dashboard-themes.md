@@ -2,20 +2,20 @@
 title: Brug dashboardtemaer i Power BI-tjenesten
 description: Få mere at vide om, hvordan du bruger en brugerdefineret farvepalet og anvender den for et helt dashboard i Power BI-tjenesten
 author: mihart
-manager: kfile
+manager: annbe
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 08/22/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: d17694d6dd2e2133b80d326a8aa86194d5710946
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 25bd28db7b31921d5f1a02ae72cee47207134f2a
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944646"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241470"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Brug Dashboard-temaer i Power BI-tjenesten
 Med **dashboardtemaer** kan du anvende et farvetema på hele dit dashboard, f.eks virksomhedens farver, sæsonmæssige farver eller andre farvetemaer, som du gerne vil anvende. Når du anvender et **dashboardtema**, bruges farver fra det valgte tema for alle visualiseringer på dashboardet (med nogle få undtagelser, der er beskrevet senere i denne artikel).
@@ -46,7 +46,7 @@ Standardtemaet til Power BI-dashboards er **Light**. Hvis du vil tilpasse farver
 
 ![Vælg Brugerdefineret på rullelisten](media/service-dashboard-themes/power-bi-theme-custom.png)
 
-Brug de brugerdefinerede indstillinger for at oprette dit eget dashboardtema. Hvis du tilføjer et baggrundsbillede, anbefaler vi, at billedet har en opløsning på mindst 1920 x 1080.  
+Brug de brugerdefinerede indstillinger for at oprette dit eget dashboardtema. Hvis du tilføjer et baggrundsbillede, anbefaler vi, at billedet har en opløsning på mindst 1920 x 1080. Hvis du vil bruge et billede som baggrund, skal du uploade billedet til et offentligt websted, kopiere URL-adressen og indsætte den i feltet **URL-adresse til billede**. 
 
 ### <a name="using-json-themes"></a>Brug af JSON-temaer
 En anden metode til at oprette et brugerdefineret tema er at uploade en JSON-fil, som indeholder indstillinger for alle de farver, du vil bruge i dit dashboard. I Power BI Desktop kan rapportoprettere bruge JSON-filer til [oprette temaer til rapporter](desktop-report-themes.md). De samme JSON-filer kan uploades til dashboards, eller du kan finde og uploade JSON-filer fra siden [Theme gallery](https://community.powerbi.com/t5/Themes-Gallery/bd-p/ThemesGallery) i Power BI-communityet 

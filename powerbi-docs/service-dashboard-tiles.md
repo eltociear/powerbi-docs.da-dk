@@ -2,20 +2,20 @@
 title: Dashboardfelter i Power BI-tjeneste
 description: Alt om dashboardfelter i Power BI. Det omfatter felter, der er oprettet fra SQL Server Reporting Services (SSRS).
 author: mihart
-manager: kfile
+manager: annbe
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 08/21/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e53945e0a112d9498dc6798e2441dd3d925a64c1
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 09fcce65539d89c9d42bc05369f13a6048eb96c2
+ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249062"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241585"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Dashboardfelter i Power BI
 Dashboards og dashboardfelter er en funktion i Power BI-tjenesten ikke Power BI Desktop. Selvom dashboardfelter ikke kan oprettes eller fastgøres i Power BI - Mobil, [kan de vises og deles](mobile-tiles-in-the-mobile-apps.md). Og i Power BI - Mobil kan du [føje billeder til dashboardet med iPhone-appen](mobile-iphone-app-get-started.md).
@@ -67,9 +67,9 @@ Tag et felt, og [flyt det rundt på dashboardet](service-dashboard-edit-tile.md)
    
    * [Åbne det regneark, der blev brugt til at oprette dette felt ](service-reports.md) ![regnearksikon](media/service-dashboard-tiles/power-bi-open-worksheet.png)  
      
-     * [Få vist i fokuseringstilstand ](service-focus-mode.md) ![fokusikon](media/service-dashboard-tiles/fullscreen-icon.jpg)  
+    * [Få vist i fokuseringstilstand ](service-focus-mode.md) ![fokusikon](media/service-dashboard-tiles/fullscreen-icon.jpg)  
      * [Eksportere data, der bruges i feltet](power-bi-visualization-export-data.md) ![eksportér data-ikon](media/service-dashboard-tiles/export-icon.png)
-     * [Redigere titel og undertitel, tilføje et hyperlink, vise seneste opdateringstidspunkt](service-dashboard-edit-tile.md) ![redigeringsikon](media/service-dashboard-tiles/pencil-icon.jpg)
+     * [Redigere titel og undertitel, tilføje et link](service-dashboard-edit-tile.md) ![redigeringsikon](media/service-dashboard-tiles/pencil-icon.jpg)
      * [Køre indsigt](service-insights.md) ![indsigtsikon](media/service-dashboard-tiles/power-bi-insights.png)
      * [Fastgøre feltet til et andet dashboard ](service-pin-tile-to-another-dashboard.md)
        ![fastgørelsesikon](media/service-dashboard-tiles/pin-icon.jpg)
