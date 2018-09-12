@@ -2,20 +2,20 @@
 title: Visualiseringstyper i Power BI
 description: Visualiseringstyper i Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/19/2018
+ms.date: 09/04/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: bc1c54be2fdafeba4c706ca637ce50da7bf9d48c
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 4a98e62145c7928af9d33a5cd08c17e1867eef28
+ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34246440"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44168106"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 ## <a name="power-bi-visualizations"></a>Visualiseringer i Power BI
@@ -122,6 +122,14 @@ Du kan finde flere oplysninger under [Selvstudium: Kartogrammer i Power BI](powe
 
 ### <a name="pie-charts"></a>Cirkeldiagrammer
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_pie.png)
+
+### <a name="ribbon-charts"></a>Bånddiagrammer
+![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-ribbon.png)
+
+>[!TIP]
+>Find ud af, hvilken datakategori der har den højeste placering.
+
+Du kan finde flere oplysninger under [Brug Bånddiagrammer i Power BI](desktop-ribbon-charts.md).
 
 ### <a name="scatter-and-bubble-charts"></a>Punkt- og boblediagrammer
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bubble.png)

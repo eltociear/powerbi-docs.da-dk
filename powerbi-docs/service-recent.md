@@ -2,31 +2,31 @@
 title: Vis indhold i Power BI, du har besøgt for nylig
 description: dokumentation for nyligt indhold i Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 09/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: c3d75f6cada62e7fc1dd026a4bdfa1daa8e94153
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: ae57617b1b70a3ed6181ab164accb69dac29779c
+ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34250925"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44044204"
 ---
 # <a name="recent-content-in-power-bi-service"></a>**Nyligt** indhold i Power BI-tjeneste
 
 
 ## <a name="what-is-recent-content"></a>Hvad er nyligt indhold
-Seneste indhold er de seneste elementer, du har læst, op til maksimalt 20 elementer.  Det omfatter: dashboards, rapporter, apps og projektmapper på tværs af alle dine arbejdsområder.
+Seneste indhold er de seneste elementer, du har fået vist i Power BI-tjenesten, op til maksimalt 20 elementer.  Det omfatter: dashboards, rapporter, apps og projektmapper på tværs af alle dine arbejdsområder.
 
 ![Vinduet Seneste indhold](media/service-recent/power-bi-recent-screen.png)
 
-Se Amanda demonstrere, hvordan indholdslisterne **Seneste** udfyldes, og følg derefter den trinvise vejledning under videoen for at prøve det selv.
+Se Amanda demonstrere, hvordan indholdslisterne for **Seneste** udfyldes i Power BI-tjenesten, og følg derefter den trinvise vejledning under videoen for at prøve det selv.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G26dr2PsEpk" frameborder="0" allowfullscreen></iframe>
 

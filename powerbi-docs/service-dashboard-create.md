@@ -1,5 +1,5 @@
 ---
-title: Opret et Power BI-dashboard fra en rapport
+title: Opret et dashboard til Power BI-tjenesten fra en rapport
 description: Opret et Power BI-dashboard fra en rapport
 author: mihart
 manager: kfile
@@ -8,16 +8,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 09/02/2018
 ms.author: mihart
-ms.openlocfilehash: 56a26b50f50dd52d4355cd8326ec0d104dab19c0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: a550aabb3590018666a3784e602ede15696862e5
+ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248924"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44168083"
 ---
-# <a name="create-a-power-bi-dashboard-from-a-report"></a>Opret et Power BI-dashboard fra en rapport
+# <a name="create-a-power-bi-dashboard-in-power-bi-service"></a>Opret et dashboard til Power BI i Power BI-tjenesten
 Du har læst [Dashboards i Power BI](service-dashboards.md), og nu vil du oprette dit eget. Der er mange forskellige måder at oprette et dashboard på – fra en rapport, fra bunden, fra et datasæt, ved at kopiere et eksisterende dashboard og meget mere.  
 
 Det kan virke overvældende, når du starter for første gang, så vi begynder med hurtigt og nemt at oprette et dashboard ved at fastgøre visualiseringer fra en rapport, der allerede er oprettet. Når du er færdig med denne hurtige introduktion, vil du have en god forståelse af relationen mellem dashboards og rapporter, åbning af Redigeringsvisning i rapporteneditoren, fastgørelse af felter og skift mellem et dashboard og en rapport. Derefter skal du bruge linkene i Indholdsfortegnelse til venstre eller **Næste trin** nederst for at fortsætte til mere avancerede emner.

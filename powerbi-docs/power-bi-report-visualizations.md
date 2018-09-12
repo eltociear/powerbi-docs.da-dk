@@ -2,21 +2,21 @@
 title: Oversigt over rapportvisualiseringer i Power BI-tjenesten og Desktop
 description: Oversigt over rapportvisualiseringer (visuals) i Microsoft Power BI.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: SYk_gWrtKvM
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/21/2018
+ms.date: 08/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f0e0dc02fc07849c68c00ce857da0ccbeb2d76df
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 03b981f6ac03bf23077458a29ea6f88b8feaa04e
+ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34240181"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44044273"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualiseringer i Power BI-rapporter
 Visualiseringer (dvs. visuals) viser indsigter, der er blevet registreret i dataene. En rapport i Power BI har muligvis en enkelt side med én visual, eller den kan have sider fulde af visuals. I Power BI-tjenesten kan visuals [fastgøres fra rapporter til dashboards](service-dashboard-pin-tile-from-report.md). 
@@ -25,7 +25,7 @@ Det er vigtigt at skelne mellem rapporters *forfattere* og rapporters *forbruger
 
 Der er mange forskellige typer visuals, der fås direkte fra ruden VISUALISERINGER i Power BI. 
 
-![](media/power-bi-report-visualizations/power-bi-visualizations.png)
+![](media/power-bi-report-visualizations/power-bi-templates.png)
 
 Du kan desuden tilgå mange flere muligheder ved at besøge [webstedet for Microsoft AppSource-community'et](https://appsource.microsoft.com), hvor du kan finde og downloade[brugerdefinerede visuals](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals&page=1) leveret af Microsoft og community'et.    
 
@@ -48,8 +48,3 @@ Når du har fået tilpasset visualiseringen til det, du har brug for i Power BI-
 
 ## <a name="next-steps"></a>Næste trin
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-[Rapporter i Power BI](service-reports.md)  
-[Dashboards i Power BI](service-dashboards.md)  
-[Power BI – Grundlæggende begreber](service-basic-concepts.md)  
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-

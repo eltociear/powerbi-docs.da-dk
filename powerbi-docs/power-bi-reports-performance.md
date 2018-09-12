@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: kfile
 LocalizationGroup: Reports
-ms.openlocfilehash: 2e8888679f36b64a6fc5956a9ca10dc3d07dce1a
-ms.sourcegitcommit: 8b2ae15eb0e39cce29f3bf466ab7768f3f7c7815
+ms.openlocfilehash: 08ead2570602538218085327c6d385c36e0d7e8c
+ms.sourcegitcommit: 8bad5ed58e9e406aca53996415b1240c2972805e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40256910"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44343317"
 ---
 # <a name="power-bi-performance-best-practices"></a>Power BI-ydeevne – bedste praksis 
 Denne artikel giver vejledning i at oprette hurtige og pålidelige rapporter i Power BI.  
@@ -59,7 +59,7 @@ I følgende afsnit beskrives generelle bedste praksisser for oprettelse af forbi
 - Skub beregnede kolonner og målinger til kilden, når det er muligt – jo tættere de er på kilden, jo større er chancen for forbedret ydeevne. 
 - Optimer! Forstå afviklingsplanerne for dine forespørgsler, føj indekser til hyppigt filtrerede kolonner osv. 
 
-### <a name="modelling-guidance"></a>Vejledning i udformning 
+### <a name="modeling-guidance"></a>Vejledning til modellering 
 - Begynd i Power BI Desktop. 
 - Undgå komplekse forespørgsler i Forespørgselseditoren. 
 - Brug ikke relativ datofiltrering i Forespørgselseditoren.  
@@ -110,7 +110,7 @@ Følg nedenstående anvisninger:
 
    Outputtet bør være en liste over programmer, og deres åbne porte, f.eks.:  
 
-   TCP    [::1]:55786            [::1]:55830            OPRETTET 
+   `TCP    [::1]:55786            [::1]:55830            ESTABLISHED`
 
    [msmdsrv.exe] 
 

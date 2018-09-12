@@ -2,21 +2,21 @@
 title: Radiale målerdiagrammer i Power BI
 description: Radiale målerdiagrammer i Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: xmja6Epqa
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/21/2018
+ms.date: 08/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7417b324a74dcc4aecd599c73fed0298de3e6a89
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 8cb3dba371b555dc7d9a7bc6d1e27aac82a57fef
+ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34292518"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44167991"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Radiale målerdiagrammer i Power BI
 Et radialt målerdiagram har en cirkulær bue og viser en enkelt værdis status i forhold til et mål/en KPI.  Målet, eller målværdien, er repræsenteret med en streg (nål). Statussen mod målet repræsenteres med en skygge.  Den værdi, der repræsenterer statussen, vises med fed i buen. Alle de mulige værdier er fordelt langs buen fra minimumværdien (længst til venstre) til maksimumværdien (længst til højre).
@@ -56,22 +56,22 @@ Eller du kan se med, når Will viser, hvordan du opretter visualiseringer med en
 ### <a name="step-2-create-a-gauge-to-track-gross-sales"></a>Trin 2: Opret en måler for at spore bruttoomsætningen (Gross Sales)
 1. Vælg **Gross Sales** i ruden **Felter**.
    
-   ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue_new.png)
-2. Ret aggregeringen til **Gennemsnit**.
+   ![](media/power-bi-visualization-radial-gauge-charts/power-bi-gross-sales.png)
+2. Ret aggregeringen til **Gennemsnit**. I feltet **Værdi** skal du vælge rullelisten og vælge **Gennemsnitlig**.
    
    ![](media/power-bi-visualization-radial-gauge-charts/changetoaverage_new.png)
 3. Vælg målerikonet ![](media/power-bi-visualization-radial-gauge-charts/gaugeicon_new.png) for at konvertere søjlediagrammet til en måler.
    
-   Som standard vil Power BI oprette et målerdiagram, hvor den aktuelle værdi (i dette tilfælde Gennemsnit af Gross Sales) antages at være midtvejspunktet for måleren. Da gennemsnittet af Gross Sales er 182,76tusind, er startværdien (Minimum) indstillet til 0, og slutværdien (Maksimum) er indstillet til det dobbelte af den aktuelle værdi.
+   Som standard vil Power BI oprette et målerdiagram, hvor den aktuelle værdi (i dette tilfælde Gennemsnit af Gross Sales) antages at være midtvejspunktet for måleren. Da gennemsnittet af Gross Sales er 184.210 USD, er startværdien (Minimum) indstillet til 0, og slutværdien (Maksimum) er indstillet til det dobbelte af den aktuelle værdi.
    
-   ![](media/power-bi-visualization-radial-gauge-charts/gauge_no_target.png)
+   ![](media/power-bi-visualization-radial-gauge-charts/power-bi-184.png)
 
 ### <a name="step-3-set-a-target-value"></a>Trin 3: Indstil en målværdi
 1. Træk **COGS** til området **Målværdi**.
 2. Ret aggregeringen til **Gennemsnit**.
-   Power BI tilføjer en nål, der repræsenterer målværdien **145,48tusind**. Bemærk, at vi er over vores mål.
+   Power BI tilføjer en nål, der repræsenterer målværdien **146.000 USD**. Bemærk, at vi er over vores mål.
    
-   ![](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress_new.png)
+   ![](media/power-bi-visualization-radial-gauge-charts/power-bi-cogs.png)
    
    > [!NOTE]
    > Du kan også angive en målværdi manuelt.  Se "Brug formateringsindstillinger til manuelt at angive værdierne Minimum, Maksimum og Mål" nedenfor.
@@ -98,7 +98,7 @@ På trin 2 brugte Power BI feltet Værdi til automatisk at angive en minimum- (s
 1. Fjern **Maks. af Gross Sales** fra **Maksimumværdi**.
 2. Åbn formateringsruden ved at vælge ikonet med malerullen.
    
-   ![](media/power-bi-visualization-radial-gauge-charts/power-bi-roller.png)
+   ![](media/power-bi-visualization-radial-gauge-charts/power-bi-max.png)
 3. Udvid **Målerakse**, og angiv værdier for **Min** og **Maks**.
    
     ![](media/power-bi-visualization-radial-gauge-charts/power-bi-gauge-axis.png)
@@ -112,8 +112,6 @@ På trin 2 brugte Power BI feltet Værdi til automatisk at angive en minimum- (s
 
 ## <a name="next-steps"></a>Næste trin
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Føj en visualisering til en rapport](power-bi-report-add-visualizations-i.md)
 
 [Fastgør en visualisering til et dashboard](service-dashboard-pin-tile-from-report.md)
 

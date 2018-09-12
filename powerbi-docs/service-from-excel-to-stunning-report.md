@@ -2,20 +2,20 @@
 title: Fra Excel-projektmappe til fantastisk rapport på ingen tid
 description: Fra Excel-projektmappe til fantastisk rapport på ingen tid
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 08/28/2018
 ms.author: mihart
 LocalizationGroup: Data from files
-ms.openlocfilehash: f24d4055bd5fcf5fdee058112c268a1a0e197012
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3244a185c7b7e9caa689ab7b90c184c9bf5b4662
+ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247166"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44044411"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Fra Excel-projektmappe til fantastisk rapport på ingen tid
 Din chef vil gerne se en rapport om dine seneste salgstal kombineret med dine seneste kampagneannoncer, inden dagen er omme. Men de seneste data befinder sig på forskellige systemer hos tredjeparter og i filer på din bærbare computer. Tidligere har det taget timevis at oprette visuals og formatere en rapport. Du begynder at blive bekymret.
@@ -34,7 +34,7 @@ Formatér derefter dataene som en tabel. I Excel skal du vælge **Formatér som 
 ![data, der er formateret som en tabel](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
 
 ## <a name="upload-your-excel-file-into-power-bi"></a>Upload din Excel-fil til Power BI
-Power BI opretter forbindelse til mange datakilder, herunder Excel-filer, der findes på din computer. Log på Power BI for at komme i gang. Hvis du ikke har tilmeldt dig, [kan du gøre det gratis](https://powerbi.com).
+Power BI opretter forbindelse til mange datakilder, herunder Excel-filer, der findes på din computer. Log på Power BI-tjenesten for at komme i gang. Hvis du ikke har tilmeldt dig, [kan du gøre det gratis](https://powerbi.com).
 
 Du vil oprette et nyt dashboard. Åbn **Mit arbejdsområde**, og vælg ikonet **+ Opret**.
 

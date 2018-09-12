@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/06/2018
+ms.date: 08/27/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 750dbf2593981e8fc9ad5f2f66219d6bf6fd641c
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: d7f966834e2d6b44f3a887991bd0ebd6e38836f0
+ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137462"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44044342"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
@@ -31,27 +31,37 @@ Du kan også tjekke YouTube-kanalerne for at få mere at vide om nyheder og funk
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="may-2018"></a>Maj 2018
-* [Temadashboards](https://docs.microsoft.com/en-us/power-bi/service-dashboard-themes) i Power BI-tjenesten.
-* [Trinvis opdatering](https://docs.microsoft.com/en-us/power-bi/service-premium-incremental-refresh) med Premium.
-* Anmod om adgang til arbejdsgang for [Power BI-apps](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
-* Få opdateringer af Data for at gøre det nemmere for brugerne at finde [Power BI-apps](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
-* Indstillinger til at aktivere og deaktivere [Faste filtre](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) i Power BI-tjenesten.
-* Azure B2B inviterer forbedringer af arbejdsgangen for rapporter.
+## <a name="august-2018"></a>August 2018
+* Forbedringer af Power BI-[rapportens URL-adressefilter](service-url-filters.md).
 
 ## <a name="previous-months-2018"></a>Forrige måneder (2018)
+### <a name="july-2018"></a>Juli 2018
+* [API'er og PowerShell-cmdlet'er](https://powerbi.microsoft.com/blog/announcing-apis-and-powershell-cmdlets-for-power-bi-administrators/) til Power BI-administratorer.
+
+### <a name="june-2018"></a>Juni 2018
+* Deling af rapporter med filtre og udsnit.
+* Ny og forbedret brugergrænseflade til [gatewayforbindelser](https://powerbi.microsoft.com/blog/easier-set-up-of-datasets-in-power-bi/) og konfiguration af datasæt.
+
+### <a name="may-2018"></a>Maj 2018
+* [Temadashboards](https://docs.microsoft.com/power-bi/service-dashboard-themes) i Power BI-tjenesten.
+* [Trinvis opdatering](https://docs.microsoft.com/power-bi/service-premium-incremental-refresh) med Premium.
+* Anmod om adgang til arbejdsgang for [Power BI-apps](https://docs.microsoft.com/power-bi/service-create-distribute-apps).
+* Få opdateringer af Data for at gøre det nemmere for brugerne at finde [Power BI-apps](https://docs.microsoft.com/power-bi/service-create-distribute-apps).
+* Indstillinger til at aktivere og deaktivere [Faste filtre](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) i Power BI-tjenesten.
+* Azure B2B inviterer forbedringer af arbejdsgangen for rapporter.
+
 ### <a name="april-2018"></a>April 2018
-* [Hvidbog over Power BI GDPR](http://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+* [Whitepaper om databeskyttelse i forbindelse med Power BI](http://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5bd4c466-277b-4726-b9e0-f816ac12872d&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 * [Overvågningslogge](https://docs.microsoft.com/power-bi/service-admin-auditing) for Power BI-tjenesten er som standard slået til for Office 365-lejer.
 
 ### <a name="march-2018"></a>Marts 2018
-* [Faste filtre](https://powerbi.microsoft.com/en-us/blog/announcing-persistent-filters-in-the-service/) i Power BI-tjenesten.
-* Del indhold med brugere vha. deres personlige mailkonti. Udvidelse af [Azure Active Directory B2B](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/).
+* [Faste filtre](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/) i Power BI-tjenesten.
+* Del indhold med brugere vha. deres personlige mailkonti. Udvidelse af [Azure Active Directory B2B](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/).
 
 ### <a name="february-2018"></a>Februar 2018
-* Installér automatisk [Power BI-apps](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps) for slutbrugere.
+* Installér automatisk [Power BI-apps](https://docs.microsoft.com/power-bi/service-create-distribute-apps) for slutbrugere.
 * P4- og P5-kapaciteter under Power BI Premium
-* Eksempelvisning af [brugerdefinerede organisationsvisualiseringer](https://docs.microsoft.com/en-us/power-bi/power-bi-custom-visuals-organization).
+* Eksempelvisning af [brugerdefinerede organisationsvisualiseringer](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-organization).
 
 ### <a name="january-2018"></a>Januar 2018
 *   Del Power BI-rapporter, og føj dem til favoritter.
@@ -63,12 +73,12 @@ Du kan også tjekke YouTube-kanalerne for at få mere at vide om nyheder og funk
 
 ## <a name="previous-months-2017"></a>Forrige måneder (2017)
 ## <a name="october-and-november-2017"></a>Oktober og november 2017
-*   Selektiv publicering af indhold med [Power BI Apps](https://docs.microsoft.com/en-us/power-bi/service-create-distribute-apps).
-*   Ekstern brugerdistribution med [Azure Active Directory B2B](https://powerbi.microsoft.com/en-us/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/).
+*   Selektiv publicering af indhold med [Power BI Apps](https://docs.microsoft.com/power-bi/service-create-distribute-apps).
+*   Ekstern brugerdistribution med [Azure Active Directory B2B](https://powerbi.microsoft.com/blog/power-bi-expands-access-to-intelligence-for-external-guest-users/preview/).
 * Anbefalinger til AI-drevne apps.
 * Opdateringer af grænsefladen på felter i dashboard.
 * Understøttelse af mailabonnementer til apps. 
-* Detaljeret administratorstyring ifm. [publicer på internettet](https://docs.microsoft.com/en-us/power-bi/service-admin-portal#export-and-sharing-settings).
+* Detaljeret administratorstyring ifm. [publicer på internettet](https://docs.microsoft.com/power-bi/service-admin-portal#export-and-sharing-settings).
 
 ## <a name="september-2017"></a>September 2017
 * I Premium-kapacitet deles dashboards med brugere, der ikke har en Power BI Pro-licens.

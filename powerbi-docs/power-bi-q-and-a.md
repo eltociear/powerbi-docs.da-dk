@@ -2,20 +2,20 @@
 title: Oversigt over Spørgsmål og svar i Power BI-tjenesten og Desktop
 description: Oversigtsemne i dokumentationen om forespørgsler i naturligt sprog i Spørgsmål og svar i Power BI.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/18/2018
+ms.date: 08/18/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: a1d39d10982f1d598ffce7e978c1b030e0a442d4
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 1680a1aacf84eb5440703385dc831c32433456bb
+ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34295462"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44167945"
 ---
 # <a name="qa-in-power-bi-service-and-power-bi-desktop"></a>Spørgsmål og svar i Power BI-tjenesten og Power BI Desktop
 ## <a name="what-is-qa"></a>Hvad er Spørgsmål og svar?
@@ -48,11 +48,9 @@ Udover at bruge Spørgsmål og svar til at udforske deres data, kan forfattere o
 
 ## <a name="how-does-qa-know-how-to-answer-questions"></a>Hvordan ved Spørgsmål og svar, hvordan der skal svares på spørgsmål?
 ### <a name="which-datasets-does-qa-use"></a>Hvilke datasæt bruger Spørgsmål og svar?
-Hvordan ved Spørgsmål og svar, hvordan der skal svares på dataspecifikke spørgsmål? Funktionen er afhængig af navnene på tabellerne, kolonnerne og de beregnede felter i det underliggende datasæt. Så hvad du (eller datasættets ejer) kalder ting er vigtigt!
+Hvordan ved Spørgsmål og svar, hvordan der skal svares på dataspecifikke spørgsmål? Funktionen er afhængig af navnene på tabellerne, kolonnerne og de beregnede felter i det underliggende datasæt. Så det ting bliver kaldt af ejeren af datasættet er vigtigt! Hvis du har problemer med at få svar på dine spørgsmål under Spørgsmål og svar, skal du tale med ejeren af datasættet for at se, om hun kan gøre datasættet mere brugervenligt.
 
-Antag for eksempel, at du havde en Excel-tabel med navnet "Salg", med kolonner med titlerne "Produkt", "Måned", "Solgte enheder", "Bruttosalg" og "Fortjeneste". Du kan stille spørgsmål om enhver af disse enheder.  Du kan spørge "vis *salg*, "samlet *fortjeneste* efter *måned*", "sortér *produkter* efter *solgte enheder*" og meget mere.
-
-Spørgsmål og svar kan besvare spørgsmål, der er baseret på, hvordan dit datasæt er organiseret. Hvordan vil dette fungerer for dataene i Salesforce? Når du opretter forbindelse til din konto på salesforce.com, opretter Power BI automatisk et dashboard.  Før du begynder at stille spørgsmål med Spørgsmål og svar, skal du se på de data, der vises i dashboardets visualiseringer, og også de data, der vises på rullelisten Spørgsmål og svar.
+Under Spørgsmål og svar besvares spørgsmål, der er baseret på, hvordan datasættet er organiseret. Hvordan vil dette fungerer for dataene i Salesforce? Når du opretter forbindelse til din konto på salesforce.com, opretter Power BI automatisk et dashboard.  Før du begynder at stille spørgsmål med Spørgsmål og svar, skal du se på de data, der vises i dashboardets visualiseringer, og også de data, der vises på rullelisten Spørgsmål og svar.
 
 * Hvis visualiseringernes akseetiketter og værdier omfatter "salg", "kunde", "måned" og "salgsmuligheder", kan du med sikkerhed stille spørgsmål som: "Hvilken *kunde* har den højeste *salgsmulighed* eller vis *salg* pr. måned som et søjlediagram".
 * Hvis rullelisten indeholder "sælger", "delstat" og "år", kan du med sikkerhed stille spørgsmål som: "hvilken *sælger* havde det laveste *salg* i *Florida* i *2013*".
@@ -80,8 +78,6 @@ Du kan finde oplysninger om nøgleord, som Spørgsmål og svar genkender, i [Tip
 
 [Aktivér Spørgsmål og svar for datasæt i det lokale miljø](service-q-and-a-direct-query.md) Hvis du har brug for en gateway til at oprette forbindelse til datasættet, kan du bruge Power BI-indstillinger til at slå Spørgsmål og svar til og fra.
 
-[Selvstudium: Brug Spørgsmål og svar i Power BI-tjenesten med eksemplet på detailhandelssalg](power-bi-visualization-introduction-to-q-and-a.md): Brug Spørgsmål og svar i et realistisk brancheselvstudium.
-
-[Få dine data til at fungere godt med Spørgsmål og svar](service-prepare-data-for-q-and-a.md): Er du den person, der opretter datasæt og datamodeller?  Så er dette emne til dig.
+[Selvstudium: Brug Spørgsmål og svar med eksemplet på detailhandelssalg i Power BI-tjenesten](power-bi-visualization-introduction-to-q-and-a.md): Brug Spørgsmål og svar i et realistisk brancheselvstudium.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

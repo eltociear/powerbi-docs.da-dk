@@ -2,21 +2,21 @@
 title: Indstil databeskeder i Power BI-tjenesten
 description: Få mere at vide om, hvordan du angiver beskeder, så du får besked, når dataene på dine dashboards ændres ud over de grænser, du har angivet i Microsoft Power BI-tjenesten.
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 08/28/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ffbad48df6665d5dff6c4eca97e86e6f2850565f
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 153676c983ef81bcccf1ea6bf0adf95ef29a2765
+ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137542"
+ms.lasthandoff: 09/08/2018
+ms.locfileid: "44167922"
 ---
 # <a name="data-alerts-in-power-bi-service"></a>Databeskeder i Power BI-tjenesten
 Angiv beskeder, så du får besked, når dataene på dine dashboards ændres ud over de grænser, du har angivet. 
@@ -42,17 +42,17 @@ I dette eksempel bruges et kortfelt fra eksempeldashboardet Retail Analysis.
 1. Start på et dashboard. Vælg på ellipsen på en dashboardmåler, et KPI eller et kortfelt.
    
    ![Feltet Butikker i alt](media/service-set-data-alerts/powerbi-card.png)
-2. Vælg på klokkeikonet ![beskedikon](media/service-set-data-alerts/power-bi-bell-icon.png) for at tilføje en eller flere beskeder om **Butikker i alt**.
+2. Vælg klokkeikonet ![beskedikon](media/service-set-data-alerts/power-bi-bell-icon.png) eller **Administrer beskeder** for at tilføje en eller flere beskeder for **Butikker i alt**.
    
-1. Når du starter, skal du vælge **+ Tilføj påmindelsesregel**, sikre, at skyderen er angivet til **Til**, og give beskeden en titel. Titler hjælper dig med let at genkende dine beskeder.
+1. I ruden **Administrer beskeder** skal du vælge **+ Tilføj påmindelsesregel**.  Kontrollér, at skyderen er angivet til **Til**, og giv beskeden en titel. Titler hjælper dig med let at genkende dine beskeder.
    
    ![Vinduet Administrer beskeder](media/service-set-data-alerts/powerbi-alert-title.png)
 4. Rul ned, og angiv oplysninger om beskederne.  I dette eksempel opretter vi en besked, som skal sendes til os én gang om dagen, hvis antallet af samlede butikker går over 100. Beskederne vises i vores meddelelsescenter. Vi får også Power BI til at sende os en mail.
    
    ![Vinduet Administrer beskeder, angiv grænseværdi](media/service-set-data-alerts/power-bi-set-alert-details.png)
-5. Vælg **Gem**.
+5. Vælg **Gem og luk**.
 
-## <a name="receiving-alerts"></a>Modtagelse af beskeder
+## <a name="receiving-alerts"></a>Modtag beskeder
 Når de sporede data når en af de angivne tærskelværdier, sker der flere ting. Først tjekker Power BI, om der er gået mere end én time eller mere end et døgn (afhænger af den valgte indstilling), siden den seneste besked blev sendt. Du får en besked, så længe dataene har overskredet grænsen.
 
 Derefter sendes en besked til meddelelsescenteret og evt. en mail via Power BI. Hver enkelt besked indeholder et direkte link til dine data. Vælg linket for at se det relevante felt, hvor du kan udforske, dele og få mere at vide.  
@@ -104,6 +104,4 @@ Der er mange måder, du kan administrere dine beskeder på: fra selve dashboardf
 ## <a name="next-steps"></a>Næste trin
 [Opret et Microsoft Flow, der indeholder en databesked](service-flow-integration.md)    
 [Angiv databeskeder på din mobilenhed](mobile-set-data-alerts-in-the-mobile-apps.md)    
-[Hvad er Power BI?](power-bi-overview.md)    
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
