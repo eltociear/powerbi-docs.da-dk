@@ -535,6 +535,8 @@ items:
     items:
     - name: Hvad er nyt i den nyeste opdatering af Power BI Desktop?
       href: desktop-latest-update.md
+    - name: Sammenlægninger i Power BI Desktop (eksempelvisning)
+      href: desktop-aggregations.md
     - name: Sammensatte modeller i Power BI Desktop (Preview)
       href: desktop-composite-models.md
     - name: Mange til mange-relationer i Power BI Desktop (Preview)
@@ -601,6 +603,8 @@ items:
         href: desktop-import-excel-workbooks.md
       - name: Opret forbindelse til data med generiske grænseflader
         href: desktop-connect-using-generic-interfaces.md
+      - name: Opret forbindelse til en PDF-fil
+        href: desktop-connect-pdf.md
       - name: Opret forbindelse til Adobe Analytics
         href: desktop-connect-adobe-analytics.md
       - name: Opret forbindelse til en Oracle-database
@@ -683,6 +687,8 @@ items:
       items:
       - name: Visuelle elementer til rapporter
         href: desktop-visual-elements-for-reports.md
+      - name: Opret værktøjstip baseret på rapportsider
+        href: desktop-tooltips.md
       - name: Eksportér til PDF, og udskriv rapporter
         href: desktop-export-to-pdf.md
       - name: Spørgsmål og svar i Power BI Desktop
@@ -1346,9 +1352,9 @@ items:
       href: service-admin-power-bi-security.md
     - name: Power BI til Office 365 er blevet til Power BI
       href: service-admin-o365portal-retired.md
-ms.openlocfilehash: 55614628ef823534357fa7e1700e21417e821ca6
-ms.sourcegitcommit: 37bb070a71a658cba7ed421feef65015e8b515ae
+ms.openlocfilehash: 7058954c3269da6f3802454c439671989bdcb52e
+ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43821725"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44512196"
