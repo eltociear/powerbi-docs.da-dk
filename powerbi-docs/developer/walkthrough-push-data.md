@@ -2,26 +2,28 @@
 title: Overfør data til et datasæt
 description: Overfør data til et Power BI-datasæt
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/05/2017
-ms.author: maghan
-ms.openlocfilehash: 1cc19d1ceefb95e0cb56e2a5dcbcc89609f654d5
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 01bcc545d3ba8edb23ef583467322401780e657d
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598543"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45974178"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Overfør data til et Power BI-datasæt
+
 Med Power BI-API'en kan du overføre data til et Power BI-datasæt. Et eksempel kunne f.eks. være, at du vil forlænge en eksisterende forretningsarbejdsproces for at overføre vigtige data til dit datasæt. I dette tilfælde vil du overføre et salg og marketing-datasæt, som indeholder en varetabel, til et andet datasæt.
 
 Før du begynder at overføre data til et datasæt, skal du have en Azure AD- (Azure Active Directory) og [Power BI-konto](create-an-azure-active-directory-tenant.md).
 
 ## <a name="steps-to-push-data-into-a-dataset"></a>Sådan overfører du data til et datasæt
+
 * Trin 1: [Registrer en app i Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)
 * Trin 2: [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md)
 * Trin 3: [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md)
@@ -31,6 +33,7 @@ Før du begynder at overføre data til et datasæt, skal du have en Azure AD- (A
 Det næste afsnit er en generel beskrivelse af de handlinger i Power BI-API'en, der overfører data.
 
 ## <a name="power-bi-api-operations-to-push-data"></a>Handlinger i Power BI-API'en til overførsel af data
+
 Med Power BI REST API'en kan du overføre datakilder til Power BI. Når en app føjer rækker til et datasæt, opdateres felterne i dashboardet automatisk med de opdaterede data. Hvis du vil overføre data, skal du bruge handlingen [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) sammen med handlingen [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows). Hvis du vil finde et datasæt, skal du bruge handlingen [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets). Du kan overføre et gruppe-id for alle disse handlinger, hvis du vil arbejde med en gruppe. Brug handlingen [Get Groups](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) for at få vist en oversigt over alle gruppe-id'er.
 
 Her er de handlinger, du skal bruge for at overføre data til et datasæt:
@@ -108,13 +111,14 @@ Hvis du har et Power BI-tabelskema, kan du bruge følgende datatyper.
 | String |Tillader i øjeblikket op til 128.000 tegn. |
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>Få mere at vide om at overføre data til Power BI
+
 For at komme i gang med at overføre data til et datasæt skal du se [Trin 1: Registrer en app i Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) i venstre navigationsrude.
 
 [Næste trin >](walkthrough-push-data-register-app-with-azure-ad.md)
 
 ## <a name="next-steps"></a>Næste trin
+
 [Tilmeld dig Power BI](create-an-azure-active-directory-tenant.md)  
 [Introduktion til JSON](http://json.org/)  
 [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-
