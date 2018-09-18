@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: f3a9e8aabbd45cb476866158165e2e37a3d8f652
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d50d3c3a34364dd795c44b3e45e91857bcc222f0
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242381"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726311"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Opret udvalgte spørgsmål til Spørgsmål og svar i Power BI
 Hvis du ejer et datasæt, kan du tilføje dine egne udvalgte spørgsmål i det pågældende datasæt.  Og Spørgsmål og svar i Power BI viser disse spørgsmål til kollegaer, der bruger (*forbruger*) dit datasæt.  De udvalgte spørgsmål giver dine kollegaer en ide om, hvilke typer af spørgsmål, de kan stille om datasættet. Det er op til dig, hvilke udvalgte spørgsmål, du tilføjer – tilføj populære spørgsmål, spørgsmål, der viser interessante resultater, eller spørgsmål, der kan være svære at sætte ord på.
@@ -26,7 +26,7 @@ Se Will tilføje nogle udvalgte spørgsmål i Spørgsmål og svar i Power BI, og
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E1mIAyEXuF4" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Udvalgte spørgsmål i Spørgsmål og svar er også tilgængelige i [Microsoft Power BI-appen til iOS på iPads, iPhones og iPod Touch-enheder](mobile-apps-ios-qna.md) samt i prøveversionen af Spørgsmål og svar til Power BI Desktop. Men oprettelse af spørgsmålene er kun tilgængelig i Power BI-tjenesten (app.powerbi.com).
+> Udvalgte spørgsmål i Spørgsmål og svar er også tilgængelige i [Microsoft Power BI-appen til iOS på iPads, iPhones og iPod Touch-enheder](consumer/mobile/mobile-apps-ios-qna.md) samt i prøveversionen af Spørgsmål og svar til Power BI Desktop. Men oprettelse af spørgsmålene er kun tilgængelig i Power BI-tjenesten (app.powerbi.com).
 > 
 
 I denne artikel anvendes [Retail Analysis Sales-eksemplet](sample-datasets.md).

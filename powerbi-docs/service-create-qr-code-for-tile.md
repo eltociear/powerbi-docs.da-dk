@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 03/07/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3b0bf5e54ad6486134eb641d276fc9233b001157
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: bb2cd0e26caaa7639020d51a0827390932e78b06
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249703"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726041"
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>Opret en QR-kode for et felt i Power BI, som skal bruges i mobilappsene
 QR-koder i Power BI kan forbinde noget i den virkelige verden direkte med relaterede BI-oplysninger &#151; du behøver ikke at navigere eller søge.
 
 Du kan oprette en QR-kode i Power BI-tjenesten for felter i et hvilket som helst dashboard, selv i dashboards, du ikke kan redigere. Anbring derefter QR-koden på en central placering. Du kan f.eks. indsætte den i en mail eller udskrive den og indsætte den på en bestemt placering. 
 
-De kollegaer, du har delt dashboardet med, kan [scanne QR-koden for at få adgang til feltet direkte fra deres mobilenheder](mobile-apps-qr-code.md). De kan bruge enten den QR-kodescanner, der findes i Power BI-appen, eller andre QR-scannere, der er installeret på deres enheder.
+De kollegaer, du har delt dashboardet med, kan [scanne QR-koden for at få adgang til feltet direkte fra deres mobilenheder](consumer/mobile/mobile-apps-qr-code.md). De kan bruge enten den QR-kodescanner, der findes i Power BI-appen, eller andre QR-scannere, der er installeret på deres enheder.
 
 
 ## <a name="create-a-qr-code-for-a-tile"></a>Opret en QR-kode for et felt
@@ -52,8 +52,8 @@ I Power BI oprettes QR-koden som en JPG-fil, der er klar til udskrivning.
 3. Klip QR-koden langs kanterne, og klæb den fast et sted, der er relevant for feltet. 
 
 ## <a name="next-steps"></a>Næste trin
-* [Opret forbindelse til Power BI-data fra den virkelige verden](mobile-apps-data-in-real-world-context.md) med mobilappsene
-* [Scan en Power BI QR-kode fra din mobilenhed](mobile-apps-qr-code.md)
+* [Opret forbindelse til Power BI-data fra den virkelige verden](consumer/mobile/mobile-apps-data-in-real-world-context.md) med mobilappsene
+* [Scan en Power BI QR-kode fra din mobilenhed](consumer/mobile/mobile-apps-qr-code.md)
 * [Opret en QR-kode for en rapport](service-create-qr-code-for-report.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

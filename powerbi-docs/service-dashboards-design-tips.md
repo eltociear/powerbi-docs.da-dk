@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7da86135a391f8a6206a913a1e13df423ad96fbd
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 327e9d9973aabb17761b55d355598462ce70e20e
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944968"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726037"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips til udformning af et fantastisk Power BI-dashboard
 Nu, hvor du har oprettet et dashboard og tilføjet nogle felter, kan du overveje, hvordan du ikke bare gør dit dashboard flot, men også funktionelt. Generelt betyder det, at man sørger for, at den vigtigste information er tydelig, og at udseendet er rent og ryddeligt.
@@ -23,7 +23,7 @@ Nu, hvor du har oprettet et dashboard og tilføjet nogle felter, kan du overveje
 Her er nogle få tips.
 
 > [!TIP]
-> Mange af designprincipperne for rapporter gælder også for dashboards.  Læs vores hvidbog [Best design practices for reports and visuals](power-bi-visualization-best-practices.md).
+> Mange af designprincipperne for rapporter gælder også for dashboards.  Læs vores hvidbog [Best design practices for reports and visuals](visuals/power-bi-visualization-best-practices.md).
 >
 >
 
@@ -51,7 +51,7 @@ Hvis tekst og visualiseringer på dit dashboard alle har samme størrelse, kan l
 
 Men husk at angive kontekst.  
 
-Læs om [oprettelse af et felt med blot et tal](power-bi-visualization-card.md).
+Læs om [oprettelse af et felt med blot et tal](visuals/power-bi-visualization-card.md).
 
 ## <a name="put-the-most-important-information-in-the-upper-corner"></a>Placer de vigtigste oplysninger i øverste hjørne
 De fleste læser oppefra og ned, så sæt det højeste detaljeniveau øverst, og vis flere detaljer, efterhånden som du bevæger dig i den retning, modtagerne læser (venstre mod højre, højre mod venstre).
@@ -68,7 +68,7 @@ Undgå at variere visualiseringerne bare for variationens skyld.  Visualiseringe
 * Vær opmærksom på, hvordan [diagrammer sorteres](power-bi-report-change-sort.md).  Hvis du vil fremhæve det højeste eller laveste tal, skal du sortere efter målingen.  Hvis du ønsker, at modtagerne hurtigt skal kunne finde en bestemt kategori blandt mange andre kategorier, skal du sortere efter aksen.  
 * Cirkeldiagrammer er bedst, hvis de har mindre end otte kategorier. Eftersom du ikke kan sammenligne værdier ved siden af hinanden, er det vanskeligere at sammenligne værdier i et cirkeldiagram end i liggende søjlediagrammer og stående søjlediagrammer. Cirkeldiagrammer kan være gode til visning af dele i forhold til helheder i stedet for at sammenligne delene. Og målerdiagrammer er gode til visning af den aktuelle status i forbindelse med et mål.
 
-Se [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md) for at få en mere visualiseringsspecifik vejledning.  
+Se [Visualiseringstyper i Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md) for at få en mere visualiseringsspecifik vejledning.  
 
 ## <a name="learning-more-about-best-practice-dashboard-design"></a>Få mere at vide om den bedste fremgangsmåde i forbindelse med dashboard-design
 For at kunne mestre kunsten at lave et godt dashboard-design bør du overveje at lære de grundlæggende designprincipper for visuel perception, og hvordan du tydeligt kommunikerer handlingsrettet information i kontekst. Heldigvis findes der allerede et bredt udvalg af ressourcer til rådighed bl.a. rundt omkring i vores blogs. Nogle få af vores foretrukne bøger er bl.a.:

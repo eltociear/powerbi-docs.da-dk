@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 585c1c854ed3e95cc176d34f442fec6416f23dcd
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: 7b1b55475e2ad19c869ba92cdb9621caa0fc3538
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39623947"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726656"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Hvordan kan jeg samarbejde og dele i Power BI?
 
@@ -83,9 +83,9 @@ Du kan i Power BI-mobilapps til iOS- og Android-enheder anmærke et felt, rappor
 
 Du kan dele et snapshot af feltet, rapporten eller dit visual, og modtagerne ser det, præcist som det var, da du sendte mailen. Mailen indeholder også et link til dashboardet eller rapporten. Hvis modtagerne har en Power BI Pro-licens, eller hvis indholdet er i [Premium-kapacitet](service-premium.md), og du allerede har delt objektet med dem, kan de åbne det. Du kan sende snapshots af felter til alle – ikke kun til kolleger på samme maildomæne.
 
-Flere oplysninger om [anmærkning og deling af felter, rapporter og visuelle elementer](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) fra iOS- og Android-mobilapps.
+Flere oplysninger om [anmærkning og deling af felter, rapporter og visuelle elementer](consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) fra iOS- og Android-mobilapps.
 
-Du kan også [dele et snapshot af et felt](mobile-windows-10-phone-app-get-started.md) fra Power BI-appen til Windows 10-enheder.
+Du kan også [dele et snapshot af et felt](consumer/mobile/mobile-windows-10-phone-app-get-started.md) fra Power BI-appen til Windows 10-enheder.
 
 ## <a name="print-or-save-as-pdf-or-other-static-file"></a>Udskriv eller gem som pdf-fil eller en anden statisk fil
 Du kan udskrive eller gemme som pdf-fil (eller andre statiske filformatet), et helt dashboard, dashboardfelt, rapportside eller visualisering fra Power BI-tjenesten. Rapporter kan kun udskrives med én side ad gangen – du kan ikke udskrive hele rapporten på en gang. Mere om at [udskrive eller gemme som en statisk fil](service-print.md).

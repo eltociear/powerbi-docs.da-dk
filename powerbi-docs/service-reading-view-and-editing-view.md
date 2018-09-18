@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: eacadb04935dd0c929a85904335b613f3d5d4d58
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 736d4b53f82255e84e3bd54a2177ae17c264039b
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34251661"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726748"
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Læsevisning og Redigeringsvisning i rapporter i Power BI-tjenesten
 Der er to forskellige tilstande til at få vist og interagere med rapporter i Power BI-tjenesten (ikke Power BI Desktop): Læsevisning og Redigeringsvisning. Læsevisning er tilgængelig for alle brugere og er især designet til *forbrugere* af data, mens Redigeringsvisning kun er tilgængelig for *oprettere* og ejere af rapporter.
@@ -59,13 +59,13 @@ Alle rapportfunktionerne i Power BI-tjenesten er ikke er angivet i dette diagram
 | [Dupliker en rapportside](power-bi-report-copy-paste-page.md) | Nej  | Ja |
 | [Slet rapportside](service-delete.md) | nej | ja |
 |**Arbejd med rapportvisualiseringer**|
-| [Føj visualiseringer til en rapport](power-bi-report-add-visualizations-i.md) | Nej  | Ja |
+| [Føj visualiseringer til en rapport](visuals/power-bi-report-add-visualizations-i.md) | Nej  | Ja |
 | [Føj tekstfelter og figurer til en rapport](power-bi-reports-add-text-and-shapes.md) | Nej  | Ja |
 | [Brug ruden rapportformatering](service-the-report-editor-take-a-tour.md) | Nej | Ja |
 | [Angiv visuelle interaktioner](service-reports-visual-interactions.md) | Nej  | Ja |
 | [Vis data, der bruges til at oprette visualiseringen](service-reports-show-data.md) | Nej  | Ja |
 | [Konfigurer udledning](power-bi-visualization-drill-down.md) | Nej  | Ja |
-| [Skift den anvendte visualiseringstype](power-bi-report-change-visualization-type.md) | Nej | Ja|
+| [Skift den anvendte visualiseringstype](visuals/power-bi-report-change-visualization-type.md) | Nej | Ja|
 | [Slet en visualisering, et tekstfelt eller en figur](service-delete.md)| Nej | Ja |
 
 

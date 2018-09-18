@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: be532e428680d9286247f57d81cab2802aea1fe3
-ms.sourcegitcommit: 9a666382484882162690efaed106b82a4bcbf883
+ms.openlocfilehash: 80995f77a4e11c2773e9b03a224d42ac8d492228
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42799039"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727553"
 ---
 # <a name="hyperlinks-in-tables"></a>Links i tabeller
 I dette emne kan du lære at bruge Power BI Desktop til at oprette links. Når de er oprettet, kan du bruge enten Power BI Desktop eller Power BI-tjenesten til at tilføje disse links i tabeller og matricer i din rapport. 
@@ -87,7 +87,7 @@ Svar: Nej. Du kan bruge et linkikon. Hvis du har brug for brugerdefineret tekst 
 
 
 ## <a name="next-steps"></a>Næste trin
-[Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
+[Visualiseringer i Power BI-rapporter](visuals/power-bi-report-visualizations.md)
 
 [Power BI – grundlæggende begreber](service-basic-concepts.md)
 

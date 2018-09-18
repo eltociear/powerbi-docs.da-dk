@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/31/2018
-ms.openlocfilehash: 48faf9ebde5860b59569a7e0a3a96664d06a1b0d
-ms.sourcegitcommit: aed348a2d0025f7f40f2196254993f6aba5db7d2
+ms.openlocfilehash: d540dd29214422dfc33dca2bf2fb1cb74ebe6de7
+ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43241562"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45558562"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Fejlfinding af det integrerede program
 
@@ -105,13 +105,13 @@ Programmets backend skal muligvis opdatere godkendelsestokenet før kaldet til G
 
 Hvis du bruger Power BI Embedded, Azure AD Direkte godkendelse og modtager meddelelser, når du logger på, f.eks. ***fejl: uautoriseret_klient, fejlbeskrivelse:AADSTS70002: Fejl under validering af legitimationsoplysninger. AADSTS50053: Du har prøvet at logge på for mange gange med et forkert bruger-id eller en forkert adgangskode***, fordi direkte godkendelse er slået fra som standard fra og med 14-06-2018.
 
-Dette kan aktiveres igen ved hjælp af en [Azure AD-politik](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications), der enten kan begrænses til organisationen eller en [tjenesteprincipal](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
+Dette kan aktiveres igen ved hjælp af en [Azure AD-politik](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal#enable-direct-authentication-for-legacy-applications), der enten kan begrænses til organisationen eller en [tjenesteprincipal](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects#service-principal-object).
 
 Vi anbefaler, at du kun aktiverer dette pr. app.
 
 Hvis du vil oprette denne politik, skal du være **Global Administrator** for den mappe, hvor du opretter politikken og tildelingen. Her er et eksempel på et script til oprettelse af politikken og tildeling af den til SP for dette program:
 
-1. Installér [Azure AD PowerShell-modulet som prøveversion](https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
+1. Installér [Azure AD PowerShell-modulet som prøveversion](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 
 2. Kør følgende PowerShell-kommandoer linje for linje. (Sørg for, at variablen $sp ikke har mere end ét program som resultat).
 
@@ -208,7 +208,7 @@ Når du har modtaget IError-objektet, skal du kigge i den relevante tabel over a
 | TokenExpired | Adgangstokenet er udløbet. Send igen med et nyt adgangstoken | 403 | Udløbet token  |
 | PowerBIEntityNotFound | Rapporten blev ikke hentet | 404 | <li> Forkert rapport-id <li> Rapporten findes ikke  |
 | Ugyldige parametre | Parameteren powerbiToken er ikke angivet | I/T | <li> Der er ikke angivet et adgangstoken <li> Der er ikke angivet et rapport-id |
-| Rapporten blev ikke indlæst | Kunne ikke initialiseres – Klyngen kunne ikke fortolkes | 403 | * Forkert adgangstoken * Integreringstypen svarer ikke til tokentypen |
+| LoadReportFailed | Kunne ikke initialiseres – Klyngen kunne ikke fortolkes | 403 | * Forkert adgangstoken * Integreringstypen svarer ikke til tokentypen |
 | PowerBINotAuthorizedException | Rapporten blev ikke hentet | 401 | <li> Forkert gruppe-id <li> Uautoriseret gruppe |
 | TokenExpired | Adgangstokenet er udløbet. Send igen med et nyt adgangstoken. Der kunne ikke visuelt gengives en rapport med titlen: <visual title> | I/T | Udløbet token for forespørgselsdata |
 | OpenConnectionError | Visualiseringen kan ikke vises. Der kunne ikke visuelt gengives en rapport med titlen: <visual title> | I/T | Kapacitet, der er sat på pause eller slettet, mens en rapport, der er relateret til en kapacitet, var åben i en session |
@@ -274,7 +274,7 @@ Dette skyldes, at den URL-adresse til omdirigering, der er angivet for webserver
 
 Hvis du vil redigere det registrerede program, skal du lære at redigere den [AAD-registrerede app](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), så appen kan give adgang til web-API'erne.
 
-Hvis du vil redigere Power BI-brugerprofilen eller -dataene, skal du lære, hvordan du redigere dine [Power BI-data](https://docs.microsoft.com/en-us/power-bi/service-basic-concepts).
+Hvis du vil redigere Power BI-brugerprofilen eller -dataene, skal du lære, hvordan du redigere dine [Power BI-data](https://docs.microsoft.com/power-bi/service-basic-concepts).
 
 Du kan finde flere oplysninger under [Ofte stillede spørgsmål om Power BI Embedded](embedded-faq.md).
 

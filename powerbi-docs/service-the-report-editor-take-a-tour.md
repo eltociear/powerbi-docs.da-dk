@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: ef05531ee6080593d232e48a2118a9be7e8cbd19
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 78d9004a718990cbcd310835e8e9b8ae5e3eae17
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "34299464"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726633"
 ---
 # <a name="the-report-editortake-a-tour"></a>Rapporteditoren... Få en introduktion
 ## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Redigering af rapporter i Power BI-tjenesten og Power BI Desktop
@@ -65,7 +65,7 @@ Vælg **X** til højre for feltnavnet for at fjerne et felt fra visualiseringen.
 
 ![Fjern Lagertype fra Forklaring](media/service-the-report-editor-take-a-tour/deletefield.png)
 
-Du kan finde flere oplysninger i [Føj visualiseringer til en Power BI-rapport](power-bi-report-add-visualizations-i.md)
+Du kan finde flere oplysninger i [Føj visualiseringer til en Power BI-rapport](visuals/power-bi-report-add-visualizations-i.md)
 
 ### <a name="format-your-visuals"></a>Formatér dine visuelle elementer
 Vælg ikonet med malerullen for at åbne ruden Formatér. Den tilgængelige indstilling afhænger af den valgte type visualisering.
@@ -74,9 +74,9 @@ Vælg ikonet med malerullen for at åbne ruden Formatér. Den tilgængelige inds
 
 Formateringsmulighederne er næsten uendelige.  Udforsk selv for at få mere for at vide, eller gå til disse artikler:
 
-* [Tilpas visualiseringstitel, -baggrund og -forklaring](power-bi-visualization-customize-title-background-and-legend.md)
-* [Farveformatering](service-getting-started-with-color-formatting-and-axis-properties.md)
-* [Tilpas egenskaber for x- og y-akse](power-bi-visualization-customize-x-axis-and-y-axis.md)
+* [Tilpas visualiseringstitel, -baggrund og -forklaring](visuals/power-bi-visualization-customize-title-background-and-legend.md)
+* [Farveformatering](visuals/service-getting-started-with-color-formatting-and-axis-properties.md)
+* [Tilpas egenskaber for x- og y-akse](visuals/power-bi-visualization-customize-x-axis-and-y-axis.md)
 
 ### <a name="add-analytics-to-your-visualizations"></a>Føj analyser til din visualiseringer
 Vælg forstørrelsesglasikonet for at få vist ruden Analystics. Den tilgængelige indstilling afhænger af den valgte type visualisering.
@@ -126,7 +126,7 @@ Rapportcanvasset er det sted, dit arbejde vises. Når du bruger ruderne Felter, 
 ## <a name="next-steps"></a>Næste trin:
 [Opret en rapport](service-report-create-new.md)
 
-Læs mere om rapporter i [Power BI-tjenesten](service-reports.md), [Power BI Desktop](desktop-report-view.md) og [Power BI – Mobil](mobile-apps-view-phone-report.md).
+Læs mere om rapporter i [Power BI-tjenesten](service-reports.md), [Power BI Desktop](desktop-report-view.md) og [Power BI – Mobil](consumer/mobile/mobile-apps-view-phone-report.md).
 
 [Power BI – Grundlæggende begreber](service-basic-concepts.md)
 

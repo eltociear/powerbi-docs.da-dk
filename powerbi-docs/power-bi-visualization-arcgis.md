@@ -2,28 +2,28 @@
 title: Opret ArcGIS-kort fra ESRI i Power BI
 description: 'Opret et ArcGIS-kort fra ESRI i Power BI '
 author: mihart
-manager: kvivek
+manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/28/2018
+ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 127187367b2ae5680b50bc1e72de7214c522705e
-ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
+ms.openlocfilehash: 250ccba882a045417b2ae424cac81b6561cb2a41
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44168060"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44728243"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>ArcGIS-kort i Power BI-tjenesten og Power BI Desktop fra Esri
-Dette selvstudium er skrevet fra den person, der opretter et ArcGIS korts synspunkt. Når en opretter deler et ArcGIS-kort med en kollega, kan den pågældende kollega få vist og interagere med kortet, men ikke gemme ændringer. Du kan få mere at vide om visning af et ArcGIS-kort under [Interaktion med ArcGIS-kort](power-bi-visualizations-arcgis.md).
+Dette selvstudium er skrevet fra den person, der opretter et ArcGIS korts synspunkt. Når en opretter deler et ArcGIS-kort med en kollega, kan den pågældende kollega få vist og interagere med kortet, men ikke gemme ændringer. Du kan få mere at vide om visning af et ArcGIS-kort under [Interaktion med ArcGIS-kort](visuals/power-bi-visualizations-arcgis.md).
 
 Kombinationen af ArcGIS-kort og Power BI tager kort til et helt nyt niveau, som involverer mere end præsentation af punkter på et kort. Du kan vælge mellem grundlæggende kort, placeringstyper, temaer, symboltypografier og referencelag til at oprette fantastiske informative kortvisualiseringer. Kombinationen af autoritative datalag på et kort med rumlige analyser giver en bedre forståelse af dataene i visualiseringen.
 
- Du kan ikke oprette et ArcGIS-kort på en mobilenhed, men du kan få det vist og interagere med det. Se [Interaktion med ArcGIS-kort](power-bi-visualizations-arcgis.md).
+ Du kan ikke oprette et ArcGIS-kort på en mobilenhed, men du kan få det vist og interagere med det. Se [Interaktion med ArcGIS-kort](visuals/power-bi-visualizations-arcgis.md).
 
 > [!TIP]
 > GIS står for Geographic Information Science (Geografisk informationsvidenskab).
@@ -329,7 +329,7 @@ Dette er en fejl, der er ved at blive behandlet.  I mellemtiden kan du prøve at
 
 **Understøtter ArcGIS Maps for Power BI Esri Shapefiles?**
 
-ArcGIS Maps for Power BI registrerer automatisk standardgrænser som lande/områder, stater/provinser og postnumre. Hvis du vil angive dine egne figurer, kan du gøre det ved hjælp [figurkort til Power BI Desktop (prøveversion)](desktop-shape-map.md).
+ArcGIS Maps for Power BI registrerer automatisk standardgrænser som lande/områder, stater/provinser og postnumre. Hvis du vil angive dine egne figurer, kan du gøre det ved hjælp [figurkort til Power BI Desktop (prøveversion)](visuals/desktop-shape-map.md).
 
 **Kan jeg få vist mine ArcGIS-kort offline?**
 
@@ -340,7 +340,7 @@ Nej, Power BI skal bruge en netværksforbindelse for at vise kortene.
 Ikke endnu. [Stem på denne ide](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9154765-arcgis-geodatabases), og vi sender dig en mail, når vi begynder at arbejde på denne funktion.  
 
 ## <a name="next-steps"></a>Næste trin
-[Interaktion med ArcGIS-kort, som er blevet delt med dig](power-bi-visualizations-arcgis.md)
+[Interaktion med ArcGIS-kort, som er blevet delt med dig](visuals/power-bi-visualizations-arcgis.md)
 
 [Blogindlæg annoncerer tilgængeligheden af ArcGIS Maps for Power BI](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 09/04/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 2ff39f0594150c7b29fd88e8f4e4f6baef86e806
-ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
+ms.openlocfilehash: 58a739c0d566030d2b09094264da14f6afd6d6fc
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44044319"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727576"
 ---
 # <a name="full-screen-mode-in-power-bi-service"></a>Fuldskærmsvisning i Power BI-tjenesten
 ## <a name="what-is-full-screen-mode"></a>Hvad er fuldskærmsvisning?
@@ -24,7 +24,7 @@ ms.locfileid: "44044319"
 
 Få vist dit Power BI-indhold (dashboards, rapportsider, felter og visualiseringer) uden forstyrrende menuer og navigationslinjer.  Du får en rendyrket og komplet visning af dit indhold med et øjekast – hele tiden. Dette kaldes også tv-tilstand. Den tilgængelige funktionalitet i fuldskærmsvisning varierer afhængigt af indhold. 
 
-Hvis du bruger Power BI – Mobil, er [fuld skærm tilgængelig for Windows 10 Mobile-apps](mobile-windows-10-app-presentation-mode.md). Power BI Desktop har ikke en fuldskærmstilstand for rapporter eller visualiseringer, men har Tilpas til siden for [relationsvisning og rapportvisning](desktop-report-view.md) og [fokustilstand for visuelle rapportelementer](service-focus-mode.md).
+Hvis du bruger Power BI – Mobil, er [fuld skærm tilgængelig for Windows 10 Mobile-apps](consumer/mobile/mobile-windows-10-app-presentation-mode.md). Power BI Desktop har ikke en fuldskærmstilstand for rapporter eller visualiseringer, men har Tilpas til siden for [relationsvisning og rapportvisning](desktop-report-view.md) og [fokustilstand for visuelle rapportelementer](service-focus-mode.md).
 
  
 

@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 08a7740d1a44c4a5e8ef961100c38f3bc4622fd8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: ff51b2e41d921b7a88afc9b13bb4ecd98814d12e
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34721955"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727967"
 ---
 # <a name="add-comments-to-a-report-in-a-report-server"></a>Tilføj kommentarer i en rapport på en rapportserver
 Du kan tilføje kommentarer i rapporter, herunder Power BI-rapporter, på webportalen til en rapportserver. Kommentarerne gemmes sammen med rapporten, og alle, der har rettigheder til den, kan se kommentarerne til rapporten. Se afsnittet [Tilladelser](#permissions) herunder for at se flere oplysninger.
@@ -33,7 +33,7 @@ Du kan tilføje kommentarer i rapporter, herunder Power BI-rapporter, på webpor
     Din kommentar vises i ruden på webportalen sammen med alle tidligere kommentarer. De vises ikke sammen med rapporten i Power BI-mobilappsene.
    
    > [!TIP]
-   > Vidste du det? Du kan [anmærke Power BI-rapporter i Power BI-mobilapps](../mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) og dele de anmærkede rapporter med andre.
+   > Vidste du det? Du kan [anmærke Power BI-rapporter i Power BI-mobilapps](../consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) og dele de anmærkede rapporter med andre.
    > 
    > 
 

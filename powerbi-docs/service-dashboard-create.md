@@ -1,5 +1,5 @@
 ---
-title: Opret et dashboard til Power BI-tjenesten fra en rapport
+title: Opret et Power BI-dashboard fra en rapport
 description: Opret et Power BI-dashboard fra en rapport
 author: mihart
 manager: kfile
@@ -8,16 +8,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/02/2018
+ms.date: 03/02/2018
 ms.author: mihart
-ms.openlocfilehash: a550aabb3590018666a3784e602ede15696862e5
-ms.sourcegitcommit: fe03f2a80f2df82219b8e026085f93a8453201df
+ms.openlocfilehash: a528c4a641dbdecce7d33f29e7afbe6118ee34b5
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/08/2018
-ms.locfileid: "44168083"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726472"
 ---
-# <a name="create-a-power-bi-dashboard-in-power-bi-service"></a>Opret et dashboard til Power BI i Power BI-tjenesten
+# <a name="create-a-power-bi-dashboard-from-a-report"></a>Opret et Power BI-dashboard fra en rapport
 Du har læst [Dashboards i Power BI](service-dashboards.md), og nu vil du oprette dit eget. Der er mange forskellige måder at oprette et dashboard på – fra en rapport, fra bunden, fra et datasæt, ved at kopiere et eksisterende dashboard og meget mere.  
 
 Det kan virke overvældende, når du starter for første gang, så vi begynder med hurtigt og nemt at oprette et dashboard ved at fastgøre visualiseringer fra en rapport, der allerede er oprettet. Når du er færdig med denne hurtige introduktion, vil du have en god forståelse af relationen mellem dashboards og rapporter, åbning af Redigeringsvisning i rapporteneditoren, fastgørelse af felter og skift mellem et dashboard og en rapport. Derefter skal du bruge linkene i Indholdsfortegnelse til venstre eller **Næste trin** nederst for at fortsætte til mere avancerede emner.
@@ -25,7 +25,7 @@ Det kan virke overvældende, når du starter for første gang, så vi begynder m
 ## <a name="who-can-create-a-dashboard"></a>Hvem kan oprette et dashboard?
 Oprettelse af et dashboard er en **opretter**funktion og kræver redigeringsrettigheder til rapporten. Redigeringstilladelser er tilgængelige for rapportoprettere og de kolleger, opretteren giver adgang til. Hvis David f.eks. opretter en rapport i workspaceABC og derefter tilføjer dig som medlem af dette arbejdsområde, har både du og David redigeringsrettigheder. På anden side, hvis en rapport er blevet delt med dig direkte eller som en del af en [Power BI-app](service-install-use-apps.md) (du **bruger** rapporten), kan du ikke fastgøre felter til et dashboard.
 
-> **BEMÆRK!** Dashboards er en funktion i Power BI-tjenesten ikke Power BI Desktop. Der kan ikke oprettes dashboards på Power BI-mobilenheder, men du kan [få dem vist og dele dem](mobile-apps-view-dashboard.md).
+> **BEMÆRK!** Dashboards er en funktion i Power BI-tjenesten ikke Power BI Desktop. Der kan ikke oprettes dashboards på Power BI-mobilenheder, men du kan [få dem vist og dele dem](consumer/mobile/mobile-apps-view-dashboard.md).
 >
 > 
 

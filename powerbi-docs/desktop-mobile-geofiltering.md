@@ -9,17 +9,17 @@ ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: maggies
 LocalizationGroup: Model your data
-ms.openlocfilehash: ed8a0990c9da2da877c32a0ef44c676f91e0f493
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 80d2039b2cfcac2f2c3db9c6f656561b670aa341
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34291391"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727484"
 ---
 # <a name="set-geographic-filters-in-power-bi-desktop-for-the-mobile-apps"></a>Angiv geografiske filtre i Power BI Desktop til mobilapps
 I Power BI Desktop kan du [kategorisere geografiske data](desktop-data-categorization.md) i en kolonne, så Power BI Desktop ved, hvordan værdier skal behandles i visualiseringer i en rapport. En yderligere fordel er, at når du eller dine kollegaer får vist den pågældende rapport i Power BI-mobilappsene, leverer Power BI automatisk de geografiske filtre, der stemmer overens med jeres placering. 
 
-Lad os f.eks. sige, at du er en salgschef, der rejser for at møde kunder, og du vil gerne hurtigt filtrere samlet salg og omsætning for den specifikke kunde, du planlægger at besøge. Du vil gerne have vist dataene for din aktuelle placering enten efter delstat, by eller en faktiske adresse. Hvis du senere har mere tid, vil du gerne besøge andre kunder i nærheden. Du kan [filtrere rapporten efter din placering for at finde disse kunder](mobile-apps-geographic-filtering.md).
+Lad os f.eks. sige, at du er en salgschef, der rejser for at møde kunder, og du vil gerne hurtigt filtrere samlet salg og omsætning for den specifikke kunde, du planlægger at besøge. Du vil gerne have vist dataene for din aktuelle placering enten efter delstat, by eller en faktiske adresse. Hvis du senere har mere tid, vil du gerne besøge andre kunder i nærheden. Du kan [filtrere rapporten efter din placering for at finde disse kunder](consumer/mobile/mobile-apps-geographic-filtering.md).
 
 > [!NOTE]
 > Du kan kun filtrere efter placering i mobilappen, hvis de geografiske navne i rapporten er på engelsk &#150; f.eks. "New York City" eller "Germany".
@@ -52,12 +52,12 @@ Lad os f.eks. sige, at du er en salgschef, der rejser for at møde kunder, og du
 2. Udgiv rapporten i Power BI-tjenesten.
 
 ## <a name="view-the-report-in-power-bi-mobile-app"></a>Få vist rapporten i Power BI-mobilappen
-1. Åbn rapporten i en hvilken som helst af [Power BI-mobilappsene](mobile-apps-for-mobile-devices.md).
+1. Åbn rapporten i en hvilken som helst af [Power BI-mobilappsene](consumer/mobile/mobile-apps-for-mobile-devices.md).
 2. Hvis du befinder dig på en geografisk placering med data i rapporten, kan du filtrere den automatisk efter din placering.
    
     ![Geografisk filter i mobilappen](media/desktop-mobile-geofiltering/power-bi-mobile-geo-map-set-filter.png)
 
-Læs mere om, hvordan du [filtrerer en rapport efter placering i Power BI-mobilapps](mobile-apps-geographic-filtering.md).
+Læs mere om, hvordan du [filtrerer en rapport efter placering i Power BI-mobilapps](consumer/mobile/mobile-apps-geographic-filtering.md).
 
 ## <a name="next-steps"></a>Næste trin
 * [Datakategorisering i Power BI Desktop](desktop-data-categorization.md)  

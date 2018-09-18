@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/12/2017
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4d237a308e059ce712872860031f122de9d6795c
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: d3d2e5dcbfb5163e20dc60470c240378278bbcf1
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34238415"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727231"
 ---
 # <a name="create-a-view-of-a-power-bi-dashboard-optimized-for-mobile-phones"></a>Opret en visning af et Power BI-dashboard optimeret til mobiltelefoner
 Når du får vist dashboards i Power BI-mobilappen på en telefon, vil du opdage, at dashboardfelterne er placeret et ad gangen efter hinanden, alle med den samme størrelse. Du kan i Power BI-tjenesten oprette en tilpasset visning af et dashboard, som du ejer, specifikt til telefoner.
@@ -58,6 +58,6 @@ Når du vender telefonen om på siden, ser du dashboardet, som det er arrangeret
 
 ## <a name="next-steps"></a>Næste trin
 * [Opret rapporter, der er optimeret til Power BI-telefonapps](desktop-create-phone-report.md)
-* [Opret dynamiske visualiseringer, der er optimeret til alle størrelser](desktop-create-responsive-visuals.md)
+* [Opret dynamiske visualiseringer, der er optimeret til alle størrelser](visuals/desktop-create-responsive-visuals.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

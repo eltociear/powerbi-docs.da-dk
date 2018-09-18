@@ -10,12 +10,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: mihart
-ms.openlocfilehash: efddb15572705d6d1c7cb215250360e94a8546cb
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 4676b31a117573d1d69b5947ec2380c4abf29405
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37600350"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726863"
 ---
 # <a name="getting-a-custom-visual-certified"></a>Sådan får du en brugerdefineret visualisering *certificeret*
 ## <a name="what-is-meant-by-certified"></a>Hvad menes der med *certificeret*?
@@ -142,7 +142,7 @@ Microsoft kan, efter eget skøn, fjerne en visualisering fra listen over godkend
 ## <a name="next-steps"></a>Næste trin
 [Introduktion til udviklerværktøjerne til brugerdefinerede visualiseringer (prøveversion)](service-custom-visuals-getting-started-with-developer-tools.md)      
 [Microsofts brugerdefinerede afspilningsliste for visualiseringer på YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
-[Visualiseringer i Power BI](power-bi-report-visualizations.md)  
+[Visualiseringer i Power BI](visuals/power-bi-report-visualizations.md)  
 [Brugerdefinerede visualiseringer i Power BI](power-bi-custom-visuals.md)  
 [Publicer brugerdefinerede visualiseringer i Microsoft AppSource](developer/office-store.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

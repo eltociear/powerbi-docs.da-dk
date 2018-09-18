@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/30/2017
 ms.author: maghan
-ms.openlocfilehash: 0d165505981f841c7dfe9688c7a95cea3b6777c3
-ms.sourcegitcommit: 8990028a348b642ba5c96f001fe3a4280f0166ee
+ms.openlocfilehash: ec6399d815cb17bb0f2542144c63535835659017
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40256819"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726679"
 ---
 # <a name="use-developer-tools-to-create-custom-visuals"></a>Brug udviklerværktøjer til at oprette brugerdefinerede visuals
 Du kan bruge visuals til at opfylde dine brugeres behov og matche din apps design. Få mere at vide om, hvordan du opretter brugerdefinerede visuals til Power BI med udviklerværktøjer.
@@ -388,7 +388,7 @@ Kør serveren med dit visual med kommandoen `pbiviz start` på terminal / komman
 Se [Afspil dit visual](#running-your-visual) eller [Server Certificate-opsætning](#ssl-setup) for at få flere oplysninger.
 
 ## <a name="next-steps"></a>Næste trin
-[Visualiseringer i Power BI](power-bi-report-visualizations.md)  
+[Visualiseringer i Power BI](visuals/power-bi-report-visualizations.md)  
 [Brugerdefinerede visualiseringer i Power BI](power-bi-custom-visuals.md)  
 [Publicer brugerdefinerede visualiseringer i Office Store](developer/office-store.md)  
 [TypeScript](http://www.typescriptlang.org/)  

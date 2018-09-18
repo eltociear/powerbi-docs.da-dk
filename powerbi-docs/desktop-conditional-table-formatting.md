@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 61a30484713ac96d3bbb65355310007a52f300a5
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: 324a9b7f8a3718c6da0efb7533751d88dd717bcf
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39657799"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44728082"
 ---
 # <a name="conditional-formatting-in-tables"></a>Betinget formatering af tabeller 
 Med betinget formatering af tabeller kan du angive brugerdefinerede farver for celler baseret på celleværdier eller baseret på andre værdier eller felter, og du kan bruge gradueringsfarver. Du kan også få vist celleværdier med datalinjer. 
@@ -133,5 +133,5 @@ Med lidt fantasi og DAX kan du oprette mange flere variationer.
 ## <a name="next-steps"></a>Næste trin
 Du kan få flere oplysninger i følgende artikel:  
 
-* [Tip og tricks til farveformatering i Power BI](service-tips-and-tricks-for-color-formatting.md)  
+* [Tip og tricks til farveformatering i Power BI](visuals/service-tips-and-tricks-for-color-formatting.md)  
 

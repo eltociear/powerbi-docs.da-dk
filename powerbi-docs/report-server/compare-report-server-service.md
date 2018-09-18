@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: c47722fda28fc45289858f082a0838f583b53dbb
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 598b3e75aa134a5b5e2ee2a8c01316133b60fdac
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34296774"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727254"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Sammenlign Power BI-rapportserveren med Power BI-tjenesten
 
@@ -40,7 +40,7 @@ Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigti
 | Hurtig indsigt | Nej | Ja | [Generér automatisk dataindsigt med Power BI](../service-insights.md) 
 | Analysér i Excel | Nej | Ja | [Analysér i Excel](../service-analyze-in-excel.md) 
 | Sideinddelte rapporter | Ja | Nej | Sideinddelte rapporter er ikke tilgængelige i Power BI-tjenesten, men du kan [fastgøre elementer i sideinddelte rapporter til Power BI-dashboards](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
-| Power BI-mobilapps | Ja | Ja | [Oversigt over Power BI-mobilapps](../mobile-apps-for-mobile-devices.md) 
+| Power BI-mobilapps | Ja | Ja | [Oversigt over Power BI-mobilapps](../consumer/mobile/mobile-apps-for-mobile-devices.md) 
 | ARC GIS-kort | Nej | Ja | [ArcGIS-kort i Power BI-tjenesten og Power BI Desktop fra Esri](../power-bi-visualization-arcgis.md)
 | Mailabonnementer på Power BI-rapporter | Nej | Ja | [Abonner på en rapport eller et dashboard](../service-report-subscribe.md) i Power BI-tjenesten 
 | Mailabonnementer på sideinddelte rapporter | Ja | Nej | [Maillevering i Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  
@@ -48,7 +48,7 @@ Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigti
 | Sikkerhed på rækkeniveau | Kun via datakilde i DirectQuery-tilstand | Tilgængelige i både DirectQuery- (datakilde) og importtilstand | [Sikkerhed på rækkeniveau (RLS)](../service-admin-rls.md) med Power BI 
 | Fuldskærmsvisning | Nej | Ja | [Fuldskærmsvisning](../service-fullscreen-mode.md) i Power BI-tjenesten 
 | Avanceret samarbejde i Office 365 | Nej | Ja | [Samarbejd i et apparbejdsområde](../service-collaborate-power-bi-workspace.md) med Office 365 
-| R-visuals | Nej | Ja | [Opret visuelle R-elementer](../service-r-visuals.md) i Power BI-tjenesten  
+| R-visuals | Nej | Ja | [Opret visuelle R-elementer](../visuals/service-r-visuals.md) i Power BI-tjenesten  
 | Funktioner til eksempelvisning | Nej | Ja | [Tilmeld dig prøveversioner af funktioner i Power BI-tjenesten](../service-preview-features.md) 
 | Brugerdefinerede visuelle elementer | Ja | Ja | [Brugerdefinerede visualiseringer i Power BI](../power-bi-custom-visuals.md) 
 | Power BI Desktop | Version, der er optimeret til rapportserveren, kan downloades med rapportserveren | Version, der er optimeret til Power BI-tjenesten, er tilgængelig fra Windows Store | [Power BI Desktop til rapportserveren](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop til Power BI-tjenesten](http://aka.ms/pbidesktopstore)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 8e31d3128e38453212a8a0ecef2a139fa2d0f356
-ms.sourcegitcommit: 49570ab8f5b5cd5bab4cd388f4281b1372bcb80b
+ms.openlocfilehash: 565c43be3489c23f26a98f99ce2d70022be965d2
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/09/2018
-ms.locfileid: "35250539"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727990"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Konfiguration af mobilapps med Microsoft Intune
 Microsoft Intune giver organisationer mulighed for at administrere enheder og programmer. Power BI-mobilprogrammerne til iOS og Android, integrerer med Intune, så du kan administrere programmet på dine enheder og styre sikkerheden. Ved hjælp af konfigurationspolitikker kan du kontrollere ting som at anmode om pinkode for at give adgang, kontrollere, hvordan data håndteres af programmet, og kryptere programdata, selv når appen ikke er i brug.
@@ -163,7 +163,7 @@ Når den er installeret, kan du se, at den er **Administreret af dit firma**. Hv
 
 ## <a name="next-steps"></a>Næste trin
 [Konfigurer og udrul politikker for administration af mobilapps i Microsoft Intune-konsollen](https://technet.microsoft.com/library/dn878026.aspx)  
-[Power BI-apps til mobilenheder](mobile-apps-for-mobile-devices.md)  
+[Power BI-apps til mobilenheder](consumer/mobile/mobile-apps-for-mobile-devices.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

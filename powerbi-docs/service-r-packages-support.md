@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b2d8509c83ccce3d76926d926c64061ca78c100d
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: fc4d62134bccae1a1ac0fd10444dd47c84ecc945
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39256164"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44727024"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>R-pakker i Power BI-tjenesten
 Du kan bruge det effektive [R-programmeringssprog](https://www.r-project.org/) til at skabe visuelle elementer i Power BI-tjenesten. Mange R-pakker understøttes i Power BI-tjenesten (og der understøttes hele tiden flere og flere), og nogle pakker understøttes ikke.
 
-De følgende afsnit indeholder en alfabetisk tabel over de R-pakker, der understøttes i Power BI, og dem, der ikke understøttes. Du kan finde flere oplysninger om R i Power BI i artiklen [R-visuals](service-r-visuals.md).
+De følgende afsnit indeholder en alfabetisk tabel over de R-pakker, der understøttes i Power BI, og dem, der ikke understøttes. Du kan finde flere oplysninger om R i Power BI i artiklen [R-visuals](visuals/service-r-visuals.md).
 
 ## <a name="request-support-for-a-new-r-package"></a>Anmod om at få understøttet en ny R-pakke
 De R-pakker, der understøttes i **Power BI-tjenesten**, står i følgende afsnit med titlen **Understøttede pakker**. Hvis du vil anmode om at få understøttet en R-pakke, der ikke findes på denne liste, kan du sende en mail med din anmodning til [feedbackteamet for R i Power BI](mailto:rinpbifb@microsoft.com).
@@ -108,7 +108,7 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 |blob| 1.1.0| https://cran.r-project.org/web/packages/blob/index.html|
 |BLR|1.4| https://cran.r-project.org/web/packages/BLR/index.html|
 |BMA| 3.18.7| https://cran.r-project.org/web/packages/BMA/index.html|
-|Bmix|0.6| https://cran.r-project.org/web/packages/Bmix/index.html|
+|Bmix|0,6| https://cran.r-project.org/web/packages/Bmix/index.html|
 |BMS| 0.3.4| https://cran.r-project.org/web/packages/BMS/index.html|
 |bnlearn|4.2| https://cran.r-project.org/web/packages/bnlearn/index.html|
 |boa| 1.1.8-2| https://cran.r-project.org/web/packages/boa/index.html|
@@ -214,7 +214,7 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 |doParallel| 1.0.10| https://cran.r-project.org/web/packages/doParallel/index.html|
 |doSNOW| 1.0.14| https://cran.r-project.org/web/packages/doSNOW/index.html|
 |dotCall64| 0.9-04| https://cran.r-project.org/web/packages/dotCall64/index.html|
-|downloader|0.4| https://cran.r-project.org/web/packages/downloader/index.html|
+|downloader|0,4| https://cran.r-project.org/web/packages/downloader/index.html|
 |dplyr| 0.7.2| https://cran.r-project.org/web/packages/dplyr/index.html|
 |DPpackage| 1.1-6| https://cran.r-project.org/web/packages/DPpackage/index.html|
 |dse| 2015.12-1| https://cran.r-project.org/web/packages/dse/index.html|
@@ -371,9 +371,9 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 |hexbin| Rcpp| grDevices|
 |hflights|0.1| https://cran.r-project.org/web/packages/hflights/index.html|
 |HH| 3.1-34| https://cran.r-project.org/web/packages/HH/index.html|
-|HI|0.4| https://cran.r-project.org/web/packages/HI/index.html|
+|HI|0,4| https://cran.r-project.org/web/packages/HI/index.html|
 |highcharter| 0.5.0| https://cran.r-project.org/web/packages/highcharter/index.html|
-|highr|0.6| https://cran.r-project.org/web/packages/highr/index.html|
+|highr|0,6| https://cran.r-project.org/web/packages/highr/index.html|
 |HistData| 0.8-1| https://cran.r-project.org/web/packages/HistData/index.html|
 |Hmisc| 4.0-3| https://cran.r-project.org/web/packages/Hmisc/index.html|
 |hms|0.3| https://cran.r-project.org/web/packages/hms/index.html|
@@ -542,7 +542,7 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 |NbClust|3| https://cran.r-project.org/web/packages/NbClust/index.html|
 |ncvreg| 3.9-1| https://cran.r-project.org/web/packages/ncvreg/index.html|
 |network| 1.13.0| https://cran.r-project.org/web/packages/network/index.html|
-|networkD3|0.4| https://cran.r-project.org/web/packages/networkD3/index.html|
+|networkD3|0,4| https://cran.r-project.org/web/packages/networkD3/index.html|
 |neuralnet|1.33| https://cran.r-project.org/web/packages/neuralnet/index.html|
 |nlme| 3.1-131| https://cran.r-project.org/web/packages/nlme/index.html|
 |nlme| 3.1-131| https://cran.r-project.org/web/packages/nlme/index.html|
@@ -731,7 +731,7 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 |Rsolnp|1.16| https://cran.r-project.org/web/packages/Rsolnp/index.html|
 |RSQLite|2| https://cran.r-project.org/web/packages/RSQLite/index.html|
 |rstan| 2.16.2| https://cran.r-project.org/web/packages/rstan/index.html|
-|rstudioapi|0.6| https://cran.r-project.org/web/packages/rstudioapi/index.html|
+|rstudioapi|0,6| https://cran.r-project.org/web/packages/rstudioapi/index.html|
 |RTextTools| 1.4.2| https://cran.r-project.org/web/packages/RTextTools/index.html|
 |RUnit| 0.4.26| https://cran.r-project.org/web/packages/RUnit/index.html|
 |RUnit| 0.4.31| https://cran.r-project.org/web/packages/RUnit/index.html|
@@ -829,7 +829,7 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 |svglite| 1.2.1| https://cran.r-project.org/web/packages/svglite/index.html|
 |svmpath|0.955| https://cran.r-project.org/web/packages/svmpath/index.html|
 |svUnit| 0.7-12| https://cran.r-project.org/web/packages/svUnit/index.html|
-|sysfonts|0.6| https://cran.r-project.org/web/packages/sysfonts/index.html|
+|sysfonts|0,6| https://cran.r-project.org/web/packages/sysfonts/index.html|
 |tau| 0.0-19| https://cran.r-project.org/web/packages/tau/index.html|
 |tcltk| 3.4.1| NA|
 |tcltk2| 1.2-11| https://cran.r-project.org/web/packages/tcltk2/index.html|
@@ -861,7 +861,7 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 |timeDate|3012.1| https://cran.r-project.org/web/packages/timeDate/index.html|
 |timeDate (>= 2150.95)| NA| CRAN|
 |timeSeries| 3022.101.2| https://cran.r-project.org/web/packages/timeSeries/index.html|
-|timevis|0.4| https://cran.r-project.org/web/packages/timevis/index.html|
+|timevis|0,4| https://cran.r-project.org/web/packages/timevis/index.html|
 |tm| 0.7-1| https://cran.r-project.org/web/packages/tm/index.html|
 |tokenizers| 0.1.4| https://cran.r-project.org/web/packages/tokenizers/index.html|
 |tools| 3.4.1| NA|
@@ -904,7 +904,7 @@ Du kan se de pakker, der **understøttes** i Power BI-tjenesten i følgende tabe
 |viridis| 0.4.0| https://cran.r-project.org/web/packages/viridis/index.html|
 |viridisLite| 0.2.0| https://cran.r-project.org/web/packages/viridisLite/index.html|
 |visNetwork| 2.0.1| https://cran.r-project.org/web/packages/visNetwork/index.html|
-|webutils|0.6| https://cran.r-project.org/web/packages/webutils/index.html|
+|webutils|0,6| https://cran.r-project.org/web/packages/webutils/index.html|
 |weights|0.85| https://cran.r-project.org/web/packages/weights/index.html|
 |whisker| viridis| CRAN|
 |whisker| digest| rstudioapi (>= 0.2.0)|
@@ -940,7 +940,7 @@ Du kan se de pakker, der **ikke understøttes** i Power BI-tjenesten i følgende
 ## <a name="next-steps"></a>Næste trin
 Kig på følgende artikler for at få flere oplysninger om R i Power BI:
 
-* [Oprettelse af R-visuals i Power BI-tjenesten](service-r-visuals.md)
+* [Oprettelse af R-visuals i Power BI-tjenesten](visuals/service-r-visuals.md)
 * [Opret Power BI-visuals ved hjælp af R](desktop-r-visuals.md)
 * [Kørsel af R-scripts i Power BI Desktop](desktop-r-scripts.md)
 * [Brug af R i Query Editor](desktop-r-in-query-editor.md)

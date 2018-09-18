@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: da9a4ffad948a43077d864e442af36b0db6bb617
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 80e5b31f4fd8e59333848da26995388874d1746c
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136956"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44728036"
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
 ## <a name="what-is-a-power-bi-report"></a>Hvad er en Power BI-rapport?
@@ -27,7 +27,7 @@ Denne rapport indeholder tre sider (eller faner), og vi ser i øjeblikket siden 
 
 Hvis du ikke har arbejdet med Power BI før, kan du få et godt overblik ved at læse [Grundlæggende begreber i Power BI](service-basic-concepts.md)
 
-Rapporter er en funktion i Power BI-tjenesten og Power BI Desktop. Det er en næsten identisk oplevelse at arbejde med rapporter. Hvis du arbejder på mobilenheder, kan du dog ikke oprette rapporter, men du kan [få vist, dele og anmærke rapporter](mobile-reports-in-the-mobile-apps.md).
+Rapporter er en funktion i Power BI-tjenesten og Power BI Desktop. Det er en næsten identisk oplevelse at arbejde med rapporter. Hvis du arbejder på mobilenheder, kan du dog ikke oprette rapporter, men du kan [få vist, dele og anmærke rapporter](consumer/mobile/mobile-reports-in-the-mobile-apps.md).
 
 ## <a name="advantages-of-reports"></a>Fordele ved rapporter
 Rapporter er baseret på et enkelt datasæt. Visualiseringerne i en rapport repræsenterer en guldgrube af oplysninger. Og visualiseringerne er ikke statiske. Du kan tilføje og fjerne data, ændre visualiseringstyper og anvende filtre og udsnit, når du graver i dataene for at finde indsigt og lede efter svar. En rapport er som et dashboard, blot i endnu højere grad: Den tillader mere interaktivitet og tilpasningsmuligheder, og visualiseringerne opdateres, når de underliggende data ændres.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 592c3bf5fbd508d63236d16ca21164ee507df35b
-ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
+ms.openlocfilehash: 27b3f18143fe5f354fb9a6965b1d3a58ba33f556
+ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43300109"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44726909"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administrationsportal
 
@@ -244,7 +244,7 @@ Brugerne i organisationen kan interagere med og dele brugerdefinerede visualiser
 
 ### <a name="interact-with-and-share-r-visuals"></a>Interager med og del R-visualiseringer
 
-Brugere i virksomheden kan interagere med og dele visuelle elementer oprettet med R-scripts. [Få mere at vide](service-r-visuals.md)
+Brugere i virksomheden kan interagere med og dele visuelle elementer oprettet med R-scripts. [Få mere at vide](visuals/service-r-visuals.md)
 
 > [!NOTE]
 > Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
