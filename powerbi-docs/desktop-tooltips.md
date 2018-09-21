@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c21d04da722e017210f7f83df3e1a5aa7dde1166
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: f06f3f7f6d91176d75ce452202a91b2c54be06ce
+ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280748"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44512150"
 ---
-# <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop-preview"></a>Opret værktøjstip baseret på rapportsider i Power BI Desktop (prøveversion)
+# <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Opret værktøjstip baseret på rapportsider i Power BI Desktop
 Du kan oprette visuelt omfattende **værktøjstip til rapporter**, som vises, når du holder over visualiseringer, på baggrund af rapportsider, du opretter i **Power BI Desktop**. Ved at oprette en rapportside, der fungerer som et værktøjstip, kan dine brugerdefinerede værktøjstip indeholde visualiseringer, billeder og mange andre samlinger af elementer, du opretter på en rapportside. 
 
 ![Værktøjstip til rapporter i Power BI Desktop](media/desktop-tooltips/desktop-tooltips_00a.png)
@@ -27,11 +27,15 @@ Du kan oprette så mange værktøjstipsider, du vil. Hver værktøjstipside kan 
 Du kan gøre mange forskellige interessante ting med værktøjstip i rapporter. Herunder kan du se, hvordan du opretter værktøjstip, og hvad du skal gøre for at konfigurere dem.
 
 ### <a name="enable-the-tooltips-preview"></a>Aktivér prøveversionen af værktøjstip 
-Da værktøjstip til rapporter i øjeblikket er en prøveversion, skal du aktivere dem, før du kan oprette værktøjstip til rapporter. Du aktiverer prøveversionsfunktionen af værktøjstip til rapporter ved at vælge **Filer > Indstillinger > Indstillinger> Prøveversionsfunktioner** i Power BI Desktop og derefter markere afkrydsningsfeltet ud for **Værktøjstip på rapportsider**. 
+Fra og med september 2018-versionen af **Power BI Desktop** er værktøjstip generelt tilgængelige og skal ikke længere aktiveres. 
+
+Hvis du bruger en tidligere version af **Power BI Desktop**, kan du aktivere den som en prøveversionsfunktion ved at vælge **Fil > Indstillinger > Indstillinger > Funktioner til eksempelvisning** i Power BI Desktop og derefter markere afkrydsningsfeltet ud for **Værktøjstip for rapportside**. 
 
 ![Aktivér prøveversionsfunktionen af værktøjstip til rapporter](media/desktop-tooltips/desktop-tooltips_01.png)
 
 Du skal genstarte **Power BI Desktop**, når du har aktiveret prøveversionsfunktionen af værktøjstip i en rapport.
+
+Vi anbefaler, at du altid opgraderer til den nyeste version af **Power BI Desktop**, hvilket du kan gøre via et link i [Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="create-a-report-tooltip-page"></a>Opret en værktøjstipside i en rapport
 Du starter ved at oprette en ny rapportside. Det gør du ved at klikke på knappen **+**, som du finder nederst på canvasset **Power BI Desktop** i området for fanesider. Knappen er ved siden af den sidste side i rapporten. 
@@ -117,8 +121,9 @@ Når en visualisering fremhæves på tværs i en rapport, viser værktøjstippen
 
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
-I denne foreløbige version af **værktøjstip** for rapporter er der nogle få begrænsninger og overvejelser, du skal være opmærksom på.
+Der er nogle få begrænsninger og overvejelser i forbindelse med **værktøjstip**, som du skal være opmærksom på.
 
+* Fra og med september 2018-versionen af **Power BI Desktop**, som markerede den generelle tilgængelighed af værktøjstip, understøtter visuelle kortelementer også værktøjstip.
 * Fra og med udgivelsen af **Power BI Desktop** i juli 2018 understøttes visualiseringerne Tabel og Matrix for værktøjstip. 
 * Værktøjstip til rapporter understøttes ikke, når du får vist rapporter i mobilapps eller i indbyggede miljøer, herunder Publicer til web. 
 * Værktøjstip til rapporter understøttes ikke for brugerdefinerede visualiseringer. 
