@@ -11,17 +11,17 @@ ms.topic: conceptual
 ms.date: 08/21/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c3dae6bcd59f44ab66b305b009da1e6fdabc9879
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 6cfd4cf1ae090351a710b00ee82600ddcbc71632
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44730563"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546159"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualiseringer i Power BI-rapporter
 Visualiseringer (dvs. visuals) viser indsigter, der er blevet registreret i dataene. En rapport i Power BI har muligvis en enkelt side med én visual, eller den kan have sider fulde af visuals. I Power BI-tjenesten kan visuals [fastgøres fra rapporter til dashboards](../service-dashboard-pin-tile-from-report.md). 
 
-Det er vigtigt at skelne mellem rapporters *forfattere* og rapporters *forbrugere* Hvis du er personen, der opretter eller redigerer rapporten, så er du forfatter.  Forfattere har tilladelse til at redigere rapporten og dens underliggende datasæt. Det betyder, at du i Power BI Desktop kan åbne datasættet i Datavisning og oprette visuals i Rapportvisning. Det betyder, at du i Power BI-tjenesten kan åbne datasæt eller rapporter i rapporteditoren i [Redigeringsvisning](../service-reading-view-and-editing-view.md). Hvis en rapport eller et dashboard er blevet [delt med dig](../service-shared-with-me.md), så er du rapportens **forbruger**. Du kan få vist og interagere med rapporten og dens visuals, men du kan ikke gemme ændringerne.
+Det er vigtigt at skelne mellem rapporters *forfattere* og rapporters *forbrugere* Hvis du er personen, der opretter eller redigerer rapporten, så er du forfatter.  Forfattere har tilladelse til at redigere rapporten og dens underliggende datasæt. Det betyder, at du i Power BI Desktop kan åbne datasættet i Datavisning og oprette visuals i Rapportvisning. Det betyder, at du i Power BI-tjenesten kan åbne datasæt eller rapporter i rapporteditoren i [Redigeringsvisning](../consumer/end-user-reading-view.md). Hvis en rapport eller et dashboard er blevet [delt med dig](../consumer/end-user-shared-with-me.md), så er du rapportens **forbruger**. Du kan få vist og interagere med rapporten og dens visuals, men du kan ikke gemme ændringerne.
 
 Der er mange forskellige typer visuals, der fås direkte fra ruden VISUALISERINGER i Power BI. 
 

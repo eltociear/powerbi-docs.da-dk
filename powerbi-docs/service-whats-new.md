@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/27/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 83d9e435c1dca10a444f3125830eb6432aecf6bd
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 090a59f406f1e3874f678752f0e0bc9656ae492f
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728197"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548942"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
@@ -89,13 +89,13 @@ Du kan også tjekke YouTube-kanalerne for at få mere at vide om nyheder og funk
 
 ### <a name="august-2017"></a>August 2017
 * Kend din målgruppe med [forbrugsdata for hver enkelt bruger](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
-* Kom i gang med [Power BI-tjenesteapps](service-connect-to-services.md) til onlinetjenester.
+* Kom i gang med [Power BI-tjenesteapps](consumer/end-user-connect-to-services.md) til onlinetjenester.
 * Oprettelse af forbindelse til IBM Netezza med datagatewayen i det lokale miljø via både forbindelsestilstanden Import og DirectQuery.
 * [Dynamisk RLS](developer/embedded-row-level-security.md) understøttes nu af Power BI Embedded.
 * Avanceret [filtrerings-API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) er nu føjet til 1.7-versionen af API'en til brugerdefinerede visuelle elementer.
 
 ### <a name="july-2017"></a>Juli 2017
-* Understøttelse af [mailabonnementer](service-report-subscribe.md) på dashboards.
+* Understøttelse af [mailabonnementer](consumer/end-user-subscribe.md) på dashboards.
 * Kontrol og diagnosticering af, hvorfor indlæsningstiden er ringe for dashboards, der anvender Inspektion af ydeevne.
 * Nu understøttes også Snowflake og SAP BusinessWarehouse DirectQuery med datagatewayen i det lokale miljø.
 * Nye [API'er til administration af dataopdatering](https://powerbi.microsoft.com/blog/announcing-data-refresh-apis-in-the-power-bi-service/) i Power BI-tjenesten.
@@ -206,12 +206,12 @@ Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerb
 
 Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
 
-* [Understøttelse af Spørgsmål og svar i Power BI for SQL Server 2016 Analysis Services-tabelmodeller](service-q-and-a-direct-query.md): Det glæder os at kunne meddele om forbedringer til brugeroplevelsen i Spørgsmål og svar i Power BI for datakilder forbundet via virksomhedsgateway samt brugeroplevelse og starten af den offentlige previewversion til Spørgsmål og svar i Power BI for datakilder forbundet via virksomhedsgateway – som starter med understøttelse af SQL Server 2016 Analysis Services-tabelmodeller. Du kan få alle detaljerne i [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
+* [Understøttelse af Spørgsmål og svar i Power BI for SQL Server 2016 Analysis Services-tabelmodeller](consumer/end-user-q-and-a-direct-query.md): Det glæder os at kunne meddele om forbedringer til brugeroplevelsen i Spørgsmål og svar i Power BI for datakilder forbundet via virksomhedsgateway samt brugeroplevelse og starten af den offentlige previewversion til Spørgsmål og svar i Power BI for datakilder forbundet via virksomhedsgateway – som starter med understøttelse af SQL Server 2016 Analysis Services-tabelmodeller. Du kan få alle detaljerne i [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
 * [Understøttelse af lokale filer for Excel-rapporter](service-excel-workbook-files.md#local-excel-workbooks): Nu kan du uploade dine Excel-filer fra dit lokale drev eller lagertjenester og bruge denne Excel-rapport på samme måde som i Excel Online med de ekstra fordele ved Power BI. Du kan få alle detaljerne i [blogindlægget](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/)
 
 **28. april 2016**
 
-* [Hurtigt indsigt på dashboardfelter](service-insights.md): Når du får vist et felt i Fokustilstand, skal du klikke på Hent indsigt for at søge i feltet og dets relaterede data efter korrelationer, udenforliggende værdier, tendenser, sæsonudsving, ændringspunkter i tendenser og større faktorer automatisk, i løbet af få sekunder.
+* [Hurtigt indsigt på dashboardfelter](consumer/end-user-insights.md): Når du får vist et felt i Fokustilstand, skal du klikke på Hent indsigt for at søge i feltet og dets relaterede data efter korrelationer, udenforliggende værdier, tendenser, sæsonudsving, ændringspunkter i tendenser og større faktorer automatisk, i løbet af få sekunder.
 
 Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerbi.microsoft.com/blog/find-more-insights-in-your-dashboards-with-quick-insights/)
 
@@ -437,7 +437,7 @@ Få alle detaljerne, herunder en video, der demonstrerer mange af disse opdateri
 
 **3. december 2015**
 
-* Automatisk registrering af tendenser og afdækning af mønstre i et datasæt med Hurtig indsigt: [video](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) eller [artikel](service-insights.md)
+* Automatisk registrering af tendenser og afdækning af mønstre i et datasæt med Hurtig indsigt: [video](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-updates-from-browser-to-desktop-and-new-automated-insights-mf.aspx) eller [artikel](consumer/end-user-insights.md)
 * [Visualiser dine VMob-data i Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
 * [Power BI-integration med Cortana](http://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
 * [Previewversion af Power BI-gateway til virksomheder](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
@@ -587,7 +587,7 @@ Se [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-service
 
 * Vi er glade for at kunne meddele, at Power BI er blevet offentligt tilgængeligt. Tilmeld dig [Power BI Pro](service-self-service-signup-for-power-bi.md) i dag. Som en del af udgivelsen af den offentligt tilgængelige version tilbyder vi nogle fantastiske nye funktioner:
 * En ny oplevelse af visualisering og oprettelse af rapporter: Det nye lærred har et større udvalg af visuelle elementer, større kontrol over formatering af titler, forklaringer, akser, farver, baggrunde med mere.
-* [Power BI-grupper](service-create-distribute-apps.md): Grupper giver en fantastisk samarbejdsoplevelse, der er baseret på Office 365-grupper.
+* [Power BI-grupper](consumer/end-user-create-apps.md): Grupper giver en fantastisk samarbejdsoplevelse, der er baseret på Office 365-grupper.
 * [Organisationsindholdspakker](service-organizational-content-pack-introduction.md): Power BI gør det ekstremt enkelt at oprette dashboards og rapporter, og nu kan brugerne publicere dette indhold i organisationens indholdsgalleri.
 * [Hent hele Excel-filer](service-excel-workbook-files.md): Du kan overføre en hvilken som helst Excel-projektmappe, der er gemt på OneDrive for Business, til Power BI og få vist hele projektmappen, præcis som du ville gøre i Excel Online.
 * [Hent CSV-filer](service-get-data-from-files.md): På samme måde som en Excel- eller Power BI Desktop-fil kan en fil med kommaseparerede værdier (CSV) også udgøre et datasæt for dine Power BI-dashboards og -rapporter.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f06f3f7f6d91176d75ce452202a91b2c54be06ce
-ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
+ms.openlocfilehash: 69c0e6d253a1d8d8ecad9f562c0b992c01d4d577
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44512150"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547105"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Opret værktøjstip baseret på rapportsider i Power BI Desktop
 Du kan oprette visuelt omfattende **værktøjstip til rapporter**, som vises, når du holder over visualiseringer, på baggrund af rapportsider, du opretter i **Power BI Desktop**. Ved at oprette en rapportside, der fungerer som et værktøjstip, kan dine brugerdefinerede værktøjstip indeholde visualiseringer, billeder og mange andre samlinger af elementer, du opretter på en rapportside. 
@@ -136,5 +136,5 @@ Der er nogle få begrænsninger og overvejelser i forbindelse med **værktøjsti
 Du kan finde flere oplysninger om funktioner, der ligner eller interagerer med værktøjstip til rapporter, i følgende artikler:
 
 * [Brug detaljeadgang i Power BI Desktop](desktop-drillthrough.md)
-* [Vis et dashboardfelt eller en rapport i fokustilstand](service-focus-mode.md)
+* [Vis et dashboardfelt eller en rapport i fokustilstand](consumer/end-user-focus.md)
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b34c16337158e784b0c41bd3e3fd93aca9504cd7
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 4d43ffb1f4e005830fd36da4e80cf4d0c7d86fed
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44727300"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549931"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Del dine Power BI-dashboards og -rapporter med kolleger og andre
 *Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Med Power BI får du også [adskillige andre måder at samarbejde om og distribuere dashboards og rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -110,7 +110,7 @@ Hvis du sender et link fra en Power BI-mobilapp til personer uden for din organi
 Ting, du skal være opmærksom på angående deling af dashboards og rapporter:
 
 * Generelt kan se du og dine kolleger se de samme data på dashboardet eller i rapporten. Hvis du derfor har tilladelse til at se flere data, end de har, vil de kunne se alle dine data på dashboardet eller i rapporten. Men hvis [sikkerhed på rækkeniveau (RLS)](service-admin-rls.md) er anvendt på datasættet, der er underliggende for et dashboard eller en rapport, bruges legitimationsoplysningerne for hver person til at afgøre, hvilke data vedkommende kan få adgang til.
-* Alle, som du deler dashboardet med, kan se det og interagere med de relaterede rapporter i [Læsevisning](service-reading-view-and-editing-view.md). De kan ikke oprette rapporter eller gemme ændringer af eksisterende rapporter.
+* Alle, som du deler dashboardet med, kan se det og interagere med de relaterede rapporter i [Læsevisning](consumer/end-user-reading-view.md). De kan ikke oprette rapporter eller gemme ændringer af eksisterende rapporter.
 * Ingen kan se eller hente datasættet.
 * Alle kan manuelt [opdatere dataene](refresh-data.md).
 * Hvis du bruger Office 365 til mail, kan du dele med medlemmer af en distributionsgruppe ved at angive den mailadresse, der er knyttet til distributionsgruppen.

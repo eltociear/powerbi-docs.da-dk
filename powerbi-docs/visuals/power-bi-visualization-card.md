@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8532fff7bc522a0ad0e59bd17580549bd9e68a23
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 18c9fe3d50245ff1d0745c0a3ae1e830b3f9be45
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44730512"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548321"
 ---
 # <a name="card-visualizations"></a>Kortvisualiseringer
 Nogle gange er et enkelt tal det vigtigste, du vil finde frem til på dit Power BI-dashboard eller i din Power BI-rapport som f.eks. salg i alt, markedsandel fra år til år eller salgsmuligheder i alt. Denne type visualisering kaldes et *kort*. Som med næsten alle de oprindelige Power BI-visualiseringer kan kort oprettes ved hjælp af rapporteditoren eller Spørgsmål og svar.
@@ -51,13 +51,13 @@ I denne vejledning bruges Retail Analysis Sample (Eksempel på detailhandelsanal
 ## <a name="create-a-card-from-the-qa-question-box"></a>Opret et kort fra feltet til spørgsmål i Spørgsmål og svar
 Feltet til spørgsmål er den nemmeste måde at oprette et kort på. Feltet til spørgsmål i Spørgsmål og svar er tilgængelig i Power BI-tjenesten (app.powerbi.com) fra et dashboard eller en rapport. Nedenstående trin beskriver oprettelsen af et kort fra et dashboard i Power BI-tjenesten. Hvis du gerne vil oprette et kort ved hjælp af Spørgsmål og svar i Power BI Desktop, [skal du følge denne vejledning](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-december-feature-summary/#QandA) for at få prøveversionen af Spørgsmål og svar til Desktop-rapporter.
 
-1. Opret et [dashboard](../service-dashboards.md), og [hent data](../service-get-data.md). I dette eksempel bruges [eksemplet Opportunity Analysis](../sample-opportunity-analysis.md).
+1. Opret et [dashboard](../consumer/end-user-dashboards.md), og [hent data](../service-get-data.md). I dette eksempel bruges [eksemplet Opportunity Analysis](../sample-opportunity-analysis.md).
 
 1. Begynd at skrive dit spørgsmål i feltet til spørgsmål øverst i dashboardet. 
 
    ![](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
 
->**TIP**! Fra en rapport i Power BI-tjenesten skal du vælge [Stil et spørgsmål](../service-reading-view-and-editing-view.md) på den øverste menulinje i **Redigeringsvisning**. I en rapport i Power BI Desktop skal du finde en tom plads i en rapport og dobbeltklikke for at åbne et felt til spørgsmål.
+>**TIP**! Fra en rapport i Power BI-tjenesten skal du vælge [Stil et spørgsmål](../consumer/end-user-reading-view.md) på den øverste menulinje i **Redigeringsvisning**. I en rapport i Power BI Desktop skal du finde en tom plads i en rapport og dobbeltklikke for at åbne et felt til spørgsmål.
 
 3. Skriv f.eks. "number of opportunities" i feltet til spørgsmål.
 
@@ -105,10 +105,10 @@ Du har mange muligheder for at ændre etiketter, tekst, farve og meget mere. Den
     ![](media/power-bi-visualization-card/power-bi-formatted.png)
 
 ## <a name="next-steps"></a>Næste trin
-[Dashboardfelter i Power BI](../service-dashboard-tiles.md)
+[Dashboardfelter i Power BI](../consumer/end-user-tiles.md)
 
-[Dashboards i Power BI](../service-dashboards.md)
+[Dashboards i Power BI](../consumer/end-user-dashboards.md)
 
-[Power BI – Grundlæggende begreber](../service-basic-concepts.md)
+[Power BI – Grundlæggende begreber](../consumer/end-user-basic-concepts.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

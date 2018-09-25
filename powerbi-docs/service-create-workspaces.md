@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6ae44bb641768ec6518814a0d8699dc41d260e90
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: b40933e085cf81528a28e9eedb4260351f657323
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624593"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548390"
 ---
 # <a name="create-workspaces-with-your-colleagues-in-power-bi"></a>Opret arbejdsområder med dine kollegaer i Power BI
 
@@ -77,7 +77,7 @@ I de aktuelle arbejdsområder kan du også oprette forbindelse via organisations
 
 ## <a name="distribute-an-app"></a>Distribuer en app
 
-Når indholdet er klar, skal du vælge, hvilke dashboards og rapporter du vil publicere, og derefter skal du publicere det som en *app*. Dine kollegaer kan hente dine apps på flere måder. Du kan automatisk installere dem i dine kollegaers Power BI-konti, hvis Power BI-administratoren giver dig tilladelse til det. Ellers kan de søge efter og installere dine apps fra Microsoft AppSource, eller du kan sende dem et direkte link. De får automatisk opdateringer, og du kan styre, hvor ofte dataene opdateres. Se [Publicer apps med dashboards og rapporter i Power BI](service-create-distribute-apps.md) for at få flere oplysninger.
+Når indholdet er klar, skal du vælge, hvilke dashboards og rapporter du vil publicere, og derefter skal du publicere det som en *app*. Dine kollegaer kan hente dine apps på flere måder. Du kan automatisk installere dem i dine kollegaers Power BI-konti, hvis Power BI-administratoren giver dig tilladelse til det. Ellers kan de søge efter og installere dine apps fra Microsoft AppSource, eller du kan sende dem et direkte link. De får automatisk opdateringer, og du kan styre, hvor ofte dataene opdateres. Se [Publicer apps med dashboards og rapporter i Power BI](consumer/end-user-create-apps.md) for at få flere oplysninger.
 
 ## <a name="power-bi-apps-faq"></a>Ofte stillede spørgsmål om Power BI-apps
 
@@ -92,7 +92,7 @@ Apps er en udviklet form af organisationsindholdspakker. Hvis du allerede har or
 Se [Sådan adskiller de nye apparbejdsområder sig fra eksisterende apparbejdsområder](service-create-the-new-workspaces.md#how-are-the-new-app-workspaces-different-from-current-app-workspaces) for at sammenligne de aktuelle og nye apparbejdsområder. 
 
 ## <a name="next-steps"></a>Næste trin
-* [Installér og brug apps i Power BI](service-install-use-apps.md)
-* [Power BI-apps til eksterne tjenester](service-connect-to-services.md)
+* [Installér og brug apps i Power BI](consumer/end-user-apps.md)
+* [Power BI-apps til eksterne tjenester](consumer/end-user-connect-to-services.md)
 - [Opret de nye arbejdsområder (prøveversion)](service-create-the-new-workspaces.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

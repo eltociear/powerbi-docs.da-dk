@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d059e8bb476f9862c372d9565581d58b336e81db
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: 71b2f104ad5efb244c2b046cdd48a2e52cd045e3
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39623924"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543943"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Samarbejd i dit Power BI-apparbejdsområde
 Power BI-apparbejdsområder er fantastiske steder, hvor du kan samarbejde med dine kollegaer på dashboards, rapporter og datasæt om at oprette *apps*. Samarbejde slutter ikke med arbejdsområder i Power BI. Office 365 tilbyder andre gruppetjenester som f.eks. deling af filer på OneDrive for Business, samtaler i Exchange, delte kalendere og opgaver osv. Læs mere om [grupper i Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
@@ -38,7 +38,7 @@ Når du har oprettet en Power BI Desktop-fil, kan alle i dit arbejdsområde sama
    
     ![Fanen Rapporter](media/service-collaborate-power-bi-workspace/power-bi-workspace-report.png)
    
-    Herfra er det som enhver anden rapport i Power BI. Du og andre i dit apparbejdsområde kan [redigere rapporten](service-reports.md) og gemme felter på et dashboard, som du vælger.
+    Herfra er det som enhver anden rapport i Power BI. Du og andre i dit apparbejdsområde kan [redigere rapporten](consumer/end-user-reports.md) og gemme felter på et dashboard, som du vælger.
 
 ## <a name="collaborate-in-office-365"></a>Samarbejd i Office 365
 Samarbejde i Office 365 starter fra apparbejdsområdet i Power BI.
@@ -77,7 +77,7 @@ Samarbejde i Office 365 starter fra apparbejdsområdet i Power BI.
 Hvis du er ejer eller administrator for et apparbejdsområde, kan du også tilføje eller fjerne medlemmer af arbejdsområdet. Læs mere om [administration af dit Power BI-apparbejdsområde](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="next-steps"></a>Næste trin
-* [Opret apps og apparbejdsområder i Power BI](service-create-distribute-apps.md)
+* [Opret apps og apparbejdsområder i Power BI](consumer/end-user-create-apps.md)
 * Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
 * Har du feedback? Besøg [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi)
 

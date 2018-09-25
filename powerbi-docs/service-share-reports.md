@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: bc5fe4c1e1fedc700fcbadd182f01e9e50348e3e
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 8f025c11a5269befdb7819684e10e8511ae6bc98
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34257223"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545629"
 ---
 # <a name="share-a-filtered-power-bi-report-with-your-coworkers"></a>Del en filtreret Power BI-rapport med dine kolleger
 *Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Med Power BI får du [adskillige andre måder at samarbejde om og distribuere dine rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -28,7 +28,7 @@ Du kan dele en rapport med kolleger inden for det samme maildomæne som dig fra 
 ## <a name="filter-and-share-a-report"></a>Filtrer og del en rapport
 Hvad nu hvis du vil dele en filtreret version af en rapport? Måske en rapport, der kun viser data for en bestemt by eller sælger eller et bestemt år. Du kan gøre dette ved at oprette en brugerdefineret URL-adresse.
 
-1. Åbn rapporten i [Redigeringsvisning](service-reading-view-and-editing-view.md), anvend filteret, og gem rapporten.
+1. Åbn rapporten i [Redigeringsvisning](consumer/end-user-reading-view.md), anvend filteret, og gem rapporten.
    
    I dette eksempel filtrerer vi [Eksempel på detailanalyse](sample-tutorial-connect-to-the-samples.md) for kun at vise værdier, hvor **Territory** (Område) er lig med **NC**.
    

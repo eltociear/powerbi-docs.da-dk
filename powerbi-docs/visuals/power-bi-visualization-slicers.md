@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/25/2018
-ms.author: v-thepet
+ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5758bb53fe4a8a3658d242c3bd72da0a78500579
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: babd30b89970108a06475ec3e7dab7e2ca708425
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44730623"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46565078"
 ---
 # <a name="slicers-in-power-bi"></a>Udsnitsværktøjer i Power BI
 Du vil gerne give rapportlæserne mulighed for at se de overordnede salgstal, men samtidig fremhæve resultaterne for individuelle distriktsledere (District Manager) og forskellige tidsperioder. Du kan oprette separate rapporter eller diagrammer til sammenligning, eller du kan bruge udsnit. Et udsnit er en alternativ metode til filtrering, som begrænser den del af datasættet, der vises i andre visualiseringer i en rapport. 
@@ -98,7 +98,7 @@ Du kan bruge **Visuelle interaktioner** til at forhindre, at nogle visualisering
 2. Vælg ikonet **Ingen** over diagrammet **Total Sales Variance by FiscalMonth and District Manager** for at forhindre, at udsnittet filtrerer diagrammet. 
 3. Vælg udsnittet **Måned**, og vælg igen ikonet **Ingen** over diagrammet **Total Sales Variance by FiscalMonth and District Manager** for at forhindre, at udsnittet filtrerer diagrammet. Når du vælger navne og datointervaller i udsnittet, vil diagrammet Total Sales Variance by FiscalMonth and District Manager nu forblive uændret. 
 
-Se [Visuelle interaktioner i en Power BI-rapport](../service-reports-visual-interactions.md) for at få flere oplysninger om redigering af interaktioner.
+Se [Visuelle interaktioner i en Power BI-rapport](../consumer/end-user-interactions.md) for at få flere oplysninger om redigering af interaktioner.
 
 ## <a name="sync-and-use-slicers-on-other-pages"></a>Synkroniser og brug udsnit på andre sider
 Fra og med opdateringen af Power BI i februar 2018 kan du synkronisere et udsnit og bruge det på en hvilken som helst side i en rapport. 
@@ -193,5 +193,5 @@ Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://commun
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
-[Power BI – Grundlæggende begreber](../service-basic-concepts.md)
+[Power BI – Grundlæggende begreber](../consumer/end-user-basic-concepts.md)
 

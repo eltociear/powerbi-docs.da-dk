@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7b1b55475e2ad19c869ba92cdb9621caa0fc3538
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 22d32315040352e013ae8331e9433a9e60e97f5c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726656"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545745"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Hvordan kan jeg samarbejde og dele i Power BI?
 
@@ -57,7 +57,7 @@ Lad os sige, at du gerne vil distribuere dit dashboard til en bred målgruppe. D
 
 ![Ikonet Publicer app](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
-Det er nemt at finde og installere apps i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)). Du kan sende virksomhedens brugere et direkte link til appen, eller de kan søge efter den i AppSource. Hvis din Power BI-administrator giver dig tilladelser, kan du automatisk installere en app i dine kollegers Power BI-konti. Læs mere om at [publicere dine apps](service-create-distribute-apps.md). 
+Det er nemt at finde og installere apps i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)). Du kan sende virksomhedens brugere et direkte link til appen, eller de kan søge efter den i AppSource. Hvis din Power BI-administrator giver dig tilladelser, kan du automatisk installere en app i dine kollegers Power BI-konti. Læs mere om at [publicere dine apps](consumer/end-user-create-apps.md). 
 
 Efter de har installeret en app, kan de få den vist i deres browser eller mobilenhed.
 
@@ -88,7 +88,7 @@ Flere oplysninger om [anmærkning og deling af felter, rapporter og visuelle ele
 Du kan også [dele et snapshot af et felt](consumer/mobile/mobile-windows-10-phone-app-get-started.md) fra Power BI-appen til Windows 10-enheder.
 
 ## <a name="print-or-save-as-pdf-or-other-static-file"></a>Udskriv eller gem som pdf-fil eller en anden statisk fil
-Du kan udskrive eller gemme som pdf-fil (eller andre statiske filformatet), et helt dashboard, dashboardfelt, rapportside eller visualisering fra Power BI-tjenesten. Rapporter kan kun udskrives med én side ad gangen – du kan ikke udskrive hele rapporten på en gang. Mere om at [udskrive eller gemme som en statisk fil](service-print.md).
+Du kan udskrive eller gemme som pdf-fil (eller andre statiske filformatet), et helt dashboard, dashboardfelt, rapportside eller visualisering fra Power BI-tjenesten. Rapporter kan kun udskrives med én side ad gangen – du kan ikke udskrive hele rapporten på en gang. Mere om at [udskrive eller gemme som en statisk fil](consumer/end-user-print.md).
 
 ## <a name="publish-to-the-web"></a>Publicer på internettet
 
@@ -99,7 +99,7 @@ Du kan publicere Power BI-rapporter til hele internettet ved at integrere intera
 
 ## <a name="next-steps"></a>Næste trin
 * [Del dashboards med kolleger og andre](service-share-dashboards.md)
-* [Opret og publicer en app i Power BI](service-create-distribute-apps.md)
+* [Opret og publicer en app i Power BI](consumer/end-user-create-apps.md)
 * Har du feedback? Indsend dine forslag på [webstedet for Power BI-community'et](https://community.powerbi.com/).
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/).
 

@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
 ms.author: maggies
-ms.openlocfilehash: 8b7c46ad1e9ea9c4c79a8f5a1b48c73ab3336306
-ms.sourcegitcommit: 3a287ae4ab16d1e76caed651bd8ae1a1738831cd
+ms.openlocfilehash: 7253a340ce0852039a08d0ed17c488fc8fdbfa69
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39157350"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545916"
 ---
 # <a name="author-template-content-packs-in-power-bi"></a>Opret pakker med skabelonindhold i Power BI
 Til oprettelse af en pakke med skabelonindhold bruges Power BI Desktop og PowerBI.com. Der er fire komponenter i din indholdspakke:
@@ -22,7 +22,7 @@ Til oprettelse af en pakke med skabelonindhold bruges Power BI Desktop og PowerB
 * Forespørgsler gør det muligt at [oprette forbindelse](desktop-connect-to-data.md) og [transformere](desktop-query-overview.md) data samt definere [parametre](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/)  
 * Datamodel til at oprette [relationer](desktop-create-and-manage-relationships.md), [målinger](desktop-measures.md) og forbedringer af spørgsmål og svar  
 * [Sider](desktop-report-view.md) i rapporter omfatter visuelle elementer og filtre, der giver indsigt i dine data  
-* [Dashboard](service-dashboards.md) og [felter](service-dashboard-create.md) giver et overblik over den indsigt, der er inkluderet  
+* [Dashboard](consumer/end-user-dashboards.md) og [felter](service-dashboard-create.md) giver et overblik over den indsigt, der er inkluderet  
 
 Du kender hver enkelt del som eksisterende funktioner i Power BI. Når du opretter en indholdspakke, er der flere ting, der bør overvejes for hvert aspekt. Du kan finde flere oplysninger om dette i de enkelte afsnit nedenfor.
 

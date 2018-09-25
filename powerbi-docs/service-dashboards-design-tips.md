@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 327e9d9973aabb17761b55d355598462ce70e20e
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 580d1ead35042d14c155c5a28fdb6ba6e6dbcd54
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726037"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544935"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips til udformning af et fantastisk Power BI-dashboard
 Nu, hvor du har oprettet et dashboard og tilføjet nogle felter, kan du overveje, hvordan du ikke bare gør dit dashboard flot, men også funktionelt. Generelt betyder det, at man sørger for, at den vigtigste information er tydelig, og at udseendet er rent og ryddeligt.
@@ -65,7 +65,7 @@ Undgå at variere visualiseringerne bare for variationens skyld.  Visualiseringe
 * Bland ikke præcisions- og tidsniveauer. Sørg for, at tidsrammerne forstås korrekt.  Undgå at have et diagram, der har sidste måned ud for filtrerede diagrammer fra en bestemt måned i året.
 * Bland ikke store og små målinger på samme skala, som f.eks. på en linje eller et liggende søjlediagram.  F.eks. kan én måling være i millioner og en anden måling i tusinder.  Med sådan en stor skalainddeling vil det være vanskeligt at se forskellene i den måling, som er i tusinder.  Hvis du er nødt til at blande, skal du vælge en visualisering, som tillader brug af en akse mere.
 * Lav ikke dine diagrammer rodede med datanavne, der ikke er nødvendige. Værdierne i liggende søjlediagrammer forstås normalt uden at vise det faktiske tal.
-* Vær opmærksom på, hvordan [diagrammer sorteres](power-bi-report-change-sort.md).  Hvis du vil fremhæve det højeste eller laveste tal, skal du sortere efter målingen.  Hvis du ønsker, at modtagerne hurtigt skal kunne finde en bestemt kategori blandt mange andre kategorier, skal du sortere efter aksen.  
+* Vær opmærksom på, hvordan [diagrammer sorteres](consumer/end-user-change-sort.md).  Hvis du vil fremhæve det højeste eller laveste tal, skal du sortere efter målingen.  Hvis du ønsker, at modtagerne hurtigt skal kunne finde en bestemt kategori blandt mange andre kategorier, skal du sortere efter aksen.  
 * Cirkeldiagrammer er bedst, hvis de har mindre end otte kategorier. Eftersom du ikke kan sammenligne værdier ved siden af hinanden, er det vanskeligere at sammenligne værdier i et cirkeldiagram end i liggende søjlediagrammer og stående søjlediagrammer. Cirkeldiagrammer kan være gode til visning af dele i forhold til helheder i stedet for at sammenligne delene. Og målerdiagrammer er gode til visning af den aktuelle status i forbindelse med et mål.
 
 Se [Visualiseringstyper i Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md) for at få en mere visualiseringsspecifik vejledning.  
@@ -81,5 +81,5 @@ For at kunne mestre kunsten at lave et godt dashboard-design bør du overveje at
 
 ## <a name="next-steps"></a>Næste trin
 [Opret et dashboard fra en rapport](service-dashboard-create.md)  
-[Power BI – Grundlæggende begreber](service-basic-concepts.md)  
+[Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2bbc619c2f581e26e36f03013f3db248fab49610
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: 516d78bd6158c714d5f4418771c5e8cb219ce512
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624338"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547562"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Administrer dit apparbejdsområde i Power BI og Office 365
-Som opretter eller administrator af et [apparbejdsområde i Power BI](service-install-use-apps.md) eller i Office 365 kan du administrere visse aspekter i arbejdsområdet i Power BI. Andre aspekter kan du administrere i Office 365. 
+Som opretter eller administrator af et [apparbejdsområde i Power BI](consumer/end-user-apps.md) eller i Office 365 kan du administrere visse aspekter i arbejdsområdet i Power BI. Andre aspekter kan du administrere i Office 365. 
 
 > [!NOTE]
 > Prøveversionen af den nye arbejdsområdeoplevelse ændrer relationen mellem Power BI-arbejdsområder og Office 365-grupper. Du opretter ikke automatisk en Office 365-gruppe, hver gang du opretter et af de nye arbejdsområder. Læs om [oprettelse af nye arbejdsområder (prøveversion)](service-create-the-new-workspaces.md)
@@ -76,7 +76,7 @@ Når du distribuerer din app fra apparbejdsområdet, bliver det billede, du tilf
 3. Vælg **Gem** eller **Fjern**.
 
 ## <a name="next-steps"></a>Næste trin
-* [Hvad er apps i Power BI?](service-install-use-apps.md)
-* [Publicer apps med dashboards og rapporter i Power BI](service-create-distribute-apps.md)
+* [Hvad er apps i Power BI?](consumer/end-user-apps.md)
+* [Publicer apps med dashboards og rapporter i Power BI](consumer/end-user-create-apps.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

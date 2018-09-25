@@ -11,25 +11,25 @@ ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 78d9004a718990cbcd310835e8e9b8ae5e3eae17
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 3c6ae5351908bd71888040c3bc900323837935c2
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726633"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546067"
 ---
 # <a name="the-report-editortake-a-tour"></a>Rapporteditoren... Få en introduktion
 ## <a name="editing-reports-in-power-bi-service-and-power-bi-desktop"></a>Redigering af rapporter i Power BI-tjenesten og Power BI Desktop
 Rapporteditoren i Power BI-tjenesten og rapporteditoren i Power BI Desktop ligner hinanden meget. Videoen viser rapporteditoren i Power BI Desktop, og denne artikel viser rapporteditoren i Power BI-tjenesten. 
 
 ## <a name="the-difference-between-report-creators-and-report-consumers"></a>Forskellen mellem *oprettere* og *forbrugere* af rapporter
-Muligheden for at oprette og redigere en rapport er begrænset til rapportejere (dvs. *oprettere*). Hvis du *forbruger* en rapport, der er blevet delt med dig, vil du stadig kunne åbne og interagere med rapporten i Power BI-tjenesten vha. [Kun læsevisning](service-reading-view-and-editing-view.md), men alle de robuste og omfattende funktioner er ikke tilgængelige for rapportopretteren.  
+Muligheden for at oprette og redigere en rapport er begrænset til rapportejere (dvs. *oprettere*). Hvis du *forbruger* en rapport, der er blevet delt med dig, vil du stadig kunne åbne og interagere med rapporten i Power BI-tjenesten vha. [Kun læsevisning](consumer/end-user-reading-view.md), men alle de robuste og omfattende funktioner er ikke tilgængelige for rapportopretteren.  
 
-Hvis du vil vide mere om læsevisning i forbindelse med rapporter, skal du se under [Læsevisning og redigeringsvisning i Power BI-tjenesten](service-reading-view-and-editing-view.md) 
+Hvis du vil vide mere om læsevisning i forbindelse med rapporter, skal du se under [Læsevisning og redigeringsvisning i Power BI-tjenesten](consumer/end-user-reading-view.md) 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-I Power BI-tjenesten er *rapporteditoren* kun tilgængelig i [Redigeringsvisning](service-reading-view-and-editing-view.md). Du skal være rapportejer eller rapportopretter for at åbne en rapport i Redigeringsvisning.
+I Power BI-tjenesten er *rapporteditoren* kun tilgængelig i [Redigeringsvisning](consumer/end-user-reading-view.md). Du skal være rapportejer eller rapportopretter for at åbne en rapport i Redigeringsvisning.
 
 Power BI-rapporteditoren består af 3 afsnit:  
 
@@ -126,9 +126,9 @@ Rapportcanvasset er det sted, dit arbejde vises. Når du bruger ruderne Felter, 
 ## <a name="next-steps"></a>Næste trin:
 [Opret en rapport](service-report-create-new.md)
 
-Læs mere om rapporter i [Power BI-tjenesten](service-reports.md), [Power BI Desktop](desktop-report-view.md) og [Power BI – Mobil](consumer/mobile/mobile-apps-view-phone-report.md).
+Læs mere om rapporter i [Power BI-tjenesten](consumer/end-user-reports.md), [Power BI Desktop](desktop-report-view.md) og [Power BI – Mobil](consumer/mobile/mobile-apps-view-phone-report.md).
 
-[Power BI – Grundlæggende begreber](service-basic-concepts.md)
+[Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

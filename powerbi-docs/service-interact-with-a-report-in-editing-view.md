@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a6b4795be959cfc1842a07f1ba0a74dd81109e89
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: 7640c9f49205de97556af9cfa51c641a93d9d69c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36965590"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547424"
 ---
 # <a name="interact-with-a-report-in-editing-view-in-power-bi-service"></a>Interager med en rapport i Redigeringsvisning i Power BI-tjenesten
 Rapporter kan oprettes og redigeres i Power BI-tjenesten og Power BI Desktop. I Power BI-tjenesten kan rapporter oprettes og redigeres i **Redigeringsvisning**. I Power BI Desktop kan rapporter oprettes og redigeres i [**Rapportvisning**](desktop-report-view.md). Denne artikel dækker Redigeringsvisning i Power BI-tjenesten. 
 
-Power BI-tjenesten har to forskellige tilstande til at interagere med rapporter – [Læsevisning](service-reading-view-and-editing-view.md) til *forbrugere* af rapporter og Redigeringsvisning til rapportejere og -oprettere.  En Power BI Pro-licens er påkrævet til deling af rapporter samt til redigering af rapporter, der er oprettet af andre. Hvis du ikke har en Pro-licens, kan du stadig oprette rapporter, men du kan ikke [dele dem](service-share-reports.md).    
+Power BI-tjenesten har to forskellige tilstande til at interagere med rapporter – [Læsevisning](consumer/end-user-reading-view.md) til *forbrugere* af rapporter og Redigeringsvisning til rapportejere og -oprettere.  En Power BI Pro-licens er påkrævet til deling af rapporter samt til redigering af rapporter, der er oprettet af andre. Hvis du ikke har en Pro-licens, kan du stadig oprette rapporter, men du kan ikke [dele dem](service-share-reports.md).    
 
-I Redigeringsvisning for en rapport har du stor fleksibilitet til både at undersøge og udvikle rapporter. Alle funktionerne i [Læsevisning](service-reading-view-and-editing-view.md) er tilgængelige -- samt meget mere. Redigeringsvisning er kun tilgængelig for den person, der oprettede rapporten, eller for de kolleger, der er [medejere af rapporten som et medlem eller en administrator af et apparbejdsområde](service-create-distribute-apps.md).
+I Redigeringsvisning for en rapport har du stor fleksibilitet til både at undersøge og udvikle rapporter. Alle funktionerne i [Læsevisning](consumer/end-user-reading-view.md) er tilgængelige -- samt meget mere. Redigeringsvisning er kun tilgængelig for den person, der oprettede rapporten, eller for de kolleger, der er [medejere af rapporten som et medlem eller en administrator af et apparbejdsområde](consumer/end-user-create-apps.md).
 
 ## <a name="functionality-only-available-in-editing-view"></a>Funktionerne er kun tilgængelige i Redigeringsvisning
 Se listen over emner under overskriften **Rapporter** i indholdsfortegnelsen til venstre. Det er en lang liste, og mange af emnerne omfatter funktioner, *som kun er tilgængelige, hvis du har redigeringstilladelse til en rapport*.  For at hjælpe dig med at navigere i indholdsfortegnelsen er Redigeringsvisning nødvendig for at:
@@ -43,7 +43,7 @@ En Power BI Pro-licens er påkrævet for at redigere rapporter, der er oprettet 
 
 
 ## <a name="next-steps"></a>Næste trin
-Tilbage til [Læsevisning og Redigeringsvisning i Power BI-tjenesten](service-reading-view-and-editing-view.md)
+Tilbage til [Læsevisning og Redigeringsvisning i Power BI-tjenesten](consumer/end-user-reading-view.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

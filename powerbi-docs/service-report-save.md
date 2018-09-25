@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 0e462fa6faf8d83bfcdb8658e2fcb852aeac5c3b
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: deba4a654c1b43361f7c44c2f0717fb7e348cb98
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34248901"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548666"
 ---
 # <a name="save-a-report-in-power-bi-service-and-power-bi-desktop"></a>Gem en rapport i Power BI-tjenesten og Power BI Desktop
 Når du har foretaget ændringer af en rapport i Power BI, kan du gemme den, gemme den med et nyt navn eller bare lukke den uden at gemme dine ændringer. Lad os sige, at du åbner rapporten, opretter en visualisering og fastgør den til dashboardet. Hvis du lukker den nu uden at gemme dine ændringer, forbliver feltet på dashboardet, men visualiseringen gemmes ikke i rapporten. Når du klikker på dette felt på dashboardet, åbnes rapporten, men visualiseringen i rapporten er gået tabt.
@@ -29,7 +29,7 @@ Når du har foretaget ændringer af en rapport i Power BI, kan du gemme den, gem
 1. Hvis du forsøger at navigere væk fra en rapport, og rapporten indeholder ændringer, vises en meddelelse i Power BI.
    
    ![Gem ændringer](media/service-report-save/power-bi-unsaved.png)
-2. En anden måde at gemme rapporten på er ved at vælge **FIL** \> **Gem** eller **Gem som**. Hvis du er i [Læsevisning](service-reading-view-and-editing-view.md), kan du kun se muligheden Gem som. 
+2. En anden måde at gemme rapporten på er ved at vælge **FIL** \> **Gem** eller **Gem som**. Hvis du er i [Læsevisning](consumer/end-user-reading-view.md), kan du kun se muligheden Gem som. 
    
    ![Gem rapport](media/service-report-save/power-bi-save-new.png)
 3. Hvis dette er en ny rapport (Gem) eller en ny version af en eksisterende rapport (Gem som), skal du give den et beskrivende navn.  **Rapporten føjes til det aktive arbejdsområde**.
@@ -37,9 +37,9 @@ Når du har foretaget ændringer af en rapport i Power BI, kan du gemme den, gem
     ![navngiv rapporten](media/service-report-save/power-bi-save-dialog.png)
 
 ### <a name="next-steps"></a>Næste trin
-Få mere at vide om [rapporter i Power BI](service-reports.md)
+Få mere at vide om [rapporter i Power BI](consumer/end-user-reports.md)
 
-[Power BI – Grundlæggende begreber](service-basic-concepts.md)
+[Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

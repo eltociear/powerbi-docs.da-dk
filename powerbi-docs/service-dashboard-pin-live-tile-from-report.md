@@ -11,15 +11,15 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7703709361a6233b6d04d6fb2131ba41f109ca36
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 3466280a452c89539d288a3e7d0a123855604e7e
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249864"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546366"
 ---
 # <a name="pin-an-entire-report-page-as-a-live-tile-to-a-power-bi-dashboard"></a>Fastgør en hel rapportside, som et dynamisk felt, til et Power BI-dashboard
-En anden måde at tilføje et nyt [dashboardfelt](service-dashboard-tiles.md) på er ved at fastgøre en hel rapportside. Dette er en nem metode til at fastgøre mere end én visualisering ad gangen.  Når du fastgør en hel side, er felterne også *dynamiske*, og du kan interagere med dem direkte på dashboardet. Og de ændringer, du foretager af visualiseringerne i rapporteditoren, f.eks. ved at tilføje et filter eller ændre de felter, der bruges i diagrammet, afspejles også i dashboardfeltet.  
+En anden måde at tilføje et nyt [dashboardfelt](consumer/end-user-tiles.md) på er ved at fastgøre en hel rapportside. Dette er en nem metode til at fastgøre mere end én visualisering ad gangen.  Når du fastgør en hel side, er felterne også *dynamiske*, og du kan interagere med dem direkte på dashboardet. Og de ændringer, du foretager af visualiseringerne i rapporteditoren, f.eks. ved at tilføje et filter eller ændre de felter, der bruges i diagrammet, afspejles også i dashboardfeltet.  
 
 Det er kun muligt at fastgøre dynamiske felter fra rapporter på dashboards i Power BI-tjenesten (app.powerbi.com).
 
@@ -53,7 +53,7 @@ Se Amanda fastgøre en dynamisk rapportside til et dashboard, og følg derefter 
     ![dashboards med et dynamisk felt](media/service-dashboard-pin-live-tile-from-report/pbi-live-tile.png)
 
 ## <a name="next-steps"></a>Næste trin
-[Dashboards i Power BI](service-dashboards.md)
+[Dashboards i Power BI](consumer/end-user-dashboards.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

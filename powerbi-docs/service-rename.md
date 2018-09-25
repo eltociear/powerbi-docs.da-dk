@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: d19e0a77f603ce6b80ce70ba5df4506699bd0969
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a3a78c27ab8d6e7c321af3f5ba4144e8b320e4a9
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34252134"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545722"
 ---
 # <a name="rename-almost-anything-in-power-bi-service"></a>Omdøb næsten alt i Power BI-tjenesten
 I denne artikel kan du lære at omdøbe et dashboard, en rapport, en rapportside, en projektmappe, et datasæt, en app og et arbejdsområde i Power BI-tjenesten.
@@ -71,7 +71,7 @@ Alle med administratortilladelser kan omdøbe et apparbejdsområde.
 ## <a name="rename-a-page-in-a-report"></a>Omdøb en side i en rapport
 Kan du ikke lide navnet på en side i din Power BI-rapport?  Et nyt navn er kun et klik væk. Sider kan omdøbes i [rapportens redigeringsvisning](service-interact-with-a-report-in-editing-view.md).
 
-1. Åbn rapporten i [Redigeringsvisning](service-reading-view-and-editing-view.md).
+1. Åbn rapporten i [Redigeringsvisning](consumer/end-user-reading-view.md).
 2. Find rapportens sidefaner nederst i Power BI-vinduet.
    
     ![rapport med fremhævede faner](media/service-rename/report-page-tabs-new.png)

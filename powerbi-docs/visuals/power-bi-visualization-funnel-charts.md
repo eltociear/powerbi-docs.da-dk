@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/29/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f070b6649d8d120a889961fffd6b9b923422293e
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 2c42f484dc0f2515024a7fefe2edb1c81e286eb3
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736428"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548459"
 ---
 # <a name="funnel-charts"></a>Tragtformede diagrammer
 Et tragtformet diagram hjælper dig med at visualisere en lineær proces, der har fortløbende forbundne faser. Et eksempel: Et tragtformet salgsdiagram, hvor der holdes øje med kunder gennem forskellige faser: Potentielt kundeemne \> Kvalificeret kundeemne \> Kundeemne \> Kontrakt \> Lukket.  I korte træk afspejler tragtens form tilstanden af den proces, du holder øje med.
@@ -70,7 +70,7 @@ I denne vejledning bruges Opportunity Analysis Sample. Du skal [downloade eksemp
    * Fase-til-fase (dvs. nedgangsfrekvens), som % af den forrige fase (i dette tilfælde Proposal Stage/Solution Stage)
      
      ![](media/power-bi-visualization-funnel-charts/funnelhover_new.png)
-5. [Tilføj tragten som et dashboardfelt](../service-dashboard-tiles.md). 
+5. [Tilføj tragten som et dashboardfelt](../consumer/end-user-tiles.md). 
 6. [Gem rapporten](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Fremhævning og krydsfiltrering
@@ -81,10 +81,10 @@ Fremhævning af en søjle i et tragtformet diagram krydsfiltrerer andre visualis
 1. Vælg søjlen **Proposal** i det tragtformede diagram. Dette krydsfremhæver de andre visualiseringer på siden. Du kan bruge Ctrl til at vælge flere objekter.
    
    ![](media/power-bi-visualization-funnel-charts/funnelchartnoowl.gif)
-2. Under [Interaktion med visualiseringer i Power BI](../service-reports-visual-interactions.md) kan du se, hvordan du angiver indstillinger for krydsfremhævning og krydsfiltrering af visualiseringer.
+2. Under [Interaktion med visualiseringer i Power BI](../consumer/end-user-interactions.md) kan du se, hvordan du angiver indstillinger for krydsfremhævning og krydsfiltrering af visualiseringer.
 
 ## <a name="create-a-funnel-chart-in-qa"></a>Opret et tragtformet diagram i Spørgsmål og svar
-Åbn dashboardet Opportunity Analysis Sample (Eksempel med analyse af salgsmuligheder), der har mindst én visualisering fastgjort fra datasættet Opportunity Analysis Sample.  Når du skriver et spørgsmål i Spørgsmål og svar, søges der i Power BI efter svar i alle de datasæt, der er knyttet til det valgte dashboard (dvs. hvor felter er fastgjort til dashboardet). Du kan finde flere oplysninger under [Power BI – Grundlæggende begreber](../service-basic-concepts.md).
+Åbn dashboardet Opportunity Analysis Sample (Eksempel med analyse af salgsmuligheder), der har mindst én visualisering fastgjort fra datasættet Opportunity Analysis Sample.  Når du skriver et spørgsmål i Spørgsmål og svar, søges der i Power BI efter svar i alle de datasæt, der er knyttet til det valgte dashboard (dvs. hvor felter er fastgjort til dashboardet). Du kan finde flere oplysninger under [Power BI – Grundlæggende begreber](../consumer/end-user-basic-concepts.md).
 
 1. I dashboardet Opportunity Analysis Sample skal du begynde at skrive dit spørgsmål i feltet til spørgsmål og svar.
    
@@ -97,7 +97,7 @@ Fremhævning af en søjle i et tragtformet diagram krydsfiltrerer andre visualis
 
 [Fastgør en visualisering til et dashboard](../service-dashboard-pin-tile-from-report.md)
 
-[Power BI – Grundlæggende begreber](../service-basic-concepts.md)
+[Power BI – Grundlæggende begreber](../consumer/end-user-basic-concepts.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

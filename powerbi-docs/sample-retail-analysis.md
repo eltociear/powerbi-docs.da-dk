@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 44244bf746c1a11229d2041b4c2b43871fa7a199
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 6955bc0c41e5a6a145d2101ab527d753f98d5c61
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944531"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46550069"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på analyse af detailhandel til Power BI: Få en introduktion
 
@@ -165,5 +165,5 @@ Vi håber, at denne rundtur har vist, hvordan Power BI-dashboards, spørgsmål o
 * [Download en zipfil med alle eksempelfilerne](http://go.microsoft.com/fwlink/?LinkId=535020)    
 * [Download Excel-projektmappen til dette Power BI-eksempel](http://go.microsoft.com/fwlink/?LinkId=529778)    
 * [Hent data (til Power BI)](service-get-data.md)    
-* [Power BI – Grundlæggende begreber](service-basic-concepts.md)    
+* [Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)    
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1dadb70f2d75596bb7180a5e7360cae19e1515b8
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 3d4065a6ab0c5a3c8f18350ef6c3a0444febda08
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38937256"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547056"
 ---
 # <a name="connect-to-microsoft-dynamics-crm-with-power-bi"></a>Opret forbindelse til Microsoft Dynamics CRM med Power BI
 Med Microsoft Dynamics CRM Online til Power BI kan du nemt få adgang til og analysere dine data. Power BI bruger OData-feedet til at oprette en beskrivende model med alle de enheder og -mål, der skal bruges, som f.eks konti, aktiviteter, salgsmuligheder, produkt, kundeemner, brugere og meget mere. Når du har installeret appen, kan du få vist dashboardet og rapporterne i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) og i Power BI-mobilapperne. 
@@ -154,7 +154,7 @@ Hvis du ikke har CRM Online 2016 eller nyere, kan du bruge Power BI Desktop til 
 Hvis du får vist fejlmeddelelsen "Data refresh failed as query exceeded the maximum limit of 100000 records" (Opdatering af data mislykkedes, da forespørgslen overskred den maksimale grænse på 100000 poster), kan du overveje at oprette forbindelse direkte fra Power BI Desktop eller at bruge CRM-løsningsskabelonen.
 
 ## <a name="next-steps"></a>Næste trin
-* [Hvad er apps i Power BI?](service-install-use-apps.md)
+* [Hvad er apps i Power BI?](consumer/end-user-apps.md)
 * [Hent data i Power BI](service-get-data.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

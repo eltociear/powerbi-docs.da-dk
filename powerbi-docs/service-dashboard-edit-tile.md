@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e2df8ecd746e34b85a3fdd15943ff6eda5712663
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 0de070cc8661d4973d406ddf0749ef4852fc916c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598972"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546090"
 ---
 # <a name="edit-or-remove-a-dashboard-tile"></a>Rediger eller fjern et dashboard-felt
 
@@ -36,7 +36,7 @@ Denne artikel omhandler følgende.
 * [Slet et felt](#delete)
   
   > [!TIP]
-  > Hvis du vil ændre visualiseringen, der vises på selve feltet, skal du slette feltet og tilføje et nyt [dashboard-felt](service-dashboard-tiles.md).
+  > Hvis du vil ændre visualiseringen, der vises på selve feltet, skal du slette feltet og tilføje et nyt [dashboard-felt](consumer/end-user-tiles.md).
 
   
 ## <a name="prerequisites"></a>Forudsætninger
@@ -142,11 +142,11 @@ Når du vælger et felt, føres du normalt hen til rapporten, hvor feltet blev o
 
 - - -
 ## <a name="next-steps"></a>Næste trin
-[Dashboardfelter i Power BI](service-dashboard-tiles.md)
+[Dashboardfelter i Power BI](consumer/end-user-tiles.md)
 
-[Dashboards i Power BI](service-dashboards.md)
+[Dashboards i Power BI](consumer/end-user-dashboards.md)
 
-[Power BI – Grundlæggende begreber](service-basic-concepts.md)
+[Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

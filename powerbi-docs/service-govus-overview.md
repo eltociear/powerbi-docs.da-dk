@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: f110464d435130a40666e61dd6a9c89ad6b10ccf
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 8ac91cb0ab6061f0fcbcb120c5915a91166f90ad
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39280426"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546182"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til kunder i den amerikanske stat
 **Power BI-tjenesten** har en tilgængelig version for kunder i den amerikanske stat som en del af abonnementer for **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til kunder i den amerikanske stat og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten**.
@@ -37,7 +37,7 @@ Følgende funktioner er tilgængelige for **Power BI US Government**-kunder, som
 * [Importér data](service-get-data.md) og rapporter fra Excel-, CSV- og Power BI Desktop-filer
 * Datastyringsgateway
 * Alle data er krypteret i både Azure SQL- og Blob-lager til Power BI
-* Opret forbindelse til tjenester med [indholdspakker](service-connect-to-services.md)
+* Opret forbindelse til tjenester med [indholdspakker](consumer/end-user-connect-to-services.md)
 
 ## <a name="connectivity-between-government-and-public-azure-cloud-services"></a>Forbindelse mellem Government- og Public Azure Cloud-tjenester 
 

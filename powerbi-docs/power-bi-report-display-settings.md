@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/24/2017
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: af90ba6bcf85c07d2d046ed21f733ca7c16e3856
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: a22bee33254e447f27f717b78a53fe3a5cc34fb2
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34242125"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545446"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Indstillinger for sidevisning i en Power BI-rapport
 Vi forstår, at det er af afgørende betydning at holde dit rapportlayout helt perfekt. Sommetider kan det være udfordrende, fordi du og dine kollegaer får vist disse rapporter på skærme med forskellige højde-bredde-forhold og størrelser. 
@@ -39,7 +39,7 @@ I Power BI-tjenesten skal du åbne en rapport og vælge **Vis** fra den øverste
 
 ![](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
-Indstillinger for Sidevisning er tilgængelige i både [Læsevisning og Redigeringsvisning](service-reading-view-and-editing-view.md). I Redigeringsvisning kan ejeren af en rapport tildele indstillinger for sidevisning til individuelle rapportsider, så disse indstillinger gemmes sammen med rapporten. Når en kollega åbner den pågældende rapport i Læsevisning, får vedkommende vist rapportsiderne ved hjælp af ejerens indstillinger.  I Læsevisning kan kolleger ændre *nogle* af indstillingerne for sidevisning, men ændringerne gemmes ikke, når rapporten afsluttes.
+Indstillinger for Sidevisning er tilgængelige i både [Læsevisning og Redigeringsvisning](consumer/end-user-reading-view.md). I Redigeringsvisning kan ejeren af en rapport tildele indstillinger for sidevisning til individuelle rapportsider, så disse indstillinger gemmes sammen med rapporten. Når en kollega åbner den pågældende rapport i Læsevisning, får vedkommende vist rapportsiderne ved hjælp af ejerens indstillinger.  I Læsevisning kan kolleger ændre *nogle* af indstillingerne for sidevisning, men ændringerne gemmes ikke, når rapporten afsluttes.
 
 ##    <a name="page-view-settings"></a>Indstillinger for Sidelayout
 Det første sæt indstillinger for *Sidelayout* styrer visningen af din rapportside i forhold til browservinduet.  Vælg mellem:
@@ -62,7 +62,7 @@ Det andet sæt indstillinger for *Sidelayout* styrer placeringen af objekterne p
 ## <a name="page-size-settings"></a>Indstillinger for Sidestørrelse
 ![](media/power-bi-report-display-settings/power-bi--page-size.png)
 
-Indstillinger for *Sidestørrelse* er kun tilgængelige for rapportejere. I Power BI-tjenesten (app.powerbi.com) betyder det, at rapporten skal åbnes i [Redigeringsvisning](service-reading-view-and-editing-view.md). Disse indstillinger styrer visningens højde-bredde-forhold og den faktiske størrelse (i pixel) på rapportcanvasset.   
+Indstillinger for *Sidestørrelse* er kun tilgængelige for rapportejere. I Power BI-tjenesten (app.powerbi.com) betyder det, at rapporten skal åbnes i [Redigeringsvisning](consumer/end-user-reading-view.md). Disse indstillinger styrer visningens højde-bredde-forhold og den faktiske størrelse (i pixel) på rapportcanvasset.   
 
 * 4:3-format
 * 16:9-format (standard)
@@ -71,11 +71,11 @@ Indstillinger for *Sidestørrelse* er kun tilgængelige for rapportejere. I Powe
 * Brugerdefineret (højde og bredde i pixels)
 
 ## <a name="next-steps"></a>Næste trin
-[Se, hvordan du kan bruge indstillinger for Sidevisning og Sidestørrelse i dine egne Power BI-rapporter](power-bi-change-report-display-settings.md).
+[Se, hvordan du kan bruge indstillinger for Sidevisning og Sidestørrelse i dine egne Power BI-rapporter](consumer/end-user-report-view.md).
 
-Læs mere om [rapporter i Power BI](service-reports.md)
+Læs mere om [rapporter i Power BI](consumer/end-user-reports.md)
 
-[Power BI – Grundlæggende begreber](service-basic-concepts.md)
+[Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

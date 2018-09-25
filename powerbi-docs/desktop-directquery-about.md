@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 81a8b5454e39088b8b406e600707d1d5073e14dc
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 1104c7f90f46252a74c4aa8e5ec573a159ef1c40
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39330161"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46550115"
 ---
 # <a name="using-directquery-in-power-bi"></a>Brug af DirectQuery i Power BI
 Du kan oprette forbindelse til alle mulige forskellige datakilder, når du bruger **Power BI Desktop** eller **Power BI-tjenesten**, og du kan oprette disse dataforbindelser på forskellige måder. Du kan enten *importere* data i Power BI, hvilket er den mest almindelige måde at hente data på, eller du kan oprette forbindelse direkte til dataene i det oprindelige kildelager, der også er kendt som **DirectQuery**. I denne artikel beskrives **DirectQuery** og dens egenskaber, herunder følgende emner:
@@ -277,7 +277,7 @@ Når du opretter en rapport vha. en DirectQuery-forbindelse, skal den være i ov
   
   ![](media/desktop-directquery-about/directquery-about_04.png)
   
-  I DirectQuery kræver en sådan krydsfiltrering og -fremhævning, at der sendes forespørgsler til den underliggende kilde. Derfor bør interaktionen være slået fra, hvis det vil tage urimeligt lang tid at svare på brugernes valg. Denne interaktion kan dog slås fra enten for hele rapporten (som beskrevet ovenfor ifm. *indstillinger for Reduktion af forespørgsel*) eller på ad hoc-basis (som beskrevet [i denne artikel](service-reports-visual-interactions.md)).
+  I DirectQuery kræver en sådan krydsfiltrering og -fremhævning, at der sendes forespørgsler til den underliggende kilde. Derfor bør interaktionen være slået fra, hvis det vil tage urimeligt lang tid at svare på brugernes valg. Denne interaktion kan dog slås fra enten for hele rapporten (som beskrevet ovenfor ifm. *indstillinger for Reduktion af forespørgsel*) eller på ad hoc-basis (som beskrevet [i denne artikel](consumer/end-user-interactions.md)).
 
 Ud over ovenstående liste over forslag skal du bemærke, at hver af følgende rapporteringsegenskaber kan medføre problemer med ydeevnen:
 

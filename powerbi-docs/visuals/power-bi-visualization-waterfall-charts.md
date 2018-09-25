@@ -2,7 +2,7 @@
 title: Vandfaldsdiagrammer i Power BI
 description: Vandfaldsdiagrammer i Power BI
 author: mihart
-manager: kfile
+manager: kvivek
 ms.reviewer: ''
 featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: feb608455add8740d7894fa2cec3c54a8a26944e
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: d1c771ed49a000374c58beb694dda511a8c9a097
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44730463"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46565814"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vandfaldsdiagrammer i Power BI
 Et vandfaldsdiagram viser en løbende total som værdier, der tilføjes eller trækkes fra. Det er nyttigt for at forstå, hvordan en indledende værdi (f.eks, årets resultat) påvirkes af en række positive og negative ændringer.
@@ -74,13 +74,13 @@ Du kan få mere at vide om brug af ruden Filtre under [Føj et filter til en rap
 Fremhævning af en kolonne i et vandfaldsdiagram krydsfiltrerer andre visualiseringer på rapportsiden ... og omvendt. Kolonnen Total udløser dog ikke fremhævning eller reagerer på krydsfiltrering.
 
 ## <a name="next-steps"></a>Næste trin
-[Rapporter i Power BI](../service-reports.md)
+[Rapporter i Power BI](../consumer/end-user-reports.md)
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
 
-[Power BI – grundlæggende begreber](../service-basic-concepts.md)
+[Power BI – grundlæggende begreber](../consumer/end-user-basic-concepts.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

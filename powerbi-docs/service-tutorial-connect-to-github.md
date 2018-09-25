@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 05/17/2018
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1c2579f4250914933fd0459668fb55e4ba339f90
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: b9fff17d51756da4561823886ed80beeec830843
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34310101"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548093"
 ---
 # <a name="tutorial-connect-to-a-github-sample-with-power-bi"></a>Selvstudium: Opret forbindelse til et GitHub-eksempel med Power BI
 I dette selvstudium opretter du forbindelse til virkelige data i GitHub-tjenesten med Power BI, og Power BI opretter automatisk dashboards og rapporter. Du opretter forbindelse til det offentlige Power BI-lagerindhold (også kaldet *lager*) og får vist oplysninger: Hvor mange bidrager til det offentlige Power BI-indhold? Hvem der bidrager mest? På hvilken ugedag er der flest bidrag? Og svar på andre spørgsmål. 
@@ -125,6 +125,6 @@ Nu, hvor du har gennemført selvstudiet, kan du slette GitHub-appen.
 I dette selvstudie har du oprettet forbindelse til et offentligt GitHub-lager og hentet data, som Power BI har formateret på et dashboard og i en rapport. Du har besvaret nogle spørgsmål om dataene ved at udforske dashboardet og rapporten. Nu kan du få mere at vide om at oprette forbindelse til andre tjenester, f.eks. Salesforce, Microsoft Dynamics og Google Analytics. 
  
 > [!div class="nextstepaction"]
-> [Opret forbindelse til de onlinetjenester, du bruger](./service-connect-to-services.md)
+> [Opret forbindelse til de onlinetjenester, du bruger](consumer/end-user-connect-to-services.md)
 
 

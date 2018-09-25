@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/10/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: b38c69d74141b28215e0a14a32fc7b03fab4fdbf
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: e60cc5341bba50d9fac82f032656f449cadaa255
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558464"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546532"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Administrer kapaciteter i Power BI Premium og Power BI Embedded
 Lær, hvordan du kan administrere Power BI Premium- og Power BI Embedded-kapaciteter, som leverer dedikerede ressourcer til dit indhold.
@@ -183,6 +183,6 @@ Når du vælger **Power BI Report Server-nøgle** vises en dialogboks med din pr
 Du kan finde flere oplysninger under [Installér Power BI-rapportserveren](report-server/install-report-server.md).
 
 ## <a name="next-steps"></a>Næste trin
-Del publicerede apps med brugere. Du kan finde flere oplysninger under [Opret og distribuer en app i Power BI](service-create-distribute-apps.md).
+Del publicerede apps med brugere. Du kan finde flere oplysninger under [Opret og distribuer en app i Power BI](consumer/end-user-create-apps.md).
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

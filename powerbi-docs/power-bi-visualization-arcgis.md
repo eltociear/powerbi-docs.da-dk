@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 250ccba882a045417b2ae424cac81b6561cb2a41
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 18e33fa4767eb0d9e457589ea3fa3b61721dce51
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728243"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548022"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>ArcGIS-kort i Power BI-tjenesten og Power BI Desktop fra Esri
 Dette selvstudium er skrevet fra den person, der opretter et ArcGIS korts synspunkt. Når en opretter deler et ArcGIS-kort med en kollega, kan den pågældende kollega få vist og interagere med kortet, men ikke gemme ændringer. Du kan få mere at vide om visning af et ArcGIS-kort under [Interaktion med ArcGIS-kort](visuals/power-bi-visualizations-arcgis.md).
@@ -61,7 +61,7 @@ I dette selvstudium benyttes [eksemplet Retail Analysis](sample-retail-analysis.
 2. Markér afkrydsningsfeltet **ArcGIS Maps for Power BI** (ArcGIS-kort til Power BI). Du skal genstarte Power BI, når du har markeret indstillingen.
    
     ![](media/power-bi-visualization-arcgis/power-bi-use-arcgis-new.png)
-3. Åbn en rapport i [redigeringstilstand](service-reading-view-and-editing-view.md), og vælg ikonet for ArcGIS Maps for Power BI i ruden Visualiseringer.
+3. Åbn en rapport i [redigeringstilstand](consumer/end-user-reading-view.md), og vælg ikonet for ArcGIS Maps for Power BI i ruden Visualiseringer.
    
     ![](media/power-bi-visualization-arcgis/power-bi-viz-pane2.png)
 4. Power BI føjer en tom ArcGIS-kortskabelon til rapportcanvasset.

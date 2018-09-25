@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a0216b5659548af0b69cdb1b94df887eec0bd4e0
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 83826e812f9173db522c929ae80c31fc7134e5bd
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736449"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549839"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Udfyldte kort (Choropleths) i Power BI
 Et udfyldt kort bruger skygger eller toner eller mønstre til at vise, hvordan en værdi varierer i forhold på tværs af et geografisk område eller en region.  Fremvis hurtigt disse relative forskelle med skygger, der går fra lys (mindre-hyppige/lavere) til mørk (mere-hyppige/mere).    
@@ -109,7 +109,7 @@ Hvis du ikke har adgang til data om breddegrad og længdegrad, [kan du følge di
 Du kan få hjælp til kortvisualiseringer under [Tip og råd til kortvisualiseringer](power-bi-map-tips-and-tricks.md).
 
 ## <a name="next-steps"></a>Næste trin
-[Tilføj det udfyldte kort som et dashboardfelt (fastgør visual)](../service-dashboard-tiles.md)    
+[Tilføj det udfyldte kort som et dashboardfelt (fastgør visual)](../consumer/end-user-tiles.md)    
  [Føj en visualisering til en rapport](power-bi-report-add-visualizations-i.md)  
  [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)    
  [Skift den visualiseringstype, der anvendes](power-bi-report-change-visualization-type.md)      

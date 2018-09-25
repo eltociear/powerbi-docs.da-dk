@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 891d496fcdf809a816c9c18a6d21e4c486f76d76
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 0397921d239ec1d07312e69061890f8898e9687b
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726794"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549954"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Tips og tricks til oprettelse af rapporter i Power BI Desktop og Power BI-tjenesten
 For at få mest muligt ud af dine data skal du nogle gange have lidt ekstra hjælp. Vi har samlet nogle tip og tricks, som du kan bruge, når du opretter rapporter i Microsoft Power BI Desktop, Power BI-tjenesten *og* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-udgaver, hvor tilføjelsesprogrammet Power Pivot er aktiveret, og Power-forespørgsel er installeret og aktiveret.
@@ -206,7 +206,7 @@ Undgå at variere visualiseringerne bare for variationens skyld.  Visualiseringe
 * Undgå at blande præcisions- og tidsniveauer. Sørg for, at tidsrammerne forstås korrekt.  Undgå at have et diagram, der har sidste måned ud for filtrerede diagrammer fra en bestemt måned i året.    
 * Undgå også at blande store og små målinger på samme skala, f.eks. på en linje eller et liggende søjlediagram.  F.eks. kan én måling være i millioner og en anden måling i tusinder.  Med sådan en stor skalainddeling vil det være vanskeligt at se forskellene i den måling, som er i tusinder.  Hvis du er nødt til at blande, skal du vælge en visualisering som et kombinationsdiagram, der tillader brug af en akse mere.    
 * Undgå at gøre dine diagrammer rodede med datanavne, der ikke er nødvendige. Værdierne i liggende søjlediagrammer forstås normalt uden at vise det faktiske tal, ***hvis de er tilstrækkeligt store***.   
-* Vær opmærksom på, hvordan [diagrammer sorteres](power-bi-report-change-sort.md).  Hvis du vil fremhæve det højeste eller laveste tal, skal du sortere efter målingen.  Hvis du ønsker, at modtagerne hurtigt skal kunne finde en bestemt kategori blandt mange andre kategorier, skal du sortere efter aksen.  
+* Vær opmærksom på, hvordan [diagrammer sorteres](consumer/end-user-change-sort.md).  Hvis du vil fremhæve det højeste eller laveste tal, skal du sortere efter målingen.  Hvis du ønsker, at modtagerne hurtigt skal kunne finde en bestemt kategori blandt mange andre kategorier, skal du sortere efter aksen.  
 * Cirkeldiagrammer er bedst, hvis de har mindre end otte kategorier. Eftersom du ikke kan sammenligne værdier ved siden af hinanden, er det vanskeligere at sammenligne værdier i et cirkeldiagram end i liggende søjlediagrammer og stående søjlediagrammer. Cirkeldiagrammer kan være gode til visning af dele i forhold til helheder i stedet for at sammenligne delene. Og målerdiagrammer er gode til visning af den aktuelle status i forbindelse med et mål.    
 
 Se [Visualiseringstyper i Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md) for at få en mere visualiseringsspecifik vejledning.  
@@ -222,8 +222,8 @@ Nogle få af vores foretrukne bøger er bl.a.:
 * *Advanced Presentations Design* af Andrew Abela   
 
 ## <a name="next-steps"></a>Næste trin
-[Power BI – grundlæggende begreber](service-basic-concepts.md)
+[Power BI – grundlæggende begreber](consumer/end-user-basic-concepts.md)
 
-[Rapporter i Power BI](service-reports.md)
+[Rapporter i Power BI](consumer/end-user-reports.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

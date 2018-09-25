@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/20/2017
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b1699d32bf96efa6a40baaac202b5f9db9ee3f8b
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 2b1e5c28bd705e064dc4e0e3283eb3941452647b
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44730495"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547015"
 ---
 # <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Skift visualiseringstype i en Power BI-rapport
 Prøv forskellige visualiseringstyper i Power BI-tjenesten og Power BI Desktop for at se, hvilken type der illustrerer dine data bedst. 
@@ -32,7 +32,7 @@ Hvis du ændrer visualiseringstypen i rapporten, efter at du har fastgjort den t
 ### <a name="next-steps"></a>Næste trin
 Mere om [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
 
-[Power BI – Grundlæggende begreber](../service-basic-concepts.md)
+[Power BI – Grundlæggende begreber](../consumer/end-user-basic-concepts.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

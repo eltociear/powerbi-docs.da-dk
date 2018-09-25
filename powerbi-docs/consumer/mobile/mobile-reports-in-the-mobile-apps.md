@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/17/2018
 ms.author: maggies
-ms.openlocfilehash: 5fe4212be55a42a6892a94e2a07da8af5c035b6d
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 7a5c60eea81eeb3a1f4e8a7f5b807fd8c7bfb6b5
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44735618"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547240"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -82,7 +82,7 @@ Når du vælger en værdi i en visualisering, filtreres de øvrige visualisering
 * Hvis du vil vende sorteringsrækkefølgen, skal du trykke på de tre prikker (**...**) igen og derefter trykke på det samme feltnavn igen.
 
 ## <a name="drill-down-and-up-in-a-visual"></a>Analysér ned og op i en visualisering
-Hvis forfatteren til en rapport har gjort det muligt at analysere ned i en visualisering, kan du gør det for at se de værdier, som er brugt til en del af den. Du kan [tilføje detailudledning i en visualisering](../../power-bi-visualization-drill-down.md) i Power BI Desktop eller Power BI-tjenesten. 
+Hvis forfatteren til en rapport har gjort det muligt at analysere ned i en visualisering, kan du gør det for at se de værdier, som er brugt til en del af den. Du kan [tilføje detailudledning i en visualisering](../end-user-drill.md) i Power BI Desktop eller Power BI-tjenesten. 
 
 * Tryk på og hold ned på et datapunkt i en visualisering for at få vist værktøjstippet. Hvis du kan analysere ned, findes der pile nederst i værktøjstippet, som du kan trykke på. 
   

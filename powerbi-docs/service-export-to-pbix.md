@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 938f7b5f905d156518f71a30b355575cf1c04683
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 2f7133bb376cc04e181eed2d90a45e3361190d0b
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34722537"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547014"
 ---
 # <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Eksportér en rapport fra Power BI-tjenesten til Desktop (eksempelvisning)
 I Power BI Desktop kan du eksportere (også kaldet *downloade*) en rapport til Power BI-tjenesten ved at gemme rapporten og vælge **Publicer**. Du kan også eksportere i den anden retning og downloade en rapport fra Power BI-tjenesten til Desktop. Filtypenavnet for filer, der eksporteres, i begge retninger, er *.pbix*.
@@ -27,7 +27,7 @@ Der er et par begrænsninger og overvejelser, du skal være opmærksom på, som 
 ## <a name="download-the-report-as-a-pbix"></a>Download rapporten som en .pbix
 Følg disse trin for at downloade .pbix-filen:
 
-1. Åbn den rapport, som du vil downloade, i [Redigeringsvisning](service-reading-view-and-editing-view.md) i **Power BI-tjenesten**.
+1. Åbn den rapport, som du vil downloade, i [Redigeringsvisning](consumer/end-user-reading-view.md) i **Power BI-tjenesten**.
 2. Vælg **Filer > Download rapport** på menulinjen.
    
    > [!NOTE]
@@ -67,8 +67,8 @@ Se videoen **Guy in a Cube** om denne funktion, den varer ét minut:
 
 Desuden er her nogle flere artikler, der kan hjælpe dig med at lære at bruge **Power BI-tjenesten**:
 
-* [Rapporter i Power BI](service-reports.md)
-* [Power BI – Grundlæggende begreber](service-basic-concepts.md)
+* [Rapporter i Power BI](consumer/end-user-reports.md)
+* [Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)
 
 Når du får **Power BI Desktop** installeret, kan følgende indhold hjælpe dig med at komme i gang hurtigt:
 

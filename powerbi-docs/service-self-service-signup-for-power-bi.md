@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: 1f6c899932390bc4f9818fdcbb499848ca88a8d5
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: d499f3f3635442f8d9ed0fbf167e53d13ec0ae53
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558510"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549977"
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Tilmelding til Power BI som enkeltperson
 Få mere at vide om, hvordan du tilmelder dig Power BI og begynder at bruge det til personlige rapporter og visualiseringsopgaver, der passer til dine behov.
@@ -99,7 +99,7 @@ Du vil derefter se en meddelelse, der beder dig om at vælge **Start**.
 ## <a name="in-service-power-bi-pro-60-day-trial"></a>Power BI Pro i fuld drift i en 60-dages prøveperiode
 Når du har tilmeldt dig din gratis konto, kan du også vælge at prøve Pro gratis i 60 dage. Du får adgang til alle Pro-funktionerne i hele prøveperioden. Power BI Pro har alle funktionerne fra den gratis version af Power BI samt yderligere funktioner til deling og samarbejde. Se [Priser på Power BI](https://powerbi.microsoft.com/pricing), hvis du vil have flere oplysninger. Log på Power BI for at få en 60-dages gratis prøveperiode på Power BI Pro, og prøv én af disse Power BI Pro-funktioner:
 
-* [Opret et app-arbejdsområde](service-create-distribute-apps.md)
+* [Opret et app-arbejdsområde](consumer/end-user-create-apps.md)
 * [Del et dashboard](service-share-dashboards.md)
 
 Når du prøver en af disse funktioner, bliver du bedt om at starte din gratis prøveperiode. Du kan også vælge den ved at gå til tandhjulsikonet og vælge **Administrer personligt lager**. Vælg derefter **Prøv Pro gratis** til højre.

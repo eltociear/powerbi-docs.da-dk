@@ -1,21 +1,21 @@
 ---
 title: Brug bånddiagrammer i Power BI
 description: Opret og brug bånddiagrammer i Power BI-tjenesten og Power BI Desktop
-author: davidiseminger
+author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 07/27/2018
-ms.author: davidi
+ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0d7dbf878c32ee29ea490e10f27f1bda49f20b08
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: e7bd79b8d93bba4395922fb39faaf423109f7b02
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44730524"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46566113"
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Brug bånddiagrammer i Power BI
 Du kan bruge bånddiagrammer i **Power BI** til at visualisere data og hurtigt finde ud af, hvilken kategori af data der har den højeste placering (største værdi). Bånddiagrammer er effektive til at vise ændringer af placeringer, hvor den højeste placering (værdi) altid vises øverst for hver tidsperiode. Bånddiagrammer er tilgængelige i **Power BI Desktop** fra og med udgivelsen i september 2017 og i efterfølgende opdateringer til **Power BI-tjenesten**.

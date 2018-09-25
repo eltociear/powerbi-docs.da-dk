@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 51c3fdbef345a0d6020abe35ba7c71aaa67882e4
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: c64a5e487725bdfedf03b496322a52e7664f5455
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726840"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545065"
 ---
 # <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Selvstudium: Kom i gang med Power BI-tjenesten (app.powerbi.com)
 Dette selvstudium hjælper dig med at komme i gang med ***Power BI-tjenesten***. Hvis du vil have et overblik over, hvordan Power BI-tjenesten passer sammen med de andre Power BI-tilbud, anbefaler vi kraftigt, at du starter med at læse [Hvad er Power BI](power-bi-overview.md).
@@ -53,9 +53,9 @@ Besøg vores [afspilningsliste på YouTube](https://www.youtube.com/playlist?lis
 > 
 
 ## <a name="what-is-power-bi-service"></a>Hvad er Power BI-tjeneste?
-Microsoft Power BI-tjenesten kaldes nogle gange også Power BI online eller app.powerbi.com. Med Power BI kan du holde dig ajour med de oplysninger, der er vigtige for dig.  Med Power BI-tjenesten hjælper ***dashboards*** dig med at holde styr på din virksomhed.  Dine dashboards viser ***felter***, som du kan klikke på for at åbne ***rapporter***, der skal udforskes yderligere.  Opret forbindelse til flere ***datasæt*** for at samle alle relevante data på ét sted. Har brug for hjælp til at forstå de komponenter, der udgør Power BI?  Se [Power BI – Grundlæggende begreber](service-basic-concepts.md).
+Microsoft Power BI-tjenesten kaldes nogle gange også Power BI online eller app.powerbi.com. Med Power BI kan du holde dig ajour med de oplysninger, der er vigtige for dig.  Med Power BI-tjenesten hjælper ***dashboards*** dig med at holde styr på din virksomhed.  Dine dashboards viser ***felter***, som du kan klikke på for at åbne ***rapporter***, der skal udforskes yderligere.  Opret forbindelse til flere ***datasæt*** for at samle alle relevante data på ét sted. Har brug for hjælp til at forstå de komponenter, der udgør Power BI?  Se [Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md).
 
-Hvis du har vigtige data i Excel- eller CSV-filer, kan du oprette et Power BI-dashboard for at holde dig opdateret, uanset hvor du er, og dele indsigt med andre.  Har du et abonnement på en SaaS-app som for eksempel Salesforce?  Kom godt i gang ved at oprette forbindelse til Salesforce og automatisk oprette et dashboard ud fra disse data, eller [tjek alle de andre SaaS-apps](service-get-data.md), du kan oprette forbindelse til. Hvis du er en del af en organisation, kan du se, om der er publiceret [apps](service-create-distribute-apps.md) til dig.
+Hvis du har vigtige data i Excel- eller CSV-filer, kan du oprette et Power BI-dashboard for at holde dig opdateret, uanset hvor du er, og dele indsigt med andre.  Har du et abonnement på en SaaS-app som for eksempel Salesforce?  Kom godt i gang ved at oprette forbindelse til Salesforce og automatisk oprette et dashboard ud fra disse data, eller [tjek alle de andre SaaS-apps](service-get-data.md), du kan oprette forbindelse til. Hvis du er en del af en organisation, kan du se, om der er publiceret [apps](consumer/end-user-create-apps.md) til dig.
 
 Læs om alle de andre måder at [hente data til Power BI](service-get-data.md) på.
 
@@ -87,7 +87,7 @@ Her er et eksempel på at hente data fra en CSV-fil. Har du lyst til at deltage 
 
     ![Indstillingen Læsevisning](media/service-get-started/power-bi-editing-view.png)
 
-    Når du er Redigeringsvisning, kan du oprette og redigere dine egne rapporter, fordi du er *ejer* af rapporten altså en *opretter*. Når du deler din rapport med kollegaer, kan de kun interagere med rapporten i Læsevisning, da de er *forbrugere*. Få mere at vide om [Læsevisning og Redigeringsvisning](service-reading-view-and-editing-view.md).
+    Når du er Redigeringsvisning, kan du oprette og redigere dine egne rapporter, fordi du er *ejer* af rapporten altså en *opretter*. Når du deler din rapport med kollegaer, kan de kun interagere med rapporten i Læsevisning, da de er *forbrugere*. Få mere at vide om [Læsevisning og Redigeringsvisning](consumer/end-user-reading-view.md).
     
     En glimrende måde at blive fortrolig med rapporteditoren på er at [få en introduktion](service-the-report-editor-take-a-tour.md)
    > 
@@ -158,5 +158,5 @@ Nu, hvor du har gennemført selvstudiet, kan du slette datasættet, rapporten og
 Er du klar til at prøve mere?  Her er nogle fantastiske måder at udforske Power BI på.
 
 > [!div class="nextstepaction"]
-> [Opret forbindelse til de onlinetjenester, du bruger](./service-connect-to-services.md)
+> [Opret forbindelse til de onlinetjenester, du bruger](consumer/end-user-connect-to-services.md)
 

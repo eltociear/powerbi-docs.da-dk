@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: 04a385d67a8cc462b21c16cf7daaa5aa675436d9
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 72c51a6eae4acec5bfc0af7b471f98dfcb22da67
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44730536"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549793"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Udforsk felter i Power BI-mobilappsene
 Kan anvendes med:
@@ -23,7 +23,7 @@ Kan anvendes med:
 |:--- |:--- |:--- |:--- |:--- |
 | iPhone-telefoner |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-enheder |
 
-Felter er dynamiske øjebliksbilleder af dine data, der er fastgjort til et dashboard. Deres værdier ændres, når dataene ændres. **Du [føjer felter til et dashboard i Power BI-tjenesten](../../service-dashboard-tiles.md).** 
+Felter er dynamiske øjebliksbilleder af dine data, der er fastgjort til et dashboard. Deres værdier ændres, når dataene ændres. **Du [føjer felter til et dashboard i Power BI-tjenesten](../end-user-tiles.md).** 
 
 Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer med dem. Du kan åbne felter med alle slags visuelle elementer, herunder felter, der er baseret på Bing og R.
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/22/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: da330e75642e243637f792cde706b6d34ce70062
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: 8cf0a4de37f1bdc6e90a05799caebd2ce0e77046
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280725"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548298"
 ---
 # <a name="power-bi-pro-in-your-organization"></a>Power BI Pro i din organisation
 
@@ -35,7 +35,7 @@ Følgende funktioner kræver en Power BI Pro-licens:
 
 Når du har tilmeldt dig din gratis konto, kan du også vælge at prøve Pro gratis i 60 dage. Du får adgang til alle Pro-funktionerne i hele prøveperioden. Power BI Pro har alle funktionerne fra den gratis version af Power BI samt yderligere funktioner til deling og samarbejde. Se [Priser på Power BI](https://powerbi.microsoft.com/en-us/pricing/), hvis du vil have flere oplysninger. Log på Power BI for at få en 60-dages gratis prøveversion af Power BI Pro, og prøv én af disse Power BI Pro-funktioner.
 
-* [Opret et arbejdsområde](service-create-distribute-apps.md)
+* [Opret et arbejdsområde](consumer/end-user-create-apps.md)
 * [Del et dashboard](service-share-dashboards.md)
 
 Når du prøver en af disse funktioner, bliver du bedt om at starte din gratis prøveperiode. Du kan også vælge den ved at gå til tandhjulsikonet og vælge Administrer personligt lager. Vælg derefter Prøv Pro gratis til højre.

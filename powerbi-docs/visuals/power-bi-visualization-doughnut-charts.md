@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/23/2017
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d09f9d9d0de8608a39111f24e6f605c3fbce55fb
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 3bf0aa516f50d363b53d2ed91b86d999e7855c30
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44730508"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545010"
 ---
 # <a name="doughnut-charts-in-power-bi"></a>Kransediagrammer i Power BI
 Et kransediagram ligner meget et cirkeldiagram og viser relationen mellem dele af en helhed. Den eneste forskel er, at centreret i det er tomt og giver plads til en etiket eller et ikon.
@@ -43,13 +43,13 @@ I denne vejledning benyttes eksemplet Retail Analysis Sample (Eksempel på detai
 * Kransediagrammer er bedst egnet til at sammenligne en bestemt del med helheden og ikke sammenligne de enkelte dele med hinanden. 
 
 ## <a name="next-steps"></a>Næste trin
-[Rapporter i Power BI](../service-reports.md)
+[Rapporter i Power BI](../consumer/end-user-reports.md)
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
 
-[Power BI – grundlæggende begreber](../service-basic-concepts.md)
+[Power BI – grundlæggende begreber](../consumer/end-user-basic-concepts.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

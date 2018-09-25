@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: d50d3c3a34364dd795c44b3e45e91857bcc222f0
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: f01edbec60d0146dd5bd4454d3b1e0736b9158e3
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726311"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548229"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Opret udvalgte spørgsmål til Spørgsmål og svar i Power BI
 Hvis du ejer et datasæt, kan du tilføje dine egne udvalgte spørgsmål i det pågældende datasæt.  Og Spørgsmål og svar i Power BI viser disse spørgsmål til kollegaer, der bruger (*forbruger*) dit datasæt.  De udvalgte spørgsmål giver dine kollegaer en ide om, hvilke typer af spørgsmål, de kan stille om datasættet. Det er op til dig, hvilke udvalgte spørgsmål, du tilføjer – tilføj populære spørgsmål, spørgsmål, der viser interessante resultater, eller spørgsmål, der kan være svære at sætte ord på.
@@ -47,8 +47,8 @@ I denne artikel anvendes [Retail Analysis Sales-eksemplet](sample-datasets.md).
    ![kortvisualisering](media/service-q-and-a-create-featured-questions/power-bi-filled-map.png)
 
 ### <a name="next-steps"></a>Næste trin
-[Spørgsmål og svar i Power BI](power-bi-q-and-a.md)  
+[Spørgsmål og svar i Power BI](consumer/end-user-q-and-a.md)  
 [Selvstudium: Introduktion til Spørgsmål og svar i Power BI](power-bi-visualization-introduction-to-q-and-a.md)  
-[Power BI – Grundlæggende begreber](service-basic-concepts.md)  
+[Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: b1c68312f60761964194d7be810b5ee490785cb2
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: fa572b44445c4fcf929286b68222b2faf4f9d7d2
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624108"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548275"
 ---
 # <a name="connect-to-files-stored-in-onedrive-for-your-power-bi-app-workspace"></a>Opret forbindelse til filer, der lagres i OneDrive til dit Power BI-apparbejdsområde
-Når du har [oprettet et apparbejdsområde i Power BI](service-create-distribute-apps.md), kan du gemme dine Excel-, CSV- og Power BI Desktop-filer på OneDrive for Business til dit Power BI-apparbejdsområde. Du kan fortsætte med at opdatere de filer, du lagrer i OneDrive, og så afspejles opdateringerne automatisk i dine Power BI-rapporter og -dashboards baseret på filerne. 
+Når du har [oprettet et apparbejdsområde i Power BI](consumer/end-user-create-apps.md), kan du gemme dine Excel-, CSV- og Power BI Desktop-filer på OneDrive for Business til dit Power BI-apparbejdsområde. Du kan fortsætte med at opdatere de filer, du lagrer i OneDrive, og så afspejles opdateringerne automatisk i dine Power BI-rapporter og -dashboards baseret på filerne. 
 
 > [!NOTE]
 > Prøveversionen af den nye arbejdsområdeoplevelse ændrer relationen mellem Power BI-arbejdsområder og Office 365-grupper. Du opretter ikke automatisk en Office 365-gruppe, hver gang du opretter et af de nye arbejdsområder. Læs om [oprettelse af nye arbejdsområder (prøveversion)](service-create-the-new-workspaces.md)
@@ -79,7 +79,7 @@ Nu hvor dine filer er i OneDrive for Business til dit apparbejdsområde, står d
     ![](media/service-connect-to-files-in-app-workspace-onedrive-for-business/power-bi-app-excel-file-connect.png)
 
 ## <a name="next-steps"></a>Næste trin
-* [Opret apps og apparbejdsområder i Power BI](service-create-distribute-apps.md)
+* [Opret apps og apparbejdsområder i Power BI](consumer/end-user-create-apps.md)
 * [Importér data fra Excel-projektmapper](service-get-data-from-files.md)
 * [Opret forbindelse til hele Excel-projektmapper](service-excel-workbook-files.md)
 * Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)

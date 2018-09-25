@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2017
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: eed9b668cccf3bc8252d70f1dee94675063a8844
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: fbf49a9ddbec5f087a28e51144c782e2f1739db0
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34247751"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546930"
 ---
 # <a name="optimize-your-data-for-power-bi-quick-insights"></a>Optimer dine data til Power BI Quick Insights
 Vil du forbedre Quick Insights-resultater?  Hvis du er ejer af datasæt, skal du prøve følgende:
@@ -26,7 +26,7 @@ Vil du forbedre Quick Insights-resultater?  Hvis du er ejer af datasæt, skal du
 * Modtager du en fejlmeddelelse, der angiver, at dine data ikke er statistisk signifikante?  Dette kan ske med modeller, der er meget simple, eller som ikke indeholder mange data, eller som ikke har dato- eller numeriske kolonner. Hvis du vil generere indsigter, skal dit datasæt have mindst én dimension og én måling.
 
 ### <a name="next-steps"></a>Næste trin
-[Power BI Quick Insights](service-insights.md)
+[Power BI Quick Insights](consumer/end-user-insights.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/20/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e49b5ddab09c32662beb04ce70e5dc7606d92f59
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: c547cd83d879cd81fe12c02f5418f5bf44ca1483
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44730583"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545939"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>Tilpas egenskaberne for x- og y-aksen
 I dette selvstudium lærer du mange forskellige måder til at tilpasse X- og Y-aksen for dine visualiseringer. Det er ikke alle visualiseringer, der har akser, eller som kan tilpasses. Et cirkeldiagram har for eksempel ikke akser. Indstillingerne for tilpasning kan desuden variere mellem visualiseringerne. Samtidig er der for mange indstillinger til, at de kan beskrives i én artikel. Jeg vil derfor se nærmere på nogle af de aksetilpasninger, der oftest bruges. Så får du samtidig erfaring med at bruge fanen Format for visualiseringer på dit rapportcanvas i Power BI.  
@@ -86,7 +86,7 @@ Start med at oprette et kombinationsdiagram, der viser, hvordan antallet af buti
 
     ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-line-chart.png)
 
-> [NOTE]: For help sorting by month, see [sorting by other criteria](../power-bi-report-change-sort.md#other)
+> [NOTE]: For help sorting by month, see [sorting by other criteria](../consumer/end-user-change-sort.md#other)
 > 1. For januar var GM% på 35 %, steg til 45 % i april, faldt i juli og steg igen i august. Kan vi se et tilsvarende mønster for salget i dette og sidste år?
 > 2. Tilføj **This Year Sales > Value** og **Last Year Sales** i kurvediagrammet. Skalaen for **GM% Last Year** (den blå streg, der kører langs gitterlinjen 0M %) er meget mindre end skalaen for **Sales**, hvilket gør det svært at sammenligne. Og procentsatserne på Y-aksen er vist ikke så meget værd.      
 
@@ -137,6 +137,6 @@ Få mere at vide om [Visualiseringer i Power BI-rapporter](power-bi-report-visua
 
 [Tilpas farver og akseegenskaber](service-getting-started-with-color-formatting-and-axis-properties.md)
 
-[Power BI – Grundlæggende begreber](../service-basic-concepts.md)
+[Power BI – Grundlæggende begreber](../consumer/end-user-basic-concepts.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

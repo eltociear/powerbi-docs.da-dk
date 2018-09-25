@@ -10,16 +10,16 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: mihart
-ms.openlocfilehash: 4676b31a117573d1d69b5947ec2380c4abf29405
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 45bd00877aadba2a84ac533add18b82337fa8403
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726863"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546251"
 ---
 # <a name="getting-a-custom-visual-certified"></a>Sådan får du en brugerdefineret visualisering *certificeret*
 ## <a name="what-is-meant-by-certified"></a>Hvad menes der med *certificeret*?
-En *certificeret visualisering* er en visualisering, der opfylder et sæt af kodekrav, og som har bestået strenge sikkerhedstests.  Når en brugerdefineret visualisering er blevet certificeret, kan den [eksporteres til PowerPoint](service-publish-to-powerpoint.md) og vises i modtagne mails, når en bruger [abonnerer på rapportsider](service-report-subscribe.md). Den kan selvfølgelig også bruges som [brugerdefinerede visuelle standardelementer](power-bi-custom-visuals.md), føjes til Power BI-tjenesten og Power BI Desktop-rapporter og vises i Power BI-mobil og integreret.
+En *certificeret visualisering* er en visualisering, der opfylder et sæt af kodekrav, og som har bestået strenge sikkerhedstests.  Når en brugerdefineret visualisering er blevet certificeret, kan den [eksporteres til PowerPoint](consumer/end-user-powerpoint.md) og vises i modtagne mails, når en bruger [abonnerer på rapportsider](consumer/end-user-subscribe.md). Den kan selvfølgelig også bruges som [brugerdefinerede visuelle standardelementer](power-bi-custom-visuals.md), føjes til Power BI-tjenesten og Power BI Desktop-rapporter og vises i Power BI-mobil og integreret.
 
 Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til [Microsoft AppSource](https://appsource.microsoft.com)? Du kan få mere at vide om, hvordan du gør, under [Introduktion til Udviklerværktøj](service-custom-visuals-getting-started-with-developer-tools.md).
 

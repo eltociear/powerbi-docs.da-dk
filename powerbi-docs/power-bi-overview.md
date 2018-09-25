@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: c2e0dc401e5927e69ecb9b059042df646b238bd5
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 1d5f5b4458dca8fb9d45dfc938f16e5fa77f45db
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944393"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545377"
 ---
 # <a name="what-is-power-bi"></a>Hvad er Power BI?
 **Power BI** er en samling af softwaretjenester, apps og forbindelser, der arbejder sammen for at forvandle usammenhængende data til faste, visuelt fordybende og interaktive indsigter. Uanset om dataene er et enkelt Excel-regneark eller en samling cloudbaserede og lokale hybride datalagre, så giver **Power BI** dig let adgang til at oprette forbindelse til dine datakilder, visualisere (eller granske) vigtige elementer og dele indholdet med alle.
@@ -57,5 +57,5 @@ Opret, udrul og administrer Power BI, mobile og sideinddelte rapporter i det lok
 Power BI-rapportserveren er en løsning, som du udruller bag firewallen, og som derefter leverer dine rapporter til de rette brugere på forskellige måder, uanset om de skal vises i en webbrowser, på en mobilenhed eller som en mail. Og da Power BI-rapportserveren er kompatibel med Power BI i clouden, kan du flytte til clouden, når du er klar.
 
 ## <a name="next-steps"></a>Næste trin
-[Log på, hent nogle data, og se, hvordan du bruger Power BI-tjenesten](service-the-new-power-bi-experience.md)   
+[Log på, hent nogle data, og se, hvordan du bruger Power BI-tjenesten](consumer/end-user-experience.md)   
 [Selvstudium: Kom i gang med Power BI-tjenesten](service-get-started.md)

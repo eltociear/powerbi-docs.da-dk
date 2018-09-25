@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b479c46ffe3e51ad5f15cc9884a2ea02626a4cc5
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: bd8a8b9a9aff451282c5cef8a6dd6f27b90335d7
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38876876"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548689"
 ---
 # <a name="connect-to-google-analytics-with-power-bi"></a>Opret forbindelse til Google Analytics med Power BI
 For at oprette forbindelse til Google Analytics via Power BI skal du starte med at oprette forbindelse til din Google Analytics-konto. Du får et Power BI-dashboard og et sæt af Power BI-rapporter, der giver indsigt i trafikken på dit websted og brugerdimensioner. Du kan interagere med dashboards og rapporter, men du kan ikke gemme ændringer. Dataene opdateres automatisk én gang dagligt.
@@ -69,7 +69,7 @@ Har du stadig problemer? Opret en supportanmodning for at få fat i Power BI-tea
 * Fra Power BI-supportwebstedet (hvor du læser denne artikel) skal du vælge **Kontakt Support** i højre side.
 
 ## <a name="next-steps"></a>Næste trin
-* [Hvad er apps i Power BI?](service-install-use-apps.md)
+* [Hvad er apps i Power BI?](consumer/end-user-apps.md)
 * [Hent data i Power BI](service-get-data.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

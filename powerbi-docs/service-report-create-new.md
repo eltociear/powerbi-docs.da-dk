@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a27a7ec72b1e85b7e1dc6caa5773a14a089e378d
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 7647cba750ea7369e84022f77f46299ae15c6554
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726403"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545837"
 ---
 # <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Opret en ny rapport i Power BI-tjenesten ved at importere et datasæt
-Du har læst [Rapporter i Power BI](service-reports.md), og nu vil du oprette din egen. Der er mange forskellige måder at oprette en rapport på, og i denne artikel starter vi med at oprette en meget grundlæggende rapport ud fra et Excel-datasæt ved hjælp af Power BI-tjenesten. Når du har forstået de grundlæggende ting i forbindelse med at oprette en rapport, vejleder de **Næste trin** for neden dig gennem de mere avancerede rapportemner.  
+Du har læst [Rapporter i Power BI](consumer/end-user-reports.md), og nu vil du oprette din egen. Der er mange forskellige måder at oprette en rapport på, og i denne artikel starter vi med at oprette en meget grundlæggende rapport ud fra et Excel-datasæt ved hjælp af Power BI-tjenesten. Når du har forstået de grundlæggende ting i forbindelse med at oprette en rapport, vejleder de **Næste trin** for neden dig gennem de mere avancerede rapportemner.  
 
 > **TIP!** Hvis du vil oprette en rapport ved at kopiere en eksisterende rapport, skal du se [Kopiér en rapport](power-bi-report-copy.md)
 > 

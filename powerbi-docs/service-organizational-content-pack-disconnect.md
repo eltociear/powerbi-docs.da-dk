@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2389ed542a43b28296faf2eed2b69b4e83d227f5
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: 2682dd9c4d64e3042273df88c86b146e07c681b3
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624154"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549517"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Fjern din forbindelse til en Power BI-organisationsindholdspakke
 
@@ -35,7 +35,7 @@ Hvis du fjerner datasættet, fjernes også alle tilknyttede rapporter og dashboa
 
 ## <a name="next-steps"></a>Næste trin
 * [Introduktion til organisationsindholdspakker](service-organizational-content-pack-introduction.md) 
-* [Opret og distribuer en app i Power BI](service-create-distribute-apps.md) 
-* [Grundlæggende begreber i Power BI](service-basic-concepts.md)  
+* [Opret og distribuer en app i Power BI](consumer/end-user-create-apps.md) 
+* [Grundlæggende begreber i Power BI](consumer/end-user-basic-concepts.md)  
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

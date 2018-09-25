@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: mihart
-ms.openlocfilehash: 6a930342806eb32f22efe3d2974625c54c5377bf
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a312a4311590d02d0fa8bd97726f9cf596cfe6a0
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44730556"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545768"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interaktion med ArcGIS-kort i Power BI
 Dette emne skrives fra en persons synspunkt, hvor vedkommende *bruger* et ArcGIS-kort i Power BI-tjenesten, på Desktop eller på mobil. Når en forfatter deler et ArcGIS-kort med dig, kan du interagere med kortet på mange måder.  Hvis du vil vide mere om oprettelse af et ArcGIS-kort, kan du se [ArcGIS-kort efter Esri-selvstudium](../power-bi-visualization-arcgis.md).
@@ -55,9 +55,9 @@ ArcGIS Maps for Power BI har tre markeringstilstande. Du kan maksimalt vælge 25
 <br/>
 
 ## <a name="interacting-with-an-arcgis-map"></a>Interaktion med et ArcGIS-kort
-De funktioner, der er tilgængelige for dig, afhænger af om du er *forfatter* (den person, der har udarbejdet kortet) eller *forbruger* (en, som deler et ArcGIS-kort). Hvis du interagerer med et ArcGIS-kort som forbruger (dvs. [Læsevisning](../service-reading-view-and-editing-view.md)), har du mulighed for at benytte følgende handlinger.
+De funktioner, der er tilgængelige for dig, afhænger af om du er *forfatter* (den person, der har udarbejdet kortet) eller *forbruger* (en, som deler et ArcGIS-kort). Hvis du interagerer med et ArcGIS-kort som forbruger (dvs. [Læsevisning](../consumer/end-user-reading-view.md)), har du mulighed for at benytte følgende handlinger.
 
-* Som det er tilfældet med andre visualiseringstyper, kan du [fastgøre de underliggende data til dashboards](../service-dashboard-pin-tile-from-report.md), [få dem vist](../service-reports-show-data.md) og/eller [eksportere dem](../power-bi-visualization-export-data.md), og du kan se kortet i [fokustilstand](../service-focus-mode.md) og [fuld skærm](../service-fullscreen-mode.md).    
+* Som det er tilfældet med andre visualiseringstyper, kan du [fastgøre de underliggende data til dashboards](../service-dashboard-pin-tile-from-report.md), [få dem vist](../consumer/end-user-show-data.md) og/eller [eksportere dem](../consumer/end-user-export-data.md), og du kan se kortet i [fokustilstand](../consumer/end-user-focus.md) og [fuld skærm](../service-fullscreen-mode.md).    
 * Udvid ruden **Filtre** for at udforske kortet ved hjælp af filtre. Når du lukker rapporten, bliver de filtre, som du har anvendt, ikke gemt.    
     ![](media/power-bi-visualizations-arcgis/power-bi-filter-newer.png)  
 * Hvis kortet har et referencelag, kan du vælge steder, hvor der skal vises detaljer i et værktøjstip. Her har vi markeret Adams County, og vi kan se data fra referencelaget vedrørende den gennemsnitlige husstandsindtægt, som forfatteren har føjet til kortet.

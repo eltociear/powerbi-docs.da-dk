@@ -10,22 +10,22 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ed882a339e1ee7d53302dc33a7cedb1a95709b8b
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 656f32dd28796ec58b7cfcf774248ee30de0085a
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249108"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545893"
 ---
 # <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Fastgør et felt fra ét dashboard til et andet dashboard
-Én måde at tilføje et nyt [dashboardfelt](service-dashboard-tiles.md) er ved at kopiere det fra et andet dashboard. Et klik på hvert af disse felter fungerer som et link tilbage til der, hvor det blev oprettet – enten i Spørgsmål og svar eller i en rapport. 
+Én måde at tilføje et nyt [dashboardfelt](consumer/end-user-tiles.md) er ved at kopiere det fra et andet dashboard. Et klik på hvert af disse felter fungerer som et link tilbage til der, hvor det blev oprettet – enten i Spørgsmål og svar eller i en rapport. 
 
 > [!NOTE]
 > Du kan ikke fastgøre felter fra delte dashboards.
 
 ## <a name="pin-a-tile-to-another-dashboard"></a>Fastgør et felt til et andet dashboard
 1. [Hent data](service-get-data.md). Dette eksempel bruger [Eksemplet på analyse af it-forbrug](sample-it-spend.md).
-2. Åbn et [dashboard](service-dashboards.md).
+2. Åbn et [dashboard](consumer/end-user-dashboards.md).
 3. Hold musen over det felt, du vil fastgøre. Vælg ellipserne (...) og **Fastgør felt**.  
    
    ![ellipsemenu](media/service-pin-tile-to-another-dashboard/power-bi-pin-another-dash.png)
@@ -42,7 +42,7 @@ ms.locfileid: "34249108"
 6. Vælg **Gå til dashboard** for at se det fastgjorte felt. Der kan du [omdøbe, sammenkæde, flytte og tilpasse størrelsen af](service-dashboard-edit-tile.md) den fastgjorte visualisering.
 
 ## <a name="next-steps"></a>Næste trin
-[Felter i Power BI](service-dashboard-tiles.md)  
-[Dashboards i Power BI](service-dashboards.md)  
+[Felter i Power BI](consumer/end-user-tiles.md)  
+[Dashboards i Power BI](consumer/end-user-dashboards.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

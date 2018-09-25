@@ -1,21 +1,21 @@
 ---
 title: Brug Figurkort i Power BI Desktop (prøveversion)
 description: Opret relative sammenligninger mellem områder ved hjælp af figurkort i Power BI Desktop
-author: davidiseminger
+author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 07/27/2018
-ms.author: davidi
+ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: deb2d7c7ac7a43c625d5c5a15221d55cc38b11b6
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: ad9a3e73a90ff69f5d56e1e5c1fc487c855df74d
+ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44730719"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "46566021"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Figurkort i Power BI Desktop (prøveversion)
 I Power BI Desktop kan du oprette visualiseringen **Figurkort** for at vise relative sammenligninger mellem områder på et kort ved at anvende forskellige farver for forskellige områder. I modsætning til visualiseringen **Kort** kan **Figurkort** ikke vise nøjagtige geografiske lokationer med datapunkter på et kort. I stedet er det primære formål at vise relative sammenligninger af områder på et kort ved at farvelægge dem forskelligt.

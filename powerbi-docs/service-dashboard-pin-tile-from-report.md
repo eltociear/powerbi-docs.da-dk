@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 968cf7e573a298c2a82adaf2092a9d35ffa397e5
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 75543bfc381f0a8391fe4422d677913ab61ad363
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34240204"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46550046"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Fastgør et felt til et Power BI-dashboard fra en rapport
 ## <a name="pinning-tiles-from-a-report"></a>Fastgørelse af felter fra en rapport
-Én måde at tilføje et nyt [dashboardfelt](service-dashboard-tiles.md) på er inde fra en [Power BI-rapport](service-reports.md). Faktisk, kan du tilføje mange nye felter fra en rapport.  Hvert af disse felter fungerer som et link tilbage til rapporten, når du klikker.
+Én måde at tilføje et nyt [dashboardfelt](consumer/end-user-tiles.md) på er inde fra en [Power BI-rapport](consumer/end-user-reports.md). Faktisk, kan du tilføje mange nye felter fra en rapport.  Hvert af disse felter fungerer som et link tilbage til rapporten, når du klikker.
 
 Og hele rapportsider kan fastgøres til et dashboard.  Det kaldes også fastgørelse af et *live*felt.  *Live* fordi du kan interagere med feltet på dashboardet, og fordi ændringer, der foretages i rapporten, i modsætning til individuelle visualiseringsfelter, synkroniseres med dashboardet. Læs mere om dette nedenfor.
 
@@ -58,15 +58,15 @@ En anden mulighed er at fastgøre en hel rapportside til et dashboard. Dette er 
 Du kan få mere at vide under [Fastgør en hel rapportside](service-dashboard-pin-live-tile-from-report.md)
 
 ## <a name="next-steps"></a>Næste trin
-[Dashboards i Power BI](service-dashboards.md)
+[Dashboards i Power BI](consumer/end-user-dashboards.md)
 
-[Dashboardfelter i Power BI](service-dashboard-tiles.md)
+[Dashboardfelter i Power BI](consumer/end-user-tiles.md)
 
-[Rapporter i Power BI](service-reports.md)
+[Rapporter i Power BI](consumer/end-user-reports.md)
 
 [Opdatering af data i Power BI](refresh-data.md)
 
-[Grundlæggende begreber i Power BI](service-basic-concepts.md)
+[Grundlæggende begreber i Power BI](consumer/end-user-basic-concepts.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

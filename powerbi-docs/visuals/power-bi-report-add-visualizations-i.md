@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8095db86b8954b3f91a83f2e83c0108d1676cf76
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: df53cf238a52502cecb4d1f77482b7b1a09c6b7a
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736379"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545262"
 ---
 # <a name="part-i-add-visualizations-to-a-power-bi-report"></a>Del 1, Føj visualiseringer til en rapport i Power BI
 I denne artikel får du en hurtig introduktion til at oprette en visualisering i en rapport ved enten at bruge Power BI-tjenesten eller Power BI Desktop.  Hvis du vil læse om mere avanceret indhold, skal du [se Del II](power-bi-report-add-visualizations-ii.md). Se Amanda demonstrere nogle få metoder til at oprette, redigere og formatere visualiseringer på et rapportcanvas. Prøv det derefter selv ved hjælp af [Sales and Marketing-eksemplet](../sample-datasets.md) for at oprette din egen rapport.
@@ -25,7 +25,7 @@ I denne artikel får du en hurtig introduktion til at oprette en visualisering i
 
 
 ## <a name="open-a-report-and-add-a-new-page"></a>Åbn en rapport, og tilføj en ny side
-1. Åbn en [rapport i redigeringsvisning](../service-reading-view-and-editing-view.md). Dette selvstudium er baseret på [Sales and Marketing-eksemplet](../sample-datasets.md).
+1. Åbn en [rapport i redigeringsvisning](../consumer/end-user-reading-view.md). Dette selvstudium er baseret på [Sales and Marketing-eksemplet](../sample-datasets.md).
 2. Hvis ruden Felter ikke vises, skal du vælge pilikonet for at åbne den. 
    
    ![](media/power-bi-report-add-visualizations-i/pbi_nancy_fieldsfiltersarrow.png)
@@ -59,7 +59,7 @@ I denne artikel får du en hurtig introduktion til at oprette en visualisering i
 ## <a name="next-steps"></a>Næste trin
  Fortsætte til [Del 2: Føj visualiseringer til en Power BI-rapport](power-bi-report-add-visualizations-ii.md)
    
-   [Interagere med visualiseringerne](../service-reading-view-and-editing-view.md) i rapporten.
+   [Interagere med visualiseringerne](../consumer/end-user-reading-view.md) i rapporten.
    
    [Gøre endnu mere med dine visualiseringer](power-bi-report-visualizations.md).
    

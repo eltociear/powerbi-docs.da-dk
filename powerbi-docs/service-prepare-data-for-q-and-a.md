@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: efc806787f2a1d5cd110439c1c5505bb7e77e980
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: f15bd3395ad9edc39589a0a5b1563cfcc00e2c3c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44727461"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547865"
 ---
 # <a name="how-to-make-your-excel-data-work-well-with-qa-in-power-bi"></a>Sådan får du dine Excel-data til at fungere godt med Spørgsmål og svar i Power BI
 Hvis du opretter datamodeller eller opbygger Excel-projektmapper, der skal bruges med Power BI, skal du læse videre...
@@ -27,7 +27,7 @@ Spørgsmål og svar kan bruges på alle uploadede Excel-filer, der indeholder ta
 ### <a name="how-qa-works-with-excel"></a>Sådan fungerer Spørgsmål og svar med Excel
 Spørgsmål og svar har en grundlæggende evne til at forstå naturligt sprog, der fungerer på tværs af dine data. Den har kontekstafhængig søgning med nøgleord efter navne på Excel-tabeller, kolonner og beregnede felter. Funktionen har også indbygget viden om, hvordan data filtreres, sorteres, aggregeres, grupperes og vises. 
 
-I en Excel-tabel med navnet "Sales", der indeholder kolonnerne "Product", "Month", "Units Sold", "Gross Sales" og "Profit", kan du for eksempel stille spørgsmål om alle disse enheder.  Du kan bede om at få vist salg, samlet fortjeneste efter måned, sortere produkter efter solgte enheder og mange andet. Læs mere om, hvilke [slags spørgsmål, du kan stille](power-bi-q-and-a.md), og hvilke [typer visualiseringer, du kan angive i en forespørgsel med Spørgsmål og svar](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
+I en Excel-tabel med navnet "Sales", der indeholder kolonnerne "Product", "Month", "Units Sold", "Gross Sales" og "Profit", kan du for eksempel stille spørgsmål om alle disse enheder.  Du kan bede om at få vist salg, samlet fortjeneste efter måned, sortere produkter efter solgte enheder og mange andet. Læs mere om, hvilke [slags spørgsmål, du kan stille](consumer/end-user-q-and-a.md), og hvilke [typer visualiseringer, du kan angive i en forespørgsel med Spørgsmål og svar](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md).
 
 ### <a name="prepare-an-excel-dataset-for-qa"></a>Udarbejd et Excel-datasæt til Spørgsmål og svar
 Spørgsmål og svar er afhængig af navnene på tabeller, kolonner og beregnede felter for at besvare dataspecifikke spørgsmål, hvilket betyder, at det er vigtigt, hvad du kalder enheder i din projektmappe!
@@ -44,8 +44,8 @@ Her er nogle tip til at få mest ud af Spørgsmål og svar i din projektmappe.
 * Åbn datasættet i Power BI Desktop, og opret nye kolonner, opret beregnede målinger, sammenkæd felter for at oprette entydige værdier, klassificer data efter type (f.eks. datoer, strenge, geografi, billeder, URL-adresser) m.m.
 
 ## <a name="next-steps"></a>Næste trin
-Tilbage til [Spørgsmål og svar i Power BI](power-bi-q-and-a.md)  
-[Udarbejd datasæt i det lokale miljø til Spørgsmål og svar](service-q-and-a-direct-query.md)   
+Tilbage til [Spørgsmål og svar i Power BI](consumer/end-user-q-and-a.md)  
+[Udarbejd datasæt i det lokale miljø til Spørgsmål og svar](consumer/end-user-q-and-a-direct-query.md)   
 [Hurtig introduktion til Spørgsmål og svar](power-bi-visualization-introduction-to-q-and-a.md)  
 [Hent data (til Power BI)](service-get-data.md)  
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6abe55f41211e5af907fb0a2642b3f8420236e1b
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 54cb45d1e9649fa761cfaf67aab708a2707e7516
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39330483"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546736"
 ---
 # <a name="using-buttons-in-power-bi"></a>Brug af knapper i Power BI
 Ved hjælp af **knapper** i Power BI kan du oprette rapporter og dashboards, der fungerer på samme måde som apps, og dermed skabe et indtagende miljø, så brugerne kan holde over, klikke og yderligere interagere med Power BI-indhold. Du kan føje knapper til rapporter i **Power BI Desktop** og dele eller publicere disse rapporter i Power BI-tjenesten, så der oprettes dashboards, der giver brugerne en funktionsmåde, som ligner den i apps.
@@ -75,6 +75,6 @@ Du kan prøve eller teste de knapper, du opretter for din rapport, ved hjælp af
 Du kan finde flere oplysninger om de funktioner, der er ens eller interagerer med knapper, i følgende artikler:
 
 * [Brug detaljeadgang i Power BI Desktop](desktop-drillthrough.md)
-* [Vis et dashboardfelt eller en rapport i fokustilstand](service-focus-mode.md)
+* [Vis et dashboardfelt eller en rapport i fokustilstand](consumer/end-user-focus.md)
 * [Brug bogmærker til at dele indsigt og oprette historier i Power BI](desktop-bookmarks.md)
 

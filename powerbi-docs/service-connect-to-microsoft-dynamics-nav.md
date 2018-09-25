@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 498a66c5e675fc8a394f3c3a0dc2ef7ff7fa99c2
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: a00913ea326f472993553910a79e3cc208356499
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38877382"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546711"
 ---
 # <a name="connect-to-microsoft-dynamics-nav-with-power-bi"></a>Opret forbindelse til Microsoft Dynamics NAV med Power BI
 Det er nemt at få indsigt i dine Microsoft Dynamics NAV-data med Power BI. Power BI henter dine data, både salg og finans, og opbygger derefter en app med et dashboard og rapporter, der er baseret på disse data. Power BI skal bruge dine tilladelser til de tabeller, som data hentes fra, i dette tilfælde salgs- og finansdata. Flere oplysninger om kravene nedenfor. Når du har installeret appen, kan du få vist dashboardet og rapporterne i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) og i Power BI-mobilapperne. 
@@ -99,7 +99,7 @@ Hvis du får vist fejldialogboksen "Ups!", når du kommer videre fra dialogbokse
     `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
 
 ## <a name="next-steps"></a>Næste trin
-* [Hvad er apps i Power BI?](service-install-use-apps.md)
+* [Hvad er apps i Power BI?](consumer/end-user-apps.md)
 * [Hent data i Power BI](service-get-data.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

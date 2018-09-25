@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7a002bb99cb80d805298d29916d4eb56f692b479
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 617809e072a492fb9887930e58bafd89ca8201e8
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34310285"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544924"
 ---
 # <a name="static-content-in-power-bi-reports"></a>Statisk indhold i Power BI-rapporter
 Tekstfelter og figurer kan føjes til rapporter ved hjælp af Power BI-tjenesten og Power BI Desktop. I begge tilfælde skal du have redigeringstilladelser til rapporten. Hvis en rapport er blevet delt med dig i Power BI-tjenesten, har du ikke redigeringstilladelser. 
@@ -65,6 +65,6 @@ Se med, når Will bruger Power BI Desktop til at [føje statiske billeder til en
 ### <a name="next-steps"></a>Næste trin
 [Føj et hyperlink til et tekstfelt](service-add-hyperlink-to-text-box.md)
 
-[Power BI – Grundlæggende begreber](service-basic-concepts.md)
+[Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

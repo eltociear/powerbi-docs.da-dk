@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/26/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: e5e257fd245687f2aeb83a9ee45c0342cf16392d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: c8f99cf9c4d0645638b2ef300606f89a2d28aa0d
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34561695"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545962"
 ---
 # <a name="add-a-filter-to-a-power-bi-service-report-in-editing-view"></a>Føj et filter til en rapport i Power Bi-tjenesten (i redigeringsvisning)
 > [!TIP]
@@ -26,13 +26,13 @@ Eksemplerne i denne artikel er baseret på Power BI-tjenesten. Trinnene er dog s
 > 
 
 ## <a name="what-is-the-difference-between-report-filters-in-editing-view-versus-reading-view"></a>Hvad er forskellen mellem rapportfiltrene i redigeringsvisning i forhold til læsevisning?
-Du kan interagere med rapporter i to forskellige tilstande: [Læsevisning](service-reading-view-and-editing-view.md) og [Redigeringsvisning](service-interact-with-a-report-in-editing-view.md).  Og de filterfunktioner, der er tilgængelige, afhænger af hvilken tilstand du arbejder i.
+Du kan interagere med rapporter i to forskellige tilstande: [Læsevisning](consumer/end-user-reading-view.md) og [Redigeringsvisning](service-interact-with-a-report-in-editing-view.md).  Og de filterfunktioner, der er tilgængelige, afhænger af hvilken tilstand du arbejder i.
 
 * Du kan tilføje rapport- og sidefiltre samt visualiseringsfiltre i redigeringsvisning. Når du gemmer rapporten, gemmes filtrene sammen med den. Personer, der åbner rapporten i Læsevisning, kan arbejde med de filtre, du har tilføjet.
 * I Læsevisning kan du arbejde med alle de filtre for rapporter, detaljeadgang, sider og visualiseringer, der allerede findes i rapporten, men du kan ikke tilføje nye filtre. De ændringer, du foretager i ruden Filtre, gemmes med rapporten. Det sker også, selvom du får vist rapporten i en mobilapp, eller hvis du forlader rapporten og vender tilbage til den på et senere tidspunkt.  
 
 > [!NOTE]
-> I denne artikel beskrives det, hvordan du opretter filtre i **redigeringsvisning**  til rapporter.  Du kan finde flere oplysninger om filtre i Læsevisning i afsnittet om [brug af filtre i læsevisning](service-reading-view-and-editing-view.md).
+> I denne artikel beskrives det, hvordan du opretter filtre i **redigeringsvisning**  til rapporter.  Du kan finde flere oplysninger om filtre i Læsevisning i afsnittet om [brug af filtre i læsevisning](consumer/end-user-reading-view.md).
 
 
 ## <a name="filters-available-in-the-power-bi-filters-pane"></a>Tilgængelige filtre i ruden *Filtre* i Power BI
@@ -58,7 +58,7 @@ Der er to måder, du kan gøre dette på:
 * ved at identificere et felt, der ikke allerede bruges i visualiseringen, og føje dette felt direkte til bucket'en **Filtre på visualiseringsniveau**.
 
 ### <a name="by-filtering-the-fields-already-in-the-visualization"></a>Ved at filtrere felterne der allerede findes i visualiseringen
-1. Åbn din [rapport i redigeringsvisning](service-reading-view-and-editing-view.md).
+1. Åbn din [rapport i redigeringsvisning](consumer/end-user-reading-view.md).
    
    ![](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Åbn ruden Visualizations and Filters (Visualiseringer og filtre) og ruden Felter (hvis de ikke allerede er åbne).
@@ -72,7 +72,7 @@ Der er to måder, du kan gøre dette på:
    * Rul ned til området **Filtre på visualiseringsniveau**, og brug pilen til at udvide det felt, du vil filtrere efter. I dette eksempel skal vi filtrere **StoreNumberName**
      
       ![](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
-   * Angiv et af kontrolelementerne **Basic**, **Advanced** eller **Top N** (se [Sådan bruger du rapportfiltre](power-bi-how-to-report-filter.md)). I dette eksempel vælger vi filtreringen Basic og markerer tallene 10, 11, 15 og 18.
+   * Angiv et af kontrolelementerne **Basic**, **Advanced** eller **Top N** (se [Sådan bruger du rapportfiltre](consumer/end-user-report-filter.md)). I dette eksempel vælger vi filtreringen Basic og markerer tallene 10, 11, 15 og 18.
      
       ![](media/power-bi-report-add-filter/power-bi-basic-filters.png) 
    * Visualiseringen ændres for at afspejle det nye filter. Hvis du gemmer din rapport med filteret, kan rapportlæsere interagere med filteret i læsevisning og markere eller fjerne markering af værdier.
@@ -91,10 +91,10 @@ Der er to måder, du kan gøre dette på:
      ![](media/power-bi-report-add-filter/power-bi-filtered-andrew.png)
 
 ## <a name="add-a-filter-to-an-entire-page-aka-page-view-filter"></a>Føj et filter til en hel side (også kaldet sidevisningsfilter)
-1. Åbn din [rapport i redigeringsvisning](service-reading-view-and-editing-view.md).
+1. Åbn din [rapport i redigeringsvisning](consumer/end-user-reading-view.md).
 2. Åbn ruden Visualizations and Filters (Visualiseringer og filtre) og ruden Felter (hvis de ikke allerede er åbne).
 3. Vælg i ruden Felter det felt, du vil tilføje som et nyt filter på sideniveau, og træk det til **området Filtre på sideniveau**.  
-4. Vælg de værdier, du vil filtrere efter, og angiv enten kontrolelementet **Basic** eller **Advanced** (se [Sådan bruger du rapportfiltre](power-bi-how-to-report-filter.md)).
+4. Vælg de værdier, du vil filtrere efter, og angiv enten kontrolelementet **Basic** eller **Advanced** (se [Sådan bruger du rapportfiltre](consumer/end-user-report-filter.md)).
    
    Al visualisering på siden, der er påvirket af dette filter, tegnes igen, så ændringen afspejles. 
    
@@ -130,10 +130,10 @@ Lad os se, hvordan filteret til detaljeadgang fungerer.
     ![](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
 
 ## <a name="add-a-filter-to-an-entire-report-aka-report-filter"></a>Føj et filter til hele rapporten (også kaldet rapportfilter)
-1. Åbn din [rapport i redigeringsvisning](service-reading-view-and-editing-view.md).
+1. Åbn din [rapport i redigeringsvisning](consumer/end-user-reading-view.md).
 2. Åbn ruden Visualizations and Filters (Visualiseringer og filtre) og ruden Felter (hvis de ikke allerede er åbne).
 3. Vælg i ruden Felter det felt, du vil tilføje som et nyt filter på rapporteringsniveau, og træk det til området **Filtre på rapporteringsniveau**.  
-4. Vælg de værdier, du vil filtrere efter (se [Sådan bruger du rapportfiltre](power-bi-how-to-report-filter.md)).
+4. Vælg de værdier, du vil filtrere efter (se [Sådan bruger du rapportfiltre](consumer/end-user-report-filter.md)).
 
     De visuelle elementer på den aktive side og på alle sider i rapporten ændres for at afspejle det nye filter. Hvis du gemmer din rapport med filteret, kan rapportlæsere interagere med filteret i læsevisning og markere eller fjerne markering af værdier.
 
@@ -149,13 +149,13 @@ Lad os se, hvordan filteret til detaljeadgang fungerer.
 - Hvis du har foretaget mange ændringer af filtrene, og du vil vende tilbage til de indstillinger, som rapportens forfatter har angivet, skal du vælge **Nulstil til standard** på den øverste menulinje.
 
 ## <a name="next-steps"></a>Næste trin
- [Sådan bruger du rapportfiltre](power-bi-how-to-report-filter.md)
+ [Sådan bruger du rapportfiltre](consumer/end-user-report-filter.md)
 
   [Filtre og fremhævning i rapporter](power-bi-reports-filters-and-highlighting.md)
 
-[Arbejd med filtre og fremhævning i læsevisning for en rapport](service-reading-view-and-editing-view.md)
+[Arbejd med filtre og fremhævning i læsevisning for en rapport](consumer/end-user-reading-view.md)
 
-[Rediger, hvordan visualiseringer i rapporter krydsfiltrerer og krydsfremhæver hinanden](service-reports-visual-interactions.md)
+[Rediger, hvordan visualiseringer i rapporter krydsfiltrerer og krydsfremhæver hinanden](consumer/end-user-interactions.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

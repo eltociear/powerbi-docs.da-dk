@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 90f32e96a6e2c7777c5d1535314e2c85989e1932
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 3bb151de24a984406aa6fd40a70977f2e9eaf1be
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599588"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548045"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fastgør et felt til et Power BI-dashboard fra Excel
 Før du kan fastgøre et felt fra din Excel-projektmappe, skal du oprette forbindelse mellem denne projektmappe og Power BI-tjenesten (app.powerbi.com). Når der oprettes forbindelse til en projektmappe, overføres der grundlæggende set en sammenkædet skrivebeskyttet version af denne projektmappe til Power BI-tjenesten, så du kan fastgøre intervaller til dashboards. Du kan endda fastgøre et helt regneark til et dashboard.  
@@ -49,7 +49,7 @@ Du kan ikke redigere din projektmappe i Power BI. Men hvis du har brug for at fo
     ![Excel Online i Power BI](media/service-dashboard-pin-tile-from-excel/power-bi-opened.png)
 
 ## <a name="pin-a-range-of-cells-to-a-dashboard"></a>Fastgør et celleområde til et dashboard
-Én måde at tilføje et nyt [dashboardfelt](service-dashboard-tiles.md) på er i en Excel-projektmappe i Power BI. Områder kan fastgøres fra Excel-projektmapper, der er gemt på OneDrive for Business eller et andet gruppedelt dokumentbibliotek. Områderne kan indeholde data, diagrammer, tabeller, pivottabeller, pivotdiagrammer og andre Excel-dele.
+Én måde at tilføje et nyt [dashboardfelt](consumer/end-user-tiles.md) på er i en Excel-projektmappe i Power BI. Områder kan fastgøres fra Excel-projektmapper, der er gemt på OneDrive for Business eller et andet gruppedelt dokumentbibliotek. Områderne kan indeholde data, diagrammer, tabeller, pivottabeller, pivotdiagrammer og andre Excel-dele.
 
 1. Fremhæv de celler, som du vil fastgøre til et dashboard.
    

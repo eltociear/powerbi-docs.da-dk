@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 27b3f18143fe5f354fb9a6965b1d3a58ba33f556
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a9f394cdfefabf1392b0219079d95a35d38b1754
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726909"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546113"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administrationsportal
 
@@ -161,7 +161,7 @@ Brugere kan se forskellige indstillinger på brugergrænsefladen afhængigt af i
 
 ### <a name="export-data"></a>Eksportér data
 
-Brugere i virksomheden kan eksportere data fra et felt eller visualisering. [Få mere at vide](power-bi-visualization-export-data.md)
+Brugere i virksomheden kan eksportere data fra et felt eller visualisering. [Få mere at vide](consumer/end-user-export-data.md)
 
 ![](media/service-admin-portal/powerbi-admin-export-data.png)
 
@@ -170,13 +170,13 @@ Brugere i virksomheden kan eksportere data fra et felt eller visualisering. [Få
 
 ### <a name="export-reports-as-powerpoint-presentations"></a>Eksportér rapporter som PowerPoint-præsentationer
 
-Brugere i virksomheden kan eksportere Power BI-rapporter som PowerPoint-filer. [Få mere at vide](service-publish-to-powerpoint.md)
+Brugere i virksomheden kan eksportere Power BI-rapporter som PowerPoint-filer. [Få mere at vide](consumer/end-user-powerpoint.md)
 
 ![](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
 ### <a name="print-dashboards-and-reports"></a>Udskriv dashboards og rapporter
 
-Brugere i virksomheden kan udskrive dashboards og rapporter. [Få mere at vide](service-print.md)
+Brugere i virksomheden kan udskrive dashboards og rapporter. [Få mere at vide](consumer/end-user-print.md)
 
 ![](media/service-admin-portal/powerbi-admin-print-dashboard.png)
 
@@ -205,7 +205,7 @@ Du kan skifte indstillingen til **Aktiveret** og derefter angive, hvem der har d
 > [!NOTE]
 > Husk, at det kan tage noget tid, før ændringer af indstillingerne for lejer træder i kraft.
 
-Gå hertil for at få mere at vide om [Push af apps](service-create-distribute-apps.md#how-to-install-an-app-automatically-for-end-users).
+Gå hertil for at få mere at vide om [Push af apps](consumer/end-user-create-apps.md#how-to-install-an-app-automatically-for-end-users).
 
 ## <a name="integration-settings"></a>Integrationsindstillinger
 

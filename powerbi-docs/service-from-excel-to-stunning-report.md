@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/28/2018
 ms.author: mihart
 LocalizationGroup: Data from files
-ms.openlocfilehash: 3244a185c7b7e9caa689ab7b90c184c9bf5b4662
-ms.sourcegitcommit: 619b66176394b9b881edc29b6d123d9729554eb3
+ms.openlocfilehash: ebbca73f781946f989b2f3afa65aa0a940f7a680
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44044411"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545124"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Fra Excel-projektmappe til fantastisk rapport på ingen tid
 Din chef vil gerne se en rapport om dine seneste salgstal kombineret med dine seneste kampagneannoncer, inden dagen er omme. Men de seneste data befinder sig på forskellige systemer hos tredjeparter og i filer på din bærbare computer. Tidligere har det taget timevis at oprette visuals og formatere en rapport. Du begynder at blive bekymret.
@@ -98,6 +98,6 @@ Næste trin
 
 * [Kom i gang med Power BI-tjenesten](service-get-started.md)
 * [Kom i gang med Power BI Desktop](desktop-getting-started.md)
-* [Power BI – Grundlæggende begreber](service-basic-concepts.md)
+* [Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

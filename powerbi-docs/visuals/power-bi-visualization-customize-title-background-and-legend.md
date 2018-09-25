@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b486ad6bc4027aa2122ee72fc7fb89f0fd80c875
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a219ad94725f8d5423597bd65321f0024f95c1bb
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44730520"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545998"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Tilpas visualiseringernes titler, forklaringer og baggrunde
 I dette selvstudium lærer du et par forskellige måder, hvorpå du kan tilpasse dine visualiseringer.   Der findes mange muligheder for at tilpasse dine visualiseringer. Den bedste måde at lære dem at kende på, er ved at prøve sig frem med indstillingerne under fanen Formatering (vælg ikonet med malerullen).  I denne artikel kan du se, hvordan du tilpasser en visualiserings titel, forklaring og baggrund.  
@@ -120,6 +120,6 @@ Udvid indstillingerne under Baggrund i det samme søjlediagram.
 ## <a name="next-steps"></a>Næste trin
 [Tilpas X- og Y-aksen](power-bi-visualization-customize-x-axis-and-y-axis.md)  
 [Tilpas farver og akseegenskaber](service-getting-started-with-color-formatting-and-axis-properties.md)  
-[Power BI – Grundlæggende begreber](../service-basic-concepts.md)  
+[Power BI – Grundlæggende begreber](../consumer/end-user-basic-concepts.md)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

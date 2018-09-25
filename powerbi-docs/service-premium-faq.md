@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/20/2017
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 25340ac8349e112b2424496274441feedebe7052
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 85a5856d20781012f32d53c9468fdd6b77a0f685
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "34298843"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546596"
 ---
 # <a name="power-bi-premium-faq"></a>Ofte stillede spørgsmål om Power BI Premium
 Gennemse en liste med ofte stillede spørgsmål og svar om tilbuddene i Power BI Premium.
@@ -102,7 +102,7 @@ Yderligere oplysninger om Power BI Report Server finder du i [Kom i gang med Pow
 **Hvad er Power BI-apps?**  
 Vi udvikler indholdspakker til Power BI-apps for at forbedre, hvordan brugerne søger efter og udforsker indsigt på koncernniveau. Power BI-apps, der fås i dag, tilbyder en forenklet måde at udrulle dashboards og rapporter til bestemte brugere, grupper eller en hel organisation. Forretningsbrugere kan let installere disse apps og ubesværet navigere i dem, da indhold centraliseres ét sted og opdateres automatisk. 
 
-Du kan finde flere oplysninger om apps under [Hvad er apps i Power BI?](service-install-use-apps.md).
+Du kan finde flere oplysninger om apps under [Hvad er apps i Power BI?](consumer/end-user-apps.md).
 
 **Foretages der ændringer i Power BI Pro, Power BI Free Power BI Desktop og andet som en del af udrulningen af Power BI Premium?**  
 I dag forenkler vi også forskellen mellem Power BI Pro og den gratis tjeneste. Vi har modtaget feedback, at eftersom den gratis tjeneste er beregnet til privat brug og Power BI Pro muliggør samarbejde, har de funktionelle forskelle mellem dem skabt forvirring for brugerne. Fremover vil vi forbedre den gratis tjeneste for at have den samme funktionalitet som Power BI Pro, men vil begrænse delings og samarbejdsfunktioner til Power BI Pro-brugere alene.

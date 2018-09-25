@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e8e9b21e62f0a91234fccf78977a696e321ed8dc
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: f4eb0ec93057f309720fc4fef33a55d924881383
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "38924529"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544618"
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Opret forbindelse til Adobe Analytics med Power BI
 For at oprette forbindelse til Adobe Analytics via Power BI skal du starte med at oprette forbindelse til din Adobe Analytics Marketing Cloud-konto. Du får en app med et Power BI-dashboard og et sæt af Power BI-rapporter, der giver indsigt i trafikken på dit websted og brugerdimensioner. Dataene opdateres automatisk én gang dagligt. Du kan interagere med dashboards og rapporter, men du kan ikke gemme ændringer.
@@ -94,7 +94,7 @@ Hvis du får vist en fejl, når du har angivet dine legitimationsoplysninger, hv
 Hvis du er kommet gennem skærmbilledet med legitimationsoplysninger, før der opstår en fejl, er det muligt, at rapporterne er for længe om at blive afsluttet. En almindelig fejl er i formatet *"Der kunne ikke hentes data fra Adobe Analytics-rapporten. Indhold omfattede &quot;henviser, side&quot;, den omtrentlige varighed var xx sekunder"*. Se afsnittet "Følgende er inkluderet", og sammenlign med størrelsen af din Adobe-forekomst. Det er desværre ikke muligt at omgå denne timeout i dag. Men vi overvejer opdateringer for bedre at kunne understøtte større forekomster. Giv feedback til Power BI-teamet på https://ideas.powerbi.com
 
 ## <a name="next-steps"></a>Næste trin
-* [Hvad er apps i Power BI?](service-install-use-apps.md)
+* [Hvad er apps i Power BI?](consumer/end-user-apps.md)
 * [Hent data i Power BI](service-get-data.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

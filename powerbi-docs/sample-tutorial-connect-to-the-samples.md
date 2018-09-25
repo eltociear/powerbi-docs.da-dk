@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/23/2018
 ms.author: mihart
 LocalizationGroup: Samples
-ms.openlocfilehash: 02c3998a95e7d481ee032513054933f1484ae7f9
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 8b4a0605df348957c4adb0d8e02975f4cd752307
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "36944600"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543777"
 ---
 # <a name="the-power-bi-samples"></a>Power BI-eksemplerne
 
@@ -79,7 +79,7 @@ Udforsk nu dashboardet, datasættet og rapporten på egen hånd. Der er mange fo
     ![rapportside med tilsvarende visualisering fremhævet](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > Hvis feltet var blevet oprettet ved brug af [Power BI Q&A](power-bi-q-and-a.md), ville Q&A-siden være blevet åbent i stedet for. Hvis feltet er [fastgjort fra Excel](service-dashboard-pin-tile-from-excel.md), åbnes Excel Online i Power BI.
+   > Hvis feltet var blevet oprettet ved brug af [Power BI Q&A](consumer/end-user-q-and-a.md), ville Q&A-siden være blevet åbent i stedet for. Hvis feltet er [fastgjort fra Excel](service-dashboard-pin-tile-from-excel.md), åbnes Excel Online i Power BI.
    > 
    > 
 1. Tilbage på fanen **Datasæt** har du flere muligheder for at udforske dit datasæt.  Du kan ikke åbne det for at se alle rækkerne og kolonnerne (ligesom du kan i Power BI Desktop eller Excel).  Når en person deler en indholdspakke med kollegaer, ønsker de typisk at dele indsigt og ikke give deres kollegaer direkte adgang til dataene. Men det betyder ikke, at du ikke kan udforske datasættet.  
@@ -89,7 +89,7 @@ Udforsk nu dashboardet, datasættet og rapporten på egen hånd. Der er mange fo
    * En af måderne til at udforske datasættet er ved at oprette dine egne visualiseringer og rapporter fra bunden.  Vælg ikonet Diagram ![Ikonet Rapport](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) for at åbne datasættet i rapportredigeringstilstand.
      
        ![helt ny rapport](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
-   * En anden måde til at udforske datasættet er ved at køre [Hurtig indsigt](service-insights.md). Vælg ellipsen (...), og vælg **Få indsigt**. Vælg **Vis indsigt**, når indsigten er klar.
+   * En anden måde til at udforske datasættet er ved at køre [Hurtig indsigt](consumer/end-user-insights.md). Vælg ellipsen (...), og vælg **Få indsigt**. Vælg **Vis indsigt**, når indsigten er klar.
      
        ![Rapporten Indsigt](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
@@ -130,7 +130,7 @@ Udforsk nu datasættet, relationerne og rapporten på egen hånd. Du kan få hj�
 
 
 ## <a name="next-steps"></a>Næste trin
-[Grundlæggende begreber i Power BI](service-basic-concepts.md)
+[Grundlæggende begreber i Power BI](consumer/end-user-basic-concepts.md)
 
 [Eksempler til Power BI-tjenesten](sample-datasets.md)
 

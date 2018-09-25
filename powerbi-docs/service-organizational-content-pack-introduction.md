@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9109bd45f47e92d9158b9247fe32a43132fff720
-ms.sourcegitcommit: 2356dc8e5488438a43ba7f0ba9a55a2372669b47
+ms.openlocfilehash: 453b0f5852fefb1008b8013a0c42af4cc1d42f32
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39624292"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547631"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion til organisationsindholdspakker i Power BI
 > [!NOTE]
@@ -42,7 +42,7 @@ Publicering af en organisationsindholdspakke føjer den til AppSource.  Dette ce
 
 * Hvis du vil have vist AppSource, skal du vælge **Hent data** > **Min organisation** > **Hent**.
 
-Læs mere om at [finde og åbne organisationsindholdspakker](service-organizational-content-pack-find-and-open.md).
+Læs mere om at [finde og åbne organisationsindholdspakker](consumer/end-user-content-pack.md).
 
 ## <a name="the-life-cycle-of-an-organizational-content-pack"></a>Livscyklus for en organisationsindholdspakke
 Alle Power BI Pro-brugere kan oprette, publicere og få adgang til organisationsindholdspakkerne. Kun vedkommende, der har oprettet indholdspakken, kan redigere projektmappen og datasættet, planlægge opdatering og slette den.
@@ -52,7 +52,7 @@ Livscyklus ser noget nær således ud:
 1. I Power BI Pro opretter Nate en indholdspakke og publicerer den til distributionsgruppen Marketing. Indstillingerne for opdatering nedarves i datasættet og kan kun ændres af Nate.
    
    > [!NOTE]
-   > Hvis Nate opretter indholdspakken inde fra et [apparbejdsområde i Power BI](service-create-distribute-apps.md), som han tilhører, så kan andre i Power BI-arbejdsområdet overtage ejerskabet, selvom han forlader arbejdsområdet.
+   > Hvis Nate opretter indholdspakken inde fra et [apparbejdsområde i Power BI](consumer/end-user-create-apps.md), som han tilhører, så kan andre i Power BI-arbejdsområdet overtage ejerskabet, selvom han forlader arbejdsområdet.
    > 
    > 
 2. Nate sender mails til distributionsgruppen, hvor han fortæller dem om den nye indholdspakke.
@@ -76,7 +76,7 @@ Alle medlemmer af distributionsgruppen har de samme tilladelser til dataene som 
 
 ## <a name="next-steps"></a>Næste trin
 * [Opret og publicer en organisationsindholdspakke](service-organizational-content-pack-create-and-publish.md)
-* [Opret og distribuer en app i Power BI](service-create-distribute-apps.md) 
-* [Power BI – Grundlæggende begreber](service-basic-concepts.md)
+* [Opret og distribuer en app i Power BI](consumer/end-user-create-apps.md) 
+* [Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
