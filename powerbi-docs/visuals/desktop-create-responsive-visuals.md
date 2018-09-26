@@ -10,30 +10,30 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1c50bcf656f967502e8bb01f7ca5184996170bed
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 1260f2c69a4ab913f7451671ab7821ee250998c0
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566320"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187231"
 ---
 # <a name="optimize-a-power-bi-visual-for-any-size"></a>Optimer en Power BI-visualisering til enhver størrelse
 Som standard er visuals *dynamiske*, når du opretter en ny rapport, så de ændres dynamisk for at vise den maksimale mængde data og indsigt, uanset skærmstørrelse. Du kan angive, at visuals i ældre rapporter også skal ændre størrelse dynamisk.
 
 Når visualiseringen ændrer størrelse, prioriterer Power BI datavisningen ved f.eks. at fjerne udfyldning og flytte forklaringen til øverst i visualiseringen automatisk, således at visualiseringen fortsat er informativ, selvom den bliver mindre. Dynamisk funktionalitet er især nyttigt i forbindelse med visualiseringer i Power BI-mobilappen på telefoner.
 
-![Dynamisk tilpasning af en visualiserings størrelse](./media/desktop-create-responsive-visuals/power-bi-responsive-visual.gif)
+![Dynamisk tilpasning af en visualiserings størrelse](media/desktop-create-responsive-visuals/power-bi-responsive-visual.gif)
 
 Alle visuals med X- og Y-akser og udsnit kan ændre størrelse dynamisk.
 
 ## <a name="turn-on-responsiveness-in-power-bi-desktop"></a>Slå dynamisk funktionalitet til i Power BI Desktop
 1. I en ældre rapport i Power BI Desktop skal du på fanen **Vis** sikre, at du har åbnet **Skrivebordslayout**.
    
-    ![Ikonet Skrivebordslayout](./media/desktop-create-responsive-visuals/power-bi-desktop-layout.png)
+    ![Ikonet Skrivebordslayout](media/desktop-create-responsive-visuals/power-bi-desktop-layout.png)
 2. Vælg en visualisering, og i ruden **Visualiseringer** skal du vælge sektionen **Format**.
 3. Udvid **Generelt** > skub **Dynamisk** til **Til**.
    
-    ![Dynamisk Til](././media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
+    ![Dynamisk Til](media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
    
      Når du nu [opretter en rapport, der er optimeret til telefonen](../desktop-create-phone-report.md) og tilføjer denne visualisering, tilpasses den på fornem vis.
 
@@ -44,7 +44,7 @@ Du kan slå dynamisk funktionalitet til for en visual i en rapport i Power BI-tj
 2. Vælg en visualisering, og i ruden **Visualiseringer** skal du vælge sektionen **Format**.
 3. Udvid **Generelt** > skub **Dynamisk** til **Til**.
    
-    ![Dynamisk Til](././media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
+    ![Dynamisk Til](media/desktop-create-responsive-visuals/power-bi-turn-responsive-on.png)
    
      Når du nu [opretter en telefonvisning af denne rapport](../desktop-create-phone-report.md) og tilføjer denne visual, tilpasses den på fornem vis.
 

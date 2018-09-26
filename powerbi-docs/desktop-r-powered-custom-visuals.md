@@ -1,21 +1,21 @@
 ---
 title: Brug R-drevne brugerdefinerede visuelle elementer i Power BI
 description: Brug R-drevne brugerdefinerede visuelle elementer i Power BI
-author: davidiseminger
+author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 07/27/2018
-ms.author: davidi
+ms.author: maghan
 LocalizationGroup: Create reports
-ms.openlocfilehash: 75808c850659395dd8576b7de4dca0379dfff2f5
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: b9f9b6faa7490ed05626f52623750ea79183d36a
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329931"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187369"
 ---
 # <a name="use-r-powered-custom-visuals-in-power-bi"></a>Brug R-drevne brugerdefinerede visuelle elementer i Power BI
 I **Power BI Desktop** og **Power BI-tjenesten** kan du bruge R-drevne brugerdefinerede visuals uden at have kendskab til R og uden et R-script. Det giver dig mulighed for at udnytte den analytiske og visuelle kraft i visuelle R-elementer og R-scripts uden at skulle lære R eller programmere.
