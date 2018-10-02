@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: e75cc0f7ca31257ea46af20b63c29d0d870ef7a0
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: bb29cd9edc5e44293344b7194ec94af482bd0166
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39329678"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417366"
 ---
 # <a name="data-refresh-in-power-bi"></a>Opdatering af data i Power BI
 At sørge for altid at have de nyeste data er ofte kritisk for at kunne tage de rigtige beslutninger. Du har muligvis allerede brugt Hent data i Power BI til at oprette forbindelse til og overføre data, så du kunne oprette nogle rapporter og et dashboard. Nu skal du sikre dig, at dataene virkelig er de nyeste og bedste.
@@ -211,8 +211,6 @@ Realtidsdashboards bruger Microsoft Power BI REST API eller Microsoft Stream Ana
 | **Datakilde** | **Automatisk** | **Brugerkonfigureret manuel eller planlagt opdatering** | **Gateway påkrævet** |
 | --- | --- | --- | --- |
 | Brugerdefinerede apps, der er udviklet med Power BI Rest API eller Microsoft Stream Analytics |Ja, livestreaming |Nej |Nej |
-
-Du kan læse mere i [Oprettelse af et realtidsdashboard i Power BI](https://msdn.microsoft.com/library/mt267603.aspx).
 
 ## <a name="configure-scheduled-refresh"></a>Konfigurer planlagt opdatering
 Hvis du vil vide, hvordan du konfigurerer planlagt opdatering, skal du se [Konfigurer planlagt opdatering](refresh-scheduled-refresh.md)
