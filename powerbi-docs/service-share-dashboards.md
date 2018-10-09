@@ -11,19 +11,19 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 4d43ffb1f4e005830fd36da4e80cf4d0c7d86fed
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 8644bc01aa845ff91950169f011cb70fb161ecb1
+ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549931"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48271757"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Del dine Power BI-dashboards og -rapporter med kolleger og andre
 *Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Med Power BI får du også [adskillige andre måder at samarbejde om og distribuere dashboards og rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
 
 ![Delingsikon på en liste over favoritdashboards](media/service-share-dashboards/power-bi-share-dash-report-favorites.png)
 
-Du skal bruge en [Power BI Pro-licens](service-free-vs-pro.md), uanset om du deler indhold i eller uden for din organisation. Dine modtagere skal også bruge en Power BI Pro-licens, ellers skal indholdet være i en [Premium-kapacitet](service-premium.md). 
+Du skal bruge en [Power BI Pro-licens](service-features-license-type.md), uanset om du deler indhold i eller uden for din organisation. Dine modtagere skal også bruge en Power BI Pro-licens, ellers skal indholdet være i en [Premium-kapacitet](service-premium.md). 
 
 Du kan dele dashboards og rapporter fra de fleste steder i Power BI-tjenesten: Favoritter, Seneste, Delt med mig (hvis ejeren tillader det), Mit arbejdsområde eller andre arbejdsområder. Når du deler et dashboard eller en rapport, kan de personer, du deler med, få det/den vist og interagere med det/den, men ikke redigere det/den. De kan se de samme data som dig i dashboardet eller rapporten, medmindre [sikkerhed på rækkeniveau (RLS)](service-admin-rls.md) anvendes. De kolleger, du deler med, kan også dele med deres kolleger, hvis du giver dem lov til det. Personer uden for organisationen kan også få vist og interagere med dashboardet eller rapporten, men kan ikke dele det/den. 
 

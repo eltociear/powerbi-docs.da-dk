@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9c36034ad5e8175e08f1d16c2f5148c5dab0ebbd
-ms.sourcegitcommit: 640382408111d6e9cd1b9dfad0b484e3c727e454
+ms.openlocfilehash: 2536ea34cadae5f348e619d713420787db4c467a
+ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42702890"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799040"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Brug brugerdefinerede dataconnectors med datagatewayen i det lokale miljø
 
@@ -45,8 +45,6 @@ Når denne indstilling er aktiveret, kan du se dine brugerdefinerede connectors 
 
 * Kontrollér, at den mappe, du opretter, er tilgængelig for gatewaytjenesten i baggrunden. Mapper under din brugers Windows-mappe eller systemmapper vil normalt ikke være tilgængelige. I gatewaykonfigurationen vises der en meddelelse, hvis mappen ikke er tilgængelig (dette gælder ikke den personlige version af gatewayen)
 * Hvis du vil kunne bruge brugerdefinerede connectors med datagatewayen i det lokale miljø, skal de implementere sektionen “TestConnection” i koden til den brugerdefinerede connector. Dette er ikke påkrævet, når du bruger brugerdefinerede connectors med Power BI Desktop. Derfor kan du have en, der virker med Desktop, men ikke med gatewayen. I [denne dokumentation](https://github.com/Microsoft/DataConnectors/blob/master/docs/m-extensions.md#implementing-testconnection-for-gateway-support) kan du se, hvordan du implementerer sektionen TestConnection.
-* Brugerdefinerede connectors med OAuth-godkendelse understøttes ikke.
-* Brugerdefinerede connectors med DirectQuery understøttes ikke.
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -11,17 +11,17 @@ ms.topic: conceptual
 ms.date: 01/18/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8f025c11a5269befdb7819684e10e8511ae6bc98
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 9fed01feb86530dbee10e446d41799a3e2ccd9e3
+ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545629"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48271503"
 ---
 # <a name="share-a-filtered-power-bi-report-with-your-coworkers"></a>Del en filtreret Power BI-rapport med dine kolleger
 *Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Med Power BI får du [adskillige andre måder at samarbejde om og distribuere dine rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
 
-Til deling skal du og dine modtagere bruge en [Power BI Pro-licens](service-free-vs-pro.md), eller indholdet skal være i en [Premium-kapacitet](service-premium.md). Forslag? Power BI-teamet tager meget gerne mod din feedback, så gå til [webstedet for Power BI-community'et](https://community.powerbi.com/).
+Til deling skal du og dine modtagere bruge en [Power BI Pro-licens](service-features-license-type.md), eller indholdet skal være i en [Premium-kapacitet](service-premium.md). Forslag? Power BI-teamet tager meget gerne mod din feedback, så gå til [webstedet for Power BI-community'et](https://community.powerbi.com/).
 
 Du kan dele en rapport med kolleger inden for det samme maildomæne som dig fra de fleste steder i Power BI-tjenesten: Favoritter, Seneste, Delt med mig (hvis ejeren tillader det), Mit arbejdsområde eller andre arbejdsområder. Når du deler en rapport, kan de personer, du deler den med, få den vist og interagere med den, men ikke redigere den. De kan se de samme data, som du kan se i rapporterne, medmindre der er anvendt [sikkerhed på rækkeniveau (RLS)](service-admin-rls.md). 
 

@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: maggies
-ms.openlocfilehash: 40d3e311e9ff9276200a37cabf2d29b324f83f7b
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 4484eca5e810da7674d20e368383429c9c6f5508
+ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44730544"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48271641"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Del et dashboard eller en rapport fra Power BI-mobilappsene
 Gælder for:
@@ -23,7 +23,7 @@ Gælder for:
 |:--- |:--- |:--- |:--- |:--- |
 | iPhones |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-enheder |
 
-Med en [Power BI Pro-licens](../../service-free-vs-pro.md) kan du invitere andre til at få vist dine dashboards og rapporter ved at dele links fra Power BI-mobilappsene. Du kan dele med hvem som helst i eller uden for organisationen, uanset om de har en mailkonto i organisationen eller ej. De skal dog have en Power BI Pro-licens, ellers skal indholdet være i en [Premium-kapacitet](../../service-premium.md).
+Med en [Power BI Pro-licens](../../service-features-license-type.md) kan du invitere andre til at få vist dine dashboards og rapporter ved at dele links fra Power BI-mobilappsene. Du kan dele med hvem som helst i eller uden for organisationen, uanset om de har en mailkonto i organisationen eller ej. De skal dog have en Power BI Pro-licens, ellers skal indholdet være i en [Premium-kapacitet](../../service-premium.md).
 
 Ved hjælp af Power BI-mobilapps til iOS og Android kan du også [anmærke og dele et snapshot af et felt, en rapport eller en visualisering](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) med andre. 
 

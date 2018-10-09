@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2017
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: dce044a3f143ba85732c8345639ea57f44f05d5f
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 60ac0a944b1eb54ab998fbf25cb5fb79d6dddbe6
+ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "37926581"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48271894"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration af Power BI – ofte stillede spørgsmål
 
@@ -120,7 +120,7 @@ Du skal installere den seneste 64-bit version af [Azure Active Directory Module 
     Get-MsolCompanyInformation | fl allow*
 
 ### <a name="how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi"></a>Hvordan kan jeg forhindre mine eksisterne brugere i at begynde at bruge Power BI?
-Som administrator kan du tage forholdsregler for at forhindre brugere i at tilmelde sig Power BI. Hvis du blokerer dette, vil brugernes forsøg på at tilmelde sig mislykkes, og de får besked om at kontakte administratoren for deres organisation. Du skal ikke gentage denne proces, hvis du allerede har deaktiveret automatisk licensdistribution (f.eks. Office 365 for Education til studerende, undervisere og ansatte). [Få mere at vide](service-admin-service-free-in-your-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory)
+Som administrator kan du tage forholdsregler for at forhindre brugere i at tilmelde sig Power BI. Hvis du blokerer dette, vil brugernes forsøg på at tilmelde sig mislykkes, og de får besked om at kontakte administratoren for deres organisation. Du skal ikke gentage denne proces, hvis du allerede har deaktiveret automatisk licensdistribution (f.eks. Office 365 for Education til studerende, undervisere og ansatte). [Få mere at vide](service-admin-licensing-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory)
 
 AAD-indstillingen, der styrer dette, er **AllowAdHocSubscriptions**. For de fleste lejere vil denne indstilling være indstillet til sand, hvilket betyder, at den er aktiveret. Hvis du har købt Power BI via en partner, kan denne indstilling som standard være indstillet til falsk, hvilket betyder, at den er deaktiveret.
 

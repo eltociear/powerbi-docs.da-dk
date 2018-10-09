@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 22d32315040352e013ae8331e9433a9e60e97f5c
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: c99d2047bc021f7e9d98145bc9cb884917fa3b5c
+ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545745"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48271694"
 ---
 # <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Hvordan kan jeg samarbejde og dele i Power BI?
 
@@ -29,7 +29,7 @@ I denne artikel sammenligner vi disse muligheder for at samarbejde og dele i Pow
 - Udskrivning af rapporter.
 * Publicering på internettet til offentlige websteder, hvor alle i hele verden kan se og interagere med den.
 
-Uanset hvilken indstilling du vælger, skal du bruge en [Power BI Pro-licens](service-free-vs-pro.md) for at dele, ellers skal indholdet være i [Premium-kapacitet](service-premium.md). Licenskrav varierer alt efter kollegerne, der får vist dine dashboards, afhængigt af din valgte indstilling. De følgende afsnit går længere ned i detaljen. 
+Uanset hvilken indstilling du vælger, skal du bruge en [Power BI Pro-licens](service-features-license-type.md) for at dele, ellers skal indholdet være i [Premium-kapacitet](service-premium.md). Licenskrav varierer alt efter kollegerne, der får vist dine dashboards, afhængigt af din valgte indstilling. De følgende afsnit går længere ned i detaljen. 
 
 ![Apps i Power BI-tjenesten](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-home-blog.png)
 
