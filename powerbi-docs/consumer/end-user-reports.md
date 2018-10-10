@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 5268241c32112847c879407374b325dd63dd8aab
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: cae5c83f6e220689bfd7d484d5d86c188325ad05
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46564825"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908618"
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
 ## <a name="what-is-a-power-bi-report"></a>Hvad er en Power BI-rapport?
@@ -67,7 +67,7 @@ Her er nogle emner opdelt efter rolle, som kan hjælpe dig med at komme i gang.
 * Start med en [præsentation af Power BI-tjenesten](end-user-basic-concepts.md), så du ved, hvor du kan finde rapporter og værktøjer til rapporten.
 * Få mere at vide om, hvordan du [åbner en rapport](end-user-report-open.md) og al den interaktion, der er tilgængelig i [Læsevisning](end-user-reading-view.md).
 * Bliv fortrolig med rapporter ved at se præsentationen af et af vores [eksempler](../sample-tutorial-connect-to-the-samples.md).  
-* Har du ikke brug for rapporten mere? Du kan [fjerne den](end-user-delete.md).
+<!--* Don't need the report any more? You can [remove it](../service-delete.md).-->
 * Hvis du vil se, hvilke datasæt, rapporten bruger, og hvilke dashboards der har felter, der er fastgjort fra rapporten, [kan du få vist relateret indhold](end-user-related.md).
 
 > [!TIP]
@@ -79,6 +79,4 @@ Her er nogle emner opdelt efter rolle, som kan hjælpe dig med at komme i gang.
 [Hvad er Power BI?](../power-bi-overview.md) 
 
 [Power BI – Grundlæggende begreber](end-user-basic-concepts.md)
-
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

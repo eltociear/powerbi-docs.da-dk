@@ -7,46 +7,39 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/29/2018
+ms.date: 08/29/2018
 ms.author: mihart
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e01a62bc35edc736fd102d75e7049b42f97c8da5
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: add6a02d10c2dfe0e0fd93b9d12f03a10d057241
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566067"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908204"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Opret forbindelse til de tjenester, du bruger med Power BI
-Du kan oprette forbindelse til flere af de tjenester, du bruger til at køre din virksomhed, f.eks. Salesforce, Microsoft Dynamics og Google Analytics. Du kan starte Power BI vha. dine legitimationsoplysninger for at oprette forbindelse til tjenesten. Derefter oprettes der en Power BI-app med et dashboard og et sæt Power BI-rapporter, som automatisk viser dine data og giver et visuelt indblik i din virksomhed. 
-
-Log på Power BI for at få vist alle de [tjenester, du kan oprette forbindelse til](https://app.powerbi.com/getdata/services). Power BI-teamet tilføjer nye tjenester jævnligt.
-
-![AppSource-apps](./media/end-user-connect-to-services/overview.png)
 
 Når du har installeret appen, kan du få vist dashboardet og rapporterne i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) og i Power BI-mobilapperne. 
 
-![Google Analytics-app i Power BI-mobilappen](./media/end-user-connect-to-services/power-bi-service-mobile-app-240.png)
+![Google Analytics-app i Power BI-mobilappen](media/end-user-connect-to-services/power-bi-service-mobile-app-240.png)
 
 ## <a name="get-started"></a>Kom i gang
-[!INCLUDE [powerbi-service-apps-get-more-apps](../includes/powerbi-service-apps-get-more-apps.md)]
+[!INCLUDE [powerbi-service-apps-get-more-apps](.././includes/powerbi-service-apps-get-more-apps.md)]
 
 ## <a name="view-the-dashboard-and-reports"></a>Få vist dashboardet og rapporterne
 Når importen er fuldført, vises den nye app vises på siden Apps.
 
 1. Vælg **Apps** i navigationsruden til venstre > vælg appen.
    
-     ![Siden Apps](./media/end-user-connect-to-services/power-bi-service-apps-open-app.png)
+     ![Siden Apps](media/end-user-connect-to-services/power-bi-service-apps-open-app.png)
 2. Du kan stille et spørgsmål ved at skrive det i feltet til spørgsmål og svar eller klikke på et felt for at åbne den underliggende rapport. 
    
-    ![Google Analytics-dashboard](./media/end-user-connect-to-services/googleanalytics2.png)
+    ![Google Analytics-dashboard](media/end-user-connect-to-services/googleanalytics2.png)
    
     Du kan filtrere og fremhæve dataene i rapporten, men du kan ikke gemme dine ændringer.
 
 ## <a name="whats-included"></a>Følgende er inkluderet
 Når du har forbindelse til en tjeneste, kan du se en app, der er oprettet for nylig med et dashboard, rapporter og datasæt. Dataene fra tjenesten fokuserer på et bestemt scenarie, og det indeholder ikke nødvendigvis alle oplysninger fra tjenesten. Der er planlagt automatisk opdatering af dataene én gang om dagen. Du kan styre tidsplanen ved at vælge datasættet.
-
-Du kan også bruge [Power BI Desktop](../desktop-get-the-desktop.md) til at oprette forbindelse til nogle tjenester, f.eks Google Analytics, og oprette dine egne tilpassede dashboards og rapporter.  
 
 Hvis du vil have flere oplysninger om, hvordan du opretter forbindelse til bestemte tjenester, skal du se på de enkelte Hjælp-sider.
 
@@ -56,7 +49,7 @@ Når Power BI opretter forbindelse til tjenesten første gang, kan du evt. se et
 
 * Vælg ikonet med spørgsmålstegnet (**?**) i øverste højre hjørne > **Få hjælp**.
   
-    ![Få hjælp-ikonet](./media/end-user-connect-to-services/power-bi-service-get-help.png)
+    ![Få hjælp-ikonet](media/end-user-connect-to-services/power-bi-service-get-help.png)
 
 **Manglende oplysninger**  
 Dashboardet og rapporterne inkluderer indhold fra tjenesten, der fokuserer på et bestemt scenarie, og de indeholder ikke nødvendigvis alle oplysninger fra tjenesten. Hvis der er en bestemt metrikværdi, som du ikke får vist i indholdspakken, skal du føje en idé til siden [Support til Power BI](https://support.powerbi.com/forums/265200-power-bi).
@@ -67,7 +60,7 @@ Bruger en tjeneste, du vil foreslå til en Power BI-app? Gå til siden [Support 
 Har du en tjeneste, du vil oprette en app til? [Indsend din nominering](https://azure.microsoft.com/marketplace/programs/certified/apply/), og vælg "Udgiv en Power BI-indholdspakke" for at komme i gang.
 
 ## <a name="next-steps"></a>Næste trin
-* [Hvad er apps i Power BI?](end-user-apps.md)
+* [Hvad er apps i Power BI?](../service-install-use-apps.md)
 * [Hent data i Power BI](../service-get-data.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

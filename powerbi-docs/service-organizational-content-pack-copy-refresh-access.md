@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1fbb49f55c4139845f806d590ffb4956abfe0dcd
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 37cfca811b7e60bde832396e67b246933d4e0a8e
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46543452"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908411"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisationsindholdspakker: Kopiér, opdater og få adgang
 
@@ -51,6 +51,6 @@ Se [Administrer, opdater og slet organisationsindholdspakker](service-organizati
 
 ## <a name="next-steps"></a>Næste trin
 * [Introduktion til organisationsindholdspakker](service-organizational-content-pack-introduction.md)
-* [Opret en gruppe i Power BI](consumer/end-user-create-apps.md)
+* [Opret en gruppe i Power BI](service-create-distribute-apps.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

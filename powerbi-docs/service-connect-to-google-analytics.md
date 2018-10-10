@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: bd8a8b9a9aff451282c5cef8a6dd6f27b90335d7
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 1bb1831d37dc3f8bfe5ee141859cbccec541735e
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548689"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908779"
 ---
 # <a name="connect-to-google-analytics-with-power-bi"></a>Opret forbindelse til Google Analytics med Power BI
 For at oprette forbindelse til Google Analytics via Power BI skal du starte med at oprette forbindelse til din Google Analytics-konto. Du får et Power BI-dashboard og et sæt af Power BI-rapporter, der giver indsigt i trafikken på dit websted og brugerdimensioner. Du kan interagere med dashboards og rapporter, men du kan ikke gemme ændringer. Dataene opdateres automatisk én gang dagligt.
@@ -27,16 +27,16 @@ Du kan oprette brugerdefinerede dashboards og rapporter ud fra [Google Analytics
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-1. Vælg **Google Analytics** \> **Hent**.
+3. Vælg **Google Analytics** \> **Hent**.
    
    ![](media/service-connect-to-google-analytics/ga.png)
-2. Når du bliver spurgt, skal du angive dine Google Analytics-legitimationsoplysninger. Vælg **oAuth 2** som Godkendelsesmetode, og klik på **Log på**. Følg Googles godkendelsesflow, som kan omfatte to-faktorgodkendelse, hvis det er konfigureret.
+4. Når du bliver spurgt, skal du angive dine Google Analytics-legitimationsoplysninger. Vælg **oAuth 2** som Godkendelsesmetode, og klik på **Log på**. Følg Googles godkendelsesflow, som kan omfatte to-faktorgodkendelse, hvis det er konfigureret.
    
    ![](media/service-connect-to-google-analytics/creds.png)
-3. Klik på **Acceptér** for at give Power BI adgang til dine Google Analytics-data.
+5. Klik på **Acceptér** for at give Power BI adgang til dine Google Analytics-data.
    
    ![](media/service-connect-to-google-analytics/googleanalytics.png)
-4. Power BI opretter forbindelse til en bestemt Google Analytics-visning. Vælg det kontonavn, egenskabsnavn og visningsnavn, du vil oprette forbindelse til. Disse oplysninger finder du i din Google Analytics-konto i øverste venstre hjørne eller på fanen **Hjem**. Se detaljer nedenfor. 
+6. Power BI opretter forbindelse til en bestemt Google Analytics-visning. Vælg det kontonavn, egenskabsnavn og visningsnavn, du vil oprette forbindelse til. Disse oplysninger finder du i din Google Analytics-konto i øverste venstre hjørne eller på fanen **Hjem**. Se detaljer nedenfor. 
    
    ![](media/service-connect-to-google-analytics/params2.png)
 5. Klik på **Opret forbindelse** for at starte importprocessen. 
@@ -44,7 +44,7 @@ Du kan oprette brugerdefinerede dashboards og rapporter ud fra [Google Analytics
 ## <a name="view-the-google-analytics-dashboard-and-reports"></a>Få vist Google Analytics-dashboard og -rapporter
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-open-app.md)]
 
-      ![](media/service-connect-to-google-analytics/googleanalytics2.png)
+   ![](media/service-connect-to-google-analytics/googleanalytics2.png)
 
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-what-now.md)]
 
@@ -69,7 +69,7 @@ Har du stadig problemer? Opret en supportanmodning for at få fat i Power BI-tea
 * Fra Power BI-supportwebstedet (hvor du læser denne artikel) skal du vælge **Kontakt Support** i højre side.
 
 ## <a name="next-steps"></a>Næste trin
-* [Hvad er apps i Power BI?](consumer/end-user-apps.md)
+* [Hvad er apps i Power BI?](service-create-distribute-apps.md)
 * [Hent data i Power BI](service-get-data.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

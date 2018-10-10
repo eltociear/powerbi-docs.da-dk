@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/25/2018
+ms.date: 08/25/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8e5e2211af7dc53dba20a8d43c1083517b51bf17
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: eac6a1b4f7a3f734aa22c715a4ef196193230283
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565975"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908848"
 ---
 # <a name="export-data-from-visualizations"></a>Eksportér data fra visualiseringer
 Hvis du gerne vil se de data, der bruges til at oprette en visualisering, kan du [få vist de pågældende data i Power BI](end-user-show-data.md) eller eksportere dataene til Excel som en .xlsx- eller .csv-fil.   
@@ -55,7 +55,7 @@ Hvis du vil følge med, skal du åbne [eksempelrapporten med en indkøbsanalyse]
 4. Vælg ellipsen i visualiseringens øverste højre hjørne. Vælg **Eksportér data**.
 
    ![](media/end-user-export-data/power-bi-export-data2.png)
-5. I Power BI online, hvis visualiseringen har en aggregering (f.eks. hvis du har ændret **Antal** til *Gennemsnit*, **sum** eller *Minimum*), har du to valgmuligheder: **Opsummerede data** og **Underliggende data**. I Power BI Desktop har du kun indstillingen for **Opsummerede data** Du kan få hjælp til at forstå aggregeringer i [Aggregeringer i Power BI](../service-aggregates.md).
+5. I Power BI online, hvis visualiseringen har en aggregering (f.eks. hvis du har ændret **Antal** til *Gennemsnit*, *sum* eller *Minimum*), har du to valgmuligheder: **Opsummerede data** og **Underliggende data**. I Power BI Desktop har du kun indstillingen for **Opsummerede data** Du kan få hjælp til at forstå aggregeringer i [Aggregeringer i Power BI](../service-aggregates.md).
 
     ![](media/end-user-export-data/power-bi-export-data5.png)
 6. Vælg **Opsummerede data** > **Eksportér**, og vælg .xlsx eller .csv. Dataene eksporteres i Power BI.  Hvis du har anvendt filtre for visualiseringen, vil de eksporterede data være filtreret. Når du vælger **Eksportér**, bliver du i browseren bedt om at gemme filen. Når du har gemt den, skal du åbne filen i Excel.

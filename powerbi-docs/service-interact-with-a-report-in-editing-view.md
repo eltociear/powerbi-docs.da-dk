@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 4c206e6b1abb37bdaeb0e03fbce31b7b12e356ba
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: e03f6b4542c4f5f6c1d1a84892030520651ac9a3
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47186647"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908301"
 ---
 # <a name="interact-with-a-report-in-editing-view-in-power-bi-service"></a>Interager med en rapport i Redigeringsvisning i Power BI-tjenesten
 Rapporter kan oprettes og redigeres i Power BI-tjenesten og Power BI Desktop. I Power BI-tjenesten kan rapporter oprettes og redigeres i **Redigeringsvisning**. I Power BI Desktop kan rapporter oprettes og redigeres i [**Rapportvisning**](desktop-report-view.md). Denne artikel dækker Redigeringsvisning i Power BI-tjenesten. 
 
 Power BI-tjenesten har to forskellige tilstande til at interagere med rapporter – [Læsevisning](consumer/end-user-reading-view.md) til *forbrugere* af rapporter og Redigeringsvisning til rapportejere og -oprettere.  En Power BI Pro-licens er påkrævet til deling af rapporter samt til redigering af rapporter, der er oprettet af andre. Hvis du ikke har en Pro-licens, kan du stadig oprette rapporter, men du kan ikke [dele dem](service-share-reports.md).    
 
-I Redigeringsvisning for en rapport har du stor fleksibilitet til både at undersøge og udvikle rapporter. Alle funktionerne i [Læsevisning](consumer/end-user-reading-view.md) er tilgængelige -- samt meget mere. Redigeringsvisning er kun tilgængelig for den person, der oprettede rapporten, eller for de kolleger, der er [medejere af rapporten som et medlem eller en administrator af et apparbejdsområde](consumer/end-user-create-apps.md).
+I Redigeringsvisning for en rapport har du stor fleksibilitet til både at undersøge og udvikle rapporter. Alle funktionerne i [Læsevisning](consumer/end-user-reading-view.md) er tilgængelige -- samt meget mere. Redigeringsvisning er kun tilgængelig for den person, der oprettede rapporten, eller for de kolleger, der er [medejere af rapporten som et medlem eller en administrator af et apparbejdsområde](service-create-distribute-apps.md).
 
 ## <a name="functionality-only-available-in-editing-view"></a>Funktionerne er kun tilgængelige i Redigeringsvisning
 Se listen over emner under overskriften **Rapporter** i indholdsfortegnelsen til venstre. Det er en lang liste, og mange af emnerne omfatter funktioner, *som kun er tilgængelige, hvis du har redigeringstilladelse til en rapport*.  For at hjælpe dig med at navigere i indholdsfortegnelsen er Redigeringsvisning nødvendig for at:

@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
-ms.openlocfilehash: c33e7dd69d4bd0a0d09ebc124739d5d017c631bc
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4c11b65d8d9dcb4a0b07db6dcf0d264350f351bf
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46550023"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908739"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-on-android-devices"></a>Introduktion til Power BI-mobilappen på Android-enheder
 Android-appen til Microsoft Power BI leverer BI-mobiloplevelsen til Power BI, Power BI Report Server og Reporting Services. Få vist og interager med dit firmas dashboards lokalt og i skyen overalt – med direkte, berøringsfølsom mobiladgang. Udforsk dataene i dashboards, og del dem med dine kollegaer i mails eller tekstmeddelelser. 
@@ -119,11 +119,11 @@ Læs mere om [konfiguration af Power BI-mobilapps til Android med Microsoft Intu
 Her er nogle andre ting, du kan gøre i Android-enhedsappen til Power BI med dashboards og rapporter i Power BI samt rapporter og KPI'er i Power BI-rapportserveren eller Reporting Services-webportalen.
 
 ### <a name="power-bi-dashboards-and-reports"></a>Power BI-dashboards og -rapporter
-* Få vist [dine apps](../end-user-apps.md).
+* Få vist [dine apps](../../service-create-distribute-apps.md).
 * Få vist dine [dashboards](../../mobile-apps-view-dashboard.md).
 * Udforske [fliserne på dine dashboards](../../mobile-tiles-in-the-mobile-apps.md).
 * Åbne [Power BI-rapporter](../../mobile-reports-in-the-mobile-apps.md).
-* Få vist [dine apps](../end-user-apps.md).
+* Få vist [dine apps](../../service-create-distribute-apps.md).
 * [Anmærke og dele fliser](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md).
 * Dele [dashboards](../../mobile-share-dashboard-from-the-mobile-apps.md).
 * [Scanne en Power BI QR-kode](../../mobile-apps-qr-code.md) med din Android-telefon for at åbne et relateret dashboardfelt eller en relateret rapport. 
