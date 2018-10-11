@@ -9,12 +9,12 @@ ms.topic: overview
 ms.date: 09/22/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 73a3188256b754517beb9f83a382c4005de6e7e7
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 61264a2a127ea45f542543d40fd62a9de8c3620d
+ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416975"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48798902"
 ---
 # <a name="what-is-power-bi"></a>Hvad er Power BI?
 **Power BI** er en samling af softwaretjenester, apps og forbindelser, der arbejder sammen for at forvandle usammenhængende data til faste, visuelt fordybende og interaktive indsigter. Uanset om dataene er et enkelt Excel-regneark eller en samling cloudbaserede og lokale hybride datalagre, så giver **Power BI** dig let adgang til at oprette forbindelse til dine datakilder, visualisere (eller granske) vigtige elementer og dele indholdet med alle.
@@ -43,7 +43,7 @@ Måske får du få vist lager- og produktionsgangen i et realtidsdashboard i tje
 
 Sådan udforsker du dokumenter, der er relevante for din rolle:
 - Power BI for [***designere***](desktop-what-is-desktop.md)
-- Power BI for [***forbrugere***](consumer/end-user-consuming.md)
+- Power BI for [***forbrugere***](consumer/end-user-consumer.md)
 - Power BI for [***udviklere***](developer/what-can-you-do.md)
 - Power BI for [***administratorer***](service-admin-administering-power-bi-in-your-organization.md)
 
