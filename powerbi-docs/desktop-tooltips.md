@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 69c0e6d253a1d8d8ecad9f562c0b992c01d4d577
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4264b10ac9ae42585ea8b814d0c15de7ea318752
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547105"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416791"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Opret værktøjstip baseret på rapportsider i Power BI Desktop
 Du kan oprette visuelt omfattende **værktøjstip til rapporter**, som vises, når du holder over visualiseringer, på baggrund af rapportsider, du opretter i **Power BI Desktop**. Ved at oprette en rapportside, der fungerer som et værktøjstip, kan dine brugerdefinerede værktøjstip indeholde visualiseringer, billeder og mange andre samlinger af elementer, du opretter på en rapportside. 
@@ -125,7 +125,7 @@ Der er nogle få begrænsninger og overvejelser i forbindelse med **værktøjsti
 
 * Fra og med september 2018-versionen af **Power BI Desktop**, som markerede den generelle tilgængelighed af værktøjstip, understøtter visuelle kortelementer også værktøjstip.
 * Fra og med udgivelsen af **Power BI Desktop** i juli 2018 understøttes visualiseringerne Tabel og Matrix for værktøjstip. 
-* Værktøjstip til rapporter understøttes ikke, når du får vist rapporter i mobilapps eller i indbyggede miljøer, herunder Publicer til web. 
+* Værktøjstip til rapporter understøttes ikke, når du får vist rapporter i mobilapps. 
 * Værktøjstip til rapporter understøttes ikke for brugerdefinerede visualiseringer. 
 * Klynger understøttes ikke i øjeblikket som felter, der kan vises i værktøjstip til rapporter. 
 * Når du vælger et felt, der skal vises for værktøjstip til rapporter, når du bruger et felt i forhold til en kategori, vises visualiseringer, der indeholder det pågældende felt, kun det angivne værktøjstip, når der er overensstemmelse mellem opsummeringen og det valgte felt. 

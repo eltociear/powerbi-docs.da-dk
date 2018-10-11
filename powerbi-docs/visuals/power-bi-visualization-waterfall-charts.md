@@ -8,15 +8,15 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d1c771ed49a000374c58beb694dda511a8c9a097
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: e9b48b79b30250c442140929045132fe1c4b10e8
+ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565814"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47448908"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vandfaldsdiagrammer i Power BI
 Et vandfaldsdiagram viser en løbende total som værdier, der tilføjes eller trækkes fra. Det er nyttigt for at forstå, hvordan en indledende værdi (f.eks, årets resultat) påvirkes af en række positive og negative ændringer.
@@ -39,32 +39,32 @@ Vi opretter et vandfaldsdiagram, der viser afvigelsen i salg (anslået salg i fo
 
 1. Vælg fanen **Datasæt**, og rul ned til det nye datasæt "Eksempel på detailhandelsanalyse".  Vælg ikonet **Opret rapport** for at åbne datasættet i redigeringstilstand for rapporten. 
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-report.png)
-2. I ruden **Felter** skal du markere **Salg\> Total salgsafvigelse**. Hvis **Total salgsafvigelse** ikke findes på **Y-aksen**, skal du trække den derhen.
-3. Konvertér diagrammet til et **vandfaldsdiagram**. 
+    ![Fanen Datasæt fremhævet](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-report.png)
+2. I ruden **Felter** skal du markere **Salg\> Total salgsafvigelse**. 
+3. Konvertér diagrammet til et **vandfaldsdiagram**. Hvis **Total salgsafvigelse** ikke findes på **Y-aksen**, skal du trække den derhen.
    
-    ![](media/power-bi-visualization-waterfall-charts/convertwaterfall.png)
+    ![Visualiseringsskabeloner](media/power-bi-visualization-waterfall-charts/convertwaterfall.png)
 4. Vælg **Tid** \> **Regnskabsmåned** for at føje det til beholderen **Kategori**. 
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
+    ![Vandfaldsdiagram](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
 5. Sortér vandfaldsdiagrammet kronologisk. I øverste højre hjørne skal du vælge ellipsen (...) og vælge **Regnskabsmåned**.
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sort.png)
+    ![vælg sortér efter > FiscalMonth](media/power-bi-visualization-waterfall-charts/power-bi-sort-by.png)
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sorted.png)
+    ![resultat af ny stigende sortering](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-sorted.png)
 6. Se lidt nærmere på, hvad der bidrager mest til ændringerne måned for måned. Træk **Butiks** > **området** til beholderen **Opdeling**.
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
+    ![Viser Store i opdelingsbucket](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown.png)
 7. Som standard tilføjes de øverste 5 bidragsydere for stigninger eller fald pr. måned i Power BI. Vi er dog kun interesseret i de øverste 2 bidragsydere.  I ruden Formatering skal du vælge **Opdeling** og angive **Maksimum** til 2.
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
+    ![Formatering > Opdeling](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-breakdown-maximum.png)
    
     En hurtig gennemgang viser, at områderne Ohio og Pennsylvania er de største bidragsydere til bevægelser, negative og positive, i vandfaldsdiagrammet. 
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
-8. Det er et interessant resultat. Har Ohio og Pennsylvania en væsentlig indvirkning, fordi salg i disse 2 områder er meget større end de andre områder?  Det kan vi kontrollere. Opret et kort, som ser nærmere på salg efter område.  
+    ![vandfaldsdiagram](media/power-bi-visualization-waterfall-charts/power-bi-waterfall-axis.png)
+8. Det er et interessant resultat. Har Ohio og Pennsylvania en væsentlig indvirkning, fordi salg i disse 2 områder er meget større end de andre områder?  Det kan vi kontrollere. Opret et kort, som ser nærmere på salgsværdien i år og sidste år efter distrikt.  
    
-    ![](media/power-bi-visualization-waterfall-charts/power-bi-map.png)
+    ![nærbillede af kort på PA og Ohio](media/power-bi-visualization-waterfall-charts/power-bi-map.png)
    
     Kortet understøtter vores teori.  Det viser, at disse 2 områder havde den højeste salgsværdi sidste år (boblestørrelse) og i år (bobleskygge).
 
@@ -74,13 +74,7 @@ Du kan få mere at vide om brug af ruden Filtre under [Føj et filter til en rap
 Fremhævning af en kolonne i et vandfaldsdiagram krydsfiltrerer andre visualiseringer på rapportsiden ... og omvendt. Kolonnen Total udløser dog ikke fremhævning eller reagerer på krydsfiltrering.
 
 ## <a name="next-steps"></a>Næste trin
-[Rapporter i Power BI](../consumer/end-user-reports.md)
+
+[Interaktioner mellem visualiseringer](../service-reports-visual-interactions.md)
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
-
-[Power BI – grundlæggende begreber](../consumer/end-user-basic-concepts.md)
-
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-

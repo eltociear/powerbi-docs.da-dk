@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a3102ff26a4dbf58d8db0073f1af9cf2db5b6515
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 63b75aae9fb9299119b606458a4a8832d77dd1be
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329379"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417159"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming i realtid i Power BI
 Med streaming i realtid med Power BI kan du streame data og opdatere dashboards i realtid. Alle visuelle elementer eller dashboards, der kan oprettes i Power BI, kan også oprettes til at vise og opdatere data og visuelle elementer i realtid. Enhederne og kilderne til streamingdata kan være sensorer på fabrikker, sociale medier, forbrugsdata for tjenester og alt andet, hvorfra tidsfølsomme data kan indsamles eller overføres.
@@ -65,7 +65,7 @@ I følgende tabel (eller matrix, om du vil) beskrives de tre typer datasæt til 
 ![](media/service-real-time-streaming/real-time-streaming_11.png)
 
 > [!NOTE]
-> Se [MSDN-artiklen](https://msdn.microsoft.com/library/dn950053.aspx) for at få oplysninger om **Push**-grænser for, hvor meget data, der kan modtages via pushoverførsel.
+> Se [denne artikel](https://docs.microsoft.com/power-bi/developer/api-rest-api-limitations) for at få oplysninger om **Push**-grænser for, hvor mange data der kan modtages via pushoverførsel.
 > 
 > 
 
@@ -83,14 +83,12 @@ Lad os se på hver af disse metoder.
 ### <a name="using-power-bi-rest-apis-to-push-data"></a>Brug af Power BI REST API'er til at pushoverføre data
 **Power BI REST API'er** kan bruges til at oprette og overføre data til **pushdatasæt** og til **streamingdatasæt**. Når du opretter et datasæt ved hjælp af Power BI REST API'er angiver flaget *Standardtilstand*, om datasættet er push eller streaming. Hvis flaget *Sandardtilstand* ikke er angivet, er datasættet som standard et **pushdatasæt**.
 
-Hvis værdien *Standardtilstand* er indstillet til *pushStreaming*, er datasættet både et **push**- *og et* **streaming**datasæt, hvilket giver fordelene ved begge datasættyper. REST API-[artiklen om **Oprettelse af datasæt**](https://msdn.microsoft.com/library/mt203562.aspx) demonstrerer oprettelsen af et streamingdatasæt og viser *Standardtilstand*-flaget i aktion.
+Hvis værdien *Standardtilstand* er indstillet til *pushStreaming*, er datasættet både et **push**- *og et* **streaming**datasæt, hvilket giver fordelene ved begge datasættyper. 
 
 > [!NOTE]
 > Når du bruger datasæt med flaget *Standardtilstand* angivet til *pushStreaming*, vil en anmodning lykkes, og dataene opdateres i pushdatasættet, hvis anmodningen overskrider størrelsesgrænsen på 15 kB for et **streamingdatasæt**, men er mindre end begrænsningen på 16 MB for et **pushdatasæt**. Alle streamingfelter vil dog mislykkes midlertidigt.
-> 
-> 
 
-Når et datasæt er oprettet, kan du bruge REST API'er til at pushoverføre data ved hjælp af API'en [**Tilføj rækker**](https://msdn.microsoft.com/library/mt203561.aspx) som [vist i denne artikel](https://msdn.microsoft.com/library/mt203561.aspx).
+Når et datasæt er oprettet, kan du bruge REST-API'er til at pushoverføre data ved hjælp af API'en [**PostRows**](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows).
 
 Alle anmodninger til REST API'er er sikret med **Azure AD OAuth**.
 
@@ -159,9 +157,9 @@ I de næste afsnit ser vi skiftevis på begge muligheder.
 
 ![](media/service-real-time-streaming/real-time-streaming_5.png)
 
-Hvis du ønsker, at Power BI skal lagre dataene, der sendes via denne datastream, skal du aktivere *Analyse af historikdata*, så vil du kunne udføre rapportering og analyse på den indsamlede datastream. Du kan også [få mere at vide om API'en](https://msdn.microsoft.com/library/dn877544.aspx).
+Hvis du ønsker, at Power BI skal lagre dataene, der sendes via denne datastream, skal du aktivere *Analyse af historikdata*, så vil du kunne udføre rapportering og analyse på den indsamlede datastream. Du kan også [få mere at vide om API'en](https://docs.microsoft.com/rest/api/power-bi/).
 
-Når du har oprettet din datastream, får du et REST API URL-slutpunkt, som programmet kan kalde ved hjælp af *POST*-anmodninger om at pushoverføre dataene til det Power BI-**streamingdatasæt**, du har oprettet.
+Når du har oprettet dit datastream, får du et URL-slutpunkt til REST-API'en, som programmet kan kalde ved hjælp af *POST*-anmodninger om at pushoverføre dataene til det Power BI-**streamingdatasæt**, du har oprettet.
 
 Når du foretager *POST*-anmodninger, skal du kontrollere, at anmodningens indhold matcher eksemplet på JSON, der er leveret af Power BI-brugergrænsefladen. Du kan f.eks. ombryde dine JSON-objekter i en matrix.
 
@@ -223,10 +221,10 @@ Til pushdatasæt kan du prøve at oprette en rapportvisualisering med det sidste
 Dette er desværre ikke muligt på nuværende tidspunkt.
 
 #### <a name="given-the-previous-question-how-can-i-do-any-modeling-on-real-time-datasets"></a>I lyset af det forrige spørgsmål, hvordan udfører jeg så nogen udformning af realtidsdatasæt?
-Udformning er ikke muligt på et streamingdatasæt, da dataene ikke er gemt permanent. Til pushdatasæt kan du bruge Opdater datasættet/tabel REST API'er for at tilføje målinger og relationer. Du kan få flere oplysninger fra [artiklen Opdater tabelskema](https://msdn.microsoft.com/library/mt203560.aspx), og [artiklen Egenskaber for datasæt](https://msdn.microsoft.com/library/mt742155.aspx).
+Udformning er ikke muligt på et streamingdatasæt, da dataene ikke er gemt permanent. Til pushdatasæt kan du bruge Opdater datasættet/tabel REST API'er for at tilføje målinger og relationer. 
 
 #### <a name="how-can-i-clear-all-the-values-on-a-push-dataset-how-about-streaming-dataset"></a>Hvordan kan jeg rydde alle værdierne på et pushdatasæt? Hvad med streamingdatasæt?
-Du kan bruge slet rækker REST API-kaldet på et pushdatasæt. Du kan også bruge dette smarte værktøj, der er en ombryder omkring REST API'erne. Det er i øjeblikket ikke muligt at rydde data fra et streamingdatasæt, selvom dataene sletter sig selv efter en time.
+Du kan bruge slet rækker REST API-kaldet på et pushdatasæt. Det er i øjeblikket ikke muligt at rydde data fra et streamingdatasæt, selvom dataene sletter sig selv efter en time.
 
 #### <a name="i-set-up-an-azure-stream-analytics-output-to-power-bi-but-i-dont-see-it-appearing-in-power-bi--whats-wrong"></a>Jeg har konfigureret et Azure Stream Analytics-output til Power BI, men jeg kan ikke se det i Power BI – hvad er der galt?
 Her er en tjekliste, som du kan bruge til at udføre fejlfinding af problemet:
@@ -241,9 +239,6 @@ Her er en tjekliste, som du kan bruge til at udføre fejlfinding af problemet:
 ## <a name="next-steps"></a>Næste trin
 Her er nogle links, som du kan finde nyttige, når du arbejder med streaming i realtid i Power BI:
 
-* [Oversigt over Power BI REST API med data i realtid](https://msdn.microsoft.com/library/dn877544.aspx)
-* [Begrænsninger for Power BI REST API](https://msdn.microsoft.com/library/dn950053.aspx)
-* [REST API-artikel til **Oprettelse af datasæt**](https://msdn.microsoft.com/library/mt203562.aspx)
-* [**Tilføj rækker** Power BI REST API](https://msdn.microsoft.com/library/mt203561.aspx)
+* [Oversigt over Power BI REST API med data i realtid](https://docs.microsoft.com/rest/api/power-bi/)
 * [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/)
 

@@ -8,24 +8,24 @@ featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/28/2018
+ms.date: 09/28/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 13bc26eaecdcc9b3a00f22f75f6f9a5322d823f6
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: bd09adf21292b16ee27f111ac92bbd8c83c384d8
+ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736438"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47448839"
 ---
 # <a name="scatter-charts-and-bubble-charts-in-power-bi"></a>Punktdiagrammer og boblediagrammer i Power BI
 Et punktdiagram har altid to værdiakser for at vise ét sæt numeriske data langs en vandret akse og et andet sæt numeriske værdier langs en lodret akse. Diagrammet viser punkter ved skæringspunktet for en numerisk x- og y-værdi og kombinerer disse værdier i enkelte datapunkter. Disse datapunkter kan være fordelt jævnt eller ujævnt på tværs af den vandrette akse afhængigt af dataene.
 
 Et boblediagram erstatter datapunkterne med bobler, hvor boble*størrelsen* repræsenterer en yderligere dimension af dataene.
 
-![](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
+![eksempel på boblediagram](media/power-bi-visualization-scatter/power-bi-bubble-chart.png)
 
-Du kan fastsætte antallet af datapunkter  
+Du kan fastsætte antallet af datapunkter, højst 10.000.  
 
 ## <a name="when-to-use-a-scatter-chart-or-bubble-chart"></a>Hvornår skal man bruge et punktdiagram eller boblediagram?
 ### <a name="scatter-charts-are-a-great-choice"></a>Punktdiagrammer er praktiske til følgende situationer:
@@ -50,7 +50,7 @@ Se denne video for at se Will oprette et punktdiagram, og følg derefter nedenst
 
 I denne vejledning bruges Retail Analysis Sample (Eksempel på detailhandelsanalyse). Du skal [downloade eksemplet](../sample-datasets.md) til Power BI-tjenesten (app.powerbi.com) eller Power BI Desktop, så du kan følge med.   
 
-1. Vælg det gule plus-ikon for at oprette en [tom rapportside](../power-bi-report-add-page.md).
+1. Åbn rapporten i redigeringsvisning, og vælg det gule plusikon for at oprette en [tom rapportside](../power-bi-report-add-page.md).
  
 2. I ruden Felter skal du vælge følgende felter:
    - **Salg** > **Salg pr. kvm.**
@@ -81,20 +81,20 @@ Nu tilføjer jeg en tredje dimension.
    
     ![](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
 
-3. Hvis du vil indstille antallet af datapunkter, der skal vises i dit boblediagram, skal du i afsnittet **Format** på ruden **Visualiseringer** udvide kortet **Generelt** og justere **Datamængde**. Du kan angive, at den maksimale datamængde skal være et vilkårligt tal op til 10.000. Når du når til højere tal, anbefaler vi, at du tester det først for at sikre, at der bibeholdes en brugbar ydeevne. 
+3. Hvis du vil indstille antallet af datapunkter, der skal vises i dit boblediagram, skal du udvide kortet **Generelt** og justere **Datamængde** i sektionen **Formatering** i ruden **Visualiseringer**. Du kan angive, at den maksimale datamængde skal være et vilkårligt tal op til 10.000. Når du når til højere tal, anbefaler vi, at du tester det først for at sikre, at der bibeholdes en brugbar ydeevne. 
 
-    ![Datamængde](./media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
+    ![Datamængde](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png) 
 
    > [!NOTE]
    > Da flere datapunkter kan føre til en længere indlæsningstid, hvis du vælger at publicere rapporter med grænser i den højere ende af skalaen, skal du sørge for at afprøve dine rapporter på tværs af internettet og mobilnettet samt sørge for, at ydeevnen opfylder dine brugeres forventninger. Bemærk, at for et højere antal datapunkter skal du teste resultaterne på forskellige formfaktorer for at sikre en god ydeevne.
 
 4. Du kan [formatere farver, navne, titler, baggrund og mere i dine visualiseringer](service-getting-started-with-color-formatting-and-axis-properties.md). Hvis du vil [forbedre tilgængeligheden](../desktop-accessibility.md), bør du overveje at føje mærkeformer til hver enkelt linje. Hvis du bruger en anden mærkeform for hver enkelt linje, kan brugere af rapporter nemmere adskille linjer (eller områder) fra hinanden. Hvis du vil vælge mærkeformen, skal du udvide kortet **Figurer** og derefter vælge en mærkeform.
 
-      ![Mærkeform](./media/power-bi-visualization-scatter/pbi_scatter_marker.png)
+      ![Mærkeform](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
    Du kan også ændre mærkeformen til diamant, trekant eller firkant:
 
-   ![Firkantet mærke](./media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
+   ![Firkantet mærke](media/power-bi-visualization-scatter/pbi_scatter_chart_hover_square.png)
 
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
@@ -104,8 +104,7 @@ Har dit punktdiagram kun ét datapunkt, der aggregerer alle værdierne på X- og
 
 ![](media/power-bi-visualization-scatter/pbi_scatter_tshoot1.png)
 
-Tilføj et felt i området **Detaljer** for at angive, hvordan værdierne skal grupperes i Power BI. Feltet skal være entydigt for hver punkt, der skal afbildes.  
-Som et enkelt rækkenummer eller et id-felt:
+Tilføj et felt i området **Detaljer** for at angive, hvordan værdierne skal grupperes i Power BI. Feltet skal være entydigt for hvert punkt, der skal afbildes, f.eks. et felt med et simpelt rækkenummer eller id.
 
 ![](media/power-bi-visualization-scatter/pbi_scatter_tshoot.png)
 
@@ -116,9 +115,8 @@ Hvis det ikke findes i dine data, kan du oprette et felt, der sammensætter X- o
 Du kan oprette et nyt felt ved at [bruge Forespørgselseditor i Power BI Desktop til at tilføje en indekskolonne](../desktop-add-custom-column.md) i dit datasæt.  Tilføj derefter denne kolonne i området **Detaljer** for din visualisering.
 
 ## <a name="next-steps"></a>Næste trin
+
+[Punktdiagrammer med høj tæthed](desktop-high-density-scatter-charts.md)
+
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Tilmeld dig en gratis prøveversion](https://powerbi.microsoft.com/get-started/)  
-
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

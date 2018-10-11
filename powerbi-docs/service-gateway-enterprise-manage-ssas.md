@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: a4c931b671840ca78f340005c30aeb92454ca2a6
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: a84a5da9600daa7ef55ed5a707affa4ee1da4aba
+ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599175"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47238094"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Administrer din datakilde – Analysis Services
 Når du har installeret datagatewayen i det lokale miljø, skal du tilføje datakilder, der kan bruges sammen med gatewayen. I denne artikel kan du se, hvordan du arbejder med gateways og datakilder. Du kan bruge Analysis Services-datakilden til enten planlagte opdateringer eller direkte forbindelser.
@@ -150,13 +150,38 @@ I datagatewayen i det lokale miljø med konfigurerbar brugerdefineret brugertilk
 Sådan konfigurerer du gatewayen til at udføre AD-opslaget:
 
 1. Download og installér den nyeste gateway
+
 2. I gatewayen skal du ændre **datagatewaytjenesten i det lokale miljø**, så den kører med en domænekonto (i stedet for en lokal tjenestekonto – ellers fungerer AD-opslaget ikke korrekt på kørselstidspunktet). Du skal genstarte gatewaytjenesten, for at ændringerne kan træde i kraft.  Gå til gatewayappen på din maskine (søg efter "datagateway i det lokale miljø "). Det gør du ved at gå til **Tjenesteindstillinger > Rediger tjenestekonto**. Kontrollér, at du har genoprettelsesnøglen til denne gateway, da du skal gendanne den på den samme maskine, medmindre du vil oprette en ny gateway i stedet. 
-3. Gå til installationsmappen for gatewayen, *C:\Program Files\On-premises data gateway* som administrator for at sikre, at du har skriverettigheder, og rediger følgende fil:
 
-       Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
-4. Rediger følgende to konfigurationsværdier i henhold til *dine* Active Directory-attributkonfigurationer af AD-brugerne. De konfigurationsværdier, der vises nedenfor, er kun nogle eksempler – du skal angive dem ud fra konfigurationen af Active Directory. 
+3. Gå til installationsmappen for gatewayen, *C:\Programmer\On-premises data gateway* som administrator for at sikre, at du har skriverettigheder, og rediger følgende fil: Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 
-   ![](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
+4. Rediger følgende to konfigurationsværdier i henhold til *dine* Active Directory-attributkonfigurationer til AD-brugerne. De konfigurationsværdier, der vises nedenfor, er kun nogle eksempler – du skal angive dem ud fra konfigurationen af Active Directory. Der skelnes mellem store og små bogstaver i disse konfigurationer, så sørg for, at de stemmer overens med værdierne i Active Directory.
+
+    ![Azure Active Directory-indstillinger](media/service-gateway-enterprise-manage-ssas/gateway-enterprise-map-user-names_03.png)
+
+    Hvis der ikke er angivet en værdi for ADServerPath-konfigurationen, bruger gatewayen det globale standardkatalog. Du kan også angive flere værdier for ADServerPath. De enkelte værdier skal adskilles med et semikolon som i eksemplet nedenfor.
+
+    ```xml
+    <setting name="ADServerPath" serializeAs="String">
+        <value> >GC://serverpath1; GC://serverpath2;GC://serverpath3</value>
+    </setting>
+    ```
+    Gatewayen analyserer værdierne for ADServerPath fra venstre mod højre, indtil den finder et match. Hvis der ikke blev fundet et match, bruges den oprindelige UPN. Kontrollér, at den konto, der kører gatewaytjenesten (PBIEgwService), har forespørgselstilladelser til alle AD-servere, som du angiver i ADServerPath.
+
+    Gatewayen understøtter to typer ADServerPath som i følgende eksempler.
+
+    **WinNT**
+
+    ```xml
+    <value="WinNT://usa.domain.corp.contoso.com,computer"/>
+    ```
+
+    **GC**
+
+    ```xml
+    <value> GC://USA.domain.com </value>
+    ```
+
 5. Genstart **datagatewaytjenesten i det lokale miljø**, for at konfigurationsændringen kan træde i kraft.
 
 ### <a name="working-with-mapping-rules"></a>Arbejde med tilknytningsregler

@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 7fa3e2e63ef5f43206a398f58d9e8f13bdf8067a
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: a664ff5aeab7de4f98c176dddc5063ef2cfef72e
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44728128"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417044"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Hvad er nyt i den nyeste opdatering af Power BI Desktop?
 
 ## <a name="september-2018-update-2625222582"></a>September 2018-opdatering (2.62.5222.582)
 
-Vores september-opdateringer er som at falde til i et spændende nyt undervisningslokale – der er mere at lære på baggrund af tidligere erfaringer og blive dygtigere og mere erfaren end nogensinde før. Vi håber, at du finder disse opdateringer lige så nyttige som en håndfuld  nyspidsede blyanter. 
+Vores september-opdateringer er som at falde til i et spændende nyt undervisningslokale – der er mere at lære på baggrund af tidligere erfaringer og blive dygtigere og mere erfaren end nogensinde før. Vi håber, at du finder disse opdateringer lige så nyttige som en håndfuld nyspidsede blyanter. 
 
-Nu kan du [downloade den nyeste version af Power BI Desktop](https://powerbi.microsoft.com/desktop). Hvis du kører Windows 10, kan du også få **Power BI Desktop** fra Windows Store. De månedlige versioner er de samme, uanset hvilken måde du installerer **Power BI Desktop** på. Du kan finde flere oplysninger i [denne artikel](desktop-get-the-desktop.md). 
+Nu kan du [downloade den nyeste version af Power BI Desktop](https://powerbi.microsoft.com/desktop). Hvis du kører Windows 10, kan du også få **Power BI Desktop** fra Windows Store. De månedlige versioner er de samme, selvom versionsnummeret kan variere mellem de to, uanset hvilken måde du installerer **Power BI Desktop** på. Du kan finde flere oplysninger i [denne artikel](desktop-get-the-desktop.md). 
 
 Linkene ud for hver opdatering betyder følgende:
 

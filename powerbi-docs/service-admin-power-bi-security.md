@@ -2,36 +2,36 @@
 title: Power BI-sikkerhed
 description: Power BI-sikkerhed. Sådan relaterer Power BI sig til Azure Active Directory og andre Azure-tjenester. Dette emne indeholder også et link til en hvidbog, der går mere i dybden.
 author: davidiseminger
-manager: erikri
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: ec8f1e40cac1c98bcfb5049d1fe8dd7397b616d6
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 072f548c3725c4133bb548a72fc58679e74f5fc7
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598829"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417090"
 ---
 # <a name="power-bi-security"></a>Power BI-sikkerhed
 Du kan finde en detaljeret beskrivelse af Power BI-sikkerhed ved at [downloade hvidbogen om Power BI-sikkerhed](http://go.microsoft.com/fwlink/?LinkId=829185):
 
 [![](media/service-admin-power-bi-security/pbi_security_01.png)](http://go.microsoft.com/fwlink/?LinkId=829185)
 
-Power BI-tjenesten er bygget på **Azure**, som er Microsofts Cloud Computing-infrastruktur og -platform. Power BI-tjenestens arkitektur er baseret på to klynger – Web Front End (**WFE**) og **Back End**. WFE-klyngen er ansvarlig for indledende forbindelse og godkendelse i forhold til Power BI-tjenesten, og når den er godkendt, håndterer Back End alle efterfølgende brugerinteraktioner. Power BI bruger Azure Active Directory (AAD) til at gemme og administrere brugeridentiteter og administrerer lagring af data og metadata ved hjælp af henholdsvis Azure BLOB og Azure SQL Database.
+Power BI-tjenesten er bygget på **Azure**, som er Microsofts Cloud Computing-infrastruktur og -platform. Power BI-tjenestens arkitektur er baseret på to klynger – Web Front End (**WFE**) og **Back-End**. WFE-klyngen administrerer den indledende forbindelse og godkendelse i forhold til Power BI-tjenesten, og når den er godkendt, håndterer Back-End alle efterfølgende brugerinteraktioner. Power BI bruger Azure Active Directory (AAD) til at gemme og administrere brugeridentiteter og administrerer lagring af data og metadata ved hjælp af henholdsvis Azure BLOB og Azure SQL Database.
 
 ## <a name="power-bi-architecture"></a>Power BI-arkitektur
-Hver installation af Power BI består af to klynger – en Web Front End (**WFE**) og en **Back End**.
+Hver installation af Power BI består af to klynger – en Web Front End (**WFE**) og en **Back-End**.
 
 **WFE**-klyngen administrerer den indledende forbindelses- og godkendelsesproces for Power BI ved hjælp af AAD for at godkende klienter og angive tokens for efterfølgende klientforbindelser til Power BI-tjenesten. Power BI bruger også **Azure Traffic Manager** (ATM) til at dirigere brugertrafik til det nærmeste datacenter, der bestemmes af DNS-posten for den klient, der forsøger at oprette forbindelse, for godkendelsesprocessen og til at downloade statisk indhold og filer. Power BI bruger **Azure Content Delivery Network** (CDN) til effektivt at distribuere det nødvendige statiske indhold og filerne til brugere baseret på geografisk placering.
 
 ![](media/service-admin-power-bi-security/pbi_security_v2_wfe.png)
 
-**Back End**-klyngen styrer, hvordan godkendte klienter interagerer med Power BI-tjenesten. **Back End**-klyngen styrer visualiseringer, brugerdashboards, datasæt, rapporter, lagring af data, dataforbindelser, dataopdatering og andre aspekter af at interagere med Power BI-tjenesten. **Gatewayrollen** fungerer som en gateway mellem brugeranmodninger og Power BI-tjenesten. Brugere interagerer ikke direkte med nogen roller bortset fra **gatewayrollen**. **Azure API Management** vil til sidst håndtere **gatewayrollen**.
+**Back-End**-klyngen styrer, hvordan godkendte klienter interagerer med Power BI-tjenesten. **Back-End**-klyngen styrer visualiseringer, brugerdashboards, datasæt, rapporter, lagring af data, dataforbindelser, dataopdatering og andre aspekter, når du interagerer med Power BI-tjenesten. **Gatewayrollen** fungerer som en gateway mellem brugeranmodninger og Power BI-tjenesten. Brugere interagerer ikke direkte med nogen roller bortset fra **gatewayrollen**. **Azure API Management** vil til sidst håndtere **gatewayrollen**.
 
 ![](media/service-admin-power-bi-security/pbi_security_v2_backend_updated.png)
 
@@ -43,7 +43,7 @@ Hver installation af Power BI består af to klynger – en Web Front End (**WFE*
 ## <a name="data-storage-security"></a>Datalagringssikkerhed
 Power BI bruger to primære lagre til at gemme og administrere data: Data, der er uploadet fra brugere, sendes typisk til **Azure BLOB**-lageret, og alle metadata samt artefakter for selve systemet gemmes i **Azure SQL Database**.
 
-Den stiplede linje i billedet herover af **Back End**-klyngen viser grænsen mellem de to eneste komponenter, der er tilgængelige for brugere (til venstre for den stiplede linje), og roller, der kun kan tilgås af systemet. Når en godkendt bruger opretter forbindelse til Power BI-tjenesten, accepteres og administreres forbindelsen og anmodninger fra klienten af **gatewayrollen** (som til sidst skal håndteres af **Azure API Management**), som derefter interagerer på brugerens vegne med resten af Power BI-tjenesten. Når en klient f.eks. forsøger at få vist et dashboard, accepterer **gatewayrollen** den pågældende anmodning og sender derefter separat en anmodning til **præsentationsrollen** om at hente de data, der skal bruges af browseren til at gengive dashboardet.
+Den stiplede linje i billedet herover af **Back-End**-klyngen viser grænsen mellem de to eneste komponenter, der er tilgængelige for brugere (til venstre for den stiplede linje), og roller, der kun kan tilgås af systemet. Når en godkendt bruger opretter forbindelse til Power BI-tjenesten, accepteres og administreres forbindelsen og anmodninger fra klienten af **gatewayrollen** (som til sidst skal håndteres af **Azure API Management**), som derefter interagerer på brugerens vegne med resten af Power BI-tjenesten. Når en klient f.eks. forsøger at få vist et dashboard, accepterer **gatewayrollen** den pågældende anmodning og sender derefter separat en anmodning til **præsentationsrollen** om at hente de data, der skal bruges af browseren til at gengive dashboardet.
 
 ## <a name="user-authentication"></a>Brugergodkendelse
 Power BI bruger Azure Active Directory ([AAD](http://azure.microsoft.com/services/active-directory/)) til at godkende brugere, der logger på Power BI-tjenesten, og bruger igen Power BI-logonoplysningerne, når en bruger forsøger at få adgang til ressourcer, som kræver godkendelse. Brugere logger på Power BI-tjenesten ved hjælp af den mailadresse, der blev brugt til at oprette deres Power BI-konto. Power BI bruger den pågældende logonmail som det *effektive brugernavn*, der videresendes til ressourcer, når en bruger forsøger at oprette forbindelse til data. Det *effektive brugernavn* knyttes derefter til en *brugers hovednavn* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)) og fortolkes til den tilknyttede Windows-domænekonto, som godkendelse gælder i forhold til.

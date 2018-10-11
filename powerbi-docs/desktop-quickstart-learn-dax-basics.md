@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: ca2f9e3393df2fd205474983ab9868aa9401ed9d
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 474fe7eee6dbcb296a7eaec6057ecfa56cd3f144
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329195"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417113"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>Grundlæggende DAX i Power BI Desktop
 Denne artikel henvender sig til nye brugere af Power BI Desktop. Hensigten med den er, at du får en hurtig og nem introduktion til, hvordan du kan bruge DAX (Data Analysis Expressions) til at løse en række grundlæggende problemer med beregning og dataanalyse. Vi vil gennemgå nogle grundlæggende oplysninger, en række opgaver, du kan udføre, og et par test for at se, hvad du har lært. Når du har gennemgået denne artikel, bør du have en god forståelse af de vigtigste grundlæggende begreber i DAX.
@@ -87,25 +87,23 @@ For at udføre denne opgave skal du åbne filen Contoso Sales Sample Power BI De
     
 2. I formellinjen skal du erstatte **Measure** ved at indtaste et nyt målingsnavn **Salg i forrige kvartal**.
     
-3. Skriv **SUM** efter lighedstegnet efterfulgt af en venstreparentes.
-    
-   I stedet for at indtaste navnet på en kolonne, der med det samme skal optælles, indtaster vi en anden funktion for at *filtrere* de data, der skal optælles.
-    
-4. Skriv **CALCULATE** mellem parenteserne efterfulgt af en venstreparentes.
-    
+3. Efter lighedstegnet skal du skrive de første par bogstaver **CAL** og derefter dobbeltklikke på den funktion, du vil bruge. I denne formel skal du bruge funktionen **CALCULATE**.
+
    Du skal bruge CALCULATE-funktionen til at filtrere de beløb, som vi vil optælle efter et argument, som vi sender til funktionen CALCULATE. Dette er, hvad der refereres til som indlejrede funktioner. Funktionen CALCULATE har mindst to argumenter. Det første er udtrykket, der skal evalueres, og det andet er et filter.
    
-5. Mellem parentesen **()** til funktionen **CALCULATE** skal du skrive **Sales[SalesAmount**. Dette er det første udtryksargument til vores CALCULATE-funktion.
+4. Efter venstreparentesen **(** for funktionen **CALCULATE** skal du skrive **SUM** efterfulgt af endnu en venstreparentes **(**. Nu skal vi sende et argument til funktionen SUM.
+
+5. Begynd at skrive **Sal**, og vælg derefter **Sales [SalesAmount]** efterfulgt af en højreparentes **)**. Dette er det første udtryksargument til vores CALCULATE-funktion.
     
-6. Skriv et komma (**,**) for at angive det første filter, skriv derefter **PREVIOUSQUARTER** efterfulgt af en startparentes.
+6. Skriv et komma (**,**) efterfulgt af et mellemrum for at angive det første filter, og skriv derefter **PREVIOUSQUARTER**. Dette er vores filter.
     
-   Du skal bruge tidsintelligensfunktionen PREVIOUSQUARTER til at filtrere vores SUM-resultater efter det forrige kvartal.
+   Du skal bruge tidsintelligensfunktionen PREVIOUSQUARTER til at filtrere SUM-resultater efter det forrige kvartal.
     
-7. Skriv **Calendar[DateKey]** i **parentesen** til funktionen PREVIOUSQUARTER.
+7. Efter venstreparentesen **(** for funktionen PREVIOUSQUARTER skal du skrive **Calendar[DateKey]**.
     
-   Funktionen PREVIOUSQUARTER har ét argument, som er en kolonne, der indeholder et sammenhængende datoområde.
+   Funktionen PREVIOUSQUARTER har ét argument, som er en kolonne, der indeholder et sammenhængende datoområde. I vores tilfælde er det kolonnen DateKey i tabellen Calendar.
     
-8. Sørg for, at begge argumenter, der overføres til funktionen PREVIOUSQUARTER og funktionen CALCULATE, lukkes af to afsluttende parenteser **))**.
+8. Sørg for, at begge argumenter, der overføres til funktionen PREVIOUSQUARTER og funktionen CALCULATE, lukkes, ved at skrive to højreparenteser **))**.
     
    Din formel skal se sådan ud:
     

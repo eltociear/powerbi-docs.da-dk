@@ -8,15 +8,15 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/27/2018
+ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 68b14e6554c0c12590f555f6447198f1a850e9b1
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 1855b65277fe778a20bd9e4629f8db1e7b9000a3
+ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46543997"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47448954"
 ---
 # <a name="combo-chart-in-power-bi"></a>Kombinationsdiagram i Power BI
 I Power BI er et kombinationsdiagram en enkelt visualisering, der kombinerer et kurvediagram og et søjlediagram. Ved at kombinere disse to diagrammer kan du hurtigere sammenligne dine data.
@@ -55,9 +55,9 @@ Se, hvordan Will opretter et kombinationsdiagram ved hjælp af salgs- og marketi
     c.  Vælg **Time**\>**FiscalMonth** for at føje det til beholderen **Axis**.
 
     ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Vælg ellipsen (...) i øverste højre hjørne af visualiseringen, og vælg **Sort by FiscalMonth**. Du skal muligvis vælge den to gange for at sortere i stigende eller faldende rækkefølge.
+5. Vælg ellipsen (...) i øverste højre hjørne af visualiseringen, og vælg **Sortér efter > FiscalMonth**. Hvis du vil ændre sorteringsrækkefølgen, skal du vælge ellipsen igen og vælge enten **Sortér stigende** eller **Sortér faldende**.
 
-6. Konvertér søjlediagrammet til et kombinationsdiagram. Vælg søjlediagrammet, og vælg derefter **Line and clustered column chart** fra fanen **Visualizations**.
+6. Konvertér søjlediagrammet til et kombinationsdiagram. Der findes to kombinationsdiagrammer: **kurvediagram og stablet søjlediagram** og **kurvediagram og grupperet søjlediagram**. Vælg søjlediagrammet, og vælg derefter **Line and clustered column chart** fra fanen **Visualizations**.
 
     ![](media/power-bi-visualization-combo-chart/converttocombo_new2.png)
 7. Fra ruden **Fields** kan du derefter trække **Sales** \> **Last Year Sales** til beholderen **Line Values**.
@@ -71,7 +71,8 @@ Se, hvordan Will opretter et kombinationsdiagram ved hjælp af salgs- og marketi
 ## <a name="create-a-combo-chart-with-two-axes"></a>Opret et kombinationsdiagram med to akser
 I denne opgave skal vi sammenligne bruttomargen og salg.
 
-1. Opret et nyt kurvediagram, der sporer **Gross Margin Last Year %** efter **Month**.  I januar var BM% på 35 %, den steg til 45 % i april, faldt i juli og steg igen i august. Kan vi se et tilsvarende mønster for salget i dette og sidste år?
+1. Opret et nyt kurvediagram, der sporer **Gross Margin Last Year %** efter **Month**. Vælg ellipsen for at sortere den efter **måned** og **stigende**.  
+I januar var BM% på 35 %, den steg til 45 % i april, faldt i juli og steg igen i august. Kan vi se et tilsvarende mønster for salget i dette og sidste år?
 
    ![](media/power-bi-visualization-combo-chart/combo1_new.png)
 2. Tilføj **This Year Sales > Value** og **Last Year Sales** i kurvediagrammet. Skalaen for **Gross Margin Last Year %** er meget mindre end skalaen for **Sales**, hvilket gør det svært at sammenligne.      
@@ -80,7 +81,7 @@ I denne opgave skal vi sammenligne bruttomargen og salg.
 3. Hvis du vil gøre det nemmere at læse og fortolke en visual, skal du konvertere kurvediagrammet til et Kurve- og stablet søjlediagram.
 
    ![](media/power-bi-visualization-combo-chart/converttocombo_new.png)
-4. Træk **Gross Margin Last Year %** fra **Kolonneværdier** til **Kurveværdier**. Der oprettes to akser i Power BI, og datasættene kan derfor skaleres forskelligt. Det kan ses ved, at den venstre akse for salg måles i dollar, mens den højre akse måles i procent.
+4. Træk **Gross Margin Last Year %** fra **Kolonneværdier** til **Kurveværdier**. Der oprettes to akser i Power BI, og datasættene kan derfor skaleres forskelligt. Det kan ses ved, at den venstre akse for salg måles i dollar, mens den højre akse måles i procent. Og vi kan se svaret på vores spørgsmål. Ja, vi kan se et lignende mønster.
 
    ![](media/power-bi-visualization-combo-chart/power-bi-combochart.png)    
 
@@ -103,20 +104,16 @@ I denne opgave skal vi sammenligne bruttomargen og salg.
 
 Nu kan du f.eks.:
 
-* [Tilføje kombinationsdiagrammet som et dashboardfelt](../consumer/end-user-tiles.md).
+* [Tilføje kombinationsdiagrammet som et dashboardfelt](../service-dashboard-tiles.md).
 * [Gem rapporten](../service-report-save.md).
-* [Gør rapporten tilgængelig for personer med handicap](../desktop-accessibility.md)
+* [Gør rapporten tilgængelig for personer med handicap](../desktop-accessibility.md).
 
 ## <a name="cross-highlighting-and-cross-filtering"></a>Tværgående fremhævning og krydsfiltrering
 
-Fremhævning af en kolonne eller kurve i kombinationsdiagrammet fører til tværgående fremhævning og krydsfiltrering af andre visualiseringer på rapportsiden... og omvendt. Hvis du vil ændre denne standardfunktionsmåde, skal du bruge [visuelle interaktioner](../consumer/end-user-interactions.md).
+Fremhævning af en kolonne eller kurve i kombinationsdiagrammet fører til tværgående fremhævning og krydsfiltrering af andre visualiseringer på rapportsiden... og omvendt. Hvis du vil ændre denne standardfunktionsmåde, skal du bruge [visuelle interaktioner](../service-reports-visual-interactions.md).
 
 ## <a name="next-steps"></a>Næste trin
 
-[Overblik over visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
+[Kransediagrammer i Power BI](power-bi-visualization-doughnut-charts.md)
 
 [Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)
-
-[Power BI – Grundlæggende begreber](../consumer/end-user-basic-concepts.md)
-
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

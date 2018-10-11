@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/19/2018
+ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a12a497de5ee3e02ea6ba2b1e92fb6c50834d99c
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 2e6eb9817071f3cbccd442014564e21463bf06f8
+ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566035"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47448931"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 ## <a name="power-bi-visualizations"></a>Visualiseringer i Power BI
@@ -32,10 +32,10 @@ Du kan bruge alle disse visualiseringer i Power BI-rapporter, de kan specificere
 >[!TIP]
 >Det grundlæggende områdediagram er baseret på kurvediagrammet med et område mellem aksen og kurven, der er udfyldt.
 
-Du kan finde flere oplysninger under [Selvstudium: Grundlæggende områdediagram](power-bi-visualization-basic-area-chart.md).
+Du kan finde flere oplysninger under [Grundlæggende områdediagram](power-bi-visualization-basic-area-chart.md).
 
 ### <a name="bar-and-column-charts"></a>Liggende søjlediagrammer og søjlediagrammer
-![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bar.png) 
+![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bar.png)
 
  ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_col.png)
 
@@ -56,7 +56,7 @@ Du kan finde flere oplysninger under [Opret et kort (med et felt med et stort ta
 >[!TIP]
 >Et kombinationsdiagram kombinerer et søjlediagram og et kurvediagram. Vælg mellem *Kurvediagram og stablet søjlediagram* og *Kurvediagram og grupperet søjlediagram*.
 
-Du kan finde flere oplysninger under [Selvstudium: Kombinationsdiagrammer i Power BI](power-bi-visualization-combo-chart.md).
+Du kan finde flere oplysninger under [Kombinationsdiagrammer i Power BI](power-bi-visualization-combo-chart.md).
 
 ### <a name="doughnut-charts"></a>Kransediagrammer
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/donutsmall.png)
@@ -64,7 +64,7 @@ Du kan finde flere oplysninger under [Selvstudium: Kombinationsdiagrammer i Powe
 >[!TIP]
 >Kransediagrammer ligner cirkeldiagrammer.  De viser relationen mellem dele og en helhed.
 
-Du kan finde flere oplysninger under [Selvstudium: Kransediagrammer i Power BI](power-bi-visualization-doughnut-charts.md).
+Du kan finde flere oplysninger under [Kransediagrammer i Power BI](power-bi-visualization-doughnut-charts.md).
 
 ### <a name="funnel-charts"></a>Tragtformede diagrammer
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_funnel.png)
@@ -72,7 +72,7 @@ Du kan finde flere oplysninger under [Selvstudium: Kransediagrammer i Power BI](
 >[!TIP]
 >Tragtformede diagrammer er praktiske til at visualisere en proces med faser og elementer, der flyder sekventielt fra den ene fase til den næste.  Brug et tragtformet diagram, når der er et sekventielt flow mellem faser, for eksempel en salgsproces, der starter med kundeemner og slutter med et køb.
 
-Du kan finde flere oplysninger under [Selvstudium: Tragtformede diagrammer i Power BI](power-bi-visualization-funnel-charts.md).
+Du kan finde flere oplysninger under [Tragtformede diagrammer i Power BI](power-bi-visualization-funnel-charts.md).
 
 ### <a name="gauge-charts"></a>Målerdiagrammer
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/gauge_m.png)
@@ -80,7 +80,7 @@ Du kan finde flere oplysninger under [Selvstudium: Tragtformede diagrammer i Pow
 >[!TIP]
 >Viser den aktuelle status i forhold til et mål.
 
-Du kan finde flere oplysninger under [Selvstudium: Målerdiagrammer i Power BI](power-bi-visualization-radial-gauge-charts.md).
+Du kan finde flere oplysninger under [Målerdiagrammer i Power BI](power-bi-visualization-radial-gauge-charts.md).
 
 ### <a name="kpis"></a>KPI'er
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
@@ -88,7 +88,7 @@ Du kan finde flere oplysninger under [Selvstudium: Målerdiagrammer i Power BI](
 >[!TIP]
 >Viser statussen i forhold til et målbart mål.
 
-Du kan finde flere oplysninger under [Selvstudium: KPI'er i Power BI](power-bi-visualization-kpi.md).
+Du kan finde flere oplysninger under [KPI'er i Power BI](power-bi-visualization-kpi.md).
 
 ### <a name="line-charts"></a>Kurvediagrammer
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_line.png)
@@ -107,7 +107,7 @@ Du kan finde flere oplysninger under [Tip og tricks til kortvisualiseringer](pow
 ### <a name="maps-arcgis-maps"></a>Kort: ArcGIS-kort
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
 
-Du kan finde flere oplysninger under [Selvstudium: ArcGIS-kort i Power BI](../power-bi-visualization-arcgis.md).
+Du kan finde flere oplysninger under [ArcGIS-kort i Power BI](../power-bi-visualization-arcgis.md).
 
 ### <a name="maps-filled-maps-choropleth"></a>Kort: kartogrammer (Choropleth)
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
@@ -115,10 +115,21 @@ Du kan finde flere oplysninger under [Selvstudium: ArcGIS-kort i Power BI](../po
 >[!TIP]
 >Jo stærkere farven er, jo større er værdien.
 
-Du kan finde flere oplysninger under [Selvstudium: Kartogrammer i Power BI](power-bi-visualization-filled-maps-choropleths.md).
+Du kan finde flere oplysninger under [Kartogrammer i Power BI](power-bi-visualization-filled-maps-choropleths.md).
+
+### <a name="maps-shape-maps"></a>Kort: Figurkort
+![](media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-shape-map2.png)
+
+>[!TIP]
+>Sammenligner områder efter farve.
+
+Du kan finde flere oplysninger under [Figurkort i Power BI](desktop-shape-map.md).
+
 
 ### <a name="matrix"></a>Matrix
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
+
+Du kan finde flere oplysninger under [Matrixvisualiseringer i Power BI](desktop-shape-map.md).
 
 ### <a name="pie-charts"></a>Cirkeldiagrammer
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_pie.png)
@@ -129,12 +140,20 @@ Du kan finde flere oplysninger under [Selvstudium: Kartogrammer i Power BI](powe
 >[!TIP]
 >Viser relationen mellem 2 (punkt) eller 3 (boble) kvantitative målinger – er eller ikke er, i hvilken rækkefølge osv.
 
-Du kan finde flere oplysninger under [Selvstudium: Punktdiagrammer i Power BI](power-bi-visualization-scatter.md).
+Du kan finde flere oplysninger under [Punktdiagrammer i Power BI](power-bi-visualization-scatter.md).
+
+### <a name="scatter-high-density"></a>Punktdiagram – høj tæthed
+![](media/power-bi-visualization-types-for-reports-and-q-and-a/density-scatter.png)
+
+>[!TIP]
+>For mange datapunkter i en visualisering kan medføre, at den fryser, så en avanceret algoritme bruges til at sikre nøjagtigheden af visualiseringen.
+
+Du kan finde flere oplysninger under [Punktdiagrammer med høj tæthed i Power BI](desktop-high-density-scatter-charts.md).
 
 ### <a name="slicers"></a>Udsnit
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_slicer.png)
 
-Du kan finde flere oplysninger under [Selvstudium: Udsnit i Power BI](power-bi-visualization-slicers.md).
+Du kan finde flere oplysninger under [Udsnit i Power BI](power-bi-visualization-slicers.md).
 
 ### <a name="standalone-images"></a>Separate billeder
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_image.png)
@@ -149,10 +168,10 @@ Du kan finde flere oplysninger under [Tilføj en billedwidget i et dashboard](..
 
 Du kan finde flere oplysninger under [Arbejd med tabeller i Power BI](power-bi-visualization-tables.md).
 
-### <a name="tree-maps"></a>Trækort
+### <a name="treemaps"></a>Træstrukturer
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_tree.png)
 
-Du kan finde flere oplysninger under [Selvstudium: Trækort i Power BI](power-bi-visualization-treemaps.md).
+Du kan finde flere oplysninger under [Træstrukturer i Power BI](power-bi-visualization-treemaps.md).
 
 >[!TIP]
 >Dette er diagrammer med farvede rektangler, hvor størrelsen repræsenterer værdien.  De kan være hierarkiske, hvor rektangler er indlejret i de primære rektangler.
@@ -163,7 +182,7 @@ Du kan finde flere oplysninger under [Selvstudium: Trækort i Power BI](power-bi
 >[!TIP]
 >Vandfaldsdiagrammer viser en løbende total af værdier, der adderes eller subtraheres.
 
-Du kan finde flere oplysninger under [Selvstudium: Vandfaldsdiagrammer i Power BI](power-bi-visualization-waterfall-charts.md).
+Du kan finde flere oplysninger under [Vandfaldsdiagrammer i Power BI](power-bi-visualization-waterfall-charts.md).
 
 ## <a name="tell-qa-which-visualization-to-use"></a>Fortæl Spørgsmål og svar, hvilken visualisering der skal bruges
 Når du skriver forespørgsler i naturligt sprog med Spørgsmål og svar i Power BI, kan du angive visualiseringstypen i din forespørgsel.  Eksempel:
@@ -175,10 +194,3 @@ Når du skriver forespørgsler i naturligt sprog med Spørgsmål og svar i Power
 ## <a name="next-steps"></a>Næste trin
 [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)    
 [Den rette visuelle reference fra sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
-
-[Rapporter i Power BI](../consumer/end-user-reports.md)
-
-[Power BI – Grundlæggende begreber](../consumer/end-user-basic-concepts.md)
-
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-

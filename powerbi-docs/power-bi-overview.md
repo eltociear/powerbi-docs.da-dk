@@ -1,25 +1,25 @@
 ---
 title: Hvad er Power BI?
 description: Oversigt over Power BI, og hvordan de forskellige dele passer sammen – Power BI Desktop, Power BI-tjeneste, Power BI Mobil, rapportserver, Power BI Embedded.
-author: davidiseminger
-manager: kfile
+author: mihart
+manager: kvivek
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: overview
-ms.date: 06/22/2018
-ms.author: davidi
+ms.date: 09/22/2018
+ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 8b61e60852175ced605ae920a6a31091625f781f
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 73a3188256b754517beb9f83a382c4005de6e7e7
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47186932"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416975"
 ---
 # <a name="what-is-power-bi"></a>Hvad er Power BI?
 **Power BI** er en samling af softwaretjenester, apps og forbindelser, der arbejder sammen for at forvandle usammenhængende data til faste, visuelt fordybende og interaktive indsigter. Uanset om dataene er et enkelt Excel-regneark eller en samling cloudbaserede og lokale hybride datalagre, så giver **Power BI** dig let adgang til at oprette forbindelse til dine datakilder, visualisere (eller granske) vigtige elementer og dele indholdet med alle.
 
-![diagram, der viser inputdatakilder til Power BI](media/power-bi-overview/power-bi-input.png)
+![diagram, der viser inputkilder til Power BI](media/power-bi-overview/power-bi-input-new.png)
 
 **Power BI** kan være enkelt og hurtigt – i stand til at oprette hurtige indsigter ud fra et Excel-regneark eller en lokal database. Men **Power BI** er også et robust program i virksomhedsklassen, der er klar til omfattende udformning og realtidsanalyser samt tilpasset opbygning. Det kan dermed være både et personligt rapporterings- og visualiseringsværktøj samt fungere som et analyse- og beslutningsprogam bag gruppeprojekter, divisioner eller hele selskaber.
 
@@ -41,6 +41,12 @@ Du bruger måske også hvert element af **Power BI** på forskellige tidspunkter
 
 Måske får du få vist lager- og produktionsgangen i et realtidsdashboard i tjenesten og bruger også **Power BI Desktop** til at oprette rapporter til dit eget team baseret på statistikker over kundeengagement. Din brug af Power BI kan være baseret på hvilken funktion eller tjeneste i Power BI, der passer bedst til situationen, men hver del af Power BI er tilgængelig for dig på en særdeles fleksibel og avanceret måde.
 
+Sådan udforsker du dokumenter, der er relevante for din rolle:
+- Power BI for [***designere***](desktop-what-is-desktop.md)
+- Power BI for [***forbrugere***](consumer/end-user-consuming.md)
+- Power BI for [***udviklere***](developer/what-can-you-do.md)
+- Power BI for [***administratorer***](service-admin-administering-power-bi-in-your-organization.md)
+
 ## <a name="the-flow-of-work-in-power-bi"></a>Arbejdsgangen i Power BI
 En typisk arbejdsgang i Power BI starter med at oprette forbindelse til datakilder og at oprette en rapport i **Power BI Desktop**. Rapporten udgives derefter fra **Desktop** i **Power BI-tjenesten** og deles, så brugere i **tjenesten** og **mobilversionen** kan *forbruge* (se og interagere med) rapporten.
 Nogle gange ønsker du at give kollegaer tilladelser, der svarer til dine egne (tilladelser af typen *opretter*), så de også kan bruge **tjenesten** til at redigere rapporter, oprette dashboards og dele deres arbejde.
@@ -57,5 +63,5 @@ Opret, udrul og administrer Power BI, mobile og sideinddelte rapporter i det lok
 Power BI-rapportserveren er en løsning, som du udruller bag firewallen, og som derefter leverer dine rapporter til de rette brugere på forskellige måder, uanset om de skal vises i en webbrowser, på en mobilenhed eller som en mail. Og da Power BI-rapportserveren er kompatibel med Power BI i clouden, kan du flytte til clouden, når du er klar.
 
 ## <a name="next-steps"></a>Næste trin
-[Log på, hent nogle data, og se, hvordan du bruger Power BI-tjenesten](consumer/end-user-experience.md)   
+[Log på, hent nogle data, og se, hvordan du bruger Power BI-tjenesten](service-the-new-power-bi-experience.md)   
 [Selvstudium: Kom i gang med Power BI-tjenesten](service-get-started.md)
