@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/21/2018
-ms.openlocfilehash: e83224932048aeab2dde6187eb217da7d89fed85
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.date: 09/17/2018
+ms.openlocfilehash: b50f3d5a3b01e32dcbaf80db5e25bd046c5e27a2
+ms.sourcegitcommit: ded8b85276e7eda166d6e67f72d1fe3d5e234745
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558558"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46506793"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -84,15 +84,19 @@ Her er en delvis liste over forskelle, som du kan bruge i hver.
 |Tilsagn  |Intet tilsagn |Årligt  |Månedligt/årligt |
 |Differentiering |Fuld elasticitet, kan skaleres op / ned, pausestille / genoptage ressourcer i Azure-portalen eller gennem API  |Kan bruges til at integrere indhold i SharePoint Online og Microsoft Teams (omfatter ikke mobilapp) |Kombiner integration i programmer og brug Power BI-tjenesten i den samme egenskab |
 
-### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Hvad er forudsætningerne for at oprette en PBIE-kapacitet i Azure? 
+### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Hvad er forudsætningerne for at oprette en PBIE-kapacitet i Azure?
 
 * Du skal logge på din organisationsmappe (MSA-konti understøttes ikke).
 * Du skal have en Power BI-lejer, dvs. at mindst én bruger i din mappe har tilmeldt sig Power BI. 
 * Du skal have et Azure-abonnement i din organisationsmappe.
 
-### <a name="how-can-i-monitor-capacity-consumption"></a>Hvordan kan jeg overvåge kapacitetsforbrug?
+### <a name="how-can-i-monitor-power-bi-embedded-capacity-consumption"></a>Hvordan kan jeg overvåge Power BI Embedded-kapacitetsforbrug?
 
-Overvågning vha. Azure er omfattet af køreplanen på kort sigt. Azure-ressourcen, Power BI Embedded, vil omfatte overvågning af KPI'er, der vli vise tilstand og brug.
+* Brug [Power BI-administrationsportalen](../service-admin-portal.md#power-bi-embedded-settings).
+
+* Download den [metriske app](https://review.docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) i Power BI.
+
+* Brug [logføring af Azure-diagnosticering](azure-pbie-diag-logs.md).
 
 ### <a name="will-my-capacity-scale-automatically-to-adjust-to-the-consumption-of-my-app"></a>Vil min kapacitetsskala automatisk justere iht. forbruget af min app?
 
@@ -276,11 +280,11 @@ Nogle af funktionerne er:
 * Nye funktioner, f.eks. Spørgsmål og svar, opdatering, bogmærker, integrering af dashboards og felter, brugerdefinerede menuer, understøttes kun i **Power BI Embedded**-løsningen.
 * Model for fakturering af kapacitet.
 
-## <a name="onboarding-experience-tool-for-embedding"></a>Onboarding Experience Tool til integration
+## <a name="embedding-setup-tool-for-embedding"></a>Embedding-konfigurationsværktøj til integration
 
-### <a name="what-is-the-onboarding-experience-tool"></a>Hvad er Onboarding Experience Tool?
+### <a name="what-is-the-embedding-setup-tool"></a>Hvad er konfigurationsværktøjet?
 
-Med [Onboarding Experience Tool](https://aka.ms/embedsetup) kan du hurtigt komme i gang og downloade en eksempelapp for at komme i gang med at integrere med Power BI.
+Med [Embedding-konfigurationsværktøjet](https://aka.ms/embedsetup) kan du hurtigt komme i gang og downloade en eksempelapp for at komme i gang med at integrere med Power BI.
 
 ### <a name="which-solution-should-i-choose"></a>Hvilken løsning skal jeg vælge?
 
