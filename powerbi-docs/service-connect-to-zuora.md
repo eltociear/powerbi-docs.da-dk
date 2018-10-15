@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 48246d61789a0b1e160109c1f2fb0e81838b3965
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: b83ef2b6f2cd07e9f6c9af849e0f64d0490fa1af
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39280311"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546926"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Opret forbindelse til Zuora med Power BI
 Med Zuora til Power BI kan du visualisere vigtige omsætnings-, fakturerings- og abonnementsdata. Brug standarddashboardet og rapporter til at analysere brugstendenser, spore faktureringer og betalinger og overvåge tilbagevendende indtægt eller til at tilpasse dem, så de imødekommer dine særlige behov i forbindelse med dashboard og rapportering.
@@ -44,12 +44,12 @@ Opret forbindelse til [Zuora](https://app.powerbi.com/getdata/services/Zuora) ti
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
-* [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
-* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
+* [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport.
+* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
-## <a name="whats-included"></a>Følgende er inkluderet
+## <a name="whats-included"></a>Det følgende er inkluderet
 Indholdspakken bruger Zuora AQUA API til at hente følgende tabeller:
 
 | Tabeller |  |  |

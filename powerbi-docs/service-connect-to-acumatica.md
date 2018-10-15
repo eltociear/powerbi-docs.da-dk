@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 452226f8d5b8e0ca05fc4d9e81355c7a4c10e923
-ms.sourcegitcommit: d936a23f895ee6ef1420753342f5e6c055ea5e07
+ms.openlocfilehash: 6aa5b5dbb22881b6bccaa2ed43352a8f22308675
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582632"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546642"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Opret forbindelse til Acumatica med Power BI
 Med Power BI Acumatica-indholdspakken kan du hurtigt få indsigt i dine data med salgsmuligheder. Power BI henter dine data, herunder salgsmuligheder og kunder og opretter derefter et standarddashboard og relaterede rapporter, der er baseret på disse data.
@@ -51,10 +51,10 @@ Opret forbindelse til [Acumatica-indholdspakken](https://app.powerbi.com/getdata
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
-* [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
-* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
+* [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport.
+* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
 ## <a name="system-requirements"></a>Systemkrav
 Denne indholdspakke kræver Acumatica v5.2 eller nyere. Bekræft versionen med administratoren af Acumatica.

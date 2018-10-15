@@ -8,12 +8,12 @@ ms.Embedded: powerbi
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
-ms.openlocfilehash: 6de0efe3bad1662d1324488a7030894248056730
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: 6b500acee862d8f16c186a9adc2fe0b194003e50
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388657"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973833"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded
 Se, hvordan du overfører fra Power BI Workspace Collection til Power BI Embedded og udnytter fordelene ved at integrere i apps.
@@ -30,7 +30,7 @@ Den nuværende Power BI Workspace Collection er fortsat tilgængelig i en begræ
 
 ![](media/migrate-from-powerbi-embedded/powerbi-embed-flow.png)
 
-Inden du begynder overførslen til det nye Power BI Embedded, kan du tage en hurtig gennemgang, der hjælper dig med at konfigurere dit nye Power BI Embedded-miljø ved hjælp af [Onboarding Experience Tool](https://aka.ms/embedsetup).
+Inden du begynder overførslen til det nye Power BI Embedded, kan du tage en hurtig gennemgang, der hjælper dig med at konfigurere dit nye Power BI Embedded-miljø ved hjælp af [værktøjet til konfiguration af integrering](https://aka.ms/embedsetup).
 
 Vælg den løsning, der er den rette for dig:
 * **Embed for your customers** – når du er interesseret i en løsning, hvor [appen ejer dataene](https://aka.ms/embedsetup/AppOwnsData). Med [Embedding for your customers](embedding.md#embedding-for-your-customers) kan du integrere dashboards og rapporter for de brugere, der ikke har en konto til Power BI. 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/31/2018
+ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 28dcc4812a37b5ad3f514227f4e5fbcdfebeb579
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: ce4aab1a477485a30a4166d86d166a4ac289108f
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388795"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45974224"
 ---
 # <a name="storage-mode-in-power-bi-desktop-preview"></a>Lagringstilstand i Power BI Desktop (Preview)
 
@@ -171,12 +171,13 @@ Når de vælges i *Datavisning** viser **Dual**- og **Import**-tabeller cachelag
 
 Der er nogle få begrænsninger af denne udgave af **lagringstilstand** og dens korrelation med **sammensatte modeller**.
 
-Følgende flerdimensionelle kilder kan ikke bruges med **sammensatte modeller**:
+Følgende Live Connect-kilder (flerdimensionelle) kan ikke bruges sammen med **sammensatte modeller**:
 
 * SAP HANA
 * SAP Business Warehouse
 * SQL Server Analysis Services
 * Power BI-datasæt
+* Azure Analysis Services
 
 Når du opretter forbindelse til disse flerdimensionelle datakilder ved hjælp af DirectQuery, kan du ikke også oprette forbindelse til en anden DirectQuery-kilde eller kombinere med importerede data.
 

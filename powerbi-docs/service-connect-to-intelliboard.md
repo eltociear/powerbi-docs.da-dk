@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: db6361974fdbe7956979ac106e5cad5717f99d33
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 0931dee6f9719a4a53c5ccf2c20aeb8f9170af42
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37135070"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549661"
 ---
 # <a name="connect-to-intelliboard-with-power-bi"></a>Opret forbindelse til IntelliBoard med Power BI
 IntelliBoard giver forenklet adgang til dine data i Moodle-systemet til læringsstyring via rapporteringstjenester. IntelliBoard-indholdspakken til Power BI indeholder yderligere analyse, herunder målinger af dine kurser, registrerede brugere, samlet ydeevne og din LMS-aktivitet.
@@ -43,12 +43,12 @@ Opret forbindelse til [IntelliBoard-indholdspakken](https://app.powerbi.com/getd
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
-* [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
-* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
+* [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport.
+* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
-## <a name="whats-included"></a>Følgende er inkluderet
+## <a name="whats-included"></a>Det følgende er inkluderet
 Indholdspakken indeholder data fra følgende tabeller:  
 
     - Activity  
@@ -68,5 +68,5 @@ Der kræves en IntelliBoard-konto med rettigheder til overstående tabeller for 
 ## <a name="next-steps"></a>Næste trin
 [Hvad er Power BI?](power-bi-overview.md)
 
-[Power BI – Grundlæggende begreber](service-basic-concepts.md)
+[Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6cdb4d6684ec97786c7fd10da7d22515a24e9dbc
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: ccb878da983aad493efb2cfdfb0d09366964a157
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34250048"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545423"
 ---
 # <a name="connect-to-windows-dev-center-with-power-bi"></a>Opret forbindelse til Windows Udviklingscenter med Power BI
 Udforsk og overvåg dine app-analysedata fra Windows Udviklingscenter i Power BI med Power BI-indholdspakken. Dataene opdateres automatisk én gang dagligt.
@@ -48,12 +48,12 @@ Opret forbindelse til [Windows Udviklingscenter-indholdspakken](https://app.powe
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
-* [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
-* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
+* [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport.
+* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
-## <a name="whats-included"></a>Følgende er inkluderet
+## <a name="whats-included"></a>Det følgende er inkluderet
 Udviklingscenter Power BI-indholdspakken indeholder analysedata for din app og IAP-køb, klassifikationer, anmeldelser og appens tilstand. Data er begrænset til de sidste tre måneder. og er et fleksibelt vindue, så de inkluderede datoer bliver opdateret, når datasættet opdateres.
 
 <a name="Requirements"></a>

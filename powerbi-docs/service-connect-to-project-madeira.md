@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1ce4fe4e80138995e7ec356b92f31e45f3a2c920
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 49902e5f7705bf17b8343aa09af6d2fcf43f7ee5
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599778"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46550138"
 ---
 # <a name="connect-to-project-madeira-with-power-bi"></a>Opret forbindelse til projektet "Madeira" med Power BI
 Det er let at få indblik i dataene for projektet "Madeira" med Power BI og indholdspakken til projektet "Madeira". I Power BI hentes dine data, både salgs- og finansdata, og derefter bygges en app med et brugerdefineret dashboard og rapporter, der er baseret på disse data.
@@ -48,10 +48,10 @@ Opret forbindelse til [analyseindholdspakken til projektet "Madeira"](https://ap
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
-* [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
-* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
+* [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport.
+* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
 <a name="Requirements"></a>
 
@@ -115,5 +115,5 @@ Eller du har glemt at angive firmanavnet:
 ## <a name="next-steps"></a>Næste trin
 [Hvad er Power BI?](power-bi-overview.md)
 
-[Power BI – Grundlæggende begreber](service-basic-concepts.md)
+[Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)
 

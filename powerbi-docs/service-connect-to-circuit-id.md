@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 56be5b6a0618dea28ac286f5cbaa0c019d9037d2
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 49fab6884a4acd548ccb5c17913c003763af8cab
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37135990"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549701"
 ---
 # <a name="connect-to-circuit-id-with-power-bi"></a>Opret forbindelse til Circuit ID med Power BI
 Du kan nemt analysere dine kommunikationsdata fra Circuit ID med Power BI. Power BI henter dine data og opretter derefter et standarddashboard og relaterede rapporter baseret på disse data. Når du har oprettet forbindelsen, kan du udforske dine data og tilpasse dashboardet efter dine behov. Dataene opdateres automatisk hver dag.
@@ -41,10 +41,10 @@ Opret forbindelse til [Circuit ID-indholdspakken](https://app.powerbi.com/getdat
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
-* [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
-* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
+* [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport.
+* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
 ## <a name="next-steps"></a>Næste trin
 [Hvad er Power BI?](power-bi-overview.md)

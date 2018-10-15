@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2250e3739904e6cc1e36c03df45cc765d3d9b591
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: f60fe155cb723550128ea6d35805932cb4559669
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37135231"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544733"
 ---
 # <a name="connect-to-webtrends-with-power-bi"></a>Opret forbindelse til Webtrends med Power BI
 Webtrends-indholdspakken til Power BI indeholder en række køreklare målepunkter, f.eks. samlede sidevisninger og besøg efter trafikkilde. Visualisering af dine Webtrends-data i Power BI starter med at oprette forbindelse til din Webtrends-konto. Du kan bruge det dashboard og de rapporter, som følger med, eller tilpasse dem for at fremhæve de oplysninger, som betyder mest for dig.  Dataene opdateres automatisk én gang dagligt.
@@ -44,12 +44,12 @@ Opret forbindelse til [Webtrends-indholdspakken til Power BI.](https://app.power
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
-* [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
-* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
+* [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport.
+* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
-## <a name="whats-included"></a>Følgende er inkluderet
+## <a name="whats-included"></a>Det følgende er inkluderet
 <a name="Included"></a>
 
 Der indhentes data fra følgende rapporter i Webtrends-indholdspakken:  
@@ -103,5 +103,5 @@ Der kan opstå en fejl under indlæsning af indholdspakken, efter du har angivet
 ## <a name="next-steps"></a>Næste trin
 [Hvad er Power BI?](power-bi-overview.md)
 
-[Power BI – Grundlæggende begreber](service-basic-concepts.md)
+[Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)
 

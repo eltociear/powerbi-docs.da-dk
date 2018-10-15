@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/31/2018
+ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 40799bb2716b2f6e85405e76c2a301acef3509aa
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: 5c0c6fd619a2487f9c801200d732cda628a68055
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388749"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973994"
 ---
 # <a name="many-to-many-relationships-in-power-bi-desktop-preview"></a>Mange til mange-relationer i Power BI Desktop (Preview)
 
@@ -27,7 +27,7 @@ Funktionen med **mange til mange-relationer** i **Power BI Desktop** er en del a
 
 * **Sammensatte modeller** – gør det muligt for en rapport at have flere dataforbindelser, herunder DirectQuery-forbindelser eller import, i en vilkårlig kombination af disse.
 * **Mange til mange-relationer** – med **sammensatte modeller** kan du oprette **mange til mange-relationer** mellem tabeller, fjerne kravene om entydige værdier i tabeller og fjerne tidligere løsninger som f.eks at introducere nye tabeller kun for at oprette relationer. 
-* **Lagringstilstand** – du kan nu angive, hvilke visualiseringer der kræver en forespørgsel til backend-datakilder, og dem, hvor det ikke kræves, importeres, selvom de er baseret på DirectQuery, hvilket forbedrer ydeevnen og reducerer belastningen af backenden. Tidligere ville selv enkle visualiseringer som udsnit igangsætte forespørgsler, der blev sendt til backend-kilderne. 
+* **Lagringstilstand** – du kan nu angive, hvilke visuelle elementer der kræver en forespørgsel til backend-datakilder, og dem, hvor det ikke kræves, importeres, selvom de er baseret på DirectQuery, hvilket forbedrer kvaliteten og reducerer belastningen af backenden. Tidligere ville selv enkle visuelle elementer som udsnit igangsætte forespørgsler, der blev sendt til backend-kilderne. 
 
 Denne samling af tre relaterede funktioner for **sammensatte modeller** er beskrevet i særskilte artikler:
 
@@ -39,7 +39,7 @@ Denne samling af tre relaterede funktioner for **sammensatte modeller** er beskr
 
 Funktionen med **mange til mange-relationer** er en del af funktionerne til **sammensatte modeller**. Den er i prøveversion og skal aktiveres i **Power BI Desktop**. Du kan aktivere **sammensatte modeller** ved at vælge **Fil > Indstillinger > Indstillinger > Funktioner til eksempelvisning** og derefter vælge afkrydsningsfeltet **Sammensatte modeller**.
 
-![aktivering af funktioner til eksempelvisning](media/desktop-composite-models/composite-models_02.png)
+![aktivering af prøveversionsfunktioner](media/desktop-composite-models/composite-models_02.png)
 
 Du skal genstarte **Power BI Desktop**, før funktionen kan bruges.
 
@@ -158,16 +158,17 @@ Derfor skal man være omhyggelig med at sikre, om de beregninger, der bruger *AL
 
 Der er nogle få begrænsninger for denne frigivelse af **mange til mange-relationer** og **sammensatte modeller**.
 
-Følgende flerdimensionelle kilder kan ikke bruges med **sammensatte modeller**:
+Følgende Live Connect-kilder (flerdimensionelle) kan ikke bruges sammen med **sammensatte modeller**:
 
 * SAP HANA
 * SAP Business Warehouse
 * SQL Server Analysis Services
 * Power BI-datasæt
+* Azure Analysis Services
 
 Når du opretter forbindelse til disse flerdimensionelle datakilder ved hjælp af DirectQuery, kan du ikke også oprette forbindelse til en anden DirectQuery-kilde eller kombinere med importerede data.
 
-De eksisterende begrænsningerne ved at bruge DirectQuery gælder stadig, når du bruger **mange til mange-relationer**. Mange af disse begrænsninger er nu pr. tabel afhængigt af tabellens **lagringstilstand**. En beregnet kolonne i en importeret tabel kan f.eks. referere til andre tabeller, men en beregnet kolonne i en DirectQuery-tabel er stadig begrænset til kun at referere til kolonner i den samme tabel. Andre begrænsninger gælder for modellen som helhed, hvis nogen af tabellerne i modellen er DirectQuery. For eksempel er funktionerne **QuickInsights** og **Q&A** ikke tilgængelige for en model, hvis nogen af tabellerne i den har en **lagringstilstand** for DirectQuery. 
+De eksisterende begrænsningerne ved at bruge DirectQuery gælder stadig, når du bruger **mange til mange-relationer**. Mange af disse begrænsninger er nu pr. tabel afhængigt af tabellens **lagringstilstand**. En beregnet kolonne i en importeret tabel kan f.eks. referere til andre tabeller, men en beregnet kolonne i en DirectQuery-tabel er stadig begrænset til kun at referere til kolonner i den samme tabel. Andre begrænsninger gælder for modellen som helhed, hvis nogle af tabellerne i modellen er DirectQuery. For eksempel er funktionerne **QuickInsights** og **Q&A** ikke tilgængelige for en model, hvis nogen af tabellerne i den har en **lagringstilstand** for DirectQuery. 
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/08/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: fad623b9472e2992ddb0a6d43cb8d669a1f14cf7
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: d4b0ad34d200e3d94c60c7e3a3f524a3f3ed09cf
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39658121"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46550000"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Målinger i Power BI Desktop
 
@@ -43,7 +43,7 @@ DAX-formler ligner Excel-formler meget. DAX har oven i købet mange af de samme 
 ## <a name="lets-look-at-an-example"></a>Lad os se på et eksempel
 Jane er salgschef hos Contoso. Hun er blevet bedt om at angive projektioner for forhandlersalg for det kommende regnskabsår. Jane beslutter sig for at basere sine estimater på sidste års salgsbeløb med en årlig stigning på 6 % som følge af forskellige kampagner, der er planlagt for de næste seks måneder.
 
-For at rapportere estimaterne importerer hun sidste års salgsdata i Power BI Desktop. Hun finder feltet Salgsbeløb i tabellen Forhandlersalg. Da de importerede data kun indeholder beløb for sidste år, omdøber hun feltet Salgsbeløb til Sidste års salg. Hun trækker derefter Sidste års salg til rapportcanvassen. I en diagramvisualisering ser det ud som en enkelt værdi, der er summen af alle forhandlersalg fra sidste år.
+For at rapportere estimaterne importerer hun sidste års salgsdata i Power BI Desktop. Hun finder feltet Salgsbeløb i tabellen Forhandlersalg. Eftersom de importerede data kun indeholder beløb for sidste år, omdøber hun feltet Salgsbeløb til Sidste års salg. Hun trækker derefter Sidste års salg til rapportcanvassen. I en diagramvisualisering ser det ud som en enkelt værdi, der er summen af alle forhandlersalg fra sidste år.
 
 Hun bemærker, at selvom hun ikke selv har angivet en beregning, er der angivet en automatisk. I Power BI Desktop er der automatisk blevet oprettet en måling, der summerer alle værdierne i Sidste års salg.
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: afcaae9499aa1c7e1461030cfa6b5d7b35a47188
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 5b469c506a29778ea34216b09bde90ed5f1d4345
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "37136013"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544710"
 ---
 # <a name="connect-to-zendesk-with-power-bi"></a>Opret forbindelse til Zendesk med Power BI
 Zendesk-indholdspakken indeholder et Power BI-dashboard og et sæt Power BI-rapporter, der giver indsigt i dine billetvolumener og agentydeevne. Du kan bruge dashboardet og rapporterne, som følger med, eller tilpasse dem for at fremhæve de oplysninger, som betyder mest for dig.  Dataene opdateres automatisk én gang dagligt. 
@@ -55,12 +55,12 @@ Opret forbindelse til [Zendesk-indholdspakken](https://app.powerbi.com/getdata/s
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
-* [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
-* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
+* [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport.
+* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
-## <a name="whats-included"></a>Følgende er inkluderet
+## <a name="whats-included"></a>Det følgende er inkluderet
 Power BI-indholdspakken indeholder data om følgende:  
 
 * Brugere (slutbrugere og agenter)  

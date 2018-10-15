@@ -1,38 +1,39 @@
 ---
 title: Opret rapporter, der er optimeret til Power BI-telefonapps
-description: Lær at optimere rapportsider i Power BI Desktop til Power BI-telefonapps.
+description: Få mere at vide om, hvordan du optimerer rapportsider til Power BI-telefonapps ved at oprette en version af rapporten, der er beregnet til telefonen.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/17/2018
+ms.date: 09/14/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5f34207640fe0db02d38464ce8600a44b6ffab4c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 22f4d6bf3c715c390c9760593ba5afdc72ce3bf7
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726449"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973948"
 ---
 # <a name="create-reports-optimized-for-the-power-bi-phone-apps"></a>Opret rapporter, der er optimeret til Power BI-telefonapps
-Når du [opretter en rapport i Power BI Desktop](desktop-report-view.md), kan du forbedre oplevelsen ved at bruge den i mobilapps på telefoner ved at oprette en version af rapporten beregnet til telefonen. Du tilpasser din rapport til telefonen ved at omarrangere og tilpasse visualiseringer og måske ikke inkludere alle for at få en optimal oplevelse. Du kan også oprette [*dynamiske* visuals](#optimize-a-visual-for-any-size) og [dynamiske udsnitsværktøjer](#enhance-slicers-to-to-work-well-in-phone-reports), der tilpasses flot til visning på en telefon. Og hvis du føjer filtre til din rapport, vises disse filtre automatisk i telefonrapporten. Læserne af din rapport kan se dem og filtrere rapporten med dem.
+Du kan forbedre oplevelsen, når du får vist dine rapporter på en telefon i mobilappene, ved at oprette en version af rapporten, der er beregnet til telefonen. I Power BI Desktop og i Power BI-tjenesten tilpasser du din rapport til telefonen ved at omarrangere og tilpasse størrelsen på visualiseringer og måske ikke inkludere alle for at få en optimal oplevelse. Du kan også oprette [*dynamiske* visuals](#optimize-a-visual-for-any-size) og [dynamiske udsnitsværktøjer](#enhance-slicers-to-to-work-well-in-phone-reports), der tilpasses flot til visning på en telefon. Og hvis du føjer filtre til din rapport, vises disse filtre automatisk i telefonrapporten. Læserne af din rapport kan se dem og filtrere rapporten med dem.
 
 ![Optimeret rapport på en telefon](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 
-## <a name="lay-out-a-report-page-for-the-phone-in-power-bi-desktop"></a>Opsæt en rapportside for telefonen i Power BI Desktop
-Når du har [oprettet en rapport i Power BI Desktop](desktop-report-view.md), kan du optimere den til telefoner.
+## <a name="lay-out-a-report-page-for-the-phone"></a>Opsæt en rapportside for telefonen
 
-1. Vælg **Rapportvisning** i den venstre navigationslinje i Power Bi Desktop.
-   
-    ![Rapportvisningsikon](media/desktop-create-phone-report/desktop-create-phone-report-2.png)
-2. Vælg **Telefonlayout** under fanen **Vis**.  
+Når du har oprettet en rapport, kan du optimere den til telefoner.
+
+1. I rapportvisning i Power BI Desktop skal du vælge **Telefonlayout** på fanen **Vis**.  
    
     ![Telefonlayoutikon](media/desktop-create-phone-report/desktop-create-phone-report-3.png)
    
+    I Power BI-tjenesten skal du vælge **Rediger rapport** > **Mobillayout**.
+
     Du kan se et tomt telefonlærred. Alle visualiseringerne på den originale rapportside er vist i ruden Visualiseringer til højre.
+
 3. Føj en visualisering til telefonlayoutet ved at trække det fra ruden Visualiseringer til telefonlærredet.
    
     Telefonrapporter bruger et gitterlayout. Når du trækker visualiseringer til mobilgitteret, falder de på plads i gitteret.
@@ -40,12 +41,10 @@ Når du har [oprettet en rapport i Power BI Desktop](desktop-report-view.md), ka
     ![Træk og slip en visualisering](media/desktop-create-phone-report/desktop-create-phone-report-4.gif)
    
     Du kan føje nogle eller alle visualiseringerne på masterrapportsiden til telefonrapportsiden. Du kan kun tilføje hver visualisering én gang.
+
 4. Du kan tilpasse størrelsen på dine visualiseringer i gitteret, ligesom du ville gøre det for felter på dashboards og mobildashboards.
    
-   > [!NOTE]
-   > Telefonrapportgitteret tilpasses telefoner af forskellig størrelse, så din rapport ser lige så flot ud på telefoner med små som store skærme.
-   > 
-   > 
+   Telefonrapportgitteret tilpasses telefoner af forskellig størrelse, så din rapport ser lige så flot ud på telefoner med små som store skærme.
    
    ![Tilpas størrelsen på en visualisering](media/desktop-create-phone-report/desktop-create-phone-report-5.gif)
 

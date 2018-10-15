@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: overview
 ms.date: 07/31/2018
-ms.openlocfilehash: 2889345c5e4a5e93602c51baa27bf2c7e28e138f
-ms.sourcegitcommit: 16098be04df05bc8e3d44a99b4d143b622759c59
+ms.openlocfilehash: 7b96e671a6fe9b450fff683ced3caa611ae70bd7
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39616022"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973764"
 ---
 # <a name="embedding-with-power-bi"></a>Integrering med Power BI
 
-Power BI-tjenesten (SaaS) og tjenesten Power BI Embedded i Azure (PaaS) har API'er, du kan bruge til at integrere dine dashboards og rapporter. Det betyder, at du har en række funktioner og adgang til de nyeste funktioner i Power BI, f.eks. dashboards, gateways og apparbejdsområder, når du integrerer indhold.
+Power BI-tjenesten (SaaS) og tjenesten Power BI Embedded i Azure (PaaS) har API'er, du kan bruge til at integrere dine dashboards og rapporter. Denne funktion betyder, at du har en række funktioner og adgang til de nyeste funktioner i Power BI, f.eks. dashboards, gateways og apparbejdsområder, når du integrerer indhold.
 
-Du kan gennemgå [Onboarding lbudExperience Tool](https://aka.ms/embedsetup) for hurtigt at komme i gang og downloade en eksempelapp.
+Du kan gennemgå [værktøjet til konfiguration af integrering](https://aka.ms/embedsetup) for hurtigt at komme i gang og downloade en eksempelapp.
 
 Vælg den løsning, der er den rette for dig:
 
@@ -49,7 +49,7 @@ Se følgende for integrering i forbindelse med din organisation:
 
 Funktionaliteten i selvbetjeningsportalen, f.eks. rediger, gem og meget mere, er tilgængelig via [JavaScript-API'en](https://github.com/Microsoft/PowerBI-JavaScript) ved integrering i forbindelse med Power BI-brugere.
 
-Du kan gennemgå [Onboarding Experience Tool for at integrere for din organisation](https://aka.ms/embedsetup/UserOwnsData) og hurtigt komme i gang med og downloade en eksempelapp, hvor du kan se, hvordan du integrerer en rapport for din organisation.
+Du kan gennemgå [værktøjet til konfiguration af integrering](https://aka.ms/embedsetup/UserOwnsData) for at integrere, så din organisation hurtigt kan komme i gang, og hente en eksempelapp, hvor du kan se, hvordan du integrerer en rapport for din organisation.
 
 ## <a name="embedding-for-your-customers"></a>Integrer for dine kunder
 

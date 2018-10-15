@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6cbd67a9c35726830fc862326d9a015b96952b83
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 5fe70f2ba213305c5307bb202cacbb1245cf970f
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "37136289"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548551"
 ---
 # <a name="connect-to-lithium-with-power-bi"></a>Opret forbindelse til Lithium med Power BI
 Lithium skaber tillidsforhold mellem verdens bedste varemærker og deres kunder, så alle kan få svar og dele deres oplevelser. Ved at forbinde Lithium-indholdspakken med Power BI kan du foretage vigtige målinger i dit onlinecommunity, som kan hjælpe med at fremme salget, reducere serviceomkostningerne og forbedre loyaliteten. 
@@ -49,10 +49,10 @@ Opret forbindelse til [Lithium-indholdspakken](https://app.powerbi.com/getdata/s
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
-* [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
-* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
+* [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport.
+* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
 ## <a name="system-requirements"></a>Systemkrav
 Lithium-indholdspakken kræver et Lithium-community v15.9 eller højere. Kontakt Lithium-administratoren for at bekræfte dette.
@@ -60,5 +60,5 @@ Lithium-indholdspakken kræver et Lithium-community v15.9 eller højere. Kontakt
 ## <a name="next-steps"></a>Næste trin
 [Hvad er Power BI?](power-bi-overview.md)
 
-[Power BI – Grundlæggende begreber](service-basic-concepts.md)
+[Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)
 

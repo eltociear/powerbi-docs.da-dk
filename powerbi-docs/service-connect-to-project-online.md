@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 60ca8d828d3bb33dced97213e2f135db364c35e5
-ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
+ms.openlocfilehash: 75017eed249b7ec3c4eaab5931a4c1be80770ab1
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37145132"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548850"
 ---
 # <a name="connect-to-project-online-with-power-bi"></a>Opret forbindelse til Project Online med Power BI
 Microsoft Project Online er en fleksibel onlineløsning til projektporteføljestyring (PPM) og det daglige arbejde. Project Online gør det muligt for organisationer at komme i gang, prioritere investeringer i projektporteføljen og levere den tilsigtede forretningsværdi. Til Project Online-indholdspakken til Power BI får du mulighed at få ny viden fra Project Online for at hjælpe med at administrere projekter, porteføljer og ressourcer.
@@ -55,10 +55,10 @@ Bemærk, at du skal have Oversigtsfremviser-, Oversigtsleder- eller Administrato
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
-* [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
-* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
+* [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport.
+* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
 **Udvid indholdspakken**
 

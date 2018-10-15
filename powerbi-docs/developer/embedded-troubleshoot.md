@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/31/2018
-ms.openlocfilehash: d540dd29214422dfc33dca2bf2fb1cb74ebe6de7
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: 71cb40ef6f1346bd3d8486658b05427e66d1dbf3
+ms.sourcegitcommit: 9719eccf29298c9c673200350abc58281ef14869
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558562"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46474040"
 ---
 # <a name="troubleshooting-your-embedded-application"></a>Fejlfinding af det integrerede program
 
@@ -84,18 +84,18 @@ En fiddler-optagelse kan være påkrævet med henblik på yderligere efterforskn
 
 Programmets backend skal muligvis opdatere godkendelsestokenet før kaldet til GenerateToken.
 
-```
+    ```
     GET https://wabi-us-north-central-redirect.analysis.windows.net/metadata/cluster HTTP/1.1
     Host: wabi-us-north-central-redirect.analysis.windows.net
     ...
     Authorization: Bearer eyJ0eXAiOi...
     ...
- 
+
     HTTP/1.1 403 Forbidden
     ...
-     
+
     {"error":{"code":"TokenExpired","message":"Access token has expired, resubmit with a new access token"}}
-```
+    ```
 
 ## <a name="authentication"></a>Godkendelse
 
@@ -229,13 +229,13 @@ Når du har modtaget IError-objektet, skal du kigge i den relevante tabel over a
 | OpenConnectionError | Visualiseringen kan ikke vises. Der kunne ikke visuelt gengives en rapport med titlen: <visual title> | I/T | Kapacitet, der er sat på pause eller slettet, mens en rapport, der er relateret til en kapacitet, var åben i en session |
 | ExplorationContainer_FailedToLoadModel_DefaultDetails | Det modelskema, der er knyttet til denne rapport, kunne ikke indlæses. Kontrollér, at du har forbindelse til serveren, og prøv igen. | I/T | <li> Kapaciteten er midlertidigt afbrudt <li> Kapaciteten er slettet |
 
-## <a name="onboarding-experience-tool-for-embedding"></a>Onboarding Experience Tool til integration
+## <a name="embedding-setup-tool"></a>Embedding-konfigurationsværktøj
 
-Du kan gennemgå [Onboarding Experience Tool](https://aka.ms/embedsetup) for hurtigt at downloade en eksempelapp. Derefter kan du sammenligne din app med eksemplet.
+Du kan gennemgå [Embedding-konfigurationsværktøjet](https://aka.ms/embedsetup) for hurtigt at downloade en eksempelapp. Derefter kan du sammenligne din app med eksemplet.
 
 ### <a name="prerequisites"></a>Forudsætninger
 
-Kontrollér, at du opfylder de krævede forudsætninger, før du bruger Onboarding Experience Tool. Du skal have en **Power BI Pro**-konto og et **Microsoft Azure**-abonnement.
+Kontrollér, at du opfylder de påkrævede forudsætninger, før du bruger Embedding-konfigurationsværktøjet. Du skal have en **Power BI Pro**-konto og et **Microsoft Azure**-abonnement.
 
 * Hvis du ikke er tilmeldt **Power BI Pro**, kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/en-us/pricing/), før du begynder.
 * Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), før du begynder.
@@ -244,7 +244,7 @@ Kontrollér, at du opfylder de krævede forudsætninger, før du bruger Onboardi
 
 ### <a name="common-issues"></a>Almindelige problemer
 
-Nogle af de mest almindelige problemer, som du kan støde på, når du tester Onboarding Experience Tool, er:
+Nogle af de mest almindelige problemer, som du kan støde på, når du tester Embedding setup tool, er:
 
 #### <a name="using-the-embed-for-your-customers-sample-application"></a>Brug af eksempelappen Embed for your customers
 
@@ -262,6 +262,10 @@ Følgende fejlmeddelelse vises, når eksempelappen køres:
 
 Denne fejl opstår, fordi den eneste værdi, der ikke bliver overført til eksempelappen, er din brugeradgangskode. Åbn filen Web.config i løsningen, og udfyld feltet pbiPassword med din brugeradgangskode.
 
+Hvis du får vist fejlen – AADSTS50079: Brugeren skal anvende multifaktorgodkendelse.
+
+    Need to use an AAD account that does not have MFA enabled.
+
 #### <a name="using-the-embed-for-your-organization-sample-application"></a>Brug af eksempelappen Embed for your organization
 
 Hvis du arbejder med **Embed for your organization**, skal du gemme og udpakke filen *PowerBI-Developer-Samples.zip*. Derefter skal du åbne mappen *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* og køre filen *pbi-saas-embed-report.sln*.
@@ -275,6 +279,10 @@ Dette skyldes, at den URL-adresse til omdirigering, der er angivet for webserver
 Hvis du vil redigere det registrerede program, skal du lære at redigere den [AAD-registrerede app](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), så appen kan give adgang til web-API'erne.
 
 Hvis du vil redigere Power BI-brugerprofilen eller -dataene, skal du lære, hvordan du redigere dine [Power BI-data](https://docs.microsoft.com/power-bi/service-basic-concepts).
+
+Hvis du får vist fejlen – AADSTS50079: Brugeren skal anvende multifaktorgodkendelse.
+
+    Need to use an AAD account that does not have MFA enabled.
 
 Du kan finde flere oplysninger under [Ofte stillede spørgsmål om Power BI Embedded](embedded-faq.md).
 

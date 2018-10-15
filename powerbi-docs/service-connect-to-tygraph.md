@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4e9e10f713be50707909c68b104f82cada6777b6
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: 3c508044e9f21c09d3115fd745320be9ad0161bc
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37599041"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46548436"
 ---
 # <a name="connect-to-tygraph--with-power-bi"></a>Opret forbindelse til tyGraph med Power BI
 Visualiser og udforsk dine tyGraph-data i Power BI med Power BI-indholdspakken. Start med at oprette forbindelse til din tyGraph-konto, og indlæs dashboardet, rapporter og datasæt. Indholdet omfatter indsigt, f.eks. Measure of Active Engagement (MAE-score) og de største bidragsydere. Tilpas det yderligere for at fremhæve de oplysninger, som betyder mest for dig.  Dataene opdateres automatisk i overensstemmelse med en tidsplan, du har angivet.
@@ -51,14 +51,14 @@ Opret forbindelse til [tyGraph til Power BI](https://app.powerbi.com/getdata/ser
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
-* [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
-* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved at bruge **Opdater nu**
+* [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport.
+* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
 <a name="FindingParams"></a>
 
-## <a name="finding-parameters"></a>Søg efter parametre
+## <a name="finding-parameters"></a>Søgning efter parametre
 Du kan hente data for alle de grupper, du har adgang til, eller du kan vælge at angive et undersæt. Du kan også oprette et undersæt af data efter dato. Du kan oprette flere tyGraph-dashboards, hvis du vil overvåge bestemte sæt grupper og/eller datoer. Der er oplysninger om disse parametre nedenfor.
 
 **Grupper**

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 03/22/2018
+ms.date: 09/14/2018
 ms.author: maggies
-ms.openlocfilehash: 6ea5814cdba7df6d7e7bb4bbb284f52110ca184c
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 06a8d15ca894b877199f22fc6c00d4c34827d76b
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44730547"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547792"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Få vist Power BI-rapporter, der er optimeret til din telefon
 
@@ -24,7 +24,7 @@ Gælder for:
 |:--- |:--- |
 | iPhone-telefoner |Android-telefoner |
 
-Når du opretter en Power BI-rapport i Power BI Desktop, kan du også [oprette en version af rapporten optimeret til visning](../../desktop-create-phone-report.md) i Power BI-appen på en telefon.
+Når du opretter en Power BI-rapport i Power BI Desktop eller i Power BI-tjenesten, kan du også [oprette en version af rapporten optimeret til visning](../../desktop-create-phone-report.md) i Power BI-appen på en telefon.
 
 Når du derefter åbner en Power BI-rapport på en telefon, registrerer Power BI, om rapporten er blevet optimeret til telefoner, og det åbner automatisk den optimerede rapport i stående format.
 
@@ -79,7 +79,7 @@ Nogle handlinger kan kun udføres i Fokustilstand på grund af den begrænsede s
     Hvis du bruger Tilbagefør på rapportniveau, ryddes alle dine ændringer fra alle visualiseringer. Hvis du bruger Tilbagefør på visualiseringsniveau, ryddes alle dine ændringer i den specifikke visualisering.   
 
 ## <a name="drill-down-in-a-visual"></a>Detailudledning i en visualisering
-Hvis der er defineret hierarkiniveauer i en visualisering, kan du dykke ned i de mere detaljerede oplysninger, som vises i en visualisering, og derefter gå opad i hierarkiet igen. Du kan [tilføje detailudledning i en visualisering](../../power-bi-visualization-drill-down.md) i enten Power BI-tjenesten eller i Power BI Desktop. Når du får vist en rapport på en telefon, virker detailudledning kun i de Power BI-rapporter, der er optimeret til telefoner. 
+Hvis der er defineret hierarkiniveauer i en visualisering, kan du dykke ned i de mere detaljerede oplysninger, som vises i en visualisering, og derefter gå opad i hierarkiet igen. Du kan [tilføje detailudledning i en visualisering](../end-user-drill.md) i enten Power BI-tjenesten eller i Power BI Desktop. Når du får vist en rapport på en telefon, virker detailudledning kun i de Power BI-rapporter, der er optimeret til telefoner. 
 
 1. Tryk på de tre prikker (**...**) i øverste højre hjørne i en rapport på telefonen, og vælg **Udvid til fokustilstand**.
    

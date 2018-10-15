@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: dd9b5b9f9db95b73a7001c34bcabcd2deacb8b4c
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: f0c98d88ad9b87e57cf8f1cf7c36a58e30b684ea
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136548"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46545354"
 ---
 # <a name="sql-database-auditing-content-pack-for-power-bi"></a>SQL Database Auditing-indholdspakke til Power BI
 Power BI-indholdspakken til Azure [SQL Database Auditing](http://azure.microsoft.com/documentation/articles/sql-database-auditing-get-started/) gør det muligt at forstå din databaseaktivitet og få indsigt i de afvigelser og uregelmæssigheder, der kunne være årsag til forretningsmæssige bekymringer eller give mistanke til brud på sikkerheden. 
@@ -62,10 +62,10 @@ Opret forbindelse til [SQL Database Auditing-indholdspakke](https://app.powerbi.
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
-* [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
-* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
+* [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport.
+* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
 ## <a name="next-steps"></a>Næste trin
 [Hent data til Power BI](service-get-data.md)

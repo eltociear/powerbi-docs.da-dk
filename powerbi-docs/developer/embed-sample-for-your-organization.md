@@ -9,14 +9,15 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 544429528ed51dd2928eb82632f512ff3f7d5afd
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.openlocfilehash: aca87dd2e9dafb630d20e19f98a44380c30db32c
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39359725"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45974155"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Selvstudium: Integrer en rapport, et dashboard eller et felt i Power BI i et program til din organisation
+
 I dette selvstudium vises, hvordan du kan integrere en rapport i et program ved hjælp af **Power BI** .NET SDK sammen med **Power BI** JavaScript-API'en, når du integrerer **Power BI** i et program til din organisation. Med **Power BI** kan du integrere rapporter, dashboards eller felter i et program vha. **brugeren ejer dataene**. **Brugeren ejer dataene** gør det muligt for programmet at udvide Power BI-tjenesten.
 
 ![Se program](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
@@ -27,6 +28,7 @@ I dette selvstudium lærer du, hvordan du kan:
 >* Integrer en Power BI-rapport i et program.
 
 ## <a name="prerequisites"></a>Forudsætninger
+
 For at komme i gang skal du have en **Power BI Pro**-konto og et **Microsoft Azure**-abonnement.
 
 * Hvis du ikke er tilmeldt **Power BI Pro**, kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/en-us/pricing/), før du begynder.
@@ -38,9 +40,10 @@ For at komme i gang skal du have en **Power BI Pro**-konto og et **Microsoft Azu
 
 Før du begynder at integrere rapporter, dashboards eller felter i din app, skal du sikre dig, at du kan integrere i dit miljø. Du skal gøre følgende som en del af konfigurationen.
 
-Du kan gennemgå [Onboarding Experience Tool](https://aka.ms/embedsetup/UserOwnsData) for hurtigt komme i gang med og downloade en eksempelapp, hvor du kan se, hvordan du opretter et miljø og integrerer en rapport.
+Du kan gennemgå [værktøjet til konfiguration af integrering](https://aka.ms/embedsetup/UserOwnsData) for hurtigt komme i gang med og downloade en eksempelapp, hvor du kan se, hvordan du opretter et miljø og integrerer en rapport.
 
 Hvis du vælger at konfigurere miljøet manuelt, kan du dog fortsætte nedenfor.
+
 ### <a name="register-an-application-in-azure-active-directory-azure-ad"></a>Registrer et program i Azure Active Directory (Azure AD)
 
 Du kan registrere dit program i Azure Active Directory, så dit program får adgang til Power BI REST-API'er. Det giver dig mulighed for at oprette et id for dit program og angive tilladelser til Power BI REST-ressourcer.
@@ -229,17 +232,21 @@ Følg disse trin for at begynde at integrere dit indhold vha. et eksempelprogram
     ![Se program](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 ## <a name="embed-your-content-within-your-application"></a>Integrer dit indhold i dit program
+
 Selvom trinnene til at integrere dit indhold kan gøres med [Power BI REST API'er](https://docs.microsoft.com/rest/api/power-bi/), foretages eksempelkoderne, der er beskrevet i denne artikel, med **.NET SDK**.
 
 Du integrerer en rapport i en webapp ved hjælp af **Power BI REST-API'en** eller **Power BI C#-SDK'en** og et **adgangstoken** til Azure Active Directory (AD) for at hente en rapport. Derefter skal du indlæse rapporten ved hjælp af det samme **adgangstoken**. **Power BI REST-API'en** leverer programmatisk adgang til bestemte **Power BI**-ressourcer. Du kan finde flere oplysninger under [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/) og [Power BI JavaScript API](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ### <a name="get-an-access-token-from-azure-ad"></a>Hent et adgangstoken fra Azure AD
+
 I programmet skal du først hente et **adgangstoken** fra Azure AD, før du kan foretage kald til Power BI REST-API'en. Du kan finde flere oplysninger under [Godkend brugere, og få et Azure AD-adgangstoken til din Power BI-app](get-azuread-access-token.md).
 
 ### <a name="get-a-report"></a>Hent en rapport
+
 Du henter en **Power BI**-rapport ved at bruge handlingen [Hent rapporter](https://docs.microsoft.com/rest/api/power-bi/reports/getreports), hvorved en liste over **Power BI-rapporter** hentes. Du kan få et rapport-id fra listen over rapporter.
 
 ### <a name="get-reports-using-an-access-token"></a>Hent rapporter ved hjælp af et adgangstoken
+
 Handlingen [Hent rapporter](https://docs.microsoft.com/rest/api/power-bi/reports/getreports) returnerer en liste over rapporter. Du kan få en enkelt rapport på listen over rapporter.
 
 Du skal inkludere en *godkendelsesheader* i formatet *Bearer {adgangstoken}* for at kunne foretage REST-API-kaldet.
@@ -303,6 +310,7 @@ public class PBIReport
 ```
 
 #### <a name="get-reports-using-the-net-sdk"></a>Hent rapporter ved hjælp af .NET-SDK
+
 Du kan bruge .NET-SDK'et til at hente en liste over rapporter i stedet for at kalde REST-API'en direkte. Her er et kodeeksempel på, hvordan du opretter en liste over rapporter.
 
 ```csharp
@@ -325,6 +333,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 ```
 
 ### <a name="load-a-report-using-javascript"></a>Indlæs en rapport ved hjælp af JavaScript
+
 Du kan bruge JavaScript til at indlæse en rapport i et div-element på din webside.
 
 Her er et kodeeksempel på, hvordan du henter en rapport fra et givent arbejdsområde.
@@ -413,6 +422,7 @@ function updateEmbedReport() {
 Nu, hvor du er færdig med at udvikle dit program, er tiden kommet til at underbygge dit arbejdsområde med dedikerede kapacitet.
 
 ### <a name="create-a-dedicated-capacity"></a>Opret en dedikeret kapacitet
+
 Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for indholdet i dit apparbejdsområde. Du kan oprette en dedikeret kapacitet ved hjælp af [Power BI Premium ](../service-premium.md).
 
 I tabellen nedenfor kan du se en oversigt over de Power BI Premium-SKU'er, der er tilgængelige i [Office 365](../service-admin-premium-purchase.md).
@@ -453,6 +463,7 @@ Når du opretter en dedikeret kapacitet, kan du tildele dit apparbejdsområde ti
 Globale administratorer, eller Power BI-tjenesteadministratorer, kan slå muligheden for at bruge REST-API'erne til eller fra for en lejer. Power BI-administratorer kan angive denne indstilling for hele organisationen eller for enkelte sikkerhedsgrupper. Den er som standard aktiveret for hele organisationen. Det gør du via [Power BI-administratorportalen](../service-admin-portal.md).
 
 ## <a name="next-steps"></a>Næste trin
+
 I dette selvstudium har du lært, hvordan du integrerer Power BI-indhold i et program ved hjælp af din **Power BI-organisationskonto**. Nu kan du prøve at integrere Power BI-indhold i et program ved hjælp af apps.  Du kan også prøve at integrere Power BI-indhold for din kunder.
 
 > [!div class="nextstepaction"]

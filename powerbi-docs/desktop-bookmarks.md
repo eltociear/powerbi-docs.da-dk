@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fe52646eef029359ac0e41c5fb32be524076a22d
-ms.sourcegitcommit: cce10e14c111e8a19f282ad6c032d802ebfec943
+ms.openlocfilehash: 1bb9921b31187d0df3debc644088a72e1d78207c
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39657960"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46549908"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Brug bogmærker til at dele indsigt og oprette historier i Power BI 
 Ved hjælp af **bogmærker** i Power BI kan du indfange den visning af en rapportside, der er konfigureret i øjeblikket, herunder filtrering af og tilstanden for visualiseringer, og senere gå tilbage til denne tilstand ved ganske enkelt at vælge det gemte bogmærke. 
@@ -132,7 +132,7 @@ Når du bruger funktionen **Vis** med bogmærker, gælder følgende:
 
 * Hvis det valgte bogmærke er i en gruppe, når du vælger **Vis** fra bogmærkerne, er det kun bogmærkerne *i den pågældende gruppe*, der vises. 
 
-* Hvis det valgte bogmærke ikke er en gruppe, eller den er på øverste niveau (f.eks navnet på en bogmærkegruppe), vises alle bogmærkerne for hele rapporten, herunder bogmærkerne i en gruppe. 
+* Hvis det valgte bogmærke ikke er i en gruppe, eller det er på øverste niveau (f.eks navnet på en bogmærkegruppe), vises alle bogmærkerne for hele rapporten, herunder bogmærkerne i en gruppe. 
 
 Hvis du vil ophæve en gruppe af bogmærker, skal du vælge et bogmærke i en gruppe, klikke på de tre prikker og derefter vælge **Opdel gruppe** i den viste menu. 
 
@@ -182,5 +182,5 @@ I denne version af **bogmærker** er der nogle få begrænsninger og overvejelse
 Du kan finde flere oplysninger om de funktioner, der ligner eller interagerer med bogmærker, i følgende artikler:
 
 * [Brug detaljeadgang i Power BI Desktop](desktop-drillthrough.md)
-* [Vis et dashboardfelt eller en rapport i fokustilstand](service-focus-mode.md)
+* [Vis et dashboardfelt eller en rapport i fokustilstand](consumer/end-user-focus.md)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f81330ec331ae42dea994982369428e9f7eb23aa
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 0bb592d508e959267df31e705aa833394aa4d19e
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34249430"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544871"
 ---
 # <a name="connect-to-twilio-with-power-bi"></a>Opret forbindelse til Twilio med Power BI
 Med Microsoft Twilio-indholdspakken til Power BI kan du hente data ind i Power BI, og der oprettes et [Twilio-dashboard](https://powerbi.microsoft.com/integrations/twilio) og en rapport, der viser indsigt i dine data. Du kan også oprette brugerdefinerede rapporter og dashboard på det datasæt, Power BI opretter. Dataene opdateres en gang om dagen, så du altid ser på de seneste data.
@@ -41,12 +41,12 @@ Opret forbindelse til [Twilio-indholdspakken](https://app.powerbi.com/getdata/se
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
-* [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
-* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
+* [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport.
+* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
-## <a name="whats-included"></a>Følgende er inkluderet
+## <a name="whats-included"></a>Det følgende er inkluderet
 Oplysninger om alle opkald og meddelelser inden for de seneste 30 dage. Du kan udføre alle mulige analyser og samling af disse data.
 
 En række allerede samlede statistikker, som du kan holde øje med. Dette samling omfatter:

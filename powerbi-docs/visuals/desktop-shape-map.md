@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ad9a3e73a90ff69f5d56e1e5c1fc487c855df74d
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 32f59f1bac40a1359aef0f91c9573cc49dd70725
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46566021"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187392"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Figurkort i Power BI Desktop (prøveversion)
-I Power BI Desktop kan du oprette visualiseringen **Figurkort** for at vise relative sammenligninger mellem områder på et kort ved at anvende forskellige farver for forskellige områder. I modsætning til visualiseringen **Kort** kan **Figurkort** ikke vise nøjagtige geografiske lokationer med datapunkter på et kort. I stedet er det primære formål at vise relative sammenligninger af områder på et kort ved at farvelægge dem forskelligt.
+Opret en visualisering af typen **Figurkort** til at sammenligne områder på et kort ved hjælp af farver. I modsætning til visualiseringen **Kort** kan **Figurkort** ikke vise den nøjagtige geografiske placering af datapunkter på et kort. I stedet er dens primære formål at vise relative sammenligninger mellem områder på et kort ved at give dem forskellige farver.
 
-Visualiseringen **Figurkort** er baseret på ESRI/TopoJSON-kort, der kan anvendes med brugerdefinerede kort, som du opretter, for eksempel geografiske kort, arrangement af siddepladser og andet. Muligheden for at bruge brugerdefinerede kort er ikke tilgængelig i denne evalueringsversion af **Figurkort**.
+Visualiseringen **Figurkort** er baseret på ESRI/TopoJSON-kort, der kan anvendes med brugerdefinerede kort, som du opretter. Eksempler på brugerdefinerede kort er: geografiske kort, kort over siddepladser, kort over etager med mere. Muligheden for at bruge brugerdefinerede kort er ikke tilgængelig i denne evalueringsversion af **Figurkort**.
 
 ## <a name="creating-shape-maps"></a>Opret figurkort
 Du kan afprøve kontrolelementet **Figurkort** med de kort, som medfølger i denne prøveversion, eller du kan bruge dine egne brugerdefinerede kort, så længe de opfylder de krav, der er angivet i afsnittet **Brug brugerdefinerede kort** nedenfor.
@@ -47,7 +47,7 @@ Gør følgende for at oprette et **figurkort**:
    > 
 
    ![](media/desktop-shape-map/shape-map_3a.png)
-2. I ruden **Format** skal du udvide **Figur** og vælge på rullemenuen **Standardkort** for at få vist dine data. På nuværende tidspunkt vises gengivelsen af kortet som vist i følgende billede.
+2. I ruden **Format** skal du udvide **Figur** og vælge på rullemenuen **Standardkort** for at få vist dine data. På nuværende tidspunkt vises gengivelsen af kortet som vist på følgende billede.
 
    ![](media/desktop-shape-map/shape-map_3b.png)
 
@@ -115,7 +115,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="australia-states"></a>Australien: delstater
 
-| id | forkortelse | iso | navn | postal |
+| `id` | `abbr` | `iso` | `name` | `postal` |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -128,7 +128,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="austria-states"></a>Østrig: delstater
 
-| id | iso | navn | navn-en | postnummer |
+| `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -142,7 +142,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="brazil-states"></a>Brasilien: delstater
 
-| id |
+| `id` |
 | --- |
 | Tocantins |
 | Pernambuco |
@@ -178,7 +178,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="canada-provinces"></a>Canada: provinser
 
-| id | iso | navn | postnummer |
+| `id` | `iso` | `name` | `postal` |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -196,7 +196,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="france-regions"></a>Frankrig: regioner
 
-| id | navn | navn-en |
+| `id` | `name` | `name-en` |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
 | Rhone-Alpes |Rhône-Alpes |Rhone-Alpes |
@@ -223,7 +223,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="germany-states"></a>Tyskland: delstater
 
-| id | iso | navn | navn-en | postnummer |
+| `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thuringia |TH |
@@ -244,7 +244,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="ireland-counties"></a>Irland: amter
 
-| id |
+| `id` |
 | --- |
 | Wicklow |
 | Wexford |
@@ -275,7 +275,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="italy-regions"></a>Italien: regioner
 
-| id | iso | navn | navn-en | postnummer |
+| `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta Valley |VD |
@@ -300,7 +300,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="mexico-states"></a>Mexico: delstater
 
-| id | abreviatura | iso | navn | navn-en | postnummer |
+| `id` | `abreviatura` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatan |YU |
@@ -337,7 +337,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="netherlands-provinces"></a>Nederlandene: provinser
 
-| id | iso | navn | navn-en |
+| `id` | `iso` | `name` | `name-en` |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -354,7 +354,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="uk-countries"></a>Storbritannien: lande/områder
 
-| id | iso | navn |
+| `id` | `iso` | `name` |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Skotland |
@@ -363,7 +363,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="usa-states"></a>USA: stater
 
-| id | navn | postnummer |
+| `id` | `name` | `postal` |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |

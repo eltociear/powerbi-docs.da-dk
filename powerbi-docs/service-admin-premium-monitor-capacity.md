@@ -10,25 +10,22 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 08/29/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 8e19bc596bef3862dca79ac92ffbd74954a9c756
-ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
+ms.openlocfilehash: b5a2b26beb548a7f1df5edb8cf12a2c0ea250c8f
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43300155"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187622"
 ---
-# <a name="monitor-power-bi-premium-capacities-in-your-organization"></a>Overvåg Power BI Premium-kapaciteter i din organisation
+# <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Overvåg kapaciteter i Power BI Premium og Power BI Embedded
 
-Denne artikel indeholder en oversigt over overvågning af målepunkter for dine Power BI Premium-kapaciteter. Ved at overvåge kapacitetsforbrug kan du træffe mere velovervejede beslutninger, når du administrerer dine kapaciteter. 
+Denne artikel indeholder en oversigt over overvågning af målepunkter for dine Power BI Premium-kapaciteter. Ved at overvåge kapacitetsforbrug kan du træffe mere velovervejede beslutninger, når du administrerer dine kapaciteter.
 
 Du kan overvåge kapacitet med Power BI Premium-appen Capacity Metrics eller i administrationsportalen. Vi anbefaler appen, fordi den giver mange flere detaljer, men i denne artikel beskrives begge muligheder.
 
 ## <a name="install-the-premium-capacity-metrics-app"></a>Installér Premium-appen Capacity Metrics
 
 Du kan gå direkte til [Premium-appen Capacity Metrics](https://app.powerbi.com/groups/me/getapps/services/capacitymetrics) eller installere den, som du plejer med andre apps i Power BI.
-
-> [!IMPORTANT]
-> Hvis du vil installere og bruge denne app, skal du være kapacitetsadministrator for mindst én kapacitet. Det er ikke tilstrækkeligt at være Power BI-administrator. 
 
 1. I Power BI skal du klikke på **Apps**.
 
@@ -42,7 +39,8 @@ Du kan gå direkte til [Premium-appen Capacity Metrics](https://app.powerbi.com/
 
 Nu, hvor du har installeret appen, kan du se målepunkter for kapaciteterne i din organisation. Lad os se nærmere på nogle af de vigtigste målepunkter, der er tilgængelige.
 
-## <a name="use-the-metrics-app"></a>Brug målepunktsappen 
+## <a name="use-the-metrics-app"></a>Brug målepunktsappen
+
 Når du åbner appen, viser den først et dashboard med en oversigt over alle de kapaciteter, som du har administratorrettigheder til.
 
 ![Oversigt over Premium-rapport](media/service-admin-premium-monitor-capacity/app-dashboard.png)

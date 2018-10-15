@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 09/17/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4540c00e4956e87e1c012dc2a35c00e61e00b5a6
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: ae17eff366fe5e931963c9367586c08fd39eda69
+ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39328138"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45973925"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Stikprøvetagning af linjer med høj tæthed i Power BI
 Fra og med udgivelsen af **Power BI Desktop** fra juni 2017 og opdateringerne til **Power BI-tjenesten** findes der en ny algoritme til stikprøvetagning, som forbedrer visuelle elementer, der bruger stikprøver af data med høj tæthed. Du kan f.eks. oprette et kurvediagram ud fra dine detailbutikkers salgsresultater, hvor hver butik har mere end ti tusinde salgskvitteringer hvert år. Et kurvediagram med disse salgsoplysninger tager en datastikprøve (vælger en relevant repræsentation af disse data for at illustrere, hvordan salget varierer i tidsperioden) fra dataene for hver enkelt butik og opretter et kurvediagram med flere serier, der repræsenterer de underliggende data. Dette er almindelig praksis ved visualisering af data med høj tæthed. Stikprøvetagning af data med høj tæthed er blevet forbedret i Power BI Desktop. Der er flere oplysninger om dette i denne artikel.
@@ -24,8 +24,6 @@ Fra og med udgivelsen af **Power BI Desktop** fra juni 2017 og opdateringerne ti
 
 > [!NOTE]
 > Algoritmen **Stikprøvetagning med høj tæthed**, der er beskrevet i denne artikel, er tilgængelig både i **Power BI Desktop** og **Power BI-tjenesten**.
-> 
-> 
 
 ## <a name="how-high-density-line-sampling-works"></a>Sådan fungerer stikprøvetagning af linjer med høj tæthed
 Tidligere valgte **Power BI** en samling af eksempeldatapunkter i alle de underliggende data på en deterministisk måde. I en visualisering af data med høj tæthed, som strækker sig over et kalenderår, kan der f.eks. vises 350 eksempeldatapunkter, som hver især er valgt for at sikre, at det fuldstændige dataområde (den samlede serie underliggende data) er repræsenteret i visualiseringen. For at illustrere, hvordan dette sker, kan du prøve at forestille dig, at du skal lave en afbildning af aktiekursen over en periode på ét år og har valgt at oprette en visualisering med et kurvediagram med 365 datapunkter (ét datapunkt for hver dag).
@@ -42,17 +40,25 @@ I en visualisering med høj tæthed bruger **Power BI** en intelligent funktion 
 ### <a name="minimum-and-maximum-values-for-high-density-line-visuals"></a>Minimum- og maksimumværdier for linjevisualiseringer med stor tæthed
 For enhver given visualisering gælder følgende visuelle begrænsninger:
 
-* Det maksimale antal datapunkter, der kan **vises** i visualiseringen, er *3.500* uanset antallet af underliggende datapunkter eller -serier. Hvis du derfor har 10 serier med 350 datapunkter i hver, har visualiseringen nået grænsen for det maksimale antal samlede datapunkter. Hvis du har én serie, kan den have op til 3.500 datapunkter, hvis det i den nye algoritme skønnes, at det er den bedste prøvetagning af de underliggende data.
+* Det maksimale antal datapunkter, der kan **vises** i visualiseringen, er *3.500* uanset antallet af underliggende datapunkter eller -serier (se *undtagelserne* på følgende punktliste). Hvis du derfor har 10 serier med 350 datapunkter i hver, har visualiseringen nået grænsen for det maksimale antal samlede datapunkter. Hvis du har én serie, kan den have op til 3.500 datapunkter, hvis det i den nye algoritme skønnes, at det er den bedste prøvetagning af de underliggende data.
+
 * Enhver visualisering kan maksimalt have **60 serier**. Hvis du har mere end 60 serier, skal du opdele dataene og oprette flere visualiseringer med 60 serier eller færre. Det er en god ide at bruge et **udsnit** til kun at vise segmenter af dataene (kun bestemte serier). Hvis du f.eks. får vist alle underkategorier i forklaringen, kan du bruge et udsnit til at filtrere efter den overordnede kategori på samme rapportside.
+
+Det maksimale antal datagrænser er højere for følgende visuelle typer, som er *undtagelser* for datapunktgrænsen på 3.500:
+
+* Maksimalt **150.000** datapunkter for R-visuals.
+* **30.000** datapunkter for brugerdefinerede visualiseringer.
+* **10.000** datapunkter for punktdiagrammer (3.500 er standarden for punktdiagrammer).
+* **3.500** for alle andre visualiseringer.
 
 Disse parametre sørger for, at visualiseringer i Power BI Desktop gengives meget hurtigt og reagerer på interaktion med brugere. Parametrene medfører ikke unødvendigt forbrug af beregningsressourcer på den computer, der gengiver visualiseringen.
 
 ### <a name="evaluating-representative-data-points-for-high-density-line-visuals"></a>Evaluering af repræsentative datapunkter for linjevisualiseringer med stor tæthed
-Når antallet af underliggende datapunkter overstiger det maksimale antal datapunkter, der kan gengives i visualiseringen (3.500), startes en proces kaldet *gruppering i beholdere*, der deler de underliggende data i grupper kaldet *placeringer* og derefter gentagne gange justerer disse placeringer.
+Når antallet af underliggende datapunkter overstiger det maksimale antal datapunkter, der kan gengives i visualiseringen, startes en proces kaldet *gruppering i beholdere*, der deler de underliggende data i grupper kaldet *placeringer* og derefter gentagne gange justerer disse placeringer.
 
 Algoritmen opretter så mange placeringer som muligt for at skabe den bedst mulige granulering for visualiseringen. Inden for hver placering finder algoritmen minimum- og maksimumdataværdien for at sikre, at vigtige og betydningsfulde værdier (f.eks. udenforliggende værdier) registreres og vises i visualiseringen. Baseret på resultaterne af grupperingen i beholdere og den efterfølgende evaluering af dataene af Power BI bestemmes den mindste opløsning for X-aksen i visualiseringen – for at sikre maksimal granulering for visualiseringen.
 
-Som tidligere nævnt er minimumgranuleringen for hver serie 350 punkter, mens maksimum er 3.500.
+Som tidligere nævnt er minimumgranuleringen for hver serie 350 punkter, maksimumgranuleringen er 3.500 for de fleste visualiseringer med de *undtagelser*, der er angivet i de forrige afsnit.
 
 Hver placering er repræsenteret af to datapunkter, der bliver placeringens repræsentative datapunkter i visualiseringen. Datapunkterne er simpelthen den mindste og højeste værdi for den pågældende placering og ved at vælge mindste og højeste sikrer processen til gruppering i beholdere, at vigtige høje værdier eller betydningsfulde lave værdier registreres og gengives i visualiseringen.
 

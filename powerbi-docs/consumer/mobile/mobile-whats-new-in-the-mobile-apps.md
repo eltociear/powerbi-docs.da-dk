@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 09/14/2018
 ms.author: maggies
-ms.openlocfilehash: 922352c0cdbacd57d3e6706d490b3cc7e65ab8f6
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 09e7534146ace617ee3e517eca6a453aa9002d38
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44736478"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46546895"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -22,6 +22,25 @@ Du kan finde relaterede oplysninger om nyheder under:
 * [Power BI-teamets blog til mobilapps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheder i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheder i Power BI-tjenesten](../../service-whats-new.md)  
+
+## <a name="september-2018"></a>September 2018
+
+### <a name="phone-report-editing-in-the-browser-all-devices"></a>Redigering af telefonrapport i browseren (alle enheder)
+
+Nu kan du oprette en rapport med telefonlayout for en rapport, der allerede er publiceret i Power BI-tjenesten og ikke kun i Power BI Desktop. Du opretter den i redigeringstilstand i din browser.
+
+### <a name="dashboard-commenting-ios-and-android"></a>Dashboard-kommentarer (iOS og Android) 
+
+Du kan tilføje kommentarer direkte på dashboards og specifikke felter for at diskutere dine data, og alle, der ser dashboardet, får vist dine kommentarer. Du kan også hente andre i din organisation ind i samtalen ved at @mentioning dem. Dem, du har @mentioned, modtager en pushmeddelelse med din meddelelse på deres mobiltelefon.
+
+I øjeblikket tilgængelig til iOS- og Android-enheder. Windows-understøttelse kommer snart.
+
+Læs [Power BI-blogindlæg om dashboard-kommentarer](https://powerbi.microsoft.com/blog/announcing-dashboard-comments-in-power-bi/).
+
+### <a name="single-sign-on-windows"></a>Enkeltlogon (Windows)
+
+Enkeltlogon (SSO) er en af de mest populære funktioner til Power BI – Mobil til Windows. Du kan nu bruge din primære organisationskonto til både at logge på dine domænetilsluttede Windows-mobilenheder og også på Power BI-tjenesten uden problemer. Læs mere om [SSO og Windows-mobilapps](mobile-windows-10-app-single-sign-on-sso.md).
+
 
 ## <a name="july-2018"></a>Juli 2018
 
@@ -177,7 +196,7 @@ Læs [oversigten over funktioner i mobilapps for juli 2017](https://powerbi.micr
 
 ### <a name="june-2107"></a>Juni 2017
 #### <a name="all-devices"></a>Alle enheder
-**Opret appfavoritter** Du kan allerede gøre et dashboard til en favorit. For nylig [tilføjede Power BI apps](../../service-install-use-apps.md), og du kan nu også gøre apps til favoritter. 
+**Opret appfavoritter** Du kan allerede gøre et dashboard til en favorit. For nylig [tilføjede Power BI apps](../end-user-apps.md), og du kan nu også gøre apps til favoritter. 
 
 ### <a name="may-2017"></a>Maj 2017
 #### <a name="all-devices"></a>Alle enheder
@@ -498,7 +517,7 @@ Alle forbedringerne i januar er allerede i den nye [Power BI-app til Windows 10-
 
 **R-felter og webwidgets** Få vist disse nye felttyper på dashboards på din mobilenhed.
 
-**Bing-dashboards** I Power BI-tjenesten kan du nu oprette [dashboards med Bing-søgeresultater](../../service-connect-to-services.md) og få dem vist på din mobilenhed.
+**Bing-dashboards** I Power BI-tjenesten kan du nu oprette [dashboards med Bing-søgeresultater](../end-user-connect-to-services.md) og få dem vist på din mobilenhed.
 
 **Rapportsider fastgjort som felter til dashboards** Nu hvor du kan fastgøre en hel rapportside til et dashboard i Power BI-tjenesten, kan du få vist rapportsider i Power BI-appen på din iPhone eller på din Android-telefon.
 

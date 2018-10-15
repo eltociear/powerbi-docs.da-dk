@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6f914a031c70c68703116083f42885e2fe79cf30
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5db91d037ae32f43fe703bdc7e589a1ec5a295ca
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34247889"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46547608"
 ---
 # <a name="connect-to-sparkpost-with-power-bi"></a>Opret forbindelse til SparkPost med Power BI
 Power BI-indholdspakken til SparkPost giver dig mulighed at udtrække værdifulde datasæt fra din SparkPost-konto til ét dashboard fuld af indsigt. Ved hjælp af SparkPost-indholdspakken kan du visualisere dine overordnede mailstatistikker, herunder domæner, kampagner og engagement efter internetudbyder.
@@ -41,12 +41,12 @@ Opret forbindelse til [SparkPost-indholdspakken til Power BI](https://app.powerb
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
-* [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
-* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
+* [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport.
+* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
-## <a name="whats-included"></a>Følgende er inkluderet
+## <a name="whats-included"></a>Det følgende er inkluderet
 SparkPost-indholdspakken til Power BI indeholder oplysninger om entydige klik, tal om accepterede mails, ikke leverede mails, forsinkede mails, afviste mails og meget mere.
 
 <a name="FindingParams"></a>

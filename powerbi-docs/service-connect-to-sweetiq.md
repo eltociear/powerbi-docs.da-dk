@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1a9b9c8c7cde59cf7cd05b383070183b219159da
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 738fbadb7be4d474cdc6f8a2aa86e6160d6c0234
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37136266"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46543422"
 ---
 # <a name="connect-to-sweetiq-with-power-bi"></a>Opret forbindelse til SweetIQ med Power BI
 Power BI-indholdspakken henter data fra din SweetIQ-konto, og der oprettes standardindhold, så du nemt kan udforske dine data. Du kan bruge SweetIQ-indholdspakken til at analysere data om dine placeringer, annoncer, bedømmelser og anmeldelser. Dataene er indstillet til daglig opdatering for at sikre, at de data, du overvåger, er opdateret.
@@ -41,12 +41,12 @@ Opret forbindelse til [SweetIQ-indholdspakken](https://app.powerbi.com/groups/me
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
-* [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
-* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved at bruge **Opdater nu**
+* [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport.
+* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
-## <a name="finding-parameters"></a>Søg efter parametre
+## <a name="finding-parameters"></a>Søgning efter parametre
 Klient-id'et og API-nøglen til denne indholdspakke er ikke de samme som dit SweetIQ-brugernavn og -adgangskode.
 
 Vælg et klient-id for en af de klienter, din konto har adgang til. Du kan finde listen over klienter under "Klientadministration" i din SweetIQ-konto.

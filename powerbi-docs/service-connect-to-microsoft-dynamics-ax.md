@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 2e84d52d9e26b23380b9fbc12fdaa4086a2ec7ed
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 8466d57340feb80650af93e4f400b82436d11b05
+ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34239902"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46544848"
 ---
 # <a name="connect-to-microsoft-dynamics-ax-content-pack-with-power-bi"></a>Opret forbindelse til Microsoft Dynamics AX-indholdspakken med Power BI
 Microsoft Dynamics AX har tre Power BI-indholdspakker målrettet mod forskellige virksomhedsbrugere. Indholdspakken Financial Performance, som er udviklet specielt til økonomidirektører, giver adgang til indsigt i organisationens økonomiske resultater. Indholdspakken Retail Channel Performance, som er rettet mod kanalledere, fokuserer på salgsresultater for at forudsige tendenser og skabe indsigt ved at trække direkte fra detail- og handelsdata. Cost Management er designet til driftschefer og økonomidirektører og giver oplysninger om driftsresultaterne.
@@ -46,12 +46,12 @@ Opret forbindelse til Microsoft Dynamics AX-indholdspakken [Retail Channel Perfo
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](power-bi-q-and-a.md) øverst i dashboard'et
+* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
-* [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport.
-* Dit datasæt vil være planlagt til daglig opdatering. Du kan dog ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
+* [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport.
+* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
-## <a name="whats-included"></a>Følgende er inkluderet
+## <a name="whats-included"></a>Det følgende er inkluderet
 Indholdspakken bruger Dynamics AX 7 OData-feedet, til at importere data, som relaterer til resultater for henholdsvis detailkanalen (Retail Channel Performance), økonomi (Financial Performance) og omkostningsstyring (Cost Management).
 
 ## <a name="system-requirements"></a>Systemkrav

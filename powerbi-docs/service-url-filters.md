@@ -1,9 +1,9 @@
 ---
 title: Tilføj Power BI-rapportparametre ved hjælp af URL-adressen
 description: Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen til URL-adressen, du kan endda filtrere på mere end ét felt.
-author: mihart
-ms.author: mihart
-manager: annebe
+author: maggiesMSFT
+ms.author: maggies
+manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 09/14/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 1124163b985f575df08a9ba4f065c6a6b1abf54c
-ms.sourcegitcommit: cca21f8089e71b595d3aca30c95f12e4bbf767cc
+ms.openlocfilehash: 1de9624dfde73baf424a21ed4d587d086c1d6763
+ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45626025"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187254"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 
@@ -106,7 +106,7 @@ Power BI understøtter mange operatorer ud over **og**. I nedenstående tabel vi
 |**gt**     | større end        |nej | ja | ja  | produkt/pris gt 20
 |**le**     |   mindre end eller lig med      | nej | ja | ja  | produkt/pris le 100
 |**lt**     |  mindre end       | nej | ja | ja |  produkt/pris lt 20
-|**in****     |  inklusive       | nej | nej |  ja | Studerende/alder in (27, 29)
+|**in****     |  inklusive       | ja | ja |  ja | Studerende/alder in (27, 29)
 
 
 \** Når du bruger **in**, kan værdierne til højre for **in** være en kommasepareret liste angivet i parenteser, eller det kan være et udtryk, der returnerer en samling.
@@ -127,18 +127,18 @@ Et URL-filter i Power BI kan inkludere tal i følgende formater.
 
 Power BI understøtter både OData V3 og V4 for datatyperne **Date** og **DateTimeOffset**.  Datoer repræsenteres vha. EDM-formatet (2019-02-12T00:00:00). Det betyder, at når du angiver en dato som ÅÅÅÅ-MM-DD, vil Power BI fortolke den som ÅÅÅÅ-MM-DDT00:00:00.
 
-Hvorfor er den forskel vigtig? Lad os sige, at du oprette en forespørgselsstrengparameter **Tabel/Dato gt 2018-08-03**.  Vil resultaterne omfatter 3. august 2018 eller starte 4. august 2018? Da Power BI oversætter din forespørgsel til **Tabel/Dato gt 2018-08-03T00:00:00**, vil dine resultater inkludere alle de datoer, som ikke har et klokkeslæt, der kun består af nuller, da disse datoer vil være større end **2018-08-03T00:00:00**.
+Hvorfor er den forskel vigtig? Lad os sige, at du oprette en forespørgselsstrengparameter **Tabel/Dato gt 2018-08-03**.  Vil resultaterne omfatter 3. august 2018 eller starte 4. august 2018? Da Power BI oversætter din forespørgsel til **Tabel/Dato gt 2018-08-03T00:00:00**, inkluderer dine resultater alle de datoer, som ikke har et klokkeslæt, der kun består af nuller, da disse datoer vil være større end **2018-08-03T00:00:00**.
 
 ## <a name="special-characters-in-url-filters"></a>Specialtegn i URL-filtre
 
-Specialtegn og mellemrum kræver yderligere formatering. Når din forespørgsel indeholder mellemrum, tankestreger eller andre ikke-ASCII-tegn, skal du foranstille en *escape-kode* (**_x**) og angive den 4-cifrede **Unicode**-værdi. Hvis Unicode-værdien er på mindre end 4 tegn, skal du foranstille nuller. Her vises nogle eksempler.
+Specialtegn og mellemrum kræver yderligere formatering. Når din forespørgsel indeholder mellemrum, tankestreger eller andre ikke-ASCII-tegn, skal du foranstille en *escape-kode*, der starter med et understregningstegn og et X (**_x**) og derefter angive den 4-cifrede **Unicode** efterfulgt af endnu et understregningstegn. Hvis Unicode-værdien er på mindre end 4 tegn, skal du foranstille nuller. Her vises nogle eksempler.
 
 |Identifikator  |Unicode-værdi  | Kode til Power BI  |
 |---------|---------|---------|
-|**Tabelnavn**     | Mellemrum: 0x20        |  Navn_x0020_på_x0020_tabel       |
-|**Kolonne**@**tal**     |   @: 0x40     |  Kolonne_x0040_tal       |
-|**[Kolonne]**     |  [:0x005B ]:0x0050       |  _x0058_Kolonne_x0050       |
-|**Kolonne+Plus**     | +:0x2B        |  Kolonne_x002B_Plus       |
+|**Tabelnavn**     | Området er 0x20        |  Navn_x0020_på_x0020_tabel       |
+|**Kolonne**@**tal**     |   @ er 0x40     |  Kolonne_x0040_tal       |
+|**[Kolonne]**     |  [ er 0x005B ] er 0x0050       |  _x0058_Kolonne_x0050       |
+|**Kolonne+Plus**     | + er 0x2B        |  Kolonne_x002B_Plus       |
 
 Navn_x0020_på_x0020_tabel/Kolonne_x002B_Plus eq 3 ![specialtegn til gengivelse af tabelvisualisering](media/service-url-filters/power-bi-special-characters1.png)
 
