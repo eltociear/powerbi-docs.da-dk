@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/23/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 1472646d1a4dc338740583ab759c2fc71aa1e56d
-ms.sourcegitcommit: fbc1fabcb5e3b285228c9aa192b9b421b2782922
+ms.openlocfilehash: 10f637e822817d6bd0fa1692a6d1b029be312d4f
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47059087"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909170"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
@@ -593,7 +593,7 @@ Se [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-service
 
 * Vi er glade for at kunne meddele, at Power BI er blevet offentligt tilgængeligt. Tilmeld dig [Power BI Pro](service-self-service-signup-for-power-bi.md) i dag. Som en del af udgivelsen af den offentligt tilgængelige version tilbyder vi nogle fantastiske nye funktioner:
 * En ny oplevelse af visualisering og oprettelse af rapporter: Det nye lærred har et større udvalg af visuelle elementer, større kontrol over formatering af titler, forklaringer, akser, farver, baggrunde med mere.
-* [Power BI-grupper](consumer/end-user-create-apps.md): Grupper giver en fantastisk samarbejdsoplevelse, der er baseret på Office 365-grupper.
+* [Power BI-grupper](service-create-distribute-apps.md): Grupper giver en fantastisk samarbejdsoplevelse, der er baseret på Office 365-grupper.
 * [Organisationsindholdspakker](service-organizational-content-pack-introduction.md): Power BI gør det ekstremt enkelt at oprette dashboards og rapporter, og nu kan brugerne publicere dette indhold i organisationens indholdsgalleri.
 * [Hent hele Excel-filer](service-excel-workbook-files.md): Du kan overføre en hvilken som helst Excel-projektmappe, der er gemt på OneDrive for Business, til Power BI og få vist hele projektmappen, præcis som du ville gøre i Excel Online.
 * [Hent CSV-filer](service-get-data-from-files.md): På samme måde som en Excel- eller Power BI Desktop-fil kan en fil med kommaseparerede værdier (CSV) også udgøre et datasæt for dine Power BI-dashboards og -rapporter.

@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/14/2018
 ms.author: maggies
-ms.openlocfilehash: 09e7534146ace617ee3e517eca6a453aa9002d38
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 798b1daa13079e69788bc977f37748531e38f431
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546895"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909239"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -196,7 +196,7 @@ Læs [oversigten over funktioner i mobilapps for juli 2017](https://powerbi.micr
 
 ### <a name="june-2107"></a>Juni 2017
 #### <a name="all-devices"></a>Alle enheder
-**Opret appfavoritter** Du kan allerede gøre et dashboard til en favorit. For nylig [tilføjede Power BI apps](../end-user-apps.md), og du kan nu også gøre apps til favoritter. 
+**Opret appfavoritter** Du kan allerede gøre et dashboard til en favorit. For nylig [tilføjede Power BI apps](../../service-create-distribute-apps.md), og du kan nu også gøre apps til favoritter. 
 
 ### <a name="may-2017"></a>Maj 2017
 #### <a name="all-devices"></a>Alle enheder
