@@ -2,22 +2,23 @@
 title: Installer og brug apps med dashboards og rapporter i Power BI
 description: I Power BI samler apps relaterede dashboards og rapporter på ét sted.
 author: maggies
+ms.author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/02/2018
-ms.author: maggieMSFT
 LocalizationGroup: Share your work
-ms.openlocfilehash: ae1915254b3ef93ace7688235851541e838c9190
-ms.sourcegitcommit: 07beb155ec0ea1cdcc741085251ed06d7bc8581c
+ms.openlocfilehash: cf8ec98a45db6601e68b156d64ae6b73fd8ce2d5
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48874819"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112078"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer og brug apps med dashboards og rapporter i Power BI
+
 I Power BI samler *apps* relaterede dashboards og rapporter på ét sted. Personer i din organisation kan oprette og distribuere apps med vigtige forretningsoplysninger. [Eksterne tjenester](consumer/end-user-connect-to-services.md), du muligvis allerede bruger, f.eks. Google Analytics og Microsoft Dynamics CRM, tilbyder også Power BI-apps. 
 
 ![Apps i Power BI](./media/service-create-distribute-apps/power-bi-apps-left-nav.png)
@@ -29,9 +30,11 @@ Med apps ser du automatisk ændringerne, hver gang appens forfatteren udgiver op
 Har du planer om at oprette en app? Se [Opret arbejdsområder med dine kollegaer i Power BI](service-create-workspaces.md) for at få flere oplysninger.
 
 ## <a name="get-a-new-app"></a>Hent en ny app
+
 Du kan hente apps på nogle forskellige måder. Appforfatteren kan installere appen automatisk i din Power BI-konto eller sende dig et direkte link til en app, eller du kan søge efter den i AppSource, hvor du kan se alle de apps, du har adgang til. I Power BI på din mobilenhed kan du kun installere den fra et direkte link, og ikke fra AppSource. Hvis appens forfatter installerer appen automatisk, kan du se den på listen over apps.
 
 ### <a name="install-an-app-from-a-direct-link"></a>Installer en app fra et direkte link
+
 Den nemmeste måde selv at installere en ny app på er at få et direkte link fra appens forfatter. Power BI opretter et installationslink, som forfatteren kan sende til dig.
 
 **På computeren** 
@@ -47,23 +50,24 @@ Når du klikker på linket i mailen på din mobilenhed, installeres appen automa
 ![Apps indholdsliste på mobilenhed](./media/service-create-distribute-apps/power-bi-app-index-it-spend-360.png)
 
 ### <a name="get-the-app-from-microsoft-appsource"></a>Hent appen fra Microsoft AppSource
+
 Du kan også søge efter og installere apps, du har adgang til fra Microsoft AppSource. 
 
 1. Vælg **Apps** ![Apps i navigationsruden til venstre](./media/service-create-distribute-apps/power-bi-apps-bar.png) > **Hent apps**. 
-   
+
      ![Ikonet Hent apps](./media/service-create-distribute-apps/power-bi-service-apps-get-apps-oppty.png)
 2. I AppSource under **Min organisation** kan du søge for at begrænse resultatet og finde den app, du leder efter.
-   
+
      ![I AppSource under Min organisation](./media/service-create-distribute-apps/power-bi-appsource-my-org.png)
 3. Vælg **Hent det nu** for at føje den til siden Apps. 
 
 ## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Interager med dashboards og rapporter i appen
+
 Nu kan du udforske dataene i dashboardene og rapporterne i appen. Du har adgang til alle almindelige Power BI-interaktioner som filtrering, fremhævning, sortering og analyse. Du kan også [eksportere dataene til Excel ](consumer/end-user-export-data.md) fra en tabel eller et andet visuelt element i en rapport. 
 
 ![Eksportér data fra et visuelt Power BI-element](./media/service-create-distribute-apps/power-bi-service-export-data-visual.png)
 
-
-
 ## <a name="next-steps"></a>Næste trin
+
 * [Power BI-apps til eksterne tjenester](consumer/end-user-connect-to-services.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

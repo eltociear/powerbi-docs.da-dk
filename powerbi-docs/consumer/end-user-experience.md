@@ -11,12 +11,12 @@ ms.topic: quickstart
 ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 261d6fdb12a75fd1476c5f19ded034a3f85d1fb3
-ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
+ms.openlocfilehash: 41bd4148845754d1b714060e538f559b310969d8
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48798925"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112147"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Hurtig introduktion – Navigation i Power BI-tjenesten
 
@@ -125,7 +125,7 @@ Du kan også sortere indholdet efter navn eller ejer.
 
 ![sortér indhold](./media/end-user-experience/power-bi-sort.png)
 
-Hvis du vil vide mere, kan du se [Power BI-navigation: søg, sortér, filtrer](end-user-search-filter-sort.md)
+Hvis du vil vide mere, kan du se [Power BI-navigation: søg, sortér, filtrer](end-user-search-sort.md)
 
 ## <a name="clean-up-resources"></a>Fjern ressourcer
 Når du er færdig med denne hurtige introduktion, kan du slette dashboardet med eksemplet på detailhandelsanalysen samt tilhørende rapport og datasæt, hvis du vil.
