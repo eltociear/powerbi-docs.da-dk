@@ -7,22 +7,22 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/09/2018
+ms.date: 10/18/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0cb5e9ae8256f9df6c849df612f156d7fe9d12a8
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: bc68be50917b113371fc168d1b6e3defa2b5001e
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112193"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473422"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer og brug apps med dashboards og rapporter i Power BI
-I Power BI samler *apps* relaterede dashboards og rapporter på ét sted. Personer i din organisation kan oprette og distribuere apps med vigtige forretningsoplysninger. [Eksterne tjenester](end-user-connect-to-services.md), du muligvis allerede bruger, f.eks. Google Analytics og Microsoft Dynamics CRM, tilbyder også Power BI-apps. 
+I Power BI samler *apps* relaterede dashboards og rapporter på ét sted. Personer i din organisation oprette og distribuere apps med vigtige forretningsoplysninger. [Eksterne tjenester](end-user-connect-to-services.md), du muligvis allerede bruger, f.eks. Google Analytics og Microsoft Dynamics CRM, tilbyder også Power BI-apps. 
 
-![Apps i Power BI](./media/end-user-apps/power-bi-apps-left-nav.png)
+![Apps i Power BI](./media/end-user-apps/power-bi-apps-navbar.png)
 
-Det er nemt at finde og installere apps i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) og på din mobilenhed. Når du har installeret en app, behøver du ikke huske navnene på mange forskellige dashboards, fordi de alle er samlet i én app, i webbrowseren eller på din mobilenhed.
+Apps er lette at finde og installere i Power BI-tjenesten (([app.powerbi.com](https:app.powerbi.com)) og på din mobilenhed. Når du har installeret en app, behøver du ikke huske navnene på mange forskellige dashboards, fordi de alle er samlet i én app, i webbrowseren eller på din mobilenhed.
 
 Med apps ser du automatisk ændringerne, hver gang appens forfatteren udgiver opdateringer. Forfatteren styrer også, hvor ofte dataene er planlagt til opdatering, så du ikke skal bekymre dig om at holde dem opdateret. 
 
@@ -36,7 +36,7 @@ Den nemmeste måde selv at installere en ny app på er at få et direkte link fr
 
 Vælg linket i mailen for at åbne Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) i en browser. Bekræft, at du vil installere appen, så åbnes den på appens landingsside.
 
-![Applandingsside i Power BI-tjenesten](./media/end-user-apps/power-bi-app-landing-page-opportunity-480.png)
+![Applandingsside i Power BI-tjenesten](./media/end-user-apps/power-bi-get-app.png)
 
 **På iOS- eller Android-mobilenhed** 
 
@@ -56,12 +56,12 @@ Du kan også søge efter og installere apps, du har adgang til fra Microsoft App
 3. Vælg **Hent det nu** for at føje den til siden Apps. 
 
 ## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Interager med dashboards og rapporter i appen
-Nu kan du udforske dataene i dashboardene og rapporterne i appen. Du har adgang til alle almindelige Power BI-interaktioner som filtrering, fremhævning, sortering og analyse. Du kan også [eksportere dataene til Excel ](end-user-export-data.md) fra en tabel eller et andet visuelt element i en rapport. Læs om at [interagere med rapporter i Power BI](end-user-reading-view.md). 
+Nu kan du udforske dataene i dashboardene og rapporterne i appen. Du har adgang til alle almindelige Power BI-interaktioner som filtrering, fremhævning, sortering og analyse. Læs om at [interagere med rapporter i Power BI](end-user-reading-view.md). 
 
 ![Eksportér data fra et visuelt Power BI-element](./media/end-user-apps/power-bi-service-export-data-visual.png)
 
 
 
 ## <a name="next-steps"></a>Næste trin
-* [Power BI-apps til eksterne tjenester](end-user-connect-to-services.md)
+[Power BI-apps til eksterne tjenester](end-user-connect-to-services.md)
 
