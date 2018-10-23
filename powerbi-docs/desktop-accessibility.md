@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/24/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f07b5174d031c79f4d8f232c49836b54d95621f1
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: 525a7e45a804d9f82f4d06cf8618d790e140699f
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39256026"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336869"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Tilgængelighed i Power BI Desktop-rapporter
 Power BI indeholder funktioner, der gør det nemmere for personer med et handicap at bruge og interagere med Power BI-rapporter. Funktionerne omfatter muligheden for at bruge en rapport ved hjælp tastaturet eller en skærmlæser, bruge tabulatortasten til at sætte fokus på forskellige objekter på en side og bruge markører i visualiseringer.
@@ -61,6 +61,8 @@ Disse tilgængelighedstilføjelser er oprettet for at give brugere mulighed for 
 ## <a name="tips-for-creating-accessible-reports"></a>Tip til oprettelse af tilgængelighedsrapporter
 Følgende tip kan hjælpe dig med at oprette **Power BI Desktop**-rapporter med større tilgængelighed.
 
+### <a name="general-tips-for-accessible-reports"></a>Generelle tip til tilgængelighedsrapporter
+
 * For de visuelle elementer for **linje**, **område** og **kombinationsfelt** samt for de visuelle elementer for **punktdiagram** og **boble** skal du slå mærkerne til og bruge en anden *mærkeform* for hver linje.
   
   * Slå *Mærker* til, vælg sektionen **Format** i ruden **Visualiseringer**, udvid sektionen **Former**, og rul derefter ned for at finde **Mærker**, og slå indstillingen *til*.
@@ -80,6 +82,13 @@ Følgende tip kan hjælpe dig med at oprette **Power BI Desktop**-rapporter med 
 * Medtag en titel, akseetiketter og datanavne i alle visuelle elementer.
 * Brug titler, der giver mening, for alle rapportsider.
 * Undgå dekorative figurer og billeder i din rapport, hvis det er muligt, da de er inkluderet i tabulatorrækkefølgen af rapporten. Hvis du er nødt til at indsætte dekorative objekter i din rapport, kan du opdatere objektets alternative tekst for at fortælle brugere af skærmlæsere, at objektet kun har et dekorativt formål.
+
+### <a name="arranging-items-in-field-buckets"></a>Arrangering af elementer i Felt-buckets
+Fra og med udgivelsen af **Power BI Desktop** fra oktober 2018 kan du navigere i beholderen **Felter** ved hjælp af et tastatur og interagere med skærmlæsere. 
+
+Processen for at oprette rapporter ved hjælp af skærmlæsere er blevet forbedret ved, at der nu findes en genvejsmenu, så du kan flytte felter i beholderen op eller ned på listen **Felter** eller flytte feltet til andre beholdere, f.eks. **Forklaring** eller **Værdi** eller andre.
+
+![Brug genvejsmenuen i beholderen Felter til at flytte felter op eller ned eller til et andet område](media/desktop-accessibility/accessibility_09.png)
 
 ## <a name="high-contrast-support-for-reports"></a>Understøttelse af stor kontrast i rapporter
 

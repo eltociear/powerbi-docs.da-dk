@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: 072f548c3725c4133bb548a72fc58679e74f5fc7
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 6055a9c5e41f1745b088df93587d701393c0d495
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417090"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336731"
 ---
 # <a name="power-bi-security"></a>Power BI-sikkerhed
 Du kan finde en detaljeret beskrivelse af Power BI-sikkerhed ved at [downloade hvidbogen om Power BI-sikkerhed](http://go.microsoft.com/fwlink/?LinkId=829185):
@@ -58,4 +58,14 @@ Besøg [Microsoft Trust Center](https://www.microsoft.com/trustcenter) for at f�
 Som beskrevet tidligere i denne artikel anvendes en brugers Power BI-logon af lokale Active Directory-servere til at blive tilknyttet et UPN for legitimationsoplysninger. Det er dog **vigtigt** at være opmærksom på, at brugerne er ansvarlige for de data, de deler: Hvis en bruger opretter forbindelse til datakilder ved hjælp af sine legitimationsoplysninger og derefter deler en rapport (eller dashboard eller datasæt) baseret på disse data, er brugere, som dashboardet deles med, ikke godkendt i forhold til den oprindelige datakilde og får tildelt adgang til rapporten.
 
 En undtagelse er forbindelser til **SQL Server Analysis Services** ved hjælp af **datagatewayen i det lokale miljø**. Dashboards cachelagres i Power BI, men adgang til underliggende rapporter eller datasæt initierer godkendelse af den bruger, der forsøger at få adgang til rapporten (eller datasættet), og adgang tildeles kun, hvis brugeren har tilstrækkelige rettigheder til at få adgang til dataene. Du kan finde flere oplysninger i [Detaljerede oplysninger om datagateway i det lokale miljø](service-gateway-onprem-indepth.md).
+
+## <a name="enforcing-tls-version-usage"></a>Gennemtvingelse af brug af TLS-version
+
+Netværks- og it-administratorer kan gennemtvinge kravet om at bruge aktuel TLS (Transport Layer Security) til alle former for sikker kommunikation på deres netværk. Windows understøtter TLS-versioner via Microsoft Schannel Provider, som [beskrevet i artiklen TLS Schannel SSP](https://docs.microsoft.com/windows/desktop/SecAuthN/protocols-in-tls-ssl--schannel-ssp-).
+
+Denne gennemtvingelse kan udføres administrativt ved at angive registreringsdatabasenøgler. Gennemtvingelse er beskrevet i [artiklen Administration af SSL-protokoller i AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/manage-ssl-protocols-in-ad-fs). 
+
+**Power BI Desktop** respekterer de indstillinger for registreringsdatabasenøgler, der er beskrevet i disse artikler, og der oprettes kun forbindelse ved hjælp af den tilladte TLS-version på baggrund af disse indstillinger i registreringsdatabasen, når de findes.
+
+Du kan finde flere oplysninger om, hvordan du angiver disse registreringsdatabasenøgler, i artiklen [TLS-indstillinger i registreringsdatabasen](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
 

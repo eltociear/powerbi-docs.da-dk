@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 10/09/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0d9f16933bff264b10c0bff3e1b7c440a3d373a2
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 0cb5e9ae8256f9df6c849df612f156d7fe9d12a8
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48907847"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112193"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer og brug apps med dashboards og rapporter i Power BI
 I Power BI samler *apps* relaterede dashboards og rapporter på ét sted. Personer i din organisation kan oprette og distribuere apps med vigtige forretningsoplysninger. [Eksterne tjenester](end-user-connect-to-services.md), du muligvis allerede bruger, f.eks. Google Analytics og Microsoft Dynamics CRM, tilbyder også Power BI-apps. 
@@ -34,13 +34,13 @@ Den nemmeste måde selv at installere en ny app på er at få et direkte link fr
 
 **På computeren** 
 
-Når du klikker på linket i mailen, åbnes Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) i en browser. Du bekræfter, at du vil installere appen, og den åbnes på appens landingsside.
+Vælg linket i mailen for at åbne Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) i en browser. Bekræft, at du vil installere appen, så åbnes den på appens landingsside.
 
 ![Applandingsside i Power BI-tjenesten](./media/end-user-apps/power-bi-app-landing-page-opportunity-480.png)
 
 **På iOS- eller Android-mobilenhed** 
 
-Når du klikker på linket i mailen på din mobilenhed, installeres appen automatisk og åbner appens indholdsliste i mobilappen. 
+Når du vælger linket i mailen på din mobilenhed, installeres appen automatisk og åbner appens indholdsliste i mobilappen. 
 
 ![Apps indholdsliste på mobilenhed](./media/end-user-apps/power-bi-app-index-it-spend-360.png)
 
@@ -50,7 +50,7 @@ Du kan også søge efter og installere apps, du har adgang til fra Microsoft App
 1. Vælg **Apps** ![Apps i navigationsruden til venstre](./media/end-user-apps/power-bi-apps-bar.png) > **Hent apps**. 
    
      ![Ikonet Hent apps](./media/end-user-apps/power-bi-service-apps-get-apps-oppty.png)
-2. I AppSource under **Min organisation** kan du søge for at begrænse resultatet og finde den app, du leder efter.
+2. I AppSource under **Min organisation** kan du udføre en søgning for at afgrænse resultatet og finde den app, du leder efter.
    
      ![I AppSource under Min organisation](./media/end-user-apps/power-bi-appsource-my-org.png)
 3. Vælg **Hent det nu** for at føje den til siden Apps. 

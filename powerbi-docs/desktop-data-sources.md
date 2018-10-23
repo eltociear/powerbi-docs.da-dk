@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 05a644c300a0879b2f5eedd95cdddc537cc6fd0b
-ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
+ms.openlocfilehash: a5a4f6532fe127fe01b699ee9d9e89693fdb369e
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44512058"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336892"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 Med Power BI Desktop kan du oprette forbindelse til data fra mange forskellige kilder. Der findes en komplet liste over tilgængelige datakilder nederst på siden.
@@ -74,14 +74,16 @@ Kategorien **Database** indeholder følgende dataforbindelser:
 * Sybase-database
 * Teradata-database
 * SAP HANA-database
-* SAP Business Warehouse Application Server
-* SAP Business Warehouse Message Server (beta)
+* SAP Business Warehouse-programserver
+* SAP Business Warehouse-beskedserver
 * Amazon Redshift
 * Impala
 * Google BigQuery
 * Snowflake
+* Dremio (beta)
 * Exasol (beta)
 * Jethro (beta)
+* Kyligence Enterprise (beta)
 
 > [!NOTE]
 > Nogle databaseforbindelser kræver, at du aktiverer dem ved at vælge **Filer > Indstillinger > Indstillinger** og derefter vælger **Funktioner til eksempelvisning** og aktiverer forbindelsen. Hvis du ikke kan se nogle af de forbindelser, der er nævnt ovenfor, og du vil bruge dem, skal du kontrollere dine indstillinger for **Funktioner til eksempelvisning**. Bemærk også, at alle datakilder, der er markeret som *Beta* eller *Preview*, har begrænset support og funktionalitet og skal ikke bruges i produktionsmiljøer.
@@ -112,7 +114,7 @@ Kategorien **Azure** indeholder følgende dataforbindelser:
 * Azure Data Lake Store
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
-* HDInsight Interactive Query (beta)
+* Interaktiv HDInsight-forespørgsel
 * Azure KustoDB (beta)
 
 På følgende billede vises vinduet **Hent data** for **Azure**.
@@ -124,10 +126,10 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * SharePoint Online-liste
 * Microsoft Exchange Online
 * Dynamics 365 (online)
-* Dynamics NAV (beta)
+* Dynamics NAV
 * Dynamics 365 Business Central
-* Common Data Service til Apps (beta)
-* Common Data Service (beta)
+* Dynamics 365 Business Central (i det lokale miljø)
+* Common Data Service til apps (beta)
 * Microsoft Azure Consumption Insights (beta)
 * Visual Studio Team Services (beta)
 * Salesforce-objekter
@@ -163,7 +165,7 @@ På følgende billede vises vinduet **Hent data** for **Onlinetjenester**.
 
 Kategorien **Andet** indeholder følgende dataforbindelser:
 
-* Vertica (beta)
+* Vertica
 * Web
 * SharePoint-liste
 * OData-feed
@@ -175,6 +177,8 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Python-script
 * ODBC
 * OLE DB
+* Denado
+* Paxata (beta)
 * Tom forespørgsel
 
 På følgende billede vises vinduet **Hent data** for **Andet**.

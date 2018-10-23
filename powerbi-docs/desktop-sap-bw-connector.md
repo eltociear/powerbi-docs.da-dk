@@ -7,22 +7,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5db9b801fad3145cc864799062fe886c99da53aa
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: 73be85644fd320bd44372a0df6c844705c3cf602
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280196"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336915"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Brug af SAP BW Connector i Power BI Desktop
 Med Power BI Desktop har du adgang til data i **SAP Business Warehouse (BW)**.
 
 Du kan få oplysninger om, hvordan SAP-kunder kan integrere Power BI i deres eksisterende SAP Business Warehouse (BW)-systemer i [Hvidbog til Power BI og SAP BW](https://aka.ms/powerbiandsapbw). Du kan få flere oplysninger om brug af DirectQuery med SAP BW i artiklen [DirectQuery og SAP Business Warehouse (BW)](desktop-directquery-sap-bw.md).
 
-Fra og med juni 2018-udgivelsen af **Power BI Desktop** kan du bruge SAP BW-connectoren med en implementering, der har store forbedringer i ydeevne og funktioner. Denne opdaterede version af SAP BW-connectoren er udviklet af Microsoft og kaldes **Implementation 2.0**. Du kan vælge enten version 1 (v1) af **SAP BW Connector** eller **Implementation 2.0 SAP Connector**. I de følgende afsnit beskrives installationen af hver version. Du kan vælge den ene eller den anden connector, når du opretter forbindelse til SAP BW fra Power BI Desktop.
+Fra og med udgivelsen af **Power BI Desktop** fra juni 2018 (og den offentligt tilgængelige udgivelse fra oktober 2018) kan du bruge SAP BW-connectoren med en implementering, der indeholder markante forbedringer af ydeevnen og egenskaberne. Denne opdaterede version af SAP BW-connectoren er udviklet af Microsoft og kaldes **Implementation 2.0**. Du kan vælge enten version 1 (v1) af **SAP BW Connector** eller **Implementation 2.0 SAP Connector**. I de følgende afsnit beskrives installationen af hver version. Du kan vælge den ene eller den anden connector, når du opretter forbindelse til SAP BW fra Power BI Desktop.
 
 Vi foreslår, at du bruger **Implementation 2.0 SAP Connector**, når det er muligt.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 10/02/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 4e7692be8ec78c79076408635a75dbf0ab9080d2
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 49540dd491d02c6a6b474ff80690a75eecfd27db
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974040"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336984"
 ---
 # <a name="composite-models-in-power-bi-desktop-preview"></a>Sammensatte modeller i Power BI Desktop (Preview)
 
@@ -58,7 +58,7 @@ Når du bruger DirectQuery med **sammensatte modeller**, er det muligt at oprett
 Eksempelvis er det med **sammensatte modeller** muligt at oprette en model, der kombinerer salgsdata fra en professionel datawarehouse-database, med data vedr. salgsmål, der findes i en afdelings SQL Server-database, sammen med nogle data, der er importeret fra et regneark. En model, der kombinerer data fra mere end én DirectQuery-kilde, eller kombinerer DirectQuery med importerede data, kaldes en *sammensat model*.
 
 > [!NOTE]
-> Mens sammensatte modeller er i prøveversion, er det ikke muligt at udgive sammensatte modeller til Power BI-tjenesten. 
+> Fra og med udgivelsen af **Power BI Desktop** fra oktober 2018 *kan* du publicere sammensatte modeller i Power BI-tjenesten. Sammensatte modeller i Power BI-tjenesten har samme funktionsmåde som importmodeller i forbindelse med planlagte opdateringer og opdateringer af dashboardfeltet. 
 
 Du kan oprette relationer mellem tabeller, som du altid har gjort, selv når disse tabeller kommer fra forskellige kilder, med følgende begrænsninger: alle relationer, der er etableret på tværs af kilder, skal være defineret som havende en kardinalitet på **mange-til-mange** , uanset deres faktiske kardinalitet. Disse relationer fungerer som normalt for **mange-til-mange**-relationer, som beskrevet i [mange-til-mange-relationer i Power BI Desktop (Preview)](desktop-many-to-many-relationships.md). Bemærk, at inden for rammerne af sammensatte modeller er alle importerede tabeller reelt en enkelt kilde uanset den faktiske underliggende datakilde, som de faktisk er importeret fra.   
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 161ea8f20db36c129787e84242ea002980d0f8dd
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: df4afe91de955eabfba6eeea9022cc5f9475cc33
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565860"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336846"
 ---
 # <a name="using-slicers-power-bi-desktop"></a>Brug af udsnitsværktøjer i Power BI Desktop
 
@@ -65,6 +65,12 @@ Du kan også anvende et **gruppenavn** på en samling af udsnit i sektionen **Av
 Du kan bruge denne funktion til at oprette en brugerdefineret gruppe af udsnit, som skal være synkroniseret. Der angives et standardnavn, men du kan bruge et andet navn, hvis du foretrækker det. 
 
 Gruppenavnet giver yderligere fleksibilitet i forbindelse med udsnit. Du kan oprette separate grupper for at synkronisere udsnit, der bruger det samme felt, eller anbringe udsnit, der bruger forskellige felter, i samme gruppe. 
+
+## <a name="how-filtering-affects-selection-in-slicers"></a>Sådan påvirker filtrering valg i udsnitsværktøj
+
+Hvis du vælger noget i et udsnitsværktøj og derefter anvender et filter, som normalt ville fjerne det valgte element, forbliver den nederst på listen over elementer i udsnitsværktøjet. Hvis filteret fjernes, findes valget stadig i udsnitsværktøjet. Hvis du fjerner valget af elementet fra udsnitsværktøjet, vil du se, at det forsvinder fra listen.
+
+![bevaret valg i udsnitsværktøj](./media/desktop-slicers/retained-selection-in-slicers.gif)
 
 
 ## <a name="next-steps"></a>Næste trin

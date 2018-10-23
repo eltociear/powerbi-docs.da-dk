@@ -1,5 +1,5 @@
 ---
-title: Udpak data fra en webside efter eksempel i Power BI Desktop (prøveversion)
+title: Udpak data fra en webside efter eksempel i Power BI Desktop
 description: Udpak data fra en webside ved at angive et eksempel på, hvad du ønsker at hente
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2018
+ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 55c1a70e054b6bb6ff06c7fe6f83b58d8b1f26f3
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: f90f2ea4737fc5c98df4d171f8e1e65c2704607d
+ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34290976"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49336800"
 ---
-# <a name="get-data-from-a-web-page-by-providing-an-example-preview"></a>Hent data fra en webside ved at angive et eksempel (prøveversion)
+# <a name="get-data-from-a-web-page-by-providing-an-example"></a>Hent data fra en webside ved at angive et eksempel
 
 Ved at hente data fra en webside kan brugere nemt udpakke data fra websider og importere data til **Power BI Desktop**. Men ofte vises data på websider ikke i organiserede tabeller, der er lette at udtrække, så det kan være en udfordring at hente data fra disse sider – også selvom de er strukturerede og konsistente. 
 
@@ -26,13 +26,6 @@ Der findes en løsning. Via funktionen **Hent data fra web efter eksempel** kan 
 ![Hent data fra web efter eksempel](media/desktop-connect-to-web-by-example/web-by-example_01.png)
 
 
-## <a name="enabling-the-preview-feature-get-data-from-web-by-example"></a>Aktivering af prøvefunktionen Hent data fra web efter eksempel
-
-**Hent data fra web efter eksempel** er en prøveversionsfunktion, og den skal aktiveres i **Power BI Desktop**. Du aktiverer den ved at vælge **Filer > Indstillinger > Indstillinger > Prøveversionsfunktioner** og derefter markere afkrydsningsfeltet **Nyt fra Weboplevelse**. Du skal genstarte Power BI Desktop, når du har markeret indstillingen.
-
-![aktivere prøveversionsfunktionen](media/desktop-connect-to-web-by-example/web-by-example_02.png)
-
-Når prøveversionsfunktionen er aktiveret, er du klar til at bruge den. 
 
 ## <a name="using-get-data-from-web-by-example"></a>Brug Hent data fra web efter eksempel
 

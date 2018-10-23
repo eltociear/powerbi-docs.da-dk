@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/25/2018
+ms.date: 10/08/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2cc7691e81f5edab9d9f7a2a6d878420ca1c82f4
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: d042119a95cb60f930a0535e93b0a50ee9224da3
+ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47418235"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49112253"
 ---
 # <a name="export-data-from-visualizations"></a>Eksportér data fra visualiseringer
 Hvis du gerne vil se de data, der bruges til at oprette en visualisering, kan du få vist de pågældende data i Power BI eller eksportere dataene til Excel som en .xlsx- eller .csv-fil.   
@@ -55,8 +55,7 @@ Hvis du vil følge med, skal du åbne [eksempelrapporten med en indkøbsanalyse]
 4. Vælg ellipsen i visualiseringens øverste højre hjørne. Vælg **Eksportér data**.
 
    ![](media/power-bi-visualization-export-data/power-bi-export-data2.png)
-5. I Power BI online, hvis visualiseringen har en aggregering (f.eks. hvis du har ændret **Antal** til *Gennemsnit*, *sum* eller *Minimum*), har du to valgmuligheder: **Opsummerede data** og **Underliggende data**. I Power BI Desktop har du kun indstillingen for **Opsummerede data** Du kan få hjælp til at forstå aggregeringer i [Aggregeringer i Power BI](../service-aggregates.md).
-
+5. I Power BI online, hvis visualiseringen har en aggregering (f.eks. hvis du har ændret **Antal** til *Gennemsnit*, *sum* eller *Minimum*), har du to valgmuligheder: **Opsummerede data** og **Underliggende data**. I Power BI Desktop har du kun indstillingen **Opsummerede data**. Hvis du vil have hjælp til at forstå sammenlægninger, kan du se under [Aggregater i Power BI](../service-aggregates.md).
     ![](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 6. Vælg **Opsummerede data** > **Eksportér**, og vælg .xlsx eller .csv. Dataene eksporteres i Power BI.  Hvis du har anvendt filtre for visualiseringen, vil de eksporterede data være filtreret. Når du vælger **Eksportér**, bliver du i browseren bedt om at gemme filen. Når du har gemt den, skal du åbne filen i Excel.
 
@@ -90,6 +89,26 @@ Det kan variere, hvad du ser, når du vælger **Underliggende data**. Du skal ev
 |    Målinger     |                                      Alle data fra alle tabeller, der er relateret til tabel(ler) med målingerne via en kæde af \*:1 af 1:1)                                      |
 |  Kun målinger  |                                                   Alle ikke-skjulte kolonner fra alle relaterede tabeller (for at udvide målingen)                                                   |
 |  Kun målinger  |                                                             Opsummerede data for duplikerede rækker for modelmålinger.                                                              |
+
+### <a name="set-the-export-options"></a>Angiv eksportindstillingerne
+Designere af Power BI-rapporter styrer, hvilke typer eksportindstillinger af data der er tilgængelige for deres forbrugere. Valgmulighederne er:
+- Tillad kun eksport af opsummerede (dette er standard for rapporter) 
+- Tillad eksport af opsummerede og underliggende data  
+- Tillad ikke eksport af data  
+
+1. Du angiver disse indstillinger ved at starte i Power BI Desktop.
+
+2. I øverste venstre hjørne skal du vælge **Filer** > **Indstillinger** > **Indstillinger**. 
+
+3. Under **Aktuel fil** skal du vælge **Rapportindstillinger**.
+
+    ![rapportindstillinger for desktop](media/power-bi-visualization-export-data/desktop-report-settings.png)
+
+4. Vælg på rullelisten **Eksportér data**.
+
+Du kan også opdatere denne indstilling i Power BI-tjenesten.  
+
+Vigtigt! Hvis der er konflikt mellem indstillingerne på Power BI-administratorportalen og rapportindstillingerne for eksport af data, overskriver administratorindstillingerne indstillingerne for eksport af data. 
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 * Det maksimale antal rækker, der kan eksporteres fra **Power BI Desktop** og **Power BI-tjenesten** til CSV, er 30.000.
