@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 668db107087420ceeabbe68325ee6c67dc69e524
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 86dabdb84dd4ca949930c25213f554060135f10a
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547194"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396629"
 ---
 # <a name="sql-server-analysis-services-live-data-in-power-bi"></a>Dynamiske SQL Server Analysis Services-data i Power BI
 I Power BI er der to måder du kan oprette forbindelse til en live SQL Server Analysis Services-server på. I **Hent data** kan du oprette forbindelse til en SQL Server Analysis Services-server, eller du kan oprette forbindelse til en [Power BI Desktop-fil](service-desktop-files.md) eller [Excel-projektmappe](service-excel-workbook-files.md), der allerede har forbindelse til en Analysis Services-server. Som bedste praksis anbefaler Microsoft på det kraftigste, at du bruger Power BI Desktop, da det indeholder samme omfattende værktøjssæt og muligheden for at opbevare en lokal sikkerhedskopi af Power BI Desktop-filen.
@@ -23,7 +23,7 @@ I Power BI er der to måder du kan oprette forbindelse til en live SQL Server An
  >[!IMPORTANT]
  >* En administrator skal installere og konfigurere en datagateway i det lokale miljø, før der kan oprettes en direkte forbindelse til Analysis Services-serveren. Du kan finde flere oplysninger i [Datagateway i det lokale miljø](service-gateway-onprem.md).
  >* Når du bruger gatewayen, forbliver dine data i det lokale miljø.  De rapporter, du opretter baseret på disse data, gemmes i Power BI-tjenesten. 
- >* [Forespørsel i Spørgsmål og svar på naturligt sprog](consumer/end-user-q-and-a-direct-query.md) er i forhåndsvisning for live Analysis Services-forbindelser.
+ >* [Forespørsel i Spørgsmål og svar på naturligt sprog](service-q-and-a-direct-query.md) er i forhåndsvisning for live Analysis Services-forbindelser.
 
 ## <a name="to-connect-to-a-model-from-get-data"></a>Sådan opretter du forbindelse til en model fra Hent data
 1. Vælg **Hent data** i **Mit arbejdsområde**. Du kan også skifte til et gruppearbejdsområde, hvis der findes et.

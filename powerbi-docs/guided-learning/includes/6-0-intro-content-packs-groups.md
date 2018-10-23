@@ -2,8 +2,6 @@ Velkommen til afsnittet **Publicer og del** i kurset **Automatiseret læring** t
 
 Du har nu erfaret, hvordan Excel og Power BI arbejder problemfrit sammen, og du har lært alt om de visuelle elementer, som du kan oprette i rapporter og dashboards, så nu vil du sikkert gerne dele dine erfaringer med kolleger og venner. Med Power BI er det let at **publicere og dele**.
 
-I dette afsnit får du vist, hvor let det er at overføre Excel-projektmapper til Power BI, og du vil se, at Power BI og Excel udgør et fantastisk partnerskab.
-
 ## <a name="share-and-collaborate-with-colleagues-in-power-bi"></a>Del og samarbejd med kolleger i Power BI
 *Få en introduktion til de værktøjer, der gør deling og samarbejde lettere med Power BI*
 

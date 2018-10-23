@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/23/2018
+ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 10f637e822817d6bd0fa1692a6d1b029be312d4f
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: b54a38f4c5639eae549a36a93c887d87630b7daf
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909170"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396744"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
@@ -212,7 +212,7 @@ Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerb
 
 Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
 
-* [Understøttelse af Spørgsmål og svar i Power BI for SQL Server 2016 Analysis Services-tabelmodeller](consumer/end-user-q-and-a-direct-query.md): Det glæder os at kunne meddele om forbedringer til brugeroplevelsen i Spørgsmål og svar i Power BI for datakilder forbundet via virksomhedsgateway samt brugeroplevelse og starten af den offentlige previewversion til Spørgsmål og svar i Power BI for datakilder forbundet via virksomhedsgateway – som starter med understøttelse af SQL Server 2016 Analysis Services-tabelmodeller. Du kan få alle detaljerne i [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
+* [Understøttelse af Spørgsmål og svar i Power BI for SQL Server 2016 Analysis Services-tabelmodeller](service-q-and-a-direct-query.md): Det glæder os at kunne meddele om forbedringer til brugeroplevelsen i Spørgsmål og svar i Power BI for datakilder forbundet via virksomhedsgateway samt brugeroplevelse og starten af den offentlige previewversion til Spørgsmål og svar i Power BI for datakilder forbundet via virksomhedsgateway – som starter med understøttelse af SQL Server 2016 Analysis Services-tabelmodeller. Du kan få alle detaljerne i [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
 * [Understøttelse af lokale filer for Excel-rapporter](service-excel-workbook-files.md#local-excel-workbooks): Nu kan du uploade dine Excel-filer fra dit lokale drev eller lagertjenester og bruge denne Excel-rapport på samme måde som i Excel Online med de ekstra fordele ved Power BI. Du kan få alle detaljerne i [blogindlægget](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/)
 
 **28. april 2016**

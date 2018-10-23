@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2018
 ms.author: mihart
 LocalizationGroup: Connect to services
-ms.openlocfilehash: add6a02d10c2dfe0e0fd93b9d12f03a10d057241
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 8d8446f231d1de3527d5371a55542641c29cca83
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908204"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435275"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Opret forbindelse til de tjenester, du bruger med Power BI
 
@@ -60,7 +60,7 @@ Bruger en tjeneste, du vil foreslå til en Power BI-app? Gå til siden [Support 
 Har du en tjeneste, du vil oprette en app til? [Indsend din nominering](https://azure.microsoft.com/marketplace/programs/certified/apply/), og vælg "Udgiv en Power BI-indholdspakke" for at komme i gang.
 
 ## <a name="next-steps"></a>Næste trin
-* [Hvad er apps i Power BI?](../service-install-use-apps.md)
+* [Hvad er apps i Power BI?](end-user-apps.md)
 * [Hent data i Power BI](../service-get-data.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

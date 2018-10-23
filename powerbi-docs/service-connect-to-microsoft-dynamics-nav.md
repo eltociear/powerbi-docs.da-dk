@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 94ca76af9366752f4e1033fa05147f867e7096d9
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 2085f1ca852839c27c4943872e5f5ddb248e8638
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908894"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641384"
 ---
 # <a name="connect-to-microsoft-dynamics-nav-with-power-bi"></a>Opret forbindelse til Microsoft Dynamics NAV med Power BI
 Det er nemt at få indsigt i dine Microsoft Dynamics NAV-data med Power BI. Power BI henter dine data, både salg og finans, og opbygger derefter en app med et dashboard og rapporter, der er baseret på disse data. Power BI skal bruge dine tilladelser til de tabeller, som data hentes fra, i dette tilfælde salgs- og finansdata. Flere oplysninger om kravene nedenfor. Når du har installeret appen, kan du få vist dashboardet og rapporterne i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) og i Power BI-mobilapperne. 
@@ -29,7 +29,7 @@ Det er nemt at få indsigt i dine Microsoft Dynamics NAV-data med Power BI. Powe
    ![](media/service-connect-to-microsoft-dynamics-nav/mdnav.png)
 4. Når du bliver spurgt, skal du angive din Microsoft Dynamics NAV OData URL-adresse. URL-adressen skal ligne følgende mønster:
    
-    `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
+    `https://instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
    
    * "instance.navserver.com" med navn på din NAV-server
    * "DynamicsNAV90\_Instance1" med navn på din NAV-serverforekomst
@@ -72,7 +72,7 @@ Hvis du ser denne fejlmeddelelse, når du har skrevet din Microsoft Dynamics NAV
 
 * URL-adressen følger nøjagtigt dette mønster:
   
-    `https//instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
+    `https://instance.navserver.com:7048/DynamicsNAV90_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
   
   * "instance.navserver.com" med navn på din NAV-server
   * "DynamicsNAV90\_Instance1" med navn på din NAV-serverforekomst
@@ -92,11 +92,11 @@ Hvis du får vist fejldialogboksen "Ups!", når du kommer videre fra dialogbokse
 
 * Kontrollér, at URL-adressen følger mønsteret angivet ovenfor. En almindelig fejl er at angive:
   
-    `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData`
+    `https://instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData`
   
     Men du skal medtage afsnittet 'Company('CRONUS%20International%20Ltd.')' med dit NAV-firmanavn:
   
-    `https//instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
+    `https://instance.navserver.com:7048/DynamicsNAV90\_Instance1/OData/Company('CRONUS%20International%20Ltd.')`
 
 ## <a name="next-steps"></a>Næste trin
 * [Hvad er apps i Power BI?](service-create-distribute-apps.md)
