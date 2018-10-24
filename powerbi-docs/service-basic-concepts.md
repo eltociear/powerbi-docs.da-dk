@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 07/19/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: ce37c13d313a44af5f082c0db2a72dbf4d53aca5
-ms.sourcegitcommit: 07beb155ec0ea1cdcc741085251ed06d7bc8581c
+ms.openlocfilehash: 8a95dae913c2069fa3768d66c55d2b1358640000
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48874804"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641913"
 ---
 # <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – grundlæggende begreber for Power BI-tjenesten
 
@@ -82,7 +82,7 @@ Hvis du er [en del af et ***apparbejdsområde***](service-collaborate-power-bi-w
 Datasæt kan opdateres, omdøbes, udforskes og fjernes. Brug et datasæt til at oprette en rapport fra bunden eller ved at køre [hurtig indsigt](service-insights.md).  Hvis du vil se, hvilke rapporter og dashboards der allerede bruger et datasæt, skal du vælge **Få vist relaterede**. Vælg et datasæt for at udforske det. Det, du rent faktisk gør, er at åbne datasættet i rapporteditoren, hvor du virkelig kan starte med at udforske dataene og oprette visualiseringer. Så lad os gå videre til næste emne: rapporter.
 
 ### <a name="dig-deeper"></a>Grav dybere
-* [Power BI Premium – hvad er det?](service-premium.md)
+* [Hvad er Power BI Premium?](service-premium.md)
 * [Hent data til Power BI](service-get-data.md)
 * [Eksempel på datasæt til Power BI](sample-datasets.md)
 

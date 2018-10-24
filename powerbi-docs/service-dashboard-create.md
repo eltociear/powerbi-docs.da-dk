@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: mihart
-ms.openlocfilehash: e4173811db0de0dc95e0bd324517a5750165983e
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 666938d8d852793b68bb278147c61f077c839ed2
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908641"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435358"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Opret et Power BI-dashboard fra en rapport
 Du har læst [Dashboards i Power BI](service-dashboards.md), og nu vil du oprette dit eget. Der er mange forskellige måder at oprette et dashboard på – fra en rapport, fra bunden, fra et datasæt, ved at kopiere et eksisterende dashboard og meget mere.  
@@ -109,7 +109,7 @@ Tillykke med oprettelsen af dit første dashboard! Nu, hvor du har et dashboard,
 ## <a name="next-steps"></a>Næste trin
 * [Tilpas størrelsen af felter, og flyt dem](service-dashboard-edit-tile.md)
 * [Alt om dashboardfelter](service-dashboard-tiles.md)
-* [Del dit dashboard ved at oprette en app](service-install-use-apps.md)
+* [Del dit dashboard ved at oprette en app](service-create-workspaces.md)
 * [Power BI – Grundlæggende begreber](service-basic-concepts.md)
 * [Tip til udformning af et fantastisk dashboard](service-dashboards-design-tips.md)
 

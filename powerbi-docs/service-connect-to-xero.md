@@ -56,29 +56,29 @@ Indholdspakkens dashboard indeholder felter og metrikværdier, der dækker en la
 
 | Område | Dashboardfelter | Rapport |
 | --- | --- | --- |
-| Penge |Daily cash flow <br>Cash in <br>Cash out <br>Closing balance by account <br>Closing balance today |Bank Accounts |
-| Kunde |Invoiced sales <br>Invoiced sales by customer <br>Invoiced sales growth trend <br>Invoices due <br>Outstanding receivables <br>Overdue receivables |Customer <br>Inventory |
-| Leverandør |Billed purchases <br>Billed purchases by supplier <br>Billed purchases growth trend <br> Bills due <br>Outstanding payables <br>Overdue payables |Suppliers <br>Inventory |
-| Lager |Monthly sales amount by product |Inventory |
-| Resultatopgørelse |Monthly profit and loss <br>Net profit this fiscal year <br>Net profit this month <br>Top expense accounts |Profit and Loss |
-| Balance |Total assets <br>Total liabilities <br>Equity |Balance Sheet |
-| Tilstand |Current ratio <br>Gross profit percentage <br> Return on total assets <br>Total liabilities to equity ratio |Health <br>Glossary and Technical Notes |
+| Penge |Dagligt Cashflow <br>Indbetal <br>Udbetal <br>Ultimosaldo efter konto <br>Closing balance today |Konti |
+| Kunde |Faktureret salg <br>Faktureret salg efter kunde <br>Faktureret Salgsvækst tendens <br>Fakturaer forfalden <br>Udestående tilgodehavender <br>Forfalden tilgodehavender |Kunde <br>Lager |
+| Leverandør |Køb faktureres <br>Faktureret indkøb efter leverandør <br>Køb faktureres væksttendens <br> Fakturaer forfaldsdato <br>Udestående skyldige beløb <br>Overskredne skyldige beløb |Leverandører <br>Lager |
+| Lager |Månedlige salgsbeløb efter produkt |Lager |
+| Resultatopgørelse |Månedlige resultatopgørelse <br>Overskud dette regnskabsår <br>Overskud denne måned <br>Mest populære udgift konti |Resultatopgørelse |
+| Balancen |Samlede aktiver <br>Samlede passiver <br>Lighed |Balancen |
+| Tilstand |Likviditetsgrad <br>Bruttoavance procentdel <br> Returner af samlede aktiver <br>Samlede passiver aktie forholdet mellem |Tilstand <br>Ordliste og tekniske noter |
 
 Datasættet indeholder også følgende tabeller til at tilpasse dine rapporter og dashboards:  
 
-* Addresses  
+* Adresser  
 * Alerts  
-* Bank Statement Daily Balance  
-* Bank Statements  
-* Contacts  
-* Expense Claims  
-* Invoice Line Items  
-* Invoices  
-* Items  
-* Month End  
+* Bank-sætningen daglig saldo  
+* Bank-sætninger.  
+* Kontakter  
+* Udgift krav  
+* Linje Fakturaelementer  
+* Fakturaer  
+* Elementer  
+* Slutningen af måneden  
 * Organisation  
-* Trial Balance  
-* Xero Accounts
+* Generelle kontooversigt  
+* Xero-konti
 
 ## <a name="system-requirements"></a>Systemkrav
 Følgende roller er påkrævet for at få adgang til Xero-indholdspakken: "Standard + Rapporter" eller "Rådgiver".

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: 411fd408998ba67c4a91ae01e166396530631678
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: bfd3c1242ff5eb0d00078dbeb376dba8b0b6aa20
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909055"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641706"
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Tilmelding til Power BI som enkeltperson
 Få mere at vide om, hvordan du tilmelder dig Power BI og begynder at bruge det til personlige rapporter og visualiseringsopgaver, der passer til dine behov.
@@ -142,8 +142,8 @@ I mange tilfælde kan tilmelding til Power BI foretages ved at følge den enkle 
 ## <a name="next-steps"></a>Næste trin  
 [Køb Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Power BI-serviceaftale til individuelle brugere](https://powerbi.microsoft.com/terms-of-service/)  
-[Power BI Premium – hvad er det?](service-premium.md)  
-[Hvidbog til Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
+[Hvad er Power BI Premium?](service-premium.md)  
+[Hvidbog om Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
 Flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
