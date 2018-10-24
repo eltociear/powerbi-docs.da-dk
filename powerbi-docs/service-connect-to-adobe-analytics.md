@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f4eb0ec93057f309720fc4fef33a55d924881383
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: ef59d5f42ba913e4ecad79116dea635744534198
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544618"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908572"
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Opret forbindelse til Adobe Analytics med Power BI
 For at oprette forbindelse til Adobe Analytics via Power BI skal du starte med at oprette forbindelse til din Adobe Analytics Marketing Cloud-konto. Du får en app med et Power BI-dashboard og et sæt af Power BI-rapporter, der giver indsigt i trafikken på dit websted og brugerdimensioner. Dataene opdateres automatisk én gang dagligt. Du kan interagere med dashboards og rapporter, men du kan ikke gemme ændringer.
@@ -25,30 +25,30 @@ Opret forbindelse til [Adobe Analytics](https://app.powerbi.com/getdata/services
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
 
-1. Vælg **Adobe Analytics** \>  **Hent**.
+3. Vælg **Adobe Analytics** \>  **Hent**.
    
    ![](media/service-connect-to-adobe-analytics/adobe.png)
-2. Power BI opretter forbindelse til et bestemt Adobe Analytics-firma og et Report Suite-id (ikke Report Suite-navnet). Se detaljer om at [finde de pågældende parametre](#FindingParams) nedenfor.
+4. Power BI opretter forbindelse til et bestemt Adobe Analytics-firma og et Report Suite-id (ikke Report Suite-navnet). Se detaljer om at [finde de pågældende parametre](#FindingParams) nedenfor.
    
    ![](media/service-connect-to-adobe-analytics/parameters.png)
-3. Som **Godkendelsesmetode** skal du vælge **oAuth2** \> **Log på**. Når du bliver spurgt, skal du angive dine Adobe Analytics-legitimationsoplysninger. 
+5. Som **Godkendelsesmetode** skal du vælge **oAuth2** \> **Log på**. Når du bliver spurgt, skal du angive dine Adobe Analytics-legitimationsoplysninger. 
    
     ![](media/service-connect-to-adobe-analytics/creds.png)
    
     ![](media/service-connect-to-adobe-analytics/adobe_signin.png)
-4. Klik på **Acceptér** for at give Power BI adgang til dine Adobe Analytics-data.
+6. Klik på **Acceptér** for at give Power BI adgang til dine Adobe Analytics-data.
    
    ![](media/service-connect-to-adobe-analytics/adobe_authorize.png)
-5. Importprocessen starter automatisk, når du har godkendt. 
+7. Importprocessen starter automatisk, når du har godkendt. 
 
 ## <a name="view-the-adobe-analytics-dashboard-and-reports"></a>Få vist Adobe Analytics-dashboard og -rapporter
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-open-app.md)]
 
-      ![Adobe Analytics dashboard](media/service-connect-to-adobe-analytics/dashboard.png)
+   ![Adobe Analytics-dashboard](media/service-connect-to-adobe-analytics/dashboard.png)
 
 [!INCLUDE [powerbi-service-apps-open-app](./includes/powerbi-service-apps-what-now.md)]
 
-## <a name="whats-included"></a>Følgende er inkluderet
+## <a name="whats-included"></a>Det følgende er inkluderet
 Power BI anvender Adobe Analytics-rapporterings-API'en til at definere og køre rapporter for følgende tabeller:
 
 | **Tabelnavn** | **Kolonneoplysninger** |
@@ -82,7 +82,7 @@ Værdien Firma findes i øverste højre hjørne af din konto, når du er logget 
 
 **Report Suite-id**
 
-Suite-id oprettes, når Report Suite oprettes. Du kan kontakte din administrator for at identificere ID-værdien. Bemærk, at dette ikke er navnet på Report Suite.
+Suite-id oprettes, når Report Suite oprettes. Du kan kontakte din administrator for at identificere ID-værdien. Dette er ikke Report Suite-navnet.
 
 Fra Adobe-[dokumentationen](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html):
 
@@ -94,7 +94,7 @@ Hvis du får vist en fejl, når du har angivet dine legitimationsoplysninger, hv
 Hvis du er kommet gennem skærmbilledet med legitimationsoplysninger, før der opstår en fejl, er det muligt, at rapporterne er for længe om at blive afsluttet. En almindelig fejl er i formatet *"Der kunne ikke hentes data fra Adobe Analytics-rapporten. Indhold omfattede &quot;henviser, side&quot;, den omtrentlige varighed var xx sekunder"*. Se afsnittet "Følgende er inkluderet", og sammenlign med størrelsen af din Adobe-forekomst. Det er desværre ikke muligt at omgå denne timeout i dag. Men vi overvejer opdateringer for bedre at kunne understøtte større forekomster. Giv feedback til Power BI-teamet på https://ideas.powerbi.com
 
 ## <a name="next-steps"></a>Næste trin
-* [Hvad er apps i Power BI?](consumer/end-user-apps.md)
+* [Hvad er apps i Power BI?](service-create-distribute-apps.md)
 * [Hent data i Power BI](service-get-data.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8c176cff4973ee73218bf9e568d01f15bd137929
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 0cf9c152c9481e223a143bed3985e883c92af192
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187047"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47416814"
 ---
 # <a name="use-the-matrix-visual-in-power-bi-desktop"></a>Brug matrixvisualisering i Power BI Desktop
 Når du bruger visualiseringen **Matrix**, kan du oprette matrixvisualiseringer (også kaldet *tabeller*) i rapporter i **Power BI Desktop** og få tværgående fremhævning af elementer i matrixen med andre visualiseringer. Derudover kan du vælge rækker, kolonner og endda individuelle celler og tværgående fremhævning. Endelig kan du udnytte pladsen i layoutet bedre, fordi matrixvisualisering understøtter et trinvist layout.
@@ -153,10 +153,6 @@ Begge fremgangsmåde giver samme resultat. Hvis du vælger *Avancerede kontrolel
 
 ## <a name="next-steps"></a>Næste trin
 
-Du vil måske også være interesseret i følgende artikler:
+[Punkt- og boblediagrammer i Power BI](power-bi-visualization-scatter.md)
 
-* [Brug gitterlinjer og fastgørelse til gitter i Power BI Desktop-rapporter](../desktop-gridlines-snap-to-grid.md)
-* [Datakilder i Power BI Desktop](../desktop-data-sources.md)
-* [Datatyper i Power BI Desktop](../desktop-data-types.md)
-
- 
+[Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

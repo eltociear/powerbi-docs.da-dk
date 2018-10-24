@@ -8,22 +8,22 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 10/02/2018
 ms.author: mihart
-ms.openlocfilehash: 462e9b1d991690846c57a225552b271fca19499c
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: e4173811db0de0dc95e0bd324517a5750165983e
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544389"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908641"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Opret et Power BI-dashboard fra en rapport
-Du har læst [Dashboards i Power BI](consumer/end-user-dashboards.md), og nu vil du oprette dit eget. Der er mange forskellige måder at oprette et dashboard på – fra en rapport, fra bunden, fra et datasæt, ved at kopiere et eksisterende dashboard og meget mere.  
+Du har læst [Dashboards i Power BI](service-dashboards.md), og nu vil du oprette dit eget. Der er mange forskellige måder at oprette et dashboard på – fra en rapport, fra bunden, fra et datasæt, ved at kopiere et eksisterende dashboard og meget mere.  
 
 Det kan virke overvældende, når du starter for første gang, så vi begynder med hurtigt og nemt at oprette et dashboard ved at fastgøre visualiseringer fra en rapport, der allerede er oprettet. Når du er færdig med denne hurtige introduktion, vil du have en god forståelse af relationen mellem dashboards og rapporter, åbning af Redigeringsvisning i rapporteneditoren, fastgørelse af felter og skift mellem et dashboard og en rapport. Derefter skal du bruge linkene i Indholdsfortegnelse til venstre eller **Næste trin** nederst for at fortsætte til mere avancerede emner.
 
 ## <a name="who-can-create-a-dashboard"></a>Hvem kan oprette et dashboard?
-Oprettelse af et dashboard er en **opretter**funktion og kræver redigeringsrettigheder til rapporten. Redigeringstilladelser er tilgængelige for rapportoprettere og de kolleger, opretteren giver adgang til. Hvis David f.eks. opretter en rapport i workspaceABC og derefter tilføjer dig som medlem af dette arbejdsområde, har både du og David redigeringsrettigheder. På anden side, hvis en rapport er blevet delt med dig direkte eller som en del af en [Power BI-app](consumer/end-user-apps.md) (du **bruger** rapporten), kan du ikke fastgøre felter til et dashboard.
+Oprettelse af et dashboard er en **opretter**funktion og kræver redigeringsrettigheder til rapporten. Redigeringstilladelser er tilgængelige for rapportoprettere og de kolleger, opretteren giver adgang til. Hvis David f.eks. opretter en rapport i workspaceABC og derefter tilføjer dig som medlem af dette arbejdsområde, har både du og David redigeringsrettigheder. På anden side, hvis en rapport er blevet delt med dig direkte eller som en del af en [Power BI-app](service-create-distribute-apps.md) (du **bruger** rapporten), kan du ikke fastgøre felter til et dashboard.
 
 > **BEMÆRK!** Dashboards er en funktion i Power BI-tjenesten ikke Power BI Desktop. Der kan ikke oprettes dashboards på Power BI-mobilenheder, men du kan [få dem vist og dele dem](consumer/mobile/mobile-apps-view-dashboard.md).
 >
@@ -65,7 +65,7 @@ Vi importerer et af eksempeldatasættene i Power BI og bruger det til at oprette
 1. Bliv i samme arbejdsområde, og vælge fanen **Rapporter**. Den nyligt importerede rapport vises med en gul stjerne. Markér navnet på rapporten for at åbne den.
 
     ![fanen Rapporter](media/service-dashboard-create/power-bi-reports.png)
-2. Rapporten åbnes i [læsevisning](consumer/end-user-reading-view.md). Bemærk, at den har to faner nederst: Discount Analysis (Rabatanalyse) og Spend Overview (Udgiftsoversigt). Hver fane repræsenterer en side i rapporten.
+2. Rapporten åbnes i læsevisning. Bemærk, at den har to faner nederst: Discount Analysis (Rabatanalyse) og Spend Overview (Udgiftsoversigt). Hver fane repræsenterer en side i rapporten.
     Vælg **Rediger rapport** for at åbne rapporten i Redigeringsvisning.
 
     ![rapport i Læsevisning](media/service-dashboard-create/power-bi-reading-view.png)
@@ -108,9 +108,9 @@ Tillykke med oprettelsen af dit første dashboard! Nu, hvor du har et dashboard,
 
 ## <a name="next-steps"></a>Næste trin
 * [Tilpas størrelsen af felter, og flyt dem](service-dashboard-edit-tile.md)
-* [Alt om dashboardfelter](consumer/end-user-tiles.md)
-* [Del dit dashboard ved at oprette en app](consumer/end-user-create-apps.md)
-* [Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)
+* [Alt om dashboardfelter](service-dashboard-tiles.md)
+* [Del dit dashboard ved at oprette en app](service-install-use-apps.md)
+* [Power BI – Grundlæggende begreber](service-basic-concepts.md)
 * [Tip til udformning af et fantastisk dashboard](service-dashboards-design-tips.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

@@ -3,18 +3,18 @@ title: Integrer Power BI-indhold i en app til dine kunder
 description: Få mere at vide om, hvordan du kan integrere en rapport, et dashboard eller et felt i en webapp ved hjælp af API'er til Power BI til dine kunder.
 author: markingmyname
 ms.author: maghan
-ms.date: 06/20/2018
+manager: kfile
 ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-manager: kfile
-ms.openlocfilehash: 25667c76008c0ef6dd2d8560e2b23a31063276fa
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.date: 06/20/2018
+ms.openlocfilehash: 6685b47de6fbcc4ce35d5087c545814e34092d11
+ms.sourcegitcommit: b7b828019b2a2917dfda4d6df0c9cdce70fa68cd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974063"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48827427"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Selvstudium: Integrer en rapport, et dashboard eller et felt i Power BI i et program til dine kunder
 
@@ -57,7 +57,7 @@ Du kan registrere dit program i Azure Active Directory, så dit program får adg
     ![Søg efter programregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)</br>
     ![Registrering af nyt program](media/embed-sample-for-customers/embed-sample-for-customers-004.png)
 
-4. Følg prompterne, og opret et nyt program. I forbindelse med "apps ejer data" skal du bruge **Oprindelig** for programtypen. Du skal også angive en **omdirigerings-URI**, som **Azure Active Directory** bruger til at returnere tokensvar. Angiv en værdi, der er specifik for dit program (f.eks.: `http://localhost:13526/Redirect`).
+4. Følg prompterne, og opret et nyt program. I forbindelse med "app ejer data" skal du bruge **Oprindelig** for programtypen. Du skal også angive en **omdirigerings-URI**, som **Azure Active Directory** bruger til at returnere tokensvar. Angiv en værdi, der er specifik for dit program (f.eks.: `http://localhost:13526/Redirect`).
 
     ![Opret app](media/embed-sample-for-customers/embed-sample-for-customers-005.png)
 
@@ -76,7 +76,7 @@ Du skal aktivere yderligere tilladelser til dit program ud over det, der er angi
     ![Påkrævede tilladelser](media/embed-sample-for-customers/embed-sample-for-customers-008.png)
 
 3. Vælg **Azure Active Directory**, og kontrollér, at **Åbn mappen som den bruger, der er logget på** er markeret. Vælg **Gem**.
-   
+
     ![Windows Azure Active Directory-tilladelser](media/embed-sample-for-customers/embed-sample-for-customers-011.png)
 
 4. Vælg **Tilføj**
@@ -92,13 +92,13 @@ Du skal aktivere yderligere tilladelser til dit program ud over det, der er angi
     ![Vælg PBI-tjenester](media/embed-sample-for-customers/embed-sample-for-customers-014.png)
 
 7. Vælg alle tilladelser under **Delegated Permission** (Delegerede tilladelser). Du skal vælge dem én for én for at kunne gemme dine valg. Vælg **Gem**, når du er færdig.
-   
+
     ![Vælg delegerede tilladelser](media/embed-sample-for-customers/embed-sample-for-customers-015.png)
 
 8. I **Required permissions** (Krævede tilladelser), skal du vælge **Grant Permissions** (Tildel tilladelser).
-   
+
     Handlingen **Grant Permissions** (Tildel tilladelser) skal bruges til *hovedkontoen* for at undgå at blive bedt af Azure AD om at angive dit samtykke. Hvis kontoen, der udfører denne handling, er en Global administrator, skal du give alle brugere i organisationen tilladelser til appen. Hvis kontoen, der udfører denne handling, er *hovedkontoen* og ikke en global administrator, skal du kun give tilladelser til *hovedkontoen*  til appen.
-   
+
     ![Tildel tilladelser i dialogboksen til krævede tilladelser](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
 
 ## <a name="set-up-your-power-bi-environment"></a>Konfigurer dit Power BI-miljø
@@ -173,7 +173,9 @@ Følg disse trin for at begynde at integrere dit indhold vha. et eksempelprogram
 
     Vælg **Alle tjenester** i navigationsruden til venstre, og vælg **Appregistreringer**.
 
-    ![Søg efter app-registrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png) Vælg det program, du vil hente **clientId** for.
+    ![Søg efter programregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
+
+    Vælg det program, du vil hente **clientId** for.
 
     ![Vælg app](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
@@ -275,6 +277,7 @@ var embedConfig = new EmbedConfig()
 Dette forudsætter, at der oprettes en klasse for **EmbedConfig** og **TileEmbedConfig**. Du kan finde et eksempel på dette i filen **Models\EmbedConfig.cs** og filen **Models\TileEmbedConfig.cs**.
 
 ### <a name="load-an-item-using-javascript"></a>Indlæs et element ved hjælp af JavaScript
+
 Du kan bruge JavaScript til at indlæse en rapport i et div-element på din webside.
 
 Hvis du vil se et komplet eksempel, hvor JavaScript API'en bruges, kan du bruge [værktøjet Playground](https://microsoft.github.io/PowerBI-JavaScript/demo). Med dette værktøj kan du nemt prøve dig frem med forskellige typer af Power BI Embedded-eksempler. Du kan også få flere oplysninger om JavaScript-API'en ved at gå til siden [Wiki for PowerBI-JavaScript](https://github.com/Microsoft/powerbi-javascript/wiki).

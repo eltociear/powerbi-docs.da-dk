@@ -1,6 +1,6 @@
 ---
 title: KPI-visualiseringer
-description: I dette selvstudium skal du oprette KPI-visualiseringer i Power BI Desktop
+description: Opret KPI-visuals i Power BI Desktop
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -11,14 +11,14 @@ ms.topic: tutorial
 ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 67786351732088b4db52b0c57230683d99fc158a
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: aec8bc2d7faa8d3c4b9c7b4eb69ed9a930cfbcd1
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47186908"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417228"
 ---
-# <a name="tutorial-create-kpi-visuals"></a>Selvstudium: Opret KPI-visualiseringer
+# <a name="kpi-visuals"></a>KPI-visualiseringer
 Et nøgletal (KPI) er en visuel ledetråd, der viser fremgangen mod et målbart mål. Du kan finde flere oplysninger om KPI'er ved at se [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
 
 Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
@@ -26,13 +26,6 @@ Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion]
 ## <a name="prerequisites"></a>Forudsætninger
 * [Power BI Desktop er gratis.](https://powerbi.microsoft.com/en-us/get-started/)
 * [Eksempel på detailhandelsanalyse PBIX](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix)
-
-## <a name="in-this-tutorial-you-will-learn"></a>Dette selvstudium omfatter:
-> [!div class="checklist"]
-> * Sådan opretter du et KPI
-> * De bedste situationer for en KPI-visualisering
-> * Sådan formaterer du en KPI
-> * Krav til KPI-visualiseringer
 
 ## <a name="when-to-use-a-kpi"></a>Hvornår bruger man et KPI
 KPI'er er et godt valg:
@@ -58,13 +51,13 @@ Eller du kan se med, når Will viser, hvordan du opretter visualiseringer med en
 3. Tilføj **Time > FiscalMonth**.  Dette repræsenterer tendensen.
 4. VIGTIGT! Sorter diagrammet efter **FiscalMonth**. Når du konverterer visualiseringen til et KPI, er der ikke muligt at sortere.
 
-    ![](../media/power-bi-visualization-kpi/power-bi-chart.png)
+    ![](media/power-bi-visualization-kpi/power-bi-chart.png)
 5. Konverter visualiseringen til et KPI ved at vælge ikonet KPI i visualiseringsruden.
    
-    ![](../media/power-bi-visualization-kpi/power-bi-kpi-template.png)
+    ![](media/power-bi-visualization-kpi/power-bi-kpi-template.png)
 6. Tilføj et mål. Tilføj sidste års salg som målet. Træk **Total Units Last Year** til feltet **Target goals**.
    
-    ![]../(media/power-bi-visualization-kpi/power-bi-kpi-done.png)
+    ![](media/power-bi-visualization-kpi/power-bi-kpi-done.png)
 7. Du kan eventuelt formatere KPI'et ved at vælge malerrulleikonet for at åbne ruden Formatering.
    
    * **Indicator** – -styrer indikatorens visningsenheder og decimalpladser.
@@ -78,5 +71,8 @@ KPI'er er også tilgængelige i Power BI-tjenesten og på dine mobilenheder, så
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 * Hvis KPI'et ikke ligner det ovenfor, kan det skyldes, at du skal sortere efter fiscalmonth. Da KPI'er ikke har en sorteringsindstilling, skal du sorterer efter fiscalmonth, *før* du konverterer din visualisering til et KPI.
 
-> [!div class="nextstepaction"]
-> [Opret en målervisualisering](power-bi-visualization-radial-gauge-charts.md)
+## <a name="next-steps"></a>Næste trin
+
+[Grundlæggende kort i Power BI](power-bi-map-tips-and-tricks.md)
+
+[Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

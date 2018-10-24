@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 71b2f104ad5efb244c2b046cdd48a2e52cd045e3
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 19a029564fecdc9a54a136d045e75bb9580193da
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46543943"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908234"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Samarbejd i dit Power BI-apparbejdsområde
 Power BI-apparbejdsområder er fantastiske steder, hvor du kan samarbejde med dine kollegaer på dashboards, rapporter og datasæt om at oprette *apps*. Samarbejde slutter ikke med arbejdsområder i Power BI. Office 365 tilbyder andre gruppetjenester som f.eks. deling af filer på OneDrive for Business, samtaler i Exchange, delte kalendere og opgaver osv. Læs mere om [grupper i Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
@@ -23,7 +23,7 @@ Power BI-apparbejdsområder er fantastiske steder, hvor du kan samarbejde med di
 > [!NOTE]
 > Prøveversionen af den nye arbejdsområdeoplevelse ændrer relationen mellem Power BI-arbejdsområder og Office 365-grupper. Du opretter ikke automatisk en Office 365-gruppe, hver gang du opretter et af de nye arbejdsområder. Læs om [oprettelse af nye arbejdsområder (prøveversion)](service-create-the-new-workspaces.md)
 
-Apparbejdsområder er kun tilgængelige med [Power BI Pro](service-free-vs-pro.md).
+Apparbejdsområder er kun tilgængelige med en [Power BI Pro-licens](service-features-license-type.md).
 
 ## <a name="collaborate-on-power-bi-desktop-files-in-your-app-workspace"></a>Samarbejd på Power BI Desktop-filer i dit apparbejdsområde
 Når du har oprettet en Power BI Desktop-fil, kan alle i dit arbejdsområde samarbejde om den, hvis du publicerer den på dit Power BI-apparbejdsområde.
@@ -77,7 +77,7 @@ Samarbejde i Office 365 starter fra apparbejdsområdet i Power BI.
 Hvis du er ejer eller administrator for et apparbejdsområde, kan du også tilføje eller fjerne medlemmer af arbejdsområdet. Læs mere om [administration af dit Power BI-apparbejdsområde](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="next-steps"></a>Næste trin
-* [Opret apps og apparbejdsområder i Power BI](consumer/end-user-create-apps.md)
+* [Opret apps og apparbejdsområder i Power BI](service-create-distribute-apps.md)
 * Har du flere spørgsmål? [Prøv Power BI-community'et](http://community.powerbi.com/)
 * Har du feedback? Besøg [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi)
 

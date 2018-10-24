@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 865e19f368b8e1915d0262ae6356e70a8dbc2781
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 9654e2838b1b62dcc856e2870b3fcc1e5301641c
+ms.sourcegitcommit: 07beb155ec0ea1cdcc741085251ed06d7bc8581c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416885"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48874569"
 ---
 # <a name="card-visualizations"></a>Kortvisualiseringer
 Nogle gange er et enkelt tal det vigtigste, du vil finde frem til på dit Power BI-dashboard eller i din Power BI-rapport som f.eks. salg i alt, markedsandel fra år til år eller salgsmuligheder i alt. Denne type visualisering kaldes et *kort*. Som med næsten alle de oprindelige Power BI-visualiseringer kan kort oprettes ved hjælp af rapporteditoren eller Spørgsmål og svar.
@@ -58,7 +58,7 @@ Feltet til spørgsmål er den nemmeste måde at oprette et kort på. Feltet til 
    ![](media/power-bi-visualization-card/power-bi-q-and-a-box.png)
 
 > [!TIP]
-> Fra en rapport i Power BI-tjenesten skal du vælge **Stil et spørgsmål** på den øverste menulinje i [redigeringsvisning](../service-reading-view-and-editing-view.md). I en rapport i Power BI Desktop skal du finde en tom plads i en rapport og dobbeltklikke for at åbne et felt til spørgsmål.
+> Fra en rapport i Power BI-tjenesten skal du vælge **Stil et spørgsmål** på den øverste menulinje i redigeringsvisning. I en rapport i Power BI Desktop skal du finde en tom plads i en rapport og dobbeltklikke for at åbne et felt til spørgsmål.
 
 3. Skriv f.eks. "number of opportunities" i feltet til spørgsmål.
 

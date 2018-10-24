@@ -7,32 +7,32 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: ccfa947f83a5079cda3bfb173c0f83f6b811a9ff
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 7db5bf514b567cbcaf9dddc5d48006762237a622
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46564733"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909124"
 ---
 # <a name="dashboards-in-power-bi-service"></a>Dashboards i Power BI-tjenesten
 
 Et Power BI-***dashboard*** er en enkelt side, der ofte kaldes et canvas, hvor der bruges visualiseringer til at fortælle en historie. Da det er begrænset til én side, indeholder et dashboard, der er godt designet, kun de vigtigste elementer fra historien.
 
-![dashboard](./media/end-user-dashboards/power-bi-dashboard2.png)
+![dashboard](media/end-user-dashboards/power-bi-dashboard2.png)
 
 De visualiseringer, du kan se på dashboardet, kaldes *felter* og er *fastgjort* til dashboardet fra rapporter. Hvis du ikke har arbejdet med Power BI før, kan du få et godt overblik ved at læse [Power BI – Grundlæggende begreber](end-user-basic-concepts.md).
 
 > [!NOTE]
-> Dashboards er en funktion i Power BI-tjenesten og er ikke tilgængelig i Power BI Desktop. Der kan ikke oprettes dashboards på mobilenheder, men du kan [få dem vist og dele dem](mobile/mobile-apps-view-dashboard.md).
+> Dashboards er en funktion i Power BI-tjenesten og er ikke tilgængelig i Power BI Desktop. Der kan ikke oprettes dashboards på mobilenheder, men du kan [få dem vist og dele dem](/mobile/mobile-apps-view-dashboard.md).
 > 
 > 
 
 Visualiseringerne på et dashboard stammer fra rapporter, og hver rapport er baseret på et datasæt. Du kan faktisk opfatte et dashboard som en måde at få adgang til underliggende rapporter og datasæt på. Når du vælger en visualisering, bliver du ført til den rapport (og det datasæt), der blev brugt til at oprette den.
 
-![diagram, der viser relationer mellem dashboards, rapporter, datasæt](./media/end-user-dashboards/power-bi-diagram.png)
+![diagram, der viser relationer mellem dashboards, rapporter, datasæt](media/end-user-dashboards/power-bi-diagram.png)
 
 ## <a name="advantages-of-dashboards"></a>Fordele ved dashboards
 Dashboards er en fantastisk måde at holde øje med din virksomhed, søge efter svar og se dine vigtigste data i korte træk på. Visualiseringer på et dashboard kan stamme fra ét underliggende datasæt eller mange og fra én underliggende rapport eller mange. Et dashboard kombinerer data i det lokale miljø og cloudmiljøet, hvilket giver dig en samlet visning, uanset hvor dataene er gemt.
@@ -40,7 +40,7 @@ Dashboards er en fantastisk måde at holde øje med din virksomhed, søge efter 
 Et dashboard er ikke kun et flot billede. Det er yderst interaktivt og kan i vidt omfang tilpasses, og felterne opdateres, når de underliggende data ændres.
 
 ## <a name="dashboards-versus-reports"></a>Dashboards sammenlignet med rapporter
-[Rapporter](end-user-reports.md) forveksles ofte med dashboards, da de også er canvasser med visualiseringer. Men der er nogle store forskelle.
+Rapporter forveksles ofte med dashboards, da de også er lærreder med visualiseringer. Men der er nogle store forskelle.
 
 | **Egenskab** | **Dashboards** | **Rapporter** |
 | --- | --- | --- |
@@ -65,28 +65,16 @@ Her er nogle emner opdelt efter rolle, som kan hjælpe dig med at komme i gang.
 
 Power BI Pro er påkrævet både for at dele et dashboard og få vist et delt dashboard.
 
-### <a name="if-you-will-be-creating-and-sharing-dashboards"></a>Hvis du skal oprette og dele dashboards
-* Brug et af vores eksempler til [at oprette et dashboard fra en rapport](../service-dashboard-create.md).
-* Få mere at vide om [dashboardfelter](end-user-tiles.md) og alle de forskellige måder, du kan fastgøre dem til et dashboard på.
-* Hjælp dine dashboardbrugere ved at oprette dashboards, som [fungerer godt sammen med spørgsmål og svar i forbindelse med forespørgsler på et naturligt sprog](../service-prepare-data-for-q-and-a.md) og med [Hurtig indsigt](../service-insights-optimize.md).
-* Find alle de forskellige måder, som du kan [dele et dashboard med kollegaer](../service-how-to-collaborate-distribute-dashboards-reports.md) på.
-
 ### <a name="if-you-will-be-receiving-and-consuming-dashboards"></a>Hvis du skal modtage og bruge dashboards
 * Bliv fortrolig med dashboards ved at se præsentationen af et af vores [eksempler på et dashboard](../sample-tutorial-connect-to-the-samples.md).
 * Få mere at vide om [dashboardfelter](end-user-tiles.md), og hvad der sker, når du vælger et.
-* Kan du ikke lide et dashboards udseende?  Du kan [tilpasse størrelsen, flytte og omdøbe felterne](../service-dashboard-edit-tile.md).
-* Vil du holde øje med et enkelt dashboardfelt og modtage en mail, når den når en bestemt grænse? [Opret beskeder for felterne](../service-set-data-alerts.md).
-* Stil spørgsmål om dit dashboard. Få mere at vide om, hvordan du bruger [Spørgsmål og svar i Power BI](../power-bi-tutorial-q-and-a.md) til at stille et spørgsmål om dine data og få svar i form af en visualisering.
+* Vil du holde øje med et enkelt dashboardfelt og modtage en mail, når den når en bestemt grænse? [Opret beskeder for felterne](end-user-alerts.md).
+* Stil spørgsmål om dit dashboard. Få mere at vide om, hvordan du bruger [Spørgsmål og svar i Power BI](end-user-q-and-a.md) til at stille et spørgsmål om dine data og få svar i form af en visualisering.
 
 > [!TIP]
 > Hvis du ikke kunne finde det, du ledte efter her, kan du bruge indholdsfortegnelsen til venstre.
-> 
 > 
 
 ## <a name="next-steps"></a>Næste trin
 [Hvad er Power BI?](../power-bi-overview.md)  
 [Power BI – Grundlæggende begreber](end-user-basic-concepts.md)  
-[Power BI Premium – hvad er det?](../service-premium.md)  
-
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-

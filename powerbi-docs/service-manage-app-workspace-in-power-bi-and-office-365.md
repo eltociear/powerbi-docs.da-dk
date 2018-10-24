@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 516d78bd6158c714d5f4418771c5e8cb219ce512
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 25e7fe3e47cee2aed7781fff2a20621e3bd860ed
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547562"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908802"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Administrer dit apparbejdsområde i Power BI og Office 365
-Som opretter eller administrator af et [apparbejdsområde i Power BI](consumer/end-user-apps.md) eller i Office 365 kan du administrere visse aspekter i arbejdsområdet i Power BI. Andre aspekter kan du administrere i Office 365. 
+Som opretter eller administrator af et [apparbejdsområde i Power BI](service-create-distribute-apps.md) eller i Office 365 kan du administrere visse aspekter i arbejdsområdet i Power BI. Andre aspekter kan du administrere i Office 365. 
 
 > [!NOTE]
 > Prøveversionen af den nye arbejdsområdeoplevelse ændrer relationen mellem Power BI-arbejdsområder og Office 365-grupper. Du opretter ikke automatisk en Office 365-gruppe, hver gang du opretter et af de nye arbejdsområder. Læs om [oprettelse af nye arbejdsområder (prøveversion)](service-create-the-new-workspaces.md)
@@ -36,7 +36,7 @@ Som opretter eller administrator af et [apparbejdsområde i Power BI](consumer/e
 * Se gruppens mailadresse.
 * Slette gruppen.
 
-Du skal bruge en [Power BI Pro](service-free-vs-pro.md)-licens for at være administrator eller medlem af et apparbejdsområde. Dine appbrugere har også brug for en Power BI Pro-licens, medmindre dit apparbejdsområde er i kraft af en Power BI Premium-kapacitet. Læs [Hvad er Power BI Premium?](service-premium.md) for at få flere oplysninger.
+Du skal bruge en [Power BI Pro-licens](service-features-license-type.md) for at være administrator eller medlem af et apparbejdsområde. Dine appbrugere har også brug for en Power BI Pro-licens, medmindre dit apparbejdsområde er i kraft af en Power BI Premium-kapacitet. Læs [Hvad er Power BI Premium?](service-premium.md) for at få flere oplysninger.
 
 ## <a name="edit-your-app-workspace-in-power-bi"></a>Rediger dit apparbejdsområde i Power BI
 1. I Power BI-tjenesten skal du vælge pilen ud for **Arbejdsområder** > vælge ellipsen (**...** ) ud for navnet på dit arbejdsområde > **Rediger arbejdsområde**. 
@@ -76,7 +76,6 @@ Når du distribuerer din app fra apparbejdsområdet, bliver det billede, du tilf
 3. Vælg **Gem** eller **Fjern**.
 
 ## <a name="next-steps"></a>Næste trin
-* [Hvad er apps i Power BI?](consumer/end-user-apps.md)
-* [Publicer apps med dashboards og rapporter i Power BI](consumer/end-user-create-apps.md)
+* [Publicer apps med dashboards og rapporter i Power BI](service-create-distribute-apps.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

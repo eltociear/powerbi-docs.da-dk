@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/14/2018
+ms.date: 10/01/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 1de9624dfde73baf424a21ed4d587d086c1d6763
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 562af0b21c4ecd4617de0e524cca20ec6935ca7a
+ms.sourcegitcommit: 31f9da5f562cd02a729b6f012b4b3326416adb0e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187254"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48232920"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 
@@ -137,7 +137,7 @@ Specialtegn og mellemrum kræver yderligere formatering. Når din forespørgsel 
 |---------|---------|---------|
 |**Tabelnavn**     | Området er 0x20        |  Navn_x0020_på_x0020_tabel       |
 |**Kolonne**@**tal**     |   @ er 0x40     |  Kolonne_x0040_tal       |
-|**[Kolonne]**     |  [ er 0x005B ] er 0x0050       |  _x0058_Kolonne_x0050       |
+|**[Kolonne]**     |  [ er 0x0058 ] er 0x0050       |  _x0058_Kolonne_x0050       |
 |**Kolonne+Plus**     | + er 0x2B        |  Kolonne_x002B_Plus       |
 
 Navn_x0020_på_x0020_tabel/Kolonne_x002B_Plus eq 3 ![specialtegn til gengivelse af tabelvisualisering](media/service-url-filters/power-bi-special-characters1.png)
@@ -171,6 +171,7 @@ Der er et par ting, du skal være opmærksom på, når du bruger parametre for f
 * På Power BI-rapportserveren kan du [sende rapportparametre](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) ved at inkludere dem i en URL-adresse til rapporten. Disse parametre i URL-adressen har ikke noget præfiks, da de sendes direkte til det program, der behandler rapporten.
 * Filtrering af forespørgselsstrengen fungerer ikke sammen med [Publicer på internettet](service-publish-to-web.md) eller Power BI Embedded.   
 * Datatypen long er (2^53-1) på grund af begrænsninger i Javascript.
+* URL-adresse-filtre for rapporter har en grænse på 10-udtryk (10 filtre, der er forbundet med OG).
 
 ## <a name="next-steps"></a>Næste trin
 

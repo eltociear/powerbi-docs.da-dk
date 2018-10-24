@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: d499f3f3635442f8d9ed0fbf167e53d13ec0ae53
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 411fd408998ba67c4a91ae01e166396530631678
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549977"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48909055"
 ---
 # <a name="signing-up-for-power-bi-as-an-individual"></a>Tilmelding til Power BI som enkeltperson
 Få mere at vide om, hvordan du tilmelder dig Power BI og begynder at bruge det til personlige rapporter og visualiseringsopgaver, der passer til dine behov.
@@ -24,7 +24,7 @@ Få mere at vide om, hvordan du tilmelder dig Power BI og begynder at bruge det 
 
 Power BI kan både være et personligt rapporterings- og visualiseringsværktøj samt fungere som basis for analyser og beslutningstagning til gruppeprojekter, afdelinger eller hele selskaber.
 
-Denne artikel fremlægger dine muligheder for at tilmelde dig og begynde at bruge Power BI-tjenesten. Du kan finde oplysninger om forskellen mellem Power BI (gratis) og Power BI Pro under [Power BI (gratis) vs. Power BI Pro](service-free-vs-pro.md).
+Denne artikel fremlægger dine muligheder for at tilmelde dig og begynde at bruge Power BI-tjenesten. Hvis du vil vide mere om forskellene i funktionaliteten mellem Power BI-licenstyper, kan du se [Power BI-funktioner efter licenstype](service-features-license-type.md).
 
 ## <a name="you-have-a-few-options"></a>Du har et par forskellige muligheder
 Som enkeltperson har du flere muligheder for at tilmelde dig og begynde at bruge Power BI. Du kan vælge at tilmelde dig gratis, eller du kan købe et Power BI Pro-abonnement. Hvis du tilmelder dig en gratis konto, kan du vælge en gratis 60-dages prøveversion af Power BI Pro, når du befinder dig i tjenesten.
@@ -99,7 +99,7 @@ Du vil derefter se en meddelelse, der beder dig om at vælge **Start**.
 ## <a name="in-service-power-bi-pro-60-day-trial"></a>Power BI Pro i fuld drift i en 60-dages prøveperiode
 Når du har tilmeldt dig din gratis konto, kan du også vælge at prøve Pro gratis i 60 dage. Du får adgang til alle Pro-funktionerne i hele prøveperioden. Power BI Pro har alle funktionerne fra den gratis version af Power BI samt yderligere funktioner til deling og samarbejde. Se [Priser på Power BI](https://powerbi.microsoft.com/pricing), hvis du vil have flere oplysninger. Log på Power BI for at få en 60-dages gratis prøveperiode på Power BI Pro, og prøv én af disse Power BI Pro-funktioner:
 
-* [Opret et app-arbejdsområde](consumer/end-user-create-apps.md)
+* [Opret et app-arbejdsområde](service-create-distribute-apps.md)
 * [Del et dashboard](service-share-dashboards.md)
 
 Når du prøver en af disse funktioner, bliver du bedt om at starte din gratis prøveperiode. Du kan også vælge den ved at gå til tandhjulsikonet og vælge **Administrer personligt lager**. Vælg derefter **Prøv Pro gratis** til højre.
@@ -139,9 +139,8 @@ I mange tilfælde kan tilmelding til Power BI foretages ved at følge den enkle 
 |            **Selvbetjeningstilmelding deaktiveret** Under tilmeldingen modtager du en meddelelse som følgende: <br /><br /> *Vi kan ikke færdiggøre din tilmelding. Din it-afdeling har deaktiveret tilmelding til Microsoft Power BI. Kontakt it-afdelingen for at fuldføre tilmeldingen.* <br /><br /> eller <br /><br /> *Det ligner en personlig mailadresse. Angiv din arbejdsmailadresse, så vi kan sætte dig i forbindelse med andre i dit firma. Og bare rolig. Vi deler ikke din adresse med nogen.*             |                             Din virksomheds it-administrator har deaktiveret selvbetjeningstilmelding for Power BI. <br /><br /> Kontakt it-administratoren, og bed vedkommende om at følge instruktionerne nedenfor for at gøre det muligt for eksisterende brugere at tilmelde sig Power BI og tillade nye brugere at deltage i din eksisterende lejer, så du kan fuldføre tilmeldingen. <br/><br/> Dette problem kan også opstå, hvis du har tilmeldt dig Office 365 via en partner. [Få mere at vide](service-admin-syndication-partner.md) <br /><br /> [Power BI i din organisation](https://support.office.com/en-ca/article/Power-BI-in-your-Organization-d7941332-8aec-4e5e-87e8-92073ce73dc5#BKMK_HowCanIAllowO365Tenant)                              |
 |                                                                                          **Mailadressen er ikke et Office 365-id** Under tilmeldingen modtager du en meddelelse som følgende: <br /><br /> *Vi kan ikke finde dig på contoso.com.  Bruger du et andet id på arbejdet eller i skolen? <br /><br />Prøv at logge på med det, og hvis det ikke virker, skal du kontakte din it-afdeling.*                                                                                           | Din organisation bruger id'er til at logge på Office 365 og andre Microsoft-tjenester, som er anderledes end din mailadresse.  Din mailadresse kan f.eks. være Nancy.Smith@contoso.com, men dit id er nancys@contoso.com. <br /><br /> For at fuldføre tilmeldingen skal du bruge det id, som din organisation har tildelt dig, til at logge på Office 365 eller andre Microsoft-tjenester.  Hvis du ikke ved, hvad det er, kan du kontakte din it-administrator. <br /><br /> Hvis du stadig ikke kan tilmelde dig og har mulighed for at gennemføre en mere avanceret tilmeldingsproces, kan du [tilmelde dig et nyt Office 365-prøveabonnement og bruge denne mailadresse til tilmeldingen](service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
 
-## <a name="next-steps"></a>Næste trin
-[Power BI (gratis) i din virksomhed](service-admin-service-free-in-your-organization.md)  
-[Køb af Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
+## <a name="next-steps"></a>Næste trin  
+[Køb Power BI Pro](service-admin-purchasing-power-bi-pro.md)  
 [Power BI-serviceaftale til individuelle brugere](https://powerbi.microsoft.com/terms-of-service/)  
 [Power BI Premium – hvad er det?](service-premium.md)  
 [Hvidbog til Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 32f59f1bac40a1359aef0f91c9573cc49dd70725
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 71dbdd79e6bedee3f1377f0e7c29fcc6efbbba03
+ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187392"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47417320"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Figurkort i Power BI Desktop (prøveversion)
 Opret en visualisering af typen **Figurkort** til at sammenligne områder på et kort ved hjælp af farver. I modsætning til visualiseringen **Kort** kan **Figurkort** ikke vise den nøjagtige geografiske placering af datapunkter på et kort. I stedet er dens primære formål at vise relative sammenligninger mellem områder på et kort ved at give dem forskellige farver.
@@ -417,3 +417,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | us-mt |Montana |MT |
 | us-wa |Washington |WA |
 
+## <a name="next-steps"></a>Næste trin
+[Matrixvisual i Power BI Desktop](desktop-matrix-visual.md)
+
+[Visualiseringstyper i Power BI](power-bi-visualization-types-for-reports-and-q-and-a.md)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3d4065a6ab0c5a3c8f18350ef6c3a0444febda08
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 475f3ddf646ddc9c5f29409854f93128ce94dd51
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547056"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908825"
 ---
 # <a name="connect-to-microsoft-dynamics-crm-with-power-bi"></a>Opret forbindelse til Microsoft Dynamics CRM med Power BI
 Med Microsoft Dynamics CRM Online til Power BI kan du nemt få adgang til og analysere dine data. Power BI bruger OData-feedet til at oprette en beskrivende model med alle de enheder og -mål, der skal bruges, som f.eks konti, aktiviteter, salgsmuligheder, produkt, kundeemner, brugere og meget mere. Når du har installeret appen, kan du få vist dashboardet og rapporterne i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) og i Power BI-mobilapperne. 
@@ -26,17 +26,16 @@ Denne forbindelse kræver **Microsoft Dynamics CRM Online 2016 eller nyere**. De
 
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
 [!INCLUDE [powerbi-service-apps-get-more-apps](./includes/powerbi-service-apps-get-more-apps.md)]
-
-1. Vælg **Microsoft Dynamics CRM Salgschef** eller **Microsoft Dynamics CRM Service Manager**, og klik på **Opret forbindelse**.
+3. Vælg **Microsoft Dynamics CRM Salgschef** eller **Microsoft Dynamics CRM Service Manager**, og klik på **Opret forbindelse**.
    
    ![](media/service-connect-to-microsoft-dynamics-crm/connect.png)
-2. Angiv den URL-adresse til tjeneste, som er knyttet til din konto.  Dette vil være i formatet `https://company.crm.dynamics.com`. Du kan se flere detaljer [nedenfor](#FindingParams).
+4. Angiv den URL-adresse til tjeneste, som er knyttet til din konto.  Dette vil være i formatet `https://company.crm.dynamics.com`. Du kan se flere detaljer [nedenfor](#FindingParams).
    
    ![](media/service-connect-to-microsoft-dynamics-crm/params.png)
-3. Når du bliver spurgt, kan du angive dine legitimationsoplysninger (dette trin kan springes over, hvis du allerede er logget på med din browser). Til godkendelsesmetode kan du angive **oAuth2** og klikke på **Log på**:
+5. Når du bliver spurgt, kan du angive dine legitimationsoplysninger (dette trin kan springes over, hvis du allerede er logget på med din browser). For godkendelsesmetode skal du angive **oAuth2** og klikke på **Log på**:
    
    ![](media/service-connect-to-microsoft-dynamics-crm/creds.png)
-4. Når du har forbindelse, får du vist et dashboard, der er tilpasset en Salgschef eller Service Manager, og som er udfyldt med dine egne data:
+6. Når du har forbindelse, får du vist et dashboard, der er tilpasset en Salgschef eller Service Manager, og som er udfyldt med dine egne data:
    
    ![](media/service-connect-to-microsoft-dynamics-crm/dashboard.png)
 
@@ -48,7 +47,7 @@ Denne forbindelse kræver **Microsoft Dynamics CRM Online 2016 eller nyere**. De
 ## <a name="whats-included"></a>Følgende er inkluderet
 I afsnittene nedenfor er det detaljeret beskrevet, hvad der er inkluderet for personerne [Salgschef](#Sales) og [Service Manager](#Service).
 
-Bemærk, at data desuden er begrænset på baggrund af den sikkerhedsrolle, der er tildelt Dynamics CRM Online-brugeren.
+Data er begrænset på baggrund af den sikkerhedsrolle, der er tildelt Dynamics CRM Online-brugeren.
 
 Dashboards og rapporter er beregnet til at angive driftsmæssig rapportering om data i nærmeste fremtid med fokus på et team eller en gruppe. Hver forespørgsel er begrænset til at hente højst 100 K poster fra Dynamics CRM Online. Hvis grænsen overskrides på grund af en stor mængde data i din organisation, mislykkes klargøringen, da dataopdatering af Dynamics CRM Online afbrydes. Hvis din konto er for stor, bør du overveje at oprette forbindelse via Power BI Desktop for at oprette en brugerdefineret løsning.
 
@@ -154,7 +153,7 @@ Hvis du ikke har CRM Online 2016 eller nyere, kan du bruge Power BI Desktop til 
 Hvis du får vist fejlmeddelelsen "Data refresh failed as query exceeded the maximum limit of 100000 records" (Opdatering af data mislykkedes, da forespørgslen overskred den maksimale grænse på 100000 poster), kan du overveje at oprette forbindelse direkte fra Power BI Desktop eller at bruge CRM-løsningsskabelonen.
 
 ## <a name="next-steps"></a>Næste trin
-* [Hvad er apps i Power BI?](consumer/end-user-apps.md)
+* [Hvad er apps i Power BI?](service-create-distribute-apps.md)
 * [Hent data i Power BI](service-get-data.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 453b0f5852fefb1008b8013a0c42af4cc1d42f32
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 3f8a5075290620d9d1ed1829008002ff71d25c82
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547631"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908153"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion til organisationsindholdspakker i Power BI
 > [!NOTE]
@@ -33,7 +33,7 @@ I AppSource kan du gennemse eller søge efter indholdspakker, der er publiceret 
 Disse dashboards, rapporter og Excel-projektmapper er skrivebeskyttede, men du kan kopiere og bruge de dashboards og rapporter som udgangspunkt for at oprette din egen personligt tilpassede version af indholdspakken.
 
 > [!NOTE]
-> Organisationsindholdspakker er kun tilgængelige, når du og dine kollegaer har [Power BI Pro](service-free-vs-pro.md).
+> Organisationsindholdspakker er kun tilgængelige, når du og dine kollegaer har [Power BI Pro-licenser](service-features-license-type.md).
 > 
 > 
 
@@ -52,7 +52,7 @@ Livscyklus ser noget nær således ud:
 1. I Power BI Pro opretter Nate en indholdspakke og publicerer den til distributionsgruppen Marketing. Indstillingerne for opdatering nedarves i datasættet og kan kun ændres af Nate.
    
    > [!NOTE]
-   > Hvis Nate opretter indholdspakken inde fra et [apparbejdsområde i Power BI](consumer/end-user-create-apps.md), som han tilhører, så kan andre i Power BI-arbejdsområdet overtage ejerskabet, selvom han forlader arbejdsområdet.
+   > Hvis Nate opretter indholdspakken inde fra et [apparbejdsområde i Power BI](service-create-distribute-apps.md), som han tilhører, så kan andre i Power BI-arbejdsområdet overtage ejerskabet, selvom han forlader arbejdsområdet.
    > 
    > 
 2. Nate sender mails til distributionsgruppen, hvor han fortæller dem om den nye indholdspakke.
@@ -76,7 +76,7 @@ Alle medlemmer af distributionsgruppen har de samme tilladelser til dataene som 
 
 ## <a name="next-steps"></a>Næste trin
 * [Opret og publicer en organisationsindholdspakke](service-organizational-content-pack-create-and-publish.md)
-* [Opret og distribuer en app i Power BI](consumer/end-user-create-apps.md) 
+* [Opret og distribuer en app i Power BI](service-create-distribute-apps.md) 
 * [Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

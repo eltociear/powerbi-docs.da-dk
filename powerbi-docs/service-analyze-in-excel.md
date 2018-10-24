@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 4e2ff9afcccc9bc32d47359fba386fcb0c704457
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: bbffe00507462c3a41ee07cb86c2376a072e5437
+ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39327631"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48271549"
 ---
 # <a name="analyze-in-excel"></a>Analysér i Excel
 Der er tidspunkter, hvor du måske vil bruge Excel til at få vist og interagere med et datasæt, du har i Power BI. Det kan du gøre med **Analysér i Excel**, og du kan få adgang til pivottabel-, diagram- og udsnitsfunktioner i Excel, der er baseret på datasættet, der findes i Power BI.
@@ -26,7 +26,7 @@ Der er et par krav til brugen af **Analysér i Excel**:
 * **Analysér i Excel** understøttes for Microsoft Excel 2010 SP1 og nyere.
 * Pivottabeller i Excel understøtter ikke træk og slip-sammenlægning af numeriske felter. Dit datasæt i Power BI *skal have foruddefinerede målinger*.
 * Nogle organisationer har muligvis gruppepolitikregler, der forhindrer installation af de krævede **Analysér i Excel**-opdateringer i Excel. Hvis du ikke kan installere opdateringerne, skal du kontakte din administrator.
-* Der kræves en Pro-licens til **Analysér i Excel**. Hvis du vil vide mere om forskellene i funktionaliteten mellem en gratis licens og en Pro-licens, skal du se [Power BI (gratis) vs. Power BI Pro](service-free-vs-pro.md). 
+* Der kræves en Pro-licens til **Analysér i Excel**. Hvis du vil vide mere om forskellene i funktionaliteten mellem licenstyper, kan du se [Power BI-funktioner efter licenstype](service-features-license-type.md). 
 
 ## <a name="how-does-it-work"></a>Hvordan fungerer det?
 Når du vælger **Analysér i Excel** i menuen med tre prikker (...), der er tilknyttet et datasæt eller en rapport i **Power BI**, opretter Power BI en .ODC-fil og downloader den fra browseren til din computer.

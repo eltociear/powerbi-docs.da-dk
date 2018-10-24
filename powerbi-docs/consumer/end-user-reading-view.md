@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 04/13/2018
+ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: de7766176f5c25288912cf463dce79f487e7335d
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: f108ab3c924f6ff69bc6ee6aae5ed0539ce3f11d
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565101"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908067"
 ---
 # <a name="reading-view-and-editing-view-in-power-bi-service-reports"></a>Læsevisning og Redigeringsvisning i rapporter i Power BI-tjenesten
 Der er to forskellige tilstande til at få vist og interagere med rapporter i Power BI-tjenesten (ikke Power BI Desktop): Læsevisning og Redigeringsvisning. Læsevisning er tilgængelig for alle brugere og er især designet til *forbrugere* af data, mens Redigeringsvisning kun er tilgængelig for *oprettere* og ejere af rapporter.
@@ -26,11 +26,12 @@ Der er to forskellige tilstande til at få vist og interagere med rapporter i Po
 
  Læsevisning hjælper dig med at udforske og interagere med rapporten – det er en god og sikker måde at lege med og at lære dine data at kende. Læsevisning er udviklet til *forbrugere* af rapporter – de personer, der åbner rapporter fra Apps, eller som har rapporter, der [deles med dem](../service-share-dashboards.md). Læsevisning sikrer, at hver forbruger af en bestemt rapport ser den samme rapport og de samme visualiseringer og eventuelt med anvendelse af de samme filtre.  Forbrugere kan interagere med rapporterne og udskifte de eksisterende filtre (og gemme ændringerne sammen med rapporten), men de kan ikke tilføje nye filtre.
 
->**Bemærk**! I nogle tilfælde kan rapportforbrugeren se forskellige data på grund af sikkerhed på rækkeniveau og datatilladelser.
+> [!NOTE]
+> I nogle tilfælde kan rapportforbrugeren se forskellige data på grund af sikkerhed på rækkeniveau og datatilladelser.
 
 ## <a name="report-editing-view"></a>Rapport i Redigeringsvisning
 
-Redigeringsvisning er kun tilgængelig for de personer, der oprettede rapporten, eller som er [medejere af en rapport som medlem eller administrator af et apparbejdsområde](end-user-create-apps.md).
+Redigeringsvisning er kun tilgængelig for de personer, der oprettede rapporten, eller som er [medejere af en rapport som medlem eller administrator af et apparbejdsområde](../service-create-distribute-apps.md).
 
 Redigeringsvisning er udviklet til *oprettere* af rapporter. Dette er stedet, hvor oprettere importerer og opretter forbindelse til datasæt, udforsker dataene og opretter rapporter og dashboards. I Redigeringsvisning kan *oprettere* gå endnu mere i dybden med deres data ved at tilføje og fjerne felter, ændre visualiseringstype, oprette nye visualiseringer og tilføje og slette visualiseringer og sider fra rapporten. De kan derefter dele de rapporter, de opretter, med kolleger.
 
@@ -53,11 +54,11 @@ Alle rapportfunktionerne i Power BI-tjenesten er ikke er angivet i dette diagram
 | [Få vist forbrugsdata ](../service-usage-metrics.md) | Ja, på rapportcanvassen. | Ja, på rapportlisten (indholdsvisning) |
 | [Få vist relaterede](end-user-related.md) | Ja, på rapportcanvassen. | Ja, på rapportlisten (indholdsvisning) |
 | [Gem en rapport](../service-report-save.md) | Ja, men kun ved hjælp af **Gem som**. | Ja |
-| [Slet en rapport](end-user-delete.md) | Nej  | Ja |
+| [Slet en rapport](../service-delete.md) | Nej  | Ja |
 |**Rapportsider** |
 | [Tilføj eller omdøb en rapportside](../power-bi-report-add-page.md)  | Nej  | Ja  |
 | [Dupliker en rapportside](../power-bi-report-copy-paste-page.md) | Nej  | Ja |
-| [Slet rapportside](end-user-delete.md) | nej | ja |
+| [Slet rapportside](../service-delete.md) | nej | ja |
 |**Arbejd med rapportvisualiseringer**|
 | [Føj visualiseringer til en rapport](../visuals/power-bi-report-add-visualizations-i.md) | Nej  | Ja |
 | [Føj tekstfelter og figurer til en rapport](../power-bi-reports-add-text-and-shapes.md) | Nej  | Ja |
@@ -66,7 +67,7 @@ Alle rapportfunktionerne i Power BI-tjenesten er ikke er angivet i dette diagram
 | [Vis data, der bruges til at oprette visualiseringen](end-user-show-data.md) | Nej  | Ja |
 | [Konfigurer udledning](end-user-drill.md) | Nej  | Ja |
 | [Skift den anvendte visualiseringstype](../visuals/power-bi-report-change-visualization-type.md) | Nej | Ja|
-| [Slet en visualisering, et tekstfelt eller en figur](end-user-delete.md)| Nej | Ja |
+| [Slet en visualisering, et tekstfelt eller en figur](../service-delete.md)| Nej | Ja |
 
 
 ## <a name="navigating-between-editing-view-and-reading-view"></a>Navigering mellem Redigeringsvisning og Læsevisning
@@ -88,7 +89,6 @@ Husk, at kun rapportopretteren og -ejeren(erne) kan åbne en rapport i Redigerin
 
 
 
-### <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>Næste trin
 Der er mange forskellige måder at interagere med en rapport i Læsevisning, foretage udsnit og opdele dataene for at få indsigt og svar på dine spørgsmål.  I det næste emne, [Interager med en rapport i Læsevisning](../service-interact-with-a-report-in-editing-view.md), beskrives nogle af disse udførligt.    
 Tilbage til [rapporter i Power BI](end-user-reports.md)    
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
