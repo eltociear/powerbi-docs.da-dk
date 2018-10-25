@@ -8,20 +8,17 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/01/2018
+ms.date: 10/01/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a165b58eae7309070dfe0bc33adc0a3e47ec7991
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 1479b8fc431428a1b44ccd06bb501071042ada6e
+ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46551945"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48908480"
 ---
 # <a name="recent-content-in-power-bi-service"></a>**Nyligt** indhold i Power BI-tjeneste
-
-
-## <a name="what-is-recent-content"></a>Hvad er nyligt indhold
 Seneste indhold er de seneste elementer, du har fået vist i Power BI-tjenesten, op til maksimalt 20 elementer.  Det omfatter: dashboards, rapporter, apps og projektmapper på tværs af alle dine arbejdsområder.
 
 ![Vinduet Seneste indhold](./media/end-user-recent/power-bi-recent-screen.png)
@@ -39,10 +36,10 @@ Hvis du har mere end fem elementer, du har besøgt for nylig, skal du vælge **S
 
 ![vis alt det nylige indhold](./media/end-user-recent/power-bi-recent-list.png)
 
-Herfra kan du interagere med indholdet, som du kan med de særskilte faner med [**Dashboards**](end-user-dashboards.md), [**Rapporter**](end-user-reports.md) og **Projektmapper**, og på skærmen [**Apps**](end-user-apps.md).
+Herfra kan du interagere med indholdet, som du kan med de særskilte faner [**Dashboards**](end-user-dashboards.md), [**Rapporter**](end-user-reports.md) og **Projektmapper** og på app<!--[**Apps**](end-user-apps.md)-->skærmen.
 
 ## <a name="next-steps"></a>Næste trin
-[Power BI-tjenestens Apps](end-user-apps.md)
+<!--[Power BI service Apps](end-user-apps.md)-->
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

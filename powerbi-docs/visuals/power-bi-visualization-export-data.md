@@ -8,18 +8,18 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/08/2018
+ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d042119a95cb60f930a0535e93b0a50ee9224da3
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: af39332bdc1c9e1529d56f55215b0b32ab86f3e7
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112253"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396796"
 ---
 # <a name="export-data-from-visualizations"></a>Eksportér data fra visualiseringer
-Hvis du gerne vil se de data, der bruges til at oprette en visualisering, kan du få vist de pågældende data i Power BI eller eksportere dataene til Excel som en .xlsx- eller .csv-fil.   
+Hvis du gerne vil se de data, der bruges til at oprette en visualisering, kan du få vist de pågældende data i Power BI eller eksportere dataene til Excel som en .xlsx- eller .csv-fil. Indstillingen for eksport af data kræver en Pro- eller Premium-licens og redigeringstilladelser til datasættet og rapporten. 
 
 Se med, når Will eksporterer dataene fra en af visualiseringerne i hans rapport, gemmer den som en .xlsx-fil og åbner den i Excel. Følg derefter den trinvise vejledning under videoen for at prøve det selv.
 
@@ -92,9 +92,12 @@ Det kan variere, hvad du ser, når du vælger **Underliggende data**. Du skal ev
 
 ### <a name="set-the-export-options"></a>Angiv eksportindstillingerne
 Designere af Power BI-rapporter styrer, hvilke typer eksportindstillinger af data der er tilgængelige for deres forbrugere. Valgmulighederne er:
-- Tillad kun eksport af opsummerede (dette er standard for rapporter) 
-- Tillad eksport af opsummerede og underliggende data  
+- Tillad kun eksport af opsummerede date (dette er standard for nye rapporter) 
+- Tillad eksport af opsummerede og underliggende data (dette var standard før oktober 2018) 
 - Tillad ikke eksport af data  
+
+    > [!IMPORTANT]
+    > Vi anbefaler, at rapportdesignere går tilbage til tidligere rapporter og manuelt nulstiller eksportindstillingen efter behov.
 
 1. Du angiver disse indstillinger ved at starte i Power BI Desktop.
 

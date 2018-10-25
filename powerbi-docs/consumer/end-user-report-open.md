@@ -1,23 +1,23 @@
 ---
-title: Få vist en rapport i Power BI-tjenesten
-description: Åbn en Power BI-rapport i Læsevisning.
+title: Få vist en rapport i Power BI-tjenesten for forbrugere.
+description: I dette emne beskrives, at Power BI-forbrugere og slutbrugere var nødt til at åbne og få vist en Power BI-rapport.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 10/17/2018
 ms.author: mihart
-ms.openlocfilehash: 4d37c1389628078466d8fedb290d928c3f02e7d5
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 15259d472ad315eb0a6274e59ebb30b94f48a302
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112009"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396928"
 ---
-# <a name="view-a-report-in-power-bi-service-apppowerbicom"></a>Få vist en rapport i Power BI-tjenesten (app.powerbi.com)
-En rapport er en eller flere sider med visualiseringer. Rapporter oprettes af Power BI-*rapportdesignere* og [deles med dig direkte](end-user-shared-with-me.md) eller som en del af en [app](end-user-apps.md). 
+# <a name="view-a-report-in-power-bi-service-for-consumers"></a>Få vist en rapport i Power BI-tjenesten for *forbrugere*
+En rapport er en eller flere sider med visualiseringer. Rapporter oprettes af Power BI-*rapportdesignere* og [deles med *forbrugere* direkte](end-user-shared-with-me.md) eller som en del af en [app](end-user-apps.md). 
 
 Der er mange forskellige måder at åbne en rapport på. Her kan du se to af dem: Åbn fra startsiden, og åbn fra et dashboard. 
 
@@ -42,7 +42,7 @@ Power BI-*designere* kan dele en rapport med dig direkte ved at klikke på knapp
    
    ![afsnittet Delt med mig på startsiden](./media/end-user-report-open/power-bi-shared.png)
 
-4. Du skal blot vælge en af rapportkortene for at åbne rapporten.
+4. Du skal blot vælge et af rapport*kortene* for at åbne rapporten.
 
    ![rapportside](./media/end-user-report-open/power-bi-report1.png)
 
@@ -65,10 +65,10 @@ Hvis du har modtaget apps fra kolleger eller fra AppSource, er disse apps tilgæ
 
    ![Startside](./media/end-user-report-open/power-bi-my-apps.png)
 
-8. Vælg en af appsene for at åbne den. Afhængigt af de indstillinger der er angivet af app*designeren*, åbner appen enten et dashboard eller en rapport. Hvis valg af appen:
+8. Vælg en af appsene for at åbne den. Afhængigt af de indstillinger der er angivet af app*designeren*, åbner appen enten et dashboard, en rapport eller en apps indholdsliste. Hvis valg af appen:
     - åbner en rapport, er du klar.
     - åbner et dashboard, skal du se [Åbn en rapport fra et dashboard](#Open-a-report-from-a-dashboard) nedenfor.
-
+    - åbner appens indholdsliste, skal du vælge rapporten under **Rapporter** for at åbne den.
 
 
 ## <a name="open-a-report-from-a-dashboard"></a>Åbn en rapport fra et dashboard
@@ -83,15 +83,15 @@ Rapporter kan åbnes fra et dashboard. De fleste dashboardfelter er *fastgjort* 
     ![rapport, der er åbnet i Læsevisning](./media/end-user-report-open/power-bi-report-new.png)
 
 > [!NOTE]
-> Det er ikke alle felter, der fører til en rapport. Hvis du vælger et felt, der er [oprettet med spørgsmål og svar](../service-dashboard-pin-tile-from-q-and-a.md), så åbnes skærmbilledet spørgsmål og svar. Hvis du vælger et felt, der er [oprettet ved hjælp af dashboardets widget **Tilføj felt**](../service-dashboard-add-widget.md), åbnes guiden **Rediger felt**.  
+> Det er ikke alle felter, der fører til en rapport. Hvis du vælger et felt, der er [oprettet med spørgsmål og svar](end-user-q-and-a.md), så åbnes skærmbilledet spørgsmål og svar. Hvis du vælger et felt, der er [oprettet ved hjælp af dashboardets widget **Tilføj felt**](../service-dashboard-add-widget.md), kan der ske flere ting.  
 
 
 ##  <a name="still-more-ways-to-open-a-report"></a>Der er stadig flere måder at åbne en rapport
 Når du bliver mere fortrolig med at navigere i Power BI-tjenesten, finder du ud af hvilke arbejdsprocesser, der fungerer bedst for dig. Der er et par enkelte andre måder at få adgang til rapporter på:
 - Fra den venstre navigationsrude ved hjælp af **Favoritter** og **Seneste**    
 - Brug [Få vist relaterede](end-user-related.md)    
-- Via en mail, når nogen [deler med dig](../service-share-reports.md), eller du [angiver en advarsel](../service-set-data-alerts.md)    
-- Via [Meddelelsescenter]    (end-user-notification-center.md)    
+- Via en mail, når nogen [deler med dig](../service-share-reports.md), eller du [angiver en advarsel](end-user-alerts.md)    
+- Fra dit [Meddelelsescenter](end-user-notification-center.md)    
 - og meget mere
 
 ## <a name="next-steps"></a>Næste trin

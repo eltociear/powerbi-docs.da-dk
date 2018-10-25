@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 10/11/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 55256d8f8eb47c9a5ec604674041456d2b1d42a1
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 53575f657c2d58f9d6b1908fb42bbb9267c3a3b8
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112711"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396675"
 ---
 # <a name="view-a-dashboard"></a>Få vist et dashboard
 Power BI-forbrugere bruger meget tid på at få vist dashboards. Dashboards er designet til at fremhæve bestemte oplysninger fra de underliggende rapporter og datasæt. Power BI-forbrugerne bruger disse oplysninger til sporing, overvågning, besvarelse af spørgsmål, test og meget mere for at kunne tage datadrevne forretningsbeslutninger.
@@ -26,18 +26,16 @@ Power BI-forbrugere bruger meget tid på at få vist dashboards. Dashboards er d
 Power BI Pro er påkrævet både for at dele et dashboard og få vist et delt dashboard.
 
 ## <a name="open-a-dashboard"></a>Åbn et dashboard
-Dashboards kan åbnes fra mange forskellige steder i Power BI-tjenesten.  Det vigtige er at finde ud af, hvilket indhold der udgør et dashboard (i forhold til f.eks. en rapport). Når du har identificeret et dashboard, er det nemt at åbne det. Du skal blot klikke, så udfylder dashboardet dit Power BI-lærred.
+
 
 
 |              |         |
 |------------|--------------------------------|
-|![dashboardikon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Den nemmeste måde at identificere et dashboard på er ved at kigge efter dette <br>dashboardikon. Når du har fundet indhold med dette ikon, skal du vælge det for at åbne dashboardet. |
+|![dashboardikon](media/end-user-dashboard-open/power-bi-dashboard-icon.png)      |Dashboards kan åbnes fra mange forskellige steder i Power BI-tjenesten. <br> Kig kun efter dette dashboardikon. Når du har identificeret et <br>dashboard, er det nemt at åbne det. Du skal bare vælge det, og så udfylder dashboardet <br>dit Power BI-lærred. |
 |                    |          |
 
 ![dashboardikon](media/end-user-dashboard-open/opendash.gif)
- 
 
-<!--insert aGIF-->
 
 Du kan finde dashboards i alle objektbeholderne på den venstre navigationslinje. 
 - **Start** (prøveversion)
@@ -51,5 +49,3 @@ Du kan finde dashboards i alle objektbeholderne på den venstre navigationslinje
 ## <a name="next-steps"></a>Næste trin
 * Bliv fortrolig med dashboards ved at se præsentationen af et af vores [eksempler på et dashboard](../sample-tutorial-connect-to-the-samples.md).
 * Få mere at vide om [dashboardfelter](end-user-tiles.md), og hvad der sker, når du vælger et.
-* Vil du holde øje med et enkelt dashboardfelt og modtage en mail, når den når en bestemt grænse? [Opret beskeder for felterne](end-user-alerts.md).
-* Stil spørgsmål om dit dashboard. Få mere at vide om, hvordan du bruger [Spørgsmål og svar i Power BI](end-user-q-and-a.md) til at stille et spørgsmål om dine data og få svar i form af en visualisering. 
