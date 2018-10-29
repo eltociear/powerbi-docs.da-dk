@@ -8,19 +8,19 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: quickstart
-ms.date: 10/02/2018
+ms.date: 10/18/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 41bd4148845754d1b714060e538f559b310969d8
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 1d093c9eb39b312e1883b2635de473dac6db5192
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112147"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473859"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Hurtig introduktion – Navigation i Power BI-tjenesten
 
-Nu, hvor du kender de grundlæggende funktioner i Power BI, kan vi kigge på **Power BI-tjenesten**. Som tidligere nævnt kan en bruger i dit team bruge al sin tid i **Power BI Desktop** på at kombinere data og oprette rapporter for andre. Mens du på den anden side kan bruge al din tid i Power BI-tjenesten på at se og interagere med indhold, der er oprettet af andre (**brugs**oplevelse), eller med at hente data og oprette dine egne rapporter og dashboards ( **oprettelses**oplevelse). I denne hurtige introduktion skal du importere eksempeldata og bruge disse data til at få mere at vide om Power BI-tjenesten. 
+Nu, hvor du kender de grundlæggende funktioner i Power BI, kan vi kigge på **Power BI-tjenesten**. Som tidligere nævnt kan en bruger i dit team bruge al sin tid i **Power BI Desktop** på at kombinere data og oprette rapporter for andre. Mens du på den anden side kan bruge al din tid i Power BI-tjenesten på at se og interagere med indhold, der er oprettet af andre (**brugs**oplevelse). I denne hurtige introduktion skal du importere eksempeldata og bruge disse data til at få mere at vide om Power BI-tjenesten. 
  
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -48,9 +48,11 @@ Se Amanda give dig en rundvisning i den nye navigationsoplevelse i Power BI-tjen
 
 
 ## <a name="view-content-dashboards-reports-workbooks-datasets-workspaces-apps"></a>Vis indhold (dashboards, rapporter, projektmapper, datasæt, arbejdsområder, apps)
-Lad os starte med at se på, hvordan det grundlæggende indhold (dashboards, rapporter, datasæt, projektmapper) er organiseret. Indhold vises i forbindelse med et arbejdsområde. På nuværende tidspunkt har du kun ét arbejdsområde, og det kaldes **Mit arbejdsområde**. I Mit arbejdsområde gemmes alt det indhold, som du ejer. Tænk på det som din personlige sandkasse eller arbejdsområde til dit eget indhold. Du kan dele indhold fra Mit arbejdsområde med kolleger. I Mit arbejdsområde er dit indhold organiseret i fire faner: dashboards, rapporter, projektmapper og datasæt.
+Lad os starte med at se på, hvordan det grundlæggende indhold (dashboards, rapporter, datasæt, projektmapper) er organiseret. Indhold vises i forbindelse med et arbejdsområde. På nuværende tidspunkt har du kun ét arbejdsområde, og det kaldes **Mit arbejdsområde**. Forbrugere har normalt ikke brug for eller benytter normalt ikke andre arbejdsområder. I Mit arbejdsområde gemmes alt det indhold, som du ejer. Tænk på det som din personlige sandkasse eller arbejdsområde til dit eget indhold. Mit arbejdsområde er der, hvor eksemplet med den detailhandelsanalyse, du lige har downloadet, er gemt. 
 
-![Skærmbilledet Mit arbejdsområde](./media/end-user-experience/power-bi-my-workspace2.png)
+I Mit arbejdsområde er dit indhold organiseret i fire faner: dashboards, rapporter, projektmapper og datasæt.
+
+![Skærmbilledet Mit arbejdsområde](./media/end-user-experience/power-bi-my-workspace.png)
 
 Vælg et arbejdsområde i venstre navigationsrude, og fanerne for det tilknyttede indhold (dashboards, rapporter, projektmapper, datasæt) udfylder Power BI-lærredet til højre.
 
@@ -58,7 +60,7 @@ Hvis du er ny bruger, kan du kun se ét arbejdsområde – **Mit arbejdsområde*
 
 ![kort video om arbejdsområde](./media/end-user-experience/nav.gif)
 
-Under disse faner (dvs. *indholdsvisninger*) får du vist oplysninger om indhold samt handlinger, som du kan udføre med dette indhold.  Fra fanen Dashboards kan du f.eks. åbne et dashboard, dele, slette, søge, oprette nyt indhold, sortere og meget mere.
+Under disse faner (dvs. *indholdsvisninger*) får du vist oplysninger om indhold samt handlinger, som du kan udføre med dette indhold.  Fra fanen Dashboards kan du f.eks. åbne et dashboard, dele, slette, søge, sortere og meget mere.
 
 ![Fanen Dashboards](./media/end-user-experience/power-bi-dashboard-tab.png)
 
@@ -83,7 +85,7 @@ Med **Favoritter** kan du hurtigt få adgang til det indhold, der er vigtigst fo
    
     Vi har kun én favorit indtil videre. Favoritter kan være dashboards, rapporter eller apps.  
 
-1. En anden måde at markere et dashboard eller en rapport som en favorit er fra fanen **Dashboards** eller **Rapporter** i arbejdsområdet.  Åbn fanen **Rapporter**, og vælg stjerneikonet til venstre for navnet på rapporten.
+1. En anden måde at markere et dashboard eller en rapport som en favorit er fra fanen **Dashboards** eller **Rapporter**.  Åbn fanen **Rapporter**, og vælg stjerneikonet til venstre for navnet på rapporten.
    
    ![markér som favorit](./media/end-user-experience/power-bi-report-favorite.png)
 
@@ -108,7 +110,7 @@ Du kan få flere oplysninger i [Favoritter](end-user-favorite.md)
 
     I pop op-vinduet skal du vælge indhold for at åbne det.
 
-2. Nogle gange ønsker du ikke at åbne det seneste indhold, men at få vist oplysninger eller udføre andre handlinger, f.eks. dele, køre Insights eller eksportere til Excel. I sådanne tilfælde skal du åbne ruden **Seneste** ved at vælge **Seneste** eller ved at klikke på ikonet i venstre navigationsrude. Hvis du havde mere end ét arbejdsområde, ville der være indhold fra alle dine arbejdsområder på denne liste.
+2. Nogle gange ønsker du ikke blot at åbne det seneste indhold, men vil også have vist oplysninger eller udføre andre handlinger, f.eks. få vist Insights eller eksportere til Excel. I sådanne tilfælde skal du åbne ruden **Seneste** ved at vælge **Seneste** eller ved at klikke på ikonet i venstre navigationsrude. Hvis du havde mere end ét arbejdsområde, ville der være indhold fra alle dine arbejdsområder på denne liste.
 
    ![Ruden Seneste](./media/end-user-experience/power-bi-recent.png)
 
@@ -119,13 +121,15 @@ Indholdsvisningen gør det lettere at søge efter, filtrere og sortere dit indho
 
 Da du kun har ét eksempel, er det ikke nødvendigt at søge og sortere.  Men når du har lange lister over dashboards, rapporter, projektmapper og datasæt, er det meget nyttigt at kunne søge og sortere.
 
-![søg efter et dashboard](./media/end-user-experience/power-bi-search-sort.png)
+![søg efter en rapport](./media/end-user-experience/power-bi-search.png)
 
-Du kan også sortere indholdet efter navn eller ejer.  
+Du kan også sortere indholdet efter navn eller ejer. Læg mærke til pil op til højre for **Navn**. Vi sorterer i øjeblikket 83 emner alfabetisk efter navn i stigende rækkefølge. Hvis du vil ændre sorteringsrækkefølgen til faldende, skal du vælge **Navn**. Pil op ændres til en pil ned.
 
-![sortér indhold](./media/end-user-experience/power-bi-sort.png)
+![sortér indhold](./media/end-user-experience/power-bi-sort-new.png)
 
-Hvis du vil vide mere, kan du se [Power BI-navigation: søg, sortér, filtrer](end-user-search-sort.md)
+Ikke alle kolonner kan sorteres. Peg på kolonneoverskrifterne for at finde ud af, hvilke der kan sorteres.
+
+Hvis du vil vide mere, kan du se [Power BI-navigation: søg og sortér](end-user-search-sort.md)
 
 ## <a name="clean-up-resources"></a>Fjern ressourcer
 Når du er færdig med denne hurtige introduktion, kan du slette dashboardet med eksemplet på detailhandelsanalysen samt tilhørende rapport og datasæt, hvis du vil.
@@ -143,4 +147,4 @@ Når du er færdig med denne hurtige introduktion, kan du slette dashboardet med
 ## <a name="next-steps"></a>Næste trin
 
 > [!div class="nextstepaction"]
-> [Læsevisning og redigeringsvisning i Power BI-tjenesten](end-user-reading-view.md)
+> [Læsevisning i Power BI-tjenesten](end-user-reading-view.md)

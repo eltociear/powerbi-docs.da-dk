@@ -8,15 +8,15 @@ featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 10/19/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d23e168f6192629ce9dd945e29691dcf40ae1427
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 66956a38a4f2076a01cf224bbef3a20490915e9b
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565398"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473698"
 ---
 # <a name="featured-dashboards-in-power-bi-service"></a>Udvalgte dashboards i Power BI-tjenesten
 ## <a name="create-a-featured-dashboard"></a>Opret et udvalgt dashboard
@@ -41,7 +41,7 @@ Se, hvordan Amanda opretter et udvalgt dashboard, og følg derefter vejledningen
 
 
 1. Åbn det dashboard, du vil angive som *udvalgt*. 
-2. På den øverste navigationslinje kan du enten se **Angiv som udvalgt** eller blot ikonet for udvalgt ![udvalgt-ikon](./media/end-user-featured/power-bi-featured-icon.png). Vælg en af mulighederne.
+2. På den øverste menulinje kan du enten se **Angiv som udvalgt** eller blot ![ikonet for udvalgt ](./media/end-user-featured/power-bi-featured-icon.png). Vælg en af mulighederne.
    
     ![Angiv som udvalgt ikon](./media/end-user-featured/power-bi-set-as-featured.png)
 3. Bekræft dit valg.

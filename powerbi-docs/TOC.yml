@@ -498,8 +498,6 @@ items:
         href: service-connect-to-prevedere.md
       - name: Project Online
         href: service-connect-to-project-online.md
-      - name: Project Madeira
-        href: service-connect-to-project-madeira.md
       - name: Projectplace
         href: service-connect-to-projectplace.md
       - name: QuickBooks Online
@@ -792,7 +790,7 @@ items:
         href: developer/embed-sample-for-customers.md
       - name: Integrer indhold til din organisation
         href: developer/embed-sample-for-your-organization.md
-      - name: Integrer indhold i dit program til nationale clouds
+      - name: Integrer indhold for nationale cloudmiljøer
         href: developer/embed-sample-for-customers-sovereign-clouds.md
     - name: Begreber
       items:
@@ -1138,7 +1136,7 @@ items:
         href: service-admin-premium-purchase.md
       - name: Administrer Power BI Premium
         href: service-admin-premium-manage.md
-      - name: Rapport om overvågning af kapacitet i Power BI Premium
+      - name: Overvåg Power BI Premium
         href: service-admin-premium-monitor-capacity.md
       - name: Understøttelse af store datasæt
         href: service-premium-large-datasets.md
@@ -1203,9 +1201,9 @@ items:
       href: service-admin-power-bi-security.md
     - name: Power BI til Office 365 er blevet til Power BI
       href: service-admin-o365portal-retired.md
-ms.openlocfilehash: bc509b1cd6717cc3ec38e0b8eb404dc9bb4885d3
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 513c5a62b5436d157b1b22fbf1f06735a589dd3b
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641982"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003058"

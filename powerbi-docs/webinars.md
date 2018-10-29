@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/13/2018
+ms.date: 10/18/2018
 ms.author: maikelson
-ms.openlocfilehash: 8a20e5b9807f9495183ebb1e6bd396e68f02c1a1
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 126baf11492f05228d1e0637e27b5f2caa8390a3
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137549"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473951"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
@@ -22,9 +22,7 @@ Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når
 
 ## <a name="upcoming-webinars"></a>Kommende webinarer
 
-Der er ikke planlagt webinarer endnu. Tjek igen senere for at se flere kommende arrangementer.
-
->[Deltag i kommende webinarer fra Power BI-community'et](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
+>[Kommende webinarer fra Power BI-community'et](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Udvalgte webinarer
 
@@ -34,21 +32,29 @@ Kom i gang med disse populære webinarer, når det passer dig
 <br>ved Miguel Martinez
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/getting-started-with-power-bi-ondemand.html?Is=Website)
 
-**Tip, tricks og værktøjer fra ejerne af PowerBI.** (webinaret er på engelsk)
-<br>ved Mike Carlo og Seth Bauer
-<br>[Se nu](https://www.youtube.com/watch?v=fnj1_e3HXow)
-
 **Få mere at vide om at navigere i et Power BI Dashboard på 20 minutter** (webinaret er på engelsk)
 <br>ved Miguel Martinez
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
+
+**Microsoft kører på Power BI – finansiel planlægning og analyse på den nemme måde**
+<br>ved Cory Hrncirik og Miguel Martinez
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
+
+**Gør dine data i Power BI visuelle: Grundlæggende diagramtyper, og hvordan du bruger dem**
+<br>ved Miranda Li
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
+
+**Power BI, Excel og Office 365: Optimer dine Enterprise-Data**
+<br>ved Olaf Hubel og Miguel Martinez
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
 
 **Ganske enkelt betagende – Tip til bedre visualiseringsdesign** (webinaret er på engelsk)
 <br>ved Miranda Li
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
-**Bedre sammen: Fem fordele Excel-brugere får ved at bruge Power BI**
-<br>ved Carlos Otero og Miguel Martinez
-<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
+**Tip, tricks og værktøjer fra ejerne af PowerBI.** (webinaret er på engelsk)
+<br>ved Mike Carlo og Seth Bauer
+<br>[Se nu](https://www.youtube.com/watch?v=fnj1_e3HXow)
 
 >[Gennemse biblioteket med on-demand-webinarer om Power BI fra vores communityeksperter](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
@@ -61,6 +67,10 @@ Se optagne sessioner når som helst
 **Sådan designer du visuelt imponerende Power BI-rapporter**
 <br>ved Charles Sterling
 <br>[Se nu](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
+
+**Bedre sammen: Fem fordele Excel-brugere får ved at bruge Power BI**
+<br>ved Carlos Otero og Miguel Martinez
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/excel-powerbi-better-together.html?Is=Website)
 
 **Få mere at vide om Power BI Embedded på 20 minutter** (webinaret er på engelsk)
 <br>af Megan Asarrane og Colin Murphy

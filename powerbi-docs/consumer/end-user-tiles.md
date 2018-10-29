@@ -1,21 +1,21 @@
 ---
-title: Dashboardfelter i Power BI-tjeneste
-description: Alt om dashboardfelter i Power BI. Det omfatter felter, der er oprettet fra SQL Server Reporting Services (SSRS).
+title: Dashboardfelter i Power BI-tjenesten til forbrugere
+description: Alt om dashboardfelter i Power BI til forbrugere. Det omfatter felter, der er oprettet fra SQL Server Reporting Services (SSRS).
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/21/2018
+ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f0ff1d9a49e0566119df2c790ad618700c9a9ca3
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: f788da00d50ee7e22da82aa7e57560cfc516b0c7
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565446"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396459"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Dashboardfelter i Power BI
 Dashboards og dashboardfelter er en funktion i Power BI-tjenesten ikke Power BI Desktop. Selvom dashboardfelter ikke kan oprettes eller fastgøres i Power BI - Mobil, [kan de vises og deles](mobile/mobile-tiles-in-the-mobile-apps.md). Og i Power BI - Mobil kan du [føje billeder til dashboardet med iPhone-appen](mobile/mobile-iphone-app-get-started.md).
@@ -23,58 +23,45 @@ Dashboards og dashboardfelter er en funktion i Power BI-tjenesten ikke Power BI 
 ## <a name="dashboard-tiles"></a>Dashboardfelter
 ![Power BI-dashboard](./media/end-user-tiles/power-bi-dashboard.png)
 
-Et felt er et snapshot af dine data, der er fastgjort til dashboardet. Et felt kan oprettes fra en rapport, et datasæt, et dashboard, fra feltet Spørgsmål og svar, Excel og fra SQL Server Reporting Services (SSRS) og mere.  Dette skærmbillede viser mange forskellige felter, der er fastgjort til et dashboard.
+Et felt er et snapshot af dine data, der er fastgjort til dashboardet af en *designer*. Et felt kan oprettes ud fra en rapport, et datasæt, et dashboard, feltet Spørgsmål og svar, Excel og SQL Server Reporting Services (SSRS) med flere.  Dette skærmbillede viser mange forskellige felter, der er fastgjort til et dashboard.
 
-Ud over fastgørelse kan der oprettes separate felter direkte på dashboardet ved hjælp af [Tilføj felt](../service-dashboard-add-widget.md). Separate felter omfatter: tekstfelter, billeder, videoer, streamingdata og webindhold.
+Udover felter, der er fastgjort fra rapporter, kan *designere* føje separate felter direkte til dashboardet ved hjælp af **Tilføj felt**. Separate felter omfatter: tekstfelter, billeder, videoer, streamingdata og webindhold.
 
 Har du brug for hjælp til at forstå de komponenter, der udgør Power BI?  Se [Power BI – Grundlæggende begreber](end-user-basic-concepts.md).
 
-> [!NOTE]
-> Hvis den oprindelige visualisering, der blev brugt til at oprette feltet, ændres, er det ikke tilfældet med feltet.  Hvis du f.eks. har fastgjort et kurvediagram fra en rapport, og du derefter har ændret kurvediagrammet til et søjlediagram, fortsætter dashboardfeltet med at vise et kurvediagram. Dataene opdateres, men visualiseringstypen bliver ikke.
-> 
-> 
-
-## <a name="pin-a-tile-from"></a>Fastgør et felt fra...
-Der er mange forskellige måder at føje (fastgøre) et felt til et dashboard på. Felter kan fastgøres fra:
-
-* [Power BI Spørgsmål og svar](../service-dashboard-pin-tile-from-q-and-a.md)
-* [en rapport](../service-dashboard-pin-tile-from-report.md)
-* [et andet dashboard](../service-pin-tile-to-another-dashboard.md)
-* [Excel-projektmappe på OneDrive for Business](../service-dashboard-pin-tile-from-excel.md)
-* [Power BI Publisher til Excel](../publisher-for-excel.md)
-* [Quick Insights](end-user-insights.md)
-* [SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
-
-Og separate felter til billeder, tekstfelter, videoer, streamingdata og webindhold kan oprettes direkte på dashboardet ved hjælp af [Tilføj felt](../service-dashboard-add-widget.md).
-
-  ![Ikonet Tilføj felt](./media/end-user-tiles/add_widgetnew.png)
 
 ## <a name="interacting-with-tiles-on-a-dashboard"></a>Interager med felter på et dashboard
-### <a name="move-and-resize-a-tile"></a>Flyt og tilpas størrelsen på et felt
-Tag et felt, og [flyt det rundt på dashboardet](../service-dashboard-edit-tile.md). Peg, og vælg håndtaget ![håndtag](./media/end-user-tiles/resize-handle.jpg) for at tilpasse størrelsen på feltet.
 
 ### <a name="hover-over-a-tile-to-change-the-appearance-and-behavior"></a>Peg på et felt for at ændre udseende og funktionalitet
 1. Peg på feltet for at vise ellipsen.
    
     ![feltellipse](./media/end-user-tiles/ellipses_new.png)
-2. Vælg ellipsen for at åbne menuen med felthandlinger.
+2. Vælg ellipsen for at åbne menuen med felthandlinger. De tilgængelige indstillinger varierer afhængigt af visualiseringstypen og den metode, der bruges til at oprette feltet. Her er nogle eksempler på, hvad du kan se.
+
+    - felt, der er oprettet ved hjælp af Spørgsmål og svar
    
-    ![ellipseikon](./media/end-user-tiles/power-bi-tile-menu.png)
+        ![ellipseikon](./media/end-user-tiles/power-bi-menu1.png)
+
+    - felt, der oprettet ud fra en projektmappe
+   
+        ![ellipseikon](./media/end-user-tiles/power-bi-menu2.png)
+
+    - felt, der oprettet ud fra en rapport
+   
+        ![ellipseikon](./media/end-user-tiles/power-bi-menu3.png)
    
     Herfra kan du:
    
    * [Åbne den rapport, der blev brugt til at oprette dette felt ](end-user-reports.md) ![rapportikon](./media/end-user-tiles/chart-icon.jpg)  
    
-   * [Åbne det regneark, der blev brugt til at oprette dette felt ](end-user-reports.md) ![regnearksikon](./media/end-user-tiles/power-bi-open-worksheet.png)  
-     
-    * [Få vist i fokuseringstilstand ](end-user-focus.md) ![fokusikon](./media/end-user-tiles/fullscreen-icon.jpg)  
-     * [Eksportere data, der bruges i feltet](end-user-export-data.md) ![eksportér data-ikon](./media/end-user-tiles/export-icon.png)
-     * [Redigere titel og undertitel, tilføje et link](../service-dashboard-edit-tile.md) ![redigeringsikon](./media/end-user-tiles/pencil-icon.jpg)
+   * [Åbn det spørgsmål under Spørgsmål og svar, som blev brugt til at oprette feltet ](end-user-reports.md) ![ikon for Spørgsmål og svar](./media/end-user-tiles/qna-icon.png)  
+   
+
+   * [Åbn den projektmappe, der blev brugt til at oprette dette felt ](end-user-reports.md) ![regnearksikon](./media/end-user-tiles/power-bi-open-worksheet.png)  
+    * [Få vist feltet i fokustilstand ](end-user-focus.md) ![fokusikon](./media/end-user-tiles/fullscreen-icon.jpg)  
      * [Køre indsigt](end-user-insights.md) ![indsigtsikon](./media/end-user-tiles/power-bi-insights.png)
-     * [Fastgøre feltet til et andet dashboard ](../service-pin-tile-to-another-dashboard.md)
-       ![fastgørelsesikon](./media/end-user-tiles/pin-icon.jpg)
-     * [Fjerne feltet](../service-dashboard-edit-tile.md)
-     ![sletningsikon](./media/end-user-tiles/trash-icon.png)
+    * [Tilføj en kommentar, og start en diskussion](end-user-comment.md) ![kommentarikon](./media/end-user-tiles/comment-icons.png)
+
 3. Vælg et tomt område på canvasset for at lukke handlingsmenuen.
 
 ### <a name="select-click-a-tile"></a>Vælg (klik på) et felt
@@ -91,20 +78,9 @@ Når du vælger et felt, afhænger næste handling af, hvordan feltet blev opret
 * For felter, der er oprettet direkte på dashboardet ved hjælp af **Tilføj felt**, og hvis et brugerdefineret hyperlink er angivet, åbnes denne URL-adresse, når titlen, undertitlen eller feltet vælges.  Ellers medfører det som standard ingen handling at vælge et af disse felter oprettet direkte på dashboardet for et billede, en webkode eller et tekstfelt.
 * Hvis du ikke har tilladelse til rapporten i SSRS, vil valget af et felt oprettet ud fra SSRS producere en side, der angiver, at du ikke har adgang (rsAccessDenied).
 * Hvis du ikke har adgang til netværket, hvor SSRS-serveren er placeret, vil valget af et felt oprettet ud fra SSRS producere en side, der angiver, at serveren ikke blev fundet (HTTP 404). Enheden skal have netværksadgang til rapportserveren for at få vist rapporten.
-* Hvis den oprindelige visualisering, der blev brugt til at oprette feltet, ændres, er det ikke tilfældet med feltet.  Hvis du f.eks. har fastgjort et kurvediagram fra en rapport, og du derefter ændrer kurvediagrammet til et søjlediagram, fortsætter dashboardfeltet med at vise et kurvediagram. Dataene opdateres, men visualiseringstypen bliver ikke.
+* Hvis den oprindelige visualisering, der blev brugt til at oprette feltet, ændres, er det ikke tilfældet med feltet.  Hvis *designeren* f.eks. har fastgjort et kurvediagram fra en rapport og derefter har ændret kurvediagrammet til et søjlediagram, vises der fortsat et kurvediagram på dashboardfeltet. Dataene opdateres, men visualiseringstypen bliver ikke.
 
 ## <a name="next-steps"></a>Næste trin
-[Opret et kort (felt med stort tal) til dit dashboard](../visuals/power-bi-visualization-card.md)
-
-[Dashboards i Power BI](end-user-dashboards.md)  
-
 [Opdatering af data](../refresh-data.md)
 
 [Power BI – Grundlæggende begreber](end-user-basic-concepts.md)
-
-[Eksportér et felt til Power Point](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
-
-[Fastgør Reporting Services-elementer til Power BI-dashboards](https://msdn.microsoft.com/library/mt604784.aspx)
-
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-

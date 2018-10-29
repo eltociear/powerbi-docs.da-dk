@@ -9,12 +9,12 @@ ms.component: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: bfc9b054f9a34757361bf4ab1803aa6904471167
-ms.sourcegitcommit: fb29c4bf7e598f962b453ac68091ca2189d6ae3b
+ms.openlocfilehash: 41f48e886c376f6cc00a76313538e5a6b9ac1c3b
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43380307"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641936"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -40,7 +40,7 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
             - Brugerdefinerede visualiseringer går tilbage til en tidligere version, der er kompatibel med den aktuelle version af server-API'et (hvis tilgængeligt)
 
 - **Power BI Desktop (optimeret til Power BI-rapportserver)**
-    - *Version: 2.61.5192.64 (august 2018), frigivet: 15. august 2018*
+    - *Version: 2.61.5192.641 (august 2018), udgivet: 15. august 2018*
         - Indeholder ændringer, der kræves for at oprette forbindelse til Power BI-rapportserver (august 2018)         
         
 ## <a name="march-2018"></a>Marts 2018

@@ -10,13 +10,13 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 08/16/2018
-ms.openlocfilehash: 111987fda4b0f841c0806dbdc454ac96ddb3c666
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.date: 10/01/2018
+ms.openlocfilehash: b701ce9921d055dfe124c5a419f02900b15a9f62
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908365"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641200"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Integrer med rapportwebdelen i SharePoint Online
 
@@ -87,7 +87,7 @@ Integrering af en rapport i SharePoint Online giver ikke automatisk brugere till
 
 Du kan give adgang til rapporten i Power BI-tjenesten på to måder. Hvis du bruger en Office 365-gruppe til at kompilere dit SharePoint Online-teamwebsted, kan du angive brugeren som medlem af **apparbejdsområdet i Power BI-tjenesten** og på **SharePoint-siden**. Dette sikrer, at brugerne kan få vist indholdet af den pågældende gruppe. Du kan finde flere oplysninger under [Opret og distribuer en app i Power BI](service-create-distribute-apps.md).
 
-Ellers kan du også give brugerne adgang til din rapport ved at gøre følgende.
+Ellers kan du også give brugerne adgang til din rapport ved at benytte nedenstående fremgangsmåde.
 
 1. Føj et felt fra rapporten til et dashboard.
 
@@ -126,7 +126,7 @@ Der er to almindelige årsager til denne meddelelse.
 1. Du har ikke adgang til rapporten.
 2. Rapporten blev slettet.
 
-Du skal kontakte ejeren af SharePoint Online-siden for at få hjælp til at udbedre problemet.
+Kontakt ejeren af SharePoint Online-siden for at få hjælp til at udbedre problemet.
 
 ## <a name="known-issues-and-limitations"></a>Kendte problemer og begrænsninger
 
@@ -148,11 +148,13 @@ Du skal kontakte ejeren af SharePoint Online-siden for at få hjælp til at udbe
 
 * Den klassiske SharePoint-server understøttes ikke med denne webdel.
 
+* [URL-filtre](service-url-filters.md) understøttes ikke med SPO-webdelen.
+
 ## <a name="next-steps"></a>Næste trin
 
 [Tillad eller forbyd, at slutbrugere opretter moderne webstedssider](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
 [Opret og distribuer en app i Power BI](service-create-distribute-apps.md)  
 [Del et dashboard med kolleger og andre](service-share-dashboards.md)  
-[Power BI Premium – hvad er det?](service-premium.md)  
+[Hvad er Power BI Premium?](service-premium.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

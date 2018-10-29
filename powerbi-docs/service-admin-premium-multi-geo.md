@@ -1,21 +1,21 @@
 ---
 title: Multi-Geo-understøttelse af Power BI Premium (prøveversion)
 description: Få mere at vide om, hvordan du kan udrulle indhold til datacentre i andre områder end i Power BI-lejerens lokalområde.
-author: maggiesMSFT
-ms.author: maggies
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/31/2018
+ms.date: 10/21/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 135217acbe6289edb73c39035f58df8babf32566
-ms.sourcegitcommit: 6be2c54f2703f307457360baef32aee16f338067
+ms.openlocfilehash: 1041dcf8c345bfdf8d5a6ae9823d4cecd5c323a6
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43300178"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641660"
 ---
 # <a name="multi-geo-support-for-power-bi-premium-preview"></a>Multi-Geo-understøttelse af Power BI Premium (prøveversion)
 
@@ -40,7 +40,7 @@ Multi-Geo er nu også tilgængelig i Power BI Embedded. Læs mere på [Multi-Geo
 Nye kapaciteter tilgås ved at aktivere Multi-Geo og vælge et andet område end standardområdet på rullelisten.  Hver tilgængelige kapacitet viser området, hvor den aktuelt er placeret, som f.eks. **det vestlige centrale USA**.
 
 ![Kapacitetsstørrelse: Vælg et område. Power BI Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-capacity-size.png)
-  
+
 Når du har oprettet kapacitet, forbliver den i det pågældende område, og alle oprettede arbejdsområder får deres indhold lagret i dette område. Du kan overføre arbejdsområder fra ét område til et andet via rullelisten på indstillingsskærmen for arbejdsområde.
 
 ![Rediger arbejdsområde: Vælg en tilgængelig kapacitet. Power BI Multi-Geo](media/service-admin-premium-multi-geo/power-bi-multi-geo-edit-workspace.png)
@@ -91,11 +91,8 @@ Du kan fjerne arbejdsområder fra Multi-Geo-kapacitet på to måder:
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 
 - Bekræft, at enhver bevægelse, du indleder mellem områder, opfylder alle erhvervs- og myndighedsbestemmelser før igangsætning af dataoverførslen.
-
 - En cachelagret forespørgsel, der er gemt i et fjernområde, forbliver i dette område som inaktive data. Dog kan andre data under overførsel føres frem og tilbage mellem flere geografiske områder.
-
 - Når du flytter data fra ét område til et andet i et Multi-Geo-miljø, kan kildedataene forblive i det område, hvorfra dataene blev flyttet, i op til 30 dage. I denne periode har slutbrugere ikke adgang til dem. De fjernes fra det pågældende område og destrueres i løbet perioden på 30 dage.
-
 - Multi-Geo medfører ikke en forbedring af ydeevnen generelt set. Indlæsning af rapporter og dashboards omfatter stadig anmodninger til det lokale område for metadata.
 
 ## <a name="next-steps"></a>Næste trin

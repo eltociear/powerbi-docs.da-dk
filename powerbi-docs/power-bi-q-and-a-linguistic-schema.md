@@ -1,5 +1,5 @@
 ---
-title: Rediger sprogligt skema for Spørgsmål og svar, og tilføj udtryk
+title: Rediger sprogligt skema for Spørgsmål og svar, og tilføj udtryk – Power BI
 description: Se, hvordan du bruger Power BI Desktop til at redigere det sproglige skema, der bruges af Spørgsmål og svar i Power BI.
 author: willthom
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: mihart
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 10/17/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 08a65e7d312b0f57ec2824431bd00456c06860be
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5d57ab76b97ea6b810169710553597e2e8a5d55f
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36945198"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435413"
 ---
-# <a name="language-modeling-and-the-linguistic-schema"></a>Sproglig udformning og det sproglige skema 
+# <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Rediger sprogligt skema for Spørgsmål og svar, og tilføj udtryk i Power BI Desktop 
 Det er effektivt, når du bruger almindelige udtryk og naturligt sprog til dataforespørgsler. Det er endnu mere effektiv, når dataene svarer, hvilket er, hvad der sker i Spørgsmål og svar i Power BI. Når du stiller et spørgsmål i Spørgsmål og svar i Power BI, forsøger den så vidt muligt at finde det rette svar. 
 
 Men for at opnå endnu bedre interaktioner med Spørgsmål og svar, kan svarene altid forbedres på flere måder – du kan f.eks. redigere det sproglige skema. 
@@ -31,7 +31,7 @@ Du kender sikkert talemåder (hvis ikke, kan du se nedenfor), men udtryk er mås
 
 Disse udtryk findes i mange former og størrelser. Nogle svarer direkte til relationer i datamodellen. Nogle er relateret til kolonner med de tabeller, der indeholder dem. Andre relaterer flere tabeller og kolonner sammen i komplekse relationer. Under alle omstændigheder beskriver de, hvordan ting er relateret til hinanden, i almindelige vendinger.
 
-Sproglige skemaer gemmes i YAML-format. Dette format er relateret til det meget populære JSON-format, men giver en mere fleksibel og læsevenlig syntaks. Sproglige skemaer kan redigeres, eksporteres og importeres til Power BI Desktop.
+Sproglige skemaer gemmes i YAML-format. Dette format er relateret til det populære JSON-format, men giver en mere fleksibel og læsevenlig syntaks. Sproglige skemaer kan redigeres, eksporteres og importeres til Power BI Desktop.
 
 ## <a name="prerequisites"></a>Forudsætninger
 - Hvis du ikke allerede har læst artiklen om, [hvordan du forbedrer din datamodel for Spørgsmål og svar](desktop-qna-in-reports.md), er det måske en god ide at læse den først. Den indeholder flere tip til, hvordan du designer og forbedrer din datamodel, og et vigtigt afsnit om tilføjelse af synonymer.  
@@ -62,23 +62,23 @@ Det anbefales, at du bruger Visual Studio Code til at redigere YAML-filer med sp
 
 
 ## <a name="working-with-linguistic-schemas"></a>Arbejd med sproglige skemaer
-Sproglige skemaer kan redigeres, importeres og eksporteres i [relationsvisningen](desktop-relationship-view.md) i Power BI Desktop. Du kan f.eks. redigere et sprogligt skema ved at [tilføje synonymer i ruden **Synonymer**](desktop-qna-in-reports.md). Det betyder ikke, at YAML-filen skal åbnes.
+Sproglige skemaer kan redigeres, importeres og eksporteres i [relationsvisningen](desktop-relationship-view.md) i Power BI Desktop. Du kan f.eks. redigere et sprogligt skema ved at [tilføje synonymer i ruden **Synonymer**](desktop-qna-in-reports.md). Du behøver ikke at åbne YAML-filen.
 
 ![Ruden Synonymer](media/power-bi-q-and-a-linguistic-schema/power-bi-synonyms-pane.png)
 
 
- Du kan også redigere et sprogligt skema ved at eksportere og redigere YAML-filen direkte.  Når du redigerer en YAML-fil med et sprogligt skema, koder du kolonner i tabellen som forskellige grammatiske elementer og definerer ord, som en kollega måske ville bruge til at stille et spørgsmål. Du angiver f.eks. de kolonner, der er subjekt og objekt for verbet, og du tilføjer alternative ord, som kollegaer kan bruge til at referere til tabeller, kolonner og målinger i modellen. 
+ Du kan også redigere et sprogligt skema ved at eksportere og redigere YAML-filen direkte.  Når du redigerer en YAML-fil med et sprogligt skema, koder du kolonner i tabellen som forskellige grammatiske elementer og definerer ord, som en kollega måske ville bruge til at stille et spørgsmål. Du kan for eksempel angive de kolonner, der er emnet og objektet for verbet. Du kan tilføje alternative ord, som kolleger kan bruge til at referere til tabeller, kolonner og målinger i din model. 
 
 ![eksempel på yaml-fil med sprogligt skema](media/power-bi-q-and-a-linguistic-schema/power-bi-linguistic-schema.png)
 
-Før du kan redigere et sprogligt skema, skal du åbne (eksportere) det fra Desktop. Når du gemmer YAML-filen på den samme placering igen, opfattes det som en import.  Men du kan også importere andre YAML-filer i stedet.  Hvis du f.eks. har et lignende datasæt, og du allerede har lagt en masse arbejde i at tilføje talemåder, identificere relationer, oprette udtryk og oprette synonymer. 
+Før du kan redigere et sprogligt skema, skal du åbne (eksportere) det fra Power BI Desktop. Når du gemmer YAML-filen på den samme placering igen, opfattes det som en import.  Men du kan også importere andre YAML-filer i stedet.  Hvis du f.eks. har et lignende datasæt, og du allerede har lagt en masse arbejde i at tilføje talemåder, identificere relationer, oprette udtryk og oprette synonymer. 
 
 I Spørgsmål og svar bruges alle disse oplysninger sammen med de udvidelser, du opretter, for at give bedre svar, automatisk fuldførelse og en oversigt over spørgsmålene.
 
 
 
 ## <a name="edit-a-linguistic-schema"></a>Rediger et sprogligt skema
-Når du eksporterer dit sproglige skema fra Desktop første gang, oprettes det meste af eller alt indholdet i filen automatisk af Spørgsmål og svar-programmet. Disse oprettede enheder, ord (synonymer), relationer og udtryk er angivet med koden **Tilstand: genereret** og er primært indeholdt i filen til informationsmæssige formål, men kan være et nyttigt udgangspunkt for dine egne ændringer. 
+Når du eksporterer dit sproglige skema fra Power BI Desktop første gang, oprettes det meste af eller alt indholdet i filen automatisk af Spørgsmål og svar-programmet. Disse oprettede enheder, ord (synonymer), relationer og udtryk er angivet med koden **Tilstand: genereret** og er primært indeholdt i filen til informationsmæssige formål, men kan være et nyttigt udgangspunkt for dine egne ændringer. 
 
 > [!NOTE]
 > YAML-eksempelfilen, der er inkluderet i dette selvstudium, indeholder ikke koderne **Tilstand: genereret** eller **Tilstand: slettet**, da den er oprettet specielt til dette selvstudium. Hvis du vil se disse koder, skal du åbne en uredigeret .pbix-fil i relationsvisningen og eksportere det sproglige skema.
@@ -92,31 +92,31 @@ Hvis du importerer den sproglige skemafil til Power BI Desktop igen, ignoreres d
 2. Vælg fanen **Udformning**, og vælg **Eksportér sprogligt skema**.
 3. Vælg Visual Code (eller en anden editor).
 4. Foretag dine ændringer, og gem YAML-filen.
-5. Fra Desktop skal du vælge **Relationsvisning > fanen Udformning > Sprogligt skema > Importér sprogligt skema**.
+5. Fra Power BI Desktop skal du vælge **Relationsvisning > fanen Udformning > Sprogligt skema > Importér sprogligt skema**.
 6. Gå til den placering, hvor du har gemt den redigerede YAML-fil, og vælg den. Du får en meddelelse om, at YAML-filen med det sproglige skema er importeret.
 
     ![Meddelelse om fuldførelse](media/power-bi-q-and-a-linguistic-schema/power-bi-success.png)
 
 ### <a name="add-phrasings-to-the-linguistic-schema"></a>Føj udtryk til det sproglige skema
-Et udtryk er den måde, du taler om (eller "udtrykker") relationerne mellem ting. Hvis du vil beskrive relationen mellem kunder og produkter, kan du f.eks. sige "kunder køber produkter". Eller du kan beskrive relationen mellem kunder og alder ved at sige "alder angiver, hvor gamle kunder er". Eller du kan beskrive relationen mellem sportsudøvere og medaljer ved bare at sige "sportsudøvere vinder medaljer".
+Et udtryk er den måde, du taler om (eller "udtrykker") relationerne mellem ting. Hvis du vil beskrive relationen mellem kunder og produkter, kan du f.eks. sige "kunder køber produkter". Eller du kan beskrive relationen mellem kunder og alder ved at sige "alder angiver, hvor gamle kunder er". Eller du kan beskrive relationen mellem sportsudøvere og medaljer ved at sige "sportsudøvere vinder medaljer".
 
 Disse udtryk findes i mange former og størrelser. Nogle svarer direkte til relationer i den semantiske model. Nogle relaterer kolonner til de tabeller, der indeholder dem. Andre relaterer flere tabeller og kolonner sammen i komplekse relationer. Under alle omstændigheder beskriver de, hvordan ting er relateret til hinanden, i almindelige vendinger.
 
 ## <a name="where-do-phrasings-come-from"></a>Hvor stammer udtryk fra?
-Mange simple udtryk føjes automatisk til det sproglige skema baseret på modellens struktur og visse gæt ud fra kolonnenavne. Eksempel:
+Power BI føjer automatisk mange simple udtryk til det sproglige skema baseret på modellens struktur og visse gæt ud fra kolonnenavne. Eksempel:
 - De fleste kolonner er relateret til den tabel, der indeholder dem, med et enkelt udtryk, f.eks. "produkter har beskrivelser".
 - Modelrelationer resulterer i udtryk for begge retninger i relationen, f.eks. "ordrer har produkter" og "produkter har ordrer".
 - Nogle modelrelationer kan ud fra deres kolonnenavne få et mere komplekst standardudtryk, f.eks. "ordrer leveres til byer".
 
-Dine brugere vil dog tale om ting på mange forskellige måder, som Spørgsmål og svar ikke kan gætte. Her kan du tilføje dine egne udtryk manuelt.
+Dine brugere vil dog tale om ting på mange forskellige måder, som Spørgsmål og svar ikke kan gætte. Du kan tilføje dine egne udtryk manuelt til disse udtryk.
 
 
 ## <a name="why-should-i-add-phrasings"></a>Hvorfor skal jeg tilføje udtryk?
 Den første grund til, at du skal tilføje et udtryk er, at du skal definere et nyt begreb. Hvis du f.eks. vil kunne sige "vis de ældste kunder", skal du først lære Spørgsmål og svar, hvad du mener med "gamle". Det kan du gøre ved at tilføje udtrykket "alder angiver, hvor gamle kunder er".
 
-Den anden årsag til, at du skal tilføje et udtryk er, at du skal undgå tvetydigheder. Det bliver først et problem for søgning efter grundlæggende nøgleord, når ord har mere end én betydning. "flyrejse til Chicago" betyder f.eks. noget helt andet end "flyrejse fra Chicago", men Spørgsmål og svar ved ikke, hvilket udtryk du mener, medmindre du tilføjer udtrykkene "flyrejser er fra afgangsbyer" og "flyrejser er til ankomstbyer". På samme måde kan forskellen mellem "biler, som John har solgt til Mary" og "biler, som John har købt fra Mary" kun forstås, når du har tilføjet udtrykkene "kunder køber biler fra medarbejdere" og "medarbejdere sælger biler til kunder".
+Den anden årsag til, at du skal tilføje et udtryk er, at du skal undgå tvetydigheder. Det bliver først et problem for søgning efter grundlæggende nøgleord, når ord har mere end én betydning. "Flyafgange til Chicago" betyder f.eks. ikke det samme som "flyafgange fra Chicago". Men Spørgsmål og svar ved ikke, hvilket udtryk du mener, medmindre du tilføjer udtrykkene "flyrejser er fra afgangsbyer" og "flyrejser er til ankomstbyer". På samme måde kan forskellen mellem "biler, som John har solgt til Mary" og "biler, som John har købt fra Mary" kun forstås, når du har tilføjet udtrykkene "kunder køber biler fra medarbejdere" og "medarbejdere sælger biler til kunder".
 
-Den sidste grund til, at du skal tilføje et udtryk, er for at forbedre tilpasninger. I stedet for at Spørgsmål og svar skal gentage dit udtryk "Vis kunderne og deres produkter", ville det være mere tydeligt, hvis der blev sagt "Vis kunderne og de produkter, de har købt" eller "Vis kunderne og de produkter, de har gennemset" afhængigt af, hvordan spørgsmålet blev forstået. Hvis der tilføjes brugerdefinerede udtryk, kan tilpasningerne være mere eksplicitte og entydige.
+Den sidste grund til, at du skal tilføje et udtryk, er for at forbedre tilpasninger. I stedet for at Spørgsmål og svar skal gentage dit udtryk "Vis kunderne og deres produkter", ville det være mere tydeligt, hvis der blev sagt "Vis kunderne og de produkter, de har købt" eller "Vis kunderne og de produkter, de har gennemset", afhængigt af hvordan spørgsmålet blev forstået. Hvis der tilføjes brugerdefinerede udtryk, kan tilpasningerne være mere eksplicitte og entydige.
 
 
 ## <a name="what-kinds-of-phrasings-are-there"></a>Hvilke former for udtryk findes der?
@@ -134,7 +134,7 @@ For at forstå de forskellige former for udtryk skal du først huske et par helt
 
 
 ## <a name="attribute-phrasings"></a>Attributudtryk
-Attributudtryk er arbejdshesten i forbindelse med Spørgsmål og svar, og de bruges, når én ting fungerer som attribut for en anden ting. De er simple, enkle og udfører det hårde arbejde, når der ikke er defineret et mere detaljeret udtryk. Attributudtryk beskrives ved hjælp af basisverbet "have" ("produkter har kategorier" og "værtslande har værtsbyer"), og gør det også automatisk muligt at stille spørgsmål ved hjælp af forholdsordene "med", "på" ("kategorier med produkter", "ordrer på produkter") og ejefald ("Johns ordrer"). Attributudtryk bruges i spørgsmål som:
+Attributudtryk er arbejdshesten i forbindelse med Spørgsmål og svar, og de bruges, når én ting fungerer som attribut for en anden ting. De er simple, enkle og udfører det hårde arbejde, når du ikke har defineret et mere detaljeret udtryk. Attributudtryk beskrives ved hjælp af det grundlæggende verbum "har" ("produkter har kategorier" og "værtslande har værtsbyer"). De tillader også automatisk spørgsmål med forholdsordene "af" og "på" ("kategorier for produkter", "ordrer på produkter") og possessive ("Mine ordrer"). Attributudtryk bruges i spørgsmål som:
 - Hvilke kunder har ordrer?
 - Vis værtsbyer efter land i stigende rækkefølge
 - Vis ordrer, der har chai
@@ -142,7 +142,7 @@ Attributudtryk er arbejdshesten i forbindelse med Spørgsmål og svar, og de bru
 - Hvad er kategorien for de enkelte produkter?
 - Tæl Robert Kings ordrer    
 
-Langt de fleste attributudtryk, der skal bruges i din model, genereres automatisk baseret på indhold i tabel/kolonne og modelrelationer, så du behøver som regel ikke at oprette dem selv.
+Power BI opretter de fleste af de attributudtryk, der skal bruges i din model, afhængigt af indhold i tabel/kolonne og modelrelationer. Du behøver normalt ikke at oprette dem selv.
 Her er et eksempel på, hvordan et attributudtryk ser ud i det sproglige skema:
 
 ```json
@@ -153,14 +153,14 @@ product_has_category:
 ```
  
 ## <a name="name-phrasings"></a>Navneudtryk
-Navneudtryk er praktiske, hvis din datamodel har en tabel, der indeholder navngivne objekter – f.eks. sportsudøveres navne og kunders navne. Udtrykket "produktnavne er navne på produkter" er f.eks. nødvendigt for at kunne bruge produktnavne i spørgsmål. Mens et navneudtryk også gør det muligt at bruge "kaldet" som et verbum (f.eks. "Vis kunder kaldet John Smith"), er det vigtigst, når det bruges sammen med andre udtryk, for at tillade, at en navneværdi henviser til en bestemt tabelrække. I "Kunder, der har købt chai" kan Spørgsmål og svar f.eks. se, at værdien "chai" henviser til hele rækken i produkttabellen og ikke kun til en værdi i kolonnen med produktnavn. Navneudtryk bruges i spørgsmål som:    
+Navneudtryk er praktiske, hvis din datamodel har en tabel, der indeholder navngivne objekter – f.eks. sportsudøveres navne og kunders navne. Udtrykket "produktnavne er navne på produkter" er f.eks. nødvendigt for at kunne bruge produktnavne i spørgsmål. Navneudtryk muliggør også "hedder" som et verbum (f.eks. "Oplist kunder, der hedder John Smith"). Det er dog vigtigt, at en navneværdi henviser til en bestemt tabelrække, når udtrykket bruges sammen med andre udtryk. I "Kunder, der har købt chai" kan Spørgsmål og svar f.eks. se, at værdien "chai" henviser til hele rækken i produkttabellen og ikke kun til en værdi i kolonnen med produktnavn. Navneudtryk bruges i spørgsmål som:    
 - Hvilke medarbejdere hedder Robert King
 - Hvem hedder Ernst Handel
 - Fernand De Montignys sport
 - Antal sportsudøvere kaldet Mary
 - Hvad købte Robert King?
 
-Hvis du har brugt en fornuftig navngivningskonvention til navnekolonner i modellen (f.eks. "Navn" eller "Produktnavn" i stedet for "Prdnvn"), genereres de fleste af de navneudtryk, der skal bruges i modellen, automatisk, så du normalt ikke behøver at oprette dem selv.
+Hvis du har brugt en fornuftig navngivningskonvention for kolonnerne i din model (f.eks. "Navn" eller "Produktnavn" i stedet for "Prdna"), opretter Power BI automatisk de fleste af de navneudtryk, der skal bruges i din model, så du normalt ikke behøver at oprette dem selv.
 
 Her er et eksempel på, hvordan et navneudtryk ser ud i det sproglige skema:
 
@@ -203,7 +203,7 @@ Binding: {Table: Products}
 - Vis det mindste land, der har vundet guld i basketball
 - Hvor lang er Rio Grande?
 
-Dette er et eksempel på, hvordan et adjektivudtryk til måling ser ud i det sproglige skema: river_has_length:
+Her er et eksempel på, hvordan et adjektivudtryk til måling ser ud i det sproglige skema: river_has_length:
 
  ```json
 Binding: {Table: Rivers}
@@ -221,7 +221,7 @@ Binding: {Table: Rivers}
 - Vis skatingbegivenheder for kvinder
 - Antal problemer, der er aktive
 
-Dette er et eksempel på, hvordan et dynamisk adjektivudtryk ser ud i det sproglige skema: product_has_color:
+Her er et eksempel på, hvordan et dynamisk adjektivudtryk ser ud i det sproglige skema: product_has_color:
 ```json
 Binding: {Table: Products}
   Phrasings:
@@ -240,7 +240,7 @@ Navneordsudtryk definerer nye navneord, der beskriver undersæt af ting i modell
 - Antal kontraktansatte i Portland
 - Hvor mange mestre 2016
 
-Dette er et eksempel på, hvordan et simpelt navneordsudtryk ser ud i det sproglige skema: employee_is_contractor:
+Her er et eksempel på, hvordan et simpelt navneordsudtryk ser ud i det sproglige skema: employee_is_contractor:
 
 ```json
 Binding: {Table: Employees}
@@ -260,7 +260,7 @@ Binding: {Table: Employees}
 - Hvilke medarbejdere er kaffesælgere?
 - Vis dommerne i 1992
 
-Dette er et eksempel på, hvordan et dynamisk navneordsudtryk ser ud i det sproglige skema: employee_has_job:
+Her er et eksempel på, hvordan et dynamisk navneordsudtryk ser ud i det sproglige skema: employee_has_job:
 
  ```json
 Binding: {Table: Employees}
@@ -278,7 +278,7 @@ Forholdsordsudtryk bruges til at beskrive, hvordan ting i din model er relateret
 - I hvilken by bor John Galt?
 - Hvor mange bøger er skrevet af Stephen Pinker?
  
-Dette er et eksempel på, hvordan et forholdsordsudtryk ser ud i det sproglige skema: customers_are_in_cities:
+Her er et eksempel på, hvordan et forholdsordsudtryk ser ud i det sproglige skema: customers_are_in_cities:
 
  ```json
 Binding: {Table: Customers}
@@ -291,7 +291,7 @@ Binding: {Table: Customers}
 
  
 ## <a name="verb-phrasings"></a>Verbale udtryk
-Verbale udtryk bruges til at beskrive, hvordan ting i din model er relateret via verber. Udtrykket "kunder køber produkter" giver f.eks. en bedre forståelse af spørgsmål som "hvem har købt ost?" og "hvad har John købt?" Verbale udtryk er den mest fleksible af alle former for udtryk og relaterer ofte mere end to ting til hinanden som i "medarbejdere sælger produkter til kunder". Verbale udtryk bruges i spørgsmål som:
+Verbale udtryk bruges til at beskrive, hvordan ting i din model er relateret via verber. Udtrykket "kunder køber produkter" giver f.eks. en bedre forståelse af spørgsmål som "hvem har købt ost?" og "hvad har John købt?" Verbale udtryk er den mest fleksible af alle former for udtryk og relaterer ofte mere end to ting til hinanden som i "medarbejdere sælger produkter til kunder". Verbale udtryk bruges i disse typer spørgsmål:
 
 - Hvem har solgt hvad til hvem?
 - Hvilken medarbejder har solgt chai til John?
