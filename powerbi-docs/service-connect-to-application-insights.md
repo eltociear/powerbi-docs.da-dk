@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 08/10/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 00a42a3ffcc92ca7bc48459635359acb9da8da82
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 34e3524d561fb6f6394d69fed55c1bd29bddf4bd
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548344"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50100582"
 ---
 # <a name="connect-to-application-insights-with-power-bi"></a>Opret forbindelse til Application Insights med Power BI
-Brug Power BI til at oprette effektive brugerdefinerede dashboards fra telemetrien [Application Insights](https://azure.microsoft.com/documentation/articles/app-insights-overview/). Få oplysninger om din apptelemetri på nye måder. Kombiner målepunkter fra flere apps eller komponenttjenester på ét dashboard. Denne første version af Power BI-indholdspakken til Application Insights indeholder widgets til målinger, der er relateret til almindeligt forbrug, f.eks. aktive brugere, sidevisning, sessioner, browser- og operativsystemversion samt geografisk fordeling af brugere på et kort.
+Brug Power BI til at oprette effektive brugerdefinerede dashboards fra telemetrien [Application Insights](/azure/application-insights/app-insights-overview/). Få oplysninger om din apptelemetri på nye måder. Kombiner målepunkter fra flere apps eller komponenttjenester på ét dashboard. Denne første version af Power BI-indholdspakken til Application Insights indeholder widgets til målinger, der er relateret til almindeligt forbrug, f.eks. aktive brugere, sidevisning, sessioner, browser- og operativsystemversion samt geografisk fordeling af brugere på et kort.
 
 Opret forbindelse til [Application Insights-indholdspakken til Power BI](https://app.powerbi.com/getdata/services/application-insights).
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8b0121dbfe633eca9c438dfd272d3aeb56fd59a4
-ms.sourcegitcommit: 001ea0ef95fdd4382602bfdae74c686de7dc3bd8
+ms.openlocfilehash: 30ac2c0620607d680874e423c841c381fc273904
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38921501"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101502"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Datagateway i det lokale miljø – detaljeret
 Det er muligt for brugere i din organisation at få adgang til data i det lokale miljø (som de allerede er godkendt til at få adgang til), men før disse brugere kan oprette forbindelse til datakilden i det lokale miljø, skal der installeres og konfigureres en datagateway i det lokale miljø. Gatewayen muliggør hurtig og sikker kommunikation bag kulisserne mellem en bruger i clouden, til din lokale datakilde og derefter tilbage til clouden.
@@ -52,7 +52,7 @@ En brugers mulighed for at forespørge på og få vist data i modellen bestemmes
 Det er uden for denne artikels omfang at drøfte implementering af roller og dynamisk sikkerhed på rækkeniveau i modeller.  Du kan få yderligere oplysninger i [Roller (SSAS-tabel)](https://msdn.microsoft.com/library/hh213165.aspx) og [Sikkerhedsroller (Analysis Services – flerdimensionelle data)](https://msdn.microsoft.com/library/ms174840.aspx) på MSDN. Og for den mest detaljerede beskrivelse af sikkerhed med tabelmodel kan du downloade og læse hvidbogen Securing the [Tabular BI Semantic Model](https://msdn.microsoft.com/library/jj127437.aspx).
 
 ## <a name="what-about-azure-active-directory"></a>Hvad med Azure Active Directory?
-Microsoft-cloudtjenester bruger [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) til at godkende brugere. Azure Active Directory er lejeren, der indeholder brugernavne og sikkerhedsgrupper. Typisk er den mailadresse, som en bruger logger på med, den samme som kontoens UPN.
+Microsoft-cloudtjenester bruger [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) til at godkende brugere. Azure Active Directory er lejeren, der indeholder brugernavne og sikkerhedsgrupper. Typisk er den mailadresse, som en bruger logger på med, den samme som kontoens UPN.
 
 Hvad er min lokale Active Directory-rolle?
 
@@ -78,7 +78,7 @@ Cloudtjenesterne kender kun til konti på Azure Active Directory. Det har ingen 
 1. Du kan føje konti manuelt til Azure Active Directory.
    
    Du kan oprette en konto på Azure-portalen eller i Office 365-administrationsportalen, og kontonavnet matcher UPN i den lokale Active Directory-konto.
-2. Du kan bruge værktøjet [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) til at synkronisere lokale konti med din Azure Active Directory-lejer.
+2. Du kan bruge værktøjet [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) til at synkronisere lokale konti med din Azure Active Directory-lejer.
    
    Azure AD Connect-værktøjet indeholder indstillinger til katalogsynkronisering og konfiguration af godkendelse, inklusive synkronisering af adgangskodehash, pass-through-godkendelse og samling af identiteter. Hvis du ikke er administrator af lejere eller lokal domæneadministrator, skal du kontakte it-administratoren for at få dette konfigureret.
 
@@ -90,7 +90,7 @@ Ved at bruge Azure AD Connect sikrer du, at UPN'et matcher mellem AAD og dit lok
 > 
 
 ## <a name="now-this-is-where-the-gateway-comes-in"></a>Her kommer så gatewayen ind i billedet
-Gatewayen fungerer som en bro mellem clouden og din lokale server. Dataoverførsler mellem clouden og gatewayen sikres ved hjælp af [Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/). Service Bus opretter en sikker kanal mellem clouden og serveren i det lokale miljø via en udgående forbindelse på gatewayen.  Der er ingen indgående forbindelser, som du skal åbne på firewallen i det lokale miljø.
+Gatewayen fungerer som en bro mellem clouden og din lokale server. Dataoverførsler mellem clouden og gatewayen sikres ved hjælp af [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview). Service Bus opretter en sikker kanal mellem clouden og serveren i det lokale miljø via en udgående forbindelse på gatewayen.  Der er ingen indgående forbindelser, som du skal åbne på firewallen i det lokale miljø.
 
 Hvis du har en Analysis Services-datakilde, skal du installere gatewayen på en computer, der er tilsluttet det samme område/domæne som din Analysis Services-server.
 
@@ -116,8 +116,10 @@ I stedet for at beskrive, hvordan du foretager fejlfinding af problemer med gate
 [!INCLUDE [gateway-onprem-accounts-ports-more](./includes/gateway-onprem-accounts-ports-more.md)]
 
 ## <a name="next-steps"></a>Næste trin
+
 [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
-[Azure Service Bus](https://azure.microsoft.com/documentation/services/service-bus/)  
-[Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)  
+[Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview/)  
+[Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis/)  
+
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

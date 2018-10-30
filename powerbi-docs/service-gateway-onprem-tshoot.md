@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: a8f0360d87fe5bf4e19632a92d8dfe4cf61da16e
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: 2a4fb3bdf4e1041ceb90cde9b6c5f26fcb9a3871
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49474020"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101640"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Fejlfinding af datagatewayen i det lokale miljø
 
@@ -446,7 +446,7 @@ Testresultaterne viser alle de servere, porte og IP-adresser, som din gateway sk
 
 ## <a name="kerberos"></a>Kerberos
 
-Hvis den underliggende databaseserver og datagatewayen i det lokale miljø ikke er konfigureret korrekt til [begrænset Kerberos-delegering](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md), skal du aktivere [detaljeret logføring](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) på gatewayen og, som udgangspunkt for fejlfindingen, foretage undersøgelser baseret på fejlene/sporene i gatewayens logfiler.
+Hvis den underliggende databaseserver og datagatewayen i det lokale miljø ikke er konfigureret korrekt til [begrænset Kerberos-delegering](service-gateway-sso-kerberos.md), skal du aktivere [detaljeret logføring](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) på gatewayen og, som udgangspunkt for fejlfindingen, foretage undersøgelser baseret på fejlene/sporene i gatewayens logfiler.
 
 ### <a name="impersonationlevel"></a>ImpersonationLevel
 

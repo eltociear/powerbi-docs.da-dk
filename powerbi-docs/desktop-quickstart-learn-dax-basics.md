@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 474fe7eee6dbcb296a7eaec6057ecfa56cd3f144
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 433710918cb77ca9ee002673dbe6298f0d2184aa
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417113"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003288"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>Grundlæggende DAX i Power BI Desktop
 Denne artikel henvender sig til nye brugere af Power BI Desktop. Hensigten med den er, at du får en hurtig og nem introduktion til, hvordan du kan bruge DAX (Data Analysis Expressions) til at løse en række grundlæggende problemer med beregning og dataanalyse. Vi vil gennemgå nogle grundlæggende oplysninger, en række opgaver, du kan udføre, og et par test for at se, hvad du har lært. Når du har gennemgået denne artikel, bør du have en god forståelse af de vigtigste grundlæggende begreber i DAX.
@@ -142,7 +142,7 @@ DAX indeholder følgende kategorier af funktioner: [Dato og klokkeslæt](https:/
 * DAX indeholder en lang række funktioner til tidsintelligens. Med disse funktioner kan du definere eller vælge datoområder og udføre dynamiske beregninger baseret på dem. Du kan f.eks. sammenligne beløb på tværs af parallelle perioder.
 * Excel har en meget populær funktion, LOPSLAG. DAX-funktioner bruger ikke en celle eller et celleområde som reference, på samme måde som LOPSLAG gør i Excel. DAX-funktioner bruger en kolonne eller en tabel som reference. I Power BI Desktop skal du huske på, at du arbejder med en relationsdatamodel. Det er faktisk ret let at søge efter værdier i en anden tabel, og i de fleste tilfælde behøver du slet ikke at oprette formler.
   
-  Som du kan se, kan funktionerne i DAX hjælpe dig med at oprette meget effektive formler. Reelt har vi kun lige berørt de grundlæggende elementer i funktioner. Efterhånden som du bliver stadig bedre til DAX, vil du oprette formler, der bruger mange forskellige funktioner. Et af de bedste steder at finde detaljer om hver enkelt DAX-funktion er i [referencen til DAX-funktioner](https://msdn.microsoft.com/library/ee634396.aspx).
+  Som du kan se, kan funktionerne i DAX hjælpe dig med at oprette meget effektive formler. Reelt har vi kun lige berørt de grundlæggende elementer i funktioner. Efterhånden som du bliver stadig bedre til DAX, vil du oprette formler, der bruger mange forskellige funktioner. Et af de bedste steder at finde detaljer om hver enkelt DAX-funktion er i [referencen til DAX-funktioner](https://msdn.microsoft.com/en-us/query-bi/dax/data-analysis-expressions-dax-reference).
 
 ### <a name="functions-quickquiz"></a>Hurtig funktionstest
 1. Hvad refererer en funktion altid til?

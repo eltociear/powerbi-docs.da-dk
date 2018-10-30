@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2536ea34cadae5f348e619d713420787db4c467a
-ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
+ms.openlocfilehash: 75e760c1ad808d05986de46cf2bc427bb078e3ce
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799040"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101272"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Brug brugerdefinerede dataconnectors med datagatewayen i det lokale miljø
 
@@ -56,6 +56,6 @@ Når denne indstilling er aktiveret, kan du se dine brugerdefinerede connectors 
 * [Datagateway i det lokale miljø, detaljeret](service-gateway-onprem-indepth.md)  
 * [Datagateway i det lokale miljø (personlig tilstand)](service-gateway-personal-mode.md)
 * [Konfigurer proxyindstillinger for datagatewayen i det lokale miljø](service-gateway-proxy.md)  
-* [Brug Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø](service-gateway-kerberos-for-sso-pbi-to-on-premises-data.md)  
+* [Brug Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø](service-gateway-sso-kerberos.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

@@ -10,12 +10,12 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 0055994ee883fbdb508dfa304d063bc359dd5beb
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: b66799df83095ce2104196b076482cc232c9bfae
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641614"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101617"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Brug Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø
 
@@ -61,7 +61,7 @@ I en standardinstallation kører gatewayen som en tjenestekonto på en lokal com
 Når **Kerberos-begrænset delegering** skal aktiveres, skal gatewayen køre som en domænekonto, medmindre Azure AD allerede er synkroniseret med dit lokale Active Directory (med Azure AD DirSync/Connect). Hvis du har brug for at skifte kontoen til en domænekonto, kan du se [Skift af gatewayen til en domænekonto](#switching-the-gateway-to-a-domain-account) senere i denne artikel.
 
 > [!NOTE]
-> Hvis Azure AD DirSync/Connect er konfigureret, og brugerkonti er synkroniseret, behøver gatewaytjenesten ikke at udføre lokale AD-opslag på kørselstidspunktet, og du kan bruge den lokale tjeneste-SID (i stedet for at kræve en domænekonto) til gatewaytjenesten. Konfigurationstrinnene i den Kerberos-begrænsede delegering, der er skitseret i denne artikel, er de samme som den pågældende konfiguration (de anvendes simpelthen på basis af tjeneste-SID'en i stedet for domænekonto).
+> Hvis Azure AD DirSync/Connect er konfigureret, og brugerkonti er synkroniseret, behøver gatewaytjenesten ikke at udføre lokale AD-opslag på kørselstidspunktet, og du kan bruge den lokale tjeneste-SID (i stedet for at kræve en domænekonto) til gatewaytjenesten. De trin til konfiguration af Kerberos Constrained Delegation, som er beskrevet i denne artikel, er de samme som den konfiguration (de anvendes blot på gatewayens computerobjekt i Active Directory i stedet for på domænekontoen).
 
 ### <a name="prerequisite-3-have-domain-admin-rights-to-configure-spns-setspn-and-kerberos-constrained-delegation-settings"></a>Forudsætning 3: At have rettigheder som domæneadministrator til at konfigurere indstillinger for SPN'er (SetSPN) og Kerberos-begrænset delegering
 

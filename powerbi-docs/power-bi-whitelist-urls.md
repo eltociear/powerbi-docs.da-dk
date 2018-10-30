@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
-ms.openlocfilehash: cc7b24d273f8e83854f7e316f0c761e710e48160
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 7b57e0d5e303f2b342e2d7750741717b178a8f4e
+ms.sourcegitcommit: f9dd6098ca57d4d6cad34284126d4e58eab1c92c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641959"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50222099"
 ---
 # <a name="power-bi-urls"></a>URL-adresser i Power BI
 
@@ -70,7 +70,7 @@ Hvis du vil hente data fra specifikke datakilder, f.eks. OneDrive, skal du kunne
 | --- | --- | --- | --- |
 | 1 | **Krævet:** AppSource (interne eller eksterne apps i Power BI) | appsource.microsoft.com </br> *.s-microsoft.com  | TCP 443 |
 | 2 | **Krævet:** Log på, og hent data til indholdspakker | *.github.com  | TCP 443 |
-| 3 | **Valgfrit:** Importér filer fra en personlig OneDrive | S [Krævede URL-adresser og porte til OneDrive-webstedet](https://docs.microsoft.com/en-us/onedrive/required-urls-and-ports) | I/T |
+| 3 | **Valgfrit:** Importér filer fra en personlig OneDrive | S [Krævede URL-adresser og porte til OneDrive-webstedet](https://docs.microsoft.com/onedrive/required-urls-and-ports) | I/T |
 | 4 | **Valgfrit:** 60 sekunders video med selvstudie i Power BI | *.doubleclick.net </br> *.ggpht.com </br> *.google.com </br> *.googlevideo.com </br> *.youtube.com </br> *.ytimg.com </br> fonts.gstatic.com | TCP 443 |
 | 5 | **Valgfrit:** PubNub-streamingdatakilder | Se [dokumentationen til PubNub](https://support.pubnub.com/support/solutions/articles/14000043522) | I/T |
 | | | |
@@ -93,7 +93,7 @@ Power BI afhænger af, at bestemte slutpunkter kan se og få adgang til brugerde
 | 1 | **Krævet:** Importér en brugerdefineret visualisering fra Marketplace-brugergrænsefladen eller fra en fil | *.azureedge.net </br> *.blob.core.windows.net </br> store.office.com | TCP 443 |
 | 2 | **Valgfrit:** Bing Maps | bing.com </br> platform.bing.com </br> *.dynamic.tiles.virtualearth.net </br> *.virtualearth.net | TCP 443 |
 | 3 | **Valgfrit:** PowerApps | Se [sektionen Krævede tjenester](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) fra webstedet med systemkrav til PowerApps | I/T |
-| 4 | **Valgfrit:** Visio | Se dokumentationen til Office 365 for at få oplysninger om [Office Online og almindelige URL-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) samt [SharePoint Online og OneDrive for Business](https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | I/T |
+| 4 | **Valgfrit:** Visio | Se dokumentationen til Office 365 for at få oplysninger om [Office Online og almindelige URL-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) samt [SharePoint Online og OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | I/T |
 | | | |
 
 ## <a name="related-external-sites"></a>Relaterede eksterne websteder
