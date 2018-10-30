@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-ms.date: 07/13/2018
-ms.openlocfilehash: 9df612d80d3f322a8391eeb43430942a03850470
-ms.sourcegitcommit: b7b828019b2a2917dfda4d6df0c9cdce70fa68cd
+ms.date: 10/17/2018
+ms.openlocfilehash: 92ed5530ba2e3e72ec4d4e7d7c317993bdf9c04b
+ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48827450"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49396859"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Selvstudium: Integrer en rapport, et dashboard eller et felt i Power BI i et program til din organisation
 
@@ -158,13 +158,13 @@ Følg disse trin for at integrere dit indhold ved hjælp af et eksempelprogram:
 
     !["Brugeren ejer dataene"-programeksempel](media/embed-sample-for-your-organization/embed-sample-for-your-organization-026.png)
 
-2. Åbn filen **Cloud.config** i eksempelprogrammet. Der er et par felter, du skal udfylde for at køre programmet: **ClientID** og **ClientSecret**.
+2. Åbn filen **Cloud.config** i eksempelprogrammet. Der er et par felter, du skal udfylde for at køre programmet: **ApplicationID** og **ApplicationSecret**.
 
     ![Filen Cloud.config](media/embed-sample-for-your-organization/embed-sample-for-your-organization-030.png)
 
-    Udfyld **ClientID** med oplysningerne fra **program-id'et** fra Azure. **ClientID** bruges af programmet til at identificere sig selv over for de brugere, som du anmoder om tilladelser fra.
+    Udfyld oplysningerne om **ApplicationID** med **program-id'et** fra Azure. **ApplicationID** bruges af programmet til at identificere sig selv over for de brugere, som du anmoder om tilladelser fra.
 
-    Hvis du vil hente **ClientID**, skal du følge disse trin:
+    Hvis du vil hente **ApplicationID**, skal du følge disse trin:
 
     1. Log på [Azure Portal](https://portal.azure.com).
 
@@ -174,17 +174,17 @@ Følg disse trin for at integrere dit indhold ved hjælp af et eksempelprogram:
 
         ![Søg efter programregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-    1. Vælg programmet, der skal bruge **ClientID**.
+    1. Vælg programmet, der skal bruge **ApplicationID**.
 
         ![Vælg en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-    1. Du kan se et **program-id**, der er angivet som et GUID. Brug dette **Program-id** som **ClientID** for programmet.
+    1. Du kan se et **program-id**, der er angivet som et GUID. Brug dette **Program-id** som **ApplicationID** for programmet.
 
-        ![Klient-id](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
+        ![ApplicationID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
 
-    1. Udfyld oplysningerne for **ClientSecret** ud fra sektionen **Nøgler** i sektionen **Appregistreringer** i **Azure**.
+    1. Udfyld oplysningerne for **ApplicationSecret** ud fra sektionen **Nøgler** i sektionen **Appregistreringer** i **Azure**.
 
-    1. Hvis du vil hente **ClientSecret**, skal du følge disse trin:
+    1. Hvis du vil hente **ApplicationSecret**, skal du følge disse trin:
 
         1. Log på [Azure Portal](https://portal.azure.com).
 
@@ -194,7 +194,7 @@ Følg disse trin for at integrere dit indhold ved hjælp af et eksempelprogram:
 
             ![Søg efter programregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-        1. Vælg programmet, der skal bruge **ClientSecret**.
+        1. Vælg programmet, der skal bruge **ApplicationSecret**.
 
             ![Vælg en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 

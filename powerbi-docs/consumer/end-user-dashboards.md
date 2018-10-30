@@ -1,5 +1,5 @@
 ---
-title: Hvad er et Power BI-dashboard?
+title: Hvad er et dashboard til brugere af Power BI-tjenesten?
 description: Et dashboard er en vigtig funktion i Power BI-tjenesten.
 author: mihart
 manager: kvivek
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7db5bf514b567cbcaf9dddc5d48006762237a622
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 840f302b1df31736d7fcd1c0766c34963a2f6738
+ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909124"
+ms.lasthandoff: 10/20/2018
+ms.locfileid: "49473902"
 ---
-# <a name="dashboards-in-power-bi-service"></a>Dashboards i Power BI-tjenesten
+# <a name="dashboards-for-power-bi-service-consumers"></a>Dashboards til brugere af Power BI-tjenesten
 
 Et Power BI-***dashboard*** er en enkelt side, der ofte kaldes et canvas, hvor der bruges visualiseringer til at fortælle en historie. Da det er begrænset til én side, indeholder et dashboard, der er godt designet, kun de vigtigste elementer fra historien.
 

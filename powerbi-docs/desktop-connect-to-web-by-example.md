@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 10/23/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f90f2ea4737fc5c98df4d171f8e1e65c2704607d
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: 7de11de4c10df6a76f031f88952671d0e365b498
+ms.sourcegitcommit: 17d68172c73e9a9ff7966ddcedc3f8450584cdec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49952205"
 ---
 # <a name="get-data-from-a-web-page-by-providing-an-example"></a>Hent data fra en webside ved at angive et eksempel
 
@@ -51,6 +51,8 @@ Hvis du vælger **Udtræk tabel med eksempler**, vises der et interaktivt vindue
 I dette eksempel udtrækker vi *Navn* og *Pris* for alle spil på siden. Det kan vi gøre ved at angive et par eksempler fra siden for hver kolonne, som vist på følgende billede. Efterhånden som disse eksempler skrives, kan **Power-forespørgsel** (som er den underliggende teknologi, der udtrækker dataene fra websiden) udtrække data, der passer til mønsteret for eksempelposter, ved hjælp af smarte algoritmer til udtræk af data.
 
 ![data efter eksempel](media/desktop-connect-to-web-by-example/web-by-example_06.png)
+
+> Bemærk! Værdiforslag omfatter kun værdier, der er mindre end eller lig med 128 tegn lange.
 
 Når vi er tilfredse med de data, der er udtrukket fra websiden, vælger vi **OK** for at gå til **Forespørgselseditor**, hvor vi kan anvende flere transformationer eller forme dataene, f.eks. kombinere disse data med andre datakilder.
 

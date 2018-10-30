@@ -8,13 +8,13 @@ ms.topic: tutorial
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
-ms.date: 06/20/2018
-ms.openlocfilehash: 6685b47de6fbcc4ce35d5087c545814e34092d11
-ms.sourcegitcommit: b7b828019b2a2917dfda4d6df0c9cdce70fa68cd
+ms.date: 10/17/2018
+ms.openlocfilehash: d3076090b06cdb60b72c475fd156cc274985ea32
+ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48827427"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49435482"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Selvstudium: Integrer en rapport, et dashboard eller et felt i Power BI i et program til dine kunder
 
@@ -36,7 +36,7 @@ Når du vil i gang, skal du have en **Power BI Pro**-konto (denne konto er din *
 
 ## <a name="set-up-your-embedded-analytics-development-environment"></a>Konfigurer dit integrerede analyseudviklingsmiljø
 
-Før du begynder at integrere rapporter, dashboards eller felter i din app, skal du sikre dig, at du kan integrere i dit miljø. Du skal gøre følgende som en del af konfigurationen.
+Før du begynder at integrere rapporter, dashboards eller felter i dit program, skal du sikre dig, at du kan integrere med Power BI i dit miljø.
 
 Du kan gennemgå [Embedding setup tool](https://aka.ms/embedsetup/AppOwnsData) for hurtigt at komme i gang med og downloade en eksempelapp, hvor du kan se, hvordan du opretter et miljø og integrerer en rapport.
 
@@ -44,13 +44,13 @@ Hvis du vælger at konfigurere miljøet manuelt, kan du dog fortsætte nedenfor.
 
 ### <a name="register-an-application-in-azure-active-directory-azure-ad"></a>Registrer et program i Azure Active Directory (Azure AD)
 
-Du kan registrere dit program i Azure Active Directory, så dit program får adgang til Power BI REST-API'er. Det giver dig mulighed for at oprette et id for dit program og angive tilladelser til Power BI REST-ressourcer.
+Du kan registrere dit program i Azure Active Directory, så dit program får adgang til Power BI REST-API'er. Når du registrerer dit program, får du mulighed for at oprette et id for programmet og angive tilladelser til Power BI REST-ressourcer.
 
 1. Acceptér [vilkårene for Microsoft Power BI API](https://powerbi.microsoft.com/api-terms).
 
 2. Log på [Azure-portalen](https://portal.azure.com).
 
-    ![Azure-hovedportal](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
+    ![Overordnet Azure Portal](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
 3. Vælg **Alle tjenester** i navigationsruden til venstre, vælg **Appregistreringer**, og vælg derefter **Registrering af nyt program**.
 
@@ -63,7 +63,7 @@ Du kan registrere dit program i Azure Active Directory, så dit program får adg
 
 ### <a name="apply-permissions-to-your-application-within-azure-active-directory"></a>Anvend tilladelser til dit program i Azure Active Directory
 
-Du skal aktivere yderligere tilladelser til dit program ud over det, der er angivet på siden til appregistrering. Du skal være logget på via den *hovedkonto*, der er anvendt til integrering, som skal være en global administratorkonto.
+Aktivér yderligere tilladelser til dit program ud over det, der er angivet på siden til appregistrering. Log på vha. den *master*-konto, du bruger til integration. Den overordnede konto skal være en global administratorkonto.
 
 ### <a name="use-the-azure-active-directory-portal"></a>Brug Azure Active Directory-portalen
 
@@ -91,7 +91,7 @@ Du skal aktivere yderligere tilladelser til dit program ud over det, der er angi
 
     ![Vælg PBI-tjenester](media/embed-sample-for-customers/embed-sample-for-customers-014.png)
 
-7. Vælg alle tilladelser under **Delegated Permission** (Delegerede tilladelser). Du skal vælge dem én for én for at kunne gemme dine valg. Vælg **Gem**, når du er færdig.
+7. Vælg alle tilladelser under **Delegated Permission** (Delegerede tilladelser). Vælg **Gem**, når du er færdig.
 
     ![Vælg delegerede tilladelser](media/embed-sample-for-customers/embed-sample-for-customers-015.png)
 
@@ -107,11 +107,11 @@ Du skal aktivere yderligere tilladelser til dit program ud over det, der er angi
 
 Hvis du integrerer rapporter, dashboards eller felter til dine kunder, skal du placere dit indhold i et apparbejdsområde. *Hovedkontoen* skal være administrator af apparbejdsområdet.
 
-1. Start med at oprette arbejdsområdet. Vælg **Arbejdsområder** > **Opret apparbejdsområde**. Det er det sted, hvor du placerer indholdet, som dit program skal have adgang til.
+1. Start med at oprette arbejdsområdet. Vælg **Arbejdsområder** > **Opret apparbejdsområde**. I arbejdsområdet Opret app skal du placere det indhold, programmet skal have adgang til.
 
     ![Opret arbejdsområde](media/embed-sample-for-customers/embed-sample-for-customers-020.png)
 
-2. Giv arbejdsområdet et navn. Hvis det tilsvarende **Arbejdsområde-id** ikke er tilgængeligt, skal du redigere det og angive et entydigt id. Dette skal også være navnet på appen.
+2. Giv arbejdsområdet et navn. Hvis det tilsvarende **Arbejdsområde-id** ikke er tilgængeligt, skal du redigere det og angive et entydigt id.
 
     ![Navngiv arbejdsområde](media/embed-sample-for-customers/embed-sample-for-customers-021.png)
 
@@ -161,31 +161,31 @@ Følg disse trin for at begynde at integrere dit indhold vha. et eksempelprogram
 
     ![Appen ejer data-programeksempel](media/embed-sample-for-customers/embed-sample-for-customers-026.png)
 
-2. Åbn filen Web.config i eksempelprogrammet. Der er 5 felter, du skal udfylde for at køre programmet. **clientId**, **groupId**, **reportId**, **pbiUsername** og **pbiPassword**.
+2. Åbn filen Web.config i eksempelprogrammet. Der er fem felter, du skal udfylde for at køre programmet. **applicationId**, **workspaceId**, **reportId**, **pbiUsername** og **pbiPassword**.
 
     ![Web Config-fil](media/embed-sample-for-customers/embed-sample-for-customers-030.png)
 
-    Udfyld **clientId** med **program-id'et** fra **Azure**. **clientId** bruges af programmet til at identificere sig selv over for de brugere, som du anmoder om tilladelser fra. Hvis du vil hente **clientId**, skal du følge disse trin:
+    Udfyld oplysningerne om **applicationId** med **program-id'et** fra **Azure**. **Program-id'et** bruges af programmet til at identificere sig selv over for de brugere, du anmoder om tilladelser fra. Hvis du vil hente **applicationId**, skal du følge disse trin:
 
     Log på [Azure-portalen](https://portal.azure.com).
 
-    ![Azure-hovedportal](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
+    ![Overordnet Azure Portal](media/embed-sample-for-customers/embed-sample-for-customers-002.png)
 
     Vælg **Alle tjenester** i navigationsruden til venstre, og vælg **Appregistreringer**.
 
     ![Søg efter programregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
-    Vælg det program, du vil hente **clientId** for.
+    Vælg det program, du vil hente **applicationId** for.
 
     ![Vælg app](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
-    Du kan se et **program-id**, der er angivet som GUID. Brug dette **program-id** som **clientId** for programmet.
+    Du kan se et **program-id**, der er angivet som GUID. Brug dette **Program-id** som **applicationId** for programmet.
 
-    ![clientId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
+    ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
-    Udfyld **groupId** med **apparbejdsområde-GUID'et** fra Power BI.
+    Udfyld oplysningerne for **workspaceId** med **apparbejdsområde-GUID'et** fra Power BI.
 
-    ![groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+    ![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
     Udfyld **reportId** med **rapport-GUID'et** fra Power BI.
 
@@ -214,7 +214,7 @@ Selvom trinnene til at integrere dit indhold kan gøres med [Power BI REST API'e
 
 Integration for kunderne i dit program kræver, at du kan få en **adgangstoken** til din masterkonto fra **Azure AD**. Det er påkrævet, at du [får et Azure AD-adgangstoken](get-azuread-access-token.md#access-token-for-non-power-bi-users-app-owns-data) til dit Power BI-program vha, **app owns data**, før du foretager kald til [Power BI REST-API'er](https://docs.microsoft.com/rest/api/power-bi/).
 
-For at oprette Power BI-klienten med dit **adgangstoken** skal du oprette dit Power BI klientobjekt, som gør det muligt for dig at interagere med [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/). Det gør du ved at omgive **AccessToken** med objektet ***Microsoft.Rest.TokenCredentials***.
+Hvis du vil oprette Power BI-klienten med dit **adgangstoken**, skal du oprette dit Power BI klientobjekt, som gør det muligt for dig at interagere med [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/). Det gør du ved at omgive **AccessToken** med objektet ***Microsoft.Rest.TokenCredentials***.
 
 ```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -242,8 +242,8 @@ Her er et kodeeksempel på, hvordan du henter den første rapport fra et givent 
 using Microsoft.PowerBI.Api.V2;
 using Microsoft.PowerBI.Api.V2.Models;
 
-// You need to provide the GroupID where the dashboard resides.
-ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(GroupId);
+// You need to provide the workspaceId where the dashboard resides.
+ODataResponseListReport reports = client.Reports.GetReportsInGroupAsync(workspaceId);
 
 // Get the first report in the group.
 Report report = reports.Value.FirstOrDefault();
@@ -263,7 +263,7 @@ using Microsoft.PowerBI.Api.V2.Models;
 
 // Generate Embed Token.
 var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view");
-EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(GroupId, report.Id, generateTokenRequestParameters);
+EmbedToken tokenResponse = client.Reports.GenerateTokenInGroup(workspaceId, report.Id, generateTokenRequestParameters);
 
 // Generate Embed Configuration.
 var embedConfig = new EmbedConfig()
@@ -339,7 +339,7 @@ Brug tabellen nedenfor til at bestemme, hvilken kapacitet til Power BI Embedded 
 
 | Kapacitetsnode | Kerner i alt<br/>*(Backend + frontend)* | Backendkerner | Frontendkerner | Grænser for DirectQuery/liveforbindelser | Maks. antal sidegengivelser i spidstimen |
 | --- | --- | --- | --- | --- | --- |
-| A1 |1 v-kerne(r) |0,5 kerne(r), 3 GB RAM |0,5 kerner | 5 pr. sekund |1-300 |
+| A1 |1 v-kerne(r) |0,5 kerne(r), 3 GB RAM |0,5 kerne |0-5 pr. sekund |1-300 |
 | A2 |2 v-kerne(r) |1 kerne(r), 5 GB RAM |1 kern(e) | 10 pr. sekund |301-600 |
 | A3 |4 v-kerne(r) |2 kerne(r), 10 GB RAM |2 kerne(r) | 15 pr. sekund |601-1.200 |
 | A4 |8 v-kerne(r) |4 kerne(r), 25 GB RAM |4 kerne(r) |30 pr. sekund |1.201-2.400 |
@@ -364,7 +364,7 @@ Når du opretter en dedikeret kapacitet, kan du tildele dit apparbejdsområde ti
 
     ![Tildel dedikeret kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
-3. Efter du har valgt **Gem**, burde du se en **rombe** ud for navnet på apparbejdsområdet.
+3. Når du har valgt **Gem**, kan du se en **rombe** ud for navnet på apparbejdsområdet.
 
     ![arbejdsområde knyttet til en kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
 

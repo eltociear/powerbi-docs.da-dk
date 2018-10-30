@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/13/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: 88942d4bf304af7a43df3a0f4864b537182cc84c
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: 62d6a274b7cfb784f4f61b0973bad22ea6194698
+ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48272396"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49641292"
 ---
 # <a name="power-bi-free-vs-pro"></a>Power BI (gratis) vs. Power BI Pro
 
@@ -44,7 +44,7 @@ Her er en liste over understøttede funktioner efter brugertype.
 
 ## <a name="next-steps"></a>Næste trin
 
-Hvis du vil vide mere om Power BI Premium, kan du se [Power BI-Premium – hvad er det?](service-premium.md).
+Hvis du vil vide mere om Power BI Premium, kan du se under [Hvad er Power BI-Premium?](service-premium.md).
 
 For at komme i gang med Power BI gennem tilmelding, skal du se [Tilmelding til Power BI som enkeltperson](service-self-service-signup-for-power-bi.md).
 
