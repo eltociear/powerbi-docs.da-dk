@@ -7,20 +7,38 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/18/2018
+ms.date: 10/23/2018
 ms.author: maikelson
-ms.openlocfilehash: 126baf11492f05228d1e0637e27b5f2caa8390a3
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: d656a27717d22d13884bcbfa69fab4ba2babaf12
+ms.sourcegitcommit: 17d68172c73e9a9ff7966ddcedc3f8450584cdec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473951"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49952228"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
 Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når du vil.
 
 ## <a name="upcoming-webinars"></a>Kommende webinarer
+
+**Power BI: Udfør analyse korrekt**
+<br>af Gohul Shanmugalingam
+<br>*Den 8. november 2018 – kl. 13:00-14:00 EST*
+
+Hør efter alle analyse- og Excel-visionære: Få mere at vide om, hvordan du laver flotte rapporter, som folk gerne vil bruge, deler interessant indsigt, der er let at forstå, og nedbryder siloer med komplekse data på en sikker måde, så de bliver tilgængelige.
+
+Vi deler nye produktinnovationer og vores vision om moderne virksomheds-BI og selvbetjenings-BI, hvilket gør det muligt for din organisation at skabe en datadreven kultur.
+
+[Tilmeld dig, og se med den 8. november](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
+
+**Styrk dine færdigheder inden for datamodellering med Power BI**
+<br>ved Kasper de Jonge
+<br>*Den 20. november 2018 – kl. 11:00-12:00 PST*
+
+Tilmeld dig dette webinar for at blive endnu dygtigere til modellering med Power BI. Få mere at vide om analyse i hukommelsen, strategier for at oprette og administrere datarelationer i Power BI, og hvordan du bruger DAX-filtre (Data Analysis Expressions). Se, hvordan du overvinden enhver modelleringsudfordring med Power BI eller Azure Analysis Services.
+
+[Tilmeld dig, og se med den 20. november](https://info.microsoft.com/Strengthen-Your-Data-Modeling-Skills-with-PowerBI-Registration.html?Is=Website)
 
 >[Kommende webinarer fra Power BI-community'et](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
