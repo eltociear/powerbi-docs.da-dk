@@ -7,34 +7,35 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/28/2017
+ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 2f10ead5d08efa12cae05aeb6f2e3d3068636f77
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 02829adb386cc746715a34300a42aba616dc2d60
+ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396905"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50252485"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administrationsportal
 
-Administrationsportalen giver adgang til lejeradministration af Power BI i virksomheden. Den indeholder elementer som f.eks. forbrugsdata, adgang til Office 365 Administration og indstillinger.
+På administrationsportalen kan du administrere en Power BI-*lejer* for din organisation. Portalen indeholder forskellige elementer, f.eks. forbrugsdata, adgang til Office 365 Administration og indstillinger.
 
-Lejeradministration af Power BI til din virksomhed foregår gennem Power BI-administrationsportalen. Administrationsportalen kan tilgås af alle brugere, som er globale administratorer i Office 365, eller som er blevet tildelt Power BI-tjenesteadministratorrollen. Du kan finde flere oplysninger om Power BI-tjenesteadministratorrollen under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md).
-
-Alle brugere kan se **Administrationsportal** under tandhjulsikonet. Brugere, der ikke er administratorer, kan kun se sektionen **Premium-indstillinger**, og de kan kun se de kapaciteter, som de har rettighederne til at administrere.
+Hele administrationsportalen kan tilgås af alle brugere, som er globale administratorer i Office 365, eller som er blevet tildelt rollen Power BI-tjenesteadministrator. Hvis du ikke har en af disse roller, kan du kun se **Kapacitetsindstillinger** på portalen. Du kan finde flere oplysninger om Power BI-tjenesteadministratorrollen under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md).
 
 ## <a name="how-to-get-to-the-admin-portal"></a>Sådan finder du vej til administrationsportalen
 
 Din konto skal være markeret som en **Global administrator** i Office 365 eller Azure Active Directory, eller skal være tildelt Power BI-tjenesteadministratorrollen for at få adgang til Power BI-administrationsportalen. Du kan finde flere oplysninger om Power BI-tjenesteadministratorrollen under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md). Benyt følgende fremgangsmåde for at tilgå Power BI-administrationsportalen.
 
 1. Vælg tandhjulet Indstillinger i øverste højre hjørne af Power BI-tjenesten.
-2. Vælg **Administrationsportal**.
 
-![](media/service-admin-portal/powerbi-admin-settings.png)
+1. Vælg **Administrationsportal**.
 
-Der er seks faner på portalen. Disse er beskrevet nedenfor.
+    ![Indstillinger på administrationsportalen](media/service-admin-portal/powerbi-admin-settings.png)
+
+Der er syv faner på portalen. Resten af denne artikel indeholder oplysninger om hver af disse faner.
+
+![Navigation på administrationsportalen](media/service-admin-portal/powerbi-admin-landing-page.png)
 
 * [Forbrugsdata](#usage-metrics)
 * [Brugere](#users)
@@ -42,95 +43,91 @@ Der er seks faner på portalen. Disse er beskrevet nedenfor.
 * [Lejerindstillinger](#tenant-settings)
 * [Premium-indstillinger](#premium-settings)
 * [Integrer koder](#embed-codes)
-* [Visualiseringer til virksomheder](#Organization-visuals)
-
-![](media/service-admin-portal/powerbi-admin-landing-page.png)
+* [Visualiseringer til virksomheder](#organization-visuals)
 
 ## <a name="usage-metrics"></a>Forbrugsdata
-Den første fane i administrationsportalen er **Forbrugsdata**. Rapporten over forbrugsdataene giver dig mulighed for at overvåge forbruget i Power BI i virksomheden. Den giver dig også mulighed for at se, hvilke brugere og grupper, der er mest aktive i Power BI i virksomheden.
+
+Med **Forbrugsdata** kan du overvåge Power BI-forbruget i organisationen. Den giver dig også mulighed for at se, hvilke brugere og grupper, der er mest aktive i Power BI i virksomheden.
 
 > [!NOTE]
 > Første gang du tilgår dashboard'et, eller når du besøger det igen efter en lang periode uden at åbne dashboard'et, så får du sandsynligvis vist indlæsningsskærmen, mens vi indlæser dashboard'et.
 
-Når dashboardet er indlæst, får du vist to sektioner med felter. Det første afsnit indeholder forbrugsdata for individuelle brugere, og det andet afsnit har lignende oplysninger for grupper i din virksomhed.
+Når dashboardet er indlæst, får du vist to afsnit med felter. Det første afsnit indeholder forbrugsdata for individuelle brugere, og det andet afsnit har lignende oplysninger for grupper i din organisation.
 
 Nedenfor er en oversigt over indholdet i hvert felt:
 
 * Specifik optælling af alle dashboards, rapporter og datasæt i brugerarbejdsområdet
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
+    ![Særskilt optælling af dashboards, rapporter og datasæt](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
 * Mest brugte dashboard efter antallet af brugere, der har adgang til det. Hvis du f.eks. har et dashboard, som du har delt med tre brugere, og du også har føjet det til en indholdspakke med to forskellige brugere tilsluttet, så er antallet 6 (1 + 3 + 2)
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
+    ![Mest anvendte dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
 * Det mest populære indhold, som brugere har oprettet forbindelse til. Dette vil være alt vilkårligt indhold, som brugere kan tilgå gennem Hent data-processen, dvs. Saas-indholdspakker, organisatoriske indholdspakker, filer eller databaser.
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
+    ![Mest anvendte pakker](media/service-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
 
 * En visning af dine vigtigste brugere baseret på, hvor mange dashboards de har, både dashboards de selv har oprettet, og dashboards der er delt med dem.
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-dashboards.png)
+    ![Topbrugere – dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-dashboards.png)
 
 * En visning af dine vigtigste brugere baseret på, hvor mange rapporter de har
   
-    ![](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
+    ![Topbrugere – rapporter](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
 
-Det andet afsnit viser den samme type oplysninger, men baseret på grupper. Her kan du se, hvilke grupper i virksomheden der er mest aktive, og hvilken slags oplysninger de bruger.
+Det andet afsnit viser den samme type oplysninger, men baseret på grupper. Her kan du se, hvilke grupper i organisationen der er mest aktive, og hvilken slags indhold de bruger.
 
-Med disse oplysninger kan du få reelt indsigt i, hvordan personer bruger Power BI på tværs af din virksomhed, og du kan holde styr på, hvilke af de pågældende brugere og grupper, der er meget aktive i din virksomhed.
+Med disse oplysninger kan du få reel indsigt i, hvordan personer bruger Power BI på tværs af organisationen, og du kan holde styr på, hvilke af de pågældende brugere og grupper der er meget aktive i organisationen.
 
 ## <a name="users"></a>Brugere
 
-Den anden fane i administrationsportalen er **Administrer brugere**. Brugeradministrationen i Power BI håndteres i Office 365 Administration, så dette afsnit giver dig hurtig adgang til området for administration af brugere, administratorer og grupper i Office 365.
+Du kan administrere Power BI-brugere, -grupper og -administratorer i Office 365 Administration. Fanen **Brugere** indeholder et link til Administration for din lejer.
 
-![](media/service-admin-portal/powerbi-admin-manage-users.png)
-
-Når du klikker på **Gå til O365 Administration**, så føres du direkte til Office 365 Administration-landingssiden til administration af brugerne af din lejer.
-
-![](media/service-admin-portal/powerbi-admin-o365-admin-center.png)
+![Gå til O365 Administration](media/service-admin-portal/powerbi-admin-manage-users.png)
 
 ## <a name="audit-logs"></a>Overvågningslogge
 
-Den tredje fane i administrationsportalen er **Overvågningslogge**. Loggene er placeret inden for Office 365 Security & Compliance Center. Dette afsnit giver dig hurtig adgang til dette område inden for Office 365.
-
-Du kan finde flere oplysninger om overvågningslogge under [Overvågning af Power BI i din virksomhed](service-admin-auditing.md)
+Du kan administrere Power BI-overvågningslogge i Office 365 Security & Compliance Center. Fanen **Overvågningslogge** indeholder et link til Security & Compliance Center for din lejer. [Få mere at vide](service-admin-auditing.md)
 
 ## <a name="tenant-settings"></a>Lejerindstillinger
 
-Den tredje fane i administrationsportalen er **Lejerindstillinger**. Lejerindstillingerne giver dig yderligere kontrol over, hvilke funktioner der gøres tilgængelige i din virksomhed. Hvis du har bekymringer omkring følsomme data, kan det være, at nogle af vores funktioner ikke er passende for din virksomhed, eller du vil måske kun have, at en given funktion er tilgængelig for en bestemt gruppe. Hvis det er tilfældet, kan du slå funktionen fra i din lejer.
+Fanen **Lejerindstillinger** giver dig detaljeret kontrol over de funktioner, der er til rådighed for din organisation. Hvis du har bekymringer om følsomme data, kan det være, at nogle af vores funktioner ikke er passende for din organisation, eller du vil måske kun have, at en bestemt funktion er tilgængelig for en bestemt gruppe.
 
-![](media/service-admin-portal/powerbi-admin-tenant-settings.png)
+På følgende billede ses de første to afsnit på fanen **Lejerindstillinger**.
+
+![Lejerindstillinger](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
 > [!NOTE]
-> Det kan tage op til ti minutter for indstillingen at træde i kraft for alle i din lejer.
+> Det kan tage op til 10 minutter, før indstillingen træder i kraft for alle i din lejer.
 
 Indstillingerne kan have tre tilstande:
 
-* **Deaktiveret for hele organisationen**: Du kan deaktivere en funktion, så brugere ikke kan tilgå den.
+* **Deaktiveret for hele organisationen**: Ingen i organisationen kan bruge denne funktion.
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
+    ![Indstilling deaktiveret for alle](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-* **Aktiveret for hele organisationen**: Du kan aktivere en funktion for hele virksomheden, hvorved alle brugere har adgang til den pågældende funktion.
+* **Aktiveret for hele organisationen**: Alle i organisationen kan bruge denne funktion.
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
+    ![Indstilling aktiveret for alle](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-* **Aktiveret for en del af organisationen**: Du kan også aktivere en funktion delvist for din virksomhed. Dette kan foregå på et par forskellige måder. Du kan aktivere den for hele din virksomhed med undtagelse af en bestemt gruppe brugere.
+* **Aktiveret for en del af organisationen**: Bestemte brugere eller grupper i organisationen kan bruge denne funktion.
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
+    Du kan aktivere funktionen for hele organisationen med undtagelse af en bestemt gruppe brugere.
 
-    Du kan også aktivere funktionen udelukkende for en bestemt gruppe af brugere og også deaktivere den for en gruppe af brugere. Dette vil sørge for, at visse brugere ikke har adgang til funktionen, selvom de er medlemmer af den tilladte gruppe.
+    ![Indstilling aktiveret for en delmængde](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except.png)
 
-    ![](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
+    Du kan også aktivere funktionen udelukkende for en bestemt gruppe af brugere og deaktivere den for nogle brugere. Med denne tilgang sikrer du, at visse brugere ikke har adgang til funktionen, selvom de er medlemmer af den tilladte gruppe.
+
+    ![Indstilling aktiveret med undtagelse](media/service-admin-portal/powerbi-admin-tenant-settings-enabled-except2.png)
 
 De næste par afsnit giver et overblik over de forskellige typer af lejerindstillinger.
 
 ## <a name="workspace-settings"></a>Indstillinger for arbejdsområde
 
 ### <a name="create-workspaces-preview"></a>Opret arbejdsområder (prøveversion)
-Brugere i organisationen kan oprette apparbejdsområder til at samarbejde om dashboards, rapporter og andet indhold.
 
-Du kan finde flere oplysninger under [Opret de nye arbejdsområder](service-create-the-new-workspaces.md).
+Brugere i organisationen kan oprette apparbejdsområder til at samarbejde om dashboards, rapporter og andet indhold. [Få mere at vide](service-create-the-new-workspaces.md)
 
 ## <a name="export-and-sharing-settings"></a>Eksport- og delingsindstillinger
 
@@ -138,19 +135,21 @@ Du kan finde flere oplysninger under [Opret de nye arbejdsområder](service-crea
 
 Brugere i organisationen kan dele dashboards med brugere uden for organisationen.
 
-![](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
+![Indstilling for eksterne brugere](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
-Her er den meddelelse, som vises, når du deler med en ekstern bruger.
+På følgende billede ses den meddelelse, som vises, når du deler med en ekstern bruger.
 
-![](media/service-admin-portal/powerbi-admin-sharing-external.png)
+![Deling med ekstern bruger](media/service-admin-portal/powerbi-admin-sharing-external.png)
 
 ### <a name="publish-to-web"></a>Publicer på internettet
 
 Brugere i virksomheden kan publicere rapporter på internettet. [Få mere at vide](service-publish-to-web.md)
 
-![](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+På følgende billede ses menuen **Filer** for en rapport, når indstillingen **Publicer på internettet** er aktiveret.
 
-Brugere kan se forskellige indstillinger på brugergrænsefladen afhængigt af indstillingen Publicer på internettet.
+![Indstillingen Publicer på internettet](media/service-admin-portal/powerbi-admin-publish-to-web.png)
+
+Brugere kan se forskellige indstillinger på brugergrænsefladen afhængigt af indstillingen **Publicer på internettet**.
 
 |Udvalgt |Aktiveret for hele organisationen |Deaktiveret for hele organisationen |Specifikke sikkerhedsgrupper   |
 |---------|---------|---------|---------|
@@ -163,7 +162,9 @@ Brugere kan se forskellige indstillinger på brugergrænsefladen afhængigt af i
 
 Brugere i virksomheden kan eksportere data fra et felt eller visualisering. [Få mere at vide](visuals/power-bi-visualization-export-data.md)
 
-![](media/service-admin-portal/powerbi-admin-export-data.png)
+På følgende billede ses indstillingen for at eksportere data fra et felt.
+
+![Eksportér data fra et felt](media/service-admin-portal/powerbi-admin-export-data.png)
 
 > [!NOTE]
 > Hvis **Eksportér data** deaktiveres, kan brugere ikke anvende funktionen **Analysér i Excel** og heller ikke bruge Power BI-tjenestens direkte forbindelse.
@@ -172,7 +173,9 @@ Brugere i virksomheden kan eksportere data fra et felt eller visualisering. [Få
 
 Brugere i virksomheden kan eksportere Power BI-rapporter som PowerPoint-filer. [Få mere at vide](consumer/end-user-powerpoint.md)
 
-![](media/service-admin-portal/powerbi-admin-powerpoint.png)
+På følgende billede ses menuen **Filer** for en rapport, når indstillingen **Eksportér rapporter som PowerPoint-præsentationer** er aktiveret.
+
+![Eksportér rapporter som PowerPoint-præsentationer](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
 ### <a name="print-dashboards-and-reports"></a>Udskriv dashboards og rapporter
 
@@ -358,7 +361,7 @@ Vigtigt! Du kan ikke fortryde en sletning. Når visualiseringen er slettet, hold
 
 ### <a name="disable-a-custom-visual-in-the-list"></a>Deaktiver en brugerdefineret visualisering på listen
 
-Hvis du vil deaktivere visualiseringen fra organisationens lager, skal du vælge tandhjulsikonet. I sektionen **Adgang** skal du deaktivere den brugerdefinerede visualisering.
+Hvis du vil deaktivere visualiseringen fra organisationens lager, skal du vælge tandhjulsikonet. I afsnittet **Adgang** skal du deaktivere den brugerdefinerede visualisering.
 
 Når du har deaktiveret visualiseringen, gengives visualiseringen ikke i eksisterende rapporter, og fejlmeddelelsen nedenfor vises.
 

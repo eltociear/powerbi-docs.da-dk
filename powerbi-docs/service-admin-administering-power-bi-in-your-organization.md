@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: overview
-ms.date: 05/01/2018
+ms.date: 10/29/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 1f3c871d4ac47a110f2085ef1bdccb166fc00643
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: fcc7563ef1c1196a7e00e107bb1dadd6b10075d3
+ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944301"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50252462"
 ---
 # <a name="what-is-power-bi-administration"></a>Hvad er Power BI-administration?
 
@@ -30,7 +30,6 @@ Power BI er udviklet til selvbetjeningsportalen for business intelligence, og ad
 - Opnå udvidet indførelse af og større afkastningsgrad for en installation af Power BI
 
 Jobbet går ud på at sikre, at brugerne er produktive, og at sørge for sikkerhed og overholdelse af love og bestemmelser. Ansvarsområder kan omfatte hjælp og support og i mange tilfælde at hjælpe brugere i virksomheden med at gøre de rigtige ting.
-
 
 ## <a name="administrator-roles-related-to-power-bi"></a>Administratorroller, der er relateret til Power BI
 
@@ -50,7 +49,6 @@ Power BI Service Administrators har adgang til Power BI-administrationsportalen,
 
 Rollen Power BI Service Administrator gør det ikke muligt at tildele licenser til brugere eller at se overvågningslogge i Office 365. Opgaven i forbindelse med administration af Power BI kan derfor i øjeblikket ikke udføres af brugere, der kun er medlemmer af rollen Power BI Service Administrator.
 
-
 ## <a name="administrative-tasks"></a>Administrative opgaver
 
 Administratorer udfører mange opgaver for at yde support til Power BI-lejeren i deres organisation, hvilket beskrives i følgende tabel.
@@ -65,7 +63,6 @@ Administratorer udfører mange opgaver for at yde support til Power BI-lejeren i
 | Administrer Power BI-ressourcer |<ul><li>Administrer arbejdsområder<br><li>Udgiv brugerdefinerede visuelle elementer<br><li>Kontrollér koder, der bruges til at integrere Power BI i andre programmer|
 | Levér hjælp og support til brugere af lejeren |<ul><li>Foretag fejlfinding af dataadgang og andre problemer</ul>|
 | Andre opgaver |<ul><li>Installér Power BI Desktop, f.eks. ved hjælp af System Center Configuration Manager<br><li>Administrer installation af Power BI-mobilapp med Intune<br><li>Administrer beskyttelse af personlige oplysninger og sikkerhed, f.eks. kildens datasikkerhed</ul>|
-
 
 ## <a name="administrative-tools"></a>Administrative værktøjer
 
@@ -82,11 +79,12 @@ Der er flere værktøjer, der er relateret til Power BI-administration, og de vi
 
 ## <a name="next-steps"></a>Næste trin
 
-Vi håber, at du ved at læse denne artikel har fået hurtig indsigt i jobbet som Power BI-administrator og i de specifikke roller, opgaver og værktøjer, der er involveret. Vi anbefaler, at du læser de to emner nedenfor for at få en større forståelse.
+Vi håber, at du ved at læse denne artikel har fået hurtig indsigt i jobbet som Power BI-administrator og i de specifikke roller, opgaver og værktøjer, der er involveret. Vi anbefaler følgende artikelemner, så du kan få en større forståelse.
 
 [Brug Power BI-administrationsportalen](service-admin-portal.md)
+
+[Brug PowerShell-cmdlet'er](/powershell/power-bi/overview?toc=%2Fen-us%2Fpower-bi%2FTOC.json&bc=%2Fen-us%2Fpower-bi%2Fbreadcrumb%2Ftoc.json&view=powerbi-ps)
 
 [Ofte stillede spørgsmål om Power BI-administration](service-admin-faq.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-
