@@ -1,27 +1,24 @@
-## <a name="sign-in-account"></a>Loginkonto
-Brugere skal logge på med enten en arbejds- eller skolekonto. Dette er din organisationskonto. Hvis du har tilmeldt dig et tilbud på Office 365 og ikke angav din rigtige arbejdsmailadresse, kan den se ud som nancy@contoso.onmicrosoft.com. På en cloudtjeneste gemmes din konto i en lejer i Azure Active Directory (AAD). I de fleste tilfælde vil AAD-kontoens UPN svare til mailadressen.
+## <a name="sign-in-account"></a>Logonkonto
+
+Brugere logger på med enten en arbejds- eller skolekonto. Denne konto er din **organisationskonto**. Hvis du har tilmeldt dig et tilbud på Office 365 og ikke angav din rigtige arbejdsmailadresse, kan den se ud som nancy@contoso.onmicrosoft.com. Din konto gemmes i en lejer i Azure Active Directory (AAD). I de fleste tilfælde vil AAD-kontoens UPN svare til mailadressen.
 
 ## <a name="windows-service-account"></a>Windows-tjenestekonto
-Datagatewayen i det lokale miljø er konfigureret til at bruge *NT SERVICE\PBIEgwService* som legitimationsoplysninger til logon på Windows tjenesten. Som standard er rettighederne de samme som i forbindelse med Log på som en tjeneste. Dette er i forbindelse med den computer, du installerer gatewayen på.
+
+Datagatewayen i det lokale miljø er konfigureret til at bruge *NT SERVICE\PBIEgwService* som legitimationsoplysninger til logon på Windows tjenesten. Som standard har den rettigheden Log på som en tjeneste i forbindelse med den maskine, som du installerer gatewayen på. Kontoen er ikke den samme som den konto, der bruges til at oprette forbindelse til datakilder i det lokale miljø. Kontoen er heller ikke den arbejds- eller skolekonto, som du bruger til at logge på cloudtjenester med.
 
 > [!NOTE]
 > Hvis du har valgt personlig tilstand, skal du konfigurere kontoen til Windows-tjenesten separat.
-> 
-> 
 
-Det er ikke denne konto, der bruges til at oprette forbindelse til datakilder i det lokale miljø.  Det er heller ikke din arbejds- eller skolekonto, som du bruger til at logge på cloudtjenester med.
-
-Hvis du oplever problemer med din proxyserver på grund af godkendelse, kan du evt. ændre Windows-tjenestekontoen til en domænebruger- eller administreret tjenestekonto. Du kan se, hvordan du skifter konto i [proxykonfiguration](../service-gateway-proxy.md#changing-the-gateway-service-account-to-a-domain-user).
+Hvis du oplever godkendelsesproblemer med din proxyserver, kan du prøve at ændre Windows-tjenestekontoen til en domænebruger- eller administreret tjenestekonto. Du kan finde flere oplysninger under [proxykonfiguration](../service-gateway-proxy.md#changing-the-gateway-service-account-to-a-domain-user).
 
 ## <a name="ports"></a>Porte
-Gatewayen opretter en udgående forbindelse til Azure Service Bus. Den kommunikerer via udgående porte: TCP 443 (standard), 5671, 5672, 9350 til 9354.  Gatewayen kræver ikke indgående porte. [Få mere at vide](https://azure.microsoft.com/documentation/articles/service-bus-fundamentals-hybrid-solutions/)
 
-Det anbefales, at du føjer IP-adresserne for dit dataområde til hvidlisten i din firewall. Du kan downloade [Microsoft Azure Datacenter IP-listen](https://www.microsoft.com/download/details.aspx?id=41653). Listen opdateres ugentligt. Gatewayen kommunikerer med Azure Service Bus ved hjælp af IP-adressen foruden det fuldt kvalificerede domænenavn (FQDN). Hvis du tvinger gatewayen til at kommunikere ved hjælp af HTTPS, vil det gennemtvinge kun at bruge FQDN, og der sker ingen kommunikation via IP-adressen.
+Gatewayen opretter en udgående forbindelse til Azure Service Bus. Den kommunikerer via udgående porte: TCP 443 (standard), 5671, 5672, 9350-9354.  Gatewayen kræver ikke indgående porte.
+
+Det anbefales, at du føjer IP-adresserne for dit dataområde til hvidlisten i din firewall. Du kan downloade [listen over IP-adresser til Microsoft Azure Datacenter](https://www.microsoft.com/download/details.aspx?id=41653). Listen opdateres ugentligt. Gatewayen kommunikerer med Azure Service Bus ved hjælp af IP-adressen foruden det fuldt kvalificerede domænenavn (FQDN). Hvis du tvinger gatewayen til at kommunikere ved hjælp af HTTPS, vil det gennemtvinge kun at bruge FQDN, og der sker ingen kommunikation via IP-adressen.
 
 > [!NOTE]
-> På listen over IP-adresser til Azure Datacenter er adresserne angivet i CIDR-notation. For eksempel er 10.0.0.0/24 ikke det samme som 10.0.0.0 til og med 10.0.0.24. Få mere at vide om [CIDR-notation](http://whatismyipaddress.com/cidr).
-> 
-> 
+> På listen over IP-adresser til Azure Datacenter er adresserne angivet i CIDR-notation. 10.0.0.0/24 er f.eks. ikke det samme som 10.0.0.0 til og med 10.0.0.24. Få mere at vide om [CIDR-notation](http://whatismyipaddress.com/cidr).
 
 Her er en liste over de fuldt kvalificerede domænenavne, der anvendes af gatewayen.
 
@@ -41,11 +38,10 @@ Her er en liste over de fuldt kvalificerede domænenavne, der anvendes af gatewa
 
 > [!NOTE]
 > Den trafik, der kommer gennem visualstudio.com eller visualstudioonline.com er ikke til appindsigt, og det er ikke krævet for at gatewayen kan fungere.
-> 
-> 
 
 ## <a name="forcing-https-communication-with-azure-service-bus"></a>Gennemtving HTTPS-kommunikation med Azure Service Bus
-Du kan tvinge gatewayen til at kommunikere med Azure Service Bus ved hjælp af HTTPS i stedet for direkte TCP. Dette kan påvirke ydeevnen. Det kan du gøre ved at ændre filen *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* ved at ændre værdien fra `AutoDetect` til `Https` som vist i kodestykket efter dette afsnit. Filen er som standard placeret under *C:\Programmer\On-premises data gateway*.
+
+Du kan tvinge gatewayen til at kommunikere med Azure Service Bus ved hjælp af HTTPS i stedet for direkte TCP. Brug af HTTPS kan påvirke ydeevnen. Det kan du gøre ved at ændre filen *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* ved at ændre værdien fra `AutoDetect` til `Https` som vist i kodestykket efter dette afsnit. Filen er som standard placeret under *C:\Programmer\On-premises data gateway*.
 
 ```
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
@@ -55,7 +51,7 @@ Du kan tvinge gatewayen til at kommunikere med Azure Service Bus ved hjælp af H
 
 Der skelnes mellem store og små bogstaver i parameteren *ServiceBusSystemConnectivityModeString*. Gyldige værdier er *AutoDetect* og *Https*.
 
-Alternativt kan du tvinge gatewayen til at fungere på denne måde ved hjælp af gatewaybrugergrænsefladen fra og med versionen fra [marts 2017](https://powerbi.microsoft.com/blog/power-bi-gateways-march-update/). I gatewaybrugergrænsefladen skal du vælge **Netværk** og derefter angive **Azure Service Bus-forbindelsestilstand**  til **Til**.
+Du kan også tvinge gatewayen til at fungere på denne måde ved hjælp af gatewaybrugergrænsefladen. I gatewaybrugergrænsefladen skal du vælge **Netværk** og derefter angive **Azure Service Bus-forbindelsestilstand**  til **Til**.
 
 ![](./media/gateway-onprem-accounts-ports-more/gw-onprem_01.png)
 
@@ -66,7 +62,8 @@ Til fremtidig reference kan du genstarte *Windows-gatewaytjenesten* fra dialogbo
 ![](./media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
 ## <a name="support-for-tls-1112"></a>Understøttelse af TLS 1.1/1.2
-Med opdateringen fra august 2017 og senere opdateringer bruger datagatewayen i det lokale miljø som standard TLS 1.1 eller 1.2 (Transport Layer Security) til at kommunikere med **Power BI tjenesten**. Tidligere versioner af datagatewayen i det lokale miljø bruger som standard TLS 1.0. Fra den 15. marts 2018 slutter understøttelsen af TLS 1.0, herunder gatewayens mulighed for at interagere med **Power BI tjenesten** via TLS 1.0. Så inden da skal du opgradere installationerne af datagatewayen i det lokale miljø til udgaven fra august 2017 eller en nyere udgave for at sikre, at din gateway fortsat fungerer.
+
+Datagatewayen i det lokale miljø bruger som standard TLS 1.1 eller 1.2 (Transport Layer Security) til at kommunikere med **Power BI-tjenesten**. Tidligere versioner af datagatewayen i det lokale miljø brugte som standard TLS 1.0. Den 15. marts 2018 ophører understøttelsen af TLS 1.0, hvilket omfatter gatewayens mulighed for at interagere med **Power BI-tjenesten** ved hjælp af TLS 1.0. Du skal opgradere installationerne af datagatewayen i det lokale miljø for at sikre, at din gateway fortsat fungerer.
 
 Det er vigtigt at bemærke, at TLS 1.0 stadig understøttes af datagatewayen i det lokale miljø fra før 1. november, og den bruges af gatewayen som fallback-løsning. Hvis du vil sikre, at al gatewaytrafik bruger TLS 1.1 eller 1.2 (og for at forhindre, at der bruges TLS 1.0 på din gateway), skal du tilføje eller ændre følgende registreringsdatabasenøgler på den computer, hvor gatewaytjenesten kører:
 
@@ -75,11 +72,10 @@ Det er vigtigt at bemærke, at TLS 1.0 stadig understøttes af datagatewayen i d
 
 > [!NOTE]
 > Når du tilføjer eller ændrer disse registreringsdatabasenøgler, anvendes ændringerne for alle .NET-programmer. Hvis du vil vide mere om, hvilke ændringer i registreringsdatabasen der påvirker TLS for andre programmer, skal du se [Indstillinger for TLS (Transport Layer Security) i registreringsdatabasen](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
-> 
-> 
 
 ## <a name="how-to-restart-the-gateway"></a>Sådan genstarter du gatewayen
-Gatewayen kører som en Windows-tjeneste. Du kan starte og stoppe den som enhver anden Windows-tjeneste. Det kan gøres på flere forskellige måder. Her kan du se, hvordan du kan gøre det fra kommandoprompten.
+
+Gatewayen kører som en Windows-tjeneste. Du kan starte og stoppe den som enhver anden Windows-tjeneste. Her kan du se, hvordan du kan gøre det fra kommandoprompten.
 
 1. Start en kommandoprompt som administrator på den computer, hvor gatewayen kører.
 2. Brug følgende kommando for at stoppe tjenesten.

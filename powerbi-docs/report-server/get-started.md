@@ -4,18 +4,18 @@ description: Få et overblik over Power BI-rapportserveren for at forstå, hvord
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/07/2018
+ms.date: 10/24/2018
 ms.topic: overview
 ms.service: powerbi
 ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 1be2270074011f73c3d942677211dd99d18c6b2b
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 95a97c86ae7d17091b49fbf33cf5ec0d26053c3e
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34294565"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101387"
 ---
 # <a name="what-is-power-bi-report-server"></a>Hvad er Power BI-rapportserveren?
 
@@ -28,6 +28,9 @@ Power BI-rapportserveren ligner både SQL Server Reporting Services og Power BI-
 
 ## <a name="licensing-power-bi-report-server"></a>Licens til Power BI-rapportserveren
 Power BI-rapportserveren er tilgængelig via to forskellige licenser: [Power BI Premium](../service-premium.md) og [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) med Software Assurance. Med en Power BI Premium-licens kan du oprette en hybrid udrulning med en blanding af clouden og det lokale miljø.  
+
+> [!NOTE]
+> I forbindelse med Power BI Premium er Power BI-rapportserveren kun inkluderet med P-SKU'er. Den er ikke inkluderet i forbindelse med EM-SKU'er.
 
 ## <a name="web-portal"></a>Webportal
 Indgangspunktet for Power BI-rapportserveren er en sikker webportal, som du kan få vist i alle moderne browsere. Her kan du få adgang til alle dine rapporter og KPI'er. Indholdet på webportalen er organiseret i et traditionelt mappehierarki. Indholdet i dine mapper er grupperet efter type: Power BI-rapporter, mobilrapporter, sideinddelte rapporter, KPI'er og Excel-projektmapper samt delte datasæt og delte datakilder, der skal bruges som komponenter til dine rapporter. Du kan markere dem som favoritter for at få vist dem i en enkelt mappe. Og du kan oprette KPI'er direkte på webportalen. 
@@ -66,7 +69,7 @@ Mere [dokumentation til Report Server-udviklere](https://docs.microsoft.com/sql/
 
 ## <a name="next-steps"></a>Næste trin
 [Installer Power BI-rapportserver](install-report-server.md)  
-[Installér Report Builder](https://docs.microsoft.com/sql/reporting-services/install-windows/install-report-builder)  
+[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

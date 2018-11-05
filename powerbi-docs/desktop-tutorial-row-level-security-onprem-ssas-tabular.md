@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 10/21/2017
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f8c1aae757e80c0c2adbc321345c242eba25098c
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: c49750ef51c1b8bacc36946d2d5c75a08abb36d7
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "34456128"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101571"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel
 I dette selvstudium vises de trin, der er nødvendige for at implementere **sikkerhed på rækkeniveau** i din **Analysis Services-tabelmodel**, og det vises, hvordan du bruger det i en Power BI-rapport. Trinnene i dette selvstudium er designet for at give dig mulighed for at følge med i og lære at udføre de nødvendige trin ved at gennemføre et eksempel på et datasæt.
@@ -72,6 +72,9 @@ Der er udgivet mange artikler, som beskriver, hvordan du definerer dynamisk sikk
        =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
     I denne formel returnerer funktionen **LOOKUPVALUE** alle værdier for kolonnen **DimUserSecurity[SalesTerritoryID]**, hvor **DimUserSecurity[UserName]** er det samme som det Windows-brugernavn, der i øjeblikket er logget på, og **DimUserSecurity[SalesTerritoryID]** er det samme som **DimSalesTerritory[SalesTerritoryKey]**.
    
+    > [!IMPORTANT]
+    > Vær opmærksom på, at DAX-funktionen [USERELATIONSHIP](https://msdn.microsoft.com/query-bi/dax/userelationship-function-dax) ikke understøttes, når du bruger sikkerhed på rækkeniveau.
+
    Sættet af SalesTerritoryKeys for salg, der returneres af **LOOKUPVALUE**, bruges derefter til at begrænse de rækker, der vises i **DimSalesTerritory**. Det er kun rækker, hvor **SalesTerritoryKey** for rækken er angivet af id'er, som returneres af funktionen **LOOKUPVALUE**, der vises.
 8. Skriv følgende formel i kolonnen **DAX Filter** for tabellen **DimUserSecurity**:
    

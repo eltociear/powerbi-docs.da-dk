@@ -10,26 +10,26 @@ ms.topic: conceptual
 ms.date: 06/20/2018
 ms.author: maghan
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 0f2c3649a2c6e0582fe7536473f7a6ee9067ee1d
-ms.sourcegitcommit: e8d924ca25e060f2e1bc753e8e762b88066a0344
+ms.openlocfilehash: 347a56f75fa7ea9008539e3d75d094d0c22c69d1
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37137439"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101295"
 ---
 # <a name="azure-sql-data-warehouse-with-directquery"></a>Azure SQL Data Warehouse med DirectQuery
-Med Azure SQL Data Warehouse med DirectQuery kan du oprette dynamiske rapporter, der er baseret på data og målinger, du allerede har i Azure SQL Data Warehouse. Med DirectQuery sendes forespørgsler tilbage til dit Azure SQL Data Warehouse i realtid, når du udforsker dataene. Dette, kombineret med skalaen for SQL Data Warehouse, gør det muligt for brugere at oprette dynamiske rapporter på få minutter med terabytes af data. Desuden kan brugere med indførelsen af knappen **Åbn i Power BI** oprette direkte forbindelse fra Power BI til deres SQL Data Warehouse uden at skulle angive oplysninger manuelt.
+Med Azure SQL Data Warehouse med DirectQuery kan du oprette dynamiske rapporter, der er baseret på data og målinger, du allerede har i Azure SQL Data Warehouse. Med DirectQuery sendes forespørgsler tilbage til dit Azure SQL Data Warehouse i realtid, når du udforsker dataene. Forespørgsler i realtid, kombineret med skalaen for SQL Data Warehouse, gør det muligt for brugere at oprette dynamiske rapporter på få minutter med terabytes af data. Desuden kan brugere med indførelsen af knappen **Åbn i Power BI** oprette direkte forbindelse fra Power BI til deres SQL Data Warehouse uden at skulle angive oplysninger manuelt.
 
 Når du bruger SQL Data Warehouse-forbindelsen:
 
 * Angiv det fuldt kvalificerede servernavn, når du opretter forbindelse (se flere oplysninger nedenfor)
 * Kontrollér, at firewallreglerne for serveren er konfigureret til at "Tillade adgang til Azure-tjenester"
 * Hver handling, f.eks. markering af en kolonne eller tilføjelse af et filter, vil direkte forespørge Data Warehouse
-* Felterne er angivet til at opdatere ca. hver 15 minutter, og opdateringen skal ikke planlægges.  Dette kan tilpasses i Avancerede indstillinger, når du opretter forbindelse.
-* Spørgsmål og svar er ikke tilgængelig for DirectQuery-datasæt
+* Felterne er angivet til at opdatere ca. hver 15 minutter, og opdateringen skal ikke planlægges.  Opdateringen kan tilpasses i Avancerede indstillinger, når du opretter forbindelse.
+* Spørgsmål og svar er ikke tilgængelige for DirectQuery-datasæt
 * skemaændringer hentes ikke automatisk
 
-Disse begrænsninger og noter kan ændres, når vi fortsætter med at forbedre oplevelsen. Trinnet til at oprette forbindelse er beskrevet nedenfor.
+Disse begrænsninger og noter kan ændres, efterhånden som vi fortsat forbedrer oplevelserne. Trinnene til at oprette forbindelse er beskrevet nedenfor.
 
 ## <a name="using-the-open-in-power-bi-button"></a>Brug knappen "Åbn i Power BI"
 
@@ -37,14 +37,14 @@ Disse begrænsninger og noter kan ændres, når vi fortsætter med at forbedre o
 > Vi har forbedret vores netværksmuligheder til Azure SQL Data Warehouse.  For at få den bedste oplevelse og oprette forbindelse til din Azure SQL Data Warehouse-datakilde kan du bruge Power BI Desktop.  Når du har bygget din model og rapport, kan du udgive den på Power BI-tjenesten.  Den direkte forbindelse til Azure SQL Data Warehouse i Power BI-tjenesten frarådes nu.
 >
 
-Den nemmeste måde at flytte mellem dit SQL Data Warehouse og Power BI er med knappen **Åbn i Power BI** i Azure Preview-portalen. Med denne knap kan du nemt og problemfrit begynde at oprette nye dashboards i Power BI.
+Den nemmeste måde at flytte mellem dit SQL Data Warehouse og Power BI er med knappen **Åbn i Power BI** på Azure-portalen. Med denne knap kan du nemt og problemfrit begynde at oprette nye dashboards i Power BI.
 
-1. For at komme i gang skal du gå til din SQL Data Warehouse-forekomst i Azure Preview-portalen. Bemærk, at SQL Data Warehouse på nuværende tidspunkt kun har en tilstedeværelse i Azure Preview-portalen.
+1. For at komme i gang skal du gå til din instans af SQL Data Warehouse på Azure-portalen. SQL Data Warehouse findes i øjeblikket kun på Azure Preview-portalen.
 2. Klik på knappen **Åbn i Power BI**
    
     ![](media/service-azure-sql-data-warehouse-with-direct-connect/openinpowerbi.png)
 3. Hvis vi ikke kan logge dig på direkte, eller hvis du ikke har en Power BI-konto, skal du logge på.
-4. Du bliver dirigeret til SQL Data Warehouse-forbindelsessiden, hvor oplysningerne fra dit SQL Data Warehouse er udfyldt på forhånd. Angiv dine legitimationsoplysninger, og tryk på Tilslut for at oprette forbindelse.
+4. Du sendes videre til SQL Data Warehouse-forbindelsessiden, hvor oplysningerne fra dit SQL Data Warehouse er udfyldt på forhånd. Angiv dine legitimationsoplysninger, og tryk på Tilslut for at oprette forbindelse.
 
 ## <a name="connecting-through-power-bi"></a>Opret forbindelse via Power BI
 SQL Data Warehouse er også angivet på siden Power BI Hent data. 
@@ -78,7 +78,7 @@ SQL Data Warehouse er også angivet på siden Power BI Hent data.
     ![](media/service-azure-sql-data-warehouse-with-direct-connect/explore3.png)
 
 ## <a name="finding-parameter-values"></a>Find parameterværdier
-Din fulde servernavn og databasenavn kan findes i Azure Preview-portalen. Bemærk, at SQL Data Warehouse på nuværende tidspunkt kun har en tilstedeværelse i Azure Preview-portalen.
+Dit fulde gyldige servernavn og databasenavn kan findes på Azure-portalen. SQL Data Warehouse findes i øjeblikket kun på Azure Preview-portalen.
 
 ![](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
@@ -89,6 +89,6 @@ Din fulde servernavn og databasenavn kan findes i Azure Preview-portalen. Bemær
 ## <a name="next-steps"></a>Næste trin
 [Hvad er Power BI?](power-bi-overview.md)  
 [Hent data til Power BI](service-get-data.md)  
-[Azure SQL Data Warehouse](https://azure.microsoft.com/documentation/services/sql-data-warehouse/)  
+[Azure SQL Data Warehouse](/azure/sql-data-warehouse/sql-data-warehouse-overview-what-is/)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

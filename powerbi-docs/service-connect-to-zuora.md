@@ -7,15 +7,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 10/24/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b83ef2b6f2cd07e9f6c9af849e0f64d0490fa1af
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: b183738c062af1d834a742639369ca90f2cb1bad
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546926"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003219"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Opret forbindelse til Zuora med Power BI
 Med Zuora til Power BI kan du visualisere vigtige omsætnings-, fakturerings- og abonnementsdata. Brug standarddashboardet og rapporter til at analysere brugstendenser, spore faktureringer og betalinger og overvåge tilbagevendende indtægt eller til at tilpasse dem, så de imødekommer dine særlige behov i forbindelse med dashboard og rapportering.
@@ -32,13 +32,13 @@ Opret forbindelse til [Zuora](https://app.powerbi.com/getdata/services/Zuora) ti
 3. Vælg **Zuora** \> **Hent**.
 
    ![](media/service-connect-to-zuora/zuora.png)
-4. Angiv URL-adressen til Zuora. Dette vil typisk være "<https://www.zuora.com>" . Du kan se oplysninger om, hvordan [du finder disse parametre](#FindingParams) nedenfor.
+4. Angiv URL-adressen til Zuora. Denne URL-adresse vil typisk være "<https://www.zuora.com>". Du kan se oplysninger om, hvordan [du finder disse parametre](#FindingParams), nedenfor.
 
    ![](media/service-connect-to-zuora/params.png)
 5. Som **Godkendelsesmetode** skal du vælge **Grundlæggende**, angive dit brugernavn og din adgangskode (der skelnes mellem små og store bogstaver) og derefter vælge **Log på**.
 
     ![](media/service-connect-to-zuora/creds.png)
-6. Efter godkendelsen starter importprocessen automatisk. Når processen er fuldført, vises et nyt dashboard samt en ny rapport og model i navigationsruden. Vælg dashboardet for at få vist de importerede data.
+6. Efter godkendelsen startes importprocessen automatisk. Når processen er fuldført, vises et nyt dashboard samt en ny rapport og model i navigationsruden. Vælg dashboardet for at få vist de importerede data.
 
      ![](media/service-connect-to-zuora/dashboard.png)
 
@@ -95,11 +95,10 @@ Adgang til Zuora-API'en er påkrævet.
 Angiv den URL-adresse, du typisk logger på for at få adgang til dine Zuora-data. De gyldige muligheder er:  
 
 * https://www.zuora.com  
-* https://www.apisandbox.zuora.com  
 * Den URL-adresse, der svarer til din tjenesteforekomst  
 
 ## <a name="troubleshooting"></a>Fejlfinding
-Zuora-indholdspakken henter fra mange forskellige dele af din Zuora-konto. Hvis du ikke bruger visse funktioner, vises de tilsvarende felter/rapporter muligvis som tomme. Hvis du har problemer med indlæsning, skal du kontakte Power BI-support.
+Zuora-indholdspakken henter fra mange forskellige dele af din Zuora-konto. Hvis du ikke bruger visse funktioner, vises de tilsvarende felter/rapporter muligvis som tomme. Kontakt Power BI-support, hvis du har problemer med at indlæse.
 
 ## <a name="next-steps"></a>Næste trin
 [Kom i gang med Power BI](service-get-started.md)

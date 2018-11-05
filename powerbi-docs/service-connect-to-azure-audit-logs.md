@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/06/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 882fdad2b29c9bd21ea0b979d5009dee86304159
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 4faaa63a3845125b4df1ec634d22b084b5ae25f2
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548137"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101203"
 ---
 # <a name="connect-to-azure-audit-logs-with-power-bi"></a>Opret forbindelse til Azure Audit Logs med Power BI
 Du kan analysere og visualisere de oplysninger, der er gemt i overvågningsloggene, med Azure Audit Logs-indholdspakken. Power BI henter dataene, opretter et brugsklart dashboard og genererer rapporter ud fra de pågældende data.
@@ -32,13 +32,13 @@ Du kan analysere og visualisere de oplysninger, der er gemt i overvågningslogge
 3. Vælg **Azure Audit Logs** > **Hent**.  
    
    ![](media/service-connect-to-azure-audit-logs/azureauditlogs.png)
-4. Når du bliver bedt om det, skal du angive dit **Azure abonnements-id**. Få detaljer om, hvordan du finder dit [abonnements-id](#FindingParams), nedenfor.   
+4. Når du bliver bedt om det, skal du angive dit **Azure-abonnements-id**. Få detaljer om, hvordan du finder dit [abonnements-id](#FindingParams), nedenfor.   
    
     ![](media/service-connect-to-azure-audit-logs/parameters.png)
-5. Til **Godkendelsesmetode** skal du vælge **oAuth2** \>**Log på**.
+5. Som **Godkendelsesmetode** skal du vælge **oAuth2** \> **Log på**.
    
     ![](media/service-connect-to-azure-audit-logs/creds.png)
-6. Angiv dine legitimationsoplysninger til din konto for at afslutte logonprocessen.
+6. Angiv legitimationsoplysningerne for din konto for at afslutte logonprocessen.
    
     ![](media/service-connect-to-azure-audit-logs/login.png)
 7. Power BI henter dine Azure Audit Log-data og opretter et brugsklart dashboard samt rapport. 
@@ -53,7 +53,7 @@ Du kan analysere og visualisere de oplysninger, der er gemt i overvågningslogge
 * Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
 ## <a name="system-requirements"></a>Systemkrav
-Azure Audit Logs-indholdspakken kræver adgang til overvågningsloggene i Azure-portalen. Du kan få flere oplysninger [her](https://azure.microsoft.com/documentation/articles/insights-debugging-with-events/).
+Azure Audit Logs-indholdspakken kræver adgang til overvågningsloggene på Azure-portalen. Du kan få flere oplysninger [her](/azure/azure-resource-manager/resource-group-audit/).
 
 <a name="FindingParams"></a>
 
@@ -63,10 +63,10 @@ Der er to måder til nemt at finde sit abonnements-id.
 1. Fra https://portal.azure.com -&gt; Gennemse -&gt; Abonnementer -&gt; Abonnements-id
 2. Fra https://manage.windowsazure.com -&gt; Indstillinger -&gt; Abonnements-id
 
-Abonnements-id'et er et langt sæt tal og tegn, der ligner eksemplet i trin \#4 ovenfor. 
+Abonnements-id'et er en lang række tal og tegn, der ligner eksemplet i trin \#4 ovenfor. 
 
 ## <a name="troubleshooting"></a>Fejlfinding
-Hvis du ser en fejl i legitimationsoplysningerne eller en fejl, når du forsøger at opdatere på grund af ugyldige legitimationsoplysninger, kan du prøve at slette alle forekomster af Azure Audit Logs-indholdspakken og genoprette forbindelsen.
+Hvis du ser en fejl i legitimationsoplysningerne eller der opstår en fejl, når du forsøger at opdatere, på grund af ugyldige legitimationsoplysninger, kan du prøve at slette alle forekomster af Azure Audit Logs-indholdspakken og genoprette forbindelsen.
 
 ## <a name="next-steps"></a>Næste trin
 [Hvad er Power BI?](power-bi-overview.md)  

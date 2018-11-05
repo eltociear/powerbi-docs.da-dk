@@ -10,13 +10,13 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 10/01/2018
-ms.openlocfilehash: b701ce9921d055dfe124c5a419f02900b15a9f62
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.date: 10/20/2018
+ms.openlocfilehash: e336323863dfacc8c74f2dc1f721231d58d03834
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641200"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50100766"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Integrer med rapportwebdelen i SharePoint Online
 
@@ -42,41 +42,38 @@ Hvis du vil integrere din rapport i SharePoint Online, skal du først hente URL-
 2. Vælg menuen **Filer**.
 
 3. Vælg **Integrer i SharePoint Online**.
-   
-    ![](media/service-embed-report-spo/powerbi-file-menu.png)
+
+    ![Filmenu](media/service-embed-report-spo/powerbi-file-menu.png)
 
 4. Kopiér URL-adressen fra dialogboksen.
 
-    ![](media/service-embed-report-spo/powerbi-embed-link-sharepoint.png)
-
-   > [!NOTE]
-   > Du kan også bruge den URL-adresse, der vises i din webbrowsers adresselinje, når du får vist en rapport. Den URL-adresse indeholder den rapportside, du ser i øjeblikket. Du skal fjerne rapportsektionen fra URL-adressen, hvis du vil bruge en anden side.
+    ![Integrer link](media/service-embed-report-spo/powerbi-embed-link-sharepoint.png)
 
 ### <a name="add-the-power-bi-report-to-a-sharepoint-online-page"></a>Føj Power BI-rapporten til en SharePoint Online-side
 
 1. Åbn den ønskede side i SharePoint Online, og vælg **Rediger**.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-edit-page.png)
+    ![Side med SP-redigeringer](media/service-embed-report-spo/powerbi-sharepoint-edit-page.png)
 
     Eller opret en ny moderne webside ved at vælge **+ Ny** i SharePoint Online.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-new-page.png)
+    ![Ny SP-side](media/service-embed-report-spo/powerbi-sharepoint-new-page.png)
 
 2. Vælg **+**, og vælg webdelen **Power BI**.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-new-web-part.png)
+    ![Ny SP-webdel](media/service-embed-report-spo/powerbi-sharepoint-new-web-part.png)
 
 3. Vælg **Tilføj rapport**.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)
+    ![Ny SP-rapport](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)
 
-4. Indsæt rapportens URL-adresse i ruden med egenskaber. Dette er den URL-adresse, du har kopieret fra trinnene ovenfor. Rapporten indlæses automatisk.
+4. Indsæt rapportens URL-adresse i ruden med egenskaber. Denne URL-adresse til rapporten er den URL-adresse, du har kopieret fra trinnene ovenfor. Rapporten indlæses automatisk.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
+    ![Egenskaber for ny SP-webdel](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 
 5. Vælg **Publicer** for at gøre ændringerne synlige for dine SharePoint Online-brugere.
 
-    ![](media/service-embed-report-spo/powerbi-sharepoint-report-loaded.png)
+    ![Indlæst SP-rapport](media/service-embed-report-spo/powerbi-sharepoint-report-loaded.png)
 
 ## <a name="granting-access-to-reports"></a>Giv adgang til rapporter
 
@@ -87,24 +84,12 @@ Integrering af en rapport i SharePoint Online giver ikke automatisk brugere till
 
 Du kan give adgang til rapporten i Power BI-tjenesten på to måder. Hvis du bruger en Office 365-gruppe til at kompilere dit SharePoint Online-teamwebsted, kan du angive brugeren som medlem af **apparbejdsområdet i Power BI-tjenesten** og på **SharePoint-siden**. Dette sikrer, at brugerne kan få vist indholdet af den pågældende gruppe. Du kan finde flere oplysninger under [Opret og distribuer en app i Power BI](service-create-distribute-apps.md).
 
-Ellers kan du også give brugerne adgang til din rapport ved at benytte nedenstående fremgangsmåde.
+Du kan også dele en rapport direkte med brugerne ved at integrere rapporten i en app. Appen skal være installeret på forhånd, for at rapporten kan integreres. Du kan konfigurere appen til at blive installeret på forhånd ved hjælp af funktionen **Installer appen automatisk**.
 
-1. Føj et felt fra rapporten til et dashboard.
+   ![Installér appen automatisk](media/service-embed-report-spo/install-app-automatically.png)
 
-2. Del dashboardet med de brugere, der skal have adgang til rapporten. Du kan finde flere oplysninger i [Del et dashboard med kolleger og andre](service-share-dashboards.md).
-
-## <a name="web-part-settings"></a>Indstillinger for webdele
-
-Nedenfor findes en beskrivelse af de indstillinger, der kan tilpasses til Power BI-webdelen til SharePoint Online.
-
-![](media/service-embed-report-spo/powerbi-sharepoint-web-part-properties.png)
-
-| Egenskab | Beskrivelse |
-| --- | --- |
-| Sidenavn |Angiver den standardside, der vises af webdelen. Vælg en værdi på rullelisten. Hvis der ikke vises nogen sider, har rapporten enten kun én side, eller den URL-adresse, du har indsat, indeholder et sidenavn. Fjern rapportsektion fra URL-adressen for at vælge en bestemt side. |
-| Vis |Indstillingen til at justere, hvordan rapporten er tilpasset SharePoint Online-siden. |
-| Vis navigationsruden |Viser eller skjuler ruden Sidenavigation. |
-| Vis filterruden |Viser eller skjuler filterruden. |
+> [!NOTE]
+> **Brugeren skal både have adgang til SharePoint-siden og rapporten for at få vist rapporten på SharePoint-siden.**
 
 ## <a name="multi-factor-authentication"></a>Multifaktorgodkendelse
 
@@ -113,13 +98,26 @@ Hvis du bliver bedt om at logge på ved hjælp af multifaktorgodkendelse i dit P
 > [!NOTE]
 > Multifaktorgodkendelse understøttes endnu ikke med Azure Active Directory 2.0. Brugerne modtager en meddelelse med ordet *fejl*. Hvis brugeren logger på SharePoint Online igen ved hjælp af sin sikkerhedsenhed, kan vedkommende muligvis få vist rapporten.
 
+## <a name="web-part-settings"></a>Indstillinger for webdele
+
+Nedenfor findes en beskrivelse af de indstillinger, der kan tilpasses til Power BI-webdelen til SharePoint Online.
+
+![Egenskaber for SP-webdel](media/service-embed-report-spo/powerbi-sharepoint-web-part-properties.png)
+
+| Egenskab | Beskrivelse |
+| --- | --- |
+| Sidenavn |Angiver den standardside, der vises af webdelen. Vælg en værdi på rullelisten. Hvis der ikke vises nogen sider, har rapporten enten kun én side, eller den URL-adresse, du har indsat, indeholder et sidenavn. Fjern rapportsektion fra URL-adressen for at vælge en bestemt side. |
+| Vis |Indstillingen til at justere, hvordan rapporten er tilpasset SharePoint Online-siden. |
+| Vis navigationsruden |Viser eller skjuler ruden Sidenavigation. |
+| Vis filterruden |Viser eller skjuler filterruden. |
+
 ## <a name="reports-that-do-not-load"></a>Rapporter, der ikke indlæses
 
 Rapporten indlæses muligvis ikke i Power BI-webdelen, og du kan få vist følgende meddelelse.
 
 *Dette indhold er ikke tilgængeligt.*
 
-![](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
+![Meddelelse om, at rapporten ikke blev fundet](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
 
 Der er to almindelige årsager til denne meddelelse.
 
@@ -128,11 +126,15 @@ Der er to almindelige årsager til denne meddelelse.
 
 Kontakt ejeren af SharePoint Online-siden for at få hjælp til at udbedre problemet.
 
+## <a name="licensing"></a>Licensering
+
+Brugere, der ser en rapport i SharePoint, skal enten have en **Power BI Pro-licens**, eller indholdet skal være i et arbejdsområde, der er i en **[Power BI Premium-kapacitet (EM- eller P-SKU)](service-admin-premium-purchase.md)**.
+
 ## <a name="known-issues-and-limitations"></a>Kendte problemer og begrænsninger
 
 * Fejl: "Der opstod en fejl. Prøv at logge af og på igen, og besøg derefter denne side igen. Korrelations-id: udefineret, HTTP-svarstatus: 400, serverens fejlkode 10001, meddelelse: manglende opdateringstoken"
   
-  Hvis du får vist denne fejl, kan du prøve en af følgende fremgangsmåder.
+  Hvis du modtager denne fejl, kan du prøve at udføre et af fejlfindingstrinnene nedenfor.
   
   1. Log af SharePoint, og log på igen. Sørg for at lukke alle browservinduer, før du logger på igen.
 

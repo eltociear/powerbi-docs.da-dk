@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: b56134314b9396dff1b965786e65e62129e5e7b9
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: 2758ef661b70c53a37104c67c4012be79725990e
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558441"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101479"
 ---
 # <a name="on-premises-data-gateway"></a>Datagateway i det lokale miljø
 
@@ -47,9 +47,9 @@ Du kan bruge en liveforbindelse til tabellariske eller flerdimensionelle forekom
 
 ## <a name="download-and-install-the-on-premises-data-gateway"></a>Download og installér datagatewayen i det lokale miljø
 
-Hvis du vil downloade gatewayen, skal du vælge **Datagateway** i menuen Downloads. Download [datagatewayen i det lokale miljø](http://go.microsoft.com/fwlink/?LinkID=820925). 
+Hvis du vil downloade gatewayen, skal du vælge **Datagateway** i menuen Downloads. Download [datagatewayen i det lokale miljø](http://go.microsoft.com/fwlink/?LinkID=820925).
 
-Bemærk, at du kan opdatere datagatewayen i det lokale miljø ved at geninstallere gatewayen som beskrevet i dette afsnit. Når du opdaterer gatewayen (ved at geninstallere), bevares dine indstillinger for gatewayen.
+Bemærk, at du kan opdatere datagatewayen i det lokale miljø ved at installere gatewayen igen som beskrevet i dette afsnit. Når du installerer en nyere version af gatewayen, bevares dine eksisterende indstillinger. Hvis du installerer den samme version, behandles det som en fuldstændig geninstallation, og dine indstillinger bevares ikke.
 
 ![](media/service-gateway-onprem/powerbi-download-data-gateway.png)
 

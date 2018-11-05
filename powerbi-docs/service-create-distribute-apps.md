@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 62950462f60fea6db44a9756eff8f99a6841d1d4
-ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
+ms.openlocfilehash: 3881e37fa5e97939265e9bb9362cee65a1030e67
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49435436"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50100812"
 ---
 # <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Publicer apps med dashboards og rapporter i Power BI
 
@@ -63,7 +63,7 @@ Når dashboards og rapporter i dit arbejdsområde er klar, skal du vælge, hvilk
    
      ![Appindhold](media/service-create-distribute-apps/power-bi-apps-content.png)
 
-5. Under **Adgang** skal du beslutte, hvem der skal have adgang til appen: enten alle i organisationen, specifikke personer eller Active Directory-sikkerhedsgrupper. Hvis du har de rette tilladelser, kan du vælge at installere appen til modtagerne automatisk. Du kan aktivere denne indstilling på [Power BI-administrationsportal](#how-to-enable-pushing-apps). Du kan få mere at vide om overvejelser i forbindelse med [push af en app](#how-to-enable-pushing-apps).
+5. Under **Adgang** skal du beslutte, hvem der skal have adgang til appen: enten alle i organisationen, specifikke personer eller Active Directory-sikkerhedsgrupper. Hvis du har de rette tilladelser, kan du vælge at installere appen til modtagerne automatisk. En Power BI-administrator kan aktivere denne indstilling på Power BI-administrationsportal. Læs mere om [automatisk installation af en app](#how-to-install-an-app-automatically-for-end-users).
 
     ![Appadgang](media/service-create-distribute-apps/power-bi-apps-access.png)
 

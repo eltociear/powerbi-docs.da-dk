@@ -2,41 +2,44 @@
 title: Azure og Power BI
 description: Azure og Power BI
 author: davidiseminger
+ms.author: davidi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/24/2018
-ms.author: davidi
+ms.date: 10/26/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 596d399e7c304d40be5b7839c5c16060eb9e8155
-ms.sourcegitcommit: 7fb0b68203877ff01f29724f0d1761d023075445
+ms.openlocfilehash: 3eca6d1ae7aaef507d1ee51889c0c617ff33f9e9
+ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39255971"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50101180"
 ---
 # <a name="azure-and-power-bi"></a>Azure og Power BI
-Med **Azure**-tjenester og **Power BI** kan du gøre din databehandling til analyser og rapporter, der giver indsigt i din virksomhed i realtid. Uanset om din databehandling er cloudbaseret eller foregår i det lokale miljø, om den er enkel eller kompleks, leveres fra én enkelt kilde eller er i stor skala, kører via datalager eller i realtid, så har Azure og Power BI indbygget de rette forbindelses- og integrationsegenskaber til at skabe resultater ud fra din business intelligence.
 
-![](media/service-azure-and-power-bi/azure_1.png)
+Med **Azure**-tjenester og **Power BI** kan du gøre din databehandling til analyser og rapporter, der giver indsigt i din virksomhed i realtid. Uanset om din databehandling er cloudbaseret eller foregår i det lokale miljø, om den er enkel eller kompleks, leveres fra én enkelt kilde eller i stor skala, kører via datalager eller i realtid, har Azure og Power BI indbygget de rette forbindelses- og integrationsegenskaber til at skabe resultater ud fra din business intelligence.
+
+![Azure](media/service-azure-and-power-bi/azure_1.png)
 
 Power BI har en lang række tilgængelige Azure-forbindelser, og de business intelligence-løsninger, du kan oprette med disse tjenester, er lige så unikke som din virksomhed. Du kan nøjes med at oprette bare én Azure-datakilde – eller en håndfuld – og forme og tilpasse dine data for at opbygge brugerdefinerede rapporter.
 
-### <a name="azure-sql-database-and-power-bi"></a>Azure SQL Database og Power BI
+## <a name="azure-sql-database-and-power-bi"></a>Azure SQL Database og Power BI
+
 Du kan starte med en enkel forbindelse til en Azure SQL Database og oprette rapporter for at overvåge din virksomheds fremskridt. Ved hjælp af [Power BI Desktop](desktop-getting-started.md) kan du oprette rapporter, der identificerer tendenser og nøgletal, der skubber din virksomhed fremad.
 
-![](media/service-azure-and-power-bi/azure_2_sqltopbi.png)
+![SQL til PBI](media/service-azure-and-power-bi/azure_2_sqltopbi.png)
 
 Der findes masser af yderligere oplysninger, som kan lære dig om [Azure SQL Database](http://azure.microsoft.com/services/sql-database/).
 
-### <a name="transform-shape-and-merge-your-cloud-data"></a>Transformér, formgiv og flet dine clouddata
+## <a name="transform-shape-and-merge-your-cloud-data"></a>Transformér, formgiv og flet dine clouddata
+
 Har du mere komplekse data og alle mulige forskellige datakilder? Intet problem. Med **Power BI Desktop** og Azure-tjenester er forbindelser kun et klik væk i dialogboksen **Hent Data**. I den samme forespørgsel kan du oprette forbindelse til din **Azure SQL Database**, din **Azure HDInsight**-datakilde og dit **Azure Blob Storage** (eller **Azure Table Storage**), og så kan du nøjes med at vælge de undersæt, du skal bruge, inden for hver af dem og tilpasse dem herfra.
 
 Du kan også oprette forskellige rapporter til forskellige målgrupper ved hjælp af de samme dataforbindelser og den samme forespørgsel. Du kan bare oprette en ny rapportside, tilpasse dine visualiseringer til hver målgruppe og se den holde virksomheden opdateret.
 
-![](media/service-azure-and-power-bi/azure_3_multipletopbi.png)
+![Flere til PBI](media/service-azure-and-power-bi/azure_3_multipletopbi.png)
 
 Hvis du vil have mere at vide, kan du se følgende ressourcer:
 
@@ -44,16 +47,24 @@ Hvis du vil have mere at vide, kan du se følgende ressourcer:
 * [Azure HDInsight](http://azure.microsoft.com/services/hdinsight/)
 * [Azure Storage](http://azure.microsoft.com/services/storage/) (Blob Storage og Table Storage)
 
-### <a name="get-complex-and-ahead-using-azure-services-and-power-bi"></a>Bliv kompleks (og kom foran) ved hjælp af Azure-tjenester og Power BI
+## <a name="get-complex-and-ahead-using-azure-services-and-power-bi"></a>Bliv kompleks (og kom foran) ved hjælp af Azure-tjenester og Power BI
+
 Du kan udvide lige så meget, du har brug for, med Azure og i Power BI. Benyt dig af databehandling med flere kilder, gør brug af omfattende realtidssystemer, brug [Stream Analytics](http://azure.microsoft.com/services/stream-analytics/) og [Event Hubs](http://azure.microsoft.com/services/event-hubs/), og saml dine forskellige SaaS-tjenester i business intelligence-rapporter, der giver din virksomhed kant.
 
-![](media/service-azure-and-power-bi/azure_4_complex.png)
+![Azure-kompleks](media/service-azure-and-power-bi/azure_4_complex.png)
 
-### <a name="connect-your-app-data-using-power-bi-apis"></a>Opret forbindelse til dine appdata ved hjælp af Power BI-API'er
-Du kan også bruge Power BI til at få indsigt i dine eksisterende apps. Med Power BI-API'er kan programudviklere sende hele datasæt til Power BI programmeringsmæssigt. Har du brug for fortløbende opdateringer? Med Power BI-API'er kan udviklere sende dataopdateringer i realtid for at komme hurtigt i gang og derefter gå videre til at bruge Azure Stream Analytics, når størrelsen gør det nødvendigt.
+## <a name="context-insights-with-power-bi-embedded-analytics"></a>Kontekstindsigt med Power BI Embedded-analyse
 
-Der er mange oplysninger om Power BI-API'er på [Power BI-udviklerportalen](http://dev.powerbi.com). 
+Integrer flotte, interaktive datavisualiseringer i programmer, websteder, portaler m.m. for at udnytte dine forretningsdata. Hvis du bruger [Power BI Embedded som en ressource i Azure](https://azure.microsoft.com/services/power-bi-embedded/), kan du nemt integrere interaktive rapporter og dashboards, så dine brugere får ensartede oplevelser af høj kvalitet på tværs af enheder.  Power BI, der bruges sammen med integreringsanalyser, skal hjælpe dig med at komme gennem Data -> Viden -> Indsigt -> Handlinger.  Derudover kan du også få mere ud af Power BI og Azure ved at integrere analyser i [organisationens interne programmer og portaler](https://powerbi.microsoft.com/en-us/developers/embedded-analytics/organization/).
 
-### <a name="what-could-you-do-with-azure-and-power-bi"></a>Hvad kan du gøre med Azure og Power BI?
-Der er alle mulige forskellige scenarier, hvor **Azure** og **Power BI** kan kombineres – løsningerne og mulighederne er lige så unikke som din virksomhed. Hvis du vil have mere at vide om **Azure-tjenester**, skal du se denne [oversigtsside](http://go.microsoft.com/fwlink/?LinkId=535031&clcid=0x409), som beskriver **dataanalysescenarier med Azure**, samt hvordan du transformerer dine datakilder til efterretninger, der driver din virksomhed fremad.
+Der er mange oplysninger om Power BI-API'er på [Power BI-udviklerportalen](http://dev.powerbi.com).
 
+Du kan finde flere oplysninger i [Hvad kan udviklere gøre med Power BI?](developer/what-can-you-do.md)
+
+## <a name="embed-your-power-bi-data-within-your-app"></a>Integrer dine Power BI-data i din app
+
+Integrer flotte, interaktive datavisualiseringer i programmer, websteder, portaler m.m. for at fremvise dine forretningsdata i den rette kontekst. Hvis du bruger [Power BI Embedded i Azure](https://azure.microsoft.com/services/power-bi-embedded/), kan du nemt integrere interaktive rapporter og dashboards, så dine brugere får ensartede oplevelser af høj kvalitet på tværs af enheder.
+
+## <a name="what-could-you-do-with-azure-and-power-bi"></a>Hvad kan du gøre med Azure og Power BI?
+
+Der er alle mulige forskellige scenarier, hvor **Azure** og **Power BI** kan kombineres – løsningerne og mulighederne er lige så unikke som din virksomhed. Hvis du vil have mere at vide om **Azure-tjenester**, skal du se denne [oversigtsside](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/plan-your-environment), som beskriver **dataanalysescenarier med Azure**, samt hvordan du transformerer dine datakilder til efterretninger, der driver din virksomhed fremad.
