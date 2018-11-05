@@ -10,12 +10,12 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/09/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: b2627950ea51239acb19972fde3244f3bd158255
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 2623dd3280636583d5dd6d6e3f57518550032193
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909216"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003196"
 ---
 # <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Overvåg kapaciteter i Power BI Premium og Power BI Embedded
 
@@ -61,13 +61,11 @@ Under fanen **Filtre, der anvendes på alle sider** kan du vælge en kapacitet, 
 
 ### <a name="datasets-tab"></a>Fanen Datasæt
 
-Under fanen **Datasæt** vises størstedelen af målepunkterne i appen. Brug de fire knapper øverst under fanen til at navigere til forskellige områder: **Oversigt**, **Opdateringer**, **Forespørgsler** og **Datasæt**.
+Under fanen **Datasæt** vises størstedelen af målepunkterne i appen. Brug knapperne øverst under fanen til at navigere til forskellige områder: **Oversigt**, **Opdateringer**, **Forespørgselsvarigheder**, **Ventetider for forespørgsler** og **Datasæt**.
 
 ![Fanen Datasæt](media/service-admin-premium-monitor-capacity/datasets-tab.png)
 
 #### <a name="summary-area"></a>Området Oversigt
-
-![Knappen Oversigt](media/service-admin-premium-monitor-capacity/summary-button.png)
 
 I området **Oversigt** kan du få et overblik over dine kapaciteter på basis af entiteter, systemressourcer og arbejdsbelastninger for datasæt.
 
@@ -80,19 +78,27 @@ I området **Oversigt** kan du få et overblik over dine kapaciteter på basis a
 
 #### <a name="refreshes-area"></a>Området Opdateringer
 
-![Knappen Opdateringer](media/service-admin-premium-monitor-capacity/refreshes-button.png)
-
 I området **Opdateringer** vises de fuldførte opdateringer, målinger af vellykkede opdateringer, den gennemsnitlige/maksimale ventetid for opdateringer og den gennemsnitlige/maksimale varighed af opdateringer opdelt efter datasæt i løbet af de seneste syv dage. I de to diagrammer nederst vises opdateringer i forhold til hukommelsesforbrug i GB og de gennemsnitlige ventetider opdelt i buckets på én time og rapporteret i lokaltid. I de øverste søjlediagrammer vises de fem øverste datasæt efter den gennemsnitlige tid, det tog at fuldføre det datasæt, der skulle opdateres (opdateringens varighed), og den gennemsnitlige ventetid for opdateringen. Hvis der er flere høje ventetider for opdateringer, kan det være tegn på, at kapaciteten snart er brugt op.
 
-#### <a name="queries-area"></a>Området Forespørgsler
+#### <a name="query-durations-area"></a>Område for forespørgselsvarigheder
 
-![Knappen Forespørgsler](media/service-admin-premium-monitor-capacity/queries-button.png)
+I området for **forespørgselsvarigheder** vises det samlede antal kørte forespørgsler og den gennemsnitlige/maksimale varighed i millisekunder. Disse data er opdelt i udsnit efter datasæt, arbejdsområde og buckets pr. time i løbet af de seneste syv dage. I diagrammerne nederst vises antallet af forespørgsler og gennemsnitlig varighed (i millisekunder) vs. hukommelsesforbrug i GB, opdelt i buckets på én time rapporteret i lokaltid.
 
-I området **Forespørgsler** kan du set det samlede antal kørte forespørgsler, det samlede antal ventende forespørgsler for dynamiske forespørgsler/direkte forespørgsler, gennemsnitlig/maks. varighed, gennemsnitlig/maks. ventetid rapporteret i millisekunder opdelt efter datasæt, arbejdsområde og buckets pr. time i de seneste syv dage. I diagrammerne nederst vises antallet af forespørgsler, gennemsnitlig varighed (i millisekunder) og gennemsnitlig ventetid (i millisekunder) vs. hukommelsesforbrug i GB, opdelt i buckets på én time rapporteret i lokaltid. I de to diagrammer øverst til højre kan du se de øverste fem datasæt angivet efter den gennemsnitlige forespørgselsvarighed og ventetiden, inden forespørgslerne var udført. Lange forespørgselsvarigheder og lange ventetider betyder, at kapaciteten er overbelastet. Det kan også betyde, at et enkelt datasæt forårsager problemer, og at der er behov for yderligere undersøgelser.
+I diagrammet øverst til højre vises et histogram med fordeling af forespørgselsvarighed. Histogrammet er inddelt i buckets efter forespørgselsvarigheder rapporteret i millisekunder i følgende kategorier: intervaller af < = 30 ms, 30-100 ms, 100-300 ms, 300 ms-1 sek., 1-3 sek., 3-10 sek., 10-30 sek. og > 30 sek.
+
+I diagrammet nederst til højre kan du se de øverste fem datasæt angivet efter den gennemsnitlige forespørgselsvarighed, der gik, inden forespørgslerne var udført.
+
+Lange forespørgselsvarigheder og lange ventetider betyder, at kapaciteten er overbelastet. Det kan også betyde, at et enkelt datasæt forårsager problemer, og at der er behov for yderligere undersøgelser.
+
+#### <a name="query-waits-area"></a>Område for ventetider for forespørgsler
+
+I området for **ventetider for forespørgsler** kan du set det samlede antal kørte forespørgsler, det samlede antal ventende forespørgsler for dynamiske forespørgsler/direkte forespørgsler og den gennemsnitlige/maksimale ventetid rapporteret i millisekunder. Disse data er opdelt i udsnit efter datasæt, arbejdsområde og buckets pr. time i løbet af de seneste syv dage. I diagrammerne nederst vises antallet af ventende forespørgsler og den gennemsnitlige ventetid (i millisekunder) vs. hukommelsesforbrug i GB, opdelt i buckets på én time rapporteret i lokaltid.
+
+I diagrammet øverst til højre vises et histogram med fordeling af ventetider for forespørgsler. Histogrammet er inddelt i buckets efter forespørgselsvarigheder rapporteret i millisekunder i følgende kategorier: intervaller af <= 50 ms, 50-100 ms, 100-200 ms, 200-400 ms, 400 ms-1 sek., 1-5 sek. og > 5 sek.
+
+I diagrammet nederst til højre kan du se de øverste fem datasæt angivet efter den gennemsnitlige ventetid, der gik, inden forespørgslerne blev startet.
 
 #### <a name="datasets-area"></a>Området Datasæt
-
-![Knappen Datasæt](media/service-admin-premium-monitor-capacity/datasets-button.png)
 
 I området **Datasæt** vises fuldførte datasæt, der er fjernet på grund af et stort hukommelsesforbrug pr. time.
 

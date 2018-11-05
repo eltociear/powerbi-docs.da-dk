@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/13/2018
+ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 95fa59d91a73101d7d04f3921a81236bfae7d0bb
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: ccc99c2f9810bcda80e1f02ce67e49390fd0308f
+ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187300"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50003242"
 ---
 # <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Find og vis hurtigt dine Power BI-data ved hjælp af Cortana til Power BI
 Brug Cortana på tværs af dine Windows 10-enheder for at få omgående svar på vigtige forretningsspørgsmål. Ved at integrere med Power BI kan Cortana hente vigtige oplysninger direkte fra Power BI-dashboards og -rapporter. Alt hvad der kræves, er version Windows 10 November 2015 eller nyere, Cortana, Power BI og adgang til mindst ét datasæt.
@@ -22,19 +22,19 @@ Brug Cortana på tværs af dine Windows 10-enheder for at få omgående svar på
 ![Søgefelt i Cortana](media/service-cortana-intro/power-bi-cortana-searchbox.png)
 
 ## <a name="preview-the-new-cortana-dashboard-search-experience-for-windows-10"></a>Prøv at opleve den nye *dashboardsøgning* i Cortana til Windows 10
-I et stykke tid har du nu kunnet [anvende Cortana til at hente visse typer rapportsider](service-cortana-answer-cards.md). Vi har nu tilføjet en **ny oplevelse** – muligheden for også at hente dashboards. Prøv den, og [send os feedback](mailto:pbicortanasg@microsoft.com). Den *nye oplevelse* vil med tiden blive udvidet til også at indeholde Cortana-søgning efter rapporter.  En af de vigtigste fordele ved den nye oplevelse er, at du ikke behøver gøre noget særligt for at konfigurere den – ingen aktivering af Cortana eller konfiguration af Windows 10 – det virker bare.
+I et stykke tid har du nu kunnet [anvende Cortana til at hente visse typer rapportsider](service-cortana-answer-cards.md). Vi har nu tilføjet en **ny oplevelse** – muligheden for også at hente dashboards. Prøv den, og [send os feedback](mailto:pbicortanasg@microsoft.com). Den *nye oplevelse* vil med tiden blive udvidet til også at indeholde Cortana-søgning efter rapporter.  En af de vigtigste fordele ved den nye oplevelse er, at du ikke behøver gøre noget særligt for at konfigurere den – ingen aktivering af Cortana eller konfiguration af Windows 10. Det virker bare.
 
 > [!NOTE]
 > Hvis det ikke "bare virker", kan du finde hjælp i [fejlfindingsartiklen](service-cortana-troubleshoot.md).
 > 
 > 
 
-Den underliggende teknologi bruger [Microsofts Azure Search Service](). Denne søgetjeneste indeholder ekstra funktioner som for eksempel smart rangordning, fejlkorrektion og automatisk fuldførelse.
+Den underliggende teknologi bruger [Microsoft Azure Search Service](https://docs.microsoft.com/azure/search/). Denne søgetjeneste indeholder ekstra funktioner som for eksempel smart rangordning, fejlkorrektion og automatisk fuldførelse.
 
 Begge Cortana-oplevelser vil findes side om side.
 
 ## <a name="cortana-for-power-bi-documentation"></a>Dokumentation til Cortana til Power BI
-Vi har 4 dokumenter, der fører dig igennem konfiguration og anvendelse af Cortana til Power BI. Denne række artikler fører dig gennem trinnene til
+Vi har fire dokumenter, der hjælper dig med at konfigurere og bruge Cortana til Power BI. Denne række artikler fører dig gennem trinnene til
 
 **Artikel 1** (denne artikel): Forstå, hvordan Cortana og Power BI arbejder sammen
 
@@ -54,9 +54,9 @@ Hvis Cortana finder en overensstemmelse, vises navnet på dashboardet eller rapp
 ### <a name="cortana-and-dashboards-the-new-experience"></a>Cortana og dashboards (den *nye oplevelse*)
 Cortana kan finde svar på dashboards, som du ejer, og dashboards, der er blevet delt med dig. Stil Cortana spørgsmål ved hjælp af titler, nøgleord, navne på ejere, navne på arbejdsområder, appnavne m.m.
 
-Dit spørgsmål skal indeholde mindst 2 ord, før Cortana kan finde et svar. Så hvis du søger på et dashboard, som har et navn med et enkelt ord (Marketing), skal du føje ordet "show" eller "Power BI" eller "<owner name>" til dit spørgsmål, som i "show Marketing" og "michele hart sample". 
+Dit spørgsmål skal indeholde mindst 2 ord, før Cortana kan finde et svar. Så hvis du søger efter et dashboard med et navn med et enkelt ord (Marketing), skal du føje ordet "show" eller "Power BI" eller "ejerens navn" til dit spørgsmål, som i "show Marketing" og "michele hart sample". 
 
-Hvis dit dashboard har en titel med mere end ét ord, returner Cortana kun dette dashboard, hvis din søgning stemmer overens med mindst to af ordene, eller hvis dashboardet stemmer overens med et af ordene plus ejerens navn. For et dashboard med navnet "Customer Profitability Sample": 
+Hvis titlen på dit dashboard består af mere end ét ord, returner Cortana kun dette dashboard, hvis din søgning stemmer overens med mindst to af ordene eller ét af ordene plus ejerens navn. For et dashboard med navnet "Customer Profitability Sample": 
 
 * vil "show me customer" *ikke* returnere et Power BI-dashboardresultat.   
 * "udsagn som f.eks. "show me customer profitability", "customer p", "customer s", "profitability sample", "michele hart sample", "show customer profitability sample" og "show me customer p" *vil* returnere et Power BI-resultat.
@@ -69,7 +69,7 @@ Hvis dit dashboard har en titel med mere end ét ord, returner Cortana kun dette
 
 Den underliggende teknologi for rapporter er brug af [Microsofts Power BI Spørgsmål og svar](consumer/end-user-q-and-a.md).
 
-Når du stiller et spørgsmål i Cortana, svarer Power BI fra rapportsider, der er udviklet specielt til Cortana. Potentielle svar bestemmes løbende af Cortana direkte fra Cortanas *svarkort*, der allerede er oprettet i Power BI.  Du skal blot åbne et resultat i Power BI for at udforske et svar yderligere.
+Når du stiller et spørgsmål i Cortana, svarer Power BI fra rapportsider, der er udviklet specielt til Cortana. Potentielle svar bestemmes løbende af Cortana direkte fra Cortanas *svarkort*, der allerede er oprettet i Power BI.  Du skal åbne et resultat i Power BI for at udforske et svar yderligere.
 
 > [!NOTE]
 > Før Cortana kan lede efter svar i Power BI-rapporter, skal du [aktivere denne funktion ved hjælp af Power BI-tjenesten og konfigurere Windows til at kommunikere med Power BI](service-cortana-enable.md).  
