@@ -9,12 +9,12 @@ ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
 ms.author: maghan
-ms.openlocfilehash: 3b19740616e7b9a390a883fde2fd96320de7b94a
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: a1492a98825ad26b2dde359cf9cec96cc4623e04
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973580"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223162"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Hvad kan udviklere bruge Power BI-API'en til?
 
@@ -29,7 +29,7 @@ Her er nogle af de ting, du kan bruge Power BI-API'erne til.
 | Integrer dashboards, rapporter og felter til brugere af Power BI og brugere, der ikke anvender Power BI (appen ejer dataene) |[Sådan integrerer du Power BI-dashboards, -rapporter og -felter](embedding-content.md) |
 | Udvid en eksisterende forretningsarbejdsproces til at overføre vigtige data til et Power BI-dashboard. |[Overfør data til et dashboard](walkthrough-push-data.md) |
 | Godkend til Power BI. |[Godkend til Power BI](get-azuread-access-token.md) |
-| Opret en brugerdefineret visualisering. |[Brug udviklerværktøjerne til at oprette brugerdefinerede visualiseringer](../service-custom-visuals-getting-started-with-developer-tools.md) |
+| Opret en brugerdefineret visualisering. |[Udvikling af en brugerdefineret visualisering i Power BI](custom-visual-develop-tutorial.md) |
 
 > [!NOTE]
 > Power BI-API'erne refererer stadig til apparbejdsområder som grupper. Referencer til grupper betyder, at du arbejder med apparbejdsområder.
@@ -72,7 +72,7 @@ Du kan bruge Power BI-API til at overføre data til et datasæt. Denne funktion 
 ## <a name="next-steps"></a>Næste trin
 
 [Overfør data til et datasæt](walkthrough-push-data.md)  
-[Introduktion til udviklerværktøjer til brugerdefinerede visualiseringer](../service-custom-visuals-getting-started-with-developer-tools.md)  
+[Udvikling af en brugerdefineret visualisering i Power BI](custom-visual-develop-tutorial.md)  
 [Reference til Power BI REST-API](https://docs.microsoft.com/rest/api/power-bi/)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
