@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 10/26/2018
-ms.openlocfilehash: dcefa427290fd804a0b2c79dc357e5f5bfbe7296
-ms.sourcegitcommit: f2eab2c3e7b5ec3684f63d819f10cb3dcfa21e73
+ms.date: 11/06/2018
+ms.openlocfilehash: a3d36f988847df283576dae6cfe5870b707c6f98
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50160162"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223254"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Selvstudium: Føj formateringsindstillinger til en brugerdefineret visual i Power BI
 
@@ -254,6 +254,10 @@ Du kan nu åbne rapporten i Power BI Desktop og importere den brugerdefinerede v
 
 8. Peg på ikonet **Circle Card**, og læg mærke til det værktøjstip, der vises.
 
+## <a name="debugging"></a>Fejlfinding
+
+Se [fejlfindingsvejledningen](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/how-to-debug/) for tips til fejlfinding af et brugerdefineret visual.
+
 ## <a name="next-steps"></a>Næste trin
 
-Hvis du vil have mere at vide om, hvordan du publicerer den brugerdefinerede visual, du netop har udviklet, så den kan forbruges af andre, kan du gå til [Publicer brugerdefinerede visuals i AppSource](office-store.md).
+Du kan angive din nyligt udviklede visualisering, så andre kan bruge den, ved at sende den til **AppSource**. Du kan finde flere oplysninger om denne proces under [Publicer brugerdefinerede visualiseringer i AppSource](office-store.md).

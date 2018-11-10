@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/26/2018
+ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a4c73cc81a09a3747ff34e6a20508b4ff19eafa8
-ms.sourcegitcommit: df7a58dae14ef311516c9b3098f87742786f0479
+ms.openlocfilehash: c01af129e15025b97925f59532d1be7a6671b47f
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39280288"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909611"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-explain-increases-and-decreases-seen-in-visuals-preview"></a>Brug indsigter i Power BI Desktop til at forklare stigninger eller fald i visualiseringer (prøveversion)
 
@@ -36,7 +36,7 @@ Indsigtsfunktionen er kontekstafhængig, og den er baseret på det umiddelbart f
 
 
 ## <a name="using-insights"></a>Brug af indsigt
-Hvis du vil bruge indsigter til at forklare stigninger og fald i diagrammer, skal du bare højreklikke på et datapunkt på et søjle- eller kurvediagram og vælge **Analysér > Forklar forøgelsen** (eller *Forklar reduktionen*, da al indsigt er baseret på ændringen fra det forrige datapunkt).
+Hvis du vil bruge indsigt til at forklare stigninger eller fald i diagrammer, skal du bare højreklikke på et hvilket som helst datapunkt i et søjle- eller kurvediagram og vælge **Analysér > Forklar forøgelsen** (eller *Forklar reduktionen*, da al indsigt er baseret på ændringen fra det forrige datapunkt).
 
 ![Vis menuen Indsigter](media/desktop-insights/insights_02.png)
 
@@ -113,7 +113,6 @@ Følgende liste er en samling af de scenarier, der ikke understøttes i øjeblik
 * TopN-filtre
 * Medtag/udelad filtre
 * Målingsfiltre
-* Ikke-additive målinger og aggregeringer
 * Ikke-numeriske målinger
 * Brug af "Vis værdi som"
 * Filtrerede målinger – Filtrerede målinger er beregninger på visuelt niveau med et bestemt filter anvendt, f.eks. *Samlet salg i Frankrig*, og de bruges på nogle af de visualiseringer, som blev oprettet af indsigtsfunktionen

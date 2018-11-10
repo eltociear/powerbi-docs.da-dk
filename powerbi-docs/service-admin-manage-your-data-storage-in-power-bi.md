@@ -1,29 +1,29 @@
 ---
 title: Administrer dit datalager
 description: Få at vide, hvordan du kan administrere dit individuelle arbejdsområde eller dit apparbejdsområde eller datalager for at sikre, at du kan fortsætte med at publicere rapporter og datasæt.
-author: mgblythe
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 06/28/2017
-ms.author: mblythe
+ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: a30c90b1c180277a584a152f26c7f92549284c7d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 864d50d8850a8ceed964f128cea71b0daf5d8322
+ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36944738"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50736866"
 ---
 # <a name="manage-your-data-storage"></a>Administrer dit datalager
 Få at vide, hvordan du kan administrere dit individuelle arbejdsområde eller dit apparbejdsområde eller datalager for at sikre, at du kan fortsætte med at publicere rapporter og datasæt.
 
 Brugere og apparbejdsområder har deres egne datakapaciteter
 
-* Alle brugere har en maksimumgrænse på 10 GB på deres datalager.
-* Power BI Pro-brugere kan oprette apparbejdsområder med en maksimumgrænse på 10 GB datalager hver.
+* Alle brugere har maksimalt 10 GB datalager.
+* Brugere med en Power BI Pro-licens kan oprette apparbejdsområder med maksimalt 10 GB datalager hver.
 
 På lejerniveauet må det samlede forbrug ikke overstige 10 GB pr. Pro-bruger på tværs af alle Pro-brugere og apparbejdsområder i lejeren.
 

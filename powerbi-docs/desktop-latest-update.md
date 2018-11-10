@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 7de1b47656ae06f522b4b86a124bf558a660ba4e
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: b2e73621fe974da97e3a766fa25110522b36448b
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473399"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223277"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Hvad er nyt i den nyeste opdatering af Power BI Desktop?
 
@@ -47,12 +47,12 @@ Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 
 * Forbedringer af DAX-editor [[video]](https://youtu.be/GO1dhDJhSDY) [[artikel]](desktop-formula-editor.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23daxEditor) 
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analyse
 
 * Understøttelse af sammensatte modeller og sammenlægning i Power BI-tjenesten (prøveversion) [[video]](https://youtu.be/8E6UokaDtc0) [[artikel – sammenlægninger]](desktop-aggregations.md) [[artikel – sammensatte modeller]](desktop-composite-models.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23compositeModels) 
 * Forklar forøgelsen i forbindelse med ikke-additive målinger [[video]](https://youtu.be/8E6UokaDtc0?t=107) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23Insights) 
 
-### <a name="custom-visuals"></a>Brugerdefinerede visuelle elementer
+### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
 
 * Fem nye brugerdefinerede visualiseringer  [[video]](https://youtu.be/ZfJSSG17SEY)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23customVisuals) 
 

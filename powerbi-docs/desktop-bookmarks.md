@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1bb9921b31187d0df3debc644088a72e1d78207c
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 6bc8eea6138f2961457d03eaf5ef88d0327a058d
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549908"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909565"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Brug bogmærker til at dele indsigt og oprette historier i Power BI 
 Ved hjælp af **bogmærker** i Power BI kan du indfange den visning af en rapportside, der er konfigureret i øjeblikket, herunder filtrering af og tilstanden for visualiseringer, og senere gå tilbage til denne tilstand ved ganske enkelt at vælge det gemte bogmærke. 
@@ -44,13 +44,12 @@ Når du opretter et bogmærke, gemmes følgende elementer sammen med bogmærket:
 
 * Den aktuelle side
 * Filtre
-* Udsnitsværktøjer
+* Udsnit, herunder udsnitstypen (f.eks. rulleliste eller rullemenu) og udsnitstilstand
+* Tilstand for visuel markering (f.eks. tværgående fremhævningsfiltre)
 * Sorteringsrækkefølgen
 * Placering af detailudledning
 * Synlighed (for et objekt i ruden **Markering**)
 * Tilstanden Fokus eller **Spotlight** for et synligt objekt
-
-Bogmærker gemmer ikke den tværgående fremhævningstilstand i øjeblikket. 
 
 Konfigurer en rapportside, som du ønsker, den skal vises i bogmærket. Når din rapportside og dine visuelle elementer er arrangeret, som du ønsker det, skal du vælge **Tilføj** i ruden **Bogmærker** for at tilføje et bogmærke. 
 

@@ -1,65 +1,74 @@
 ---
-title: Brug en alternativ mailadresse
-description: Brug en alternativ mailadresse
+title: Brug af en alternativ mailadresse
+description: Brug af en alternativ mailadresse
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/08/2018
+ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 5013c70e4d3998eb39e0de2a92f890417175fd62
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 41b3a0b1032616045b854e4a4776ba82bffffe47
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34240900"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909408"
 ---
-# <a name="using-an-alternate-email-address"></a>Brug en alternativ mailadresse
-Som standard bruges den mailadresse, du brugte ved tilmeldingen til Power BI, til at sende dig opdateringer omkring aktiviteter i Power BI.  Hvis nogen for eksempel sender en invitation til dig om deling af indhold, sendes den til denne mailadresse.
+# <a name="using-an-alternate-email-address"></a>Brug af en alternativ mailadresse
 
-Nogle gange vil du have disse mails sendt til en alternativ mailadresse i stedet for til den mailadresse, du oprindeligt brugte ved tilmeldingen til Power BI.
+Når du tilmelder dig Power BI, angiver du en mailadresse. Power BI bruger som standard denne adresse til at sende dig opdateringer om aktiviteter i tjenesten. Hvis nogen for eksempel sender en invitation til deling til dig, sendes den til denne adresse.
 
-## <a name="updating-through-office-365-personal-info-page"></a>Opdater via siden med personlige oplysninger i Office 365
-1. Gå til din [side med personlige oplysninger i Office 365](https://portal.office.com/account/#personalinfo).  Hvis du bliver bedt om at logge på, skal du logge på med den mailadresse og adgangskode, du bruger til Power BI.
-2. Klik på redigeringslinket i sektionen med kontaktoplysninger.  
-   
-   > [!NOTE]
-   > Hvis der ikke vises et redigeringslink, administreres din mailadresse af din Office 365-administrator, og du skal kontakte vedkommende for at få opdateret din mailadresse.
-   > 
-   > 
-   
-   ![](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
-3. I feltet Alternativ mailadresse kan du angive den mailadresse, som opdateringer fra Power BI skal sendes til.
+I nogle tilfælde vil du måske have disse mails sendt til en alternativ mailadresse i stedet for den, du har tilmeldt dig med. I denne artikel forklares det, hvordan du angiver en alternativ adresse i Office 365 og PowerShell. I artiklen forklares det også, hvordan en mailadresse løses i Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> Når du ændrer denne indstilling, er det stadig den oprindelige mailadresse, der bruges til at sende oplysninger om opdateringer af tjenesten, nyhedsbreve og andre typer kampagneoplysninger.  Disse sendes altid til den mailadresse, du oprindeligt brugte ved tilmeldingen til Power BI.
-> 
-> 
+> Angivelse af en alternativ mailadresse påvirker ikke den mailadresse, som Power BI bruger til tjenesteopdateringer, nyhedsbreve og anden kommunikation.  Denne kommunikation sendes altid til den mailadresse, du brugte, da du tilmeldte dig Power BI.
 
-## <a name="updating-through-azure-active-directory"></a>Opdatering via Azure Active Directory
-Når du skal registrere et integreringstoken til AAD (Azure Active Directory) til Power BI, kan du bruge tre forskellige typer mails. De tre forskellige typer er:
+## <a name="use-office-365"></a>Brug Office 365
 
-* hovedmailadressen, der er knyttet til en brugers AAD-konto
-* UPN-mailadressen (UserPrincipalName – brugerens hovednavn)
-* matrixattributten for den "anden" mailadresse
+Følg disse trin for at angive en alternativ adresse i Office 365.
 
-Power BI vælger, hvilken mail der skal bruges, på baggrund af følgende kriterier:
-1.  Hvis mailattributten i AAD-lejerens brugerobjekt er til stede, så bruger Power BI denne mailattribut til mailadressen
-2.  Hvis UPN-mailen *ikke* er en mailadresse på domænet **\*.onmicrosoft.com** (oplysningerne efter "\@"-symbolet), så bruger Power BI denne mailattribut til mailadressen
-3.  Hvis matrixattributten for den anden "mail" i AAD-brugerobjektet til stede, så bruges den første mail på denne liste (da der kan være en liste over mails i denne attribut)
-4. Hvis ingen af ovenstående betingelser er til stede, så bruges UPN-adressen
+1. Åbn [siden med personlige oplysninger i Office 365](https://portal.office.com/account/#personalinfo). Hvis du bliver bedt om at logge på, skal du logge på med den mailadresse og adgangskode, du bruger til Power BI.
 
-## <a name="updating-with-powershell"></a>Opdater via PowerShell
-Du kan også opdatere den alternative mailadresse via PowerShell til Azure Active Directory. Det gør du med kommandoen [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser).
+1. Vælg **Personlige oplysninger** i menuen til venstre.
 
-```
+1. I afsnittet **Kontaktoplysninger** skal du vælge **Rediger**.
+
+    Hvis du ikke kan redigere dine oplysninger, betyder det, at din mailadresse administreres af Office 365-administratoren. Kontakt administratoren for at opdatere din mailadresse.
+
+    ![Kontaktoplysninger](media/service-admin-alternate-email-address-for-power-bi/contact-details.png)
+
+1. I feltet **Alternativ mailadresse** skal du angive den mailadresse, som opdateringer fra Power BI skal sendes til.
+
+## <a name="use-powershell"></a>Brug PowerShell
+
+Hvis du vil angive en alternativ adresse i PowerShell, skal du bruge kommandoen [Set-AzureADUser](/powershell/module/azuread/set-azureaduser/).
+
+```powershell
 Set-AzureADUser -ObjectId john@contoso.com -OtherMails "otheremail@somedomain.com"
 ```
 
-Du kan finde flere oplysninger under [Azure Active Directory PowerShell version 2](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+## <a name="email-address-resolution-in-azure-ad"></a>Løsning af mailadresse i Azure AD
+
+Når du skal registrere et integreringstoken for Azure AD til Power BI, kan du bruge tre forskellige mailtyper:
+
+* Hovedmailadressen, som er knyttet til en brugers Azure AD-konto
+
+* UPN-mailadressen (UserPrincipalName – brugerens hovednavn)
+
+* Matrixattributten for *anden mailadresse*
+
+Power BI vælger, hvilken mail der bruges, på baggrund af følgende sekvens:
+
+1. Hvis mailattributten i Azure AD-lejerens brugerobjekt er til stede, så bruger Power BI denne mailattribut til mailadressen.
+
+1. Hvis UPN-mailen *ikke* er en mailadresse på domænet **\*.onmicrosoft.com** (oplysningerne efter "@"-symbolet), så bruger Power BI denne mailattribut til mailadressen.
+
+1. Hvis matrixattributten for *anden mailadresse* i Azure AD-brugerobjektet er til stede, så bruges den første mail på denne liste (da der kan være en liste over mails i denne attribut).
+
+1. Hvis ingen af ovenstående betingelser er til stede, så bruges UPN-adressen.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

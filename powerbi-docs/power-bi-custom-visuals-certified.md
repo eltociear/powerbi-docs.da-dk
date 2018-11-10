@@ -2,6 +2,7 @@
 title: Certificerede brugerdefinerede Power BI-visualiseringer
 description: Krav og proces til afsendelse af en brugerdefineret visualisering til certificering. Og en liste over allerede certificerede brugerdefinerede visualiseringer.
 author: mihart
+ms.author: mihart
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
@@ -9,45 +10,46 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/30/2018
-ms.author: mihart
-ms.openlocfilehash: ba6c59d168deb5fb68f4b339f11fba795bae6452
-ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
+ms.openlocfilehash: 72b09083c50a88e2d22e9aa22f54ff014dafa998
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50252393"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223438"
 ---
 # <a name="getting-a-custom-visual-certified"></a>Sådan får du en brugerdefineret visualisering *certificeret*
+
 ## <a name="what-is-meant-by-certified"></a>Hvad menes der med *certificeret*?
+
 En *certificeret visualisering* er en visualisering, der opfylder et sæt af kodekrav, og som har bestået strenge sikkerhedstests.  Når en brugerdefineret visualisering er blevet certificeret, kan den [eksporteres til PowerPoint](consumer/end-user-powerpoint.md) og vises i modtagne mails, når en bruger [abonnerer på rapportsider](consumer/end-user-subscribe.md). Den kan selvfølgelig også bruges som [brugerdefinerede visuelle standardelementer](power-bi-custom-visuals.md), føjes til Power BI-tjenesten og Power BI Desktop-rapporter og vises i Power BI-mobil og integreret.
 
-Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til [Microsoft AppSource](https://appsource.microsoft.com)? Du kan få mere at vide om, hvordan du gør, under [Introduktion til Udviklerværktøj](service-custom-visuals-getting-started-with-developer-tools.md).
-
+Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til [Microsoft AppSource](https://appsource.microsoft.com)? Du kan se under [Udvikling af en brugerdefineret visualisering i Power BI](developer/custom-visual-develop-tutorial.md) for at lære, hvordan du gør.
 
 ## <a name="certification-requirements"></a>Certificeringskrav
-* Godkendt af Microsoft AppSource    
-* Den brugerdefinerede visualisering er skrevet med Versioned API 1.2 eller nyere    
-* Der er et kodelager tilgængeligt til gennemsyn (f.eks. Visual code, der er tilgængeligt for os via GitHub)    
-* Anvender kun OSS-komponenter, der kan gennemses offentligt    
-* Har ikke adgang til eksterne tjenester eller ressourcer    
+
+* Godkendt af Microsoft AppSource
+* Den brugerdefinerede visualisering er skrevet med Versioned API 1.2 eller nyere
+* Der er et kodelager tilgængeligt til gennemsyn (f.eks. Visual code, der er tilgængeligt for os via GitHub)
+* Anvender kun OSS-komponenter, der kan gennemses offentligt
+* Har ikke adgang til eksterne tjenester eller ressourcer
 
 > **TIP**! Det anbefales, at du bruger EsLint med det sikkerhedsregelsæt, der anvendes som standard, til at forudvalidere koden før indsendelse.
-> 
-> 
 
 ## <a name="process-for-submitting-a-custom-visual-for-certification"></a>Processen for indsendelse af en brugerdefineret visualisering til certificering
+
 Sådan indsender du en brugerdefineret visualisering til certificering:
 
 1. Send en mail til Support for brugerdefinerede Power BI-visualiseringer (pbicvsupport@microsoft.com). Du skal inkludere følgende oplysninger i mailen:    
 
-   * Titel: Anmodning om certificering af visualisering    
-   * Link til GitHub-lageret, der hoster visualiseringens kildekode    
-   * Overhold kravene (se ovenfor)    
-   * Bestå gennemgangen af koden og sikkerheden    
+   * Titel: Anmodning om certificering af visualisering
+   * Link til GitHub-lageret, der hoster visualiseringens kildekode
+   * Overhold kravene (se ovenfor)
+   * Bestå gennemgangen af koden og sikkerheden
 
 2. Microsofts team for brugerdefinerede visualiseringer giver dig besked, når din brugerdefinerede visualisering er certificeret og føjet til listen over certificerede visualiseringer (nedenfor) eller afvises med en rapport over de problemer, der skal løses. Det er udviklerens ansvar at vedligeholde en åben kommunikationslinje med Microsoft og opdatere deres godkendte visualiseringer efter behov.
 
 ## <a name="removal-of-power-bi-certified-custom-visuals"></a>Fjernelse af certificerede brugerdefinerede Power BI-visualiseringer
+
 Microsoft kan, efter eget skøn, fjerne en visualisering fra listen over godkendte visualiseringer.  
 
 ## <a name="list-of-custom-visuals-that-have-been-certified"></a>Liste over brugerdefinerede visualiseringer, der er blevet certificeret
@@ -142,10 +144,11 @@ Microsoft kan, efter eget skøn, fjerne en visualisering fra listen over godkend
 | [Ordcloud](https://appsource.microsoft.com/en-us/product/power-bi-visuals/WA104380752) | [Video](https://youtu.be/AblTenl9fqo) |
 
 ## <a name="next-steps"></a>Næste trin
-[Introduktion til udviklerværktøjerne til brugerdefinerede visualiseringer (prøveversion)](service-custom-visuals-getting-started-with-developer-tools.md)      
-[Microsofts brugerdefinerede afspilningsliste for visualiseringer på YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
-[Visualiseringer i Power BI](visuals/power-bi-report-visualizations.md)  
-[Brugerdefinerede visualiseringer i Power BI](power-bi-custom-visuals.md)  
-[Publicer brugerdefinerede visualiseringer i Microsoft AppSource](developer/office-store.md)  
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
+* [Udvikling af en brugerdefineret visualisering i Power BI](developer/custom-visual-develop-tutorial.md)
+* [Microsofts afspilningsliste for brugerdefinerede visualiseringer på YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
+* [Visualiseringer i Power BI](visuals/power-bi-report-visualizations.md)  
+* [Brugerdefinerede visualiseringer i Power BI](power-bi-custom-visuals.md)  
+* [Publicer brugerdefinerede visualiseringer i Microsoft AppSource](developer/office-store.md)  
+
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

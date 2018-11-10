@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 10/26/2018
-ms.openlocfilehash: 813d65844fee21a6c10d4c95bd15fb18cf4c75c2
-ms.sourcegitcommit: f2eab2c3e7b5ec3684f63d819f10cb3dcfa21e73
+ms.date: 11/06/2018
+ms.openlocfilehash: ed3a7a7c9f649f5ce834594572e3ab87b91181f5
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50160170"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223415"
 ---
 # <a name="tutorial-developing-a-power-bi-custom-visual"></a>Selvstudium: Udvikling af en brugerdefineret visual i Power BI
 
@@ -39,6 +39,7 @@ I dette selvstudium lærer du, hvordan du kan:
 
 * Hvis du ikke er tilmeldt **Power BI Pro**, kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/en-us/pricing/), før du begynder.
 * Du skal have [Visual Studio Code](https://www.visualstudio.com/) installeret.
+* Windows-brugere skal have [Windows PowerShell](https://docs.microsoft.com/powershell/scripting/setup/installing-windows-powershell?view=powershell-6) version 4 eller nyere, og OSX-brugere skal have [Terminal](https://macpaw.com/how-to/use-terminal-on-mac).
 
 ## <a name="setting-up-the-developer-environment"></a>Konfiguration af udviklermiljø
 
@@ -69,6 +70,8 @@ Nu skal du installere pakken **pbiviz**.
     ```
 
 ### <a name="creating-and-installing-a-certificate"></a>Oprettelse og installation af et certifikat
+
+#### <a name="windows"></a>Windows
 
 1. Du skal køre følgende kommando for at oprette et certifikat.
 
@@ -117,13 +120,32 @@ Nu skal du installere pakken **pbiviz**.
 > [!Important]
 > Luk ikke Windows PowerShell-sessionen.
 
+#### <a name="osx"></a>OSX
+
+1. Hvis låsen øverst til venstre er låst, så skal du vælge den for at låse den op. Find *localhost*, og dobbeltklik på certifikatet.
+
+    ![Installér SSL-certifikat 1 på OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx.png)
+
+2. Vælg **Hav altid tillid til**, og luk vinduet.
+
+    ![Installér SSL-certifikat 2 på OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx2.png)
+
+3. Indtast dit brugernavn og din adgangskode. Vælg **Opdater indstillinger**.
+
+    ![Installér SSL-certifikat 3 på OSX](media/custom-visual-develop-tutorial/install-ssl-certificate-osx3.png)
+
+4. Luk alle åbne browsere.
+
+> [!NOTE]
+> Hvis certifikatet ikke genkendes, skal du muligvis genstarte computeren.
+
 ## <a name="creating-a-custom-visual"></a>Opret en brugerdefineret visual
 
 Nu, hvor du har konfigureret miljøet, er tiden inde til at oprette din brugerdefinerede visual.
 
 Du kan [downloade](https://github.com/Microsoft/PowerBI-visuals-circlecard) hele kildekoden til dette selvstudium.
 
-1. I Windows PowerShell skal du bekræfte, at pakken Power BI Visual Tools er installeret.
+1. Kontroller, at pakken Power BI Visual Tools er installeret.
 
     ```powershell
     pbiviz
@@ -555,6 +577,10 @@ Rediger filen **capabilities.json** for at definere datarollen og tilknytningern
 Du har nu konfigureret datarollerne og bundet visualen til datavisningen.
 
 I det næste selvstudium lærer du, hvordan du føjer formateringsindstillinger til den brugerdefinerede visual.
+
+## <a name="debugging"></a>Fejlfinding
+
+Se [fejlfindingsvejledningen](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/how-to-debug/) for tips til fejlfinding af et brugerdefineret visual.
 
 ## <a name="next-steps"></a>Næste trin
 

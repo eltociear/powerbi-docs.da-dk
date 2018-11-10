@@ -428,8 +428,6 @@ items:
       items:
       - name: Omdøb indhold i Power BI
         href: service-rename.md
-      - name: Få vist dashboards og rapporter i fuld skærmtilstand (tv-tilstand)
-        href: service-fullscreen-mode.md
       - name: Quick Insights i Power BI
         href: service-insights.md
       - name: Tilmeld din US Government-organisation
@@ -766,6 +764,24 @@ items:
         href: refresh-troubleshooting-tile-errors.md
       - name: Sådan opdaterer du dine legitimationsoplysninger til Xero-indholdspakken, hvis opdatering mislykkedes
         href: service-refresh-xero-credentials.md
+    - name: Selvbetjent dataforberedelse
+      items:
+      - name: Selvbetjent dataforberedelse med dataflow (prøveversion)
+        href: service-dataflows-overview.md
+      - name: Opret og brug dataflow
+        href: service-dataflows-create-use.md
+      - name: Beregnede enheder med Power BI Premium
+        href: service-dataflows-computed-entities-premium.md
+      - name: Brug af dataflow med datakilder i det lokale miljø
+        href: service-dataflows-on-premises-gateways.md
+      - name: Link enheder mellem dataflow (prøveversion)
+        href: service-dataflows-linked-entities.md
+      - name: Brug af gradvis opdatering med dataflow (prøveversion)
+        href: service-dataflows-incremental-refresh.md
+      - name: Udviklerressourcer til dataflow
+        href: service-dataflows-developer-resources.md
+      - name: Opret forbindelse til dataflow i Power BI Desktop
+        href: desktop-connect-dataflows.md
   - name: Ressourcer
     items:
     - name: Videoer
@@ -776,6 +792,36 @@ items:
       href: supported-languages-countries-regions.md
     - name: Hvidbøger
       href: whitepapers.md
+- name: Sideinddelte rapporteri på Power BI
+  items:
+  - name: Oversigt
+    items:
+    - name: Hvad er sideinddelte rapporter? (Eksempelvisning)
+      href: paginated-reports-report-builder-power-bi.md
+  - name: Selvstudier
+    items:
+    - name: Opret en sideinddelt rapport, og upload den
+      href: paginated-reports-quickstart-aw.md
+  - name: Begreber
+    items:
+    - name: Rundt om visningen Rapportdesign
+      href: paginated-reports-report-design-view.md
+    - name: Ofte stillede spørgsmål om sideinddelte rapporter
+      href: paginated-reports-faq.md
+  - name: Sådan gør du
+    items:
+    - name: Opret en integreret datakilde
+      href: paginated-reports-embedded-data-source.md
+    - name: Opret et integreret datasæt
+      href: paginated-reports-create-embedded-dataset.md
+    - name: Opret parametre
+      href: paginated-reports-parameters.md
+    - name: Udgiv en sideinddelt rapport
+      href: paginated-reports-save-to-power-bi-service.md
+    - name: Se en sideinddelt rapport
+      href: paginated-reports-view-power-bi-service.md
+    - name: Interager med parametre
+      href: paginated-reports-view-parameters.md
 - name: Power BI for udviklere
   items:
   - name: Hvad kan udviklere bruge Power BI til?
@@ -1203,9 +1249,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI sikkerhed
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: a0d2f9e2fcf26f3eca516a1204c9d25a9225010f
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 7c2025a2dd23ce58937cd9987bec8d28b8ffb04c
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223185"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51508054"

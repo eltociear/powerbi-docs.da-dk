@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 525a7e45a804d9f82f4d06cf8618d790e140699f
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: 799115dc5487a196cbd5d8a2c9dce1603764034a
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336869"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223369"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Tilgængelighed i Power BI Desktop-rapporter
 Power BI indeholder funktioner, der gør det nemmere for personer med et handicap at bruge og interagere med Power BI-rapporter. Funktionerne omfatter muligheden for at bruge en rapport ved hjælp tastaturet eller en skærmlæser, bruge tabulatortasten til at sætte fokus på forskellige objekter på en side og bruge markører i visualiseringer.
@@ -34,6 +34,8 @@ Fra og med versionen af **Power BI Desktop** fra september 2017 kan du trykke p�
 
 Med den udvidede tilgængelighed kan du bruge en Power BI-rapport med et tastatur eller en skærmlæser med følgende teknikker:
 
+Når du får vist en rapport, skal du generelt slå scanningstilstand fra.
+
 Du kan skifte fokus mellem rapportens sidefaner eller objekter på en given rapportside ved hjælp af **Ctrl + F6**.
 
 * Når der er fokus på en *rapports sidefaner*, skal du bruge *tabulator*- eller *pile*tasten til at flytte fokus fra én rapportside til den næste. Titlen på rapportsiden, og om den er markeret i øjeblikket, læses højt af skærmlæseren. For at indlæse den rapportside, der i øjeblikket er i fokus, skal du bruge *Enter* eller *mellemrumstasten*.
@@ -48,7 +50,7 @@ Du kan trykke på **Alt+Skift+F11** for at få vist en tilgængelighedsversion a
 ![Tryk på Alt + Skift + F11 i Power BI Desktop for at få vist tilgængelighedsvinduet Se data for et visuelt element](media/desktop-accessibility/accessibility_04.png)
 
 > [!NOTE]
-> Funktionen "Vis data" er kun tilgængelig for skærmlæsere med brug af denne tastaturgenvej. Hvis du åbner Vis data via indstillingen i visualiseringens overskrift, vil det ikke være tilgængelig for skærmlæsere.
+> Funktionen "Vis data" er kun tilgængelig for skærmlæsere med brug af denne tastaturgenvej. Hvis du åbner Vis data via indstillingen i visualiseringens overskrift, vil det ikke være tilgængelig for skærmlæsere. Når du bruger Vis data, kan du slå scanningstilstand for at drage fordel af alle de genvejstaster, der angives i skærmlæseren.
 
 Fra og med udgivelsen af **Power BI Desktop** i juli 2018 har udsnit nu tilgængelighedsfunktioner indbygget. Når du vælger et udsnit, kan du bruge Ctrl+pil højre til at justere værdien af udsnittet for at skifte mellem de forskellige kontrolelementer i udsnittet. Når du trykker på Ctrl+pil højre første gang, vil fokus f.eks. være på viskelæderet, og hvis du trykker på mellemrumstasten, svarer det til at klikke på viskelæderknappen, hvilket sletter alle værdierne i udsnittet. 
 
@@ -112,6 +114,55 @@ Der er et par kendte problemer og begrænsninger i forbindelse med tilgængeligh
 
 * Når du bruger skærmlæsere med **Power BI Desktop**, får du den bedste oplevelse, hvis du åbner din foretrukne skærmlæser, før du åbner nogen filer i Power BI Desktop.
 * Hvis du bruger Oplæser, vil der være nogle begrænsninger, når du navigerer omkring Vis data som en HTML-tabel.
+
+## <a name="keyboard-shortcuts"></a>Tastaturgenveje
+### <a name="frequently-used-shortcuts"></a>Ofte anvendte genveje
+| Hvis du vil foretage denne handling:           | Tryk på                |
+| :------------------- | :------------------- |
+| Flyt fokus mellem afsnit  | Ctrl + F6 |
+| Flyt fokus fremad i afsnittet | Tab         |
+| Flyt fokus tilbage i afsnittet | Shift + Tab |
+
+### <a name="on-visual"></a>På visuelt element
+| Hvis du vil foretage denne handling:           | Tryk på                |
+| :------------------- | :------------------- |
+| Flyt fokus til menuen for visuelle elementer | Alt + Shift + F10 |
+| Vis data | Alt + Shift +F11  |
+
+### <a name="pane-navigation"></a>Rudenavigation
+| Hvis du vil foretage denne handling:           | Tryk på                |
+| :------------------- | :------------------- |
+| Åbn en genvejsmenu | <ul><li>Windows-tastatur: Windows-genvejstasten + F10.  Windows-genvejstasten er mellem Alt-tasten til venstre og pil til venstre</li><li>Andre tastaturer: Shift + F10</li></ul> |
+
+### <a name="slicer"></a>Udsnit
+| Hvis du vil foretage denne handling:           | Tryk på                |
+| :------------------- | :------------------- |
+| Interager med et udsnitsværktøj | Ctrl + pil til højre |
+
+### <a name="selection-pane"></a>Ruden Markering
+| Hvis du vil foretage denne handling:           | Tryk på                |
+| :------------------- | :------------------- |
+| Aktivér ruden Markering | F6 |
+| Flyt et objekt op i lagdelingen | Ctrl + Shift + F |
+| Flyt et objekt ned i lagdelingen | Ctrl + Shift + B |
+| Skjul/Vis (slå til og fra) et objekt | Ctrl + Shift + S |
+
+### <a name="dax-editor"></a>DAX-editor
+| Hvis du vil foretage denne handling:           | Tryk på                |
+| :------------------- | :------------------- |
+| Flyt linje op/ned | Alt + pil op/pil ned |
+| Kopiér linjen op/ned | Shift + Alt + pil op/pil ned |
+| Indsæt linje nedenfor | Ctrl + Enter |
+| Indsæt linje ovenfor | Ctrl + Shift + Enter |
+| Gå til matchende parentes | Ctrl + Shift + \ |
+| Ryk linje ind/ud | Ctrl + ] / [ |
+| Indsæt markøren | Alt + klik |
+| Vælg den aktuelle linje | Ctrl + I |
+| Vælg alle forekomster af det aktuelle valg | Ctrl + Shift + L |
+| Vælg alle forekomster af det aktuelle ord | Ctrl + F2 |
+
+
+
 
 ## <a name="next-steps"></a>Næste trin
 * [Brug rapporttemaer i Power BI Desktop (prøveversion)](desktop-report-themes.md)

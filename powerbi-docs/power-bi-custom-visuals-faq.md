@@ -10,12 +10,12 @@ ms.component: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/29/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a2e43d205b9e4f3085652ac3603ee68f67b2b33c
-ms.sourcegitcommit: f9dd6098ca57d4d6cad34284126d4e58eab1c92c
+ms.openlocfilehash: 064d32944f52f6e391d4a7ec4df41ecbf09b7e3f
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50222148"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223070"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Ofte stillede spørgsmål om brugerdefinerede Power BI-visuals
 
@@ -58,3 +58,7 @@ Ja, hvis administratoren deaktiverer de brugerdefinerede visuals fra administrat
 **Hvad er certificerede brugerdefinerede visuals?**
 
 Certificerede brugerdefinerede visuals er visuals på [markedspladsen](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals), der opfylder visse [angivne](power-bi-custom-visuals-certified.md) kodekrav og test udført af Power BI-teamet.  De test, der udføres, er designet til at kontrollere, at visualen ikke har adgang til eksterne tjenester eller ressourcer. Men Microsoft er ikke forfatter af brugerdefinerede visuals fra tredjepart, og vi anbefaler, at kunder kontakter forfatteren direkte for at kontrollere funktionaliteten af en sådan visual.
+
+## <a name="next-steps"></a>Næste trin
+
+Du kan finde oplysninger om fejlfinding under [Fejlfinding af dine brugerdefinerede visualiseringer i Power BI](power-bi-custom-visuals-troubleshoot.md).

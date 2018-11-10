@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: bdd43c820f87bb9308478b4e2100514349644d11
-ms.sourcegitcommit: 862faf948468d7f6d464b83f4e0b040d5213a580
+ms.openlocfilehash: 11ad100bce2e13d5622676f43573dee411a93221
+ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50252370"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50973298"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI-licenser i din organisation
 
@@ -150,6 +150,9 @@ Den AAD-indstilling, der styrer tilmelding, er **AllowAdHocSubscriptions**. For 
     ```powershell
      Set-MsolCompanySettings -AllowAdHocSubscriptions $true
     ```
+
+> [!NOTE]
+> AllowAdHocSubscriptions-flaget bruges til at kontrollere flere brugeregenskaber i organisationen, herunder muligheden for at brugere kan tilmelde sig Azure Rights Management Service. Alle disse egenskaber påvirkes, hvis flaget ændres.
 
 ## <a name="next-steps"></a>Næste trin
 

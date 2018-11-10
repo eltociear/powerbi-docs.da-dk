@@ -10,13 +10,13 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
-ms.date: 10/20/2018
-ms.openlocfilehash: e336323863dfacc8c74f2dc1f721231d58d03834
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.date: 11/01/2018
+ms.openlocfilehash: fc0234536415c758992cec629452a3e629c46ad1
+ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50100766"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50973321"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Integrer med rapportwebdelen i SharePoint Online
 
@@ -82,14 +82,34 @@ Integrering af en rapport i SharePoint Online giver ikke automatisk brugere till
 > [!IMPORTANT]
 > Sørg for at gennemse, hvem der kan få vist rapporten, i Power BI-tjenesten, og giv adgang til dem, der er ikke angivet.
 
-Du kan give adgang til rapporten i Power BI-tjenesten på to måder. Hvis du bruger en Office 365-gruppe til at kompilere dit SharePoint Online-teamwebsted, kan du angive brugeren som medlem af **apparbejdsområdet i Power BI-tjenesten** og på **SharePoint-siden**. Dette sikrer, at brugerne kan få vist indholdet af den pågældende gruppe. Du kan finde flere oplysninger under [Opret og distribuer en app i Power BI](service-create-distribute-apps.md).
+Du kan give adgang til rapporten i Power BI-tjenesten på to måder. Hvis du bruger en Office 365-gruppe til at kompilere dit SharePoint Online-teamwebsted, kan du angive brugeren som medlem af **apparbejdsområdet i Power BI-tjenesten** og på **SharePoint-siden**. Du kan finde flere oplysninger under [Administrer dit apparbejdsområde](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
-Du kan også dele en rapport direkte med brugerne ved at integrere rapporten i en app. Appen skal være installeret på forhånd, for at rapporten kan integreres. Du kan konfigurere appen til at blive installeret på forhånd ved hjælp af funktionen **Installer appen automatisk**.
+Du kan også dele en rapport direkte med brugerne ved at integrere rapporten i en app. Der er et par trin, du skal følge, for at integrere en rapport i en app.  
+
+1. Opretteren af appen er en Pro-bruger.
+
+2. Opretteren genererer en rapport i et apparbejdsområde. *For at kunne dele med **brugere af den gratis version af Power BI** skal arbejdsområdet være angivet som et **Premium-arbejdsområde**.*
+
+3. Opretteren publicerer appen og installerer den derefter. *Opretteren skal sørge for at installere appen for at få adgang til rapportens URL-adresse, som bruges til at integrere med SharePoint Online.*
+
+4. Nu skal alle slutbrugere også installere appen. Du kan dog angive, at appen skal forudinstalleres for slutbrugere, ved hjælp af funktionen **Installér appen automatisk**, som kan aktiveres på [Power BI-administrationsportalen](service-admin-portal.md).
 
    ![Installér appen automatisk](media/service-embed-report-spo/install-app-automatically.png)
 
-> [!NOTE]
-> **Brugeren skal både have adgang til SharePoint-siden og rapporten for at få vist rapporten på SharePoint-siden.**
+5. Opretteren åbner appen og går til rapporten.
+
+6. Opretteren kopierer URL-adressen til den integrerede rapport fra den rapport, der er installeret af appen. *Brug ikke rapportens oprindelige URL-adresse fra apparbejdsområdet.*
+
+7. Opret et nyt teamwebsted i SharePoint Online.
+
+8. Føj rapportens URL-adresse, som du kopierede under trin 6, til Power BI-webdelen.
+
+9. Tilføj alle slutbrugere og/eller grupper, som skal bruge dataene på siden SharePoint Online og i den Power BI-app, du har oprettet.
+
+    > [!NOTE]
+    > **Brugerne eller grupperne skal have adgang både til siden SharePoint Online og rapporten i Power BI-appen for at få vist rapporten på SharePoint-siden.**
+
+10. Nu kan slutbrugeren gå til teamwebstedet i SharePoint Online og få vist rapporterne på siden.
 
 ## <a name="multi-factor-authentication"></a>Multifaktorgodkendelse
 

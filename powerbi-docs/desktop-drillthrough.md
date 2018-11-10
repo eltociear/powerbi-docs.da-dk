@@ -10,70 +10,72 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8bbfafcecb6876ea063bb6751ca31c25697dc185
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 4989e981c3f39a637b3bb4927c427be0005c7776
+ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44725851"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51027431"
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Brug detaljeadgang i Power BI Desktop
-Med **detaljeadgang** i **Power BI Desktop** kan du oprette en side i rapporten, som fokuserer på et bestemt objekt – f.eks. en leverandør, en kunde eller en producent. Når denne rapportside er i fokus, kan brugere højreklikke på et datapunkt på andre rapportsider og få detaljeadgang til siden med fokus for at få oplysninger, der er filtreret i forhold til denne kontekst.
+Med **detaljeadgang** i **Power BI Desktop** kan du oprette en side i rapporten, som fokuserer på et bestemt objekt – f.eks. en leverandør, en kunde eller en producent. Brugerne kan højreklikke på et datapunkt på andre rapportsider. Derefter de kan få detaljeadgang til den fokuserede side for at få oplysninger, der er filtreret til denne kontekst.
 
-![bruge detaljeadgang](media/desktop-drillthrough/drillthrough_01.png)
+![Brug detaljeadgang](media/desktop-drillthrough/drillthrough_01.png)
 
 ## <a name="using-drillthrough"></a>Brug detaljeadgang
-1. Hvis du vil bruge **detaljeadgang**, skal du oprette en rapportside, der indeholder de visuals, du gerne vil have vist for den type enhed, som du vil have detaljeadgang til. 
+1. Hvis du vil bruge **detaljeadgang**, skal du oprette en rapportside med de visuals, du ønsker til den type enhed, som du vil have detaljeadgang til. 
 
-    Hvis du f.eks. vil angive detaljeadgang for producenter, kan du oprette en side med detaljeadgang med visuelle elementer, der viser det samlede salg, enheder leveret i alt, salg efter kategori, salg efter område osv. Det betyder, at når du får detaljeadgang til denne side, er de pågældende visuals specifikke for den valgte producent.
+    Lad os f.eks. sige, at du vil angive detaljeadgang til producenter. Så kan du oprette en side med detaljeadgang med visuelle elementer, der viser det samlede salg, enheder leveret i alt, salg efter kategori, salg efter område osv. Det betyder, at når du får detaljeadgang til denne side, er de pågældende visuals specifikke for den valgte producent.
 
-2. På siden med detaljeadgang kan du derefter gå til sektionen **Felter** i ruden **Visualiseringer** og trække det felt, du vil have detaljeadgang til, til området **Detaljeadgangsfiltre**.
+2. På siden med detaljeadgang kan du derefter gå til sektionen **Felter** i ruden **Visualiseringer** og trække det felt, du vil aktivere detaljeadgang til, til området **Detaljeadgangsfiltre**.
 
-    ![detaljeadgang til område](media/desktop-drillthrough/drillthrough_02.png)
+    ![Detaljeadgang til område](media/desktop-drillthrough/drillthrough_02.png)
 
-    Når du føjer et felt til området **Detaljeadgangsfiltre**, opretter **Power BI Desktop** automatisk et visuelt element for knappen *Tilbage*. Dette visuelle element bliver en knap i udgivne rapporter, så brugere, der anvender din rapport i **Power BI-tjenesten**, nemt kan komme tilbage til den rapportside, de kom fra (den side, de valgte at få detaljeadgang fra).
+    Når du føjer et felt til området **Detaljeadgangsfiltre**, opretter **Power BI Desktop** automatisk et visuelt element for knappen *Tilbage*. Denne visual bliver en knap i publicerede rapporter. Brugere, der anvender din rapport i **Power BI-tjenesten**, kan bruge denne knap til at komme tilbage til den rapportside, de kom fra.
 
-    ![detaljeadgang til billede](media/desktop-drillthrough/drillthrough_03.png)
+    ![Detaljeadgang til billede](media/desktop-drillthrough/drillthrough_03.png)
 
 ## <a name="use-your-own-image-for-a-back-button"></a>Brug dit eget billede på en Tilbage-knap    
- Eftersom knappen Tilbage er et billede, kan du erstatte billedet af dette visual med et hvilket som helst billede, og det fungerer stadig som en Tilbage-knap, der sender brugere af rapporten tilbage til den oprindelige side.
+ Da knappen Tilbage er et billede, kan du erstatte billedet af denne visual med et hvilken som helst billede, du ønsker. Det fungerer stadig som en tilbage-knap, så brugerne af rapporter kan vende tilbage til den oprindelige side. Hvis du vil bruge dit eget billede som tilbage-knap, skal du gøre følgende:
 
-1. På fanen **Startside** skal du klikke på **Billede** og derefter finde billedet og placere det på siden detaljeadgang.
-2. Vælg det nye billede på siden Detaljeadgang og indstil skyderen for **Link** til On i afsnittet Formatér billede, og angiv **Type** til **Tilbage**. Billedet fungerer nu som en Tilbage-knap.
+1. På fanen **Hjem** vælger du **Image**. Finde derefter dit billede, og placer det på siden med detaljeadgang.
 
-    ![bruge billede for tilbage](media/desktop-drillthrough/drillthrough_05.png)
+2. Vælg det nye billede på siden med detaljeadgang. I afsnittet **Formatér billede** skal du indstille skyderen **Link** til **Til** og derefter indstille **Type** til **Tilbage**. Billedet fungerer nu som en Tilbage-knap.
 
-    Når din side med **detaljeadgang** er fuldført, og brugere højreklikker på et datapunkt i din rapport, der benytter det felt, du har anbragt i området **Detaljeadgangsfiltre**, vises en genvejsmenu, der understøtter detaljeadgang til denne side.
+    ![Brug billede til Tilbage](media/desktop-drillthrough/drillthrough_05.png)
 
-    ![detaljeadgangsmenu](media/desktop-drillthrough/drillthrough_04.png)
+    
+     Nu kan brugerne højreklikke på et datapunkt i din rapport og få en genvejsmenu, der understøtter detaljeadgang til denne side. 
 
-    Når brugerne vælger at få detaljeadgang, filtreres siden, så den viser oplysninger om det datapunkt, de har højreklikket på. Hvis de f.eks. har højreklikket på et datapunkt om Contoso (en producent) og har valgt at få detaljeadgang, filtreres den side med detaljeadgang, de sendes videre til, til Contoso.
+    ![Detaljeadgangsmenu](media/desktop-drillthrough/drillthrough_04.png)
+
+    Når brugerne vælger at få detaljeadgang, filtreres siden, så den viser oplysninger om det datapunkt, de har højreklikket på. Lad os f.eks. sige, at de har højreklikket på et datapunkt om Contoso (en producent) og valgt at få detaljeadgang. Den side med detaljeadgang, som de skal du gå til, filtreres til Contoso.
 
 ## <a name="pass-all-filters-in-drillthrough"></a>Overfør alle filtre i detaljeadgang
 
-Fra og med versionen af **Power BI Desktop** fra maj 2018 kan du overføre alle anvendte filtre til detaljeadgangsvinduet. Hvis du f.eks. kun har valgt en bestemt produktkategori og de visuelle elementer, der er filtreret under denne kategori, kan du vælge detaljeadgang. Du er måske interesseret i at se, hvordan denne detaljeadgang ville se ud med alle de anvendte filtre.
+Fra og med versionen af **Power BI Desktop** fra maj 2018 kan du overføre alle anvendte filtre til detaljeadgangsvinduet. Du kan f.eks. kun vælge en bestemt kategori af produkter og de visuals, der filtreres til denne kategori, og derefter vælge detaljeadgang. Du er måske interesseret i at se, hvordan denne detaljeadgang ville se ud med alle de anvendte filtre.
 
-Hvis du vil beholde alle anvendte filtre, skal du gå til sektionen **Detaljeadgang** i ruden **Visualiseringer** og bare slå indstillingen **Overfør alle filtre** **til**. 
+Hvis du vil beholde alle anvendte filtre, skal du gå til afsnittet **Detaljeadgang** i ruden **Visualiseringer** og slå indstillingen **Overfør alle filtre** **til**. 
 
-![beholde alle filtre](media/desktop-drillthrough/drillthrough_06.png)
+![Behold alle filtre](media/desktop-drillthrough/drillthrough_06.png)
 
-I versioner af **Power BI Desktop** før maj 2018 svarer funktionsmåden til at slå denne indstilling **fra**.
+I versioner af **Power BI Desktop**, der er udgivet før maj 2018, svarer funktionsmåden til at slå denne indstilling **fra**.
 
 Når du derefter udfører detaljeadgang på et visuelt element, kan du se, hvilke filtre der er anvendt som resultat af det visuelle kildeelement, hvor der er anvendt midlertidige filtre. I vinduet med detaljeadgang vises disse midlertidige filtre med kursiv. 
 
-![midlertidige filtre med kursiv](media/desktop-drillthrough/drillthrough_07.png)
+![Midlertidige filtre med kursiv](media/desktop-drillthrough/drillthrough_07.png)
 
-Bemærk, at du kan gøre dette med sider med værktøjstip, men det giver en forkert oplevelse (værktøjstippet ser ikke ud til at fungere korrekt), så det anbefales ikke at gøre det med værktøjstip.
+Du kan gøre dette med sider med værktøjstip, men det giver en forkert oplevelse, fordi værktøjstippet ikke ser ud til at fungere korrekt. Derfor anbefales det ikke at gøre dette med værktøjstip.
 
 ## <a name="add-a-measure-to-drillthrough"></a>Føj et mål til detaljeadgang
 
-Ud over at overføre alle filtre til vinduet med detaljeadgang kan du også tilføje et mål (eller en numerisk kolonne med en opsummering) i detaljeområdet. Du skal blot trække detaljeadgangsfeltet til Detaljeadgang-kortet for at anvende det. 
+Ud over at overføre alle filtre til vinduet med detaljeadgang kan du også tilføje et mål (eller en numerisk kolonne med en opsummering) i detaljeområdet. Træk detaljeadgangsfeltet til detaljeadgangskortet for at anvende det. 
 
-![føj et mål til detaljeadgang](media/desktop-drillthrough/drillthrough_08.png)
+![Føj et mål til detaljeadgang](media/desktop-drillthrough/drillthrough_08.png)
 
-Når du tilføjer et mål (eller en numerisk kolonne med en opsummering), kan du få adgang til siden, når feltet bruges i området *Værdi* for en visualisering.
+Når du tilføjer et mål eller en numerisk kolonne med en opsummering, kan du få adgang til siden, når feltet bruges i området *Værdi* for en visual.
 
-Så nemt er det at bruge **detaljeadgang** i dine rapporter. Det kan give dig en udvidet visning af de enhedsoplysninger, du vælger til dit detaljeadgangsfilter.
+Så nemt er det at bruge **detaljeadgang** i dine rapporter. Det kan give dig en udvidet visning af de enhedsoplysninger, som du valgte til dit detaljeadgangsfilter.
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -10,45 +10,48 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 781e9f6813fee63b7c5d83a2e7e60e1ed1eeedc0
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 1b512a3e6ef3ead8d93e1b554fbab3aaed8a2a5a
+ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39326987"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51027385"
 ---
 # <a name="connect-to-an-impala-database-in-power-bi-desktop"></a>Opret forbindelse til en Impala-database i Power BI Desktop
-I Power BI Desktop kan du oprette forbindelse til en **Impala**-database og bruge de underliggende data på samme måde som enhver anden datakilde i Power BI Desktop.
+I Power BI Desktop kan du oprette forbindelse til en **Impala**-database og bruge de underliggende data på samme måde som med enhver anden datakilde i Power BI Desktop.
 
 ## <a name="connect-to-an-impala-database"></a>Opret forbindelse til en Impala-database
-Hvis du vil oprette forbindelse til en **Impala**-database, skal du vælge **Hent data** på båndet **Hjem** i Power BI Desktop. Vælg **Database** blandt kategorierne til venstre, hvorefter du kan se **Impala**.
+Følg disse trin for at oprette forbindelse til en **Impala**-database: 
 
-![](media/desktop-connect-impala/connect_impala_2.png)
+1. Vælg **Hent data** på båndet **Hjem** i Power BI Desktop. 
 
-I vinduet **Impala**, der åbnes, skal du skrive eller indsætte navnet på din Impala-server i feltet og derefter vælge **OK**. Bemærk, at du kan vælge at **importere** data direkte i Power BI, eller du kan bruge **DirectQuery**. Du kan få mere at vide om [brug af DirectQuery](desktop-use-directquery.md).
+2. Vælg **Database** blandt kategorierne til venstre. Derefter kan du se **Impala**.
 
-![](media/desktop-connect-impala/connect_impala_3a.png)
+    ![Hent data](media/desktop-connect-impala/connect_impala_2.png)
 
-Angiv dine legitimationsoplysninger, når du bliver bedt om det, eller opret forbindelse anonymt. Impala-connectoren understøtter Anonymous-, Basic- (brugernavn + adgangskode) og Windows-godkendelse.
+3. I vinduet **Impala**, der vises, skal du skrive eller indsætte navnet på din Impala-server i feltet. Vælg derefter **OK**. Du kan **importere** data direkte i Power BI, eller du kan bruge **DirectQuery**. Få mere at vide om [brug af DirectQuery](desktop-use-directquery.md).
 
-![](media/desktop-connect-impala/connect_impala_4.png)
+    ![Impala-vindue](media/desktop-connect-impala/connect_impala_3a.png)
 
-> [!NOTE]
-> Når du angiver dit brugernavn og din adgangskode for en bestemt **Impala**-server, anvendes de samme legitimationsoplysninger i efterfølgende forsøg på at oprette forbindelse via Power BI Desktop. Du kan ændre disse legitimationsoplysninger ved at gå til **Filer > Indstillinger > Indstillinger for datakilde**.
-> 
-> 
+4. Angiv dine legitimationsoplysninger, når du bliver bedt om det, eller opret forbindelse anonymt. Impala-connectoren understøtter Anonymous-, Basic- (brugernavn + adgangskode) og Windows-godkendelse.
 
-Når du har oprettet forbindelse, vises der et vindue af typen **Navigator**, hvor de data, der er tilgængelige på serveren, vises. Her kan du vælge et eller flere elementer, der skal importeres og bruges i **Power BI Desktop**.
+    ![Impala-connector](media/desktop-connect-impala/connect_impala_4.png)
 
-![](media/desktop-connect-impala/connect_impala_5.png)
+    > [!NOTE]
+    > Efter du har angivet dit brugernavn og din adgangskode for en bestemt **Impala**-server, anvendes de samme legitimationsoplysninger i efterfølgende forsøg på at oprette forbindelse via Power BI Desktop. Du kan ændre disse legitimationsoplysninger ved at gå til **Filer > Indstillinger > Indstillinger for datakilde**.
+
+
+5. Efter du har oprettet forbindelse, vises vinduet **Navigator** og de data, der er tilgængelige på serveren. Blandt disse data kan du vælge elementer, som skal importeres og bruges i **Power BI Desktop**.
+
+    ![Vinduet Navigator](media/desktop-connect-impala/connect_impala_5.png)
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
-Der er et par begrænsninger og overvejelser, du skal være opmærksom på i forbindelse med **Impala**-forbindelsen:
+Der er et par begrænsninger og overvejelser, du skal være opmærksom på i forbindelse med **Impala**-connectoren:
 
-* Connectoren Impala understøttes i datagatewayen i det lokale miljø vha. en af de tre understøttede godkendelsesmetoder.
+* Impala-connectoren understøttes af datagatewayen i det lokale miljø via en af de tre understøttede godkendelsesmetoder.
 
 ## <a name="next-steps"></a>Næste trin
-Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:
+Du kan oprette forbindelse til mange forskellige datakilder ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:
 
 * [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)

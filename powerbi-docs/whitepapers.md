@@ -9,12 +9,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
-ms.openlocfilehash: 34f34fd0a83367e306f8d84b4f9ebdf3cf30af93
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 88bfd67ddf284ea6b518c5ebdd6386887513f393
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396767"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223047"
 ---
 # <a name="whitepapers-for-power-bi"></a>Whitepapers til Power BI
 
@@ -36,7 +36,7 @@ Whitepapers gør det muligt at udforske Power BI-emner på et mere detaljeret ni
 | [Power BI og SAP BW](https://aka.ms/powerbiandsapbw)| I dette dokument beskrives, hvordan SAP-kunder kan integrere Power BI i eksisterende SAP Business Warehouse (BW)-systemer.| Februar 2018 |
 | [Power BI styrings- og udrulningsmetoder](http://go.microsoft.com/fwlink/?LinkId=785915&clcid=0x409) | Heri behandles begreber, muligheder og forslag til styring i Power BI-økosystemet. | Marts 2016 |
 | [Sikring af modellen for tabellarisk BI-semantik](http://download.microsoft.com/download/D/2/0/D20E1C5F-72EA-4505-9F26-FEF9550EFD44/Securing%20the%20Tabular%20BI%20Semantic%20Model.docx) |I denne rapport introduceres sikkerhedsmodellen for tabellarisk BI-semantik og Power BI. Du lærer at oprette roller, implementere dynamiske sikkerhed, konfigurere repræsentationsindstillinger, administrere roller og vælge en metode til oprettelse af forbindelse til modeller, der fungerer i sikkerhedskonteksten for dit netværk. | April 2016 |
-| [Power BI og GDPR](https://aka.ms/power-bi-gdpr-whitepaper)| Dette link fører dig til listen over hvidbøger på Service Trust Portal, herunder Microsoft Power BI GDPR-hvidbogen. | April 2018 |
+| [Power BI og GDPR](https://aka.ms/power-bi-gdpr-whitepaper)| Dette link fører dig til listen over whitepapers på Service Trust Portal, herunder GDPR-whitepaperet Microsoft Power BI. | April 2018 |
 
 [!INCLUDE [GDPR-related guidance](includes/gdpr-hybrid-note.md)]
 

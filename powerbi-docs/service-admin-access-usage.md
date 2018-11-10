@@ -7,72 +7,66 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/10/2017
+ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: c1ac019b0d6f80c3129b105336f71a71e0925648
-ms.sourcegitcommit: 627918a704da793a45fed00cc57feced4a760395
+ms.openlocfilehash: dfd9aab419d0a097721c4f2b49e382c11be82541
+ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37926530"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50909496"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Find Power BI-brugere, der er logget på
-Hvis du er en lejeradministrator, og du vil se, hvem der er logget på Power BI, kan du bruge Azure Active Directory-adgang og anvendelsesrapporter til at skabe synlighed.
+
+Hvis du er lejeradministrator og gerne vil se, hvem der er logget på Power BI, skal du bruge [adgangs- og brugsrapporter i Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins) til at få indsigt.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/1AVgh9w9VM8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Du kan få adgang til aktivitetsrapporten i den [nye](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-sign-ins) og den [klassiske](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports) webportal i Azure Active Directory (Azure AD). Mens videoen ovenfor bruger den klassiske portal som et eksempel, fremhæves den nye portal i denne artikel.
-
 > [!NOTE]
-> Denne aktivitetsrapport identificerer ikke, hvilken type licens hver bruger har.
+> Aktivitetsrapporten indeholder nyttige oplysninger, men du kan ikke se, hvilken type licens hver bruger har. Brug Office 365 Administration til at få vist licenser.
 
 ## <a name="requirements"></a>Krav
-Følgende er kravene for at få vist logonaktivitetsrapporten.
 
-* Brugere, der har rollen Global administrator, Sikkerhedsadministrator eller Sikkerhedslæser, kan få adgang til dataene.
-* Alle brugere (ikke-administratorer) har adgang til deres egne logon.
-* Din lejer skal have en Azure AD Premium-licens tilknyttet for at få vist alle logonaktivitetsrapporter.
+Alle brugere (herunder personer, der ikke er administratorer) kan se en rapport over deres egne logon, men du skal opfylde følgende krav for at få vist en rapport for alle brugere.
 
-## <a name="using-the-azure-portal-to-view-sign-ins"></a>Brug Azure-portalen til at få vist logonaktivitet
-Du kan bruge Azure AD-portalen til at få vist logonaktivitet.
+* Din lejer skal have en Azure AD Premium-licens tilknyttet.
 
-1. Gå til **Azure-portalen**, og vælg **Azure Active Directory**.
-2. Under **Aktivitet** skal du vælge **Logonaktivitet**.
+* Du skal have en af følgende roller: Global administrator, Sikkerhedsadministrator eller Sikkerhedslæser.
+
+## <a name="use-the-azure-portal-to-view-sign-ins"></a>Brug Azure Portal til at få vist logon
+
+Følg disse trin for at få vist logonaktivitet.
+
+1. På **Azure Portal** skal du vælge **Azure Active Directory**.
+
+1. Under **Overvågning** skal du vælge **Logon**.
    
-    ![](media/service-admin-access-usage/azure-portal-sign-ins.png)
-3. Filtrer programmet efter enten **Microsoft Power BI** eller **Power BI Gateway**, og vælg **Anvend**.
+    ![Azure AD-logon](media/service-admin-access-usage/azure-portal-sign-ins.png)
+
+1. Filtrer programmet efter enten **Microsoft Power BI** eller **Power BI Gateway**, og vælg **Anvend**.
+
+    **Microsoft Power BI** filtrerer efter logonaktivitet relateret til tjenesten, hvorimod **Power BI Gateway** filtrerer efter logonaktivitet, der er specifik for datagatewayen i det lokale miljø.
    
-    **Microsoft Power BI** er til logonaktivitet relateret til tjenesten, mens **Power BI Gateway** er specifik logonaktivitet for datagatewayen i det lokale miljø.
-   
-    ![](media/service-admin-access-usage/sign-in-filter.png)
+    ![Filtrering efter logon](media/service-admin-access-usage/sign-in-filter.png)
 
 ## <a name="export-the-data"></a>Eksportér dataene
-Du har to indstillinger til eksport af logondataene. Du kan enten gøre dette ved at downloade en CSV-fil, eller du kan bruge PowerShell.
 
-### <a name="download-csv"></a>Download csv
-I skærmbilledet Aktivitet kan du vælge **Download** på værktøjslinjen. Dette vil download en csv-fil for de data, der i øjeblikket er filtreret.
+Du har to muligheder for at eksportere logondataene: Download en csv-fil, eller brug PowerShell. Øverst i logonrapporten skal du vælge en af følgende muligheder:
 
-![](media/service-admin-access-usage/download-sign-in-data-csv.png)
+* **Download** for at downloade en csv-fil for de data, der er filtreret i øjeblikket.
 
-### <a name="powershell"></a>PowerShell
-Du kan bruge PowerShell til at eksportere logondataene. Et [eksempel](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples#powershell-script) er tilgængeligt i Azure AD-dokumentationen.
+* **Script** for at downloade et PowerShell-script for de data, der er filtreret i øjeblikket. Du kan opdatere filteret i scriptet efter behov.
 
-> [!NOTE]
-> Hvis PowerShell-eksemplet skal kunne fungere, skal du sørge for at følge [betingelserne for at få adgang til Azure AD-rapporterings-API'en](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites).
-> 
-> 
+![Download csv-fil eller script](media/service-admin-access-usage/download-sign-in-data-csv.png)
 
 ## <a name="data-retention"></a>Dataopbevaring
-Data, der er relateret til logonaktivitet, kan være tilgængelige i op til 30 dage. Du kan finde flere oplysninger i [Politikker til opbevaring af Azure Active Directory-rapport](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-retention).
+
+Relaterede logondata er tilgængelige i op til 30 dage. Du kan finde flere oplysninger i [Politikker til opbevaring af Azure Active Directory-rapport](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
 
 ## <a name="next-steps"></a>Næste trin
-[Logonaktivitetsrapporter i Azure Active Directory-portalen (ny portal)](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-activity-sign-ins)  
-[Få vist dine adgangs- og brugsrapporter (klassisk portal)](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)  
-[Logoneksempel i et PowerShell-script](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples#powershell-script)  
-[Politikker til opbevaring af Azure Active Directory-rapport](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-retention)  
-[Brug af overvågning i din organisation](service-admin-auditing.md)  
-[Aktivering af den udvidede Pro-prøveversion](service-extended-pro-trial.md)
+
+[Brug af overvågning i din organisation](service-admin-auditing.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

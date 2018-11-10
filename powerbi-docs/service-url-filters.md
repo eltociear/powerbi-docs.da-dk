@@ -1,5 +1,5 @@
 ---
-title: Tilføj Power BI-rapportparametre ved hjælp af URL-adressen
+title: Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 description: Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen til URL-adressen, du kan endda filtrere på mere end ét felt.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,24 +9,24 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/01/2018
+ms.date: 11/01/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 7a034e865b0e0b6ba55385f8873d039dba0662db
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: d708a4ff07a0d202fcc709f6348e48505d7589d0
+ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396951"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50973367"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 
-Når du åbner en rapport i Power BI-tjenesten, har hver side i rapporten sin egen entydige URL-adresse. Hvis du vil filtrere denne rapportside, kan du bruge ruden Filtre på rapportcanvasset.  Eller du kan føje forespørgselsstrengparametre til URL-adressen for at filtrere rapporten. Du har måske en rapport, du vil vise til kollegaer, og du vil filtrere den på forhånd for dem. Det kan du f.eks. gøre ved at starte med URL-standardadressen til rapporten, føje filterparametrene til URL-adressen og derefter sende dem hele den nye URL-adresse via mail.
+Når du åbner en rapport i Power BI-tjenesten, har hver side i rapporten sin egen entydige URL-adresse. Hvis du vil filtrere denne rapportside, kan du bruge ruden Filtre på rapportcanvasset.  Eller du kan føje forespørgselsstrengparametre til URL-adressen for at filtrere rapporten. Du har måske en rapport, du vil vise til kollegaer, og du vil filtrere den på forhånd for dem. En måde, du kan filtrere på, er ved at starte med URL-standardadressen til rapporten, føje filterparametrene til URL-adressen og derefter sende hele den nye URL-adresse til dem via mail.
 
 ![Power BI-rapport i tjenesten](media/service-url-filters/power-bi-report2.png)
 
 ## <a name="uses-for-query-string-parameters"></a>Anvendelsesområder for forespørgselsstrengparametre
 
-Du kan f.eks. bruge parametre i forespørgselsstrengen, hvis du arbejder i Power BI Desktop og vil oprette en rapport, der indeholder links til andre Power BI-rapporter, men kun vil vise nogle af oplysningerne i de andre rapporter. Start med at filtrere rapporterne ved hjælp af forespørgselsstrengparametre, og gem URL-adresserne. Derefter skal du oprette en tabel i Desktop med de nye URL-adresser til rapporterne.  Derefter skal du publicere og dele rapporten.
+Forestil dig, at du arbejder i Power BI Desktop. Du vil gerne oprette en rapport, der indeholder links til andre Power BI-rapporter, men vil kun vise nogle af oplysningerne i de andre rapporter. Start med at filtrere rapporterne ved hjælp af forespørgselsstrengparametre, og gem URL-adresserne. Derefter skal du oprette en tabel i Desktop med de nye URL-adresser til rapporterne.  Derefter skal du publicere og dele rapporten.
 
 Et andet anvendelsesområde for forespørgselsstrengparametre er ved oprettelse af en avanceret Power BI-løsning.  Ved hjælp af DAX kan der oprettes en rapport, der dynamisk genererer en URL-adresse til en filtreret rapport baseret på de valg, som kunden udfører i den aktuelle rapport. Når kunderne vælger URL-adressen, får de kun vist de relevante oplysninger. 
 
@@ -43,7 +43,7 @@ URL?filter=***Tabel***/***Felt*** eq '***værdi***'
 
 ### <a name="field-types"></a>Felttyper
 
-Felttypen kan være et tal, dato og klokkeslæt eller streng, og typen skal stemme overens med den type, der er angivet i datasættet.  Du kan f.eks. ikke angive en tabelkolonne af typen "streng", hvis du skal finde dato og klokkeslæt eller en numerisk værdi i et datasæt, der er indstillet som en dato (f.eks. tabel/strengkolonne er 1).
+Felttypen kan være et tal, dato og klokkeslæt eller streng, og typen skal stemme overens med den type, der er angivet i datasættet.  Du kan f.eks. ikke angive en tabelkolonne af typen "streng", hvis du skal finde dato og klokkeslæt eller en numerisk værdi i et datasæt, der er indstillet som en dato, f.eks. Table/StringColumn eq 1.
 
 * **Strenge** skal omgives af enkelte anførselstegn: 'leders navn'.
 * **Tal** kræver ingen særlig formatering
@@ -85,7 +85,7 @@ Du kan også filtrere på flere felter ved at føje yderligere parametre til din
 ?filter=Store/Territory eq 'NC'
 ```
 
-Hvis du vil filtrere på flere felter, skal du tilføje et **and** og et andet felt i samme format som ovenfor. Her er et eksempel.
+Hvis du vil filtrere flere felter, skal du tilføje et "**and**" og et andet felt i samme format som ovenfor. Her er et eksempel.
 
 ```
 ?filter=Store/Territory eq 'NC' and Store/Chain eq 'Fashions Direct'
@@ -95,7 +95,7 @@ Hvis du vil filtrere på flere felter, skal du tilføje et **and** og et andet f
 
 ## <a name="operators"></a>Operatorer
 
-Power BI understøtter mange operatorer ud over **og**. I nedenstående tabel vises disse operatorer sammen med den indholdstype, de understøtter.
+Power BI understøtter mange operatorer ud over "**and**". I nedenstående tabel vises disse operatorer sammen med den indholdstype, de understøtter.
 
 |operator  | definition | streng  | tal | Dato |  Eksempel|
 |---------|---------|---------|---------|---------|---------|
@@ -125,13 +125,13 @@ Et URL-filter i Power BI kan inkludere tal i følgende formater.
 
 ### <a name="date-data-types"></a>Datodatatyper
 
-Power BI understøtter både OData V3 og V4 for datatyperne **Date** og **DateTimeOffset**.  Datoer repræsenteres vha. EDM-formatet (2019-02-12T00:00:00). Det betyder, at når du angiver en dato som ÅÅÅÅ-MM-DD, vil Power BI fortolke den som ÅÅÅÅ-MM-DDT00:00:00.
+Power BI understøtter både OData V3 og V4 for datatyperne **Date** og **DateTimeOffset**.  Datoer repræsenteres ved hjælp af formatet EDM (2019-02-12T00:00:00), så når du angiver en dato som YYYY-MM-DD, fortolker Power BI det som YYYY-MM-DDT00:00:00.
 
-Hvorfor er den forskel vigtig? Lad os sige, at du oprette en forespørgselsstrengparameter **Tabel/Dato gt 2018-08-03**.  Vil resultaterne omfatter 3. august 2018 eller starte 4. august 2018? Da Power BI oversætter din forespørgsel til **Tabel/Dato gt 2018-08-03T00:00:00**, inkluderer dine resultater alle de datoer, som ikke har et klokkeslæt, der kun består af nuller, da disse datoer vil være større end **2018-08-03T00:00:00**.
+Hvorfor er den forskel vigtig? Lad os sige, at du oprette en forespørgselsstrengparameter **Tabel/Dato gt 2018-08-03**.  Inkluderer resultaterne 3. august 2018, eller starter de med 4. august 2018? Da Power BI oversætter din forespørgsel til **Tabel/Dato gt 2018-08-03T00:00:00**, inkluderer dine resultater alle de datoer, som ikke har et klokkeslæt, der kun består af nuller, da disse datoer vil være større end **2018-08-03T00:00:00**.
 
 ## <a name="special-characters-in-url-filters"></a>Specialtegn i URL-filtre
 
-Specialtegn og mellemrum kræver yderligere formatering. Når din forespørgsel indeholder mellemrum, tankestreger eller andre ikke-ASCII-tegn, skal du foranstille en *escape-kode*, der starter med et understregningstegn og et X (**_x**) og derefter angive den 4-cifrede **Unicode** efterfulgt af endnu et understregningstegn. Hvis Unicode-værdien er på mindre end 4 tegn, skal du foranstille nuller. Her vises nogle eksempler.
+Specialtegn og mellemrum kræver yderligere formatering. Når din forespørgsel indeholder mellemrum, tankestreger eller andre tegn, der ikke er ASCII, skal du foranstille en *escape-kode*, der starter med et understregningstegn og et X (**_x**) og derefter angive den firecifrede **Unicode** efterfulgt af endnu et understregningstegn. Hvis Unicode-værdien består af færre end fire tegn, skal du foranstille den med nuller. Her vises nogle eksempler.
 
 |Identifikator  |Unicode-værdi  | Kode til Power BI  |
 |---------|---------|---------|
@@ -159,9 +159,9 @@ Publicer rapporten på Power BI-tjenesten, og brug derefter URL-forespørgselsst
 
 ## <a name="pin-a-tile-from-a-filtered-report"></a>Fastgør et felt fra en filtreret rapport
 
-Når du har filtreret rapporten ved hjælp af parametre for forespørgselsstrengen, kan du kan fastgøre visualiseringer fra denne rapport til dit dashboard.  Feltet på dashboardet viser de filtrerede data, og når dette dashboardfelt vælges, åbnes den rapport, der blev brugt til at oprette det.  Men filtreringen, du foretog ved hjælp af URL-adressen, gemmes ikke med rapporten, og når dashboardfeltet vælges, åbnes rapporten i ufiltreret tilstand.  Det betyder, at de data, der vises i dashboardfeltet, ikke svarer til de data, der vises i rapportvisualiseringen.
+Når du har filtreret rapporten ved hjælp af parametre for forespørgselsstrengen, kan du kan fastgøre visualiseringer fra denne rapport til dit dashboard.  Feltet på dashboardet viser de filtrerede data, og når dette dashboardfelt vælges, åbnes den rapport, der blev brugt til at oprette det.  Den filtrering, du udførte ved hjælp af URL-adressen, gemmes dog ikke i rapporten. Når du vælger dashboardfeltet, åbnes rapporten i ufiltreret tilstand.  De data, der vises på dashboardfeltet, svarer derfor ikke til de data, der vises i rapportvisualiseringen.
 
-Dette er nyttigt, når du vil se forskellige resultater: filtreret på dashboardet og ufiltreret i rapporten.
+Denne uoverensstemmelse er nyttig, når du vil se forskellige resultater: filtreret på dashboardet og ufiltreret i rapporten.
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 
@@ -169,8 +169,8 @@ Der er et par ting, du skal være opmærksom på, når du bruger parametre for f
 
 * Når du bruger operatoren *in*, skal værdierne til højre for *in* være en kommasepareret liste angivet i parenteser.    
 * På Power BI-rapportserveren kan du [sende rapportparametre](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) ved at inkludere dem i en URL-adresse til rapporten. Disse parametre i URL-adressen har ikke noget præfiks, da de sendes direkte til det program, der behandler rapporten.
-* Filtrering af forespørgselsstrengen kan ikke bruges sammen med [Publicer på internettet](service-publish-to-web.md).
-* [Integrer med rapportwebdelen i SharePoint Online](service-embed-report-spo.md) understøtter ikke URL-filtre.
+* Filtrering af forespørgselsstrengen fungerer ikke sammen med [Publicer på internettet](service-publish-to-web.md).
+* [Integrer med rapportwebdelen i SharePoint Online](service-embed-report-spo.md) understøtter ikke URL-adressefiltre.
 * Datatypen long er (2^53-1) på grund af begrænsninger i Javascript.
 * URL-adresse-filtre for rapporter har en grænse på 10-udtryk (10 filtre, der er forbundet med OG).
 

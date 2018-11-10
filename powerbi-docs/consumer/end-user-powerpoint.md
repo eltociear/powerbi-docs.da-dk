@@ -1,5 +1,5 @@
 ---
-title: Eksportér rapporter fra Power BI til PowerPoint (preview)
+title: Eksportér rapporter fra Power BI til PowerPoint
 description: Se, hvordan du kan eksportere en Power BI-rapport til PowerPoint.
 author: mihart
 manager: kvivek
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 85a0a34f9c67d29fee7be6335f79e97b482548be
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 661d615ed33b12ae0557fd8feaa0bc47b3a6638f
+ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565331"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50736935"
 ---
-# <a name="export-reports-from-power-bi-to-powerpoint-preview"></a>Eksportér rapporter fra Power BI til PowerPoint (preview)
+# <a name="export-reports-from-power-bi-to-powerpoint"></a>Eksportér rapporter fra Power BI til PowerPoint
 Med Power BI kan du nu publicere din rapport i **Microsoft PowerPoint** og nemt oprette et slidesæt ud fra din Power BI-rapport. Når du **eksporterer til PowerPoint**, sker der følgende:
 
 * Hver side i Power BI-rapporten bliver til et enkeltslide i PowerPoint
@@ -77,9 +77,9 @@ Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbe
 * **R-visuals** understøttes ikke i øjeblikket. Sådanne visuals eksporteres som et tomt billede til PowerPoint med en fejlmeddelelse, hvor der står, at den pågældende visual ikke understøttes.
 * **Brugerdefinerede visuals**, der er blevet **certificeret**, understøttes. Hvis du vil have flere oplysninger om certificerede brugerdefinerede visuals, herunder hvordan du får en brugerdefineret visual certificeret, skal du se [Sådan får du en brugerdefineret visual certificeret](../power-bi-custom-visuals-certified.md). Brugerdefinerede visuals, som ikke er certificeret, understøttes ikke og eksporteres som tomme billeder til PowerPoint med en fejlmeddelelse om, at den pågældende visual ikke understøttes.
 * **Certificerede brugerdefinerede visuals** understøttes. En certificeret visual er blevet godkendt til brug med Power BI, opfylder visse kodekrav og har bestået meget strenge sikkerhedstests. Du kan [få mere at vide om **certificerede brugerdefinerede visuals**](../power-bi-custom-visuals-certified.md).
-* Rapporter med mere end 15 rapportsider kan ikke eksporteres i øjeblikket.
+* Rapporter med mere end 30 rapportsider kan ikke eksporteres i øjeblikket.
 * Processen med at eksportere rapporten til PowerPoint kan tage nogle minutter at fuldføre, så vær tålmodig. Faktorer, som kan påvirke den tid, det kræver, omfatter rapportens struktur og den aktuelle belastning på Power BI-tjenesten.
-* Hvis menuelementet **Eksportér til PowerPoint (preview)** ikke er tilgængeligt i Power BI-tjenesten, er det sandsynligvis fordi, din lejeradministrator har deaktiveret funktionen. Kontakt din lejeradministrator for at få flere oplysninger.
+* Hvis menuelementet **Eksportér til PowerPoint** ikke er tilgængeligt i Power BI-tjenesten, er det sandsynligvis fordi, din lejeradministrator har deaktiveret funktionen. Kontakt din lejeradministrator for at få flere oplysninger.
 * Baggrundsbilleder beskæres med diagrammets omgivende område. Det anbefales, at du fjerner baggrundsbilleder, før du eksporterer til PowerPoint.
 * **Interaktivitet i sessionen** såsom fremhævning og filtrering, detailudledning osv. understøttes endnu ikke ved eksport til PowerPoint. Den eksporterede PowerPoint-præsentation viser de oprindelige visuals, sådan som de blev gemt i rapporten.
 * Sider i PowerPoint oprettes altid i 9:16-standardstørrelsen, uanset de oprindelige sidestørrelser eller dimensioner i Power BI-rapporten.
