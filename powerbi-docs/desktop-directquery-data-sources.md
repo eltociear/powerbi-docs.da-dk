@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fee4acf21e38ddeaf78ff785d76b41c774c7022d
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: 97d9fc6bf7a27b9d681d10ae20ab0780622e5ee8
+ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909542"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51223392"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Understøttede datakilder i forbindelse med DirectQuery i Power BI
 **Power BI Desktop** og **Power BI-tjenesten** indeholder mange datakilder, som du kan oprette forbindelse til, og som kan give dig adgang til data. I denne artikel beskrives, hvilke datakilder til Power BI der understøtter forbindelsesmetoden, der er kendt som **DirectQuery**. Du kan finde flere oplysninger om DirectQuery under [**DirectQuery i Power BI**](desktop-directquery-about.md).
@@ -31,8 +31,8 @@ Følgende datakilder understøtter DirectQuery i Power BI:
 * IBM Netezza (beta)
 * Impala (version 2.x)
 * Oracle Database (version 12 og nyere)
-* SAP Business Warehouse Application Server
-* SAP Business Warehouse Message Server (beta)
+* SAP Business Warehouse-programserver
+* SAP Business Warehouse-meddelelsesserver (beta)
 * SAP HANA
 * Snowflake
 * Spark (beta) (version 0.9 og nyere)
@@ -65,8 +65,8 @@ I følgende tabel kan du se, om der kræves en **datagateway i det lokale miljø
 | Spark (beta), version 0.9 og nyere |Understøttes endnu ikke i **Power BI-tjenesten** |
 | Azure HDInsight Spark (beta) |Nej |
 | IBM Netezza |Ja |
-| SAP Buisness Warehouse Application Server |Ja |
-| SAP Buisness Warehouse Message Server |Understøttes endnu ikke i **Power BI-tjenesten** |
+| SAP Business Warehouse-programserver |Ja |
+| SAP Business Warehouse-beskedserver |Understøttes endnu ikke i **Power BI-tjenesten** |
 | Google BigQuery |Nej |
 
 
