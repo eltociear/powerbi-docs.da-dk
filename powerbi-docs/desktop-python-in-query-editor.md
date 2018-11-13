@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 873b83221aa5a1a728d648cccf7a23d5924dfb6d
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: c3664eee2d3836fc802d1728bbfe7fce3e03e18d
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45975489"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297199"
 ---
 # <a name="using-python-in-query-editor"></a>Brug af Python i Forespørgselseditor
 Du kan bruge **Python**, som er et programmeringssprog, der bruges af statistikere, datavidenskabsfolk og dataanalytikere, i **Forespørgselseditor** i Power BI Desktop. Denne integration af Phyton i **Forespørgselseditor** gør det muligt at udføre datarensning ved hjælp af R og udføre avanceret dataudformning og -analyser i datasæt, herunder fuldførelse af manglende data, forudsigelser og klyngedannelse, blot for at nævne nogle få. **Phyton** er et effektivt sprog og kan bruges i **Forespørgselseditor** til at forberede din datamodel og oprette rapporter.
@@ -75,9 +75,7 @@ Nu kan vi oprette en visual for at se, hvordan Python-scriptkoden udfyldte de ma
 Når denne visual er fuldført – og alle andre visuals, som du muligvis vil oprette ved hjælp af **Power BI Desktop** – kan du gemme **Power BI Desktop**-filen (der gemmes som en .pbix-fil) og derefter bruge datamodellen, herunder de Python-scripts, der er en del af modellen, i Power BI tjenesten.
 
 > [!NOTE]
-> Vil du gerne se, hvordan en udført PBIX-fil ser ud, når disse trin er fuldført? Det er ikke noget problem – du kan hente den fuldførte **Power BI Desktop**-fil, der bruges i eksemplerne, [lige her](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete Values with Python in PQ.pbix).
-> 
-> 
+> Vil du gerne se, hvordan en udført PBIX-fil ser ud, når disse trin er fuldført? Det er ikke noget problem – du kan hente den fuldførte **Power BI Desktop**-fil, der bruges i eksemplerne, [lige her](http://download.microsoft.com/download/A/B/C/ABCF5589-B88F-49D4-ADEB-4A623589FC09/Complete%20Values%20with%20Python%20in%20PQ.pbix).
 
 Når du har overført PBIX-filen til Power BI-tjenesten, er der et par trin mere, der er nødvendige for at aktivere opdatering af data (i tjenesten) og gøre det muligt for visuals at blive opdateret i tjenesten (dataene skal have adgang til Python, for at dine visuals kan opdateres). De ekstra trin er følgende:
 

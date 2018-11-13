@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 580d1ead35042d14c155c5a28fdb6ba6e6dbcd54
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 082d0ba1e638e8eaf6ae16fa8d5ed63c128c8ad5
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544935"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507847"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips til udformning af et fantastisk Power BI-dashboard
 Nu, hvor du har oprettet et dashboard og tilføjet nogle felter, kan du overveje, hvordan du ikke bare gør dit dashboard flot, men også funktionelt. Generelt betyder det, at man sørger for, at den vigtigste information er tydelig, og at udseendet er rent og ryddeligt.
@@ -43,7 +43,7 @@ Eftersom dashboards er beregnet til at vise vigtige oplysninger i overblik, er d
 Er dashboardet for rodet?  Fjern alle uvigtige oplysninger, og behold kun dem, der let kan læses og forstås.
 
 ## <a name="make-use-of-full-screen-mode"></a>Brug fuldskærmstilstand
-Vis dit dashboard i [fuld skærm](service-fullscreen-mode.md) uden forstyrrelser.
+Vis dit dashboard i [fuld skærm](consumer/end-user-focus.md) uden forstyrrelser.
 
 ## <a name="make-the-most-important-information-biggest"></a>Gør de vigtigste oplysninger størst
 Hvis tekst og visualiseringer på dit dashboard alle har samme størrelse, kan læserne have vanskeligt ved at fokusere på, hvad der er vigtigst. For eksempel er kortvisualiseringer en god måde at fremhæve et vigtigt tal på:  

@@ -8,15 +8,15 @@ featuredvideoid: 9DeAKM4SNJM
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/20/2018
+ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c547cd83d879cd81fe12c02f5418f5bf44ca1483
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 62a8ae907b01c8309aee101aa074e9bfb72b207d
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545939"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265903"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>Tilpas egenskaberne for x- og y-aksen
 I dette selvstudium lærer du mange forskellige måder til at tilpasse X- og Y-aksen for dine visualiseringer. Det er ikke alle visualiseringer, der har akser, eller som kan tilpasses. Et cirkeldiagram har for eksempel ikke akser. Indstillingerne for tilpasning kan desuden variere mellem visualiseringerne. Samtidig er der for mange indstillinger til, at de kan beskrives i én artikel. Jeg vil derfor se nærmere på nogle af de aksetilpasninger, der oftest bruges. Så får du samtidig erfaring med at bruge fanen Format for visualiseringer på dit rapportcanvas i Power BI.  
@@ -86,30 +86,33 @@ Start med at oprette et kombinationsdiagram, der viser, hvordan antallet af buti
 
     ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-line-chart.png)
 
-> [NOTE]: For help sorting by month, see [sorting by other criteria](../consumer/end-user-change-sort.md#other)
-> 1. For januar var GM% på 35 %, steg til 45 % i april, faldt i juli og steg igen i august. Kan vi se et tilsvarende mønster for salget i dette og sidste år?
-> 2. Tilføj **This Year Sales > Value** og **Last Year Sales** i kurvediagrammet. Skalaen for **GM% Last Year** (den blå streg, der kører langs gitterlinjen 0M %) er meget mindre end skalaen for **Sales**, hvilket gør det svært at sammenligne. Og procentsatserne på Y-aksen er vist ikke så meget værd.      
+    > [NOTE]: For help sorting by month, see [sorting by other criteria](../consumer/end-user-change-sort.md#other)
 
-   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/flatline_new.png)
+    For januar var GM% på 35 %, steg til 45 % i april, faldt i juli og steg igen i august. Kan vi se et tilsvarende mønster for salget i dette og sidste år?
+     
+3. Tilføj **This Year Sales > Value** og **Last Year Sales** i kurvediagrammet. Skalaen for **GM% Last Year** (den blå streg, der kører langs gitterlinjen 0M %) er meget mindre end skalaen for **Sales**, hvilket gør det svært at sammenligne. Og procentsatserne på Y-aksen er vist ikke så meget værd.      
+
+    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/flatline_new.png)
+
 5. Hvis du vil gøre det nemmere at læse og fortolke visualiseringen, skal du konvertere kurvediagrammet til et Kurvediagram og stablet søjlediagram.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/converttocombo_new.png)
 
 6. Træk **Gross Margin Last Year %** fra **Kolonneværdier** til **Kurveværdier**. Nu har vi et stablet søjlediagram, som vi oprettede tidligere, ***plus*** et kurvediagram.  (Du kan evt. bruge de ting, du lærte tidligere, for at formatere skriftfarven og skriftstørrelsen for aksen.)
    
-
    Der oprettes to akser i Power BI, og datasættene kan derfor skaleres forskelligt. Det kan ses ved, at den venstre akse måles i dollar, mens den højre akse måles i procent.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes-new.png)
 
 ### <a name="format-the-secondary-y-axis"></a>Formatér den sekundære Y-akse
-1. I ruden **Visualiseringer** skal du vælge ikonet med malerullen for at få vist formateringsindstillingerne.
-2. Udvid indstillingerne for Y-aksen ved at vælge den nedadvendte pil.
-3. Rul gennem listen, indtil du finder indstillingerne for **Vis sekundær**. Ret **Vis sekundær** fra **Fra** til **Til**.
+1. I ruden **Visualiseringer** skal du vælge ikonet med malerullen for at få vist formateringsindstillingerne.    
+2. Udvid indstillingerne for Y-aksen ved at vælge den nedadvendte pil.    
+3. Rul gennem listen, indtil du finder indstillingerne for **Vis sekundær**. Ret **Vis sekundær** fra **Fra** til **Til**.    
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/combo3.png)
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-dual-axes.png)
+
 4. (Valgfrit) Tilpas de to akser. Hvis du ændrer **Placering** for en af de to akser i søjlediagrammet eller aksen i kurvediagrammet, skifter de to akser side.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-y-axes-options.png)
@@ -120,7 +123,7 @@ Når en visualisering er så kompleks som denne, hjælper det at tilføje akseti
 1. Slå **Titel** **Til** for **Y-akse (søjlediagram)** og **Y-akse (kurvediagram)**.
 2. Angiv **Stil** til **Vis kun titel**.
 
-   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/yaxissettings.png)
+   ![](media/power-bi-visualization-customize-x-axis-and-y-axis/yaxissettings.png)    
 3. I kombinationsdiagrammet vises der nu to akser, som begge har en titel.
 
    ![](media/power-bi-visualization-customize-x-axis-and-y-axis/power-bi-combo-chart.png)

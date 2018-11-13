@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: maggies
-ms.openlocfilehash: d265e465825fb8def167207ed632f1702adcbc7f
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 4bc9a0fe6dd3becd67c2b6dd8ffeb9d7922705a6
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973626"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507927"
 ---
 # <a name="view-reports-in-presentation-mode-on-surface-hub-and-windows-10---power-bi"></a>Vis rapporter i præsentationstilstand på Surface Hub og i Windows 10 – Power BI
 Du kan få vist rapporter i præsentationstilstand på Surface Hub, og du kan få vist dashboards, rapporter og felter i fuldskærmsvisning på Windows 10-enheder. 
@@ -27,7 +27,7 @@ I fuldskærmsvisning i Power BI-mobilappen fjernes alt "overflødigt", f.eks. na
 
 Når du får vist en rapport i præsentationstilstand på Surface Hub, kan du tegne på siderne med forskellige farver blæk og navigere mellem siderne i rapporten.
 
-Du kan også [få vist dashboards og rapporter i fuldskærmsvisning fra Power BI-tjenesten](../../service-fullscreen-mode.md) på internettet.
+Du kan også [få vist dashboards og rapporter i fuldskærmsvisning fra Power BI-tjenesten](../end-user-focus.md) på internettet.
 
 > [!NOTE]
 > Præsentationstilstand adskiller sig fra [fokuseringstilstand for felter](mobile-tiles-in-the-mobile-apps.md).
@@ -74,6 +74,6 @@ Præsentationstilstand er som standard aktiveret i Surface Hub, men hvis det er 
 7. Hvis du vil afslutte fuldskærmsvisning, skal du stryge nedad fra toppen og trykke på de to pile, der peger ind mod hinanden ![](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-hub-icon.png).
 
 ## <a name="next-steps"></a>Næste trin
-* [Få vist dashboards og rapporter i fuldskærmsvisning fra Power BI-tjenesten](../../service-fullscreen-mode.md)
+* [Få vist dashboards og rapporter i fuldskærmsvisning fra Power BI-tjenesten](../end-user-focus.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

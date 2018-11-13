@@ -5,14 +5,14 @@ services: power-bi
 author: mihart
 ms.service: powerbi-service
 ms.topic: resource
-ms.date: 09/27/2018
+ms.date: 11/09/2018
 ms.author: mihart
-ms.openlocfilehash: 30c8d94d6f224175cb2bee4cc6e6e475fe352f60
-ms.sourcegitcommit: f6360934b9af20bd630e2d3cb88398e3f5794090
+ms.openlocfilehash: d8238ae96bb57c580c0b74725b105ad7f4332136
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799130"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51508008"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordliste til Power BI-tjenesten
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
@@ -317,4 +317,4 @@ Power BI-dashboards indeholder rapportfelter.
 
 ## <a name="next-steps"></a>Næste trin
 
-- [Grundlæggende begreber for Power BI-tjenesten](/consumers/end-user-basic-concepts.md)
+[Grundlæggende begreber for Power BI-tjenesten](end-user-basic-concepts.md)
