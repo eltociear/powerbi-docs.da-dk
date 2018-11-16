@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: df61b9c68407ef0d00d1d5981c57021e7659cfff
-ms.sourcegitcommit: fbb27fb40d753b5999a95b39903070766f7293be
+ms.openlocfilehash: 18d5b2ca504ec3533e2ded0e5480885ea862fb3a
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49359740"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619488"
 ---
 # <a name="storage-mode-in-power-bi-desktop-preview"></a>Lagringstilstand i Power BI Desktop (prøveversion)
 
@@ -43,16 +43,6 @@ Indstillingen af lagringstilstand i Power BI Desktop er en af tre relaterede fun
 
 * **Lagringstilstand**: Du kan nu angive, hvilke visualiseringer der kræver en forespørgsel til back end-datakilder. Visuelle elementer, der ikke kræver en forespørgsel, importeres, også selvom de er baseret på DirectQuery. Denne funktion hjælper med at forbedre ydeevnen og reducere belastningen af back-end. Tidligere ville selv enkle visuelle elementer, f.eks. udsnit, starte forespørgsler, der blev sendt til back end-kilderne. Lagringstilstand er beskrevet nærmere i denne artikel.
 
-## <a name="enable-the-storage-mode-preview-feature"></a>Aktivér lagringstilstandens prøveversionsfunktion
-
-Funktionen Lagringstilstand fås som prøveversion og skal aktiveres i Power BI Desktop. Du aktiverer lagringstilstand ved at vælge **Filer** > **Indstillinger** > **Indstillinger** > **Prøveversionsfunktioner** og derefter markere afkrydsningsfeltet **Sammensatte modeller**. 
-
-![Ruden "Prøveversionsfunktion"](media/desktop-composite-models/composite-models_02.png)
-
-Hvis du vil aktivere funktionen, skal du genstarte Power BI Desktop.
-
-![Vinduet "Funktion kræver en genstart"](media/desktop-composite-models/composite-models_03.png)
-
 ## <a name="use-the-storage-mode-property"></a>Brug lagringstilstand korrekt
 
 Lagringstilstand er en egenskab, du kan angive for hver enkelt tabel i din model. Hvis du vil angive lagringstilstanden, skal du gå til ruden **Felter**, højreklikke på den tabel, hvis egenskaber du vil angive, og derefter vælge **Egenskaber**.
@@ -75,19 +65,7 @@ Hvis du ændrer en tabel til **Import**, kan du *ikke fortryde* handlingen. Denn
 
 ## <a name="constraints-on-directquery-and-dual-tables"></a>Begrænsninger af DirectQuery- og Dual-tabeller
 
-Dual-tabeller har de samme begrænsninger som DirectQuery-tabeller. Disse begrænsninger omfatter begrænsede M-transformationer og begrænsede DAX-funktioner i beregnede kolonner. Du kan finde flere oplysninger under [Konsekvenser ved brugen af DirectQuery](desktop-directquery-about.md#implications-of-using-directquery).
-
-## <a name="relationship-rules-on-tables-with-different-storage-modes"></a>Relationsregler for tabeller med forskellige lagringstilstande
-
-Relationer skal overholde regler, der er baseret på de relaterede tabellers lagringstilstand. I dette afsnit kan du se eksempler på gyldige kombinationer. Du kan finde flere oplysninger under [Mange til mange-relationer i Power BI Desktop (prøveversion)](desktop-many-to-many-relationships.md).
-
-På et datasæt med en enkelt datakilde er følgende *1-til-mange*-relationskombinationer gyldige:
-
-| Tabel på *mange*-siden | Tabel på *én*-siden |
-| ------------- |----------------------| 
-| Dual          | Dual                 | 
-| Importér        | Import eller Dual       | 
-| DirectQuery   | DirectQuery eller Dual  | 
+Dual-tabeller har de samme funktionelle begrænsninger som DirectQuery-tabeller. Disse begrænsninger omfatter begrænsede M-transformationer og begrænsede DAX-funktioner i beregnede kolonner. Du kan finde flere oplysninger under [Konsekvenser ved brugen af DirectQuery](desktop-directquery-about.md#implications-of-using-directquery).
 
 ## <a name="propagation-of-dual"></a>Overførsel af Dual
 Se den følgende simple model, hvor alle tabellerne er fra en enkelt kilde, der understøtter Import og DirectQuery.
@@ -98,14 +76,11 @@ Lad os sige, at alle tabeller i denne model er DirectQuery til at starte med. Hv
 
 ![Vindue med advarsel om lagringstilstand](media/desktop-storage-mode/storage-mode_05.png)
 
-Dimensionstabellerne (*Customer*, *Date* og *Geography*) skal være angivet som **Dual** for at overholde de tidligere beskrevne relationsregler. I stedet for at angive disse tabeller til **Dual** i forvejen kan du angive dem via en enkelt handling.
+Dimensionstabellerne (*Kunde*, *Geografi* og *Dato*) kan indstilles til **Dual** for at reducere antallet af svage relationer i datasættet og forbedre ydeevnen. Svage relationer involverer normalt mindst én DirectQuery-tabel, hvor joinforbindelse af logik ikke kan sendes til kildesystemerne. Det, at **Dual**-tabeller kan fungere både som DirectQuery og Import, hjælper med at undgå dette.
 
 Overførselslogikken er designet til at hjælpe med modeller, der indeholder mange tabeller. Lad os antage, at du har en model med 50 tabeller, og kun visse faktatabeller (transaktionstabeller) skal cachelagres. Logikken i Power BI Desktop beregner sættet af dimensionstabeller, der som minimum skal angives til **Dual**, så det behøver du ikke at gøre.
 
 Overførselslogikken gennemgår kun den ene side af **1-til-mange**-relationer.
-
-* Du må ikke ændre tabellen *Customer* til **Import** – i stedet for at ændre *SurveyResponse* – på grund af dens relationer til DirectQuery-tabellerne *Sales* og *SurveyResponse*.
-* Det er tilladt at ændre tabellen *Customer* til **Dual** – i stedet for at ændre *SurveyResponse*. Overførselslogikken angiver også tabellen *Geography* til **Dual**.
 
 ## <a name="storage-mode-usage-example"></a>Eksempel på brugen af lagringstilstand
 Lad os fortsætte med eksemplet fra det forrige afsnit og antage, at vi anvender de følgende indstillinger for egenskaben for lagringstilstand:
@@ -191,4 +166,3 @@ Du kan finde flere oplysninger om sammensatte modeller og DirectQuery i følgend
 * [Mange til mange-relationer i Power BI Desktop (prøveversion)](desktop-many-to-many-relationships.md)
 * [Brug DirectQuery i Power BI](desktop-directquery-about.md)
 * [Understøttede datakilder i forbindelse med DirectQuery i Power BI](desktop-directquery-data-sources.md)
-

@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 11/13/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4c10a0ffdf11829d8faa15ea14be136922c86382
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 7b511a28f056df268216552f7d075a88c047f9f3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545015"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619833"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Forbrugsdata for dashboards og rapporter
 
@@ -69,7 +69,7 @@ Hvis du vil grave ned i rapportdataene eller oprette dine egne rapporter i forho
     > [!NOTE]
     > Hvis du fastgør et felt fra en rapport med forbrugsdata til et dashboard, kan dette dashboard ikke føjes til en app eller indholdspakke.
 
-## <a name="what-metrics-are-reported"></a>Hvilke data rapporteres der?
+## <a name="which-metrics-are-reported"></a>Hvilke forbrugsdata rapporteres?
 
 | Data | Dashboard | Rapport | Beskrivelse |
 | --- | --- | --- | --- |
@@ -162,6 +162,15 @@ Når administratorer deaktiverer forbrugsdata for hele organisationen, kan de br
 Power BI fås med forskellige nationale cloudmiljøer. Disse skyløsninger giver den samme sikkerhed, privatlivsbeskyttelse, overholdelse af standarder og gennemsigtighed som den globale version af Power BI kombineret med en unik lokal model, der lever op til lokale retningslinjer for levering af tjenester, dataopbevaring, adgang og kontrol. Forbrugsværdier er ikke tilgængelige i nationale cloudmiljøer pga. denne unikke model til lokale forordninger. Du kan få flere oplysninger under [nationale cloudmiljøer](https://powerbi.microsoft.com/en-us/clouds/).
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
+
+Det er vigtigt at forstå, at der kan opstå forskelle, når du sammenligner forbrugsdata og overvågningslogge, og hvorfor de kan opstå. *Overvågningslogge* indsamles ved hjælp af data fra Power BI-tjenesten, og *Forbrugsdata* indsamles på klienten. På grund af denne forskel svarer det samlede antal aktiviteter i overvågningslogge muligvis ikke altid overens med forbrugsdata på grund af følgende:
+
+* Forbrugsdata kan nogle gange tælle et lavere antal aktiviteter på grund af uensartede netværksforbindelser, programmer til blokering af annoncer eller andre problemer, der kan afbryde afsendelse af hændelserne fra klienten.
+* Visse typer af visninger er ikke inkluderet i forbrugsdata, som beskrevet tidligere i denne artikel.
+* Forbrugsdata kan nogle gange tælle et højere antal aktiviteter i situationer, hvor klienten opdateres, uden at der er behov for at sende en anmodning tilbage til Power BI-tjenesten.
+
+
+Ud over eventuelle forskelle mellem forbrugsdata og overvågningslogge kan følgende spørgsmål og svar om forbrugsdata være nyttige for brugere og administratorer:
 
 Spørgsmål: Jeg kan ikke køre forbrugsdata på et dashboard eller en rapport: Du kan kun få vist forbrugsdata for indhold, som du ejer eller har tilladelser til at redigere.
 

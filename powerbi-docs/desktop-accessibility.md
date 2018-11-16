@@ -7,25 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 799115dc5487a196cbd5d8a2c9dce1603764034a
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: d57d31e87197ee9d764a8d263dd4ee6dd0c75ac3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223369"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619626"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Tilgængelighed i Power BI Desktop-rapporter
 Power BI indeholder funktioner, der gør det nemmere for personer med et handicap at bruge og interagere med Power BI-rapporter. Funktionerne omfatter muligheden for at bruge en rapport ved hjælp tastaturet eller en skærmlæser, bruge tabulatortasten til at sætte fokus på forskellige objekter på en side og bruge markører i visualiseringer.
 
 ![Brug forskellige mærker til kurve- og områdediagrammer til at forbedre tilgængelighed](media/desktop-accessibility/accessibility_01.png)
-
-> [!NOTE]
-> Disse tilgængelighedsfunktioner er tilgængelige i versionen af **Power BI Desktop** fra juni 2017 og nyere versioner. Der er planlagt yderligere tilgængelighedsfunktioner for fremtidige versioner.
-> 
-> 
 
 ## <a name="consuming-a-power-bi-desktop-report-with-a-keyboard-or-screen-reader"></a>Brug en Power BI Desktop-rapport med et tastatur eller en skærmlæser
 Fra og med versionen af **Power BI Desktop** fra september 2017 kan du trykke på tasten med spørgsmålstegnet (**?**) for at få vist et vindue, der beskriver de tastaturgenveje for tilgængelighed, som findes i **Power BI Desktop**.
@@ -41,13 +36,13 @@ Du kan skifte fokus mellem rapportens sidefaner eller objekter på en given rapp
 * Når der er fokus på en *rapports sidefaner*, skal du bruge *tabulator*- eller *pile*tasten til at flytte fokus fra én rapportside til den næste. Titlen på rapportsiden, og om den er markeret i øjeblikket, læses højt af skærmlæseren. For at indlæse den rapportside, der i øjeblikket er i fokus, skal du bruge *Enter* eller *mellemrumstasten*.
 * Når der er fokus på en indlæst *rapportside*, skal du bruge *tabulatortasten* til at skifte fokus til de enkelte objekter på siden, som inkluderer alle tekstfelter, billeder, figurer og diagrammer. Skærmlæseren læser objektets type, objektets titel, hvis den har en sådan, og en beskrivelse af objektet, hvis rapportforfatteren har angivet det. 
 
-Hvis du, mens du navigere mellem visuelle elementer, vil interagere med dem yderligere, kan du trykke på **Alt+Skift+F10** for at flytte fokus til overskriften, der indeholder forskellige indstillinger, herunder sortering, eksport af de underliggende data for diagrammet og fokustilstand. 
+Hvis du, mens du navigere mellem visualiseringer, vil interagere med dem yderligere, kan du trykke på **Alt+Skift+F10** for at flytte fokus til visualiseringens overskrift, der indeholder forskellige indstillinger, herunder sortering, eksport af de underliggende data for diagrammet og fokustilstand. 
 
-![Tryk på Alt+Skift+F10 i Power BI Desktop for at flytte fokus til den visuelle header](media/desktop-accessibility/accessibility_08.png)
+![Tryk på Alt+Skift+F10 i Power BI Desktop for at flytte fokus til den visualiseringens overskrift](media/desktop-accessibility/accessibility_08.png)
 
 Du kan trykke på **Alt+Skift+F11** for at få vist en tilgængelighedsversion af vinduet *Vis data*. Med det kan du udforske data, der bruges i visualiseringen i en HTML-tabel, ved hjælp af de samme tastaturgenveje, du normalt anvender med din skærmlæser. 
 
-![Tryk på Alt + Skift + F11 i Power BI Desktop for at få vist tilgængelighedsvinduet Se data for et visuelt element](media/desktop-accessibility/accessibility_04.png)
+![Tryk på Alt + Skift + F11 i Power BI Desktop for at få vist tilgængelighedsvinduet Se data for en visualisering](media/desktop-accessibility/accessibility_04.png)
 
 > [!NOTE]
 > Funktionen "Vis data" er kun tilgængelig for skærmlæsere med brug af denne tastaturgenvej. Hvis du åbner Vis data via indstillingen i visualiseringens overskrift, vil det ikke være tilgængelig for skærmlæsere. Når du bruger Vis data, kan du slå scanningstilstand for at drage fordel af alle de genvejstaster, der angives i skærmlæseren.
@@ -65,7 +60,7 @@ Følgende tip kan hjælpe dig med at oprette **Power BI Desktop**-rapporter med 
 
 ### <a name="general-tips-for-accessible-reports"></a>Generelle tip til tilgængelighedsrapporter
 
-* For de visuelle elementer for **linje**, **område** og **kombinationsfelt** samt for de visuelle elementer for **punktdiagram** og **boble** skal du slå mærkerne til og bruge en anden *mærkeform* for hver linje.
+* For visualiseringerne for **linje**, **område** og **kombinationsfelt** samt for visualiseringerne for **punktdiagram** og **boble** skal du slå mærkerne til og bruge en anden *mærkeform* for hver linje.
   
   * Slå *Mærker* til, vælg sektionen **Format** i ruden **Visualiseringer**, udvid sektionen **Former**, og rul derefter ned for at finde **Mærker**, og slå indstillingen *til*.
   * Vælg derefter navnet på de enkelte linjer (eller området, hvis du bruger et **område**diagram) på rullelisten i sektionen **Former**. Under rullelisten kan du derefter justere mange aspekter for det mærke, der bruges til den valgte linje, herunder form, farve og størrelse.
@@ -76,12 +71,12 @@ Følgende tip kan hjælpe dig med at oprette **Power BI Desktop**-rapporter med 
 * Som opfølgning til forrige punkt skal du ikke bruge farver til at angive oplysninger. Ud over at bruge figurer på linje- og punktdiagrammer behøver du ikke nøjes med betinget formatering for at få indsigt i tabeller og matrixer. 
 * Vælg en bevidst sorteringsrækkefølge for hver visualisering i din rapport. Når brugere af skærmlæsere navigerer mellem de underliggende data i diagrammet, benytter den samme rækkefølge som visualiseringen.
 * Vælg et *tema*, der har stor kontrast, og som kan bruges af farveblinde, fra temagalleriet, og importér det ved hjælp af [eksempelfunktionen **Temaer**](desktop-report-themes.md).
-* For alle objekter i en rapport skal du angive en *alternativ tekst*. Hvis du gør det, sikrer du, at brugere af din rapport forstår, hvad du forsøger at fortælle med et visuelt element, selvom de ikke kan se det visuelle element, billedet, formen eller tekstfeltet. Du kan angive en *alternativ tekst* for et hvilket som helst objekt i en **Power BI Desktop**-rapport ved at vælge objektet (f.eks. en visual, en figur osv.), gå til ruden **Visualiseringer** og vælge **Format**, udvide **Generelt**, rulle til bunden og udfylde tekstfeltet **Alternativ tekst**.
+* For alle objekter i en rapport skal du angive en *alternativ tekst*. Hvis du gør det, sikrer du, at brugere af din rapport forstår, hvad du forsøger at fortælle med en visualisering, selvom de ikke kan se visualiseringen, billedet, formen eller tekstfeltet. Du kan angive en *alternativ tekst* for et hvilket som helst objekt i en **Power BI Desktop**-rapport ved at vælge objektet (f.eks. en visual, en figur osv.), gå til ruden **Visualiseringer** og vælge **Format**, udvide **Generelt**, rulle til bunden og udfylde tekstfeltet **Alternativ tekst**.
   
   ![Alternativ tekst for et hvilket som helst objekt i en rapport kan tilføjes i Visualiseringer > Format > Generelt > feltet Alternativ tekst](media/desktop-accessibility/accessibility_02.png)
 * Kontrollér, at der er tilstrækkelig kontrast mellem teksten og eventuelle baggrundsfarver i dine rapporter. Der er flere værktøjer (f.eks. [Colour Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/)), som du kan bruge til at kontrollere farverne i din rapport. 
 * Brug tekststørrelser og skrifttyper, der er nemme at læse. En lille tekststørrelse eller skrifttyper, der kan være vanskelige at læse, hjælper ikke i forbindelse med tilgængelighed.
-* Medtag en titel, akseetiketter og datanavne i alle visuelle elementer.
+* Medtag en titel, akseetiketter og datanavne i alle visualiseringer.
 * Brug titler, der giver mening, for alle rapportsider.
 * Undgå dekorative figurer og billeder i din rapport, hvis det er muligt, da de er inkluderet i tabulatorrækkefølgen af rapporten. Hvis du er nødt til at indsætte dekorative objekter i din rapport, kan du opdatere objektets alternative tekst for at fortælle brugere af skærmlæsere, at objektet kun har et dekorativt formål.
 
@@ -98,11 +93,11 @@ Når du bruger stor kontrast i Windows, anvendes disse indstillinger og den valg
 
 ![Indstillinger for stor kontrast](media/desktop-accessibility/accessibility_05.png)
 
-**Power BI Desktop** registrerer automatisk, hvilket tema med stor kontrast der bruges i Windows, og indstillingerne anvendes i dine rapporter. Farverne med høj kontrast vil også følge rapporten, når den publiceres på Power BI-tjenesten eller andre steder.
+**Power BI Desktop** registrerer automatisk, hvilket tema med stor kontrast der bruges i Windows, og indstillingerne anvendes i dine rapporter. Farverne med stor kontrast vil også følge rapporten, når den publiceres på Power BI-tjenesten eller andre steder.
 
 ![Indstillinger for stor kontrast](media/desktop-accessibility/accessibility_05b.png)
 
-Power BI-tjenesten forsøger også at registrere de indstillinger for stor kontrast, der er valgt i Windows, men hvor effektiv og nøjagtig registreringen er, afhænger af den browser, er bruges med Power BI-tjenesten. Hvis du vil angive temaet manuelt i Power BI-tjenesten, kan du vælge **Vis > Farver med høj kontrast** og derefter vælge det tema, du vil bruge i rapporten.
+Power BI-tjenesten forsøger også at registrere de indstillinger for stor kontrast, der er valgt i Windows, men hvor effektiv og nøjagtig registreringen er, afhænger af den browser, er bruges med Power BI-tjenesten. Hvis du vil angive temaet manuelt i Power BI-tjenesten, kan du vælge **Vis > Farver med stor kontrast** og derefter vælge det tema, du vil bruge i rapporten.
 
 ![Indstillinger for stor kontrast i Power BI-tjenesten](media/desktop-accessibility/accessibility_06.png)
 
@@ -116,17 +111,31 @@ Der er et par kendte problemer og begrænsninger i forbindelse med tilgængeligh
 * Hvis du bruger Oplæser, vil der være nogle begrænsninger, når du navigerer omkring Vis data som en HTML-tabel.
 
 ## <a name="keyboard-shortcuts"></a>Tastaturgenveje
+Tastaturgenveje er nyttige til at navigere i Power BI-rapporter ved hjælp af tastaturet. I følgende tabel beskrives de genveje, som er tilgængelige i en Power BI-rapport. Disse tastaturgenveje fungerer ikke blot i Power BI Desktop, du kan også bruge dem i følgende:
+
+* Dialogboksen med stifinder til Spørgsmål og svar
+* Dialogboksen Introduktion
+* Dialogboksen med menuen Filer og Om
+* Advarselslinjen
+* Dialogboksen til Gendannelse af fil
+* Dialogboksen Frowns
+
+Idet vi løbende forbedrer tilgængeligheden, omfatter ovenstående liste også understøttelse af skærmlæsere og indstillinger med stor kontrast.
+
+
 ### <a name="frequently-used-shortcuts"></a>Ofte anvendte genveje
 | Hvis du vil foretage denne handling:           | Tryk på                |
 | :------------------- | :------------------- |
 | Flyt fokus mellem afsnit  | Ctrl + F6 |
 | Flyt fokus fremad i afsnittet | Tab         |
 | Flyt fokus tilbage i afsnittet | Shift + Tab |
+| Markér eller fjern markeringen af et objekt | Enter eller Mellemrum |
+| Markér flere objekter | CTRL + Mellemrum |
 
-### <a name="on-visual"></a>På visuelt element
+### <a name="on-visual"></a>På visualisering
 | Hvis du vil foretage denne handling:           | Tryk på                |
 | :------------------- | :------------------- |
-| Flyt fokus til menuen for visuelle elementer | Alt + Shift + F10 |
+| Flyt fokus til menuen for visualiseringer | Alt + Shift + F10 |
 | Vis data | Alt + Shift +F11  |
 
 ### <a name="pane-navigation"></a>Rudenavigation

@@ -1,25 +1,27 @@
 ---
-title: Føj et filter til en visual, en side, en detaljeadgang eller en rapport i Power BI
-description: Føj et sidefilter, visualiseringsfilter, rapportfilter eller detaljeadgangsfilter til en rapport i Power BI
+title: Føj et filter til en Power BI-rapport
+description: Føj et sidefilter, visualiseringsfilter eller rapportfilter til en rapport i Power BI
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/28/2018
+ms.date: 11/08/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: c70e29bf7dcd5a307cbcb4762595716595dfa523
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: c50afced257df1878a0a695a37d9401d9eda01b7
+ms.sourcegitcommit: ea77827127e0781f1d6877c0a3078aec7eb6694a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973275"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51611146"
 ---
 # <a name="add-a-filter-to-a-power-bi-service-report-in-editing-view"></a>Føj et filter til en rapport i Power Bi-tjenesten (i redigeringsvisning)
 
 I denne artikel forklares det, hvordan du føjer et sidefilter, visualiseringsfilter, rapportfilter eller detaljeadgangsfilter til en rapport i Power BI. Eksemplerne i denne artikel er i Power BI-tjenesten. Trinnene er stort set de samme i Power BI Desktop.
+
+**Vidste du det?** Power BI indeholder en ny filtreringsoplevelse, der i øjeblikket findes som en prøveversion. Læs mere om [den nye filtreringsoplevelse i Power BI-rapporter](power-bi-report-filter-preview.md).
 
 ## <a name="filters-in-editing-view-or-reading-view"></a>Filtre i redigeringsvisning eller læsevisning
 Du kan interagere med rapporter i to forskellige visninger: læsevisning og redigeringsvisning. Hvilke filterfunktioner der er tilgængelige, afhænger af, hvilken visning du arbejder i. Læs alt [om filtre og fremhævning i Power BI-rapporter](power-bi-reports-filters-and-highlighting.md) for at få mere at vide.
@@ -31,14 +33,14 @@ Uanset om du bruger Desktop-versionen eller Power BI-tjenesten, vises ruden Filt
 
 Der findes fire typer filtre: **sidefilter**, **visual-filter**, **detaljeadgangsfilter** og **rapportfilter**.
 
-![ruden filtre i læsevisning](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
+![filtreringsrude i læsevisning](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
 
 Da filtre *bevares*, når du navigerer væk fra rapporten, bevarer Power BI de ændringer, som du foretager i filtre, udsnit og andre datavisninger. Du kan derfor fortsætte, hvor du slap, når du vender tilbage til rapporten. Hvis du ikke vil bevare dine filterændringer, skal du vælge **Nulstil til standard** på den øverste menulinje.
 
 ![knappen faste filtre](media/power-bi-report-add-filter/power-bi-reset-to-default.png)
 
 ## <a name="add-a-filter-to-a-visual"></a>Tilføj et filter i en visual
-Du kan føje et filter til en bestemt visual på to forskellige måder (også kaldet et "visualfilter"). 
+Du kan føje et filter til en bestemt visualisering på to forskellige måder (også kaldet et "visualfilter"). 
 
 * Filtrer et felt, der allerede bruges i den pågældende visual.
 * Identificer et felt, der ikke allerede bruges i den pågældende visual, og føj dette felt direkte til bucket'en **Filtre på visualiseringsniveau**.
@@ -51,31 +53,31 @@ Denne procedure anvender i øvrigt Retail Analysis-eksemplet, hvis du gerne vil 
 1. Åbn din [rapport i redigeringsvisning](service-the-report-editor-take-a-tour.md).
    
    ![](media/power-bi-report-add-filter/power-bi-edit-view.png)
-2. Åbn ruden Visualizations and Filters (Visualiseringer og filtre) og ruden Felter (hvis de ikke allerede er åbne).
+2. Åbn ruden Visualiseringer og filtre og ruden Felter, hvis de ikke allerede er åbne.
    
    ![](media/power-bi-report-add-filter/power-bi-display-panes.png)
 3. Vælg først en visualisering for at aktivere den. Alle felter, der bruges af det visuelle element, findes i ruden **Felter** og er desuden angivet i ruden **Filtre** under overskriften **Filtre på visualiseringsniveau**.
    
    ![](media/power-bi-report-add-filter/power-bi-default-visual-filter.png)
-4. Herefter skal du føje et filter til et felt, der er allerede bruges i visualiseringen. 
+4. Herefter føjer vi et filter til et felt, der allerede bruges i visualiseringen. 
    
-    Rul ned til området **Filtre på visualiseringsniveau**, og brug pilen til at udvide det felt, du vil filtrere efter. I dette eksempel skal vi filtrere **StoreNumberName**.
+    Rul ned til området **Filtre på visualiseringsniveau**, og brug pilen til at udvide det felt, du vil filtrere efter. I dette eksempel filtrerer vi efter **StoreNumberName**.
      
     ![](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
     
-    Angiv et af kontrolelementerne **Basic**, **Advanced** eller **Top N**. I dette eksempel vil vi søge efter **cha** i Basic-filtrering og vælge de fem butikker.
+    Angiv et af kontrolelementerne **Grundlæggende**, **Avanceret** eller **Top N**. I dette eksempel søger vi efter **cha** i Grundlæggende filtrering og vælger de fem butikker.
      
     ![](media/power-bi-report-add-filter/power-bi-search-filter.png) 
    
-    Visualiseringen ændres for at afspejle det nye filter. Hvis du gemmer din rapport med filteret, kan rapportlæsere se den visual, der filtreres fra starten, og interagere med filteret i læsevisning og markere eller fjerne markering af værdier.
+    Visualiseringen ændres for at afspejle det nye filter. Hvis du gemmer din rapport med filteret, kan rapportlæsere se den visualisering, der filtreres fra starten, og interagere med filteret i læsevisning og markere eller fjerne markering af værdier.
      
     ![](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
 
-### <a name="filter-with-a-field-thats-not-in-the-visual"></a>Filtrer med et felt, der ikke er i den pågældende visual
+### <a name="filter-with-a-field-thats-not-in-the-visual"></a>Filtrer med et felt, der ikke er i den pågældende visualisering
 
-Nu skal vi føje et nyt felt til vores visual som et filter på visualiseringsniveau.
+Nu skal vi føje et nyt felt til vores visualisering som et filter på visualiseringsniveau.
    
-1. Vælg i ruden Felter det felt, du vil tilføje som et nyt filter på visualiseringsniveau, og træk det til **området Filtre på visualiseringsniveau**.  I dette eksempel skal vi trække **District Manager** (Distriktchef) til bucket'en **Filtre på visualiseringsniveau** søge efter **en** og vælge de tre chefer. 
+1. Vælg i ruden Felter det felt, du vil tilføje som et nyt filter på visualiseringsniveau, og træk det til **området Filtre på visualiseringsniveau**.  I dette eksempel trækker vi **District Manager** til bucket'en **Filtre på visualiseringsniveau**, søger efter **an** og vælger de tre chefer. 
      
     ![](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
@@ -93,11 +95,11 @@ Nu skal vi føje et nyt felt til vores visual som et filter på visualiseringsni
 
 Du kan også føje et filter til en hel side (et sidevisningsfilter)
 1. Åbn din [rapport i redigeringsvisning](service-the-report-editor-take-a-tour.md).
-2. Åbn ruden Visualizations and Filters (Visualiseringer og filtre) og ruden Felter (hvis de ikke allerede er åbne).
+2. Åbn ruden Visualiseringer og filtre og ruden Felter, hvis de ikke allerede er åbne.
 3. Vælg i ruden Felter det felt, du vil tilføje som et nyt filter på sideniveau, og træk det til **området Filtre på sideniveau**.  
-4. Vælg de værdier, du vil filtrere efter, og angiv enten kontrolelementet **Basic** eller **Advanced**.
+4. Vælg de værdier, du vil filtrere efter, og angiv enten kontrolelementet **Grundlæggende** eller **Avanceret**.
    
-   Al visualisering på siden, der er påvirket af dette filter, tegnes igen, så ændringen afspejles. 
+   Al visualisering på siden, der påvirkes af dette filter, tegnes igen, så ændringen afspejles. 
    
    ![](media/power-bi-report-add-filter/filterpage.gif)
 
@@ -109,7 +111,7 @@ Med detaljeadgang i Power BI-tjenesten og Power BI Desktop kan du oprette en *de
 ### <a name="create-a-drillthrough-filter"></a>Opret et filter til detaljeadgang
 Følg med ved at åbne eksemplet på kunderentabilitet i redigeringsvisning. Antag, at du vil have en side med fokus på overordnede forretningsområder.   
 
-1. Føj en ny side til rapporten, og kald den **Team Executive**. Dette bliver siden med *destinationen*, der er detaljeadgang til.
+1. Føj en ny side til rapporten, og kald den **Team Executive**. Denne side bliver *destinationen* for detaljeadgang.
 2. Tilføj visualiseringer, der sporer vigtige målepunkter for teamets overordnede forretningsområder.    
 3. Føj desuden **Executive > Executive Name** til filtrene til detaljeadgang.    
    
@@ -132,7 +134,7 @@ Lad os se, hvordan filteret til detaljeadgang fungerer.
 
 ## <a name="add-a-filter-to-an-entire-report-aka-report-filter"></a>Føj et filter til hele rapporten (også kaldet rapportfilter)
 1. Åbn din [rapport i redigeringsvisning](service-the-report-editor-take-a-tour.md).
-2. Åbn ruden Visualizations and Filters (Visualiseringer og filtre) og ruden Felter (hvis de ikke allerede er åbne).
+2. Åbn ruden Visualiseringer og filtre og ruden Felter, hvis de ikke allerede er åbne.
 3. Vælg i ruden Felter det felt, du vil tilføje som et nyt filter på rapporteringsniveau, og træk det til området **Filtre på rapporteringsniveau**.  
 4. Vælg de værdier, du vil filtrere.
 
@@ -144,7 +146,7 @@ Lad os se, hvordan filteret til detaljeadgang fungerer.
 
 - Der er situationer, hvor dit filter på visualiseringsniveau og dit filter på sideniveau kan returnere forskellige resultater.  Hvis du f.eks. tilføjer et filter på visualiseringsniveau, filtrerer Power BI de samlede resultater.  Standardsammenlægningen er Sum, men du kan [ændre sammenlægningstypen](service-aggregates.md).  
 
-    Hvis du derefter tilføjer et filter på sideniveau, filtrerer Power BI uden sammenlægning.  Grunden til dette er, at en side kan have mange visuelle elementer, som hver især kan gøre brug af forskellige sammenlægningstyper.  Filteret anvendes derfor til hver enkelt datarække.
+    Hvis du derefter tilføjer et filter på sideniveau, filtrerer Power BI uden sammenlægning.  Der samles ikke, fordi en side kan have mange visualiseringer, som hver især kan gøre brug af forskellige sammenlægningstyper.  Filteret anvendes derfor til hver enkelt datarække.
 
 - Hvis du ikke får vist ruden Felter, skal du sikre dig, at du er i [Redigeringsvisning](service-interact-with-a-report-in-editing-view.md) for rapporten    
 - Hvis du har foretaget mange ændringer af filtrene, og du vil vende tilbage til de indstillinger, som rapportens forfatter har angivet, skal du vælge **Nulstil til standard** på den øverste menulinje.

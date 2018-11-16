@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 05a84d34bf82be99eb52fccfb6318142f7d47de1
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: c770423b81c6d5cd4135539d8d44c3cc46f8b6fe
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329908"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619603"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Opret forbindelse til Azure Consumption Insights i Power BI Desktop (beta)
 Ved hjælp af connectoren **Azure Consumption Insights** kan du bruge **Power BI Desktop** til at oprette forbindelse til Azure og få detaljerede data og oplysninger om din organisations brug af Azure-tjenester. Du kan også oprette målinger, brugerdefinerede kolonner og visuelle elementer, som kan rapporteres og deles, om din organisations brug af Azure. Denne version af connectoren **Azure Consumption and Insights** er en betaversion, som måske ændres.
@@ -49,9 +49,20 @@ Derefter skal du angive din *adgangsnøgle* for at oprette forbindelse.
   
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
-Når du har angivet din *adgangsnøgle* og valgt **Opret forbindelse**, åbnes vinduet **Navigator** med de fire tabeller, der er tilgængelige for dig: *Summary*, *Usage*, *PriceSheet* og *MarketPlace*. Du kan markere et afkrydsningsfelt ud for en af tabellerne for at få den vist. Du kan vælge en eller flere tabeller ved at markere afkrydsningsfeltet ud for deres navn og derefter vælge **Indlæs**.
+Når du har angivet din *adgangsnøgle* og valgt **Opret forbindelse**, åbnes vinduet **Navigator** med de ni tabeller, der er tilgængelige for dig: 
+* **Budgetter**: Viser oplysninger om budget, så du kan se de faktiske omkostninger eller brug sammenlignet med eksisterende budgetmål. 
+* **MarketPlace**: Viser forbrugsbaserede gebyrer for Azure Marketplace.
+* **PriceSheets**: Viser gældende priser pr. måler for en tilmelding.
+* **RICharges**: Viser gebyrer knyttet til dine reserverede instanser i løbet af de sidste 24 måneder.
+* **RIRecommendations_Single**: Viser anbefalinger til køb af reserverede instanser på baggrund af dine brugstendenser for et enkelt abonnement i løbet af 7, 30 eller 60 dage.
+* **RIRecommendations_Shared**: Viser anbefalinger til køb af reserverede instanser på baggrund af dine brugstendenser på tværs af alle abonnementer i løbet af 7, 30 eller 60 dage.
+* **RIUsage**: Viser oplysninger om forbrug for dine eksisterende reserverede instanser i løbet af den sidste måned.
+* **Oversigter**: Viser en månedlig oversigt over saldi, nye køb, gebyrer for Azure Marketplace-tjenesten, justeringer og gebyrer for overforbrug.
+* **UsageDetails**: Viser en opdeling af forbrugt antal og anslåede gebyrer for en tilmelding.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04.png)
+Du kan markere et afkrydsningsfelt ud for en af tabellerne for at få den vist. Du kan vælge en eller flere tabeller ved at markere afkrydsningsfeltet ud for deres navn og derefter vælge **Indlæs**.
+
+![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_04b.png)
 
 > [!NOTE]
 > Tabellerne *Summary* og *PriceSheet* er kun tilgængelige for API-nøglen på tilmeldingsniveau. Derudover har dataene i disse tabeller som standard den aktuelle måneds data for *Usage* og *PriceSheet*. Tabellerne *Summary* og *MarketPlace* er ikke begrænset til den aktuelle måned.

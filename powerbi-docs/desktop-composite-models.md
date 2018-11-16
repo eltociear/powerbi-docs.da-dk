@@ -1,5 +1,5 @@
 ---
-title: Brug Sammensatte modeller i Power BI Desktop (prøveversion)
+title: Brug af sammensatte modeller i Power BI Desktop
 description: Opret datamodeller med flere dataforbindelser og mange-til-mange-relationer i Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/02/2018
+ms.date: 11/12/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 47c99e40b1665b98c33d16b685e359c10277a560
-ms.sourcegitcommit: 1a79e48ac820c28c5d0fd05399f49ed22fc74ed7
+ms.openlocfilehash: b7a8323557f769fa2a05d504de2540bc505e7a54
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/19/2018
-ms.locfileid: "49435390"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619695"
 ---
-# <a name="use-composite-models-in-power-bi-desktop-preview"></a>Brug Sammensatte modeller i Power BI Desktop (prøveversion)
+# <a name="use-composite-models-in-power-bi-desktop"></a>Brug af sammensatte modeller i Power BI Desktop
 
 Når du tidligere i Power BI Desktop brugte en DirectQuery i en rapport, var ingen andre dataforbindelser, &mdash;hverken DirectQuery eller Import&mdash;, tilladt for den pågældende rapport. Denne begrænsning er nu fjernet med sammensatte modeller. En rapport kan uden problemer indeholde dataforbindelser fra mere end én DirectQuery eller importdataforbindelse i en hvilken som helst kombination, du vælger.
 
@@ -27,19 +27,9 @@ Sammensatte modeller-funktionaliteten i Power BI Desktop består af tre relatere
 
 * **Sammensatte modeller**: gør det muligt for en rapport at have flere dataforbindelser, herunder DirectQuery-forbindelser eller import, i en hvilken som helst kombination. I denne artikel beskrives sammensatte modeller i detaljer.
 
-* **Mange til mange-relationer**: Via *sammensatte modeller* kan du oprette *mange til mange-relationer* mellem tabeller. Denne fremgangsmåde fjerner kravene for entydige værdier i tabeller. Det fjerner også tidligere løsninger, f.eks. introduktion af nye tabeller, kun for at oprette relationer. Du kan finde flere oplysninger under [Mange til mange-relationer i Power BI Desktop (prøveversion)](desktop-many-to-many-relationships.md).
+* **Mange til mange-relationer**: Via *sammensatte modeller* kan du oprette *mange til mange-relationer* mellem tabeller. Med denne tilgang fjernes kravene for entydige værdier i tabeller. Tidligere midlertidige løsninger, f.eks. introduktion af nye tabeller kun for at oprette relationer, fjernes også. Du kan finde flere oplysninger under [Mange til mange-relationer i Power BI Desktop (prøveversion)](desktop-many-to-many-relationships.md).
 
 * **Lagringstilstand**: Du kan nu angive, hvilke visualiseringer der kræver en forespørgsel til back end-datakilder. Visuelle elementer, der ikke kræver en forespørgsel, importeres, også selvom de er baseret på DirectQuery. Denne funktion hjælper med at forbedre ydeevnen og reducere belastningen af back-end. Tidligere ville selv enkle visuals, f.eks. udsnit, starte forespørgsler, der blev sendt til back end-kilderne. Du kan finde flere oplysninger i [Lagringstilstand i Power BI Desktop (prøveversion)](desktop-storage-mode.md).
-
-## <a name="enable-the-composite-models-preview-feature"></a>Aktivér prøveversionsfunktionen for sammensatte modeller
-
-Funktionen for sammensatte modeller fås som prøveversion og skal aktiveres i Power BI Desktop. Du aktiverer sammensatte modeller ved at vælge **Filer** > **Indstillinger** > **Indstillinger** > **Prøveversionsfunktioner** og derefter markere afkrydsningsfeltet **Sammensatte modeller**. 
-
-![Ruden "Prøveversionsfunktion"](media/desktop-composite-models/composite-models_02.png)
-
-Hvis du vil aktivere funktionen, skal du genstarte Power BI Desktop.
-
-![Vinduet "Funktion kræver en genstart"](media/desktop-composite-models/composite-models_03.png)
 
 
 ## <a name="use-composite-models"></a>Brug sammensatte modeller
@@ -78,7 +68,7 @@ Hvis du vil se et eksempel på en *sammensat model*, kan du overveje at bruge en
 
 På dette tidspunkt kan du oprette simple visuals ved hjælp af felter fra denne kilde. Følgende billede viser f.eks. det samlede salgsbeløb efter *ProductName* for et valgt kvartal. 
 
-![Visual baseret på data](media/desktop-composite-models/composite-models_05.png)
+![Visualisering baseret på data](media/desktop-composite-models/composite-models_05.png)
 
 Men hvad nu hvis du har data i et Office Excel-regneark om den produktchef, der er tildelt til de enkelte produkter, sammen med marketingprioriteten? Hvis du vil have vist *salgsbeløb* efter *produktchef*, er det måske ikke muligt at føje disse lokale data til virksomhedens data warehouse. Eller det kan i bedste fald tage flere måneder. 
 
@@ -164,9 +154,9 @@ Af samme årsager skal du være forsigtig, når du åbner en Power BI Desktop-fi
 
 Når du bruger DirectQuery, skal du altid være opmærksom på ydeevnen primært for at sikre, at backend-kilden har tilstrækkelige ressourcer til at give brugerne en god oplevelse. En god oplevelse betyder, at visuals opdateres efter fem sekunder eller mindre. Du skal også følge de råd om ydeevne, der er nævnt i artiklen [Brug DirectQuery i Power BI](desktop-directquery-about.md). 
 
-Når du bruger sammensatte modeller, skal du have yderligere overvejelser. Et enkelt visual kan resultere i, at der sendes forespørgsler til flere datakilder, som ofte overfører resultaterne fra én forespørgsel til en anden kilde. Denne situation kan føre til følgende scenarier:
+Når du bruger sammensatte modeller, skal du have yderligere overvejelser. En enkelt visualisering kan resultere i, at der sendes forespørgsler til flere datakilder, som ofte overfører resultaterne fra én forespørgsel til en anden kilde. Denne situation kan føre til følgende scenarier:
 
-* **En SQL-forespørgsel, der indeholder et stort antal konstantværdier**: Et visual, der anmoder om det samlede *salgsbeløb* for nogle valgte *produktchefer*, skal først finde ud af, hvilke *produkter* der er administreret af disse produktchefer. Denne sekvens skal finde sted, før det pågældende visual sender en SQL-forespørgsel, der inkluderer alle produkt-id'erne i en *WHERE*-delsætning.
+* **En SQL-forespørgsel, der indeholder et stort antal konstantværdier**: Et visual, der anmoder om det samlede *salgsbeløb* for nogle valgte *produktchefer*, skal først finde ud af, hvilke *produkter* der er administreret af disse produktchefer. Denne sekvens skal finde sted, før den pågældende visualisering sender en SQL-forespørgsel, der inkluderer alle produkt-id'erne i en *WHERE*-delsætning.
 
 * **En SQL-forespørgsel, der forespørger på et lavere granularitetsniveau, og dataene derefter aggregeres lokalt**: Da antallet af *produkter*, der opfylder filterkriterierne i *Product Manager*, bliver større og større, kan det blive ineffektivt eller umuligt at medtage alle produkter i en *WHERE*-delsætning. Du kan i stedet forespørge relationskilden på det lavere niveau for *produkt* og derefter aggregere resultaterne lokalt. Hvis kardinaliteten for *produkter* overskrider en grænse på 1 mio., mislykkes forespørgslen.
 
@@ -176,7 +166,7 @@ Når du bruger sammensatte modeller, skal du have yderligere overvejelser. Et en
 
 Hver af disse scenarier har konsekvenser for ydeevnen, og de præcise detaljer varierer for hver datakilde. Selvom kardinaliteten for de kolonner, der bruges i den relation, der forbinder de to kilder, forbliver lav (nogle få tusind), påvirkes ydeevnen ikke. Efterhånden som denne kardinalitet stiger, skal du være mere opmærksomhed på effekten af ydeevnen. Brug denne retningslinje som tommelfingerregel. 
 
-Desuden betyder brugen af *mange-til-mange*-relationer, at særskilte forespørgsler skal sendes til den underliggende kilde for hvert totale eller subtotale niveau fremfor at aggregere de detaljerede værdier lokalt. Et simpelt visual i en tabel med totaler sender to SQL-forespørgsler fremfor ét. 
+Desuden betyder brugen af *mange-til-mange*-relationer, at særskilte forespørgsler skal sendes til den underliggende kilde for hvert totale eller subtotale niveau fremfor at aggregere de detaljerede værdier lokalt. En enkel tabelvisualisering med totaler sender to SQL-forespørgsler fremfor ét. 
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a5a4f6532fe127fe01b699ee9d9e89693fdb369e
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: a49b433af32e6c0f03d43333a424864c5463ddd3
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336892"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619810"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 Med Power BI Desktop kan du oprette forbindelse til data fra mange forskellige kilder. Der findes en komplet liste over tilgængelige datakilder nederst på siden.
@@ -30,8 +30,6 @@ Hvis du vælger **Mere...** i menuen **Mest almindelige**, vises vinduet **Hent 
 
 > [!NOTE]
 > Power BI-teamet udvider hele tiden de datakilder, der er tilgængelige for **Power BI Desktop** og **Power BI-tjenesten**. Du kan derfor ofte se tidlige versioner af igangværende datakilder markeret som *Beta* eller *Preview*. Alle datakilder, der er markeret som *Beta* eller *Preview*, har begrænset support og funktionalitet og skal ikke bruges i produktionsmiljøer.
-> 
-> 
 
 ## <a name="data-sources"></a>Datakilder
 Datatyper er organiseret i følgende kategorier:
@@ -80,15 +78,14 @@ Kategorien **Database** indeholder følgende dataforbindelser:
 * Impala
 * Google BigQuery
 * Snowflake
+* BI Connector
+* Exasol
 * Dremio (beta)
-* Exasol (beta)
 * Jethro (beta)
 * Kyligence Enterprise (beta)
 
 > [!NOTE]
 > Nogle databaseforbindelser kræver, at du aktiverer dem ved at vælge **Filer > Indstillinger > Indstillinger** og derefter vælger **Funktioner til eksempelvisning** og aktiverer forbindelsen. Hvis du ikke kan se nogle af de forbindelser, der er nævnt ovenfor, og du vil bruge dem, skal du kontrollere dine indstillinger for **Funktioner til eksempelvisning**. Bemærk også, at alle datakilder, der er markeret som *Beta* eller *Preview*, har begrænset support og funktionalitet og skal ikke bruges i produktionsmiljøer.
-> 
-> 
 
 På følgende billede vises vinduet **Hent data** for **Database**.
 
@@ -111,11 +108,11 @@ Kategorien **Azure** indeholder følgende dataforbindelser:
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB (beta)
-* Azure Data Lake Store
+* Azure Data Lake Storage
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * Interaktiv HDInsight-forespørgsel
-* Azure KustoDB (beta)
+* Azure Data Explorer (beta)
 
 På følgende billede vises vinduet **Hent data** for **Azure**.
 
@@ -131,7 +128,8 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Dynamics 365 Business Central (i det lokale miljø)
 * Common Data Service til apps (beta)
 * Microsoft Azure Consumption Insights (beta)
-* Visual Studio Team Services (beta)
+* Azure DevOps (beta)
+* Azure DevOps Server (beta)
 * Salesforce-objekter
 * Salesforce-rapporter
 * Google Analytics
@@ -171,7 +169,7 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * OData-feed
 * Active Directory
 * Microsoft Exchange
-* Hadoop File (HDFS)
+* Hadoop-fil (HDFS)
 * Spark
 * R Script
 * Python-script
@@ -187,8 +185,6 @@ På følgende billede vises vinduet **Hent data** for **Andet**.
 
 > [!NOTE]
 > På nuværende tidspunkt er det ikke muligt at oprette forbindelse til brugerdefinerede datakilder, der er beskyttet via Azure Active Directory.
-> 
-> 
 
 ## <a name="connecting-to-a-data-source"></a>Opret forbindelse til en datakilde
 For at oprette forbindelse til en datakilde skal du vælge datakilden i vinduet **Hent data** og vælge **Opret forbindelse**. På følgende billede er **Web** valgt fra kategorien **Andet** for dataforbindelsen.

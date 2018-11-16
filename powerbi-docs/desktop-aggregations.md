@@ -7,33 +7,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 10/17/2018
+ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3e94dc516f41d764394828309ba4b612083d4583
-ms.sourcegitcommit: fbb27fb40d753b5999a95b39903070766f7293be
+ms.openlocfilehash: e88e60bc1745a08ea53c7336f6f1fb9e4cda1ec8
+ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49359717"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51619718"
 ---
 # <a name="aggregations-in-power-bi-desktop-preview"></a>Sammenlægninger i Power BI Desktop (prøveversion)
 
-Interaktiv analyse af big data kan aktiveres på måder, som tidligere ikke var mulige, ved hjælp af **sammenlægninger** i Power BI. **Sammenlægninger** kan drastisk reducere omkostningerne til at låse store datasæt op i forbindelse med beslutningstagning.
+Brug af **sammenlægninger** i Power BI muliggør interaktiv analyse af big data på måder, der ikke tidligere var mulig. **Sammenlægninger** kan drastisk reducere omkostningerne til at låse store datasæt op i forbindelse med beslutningstagning.
 
 ![sammenlægninger i Microsoft Power BI Desktop](media/desktop-aggregations/aggregations_07.jpg)
 
 Følgende liste indeholder fordele ved brug af **sammenlægninger**:
 
-* **Forespørgselsydeevne over store datasæt** – når brugere interagerer med visuelle elementer i Power BI-rapporter, sendes der DAX-forespørgsler til datasættet. Sæt forespørgselshastighederne op ved at cachelagre data på det aggregerede niveau med en brøkdel af de ressourcer, der kræves på detaljeringsniveauet. Få adgang til big data på en måde, der ellers ikke ville være mulig.
+* **Forespørgselsydeevne over big data** – når brugere interagerer med visualiseringer i Power BI-rapporter, sendes der DAX-forespørgsler til datasættet. Sæt forespørgselshastighederne op ved at cachelagre data på det aggregerede niveau med en brøkdel af de ressourcer, der kræves på detaljeringsniveauet. Få adgang til big data på en måde, der ellers ville være umulig.
 * **Optimering af dataopdatering** – reducer cachestørrelser og antallet af opdateringer ved at cachelagre data på det aggregerede niveau. Forkort den tid, det tager at gøre data tilgængelige for brugere.
 * **Opnå balancerede arkitekturer** – tillad Power BI-cachen i hukommelsen til at håndtere aggregerede forespørgsler effektivt. Begræns mængden af forespørgsler, der sendes til datakilden i DirectQuery-tilstand, for at overholde grænserne for samtidighed. De forespørgsler, der kommer igennem, er ofte ufiltrerede forespørgsler på transaktionsniveau, som normalt håndteres godt af data warehouses og big data-systemer.
 
 ### <a name="table-level-storage"></a>Lagring på tabelniveau
-Lagring på tabelniveau bruges normalt sammen med sammenlægningsfunktionen. Læs mere i artiklen om [lagringstilstand i Power BI Desktop (prøveversion)](desktop-storage-mode.md).
+Lagring på tabelniveau bruges normalt sammen med sammenlægningsfunktionen. Du kan finde flere oplysninger i artiklen om [lagringstilstand i Power BI Desktop](desktop-storage-mode.md).
 
 ### <a name="data-source-types"></a>Datakildetyper
-Sammenlægninger bruges sammen med datakilder, der repræsenterer dimensionelle modeller, f.eks. data warehouses og datacentre, samt Hadoop-baserede big data-kilder. Denne artikel beskriver de typiske modelleringsforskelle i Power BI for hver type datakilde.
+Sammenlægninger bruges sammen med datakilder, der repræsenterer dimensionelle modeller, f.eks. data warehouses, datacentre og Hadoop-baserede big data-kilder. Denne artikel beskriver de typiske modelleringsforskelle i Power BI for hver type datakilde.
 
 Alle Power BI Import- og DirectQuery-kilder (ikke-flerdimensionelle) fungerer sammen med sammenlægninger.
 
@@ -55,12 +55,12 @@ Se den følgende model, som er hentet fra en enkelt datakilde. Lad os sige, at a
 
 ![tabeller i en model](media/desktop-aggregations/aggregations_02.jpg)
 
-I stedet opretter vi tabellen **Sales Agg** som en sammenlægningstabel. Den har højere granularitet end **Sales** og indeholder derfor langt færre rækker. Antallet af rækker skal svare til summen af **SalesAmount** grupperet efter **CustomerKey**, **DateKey** og **ProductSubcategoryKey**. I stedet for milliarder kan der være millioner af rækker, hvilket er meget nemmere at administrere.
+I stedet opretter vi tabellen **Sales Agg** som en sammenlægningstabel. Den har højere kornethed end **Sales** og indeholder derfor langt færre rækker. Antallet af rækker skal svare til summen af **SalesAmount** grupperet efter **CustomerKey**, **DateKey** og **ProductSubcategoryKey**. I stedet for milliarder kan der være millioner af rækker, hvilket er meget nemmere at administrere.
 
-Lad os antage, at følgende dimensionstabeller er de oftest anvendte til forespørgslerne med høj forretningsværdi. De er de tabeller, der kan filtrere **Sales Agg** ved hjælp af *en-til-mange*-relationer (eller *mange-til-en*). Anden typer af relationer såsom *mange-til-mange* eller *flere kilder* anvendes ikke til sammenlægninger.
+Lad os antage, at følgende dimensionstabeller er de oftest anvendte til forespørgslerne med høj forretningsværdi. De er de tabeller, der kan filtrere **Sales Agg** ved hjælp af *en-til-mange*-relationer (eller *mange-til-en*).
 
 * Geografi
-* Customer
+* Kunde
 * Dato
 * Produktunderkategori
 * Produktkategori
@@ -77,7 +77,7 @@ Lad os fortsætte med det eksempel, vi bruger. Vi angiver lagringstilstanden for
 
 ![indstilling af lagringstilstand](media/desktop-aggregations/aggregations_04.jpg)
 
-Når vi gør det, vises følgende dialogskærm, som fortæller, at de relaterede dimensionstabeller vil blive indstillet til lagringstilstanden **Dual**. 
+Når vi gør det, vises følgende dialogboks, som viser, at de relaterede dimensionstabeller kan angives til lagringstilstanden **Dual**. 
 
 ![dialogboksen lagringstilstand](media/desktop-aggregations/aggregations_05.jpg)
 
@@ -88,7 +88,23 @@ Ved af indstille dem til **Dual** er det muligt for de relaterede dimensionstabe
 
 Læs mere om lagringstilstanden **Dual** i artiklen om [lagringstilstand](desktop-storage-mode.md).
 
-> Bemærk: Tabellen **Sales Agg** er skjult. Sammenlægningstabeller skal skjules fra datasættets brugere. Brugere og forespørgsler refererer til tabellen med detaljer, ikke sammenlægningstabellen. De behøver ikke vide, at sammenlægningstabellen eksisterer.
+### <a name="strong-vs-weak-relationships"></a>Stærke versus svage relationer
+Sammenlægningsforekomster baseret på relationer kræver stærke relationer.
+
+Stærke relationer omfatter følgende kombinationer, hvor begge tabeller er fra en *enkelt kilde*.
+
+| Tabel på *mange-siden | Tabel på *én*-siden |
+| ------------- |----------------------| 
+| Dual          | Dual                 | 
+| Importér        | Import eller Dual       | 
+| DirectQuery   | DirectQuery eller Dual  | 
+
+Det eneste tilfælde, hvor en relation *på tværs af kilder* anses for at være stærk, er, hvis begge tabeller er angivet til Import. Mange til mange-relationer anses altid for at være svage.
+
+Se afsnittet herunder om sammenlægninger baseret på kolonner af typen Gruppér efter for at få mere at vide om sammenlægningsforekomster *på tværs af kilder*, der ikke er afhængige af relationer.
+
+### <a name="aggregation-table-is-hidden"></a>Sammenlægningstabellen er skjult
+Tabellen **Sales Agg** er skjult. Sammenlægningstabeller bør altid skjules for brugerne af datasættet. Brugere og forespørgsler refererer til tabellen med detaljer, ikke sammenlægningstabellen. De behøver ikke vide, at sammenlægningstabellen eksisterer.
 
 ### <a name="manage-aggregations-dialog"></a>Administrer dialogboksen sammenlægninger
 Lad os definere sammenlægningerne. Vælg genvejsmenuen **Administrer sammenlægninger** for tabellen **Sales Agg** ved at højreklikke på tabellen.
@@ -155,11 +171,11 @@ Følgende forespørgsel giver forekomster ved sammenlægningen, fordi kolonner i
 
 ![forespørgselseksempel](media/desktop-aggregations/aggregations-code_02.jpg)
 
-Følgende forespørgsel giver ikke forekomster ved sammenlægningen. På trods af at den anmoder om summen af **SalesAmount**, foretager den en gruppér efter-handling på en kolonne i tabellen **Product**, der ikke har en granularitet, som kan give forekomster ved sammenlægningen. Hvis du lægger mærke til relationerne i modellen, kan et produkts underkategori have flere **produktrækker**, og forespørgslen vil ikke kunne bestemme, hvilke produkt der skal aggregeres til. I dette tilfælde vender forespørgslen tilbage til DirectQuery og sender en SQL-forespørgsel til datakilden.
+Følgende forespørgsel giver ikke forekomster ved sammenlægningen. På trods af at den anmoder om summen af **SalesAmount**, foretager den en handling af typen Gruppér efter på en kolonne i tabellen **Product**, som ikke har en kornethed, der kan give forekomster ved sammenlægningen. Hvis du lægger mærke til relationerne i modellen, kan et produkts underkategori have flere rækker af typen **Product**, og forespørgslen vil ikke kunne bestemme, hvilket produkt der skal sammenlægges til. I dette tilfælde vender forespørgslen tilbage til DirectQuery og sender en SQL-forespørgsel til datakilden.
 
 ![forespørgselseksempel](media/desktop-aggregations/aggregations-code_03.jpg)
 
-Sammenlægninger er ikke kun beregnet til simple beregninger, der giver en ukompliceret sum. De kan også være en fordel for komplekse beregninger. En kompleks beregning opdeles i underforespørgsler for hver SUM, MIN, MAX og COUNT, og hver underforespørgsel evalueres for at bestemme, om sammenlægningen kan give forekomster. Denne logik gælder ikke i alle tilfælde på grund af optimeringen af forespørgselsplaner, men den bør generelt anvendes. I det følgende eksempel giver sammenlægningen forekomster:
+Sammenlægninger er ikke kun til simple beregninger, der giver en ukompliceret sum. De kan også være en fordel for komplekse beregninger. En kompleks beregning opdeles i underforespørgsler for hver SUM, MIN, MAX og COUNT, og hver underforespørgsel evalueres for at bestemme, om sammenlægningen kan give forekomster. Denne logik gælder ikke i alle tilfælde på grund af optimeringen af forespørgselsplaner, men den bør være gældende generelt set. I følgende eksempel giver sammenlægningen forekomster:
 
 ![forespørgselseksempel](media/desktop-aggregations/aggregations-code_04.jpg)
 
@@ -167,11 +183,11 @@ Funktionen COUNTROWS kan drage fordel af sammenlægninger. Følgende forespørgs
 
 ![forespørgselseksempel](media/desktop-aggregations/aggregations-code_05.jpg)
 
-Funktionen AVERAGE kan drage fordel af sammenlægninger. Følgende forespørgsel giver forekomster ved sammenlægningen, fordi AVERAGE foldes internt til en SUM divideret med et COUNT. Da kolonnen **UnitPrice** indeholder sammenlægninger, der er defineret for både SUM og COUNT, giver sammenlægningen forekomster.
+Funktionen AVERAGE kan drage fordel af sammenlægninger. Følgende forespørgsel giver forekomster ved sammenlægningen, fordi AVERAGE foldes internt til SUM divideret med COUNT. Da kolonnen **UnitPrice** indeholder sammenlægninger, der er defineret for både SUM og COUNT, giver sammenlægningen forekomster.
 
 ![forespørgselseksempel](media/desktop-aggregations/aggregations-code_06.jpg)
 
-I visse tilfælde kan funktionen DISTINCTCOUNT drage fordel af sammenlægninger. I følgende forespørgsel giver sammenlægningen forekomster, fordi der er en GroupBy-post for **CustomerKey**, som bevarer **CustomerKey**'s særpræg i sammenlægningstabellen. Denne metode er stadig underlagt ydelsesgrænsen, hvor mellem omtrent to til fem millioner forskellige værdier kan påvirke resultaterne af forespørgslen. Den kan dog være nyttig i situationer, hvor der er milliarder af rækker i detaljetabellen og to til fem millioner forskellige værdier i kolonnen. I dette tilfælde er det hurtigere at optælle end at scanne tabellen med milliarder af rækker, selv om det er cachelagret i hukommelsen.
+I visse tilfælde kan funktionen DISTINCTCOUNT drage fordel af sammenlægninger. Følgende forespørgsel giver sammenlægningen forekomster, fordi der er en GroupBy-post for **CustomerKey**, som bevarer særpræget for **CustomerKey** i sammenlægningstabellen. Denne metode er stadig underlagt ydelsesgrænsen, hvor mellem omtrent to til fem millioner forskellige værdier kan påvirke resultaterne af forespørgslen. Den kan dog være nyttig i situationer, hvor der er milliarder af rækker i detaljetabellen og to til fem millioner forskellige værdier i kolonnen. I dette tilfælde er det hurtigere at optælle end at scanne tabellen med milliarder af rækker, selv om det er cachelagret i hukommelsen.
 
 ![forespørgselseksempel](media/desktop-aggregations/aggregations-code_07.jpg)
 
@@ -197,11 +213,11 @@ I følgende tabel vises sammenlægningerne for tabellen **Driver Activity Agg**.
 
 ### <a name="group-by-columns"></a>Kolonnevis gruppering
 
-I dette eksempel er **GroupBy**-posterne **ikke valgfri**, og uden dem ville sammenlægningerne ikke give forekomster. Dette er an anderledes funktionsmåde en brug af sammenlægninger baseret på relationer, som er omfattet af det dimensionelle modeleksempel, der er angivet tidligere i denne artikel.
+I dette eksempel er **GroupBy**-posterne **ikke valgfrie**, og uden dem ville sammenlægningerne ikke give forekomster. Dette er an anderledes funktionsmåde en brug af sammenlægninger baseret på relationer, som er omfattet af det dimensionelle modeleksempel, der er angivet tidligere i denne artikel.
 
 ### <a name="query-examples"></a>Eksempler på forespørgsler
 
-Ved følgende forespørgsel giver sammenlægningen forekomster, fordi kolonnen **Activity Date** er dækket af sammenlægningstabellen. Sammenlægningen Optæl tabelrækker anvendes af funktionen COUNTROWS.
+Følgende forespørgsel giver sammenlægningen forekomster, fordi kolonnen **Activity Date** er dækket af sammenlægningstabellen. Sammenlægningen Optæl tabelrækker anvendes af funktionen COUNTROWS.
 
 ![forespørgselseksempel](media/desktop-aggregations/aggregations-code_08.jpg)
 
@@ -277,4 +293,3 @@ Artikler om DirectQuery:
 
 * [Brug af DirectQuery in Power BI](desktop-directquery-about.md)
 * [Understøttede datakilder i forbindelse med DirectQuery i Power BI](desktop-directquery-data-sources.md)
-
