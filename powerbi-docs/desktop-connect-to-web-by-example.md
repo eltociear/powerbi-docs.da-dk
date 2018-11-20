@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/23/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7de11de4c10df6a76f031f88952671d0e365b498
-ms.sourcegitcommit: 17d68172c73e9a9ff7966ddcedc3f8450584cdec
+ms.openlocfilehash: 9d7012006ca18cf43c530c4d79ed02e6ed73f33f
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49952205"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679227"
 ---
 # <a name="get-data-from-a-web-page-by-providing-an-example"></a>Hent data fra en webside ved at angive et eksempel
 
@@ -35,9 +35,9 @@ Hvis du vil bruge **Hent data fra web efter eksempel**, skal du vælge **Hent da
 
 Angiv URL-adressen til den webside, som du vil udtække data fra. I denne artikel bruger vi websiden Microsoft Store og viser, hvordan denne connector fungerer. 
 
-Hvis du vil følge med, kan du bruge den [URL-adresse til Microsoft Store](https://www.microsoft.com/en-us/store/top-paid/games/xbox?category=classics), som vi bruger i denne artikel:
+Hvis du vil følge med, kan du bruge den [URL-adresse til Microsoft Store](https://www.microsoft.com/store/top-paid/games/xbox?category=classics), som vi bruger i denne artikel:
 
-    https://www.microsoft.com/en-us/store/top-paid/games/xbox?category=classics
+    https://www.microsoft.com/store/top-paid/games/xbox?category=classics
 
 ![dialogboksen Web](media/desktop-connect-to-web-by-example/web-by-example_04.png)
 

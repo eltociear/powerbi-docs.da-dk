@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2e74c8db22a2a1c4ddb188ae13a8ca5df9f862f3
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 432e38ffdcb92ee1d2cf1d62f7f34863d748885b
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507709"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679104"
 ---
 # <a name="find-and-connect-to-an-organizational-content-pack"></a>Find og opret forbindelse til en organisationsindholdspakke
 
@@ -38,7 +38,7 @@ Oprettelse af indholdspakker adskiller sig fra deling af dashboards eller samarb
 ## <a name="connect-to-an-organizational-content-pack"></a>Opret forbindelse til en organisationsindholdspakke
 * Vælg **Hent den nu** for at oprette forbindelse til indholdspakken og føje den til dit aktive arbejdsområde. Nye dashboards, rapporter, Excel-projektmapper og datasæt er markeret med en gul stjerne.
 
-Hvis indholdspakken er en Excel-projektmappe, kan du få vist en advarsel om, at du ikke har tilladelse til at få vist projektmappen. Hvis det er tilfældet, kan du bede ejeren af indholdspakken om at [dele projektmappen med dig i OneDrive for Business](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
+Hvis indholdspakken er en Excel-projektmappe, kan du få vist en advarsel om, at du ikke har tilladelse til at få vist projektmappen. Hvis det er tilfældet, kan du bede ejeren af indholdspakken om at [dele projektmappen med dig i OneDrive for Business](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c). 
 
 Indholdspakken er låst. Du kan [gemme din egen kopi af dashboard og rapporter](../service-organizational-content-pack-copy-refresh-access.md). 
 

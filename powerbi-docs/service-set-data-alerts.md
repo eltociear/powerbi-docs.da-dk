@@ -1,7 +1,7 @@
 ---
 title: Indstil databeskeder i Power BI-tjenesten
 description: Få mere at vide om, hvordan du angiver beskeder, så du får besked, når dataene på dine dashboards ændres ud over de grænser, du har angivet i Microsoft Power BI-tjenesten.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 02/28/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: d7251cea6a8244562b22d6511df754d3287587af
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: 52f5d7e8bbf6f22f930ad7b4703587ea3af3dc94
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44726334"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717510"
 ---
 # <a name="data-alerts-in-power-bi-service"></a>Databeskeder i Power BI-tjenesten
 Angiv beskeder, så du får besked, når dataene på dine dashboards ændres ud over de grænser, du har angivet. 

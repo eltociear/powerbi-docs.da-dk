@@ -1,7 +1,7 @@
 ---
 title: Føj billede, tekst, video, streamingdata til dit dashboard
 description: Dokumentation om, hvordan du kan bruge widget'en Tilføj felt til at føje et billede, en video, et tekstfelt, en webkode og et streamingdatafelt til et dashboard.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: e2PD8m1Q0vU
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 03/02/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 68195883f2aad0f3131ec14c508334ac41cd918b
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 01af6707cf53f1a5be3f1e7446e967b2306e993b
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545860"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717917"
 ---
 # <a name="add-image-text-video-and-more-to-your-dashboard"></a>Føj billede, tekst, video og mere til dit dashboard
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>

@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 28934a525c332344b31de599363fb41126a18cfa
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: ccb73b05998eded0c32742deed57b2bee35fbbb6
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548758"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679081"
 ---
 # <a name="share-a-power-bi-dashboard-that-links-to-an-excel-file-in-onedrive"></a>Del et Power BI-dashboard, der linker til en Excel-fil i OneDrive
 I Power BI kan du [oprette forbindelse til Excel-projektmapper på OneDrive for Business](service-excel-workbook-files.md) og fastgøre felter til et dashboard fra den projektmappe. Når du deler det dashboard eller opretter en indholdspakke, der indeholder dette dashboard:
 
 * Dine kollegaer kan få vist felterne uden at have tilladelser til selve projektmappen. Så du kan oprette en indholdspakke og vide, at dine kollegaer kan se de felter, der er oprettet ud fra Excel-projektmappen på OneDrive.
-* Når du klikker på feltet, åbnes projektmappen i Power BI. Projektmappen åbnes kun, hvis dine kollegaer som minimum har [læserettigheder](https://support.office.com/en-us/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c) til projektmappen i OneDrive for Business.
+* Når du klikker på feltet, åbnes projektmappen i Power BI. Projektmappen åbnes kun, hvis dine kollegaer som minimum har [læserettigheder](https://support.office.com/article/Share-documents-or-folders-in-Office-365-1fe37332-0f9a-4719-970e-d2578da4941c) til projektmappen i OneDrive for Business.
 
 ## <a name="share-a-dashboard-that-contains-workbook-tiles"></a>Del et dashboard, der indeholder projektmappefelter
 Hvis du vil dele et dashboard, der har en linker tilbage til en Excel-projektmappe på OneDrive for Business, kan du se [Del et dashboard](service-share-dashboards.md). Forskellen er, at du har mulighed for at ændre tilladelserne for den sammenkædede Excel-projektmappe, før du deler.
@@ -30,7 +30,7 @@ Hvis du vil dele et dashboard, der har en linker tilbage til en Excel-projektmap
 
 1. Angiv mailadressen til dine kollegaer.
 2. Hvis du vil gøre det muligt for dine kollegaer at få vist Excel-projektmappen fra Power BI, skal du vælge **Gå til OneDrive for Business for at angive tilladelser til projektmappen**.
-3. På OneDrive kan du [ændre tilladelserne](https://support.office.com/en-US/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) efter behov.
+3. På OneDrive kan du [ændre tilladelserne](https://support.office.com/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) efter behov.
 4. Vælg **Del**.
 
 >[!NOTE]
@@ -46,7 +46,7 @@ Når du [publicerer en indholdspakke](service-organizational-content-pack-create
    
     ![Excel-projektmappe i en indholdspakke](media/service-share-dashboard-that-links-to-excel-onedrive/pbi_contpack_workbk.png)
 3. Vælg **Gå til OneDrive for Business for at angive tilladelser til projektmappen**.
-4. På OneDrive kan du [ændre tilladelserne](https://support.office.com/en-US/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) efter behov.
+4. På OneDrive kan du [ændre tilladelserne](https://support.office.com/article/Share-files-and-folders-and-change-permissions-9fcc2f7d-de0c-4cec-93b0-a82024800c07) efter behov.
 5. Vælg **Publicer**.
 
 ## <a name="share-a-dashboard-from-a-power-bi-workspace"></a>Del et dashboard fra et arbejdsområde i Power BI

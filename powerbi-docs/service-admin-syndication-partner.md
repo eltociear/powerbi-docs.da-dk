@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4854f05e3394d7b4eed2c67de8bbca5266a12ae3
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: 912ed0be1e6a732db46e83f8a9b0757ad2801dab
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909312"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157396"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Det var ikke muligt at føje Power BI til en partners Office 365-abonnement
 
@@ -23,7 +23,7 @@ Office 365 giver firmaer mulighed for at forhandle Office 365 samlet og integrer
 
 Hvis du er interesseret i at købe Power BI sammen med dit Office 365-abonnement, anbefaler vi, at du kontakter din partner for at gøre det. Hvis din partner ikke tilbyder Power BI i øjeblikket, har du andre muligheder, du kan benytte dig af.
 
-# <a name="work-with-your-partner-to-purchase-power-bi"></a>Arbejd sammen med din partner om at købe Power BI
+## <a name="work-with-your-partner-to-purchase-power-bi"></a>Arbejd sammen med din partner om at købe Power BI
 
 Hvis du vil købe et abonnement på Power BI Pro eller Power BI Premium, skal du i samarbejde med din partner overveje, hvilke muligheder du har:
 
@@ -31,7 +31,7 @@ Hvis du vil købe et abonnement på Power BI Pro eller Power BI Premium, skal du
 
 * Din partner kan lade dig overgå til en model, hvor du kan købe Power BI direkte af Microsoft eller en anden partner, som tilbyder Power BI.
 
-# <a name="purchase-from-microsoft-or-another-channel"></a>Køb fra Microsoft eller en anden kanal
+## <a name="purchase-from-microsoft-or-another-channel"></a>Køb fra Microsoft eller en anden kanal
 
 Afhængigt af relationen med din partner kan du muligvis købe Power BI direkte fra Microsoft eller en anden partner. Du kan kontrollere, om du kan tilføje Power BI-abonnementer på Office 365 Administrationsportal (kræver medlemskab med rollen Global administrator eller Faktureringsadministrator).
 

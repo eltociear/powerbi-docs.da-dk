@@ -1,21 +1,21 @@
 ---
 title: Få en introduktion til eksemplerne, der er tilgængelige med Power BI
 description: Eksempel på indholdspakker, PBIX-filer og Excel-datasæt til Power BI
-author: mihart
+author: maggiesMSFT
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/06/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 91c08ab428852cc0fa8a721278e232400ed19bfa
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: fa6c6094e4fdfefebd0c7bb1f9ec8fa87d41766b
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546481"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717786"
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Hvilke eksempeldata er tilgængelige til brug med Power BI?
 Lad os antage, at du ikke kender Power BI og vil afprøve det, men ikke har nogen data.  Eller måske har du et datasæt, men da du ikke (endnu) forstår, hvordan Power BI fungerer, er du bekymret for, om du på en eller anden måde kommer til at beskadige datasættet?

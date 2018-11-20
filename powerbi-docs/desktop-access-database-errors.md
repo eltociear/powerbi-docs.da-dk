@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 07/24/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 04e95ade5d7c7d0e2b9a6d9690873437e2ec1b6d
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 47bcfabddfeb5bfec828c7b14fef4798350939da
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39329724"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51678989"
 ---
 # <a name="resolve-issues-importing-access-and-xls-files-in-power-bi-desktop"></a>Løs problemer med at importere Access- og .xls-filer i Power BI Desktop
 I **Power BI Desktop** bruger både **Access-databaser** og tidligere versioner af **Excel-projektmapper** (.xls-filer af typen Excel 97-2003) *Access-databaseprogrammet*. Der er tre almindelige situationer, som kan forhindre Access-databaseprogrammet i at fungere korrekt:
 
 ### <a name="situation-1-no-access-database-engine-installed"></a>Situation 1: Access-databaseprogrammet er ikke installeret
-Når fejlmeddelelsen i Power BI Desktop fortæller, at Access-databaseprogrammet ikke er installeret, skal du installere den version af Access-databaseprogrammet, enten 32-bit eller 64-bit, der svarer til din version af Power BI Desktop. Du kan installere Access-databaseprogrammet fra [downloadsiden](http://www.microsoft.com/en-us/download/details.aspx?id=13255).
+Når fejlmeddelelsen i Power BI Desktop fortæller, at Access-databaseprogrammet ikke er installeret, skal du installere den version af Access-databaseprogrammet, enten 32-bit eller 64-bit, der svarer til din version af Power BI Desktop. Du kan installere Access-databaseprogrammet fra [downloadsiden](http://www.microsoft.com/download/details.aspx?id=13255).
 
 >[!NOTE]
 >Hvis den installerede version af Access-databaseprogrammet har en anden bit-version end din installation af Microsoft Office, kan Office-programmer ikke bruge Access-databaseprogrammet.
@@ -41,7 +41,7 @@ Denne situation opstår ofte, når den installerede version af Microsoft Office 
    >Når du bruger 32-bit versionen af Power BI Desktop, og du opretter meget store datamodeller, kan du opleve problemer med manglende hukommelse.
 2. Skift versionen af Microsoft Office, så den svarer til bit-versionen af din Power BI Desktop-installation. Du kan ændre bit-versionen af Microsoft Office ved at fjerne Office og derefter installere den version af Office, der svarer til installationen af Power BI Desktop.
 3. Hvis fejlen opstod under forsøg på at åbne en .xls-fil (en Excel 97-2003-projektmappe), kan du undgå at bruge Access-databaseprogrammet ved at åbne .xls-filen i Excel og gemme den som en XLSX-fil.
-4. Hvis de tre nævnte løsninger ikke kan gennemføres, er det muligt at installere begge versioner af Access-databaseprogrammet, men det er *ikke* en anbefalet løsning. Hvis du installerer begge versioner, kan det løse problemet for Power-forespørgsel til Excel og Power BI Desktop, men det medfører fejl og problemer for alle programmer, der automatisk (som standard) bruger den bit-version af Access-databaseprogrammet, som blev installeret først. Hvis du vil installere begge bit-versioner af Access-databaseprogrammet, skal du[downloade](http://www.microsoft.com/en-us/download/details.aspx?id=13255) begge versioner og derefter køre dem begge ved hjælp af parameteren */passive*. Eksempel:
+4. Hvis de tre nævnte løsninger ikke kan gennemføres, er det muligt at installere begge versioner af Access-databaseprogrammet, men det er *ikke* en anbefalet løsning. Hvis du installerer begge versioner, kan det løse problemet for Power-forespørgsel til Excel og Power BI Desktop, men det medfører fejl og problemer for alle programmer, der automatisk (som standard) bruger den bit-version af Access-databaseprogrammet, som blev installeret først. Hvis du vil installere begge bit-versioner af Access-databaseprogrammet, skal du[downloade](http://www.microsoft.com/download/details.aspx?id=13255) begge versioner og derefter køre dem begge ved hjælp af parameteren */passive*. Eksempel:
    
        c:\users\joe\downloads\AccessDatabaseEngine.exe /passive
    
@@ -50,7 +50,7 @@ Denne situation opstår ofte, når den installerede version af Microsoft Office 
 ### <a name="situation-3-trouble-using-access-or-xls-files-with-an-office-365-subscription"></a>Situation 3: Problemer med at bruge Access- eller .xls-filer med et Office 365-abonnement
 Hvis du bruger et Office 365-abonnement, uanset om det er **Office 2013** eller **Office 2016**, er udbyderen af Access-databaseprogrammet registreret i en virtuel placering i registreringsdatabasen, som *kun* Office-processer kan få adgang til. Miksprogrammet (der har ansvaret for at køre ikke-Office 365 Excel og Power BI Desktop), som ikke er en Office-proces, kan derfor ikke bruge udbyderen af Access-databaseprogrammet.
 
-Du kan løse problemet ved at [downloade og installere den videredistribuerbare version af Access-databaseprogrammet](http://www.microsoft.com/en-us/download/details.aspx?id=13255), der stemmer overens med bit-versionen af din installation af Power BI Desktop (se tidligere afsnit for at få flere oplysninger om bit-versioner).
+Du kan løse problemet ved at [downloade og installere den videredistribuerbare version af Access-databaseprogrammet](http://www.microsoft.com/download/details.aspx?id=13255), der stemmer overens med bit-versionen af din installation af Power BI Desktop (se tidligere afsnit for at få flere oplysninger om bit-versioner).
 
 ### <a name="other-situations-that-cause-import-issues"></a>Andre situationer, der kan medføre importproblemer
 Vi bestræber os på at dække så mange af de problemer, der kan opstå i forbindelse med Access- og .xls-filer, som muligt. Hvis der opstår et problem, der ikke er beskrevet i denne artikel, kan du sende et spørgsmål om problemet til [Support til Power BI](https://powerbi.microsoft.com/support/). Vi kigger jævnligt på problemer, der kan påvirke mange kunder, og inkluderer dem i vores artikler.

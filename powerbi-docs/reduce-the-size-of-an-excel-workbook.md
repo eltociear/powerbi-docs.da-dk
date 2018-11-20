@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/27/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 12ff54b1aa44edaead98b1fab6942acbd76216c7
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 5d21dff56620e4b2eb05ed3bbf123ff1d1805075
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39329425"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679335"
 ---
 # <a name="reduce-the-size-of-an-excel-workbook-to-view-it-in-power-bi"></a>Reducer størrelsen på en Excel-projektmappe for at få den vist i Power BI
 Du kan uploade en Excel-projektmappe, der er mindre end 1 GB, til Power BI. En Excel-projektmappe kan omfatte to dele: en datamodel og resten af rapporten, dvs. hovedindholdet i regnearket. Hvis rapporten ligger under følgende størrelsesgrænser, kan du gemme den til **OneDrive for Business**, oprette forbindelse til den fra Power BI og se den i Excel Online:
@@ -28,7 +28,7 @@ Her er nogle elementer, som kan gøre størrelsen på hovedindholdet i regnearke
 
 * Billeder.
 * Skraverede celler. [Fjern et celleskyggeformat](https://support.office.com/article/Add-or-change-the-background-color-of-cells-ac10f131-b847-428f-b656-d65375fb815e).
-* Farvede regneark. [Fjern en arkbaggrund](https://support.office.com/en-US/article/add-or-remove-a-sheet-background-3577a762-8450-4556-96a2-cc265abc00a8).
+* Farvede regneark. [Fjern en arkbaggrund](https://support.office.com/article/add-or-remove-a-sheet-background-3577a762-8450-4556-96a2-cc265abc00a8).
 * Tekstfelter.
 * Clipart.
 
@@ -55,7 +55,7 @@ Når du importerer data i Excel, skal du følge disse tip:
 * **Fra fanen Excel-data**: Markér ikke **Tabel** i feltet **Importér data**.
 
 ## <a name="workbook-size-optimizer"></a>Workbook Size Optimizer
-Hvis din projektmappe indeholder en datamodel, kan du reducere størrelsen på projektmappen ved at køre Workbook Size Optimizer. [Download Workbook Size Optimizer](https://www.microsoft.com/en-us/download/details.aspx?id=38793).
+Hvis din projektmappe indeholder en datamodel, kan du reducere størrelsen på projektmappen ved at køre Workbook Size Optimizer. [Download Workbook Size Optimizer](https://www.microsoft.com/download/details.aspx?id=38793).
 
 ## <a name="related-info"></a>Relaterede oplysninger
 [Opret en hukommelseseffektiv datamodel](https://support.office.com/article/Create-a-memory-efficient-Data-Model-using-Excel-2013-and-the-Power-Pivot-add-in-951c73a9-21c4-46ab-9f5e-14a2833b6a70)
