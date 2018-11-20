@@ -4,24 +4,26 @@ description: I denne artikel sammenlignes funktionerne i Power BI-rapportservere
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 05/07/2018
+ms.date: 11/06/2018
 ms.topic: overview
 ms.service: powerbi
 ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: f78638097ea33f9954f3db78c117f1935a68530b
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: a693eef85f7eafe7cfac2a02cbccc346201a6f13
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908525"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507686"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Sammenlign Power BI-rapportserveren med Power BI-tjenesten
 
 Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigtige forskelle. I denne tabel forklares det, hvad der er hvad.
 
-| Funktioner | Power BI Report Server | Power BI Service | Noter
+## <a name="features-of-power-bi-report-server-and-the-power-bi-service"></a>Funktioner i Power BI-rapportserveren og Power BI-tjenesten
+
+| Funktioner | Power BI Report Server | Power BI-tjeneste | Noter
 |---------|---------|---------|---------|
 | Installation | I det lokale miljø eller i hostet cloud | Cloud | Power BI-rapportserveren kan installeres i Azure VM'er (hostet cloud), hvis det er givet i licens via Power BI Premium
 | Kildedata | Cloud og/eller i det lokale miljø | Cloud og/eller i det lokale miljø |  
@@ -39,18 +41,18 @@ Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigti
 | Spørgsmål og svar | Nej | Ja | [Spørgsmål og svar i Power BI-tjenesten og Power BI Desktop](../consumer/end-user-q-and-a.md) 
 | Hurtig indsigt | Nej | Ja | [Generér automatisk dataindsigt med Power BI](../consumer/end-user-insights.md) 
 | Analysér i Excel | Nej | Ja | [Analysér i Excel](../service-analyze-in-excel.md) 
-| Sideinddelte rapporter | Ja | Nej | Sideinddelte rapporter er ikke tilgængelige i Power BI-tjenesten, men du kan [fastgøre elementer i sideinddelte rapporter til Power BI-dashboards](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
+| Sideinddelte rapporter | Ja | Ja | [Sideinddelte rapporter er tilgængelige i Power BI-tjenesten](../paginated-reports-report-builder-power-bi.md) som prøveversion
 | Power BI-mobilapps | Ja | Ja | [Oversigt over Power BI-mobilapps](../consumer/mobile/mobile-apps-for-mobile-devices.md) 
 | ARC GIS-kort | Nej | Ja | [ArcGIS-kort i Power BI-tjenesten og Power BI Desktop fra Esri](../power-bi-visualization-arcgis.md)
 | Mailabonnementer på Power BI-rapporter | Nej | Ja | [Abonner på en rapport eller et dashboard](../consumer/end-user-subscribe.md) i Power BI-tjenesten 
 | Mailabonnementer på sideinddelte rapporter | Ja | Nej | [Maillevering i Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  
 | Databeskeder | Nej | Ja | [Databeskeder](../service-set-data-alerts.md) i Power BI-tjenesten
 | Sikkerhed på rækkeniveau | Kun via datakilde i DirectQuery-tilstand | Tilgængelige i både DirectQuery- (datakilde) og importtilstand | [Sikkerhed på rækkeniveau (RLS)](../service-admin-rls.md) med Power BI 
-| Fuldskærmsvisning | Nej | Ja | [Fuldskærmsvisning](../service-fullscreen-mode.md) i Power BI-tjenesten 
+| Fuldskærmsvisning | Nej | Ja | [Fuldskærmsvisning](../consumer/end-user-focus.md) i Power BI-tjenesten 
 | Avanceret samarbejde i Office 365 | Nej | Ja | [Samarbejd i et apparbejdsområde](../service-collaborate-power-bi-workspace.md) med Office 365 
 | R-visuals | Nej | Ja | [Opret visuelle R-elementer](../visuals/service-r-visuals.md) i Power BI-tjenesten  
-| Funktioner til eksempelvisning | Nej | Ja | [Tilmeld dig prøveversioner af funktioner i Power BI-tjenesten](../consumer/end-user-preview-features.md) 
-| Brugerdefinerede visuelle elementer | Ja | Ja | [Brugerdefinerede visualiseringer i Power BI](../power-bi-custom-visuals.md) 
+| Prøveversionsfunktioner | Nej | Ja | [Tilmeld dig prøveversioner af funktioner i Power BI-tjenesten](../consumer/end-user-preview-features.md) 
+| Brugerdefinerede visualiseringer | Ja | Ja | [Brugerdefinerede visualiseringer i Power BI](../power-bi-custom-visuals.md) 
 | Power BI Desktop | Version, der er optimeret til rapportserveren, kan downloades med rapportserveren | Version, der er optimeret til Power BI-tjenesten, er tilgængelig fra Windows Store | [Power BI Desktop til rapportserveren](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop til Power BI-tjenesten](http://aka.ms/pbidesktopstore)
 
 ## <a name="next-steps"></a>Næste trin

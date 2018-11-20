@@ -1,5 +1,5 @@
 ---
-title: Opret forbindelse til data oprettet af Power BI-dataflows i Power BI Desktop (prøveversion)
+title: Opret forbindelse til data oprettet af Power BI-dataflow i Power BI Desktop (beta)
 description: Opret nemt forbindelse til og brug data fra dataflows i Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,58 +7,46 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 11/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f3964b96f8f282772f6d511c9c412e0caabd1d00
-ms.sourcegitcommit: c51461690e8faa121a1325957ca79b7a3975e8b8
+ms.openlocfilehash: f87db1f715118f346e3b8069897e92fd157f881c
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44512694"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265926"
 ---
-# <a name="connect-to-data-created-by-power-bi-dataflows-in-power-bi-desktop-preview"></a>Opret forbindelse til data oprettet af Power BI-dataflows i Power BI Desktop (prøveversion)
+# <a name="connect-to-data-created-by-power-bi-dataflows-in-power-bi-desktop-beta"></a>Opret forbindelse til data oprettet af Power BI-dataflow i Power BI Desktop (beta)
 I **Power BI Desktop** kan du oprette forbindelse til data oprettet af **Power BI-dataflows** på samme måde som enhver anden datakilde i Power BI Desktop.
 
 ![Opret forbindelse til dataflows](media/desktop-connect-dataflows/connect-dataflows_01.png)
 
-Med connectoren **Power BI-dataflows (prøveversion)** kan du oprette forbindelse til enheder oprettet af dataflows i Power BI-tjenesten. Da dataflows er tilgængelige i en prøveversion, er der nogle få trin, du skal foretage for at få adgang til dataflows-connectoren på dit system. 
-
-
-## <a name="download-and-enable-the-power-bi-dataflows-connector-preview"></a>Download og aktivér Power BI-dataflows-connectoren (prøveversion)
-
-Du skal downloade en kopi af **Power BI-dataflows**-connectoren og derefter kopiere den til en bestemt placering på din computer. I en kommende månedlig opdatering af Power BI Desktop vil connectoren automatisk være med på listen over dataforbindelser, hvorefter disse trin ikke vil være nødvendige.
-
-Du kan downloade **Power BI-dataflows-connectoren** på denne placering: [Power BI-dataflows-connector](https://visuals.azureedge.net/cds-analytics/PublicPreview/CDSA.mez)
-
-Gør følgende for at gøre **Power BI-dataflows**-connectoren (prøveversion) tilgængelig på din computer:
-
-1. Download en kopi af .MEZ-filen (dataconnector-filen). Kunder med en personlig prøveversion modtager oplysninger om overførsel af .MEZ-filen direkte fra Microsoft.
-
-2. Placer den overførte data-connector-fil i følgende mappe på computeren:  **Dokumenter > Power BI Desktop > Brugerdefineret connector-mappe**
-
-3. I Power BI Desktop skal du vælge **Fil > Indstillinger > Indstillinger** og derefter vælge **Funktioner til eksempelvisning** i venstre rude.
-
-    ![Aktivér brugerdefinerede forbindelser](media/desktop-connect-dataflows/connect-dataflows_02.png)
-
-4. Markér feltet **Brugerdefinerede dataconnectors**, hvis det ikke allerede er markeret. 
-
-5. Genstart **Power BI Desktop** for at få vist connectoren.
-
-## <a name="use-the-power-bi-dataflows-connector-preview"></a>Brug Power BI-dataflows-connectoren (prøveversion)
-Når **Power BI Desktop** er genstartet, vises connectoren som en tilgængelig datakilde. Hvis du vil oprette forbindelse til en datagruppe, skal du vælge **Hent data > Onlinetjenester > Power BI-dataflows (beta)** som vist på følgende billede:
-
-![Opret forbindelse til dataflows](media/desktop-connect-dataflows/connect-dataflows_01.png)
+Med connectoren **Power BI-dataflow (beta)** kan du oprette forbindelse til enheder, der er oprettet af dataflow i Power BI-tjenesten. 
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
-Hvis du vil bruge denne prøveversion af **Power BI-dataflows-connector**, skal du køre den seneste version af **Power BI Desktop**. Du kan altid [hente Power BI Desktop](desktop-get-the-desktop.md) og installere det på din computer for at sikre dig, at du har den nyeste version.  
+Hvis du vil bruge denne betaversion af **connectoren Power BI-dataflow**, skal du køre den seneste version af **Power BI Desktop**. Du kan altid [hente Power BI Desktop](desktop-get-the-desktop.md) og installere det på din computer for at sikre dig, at du har den nyeste version.  
 
-Bemærk: Når Power BI-dataflows-connectoren optræder i en kommende månedlig opdatering af **Power BI Desktop**, *skal* du slette den downloadede .MEZ-fil fra mappen **Dokumenter > Power BI Desktop > Brugerdefinerede connectors** for at undgå konflikter. 
+> [!NOTE]
+> I den tidligere version af connectoren Power BI-dataflow krævedes det, at du downloadede en .MEZ-fil og anbragte den i en mappe. Aktuelle versioner af **Power BI Desktop** inkluderer connectoren Power BI-dataflow, så denne fil er ikke længere påkrævet og kan medføre konflikter med den inkluderede version af connectoren. Hvis du har placeret denne .MEZ-fil i mappen manuelt, *skal* du slette denne downloadede .MEZ-fil fra mappen **Dokumenter > Power BI Desktop > Brugerdefinerede connectors** for at undgå konflikter. 
+
+## <a name="desktop-performance"></a>Stationær computers ydeevne
+**Power BI Desktop** kører lokalt på den computer, hvor det er installeret. Ydeevnen for dataindtagelse for dataflow bestemmes af en lang række faktorer. Disse faktorer omfatter mængden af dataene, din computers CPU og RAM, netværkets båndbredde, afstanden til datacenteret og andre faktorer.
+
+Du kan forbedre ydeevnen for dataindtagelse for dataflow. Hvis f.eks. mængden af de overførte data er for stor til, at **Power BI Desktop** kan administrere dem på din computer, kan du bruge sammenkædede og beregnede objekter i dataflow til at samle dataene (i dataflow) og kun overføre de samlede data, der er klargjort i forvejen. Dette medfører, at behandling af store datamængder udføres online i dataflow i stedet for at blive udført lokalt i din kørende forekomst af **Power BI Desktop**. Denne tilgang giver Power BI Desktop mulighed for at overføre mindre datamængder og sørger for, at oplevelsen med dataflow forbliver dynamisk og hurtig.
 
 
 ## <a name="next-steps"></a>Næste trin
-Du kan finde en masse interessante ting, som du kan gøre med Power BI-dataforbindelser, samt artikler om **Power BI Desktop**, der kan være nyttige:
+Du kan gøre mange forskellige interessante ting med Power BI-dataflow. Du kan finde flere oplysninger i følgende ressourcer:
+
+* [Selvbetjent dataforberedelse med dataflow](service-dataflows-overview.md)
+* [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
+* [Brug beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
+* [Brug dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
+
+Der findes også artikler om **Power BI Desktop**, som du kan finde nyttige:
 
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)
 * [Udform og kombiner data med Power BI Desktop](desktop-shape-and-combine-data.md)
