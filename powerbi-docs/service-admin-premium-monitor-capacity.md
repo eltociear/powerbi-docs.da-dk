@@ -8,20 +8,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/09/2018
+ms.date: 11/06/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 2623dd3280636583d5dd6d6e3f57518550032193
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: bb7527a197c9556509ebba721ee49a2d9817b6f5
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003196"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266202"
 ---
 # <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Overvåg kapaciteter i Power BI Premium og Power BI Embedded
 
 Denne artikel indeholder en oversigt over overvågning af målepunkter for dine Power BI Premium-kapaciteter. Ved at overvåge kapacitetsforbrug kan du træffe mere velovervejede beslutninger, når du administrerer dine kapaciteter.
 
-Du kan overvåge kapacitet med Power BI Premium-appen Capacity Metrics eller i administrationsportalen. Vi anbefaler appen, fordi den giver mange flere detaljer, men i denne artikel beskrives begge muligheder.
+Du kan overvåge kapacitet med Power BI Premium-appen Capacity Metrics eller i administrationsportalen. Vi anbefaler appen, fordi den giver mange flere detaljer, men i denne artikel beskrives begge muligheder. **Den aktuelle version af appen er 1.8 (udgivet den 7. november 2018).**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UgsjMbhi_Bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -33,11 +33,11 @@ Du kan gå direkte til [Premium-appen Capacity Metrics](https://app.powerbi.com/
 
     ![Gå til Apps](media/service-admin-premium-monitor-capacity/apps.png)
 
-2. I højre side skal du klikke på **Hent apps**.
+1. I højre side skal du klikke på **Hent apps**.
 
-3. I kategorien **Apps** skal du søge efter **Power BI-appen Capacity Metrics**.
+1. I kategorien **Apps** skal du søge efter **Power BI-appen Capacity Metrics**.
 
-4. Abonner for at installere appen.
+1. Abonner for at installere appen.
 
 Nu, hvor du har installeret appen, kan du se målepunkter for kapaciteterne i din organisation. Lad os se nærmere på nogle af de vigtigste målepunkter, der er tilgængelige.
 
@@ -47,72 +47,155 @@ Når du åbner appen, viser den først et dashboard med en oversigt over alle de
 
 ![Appdashboardet Målepunkter](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
-Rapporten indeholder tre faner, der beskrives mere detaljeret i følgende afsnit.
+Klik på dashboardet for at gå til den underliggende rapport. Rapporten indeholder seks faner, der beskrives mere detaljeret i følgende afsnit.
 
-* **Filters applied to all pages (Filtre anvendt på alle sider)**: Gør det muligt at filtrere de andre sider i rapporten til en bestemt kapacitet.
-* **Datasæt**: Giver detaljeret målepunkter for tilstanden for datasættene i dine kapaciteter.
-* **System**: Giver overordnede kapacitetsmålepunkter, herunder hukommelse og højt CPU-forbrug. 
+* **Filtre**: Gør det muligt at filtrere de andre sider i rapporten til en bestemt kapacitet.
 
-### <a name="filters-applied-to-all-pages-tab"></a>Fanen Filters applied to all pages (Filtre anvendt på alle sider)
+* **Datasæt**: Giver detaljerede målepunkter for tilstanden for Power BI-datasættene i dine kapaciteter.
 
-Under fanen **Filtre, der anvendes på alle sider** kan du vælge en kapacitet, et datasæt og et datointerval inden for de seneste syv dage. Filtrene anvendes derefter på alle de relevante sider og felter i rapporten. Hvis der ikke er markeret nogen filtre, viser rapporten som standard målepunkter for den seneste uge for hver kapacitet, du ejer.
+* **Sideinddelte rapporter**: Giver detaljerede målepunkter for tilstanden for sideinddelte rapporter i dine kapaciteter.
+
+* **Dataflow**: Giver detaljerede opdateringsmålepunkter for dataflow i dine kapaciteter.
+
+* **System**: Giver overordnede kapacitetsmålepunkter, herunder hukommelse og højt CPU-forbrug.
+
+* **Viste navne og id'er**: Giver navne, id'er og ejere for kapaciteter, arbejdsområder og arbejdsbelastninger.
+
+### <a name="filters-tab"></a>Fanen Filtre
+
+Fanen **Filtre** gør det muligt at vælge en kapacitet, et datointerval og andre indstillinger. Filtrene anvendes derefter på alle de relevante sider og felter i rapporten. Hvis der ikke er markeret nogen filtre, viser rapporten som standard målepunkter for den seneste uge for hver kapacitet, du ejer.
 
 ![Fanen Filtre](media/service-admin-premium-monitor-capacity/filters-tab.png)
 
+* **(A)**  Vælg **Datasæt**, **Sideinddelte rapporter** eller **Dataflow** for at angive filtre for hver enkelt arbejdsbelastning.
+
+* **(B)**  Navn og **(C)** oplysninger opdateres baseret på det, du vælger i **(A)**, så du kan filtrere på en arbejdsbelastning efter navn. På billedet ovenfor, er **Dataflow** f.eks. valgt, og **Dataflownavn** og **Dataflowoplysninger** vises.
+
+* **(D)** Kapacitetsoplysninger, der indikerer, om datasæt, sideinddelte rapporter eller dataflow er aktiveret for en kapacitet.
+
 ### <a name="datasets-tab"></a>Fanen Datasæt
 
-Under fanen **Datasæt** vises størstedelen af målepunkterne i appen. Brug knapperne øverst under fanen til at navigere til forskellige områder: **Oversigt**, **Opdateringer**, **Forespørgselsvarigheder**, **Ventetider for forespørgsler** og **Datasæt**.
+Brug knapperne øverst på fanen **Datasæt** til at gå til forskellige områder: **Oversigt**, **Opdateringer**, **Forespørgselsvarigheder**, **Forespørgselsventetider** og **Datasæt**.
 
 ![Fanen Datasæt](media/service-admin-premium-monitor-capacity/datasets-tab.png)
 
 #### <a name="summary-area"></a>Området Oversigt
 
-I området **Oversigt** kan du få et overblik over dine kapaciteter på basis af entiteter, systemressourcer og arbejdsbelastninger for datasæt.
+I området **Oversigt** kan du få et overblik over dine kapaciteter på basis af entiteter, systemressourcer og arbejdsbelastninger for datasæt. Det viser følgende målepunkter.
 
-| | **Målepunkter** |
+| **Rapportafsnit** | **Målepunkter** |
 | --- | --- |
 | **Objekter** | * Antallet af kapaciteter, som du ejer<br> * Det specifikke antal datasæt i din kapacitet<br> * Det specifikke antal arbejdsområder i din kapacitet |
 | **System** | * Det gennemsnitlige hukommelsesforbrug i GB over de seneste syv dage<br> * Højeste hukommelsesforbrug i GB i løbet af de seneste syv dage og den lokale tid, forbruget opstod<br> * Det antal gange, CPU'en har overskredet 80 % af tærsklerne i løbet af de seneste syv dage opdelt i buckets på tre minutter<br> * De fleste gange, CPU'en har overskredet 80 % i løbet af de seneste syv dage opdelt i buckets på én time og den lokale tid, det opstod<br> * Det antal gange, forbindelser via direkte forespørgsler/direkte forbindelser har overskredet 80 % af tærsklerne i løbet af de seneste syv dage opdelt i buckets på tre minutter<br> * De fleste gange, forbindelser via direkte forespørgsler/direkte forbindelser har overskredet 80 % i løbet af de seneste syv dage opdelt i buckets på én time og den lokale tid, det opstod |
-| **Arbejdsbelastninger for datasæt** | * Det samlede antal opdateringer i løbet af de seneste syv dage<br> * Det samlede antal vellykkede opdateringer i løbet af de seneste syv dage<br> * Det samlede antal mislykkede opdateringer i løbet af de seneste syv dage<br> * Det samlede antal mislykkede opdateringer, der skyldes manglende hukommelse<br> * Den gennemsnitlige varighed af opdateringer måles i minutter – den tid, det tager at udføre handlingen<br> * Den gennemsnitlige ventetid for opdateringer måles i minutter – den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starten af handlingen<br> * Det samlede antal forespørgsler, der er kørt i løbet af de seneste syv dage<br> * Det samlede antal vellykkede forespørgsler i løbet af de seneste syv dage<br> * Det samlede antal mislykkede forespørgsler i løbet af de seneste syv dage<br> * Den gennemsnitlige varighed af forespørgsler måles i minutter – den tid, det tager at udføre handlingen<br> * Det samlede antal modeller, der fjernes på grund af for stort hukommelsesforbrug |
+| **Arbejdsbelastninger for datasæt** | * Det samlede antal opdateringer i løbet af de seneste syv dage<br> * Det samlede antal vellykkede opdateringer i løbet af de seneste syv dage<br> * Det samlede antal mislykkede opdateringer i løbet af de seneste syv dage<br> * Det samlede antal mislykkede opdateringer, der skyldes manglende hukommelse<br> * Den gennemsnitlige opdateringsvarighed er den tid, det tager at udføre handlingen i minutter<br> * Den gennemsnitlige opdateringsventetid er den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starten af handlingen i minutter<br> * Det samlede antal forespørgsler, der er kørt i løbet af de seneste syv dage<br> * Det samlede antal vellykkede forespørgsler i løbet af de seneste syv dage<br> * Det samlede antal mislykkede forespørgsler i løbet af de seneste syv dage<br> * Den gennemsnitlige forespørgselsvarighed er den tid, det tager at udføre handlingen i minutter<br> * Det samlede antal modeller, der fjernes på grund af for stort hukommelsesforbrug |
 |  |  |
 
 #### <a name="refreshes-area"></a>Området Opdateringer
 
-I området **Opdateringer** vises de fuldførte opdateringer, målinger af vellykkede opdateringer, den gennemsnitlige/maksimale ventetid for opdateringer og den gennemsnitlige/maksimale varighed af opdateringer opdelt efter datasæt i løbet af de seneste syv dage. I de to diagrammer nederst vises opdateringer i forhold til hukommelsesforbrug i GB og de gennemsnitlige ventetider opdelt i buckets på én time og rapporteret i lokaltid. I de øverste søjlediagrammer vises de fem øverste datasæt efter den gennemsnitlige tid, det tog at fuldføre det datasæt, der skulle opdateres (opdateringens varighed), og den gennemsnitlige ventetid for opdateringen. Hvis der er flere høje ventetider for opdateringer, kan det være tegn på, at kapaciteten snart er brugt op.
+Området **Opdateringer** indeholder følgende målepunkter.
+
+| **Rapportafsnit** | **Målepunkter** |
+| --- | --- |
+| **Opdateringspålidelighed** | * Samlet antal: Det samlede opdateringer for hvert datasæt<br> * Pålidelighed: Den fuldførte opdateringsandel for hvert enkelt datasæt i procent<br> * Gennemsnitlig ventetid: Den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starten af en opdatering af datasættet i minutter<br> * Maksimal ventetid: Den maksimale ventetid for datasættet i minutter <br> * Gennemsnitlig varighed: Den gennemsnitlige opdateringsvarighed for datasættet i minutter<br> * Maksimal varighed: Varigheden af den længstvarende opdatering af datasættet i minutter |
+| **Top 5-datasæt efter Gennemsnitlig opdateringsvarighed** | * De fem datasæt med den længstvarende gennemsnitlige opdateringsvarighed i minutter |
+| **Top 5 datasæt efter Gennemsnitlig ventetid** | * De fem datasæt med den længstvarende gennemsnitlige opdateringsventetid i minutter |
+| **Gennemsnitlige opdateringsventetider pr. time** | * Den gennemsnitlige opdateringsventetid opdelt i 1-times buckets, rapporteret i lokaltid. Flere tilfælde af høje opdateringsventetider kan være tegn på, at kapaciteten snart er brugt op. |
+| **Opdateringsantal og hukommelsesforbrug pr. time** | * Succeser, fejl og hukommelsesforbrug opdelt i 1-times buckets, rapporteret i lokaltid |
+|  |  |
 
 #### <a name="query-durations-area"></a>Område for forespørgselsvarigheder
 
-I området for **forespørgselsvarigheder** vises det samlede antal kørte forespørgsler og den gennemsnitlige/maksimale varighed i millisekunder. Disse data er opdelt i udsnit efter datasæt, arbejdsområde og buckets pr. time i løbet af de seneste syv dage. I diagrammerne nederst vises antallet af forespørgsler og gennemsnitlig varighed (i millisekunder) vs. hukommelsesforbrug i GB, opdelt i buckets på én time rapporteret i lokaltid.
+Området **Forespørgselsvarigheder** indeholder følgende målepunkter.
 
-I diagrammet øverst til højre vises et histogram med fordeling af forespørgselsvarighed. Histogrammet er inddelt i buckets efter forespørgselsvarigheder rapporteret i millisekunder i følgende kategorier: intervaller af < = 30 ms, 30-100 ms, 100-300 ms, 300 ms-1 sek., 1-3 sek., 3-10 sek., 10-30 sek. og > 30 sek.
-
-I diagrammet nederst til højre kan du se de øverste fem datasæt angivet efter den gennemsnitlige forespørgselsvarighed, der gik, inden forespørgslerne var udført.
-
-Lange forespørgselsvarigheder og lange ventetider betyder, at kapaciteten er overbelastet. Det kan også betyde, at et enkelt datasæt forårsager problemer, og at der er behov for yderligere undersøgelser.
+| **Rapportafsnit** | **Målepunkter** |
+| --- | --- |
+| **Forespørgselsvarigheder** | * Data i dette afsnit er opdelt i udsnit efter datasæt, arbejdsområde og buckets pr. time for de seneste syv dage<br> * I alt: Det samlede antal forespørgsler, der er kørt i forbindelse med datasættet<br> * Gennemsnit: Den gennemsnitlige forespørgselsvarighed for datasættet i millisekunder<br> * Maksimum: Varigheden af den længstkørende forespørgsel i datasættet i millisekunder|
+| **Distribution af forespørgselsvarighed** | * Histogrammet med forespørgselsvarighed er inddelt i buckets efter forespørgselsvarigheder (i millisekunder) i følgende kategorier: intervaller af < = 30 ms, 30-100 ms, 100-300 ms, 300 ms-1 sek., 1-3 sek., 3-10 sek., 10-30 sek. og > 30 sek. Lange forespørgselsvarigheder og lange ventetider betyder, at kapaciteten er overbelastet. Det kan også betyde, at et enkelt datasæt forårsager problemer, og at der er behov for yderligere undersøgelser. |
+| **Top 5-datasæt efter Gennemsnitlig varighed** | * De fem datasæt med den længstvarende gennemsnitlige forespørgselsvarighed i millisekunder |
+| **Direkte forespørgsel/liveforbindelser (> 80 % udnyttelse)** | * De gange, en direkte forespørgsel eller liveforbindelse har overskredet CPU-udnyttelsen på 80 % opdelt i 1-times buckets, rapporteret i lokaltid |
+| **Distributioner af forespørgselsvarighed pr. time** | * Antallet af forespørgsler og gennemsnitlig varighed (i millisekunder) vs. hukommelsesforbrug i GB opdelt i 1-times buckets, rapporteret i lokaltid |
+|  |  |
 
 #### <a name="query-waits-area"></a>Område for ventetider for forespørgsler
 
-I området for **ventetider for forespørgsler** kan du set det samlede antal kørte forespørgsler, det samlede antal ventende forespørgsler for dynamiske forespørgsler/direkte forespørgsler og den gennemsnitlige/maksimale ventetid rapporteret i millisekunder. Disse data er opdelt i udsnit efter datasæt, arbejdsområde og buckets pr. time i løbet af de seneste syv dage. I diagrammerne nederst vises antallet af ventende forespørgsler og den gennemsnitlige ventetid (i millisekunder) vs. hukommelsesforbrug i GB, opdelt i buckets på én time rapporteret i lokaltid.
+Området **Forespørgselsventetider** indeholder følgende målepunkter.
 
-I diagrammet øverst til højre vises et histogram med fordeling af ventetider for forespørgsler. Histogrammet er inddelt i buckets efter forespørgselsvarigheder rapporteret i millisekunder i følgende kategorier: intervaller af <= 50 ms, 50-100 ms, 100-200 ms, 200-400 ms, 400 ms-1 sek., 1-5 sek. og > 5 sek.
-
-I diagrammet nederst til højre kan du se de øverste fem datasæt angivet efter den gennemsnitlige ventetid, der gik, inden forespørgslerne blev startet.
+| **Rapportafsnit** | **Målepunkter** |
+| --- | --- |
+| **Forespørgselsventetider** | * Data i dette afsnit er opdelt i udsnit efter datasæt, arbejdsområde og buckets pr. time for de seneste syv dage<br> * I alt: Det samlede antal forespørgsler, der er kørt i forbindelse med datasættet<br> * Antal forespørgselsventetider: Antallet af forespørgsler i datasættet, der har ventet på systemressourcer, inden de blev udført <br> * Gennemsnit: Den gennemsnitlige forespørgselsventetid for datasættet i millisekunder<br> * Maksimum: Varigheden af den længstventende forespørgsel i datasættet i millisekunder|
+| **Distribution af ventetid** | * Histogrammet med forespørgselsvarighed er inddelt i buckets efter forespørgselsvarigheder (i millisekunder) i følgende kategorier: intervaller af <= 50 ms, 50-100 ms, 100-200 ms, 200-400 ms, 400 ms-1 sek., 1-5 sek. og > 5 sek. |
+| **Top 5 datasæt efter Gennemsnitlig ventetid** | * De fem datasæt med den længste gennemsnitlige ventetid inden udførelsen af en forespørgsel i millisekunder |
+| **Antal forespørgselsventetider og tidspunkter pr. time** | * Antal forespørgsler og den gennemsnitlige ventetid (i millisekunder) vs. hukommelsesforbrug i GB, opdelt i 1-times buckets, rapporteret i lokaltid |
+|  |  |
 
 #### <a name="datasets-area"></a>Området Datasæt
 
-I området **Datasæt** vises fuldførte datasæt, der er fjernet på grund af et stort hukommelsesforbrug pr. time.
+Området **Datasæt** indeholder følgende målepunkter.
+
+| **Rapportafsnit** | **Målepunkter** |
+| --- | --- |
+| **Antal datasætfjernelser** | * I alt: Det samlede antal datasæt*fjernelser* for hver enkelt kapacitet. Når en kapacitet står over for øget hukommelsesforbrug, fjerner noden et eller flere datasæt fra hukommelsen. Datasæt, der er inaktive (uden forespørgsels-/opdateringshandlinger, der udføres i øjeblikket), ryddes først. Derefter er fjernelsesrækkefølgen baseret på en måling af 'mindst brugt for nylig'.|
+| **Datasætfjernelser og hukommelsesforbrug pr. time** | * Datasætfjernelser i forhold til hukommelsesforbrug i GB opdelt i 1-times buckets, rapporteret i lokaltid |
+|  |  |
+
+### <a name="paginated-reports-tab"></a>Fanen Sideinddelte rapporter
+
+Fanen **Sideinddelte rapporter** viser detaljerede målepunkter for tilstanden for sideinddelte rapporter i dine kapaciteter.
+
+![Fanen Sideinddelte rapporter](media/service-admin-premium-monitor-capacity/paginated-reports-tab.png)
+
+Fanen **Sideinddelte rapporter** indeholder følgende målepunkter.
+
+| **Rapportafsnit** | **Målepunkter** |
+| --- | --- |
+| **Samlet forbrug** | * Samlet antal visninger: Antallet af gange, som rapporten er blevet set af en bruger<br> * Rækkeantal: Antallet af rækker med data i rapporten<br> * Hentning (gns.): Den gennemsnitlige mængde tid, det tager for at hente data til rapporten i millisekunder. Lange varigheder kan være et tegn på langsomme forespørgsler eller andre datakildeproblemer. <br> * Behandling (gns.): Den gennemsnitlige mængde tid, det tager at behandle dataene til en rapport i millisekunder<br>* Gengivelse (gns.): Den gennemsnitlige mængde tid, det tager at gengive en rapport i en browser i millisekunder<br> * Tid i alt: Den mængde tid, det tager at gennemgå alle faserne i rapporten i millisekunder|
+| **Top 5-rapporter efter Gennemsnitlig datahentningstid** | * De fem rapporter med den længste gennemsnitlige datahentningstid i millisekunder |
+| **Top 5-rapporter efter Gennemsnitlig rapportbehandlingstid** | * De fem rapporter med den længste gennemsnitlige rapportbehandlingstid i millisekunder |
+| **Varigheder pr. time** | * Datahentning i forhold til behandlings- og gengivelsestid opdelt i 1-times buckets, rapporteret i lokaltid |
+| **Resultater pr. time** | * Succeser, fejl og hukommelsesforbrug opdelt i 1-times buckets, rapporteret i lokaltid |
+|  |  |
+
+### <a name="dataflows-tab"></a>Fanen Dataflow
+
+Fanen **Dataflow** viser detaljerede opdateringsmålepunkter for dataflow i dine kapaciteter.
+
+![Fanen Dataflow](media/service-admin-premium-monitor-capacity/dataflows-tab.png)
+
+Fanen **Dataflow** indeholder følgende målepunkter.
+
+| **Rapportafsnit** | **Målepunkter** |
+| --- | --- |
+| **Opdatering** | * I alt: Det samlede antal opdateringer for hvert dataflow<br> * Pålidelighed: Den fuldførte opdateringsandel for hvert enkelt dataflow i procent<br> * Gennemsnitlig ventetid: Den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starten af en opdatering af dataflowet i minutter<br> * Maksimal ventetid: Den maksimale ventetid for dataflowet i minutter <br> * Gennemsnitlig varighed: Den gennemsnitlige opdateringsvarighed for dataflowet i minutter<br> * Maksimal varighed: Varigheden af den længstvarende opdatering af dataflowet i minutter |
+| **Top 5-dataflow efter Gennemsnitlig opdateringsvarighed** | * De fem dataflow med den længstvarende gennemsnitlige opdateringsvarighed i minutter |
+| **Top 5-dataflow efter Gennemsnitlig ventetid** | * De fem dataflow med den længstvarende gennemsnitlige opdateringsventetid i minutter |
+| **Gennemsnitlige opdateringsventetider pr. time** | * Den gennemsnitlige opdateringsventetid opdelt i 1-times buckets, rapporteret i lokaltid. Flere tilfælde af høje opdateringsventetider kan være tegn på, at kapaciteten snart er brugt op. |
+| **Opdateringsantal og hukommelsesforbrug pr. time** | * Succeser, fejl og hukommelsesforbrug opdelt i 1-times buckets, rapporteret i lokaltid |
+|  |  |
 
 ### <a name="system-tab"></a>Fanen System
 
-Under fanen **System** vises antal gange med høj CPU-udnyttelse (det antal gange, udnyttelsen på 80 % er overskredet), høj udnyttelse af forbindelser via direkte forespørgsler/dynamiske forbindelser og hukommelsesforbrug.
+Fanen **System** viser CPU- og hukommelsesforbruget for alle kapaciteter og arbejdsbelastninger.
 
-![Premium System-rapport](media/service-admin-premium-monitor-capacity/system-tab.png)
+![Fanen System](media/service-admin-premium-monitor-capacity/system-tab.png)
+
+Fanen **System** indeholder følgende målepunkter.
+
+| **Rapportafsnit** | **Målepunkter** |
+| --- | --- |
+| **CPU-målepunkter (> 80 % udnyttelse)** | * Det antal gange, CPU'en har overskredet 80 % af tærsklerne i løbet af de seneste syv dage opdelt i buckets på tre minutter |
+| **Hukommelsesforbrug** | * Hukommelsesforbrug i de seneste syv dage opdelt i 3-minutters buckets |
+|  |  |
+
+### <a name="display-names-and-ids-tab"></a>Fanen Viste navne og id'er
+
+Fanen **Viste navne og id'er** indeholder navne, id'er og ejere for kapaciteter, arbejdsområder og arbejdsbelastninger.
 
 ## <a name="monitor-power-bi-embedded-capacity"></a>Overvåg Power BI Embedded-kapacitet
 
 Du kan også bruge Power BI Premium-appen Capacity Metrics til at overvåge *A SKU*-kapaciteter i Power BI Embedded. Disse kapaciteter vises i rapporten, hvis du er administrator af kapaciteten. Men opdatering af rapporten mislykkes, medmindre du tildeler visse tilladelser til Power BI på dine A SKU'er:
 
 1. Åbn din kapacitet på Azure-portalen.
+
 1. Klik på **Adgangskontrol (IAM)**, og føj appen "Power BI Premium" til læserrollen. Hvis du ikke kan finde appen ved hjælp af navnet, du kan også tilføje den ved hjælp af klient-id'et: cb4dc29f-0bf4-402a-8b30-7511498ed654.
 
     ![Tilladelser til Power BI Embedded](media/service-admin-premium-monitor-capacity/embedded-permissions.png)

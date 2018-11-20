@@ -4,19 +4,18 @@ description: Brug ArcGis-kort i læsevisning som forbruger af Power BI-rapport
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-tags: power bi, service, desktop, mobile
 featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/23/2018
+ms.date: 11/06/2018
 ms.author: mihart
-ms.openlocfilehash: dd7bca6782327700f087b6b9ca60a9654fa362d8
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: 0454d2ea0e69a77482d9ba9587497679819daf06
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003265"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266018"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interaktion med ArcGIS-kort i Power BI
 Dette emne skrives fra en persons synspunkt, hvor vedkommende *bruger* et ArcGIS-kort i Power BI-tjenesten, på Desktop eller på mobil. Når en forfatter deler et ArcGIS-kort med dig, kan du interagere med kortet på mange måder.  Hvis du vil vide mere om oprettelse af et ArcGIS-kort, kan du se [ArcGIS-kort efter Esri-selvstudium](../power-bi-visualization-arcgis.md).
@@ -24,7 +23,7 @@ Dette emne skrives fra en persons synspunkt, hvor vedkommende *bruger* et ArcGIS
 Kombinationen af ArcGIS-kort og Power BI tager kort til et helt nyt niveau, som involverer mere end præsentation af punkter på et kort. De tilgængelige indstillinger til grundlæggende kort, placeringstyper, temaer, symboltypografier og referencelag opretter fantastiske informative kortvisualiseringer. Kombinationen af autoritative datalag på et kort (f.eks. census-data) med rumlige analyser giver en bedre forståelse af dataene i visualiseringen.
 
 > [!TIP]
-> GIS står for Geographic Information Science (Geografisk informationsvidenskab).
+> GIS står for Geographic Information System.
 > 
 
 Det eksempel, vi bruger, er det samme ArcGIS-kort, der er oprettet i [ArcGIS-kort efter Esri-selvstudium](../power-bi-visualization-arcgis.md). I det ses der nærmere på sidste års salg efter by, og der bruges et vejkort, boblesymboler, der repræsenterer størrelse, og et referencelag til gennemsnitlig husstandsindtægt. Kortet indeholder 3 nåle og én radius for køretid (i mørklilla).

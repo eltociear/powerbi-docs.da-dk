@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 11/06/2018
 ms.author: maggies
-ms.openlocfilehash: 88bfd67ddf284ea6b518c5ebdd6386887513f393
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: bff5e42b239fee572ea0a453301f154da3b999b3
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223047"
+ms.locfileid: "51266087"
 ---
 # <a name="whitepapers-for-power-bi"></a>Whitepapers til Power BI
 
@@ -22,13 +22,14 @@ Whitepapers gør det muligt at udforske Power BI-emner på et mere detaljeret ni
 
 | Whitepaper | Beskrivelse | Dato |
 | --- | --- | --- |
+| [Power BI og dataflow](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Denne hvidbog beskriver dataflow i tekniske detaljer, og den beskriver de funktioner og initiativer, der ligger bag dataflowets funktioner og funktionalitet. | November 2018 |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Beskriver Power BI Premium, både som den findes, når startes, og hvordan den udvikler sig. | Oktober 2017 |
 | [Planlægning og installation af Power BI Premium](https://aka.ms/Premium-Capacity-Planning-Deployment)| Denne rapport indeholder en vejledning og bedste praksis for planlægning og installation af Premium-kapacitet for veldefinerede arbejdsbelastninger.| November 2017 |
 | [Planlæg kapacitet for integreret analyse med Power BI Premium](https://aka.ms/pbiewhitepaper) |I dette whitepaper er der en vejledning til appudvikleren/ISV'en om at fastslå den mest relevante kapacitet for virksomheden. | Oktober 2017 |
 | [Planlægning af en Power BI Enterprise-udrulning](https://aka.ms/pbienterprisedeploy) |I denne tekniske hvidbog beskrives, hvilke overvejelser der skal gøres for at få en velfungerende og sikker Power BI-udrulning i organisationen. | Juli 2018 |
 | [Vejledning i kapacitetsplanlægning i Power BI-rapportserver](report-server/capacity-planning.md) |Denne rapports primære sigte er at give en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af adskillelige gennemførsler af belastningstest ved forskellige arbejdsbelastninger i forhold til en rapportserver. | Marts 2018 |
 | [Sikkerhed](service-admin-power-bi-security.md) |Giver en detaljeret beskrivelse af sikkerheden i Power BI. | Juli 2018 |
-| [Distribuer Power BI-indhold til eksterne gæstebrugere vha. Azure Active Directory B2B](https://aka.ms/powerbi-b2b-whitepaper)|I denne rapport er det angivet, hvordan indhold skal distribueres til brugere uden for organisationen vha. integrationen af Azure Active Directory Business-to-business (AAD B2B).| Marts 2018 |
+| [Distribuer Power BI-indhold til eksterne gæstebrugere vha. Azure Active Directory B2B](https://aka.ms/powerbi-b2b-whitepaper)|I denne rapport forklares det, hvordan indhold kan distribueres til brugere uden for organisationen vha. integrationen af Azure Active Directory Business-to-business (AAD B2B).| Marts 2018 |
 | [Avanceret analyse med Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Beskriver de avancerede analysefunktioner i Power BI, herunder forudsigende analyser, brugerdefinerede visualiseringer, R-integration og dataanalyseudtryk. | Februar 2017 |
 | [Bedste praksis for design af rapporter og visualiseringer](visuals/power-bi-visualization-best-practices.md) |Dette whitepaper indeholder bedste praksis for design af rapporter i Power BI. | Juni 2018 |
 | [Tovejsfiltrering](desktop-bidirectional-filtering.md) |Forklarer tovejskrydsfiltrering i Power BI Desktop. Dette whitepaper omhandler også SQL Server Analysis Services 2016, da begge programmer har samme funktionsmåde. | Juli 2018 |

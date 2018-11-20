@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/14/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 093339e820c45fcbd586bd1eb6d8933b6e5743f8
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 263c1a576e939a87e970cc2c0200dfb6c1ccdc41
+ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298199"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51273327"
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Datagateway i det lokale miljø (personlig tilstand)
 Du kan bruge datakilder i det lokale miljø og oprette Power BI-rapporter og -dashboards ved hjælp af en gateway. En **gateway** er software, der gør det nemmere at få adgang til data, som er gemt på et privat netværk i det lokale miljø. Derefter giver den dig mulighed for at bruge disse data i onlinetjenester som **Power BI-tjenesten**. **Datagatewayen i det lokale miljø (personlig tilstand)** er en opdatering, som er blevet udgivet for nylig, til Power BI Gateway. Den giver enkeltpersoner mulighed for at installere en gateway på deres egen computer og få adgang til data i det lokale miljø.
@@ -132,7 +132,7 @@ Understøttelse af Spark er planlagt til andet halvår af 2017-kalenderåret.
   * **Svar**: Hvis du opdaterer dine rapporter med den aktuelle gateway, stopper opdateringerne. Den eneste måde at oprette en opdateringstidsplan på er ved at installere og konfigurere den nye gateway.
 * Jeg bruger R-script. Understøttes det?
   
-  * **Svar**: Vi forventer at tilføje understøttelse af R-scripts snart.
+  * **Svar**: R-scripts understøttes i forbindelse med personlig tilstand.
 * Hvorfor får jeg ikke vist meddelelsen om at opdatere min gateway i **Power BI-tjenesten**?
   
   * **Svar**: Dette er sandsynligvis fordi, du har et eller flere datasæt, som indeholder en datakilde, der stadig ikke understøttes i øjeblikket.

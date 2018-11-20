@@ -10,12 +10,12 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
 LocalizationGroup: Administration
-ms.openlocfilehash: 3e125061766d6ade0daeaacb208d3070d8e9bd9b
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: b03e9da87aa507812045378b1fa3e581b7de159c
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973252"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266110"
 ---
 # <a name="power-bi-admin-portal"></a>Power BI-administrationsportal
 
@@ -193,7 +193,7 @@ På følgende billede ses menuen **Filer** for en rapport, når indstillingen **
 
 ## <a name="content-pack-and-app-settings"></a>Indholdspakke og app-indstillinger
 
-### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Udgiv indholdspakker og apps til hele organisationen
+### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Publicer indholdspakker og apps til hele organisationen
 
 Brugere i organisationen kan publicere indholdspakker og apps til hele organisationen frem for kun til specifikke grupper. [Få mere at vide](service-organizational-content-pack-manage-update-delete.md)
 
@@ -297,6 +297,15 @@ Brugere i organisationen kan få adgang til arbejdsområder for at oprette forbi
 
 Brugere i organisationen kan importere data til tjenesten, f.eks. publicere rapporter fra Power BI Desktop, overføre Power BI-rapportfiler og oprette forbindelse til data direkte fra tjenesten. [Få mere at vide](desktop-upload-desktop-files.md)
 
+## <a name="dataflow-settings-preview"></a>Indstillinger for dataflow (prøveversion)
+
+### <a name="create-and-use-dataflows-preview"></a>Opret og brug dataflow (prøveversion)
+
+Brugere i organisationen kan oprette og bruge dataflow. [Få mere at vide](service-dataflows-overview.md)
+
+> [!NOTE]
+> Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
+
 ## <a name="capacity-settings"></a>Kapacitetsindstillinger
 
 ### <a name="power-bi-premium"></a>Power BI Premium
@@ -319,7 +328,7 @@ Som administrator kan du få vist integreringskoder, der er genereret for din le
 
 ![Integrer koder i Power BI-administrationsportalen](media/service-admin-portal/embed-codes.png)
 
-## <a name="organization-visuals"></a>Organisationens visuelle elementer
+## <a name="organization-visuals"></a>Organisationens visualiseringer
 
 Fanen **Organisationens visuals** giver dig mulighed for at installere og administrere brugerdefinerede visuals i din organisation. Med visuals til organisationer kan du nemt installere privatejede visuals i din organisation, som forfattere af rapporter efterfølgende kan finde og importere i deres rapporter fra Power BI Desktop. [Få mere at vide](power-bi-custom-visuals-organization.md)
 

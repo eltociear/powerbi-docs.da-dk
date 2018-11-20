@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: 2758ef661b70c53a37104c67c4012be79725990e
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 488d11209126098063ba8ca2b2d73573edbcdbb9
+ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101479"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51297130"
 ---
 # <a name="on-premises-data-gateway"></a>Datagateway i det lokale miljø
 
@@ -118,7 +118,7 @@ Hvis du mener, at du oplever proxyproblemer med gatewayen, skal du se [Konfigura
 [Administrer din datakilde – Oracle](service-gateway-onprem-manage-oracle.md)  
 [Administrer din datakilde – Import/Planlagt opdatering](service-gateway-enterprise-manage-scheduled-refresh.md)  
 [Datagateway i det lokale miljø – detaljeret](service-gateway-onprem-indepth.md)  
-[Datagateway i det lokale miljø (personlig tilstand) – den nye version af den personlige gateway](service-gateway-personal-mode.md)
-[Konfiguration af proxyindstillinger for datagatewayen i det lokale miljø](service-gateway-proxy.md)  
+[Datagateway i det lokale miljø (personlig tilstand) – den nye version af den personlige gateway](service-gateway-personal-mode.md)  
+[Konfigurer proxyindstillinger for datagatewayen i det lokale miljø](service-gateway-proxy.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

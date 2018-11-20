@@ -9,12 +9,12 @@ ms.author: mblythe
 ms.reviewer: mblythe
 author: mgblythe
 manager: kfile
-ms.openlocfilehash: 99c84aff932c7ce56a4aaa81d71e4583bce3e4c2
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 534c06c66d561a04dbffc04412095d6924c92781
+ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641731"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51266064"
 ---
 # <a name="microsoft-power-bi-premium-capacity-resource-management-and-optimization"></a>Administration og optimering af ressourcer med Microsoft Power BI Premium-kapacitet
 
@@ -26,6 +26,7 @@ I denne artikel beskrives, hvordan Power BI Premium administrerer ressourcer. Ar
 
 * De datasæt, der er indlæst i hukommelsen.
 * Opdatering af datasæt (både planlagte og efter behov).
+* Arbejdsbelastninger, som kapaciteten understøtter
 * Rapportforespørgsler.
 
 Når der er oprettet en anmodning til et udgivet datasæt i din kapacitet, indlæses dette datasæt i hukommelsen fra det vedvarende lager (også kaldet indlæsning af afbildning). Hvis du lader datasættet forblive indlæst i hukommelsen, opnår du hurtigere svar på fremtidige forespørgsler til dette datasæt. Ud over den hukommelse, der kræves, for at datasættet kan forblive indlæst i hukommelsen, forbruger opdateringer af rapportforespørgsler og datasæt også yderligere hukommelse.
@@ -51,6 +52,10 @@ Datasæt kan opdateres efter en tidsplan eller efter behov af brugere. Som beskr
 Hvis den nødvendige hukommelse ikke er tilgængelig efter fjernelsen, sættes opdateringen i kø, og der gøres forsøg på at udføre den igen senere. Tjenesten prøver igen, indtil det lykkes, eller indtil en ny opdateringshandling starter.
 
 Hvis der oprettes en interaktiv forespørgsel til et datasæt i kapaciteten, og der ikke er nok ledig hukommelse på grund af en igangværende opdatering, mislykkes anmodningen, og brugeren skal selv forsøge.
+
+### <a name="workloads"></a>Arbejdsbelastninger
+
+Som standard understøtter kapaciteter for **Power BI Premium** og **Power BI Embedded** kun den arbejdsbelastning, der er knyttet til Power BI-forespørgsler, som kører i clouden. Vi tilbyder nu understøttelse af yderligere to arbejdsbelastninger: **sideinddelte rapporter** og **dataflow**. Hvis funktionen er aktiveret, kan det påvirke hukommelsesforbruget i din kapacitet. Du kan finde flere oplysninger under [Konfigurer arbejdsbelastninger](service-admin-premium-manage.md#configure-workloads).
 
 ## <a name="cpu-resource-management-in-premium-capacity"></a>CPU-ressourcestyring i Premium-kapacitet
 

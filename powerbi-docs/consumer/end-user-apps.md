@@ -7,22 +7,22 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/18/2018
+ms.date: 11/09/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: bc68be50917b113371fc168d1b6e3defa2b5001e
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: 9c9a99e2bfe0ae90607da4f27d77cb0a2a78a7c8
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473422"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507640"
 ---
 # <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer og brug apps med dashboards og rapporter i Power BI
 I Power BI samler *apps* relaterede dashboards og rapporter på ét sted. Personer i din organisation oprette og distribuere apps med vigtige forretningsoplysninger. [Eksterne tjenester](end-user-connect-to-services.md), du muligvis allerede bruger, f.eks. Google Analytics og Microsoft Dynamics CRM, tilbyder også Power BI-apps. 
 
 ![Apps i Power BI](./media/end-user-apps/power-bi-apps-navbar.png)
 
-Apps er lette at finde og installere i Power BI-tjenesten (([app.powerbi.com](https:app.powerbi.com)) og på din mobilenhed. Når du har installeret en app, behøver du ikke huske navnene på mange forskellige dashboards, fordi de alle er samlet i én app, i webbrowseren eller på din mobilenhed.
+Det er nemt at finde og installere apps i Power BI-tjenesten og på din mobilenhed. Når du har installeret en app, behøver du ikke huske navnene på mange forskellige dashboards, fordi de alle er samlet i én app, i webbrowseren eller på din mobilenhed.
 
 Med apps ser du automatisk ændringerne, hver gang appens forfatteren udgiver opdateringer. Forfatteren styrer også, hvor ofte dataene er planlagt til opdatering, så du ikke skal bekymre dig om at holde dem opdateret. 
 

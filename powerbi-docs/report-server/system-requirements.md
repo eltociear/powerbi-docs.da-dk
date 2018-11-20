@@ -1,23 +1,23 @@
 ---
 title: Hardware- og softwarekrav til installation af Power BI-rapportserver
-description: Her kan du finde minimumskrav til hardware og for at kunne installere og køre Power BI-rapportserver.
+description: I denne artikel kan du se minimumkrav til hardware og software, hvis du vil installere og køre Power BI-rapportserver.
 author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/24/2018
+ms.date: 11/08/2018
 ms.author: maghan
-ms.openlocfilehash: 397bc6f1582ff49f665f25559925d5b7e19e0fd5
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: c8904f3025a0a60557b1d3efb54ea6bc18c20da4
+ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101318"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51507900"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Hardware- og softwarekrav til installation af Power BI-rapportserver
-Her kan du finde minimumskrav til hardware og for at kunne installere og køre Power BI-rapportserver.
+I denne artikel kan du se minimumkrav til hardware og software, hvis du vil installere og køre Power BI-rapportserver.
 
 ## <a name="processor-memory-and-operating-system-requirements"></a>Krav til processor, hukommelse og operativsystem
 
@@ -43,18 +43,19 @@ SQL Server bruges til at hoste rapportserverdatabaserne. Forekomsten af SQL Serv
 * SQL Server 2014
 * SQL Server 2012
 
-Oprettelse af rapportserverdatabasen på en fjerncomputer kræver, at du konfigurerer forbindelsen til at bruge en domænebrugerkonto eller en tjenestekonto, som har netværksadgang. Hvis du beslutter at bruge en ekstern SQL Server-forekomst, skal du overveje grundigt, hvilke legitimationsoplysninger rapportserveren skal bruge til at oprette forbindelse til SQL Server-forekomsten. Få mere at vide i [Konfigurer en rapportservers databaseforbindelse](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)
+Når du opretter rapportserverdatabasen på en fjerncomputer, skal du konfigurere forbindelsen til at bruge en domænebrugerkonto eller en tjenestekonto med netværksadgang. Hvis du beslutter at bruge en ekstern SQL Server-forekomst, skal du overveje grundigt, hvilke legitimationsoplysninger rapportserveren skal bruge til at oprette forbindelse til SQL Server-forekomsten. Få mere at vide i [Konfigurer en rapportservers databaseforbindelse](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)
 
 ## <a name="considerations"></a>Overvejelser
 Power BI-rapportserver installerer standardværdier for at konfigurere de hovedindstillinger, der kræves for at gøre en rapportserver driftsklar. Der er følgende betingelser:
 
 * Et SQL Server-databaseprogram skal være tilgængeligt efter konfigurationen, og før du konfigurerer databasen for rapportserveren. Forekomsten af databaseprogrammet hoster rapportserverdatabasen, som oprettes af Reporting Services Configuration Manager. Databaseprogrammet er ikke påkrævet til selve konfigurationen.
-* Den brugerkonto, der bruges til at køre konfigurationen, skal være den lokale administratorgruppe.
-* Den brugerkonto, der bruges til Reporting Services Configuration Manager, skal have tilladelse til at få adgang til og oprette databaser på forekomsten af databaseprogrammet, der hoster rapportserverdatabaserne.
+- I [Reporting Services-funktioner, der understøttes af udgaver af SQL Server](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) vises forskellene mellem diverse udgaver af SQL Server.
+* Den brugerkonto, der kører konfigurationen, skal være den lokale administratorgruppe.
+* Den brugerkonto, der kører Reporting Services Configuration Manager, skal have tilladelse til at få adgang til og oprette databaser på den forekomst af databaseprogrammet, der hoster rapportserverdatabaserne.
 * Konfigurationen skal kunne bruge standardværdierne til at reservere de URL-adresser, der giver adgang til rapportserveren og webportalen. Disse værdier er port 80, et stærkt jokertegn og navnene på de virtuelle mapper i formatet **ReportServer** og **Reports**.
 
 ## <a name="read-only-domain-controller-rodc"></a>Skrivebeskyttet domænecontroller (RODC)
- Mens rapportserveren kan installeres i et miljø, der har en skrivebeskyttet domænecontroller (RODC), skal Reporting Services have adgang til en domænecontroller med læse-/skriveadgang for at fungere korrekt. Hvis Reporting Services kun har adgang til en skrivebeskyttet domænecontroller, kan der opstå fejl under forsøg på at administrere tjenesten.
+ Du kan installere rapportserveren i et miljø, der har en skrivebeskyttet domænecontroller (RODC). Reporting Services skal dog have adgang til en skrivebeskyttet domænecontroller for at fungere korrekt. Hvis Reporting Services kun har adgang til en skrivebeskyttet domænecontroller, kan der opstå fejl under forsøg på at administrere tjenesten.
 
 ## <a name="power-bi-reports-and-analysis-services-live-connections"></a>Power BI-rapporter og Analysis Services-liveforbindelser
 Du kan bruge en liveforbindelse til tabellariske eller flerdimensionelle forekomster. Analysis Services-serveren skal være den korrekte version og udgave for at fungere korrekt.
