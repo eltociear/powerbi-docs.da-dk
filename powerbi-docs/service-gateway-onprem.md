@@ -10,12 +10,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: 488d11209126098063ba8ca2b2d73573edbcdbb9
-ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
+ms.openlocfilehash: 9a739efdba84279e938fd8e13d6521cf975d0b9d
+ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51297130"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51679012"
 ---
 # <a name="on-premises-data-gateway"></a>Datagateway i det lokale miljø
 
@@ -100,7 +100,7 @@ Der er i øjeblikket ikke ét enkelt sted, hvor lejeradministratorer kan adminis
 ## <a name="enabling-outbound-azure-connections"></a>Aktivér udgående Azure-forbindelser
 
 Datagatewayen i det lokale miljø bruger Azure Service Bus til cloudforbindelsen og opretter tilsvarende udgående forbindelser til det tilknyttede Azure-område. Som standard er dette placeringen af din Power BI-lejer. Se [Hvor er min Power BI-lejer placeret?](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
-Hvis en firewall blokerer udgående forbindelser, skal du konfigurere firewallen for at tillade udgående forbindelser fra datagatewayen i det lokale miljø til det tilknyttede Azure-område. Se [Microsoft Azure Datacenter IP-områder](https://www.microsoft.com/en-us/download/details.aspx?id=41653) for at få oplysninger om IP-adresseintervallet for hvert Azure-datacenter.
+Hvis en firewall blokerer udgående forbindelser, skal du konfigurere firewallen for at tillade udgående forbindelser fra datagatewayen i det lokale miljø til det tilknyttede Azure-område. Se [Microsoft Azure Datacenter IP-områder](https://www.microsoft.com/download/details.aspx?id=41653) for at få oplysninger om IP-adresseintervallet for hvert Azure-datacenter.
 > [!NOTE]
 > IP-adresseområderne kan ændres over tid, så sørg for, at du downloader de nyeste oplysninger med jævne mellemrum. 
 
