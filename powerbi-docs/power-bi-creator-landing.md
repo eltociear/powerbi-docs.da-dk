@@ -6,16 +6,16 @@ manager: kfile
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: landing-page
-ms.date: 10/26/2018
+ms.date: 11/19/2018
 ms.author: maggies
 layout: landingpage
 LocalizationGroup: Get started
-ms.openlocfilehash: 32c09de10a9a9dd4b5c315377745afde9fd9175a
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 70ea5374c3249e0abe38aeaaf8bb6253e50d8a08
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507824"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157327"
 ---
 # <a name="power-bi-for-report-designers"></a>Power BI til rapportdesignere
 
@@ -61,7 +61,7 @@ Er du i højere grad Power BI-forbruger? Velkommen til dig også. Vi anbefaler, 
                                                                                       <h3>Opret forbindelse til data</h3> 
                                                                                       <p></p>
                                                                                             <a href="desktop-quickstart-connect-to-data.md">Opret forbindelse til data i Power BI Desktop</a><br/> 
-                                                                                            <a href="service-connect-to-services.md">Opret forbindelse til onlinetjenester</a><br/> 
+                                                                                            <a href="service-dataflows-overview.md">Dataflow: Selvbetjent dataforberedelse</a><br/> 
                                                                                             <a href="service-gateway-install.md">Gateways til data i det lokale miljø</a>
                                                                         </div> 
                                                           </div> 

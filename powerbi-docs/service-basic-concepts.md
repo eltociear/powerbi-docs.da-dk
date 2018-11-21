@@ -1,7 +1,7 @@
 ---
 title: Grundlæggende begreber i Power BI-tjenesten
 description: Arbejdsområder, dashboards, rapporter, datasæt og projektmapper i Power BI-tjenesten.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
@@ -9,20 +9,20 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 07/19/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 8a95dae913c2069fa3768d66c55d2b1358640000
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 9b02bdfd2c0025977dbb69eae44f4e976a527a30
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641913"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717763"
 ---
 # <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – grundlæggende begreber for Power BI-tjenesten
 
 Denne artikel forudsætter, at du har allerede har [tilmeldt dig Power BI-tjenesten](service-self-service-signup-for-power-bi.md) og [tilføjet nogle data](service-get-data.md).
 
-Når du åbner Power BI-tjenesten, får du vist et ***dashboard***. Dashboards er noget, der adskiller Power BI-tjenesten fra Power BI Desktop.
+Når du åbner Power BI-tjenesten, får du vist et **_dashboard_**. Dashboards er noget, der adskiller Power BI-tjenesten fra Power BI Desktop.
 
 ![](media/service-basic-concepts/completenewest.png)
 
@@ -45,7 +45,7 @@ Du kan også vælge at se denne video, før du læser resten af denne artikel.  
 
 
 ## <a name="power-bi-concepts"></a>Power BI-begreber
-De fire overordnede elementer i Power BI er: ***dashboards***, ***rapporter***, ***projektmapper*** og ***datasæt***. Og de er alle organiseret i ***arbejdsområder***. Det er vigtigt at forstå arbejdsområder, før vi går videre til de fire overordnede elementer, så lad os starte der.
+De fire overordnede elementer i Power BI er: **_dashboards_**, **_rapporter_**, **_projektmapper_** og **_datasæt_**. Og de er alle organiseret i **_arbejdsområder_**. Det er vigtigt at forstå arbejdsområder, før vi går videre til de fire overordnede elementer, så lad os starte der.
 
 ## <a name="workspaces"></a>Arbejdsområder
 Arbejdsområder er objektbeholdere til dashboards, rapporter, projektmapper og datasæt i Power BI. Der er to typer arbejdsområder: *Mit arbejdsområde* og *apparbejdsområder*. Hvad er en *app*? En *app* i Power BI er en samling dashboards og rapporter, der er bygget til at levere vigtige metrikker til organisationen. Apps er interaktive, men kan ikke redigeres.
@@ -77,7 +77,7 @@ I eksemplet nedenfor har jeg valgt apparbejdsområdet "Salg og marketing" og kli
 
 Hvis du vil [oprette forbindelse til eller importere et datasæt](service-get-data.md), skal du vælge **Hent Data** (nederst på venstre navigationslinje) eller vælge plusikonet **+ Opret > Datasæt** (i øverste højre hjørne). Følg vejledningen for at oprette forbindelse til eller importere den specifikke kilde og føje datasættet til det aktive arbejdsområde. Nye datasæt markeres med en gul stjerne. Det arbejde, du udfører i Power Bi, ændrer ikke det underliggende datasæt.
 
-Hvis du er [en del af et ***apparbejdsområde***](service-collaborate-power-bi-workspace.md), er datasæt, der er tilføjet af et medlem af arbejdsområdet, tilgængelige for de andre medlemmer af arbejdsområdet.
+Hvis du er [en del af et **_apparbejdsområde_**](service-collaborate-power-bi-workspace.md), er datasæt, der er tilføjet af et medlem af arbejdsområdet, tilgængelige for de andre medlemmer af arbejdsområdet.
 
 Datasæt kan opdateres, omdøbes, udforskes og fjernes. Brug et datasæt til at oprette en rapport fra bunden eller ved at køre [hurtig indsigt](service-insights.md).  Hvis du vil se, hvilke rapporter og dashboards der allerede bruger et datasæt, skal du vælge **Få vist relaterede**. Vælg et datasæt for at udforske det. Det, du rent faktisk gør, er at åbne datasættet i rapporteditoren, hvor du virkelig kan starte med at udforske dataene og oprette visualiseringer. Så lad os gå videre til næste emne: rapporter.
 
@@ -87,9 +87,9 @@ Datasæt kan opdateres, omdøbes, udforskes og fjernes. Brug et datasæt til at 
 * [Eksempel på datasæt til Power BI](sample-datasets.md)
 
 ## <a name="reports"></a>Rapporter
-En Power BI-rapport er en eller flere sider med visualiseringer (diagrammer og grafer, f.eks. kurvediagrammer, cirkeldiagrammer, træstrukturdiagrammer og mange, mange flere). Visualiseringer kaldes også ***visuelle elementer***. Alle visualiseringerne i en rapport stammer fra et enkelt datasæt. Rapporter kan oprettes fra bunden i Power BI, kan importeres med dashboards, som kolleger deler med dig, eller kan oprettes, når du opretter forbindelse til datasæt fra Excel, Power BI Desktop, databaser, SaaS-programmer og [apps](service-get-data.md).  Når du f.eks. opretter forbindelse til en Excel-projektmappe, der indeholder Power View-ark, opretter Power BI en rapport, der er baseret på de ark. Og når du opretter forbindelse til et SaaS-program, importerer Power BI en færdigbygget rapport.
+En Power BI-rapport er en eller flere sider med visualiseringer (diagrammer og grafer, f.eks. kurvediagrammer, cirkeldiagrammer, træstrukturdiagrammer og mange, mange flere). Visualiseringer kaldes også **_visualiseringer_**. Alle visualiseringerne i en rapport stammer fra et enkelt datasæt. Rapporter kan oprettes fra bunden i Power BI, kan importeres med dashboards, som kolleger deler med dig, eller kan oprettes, når du opretter forbindelse til datasæt fra Excel, Power BI Desktop, databaser, SaaS-programmer og [apps](service-get-data.md).  Når du f.eks. opretter forbindelse til en Excel-projektmappe, der indeholder Power View-ark, opretter Power BI en rapport, der er baseret på de ark. Og når du opretter forbindelse til et SaaS-program, importerer Power BI en færdigbygget rapport.
 
-Der er to forskellige tilstande, som du kan se og interagere med rapporter i: [Læsevisning og Redigeringsvisning](service-reading-view-and-editing-view.md).  Kun forfatteren af rapporten, medejerne og dem, der har tilladelse, har adgang til alle den udforskning, udformning, oprettelse og delingsfunktionen i ***Redigeringsvisning*** for denne rapport. Og de personer, de deler rapporten med, kan udforske og interagere med rapport ved hjælp af ***Læsevisning***.   
+Der er to forskellige tilstande, som du kan se og interagere med rapporter i: [Læsevisning og Redigeringsvisning](service-reading-view-and-editing-view.md).  Kun forfatteren af rapporten, medejerne og dem, der har tilladelse, har adgang til alle den udforskning, udformning, oprettelse og delingsfunktionen i **_Redigeringsvisning_** for denne rapport. Og de personer, de deler rapporten med, kan udforske og interagere med rapport ved hjælp af **_Læsevisning_**.   
 
 Når du åbner et arbejdsområde, vises de tilknyttede rapporter under fanen **Rapporter**. Hver rapport på listen repræsenterer én eller flere siders visualiseringer, der er baseret på et af de underliggende datasæt. Hvis du vil åbne en rapport, skal du blot markere den.
 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
-ms.openlocfilehash: 7b57e0d5e303f2b342e2d7750741717b178a8f4e
-ms.sourcegitcommit: f9dd6098ca57d4d6cad34284126d4e58eab1c92c
+ms.openlocfilehash: e62d39f13e2b171456d667ec9683acd4ebdc5516
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50222099"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157120"
 ---
 # <a name="power-bi-urls"></a>URL-adresser i Power BI
 
@@ -69,7 +69,7 @@ Hvis du vil hente data fra specifikke datakilder, f.eks. OneDrive, skal du kunne
 | Række | Formål | Destination(er) | Port(e) |
 | --- | --- | --- | --- |
 | 1 | **Krævet:** AppSource (interne eller eksterne apps i Power BI) | appsource.microsoft.com </br> *.s-microsoft.com  | TCP 443 |
-| 2 | **Krævet:** Log på, og hent data til indholdspakker | *.github.com  | TCP 443 |
+| 2 | **Valgfrit:** Log på, og hent data til indholdspakker | Afhænger af anvendte indholdspakker | Afhænger af anvendte indholdspakker |
 | 3 | **Valgfrit:** Importér filer fra en personlig OneDrive | S [Krævede URL-adresser og porte til OneDrive-webstedet](https://docs.microsoft.com/onedrive/required-urls-and-ports) | I/T |
 | 4 | **Valgfrit:** 60 sekunders video med selvstudie i Power BI | *.doubleclick.net </br> *.ggpht.com </br> *.google.com </br> *.googlevideo.com </br> *.youtube.com </br> *.ytimg.com </br> fonts.gstatic.com | TCP 443 |
 | 5 | **Valgfrit:** PubNub-streamingdatakilder | Se [dokumentationen til PubNub](https://support.pubnub.com/support/solutions/articles/14000043522) | I/T |
@@ -84,7 +84,7 @@ Power BI afhænger af, at bestemte slutpunkter kan understøtte dine dashboards 
 | 1 | **Krævet:** Excel-integration | Se dokumentationen til Office 365 for at få oplysninger om [Office Online og almindelige URL-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | I/T |
 | | | |
 
-## <a name="custom-visuals"></a>Brugerdefinerede visuelle elementer
+## <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
 
 Power BI afhænger af, at bestemte slutpunkter kan se og få adgang til brugerdefinerede visualiseringer. Du skal kunne oprette forbindelse til slutpunkterne i tabellen og de websteder, der linkes til, nedenfor.
 

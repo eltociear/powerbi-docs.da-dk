@@ -1,5 +1,5 @@
 ---
-title: Føj et filter til en Power BI-rapport
+title: Føj et filter til en rapport i redigeringsvisning
 description: Føj et sidefilter, visualiseringsfilter eller rapportfilter til en rapport i Power BI
 author: maggiesMSFT
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/08/2018
+ms.date: 11/16/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: c50afced257df1878a0a695a37d9401d9eda01b7
-ms.sourcegitcommit: ea77827127e0781f1d6877c0a3078aec7eb6694a
+ms.openlocfilehash: 328c8ab2e236f0ddc0c5116c1f76d343999193ab
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51611146"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157373"
 ---
-# <a name="add-a-filter-to-a-power-bi-service-report-in-editing-view"></a>Føj et filter til en rapport i Power Bi-tjenesten (i redigeringsvisning)
+# <a name="add-a-filter-to-a-report-in-editing-view"></a>Føj et filter til en rapport i redigeringsvisning
 
 I denne artikel forklares det, hvordan du føjer et sidefilter, visualiseringsfilter, rapportfilter eller detaljeadgangsfilter til en rapport i Power BI. Eksemplerne i denne artikel er i Power BI-tjenesten. Trinnene er stort set de samme i Power BI Desktop.
 
@@ -33,14 +33,14 @@ Uanset om du bruger Desktop-versionen eller Power BI-tjenesten, vises ruden Filt
 
 Der findes fire typer filtre: **sidefilter**, **visual-filter**, **detaljeadgangsfilter** og **rapportfilter**.
 
-![filtreringsrude i læsevisning](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
+![ruden filtre i læsevisning](media/power-bi-report-add-filter/power-bi-add-filter-reading-view.png)
 
 Da filtre *bevares*, når du navigerer væk fra rapporten, bevarer Power BI de ændringer, som du foretager i filtre, udsnit og andre datavisninger. Du kan derfor fortsætte, hvor du slap, når du vender tilbage til rapporten. Hvis du ikke vil bevare dine filterændringer, skal du vælge **Nulstil til standard** på den øverste menulinje.
 
 ![knappen faste filtre](media/power-bi-report-add-filter/power-bi-reset-to-default.png)
 
 ## <a name="add-a-filter-to-a-visual"></a>Tilføj et filter i en visual
-Du kan føje et filter til en bestemt visualisering på to forskellige måder (også kaldet et "visualfilter"). 
+Du kan føje et filter til en bestemt visual på to forskellige måder (også kaldet et "visualfilter"). 
 
 * Filtrer et felt, der allerede bruges i den pågældende visual.
 * Identificer et felt, der ikke allerede bruges i den pågældende visual, og føj dette felt direkte til bucket'en **Filtre på visualiseringsniveau**.
@@ -53,7 +53,7 @@ Denne procedure anvender i øvrigt Retail Analysis-eksemplet, hvis du gerne vil 
 1. Åbn din [rapport i redigeringsvisning](service-the-report-editor-take-a-tour.md).
    
    ![](media/power-bi-report-add-filter/power-bi-edit-view.png)
-2. Åbn ruden Visualiseringer og filtre og ruden Felter, hvis de ikke allerede er åbne.
+2. Åbn ruden Visualizations and Filters (Visualiseringer og filtre) og ruden Felter (hvis de ikke allerede er åbne).
    
    ![](media/power-bi-report-add-filter/power-bi-display-panes.png)
 3. Vælg først en visualisering for at aktivere den. Alle felter, der bruges af det visuelle element, findes i ruden **Felter** og er desuden angivet i ruden **Filtre** under overskriften **Filtre på visualiseringsniveau**.
@@ -65,17 +65,17 @@ Denne procedure anvender i øvrigt Retail Analysis-eksemplet, hvis du gerne vil 
      
     ![](media/power-bi-report-add-filter/power-bi-visual-level-filter.png) 
     
-    Angiv et af kontrolelementerne **Grundlæggende**, **Avanceret** eller **Top N**. I dette eksempel søger vi efter **cha** i Grundlæggende filtrering og vælger de fem butikker.
+    Angiv et af kontrolelementerne **Basic**, **Advanced** eller **Top N**. I dette eksempel søger vi efter **cha** i Grundlæggende filtrering og vælger de fem butikker.
      
     ![](media/power-bi-report-add-filter/power-bi-search-filter.png) 
    
-    Visualiseringen ændres for at afspejle det nye filter. Hvis du gemmer din rapport med filteret, kan rapportlæsere se den visualisering, der filtreres fra starten, og interagere med filteret i læsevisning og markere eller fjerne markering af værdier.
+    Visualiseringen ændres for at afspejle det nye filter. Hvis du gemmer din rapport med filteret, kan rapportlæsere se den visual, der filtreres fra starten, og interagere med filteret i læsevisning og markere eller fjerne markering af værdier.
      
     ![](media/power-bi-report-add-filter/power-bi-search-visual-filter-results.png)
 
-### <a name="filter-with-a-field-thats-not-in-the-visual"></a>Filtrer med et felt, der ikke er i den pågældende visualisering
+### <a name="filter-with-a-field-thats-not-in-the-visual"></a>Filtrer med et felt, der ikke er i den pågældende visual
 
-Nu skal vi føje et nyt felt til vores visualisering som et filter på visualiseringsniveau.
+Nu skal vi føje et nyt felt til vores visual som et filter på visualiseringsniveau.
    
 1. Vælg i ruden Felter det felt, du vil tilføje som et nyt filter på visualiseringsniveau, og træk det til **området Filtre på visualiseringsniveau**.  I dette eksempel trækker vi **District Manager** til bucket'en **Filtre på visualiseringsniveau**, søger efter **an** og vælger de tre chefer. 
      
@@ -95,9 +95,9 @@ Nu skal vi føje et nyt felt til vores visualisering som et filter på visualise
 
 Du kan også føje et filter til en hel side (et sidevisningsfilter)
 1. Åbn din [rapport i redigeringsvisning](service-the-report-editor-take-a-tour.md).
-2. Åbn ruden Visualiseringer og filtre og ruden Felter, hvis de ikke allerede er åbne.
+2. Åbn ruden Visualizations and Filters (Visualiseringer og filtre) og ruden Felter (hvis de ikke allerede er åbne).
 3. Vælg i ruden Felter det felt, du vil tilføje som et nyt filter på sideniveau, og træk det til **området Filtre på sideniveau**.  
-4. Vælg de værdier, du vil filtrere efter, og angiv enten kontrolelementet **Grundlæggende** eller **Avanceret**.
+4. Vælg de værdier, du vil filtrere efter, og angiv enten kontrolelementet **Basic** eller **Advanced**.
    
    Al visualisering på siden, der påvirkes af dette filter, tegnes igen, så ændringen afspejles. 
    
@@ -134,7 +134,7 @@ Lad os se, hvordan filteret til detaljeadgang fungerer.
 
 ## <a name="add-a-filter-to-an-entire-report-aka-report-filter"></a>Føj et filter til hele rapporten (også kaldet rapportfilter)
 1. Åbn din [rapport i redigeringsvisning](service-the-report-editor-take-a-tour.md).
-2. Åbn ruden Visualiseringer og filtre og ruden Felter, hvis de ikke allerede er åbne.
+2. Åbn ruden Visualizations and Filters (Visualiseringer og filtre) og ruden Felter (hvis de ikke allerede er åbne).
 3. Vælg i ruden Felter det felt, du vil tilføje som et nyt filter på rapporteringsniveau, og træk det til området **Filtre på rapporteringsniveau**.  
 4. Vælg de værdier, du vil filtrere.
 

@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/24/2018
+ms.date: 11/14/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: cc1f348deb222ce080ac41ac2574f4fb1437e8db
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: cdc406ddd9c086114ca118130bb4973737de3ed1
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909009"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717889"
 ---
 # <a name="create-the-new-workspaces-preview-in-power-bi"></a>Opret de nye arbejdsområder (prøveversion) i Power BI
 
@@ -45,7 +45,7 @@ I prøveperioden kan gamle og nye arbejdsområder fungere side om side, og du ka
 
 1. Start med at oprette apparbejdsområdet. Vælg **Arbejdsområder** > **Opret apparbejdsområde**.
    
-     ![Opret app-arbejdsområde](media/service-create-workspaces/power-bi-create-app-workspace.png)
+     ![Opret apparbejdsområde](media/service-create-workspaces/power-bi-create-app-workspace.png)
 
 2. I **eksempelvisningen af forbedrede arbejdsområder** skal du vælge **Prøv nu**.
    
@@ -168,7 +168,7 @@ Nogle funktioner fungerer anderledes i forhold til aktuelle apparbejdsområder i
 
 Følgende problemer er kendte, og vi arbejder på en løsning:
 
-- Gratisbrugere eller -brugergrupper, der er tilføjet som modtagere af abonnementer i mails, modtager muligvis ikke mails, selvom de skulle. Problemet opstår, når den nye arbejdsområdeoplevelse er i en Premium-kapacitet, men Mit arbejdsområde for den bruger, der opretter abonnementet, ikke findes i en Premium-kapacitet. Hvis Mit arbejdsområde er i en Premium-kapacitet, kan gratisbrugere og -brugergrupper modtage mails.
+- Gratisbrugere eller -brugergrupper, der er tilføjet som modtagere af abonnementer i mails, modtager muligvis ikke mails, selvom de skulle. Problemet opstår, når et af de nye arbejdsområder er i en Premium-kapacitet, men Mit arbejdsområde for den bruger, der opretter abonnementet, ikke findes i en Premium-kapacitet. Hvis Mit arbejdsområde er i en Premium-kapacitet, kan gratisbrugere og -brugergrupper modtage mails.
 - Når et arbejdsområde er flyttet fra en Premium-kapacitet til en delt kapacitet, modtager gratisbrugere og -brugergrupper i nogle tilfælde fortsat mails, selvom de ikke skulle. Problemet opstår, når Mit arbejdsområde for den bruger, der opretter abonnementet, er i en Premium-kapacitet.
 
 ## <a name="next-steps"></a>Næste trin

@@ -1,5 +1,5 @@
 ---
-title: 'Hurtig introduktion: Udforsk dashboards og rapporter i Power BI-mobilappsene'
+title: 'Hurtig start: Udforsk dashboards og rapporter i mobilappsene'
 description: I denne hurtige introduktion udforsker du et eksempeldashboard og en eksempelrapport i Power BI-mobilapps.
 author: maggiesMSFT
 manager: kfile
@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-mobile
 ms.topic: quickstart
-ms.date: 05/08/2018
+ms.date: 11/16/2018
 ms.author: maggies
-ms.openlocfilehash: 89f45409607cbe8da6cb1b167b6e71238d6edde0
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 6d5d543c3654da13592b24f4c70bc964eb7bddff
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548804"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157258"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Hurtig introduktion: Udforsk dashboards og rapporter i Power BI-mobilappsene
 I denne hurtige introduktion udforsker du et eksempeldashboard og en eksempelrapport i Power BI-mobilappen på en Android-telefon. Du kan også følge med i de andre mobilapps. 
@@ -62,7 +62,7 @@ Det første skridt i den hurtige introduktion er at downloade eksemplet på deta
 
 4. Vælg **Eksempel på detailhandelsanalyse**.
  
-    ![Eksempel på detailhandelsanalyse](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-rs.png)
+    ![Eksempel på analyse af detailhandel](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-rs.png)
  
 8. Vælg **Opret forbindelse**.  
   

@@ -1,5 +1,5 @@
 ---
-title: Konfigurer Power BI iOS-mobilapps til at få ekstern adgang til en rapportserver
+title: Konfigurer iOS-mobilapps, så du kan få fjernadgang til en rapportserver
 description: Få mere at vide om, hvordan du kan konfigurere iOS-mobilapps eksternt for din rapportserver.
 author: maggiesMSFT
 manager: kfile
@@ -7,21 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2018
+ms.date: 11/15/2018
 ms.author: maggies
-ms.openlocfilehash: bbade67c9510b8d316364d991c09444712309514
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 538bb802998003dba63b6c63cca2068b2d7b69fa
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34722172"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157419"
 ---
 # <a name="configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>Konfigurer Power BI iOS-mobilapps til at få ekstern adgang til en rapportserver
 
-I denne artikel kan du se, hvordan du bruger din organisations MDM-værktøj til at konfigurere adgang til en rapportserver for Power BI iOS-mobilapps. Det kræver, at it-administratorer opretter en appkonfigurationspolitik med de krævede oplysninger, som skal overføres til appen. 
+I denne artikel kan du se, hvordan du bruger din organisations MDM-værktøj til at konfigurere adgang til en rapportserver for Power BI iOS-mobilapps. Det kræver, at it-administratorer opretter en appkonfigurationspolitik, hvor de nødvendige oplysninger pushes til appen. 
 
- Derefter kan brugerne af Power BI iOS-mobilappen nemmere oprette forbindelse til organisationens rapportserver, fordi forbindelsen til rapportserveren allerede er konfigureret. 
-
+ Når rapportserverforbindelsen allerede er oprettet, kan brugerne af Power BI iOS-mobilappen nemmere oprette forbindelse til organisationens rapportserver. 
 
 ## <a name="create-the-app-configuration-policy-in-mdm-tool"></a>Opret appkonfigurationspolitikken i MDM-værktøjet 
 
@@ -39,7 +38,7 @@ I følgende tabel kan du se disse par.
 | com.microsoft.powerbi.mobile.ServerURL-adresse | String | URL-adresse til rapportserver </br> Skal starte med http/https |
 | com.microsoft.powerbi.mobile.ServerBrugernavn | String | [valgfri] </br> Det brugernavn, der skal bruges til at oprette forbindelse til serveren. </br> Hvis der ikke findes et brugernavn, vil appen bede brugeren skrive brugernavnet til forbindelsen.| 
 | com.microsoft.powerbi.mobile.ServerVist navn | String | [valgfri] </br> Standardværdien er "Rapportserver" </br> Et navn, der bruges til at repræsentere serveren i appen | 
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | Standardværdien er True </br> Hvis indstillingen er angivet til “True”, tilsidesættes eventuelle rapportserverdefinitioner, som allerede findes på mobilenheden (eksisterende servere, der allerede er konfigureret, slettes). </br> Dette forhindrer også, at brugeren kan fjerne konfigurationen. </br> Hvis indstillingen er angivet til “False”, tilføjes de overførte værdier, og eksisterende indstillinger ændres ikke. </br> Hvis den samme URL-adresse til serveren allerede er konfigureret i mobilappen, vil appen beholde konfigurationen uændret, og brugeren bliver ikke bedt om ny godkendelse til den samme server. |
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | Standardværdien er True </br>Når værdien er angivet til "True", tilsidesætter den alle eksisterende rapportserverdefinitioner på mobilenheden. Eksisterende servere, der allerede er konfigureret, slettes. </br> Dette forhindrer også, at brugeren kan fjerne konfigurationen. </br> Hvis indstillingen er angivet til “False”, tilføjes de overførte værdier, og eksisterende indstillinger ændres ikke. </br> Hvis den samme URL-adresse allerede er konfigureret i mobilappen, forbliver konfigurationen, som den er. Appen beder ikke brugeren om at godkende igen for den samme server. |
 
 Her er et eksempel på, hvordan du indstiller konfigurationspolitikken ved hjælp af Intune.
 
@@ -47,7 +46,7 @@ Her er et eksempel på, hvordan du indstiller konfigurationspolitikken ved hjæl
 
 ## <a name="end-users-connecting-to-a-report-server"></a>Slutbrugere opretter forbindelse til en rapportserver
 
-Når du har publiceret appkonfigurationspolitikken, vil de brugere og enheder, der tilhører den distributionsliste, som er defineret for politikken, få følgende oplevelse, når de starter Power BI iOS-mobilappen. 
+ Lad os sige, at du publicerer appkonfigurationspolitikken for en distributionsliste. Når brugerne og enhederne på den pågældende distributionsliste starter iOS-mobilappen, oplever de følgende: 
 
 1. De får vist en meddelelse om, at mobilappen er konfigureret med en rapportserver og skal trykke på **Log på**.
 

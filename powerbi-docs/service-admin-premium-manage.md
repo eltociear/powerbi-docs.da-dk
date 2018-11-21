@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/20/2018
 ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: 39429d0f09431da3f860bf0454843c65ce07a524
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 3ef719f85690297cd523a6fefb7f0ba5f77c9199
+ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265995"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51717602"
 ---
 # <a name="manage-capacities-within-power-bi-premium-and-power-bi-embedded"></a>Administrer kapaciteter i Power BI Premium og Power BI Embedded
 
@@ -56,13 +56,9 @@ For det meste behøver brugerne ikke at få at vide, at de er i en Premium-kapac
 
 ## <a name="configure-workloads"></a>Konfigurer arbejdsbelastninger
 
-Tænk på en arbejdsbelastning i Power BI som en af de mange tjenester, du kan vise til brugere. Som standard understøtter kapaciteter for **Power BI Premium** og **Power BI Embedded** kun den arbejdsbelastning, der er knyttet til Power BI-forespørgsler, som kører i clouden.
+Som standard understøtter kapaciteter for Power BI Premium og Power BI Embedded kun den arbejdsbelastning, der er knyttet til Power BI-forespørgsler, som kører i cloudmiljøet. Vi tilbyder nu understøttelse af yderligere to arbejdsbelastninger: **sideinddelte rapporter** og **dataflow**. Du kan finde flere oplysninger under [Arbejdsbelastninger i Premium-kapacitet](service-premium.md#workloads-in-premium-capacity).
 
-Vi tilbyder nu understøttelse af yderligere to arbejdsbelastninger: **sideinddelte rapporter** og **dataflow**. Du aktiverer disse arbejdsbelastninger på Power BI-administrationsportalen eller via Power BI REST-API'en. Du kan også angive den maksimale hukommelse, som de enkelte arbejdsbelastninger kan forbruge, og dermed styre, hvordan de forskellige arbejdsbelastninger påvirker hinanden.
-
-### <a name="enable-workloads-in-the-power-bi-admin-portal"></a>Aktivér arbejdsbelastninger på Power BI-administrationsportalen
-
-Følg disse trin for at aktivere arbejdsbelastninger.
+Hvis du vil aktivere arbejdsbelastninger på Power BI-administrationsportalen, skal du benytte følgende fremgangsmåde.
 
 1. Vælg en kapacitet under **Kapacitetsindstillinger**.
 
@@ -73,24 +69,6 @@ Følg disse trin for at aktivere arbejdsbelastninger.
     ![Konfigurer arbejdsbelastninger på administrationsportalen](media/service-admin-premium-manage/admin-portal-workloads.png)
 
 1. Vælg **Anvend**.
-
-### <a name="default-memory-settings"></a>Standardindstillinger for hukommelse
-
-I følgende tabel vises standard- og minimumværdierne for hukommelse baseret på de forskellige [kapacitetsnoder](service-premium.md#premium-capacity-nodes), der er tilgængelige. Hukommelse allokeres dynamisk til dataflow, men den allokeres statisk til sideinddelte rapporter. Du kan finde flere oplysninger i næste afsnit [Overvejelser i forbindelse med sideinddelte rapporter](#considerations-for-paginated-reports).
-
-|                     | EM3                      | P1                       | P2                      | P3                       |
-|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
-| Sideinddelte rapporter | I/T | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 % | 20 % som standard, minimum 2,5 % |
-| Dataflow | 15 % som standard, minimum 8 %  | 15 % som standard, minimum 4 %  | 15 % som standard, minimum 2 % | 15 % som standard, minimum 1 %  |
-| | | | | |
-
-### <a name="considerations-for-paginated-reports"></a>Overvejelser i forbindelse med sideinddelte rapporter
-
-Hvis du bruger arbejdsbelastningen for sideinddelte rapporter, skal du være opmærksom på følgende punkter.
-
-* **Allokering af hukommelse i sideinddelte rapporter**: I sideinddelte rapporter kan du køre din egen kode, når du gengiver en rapport (f.eks. når du ændrer tekstfarven dynamisk baseret på indhold). Derfor sikrer vi Power BI Premium-kapacitet ved at køre sideinddelte rapporter i et inkluderet område i kapaciteten. Vi kan tildele den maksimale hukommelse, du angiver, til dette område, uanset om arbejdsbelastningen er aktiv eller ej. Hvis du bruger Power BI-rapporter eller -dataflow i den samme egenskab, skal du sørge for, at du har angivet hukommelsen lavt nok til sideinddelte rapporter, så det ikke påvirker andre arbejdsbelastninger.
-
-* **Sideinddelte rapporter er ikke tilgængelige**: I sjældne tilfælde kan arbejdsbelastningen i sideinddelte rapporter blive utilgængelige. I dette tilfælde viser arbejdsbelastningen en fejltilstand på administrationsportalen, og brugere får vist timeout for gengivelse af rapporter. Du kan afhjælpe dette problem ved at deaktivere arbejdsbelastningen og derefter aktivere den igen.
 
 ## <a name="monitor-capacity-usage"></a>Overvåg kapacitetsforbrug
 

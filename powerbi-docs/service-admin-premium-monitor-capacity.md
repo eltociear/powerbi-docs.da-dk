@@ -10,18 +10,22 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/06/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: bb7527a197c9556509ebba721ee49a2d9817b6f5
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 4fc036bf9191d0ed56be11e69152e579cfc5102d
+ms.sourcegitcommit: 883d7e76816f2696e88ae391744ac6c7b1cb59c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266202"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51688390"
 ---
 # <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Overvåg kapaciteter i Power BI Premium og Power BI Embedded
 
 Denne artikel indeholder en oversigt over overvågning af målepunkter for dine Power BI Premium-kapaciteter. Ved at overvåge kapacitetsforbrug kan du træffe mere velovervejede beslutninger, når du administrerer dine kapaciteter.
 
-Du kan overvåge kapacitet med Power BI Premium-appen Capacity Metrics eller i administrationsportalen. Vi anbefaler appen, fordi den giver mange flere detaljer, men i denne artikel beskrives begge muligheder. **Den aktuelle version af appen er 1.8 (udgivet den 7. november 2018).**
+Du kan overvåge kapacitet med Power BI Premium-appen Capacity Metrics eller i administrationsportalen. Vi anbefaler appen, fordi den giver mange flere detaljer, men i denne artikel beskrives begge muligheder.
+
+**Den aktuelle version af appen er 1.9 (udgivet den 14. november 2018).**
+
+.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UgsjMbhi_Bk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
@@ -87,7 +91,7 @@ I området **Oversigt** kan du få et overblik over dine kapaciteter på basis a
 | --- | --- |
 | **Objekter** | * Antallet af kapaciteter, som du ejer<br> * Det specifikke antal datasæt i din kapacitet<br> * Det specifikke antal arbejdsområder i din kapacitet |
 | **System** | * Det gennemsnitlige hukommelsesforbrug i GB over de seneste syv dage<br> * Højeste hukommelsesforbrug i GB i løbet af de seneste syv dage og den lokale tid, forbruget opstod<br> * Det antal gange, CPU'en har overskredet 80 % af tærsklerne i løbet af de seneste syv dage opdelt i buckets på tre minutter<br> * De fleste gange, CPU'en har overskredet 80 % i løbet af de seneste syv dage opdelt i buckets på én time og den lokale tid, det opstod<br> * Det antal gange, forbindelser via direkte forespørgsler/direkte forbindelser har overskredet 80 % af tærsklerne i løbet af de seneste syv dage opdelt i buckets på tre minutter<br> * De fleste gange, forbindelser via direkte forespørgsler/direkte forbindelser har overskredet 80 % i løbet af de seneste syv dage opdelt i buckets på én time og den lokale tid, det opstod |
-| **Arbejdsbelastninger for datasæt** | * Det samlede antal opdateringer i løbet af de seneste syv dage<br> * Det samlede antal vellykkede opdateringer i løbet af de seneste syv dage<br> * Det samlede antal mislykkede opdateringer i løbet af de seneste syv dage<br> * Det samlede antal mislykkede opdateringer, der skyldes manglende hukommelse<br> * Den gennemsnitlige opdateringsvarighed er den tid, det tager at udføre handlingen i minutter<br> * Den gennemsnitlige opdateringsventetid er den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starten af handlingen i minutter<br> * Det samlede antal forespørgsler, der er kørt i løbet af de seneste syv dage<br> * Det samlede antal vellykkede forespørgsler i løbet af de seneste syv dage<br> * Det samlede antal mislykkede forespørgsler i løbet af de seneste syv dage<br> * Den gennemsnitlige forespørgselsvarighed er den tid, det tager at udføre handlingen i minutter<br> * Det samlede antal modeller, der fjernes på grund af for stort hukommelsesforbrug |
+| **Arbejdsbelastninger for datasæt** | * Det samlede antal opdateringer i løbet af de seneste syv dage<br> * Det samlede antal vellykkede opdateringer i løbet af de seneste syv dage<br> * Det samlede antal mislykkede opdateringer i løbet af de seneste syv dage<br> * Det samlede antal mislykkede opdateringer, der skyldes manglende hukommelse<br> * Den gennemsnitlige opdateringsvarighed er den tid, det tager at udføre handlingen i minutter<br> * Den gennemsnitlige opdateringsventetid er den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starten af handlingen i minutter<br> * Det samlede antal forespørgsler, der er kørt i løbet af de seneste syv dage<br> * Det samlede antal vellykkede forespørgsler i løbet af de seneste syv dage<br> * Det samlede antal mislykkede forespørgsler i løbet af de seneste syv dage<br> * Den gennemsnitlige forespørgselsvarighed er den tid, det tager at udføre handlingen i minutter<br> * Det samlede antal modeller, der fjernes på grund af for stort hukommelsesforbrug<br> * Den gennemsnitlige størrelse af datasæt <br> * Det gennemsnitlige antal datasæt, der indlæses i hukommelsen |
 |  |  |
 
 #### <a name="refreshes-area"></a>Området Opdateringer
@@ -136,6 +140,8 @@ Området **Datasæt** indeholder følgende målepunkter.
 | --- | --- |
 | **Antal datasætfjernelser** | * I alt: Det samlede antal datasæt*fjernelser* for hver enkelt kapacitet. Når en kapacitet står over for øget hukommelsesforbrug, fjerner noden et eller flere datasæt fra hukommelsen. Datasæt, der er inaktive (uden forespørgsels-/opdateringshandlinger, der udføres i øjeblikket), ryddes først. Derefter er fjernelsesrækkefølgen baseret på en måling af 'mindst brugt for nylig'.|
 | **Datasætfjernelser og hukommelsesforbrug pr. time** | * Datasætfjernelser i forhold til hukommelsesforbrug i GB opdelt i 1-times buckets, rapporteret i lokaltid |
+| **Antal indlæste datasæt pr. time** | * Antal datasæt, der er indlæst i hukommelsen i forhold til hukommelsesforbrug i GB opdelt i 1-times buckets, rapporteret i lokaltid |
+| **Datastørrelser**  | * Maksimumstørrelse: den maksimale størrelse på datasættet i MB for den viste periode |
 |  |  |
 
 ### <a name="paginated-reports-tab"></a>Fanen Sideinddelte rapporter

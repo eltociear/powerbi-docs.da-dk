@@ -1,5 +1,5 @@
 ---
-title: Tilføj kommentarer i en rapport på en rapportserver – Power BI-rapportserver
+title: Tilføj kommentarer i en rapport i Power BI-rapportserver
 description: Se, hvordan du kan tilføje kommentarer i en Power BI-rapport eller sideinddelt rapport på en Power BI-rapportserver eller SQL Server Reporting Services-rapportserver.
 author: maggiesMSFT
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/18/2018
+ms.date: 11/15/2018
 ms.author: maggies
-ms.openlocfilehash: ff51b2e41d921b7a88afc9b13bb4ecd98814d12e
-ms.sourcegitcommit: 67336b077668ab332e04fa670b0e9afd0a0c6489
+ms.openlocfilehash: e0053660263f4cbed55050b9431b67228bf74c29
+ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44727967"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52157350"
 ---
-# <a name="add-comments-to-a-report-in-a-report-server"></a>Tilføj kommentarer i en rapport på en rapportserver
-Du kan tilføje kommentarer i rapporter, herunder Power BI-rapporter, på webportalen til en rapportserver. Kommentarerne gemmes sammen med rapporten, og alle, der har rettigheder til den, kan se kommentarerne til rapporten. Se afsnittet [Tilladelser](#permissions) herunder for at se flere oplysninger.
+# <a name="add-comments-to-a-report-in-a-report-server---power-bi-report-server"></a>Tilføj kommentarer i en rapport på en rapportserver – Power BI-rapportserver
+Du kan tilføje kommentarer i rapporter, herunder Power BI-rapporter, på webportalen til en rapportserver. Kommentarerne gemmes sammen med rapporten, og alle, der har rettigheder til den, kan se kommentarerne til rapporten. Se i afsnittet [Tilladelser](#permissions) herunder for at få flere oplysninger.
 
 ## <a name="add-or-view-comments"></a>Tilføj eller få vist kommentarer
 1. Åbn en sideinddelt rapport eller en Power BI-rapport på en rapportserver.

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 5089be0cb8bd96573a0d1b3e25c742c1f559253b
-ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
+ms.openlocfilehash: ef20b37d781e266de9e72117d2c57e58f802d4fa
+ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50736843"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51850378"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-office-365-trial"></a>Tilmelding til Power BI med en ny Office 365-prøveversion
 
@@ -27,13 +27,13 @@ I denne artikel beskrives en alternativ måde at tilmelde sig Power BI på ved h
 
 1. Når du har fuldført tilmeldingen, får du et nyt logonnavn, der ligner you@yourcompany.onmicrosoft.com. Dette er det logon, du skal bruge med Power BI.
 
-1. Tilmeld dig Power BI [ved hjælp af dette link](https://portal.office.com/Start/Confirm?Sku=a403ebcc-fae0-4ca2-8c8c-7a907fd6c235&ru=https%3A%2F%2Fapp.powerbi.com%3FredirectedFromSignup%3D1%26noSignUpCheck%3D1). Hvis du bliver bedt om det, skal du logge på med det logonnavn og den adgangskode, du valgte til Office 365 i forrige trin.
+1. Tilmeld dig Power BI [ved hjælp af dette link](https://app.powerbi.com/signupredirect?pbi_source=web). Hvis du bliver bedt om det, skal du logge på med det logonnavn og den adgangskode, du valgte til Office 365 i forrige trin.
 
 1. Det er det hele! Når du er færdig, bliver du omdirigeret til Power BI. Hvis du har problemer med at logge på med den nye konto, kan du prøve at bruge en privat browsersession.
 
 ## <a name="important-considerations"></a>Vigtige overvejelser
 
-Ved hjælp af denne metode til tilmelding opretter du en ny organisationslejer, og du bliver administrator for lejeren. Du kan finde flere oplysninger under [Hvad er Power BI-administration?](service-admin-administering-power-bi-in-your-organization.md) Du kan føje nye brugere til din lejer og derefter dele med dem, som beskrevet i [dokumentationen til Office 365 Admin](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-SG&ad=SG).
+Ved hjælp af denne metode til tilmelding opretter du en ny organisationslejer, og du bliver administrator for lejeren. Du kan finde flere oplysninger under [Hvad er Power BI-administration?](service-admin-administering-power-bi-in-your-organization.md). Du kan føje nye brugere til din lejer og derefter dele med dem, som beskrevet i [dokumentationen til Office 365 Admin](https://support.office.com/en-sg/article/Add-users-individually-to-Office-365---Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec?ui=en-US&rs=en-SG&ad=SG).
 
 ## <a name="next-steps"></a>Næste trin
 

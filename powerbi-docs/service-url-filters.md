@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 11/16/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: d708a4ff07a0d202fcc709f6348e48505d7589d0
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: 6a2cfd4926089bce8973070949791e450a47cc4b
+ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973367"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51850585"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 
@@ -47,7 +47,7 @@ Felttypen kan være et tal, dato og klokkeslæt eller streng, og typen skal stem
 
 * **Strenge** skal omgives af enkelte anførselstegn: 'leders navn'.
 * **Tal** kræver ingen særlig formatering
-* **Datoer og klokkeslæt** skal være omsluttet med enkelt anførselstegn og have ordet **DateTime** foranstillet.
+* **Datoer og klokkeslæt** skal omgives af enkelte anførselstegn. I OData v3 skal ordet datoklokkeslæt være foranstillet, men datoklokkeslæt er ikke nødvendig i OData v4.
 
 Hvis det stadig er forvirrende, kan du fortsætte med at læse og vi undersøger det nærmere.  
 
