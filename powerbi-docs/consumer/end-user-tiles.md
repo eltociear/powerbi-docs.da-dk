@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f788da00d50ee7e22da82aa7e57560cfc516b0c7
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 1e86403dbdb2972cc83b379efff8bbc17173a4e1
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396459"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331890"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Dashboardfelter i Power BI
-Dashboards og dashboardfelter er en funktion i Power BI-tjenesten ikke Power BI Desktop. Selvom dashboardfelter ikke kan oprettes eller fastgøres i Power BI - Mobil, [kan de vises og deles](mobile/mobile-tiles-in-the-mobile-apps.md). Og i Power BI - Mobil kan du [føje billeder til dashboardet med iPhone-appen](mobile/mobile-iphone-app-get-started.md).
+Dashboards og dashboardfelter er en funktion i Power BI-tjenesten ikke Power BI Desktop. Selvom dashboardfelter ikke kan oprettes eller fastgøres i Power BI - Mobil, [kan de vises og deles](mobile/mobile-tiles-in-the-mobile-apps.md). 
 
 ## <a name="dashboard-tiles"></a>Dashboardfelter
 ![Power BI-dashboard](./media/end-user-tiles/power-bi-dashboard.png)

@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: ef20b37d781e266de9e72117d2c57e58f802d4fa
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: 26fa709eee00607911b2bee2e8bf3f5f1cba732f
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850378"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289099"
 ---
 # <a name="signing-up-for-power-bi-with-a-new-office-365-trial"></a>Tilmelding til Power BI med en ny Office 365-prøveversion
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gbSuFST-Nx4?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-I denne artikel beskrives en alternativ måde at tilmelde sig Power BI på ved hjælp af en prøveversion af Office 365. Hvis du har problemer med at tilmelde dig Power BI med din arbejdsmailadresse, skal du først kontrollere, at det er en [mailadresse, der kan bruges med Power BI](service-self-service-signup-for-power-bi.md#what-email-address-can-be-used-with-power-bi). Hvis det ikke lykkes, skal du prøve at tilmelde dig en prøveversion af Office 365 først og derefter tilmelde dig Power BI. Du kan stadig bruge Power BI, efter prøveversionen af Office 365 er udløbet.
+I denne artikel beskrives en alternativ måde at tilmelde sig Power BI på ved hjælp af en prøveversion af Office 365. Hvis du har problemer med at tilmelde dig Power BI med din arbejdsmailadresse, skal du først kontrollere, at det er en [mailadresse, der kan bruges med Power BI](service-self-service-signup-for-power-bi.md#supported-email-addresses). Hvis det ikke lykkes, skal du prøve at tilmelde dig en prøveversion af Office 365 først og derefter tilmelde dig Power BI. Du kan stadig bruge Power BI, efter prøveversionen af Office 365 er udløbet.
 
 1. Tilmeld dig en Office 365-prøveversion [på Office 365-webstedet](https://go.microsoft.com/fwlink/p/?LinkID=403802).
 
