@@ -390,42 +390,54 @@ items:
     items:
     - name: Nyheder i Power BI-tjenesten
       href: service-whats-new.md
-    - name: Grundlæggende begreber
+    - name: Grundlæggende begreber for designere
       href: service-basic-concepts.md
-    - name: Tilmelding til selvbetjening
-      href: service-self-service-signup-for-power-bi.md
-    - name: Introduktion til Cortana til Power BI
-      href: service-cortana-intro.md
-    - name: Opdatering af data i Power BI
-      href: refresh-data.md
-    - name: Power BI til US Government
-      href: service-govus-overview.md
-    - name: Funktioner efter licenstype
-      href: service-features-license-type.md
     - name: 10 tips til at få hjælp
       href: service-tips-for-finding-help.md
-    - name: Om filtre og fremhævning i Power BI-rapporter
-      href: power-bi-reports-filters-and-highlighting.md
-    - name: Hent data fra filer
-      href: service-get-data-from-files.md
-    - name: Rapporteditoren... Få en introduktion
-      href: service-the-report-editor-take-a-tour.md
-    - name: Visualiseringer i Power BI
-      href: visuals/power-bi-report-visualizations.md
-    - name: Datakilder til Power BI
-      href: service-get-data.md
-    - name: Aktivering af udvidet Pro-prøveversion
-      href: service-extended-pro-trial.md
-    - name: Microsoft Flow og Power BI
-      href: service-flow-integration.md
-    - name: Ofte stillede spørgsmål om Power BI til Germany Cloud-kunder
-      href: service-govde-faq.md
-    - name: Power BI Kom i gang med tredjeparts-apps
-      href: service-power-bi-get-started-third-party-apps.md
-    - name: Aggregater (sum, gennemsnit, maksimum, osv.) i Power BI
-      href: service-aggregates.md
-    - name: Indstillinger for sidevisning i en Power BI-rapport
-      href: power-bi-report-display-settings.md
+    - name: Licensering
+      items:
+      - name: Tilmelding til selvbetjening
+        href: service-self-service-signup-for-power-bi.md
+      - name: Funktioner efter licenstype
+        href: service-features-license-type.md
+      - name: Aktivering af udvidet Pro-prøveversion
+        href: service-extended-pro-trial.md
+      - name: Power BI til US Government
+        href: service-govus-overview.md
+      - name: Ofte stillede spørgsmål til Germany Cloud-kunder
+        href: service-govde-faq.md
+    - name: Data
+      items:
+      - name: Datakilder til Power BI
+        href: service-get-data.md
+      - name: Hent data fra filer
+        href: service-get-data-from-files.md
+      - name: Aggregater (sum, gennemsnit, maksimum, osv.)
+        href: service-aggregates.md
+      - name: Opdatering af data i Power BI
+        href: refresh-data.md
+      - name: Azure og Power BI
+        href: service-azure-and-power-bi.md
+      - name: Udgående data i Power BI og Azure
+        href: service-azure-egress-power-bi.md
+    - name: Rapportdesign
+      items:
+      - name: Rapporteditoren... Få en introduktion
+        href: service-the-report-editor-take-a-tour.md
+      - name: Visualiseringer i Power BI
+        href: visuals/power-bi-report-visualizations.md
+      - name: Om filtre og fremhævning i rapporter
+        href: power-bi-reports-filters-and-highlighting.md
+      - name: Indstillinger for sidevisning i en Power BI-rapport
+        href: power-bi-report-display-settings.md
+      - name: Introduktion til Cortana til Power BI
+        href: service-cortana-intro.md
+    - name: Andet
+      items:
+      - name: Microsoft Flow og Power BI
+        href: service-flow-integration.md
+      - name: Kom i gang med tredjepartsapps
+        href: service-power-bi-get-started-third-party-apps.md
   - name: Sådan gør du
     items:
     - name: Almindelige opgaver
@@ -548,21 +560,21 @@ items:
         href: service-connect-to-zuora.md
     - name: Data fra filer
       items:
-      - name: Fra Excel-projektmappe til fantastisk rapport på ingen tid
+      - name: Fra Excel til en imponerende rapport
         href: service-from-excel-to-stunning-report.md
       - name: Hent data fra Excel-projektmappefiler
         href: service-excel-workbook-files.md
       - name: Hent data fra Power BI Desktop-filer
         href: service-desktop-files.md
-      - name: Parameterindstillinger for datasæt
+      - name: Rediger parametre
         href: service-parameters.md
       - name: Hent data fra kommaseparerede værdifiler(.csv)
         href: service-comma-separated-value-files.md
       - name: Streaming i realtid i Power BI (Eksempelsvisning)
         href: service-real-time-streaming.md
-      - name: Publicer i Power BI fra Excel 2016
+      - name: Publicer på Power BI fra Excel 2016
         href: service-publish-from-excel.md
-      - name: Reducer størrelsen på en Excel-projektmappe for at få den vist i Power BI
+      - name: Reducer størrelsen på en Excel-projektmappe
         href: reduce-the-size-of-an-excel-workbook.md
     - name: Data fra databaser
       items:
@@ -572,25 +584,21 @@ items:
         href: service-azure-sql-database-with-direct-connect.md
       - name: Spark on HDInsight med DirectQuery
         href: spark-on-hdinsight-with-direct-connect.md
-      - name: SQL Server Analysis Services live data i Power BI
+      - name: Dynamiske SQL Server Analysis Services-data i Power BI
         href: sql-server-analysis-services-tabular-data.md
-      - name: Azure og Power BI
-        href: service-azure-and-power-bi.md
-      - name: Udgående data i Power BI og Azure
-        href: service-azure-egress-power-bi.md
     - name: Opdatering af data
       items:
       - name: Konfigurer planlagt opdatering
         href: refresh-scheduled-refresh.md
-      - name: Opdater et datasæt, der er oprettet via en Power BI Desktop-fil – lokalt
+      - name: Opdater et datasæt fra Power BI Desktop-fil – lokalt
         href: refresh-desktop-file-local-drive.md
-      - name: Opdater et datasæt, der er oprettet via en Power BI Desktop-fil – cloud
+      - name: Opdater et datasæt fra Power BI Desktop-fil – cloud
         href: refresh-desktop-file-onedrive.md
-      - name: Opdater et datasæt, der er oprettet ud fra en Excel-projektmappe - lokalt
+      - name: Opdater et datasæt fra en Excel-projektmappe – lokalt
         href: refresh-excel-file-local-drive.md
-      - name: Opdater et datasæt, der er oprettet ud fra en Excel-projektmappe - cloud
+      - name: Opdater et datasæt fra en Excel-projektmappe – cloud
         href: refresh-excel-file-onedrive.md
-      - name: Opdater et datasæt, der er oprettet ud fra en fil med kommaseparerede værdier (.csv) fil på OneDrive
+      - name: Opdater et datasæt, der er oprettet fra en .CSV-fil på OneDrive
         href: refresh-csv-file-onedrive.md
       - name: Fejlfinding i forbindelse med opdatering af scenarier
         href: refresh-troubleshooting-refresh-scenarios.md
@@ -604,25 +612,25 @@ items:
         href: service-dashboard-create.md
       - name: Opret en kopi af et dashboard
         href: service-dashboard-copy.md
-      - name: Fastgør et felt til et Power BI-dashboard fra en rapport
+      - name: Fastgør et felt til et dashboard fra en rapport
         href: service-dashboard-pin-tile-from-report.md
-      - name: Fastgør et felt fra ét dashboard til et andet dashboard
+      - name: Fastgør et felt fra ét dashboard til et andet
         href: service-pin-tile-to-another-dashboard.md
-      - name: Fastgør et felt til et Power BI-dashboard fra Excel
+      - name: Fastgør et felt til et dashboard fra Excel
         href: service-dashboard-pin-tile-from-excel.md
-      - name: Fastgør et felt til et Power BI-dashboard fra spørgsmålsboksen Spørgsmål og svar
+      - name: Fastgør et felt til et dashboard fra Spørgsmål og svar
         href: service-dashboard-pin-tile-from-q-and-a.md
-      - name: Fastgør en hel rapportside til et Power BI-dashboard
+      - name: Fastgør en hel rapportside til et dashboard
         href: service-dashboard-pin-live-tile-from-report.md
       - name: Forbrugsmetrik for dashboards
         href: service-usage-metrics.md
-      - name: Føj billede, tekstfelt, video eller internetkode til dit dashboard
+      - name: Føj et billede, et tekstfelt, en video eller en kode til et dashboard
         href: service-dashboard-add-widget.md
-      - name: Rediger et felt – ændr størrelse, flyt, omdøb, fastgør, slet, tilføj hyperlink
+      - name: Rediger et felt
         href: service-dashboard-edit-tile.md
-      - name: Tips til udformning af et fantastisk Power BI-dashboard
+      - name: Tip til udformning af et fantastisk dashboard
         href: service-dashboards-design-tips.md
-      - name: Optimer dine data til Power BI Quick Insights
+      - name: Optimer dine data til Hurtig indsigt
         href: service-insights-optimize.md
       - name: Opret en telefonvisning af et dashboard
         href: service-create-dashboard-mobile-phone-view.md
@@ -672,7 +680,7 @@ items:
         href: visuals/power-bi-visualizations-arcgis.md
     - name: Stil spørgsmål til dine data
       items:
-      - name: Brug spørgsmål og svar til at oprette visualiseringer og oprette rapporter
+      - name: Brug spørgsmål og svar til at oprette visualiseringer og rapporter
         href: power-bi-tutorial-q-and-a.md
       - name: Få dine data til at fungere godt med Spørgsmål og svar
         href: service-prepare-data-for-q-and-a.md
@@ -708,7 +716,7 @@ items:
         href: service-collaborate-power-bi-workspace.md
       - name: Administrer din gruppe i Power BI og Office 365
         href: service-manage-app-workspace-in-power-bi-and-office-365.md
-      - name: Del et dashboard, der er sammenkædet med en Excel-projektmappe på OneDrive for Business
+      - name: Del et dashboard, der linker til en Excel-projektmappe på OneDrive
         href: service-share-dashboard-that-links-to-excel-onedrive.md
     - name: Indholdspakker
       items:
@@ -936,6 +944,8 @@ items:
         href: developer/custom-visual-develop-tutorial-format-options.md
     - name: Begreber
       items:
+      - name: Retningslinjer for Power BI-visualiseringer
+        href: developer/office-store-in-app-purchase-visual-guidelines.md
       - name: Brug af funktionalitet
         href: https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/
       - name: Tilknytning af datavisning
@@ -1255,9 +1265,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI sikkerhed
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 6be9e4865dd91817bd4b73c2763d6f7d374e1013
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: d6dd88caff9e0f2cdef7f7697c81161fe32c0b35
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289283"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331844"
