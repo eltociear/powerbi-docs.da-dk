@@ -1,5 +1,5 @@
 ---
-title: Få vist og rediger parameterindstillinger for datasæt i Power BI-tjenesten
+title: Rediger parameterindstillinger i Power BI-tjenesten
 description: Forespørgselsparametre oprettes i Power BI Desktop, men kan gennemses og opdateres i Power BI-tjenesten
 author: mihart
 manager: kfile
@@ -7,25 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/26/2018
+ms.date: 11/21/2018
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: ac271e8013bce5824931153351a651644a716a2f
-ms.sourcegitcommit: 5eb8632f653b9ea4f33a780fd360e75bbdf53b13
+ms.openlocfilehash: b379812a16bbdbbc16517b86d9ce4e941ac45f01
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36965153"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331867"
 ---
-# <a name="what-is-a-query-parameter"></a>Hvad er en forespørgselsparameter?
-Forespørgselsparametre tilføjes i Power BI Desktop af rapportoprettere. Parametre gør det muligt at lave dele af rapporter, der afhænger af en eller flere parameter*værdier*. En rapportopretter kan f.eks. oprette en parameter, der begrænser dataene til et enkelt land/område, eller en parameter, der definerer acceptable formater for felter, såsom datoer, klokkeslæt og tekst.
+# <a name="edit-parameter-settings-in-the-power-bi-service"></a>Rediger parameterindstillinger i Power BI-tjenesten
+Rapportoprettere føjer forespørgselsparametre til rapporter i Power BI Desktop. Parametre gør det muligt for dem at oprette dele af rapporter, der afhænger af en eller flere parameter*værdier*. En rapportopretter kan f.eks. oprette en parameter, der begrænser dataene til et enkelt land/område, eller en parameter, der definerer acceptable formater for felter, såsom datoer, klokkeslæt og tekst.
 
 ![Fanen Hjem, der viser indstillingen Administrer parametre i Desktop](media/service-parameters/power-bi-manage-parameters.png)
 
-
 ## <a name="review-and-edit-parameters-in-power-bi-service"></a>Gennemse og rediger parametre i Power BI-tjenesten
 
-Når parametrene er defineret i Desktop, når denne [rapport publiceres i Power BI-tjenesten](desktop-upload-desktop-files.md), følger parameterindstillingerne og valgene med denne rapport. Nogle parameterindstillinger kan gennemses og redigeres i Power BI-tjenesten – ikke de parametre, der begrænser de tilgængelige data, men de parametre, der definerer og beskriver acceptable værdier.
+Som rapportopretter definerer du parametre i Desktop. Når du [udgiver rapporten i Power BI-tjenesten](desktop-upload-desktop-files.md), følger parameterindstillingerne og markeringerne med. Du kan gennemse og redigere nogle parameterindstillinger i Power BI-tjenesten – ikke de parametre, der begrænser de tilgængelige data, men de parametre, der definerer og beskriver acceptable værdier.
 
 1. Vælg tandhjulsikonet ![tandhjulsikonet](media/service-parameters/power-bi-cog.png) i Power BI-tjenesten for at åbne **Indstillinger**.
 

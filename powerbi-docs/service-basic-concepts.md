@@ -1,5 +1,5 @@
 ---
-title: Grundlæggende begreber i Power BI-tjenesten
+title: Grundlæggende begreber for designere i Power BI-tjenesten
 description: Arbejdsområder, dashboards, rapporter, datasæt og projektmapper i Power BI-tjenesten.
 author: maggiesMSFT
 manager: kfile
@@ -8,25 +8,25 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 9b02bdfd2c0025977dbb69eae44f4e976a527a30
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: d18c44724899b243a34821db4d4866863e577b48
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717763"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52332028"
 ---
-# <a name="power-bi---basic-concepts-for-power-bi-service"></a>Power BI – grundlæggende begreber for Power BI-tjenesten
+# <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Grundlæggende begreber for designere i Power BI-tjenesten
 
-Denne artikel forudsætter, at du har allerede har [tilmeldt dig Power BI-tjenesten](service-self-service-signup-for-power-bi.md) og [tilføjet nogle data](service-get-data.md).
+I denne artikel forudsættes det, at du har allerede har [tilmeldt dig Power BI-tjenesten](service-self-service-signup-for-power-bi.md) og [tilføjet nogle data](service-get-data.md). Hvis du ikke har nogen data endnu, kan du installere en [indholdspakke med Power BI-eksempler](sample-datasets.md#the-power-bi-samples-as-content-packs).
 
 Når du åbner Power BI-tjenesten, får du vist et **_dashboard_**. Dashboards er noget, der adskiller Power BI-tjenesten fra Power BI Desktop.
 
-![](media/service-basic-concepts/completenewest.png)
+![Power BI-tjenesten i en browser](media/service-basic-concepts/completenewest.png)
 
-De vigtigste funktioner i Power BI-tjenestens brugergrænsefladen er følgende:
+Her er de vigtigste funktioner i Power BI-tjenestens brugergrænseflade:
 
 1. navigationsrude (venstre)
 2. canvas (i dette tilfælde dashboard med felter)
@@ -37,7 +37,7 @@ De vigtigste funktioner i Power BI-tjenestens brugergrænsefladen er følgende:
 7. Power BI-startknap
 8. Navngivne ikonknapper
 
-Vi vil gå i dybden med dette senere, men lad os først se på nogle Power BI-begreber.
+Vi vil gå i dybden med disse funktioner senere, men lad os først se på nogle Power BI-begreber.
 
 Du kan også vælge at se denne video, før du læser resten af denne artikel.  I videoen gennemgår Will de grundlæggende begreber og giver en præsentation af Power BI-tjenesten.
 
@@ -45,7 +45,7 @@ Du kan også vælge at se denne video, før du læser resten af denne artikel.  
 
 
 ## <a name="power-bi-concepts"></a>Power BI-begreber
-De fire overordnede elementer i Power BI er: **_dashboards_**, **_rapporter_**, **_projektmapper_** og **_datasæt_**. Og de er alle organiseret i **_arbejdsområder_**. Det er vigtigt at forstå arbejdsområder, før vi går videre til de fire overordnede elementer, så lad os starte der.
+De fire overordnede elementer i Power BI er: **_dashboards_**, **_rapporter_**, **_projektmapper_** og **_datasæt_**. Og de er alle organiseret i **_arbejdsområder_**. Det er vigtigt at forstå arbejdsområderne, før vi går videre til de fire overordnede elementer, så lad os starte der.
 
 ## <a name="workspaces"></a>Arbejdsområder
 Arbejdsområder er objektbeholdere til dashboards, rapporter, projektmapper og datasæt i Power BI. Der er to typer arbejdsområder: *Mit arbejdsområde* og *apparbejdsområder*. Hvad er en *app*? En *app* i Power BI er en samling dashboards og rapporter, der er bygget til at levere vigtige metrikker til organisationen. Apps er interaktive, men kan ikke redigeres.
@@ -56,7 +56,7 @@ Arbejdsområder er objektbeholdere til dashboards, rapporter, projektmapper og d
 Du kan få mere at vide i afsnittet **Del dit arbejde** i indholdsfortegnelsen, som starter med [Hvordan skal jeg samarbejde og dele dashboards og rapporter](service-how-to-collaborate-distribute-dashboards-reports.md)
 
 
-Lad os gå videre med Power BI-elementerne. Du kan ikke have dashboards og rapporter uden data (det vil sige, du kan have tomme dashboards og tomme rapporter, men de er ikke til meget nytte, før de har data), så lad os starte med **datasæt**.
+Lad os gå videre med Power BI-elementerne. Du kan ikke have dashboards og rapporter uden data (det vil sige, du kan have tomme dashboards og tomme rapporter, men de er ikke nyttige, før de indeholder data), så lad os starte med **datasæt**.
 
 ## <a name="datasets"></a>Datasæt
 Et *datasæt* er en samling af data, som du *importerer* eller *opretter forbindelse* til. Med Power BI kan du oprette forbindelse til og importere alle mulige forskellige datasæt og samle dem alle sammen på ét sted.  
@@ -65,7 +65,7 @@ Datasæt er knyttet til *arbejdsområder*, og et enkelt datasæt kan være en de
 
 I eksemplet nedenfor har jeg valgt apparbejdsområdet "Salg og marketing" og klikket på fanen for **datasæt**.
 
-![](media/service-basic-concepts/power-bi-datasets.png)
+![Datasæt er valgt](media/service-basic-concepts/power-bi-datasets.png)
 
 **ÉT** datasæt...
 
@@ -73,7 +73,7 @@ I eksemplet nedenfor har jeg valgt apparbejdsområdet "Salg og marketing" og kli
 * kan bruges i mange forskellige rapporter.
 * Visualiseringer fra dette ene datasæt kan vises på mange forskellige dashboards.
 
-  ![](media/service-basic-concepts/drawing2.png)
+  ![Diagram over datasæt](media/service-basic-concepts/drawing2.png)
 
 Hvis du vil [oprette forbindelse til eller importere et datasæt](service-get-data.md), skal du vælge **Hent Data** (nederst på venstre navigationslinje) eller vælge plusikonet **+ Opret > Datasæt** (i øverste højre hjørne). Følg vejledningen for at oprette forbindelse til eller importere den specifikke kilde og føje datasættet til det aktive arbejdsområde. Nye datasæt markeres med en gul stjerne. Det arbejde, du udfører i Power Bi, ændrer ikke det underliggende datasæt.
 
@@ -89,25 +89,25 @@ Datasæt kan opdateres, omdøbes, udforskes og fjernes. Brug et datasæt til at 
 ## <a name="reports"></a>Rapporter
 En Power BI-rapport er en eller flere sider med visualiseringer (diagrammer og grafer, f.eks. kurvediagrammer, cirkeldiagrammer, træstrukturdiagrammer og mange, mange flere). Visualiseringer kaldes også **_visualiseringer_**. Alle visualiseringerne i en rapport stammer fra et enkelt datasæt. Rapporter kan oprettes fra bunden i Power BI, kan importeres med dashboards, som kolleger deler med dig, eller kan oprettes, når du opretter forbindelse til datasæt fra Excel, Power BI Desktop, databaser, SaaS-programmer og [apps](service-get-data.md).  Når du f.eks. opretter forbindelse til en Excel-projektmappe, der indeholder Power View-ark, opretter Power BI en rapport, der er baseret på de ark. Og når du opretter forbindelse til et SaaS-program, importerer Power BI en færdigbygget rapport.
 
-Der er to forskellige tilstande, som du kan se og interagere med rapporter i: [Læsevisning og Redigeringsvisning](service-reading-view-and-editing-view.md).  Kun forfatteren af rapporten, medejerne og dem, der har tilladelse, har adgang til alle den udforskning, udformning, oprettelse og delingsfunktionen i **_Redigeringsvisning_** for denne rapport. Og de personer, de deler rapporten med, kan udforske og interagere med rapport ved hjælp af **_Læsevisning_**.   
+Der er to forskellige tilstande, hvor du kan få vist og interagere med rapporter: [Læsevisning og Redigeringsvisning](service-reading-view-and-editing-view.md).  Det er kun rapportopretteren, medejerne og dem, som har tilladelse, der har adgang til alle udforsknings-, udformnings-, oprettelses- og delingsfunktioner i **_Redigeringsvisning_** for den pågældende rapport. Og de personer, de deler rapporten med, kan udforske og interagere med rapport ved hjælp af **_Læsevisning_**.   
 
-Når du åbner et arbejdsområde, vises de tilknyttede rapporter under fanen **Rapporter**. Hver rapport på listen repræsenterer én eller flere siders visualiseringer, der er baseret på et af de underliggende datasæt. Hvis du vil åbne en rapport, skal du blot markere den.
+Når du åbner et arbejdsområde, vises de tilknyttede rapporter under fanen **Rapporter**. Hver rapport på listen repræsenterer én eller flere siders visualiseringer, der er baseret på et af de underliggende datasæt. Du skal markere en rapport for at åbne den.
 
-Når du åbner en app, vises et dashboard.  Du kan få adgang til en underliggende rapport ved at vælge et dashboardfelt (mere om disse senere), der er fastgjort fra en rapport. Vær opmærksom på, at ikke alle felter er fastgjort fra rapporter, så du skal muligvis klikke på nogle felter for at finde en rapport.
+Når du åbner en app, vises et dashboard.  Du kan få adgang til en underliggende rapport ved at vælge et dashboardfelt (mere om felter senere), der er fastgjort fra en rapport. Vær opmærksom på, at ikke alle felter er fastgjort fra rapporter, så du skal muligvis klikke på nogle felter for at finde en rapport.
 
 Rapporten åbnes som standard i Læsevisning.  Du skal blot vælge **Rediger rapport** for at åbne den i Redigeringsvisning (hvis du har de nødvendige tilladelser).
 
 I eksemplet nedenfor har jeg valgt apparbejdsområdet "Salg og marketing" og klikket på fanen for **rapporter**.
 
-![](media/service-basic-concepts/power-bi-reports.png)
+![Valgte rapporter](media/service-basic-concepts/power-bi-reports.png)
 
 **ÉN** rapport...
 
 * er inkluderet i et enkelt arbejdsområde.
 * kan være knyttet til flere dashboards i det pågældende arbejdsområde (felter, der er fastgjort fra den ene rapport, kan blive vist på flere dashboards).
-* kan oprettes ved brug af data fra et datasæt. (en lille undtagelse til dette er, at Power BI Desktop kan kombinere mere end et datasæt til en enkelt rapport, og at rapporten kan importeres til Power BI)
+* kan oprettes ved brug af data fra et datasæt. (en lille undtagelse til dette er, at Power BI Desktop kan kombinere mere end ét datasæt til en enkelt rapport, og at rapporten kan importeres i Power BI)
 
-  ![](media/service-basic-concepts/drawing3new.png)
+  ![Diagram over rapporter](media/service-basic-concepts/drawing3new.png)
 
 ### <a name="dig-deeper"></a>Grav dybere
 * [Rapporter i Power BI-tjenesten og Power BI Desktop](service-reports.md)
@@ -124,7 +124,7 @@ Hvorfor opretter personer dashboards?  Her er blot nogle af årsagerne:
 * for at overvåge tilstanden for et produkt eller en virksomhed, en afdeling eller marketingkampagne osv.
 * for at oprette en tilpasset visning af et større dashboard – alle de målepunkter, der betyder noget for dig
 
-Når du åbner et arbejdsområde, vises de tilknyttede dashboards under fanen **Dashboards**. Hvis du vil åbne et dashboard, skal du blot vælge det. Når du åbner en app, vises et dashboard.  Hvert enkelt dashboard repræsenterer en brugerdefineret visning af nogle undersæt af de underliggende datasæt.  Hvis du ejer dashboardet, har du også redigeringsadgang til den/de underliggende datasæt og rapporter.  Hvis dashboardet er delt med dig, kan du interagere med dashboardet og de underliggende rapporter, men kan ikke gemme ændringer.
+Når du åbner et arbejdsområde, vises de tilknyttede dashboards under fanen **Dashboards**. Du skal vælge et dashboard for at åbne det. Når du åbner en app, vises et dashboard.  Hvert enkelt dashboard repræsenterer en brugerdefineret visning af nogle undersæt af de underliggende datasæt.  Hvis du ejer dashboardet, har du også redigeringsadgang til den/de underliggende datasæt og rapporter.  Hvis dashboardet er delt med dig, kan du interagere med dashboardet og de underliggende rapporter, men kan ikke gemme ændringer.
 
 Der er mange forskellige måder, som du eller en kollega kan [dele et dashboard](service-share-dashboards.md) på. Power BI Pro er påkrævet for at dele et dashboard og muligvis også for at få vist et delt dashboard.
 
@@ -140,7 +140,7 @@ Der er mange forskellige måder, som du eller en kollega kan [dele et dashboard]
 * kan vise visualiseringer fra mange forskellige rapporter
 * kan vise visualiseringer, der er fastgjort fra andre funktioner (f.eks. Excel)
 
-  ![](media/service-basic-concepts/drawing1.png)
+  ![Valgt dashboard](media/service-basic-concepts/drawing1.png)
 
 ### <a name="dig-deeper"></a>Grav dybere
 * [Opret et nyt tomt dashboard, og hent derefter nogle data](service-dashboard-create.md)
@@ -163,15 +163,15 @@ Du kan ikke redigere din projektmappe i Power BI. Men hvis du har brug at foreta
 ## <a name="my-workspace"></a>Mit arbejdsområde
 Vi har nu været omkring arbejdsområder og komponenter. Lad os se nærmere på Power BI-grænsefladen og gennemse de dele, der udgør landingssiden til Power BI-tjenesten.
 
-![](media/service-basic-concepts/completenewest.png)
+![Power BI-tjenesten i en browser](media/service-basic-concepts/completenewest.png)
 
 ### <a name="1-navigation-pane-left-navpane"></a>1. **Navigationsrude** (venstre nav.)
 Brug navigationsruden til at finde og flytte mellem dine arbejdsområder og Power BI-komponenterne: dashboards, rapporter, projektmapper og datasæt.  
 
-  ![](media/service-basic-concepts/power-bi-navigation.png)
+  ![Navigationsrude](media/service-basic-concepts/power-bi-navigation.png)
 
 * Vælg **Hent Data** for at [føje datasæt, rapporter og dashboards til Power BI](service-get-data.md).
-* Udvid og skjul navigationslinjen med dette ikon ![](media/service-basic-concepts/expand-icon.png).
+* Udvid og skjul navigationslinjen med dette ikon ![Ikon for navigationsrude](media/service-basic-concepts/expand-icon.png).
 * Åbn eller administrer dit foretrukne indhold ved at vælge **Favoritter**.
 * Få vist og åbn det indhold, du senest har besøgt, ved at vælge **Seneste**.
 * Få vist, åbn eller slet en app ved at vælge **Apps**.
@@ -181,12 +181,12 @@ Brug navigationsruden til at finde og flytte mellem dine arbejdsområder og Powe
 Klik én gang
 
 * på et ikon eller overskriften for at åbne i indholdsvisning
-* på en højre-pil (>) for at åbne en pop op-menu med favoritter, seneste og arbejdsområder
+* på en højrepil (>) for at åbne en pop op-menu med favoritter, seneste og arbejdsområder.
 * på en dobbeltvinkel for at få vist rullelisten **Mit arbejdsområde** med dashboards, rapporter, projektmapper og datasæt
 * på et datasæt for at udforske det
 
 ### <a name="2-canvas"></a>2. **Canvas**
-Da vi har åbnet et dashboard, vises visualiseringsfelter på canvasområdet. Hvis vi f.eks. havde åbnet rapporteditoren, ville en rapportside været blevet vist på canvasområdet.
+Da vi har åbnet et dashboard, vises visualiseringsfelter på canvasområdet. Hvis vi f.eks. havde åbnet rapporteditoren, ville en rapportside blive vist i canvasområdet.
 
 Dashboards består af [felter](service-dashboard-tiles.md).  Felter oprettes i rapportens Redigeringsvisning, Spørgsmål og svar og andre dashboards og kan fastgøres fra Excel, SSRS og meget mere. En særlig type felt kaldet en [widget](service-dashboard-add-widget.md) føjes direkte til dashboardet. De felter, der vises på et dashboard, blev specifikt sat der af en rapportforfatter/-ejer.  Dét at føje et felt til et dashboard kaldes *fastgørelse*.
 
@@ -209,26 +209,26 @@ Ikonerne øverst til højre er dine ressourcer til indstillinger, beskeder, down
 ![ikonknapper](media/service-basic-concepts/power-bi-icons.png)
 
 ### <a name="5-dashboard-title-navigation-path-aka-breadcrumbs"></a>5. **Dashboardtitel** (navigationssti, dvs. brødkrummer)
-Det er ikke altid nemt at finde ud af, hvilket arbejdsområde og dashboard der er aktivt, og Power BI opretter derfor en navigationssti for dig.  I dette eksempel vises arbejdsområdet (Mit arbejdsområde) og dashboardoverskriften (Retail Analysis Sample – Eksempel på detailhandelsanalyse).  Hvis vi har åbnet en rapport, føjes navnet på rapporten til slutningen af navigationsstien.  Hver del i stien er et aktivt hyperlink.  
+Det er ikke altid nemt at finde ud af, hvilket arbejdsområde og dashboard der er aktivt, og Power BI opretter derfor en navigationssti for dig.  I dette eksempel vises arbejdsområdet (Mit arbejdsområde) og dashboardoverskriften (Eksempel på detailhandelsanalyse).  Hvis vi har åbnet en rapport, føjes navnet på rapporten til slutningen af navigationsstien.  Hver del i stien er et aktivt hyperlink.  
 
-Bemærk ikonet "C" efter dashboardtitlen. Dette dashboard er markeret med [dataklassifikationsmærket](service-data-classification.md) "fortrolig". Mærket angiver dataenes fortroligheds- og sikkerhedsniveau. Hvis din administrator har aktiveret dataklassificering, har hvert dashboard et standardmærkesæt. Dashboardejere skal ændre mærket, så det stemmer overens med deres dashboards korrekte sikkerhedsniveau.
+Bemærk ikonet "C" efter dashboardtitlen. Dette dashboard er markeret med [dataklassifikationsmærket](service-data-classification.md) "fortrolig". Mærket angiver dataenes fortroligheds- og sikkerhedsniveau. Hvis din administrator har slået dataklassificering til, har hvert enkelt dashboard et standardtagsæt. Dashboardejere skal ændre tagget, så det stemmer overens med deres dashboards korrekte sikkerhedsniveau.
 
-![](media/service-basic-concepts/power-bi-title.png)
+![Ikon for dataklassificering](media/service-basic-concepts/power-bi-title.png)
 
 ### <a name="6-office-365-app-launcher"></a>6. **Office 365-appstarter**
-Appstarteren giver nem adgang til alle dine Office 365-apps med et enkelt klik. Her kan du hurtigt starte din mail, dokumenter, kalender med mere.
+Appstarteren giver nem adgang til alle dine Office 365-apps med et enkelt klik. Her kan du hurtigt starte din mail, dine dokumenter, din kalender med mere.
 
 ![Office-appstarter](media/service-basic-concepts/power-bi-waffle.png)
 
 ### <a name="7-power-bi-home"></a>7. **Power BI-startside**
-Hvis du vælger dette, åbnes dit [udvalgte dashboard](service-dashboard-featured.md) (hvis du har angivet et), i modsat fald åbnes det dashboard, som du sidst har fået vist.
+Hvis du vælger **Power BI**, vender du tilbage til din Power BI-startside.
 
-   ![](media/service-basic-concepts/version-new.png)
+   !["Power BI" i tjenesten](media/service-basic-concepts/version-new.png)
 
 ### <a name="8-labeled-icon-buttons"></a>8. **Navngivne ikonknapper**
 Dette område på skærmen indeholder flere indstillinger til at interagere med indholdet (i dette tilfælde dashboardet).  Ud over de navngivne ikoner, som du kan se, vises der også indstillinger til at kopiere, udskrive og opdatere dashboardet og meget mere, når du vælger ellipsen.
 
-   ![](media/service-basic-concepts/power-bi-labeled-icons.png)
+   ![Navngivne ikonknapper](media/service-basic-concepts/power-bi-labeled-icons.png)
 
 ## <a name="next-steps"></a>Næste trin
 [Hvad er Power BI?](power-bi-overview.md)  

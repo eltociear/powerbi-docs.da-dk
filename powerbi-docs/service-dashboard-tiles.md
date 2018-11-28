@@ -1,31 +1,31 @@
 ---
-title: Dashboardfelter i Power BI-tjeneste
-description: Alt om dashboardfelter i Power BI. Det omfatter felter, der er oprettet fra SQL Server Reporting Services (SSRS).
+title: Introduktion til dashboardfelter for Power BI-designere
+description: Alt om dashboardfelter i Power BI. Det omfatter felter, der er oprettet på baggrund af SSRS-rapporter (SQL Server Reporting Services).
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/3/2018
+ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 76b8eaff949ee56d57511eabea913363e6cdc3f6
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: de99c04077a58f1c0c060561674fefa9041fa144
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717395"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331959"
 ---
-# <a name="dashboard-tiles-in-power-bi"></a>Dashboardfelter i Power BI
-Dashboards og dashboardfelter er en funktion i Power BI-tjenesten ikke Power BI Desktop. Selvom dashboardfelter ikke kan oprettes eller fastgøres i Power BI - Mobil, [kan de vises og deles](mobile-tiles-in-the-mobile-apps.md). Og i Power BI - Mobil kan du [føje billeder til dashboardet med iPhone-appen](mobile-iphone-app-get-started.md).
+# <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introduktion til dashboardfelter for Power BI-designere
 
-## <a name="dashboard-tiles"></a>Dashboardfelter
+Et felt er et snapshot af dine data, der er fastgjort til dashboardet. Et felt kan oprettes ud fra en rapport, et datasæt, et dashboard, feltet Spørgsmål og svar, Excel og SSRS-rapporter (SQL Server Reporting Services) med flere.  Dette skærmbillede viser mange forskellige felter, der er fastgjort til et dashboard.
+
 ![Power BI-dashboard](media/service-dashboard-tiles/power-bi-dashboard.png)
 
-Et felt er et snapshot af dine data, der er fastgjort til dashboardet. Et felt kan oprettes fra en rapport, et datasæt, et dashboard, fra feltet Spørgsmål og svar, Excel og fra SQL Server Reporting Services (SSRS) og mere.  Dette skærmbillede viser mange forskellige felter, der er fastgjort til et dashboard.
+Dashboards og dashboardfelter er en funktion i Power BI-tjenesten ikke Power BI Desktop. Du kan ikke oprette dashboards på mobilenheder, men du kan [få vist og dele](mobile-apps-view-dashboard.md) dem der.
 
-Ud over fastgørelse kan der oprettes separate felter direkte på dashboardet ved hjælp af [Tilføj felt](service-dashboard-add-widget.md). Separate felter omfatter: tekstfelter, billeder, videoer, streamingdata og webindhold.
+Ud over fastgørelse kan du oprette separate felter direkte på dashboardet ved hjælp af [Tilføj felt](service-dashboard-add-widget.md). Separate felter omfatter: tekstfelter, billeder, videoer, streamingdata og webindhold.
 
 Har du brug for hjælp til at forstå de komponenter, der udgør Power BI?  Se [Power BI – Grundlæggende begreber](service-basic-concepts.md).
 
@@ -42,8 +42,8 @@ Der er mange forskellige måder at føje (fastgøre) et felt til et dashboard p�
 * [et andet dashboard](service-pin-tile-to-another-dashboard.md)
 * [Excel-projektmappe på OneDrive for Business](service-dashboard-pin-tile-from-excel.md)
 * [Power BI Publisher til Excel](publisher-for-excel.md)
-* [Quick Insights](service-insights.md)
-* [SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
+* [Hurtig indsigt](service-insights.md)
+* [Reporting Services](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards)
 
 Og separate felter til billeder, tekstfelter, videoer, streamingdata og webindhold kan oprettes direkte på dashboardet ved hjælp af [Tilføj felt](service-dashboard-add-widget.md).
 
@@ -78,7 +78,7 @@ Tag et felt, og [flyt det rundt på dashboardet](service-dashboard-edit-tile.md)
 3. Vælg et tomt område på canvasset for at lukke handlingsmenuen.
 
 ### <a name="select-click-a-tile"></a>Vælg (klik på) et felt
-Når du vælger et felt, afhænger næste handling af, hvordan feltet blev oprettet, og om det har et [brugerdefineret link](service-dashboard-edit-tile.md). Hvis det har et brugerdefineret link, føres du til linket ved at vælge feltet. Ellers føres du til rapporten, Excel Online-projektmappen, SSRS-rapporten, der er i det lokale miljø, eller spørgsmål i Spørgsmål og svar, der blev brugt til at oprette feltet.
+Når du vælger et felt, afhænger næste handling af, hvordan du oprettede feltet. Hvis det har et [brugerdefineret link](service-dashboard-edit-tile.md), føres du til linket ved at vælge feltet. Ellers vil valget af feltet føre dig til rapporten, Excel Online-projektmappen, Reporting Services-rapporten i det lokale miljø eller spørgsmålet i Spørgsmål og svar.
 
 > [!NOTE]
 > Undtagelsen til dette er videofelter, der er oprettet direkte på dashboardet ved hjælp af **Tilføj felt**. Hvis du vælger et videofelt (der blev oprettet på denne måde), afspilles videoen direkte på dashboardet.   
@@ -86,12 +86,13 @@ Når du vælger et felt, afhænger næste handling af, hvordan feltet blev opret
 > 
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
+
 * Hvis den rapport, der blev brugt til at oprette visualiseringen, ikke blev gemt, sker der ikke noget, når feltet vælges.
-* Hvis feltet blev oprettet fra en projektmappe i Excel Online, og du ikke som minimum har læserettigheder til denne projektmappe, åbnes projektmappen ikke i Excel Online, når du vælger feltet.
-* For felter, der er oprettet direkte på dashboardet ved hjælp af **Tilføj felt**, og hvis et brugerdefineret hyperlink er angivet, åbnes denne URL-adresse, når titlen, undertitlen eller feltet vælges.  Ellers medfører det som standard ingen handling at vælge et af disse felter oprettet direkte på dashboardet for et billede, en webkode eller et tekstfelt.
-* Hvis du ikke har tilladelse til rapporten i SSRS, vil valget af et felt oprettet ud fra SSRS producere en side, der angiver, at du ikke har adgang (rsAccessDenied).
-* Hvis du ikke har adgang til netværket, hvor SSRS-serveren er placeret, vil valget af et felt oprettet ud fra SSRS producere en side, der angiver, at serveren ikke blev fundet (HTTP 404). Enheden skal have netværksadgang til rapportserveren for at få vist rapporten.
-* Hvis den oprindelige visualisering, der blev brugt til at oprette feltet, ændres, er det ikke tilfældet med feltet.  Hvis du f.eks. har fastgjort et kurvediagram fra en rapport, og du derefter ændrer kurvediagrammet til et søjlediagram, fortsætter dashboardfeltet med at vise et kurvediagram. Dataene opdateres, men visualiseringstypen bliver ikke.
+* Hvis feltet blev oprettet vha. en projektmappe i Excel Online, skal du som minimum have læserettigheder til den pågældende projektmappe. Ellers åbnes projektmappen ikke i Excel Online, hvis du vælger feltet.
+* Lad os sige, at du opretter et felt direkte på dashboardet ved hjælp af **Tilføj felt** og angiver et brugerdefineret hyperlink for det. Derefter åbnes den pågældende URL-adresse, hvis du vælger titlen, undertitlen eller feltet. Ellers sker der som standard ingenting, når du vælger et felt, der er oprettet direkte på dashboardet for et billede, en webkode eller et tekstfelt.
+* Hvis du ikke har tilladelse til rapporten i Reporting Services, vil valget af et felt, der er oprettet på baggrund af en Reporting Services-rapport, føre dig til en side, hvor det angives, at du ikke har adgang (rsAccessDenied).
+* Hvis du ikke har adgang til netværket, hvor Reporting Services-serveren er placeret, vil valget af et felt, der er oprettet på baggrund af Reporting Services, føre dig til en side, hvor det angives, at serveren ikke blev fundet (HTTP 404). Enheden skal have netværksadgang til rapportserveren, for at du kan få vist rapporten.
+* Hvis den oprindelige visualisering, der blev brugt til at oprette feltet, ændres, er det ikke tilfældet med feltet.  Hvis du f.eks. fastgør et kurvediagram fra en rapport og derefter ændrer kurvediagrammet til et søjlediagram, fortsætter dashboardfeltet med at vise et kurvediagram. Dataene opdateres, men visualiseringstypen bliver ikke.
 
 ## <a name="next-steps"></a>Næste trin
 [Opret et kort (felt med stort tal) til dit dashboard](power-bi-visualization-card.md)

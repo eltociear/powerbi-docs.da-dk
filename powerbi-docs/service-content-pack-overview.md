@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/20/2018
+ms.date: 11/20/2018
 ms.author: maggies
-ms.openlocfilehash: 4a5d124ffd213c54d628ff15e32ece18e56913eb
-ms.sourcegitcommit: 3a287ae4ab16d1e76caed651bd8ae1a1738831cd
+ms.openlocfilehash: f97393a8a7fe8dc9c413a0cb0cda8be0e965da5b
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39157347"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289191"
 ---
 # <a name="overview-of-the-power-bi-service-content-pack-program"></a>Oversigt over indholdspakkeprogrammet for Power BI-tjenesten
 En indholdspakke er out-of-box-indhold, der gør det muligt for brugerne øjeblikkeligt at få indsigt i data fra en kilde. En indholdspakke fokuserer sædvanligvis på et bestemt forretningsscenario og giver indsigt i data for en rolle, et domæne eller en arbejdsproces.
@@ -24,7 +24,7 @@ ISV'er kan udvikle skabelonindholdspakker, som gør det muligt for kunderne at o
 Disse ISV-byggede skabelonindholdspakker kan sendes til Power BI-teamet, så de bliver tilgængelige for alle i galleriet med Power BI-indholdspakker (app.powerbi.com/getdata/services) og på Microsoft AppSource (appsource.microsoft.com). Du kan finde et eksempel på en indholdspakke [her](template-content-pack-experience.md).
 
 ## <a name="overview"></a>Oversigt
-Der er mange trin i den generelle proces for at udvikle og indsende en skabelonindholdspakke.
+Der er mange trin i den generelle proces for udvikling og indsendelse af en skabelonindholdspakke.
 
  ![Proces](media/service-content-pack-overview/developer-content-pack-overview.png)
 
@@ -41,7 +41,7 @@ Hvis du vil oprette og indsende en indholdspakke, der skal publiceres i Power BI
 
 * Du skal have et SaaS-program, der bruges af erhvervsbrugere.
 * Dit SaaS-program skal indeholde brugerdata, der kan visualiseres i Power BI.
-* Dit SaaS-program skal have en API, der er tilgængelig via offentligt internet. API'en skal helst være en REST baseret på et API- eller OData-feed. Power BI-indholdspakker understøtter flere godkendelsestyper som Basisgodkendelse, OAuth 2.0 og API-nøgle. 
+* Dit SaaS-program skal have en API, der er tilgængelig via offentligt internet. API'en skal helst være et REST-baseret API eller et OData-feed. Power BI-indholdspakker understøtter flere godkendelsestyper som Basisgodkendelse, OAuth 2.0 og API-nøgle. 
 * Dit SaaS-program er godkendt til udgivelse af en indholdspakke. Send din anmodning til pbiservicesapps@microsoft.com. Vi vil vurdere hver indsendelse ud fra relevans og forventet brug. 
 * Signeret partneraftale. Det gør du på [indsendelsestrinnet](template-content-pack-testing.md#submission).
 
@@ -78,7 +78,7 @@ Publicerede indholdspakker kan opdateres én gang om måneden. Opdateringsanmodn
 Du kan sende dine spørgsmål via mail til [pbiservicesapps@microsoft.com](mailto:pbiservicesapps@microsoft.com)
 
 ## <a name="support"></a>Support
-Hvis du vil have support under udvikling, skal du bruge [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Dette websted overvåges og administreres. Kundehændelser finder hurtigt vej til det relevante team.
+Hvis du vil have support under udvikling, skal du bruge [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Kundehændelser finder hurtigt vej til det relevante team.
 
 ## <a name="next-step"></a>Næste trin
 [Oprettelse](template-content-pack-authoring.md)

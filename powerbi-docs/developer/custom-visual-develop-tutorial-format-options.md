@@ -1,6 +1,6 @@
 ---
 title: Føj formateringsindstillinger til en brugerdefineret visual i Power BI
-description: Et selvstudium i, hvordan du udvikler formateringsindstillinger for en brugerdefineret visual i Power BI
+description: Et selvstudium i, hvordan du udvikler formateringsindstillinger for en brugerdefineret visualisering i Power BI
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -8,31 +8,31 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
-ms.date: 11/06/2018
-ms.openlocfilehash: a3d36f988847df283576dae6cfe5870b707c6f98
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.date: 11/21/2018
+ms.openlocfilehash: 56de3745d59e4a26dffbb988e9543c294de261e3
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223254"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289168"
 ---
-# <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Selvstudium: Føj formateringsindstillinger til en brugerdefineret visual i Power BI
+# <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Selvstudium: Føj formateringsindstillinger til en brugerdefineret visualisering i Power BI
 
-I dette selvstudium gennemgås, hvordan du føjer almindelige egenskaber til din visual.
+I dette selvstudium gennemgås, hvordan du føjer almindelige egenskaber til din visualisering.
 
 I dette selvstudium lærer du, hvordan du kan:
 > [!div class="checklist"]
-> * Tilføj egenskaber for visual.
-> * Pak visualen.
-> * Importér den brugerdefinerede visual til en rapport i Power BI Desktop.
+> * Tilføj egenskaber for visualisering.
+> * Pak visualiseringen.
+> * Importér den brugerdefinerede visualisering til en rapport i Power BI Desktop.
 
 ## <a name="adding-formatting-options"></a>Tilføjelse af formateringsindstillinger
 
 1. I **Power BI** skal du vælge **siden Formatér**.
 
-    Du får vist en meddelelse med teksten – *Formateringsindstillinger er ikke tilgængelige for denne visual.*
+    Du får vist en meddelelse med teksten – *Formateringsindstillinger er ikke tilgængelige for denne visualisering.*
 
-    ![Formatering af malerullen](media/custom-visual-develop-tutorial/format-paintbrush.png)
+    ![Formatering af malerullen](media/custom-visual-develop-tutorial-format-options/format-paintbrush.png)
 
 2. I **Visual Studio Code** skal du åbne filen *capabilities.json*.
 
@@ -41,30 +41,30 @@ I dette selvstudium lærer du, hvordan du kan:
     ```json
     "objects": {},
     ```
-    ![Tilføj objekter](media/custom-visual-develop-tutorial/add-objects.png)
+    ![Tilføj objekter](media/custom-visual-develop-tutorial-format-options/add-objects.png)
 
 4. Gem filen **capabilities.json**.
 
 5. I **Power BI** skal du gennemse formateringsindstillingerne igen.
 
     > [!Note]
-    > Hvis du ikke kan se ændringerne af formateringsindstillingerne, skal du vælge **Genindlæs brugerdefineret visual**.
+    > Hvis du ikke kan se ændringerne af formateringsindstillingerne, skal du vælge **Genindlæs brugerdefineret visualisering**.
 
-    ![Se formateringsindstillinger](media/custom-visual-develop-tutorial/view-formatting-options.png)
+    ![Se formateringsindstillinger](media/custom-visual-develop-tutorial-format-options/view-formatting-options.png)
 
-6. Angiv indstillingen **Titel** til *Fra*. Bemærk, at visualen ikke længere viser navnet på målingen i øverste venstre hjørne.
+6. Angiv indstillingen **Titel** til *Fra*. Bemærk, at visualiseringen ikke længere viser navnet på målingen i øverste venstre hjørne.
 
-    ![Indstillingen Felt er slået fra](media/custom-visual-develop-tutorial/tile-option-off.png)
+    ![Indstillingen Felt er slået fra](media/custom-visual-develop-tutorial-format-options/tile-option-off.png)
 
-    ![Feltet Intet navn](media/custom-visual-develop-tutorial/no-name-tile.png)
+    ![Feltet Intet navn](media/custom-visual-develop-tutorial-format-options/no-name-tile.png)
 
 ### <a name="adding-custom-formatting-options"></a>Tilføjelse af brugerdefinerede formateringsindstillinger
 
 Du kan tilføje brugerdefinerede egenskaber for at gøre det muligt at konfigurere farven på cirklen og rammens bredde.
 
-1. I PowerShell skal du standse den brugerdefinerede visual.
+1. I PowerShell skal du standse den brugerdefinerede visualisering.
 
-2. I Visual Studio Code skal du i filen **capabilities.json** indsætte følgende JSON-fragment i objektet **objects**.
+2. I Visual Studio Code skal du i filen **capabilities.json** indsætte følgende JSON-fragment i objektet kaldet **objects**.
 
     ```json
     "circle": {
@@ -89,16 +89,16 @@ Du kan tilføje brugerdefinerede egenskaber for at gøre det muligt at konfigure
                  }
              }
          }
-     }
+     },
     ```
 
     JSON-fragmentet beskriver en cirkel med et gruppenavn, der består af to indstillinger med navnet circleColor og circleThickness.
 
-   ![Kode for cirklens tykkelse](media/custom-visual-develop-tutorial/circle-thickness-code.png)
+   ![Kode for cirklens tykkelse](media/custom-visual-develop-tutorial-format-options/circle-thickness-code.png)
 
 3. Gem filen **capabilities.json**.
 
-4. I **ruden Stifinder** skal du gå til mappen **src** og derefter vælge **settings.ts**. *Denne fil repræsenterer indstillingerne for startvisualen*.
+4. I **ruden Stifinder** skal du gå til mappen **src** og derefter vælge **settings.ts**. *Denne fil repræsenterer indstillingerne for startvisualiseringen*.
 
 5. I filen **settings.ts** skal du erstatte de to klasser med følgende kode.
 
@@ -112,7 +112,7 @@ Du kan tilføje brugerdefinerede egenskaber for at gøre det muligt at konfigure
     }
     ```
 
-    ![Modulklasser](media/custom-visual-develop-tutorial/module-classes.png)
+    ![Modulklasser](media/custom-visual-develop-tutorial-format-options/module-classes.png)
 
     Dette modul definerer de to klasser. Klassen **CircleSettings** definerer to egenskaber med navne, der svarer til de objekter, som er defineret i filen **capabilities.json** (**circleColor** og  **circleThickness**), og angiver også standardværdier. Klassen **VisualSettings** arver klassen **DataViewObjectParser** og tilføjer en **cirkel** med et egenskabsnavn, der svarer til det objekt, som er defineret i filen  *capabilities.json*, og returnerer en instans af **CircleSettings**.
 
@@ -125,9 +125,9 @@ Du kan tilføje brugerdefinerede egenskaber for at gøre det muligt at konfigure
     ```typescript
     private visualSettings: VisualSettings;
     ```
-    Denne egenskab gemmer en reference til objektet **VisualSettings**, der beskriver indstillingerne for visualen.
+    Denne egenskab gemmer en reference til objektet **VisualSettings**, der beskriver indstillingerne for visualiseringen.
 
-    ![Tilføj klasse med visuals](media/custom-visual-develop-tutorial/visual-class-add-on.png)
+    ![Tilføj klasse med visualiseringer](media/custom-visual-develop-tutorial-format-options/visual-class-add-on.png)
 
 9. I klassen **Visual** skal du tilføje følgende metode før **opdaterings**metoden. Denne metode bruges til at udfylde formateringsindstillingerne.
 
@@ -140,7 +140,7 @@ Du kan tilføje brugerdefinerede egenskaber for at gøre det muligt at konfigure
     ```
     Denne metode bruges til at udfylde formateringsindstillingerne.
 
-    ![Objekt for visualindstillinger](media/custom-visual-develop-tutorial/visual-settings-object.png)
+    ![Objekt for visualindstillinger](media/custom-visual-develop-tutorial-format-options/visual-settings-object.png)
 
 10. I **opdaterings**metoden skal du tilføje følgende kode efter angivelsen af variablen **radius**.
 
@@ -150,7 +150,7 @@ Du kan tilføje brugerdefinerede egenskaber for at gøre det muligt at konfigure
     ```
     Denne kode henter formateringsindstillingerne. Den justerer alle værdier, der er overført til egenskaben **circleThickness**, og konverterer dem til 0, hvis de er negative, eller 10, hvis de har en værdi, der er større end 10.
 
-    ![Variablen Radius](media/custom-visual-develop-tutorial/radius.png)
+    ![Variablen Radius](media/custom-visual-develop-tutorial-format-options/radius.png)
 
 11. I forbindelse med **cirkelelementet** skal du ændre den værdi, der overføres til **fyldtypografien**, til følgende udtryk.
 
@@ -158,7 +158,7 @@ Du kan tilføje brugerdefinerede egenskaber for at gøre det muligt at konfigure
     this.visualSettings.circle.circleColor
     ```
 
-    ![Udfylder cirkelelementet](media/custom-visual-develop-tutorial/circle-element-fill.png)
+    ![Udfylder cirkelelementet](media/custom-visual-develop-tutorial-format-options/circle-element-fill.png)
 
 12. I forbindelse med **cirkelelementet** skal du ændre den værdi, der overføres til **typografien for penselstrøgsbredde**, til følgende udtryk.
 
@@ -166,7 +166,7 @@ Du kan tilføje brugerdefinerede egenskaber for at gøre det muligt at konfigure
     this.visualSettings.circle.circleThickness
     ```
 
-    ![Penselstrøgsbredde for cirkel](media/custom-visual-develop-tutorial/circle-stroke-width.png)
+    ![Penselstrøgsbredde for cirkel](media/custom-visual-develop-tutorial-format-options/circle-stroke-width.png)
 
 13. Gem filen visual.ts.
 
@@ -180,7 +180,7 @@ Du kan tilføje brugerdefinerede egenskaber for at gøre det muligt at konfigure
 
 16. I indstillingerne for **formatering af visual** skal du udvide **Cirkel**.
 
-    ![Cirkelformat](media/custom-visual-develop-tutorial/circle-format.png)
+    ![Cirkelformat](media/custom-visual-develop-tutorial-format-options/circle-format.png)
 
     Rediger indstillingen for **farve** og **tykkelse**.
 
@@ -198,7 +198,7 @@ Angiv egenskabsværdier for projektet med det brugerdefinerede visual, opdater i
 
     I ruden **Visualiseringer** kan du se det viste navn, når du peger på ikonet.
 
-    ![Visualen Vist navn](media/custom-visual-develop-tutorial/display-name-viz.png)
+    ![Visualen Vist navn](media/custom-visual-develop-tutorial-format-options/display-name-viz.png)
 
 4. I forbindelse med egenskaben **description** skal du angive følgende tekst.
 
@@ -216,7 +216,7 @@ Angiv egenskabsværdier for projektet med det brugerdefinerede visual, opdater i
 
 10. Gennemse ikonet.
 
-    ![Billede af ruden Visualiseringer](media/custom-visual-develop-tutorial/viz-pane-image.png)
+    ![Billede af ruden Visualiseringer](media/custom-visual-develop-tutorial-format-options/viz-pane-image.png)
 
 11. I Visual Studio Code skal du sikre, at alle filer er gemt.
 
@@ -226,7 +226,7 @@ Angiv egenskabsværdier for projektet med det brugerdefinerede visual, opdater i
     pbiviz package
     ```
 
-    ![Mappen Dist](media/custom-visual-develop-tutorial/dist-folder.png)
+    ![Mappen Dist](media/custom-visual-develop-tutorial-format-options/dist-folder.png)
 
 Nu er pakken sendt til mappen **dist** i projektet. Pakken indeholder alt det, der kræves for at importere den brugerdefinerede visual til enten Power BI-tjenesten eller en rapport i Power BI Desktop. Du har nu pakket den brugerdefinerede visual, og den er klar til brug.
 
@@ -238,7 +238,7 @@ Du kan nu åbne rapporten i Power BI Desktop og importere den brugerdefinerede v
 
 2. I ruden **_Visualiseringer_** skal du vælge **ellipsen** og derefter vælge **Importér** fra fil.
 
-    ![Tilføj brugerdefineret visual på skrivebord](media/custom-visual-develop-tutorial/add-custom-viz-to-desktop.png)
+    ![Tilføj brugerdefineret visual på skrivebord](media/custom-visual-develop-tutorial-format-options/add-custom-viz-to-desktop.png)
 
 3. I **importvinduet** skal du vælge **Importér**.
 
@@ -250,7 +250,7 @@ Du kan nu åbne rapporten i Power BI Desktop og importere den brugerdefinerede v
 
 7. Kontrollér, at visualen er tilføjet i ruden **_Visualiseringer_**.
 
-    ![Få vist i PBI Desktop-visualiseringsruden](media/custom-visual-develop-tutorial/view-in-desktop-viz-pane.png)
+    ![Få vist i PBI Desktop-visualiseringsruden](media/custom-visual-develop-tutorial-format-options/view-in-desktop-viz-pane.png)
 
 8. Peg på ikonet **Circle Card**, og læg mærke til det værktøjstip, der vises.
 

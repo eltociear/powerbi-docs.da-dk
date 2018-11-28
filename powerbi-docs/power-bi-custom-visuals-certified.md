@@ -1,56 +1,73 @@
 ---
 title: Certificerede brugerdefinerede Power BI-visualiseringer
 description: Krav og proces til afsendelse af en brugerdefineret visualisering til certificering. Og en liste over allerede certificerede brugerdefinerede visualiseringer.
-author: mihart
-ms.author: mihart
+author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 10/30/2018
-ms.openlocfilehash: 72b09083c50a88e2d22e9aa22f54ff014dafa998
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.date: 11/21/2018
+ms.openlocfilehash: fd352cd78225e647acf53c2af899e4d2fc662376
+ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223438"
+ms.lasthandoff: 11/22/2018
+ms.locfileid: "52289260"
 ---
-# <a name="getting-a-custom-visual-certified"></a>Sådan får du en brugerdefineret visualisering *certificeret*
+# <a name="certified-custom-visuals"></a>Certificerede brugerdefinerede visualiseringer
 
-## <a name="what-is-meant-by-certified"></a>Hvad menes der med *certificeret*?
+## <a name="what-are-certified-custom-visuals"></a>Hvad er **_certificerede_** brugerdefinerede visualiseringer?
 
-En *certificeret visualisering* er en visualisering, der opfylder et sæt af kodekrav, og som har bestået strenge sikkerhedstests.  Når en brugerdefineret visualisering er blevet certificeret, kan den [eksporteres til PowerPoint](consumer/end-user-powerpoint.md) og vises i modtagne mails, når en bruger [abonnerer på rapportsider](consumer/end-user-subscribe.md). Den kan selvfølgelig også bruges som [brugerdefinerede visuelle standardelementer](power-bi-custom-visuals.md), føjes til Power BI-tjenesten og Power BI Desktop-rapporter og vises i Power BI-mobil og integreret.
+Certificerede brugerdefinerede visualiseringer er visualiseringer **Marketplace**, der opfylder visse **angivne kodekrav**, som **Microsoft Power BI-teamet** har testet og godkendt. Når en brugerdefineret visualisering er certificeret, indeholder den flere funktioner. Det kan f.eks. være, at du kan [eksportere til PowerPoint](consumer/end-user-powerpoint.md), og du kan få vist visualiseringen i modtagne mails, når en bruger [abonnerer på rapportsider](consumer/end-user-subscribe.md).
 
-Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til [Microsoft AppSource](https://appsource.microsoft.com)? Du kan se under [Udvikling af en brugerdefineret visualisering i Power BI](developer/custom-visual-develop-tutorial.md) for at lære, hvordan du gør.
+**Certificerede brugerdefinerede visualiseringer** bruges som [brugerdefinerede standardvisualiseringer](power-bi-custom-visuals.md). Certificerede brugerdefinerede visualiseringer kan føjes til **Power BI-tjenesten**, en **Power BI Desktop-rapport** og blive vist vha. **Power BI – Mobil** og **Power BI Embedded**.
 
-## <a name="certification-requirements"></a>Certificeringskrav
+De udførte tests er udviklet for at kontrollere, at visualiseringen ikke har adgang til eksterne tjenester eller ressourcer. **Microsoft** er *ikke* forfatter af brugerdefinerede visualiseringer fra tredjepart, og vi råder kunderne til at kontakte forfatteren direkte for at kontrollere funktionaliteten af sådanne visualiseringer.
 
-* Godkendt af Microsoft AppSource
-* Den brugerdefinerede visualisering er skrevet med Versioned API 1.2 eller nyere
-* Der er et kodelager tilgængeligt til gennemsyn (f.eks. Visual code, der er tilgængeligt for os via GitHub)
-* Anvender kun OSS-komponenter, der kan gennemses offentligt
-* Har ikke adgang til eksterne tjenester eller ressourcer
+Certificeringsprocessen er en valgfri proces, og det er op til udviklerne at beslutte, om de ønsker, at deres visualiseringer på Marketplace skal certificeres.  
 
-> **TIP**! Det anbefales, at du bruger EsLint med det sikkerhedsregelsæt, der anvendes som standard, til at forudvalidere koden før indsendelse.
+**Ikke-certificerede brugerdefinerede visualiseringer** er ikke nødvendigvis ensbetydende med usikre visualiseringer. Nogle visualiseringer er ikke certificeret, fordi de ikke er i overensstemmelse med et eller flere af [certificeringskravene](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Det kan f.eks. være i forbindelse med oprettelse af forbindelse til en ekstern tjeneste, som f.eks. kortvisualiseringer eller visualiseringer, der anvender kommercielle biblioteker.
 
-## <a name="process-for-submitting-a-custom-visual-for-certification"></a>Processen for indsendelse af en brugerdefineret visualisering til certificering
-
-Sådan indsender du en brugerdefineret visualisering til certificering:
-
-1. Send en mail til Support for brugerdefinerede Power BI-visualiseringer (pbicvsupport@microsoft.com). Du skal inkludere følgende oplysninger i mailen:    
-
-   * Titel: Anmodning om certificering af visualisering
-   * Link til GitHub-lageret, der hoster visualiseringens kildekode
-   * Overhold kravene (se ovenfor)
-   * Bestå gennemgangen af koden og sikkerheden
-
-2. Microsofts team for brugerdefinerede visualiseringer giver dig besked, når din brugerdefinerede visualisering er certificeret og føjet til listen over certificerede visualiseringer (nedenfor) eller afvises med en rapport over de problemer, der skal løses. Det er udviklerens ansvar at vedligeholde en åben kommunikationslinje med Microsoft og opdatere deres godkendte visualiseringer efter behov.
+Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til  **[Microsoft AppSource](https://appsource.microsoft.com)**? Du kan se under  **[Udvikling af en brugerdefineret Power BI-visualisering for at få mere at vide](developer/custom-visual-develop-tutorial.md)**.
 
 ## <a name="removal-of-power-bi-certified-custom-visuals"></a>Fjernelse af certificerede brugerdefinerede Power BI-visualiseringer
 
-Microsoft kan, efter eget skøn, fjerne en visualisering fra listen over godkendte visualiseringer.  
+Microsoft kan, efter eget skøn, fjerne en visualisering fra [listen over certificerede visualiseringer](#list-of-custom-visuals-that-have-been-certified).
+
+## <a name="getting-a-custom-visualcertified"></a>Hentning af en certificeret brugerdefineret visualisering
+
+### <a name="certification-requirements"></a>Certificeringskrav
+
+Hvis du vil have din brugerdefinerede visualisering [certificeret](#certified-custom-visuals), skal du sørge for, at den er i overensstemmelse med følgende:  
+
+* Godkendt af Microsoft AppSource. Din brugerdefinerede visualisering skal findes på vores [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
+* Den brugerdefinerede visualisering er skrevet vha. API version 1.2 eller nyere.
+* Et kodelager, der er tilgængeligt til gennemsyn af Power BI-teamet (f.eks. kildekoden (JavaScript eller TypeScript) i formater, der kan læses af mennesker, og som er tilgængeligt for os via GitHub).
+
+    >[!Note]
+    > Du behøver ikke at dele din kode offentligt i GitHub.
+
+* Anvender kun OSS-komponenter, der kan gennemses offentligt (Offentlige JS-biblioteker eller TypeScript. Kildekoden er tilgængelig til gennemsyn og har ikke kendte sikkerhedsrisici). Vi kan ikke bekræfte en brugerdefineret visualisering ved hjælp af en kommerciel komponent.
+
+* Har ikke adgang til eksterne tjenester eller ressourcer, herunder men ikke begrænset til, ingen HTTP/S- eller WebSocket-anmodninger fra Power BI til andre tjenester. 
+
+> [!TIP]
+> Vi anbefaler, at du bruger EsLint med det sikkerhedsregelsæt, der anvendes som standard, til at validere koden på forhånd inden indsendelse.
+
+## <a name="process-for-submitting-a-custom-visual-for-certification"></a>Proces for indsendelse af en brugerdefineret visualisering til certificering
+
+Sådan indsender du en brugerdefineret visualisering til certificering:
+
+1. Send en mail til supportteamet for brugerdefinerede Power BI-visualiseringer (pbicvsupport@microsoft.com). Du skal inkludere følgende oplysninger i mailen:
+    * Titel: Anmodning om certificering af visualisering
+    * Link til GitHub-lageret, der hoster kildekoden, som kan læse af mennesker
+    * [Overhold kravene](#certification-requirements)
+    * Bestå kodegennemgangen
+
+2. Microsofts team for brugerdefinerede visualiseringer giver dig besked, når din brugerdefinerede visualisering er certificeret og føjet til [listen over certificerede visualiseringer](#list-of-custom-visuals-that-have-been-certified) eller afvises med en rapport over de problemer, der skal løses. Det er udviklerens ansvar at have en åben kommunikation med Microsoft og opdatere deres certificerede visualiseringer efter behov.
 
 ## <a name="list-of-custom-visuals-that-have-been-certified"></a>Liste over brugerdefinerede visualiseringer, der er blevet certificeret
 

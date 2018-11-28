@@ -10,20 +10,20 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 09ce2e2db94116d70824b276b9b67b9dbe163d11
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: 861b9c411b3088b6c16b7ad601f374bd771b13ed
+ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679311"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52331982"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI-licenser i din organisation
 
 I Power BI-tjenesten har brugerne definerede funktioner, der er baseret på to typer licenser:
 
-* Gratis licenser **pr. bruger** -  *samt Power BI Pro-licenser*. En gratis licens giver adgang til nogle af funktionerne i Power BI-tjenesten. En Pro-licens giver adgang til alt indhold og alle funktioner i Power BI-tjenesten, herunder muligheden for at dele indhold og samarbejde med andre Pro-brugere. Det er kun Pro-brugere, der kan udgive og forbruge indhold fra apparbejdsområder, dele dashboards og abonnere på dashboards og rapporter. Se [Funktioner i Power BI-tjenesten efter licenstype](service-features-license-type.md) for at få flere oplysninger.
+* Power BI Pro-licenser **Pr. bruger** -  *og gratis licenser*. En Power BI Pro-licens giver adgang til alt indhold og alle funktioner i Power BI-tjenesten, herunder muligheden for at dele indhold og samarbejde med andre Pro-brugere. Det er kun Pro-brugere, der kan udgive og forbruge indhold fra apparbejdsområder, dele dashboards og abonnere på dashboards og rapporter. En gratis licens giver adgang til nogle af funktionerne i Power BI-tjenesten. Se [Funktioner i Power BI-tjenesten efter licenstype](service-features-license-type.md) for at få flere oplysninger.
 
-* **Kapacitetsbaserede** - *Power BI Premium-licenser*. Premium indeholder dedikeret kapacitet til at levere en mere ensartet ydeevne og understøtter større datamængder i Power BI. For individuelle brugere muliggør Premium også omfattende distribution af indhold for Pro-brugere uden at kræve Pro-licenser i forbindelse med visning af indholdet. Du kan finde flere oplysninger i [Hvad er Power BI Premium?](service-premium.md).
+* **Kapacitetsbaserede** - *Power BI Premium-licenser*. Premium indeholder dedikeret kapacitet til at levere en mere ensartet ydeevne og understøtter større datamængder i Power BI. For individuelle brugere muliggør Premium også omfattende distribution af indhold for Pro-brugere uden at kræve Pro-licenser af modtagere, der får vist indholdet. Du kan finde flere oplysninger i [Hvad er Power BI Premium?](service-premium.md).
 
 I denne artikel fokuseres der på licenser pr. bruger fra et administratorperspektiv.
 
@@ -73,17 +73,11 @@ Nu kan du [tildele licenser i Office 365](https://support.office.com/article/ass
 
 ## <a name="manage-power-bi-free-licenses"></a>Administrer Power BI (gratis)-licenser
 
-Brugerne i organisationen kan få adgang til Power BI (gratis)-licenser på to forskellige måder. De kan selv tilmelde sig Power BI, eller du kan tildele dem en Power BI-licens på Office 365-administrationsportalen.
+Brugerne i organisationen kan få adgang til Power BI (gratis)-licenser på to forskellige måder:
 
-Det betyder mindre arbejde for organisationens administratorer, hvis de brugere, der er interesseret i Power BI, selv tilmelder sig.
+* Du kan tildele dem en licens til Power BI på Office 365-administrationsportalen.
 
-Deaktivering af individuel brugertilmelding giver dig imidlertid mere kontrol, og det er en god mulighed, hvis du vil overvåge brug af tjenesten.
-
-### <a name="power-bi-free-for-individuals"></a>Power BI (gratis) til enkeltpersoner
-
-Enkeltpersoner i din organisation kan som standard tilmelde sig en Power BI (gratis)-licens. Du kan flere oplysninger i [Tilmelding til Power BI som enkeltperson](service-self-service-signup-for-power-bi.md).
-
-Hvis du vil blokere individuel tilmelding, skal du se [Aktivér eller deaktiver individuel brugertilmelding i Azure Active Directory](service-admin-licensing-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory) senere i denne artikel.
+* Hvis en bruger [tilmelder sig en Power BI Pro-prøveversion](service-self-service-signup-for-power-bi.md), og prøveversionen udløber, tildeles vedkommende en gratis licens.
 
 ### <a name="requesting-and-assigning-free-licenses"></a>Anmodning om og tildeling af gratis licenser
 
