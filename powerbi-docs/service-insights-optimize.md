@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2017
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 33d8911ee819bbc1ac37976f077edabee368f5aa
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: 1f60c24a244b05aca93b312921b943e261d4d266
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850562"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452677"
 ---
 # <a name="optimize-your-data-for-power-bi-quick-insights"></a>Optimer dine data til Power BI Quick Insights
 Vil du forbedre Quick Insights-resultater?  Hvis du er ejer af datasæt, skal du prøve følgende:
@@ -23,7 +23,7 @@ Vil du forbedre Quick Insights-resultater?  Hvis du er ejer af datasæt, skal du
 * Skjul eller vis kolonner i dit datasæt. Power BI Quick Insights søger ikke i skjulte kolonner.  Derfor skal du skjule duplikerede eller unødvendige kolonner og vise interessante kolonner.
 * Brug en blanding af datatyper som f.eks. navne, klokkeslæt, datoer og tal.
 * Undgå (eller skjul) kolonner med duplikerede oplysninger.  Dette tager værdifuld tid fra søgning efter mønstre, der giver mere mening.  Eksempelvis en kolonne med delstatsnavne skrevet ud og en anden kolonne med forkortede delstatsnavne.
-* Modtager du en fejlmeddelelse, der angiver, at dine data ikke er statistisk signifikante?  Dette kan ske med modeller, der er meget simple, eller som ikke indeholder mange data, eller som ikke har dato- eller numeriske kolonner. Hvis du vil generere indsigter, skal dit datasæt have mindst én dimension og én måling.
+* Modtager du en fejlmeddelelse, der angiver, at dine data ikke er statistisk signifikante?  Dette kan ske med modeller, der er meget simple, eller som ikke indeholder mange data, eller som ikke har dato- eller numeriske kolonner.
 
 ### <a name="next-steps"></a>Næste trin
 [Power BI Quick Insights](consumer/end-user-insights.md)

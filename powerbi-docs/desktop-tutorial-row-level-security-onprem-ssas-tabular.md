@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 10/21/2017
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c49750ef51c1b8bacc36946d2d5c75a08abb36d7
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: c2d4dc5d8c11db035cc2470c0c44d64a6b78cd1a
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101571"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452746"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel
 I dette selvstudium vises de trin, der er nødvendige for at implementere **sikkerhed på rækkeniveau** i din **Analysis Services-tabelmodel**, og det vises, hvordan du bruger det i en Power BI-rapport. Trinnene i dette selvstudium er designet for at give dig mulighed for at følge med i og lære at udføre de nødvendige trin ved at gennemføre et eksempel på et datasæt.
@@ -50,7 +50,7 @@ Der er udgivet mange artikler, som beskriver, hvordan du definerer dynamisk sikk
    Vi vender tilbage til disse brugere i senere opgaver.
 4. Derefter opretter vi en *indre joinforbindelse* til tabellen **DimSalesTerritory**, der viser de områdeoplysninger, der er knyttet til brugeren. I følgende kode udføres den *indre joinforbindelse*, og på næste billede kan du se, hvordan tabellen ser ud, når den *indre joinforbindelse* er oprettet.
    
-       select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeID, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryKey] = b.[SalesTerritoryID]
+       select b.SalesTerritoryCountry, b.SalesTerritoryRegion, a.EmployeeID, a.FirstName, a.LastName, a.UserName from [dbo].[DimUserSecurity] as a join  [dbo].[DimSalesTerritory] as b on a.[SalesTerritoryID] = b.[SalesTerritoryKey]
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/createusersecuritytable_join_users.png)
 5. Bemærk, at billedet ovenfor viser oplysninger om, hvilken bruger der er ansvarlig for hvilket salgsområde. Dataene vises på grund af den relation, vi oprettede i **trin 2**. Bemærk også, at brugeren **Jon Doe er en del af det australske salgsområde**. Vi vender tilbage til John Doe i senere trin og opgaver.

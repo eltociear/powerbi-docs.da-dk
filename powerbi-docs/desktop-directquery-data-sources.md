@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 97d9fc6bf7a27b9d681d10ae20ab0780622e5ee8
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 098447f4d0c0b1dc9534c91e84827c4cefb8850c
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223392"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452539"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Understøttede datakilder i forbindelse med DirectQuery i Power BI
 **Power BI Desktop** og **Power BI-tjenesten** indeholder mange datakilder, som du kan oprette forbindelse til, og som kan give dig adgang til data. I denne artikel beskrives, hvilke datakilder til Power BI der understøtter forbindelsesmetoden, der er kendt som **DirectQuery**. Du kan finde flere oplysninger om DirectQuery under [**DirectQuery i Power BI**](desktop-directquery-about.md).
@@ -62,11 +62,11 @@ I følgende tabel kan du se, om der kræves en **datagateway i det lokale miljø
 | Amazon Redshift |Nej |
 | Impala (version 2.x) |Ja |
 | Snowflake |Ja |
-| Spark (beta), version 0.9 og nyere |Understøttes endnu ikke i **Power BI-tjenesten** |
+| Spark (beta), version 0.9 og nyere |Ja |
 | Azure HDInsight Spark (beta) |Nej |
 | IBM Netezza |Ja |
 | SAP Business Warehouse-programserver |Ja |
-| SAP Business Warehouse-beskedserver |Understøttes endnu ikke i **Power BI-tjenesten** |
+| SAP Business Warehouse-meddelelsesserver |Understøttes endnu ikke i **Power BI-tjenesten** |
 | Google BigQuery |Nej |
 
 
