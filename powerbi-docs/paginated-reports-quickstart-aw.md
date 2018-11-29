@@ -9,12 +9,12 @@ ms.component: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
 ms.author: maggies
-ms.openlocfilehash: 91cf4e2115b2eaae3178b2fb25e487e0501e3a6d
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: b057fd14083cdabff96d9821d1399da07b93556b
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267296"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452818"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Selvstudium: Opret en sideinddelt rapport, og upload den i Power BI-tjenesten
 
@@ -137,7 +137,7 @@ Her er forudsætningerne for at overføre din sideinddelte rapport til Power BI-
 
     - OrderQty
     - UnitPrice
-    - LineTotal
+    - Linjesum
 
     Report Builder oprettede automatisk summerne af felterne **Værdier**.
 
@@ -165,7 +165,7 @@ Lad os kigge på resultaterne af guiden et øjeblik.
 
 5. I ruden Gruppering kan du se de tre rækkegrupper, du oprettede i guiden: 
 
-    - CompanyName
+    - Firmanavn
     - Salgsordre
     - Produktnavn
 
@@ -329,5 +329,5 @@ Nu, hvor du har oprettet denne sideinddelte rapport, er det tid til at uploade d
 
 ## <a name="next-steps"></a>Næste trin
 
-[Hvad er sideinddelte rapporter i Power BI Premium? (Prøveversion)](paginated-reports-report-builder-power-bi.md)
+[Hvad er sideinddelte rapporter i Power BI Premium? (prøveversion)](paginated-reports-report-builder-power-bi.md)
 

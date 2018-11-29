@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9a22889da87af91f3b5ea996961ec9e9538fe31b
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: f12974d4e53217fc6c29ad172153ec9c51ecc44e
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48909101"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452631"
 ---
 # <a name="create-workspaces-with-your-colleagues-in-power-bi"></a>Opret arbejdsområder med dine kollegaer i Power BI
 
@@ -23,7 +23,7 @@ I Power BI kan du oprette *arbejdsområder*, hvor du kan samarbejde med kollegae
 
 ![Power BI-apps](media/service-create-workspaces/power-bi-apps-left-nav.png)
 
-Når du opretter et arbejdsområde, opretter du en underliggende tilknyttet Office 365-gruppe. Al administration af arbejdsområder sker i Office 365. Du kan føje kollegaer til disse arbejdsområder som medlemmer eller administratorer. I arbejdsområdet kan alle samarbejde i dashboards, rapporter og andre artikler, som du vil publicere til en større målgruppe. Alle de brugere, du føjer til et apparbejdsområde, skal have en Power BI Pro-licens. 
+Når du opretter et arbejdsområde, opretter du en underliggende tilknyttet Office 365-gruppe. Al administration af arbejdsområder foregår i Office 365. Du kan føje kollegaer til disse arbejdsområder som medlemmer eller administratorer. I arbejdsområdet kan alle samarbejde i dashboards, rapporter og andre artikler, som du vil publicere til en større målgruppe. Alle de brugere, du føjer til et apparbejdsområde, skal have en Power BI Pro-licens. 
 
 **Vidste du det?** Power BI udgiver en ny prøveversion af arbejdsområdeoplevelsen. Læs [Opret nye arbejdsområder (prøveversion)](service-create-the-new-workspaces.md) for at se, hvordan arbejdsområder ændres i fremtiden. 
 

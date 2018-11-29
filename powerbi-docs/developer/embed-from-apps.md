@@ -3,18 +3,18 @@ title: Integrer rapporter eller dashboards fra apps
 description: Lær, hvordan du integrerer en rapport eller et dashboard fra en Power BI-app og ikke et apparbejdsområde.
 author: markingmyname
 ms.author: maghan
-ms.date: 07/13/2018
 ms.topic: how-to
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 manager: kfile
-ms.openlocfilehash: 53803c77dec8eb35c10db7f19a82f58144f88414
-ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
+ms.date: 11/27/2018
+ms.openlocfilehash: 8073696907ceff67664a0802a2b7775eea693e37
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47237979"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452516"
 ---
 # <a name="embed-reports-or-dashboards-from-apps"></a>Integrer rapporter eller dashboards fra apps
 
@@ -26,11 +26,11 @@ I Power BI kan du oprette apps for at samle relaterede dashboards og rapporter p
 
 2. Åbn den ønskede rapport i Power BI-tjenesten.
 
-3. Gå til **Filer** > **Integrer i SharePoint Online**, og hent rapportens embedURL herfra. Det er vist i det følgende snapshot. Eller du kan kalde GetReports/GetReport REST-API'en og udtrække det tilsvarende felt for rapportens embedURL fra svaret. REST-kaldet må ikke indeholde et arbejdsområde-id som en del af URL-adressen, da appen blev oprettet i brugerens arbejdsområde.
-
-4. Brug den embedURL, der er hentet i trin 3 med JavaScript SDK.
+3. Gå til **Filer** > **Integrer i SharePoint Online**, og hent rapportens embedURL. På øjebliksbilledet herunder kan du se et eksempel på en embedURL. Du kan også kalde REST-API'en for GetReports/GetReport og udtrække det tilsvarende felt for rapportens embedURL fra svaret. REST-kaldet må ikke indeholde et arbejdsområde-id som en del af URL-adressen, da appen blev oprettet i brugerens arbejdsområde.
 
     ![Integrer fra apps](media/embed-from-apps/embed-from-app.png)
+
+4. Brug den embedURL, der er hentet i trin 3 med JavaScript SDK.
 
 ## <a name="grab-a-dashboard-embedurl-for-embedding"></a>Hent et dashboards embedURL for at integrere det
 

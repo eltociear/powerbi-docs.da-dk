@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/05/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c16fe65d766c6a1c18d809a68b3b0f6af8047db0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 4c9a8144ba9b8f465f4e607be60d075ea6ccb5fa
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34813336"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452792"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Opret forbindelse til SSAS flerdimensionelle modeller i Power BI Desktop
 Med Power BI Desktop har du adgang til **SSAS flerdimensionelle modeller**, der ofte refereres til som **SSAS MD**.
@@ -81,6 +81,7 @@ Der er visse begrænsninger for brug af **SSAS MD**:
 * Serverne skal køre SQL Server 2012 SP1 CU4 eller nyere versioner af Analysis Services, for at Power BI Desktop SSAS MD-forbindelsen fungerer korrekt
 * *Handlinger* og *navngivne sæt* er ikke synlige for Power BI, men du kan stadig oprette forbindelse til kuber, der også indeholder *handlinger* eller *navngivne sæt*, og oprette visuelle elementer og rapporter.
 * Der kan opstå et problem, hvor Power BI viser metadata for en SSAS-model, men du kan ikke hente data fra modellen. Det kan ske, hvis du har installeret 32-bit-versionen af MSOLAP-provideren på dit system, og du ikke har 64-bit-versionen. Problemet kan muligvis løses ved at installere 64-bit-versionen.
+* Du kan ikke oprette målinger på "rapportniveau", når du opretter en rapport, som er direkte forbundet til en flerdimensionel SSAS-model. De eneste målinger, der er tilgængelige, er dem, der er defineret i MD-modellen.
 
 ## <a name="supported-features-of-ssas-md-in-power-bi-desktop"></a>Understøttede funktioner i SSAS MD i Power BI Desktop
 Følgende SSAS MD-funktioner understøttes i Power BI Desktop:

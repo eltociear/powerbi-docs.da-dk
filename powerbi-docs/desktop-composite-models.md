@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/12/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: b7a8323557f769fa2a05d504de2540bc505e7a54
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: ffb82303584249641454c81f61e399d2b1d4f574
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619695"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452769"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Brug af sammensatte modeller i Power BI Desktop
 
@@ -68,7 +68,7 @@ Hvis du vil se et eksempel på en *sammensat model*, kan du overveje at bruge en
 
 På dette tidspunkt kan du oprette simple visuals ved hjælp af felter fra denne kilde. Følgende billede viser f.eks. det samlede salgsbeløb efter *ProductName* for et valgt kvartal. 
 
-![Visualisering baseret på data](media/desktop-composite-models/composite-models_05.png)
+![Visual baseret på data](media/desktop-composite-models/composite-models_05.png)
 
 Men hvad nu hvis du har data i et Office Excel-regneark om den produktchef, der er tildelt til de enkelte produkter, sammen med marketingprioriteten? Hvis du vil have vist *salgsbeløb* efter *produktchef*, er det måske ikke muligt at føje disse lokale data til virksomhedens data warehouse. Eller det kan i bedste fald tage flere måneder. 
 
@@ -146,7 +146,7 @@ Oplysninger, der er lagret i regnearket, inkluderes derfor nu i en forespørgsel
 
 * Krypteringsindstillingerne for de enkelte kilder skal overvejes. Du vil helst undgå at hente oplysninger fra én kilde via en krypteret forbindelse og derefter ved en fejl inkludere dem i en forespørgsel, der sendes til en anden kilde via en ukrypteret forbindelse. 
 
-Power BI Desktop viser en advarsel, når du opretter en sammensat model, for at det kan bekræftes, at du har taget alle sikkerhedsmæssige konsekvenser i betragtning.  
+Der vises en advarsel i Power BI Desktop, når du opretter en sammensat model, for at det kan bekræftes, at du har taget alle sikkerhedsmæssige konsekvenser i betragtning.  
 
 Af samme årsager skal du være forsigtig, når du åbner en Power BI Desktop-fil, der er sendt fra en kilde, der ikke er tillid til. Hvis filen indeholder sammensatte modeller, sendes der oplysninger, som en person henter fra én kilde ved hjælp af legitimationsoplysningerne for den bruger, der åbner filen, til en anden datakilde som en del af forespørgslen. Oplysningerne kan ses af den ondsindede forfatter af Power BI Desktop-filen. Når du første gang åbner en Power BI Desktop-fil, der indeholder flere kilder, viser Power BI Desktop en advarsel. Advarslen svarer til den, der vises, når du åbner en fil, der indeholder oprindelige SQL-forespørgsler.  
 
@@ -154,9 +154,9 @@ Af samme årsager skal du være forsigtig, når du åbner en Power BI Desktop-fi
 
 Når du bruger DirectQuery, skal du altid være opmærksom på ydeevnen primært for at sikre, at backend-kilden har tilstrækkelige ressourcer til at give brugerne en god oplevelse. En god oplevelse betyder, at visuals opdateres efter fem sekunder eller mindre. Du skal også følge de råd om ydeevne, der er nævnt i artiklen [Brug DirectQuery i Power BI](desktop-directquery-about.md). 
 
-Når du bruger sammensatte modeller, skal du have yderligere overvejelser. En enkelt visualisering kan resultere i, at der sendes forespørgsler til flere datakilder, som ofte overfører resultaterne fra én forespørgsel til en anden kilde. Denne situation kan føre til følgende scenarier:
+Når du bruger sammensatte modeller, skal du have yderligere overvejelser. Et enkelt visual kan resultere i, at der sendes forespørgsler til flere datakilder, som ofte overfører resultaterne fra én forespørgsel til en anden kilde. Denne situation kan føre til følgende scenarier:
 
-* **En SQL-forespørgsel, der indeholder et stort antal konstantværdier**: Et visual, der anmoder om det samlede *salgsbeløb* for nogle valgte *produktchefer*, skal først finde ud af, hvilke *produkter* der er administreret af disse produktchefer. Denne sekvens skal finde sted, før den pågældende visualisering sender en SQL-forespørgsel, der inkluderer alle produkt-id'erne i en *WHERE*-delsætning.
+* **En SQL-forespørgsel, der indeholder et stort antal konstantværdier**: Et visual, der anmoder om det samlede *salgsbeløb* for nogle valgte *produktchefer*, skal først finde ud af, hvilke *produkter* der er administreret af disse produktchefer. Denne sekvens skal finde sted, før det pågældende visual sender en SQL-forespørgsel, der inkluderer alle produkt-id'erne i en *WHERE*-delsætning.
 
 * **En SQL-forespørgsel, der forespørger på et lavere granularitetsniveau, og dataene derefter aggregeres lokalt**: Da antallet af *produkter*, der opfylder filterkriterierne i *Product Manager*, bliver større og større, kan det blive ineffektivt eller umuligt at medtage alle produkter i en *WHERE*-delsætning. Du kan i stedet forespørge relationskilden på det lavere niveau for *produkt* og derefter aggregere resultaterne lokalt. Hvis kardinaliteten for *produkter* overskrider en grænse på 1 mio., mislykkes forespørgslen.
 
@@ -166,7 +166,7 @@ Når du bruger sammensatte modeller, skal du have yderligere overvejelser. En en
 
 Hver af disse scenarier har konsekvenser for ydeevnen, og de præcise detaljer varierer for hver datakilde. Selvom kardinaliteten for de kolonner, der bruges i den relation, der forbinder de to kilder, forbliver lav (nogle få tusind), påvirkes ydeevnen ikke. Efterhånden som denne kardinalitet stiger, skal du være mere opmærksomhed på effekten af ydeevnen. Brug denne retningslinje som tommelfingerregel. 
 
-Desuden betyder brugen af *mange-til-mange*-relationer, at særskilte forespørgsler skal sendes til den underliggende kilde for hvert totale eller subtotale niveau fremfor at aggregere de detaljerede værdier lokalt. En enkel tabelvisualisering med totaler sender to SQL-forespørgsler fremfor ét. 
+Desuden betyder brugen af *mange-til-mange*-relationer, at særskilte forespørgsler skal sendes til den underliggende kilde for hvert totale eller subtotale niveau fremfor at aggregere de detaljerede værdier lokalt. Et simpelt visual i en tabel med totaler sender to SQL-forespørgsler fremfor ét. 
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 

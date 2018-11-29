@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/23/2018
+ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: d656a27717d22d13884bcbfa69fab4ba2babaf12
-ms.sourcegitcommit: 17d68172c73e9a9ff7966ddcedc3f8450584cdec
+ms.openlocfilehash: c3ef18bf05c6a979e9fd0440b271afd5d8545a54
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49952228"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452654"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
@@ -22,23 +22,13 @@ Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når
 
 ## <a name="upcoming-webinars"></a>Kommende webinarer
 
-**Power BI: Udfør analyse korrekt**
-<br>af Gohul Shanmugalingam
-<br>*Den 8. november 2018 – kl. 13:00-14:00 EST*
+**Dokumenterede sundhedsmæssige løsninger for at forbedre både resultaterne for patienterne og rentabiliteten**
+<br>ved Stephen Cracknell og Stuart Macanliss fra US Medical IT
+<br>*Den 28. november 2018, kl. 11:00-12:00 PST*
 
-Hør efter alle analyse- og Excel-visionære: Få mere at vide om, hvordan du laver flotte rapporter, som folk gerne vil bruge, deler interessant indsigt, der er let at forstå, og nedbryder siloer med komplekse data på en sikker måde, så de bliver tilgængelige.
+Sundhedsorganisationer står over for udfordringen med at konvertere enorme mængder data til patientindsigt og konvertere disse indsigter til handling. Tilmeld dig dette webinar for at få mere at vide om, hvordan du designer meningsfulde sundhedsrapporter, der kan hjælpe din organisation med at konvertere data til nyttig patientindsigt. Få ekspertstrategier og -råd fra Stephen Cracknell, grundlægger af US Medical IT og CEO, Stuart Macanliss, Director of Healthcare IT, og reumatologen Dr. John P. Lavery, der har bases i Texas.
 
-Vi deler nye produktinnovationer og vores vision om moderne virksomheds-BI og selvbetjenings-BI, hvilket gør det muligt for din organisation at skabe en datadreven kultur.
-
-[Tilmeld dig, og se med den 8. november](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
-
-**Styrk dine færdigheder inden for datamodellering med Power BI**
-<br>ved Kasper de Jonge
-<br>*Den 20. november 2018 – kl. 11:00-12:00 PST*
-
-Tilmeld dig dette webinar for at blive endnu dygtigere til modellering med Power BI. Få mere at vide om analyse i hukommelsen, strategier for at oprette og administrere datarelationer i Power BI, og hvordan du bruger DAX-filtre (Data Analysis Expressions). Se, hvordan du overvinden enhver modelleringsudfordring med Power BI eller Azure Analysis Services.
-
-[Tilmeld dig, og se med den 20. november](https://info.microsoft.com/Strengthen-Your-Data-Modeling-Skills-with-PowerBI-Registration.html?Is=Website)
+[Tilmeld dig, og se med den 28. november](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
 >[Kommende webinarer fra Power BI-community'et](https://powerbi.microsoft.com/en-us/blog/tag/community-webinars/?Is=Website)
 
@@ -54,9 +44,17 @@ Kom i gang med disse populære webinarer, når det passer dig
 <br>ved Miguel Martinez
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/powerbi-dashboard-in-20-min.html?Is=Website)
 
+**Styrk dine færdigheder inden for datamodellering med Power BI**
+<br>ved Kasper de Jonge
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Strengthen-Your-Data-Modeling-Skills-with-PowerBI-Registration.html?Is=Website)
+
 **Microsoft kører på Power BI – finansiel planlægning og analyse på den nemme måde**
 <br>ved Cory Hrncirik og Miguel Martinez
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
+
+**Power BI: Udfør analyse korrekt**
+<br>af Gohul Shanmugalingam
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
 
 **Gør dine data i Power BI visuelle: Grundlæggende diagramtyper, og hvordan du bruger dem**
 <br>ved Miranda Li
@@ -70,9 +68,9 @@ Kom i gang med disse populære webinarer, når det passer dig
 <br>ved Miranda Li
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
-**Tip, tricks og værktøjer fra ejerne af PowerBI.** (webinaret er på engelsk)
-<br>ved Mike Carlo og Seth Bauer
-<br>[Se nu](https://www.youtube.com/watch?v=fnj1_e3HXow)
+**Den samlede økonomiske indvirkning af Microsoft Flow og PowerApps**
+<br>ved Jonathan Lipsitz og Enrique Plaza Garcia
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 
 >[Gennemse biblioteket med on-demand-webinarer om Power BI fra vores communityeksperter](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
@@ -112,10 +110,6 @@ Se optagne sessioner når som helst
 <br>af Scott Ball fra Esri og Enrique Plaza fra Microsoft
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
 
-**Forbedring af rentabiliteten inden for sundhedssektoren**
-<br>ved Stephen Cracknell og Stuart Macanliss fra US Medical IT
-<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/improving-profitability-in-healthcare.html?Is=Website)
-
 **Anvendte efterretninger til salg og tjenester** (webinaret er på engelsk)
 <br>ved Ed Bobrin fra Avanade
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
@@ -129,6 +123,10 @@ Se optagne sessioner når som helst
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
 
 ### <a name="community"></a>Community ###
+
+**Tip, tricks og værktøjer fra ejerne af PowerBI.** (webinaret er på engelsk)
+<br>ved Mike Carlo og Seth Bauer
+<br>[Se nu](https://www.youtube.com/watch?v=fnj1_e3HXow)
 
 **Fortæl en historie med dine data og Power BI** (webinaret er på engelsk)
 <br>ved Tristan Malherbe

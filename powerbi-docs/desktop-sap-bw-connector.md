@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 73be85644fd320bd44372a0df6c844705c3cf602
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: f4825e8d8d47f755b01748c847b0fcf110db030a
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336915"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452861"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Brug af SAP BW Connector i Power BI Desktop
 Med Power BI Desktop har du adgang til data i **SAP Business Warehouse (BW)**.
@@ -78,7 +78,7 @@ Når du vælger ét eller flere elementer fra serveren, oprettes der et eksempel
 
 Vinduet **Navigator** indeholder også et par **visningsindstillinger**, der giver dig mulighed at gøre følgende:
 
-* **Vis *Only Selected Items* (Kun markerede elementer) over for *All Items* (Alle elementer) (standardvisning):** Denne indstilling er nyttig, når det sidste sæt elementer, der er valgt, skal bekræftes. En alternativ metode til at få vist dette er at vælge *Kolonnenavne* i området *Preview* (Eksempel).
+* **Vis *Kun markerede elementer* over for *Alle elementer* (standardvisning):** Denne indstilling er nyttig, når det sidste sæt elementer, der er valgt, skal bekræftes. En alternativ metode til at få vist dette er at vælge *Kolonnenavne* i området *Eksempel*.
 * **Aktivér datavisninger (standard):** Du kan også styre, om dataeksempler skal vises i denne dialogboks. Deaktivering af dataeksempler reducerer antallet af kald til serveren, fordi der ikke længere anmodes om data til eksempelvisningerne.
 * **Tekniske navne:** SAP BW understøtter *tekniske navne* for objekter i en kube. Tekniske navne giver ejeren af en kube mulighed for at vise *brugervenlige* navne for kubeobjekter i modsætning til kun at vise de *fysiske navne* for disse objekter i kuben.
 
@@ -197,11 +197,28 @@ Dette afsnit indeholder fejlfindingssituationer (og løsninger) til arbejdet med
            </item>
    
    For at løse problemet skal brugere bede deres SAP-administrator om at give den SAPBW-bruger, der anvendes i Power BI, ret til at udføre *BAPI_USER_GET_DETAIL*. Det er også en god ide at bekræfte, at brugeren har den krævede *DCPFM*-værdi som beskrevet tidligere i denne fejlfindingsløsning.
+   
 2. **Forbindelse til SAP BEx-forespørgsler**
    
    Du kan udføre **BEx**-forespørgsler i Power BI Desktop ved at aktivere en bestemt egenskab som vist i følgende billede:
    
    ![](media/desktop-sap-bw-connector/sap_bw_8.png)
+   
+3. Der vises ikke et eksempel på data i vinduet **Navigator**, men i stedet vises fejlmeddelelsen *Objektreferencen er ikke indstillet til en forekomst af et objekt*.
+   
+   SAP-brugere skal have adgang til bestemte BAPI-funktionsmoduler for at få metadata og hente data fra SAP BW's InfoProviders. Disse omfatter:
+   * BAPI_MDPROVIDER_GET_CATALOGS
+   * BAPI_MDPROVIDER_GET_CUBES
+   * BAPI_MDPROVIDER_GET_DIMENSIONS
+   * BAPI_MDPROVIDER_GET_HIERARCHYS
+   * BAPI_MDPROVIDER_GET_LEVELS
+   * BAPI_MDPROVIDER_GET_MEASURES
+   * BAPI_MDPROVIDER_GET_MEMBERS
+   * BAPI_MDPROVIDER_GET_VARIABLES
+   * BAPI_IOBJ_GETDETAIL
+
+   Du løser dette problem ved at bekræfte, at brugeren har adgang til de forskellige *MDPROVIDER*-moduler samt *BAPI_IOBJ_GETDETAIL*. Hvis du har brug for at foretage yderligere fejlfinding af dette eller lignende problemer, skal du vælge *Aktivér sporing* i vinduet *Diagnosticering* under *Indstillinger* i Power BI Desktop. Prøv at hente data fra SAP BW, mens sporing er aktiv, og kig i sporingsfilen for at få flere detaljer.
+
 
 ## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om SAP og DirectQuery i følgende ressourcer:

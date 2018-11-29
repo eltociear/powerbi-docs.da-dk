@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: mvc
 ms.date: 10/17/2018
-ms.openlocfilehash: 49ea393af6e98ab0f081d95f5be6451064347ed4
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: cb517d62e64e8ef17be07315112faac331b534d3
+ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52332005"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52452700"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Selvstudium: Integrer en rapport, et dashboard eller et felt i Power BI i et program til dine kunder
 
@@ -44,7 +44,7 @@ Hvis du vælger at konfigurere miljøet manuelt, kan du dog fortsætte nedenfor.
 
 ### <a name="register-an-application-in-azure-active-directory-azure-ad"></a>Registrer et program i Azure Active Directory (Azure AD)
 
-Du kan registrere dit program i Azure Active Directory, så dit program får adgang til Power BI REST-API'er. Når du registrerer dit program, får du mulighed for at oprette et id for programmet og angive tilladelser til Power BI REST-ressourcer.
+Du kan registrere dit program i Azure Active Directory, så dit program får adgang til Power BI REST-API'er. Når du registrerer dit program, får du mulighed for at oprette en identitet for programmet og angive tilladelser til Power BI REST-ressourcer.
 
 1. Acceptér [vilkårene for Microsoft Power BI API](https://powerbi.microsoft.com/api-terms).
 
@@ -67,7 +67,7 @@ Aktivér yderligere tilladelser til dit program ud over det, der er angivet på 
 
 ### <a name="use-the-azure-active-directory-portal"></a>Brug Azure Active Directory-portalen
 
-1. Gå til [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) (Appregistreringer) på Azure-portalen, og vælg den app, du bruger til at integrere.
+1. Gå til [Appregistreringer](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) på Azure Portal, og vælg den app, du bruger til at integrere.
 
     ![Vælg app](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
 
@@ -91,13 +91,13 @@ Aktivér yderligere tilladelser til dit program ud over det, der er angivet på 
 
     ![Vælg PBI-tjenester](media/embed-sample-for-customers/embed-sample-for-customers-014.png)
 
-7. Vælg alle tilladelser under **Delegated Permission** (Delegerede tilladelser). Vælg **Gem**, når du er færdig.
+7. Vælg alle tilladelser under **Delegerede tilladelser**. Vælg **Gem**, når du er færdig.
 
     ![Vælg delegerede tilladelser](media/embed-sample-for-customers/embed-sample-for-customers-015.png)
 
-8. I **Required permissions** (Krævede tilladelser), skal du vælge **Grant Permissions** (Tildel tilladelser).
+8. I **Påkrævede tilladelser** skal du vælge **Giv tilladelser**.
 
-    Handlingen **Grant Permissions** (Tildel tilladelser) skal bruges til *hovedkontoen* for at undgå at blive bedt af Azure AD om at angive dit samtykke. Hvis kontoen, der udfører denne handling, er en Global administrator, skal du give alle brugere i organisationen tilladelser til appen. Hvis kontoen, der udfører denne handling, er *hovedkontoen* og ikke en global administrator, skal du kun give tilladelser til *hovedkontoen*  til appen.
+    Handlingen **Giv tilladelser** skal bruges til *hovedkontoen* for at undgå at blive bedt af Azure AD om at angive dit samtykke. Hvis kontoen, der udfører denne handling, er en Global administrator, skal du give alle brugere i organisationen tilladelser til appen. Hvis kontoen, der udfører denne handling, er *hovedkontoen* og ikke en global administrator, skal du kun give tilladelser til *hovedkontoen*  til appen.
 
     ![Tildel tilladelser i dialogboksen til krævede tilladelser](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
 
