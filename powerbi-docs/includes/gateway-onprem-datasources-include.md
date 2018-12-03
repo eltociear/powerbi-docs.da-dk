@@ -20,6 +20,7 @@
 | SAP HANA |Ja |Ja |
 | SharePoint-liste (i det lokale miljø) |Nej |Ja |
 | Snowflake |Ja |Ja |
+| Spark |Ja |Ja |
 | SQL Server |Ja |Ja |
 | Sybase |Nej |Ja |
 | Teradata |Ja |Ja |
