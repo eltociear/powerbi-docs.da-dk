@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f4134996cdce7b4a50f910bc5c9c39e1e392940e
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: a798cbb5012933bb01264aa3db9fa9e06b1f334a
+ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39326918"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52669307"
 ---
 # <a name="use-gridlines-and-snap-to-grid-in-power-bi-desktop-reports"></a>Brug gitterlinjer og fastgørelse til gitter i Power BI Desktop-rapporter
 **Power BI Desktop**-rapportlærredet indeholder gitterlinjer, som du kan bruge til at justere visuelle elementer på en rapportside, så det ser pænt ud, og bruge funktionen for fastgørelse til gitter, så de visuelle elementer i dine rapporter ser jævne ud, er justeret og har lige stor afstand.

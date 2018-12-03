@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7937730988c651e32fb99e9c8eb9314b3a00785b
-ms.sourcegitcommit: f01a88e583889bd77b712f11da4a379c88a22b76
+ms.openlocfilehash: 3ea3aa22a2ab76df115c1b4784d74dedfdf7dbf0
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39330000"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578652"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Tilføj en brugerdefineret kolonne i Power BI Desktop
 Du kan nemt føje en ny brugerdefineret kolonne med data til din model ved hjælp af **forespørgselseditoren** i **Power BI Desktop**. Du kan oprette og omdøbe din brugerdefinerede kolonne ved hjælp af knapper til oprettelse af [M-formler](https://msdn.microsoft.com/library/mt270235.aspx), der definerer din brugerdefinerede kolonne. M-formlen har et [indholdssæt med omfattende funktionsreference](https://msdn.microsoft.com/library/mt779182.aspx). 

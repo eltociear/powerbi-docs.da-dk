@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 05/19/2018
+ms.date: 11/28/2018
 ms.author: davidi
-ms.openlocfilehash: 98b4f6e6d44205abc79ebd9c4e88e7c0f7ed7b2d
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 89eb19fb89193e2859a79d20156d89bf012b7fda
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47186518"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578031"
 ---
 # <a name="power-bi-videos"></a>Power BI-videoer
 Vi har en YouTube-kanal til Power BI! Du kan besøge [vores kanal](https://www.youtube.com/user/mspowerbi/videos) og, hvis du ikke kender til Power BI, er det en god idé at starte med [Analysér og visualiser data med Power BI-afspilningsliste](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP).

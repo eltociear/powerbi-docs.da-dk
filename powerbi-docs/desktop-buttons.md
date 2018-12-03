@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 54cb45d1e9649fa761cfaf67aab708a2707e7516
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 0cc06b87d48f54678743d4364c085e96f658c296
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546736"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578399"
 ---
 # <a name="using-buttons-in-power-bi"></a>Brug af knapper i Power BI
 Ved hjælp af **knapper** i Power BI kan du oprette rapporter og dashboards, der fungerer på samme måde som apps, og dermed skabe et indtagende miljø, så brugerne kan holde over, klikke og yderligere interagere med Power BI-indhold. Du kan føje knapper til rapporter i **Power BI Desktop** og dele eller publicere disse rapporter i Power BI-tjenesten, så der oprettes dashboards, der giver brugerne en funktionsmåde, som ligner den i apps.
@@ -42,7 +42,7 @@ På følgende kort i ruden **Visualiseringer** kan du justere formateringen elle
 * Knaptekst
 * Ikon
 * Kontur
-* Udfyldning
+* Udfyld
 
 For hver tilstand kan du vælge, hvordan knappes skal fremstå. Udvid ét af disse kort, og vælg den rullemenu, der vises øverst på kortet. På følgende billede kan du se, at kortet **Kontur** udvidet med rullemenuen valgt for at vise de tre tilstande:
 

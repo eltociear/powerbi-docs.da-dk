@@ -7,18 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/02/2018
 ms.author: mblythe
+ms.date: 01/02/2018
 LocalizationGroup: Administration
-ms.openlocfilehash: b99f346102ae8b5f31db8101e499fb6915d870de
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: 920fa426f98098768583e07d8f2b6c9825bfad1b
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850401"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578422"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Sikkerhed på rækkeniveau (RLS) med Power BI
-Sikkerhed på rækkeniveau (RLS) med Power BI kan bruges til at begrænse adgang til datakilder for bestemte brugere. Filtre begrænser adgangen til data på rækkeniveau, og du kan definere filtre inden for roller. Vær opmærksom på, at i Power BI-tjenesten har medlemmer af et arbejdsområde adgang til datasæt i arbejdsområdet. Sikkerhed på rækkeniveau (RLS) begrænser ikke adgangen til data. 
+
+Sikkerhed på rækkeniveau (RLS) med Power BI kan bruges til at begrænse adgang til datakilder for bestemte brugere. Filtre begrænser adgangen til data på rækkeniveau, og du kan definere filtre inden for roller. Vær opmærksom på, at i Power BI-tjenesten har medlemmer af et arbejdsområde adgang til datasæt i arbejdsområdet. Sikkerhed på rækkeniveau (RLS) begrænser ikke adgangen til data.
 
 Du kan konfigurere sikkerhed på rækkeniveau for datamodeller, der er importeret til Power BI, med Power BI Desktop. Du kan også konfigurere sikkerhed på rækkeniveau for datasæt, der anvender DirectQuery, f.eks. SQL Server. Tidligere kunne du kun implementere sikkerhed på rækkeniveau i Analysis Services-modeller i det lokale miljø uden for Power BI. I forbindelse med liveforbindelser i Analysis Services kan du konfigurere sikkerhed på rækkeniveau for modellen i det lokale miljø. Sikkerhedsindstillingen vises ikke for datasæt med liveforbindelse.
 
@@ -34,6 +35,7 @@ Du kan finde flere oplysninger på [Tovejskrydsfiltrering ved hjælp af DirectQu
 [!INCLUDE [include-short-name](./includes/rls-desktop-view-as-roles.md)]
 
 ## <a name="manage-security-on-your-model"></a>Administrer sikkerheden for din model
+
 Hvis du vil administrere sikkerheden på din datamodel, skal du gøre følgende.
 
 1. Vælg **ellipsen (…)** for et datasæt.
@@ -46,7 +48,9 @@ Så kommer du til RLS-siden, hvor du skal føje medlemmer til en rolle, du har o
 Du kan kun oprette eller redigere roller i Power BI Desktop.
 
 ## <a name="working-with-members"></a>Arbejd med medlemmer
+
 ### <a name="add-members"></a>Tilføj medlemmer
+
 Du kan føje et medlem til rollen ved at skrive mailadressen eller navnet på den bruger, sikkerhedsgruppe eller distributionsliste, du vil tilføje. Dette medlem skal tilhøre din organisation. Du kan ikke tilføje grupper, der er oprettet i Power BI.
 
 ![](media/service-admin-rls/rls-add-member.png)
@@ -56,11 +60,13 @@ Du kan også se, hvor mange medlemmer der er en del af rollen, ud fra tallet i p
 ![](media/service-admin-rls/rls-member-count.png)
 
 ### <a name="remove-members"></a>Fjern medlemmer
+
 Du kan fjerne medlemmer ved at vælge X ud for medlemmets navn. 
 
 ![](media/service-admin-rls/rls-remove-member.png)
 
 ## <a name="validating-the-role-within-the-power-bi-service"></a>Validering af rollen i Power BI-tjenesten
+
 Du kan bekræfte, at den rolle, du har defineret, fungerer korrekt, ved at teste rollen. 
 
 1. Vælg **ellipsen (...)** ud for rollen.
@@ -83,12 +89,11 @@ Hvis du vil vende tilbage til normal visning, skal du vælge **Tilbage til sikke
 [!INCLUDE [include-short-name](./includes/rls-usernames.md)]
 
 ## <a name="using-rls-with-app-workspaces-in-power-bi"></a>Brug RLS sammen med apparbejdsområder i Power BI
+
 Hvis du publicerer din Power BI Desktop-rapport i et apparbejdsområde i Power BI-tjenesten, anvendes rollerne på medlemmer, som kun har tilladelse til at få vist indhold. Du skal angive, at medlemmer kan få vist Power BI-indhold, i indstillingerne for apparbejdsområdet.
 
 > [!WARNING]
 > Hvis du har konfigureret apparbejdsområdet, således at medlemmerne har redigeringstilladelse, anvendes RLS-rollerne ikke på dem. Brugerne vil kunne se alle dataene.
-> 
-> 
 
 ![](media/service-admin-rls/rls-group-settings.png)
 
@@ -100,4 +105,3 @@ Hvis du publicerer din Power BI Desktop-rapport i et apparbejdsområde i Power B
 [Sikkerhed på rækkeniveau med Power BI Desktop](desktop-rls.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-
