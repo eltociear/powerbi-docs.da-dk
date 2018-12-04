@@ -282,6 +282,8 @@ items:
         href: desktop-create-phone-report.md
       - name: Brug Se Data og Se poster
         href: desktop-see-data-see-records.md
+      - name: Tip til oprettelse af rapporter
+        href: desktop-tips-and-tricks-for-creating-reports.md
     - name: Visualiseringer
       items:
       - name: Bedste praksisser for visualisering
@@ -312,7 +314,7 @@ items:
         href: power-bi-reports-add-text-and-shapes.md
       - name: Tilpas egenskaberne for x- og y-aksen
         href: visuals/power-bi-visualization-customize-x-axis-and-y-axis.md
-      - name: ArcGIS i Power BI
+      - name: ArcGIS-kort i Power BI
         href: power-bi-visualization-arcgis.md
       - name: Basisområdediagram
         href: visuals/power-bi-visualization-basic-area-chart.md
@@ -346,6 +348,8 @@ items:
         href: visuals/power-bi-visualization-treemaps.md
       - name: Vandfaldsdiagrammer i Power BI
         href: visuals/power-bi-visualization-waterfall-charts.md
+      - name: Opret dynamiske referencelinjer
+        href: service-analytics-pane.md
     - name: Fejlfinding
       items:
       - name: Løs problemer, når Access-databaser og Excel-regneark importerer til Power BI Desktop og Power Query
@@ -382,10 +386,10 @@ items:
       href: power-bi-overview.md
   - name: Selvstudier
     items:
-    - name: Opret forbindelse til et eksempel på en GitHub
-      href: service-tutorial-connect-to-github.md
     - name: Introduktion til Power BI
       href: service-get-started.md
+    - name: Opret forbindelse til et eksempel på en GitHub
+      href: service-tutorial-connect-to-github.md
   - name: Begreber
     items:
     - name: Nyheder i Power BI-tjenesten
@@ -644,40 +648,28 @@ items:
         href: service-dashboard-themes.md
     - name: Rapporter
       items:
-      - name: Opret en ny rapport ud fra en eksisterende rapport
-        href: power-bi-report-copy.md
-      - name: Tilføj en side i en rapport
-        href: power-bi-report-add-page.md
+      - name: Opret en ny rapport ud fra et datasæt
+        href: service-report-create-new.md
       - name: Tilføj et filter i en rapport
         href: power-bi-report-add-filter.md
       - name: Gem en rapport i Power BI
         href: service-report-save.md
-      - name: Opret en ny rapport ud fra et datasæt
-        href: service-report-create-new.md
       - name: Interager med en rapport i redigeringsvisning
         href: service-interact-with-a-report-in-editing-view.md
       - name: Analysér i Excel
         href: service-analyze-in-excel.md
       - name: Tip og gode råd til oprettelse af rapporter
         href: power-bi-reports-tips-and-tricks-for-creating.md
-      - name: Analytics-rude
-        href: service-analytics-pane.md
       - name: Forbrugsmetrik for rapporter
         href: service-usage-metrics.md
       - name: Opret en QR-kode for en rapport
         href: service-create-qr-code-for-report.md
-      - name: Omarranger sider i en rapport
-        href: service-report-reorder-pages.md
-      - name: Dupliker en rapportside
-        href: power-bi-report-copy-paste-page.md
       - name: Eksportér en rapport fra tjenesten til Power BI Desktop (prøveversion)
         href: service-export-to-pbix.md
       - name: Filtrer en rapport ved hjælp af parametre i URL-adressen
         href: service-url-filters.md
       - name: Bedste praksis for oprettelse af hurtige og pålidelige rapporter
         href: power-bi-reports-performance.md
-      - name: Interager med ArcGIS-kort
-        href: visuals/power-bi-visualizations-arcgis.md
     - name: Stil spørgsmål til dine data
       items:
       - name: Brug spørgsmål og svar til at oprette visualiseringer og rapporter
@@ -792,6 +784,30 @@ items:
         href: service-dataflows-developer-resources.md
       - name: Opret forbindelse til dataflow i Power BI Desktop
         href: desktop-connect-dataflows.md
+    - name: Sideinddelte rapporteri på Power BI
+      items:
+      - name: Hvad er sideinddelte rapporter? (Eksempelvisning)
+        href: paginated-reports-report-builder-power-bi.md
+      - name: Ofte stillede spørgsmål om sideinddelte rapporter
+        href: paginated-reports-faq.md
+      - name: Opret en sideinddelt rapport, og upload den
+        href: paginated-reports-quickstart-aw.md
+      - name: Rundt om visningen Rapportdesign
+        href: paginated-reports-report-design-view.md
+      - name: Angiv data direkte i en sideinddelt rapport
+        href: paginated-reports-enter-data.md
+      - name: Opret en integreret datakilde
+        href: paginated-reports-embedded-data-source.md
+      - name: Opret et integreret datasæt
+        href: paginated-reports-create-embedded-dataset.md
+      - name: Opret parametre
+        href: paginated-reports-parameters.md
+      - name: Udgiv en sideinddelt rapport
+        href: paginated-reports-save-to-power-bi-service.md
+      - name: Se en sideinddelt rapport
+        href: paginated-reports-view-power-bi-service.md
+      - name: Interager med parametre
+        href: paginated-reports-view-parameters.md
   - name: Ressourcer
     items:
     - name: Videoer
@@ -802,38 +818,6 @@ items:
       href: supported-languages-countries-regions.md
     - name: Hvidbøger
       href: whitepapers.md
-- name: Sideinddelte rapporteri på Power BI
-  items:
-  - name: Oversigt
-    items:
-    - name: Hvad er sideinddelte rapporter? (Eksempelvisning)
-      href: paginated-reports-report-builder-power-bi.md
-  - name: Selvstudier
-    items:
-    - name: Opret en sideinddelt rapport, og upload den
-      href: paginated-reports-quickstart-aw.md
-  - name: Begreber
-    items:
-    - name: Rundt om visningen Rapportdesign
-      href: paginated-reports-report-design-view.md
-    - name: Ofte stillede spørgsmål om sideinddelte rapporter
-      href: paginated-reports-faq.md
-  - name: Sådan gør du
-    items:
-    - name: Angiv data direkte i en sideinddelt rapport
-      href: paginated-reports-enter-data.md
-    - name: Opret en integreret datakilde
-      href: paginated-reports-embedded-data-source.md
-    - name: Opret et integreret datasæt
-      href: paginated-reports-create-embedded-dataset.md
-    - name: Opret parametre
-      href: paginated-reports-parameters.md
-    - name: Udgiv en sideinddelt rapport
-      href: paginated-reports-save-to-power-bi-service.md
-    - name: Se en sideinddelt rapport
-      href: paginated-reports-view-power-bi-service.md
-    - name: Interager med parametre
-      href: paginated-reports-view-parameters.md
 - name: Power BI for udviklere
   items:
   - name: Hvad kan udviklere bruge Power BI til?
@@ -1024,7 +1008,7 @@ items:
         href: https://go.microsoft.com/fwlink/?linkid=848273
       - name: Henter .NET SDK
         href: https://go.microsoft.com/fwlink/?linkid=848274
-- name: Power BI Report Server
+- name: Power BI-rapportserver
   items:
   - name: Oversigt
     items:
@@ -1265,9 +1249,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI sikkerhed
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: d6dd88caff9e0f2cdef7f7697c81161fe32c0b35
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: a9156a07a1677c5cac424eef7349949bd47e79e0
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52331844"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830395"
