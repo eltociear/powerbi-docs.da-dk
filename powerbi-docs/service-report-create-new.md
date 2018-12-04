@@ -10,19 +10,17 @@ ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 96b46e595ffd2373a2d59776cb8c2b4314727d89
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: a5762964b75d73d8dabceac58c47f616753b94cc
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51718039"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830169"
 ---
 # <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Opret en ny rapport i Power BI-tjenesten ved at importere et datasæt
 Du har læst [Rapporter i Power BI](consumer/end-user-reports.md), og nu vil du oprette din egen. Der er mange forskellige måder at oprette en rapport på, og i denne artikel starter vi med at oprette en meget grundlæggende rapport ud fra et Excel-datasæt ved hjælp af Power BI-tjenesten. Når du har forstået de grundlæggende ting i forbindelse med at oprette en rapport, vejleder de **Næste trin** for neden dig gennem de mere avancerede rapportemner.  
 
-> **TIP!** Hvis du vil oprette en rapport ved at kopiere en eksisterende rapport, skal du se [Kopiér en rapport](power-bi-report-copy.md)
-> 
-> ### <a name="prerequisites"></a>Forudsætninger
+## <a name="prerequisites"></a>Forudsætninger
 > - Power BI-tjenesten (se [Desktop-rapportvisning](desktop-report-view.md) for at få oplysninger om oprettelse af rapporter ved hjælp af Power BI Desktop)  
 > - Eksempel på detailhandelsanalyse
 
@@ -93,7 +91,7 @@ Vores marketingchef har nogle yderligere spørgsmål, vi skal besvare. Hun vil g
 Fortsæt med at udforske dine data og tilføje visualiseringer. Når du finder interessant viden, kan du [fastgøre den til et dashboard](service-dashboard-pin-tile-from-report.md).
 
 ## <a name="next-steps"></a>Næste trin
-* [Tilføj en ny side i rapporten](power-bi-report-add-page.md)  
+
 * Se, hvordan du kan [fastgøre visualiseringer til et dashboard](service-dashboard-pin-tile-from-report.md)   
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

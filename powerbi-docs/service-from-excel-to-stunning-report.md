@@ -1,21 +1,21 @@
 ---
 title: Fra Excel-projektmappe til fantastisk rapport på ingen tid
 description: Fra Excel-projektmappe til fantastisk rapport på ingen tid
-author: mihart
-manager: kvivek
+author: maggiesMSFT
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 08/28/2018
-ms.author: mihart
+ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: ebbca73f781946f989b2f3afa65aa0a940f7a680
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: e3b7a6ca4471fb1a6454f6efb9fba1f89b8ae1da
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545124"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829981"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Fra Excel-projektmappe til fantastisk rapport på ingen tid
 Din chef vil gerne se en rapport om dine seneste salgstal kombineret med dine seneste kampagneannoncer, inden dagen er omme. Men de seneste data befinder sig på forskellige systemer hos tredjeparter og i filer på din bærbare computer. Tidligere har det taget timevis at oprette visuals og formatere en rapport. Du begynder at blive bekymret.
