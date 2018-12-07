@@ -1,8 +1,13 @@
-# powerbi-content-pr
-You've found the GitHub repository for the technical documentation that is published to the Power BI Documentation Center at [http://powerbi.microsoft.com/documentation](http://powerbi.microsoft.com/documentation).
+# <a name="microsoft-power-bi-documentation"></a>Dokumentationen til Microsoft Power BI
 
-This repository also contains guidance to help you contribute to our technical documentation. For a list of the articles in the contributors' guide, see [the index](contributor-guide/contributor-guide-index.md).
+Dette er GitHub-lageret for tekniske produktdokumentationen til **Power BI**. Denne dokumentation er publiceret på [https://docs.microsoft.com/power-bi](https://docs.microsoft.com/power-bi).
 
-## Code of conduct
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+## <a name="how-to-contribute"></a>Sådan bidrager du
 
+Tak for din interesse i at bidrage til [Docs.microsoft.com](https://docs.microsoft.com/), som er hjemsted for teknisk indhold til Microsoft-produkter og -tjenester.
+
+Hvis du vil se, hvordan du kan bidrage til indholdet på dette lager, skal du starte med vores [vejledning til Docs-bidragydere](https://docs.microsoft.com/contribute). Hvis du er medarbejder hos Microsoft, skal du gå til den [intern version](https://aka.ms/docsguidescontribute) af denne vejledning.
+
+## <a name="code-of-conduct"></a>Ordensregler
+
+Dette projekt er underlagt [Microsofts ordensregler for åben kildekode](https://opensource.microsoft.com/codeofconduct/). Du kan finde flere oplysninger under [Ofte stillede spørgsmål om ordensregler](https://opensource.microsoft.com/codeofconduct/faq/) eller kontakte [opencode@microsoft.com](mailto:opencode@microsoft.com), hvis du har flere spørgsmål eller kommentarer.
