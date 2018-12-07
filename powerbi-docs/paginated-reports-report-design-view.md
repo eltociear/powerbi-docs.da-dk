@@ -1,5 +1,5 @@
 ---
-title: Navigering i visningen Rapportdesign for sideinddelte rapporter – Power BI | Microsoft Docs
+title: Navigering i visningen Rapportdesign for sideinddelte rapporter (eksempelvisning)
 description: Visningen Rapportdesign i Report Builder er designområdet, hvor du kan oprette sideinddelte rapporter, som du kan publicere i Power BI-tjenesten.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: de3919903a3df4fdc5b0e167069b3035204761ff
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: dc811c5f6c6a7d5d428591eb7afd1665cda6dbb0
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267323"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900445"
 ---
-# <a name="getting-around-in-report-design-view-for-paginated-reports"></a>Navigering i visningen Rapportdesign for sideinddelte rapporter
+# <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Navigering i visningen Rapportdesign for sideinddelte rapporter (eksempelvisning)
 
 Visningen Rapportdesign i Report Builder er designområdet, hvor du kan oprette sideinddelte rapporter, som du kan publicere i Power BI-tjenesten. Designområdet er placeret centralt i Report Builder, og båndet og ruderne er placeret rundt om det. Designområdet er, hvor du tilføjer og organiserer dine rapportelementer. I denne artikel forklares de ruder, du bruger til at tilføje, vælge og organisere dine rapportressourcer og ændre egenskaber for rapportelementer.  
 
@@ -109,7 +109,7 @@ På statuslinjen for den aktuelle rapport vises navnet på den server, rapporten
 
 ## <a name="next-steps"></a>Næste trin
 
-[Hvad er sideinddelte rapporter i Power BI Premium? (Prøveversion)](paginated-reports-report-builder-power-bi.md) 
+[Hvad er sideinddelte rapporter i Power BI Premium? (prøveversion)](paginated-reports-report-builder-power-bi.md) 
 
   
   

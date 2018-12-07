@@ -1,5 +1,5 @@
 ---
-title: Publicer en sideinddelt rapport i Power BI-tjenesten | Microsoft Docs
+title: Publicer en sideinddelt rapport i Power BI-tjenesten (eksempelvisning)
 description: I dette selvstudium lærer du at publicere en sideinddelt rapport i Power BI-tjenesten ved at uploade den fra din lokale computer.
 author: maggiesMSFT
 manager: kfile
@@ -9,14 +9,14 @@ ms.component: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: 6f2d1a4e4de87ea6eb63826b59286a9abd54b94f
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 1114f1949c68e4bebf2d636906bf754e7de77273
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267227"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900261"
 ---
-# <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publicer en sideinddelt rapport i Power BI-tjenesten
+# <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Publicer en sideinddelt rapport i Power BI-tjenesten (eksempelvisning)
 
 I denne artikel lærer du om publicering af en sideinddelt rapport i Power BI-tjenesten ved at uploade den fra din lokale computer. Du kan uploade sideinddelte rapporter til Mit arbejdsområde eller andre arbejdsområder, så længe arbejdsområdet er i en Premium-kapacitet. Se efter rombeikonet ![Rombeikon for Power BI Premium-kapacitet](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) ud for navnet på arbejdsområdet. 
 
@@ -89,5 +89,5 @@ I øjeblikket understøtter gateways ikke parametre med flere værdier.
 ## <a name="next-steps"></a>Næste trin
 
 - [Publicer en sideinddelt rapport i Power BI-tjenesten](paginated-reports-view-power-bi-service.md)
-- [Hvad er sideinddelte rapporter i Power BI Premium? (Prøveversion)](paginated-reports-report-builder-power-bi.md)
+- [Hvad er sideinddelte rapporter i Power BI Premium? (prøveversion)](paginated-reports-report-builder-power-bi.md)
 
