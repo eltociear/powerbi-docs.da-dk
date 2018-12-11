@@ -4,25 +4,26 @@ description: Få mere at vide om, hvordan du grupperer og placerer elementer i b
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6363cbe3afdce351acc728fe29af8662702b8254
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 64ec167a295255a6813244ef6cb222b4eccb50f3
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670687"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025223"
 ---
 # <a name="use-grouping-and-binning-in-power-bi-desktop"></a>Brug gruppering og gruppering i beholder i Power BI Desktop
 Når der oprettes visuals i **Power BI Desktop**, samles dine data i dele (eller grupper) baseret på de værdier, der bliver fundet i de underliggende data. Det er ofte fint, men der kan være tilfælde, hvor du gerne vil justere, hvordan disse dele vises. Eksempel: Du vil måske placere tre produktkategorier i én større kategori (én *gruppe*). Det kan også være, at du vil se salgstal, der er placeret i beholderstørrelser på USD 1.000.000 i stedet for jævnt fordelt på USD 923.983.
 
 I Power BI Desktop kan du **gruppere** datapunkter, så du kan få vist, analysere og udforske data og tendenser i dine visuals på en mere klar måde. Du kan også definere **beholderstørrelsen**, som ofte kaldes *gruppering i beholder*, for at sortere værdierne i lige store grupper, så du bedre kan visualisere data på en meningsfuld måde.
 
-### <a name="using-grouping"></a>Brug af gruppering
+## <a name="using-grouping"></a>Brug af gruppering
 Hvis du vil bruge gruppering, skal du vælge to eller flere elementer på en visual ved at bruge Ctrl + klik for at vælge flere elementer. Højreklik derefter på et af elementerne, og vælg **Gruppér** i den menu, der vises.
 
 ![](media/desktop-grouping-and-binning/grouping-binning_1.png)
@@ -45,10 +46,8 @@ Du kan føje en ikkegrupperet værdi til en eksisterende gruppe: Du skal blot v�
 
 > [!NOTE]
 > Du kan oprette grupper for et hvilket som helst felt i brønden **Felter** uden at skulle vælge flere i en eksisterende visualisering. Du skal blot højreklikke på feltet og vælge **Ny gruppe** i den menu, der vises.
-> 
-> 
 
-### <a name="using-binning"></a>Brug af gruppering i beholder
+## <a name="using-binning"></a>Brug af gruppering i beholder
 Du kan angive beholderstørrelsen for numeriske felter og klokkeslætsfelter i **Power BI Desktop.** Du kan bruge gruppering i beholder til at tilpasse de data, der vises i **Power BI Desktop**, til den korrekte størrelse.
 
 Du anvender en beholderstørrelse ved at højreklikke på et **Felt** og vælge **Ny gruppe**.

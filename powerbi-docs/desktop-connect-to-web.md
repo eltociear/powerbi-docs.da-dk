@@ -4,18 +4,19 @@ description: Opret nemt forbindelse til og brug data på en webside i Power BI D
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2aef47ab1716464c0896b624069a6ebbeb4adc54
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: a0d7eeccede8f6402256eb8655657ca12dde075b
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578376"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026563"
 ---
 # <a name="connect-to-a-web-page-from-power-bi-desktop"></a>Opret forbindelse til en webside fra Power BI Desktop
 Du kan oprette forbindelse til en webside og importere data i Power BI Desktop for at bruge dem i dine visualiseringer og datamodeller.
@@ -44,7 +45,7 @@ Herfra kan du trække felterne til Rapportcanvas og oprette alle de visualiserin
 
 Hvis du vil se yderligere oplysninger om, hvordan du opretter forbindelse til en webside, skal du se [guiden Introduktion til Power BI Desktop](desktop-getting-started.md).
 
-### <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>Næste trin
 Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:
 
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)

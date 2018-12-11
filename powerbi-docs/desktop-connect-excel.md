@@ -4,18 +4,19 @@ description: Opret nemt forbindelse til og brug data fra en Excel-projektmappe i
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 36c01851138ae8b8e74acd60b39f5b358e20e392
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: cff8950526393fd2243dbe5a4a8dcc16fcc44821
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669054"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025236"
 ---
 # <a name="connect-to-excel-in-power-bi-desktop"></a>Opret forbindelse til Excel i Power BI Desktop
 Det er nemt at oprette forbindelse til en Excel-projektmappe fra Power BI Desktop, og i denne artikel gennemgås trinnene.
@@ -45,7 +46,7 @@ Det var det hele!
 
 Du er nu klar til at bruge de data, der er importeret fra din Excel-projektmappe, i Power BI Desktop til at oprette visuelle elementer og rapporter eller interagere med andre data, som du måske vil oprette forbindelse til og importere, f.eks. andre Excel-projektmapper, databaser eller en hvilken som helst anden datakilde.
 
-### <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>Næste trin
 Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:
 
 * [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)

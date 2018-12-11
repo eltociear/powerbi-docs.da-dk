@@ -4,18 +4,19 @@ description: Brug gitterlinjer, fastgørelse til gitter, z-rækkefølge, justeri
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: a798cbb5012933bb01264aa3db9fa9e06b1f334a
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 37416ab15a638ccd8c8e7b1066ffc01f1ba6c944
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669307"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025862"
 ---
 # <a name="use-gridlines-and-snap-to-grid-in-power-bi-desktop-reports"></a>Brug gitterlinjer og fastgørelse til gitter i Power BI Desktop-rapporter
 **Power BI Desktop**-rapportlærredet indeholder gitterlinjer, som du kan bruge til at justere visuelle elementer på en rapportside, så det ser pænt ud, og bruge funktionen for fastgørelse til gitter, så de visuelle elementer i dine rapporter ser jævne ud, er justeret og har lige stor afstand.
@@ -24,24 +25,22 @@ I **Power BI Desktop** kan du også tilpasse z-rækkefølgen for objekter i en r
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_0.png)
 
-### <a name="enabling-gridlines-and-snap-to-grid"></a>Aktivér gitterlinjer og fastgørelse til gitter
+## <a name="enabling-gridlines-and-snap-to-grid"></a>Aktivér gitterlinjer og fastgørelse til gitter
 Hvis du vil aktivere gitterlinjer og fastgørelse til gitter, skal du vælge båndet **Vis** og derefter markere afkrydsningsfeltet for **Vis gitterlinjer** og **Fastgør objekter til gitter**. Du kan vælge begge indstillinger. De fungerer uafhængigt af hinanden.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_1.png)
 
 > [!NOTE]
 > Hvis **Vis gitterlinjer** og **Fastgør objekter til gitter** er deaktiveret, kan du oprette forbindelse til en datakilde for at aktivere dem.
-> 
-> 
 
-### <a name="using-gridlines"></a>Brug af gitterlinjer
+## <a name="using-gridlines"></a>Brug af gitterlinjer
 Gitterlinjer er synlige vejledninger, der hjælper dig med at justere dine visuelle elementer. Når du forsøger at se, om to (eller flere) visuelle elementer står korrekt vandret eller lodret, kan du bruge gitterlinjerne til at se, om kanterne flugter med hinanden.
 
 Brug Ctrl + klik til at markere mere end ét visuelt element ad gangen. Herved vises kanterne for alle de markerede visuelle elementer, så du kan se, om de flugter med hinanden.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_2.png)
 
-#### <a name="using-gridlines-inside-visuals"></a>Brug af gitterlinjer i visuelle elementer
+### <a name="using-gridlines-inside-visuals"></a>Brug af gitterlinjer i visuelle elementer
 I Power BI er der også gitterlinjer inden i de visuelle elementer. De fungerer som synlige hjælpelinjer ved sammenligning af datapunkter og værdier. Fra og med versionen af **Power BI Desktop** fra september 2017 kan du nu administrere gitterlinjerne i visuelle elementer ved hjælp af kortet **X-akse** eller **Y-akse** (afhængigt af typen af visuelt element), der findes i sektionen **Format** i ruden **Visualiseringer**. Du kan administrere følgende gitterlinjeelementer i et visuelt element:
 
 * Slå gitterlinjer til eller fra
@@ -53,14 +52,14 @@ Det kan især være en god ide at ændre bestemte elementer i gitterlinjer i rap
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_9.png)
 
-### <a name="using-snap-to-grid"></a>Brug fastgørelse til gitter
+## <a name="using-snap-to-grid"></a>Brug fastgørelse til gitter
 Når du aktiverer **Fastgør objekter til gitter**, justeres alle visuelle elementer på lærredet i **Power BI Desktop**, som du flytter (eller ændrer størrelsen på), automatisk i forhold til den nærmeste akse i gitteret for at sikre, at to eller flere visuelle elementer justeres i forhold til den samme vandrette eller lodrette placering eller størrelse.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_3.png)
 
 Og det er det eneste, du skal vide om at bruge **gitterlinjer** og **fastgørelse til gitter** for at sikre, at de visuelle elementer i dine rapporter er justeret, som de skal.
 
-### <a name="using-z-order-align-and-distribute"></a>Brug z-rækkefølge, justering og fordeling
+## <a name="using-z-order-align-and-distribute"></a>Brug z-rækkefølge, justering og fordeling
 Du kan styre, hvilken rækkefølge de visuelle elementer i en rapport skal vises i fra forrest til bagest. Det kaldes ofte elementernes *z-rækkefølge*. Med denne funktion kan du overlappe visuelle elementer, som du ønsker det, og derefter justere rækkefølgen fra forreste til bageste element. Du kan angive rækkefølgen for de visuelle elementer med knapperne **Flyt fremad** og **Flyt bagud** i afsnittet **Arranger** af båndet **Formater**. Båndet **Formater** vises, når du har markeret et eller flere visuelle elementer på siden.
 
 ![](media/desktop-gridlines-snap-to-grid/snap-to-grid_4.png)
