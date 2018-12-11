@@ -32,17 +32,17 @@ items:
       href: sample-datasets.md
     - name: Brug af eksempelindholdspakker
       href: sample-tutorial-connect-to-the-samples.md
-    - name: 'Eksempel på kunderentabilitet: Få en rundvisning'
+    - name: 'Eksempel på kunderentabilitet: Få en introduktion'
       href: sample-customer-profitability.md
     - name: 'Eksempel på analyse af it-forbrug: Få en introduktion'
       href: sample-it-spend.md
-    - name: 'Eksempel på HR: Få en rundvisning'
+    - name: 'HR-eksempel: Få en introduktion'
       href: sample-human-resources.md
     - name: 'Eksempel på analyse af salgsmuligheder: Få en introduktion'
       href: sample-opportunity-analysis.md
     - name: 'Eksempel på indkøbsanalyse: Få en introduktion'
       href: sample-procurement.md
-    - name: 'Eksempel på analyse af detailhandel: Få en introduktion'
+    - name: 'Eksempel på detailhandelsanalyse: Få en introduktion'
       href: sample-retail-analysis.md
     - name: 'Eksempel på salg og marketing: Få en introduktion'
       href: sample-sales-and-marketing.md
@@ -184,9 +184,9 @@ items:
         href: desktop-sap-bw-connector.md
       - name: Brug links til OneDrive for Business i Power BI Desktop
         href: desktop-use-onedrive-business-links.md
-      - name: 'Tredjepartstjeneste: Facebook-connector til Power BI Desktop'
+      - name: 'Tjeneste fra tredjepart: Facebook-connector til Power BI Desktop'
         href: service-facebook-connector.md
-      - name: 'Tredjepartstjeneste: Google Analytics-connector til Power BI Desktop'
+      - name: 'Tjeneste fra tredjepart: Google Analytics-connector til Power BI Desktop'
         href: service-google-analytics-connector.md
       - name: 'Project Online: Opret forbindelse til data via Power BI Desktop'
         href: desktop-project-online-connect-to-data.md
@@ -758,6 +758,14 @@ items:
         href: service-dataflows-developer-resources.md
       - name: Opret forbindelse til dataflow i Power BI Desktop
         href: desktop-connect-dataflows.md
+      - name: Integration af dataflow og Azure Data Lake (eksempelvisning)
+        href: service-dataflows-azure-data-lake-integration.md
+      - name: Opret forbindelse til Azure Data Lake Storage Gen2 til dataflowlager (eksempelvisning)
+        href: service-dataflows-connect-azure-data-lake-storage-gen2.md
+      - name: Konfigurer indstillinger for dataflow for arbejdsområde (eksempelvisning)
+        href: service-dataflows-configure-workspace-storage-settings.md
+      - name: Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)
+        href: service-dataflows-add-cdm-folder.md
     - name: Sideinddelte rapporteri på Power BI
       items:
       - name: Hvad er sideinddelte rapporter? (Eksempelvisning)
@@ -1253,9 +1261,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI sikkerhed
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 066aa4a3b87375e29e14d1611e7e67ab58dfd482
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: e105b33d6b37099dd6bc2c657f2293f8561a6004
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979668"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53181007"
