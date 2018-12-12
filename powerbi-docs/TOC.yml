@@ -260,21 +260,21 @@ items:
         href: visuals/desktop-create-responsive-visuals.md
       - name: Brug indbyggede hierarkinavne i Power BI Desktop (Prøveversion)
         href: desktop-inline-hierarchy-labels.md
-      - name: Brug det numeriske interval-udsnitsværktøj
+      - name: Brug udsnittet til det numeriske interval
         href: desktop-slicer-numeric-range.md
-      - name: Opret hurtigt reagerende udsnitsværktøj, som du kan ændre størrelsen på
+      - name: Opret et udsnit, du kan tilpasse størrelsen på
         href: power-bi-slicer-filter-responsive.md
-      - name: Opret tilpassede Power BI-svarkort for Cortana
+      - name: Opret brugerdefinerede svarkort til Cortana
         href: service-cortana-answer-cards.md
       - name: Sikkerhed på rækkeniveau
         href: desktop-rls.md
-      - name: Tilpasser værktøjstips i Power BI Desktop
+      - name: Værktøjstip til brugerdefinering
         href: desktop-custom-tooltips.md
-      - name: Betinget formatering af tabeller i Power BI Desktop
+      - name: Betinget tabelformatering
         href: desktop-conditional-table-formatting.md
       - name: Sorter efter kolonne i Power BI Desktop
         href: desktop-sort-by-column.md
-      - name: Opret rapporter, der er optimeret til Power BI-telefonapps
+      - name: Opret rapporter, der er optimeret til mobilapps
         href: desktop-create-phone-report.md
       - name: Brug Se Data og Se poster
         href: desktop-see-data-see-records.md
@@ -284,23 +284,23 @@ items:
       items:
       - name: Bedste praksisser for visualisering
         href: visuals/power-bi-visualization-best-practices.md
-      - name: Skift visualiseringstype i en Power BI-rapport
+      - name: Skift visualiseringstype i en rapport
         href: visuals/power-bi-report-change-visualization-type.md
       - name: Begrænsninger af datapunkter efter visualiseringstype
         href: visuals/power-bi-data-points.md
       - name: Introduktion til farveformatering og akseegenskaber
         href: visuals/service-getting-started-with-color-formatting-and-axis-properties.md
-      - name: Tip og tricks til farveformatering i Power BI
+      - name: Tip og trick til farveformatering
         href: visuals/service-tips-and-tricks-for-color-formatting.md
-      - name: Kopiér og indsæt en visualisering i Power BI
+      - name: Kopiér og indsæt en visualisering
         href: visuals/power-bi-visualization-copy-paste.md
       - name: Eksporter de data, der bruges til at oprette visualiseringen
         href: visuals/power-bi-visualization-export-data.md
-      - name: Flyt, ændr størrelse på og få en visualisering til at træde frem i en rapport i Power BI
+      - name: Flyt, tilpas størrelsen på og få en visualisering til at træde frem i en rapport
         href: visuals/power-bi-visualization-move-and-resize.md
       - name: Links i tabeller
         href: power-bi-hyperlinks-in-tables.md
-      - name: Føj et hyperlink til et tekstfelt i en rapport i Power BI
+      - name: Føj et link til et tekstfelt i en rapport
         href: service-add-hyperlink-to-text-box.md
       - name: Rediger, hvordan visualiseringer interagerer i en rapport
         href: service-reports-visual-interactions.md
@@ -342,7 +342,7 @@ items:
         href: visuals/power-bi-visualization-scatter.md
       - name: Højdensitets punktdiagrammer
         href: visuals/desktop-high-density-scatter-charts.md
-      - name: Udsnitsværktøjer i Power BI
+      - name: Udsnit i Power BI
         href: visuals/power-bi-visualization-slicers.md
       - name: Tabeller i Power BI
         href: visuals/power-bi-visualization-tables.md
@@ -598,7 +598,7 @@ items:
         href: refresh-troubleshooting-refresh-scenarios.md
     - name: Dashboards
       items:
-      - name: Power BI-dashboard
+      - name: Introduktion til dashboards
         href: service-dashboards.md
       - name: Dashboardfelter
         href: service-dashboard-tiles.md
@@ -692,6 +692,8 @@ items:
         href: service-create-workspaces.md
       - name: Opret de nye arbejdsområder (eksempelvisning)
         href: service-create-the-new-workspaces.md
+      - name: Administrer datalager i arbejdsområder
+        href: service-admin-manage-your-data-storage-in-power-bi.md
       - name: Del en filtreret rapport
         href: service-share-reports.md
       - name: Publicer fra Power BI på internettet
@@ -1261,9 +1263,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI sikkerhed
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: e105b33d6b37099dd6bc2c657f2293f8561a6004
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: 0189fe52981e1bc926ae8a836791e7111e4b530e
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53181007"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280945"
