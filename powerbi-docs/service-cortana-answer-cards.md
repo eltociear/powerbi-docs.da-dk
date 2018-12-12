@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 327ba72c46aa5a6a2edea723bd5450cd5bbbcdb4
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: 3a0ef369aa690044dbef9c4ef0cda070565b9922
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187323"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829889"
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>Du kan bruge Power BI-tjenesten eller Power BI Desktop til at oprette en tilpasset svarside til Cortana
 Få det fulde udbytte ud af Power BI ved at oprette særlige rapportsider, *Cortana-svarsider* (optræder undertiden også under benævnelsen *Cortana-svarkort*), udviklet specielt til at besvare Cortana spørgsmål.
@@ -41,7 +41,7 @@ Du har fire dokumenter, der hjælper dig igennem konfiguration og anvendelse af 
 ## <a name="create-a-cortana-answer-page-designed-specifically-for-cortana"></a>Opret en Cortana-svarside, der er udviklet specielt til Cortana
 En *Cortana-svarside* i en rapport har en størrelse specielt afpasset til Cortana, så Cortana kan få den vist på skærmen som et svar på et spørgsmål. Sådan opretter du en svarside til Cortana:
 
-1. Det anbefales at starte med en [tom rapportside](power-bi-report-add-page.md).
+1. Det anbefales at starte med en tom rapportside.
 2. I ruden **Visualiseringer** skal du vælge malerrulleikonet og vælge **Sidestørrelse** > **Type** > **Cortana**.
    
     ![](media/service-cortana-answer-cards/pbi-cortana-page-size-new.png)

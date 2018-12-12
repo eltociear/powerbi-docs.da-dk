@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: af39332bdc1c9e1529d56f55215b0b32ab86f3e7
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: f6cb53eadb3c5ddf14b8f8b3b3882e0d7b509a3f
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396796"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830096"
 ---
 # <a name="export-data-from-visualizations"></a>Eksportér data fra visualiseringer
 Hvis du gerne vil se de data, der bruges til at oprette en visualisering, kan du få vist de pågældende data i Power BI eller eksportere dataene til Excel som en .xlsx- eller .csv-fil. Indstillingen for eksport af data kræver en Pro- eller Premium-licens og redigeringstilladelser til datasættet og rapporten. 
@@ -38,7 +38,7 @@ Se med, når Will eksporterer dataene fra en af visualiseringerne i hans rapport
     ![](media/power-bi-visualization-export-data/pbi-export-to-excel.png)
 
 ## <a name="from-a-visualization-in-a-report"></a>Fra en visualisering i en rapport
-Hvis du vil følge med, skal du åbne [eksempelrapporten med en indkøbsanalyse](../sample-procurement.md) i [Redigeringsvisning](../consumer/end-user-reading-view.md). [Tilføj en ny tom rapportside](../power-bi-report-add-page.md). Følg derefter nedenstående trin for at tilføje en aggregering og et filter på visualiseringsniveau.
+Hvis du vil følge med, skal du åbne [eksempelrapporten med en indkøbsanalyse](../sample-procurement.md) i [Redigeringsvisning](../consumer/end-user-reading-view.md). Tilføj en ny tom rapportside. Følg derefter nedenstående trin for at tilføje en aggregering og et filter på visualiseringsniveau.
 
 1. Opret et nyt søjlediagram.  I ruden Felter, skal du vælge **Placering > By** og **Faktura > Rabatprocent**.  Du skal muligvis flytte **Rabatprocent** til kilden Værdi. 
 

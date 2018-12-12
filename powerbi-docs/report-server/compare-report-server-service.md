@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.component: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 8689c9a2fded5e283740d82923d674b73434e6a1
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: aca89b1e45c2ce236a4b5a960436077e089a5b01
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850447"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900532"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Sammenlign Power BI-rapportserveren med Power BI-tjenesten
 
@@ -23,7 +23,7 @@ Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigti
 
 ## <a name="features-of-power-bi-report-server-and-the-power-bi-service"></a>Funktioner i Power BI-rapportserveren og Power BI-tjenesten
 
-| Funktioner | Power BI Report Server | Power BI-tjeneste | Noter
+| Funktioner | Power BI-rapportserver | Power BI-tjeneste | Noter
 |---------|---------|---------|---------|
 | Installation | I det lokale miljø eller i hostet cloud | Cloud | Power BI-rapportserveren kan installeres i Azure VM'er (hostet cloud), hvis det er givet i licens via Power BI Premium
 | Kildedata | Cloud og/eller i det lokale miljø | Cloud og/eller i det lokale miljø |  
@@ -37,7 +37,7 @@ Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigti
 | Dashboards | Nej | Ja | [Dashboards i Power BI-tjenesten](../consumer/end-user-dashboards.md) 
 | Distribuer gruppe af rapporter ved hjælp af apps | Nej | Ja | [Opret og udgiv apps med dashboards og rapporter](../service-create-distribute-apps.md) 
 | Indholdspakker | Nej | Ja | [Organisationsindholdspakker: Introduktion](../service-organizational-content-pack-introduction.md) 
-| Opret forbindelse til tjenester som Salesforce | Ja | Ja | [Opret forbindelse til de tjenester, du bruger](../consumer/end-user-connect-to-services.md) med indholdspakker i Power BI-tjenesten. På Power BI-rapportserveren skal du bruge certificerede forbindelser til at oprette forbindelse til tjenester. Du kan finde flere detaljer i [Power BI-rapportdatakilderne på Power BI-rapportserver](data-sources.md).
+| Opret forbindelse til tjenester som Salesforce | Ja | Ja | [Opret forbindelse til de tjenester, du bruger](../service-connect-to-services.md) med indholdspakker i Power BI-tjenesten. På Power BI-rapportserveren skal du bruge certificerede forbindelser til at oprette forbindelse til tjenester. Du kan finde flere detaljer i [Power BI-rapportdatakilderne på Power BI-rapportserver](data-sources.md).
 | Spørgsmål og svar | Nej | Ja | [Spørgsmål og svar i Power BI-tjenesten og Power BI Desktop](../consumer/end-user-q-and-a.md) 
 | Hurtig indsigt | Nej | Ja | [Generér automatisk dataindsigt med Power BI](../consumer/end-user-insights.md) 
 | Analysér i Excel | Nej | Ja | [Analysér i Excel](../service-analyze-in-excel.md) 

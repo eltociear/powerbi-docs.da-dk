@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ab292964bb1b6b1f4218d41c46eb2c28c82a034c
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 5720e52b61332aeca82d0b23b776f590634e622f
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416745"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829613"
 ---
 # <a name="doughnut-charts-in-power-bi"></a>Kransediagrammer i Power BI
 Et kransediagram ligner meget et cirkeldiagram og viser relationen mellem dele af en helhed. Den eneste forskel er, at centreret i det er tomt og giver plads til en etiket eller et ikon.
@@ -23,7 +23,7 @@ Et kransediagram ligner meget et cirkeldiagram og viser relationen mellem dele a
 ## <a name="create-a-doughnut-chart"></a>Opret et kransediagram
 I denne vejledning benyttes eksemplet Retail Analysis Sample (Eksempel på detailhandelsanalyse)til at oprette et kransediagram, der viser dette års salg efter kategori. Du skal [downloade eksemplet](../sample-datasets.md) til Power BI-tjenesten eller Power BI Desktop for at følge med.
 
-1. Start på en [tom rapportside](../power-bi-report-add-page.md). Hvis du bruger Power BI-tjenesten, skal du åbne rapporten i [Redigeringsvisning](../service-interact-with-a-report-in-editing-view.md).
+1. Start på en tom rapportside. Hvis du bruger Power BI-tjenesten, skal du åbne rapporten i [Redigeringsvisning](../service-interact-with-a-report-in-editing-view.md).
 
 2. I ruden Felter skal du vælge **Sales** \> **Last Year Sales**.  
    

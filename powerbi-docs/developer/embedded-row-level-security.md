@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 09/18/2018
-ms.openlocfilehash: 60061d781542f8b5a3ef67a75e61d902459d4963
-ms.sourcegitcommit: ded8b85276e7eda166d6e67f72d1fe3d5e234745
+ms.date: 11/28/2018
+ms.openlocfilehash: 901c087c486598019e905598ee83382664842cc8
+ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46506770"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52578767"
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Brug sikkerhed på rækkeniveau med integreret Power BI-indhold
 
-Sikkerhed på rækkeniveau (Row Level Security eller RLS) kan bruges til at begrænse brugeradgang til data i dashboards, felter, rapporter og datasæt. Flere forskellige brugere kan arbejde med de samme artefakter og stadig få vist forskellige data. Integrering understøtter RLS.
+**Sikkerhed på rækkeniveau (Row Level Security eller RLS)** kan bruges til at begrænse brugeradgang til data i dashboards, felter, rapporter og datasæt. Forskellige brugere kan arbejde med de samme artefakter og stadig få vist forskellige data. Integrering understøtter RLS.
 
-Du bør læse denne artikel, hvis du integrerer for brugere, der ikke anvender Power Bi (appen ejer dataene), hvilket er typisk ved et Independent Software Vendor-scenarie (ISV). Du skal konfigurere integreringstokenet for at tage højde for brugeren og rollen. Læs nedenfor, hvordan du gør.
+Du bør læse denne artikel, hvis du integrerer for brugere, der ikke anvender Power Bi (appen ejer dataene), hvilket er typisk ved et Independent Software Vendor-scenarie (ISV). Konfigurer integreringstokenet for at tage højde for brugeren og rollen.
 
 Hvis du integrerer til Power BI-brugere (brugeren ejer dataene) i din organisation, fungerer sikkerhed på rækkeniveau på samme måde, som det gør direkte i Power BI-tjenesten. Der er ikke mere, du skal gøre i dit program. Du kan finde flere oplysninger i [Sikkerhed på rækkeniveau med Power BI](../service-admin-rls.md).
 
@@ -32,14 +32,14 @@ Hvis du vil benytte sikkerhed på rækkeniveau, er der tre vigtige begreber, du 
 
 **Roller** – brugerne tilhører roller. En rolle er en objektbeholder til regler og kan have navne i stil med *Sales Manager* eller *Sales Rep*. Du opretter roller i Power BI Desktop. Du kan finde flere oplysninger i [Sikkerhed på rækkeniveau med Power BI Desktop](../desktop-rls.md).
 
-**Regler** – rollerne har regler, og reglerne er de faktiske filtre, der anvendes på dataene. Det kunne f.eks. være noget så simpelt som “Country = USA” eller noget, der er meget mere dynamisk.
+**Regler** – rollerne har regler, og reglerne er de faktiske filtre, der anvendes på dataene. Reglerne kan f.eks. være noget så simpelt som "Country = USA" eller noget, der er meget mere dynamisk.
 Resten af denne artikel indeholder et eksempel på, hvordan du opretter sikkerhed på rækkeniveau og derefter bruger det i et integreret program. Vi bruger PBIX-filen [Retail Analysis Sample](http://go.microsoft.com/fwlink/?LinkID=780547) i eksemplet.
 
 ![Eksempel på rapport](media/embedded-row-level-security/powerbi-embedded-report-example.png)
 
 ## <a name="adding-roles-with-power-bi-desktop"></a>Tilføj roller med Power BI Desktop
 
-I eksemplet Retail Analysis vises salgstallene for alle butikkerne i en detailkæde. Uden sikkerhed på rækkeniveau får områdecheferne vist de samme data, når de logger på og åbner rapporten. Den øverste ledelse har besluttet, at de enkelte områdechefer kun skal kunne se salgstallene for de butikker, som de styrer. Det kan sikkerhed på rækkeniveau bruges til.
+I **eksemplet Retail Analysis** vises salgstallene for alle butikkerne i en detailkæde. Uden sikkerhed på rækkeniveau får områdecheferne vist de samme data, når de logger på og åbner rapporten. Den øverste ledelse har besluttet, at de enkelte områdechefer kun skal kunne se salgstallene for de butikker, som de styrer. Ved hjælp af sikkerhed på rækkeniveau kan en øverste ledelse begrænse data på baggrund af en distriktschef.
 
 Sikkerhed på rækkeniveau oprettes i Power BI Desktop. Når datasættet og rapporten åbnes, kan vi skifte til diagramvisning for at se skemaet:
 
@@ -67,7 +67,7 @@ Sådan gør du:
 3. Angiv DAX-udtrykket **[District Manager] = USERNAME()** i tabellen **District**.
 
     ![DAX-udtryk til regel for sikkerhed på rækkeniveau](media/embedded-row-level-security/powerbi-embedded-new-role-dax.png)
-4. Du kan kontrollere, at reglen virker, ved at vælge **Vis som roller** under fanen **Udformning** og derefter vælge både rollen **Chef**, som du lige har oprettet, og rollen **Andre brugere**. Angiv **AndrewMa** som bruger.
+4. Du kan kontrollere, at reglen virker, ved at vælge **Vis som roller** under fanen **Udformning** og derefter vælge både rollen **Chef**, som du har oprettet, og rollen **Andre brugere**. Angiv **AndrewMa** som bruger.
 
     ![Dialogboksen Vis som roller](media/embedded-row-level-security/powerbi-embedded-new-role-view.png)
 
@@ -79,11 +79,11 @@ Når du anvender filteret på den måde, som vi gjorde her, vises alle de releva
 
 Nu hvor du har konfigureret roller i Power BI Desktop, er der nogle opgaver, du skal udføre i dit program, så du kan udnytte rollerne.
 
-Brugerne godkendes af dit program, og integreringstokens bruges til at give en bruger adgang til en bestemt rapport i Power BI Embedded. Der findes ingen specifikke oplysninger om, hvem brugeren er, i Power BI Embedded. Hvis sikkerhed på rækkeniveau skal fungere, skal du overføre ekstra kontekst som en del af dit integreringstoken i form af identiteter. Det gør du ved hjælp af [Integrer token](https://docs.microsoft.com/rest/api/power-bi/embedtoken)-API'en.
+Brugerne godkendes af dit program, og integreringstokens bruges til at give en bruger adgang til en bestemt rapport i Power BI Embedded. Der findes ingen specifikke oplysninger om, hvem brugeren er, i Power BI Embedded. Hvis sikkerhed på rækkeniveau skal fungere, skal du overføre ekstra kontekst som en del af dit integreringstoken i form af identiteter. Du kan overføre identiteterne ved hjælp af API'en [Integrer Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
-API'en accepterer en liste over identiteter med angivelse af de relevante datasæt. Hvis sikkerhed på rækkeniveau skal fungere, skal du overføre følgende som en del af identiteten.
+API'en accepterer en liste over identiteter med angivelse af de relevante datasæt. Hvis sikkerhed på rækkeniveau skal fungere, skal du overføre nedenstående dele som en del af identiteten.
 
-* **username (obligatorisk)** – dette er en streng, der kan bruges til at identificere brugeren, når reglerne for sikkerhed på rækkeniveau anvendes. Du kan kun angive én enkelt bruger. Dit brugernavn kan oprettes med *ASCII*-tegn.
+* **username (obligatorisk)** – en streng, der kan bruges til at identificere brugeren, når reglerne for sikkerhed på rækkeniveau anvendes. Du kan kun angive én enkelt bruger. Dit brugernavn kan oprettes med *ASCII*-tegn.
 * **roles (obligatorisk)** – en streng med de roller, der skal vælges, når reglerne for sikkerhed på rækkeniveau anvendes. Hvis du overfører mere end én rolle, skal de overføres som en strengmatrix.
 * **dataset (obligatorisk)** – det datasæt, der gælder for det artefakt, du integrerer.
 
@@ -106,7 +106,9 @@ var generateTokenRequestParameters = new GenerateTokenRequest("View", null, iden
 var tokenResponse = await client.Reports.GenerateTokenInGroupAsync("groupId", "reportId", generateTokenRequestParameters);
 ```
 
-Hvis du kalder REST-API'en, accepterer den opdaterede API nu en ekstra JSON-matrix med navnet **identities**, der indeholder et brugernavn, en liste over strengroller og en liste over strengdatasæt, f.eks.:
+Hvis du kalder REST-API'en, accepterer den opdaterede API nu en ekstra JSON-matrix med navnet **identities**, der indeholder et brugernavn, en liste over strengroller og en liste over strengdatasæt. 
+
+Brug følgende kode som et eksempel:
 
 ```json
 {
@@ -121,7 +123,7 @@ Hvis du kalder REST-API'en, accepterer den opdaterede API nu en ekstra JSON-matr
 }
 ```
 
-Nu hvor alle delene er samlet, vil brugerne kun få vist de data, de har tilladelse til at få vist ifølge sikkerheden på rækkeniveau, når de logger på programmet for at få vist dette artefakt.
+Nu hvor alle delene er samlet, vil brugerne kun se de data, de har tilladelse til at få vist ifølge sikkerheden på rækkeniveau, når de logger på programmet for at få vist dette artefakt.
 
 ## <a name="working-with-analysis-services-live-connections"></a>Arbejde med Analysis Services-liveforbindelser
 
@@ -129,36 +131,43 @@ Sikkerhed på rækkeniveau kan bruges med Analysis Services-liveforbindelser for
 
 Den faktiske identitet, der leveres for egenskaben brugernavn, skal være en Windows-bruger med tilladelser til Analysis Services-serveren.
 
-**Konfigurer en datagateway i det lokale miljø**
+### <a name="on-premises-data-gateway-configuration"></a>Konfigurer en datagateway i det lokale miljø
 
 En [datagateway i det lokale miljø](../service-gateway-onprem.md) bruges, når du arbejder med Analysis Services-liveforbindelser. Når du genererer et integreringstoken med et id angivet, skal den overordnede konto være angivet som en administrator af gatewayen. Hvis den overordnede konto ikke er angivet, anvendes sikkerhed på rækkeniveau ikke på egenskaben for dataene. En bruger uden administrative rettigheder kan levere roller, men skal angive sit eget brugernavn til den eksisterende identitet.
 
-**Brug af roller**
+### <a name="use-of-roles"></a>Brug af roller
 
 Roller kan angives med identiteten i et integreringstoken. Hvis der ikke angives nogen rolle, bruges det brugernavn, der blev angivet, til at løse de tilknyttede roller.
 
-**Brug af funktionen CustomData**
+### <a name="using-the-customdata-feature"></a>Brug af funktionen CustomData
 
-Funktionen CustomData gør det muligt at fortolke fritekst (streng) vha. egenskaben CustomData for forbindelsesstrengen, en værdi, der skal bruges af AS (via funktionen CUSTOMDATA()).
-Du kan bruge denne som en alternativ måde at tilpasse dataforbrug på.
+Funktionen CustomData fungerer kun for modeller, der findes i **Azure Analysis Services**, og den fungerer kun i **Connect-live**tilstand. Til forskel fra brugere og roller, kan funktionen CustomData ikke angives i en .pbix-fil. Når et token genereres med funktionen CustomData, skal du have et brugernavn.
+
+Funktionen CustomData gør det muligt for dig at tilføje et rækkefilter, når du får vist Power BI-data i dit program, mens du bruger **Azure Analysis Services** som datakilde (visning af Power BI-data, der er forbundet med Azure Analysis Services i dit program).
+
+Funktionen CustomData gør det muligt at fortolke fritekst (streng) vha. egenskaben CustomData for forbindelsesstrengen. Analysis Services bruger denne værdi via funktionen *CUSTOMDATA()*.
+
+Den eneste måde, du kan få dynamisk sikkerhed på rækkeniveau (som bruger dynamiske værdier til filterevaluering) i **Azure Analysis Services** er at bruge funktionen *CUSTOMDATA()*.
+
 Du kan bruge den i rollen DAX-forespørgsel, og du kan bruge den uden en rolle i en DAX-målingsforespørgsel.
 Funktionen CustomData er en del af vores tokengenerations funktionalitet for følgende artefakter: dashboard, rapport og felt. Dashboards kan have flere CustomData-identiteter (én pr. felt/model).
 
-> [!NOTE]
-> Funktionen CustomData fungerer kun for modeller, der findes i Azure Analysis Services, og den fungerer kun i livetilstand. Til forskel fra brugere og roller, kan datafunktionen ikke angives i en .pbix-fil. Når et token genereres med den brugerdefinerede datafunktion, skal du have et brugernavn.
-
-**CustomData SDK-tilføjelser**
+#### <a name="customdata-sdk-additions"></a>CustomData SDK-tilføjelser
 
 Strengegenskaben CustomData blev føjet til vores effektive identitet i tokengenerationsscenariet.
 
-        [JsonProperty(PropertyName = "customData")]
-        public string CustomData { get; set; }
+```json
+[JsonProperty(PropertyName = "customData")]
+public string CustomData { get; set; }
+```
 
 Identiteten kan oprettes med brugerdefinerede data vha. følgende kald:
 
-        public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
+```csharp
+public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null);
+```
 
-**CustomData SDK-forbrug**
+#### <a name="customdata-sdk-usage"></a>CustomData SDK-forbrug
 
 Hvis du kalder REST-API'en, kan du tilføje brugerdefinerede data i hver enkelt identitet, f.eks.:
 
@@ -176,14 +185,68 @@ Hvis du kalder REST-API'en, kan du tilføje brugerdefinerede data i hver enkelt 
 }
 ```
 
+Her er trinnene, så du kan begynde at konfigurere funktionen CustomData() med dit Power BI Embedded-program.
+
+1. Opret din Azure Analysis Services-database. Log på din Azure Analysis Services-server via [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-2017).
+
+    ![Opret en Azure Analysis Services-database](media/embedded-row-level-security/azure-analysis-services-database-create.png)
+
+    ![Analysis Services-database](media/embedded-row-level-security/azure-analysis-services-database.png)
+
+2. Opret en rolle på Analysis Services-serveren.
+
+    ![Opret rolle](media/embedded-row-level-security/azure-analysis-services-database-create-role.png)
+
+3. Angiv dine **generelle** indstillinger.  Her angiver du **rollenavn** og angiver databasetilladelserne til **Skrivebeskyttet**.
+
+    ![Opret rolle – angiv generelle indstillinger](media/embedded-row-level-security/azure-analysis-services-database-create-role-general-settings.png)
+
+4. Angiv indstillingerne for **Medlemskab**. Her kan du tilføje de brugere, der berøres af denne rolle.
+
+    ![Opret rolle – angiv indstillinger for medlemskab](media/embedded-row-level-security/azure-analysis-services-database-create-role-membership.png)
+
+5. Angiv din DAX-forespørgsel for **rækkefiltre** ved hjælp af funktionen*CUSTOMDATA()*.
+
+    ![Opret rolle – angiv rækkefiltre](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
+
+6. Byg en PBI-rapport, og publicer den i et arbejdsområde med dedikeret kapacitet.
+
+    ![Eksempel på PBI-rapport](media/embedded-row-level-security/rls-sample-pbi-report.png)
+
+7. Brug Power BI-API'er til at anvende funktionen CustomData i dit program.  Når et token genereres med funktionen CustomData, skal du have et brugernavn. Brugernavnet skal være lig med UPN for masterbrugeren. Masterbrugeren skal være medlem af den eller de roller, du har oprettet. Hvis der ikke er angivet nogen roller, bruges alle de roller, masterbrugeren er medlem af, til evaluering af sikkerhed på rækkeniveau.
+
+    > [!Note]
+    > Når du er klar til at udrulle dit program til produktion, må feltet eller indstillingen for masterbrugerkontoen ikke være synlig for slutbrugeren.
+
+    Få vist den [kode](#customdata-sdk-additions), der skal føjes til funktionen CustomData.
+
+8. Du kan nu få vist rapporten i dit program, før du anvender CustomData-værdierne, for at se alle de data rapporten indeholder.
+
+    ![Inden CustomData anvendes](media/embedded-row-level-security/customdata-before.png)
+
+    Derefter skal du anvende Customdata-værdierne for at se, hvordan rapporten viser et andet sæt data.
+    ![Når CustomData er anvendt](media/embedded-row-level-security/customdata-after.png)
+
+## <a name="using-rls-vs-javascript-filters"></a>Brug af sikkerhed på rækkeniveau i forhold til JavaScript-filtre
+
+Når du beslutter dig for at filtrere dine data i en rapport, kan du bruge **RLS (sikkerhed på rækkeniveau)** eller **JavaScript-filtre**.
+
+[Sikkerhed på rækkeniveau](../service-admin-rls.md) er en funktion, der filtrerer data på datamodelniveau. Din backend-datakilde styrer dine RLS-indstillinger. Den integrerede tokengeneration, der er baseret på din datamodel, angiver brugernavnet og rollerne for sessionen. Den kan ikke tilsidesættes, fjernet eller styres af koden på klientsiden, og derfor anses den for at være sikker. Vi anbefaler brugen af RLS til filtrering af data på en sikker måde. Du kan filtrere data med RLS ved hjælp af en af nedenstående indstillinger.
+
+* [Konfiguration af roller i en Power BI-rapport](../desktop-rls.md).
+* Konfiguration af roller på datakildeniveau (kun direkte forbindelse til Analysis Services).
+* Ved hjælp af programmering med et [Integreringstoken](https://docs.microsoft.com/rest/api/power-bi/embedtoken/datasets_generatetokeningroup) via `EffectiveIdentity`. Når du bruger et integreringstoken, går det faktiske filter gennem integreringstokenet for en bestemt session.
+
+[JavaScript-filtre](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) bruges til at tillade brugeren at forbruge en reduceret, omfangsangivet eller filtreret visning af dataene. Men brugeren stadig har adgang til modelskematabeller, -kolonner og -målinger og kan potentielt få adgang til alle dataene der. Begrænset dataadgang kan kun anvendes med sikkerhed på rækkeniveau og ikke via filtrerings-API'er på klientsiden.
+
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
-* Tildeling af brugere til roller i Power BI-tjenesten påvirker ikke sikkerheden på rækkeniveau, når du bruger et integreringstoken.
-* Selvom Power BI-tjenesten ikke anvender indstillingen for sikkerhed på rækkeniveau på administratorer eller medlemmer med redigeringsrettigheder, vil den blive anvendt på dataene, når du angiver en identitet med et integreringstoken.
+* Tildeling af brugere til roller i Power BI-tjenesten påvirker ikke sikkerheden på rækkeniveau, når du anvender et integreringstoken.
+* Selvom Power BI-tjenesten ikke anvender indstillingen for sikkerhed på rækkeniveau for administratorer eller medlemmer med redigeringsrettigheder, vil den blive anvendt på dataene, når du angiver en identitet med et integreringstoken.
 * Analysis Services-liveforbindelser understøttes på lokale servere.
 * Direkte forbindelser i Azure Analysis Services understøtter filtrering efter roller. Dynamisk filtrering kan udføres ved hjælp af CustomData.
 * Hvis der ikke skal bruges sikkerhed på rækkeniveau på det underliggende datasæt, må GenerateToken-anmodningen **ikke** indeholde en eksisterende identitet.
-* Hvis det underliggende datasæt er en cloudmodel (cachelagret model eller DirectQuery), skal den eksisterende identitet indeholde mindst én rolle, eller vil der ikke blive tildelt en rolle.
+* Hvis det underliggende datasæt er en cloudmodel (cachelagret model eller DirectQuery), skal den eksisterende identitet indeholde mindst én rolle, ellers tildeles der ikke en rolle.
 * En liste over identiteter gør det muligt at have flere identitetstokens ved integrering i dashboardet. For alle andre artefakter vil listen indeholde en enkelt identitet.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

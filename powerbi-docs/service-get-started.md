@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 554e9f3bbea5a1da6ac43f21f72b054a26849f23
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 6de9427a11ae5aa43563ce9e21371d231a1dd3a9
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908735"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900523"
 ---
 # <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Selvstudium: Kom i gang med Power BI-tjenesten (app.powerbi.com)
 Dette selvstudium hjælper dig med at komme i gang med ***Power BI-tjenesten***. Hvis du vil have et overblik over, hvordan Power BI-tjenesten passer sammen med de andre Power BI-tilbud, anbefaler vi kraftigt, at du starter med at læse [Hvad er Power BI](power-bi-overview.md).
@@ -158,5 +158,5 @@ Nu, hvor du har gennemført selvstudiet, kan du slette datasættet, rapporten og
 Er du klar til at prøve mere?  Her er nogle fantastiske måder at udforske Power BI på.
 
 > [!div class="nextstepaction"]
-> [Opret forbindelse til de onlinetjenester, du bruger](consumer/end-user-connect-to-services.md)
+> [Opret forbindelse til de onlinetjenester, du bruger](service-connect-to-services.md)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2a23a725ecad5641c3f82fa4c57ee1a0bc951e28
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: e0721efaaca879ffb2915315af9aea4dbafca3ca
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670340"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900238"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakilder til Power BI-tjenesten
 Dataene er i hjertet af Power BI. Når du udforsker data, opretter diagrammer og dashboards, stiller spørgsmål med Spørgsmål og svar, får alle disse visualiseringer og svar, som du ser, rent faktisk deres underliggende data fra et datasæt. Men hvor kommer dette datasæt fra? Fra en datakilde.
@@ -44,7 +44,7 @@ Det gør også en stor forskel, hvor du gemmer dine filer. OneDrive for Business
 
 Indholdspakker indeholder alle data og rapporter, du har brug for – allerede forberedt. I Power BI er der to typer indholdspakker: Dem fra tjenester som Google Analytics, Marketo eller Salesforce og dem, der oprettes og deles med andre brugere i din organisation.
 
-**Tjenester** – Der findes rigtig mange tjenester med indholdspakker til Power BI, og der kommer hele tiden flere til. De fleste tjenester kræver, at du har en konto. Du kan få mere at vide i [Opret forbindelse til tjenester](consumer/end-user-connect-to-services.md).
+**Tjenester** – Der findes rigtig mange tjenester med indholdspakker til Power BI, og der kommer hele tiden flere til. De fleste tjenester kræver, at du har en konto. Du kan få mere at vide i [Opret forbindelse til tjenester](service-connect-to-services.md).
 
 **Organisatoriske** – Hvis du og andre brugere i din organisation har en Power BI Pro-konto, kan du oprette, dele og bruge indholdspakker. Du kan få mere at vide i [organisationsindholdspakker](service-organizational-content-pack-introduction.md).
 

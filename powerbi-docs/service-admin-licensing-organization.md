@@ -10,20 +10,16 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 861b9c411b3088b6c16b7ad601f374bd771b13ed
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: ce44e87144d9338fbd88f0bc7183daf1b5339b35
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52331982"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900468"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI-licenser i din organisation
 
-I Power BI-tjenesten har brugerne definerede funktioner, der er baseret på to typer licenser:
-
-* Power BI Pro-licenser **Pr. bruger** -  *og gratis licenser*. En Power BI Pro-licens giver adgang til alt indhold og alle funktioner i Power BI-tjenesten, herunder muligheden for at dele indhold og samarbejde med andre Pro-brugere. Det er kun Pro-brugere, der kan udgive og forbruge indhold fra apparbejdsområder, dele dashboards og abonnere på dashboards og rapporter. En gratis licens giver adgang til nogle af funktionerne i Power BI-tjenesten. Se [Funktioner i Power BI-tjenesten efter licenstype](service-features-license-type.md) for at få flere oplysninger.
-
-* **Kapacitetsbaserede** - *Power BI Premium-licenser*. Premium indeholder dedikeret kapacitet til at levere en mere ensartet ydeevne og understøtter større datamængder i Power BI. For individuelle brugere muliggør Premium også omfattende distribution af indhold for Pro-brugere uden at kræve Pro-licenser af modtagere, der får vist indholdet. Du kan finde flere oplysninger i [Hvad er Power BI Premium?](service-premium.md).
+[!INCLUDE [license-capabilities](includes/license-capabilities.md)]
 
 I denne artikel fokuseres der på licenser pr. bruger fra et administratorperspektiv.
 

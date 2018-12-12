@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 0ffcec94d015223df596aa6ac941f7400a89e747
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: daada8a7f69c600acf6fc45669ed6a42c2fdd831
+ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51718062"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52900652"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
@@ -95,7 +95,7 @@ Du kan også tjekke YouTube-kanalerne for at få mere at vide om nyheder og funk
 
 ### <a name="august-2017"></a>August 2017
 * Kend din målgruppe med [forbrugsdata for hver enkelt bruger](https://powerbi.microsoft.com/blog/introducing-per-user-usage-metrics-know-your-audience-and-amplify-your-impact/).
-* Kom i gang med [Power BI-tjenesteapps](consumer/end-user-connect-to-services.md) til onlinetjenester.
+* Kom i gang med [Power BI-tjenesteapps](service-connect-to-services.md) til onlinetjenester.
 * Oprettelse af forbindelse til IBM Netezza med datagatewayen i det lokale miljø via både forbindelsestilstanden Import og DirectQuery.
 * [Dynamisk RLS](developer/embedded-row-level-security.md) understøttes nu af Power BI Embedded.
 * Avanceret [filtrerings-API](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/UsingAdvancedFilterAPI.md) er nu føjet til 1.7-versionen af API'en til brugerdefinerede visuelle elementer.

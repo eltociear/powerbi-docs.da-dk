@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4379caf909360688e602601795066f51c9660633
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.openlocfilehash: fe81c8e972a4fe36f88da495e4e0dce97a39d32c
+ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157074"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52830303"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration af Power BI – ofte stillede spørgsmål
 
@@ -174,11 +174,15 @@ Din konto skal være markeret som en **Global administrator** i Office 365 eller
 
 ### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Hvad er processen til administration af en lejer, der er oprettet af Microsoft for brugerne?
 
-Hvis en lejer blev oprettet af Microsoft, kan du gøre krav på og administrere den pågældende lejer vha. følgende trin:
+Når en bruger melder sig til en cloudtjeneste, som bruger Azure AD, via selvbetjening, føjes vedkommende til en ikke-administreret Azure AD-mappe, der er baseret på vedkommendes maildomæne. Du kan gøre krav på og administrere den lejer, der blev oprettet ved hjælp af en proces, der er kendt som en *administrationsovertagelse*. Den form for overtagelse, du foretager, afhænger af, om der er en eksisterende administreret lejer knyttet til dit domæne:
 
-1. Deltag i lejeren ved at tilmelde dig Power BI med et mailadressedomæne, der stemmer overens med det lejerdomæne, du vil administrere. Hvis Microsoft f.eks. oprettede lejeren contoso.com, skal du forbinde lejeren med en mailadresse, der slutter med @contoso.com.
+* Brug en *intern overtagelse* til at oprette en ny administreret lejer for domænet.
 
-1. Få administratorkontrol ved at bekræfte ejerskabet over domænet: Når du har adgang til lejren, kan du forfremme dig selv til *Global Administrator* ved at bekræfte ejerskabet over domænet. For at gøre dette skal du følgende trinnene i [dokumentationen til Office 365](/office365/admin/misc/become-the-admin).
+* Brug en *ekstern overtagelse* til at flytte domænet til en eksisterende administreret lejer.
+
+Du kan finde flere oplysninger under [Overtag en ikke-administrerede mappe som administrator i Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover).
+
+Når du foretager en ekstern overtagelse, placeres Power BI-indhold, der blev oprettet før overtagelsen, i et [arkiveret arbejdsområde i Power BI](service-admin-power-bi-archived-workspace.md). Du skal manuelt overføre det indhold, du vil bruge i den nye lejer.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Kan jeg kontrollere den Office 365-lejer, som brugerne er føjet til, hvis jeg har flere domæner?
 
