@@ -1,5 +1,5 @@
 ---
-title: Administrer en gateway til Power BI
+title: Administrer en Power BI-gateway i det lokale miljø
 description: Få mere at vide, hvordan du administrerer en gateway, så du kan oprette forbindelse til lokale data i Power BI.
 author: mgblythe
 manager: kfile
@@ -9,15 +9,16 @@ ms.component: powerbi-gateways
 ms.topic: conceptual
 ms.date: 04/18/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8369566712e24c035ac0ec07cc7d5a219041a400
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 21eaca02502ae67ba5ecddff8e1b8890e0a049af
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34755156"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026379"
 ---
-# <a name="manage-a-power-bi-gateway"></a>Administrer en Power BI-gateway
+# <a name="manage-a-power-bi-on-premises-gateway"></a>Administrer en Power BI-gateway i det lokale miljø
 
 Når du har [installeret en Power BI-datagateway](service-gateway-install.md), kan du administrere den på baggrund af dine krav. I dette emne kan du få mere at vide om, hvordan du tilføjer og fjerner datakilder og brugere, genstarter en gateway samt overfører, gendanner, overtager og fjerner en gateway. 
 

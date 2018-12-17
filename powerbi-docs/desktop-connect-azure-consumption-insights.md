@@ -1,21 +1,22 @@
 ---
-title: Opret forbindelse til Azure Consumption Insights-data i Power BI Desktop (beta)
+title: Opret forbindelse til Azure Consumption Insights-data (beta)
 description: Du kan nemt oprette forbindelse til Azure og få indsigt i forbrugs- og brugsdata ved hjælp af Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c770423b81c6d5cd4135539d8d44c3cc46f8b6fe
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 622a236ba2a240202a570a07e7b6abb201da9dde
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619603"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026774"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Opret forbindelse til Azure Consumption Insights i Power BI Desktop (beta)
 Ved hjælp af connectoren **Azure Consumption Insights** kan du bruge **Power BI Desktop** til at oprette forbindelse til Azure og få detaljerede data og oplysninger om din organisations brug af Azure-tjenester. Du kan også oprette målinger, brugerdefinerede kolonner og visuelle elementer, som kan rapporteres og deles, om din organisations brug af Azure. Denne version af connectoren **Azure Consumption and Insights** er en betaversion, som måske ændres.
@@ -50,12 +51,12 @@ Derefter skal du angive din *adgangsnøgle* for at oprette forbindelse.
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
 Når du har angivet din *adgangsnøgle* og valgt **Opret forbindelse**, åbnes vinduet **Navigator** med de ni tabeller, der er tilgængelige for dig: 
-* **Budgetter**: Viser oplysninger om budget, så du kan se de faktiske omkostninger eller brug sammenlignet med eksisterende budgetmål. 
+* **Budgetter**: Viser budgetoplysninger, så du kan se de faktiske omkostninger eller brug sammenlignet med eksisterende budgetmål. 
 * **MarketPlace**: Viser forbrugsbaserede gebyrer for Azure Marketplace.
 * **PriceSheets**: Viser gældende priser pr. måler for en tilmelding.
 * **RICharges**: Viser gebyrer knyttet til dine reserverede instanser i løbet af de sidste 24 måneder.
-* **RIRecommendations_Single**: Viser anbefalinger til køb af reserverede instanser på baggrund af dine brugstendenser for et enkelt abonnement i løbet af 7, 30 eller 60 dage.
-* **RIRecommendations_Shared**: Viser anbefalinger til køb af reserverede instanser på baggrund af dine brugstendenser på tværs af alle abonnementer i løbet af 7, 30 eller 60 dage.
+* **RIRecommendations_Single**: Viser anbefalinger til køb af reserverede instanser på baggrund af dine brugstendenser for et enkelt abonnement i løbet af de sidste 7, 30 eller 60 dage.
+* **RIRecommendations_Shared**: Viser anbefalinger til køb af reserverede instanser på baggrund af dine brugstendenser på tværs af alle dine abonnementer i løbet af de sidste 7, 30 eller 60 dage.
 * **RIUsage**: Viser oplysninger om forbrug for dine eksisterende reserverede instanser i løbet af den sidste måned.
 * **Oversigter**: Viser en månedlig oversigt over saldi, nye køb, gebyrer for Azure Marketplace-tjenesten, justeringer og gebyrer for overforbrug.
 * **UsageDetails**: Viser en opdeling af forbrugt antal og anslåede gebyrer for en tilmelding.
@@ -144,7 +145,7 @@ Mange dashboards indeholder flere tabeller, der bruges til opslag eller filtreri
    
     ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
-### <a name="step-5-verify-your-visuals-and-adjust-field-formatting-as-needed"></a>Trin 5: Kontrollér dine visuelle elementer, og juster feltformatering efter behov
+### <a name="step-5-verify-your-visuals-and-adjust-field-formatting-as-needed"></a>Trin 5: Kontrollér dine visualiseringer, og juster feltformatering efter behov
 Nu, hvor du er nået så langt, fungerer de fleste af dine oprindelige visuelle elementer, tabeller, og detaljeadgange som forventet. Men du skal måske foretage et par mindre justeringer af formateringen, så det hele ser ud, som du ønsker det. Brug lidt tid på at kigge på dine dashboards og visuelle elementer for at sikre, at de ser ud, som du ønsker det.
 
 ## <a name="using-the-azure-consumption-and-insights-aci-api-to-get-consumption-data"></a>Brug ACI-API'en (Azure Consumption and Insights) til at hente forbrugsdata

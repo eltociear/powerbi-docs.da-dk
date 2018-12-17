@@ -1,21 +1,22 @@
 ---
-title: Brug indsigter i Power BI Desktop til at forklare stigninger eller fald i visualiseringer (prøveversion)
+title: Brug indsigter til at forklare stigninger eller fald i visualiseringer (eksempelvisning)
 description: Du kan let få indsigt i forøgelser eller reduktioner i Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/01/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: c01af129e15025b97925f59532d1be7a6671b47f
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: ca4e1ac208b0056c6a3052e77769624118f0e54f
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909611"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026678"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-explain-increases-and-decreases-seen-in-visuals-preview"></a>Brug indsigter i Power BI Desktop til at forklare stigninger eller fald i visualiseringer (prøveversion)
 

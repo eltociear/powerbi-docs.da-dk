@@ -1,21 +1,21 @@
 ---
 title: Power BI til rapportforbrugere
-description: Skal du i gang med Power BI? Lær de forskellige produkter og tjenester, der udgør Power BI, at kende, og se, hvad du kan bruge dem til.
+description: Skal du i gang med Power BI? Lær funktionerne og egenskaberne i Power BI at kende, og se, hvad du kan bruge dem til som forbruger eller slutbruger af Power BI.
 author: mihart
 manager: kvivek
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: landing-page
-ms.date: 10/11/2018
+ms.date: 11/07/2018
 ms.author: mihart
-layout: landingpage
+layout: LandingPage
 LocalizationGroup: Get started
-ms.openlocfilehash: 566511622ffd167d3389ab0ba290671f577a759f
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: c3a506b8693560406b6fa961f4341b77f2745690
+ms.sourcegitcommit: 2882b8962ed03c188257c042e537c76b052545c5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396562"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53111494"
 ---
 # <a name="power-bi-for-consumers"></a>Power BI til forbrugere
 Som *slutbruger* eller *forbruger* er du den person, der modtager dashboards, rapporter og apps fra kolleger. Du arbejder i ***Power BI-tjenesten*** for at gennemse og interagere med dette indhold for at kunne træffe forretningsbeslutninger.
@@ -47,8 +47,8 @@ Få vist en <a href="end-user-report-open.md">rapport</a> | <a href="end-user-da
                                                                         <div class="cardText"> 
                                                                                       <h3>Få mere at vide om Power BI</h3> 
                                                                                       <p></p>
-                                                                                            <a href="end-user-basic-concepts.md">Grundlæggende begreber</a><br/>
-                                                                                            <a href="end-user-experience.md">Navigation i Power BI-tjenesten</a><br/> 
+                                                                                            <a href="end-user-basic-concepts.md">Forstå de grundlæggende begreber</a><br/>
+                                                                                            <a href="end-user-experience.md">Find vej i Power BI-tjenesten</a><br/> 
                                                                                             <a href="../power-bi-overview.md">Få mere at vide om alle de forskellige Power BI-værktøjer</a><br/> 
                                                                                             <!--<a href="end-user-faq.md">FAQ: Frequently Asked Questions</a> -->
                                                                         </div> 
@@ -63,7 +63,7 @@ Få vist en <a href="end-user-report-open.md">rapport</a> | <a href="end-user-da
                                                                         <div class="cardText"> 
                                                                                       <h3>Avancerede opgaver</h3> 
                                                                                       <p></p>
-                                                                                            <a href="end-user-q-and-a.md">Søgefelt med naturligt sprog til Spørgsmål og svar</a><br/> 
+                                                                                            <a href="end-user-q-and-a.md">Få mere at vide om, hvordan du bruger søgefeltet med naturligt sprog til Spørgsmål og svar</a><br/> 
                                                                                             <a href="end-user-focus.md">Skift visningsindstillinger</a><br/> 
                                                                                             <a href="end-user-report-filter.md">Få mere at vide om, hvordan du bruger rapportfiltre</a><br> 
                                                                                             <a href="end-user-insights.md">Generér automatisk indsigt</a><br/> 

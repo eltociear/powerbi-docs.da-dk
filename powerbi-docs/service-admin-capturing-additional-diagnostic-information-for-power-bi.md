@@ -9,13 +9,14 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 06/28/2017
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 76860e740d43a1907692a7cd4fed1a6df68c93d4
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 8a8ec433a6ebb620593648cdb222df0f60b2f21e
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34239216"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025142"
 ---
 # <a name="capturing-additional-diagnostic-information"></a>Hent yderligere diagnosticeringsoplysninger
 ## <a name="capturing-additional-diagnostic-information-for-power-bi"></a>Hent yderligere diagnosticeringsoplysninger til Power BI
@@ -26,17 +27,17 @@ Disse instruktioner indeholder to potentielle muligheder for manuelt at indsamle
 2. Åbn Edge-udviklerværktøjerne ved at trykke på F12.
 3. Vinduet med udviklerværktøjer åbnes: 
    
-   ![](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
-4. Gå til fanen Network. Her vises trafik, der allerede er hentet. 
+   ![Udviklerværktøjer](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
+4. Gå til fanen Netværk. Her vises trafik, der allerede er hentet. 
    
-   ![](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
+   ![Fanen Edge-netværk](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
 5. Du kan navigere i vinduet og gengive et eventuelt problem. Du kan altid skjule og vise vinduet med udviklerværktøjer under sessionen ved at trykke på F12.
 6. Hvis du vil stoppe hentningen, kan du vælge den røde kvadrat under netværksfanen i området med udviklerværktøjer.
    
-   ![](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
+   ![Stop hentningen](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
 7. Vælg disketteikonet, og indstil til **Export as HAR**
    
-   ![](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
+   ![Eksportér filen](media/service-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
 8. Angiv et filnavn, og gem HAR-filen.
    
     HAR-filen indeholder alle oplysninger om netværksanmodninger mellem browservinduet og Power BI.  Dette omfatter aktivitets-id'er for hver anmodning, det præcise tidsstempel for hver anmodning og alle fejloplysninger, der returneres til klienten.  Denne sporingen vil også indeholde de data, der bruges til at udfylde de visuelle elementer, der vises på skærmen.

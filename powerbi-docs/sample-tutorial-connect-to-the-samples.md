@@ -1,37 +1,36 @@
 ---
-title: Brug af Power BI-eksempler
-description: Brug af Power BI-eksempler
+title: Opret forbindelse til eksemplerne i Power BI-tjenesten
+description: Få mere at vide om, hvordan du installerer og udforsker eksempler i Power BI-tjenesten.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/23/2018
+ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 10ba57b203c100dffafa6563e85fd06b7af2eecb
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: fc27054b79497658249b49d832a81223987b7be8
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51718016"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180961"
 ---
-# <a name="the-power-bi-samples"></a>Power BI-eksemplerne
+#  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Opret forbindelse til eksemplerne i Power BI-tjenesten
 
-Vi anbefaler at starte med artiklen [Eksempeldatasæt til Power BI](sample-datasets.md). I den artikel lærer du alt om eksemplerne. Hvordan du får dem, hvor du gemmer dem, hvordan du bruger dem og nogle af historierne, som hvert eksempel fortæller. Når du har fået styr på det grundlæggende, så vend tilbage til dette selvstudium.   
+Med denne vejledning lærer du, hvordan du kan: 
+- importere en eksempelindholdspakke, føje den til Power BI-tjenesten og åbne indholdet. En *indholdspakke* er en eksempeltype, hvor datasættet er pakket sammen med et dashboard og en rapport. 
+- åbne en .pbix-eksempelfil i Power BI Desktop.
 
-### <a name="prerequisites"></a>Forudsætninger
+Hvis du gerne vil have flere baggrundsoplysninger, inden du går i gang, anbefaler vi, at du starter med artiklen [Eksempeldatasæt til Power BI](sample-datasets.md). I den artikel lærer du alt om eksemplerne. Hvordan du får dem, hvor du gemmer dem, hvordan du bruger dem og nogle af historierne, som hvert eksempel fortæller. Når du har fået styr på det grundlæggende, så vend tilbage til dette selvstudium.   
+
+## <a name="prerequisites"></a>Forudsætninger
 Eksemplerne er tilgængelige for Power BI-tjenesten og Power BI Desktop. Hvis du vil følge med, bruger vi eksemplet på detailhandelsanalyse.
 
 Indholdspakke med eksemplet *Retail Analysis*, der bruges i dette selvstudium, består af et dashboard, en rapport og et datasæt.
 Lær denne indholdspakke og dens scenarie at kende ved at [tage en rundvisning af Retail Analysis-eksemplet](sample-retail-analysis.md), før du starter.
-
-## <a name="about-this-tutorial"></a>Om dette selvstudium
-Med denne vejledning lærer du, hvordan du kan 
-- importere et eksempel på en indholdspakke, føje den til Power BI-tjenesten og åbne indholdet. En *indholdspakke* er en eksempeltype, hvor datasættet er pakket sammen med et dashboard og en rapport. 
--  åbne en .pbix-eksempelfil i Power BI Desktop.
-
 
 ## <a name="samples-and-power-bi-service"></a>Eksempler og Power BI-tjenesten
 

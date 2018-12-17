@@ -1,0 +1,117 @@
+---
+title: Føj en CDM-mappe til Power BI som et dataflow
+description: Konfigurer et apparbejdsområde for at gemme definitionen af dataflowet og datafilerne i Azure Data Lake Storage Gen2
+author: davidiseminger
+manager: kfile
+ms.reviewer: ''
+ms.service: powerbi
+ms.component: powerbi-service
+ms.topic: conceptual
+ms.date: 12/06/2018
+ms.author: davidi
+LocalizationGroup: Data from files
+ms.openlocfilehash: ce2f993e2745cb0e5b359bfbc492e6e7aea25493
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53181327"
+---
+# <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)
+
+I Power BI kan du tilføje CEM-mapper (Common Data Model), der er gemt i organisationens Azure Data Lake Store Gen2 som dataflow. Når du opretter et dataflow fra en CDM-mappe, kan du bruge **Power BI Desktop** og **Power BI-tjenesten** til at oprette datasæt, rapporter, dashboards og apps, der er baseret på de data, som du placerer i CDM-mapper.
+
+![Dataflow fra CDM-mappe](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_01.jpg)
+
+Der er et par krav til oprettelse af dataflow fra CDM-mapper, som beskrevet på følgende liste:
+
+* Oprettelse af dataflow fra CDM-mapper er *kun* tilgængeligt i den [nye arbejdsområdeoplevelse](service-create-the-new-workspaces.md). 
+* Tilføjelse af en CDM-mappe til Power BI kræver, at brugeren, der tilføjer mappen, skal have [autorisationer til CDM-mappen og dens filer](https://go.microsoft.com/fwlink/?linkid=2029121).
+* Du skal være tildelt læse- og kørselstilladelser til alle filer og mapper i CDM-mappen for at føje dem til Power BI.
+
+I følgende afsnit beskrives, hvordan du opretter et dataflow fra en CDM-mappe.
+
+> [!NOTE]
+> Dataflowfunktionaliteten er tilgængelig som en prøveversion og kan ændres og opdateres, før den bliver offentligt tilgængelig.
+
+## <a name="create-a-dataflow-from-a-cdm-folder"></a>Opret et dataflow fra en CDM-mappe
+
+Hvis du vil i gang med at oprette et dataflow fra en CDM-mappe, skal du åbne **Power BI-tjenesten** og vælge et **apparbejdsområde**i navigationsruden til venstre. Du kan også oprette et nyt arbejdsområde, hvor du kan oprette dit nye dataflow.
+
+![Opret et dataflow i Power BI-tjenesten](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_02.jpg)
+
+På den viste skærm skal du vælge at **oprette og tilknytte** som vist på følgende billede.
+
+![Opret og tilknyt nyt dataflow](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_03.jpg)
+
+På det skærmbillede, der derefter vises, kan du navngive dit dataflow, angive en beskrivelse af dataflowet og angive stien til CDM-mappen i organisationens Azure Data Lake Gen2-konto. Læs afsnittet i den artikel, der beskriver [hvordan du finder stien til CDM-mappen](service-dataflows-configure-workspace-storage-settings.md#get-the-uri-of-stored-dataflow-files). 
+
+![Dataflow fra CDM-mappe](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_01.jpg)
+
+Når du har angivet oplysningerne, skal du vælge **Opret og tilknyt** for at oprette dataflowet.
+
+Dataflow fra CDM-mapper er markeret med ikonet *ekstern*, når det vises i Power BI. I næste afsnit beskriver vi forskellene mellem standarddataflow og dataflow, der er oprettet ud fra CDM-mapper.
+
+Når tilladelser er angivet korrekt, som beskrevet tidligere i denne artikel, kan du oprette forbindelse til dit dataflow i **Power BI Desktop**.
+
+
+## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
+
+Når du arbejder med tilladelser til et dataflow, der er oprettet ud fra en CDM-mappe, er processen den samme som for eksterne datakilder i Power BI. Tilladelserne administreres i datakilden og ikke i Power BI. Tilladelser skal være angivet korrekt i selve datakilden, f.eks. som et dataflow, der er oprettet ud fra en CDM-mappe, for at kunne fungere korrekt med Power BI.
+
+Følgende lister hjælper med at tydeliggøre, hvordan dataflow fra CDM-mapper fungerer med Power BI.
+
+Power BI Pro, Premium og integrerede arbejdsområder:
+* Dataflow fra CDM-mapper kan ikke redigeres
+* Tilladelser til at læse et dataflow, der er oprettet ud fra en CDM-mappe administreres af ejeren af CDM-mappen og ikke af Power BI
+
+Power BI Desktop:
+* Det er kun brugere, der har tilladelse til både det arbejdsområde, hvor dataflowet blev oprettet, og CDM-mappen, der kan få adgang til data fra Power BI Dataflow-connectoren
+
+
+Punkterne på følgende liste skal også tages i betragtning:
+
+* Oprettelse af dataflow fra CDM-mapper er *kun* tilgængelig i den [nye arbejdsområdeoplevelse](service-create-the-new-workspaces.md)
+* Linkede objekter er ikke tilgængelige for dataflow, der er oprettet via CDM-mapper
+
+
+**Power BI Desktop**-kunderne kan ikke få adgang til dataflow, der er gemt under Azure Data Lake Storage Gen2-kontoen, medmindre de er ejer af dataflowet, eller de udtrykkeligt er godkendt til dataflowets CDM-mappe. Se følgende eksempel:
+
+1.  Anna opretter et nyt apparbejdsområde og konfigurerer det til at gemme dataflow fra en CDM-mappe.
+2.  Ben, der også er medlem af det arbejdsområde, Anna har oprettet, ønsker at bruge Power BI Desktop og dataflowconnectoren til at hente data fra det dataflow, Anna har oprettet.
+3.  Ben får vist en fejl, da han ikke er tilføjetdataflowets SCM-mappe som en godkendt bruger data lake.
+
+    ![Fejl under forsøg på at bruge dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
+
+Problemet kan løses ved, at Ben tildeles læsetilladelser til CDM-mappen og dens filer. Du kan få mere at vide om, hvordan du give adgang til CDM-mappen i [denne artikel](https://go.microsoft.com/fwlink/?linkid=2029121).
+
+
+## <a name="next-steps"></a>Næste trin
+
+I denne artikel får du vejledning i, hvordan du konfigurerer arbejdsområdelager til dataflow. Du kan finde flere oplysninger i følgende artikler:
+
+Du kan finde flere oplysninger om dataflow, CDM og Azure Data Lake Storage Gen2 i følgende artikler:
+
+* [Integration af dataflow og Azure Data Lake (eksempelvisning)](service-dataflows-azure-data-lake-integration.md)
+* [Konfigurer indstillinger for dataflow for arbejdsområde (eksempelvisning)](service-dataflows-configure-workspace-storage-settings.md)
+* [Opret forbindelse til Azure Data Lake Storage Gen2 til dataflowlager (eksempelvisning)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
+
+Du kan finde oplysninger om dataflow generelt i disse artikler:
+
+* [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
+* [Brug beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
+* [Brug dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
+
+Du kan læse følgende artikler, hvis du vil vide mere om Azure Storage:
+* [Sikkerhedsvejledning til Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
+* [Konfiguration af planlagt opdatering](refresh-scheduled-refresh.md)
+* [Kom i gang med Github-eksempler fra Azure Data Services](https://aka.ms/cdmadstutorial)
+
+Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:
+* [Common Data Model – oversigt](https://docs.microsoft.com/powerapps/common-data-model/overview)
+* [CDM-mapper](https://go.microsoft.com/fwlink/?linkid=2045304)
+* [Definition af CDM-modelfil](https://go.microsoft.com/fwlink/?linkid=2045521)
+
+Du kan altid prøve [at stille spørgsmål i Power BI-community'et](http://community.powerbi.com/).
+

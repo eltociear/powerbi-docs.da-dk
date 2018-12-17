@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: d7e39d0ee048f51066783b1cc9c98333e0352dcf
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 9e7f43780048a222b9d024b39d983968f45c59f7
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267288"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180570"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi-preview"></a>Oprettelse og brug af dataflow i Power BI (prøveversion)
 
@@ -73,7 +73,7 @@ Når du vælger data til brug i objektet, kan du anvende datafloweditoren til at
 
 Når du vælger, hvilke data fra din kilde der skal bruges til dit objekt, kan du forme dit datavalg til den formular, der fungerer bedst til dit objekt, ved hjælp af redigering af en Power-forespørgsel, som ligner **Power-forespørgselseditor** i  **Power BI Desktop**. Du kan få mere at vide om Power-forespørgsel i [artiklen Oversigt over forespørgsel](desktop-query-overview.md) til Power BI Desktop. Power-forespørgsel er indbygget i Power BI Desktop som Power-forespørgselseditor. 
 
-Hvis du vil have vist den kode, som forespørgselseditoren opretter i hvert trin, eller du vil oprette din egen formningskode, kan du bruge **Avanceret editor**. 
+Hvis du vil have vist den kode, som forespørgselseditoren opretter i hvert trin, eller du vil oprette din egen formningskode, kan du bruge den **avancerede editor**. 
 
 ![Brug Avanceret editor](media/service-dataflows-create-use/dataflows-create-use_07b.png)
 
@@ -143,6 +143,10 @@ Du kan også bruge **søgelinjen** øverst i vinduet til hurtigt at finde navnet
 
 Når du vælger objektet og derefter vælger knappen **Indlæs**, vises objekterne i ruden **Felter** i **Power BI Desktop** og fungerer på samme måde som **tabeller** fra et hvilket som helst andet datasæt.
 
+## <a name="using-dataflows-stored-in-azure-data-lake-storage-gen2"></a>Brug af dataflow, der er gemt i Azure Data Lake Storage Gen2
+
+Nogle organisationer vil muligvis bruge deres eget lager til oprettelse og administration af dataflow. Du kan integrere dataflow i Azure Data Lake Storage Gen2, hvis du følger kravene og administrerer tilladelserne korrekt. Dokumentationen til alle krav i forbindelse med denne tilgang tager udgangspunkt i oversigtsdokumentet til [Integration af dataflow og Azure Data Lake (prøveversion)](service-dataflows-azure-data-lake-integration.md).
+
 
 ## <a name="troubleshooting-data-connections"></a>Fejlfinding af dataforbindelser
 
@@ -158,8 +162,9 @@ I denne artikel blev det beskrevet, hvordan du opretter dine egne **dataflow** o
 
 * [Selvbetjent dataforberedelse med dataflow](service-dataflows-overview.md)
 * [Brug af beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
-* [Brug af dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
+* [Brug dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
 * [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
+* [Integration af dataflow og Azure Data Lake (prøveversion)](service-dataflows-azure-data-lake-integration.md)
 
 Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:
 * [Common Data Model – oversigt](https://docs.microsoft.com/powerapps/common-data-model/overview)

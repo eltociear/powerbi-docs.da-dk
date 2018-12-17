@@ -1,21 +1,22 @@
 ---
-title: Analysér i Excel
+title: Analysér i Excel til Power BI
 description: Få mere at vide om, hvordan du analyserer Power BI-datasæt i Excel
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: d1ddb1eabb45fa0c93b04419524d7f4f194189bb
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: b33fafee2ef1f217a99b870e77c3823c6783a11d
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669123"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025942"
 ---
 # <a name="analyze-in-excel"></a>Analysér i Excel
 Der er tidspunkter, hvor du måske vil bruge Excel til at få vist og interagere med et datasæt, du har i Power BI. Det kan du gøre med **Analysér i Excel**, og du kan få adgang til pivottabel-, diagram- og udsnitsfunktioner i Excel, der er baseret på datasættet, der findes i Power BI.

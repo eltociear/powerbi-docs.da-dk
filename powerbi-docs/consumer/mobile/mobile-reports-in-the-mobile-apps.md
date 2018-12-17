@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/17/2018
 ms.author: maggies
-ms.openlocfilehash: 7a5c60eea81eeb3a1f4e8a7f5b807fd8c7bfb6b5
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 694ae2cd6f77fbcf898a984b135fb65b9163a43b
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547240"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180984"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -105,6 +105,16 @@ Når der er mulighed for *detaljeadgang*, og du trykker på en bestemt del af en
 Når du analyserer ned, kan du bruge knappen Tilbage til at komme tilbage til den forrige rapportside.
 
 Læs om, hvordan du [tilføjer detaljeadgang i Power BI Desktop](../../desktop-drillthrough.md).
+
+## <a name="show-data-and-copy-values"></a>Vis data, og kopiér værdier
+
+Du kan få vist de underliggende data for en visualisering ved at vælge menuen Indstillinger vha. ellipsen (**...** ) i øverste højre hjørne af en visualisering i en telefonrapport og derefter vælge **Vis data**.
+
+![Vis datamenuen Indstillinger i Power BI – Mobil](./media/mobile-reports-in-the-mobile-apps/copy-data-visual.png)
+
+Hvis du trykker længe på en celle i tabellen, vises den oprindelige menu for markering og kopiering, så du kan vælge at kopiere dataene i tabellen (eller hele tabellen).
+
+![Detaljeadgang i rapport i Power BI Mobile](./media/mobile-reports-in-the-mobile-apps/copy-data-table.png)
 
 ## <a name="next-steps"></a>Næste trin
 * [Få vist og interager med Power BI-rapporter, der er optimeret til din telefon](mobile-apps-view-phone-report.md)

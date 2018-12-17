@@ -1,23 +1,24 @@
 ---
-title: Om den måde visualiseringer interagerer på i en rapport (til forbrugere af rapporter)
+title: Sådan krydsfiltrerer visualiseringer hinanden i en rapport (til brugere af rapporter)
 description: Dokumentation til Power BI-slutbrugere, der forklarer, hvordan visualiseringer interagerer på en rapportside.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/28/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: c87f99b768f52fe7f6b565c47ed7e434b167a046
-ms.sourcegitcommit: dc8b8a2cf2dcc96ccb46159802ebd9342a7fa840
+ms.openlocfilehash: 838b881622dd19eb881aa53ac895f223cf9bc460
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49112055"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180501"
 ---
-# <a name="visualization-interactions-in-a-power-bi-report"></a>Visuelle interaktioner i en Power BI-rapport
+# <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Sådan krydsfiltrerer visualiseringer hinanden i en Power BI-rapport
 En af de fantastiske funktioner i Power BI er den måde, som alle visualiseringer på rapportside er forbundet på. Hvis du vælger et datapunkt i en af visualiseringerne, ændres alle andre visualiseringer med disse data på siden på baggrund af dette valg. 
 
 ![video af interaktion mellem visualiseringer](media/end-user-interactions/interactions.gif)

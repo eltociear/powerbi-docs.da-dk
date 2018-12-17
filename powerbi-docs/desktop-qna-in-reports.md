@@ -1,21 +1,21 @@
 ---
 title: Brug af Spørgsmål og svar i Power BI Desktop
 description: Du kan nu bruge et naturligt sprog til forespørgsler i Power BI Desktop ved hjælp af Spørgsmål og svar
-author: davidiseminger
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
-ms.author: davidi
+ms.date: 12/05/2018
+ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8c0736728d1dfce5a571eb1950670bc9fc9fa1c1
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 4a9ab6173422ec2f897050b2f456847b342e9fa2
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670756"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026724"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Brug Spørgsmål og svar i Power BI Desktop til forespørgsler på et naturligt sprog
 Det er effektivt, når du bruger almindelige udtryk og naturligt sprog til dataforespørgsler. Endnu mere effektiv er det, når dataene svarer dig, hvilket Spørgsmål og svar i **Power BI Desktop** gør muligt for dig.
@@ -25,9 +25,6 @@ For at aktivere Spørgsmål og svar med henblik på at kunne fortolke den store 
 > [!NOTE]
 > Spørgsmål og svar er kun tilgængelig, når du arbejder med en model, der indeholder **importerede** data. Direkte forbindelser til SSAS- og DirectQuery-modeller understøttes ikke.
 >
->
-
-> [!NOTE]
 > Spørgsmål og svar kræver følgende C runtime-opdatering, hvis du bruger en ældre version af Windows end Windows 10. Du kan prøve at installere vigtige opdateringer fra Windows Update eller installere den påkrævede komponent manuelt fra Microsoft (KB2999226). https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
 >
 >
@@ -49,11 +46,11 @@ Hvis der mangler relationer mellem tabeller i modellen, kan hverken Power BI-rap
 
 ## <a name="rename-tables-and-columns"></a>Omdøb tabeller og kolonner
 
-Valget af tabeller og kolonner er yderst vigtigt for Spørgsmål og svar. Hvis du f.eks. har en tabel ved navn *Kundeoversigt*, der indeholder en liste over dine kunder, så skulle du benytte forespørgsler som f.eks. "Opstil liste over kundeoversigterne i Chicago" i stedet for "Opstil liste over kunderne i Chicago". 
+Valget af tabeller og kolonner er vigtigt for Spørgsmål og svar. Lad os f.eks. sige, at du har en tabel med navnet *Kundeoversigt*, som indeholder en liste over dine kunder. Du skal stille spørgsmål som "Angiv kundeoversigterne i Chicago på en liste" i stedet for "Angiv kunderne i Chicago på en liste". 
 
 Selvom Spørgsmål og svar kan benytte basal orddeling og registrering af flertalsformer, så forudsætter Spørgsmål og svar, at dine tabel- og kolonnenavne præcist afspejler deres indhold.
 
-Tænk over et andet eksempel. Forestil dig, at du har en tabel med navnet *Personer*, der indeholder for- og efternavne og medarbejdernumre, og en anden tabel med navnet *Medarbejdere*, der indeholder medarbejdernumre, jobnumre og startdatoer. Strukturen giver måske mening for personer, der er bekendt med modellen, men når andre benytter forespørgslen "tæl medarbejdere", så får de vist antallet af rækker fra tabellen "Medarbejdere", hvilket nok ikke er optimalt, idet det er tallet for hver eneste job, som hver medarbejder har haft nogensinde. Det er meget bedre at omdøbe tabellerne, så de afspejler deres sande indhold.
+Tænk over et andet eksempel. Forestil dig, at du har en tabel med navnet *Antallet af medarbejdere*, som indeholder for- og efternavne samt medarbejdernumre. Du har en anden tabel med navnet *Medarbejdere*, som indeholder medarbejdernumre, jobnumre og startdatoer. Personer, der er bekendt med modellen, vil sandsynligvis forstå denne struktur. Andre, som stiller spørgsmålet "Tæl medarbejdere", vil få vist antallet af rækker fra tabellen "Medarbejdere". Dette resultat er sandsynligvis ikke det, de havde tænkt sig, da det er en optælling af hvert eneste job, medarbejderne nogensinde har haft. Det vil være meget bedre at omdøbe disse tabeller, så de afspejler det, de indeholder, nøjagtigt.
 
 **Skal forbedres**
 
@@ -65,19 +62,19 @@ Tænk over et andet eksempel. Forestil dig, at du har en tabel med navnet *Perso
 
 ## <a name="fix-incorrect-data-types"></a>Ret forkerte datatyper
 
-Importerede data kan have forkerte datatyper. Især vil *dato*- og *tal*-kolonner, der importeres som *strenge*, ikke kunne fortolkes som datoer og tal af Spørgsmål og svar. Du skal sørge for at vælge den korrekte datatype i din Power BI-model.
+Importerede data kan have forkerte datatyper. Særligt kolonner med *dato* og *tal*, der importeres som *strenge*, vil ikke fortolkes som datoer og tal af Spørgsmål og svar. Sørg for at vælge den korrekte datatype i din Power BI-model.
 
 ![vælg den korrekte datatype for at sikre, at den er tilgængelig for Spørgsmål og svar](media/desktop-qna-in-reports/desktop-qna_05.png)
 
 ## <a name="mark-year-and-identifier-columns-as-dont-summarize"></a>Angiv år- og id-kolonner som Opsummer ikke
 
-Power BI aggregerer numeriske kolonner aggressivt som standard, så forespørgsler som "samlede salg pr. år" somme tider kan resultere i et samlet tal for salg sammen med et samlet tal for år. Hvis du har specifikke kolonner, hvor du ikke vil benytte denne funktionsmåde i Power BI, så skal du indstille egenskaben **Opsummer efter** på kolonnen til **Opsummer ikke**. Vær opmærksom på kolonnerne **år**, **måned**, **dag** og **id**, idet disse kolonner hyppigst er problematiske. Andre kolonner, der ikke er praktiske at opsummere, f.eks. *alder*, kan også drage fordel af, at **Opsummer efter** indstilles til **Opsummer ikke** eller til **Gennemsnit**. Du kan finde denne indstilling på fanen **Udformning**.
+Power BI aggregerer numeriske kolonner aggressivt som standard, så forespørgsler som "samlede salg pr. år" somme tider kan resultere i et samlet tal for salg sammen med et samlet tal for år. Hvis du har specifikke kolonner, hvor du ikke vil benytte denne funktionsmåde i Power BI, så skal du indstille egenskaben **Opsummer efter** på kolonnen til **Opsummer ikke**. Vær opmærksom på kolonnerne **år**, **måned**, **dag** og **id**, idet disse kolonner hyppigst er problematiske. Andre kolonner, der ikke er praktiske at opsummere, f.eks. *alder*, kan også drage fordel af, at **Opsummer efter** indstilles til **Opsummer ikke** eller til **Gennemsnit**. Du kan finde denne indstilling under fanen **Udformning**.
 
 ![Opsummer ikke kolonner som f.eks. år, måned, dato for Spørgsmål og svar](media/desktop-qna-in-reports/desktop-qna_06.png)
 
 ## <a name="choose-a-data-category-for-each-date-and-geography-column"></a>Vælg en datakategori for hver dato- og geografikolonne
 
-**Datakategori** giver yderligere semantisk viden om indholdet af en kolonne, der ligger ud over dens datatype. En heltalskolonne kan f.eks. være markeret som et postnummer, en strengkolonne kan være markeret som en by, et land, et område osv. Disse oplysninger bruges af Spørgsmål og svar på to vigtige måder: til visualiseringsmarkering og til sprogforskelle.
+**Datakategori** giver yderligere semantisk viden om indholdet af en kolonne, der ligger ud over dens datatype. En heltalskolonne kan f.eks. være markeret som et postnummer, en strengkolonne kan være markeret som en by, et land, et område osv. Disse oplysninger bruges af Spørgsmål og svar på to vigtige måder: Til valg af visualisering og til sprogforskelle.
 
 For det første bruger Spørgsmål og svar **Datakategori**-oplysninger til at hjælpe med at foretage valg af, hvilken type visuel visning, der skal bruges. Funktionen genkender for eksempel, at kolonner med **Datakategorierne** dato eller klokkeslæt typisk er et godt valg til den vandrette akse i et kurvediagram eller afspilningsaksen i et boblediagram. Og den forudsætter, at resultater med kolonner med geografiske **Datakategorier** kan se flotte ud på et kort.
 
@@ -94,15 +91,15 @@ Egenskaben **Sortér efter kolonne** tillader sortering efter én kolonne for au
 
 ## <a name="normalize-your-model"></a>Normaliser din model
 
-Bare rolig, vi foreslår ikke, at du skal redefinere hele din model. Men der er visse strukturer, som ganske enkelt er så svære, at Spørgsmål og svar ikke vil håndtere dem særlig godt. Hvis du udfører noget grundlæggende normalisering af strukturen af din model, øges Power BI-rapporternes brugbarhed væsentligt, hvilket også gælder Spørgsmål og svar-resultaternes nøjagtighed.
+Bare rolig, vi foreslår ikke, at du skal redefinere hele din model. Visse strukturer er dog så svære, at Spørgsmål og svar ikke kan håndtere dem særligt godt. Hvis du udfører noget grundlæggende normalisering af strukturen af din model, øges Power BI-rapporternes brugbarhed væsentligt, hvilket også gælder Spørgsmål og svar-resultaternes nøjagtighed.
 
-Den generelle regel, du bør følge, er som følger: Hver unikke "ting", som brugeren taler om, bør repræsenteres af nøjagtigt ét modelobjekt (tabel eller kolonne). Så hvis dine brugere taler om kunder, bør der være ét *kunde*-objekt. Og hvis dine brugere taler om salg, bør der være ét *salg*-objekt. Det lyder enkelt, ikke? Det kan det også være, afhængigt af hvilken formatering dataene, du starter med, har. Der er rig mulighed for dataformatering i **Forespørgselseditoren**, hvis du får brug for det, mens mange af de mere enkle transformationer kan udføres ved blot at bruge beregninger i Power BI-modellen.
+Følg denne generelle regel: Hver unikke "ting", som brugeren taler om, bør være repræsenteret af nøjagtigt ét modelobjekt (tabel eller kolonne). Så hvis dine brugere taler om kunder, bør der være ét *kunde*-objekt. Og hvis dine brugere taler om salg, bør der være ét *salg*-objekt. Det lyder enkelt, ikke? Det kan det også være, afhængigt af hvilken formatering dataene, du starter med, har. Der er rig mulighed for dataformatering i **Forespørgselseditoren**, hvis du får brug for det, mens mange af de mere enkle transformationer kan udføres ved blot at bruge beregninger i Power BI-modellen.
 
 De følgende sektioner indeholder nogle gængse transformationer, som du kan få brug for at udføre.
 
 ### <a name="create-new-tables-for-multi-column-entities"></a>Opret nye tabeller for flerkolonneenheder
 
-Hvis du har flere kolonner, der fungerer som en enkelt særskilt enhed i en større tabel, skal disse kolonner opdeles i deres egen tabel. Hvis du f.eks. har en kolonne med Kontaktnavn, Kontakttitel og Kontakttelefon i tabellen *Firmaer*, så kan det være en fordel at have en særskilt tabel med *Kontakter*, som indeholder Navn, Titel og Telefon og et link tilbage til tabellen *Firmaer*. Det gør det væsentligt lettere at benytte forespørgsler om kontakter uafhængigt af forespørgsler om firmaer, som de fungerer som kontakt for, og forbedrer visningsfleksibiliteten.
+Hvis du har flere kolonner, der fungerer som en enkelt særskilt enhed i en større tabel, skal disse kolonner opdeles i deres egen tabel. Lad os f.eks. sige, at du har kolonnerne Navn på kontakt, Titel på kontakt og Telefonnummer i tabellen *Firmaer*. Et bedre design vil være at have en særskilt tabel med *Kontakter*, som indeholder Navn, Titel og Telefonnummer samt et link tilbage til tabellen *Firmaer*. Det gør det væsentligt lettere at stille spørgsmål om kontakter uafhængigt af spørgsmål om firmaer, som de fungerer som kontakt for, og det forbedrer fleksibiliteten af visningen.
 
 **Skal forbedres**
 
@@ -116,7 +113,7 @@ Hvis du har flere kolonner, der fungerer som en enkelt særskilt enhed i en stø
 
 Hvis du har egenskabsbeholdere i modellen, skal de omstruktureres for at få en enkelt kolonne for hver egenskab. Egenskabsbeholdere kan være praktiske til administrering af et stort antal egenskaber, men har en række indlejrede begrænsninger, som hverken Power BI-rapporter eller Spørgsmål og svar er designet til at kunne omgå.
 
-Lad os f.eks. antage, at vi har tabellen *Kundedemografi* med kolonnerne Kunde-id, Egenskab og Værdi, hvor hver række repræsenterer en særskilt egenskab hos kunden (f.eks. alder, civilstand, by osv.). Ved at overlæsse betydningen af kolonnen Værdi baseret på indholdet i kolonnen Egenskab, så bliver det umuligt for Spørgsmål og svar at fortolke de fleste forespørgsler, der refererer til den. En simpel forespørgsel som f.eks. "vis alderen for en kunde" vil muligvis fungere, siden den kan fortolkes som "vis kunderne og kundedemografier, hvor egenskaben er alder". Dog understøtter strukturen i modellen ikke lidt mere komplekse forespørgsler, som f.eks. "gennemsnitlig alder for kunder i Chicago." Mens brugere, som direkte udvikler Power BI-rapporter, somme tider kan finde smarte måder at hente de ønskede data på, så fungerer Spørgsmål og svar kun, når hver kolonne kun har én enkelt betydning.
+Lad os f.eks. antage, at vi har tabellen *Kundedemografi* med kolonnerne Kunde-id, Egenskab og Værdi, hvor hver række repræsenterer en særskilt egenskab hos kunden (f.eks. alder, civilstand, by osv.). Ved at overbelaste betydningen af kolonnen Værdi baseret på indholdet i kolonnen Egenskab bliver det umuligt for Spørgsmål og svar at fortolke de fleste forespørgsler, der refererer til den. En simpel forespørgsel som f.eks. "vis alderen for en kunde" vil muligvis fungere, siden den kan fortolkes som "vis kunderne og kundedemografier, hvor egenskaben er alder". Dog understøtter strukturen i modellen ikke lidt mere komplekse forespørgsler, som f.eks. "gennemsnitlig alder for kunder i Chicago." Mens brugere, som direkte udvikler Power BI-rapporter, somme tider kan finde smarte måder at hente de ønskede data på, så fungerer Spørgsmål og svar kun, når hver kolonne kun har én enkelt betydning.
 
 **Skal forbedres**
 
@@ -128,9 +125,9 @@ Lad os f.eks. antage, at vi har tabellen *Kundedemografi* med kolonnerne Kunde-i
 
 ### <a name="union-to-eliminate-partitioning"></a>Benyt samling for at fjerne partitionering
 
-Hvis du har partitioneret dine data på tværs af flere tabeller, eller du har pivoteret værdier på tværs af flere kolonner, så bliver det svært eller umuligt for brugere at benytte visse almindelige funktioner. Overvej først en typisk tabelpartitionering: en tabel med *Salg 2000-2010* og en tabel med *Salg 2011-2020*. Hvis alle dine vigtige rapporter er begrænset til et specifikt årti, så kan du nok lade det være på denne måde for Power BI-rapporter. Dog vil fleksibiliteten i Spørgsmål og svar føre til, at brugerne forventer svar på forespørgsler som f.eks. "samlet salg pr. år." Hvis dette skal fungere, så skal du samle dataene i en enkelt Power BI-modeltabel.
+Hvis du har partitioneret dine data på tværs af flere tabeller, eller du har pivoteret værdier på tværs af flere kolonner, bliver det svært eller umuligt for brugerne at benytte visse almindelige handlinger. Overvej først en typisk tabelpartitionering: en tabel med *Salg 2000-2010* og en tabel med *Salg 2011-2020*. Hvis alle dine vigtige rapporter er begrænset til et specifikt årti, så kan du nok lade det være på denne måde for Power BI-rapporter. Dog vil fleksibiliteten i Spørgsmål og svar føre til, at brugerne forventer svar på forespørgsler som f.eks. "samlet salg pr. år." Hvis denne forespørgsel skal fungere, skal du samle dataene i en enkelt Power BI-modeltabel.
 
-Overvej desuden en typisk pivoteret værdikolonne: en tabel over en *Bogturné*, der indeholder kolonnerne Forfatter, Bog, By 1, By 2 og By 3. Denne struktur gør, at selv simple forespørgsler som f.eks. "antal bøger efter by", ikke kan fortolkes korrekt. Dette kan kun fungere ved, at du opretter en særskilt tabel med *BogturnéByer*, som samler byværdierne i en enkelt kolonne.
+Overvej desuden en typisk pivoteret værdikolonne: en tabel over en *Bogturné*, der indeholder kolonnerne Forfatter, Bog, By 1, By 2 og By 3. Denne struktur gør, at selv simple forespørgsler som f.eks. "antal bøger efter by", ikke kan fortolkes korrekt. Hvis denne forespørgsel skal fungere, skal du oprette en separat tabel med navnet *BogturnéByer*, som samler værdierne for by i en enkelt kolonne.
 
 **Skal forbedres**
 
@@ -142,7 +139,7 @@ Overvej desuden en typisk pivoteret værdikolonne: en tabel over en *Bogturné*,
 
 ### <a name="split-formatted-columns"></a>Opdel formaterede kolonner
 
-Hvis kilden, hvorfra du importerer dine data, indeholder formaterede kolonner, vil Power BI-rapporter (og Spørgsmål og svar) ikke række ind i kolonnen for at opdele dens indhold. Hvis du derfor eksempelvis har en **Fulde adresse**-kolonne, der indeholder adresse, by og land, så bør du opdele den i kolonnerne Adresse, By og Land, så brugere kan oprette forespørgsler efter dem hver for sig.
+Hvis kilden, hvorfra du importerer dine data, indeholder formaterede kolonner, vil Power BI-rapporter (og Spørgsmål og svar) ikke række ind i kolonnen for at opdele dens indhold. Hvis du f.eks. har en kolonne med **Fuld adresse**, der indeholder adresse, by og land, bør du opdele den i kolonnerne Adresse, By og Land, så brugerne kan oprette forespørgsler til dem hver for sig.
 
 **Skal forbedres**
 
@@ -169,7 +166,7 @@ En lignende situation forekommer, hvis kilden, hvorfra du importerer dataene, in
 
 ### <a name="denormalize-to-eliminate-inactive-relationships"></a>Benyt denormalisering for at fjerne inaktive relationer
 
-Den eneste undtagelse for reglen "normalisering er bedre" opstår, når der er flere stier til og fra én tabel til en anden. Hvis du f.eks. har en tabel med *Flyafgange* med både KildeById- og DestinationsById-kolonner, som hver er relateret til tabellen *Byer*, så skal én af disse relationer markeres som inaktiv. Idet Spørgsmål og svar kun kan bruge relationer, kan du ikke benytte forespørgsler om enten kilde eller destination, afhængigt af hvilken du vælger. Hvis du i stedet benytter denormalisering af kolonnerne bynavn i tabellen *Flyafgange*, så kan du benytte forespørgsler som f.eks.: "opstil liste over flyafgange i morgen med Seattle som kildeby og San Francisco som destinationsby."
+Den eneste undtagelse for reglen "normalisering er bedre" opstår, når der er flere stier til og fra én tabel til en anden. Lad os f.eks. sige, at du har en tabel med *Flyafgange* med kolonnerne KildeById og DestinationsById, som hver især er relateret til tabellen *Byer*. En én af disse skal relationer markeres som inaktiv. Idet Spørgsmål og svar kun kan bruge aktive relationer, kan du ikke stille spørgsmål om enten kilde eller destination, afhængigt af hvilken kolonne du vælger. Hvis du i stedet benytter denormalisering af kolonnerne med bynavn i tabellen *Flyafgange*, kan du stille spørgsmål som: "Angiv flyafgange i morgen med Seattle som kildeby og San Francisco som destinationsby på en liste".
 
 **Skal forbedres**
 
@@ -183,7 +180,7 @@ Den eneste undtagelse for reglen "normalisering er bedre" opstår, når der er f
 
 Dette trin gælder specielt for Spørgsmål og svar (og ikke for Power BI-rapporter generelt). Brugere har ofte en række ord, som de bruger til at henvise til det samme, som f.eks. samlet salg, nettosalg, samlet nettosalg. Power BI-modellen giver mulighed for, at disse synonymer kan føjes til tabeller og kolonner inden for modellen. 
 
-Dette kan være et særdeles vigtigt trin. Selv med helt enkle tabel- og kolonnenavne så benytter brugere af Spørgsmål og svar sig af forespørgsler med nogle ord, der lige falder dem ind, og vælger ikke ordene på en foruddefineret liste over kolonner. Jo mere fornuftige synonymer, du kan tilføje, jo bedre er brugernes oplevelse med din rapport. Hvis du vil tilføje synonymer, skal du vælge knappen Synonymer på båndet i visningen **Relationer**, som vist på følgende billede.
+Dette trin kan være vigtigt. Selv med helt enkle tabel- og kolonnenavne så benytter brugere af Spørgsmål og svar sig af forespørgsler med nogle ord, der lige falder dem ind, og vælger ikke ordene på en foruddefineret liste over kolonner. Jo mere fornuftige synonymer, du kan tilføje, jo bedre er brugernes oplevelse med din rapport. Hvis du vil tilføje synonymer, skal du vælge knappen Synonymer på båndet i visningen **Relationer**, som vist på følgende billede.
 
 ![Føj synonymer til Spørgsmål og svar](media/desktop-qna-in-reports/desktop-qna_21.png)
 

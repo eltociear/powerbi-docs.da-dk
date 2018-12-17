@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b69b84c7c61227ef7a827722c86f54100bd2f3b7
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 258b526c08615a81f3cc940fc3b9f2fcda063a12
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267243"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180639"
 ---
 # <a name="link-entities-between-dataflows-in-power-bi-preview"></a>Link Objekter mellem dataflow i Power BI (prøveversion)
 
@@ -32,6 +32,12 @@ Linkede objekter er **skrivebeskyttet**. Hvis du vil oprette transformationer fo
 Der kræves et [Power BI Premium](service-premium.md)-abonnement for at opdatere linkede objekter. Linkede objekter er tilgængelige i et hvilket som helst dataflow i et arbejdsområde, der er hostet på Power BI Premium-kapaciteten. Der er ingen begrænsninger på kildedataflowet.
 
 Linkede objekter fungerer kun korrekt i nye Power BI-arbejdsområder. Du kan få mere at vide om [nye Power BI-arbejdsområder](service-create-the-new-workspaces.md). Alle linkede dataflow skal findes i nye arbejdsområder, for at de fungerer korrekt.
+
+> [!NOTE]
+> Objekter varierer, afhængigt af om de er standardenheder eller beregnede enheder. Standardobjekter (ofte blot kaldet objekter) forespørger en ekstern datakilde, f.eks. en SQL-database. Beregnede objekter kræver Premium-kapacitet på Power BI og kører deres transformationer på data, der er allerede i Power BI-lageret. 
+>
+>Hvis dit dataflow ikke er i et arbejdsområde til Premium-kapacitet, kan du stadig henvise til en enkelt forespørgsel eller kombinere to eller flere forespørgsler, så længe transformationerne ikke er defineret som transformationer i lageret. Disse henvisninger betragtes som standardobjekter. Hvis du vil gøre det, skal du slå indstillingen **Aktivér indlæsning** fra for de forespørgsler, der henvises til, for at forhindre, at dataene materialiseres og overføres til lageret. Herfra kan du henvise til de forespørgsler af typen **Aktivér indlæsning = falsk** og kun angive **Aktivér indlæsning** til **Til** for de forespørgselsresultater, du vil materialisere.
+
 
 ## <a name="how-to-link-entities-between-dataflows"></a>Sådan linker du objekter mellem dataflow
 
@@ -83,8 +89,8 @@ Følgende artikler kan være nyttige, når du opretter eller arbejder med datafl
 
 * [Selvbetjent dataforberedelse i Power BI (prøveversion)](service-dataflows-overview.md)
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Brug af beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
-* [Brug af dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
+* [Brug beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
+* [Brug dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
 * [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
 
 Du kan finde flere oplysninger om Power-forespørgsel og planlagt opdatering i disse artikler:

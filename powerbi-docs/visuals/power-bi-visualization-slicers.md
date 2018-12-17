@@ -1,22 +1,22 @@
 ---
 title: Selvstudium – Udsnit i Power BI
 description: Udsnitsværktøjer i Power BI
-author: mihart
+author: v-thepet
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: tutorial
-ms.date: 09/25/2018
-ms.author: v-thepet
+ms.date: 10/25/2018
+ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e42504c2c320e4f102cab5e2272e6123bf580cf5
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: e6b738060875685a7de8e07a55d28afaf071b32e
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448977"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979645"
 ---
 # <a name="slicers-in-power-bi"></a>Udsnitsværktøjer i Power BI
 Du vil gerne give rapportlæserne mulighed for at se de overordnede salgstal, men samtidig fremhæve resultaterne for individuelle distriktsledere (District Manager) og forskellige tidsperioder. Du kan oprette separate rapporter eller diagrammer til sammenligning, eller du kan bruge udsnit. Et udsnit er en alternativ metode til filtrering, som begrænser den del af datasættet, der vises i andre visualiseringer i en rapport. 
@@ -178,7 +178,7 @@ Se [Opret et dynamisk udsnit, som du kan ændre størrelsen på, i Power BI](../
 ### <a name="other-formatting-options"></a>Andre formateringsindstillinger
 De andre formateringsindstillinger er som standard slået fra. Når de er slået **til**: 
 - **Titel:** Tilføjer og formaterer en titel (udover og uafhængigt af overskriften) øverst i udsnittet. 
-- **Baggrund:** Tilføjer en baggrundsfarve på hele udsnittet og angiver gennemsigtigheden.
+- **Baggrund:** Føjer en baggrundsfarve til hele udsnittet og angiver gennemsigtigheden.
 - **Lås højde-bredde-forhold:** Bevarer formen af udsnittet, hvis størrelsen tilpasses.
 - **Kant:** Tilføjer en kant på 1 pixel rundt om udsnittet og angiver farven på den. (Denne kant er forskellig fra og ikke påvirket af de generelle indstillinger for Kontur). 
 

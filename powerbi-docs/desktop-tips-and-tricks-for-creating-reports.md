@@ -1,20 +1,21 @@
 ---
 title: Tip og gode råd til oprettelse af rapporter i Power BI
-description: Tip og gode råd til oprettelse af rapporter i Power BI-tjenesten og Power BI Desktop
+description: Få mer at vide om de bedste fremgangsmåder til oprettelse af rapporter i Power BI-tjenesten og Power BI Desktop
 author: davidi
 manager: kfile
 ms.reviewer: willthom
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
-ms.openlocfilehash: ae1c54ee0c5c5de54fc5069f7215c39175cedf8d
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: c68c29449873e22c7e338279e80f049d522ba347
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830280"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026340"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips og tricks til oprettelse af rapporter i Power BI Desktop
 For at få mest muligt ud af dine data skal du nogle gange have lidt ekstra hjælp. Vi har samlet nogle tip og tricks, som du kan bruge, når du opretter rapporter i Microsoft Power BI Desktop *og* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-udgaver, hvor tilføjelsesprogrammet Power Pivot er aktiveret, og Power-forespørgsel er installeret og aktiveret. 
@@ -27,7 +28,7 @@ Du kan få flere oplysninger fra [ressourcecenteret til Power-forespørgsel](htt
 Du kan også se [formelreferencen](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
 
 ## <a name="data-types-in-query-editor"></a>Datatyper i forespørgselseditoren
-Når vi bruger forespørgselseditoren i Power BI Desktop til at indlæse data, kommer den med et bedste gæt for typen af data.  Når du bruger formler, bevares indstillingerne for datatyper for kolonner ikke altid. Du skal kontrollere, at datatypen for kolonner er korrekt, når du har udført følgende handlinger: første indlæsning af data under forespørgselsfanen, Første række som overskrift, Tilføj kolonne, Gruppér efter, Flet og Tilføj, og før du trykker for at indlæse dataene for første gang.
+Når vi bruger forespørgselseditoren i Power BI Desktop til at indlæse data, kommer den med et bedste gæt for typen af data.  Når du bruger formler, bevares indstillingerne for datatyper for kolonner ikke altid. Du skal kontrollere, at datatypen for kolonner er korrekt, når du har udført følgende handlinger:  Indlæs først data under forespørgselsfanen, Første række som overskrift, Tilføj kolonne, Gruppér efter, Flet og Tilføj inden du trykker for at indlæse dataene for første gang.
 
 Det er vigtigt at huske, at kursiv i datagitteret ikke betyder, at datatypen er angivet korrekt, men blot at dataene ikke betragtes som tekst.
 

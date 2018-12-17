@@ -1,25 +1,26 @@
 ---
-title: Hvad er Azure Power BI Embedded? | Microsoft Docs
-description: Power BI Embedded er beregnet til at forenkle, hvordan uafhængige softwareproducenter og udviklere bruger Power BI-funktioner, og til at hjælpe dem med hurtigt at tilføje imponerende visualiseringer, rapporter og dashboards i deres apps.
+title: Hvad er Azure Power BI Embedded og integreret analyse? | Microsoft Docs
+description: Power BI Embedded er beregnet til som et integreret analyseværktøj at forenkle, hvordan uafhængige softwareproducenter og udviklere bruger Power BI-funktioner, og til at hjælpe dem med hurtigt at tilføje imponerende visualiseringer, rapporter og dashboards i deres apps. Få mere at vide om, hvordan du bruger integreret analysesoftwrae, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence vha. Power BI Embedded.
 author: markingmyname
 ms.author: maghan
 manager: kfile
+ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.component: ''
 ms.devlang: csharp, javascript
 ms.topic: overview
-ms.reviewer: ''
-ms.date: 07/31/2018
-ms.openlocfilehash: b46508aeca35769fb27324fb20f502ac66cb55ab
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: 70cb8f72e5749f7eed70d4476f3af87e272813f4
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39360213"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180685"
 ---
-# <a name="what-is-power-bi-embedded-in-azure"></a>Hvad er Power BI Embedded i Azure? 
+# <a name="what-is-power-bi-embedded-in-azure"></a>Hvad er Power BI Embedded i Azure?
 
-Power BI Embedded er beregnet til at forenkle, hvordan uafhængige softwareproducenter og udviklere bruger Power BI-funktioner. Power BI Embedded forenkler Power BI-funktioner ved at give dig hurtig adgang til imponerende visualiseringer, rapporter og dashboards i dine apps. Det svarer til de apps, der er baseret på brug af Microsoft Azure-tjenester som Machine Learning og IoT. Når der aktiveres udforskning af data med nem navigation i deres apps, kan de uafhængige softwareproducenter give deres kunder mulighed for at træffe hurtige og velinformerede beslutninger i kontekst.
+Power BI Embedded er beregnet til at forenkle, hvordan uafhængige softwareproducenter og udviklere bruger Power BI-funktioner med integreret analyse. Power BI Embedded gør det nemmere for dig at bruge Power BI-funktionerne, så du hurtigt kan tilføje imponerende visualiseringer, rapporter og dashboards i dine apps. Det svarer til de apps, der er baseret på brug af Microsoft Azure-tjenester som Machine Learning og IoT. Når der aktiveres udforskning af data med nem navigation i deres apps, kan de uafhængige softwareproducenter give deres kunder mulighed for at træffe hurtige og velinformerede beslutninger i kontekst.
 
 > [!VIDEO https://www.youtube.com/embed/iEHfUuoZseo]
 
@@ -39,7 +40,7 @@ Har du en eksisterende app med integreret Power BI-indhold ved hjælp af Power B
 
 Med Power BI Embedded kan du fokusere på det, du er bedst til: at bygge fantastiske apps. Du kan administrere og udvikle med Power BI Embedded ved hjælp af de værktøjer og færdigheder, du allerede har.
 
-* [**Azure-portalen**](https://portal.azure.com/): en webbaseret app til administration af alle Azure-tjenester
+* [**Azure Portal**](https://portal.azure.com/): Et webbaseret program til administration af alle Azure-tjenester
 * [**Visual Studio Code**](https://code.visualstudio.com/docs): et gratis kodeprogram med åben kildekode, som du kan downloade og køre på Windows, macOS eller Linux, og som understøtter udvidelser
 * [**Power BI Desktop**](https://powerbi.microsoft.com/desktop/): et gratis værktøj, du kan downloade og bruge til at oprette avancerede interaktive rapporter med visuel analyse
 
@@ -47,9 +48,9 @@ Ved hjælp af REST API giver Power BI Embedded dig mulighed for at udvikle i eth
 
 ## <a name="engage-with-the-power-bi-engineering-team"></a>Kom i kontakt med Power BI-teknikerteamet
 
-* [Communities](https://community.powerbi.com/): stil spørgsmål om Power BI
-* [Power BI-idéer](https://ideas.powerbi.com): anmod om og stem på funktioner
-* [Reddit](https://www.reddit.com/r/PowerBI/): diskuter Power BI
+* [Communities](https://community.powerbi.com/): Stil spørgsmål om Power BI
+* [Power BI-idéer](https://ideas.powerbi.com): Anmod om og stem på funktioner
+* [Reddit](https://www.reddit.com/r/PowerBI/): Diskuter Power BI
 
 ## <a name="next-steps"></a>Næste trin
 

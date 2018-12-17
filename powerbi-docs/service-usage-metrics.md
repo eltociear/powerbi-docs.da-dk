@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 11/13/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 53d39eaf7c615d2ed279e7c45330dacbdad7994a
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 1c6c0a803e77ead6d43c23ac2b12b305d5960ef7
+ms.sourcegitcommit: 2882b8962ed03c188257c042e537c76b052545c5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830326"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53111536"
 ---
 # <a name="usage-metrics-for-dashboards-and-reports"></a>Forbrugsdata for dashboards og rapporter
 
@@ -172,19 +172,19 @@ Det er vigtigt at forstå, at der kan opstå forskelle, når du sammenligner for
 
 Ud over eventuelle forskelle mellem forbrugsdata og overvågningslogge kan følgende spørgsmål og svar om forbrugsdata være nyttige for brugere og administratorer:
 
-Spørgsmål: Jeg kan ikke køre forbrugsdata på et dashboard eller en rapport: Du kan kun få vist forbrugsdata for indhold, som du ejer eller har tilladelser til at redigere.
+Spørgsmål:    Jeg kan ikke køre forbrugsdata på et dashboard eller i rapport Svar:    Du kan kun se forbrugsdata for indhold, som du ejer eller har tilladelser til at redigere.
 
-Spørgsmål: Kan forbrugsdata hente visninger fra integrerede dashboards og rapporter?
-Svar: Forbrugsdata understøtter i øjeblikket ikke hentning af forbrug for integrerede dashboards og rapporter samt flowet [Publicer på internettet](service-publish-to-web.md).          I de tilfælde anbefales det at bruge eksisterende webanalyseplatforme til at spore brugen for hostingappen eller -portalen.
+Spørgsmål:    Kan forbrugsdata hente visninger fra integrerede dashboards og rapporter?
+Svar:    Forbrugsdata understøtter i øjeblikket ikke hentning af forbrug for integrerede dashboards og rapporter samt flowet [Publicer på internettet](service-publish-to-web.md).          I de tilfælde anbefales det at bruge eksisterende webanalyseplatforme til at spore brugen for hostingappen eller -portalen.
 
-Spørgsmål: Jeg kan slet ikke køre forbrugsdata på noget indhold.
-Svar 1: Administratorer kan deaktivere denne funktion for deres organisation.  Kontakt administratoren for at se, om det er tilfældet.
-Svar 2: Forbrugsdata er en Power BI Pro-funktion.
+Spørgsmål:    Jeg kan slet ikke køre forbrugsdata på noget indhold.
+Svar 1:    Administratorer kan deaktivere denne funktion for deres organisation.  Kontakt administratoren for at se, om det er tilfældet.
+Svar 2:    Forbrugsdata er en Power BI Pro-funktion.
 
-Spørgsmål: Dataene ser ikke ud til at være opdateret. For eksempel vises distributionsmetoder ikke, rapportsider mangler osv. Svar: Det kan tage op til 24 timer, før dataene er opdateret.
+Spørgsmål:    Dataene ser ikke ud til at være opdateret. For eksempel vises distributionsmetoder ikke, rapportsider mangler osv. Svar:    Det kan tage op til 24 timer, før dataene er opdateret.
 
-Spørgsmål: Der er fire rapporter i arbejdsområdet, men rapporten med forbrugsdata viser kun 3.
-Svar: Rapporten med forbrugsdata indeholder kun rapporter (eller dashboards), der har været åbnet i løbet af de sidste 90 dage.  Hvis en rapport (eller et dashboard) ikke vises, har den sandsynligvis ikke været brugt i mere end 90 dage.
+Spørgsmål:    Der er fire rapporter i arbejdsområdet, men rapporten med forbrugsdata viser kun 3.
+Svar:    Rapporten med forbrugsdata indeholder kun rapporter (eller dashboards), der har været åbnet i løbet af de sidste 90 dage.  Hvis en rapport (eller et dashboard) ikke vises, har den sandsynligvis ikke været brugt i mere end 90 dage.
 
 ## <a name="next-steps"></a>Næste trin
 

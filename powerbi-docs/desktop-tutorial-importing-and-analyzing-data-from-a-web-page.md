@@ -1,21 +1,22 @@
 ---
-title: 'Selvstudium: Importér og analysér data fra en webside ved hjælp af Power BI Desktop'
+title: 'Selvstudium: Importér og analysér data fra en webside'
 description: 'Selvstudium: Importér og analysér data fra en webside ved hjælp af Power BI Desktop'
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: tutorial
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: d0c37ff2a48315b72c699ab53238416eeb0f04b5
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 0c712807ad5fd855986c3929a760c2542b33f01f
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578836"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026611"
 ---
 # <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Selvstudium: Analysér data på en webside ved hjælp af Power BI Desktop
 
@@ -58,7 +59,7 @@ Sådan importerer du dataene:
    
    Der åbnes et eksempel på tabellen i **Power-forespørgselseditor**, hvor du kan anvende transformationer for at rydde op i dataene. 
    
-   ![Editor til Power-forespørgsel](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
+   ![Power-forespørgselseditor](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
    
 ## <a name="shape-data-in-power-query-editor"></a>Form data i Power-Forespørgselseditor
 

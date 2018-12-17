@@ -1,6 +1,6 @@
 ---
-title: Integrering med Power BI
-description: Power BI tilbyder API'er til integrering af dine dashboards og rapporter i applikationer.
+title: Integreret analyse med Power BI
+description: Power BI tilbyder API'er til anvendelse af integreret analyse til dine dashboards og rapporter i applikationer. Få mere at vide om integration med Power BI både i et PaaS-miljø og et SaaS-miljø ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede business intelligence-værktøjer.
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -8,19 +8,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: overview
-ms.date: 07/31/2018
-ms.openlocfilehash: 7b96e671a6fe9b450fff683ced3caa611ae70bd7
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: a4c0a66fb70797cc8b42094c65b23c71944b67a2
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45973764"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180317"
 ---
-# <a name="embedding-with-power-bi"></a>Integrering med Power BI
+# <a name="embedded-analytics-with-power-bi"></a>Integreret analyse med Power BI
 
 Power BI-tjenesten (SaaS) og tjenesten Power BI Embedded i Azure (PaaS) har API'er, du kan bruge til at integrere dine dashboards og rapporter. Denne funktion betyder, at du har en række funktioner og adgang til de nyeste funktioner i Power BI, f.eks. dashboards, gateways og apparbejdsområder, når du integrerer indhold.
 
-Du kan gennemgå [værktøjet til konfiguration af integrering](https://aka.ms/embedsetup) for hurtigt at komme i gang og downloade en eksempelapp.
+Du kan gennemgå [Embedding-konfigurationsværktøjet](https://aka.ms/embedsetup) for hurtigt at komme i gang og downloade en eksempelapp.
 
 Vælg den løsning, der er den rette for dig:
 
@@ -43,7 +44,7 @@ Med **Embedding for your organization** kan du udvide Power BI-tjenesten. Hvis d
 
 *Eksempler på integrering i forbindelse med din organisation omfatter interne programmer, f.eks. [SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/), [Integrering med Microsoft Teams (du skal have administratorrettigheder)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) og [Microsoft Dynamics](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard).*
 
-Se følgende for integrering i forbindelse med din organisation:
+Se nedenfor vedrørende integrering i forbindelse med din organisation:
 
 * [Integrer en rapport i en app](embed-sample-for-your-organization.md)
 
@@ -61,7 +62,7 @@ Med **Embedding for your customers** kan du integrere dashboards og rapporter fo
 
 Power BI Embedded giver fordele til ISV'er, udviklere og kunder. En ISV kan f.eks. begynde at oprette visuelle elementer gratis vha. Power BI Desktop. ISV'er kan opnå hurtigere lancering ved at minimere det analytiske udviklingsarbejde med visuelle elementer, hvilket betyder, at du kan skille dig ud fra konkurrenterne ved at give differentierede dataoplevelser. ISV'er kan også vælge at opkræve et premiumgebyr for den ekstra værdi, der tilføres vha. den integrerede analyse.
 
-Med Power BI Embedded behøver dine kunder ikke at have kendskab til Power BI. Du behøver kun at have én Power BI Pro-konto for at oprette et integreret program. Power BI Pro-kontoen fungerer som en masterkonto for dit program (du kan opfatte den som en proxykonto). Power BI Pro-kontoen giver dig også mulighed for at generere integreringstokens, der giver adgang til dashboards og rapporter i Power BI-tjenesten, som ejes/administreres af dit program.
+Med Power BI Embedded behøver dine kunder ikke at have kendskab til Power BI. Du behøver kun at have én Power BI Pro-konto for at oprette et integreret program. Power BI Pro-kontoen fungerer som en masterkonto for dit program (du kan opfatte denne masterkonto som en proxykonto). Power BI Pro-kontoen giver dig også mulighed for at generere integreringstokens, der giver adgang til dashboards og rapporter i Power BI-tjenesten, som ejes/administreres af dit program.
 
 Udviklere, der bruger Power BI Embedded, kan fokusere på opbygningen af kernekompetencen i deres program i stedet for at bruge tid på at udvikle visuelle elementer og analyse. Udviklere kan hurtigt imødekomme kundebehov for rapporter og dashboards, og de kan nemt integrere med fuldt dokumenterede API'er og SDK'er. ISV'er kan give kunder mulighed for at træffe hurtige databaserede beslutninger i kontekst fra enhver enhed ved at muliggøre intuitiv udforskning af data i deres apps.
 

@@ -4,18 +4,19 @@ description: Aktivér krydsfiltrering ved hjælp af DirectQuery i Power BI Deskt
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 58fbef3f8622121100ce77ae69d6c17cbeb46510
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 89ee11efab495d55457e265e654972aac941d50c
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578307"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025321"
 ---
 # <a name="bidirectional-cross-filtering-using-directquery-in-power-bi-desktop"></a>Tovejskrydsfiltrering ved hjælp af DirectQuery i Power BI Desktop
 
@@ -23,11 +24,12 @@ Når tabeller filtreres for at give den relevante visning af data, står dem, de
 
 Med tovejskrydsfiltrering har dem, der opretter rapporter og arbejder med data, nu mere kontrol over, hvordan filtrene anvendes, når de arbejder med relaterede tabeller, hvilket gør det muligt at anvende filtrene på *begge* sider af en tabelrelation. Dette opnås ved, at filterkonteksten overføres til en anden relateret tabel på den anden side af en tabelrelation.
 
+## <a name="detailed-whitepaper-for-bidirectional-cross-filtering"></a>Detaljeret whitepaper om tovejskrydsfiltrering
 Der findes en [detaljerede hvidbog](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx), der forklarer tovejskrydsfiltrering i Power BI Desktop. Hvidbogen omhandler også SQL Server Analysis Services 2016, da begge programmer har samme funktionsmåde.
 
 * Hent hvidbogen om [tovejskrydsfiltrering til Power BI Desktop](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx)
 
-### <a name="enabling-bidirectional-cross-filtering-for-directquery"></a>Aktivering af tovejskrydsfiltrering for DirectQuery
+## <a name="enabling-bidirectional-cross-filtering-for-directquery"></a>Aktivering af tovejskrydsfiltrering for DirectQuery
 
 For at aktivere krydsfiltrering skal følgende afkrydsningsfelter være markeret i dialogboksen **Rediger relation** for en relation:
 

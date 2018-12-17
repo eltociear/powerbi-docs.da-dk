@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8131722d0e035f28fcb88827b1a68c2da97959cb
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: b63b8a601040751cda81e022d571d3a0ed6d501f
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267280"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180662"
 ---
 # <a name="using-computed-entities-on-power-bi-premium-preview"></a>Brug af beregnede objekter i Power BI Premium (prøveversion)
 
@@ -77,16 +77,21 @@ Og det er det – transformationen er udført vha. dataene i det dataflow, der e
 
 Det er vigtigt at bemærke, at hvis du fjerner arbejdsområdet fra Power BI Premium-kapaciteten, opdateres det tilknyttede dataflow ikke længere. 
 
+Når du arbejder med dataflow, der specifikt er oprettet i en organisations Azure Data Lake Storage Gen2-konto, fungerer tilknyttede enheder og beregnede enheder kun korrekt, når enhederne er placeret i samme lagerkonto. Du kan finde flere oplysninger under [Opret forbindelse til Azure Data Lake Storage Gen2 til dataflowlager (eksempelvisning)](service-dataflows-connect-azure-data-lake-storage-gen2.md).
+
+Derudover er linkede objekter ikke tilgængelige for dataflow, der er oprettet via CDM-mapper. Se under [Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)](service-dataflows-add-cdm-folder.md).
 
 ## <a name="next-steps"></a>Næste trin
 
 I denne artikel beskrives beregnede objekter og dataflow, der er tilgængelige i Power BI-tjenesten. Her er nogle flere artikler, der kan være nyttige.
 
-
 * [Selvbetjent dataforberedelse med dataflow](service-dataflows-overview.md)
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Brug af dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
+* [Brug af dataflow med datakilder i det lokale miljø (eksempelvisning)](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI-dataflow (eksempelvisning)](service-dataflows-developer-resources.md)
+* [Konfigurer indstillinger for dataflow for arbejdsområde (eksempelvisning)](service-dataflows-configure-workspace-storage-settings.md)
+* [Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)](service-dataflows-add-cdm-folder.md)
+* [Opret forbindelse til Azure Data Lake Storage Gen2 til dataflowlager (eksempelvisning)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
 Du kan finde flere oplysninger om Power-forespørgsel og planlagt opdatering i disse artikler:
 * [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)

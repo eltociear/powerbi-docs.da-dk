@@ -1,23 +1,25 @@
 ---
-title: Integrer Power BI-indhold i et program for dine kunder til offentlige og nationale cloudmiljøer
-description: Få mere at vide om, hvordan du kan integrere et dashboard, et felt eller en rapport i en webapp ved hjælp af API'er til Power BI til dine kunder.
+title: Integreret analyse til integration af Power BI-indhold i dit program til offentlige og nationale cloudmiljøer
+description: Få mere at vide om, hvordan du integrerer en rapport, et dashboard eller et felt i et program ved hjælp af Power BI-API'er for at bruge integreret analyse for dine kunder. Få mere at vide om, hvordan du integrerer Power BI i dit program ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence.
 author: markingmyname
 ms.author: maghan
 manager: kfile
+ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: tutorial
-ms.date: 10/25/2018
-ms.openlocfilehash: 76b80ad296f2f595fb5014e13bbd48d414cd8bbe
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: aabf472e236f545fe51d4007dcd8fbdf36632931
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003150"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180616"
 ---
-# <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Selvstudium: Integrer et Power BI-dashboard eller -felt eller en Power BI-rapport i dit program til nationale cloudmiljøer
+# <a name="tutorial-embed-a-power-bi-dashboard-tile-or-report-into-your-application-for-sovereign-clouds"></a>Selvstudium: Integrer et Power BI-dashboard eller -felt eller en Power BI-rapporter i dit program til nationale cloudmiljøer
 
-Få mere at vide om, hvordan du integrerer et dashboard, et felt eller en rapport i dine webprogrammer ved hjælp af Power BI .NET SDK sammen med JavaScript-API'en til Power BI, når du integrerer data til dine kunder.
+Få mere at vide om, hvordan du integrerer analyseindhold i dine virksomhedsprogrammer for det nationale cloudmiljø. Du kan bruge Power BI .NET SDK med Power BI JavaScript-API'en til at integrere en rapport, et dashboard eller et felt i dine webprogrammer.
 
 Power BI understøtter også nationale (private) cloudmiljøer.
 
@@ -132,7 +134,7 @@ Registrer din app i Azure AD for at foretage REST-API-kald. Du kan finde flere o
 
 * Cloudmiljøet Power BI til Kina – https://app.powerbi.cn/apps
 
-Hvis du har hentet [prøveappen Embedding for your customer](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), skal du bruge det **program-id**, du får efter registreringen, så det kan godkendes i Azure AD. Du kan konfigurere prøveappen ved at ændre **program-id** i filen *web.config*.
+Hvis du har downloadet [eksemplet Integration for din kunde](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), skal du bruge det **program-id**, du får, så eksemplet kan godkendes i Azure AD. Du kan konfigurere prøveappen ved at ændre **program-id** i filen *web.config*.
 
 ## <a name="step-2---get-an-access-token-from-azure-ad"></a>Trin 2 – Få et adgangstoken fra Azure AD
 
@@ -225,9 +227,9 @@ ODataResponseListTile tiles = client.Dashboards.GetTilesInGroup(workspaceId, das
 Tile tile = tiles.Value.FirstOrDefault();
 ```
 
-### <a name="create-the-embed-token"></a>Opret integrationstokenet
+### <a name="create-the-embed-token"></a>Opret integreringstokenet
 
-Ved hjælp af JavaScript-API'en kan du generere et integrationstoken. Dette integrationstoken er specifikt for det element, du er ved at integrere. Hver gang du integrerer Power BI-indhold, skal du oprette et nyt integrationstoken for det. Du kan finde flere oplysninger, herunder hvilket **adgangsniveau** du skal bruge, i [Integreringstoken](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
+Ved hjælp af JavaScript-API'en kan du generere et integrationstoken. Dette integreringstoken er specifikt for det element, du integrerer. Hver gang du integrerer Power BI-indhold, skal du oprette et nyt integrationstoken for det. Du kan finde flere oplysninger, herunder hvilket **adgangsniveau** du skal bruge, i [Integreringstoken](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 > [!IMPORTANT]
 > Da integrerede tokens kun er beregnet til udviklingstest, er antallet af integrerede tokens, der kan genereres fra en Power BI-hovedkonto, begrænset. Der [skal købes en kapacitet](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) til integrerede produktionsscenarier. Der er ingen grænse for generering af integrerede tokens, når der er købt en kapacitet.

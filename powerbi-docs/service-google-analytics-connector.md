@@ -1,27 +1,26 @@
 ---
-title: 'Tredjepartstjeneste: Google Analytics-connector til Power BI Desktop'
-description: 'Tredjepartstjeneste: Google Analytics-connector til Power BI Desktop'
+title: 'Tjeneste fra tredjepart: Google Analytics-connector'
+description: 'Tjeneste fra tredjepart: Google Analytics-connector til Power BI Desktop'
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a0c98a8f65529575cb70fccec927c1ee00d9a089
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: b7451f156503d88baf4bdf3f3ae2cb99c04a94c1
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669422"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025597"
 ---
 # <a name="google-analytics-connector-for-power-bi-desktop"></a>Google Analytics-connector til Power BI Desktop
 > [!NOTE]
 > Google Analytics-indholdspakken og -connectoren i Power BI Desktop er afhængige af Google Analytics Core Reporting API. Som sådan kan funktioner og tilgængelighed variere over tid.
-> 
-> 
 
 Du kan oprette forbindelse til Google Analytics-data ved hjælp af **Google Analytics**-connectoren. Du opretter forbindelse ved at følge disse trin:
 

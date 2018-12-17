@@ -9,13 +9,14 @@ ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: e64496461e7d81d3b39e9a8d7174a3e985d04002
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: cb508681950cd5bb585da1208683deb31c8b6e64
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850470"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026816"
 ---
 # <a name="using-auditing-within-your-organization"></a>Brug af overvågning i din organisation
 
@@ -73,13 +74,13 @@ Du kan søge i logfilerne efter datointerval ved hjælp af felterne **Startdato*
 
 Der vises en fejlmeddelelse, hvis det angivne datointerval er større end 90 dage. Hvis du bruger det maksimale datointerval på 90 dage, skal du vælge det aktuelle klokkeslæt som **Startdato**. Ellers får du vist en fejlmeddelelse om, at startdatoen ligger tidligere end slutdatoen. Hvis du har slået overvågning til inden for de sidste 90 dage, kan datointervallet ikke starte før den dato, hvor overvågning blev slået til.
 
-![](media/service-admin-auditing/search-audit-log-by-date.png)
+![Søg efter dato](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ## <a name="search-the-audit-logs-by-users"></a>Søg i overvågningslogfilerne efter brugere
 
 Du kan søge efter overvågningslogposter for aktiviteter, der er udført af bestemte brugere. Det gør du ved at angive et eller flere brugernavne i feltet **Brugere**. Brugernavnet ligner en e-mailadresse. Det er den konto, som brugerne logger på Power BI med. Lad dette felt være tomt for at returnere poster for alle brugere (og tjenestekonti) i din organisation.
 
-![Søg efter dato](media/service-admin-auditing/search-audit-log-by-user.png)
+![Søg efter brugere](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ## <a name="view-search-results"></a>Få vist søgeresultaterne
 
@@ -144,7 +145,7 @@ Følgende aktiviteter overvåges af Power BI.
 | Datakilde er føjet til Power BI-gateway             | AddDatasourceToGateway                      |                                          |
 | Adgang til Power BI-mapper er tilføjet                      | AddFolderAccess                             | Ikke anvendt i øjeblikket                       |
 | Power BI-gruppemedlemmer er tilføjet                      | AddGroupMembers                             |                                          |
-| Administratoren har knyttet dataflowlagerkontoen til lejer | AdminAttachedDataflowStorageAccountToTenant | Ikke anvendt i øjeblikket                       |
+| Administratoren har knyttet dataflowlagerkontoen til lejer | AdminAttachedDataflowStorageAccountToTenant | Anvendes ikke i øjeblikket                       |
 | Analyseret Power BI-datasæt                         | AnalyzedByExternalApplication               |                                          |
 | Power BI-rapport er analyseret                          | AnalyzeInExcel                              |                                          |
 | Bundne Power BI-datasæt til gateway                | BindToGateway                               |                                          |
@@ -168,19 +169,19 @@ Følgende aktiviteter overvåges af Power BI.
 | Dataflowtilladelser er fjernet                      | DataflowPermissionsRemoved                  | Ikke anvendt i øjeblikket                       |
 | Power BI-organisationsindholdspakke er slettet      | DeleteOrgApp                                |                                          |
 | Power BI-kommentar er slettet                          | DeleteComment                               |                                          |
-| Power BI-dashboard er slettet                        | DeleteDashboard                             | Ikke anvendt i øjeblikket                       |
-| Power BI-dataflow er slettet                         | DeleteDataflow                              | Ikke anvendt i øjeblikket                       |
+| Power BI-dashboard er slettet                        | DeleteDashboard                             | Anvendes ikke i øjeblikket                       |
+| Power BI-dataflow er slettet                         | DeleteDataflow                              | Anvendes ikke i øjeblikket                       |
 | Power BI-datasæt er slettet                          | DeleteDataset                               |                                          |
 | Power BI-mailabonnement er slettet               | DeleteEmailSubscription                     |                                          |
 | Power BI-mappe er slettet                           | DeleteFolder                                |                                          |
-| Adgang til Power BI-mapper er slettet                    | DeleteFolderAccess                          | Ikke anvendt i øjeblikket                       |
+| Adgang til Power BI-mapper er slettet                    | DeleteFolderAccess                          | Anvendes ikke i øjeblikket                       |
 | Slettet Power BI-gateway                          | DeleteGateway                               |                                          |
 | Power BI-gruppe er slettet                            | DeleteGroup                                 |                                          |
 | Power BI-rapport er slettet                           | DeleteReport                                |                                          |
 | Datakilder til Power BI-datasæt er fundet          | GetDatasources                              |                                          |
 | Downloadet Power BI-rapport                        | DownloadReport                              |                                          |
 | Power BI-certificeringstilladelse blev redigeret          | EditCertificationPermission                 | Ikke anvendt i øjeblikket                       |
-| Power BI-dashboard er redigeret                         | EditDashboard                               | Ikke anvendt i øjeblikket                       |
+| Power BI-dashboard er redigeret                         | EditDashboard                               | Anvendes ikke i øjeblikket                       |
 | Power BI-datasæt er redigeret                           | EditDataset                                 |                                          |
 | Egenskaber for Power BI-datasæt er redigeret                | EditDatasetProperties                       | Ikke anvendt i øjeblikket                       |
 | Power BI-rapport er redigeret                            | EditReport                                  |                                          |

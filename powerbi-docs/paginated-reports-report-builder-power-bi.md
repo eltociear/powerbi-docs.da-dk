@@ -1,23 +1,23 @@
 ---
 title: Hvad er sideinddelte rapporter i Power BI Premium? (Eksempelvisning)
-description: Sideinddelte rapporter er rapporter, der kan udskrives eller deles. Du kan styre rapportlayoutet præcist. De viser alle data i en tabel, også selvom tabellen strækker sig over flere sider.
+description: Sideinddelte rapporter, der længe har været standardrapportformatet i SQL Server Reporting Services, er nu tilgængelige i Power BI-tjenesten. Disse rapporter kan udskrives eller deles. Du kan styre rapportlayoutet præcist. De viser alle data i en tabel, også selvom tabellen strækker sig over flere sider.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: report-builder
 ms.topic: overview
-ms.date: 11/20/2018
+ms.date: 12/05/2018
 ms.author: maggies
-ms.openlocfilehash: 7a39d7b3bdbbd592afc6481c5936efc76569ad11
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: d79299f469062ec74c49ff4b7e9edda26c3409a3
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289214"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026111"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>Hvad er sideinddelte rapporter i Power BI Premium? (Eksempelvisning)
-Sideinddelte rapporter, der længe har været standardrapportformatet i SQL Server Reporting Services, er nu tilgængelige i Power BI-tjenesten. Sideinddelte rapporter er rapporter, der er udviklet til at skulle udskrives eller deles. De kaldes "sideinddelte", fordi de er formateret til at passe godt på en side. De viser alle data i en tabel, selvom tabellen strækker sig over flere sider. De kaldes også nogle gange "perfekt pixel", fordi du kan styre deres rapportsidelayout helt præcist. Sideinddelte rapporter er baseret på RDL-rapportteknologien i SQL Server Reporting Services. Report Builder er det separate værktøj, der bruges til oprettelse af sideinddelte rapporter. 
+Sideinddelte rapporter, der længe har været standardrapportformatet i SQL Server Reporting Services, er nu tilgængelige i Power BI-tjenesten. Disse rapporter kan udskrives eller deles. De kaldes "sideinddelte", fordi de er formateret til at passe godt på en side. De viser alle data i en tabel, selvom tabellen strækker sig over flere sider. De kaldes også nogle gange "perfekt pixel", fordi du kan styre deres rapportsidelayout helt præcist. Sideinddelte rapporter er baseret på RDL-rapportteknologien i SQL Server Reporting Services. Report Builder er det separate værktøj, der bruges til oprettelse af sideinddelte rapporter. 
 
 Sideinddelte rapporter kan indeholde mange sider. Denne rapport indeholder f.eks. 563 sider. Hver side viser præcis én side pr. faktura og har gentagne sidehoveder og sidefødder.
 
@@ -43,7 +43,7 @@ Der vil komme flere datakilder til i løbet af prøveperioden.
 
 ### <a name="create-paginated-reports-with-matrix-chart-and-free-form-layouts"></a>Opret sideinddelte rapporter med matrix-, diagram- og frihåndslayout
 
-Opret tabelrapporter for kolonnebaserede data, matrixrapporter (f.eks. rapporter med tværgående faner eller pivottabeller) til opsummerede data, diagramrapporter med grafiske data og *liste*rapporter med frihåndslayout til alt andet, f.eks. fakturaer. 
+Tabelrapporter fungerer godt i forbindelse med kolonnebaserede data. Matrixrapporter, som f.eks. krydsklassifikation eller pivottabeller, er velegnet til opsummerede data. Diagramrapporter viser data i et grafisk format, og *listerapporter* i frihåndsformat kan præsentere næsten alt andet, f.eks. fakturaer. 
   
 Du kan starte med en af guiderne i Report Builder. Guiderne Tabel, Matrix og Diagram fører dig gennem oprettelsen af den integrerede datakildeforbindelse og det integrerede datasæt. Derefter skal du trække og slippe felter for at oprette en forespørgsel til datasættet, vælge et layout og en typografi samt tilpasse din rapport.  
   
@@ -66,7 +66,7 @@ Du får vist din sideinddelte rapport i Power BI-tjenesten i en browser og i Pow
 
 Her er nogle andre funktioner, der ikke understøttes i den første version:
 
-- Fastgørelse af rapportsider eller visualiseringer til Power BI-dashboards.
+- Fastgørelse af rapportsider eller visualiseringer til Power BI-dashboards. Du kan stadig fastgøre visualiseringer til et Power BI-dashboard fra en sideinddelt rapport i det lokale miljø på en Power BI-rapportserver eller en Reporting Services-rapportserver. Du kan finde flere oplysninger under [Fastgør Reporting Services-elementer til Power BI-dashboards](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards).
 - Interaktive funktioner, f.eks. dokumentkort og vis/skjul-knapper.
 - Underrapporter og detaljeadgangsrapporter.
 - Abonnementer.

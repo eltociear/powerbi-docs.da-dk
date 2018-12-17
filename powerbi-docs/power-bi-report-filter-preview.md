@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/12/2018
+ms.date: 12/05/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: d2d8bef9689fd2e9db99c0a521a5ee326845b1de
-ms.sourcegitcommit: ea77827127e0781f1d6877c0a3078aec7eb6694a
+ms.openlocfilehash: 3d4bcff012a8abb53d82dea2a8514d654056736a
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51611354"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026241"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>Den nye filteroplevelse i Power BI-rapporter (prøveversion)
 
@@ -98,7 +98,7 @@ Du kan også formatere disse elementer for filterkort, afhængigt af om de er an
 
     ![Vælg ikonet Formatér](media/power-bi-report-filter-preview/power-bi-filter-format.png)    
 
-1. Udvid **Filtreringsruden** for at angive farven på baggrunden, skrifttypen, ikonet og den venstre kant, som skal komplementere rapportsiden.
+1. Udvid **Filtreringsruden** for at angive farven på baggrunden, ikonet og den venstre kant, som skal komplementere rapportsiden.
 
     ![Udvid Filtreringsruden](media/power-bi-report-filter-preview/power-bi-filter-format-pane.png)
 
@@ -114,7 +114,7 @@ I Læsetilstand kan du holde over en visualisering og se et pop op-vindue med al
 
 Her er de filtertyper, der vises i denne visning: 
 - Grundlæggende filtre
-- Udsnitsværktøjer
+- Udsnit
 - Tværgående fremhævning 
 - Tværgående filtrering
 - Avancerede filtre
@@ -138,7 +138,7 @@ Prøv den nye filteroplevelse. Giv os din feedback til denne funktion, og hvorda
 
 [Filtre og fremhævning i rapporter](power-bi-reports-filters-and-highlighting.md)
 
-[Arbejd med filtre og fremhævning i Læsevisning for en rapport](consumer/end-user-reading-view.md)
+[Arbejd med filtre og fremhævning i læsevisning for en rapport](consumer/end-user-reading-view.md)
 
 [Rediger, hvordan visualiseringer i rapporter krydsfiltrerer og krydsfremhæver hinanden](consumer/end-user-interactions.md)
 

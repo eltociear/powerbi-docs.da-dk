@@ -9,13 +9,14 @@ ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
+ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 864e7a3d78386f6996d866f45558add3b51faa69
-ms.sourcegitcommit: ba447d7cc94418d7d3cf6fdcb686ec1a859258a8
+ms.openlocfilehash: 08931086d05ca3fe7edba2cd195a4f6f61cfccc7
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37145183"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025870"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Fejlfinding af ikke-understøttet datakilde til opdatering
 Du får muligvis vist en fejl, når du forsøger at konfigurere et datasæt til planlagt opdatering.
@@ -28,13 +29,13 @@ Det sker, når den datakilde, du har brugt i Power BI Desktop, ikke understøtte
 Hvis du ikke er sikker på, hvilken datakilde, der er blevet brugt, kan du finde ud af det ved hjælp af følgende trin i Power BI Desktop.  
 
 1. Kontrollér, at du befinder dig i ruden **Rapport** i Power BI Desktop.  
-   ![](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-report-pane.png)
+   ![Rude til skrivebordsrapport](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-report-pane.png)
 2. Vælg **Rediger forespørgsler** fra linjen på båndet.  
-   ![](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-edit-queries.png)
+   ![Rediger forespørgsler](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-edit-queries.png)
 3. Vælg **Avanceret editor**.  
-   ![](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-advanced-editor.png)
+   ![Avanceret editor](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-advanced-editor.png)
 4. Notér dig den provider, der er angivet som kilde.  I dette eksempel er ActiveDirectory provider.  
-   ![](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-provider.png)
+   ![Datakildeprovider](media/service-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-provider.png)
 5. Sammenlign provideren med listen over understøttede datakilder, som findes i [Opdater data i Power BI](refresh-data.md).  Her vil du se, at Active Directory ikke er en understøttet datakilde til opdatering.  
 
 ## <a name="next-steps"></a>Næste trin

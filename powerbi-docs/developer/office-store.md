@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
 ms.date: 10/30/2018
-ms.openlocfilehash: 4ac828baa4f6080ab50008aa4ffb570ff016246f
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: a5bf8a82fde84537394af4a37f33f674dbf3615b
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223121"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180324"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publicer brugerdefinerede visuals i AppSource
 
@@ -38,9 +38,9 @@ Når du er færdig med at kode og teste den brugerdefinerede visualisering, og d
 | .pbix-eksempelrapportfil |Ja |Når du fremviser din visualisering, bør du vise brugerne, hvad den kan bruges til. Du bør lægge vægt på den værdi, som visualiseringen kan tilføre brugerne, og du bør give eksempler på, hvordan de kan bruge den, formateringsmuligheder osv. Du kan også tilføj en side med *"gode råd"* i slutningen, f.eks. tip og tricks og ting, de bør undgå.<br>.pbix-eksempelrapportfil skal fungere offline uden nogen ekstern forbindelse |
 | Ikon |Ja |Du bør medtage logoet for den brugerdefinerede visualisering, som vil blive vist i appbutikken. Formatet kan være .png, .jpg, .jpeg eller .gif. Den skal være nøjagtigt 300 pixel (bredde) x 300 pixel (højde). **Vigtigt!** Gennemse den [korte guide](https://docs.microsoft.com/office/dev/store/craft-effective-appsource-store-images) omhyggeligt, inden du sender ikonet. |
 | Skærmbilleder |Ja |Du skal tilføje mindst ét skærmbillede. Formatet kan være .png, .jpg, .jpeg eller .gif. Den skal være nøjagtigt 1366 pixel (bredde) x 768 pixel (højde). Filstørrelsen må ikke overstige 1024 KB. *Effekten vil blive større, hvis du tilføjer tekstbobler for at fremhæve fordelene ved de vigtigste funktioner, som vises på hvert skærmbillede.* |
-| Supportlink |Ja |Angiv URL-adressen for at hjælpe de kunder, der har problemer med visualiseringen. URL-adressen skal indeholde https:// eller http://. |
-| Link til dokument om beskyttelse af personlige oplysninger |Ja |Angiv et link til politikken om beskyttelse af personlige oplysninger for de kunder, der bruger din visualisering. URL-adressen skal indeholde https:// eller http://. |
-| Slutbrugerlicensaftale (EULA) |Ja |Du skal overføre en fil med slutbrugerlicensaftalen. Det kan enten være din egen slutbrugerlicensaftale, eller du kan bruge den standardslutbrugerlicensaftale, der findes i Office Store for brugerdefinerede Power BI-visualiseringer. Hvis du vil bruge standardslutbrugerlicensaftalen, skal du indsætte følgende URL-adresse i dialogboksen "Slutbrugerlicensaftale" til filupload i sælgerdashboardet: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). |
+| Supportlink |Ja |Angiv URL-adressen for at hjælpe de kunder, der har problemer med visualiseringen. Dette link er angivet som del af din sælgerdashboardliste og er synlig for brugerne, når de får adgang til listen over dine visualiseringer på AppSource. URL-adressen skal indeholde https:// eller http://. |
+| Link til dokument om beskyttelse af personlige oplysninger |Ja |Angiv et link til politikken om beskyttelse af personlige oplysninger for de kunder, der bruger din visualisering. Dette link er angivet som del af din sælgerdashboardliste og er synlig for brugerne, når de får adgang til listen over dine visualiseringer på AppSource. URL-adressen skal indeholde https:// eller http://. |
+| Slutbrugerlicensaftale (EULA) |Ja |Du skal overføre en fil med slutbrugerlicensaftalen. Det kan enten være din egen slutbrugerlicensaftale, eller du kan bruge den standardslutbrugerlicensaftale, der findes i Office Store for brugerdefinerede Power BI-visualiseringer. Hvis du vil bruge standardslutbrugerlicensaftalen, skal du indsætte følgende URL-adresse i dialogboksen "Slutbrugerlicensaftale" til filupload i sælgerdashboardet: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). Filen er evt. på engelsk. |
 | Videolink |Nej |Det vil være en god idé at angive et link til en video om visualiseringen, da det kan øge brugernes interesse for den. URL-adressen skal indeholde https:// eller http://. |
 | GitHub-lager |Nej |Det foretrækkes, at du har et gyldigt og offentligt link til et [GitHub](https://www.github.com)-lager med kilderne til visualiseringen og eksempeldata, så andre udviklere kan give feedback og foreslå forbedringer til din kode. |
 
@@ -86,9 +86,9 @@ Følg nedenstående trin for at indsende din visualisering.
 
 5. Udfyld oplysningerne under **Generelle oplysninger**.
 
-   * *Titel på indsendelse:* Navnet på din indsendelse i Developer Center.
+   * *Titel på indsendelse:* Navnet på din indsendelse i Developer Center
    * *Version:* Versionsnummeret udfyldes automatisk fra app-pakken til tilføjelsesprogrammet.
-   * *Udgivelsesdato (UTC):* Vælg den dato, din app skal frigives i butikken. Hvis du vælger en dato i fremtiden, vil appen ikke være tilgængelig før den dato.
+   * *Udgivelsesdato (UTC):* Vælg den dato, din app skal udgives i Store. Hvis du vælger en dato i fremtiden, vil appen ikke være tilgængelig før den dato.
    * *Kategori:* Den første kategori udfyldes automatisk som "Datavisualisering + BI". Sådan tagges alle brugerdefinerede Power BI-visualiseringer. Du kan angive op til to ekstra kategorier for at gøre det nemmere for brugerne at søge efter din visualisering
    * *Testnoter:* Dette felt er valgfrit og kan bruges, hvis du vil angive nogle instruktioner til testerne hos Microsoft.
    * *Min app kalder, understøtter, indeholder eller bruger kryptografi eller kryptering:* Undlad at markere dette afkrydsningsfelt.
@@ -104,7 +104,7 @@ Følg nedenstående trin for at indsende din visualisering.
    * Videolink
    * Slutbrugerlicensaftale (EULA)
 
-       Du skal overføre en fil med slutbrugerlicensaftalen. Det kan enten være din egen slutbrugerlicensaftale, eller du kan bruge den standardslutbrugerlicensaftale, der findes i Office Store for brugerdefinerede Power BI-visualiseringer. Hvis du vil bruge standardslutbrugerlicensaftalen, skal du indsætte følgende URL-adresse i dialogboksen "Slutbrugerlicensaftale" til filupload i sælgerdashboardet: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf).
+       Du skal overføre en fil med slutbrugerlicensaftalen. Det kan enten være din egen slutbrugerlicensaftale, eller du kan bruge den standardslutbrugerlicensaftale, der findes i Office Store for brugerdefinerede Power BI-visualiseringer. Hvis du vil bruge standardslutbrugerlicensaftalen, skal du indsætte følgende URL-adresse i dialogboksen "Slutbrugerlicensaftale" til filupload i sælgerdashboardet: [https://visuals.azureedge.net/app-store/Power BI - Default Custom Visual EULA.pdf](https://visuals.azureedge.net/app-store/Power%20BI%20-%20Default%20Custom%20Visual%20EULA.pdf). Filen er evt. på engelsk.
 
 8. Vælg **Næste** for at fortsætte til siden **Oplysninger**.
 
@@ -114,7 +114,7 @@ Følg nedenstående trin for at indsende din visualisering.
 
 10. Udfyld "Beskrivelse".
 
-    * *App-navnet (for dette sprog):* Indtast navnet på din app, som det skal vises i butikken.
+    * *App-navn (for dette sprog):* Angiv navnet på din app, som det skal vises i butikken.
     * *Kort beskrivelse:* Angiv en kort beskrivelse af appen på højst 100 tegn, som den skal vises i butikken. Beskrivelsen vises øverst sammen med logoet. Du kan bruge beskrivelsen fra pbiviz-pakken.
     * *Lang beskrivelse:* Angiv en mere detaljeret beskrivelse af din app, som kunderne får vist på siden med oplysninger om appen. Hvis du vil have, at andre skal kunne forbedre din visualisering ved at publicere den som åben kildekode, skal du angive linket til det offentlige lager, f.eks. GitHub, her.
 

@@ -9,15 +9,16 @@ ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/30/2018
+ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 663a6bb9629e98dabab9934c7647bba6f7c14cd4
-ms.sourcegitcommit: a13abdb5a6c0c6a397b328ec2d68788ce3afa866
+ms.openlocfilehash: 5f377f60935f23b62b90731c5d7bc16c8119ab83
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52268360"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53026701"
 ---
-# <a name="power-bi-admin-portal"></a>Power BI-administrationsportal
+# <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
 På administrationsportalen kan du administrere en Power BI-*lejer* for din organisation. Portalen indeholder forskellige elementer, f.eks. forbrugsdata, adgang til Office 365 Administration og indstillinger.
 
@@ -45,7 +46,7 @@ Der er syv faner på portalen. Resten af denne artikel indeholder oplysninger om
 * [Integrer koder](#embed-codes)
 * [Visualiseringer til virksomheder](#organization-visuals)
 
-## <a name="usage-metrics"></a>Forbrugsdata
+## <a name="usage-metrics"></a>Forbrugsmålepunkter
 
 Med **Forbrugsdata** kan du overvåge Power BI-forbruget i organisationen. Den giver dig også mulighed for at se, hvilke brugere og grupper, der er mest aktive i Power BI i virksomheden.
 
@@ -105,15 +106,15 @@ På følgende billede ses de første to afsnit på fanen **Lejerindstillinger**.
 
 Indstillingerne kan have tre tilstande:
 
-* **Deaktiveret for hele organisationen**: Ingen i organisationen kan bruge denne funktion.
+* **Deaktiveret for hele organisationen**: Ingen i din organisation kan bruge denne funktion.
 
     ![Indstilling deaktiveret for alle](media/service-admin-portal/powerbi-admin-tenant-settings-disabled.png)
 
-* **Aktiveret for hele organisationen**: Alle i organisationen kan bruge denne funktion.
+* **Aktiveret for hele organisationen**: Alle i din organisation kan bruge denne funktion.
 
     ![Indstilling aktiveret for alle](media/service-admin-portal/powerbi-admin-tenant-settings-enabled.png)
 
-* **Aktiveret for en del af organisationen**: Bestemte brugere eller grupper i organisationen kan bruge denne funktion.
+* **Aktiveret for en del af organisationen**: Et bestemt undersæt af brugere eller grupper i organisationen kan bruge denne funktion.
 
     Du kan aktivere funktionen for hele organisationen med undtagelse af en bestemt gruppe brugere.
 
@@ -191,7 +192,7 @@ På følgende billede ses menuen **Filer** for en rapport, når indstillingen **
 
 ![Udskriv rapport](media/service-admin-portal/powerbi-admin-print-report.png)
 
-## <a name="content-pack-and-app-settings"></a>Indholdspakke og app-indstillinger
+## <a name="content-pack-and-app-settings"></a>Indholdspakke og appindstillinger
 
 ### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Publicer indholdspakker og apps til hele organisationen
 

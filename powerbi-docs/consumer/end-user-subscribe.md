@@ -8,15 +8,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/04/2018
+ms.date: 12/04/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a44630f8c5ad7f521ad7f3e8794486cd1b758358
-ms.sourcegitcommit: b8461c1876bfe47bf71c87c7820266993f82c0d3
+ms.openlocfilehash: a410871263316b4aa811ca39116acf69331f7bc5
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49336777"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979438"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Abonner på en rapport eller et dashboard i Power BI-tjenesten 
 Det har aldrig været nemmere at holde dig opdateret om dine vigtigste dashboards og rapporter. Abonner på rapportsider og dashboards, der betyder mest for dig, og Power BI sender et snapshot til din indbakke. Fortæl Power BI, hvor ofte du gerne vil modtage mails: fra en gang om dagen til en gang om ugen. 
@@ -64,7 +64,7 @@ I nedenstående tabel beskrives, hvor ofte du modtager en mail. Det afhænger al
 |  | **DirectQuery** | **Live Connect** | **Planlagt opdatering (import)** | **Excel-fil i OneDrive/SharePoint Online** |
 | --- | --- | --- | --- | --- |
 | **Hvor ofte bliver rapporten/dashboardet opdateret?** |Hvert 15. min. |Power BI undersøger hvert 15. minut, og hvis datasættet er ændret, opdateres rapporten. |Brugeren vælger ingen, dagligt eller ugentligt. Dagligt kan være op til 8 gange om dagen. Ugentlig er faktisk en ugentlig tidsplan, som brugeren opretter og indstiller til opdatering så lidt som en gang om ugen og så ofte som dagligt. |Én gang i timen |
-| **Hvor stor kontrol har brugeren over tidsplanen for mail ifm. abonnementet?** |Indstillinger er: dagligt eller ugentligt |Ingen indstillinger: Brugerne får tilsendt en mail, hvis rapporten opdateres, men ikke mere end én gang om dag. |Hvis tidsplanen for opdatering er dagligt, er indstillinger dagligt og ugentligt.  Hvis tidsplanen for opdatering er ugentligt, kan der kun vælges ugentligt. |Ingen indstillinger: Brugeren får tilsendt en mail, når datasættet opdateres, men ikke mere end én gang om dagen. |
+| **Hvor stor kontrol har brugeren over tidsplanen for mail ifm. abonnementet?** |Indstillinger er: dagligt eller ugentligt |Ingen indstillinger: Brugerne får tilsendt en mail, hvis rapporten opdateres, men ikke mere end én gang om dagen. |Hvis tidsplanen for opdatering er dagligt, kan der vælges dagligt og ugentligt.  Hvis tidsplanen for opdatering er ugentligt, kan der kun vælges ugentligt. |Ingen indstillinger: Brugeren får tilsendt en mail, når datasættet opdateres, men ikke mere end én gang om dagen. |
 
 ## <a name="manage-your-subscriptions"></a>Administrer dine abonnementer
 Det er kun dig, som kan administrere dine abonnementer. Vælg **Abonner** igen, og vælg **Administrer alle abonnementer** (se skærmbilleder under trin 4 ovenfor). 
@@ -74,7 +74,7 @@ Det er kun dig, som kan administrere dine abonnementer. Vælg **Abonner** igen, 
 Et abonnement slutter, hvis Pro-licensen udløber, dashboardet eller rapporten slettes af ejeren, eller hvis den brugerkonto, der blev brugt til oprettelse af abonnementet, slettes.
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
-* Hvis der er anvendt sikkerhed på rækkeniveau på nogen af felterne, bliver disse felter ikke vist for e-mailabonnementer på dashboard.  Hvis datasættet bruger RLS vil du ikke kunne oprette et abonnement for e-mailabonnementer på rapporter.
+* Hvis der er anvendt sikkerhed på rækkeniveau på nogen af felterne, bliver disse felter ikke vist for e-mailabonnementer på dashboard.  Hvis datasættet bruger RLS, vil du ikke kunne oprette et abonnement for mailabonnementer på rapporter.
 * Rapportsideabonnementer er bundet til navnet på siden i rapporten. Hvis du abonnerer på en rapportside, og den bliver omdøbt, skal du genoprette dit abonnement
 * Visse indstillinger for din organisation kan konfigureres i Azure Active Directory, hvilket kan begrænse muligheden for at bruge mailabonnementer i Power BI.  Dette omfatter, men er ikke begrænset til, multifaktorgodkendelse eller IP-intervalbegrænsning, når ressourcer tilgås.
 * For mailabonnementer på datasæt med direkte forbindelse får du kun mails, når dataene ændres. Så hvis der finder en opdatering sted, men ingen dataændringer, sender Power BI dig ikke en mail.
@@ -82,7 +82,6 @@ Et abonnement slutter, hvis Pro-licensen udløber, dashboardet eller rapporten s
 * Mailabonnementer understøtter ikke R-drevne brugerdefinerede visuals på nuværende tidspunkt.  
 * Hvis der er anvendt sikkerhed på rækkeniveau på nogen af dashboardfelterne, bliver disse felter ikke vist.
 * Mailabonnementer sendes med rapportens tilstande for standardfilter og -udsnit. Hvis du ændrer standardværdierne, efter at du har oprettet abonnementet, vises de ikke i mailen.    
-* Mailabonnementer understøttes endnu ikke på rapportsider, der er oprettet med funktionen Power BI Desktop Live Connect til tjenesten.  
 * Særligt for dashboardabonnementer understøttes nogle typer af felter endnu ikke.  Det omfatter: streamingfelter, videofelter, felter med brugerdefineret webindhold.     
 * Abonnementer mislykkes muligvis på dashboards og rapporter med meget store billeder på grund af størrelsesbegrænsninger for mails.    
 * Power BI afbryder automatisk opdatering på datasæt, der er knyttet til dashboards og rapporter, som ikke er blevet besøgt i mere end to måneder.  Men hvis du føjer et abonnement til et dashboard eller en rapport, standses det ikke midlertidigt, selvom det ikke besøges.    

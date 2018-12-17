@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maggies
-ms.openlocfilehash: 9d73e7b4e9b303f1a774c14fc813572805f7b093
-ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
+ms.openlocfilehash: 37995f52882d1a5062b8aa03fb7b0480063a4f77
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51297222"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979535"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -100,7 +100,7 @@ Når du nu navigerer gennem en rapport vha. en strygebevægelse, ved at vælge e
 
 Når rapportens forfatter tilpasser dashboardtemaer i Power BI-tjenesten, ændres udseendet af dashboardet også i mobilappen. Du kan dog ikke se baggrundsbillederne.
 
-#### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: Konfigurer fjernadgang for Power BI iOS-mobilapps til en rapportserver
+#### <a name="ios-configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>iOS: Konfigurer Power BI iOS-mobilapps til at få ekstern adgang til en rapportserver
 
 Din it-administrator kan nu bruge et MDM-værktøj til at konfigurere adgang til en rapportserver for Power BI iOS-mobilappen. Se [Konfigurer Power BI iOS-mobilapps eksternt for rapportservere](../../report-server/configure-powerbi-mobile-apps-remote.md) for at få flere oplysninger.
 
@@ -458,9 +458,9 @@ Meddelelsescenteret i din Power BI-mobilapp viser de nye data eller dashboards, 
 ### <a name="may-2016"></a>Maj 2016
 #### <a name="ios-devices-and-android-phones"></a>iOS-enheder og Android-telefoner
 * **QR-koder** er nu også tilgængelige **for rapporter**. Scan koden med Power BI-appen for at gå direkte til en relateret rapport uden behov for navigation eller søgning.
-* **Forbedret dataadministration** til SQL Server 2016 Reporting Services: Reduceret indlæsningstid og dataforbrug på din enhed.
-* **Mobilrapporter i SQL Server 2016-tema**: Se temaer for mobilrapporter på din enhed.
-* **Geofiltrering**: Filtrer rapporter efter din aktuelle placering.
+* **Forbedret dataadministration** til SQL Server 2016 Reporting Services: Reducerede indlæsningstider og reduceret dataforbrug på din enhed.
+* **Mobilrapporter i SQL Server 2016-tema**: Se temaer til mobilrapporter på din enhed.
+* **Geo-filtrering**: Filtrer rapporter efter din aktuelle placering.
 
 ### <a name="april-2016"></a>April 2016
 Se [blogindlæg om Power BI-mobilapps fra april](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-update-april-2016/) for at få flere oplysninger.
@@ -536,7 +536,7 @@ Alle forbedringerne i januar er allerede i den nye [Power BI-app til Windows 10-
 
 **R-felter og webwidgets** Få vist disse nye felttyper på dashboards på din mobilenhed.
 
-**Bing-dashboards** I Power BI-tjenesten kan du nu oprette [dashboards med Bing-søgeresultater](../end-user-connect-to-services.md) og få dem vist på din mobilenhed.
+**Bing-dashboards** I Power BI-tjenesten kan du nu oprette [dashboards med Bing-søgeresultater](../../service-connect-to-services.md) og få dem vist på din mobilenhed.
 
 **Rapportsider fastgjort som felter til dashboards** Nu hvor du kan fastgøre en hel rapportside til et dashboard i Power BI-tjenesten, kan du få vist rapportsider i Power BI-appen på din iPhone eller på din Android-telefon.
 
@@ -601,7 +601,7 @@ Forbedringer i Power BI-mobilapps – Android, iOS (iPhone og iPad) og Windows. 
 
 #### <a name="android"></a>Android
 * Understøttelse af gruppearbejdsområder: Samarbejd med kolleger i gruppearbejdsområder. 
-* Understøttelse af ikke-godkendte brugere: I de få scenarier, hvor brugere ikke kan logge på appen, har vi tilføjet en hurtig og nem måde at kontakte support på og sende feedback.
+* Understøttelse af ikke-godkendte brugere:  I de få scenarier, hvor brugere ikke kan logge på appen, har vi tilføjet en hurtig og nem måde at kontakte support på og sende feedback.
 * Forbedret brugeroplevelse ved adgang til dashboards ved hjælp af rollebaseret sikkerhed.          
 * Forbedret dataformatering af diagrammer og justering af alle felter i dashboardet. 
 
@@ -613,8 +613,8 @@ Forbedringer i Power BI-mobilapps – Android, iOS (iPhone og iPad) og Windows. 
 * Forbedret brugeroplevelse, når du bruger rollebaseret sikkerhed.
 * Touchoptimerede forbedringer af matrixdiagramfelter: Nu kan du nemt rulle gennem matrixdataene og få vist alle dataene let og intuitivt.
 * Forbedret dataformatering af diagrammer og justering af felter i dashboardet. 
-* Fjernelse af iOS 7-understøttelse: Enheder med iOS 7 understøttes ikke længere for at bevare de højeste sikkerhedsstandarder for Power BI. iOS 8 og nyere er påkrævet. 
-* Mulighed for afsendelse af feedback og bedømmelse er blevet tilføjet i appen: Det er nu muligt at sende feedback og afgive en bedømmelse direkte i appen, så vi kan øge community'ets indflydelse på vores roadmap og nemt få påpeget problemer direkte fra appen.
+* Fjernelse af iOS 7-understøttelse: Da vi vil bevare de højeste sikkerhedsstandarder for Power BI, understøttes enheder med iOS 7 ikke længere. iOS 8 og nyere er påkrævet. 
+* Mulighed for indsendelse af feedback og bedømmelse er blevet tilføjet i appen: Det er nu muligt at sende feedback og afgive en bedømmelse direkte i appen, så vi kan øge community'ets indflydelse på vores roadmap og nemt få påpeget problemer direkte fra appen.
 
 #### <a name="windows"></a>Windows
 * Forbedret gengivelse af kortdele i fokuseringstilstand for at maksimere skærmpladsen.

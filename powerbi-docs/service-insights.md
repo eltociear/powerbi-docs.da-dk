@@ -5,20 +5,21 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: et_MLSL2sA8
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/25/2018
+ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3b58b0b88ed0417f88784824a67ab294dda7343e
-ms.sourcegitcommit: a186679e8dae85dce23f6365bf5c36d7f407f15b
+ms.openlocfilehash: 386f4fb24488df3856f8e731fcd6c95043c86d74
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51850424"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180915"
 ---
-# <a name="automatically-generate-data-insights-with-power-bi"></a>Generér automatisk dataindsigt med Power BI
+# <a name="generate-data-insights-automatically-with-power-bi"></a>Generér automatisk dataindsigt med Power BI
 Har du et nyt datasæt, og er du ikke helt sikker på, hvor du skal starte?  Har du brug for hurtigt at oprette et dashboard?  Vil du hurtigt søge efter indsigter, som du måske gik glip af?
 
 Kør Quick Insights for at oprette interessante interaktive visualiseringer, der er baseret på dine data. Quick Insights kan køres på et helt datasæt (hurtig indsigt) eller på et bestemt dashboardfelt (områdebaseret indsigt). Du kan endda køre indsigter på en indsigt!

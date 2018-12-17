@@ -8,15 +8,15 @@ featuredvideoid: xmja6EpqaO0
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: tutorial
-ms.date: 09/24/2018
+ms.date: 11/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0492390ae47c8d5aa0930a063370712c80d61de2
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: c726ba8d50f077a640879f666fd441e27b19d3c7
+ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829636"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52979328"
 ---
 # <a name="kpi-visuals"></a>KPI-visualiseringer
 Et nøgletal (KPI) er en visuel ledetråd, der viser fremgangen mod et målbart mål. Du kan finde flere oplysninger om KPI'er ved at se [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
@@ -49,7 +49,7 @@ Eller du kan se med, når Will viser, hvordan du opretter visualiseringer med en
 1. Åbn rapporten i rapportvisning, og vælg den gule fane for at tilføje en ny side.    
 2. I ruden Felter skal du vælge **Sales > Total Units This Year**.  Dette er indikatoren.
 3. Tilføj **Time > FiscalMonth**.  Dette repræsenterer tendensen.
-4. VIGTIGT! Sorter diagrammet efter **FiscalMonth**. Når du konverterer visualiseringen til et KPI, er der ikke muligt at sortere.
+4. VIGTIGT! Sorteé diagrammet efter **FiscalMonth**. Når du konverterer visualiseringen til et KPI, er der ikke muligt at sortere.
 
     ![](media/power-bi-visualization-kpi/power-bi-chart.png)
 5. Konverter visualiseringen til et KPI ved at vælge ikonet KPI i visualiseringsruden.

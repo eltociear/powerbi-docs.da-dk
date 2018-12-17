@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 360ffdd61525244bd75e57c8c9c9aad25131a13d
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 92af01b7020f734f286d927650e58a5fea5d8047
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267235"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180823"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Selvbetjent dataforberedelse i Power BI (prøveversion)
 
@@ -68,6 +68,7 @@ Power BI kan konfigureres til at gemme dataflowdata på din organisations Azure 
 
 Power BI kan også oprette forbindelse til mapper med skematiserede data i Common Data Model-formatet, som er gemt på din organisations Azure Data Lake Storage-konto. Disse mapper kan oprettes af tjenester som f.eks. Azure-datatjenester. Ved at oprette forbindelse til disse mapper kan analytikere arbejde problemfrit med disse data i Power BI. 
 
+Du kan finde flere oplysninger om Azure Data Lake Storage Gen2 og dataflowintegration, herunder hvordan du opretter dataflow, der er placeret i organisationens Azure Data Lake, under [Integration af dataflow og Azure Data Lake (prøveversion)](service-dataflows-azure-data-lake-integration.md).
 
 ## <a name="dataflow-capabilities-on-power-bi-premium"></a>Egenskaber for dataflow i Power BI Premium
 
@@ -105,9 +106,6 @@ Ved at gemme forretningsdata i standardiseret format af **Common Data Model**, k
 * Kom i gang med dataflows for udviklere
 
 
-
-
-
 ## <a name="next-steps"></a>Næste trin
 
 Denne artikel giver et overblik over dataforberedelse af big data til selvbetjening i Power BI og de mange måder, du kan bruge det på. De følgende artikler kommere nærmere ind på almindelige forbrugsscenarier for dataflows. 
@@ -116,6 +114,7 @@ Denne artikel giver et overblik over dataforberedelse af big data til selvbetjen
 * [Brug beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
 * [Brug dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
 * [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
+* [Integration af dataflow og Azure Data Lake (prøveversion)](service-dataflows-azure-data-lake-integration.md)
 
 Du kan finde flere oplysninger om Power-forespørgsel og planlagt opdatering i disse artikler:
 * [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)

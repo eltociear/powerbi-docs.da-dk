@@ -4,18 +4,19 @@ description: Opret forbindelse til data i Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e0430455131b0669dfa744c7a1df6691bda4c782
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 0fc366ad5b42f84f8677be36d1f2093a4ac0fa23
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578146"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025551"
 ---
 # <a name="connect-to-data-in-power-bi-desktop"></a>Opret forbindelse til data i Power BI Desktop
 I Power BI Desktop kan du nemt oprette forbindelse til en stadig større verden af data. Hvis du ikke har Power BI Desktop, kan du [downloade](http://go.microsoft.com/fwlink/?LinkID=521662) og installere det.
@@ -24,6 +25,7 @@ I Power BI Desktop findes der *alle mulige* forskellige datakilder. På følgend
 
 ![](media/desktop-connect-to-data/getdatavid_smallv2.gif)
 
+## <a name="example-of-connecting-to-data"></a>Eksempel på oprettelse af forbindelse til data
 I dette eksempel opretter vi forbindelse til en datakilde af typen **Web**.
 
 Forestil dig, at du går på pension – du vil gerne bo et sted, hvor der er masser af solskin, bedre skatter og et godt sundhedsvæsen. Eller… du er måske dataanalytiker, og du ønsker, at oplysningerne skal hjælpe dine kunder – f.eks. hjælpe en kunde, der producerer regnfrakker, med at målrette salg, hvor det regner *meget*.
@@ -64,7 +66,7 @@ Mens datamodellen indlæst, kan vi i **rapportvisningen** i Power BI Desktop gå
 
 Det er selvfølgelig en simpel model med en enkelt dataforbindelse. De fleste Power BI Desktop-rapporter vil have forbindelser til forskellige datakilder, formet til dine behov, med relationer, der opretter en mere omfattende datamodel. 
 
-### <a name="next-steps"></a>Næste trin
+## <a name="next-steps"></a>Næste trin
 Du kan gøre mange forskellige ting med Power BI Desktop. Du kan finde flere oplysninger om funktionerne i følgende ressourcer:
 
 * [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)

@@ -9,13 +9,14 @@ ms.service: powerbi
 ms.component: powerbi-admin
 ms.topic: conceptual
 ms.date: 10/21/2018
+ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 451727d473b59afd362e4f31e8aef634d2168f83
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: cbfee8034639a65517f9adc57cc95dd1271e6044
+ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717625"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53025436"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Hvad er Microsoft Power BI Premium?
 
@@ -45,11 +46,11 @@ I følgende tabel ses en oversigt over forskellene mellem delt kapacitet og Prem
 |  | Delt kapacitet | Power BI Premium-kapacitet |
 | --- | --- | --- |
 | **Opdateringshastighed** |8/dag |48/dag |
-| **Isolering med dedikeret hardware** |![](media/service-premium/not-available.png "Ikke tilgængelig") |![](media/service-premium/available.png "Tilgængelig") |
+| **Isolering med dedikeret hardware** |![Ikke tilgængelig](media/service-premium/not-available.png) |![Tilgængelig](media/service-premium/available.png) |
 | **Enterprise Distribution til** _**alle brugere**_ | | |
-| Apps og deling |![](media/service-premium/not-available.png "Ikke tilgængelig") |![](media/service-premium/available.png "Tilgængelig")<sup>1</sup> |
-| Integreret API og kontrolelementer |![](media/service-premium/not-available.png "Ikke tilgængelig") |![](media/service-premium/available.png "Tilgængelig")<sup>2</sup> |
-| **Publicer Power BI-rapporter i det lokale miljø** |![](media/service-premium/not-available.png "Ikke tilgængelig") |![](media/service-premium/available.png "Tilgængelig") |
+| Apps og deling |![Ikke tilgængelig](media/service-premium/not-available.png) |![Tilgængelig](media/service-premium/available.png) |
+| Integreret API og kontrolelementer |![Ikke tilgængelig](media/service-premium/not-available.png) |![Tilgængelig](media/service-premium/available.png)<sup>2</sup> |
+| **Publicer Power BI-rapporter i det lokale miljø** |![Ikke tilgængelig](media/service-premium/not-available.png) |![Tilgængelig](media/service-premium/available.png) |
 | | | |
 
 *<sup>1</sup> Se [Funktioner efter licenstype](service-features-license-type.md) for at få flere oplysninger.*  
@@ -88,7 +89,7 @@ Power BI Premium er tilgængelig i nodekonfigurationer med andre v-kerne-kapacit
 
 Tænk på en arbejdsbelastning i Power BI som en af de mange tjenester, du kan vise til brugere. Som standard understøtter kapaciteter for **Power BI Premium** og **Power BI Embedded** kun den arbejdsbelastning, der er knyttet til Power BI-forespørgsler, som kører i clouden.
 
-Vi tilbyder nu understøttelse af yderligere to arbejdsbelastninger: **sideinddelte rapporter** og **dataflow**. Du aktiverer disse arbejdsbelastninger på Power BI-administrationsportalen eller via Power BI REST-API'en. Du kan også angive den maksimale hukommelse, som de enkelte arbejdsbelastninger kan forbruge, og dermed styre, hvordan de forskellige arbejdsbelastninger påvirker hinanden. Du kan finde flere oplysninger under [Konfigurer arbejdsbelastninger](service-admin-premium-manage.md#configure-workloads).
+Vi tilbyder nu understøttelse af yderligere to arbejdsbelastninger: **Sideinddelte rapporter** og **Dataflow**. Du aktiverer disse arbejdsbelastninger på Power BI-administrationsportalen eller via Power BI REST-API'en. Du kan også angive den maksimale hukommelse, som de enkelte arbejdsbelastninger kan forbruge, og dermed styre, hvordan de forskellige arbejdsbelastninger påvirker hinanden. Du kan finde flere oplysninger under [Konfigurer arbejdsbelastninger](service-admin-premium-manage.md#configure-workloads).
 
 ### <a name="default-memory-settings"></a>Standardindstillinger for hukommelse
 
@@ -113,11 +114,11 @@ I følgende tabeller vises standard- og minimumværdierne for hukommelse baseret
 
 Hvis du bruger arbejdsbelastningen for sideinddelte rapporter, skal du være opmærksom på følgende punkter.
 
-* **Allokering af hukommelse i sideinddelte rapporter**: I sideinddelte rapporter kan du køre din egen kode, når du gengiver en rapport (f.eks. når du ændrer tekstfarven dynamisk baseret på indhold). Derfor sikrer vi Power BI Premium-kapacitet ved at køre sideinddelte rapporter i et inkluderet område i kapaciteten. Vi kan tildele den maksimale hukommelse, du angiver, til dette område, uanset om arbejdsbelastningen er aktiv eller ej. Hvis du bruger Power BI-rapporter eller -dataflow i den samme egenskab, skal du sørge for, at du har angivet hukommelsen lavt nok til sideinddelte rapporter, så det ikke påvirker andre arbejdsbelastninger.
+* **Hukommelsesallokering i sideinddelte rapporter**: I sideinddelte rapporter kan du køre din egen kode, når du gengiver en rapport (f.eks. når du ændrer tekstfarven dynamisk baseret på indhold). Derfor sikrer vi Power BI Premium-kapacitet ved at køre sideinddelte rapporter i et inkluderet område i kapaciteten. Vi kan tildele den maksimale hukommelse, du angiver, til dette område, uanset om arbejdsbelastningen er aktiv eller ej. Hvis du bruger Power BI-rapporter eller -dataflow i den samme egenskab, skal du sørge for, at du har angivet hukommelsen lavt nok til sideinddelte rapporter, så det ikke påvirker andre arbejdsbelastninger.
 
 * **Sideinddelte rapporter er ikke tilgængelige**: I sjældne tilfælde kan arbejdsbelastningen i sideinddelte rapporter blive utilgængelige. I dette tilfælde viser arbejdsbelastningen en fejltilstand på administrationsportalen, og brugere får vist timeout for gengivelse af rapporter. Du kan afhjælpe dette problem ved at deaktivere arbejdsbelastningen og derefter aktivere den igen.
 
-## <a name="power-bi-report-server"></a>Power BI Report Server
+## <a name="power-bi-report-server"></a>Power BI-rapportserver
 
 Power BI Premium giver også mulighed for at køre Power BI-rapportserver i det lokale miljø i din organisation. Du kan finde flere oplysninger i [Introduktion til Power BI-rapportserver](report-server/get-started.md).
 

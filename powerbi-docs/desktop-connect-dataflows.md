@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f87db1f715118f346e3b8069897e92fd157f881c
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 6d602b19141c6277fe7ec6a7627749f57f6e25a6
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265926"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180708"
 ---
 # <a name="connect-to-data-created-by-power-bi-dataflows-in-power-bi-desktop-beta"></a>Opret forbindelse til data oprettet af Power BI-dataflow i Power BI Desktop (beta)
 I **Power BI Desktop** kan du oprette forbindelse til data oprettet af **Power BI-dataflows** på samme måde som enhver anden datakilde i Power BI Desktop.
@@ -36,6 +36,20 @@ Hvis du vil bruge denne betaversion af **connectoren Power BI-dataflow**, skal d
 
 Du kan forbedre ydeevnen for dataindtagelse for dataflow. Hvis f.eks. mængden af de overførte data er for stor til, at **Power BI Desktop** kan administrere dem på din computer, kan du bruge sammenkædede og beregnede objekter i dataflow til at samle dataene (i dataflow) og kun overføre de samlede data, der er klargjort i forvejen. Dette medfører, at behandling af store datamængder udføres online i dataflow i stedet for at blive udført lokalt i din kørende forekomst af **Power BI Desktop**. Denne tilgang giver Power BI Desktop mulighed for at overføre mindre datamængder og sørger for, at oplevelsen med dataflow forbliver dynamisk og hurtig.
 
+## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
+
+De fleste dataflow er placeret i Power BI-tjenestelejeren. **Power BI Desktop**-brugerne kan dog ikke få adgang til dataflow, der er gemt under Azure Data Lake Storage Gen2-kontoen, medmindre de er ejer af dataflowet, eller de udtrykkeligt er godkendt til dataflowets CDM-mappe. Se følgende eksempel:
+
+1.  Anna opretter et nyt apparbejdsområde og konfigurerer det til at gemme dataflow i organisationens data lake.
+2.  Ben, der også er medlem af det arbejdsområde, Anna har oprettet, ønsker at bruge Power BI Desktop og dataflowconnectoren til at hente data fra det dataflow, Anna har oprettet.
+3.  Ben får vist en fejl, da han ikke er tilføjetdataflowets SCM-mappe som en godkendt bruger data lake.
+
+    ![Fejl under forsøg på at bruge dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
+
+Problemet kan løses ved, at Ben tildeles læsetilladelser til CDM-mappen og dens filer. Du kan få mere at vide om, hvordan du give adgang til CDM-mappen i [denne artikel](https://go.microsoft.com/fwlink/?linkid=2029121).
+
+
+
 
 ## <a name="next-steps"></a>Næste trin
 Du kan gøre mange forskellige interessante ting med Power BI-dataflow. Du kan finde flere oplysninger i følgende ressourcer:
@@ -45,6 +59,13 @@ Du kan gøre mange forskellige interessante ting med Power BI-dataflow. Du kan f
 * [Brug beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
 * [Brug dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
 * [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
+
+Du kan finde flere oplysninger om integration med Azure Data Lake Storage Gen2 i følgende artikler:
+
+* [Integration af dataflow og Azure Data Lake (eksempelvisning)](service-dataflows-azure-data-lake-integration.md)
+* [Konfigurer indstillinger for dataflow for arbejdsområde (eksempelvisning)](service-dataflows-configure-workspace-storage-settings.md)
+* [Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)](service-dataflows-add-cdm-folder.md)
+* [Opret forbindelse til Azure Data Lake Storage Gen2 til dataflowlager (eksempelvisning)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
 Der findes også artikler om **Power BI Desktop**, som du kan finde nyttige:
 

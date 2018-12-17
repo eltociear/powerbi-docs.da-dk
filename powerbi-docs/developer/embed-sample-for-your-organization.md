@@ -1,31 +1,32 @@
 ---
-title: Integrer Power BI-indhold i en app til din organisation
-description: Få mere at vide om, hvordan du kan integrere en rapport, et dashboard eller et felt i en webapp ved hjælp af API'er til Power BI til din organisation.
+title: Integreret analyse for at integrere Power BI-indhold i dit program for din organisation
+description: Få mere at vide om, hvordan du integrerer en rapport, et dashboard eller et felt i et program ved hjælp af Power BI-API'er for at bruge integreret analyse for din organisation. Få mere at vide om, hvordan du integrerer Power BI i dit program ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence.
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.topic: tutorial
+ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
-ms.custom: mvc
-ms.date: 10/17/2018
-ms.openlocfilehash: 92ed5530ba2e3e72ec4d4e7d7c317993bdf9c04b
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.topic: tutorial
+ms.custom: seodec18
+ms.date: 12/10/2018
+ms.openlocfilehash: 541e6e62ac075922cdb301343361ac328a3db28e
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396859"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180754"
 ---
-# <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Selvstudium: Integrer en rapport, et dashboard eller et felt i Power BI i et program til din organisation
+# <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Selvstudium: Integrer en rapport, et dashboard eller et felt i Power BI i et program for din organisation
 
-Dette selvstudium viser, hvordan du integrerer en rapport i et program. Du kan bruge Power BI .NET SDK sammen med Power BI JavaScript-API'en til at integrere Power BI i et program til din organisation. I Power BI kan du integrere rapporter, dashboards eller felter i et program ved hjælp af **brugeren ejer dataene**. **Brugeren ejer dataene** gør det muligt for programmet at udvide Power BI-tjenesten.
+I **Power BI** kan du integrere rapporter, dashboards eller felter i et program ved hjælp af funktionen "brugeren ejer data". Ved hjælp af funktionen **brugeren ejer data** kan programmet udvide Power BI-tjenesten til at bruge integreret analyse. Dette selvstudium viser, hvordan du integrerer en rapport i et program. Du kan bruge Power BI .NET SDK med Power BI JavaScript-API'en til at integrere Power BI i et program for din organisation.
 
 ![Integrer Power BI-rapport](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 I dette selvstudium får du at vide, hvordan du udfører følgende opgaver:
->[!div class="checklist"]
->* Registrere en app i Azure.
->* Integrer en Power BI-rapport i et program.
+> [!div class="checklist"]
+> * Registrere en app i Azure.
+> * Integrer en Power BI-rapport i et program.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -40,9 +41,9 @@ For at komme i gang skal du have en Power BI Pro-konto og et Microsoft Azure-abo
 
 Før du begynder at integrere rapporter, dashboards eller felter i din app, skal du kontrollere, at du kan integrere i dit miljø. Som en del af installationen, skal du udføre en af disse handlinger:
 
-- Du kan gennemgå [Embedding setup tool](https://aka.ms/embedsetup/UserOwnsData) for hurtigt at komme i gang med og downloade en eksempelapp, hvor du kan se, hvordan du opretter et miljø og integrerer en rapport.
+* Du kan gennemgå [værktøjet til konfiguration af integrering](https://aka.ms/embedsetup/UserOwnsData) for hurtigt at komme i gang med og downloade et eksempelprogram, hvor du kan se, hvordan du opretter et miljø og integrerer en rapport.
 
-- Hvis du vælger at konfigurere miljøet manuelt, kan du udføre trinnene i følgende afsnit:
+* Hvis du vælger at konfigurere miljøet manuelt, kan du udføre trinnene i følgende afsnit:
 
 ### <a name="register-an-application-in-azure-active-directory"></a>Registrer et program i Microsoft Azure Active Directory
 
@@ -60,13 +61,13 @@ Registrer dit program i Microsoft Azure Active Directory, så det får adgang ti
 
     ![Registrering af nyt program](media/embed-sample-for-your-organization/embed-sample-for-your-organization-004.png)
 
-4. Følg prompterne, og opret et nyt program. I forbindelse med **brugeren ejer dataene** skal du bruge **Webapp/API** som **Programtype**. Du skal også angive en **Logon-URL**, som Microsoft Azure Active Directory bruger til at returnere tokensvar. Angiv en værdi, der er specifik for dit program. Et eksempel er `http://localhost:13526/`.
+4. Følg prompterne, og opret et nyt program. I forbindelse med **brugeren ejer dataene** skal du bruge **Webapp/API** som **Programtype**. Angiv en **URL-adresse til logon**, som Azure AD bruger til at returnere tokensvar. Angiv en værdi, der er specifik for dit program. Et eksempel er `http://localhost:13526/`.
 
     ![Opret en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-005.png)
 
 ### <a name="apply-permissions-to-your-application-within-azure-active-directory"></a>Anvend tilladelser til dit program i Azure Active Directory
 
-Du skal aktivere tilladelser for dit program ud over det, der er angivet på siden til appregistrering. Log på med en global administrator-konto for at aktivere tilladelser.
+Aktivér tilladelser for dit program foruden det, der er angivet på siden til appregistrering. Log på med en global administrator-konto for at aktivere tilladelser.
 
 ### <a name="use-the-azure-active-directory-portal"></a>Brug Azure Active Directory-portalen
 
@@ -128,7 +129,7 @@ Hvis du integrerer rapporter, dashboards eller felter til dine kunder, skal du p
 
     Du kan nu se det nye arbejdsområde. Power BI opretter arbejdsområdet og åbner det. Det vises på listen over de arbejdsområder, du er medlem af. Da du er administrator, kan du vælge de tre prikker (…) for at gå tilbage og ændre arbejdsområdet, tilføje nye medlemmer eller ændre deres tilladelser.
 
-    ![Opret app-arbejdsområde](media/embed-sample-for-your-organization/embed-sample-for-your-organization-025.png)
+    ![Opret apparbejdsområde](media/embed-sample-for-your-organization/embed-sample-for-your-organization-025.png)
 
 ### <a name="create-and-publish-your-reports"></a>Opret og udgiv dine rapporter
 
@@ -168,69 +169,69 @@ Følg disse trin for at integrere dit indhold ved hjælp af et eksempelprogram:
 
     1. Log på [Azure Portal](https://portal.azure.com).
 
-        ![Azure Portal-dashboard](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
+       ![Azure Portal-dashboard](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
 
-    1. Vælg **Alle tjenester** i navigationsruden til venstre, og vælg **Appregistreringer**.
+    2. Vælg **Alle tjenester** i navigationsruden til venstre, og vælg **Appregistreringer**.
 
-        ![Søg efter programregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+       ![Søg efter programregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-    1. Vælg programmet, der skal bruge **ApplicationID**.
+    3. Vælg programmet, der skal bruge **ApplicationID**.
 
-        ![Vælg en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+       ![Vælg en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-    1. Du kan se et **program-id**, der er angivet som et GUID. Brug dette **Program-id** som **ApplicationID** for programmet.
+    4. Du kan se et **program-id**, der er angivet som et GUID. Brug dette **Program-id** som **ApplicationID** for programmet.
 
         ![ApplicationID](media/embed-sample-for-your-organization/embed-sample-for-your-organization-007.png)
 
-    1. Udfyld oplysningerne for **ApplicationSecret** ud fra sektionen **Nøgler** i sektionen **Appregistreringer** i **Azure**.
+    Udfyld oplysningerne for **ApplicationSecret** ud fra sektionen **Nøgler** i sektionen **Appregistreringer** i **Azure**.
 
-    1. Hvis du vil hente **ApplicationSecret**, skal du følge disse trin:
+    Hvis du vil hente **ApplicationSecret**, skal du følge disse trin:
 
-        1. Log på [Azure Portal](https://portal.azure.com).
+    1. Log på [Azure Portal](https://portal.azure.com).
 
-            ![Azure-portal](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
+       ![Azure-portal](media/embed-sample-for-your-organization/embed-sample-for-your-organization-002.png)
 
-        1. Vælg **Alle tjenester** i navigationsruden til venstre, og vælg **Appregistreringer**.
+    2. Vælg **Alle tjenester** i navigationsruden til venstre, og vælg **Appregistreringer**.
 
-            ![Søg efter programregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+       ![Søg efter programregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
 
-        1. Vælg programmet, der skal bruge **ApplicationSecret**.
+    3. Vælg programmet, der skal bruge **ApplicationSecret**.
 
-            ![Vælg en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+       ![Vælg en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
-        1. Vælg **Indstillinger**.
+    4. Vælg **Indstillinger**.
 
-            ![Vælg Indstillinger](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
+       ![Vælg Indstillinger](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
 
-        1. Vælg **Nøgler**.
+    5. Vælg **Nøgler**.
 
-            ![Vælg Nøgler](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+       ![Vælg Nøgler](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
 
-    1. Angiv et navn i feltet **Beskrivelse**, og vælg en varighed. Vælg derefter **Gem** for at hente **værdien** til dit program. Når du lukker ruden **Nøgler** efter at have gemt nøgleværdien, vises feltet med værdien kun som skjult. På det tidspunkt kan du ikke hente nøgleværdien. Hvis du mister nøgleværdien, skal du oprette en ny i Azure Portal.
+    6. Angiv et navn i feltet **Beskrivelse**, og vælg en varighed. Vælg derefter **Gem** for at hente **værdien** til dit program. Når du lukker ruden **Nøgler** efter at have gemt nøgleværdien, vises feltet med værdien kun som skjult. På det tidspunkt kan du ikke hente nøgleværdien. Hvis du mister nøgleværdien, skal du oprette en ny i Azure Portal.
 
-        ![Nøgleværdi](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+          ![Nøgleværdi](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
-    1. Udfyld **groupId** med apparbejdsområde-GUID'et fra Power BI.
+    7. Udfyld **groupId** med apparbejdsområde-GUID'et fra Power BI.
 
-        ![Angiv groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
+       ![Angiv groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
-    1. Udfyld **reportId** med rapport-GUID'et fra Power BI.
+    8. Udfyld **reportId** med rapport-GUID'et fra Power BI.
 
-        ![Angiv reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
+       ![Angiv reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
 
 3. Kør programmet:
 
-    1. Først skal du vælge **Kør** i **Visual Studio**.
+    Vælg **Kør** i **Visual Studio**.
 
-        ![Kør programmet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-033.png)
+    ![Kør programmet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-033.png)
 
-    1. Vælg derefter **Hent rapport**.
+    Vælg derefter **Hent rapport**.
 
-        ![Vælg indhold](media/embed-sample-for-your-organization/embed-sample-for-your-organization-034.png)
+    ![Vælg indhold](media/embed-sample-for-your-organization/embed-sample-for-your-organization-034.png)
 
-    1. Du kan nu se rapporten i eksempelprogrammet.
+    Du kan nu se rapporten i eksempelprogrammet.
 
-        ![Få vist rapporten i programmet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
+    ![Få vist rapporten i programmet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 ## <a name="embed-your-content-within-your-application"></a>Integrer dit indhold i dit program
 
