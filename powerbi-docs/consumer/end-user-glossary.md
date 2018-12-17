@@ -2,17 +2,18 @@
 title: Ordliste for Power BI-forbrugere
 description: Power BI introducerer mange nye begreber og nye måder at bruge velkendte begreber på. Brug vores ordliste til at blive fortrolig med Power BI-terminologien.
 services: power-bi
+ms.custom: seodec18
 author: mihart
 ms.service: powerbi-service
 ms.topic: resource
-ms.date: 11/12/2018
+ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: fd7974024fdbfce38b93f1598fa389ef71a47dd9
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: f0e81c72fde0275467c3a914d19e916dab604cce
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026334"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280782"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordliste til Power BI-tjenesten
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
@@ -42,7 +43,7 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 
 **AppSource** Centraliseret onlinelager, hvor du kan gennemse og udforske dashboards, rapporter, datasæt og apps, som du kan downloade.
 
-**ArcGIS Maps for Power BI** ArcGIS er en tilknytnings- og analyseplatform, der er oprettet af virksomheden ESRI. Navnet på den visualisering, der er inkluderet i biblioteket med visualiseringer i Power BI, kaldes ArcGIS Maps for Power BI.
+**ArcGIS for Power BI** ArcGIS er en tilknytnings- og analyseplatform, der er oprettet af virksomheden ESRI. Navnet på den visual, der er inkluderet i biblioteket med visuals i Power BI, kaldes ArcGIS for Power BI.
 
 **tildele** [Power BI Premium] Verbum, der dækker over flytning af et arbejdsområde ind i eller ud af en dedikeret kapacitet. Brug ikke hævning for at flytte et arbejdsområde til dedikeret kapacitet, fordi det betyder, at dedikeret kapacitet ligger over delt kapacitet.  
 
