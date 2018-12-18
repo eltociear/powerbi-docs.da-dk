@@ -5,18 +5,19 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: be7597cf13732e251f40f73a853e6ea7b0032652
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: bb3ecb8a343d2ed3f3693dd136b11b7543cabc70
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507663"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280725"
 ---
 # <a name="printing-from-power-bi-service"></a>Udskriv fra Power BI-tjenesten
 Udskriv et helt dashboard, et dashboardfelt, en rapportside eller en rapportvisualisering fra Power BI-tjenesten. Rapporter kan kun udskrives med én side ad gangen – du kan ikke udskrive hele rapporten på en gang.
@@ -79,14 +80,14 @@ Rapporter kan udskrives med én side ad gangen.
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 * Spørgsmål: Jeg kan ikke finde knappen **Udskriv**.    
 * Svar: Hvis du bruger Power BI Desktop, understøttes udskrivning ikke.  Udskrivning fungerer kun i Power BI-tjenesten.
-* Spørgsmål: Jeg kan ikke udskrive alle rapportsider på en gang.    
+* Spørgsmål: Jeg kan ikke udskrive alle rapportsider på én gang.    
 * Svar: Det er korrekt. Rapportsider kan kun udskrives med én side ad gangen.
 * Spørgsmål: Jeg kan ikke udskrive til PDF-fil.    
 * Svar: Du kan kun se denne indstilling, hvis du allerede har konfigureret PDF-driveren i din browser.    
-* Spørgsmål: Hvad jeg ser, når jeg vælger **Udskriv**, stemmer ikke overens med, hvad du viser mig her.    
-* Svar: Udskriftsskærmbillederne varierer efter browser og softwareversion.
-* Spørgsmål: Min udskrift skaleres ikke korrekt.  Mit dashboard kan ikke være på siden. Andre spørgsmål om skalering og retning.    
-* Svar: Vi kan ikke garantere, at den udskrevne kopi bliver præcist den samme som i Power BI-tjenesten. Bl.a. skalering, margener, visuelle detaljer, retning og størrelse styres ikke af Power BI. Du kan finde hjælp til sådanne problemer ved at se i dokumentationen til din browser.      
+* Spørgsmål: Dér jeg ser, når jeg vælger **Udskriv**, stemmer ikke overens med det, du viser mig her.    
+* Svar: Skærmbillederne for udskrivning varierer afhængigt af browser og softwareversion.
+* Spørgsmål: Min udskrift er ikke skaleret korrekt.  Mit dashboard kan ikke være på siden. Andre spørgsmål om skalering og retning.    
+* Svar: Vi kan ikke garantere, at udskriften bliver præcist den samme som i Power BI-tjenesten. Bl.a. skalering, margener, visuelle detaljer, retning og størrelse styres ikke af Power BI. Du kan finde hjælp til sådanne problemer ved at se i dokumentationen til din browser.      
 
 ## <a name="next-steps"></a>Næste trin
 [Del dashboards og rapporter med kollegaer og andre](../service-share-dashboards.md)

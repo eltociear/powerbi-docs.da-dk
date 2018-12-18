@@ -1,21 +1,22 @@
 ---
-title: Oversigt over Spørgsmål og svar i Power BI-tjenesten og Desktop
+title: Oversigt over Spørgsmål og svar i Power BI-tjenesten
 description: Oversigtsemne i dokumentationen om forespørgsler i naturligt sprog i Spørgsmål og svar i Power BI.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/16/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 361c71c979d65e5c71ada6889bc7312ef64da23e
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 3548041be39705c3013d09740040afc3e7f1c9e7
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396353"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53279572"
 ---
 # <a name="qa-for-power-bi-consumers"></a>Spørgsmål og svar til Power BI-**forbrugere**
 ## <a name="what-is-qa"></a>Hvad er Spørgsmål og svar?
@@ -46,7 +47,7 @@ Først skal du blive bekendt med indholdet. Se nærmere på visualiseringerne p�
 
 ![skærmen Spørgsmål og svar](media/end-user-q-and-a/power-bi-qna-screen.png) 
 
-* Hvis visualiseringernes akseetiketter og værdier omfatter "salg", "kunde", "måned" og "salgsmuligheder", kan du med sikkerhed stille spørgsmål som: "Hvilken *kunde* har den højeste *salgsmulighed* eller vis *salg* pr. måned som et søjlediagram".
+* Hvis visualiseringernes aksemærkater og værdier omfatter "salg", "konto", "måned" og "muligheder", kan du med sikkerhed stille spørgsmål som: "Hvilken *konto* har den højeste *mulighed*, eller vis *salg* efter måned som et liggende søjlediagram."
 
 * Hvis du har data om et websteds ydeevne i Google Analytics, kan du spørge Spørgsmål og svar om, hvor meget tid der er brugt på en webside, antallet af entydige besøg på siden og brugerengagement. Eller hvis du forespørger på demografiske data, kan du stille spørgsmål om alder og indkomst i husholdningen efter placering.
 
@@ -63,17 +64,17 @@ Spørgsmål og svar vælger den bedste visualisering baseret på de data, der bl
 Du kan også fortælle Spørgsmål og svar, hvilken visualisering der skal bruges, ved at føje den til dit spørgsmål. Men husk, at det ikke altid er muligt for Spørgsmål og svar at vise dataene i den ønskede visualiseringstype. Spørgsmål og svar viser en prompt med en liste over visualiseringstyper, du kan arbejde med.
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
-**Spørgsmål**: Jeg kan ikke se Spørgsmål og svar på dette dashboard.    
-**Svar 1**: Hvis du ikke kan se et spørgsmålsfelt, skal du starte med at kontrollere dine indstillinger. Det gør du ved at vælge tandhjulsikonet i øverste højre hjørne af Power BI-værktøjslinjen.   
+**Spørgsmål:** Jeg kan ikke se Spørgsmål og svar på dette dashboard.    
+**Svar 1:** Hvis du ikke kan se et spørgsmålsfelt, skal du starte med at kontrollere dine indstillinger. Det gør du ved at vælge tandhjulsikonet i øverste højre hjørne af Power BI-værktøjslinjen.   
 ![tandhjulsikon](media/end-user-q-and-a/power-bi-settings.png)
 
 Vælg derefter **Indstillinger** > **Dashboards**. Kontrollér, at der er en markering ud for **Vis søgefeltet for Spørgsmål og svar på dette dashboard**.
 ![Indstillinger for Spørgsmål og svar på dashboard](media/end-user-q-and-a/power-bi-turn-on.png)  
 
 
-**Svar 2**: Nogle gange slår *designeren* af dashboardet eller administratoren Spørgsmål og svar fra. Spørg dem, om det er okay at slå det til igen.   
+**Svar 2:** Nogle gange slår *designeren* af dashboardet eller administratoren Spørgsmål og svar fra. Spørg dem, om det er okay at slå det til igen.   
 
-**Spørgsmål**: Jeg får ikke de resultater, jeg gerne vil se, når jeg skriver et spørgsmål.    
+**Spørgsmål:** Jeg får ikke de resultater, jeg gerne vil se, når jeg skriver et spørgsmål.    
 **Svar**: Tal med *designeren* af dashboardet. Der er mange ting, som designeren kan gøre for at forbedre Spørgsmål og svar. Designeren kan f.eks. omdøbe kolonner i datasættet, så der bruges begreber, som er nemme at forstå (`CustomerFirstName` i stedet for `CustFN`). Da designeren kender datasættet virkelig godt, kan designeren også komme med nyttige spørgsmål og føje dem til lærredet for Spørgsmål og svar.
 
 ![udvalgt spørgsmål fremhævet](media/end-user-q-and-a/power-bi-featured-q.png)

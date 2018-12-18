@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: dd59f572da6bb3b62fa142ea7b7eab4aef5a3466
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: 8bae8475ee4bbe91ea27f3a9e30a3323a92a8250
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180524"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280253"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Få vist dataindsigt på dashboardfelter med Power BI
 Hvert enkelt visualiseringsfelt på dashboardet er en indgang til at udforske data. Når du vælger et felt, åbnes en rapport, hvor du kan filtrere, sortere og fordybe dig i datasættet bag rapporten. Når du kører indsigt, udfører Power BI denne udforskning af data for dig.

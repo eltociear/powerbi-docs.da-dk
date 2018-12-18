@@ -8,10 +8,10 @@ Datagatewayen installeres og kører på computeren. Det er bedst at installere g
 
 For Power BI skal du starte med at vælge tilstand for gatewayen.
 
-* **Datagateway i det lokale miljø:** flere brugere kan dele og genbruge en gateway i denne tilstand. Denne gateway kan bruges af Power BI, PowerApps, Flow eller Logic Apps. For Power BI omfatter dette understøttelse af både planlægning af opdatering og DirectQuery
-* **Personlig:** Dette er kun til Power BI og kan bruges af en enkeltbruger uden administratorkonfiguration. Kan kun bruges til planlægning af opdatering og opdatering efter behov. Dette valg starter installationen af den personlige gateway.
+* **Datagateway i det lokale miljø:** Flere brugere kan dele og genbruge en gateway i denne tilstand. Denne gateway kan bruges af Power BI, PowerApps, Flow eller Logic Apps. For Power BI omfatter dette understøttelse af både planlægning af opdatering og DirectQuery
+* **Personlig:** Dette er kun til Power BI og kan bruges af en enkeltperson uden administratorkonfiguration. Kan kun bruges til planlægning af opdatering og opdatering efter behov. Dette valg starter installationen af den personlige gateway.
 
-Der er nogle få ting, du skal være opmærksom på, uanset hvilken tiltand af gatewayen du installerer:
+Der er nogle få ting, du skal være opmærksom på, uanset hvilken tilstand af gatewayen du installerer:
 
 * Begge gateways kræver et 64-bit Windows-operativsystem.
 * Gateways kan ikke installeres på en domænecontroller.

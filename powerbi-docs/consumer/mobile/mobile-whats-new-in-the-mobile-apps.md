@@ -9,12 +9,12 @@ ms.component: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maggies
-ms.openlocfilehash: 37995f52882d1a5062b8aa03fb7b0480063a4f77
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: f272d0e40de5c65de9134c3d184195889233496b
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979535"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280920"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -22,6 +22,36 @@ Du kan finde relaterede oplysninger om nyheder under:
 * [Power BI-teamets blog til mobilapps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheder i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheder i Power BI-tjenesten](../../service-whats-new.md)  
+
+## <a name="november-2018"></a>November 2018
+
+### <a name="modern-visual-header"></a>Moderne visuel overskrift 
+
+Rapporter med den nye "moderne visuelle overskrift" skal ikke længere bruge plads til overskrifter, hvilket giver mindre tom plads og mere plads til dine visualiseringer.
+
+### <a name="enhance-presentation-mode-windows"></a>Få bedre præsentationstilstand (Windows)
+
+Forbedret præsentationstilstand til Surface Hub- og Windows 10-enheder.  Få glæde af en forbedret oplevelse med mødelokaler i Surface Hub med forbedrede præsentations- og samarbejdsværktøjer samt en optimeret Chromeless-visning på en stor skærm, så du kan fokusere på dine data. Præsentationstilstand indeholder også værktøjer som håndskrift, der på en effektiv måde hjælper dig med at præsentere og drøfte dine data. Læs mere om præsentationstilstand [her](https://powerbi.microsoft.com/en-us/blog/presentation-mode-in-power-bi-windows-app/).
+
+### <a name="portrait-report-layout-in-tablets-ios-and-android"></a>Stående layout af rapporter på tablets (iOS og Android)
+
+Vi bruger nu telefonlayout for rapporter, når dette findes, så du kan se rapporter på din tablet i stående layout. Læs mere om, [hvordan du opretter telefonlayout i Power BI-tjenesten eller Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report/).
+
+### <a name="supporting-report-query-string"></a>Understøttelse af forespørgselsstrenge i rapporten 
+
+Hvis du åbner et rapportlink, der indeholder en forespørgselsstreng, åbnes det nu i mobilappen og bliver filtreret på forhånd på baggrund af de betingelser, der er defineret i forespørgselsstrengen. Få mere at vide om, [hvordan du opretter en URL-adresse for en rapport med en forespørgselsstreng](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
+
+### <a name="shared-credentials-now-in-android"></a>Delte legitimationsoplysninger (nu i Android)
+
+Aldrig har det været nemmere at logge på Power BI fra din mobilapp. Med delte legitimationsoplysninger har vi gjort logonprocessen nemmere ved at bruge legitimationsoplysningerne til andre Office 365-apps på enheden til at godkende dig i Power BI-tjenesten.
+
+### <a name="in-app-urls-now-in-android"></a>URL-adresser i appen (nu i Android) 
+
+Links i rapporter, der peger på andre Power BI-artefakter, åbnes nu direkte i appen. Dermed kan du oprette brugerdefinerede navigationsflow, f.eks. et link fra en rapport til et dashboard.
+
+### <a name="show-data-and-copy-values"></a>Vis data, og kopiér værdier
+
+Handlingsmenuen for visualiseringer i rapporten (...) indeholder nu muligheden for at vise de underliggende data i tabelformat. Når du har tabellen, kan du trykke og holde nede for at vælge og kopiere værdier fra tabellen (såfremt der ikke er nogen Intune-politik, der begrænser kopiering).
 
 ## <a name="october-2018"></a>Oktober 2018
 
@@ -194,7 +224,7 @@ Hvis du opretter en rapport med telefonoptimerede sider i Power BI Desktop, og r
 
 #### <a name="show-data-in-reports"></a>Vis data i rapporter
 
-Du kan nu udskifte visuelle elementer i dine rapporter med en tabel for at få vist tallene bag dataene. For at få adgang til denne funktion, skal du trykke på "Vis data" fra den visuelle menu på rapporten eller det nye ikon på det udvidede visuelle element i menuen handling.
+Du kan nu udskifte visualiseringer i dine rapporter med en tabel for at få vist tallene bag dataene. For at få adgang til denne funktion skal du trykke på "Vis data" i visualiseringens menu … i rapporten eller det nye ikon på handlingsmenuen for den udvidede visualisering.
 
 ### <a name="september-2017"></a>September 2017
 #### <a name="filters-for-phone-reports-in-iphones"></a>Filtre til telefonrapporter på iPhones
@@ -210,8 +240,8 @@ Læs [oversigten over funktioner i mobilapps for juli 2017](https://powerbi.micr
 #### <a name="ios-devices"></a>iOS-enheder
 **Ny oplevelse med spørgsmål og svar på iOS (prøveversion)** I stedet for blot at få svar på dit spørgsmål kan du nu bruge naturligt sprog for at få afgrænset indsigt. Også selvom du ikke helt ved, hvad du søger efter, vises indsigt, der er relevant for dine data, i Q&A. Den nye oplevelse på mobiltelefonen med spørgsmål og svar, der er udviklet i samarbejde med Microsoft Research-teamet, viser de effektive teknologier i vores produkt. Prøv selvstudiet [Stil spørgsmål om dine data i iOS-mobilapps](mobile-apps-ios-qna.md).
 
-### <a name="responsive-visuals"></a>Dynamiske visuelle elementer
-**Dynamiske visuelle elementer til telefonrapporter og dashboards** Du kan angive, at de visuelle elementer i dit dashboard eller en rapport skal være *dynamiske*, så de ændres dynamisk for at vise det maksimale antal data og indsigt uanset skærmstørrelse. Læs [bloggen om dynamiske visuelle elementer](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals).
+### <a name="responsive-visuals"></a>Dynamiske visualiseringer
+**Dynamiske visualiseringer til telefonrapporter og dashboards** Du kan angive, at visualiseringerne på dit dashboard eller i din rapport skal være *dynamiske*, så de ændres dynamisk for at vise det maksimale antal data og indsigt uanset skærmstørrelse. Læs [bloggen om dynamiske visualiseringer](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals).
 
 ### <a name="june-2107"></a>Juni 2017
 #### <a name="all-devices"></a>Alle enheder
@@ -234,7 +264,7 @@ Læs [oversigten over funktioner i mobilapps for april 2017](https://powerbi.mic
 #### <a name="all-devices"></a>Alle enheder
 **Baggrundsfarve for telefonrapporter** Når du definerer en baggrundsfarve for en rapport i Power BI Desktop, får telefonrapporten den samme baggrundsfarve. Mere om [optimering af rapportsider for telefoner](../../desktop-create-phone-report.md).
 
-**Udarbejd mobilvenlige brugerdefinerede visuelle elementer** Læs denne [Udviklerguide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) med tip til oprettelse af brugerdefinerede visuelle elementer, der ser godt ud og fungerer godt på mobilenheder.
+**Udarbejd mobilvenlige brugerdefinerede visualiseringer** Læs denne [Udviklerguide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) med tip til oprettelse af brugerdefinerede visualiseringer, der ser godt ud og fungerer godt på mobilenheder.
 
 #### <a name="ios-devices"></a>iOS-enheder
 **Tal med dataene: Stil spørgsmål ved at tale** Nu kan du [stille spørgsmål til dine data med Q&A](mobile-apps-ios-qna.md) ved at tale i stedet for at skrive. 

@@ -1,20 +1,21 @@
 ---
-title: Få vist en rapport i Power BI-tjenesten for forbrugere.
+title: Vis en rapport
 description: I dette emne beskrives, at Power BI-forbrugere og slutbrugere var nødt til at åbne og få vist en Power BI-rapport.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/17/2018
+ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: 15259d472ad315eb0a6274e59ebb30b94f48a302
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: df28cd585998b8877a788e709eaf6b22474e6122
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396928"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53281000"
 ---
 # <a name="view-a-report-in-power-bi-service-for-consumers"></a>Få vist en rapport i Power BI-tjenesten for *forbrugere*
 En rapport er en eller flere sider med visualiseringer. Rapporter oprettes af Power BI-*rapportdesignere* og [deles med *forbrugere* direkte](end-user-shared-with-me.md) eller som en del af en [app](end-user-apps.md). 

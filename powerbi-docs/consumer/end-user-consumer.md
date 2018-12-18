@@ -1,20 +1,21 @@
 ---
-title: Hvad er en Power BI-forbruger?
+title: Hvad er Power BI til "forbruger"?
 description: Oversigt over Power BI, og hvordan de forskellige dele passer sammen – Power BI Desktop, Power BI-tjeneste, Power BI Mobil, rapportserver, Power BI Embedded.
 author: mihart
 manager: kvivek
 ms.service: powerbi
+ms.custom: seodec18
 ms.component: powerbi-service
 ms.topic: overview
-ms.date: 10/13/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 15cdd66e6062c4199b2f736208192c452bcbd0af
-ms.sourcegitcommit: a3ce866caba24217bcdd011e892b9ea72f3d2400
+ms.openlocfilehash: 392593c6bceed7555a82916b2a992200438dffab
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49396567"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280161"
 ---
 # <a name="power-bi-for-consumers"></a>Power BI til forbrugere
 Den måde, du interagerer med Power BI på, afhænger af din jobfunktion. Som *slutbruger* eller *forbruger* er du den person, der modtager dashboards, rapporter og apps fra kolleger. Du arbejder i ***Power BI-tjenesten*** for at gennemse og interagere med dette indhold for at kunne træffe forretningsbeslutninger.

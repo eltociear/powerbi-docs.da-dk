@@ -1,21 +1,22 @@
 ---
-title: Tilføj et rapportfilter
+title: Tilføj et filter i en rapport
 description: Sådan føjer du et filter til en rapport i Power BI-tjenesten for forbrugere
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/19/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 31b3584b0cbd2481db64160bcf502caf46e7acc3
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: ea219071b475bf5bb9123e1aa3bbaca412507a8e
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473801"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280759"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Få en præsentation af ruden Rapportfiltre
 I denne artikel ser vi nærmere på ruden Filtre i rapporter i Power BI-tjenesten.
@@ -36,7 +37,7 @@ I Power BI-tjenesten gemmes de ændringer, du foretager i ruden Filtre, sammen m
 ## <a name="open-the-filters-pane"></a>Åbning af ruden Filtre
 Når en rapport er åbnet, vises ruden Filtre i højre side af rapportcanvasset. Hvis du ikke kan se ruden, skal du vælge pilen i øverste højre hjørne for at udvide den.  
 
-I dette eksempel har vi valgt en visualisering, der indeholder seks filtre. Der er også filtre på rapportsiden. De er angivet under overskriften **Filtre på sideniveau**. Der er ét [detaljeadgangsfilter](../power-bi-report-add-filter.md), og et filter for hele rapporten: **FiscalYear** is 2013 or 2014.
+I dette eksempel har vi valgt en visualisering, der indeholder seks filtre. Der er også filtre på rapportsiden. De er angivet under overskriften **Filtre på sideniveau**. Der er ét [detaljeadgangsfilter](../power-bi-report-add-filter.md) og et filter for hele rapporten:  **FiscalYear** er 2013 eller 2014.
 
 ![liste over filtre](media/end-user-report-filter/power-bi-filter-list.png)
 

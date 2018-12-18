@@ -8,15 +8,15 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8644bc01aa845ff91950169f011cb70fb161ecb1
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.openlocfilehash: abddbf3e4ae0b51dbb46f949e6d4f287d084f873
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271757"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280973"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Del dine Power BI-dashboards og -rapporter med kolleger og andre
 *Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Med Power BI får du også [adskillige andre måder at samarbejde om og distribuere dashboards og rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -96,7 +96,7 @@ Det er kun ejeren af dashboardet eller rapporten, der kan slå videredeling til 
 ## <a name="share-a-dashboard-or-report-with-people-outside-your-organization"></a>Del et dashboard eller en rapport med personer uden for din organisation
 Når du deler med personer uden for din organisation, modtager de en mail med et link til det delte dashboard eller den delte rapport, og de skal logge på Power BI for at få det/den vist. Hvis de ikke har en Power BI Pro-licens, kan de tilmelde sig en, når de klikker på linket.
 
-Når de har logget på, kan de se det delte dashboard eller den delte rapport i et separat browservindue uden den venstre navigationsrude og ikke på deres normale Power BI-portal. De skal bogmærke linket for at få adgang til dashboardet eller rapporten i fremtiden.
+Når de har logget på, kan de se det delte dashboard eller den delte rapport i et separat browservindue uden den venstre navigationsrude og ikke på deres normale Power BI-portal. De skal angive et bogmærke for linket for at få adgang til dette dashboard eller denne rapport fremover.
 
 De kan ikke redigere indhold i dette dashboard eller rapporten. De kan interagere med diagrammerne og skifte filtre eller udsnit i rapporten, men de kan ikke gemme ændringer.
 
@@ -111,7 +111,7 @@ Ting, du skal være opmærksom på angående deling af dashboards og rapporter:
 
 * Generelt kan se du og dine kolleger se de samme data på dashboardet eller i rapporten. Hvis du derfor har tilladelse til at se flere data, end de har, vil de kunne se alle dine data på dashboardet eller i rapporten. Men hvis [sikkerhed på rækkeniveau (RLS)](service-admin-rls.md) er anvendt på datasættet, der er underliggende for et dashboard eller en rapport, bruges legitimationsoplysningerne for hver person til at afgøre, hvilke data vedkommende kan få adgang til.
 * Alle, som du deler dashboardet med, kan se det og interagere med de relaterede rapporter i [Læsevisning](consumer/end-user-reading-view.md). De kan ikke oprette rapporter eller gemme ændringer af eksisterende rapporter.
-* Ingen kan se eller hente datasættet.
+* Ingen kan se eller downloade datasættet, men de kan få adgang til datasættet direkte ved hjælp af funktionen Analysér i Excel. En administrator kan begrænse brugernes mulighed for at bruge Analysér i Excel ved at begrænse muligheden for alle i en gruppe. Begrænsningen er dog for alle i den pågældende gruppe for hvert arbejdsområde, gruppen tilhører.
 * Alle kan manuelt [opdatere dataene](refresh-data.md).
 * Hvis du bruger Office 365 til mail, kan du dele med medlemmer af en distributionsgruppe ved at angive den mailadresse, der er knyttet til distributionsgruppen.
 * Kollegaer, der har det samme maildomæne som du, og kollegaer, hvis domæner er anderledes, men registreret i den samme lejer, kan dele dashboardet med andre. Lad os for eksempel antage, at domænerne contoso.com og contoso2.com er registreret i den samme lejer. Hvis din mailadresse er konrads@contoso.com, kan både ravali@contoso.com og gustav@contoso2.com dele, så længe du har givet dem tilladelse til at dele.

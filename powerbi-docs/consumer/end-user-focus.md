@@ -1,22 +1,23 @@
 ---
-title: Fokustilstand og fuldskærmsvisning – Sådan zoomer du ind for at få vist flere detaljer.
+title: Fokustilstand og fuldskærmsvisning – Sådan zoomer du ind for at få vist flere detaljer
 description: Dokumentation til visning af et Power BI-dashboard, -dashboardfelt, en -rapport eller -rapportvisualisering i fokustilstand eller fuldskærmsvisning
 author: mihart
 manager: kvivek
 ms.reviewer: ''
+ms.custom: seodec18
 featuredvideoid: dtdLul6otYE
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 70e7fcb9f38c6dbf52adf58f8477f671156c9da4
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 13032e011446fad765961dacdb83fbb8bd5a2f6e
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507955"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53279954"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Vis indhold i flere detaljer: fokustilstand og fuldskærmstilstand
 
@@ -83,7 +84,7 @@ Menu til rapportsider
     I rapporter i fuldskærmsvisning kan du bruge disse pile til at flytte mellem siderne i rapporten.    
   * Hvis du vil afslutte fuldskærmsvisning, skal du vælge ikonet **Afslut fuld skærm**.
 
-      ![](media/end-user-focus/exit-fullscreen-new.png)
+      ![ikon for afslut fuldskærm](media/end-user-focus/exit-fullscreen-new.png)
 
 ## <a name="working-in-focus-mode"></a>Arbejde i fokustilstand
 Der er to måder at åbne fokustilstand på; én måde for dashboardfelter og en anden måde for rapportvisualiseringer.
@@ -130,7 +131,7 @@ Der er to måder at åbne fokustilstand på; én måde for dashboardfelter og en
     ![afslut fokustilstand](media/end-user-focus/power-bi-exit-focus-report.png)  
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
-* Når du bruger fokustilstand i forbindelse med en visualisering i en rapport, kan du se og interagere med alle filtre: Visualiseringsniveau, Sideniveau, Detaljeadgang og Rapportniveau.    
+* Når du bruger fokustilstand i forbindelse med en visualisering i en rapport, kan du få vist og interagere med alle filtre: Visualiseringsniveau, Sideniveau, Detaljeadgang og Rapportniveau.    
 * Når du bruger fokustilstand med en visualisering på et dashboard, kan du kun se og redigere filteret Visualiseringsniveau.
 
 ## <a name="next-steps"></a>Næste trin

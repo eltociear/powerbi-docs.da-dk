@@ -5,18 +5,19 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: quickstart
-ms.date: 10/18/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 1d093c9eb39b312e1883b2635de473dac6db5192
-ms.sourcegitcommit: 2c4a075fe16ccac8e25f7ca0b40d404eacb49f6d
+ms.openlocfilehash: 3b3eaa33879a1f0c6d51aecaa93cae6ce5c90d10
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/20/2018
-ms.locfileid: "49473859"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280805"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Hurtig introduktion – Navigation i Power BI-tjenesten
 
@@ -40,7 +41,7 @@ Vi tager nogle eksempeldata, som vi bruger til vores præsentation af Power BI-t
 
     Power BI-tjenesten importerer eksemplet og viser dashboardet. Dashboards er noget, der adskiller Power BI-tjenesten fra Power BI Desktop. Eksemplet indeholder også en rapport og et datasæt, som vi besøger senere.
 
-    ![](media/end-user-experience/power-bi-dashboard.png)
+    ![dashboardvisninger](media/end-user-experience/power-bi-dashboard.png)
 
 Se Amanda give dig en rundvisning i den nye navigationsoplevelse i Power BI-tjenesten.  Følg derefter den trinvise vejledning under videoen for selv at udforske det.
 
@@ -50,7 +51,7 @@ Se Amanda give dig en rundvisning i den nye navigationsoplevelse i Power BI-tjen
 ## <a name="view-content-dashboards-reports-workbooks-datasets-workspaces-apps"></a>Vis indhold (dashboards, rapporter, projektmapper, datasæt, arbejdsområder, apps)
 Lad os starte med at se på, hvordan det grundlæggende indhold (dashboards, rapporter, datasæt, projektmapper) er organiseret. Indhold vises i forbindelse med et arbejdsområde. På nuværende tidspunkt har du kun ét arbejdsområde, og det kaldes **Mit arbejdsområde**. Forbrugere har normalt ikke brug for eller benytter normalt ikke andre arbejdsområder. I Mit arbejdsområde gemmes alt det indhold, som du ejer. Tænk på det som din personlige sandkasse eller arbejdsområde til dit eget indhold. Mit arbejdsområde er der, hvor eksemplet med den detailhandelsanalyse, du lige har downloadet, er gemt. 
 
-I Mit arbejdsområde er dit indhold organiseret i fire faner: dashboards, rapporter, projektmapper og datasæt.
+Under Mit arbejdsområde er dit indhold organiseret i 4 faner: Dashboards, Rapporter, Projektmapper og Datasæt.
 
 ![Skærmbilledet Mit arbejdsområde](./media/end-user-experience/power-bi-my-workspace.png)
 

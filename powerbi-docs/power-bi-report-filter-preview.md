@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/05/2018
+ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 3d4bcff012a8abb53d82dea2a8514d654056736a
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: fb25ae7408ddb19d7e8bc9c91c0e1b0f65d2bf42
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026241"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280621"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>Den nye filteroplevelse i Power BI-rapporter (prøveversion)
 
@@ -34,11 +34,11 @@ Her kan du se, hvad du som rapportdesigner kan gøre med de nye filtre:
 
 ## <a name="turn-on-the-new-filter-experience"></a>Slå den nye filteroplevelse til 
 
-Du kan aktivere den nye oplevelse i Power BI Desktop. Du kan derefter redigere filtre deri eller i Power BI-tjenesten (https://app.powerbi.com). Da denne nye filteroplevelse er en prøveversion, skal du først aktivere den i Power BI Desktop. 
+Du kan aktivere den nye oplevelse i Power BI Desktop. Du kan derefter redigere filtre deri eller i Power BI-tjenesten (https://app.powerbi.com). Da denne nye filteroplevelse er en prøveversion, skal du først aktivere den i Power BI Desktop. Hvis du starter med at oprette en rapport i Power BI-tjenesten, kan den kan ikke have de nye filtre.
 
 ### <a name="turn-on-new-filters-for-all-new-reports"></a>Slå nye filtre til for alle nye rapporter
 
-1. Vælg **Filer** > **Indstillinger** > **Indstillinger** > **Prøveversionsfunktioner**, og markér derefter afkrydsningsfeltet **Ny filteroplevelse**. 
+1. Vælg **Filer** > **Indstillinger** > **Indstillinger** > **Prøveversionsfunktioner** i Power BI Desktop, og markér derefter afkrydsningsfeltet **Ny filteroplevelse**. 
 2. Genstart Power BI Desktop for at se den nye filteroplevelse i alle nye rapporter.
 
 Efter du har genstartet Power BI Desktop, er oplevelsen som standard aktiveret for alle nye rapporter, du opretter.  
@@ -47,7 +47,7 @@ Efter du har genstartet Power BI Desktop, er oplevelsen som standard aktiveret f
 
 Du kan også aktivere de nye filtre for eksisterende rapporter.
 
-1. I en eksisterende rapport skal du vælge **Filer** > **Indstillinger** > **Indstillinger**
+1. I en eksisterende rapport i Power BI Desktop skal du vælge **Filer** > **Indstillinger** > **Indstillinger**
 2. Under **Rapportindstillinger** skal du vælge **Aktivér den opdaterede filtreringsrude, og vis filtre i visualiseringens overskrift for denne rapport**.
 
 ## <a name="build-the-new-filter-pane"></a>Byg den nye filtreringsrude

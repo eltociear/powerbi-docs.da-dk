@@ -3,20 +3,21 @@ title: Favoritter i Power BI-tjenesten (dashboards, rapporter og apps)
 description: Dokumentation i, hvordan dashboards, rapporter og apps indstilles som favoritter i Power BI-tjenesten
 author: mihart
 manager: kvivek
+ms.custom: seodec18
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 46b943b9de7e8bae29c20617f957c81de2d49f94
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: cc94f352c550d7fba96f71f894e8d81ba5bc487a
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452493"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280168"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-power-bi-service"></a>Foretrukne dashboards, rapporter og apps i Power BI-tjenesten
 Når du gør indhold til en *favorit*, kan du få adgang til det fra alle dine arbejdsområder.  Favoritter er normalt det indhold, du besøger oftest.
@@ -61,7 +62,7 @@ Se Amanda føje favoritter til sit arbejdsområde, og følg derefter den trinvis
    
     ![vinduet favorit](./media/end-user-favorite/power-bi-favorites-screen.png)
    
-   Her kan du udføre handlinger: åbne, identificere ejere og endda dele med dine kollegaer.
+   Herfra kan du udføre forskellige handlinger: åbne, identificere ejere og tilmed dele med kolleger.
 
 ## <a name="unfavorite-content"></a>Fjern markering af indhold som favorit
 Bruger du ikke længere en rapport så ofte, som du plejede?  Du kan fjerne det fra favoritter. Når du fjerner indhold fra favoritter, fjernes det fra listen med dine favoritter, men ikke fra Power BI.
@@ -71,7 +72,7 @@ Bruger du ikke længere en rapport så ofte, som du plejede?  Du kan fjerne det 
    ![Skærmbilledet Favoritter](./media/end-user-favorite/power-bi-unfavorites-screen.png)
 2. Vælg den gule stjerne ud for det indhold, der skal fjernes som favorit.
 
-> **Bemærk**! Du kan også fjerne et dashboard, en rapport eller en app som favorit. Du skal blot åben og fjerne markeringen det gule ikon.   
+> **BEMÆRK**! Du kan også fjerne et dashboard, en rapport eller en app fra favoritter. Du skal blot åben og fjerne markeringen det gule ikon.   
 > 
 > 
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/21/2018
+ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 709518924fbb9d83201eb5c070b7a3e93838ec79
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: 7a1187373304387ac511053d241e5cfb31f7fcd9
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52331936"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280575"
 ---
 # <a name="intro-to-dashboards-for-power-bi-designers"></a>Introduktion til dashboards for Power BI-designere
 
@@ -48,15 +48,15 @@ Et dashboard er ikke kun et flot billede. Det er yderst interaktivt, og felterne
 | --- | --- | --- |
 | Sider |Én side |Én eller flere sider |
 | Datakilder |Én eller flere rapporter og et eller flere datasæt pr. dashboard |Et enkelt datasæt pr. rapport |
-| Tilgængelig i Power BI Desktop |Nej |Ja, ***oprettere*** kan bygge og få vist rapporter i Desktop |
+| Tilgængelig i Power BI Desktop |Nej | Kan udarbejde og få vist rapporter i Power BI Desktop |
 | Abonner |Der kan abonneres på et dashboard |Der kan abonneres på rapportsider |
 | Filtrering |Der kan ikke filtreres eller laves udsnit |Der er mange forskellige måder at filtrere, fremhæve og lave udsnit på |
 | Fremhævet |Ét dashboard kan angives som dit "udvalgte" dashboard |Der kan ikke oprettes en udvalgt rapport |
 | Favorit | Dashboards kan markeres som *favoritter* | Rapporter kan markeres som *favoritter*
 | Angivelse af beskeder |Tilgængelig for dashboardfelter i visse tilfælde |Ikke tilgængelig via rapporter |
-| Forespørgsler på et naturligt sprog |Tilgængelig via dashboard |Ikke tilgængelig via rapporter |
+| Forespørgsler på et naturligt sprog (Spørgsmål og svar) |Tilgængelig på dashboards | Tilgængelig i rapporter |
 | Kan underliggende datasættabeller og felter ses? |Nej. Data kan eksporteres, men tabeller og felter på selve dashboardet kan ikke ses. |Ja. Datasættabeller, felter og værdier kan ses. |
-| Tilpasning |Nej |I Læsevisning kan du publicere, integrere, filtrere, eksportere, downloade som .pbix, få vist relateret indhold, generere QR-koder og analysere i Excel m.m.  |
+
 
 ## <a name="next-steps"></a>Næste trin
 * Bliv fortrolig med dashboards ved at se præsentationen af et af vores [eksempler på et dashboard](sample-tutorial-connect-to-the-samples.md).
