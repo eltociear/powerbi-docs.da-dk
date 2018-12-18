@@ -1,21 +1,22 @@
 ---
-title: Eksportér rapporter fra Power BI til forbrugere i PowerPoint
+title: Eksportér rapporter fra Power BI til PowerPoint
 description: Se, hvordan du kan eksportere en Power BI-rapport til PowerPoint.
 author: mihart
 manager: kvivek
+ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: a865c98a5bacd526a553354ea828e86fa0155a79
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: 9f17cd76a733dff22ebf0b54eabc3d9b6c8f6839
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52979254"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53281013"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Eksportér rapporter fra Power BI til PowerPoint
 Med Power BI kan du publicere din rapport i **Microsoft PowerPoint** og nemt oprette et slidesæt ud fra din Power BI-rapport. Når du **eksporterer til PowerPoint**, sker der følgende:
@@ -29,35 +30,35 @@ Du kan hurtigt eksportere din **Power BI-rapport** til **PowerPoint**. Du skal b
 ## <a name="how-to-export-your-power-bi-report-to-powerpoint"></a>Sådan eksporterer du en Power BI-rapport til PowerPoint
 Vælg en rapport for at vise den på lærredet i Power BI-tjenesten. Du kan også vælge en rapport fra din **startside**, **Apps** eller en hvilken som helst anden sektion i navigationsruden til venstre.
 
-![](media/end-user-powerpoint/power-bi-publish.png)
+![Vælg Filer på menulinjen – pil, der peger på Eksportér til PowerPoint](media/end-user-powerpoint/power-bi-publish.png)
 
 Når den rapport, du vil eksportere til PowerPoint, vises på lærredet, skal du vælge **Filer > Eksportér til PowerPoint** på menulinjen i Power BI-tjenesten.
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_1.png)
+![Nærbillede af venstre navigationslinje med Mit arbejdsområde valgt – rullemenuen Filer valgt](media/end-user-powerpoint/powerbi_to_powerpoint_1.png)
 
 Du får vist et meddelelsesbanner i øverste højre hjørne af Power BI-tjenestens browservindue, hvor der står, at rapporten eksporteres til PowerPoint. Dette kan tage nogle minutter, og du kan fortsætte med at arbejde i Power BI, mens rapporten eksporteres.
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_2.png)
+![meddelelse om, at eksport til PowerPoint er i gang](media/end-user-powerpoint/powerbi_to_powerpoint_2.png)
 
 Når dette er fuldført, ændres meddelelsesbanneret for at give dig besked om, at Power BI-tjenesten er færdig med eksporten.
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_3.png)
+![Meddelelse om, at handlingen er fuldført, vises](media/end-user-powerpoint/powerbi_to_powerpoint_3.png)
 
 Derefter finder du din fil der, hvor din browser viser downloadede filer. På det følgende billede vises det som et downloadbanner i bunden af browservinduet.
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_4.png)
+![pil, der peger på browsermeddelelsen nederst på skærmen](media/end-user-powerpoint/powerbi_to_powerpoint_4.png)
 
 Så nemt er det. Du kan downloade filen, åbne den med PowerPoint og derefter ændre eller forbedre den yderligere, lige som du ville gøre med et hvilket som helst andet PowerPoint-slidesæt.
 
 ## <a name="checking-out-your-exported-powerpoint-file"></a>Udtjekning af din eksporterede PowerPoint-fil
 Når du åbner den PowerPoint-fil, som Power BI har eksporteret, kan du finde nogle smarte og nyttige elementer. Se følgende billede, og se derefter de nummererede elementer nedenfor, som beskriver nogle af disse smarte funktioner.
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_5.png)
+![PowerPoint åbnes](media/end-user-powerpoint/powerbi_to_powerpoint_5.png)
 
 1. Den første side i slidesættet indeholder navnet på din rapport og et link, så du kan få den rapport, som slidesættet er baseret på, **vist i Power BI**.
 2. Du får også vist nogle nyttige oplysninger om rapporten, herunder den *seneste dataopdatering*, som rapporten er baseret på, og *dato og klokkeslæt for download*, som er det klokkeslæt og den dato, hvor Power BI-rapporten blev eksporteret til en PowerPoint-fil.
 3. Hver rapportside er en separat slide, sådan som det er vist i venstre navigationsrude. 
-4. Din publicerede rapport er gengivet på det sprog, der er angivet under dine Power BI-indstillinger, og ellers i henhold til indstillingen for landestandard i din browser. Hvis du vil se eller indstille dine sprogindstillinger, skal du vælge tandhjulsikonet ![](media/end-user-powerpoint/power-bi-settings-icon.png) **> Indstillinger > Generelt > Sprog**. Du kan finde oplysninger om landestandard i [Understøttede sprog og lande/områder til Power BI](../supported-languages-countries-regions.md).
+4. Din publicerede rapport er gengivet på det sprog, der er angivet under dine Power BI-indstillinger, og ellers i henhold til indstillingen for landestandard i din browser. Hvis du vil se eller angive dine sprogindstillinger, skal du vælge tandhjulsikonet ![tandhjulsikon](media/end-user-powerpoint/power-bi-settings-icon.png) **> Indstillinger > Generelt > Sprog**. Du kan finde oplysninger om landestandard i [Understøttede sprog og lande/områder til Power BI](../supported-languages-countries-regions.md).
 5. PowerPoint-præsentationen indeholder en forsideslide med tidspunktet for eksporten i den korrekte tidszone.
 
 Når du skifter til en bestemt slide, kan du se, at hver rapportside er et uafhængigt billede.
@@ -66,7 +67,7 @@ Når du skifter til en bestemt slide, kan du se, at hver rapportside er et uafh�
 > Det er en ny funktionsmåde at have en visual for hver rapportside. Den tidligere funktionsmåde, som viste et uafhængigt billede for hver visual, implementeres ikke længere. 
  
 
-![](media/end-user-powerpoint/powerbi_to_powerpoint_6.png)
+![Billede, der viser hver enkelt visualisering som et separat billede](media/end-user-powerpoint/powerbi_to_powerpoint_6.png)
 
 Hvad du herefter gør med dit PowerPoint-slidesæt eller nogen af billederne i høj opløsning, er op til dig!
 
@@ -84,7 +85,7 @@ Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbe
 * Rapporter, der ejes af en bruger uden for dit Power BI-lejerdomæne (f.eks. en rapport, der ejes af nogen uden for din organisation og er delt med dig), kan ikke publiceres til PowerPoint.
 * Hvis du deler et dashboard med en person uden for din organisation (og dermed en bruger, der ikke er i din Power BI-lejer), kan denne bruger ikke eksportere det delte dashboards tilknyttede rapporter til PowerPoint. Hvis du f.eks. er aaron@contoso.com, kan du dele med david@cohowinery.com. Men david@cohowinery.com kan ikke eksportere de tilknyttede rapporter til PowerPoint.
 * Hver rapportside eksporteres som tidligere nævnt som et enkelt billede i PowerPoint-filen.
-* I Power BI-tjenesten anvendes din Power BI-sprogindstilling for PowerPoint-eksporten. Hvis du vil se eller indstille dine sprogindstillinger, skal du vælge tandhjulsikonet ![](media/end-user-powerpoint/power-bi-settings-icon.png) **> Indstillinger > Generelt > Sprog**.
+* I Power BI-tjenesten anvendes din Power BI-sprogindstilling for PowerPoint-eksporten. Hvis du vil se eller angive dine sprogindstillinger, skal du vælge tandhjulsikonet ![tandhjulsikon](media/end-user-powerpoint/power-bi-settings-icon.png) **> Indstillinger > Generelt > Sprog**.
 * **Downloadtidspunktet** på det forreste slide af den eksporterede PowerPoint-fil svarer til eksporttidspunktet iht. den tidszone, der er angivet på din computer.
 
 ## <a name="next-steps"></a>Næste trin

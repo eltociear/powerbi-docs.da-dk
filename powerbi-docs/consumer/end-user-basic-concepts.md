@@ -6,19 +6,20 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
+ms.custom: seodec18
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 10/18/2018
+ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 71e30fa6c53e7ed8ed4364dca668b2a689ef1f19
-ms.sourcegitcommit: a764e4b9d06b50d9b6173d0fbb7555e3babe6351
+ms.openlocfilehash: 50858dcab91980e85e71fd82dec4189139eea2b4
+ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49641735"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53280529"
 ---
-# <a name="power-bi---basic-concepts-for-power-bi-service-consumers"></a>Power BI – grundlæggende begreber for ***forbrugere*** af Power BI-tjenesten
+# <a name="basic-concepts-for-power-bi-service-consumers"></a>Grundlæggende koncepter for ***forbrugere*** af Power BI-tjenesten
 
 ## <a name="power-bi-consumers-and-designers"></a>Power BI-*forbrugere* og -*designere*
 Denne artikel forudsætter, at du allerede har læst [Oversigt over Power BI](../power-bi-overview.md) og har identificeret dig selv som en Power BI-***forbruger***. Forbrugere modtager Power BI-indhold, f.eks. dashboards og rapporter, fra kolleger. Forbrugere bruger Power BI-tjenesten, som er den webstedsbaserede version af Power BI. 
@@ -33,21 +34,21 @@ De fleste Power BI-forbrugere får Power BI-tjenesten, fordi 1) deres virksomhed
 
 Du kommer i gang ved blot at åbne en browser og skrive **app.powerbi.com**. Første gang, du åbner Power BI-tjenesten, vil du se noget i stil med dette.
 
-![](media/end-user-basic-concepts/power-bi-open.png)
+![Velkomstskærm til Power BI-tjenesten](media/end-user-basic-concepts/power-bi-open.png)
 
 I takt med at du bruger Power BI, kan du tilpasse det, du ser, når du åbner webstedet.  Nogle personer foretrækker for eksempel, at Power BI åbner med startsiden, mens andre har et favoritdashboard, de vil have vist først. Bare rolig – vi lærer dig, hvordan du gør. 
 - [Start (forhåndsvisning)](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search)    
 - [Angiv indhold som **udvalgt**](end-user-featured.md) 
 
-![](media/end-user-basic-concepts/power-bi-first.png)
+![viser siden Hjem og dashboard](media/end-user-basic-concepts/power-bi-first.png)
 
 Før vi fortsætter, skal vi lige vende tilbage og tale om de byggesten, der udgør Power BI-tjenesten.
 
 ## <a name="power-bi-content"></a>Power BI-***indhold***
 ### <a name="introduction-to-building-blocks"></a>Introduktion til byggestenene
-For Power BI-forbrugere er de fem byggesten: ***visualiseringer***, ***dashboards***, ***rapporter***, ***apps*** og ***datasæt***. Disse omtales nogle gange som *Power BI*-***indhold***. Og *indhold* findes i ***arbejdsområder***. En typisk arbejdsproces omfatter alle disse byggesten: En Power BI-*designer* (gul i nedenstående diagram) indsamler data fra *datasæt*, overfører dem til Power BI med henblik på analyse, opretter *rapporter* fuld af *visualiseringer*, der fremhæver interessante fakta og indsigt, fastgør visualiseringerne fra rapporter til et dashboard og deler rapporter og dashboards med *forbrugere* som dig (sort i nedenstående diagram) i form af *apps* eller andre former for delt indhold. 
+For Power BI-forbrugere er de fem byggesten: ***visualiseringer***, ***dashboards***, ***rapporter***, ***apps*** og ***datasæt***. Disse omtales nogle gange som *Power BI*-***indhold***. Og *indhold* findes i ***arbejdsområder***. En typisk arbejdsproces omfatter alle disse byggesten:  En Power BI-*designer* (gul i nedenstående diagram) indsamler data fra *datasæt*, overfører dem til Power BI med henblik på analyse, opretter *rapporter* fuld af *visualiseringer*, der fremhæver interessante fakta og indsigt, fastgør visualiseringerne fra rapporter til et dashboard og deler rapporter og dashboards med *forbrugere* som dig (sort i nedenstående diagram) i form af *apps* eller andre former for delt indhold. 
 
-![](media/end-user-basic-concepts/power-bi-workflow.png)
+![rutediagram, grundlæggende](media/end-user-basic-concepts/power-bi-workflow.png)
 
 Kort fortalt. 
 * ![visualiseringsikon](media/end-user-basic-concepts/visual.png) En ***visualisering*** (eller *visuals*) er en form for diagram, der udarbejdes af Power BI-*designere* ved hjælp af data i *rapporterne* og *datasættene*. *Designere* udarbejder typisk visualiseringerne i Power BI Desktop. 
@@ -78,7 +79,7 @@ Hvert datasæt repræsenterer en enkelt datakilde, f.eks. en Excel-projektmappe 
 
 Når en designer deler en app med dig, kan du se, hvilke datasæt der er inkluderet i appen. 
 
-![](media/end-user-basic-concepts/power-bi-dataset-list.png)
+![Valgte apps og pil, der peger på afsnittet Datasæt på lærredet](media/end-user-basic-concepts/power-bi-dataset-list.png)
 
 **ÉT** datasæt...
 
@@ -113,18 +114,18 @@ En Power BI-rapport er en eller flere sider med visualiseringer, grafik og tekst
 
 **ÉN** rapport...
 
-* kan være knyttet til flere dashboards (felter, der er fastgjort fra den ene rapport kan vises på flere dashboards)
+* kan være knyttet til flere dashboards (felter, der er fastgjort fra den ene rapport kan vises på flere dashboards).
 * oprettes ved hjælp af data fra kun ét datasæt  
 * kan være en del af flere apps
   
-  ![](media/end-user-basic-concepts/drawing5.png)
+  ![relationstegning for en rapport](media/end-user-basic-concepts/drawing5.png)
 
 ________________________________________________
 
 ## <a name="dashboards"></a>Dashboards
 Et dashboard repræsenterer en brugerdefineret visning af nogle undersæt af de underliggende datasæt. *Designere* udarbejder dashboards og deler dem med *forbrugere* – enten enkeltvist eller som en del af en app. Et dashboard er et enkelt lærred, der indeholder *felter*, grafik og tekst. 
 
-  ![](media/end-user-basic-concepts/power-bi-dashboard.png)
+  ![eksempel på Dashboard](media/end-user-basic-concepts/power-bi-dashboard.png)
 
 Et felt er en gengivelse af en visualisering, som en *designer* *fastgør* f.eks. fra en rapport til et dashboard.  Hvert fastgjorte felt viser en [visualisering](end-user-visualizations.md), der blev oprettet ud fra et datasæt og fastgjort til det pågældende dashboard. Et felt kan også indeholde en hel rapportside og data til livestreaming eller en video. *Designere* har mange forskellige måder at føje felter til dashboards på – alt for mange til at dække dem alle i dette oversigtsemne. Du kan få mere at vide i [Dashboard-felter i Power BI](end-user-tiles.md). 
 
@@ -144,20 +145,20 @@ Hvad er nogle formål med dashboards?  Her er nogle få:
 * kan vise visualiseringer fra mange forskellige rapporter
 * kan vise visualiseringer, der er fastgjort fra andre funktioner (f.eks. Excel)
   
-  ![](media/end-user-basic-concepts/drawing1.png)
+  ![relationstegning for et dashboard](media/end-user-basic-concepts/drawing1.png)
 
 ________________________________________________
 
 ## <a name="apps"></a>Apps
 Disse samlinger af dashboards og rapporter organiserer relateret indhold sammen i en enkelt pakke. Power BI-*designere* udarbejder dem og deler dem med enkeltpersoner, grupper, en hel organisation eller offentligheden. Som forbruger kan du være sikker på, at du og dine kolleger arbejder med de samme data – en og samme betroede version af sandheden. 
 
-![](media/end-user-basic-concepts/power-bi-app.png)
+![Valgte apps i venstre navigation](media/end-user-basic-concepts/power-bi-app.png)
 
 Det er nemt at finde og installere apps i Power BI-tjenesten (https://powerbi.com)) og på din mobilenhed. Når du har installeret en app, behøver du ikke huske navnene på mange forskellige dashboards, fordi de alle er samlet i én app, i webbrowseren eller på din mobilenhed. 
 
 Denne app har tre relaterede dashboards og tre relaterede rapporter, der udgør en enkelt app.
 
-![](media/end-user-basic-concepts/power-bi-app-list.png)
+![relateret indhold for den valgte app](media/end-user-basic-concepts/power-bi-app-list.png)
 
 Med apps ser du automatisk ændringerne, hver gang appens forfatteren udgiver opdateringer. Forfatteren styrer også, hvor ofte dataene er planlagt til opdatering, så du ikke skal bekymre dig om at holde dem opdateret.
 
