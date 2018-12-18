@@ -1,29 +1,31 @@
 ---
-title: Administrer dit datalager
-description: Få at vide, hvordan du kan administrere dit individuelle arbejdsområde eller dit apparbejdsområde eller datalager for at sikre, at du kan fortsætte med at publicere rapporter og datasæt.
+title: Administrer datalager i dine arbejdsområder
+description: Få at vide, hvordan du kan administrere datalager i dit individuelle arbejdsområde eller dit apparbejdsområde for at sikre, at du kan fortsætte med at publicere rapporter og datasæt.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
+ms.custom: seodec18
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 06/28/2017
+ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Administration
-ms.openlocfilehash: 864d50d8850a8ceed964f128cea71b0daf5d8322
-ms.sourcegitcommit: ac63e6a082ca8397909217837e8d98c9389b23ac
+ms.openlocfilehash: 239cc7e0574c9c6a4d76cdff83e14cf6af742689
+ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50736866"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53180455"
 ---
-# <a name="manage-your-data-storage"></a>Administrer dit datalager
-Få at vide, hvordan du kan administrere dit individuelle arbejdsområde eller dit apparbejdsområde eller datalager for at sikre, at du kan fortsætte med at publicere rapporter og datasæt.
+# <a name="manage-data-storage-in-power-bi-workspaces"></a>Administrer datalager i Power BI-arbejdsområder
 
-Brugere og apparbejdsområder har deres egne datakapaciteter
+Få at vide, hvordan du kan administrere datalager i dit individuelle arbejdsområde eller dit apparbejdsområde for at sikre, at du kan fortsætte med at publicere rapporter og datasæt.
 
-* Alle brugere har maksimalt 10 GB datalager.
-* Brugere med en Power BI Pro-licens kan oprette apparbejdsområder med maksimalt 10 GB datalager hver.
+Brugere og apparbejdsområder har deres egne datakapaciteter:
+
+* Alle brugere har en maksimumgrænse på 10 GB på deres datalager.
+* Power BI Pro-brugere kan oprette apparbejdsområder med en maksimumgrænse på 10 GB datalager hver.
 
 På lejerniveauet må det samlede forbrug ikke overstige 10 GB pr. Pro-bruger på tværs af alle Pro-brugere og apparbejdsområder i lejeren.
 
@@ -44,36 +46,36 @@ Se, hvor meget datalager, du bruger på din Power BI-konto, og administrer din k
 
 1. Hvis du vil administrere dit eget lager, skal du gå til **Mit arbejdsområde** i venstre navigationsrude.
    
-    ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
-2. Vælg tandhjulsikonet ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i øverste højre hjørne \> **Administrer personligt lager**.
+    ![Mit arbejdsområde](media/service-admin-manage-your-data-storage-in-power-bi/pbi_myworkspace.png)
+2. Vælg tandhjulsikonet ![Tandhjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i øverste højre hjørne \> **Administrer personligt lager**.
    
     Den øverste bjælke viser, hvor meget af din maksimale lagerkapacitet du har brugt.
    
-    ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_persnlstorage.png)
+    ![Administrer lagergrænse](media/service-admin-manage-your-data-storage-in-power-bi/pbi_persnlstorage.png)
    
     Datasæt og rapporter er opdelt på to faner:
    
     **Ejet af mig:** Disse er rapporter og datasæt, du har uploadet til din Power BI-konto, herunder tjenestedatasæt som f.eks. Salesforce og Dynamics CRM.  
     **Ejet af andre:** Andre har delt disse rapporter og datasæt med dig.
-3. Hvis du vil slette et datasæt eller en rapport, skal du vælge ikonet for Papirkurv ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
+3. Hvis du vil slette et datasæt eller en rapport, skal du vælge ikonet for Papirkurv ![Papirkurv-ikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
 
 Vær opmærksom på, at du eller en anden muligvis har rapporter og dashboards, der er baseret på et datasæt. Hvis du sletter datasættet, fungerer disse rapporter og dashboards ikke længere.
 
 ## <a name="manage-your-app-workspace"></a>Administrer dit apparbejdsområde
 1. Vælg på pilen ud for **Arbejdsområder** \> vælg navnet på apparbejdsområdet.
    
-    ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
-2. Vælg tandhjulsikonet ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i øverste højre hjørne \> **Administrer gruppelager**.
+    ![Vælg et apparbejdsområde](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupworkspaces.png)
+2. Vælg tandhjulsikonet ![tandhjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png) i øverste højre hjørne \> **Administrer gruppelager**.
    
     Den øverste bjælke viser, hvor meget af gruppens maksimale lagerkapacitet der er brugt.
    
-    ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
+    ![Administrer apparbejdsområdelager](media/service-admin-manage-your-data-storage-in-power-bi/pbi_groupstorage.png)
    
     Datasæt og rapporter er opdelt på to faner:
    
     **Ejet af os:** Disse er rapporter og datasæt, som du eller en anden har uploadet til gruppens Power BI-konto, herunder tjenestedatasæt som f.eks. Salesforce og Dynamics CRM.
     **Ejet af andre:** Andre har delt disse rapporter og datasæt med din gruppe.
-3. Hvis du vil slette et datasæt eller en rapport, skal du vælge ikonet for Papirkurv ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
+3. Hvis du vil slette et datasæt eller en rapport, skal du vælge ikonet for Papirkurv ![Papirkurv-ikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_deleteicon.png).
    
    > [!NOTE]
    > Et medlem af et apparbejdsområde, som har redigeringstilladelse, har tilladelse til at slette datasæt og rapporter fra apparbejdsområdet.
@@ -88,17 +90,17 @@ Der er en grænse på 1 GB, pr. datasæt, der indlæses i Power BI. Hvis du har 
 ## <a name="what-happens-when-you-hit-a-limit"></a>Det sker der, når du når grænsen
 Når du når din grænse for datakapacitet, får du vist meddelelser i tjenesten. 
 
-Når du vælger tandhjulsikonet ![](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png), får du vist en rød linje, der angiver, at du har overskredet din datakapacitet.
+Når du vælger tandhjulsikonet ![tandhjulsikon](media/service-admin-manage-your-data-storage-in-power-bi/pbi_gearicon.png), får du vist en rød linje, der angiver, at du har overskredet din datakapacitet.
 
-![](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit.png)
+![Lagergrænsen er nået]](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit.png)
 
 Du kan også se dette angivet i **Administrer personligt lager**.
 
- ![](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
+ ![Administrer personligt lager, lagergrænsen er nået](media/service-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
 
  Når du forsøger at udføre en handling, som gør, at du når en af grænserne, får du vist en meddelelse, der angiver, at du har overskredet grænsen. Du kan [administrere](#manage) dit lager for at reducere mængden af lagret indhold og komme under grænsen.
 
- ![](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
+ ![Du har overskredet din lagergrænse](media/service-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
  Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
