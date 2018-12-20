@@ -114,7 +114,7 @@ Du kan kun oprette PBIE-kapaciteter for dit PBI-lejerområder.
 
 Du kan bruge PBI-portalen til at finde ud af, hvad er dit PBI-lejerområde er.
 
-https://app.powerbi.com/ > ? > Om Power BI
+[https://app.powerbi.com/](https://app.powerbi.com/) > ? > Om Power BI
 
 ![Om Power BI](media/embedded-faq/about-01.png)
 ![Lejerområde](media/embedded-faq/tenant-location-01.png)
