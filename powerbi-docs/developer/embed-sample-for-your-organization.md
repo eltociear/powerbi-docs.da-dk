@@ -10,12 +10,12 @@ ms.component: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.openlocfilehash: 541e6e62ac075922cdb301343361ac328a3db28e
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: ea4292fd95fa72a553d9f91b39ff0bc5de71a584
+ms.sourcegitcommit: 9913c213d40b45ba83c6c3b3a7ef0b757800e3ad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180754"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53301844"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-organization"></a>Selvstudium: Integrer en rapport, et dashboard eller et felt i Power BI i et program for din organisation
 
@@ -429,17 +429,16 @@ Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedik
 
 I tabellen nedenfor kan du se en oversigt over de Power BI Premium-SKU'er, der er tilgængelige i [Microsoft Office 365](../service-admin-premium-purchase.md):
 
-| Kapacitetsnode | Samlet antal vCores<br/>(back-end + front-end) | Back end-vCores | Front-end-vCores | Grænser for DirectQuery/liveforbindelser | Maksimalt antal sidegengivelser i spidstimen |
+| Kapacitetsnode | Samlet antal vCores<br/>(back-end + front-end) | Back end-vCores | Front-end-vCores | Grænser for DirectQuery/liveforbindelser |
 | --- | --- | --- | --- | --- | --- |
-| EM1 |1 vCore |0,5 vCore, 10 GB RAM |0,5 vCore |3.75 pr. sekund |150-300 |
-| EM2 |2 vCores |1 vCore, 10 GB RAM |1 vCores |7.5 pr. sekund |301-600 |
-| EM3 |4 vCores |2 vCores, 10 GB RAM |2 vCores |15 pr. sekund |601-1.200 |
-| P1 |8 vCores |4 vCores, 25 GB RAM |4 vCores |30 pr. sekund |1.201-2.400 |
-| P2 |16 vCores |8 vCores, 50 GB RAM |8 vCores |60 pr. sekund |2.401-4.800 |
-| P3 |32 vCores |16 vCores, 100 GB RAM |16 vCores |120 pr. sekund |4.801-9.600 |
-| P4 |64 vCores |32 vCores, 200 GB RAM |32 vCores |240 pr. sekund |9.601-19.200 |
-| P5 |128 vCores |64 vCores, 400 GB RAM |64 vCores |480 pr. sekund |19.201-38.400 |
-
+| EM1 |1 vCore |0,5 vCore, 10 GB RAM |0,5 vCore |3.75 pr. sekund |
+| EM2 |2 vCores |1 vCore, 10 GB RAM |1 vCores |7.5 pr. sekund |
+| EM3 |4 vCores |2 vCores, 10 GB RAM |2 vCores |15 pr. sekund |
+| P1 |8 vCores |4 vCores, 25 GB RAM |4 vCores |30 pr. sekund |
+| P2 |16 vCores |8 vCores, 50 GB RAM |8 vCores |60 pr. sekund |
+| P3 |32 vCores |16 vCores, 100 GB RAM |16 vCores |120 pr. sekund |
+| P4 |64 vCores |32 vCores, 200 GB RAM |32 vCores |240 pr. sekund |
+| P5 |128 vCores |64 vCores, 400 GB RAM |64 vCores |480 pr. sekund |
 > [!NOTE]
 > - Når du forsøger at integrere med Microsoft Office-apps, kan du bruge EM-SKU'er til at få adgang til indhold med en gratis Power BI-licens. Men du kan ikke få adgang til indhold med en gratis Power BI-licens, når du bruger Powerbi.com eller Power BI – Mobil.
 > - Når du forsøger at integrere med Microsoft Office-apps ved hjælp af Powerbi.com eller Power BI – Mobil, kan du få adgang til indhold med en gratis Power BI-licens.

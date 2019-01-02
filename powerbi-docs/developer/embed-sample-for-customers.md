@@ -10,16 +10,16 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.openlocfilehash: e396f46987ef14aac9361e8f7ef41e90b2d8383e
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: 96cd04385bec6d4b9b47e3e05a30820b2f19f3dd
+ms.sourcegitcommit: 9913c213d40b45ba83c6c3b3a7ef0b757800e3ad
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180869"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53301867"
 ---
 # <a name="tutorial-embed-a-power-bi-report-dashboard-or-tile-into-an-application-for-your-customers"></a>Selvstudium: Integrer en rapport, et dashboard eller et felt i Power BI i et program for dine kunder
 
-Med **Power BI Embedded i Azure** kan du integrere rapporter, dashboards eller felter i et program ved hjælp af funktionen "appen ejer data". **Appen ejer data** handler om at have et program, der bruger Power BI som sin integrerede analyseplatform. Som **ISV-udvikler** kan du oprette Power BI-indhold, der viser rapporter, dashboards eller felter i et program, som er fuldt integreret og interaktivt, uden at brugerne skal have en Power BI-licens. I dette selvstudium kan du se, hvordan du integrerer en rapport i et program ved hjælp af Power BI .NET SDK med Power BI JavaScript-API'en, når du bruger **Power BI Embedded i Azure** for dine kunder.
+Med **Power BI Embedded i Azure** kan du integrere rapporter, dashboards eller felter i et program ved hjælp af funktionen "appen ejer data". **App owns data** handler om at have et program, der bruger Power BI som sin integrerede analyseplatform. Som **ISV-udvikler** kan du oprette Power BI-indhold, der viser rapporter, dashboards eller felter i et program, som er fuldt integreret og interaktivt, uden at brugerne skal have en Power BI-licens. I dette selvstudium kan du se, hvordan du integrerer en rapport i et program ved hjælp af Power BI .NET SDK med Power BI JavaScript-API'en, når du bruger **Power BI Embedded i Azure** for dine kunder.
 
 I dette selvstudium lærer du, hvordan du kan:
 > [!div class="checklist"]
@@ -98,7 +98,7 @@ Aktivér yderligere tilladelser for dit program, herunder det der er angivet på
 
 8. I **Required permissions** (Krævede tilladelser), skal du vælge **Grant Permissions** (Tildel tilladelser).
 
-    Handlingen **Grant Permissions** (Tildel tilladelser) skal bruges til *masterkontoen* for at undgå at blive bedt af Azure AD om at angive dit samtykke. Hvis kontoen, der udfører denne handling, er af typen Global administrator, skal du give alle brugere i organisationen tilladelse til programmet. Hvis kontoen, der udfører denne handling, er *masterkontoen* og ikke af typen Global administrator, skal du kun give *masterkontoen*  tilladelse til programmet.
+    Handlingen **Grant Permissions** (Tildel tilladelser) skal bruges til *hovedkontoen* for at undgå at blive bedt af Azure AD om at angive dit samtykke. Hvis kontoen, der udfører denne handling, er af typen Global administrator, skal du give alle brugere i organisationen tilladelse til programmet. Hvis kontoen, der udfører denne handling, er *masterkontoen* og ikke af typen Global administrator, skal du kun give *masterkontoen*  tilladelse til programmet.
 
     ![Tildel tilladelser i dialogboksen til krævede tilladelser](media/embed-sample-for-customers/embed-sample-for-customers-016.png)
 
@@ -106,7 +106,7 @@ Aktivér yderligere tilladelser for dit program, herunder det der er angivet på
 
 ### <a name="create-an-app-workspace"></a>Opret et apparbejdsområde
 
-Hvis du integrerer rapporter, dashboards eller felter for dine kunder, skal du placere dit indhold i et apparbejdsområde. *Masterkontoen* skal være administrator af apparbejdsområdet.
+Hvis du integrerer rapporter, dashboards eller felter for dine kunder, skal du placere dit indhold i et apparbejdsområde. *Hovedkontoen* skal være administrator af apparbejdsområdet.
 
 1. Start med at oprette arbejdsområdet. Vælg **Arbejdsområder** > **Opret apparbejdsområde**. I arbejdsområdet Opret app skal du placere det indhold, programmet skal have adgang til.
 
@@ -250,13 +250,13 @@ ODataResponseListReport reports = await client.Reports.GetReportsInGroupAsync(wo
 Report report = reports.Value.FirstOrDefault();
 ```
 
-### <a name="create-the-embed-token"></a>Opret integreringstokenet
+### <a name="create-the-embed-token"></a>Opret integrationstokenet
 
-Genererede et integreringstoken, som kan bruges fra JavaScript API'en. Dette integreringstoken er specifikt for det element, du er ved at integrere. Hver gang du integrerer Power BI-indhold, skal du oprette et nyt integreringstoken for det. Du kan finde flere oplysninger, herunder hvilket **adgangsniveau** du skal bruge, i [GenerateToken API](https://msdn.microsoft.com/library/mt784614.aspx).
+Genererede et integreringstoken, som kan bruges fra JavaScript API'en. Dette integreringstoken er specifikt for det element, du er ved at integrere. Hver gang du integrerer Power BI-indhold, skal du oprette et nyt integrationstoken for det. Du kan finde flere oplysninger, herunder hvilket **adgangsniveau** du skal bruge, i [GenerateToken API](https://msdn.microsoft.com/library/mt784614.aspx).
 
-Her er et eksempel på tilføjelse af et integreringstoken for en rapport til dit program.
+Her er et eksempel på tilføjelse af et integrationstoken for en rapport til dit program.
 
-*Et eksempel på, hvordan du opretter et integreringstoken til en rapport, et dashboard eller et felt, er tilgængeligt i filen Controllers\HomeController.cs i [eksempelprogrammet](#embed-your-content-within-a-sample-application).*
+*Et eksempel på, hvordan du opretter et integrationstoken til en rapport, et dashboard eller et felt, er tilgængeligt i filen Controllers\HomeController.cs i [eksempelprogrammet](#embed-your-content-within-a-sample-application).*
 
 ```csharp
 using Microsoft.PowerBI.Api.V2;
@@ -338,14 +338,14 @@ Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedik
 
 Brug tabellen nedenfor til at bestemme, hvilken kapacitet til Power BI Embedded der passer bedst til dine behov.
 
-| Kapacitetsnode | Kerner i alt<br/>*(Backend + frontend)* | Backendkerner | Frontendkerner | Grænser for DirectQuery/liveforbindelser | Maks. antal sidegengivelser i spidstimen |
+| Kapacitetsnode | Kerner i alt<br/>*(Backend + frontend)* | Backendkerner | Frontendkerner | Grænser for DirectQuery/liveforbindelser|
 | --- | --- | --- | --- | --- | --- |
-| A1 |1 v-kerne(r) |0,5 kerne(r), 3 GB RAM |0,5 kerne |0-5 pr. sekund |1-300 |
-| A2 |2 v-kerne(r) |1 kerne(r), 5 GB RAM |1 kern(e) | 10 pr. sekund |301-600 |
-| A3 |4 v-kerne(r) |2 kerne(r), 10 GB RAM |2 kerne(r) | 15 pr. sekund |601-1.200 |
-| A4 |8 v-kerne(r) |4 kerne(r), 25 GB RAM |4 kerne(r) |30 pr. sekund |1.201-2.400 |
-| A5 |16 v-kerne(r) |8 kerne(r), 50 GB RAM |8 kerne(r) |60 pr. sekund |2.401-4.800 |
-| A6 |32 v-kerne(r) |16 kerne(r), 100 GB RAM |16 kerne(r) |120 pr. sekund |4.801-9600 |
+| A1 |1 v-kerne(r) |0,5 kerne(r), 3 GB RAM |0,5 kerne |0-5 pr. sekund |
+| A2 |2 v-kerne(r) |1 kerne(r), 5 GB RAM |1 kern(e) | 10 pr. sekund |
+| A3 |4 v-kerne(r) |2 kerne(r), 10 GB RAM |2 kerne(r) | 15 pr. sekund |
+| A4 |8 v-kerne(r) |4 kerne(r), 25 GB RAM |4 kerne(r) |30 pr. sekund |
+| A5 |16 v-kerne(r) |8 kerne(r), 50 GB RAM |8 kerne(r) |60 pr. sekund |
+| A6 |32 v-kerne(r) |16 kerne(r), 100 GB RAM |16 kerne(r) |120 pr. sekund |
 
 **_Med A-SKU'er kan du ikke få adgang til Power BI-indhold med en GRATIS Power BI-licens._**
 

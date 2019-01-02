@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 11/15/2018
 ms.author: maggies
 ms.openlocfilehash: 740c012d83f9ca70f6e909b8cf62714f67c123d4
-ms.sourcegitcommit: a13abdb5a6c0c6a397b328ec2d68788ce3afa866
+ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52268314"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53451369"
 ---
 # <a name="configure-power-bi-ios-mobile-app-access-to-a-report-server-remotely"></a>Konfigurer Power BI iOS-mobilapps til at få ekstern adgang til en rapportserver
 
@@ -35,10 +35,10 @@ I følgende tabel kan du se disse par.
 
 |Nøgle  |Type  |Beskrivelse  |
 |---------|---------|---------|
-| com.microsoft.powerbi.mobile.ServerURL-adresse | String | URL-adresse til rapportserver </br> Skal starte med http/https |
-| com.microsoft.powerbi.mobile.ServerBrugernavn | String | [valgfri] </br> Det brugernavn, der skal bruges til at oprette forbindelse til serveren. </br> Hvis der ikke findes et brugernavn, vil appen bede brugeren skrive brugernavnet til forbindelsen.| 
-| com.microsoft.powerbi.mobile.ServerVist navn | String | [valgfri] </br> Standardværdien er "Rapportserver" </br> Et navn, der bruges til at repræsentere serveren i appen | 
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolean | Standardværdien er True </br>Når værdien er angivet til "True", tilsidesætter den alle eksisterende rapportserverdefinitioner på mobilenheden. Eksisterende servere, der allerede er konfigureret, slettes. </br> Dette forhindrer også, at brugeren kan fjerne konfigurationen. </br> Hvis indstillingen er angivet til “False”, tilføjes de overførte værdier, og eksisterende indstillinger ændres ikke. </br> Hvis den samme URL-adresse allerede er konfigureret i mobilappen, forbliver konfigurationen, som den er. Appen beder ikke brugeren om at godkende igen for den samme server. |
+| com.microsoft.powerbi.mobile.ServerURL-adresse | Streng | URL-adresse til rapportserver </br> Skal starte med http/https |
+| com.microsoft.powerbi.mobile.ServerBrugernavn | Streng | [valgfri] </br> Det brugernavn, der skal bruges til at oprette forbindelse til serveren. </br> Hvis der ikke findes et brugernavn, vil appen bede brugeren skrive brugernavnet til forbindelsen.| 
+| com.microsoft.powerbi.mobile.ServerVist navn | Streng | [valgfri] </br> Standardværdien er "Rapportserver" </br> Et navn, der bruges til at repræsentere serveren i appen | 
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolesk | Standardværdien er True </br>Når værdien er angivet til "True", tilsidesætter den alle eksisterende rapportserverdefinitioner på mobilenheden. Eksisterende servere, der allerede er konfigureret, slettes. </br> Dette forhindrer også, at brugeren kan fjerne konfigurationen. </br> Hvis indstillingen er angivet til “False”, tilføjes de overførte værdier, og eksisterende indstillinger ændres ikke. </br> Hvis den samme URL-adresse allerede er konfigureret i mobilappen, forbliver konfigurationen, som den er. Appen beder ikke brugeren om at godkende igen for den samme server. |
 
 Her er et eksempel på, hvordan du indstiller konfigurationspolitikken ved hjælp af Intune.
 
