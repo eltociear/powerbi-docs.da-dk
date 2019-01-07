@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/06/2018
-ms.openlocfilehash: 3d9e8e46fdd84edbeb5b4ff5e8f7efe4a4291049
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: bc5d5b7151643764b174d0bbec09e7f47ea2b1b2
+ms.sourcegitcommit: 13fdc8d62960f20c6d9ca1ab292f98992b47083b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679232"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553852"
 ---
 # <a name="troubleshoot-power-bi-custom-visuals"></a>Fejlfind brugerdefinerede visualiseringer i Power BI
 
@@ -39,6 +39,8 @@ Hvis du ikke kan se det, skal du sørge for, at det er aktiveret i Power BI-inds
 
 Kør visualiseringsserveren med kommandoen `pbiviz start` i terminalens kommandoline fra roden afvisualiseringsprojektet. Hvis serveren ikke kører, er det sandsynligt, at SSL-certifikaterne ikke er installeret korrekt.
 
+Du er meget velkommen til at kontakte supportteamet til brugerdefinerede visualiseringer: *pbicvsupport@microsoft.com* , hvis du har spørgsmål, kommentarer eller problemer.
+
 ## <a name="next-steps"></a>Næste trin
 
-Du kan finde flere oplysninger og få svar på spørgsmål under [Ofte stillede spørgsmål om brugerdefinerede visualiseringer i Power BI](power-bi-custom-visuals-faq.md#organizational-custom-visuals).
+Du kan finde flere oplysninger under [Ofte stillede spørgsmål om brugerdefinerede visualiseringer i Power BI](power-bi-custom-visuals-faq.md#organizational-custom-visuals).

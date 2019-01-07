@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 58c9d41769179b84d9d7cdc79d02f66bc4c99953
-ms.sourcegitcommit: 76b07d55e85110a6ae8c49e08e80e4fa63826166
+ms.openlocfilehash: 72c3c2fde92de45d3a93f087d217af1f50e50601
+ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53200643"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53649039"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Tilslut Azure Data Lake Storage Gen2 for at få et dataflowlager (prøveversion)
 
@@ -76,7 +76,7 @@ I vinduet **Tilføj rolletildeling** skal du vælge rollen **Læser** og tildele
 
 Du skal oprette et filsystem med *powerbi*, før din lagerkonto kan føjes til Power BI. Der er mange måder at oprette sådan et filsystem på, herunder ved hjælp af Azure Databricks, HDInsight, AZCopy eller Azure Storage Explorer. I dette afsnit kan du se en enkel måde at oprette et filsystem på ved hjælp af Azure Storage Explorer.
 
-Dette trin kræver, at du installerer Azure Storage Explorer. Hvis du vil installere Azure Storage Explorer til Windows, Linux eller Macintosh, skal du se [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
+Til dette trin kræves det, at du installerer Azure Storage Explorer version 1.6.1 eller nyere. Hvis du vil installere Azure Storage Explorer til Windows, Linux eller Macintosh, skal du se [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
 
 1. Når du har installeret Azure Storage Explorer, vises vinduet Microsoft Azure Storage Explorer – Opret forbindelse ved den første start. Selvom Storage Explorer giver flere måder at oprette forbindelse til lagerkonti på, er der i øjeblikket kun én måde, der understøttes, for den nødvendige konfiguration. 
 
@@ -108,11 +108,11 @@ Du finder dine lejerprogrammer ved at følge disse trin:
 
     ![AAD-virksomhedsprogrammer](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_06.jpg)
 
-4. Skriv *Power* i søgelinjen, så vises der en samling af objekt-id'er for programmerne Power BI og Power-forespørgsel.
+4. Skriv *Power* i søgelinjen, så vises der en samling af objekt-id'er for programmerne Power BI og Power-forespørgsel. Du skal bruge alle tre værdier i de efterfølgende trin.  
 
     ![Søg efter Power-programmer](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
-5. Vælg og kopiér objekt-id'et for Power BI-tjenesten fra søgeresultaterne. Vær klar til at indsætte denne værdi i de efterfølgende trin.
+5. Vælg og kopiér begge objekt-id'er for Power BI-tjenesten og Power BI Premium fra søgeresultaterne. Vær klar til at indsætte disse værdier i de efterfølgende trin.
 
 7. Brug derefter **Azure Storage Explorer** til at navigere til det *powerbi*-filsystem, du oprettede i forrige afsnit. Følg vejledningen under afsnittet [Administration af adgang](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) i artiklen [Angiv tilladelser på fil- og mappeniveau ved hjælp af Azure Storage Explorer](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer).
 
@@ -120,7 +120,7 @@ Du finder dine lejerprogrammer ved at følge disse trin:
 
    ![tildel alle tre for begge](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07a.jpg)
 
-9. For det objekt-id til Power Query Online, du indsamlede i trin 5, skal du tildele adgang af typen **Skriv** og **Udfør** samt standardadgangskontrollister til *powerbi*-filsystem.
+9. For det objekt-id for Power Query Online, du indsamlede under trin 4, skal du tildele ACL'er af typen **Skriv**, **Udfør**, Adgang og Standard til dit *powerbi*-filsystem.
 
    ![tildel derefter skriv og udfør](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07b.jpg)
 
@@ -145,7 +145,7 @@ Du tilslutter din **Azure Data Lake Storage Gen2**-konto ved hjælp af følgende
 3. Angiv **abonnements-id'et** for lagerkontoen.
 4. Angiv **navnet på den ressourcegruppe**, som lagerkontoen blev oprettet i.
 5. Angiv **navnet på lagerkontoen**.
-6. Vælg **Tilslut**.
+6. Vælg **Opret forbindelse**.
 
 Når disse trin er fuldført, er din Azure Data Lake Storage Gen2-konto sluttet til Power BI. 
 

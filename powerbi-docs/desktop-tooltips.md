@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8ec638eefa95ef70ab04606881bee421f82b7f11
-ms.sourcegitcommit: 02f918a4f27625b6f4e47473193ebc8219db40e2
+ms.openlocfilehash: 0b5693dfa53feba35acb559bf8606b1d03f97fdb
+ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51223305"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329780"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Opret værktøjstip baseret på rapportsider i Power BI Desktop
 Du kan oprette visuelt omfattende **værktøjstip til rapporter**, som vises, når du holder over visualiseringer, på baggrund af rapportsider, du opretter i **Power BI Desktop**. Ved at oprette en rapportside, der fungerer som et værktøjstip, kan dine brugerdefinerede værktøjstip indeholde visualiseringer, billeder og mange andre samlinger af elementer, du opretter på en rapportside. 
@@ -25,17 +25,6 @@ Du kan oprette visuelt omfattende **værktøjstip til rapporter**, som vises, n�
 Du kan oprette så mange værktøjstipsider, du vil. Hver værktøjstipside kan tilknyttes et eller flere felter i rapporten, så når du holder over en visualisering, som indeholder det valgte felt, vises det værktøjstip, du oprettede på din værktøjstipside, filtreret efter det datapunkt, som musen holder over. 
 
 Du kan gøre mange forskellige interessante ting med værktøjstip i rapporter. Herunder kan du se, hvordan du opretter værktøjstip, og hvad du skal gøre for at konfigurere dem.
-
-### <a name="enable-the-tooltips-preview"></a>Aktivér prøveversionen af værktøjstip 
-Fra og med september 2018-versionen af **Power BI Desktop** er værktøjstip generelt tilgængelige og skal ikke længere aktiveres. 
-
-Hvis du bruger en tidligere version af **Power BI Desktop**, kan du aktivere den som en prøveversionsfunktion ved at vælge **Fil > Indstillinger > Indstillinger > Funktioner til eksempelvisning** i Power BI Desktop og derefter markere afkrydsningsfeltet ud for **Værktøjstip for rapportside**. 
-
-![Aktivér prøveversionsfunktionen af værktøjstip til rapporter](media/desktop-tooltips/desktop-tooltips_01.png)
-
-Du skal genstarte **Power BI Desktop**, når du har aktiveret prøveversionsfunktionen af værktøjstip i en rapport.
-
-Vi anbefaler, at du altid opgraderer til den nyeste version af **Power BI Desktop**, hvilket du kan gøre via et link i [Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="create-a-report-tooltip-page"></a>Opret en værktøjstipside i en rapport
 Du starter ved at oprette en ny rapportside. Det gør du ved at klikke på knappen **+**, som du finder nederst på canvasset **Power BI Desktop** i området for fanesider. Knappen er ved siden af den sidste side i rapporten. 
@@ -123,8 +112,7 @@ Når en visualisering fremhæves på tværs i en rapport, viser værktøjstippen
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 Der er nogle få begrænsninger og overvejelser i forbindelse med **værktøjstip**, som du skal være opmærksom på.
 
-* Fra og med september 2018-versionen af **Power BI Desktop**, som markerede den generelle tilgængelighed af værktøjstip, understøtter visuelle kortelementer også værktøjstip.
-* Fra og med udgivelsen af **Power BI Desktop** i juli 2018 understøttes visualiseringerne Tabel og Matrix for værktøjstip. 
+* Fra og med udgivelsen af **Power BI Desktop** i december 2018 understøtter visualiseringer af typen Knapper værktøjstip.
 * Værktøjstip til rapporter understøttes ikke, når du får vist rapporter i mobilapps. 
 * Værktøjstip til rapporter understøttes ikke for brugerdefinerede visualiseringer. 
 * Klynger understøttes ikke i øjeblikket som felter, der kan vises i værktøjstip til rapporter. 

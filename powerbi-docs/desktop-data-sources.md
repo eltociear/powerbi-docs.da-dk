@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a49b433af32e6c0f03d43333a424864c5463ddd3
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: e09c08780011ffaac7d37468e6018b079c41c669
+ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619810"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53329734"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 Med Power BI Desktop kan du oprette forbindelse til data fra mange forskellige kilder. Der findes en komplet liste over tilgængelige datakilder nederst på siden.
@@ -73,11 +73,12 @@ Kategorien **Database** indeholder følgende dataforbindelser:
 * Teradata-database
 * SAP HANA-database
 * SAP Business Warehouse-programserver
-* SAP Business Warehouse-beskedserver
+* SAP Business Warehouse-meddelelsesserver
 * Amazon Redshift
 * Impala
 * Google BigQuery
 * Snowflake
+* Essbase (beta)
 * BI Connector
 * Exasol
 * Dremio (beta)

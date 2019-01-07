@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: db6ed98f246eebba55b87fe383ffcab95c22f6dc
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: c4601ea54d2e55e55f0b94f4bd4c69673bb00e53
+ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180846"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53649120"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introduktion til dashboardfelter for Power BI-designere
 
@@ -90,7 +90,7 @@ Når du vælger et felt, afhænger næste handling af, hvordan du oprettede felt
 
 * Hvis den rapport, der blev brugt til at oprette visualiseringen, ikke blev gemt, sker der ikke noget, når feltet vælges.
 * Hvis feltet blev oprettet vha. en projektmappe i Excel Online, skal du som minimum have læserettigheder til den pågældende projektmappe. Ellers åbnes projektmappen ikke i Excel Online, hvis du vælger feltet.
-* Lad os sige, at du opretter et felt direkte på dashboardet ved hjælp af **Tilføj felt** og angiver et brugerdefineret hyperlink for det. Derefter åbnes den pågældende URL-adresse, hvis du vælger titlen, undertitlen eller feltet. Ellers sker der som standard ingenting, når du vælger et felt, der er oprettet direkte på dashboardet for et billede, en webkode eller et tekstfelt.
+* Lad os sige, at du opretter et felt direkte på dashboardet ved hjælp af **Tilføj felt** og angiver et brugerdefineret hyperlink for det. Derefter åbnes den pågældende URL-adresse, når du vælger titlen, undertitlen eller feltet. Ellers sker der som standard ingenting, når du vælger et felt, der er oprettet direkte på dashboardet for et billede, en webkode eller et tekstfelt.
 * Hvis du ikke har tilladelse til rapporten i Reporting Services, vil valget af et felt, der er oprettet på baggrund af en Reporting Services-rapport, føre dig til en side, hvor det angives, at du ikke har adgang (rsAccessDenied).
 * Hvis du ikke har adgang til netværket, hvor Reporting Services-serveren er placeret, vil valget af et felt, der er oprettet på baggrund af Reporting Services, føre dig til en side, hvor det angives, at serveren ikke blev fundet (HTTP 404). Enheden skal have netværksadgang til rapportserveren, for at du kan få vist rapporten.
 * Hvis den oprindelige visualisering, der blev brugt til at oprette feltet, ændres, er det ikke tilfældet med feltet.  Hvis du f.eks. fastgør et kurvediagram fra en rapport og derefter ændrer kurvediagrammet til et søjlediagram, fortsætter dashboardfeltet med at vise et kurvediagram. Dataene opdateres, men visualiseringstypen bliver ikke.
