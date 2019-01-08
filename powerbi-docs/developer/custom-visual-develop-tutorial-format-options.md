@@ -1,6 +1,6 @@
 ---
 title: Føj formateringsindstillinger til en brugerdefineret visual i Power BI
-description: Et selvstudium i, hvordan du udvikler formateringsindstillinger for en brugerdefineret visualisering i Power BI
+description: Et selvstudium i, hvordan du udvikler formateringsindstillinger for en brugerdefineret visual i Power BI
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -8,29 +8,30 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: tutorial
+ms.subservice: powerbi-custom-visuals
 ms.date: 11/21/2018
-ms.openlocfilehash: 56de3745d59e4a26dffbb988e9543c294de261e3
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: e9701a05ffeff7d8e5113c870db3f90e2e3c8c8e
+ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289168"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54056104"
 ---
-# <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Selvstudium: Føj formateringsindstillinger til en brugerdefineret visualisering i Power BI
+# <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Selvstudium: Føj formateringsindstillinger til en brugerdefineret visual i Power BI
 
 I dette selvstudium gennemgås, hvordan du føjer almindelige egenskaber til din visualisering.
 
 I dette selvstudium lærer du, hvordan du kan:
 > [!div class="checklist"]
-> * Tilføj egenskaber for visualisering.
-> * Pak visualiseringen.
-> * Importér den brugerdefinerede visualisering til en rapport i Power BI Desktop.
+> * Tilføj egenskaber for visual.
+> * Pak visualen.
+> * Importér den brugerdefinerede visual til en rapport i Power BI Desktop.
 
 ## <a name="adding-formatting-options"></a>Tilføjelse af formateringsindstillinger
 
 1. I **Power BI** skal du vælge **siden Formatér**.
 
-    Du får vist en meddelelse med teksten – *Formateringsindstillinger er ikke tilgængelige for denne visualisering.*
+    Du får vist en meddelelse med teksten – *Formateringsindstillinger er ikke tilgængelige for denne visual.*
 
     ![Formatering af malerullen](media/custom-visual-develop-tutorial-format-options/format-paintbrush.png)
 
@@ -48,11 +49,11 @@ I dette selvstudium lærer du, hvordan du kan:
 5. I **Power BI** skal du gennemse formateringsindstillingerne igen.
 
     > [!Note]
-    > Hvis du ikke kan se ændringerne af formateringsindstillingerne, skal du vælge **Genindlæs brugerdefineret visualisering**.
+    > Hvis du ikke kan se ændringerne af formateringsindstillingerne, skal du vælge **Genindlæs brugerdefineret visual**.
 
     ![Se formateringsindstillinger](media/custom-visual-develop-tutorial-format-options/view-formatting-options.png)
 
-6. Angiv indstillingen **Titel** til *Fra*. Bemærk, at visualiseringen ikke længere viser navnet på målingen i øverste venstre hjørne.
+6. Angiv indstillingen **Titel** til *Fra*. Bemærk, at visualen ikke længere viser navnet på målingen i øverste venstre hjørne.
 
     ![Indstillingen Felt er slået fra](media/custom-visual-develop-tutorial-format-options/tile-option-off.png)
 
@@ -62,7 +63,7 @@ I dette selvstudium lærer du, hvordan du kan:
 
 Du kan tilføje brugerdefinerede egenskaber for at gøre det muligt at konfigurere farven på cirklen og rammens bredde.
 
-1. I PowerShell skal du standse den brugerdefinerede visualisering.
+1. I PowerShell skal du standse den brugerdefinerede visual.
 
 2. I Visual Studio Code skal du i filen **capabilities.json** indsætte følgende JSON-fragment i objektet kaldet **objects**.
 
@@ -98,7 +99,7 @@ Du kan tilføje brugerdefinerede egenskaber for at gøre det muligt at konfigure
 
 3. Gem filen **capabilities.json**.
 
-4. I **ruden Stifinder** skal du gå til mappen **src** og derefter vælge **settings.ts**. *Denne fil repræsenterer indstillingerne for startvisualiseringen*.
+4. I **ruden Stifinder** skal du gå til mappen **src** og derefter vælge **settings.ts**. *Denne fil repræsenterer indstillingerne for startvisualen*.
 
 5. I filen **settings.ts** skal du erstatte de to klasser med følgende kode.
 
@@ -125,9 +126,9 @@ Du kan tilføje brugerdefinerede egenskaber for at gøre det muligt at konfigure
     ```typescript
     private visualSettings: VisualSettings;
     ```
-    Denne egenskab gemmer en reference til objektet **VisualSettings**, der beskriver indstillingerne for visualiseringen.
+    Denne egenskab gemmer en reference til objektet **VisualSettings**, der beskriver indstillingerne for visualen.
 
-    ![Tilføj klasse med visualiseringer](media/custom-visual-develop-tutorial-format-options/visual-class-add-on.png)
+    ![Tilføj klasse med visuals](media/custom-visual-develop-tutorial-format-options/visual-class-add-on.png)
 
 9. I klassen **Visual** skal du tilføje følgende metode før **opdaterings**metoden. Denne metode bruges til at udfylde formateringsindstillingerne.
 

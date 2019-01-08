@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: f60fe155cb723550128ea6d35805932cb4559669
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 1166808dc827448f94bb84cc37bf4000df178c1d
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544733"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008666"
 ---
 # <a name="connect-to-webtrends-with-power-bi"></a>Opret forbindelse til Webtrends med Power BI
 Webtrends-indholdspakken til Power BI indeholder en række køreklare målepunkter, f.eks. samlede sidevisninger og besøg efter trafikkilde. Visualisering af dine Webtrends-data i Power BI starter med at oprette forbindelse til din Webtrends-konto. Du kan bruge det dashboard og de rapporter, som følger med, eller tilpasse dem for at fremhæve de oplysninger, som betyder mest for dig.  Dataene opdateres automatisk én gang dagligt.

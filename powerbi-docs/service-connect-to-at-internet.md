@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c65cc7052a3a056280561643c7734212b92769be
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 5afb79f52c4717887ba16d9ca43f913ba3446627
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46549411"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008367"
 ---
 # <a name="connect-to-at-internet-bridge-with-power-bi"></a>Opret forbindelse til AT Internet Bridge med Power BI
 Med AT Internet kan du hurtigt udtrække værdifulde oplysninger fra dine data, takket være den ensartede platform til digitale analyser, Analytics Suite. AT Internet Bridge-indholdspakken til Power BI indeholder data vedrørende besøg, datakilder, lokalisering og enheder til dit websted.

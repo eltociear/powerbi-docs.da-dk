@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2800eb5b01e8203632ae60c9b304a5ed9ce28b69
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 281e84b1dd3a3c21a7aaebce4784551a8afb31ba
+ms.sourcegitcommit: 88ae40a25ea54ef7153885dd04ef57d12522d4e1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670193"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54056058"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Tilmeld din US Government-organisation til Power BI-tjenesten
 **Power BI-tjenesten** har en version tilgængelig for offentlige myndigheder i USA som en del af abonnementer på **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til offentlige myndigheder i USA og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten**.
@@ -102,7 +102,7 @@ Hvis du har både gratis- og US Government Pro-licenser i din lejer, vil både g
 
 Når der bruges en blanding af gratis- og Pro-licenser i en US Government-lejer, og under *whitelisting*-processen, bør følgende forventes:
 
-**Før *whitelisting***:
+**Før overførslen via _whitelisting_**:
 
 * Brugere med gratislicenser kører i kommerciel cloud
 * Pro US Government-licenser vises i portalen, og administratoren kan tildele disse licenser til brugere. Pro US Government-brugere mister ikke data fra deres gratislicenser, når administratoren tildeler en US Government Pro-licens. De tildelte brugere har adgang til Power BI Pro-funktioner til US Government-kunder, men funktionalitetshullerne i den følgende opstilling med punkttegn vil være til stede, indtil lejeren gennemfører en vellykket *whitelisting*-proces:
@@ -112,7 +112,7 @@ Når der bruges en blanding af gratis- og Pro-licenser i en US Government-lejer,
   * PBIX-filer skal manuelt uploades fra den kommercielle Power BI-tjeneste
   * Power BI-mobilapps er ikke tilgængelige
 
-**Efter *whitelisting***:
+**Efter overførslen via _whitelisting_**:
 
 * Gratisbrugere, der kører i den kommercielle Power BI-tjeneste, kan fortsætte med at køre, men de holder op med at godkende som forventet.
 * Pro-brugere, der kører i US Government-clouden, kan bruge tjenesten **Power BI til regeringskunder i USA** som forventet.
