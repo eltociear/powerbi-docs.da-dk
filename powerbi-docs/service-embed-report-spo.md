@@ -11,12 +11,12 @@ ms.component: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 11/01/2018
-ms.openlocfilehash: fc0234536415c758992cec629452a3e629c46ad1
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: 3ad4335cabac159aee38d54fbfff0f689009fd68
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973321"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136593"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Integrer med rapportwebdelen i SharePoint Online
 
@@ -75,7 +75,7 @@ Hvis du vil integrere din rapport i SharePoint Online, skal du først hente URL-
 
     ![Indlæst SP-rapport](media/service-embed-report-spo/powerbi-sharepoint-report-loaded.png)
 
-## <a name="granting-access-to-reports"></a>Giv adgang til rapporter
+## <a name="grant-access-to-reports"></a>Giv adgang til rapporter
 
 Integrering af en rapport i SharePoint Online giver ikke automatisk brugere tilladelse til at få vist rapporten. Tilladelserne til at få vist rapporten angives i Power BI-tjenesten.
 
@@ -90,7 +90,7 @@ Du kan også dele en rapport direkte med brugerne ved at integrere rapporten i e
 
 2. Opretteren genererer en rapport i et apparbejdsområde. *For at kunne dele med **brugere af den gratis version af Power BI** skal arbejdsområdet være angivet som et **Premium-arbejdsområde**.*
 
-3. Opretteren publicerer appen og installerer den derefter. *Opretteren skal sørge for at installere appen for at få adgang til rapportens URL-adresse, som bruges til at integrere med SharePoint Online.*
+3. Opretteren publicerer appen og installerer den derefter. *Forfatteren skal sørge for at installere appen for at få adgang til rapportens URL-adresse, som bruges til at integrere med SharePoint Online.*
 
 4. Nu skal alle slutbrugere også installere appen. Du kan dog angive, at appen skal forudinstalleres for slutbrugere, ved hjælp af funktionen **Installér appen automatisk**, som kan aktiveres på [Power BI-administrationsportalen](service-admin-portal.md).
 
@@ -152,7 +152,7 @@ Brugere, der ser en rapport i SharePoint, skal enten have en **Power BI Pro-lice
 
 ## <a name="known-issues-and-limitations"></a>Kendte problemer og begrænsninger
 
-* Fejl: "Der opstod en fejl. Prøv at logge af og på igen, og besøg derefter denne side igen. Korrelations-id: udefineret, HTTP-svarstatus: 400, serverens fejlkode 10001, meddelelse: manglende opdateringstoken"
+* Fejl: "Der opstod en fejl. Prøv at logge af og på igen, og besøg derefter denne side igen. Korrelations-ID: udefineret. HTTP-svarstatus: 400, serverfejlkode 10001. Meddelelse: Manglende opdateringstoken"
   
   Hvis du modtager denne fejl, kan du prøve at udføre et af fejlfindingstrinnene nedenfor.
   
@@ -174,9 +174,10 @@ Brugere, der ser en rapport i SharePoint, skal enten have en **Power BI Pro-lice
 
 ## <a name="next-steps"></a>Næste trin
 
-[Tillad eller forbyd, at slutbrugere opretter moderne webstedssider](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
-[Opret og distribuer en app i Power BI](service-create-distribute-apps.md)  
-[Del et dashboard med kolleger og andre](service-share-dashboards.md)  
-[Hvad er Power BI Premium?](service-premium.md)  
+* [Tillad eller forbyd, at slutbrugere opretter moderne webstedssider](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b)  
+* [Opret og distribuer en app i Power BI](service-create-distribute-apps.md)  
+* [Del et dashboard med kolleger og andre](service-share-dashboards.md)  
+* [Hvad er Power BI Premium?](service-premium.md)
+* [Integrer en rapport på en sikker portal eller et websted](service-embed-secure.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

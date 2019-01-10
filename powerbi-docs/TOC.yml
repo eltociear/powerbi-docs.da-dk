@@ -604,10 +604,12 @@ items:
         href: service-share-dashboards.md
       - name: Del en filtreret rapport
         href: service-share-reports.md
-      - name: Publicer fra Power BI på internettet
-        href: service-publish-to-web.md
       - name: Integrer rapport i SharePoint Online
         href: service-embed-report-spo.md
+      - name: Integrer en rapport på en sikker portal eller et websted
+        href: service-embed-secure.md
+      - name: Publicer fra Power BI på internettet
+        href: service-publish-to-web.md
       - name: Del et dashboard, der linker til en Excel-projektmappe på OneDrive
         href: service-share-dashboard-that-links-to-excel-onedrive.md
       - name: Power BI Publisher til Excel
@@ -940,7 +942,7 @@ items:
         href: https://go.microsoft.com/fwlink/?linkid=848280
       - name: Stack Overflow
         href: https://go.microsoft.com/fwlink/?linkid=848281
-  - name: Brugerdefinerede visualiseringer
+  - name: Brugerdefinerede visuelle elementer
     items:
     - name: Oversigt
       items:
@@ -974,9 +976,9 @@ items:
       items:
       - name: Få en brugerdefineret visualisering certificeret
         href: power-bi-custom-visuals-certified.md
-      - name: Publicer brugerdefinerede visualiseringer i AppSource
+      - name: Publicer brugerdefinerede visuals i AppSource
         href: developer/office-store.md
-      - name: Brug R-drevne brugerdefinerede visualiseringer i Power BI
+      - name: Brug R-drevne brugerdefinerede visuelle elementer i Power BI
         href: desktop-r-powered-custom-visuals.md
       - name: Fejlfind
         items:
@@ -1285,9 +1287,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI sikkerhed
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 2e6a77d0aadd85cce05d8dc4fb5fdb60e4cbe91d
-ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
+ms.openlocfilehash: ba984e4e4f948f0cc2772dbe632c450bd77eb6b2
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54072330"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136570"

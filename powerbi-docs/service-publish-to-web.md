@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 09/13/2018
+ms.date: 01/08/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0ef3bd027c7fc14f88a569cab160f90044689784
-ms.sourcegitcommit: 9c3a9ec14c111d766ef5703366c316e72f6e588f
+ms.openlocfilehash: ab5f891b8769657f18861863562c0ab866044a18
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45558533"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136616"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -26,56 +26,58 @@ Du kan også nemt redigere, opdatere eller fjerne deling af dine publicerede vis
 > [!WARNING]
 > Når du bruger **Publicer på internettet**, kan den rapport eller det visuelle element, som du publicerer, ses af alle på internettet. Der bruges ingen godkendelse, når disse rapporter vises. Brug kun Publicer på internettet med rapporter og data, som alle på internettet (ikke-godkendte medlemmer af offentligheden) skal kunne se. Dette omfatter data på detaljeniveau, der er aggregeret i dine rapporter. Inden du publicerer denne rapport, skal du sikre, at du har ret til at dele dataene og visualiseringerne offentligt. Publicer ikke fortrolige eller beskyttede oplysninger. Hvis du er i tvivl, kan du kontrollere din organisations politikker inden publiceringen.
 
+>[!Note]
+>Hvis du vil integrere dit indhold på en sikker måde på en intern portal eller et websted, skal du bruge indstillingen [Integrer](service-embed-secure.md) eller [Integrer i SharePoint Online](service-embed-report-spo.md). Dette sikrer, at alle tilladelser og datasikkerhed håndhæves, når brugerne får vist dine interne data.
+
 ## <a name="how-to-use-publish-to-web"></a>Sådan bruger du Publicer på internettet
 
-**Publicer på internettet** er tilgængelig i rapporter i personlige arbejdsområder eller gruppearbejdsområder, du kan redigere.  Du kan ikke bruge Publicer på internettet med rapporter, der blev delt med dig, eller rapporter, der afhænger af sikkerhed på rækkeniveau for at beskytte dataene. Se afsnittet **Begrænsninger** herunder for at få vist en fuldstændig liste over situationer, hvor Publicer på internettet ikke understøttes. Gennemgå **advarslen** tidligere i denne artikel, før du bruger Publicer på internettet.
+**Publicer på internettet** er tilgængelig i rapporter i personlige arbejdsområder eller gruppearbejdsområder, du kan redigere.  Du kan ikke bruge Publicer på internettet med rapporter, der blev delt med dig, eller rapporter, der afhænger af sikkerhed på rækkeniveau for at beskytte dataene. Se afsnittet **Begrænsninger** herunder for at få vist en fuldstændig liste over situationer, hvor "Publicer på internettet" ikke understøttes. Gennemgå **advarslen** tidligere i denne artikel, før du bruger Publicer på internettet.
 
 Du kan se, hvordan denne funktion virker, i den følgende *korte video*. Følg derefter nedenstående fremgangsmåde for at prøve det selv.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UF9QtqE7s4Y" frameborder="0" allowfullscreen></iframe>
 
-
 I fremgangsmåden nedenfor beskrives det, hvordan du bruger **Publicer på internettet**.
 
 1. Vælg **Filer > Publicer på internettet** i en rapport i arbejdsområdet, som du kan redigere .
-   
-   ![](media/service-publish-to-web/publish_to_web1.png)
+
+   ![PtW1](media/service-publish-to-web/publish_to_web1.png)
 
 2. Gennemgå indholdet i dialogboksen, og vælg **Opret integreringskode** som vist i følgende dialogboks.
-   
-   ![](media/service-publish-to-web/publish_to_web2_ga.png)
+
+   ![PtW2](media/service-publish-to-web/publish_to_web2_ga.png)
 
 3. Gennemgå advarslen i følgende dialogboks, og bekræft, at det er i orden at integrere dataene på et offentligt websted. Vælg **Publicer**, hvis det er tilfældet.
-   
-   ![](media/service-publish-to-web/publish_to_web3_ga.png)
+
+   ![PtW3](media/service-publish-to-web/publish_to_web3_ga.png)
 
 4. Der åbnes en dialogboks med et link, der kan sendes i en mail, som er integreret i kode (f.eks. en iFrame), eller som du kan indsætte direkte i din webside eller blog.
-   
-   ![](media/service-publish-to-web/publish_to_web4.png)
+
+   ![PtW4](media/service-publish-to-web/publish_to_web4.png)
 
 5. Hvis du tidligere har oprettet en integreringskode til rapporten, vises koden hurtigt. Du kan kun oprette én integreringskode til hver enkelt rapport.
-   
-   ![](media/service-publish-to-web/publish_to_web5.png)
+
+   ![PtW5](media/service-publish-to-web/publish_to_web5.png)
 
 ## <a name="tips-and-tricks-for-view-modes"></a>Tip og råd til visningstilstande
 
 Når du integrerer indhold i et blogindlæg, skal det typisk passe inden for en bestemt størrelse på skærmen.  Du kan også tilpasse højden og bredden i iFrame-koden efter behov, men det kan også være nødvendigt at sikre, at din rapport passer inden for det angivne område for iFrame, og du skal derfor også angive en passende visningstilstand, når du redigerer rapporten.
 
-Følgende tabel indeholder vejledning om visningstilstanden, og hvordan den vises, når den er integreret. 
+Følgende tabel indeholder vejledning om visningstilstanden, og hvordan den vises, når den er integreret.
 
 | Visningstilstand | Sådan ser den ud, når den er integreret |
 | --- | --- |
-| ![](media/service-publish-to-web/publish_to_web6b.png) |**Tilpas til siden** anvender rapportens sidehøjde og -bredde. Hvis du indstiller siden til "dynamiske" forhold, f.eks. 16:9 eller 4:3, skaleres dit indhold til at passe inden for den iFrame, du har angivet. Ved integration i en iFrame kan brug af **Tilpas til siden** resultere i **letterboxing**, hvor en grå baggrund vises i områder af iFrame, efter at indholdet er skaleret til at passe inden for iFrame. Angiv din iFrames højde/bredde hensigtsmæssigt for at minimere letterboxing. |
-| ![](media/service-publish-to-web/publish_to_web6d.png) |**Faktisk størrelse** sikrer, at rapporten bevarer sin størrelse som indstillet på rapportsiden. Dette kan medføre, at der er rullepaneler i din iFrame. Angiv højden og bredden på iFrame for at undgå rullepanelerne. |
-| ![](media/service-publish-to-web/publish_to_web6c.png) |**Tilpas til bredden** sikrer, at indholdet passer inden for det vandrette område til din iFrame. Der vises stadig en kant, men indholdet skaleres til at bruge al tilgængelig vandret plads. |
+| ![PtW6b](media/service-publish-to-web/publish_to_web6b.png) |**Tilpas til siden** anvender rapportens sidehøjde og -bredde. Hvis du indstiller siden til "dynamiske" forhold, f.eks. 16:9 eller 4:3, skaleres dit indhold til at passe inden for den iFrame, du har angivet. Ved integration i en iFrame kan brug af **Tilpas til siden** resultere i **letterboxing**, hvor en grå baggrund vises i områder af iFrame, efter at indholdet er skaleret til at passe inden for iFrame. Angiv din iFrames højde/bredde hensigtsmæssigt for at minimere letterboxing. |
+| ![PtW6d](media/service-publish-to-web/publish_to_web6d.png) |**Faktisk størrelse** sikrer, at rapporten bevarer sin størrelse som indstillet på rapportsiden. Dette kan medføre, at der er rullepaneler i din iFrame. Angiv højden og bredden på iFrame for at undgå rullepanelerne. |
+| ![PtW6c](media/service-publish-to-web/publish_to_web6c.png) |**Tilpas til bredden** sikrer, at indholdet passer inden for det vandrette område til din iFrame. Der vises stadig en kant, men indholdet skaleres til at bruge al tilgængelig vandret plads. |
 
 ## <a name="tips-and-tricks-for-iframe-height-and-width"></a>Tip og tricks til højde og bredde på iFrame
 
 Integreringskoden, som du modtager, når du publicerer på internettet, ser ud som følgende:
 
-![](media/service-publish-to-web/publish_to_web7.png)
+![PtW7](media/service-publish-to-web/publish_to_web7.png)
 
-Du kan redigere bredden og højden manuelt for at sikre, at den er præcis, som du vil have den til at passe på den side, som du integrerer den i.
+Du kan redigere bredden og højden manuelt for at sikre, at den er præcis, som du vil have den, så den passer på den side, du integrerer den på.
 
 Hvis du vil have den til at passe mere perfekt , kan du prøve at føje 56 pixel til højdedimensionen for iFrame. Det tager højde for den aktuelle størrelse af den nederste linje. Hvis rapportsiden bruger den dynamiske størrelse, indeholder tabellen herunder nogle størrelser, du kan bruge til at opnå en tilpasning uden letterboxing.
 
@@ -93,20 +95,20 @@ Hvis du vil have den til at passe mere perfekt , kan du prøve at føje 56 pixel
 Når du har oprettet en integreringskode for **Publicer på internettet**, kan du administrere de oprettede koder fra menuen **Indstillinger** i Power BI-tjenesten. Administration af integreringskoder giver mulighed for at fjerne destinationens visuelle element eller rapport for en kode (hvilket gør integreringskoden ubrugelig) eller hente integreringskoden igen.
 
 1. Du administrerer dine integreringskoder for **Publicer på internettet** ved at åbne tandhjulet **Indstillinger** og vælge **Håndter indlejringskoder**.
-   
-   ![](media/service-publish-to-web/publish_to_web8.png)
+
+   ![PtW8](media/service-publish-to-web/publish_to_web8.png)
 
 2. Listen over integreringskoder, du har oprettet, vises som på det følgende billede.
-   
-   ![](media/service-publish-to-web/publish_to_web9.png)
+
+   ![PtW9](media/service-publish-to-web/publish_to_web9.png)
 
 3. For hver integreringskode for **Publicer på internettet** på listen kan du enten hente koden eller slette koden og dermed få ethvert link til rapporten eller det visuelle element til ikke længere at fungere.
-   
-   ![](media/service-publish-to-web/publish_to_web10.png)
+
+   ![PtW10](media/service-publish-to-web/publish_to_web10.png)
 
 4. Hvis du vælger **Slet**, bliver du spurgt, om du er sikker på, at du vil slette integreringskoden.
-   
-   ![](media/service-publish-to-web/publish_to_web11.png)
+
+   ![PtW11](media/service-publish-to-web/publish_to_web11.png)
 
 ## <a name="updates-to-reports-and-data-refresh"></a>Opdateringer af rapporter og data
 
@@ -120,7 +122,7 @@ Se afsnittet **Sådan fungerer det** senere i denne artikel, hvis du vil vide me
 
 Dataopdateringer afspejles automatisk i din integrerede rapport eller det visuelle element. Det kan tage ca. 1 time, før opdaterede data kan ses fra integreringskoder. Du kan deaktivere automatisk opdatering ved at vælge **Opdater ikke** i tidsplanen for det datasæt, der bruges af rapporten.  
 
-## <a name="custom-visuals"></a>Brugerdefinerede visuelle elementer
+## <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
 
 Brugerdefinerede visuelle elementer, der understøttes i **Publicer på internettet**. Når du bruger Publiver på internettet, behøver brugere, som du deler dit publicerede visuelle element med, ikke at aktivere brugerdefinerede visuelle elementer for at få vist rapporten.
 
@@ -138,6 +140,7 @@ Brugerdefinerede visuelle elementer, der understøttes i **Publicer på internet
 - Rapporter med DAX-målinger på rapportniveau
 - Forespørgselsmodeller for enkeltlogon til data
 - [Fortrolige eller beskyttede oplysninger](#publish-to-web-from-power-bi)
+- Muligheden for automatisk godkendelse, der er tilgængelig med indstillingen **Integrer** fungerer ikke sammen med Power BI JavaScript API. Til Power BI JavaScript API kan du bruge den strategi til integreringen, at [brugeren ejer dataene](developer/embed-sample-for-your-organization.md). Få mere at vide om, [brugeren ejer dataene](developer/embed-sample-for-your-organization.md).
 
 ## <a name="tenant-setting"></a>Lejerindstillinger
 
@@ -167,7 +170,7 @@ Hvis du vil rapportere et problem, der er relateret til indhold via **Publicer p
 
 Hvis du vil rapportere et problem, skal du vælge **flagikonet** på den nederste linje i den Publicer på internettet-rapport, som vises.
 
-![](media/service-publish-to-web/publish_to_web12_ga.png)
+![PtW12](media/service-publish-to-web/publish_to_web12_ga.png)
 
 ## <a name="licensing-and-pricing"></a>Licenser og priser
 
@@ -178,5 +181,11 @@ Du skal være Microsoft Power BI-bruger for at anvende **Publicer på internette
 Når du opretter en integreringskode ved hjælp af **Publicer på internettet**, gøres rapporten synlig for brugere på internettet. Den er offentligt tilgængelig, så du kan forvente, at brugerne nemt kan dele rapporten via sociale medier på et senere tidspunkt. Når brugere får vist rapporten, enten ved at åbne den direkte offentlige URL-adresse eller se den integreret på en webside eller blog, cachelagrer Power BI rapportdefinitionen og resultaterne af de forespørgsler, der kræves for at få vist rapporten. Denne metode sikrer, at rapporten kan ses af tusindvis af samtidige brugere uden nogen indflydelse på ydeevnen.
 
 Cachelageret er langvarigt, så hvis du opdaterer rapportdefinitionen (f.eks. hvis du ændrer dens visningstilstand) eller opdaterer rapportdataene, kan det tage cirka en time, før ændringerne afspejles i den version af rapporten, der ses af brugerne. Det anbefales derfor, at du planlægger dit arbejde på forhånd og først opretter integreringskoden for **Publicer på internettet**, når du er tilfreds med indstillingerne.
+
+## <a name="next-steps"></a>Næste trin
+
+- [Webdel til rapporten SharePoint Online](service-embed-report-spo.md) 
+
+- [Integrer en rapport på en sikker portal eller et websted](service-embed-secure.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
