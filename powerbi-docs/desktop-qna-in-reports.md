@@ -25,7 +25,7 @@ For at aktivere Spørgsmål og svar med henblik på at kunne fortolke den store 
 > [!NOTE]
 > Spørgsmål og svar er kun tilgængelig, når du arbejder med en model, der indeholder **importerede** data. Direkte forbindelser til SSAS- og DirectQuery-modeller understøttes ikke.
 >
-> Spørgsmål og svar kræver følgende C runtime-opdatering, hvis du bruger en ældre version af Windows end Windows 10. Du kan prøve at installere vigtige opdateringer fra Windows Update eller installere den påkrævede komponent manuelt fra Microsoft (KB2999226). https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows
+> Spørgsmål og svar kræver følgende C runtime-opdatering, hvis du bruger en ældre version af Windows end Windows 10. Du kan prøve at installere vigtige opdateringer fra Windows Update eller installere den påkrævede komponent manuelt fra Microsoft (KB2999226). [https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows](https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows)
 >
 >
 
