@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 92af01b7020f734f286d927650e58a5fea5d8047
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: d9cd9c812aa2fdd1d336dbd63ea280516a96e4d9
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180823"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072215"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Selvbetjent dataforberedelse i Power BI (prøveversion)
 
-Efterhånden som datamængden vokser, stiger behovet for at konvertere dataene i korrekt udformede oplysninger, som der kan handles på. Vi vil gerne have data, der er klar til analyse, til udfyldning af visuelle elementer, rapporter og dashboards, så vi hurtigt kan konvertere vores datamængder til viden, som der kan handles på. Med **selvbetjening til dataforberedelse** til big data i Power BI kan du gå fra data til Power BI-indsigt med bare nogle få klik.
+Efterhånden som datamængden vokser, stiger behovet for at konvertere dataene i korrekt udformede oplysninger, som der kan handles på. Vi vil gerne have data, der er klar til analyse, til udfyldning af visualiseringer, rapporter og dashboards, så vi hurtigt kan konvertere vores datamængder til viden, som der kan handles på. Med **selvbetjening til dataforberedelse** til big data i Power BI kan du gå fra data til Power BI-indsigt med bare nogle få klik.
 
 ![Brug dataflows i Power BI](media/service-dataflows-overview/powerbi-dataflows_01.png)
 
@@ -92,12 +92,12 @@ I følgende tabel beskrives dataflowfunktionerne og deres kapaciteter ved brug a
 |Dataflow-tilknyttede enheder| |        +|
 |Standardiseret skema/indbygget understøttelse af Common Data Model|  +|  +|
 
-
+Du kan finde flere oplysninger om, hvordan du aktiverer dataflowarbejdsbelastninger i forbindelse med Premium-kapacitet, i artiklen [Konfigurer arbejdsbelastninger](service-admin-premium-manage.md#configure-workloads) til Power BI Premium.
 
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-power-bi"></a>Oversigt over selvbetjent dataforberedelse til big data i Power BI
 Som tidligere nævnt i denne artikel er der flere scenarier og eksempler, hvor **dataflows** gør det muligt at få bedre styring – og hurtigere indsigt – fra dine virksomhedsdata. Ved hjælp af en standarddatamodel (skema) defineret af Common Data Model kan dataflows importere dine værdifulde forretningsdata og hurtigt klargøre dataene til modellering og oprettelse af BI-indsigt – som tidligere tog flere måneder eller mere at oprette. 
 
-Ved at gemme forretningsdata i standardiseret format af **Common Data Model**, kan BI-teknikerne (eller udviklerne) udvikle apps, der genererer hurtige, nemme og automatiske visuals og rapporter. Dette omfatter, men er ikke begrænset til:
+Ved at gemme forretningsdata i standardiseret format af **Common Data Model**, kan BI-teknikerne (eller udviklerne) udvikle apps, der genererer hurtige, nemme og automatiske visualiseringer og rapporter. Dette omfatter, men er ikke begrænset til:
 
 
 * Tilknytning af dine data til standardobjekter i Common Data Model for at samle data og udnytte det kendte skema for at skabe indsigt klar til brug

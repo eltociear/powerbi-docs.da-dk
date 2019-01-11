@@ -11,30 +11,32 @@ ms.date: 11/16/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: cb508681950cd5bb585da1208683deb31c8b6e64
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: d9cf6255cfa57790c13ee1fc9d3201860552863b
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026816"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54072353"
 ---
 # <a name="using-auditing-within-your-organization"></a>Brug af overvågning i din organisation
 
 Det kan være vigtigt at vide, hvem der udfører en bestemt handling på et element i din Power BI-lejer, for at hjælpe din organisation med at opfylde sine krav, for eksempel efterleve lovmæssig kravoverholdelse og datastyring. Brug overvågning i Power BI, hvis du vil overvåge brugernes handlinger, f.eks. "Vis rapport" og "Vis dashboard". Du kan ikke bruge overvågning til at overvåge tilladelser.
 
-Du arbejder med overvågning i Office 365 Security and Compliance Center eller ved hjælp af PowerShell. Vi behandler begge dele i denne artikel. Du kan filtrere overvågningsdataene efter datointerval, bruger, dashboard, rapport, datasæt og aktivitetstype. Du kan også downloade aktiviteterne i en CSV-fil (fil med kommaseparerede værdier), der kan analyseres offline.
+Du arbejder med overvågning i Office 365 Security and Compliance Center eller ved hjælp af PowerShell. Overvågning er afhængig af funktionaliteten i Exchange Online, som er klargjort automatisk til at understøtte Power BI.
+
+Du kan filtrere overvågningsdataene efter datointerval, bruger, dashboard, rapport, datasæt og aktivitetstype. Du kan også downloade aktiviteterne i en CSV-fil (fil med kommaseparerede værdier), der kan analyseres offline.
 
 ## <a name="requirements"></a>Krav
 
 Du skal opfylde disse krav for at få adgang til overvågningslogger:
 
-- Du skal have en Exchange Online-licens (inkluderet i Office 365 Enterprise E3- og E5- abonnementer) for at få adgang til sektionen overvågning i Office 365 Security & Compliance Center.
+* Du skal enten være global administrator eller være tildelt rollen Audit Logs eller View-Only Audit Logs i Exchange Online for at få adgang til overvågningsloggen. Disse roller tildeles som standard til rollegrupperne Compliance Management og Organization Management på siden **Tilladelser** i Exchange Administration.
 
-- Du skal enten være global administrator eller have en Exchange-administratorrolle, der giver adgang til overvågningsloggen. Exchange-administratorroller styres via Exchange Administration. Du kan finde flere oplysninger under [Tilladelser i Exchange Online](/exchange/permissions-exo/permissions-exo/).
+    Hvis du vil give konti, der ikke er administratorer, adgang til overvågningsloggene, skal du føje brugeren til en af disse rollegrupper som medlem. Du kan også oprette en brugerdefineret rollegruppe i Exchange Administration, tildele rollen Audit Logs eller View-Only Audit Logs til denne gruppe og derefter føje den konto, der ikke er administrator, til den nye rollegruppe. Du kan finde flere oplysninger under [Administrer rollegrupper i Exchange Online](/Exchange/permissions-exo/role-groups).
 
-- Hvis du har adgang til overvågningsloggen, men du ikke er global administrator eller administrator af Power BI-tjenesten, vil du ikke have adgang til portalen Power BI Administration. I dette tilfælde skal du have en direkte forbindelse til [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog).
+    Hvis du ikke kan få adgang til Exchange Administration via Office 365 Administration, skal du gå til https://outlook.office365.com/ecp og logge på ved hjælp af dine legitimationsoplysninger.
 
-- Hvis du vil have vist overvågningslogs for Power BI i din lejer, skal du have mindst én Exchange-postkasselicens i din lejer.
+* Hvis du har adgang til overvågningsloggen, men du ikke er global administrator eller administrator af Power BI-tjenesten, vil du ikke have adgang til portalen Power BI Administration. I dette tilfælde skal du bruge et direkte link til [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog).
 
 ## <a name="accessing-your-audit-logs"></a>Adgang til dine overvågningslogge
 
@@ -51,8 +53,6 @@ Power BI-overvågningslogs er tilgængelige direkte via [Office 365 Security & C
 1. Vælg **Gå til O365 Administration**.
 
    ![Gå til O365 Administration](media/service-admin-auditing/audit-log-o365-admin-center.png)
-
-Hvis du vil give konti, der ikke er administratorkonti, adgang til overvågningslogfilen, skal du tildele tilladelser i Exchange Online-administration. Du kan for eksempel tildele en bruger til en eksisterende rollegruppe, f.eks. administration af organisation, eller du kan oprette en ny rollegruppe med rollen Overvågningslogger. Du kan finde flere oplysninger under [Tilladelser i Exchange Online](/exchange/permissions-exo/permissions-exo/).
 
 ## <a name="search-only-power-bi-activities"></a>Søg kun i Power BI-aktiviteter
 
@@ -119,9 +119,7 @@ Følg disse trin for at eksportere Power BI-overvågningslogfilen til en csv-fil
 
 ## <a name="use-powershell-to-search-audit-logs"></a>Brug PowerShell til at søge efter overvågningslogs
 
-Du kan også bruge PowerShell til at få adgang til overvågningslogfilerne baseret på dit logon. Følgende eksempel viser, hvordan du bruger kommandoen [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) til at trække Power BI-overvågningslogposter.
-
-Hvis du vil bruge kommandoen [New-PSSession](/powershell/module/microsoft.powershell.core/new-pssession/), skal din konto have en Exchange Online-licens tildelt, og du skal have adgang til overvågningslogfilen for din lejer. Du kan finde flere oplysninger om at oprette forbindelse til Exchange Online under [Opret forbindelse til Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell/).
+Du kan også bruge PowerShell til at få adgang til overvågningslogfilerne baseret på dit logon. I følgende eksempel kan du se, hvordan du opretter forbindelse til Exchange Online PowerShell og derefter bruger kommandoen [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) til at trække poster fra Power BI-overvågningsloggen. Hvis du vil køre scriptet, skal du være tildelt de nødvendige tilladelser, som beskrevet i afsnittet [Krav](#requirements).
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned
@@ -134,7 +132,7 @@ Import-PSSession $Session
 Search-UnifiedAuditLog -StartDate 9/11/2018 -EndDate 9/15/2018 -RecordType PowerBI -ResultSize 1000 | Format-Table | More
 ```
 
-Hvis du vil se et andet eksempel på brug af PowerShell med overvågningslogs, skal du se [Brug af Power BI-overvågningslog og PowerShell til at tildele Power BI Pro-licenser](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/).
+Du kan finde flere oplysninger om at oprette forbindelse til Exchange Online under [Opret forbindelse til Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell/). Hvis du vil se et andet eksempel på brug af PowerShell med overvågningslogs, skal du se [Brug af Power BI-overvågningslog og PowerShell til at tildele Power BI Pro-licenser](https://powerbi.microsoft.com/blog/using-power-bi-audit-log-and-powershell-to-assign-power-bi-pro-licenses/).
 
 ## <a name="activities-audited-by-power-bi"></a>Aktiviteter, der overvåges af Power BI
 
