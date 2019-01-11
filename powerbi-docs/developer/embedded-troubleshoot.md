@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/12/2018
-ms.openlocfilehash: 010a26076fe139401eb2dbbc363c712d67c637fb
-ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
+ms.date: 12/20/2018
+ms.openlocfilehash: 5ee6758093969a2db1d932a88f21c965380bab5c
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53329711"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008436"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Foretag fejlfinding af dit integrerede program
 
@@ -66,7 +66,7 @@ Fejlmeddelelser internt på Azure-portalen eller Power BI-programmets registreri
 
 Mindst en bruger skal være tilmeldt Power BI. Hvis du ikke kan se **Power BI-tjenesten** på API-listen, er der ikke tilmeldt nogen brugere i Power BI.
 
-## <a name="rest-api"></a>REST-API
+## <a name="rest-api"></a>REST API
 
 ### <a name="api-call-returning-401"></a>API-kald returnerer 401
 
@@ -171,7 +171,7 @@ Brugersamtykke er deaktiveret for lejeren.
 *Aktivere brugersamtykke for hele lejeren (alle brugere, alle programmer)*
 
 1. På Azure Portal skal du gå til "Azure Active Directory" = > "Brugere og grupper" = > "Brugerindstillinger"
-2. Aktivér "Brugerne må give samtykke til, at programmer får adgang til virksomhedsdata på deres vegne", og gem ændringerne
+2. Aktivér "Brugerne må give samtykke til, at apps får adgang til virksomhedsdata på deres vegne", og gem ændringerne
 
     ![Fejlrettelse af samtykketest](media/embedded-troubleshoot/consent-test-02.png)
 
@@ -185,7 +185,7 @@ En datakilde kan have et enkelt sæt legitimationsoplysninger til én overordnet
 
 ## <a name="troubleshoot-your-embedded-application-with-the-ierror-object"></a>Foretag fejlfinding af det integrerede program med IError-objektet
 
-Brug det [**IError-objekt**, der returneres af *fejl*hændelsen fra **JavaScript-SDK'en**](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Troubleshooting-and-debugging-of-embedded-parts), til at foretage fejlfinding af dit program, så du bedre kan forstå årsagen til dine fejl.
+Brug det [**IError-objekt**, der returneres af *fejl*hændelsen fra **JavaScript-SDK'en**](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Troubleshooting-and-debugging-of-embedded-parts), til at foretage fejlfinding af din app, så du bedre kan forstå årsagen til dine fejl.
 
 Når du har modtaget IError-objektet, skal du kigge i den relevante tabel over almindelige fejl, der svarer til den integreringstype, du bruger. Sammenlign **IError-egenskaberne** med dem i tabellen, og find mulige årsager til fejlen.
 
@@ -221,7 +221,7 @@ Når du har modtaget IError-objektet, skal du kigge i den relevante tabel over a
 
 ### <a name="rendering-or-consumption-of-embedded-content-fails-or-times-out"></a>Gengivelse eller forbrug af integreret indhold mislykkes, eller der opstår timeout
 
-Sørg for, at integreringstokenet ikke er udløbet. Sørg for at kontrollere udløbet for integreringstokenet og opdatere det. Du kan få flere oplysninger under [Opdatér token ved hjælp af JavaScript SDK](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example).
+Sørg for, at det integrerede token ikke er udløbet. Sørg for at kontrollere udløbet for integreringstokenet og opdatere det. Du kan få flere oplysninger under [Opdatér token ved hjælp af JavaScript SDK](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Refresh-token-using-JavaScript-SDK-example).
 
 ### <a name="report-or-dashboard-doesnt-load"></a>Rapporten eller dashboardet indlæses ikke
 
@@ -233,7 +233,7 @@ Hvis brugeren ikke kan se rapporten eller dashboardet, skal du sørge for, at ra
 
 ## <a name="embed-setup-tool"></a>Værktøjet til integrering af konfiguration
 
-Du kan gennemgå [Embedding-konfigurationsværktøjet](https://aka.ms/embedsetup) for hurtigt at downloade et eksempelprogram. Derefter kan du sammenligne dit program med eksemplet.
+Du kan gennemgå [Embedding-konfigurationsværktøjet](https://aka.ms/embedsetup) for hurtigt at downloade en eksempelapp. Derefter kan du sammenligne din app med eksemplet.
 
 ### <a name="prerequisites"></a>Forudsætninger
 
@@ -248,7 +248,7 @@ Kontrollér, at du opfylder de påkrævede forudsætninger, før du bruger Embed
 
 Nogle af de mest almindelige problemer, du kan støde på, når du tester værktøjet til integrering af konfiguration, er:
 
-#### <a name="using-the-embed-for-your-customers-sample-application"></a>Brug af eksempelprogrammet Embed for your customers
+#### <a name="using-the-embed-for-your-customers-sample-application"></a>Brug af eksempelappen Embed for your customers
 
 Hvis du arbejder med oplevelsen **Embed for your customers**, skal du gemme og udpakke filen *PowerBI-Developer-Samples.zip*. Derefter skal du åbne mappen *PowerBI-Developer-Samples-master\App Owns Data* og køre filen *PowerBIEmbedded_AppOwnsData.sln*.
 
@@ -258,7 +258,7 @@ Når du vælger **Grant permissions**, får du vist følgende fejl:
 
 Du kan løse fejlen ved at lukke pop op-vinduet, vente nogle sekunder og prøve igen. Det kan være nødvendigt at gentage dette nogle gange. Et tidsinterval er årsag til problemet, hvor programregistreringsprocessen ikke kan fuldføres, når den er tilgængelig for eksterne API'er.
 
-Følgende fejlmeddelelse vises, når eksempelprogrammet køres:
+Følgende fejlmeddelelse vises, når eksempelappen køres:
 
     Password is empty. Please fill password of Power BI username in web.config.
 
@@ -268,15 +268,15 @@ Hvis du får vist fejlen – AADSTS50079: Brugeren skal anvende multifaktorgodke
 
     Need to use an AAD account that doesn't have MFA enabled.
 
-#### <a name="using-the-embed-for-your-organization-sample-application"></a>Brug af eksempelprogrammet Embed for your organization
+#### <a name="using-the-embed-for-your-organization-sample-application"></a>Brug af eksempelappen Embed for your organization
 
 Hvis du arbejder med **Embed for your organization**, skal du gemme og udpakke filen *PowerBI-Developer-Samples.zip*. Derefter skal du åbne mappen *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* og køre filen *pbi-saas-embed-report.sln*.
 
-Når du kører eksempelprogrammet **Embed for your organization**, får du følgende fejl:
+Når du kører eksempelappen **Embed for your organization**, får du følgende fejl:
 
     AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application: <client ID>
 
-Denne fejl skyldes, at den URL-adresse til omdirigering, der er angivet for webserverprogrammet, er forskellig fra URL-adressen i eksemplet. Hvis du vil registrere eksempelprogrammet, skal du bruge `http://localhost:13526/` som URL-adresse til omdirigering.
+Denne fejl skyldes, at den URL-adresse til omdirigering, der er angivet for webserverprogrammet, er forskellig fra URL-adressen i eksemplet. Hvis du vil registrere eksempelappen, skal du bruge `http://localhost:13526/` som URL-adresse til omdirigering.
 
 Hvis du vil redigere det registrerede program, skal du lære at redigere det [AAD-registrerede program](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), så programmet kan give adgang til web-API'erne.
 
@@ -291,3 +291,7 @@ Du kan finde flere oplysninger under [Ofte stillede spørgsmål om Power BI Embe
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
 Hvis du har brug for yderligere hjælp, kan du [kontakte support](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) eller [oprette en supportanmodning via Azure Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) og angive de fejlmeddelelser, du får vist.
+
+## <a name="performance"></a>Ydeevne
+
+[Ydeevnen i Power BI Embedded](embedded-performance-best-practices.md)

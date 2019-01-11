@@ -1,24 +1,24 @@
 ---
-title: Aggregeringer (sum, gennemsnit, maksimum, osv.) i visualiseringer
-description: Tilpas aggregeringen i et diagram (sum, gennemsnit, maksimum, osv.) i Power BI
+title: Arbejde med aggregeringer (sum, gennemsnit osv.) i Power BI-tjenesten
+description: Få mere at vide om, hvordan du tilpasser aggregeringen i et diagram (sum, gennemsnit, maksimum osv.) i Power BI-tjenesten.
 author: mgblythe
-manager: kvivek
+manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/29/2018
+ms.date: 12/21/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: dfc3006c37d6055bac435fceb05febd596f0cd1a
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: 7a88cc7f210c6119e57a5dcf30920a95e180b85f
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026471"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983709"
 ---
-# <a name="aggregates-in-power-bi-visualizations"></a>Aggregeringer i Power BI-visualiseringer
+# <a name="work-with-aggregates-sum-average-etc-in-the-power-bi-service"></a>Arbejde med aggregeringer (sum, gennemsnit osv.) i Power BI-tjenesten
 ## <a name="what-is-an-aggregate"></a>Hvad er en aggregering?
 Du kan sommetider få brug for matematisk at kombinere værdier i dine data. Den matematiske handling kan f.eks. være sum, gennemsnit, maksimum, antal, osv. Når du kombinerer værdier i dine data, kaldes det *aggregering*. Resultatet af den matematiske handling er en *aggregering*. 
 
@@ -70,16 +70,16 @@ Lad os antage, at du har et diagram, der sammenlægger solgte enheder for forske
 
 Nedenfor følger nogen af indstillingerne, der kan være tilgængelige ved aggregering af et felt:
 
-* **Opsummer ikke**. Når du har valgt denne indstilling, bliver hvert felt behandlet særskilt og opsummeres ikke. Denne indstilling bruges ofte, hvis du har en numerisk id-kolonne, der ikke skal summeres.
-* **Sum**. Dette lægger alle værdier i feltet sammen.
+* **Opsummer ikke**. Når du har valgt denne indstilling, bliver hvert felt behandlet særskilt og opsummeres ikke. Brug denne indstilling, hvis du har en numerisk id-kolonne, der ikke skal summeres.
+* **Sum**. Lægger alle værdier i feltet sammen.
 * **Gennemsnit**. Beregner et matematisk gennemsnit af værdierne.
 * **Minimum**. Viser den mindste værdi.
 * **Maksimum**. Viser den største værdi.
-* **Antal (ikke tomme)**. Tæller antallet af værdier i feltet, der ikke er tomme.
-* **Antal (distinkt).** Denne indstilling tæller antallet af forskellige værdier i feltet.
+* **Antal (ikke tomme)**. Tæller antallet af værdier i det pågældende felt, der ikke er tomme.
+* **Antal (distinkt).** Tæller antallet af forskellige værdier i det pågældende felt.
 * **Standardafvigelse.**
 * **Varians**.
-* **Median**.  Viser median (middel)-værdien. Dette er den værdi, der har det samme antal elementer, over og under.  Hvis der er to medianer, beregner Power BI gennemsnittet af dem.
+* **Median**.  Viser median (middel)-værdien. Denne værdi har det samme antal elementer over og under.  Hvis der er to medianer, beregner Power BI gennemsnittet af dem.
 
 F.eks. disse data:
 
@@ -107,9 +107,9 @@ Giver de følgende resultater:
 * **Median:** 125
 
 ## <a name="create-an-aggregate-using-a-category-text-field"></a>Opret en aggregering ved hjælp af et kategorifelt (tekstfelt)
-Du kan også aggregere et felt, der ikke er et numerisk felt. Hvis du f.eks. har et felt med produktnavn, kan du tilføje det som en værdi og derefter indstille det til **Antal** **Distinkt antal**, **Første** eller **Sidste**. 
+Du kan også aggregere et felt, der ikke er et numerisk felt. Hvis du f.eks. har et felt med produktnavn, kan du tilføje det som en værdi og derefter indstille det til **Antal** **Adskilt antal**, **Første** eller **Sidste**. 
 
-1. I dette eksempel har vi trukket feltet **Produkt** til værdibrønden. Værdibrønden bruges typisk til numeriske felter. Power BI genkender, at dette er et tekstfelt, angiver aggregeringen til **Opsummer ikke** og giver os en tabel med én kolonne.
+1. I dette eksempel har vi trukket feltet **Produkt** til værdibrønden. Værdibrønden bruges typisk til numeriske felter. Power BI genkender, at dette felt er et tekstfelt, angiver aggregeringen til **Opsummer ikke** og giver os en tabel med én kolonne.
    
    ![Produktfelt i værdibrønden](media/service-aggregates/power-bi-aggregate-value.png)
 2. Hvis vi ændrer aggregeringen fra standarden **Opsummer ikke** til **Antal (adskilt)**, tæller Power BI antallet af forskellige produkter. I dette tilfælde er der 4.
@@ -141,11 +141,11 @@ Svar 4:  En tredje mulighed er, at du bruger feltet for en akse. Eksempelvis på
 >[!NOTE]
 >Undtagelsen for denne regel er punktdiagrammer, som *kræver* aggregerede værdier for X- og Y-akserne.
 
-Spørgsmål:  Hvorfor kan jeg kan ikke sammenlægge tekstfelter til SSAS-datakilder?
+Spørgsmål:  Hvorfor kan jeg kan ikke aggregere tekstfelter til SSAS-datakilder (SQL Server Analysis Services)?
 
-Svar:  Dynamiske forbindelser til SSAS MD tillader ikke sammenlægninger på klientsiden. Dette omfatter første, sidste, gns, min, maks og sum.
+Svar:  Dynamiske forbindelser til flerdimensionelle SSAS-modeller tillader ikke en hvilken som helst aggregering på klientsiden, herunder først, sidst, gennemsnit, min., maks. og sum.
 
-Spørgsmål:  Jeg har et punktdiagram, og jeg vil *ikke* have, at mit felt foretager sammenlægninger.  Hvordan gør jeg det?
+Spørgsmål:  Jeg har et punktdiagram, og jeg vil *ikke* have, at mit felt foretager sammenlægninger.  Hvordan?
 
 Svar:  Føj feltet til din bucket af typen **Oplysninger** og ikke til dine buckets af typen X- eller Y-akser.
 

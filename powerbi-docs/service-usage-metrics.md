@@ -1,6 +1,6 @@
 ---
-title: Forbrugsdata for dashboards og rapporter
-description: Sådan får du vist, gemmer og bruger Forbrugsdata til Power BI-dashboards og -rapporter. Mål og forøg din indvirkning med forbrugsdata for indholdsoprettere.
+title: Overvåg forbrugsdata for dashboards og rapporter
+description: Sådan får du vist, gemmer og bruger forbrugsdata for Power BI-dashboards og -rapporter.
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
@@ -9,21 +9,21 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 12/19/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: f7aad6b0e3dd38c795d886d1aba26a82a8529c01
-ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
+ms.openlocfilehash: 435f7ec433e45202ef2b5ddbd9a9ffb996f84129
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53649365"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983778"
 ---
-# <a name="usage-metrics-for-dashboards-and-reports"></a>Forbrugsdata for dashboards og rapporter
+# <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Overvåg forbrugsdata for Power BI-dashboards og -rapporter
 
 Hvis du opretter dashboards og rapporter, kan forbrugsdata hjælpe dig med at forestå deres indvirkning. Når du kører enten forbrugsdata for dashboards eller rapporter, opdager du, hvordan disse dashboards og rapporter anvendes i hele organisationen: Hvad bruges, af hvem og til hvilke formål.  
 
 > [!NOTE]
-> Forbrugsdata vil spore brugen af rapporter, som er integreret i SharePoint Online. Forbrugsdata sporer dog ikke integrationen af dashboards og rapporter via processerne "brugerens egne legitimationsoplysninger" eller "appens egne legitimationsoplysninger". Forbrugsdata sporer heller ikke brugen af de rapporter, der er integreret via [publicer på internettet](service-publish-to-web.md).
+> Forbrugsdata sporer brugen af rapporter, som er integreret i SharePoint Online. Forbrugsdata sporer dog ikke integrationen af dashboards og rapporter via processerne "brugerens egne legitimationsoplysninger" eller "appens egne legitimationsoplysninger". Forbrugsdata sporer heller ikke brugen af rapporter, der er integreret via [publicer på internettet](service-publish-to-web.md).
 
 Disse rapporter med forbrugsdata er skrivebeskyttet. Men du kan tilpasse en rapport med forbrugsdata ved hjælp af "Gem som". Det opretter et helt nyt datasæt og konverterer den skrivebeskyttede rapport til en Power BI-rapport med alle funktioner, som du kan redigere. Den tilpassede rapport indeholder ikke blot data for det valgte dashboard eller den valgte rapport, men ved at fjerne standardfilteret har du nu adgang til forbrugsdata for alle dashboards eller alle rapporter i det valgte arbejdsområde. Og du kan også se navnene på dine slutbrugere.
 
@@ -33,7 +33,7 @@ Disse rapporter med forbrugsdata er skrivebeskyttet. Men du kan tilpasse en rapp
 
 At vide, hvordan dit indhold bruges, hjælper dig med at demonstrere din indvirkning og prioritere din indsats. Dine forbrugsdata kan vise, at en af dine rapporter bruges dagligt af en meget stor del af organisationen, og de kan vise, at et dashboard, du oprettede, slet ikke bruges. Denne type feedback er uvurderlig til styring af din arbejdsindsats.
 
-Du kan kun køre rapporter med forbrugsdata i Power BI-tjenesten.  Men hvis du gemmer en rapport med forbrugsdata eller fastgør den til et dashboard, vil du kunne åbne og interagere med denne rapport på mobile enheder.
+Du kan kun køre rapporter med forbrugsdata i Power BI-tjenesten.  Men hvis du gemmer en rapport med forbrugsdata eller fastgør den til et dashboard, kan du åbne og interagere med denne rapport på mobilenheder.
 
 ### <a name="prerequisites"></a>Forudsætninger
 
@@ -62,7 +62,7 @@ Hvis du vil grave ned i rapportdataene eller oprette dine egne rapporter i forho
     ![dataene er klar](media/service-usage-metrics/power-bi-usage-metrics-ready.png)
 4. Vælg **Få vist forbrugsdata** for at åbne resultaterne.
 
-    Forbrugsdata vil være en stærk partner, når du arbejder på at udrulle og vedligeholde Power BI-dashboards og -rapporter. Har du overvejet, hvilke sider af din rapport der er mest nyttige, og hvilke du bør udfase? Opret udsnit efter **Rapportside** for at finde ud af det. Har du overvejet, om du skal oprette et mobilt layout til dashboardet? Opret udsnit efter **Platforme** for at finde ud af, hvor mange brugere der tilgår dit indhold via mobilapps vs. via en webbrowser.
+    Forbrugsdata er en stærk partner, når du arbejder på at udrulle og vedligeholde Power BI-dashboards og -rapporter. Har du overvejet, hvilke sider af din rapport der er mest nyttige, og hvilke du bør udfase? Opret udsnit efter **Rapportside** for at finde ud af det. Har du overvejet, om du skal oprette et mobilt layout til dashboardet? Opret udsnit efter **Platforme** for at finde ud af, hvor mange brugere der tilgår dit indhold via mobilapps vs. via en webbrowser.
 
 5. Du kan også holde markøren over en visualisering og vælge ikonet med tegnestiften for at føje visualiseringen til et dashboard. Eller du kan vælge **Fastgør en dynamisk side** øverst på menulinjen for at føje hele siden til et dashboard. Fra dashboardet kan du lettere overvåge forbrugsdata eller dele dem med andre.
 
@@ -169,22 +169,31 @@ Det er vigtigt at forstå, at der kan opstå forskelle, når du sammenligner for
 * Visse typer af visninger er ikke inkluderet i forbrugsdata, som beskrevet tidligere i denne artikel.
 * Forbrugsdata kan nogle gange tælle et højere antal aktiviteter i situationer, hvor klienten opdateres, uden at der er behov for at sende en anmodning tilbage til Power BI-tjenesten.
 
+## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 
 Ud over eventuelle forskelle mellem forbrugsdata og overvågningslogge kan følgende spørgsmål og svar om forbrugsdata være nyttige for brugere og administratorer:
 
-Spørgsmål:    Jeg kan ikke køre forbrugsdata på et dashboard eller i rapport Svar:    Du kan kun se forbrugsdata for indhold, som du ejer eller har tilladelser til at redigere.
+**Spørgsmål:**    Jeg kan ikke køre forbrugsdata på et dashboard eller en rapport.
 
-Spørgsmål:    Kan forbrugsdata hente visninger fra integrerede dashboards og rapporter?
-Svar:    Forbrugsdata understøtter i øjeblikket ikke hentning af forbrug for integrerede dashboards og rapporter samt flowet [Publicer på internettet](service-publish-to-web.md).          I de tilfælde anbefales det at bruge eksisterende webanalyseplatforme til at spore brugen for hostingappen eller -portalen.
+**Svar:**    Du kan kun se forbrugsdata for indhold, som du ejer eller har tilladelser til at redigere.
 
-Spørgsmål:    Jeg kan slet ikke køre forbrugsdata på noget indhold.
-Svar 1:    Administratorer kan deaktivere denne funktion for deres organisation.  Kontakt administratoren for at se, om det er tilfældet.
-Svar 2:    Forbrugsdata er en Power BI Pro-funktion.
+**Spørgsmål:**    Kan forbrugsdata hente visninger fra integrerede dashboards og rapporter?
 
-Spørgsmål:    Dataene ser ikke ud til at være opdateret. For eksempel vises distributionsmetoder ikke, rapportsider mangler osv. Svar:    Det kan tage op til 24 timer, før dataene er opdateret.
+**Svar:**    Forbrugsdata understøtter i øjeblikket ikke hentning af forbrug for integrerede dashboards og rapporter samt flowet [Publicer på internettet](service-publish-to-web.md).          I de tilfælde anbefales det at bruge eksisterende webanalyseplatforme til at spore brugen for hostingappen eller -portalen.
 
-Spørgsmål:    Der er fire rapporter i arbejdsområdet, men rapporten med forbrugsdata viser kun 3.
-Svar:    Rapporten med forbrugsdata indeholder kun rapporter (eller dashboards), der har været åbnet i løbet af de sidste 90 dage.  Hvis en rapport (eller et dashboard) ikke vises, har den sandsynligvis ikke været brugt i mere end 90 dage.
+**Spørgsmål:**    Jeg kan slet ikke køre forbrugsdata på noget indhold.
+
+**Svar 1:**    Administratorer kan deaktivere denne funktion for deres organisation.  Kontakt administratoren for at se, om det er tilfældet.
+
+**Svar 2:**    Forbrugsdata er en Power BI Pro-funktion.
+
+**Spørgsmål:**    Dataene ser ikke ud til at være opdateret. For eksempel vises distributionsmetoder ikke, rapportsider mangler osv.
+
+**Svar:**    Det kan tage op til 24 timer, før dataene er opdateret.
+
+**Spørgsmål:**    Der er fire rapporter i arbejdsområdet, men rapporten med forbrugsdata viser kun tre.
+
+**Svar:**    Rapporten med forbrugsdata indeholder kun rapporter (eller dashboards), der har været åbnet i løbet af de sidste 90 dage.  Hvis en rapport (eller et dashboard) ikke vises, har den sandsynligvis ikke været brugt i mere end 90 dage.
 
 ## <a name="next-steps"></a>Næste trin
 

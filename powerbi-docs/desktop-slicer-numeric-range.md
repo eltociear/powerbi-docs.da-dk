@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 01/02/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f997ee7574c5dd9dc6b4d28767d599a97bf297ed
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: a2402872744b3029e37bf49eaaeae27a3ad95734
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669836"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983617"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Brug udsnitsværktøjet til numerisk område i Power BI Desktop
 Med **udsnitsværktøjet til numerisk område** kan du anvende alle former for filtre på alle numeriske kolonner i din datamodel. Du kan vælge at filtrere **mellem** tal, **mindre end eller lig med** et tal eller **større end eller lig med** et tal. Det lyder måske meget enkelt, men det er en effektiv måde at filtrere dine data på.
@@ -54,6 +54,14 @@ Og endelig, hvis vi vælger **Større end eller lig med** forsvinder højre hån
 ## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>Fastgør til hele tal ved hjælp af udsnitsværktøj til numerisk område
 
 Et udsnitsværktøj til et numerisk område fastgøres til heltal, hvis datatypen for det underliggende felt er **Heltal**. Dermed kan udsnitsværktøjet nemt afstemme to hele tal. Felter af typen **Decimaltal** kan indtastes eller vælges som brøkdele af et tal. Den formatering, der anvendes i tekstfeltet, matcher den formatering, der er anvendt i feltet, selvom du kan indtaste eller vælge mere præcise tal.
+
+## <a name="display-formatting-with-the-date-range-slicer"></a>Vis formatering med udsnitsværktøjet til datoområder
+
+Når du bruger et udsnitsværktøj til at få vist eller angive en række datoer, vises formatet af datoen altid ved hjælp af det **korte datoformat**, der er baseret på landestandarden for brugerens browser eller operativsystem. Dette er visningsformatet, uanset hvilke indstillinger der er for datatyperne for den underliggende data eller model. 
+
+Du kan f.eks. have et langt datoformat for den underliggende datatype (f.eks *dddd, MMMM d, åååå*, som formaterer en dato i andre visuelle elementer eller omstændigheder som *onsdag den 14. marts 2001*), men i udsnitsværktøjet til datoområder vises denne dato som *03/14/2001*.
+
+Visning af det **korte datoformat** i udsnitsværktøjet sikrer, at længden af strengen forbliver konsistent og kompakt i udsnitsværktøjet. 
 
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser

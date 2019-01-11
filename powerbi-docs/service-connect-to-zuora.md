@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b183738c062af1d834a742639369ca90f2cb1bad
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: 605cd2f135ff6d8626586abbd503bcb44687931d
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003219"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008597"
 ---
 # <a name="connect-to-zuora-with-power-bi"></a>Opret forbindelse til Zuora med Power BI
 Med Zuora til Power BI kan du visualisere vigtige omsætnings-, fakturerings- og abonnementsdata. Brug standarddashboardet og rapporter til at analysere brugstendenser, spore faktureringer og betalinger og overvåge tilbagevendende indtægt eller til at tilpasse dem, så de imødekommer dine særlige behov i forbindelse med dashboard og rapportering.
@@ -67,24 +67,24 @@ Det indeholder også disse beregnede målepunkter:
 
 | Måling | Beskrivelse | Pseudoberegning |
 | --- | --- | --- |
-| Konto: betalinger |Samlede betalingsbeløb i en bestemt periode, baseret på betalingens ikrafttrædelsesdato. |SUM (Payment.Amount) <br>WHERE<br>Payment.EffectiveDate =< TimePeriod.EndDate<br>AND    Payment.EffectiveDate >= TimePeriod.StartDate |
-| Konto: refunderinger |Samlede refusionsbeløb i en bestemt periode, baseret på datoen for refusionen. Beløbet rapporteres som et negativt tal. |-1*SUM(Refund.Amount)<br>WHERE<br>Refund.RefundDate = < TimePeriod.EndDate<br>AND    Refund.RefundDate >= TimePeriod.StartDate |
-| Konto: nettobetalinger |Kontobetalinger plus kontorefusioner i en bestemt periode. |Account.Payments + Account.Refunds |
-| Konto: aktive konti |Antallet af konti, der var aktive i en bestemt periode. Abonnementer skal være begyndt før (eller på) tidsperiodens startdato. |COUNT (Account.AccountNumber)<br>WHERE<br>    Subscription.Status != "Expired"<br>AND    Subscription.Status != "Draft"<br>AND    Subscription.SubscriptionStartDate <= TimePeriod.StartDate<br>AND    (Subscription.SubscriptionEndDate > TimePeriod.StartDate<br>OR<br>Subscription.SubscriptionEndDate = null) –evergreen subscription |
-| Konto: gennemsnit af tilbagevendende indtægter |Brutto-MRR pr. aktive konto i en bestemt tidsperiode. |Brutto-MRR/Account.ActiveAccounts |
-| Konto: annullerede abonnementer |Antallet af konti, der annullerede et abonnement i en bestemt periode. |COUNT (Account.AccountNumber)<br>WHERE<br>Subscription.Status = "Cancelled"<br>AND    Subscription.SubscriptionStartDate <= TimePeriod.StartDate<br>AND    Subscription.CancelledDate >= TimePeriod.StartDate |
-| Konto: betalingsfejl |Samlet værdi af betalingsfejl. |SUM (Payment.Amount)<br>WHERE<br>Payment.Status = "Error" |
-| Indtægtselement i tidsplanen: resultatafregnet omsætning |Samlet resultatafregnet omsætning i en regnskabsperiode. |SUM (RevenueScheduleItem.Amount)<br>WHERE<br>AccountingPeriod.StartDate = TimePeriod.StartDate |
-| Abonnement: nye abonnementer |Antallet af nye abonnementer i en bestemt periode. |COUNT (Subscription.ID)<br>WHERE<br>Subscription.Version = "1"<br>AND    Subscription.CreatedDate <= TimePeriod.EndDate<br>AND    Subscription.CreatedDate >= TimePeriod.StartDate |
-| Faktura: fakturaelementer |Samlede gebyrbeløb for fakturaelementer i en bestemt periode. |SUM (InvoiceItem.ChargeAmount)<br>WHERE<br>    Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate <= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate >= TimePeriod.StartDate |
-| Faktura: beskatningsposter |Det samlede beløb for beskatningsposer i en bestemt periode. |SUM (TaxationItem.TaxAmount)<br>WHERE<br>Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate <= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate >= TimePeriod.StartDate |
-| Faktura: reguleringer af fakturaelement |Det samlede reguleringsbeløb for fakturaelementer i en bestemt periode. |SUM (InvoiceItemAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    InvoiceItemAdjustment.AdjustmentDate <= TimePeriod.EndDate<br>AND    InvoiceItemAdjustment.AdjustmentDate >= TimePeriod.StartDate |
-| Faktura: reguleringer af faktura |Det samlede reguleringsbeløb i en bestemt periode. |SUM (InvoiceAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    InvoiceAdjustment.AdjustmentDate <= TimePeriod.EndDate<br>AND    InvoiceAdjustment.AdjustmentDate >= TimePeriod.StartDate |
-| Faktura: nettofaktureringer |Summen af fakturaelementer, beskatningsposter, regulering af fakturaelement og reguleringer af faktura i en bestemt periode. |Invoice.InvoiceItems + Invoice.TaxationItems + Invoice.InvoiceItemAdjustments + Invoice.InvoiceAdjustments |
-| Faktura: saldo ved fakturas forfald |Summen af bogførte fakturaer. |SUM (Invoice.Balance) <br>WHERE<br>    Invoice.Status = "Posted" |
-| Faktura: bruttofakturering |Summen af gebyrbeløb for fakturaelementer for bogførte fakturaer i en bestemt periode. |SUM (InvoiceItem.ChargeAmount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate <= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate >= TimePeriod.StartDate |
-| Faktura: de samlede reguleringer |Summen af behandlede reguleringer af fakturaer og reguleringer af fakturaelementer, der er knyttet til sendte fakturaer. |SUM (InvoiceAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    InvoiceAdjustment.Status = "Processed"<br>+<br>SUM (InvoiceItemAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    invoiceItemAdjustment.Status = "Processed" |
-| Prisoversigt for gebyr: brutto-MRR |Summen af månedlig tilbagevendende indtægt fra abonnementer i en bestemt periode. |SUM (RatePlanCharge.MRR) <br>WHERE<br>    Subscription.Status != "Expired"<br>AND    Subscription.Status != "Draft"<br>AND    RatePlanCharge.EffectiveStartDate <= TimePeriod.StartDate<br>AND        RatePlanCharge.EffectiveEndDate > TimePeriod.StartDate<br>    OR    RatePlanCharge.EffectiveEndDate = null --evergreen subscription |
+| Konto: Betalinger |Samlede betalingsbeløb i en bestemt periode, baseret på betalingens ikrafttrædelsesdato. |SUM (Payment.Amount) <br>WHERE<br>Payment.EffectiveDate =< TimePeriod.EndDate<br>AND    Payment.EffectiveDate >= TimePeriod.StartDate |
+| Konto: Refunderinger |Samlede refusionsbeløb i en bestemt periode, baseret på datoen for refusionen. Beløbet rapporteres som et negativt tal. |-1*SUM(Refund.Amount)<br>WHERE<br>Refund.RefundDate = < TimePeriod.EndDate<br>AND    Refund.RefundDate >= TimePeriod.StartDate |
+| Konto: Nettobetalinger |Kontobetalinger plus kontorefusioner i en bestemt periode. |Account.Payments + Account.Refunds |
+| Konto: Aktive konti |Antallet af konti, der var aktive i en bestemt periode. Abonnementer skal være begyndt før (eller på) tidsperiodens startdato. |COUNT (Account.AccountNumber)<br>WHERE<br>    Subscription.Status != "Expired"<br>AND    Subscription.Status != "Draft"<br>AND    Subscription.SubscriptionStartDate <= TimePeriod.StartDate<br>AND    (Subscription.SubscriptionEndDate > TimePeriod.StartDate<br>OR<br>Subscription.SubscriptionEndDate = null) –evergreen subscription |
+| Konto: Gennemsnit af tilbagevendende indtægter |Brutto-MRR pr. aktive konto i en bestemt tidsperiode. |Brutto-MRR/Account.ActiveAccounts |
+| Konto: Annullerede abonnementer |Antallet af konti, der annullerede et abonnement i en bestemt periode. |COUNT (Account.AccountNumber)<br>WHERE<br>Subscription.Status = "Cancelled"<br>AND    Subscription.SubscriptionStartDate <= TimePeriod.StartDate<br>AND    Subscription.CancelledDate >= TimePeriod.StartDate |
+| Konto: Betalingsfejl |Samlet værdi af betalingsfejl. |SUM (Payment.Amount)<br>WHERE<br>Payment.Status = "Error" |
+| Indtægtselement i tidsplanen: Resultatafregnet omsætning |Samlet resultatafregnet omsætning i en regnskabsperiode. |SUM (RevenueScheduleItem.Amount)<br>WHERE<br>AccountingPeriod.StartDate = TimePeriod.StartDate |
+| Abonnement: Nye abonnementer |Antallet af nye abonnementer i en bestemt periode. |COUNT (Subscription.ID)<br>WHERE<br>Subscription.Version = "1"<br>AND    Subscription.CreatedDate <= TimePeriod.EndDate<br>AND    Subscription.CreatedDate >= TimePeriod.StartDate |
+| Faktura: Fakturaelementer |Samlede gebyrbeløb for fakturaelementer i en bestemt periode. |SUM (InvoiceItem.ChargeAmount)<br>WHERE<br>    Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate <= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate >= TimePeriod.StartDate |
+| Faktura: Momsvarer |Det samlede beløb for beskatningsposer i en bestemt periode. |SUM (TaxationItem.TaxAmount)<br>WHERE<br>Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate <= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate >= TimePeriod.StartDate |
+| Faktura: Reguleringer af fakturaelementer |Det samlede reguleringsbeløb for fakturaelementer i en bestemt periode. |SUM (InvoiceItemAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    InvoiceItemAdjustment.AdjustmentDate <= TimePeriod.EndDate<br>AND    InvoiceItemAdjustment.AdjustmentDate >= TimePeriod.StartDate |
+| Faktura: Fakturareguleringer |Det samlede reguleringsbeløb i en bestemt periode. |SUM (InvoiceAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    InvoiceAdjustment.AdjustmentDate <= TimePeriod.EndDate<br>AND    InvoiceAdjustment.AdjustmentDate >= TimePeriod.StartDate |
+| Faktura: Nettofaktureringer |Summen af fakturaelementer, beskatningsposter, regulering af fakturaelement og reguleringer af faktura i en bestemt periode. |Invoice.InvoiceItems + Invoice.TaxationItems + Invoice.InvoiceItemAdjustments + Invoice.InvoiceAdjustments |
+| Faktura: Saldo ved fakturas forfald |Summen af bogførte fakturaer. |SUM (Invoice.Balance) <br>WHERE<br>    Invoice.Status = "Posted" |
+| Faktura: Bruttofakturering |Summen af gebyrbeløb for fakturaelementer for bogførte fakturaer i en bestemt periode. |SUM (InvoiceItem.ChargeAmount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    Invoice.InvoiceDate <= TimePeriod.EndDate<br>AND    Invoice.InvoiceDate >= TimePeriod.StartDate |
+| Faktura: De samlede reguleringer |Summen af behandlede reguleringer af fakturaer og reguleringer af fakturaelementer, der er knyttet til sendte fakturaer. |SUM (InvoiceAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    InvoiceAdjustment.Status = "Processed"<br>+<br>SUM (InvoiceItemAdjustment.Amount) <br>WHERE<br>    Invoice.Status = "Posted"<br>AND    invoiceItemAdjustment.Status = "Processed" |
+| Prisoversigt for gebyr: Brutto-MRR |Summen af månedlig tilbagevendende indtægt fra abonnementer i en bestemt periode. |SUM (RatePlanCharge.MRR) <br>WHERE<br>    Subscription.Status != "Expired"<br>AND    Subscription.Status != "Draft"<br>AND    RatePlanCharge.EffectiveStartDate <= TimePeriod.StartDate<br>AND        RatePlanCharge.EffectiveEndDate > TimePeriod.StartDate<br>    OR    RatePlanCharge.EffectiveEndDate = null --evergreen subscription |
 
 ## <a name="system-requirements"></a>Systemkrav
 Adgang til Zuora-API'en er påkrævet.

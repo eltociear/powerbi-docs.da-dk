@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 98250e30d1ca944aa536e0d8a05e6ee6c227fc61
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 87e2ff9bf8e4eb87b4b915492bf8cfa4a97a9150
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46546740"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008850"
 ---
 # <a name="connect-to-xero-with-power-bi"></a>Opret forbindelse til Xero med Power BI
 Xero er en brugervenlig online regnskabssoftware, der er udviklet specielt til små virksomheder. Opret overbevisende visualiseringer baseret på din bogføring i Xero med denne Power BI-indholdspakke. Standarddashboardet indeholder mange metrikværdier for små virksomheder, f.eks. likviditet, indtægter i forhold til udgifter, avancetendens, debitordage og afkastningsgrad.
@@ -85,7 +85,7 @@ Følgende roller er påkrævet for at få adgang til Xero-indholdspakken: "Stand
 
 <a name="FindingParams"></a>
 
-## <a name="finding-parameters"></a>Sådan finder du parametre
+## <a name="finding-parameters"></a>Søgning efter parametre
 Angiv et navn på din organisation, der skal spores i Power BI. Det giver dig mulighed at oprette forbindelse til flere forskellige organisationer. Bemærk, at du ikke kan oprette forbindelse til den samme organisation flere gange, da det påvirker den planlagte opdatering.   
 
 ## <a name="troubleshooting"></a>Fejlfinding

@@ -1,6 +1,6 @@
 ---
-title: Filtrer og del Power BI-rapporter med kolleger
-description: Få mere at vide om, hvordan du deler Power BI-rapporter og filtrerede rapporter med kolleger i din organisation.
+title: Del en filtreret Power BI-rapport med dine kolleger
+description: Få mere at vide om, hvordan du filtrerer Power BI-rapporter og deler dem med kolleger i din organisation.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
@@ -8,25 +8,26 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 01/18/2018
+ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 38a735a6cc258f3285787202b832ade9c6525994
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: d5e05775d310af37b2c96c6e9e255de25fe5effe
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678966"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983433"
 ---
 # <a name="share-a-filtered-power-bi-report-with-your-coworkers"></a>Del en filtreret Power BI-rapport med dine kolleger
 *Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Med Power BI får du [adskillige andre måder at samarbejde om og distribuere dine rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
 
-Til deling skal du og dine modtagere bruge en [Power BI Pro-licens](service-features-license-type.md), eller indholdet skal være i en [Premium-kapacitet](service-premium.md). Forslag? Power BI-teamet tager meget gerne mod din feedback, så gå til [webstedet for Power BI-community'et](https://community.powerbi.com/).
+Til deling skal du og dine modtagere bruge en [Power BI Pro-licens](service-features-license-type.md), eller indholdet skal være i en [Premium-kapacitet](service-premium.md). 
 
-Du kan dele en rapport med kolleger inden for det samme maildomæne som dig fra de fleste steder i Power BI-tjenesten: Favoritter, Seneste, Delt med mig (hvis ejeren tillader det), Mit arbejdsområde eller andre arbejdsområder. Når du deler en rapport, kan de personer, du deler den med, få den vist og interagere med den, men ikke redigere den. De kan se de samme data, som du kan se i rapporterne, medmindre der er anvendt [sikkerhed på rækkeniveau (RLS)](service-admin-rls.md). 
+Du kan dele en rapport med kolleger inden for det samme maildomæne som dig fra de fleste steder i Power BI-tjenesten: Favoritter, Seneste, Delt med mig (hvis ejeren tillader det), Mit arbejdsområde eller andre arbejdsområder. Når du deler en rapport, kan de kolleger, du deler den med, få den vist og interagere med den, men ikke redigere den. De kan se de samme data, som du kan se i rapporterne, medmindre der er anvendt [sikkerhed på rækkeniveau (RLS)](service-admin-rls.md). 
+
+Hvad nu hvis du vil dele en filtreret version af en rapport? Måske en rapport, der kun viser data for en bestemt by eller sælger eller et bestemt år. Opret en brugerdefineret URL-adresse. Rapporten filtreres, når modtagerne åbner den. De kan fjerne filteret ved at ændre URL-adressen.
 
 ## <a name="filter-and-share-a-report"></a>Filtrer og del en rapport
-Hvad nu hvis du vil dele en filtreret version af en rapport? Måske en rapport, der kun viser data for en bestemt by eller sælger eller et bestemt år. Du kan gøre dette ved at oprette en brugerdefineret URL-adresse.
 
 1. Åbn rapporten i [Redigeringsvisning](consumer/end-user-reading-view.md), anvend filteret, og gem rapporten.
    
@@ -37,7 +38,7 @@ Hvad nu hvis du vil dele en filtreret version af en rapport? Måske en rapport, 
    
    ?filter=*tabelnavn*/*feltnavn* eq *værdi*
    
-    Feltet skal være af typen **streng**, og hverken *tabelnavn* eller *feltnavn* må indeholde mellemrum.
+    Feltet skal være af typen **streng**. Værdierne *tablename* eller *fieldname* må ikke indeholde mellemrum.
    
    I vores eksempel er navnet på tabellen **Store** (Butik), navnet på feltet er **Territory** (Område), og den værdi, vi vil filtrere på, er **NC**:
    

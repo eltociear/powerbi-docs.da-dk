@@ -7,25 +7,25 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 12/21/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f12974d4e53217fc6c29ad172153ec9c51ecc44e
-ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
+ms.openlocfilehash: 55f592101954ae5c0724fb5b48fb2571a1bdfc51
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53451415"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983686"
 ---
 # <a name="create-workspaces-with-your-colleagues-in-power-bi"></a>Opret arbejdsområder med dine kollegaer i Power BI
 
-I Power BI kan du oprette *arbejdsområder*, hvor du kan samarbejde med kollegaer om at oprette og tilpasse samlinger af dashboards og rapporter. Derefter kan du bundte dem sammen i *apps*, som du kan distribuere til hele organisationen eller til bestemte personer eller grupper. 
+I Power BI kan du oprette *arbejdsområder*, hvor du kan samarbejde med kollegaer om at oprette og tilpasse samlinger af dashboards og rapporter. Derefter kan du gruppere samlingerne i *apps*, som du kan distribuere til hele organisationen eller til bestemte personer eller grupper. 
 
 ![Power BI-apps](media/service-create-workspaces/power-bi-apps-left-nav.png)
 
 Når du opretter et arbejdsområde, opretter du en underliggende tilknyttet Office 365-gruppe. Al administration af arbejdsområder foregår i Office 365. Du kan føje kollegaer til disse arbejdsområder som medlemmer eller administratorer. I arbejdsområdet kan alle samarbejde i dashboards, rapporter og andre artikler, som du vil publicere til en større målgruppe. Alle de brugere, du føjer til et apparbejdsområde, skal have en Power BI Pro-licens. 
 
-**Vidste du det?** Power BI udgiver en ny prøveversion af arbejdsområdeoplevelsen. Læs [Opret nye arbejdsområder (prøveversion)](service-create-the-new-workspaces.md) for at se, hvordan arbejdsområder ændres i fremtiden. 
+**Vidste du det?** Power BI udgiver en ny prøveversion af arbejdsområdeoplevelsen. Læs [Organiser arbejde i nye arbejdsområder (prøveversion)](service-new-workspaces.md) for at få oplysninger om de nye arbejdsområder. 
 
 ## <a name="video-apps-and-app-workspaces"></a>Video: Apps og apparbejdsområder
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -84,12 +84,12 @@ Når indholdet er klar, skal du vælge, hvilke dashboards og rapporter du vil pu
 ### <a name="how-are-apps-different-from-organizational-content-packs"></a>Hvordan adskiller apps sig fra organisationsindholdspakker?
 Apps er en udviklet form af organisationsindholdspakker. Hvis du allerede har organisationsindholdspakker, vil de fortsætte med at fungere side om side med apps. Der er et par større forskelle mellem apps og indholdspakker. 
 
-* Når forretningsbrugere installerer en indholdspakke, mister den sin grupperede identitet: Den er bare en liste over dashboards og rapporter blandet med andre dashboards og rapporter. Apps bevarer på den anden side deres gruppering og identitet, også efter installationen. Det gør det nemt for forretningsbrugere at fortsætte med at navigere til dem hen over tid.
+* Når forretningsbrugere installerer en indholdspakke, mister den sin grupperede identitet: Den er bare en liste over dashboards og rapporter blandet med andre dashboards og rapporter. Apps bevarer på den anden side deres gruppering og identitet, også efter installationen. Denne gruppering gør det nemt for forretningsbrugere at fortsætte med at navigere til dem hen over tid.
 * Du kan oprette flere indholdspakker fra et vilkårligt arbejdsområde, men en app har en en til en-relation til dens arbejdsområde. 
 * Vi vil over tid fraråde organisationsindholdspakker, og vi anbefaler derfor, at du begynder at oprette apps fra nu af.  
 * Med den nye prøveversion af arbejdsområdeoplevelsen tager vi det første skridt mod udfasning af organisationsindholdspakker. Du kan ikke forbruge eller oprette dem i arbejdsområder i prøveversion.
 
-Se [Sådan adskiller de nye apparbejdsområder sig fra eksisterende apparbejdsområder](service-create-the-new-workspaces.md#how-are-the-new-app-workspaces-different-from-current-app-workspaces) for at sammenligne de aktuelle og nye apparbejdsområder. 
+Se [Sådan adskiller de nye apparbejdsområder sig fra eksisterende apparbejdsområder](service-new-workspaces.md#how-are-the-new-workspaces-different-from-current-workspaces) for at sammenligne de to. 
 
 ## <a name="next-steps"></a>Næste trin
 * [Installér og brug apps i Power BI](service-create-distribute-apps.md)

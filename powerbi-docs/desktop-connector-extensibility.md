@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2018
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bba674df9864697199a274698a1b17320b8ccd80
-ms.sourcegitcommit: 9d6f37fd32b965592bd7b108dea87b8e53b11334
+ms.openlocfilehash: eaf76f2ba762a603bf37385ea00cd714499db4b5
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/18/2018
-ms.locfileid: "40257345"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983410"
 ---
 # <a name="connector-extensibility-in-power-bi"></a>Forbindelsesudvidelse i Power BI
 
@@ -42,7 +42,7 @@ Under **Dataudvidelser** kan du vælge mellem to niveauer af sikkerhed:
 * (Anbefalet) Tillad kun, at certificerede udvidelser indlæses
 * (Ikke anbefalet) Tillad, at alle udvidelser indlæses uden advarsel
 
-Hvis du planlægger at bruge **brugerdefinerede forbindelser** eller forbindelser, som du eller en tredjepart har udviklet og distribueret, skal du vælge **(Ikke anbefalet) Tillad, at alle udvidelser indlæses uden advarsel**. Vi anbefaler den sikkerhedsindstilling, medmindre du planlægger at køre **brugerdefinerede forbindelser**.
+Hvis du planlægger at bruge **brugerdefinerede forbindelser** eller forbindelser, som du eller en tredjepart har udviklet og distribueret, skal du vælge **(Ikke anbefalet) Tillad, at alle udvidelser indlæses uden advarsel**. Vi anbefaler ikke denne sikkerhedsindstilling, medmindre du har fuld tillid til dine brugerdefinerede connectorer, eftersom kode i connectorerne kan håndtere legitimationsoplysninger (herunder at sende dem via HTTP) og ignorere niveauer for beskyttelse af personlige oplysninger.
 
 Hvis du vælger sikkerhedsindstillingen **(Anbefalet)**, og der ikke er nogen brugerdefinerede forbindelser på dit system, vises der en fejl med en beskrivelse af de forbindelser, der ikke kan indlæses pga. sikkerhedsindstillingerne.
 

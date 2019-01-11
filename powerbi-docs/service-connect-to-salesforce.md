@@ -5,17 +5,17 @@ author: SarinaJoan
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5cd858ad14c1a5fcf76ddf23dafdac2bb5585b10
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 02b98d807ccc84aa83826ae5e9eecdbdd1987a91
+ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548252"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54008574"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Opret forbindelse til Salesforce med Power BI
 Med Power BI kan du kan nemt oprette forbindelse til din konto på Salesforce.com. Når du opretter denne forbindelse, hentes dine data, du får automatisk et dashboard og rapporter baseret på dine data.
@@ -80,7 +80,7 @@ Hvis der opstår fejl, skal du gennemse ovenstående krav. Bemærk også, at mul
 
 ### <a name="unable-to-connect-to-the-remote-server-message"></a>Meddelelsen "Der kan ikke oprettes forbindelse til fjernserveren"
 
-Hvis du får meddelelsen "Der kan ikke oprettes forbindelse til fjernserveren" under forsøg på at oprette forbindelse til din Salesforce-konto, kan du se denne løsning på Outsystems-forummet: [Salesforce Connector Log In Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
+Hvis du får en meddelelse om, at der kan ikke oprettes forbindelse til fjernserveren, når du forsøger at oprette forbindelse til din Salesforce-konto, kan du få vist denne løsning på Outsystems-forummet: [Salesforce Connector Log In Error Message: Unable to connect to the remote server](https://www.outsystems.com/forums/Forum_TopicView.aspx?TopicId=17674&TopicName=log-in-error-message-unable-to-connect-to-the-remote-server&)
 
 
 ## <a name="next-steps"></a>Næste trin

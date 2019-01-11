@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/19/2018
+ms.date: 12/19/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 04e00537db4ffbcb6c1a154cb69fb2c856bd7596
-ms.sourcegitcommit: 70192daf070ede3382ac13f6001e0c8b5fb8d934
+ms.openlocfilehash: 09c505d114eaa951978f23061d9c79c1b6870fad
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46565653"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983364"
 ---
 # <a name="tips-and-tricks-for-color-formatting-in-power-bi"></a>Tip og tricks til farveformatering i Power BI
 Power BI indeholder mange forskellige måder at tilpasse dine dashboards og rapporter på. Denne artikel indeholder en samling af tip, som kan gøre dine Power BI-visualiseringer mere overbevisende, interessante og tilpasset efter dine behov.
@@ -29,38 +29,35 @@ Der findes følgende tip. Har du et andet fantastiske tip? Fantastisk! Send det 
 * Brug divergerende farveskalaer
 * Sådan fortryder du i Power BI
 
-Hvis du vil foretage ændringer, skal du redigere en rapport: Vælg din **rapport** i ruden **Mit arbejdsområde**, vælg derefter **Rediger rapport** i det øverste menuområde, som det vises på det følgende billede.
+Hvis du vil foretage ændringer, skal du redigere en rapport: Vælg din **rapport** i ruden **Mit arbejdsområde**, vælg derefter **Rediger rapport** i det øverste menuområde, som det vises på det følgende billede. I dette eksempel benyttes **HR-eksemplet**.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_1.png)
+![rapportens lærred med Rediger rapport, der er fremhævet](media/service-tips-and-tricks-for-color-formatting/power-bi-edit.png)
 
 Når ruden **Visualiseringer** vises langs højre side af canvasset **Rapport**, er du klar til at starte tilpasning.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_2.png)
+![rapport, hvor ruden Formattering vises](media/service-tips-and-tricks-for-color-formatting/power-bi-formatting-pane.png)
 
 ## <a name="change-the-color-of-a-single-data-point"></a>Skift farve på et enkelt datapunkt
-Nogle gange kan du få brug for at fremhæve ét bestemt datapunkt. Måske er det salgstal for lanceringen af et nyt produkt eller højere kvalitetsbedømmelser efter lancering af et nyt program. Med Power BI kan du fremhæve et bestemt datapunkt ved at ændre dets farve.
+Nogle gange kan du få brug for at fremhæve ét bestemt datapunkt. Måske er det salgstal for lanceringen af et nyt produkt eller højere kvalitetsbedømmelser efter lancering af et nyt program. Med Power BI og de fleste visualiseringstyper kan du fremhæve et bestemt datapunkt ved at ændre dets farve.
 
-Følgende visualisering rangordner tilstande efter leveomkostninger. 
+Følgende visualisering viser salgsmargener pr. medarbejder ved hjælp af standardfarver. 
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_3.png)
+![områdediagram](media/service-tips-and-tricks-for-color-formatting/power-bi-area-chart.png)
 
-Forestil dig nu, at du hurtigt vil vise, hvor Washington lander på denne rangordnede, ved hjælp af farve. Her er trinnene:
+Det er vanskeligt at se området for Annelie, så lad os bruge farver, der får det til at skille sig ud. Her er trinnene:
 
 Udvid afsnittet **Datafarver**. Følgende vises.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_4.png)
+![Området til valg af datafarver under Formatering](media/service-tips-and-tricks-for-color-formatting/power-bi-data-colors.png)
 
-Indstil **Vis alle** til **Til**. Farverne vises nu for hvert dataelement i visualiseringen. Når du peger på datapunkterne, aktiveres rulning, så du kan ændre datapunkterne.
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_5.png)
+I dette tilfælde vælger vi en mørk, men klar farve, der ikke er lig med den farve, der bruges til Valery. Vælg pil ned i farvefeltet for Annelie, vælg **Brugerdefineret farve**, og vælg en klar blå.
 
-Lad os i dette tilfælde ændre **Washington** til grøn. Vi ruller ned til **Washington** og vælger pil ned i farveboksen, og vinduet til valg af farve åbnes.
+![farvevalg](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_6.png)
 
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_6.png)
+Når du har valgt, er området for Annelie meget nemmere at skelne fra alle andre medarbejdere. 
 
-Når det er valgt, har datapunktet **Washington** en pæn grøn nuance og skiller sig klart ud.
-
-![](media/service-tips-and-tricks-for-color-formatting/tipstrickscolor_7.png)
+![områdediagram, Annalies område nu i en klar blå farve](media/service-tips-and-tricks-for-color-formatting/power-bi-color.png)
 
 Selvom du ændrer visualiseringstyper og derefter vender tilbage, kan Power BI huske valget, og **Washington** er stadig grøn.
 

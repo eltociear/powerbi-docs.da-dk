@@ -1,5 +1,5 @@
 ---
-title: Hvordan kan jeg samarbejde og dele i Power BI?
+title: Måder at dele dit arbejde på
 description: I Power BI kan du samarbejde om og dele dashboards, rapporter, felter og apps på forskellige måder. Hver har særskilte fordele.
 author: maggiesMSFT
 manager: kfile
@@ -7,23 +7,23 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 12/17/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: bcec05211d3748e992f0e0cf68acd6460b2715d4
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: bc4f58920feaf5219d63761116ef9a742edd4eed
+ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908963"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53983525"
 ---
-# <a name="how-should-i-collaborate-and-share-in-power-bi"></a>Hvordan kan jeg samarbejde og dele i Power BI?
+# <a name="ways-to-share-your-work-in-power-bi"></a>Måder at dele dit arbejde i Power BI på
 
-Du har oprettet dashboards og rapporter. Måske samarbejder du også med kolleger om dem. Du kan derefter give andre adgang til dem. Hvordan distribueres de på bedste vis?
+Du har oprettet dashboards og rapporter. Måske har du også samarbejdet med kolleger om dem. Du vil du gerne have, at andre kan få adgang til dem. Hvordan distribueres de på bedste vis?
 
 I denne artikel sammenligner vi disse muligheder for at samarbejde og dele i Power BI: 
 
-* Samarbejde med kolleger om at oprette relevante rapporter og dashboards i *apparbejdsområder*.
+* Samarbejde med kolleger om at oprette relevante rapporter og dashboards i *arbejdsområder*.
 * Gruppering af disse dashboards og rapporter i *apps* og publicering af dem til en større gruppe eller hele organisationen.
 * Deling af dashboards eller rapporter med nogle få personer, fra tjenesten eller Power BI-mobilapps.
 - Udskrivning af rapporter.
@@ -35,25 +35,25 @@ Uanset hvilken indstilling du vælger, skal du bruge en [Power BI Pro-licens](se
 
 *Apps i Power BI-tjenesten*
 
-## <a name="collaborate-with-coworkers-in-an-app-workspace"></a>Samarbejd med kollegaer i et apparbejdsområde
+## <a name="collaborate-with-coworkers-in-a-workspace"></a>Samarbejd med kolleger i et arbejdsområde
 
-Når teams arbejder sammen, skal de have adgang til de samme dokumenter, så de kan samarbejde hurtigere. Apparbejdsområder i Power BI leverer det sted, hvor teams mødes og deler ejerskabet og administrationen af dashboards, rapporter, datasæt og projektmapper, der er vigtige for dem. Nogle gange organiserer Power BI-brugere deres arbejdsområder baseret på organisationens strukturer, og andre gange opretter de dem til specifikke projekter. Andre organisationer bruger stadig flere arbejdsområder til at gemme forskellige versioner af rapporter eller dashboards, de bruger. 
+Når teams arbejder sammen, skal de have adgang til de samme dokumenter, så de kan samarbejde hurtigere. Arbejdsområder i Power BI udgør det sted, hvor teams mødes og deler ejerskabet og administrationen af de dashboards, rapporter, datasæt og projektmapper, der er vigtige for dem. Nogle gange organiserer Power BI-brugere deres arbejdsområder baseret på organisationens strukturer, og andre gange opretter de dem til specifikke projekter. Andre organisationer bruger stadig flere arbejdsområder til at gemme forskellige versioner af rapporter eller dashboards, de bruger. 
 
-I apparbejdsområder findes der roller, der bestemmer, hvilke tilladelser dine kollegaer har. Du kan bruge disse roller til at bestemme, hvem der kan administrere hele arbejdsområdet eller kun levere indhold til det.
+I arbejdsområder findes der roller, der bestemmer, hvilke tilladelser dine kolleger har. Du kan bruge disse roller til at bestemme, hvem der kan administrere hele arbejdsområdet eller kun levere indhold til det.
 
-![Apparbejdsområder](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
+![Arbejdsområder](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
 
-Nogle brugere lægger indhold i deres Mit arbejdsområde og deler det. Apparbejdsområder er mere velegnet til samarbejde end Mit arbejdsområde, da de gør det muligt at eje indhold i fællesskab. Du og hele dit team kan nemt foretage opdateringer eller give andre adgang. Mit arbejdsområde er mest velegnet til enkeltpersoner til skiftende eller personligt indhold.
+Nogle brugere lægger indhold i deres Mit arbejdsområde og deler det. Arbejdsområder er mere velegnet til samarbejde end Mit arbejdsområde, da de gør det muligt at eje indhold i fællesskab. Du og hele dit team kan nemt foretage opdateringer eller give andre adgang. Mit arbejdsområde er mest velegnet til enkeltpersoner til skiftende eller personligt indhold.
 
-Lad os forestille os, at du har et færdigt dashboard, du skal dele med dine kollegaer. Hvordan kan du bedst give dem adgang til dashboardet? Svaret afhænger af en række faktorer. Hvis en bestemt kollega skal eje dashboardet og holde det opdateret eller skal have adgang til alt indhold i apparbejdsområdet, kan den bedste løsning være at føje dem til arbejdsområdet. Hvis din kollega bare skal se dashboardet og ikke alt indholdet i arbejdsområdet, kan du igen vælge mellem en række alternativer. Hvis dashboardet er en del af et større indholdssæt, du skal distribuere til mange kollegaer, er den bedste løsning sandsynligvis at publicere en app. Men hvis kollegaen bare skal bruge dette ene dashboard, skal du overveje at dele dashboardet. 
+Lad os forestille os, at du har et færdigt dashboard, du skal dele med dine kollegaer. Hvordan kan du bedst give dem adgang til dashboardet? Svaret afhænger af en række faktorer. Hvis en bestemt kollega skal eje dashboardet og holde det opdateret eller skal have adgang til alt indhold i arbejdsområdet, kan den bedste løsning være at føje dem til arbejdsområdet. Hvis din kollega bare skal se dashboardet og ikke alt indholdet i arbejdsområdet, kan du igen vælge mellem en række alternativer. Hvis dashboardet er en del af et større indholdssæt, du skal distribuere til mange kollegaer, er den bedste løsning sandsynligvis at publicere en app. Men hvis kollegaen bare skal bruge dette ene dashboard, skal du overveje at dele dashboardet. 
 
-Læs mere om [oprettelse af apparbejdsområder](service-create-workspaces.md).
+Læs mere om [oprettelse af arbejdsområder](service-create-workspaces.md).
 
 **Vidste du det?** Power BI udgiver en ny prøveversion af arbejdsområdeoplevelsen. Læs [Opret nye arbejdsområder (prøveversion)](service-create-the-new-workspaces.md) for at se, hvordan arbejdsområder ændres i fremtiden. 
 
 ## <a name="distribute-data-and-insights-by-creating-an-app"></a>Distribuer data og indsigt ved at oprette en app
 
-Lad os sige, at du gerne vil distribuere dit dashboard til en bred målgruppe. Du og dine kolleger har oprettet et *apparbejdsområde*, derefter har I oprettet og forfinet dashboards, rapporter og datasæt i apparbejdsområdet. Nu vælger du de pågældende dashboards og rapporter og publicerer dem som en app – enten til en gruppe eller til hele din organisation. 
+Lad os sige, at du gerne vil distribuere dit dashboard til en bred målgruppe. Du og dine kolleger har oprettet et *arbejdsområde*, derefter har I oprettet og forfinet dashboards, rapporter og datasæt i arbejdsområdet. Nu vælger du de pågældende dashboards og rapporter og publicerer dem som en app – enten til en gruppe eller til hele din organisation. 
 
 ![Ikonet Publicer app](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
@@ -66,7 +66,7 @@ Dine brugere kan få vist din app ved enten også at have Power BI Pro-licens, e
 Du kan også publicere apps til personer uden for organisationen. De kan få vist og interagere med appindholdet, men de kan ikke dele det med andre.
 
 ## <a name="share-dashboards-and-reports"></a>Del dashboards og rapporter
-Lad os sige, at du har færdiggjort et dashboard og en rapport i dit eget Mit arbejdsområde eller i et apparbejdsområde, og du vil give få personer adgang til indholdet. Du kan vælge at *dele* indholdet. 
+Lad os sige, at du har færdiggjort et dashboard og en rapport i dit eget Mit arbejdsområde eller i et arbejdsområde, og du vil give få personer adgang til indholdet. Du kan vælge at *dele* indholdet. 
 
 ![Delingsikon](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-share-in-situ.png)
 
