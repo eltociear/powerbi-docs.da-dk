@@ -584,12 +584,12 @@ items:
         href: service-insights-optimize.md
     - name: Samarbejd i Power BI
       items:
-      - name: Opret og del apps
-        href: service-create-distribute-apps.md
       - name: Opret apparbejdsområder
         href: service-create-workspaces.md
       - name: Opret de nye arbejdsområder (eksempelvisning)
         href: service-create-the-new-workspaces.md
+      - name: Opret og del apps
+        href: service-create-distribute-apps.md
       - name: Administrer datalager i arbejdsområder
         href: service-admin-manage-your-data-storage-in-power-bi.md
       - name: Opret forbindelse til filer på din gruppes OneDrive
@@ -750,8 +750,6 @@ items:
           href: service-connect-to-mandrill.md
         - name: Marketo
           href: service-connect-to-marketo.md
-        - name: Microsoft Azure Enterprise
-          href: service-connect-to-azure-enterprise.md
         - name: Microsoft Dynamics 365
           href: service-connect-to-microsoft-dynamics-ax.md
         - name: Microsoft Dynamics CRM
@@ -1190,6 +1188,8 @@ items:
         href: service-gateway-sso-overview.md
       - name: Enkeltlogon (SSO) – Kerberos
         href: service-gateway-sso-kerberos.md
+      - name: Enkeltlogon (SSO) – Kerberos – ressourcebaseret
+        href: service-gateway-sso-kerberos-resource.md
       - name: Enkeltlogon (SSO) – SAML
         href: service-gateway-sso-saml.md
     - name: Konfigurer proxyindstillinger
@@ -1287,9 +1287,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI sikkerhed
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: ba984e4e4f948f0cc2772dbe632c450bd77eb6b2
-ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
+ms.openlocfilehash: cf29eebc31ef8a62b20b08606e97b4fd035b3fec
+ms.sourcegitcommit: c4455dcb6d9a091ac80f4a5135433b162fcaba58
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54136570"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54211361"

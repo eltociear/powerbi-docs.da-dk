@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/20/2018
-ms.openlocfilehash: 3971651caf9be7e754f4232ffec8b4e4dbfdfe6d
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: 106d971a06777f7d22d1fb3cd2ba3995b95a21d9
+ms.sourcegitcommit: b3af4f7ef486c95cea173caea5a31d0472816ddd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008413"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54136639"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -204,6 +204,10 @@ ISV'en kan muligvis beslutte, hvad brugeren ser på i første visning på vha. f
 
 Se under [RLS- i forhold til JavaScript-filtre](embedded-row-level-security.md#using-rls-vs-javascript-filters) for at få flere oplysninger.
 
+### <a name="what-are-the-best-practices-to-improve-performance"></a>Hvad er de bedste fremgangsmåder til at forbedre ydeevnen?
+
+[Ydeevnen i Power BI Embedded](embedded-performance-best-practices.md)
+
 ## <a name="licensing"></a>Licensering
 
 ### <a name="how-do-i-purchase-power-bi-embedded"></a>Hvordan køber jeg Power BI Embedded?
@@ -264,8 +268,8 @@ Almennyttige organisationer og uddannelsesinstitutioner kan købe Azure. Der er 
 
 3. Når du er klar til produktion, skal du købe en **Power BI Embedded**-dedikeret kapacitet og tildele dit Power BI-indhold (arbejdsområde) til denne kapacitet.
 
-> [!Note]
-> Du kan fortsætte med at bruge **Power BI Workspace Collection**, når du opretter parallelt med en **Power BI Embedded**-løsning. Når du er klar, kan du flytte kunden til den nye **Power BI Embedded**-løsning og lade **Power BI Workspace Collection**-løsningen udgå.
+    > [!Note]
+    > Du kan fortsætte med at bruge **Power BI Workspace Collection**, når du opretter parallelt med en **Power BI Embedded**-løsning. Når du er klar, kan du flytte kunden til den nye **Power BI Embedded**-løsning og lade **Power BI Workspace Collection**-løsningen udgå.
 
 Du kan finde flere oplysninger under [Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded](https://docs.microsoft.com/power-bi/developer/migrate-from-powerbi-embedded)
 
@@ -318,10 +322,6 @@ Du kan se, hvordan du redigerer AAD-registrerede apps [her](https://docs.microso
 
 Du kan se, hvordan du redigerer dine Power BI-data, [her](https://docs.microsoft.com/power-bi/service-basic-concepts).
 
-Du kan finde flere oplysninger under [Fejlfinding af det integrerede program](embedded-troubleshoot.md)
+Du kan finde flere oplysninger under [Fejlfinding af det integrerede program](embedded-troubleshoot.md).
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-
-### <a name="what-are-the-best-practices-to-improve-performance"></a>Hvad er de bedste fremgangsmåder til at forbedre ydeevnen?
-
-[Ydeevnen i Power BI Embedded](embedded-performance-best-practices.md)
