@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: Conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 191dfdeba436322052befdbc6548fd08f96f0738
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: 28dcba5a44da4d0acd8f1b6d0a1bfce655eb46bd
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280000"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280096"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Rediger, hvordan et diagram sorteres i en rapport i Power BI
 I en Power BI-rapport kan du sortere de fleste visualiseringer alfabetisk efter navnene på kategorierne i diagrammet eller efter de numeriske værdier for hver kategori. Dette diagram er f.eks. sorteret efter kategorien **lagernavn**.
@@ -41,9 +41,9 @@ Hvis knappen **Nulstil til standard** er nedtonet, betyder det, at rapportens op
 
 <a name="other"></a>
 ## <a name="sorting-using-other-criteria"></a>Sortering ved hjælp af andre kriterier
-Der kan nogle gange være behov for at sortere dine visualiseringer ved hjælp af et andet felt eller andre kriterier.  Det kan f.eks. være, at du vil sortere efter måned (og ikke i alfabetisk rækkefølge), eller at du vil sortere efter hele tal i stedet for cifre (f.eks. 0, 1, 9, 20 og ikke 0, 1, 20, 9).  
+Der kan nogle gange være behov for at sortere visuelle elementer med brug af et andet felt eller andre kriterier.  Det kan f.eks. være, at du vil sortere efter måned (og ikke i alfabetisk rækkefølge), eller at du vil sortere efter hele tal i stedet for cifre (f.eks. 0, 1, 9, 20 og ikke 0, 1, 20, 9).  
 
-I nogle tilfælde kan du muligvis sortere visualiseringen på den måde, du ønsker, f.eks. efter måned.  Men er det ikke muligt, kan det være fordi, datasættet bag rapporten skal tilpasses. Bed rapportopretteren om at opdatere datasættet.
+I nogle tilfælde kan du muligvis sortere det visuelle element på den måde, du ønsker, f.eks. efter måned.  Men er det ikke muligt, kan det være fordi, datasættet bag rapporten skal tilpasses. Bed rapportopretteren om at opdatere datasættet.
 
 ## <a name="next-steps"></a>Næste trin
 Få mere at vide om [Visualiseringer i Power BI-rapporter](end-user-visualizations.md).

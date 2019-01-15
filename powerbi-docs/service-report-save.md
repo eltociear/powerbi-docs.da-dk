@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: f98d4c5e7b7cc02c9a08d982edb88b2e129f51e6
-ms.sourcegitcommit: fb1885da7cf11367660edbf7b7346dc039ee9b5d
+ms.openlocfilehash: a4bc58a5be385e22c68aa29a8a366231c8434bba
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47186864"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283942"
 ---
 # <a name="save-a-report-in-power-bi-service-and-power-bi-desktop"></a>Gem en rapport i Power BI-tjenesten og Power BI Desktop
 Når du har foretaget ændringer af en rapport i Power BI, kan du gemme den, gemme den med et nyt navn eller bare lukke den uden at gemme dine ændringer. Lad os sige, at du åbner rapporten, opretter en visualisering og fastgør den til dashboardet. Hvis du lukker den nu uden at gemme dine ændringer, forbliver feltet på dashboardet, men visualiseringen gemmes ikke i rapporten. Når du klikker på dette felt på dashboardet, åbnes rapporten, men visualiseringen i rapporten er gået tabt.

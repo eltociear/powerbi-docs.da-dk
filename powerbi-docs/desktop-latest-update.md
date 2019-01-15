@@ -5,19 +5,19 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 0883d3fdd9d57b04b839fb9062b12e8bfcc17c45
-ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
+ms.openlocfilehash: 13c2742325e0cf2714d759eb1fd21ce6bcfd0187
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53329665"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291205"
 ---
-# <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Hvad er de seneste nyheder i opdateringen til Power BI Desktop? 
+# <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Hvad er nyt i den nyeste opdatering af Power BI Desktop? 
 
 ## <a name="december-2018-update-2655313501"></a>Opdatering i december 2018 (2.65.5313.501)
 
@@ -52,7 +52,7 @@ Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 * Livesupport til forbindelse til Spørgsmål og svar (prøveversion) [[video]](https://youtu.be/AHNlkjRFdYI?t=1037) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#liveConnectQA) 
 
 
-### <a name="modeling"></a>Udformning
+### <a name="modeling"></a>Modellering
 
 * Opdateringer af DAX-formellinje [[video]](https://youtu.be/AHNlkjRFdYI?t=1132) [[artikel]](desktop-modeling-view.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#daxFormulaBar) 
 * Understøttelse af tilgængelighed af datavisning [[video]](https://youtu.be/AHNlkjRFdYI?t=1253) [[artikel]](desktop-composite-models.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#dataView) 

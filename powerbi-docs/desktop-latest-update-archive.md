@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 129649367efa3a2b23fbf3be181e14df158eba02
-ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
+ms.openlocfilehash: b82f739d8e5dd5497ab2a41e44097fda12345bd3
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53329849"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278210"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -53,7 +53,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i november:
 * Opfølgningsspørgsmål i stifinder til spørgsmål og svar [[video]](https://youtu.be/1xsXXoyTxfk?t=1429) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23relatedQuestions) 
 
 
-### <a name="modeling"></a>Udformning
+### <a name="modeling"></a>Modellering
 
 * Ny udformningsvisning (prøveversion) [[video]](https://youtu.be/1xsXXoyTxfk?t=1642) [[artikel]](desktop-modeling-view.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingView) 
 * Sammensatte modeller er nu offentligt tilgængelige [[video]](https://youtu.be/1xsXXoyTxfk?t=1941) [[artikel]](desktop-composite-models.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23compositeModels) 
@@ -98,7 +98,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i oktober:
 * Forbedringer af ydeevne til ArcGIS-kort [[video]](https://youtu.be/cT3L2VzgBRU?t=333) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23esri)
 
 
-### <a name="modeling"></a>Udformning
+### <a name="modeling"></a>Modellering
 
 * Forbedringer af DAX-editor [[video]](https://youtu.be/GO1dhDJhSDY) [[artikel]](desktop-formula-editor.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23daxEditor) 
 
@@ -196,7 +196,7 @@ Vi fulgte hurtigt op på de store opdateringer fra juli med en frisk buket af au
 
 Følgende opdateringer var nye i **Power BI Desktop** i august:
 
-### <a name="modeling"></a>Udformning
+### <a name="modeling"></a>Modellering
 
 * Datakategorier til målinger  [[video]](https://youtu.be/dgv5HhHxxe8?t=15m27s)  [[artikel]](desktop-measures.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#dataCategory)
 * Statistiske DAX-funktioner  [[video]](https://youtu.be/dgv5HhHxxe8?t=18m56s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#dax)
@@ -244,7 +244,7 @@ De store opdateringer i juli omfattede længe ønskede data- og rapporteringsfun
 
 Følgende opdateringer var nye i **Power BI Desktop** i juli:
 
-### <a name="modeling"></a>Udformning
+### <a name="modeling"></a>Modellering
 
 * Sammensatte modeller (prøveversion) [[video]](https://youtu.be/Mtig3rmIUe0?t=15s) [[artikel]](desktop-composite-models.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#compositeModels)
 * Mange til mange-relationer (prøveversion) (knyttet til sammensatte modeller) [[video]](https://youtu.be/Mtig3rmIUe0?t=4m53s) [[artikel]](desktop-many-to-many-relationships.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#compositeModels)
@@ -313,7 +313,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i juni:
 
 * To nye brugerdefinerede visualiseringer [[video]](https://youtu.be/4VpGtWSrssE?t=17m42s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#customVisuals) 
 
-### <a name="modeling"></a>Udformning
+### <a name="modeling"></a>Modellering
 * Filtrering og sortering i datavisning [[video]](https://youtu.be/4VpGtWSrssE?t=13m11s) [[artikel]](desktop-data-view.md#filtering-in-data-view) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#filterAndSort) 
 * Forbedret filtrering af landestandard [[video]](https://youtu.be/4VpGtWSrssE?t=15m35s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#locale) 
 

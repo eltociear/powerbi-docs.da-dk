@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0b5693dfa53feba35acb559bf8606b1d03f97fdb
-ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
+ms.openlocfilehash: 545e8f874cca18167ee260daa92eec3ef1c3e925
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53329780"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291481"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Opret værktøjstip baseret på rapportsider i Power BI Desktop
 Du kan oprette visuelt omfattende **værktøjstip til rapporter**, som vises, når du holder over visualiseringer, på baggrund af rapportsider, du opretter i **Power BI Desktop**. Ved at oprette en rapportside, der fungerer som et værktøjstip, kan dine brugerdefinerede værktøjstip indeholde visualiseringer, billeder og mange andre samlinger af elementer, du opretter på en rapportside. 

@@ -6,32 +6,32 @@ ms.author: kfile
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/18/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: eb2e667f6a6b037e2bb0f4b7543f2e7d90617050
-ms.sourcegitcommit: 298db44200b78b1281b3ae6dfe7cce7a89865ec9
+ms.openlocfilehash: f603a733c6c604a89b0b9608904acdf13b66b713
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53329757"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287778"
 ---
 # <a name="power-bi-performance-best-practices"></a>Power BI-ydeevne – bedste praksis
 
 Denne artikel giver vejledning i at oprette hurtige og pålidelige rapporter i Power BI.  
 
-## <a name="use-filters-to-limit-report-visuals-to-display-only-whats-needed"></a>Brug filtre for kun at vise de mest nødvendige visualiseringer i rapporter 
+## <a name="use-filters-to-limit-report-visuals-to-display-only-whats-needed"></a>Brug filtre for kun at vise de mest nødvendige visuelle elementer i rapporter 
 
-Jo flere data et visuelt element skal vise, jo langsommere er indlæsningen af den pågældende visualisering. Dette princip kan synes indlysende, men glemmes dog let. Et eksempel: Lad os antage, at du har et stort datasæt. Oven i det opretter du en rapport med en tabel af tabellen. Slutbrugere benytter udsnitsværktøj på siden for at få adgang til de ønskede rækker – de er typisk kun interesserede i et fåtal af rækker.
+Jo flere data et visuelt element skal vise, jo langsommere er indlæsningen af det pågældende visuelle element. Dette princip kan synes indlysende, men glemmes dog let. Et eksempel: Lad os antage, at du har et stort datasæt. Oven i det opretter du en rapport med en tabel af tabellen. Slutbrugere benytter udsnitsværktøj på siden for at få adgang til de ønskede rækker – de er typisk kun interesserede i et fåtal af rækker.
 
 En almindelig fejl er, hvis man ikke filtrerer standardvisningen af tabellen, dvs. alle +100 millioner rækker. Dataene til disse rækker skal indlæses i hukommelsen og dekomprimeres ved hver opdatering. Dette belaster hukommelsen enormt. Løsningen: reducer det maksimale antal elementer, som tabellen viser, ved hjælp af filteret "Top N". Det maksimale antal elementer kan være meget større, end brugeren har brug for, f.eks. 10.000. Det resulterede i, at slutbrugerens oplevelse var uændret, men rapportens brug af hukommelsen faldt med flere ordrers størrelse, og ydeevnen blev tilsvarende forbedret.
 
-En tilsvarende tilgang til ovenstående anbefales for alle visualiseringer i dine rapporter. Stil dig selv spørgsmålet, om alle dataene i denne visualisering er nødvendige. Kan mængden af de viste data i visualiseringen på nogen måde begrænses via filtrering uden at påvirke slutbrugerens oplevelse? Bemærk, at især tabeller kan være dyre.
+En tilsvarende tilgang til ovenstående anbefales for alle visualiseringer i dine rapporter. Stil dig selv spørgsmålet, om alle dataene i dette visuelle element er nødvendige. Kan mængden af de viste data i visualiseringen på nogen måde begrænses via filtrering uden at påvirke slutbrugerens oplevelse? Bemærk, at især tabeller kan være dyre.
 
-## <a name="limit-visuals-on-report-pages"></a>Begræns visualiseringer på rapportsider
+## <a name="limit-visuals-on-report-pages"></a>Begræns visuelle elementer på rapportsider
 
-Ovenstående gælder tilsvarende for antallet af visualiseringer på en relevant rapport. Det anbefales kraftigt, at du begrænser antallet af visualiseringer på en relevant rapport til det mest nødvendige. Detaljeadgangssider kan med stor fordel bruges til at få vist yderligere detaljer uden at proppe yderligere visualiseringer ind i rapporten.  
+Ovenstående gælder tilsvarende for antallet af visuelle elementer på en relevant rapport. Det anbefales kraftigt, at du begrænser antallet af visuelle elementer på en relevant rapport til det mest nødvendige. Detaljeadgangssider kan med stor fordel bruges til at få vist yderligere detaljer uden at proppe yderligere visuelle elementer ind i rapporten.  
 
 ## <a name="optimize-your-model"></a>Optimer din model
 
@@ -75,30 +75,30 @@ I følgende afsnit beskrives generelle bedste praksisser for oprettelse af forbi
 ### <a name="general"></a>Generelt
 
 - Anvend først filtre.
-- Overvej at slå interaktion mellem visualiseringer fra – dette vil reducere forespørgselsbelastningen, når brugere benytter tværgående fremhævning.
-- Begræns antallet af visualiseringer og data pr. visualisering, som beskrevet ovenfor.
+- Overvej at slå interaktion mellem visuelle elementer fra – dette vil reducere forespørgselsbelastningen, når brugere benytter tværgående fremhævning.
+- Begræns antallet af visuelle elementer og data pr. visuelle elementer, som beskrevet ovenfor.
 - Aktivering af sikkerhed på rækkeniveau, kan det medføre betydelige ændringer i ydeevne. Sørg for at afprøve de forskellige sikkerhedsroller på rækkeniveau, som dine brugere antager.
 - Tjenesten gennemtvinger timeout på forespørgselsniveau for at sikre, at forespørgsler, der har kørt i lang tid, ikke kan lægge beslag på systemressourcerne. Forespørgsler, der tager længere tid end 225 sekunder, får timeout og resulterer i en fejl på visualiseringsniveau.
 
 ## <a name="understand-dashboards-and-query-caches"></a>Forstå dashboards og forespørgselscacher
 
-Visualiseringer, der er fastgjort til dashboards, håndteres af forespørgselscachen, når dashboardet indlæses. Omvendt, når du besøger en rapport, så oprettes forespørgslerne ad hoc til datakilden – En Power BI-tjeneste (i tilfælde af import) eller datakilden, du angiver (i tilfælde af DirectQuery eller direkte forbindelse).  
+Visuelle elementer, der er fastgjort til dashboards, håndteres af forespørgselscachen, når dashboardet indlæses. Omvendt, når du besøger en rapport, så oprettes forespørgslerne ad hoc til datakilden – En Power BI-tjeneste (i tilfælde af import) eller datakilden, du angiver (i tilfælde af DirectQuery eller direkte forbindelse).  
 
 > [!NOTE]
 > Når du fastgør direkte rapportfliser til et dashboard, håndteres de ikke af forespørgselscachen – i stedet fungerer de som rapporter, og afgiver forespørgsler til back-end-kerner ad hoc.
 
-Som navnet antyder sikrer modtagelse af data fra forespørgselscachen en bedre og mere ensartet ydeevne end at afhænge af datakilden. Én måde at drage fordel af denne funktionalitet på er ved at gøre dashboards til den første landingsside for dine brugere. Fastgør ofte brugte og hyppigt anvendte visualiseringer til dashboardene. På denne måde bliver dashboards et praktisk "første forsvarsværk", som leverer konsekvent ydelse med mindre belastning af kapaciteten. Brugerne kan stadig klikke sig gennem rapporten for at gå ned i detaljerne.  
+Som navnet antyder sikrer modtagelse af data fra forespørgselscachen en bedre og mere ensartet ydeevne end at afhænge af datakilden. Én måde at drage fordel af denne funktionalitet på er ved at gøre dashboards til den første landingsside for dine brugere. Fastgør ofte brugte og hyppigt anvendte visuelle elementer til dashboardene. På denne måde bliver dashboards et praktisk "første forsvarsværk", som leverer konsekvent ydelse med mindre belastning af kapaciteten. Brugerne kan stadig klikke sig gennem rapporten for at gå ned i detaljerne.  
  
 
-Denne forespørgselscache opdateres regelmæssigt ved at forespørge om datakilden i forbindelse med DirectQuery og direkte forbindelse. Dette sker som standard hver time, men kan konfigureres i datasættets indstillinger. Hver forespørgselscacheopdatering sender forespørgsler til den underliggende datakilde om at opdatere cachen. Antallet af forespørgsler, der oprettes, afhænger af antallet af visualiseringer, der er fastgjort til dashboards, der afhænger af den pågældende datakilde. Bemærk, at hvis sikkerhed på rækkeniveau er aktiveret, så genereres forespørgsler for hver særskilte sikkerhedskontekst. Hvis du f.eks. har to forskellige roller, som brugerne falder ind under, med to forskellige visninger af data, så oprettes der to sæt af forespørgsler under opdatering af forespørgselscachen. 
+Denne forespørgselscache opdateres regelmæssigt ved at forespørge om datakilden i forbindelse med DirectQuery og direkte forbindelse. Dette sker som standard hver time, men kan konfigureres i datasættets indstillinger. Hver forespørgselscacheopdatering sender forespørgsler til den underliggende datakilde om at opdatere cachen. Antallet af forespørgsler, der oprettes, afhænger af antallet af visuelle elementer, der er fastgjort til dashboards, der afhænger af den pågældende datakilde. Bemærk, at hvis sikkerhed på rækkeniveau er aktiveret, så genereres forespørgsler for hver særskilte sikkerhedskontekst. Hvis du f.eks. har to forskellige roller, som brugerne falder ind under, med to forskellige visninger af data, så oprettes der to sæt af forespørgsler under opdatering af forespørgselscachen. 
 
-## <a name="understand-custom-visual-performance"></a>Forstå brugerdefinerede visualiseringers ydeevne 
+## <a name="understand-custom-visual-performance"></a>Forstå brugerdefinerede visuelle elementers ydeevne 
 
-Sørg for at gennemprøve hver brugerdefinerede visualisering for at sikre høj ydeevne. Brugerdefinerede visualiseringer med dårlig optimering kan påvirke hele rapportens ydeevne negativt. 
+Sørg for at gennemprøve hvert brugerdefinerede visuelle element for at sikre høj ydeevne. Brugerdefinerede visuelle elementer med dårlig optimering kan påvirke hele rapportens ydeevne negativt. 
 
 ## <a name="deep-dive-into-query-performance-with-sql-profiler-and-power-bi-desktop"></a>Gå i dybden med forespørgslers ydeevne med SQL Profiler og Power BI Desktop
 
-For at dykke længere ned i, hvilke visualiseringer der optager mest tid og ressourcer, så kan du forbinde SQL Profiler til Power BI Desktop for at få et fuldt overblik over forespørgslers ydeevne.
+For at dykke længere ned i, hvilke visuelle elementer der optager mest tid og ressourcer, så kan du forbinde SQL Profiler til Power BI Desktop for at få et fuldt overblik over forespørgslers ydeevne.
 
 > [!NOTE]
 > Power BI Desktop understøtter, at der oprettes forbindelse til en port til diagnosticering. Med porten til diagnosticering kan andre værktøjer oprette forbindelse til og udføre sporing til diagnosticering. *Det understøttes ikke at ændre modellen! Ændringer i modellen vil muligvis beskadige data eller medføre tab af data.*

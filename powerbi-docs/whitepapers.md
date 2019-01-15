@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 01/09/2019
 ms.author: maggies
-ms.openlocfilehash: bff5e42b239fee572ea0a453301f154da3b999b3
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 76ea3250c3032c253b87f5f2b0713460a805787e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266087"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295790"
 ---
 # <a name="whitepapers-for-power-bi"></a>Whitepapers til Power BI
 
@@ -26,7 +26,7 @@ Whitepapers gør det muligt at udforske Power BI-emner på et mere detaljeret ni
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Beskriver Power BI Premium, både som den findes, når startes, og hvordan den udvikler sig. | Oktober 2017 |
 | [Planlægning og installation af Power BI Premium](https://aka.ms/Premium-Capacity-Planning-Deployment)| Denne rapport indeholder en vejledning og bedste praksis for planlægning og installation af Premium-kapacitet for veldefinerede arbejdsbelastninger.| November 2017 |
 | [Planlæg kapacitet for integreret analyse med Power BI Premium](https://aka.ms/pbiewhitepaper) |I dette whitepaper er der en vejledning til appudvikleren/ISV'en om at fastslå den mest relevante kapacitet for virksomheden. | Oktober 2017 |
-| [Planlægning af en Power BI Enterprise-udrulning](https://aka.ms/pbienterprisedeploy) |I denne tekniske hvidbog beskrives, hvilke overvejelser der skal gøres for at få en velfungerende og sikker Power BI-udrulning i organisationen. | Juli 2018 |
+| [Planlægning af en Power BI Enterprise-udrulning](https://go.microsoft.com/fwlink/?linkid=2057861) |I denne tekniske hvidbog beskrives, hvilke overvejelser der skal gøres for at få en velfungerende og sikker Power BI-udrulning i organisationen. | Juli 2018 |
 | [Vejledning i kapacitetsplanlægning i Power BI-rapportserver](report-server/capacity-planning.md) |Denne rapports primære sigte er at give en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af adskillelige gennemførsler af belastningstest ved forskellige arbejdsbelastninger i forhold til en rapportserver. | Marts 2018 |
 | [Sikkerhed](service-admin-power-bi-security.md) |Giver en detaljeret beskrivelse af sikkerheden i Power BI. | Juli 2018 |
 | [Distribuer Power BI-indhold til eksterne gæstebrugere vha. Azure Active Directory B2B](https://aka.ms/powerbi-b2b-whitepaper)|I denne rapport forklares det, hvordan indhold kan distribueres til brugere uden for organisationen vha. integrationen af Azure Active Directory Business-to-business (AAD B2B).| Marts 2018 |

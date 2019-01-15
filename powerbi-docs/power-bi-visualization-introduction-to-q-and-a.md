@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/21/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: e76d57f43fc76f5a9c51501daac48b081d9747b6
-ms.sourcegitcommit: 35d763dfc75c229204d36fd8b35c1e860786b707
+ms.openlocfilehash: 87783b928fdec1cadf5318ae184858c37daa4acc
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52331811"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279245"
 ---
 # <a name="get-started-with-power-bi-qa"></a>Kom i gang vha. spørgsmål og svar om Power BI
 
@@ -54,7 +54,7 @@ Hvordan kunne vi oprette dette samme kurvediagram ved hjælp af Spørgsmål og s
    Når du er færdig med at skrive dit spørgsmål, er resultatet præcis det samme diagram, som vi så i rapporten.  Men det er meget hurtigere at lave det sådan her!
    
    ![Eksempel på spørgsmål](media/power-bi-visualization-introduction-to-q-and-a/powerbi-qna-areachart.png)
-3. På samme måde som når du arbejder med rapporter, har du i Spørgsmål og svar adgang til ruderne Visualiseringer, Filtre og Felter.  Åbn disse ruder for at finde ud af mere og ændre din visualisering.
+3. På samme måde som når du arbejder med rapporter, har du i Spørgsmål og svar adgang til ruderne Visualiseringer, Filtre og Felter.  Åbn disse ruder for at finde ud af mere og ændre din visual.
 4. Hvis du vil fastgøre diagrammet til dit dashboard, skal du vælge tegnestiftikonet ![Tegnestiftikon](media/power-bi-visualization-introduction-to-q-and-a/pinnooutline.png).
 
 ## <a name="next-steps"></a>Næste trin
