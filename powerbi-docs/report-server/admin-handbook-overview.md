@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maghan
-ms.openlocfilehash: 2c8319395bd4daf44562f71380fc254964708c2b
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 745db7ea9c1a702389f2afae4408024ddb54b734
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50100605"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288077"
 ---
 # <a name="admin-overview-power-bi-report-server"></a>Administratoroversigt, Power BI-rapportserver
 Denne artikel indeholder en administrationsoversigt over Power BI-rapportserveren, der er en placering i det lokale miljø til lagring og administration af dine Power BI- og mobilrapporter samt dine sideinddelte rapporter. I denne artikel introduceres begreber i forbindelse med planlægning, udrulning og administration af din Power BI-rapportserver, og den indeholder links til flere oplysninger.

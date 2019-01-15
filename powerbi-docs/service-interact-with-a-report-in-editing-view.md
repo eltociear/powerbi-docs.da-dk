@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/11/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: e03f6b4542c4f5f6c1d1a84892030520651ac9a3
-ms.sourcegitcommit: 52ac456bf2ac025b22ea634c28482f22e1cc19ac
+ms.openlocfilehash: 12ee21427f06f0bce373adffa7ef336de144a3a4
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48908301"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290561"
 ---
 # <a name="interact-with-a-report-in-editing-view-in-power-bi-service"></a>Interager med en rapport i Redigeringsvisning i Power BI-tjenesten
 Rapporter kan oprettes og redigeres i Power BI-tjenesten og Power BI Desktop. I Power BI-tjenesten kan rapporter oprettes og redigeres i **Redigeringsvisning**. I Power BI Desktop kan rapporter oprettes og redigeres i [**Rapportvisning**](desktop-report-view.md). Denne artikel dækker Redigeringsvisning i Power BI-tjenesten. 

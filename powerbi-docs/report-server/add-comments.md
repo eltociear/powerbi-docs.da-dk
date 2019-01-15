@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/15/2018
 ms.author: maggies
-ms.openlocfilehash: e0053660263f4cbed55050b9431b67228bf74c29
-ms.sourcegitcommit: 46f1ba3f972f6e64bce05ad0fd527b27c49aedd6
+ms.openlocfilehash: 14540dc9ecaf1c3baa513b6e8cd12323de973d3d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52157350"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275370"
 ---
 # <a name="add-comments-to-a-report-in-a-report-server---power-bi-report-server"></a>Tilføj kommentarer i en rapport på en rapportserver – Power BI-rapportserver
 Du kan tilføje kommentarer i rapporter, herunder Power BI-rapporter, på webportalen til en rapportserver. Kommentarerne gemmes sammen med rapporten, og alle, der har rettigheder til den, kan se kommentarerne til rapporten. Se i afsnittet [Tilladelser](#permissions) herunder for at få flere oplysninger.

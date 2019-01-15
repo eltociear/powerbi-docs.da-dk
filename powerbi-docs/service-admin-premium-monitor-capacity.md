@@ -6,16 +6,16 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 12/13/2018
 LocalizationGroup: Premium
-ms.openlocfilehash: 250c8b28e4ee9e8b29e2db8195f7883d11708806
-ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
+ms.openlocfilehash: e8e69cdacb9ee54cdf19724c590f994f66c4dff7
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/14/2018
-ms.locfileid: "53382237"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290612"
 ---
 # <a name="monitor-power-bi-premium-and-power-bi-embedded-capacities"></a>Overvåg kapaciteter i Power BI Premium og Power BI Embedded
 
@@ -58,7 +58,7 @@ Dashboardet indeholder følgende målepunkter.
 | **Rapportafsnit** | **Målepunkter** |
 | --- | --- |
 | **Systemoversigt** | * Programmets version<br> * Antallet af kapaciteter, som du er administrator for<br> * Antallet af arbejdsområder i dine kapaciteter, som rapporterer målepunkter<br> * Det gennemsnitlige hukommelsesforbrug i GB inden for de seneste syv dage<br> * Det maksimale hukommelsesforbrug i GB inden for de seneste syv dage<br> * Lokalt tidspunkt, hvor der har været maksimal hukommelsesforbrug<br> * Antallet af gange, hvor CPU'en overskred 80 % af tærsklen inden for de seneste syv dage, opdelt i buckets på tre minutter<br> * De fleste gange, hvor CPU'en overskred 80 % inden for de seneste syv dage, opdelt i buckets på 1 time<br> * Lokalt tidspunkt, hvor CPU'en overskred 80 % flest gange på én time |
-| **Oversigt over datasæt** | * Det samlede antal datasæt på tværs af alle arbejdsområder i dine kapaciteter<br> * Antallet af gange, hvor forbindelser via direkte forespørgsler/direkte forbindelser overskred 80 % af tærsklerne inden for de seneste syv dage, opdelt i buckets på tre minutter<br> * De fleste gange, hvor forbindelser via direkte forespørgsler/direkte forbindelser overskred 80 % inden for de seneste syv dage, opdelt i buckets på én time<br> * Lokalt tidspunkt, hvor direkte forespørgsler/direkte forbindelser overskred 80 % flest gange på én time<br> * Det samlede antal opdateringer inden for de seneste syv dage<br> * Den gennemsnitlige ventetid for opdateringer – den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og opdateringen i minutter<br> * Den gennemsnitlige varighed af opdateringer – den tid, det tager at fuldføre opdateringen, i minutter<br> * Det samlede antal forespørgsler, der er kørt inden for de seneste syv dage<br> * Den gennemsnitlige ventetid for forespørgsler – den tid, en forespørgsel har ventet på systemressourcer, før udførelsen startes, i millisekunder<br> * Den gennemsnitlige varighed af forespørgsler – den tid, det tager at fuldføre forespørgslen, i millisekunder<br> * Det samlede antal modeller, der fjernes på grund af for stort hukommelsesforbrug<br> * Den gennemsnitlige størrelse af datasæt <br> * Det gennemsnitlige antal datasæt, der indlæses i hukommelsen |
+| **Oversigt over datasæt** | * Det samlede antal datasæt på tværs af alle arbejdsområder i dine kapaciteter<br> * Antallet af gange, hvor forbindelser via direkte forespørgsler/direkte forbindelser overskred 80 % af tærsklerne inden for de seneste syv dage, opdelt i buckets på tre minutter<br> * De fleste gange, hvor forbindelser via direkte forespørgsler/direkte forbindelser overskred 80 % inden for de seneste syv dage, opdelt i buckets på én time<br> * Lokalt tidspunkt, hvor direkte forespørgsler/direkte forbindelser overskred 80 % flest gange på én time<br> * Det samlede antal opdateringer i løbet af de seneste syv dage<br> * Den gennemsnitlige ventetid for opdateringer – den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og opdateringen i minutter<br> * Den gennemsnitlige varighed af opdateringer – den tid, det tager at fuldføre opdateringen, i minutter<br> * Det samlede antal forespørgsler, der er kørt i løbet af de seneste syv dage<br> * Den gennemsnitlige ventetid for forespørgsler – den tid, en forespørgsel har ventet på systemressourcer, før udførelsen startes, i millisekunder<br> * Den gennemsnitlige varighed af forespørgsler – den tid, det tager at fuldføre forespørgslen, i millisekunder<br> * Det samlede antal modeller, der fjernes på grund af for stort hukommelsesforbrug<br> * Den gennemsnitlige størrelse af datasæt <br> * Det gennemsnitlige antal datasæt, der indlæses i hukommelsen |
 | **Oversigt over dataflow** | * Det samlede antal dataflow på tværs af alle arbejdsområder i dine kapaciteter<br> * Det samlede antal opdateringer i løbet af de seneste syv dage<br> * Den gennemsnitlige ventetid for opdateringer – den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og opdateringen i minutter<br> * Den gennemsnitlige varighed af opdateringer – den tid, det tager at fuldføre opdateringen, i minutter |
 | **Oversigt over sideinddelt rapport** | * Det samlede antal sideinddelte rapporter på tværs af alle arbejdsområder i dine kapaciteter<br> * Det samlede antal gange, som alle rapporter er blevet set af brugere<br> * Det samlede antal rækker med data i alle rapporter<br> * Den samlede tid, det tager for alle faser (datahentning, -behandling og -gengivelse) i alle rapporter i millisekunder |
 |  |  |
@@ -98,29 +98,29 @@ Området **Opdateringer** indeholder følgende målepunkter.
 | **Opdateringsantal og hukommelsesforbrug pr. time** | * Succeser, fejl og hukommelsesforbrug opdelt i 1-times buckets, rapporteret i lokaltid |
 |  |  |
 
-##### <a name="query-durations-area"></a>Område Varighed af forespørgsler
+##### <a name="query-durations-area"></a>Område for forespørgselsvarigheder
 
-Området **Varighed af forespørgsler** indeholder følgende målepunkter.
+Området **Forespørgselsvarigheder** indeholder følgende målepunkter.
 
 | **Rapportafsnit** | **Målepunkter** |
 | --- | --- |
-| **Varighed af forespørgsler** | * Data i dette afsnit er opdelt i udsnit efter datasæt, arbejdsområde og buckets pr. time for de seneste syv dage<br> * I alt: Det samlede antal forespørgsler, der er kørt for datasættet<br> * Gennemsnit: Den gennemsnitlige varighed af forespørgsler for datasættet i millisekunder<br> * Maksimum: Varigheden af den længstvarende forespørgsel i datasættet i millisekunder|
-| **Distribution af varighed af forespørgsler** | * Histogrammet med varighed af forespørgsler er inddelt i buckets efter varighed af forespørgsler (i millisekunder) i følgende kategorier: intervaller af < = 30 ms, 30-100 ms, 100-300 ms, 300 ms-1 sek., 1-3 sek., 3-10 sek., 10-30 sek. og > 30 sek. Lang varighed af forespørgsler og lange ventetider betyder, at kapaciteten er overbelastet. Det kan også betyde, at et enkelt datasæt forårsager problemer, og at der er behov for yderligere undersøgelser. |
-| **Top 5-datasæt efter Gennemsnitlig varighed** | * De fem datasæt med den længstvarende gennemsnitlige varighed af forespørgsler i millisekunder |
+| **Forespørgselsvarigheder** | * Data i dette afsnit er opdelt i udsnit efter datasæt, arbejdsområde og buckets pr. time for de seneste syv dage<br> * I alt: Det samlede antal forespørgsler, der er kørt for datasættet<br> * Gennemsnit: Den gennemsnitlige varighed af forespørgsler for datasættet i millisekunder<br> * Maksimum: Varigheden af den længstvarende forespørgsel i datasættet i millisekunder|
+| **Distribution af forespørgselsvarighed** | * Histogrammet med forespørgselsvarighed er inddelt i buckets efter forespørgselsvarigheder (i millisekunder) i følgende kategorier: intervaller af < = 30 ms, 30-100 ms, 100-300 ms, 300 ms-1 sek., 1-3 sek., 3-10 sek., 10-30 sek. og > 30 sek. Lange forespørgselsvarigheder og lange ventetider betyder, at kapaciteten er overbelastet. Det kan også betyde, at et enkelt datasæt forårsager problemer, og at der er behov for yderligere undersøgelser. |
+| **Top 5-datasæt efter Gennemsnitlig varighed** | * De fem datasæt med den længstvarende gennemsnitlige forespørgselsvarighed i millisekunder |
 | **Direkte forespørgsel/liveforbindelser (> 80 % udnyttelse)** | * De gange, en direkte forespørgsel eller liveforbindelse har overskredet CPU-udnyttelsen på 80 % opdelt i 1-times buckets, rapporteret i lokaltid |
-| **Distributioner af varighed af forespørgsler pr. time** | * Antallet af forespørgsler og gennemsnitlig varighed (i millisekunder) vs. hukommelsesforbrug i GB opdelt i 1-times buckets, rapporteret i lokaltid |
+| **Distributioner af forespørgselsvarighed pr. time** | * Antallet af forespørgsler og gennemsnitlig varighed (i millisekunder) vs. hukommelsesforbrug i GB opdelt i 1-times buckets, rapporteret i lokaltid |
 |  |  |
 
 ##### <a name="query-waits-area"></a>Område for ventetider for forespørgsler
 
-Området **Varighed af forespørgsler** indeholder følgende målepunkter.
+Området **Forespørgselsventetider** indeholder følgende målepunkter.
 
 | **Rapportafsnit** | **Målepunkter** |
 | --- | --- |
-| **Ventetid for forespørgsler** | * Data i dette afsnit er opdelt i udsnit efter datasæt, arbejdsområde og buckets pr. time for de seneste syv dage<br> * I alt: Det samlede antal forespørgsler, der er kørt for datasættet<br> * Antal ventende: Antallet af forespørgsler i datasættet, der har ventet på systemressourcer, før udførelsen startes <br> * Gennemsnit: Den gennemsnitlige ventetid for forespørgsler for datasættet i millisekunder<br> * Maksimum: Varigheden af den længstventende forespørgsel i datasættet i millisekunder|
-| **Distribution af ventetid** | * Histogrammet med varighed af forespørgsler er inddelt i buckets efter varighed af forespørgsler (i millisekunder) i følgende kategorier: intervaller af <= 50 ms, 50-100 ms, 100-200 ms, 200-400 ms, 400 ms-1 sek., 1-5 sek. og > 5 sek. |
+| **Forespørgselsventetider** | * Data i dette afsnit er opdelt i udsnit efter datasæt, arbejdsområde og buckets pr. time for de seneste syv dage<br> * I alt: Det samlede antal forespørgsler, der er kørt for datasættet<br> * Antal ventende: Antallet af forespørgsler i datasættet, der har ventet på systemressourcer, før udførelsen startes <br> * Gennemsnit: Den gennemsnitlige ventetid for forespørgsler for datasættet i millisekunder<br> * Maksimum: Varigheden af den længstventende forespørgsel i datasættet i millisekunder|
+| **Distribution af ventetid** | * Histogrammet med forespørgselsvarighed er inddelt i buckets efter forespørgselsvarigheder (i millisekunder) i følgende kategorier: intervaller af <= 50 ms, 50-100 ms, 100-200 ms, 200-400 ms, 400 ms-1 sek., 1-5 sek. og > 5 sek. |
 | **Top 5 datasæt efter Gennemsnitlig ventetid** | * De fem datasæt med den længste gennemsnitlige ventetid inden udførelsen af en forespørgsel i millisekunder |
-| **Antal ventetid for forespørgsler og tidspunkter pr. time** | * Antal forespørgsler og den gennemsnitlige ventetid (i millisekunder) vs. hukommelsesforbrug i GB, opdelt i 1-times buckets, rapporteret i lokaltid |
+| **Antal forespørgselsventetider og tidspunkter pr. time** | * Antal forespørgsler og den gennemsnitlige ventetid (i millisekunder) vs. hukommelsesforbrug i GB, opdelt i 1-times buckets, rapporteret i lokaltid |
 |  |  |
 
 ##### <a name="datasets-area"></a>Området Datasæt
@@ -129,7 +129,7 @@ Området **Datasæt** indeholder følgende målepunkter.
 
 | **Rapportafsnit** | **Målepunkter** |
 | --- | --- |
-| **Antal fjernelser af datasæt** | * I alt: Det samlede antal *fjernelser* af datasættet for hver enkelt kapacitet. Når en kapacitet står over for øget hukommelsesforbrug, fjerner noden et eller flere datasæt fra hukommelsen. Datasæt, der er inaktive (uden forespørgsels-/opdateringshandlinger, der udføres i øjeblikket), ryddes først. Derefter er fjernelsesrækkefølgen baseret på en måling af 'mindst brugt for nylig'.|
+| **Antal datasætfjernelser** | * I alt: Det samlede antal *fjernelser* af datasættet for hver enkelt kapacitet. Når en kapacitet står over for øget hukommelsesforbrug, fjerner noden et eller flere datasæt fra hukommelsen. Datasæt, der er inaktive (uden forespørgsels-/opdateringshandlinger, der udføres i øjeblikket), ryddes først. Derefter er fjernelsesrækkefølgen baseret på en måling af 'mindst brugt for nylig'.|
 | **Datasætfjernelser og hukommelsesforbrug pr. time** | * Datasætfjernelser i forhold til hukommelsesforbrug i GB opdelt i 1-times buckets, rapporteret i lokaltid |
 | **Antal indlæste datasæt pr. time** | * Antal datasæt, der er indlæst i hukommelsen i forhold til hukommelsesforbrug i GB opdelt i 1-times buckets, rapporteret i lokaltid |
 | **Datastørrelser**  | * Maksimumstørrelse: Den maksimale størrelse af datasættet i MB for den viste periode |

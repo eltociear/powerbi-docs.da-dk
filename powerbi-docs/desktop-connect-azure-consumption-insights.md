@@ -6,20 +6,20 @@ manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 706fe9f3014ef14ff34100ff336fbf04b44e709c
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: f6c7df80f580c40cb1c0653b237894bb5911bde0
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280958"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282534"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Opret forbindelse til Azure Consumption Insights i Power BI Desktop (beta)
-Ved hjælp af connectoren **Azure Consumption Insights** kan du bruge **Power BI Desktop** til at oprette forbindelse til Azure og få detaljerede data og oplysninger om din organisations brug af Azure-tjenester. Du kan også oprette målinger, brugerdefinerede kolonner og visualiseringer, som kan rapporteres og deles, om din organisations brug af Azure. Denne version af connectoren **Azure Consumption and Insights** er en betaversion, som måske ændres.
+Ved hjælp af connectoren **Azure Consumption Insights** kan du bruge **Power BI Desktop** til at oprette forbindelse til Azure og få detaljerede data og oplysninger om din organisations brug af Azure-tjenester. Du kan også oprette målinger, brugerdefinerede kolonner og visuelle elementer, som kan rapporteres og deles, om din organisations brug af Azure. Denne version af connectoren **Azure Consumption and Insights** er en betaversion, som måske ændres.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01.png)
 
@@ -81,7 +81,7 @@ Når de markerede data er indlæst, kan de tabeller og felter, som du har valgt,
 ## <a name="using-azure-consumption-insights"></a>Brug Azure Consumption Insights
 Hvis du vil bruge connectoren **Azure Consumption Insights**, skal du have adgang til Enterprise-funktionerne på Azure-portalen.
 
-Når du har indlæst data ved hjælp af connectoren **Azure Consumption Insights**, kan du oprette dine egne brugerdefinerede målinger og kolonner ved hjælp af **forespørgselseditoren**, og du kan oprette visualiseringer, rapporter og dashboards, som du kan dele i **Power BI-tjenesten**.
+Når du har indlæst data ved hjælp af connectoren **Azure Consumption Insights**, kan du oprette dine egne brugerdefinerede målinger og kolonner ved hjælp af **forespørgselseditoren**, og du kan oprette visuelle elementer, rapporter og dashboards, som du kan dele i **Power BI-tjenesten**.
 
 Azure indeholder også en samling af brugerdefinerede eksempelforespørgsler, som du kan hente ved hjælp af en tom forespørgsel. For at gøre det skal du gå til båndet **Hjem** i **Power BI Desktop**, vælge rullelistepilen i **Hent data** og derefter vælge **Tom forespørgsel**. Det kan du også gøre i **forespørgselseditoren** ved at højreklikke i ruden **Forespørgsler** til venstre og derefter vælge **Ny forespørgsel > Tom forespørgsel** i den menu, der vises.
 
@@ -101,7 +101,7 @@ Når du arbejder med rapporter og opretter forespørgsler, kan du bruge følgend
 * Brug *ikke* *numberOfMonth* sammen med *startBillingDataWindow* eller *endBillingDataWindow*
 
 ## <a name="migrating-from-the-azure-enterprise-connector"></a>Overfør fra Azure Enterprise Connector
-Nogle kunder har oprettet visualiseringer ved hjælp af *Azure Enterprise Connector (beta)*, som ophører og erstattes med connectoren **Azure Consumption Insights**. Connectoren **Azure Consumption Insights** indeholder funktioner og forbedringer, der omfatter følgende:
+Nogle kunder har oprettet visuelle elementer ved hjælp af *Azure Enterprise Connector (beta)*, som ophører og erstattes med connectoren **Azure Consumption Insights**. Connectoren **Azure Consumption Insights** indeholder funktioner og forbedringer, der omfatter følgende:
 
 * Flere tilgængelige datakilder for *Saldooversigt* og *Køb fra Marketplace*
 * Nye og avancerede parametre, f.eks. *startBillingDataWindow* og *endBillingDataWindow*
@@ -146,7 +146,7 @@ Mange dashboards indeholder flere tabeller, der bruges til opslag eller filtreri
     ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
 ### <a name="step-5-verify-your-visuals-and-adjust-field-formatting-as-needed"></a>Trin 5: Kontrollér dine visualiseringer, og juster feltformatering efter behov
-Nu, hvor du er nået så langt, fungerer de fleste af dine oprindelige visualiseringer, tabeller, og detaljeadgange som forventet. Men du skal måske foretage et par mindre justeringer af formateringen, så det hele ser ud, som du ønsker det. Brug lidt tid på at kigge på dine dashboards og visualiseringer for at sikre, at de ser ud, som du ønsker det.
+Nu, hvor du er nået så langt, fungerer de fleste af dine oprindelige visuelle elementer, tabeller, og detaljeadgange som forventet. Men du skal måske foretage et par mindre justeringer af formateringen, så det hele ser ud, som du ønsker det. Brug lidt tid på at kigge på dine dashboards og visuelle elementer for at sikre, at de ser ud, som du ønsker det.
 
 ## <a name="using-the-azure-consumption-and-insights-aci-api-to-get-consumption-data"></a>Brug ACI-API'en (Azure Consumption and Insights) til at hente forbrugsdata
 Azure leverer også [**ACI-API'en (Azure Consumption and Insights)**](https://azure.microsoft.com/blog/announcing-general-availability-of-consumption-and-charge-apis-for-enterprise-azure-customers/). Du kan oprette dine egne brugerdefinerede løsninger til indsamling, rapportering og visualisering af oplysninger om Azure-forbrug ved hjælp af ACI-API'en.

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: ce2f993e2745cb0e5b359bfbc492e6e7aea25493
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: 3c5b33b4b056a5d2dfeeffd4c72ea878cf7d79c0
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53181327"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280280"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)
 
@@ -79,7 +79,7 @@ Punkterne på følgende liste skal også tages i betragtning:
 
 1.  Anna opretter et nyt apparbejdsområde og konfigurerer det til at gemme dataflow fra en CDM-mappe.
 2.  Ben, der også er medlem af det arbejdsområde, Anna har oprettet, ønsker at bruge Power BI Desktop og dataflowconnectoren til at hente data fra det dataflow, Anna har oprettet.
-3.  Ben får vist en fejl, da han ikke er tilføjetdataflowets SCM-mappe som en godkendt bruger data lake.
+3.  Ben får vist en fejl, da han ikke er føjet til dataflowets CDM-mappe som en godkendt bruger i den pågældende lake.
 
     ![Fejl under forsøg på at bruge dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 
@@ -92,18 +92,18 @@ I denne artikel får du vejledning i, hvordan du konfigurerer arbejdsområdelage
 
 Du kan finde flere oplysninger om dataflow, CDM og Azure Data Lake Storage Gen2 i følgende artikler:
 
-* [Integration af dataflow og Azure Data Lake (eksempelvisning)](service-dataflows-azure-data-lake-integration.md)
+* [Integration af dataflow og Azure Data Lake (prøveversion)](service-dataflows-azure-data-lake-integration.md)
 * [Konfigurer indstillinger for dataflow for arbejdsområde (eksempelvisning)](service-dataflows-configure-workspace-storage-settings.md)
 * [Opret forbindelse til Azure Data Lake Storage Gen2 til dataflowlager (eksempelvisning)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 
-Du kan finde oplysninger om dataflow generelt i disse artikler:
+Du kan finde generelle oplysninger om dataflow i disse artikler:
 
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
 * [Brug beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
 * [Brug dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
 * [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
 
-Du kan læse følgende artikler, hvis du vil vide mere om Azure Storage:
+Du kan finde flere oplysninger om Azure-lager i disse artikler:
 * [Sikkerhedsvejledning til Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-security-guide)
 * [Konfiguration af planlagt opdatering](refresh-scheduled-refresh.md)
 * [Kom i gang med Github-eksempler fra Azure Data Services](https://aka.ms/cdmadstutorial)
@@ -111,7 +111,7 @@ Du kan læse følgende artikler, hvis du vil vide mere om Azure Storage:
 Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:
 * [Common Data Model – oversigt](https://docs.microsoft.com/powerapps/common-data-model/overview)
 * [CDM-mapper](https://go.microsoft.com/fwlink/?linkid=2045304)
-* [Definition af CDM-modelfil](https://go.microsoft.com/fwlink/?linkid=2045521)
+* [Fildefinition af CDM-model](https://go.microsoft.com/fwlink/?linkid=2045521)
 
 Du kan altid prøve [at stille spørgsmål i Power BI-community'et](http://community.powerbi.com/).
 

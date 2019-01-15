@@ -7,22 +7,22 @@ ms.reviewer: ''
 featuredvideoid: MNAaHw4PxzE
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b24a58556c35a3213f3360b70d604a0e9b51b074
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: d935b044e5cbe1a2c84ce5749c3a0b58c528bab0
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280951"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282350"
 ---
 # <a name="drill-mode-in-a-visualization-in-power-bi"></a>Analysetilstand i en visualisering i Power BI
 
 ## <a name="drill-requires-a-hierarchy"></a>Analysetilstand kræver et hierarki
-Når der er et hierarki i en visualisering, kan du foretage detailudledning for at finde flere detaljer. Du har f.eks. en visualisering, der kigger på optælling af olympiske medaljer ud fra et hierarki udgjort af sport, disciplin og begivenhed. Som standard viser visualiseringen medaljeoptælling ud fra sportsgren – gymnastik, skiløb, vandsport osv. Men eftersom den har et hierarki, vises et stadigt mere detaljeret billede, når der vælges visuelle elementer (f.eks. søjle, linje eller boble). Vælg elementet **vandsport** for at få vist data for svømning, udspring og vandpolo.  Vælg elementet **udspring** for at få vist detaljer for vippe, platform og discipliner med synkronudspring.
+Når et visuelt element har et hierarki, kan du foretage detailudledning for at finde flere detaljer. Du har f.eks. en visualisering, der kigger på optælling af olympiske medaljer ud fra et hierarki udgjort af sport, disciplin og begivenhed. Som standard viser visualiseringen medaljeoptælling ud fra sportsgren – gymnastik, skiløb, vandsport osv. Men eftersom den har et hierarki, vises et stadigt mere detaljeret billede, når der vælges visuelle elementer (f.eks. søjle, linje eller boble). Vælg elementet **vandsport** for at få vist data for svømning, udspring og vandpolo.  Vælg elementet **udspring** for at få vist detaljer for vippe, platform og discipliner med synkronudspring.
 
 Du kan føje hierarkier til rapporter, du ejer, men ikke til rapporter, der deles med dig.
 Hvilke Power BI-visualiseringer indeholder et hierarki?  Hold musen over en visualisering, og hvis du får vist disse kontrolknapper for detailudledning i de øverste hjørner, har din visualisering et hierarki.
@@ -200,7 +200,7 @@ Bemærk, at dataene er de samme for kvartals- og årsrapporter, men når du anal
 ### <a name="hierarchical-category-data"></a>Hierarkiske kategoridata
 Data, der er udformet på baggrund af samlinger og undersamlinger, er hierarkiske. Det er placeringsdata et godt eksempel på. Overvej en tabel i en datakilde, hvor kolonnerne er Land, Stat, By og Postnummer. Data, der deler samme Land, Stat og By, er hierarkiske.
 
-I dette eksempel skal du følge med vha. [eksemplet på analyse af detailhandel](../sample-datasets.md). Opret en visualisering med et stablet søjlediagram, der viser **Samlet antal enheder dette år** (værdier) efter **Område**, **By**, **Postnummer** og **Navn** (gruppe).  
+I dette eksempel skal du følge med vha. [eksemplet på detailhandelsanalyse](../sample-datasets.md). Opret en visualisering med et stablet søjlediagram, der viser **Samlet antal enheder dette år** (værdier) efter **Område**, **By**, **Postnummer** og **Navn** (gruppe).  
 
 ![søjlediagram med Samlet antal enheder dette år efter område](media/end-user-drill/power-bi-hierarchical-axis-category-1.png)
 

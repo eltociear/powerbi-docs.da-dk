@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: 3c1340d9cae7e7002e8bbbdc3d6888e19b1ce7ff
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: d768edbbc57e52186fdb33e1aed9a3da76408963
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900192"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275588"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service-preview"></a>Opret en integreret datakilde for sideinddelte rapporter i Power BI-tjenesten (eksempelvisning)
 I denne artikel kan du læse om, hvordan du opretter og redigerer en integreret datakilde for en sideinddelt rapport i Power BI-tjenesten. Du definerer en integreret datakilde i en enkelt rapport og bruger den kun i denne rapport. I øjeblikket skal sideinddelte rapporter, der er publiceret i Power BI-tjenesten, bruge integrerede datasæt og datakilder, og de kan oprette forbindelse til følgende datakilder:

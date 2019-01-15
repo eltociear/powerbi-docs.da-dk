@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/28/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: cc374da84e269abe18a52270c0d9fd15987cf666
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: 6d818252d60c2e6e123e4dff0c64dd5e2408cad2
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452608"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285731"
 ---
 # <a name="data-alerts-in-power-bi-service"></a>Databeskeder i Power BI-tjenesten
 Angiv beskeder, så du får besked, når dataene på dine dashboards ændres ud over de grænser, du har angivet. 
@@ -73,7 +73,7 @@ Derefter sendes en besked til meddelelsescenteret og evt. en mail via Power BI. 
    > 
 
 ## <a name="managing-alerts"></a>Administration af beskeder
-Der er mange måder, du kan administrere dine beskeder på: fra selve dashboardfeltet, fra menuen Indstillinger for Power BI og på et individuelt felt i [Power BI-mobilappen på iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) eller i [Power BI-mobilappen til Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
+Der er mange måder at administrere dine beskeder på: Fra selve dashboardfeltet, fra menuen Indstillinger for Power BI og på et individuelt felt i [Power BI-mobilappen på iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) eller i [Power BI-mobilappen til Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
 ### <a name="from-the-tile-itself"></a>Fra selve feltet
 1. Hvis du vil ændre eller fjerne en besked fra et felt, skal du genåbne vinduet **Administrer beskeder** ved at vælge klokkeikonet for ![Beskedikon](media/service-set-data-alerts/power-bi-bell-icon.png). Alle de beskeder, du har angivet for dette felt, vises.

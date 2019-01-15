@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 67a04f1ae1bd5858aa4413c77a6d98ac5a04d32f
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 84e2bc663a4e3912608279c7315bc494b3c9844a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51620048"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296518"
 ---
 # <a name="modeling-view-in-power-bi-desktop-preview"></a>Udformningsvisning i Power BI Desktop (prøveversion)
 
@@ -66,12 +66,12 @@ Du kan f.eks. ændre [lagringstilstanden](desktop-storage-mode.md) for flere tab
 I følgende artikler beskrives flere detaljer om datamodeller og DirectQuery.
 
 * [Sammenlægninger i Power BI Desktop (prøveversion)](desktop-aggregations.md)
-* [Sammensatte modeller i Power BI Desktop (prøveversion)](desktop-composite-models.md)
-* [Lagringstilstand i Power BI Desktop (prøveversion)](desktop-storage-mode.md)
-* [Mange til mange-relationer i Power BI Desktop (prøveversion)](desktop-many-to-many-relationships.md)
+* [Sammensatte modeller i Power BI Desktop (Preview)](desktop-composite-models.md)
+* [Lagringstilstand i Power BI Desktop (Preview)](desktop-storage-mode.md)
+* [Mange til mange-relationer i Power BI Desktop (Preview)](desktop-many-to-many-relationships.md)
 
 
 Artikler om DirectQuery:
 
-* [Brug af DirectQuery i Power BI](desktop-directquery-about.md)
+* [Brug af DirectQuery in Power BI](desktop-directquery-about.md)
 * [Understøttede datakilder i forbindelse med DirectQuery i Power BI](desktop-directquery-data-sources.md)

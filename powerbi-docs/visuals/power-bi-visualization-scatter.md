@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: PVcfPoVE3Ys
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9b508964062146ff140bcb85b0b8b42e9bf4f68f
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 26dd55f1084d62f9506b02c5852f0396adba305a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830119"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290308"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Punktdiagrammer, boblediagrammer og prikdiagrammer i Power BI
 Et punktdiagram har altid to værdiakser for at vise ét sæt numeriske data langs en vandret akse og et andet sæt numeriske værdier langs en lodret akse. Diagrammet viser punkter ved skæringspunktet for en numerisk x- og y-værdi og kombinerer disse værdier i enkelte datapunkter. Disse datapunkter kan være fordelt jævnt eller ujævnt på tværs af den vandrette akse afhængigt af dataene.
@@ -96,7 +96,7 @@ Nu tilføjer jeg en tredje dimension.
 
 4. Du kan [formatere farver, navne, titler, baggrund og mere i dine visualiseringer](service-getting-started-with-color-formatting-and-axis-properties.md). Hvis du vil [forbedre tilgængeligheden](../desktop-accessibility.md), bør du overveje at føje mærkeformer til hver enkelt linje. Hvis du bruger en anden mærkeform for hver enkelt linje, kan brugere af rapporter nemmere adskille linjer (eller områder) fra hinanden. Hvis du vil vælge mærkeformen, skal du udvide kortet **Figurer** og derefter vælge en mærkeform.
 
-      ![Mærkeform](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
+      ![Mærkefigur](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
 
    Du kan også ændre mærkeformen til diamant, trekant eller firkant:
 

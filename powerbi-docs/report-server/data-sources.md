@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maghan
-ms.openlocfilehash: 0f06d5c3742ea5187ff41f6f8974c8a81e5d1d33
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: de16c10a03654802e4c65bfa92e60259e2f9510d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34310446"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291744"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakilder på Power BI-rapportserver
 Power BI-rapporter kan oprette forbindelse til en række datakilder. Der er adgang til forskellige datakilder, afhængigt af hvordan dataene bruges. Dataene kan importeres, eller der kan foretages forespørgsler om data direkte ved hjælp af DirectQuery eller en direkte forbindelse til SQL Server Analysis Services.
@@ -119,7 +119,7 @@ Power BI-rapportserver understøtter ikke OAuth-baseret godkendelse i forbindels
 
 | **Datakilde** | **Anonym godkendelse** | **Nøglegodkendelse** | **Brugernavn og adgangskode** | **Windows-godkendelse** |
 | --- | --- | --- | --- | --- |
-| SQL Server-database |Nej |Nej |Ja |Ja |
+| SQL Server Database |Nej |Nej |Ja |Ja |
 | SQL Server Analysis Services |Nej |Nej |Ja |Ja |
 | Web |Ja |Nej |Ja |Ja |
 | Azure SQL Database |Nej |Nej |Ja |Nej |
@@ -135,7 +135,7 @@ Power BI-rapportserver understøtter ikke OAuth-baseret godkendelse i forbindels
 | Facebook |Nej |Nej |Nej |Nej |
 | Mappe |Nej |Nej |Nej |Ja |
 | Google Analytics |Nej |Nej |Nej |Nej |
-| Hadoop File (HDFS) |Nej |Nej |Nej |Nej |
+| Hadoop-fil (HDFS) |Nej |Nej |Nej |Nej |
 | IBM DB2-database |Nej |Nej |Ja |Ja |
 | Impala |Nej |Nej |Nej |Nej |
 | Microsoft Exchange |Nej |Nej |Nej |Nej |
@@ -197,7 +197,7 @@ Power BI-rapportserver understøtter ikke OAuth-baseret godkendelse i forbindels
 
 | **Datakilde** | **Anonym godkendelse** | **Nøglegodkendelse** | **Brugernavn og adgangskode** | **Windows-godkendelse** | **Integreret Windows-godkendelse** |
 | --- | --- | --- | --- | --- | --- |
-| SQL Server-database |Nej |Nej |Ja |Ja |Ja |
+| SQL Server Database |Nej |Nej |Ja |Ja |Ja |
 | SQL Server Analysis Services |Nej |Nej |Ja |Ja |Ja |
 | Azure SQL Database |Nej |Nej |Ja |Nej |Nej |
 | Azure SQL Data Warehouse |Nej |Nej |Ja |Nej |Nej |

@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 01/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a219ad94725f8d5423597bd65321f0024f95c1bb
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: cce99c8a0e0908ef901408cbb19397fa098bac38
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46545998"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289595"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Tilpas visualiseringernes titler, forklaringer og baggrunde
 I dette selvstudium lærer du et par forskellige måder, hvorpå du kan tilpasse dine visualiseringer.   Der findes mange muligheder for at tilpasse dine visualiseringer. Den bedste måde at lære dem at kende på, er ved at prøve sig frem med indstillingerne under fanen Formatering (vælg ikonet med malerullen).  I denne artikel kan du se, hvordan du tilpasser en visualiserings titel, forklaring og baggrund.  

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 37eaa9e26a6386379dd165e15cffab3e42dc9546
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: 224fc07fccc2b12b0a28c016f427a4d5f4613290
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51267299"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293694"
 ---
 # <a name="using-incremental-refresh-with-power-bi-dataflows-preview"></a>Brug af trinvis opdatering med Power BI-dataflow (prøveversion)
 
@@ -52,8 +52,8 @@ På følgende liste kan du se en forklaring af indstillingerne i vinduet **Indst
     I dette eksempel defineres en opdateringspolitik, der angiver, at der skal gemmes data for 5 år i alt, og at der skal udføres en trinvis opdatering af data for 10 dage. Hvis objektet opdateres dagligt, udføres følgende for hver opdateringshandling:
 
     * Tilføj en ny dags data.
-    * Opdater 10 dage op til dags dato.
-    * Fjern kalenderår, der er ældre end 5 år fra den aktuelle dato. Hvis dags dato f.eks. er 1. januar 2019, fjernes året 2013.
+    * Opdater ti dage op til dags dato.
+    * Fjern kalenderår, der er ældre end fem år fra den aktuelle dato. Hvis dags dato f.eks. er 1. januar 2019, fjernes året 2013.
 
     Det kan tage et stykke tid at importere data for 5 år under den første opdatering af dataflowet, men efterfølgende opdateringer vil sandsynligvis blive udført på en brøkdel af tiden for den første opdatering.
 

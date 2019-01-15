@@ -1,24 +1,24 @@
 ---
 title: Tip og trick til at stille spørgsmål ved hjælp af Spørgsmål og svar
-description: Tip og trick til at stille spørgsmål ved hjælp af Spørgsmål og svar i Power BI
+description: Tip og tricks til at stille spørgsmål med Spørgsmål og svar i Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 52ce1d0eaf9b99c2717b733592c46d65d2209083
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: 42460930c3e5406c9a3822c75084d641fd9255bf
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280437"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292332"
 ---
-# <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tip til at stille spørgsmål ved hjælp af Spørgsmål og svar i Power BI
+# <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tip til at stille spørgsmål med Spørgsmål og svar i Power BI
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Ord og terminologi, som Spørgsmål og svar genkender
 Denne liste over nøgleord på denne side er ikke udtømmende.  Den bedste måde at se, om Power BI genkender et nøgleord, er ved at prøve at indtaste det i spørgsmålsfeltet.  Hvis ordet eller begrebet er nedtonet, genkender Power BI det ikke.
 

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 516f468702b9731347d3ceacf3ee77ab8ac7f5aa
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: 96b6e1a8a92b19181463de404967625b37418582
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53181322"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291941"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Konfigurer indstillinger for dataflow for arbejdsområder (prøveversion)
 
@@ -41,7 +41,7 @@ Hvis du vil oprette et nyt apparbejdsområde i Power BI-tjenesten, skal du vælg
 
 I dialogboksen Opret et apparbejdsområde, vises der muligvis en kasse med titlen **Prøveversion af forbedrede arbejdsområder**. I dette område skal du vælge **Prøv nu**.
 
-![Prøveversion af forbedrede arbejdsområder](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_02.jpg)
+![Eksempelvisning af forbedrede arbejdsområder](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_02.jpg)
 
 I den viste dialogboks kan du give din nyt arbejdsområde et entydigt navn. Vælg ikke **Gem** endnu, da du skal foretage avancerede indstillinger.
 

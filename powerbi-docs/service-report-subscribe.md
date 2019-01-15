@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/04/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 43d15529353f17733923d2b2a73b336d7d4ee6e0
-ms.sourcegitcommit: 4f46d71ff6026c1c158f007425aefdcb501f48ee
+ms.openlocfilehash: f813822b269a51e55947d73c5107675cbe428d96
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52981508"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293804"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Abonner på en rapport eller et dashboard i Power BI-tjenesten
 Det har aldrig været nemmere at holde dig opdateret om dine vigtigste dashboards og rapporter. Abonner på de rapportsider og dashboards, der betyder mest for dig og dine kolleger, og Power BI sender et snapshot til din indbakke. Fortæl Power BI, hvor ofte du gerne vil modtage mails: fra en gang om dagen til en gang om ugen. 
@@ -67,7 +67,7 @@ I nedenstående tabel beskrives, hvor ofte du modtager en mail. Det afhænger al
 |  | **DirectQuery** | **Live Connect** | **Planlagt opdatering (import)** | **Excel-fil i OneDrive/SharePoint Online** |
 | --- | --- | --- | --- | --- |
 | **Hvor ofte bliver rapporten/dashboardet opdateret?** |Hvert 15. min. |Power BI undersøger hvert 15. minut, og hvis datasættet er ændret, opdateres rapporten. |Brugeren vælger ingen, dagligt eller ugentligt. Dagligt kan være op til 8 gange om dagen. Ugentlig er faktisk en ugentlig tidsplan, som brugeren opretter og indstiller til opdatering så lidt som en gang om ugen og så ofte som dagligt. |Én gang i timen |
-| **Hvor stor kontrol har brugeren over tidsplanen for mail ifm. abonnementet?** |Indstillinger er: dagligt eller ugentligt |Ingen indstillinger: Brugerne får tilsendt en mail, hvis rapporten opdateres, men ikke mere end én gang om dagen. |Hvis tidsplanen for opdatering er dagligt, kan der vælges dagligt og ugentligt.  Hvis tidsplanen for opdatering er ugentligt, kan der kun vælges ugentligt. |Ingen indstillinger: Brugeren får tilsendt en mail, når datasættet opdateres, men ikke mere end én gang om dagen. |
+| **Hvor stor kontrol har brugeren over tidsplanen for mail ifm. abonnementet?** |Indstillinger er: dagligt eller ugentligt |Ingen indstillinger: Brugerne får tilsendt en mail, hvis rapporten opdateres, men ikke mere end én gang om dagen. |Hvis tidsplanen for opdatering er dagligt, er indstillinger dagligt og ugentligt.  Hvis tidsplanen for opdatering er ugentligt, kan der kun vælges ugentligt. |Ingen indstillinger: Brugeren får tilsendt en mail, når datasættet opdateres, men ikke mere end én gang om dagen. |
 
 ## <a name="manage-your-subscriptions"></a>Administrer dine abonnementer
 Det er kun den person, der har oprettet abonnementet, der kan administrere det.  Der er 2 veje til skærmen, hvor du kan administrere dine abonnementer.  Den første er at vælge **Administrer alle abonnementer** i dialogboksen **Abonner på mails** (se skærmbilledet under trin 4 herover). Den anden er at vælge tandhjulsikonet ![tandhjulsikon](media/service-report-subscribe/power-bi-settings-icon.png) i Power BI på den øverste menulinje og at vælge **Indstillinger**.

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: eea68f0a17deff3aaa5a39558ffc2165b4c2b6f6
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: 4a9fa542780beafdbb5313e9de5a4875a3f39cb8
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280346"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54274806"
 ---
 # <a name="import-excel-workbooks-into-power-bi-desktop"></a>Importér Excel-projektmapper til Power BI Desktop
 Med **Power BI Desktop** kan du nemt importere Excel projektmapper, der indeholder forespørgsler fra Power-forespørgsel, Power Pivot-modeller og regneark fra Power-visning, til Power BI Desktop. Rapporter og visualiseringer oprettes automatisk på basis af Excel-projektmappen, og når de er importeret, kan du fortsætte med at forbedre og tilpasse rapporterne i Power BI Desktop ved hjælp af de eksisterende funktioner og nye funktioner, der udgives sammen de månedlige opdateringer af Power BI Desktop.

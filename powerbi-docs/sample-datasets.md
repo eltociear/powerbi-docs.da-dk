@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: amac
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: e46cfffc28bd77685e0a34b492e54234a76afa35
-ms.sourcegitcommit: f25464d5cae46691130eb7b02c33f42404011357
+ms.openlocfilehash: ae1aa4bb5a345d72a33d3d859a6a47de6c27b0ed
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53180892"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291527"
 ---
 # <a name="what-sample-data-is-available-to-use-with-power-bi"></a>Hvilke eksempeldata er tilgængelige til brug med Power BI?
 Lad os antage, at du ikke kender Power BI og vil afprøve det, men ikke har nogen data.  Eller måske har du et datasæt, men da du ikke (endnu) forstår, hvordan Power BI fungerer, er du bekymret for, om du på en eller anden måde kommer til at beskadige datasættet?
@@ -55,7 +55,7 @@ Der er otte eksempler, du kan bruge.  Hvert enkelt repræsenterer en anden branc
 Dette brancheeksempel analyserer en finansdirektørs oversigt over målepunkter for hendes direktører, produkter og kunder. Du kan undersøge, hvilke faktorer der påvirker virksomhedens rentabilitet.
 
 ### <a name="human-resources-sample--human-resources-samplemediasample-datasetspower-bi-hrpng"></a>Eksempel på HR  ![Eksempel på HR](media/sample-datasets/power-bi-hr.png)
-[Få en introduktion til eksemplet på HR](sample-human-resources.md)
+[Få en introduktion til HR-eksemplet](sample-human-resources.md)
 
 Dette brancheeksempel fokuserer på ansættelsesstrategien for en virksomhed ved at analysere nyansættelser, aktive medarbejdere og medarbejdere, der har forladt virksomheden.  Ved at undersøge dataene kan du finde tendenser i frivillige separationer og antagelser i ansættelsesstrategien.
 
@@ -75,7 +75,7 @@ Dette brancheeksempel undersøger en softwarevirksomheds salgskanal. Salgschefer
 Dette brancheeksempel analyserer en finansdirektørs oversigt over målepunkter for hendes direktører, produkter og kunder. Du kan undersøge, hvilke faktorer der påvirker virksomhedens rentabilitet
 
 ### <a name="retail-analysis-sample--retail-analysis-samplemediasample-datasetspower-bi-rspng"></a>Eksempel på analyse af detailhandel  ![Eksempel på analyse af detailhandel](media/sample-datasets/power-bi-rs.png)
-[Få en introduktion til eksemplet på analyse af detailhandel](sample-retail-analysis.md)
+[Få en introduktion til eksemplet på detailanalyse](sample-retail-analysis.md)
 
 Dette brancheeksempel analyserer data om detailsalg for varer, der er solgt på tværs af flere butikker og distrikter. De metriske værdier sammenligner dette års resultat med sidste års på følgende områder: salg, enheder, bruttoavance og varians samt analyse af nye butikker.
 
@@ -117,16 +117,16 @@ Nu hvor du har data, er du i gang.  Afprøv nogle af vores selvstudier ved hjæl
 ## <a name="the-power-bi-samples-as-excel-files"></a>Power BI-eksemplerne som Excel-filer
 Alle eksempelindholdspakkerne er også tilgængelige som en Excel-projektmappe. Excel-projektmapperne er udviklet til brug med Power BI-tjenesten.  
 
-1. Download filerne hver for sig ved hjælp af linkene nedenfor, eller [download en zip-fil med alle eksempelfilerne](http://go.microsoft.com/fwlink/?LinkId=535020). Hvis du er mere erfaren bruger, kan du vælge at downloade Excel-projektmapperne for at udforske eller redigere datamodellerne.
+1. Download filerne hver for sig ved hjælp af linkene nedenfor, eller [download en zip-fil med alle eksempelfilerne](http://go.microsoft.com/fwlink/?LinkId=535020). Hvis du er mere erfaren bruger, kan du vælge at downloade Excel-projektmapperne for udforske eller redigere datamodellerne.
 
-   * [Eksempel på detailhandelsanalyse](http://go.microsoft.com/fwlink/?LinkId=529778)
-   * [Eksempel på analyse af leverandørkvalitet](http://go.microsoft.com/fwlink/?LinkId=529779)
-   * [Eksempel på HR](http://go.microsoft.com/fwlink/?LinkId=529780)
-   * [Eksempel på kunderentabilitet](http://go.microsoft.com/fwlink/?LinkId=529781)
-   * [Eksempel på sporing af mulighed](http://go.microsoft.com/fwlink/?LinkId=529782)
-   * [Eksempel på analyse af it-forbrug](http://go.microsoft.com/fwlink/?LinkId=529783)
-   * [Eksempel på indkøbsanalyse](http://go.microsoft.com/fwlink/?LinkId=529784)
-   * [Eksempel på salg og marketing](http://go.microsoft.com/fwlink/?LinkId=529785)
+   * [Retail Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529778)
+   * [Supplier Quality Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529779)
+   * [Human Resources Sample](http://go.microsoft.com/fwlink/?LinkId=529780)
+   * [Customer Profitability Sample](http://go.microsoft.com/fwlink/?LinkId=529781)
+   * [Opportunity Tracking Sample](http://go.microsoft.com/fwlink/?LinkId=529782)
+   * [IT Spend Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529783)
+   * [Procurement Analysis Sample](http://go.microsoft.com/fwlink/?LinkId=529784)
+   * [Sales and Marketing Sample](http://go.microsoft.com/fwlink/?LinkId=529785)
 2. Gem den downloadede fil. Det gør en forskel, hvor du gemmer filen.
 
    * ![Lokal](media/sample-datasets/power-bi-local-file2.png)  **Lokal** – Hvis du gemmer din fil på et lokalt drev på computeren eller en anden placering i organisationen, kan du fra Power BI importere filen i Power BI. Filen bliver på den lokale harddisk, så det er ikke hele filen, der importeres til Power BI. Der sker det, at et nyt datasæt oprettes på dit Power BI-websted, og data, og i nogle tilfælde datamodellen, indlæses i datasættet. Hvis filen indeholder rapporter, vises de på Power BI-webstedet under Rapporter.

@@ -4,17 +4,17 @@ description: Få en forståelse af administration og optimering af hukommelse me
 ms.date: 10/18/2018
 ms.topic: conceptual
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.author: mblythe
 ms.reviewer: mblythe
 author: mgblythe
 manager: kfile
-ms.openlocfilehash: 534c06c66d561a04dbffc04412095d6924c92781
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: efb0f1dfd340c0defcba8a67e0e46051d0d9be25
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266064"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293832"
 ---
 # <a name="microsoft-power-bi-premium-capacity-resource-management-and-optimization"></a>Administration og optimering af ressourcer med Microsoft Power BI Premium-kapacitet
 
@@ -55,7 +55,7 @@ Hvis der oprettes en interaktiv forespørgsel til et datasæt i kapaciteten, og 
 
 ### <a name="workloads"></a>Arbejdsbelastninger
 
-Som standard understøtter kapaciteter for **Power BI Premium** og **Power BI Embedded** kun den arbejdsbelastning, der er knyttet til Power BI-forespørgsler, som kører i clouden. Vi tilbyder nu understøttelse af yderligere to arbejdsbelastninger: **sideinddelte rapporter** og **dataflow**. Hvis funktionen er aktiveret, kan det påvirke hukommelsesforbruget i din kapacitet. Du kan finde flere oplysninger under [Konfigurer arbejdsbelastninger](service-admin-premium-manage.md#configure-workloads).
+Som standard understøtter kapaciteter for **Power BI Premium** og **Power BI Embedded** kun den arbejdsbelastning, der er knyttet til Power BI-forespørgsler, som kører i clouden. Vi tilbyder nu understøttelse af yderligere to arbejdsbelastninger: **Sideinddelte rapporter** og **Dataflow**. Hvis funktionen er aktiveret, kan det påvirke hukommelsesforbruget i din kapacitet. Du kan finde flere oplysninger under [Konfigurer arbejdsbelastninger](service-admin-premium-manage.md#configure-workloads).
 
 ## <a name="cpu-resource-management-in-premium-capacity"></a>CPU-ressourcestyring i Premium-kapacitet
 

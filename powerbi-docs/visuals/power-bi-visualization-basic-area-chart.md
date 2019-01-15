@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d6793c41cea8da251fd700800e1f11ca88bb0be4
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 02d81a4ebb92ec199887109c7f2d9afcb6449eda
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47416952"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276117"
 ---
 # <a name="basic-area-chart"></a>Basisområdediagram
 Basisområdediagrammet (lagdelt områdediagram) er baseret på kurvediagrammet. Området mellem akse og kurve er udfyldt med farver for at angive mængde. 
@@ -31,7 +31,7 @@ Basisområdediagrammer er et godt valg:
 * Når du har enkelte perioder, der repræsenterer et sæt, som kan tælles fysisk.
 
 ### <a name="prerequisites"></a>Forudsætninger
- - Power BI-tjeneste
+ - Power BI-tjenesten
  - Eksempel på analyse af detailhandel
 
 Log på Power BI for at følge fremgangsmåden, og vælg **Hent Data \>Eksempler \> Eksempel på detailhandelsanalyse > Opret forbindelse**, og vælg **Gå til dashboard**. 

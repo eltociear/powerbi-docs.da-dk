@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: a84a5da9600daa7ef55ed5a707affa4ee1da4aba
-ms.sourcegitcommit: b45134887a452f816a97e384f4333db9e1d8b798
+ms.openlocfilehash: 5c388a15132c7f433a50c2975aa4b45195c55bf9
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47238094"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285041"
 ---
 # <a name="manage-your-data-source---analysis-services"></a>Administrer din datakilde – Analysis Services
 Når du har installeret datagatewayen i det lokale miljø, skal du tilføje datakilder, der kan bruges sammen med gatewayen. I denne artikel kan du se, hvordan du arbejder med gateways og datakilder. Du kan bruge Analysis Services-datakilden til enten planlagte opdateringer eller direkte forbindelser.
@@ -153,7 +153,7 @@ Sådan konfigurerer du gatewayen til at udføre AD-opslaget:
 
 2. I gatewayen skal du ændre **datagatewaytjenesten i det lokale miljø**, så den kører med en domænekonto (i stedet for en lokal tjenestekonto – ellers fungerer AD-opslaget ikke korrekt på kørselstidspunktet). Du skal genstarte gatewaytjenesten, for at ændringerne kan træde i kraft.  Gå til gatewayappen på din maskine (søg efter "datagateway i det lokale miljø "). Det gør du ved at gå til **Tjenesteindstillinger > Rediger tjenestekonto**. Kontrollér, at du har genoprettelsesnøglen til denne gateway, da du skal gendanne den på den samme maskine, medmindre du vil oprette en ny gateway i stedet. 
 
-3. Gå til installationsmappen for gatewayen, *C:\Programmer\On-premises data gateway* som administrator for at sikre, at du har skriverettigheder, og rediger følgende fil: Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
+3. Gå til installationsmappen for gatewayen, *C:\Program Files\On-premises data gateway* som administrator for at sikre, at du har skriverettigheder, og rediger følgende fil: Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config 
 
 4. Rediger følgende to konfigurationsværdier i henhold til *dine* Active Directory-attributkonfigurationer til AD-brugerne. De konfigurationsværdier, der vises nedenfor, er kun nogle eksempler – du skal angive dem ud fra konfigurationen af Active Directory. Der skelnes mellem store og små bogstaver i disse konfigurationer, så sørg for, at de stemmer overens med værdierne i Active Directory.
 

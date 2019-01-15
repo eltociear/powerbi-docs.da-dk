@@ -5,26 +5,26 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 238d068e5083c8f46ac3299faddd4e0872f0654d
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 2cba79a98400ba517bca8e61fca743bc0024a122
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34812623"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288859"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Trin 2: Hent et adgangstoken til godkendelse
-Denne artikel er en trinvis gennemgang af, hvordan du kan [pushe data til et datasæt](walkthrough-push-data.md).
+Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
 
 På **trin 1** i Push data til et datasæt, [Registrer appen med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md), registrerede du en klientapp i Azure AD. På dette trin henter du et adgangstoken til godkendelse. Power BI-apps er integreret med **Azure AD** for at give sikker logon og godkendelse til din app. Du kan bruge et token til at godkende til **Azure AD** og få adgang til Power BI-ressourcer.
 
 Sådan henter du et adgangstoken til godkendelse.
 
 ## <a name="get-an-authentication-access-token"></a>Hent et adgangstoken til godkendelse
-> **Bemærk!** Inden du går i gang, skal du sikre, at du har fulgt de tidligere trin i gennemgangen [Push data til et datasæt](walkthrough-push-data.md).
+> **BEMÆRK**! Før du begynder, skal du kontrollere, at du har fulgt de foregående trin i gennemgangen [Send data til et datasæt](walkthrough-push-data.md).
 > 
 > 
 

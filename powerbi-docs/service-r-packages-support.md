@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b88b17e428633e9d610724a8c3daa145c9928ae2
-ms.sourcegitcommit: 72c9d9ec26e17e94fccb9c5a24301028cebcdeb5
+ms.openlocfilehash: e74b0399ffdf2b5ca79eecb6451ccd676c1095db
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53026862"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296702"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>R-pakker i Power BI-tjenesten
 Du kan bruge det effektive [R-programmeringssprog](https://www.r-project.org/) til at skabe visuelle elementer i Power BI-tjenesten. Mange R-pakker understøttes i Power BI-tjenesten (og der understøttes hele tiden flere og flere), og nogle pakker understøttes ikke.

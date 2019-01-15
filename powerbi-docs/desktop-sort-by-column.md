@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1fc906e758c456b5ae1e748a186dbaef2c1ff38e
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: 5deca1a92836e442bfa9beeb90fe8a2bc2a74841
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909657"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285915"
 ---
 # <a name="sort-by-column-in-power-bi-desktop"></a>Sortér efter kolonne i Power BI Desktop
 I **Power BI Desktop** og **Power BI-tjenesten** kan du ændre, hvordan en visuel gengivelse ser ud, ved at sortere den efter forskellige datafelter. Hvis du ændrer, hvordan du sorterer en visualisering, kan du fremhæve de oplysninger, du vil formidle, og sikre, at visualiseringen afspejler eller fremhæver den tendens.

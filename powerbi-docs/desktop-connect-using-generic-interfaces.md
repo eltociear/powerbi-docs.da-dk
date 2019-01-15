@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a76e287b957407bad98ceae92c5f6b39cde0b31d
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: c1671c820b6de4cddac169c67103168ac46ffc1f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578560"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296035"
 ---
 # <a name="connect-to-data-using-generic-interfaces-in-power-bi-desktop"></a>Opret forbindelse til data med generiske grænseflader i Power BI Desktop
 Du kan oprette forbindelse til en lang række forskellige datakilder i **Power BI Desktop** ved hjælp af de indbyggede dataforbindelser, der strækker sig lige fra **Access-databaser** til **Zendesk**-ressourcer, som vist i vinduet **Hent data**. Du kan også oprette forbindelse til mange *andre* typer datakilder for at få endnu flere muligheder for at oprette forbindelse ved hjælp af de generiske grænseflader (f.eks **ODBC** eller **REST API'er**), der er indbygget i **Power BI Desktop**.

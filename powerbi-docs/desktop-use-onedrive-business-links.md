@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b2757c9980bed8a0312b3a100b65c4ef47a1fd00
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: eaf61fd738c4e24f8f8b211011b005d027ef5e2c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669031"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289733"
 ---
 # <a name="use-onedrive-for-business-links-in-power-bi-desktop"></a>Brug links til OneDrive for Business i Power BI Desktop
 Mange brugere har Excel-projektmapper gemt på deres OneDrive for Business-drev, som vil være velegnet til brug med Power BI Desktop. Med **Power BI Desktop** kan du bruge onlinelinks til **Excel**-filer, der er gemt i **OneDrive for Business**, til at oprette rapporter og visualiseringer. Du kan bruge en **OneDrive for Business**-gruppekonto eller din egen **OneDrive for Business**-konto.

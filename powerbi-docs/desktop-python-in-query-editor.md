@@ -5,17 +5,17 @@ author: otarb
 manager: rajatt
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: c3664eee2d3836fc802d1728bbfe7fce3e03e18d
-ms.sourcegitcommit: 5eb0f37f59b5fec15c0caecbbd1f8d688c7f0013
+ms.openlocfilehash: d97c59b7c5d25e85dee5f3b5b5b6ae8d24ae6cb2
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51297199"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283316"
 ---
 # <a name="using-python-in-query-editor"></a>Brug af Python i Forespørgselseditor
 Du kan bruge **Python**, som er et programmeringssprog, der bruges af statistikere, datavidenskabsfolk og dataanalytikere, i **Forespørgselseditor** i Power BI Desktop. Denne integration af Phyton i **Forespørgselseditor** gør det muligt at udføre datarensning ved hjælp af R og udføre avanceret dataudformning og -analyser i datasæt, herunder fuldførelse af manglende data, forudsigelser og klyngedannelse, blot for at nævne nogle få. **Phyton** er et effektivt sprog og kan bruges i **Forespørgselseditor** til at forberede din datamodel og oprette rapporter.

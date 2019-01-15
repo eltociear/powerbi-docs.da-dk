@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/15/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f4825e8d8d47f755b01748c847b0fcf110db030a
-ms.sourcegitcommit: 6c6aa214dc36c26a01b29e823598d217a3e2b8a1
+ms.openlocfilehash: f1ddcee1e39f8704eda7cc94cffb27c1a8b6b75f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53451438"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290331"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Brug af SAP BW Connector i Power BI Desktop
 Med Power BI Desktop har du adgang til data i **SAP Business Warehouse (BW)**.
@@ -72,14 +72,14 @@ Du kan også angive to yderligere **avancerede indstillinger**: Sprogkode og en 
 
 Hvis der ikke er angivet en MDX-sætning, får du vist vinduet **Navigator**, som viser listen over de kuber, der er tilgængelige på serveren, og du får mulighed for at foretage detailudledning og vælge elementer fra de tilgængelige kuber, herunder dimensioner og målinger. Power BI viser forespørgsler og kuber, der er vist af [BW Open Analysis Interface OLAP BAPI'er](https://help.sap.com/saphelp_nw70/helpdata/en/d9/ed8c3c59021315e10000000a114084/content.htm).
 
-Når du vælger ét eller flere elementer fra serveren, oprettes der en forhåndsvisning af outputtabellen baseret på valget.
+Når du vælger ét eller flere elementer fra serveren, oprettes der et eksempel på outputtabellen baseret på valget.
 
-![Forhåndsvisning af SAP-tabel](media/desktop-sap-bw-connector/sap_bw_5.png)
+![Eksempelvisning af SAP-tabel](media/desktop-sap-bw-connector/sap_bw_5.png)
 
-Vinduet **Navigator** indeholder også et par **visningsindstillinger**, der giver dig mulighed for at gøre følgende:
+Vinduet **Navigator** indeholder også et par **visningsindstillinger**, der giver dig mulighed at gøre følgende:
 
-* **Vis *Kun valgte elementer* eller *Alle elementer* (standardvisning):** Denne indstilling er nyttig til at bekræfte det sidste sæt valgte elementer. En alternativ metode til at få vist dette er at vælge *Kolonnenavne* i området *Forhåndsvisning*.
-* **Aktivér forhåndsvisning af data (standard funktionsmåde):** Du kan også styre, om forhåndsvisning af data skal vises i denne dialogboks. Deaktivering af forhåndsvisning af data reducerer antallet af kald til serveren, fordi der ikke længere anmodes om data til forhåndsvisningerne.
+* **Vis *Kun valgte elementer* eller *Alle elementer* (standardvisning):** Denne indstilling er nyttig til at bekræfte det sidste sæt valgte elementer. En alternativ metode til at få vist dette er at vælge *Kolonnenavne* i området *Preview* (Eksempel).
+* **Aktivér forhåndsvisning af data (standard funktionsmåde):** Du kan også styre, om forhåndsvisning af data skal vises i denne dialogboks. Deaktivering af dataeksempler reducerer antallet af kald til serveren, fordi der ikke længere anmodes om data til eksempelvisningerne.
 * **Tekniske navne**: SAP BW understøtter *tekniske navne* for objekter i en kube. Tekniske navne giver ejeren af en kube mulighed for at vise *brugervenlige* navne for kubeobjekter i modsætning til kun at vise de *fysiske navne* for disse objekter i kuben.
 
 ![vinduet Navigator](media/desktop-sap-bw-connector/sap_bw_6.png)
@@ -204,7 +204,7 @@ Dette afsnit indeholder fejlfindingssituationer (og løsninger) til arbejdet med
    
    ![](media/desktop-sap-bw-connector/sap_bw_8.png)
    
-3. Der vises ikke en forhåndsvisning af data i vinduet **Navigator**, men i stedet vises fejlmeddelelsen *Objektreferencen er ikke indstillet til en forekomst af et objekt*.
+3. Der vises ikke et eksempel på data i vinduet **Navigator**, men i stedet vises fejlmeddelelsen *Objektreferencen er ikke indstillet til en forekomst af et objekt*.
    
    SAP-brugere skal have adgang til bestemte BAPI-funktionsmoduler for at få metadata og hente data fra SAP BW's InfoProviders. Disse omfatter:
    * BAPI_MDPROVIDER_GET_CATALOGS

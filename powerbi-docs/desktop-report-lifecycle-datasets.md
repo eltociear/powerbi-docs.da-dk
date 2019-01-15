@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3679a2f3ab98e1f54ead364e4ef4bf65d382a9d5
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 9a0e87eca537fc8c22dffaad6a725dc949b2b121
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578583"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275565"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Opret forbindelse til datasæt i Power BI-tjenesten fra Power BI Desktop
 Du kan oprette en direkte forbindelse til et delt datasæt i Power Bi-tjenesten og oprette mange forskellige rapporter fra det samme datasæt. Dette betyder, at du kan forfine din datamodel i Power Bi Desktop, udgive den til Power BI-tjenesten, hvorefter du og andre kan oprette mange forskellige rapporter (i separate .pbix-filer) fra den samme fælles datamodel. Denne funktion kaldes **Direkte forbindelse til Power BI-tjeneste**.

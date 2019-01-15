@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2018
 ms.author: maghan
-ms.openlocfilehash: a03870fd0443a00803edceb5d4821161ccb7693a
-ms.sourcegitcommit: d8109b605052096fc0eb613f2a1340570b99b2f5
+ms.openlocfilehash: 0e57ce3b5acd638b9bab316108a8fd6f46b3b280
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49651028"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285777"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Brug OAuth til at oprette forbindelse til Power BI-rapportserver og SSRS
 Få mere at vide om, hvordan du konfigurerer dit miljø til at understøtte OAuth-godkendelse med Power BI-mobilappen for at oprette forbindelse til Power BI-rapportserver og SQL Server Reporting Services 2016 eller nyere.
@@ -169,7 +169,7 @@ Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentic
 | --- | --- |
 | **ADFSRelyingPartyName** |Dette er det web-API-navn, du oprettede som en del af programgruppen i ADFS. |
 | **ExternalCertificateThumbprint** |Dette er det certifikat, der skal bruges til eksterne brugere. Det er vigtigt, at certifikatet er gyldigt på mobilenheder og stammer fra et nøglecenter, der er tillid til. |
-| **BackendServerUrl** |Dette er URL-adressen til rapportserveren fra WAP-serveren. Hvis WAP-serveren er på et perimeternetværk, skal du bruge et fuldt domænenavn. Kontrollér, at du kan få forbindelse til denne URL-adresse via webbrowseren på WAP-serveren. |
+| **BackendServerUrl** |Dette er URL-adressen til rapportserveren fra WAP-serveren. Hvis WAP-serveren er i en DMZ, skal du bruge et fuldt domænenavn. Kontrollér, at du kan få forbindelse til denne URL-adresse via webbrowseren på WAP-serveren. |
 | **BackendServerAuthenticationSPN** |Dette er det hovednavn for tjenesten, du oprettede som en del af Reporting Services-konfigurationen. |
 
 ### <a name="setting-integrated-authentication-for-the-wap-application"></a>Angivelse af integreret godkendelse for WAP-programmet

@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
 ms.author: maghan
-ms.openlocfilehash: b520eb2758088feadff963f86ddf310ae7a7ed8b
-ms.sourcegitcommit: 06f59902105c93700e71e913dff8453e221e4f82
+ms.openlocfilehash: cd88270c75b46267217147d8f02fc707eeef26ab
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388634"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290382"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Overførselsværktøj i Power BI Embedded
 Du kan bruge dette overførselsværktøj til at kopiere dine rapporter fra Power BI Embedded Azure-tjenesten (PaaS) til Power BI-tjenesten (SaaS).
@@ -84,7 +84,7 @@ Du kan åbne en eksisterende overførselsplan på følgende måde:
     ![](media/migrate-tool/migrate-tool-open-plan.png)
 2. Vælg din overførselsfil, og vælg **Open**.
 
-## <a name="step-1-analyze--plan-migration"></a>Trin 1: Analysér og planlæg overførslen
+## <a name="step-1-analyze--plan-migration"></a>Trin 1: Analysér og planlæg overførsel
 Under fanen **Analyze & Plan Migration** kan du se, hvad der aktuelt findes i ressourcegruppen under dit Azure-abonnement.
 
 ![Fanen Analyze & Plan Migration](media/migrate-tool/migrate-tool-step1.png)
