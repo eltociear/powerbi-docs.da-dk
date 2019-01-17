@@ -10,18 +10,26 @@ ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d098b55367e4d8ff13dc2fd22593af00dffe611f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5eab760a3bfbb590a1a6242984aa1be88064409f
+ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286927"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54323945"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Kør Python-scripts i Power BI Desktop
 Du kan køre Python-scripts direkte i **Power BI Desktop** og importere de resulterende datasæt i en datamodel i Power BI Desktop.
 
 ## <a name="install-python"></a>Installér Python
 Hvis du vil køre Python-scripts i Power BI Desktop, skal du installere **Python** på din lokale maskine. Du kan downloade og installere **Python** gratis fra mange forskellige steder, herunder den [officielle downloadside for Python](https://www.python.org/) og [Anaconda](https://anaconda.org/anaconda/python/). Den aktuelle version af Python-scriptet i Power BI Desktop understøtter Unicode-tegn og mellemrum (tomme tegn) i installationsstien.
+
+### <a name="install-required-python-packages"></a>Installér påkrævede Python-pakker
+Integration af Power BI Python kræver, at der er installeret to Python-pakker (Pandas og Matplotlib).  Installér følgende to pakker ved hjælp af pip-kommandolinjeværktøjet:
+
+```
+pip install pandas
+pip install matplotlib
+```
 
 ## <a name="run-python-scripts"></a>Kør Python-scripts
 Med blot nogle få trin i Power BI Desktop kan du køre Python-scripts og oprette en datamodel, hvorfra du kan oprette rapporter og dele dem i Power BI tjenesten.
