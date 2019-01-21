@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5eb2e63d9bac7249e106ad4c4b525ca3f3ab5cf8
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: be4ebfdfa7dca5ce212c2b5d242d87b0001b7750
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909588"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281913"
 ---
 # <a name="get-power-bi-desktop"></a>Hent Power BI Desktop
 Med **Power BI Desktop** kan du oprette avancerede forespørgsler, modeller og rapporter, som visualiserer data. Med **Power BI Desktop** kan du oprette datamodeller, oprette rapporter og dele dit arbejde ved at udgive det i Power BI-tjenesten.  **Power BI Desktop** kan downloades gratis.
@@ -115,7 +115,7 @@ Du kan som regel løse problemet ved at opdatere til den aktuelle version af Pow
 Vi anbefaler, at du opdaterer til den nyeste version af Power BI Desktop for at drage fordel af fremskridt inden for funktioner, ydeevne, stabilitet og andre forbedringer. Nogle organisationer vil måske ikke have, at brugerne opdaterer til hver eneste nye version. Du kan deaktivere meddelelser ved at redigere registreringsdatabasen via følgende trin:
 
 1. Brug editoren for registreringsdatabasen til at navigere til *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft Power BI Desktop*
-2. Opret en ny post med følgende indstillinger: *REG_DWORD: DisableUpdateNotification*
+2. Opret en ny post med følgende indstillinger: *REG_DWORD : DisableUpdateNotification*
 3. Angiv værdien af den nye post til **1**.
 
 Du skal genstarte computeren, før ændringerne træder i kraft.
@@ -125,7 +125,7 @@ Du skal genstarte computeren, før ændringerne træder i kraft.
 Nogle brugere kan i visse tilfælde, herunder ved visse konfigurationer af skærmopløsningen, se Power BI Desktop gengive indhold med store sorte områder. Dette er normalt et resultat af de seneste opdateringer af operativsystemet, der påvirker den måde elementer gengives på, i stedet for et direkte resultat af den måde indhold vises på i Power BI Desktop. Uanset hvad årsagen er, er store sorte områder ikke så betagende som fantastiske visualiseringer, så for at håndtere dette problem kan du følge disse trin:
 
 1. Tryk på tasten Start, og skriv ordet *blurry* i den søgelinje, der vises.
-2. I den viste dialogboks skal du vælge indstillingen: *Lad Windows løse apps, der er sløret.*
+2. I den dialogboks, der vises, skal du vælge: *Lad Windows rette apps, der er slørede.*
 3. Genstart Power BI Desktop.
 
 Dette problem løses muligvis efter udgivelsen af efterfølgende Windows-opdateringer. 

@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 10/23/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9d7012006ca18cf43c530c4d79ed02e6ed73f33f
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: ec221939d6eb96567469a3221f914509a6789839
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679227"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280073"
 ---
 # <a name="get-data-from-a-web-page-by-providing-an-example"></a>Hent data fra en webside ved at angive et eksempel
 
@@ -52,7 +52,7 @@ I dette eksempel udtrækker vi *Navn* og *Pris* for alle spil på siden. Det kan
 
 ![data efter eksempel](media/desktop-connect-to-web-by-example/web-by-example_06.png)
 
-> Bemærk! Værdiforslag omfatter kun værdier, der er mindre end eller lig med 128 tegn lange.
+> Bemærk! Værdiforslag omfatter kun værdier, der er 128 tegn eller færre lange.
 
 Når vi er tilfredse med de data, der er udtrukket fra websiden, vælger vi **OK** for at gå til **Forespørgselseditor**, hvor vi kan anvende flere transformationer eller forme dataene, f.eks. kombinere disse data med andre datakilder.
 

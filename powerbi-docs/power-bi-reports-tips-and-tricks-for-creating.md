@@ -5,17 +5,17 @@ author: davidi
 manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 2093800f10484a24eb4db9f77f45468ae4b9b4c3
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 02202e8b5e89aa8d312a96d448c825f2ca44447a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829820"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290492"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Tips og tricks til oprettelse af rapporter i Power BI Desktop og Power BI-tjenesten
 For at få mest muligt ud af dine data skal du nogle gange have lidt ekstra hjælp. Vi har samlet nogle tip og tricks, som du kan bruge, når du opretter rapporter i Microsoft Power BI Desktop, Power BI-tjenesten *og* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-udgaver, hvor tilføjelsesprogrammet Power Pivot er aktiveret, og Power-forespørgsel er installeret og aktiveret.
@@ -30,7 +30,7 @@ Du kan få flere oplysninger fra [ressourcecenteret til Power-forespørgsel](htt
 Du kan også se [formelreferencen](https://support.office.com/Article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f).
 
 ### <a name="data-types-in-query-editor"></a>Datatyper i forespørgselseditoren
-Når vi bruger forespørgselseditoren i Power BI Desktop til at indlæse data, kommer den med et bedste gæt for typen af data.  Når du bruger formler, bevares indstillingerne for datatyper for kolonner ikke altid. Du skal kontrollere, at datatypen for kolonner er korrekt, når du har udført følgende handlinger: første indlæsning af data under forespørgselsfanen, Første række som overskrift, Tilføj kolonne, Gruppér efter, Flet og Tilføj, og før du trykker for at indlæse dataene for første gang.
+Når vi bruger forespørgselseditoren i Power BI Desktop til at indlæse data, kommer den med et bedste gæt for typen af data.  Når du bruger formler, bevares indstillingerne for datatyper for kolonner ikke altid. Du skal kontrollere, at datatypen for kolonner er korrekt, når du har udført følgende handlinger:  Indlæs først data under forespørgselsfanen, Første række som overskrift, Tilføj kolonne, Gruppér efter, Flet og Tilføj inden du trykker for at indlæse dataene for første gang.
 
 Det er vigtigt at huske, at kursiv i datagitteret ikke betyder, at datatypen er angivet korrekt, men blot at dataene ikke betragtes som tekst.
 
@@ -167,7 +167,7 @@ DAX er sproget til beregning af formler i Power BI Desktop.  Det er optimeret ti
 
 ## <a name="power-bi-service-and-power-bi-desktop"></a>Power BI service *og* Power BI Desktop
 
-### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>Læs hvidbogen: [Principper for design af Power BI-rapporter](visuals/power-bi-visualization-best-practices.md)
+### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>Læs dette whitepaper: [Principper for design af Power BI-rapporter](visuals/power-bi-visualization-best-practices.md)
 Denne hvidbog indeholder bedste praksis for design af rapporter i Power BI. Den begynder med planlægning og diskuterer de designprincipper, du kan anvende på dine rapporter samt på de sider og visualiseringer, der udgør rapporten. Meget af denne bedste praksis gælder også for dashboarddesign.
 
 ### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Læs og/eller se "Sådan designer du visuelt flotte rapporter (og dashboards) i Power BI"

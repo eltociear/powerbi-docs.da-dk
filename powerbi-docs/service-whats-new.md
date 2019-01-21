@@ -5,17 +5,17 @@ author: mihart
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: daada8a7f69c600acf6fc45669ed6a42c2fdd831
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: c35f418362c5036331030bf100d9bfca6b943a4a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900652"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295791"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
@@ -24,7 +24,7 @@ Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner 
 - [Nyheder i Power BI Desktop](desktop-latest-update.md)  
 - [Nyheder i mobilappsene til Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [Power BI-temaets blog](https://powerbi.microsoft.com/blog/)
-- [Produktbemærkninger til virksomhedsprogrammer, foråret '18,](http://aka.ms/businessappsreleasenotes) fra Dynamics 365: De nyeste opdateringer til vores virksomhedsprogrammer samt nye funktioner til at bygge dine programmer og udvidelser til vores platform. 
+- [Produktbemærkninger til virksomhedsprogrammer i foråret '18](http://aka.ms/businessappsreleasenotes) fra Dynamics 365: De seneste opdateringer til vores virksomhedsprogrammer samt nye funktioner, så du kan bygge dine egne programmer og udvidelser til vores platform. 
 
 Du kan også tjekke YouTube-kanalerne for at få mere at vide om nyheder og funktioner.
 
@@ -119,7 +119,7 @@ Du kan også tjekke YouTube-kanalerne for at få mere at vide om nyheder og funk
 * Power BI SharePoint-webdel er gjort tilgængelig for alle brugere.
 * Opret forbindelse mellem Power BI og en hvilken som helst datakilde ved hjælp af [Data Connector SDK](https://powerbi.microsoft.com/blog/data-connectors-developer-preview/).
 * Navigering til rapporter med flere URL-filterparametre.
-* Preview: [Brug Power BI-apps](https://powerbi.microsoft.com/blog/distribute-to-large-audiences-with-power-bi-apps/) til at distribuere dine dashboards og rapporter bredt i store målgrupper.
+* Prøveversion: [Brug Power BI-apps](https://powerbi.microsoft.com/blog/distribute-to-large-audiences-with-power-bi-apps/) til at nå bredt ud med dine dashboards og rapporter til store målgrupper.
 
 ### <a name="march-2017"></a>Marts 2017
 * Finjustering af hvordan Power BI bruges i din organisation med [findelte administratorkontrolelementer](https://powerbi.microsoft.com/blog/announcing-granular-tenant-settings-in-power-bi/).
@@ -128,13 +128,13 @@ Du kan også tjekke YouTube-kanalerne for at få mere at vide om nyheder og funk
 * Bedre kontrol over dine datasæt med [brugerdefinerede tidsplaner for opdatering af cache](https://powerbi.microsoft.com/blog/announcing-custom-cache-refresh-schedules-in-the-power-bi-service/).
 * Oprettelse af forbindelse til [Amazon Redshift](https://powerbi.microsoft.com/blog/announcing-support-for-amazon-redshift-reports-in-the-power-bi-service/).
 * Gennemse [brugerdefinerede visuelle elementer i Power BI i Office Store](https://powerbi.microsoft.com/blog/custom-visuals-now-available-in-the-office-store/).
-* Preview: [Abonner på rapportsider](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) for at bevare overblikket over dine data.
+* Prøveversion: [Abonner på rapportsider](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) for at bevare overblikket over dine data.
 * Brug Azure AD-indholdspakken for at få mere at vide om, hvordan dine medarbejdere og partnere bruger Azure AD.
 
 ### <a name="february-2017"></a>Februar 2017
 * [Forbedringer i previewversion af navigation](https://powerbi.microsoft.com/blog/power-bi-service-february-feature-summary/) – nemmere at skifte mellem arbejdsområder og handle på indhold i det aktuelle arbejdsområde. 
 * [Integrer Power BI-dashboards](https://powerbi.microsoft.com/blog/embed-dashboard/) i dit brugerdefinerede program.
-* Preview: [Integrer Power BI-rapporter i SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/). 
+* Prøveversion: [Integrer Power BI-rapporter i SharePoint Online](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/). 
 
 ### <a name="january-2017"></a>Januar 2017
 * Administrer Power BI ved hjælp af [Power BI-administratorrollen](https://powerbi.microsoft.com/blog/power-bi-service-january-feature-summary/#pbiadminrole).
@@ -142,25 +142,25 @@ Du kan også tjekke YouTube-kanalerne for at få mere at vide om nyheder og funk
 * Version 1.4 af [udviklerværktøjer og API'er til brugerdefinerede visuelle elementer](https://powerbi.microsoft.com/blog/new-apis-available-for-custom-visuals-developers/) er udgivet.
 * [Funktionssæt til streaming i realtid](https://powerbi.microsoft.com/blog/announcing-general-availability-of-power-bi-real-time-streaming-datasets/) er udgivet og offentligt tilgængeligt.
 * [Overfør data til Power BI ved hjælp af Microsoft Flow](https://powerbi.microsoft.com/blog/push-rows-to-a-power-bi-streaming-dataset-without-writing-any-code-using-microsoft-flow/) uden at skrive en kodelinje.
-* Preview: [Abonner på rapportsider](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) for at bevare overblikket over dine data.
+* Prøveversion: [Abonner på rapportsider](https://powerbi.microsoft.com/blog/introducing-email-subscriptions-in-power-bi-stay-informed-when-it-matters/) for at bevare overblikket over dine data.
 * Brug Azure AD-indholdspakken for at få mere at vide om, hvordan dine medarbejdere og partnere bruger Azure AD.
 
 ## <a name="2016"></a>2016
 ### <a name="november-2016"></a>November 2016
-* Preview: Prøv den [nye navigation til Power BI-tjenesten, powerbi.com](https://powerbi.microsoft.com/blog/announcing-the-new-power-bi-navigation-preview/)
-* Preview: [Eksportér en Power BI-rapport til PowerPoint](https://powerbi.microsoft.com/blog/export-power-bi-report-to-powerpoint-preview/).
-* Preview: [Download Power BI-rapporter (PBIX-filer)](https://powerbi.microsoft.com/blog/announcing-preview-of-download-power-bi-desktop-files-from-the-web/) fra Power BI-tjenesten, så du kan redigere dem i Power BI Desktop.
+* Prøveversion: Prøv den [nye navigation til Power BI-tjenesten, powerbi.com](https://powerbi.microsoft.com/blog/announcing-the-new-power-bi-navigation-preview/)
+* Prøveversion: [Eksportér en Power BI-rapport til PowerPoint](https://powerbi.microsoft.com/blog/export-power-bi-report-to-powerpoint-preview/).
+* Prøveversion: [Download Power BI-rapporter (PBIX-filer)](https://powerbi.microsoft.com/blog/announcing-preview-of-download-power-bi-desktop-files-from-the-web/) fra Power BI-tjenesten, så du kan redigere dem i Power BI Desktop.
 * Opret en [væskemåler](https://powerbi.microsoft.com/blog/visual-awesomeness-unlocked-liquid-fill-gauge/), en cirkelmåler, der repræsenterer en procentværdi med animerede bølger af væske.
 * Udforsk dine [Jira-projektstyringsdata](https://powerbi.microsoft.com/blog/explore-your-jira-data-with-power-bi/) med denne Power BI-indholdspakke
 * Udforsk dine [Insightcentr-data](https://powerbi.microsoft.com/blog/explore-your-insightcentr-data-with-power-bi/) med denne Power BI-indholdspakke
 * Opret hurtigt infografikker med [infografikdesigneren til brugerdefinerede visuelle elementer](https://powerbi.microsoft.com/blog/quickly-create-infographics-with-the-infographic-designer-custom-visual-for-power-bi/)
-* Privat preview: [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) opretter Power BI-streamingdatasæt, som du kan bruge til at oprette streamingfelter.
-* Preview: Føj [ESRI ArcGIS-kortvisualiseringer](https://powerbi.microsoft.com/blog/arcgis-maps-for-powerbi-available-in-powerbi-service/) til dine rapporter og dashboards
+* Privat prøveversion: [Azure Stream Analytics](https://powerbi.microsoft.com/blog/announcing-private-preview-of-azure-stream-analytics-outputting-to-power-bi-streaming-datasets/) opretter Power BI-streamingdatasæt, som du kan bruge til at oprette streamingfelter.
+* Prøveversion: Føj [ESRI ArcGIS-kortvisualiseringer](https://powerbi.microsoft.com/blog/arcgis-maps-for-powerbi-available-in-powerbi-service/) til dine rapporter og dashboards
 
 ### <a name="october-2016"></a>Oktober 2016
 * Benyt dig af [Power BI-integration med det nye Microsoft Teams](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/).
 * Design [R-visualiseringer](https://powerbi.microsoft.com/blog/r-powered-custom-visuals/) i Power BI uden at forstå R.
-* Preview: Med [Azure Analysis Services](https://powerbi.microsoft.com/blog/introducing-azure-analysis-services/) kan BI-fagfolk oprette BI-semantikmodeller baseret på data, der ligger i clouden eller i det lokale miljø, for at give brugerne en forenklet visning af deres data.
+* Prøveversion: Med [Azure Analysis Services](https://powerbi.microsoft.com/blog/introducing-azure-analysis-services/) kan BI-fagfolk oprette BI-semantikmodeller baseret på data, der ligger i clouden eller i det lokale miljø, for at give brugerne en forenklet visning af deres data.
 * Den nye rolle som [Power BI-tjenesteadministrator](https://powerbi.microsoft.com/blog/making-it-easier-to-administer-power-bi/) kan tildeles til brugere, som skal have adgang til Power BI Administration, men som ikke skal have nogen anden administrativ adgang i Office 365.
 * Udforsk dine [avancerede MYOB-data med Power BI](https://powerbi.microsoft.com/blog/explore-your-myob-advanced-data-with-power-bi/).
 * Sådan kan en ikke-administrator gennemse [Power BI-overvågningsloggen](https://powerbi.microsoft.com/blog/tech-tip-thursday-power-bi-auditing-for-a-non-administrator/)
@@ -184,21 +184,21 @@ Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerb
 ### <a name="june-2016"></a>Juni 2016
 ***Hurtig indsigt***
 
-* Hurtigt indsigt arbejder sammen med komplekse filtre: Vi er glade for at kunne meddele, at Hurtig indsigt, som er begrænset til et enkelt felt, nu forstår komplekse filtre.
+* Hurtigt indsigt fungerer sammen med komplekse filtre: Vi er glade for at kunne meddele, at Hurtig indsigt, som er begrænset til et enkelt felt, nu forstår komplekse filtre.
 
 Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerbi.microsoft.com/blog/smarter-auto-generated-insights-with-complex-filters/)
 
 ### <a name="may-2016"></a>Maj 2016
 ***Hent data***
 
-* Forøgelse af maksimal filstørrelse på 1 GB: Vi har hævet grænsen for filstørrelser for både Excel-projektmapper og Power BI Desktop-filer til 1 GB.
+* Forøgelse af maksimal filstørrelse til 1 GB: Vi har hævet grænsen for filstørrelser for både Excel-projektmapper og Power BI Desktop-filer til 1 GB.
 * Find SSAS-servere, der er konfigureret med virksomhedsgatewayen og andre gatewayopdateringer: Når du nu konfigurerer en virksomhedsgateway, vil brugere i din virksomhed kunne få adgang til disse servere i Power BI-tjenesten via siden Hent data. Vi har også tilføjet understøttelse af opdatering af datasæt, der indeholder data fra en SAP Business Warehouse-server, ved hjælp af gatewayen og ved at oprette regler for UPN-tilknytning, når du bruger Analysis Services med gatewayen.
 
 ***Sikkerhed på rækkeniveau (RLS)***
 
-* Understøttelse af Azure Active Directory-grupper (AAD): Brugerne kan nu tildele AAD-grupper (sikkerhedsgrupper og distributionslister) til en rolle. Det gør det lettere at tildele roller til en stor gruppe af brugere på én gang.
-* [Test dine RLS-roller med rapporter understøttet af data med RLS implementeret](service-admin-rls.md#validating-the-role-within-power-bi-desktop): Vi har tilføjet en funktion i vores RLS-preview, hvormed du kan teste dit datasæt som en bestemt rolle. Dette sikrer, at rollen fungerer som forventet, før nogen brugere får fingrene i dit dashboard.
-* Definer og anvend RLS på cloudmodeller baseret på direkte forespørgsler: Du kan nu oprette og anvende RLS-regler for datakilder med direkte forespørgsel.
+* Understøttelse af Azure Active Directory (AAD): Brugerne kan nu tildele AAD-grupper (sikkerhedsgrupper og distributionslister) til en rolle. Det gør det lettere at tildele roller til en stor gruppe af brugere på én gang.
+* [Test dine RLS-roller med rapporter, der understøttes af data, der har RLS implementeret](service-admin-rls.md#validating-the-role-within-power-bi-desktop): Vi har tilføjet en funktion i vores RLS-prøveversion, som du kan bruge til at teste dit datasæt som en bestemt rolle. Dette sikrer, at rollen fungerer som forventet, før nogen brugere får fingrene i dit dashboard.
+* Definer og anvend RLS på cloudmodeller, der er baseret på direkte forespørgsler: Du kan nu oprette og anvende RLS-regler for datakilder, der er baseret på direkte forespørgsler.
 
 ***Dashboards***
 
@@ -206,18 +206,18 @@ Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerb
 
 ***Analysér i Excel***
 
-* Forbedret downloadoplevelse: Nemt at downloade opdateringer til funktionen Analysér i Excel via en ny dialogboksoplevelse.
+* Forbedret downloadoplevelse: Du kan nemt downloade opdateringer til funktionen Analysér i Excel via en ny dialogboksoplevelse.
 * Understøttelse af RLS: Når du har konfigureret RLS, afspejles de regler, du anvender på dataene, nu når en bruger analyserer data i Excel.
 * Forbedrede fejlmeddelelser for Analysis Services-databaser i det lokale miljø: Tidligere når du valgte Analysér i Excel for en ikke-understøttet datakilde, ville du ikke få en fejlmeddelelse, før efter du have downloadet ODC-filen og forsøgt at oprette forbindelse til Power BI. Når du nu vælger Analysér i Excel for en datakilde, vi ikke understøtter, vises der straks en meddelelse, hvor der står, at vi endnu ikke understøtter datakilden.
 
 Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerbi.microsoft.com/blog/power-bi-service-may-update-file-size-increase-to-1-gb/)
 
-* [Understøttelse af Spørgsmål og svar i Power BI for SQL Server 2016 Analysis Services-tabelmodeller](service-q-and-a-direct-query.md): Det glæder os at kunne meddele om forbedringer til brugeroplevelsen i Spørgsmål og svar i Power BI for datakilder forbundet via virksomhedsgateway samt brugeroplevelse og starten af den offentlige previewversion til Spørgsmål og svar i Power BI for datakilder forbundet via virksomhedsgateway – som starter med understøttelse af SQL Server 2016 Analysis Services-tabelmodeller. Du kan få alle detaljerne i [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
-* [Understøttelse af lokale filer for Excel-rapporter](service-excel-workbook-files.md#local-excel-workbooks): Nu kan du uploade dine Excel-filer fra dit lokale drev eller lagertjenester og bruge denne Excel-rapport på samme måde som i Excel Online med de ekstra fordele ved Power BI. Du kan få alle detaljerne i [blogindlægget](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/)
+* [Understøttelse af Spørgsmål og svar i Power BI for SQL Server 2016 Analysis Services-tabelmodeller](service-q-and-a-direct-query.md): Det glæder os at kunne præsentere forbedringer til brugeroplevelsen i Spørgsmål og svar i Power BI og starten af den offentlige prøveversion til Spørgsmål og svar i Power BI for datakilder forbundet via virksomhedsgateway – som starter med understøttelse af SQL Server 2016 Analysis Services-tabelmodeller. Du kan få alle detaljerne i [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-q-a-for-enterprise-gateway-connected-data-sources-now-available-in-public-preview/)
+* [Understøttelse af lokale filer for Excel-rapporter](service-excel-workbook-files.md#local-excel-workbooks): Nu kan du uploade dine Excel-filer fra dit lokale drev eller andre lagertjenester og bruge denne Excel-rapport på samme måde som i Excel Online med de ekstra fordele ved Power BI. Du kan få alle detaljerne i [blogindlægget](https://powerbi.microsoft.com/blog/powerbi-upload-excel-reports-from-local-files/)
 
 **28. april 2016**
 
-* [Hurtigt indsigt på dashboardfelter](consumer/end-user-insights.md): Når du får vist et felt i Fokustilstand, skal du klikke på Hent indsigt for at søge i feltet og dets relaterede data efter korrelationer, udenforliggende værdier, tendenser, sæsonudsving, ændringspunkter i tendenser og større faktorer automatisk, i løbet af få sekunder.
+* [Hurtig indsigt på dashboardfelter](consumer/end-user-insights.md): Når du får vist et felt i Fokustilstand, skal du klikke på Hent indsigt for at søge i feltet og dets relaterede data efter korrelationer, udenforliggende værdier, tendenser, sæsonudsving, ændringspunkter i tendenser og større faktorer automatisk, i løbet af få sekunder.
 
 Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerbi.microsoft.com/blog/find-more-insights-in-your-dashboards-with-quick-insights/)
 
@@ -229,7 +229,7 @@ Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerb
 
 **16. april 2016**
 
-* Microsoft Trust Center: Power BI er blevet en del af Microsoft Trust Center, en enkelt kilde til dokumentation for certificering af overholdelse af regler og standarder for Microsoft-produkter. Power BI's certificeringer omfatter ISO 27001, ISO 27018, EU-modelklausuler, HIPAA BAA og UK G-Cloud.
+* Microsoft Trust Center: Power BI er blevet en del af Microsoft Trust Center, en enkelt kilde til dokumentation af certificeringer i overholdelse af regler og standarder for Microsoft-produkter. Power BI's certificeringer omfatter ISO 27001, ISO 27018, EU-modelklausuler, HIPAA BAA og UK G-Cloud.
 
 Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerbi.microsoft.com/blog/power-bi-added-to-microsoft-trust-center/)
 
@@ -238,11 +238,11 @@ Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerb
 ***Enterprise***
 
 * [ExpressRoute](service-admin-power-bi-expressroute.md): Brug til at oprette et privat, administreret forbindelse til Power BI.
-* [Understøttelse af RLS i indholdspakker](service-admin-rls.md) (Preview): Hvis RLS er defineret for de dashboards og rapporter, der distribueres som en del af en indholdspakke, så vil sikkerhedsreglerne blive overholdt for disse indholdspakker.
+* [Understøttelse af RLS i indholdspakker](service-admin-rls.md) (prøveversion): Hvis RLS er defineret for de dashboards og rapporter, der distribueres som en del af en indholdspakke, overholdes sikkerhedsreglerne for disse indholdspakker.
 
 ***Dashboards***
 
-* [Vimeo-videofelt](service-dashboard-add-widget.md): Fra dashboardet kan du tilføje et felt, der indeholder en integreret Vimeo-afspiller.
+* [Vimeo-videofelt](service-dashboard-add-widget.md):  Fra dashboardet kan du tilføje et felt, der indeholder en integreret Vimeo-afspiller.
 
 ***Analysér i Excel***
 
@@ -403,7 +403,7 @@ Der er mange opdateringer i denne uge, som hovedsageligt gælder for Power BI De
 * Forbedringer i visuelle elementer:
   
   1. Tip til visuelle elementer for sorteringstilstand i det visuelle element Tabel.
-  2. Ny visual: Stablet områdediagram.
+  2. Ny visualisering: Diagrammet Stablet område
   3. Smarte værktøjstip til Områdediagram og Kurvediagram, når der peges på dem.
   4. Mulighed for at oprette referencelinje/område for et Kartesiansk visuelt element.
   5. Forbedrede datanavne for cirkeldiagrammer og punktdiagrammer.
@@ -421,10 +421,10 @@ Der er mange opdateringer i denne uge, som hovedsageligt gælder for Power BI De
   1. Understøttelse af SSAS Multidimensional – med hierarkier (previewfunktion)
   2. Stripe-connector
   3. Smartsheet-connector
-  4. "Angiv data": Indsæt eller indtast data for at oprette en tabel
-  5. DirectQuery-forbedringer: Understøttelse af alle datatyper for T-SQL og SAP HANA, hvilket medfører bedre ydeevne.
-  6. ODBC-connector: Understøttelse af valg af DSN for bruger/system
-  7. CSV-connector: Mulighed for at angive kolonneafgrænser i dialogboksen Kilde
+  4. "Angiv data": Indsæt eller indtast data for at oprette en tabel.
+  5. DirectQuery-forbedringer:  Understøttelse af alle datatyper for T-SQL og SAP HANA, hvilket medfører bedre ydeevne.
+  6. ODBC-connector: Understøttelse af valg af DSN for bruger/system.
+  7. CSV-connector: Mulighed for at angive kolonneafgrænser i dialogboksen Kilde.
 
 Få alle detaljerne, herunder en video, der demonstrerer mange af disse opdateringer, på [Power BI-bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx).
 
@@ -447,7 +447,7 @@ Få alle detaljerne, herunder en video, der demonstrerer mange af disse opdateri
 * [Visualiser dine VMob-data i Power BI](http://blogs.msdn.com/b/powerbi/archive/2015/11/25/visualize-your-vmob-data-in-power-bi.aspx)
 * [Power BI-integration med Cortana](http://blogs.msdn.com/b/powerbi/archive/2015/12/01/announcing-power-bi-integration-with-cortana-and-new-ways-to-quickly-find-insights-in-your-data.aspx)
 * [Previewversion af Power BI-gateway til virksomheder](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/announcing-preview-of-power-bi-gateway-for-enterprise-deployments.aspx)
-* Introduktion af en ny indholdspakke: [søgeanalyse fra Bing på Power BI-dashboards](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
+* Introduktion af en ny indholdspakke: [Søgeanalyse fra Bing på Power BI-dashboards](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/search-analytics-from-bing-on-your-power-bi-dashboards.aspx)
 * Nye udviklerfokuserede forbedringer: [To nye API'er og nemmere appregistrering](http://blogs.msdn.com/b/powerbi/archive/2015/12/02/power-bi-for-developers-reports-api-and-a-simple-app-registration-experience.aspx)
 
 **24. november 2015**
@@ -541,7 +541,7 @@ Se [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-service
 
 * Få mere fleksibilitet på dashboardet til at tilpasse dine dashboards med yderligere feltstørrelser fra 1x1 til 5x5.
 * Du kan nu [dele (og afslutte deling af) et dashboard fra dit gruppeområde](service-collaborate-power-bi-workspace.md) på samme måde, som du ville gøre det i dit eget område. Når kollegaerne accepterer din delingsinvitation, tilføjes det delte dashboard (og de tilknyttede rapporter) i deres eget område i en skrivebeskyttet udgave, hvor de kun har tilladelse til at læse.
-* Vi har tilføjet fem yderligere [brancherelaterede eksempler](sample-datasets.md) i Power BI: Customer Profitability (Eksempel på kunderentabilitet), Human Resources (Eksempel på HR), Opportunity Analysis (Eksempel på analyse af salgsmuligheder), Procurement Analysis (Eksempel på indkøbsanalyse) og Sales and Marketing Sample (Eksempel på salg og marketing).
+* Vi har føjet yderligere fem [brancherelaterede eksempler](sample-datasets.md) til Power BI: Customer Profitability (Eksempel på kunderentabilitet), Human Resources (Eksempel på HR), Opportunity Analysis (Eksempel på analyse af salgsmuligheder), Procurement Analysis (Eksempel på indkøbsanalyse) og Sales and Marketing Sample (Eksempel på salg og marketing).
 * Stripe er en avanceret betalingsplatform til onlinevirksomheder. Fra nystartede virksomheder til Fortune 500-selskaber – tusindvis af virksomheder bruger Stripe til at modtage betalinger i mere end 130 valutaer fra alle i hele verden. Hvis du forbinder Power BI med din eksisterende Stripe-konto, vil du kunne [bruge Power BI Stripe-indholdspakken til at overvåge, udforske og visualisere dine Stripe-aktivitet](service-connect-to-stripe.md).
 
 [Få mere at vide på vores blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/22/power-bi-weekly-service-update-0922.aspx).
@@ -592,7 +592,7 @@ Se [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-service
 **24. juli 2015**
 
 * Vi er glade for at kunne meddele, at Power BI er blevet offentligt tilgængeligt. Tilmeld dig [Power BI Pro](service-self-service-signup-for-power-bi.md) i dag. Som en del af udgivelsen af den offentligt tilgængelige version tilbyder vi nogle fantastiske nye funktioner:
-* En ny oplevelse af visualisering og oprettelse af rapporter: Det nye lærred har et større udvalg af visuelle elementer, større kontrol over formatering af titler, forklaringer, akser, farver, baggrunde med mere.
+* En ny oplevelse af visualiseringer og oprettelse af rapporter: Det nye lærred har et større udvalg af visuelle elementer, flere kontrolelementer til formatering af titler, forklaringer, akser, farver, baggrunde med mere.
 * [Power BI-grupper](service-create-distribute-apps.md): Grupper giver en fantastisk samarbejdsoplevelse, der er baseret på Office 365-grupper.
 * [Organisationsindholdspakker](service-organizational-content-pack-introduction.md): Power BI gør det ekstremt enkelt at oprette dashboards og rapporter, og nu kan brugerne publicere dette indhold i organisationens indholdsgalleri.
 * [Hent hele Excel-filer](service-excel-workbook-files.md): Du kan overføre en hvilken som helst Excel-projektmappe, der er gemt på OneDrive for Business, til Power BI og få vist hele projektmappen, præcis som du ville gøre i Excel Online.

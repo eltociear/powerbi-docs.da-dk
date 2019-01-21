@@ -5,19 +5,19 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 44fbf1e651c36c95694e397c64050977f3ee730a
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: f6396747dc21ddc94ab1abda6939e8e423c649e7
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092546"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296177"
 ---
-# <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Trin 4: Hent et datasæt for at indsætte rækker i en Power BI-tabel
-Denne artikel er en del af en trinvis vejledning til, hvordan du [overfører data til et datasæt](walkthrough-push-data.md).
+# <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Trin 4: Hent et datasæt for at føje rækker til en Power BI-tabel
+Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
 
 På **trin 3** i overførslen af data til et datasæt, [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md), kaldte du handlingen [Create Dataset](https://docs.microsoft.com/rest/api/power-bi/datasets) for at oprette et datasæt i Power BI. På dette trin skal du bruge handlingen [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) og Newtonsoft.Json til at hente et datasæt-id. Du kan bruge datasættet på trin 4 til at indsætte rækker i et datasæt. 
 
@@ -26,11 +26,11 @@ Hvis du vil overføre data til et Power BI-datasæt, skal du henvise til tabelle
 Sådan henter du et datasæt.
 
 ## <a name="get-a-power-bi-dataset"></a>Hent et Power BI-datasæt
-> **Bemærk**! Før du begynder, skal du kontrollere, at du har fulgt de foregående trin i vejledningen til, [hvordan du overfører data til et datasæt](walkthrough-push-data.md).
+> **BEMÆRK**! Før du begynder, skal du kontrollere, at du har fulgt de foregående trin i gennemgangen [Send data til et datasæt](walkthrough-push-data.md).
 > 
 > 
 
-1. Installer pakken Newtonsoft.Json NuGet i projektet Console Application, som du oprettede i Trin 2: Vejledning til overførsel af data, [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md). Sådan installerer du pakken:
+1. I projektet konsolprogram, som du oprettede i trin 2: Gennemgang til push af data, [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md), og installer pakken Newtonsoft.Json NuGet. Sådan installerer du pakken:
    
      a. Vælg **Tools** > **NuGet Package Manager** > **Package Manager Console** i Visual Studio 2015.
    

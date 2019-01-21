@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 85f7dd131806cd808c28c23cb70230a0c719e0a1
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 6a44443918fe0bb9c25343c8960aaaadd5a6977e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670181"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285616"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Hent data fra Excel-projektmappefiler
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -43,7 +43,7 @@ Hvis du bruger Excel til at oprette forbindelse til en ekstern datakilde, kan du
 Den måde, dine Power-visningsark, pivotabeller og diagrammer vises eller ikke vises på i Power BI, afhænger af hvor din projektmappefil er gemt, og hvordan du vælger at hente den ind i Power BI. Dette gennemgås yderligere nedenfor.
 
 ## <a name="data-types"></a>Datatyper
-Power BI understøtter følgende datatyper: Helt tal, Decimaltal, Valuta, Dato, Sand/Falsk, Tekst. Det giver en bedre oplevelse med Power Bi, hvis data markeres som specifikke datatyper i Excel .
+Power BI understøtter følgende datatyper: Heltal, decimaltal, valuta, dato, sand/falsk og tekst. Det giver en bedre oplevelse med Power Bi, hvis data markeres som specifikke datatyper i Excel .
 
 ## <a name="prepare-your-workbook-for-power-bi"></a>Forbered din projektmappe til Power BI
 Se denne nyttige video, hvis du vil vide mere om, hvordan du sikrer dig, at dine Excel-projektmapper er klar til Power BI.
@@ -119,7 +119,7 @@ Når du bruger funktionen **Publicer i Power BI** i Excel 2016 er det i praksis 
 ## <a name="troubleshooting"></a>Fejlfinding
 Er projektmappefilen for stor? Se [Reducer størrelsen på en Excel-projektmappe for at få den vist i Power BI](reduce-the-size-of-an-excel-workbook.md).
 
-Når du i øjeblikket vælger Importér, importerer Power BI kun data, der er del af en navngivet tabel eller en datamodel. Det betyder, at hvis projektmappen ikke indeholder navngivne tabeller, Power View-ark eller Excel-datamodeller, kan du få vist denne fejl: **"Vi kunne ikke finde data i din Excel-projektmappe"**. I [denne artikel](service-admin-troubleshoot-excel-workbook-data.md) forklares det, hvordan du retter din projektmappe og importerer den igen.
+Når du i øjeblikket vælger Importér, importerer Power BI kun data, der er del af en navngivet tabel eller en datamodel. Det betyder, at hvis projektmappen ikke indeholder navngivne tabeller, Power View-ark eller Excel-datamodeller, kan du få vist denne fejl: **Der blev ikke fundet nogen data i din Excel-projektmappe**. I [denne artikel](service-admin-troubleshoot-excel-workbook-data.md) forklares det, hvordan du retter din projektmappe og importerer den igen.
 
 ## <a name="next-steps"></a>Næste trin
 **Udforsk dine data** – Når du har hentet data og rapporter fra din fil til Power BI, er det tid til at udforske dem. Du skal blot højreklikke på det nye datasæt og derefter klikke på Udforsk. Hvis du har valgt at oprette forbindelse til en projektmappefil på OneDrive i trin 4, vises din projektmappe i Rapporter. Når du klikker på den, åbnes den i Power BI på samme måde, som den ville blive åbnet i Excel Online.

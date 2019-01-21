@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/19/2018
 ms.author: maggies
-ms.openlocfilehash: 18fb96573052455034f8c257811daed6cb15529e
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: dd3da287d976b9fe84ab56b425a5f08fba31d224
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679220"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54288353"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Opret en Power BI-rapport til Power BI-rapportserveren
 Du kan gemme og administrere Power BI-rapporter i det lokale miljø på Microsoft Power BI-rapportservers webportal, på samme måde som du kan gemme Power BI-rapporter i skyen i Power BI-tjenesten (https://powerbi.com). Du kan oprette og redigere rapporter i Power BI Desktop og publicere dem på webportalen. Derefter kan rapportlæsere i din organisation få dem vist i en browser eller i en Power BI-mobilapp på en mobilenhed.
@@ -97,9 +97,9 @@ Når rapporten er klar, kan du gemme den på den Power BI-rapportserver, du har 
 Der er så mange fantastiske ressourcer til at oprette rapporter i Power BI Desktop. Dette link er et godt udgangspunkt.
 
 * [Kom i gang med Power BI Desktop](../desktop-getting-started.md)
-* Automatiseret læring: [Introduktion til Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)
+* Kursus med vejledning: [Kom i gang med Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)
 
-### <a name="power-bi-report-server"></a>Power BI Report Server
+### <a name="power-bi-report-server"></a>Power BI-rapportserver
 * [Installer Power BI Desktop optimeret til Power BI-rapportserver](install-powerbi-desktop.md)  
 * [Hvad er Power BI-rapportserveren?](get-started.md)  
 

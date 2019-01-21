@@ -6,15 +6,15 @@ ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/05/2017
-ms.openlocfilehash: 01bcc545d3ba8edb23ef583467322401780e657d
-ms.sourcegitcommit: 698b788720282b67d3e22ae5de572b54056f1b6c
+ms.openlocfilehash: 0990f6ddaf458d5723cd04fedf0b34f497de16cb
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45974178"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278487"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Overfør data til et Power BI-datasæt
 
@@ -24,11 +24,11 @@ Før du begynder at overføre data til et datasæt, skal du have en Azure AD- (A
 
 ## <a name="steps-to-push-data-into-a-dataset"></a>Sådan overfører du data til et datasæt
 
-* Trin 1: [Registrer en app i Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)
+* Trin 1: [Registrer en app med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)
 * Trin 2: [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md)
 * Trin 3: [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md)
 * Trin 4: [Hent et datasæt for at føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md)
-* Trin 5: [Føj rækker til en Power BI-tabel](walkthrough-push-data-add-rows.md)
+* Trin 5: [Indsæt rækker i en Power BI-tabel](walkthrough-push-data-add-rows.md)
 
 Det næste afsnit er en generel beskrivelse af de handlinger i Power BI-API'en, der overfører data.
 
@@ -59,7 +59,7 @@ JSON-strengen til et datasæt har følgende format:
         ]
     }
 
-Så for eksemplet med salg og marketing-datasættet ville du overføre en JSON-streng som vist i eksemplet nedenfor. I dette eksempel er **SalesMarketing** navnet på datasættet, og **Product** er navnet på tabellen. Når du har defineret tabellen, kan du definere tabelskemaet. Tabelskemaet indeholder kolonnerne ProductID, Manufacturer, Category, Segment, Product og IsComplete for datasættet **SalesMarketing**.
+Så for eksemplet med salg og marketing-datasættet ville du overføre en JSON-streng som vist i eksemplet nedenfor. I dette eksempel er **SalesMarketing** navnet på datasættet, og **Product** er navnet på tabellen. Når du har defineret tabellen, kan du definere tabelskemaet. For datasættet **SalesMarketing** indeholder tabelskemaet disse kolonner: ProductID, Manufacturer, Category, Segment, Product og IsCompete.
 
 **Eksempeldatasæt JSON-objekt**
 
@@ -112,7 +112,7 @@ Hvis du har et Power BI-tabelskema, kan du bruge følgende datatyper.
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>Få mere at vide om at overføre data til Power BI
 
-For at komme i gang med at overføre data til et datasæt skal du se [Trin 1: Registrer en app i Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) i venstre navigationsrude.
+Du kan få hjælp til at komme i gang med at overføre data til et datasæt i [Trin 1: Registrer en app med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) i venstre navigationsrude.
 
 [Næste trin >](walkthrough-push-data-register-app-with-azure-ad.md)
 

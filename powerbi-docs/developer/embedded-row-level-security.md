@@ -4,17 +4,17 @@ description: Få mere at vide om, hvordan du integrerer Power BI-indhold i dit p
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: nishalit
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/28/2018
-ms.openlocfilehash: 901c087c486598019e905598ee83382664842cc8
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.date: 12/20/2018
+ms.openlocfilehash: 785461290493db59c534a58b548620b6d2f58cd7
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578767"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284167"
 ---
 # <a name="use-row-level-security-with-power-bi-embedded-content"></a>Brug sikkerhed på rækkeniveau med integreret Power BI-indhold
 
@@ -141,7 +141,7 @@ Roller kan angives med identiteten i et integreringstoken. Hvis der ikke angives
 
 ### <a name="using-the-customdata-feature"></a>Brug af funktionen CustomData
 
-Funktionen CustomData fungerer kun for modeller, der findes i **Azure Analysis Services**, og den fungerer kun i **Connect-live**tilstand. Til forskel fra brugere og roller, kan funktionen CustomData ikke angives i en .pbix-fil. Når et token genereres med funktionen CustomData, skal du have et brugernavn.
+Funktionen CustomData fungerer kun for modeller, der findes i **Azure Analysis Services**, og den fungerer kun i **Connect-live**tilstand. Til forskel fra brugere og roller kan CustomData-funktionen ikke angives i en PBIX-fil. Når et token genereres med funktionen CustomData, skal du have et brugernavn.
 
 Funktionen CustomData gør det muligt for dig at tilføje et rækkefilter, når du får vist Power BI-data i dit program, mens du bruger **Azure Analysis Services** som datakilde (visning af Power BI-data, der er forbundet med Azure Analysis Services i dit program).
 
@@ -239,14 +239,89 @@ Når du beslutter dig for at filtrere dine data i en rapport, kan du bruge **RLS
 
 [JavaScript-filtre](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) bruges til at tillade brugeren at forbruge en reduceret, omfangsangivet eller filtreret visning af dataene. Men brugeren stadig har adgang til modelskematabeller, -kolonner og -målinger og kan potentielt få adgang til alle dataene der. Begrænset dataadgang kan kun anvendes med sikkerhed på rækkeniveau og ikke via filtrerings-API'er på klientsiden.
 
+## <a name="token-based-identity-with-azure-sql-database-preview"></a>Tokenbaseret identitet med Azure SQL Database (prøveversion)
+
+Den **tokenbaserede identitet** giver dig mulighed for at angive den eksisterende identitet for et indlejringstoken ved hjælp af adgangstokenet **AAD (Azure Active Directory)** til en **Azure SQL Database**.
+
+Kunder, der har deres data i **Azure SQL Database**, kan nu få glæde af en ny funktionalitet til at administrere brugere og deres adgang til data i Azure SQL, når der integreres med **Power BI Embedded**.
+
+Når du genererer indlejringstokenet, kan du angive den eksisterende identitet for en bruger i Azure SQL. Du kan angive den eksisterende identitet for en bruger ved at overføre AAD-adgangstokenet til serveren. Adgangstokenet bruges til at hente de relevante data for den pågældende bruger fra Azure SQL i den pågældende session.
+
+Det kan bruges til at administrere visningen af hver enkelt bruger i Azure SQL eller til at logge på SQL Azure som en bestemt kunde i en database med flere lejere. Det kan også bruges til at anvende sikkerhed på rækkeniveau i den pågældende session i Azure SQL og kun hente de relevante data for den aktuelle session, hvilket fjerner behovet for at administrere RLS i Power BI.
+
+Sådanne problemer med eksisterende identiteter gælder for RLS-regler direkte på Azure SQL Server. Power BI Embedded bruger det angivne adgangstoken ved forespørgsler om data fra Azure SQL Server. UPN'et for brugerne (som adgangstokenet blev angivet for) er tilgængeligt som et resultat af funktionen USER_NAME() SQL.
+
+Den tokenbaserede identitet gælder kun for DirectQuery-modeller på dedikeret kapacitet, som er forbundet med en Azure SQL Database, der er konfigureret til at tillade AAD-godkendelse ([få mere at vide om AAD-godkendelse til Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-manage-logins)). Datasættets datakilde skal konfigureres til at bruge slutbrugernes OAuth2-legitimationsoplysninger for at bruge en tokenbaseret identitet.
+
+   ![Konfigurer Azure SQL Server](media/embedded-row-level-security/token-based-configure-azure-sql-db.png)
+
+### <a name="token-based-identity-sdk-additions"></a>SDK-tilføjelser til tokenbaseret identitet
+
+Identitetsblobegenskaben blev føjet til vores aktuelle identitet i tokengenereringsscenariet.
+
+```JSON
+[JsonProperty(PropertyName = "identityBlob")]
+public IdentityBlob IdentityBlob { get; set; }
+```
+
+IdentityBlob-typen er en enkel JSON-struktur, der indeholder en værdistrengsegenskab
+
+```JSON
+[JsonProperty(PropertyName = "value")]
+public string value { get; set; }
+```
+
+EffectiveIdentity kan oprettes med identitetsblob ved hjælp af følgende kald:
+
+```C#
+public EffectiveIdentity(string username, IList<string> datasets, IList<string> roles = null, string customData = null, IdentityBlob identityBlob = null);
+```
+
+Identitetsblob kan oprettes ved hjælp af følgende kald.
+
+```C#
+public IdentityBlob(string value);
+```
+
+### <a name="token-based-identity-rest-api-usage"></a>Brug af tokenbaseret identitets-REST-API
+
+Hvis du kalder [REST-API'en](https://docs.microsoft.com/rest/api/power-bi/embedtoken/reports_generatetoken#definitions), kan du tilføje identitetsblob i hver enkelt identitet.
+
+```JSON
+{
+    "accessLevel": "View",
+    "identities": [
+        {
+            "datasets": ["fe0a1aeb-f6a4-4b27-a2d3-b5df3bb28bdc"],
+        “identityBlob”: {
+            “value”: “eyJ0eXAiOiJKV1QiLCJh….”
+         }
+        }
+    ]
+}
+```
+
+Værdien i den pågældende identitetsblob skal være et gyldigt adgangstoken til Azure SQL Server (med en URL-adresse til en ressource for (<https://database.windows.net/>).
+
+   > [!Note]
+   > Hvis du vil oprette et adgangstoken til Azure SQL, skal programmet have **adgang til Azure SQL Database og Data Warehouse** og delegeret tilladelse til **Azure SQL Database**-API til AAD-konfiguration af appregistrering i Azure-portalen.
+
+   ![Programregistrering](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
+
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
 * Tildeling af brugere til roller i Power BI-tjenesten påvirker ikke sikkerheden på rækkeniveau, når du anvender et integreringstoken.
-* Selvom Power BI-tjenesten ikke anvender indstillingen for sikkerhed på rækkeniveau for administratorer eller medlemmer med redigeringsrettigheder, vil den blive anvendt på dataene, når du angiver en identitet med et integreringstoken.
+* Selvom Power BI-tjenesten ikke anvender indstillingen for sikkerhed på rækkeniveau for administratorer eller medlemmer med redigeringsrettigheder, vil den blive anvendt på dataene, når du angiver en identitet med et indlejringstoken.
 * Analysis Services-liveforbindelser understøttes på lokale servere.
 * Direkte forbindelser i Azure Analysis Services understøtter filtrering efter roller. Dynamisk filtrering kan udføres ved hjælp af CustomData.
 * Hvis der ikke skal bruges sikkerhed på rækkeniveau på det underliggende datasæt, må GenerateToken-anmodningen **ikke** indeholde en eksisterende identitet.
 * Hvis det underliggende datasæt er en cloudmodel (cachelagret model eller DirectQuery), skal den eksisterende identitet indeholde mindst én rolle, ellers tildeles der ikke en rolle.
 * En liste over identiteter gør det muligt at have flere identitetstokens ved integrering i dashboardet. For alle andre artefakter vil listen indeholde en enkelt identitet.
+
+### <a name="token-based-identity-limitations-preview"></a>Begrænsninger for tokenbaseret identitet (prøveversion)
+
+* Denne funktion begrænser kun brugen sammen med Power BI Premium.
+* Denne funktion fungerer ikke sammen med SQL Server i det lokale miljø.
+* Denne funktion fungerer ikke sammen med Multi-Geo.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

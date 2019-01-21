@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: d8283f1abf05ab788336413bd18582ea71d4e43f
-ms.sourcegitcommit: fecea174721d0eb4e1927c1116d2604a822e4090
+ms.openlocfilehash: 4ca6d7c5ed47433614dc194db7d09162d5e96eae
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "34296255"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285708"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Sådan konfigurerer du en planlagt opdatering af en Power BI-rapport
 Hvis du vil opdatere dataene i din Power BI-rapport, skal du oprette en plan for planlagt opdatering. Det gør du i området *Administrer* i en Power BI-rapport.
@@ -79,7 +79,7 @@ Få vist status for en plan for planlagt opdatering på webportalen.
    | Opdatering af data |Opdatering af dataene i modellen. |
    | Fjernelse af legitimationsoplysninger fra modellen |De legitimationsoplysninger, der bruges til at oprette forbindelse til datakilden fra modellen, blev fjernet. |
    | Lagring af modellen i kataloget |Opdateringen af data er fuldført, og den opdaterede model gemmes i katalogdatabasen på rapportserveren igen. |
-   | Fuldført: Dataopdatering |Opdateringen er færdig. |
+   | Fuldført: Opdatering af data |Opdateringen er færdig. |
    | Fejl: |Der opstod en fejl under opdateringen, og fejlen vises. |
 
 Websiden skal opdateres, for at du kan se den aktuelle status. Status ændres ikke automatisk.

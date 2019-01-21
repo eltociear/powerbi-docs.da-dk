@@ -5,20 +5,20 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: f8ceeddea7a8a9b7a63043cc7e91269da570790b
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: a07f266ccdc0b02cd6a18f84b48b5e2b3564b642
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670970"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278990"
 ---
 # <a name="troubleshooting-sign-in-for-power-bi-desktop"></a>Fejlfinding af logonproblemer i Power BI Desktop
-Der kan være situationer, hvor du forsøger at logge på **Power BI Desktop**, men støder på fejl. Der er to primære årsager til logonproblemer: **fejl ved proxygodkendelse** og **fejl ved omdirigering til URL-adresser, der ikke er HTTPS-sikret**. 
+Der kan være situationer, hvor du forsøger at logge på **Power BI Desktop**, men støder på fejl. Der er to primære årsager til logonproblemer: **Proxy-godkendelsesfejl** og **fejl ved omdirigering til URL-adresser, der ikke er HTTPS**. 
 
 Hvis du vil finde ud af, hvad der forårsager dit logonproblem, skal du først kontakte administratoren og levere diagnosticeringsoplysninger, så administratoren kan finde årsagen til problemet. Ved at spore problemer, der er knyttet til logonproblemet, kan administratorer afgøre, hvilke af følgende fejl der er skyld i dit problem. 
 
@@ -56,7 +56,7 @@ Aktuelle versioner af **Power BI Desktop** bruger den aktuelle version af ADAL (
 
 Følgende undtagelser i *Power BI Desktop*-sporingsfiler er knyttet til denne fejl:
 
-* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException: Omdirigering af URL-adresser, der ikke er HTTPS-sikrede, understøttes ikke i webvisning*
+* *Microsoft.IdentityModel.Clients.ActiveDirectory.AdalServiceException: Omdirigering til URL-adresser, der ikke er HTTPS, understøttes ikke i webvisning*
 * *ErrorCode: non_https_redirect_failed*
 
 Hvis fejlen *ErrorCode: non_https_redirect_failed* opstår, betyder det, at en eller flere omdirigeringssider eller providere i rækken af omdirigeringer ikke er et HTTPS-beskyttet slutpunkt, eller at en certifikatudsteder af en eller flere omdirigeringer ikke er blandt de rodnøgler, enheden har tillid til. Alle providere i rækken af logonomdirigeringer skal bruge en HTTPS-sikret URL-adresse. Du kan få løst dette problem ved at kontakte administratoren og anmode om, at sikrede URL-adresser bruges til deres godkendelseswebsteder. 

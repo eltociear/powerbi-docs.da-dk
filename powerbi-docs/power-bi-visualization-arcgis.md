@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 81867ba36e79a26acb168c1b02fc31e228bd6439
-ms.sourcegitcommit: b23fdcc0ceff5acd2e4d52b15b310068236cf8c7
+ms.openlocfilehash: e559cb3ed460c8d81406ae8c8b01fe33eceaf461
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51266041"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54293902"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>ArcGIS-kort i Power BI-tjenesten og Power BI Desktop fra Esri
 Dette selvstudium er skrevet fra den person, der opretter et ArcGIS korts synspunkt. Når en opretter deler et ArcGIS-kort med en kollega, kan den pågældende kollega få vist og interagere med kortet, men ikke gemme ændringer. Du kan få mere at vide om visning af et ArcGIS-kort under [Interaktion med ArcGIS-kort](visuals/power-bi-visualizations-arcgis.md).
@@ -112,7 +112,7 @@ Sådan får du adgang til formateringsfunktionerne i **ArcGIS Maps for Power BI*
 
 ## <a name="features-overview"></a>Oversigt over funktioner
 ### <a name="base-maps"></a>Grundlæggende kort
-Der er fire grundlæggende kort: Dark Gray Canvas, Light Gray Canvas, OpenStreetMap og Streets.  Streets er ArcGIS' grundlæggende standardkort.
+Der findes fire grundlæggende kort: Dark Gray Canvas, Light Gray Canvas, OpenStreetMap og Streets.  Streets er ArcGIS' grundlæggende standardkort.
 
 Hvis du vil anvende et grundlæggende kort, skal du vælge det i opgaveruden.
 
@@ -207,7 +207,7 @@ ArcGIS Online giver virksomheder mulighed for at publicere offentlige webkort. D
 2. Skriv søgeord, og vælg derefter et kortlag. I dette eksempel har vi valgt USA Congressional districts.
    
     ![](media/power-bi-visualization-arcgis/power-bi-esri-demographics-esri2-new.png)
-3. Hvis du vil have vist detaljerede oplysninger, skal du markere et skraveret område for at åbne *Select from reference layer* (Vælg fra referencelag): Brug markeringsværktøjet for referencelag til at vælge grænser eller objekter på referencelaget.
+3. Hvis du vil have vist detaljerne, skal du vælge et skraveret område for at åbne *Vælg fra referencelag*: Brug markeringsværktøjet til referencelag til at vælge grænser eller objekter på referencelaget.
 
 <br/>
 
@@ -325,7 +325,7 @@ ArcGIS Maps for Power BI er tilgængelig for alle Power BI-brugere uden meromkos
 
 **Jeg får vist en fejlmeddelelse i Power BI Desktop om, at min cache er fuld**
 
-Dette er en fejl, der er ved at blive behandlet.  I mellemtiden kan du prøve at rydde cachen ved at slette filer på denne placering: C:\Users\\AppData\Local\Microsoft\Power BI Desktop\CEF og derefter genstarte Power BI.
+Dette er en fejl, der er ved at blive behandlet.  I mellemtiden skal du slette filer på denne placering for at rydde cachen: C:\Users\\AppData\Local\Microsoft\Power BI Desktop\CEF og derefter genstarte Power BI.
 
 **Understøtter ArcGIS Maps for Power BI Esri Shapefiles?**
 

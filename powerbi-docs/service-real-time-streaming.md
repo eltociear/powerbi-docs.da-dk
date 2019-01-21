@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 63b75aae9fb9299119b606458a4a8832d77dd1be
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 196d2ef3eb0d8ed8b7f008eef1b247d9e7f1cd18
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417159"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296479"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming i realtid i Power BI
 Med streaming i realtid med Power BI kan du streame data og opdatere dashboards i realtid. Alle visuelle elementer eller dashboards, der kan oprettes i Power BI, kan også oprettes til at vise og opdatere data og visuelle elementer i realtid. Enhederne og kilderne til streamingdata kan være sensorer på fabrikker, sociale medier, forbrugsdata for tjenester og alt andet, hvorfra tidsfølsomme data kan indsamles eller overføres.
@@ -44,7 +44,7 @@ Der er to ting, du skal være opmærksom på vedrørende fastgjorte felter fra e
 * Når et visuelt element fastgøres til et dashboard, kan du bruge **Spørgsmål og svar** til at stille spørgsmål til pushdatasættet på et naturligt sprog. Når du har foretaget en **Spørgsmål og svar**-forespørgsel, kan du fastgøre det resulterende visuelle element tilbage på dashboardet, og dette dashboard opdateres *også* i realtid.
 
 ### <a name="streaming-dataset"></a>Streamingdatasæt
-Med et **streamingdatasæt** pushoverføres data også til Power BI-tjenesten med én vigtig forskel: Power BI gemmer kun dataene i en midlertidig cache, som hurtigt udløber. Den midlertidige cache bruges kun til at vise visuelle elementer, som har en midlertidig historik, f.eks. et kurvediagram, der har et tidsvindue på en time.
+Med et **streamingdatasæt** overføres data også til Power BI-tjenesten med én vigtig forskel: Power BI gemmer kun dataene i en midlertidig cache, som hurtigt udløber. Den midlertidige cache bruges kun til at vise visuelle elementer, som har en midlertidig historik, f.eks. et kurvediagram, der har et tidsvindue på en time.
 
 Med et **streamingdatasæt** er der *ingen* underliggende database, så du *kan ikke* oprette visuelle elementer i rapporter, der bruger de data, der kommer ind fra streamen. Som sådan kan du ikke bruge rapportens funktionalitet, f.eks. filtrering, brugerdefinerede visuelle elementer og andre rapportfunktioner.
 

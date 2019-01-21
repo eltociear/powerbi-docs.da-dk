@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
 ms.author: maggies
-ms.openlocfilehash: dc811c5f6c6a7d5d428591eb7afd1665cda6dbb0
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 85950e2510147c3bed36d4911360f7c365c79da6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900445"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283523"
 ---
 # <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Navigering i visningen Rapportdesign for sideinddelte rapporter (eksempelvisning)
 
@@ -88,14 +88,14 @@ Designområdestørrelsen kan være anderledes end det udskriftsområde, du angiv
  Afhængigt af egenskaben kan du angive en værdi for egenskaben via en rulleliste, angive værdien eller vælge `<Expression>` for at oprette et udtryk.  
   
 ### <a name="changing-the-properties-pane-view"></a>Ændring af visningen af ruden Egenskaber  
- Som standard er egenskaber, der vises i ruden Egenskaber, organiseret i brede kategorier, f.eks. Handling, Kant, Udfyldning, Skrifttype og Generelt. Hver enkelt kategori har et sæt tilknyttede egenskaber. Følgende egenskaber er f.eks. angivet i kategorien Skrifttype: Color, FontFamily, FontSize, FontStyle, FontWeight, LineHeight og TextDecoration. Hvis du foretrækker det, kan du alfabetisere alle de egenskaber, der vises i ruden. Dette fjerner kategorierne og viser alle egenskaberne i alfabetisk rækkefølge, uanset kategori.  
+ Som standard er egenskaber, der vises i ruden Egenskaber, organiseret i brede kategorier, f.eks. Handling, Kant, Udfyldning, Skrifttype og Generelt. Hver enkelt kategori har et sæt tilknyttede egenskaber. Følgende egenskaber vises f.eks. i kategorien Skrifttype: Color, FontFamily, FontSize, FontStyle, FontWeight, LineHeight og TextDecoration. Hvis du foretrækker det, kan du alfabetisere alle de egenskaber, der vises i ruden. Dette fjerner kategorierne og viser alle egenskaberne i alfabetisk rækkefølge, uanset kategori.  
   
- I ruden Egenskaber er der tre knapper øverst: **Kategori**, **Alfabetiser** og **Egenskabssider**. Vælg knapperne Kategori og Alfabetiser for at skifte mellem visning af egenskabsruderne. Vælg knappen **Egenskabssider** for at åbne dialogboksen Egenskaber for et valgt rapportelement.  
+ Ruden Egenskaber indeholder tre knapper øverst i ruden: **Kategori**, **Alfabetiser** og **Egenskabsside**. Vælg knapperne Kategori og Alfabetiser for at skifte mellem visning af egenskabsruderne. Vælg knappen **Egenskabssider** for at åbne dialogboksen Egenskaber for et valgt rapportelement.  
   
   
 ## <a name="5-grouping-pane"></a>5 Ruden Gruppering
 
- Grupper bruges til at organisere dine rapportdata i et visuelt hierarki og til at beregne totaler. Du kan få vist række- og kolonnegrupperne i et dataområde i designområdet samt i ruden Gruppering. Ruden Gruppering indeholder to ruder: Rækkegrupper og Kolonnegrupper. Når du vælger et dataområde, vises alle grupperne i det pågældende dataområde i ruden Gruppering som en hierarkiske liste: Underordnede grupper vises indrykket under deres respektive overordnede grupper.  
+ Grupper bruges til at organisere dine rapportdata i et visuelt hierarki og til at beregne totaler. Du kan få vist række- og kolonnegrupperne i et dataområde i designområdet samt i ruden Gruppering. Ruden Gruppering har to ruder: Rækkegrupper og Kolonnegrupper. Når du vælger et dataområde, vises alle grupperne i det pågældende dataområde i ruden Gruppering som en hierarkiske liste: Underordnede grupper vises indrykket under deres overordnede grupper.  
   
  Du kan oprette grupper ved at trække felter fra ruden Rapportdata og slippe dem i designområdet eller i ruden Gruppering. I ruden Gruppering kan du tilføje overordnede, tilstødende og underordnede grupper, ændre gruppeegenskaber og slette grupper.  
   

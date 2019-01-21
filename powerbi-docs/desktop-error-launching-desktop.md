@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 78cfcd51a951095353ce5d0f25c4511cc720c632
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: f527fa17ab242f6835ca99a3ff3ef3e2525a001f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578215"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277129"
 ---
 # <a name="resolve-issues-when-power-bi-desktop-will-not-launch"></a>Løs problemer, når Power BI Desktop ikke vil starte
 I **Power BI Desktop** kan brugere, der har installeret og kører tidligere versioner af **Power BI datagatewayen i det lokale miljø**, blive blokeret, så de ikke kan starte Power BI Desktop. Det skyldes administrative politikbegrænsninger, som Power BI gatewayen i det lokale miljø har angivet for navngivne pipes på den lokale computer. 
@@ -23,10 +23,10 @@ I **Power BI Desktop** kan brugere, der har installeret og kører tidligere vers
 ## <a name="resolve-issues-with-the-on-premises-data-gateway-and-power-bi-desktop"></a>Løs problemer med datagatewayen i det lokale miljø og Power BI Desktop
 Der er tre muligheder for at løse det problem, der er knyttet til datagatewayen i det lokale miljø, og gøre det muligt at starte Power BI Desktop:
 
-### <a name="resolution-1-install-the-latest-version-of-power-bi-on-premises-data-gateway"></a>Løsning 1: Installér den nyeste version af Power BI datagatewayen i det lokale miljø
+### <a name="resolution-1-install-the-latest-version-of-power-bi-on-premises-data-gateway"></a>Løsning 1: Installér den nyeste version af Power BI-datagatewayen i det lokale miljø
 Den nyeste version af Power BI datagatewayen i det lokale miljø angiver ikke begrænsninger for navngivne pipes på den lokale computer, hvilket gør det muligt at starte Power BI Desktop korrekt. Dette er den anbefalede løsning, hvis du vil fortsætte med at bruge Power BI datagatewayen i det lokale miljø. Du kan downloade den nyeste version af Power BI datagatewayen i det lokale miljø fra [denne placering](https://go.microsoft.com/fwlink/?LinkId=698863). Bemærk, at linket er et direkte link til download af den eksekverbare installationsfil.
 
-### <a name="resolution-2-uninstall-or-stop-the-power-bi-on-premises-data-gateway-windows-service"></a>Løsning 2: Fjern eller stop Windows tjenesten til Power BI datagatewayen i det lokale miljø
+### <a name="resolution-2-uninstall-or-stop-the-power-bi-on-premises-data-gateway-windows-service"></a>Løsning 2: Fjern eller stop Windows-tjenesten til Power BI-datagatewayen i det lokale miljø
 Hvis du ikke længere har brug for Power BI datagatewayen i det lokale miljø, kan du fjerne den. Du kan også stoppe Windows tjenesten til Power BI datagatewayen i det lokale miljø, hvilket medfører, at politikbegrænsningen fjernes, og at Power BI Desktop kan starte.
 
 ### <a name="resolution-3-run-power-bi-desktop-with-administrator-privilege"></a>Løsning 3: Kør Power BI Desktop med administratorrettigheder

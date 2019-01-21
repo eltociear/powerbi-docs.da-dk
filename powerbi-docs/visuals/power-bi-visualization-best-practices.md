@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 77802d2db59ddff94123991e209441b4c491f98b
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: e426d781f7a2e663687f443c423e1fc326624289
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548597"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296707"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Bedste praksis for design af rapporter og visuals
 <!-- Shared newnav Include -->
@@ -192,7 +192,7 @@ Hvordan ser vores eksempelside ud nu?  Figur 11 viser en renere, mindre rodet si
 
 I vores eksempel er der blevet tilføjet en sidetitel i det øverste venstre hjørne, som er det første sted, læserne kigger. Skriftstørrelsen er 28, og skrifttypen er Segoe Bold, så den skiller sig ud fra resten af siden.  Vores vejledning til teksttypografi dikterer ingen baggrunde, sorte titler, forklaringer og navne, og den er blevet anvendt på alle visuals på siden, hvor det var muligt (kombinationsfeltets diagramakser og navne kan ikke redigeres).  Derudover:
 
-* Kort: **Kategorietiket** indstillet til Fra, **Titel** Til og angivet til 12 pkt. sort centreret.
+* Kort: **Kategorietiket** indstillet til Fra, **Titel** slåt Til og angivet til 12 pkt. sort centreret.
 * Titler på visuals (hvis aktiveret): indstillet til 12 pkt. og venstrejusteret.
 * Udsnitsværktøjer: **Sidehoved** slået Fra, **Titel** slået Til. Lad **Elementer** > **Tekst** være grå og 10 pkt.
 * Punktdiagrammer og søjlediagrammer: sort skrifttype for X- og Y-akserne og X- og Y-aksetitlerne, hvis de bruges.
@@ -255,7 +255,7 @@ Og til sidst skal du under **Titel** ændre **Skriftfarve** til hvid og tilføje
 
 **Rektangulær figur**
 
-Rektanglet er også forsvundet i den sorte baggrund.  For at løse dette kan du markere figuren og slå **Baggrund** Til i ruden **Formatér figur**.
+Rektanglet er også forsvundet i den sorte baggrund.  For at løse dette kan du markere figuren og slå **Baggrund** til i ruden **Formatér figur**.
 
 ![](media/power-bi-visualization-best-practices/power-bi-shape-format.png)
 
@@ -275,7 +275,7 @@ Tilføj en hvid baggrund på de resterende visuals på rapportsiden. På formate
 
 ![](media/power-bi-visualization-best-practices/power-bi-example5b.png)
 
-**Figure 21:    Rapporteksempel med bedste praksisser for farver anvendt (hvid baggrund)**
+**Figur 21:    Rapporteksempel med bedste praksisser for farver anvendt (hvid baggrund)**
  
 
 ### <a name="aesthetics"></a>Æstetik
@@ -359,7 +359,7 @@ Markér en visual for at aktivere den, og åbn ruden Formatering. Udvid indstill
 
 ![](media/power-bi-visualization-best-practices/power-bi-axis-titles.png)
 
-**Figur 26:    Sådan slår du aksetitler til og fra**
+**Figur 26:    Slå aksetitler til eller fra**
 
 **Sådan slår du aksenavne til og fra**
 
@@ -367,7 +367,7 @@ Markér en visual for at aktivere den, og åbn ruden Formatering. Der er skydere
 
 ![](media/power-bi-visualization-best-practices/power-bi-axis-labels.png)
 
-**Figur 27: Sådan slår du aksenavne til og fra**
+**Figur 27: Slå aksenavne til eller fra**
 
 > [!TIP]
 > Et scenarie, hvor måske vil slå Y-aksenavne fra, kunne være, hvis du har haft **Datanavne** slået til.
@@ -411,7 +411,7 @@ For hver af de formateringsjusteringer, der er anført nedenfor, skal du vælge 
 
 **Figur 31: Åbn ruden Formatering**
 
-Vælg det visuelle element, der skal justeres, og sørg for, at det er indstillet til Til. Eksempler på visuelle elementer er: **X-aksen**, **Y-aksen**, **Titel**, **Datanavne** og **Forklaring**. I eksemplet nedenfor vises elementet **Titel**.
+Vælg det visuelle element, der skal justeres, og sørg for, at det er indstillet til Til. Eksempler på visuelle elementer er: **X-aksen**, **y-aksen**, **titel**, **datanavne** og **forklaring**. I eksemplet nedenfor vises elementet **Titel**.
 
 ![](media/power-bi-visualization-best-practices/power-bi-title-formatting.png)
 
@@ -455,7 +455,7 @@ En af de mest overbevisende funktioner i Power BI er muligheden for at redigere 
 
 ![](media/power-bi-visualization-best-practices/power-bi-visual-interactions.png)
 
-**Figur 34: Visuelle interaktioner**
+**Figur 34: Interaktioner mellem visualiseringer**
 
 Derefter skal du for hver visual på siden overveje, om du vil have den pågældende visual til at filtrere, fremhæve eller gøre ingenting. Ikke alle visuals kan fremhæves, og for dem, der ikke kan, er kontrolelementet til fremhævning ikke tilgængeligt. Du kan få mere at vide i [Visuelle interaktioner i Power BI](../consumer/end-user-interactions.md).
 
@@ -648,9 +648,9 @@ Hvis kurvediagrammer er standarden for at se på data over tid, er liggende søj
 
 Her finder du flere oplysninger om søjlediagrammer og liggende søjlediagrammer:
 
-* [Grundlæggende om liggende søjlediagrammer](http://blog.newscred.com/article/data-visualization-101-bar-charts)
+* [Liggende søjlediagrammer 101](http://blog.newscred.com/article/data-visualization-101-bar-charts)
 * [Datavisualiseringskatalog: Liggende søjlediagram](http://www.datavizcatalogue.com/methods/bar_chart.html#.VYV-hY3bLJw)
-* [Datavisualiseringskatalog: Multisæt af liggende søjlediagrammer](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
+* [Datavisualiseringskatalog: Multisæt af liggende søjlediagram](http://www.datavizcatalogue.com/methods/multiset_barchart.html#.VYV_gI3bLJw)
 
 ### <a name="stacked-barcolumn-charts"></a>Stablede søjlediagrammer/liggende søjlediagrammer
 ![](media/power-bi-visualization-best-practices/power-bi-stacked.png)
@@ -682,7 +682,7 @@ I dette kurvediagram er det nemmere at se, hvordan de kommercielle indtægter (C
 
 Her kan du finde flere oplysninger om stablede diagrammer:
 
-* [Datavisualiseringskatalog: Stablede liggende søjlediagrammer](http://www.datavizcatalogue.com/methods/stacked_bar_graph.html#top)
+* [Datavisualiseringskatalog: Stablet liggende søjlediagram](http://www.datavizcatalogue.com/methods/stacked_bar_graph.html#top)
 * [Hvornår er 100 % stablede liggende søjlediagrammer nyttige?](http://www.perceptualedge.com/blog/?p=2239)
 
 ### <a name="combo-barcolumn-charts"></a>Kombinationsdiagram/liggende søjlediagrammer
@@ -721,7 +721,7 @@ Hvis du vil gøre dette, skal du åbne ruden Formatering, udvide **Y-aksen** og 
 
 ![](media/power-bi-visualization-best-practices/power-bi-combo-chart.png)
 
-**Figur 61: Oprette et kombinationsdiagram i stedet for**
+**Figur 61: Opret et kombinationsdiagram i stedet for**
 
 * Drag fordel af dobbeltakser. Det er nemt at sammenligne flere målinger med forskellige værdiintervaller. Og det er en glimrende metode til at illustrere sammenhængen mellem to målinger i én visual.
 
@@ -809,7 +809,7 @@ Her finder du flere oplysninger:
 Nu er det blevet tid til, at du skal prøve disse bedste praksisser af i praksis.  Bevar forbindelsen, og del dine egne bedste praksisser. Er du uenig i vores anbefalinger, eller har du fundet en enestående årsag til at "bryde reglerne?"  Det vil vi også meget gerne høre om.  
 
 ### <a name="book-recommendations"></a>Boganbefalinger
-Der findes mange god bøger, som teams kan bruge til at læse op på visuelle designteknikker. Stephen Fews bog *Information Dashboard Design* kommer man ikke udenom. Han går yderligere i detaljer i de to andre bøger *Show Me the Numbers* og *Now You See It*. Few og andre har fået inspiration fra Edward R. Tufte, hvis bog *The Visual Display of Quantitative Information* betragtes som en klassiker inden for emnet. Tufte har også skrevet *Visual Explanations*, *Envisioning Information* og *Beautiful Evidence*. Andy Kirks nye bog *Data Visualization: A Handbook for Data Driven Design* er et andet glimrende forslag. Andre forfattere, som kan anbefales, er: Lachlan James, William McKnight og Boris Evelson (Forrester), Darkhorse Analytics.
+Der findes mange god bøger, som teams kan bruge til at læse op på visuelle designteknikker. Stephen Fews bog *Information Dashboard Design* kommer man ikke udenom. Han går yderligere i detaljer i de to andre bøger *Show Me the Numbers* og *Now You See It*. Few og andre har fået inspiration fra Edward R. Tufte, hvis bog *The Visual Display of Quantitative Information* betragtes som en klassiker inden for emnet. Tufte har også skrevet *Visual Explanations*, *Envisioning Information* og *Beautiful Evidence*. Andy Kirks nye bog *Data Visualization: A Handbook for Data Driven Design* er også et godt valg. Andre forfattere, som kan befales, er: Lachlan James, William McKnight og Boris Evelson (Forrester), Darkhorse Analytics.
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

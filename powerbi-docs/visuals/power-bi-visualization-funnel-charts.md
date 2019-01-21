@@ -6,20 +6,20 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/24/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 345293e6b8bd7047ecfe1716f0b7be1c5bed9c58
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 071b45a4ad9cbd9c753c44de5c55a352767bccbf
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829866"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289618"
 ---
 # <a name="funnel-charts"></a>Tragtformede diagrammer
-Et tragtformet diagram hjælper dig med at visualisere en lineær proces, der har fortløbende forbundne faser. Et eksempel: Et tragtformet salgsdiagram, hvor der holdes øje med kunder gennem forskellige faser: Potentielt kundeemne \> Kvalificeret kundeemne \> Kundeemne \> Kontrakt \> Lukket.  I korte træk afspejler tragtens form tilstanden af den proces, du holder øje med.
+Et tragtformet diagram hjælper dig med at visualisere en lineær proces, der har fortløbende forbundne faser. F.eks. et tragtformet salgsdiagram, der sporer kunder gennem forskellige faser: Potentielt kundeemne \> Kvalificeret kundeemne \> Kundeemne \> Kontrakt \> Luk.  I korte træk afspejler tragtens form tilstanden af den proces, du holder øje med.
 
 De enkelte faser i tragten repræsenterer en procentdel af det samlede antal. Så i de fleste tilfælde vil et tragtformet diagram være formet som en tragt – hvor det første trin er det største, og hvor hvert efterfølgende trin bliver mindre end det foregående.  En pæreformet tragt er også nyttig – det kan bruges til at identificere et problem i processen.  Det første trin i fasen, "indgangsfasen", er dog typisk det største.
 

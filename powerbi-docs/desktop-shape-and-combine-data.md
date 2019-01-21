@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: e23182b1e607498c5187882740b556455657ba1d
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: f39f5ae569c757072a55647becb5697c881abbe2
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670894"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285663"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Selvstudium: Form og kombiner data i Power BI Desktop
 
@@ -81,7 +81,7 @@ Du fjerner kolonnen **Cost of living** ved blot at markere kolonnen, vælge fane
 
 ![](media/desktop-shape-and-combine-data/shapecombine_removecolumnscostofliving.png)
 
-Bemærk, at værdierne i _Ny rangering_ ikke er blevet ændret. Dette skyldes rækkefølgen af trinnene. Da Forespørgselseditor optager trinnene sekventielt, men stadig uafhængigt af hinanden, kan du flytte hvert trin under **Anvendte trin** op eller ned i sekvensen. Hvis du højreklikker på et trin, vises der en menu, hvor du kan gøre følgende: **Omdøb**, **Slet**, **Slet**  **indtil slutning** (fjern det aktuelle og alle efterfølgende trin), **Flyt op** eller **Flyt ned**. Flyt blot det sidste trin _Fjernede kolonner_ op for at justere over trinnet _Tilføjet brugerdefineret_.
+Bemærk, at værdierne i _Ny rangering_ ikke er blevet ændret. Dette skyldes rækkefølgen af trinnene. Da Forespørgselseditor optager trinnene sekventielt, men stadig uafhængigt af hinanden, kan du flytte hvert trin under **Anvendte trin** op eller ned i sekvensen. Højreklik på et trin, hvorefter Forespørgselseditor viser en menu med følgende muligheder: **Omdøb**, **Slet**, **Slet** **indtil slutning** (fjern det aktuelle trin og alle efterfølgende trin), **Flyt op** eller **Flyt ned**. Flyt blot det sidste trin _Fjernede kolonner_ op for at justere over trinnet _Tilføjet brugerdefineret_.
 
 ![](media/desktop-shape-and-combine-data/shapecombine_movestep.png)
 
@@ -179,7 +179,7 @@ Vinduet **Fjern de øverste rækker** åbnes, og du kan angive, hvor mange rækk
 
 ![](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
 
-* Fjern nogle unødvendige kolonner –– vi skal kun bruge bogstavforkortelsen for staterne, så vi kan fjerne følgende kolonner: **Column1**, **Column3**, **Column4** og derefter **Column6** til og med **Column11**. Start med at markere **Column1**, hold derefter tasten **Ctrl** nede, og markér de øvrige kolonner, der skal fjernes (du kan dermed markere flere rækker, der ikke støder op til hinanden). Vælg **Fjern kolonner \> Fjern kolonner** under fanen Hjem.
+* Fjern et par unødvendige kolonner – vi behøver kun tilknytningen af staten til den officielle forkortelse på to bogstaver, så vi kan fjerne følgende kolonner: **Column1**, **Column3**, **Column4** og derefter **Column6** til og med **Column11**. Start med at markere **Column1**, hold derefter tasten **Ctrl** nede, og markér de øvrige kolonner, der skal fjernes (du kan dermed markere flere rækker, der ikke støder op til hinanden). Vælg **Fjern kolonner \> Fjern kolonner** under fanen Hjem.
 
 ![](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
 

@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 428ea77de2151f4ec3417f62819b3d6481c17ae2
-ms.sourcegitcommit: 0611860a896e636ceeb6e30ce85243bfd8e7b61d
+ms.openlocfilehash: 65c2de2d505866b3b00a88eaaa309d7c61a7625d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50909680"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296219"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Konfiguration af mobilapps med Microsoft Intune
 
@@ -106,7 +106,7 @@ Du kan oprette programmet eller politikken først. Det har ingen betydning, i hv
 
 1. Angiv URL-adressen for appen, som vi hentede under [Trin 1](#step-1-get-the-URL-for-the-application), og vælg **Næste**.
 
-    ![Softwareinstallation: Android](media/service-admin-mobile-intune/intune-add-software-android1.png)
+    ![Programinstallation: Android](media/service-admin-mobile-intune/intune-add-software-android1.png)
 
 1. Angiv en **Udgiver**, et **Navn** og en **Beskrivelse**. Du kan vælge at angive et **Ikon**. **Kategori** er til appen Firmaportal. Når du er færdig, skal du vælge **Næste**.
 

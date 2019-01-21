@@ -6,20 +6,20 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: ed9281ba14ad25e2acb347a2394ec729e9d4465c
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 7256de8dd36c25af9959e7103186666d65123360
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51508031"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295253"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Brug Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø
 
-Brug [Kerberos-begrænset delegering](https://technet.microsoft.com/library/jj553400.aspx) til at aktivere en problemfri forbindelse med enkeltlogon. Aktivering af SSO gør det nemt for Power BI-rapporter og -dashboards at opdatere data fra kilder i det lokale miljø.
+Brug [Kerberos-begrænset delegering](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) til at aktivere en problemfri forbindelse med enkeltlogon. Aktivering af SSO gør det nemt for Power BI-rapporter og -dashboards at opdatere data fra kilder i det lokale miljø.
 
 ## <a name="supported-data-sources"></a>Understøttede datakilder
 
@@ -50,11 +50,11 @@ Du kan finde flere oplysninger om, hvordan du konfigurerer og angiver enkeltlogo
 
 Der skal være konfigureret flere elementer, hvis Kerberos-begrænset delegering skal fungere korrekt, herunder *tjenestens hovednavn* (SPN) og delegeringsindstillinger i tjenestekonti.
 
-### <a name="prerequisite-1-install--configure-the-on-premises-data-gateway"></a>Forudsætning 1: Installér og konfigurer datagatewayen i det lokale miljø
+### <a name="prerequisite-1-install--configure-the-on-premises-data-gateway"></a>Forudsætning 1: Installér og konfigurer datagatewayen i det lokale miljø.
 
 Denne version af datagatewayen i det lokale miljø understøtter en direkte opgradering samt indstillingsovertagelse af eksisterende gateways.
 
-### <a name="prerequisite-2-run-the-gateway-windows-service-as-a-domain-account"></a>Forudsætning 2: Kør gatewayens Windows-tjeneste som en domænekonto
+### <a name="prerequisite-2-run-the-gateway-windows-service-as-a-domain-account"></a>Forudsætning 2: Kør gatewayens Windows-tjeneste som en domænekonto.
 
 I en standardinstallation kører gatewayen som en tjenestekonto på en lokal computer (specifikt *NT-tjeneste\PBIEgwService*) som det, der er vist i følgende billede:
 
@@ -65,7 +65,7 @@ Når **Kerberos-begrænset delegering** skal aktiveres, skal gatewayen køre som
 > [!NOTE]
 > Hvis Azure AD DirSync/Connect er konfigureret, og brugerkonti er synkroniseret, behøver gatewaytjenesten ikke at udføre lokale AD-opslag på kørselstidspunktet, og du kan bruge den lokale tjeneste-SID (i stedet for at kræve en domænekonto) til gatewaytjenesten. De trin til konfiguration af Kerberos Constrained Delegation, som er beskrevet i denne artikel, er de samme som den konfiguration (de anvendes blot på gatewayens computerobjekt i Active Directory i stedet for på domænekontoen).
 
-### <a name="prerequisite-3-have-domain-admin-rights-to-configure-spns-setspn-and-kerberos-constrained-delegation-settings"></a>Forudsætning 3: At have rettigheder som domæneadministrator til at konfigurere indstillinger for SPN'er (SetSPN) og Kerberos-begrænset delegering
+### <a name="prerequisite-3-have-domain-admin-rights-to-configure-spns-setspn-and-kerberos-constrained-delegation-settings"></a>Forudsætning 3: Du skal have rettigheder som domæneadministrator til at konfigurere indstillinger for SPN'er (SetSPN) og Kerberos-begrænset delegering
 
 Selvom det teknisk set er muligt for en domæneadministrator midlertidigt eller permanent at give andre rettigheder til at konfigurere SPN'er og Kerberos-delegering, uden at dette kræver rettigheder som domæneadministrator, er dette ikke den anbefalede fremgangsmåde. I følgende afsnit gennemgås de konfigurationstrin, der kræves i **Forudsætning 3**, udførligt.
 
@@ -111,10 +111,10 @@ I dette afsnit forudsættes det, at du allerede har konfigureret SPN'er for de u
 
 I følgende trin antager vi, at vi har et lokalt miljø med to computere: en gatewaycomputer og en databaseserver, der kører SQL Server. Af hensyn til dette eksempel antager vi også, at vi har følgende indstillinger og navne:
 
-* Navn på gatewaycomputer: **PBIEgwTestGW**
-* Gatewaytjenestekonto: **PBIEgwTest\GatewaySvc** (kontos viste navn: Gateway Connector)
+* Gatewaymaskinens navn: **PBIEgwTestGW**
+* Gatewaytjenestekonto: **PBIEgwTest\GatewaySvc** (kontoens visningsnavn: Gateway Connector)
 * Navn på computer med SQL Server-datakilde: **PBIEgwTestSQL**
-* SQL Server-datakildes tjenestekonto: **PBIEgwTest\SQLService**
+* SQL Server-datakildens tjenestekonto: **PBIEgwTest\SQLService**
 
 Med udgangspunkt i disse eksempelnavne og -indstillinger er konfigurationstrinnene som følger:
 
@@ -164,7 +164,7 @@ På den computer, der kører gatewaytjenesten (**PBIEgwTestGW** i eksemplet), sk
 
 Hvis du bruger SAP HANA, anbefaler vi at følge disse ekstra trin, som kan generere en mindre forbedring af ydeevnen.
 
-1. I gatewayinstallationsmappen skal du finde og åbne denne konfigurationsfil: *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
+1. Find og åbn denne konfigurationsfil i installationsmappen for gatewayen: *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
 
 1. Find egenskaben *FullDomainResolutionEnabled*, og rediger dens værdi til *True*.
 

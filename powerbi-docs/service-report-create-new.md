@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/24/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: a5762964b75d73d8dabceac58c47f616753b94cc
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 31a7221d3b284e6342b192384f92616a52e12631
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830169"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280239"
 ---
 # <a name="create-a-new-report-in-power-bi-service-by-importing-a-dataset"></a>Opret en ny rapport i Power BI-tjenesten ved at importere et datasæt
 Du har læst [Rapporter i Power BI](consumer/end-user-reports.md), og nu vil du oprette din egen. Der er mange forskellige måder at oprette en rapport på, og i denne artikel starter vi med at oprette en meget grundlæggende rapport ud fra et Excel-datasæt ved hjælp af Power BI-tjenesten. Når du har forstået de grundlæggende ting i forbindelse med at oprette en rapport, vejleder de **Næste trin** for neden dig gennem de mere avancerede rapportemner.  
@@ -46,7 +46,7 @@ Denne metode til oprettelse af en rapport starter med et datasæt og et tomt rap
    
    ![rapporteditor](media/service-report-create-new/power-bi-blank-report.png)
 
-> **TIP!** Hvis du ikke kender til lærredet til redigering af rapporten, eller hvis du har brug for at få det genopfrisket, kan du [få en introduktion til rapporteditoren ](service-the-report-editor-take-a-tour.md), før du fortsætter.
+> **Tip**! Hvis du ikke kender til lærredet til redigering af rapporten, eller hvis du har brug for at få det genopfrisket, kan du [få en introduktion til rapporteditoren ](service-the-report-editor-take-a-tour.md), før du fortsætter.
 > 
 > 
 

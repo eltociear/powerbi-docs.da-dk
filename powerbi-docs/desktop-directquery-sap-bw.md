@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6c47fb847ff5360031f4bfe2974db9c405a4ce5f
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 61de19e50437cf8cb5920d2a413821e325da2a1a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670733"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278072"
 ---
 # <a name="directquery-and-sap-business-warehouse-bw"></a>DirectQuery og SAP Business Warehouse (BW)
 Du kan oprette forbindelse til **SAP Business Warehouse (BW)**-datakilder direkte ved hjælp af **DirectQuery**. Da der arbejdes med OLAP/flere dimensioner i SAP BW, er der mange vigtige forskelle mellem DirectQuery via SAP BW og relationskilder som SQL Server. Disse forskelle kan opsummeres på følgende måde:
@@ -34,9 +34,9 @@ De primære yderligere begrænsninger for udformning, der gælder, når der opre
 
 * **Ingen understøttelse af beregnede kolonner:** Muligheden for at oprette beregnede kolonner er deaktiveret. Det betyder også, at gruppering og clustering, som opretter beregnede kolonner, ikke er tilgængelig.
 * **Yderligere begrænsninger for målinger:** Der er yderligere begrænsninger i DAX-udtryk, som kan bruges i målinger, der afspejler den samme understøttelse som den, der tilbydes af SAP BW.
-* **Ingen understøttelse af definition af relationer:** Relationerne er indbygget i den eksterne SAP-kilde, og der kan ikke defineres yderligere relationer i modellen.
+* **Ingen understøttelse af definerende relationer:** Relationerne er indbygget i den eksterne SAP-kilde, og der kan ikke defineres yderligere relationer i modellen.
 * **Ingen datavisning:** **Datavisningen** viser som regel dataene på detaljeniveau i tabeller. På grund af funktionsmåden for OLAP-kilder, f.eks. SAP BW, er denne visning ikke tilgængelig via SAP BW.
-* **Kolonne- og måleoplysninger er blevet rettet:** Listen over kolonner og mål, der er registreret på feltlisten, er rettet af den underliggende kilde og kan ikke ændres. Det er f.eks. ikke muligt at slette en kolonne eller at ændre datatypen (den kan dog omdøbes).
+* **Kolonne- og måleoplysninger er faste:** Listen over kolonner og mål, der er registreret på feltlisten, er fastsat af den underliggende kilde og kan ikke ændres. Det er f.eks. ikke muligt at slette en kolonne eller at ændre datatypen (den kan dog omdøbes).
 * **Yderligere begrænsninger i DAX:** Der er flere begrænsninger for DAX, der kan bruges i definitioner af målinger til at afspejle begrænsningerne i kilden. Det er f.eks. ikke muligt at bruge en aggregeringsfunktion via en tabel.
 
 ## <a name="additional-visualization-restrictions"></a>Yderligere visualiseringsbegrænsninger

@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/28/2018
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: e364d2ceac3d1a30b0742ceac2bd56e2bc66d9ba
-ms.sourcegitcommit: d20f74d5300197a0930eeb7db586c6a90403aabc
+ms.openlocfilehash: ace392570dbabc65d128941fc735231622f2c008
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50973229"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285317"
 ---
 # <a name="about-filters-and-highlighting-in-power-bi-reports"></a>Om filtre og fremhævning i Power BI-rapporter
  I denne artikel beskrives, hvordan du anvender filtre og fremhævning i Power BI-tjenesten. Brugeroplevelsen er stort den samme i Power BI Desktop. ***Filtre*** fjerner alt andet end de data, du vil fokusere på. ***Fremhævning*** er ikke filtrering. Det fjerner ikke data, men fremhæver i stedet et undersæt af de synlige data – ikke-fremhævede data forbliver synlige, men nedtonede.

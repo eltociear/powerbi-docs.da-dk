@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 71dbdd79e6bedee3f1377f0e7c29fcc6efbbba03
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 163fc60052c4124e7c6cbac60f1486a185c35f17
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417320"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290883"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Figurkort i Power BI Desktop (prøveversion)
 Opret en visualisering af typen **Figurkort** til at sammenligne områder på et kort ved hjælp af farver. I modsætning til visualiseringen **Kort** kan **Figurkort** ikke vise den nøjagtige geografiske placering af datapunkter på et kort. I stedet er dens primære formål at vise relative sammenligninger mellem områder på et kort ved at give dem forskellige farver.
@@ -113,7 +113,7 @@ Du skal være opmærksom på nogle få ting i forbindelse med denne prøveversio
 ## <a name="region-keys"></a>Områdenøgler
 Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurkort**.
 
-### <a name="australia-states"></a>Australien: delstater
+### <a name="australia-states"></a>Australien: Stater
 
 | `id` | `abbr` | `iso` | `name` | `postal` |
 | --- | --- | --- | --- | --- |
@@ -126,7 +126,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | au-nsw |NSW |AU-NSW |New South Wales |NSW |
 | au-act |ACT |AU-ACT |Australian Capital Territory |ACT |
 
-### <a name="austria-states"></a>Østrig: delstater
+### <a name="austria-states"></a>Østrig: Stater
 
 | `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
@@ -140,7 +140,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | at-ka |AT-2 |Kärnten |Carinthia |KA |
 | at-bu |AT-1 |Burgenland |Burgenland |BU |
 
-### <a name="brazil-states"></a>Brasilien: delstater
+### <a name="brazil-states"></a>Brasilien: Stater
 
 | `id` |
 | --- |
@@ -176,7 +176,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | Litigated Zone 3 |
 | Litigated Zone 4 |
 
-### <a name="canada-provinces"></a>Canada: provinser
+### <a name="canada-provinces"></a>Canada: Provinser
 
 | `id` | `iso` | `name` | `postal` |
 | --- | --- | --- | --- |
@@ -194,7 +194,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | ca-bc |CA-BC |British Columbia |BC |
 | ca-ab |CA-AB |Alberta |AB |
 
-### <a name="france-regions"></a>Frankrig: regioner
+### <a name="france-regions"></a>Frankrig: Regioner
 
 | `id` | `name` | `name-en` |
 | --- | --- | --- |
@@ -221,7 +221,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | Auvergne |Auvergne |Auvergne |
 | Aquitaine |Aquitaine |Aquitaine |
 
-### <a name="germany-states"></a>Tyskland: delstater
+### <a name="germany-states"></a>Tyskland: Stater
 
 | `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
@@ -242,7 +242,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | de-by |DE-BY |Bayern |Bavaria |BY |
 | de-bw |DE-BW |Baden-Württemberg |Baden-Wurttemberg |BW |
 
-### <a name="ireland-counties"></a>Irland: amter
+### <a name="ireland-counties"></a>Irland: Amter
 
 | `id` |
 | --- |
@@ -273,7 +273,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | Cavan |
 | Carlow |
 
-### <a name="italy-regions"></a>Italien: regioner
+### <a name="italy-regions"></a>Italien: Regioner
 
 | `id` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- |
@@ -298,7 +298,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | it-pu |IT-75 |Apulien |Puglia |PU |
 | it-ab |IT-65 |Abruzzo |Abruzzo |AB |
 
-### <a name="mexico-states"></a>Mexico: delstater
+### <a name="mexico-states"></a>Mexico: Stater
 
 | `id` | `abreviatura` | `iso` | `name` | `name-en` | `postal` |
 | --- | --- | --- | --- | --- | --- |
@@ -335,7 +335,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | mx-bcn |B.C. |MX-BCN |Baja California |Baja California |BN |
 | mx-agu |Ags. |MX-AGU |Aguascalientes |Aguascalientes |AG |
 
-### <a name="netherlands-provinces"></a>Nederlandene: provinser
+### <a name="netherlands-provinces"></a>Holland: Provinser
 
 | `id` | `iso` | `name` | `name-en` |
 | --- | --- | --- | --- |
@@ -352,7 +352,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | nl-fl |NL-FL |Flevoland |Flevoland |
 | nl-dr |NL-DR |Drenthe |Drenthe |
 
-### <a name="uk-countries"></a>Storbritannien: lande/områder
+### <a name="uk-countries"></a>Storbritannien: Lande
 
 | `id` | `iso` | `name` |
 | --- | --- | --- |
@@ -361,7 +361,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | gb-nir |GB-NIR |Nordirland |
 | gb-eng |GB-ENG |England |
 
-### <a name="usa-states"></a>USA: stater
+### <a name="usa-states"></a>USA: Stater
 
 | `id` | `name` | `postal` |
 | --- | --- | --- |

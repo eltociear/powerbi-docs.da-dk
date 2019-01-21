@@ -5,16 +5,16 @@ author: maikelson
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: b144f3101606a58b2cd0b48db976a70477442d40
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 24d023d726183119a3bd098c61db75cb68969c52
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52670411"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283133"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
@@ -50,11 +50,11 @@ Kom i gang med disse populære webinarer, når det passer dig
 <br>af Gohul Shanmugalingam
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
 
-**Gør dine data i Power BI visuelle: Grundlæggende diagramtyper, og hvordan du bruger dem**
+**Gør dine data i Power BI visuelle:  Grundlæggende diagramtyper, og hvordan du bruger dem.**
 <br>ved Miranda Li
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
 
-**Power BI, Excel og Office 365: Optimer dine Enterprise-Data**
+**Power BI, Excel og Office 365: Optimer dine virksomhedsdata**
 <br>ved Olaf Hubel og Miguel Martinez
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Unlocking-the-Value-of-your-Enterprise-Data-OnDemandRegistration.html?Is=Website)
 
@@ -112,7 +112,7 @@ Se optagne sessioner når som helst
 <br>ved Ed Bobrin fra Avanade
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
 
-**Producenter: Din branche gennemgår en digital transformation – Bevar din førerposition ved at benytte analyser til at optimere rentabiliteten**
+**Producenter: Din branche gennemgår en digital transformation – bevar din førerposition ved at benytte analyser til at optimere rentabiliteten**
 <br>ved Jon Thompson fra Blue Margin og Jim Pastor fra Elgin Fastener Group
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/digital-transformation-in-manufacturing.html?Is=Website)
 
@@ -142,7 +142,7 @@ Se optagne sessioner når som helst
 <br>ved Kasper de Jonge
 <br>[Se nu](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-23-2017-Power-BI-security-deep-dive-by-Kasper-de-Jonge/m-p/161476?Is=Website)
 
-**Spørg en partner: Udvikling af brugerdefinerede visuals til Power BI**
+**Spørg en partner: Udvikling af brugerdefinerede visualiseringer til Power BI**
 <br>ved Ted Pattison
 <br>[Se nu](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Ask-a-Partner-Developing-Custom-Visuals-for-Power-BI/m-p/150368?Is=Website)
 
@@ -155,11 +155,11 @@ Se optagne sessioner når som helst
 
 **[Webinarserie om struktur til indføring af Power BI.](https://info.microsoft.com/ww-landing-powerbi-adoption-framework-series.html?Is=Website)**
 <br>ved Manu Kanwarpal og Paul Henwood
-<br>[Tilmeld dig for at se med nu – del 1 – Indføring: Indfør en datadrevet kultur](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
-<br>[Tilmeld dig for at se med nu – del 2 – Styring: Styr din brug af Power BI](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
-<br>[Tilmeld dig for at se med nu – del 3 – Tjenesteadministration: Styring af Power BI-tjenesten](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
-<br>[Tilmeld dig for at se med nu – del 4 – Sikkerhed: Opbevar dine data sikkert med Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
-<br>[Tilmeld dig for at se med nu – del 5 – Udrulning af Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
+<br>[Tilmeld dig, og se med nu – del 1 – Indføring: Indfør en datadrevet kultur](https://info.microsoft.com/ww-landing-powerbi-adoption-ondemand.html?Is=Website)
+<br>[Tilmeld dig, og se med nu – del 2 – Styring: Styr din brug af Power BI](https://info.microsoft.com/ww-ondemand-powerbi-governance.html?Is=Website)
+<br>[Tilmeld dig, og se med nu – del 3 – Tjenesteadministration: Management Insights i Power BI-tjenesten](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part3.html?Is=Website)
+<br>[Tilmeld dig, og se med nu – del 4 – Sikkerhed: Hold dine data sikre med Power BI](https://info.microsoft.com/ww-landing-pbi-adoption-framework-part4.html?Is=Website)
+<br>[Tilmeld dig, og se med nu – del 5 – Udrulning: Udrulning af Power BI](https://info.microsoft.com/ww-landing-powerbi-adoption-part5-rollout.html?Is=Website)
 
 **Webinarserien Office 365 Finance Pros**
 <br>af Mark Traverso, Carlos Otero, Johnnie Thomas, Amanda Cofsky og Miguel Martinez

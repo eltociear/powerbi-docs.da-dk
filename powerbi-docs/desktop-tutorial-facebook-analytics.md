@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: ec90e63de1e42350ff205febdc66abf4ba6ee626
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: ae2d40d5a53a7a84c0f6070a7be1011968d7ed7b
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578491"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276968"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Selvstudium: Facebook-analyse ved hjælp af Power BI Desktop
 
@@ -187,7 +187,7 @@ Det nærmer sig, men datanavnene har alle decimalen **,0**, hvilket er distraher
 2. I Power-forespørgselseditor skal du vælge kolonnen **Number of comments** og ændre datatypen til **Heltal** ved at gøre et af følgende: 
    - Vælg ikonet **1,2** ved siden af kolonneoverskriften **Number of comments**, og vælg **Heltal** i rullemenuen, eller
    - højreklik på kolonneoverskriften, og vælg **Skift type > Heltal**, eller
-   - vælg **Datatype: decimaltal** i gruppen **Transformér** under fanen Hjem, eller vælg **Heltal** i gruppen **En hvilken som helst kolonne** under fanen **Transformér**.
+   - vælg **datatype: decimaltal** i gruppen **Transformér** under fanen Hjem, eller vælg **Heltal** i gruppen **En hvilken som helst kolonne** under fanen **Transformér**.
    
    Ikonet i kolonneoverskriften ændres til **123**, hvilket betegner datatypen Heltal.
    

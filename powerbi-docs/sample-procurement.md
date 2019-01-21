@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/23/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3b0c6fcc72e5b2f95b06f1184341298d449bf57e
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: 18b99bf86f49f1355d4ab9f20ff6e8a83c89731d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717142"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287342"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på indkøbsanalyse for Power BI: Få en introduktion
 
@@ -71,10 +71,10 @@ Lad os først se på udgiftstendenser efter kategori og placering.
 
 Vær opmærksom på et par ting:
 
-* I kurvediagrammet **Total Invoice by Month and Category**: kategorien **Direct** har ret konsistente udgifter, **Logistics** er højest i december, og **Other** er højest i februar.
+* I kurvediagrammet **Total Invoice by Month and Category**: Kategorien **Direct** har ret konsistente udgifter, **Logistics** er højest i december, og **Other** er højest i februar.
 * På kortet **Total Invoice by Country/Region**: De fleste af vores udgifter er i USA.
 * I søjlediagrammet **Total Invoice by Sub Category**: **Hardware** og **Indirect Goods & Services** er de største udgiftskategorier.
-* I den samlede faktura efter lag i det liggende søjlediagram: De fleste af vores forretninger udføres med vores leverandører på niveau 1 (top 10). Dette hjælper os med at bedre administrere leverandørrelationer.
+* I det liggende søjlediagram Total Invoice by Tier: De fleste af vores forretninger finder sted med vores leverandører på niveau 1 (de 10 øverste). Dette hjælper os med at bedre administrere leverandørrelationer.
 
 ## <a name="spending-in-mexico"></a>Udgifter i Mexico
 Lad os udforske udgiftsområder i Mexico.

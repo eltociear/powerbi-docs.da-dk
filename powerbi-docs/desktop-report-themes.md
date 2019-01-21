@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 215b4c8f46b2d39c6dcc5853c07e4e6526027881
-ms.sourcegitcommit: b343e44dbafc0b718c564402593d4b6e3a8ce97c
+ms.openlocfilehash: 5c383cf3c7fcbae88be6943bb418026c849db196
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51027454"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277428"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Brug rapporttemaer i Power BI Desktop
 Med **rapporttemaer** kan du anvende et farvetema i hele rapporten, f.eks. organisationens farver, sæsonmæssige farver eller andre farvetemaer. Når du anvender et **rapporttema**, bruges farver fra det valgte tema for alle visuelle elementer i rapporten. Der gælder nogle få undtagelser, som er beskrevet senere i denne artikel.
@@ -133,7 +133,7 @@ Lad os sige, at du anvender et brugerdefineret farvesæt (eller individuel farve
 
 Det er også muligt at angive farven på et datapunkt manuelt ved hjælp af afsnittet Temafarver. Farverne opdateres *ikke*, når du anvender et nyt Rapporttema. Hvis du vil have standardfarverne tilbage (så de ikke opdateres, når du anvender et nyt rapporttema), skal du vælge **Revert to default** (Vend tilbage til standard) i paletten med **temafarver**.
 
-![Gendan til standard](media/desktop-report-themes/report-themes_9.png)
+![Vend tilbage til standard](media/desktop-report-themes/report-themes_9.png)
 
 Desuden kan mange **brugerdefinerede visuals** ikke anvendes på Rapporttemaer.
 
@@ -248,57 +248,57 @@ I følgende tabel defineres værdier for *cardName*. Den første værdi i hver c
 
 | **cardName** |
 | --- |
-| axis: Gauge axis (Målerakse) |
-| breakdown: Breakdown (Opdeling) |
-| bubbles: Bubbles (Bobler) |
-| calloutValue: Callout Value (Billedforklaringsværdi) |
-| card: Card (Kort) |
-| cardTitle: Card Title (Korttitel) |
-| categoryAxis: X-Axis (X-akse) |
-| categoryLabels: Category labels (Kategorietiketter) |
-| columnFormatting: Field formatting (Feltformatering) |
-| columnHeaders: Column headers (Kolonneoverskrifter |
-| dataLabels: Data labels (Dataetiketter) |
-| fill: Fill (Udfyldning) |
-| fillPoint: Fill point (Udfyldningspunkt) |
-| forecast: Forecast (Prognose) |
-| general: General (Generel) |
-| goals: Goals (Mål) |
-| grid: Grid (Gitter) |
-| header: Header (Overskrift) |
-| imageScaling: Scaling (Skalering) |
-| indicator: Indicator (Indikator) |
-| items: Items (Elementer) |
-| labels: Data labels (Dataetiketter) |
-| legend: Legend (Forklaring) |
-| lineStyles: Shapes (Figurer) |
-| mapControls: Map controls (Kontrolelementer til kort) |
-| mapStyles: Map styles (Korttypografier) |
-| numericInputStyle: Numeric inputs (Numerisk input) |
-| percentBarLabel: Conversion Rate Label (Etiket for gennemførelsesfrekvens) |
-| plotArea: Plot Area (Afbildningsområde) |
-| plotAreaShading: Symmetry shading (Symmetriskygge) |
-| ratioLine: Ratio line (Forholdslinje) |
-| referenceLine: Constant Line (Konstant linje) |
-| ribbonChart: Ribbons (Bånd) |
+| axis: Målerakse |
+| breakdown: Oversigt |
+| bubbles: Bobler |
+| calloutValue: Billedforklaringsværdi |
+| card: Kort |
+| cardTitle: Korttitel |
+| categoryAxis: X-akse |
+| categoryLabels: Kategorietiketter |
+| columnFormatting: Feltformatering |
+| columnHeaders: Kolonneoverskrifter |
+| dataLabels: Datamærkater |
+| fill: Udfyldning |
+| fillPoint: Udfyldningspunkt |
+| forecast: Prognose |
+| general: Generelt |
+| goals: Mål |
+| grid: Gitter |
+| header: Sidehoved |
+| imageScaling: Skalering |
+| indicator: Indikator |
+| items: Elementer |
+| labels: Datamærkater |
+| legend: Forklaring |
+| lineStyles: Figurer |
+| mapControls: Kontrolelementer til kort |
+| mapStyles: Korttypografier |
+| numericInputStyle: Numerisk input |
+| percentBarLabel: Etiket for gennemførelsesfrekvens |
+| plotArea: Afbildningsområde |
+| plotAreaShading: Symmetriskygge |
+| ratioLine: Forholdslinje |
+| referenceLine: Konstantlinje |
+| ribbonChart: Bånd |
 | rotation: Rotation |
-| rowHeaders: Row headers (Rækkeoverskrifter) |
-| selection: Selection Controls (Markeringskontrolelementer) |
-| sentimentColors: Sentiment colors (Synspunktsfarver) |
-| shape: Shape (Figur) |
-| slider: Slider (Skyder) |
-| status: Color coding (Farvekodning) |
-| subTotals: Subtotals (Subtotaler) |
-| target: Target (Mål) |
-| total: Grand total (Totalbeløb) |
-| trend: Trend Line (Tendenslinje) |
-| trendline: Trend axis (Tendensakse) |
-| valueAxis: Y-Axis (Y-akse) |
-| values: Values (Værdier) |
-| wordWrap: Word wrap (Tekstombrydning) |
-| xAxisReferenceLine: X-Axis Constant Line (Konstant linje på X-akse) |
-| y1AxisReferenceLine: Constant Line (Konstant linje) |
-| Zoom: Zoom |
+| rowHeaders: Rækkeoverskrifter |
+| selection: Kontrolelementer til markering |
+| sentimentColors: Farver for synspunkt |
+| shape: Figur |
+| slider: Skyder |
+| status: Farvekodning |
+| subTotals: Subtotaler |
+| target: Mål |
+| total: Samlet total |
+| trend: Tendenslinje |
+| trendline: Tendensakse |
+| valueAxis: Y-akse |
+| values: Værdier |
+| wordWrap: Tekstombrydning |
+| xAxisReferenceLine: Konstantlinje for X-akse |
+| y1AxisReferenceLine: Konstantlinje |
+| zoom: Zoom |
 
 ### <a name="properties-within-each-card"></a>Egenskaber i hvert kort
 I følgende afsnit defineres egenskaberne i hvert kort:

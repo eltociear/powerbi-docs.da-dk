@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 72c3c2fde92de45d3a93f087d217af1f50e50601
-ms.sourcegitcommit: bb4cf3469b44e451153c469725a9069dcd548809
+ms.openlocfilehash: d48df3287813229e673bbc523281cdb2218ec384
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53649039"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277267"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Tilslut Azure Data Lake Storage Gen2 for at få et dataflowlager (prøveversion)
 
@@ -76,7 +76,7 @@ I vinduet **Tilføj rolletildeling** skal du vælge rollen **Læser** og tildele
 
 Du skal oprette et filsystem med *powerbi*, før din lagerkonto kan føjes til Power BI. Der er mange måder at oprette sådan et filsystem på, herunder ved hjælp af Azure Databricks, HDInsight, AZCopy eller Azure Storage Explorer. I dette afsnit kan du se en enkel måde at oprette et filsystem på ved hjælp af Azure Storage Explorer.
 
-Til dette trin kræves det, at du installerer Azure Storage Explorer version 1.6.1 eller nyere. Hvis du vil installere Azure Storage Explorer til Windows, Linux eller Macintosh, skal du se [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
+Til dette trin kræves det, at du installerer Azure Storage Explorer version 1.6.2 eller nyere. Hvis du vil installere Azure Storage Explorer til Windows, Linux eller Macintosh, skal du se [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/).
 
 1. Når du har installeret Azure Storage Explorer, vises vinduet Microsoft Azure Storage Explorer – Opret forbindelse ved den første start. Selvom Storage Explorer giver flere måder at oprette forbindelse til lagerkonti på, er der i øjeblikket kun én måde, der understøttes, for den nødvendige konfiguration. 
 

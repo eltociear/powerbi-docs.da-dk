@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 18d5b2ca504ec3533e2ded0e5480885ea862fb3a
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: 26ab2ec7dfd7a091a6a7df89ee4492dc124ed60c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619488"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279176"
 ---
 # <a name="storage-mode-in-power-bi-desktop-preview"></a>Lagringstilstand i Power BI Desktop (prøveversion)
 
@@ -37,7 +37,7 @@ Angivelse af lagringstilstanden giver mange fordele. Du kan angive lagringstilst
 
 Indstillingen af lagringstilstand i Power BI Desktop er en af tre relaterede funktioner:
 
-* **Sammensatte modeller**:Gør det muligt for en rapport at have to eller flere dataforbindelser, herunder DirectQuery-forbindelser eller Import, i en hvilken som helst kombination. Du kan finde flere oplysninger under [Sammensatte modeller i Power BI Desktop (prøveversion)](desktop-composite-models.md).
+* **Sammensatte modeller**: Gør det muligt for en rapport at have to eller flere dataforbindelser, herunder DirectQuery-forbindelser eller Import, i en hvilken som helst kombination. Du kan finde flere oplysninger under [Sammensatte modeller i Power BI Desktop (prøveversion)](desktop-composite-models.md).
 
 * **Mange til mange-relationer**: Via *sammensatte modeller* kan du oprette *mange til mange-relationer* mellem tabeller. *Mange til mange-relationer* fjerner kravene for entydige værdier i tabeller. Det fjerner også tidligere løsninger, f.eks. introduktion af nye tabeller, kun for at oprette relationer. Du kan finde flere oplysninger under [Mange til mange-relationer i Power BI Desktop (prøveversion)](desktop-many-to-many-relationships.md).
 
@@ -85,7 +85,7 @@ Overførselslogikken gennemgår kun den ene side af **1-til-mange**-relationer.
 ## <a name="storage-mode-usage-example"></a>Eksempel på brugen af lagringstilstand
 Lad os fortsætte med eksemplet fra det forrige afsnit og antage, at vi anvender de følgende indstillinger for egenskaben for lagringstilstand:
 
-| Tabel                   | Lagringstilstand         |
+| Tabel                   | Lagertilstand         |
 | ----------------------- |----------------------| 
 | *Salg*                 | DirectQuery          | 
 | *SurveyResponse*        | Importér               | 

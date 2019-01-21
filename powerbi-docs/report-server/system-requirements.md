@@ -5,16 +5,16 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: maghan
-ms.openlocfilehash: c8904f3025a0a60557b1d3efb54ea6bc18c20da4
-ms.sourcegitcommit: a1b7ca499f4ca7e90421511e9dfa61a33333de35
+ms.openlocfilehash: 763b79b50266678a78dc956372f504f30836c4fc
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51507900"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292953"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Hardware- og softwarekrav til installation af Power BI-rapportserver
 I denne artikel kan du se minimumkrav til hardware og software, hvis du vil installere og køre Power BI-rapportserver.
@@ -27,7 +27,7 @@ I denne artikel kan du se minimumkrav til hardware og software, hvis du vil inst
 | Harddisk |Power BI-rapportserver kræver minimum 1 GB ledig plads på harddisken.<br><br>Yderligere plads kræves på den databaseserver, der skal hoste rapportserverdatabasen. |
 | Hukommelse |**Minimum:** 1 GB<br/><br/> **Anbefalet:** Mindst 4 GB |
 | Processorhastighed |**Minimum:** x64-processor: 1,4 GHz<br/><br/> **Anbefalet:** 2,0 GHz eller hurtigere |
-| Processortype |x64-processor: AMD Opteron, AMD Athlon 64, Intel Xeon med Intel EM64T-understøttelse, Intel Pentium IV med EM64T-understøttelse |
+| Processortype |x64-processor: AMD Opteron, AMD Athlon 64, Intel Xeon med understøttelse af Intel EM64T, Intel Pentium IV med understøttelse af EM64T |
 | Operativsystem |Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows Server 2012 R2 Datacenter<br><br>Windows Server 2012 R2 Standard<br><br>Windows Server 2012 R2 Essentials<br><br>Windows Server 2012 R2 Foundation<br><br>Windows Server 2012 Datacenter<br><br>Windows Server 2012 Standard<br><br>Windows Server 2012 Essentials<br><br>Windows Server 2012 Foundation<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br><br>Windows 8.1<br><br>Windows 8.1 Pro<br><br>Windows 8.1 Enterprise<br><br>Windows 8<br><br>Windows 8 Pro<br><br>Windows 8 Enterprise |
 
 > [!NOTE]

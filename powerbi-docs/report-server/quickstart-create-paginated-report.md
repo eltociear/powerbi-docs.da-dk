@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 10/22/2018
 ms.author: maggies
-ms.openlocfilehash: 475221981181e4ddfac18e7023259fac9bbc35ed
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: 9e3a45e7648fd38413c2d45582981bac5e91cd2a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289122"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284405"
 ---
 # <a name="create-a-paginated-report-for-power-bi-report-server"></a>Opret en sideinddelt rapport til Power BI-rapportserver
 Som navnet antyder så kan sideinddelte rapporter løbe op i mange sider. De er udformet i et fast format og tillader præcis tilpasning. Sideinddelte rapporter er .rdl-filer.
@@ -25,7 +25,7 @@ Du kan gemme og administrere sideinddelte rapporter på Power BI-rapportserveren
 
 Hvis du allerede har oprettet sideinddelte rapporter i Report Builder eller Rapportdesigner, så er du klar til at oprette sideinddelte rapporter for Power BI-rapportserveren. Hvis det ikke er tilfældet, får du her nogle hurtige trin til at komme i gang.
 
-## <a name="step-1-install-and-start-report-builder"></a>Trin 1: Installér, og start Report Builder
+## <a name="step-1-install-and-start-report-builder"></a>Trin 1: Installér og start Report Builder
 Du har muligvis allerede installeret Report Builder for at oprette rapporter for en SSRS-server. Du kan bruge den samme version eller Report Builder til at oprette rapporter for Power BI-rapportserveren. Hvis du ikke har installeret den, så er fremgangsmåden ret nem.
 
 1. I Power BI-rapportserverens webportal skal du vælge **Ny** > **Sideinddelt rapport**.
@@ -60,10 +60,10 @@ På den første side i guiden Diagram – **Vælg et datasæt**, du kan oprette 
      Vil du oprette et datasæt? Se [Opret et delt eller integreret datasæt](https://docs.microsoft.com/sql/reporting-services/report-data/create-a-shared-dataset-or-embedded-dataset-report-builder-and-ssrs).
 2. Vælg en diagramtype – i dette tilfælde et søjlediagram.
    
-    ![Guiden Diagram: diagramtype](media/quickstart-create-paginated-report/reportserver-paginated-choose-chart-type.png)
+    ![Guiden Diagram: Diagramtype](media/quickstart-create-paginated-report/reportserver-paginated-choose-chart-type.png)
 3. Organiser felter ved at trække dem hen til felterne **Kategorier**, **Serie** og **Værdier**.
    
-    ![Guiden Diagram: Organiser felter](media/quickstart-create-paginated-report/reportserver-paginated-arrange-fields.png)
+    ![Guiden Diagram: Arranger felter](media/quickstart-create-paginated-report/reportserver-paginated-arrange-fields.png)
 4. Vælg **Næste** > **Afslut**.
 
 ## <a name="step-3-design-your-report"></a>Trin 3: Design rapporten

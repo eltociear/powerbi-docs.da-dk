@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: tutorial
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 85c16822a51bc3c4a59bbfaa363f742f77552b72
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: ba9cc81c966ebadb2aaff8c339b8a151aef7b6fd
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578629"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287560"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Selvstudium: Opret dine egne målinger i Power BI Desktop
 Du kan oprette nogle af de mest effektive løsninger til dataanalyse i Power BI Desktop ved hjælp af målinger. Målinger hjælper dig med at udføre beregninger på dine data, når du arbejder med dine rapporter. I dette selvstudium lærer du, hvordan du skal forstå målinger, og hvordan du opretter dine egne grundlæggende målinger i Power BI Desktop.
@@ -23,7 +23,7 @@ Du kan oprette nogle af de mest effektive løsninger til dataanalyse i Power BI 
 ### <a name="prerequisites"></a>Forudsætninger
 - Denne artikel er beregnet til Power BI-brugere, som allerede har erfaring med Power BI Desktop, så de kan oprette mere avancerede modeller. Du bør allerede have kendskab til at bruge Hent data og Forespørgselseditor til at importere data, arbejde med flere relaterede tabeller og tilføje felter på dit rapportcanvas. Hvis du ikke har erfaring med Power BI Desktop, skal du se [Introduktion til Power BI Desktop](desktop-getting-started.md).
   
-- Download filen [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), som indeholder data om onlinesalget for det fiktive firma Contoso, Inc. Dataene blev importeret fra en database, så du kan ikke oprette forbindelse til datakilden eller få dem vist i Forespørgselseditor. Udpak filen på din computer, og åbn den derefter i Power BI Desktop.
+- Download filen [Contoso Sales Sample til Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), som indeholder data om onlinesalget for den fiktive virksomhed Contoso, Inc. Dataene blev importeret fra en database, så du kan ikke oprette forbindelse til datakilden eller få dem vist i Forespørgselseditor. Udpak filen på din computer, og åbn den derefter i Power BI Desktop.
 
 ## <a name="understand-measures"></a>Forstå målinger
 
@@ -128,7 +128,7 @@ Hvis du vil se forskellen mellem nettoomsætning og samlet salg efter land, skal
 
 ![Salgsbeløb og nettoomsætning efter land](media/desktop-tutorial-create-measures/meastut_netsales_byrcnandsalesamount.png)
 
-Der bruges nu to målinger i diagrammet: SalesAmount, som blev beregnet automatisk, og Net Sales, som du oprettede. Hver måling blev beregnet i henhold til konteksten i et andet felt, RegionCountryName.
+Diagrammet bruger nu to målinger: SalesAmount, der blev opsummeret automatisk, samt målingen Net Sales, som du lige har oprettet. Hver måling blev beregnet i henhold til konteksten i et andet felt, RegionCountryName.
     
 ### <a name="use-your-measure-with-a-slicer"></a>Brug målingen sammen med et udsnitsværktøj
 

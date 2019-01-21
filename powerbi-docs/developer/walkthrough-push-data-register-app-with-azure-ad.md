@@ -5,23 +5,23 @@ author: markingmyname
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: maghan
-ms.openlocfilehash: 660f79eab32ae7ade5cea990c6fc152bb9507297
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: db3184f7bc3c181b685c22d0bcad27206b4a0f8f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "34285962"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296357"
 ---
 # <a name="step-1-register-an-app-with-azure-ad"></a>Trin 1: Registrer en app i Azure AD
-Denne artikel er en del af en trinvis vejledning til, hvordan du [overfører data til et datasæt](walkthrough-push-data.md).
+Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
 
 Det første, du skal gøre for at overføre data til et Power BI-datasæt, er at registrere din app i Azure AD. Det skal du gøre for at få et **klient-id**, som identificerer din app i Azure AD. Uden et **klient-id** kan din app ikke godkendes i Azure AD.
 
-> **Bemærk**! Inden du registrerer en app til Power BI, skal du [tilmelde dig Power BI](create-an-azure-active-directory-tenant.md).
+> **BEMÆRK**! Inden du registrerer en app til Power BI, skal du [tilmelde dig Power BI](create-an-azure-active-directory-tenant.md).
 > 
 > 
 
@@ -46,7 +46,7 @@ På næste trin kan du se, hvordan du [får en adgangstoken til godkendelse](wal
 
 ## <a name="next-steps"></a>Næste trin
 [Tilmeld dig Power BI](create-an-azure-active-directory-tenant.md)  
-[Hent en adgangstoken til godkendelse](walkthrough-push-data-get-token.md)  
+[Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md)  
 [Gennemgang: Overfør data til et datasæt](walkthrough-push-data.md)  
 [Registrer en app](register-app.md)  
 [Oversigt over Power BI REST-API'en](overview-of-power-bi-rest-api.md)  

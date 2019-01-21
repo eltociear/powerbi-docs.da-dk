@@ -7,15 +7,15 @@ ms.author: maggies
 ms.date: 11/20/2018
 ms.topic: overview
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: ee8086a149e752d68aa8d6801844676d038257e3
-ms.sourcegitcommit: 458e091a0a0bfb71ea3980d44df6408f48bab586
+ms.openlocfilehash: 4db2f7ca5a84563e86b3a3033daae6d83bffcf5e
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/22/2018
-ms.locfileid: "52289145"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291965"
 ---
 # <a name="what-is-power-bi-report-server"></a>Hvad er Power BI-rapportserveren?
 
@@ -27,13 +27,13 @@ Power BI-rapportserveren er en rapportserver med en webportal i det lokale milj�
 Power BI-rapportserveren ligner både SQL Server Reporting Services og Power BI-onlinetjenesten, men på forskellige måder. På samme måde som Power BI-tjenesten er Power BI-rapportserveren vært for Power BI-rapporter (. PBIX) og Excel-filer. På samme måde som Reporting Services findes Power BI-rapportserveren i det lokale miljø og er vært for sideinddelte rapporter (.RDL). Power BI-rapportserveren er overordnet i forhold til Reporting Services: Alt det, du kan bruge Reporting Services til, kan du også bruge Power BI-rapportserveren til, inklusive understøttelse af Power BI-rapporter. Se [Sammenlign Power BI-rapportserveren med Power BI-tjenesten](compare-report-server-service.md) for at få flere oplysninger.
 
 ## <a name="licensing-power-bi-report-server"></a>Licens til Power BI-rapportserveren
-Power BI-rapportserveren er tilgængelig via to forskellige licenser: [Power BI Premium](../service-premium.md) og [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) med Software Assurance. Med en Power BI Premium-licens kan du oprette en hybrid udrulning med en blanding af clouden og det lokale miljø.  
+Power BI-rapportserver er tilgængelig via to forskellige licenser: [Power BI Premium](../service-premium.md) og [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) med Software Assurance. Med en Power BI Premium-licens kan du oprette en hybrid udrulning med en blanding af clouden og det lokale miljø.  
 
 > [!NOTE]
 > I forbindelse med Power BI Premium er Power BI-rapportserveren kun inkluderet med P-SKU'er. Den er ikke inkluderet i forbindelse med EM-SKU'er.
 
 ## <a name="web-portal"></a>Webportal
-Indgangspunktet for Power BI-rapportserveren er en sikker webportal, som du kan få vist i alle moderne browsere. Her får du adgang til alle dine rapporter og KPI'er. Indholdet på webportalen er organiseret i et traditionelt mappehierarki. I dine mapper er indhold grupperet efter type: Power BI-rapporter, mobilrapporter, sideinddelte rapporter, KPI'er og Excel projektmapper. Delte datasæt og delte datakilder har deres egne mapper, du kan bruge som komponenter til dine rapporter. Du markerer dem som favoritter for at få vist dem i en enkelt mappe. Du kan også oprette KPI'er direkte på webportalen. 
+Indgangspunktet for Power BI-rapportserveren er en sikker webportal, som du kan få vist i alle moderne browsere. Her får du adgang til alle dine rapporter og KPI'er. Indholdet på webportalen er organiseret i et traditionelt mappehierarki. Indhold i dine mapper er grupperet efter type: Power BI-rapporter, mobilrapporter, sideinddelte rapporter, KPI'er og Excel-projektmapper. Delte datasæt og delte datakilder har deres egne mapper, du kan bruge som komponenter til dine rapporter. Du markerer dem som favoritter for at få vist dem i en enkelt mappe. Du kan også oprette KPI'er direkte på webportalen. 
 
 ![Webportalen til Power BI-rapportserver](media/get-started/web-portal.png)
 

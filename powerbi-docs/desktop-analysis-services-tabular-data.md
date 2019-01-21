@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 102198c4524903098ad0c6b0b9fd7e231c3f1fdc
-ms.sourcegitcommit: 05303d3e0454f5627eccaa25721b2e0bad2cc781
+ms.openlocfilehash: 703ccbc0c1c541fe161f409480701788d0cd12af
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52578284"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54280238"
 ---
 # <a name="using-analysis-services-tabular-data-in-power-bi-desktop"></a>Brug af Analysis Services-tabeldata i Power BI Desktop
 Med Power BI Desktop er der to måder, du kan oprette forbindelse til og hente data fra dine SQL Server Analysis Services-tabelmodeller: Du kan udforske ved hjælp af en direkte forbindelse, eller du kan vælge elementer og importere til Power BI Desktop.
@@ -54,13 +54,13 @@ Når du har oprettet dynamiske rapporter i Power BI Desktop, kan du dele dem ved
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 **Spørgsmål:** Har jeg brug for en datagateway i det lokale miljø?
 
-**Svar:** Måske. Hvis du bruger Power BI Desktop til at oprette direkte forbindelse til en tabelmodel, men ikke har planer om at publicere på dit Power BI-websted, behøver du ikke en gateway. Hvis du derimod vil publicere på dit Power BI-websted, er en datagateway nødvendig for at sikre sikker kommunikation mellem Power BI-tjenesten og Analysis Services-serveren i det lokale miljø. Husk at tale med administratoren af Analysis Services-serveren, før du installerer en datagateway.
+**Svar:** I nogle tilfælde. Hvis du bruger Power BI Desktop til at oprette direkte forbindelse til en tabelmodel, men ikke har planer om at publicere på dit Power BI-websted, behøver du ikke en gateway. Hvis du derimod vil publicere på dit Power BI-websted, er en datagateway nødvendig for at sikre sikker kommunikation mellem Power BI-tjenesten og Analysis Services-serveren i det lokale miljø. Husk at tale med administratoren af Analysis Services-serveren, før du installerer en datagateway.
 
 Hvis du vælger Vælg elementer, og hent data, importerer du data fra tabelmodellen direkte i Power BI Desktop-filen, så en gateway er ikke nødvendig.
 
 **Spørgsmål:** Hvad er forskellen mellem at oprette direkte forbindelse til en tabelmodel fra Power BI-tjenesten i forhold til at oprette direkte forbindelse fra Power BI Desktop?
 
-**Svar:** Når du opretter direkte forbindelse mellem en tabelmodel fra dit websted i Power BI tjenesten og en Analysis Services-database i det lokale miljø i din organisation, kræves der en datagateway i det lokale miljø for at sikre kommunikation mellem dem. Når du opretter direkte forbindelse til en tabelmodel fra Power BI Desktop, er en gateway ikke påkrævet, fordi Power BI Desktop og den Analysis Services-server, du opretter forbindelse til, begge kører i det lokale miljø i din organisation. Hvis du publicerer Power BI Desktop-filen på dit Power BI-websted, er en gateway dog påkrævet.
+**Svar:** Når du opretter direkte forbindelse mellem en tabelmodel fra dit websted i Power BI tjenesten og en Analysis Services-database i det lokale miljø i din organisation, kræves der en datagateway i det lokale miljø for at sikre kommunikationen mellem dem. Når du opretter direkte forbindelse til en tabelmodel fra Power BI Desktop, er en gateway ikke påkrævet, fordi Power BI Desktop og den Analysis Services-server, du opretter forbindelse til, begge kører i det lokale miljø i din organisation. Hvis du publicerer Power BI Desktop-filen på dit Power BI-websted, er en gateway dog påkrævet.
 
 **Spørgsmål:** Hvis jeg har oprettet en direkte forbindelse, kan jeg så oprette forbindelse til en anden datakilde i den samme Power BI Desktop-fil?
 

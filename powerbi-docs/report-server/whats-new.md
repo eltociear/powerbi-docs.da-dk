@@ -6,15 +6,15 @@ ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/16/2018
-ms.openlocfilehash: a365cab0420fdf373d62f5b1774a4d86985adfe3
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 91179ca37b8ba5c883785501588c9b12a02d644d
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50101249"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292447"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 
@@ -120,14 +120,14 @@ SAP HANA SSO Direct Query understøttes nu med Kerberos for Power BI-rapporter.
 - [Tilpasning af udsnit](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#slicer)
 - [Værktøjstip for rapportside](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#reportPageTooltips)
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analyse
 
 - [Ny DAX-funktion: COMBINEVALUES()](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#combineValues)
 - [Mål detaljeadgang](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#measureDrillthrough)
 - [Betinget formatering af et andet felt](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#conditionalFormattingField)
 - [Betinget formatering efter værdier](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#conditionalFormattingValue)
 
-### <a name="modeling"></a>Udformning
+### <a name="modeling"></a>Modellering
 
 - [Filtrering og sortering i datavisning](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#filterAndSort)
 - [Forbedret formatering af landestandarder](https://powerbi.microsoft.com/blog/power-bi-report-server-update-august-2018/#locale)
@@ -167,7 +167,7 @@ Du ønsker at give læserne adgang til din rapport, men nogle af siderne er ikke
 
 Opret bogmærker, som fortæller om dataene i din rapport.
 
-- [Krydsfremhævning for bogmærker](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting): Bogmærker bevarer og viser rapportsidens krydsfremhævninger på det tidspunkt, bogmærket blev oprettet.
+- [Tværgående fremhævning til bogmærker](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkCrossHighlighting): Bogmærker bevarer og viser rapportsidens tværgående fremhævninger på det tidspunkt, bogmærket blev oprettet.
 - [Større fleksibilitet med bogmærker](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#bookmarkFlexibility): Bogmærker afspejler de egenskaber, du angiver i din rapport, og påvirker udelukkende de visualiseringer, du vælger.
 
 #### <a name="multi-select-data-points-across-multiple-chartshttpspowerbimicrosoftcomblogpower-bi-desktop-february-2018-feature-summarycrosshighlight"></a>[Markér flere datapunkter på tværs af diagrammer](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#crosshighlight)
@@ -209,7 +209,7 @@ Når du foretager detaljeudledning i en bestemt kategori i en visualisering, kan
 - [Søgning i ruderne Formatering og Analyse](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#search)
 - [Ruden Feltegenskaber og feltbeskrivelser](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#fieldPropertiesPane)
 
-### <a name="analytics"></a>Analytics
+### <a name="analytics"></a>Analyse
 
 - [UTCNOW() og UTCTODAY()](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#utcDAX)
 - [Markér brugerdefineret datotabel](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#customDateTable)
@@ -266,13 +266,13 @@ Denne udgave understøtter scale-out. Brug en belastningsjustering, og angiv ser
 
 Administratorer kan angive følgende egenskaber for serverfarmen under Avancerede egenskaber i SSMS:
 
-* EnableCustomVisuals: Sand/Falsk
-* EnablePowerBIReportEmbeddedModels: Sand/Falsk
-* EnablePowerBIReportExportData: Sand/Falsk
-* MaxFileSizeMb: Standard er nu 1000
+* EnableCustomVisuals: Sand/falsk
+* EnablePowerBIReportEmbeddedModels: Sand/falsk
+* EnablePowerBIReportExportData: Sand/falsk
+* MaxFileSizeMb: Standarden er nu 1000
 * ModelCleanupCycleMinutes: Hvor ofte der kontrolleres for at fjerne modeller fra hukommelsen
-* ModelExpirationMinutes: Hvor lang tid, før model er udløbet og fjernes, baseret på sidste gang den blev brugt
-* ScheduleRefreshTimeoutMinutes: Hvordan længe dataopdatering kan vare for en model. Som standard er dette to timer.  Der er ingen fastsat øvre grænse.
+* ModelExpirationMinutes: Hvor lang tid, før en model er udløbet og fjernes, baseret på sidste gang den blev brugt
+* ScheduleRefreshTimeoutMinutes: Hvor længe dataopdateringen kan vare for en tilstand. Som standard er dette to timer.  Der er ingen fastsat øvre grænse.
 
 **Konfigurationsfil rsreportserver.config**
 

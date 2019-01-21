@@ -5,17 +5,17 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/03/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ebec34690001293e93dafd69dd76f7bdbf54981c
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: dc756e98a58d30edd476112ca249dae032d0d79a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900514"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296794"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
 ## <a name="power-bi-visualizations"></a>Visualiseringer i Power BI
@@ -42,10 +42,10 @@ Du kan finde flere oplysninger under [Grundlæggende områdediagram](power-bi-vi
 >[!TIP]
 >Liggende søjlediagrammer er standarden for at finde en specifik værdi på tværs af en række kategorier.
 
-### <a name="cards-multi-row"></a>Kort: flere rækker
+### <a name="cards-multi-row"></a>Kort: Med flere rækker
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
 
-### <a name="cards-single-number"></a>Kort: enkelt tal
+### <a name="cards-single-number"></a>Kort: Enkelt tal
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_card.png)
 
 Du kan finde flere oplysninger under [Opret et kort (med et felt med et stort tal)](power-bi-visualization-card.md).
@@ -96,7 +96,7 @@ Du kan finde flere oplysninger under [KPI'er i Power BI](power-bi-visualization-
 >[!TIP]
 >Fremhæver en overordnet form af en hel serie af værdier – som regel over tid.
 
-### <a name="maps-basic-maps"></a>Kort: grundlæggende kort
+### <a name="maps-basic-maps"></a>Kort: Basiskort
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi-nancy_viz_map.png)
 
 >[!TIP]
@@ -109,7 +109,7 @@ Du kan finde flere oplysninger under [Tip og tricks til kortvisualiseringer](pow
 
 Du kan finde flere oplysninger under [ArcGIS-kort i Power BI](../power-bi-visualization-arcgis.md).
 
-### <a name="maps-filled-maps-choropleth"></a>Kort: kartogrammer (Choropleth)
+### <a name="maps-filled-maps-choropleth"></a>Kort: Kartogrammer (Choropleth)
 ![](media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
 
 >[!TIP]

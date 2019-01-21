@@ -4,17 +4,17 @@ description: Få mere at vide om, hvordan du publicerer apps, der er samlinger a
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3881e37fa5e97939265e9bb9362cee65a1030e67
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 451b5967dd648d982132282d2debbd4c4f86780f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50100812"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54294005"
 ---
 # <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Publicer apps med dashboards og rapporter i Power BI
 

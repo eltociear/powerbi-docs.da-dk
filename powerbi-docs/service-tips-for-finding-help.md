@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: f4d16a5694dde63b66dcb001f1a5375ed92d978c
-ms.sourcegitcommit: fbb7924603f8915d07b5e6fc8f4d0c7f70c1a1e1
+ms.openlocfilehash: 2cb8e7b6c2744f80891c5424f620b9812eee1acb
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "37137163"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54285363"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 tips til at få hjælp til dine Power BI-spørgsmål
 Bliver du nogensinde frustreret, når du bruger Power BI, eller har problemer, fordi du ikke kan få svar på dine spørgsmål om Power Bi, når du skal bruge dem – dvs. "lige til tiden"? 
@@ -30,7 +30,7 @@ Eksperter, der skal bruge svar til Power BI, bruger ofte søgning. Vil du finde 
 Power BI-teamet opdaterer og forbedrer løbende Power BI-dokumentationen og oplæring. Du kan finde fantastisk indhold, herunder optagelser af webinarer, hvidbøger, vejledt læring og links til blogindlæg om alle de nyeste funktioner.
 
 ## <a name="3-read-the-power-bi-blog-for-the-latest-news"></a>3 Læs de seneste nyheder i Power BI-bloggen
-Power BI-teamet forklarer alle de nye funktioner i deres regelmæssige [Power BI-blogindlæg](https://powerbi.microsoft.com/blog/). Find ud af, hvad der er nyt i alt fra Power BI Desktop til Power BI-mobilapps. Gør det til en vane tit at vende tilbage for at se nyheder: Brug et par minutter hver uge på at skimme blogindlægene. Du ved aldrig, hvornår du kan få brug for de oplysninger, du så for et par måneder siden.
+Power BI-teamet forklarer alle de nye funktioner i deres regelmæssige [Power BI-blogindlæg](https://powerbi.microsoft.com/blog/). Find ud af, hvad der er nyt i alt fra Power BI Desktop til Power BI-mobilapps. Sørg for at vende tilbage ofte for at se vores nyheder: Du kan bruge et par minutter hver uge på at skimme blogindlæggene. Du ved aldrig, hvornår du kan få brug for de oplysninger, du så for et par måneder siden.
 
 ## <a name="4-try-twitter"></a>4 Prøv Twitter
 Der er mange Power BI-kunder og -eksperter på Twitter. Stil dit spørgsmål i et tweet. Tilføj hashtags #powerbi og #powerbihelp, så de personer, der kender Power BI, kan se dit tweet.

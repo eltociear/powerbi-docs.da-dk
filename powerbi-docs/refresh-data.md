@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Data refresh
-ms.openlocfilehash: bb29cd9edc5e44293344b7194ec94af482bd0166
-ms.sourcegitcommit: ce8332a71d4d205a1f005b703da4a390d79c98b6
+ms.openlocfilehash: 097f0ae9da29d193fd7a337c9a164ab8c67dc4d9
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47417366"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277658"
 ---
 # <a name="data-refresh-in-power-bi"></a>Opdatering af data i Power BI
 At sørge for altid at have de nyeste data er ofte kritisk for at kunne tage de rigtige beslutninger. Du har muligvis allerede brugt Hent data i Power BI til at oprette forbindelse til og overføre data, så du kunne oprette nogle rapporter og et dashboard. Nu skal du sikre dig, at dataene virkelig er de nyeste og bedste.

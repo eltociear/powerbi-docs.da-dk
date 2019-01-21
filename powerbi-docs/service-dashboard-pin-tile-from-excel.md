@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: l8JoB7w0zJA
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 1ef0ecdfaea51a9ca50e0f105b51b8239ebc4fa1
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: ad044a5b3f6ddcb4b8e1dbffa1bb2a7dac01eb31
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717533"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54284972"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fastgør et felt til et Power BI-dashboard fra Excel
 Før du kan fastgøre et felt fra din Excel-projektmappe, skal du oprette forbindelse mellem denne projektmappe og Power BI-tjenesten (app.powerbi.com). Når der oprettes forbindelse til en projektmappe, overføres der grundlæggende set en sammenkædet skrivebeskyttet version af denne projektmappe til Power BI-tjenesten, så du kan fastgøre intervaller til dashboards. Du kan endda fastgøre et helt regneark til et dashboard.  
@@ -81,7 +81,7 @@ Hvis du vælger et felt til projektmappen, åbnes den sammenkædede projektmappe
  ![video](media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
-Funktioner, der ikke understøttes: Power BI bruger Excel Services til at hente felterne i projektmappen. Eftersom nogle funktioner fra Excel ikke understøttes i Excel Services REST API, vil de derfor ikke kunne ses på felter i Power BI. Eksempel: minidiagrammer, betinget formatering angivet via ikoner og klokkeslætsudsnit. Se en fuldstændig liste over ikke-understøttede funktioner i [Ikke-understøttede funktioner i Excel Services REST API](http://msdn.microsoft.com/library/office/ff394477.aspx)
+Funktioner, der ikke understøttes: Power BI bruger Excel Services til at hente felterne i projektmappen. Eftersom nogle funktioner fra Excel ikke understøttes i Excel Services REST API, vil de derfor ikke kunne ses på felter i Power BI. Eksempel: Minidiagrammer, betinget formatering angivet via ikoner og klokkeslætsudsnit. Se en fuldstændig liste over ikke-understøttede funktioner i [Ikke-understøttede funktioner i Excel Services REST API](http://msdn.microsoft.com/library/office/ff394477.aspx)
 
 ## <a name="next-steps"></a>Næste trin
 [Del et dashboard, der indeholder links til en Excel-projektmappe](service-share-dashboard-that-links-to-excel-onedrive.md)

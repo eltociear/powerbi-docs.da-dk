@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: report-builder
+ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/5/2018
 ms.author: maggies
-ms.openlocfilehash: 827a7acd24ead0c4948a09f2e67b53c3966769bb
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 1689d7382c0f3bf7406a4a44ffeab53e6bc59197
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900422"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281062"
 ---
 # <a name="create-an-embedded-dataset-for-a-paginated-report-in-the-power-bi-service-preview"></a>Opret et integreret datasæt til en sideinddelt rapport i Power BI-tjenesten (eksempelvisning)
 I denne artikel lærer du, hvordan du opretter et integreret datasæt, der er baseret på en integreret datakilde, til en sideinddelt rapport i Power BI-tjenesten. Integrerede datasæt er indeholdt i en enkelt sideinddelt rapport til brug i den pågældende rapport. I øjeblikket skal sideinddelte rapporter, der er publiceret i Power BI-tjenesten, bruge integrerede datasæt og datakilder. Du opretter den integrerede datakilde og det integrerede datasæt i Report Builder, mens du opretter din rapport. 
@@ -55,7 +55,7 @@ Du skal oprette en datakilde, før du kan oprette datasættet. Du kan få mere a
  
 ## <a name="next-steps"></a>Næste trin 
 
-- [Hvad er sideinddelte rapporter i Power BI Premium? (Prøveversion)](paginated-reports-report-builder-power-bi.md)  
+- [Hvad er sideinddelte rapporter i Power BI Premium? (prøveversion)](paginated-reports-report-builder-power-bi.md)  
 - [Selvstudium: Opret en sideinddelt rapport, og upload den i Power BI-tjenesten](paginated-reports-quickstart-aw.md)
 - [Publicer en sideinddelt rapport i Power BI-tjenesten](paginated-reports-save-to-power-bi-service.md)
 

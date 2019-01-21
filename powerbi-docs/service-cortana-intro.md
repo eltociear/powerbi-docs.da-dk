@@ -4,17 +4,17 @@ description: Brug Cortana med Power BI til at få svar fra dine data. Fungerer i
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: ccc99c2f9810bcda80e1f02ce67e49390fd0308f
-ms.sourcegitcommit: 42475ac398358d2725f98228247b78aedb8cbc4f
+ms.openlocfilehash: bcd07bb0cb53ea4818195e15c1492a27f424cf38
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50003242"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54292586"
 ---
 # <a name="quickly-find-and-view-your-power-bi-data-using-cortana-for-power-bi"></a>Find og vis hurtigt dine Power BI-data ved hjælp af Cortana til Power BI
 Brug Cortana på tværs af dine Windows 10-enheder for at få omgående svar på vigtige forretningsspørgsmål. Ved at integrere med Power BI kan Cortana hente vigtige oplysninger direkte fra Power BI-dashboards og -rapporter. Alt hvad der kræves, er version Windows 10 November 2015 eller nyere, Cortana, Power BI og adgang til mindst ét datasæt.
@@ -38,7 +38,7 @@ Vi har fire dokumenter, der hjælper dig med at konfigurere og bruge Cortana til
 
 **Artikel 1** (denne artikel): Forstå, hvordan Cortana og Power BI arbejder sammen
 
-**Artikel 2**: [Søg i Power BI-rapporter: Aktivér Windows-integration mellem Cortana og Power BI](service-cortana-enable.md)
+**Artikel 2**: [Søg i Power BI-rapporter: Aktivér Windows-integration mellem Cortana og Power BI for rapporter](service-cortana-enable.md)
 
 **Artikel 3**: [Søg i Power BI-rapporter: Opret særlige *Cortana-svarkort*](service-cortana-answer-cards.md)
 

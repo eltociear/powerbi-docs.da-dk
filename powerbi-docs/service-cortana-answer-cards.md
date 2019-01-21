@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 3a0ef369aa690044dbef9c4ef0cda070565b9922
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: e1748c478f9f58b568b901f3a243e64e4658f6a6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829889"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54273081"
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>Du kan bruge Power BI-tjenesten eller Power BI Desktop til at oprette en tilpasset svarside til Cortana
 Få det fulde udbytte ud af Power BI ved at oprette særlige rapportsider, *Cortana-svarsider* (optræder undertiden også under benævnelsen *Cortana-svarkort*), udviklet specielt til at besvare Cortana spørgsmål.
@@ -32,7 +32,7 @@ Du har fire dokumenter, der hjælper dig igennem konfiguration og anvendelse af 
 
 **Artikel 1**: [Find ud af, hvordan Cortana og Power BI arbejder sammen](service-cortana-intro.md)
 
-**Artikel 2**: [Søgning efter Power BI-rapporter: Aktivér Windows-integration mellem Cortana og Power BI](service-cortana-enable.md)
+**Artikel 2**: [Søgning efter Power BI-rapporter: Aktivér Windows-integration mellem Cortana og Power BI for rapporter](service-cortana-enable.md)
 
 **Artikel 3**: Denne artikel
 

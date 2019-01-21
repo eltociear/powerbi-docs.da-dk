@@ -6,15 +6,15 @@ ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 08/01/2018
-ms.openlocfilehash: 7608d9098177805849ec61f0427ee5bc662d58c9
-ms.sourcegitcommit: 146b505b42f0d95d3ee73762441a43b6f3b3a891
+ms.openlocfilehash: 0337e35a67a852e1bb82209e095df4945c5de84a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39475654"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275289"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Trin 5: Føj rækker til en Power BI-tabel
 Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
@@ -33,7 +33,7 @@ Her kan du føje rækker til et datasæt ved hjælp af Power BI-API.
 > 
 > 
 
-1. I projektet Konsolprogram, som du oprettede i Trin 2: Vejledning til overførsel af data, skal du [hente et adgangstoken til godkendelse](walkthrough-push-data-get-token.md) og tilføje koden nedenfor.
+1. I projektet konsolprogram, som du oprettede i trin 2: Gå videre til overførsel af data, [hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md), og tilføj koden nedenfor.
 2. Kør konsolprogrammet, og log på din Power BI-konto. Du bør kunne se **Rækker tilføjet** i konsolvinduet. Du kan også logge på Power BI for at se de rækker, der er føjet til datasættet.
 
 **Send prøvedata til et datasæt**

@@ -5,16 +5,16 @@ author: parthsha
 manager: kfile
 ms.reviewer: maghan
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
-ms.openlocfilehash: c19bc774ebffa2e781512e793abbefd1bd9fb5e2
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: c479b2600dad31756101c57ba2b1c5fc7fa19b2f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679286"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296656"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Vejledning i kapacitetsplanlægning i Power BI-rapportserver
 Power BI-rapportserver er en selvbetjenings-BI og virksomhedsrapporteringsløsning, som kunder kan installere i deres lokale miljø, bag deres firewall. Løsningen kombinerer den interaktive rapporteringskapacitet i Power BI Desktop med serverplatformen i SQL Server Reporting Services i det lokale miljø. I takt med virksomheders stigende og omfattende brug af analyser og rapportering, kan det være en udfordring at udarbejde et budget, der tager højde for de skalerbare løsninger til hardwareinfrastrukturen og de softwarelicenser, der kræves til en virksomheds brugergrundlag. Denne rapports primære sigte er at give en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af adskillelige gennemførsler af belastningstest ved forskellige arbejdsbelastninger i forhold til en rapportserver. Organisationers rapporterings-, forespørgsels- og brugsmønstre varierer betydeligt, men resultaterne forelagt i denne rapport kan, sammen med de anvendte faktiske test og en detaljeret beskrivelse af deres gennemførselsmetode, bruges som referencepunkt for alle, der er i den tidlige planlægningsfase i processen med at installere Power BI-rapportserver.
@@ -42,7 +42,7 @@ Installationen af Power BI-rapportserveren omfattede de følgende virtuelle mask
 
 * Active Directory-domænecontroller: blev brugt af SQL Server-databaseprogrammet, SQL Server Analysis Services og Power BI-rapportserveren til sikker godkendelse af alle anmodninger.
 * SQL Server-databaseprogrammet og SQL Server Analysis Services: blev brugt til at lagre alle databaser til rapporterne til forbrug, når vi gengav dem.
-* Power BI Report Server
+* Power BI-rapportserver
 * Power BI-rapportserverdatabase. Rapportserverdatabasen er hostet på en anden maskine end Power BI-rapportserveren, så den ikke skal konkurrere om ressourcer med SQL Server-databaseprogrammet mht. hukommelse, CPU, netværk og harddisk.
 
 ![](media/capacity-planning/report-server-topology.png)
@@ -60,7 +60,7 @@ De brugte test i belastningstestkørslerne er offentligt tilgængelige i et GitH
 Alle test blev udarbejdet for at udføre en komplet handling (såsom at gengive en rapport, oprette en ny datakilde, osv.). De opnår dette ved at udføre en eller flere webanmodninger til rapportserveren (via API'er). I den virkelige verden kan en bruger have brug for at udføre nogle få mellemliggende handlinger for at gennemføre en af disse komplette handlinger. En bruger skal f.eks. gå til webportalen, navigere til mappen med rapporten, og derefter klikke på den pågældende rapport for at gengive den. Selvom alle de nødvendige handlinger for at udføre en komplet opgave ikke udføres i testene, så omfatter de stadig det meste af belastningen, som pålægges Power BI rapportserveren. Du kan få mere at vide om de forskellige typer af rapporter, der bruges, samt de forskellige handlinger, der udføres, ved at granske GitHub-projektet.
 
 ### <a name="workloads"></a>Arbejdsbelastninger
-Der bruges to arbejdsbelastningsprofiler i testene: Power BI-tung rapport og sideinddelt tung rapport. I nedenstående tabel beskrives fordelingen af anmodninger, der udføres i forhold til rapportserveren.
+Der er to arbejdsbelastningsprofiler i testene: tung Power BI-rapport og sideinddelt tung rapport. I nedenstående tabel beskrives fordelingen af anmodninger, der udføres i forhold til rapportserveren.
 
 | Aktivitet | Power BI tung rapport, hyppighed | Sideinddelt tung rapport, hyppighed |
 | --- | --- | --- |

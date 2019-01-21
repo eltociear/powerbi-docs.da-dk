@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d1152ae1e4d386882c9165e6545a44c7f3c47e46
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 23e237428b86046cf75b02e2e98082da18d671cf
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46548505"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54286676"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tip og tricks til Power BI-kortvisualiseringer
 Power BI kan integreres med Bing Maps for at angive standardkortkoordinater (en proces, der kaldes geokodning), så du kan oprette kort. De bruger algoritmer til at identificere den korrekte placering, men nogle gange benyttes et kvalificeret gæt. Hvis forsøg i Power BI ikke kan oprette kortvisualiseringer automatisk, gør det brug af Bing Maps. 
@@ -76,7 +76,7 @@ Hvis du arbejder i Power BI, og dit datasæt indeholder felter for Breddegrad og
 ![breddegrad og længdegrad](./media/power-bi-map-tips-and-tricks/pbi_latitude.png) 
 
 ## <a name="use-geo-hierarchies-so-you-can-drill-down-to-different-levels-of-location"></a>Brug geografiske hierarkier, så du kan få vist detaljer på flere "niveauer" for placeringen
-Hvis dit datasæt allerede indeholder forskellige niveauer af placeringsdata, kan du og dine kolleger bruge Power BI til at oprette *geografiske hierarkier*. Det kan du gøre ved at trække mere end ét felt til feltet **Placering**. Når felterne bruges sammen på denne måde, bliver de til et geografisk hierarki. I eksemplet nedenfor har jeg tilføjet geofelter for: Land/område, Stat og By. I Power BI kan du og dine kolleger vælge at få vist flere eller færre detaljer i det geografiske hierarki.
+Hvis dit datasæt allerede indeholder forskellige niveauer af placeringsdata, kan du og dine kolleger bruge Power BI til at oprette *geografiske hierarkier*. Det kan du gøre ved at trække mere end ét felt til feltet **Placering**. Når felterne bruges sammen på denne måde, bliver de til et geografisk hierarki. I eksemplet nedenfor har jeg tilføjet geofelter for: land/område, stat og by. I Power BI kan du og dine kolleger vælge at få vist flere eller færre detaljer i det geografiske hierarki.
 
   ![Feltet Placering](./media/power-bi-map-tips-and-tricks/power-bi-hierarchy.png)
 

@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/22/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 6de9427a11ae5aa43563ce9e21371d231a1dd3a9
-ms.sourcegitcommit: b03912343a5a214c6bb972aaa6aa051c2a5f4332
+ms.openlocfilehash: 2a033e6893cffb71c4a898f1260aca615ae4e4b8
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52900523"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54291969"
 ---
 # <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Selvstudium: Kom i gang med Power BI-tjenesten (app.powerbi.com)
 Dette selvstudium hjælper dig med at komme i gang med ***Power BI-tjenesten***. Hvis du vil have et overblik over, hvordan Power BI-tjenesten passer sammen med de andre Power BI-tilbud, anbefaler vi kraftigt, at du starter med at læse [Hvad er Power BI](power-bi-overview.md).
@@ -128,7 +128,7 @@ Nu hvor du har forbindelse til data, kan du begynde at udforske.  Vi har fundet 
    
    Vælg det nye felt på dashboardet for til enhver tid at vende tilbage til rapporten. Power BI vender tilbage til rapporteditoren i Læsevisning. Hvis du vil skifte tilbage til Redigeringsvisning, skal du vælge **Rediger rapport** på den øverste menulinje. Når du er i Redigeringsvisning, kan du fortsætte med at udforske og fastgøre felter. 
 
-## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>Trin 3: Fortsæt med at udforske via Spørgsmål og svar (forespørgsel på naturligt sprog)
+## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>Trin 3:  Fortsæt med at udforske via Spørgsmål og svar (forespørgsel på naturligt sprog)
 1. Hvis du vil foretage en hurtig udforskning af dine data, kan du prøve at stille et spørgsmål i feltet Spørgsmål og svar. Feltet Spørgsmål og svar er placeret øverst i dit dashboard (**stil et spørgsmål om dataene**) og i den øverste menulinje i din rapport (**stil et spørgsmål**). Prøv for eksempel at skrive "hvilket segment havde den største omsætning".
    
    ![Spørgsmål og svar om lærred](media/service-get-started/powerbi-qna.png)

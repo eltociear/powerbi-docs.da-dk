@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/13/2018
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: e88e60bc1745a08ea53c7336f6f1fb9e4cda1ec8
-ms.sourcegitcommit: 6a6f552810a596e1000a02c8d144731ede59c0c8
+ms.openlocfilehash: cd9a68d10e0da0aaa883dae1a3979eff6a6b4ce6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51619718"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290722"
 ---
 # <a name="aggregations-in-power-bi-desktop-preview"></a>Sammenlægninger i Power BI Desktop (prøveversion)
 
@@ -72,7 +72,7 @@ Denne model er vist på det følgende billede.
 > [!NOTE]
 > Tabellen **Sales Agg** er en almindelig tabel, så den er fleksibel nok til at kunne indlæses på flere forskellige måder. Eksempelvis kan sammenlægning udføres i kildedatabasen ved hjælp af ETL/ELT-processer eller ved hjælp af [M-udtrykket](https://msdn.microsoft.com/query-bi/m/power-query-m-reference) for tabellen. Den kan bruge lagringstilstanden Import med eller uden [trinvis opdatering i Power BI Premium](service-premium-incremental-refresh.md), eller det kan være DirectQuery og optimeret til hurtige forespørgsler ved hjælp af [kolonnelagerindekser](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview). Denne fleksibilitet muliggør balancerede arkitekturer, der fordeler mængden af forespørgsler for at undgå flaskehalse.
 
-### <a name="storage-mode"></a>Lagringstilstand 
+### <a name="storage-mode"></a>Lagertilstand 
 Lad os fortsætte med det eksempel, vi bruger. Vi angiver lagringstilstanden for **Sales Agg** til **Import** for at fremskynde forespørgsler.
 
 ![indstilling af lagringstilstand](media/desktop-aggregations/aggregations_04.jpg)
@@ -124,8 +124,8 @@ I følgende tabel vises sammenlægningerne for tabellen **Sales Agg**.
 Følgende værdier kan vælges i rullelisten Opsummering.
 * Antal
 * GroupBy
-* MAKS
-* MIN
+* Maks.
+* Min.
 * Sum
 * Optæl tabelrækker
 
@@ -261,7 +261,7 @@ I følgende tabel vises de poster, der er angivet i dialogboksen **Administrer s
 
 ![Sammenlægningstabellen Sales Agg](media/desktop-aggregations/aggregations-table_04.jpg)
 
-> Bemærk: Denne model kræver, at tabellen **Dato** skal være i DirectQuery-tilstand for at udfylde i dialogboksen Administrer sammenlægninger, fordi det er en detaljetabel. Dette er en begrænsning i prøveversion, som vi forventer at fjerne for at sikre offentlig tilgængelighed.
+> Bemærk! Denne model kræver, at tabellen **Dato** skal være i DirectQuery-tilstand for at udfylde dialogboksen Administrer sammenlægninger, fordi det er en detaljetabel. Dette er en begrænsning i prøveversion, som vi forventer at fjerne for at sikre offentlig tilgængelighed.
 
 ### <a name="query-examples"></a>Eksempler på forespørgsler
 

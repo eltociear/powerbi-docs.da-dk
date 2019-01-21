@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5d2a33b8dc50a4a30bb79406462f1342953528d9
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 896c415028b99db8662e93b5d709b76520996fef
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830372"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275749"
 ---
 # <a name="combo-chart-in-power-bi"></a>Kombinationsdiagram i Power BI
 I Power BI er et kombinationsdiagram en enkelt visualisering, der kombinerer et kurvediagram og et søjlediagram. Ved at kombinere disse to diagrammer kan du hurtigere sammenligne dine data.
@@ -57,7 +57,7 @@ Se, hvordan Will opretter et kombinationsdiagram ved hjælp af salgs- og marketi
     ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
 5. Vælg ellipsen (...) i øverste højre hjørne af visualiseringen, og vælg **Sortér efter > FiscalMonth**. Hvis du vil ændre sorteringsrækkefølgen, skal du vælge ellipsen igen og vælge enten **Sortér stigende** eller **Sortér faldende**.
 
-6. Konvertér søjlediagrammet til et kombinationsdiagram. Der findes to kombinationsdiagrammer: **kurvediagram og stablet søjlediagram** og **kurvediagram og grupperet søjlediagram**. Vælg søjlediagrammet, og vælg derefter **Line and clustered column chart** fra fanen **Visualizations**.
+6. Konvertér søjlediagrammet til et kombinationsdiagram. Der er to kombinationsdiagrammer: **Kurvediagram og stablet søjlediagram** og **Kurvediagram og grupperet søjlediagram**. Vælg søjlediagrammet, og vælg derefter **Line and clustered column chart** fra fanen **Visualizations**.
 
     ![](media/power-bi-visualization-combo-chart/converttocombo_new2.png)
 7. Fra ruden **Fields** kan du derefter trække **Sales** \> **Last Year Sales** til beholderen **Line Values**.

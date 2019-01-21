@@ -6,17 +6,17 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: _3q6VEBhGew
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 03/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 617809e072a492fb9887930e58bafd89ca8201e8
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.openlocfilehash: 937e15f5cd56f7c720afa945598f9fc1641468f7
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46544924"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295529"
 ---
 # <a name="static-content-in-power-bi-reports"></a>Statisk indhold i Power BI-rapporter
 Tekstfelter og figurer kan føjes til rapporter ved hjælp af Power BI-tjenesten og Power BI Desktop. I begge tilfælde skal du have redigeringstilladelser til rapporten. Hvis en rapport er blevet delt med dig i Power BI-tjenesten, har du ikke redigeringstilladelser. 

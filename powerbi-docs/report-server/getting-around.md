@@ -5,16 +5,16 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/24/2018
 ms.author: maggies
-ms.openlocfilehash: 354ba336407f200d2c311f6bf0de91967cf3f5d1
-ms.sourcegitcommit: 127df71c357127cca1b3caf5684489b19ff61493
+ms.openlocfilehash: e7a9b4da760f02672f51aa7ace0f3bb19c501834
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37598133"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275013"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Administrer indhold på webportalen 
 Webportalen Power BI-rapportserver er en placering i det lokale miljø til visning, lagring og administration af dine Power BI-rapporter, dine mobile og sideinddelte rapporter og KPI'er.
@@ -23,8 +23,8 @@ Webportalen Power BI-rapportserver er en placering i det lokale miljø til visni
 
 Du kan se webportalen i alle moderne browsere. Rapporter og KPI'er er organiseret i mapper i webportalen, og du kan markere dem som favoritter. Du kan også gemme Excel-projektmapper der. Du kan starte de værktøjer, du skal bruge for at oprette rapporter, fra webportalen:
 
-* **Power BI-rapporter** oprettet med Power BI Desktop: Se dem i webportalen og Power BI-mobilappsene.
-* **Sideinddelte rapporter** oprettet i Report Builder: moderne udseende, dokumenter med fast layout, der er optimeret til udskrivning.
+* **Power BI-rapporter**, der er oprettet med Power BI Desktop: Du kan få dem vist i webportalen og i Power BI-mobilappene.
+* **Sideinddelte rapporter**, der er oprettet i Report Builder: Dokumenter med et moderne udseende og fast layout, der er optimeret til udskrivning.
 * **KPI'er** oprettet direkte i webportalen.
 
 Du kan gennemse mapperne på rapportserveren eller søge efter specifikke rapporter i webportalen. Du kan få vist en rapport, dens generelle egenskaber og indsætte kopier af rapporten, der er registreret i rapporthistorikken. Afhængigt af dine rettigheder kan du muligvis også abonnere på rapporter og få dem leveret til din mailindbakke eller en delt mappe i filsystemet.

@@ -6,16 +6,16 @@ ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/01/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 92b8d0e0ecfa9bae36e552e30cf8f1a7fcecff4b
-ms.sourcegitcommit: 60fb46b61ac73806987847d9c606993c0e14fb30
+ms.openlocfilehash: 398737276e55e15273a2245a4b7a72fdca938438
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50100743"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54287701"
 ---
 # <a name="spark-on-hdinsight-with-directquery"></a>Spark on HDInsight med DirectQuery
 
@@ -76,7 +76,7 @@ Du kan også tildele flere ressourcer på Azure-portalen under **Configuration**
 
 ## <a name="next-steps"></a>Næste trin
 
-[Kom i gang: Opret Apache Spark-klyngen på HDInsight Linux, og kør interaktive forespørgsler ved hjælp af Spark SQL](/azure/hdinsight/spark/apache-spark-jupyter-spark-sql/)  
+[Kom godt i gang: Opret Apache Spark-klyngen på HDInsight Linux, og kør interaktive forespørgsler ved hjælp af Spark SQL](/azure/hdinsight/spark/apache-spark-jupyter-spark-sql/)  
 [Hvad er Power BI?](power-bi-overview.md)  
 [Hent data til Power BI](service-get-data.md)
 [Brug Kerberos på gatewayen i det lokale miljø til SSO](service-gateway-sso-kerberos.md)

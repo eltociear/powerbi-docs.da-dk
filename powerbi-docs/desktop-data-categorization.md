@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 55e496656046037226a7414c994697b670bcf8c9
-ms.sourcegitcommit: 2ae660a7b70fce23eb58b159d049eca44a664f2c
+ms.openlocfilehash: 92191c96409a3a75ad44f8d3472805a3e98da7dd
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52669721"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275703"
 ---
 # <a name="data-categorization-in-power-bi-desktop"></a>Datakategorisering i Power BI Desktop
 I **Power BI Desktop** kan du angive datakategorien for en kolonne, så Power BI Desktop ved, hvordan dens værdier skal behandles i en visualisering.

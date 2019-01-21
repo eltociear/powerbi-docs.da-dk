@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5e07575658ed25e3f4933a7840ef4bc970264b23
-ms.sourcegitcommit: 80d6b45eb84243e801b60b9038b9bff77c30d5c8
+ms.openlocfilehash: 5ebc5472ffcbd5d6b493b919b3e2965968261d20
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34296014"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279843"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Vejledning i at installere en datagateway til Power BI
 
@@ -82,7 +82,7 @@ Disse tællere kan tilgås fra **Windows Ydelsesmåler** og kan forbruges af eth
 
 * [Overvåg datagateways i det lokale miljø](https://insightsquest.com/2016/08/08/monitor-on-premises-data-gateways/)
 
-#### <a name="logs"></a>Logfiler
+#### <a name="logs"></a>Logge
 Konfigurations- og tjenestelogfiler viser en anden dimension af, hvad der sker med din gateway. Du skal altid kontrollere dine gateway-logfiler, når forbindelsen ikke fungerer som forventet, idet ikke alle fejlmeddelelser vises på Power BI-tjenesten.
 
 Du kan let få vist alle logfiler på din lokale computer ved at bruge knappen *Eksportlogfiler* på **datagatewayen i det lokale miljø**, når du genåbner gatewayen efter den indledende installation er færdig og derefter vælger **Diagnostik > Eksportlogfiler**.

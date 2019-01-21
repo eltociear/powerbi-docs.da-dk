@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: f2edbd7b0b977b378d25634a0f9505101350d73b
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 52c0211aea0462e0bf79d7a48808f1f826c09fb6
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829797"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296081"
 ---
 # <a name="part-i-add-visualizations-to-a-power-bi-report"></a>Del 1, Føj visualiseringer til en rapport i Power BI
 I denne artikel får du en hurtig introduktion til at oprette en visualisering i en rapport ved enten at bruge Power BI-tjenesten eller Power BI Desktop.  Hvis du vil læse om mere avanceret indhold, skal du [se Del II](power-bi-report-add-visualizations-ii.md). Se Amanda demonstrere nogle få metoder til at oprette, redigere og formatere visualiseringer på et rapportcanvas. Prøv det derefter selv ved hjælp af [Sales and Marketing-eksemplet](../sample-datasets.md) for at oprette din egen rapport.
@@ -38,7 +38,7 @@ I denne artikel får du en hurtig introduktion til at oprette en visualisering i
    
    ![](media/power-bi-report-add-visualizations-i/pbi_onecolchart.png)
    
-   **Du kan også starte med et kategorifelt**, f.eks. Name eller Product: Power BI opretter en tabel og tilføjer feltet under **Værdier**.
+   **Eller du kan starte med et kategorifelt**, f.eks navn eller produkt: Power BI opretter en tabel og føjer dette felt til kilden **Værdier**.
    
    ![](media/power-bi-report-add-visualizations-i/pbi_agif_createchart3.gif)
    
@@ -57,7 +57,7 @@ I denne artikel får du en hurtig introduktion til at oprette en visualisering i
   
 
 ## <a name="next-steps"></a>Næste trin
- Fortsætte til [Del 2: Føj visualiseringer til en Power BI-rapport](power-bi-report-add-visualizations-ii.md)
+ Fortsæt til [Del 2: Føj visualiseringer til en rapport i Power BI](power-bi-report-add-visualizations-ii.md)
    
    [Interagere med visualiseringerne](../consumer/end-user-reading-view.md) i rapporten.
    

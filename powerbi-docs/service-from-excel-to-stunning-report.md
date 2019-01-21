@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/28/2018
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: e3b7a6ca4471fb1a6454f6efb9fba1f89b8ae1da
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: d1e3d6b50b91643dc7c1e658094a5ae7763edc8f
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829981"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54290379"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Fra Excel-projektmappe til fantastisk rapport på ingen tid
 Din chef vil gerne se en rapport om dine seneste salgstal kombineret med dine seneste kampagneannoncer, inden dagen er omme. Men de seneste data befinder sig på forskellige systemer hos tredjeparter og i filer på din bærbare computer. Tidligere har det taget timevis at oprette visuals og formatere en rapport. Du begynder at blive bekymret.
@@ -50,7 +50,7 @@ Vælg **Hent data** nederst i venstre navigationsrude. Vælg **Hent** i feltet F
 
 Vælg **Lokal fil** på siden Filer. Gå til Excel-projektmappefilen på computeren, og markér den for at indlæse den i Power BI. Vælg **Importér**.
 
-> **BEMÆRK!** Brug [projektmappen Financial Sample](sample-financial-download.md) for at følge med i resten af dette selvstudium.
+> **BEMÆRK**! Brug [projektmappen Financial Sample](sample-financial-download.md) for at følge med i resten af dette selvstudium.
 > 
 > 
 
@@ -67,7 +67,7 @@ Nu kan du begynde at oprette visualiseringer. Din chef vil gerne se profit over 
 
 ![Søjlediagram i rapporteditor](media/service-from-excel-to-stunning-report/pbi_report_pin-new.png)
 
-> **TIP!** Hvis diagrammet ikke ser ud som forventet, skal du kontrollere dine aggregeringer. For eksempel kan du under **Value** højreklikke på det felt, du lige har tilføjet, og kontrollere, at dataene lægges sammen på den måde, du ønsker.  I dette eksempel bruger vi **Sum**.
+> **Tip**! Hvis diagrammet ikke ser ud som forventet, skal du kontrollere dine aggregeringer. For eksempel kan du under **Value** højreklikke på det felt, du lige har tilføjet, og kontrollere, at dataene lægges sammen på den måde, du ønsker.  I dette eksempel bruger vi **Sum**.
 > 
 > 
 

@@ -6,16 +6,16 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 795f97403ea80caad52e57e54edc3d54a4c5d952
-ms.sourcegitcommit: 3b1a1f55465e5dca88783046c6b4c073e4e22e4b
+ms.openlocfilehash: 623eb93c27f0ec762b2c9d063b646d757c3b1f0c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51580534"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296564"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Fejlfinding af datagatewayen i det lokale miljø
 
@@ -117,7 +117,7 @@ Datagatewayen i det lokale miljø bruger som standard TLS 1.2 (Transport Layer S
 
 ## <a name="data-sources"></a>Datakilder
 
-### <a name="error-unable-to-connect-details-invalid-connection-credentials"></a>Fejl: Forbindelsen kunne ikke oprettes. Detaljer: "Legitimationsoplysningerne for forbindelsen er ugyldige"
+### <a name="error-unable-to-connect-details-invalid-connection-credentials"></a>Fejl: Der kan ikke oprettes forbindelse. Detaljer: Legitimationsoplysningerne for forbindelsen er ugyldige.
 
 I **Vis detaljer** vises den fejlmeddelelse, der er modtaget fra datakilden. Hvis du bruger SQL Server, får du vist noget, der ligner nedenstående.
 
@@ -125,7 +125,7 @@ I **Vis detaljer** vises den fejlmeddelelse, der er modtaget fra datakilden. Hvi
 
 Bekræft, at du har det rigtige brugernavn og den rigtige adgangskode. Bekræft også, at der kan oprettes forbindelse til datakilden med disse legitimationsoplysninger. Sørg for, at den konto, der bruges, stemmer overens med **godkendelsesmetoden**.
 
-### <a name="error-unable-to-connect-details-cannot-connect-to-the-database"></a>Fejl: Forbindelsen kunne ikke oprettes. Detaljer: "Der kan ikke opnås forbindelse til databasen"
+### <a name="error-unable-to-connect-details-cannot-connect-to-the-database"></a>Fejl: Der kan ikke oprettes forbindelse. Detaljer: Der kan ikke oprettes forbindelse til databasen.
 
 Vi kunne oprette forbindelse til serveren, men ikke til den angivne database. Kontrollér navnet på databasen, og at legitimationsoplysningerne for brugeren er den korrekte tilladelse til at få adgang til databasen.
 
@@ -133,7 +133,7 @@ I **Vis detaljer** vises den fejlmeddelelse, der er modtaget fra datakilden. Hvi
 
     Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
 
-### <a name="error-unable-to-connect-details-unknown-error-in-data-gateway"></a>Fejl: Forbindelsen kunne ikke oprettes. Detaljer: "Ukendt fejl i datagateway"
+### <a name="error-unable-to-connect-details-unknown-error-in-data-gateway"></a>Fejl: Der kan ikke oprettes forbindelse. Detaljer: Ukendt fejl i datagateway.
 
 Denne fejl kan opstå af forskellige årsager. Sørg for at kontrollere, at du kan oprette forbindelse til datakilden fra den computer, der er vært for gatewayen. Dette kan skyldes, at serveren ikke er tilgængelig.
 
@@ -141,7 +141,7 @@ I **Vis detaljer** får du vist fejlkoden **DM_GWPipeline_UnknownError**.
 
 Du kan også se i hændelseslogfilerne > **Logfiler for programmer og tjenester** > **datagatewaytjenesten i det lokale miljø** for at få flere oplysninger.
 
-### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Fejl: Der opstod en fejl under forsøget på at oprette forbindelse til <server>. Detaljer: "Vi har nået den ønskede datagateway, men gatewayen kan ikke få adgang til datakilden i det lokale miljø".
+### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Fejl: Der opstod en fejl under forsøget på at oprette forbindelse til <server>. Detaljer: Vi har nået den ønskede datagateway, men gatewayen kan ikke få adgang til datakilden i det lokale miljø.
 
 Vi kunne ikke oprette forbindelse til den angivne datakilde. Sørg for at kontrollere de oplysninger, der er angivet for denne datakilde.
 
@@ -182,17 +182,17 @@ Du skal samarbejde med domæneadministratorerne om at bekræfte tillidsforholdet
 
 Sørg for, at din konto er angivet under fanen **Brugere** i datakilden i konfigurationen af gatewayen. Hvis du ikke har adgang til gatewayen, kan du kontakte administratoren af gatewayen og bede vedkommende bekræfte. Det er kun konti på listen **Brugere**, der kan se datakilden på Analysis Services-listen.
 
-### <a name="error-you-dont-have-any-gateway-installed-or-configured-for-the-data-sources-in-this-dataset"></a>Fejl: Du har ikke nogen gateway, der er installeret eller konfigureret til datakilderne i dette datasæt
+### <a name="error-you-dont-have-any-gateway-installed-or-configured-for-the-data-sources-in-this-dataset"></a>Fejl: Du har ikke nogen gateway, der er installeret eller konfigureret til datakilderne i dette datasæt.
 
 Kontrollér, at du har føjet en eller flere datakilder til gatewayen, som beskrevet i [Tilføj en datakilde](service-gateway-manage.md#add-a-data-source). Hvis gatewayen ikke vises på administrationsportalen under **Administrer gateways**, skal du prøve at rydde browsercachen eller logge af tjenesten og derefter logge på igen.
 
 ## <a name="datasets"></a>Datasæt
 
-### <a name="error-there-is-not-enough-space-for-this-row"></a>Fejl: Der er ikke tilstrækkelig plads til denne række
+### <a name="error-there-is-not-enough-space-for-this-row"></a>Fejl: Der er ikke tilstrækkelig plads til denne række.
 
 Dette sker, hvis du har en enkelt række, der er større end 4 MB. Du skal afgøre, hvilken række der er fra din datakilde og forsøge at filtrere den ud eller mindske den pågældende rækkes størrelse.
 
-### <a name="error-the-server-name-provided-doesnt-match-the-server-name-on-the-sql-server-ssl-certificate"></a>Fejl: Det servernavn, du har angivet, stemmer ikke overens med servernavnet på SQL Server SSL-certifikatet
+### <a name="error-the-server-name-provided-doesnt-match-the-server-name-on-the-sql-server-ssl-certificate"></a>Fejl: Det servernavn, du har angivet, stemmer ikke overens med servernavnet på SQL Server SSL-certifikatet.
 
 Dette kan ske, når det angivne certifikat-CN er for serverens fuldt kvalificerede domænenavn (FQDN), men du kun har angivet serverens NetBIOS-navn. Dette medfører en uoverensstemmelse for certifikatet. For at løse dette problem skal du få servernavnet i gatewayens datakilde og PBIX-filen til at bruge serverens fuldt kvalificerede navn.
 
@@ -204,7 +204,7 @@ Dette kan skyldes nogle forskellige scenarier.
 2. Din konto er ikke angivet under fanen **Brugere** i datakilden i konfigurationen af gatewayen. Du skal kontakte administratoren af gatewayen og bede om at blive føjet til listen.
 3. Din Power BI Desktop-fil indeholder flere datakilder, og det er ikke alle disse datakilder, der er konfigureret i gatewayen. Hvis gatewayen skal vises i Planlagt opdatering, skal hver enkelt datakilde være defineret sammen med gatewayen.
 
-### <a name="error-the-received-uncompressed-data-on-the-gateway-client-has-exceeded-the-limit"></a>Fejl: De modtagne ikke-komprimerede data på gatewayklienten overstiger grænsen
+### <a name="error-the-received-uncompressed-data-on-the-gateway-client-has-exceeded-the-limit"></a>Fejl: De modtagne ikke-komprimerede data på gatewayklienten overstiger grænsen.
 
 Den nøjagtige begrænsning er 10 GB ikke-komprimerede data pr. tabel. Hvis du støder på dette problem, er der indstillinger, der er velegnet til at optimere og undgå problemet. Det hjælper især, hvis brugen af konstante og lange strengværdier reduceres, og der i stedet bruges en normaliseret nøgle, eller hvis kolonnen fjernes (når den ikke bruges).
 
@@ -307,7 +307,7 @@ Her er en liste over tilgængelige ydelsestællere.
 
 ## <a name="reviewing-slow-performing-queries"></a>Gennemgå forespørgsler med langsom ydeevne
 
-Du vil muligvis opdage, at svar via gatewayen kan gå langsomt. Det kan være for DirectQuery-forespørgsler, eller når dit importerede datasæt opdateres. Du kan aktivere yderligere logføring af output af forespørgsler og deres tidsindstillinger for at få en idé om, hvad der har langsom ydeevne. Når du har fundet en forespørgsel, der har kørt i lang tid, kan det kræve yderligere ændring af datakilden at finindstille ydeevnen af forespørgslen. F.eks. justering af indekser for en SQL Server-forespørgsel.
+Du vil muligvis opdage, at svar via gatewayen kan gå langsomt. Det kan være for DirectQuery-forespørgsler, eller når dit importerede datasæt opdateres. Du kan aktivere yderligere logføring af output af forespørgsler og deres tidsindstillinger for at få en idé om, hvad der har en lav ydeevne. Når du har fundet en forespørgsel, der har kørt i lang tid, kan det kræve yderligere ændring af datakilden at finindstille ydeevnen af forespørgslen. F.eks. justering af indekser for en SQL Server-forespørgsel.
 
 Du skal ændre to konfigurationsfiler for at bestemme varigheden af en forespørgsel.
 
@@ -459,7 +459,7 @@ Følg disse trin til at løse problemet:
 1. Konfigurer et SPN for gatewayen i det lokale miljø
 2. Konfigurer begrænset delegering i dit Active Directory (AD)
 
-### <a name="failedtoimpersonateuserexception-failed-to-create-windows-identity-for-user-userid"></a>FailedToImpersonateUserException: Windows-identiteten for brugerid'et blev ikke oprettet
+### <a name="failedtoimpersonateuserexception-failed-to-create-windows-identity-for-user-userid"></a>FailedToImpersonateUserException: Kunne ikke oprette Windows-identiteten for bruger-id'et.
 
 FailedToImpersonateUserException sker, hvis du ikke kan repræsentere en anden bruger. Det kan også ske, hvis den konto, du forsøger at repræsentere, er fra et andet domæne end det, som domænet for gatewaytjenesten er på (dette er en begrænsning).
 
@@ -500,7 +500,7 @@ Du får vist 1033-fejlen, når dit eksterne id, som er konfigureret i SAP HANA, 
         <value>AADEmail</value>
 ```
 
-### <a name="sap-aglibodbchdb-dllhdbodbc-communication-link-failure-10709-connection-failed-rte-1-kerberos-error-major-miscellaneous-failure-851968-minor-no-credentials-are-available-in-the-security-package"></a>[SAP AG][LIBODBCHDB DLL][HDBODBC] Communication link failure;-10709 Connection failed (RTE:[-1] Kerberos error. Major: "Miscellaneous failure [851968]", minor: "No credentials are available in the security package"
+### <a name="sap-aglibodbchdb-dllhdbodbc-communication-link-failure-10709-connection-failed-rte-1-kerberos-error-major-miscellaneous-failure-851968-minor-no-credentials-are-available-in-the-security-package"></a>[SAP AG][LIBODBCHDB DLL][HDBODBC] Communication link failure;-10709 Connection failed (RTE:[-1] Kerberos error. Major: "Miscellaneous failure [851968]", minor: "No credentials are available in the security package
 
 Du får vist meddelelsen "-10709 Connection failed", hvis din delegering ikke er konfigureret korrekt i AD.
 

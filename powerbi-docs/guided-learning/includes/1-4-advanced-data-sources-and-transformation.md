@@ -1,4 +1,12 @@
-I denne artikel undersøger vi nogle avancerede dataimporterings- og -rensningsteknikker til **Power BI Desktop**. Når du har formet dine data i **Forespørgselseditoren** og lagt dem i **Power BI Desktop**, kan du se dem på forskellige måder. Der er tre visninger i Power BI Desktop: **Rapport**-visning, **Data**-visning og visningen **Relationer**. Du kan se hver visning ved at vælge på dens ikon øverst til venstre på lærredet. I det følgende billede er visningen **Rapport** valgt. Den gule søjle ud for ikonet angiver, hvilken visning der er aktiv.
+---
+ms.openlocfilehash: 9eff90168ea221a269a8b5ded712645cca01cd9f
+ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "54083961"
+---
+I denne artikel undersøger vi nogle avancerede dataimporterings- og -rensningsteknikker til **Power BI Desktop**. Når du har formet dine data i **Forespørgselseditoren** og lagt dem i **Power BI Desktop**, kan du se dem på forskellige måder. Der er tre visninger i Power BI Desktop: **Rapport**, **Data** og **Relationer**. Du kan se hver visning ved at vælge på dens ikon øverst til venstre på lærredet. I det følgende billede er visningen **Rapport** valgt. Den gule søjle ud for ikonet angiver, hvilken visning der er aktiv.
 
 ![](media/1-4-advanced-data-sources-and-transformation/1-4_1.png)
 
@@ -6,7 +14,7 @@ Hvis du vil ændre visningen, skal du blot vælge en af de andre to ikoner. Den 
 
 Power BI Desktop kan til enhver tid under udformningsprocessen kombinere data fra flere kilder til en enkelt rapport. Hvis du vil føje flere datakilder til en eksisterende rapport, skal du vælge **Rediger forespørgsler** i båndet **Hjem** og derefter vælge **Ny kilde** i **Forespørgselseditor**.
 
-Der er mange forskellige mulige datakilder, du kan bruge i **Power BI Desktop**, herunder Mapper. Ved at oprette forbindelse til en mappe kan du importere data fra flere filer på én gang, f.eks. en række Excel-filer eller CSV-filer. De filer, der er indeholdt i den valgte mappe, vises i **Forespørgselseditor** som binært indhold, og hvis du klikker på ikonet med dobbeltpil øverst i kolonnen **Indhold**, indlæses deres værdier.
+Der er mange forskellige mulige datakilder, du kan bruge i **Power BI Desktop**, herunder Mapper. Når du opretter forbindelse til en mappe, kan du importere data fra flere filer på én gang, f.eks. en række Excel-filer eller CSV-filer. De filer, der er indeholdt i den valgte mappe, vises i **Forespørgselseditor** som binært indhold, og hvis du klikker på ikonet med dobbeltpil øverst i kolonnen **Indhold**, indlæses deres værdier.
 
 ![](media/1-4-advanced-data-sources-and-transformation/1-4_2.png)
 

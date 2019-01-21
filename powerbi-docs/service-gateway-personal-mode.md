@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 12/14/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 263c1a576e939a87e970cc2c0200dfb6c1ccdc41
-ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
+ms.openlocfilehash: 512b189575acd7651dea8747c36e8666875edae5
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51273327"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54295741"
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Datagateway i det lokale miljø (personlig tilstand)
 Du kan bruge datakilder i det lokale miljø og oprette Power BI-rapporter og -dashboards ved hjælp af en gateway. En **gateway** er software, der gør det nemmere at få adgang til data, som er gemt på et privat netværk i det lokale miljø. Derefter giver den dig mulighed for at bruge disse data i onlinetjenester som **Power BI-tjenesten**. **Datagatewayen i det lokale miljø (personlig tilstand)** er en opdatering, som er blevet udgivet for nylig, til Power BI Gateway. Den giver enkeltpersoner mulighed for at installere en gateway på deres egen computer og få adgang til data i det lokale miljø.
@@ -117,7 +117,7 @@ Understøttelse af Spark er planlagt til andet halvår af 2017-kalenderåret.
   * **Svar**: Ja, med den nye version kan begge køre samtidigt.
 * Kan jeg køre **datagatewayen i det lokale miljø (personlig tilstand)** som en tjeneste?
   
-  * **Svar:** Nej. **Datagatewayen i det lokale miljø (personlig tilstand)** kan kun køres som et program. Hvis du har brug for at køre gatewayen som en tjeneste og/eller i administratortilstand, skal du overveje [**datagatewayen i det lokale miljø**](service-gateway-onprem.md) (tidligere kaldet Enterprise-gatewayen).
+  * **Svar**: Nej. **Datagatewayen i det lokale miljø (personlig tilstand)** kan kun køres som et program. Hvis du har brug for at køre gatewayen som en tjeneste og/eller i administratortilstand, skal du overveje [**datagatewayen i det lokale miljø**](service-gateway-onprem.md) (tidligere kaldet Enterprise-gatewayen).
 * Hvor ofte opdateres **datagatewayen i det lokale miljø (personlig tilstand)**?
   
   * **Svar**: Vi planlægger at opdatere den personlige gateway hver måned.

@@ -4,19 +4,19 @@ description: Selvstudium i, hvordan du kan bruge Spørgsmål og svar i Power BI 
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 9ca771d200f5bd4b50dfbddbd8eb67931be375c1
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: c139d5561a19dab147610914bc11e1bfd9e9e481
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830004"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54277359"
 ---
-# <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Selvstudium: Sådan bruger du Spørgsmål og svar til at oprette visualiseringer og rapporter
+# <a name="tutorial-how-to-use-qa-to-create-visualizations-and-build-reports"></a>Selvstudium: Sådan bruger du spørgsmål og svar til at oprette visualiseringer og rapporter
 I [Oversigt over Spørgsmål og svar](consumer/end-user-q-and-a.md) blev du introduceret til Spørgsmål og svar i Power BI og fik defineret forskellen mellem *forbrugere* (får dashboards og rapporter delt med sig) og *forfattere* (ejer de underliggende rapporter og datasæt). Den første del af dette selvstudium er primært beregnet til forbrugere af dashboards ved hjælp af Power BI-tjenesten. Desuden er den anden del beregnet til forfattere af rapporter ved hjælp af enten Power BI-tjenesten eller Power BI Desktop. [Spørgsmål og svar og Power BI-mobil](consumer/mobile/mobile-apps-ios-qna.md) og [Spørgsmål og svar med Power BI Embedded](developer/qanda.md) behandles i særskilte artikler.
 
 Spørgsmål og svar er interaktiv og endda sjov, og oftere medfører ét spørgsmål mange andre, efterhånden som visualiseringerne viser interessante veje at forfølge. Se Amanda demonstrere brugen af Spørgsmål og svar til at oprette visualiseringer, grave ned i disse visuals og fastgøre dem til dashboards.

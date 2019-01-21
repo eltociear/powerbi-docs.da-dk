@@ -1,20 +1,20 @@
 ---
 title: Få vist Power BI-rapporter, der er optimeret til din telefon
 description: Læs om, hvordan du kan interagere med rapportsider, der er optimeret til visning i Power BI-telefonapps.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 09/14/2018
-ms.author: maggies
-ms.openlocfilehash: 06a8d15ca894b877199f22fc6c00d4c34827d76b
-ms.sourcegitcommit: 0ff358f1ff87e88daf837443ecd1398ca949d2b6
+ms.author: mshenhav
+ms.openlocfilehash: 99f40837f4b2c188120c4ca0311be3e9ded5fe95
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46547792"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54276900"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Få vist Power BI-rapporter, der er optimeret til din telefon
 
@@ -48,7 +48,7 @@ Hvis der er defineret filtre i en rapport, der er optimeret til telefoner, kan d
     ![Avanceret filter i Power BI-telefonrapport](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
 
 ## <a name="cross-highlight-visuals"></a>Tværgående fremhævning i visualiseringer
-Tværgående fremhævning i visualiseringer fungerer på samme måde i telefonrapporter som i Power BI-tjenesten og i rapporter på telefoner i liggende format: Når du vælger data i den ene visualisering, fremhæves relaterede data i de øvrige visualiseringer på samme side.
+Tværgående fremhævning af visualiseringer i telefonrapporter fungerer på samme måde som i Power BI-tjenesten og i rapporter på telefoner i liggende format: Når du vælger data i en visualisering, fremhæves relaterede data i de andre visualiseringer på siden.
 
 Læs mere om [filtre og fremhævning i Power BI](../../power-bi-reports-filters-and-highlighting.md).
 

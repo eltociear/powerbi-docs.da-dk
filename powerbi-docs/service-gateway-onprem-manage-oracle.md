@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ef4b503b7282377b112aebe237cc9a8d132502f0
-ms.sourcegitcommit: 2a7bbb1fa24a49d2278a90cb0c4be543d7267bda
+ms.openlocfilehash: 5e737978b7c39abd331f51fbb12e24656d54e838
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "34298337"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54275910"
 ---
 # <a name="manage-your-data-source---oracle"></a>Administrer din datakilde – Oracle
 Når du har installeret datagatewayen i det lokale miljø, skal du tilføje datakilder, der kan bruges sammen med gatewayen. I denne artikel kan du se, hvordan du arbejder med gateways og datakilder. Du kan bruge Oracle-datakilden til enten planlagte opdateringer eller DirectQuery.
@@ -159,9 +159,9 @@ Du kan støde på flere fejl fra Oracle, når navngivningssyntaksen enten er for
 
 * ORA-12154: TNS: Den angivne forbindelsesidentifikator kunne ikke løses  
 * ORA-12514: TNS-lytter kender i øjeblikket ikke til den anmodede tjeneste i forbindelsesbeskrivelse  
-* ORA-12541: TNS: ingen lytter  
+* ORA-12541: TNS: Ingen lytter  
 * ORA-12170: TNS: Timeout indtruffet for forbindelse  
-* ORA-12504: TNS-lytter var ikke oplyst SERVICE_NAME i CONNECT_DATA  
+* ORA-12504: TNS-lytter blev ikke tildelt SERVICE_NAME i CONNECT_DATA  
 
 Disse fejl kan opstå, hvis Oracle-klienten enten ikke er installeret, eller hvis den ikke er konfigureret korrekt. Hvis den er installeret, skal du bekræfte, at filen tnsnames.ora er konfigureret korrekt, og at du bruger det korrekte net_service_name. Du skal også sikre, at net_service_name er det samme for maskinen, der bruger Power BI Desktop, og maskinen, der kører gatewayen. Du kan finde flere oplysninger under [Installér Oracle-klienten](#installing-the-oracle-client).
 

@@ -5,21 +5,21 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: f4c9fec65f9c006095470a8983f889d44f3ce460
-ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
+ms.openlocfilehash: a687e42ef2963ce5e85bd1e0be72c2562afa5b6c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54072882"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54279981"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Vis elementer uden data i Power BI
 
-Med Power BI kan du visualisere mange forskellige data fra forskellige kilder. I forbindelse med visualiseringer viser Power BI kun relevante data, når du opretter en visualisering for på behørig vis at kunne administrere den måde, som data præsenteres og vises på. Power BI fastlægger, hvilke data der er relevante på baggrund af konfigurationen af visualiseringen og den underliggende datamodel. I denne artikel beskrives det, hvordan Power BI fungerer, når de relevante data skal findes. Der er inkluderet eksempler, som illustrerer, hvordan valget foretages.
+Med Power BI kan du visualisere mange forskellige data fra forskellige kilder. I forbindelse med visualiseringer viser Power BI kun relevante data, når du opretter en visualisering, for på behørig vis at kunne administrere den måde, som data præsenteres og vises på. Power BI fastlægger, hvilke data der er relevante på baggrund af konfigurationen af visualiseringen og den underliggende datamodel. I denne artikel beskrives det, hvordan Power BI fungerer, når de relevante data skal findes. Der er inkluderet eksempler, som illustrerer, hvordan valget foretages.
 
 ![Sådan aktiverer du funktionen Vis elementer uden data](media/desktop-show-items-no-data/show-items-no-data_02.png)
 
@@ -65,7 +65,7 @@ Derfor viser Power BI de kombinationer, der har poster i tabellen Produkt, hvilk
 
 **4. Grupper fra forskellige og ikke-relaterede tabeller**
 
-Eksempelmodellen har ikke denne kombination, men hvis der var grupper fra forskellige og ikke-relaterede tabeller, ville Power BI ikke kunne relatere to kolonner, og resultatet ville være en krydsjoinforbindelse af alle værdierne i hver kolonne. I denne situation udsteder Power BI en fejl af typen *joinforbindelse uden begrænsninger*, fordi sådanne krydsjoinforbindelser er dyre at beregne i databasen og giver ikke brugeren mange oplysninger. 
+Eksempelmodellen har ikke denne kombination, men hvis der var grupper fra forskellige og ikke-relaterede tabeller, ville Power BI ikke kunne relatere to kolonner. Resultatet er en crossjoin af alle værdierne i hver kolonne. I denne situation udsteder Power BI en fejl af typen *joinforbindelse uden begrænsninger*, fordi sådanne krydsjoinforbindelser er dyre at beregne i databasen og giver ikke brugeren mange oplysninger. 
 
 ![Fejl, der vises for en joinforbindelse uden begrænsninger](media/desktop-show-items-no-data/show-items-no-data_01.png)
 
@@ -76,7 +76,7 @@ I forrige afsnit blev det beskrevet, hvordan Power BI fastlægger, hvilke data d
 
 Funktionen **Vis elementer uden data** gør det muligt at gøre netop det: at inkludere datarækker og -kolonner, der ikke indeholder måledata (tomme måleværdier).
 
-Vælg en visualisering for at aktivere funktionen **Vis elementer uden data**, højreklik derefter på feltet i brønden **Felter**, og vælg **Vis elementer uden data** i den viste menu, som vist på følgende billede.
+Vælg en visualisering for at aktivere funktionen **Vis elementer uden data**, højreklik derefter på feltet i brønden **Felter**, og vælg **Vis elementer uden data** i den viste menu, som vist på følgende billede:
 
 ![Sådan aktiverer du funktionen Vis elementer uden data](media/desktop-show-items-no-data/show-items-no-data_02.png)
 
@@ -193,6 +193,6 @@ I dette afsnit kan du se eksemplet på datamodellen, som bruges i eksemplerne i 
 
 ## <a name="next-steps"></a>Næste trin
 
-I denne artikel beskrives det, hvordan du kan aktivere funktionen **Vis elementer uden data** i Power BI. Du vil måske også være interesseret i følgende artikler. 
+I denne artikel beskrives det, hvordan du kan aktivere funktionen **Vis elementer uden data** i Power BI. Du vil måske også være interesseret i følgende artikler: 
 
-* [Datakilder i Power BI Desktop](desktop-data-sources.md)
+* [Standardmedlem i flerdimensionelle modeller i Power BI](desktop-default-member-multidimensional-models.md)

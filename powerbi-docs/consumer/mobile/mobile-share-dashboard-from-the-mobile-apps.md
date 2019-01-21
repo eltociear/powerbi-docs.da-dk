@@ -1,20 +1,20 @@
 ---
 title: Del et dashboard eller en rapport fra Power BI-mobilappsene
 description: Inviter andre til at få vist dine dashboards og rapporter ved at dele links fra Power BI-mobilapps. Få mere at vide om, hvordan du gør.
-author: maggiesMSFT
+author: mshenhav
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-mobile
+ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
-ms.author: maggies
-ms.openlocfilehash: 4484eca5e810da7674d20e368383429c9c6f5508
-ms.sourcegitcommit: 833cf1252807721fb1b3000487bd032bfd6c8c98
+ms.author: mshenhav
+ms.openlocfilehash: 69532ea9ad98edc7655fb77aec13b69eec6566bf
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48271641"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283661"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Del et dashboard eller en rapport fra Power BI-mobilappsene
 Gælder for:
@@ -52,7 +52,7 @@ Du kan kun stoppe med at dele, hvis du er ejer.
    Du kan se en liste over kolleger, som du har delt dette dashboard eller denne rapport med, vha. disse udtryk:
    
    * **Kan få vist**: De kan få vist, men kan ikke dele.
-   * **Kan få vist & invitere**: De kan få vist og dele med andre kolleger.
+   * **Kan få vist og invitere**: De kan få vist og dele med andre kolleger.
 1. Tryk på **Rediger**.
    
     ![Redigeringsikon](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-iphone-edit-invite-dashboard.png)
@@ -81,7 +81,7 @@ Du kan kun stoppe med at dele, hvis du er ejer.
    Du kan se en liste over kolleger, som du har delt dette dashboard eller denne rapport med, vha. disse udtryk:
    
    * **Kan få vist**: De kan få vist, men kan ikke dele.
-   * **Kan få vist & invitere**: De kan få vist og dele med andre kolleger.
+   * **Kan få vist og invitere**: De kan få vist og dele med andre kolleger.
 2. Tryk på **Rediger**.
 3. Hvis du vil annullere deling, skal du trykke på den røde cirkel ud for et navn og trykke på **Slet**.
 
@@ -94,7 +94,7 @@ Du kan kun stoppe med at dele, hvis du er ejer.
     Hvis du ejer dashboardet, kan du se en liste over kolleger, som du har delt dette dashboard eller denne rapport med, vha. disse noter:
 
     -   **Kan få vist**: De kan få vist, men kan ikke dele.
-    -   **Kan få vist og videredele**: De kan få vist og dele med andre kolleger.
+    -   **Kan få vist og dele igen**: De kan få vist og dele med andre kolleger.
 
 1. Skriv mailadresser og en meddelelse, der skal ledsage dashboardinvitationen. Ellers sendes en standardmeddelelse i Power BI.
 2. Hvis du vil tillade videredeling, skal indstillingen **Tillad, at modtagerne må dele dette dashboard** være markeret.
@@ -128,7 +128,7 @@ Du kan kun stoppe med at dele, hvis du er ejer.
    
    **Kan få vist**: De kan få vist, men kan ikke dele.
    
-   **Kan få vist og videredele**: De kan få vist og dele med andre kolleger.
+   **Kan få vist og dele igen**: De kan få vist og dele med andre kolleger.
 2. Skriv mailadresser og en meddelelse, der skal ledsage invitationen. Ellers sendes en standardmeddelelse i Power BI.
    
    ![Dialogboksen Inviter](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-windows-10-share-dashboard.png)

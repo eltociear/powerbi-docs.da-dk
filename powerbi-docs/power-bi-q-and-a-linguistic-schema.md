@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/17/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 09bf82d86301967fb46b8724822e183a21008b92
-ms.sourcegitcommit: fdb54145f9bc93b312409c15c603749f3a4a876e
+ms.openlocfilehash: 760335b0a08156b3c5b594ffc27be4cb0ad12342
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52452723"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54289917"
 ---
 # <a name="edit-qa-linguistic-schema-and-add-phrasings-in-power-bi-desktop"></a>Rediger sprogligt skema for Spørgsmål og svar, og tilføj udtryk i Power BI Desktop 
 Det er effektivt, når du bruger almindelige udtryk og naturligt sprog til dataforespørgsler. Det er endnu mere effektiv, når dataene svarer, hvilket er, hvad der sker i Spørgsmål og svar i Power BI. Når du stiller et spørgsmål i Spørgsmål og svar i Power BI, forsøger den så vidt muligt at finde det rette svar. 
@@ -78,7 +78,7 @@ I Spørgsmål og svar bruges alle disse oplysninger sammen med de udvidelser, du
 
 
 ## <a name="edit-a-linguistic-schema"></a>Rediger et sprogligt skema
-Når du eksporterer dit sproglige skema fra Power BI Desktop første gang, oprettes det meste af eller alt indholdet i filen automatisk af Spørgsmål og svar-programmet. Disse oprettede enheder, ord (synonymer), relationer og udtryk er angivet med koden **Tilstand: genereret** og er primært indeholdt i filen til informationsmæssige formål, men kan være et nyttigt udgangspunkt for dine egne ændringer. 
+Når du eksporterer dit sproglige skema fra Power BI Desktop første gang, oprettes det meste af eller alt indholdet i filen automatisk af Spørgsmål og svar-programmet. Disse genererede enheder, ord (synonymer), relationer og vendinger er angivet med mærket **Tilstand: Genereret** og er hovedsageligt inkluderet i filen til orientering, men kan være et nyttigt startpunkt for dine egne ændringer. 
 
 > [!NOTE]
 > YAML-eksempelfilen, der er inkluderet i dette selvstudium, indeholder ikke koderne **Tilstand: genereret** eller **Tilstand: slettet**, da den er oprettet specielt til dette selvstudium. Hvis du vil se disse koder, skal du åbne en uredigeret .pbix-fil i relationsvisningen og eksportere det sproglige skema.
@@ -86,7 +86,7 @@ Når du eksporterer dit sproglige skema fra Power BI Desktop første gang, opret
 ![YAML, der viser Tilstand: genereret](media/power-bi-q-and-a-linguistic-schema/power-bi-generated-state.png)
 
 
-Hvis du importerer den sproglige skemafil til Power BI Desktop igen, ignoreres det, der er markeret med **Tilstand: genereret**, (og det genereres igen senere), så hvis du vil ændre genereret indhold, skal du huske også at fjerne den tilsvarende kode **Tilstand: genereret**. Og hvis du vil fjerne indhold, der er oprettet, skal du ændre koden **Tilstand: genereret** til **Tilstand: slettet**, så det ikke gendannes, når du importerer din sproglige skemafil.
+Når du importerer din sproglige skemafil tilbage til Power BI Desktop, ignoreres alt, der er markeret med mærket **Tilstand: Genereret** (og gendannes senere), så hvis du vil foretage en ændring af noget genereret indhold, skal du sørge for at fjerne den tilsvarende **Tilstand: Genereret** også. Hvis du ligeledes vil fjerne genereret indhold, skal du ændre mærket **Tilstand: Genereret** til **Tilstand: Slettet**, så det ikke gendannes, når du importerer din sproglige skema-fil.
 
 1. Åbn datasættet i *relationsvisningen* i Power BI Desktop. 
 2. Vælg fanen **Udformning**, og vælg **Eksportér sprogligt skema**.

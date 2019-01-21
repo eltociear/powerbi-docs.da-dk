@@ -1,20 +1,20 @@
 ---
-title: 'Selvstudium: Udforsk Power BI-rapportserver i en VM'
+title: 'Selvstudium: Udforsk Power BI Report Server i en VM'
 description: I dette selvstudium skal du oprette en virtuel maskine med Power BI-rapportserveren, der allerede er installeret, og udforske webportalen.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-report-server
+ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/18/2018
 ms.author: maggies
-ms.openlocfilehash: 32bf2d3cedbeeb2430620855a2ac95bf349af9a2
-ms.sourcegitcommit: 695c65629d6d1faba61db2e1570324f65f235dde
+ms.openlocfilehash: 4eb9f5dc7e45006d1b5697f35b79d0e9d11fa2df
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37092040"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54281384"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Selvstudium: Udforsk webportalen til Power BI-rapportserver i en VM
 I dette selvstudium skal du oprette en virtuel Azure-maskine med Power BI-rapportserver, der allerede er installeret, så du kan få vist, redigere og administrere eksempler på Power BI og sideinddelte rapporter samt KPI'er.
@@ -135,7 +135,7 @@ Du kan skifte til Liste-visning, hvor det er nemt at flytte eller slette flere e
    
     ![Skift visninger.](media/tutorial-explore-report-server-web-portal/report-server-web-portal-list-view.png)
 
-2. Gå tilbage til feltvisning: Vælg **Liste** > **Felter**.
+2. Gå tilbage til visning af felter: Vælg **Liste** > **Felter**.
 
 ## <a name="power-bi-reports"></a>Power BI-rapporter
 
@@ -149,7 +149,7 @@ Du kan få vist og interagere med Power BI-rapporter på webportalen og starte P
 
     ![Fremhævet Power BI-rapport](media/tutorial-explore-report-server-web-portal/power-bi-report-server-power-bi.png)
 
-### <a name="edit-in-power-bi-desktop"></a>Rediger i Power BI Desktop.
+### <a name="edit-in-power-bi-desktop"></a>Rediger i Power BI Desktop
 
 1. Vælg **Rediger i Power BI Desktop**.
 

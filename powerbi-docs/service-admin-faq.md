@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: fe81c8e972a4fe36f88da495e4e0dce97a39d32c
-ms.sourcegitcommit: e17fc3816d6ae403414cf5357afbf6a492822ab8
+ms.openlocfilehash: 494612b9c8ef448756dfe2d516bfca68e69d2e7a
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52830303"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54296817"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration af Power BI – ofte stillede spørgsmål
 
@@ -67,13 +67,13 @@ Individuelle brugere i din organisation kan derudover muligvis tilmelde sig Powe
 
 Der er tre scenarier, der kan gøre sig gældende for brugere i din organisation:
 
-* **1. scenarie**: Din organisation har allerede et Office 365-miljø, og brugeren, der tilmelder sig Power BI, har allerede en Office 365-konto.
+* **Scenarie 1**: Din organisation har allerede et Office 365-miljø, og brugeren, der tilmelder sig Power BI, har allerede en Office 365-konto.
     Hvis en bruger allerede har en arbejds- eller skolekonto i lejeren (f.eks. contoso.com), men endnu ikke har Power BI, aktiverer Microsoft i dette scenarie ganske enkelt planen for den pågældende konto, og brugeren får automatisk besked om, hvordan Power BI-tjenesten bruges.
 
-* **2. scenarie**: Din organisation har allerede et Office 365-miljø, men brugeren, der tilmelder sig Power BI, har ikke en Office 365-konto.
+* **Scenarie 2**: Din organisation har allerede et Office 365-miljø, men brugeren, der tilmelder sig Power BI, har ikke en Office 365-konto.
     I dette scenarie har brugeren en mailadresse i organisationens domæne (f.eks.: contoso.com), men har endnu ikke en Office 365-konto. I dette tilfælde kan brugeren tilmelde sig Power BI og får automatisk en konto. Dette giver brugeren adgang til Power BI-tjenesten. Hvis f.eks. en medarbejder, der hedder Nancy, bruger sin arbejdsmailadresse (f.eks. nancy@contoso.com) til at tilmelde sig, tilføjer Microsoft automatisk Nancy som bruger i Contosos Office 365-miljø og aktiverer Power BI for den konto.
 
-* **3. scenarie**: Din organisation har ikke et Office 365-miljø, der er sluttet til dit maildomæne.
+* **Scenarie 3**: Din organisation har ikke et Office 365-miljø, der er sluttet til dit maildomæne.
     Din organisation skal ikke udføre nogle administrative handlinger for at kunne nyde godt af Power BI. Brugerne føjes til en ny brugermappe udelukkende for cloudmiljøet, og du får mulighed for at overtage lejeradministrationen og administrere dem.
 
 > [!IMPORTANT]
@@ -156,13 +156,13 @@ Tillad dine eksisterne brugere at tilmelde sig Power BI ved at køre kommandoen 
 
 Der er tre scenarier, der kan gøre sig gældende for brugere i din organisation:
 
-* **1. scenario**: Hvis organisationen allerede har et eksisterende Office 365-miljø, og alle brugerne i organisationen har Office 365-konti, ændres den måde, du administrerer identiteter på, ikke.
+* **Scenarie 1**: Hvis organisationen allerede har et eksisterende Office 365-miljø, og alle brugerne i organisationen har Office 365-konti, ændres den måde, du administrerer identiteter på, ikke.
 
-* **2. scenario**: Hvis organisationen allerede har et eksisterende Office 365-miljø, men det ikke er alle brugerne i organisationen, der har Office 365-konti, opretter vi en bruger i lejeren og tildeler licenser på baggrund af brugernes arbejds- eller skolemailadresser.
+* **Scenarie 2**: Hvis organisationen allerede har et eksisterende Office 365-miljø, men det ikke er alle brugerne i organisationen, der har Office 365-konti, opretter vi en bruger i lejeren og tildeler licenser på baggrund af brugernes arbejds- eller skolemailadresser.
 
     Det betyder, at antallet af brugere, som du administrerer på et givent tidspunkt, stiger, efterhånden som brugerne i organisationen tilmelder sig tjenesten.
 
-* **3. scenario**: Hvis din organisation ikke har et Office 365-miljø, der er sluttet til dit maildomæne, er der ingen ændring i, hvordan du administrerer identiteter.
+* **Scenarie 3**: Hvis din organisation ikke har et Office 365-miljø, der er sluttet til dit maildomæne, er der ingen ændring i, hvordan du administrerer identiteter.
 
     Brugerne føjes til en ny brugermappe udelukkende for cloudmiljøet, og du får mulighed for at overtage lejeradministrationen og administrere dem.
 
@@ -186,7 +186,7 @@ Når du foretager en ekstern overtagelse, placeres Power BI-indhold, der blev op
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Kan jeg kontrollere den Office 365-lejer, som brugerne er føjet til, hvis jeg har flere domæner?
 
-Hvis du ikke foretager dig noget, oprettes der en lejer for hvert brugermaildomæne og underdomæne. Hvis alle brugere skal være i samme lejer uanset deres mailadresseudvidelser: Opret en destinationslejer på forhånd, eller brug en eksisterende lejer, og tilføj alle eksisterende domæner og underdomæner, som du vil samle i lejeren. Derefter deltager alle brugerne med mailadresser, der slutter med de pågældende domæner og underdomæner, automatisk i destinationslejeren, når de tilmelder sig.
+Hvis du ikke foretager dig noget, oprettes der en lejer for hvert brugermaildomæne og underdomæne. Hvis du ønsker, at alle brugerne skal være i samme lejer uanset deres mailadresseudvidelser: Opret en destinationslejer på forhånd, eller brug en eksisterende lejer, og tilføj alle eksisterende domæner og underdomæner, som du vil samle i lejeren. Derefter deltager alle brugerne med mailadresser, der slutter med de pågældende domæner og underdomæner, automatisk i destinationslejeren, når de tilmelder sig.
 
 > [!IMPORTANT]
 > Der er ikke en understøttet automatiseret mekanisme, der kan flytte brugerne på tværs af lejere, når de først er blevet oprettet. Hvis du vil have mere at vide om tilføjelse af domæner til en enkelt Office 365-lejer, skal du se [Føj dine brugere og domæner til Office 365](/office365/admin/setup/add-domain/).

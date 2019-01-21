@@ -6,16 +6,16 @@ manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/02/2018
 ms.author: maggies
-ms.openlocfilehash: 28a282ff6a35061422995c46fbbcd34c21b533a7
-ms.sourcegitcommit: 1e4fee6d1f4b7803ea285eb879c8d5a4f7ea8b85
+ms.openlocfilehash: c42aa07fd78430c5692067ae8476b22288470c8c
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51717418"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54294247"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Opret et Power BI-dashboard fra en rapport
 Du har læst [Dashboards i Power BI](service-dashboards.md), og nu vil du oprette dit eget. Der er mange forskellige måder at oprette et dashboard på – fra en rapport, fra bunden, fra et datasæt, ved at kopiere et eksisterende dashboard og meget mere.  
@@ -25,7 +25,7 @@ Det kan virke overvældende, når du starter for første gang, så vi begynder m
 ## <a name="who-can-create-a-dashboard"></a>Hvem kan oprette et dashboard?
 Oprettelse af et dashboard er en **opretter**funktion og kræver redigeringsrettigheder til rapporten. Redigeringstilladelser er tilgængelige for rapportoprettere og de kolleger, opretteren giver adgang til. Hvis David f.eks. opretter en rapport i workspaceABC og derefter tilføjer dig som medlem af dette arbejdsområde, har både du og David redigeringsrettigheder. På anden side, hvis en rapport er blevet delt med dig direkte eller som en del af en [Power BI-app](service-create-distribute-apps.md) (du **bruger** rapporten), kan du ikke fastgøre felter til et dashboard.
 
-> **BEMÆRK!** Dashboards er en funktion i Power BI-tjenesten ikke Power BI Desktop. Der kan ikke oprettes dashboards på Power BI-mobilenheder, men du kan [få dem vist og dele dem](consumer/mobile/mobile-apps-view-dashboard.md).
+> **BEMÆRK**! Dashboards er en funktion i Power BI-tjenesten ikke Power BI Desktop. Der kan ikke oprettes dashboards på Power BI-mobilenheder, men du kan [få dem vist og dele dem](consumer/mobile/mobile-apps-view-dashboard.md).
 >
 > 
 
@@ -65,7 +65,7 @@ Vi importerer et af eksempeldatasættene i Power BI og bruger det til at oprette
 1. Bliv i samme arbejdsområde, og vælge fanen **Rapporter**. Den nyligt importerede rapport vises med en gul stjerne. Markér navnet på rapporten for at åbne den.
 
     ![fanen Rapporter](media/service-dashboard-create/power-bi-reports.png)
-2. Rapporten åbnes i læsevisning. Bemærk, at den har to faner nederst: Discount Analysis (Rabatanalyse) og Spend Overview (Udgiftsoversigt). Hver fane repræsenterer en side i rapporten.
+2. Rapporten åbnes i læsevisning. Bemærk, at den har to faner nederst: Discount Analysis og Spend Overview. Hver fane repræsenterer en side i rapporten.
     Vælg **Rediger rapport** for at åbne rapporten i Redigeringsvisning.
 
     ![rapport i Læsevisning](media/service-dashboard-create/power-bi-reading-view.png)

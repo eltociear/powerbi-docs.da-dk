@@ -5,17 +5,17 @@ author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-gateways
+ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/24/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: da8fb3da7ea0e4f0457951bc421a5f207c3c6911
-ms.sourcegitcommit: 47269676aa600e60ec7ba0e323941a71e0622833
+ms.openlocfilehash: b1c74968365db59d51f7c0a7bdb356552cc75596
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/08/2018
-ms.locfileid: "51273304"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54283776"
 ---
 # <a name="on-premises-data-gateway-faq"></a>Ofte stillede spørgsmål vedrørende datagateway i lokalt miljø
 <!-- Shared FAQ shared Include -->
@@ -25,23 +25,23 @@ ms.locfileid: "51273304"
 **Spørgsmål:** Kan jeg bruge msdmpump.dll til at oprette brugerdefinerede effektive brugernavnstilknytninger til Analysis Services?  
 **Svar:** Nej. Dette understøttes ikke på nuværende tidspunkt.
 
-**Spørgsmål:** Kan jeg bruge gateway'en til at oprette forbindelse til en flerdimensionel (OLAP)-forekomst.  
-**Svar:** Ja! Datagatewayen i det lokale miljø understøtter direkte forbindelser til såvel Analysis Services-tabelmodeller som flerdimensionelle modeller.
+**Spørgsmål:** Kan jeg bruge gatewayen til at oprette forbindelse til en flerdimensionel (OLAP) forekomst?  
+**Svar:** Ja. Datagatewayen i det lokale miljø understøtter direkte forbindelser til såvel Analysis Services-tabelmodeller som flerdimensionelle modeller.
 
-**Spørgsmål:** Hvad sker der, hvis jeg installerer gateway'en på en computer med et andet domæne end min lokale server, der bruger Windows-godkendelse?  
+**Spørgsmål:** Hvad sker der, hvis jeg installerer gatewayen på en computer med et andet domæne end min lokale server, der bruger Windows-godkendelse?  
 **Svar:** Vi garanterer ikke noget i dette tilfælde. Det afhænger alt sammen af tillidsforholdet mellem de to domæner. Hvis de to forskellige domæner er i en pålidelig domænemodel, er gateway'en muligvis i stand til at oprette forbindelse til Analysis Services-serveren, og det effektive brugernavn kan løses. Hvis det ikke er tilfældet, kan der opstå en loginfejl.
 
 **Spørgsmål:** Hvordan kan jeg finde ud af, hvilket effektivt brugernavn der overføres til min lokale Analysis Services-server?  
 **Svar:** Vi har svaret på dette spørgsmål i artiklen om [Fejlfinding](service-gateway-onprem-tshoot.md).
 
-**Spørgsmål:** Jeg har 25 databaser i Analysis Services. Er det muligt at aktivere dem alle samtidigt for gateway'en?  
+**Spørgsmål:** Jeg har 25 databaser i Analysis Services. Er det muligt at aktivere dem alle samtidigt for gatewayen?  
 **Svar:** Nej. Det er på tegnebrættet, men vi har ikke en tidshorisont endnu.
 
 ## <a name="administration"></a>Administration
 **Spørgsmål:** Kan jeg have mere end én administrator for en gateway?  
-**Svar:** Ja! Når du administrerer en gateway, kan du gå til fanen Administrator for at tilføje flere administratorer.
+**Svar:** Ja. Når du administrerer en gateway, kan du gå til fanen Administrator for at tilføje flere administratorer.
 
-**Spørgsmål:** Behøver gateway-administratoren at være administrator på den computer, hvor gateway'en er installeret?  
+**Spørgsmål:** Behøver gateway-administratoren at være administrator på den computer, hvor gatewayen er installeret?  
 **Svar:** Nej. Gateway-administratoren bruges til at administrere gateway'en i tjenesten.
 
 **Spørgsmål:** Kan jeg forhindre brugere i min organisation i at oprette en gateway?  
@@ -57,16 +57,16 @@ ms.locfileid: "51273304"
 **Spørgsmål:** Hvor ofte bliver felter i et dashboard i Power BI opdateret, når forbindelsen er oprettet via datagatewayen i det lokale miljø?  
 **Svar:** Hvert 10. minut. DirectQuery-forbindelser er bare sådan. Det betyder ikke, at et felt udsteder en forespørgsel til din lokale server og viser nye data hvert 10. minut.
 
-**Spørgsmål:** Kan jeg uploade Excel-projektmapper med Power Pivot-datamodeller, opretter forbindelse til datakilder i det lokale miljø? Har jeg brug for en gateway til dette scenarie?  
+**Spørgsmål:** Kan jeg uploade Excel-projektmapper med Power Pivot-datamodeller, der opretter forbindelse til datakilder i det lokale miljø? Har jeg brug for en gateway til dette scenarie?  
 **Svar:** Ja, du kan uploade projektmapper. Og nej, du behøver ikke en gateway. Men eftersom dataene vil være placeret i Excel-datamodellen, vil rapporter i Power BI, der er baseret på Excel-projektmappen, ikke være dynamiske. For at opdatere rapporter i Power BI ville du hver gang skulle uploade en opdateret projektmappe igen. Eller bruge gateway'en med planlagt opdatering.
 
 **Spørgsmål:** Hvis brugerne deler dashboards, der har en DirectQuery-forbindelse, vil de andre brugere så kunne se dataene, også selvom de måske ikke har de samme tilladelser.  
 **Svar:** For et dashboard forbundet til Analysis Services kan brugerne kun se de data, de har adgang til. Hvis brugerne ikke har de samme tilladelser, vil de ikke kunne se nogen data. Alle brugere vil dele de legitimationsoplysninger, der er angivet af administratoren for den pågældende datakilde, for andre datakilders vedkommende.
 
 **Spørgsmål:** Hvorfor kan jeg ikke oprette forbindelse til Oracle-serveren?  
-**Svar:** Du skal muligvis installere Oracle-klienten og konfigurere tnsnames.ora-filen med oplysninger om den korrekte server for at oprette forbindelse til Oracle-serveren. Dette er en separat installation uden for gateway'en. Du kan finde flere oplysninger under [Installation af Oracle-klienten](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
+**Svar:** Du skal muligvis installere Oracle-klienten og konfigurere tnsnames.ora-filen med oplysninger om den korrekte server for at oprette forbindelse til Oracle-serveren. Dette er en separat installation uden for gateway'en. Du kan finde flere oplysninger under [Installér Oracle-klienten](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
 
-**Spørgsmål:** Kan gateway'en fungere med ExpressRoute?  
+**Spørgsmål:** Kan gatewayen fungere med ExpressRoute?  
 **Svar:** Ja. Du kan finde flere oplysninger om ExpressRoute og Power BI under [Power BI og ExpressRoute](service-admin-power-bi-expressroute.md).
 
 **Spørgsmål:** Jeg bruger R-script. Understøttes det?

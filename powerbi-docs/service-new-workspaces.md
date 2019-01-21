@@ -5,17 +5,17 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 01/11/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8856a8641b38b7a8256b199acccd54e030bdce40
-ms.sourcegitcommit: 5206651c12f2b91a368f509470b46f3f4c5641e6
+ms.openlocfilehash: dd4ee055501974345c819f7604ff30174cd4c5ba
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53984419"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54278986"
 ---
 # <a name="organize-work-in-the-new-workspaces-preview-in-power-bi"></a>Organiser arbejde i nye arbejdsområder (prøveversion) i Power BI
 
@@ -43,7 +43,7 @@ I prøveperioden kan gamle og nye arbejdsområder fungere side om side, og du ka
 
 ## <a name="roles-in-the-new-workspaces"></a>Roller i de nye arbejdsområder
 
-Du kan føje brugergrupper eller enkeltpersoner til de nye arbejdsområder som medlemmer, bidragydere eller administratorer. Alle i en brugergruppe får den rolle, du har defineret. Hvis en person er i flere brugergrupper, får personen det højeste tilladelsesniveau, der er angivet af rollen.  Se [Roller i de nye arbejdsområder](#roles-in-the-new-workspaces) senere i denne artikel for at få en forklaring på de forskellige roller.
+Du kan føje brugergrupper eller enkeltpersoner til de nye arbejdsområder som medlemmer, bidragydere eller administratorer. Alle i en brugergruppe får den rolle, du har defineret. Hvis en person er i flere brugergrupper, får personen det højeste tilladelsesniveau, der er angivet af rollen.
 
 Alle de brugere, du føjer til et arbejdsområde, skal have en Power BI Pro-licens. I arbejdsområdet kan disse brugere samarbejde om dashboards og rapporter, som du vil publicere til en større målgruppe eller måske til hele organisationen. Hvis du vil distribuere indhold til andre i din organisation, kan du tildele Power BI Pro-licenser til disse brugere eller anbringe arbejdsområdet i en Power BI Premium-kapacitet.
 
@@ -83,9 +83,7 @@ I prøveperioden kan du ikke automatisk konvertere dine gamle arbejdsområder ti
 
 Når de nye arbejdsområder er offentligt tilgængelige, kan du vælge at overføre de gamle automatisk. På et tidspunkt efter den offentlige tilgængelighed er du nødt til at overføre dem.
 
-## <a name="power-bi-apps-faq"></a>Ofte stillede spørgsmål om Power BI-apps
-
-### <a name="how-are-the-new-workspaces-different-from-current-workspaces"></a>Hvordan adskiller de nye arbejdsområder sig fra de aktuelle arbejdsområder?
+## <a name="how-are-the-new-workspaces-different-from-current-workspaces"></a>Hvordan adskiller de nye arbejdsområder sig fra de aktuelle arbejdsområder?
 
 Med de nye arbejdsområder giver vi nogle af funktionerne et nyt design. Her er de ændringer, du kan forvente bliver permanente sammen med prøveversionen. 
 
@@ -94,6 +92,13 @@ Med de nye arbejdsområder giver vi nogle af funktionerne et nyt design. Her er 
 - Du kan oprette en organisationsindholdspakke ud fra et aktuelt arbejdsområde. Du kan ikke oprette en ud fra de nye arbejdsområder.
 - Du kan forbruge en organisationsindholdspakke ud fra et aktuelt arbejdsområde. Du kan ikke forbruge en fra nye arbejdsområder.
 - I prøveperioden er nogle af funktionerne ikke aktiveret endnu for nye arbejdsområder. I næste afsnit, [Planlagte funktioner for nye arbejdsområder](service-new-workspaces.md#planned-new-workspace-preview-features), kan du finde flere oplysninger.
+
+## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
+
+Begrænsninger, du skal være opmærksom på:
+
+- Arbejdsområder kan indeholde op til 1.000 datasæt eller 1.000 rapporter pr. datasæt. 
+- En person med en Power BI Pro-licens kan være medlem af maks. 250 arbejdsområder.
 
 ## <a name="planned-new-workspace-preview-features"></a>Planlagte funktioner for nye arbejdsområder
 

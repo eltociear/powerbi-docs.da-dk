@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/23/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 92e86817231e959db50af3c32fe8eba761c79a61
-ms.sourcegitcommit: 769ef3c8cbafd9ad5979eb4023a394ac7dba8d02
+ms.openlocfilehash: dd7360761cc78aed9b01eb99165de9f0b4b91ffe
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47448862"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54274760"
 ---
 # <a name="treemaps-in-power-bi"></a>Trækort i Power BI
 Træstrukturer viser hierarkiske data som et sæt af indlejrede rektangler.  Hvert niveau i hierarkiet er repræsenteret af et farvet rektangel (ofte kaldte en "gren"), der indeholder andre rektangler ("blade").  Pladsen inde i hvert rektangel er allokeret ud fra den værdi, der måles. Og rektanglerne er arrangeret efter størrelse fra øverst til venstre (størst) til nederst til højre (mindst).
