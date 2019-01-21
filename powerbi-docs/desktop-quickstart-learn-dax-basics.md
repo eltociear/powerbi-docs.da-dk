@@ -5,17 +5,17 @@ author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-desktop
+ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/27/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: a171dd2aa375f8d12830b051dd8ce6437e4b3236
-ms.sourcegitcommit: a739a99e1006834a0f56e387c0bd9d945fb8a76b
+ms.openlocfilehash: 323391268e930d3b7b2926590f3377b850b65624
+ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51679449"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54282580"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>Grundlæggende DAX i Power BI Desktop
 Denne artikel henvender sig til nye brugere af Power BI Desktop. Hensigten med den er, at du får en hurtig og nem introduktion til, hvordan du kan bruge DAX (Data Analysis Expressions) til at løse en række grundlæggende problemer med beregning og dataanalyse. Vi vil gennemgå nogle grundlæggende oplysninger, en række opgaver, du kan udføre, og et par test for at se, hvad du har lært. Når du har gennemgået denne artikel, bør du have en god forståelse af de vigtigste grundlæggende begreber i DAX.
@@ -33,7 +33,7 @@ Vi vil fokusere på forståelse af DAX-formler, der bruges i beregninger, specie
 
 **Eksempelprojektmappe**
 
-Den bedste måde at lære DAX at kende på er ved at oprette nogle grundlæggende formler, bruge dem med faktiske data og selv se resultaterne. Til eksempler og opgaver her bruges Contoso-salgseksemplet til prøveversionen af Power BI Desktop-filen. Dette er den samme eksempelfil, der blev anvendt i artiklen [Selvstudium: Opret dine egne målinger i Power BI Desktop](desktop-tutorial-create-measures.md). Her er den [eksempelfil](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip), du skal downloade.
+Den bedste måde at lære DAX at kende på er ved at oprette nogle grundlæggende formler, bruge dem med faktiske data og selv se resultaterne. Til eksempler og opgaver her bruges Contoso-salgseksemplet til prøveversionen af Power BI Desktop-filen. Dette er den samme eksempelfil, der bruges i [Selvstudium: Opret dine egne målinger i Power BI Desktop](desktop-tutorial-create-measures.md). Her er den [eksempelfil](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20for%20Power%20BI%20Designer.zip), du skal downloade.
 
 ## <a name="lets-begin"></a>Lad os komme i gang!
 Vi vil basere forståelsen af DAX på tre grundlæggende begreber: *Syntaks*, *Funktioner* og *Kontekst*. Der er naturligvis andre vigtige begreber i DAX, men forståelse af disse tre begreber giver det bedste grundlag til opbygning af dine DAX-færdigheder.
@@ -59,13 +59,13 @@ Formlen inkluderer følgende syntakselementer:
 
 Når du vil prøve at forstå DAX, er det ofte nyttigt at opdele hvert enkelt element i et sprog, som du tænker og taler på hver dag. Du kan f.eks. læse denne formel som:
 
->  *Beregn (=) SUM af værdierne i kolonnen [SalesAmount] i tabellen Sales for den måling, der er navngivet Samlet salg.*
+> *Beregn (=) SUM af værdierne i kolonnen [SalesAmount] i tabellen Sales for den måling, der er navngivet Samlet salg.*
 > 
 > 
 
 Når den føjes til en rapport, beregner og returnerer denne måling værdier ved at sammenlægge salgsbeløb for hver af de andre felter, som er medtaget. f.eks. Cell Phones in the USA (Mobiltelefoner i USA).
 
-Det kan godt være, at du tænker "Udfører denne måling ikke præcis det samme, som hvis jeg bare ville føje feltet SalesAmount til min rapport?" Jo, det gør den. Men der er en god grund til at oprette vores egne måling, der sammenlægger værdier fra feltet SalesAmount: Vi kan bruge den som et argument i andre formler. Det virker muligvis en smule forvirrende lige nu, men i takt med, at dine færdigheder med DAX-formler øges, vil viden om dette gøre dine formler og din model mere effektiv. Senere vil du faktisk kunne se målingen Total Sales blive vist som et argument i andre formler.
+Det kan godt være, at du tænker "Udfører denne måling ikke præcis det samme, som hvis jeg bare ville føje feltet SalesAmount til min rapport?" Jo, det gør den. Men der er en god grund til at oprette vores egne måling, der sammenlægger værdier fra feltet SalesAmount: Vi kan bruge det som et argument i andre formler. Det virker muligvis en smule forvirrende lige nu, men i takt med, at dine færdigheder med DAX-formler øges, vil viden om dette gøre dine formler og din model mere effektiv. Senere vil du faktisk kunne se målingen Total Sales blive vist som et argument i andre formler.
 
 Lad os gennemgå et par andre ting om denne formel. Vi har specielt introduceret en funktion, [SUM](https://msdn.microsoft.com/library/ee634387.aspx). Funktioner er formler, der er skrevet på forhånd, og som gør det nemmere at udføre komplekse beregninger og manipulationer med tal, datoer, tid, tekst og meget mere. Du får mere at vide om funktioner senere.
 
@@ -160,7 +160,7 @@ Det er nemmest at tænke på rækkekontekst som den aktuelle række. Den er rele
 
 **Filterkontekst**
 
-Filterkontekst er lidt sværere at forstå end rækkekontekst. Det er nemmest at tænke på filterkontekst som: Et eller flere filtre, der anvendes i en beregning, som angiver et resultat eller en værdi.
+Filterkontekst er lidt sværere at forstå end rækkekontekst. Det er nemmest at betragte filterkontekst som: Et eller flere filtre i en beregning, der angiver et resultat eller en enkelt værdi.
 
 Filterkontekst bruges ikke i stedet for rækkekontekst, men anvendes i stedet som en tilføjelse til rækkekontekst. Hvis du f.eks. vil foretage yderligere begrænsning af de værdier, der skal inkluderes i en beregning, kan du anvende en filterkontekst, som ikke kun angiver rækkekonteksten, men også kun angiver en bestemt værdi (filter) i denne rækkekontekst.
 
