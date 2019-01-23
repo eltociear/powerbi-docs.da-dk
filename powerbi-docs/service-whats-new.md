@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 32a052ca009c613b262d5277a0fd85b186c8e148
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
+ms.openlocfilehash: acfc4062677a28824458781b900b271bedd51eb8
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406747"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488908"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
@@ -197,7 +197,7 @@ Du kan få alle detaljerne ved at [besøge Power BI-teamets blog](https://powerb
 ***Sikkerhed på rækkeniveau (RLS)***
 
 * Understøttelse af Azure Active Directory (AAD): Brugerne kan nu tildele AAD-grupper (sikkerhedsgrupper og distributionslister) til en rolle. Det gør det lettere at tildele roller til en stor gruppe af brugere på én gang.
-* [Test dine RLS-roller med rapporter, der understøttes af data, der har RLS implementeret](service-admin-rls.md#validating-the-role-within-power-bi-desktop): Vi har tilføjet en funktion i vores RLS-prøveversion, som du kan bruge til at teste dit datasæt som en bestemt rolle. Dette sikrer, at rollen fungerer som forventet, før nogen brugere får fingrene i dit dashboard.
+* [Test dine RLS-roller med rapporter, der understøttes af data, der har RLS implementeret](service-admin-rls.md#validate-the-roles-within-power-bi-desktop): Vi har tilføjet en funktion i vores RLS-prøveversion, som du kan bruge til at teste dit datasæt som en bestemt rolle. Dette sikrer, at rollen fungerer som forventet, før nogen brugere får fingrene i dit dashboard.
 * Definer og anvend RLS på cloudmodeller, der er baseret på direkte forespørgsler: Du kan nu oprette og anvende RLS-regler for datakilder, der er baseret på direkte forespørgsler.
 
 ***Dashboards***
