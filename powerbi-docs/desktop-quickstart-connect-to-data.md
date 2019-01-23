@@ -10,12 +10,12 @@ ms.topic: quickstart
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: quickstart
-ms.openlocfilehash: 4b8cd79eca1711b424d772737b27400f9291cef0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 4d121a469257c79e37212ab0e357bb9ee8be68ec
+ms.sourcegitcommit: 19b4d45db8f55cdbb5d7de0d61f6be5163a2852e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279199"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54420780"
 ---
 # <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Hurtig introduktion: Opret forbindelse til data i Power BI Desktop
 
@@ -39,13 +39,13 @@ Når du har installeret **Power BI Desktop**, skal du starte programmet, så det
 
 ## <a name="connect-to-data"></a>Opret forbindelse til data
 
-Med **Power BI Desktop** kan du oprette forbindelse til mange forskellige typer data. Du kan oprette forbindelse til grundlæggende datakilder, f.eks. en Microsoft Excel-fil, og du kan oprette forbindelse til onlinetjenester, der indeholder alle mulige forskellige slags data, f.eks. Salesforce, Microsoft Dynamics, Azure Blob Storage og meget mere. 
+Med **Power BI Desktop** kan du oprette forbindelse til mange forskellige typer data. Du kan oprette forbindelse til grundlæggende datakilder, f.eks. en Microsoft Excel-fil, og du kan oprette forbindelse til onlinetjenester, der indeholder alle mulige forskellige slags data, f.eks. Salesforce, Microsoft Dynamics, Azure Blob Storage og meget mere.
 
 Hvis du vil oprette forbindelse til data, skal du vælge **Hent data** på båndet **Hjem**.
 
 ![Hent data](media/desktop-quickstart-connect-to-data/qs-connect-data_02.png)
 
-Vinduet **Hent data** vises, og her kan du vælge mellem mange forskellige datakilder, som **Power BI Desktop** kan oprette forbindelse til. I denne hurtige introduktion bruger vi den Excel-projektmappe, som du har downloadet – der er beskrevet i afsnittet *Forudsætninger* i starten af denne artikel. 
+Vinduet **Hent data** vises, og her kan du vælge mellem mange forskellige datakilder, som **Power BI Desktop** kan oprette forbindelse til. I denne hurtige introduktion bruger vi den Excel-projektmappe, som du har downloadet – der er beskrevet i afsnittet *Forudsætninger* i starten af denne artikel.
 
 ![Hent data](media/desktop-quickstart-connect-to-data/qs-connect-data_03.png)
 
@@ -69,10 +69,8 @@ Når du har indlæst tabellerne, vises dataene i ruden **Felter**. Du kan udvide
 
 Det var det hele! Du har oprettet forbindelse til data i **Power BI Desktop**, indlæst disse data, og nu kan du se alle de tilgængelige felter i disse tabeller.
 
-
 ## <a name="next-steps"></a>Næste trin
+
 Der er mange forskellige ting, du kan gøre med **Power BI Desktop**, når du har oprettet forbindelse til data, f.eks. oprette visuelle elementer og rapporter. Tag et kig på følgende ressourcer for at komme i gang:
 
 * [Introduktion til Power BI Desktop](desktop-getting-started.md)
-
-

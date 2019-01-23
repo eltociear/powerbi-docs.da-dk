@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 12/20/2018
-ms.openlocfilehash: f9e33e78a5cd1141a09eaf226f41a3f52aaebab7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 01/17/2018
+ms.openlocfilehash: cd32b644205629ce62579f5a720d486f93073dea
+ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284052"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394727"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -47,7 +47,7 @@ Power BI Embedded er beregnet til ISV'er eller udviklere, der fremstiller progra
 
 Microsoft anbefaler, at virksomheder køber Power BI Premium, en professionel, selvbetjent skybaseret BI-løsning, og at ISV'er køber Power BI Embedded, som er skybaserede integrerede analysekomponenter. Kunder kan dog købe begge produkter uden begrænsning.
 
-Der kan være situationer, hvor en ISV (typisk en større) ønsker at bruge en P SKU for at få adgang til yderligere fordele i den færdigpakkede Power BI-tjenesten i virksomheden såvel som at integrere den i programmer. Nogle virksomheder kan beslutte at bruge A-SKU'er i Azure, hvis de kun er interesserede i at producere line-of-business-programmer og integrere analyser i dem uden interesse for at bruge den færdigpakkede Power BI-tjeneste.
+Der kan være situationer, hvor en ISV (typisk en større) ønsker at bruge en P SKU for at få adgang til yderligere fordele i den færdigpakkede Power BI-tjenesten i virksomheden såvel som at integrere den i programmer. Nogle virksomheder beslutter måske at bruge A SKU'er i Azure, hvis de kun er interesserede i at producere line-of-business-programmer og integrere analyser i dem uden at have interesse i at bruge den færdigpakkede Power BI-tjeneste.
 
 ### <a name="how-many-embed-tokens-can-i-create"></a>Hvor mange integrerede tokens kan jeg oprette?
 
@@ -59,7 +59,7 @@ Med en PRO-licens er integrerede tokens kun beregnet til udviklingstest, så ant
 
 PowerBI.com er en virksomhedsløsning, der indeholder mange funktioner som f.eks. socialt samarbejde, mailabonnement, osv. i en SaaS-ydelse
 
-Power BI Embedded er en række API'er, der er tilgængelige for udviklere til produktionen af integrerede analyseløsninger på en Platform-as-a-Service-tjeneste. I forbindelse med scenarier i relation til integrerede analyser skal PowerBI.com bruges til at hjælpe ISV'er og udviklere med at administrere deres integrerede analyseløsningsindhold og indstillinger på lejerniveau.
+Power BI Embedded er en række API'er, der er tilgængelige for udviklere til produktionen af integrerede analyseløsninger på en Platform-as-a-Service-tjeneste. I forbindelse med scenarier i relation til integrerede analyser hjælper PowerBI.com ISV'er og udviklere med at administrere deres integrerede analyseløsningsindhold og indstillinger på lejerniveau.
 
 Her er en delvis liste over forskelle, som du kan bruge i hver.
 
@@ -106,9 +106,9 @@ Selvom der ikke er nogen skalering nu, så er alle API'erne tilgængelige for sk
 
 Klargøring af en kapacitet (skalering/genoptagelse/oprettelse) kan mislykkes. Den, som kalder klargøringsopkaldet, skal kontrollere en kapacitets ProvisioningState med Få oplysninger om API: [Kapaciteter – Hent oplysninger](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities/getdetails).
 
-### <a name="why-can-i-only-create-pbie-in-a-specific-region"></a>Hvorfor kan jeg kun oprette PBIE i et bestemt område?
+### <a name="can-i-only-create-power-bi-embedded-capacities-in-a-specific-region"></a>Kan jeg kun oprette Power BI Embedded-kapaciteter i et bestemt område?
 
-Du kan kun oprette PBIE-kapaciteter for dit PBI-lejerområder.
+Med [Multi-Geo-funktionen (prøveversion)](embedded-multi-geo.md) kan du købe en [Power BI Embedded-kapacitet](azure-pbie-create-capacity.md) i et andet område end din private lejerplacering i Power BI
 
 ### <a name="how-can-i-find-what-is-my-pbi-tenant-region"></a>Hvordan kan jeg se mit PBI-lejerområde?
 
@@ -157,9 +157,9 @@ Tilgængelige områder (16 – samme områder som Power BI)
 
 ### <a name="what-is-the-authentication-model-for-power-bi-embedded"></a>Hvilken godkendelsesmodel benyttes i Power BI Embedded?
 
-Power BI Embedded vil fortsat bruge Azure AD til godkendelse af master-brugeren (en udpeget Power BI Pro-licenseret bruger), der godkender programmet internt i Power BI.
+Power BI Embedded bruger fortsat Azure AD til godkendelse af masterbrugeren (en udpeget Power BI Pro-licenseret bruger), der godkender programmet internt i Power BI.
 
-Godkendelse og godkendelse af programbrugerne bliver implementeret af ISV'en, ISV'en kan implementere sin egen godkendelse til sine programmer.
+Godkendelsen og autorisationen af programbrugerne bliver implementeret af ISV'en, ISV'en kan implementere sin egen godkendelse til sine programmer.
 
 Hvis du allerede har en Azure AD-lejer, kan du bruge din eksisterende mappe, eller du kan oprette en ny Azure AD-lejer med henblik på at sørge for dit integrerede programindholds sikkerhed.
 
@@ -216,7 +216,7 @@ Power BI Embedded fås gennem Azure.
 
 ### <a name="what-happens-if-i-already-purchased-power-bi-premium-and-now-i-want-some-of-the-benefits-of-power-bi-embedded-in-azure"></a>Hvad sker der, hvis jeg allerede har købt Power BI Premium, og jeg nu vil have nogle af fordelene i Power BI Embedded i Azure?
 
-Kunder vil fortsætte med at betale for alle eksisterende Power BI Premium-køb, indtil udløbet af deres aktuelle aftaleperiode og kan derefter skifte deres Power BI Premium-køb ud efter behov på det pågældende tidspunkt.
+Kunder betaler fortsat for alle eksisterende Power BI Premium-køb, indtil udløbet af deres aktuelle aftaleperiode, og kan derefter skifte deres Power BI Premium-køb ud efter behov på det pågældende tidspunkt.
 
 ### <a name="do-i-still-have-to-buy-power-bi-premium-to-get-access-to-power-bi-embedded"></a>Er jeg stadig nødt til at købe Power BI Premium for at få adgang til Power BI Embedded?
 
@@ -232,7 +232,7 @@ Power BI Embedded fakturerer på en forudsigelig timebaseret rate baseret på ty
 
 ### <a name="who-needs-a-power-bi-pro-license-for-power-bi-embedded-and-why"></a>Hvem har brug for et Power BI Pro-licens til Power BI Embedded og hvorfor?
 
-Det er obligatorisk for alle analytikere, der skal føje rapporter til et Power BI-arbejdsområde, for alle udviklere, der skal bruge REST API'er, for alle lejer-administratorer, der skal administrere Power BI-lejeren og -kapacitet at have en Power BI Pro-licens.
+Alle analytikere, der skal føje rapporter til et Power BI-arbejdsområde, skal have en Power BI-licens. Alle udviklere, der kræver brug af REST API'er, skal bruge en Power BI Pro-licens. Alle lejeradministratorer, der skal administrere Power BI-lejeren og -kapaciteten, skal have en Power BI Pro-licens.
 
 Idet Power BI Embedded tillader brugen af Power BI-portalen til administration og validering af integreret indhold, så er Power BI Pro-licens påkrævet for at godkende App'en internt i PowerBI.com for at få adgang til rapporter i de korrekte lagre.
 
@@ -279,7 +279,7 @@ Ja, men kunder, der allerede bruger **Power BI Workspace Collection**-løsningen
 
 Det betyder dog også, at der ikke føjes nye funktioner til **Power BI Workspace Collection**-løsninger, og at kunder opfordres til at planlægge overførsel af deres data til den nye **Power BI Embedded**-løsning.
 
-### <a name="when-will-power-bi-workspace-collection-support-be-discontinued"></a>Hvornår ophører support til Power BI Workspace Collection?
+### <a name="when-is-power-bi-workspace-collection-support-discontinued"></a>Hvornår ophører support til Power BI Workspace Collection?
 
 Kunder, der allerede bruger **Power BI Workspace Collections**-løsningen, kan fortsætte med at bruge den indtil udgangen af juni 2018 eller indtil udgangen af deres supportaftale.
 

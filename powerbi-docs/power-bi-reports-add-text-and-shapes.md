@@ -1,24 +1,24 @@
 ---
 title: Tekstfelter og figurer i Power BI-rapporter
 description: Dokumentation om at tilføje og oprette tekstbokse og figurer i en rapport ved hjælp af Microsoft Power BI-tjenesten.
-author: mihart
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 featuredvideoid: _3q6VEBhGew
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 03/22/2018
-ms.author: mihart
+ms.date: 01/16/2019
+ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 937e15f5cd56f7c720afa945598f9fc1641468f7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: cf5cecc8df5c1e6c3057cab6eb41e40e934b1510
+ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295529"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "54406540"
 ---
-# <a name="static-content-in-power-bi-reports"></a>Statisk indhold i Power BI-rapporter
+# <a name="text-boxes-and-shapes-power-bi-reports"></a>Tekstfelter og figurer i Power BI-rapporter
 Tekstfelter og figurer kan føjes til rapporter ved hjælp af Power BI-tjenesten og Power BI Desktop. I begge tilfælde skal du have redigeringstilladelser til rapporten. Hvis en rapport er blevet delt med dig i Power BI-tjenesten, har du ikke redigeringstilladelser. 
 
 Se med, når Will bruger Power BI Desktop til at [føje statiske billeder til en rapport](guided-learning/visualizations.yml?tutorial-step=11), og følg derefter nedenstående trin for at prøve det selv ved hjælp af Power BI-tjenesten i stedet.

@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: Conceptual
-ms.date: 12/06/2018
+ms.date: 01/17/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 28dcba5a44da4d0acd8f1b6d0a1bfce655eb46bd
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e648257ecd657b07d02fbff69a3424159b636059
+ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280096"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394672"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Rediger, hvordan et diagram sorteres i en rapport i Power BI
 I en Power BI-rapport kan du sortere de fleste visualiseringer alfabetisk efter navnene på kategorierne i diagrammet eller efter de numeriske værdier for hver kategori. Dette diagram er f.eks. sorteret efter kategorien **lagernavn**.
@@ -33,17 +33,17 @@ Det er nemt at ændre sorteringen fra en kategori (gem navn) til en værdi (salg
    **BEMÆRK**! Det er ikke alle visualiseringer, der kan sorteres.  Følgende visualiseringer kan f.eks, ikke sorteres: træstruktur, kort, udfyldt kort, punktdiagram, måler, kort, kort med flere rækker, vandfaldsdiagram.
 
 ## <a name="saving-changes-you-make-to-sort-order"></a>Gem dine ændringer af sorteringsrækkefølgen
-Power BI-rapporter bevarer filtre, udsnit, sortering og andre ændringer af datavisning. Hvis du navigerer væk fra en rapport og vender tilbage igen senere, er dine ændringer blevet gemt.  Hvis du vil ændre indstillingerne tilbage til de indstillinger, som rapportopretteren oprindeligt valgte, skal du vælge **Nulstil til standard** på den øverste menulinje. 
+Power BI-rapporter bevarer filtre, udsnit, sortering og andre ændringer af datavisning. Hvis du navigerer væk fra en rapport og vender tilbage igen senere, er dine ændringer blevet gemt.  Hvis du vil ændre indstillingerne tilbage til de indstillinger, som rapportens designer oprindeligt valgte, skal du vælge **Nulstil til standard** på den øverste menulinje. 
 
 ![fast sortering](media/end-user-change-sort/power-bi-reset-to-default.png)
 
-Hvis knappen **Nulstil til standard** er nedtonet, betyder det, at rapportens opretter har deaktiveret muligheden for at gemme dine egne ændringer.
+Hvis knappen **Nulstil til standard** er nedtonet, betyder det, at rapportens designer har deaktiveret muligheden for at gemme dine egne ændringer.
 
 <a name="other"></a>
 ## <a name="sorting-using-other-criteria"></a>Sortering ved hjælp af andre kriterier
 Der kan nogle gange være behov for at sortere visuelle elementer med brug af et andet felt eller andre kriterier.  Det kan f.eks. være, at du vil sortere efter måned (og ikke i alfabetisk rækkefølge), eller at du vil sortere efter hele tal i stedet for cifre (f.eks. 0, 1, 9, 20 og ikke 0, 1, 20, 9).  
 
-I nogle tilfælde kan du muligvis sortere det visuelle element på den måde, du ønsker, f.eks. efter måned.  Men er det ikke muligt, kan det være fordi, datasættet bag rapporten skal tilpasses. Bed rapportopretteren om at opdatere datasættet.
+I nogle tilfælde kan du muligvis sortere det visuelle element på den måde, du ønsker, f.eks. efter måned.  Men er det ikke muligt, kan det være fordi, datasættet bag rapporten skal tilpasses. Bed designeren af rapporten om at opdatere datasættet.
 
 ## <a name="next-steps"></a>Næste trin
 Få mere at vide om [Visualiseringer i Power BI-rapporter](end-user-visualizations.md).

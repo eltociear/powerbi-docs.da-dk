@@ -1,6 +1,6 @@
 ---
-title: Ofte stillede spørgsmål til Power BI-forbrugere
-description: Ofte stillede spørgsmål om Power BI
+title: Ofte stillede spørgsmål fra slutbrugeren i Power BI
+description: Gennemse en liste over ofte stillede spørgsmål og svar om Power BI-tjenesten og Power BI-mobilappene.
 author: mihart
 manager: kvivek
 ms.custom: seodec18
@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: b292e6df7cb01e26b610ffb99ec5b794df933bfa
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8eb428857e98a696ffb368c729525acd80e268f2
+ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287555"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394765"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Ofte stillede spørgsmål om Power BI
 * Hvis du har andre spørgsmål, kan du [prøve at spørge Power BI-community'et](http://community.powerbi.com/).
@@ -41,7 +41,7 @@ For spørgsmål knyttet til Power BI Premium henvises til [Power BI Premium – 
 Du kan få vist rapporten over integrerede programmer i Azure Active Directory for Power BI for at se de aktive brugere i din organisation. Azure AD-rapporten indikerer ikke, hvilken type licens brugeren har. Den rapporterer kun, hvilke brugere der har logget på Power BI, og hvornår de loggede på. Du kan finde flere oplysninger i [Find Power BI-brugere, der er logget på](../service-admin-access-usage.md).
 
 ## <a name="what-is-power-bi-desktop"></a>Hvad er Power BI Desktop?
-Power BI Desktop er et gratis skrivebordsprogram, du kan installere direkte på din egen computer. Power BI Desktop fungerer sammenhængende med Power BI-tjenesten ved at levere avanceret datagranskning, shaping, modellering og rapportoprettelse med stærkt interaktive visualiseringer. Du kan gemme dit arbejde på en fil og publicere dine data og rapporter direkte på dit Power BI-websted, hvor de kan deles med andre. Læs mere om [Hvad er Power BI Desktop](../desktop-what-is-desktop.md).
+Power BI Desktop er et gratis program, som brugerne kan installere direkte på deres egen computer. Power BI Desktop fungerer i sammenhæng med Power BI-tjenesten.  Datateknikere, administratorer og udviklere arbejder med Power BI Desktop for at oprette rapporter og gøre dem tilgængelige for brugere af Power BI-tjenesten. Læs mere om [Hvad er Power BI Desktop](../desktop-what-is-desktop.md).
 
 ## <a name="what-do-i-need-to-use-power-bi-service"></a>Hvad kræves der, for at jeg kan bruge Power BI-tjenesten?
 Kun en webbrowser og arbejdsmailadresse. Du kan tilmelde dig med en .gov- og .mil-mailadresse. Du kan finde flere oplysninger i [Tilmeld din US Government-organisation til Power BI-tjenesten](../service-govus-signup.md) 
@@ -49,14 +49,8 @@ Kun en webbrowser og arbejdsmailadresse. Du kan tilmelde dig med en .gov- og .mi
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Hvorfor skal jeg logge på med min arbejdsmail?
 Power BI understøtter ikke mailadresser, der leveres af forbrugermailtjenester eller udbydere af telekommunikation. Få mere at vide om [den selvbetjente tilmeldingsproces til Power BI](../service-self-service-signup-for-power-bi.md).
 
-## <a name="is-power-bi-available-on-premises"></a>Fås Power BI til det lokale miljø?
-Power BI-tjenesten [https://powerbi.com](https://powerbi.com) fås ikke som en privat, intern cloudtjeneste. Men du har tre andre muligheder for at få vist og arbejde med data i det lokale miljø. 
-
-### <a name="on-premises-data-gateway"></a>Datagateway i det lokale miljø
-Du kan bruge Power BI og Power BI Desktop til på sikker vis at oprette forbindelse til dine egne datakilder i det lokale miljø. Du kan bruge [datagateway i det lokale miljø](../service-gateway-onprem.md) til at oprette live-forbindelse til din SQL Server Analysis Services-server i det lokale miljø og andre datakilder. Du kan også indstille en planlagt opdatering med en centraliseret gateway. Hvis en gateway ikke er tilgængelig, kan du opdatere data fra datakilder i det lokale miljø ved hjælp af [Power BI Gateway - Personal](../service-gateway-personal-mode.md).
-
-### <a name="power-bi-mobile-apps"></a>Power BI-mobilapps
-Du kan også få [vist Power BI-rapporter, Reporting Services-mobile rapporter og KPI'er med Power BI-mobilapps](mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md).
+## <a name="is-government-academic-and-nonprofit-pricing-available-for-power-bi"></a>Tilbydes Power BI til en pris for offentlige myndigheder, uddannelsesinstitutioner eller nonprofitorganisationer?
+Ja, en pris til nonprofitorganisationer tilbydes ved køb direkte hos Microsoft. Du kan få mere at vide og tilmelde dig på [Microsoft Nonprofits](https://www.microsoft.com/en-us/nonprofits/power-bi)-webstedet. Priser til offentlige myndigheder og uddannelsesinstitutioner tilbydes gennem MOSP/Direct, EA og åbne licenseringsprogrammer. Priser til offentlige myndigheder fås også i syndikering. 
 
 ## <a name="does-power-bi-support-mobile-devices"></a>Understøtter Power BI mobile enheder?
 Ja. Power BI har oprindelige programmer til Android-telefoner og -tablets, iOS-enheder og Windows 10-enheder. Download en af [Power BI-mobilappsene](https://powerbi.microsoft.com/mobile) fra de respektive butikker:  
@@ -96,6 +90,11 @@ Her er en komplet liste over [områder og sprog, der understøttes af Power BI](
 Du kan købe Power BI Pro-licenser direkte eller chatte med en repræsentant på [www.powerbi.com](http://www.powerbi.com).
 
 Du kan også finde en [Microsoft-partner](https://partner.microsoft.com/), som kan hjælpe dig med at implementere Power BI.
+
+## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>Hvad sker der, hvis min Power BI Pro-licens udløber?
+Der er en respitperiode, efter en Power BI Pro-licens er udløbet. For licenser, der er en del af et volumenlincenskøb, er respitperioden 90 dage. Hvis du har købt licensen direkte, er respitperioden 30 dage.
+
+Power BI Pro har den samme abonnementslivscyklus som Office 365. Du kan finde flere oplysninger under [Hvad sker der med mine data og adgang, når mit abonnement på Office 365 til virksomheder slutter?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
 
 ## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Opfylder Power BI nationale, regionale og branchespecifikke overholdelseskrav?
 Få mere at vide om Power BI-overholdelse i [Microsoft Trust Center](http://go.microsoft.com/fwlink/?LinkId=785324).

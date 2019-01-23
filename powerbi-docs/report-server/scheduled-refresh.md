@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: d4eeebca1505d376a403bf18f125782efb0d656d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 81bd3dc166a92f7be6fe9081f4b88feedc7514d3
+ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283868"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54394744"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Planlagt opdatering af Power BI-rapport på Power BI-rapportserver
 Planlagt opdatering af Power BI-rapporter gør det muligt at holde dataene til en rapport ajourført.
@@ -49,7 +49,7 @@ Der kan ikke oprettes en planlagt opdateringsplan for alle Power BI-rapporter. H
 * Din rapport indeholder en eller flere datakilder, der bruger DirectQuery.
 * Din rapport indeholder ikke nogen datakilder. Dataene er for eksempel indtastet manuelt via *Angiv data*, eller rapporten indeholder kun statisk indhold, som f.eks. billeder, tekst osv.
 
-Udover ovennævnte liste, er der specifikke scenarier med datakilder i *importér*-tilstand, som du ikke kan oprette opdateringsplaner for.
+Ud over ovennævnte liste er der specifikke scenarier med datakilder i tilstanden *Import*, som du ikke kan oprette opdateringsplaner for.
 
 * Hvis der bruges en *fil-* eller en *mappe-* datakilde, og stien til filen er en lokal sti (f.eks. C:\Users\user\Documents), kan der ikke oprettes en opdateringsplan. Stien skal være en sti, som rapportserveren kan oprette forbindelse til som en netværksshare. Eksempelvis  *\\myshare\Documents*.
 * Hvis der kan oprettes forbindelse til datakilden udelukkende ved hjælp af OAuth (f.eks. Facebook, Google Analytics, Salesforce osv.), kan der ikke oprettes en cacheopdateringsplan. For øjeblikket understøtter RS ikke OAuth-godkendelse for nogen datakilder, om det så er sideinddelte eller mobile rapporter eller Power BI-rapporter.
