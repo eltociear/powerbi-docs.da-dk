@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3fa76b19e187f7a27dc8b9268dad4d9b5ab8f101
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f7e8d58e5fd738e5da678723ef239f5303be5070
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286375"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838456"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion til organisationsindholdspakker i Power BI
 > [!NOTE]
@@ -41,8 +41,6 @@ Disse dashboards, rapporter og Excel-projektmapper er skrivebeskyttede, men du k
 Publicering af en organisationsindholdspakke føjer den til AppSource.  Dette centraliserede lager gør det nemt for medlemmer at gennemse og fremsøge dashboards, rapporter og datasæt, der er publiceret til dem.  
 
 * Hvis du vil have vist AppSource, skal du vælge **Hent data** > **Min organisation** > **Hent**.
-
-Læs mere om at [finde og åbne organisationsindholdspakker](consumer/end-user-content-pack.md).
 
 ## <a name="the-life-cycle-of-an-organizational-content-pack"></a>Livscyklus for en organisationsindholdspakke
 Alle Power BI Pro-brugere kan oprette, publicere og få adgang til organisationsindholdspakkerne. Kun vedkommende, der har oprettet indholdspakken, kan redigere projektmappen og datasættet, planlægge opdatering og slette den.
