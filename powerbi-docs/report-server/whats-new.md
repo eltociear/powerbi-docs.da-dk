@@ -8,31 +8,47 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 08/16/2018
-ms.openlocfilehash: 91179ca37b8ba5c883785501588c9b12a02d644d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 01/22/2019
+ms.openlocfilehash: 2a65baf94abcb79dac7bb9419ad67124f2b65bb8
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292447"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488931"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 
 Læs om nyheder i Power BI-rapportserver. I denne artikel beskrives de primære funktionsområder, og den opdateres, når der udgives nye elementer.
 
-Hvis du vil downloade Power BI-rapportserver og Power BI Desktop optimeret til Power BI-rapportserver, skal du gå til [Rapportering i det lokale miljø med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
-
-Kontrollér også disse kilder for at holde dig ajour med nye funktioner i Power BI-rapportserveren.
-
-* [Microsoft Power BI-blog](https://powerbi.microsoft.com/blog/)
-* [SQL Server Reporting Services-teamets blog](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
-* [Guy in a Cube YouTube-kanal](https://aka.ms/guyinacube)
+Du kan downloade de nyeste versioner af Power BI-rapportserver og Power BI Desktop, der er optimeret til Power BI-rapportserver, ved at gå til [Rapportering i det lokale miljø med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
 
 Du kan finde relaterede oplysninger om nyheder i Power BI under:
 
 * [Nyheder i Power BI-tjenesten](../service-whats-new.md)
 * [Nyheder i Power BI Desktop](../desktop-latest-update.md)
 * [Nyheder i mobilappsene til Power BI](../consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)
+
+## <a name="january-2019"></a>Januar 2019
+
+Understøttelse af disse funktioner i Power BI-rapporter:
+
+[**Sikkerhed på rækkeniveau**](row-level-security-report-server.md) Konfiguration af sikkerhed på rækkeniveau med Power BI-rapportserver kan begrænse adgang til datakilder for bestemte brugere. Filtre begrænser adgangen til data på rækkeniveau, og du kan definere filtre inden for roller.
+
+[**Udvid og skjul i matrixrækkeoverskrifter**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#expandCollapse) Vi har tilføjet muligheden for at udvide eller skjule enkelte rækkeoverskrifter, hvilket er en af de visuelle funktioner, der har været mest efterspurgt.
+
+[**Kopiér og indsæt mellem .pbix-filer**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste) Du kan kopiere visuelle elementer mellem .pbix-filer enten fra genvejsmenuen for det visuelle element eller med standardtastaturgenvejen Ctrl + C og indsætte dem i en anden rapport med Ctrl + V.
+
+[**Smarte justeringshjælpelinjer**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) De smarte justeringshjælpelinjer vises, når du flytter objekter på rapportsiden, f.eks. som i PowerPoint, så du kan justere alt på siden. Du kan se de smarte justeringshjælpelinjer, hver gang du trækker eller ændrer størrelsen på noget på siden. Når du flytter et objekt i nærheden af et andet, fastgøres det i en position, der er justeret i forhold til det andet objekt.
+
+**Tilgængelighedsfunktioner** Der er for mange tilgængelighedsfunktioner til at vise dem allesammen: f.eks. [understøttelse af tilgængelighed til ruden med listen over felter](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). Ruden med listen over felter er fuldt tilgængelig. Du kan navigere rundt i ruden ved blot at bruge tastaturet og en skærmlæser, og du kan bruge genvejsmenuen til at føje felter til din rapportside.
+
+### <a name="administrator-settings"></a>Administratorindstillinger
+
+Administratorer kan angive følgende egenskaber for serverfarmen under Avancerede egenskaber i SSMS:
+
+**AllowedResourceExtensionsForUpload** Et sæt udvidelser til ressourcer, der kan uploades til rapportserveren. Udvidelser til indbyggede filtyper som &ast;.rdl og &ast;.pbix behøver ikke at være inkluderet. Standarden er "&ast;, &ast;.xml, &ast;.xsd, &ast;.xsl, &ast;.png, &ast;.gif, &ast;.jpg, &ast;.tif, &ast;.jpeg, &ast;.tiff, &ast;.bmp, &ast;.pdf, &ast;.svg, &ast;.rtf, &ast;.txt, &ast;.doc, &ast;.docx, &ast;.pps, &ast;.ppt, &ast;.pptx ". 
+
+**SupportedHyperlinkSchemes** Angiver en kommasepareret liste over de URI-skemaer, der kan defineres i de linkhandlinger, der har tilladelse til at blive gengivet, eller "&ast;" for at aktivere alle linkskemaer. Indstillingen "http, https" tillader f.eks. link til "https://www. contoso.com", men ville fjerne link til "mailto:bill@contoso.com" eller "javascript:window.open(‘www.contoso.com’, ‘_blank’)". Standarden er "&ast;".
 
 ## <a name="august-2018"></a>August 2018
 
@@ -325,10 +341,10 @@ Power BI-rapportserver understøtter nu de nye Power BI-tabel- og matrixvisuals.
 
 ## <a name="next-steps"></a>Næste trin
 
-[Hvad er Power BI-rapportserveren?](get-started.md) 
-[Administratorhåndbog](admin-handbook-overview.md)  
-[Installer Power BI-rapportserver](install-report-server.md)  
-[Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+Kontrollér disse kilder for at holde dig ajour med nye funktioner i Power BI-rapportserver.
+
+* [Microsoft Power BI-blog](https://powerbi.microsoft.com/blog/)
+* [SQL Server Reporting Services-teamets blog](https://blogs.msdn.microsoft.com/sqlrsteamblog/)
+* [Guy in a Cube YouTube-kanal](https://aka.ms/guyinacube)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

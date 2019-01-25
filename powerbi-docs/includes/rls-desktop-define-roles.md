@@ -1,16 +1,16 @@
-## <a name="define-roles-and-rules-within-power-bi-desktop"></a>Definer roller og regler i Power BI Desktop
-Du kan definere roller og regler i Power BI Desktop. Når du publicerer til Power BI, publicerer det også rolledefinitionerne.
+## <a name="define-roles-and-rules-in-power-bi-desktop"></a>Definer roller og regler i Power BI Desktop
+Du kan definere roller og regler i Power BI Desktop. Når du publicerer til Power BI, publiceres rolledefinitionerne også.
 
-Følg nedenstående trin for at definere sikkerhedsroller.
+Følg disse trin for at definere sikkerhedsroller.
 
 1. Importér data til din Power BI Desktop-rapport, eller konfigurer en DirectQuery-forbindelse.
    
    > [!NOTE]
-   > Du kan ikke definere roller i Power BI Desktop for dynamiske forbindelser til Analysis Services. Det skal du gøre i Analysis Services-modellen.
+   > Du kan ikke definere roller i Power BI Desktop for direkte forbindelser til Analysis Services. Det skal du gøre i Analysis Services-modellen.
    > 
    > 
-2. Vælg fanen **Modellering**.
-3. Vælg **Administrer roller**.
+1. Vælg fanen **Modellering**.
+2. Vælg **Administrer roller**.
    
    ![](./media/rls-desktop-define-roles/powerbi-desktop-security.png)
 4. Vælg **Opret**.
@@ -21,7 +21,7 @@ Følg nedenstående trin for at definere sikkerhedsroller.
 7. Angiv DAX-udtrykkene. Dette udtryk skal returnere true eller false. Eksempel: [Entity ID] = “Value”.
    
    > [!NOTE]
-   > Du kan bruger *username()* i udtrykket. Vær opmærksom på, at *username()* har formatet *DOMÆNE\brugernavn* i Power BI Desktop. I Power BI-tjenesten vil det være i formatet af brugerens UPN. Du kan alternativt bruge *userprincipalname()*, som altid returnerer brugeren i formatet af brugerens hovednavn (UPN).
+   > Du kan bruger *username()* i udtrykket. Vær opmærksom på, at *username()* har formatet *DOMÆNE\brugernavn* i Power BI Desktop. I Power BI-tjenesten og Power BI-rapportserver har det format som brugerens eget hovednavn. Du kan også bruge *userprincipalname()*, som altid returnerer brugeren i samme format som brugerens hovednavn *username@contoso.com*.
    > 
    > 
    
@@ -31,5 +31,5 @@ Følg nedenstående trin for at definere sikkerhedsroller.
    ![](./media/rls-desktop-define-roles/powerbi-desktop-security-validate-dax.png)
 9. Vælg **Gem**.
 
-Du kan ikke tildele brugere til en rolle i Power BI Desktop. Det skal gøres i Power BI-tjenesten. Du kan aktivere dynamisk sikkerhed i Power BI Desktop ved at bruge DAX-funktionen *username()* eller *userprincipalname()* og have konfigureret de relevante relationer.
+Du kan ikke tildele brugere til en rolle i Power BI Desktop. Dem tildeler du i Power BI-tjenesten. Du kan aktivere dynamisk sikkerhed i Power BI Desktop ved at bruge DAX-funktionen *username()* eller *userprincipalname()* og have konfigureret de relevante relationer. 
 

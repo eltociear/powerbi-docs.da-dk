@@ -9,18 +9,41 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
 ms.author: jtarquino
-ms.openlocfilehash: edf953f2512550660fd914d2fe54c28dcd01fa24
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 18a2d6833f0013f95ac0a5dea5f1930e5b666dd6
+ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292014"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54488862"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
 Denne ændringslog er for Power BI-rapportserver, og den viser nye elementer sammen med fejlrettelser til hvert frigivet build.
 
 Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder i Power BI-rapportserver](whats-new.md). 
+
+## <a name="january-2019"></a>Januar 2019
+- **Power BI-rapportserver**            
+    - *Version 1.4.6960.38798 (Build 15.0.1102.222), udgivet: 22. januar, 2019*
+        - Funktioner
+            - Power BI-rapporter 
+                - Understøttelse af sikkerhed på rækkeniveau
+                - Udvid og skjul i matrixrækkeoverskrifter
+                - Kopiér og indsæt mellem .pbix-filer
+                - Smarte justeringshjælpelinjer
+                - Understøttelse af SAP BW 2.0 Connector
+            - Administratorer
+                - Mulighed for at begrænse udvidelser til ressourcer, der kan uploades til rapportserveren
+                - Mulighed for at begrænse understøttede linkskemaer
+        - Fejlrettelser
+            - Sikkerhedsrisiko ved HTML-indskydelse
+            - Eksport til PDF-fil viser ikke Euro-symbolet
+            - Lagring af en adgangskode med flere datakilder i Power BI-rapporter gør adgangskoder, der ikke er blevet ændret, ugyldige
+            - Problemer med visning af visuelle elementer i Power BI-mobilappen
+
+- **Power BI Desktop (optimeret til Power BI-rapportserver)**
+    - *Version: 2.65.5313.1421 (januar 2019), udgivet: 22. januar, 2019*
+        - Indeholder ændringer, der er påkrævet for at oprette forbindelse til Power BI-rapportserver (januar 2019)  
 
 ## <a name="august-2018"></a>August 2018
 - **Power BI-rapportserver**
