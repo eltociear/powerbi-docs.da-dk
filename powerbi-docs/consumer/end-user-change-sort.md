@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: Conceptual
-ms.date: 01/17/2019
+ms.date: 01/19/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: e648257ecd657b07d02fbff69a3424159b636059
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
+ms.openlocfilehash: 4fd49c3279c47139a0e15fbcc4729f39b0a59b78
+ms.sourcegitcommit: 54907bb59a5c31b25d368d83a0c4faa5e2f0db66
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394672"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54838272"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Rediger, hvordan et diagram sorteres i en rapport i Power BI
 I en Power BI-rapport kan du sortere de fleste visualiseringer alfabetisk efter navnene på kategorierne i diagrammet eller efter de numeriske værdier for hver kategori. Dette diagram er f.eks. sorteret efter kategorien **lagernavn**.
@@ -30,7 +30,8 @@ Det er nemt at ændre sorteringen fra en kategori (gem navn) til en værdi (salg
 
    ![video viser valg af Sortér efter og derefter stigende, faldende](media/end-user-change-sort/sort.gif)
 
-   **BEMÆRK**! Det er ikke alle visualiseringer, der kan sorteres.  Følgende visualiseringer kan f.eks, ikke sorteres: træstruktur, kort, udfyldt kort, punktdiagram, måler, kort, kort med flere rækker, vandfaldsdiagram.
+> [!NOTE]
+> Det er ikke alle visualiseringer, der kan sorteres. Følgende visualiseringer kan f.eks, ikke sorteres: træstruktur, kort, udfyldt kort, punktdiagram, måler, kort, kort med flere rækker, vandfaldsdiagram.
 
 ## <a name="saving-changes-you-make-to-sort-order"></a>Gem dine ændringer af sorteringsrækkefølgen
 Power BI-rapporter bevarer filtre, udsnit, sortering og andre ændringer af datavisning. Hvis du navigerer væk fra en rapport og vender tilbage igen senere, er dine ændringer blevet gemt.  Hvis du vil ændre indstillingerne tilbage til de indstillinger, som rapportens designer oprindeligt valgte, skal du vælge **Nulstil til standard** på den øverste menulinje. 
