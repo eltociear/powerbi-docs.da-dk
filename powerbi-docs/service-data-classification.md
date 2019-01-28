@@ -63,7 +63,7 @@ Dataklassificering er konfigureret af den globale administrator i din organisati
 1. Vælg tandhjulsikonet for Indstillinger, og vælg **Administrationsportal**.
    
     ![](media/service-data-classification/admin_portal_in_settings.png)
-2. Slå **Dataklassificering for dashboards og rapporter***Til* på fanen **Lejerindstillinger**.
+2. Slå **Dataklassificering for dashboards og rapporter** *Til* på fanen **Lejerindstillinger**.
    
     ![](media/service-data-classification/data_classification_switch_location.png)
 

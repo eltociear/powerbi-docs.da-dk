@@ -64,7 +64,7 @@ Power BI vælger, hvilken mail der bruges, på baggrund af følgende sekvens:
 
 1. Hvis mailattributten i Azure AD-lejerens brugerobjekt er til stede, så bruger Power BI denne mailattribut til mailadressen.
 
-1. Hvis UPN-mailen *ikke* er en mailadresse på domænet **\*.onmicrosoft.com** (oplysningerne efter "@"-symbolet), så bruger Power BI denne mailattribut til mailadressen.
+1. Hvis UPN-mailen *ikke* er en mailadresse på domænet **\*.onmicrosoft.com** (oplysningerne efter "\@"-symbolet), så bruger Power BI denne mailattribut til mailadressen.
 
 1. Hvis matrixattributten for *anden mailadresse* i Azure AD-brugerobjektet er til stede, så bruges den første mail på denne liste (da der kan være en liste over mails i denne attribut).
 
