@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: 4bc704eb5aeb2bf6da18a43a6d4502b5541ce249
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: eea6fe12fdd8821c803863b63ede93179bf67f07
+ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287893"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899244"
 ---
 # <a name="on-premises-data-gateway"></a>Datagateway i det lokale miljø
 
@@ -96,7 +96,9 @@ Når du føjer en datakilde til gatewayen, skal du angive legitimationsoplysning
 
 ## <a name="tenant-level-administration"></a>Administration på lejerniveau
 
-Der er i øjeblikket ikke ét enkelt sted, hvor lejeradministratorer kan administrere alle de gateways, som andre brugere har installeret og konfigureret.  Hvis du er en lejeradministrator, anbefaler vi, at du beder brugerne i din organisation om at tilføje dig som administrator af hver enkelt gateway, de installerer. Dette gør det muligt for dig at administrere alle gateways i din organisation via siden Indstillinger for Gateway eller en via [PowerShell-kommandoer](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters). 
+Som lejeradministrator kan du se alle de datagateways i det lokale miljø, som er installeret i din lejer, og administrere dem. Denne funktion er i øjeblikket i offentlig prøveversion. Du kan finde flere oplysninger i [dokumentationen til Power Platform-administration](/power-platform/admin/onpremises-data-gateway-management).
+
+Hvis du er lejeradministrator, anbefaler vi, at du beder brugerne i din organisation om at tilføje dig som administrator for hver enkelt af de gateways, de installerer. Dette gør det muligt for dig at administrere alle gateways i din organisation via siden Indstillinger for Gateway eller en via [PowerShell-kommandoer](service-gateway-high-availability-clusters.md#powershell-support-for-gateway-clusters). 
 
 ## <a name="enabling-outbound-azure-connections"></a>Aktivér udgående Azure-forbindelser
 
