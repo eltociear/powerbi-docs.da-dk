@@ -1,6 +1,6 @@
 ---
-title: Kom i gang med Power BI-tjenesten (Power BI online)
-description: Kom i gang med Power BI online (app.powerbi.com)
+title: Kom i gang med Power BI-tjenesten
+description: Kom i gang med Power BI-onlinetjenesten (app.powerbi.com)
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,20 +8,20 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/22/2018
+ms.date: 01/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 2a033e6893cffb71c4a898f1260aca615ae4e4b8
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 06b60e5d493532efbdb49932ace48897e17961c1
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291969"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147490"
 ---
-# <a name="tutorial-get-started-with-power-bi-service-apppowerbicom"></a>Selvstudium: Kom i gang med Power BI-tjenesten (app.powerbi.com)
-Dette selvstudium hjælper dig med at komme i gang med ***Power BI-tjenesten***. Hvis du vil have et overblik over, hvordan Power BI-tjenesten passer sammen med de andre Power BI-tilbud, anbefaler vi kraftigt, at du starter med at læse [Hvad er Power BI](power-bi-overview.md).
+# <a name="tutorial-get-started-with-the-power-bi-service-apppowerbicom"></a>Selvstudium: Kom i gang med Power BI-tjenesten (app.powerbi.com)
+Dette selvstudium hjælper dig med at komme i gang med ***Power BI-tjenesten***. Hvis du vil have en forståelse af, hvordan Power BI-tjenesten passer sammen med de andre Power BI-tilbud, anbefaler vi, at du starter med at læse [Hvad er Power BI](power-bi-overview.md).
 
-![kunst, der viser relationen mellem Desktop, tjeneste, mobil](media/service-get-started/power-bi-components.png)
+![figur, der viser relationen mellem Power BI Desktop, tjenesten, mobil](media/service-get-started/power-bi-components.png)
 
 I dette selvstudium kan du udføre følgende trin:
 
@@ -35,25 +35,25 @@ I dette selvstudium kan du udføre følgende trin:
 > * Tilføj en anden visualisering til dit dashboard ved hjælp af værktøjet Spørgsmål og svar i naturligt sprog
 > * Fjern ressourcer ved at slette datasæt, rapport og dashboard
 
-## <a name="sign-up-for-power-bi-service"></a>Tilmeld dig Power BI-tjeneste
+## <a name="sign-up-for-the-power-bi-service"></a>Tilmeld dig Power BI-tjenesten
 Hvis du ikke er tilmeldt [Power BI](https://app.powerbi.com/signupredirect?pbi_source=web), kan du tilmelde dig en gratis prøveversion af Power BI Pro, før du begynder.
 
-Du skal åbne en browser og skrive app.powerbi.com for at åbne Power BI-tjenesten, hvis du allerede har en konto. 
+Hvis du allerede har en konto, skal du åbne en browser og skrive app.powerbi.com for at åbne Power BI-tjenesten. 
 
 ![Log på, eller tilmeld dig gratis](media/service-get-started/power-bi-sign-up.png)
 
-Hvis du ønsker hjælp til Power BI Desktop, kan du se [Kom i gang med Desktop](desktop-getting-started.md). Hvis du ønsker hjælp til Power BI – Mobil, kan du se [Power BI-mobilapps til mobilenheder](consumer/mobile/mobile-apps-for-mobile-devices.md).
+Hvis du har brug for hjælp til Power BI Desktop, kan du se [Kom i gang med Power BI Desktop](desktop-getting-started.md). Hvis du ønsker hjælp til Power BI – Mobil, kan du se [Power BI-mobilapps til mobilenheder](consumer/mobile/mobile-apps-for-mobile-devices.md).
 
 > [!TIP]
 > Foretrækker du i stedet et gratis kursus i dit eget tempo? [Deltag i vores kursus om analyse og visualisering af data på EdX](http://aka.ms/edxpbi).
 
-Besøg vores [afspilningsliste på YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP). En god video at starte med er Introduktion til Power BI-tjenesten:
+Besøg vores [afspilningsliste på YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP). Videoen Introduktion til Power BI-tjenesten er god at starte med:
 > 
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 > 
 
-## <a name="what-is-power-bi-service"></a>Hvad er Power BI-tjeneste?
-Microsoft Power BI-tjenesten kaldes nogle gange også Power BI online eller app.powerbi.com. Med Power BI kan du holde dig ajour med de oplysninger, der er vigtige for dig.  Med Power BI-tjenesten hjælper ***dashboards*** dig med at holde styr på din virksomhed.  Dine dashboards viser ***felter***, som du kan klikke på for at åbne ***rapporter***, der skal udforskes yderligere.  Opret forbindelse til flere ***datasæt*** for at samle alle relevante data på ét sted. Har brug for hjælp til at forstå de komponenter, der udgør Power BI?  Se [Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md).
+## <a name="what-is-the-power-bi-service"></a>Hvad er Power BI-tjenesten?
+Microsoft Power BI-tjenesten kaldes nogle gange også Power BI online eller app.powerbi.com. Power BI hjælper dig med at holde dig ajour med de oplysninger, der er vigtige for dig.  Med Power BI-tjenesten hjælper ***dashboards*** dig med at holde styr på din virksomhed.  Dine dashboards viser ***felter***, som du kan klikke på for at åbne ***rapporter***, der skal udforskes yderligere.  Opret forbindelse til flere ***datasæt*** for at samle alle relevante data på ét sted. Har brug for hjælp til at forstå de komponenter, der udgør Power BI?  Se [Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md).
 
 Hvis du har vigtige data i Excel- eller CSV-filer, kan du oprette et Power BI-dashboard for at holde dig opdateret, uanset hvor du er, og dele indsigt med andre.  Har du et abonnement på en SaaS-app som for eksempel Salesforce?  Kom godt i gang ved at oprette forbindelse til Salesforce og automatisk oprette et dashboard ud fra disse data, eller [tjek alle de andre SaaS-apps](service-get-data.md), du kan oprette forbindelse til. Hvis du er en del af en organisation, kan du se, om der er publiceret [apps](service-create-distribute-apps.md) til dig.
 
@@ -87,7 +87,7 @@ Her er et eksempel på at hente data fra en CSV-fil. Har du lyst til at deltage 
 
     ![Indstillingen Læsevisning](media/service-get-started/power-bi-editing-view.png)
 
-    Når du er Redigeringsvisning, kan du oprette og redigere dine egne rapporter, fordi du er *ejer* af rapporten altså en *opretter*. Når du deler din rapport med kollegaer, kan de kun interagere med rapporten i Læsevisning, da de er *forbrugere*. Få mere at vide om [Læsevisning og Redigeringsvisning](consumer/end-user-reading-view.md).
+    Når du er Redigeringsvisning, kan du oprette og redigere dine rapporter, fordi du er *ejer* af rapporten, dvs. du er *forfatter*. Når du deler din rapport med kollegaer, kan de kun interagere med rapporten i Læsevisning, da de er *forbrugere*. Få mere at vide om [Læsevisning og Redigeringsvisning](consumer/end-user-reading-view.md).
     
     En glimrende måde at blive fortrolig med rapporteditoren på er at [få en introduktion](service-the-report-editor-take-a-tour.md)
    > 
@@ -104,11 +104,11 @@ Nu hvor du har forbindelse til data, kan du begynde at udforske.  Vi har fundet 
    
    ![rapporteditor med valgt ikon](media/service-get-started/gettingstart5new.png)
 
-3. Det ser interessant ud, så lad os *fastgøre* det til et dashboard. Peg på visualiseringen med musen, og vælg **ikonet med tegnestiften**.  Når du fastgør denne visualisering, gemmes den på dashboardet og holdes opdateret, så du kan spore den seneste værdi på et øjeblik.
+3. Dette diagram ser interessant ud, så lad os *fastgøre* det til et dashboard. Peg på visualiseringen med musen, og vælg **ikonet med tegnestiften**.  Når du fastgør denne visualisering, gemmes den på dashboardet og holdes opdateret, så du kan spore den seneste værdi på et øjeblik.
    
    ![tegnestiftikon](media/service-get-started/pinnew.png)
 
-4. Da det er en ny rapport, skal du gemme den, før du kan fastgøre en visualisering på et dashboard. Giv din rapport et navn (f.eks. *Salg over tid*), og vælg **Gem og fortsæt**. 
+4. Da denne rapport er ny, bliver du bedt om at gemme den, før du kan fastgøre en visualisering på et dashboard. Giv din rapport et navn (f.eks. *Salg over tid*), og vælg **Gem og fortsæt**. 
    
    ![Dialogboksen Gem rapport](media/service-get-started/pbi_getstartsaveb4pinnew.png)
    
@@ -118,7 +118,7 @@ Nu hvor du har forbindelse til data, kan du begynde at udforske.  Vi har fundet 
    
 1. Vælg **Fastgør**.
    
-    En meddelelse om fuldførelse (næsten helt oppe i højre hjørne) giver dig besked om, at visualiseringen er blevet føjet til dit dashboard som et felt.
+    En meddelelse om fuldførelse (i nærheden af øverste højre hjørne) giver dig besked om, at visualiseringen blev føjet til dit dashboard som et felt.
    
     ![Fastgjort til dashboarddialogboks](media/service-get-started/power-bi-pin-success.png)
 
@@ -126,7 +126,7 @@ Nu hvor du har forbindelse til data, kan du begynde at udforske.  Vi har fundet 
    
    ![Dashboard med fastgjort visualisering](media/service-get-started/power-bi-new-dashboard.png)
    
-   Vælg det nye felt på dashboardet for til enhver tid at vende tilbage til rapporten. Power BI vender tilbage til rapporteditoren i Læsevisning. Hvis du vil skifte tilbage til Redigeringsvisning, skal du vælge **Rediger rapport** på den øverste menulinje. Når du er i Redigeringsvisning, kan du fortsætte med at udforske og fastgøre felter. 
+   Vælg det nye felt på dashboardet for vende tilbage til rapporten når som helst. Power BI vender tilbage til rapporteditoren i Læsevisning. Hvis du vil skifte tilbage til Redigeringsvisning, skal du vælge **Rediger rapport** på den øverste menulinje. Når du er i Redigeringsvisning, kan du fortsætte med at udforske og fastgøre felter. 
 
 ## <a name="step-3--continue-the-exploration-with-qa-natural-language-querying"></a>Trin 3:  Fortsæt med at udforske via Spørgsmål og svar (forespørgsel på naturligt sprog)
 1. Hvis du vil foretage en hurtig udforskning af dine data, kan du prøve at stille et spørgsmål i feltet Spørgsmål og svar. Feltet Spørgsmål og svar er placeret øverst i dit dashboard (**stil et spørgsmål om dataene**) og i den øverste menulinje i din rapport (**stil et spørgsmål**). Prøv for eksempel at skrive "hvilket segment havde den største omsætning".

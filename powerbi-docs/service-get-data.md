@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/02/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a45ddbef861ad29f5823edee213b12af068d48eb
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 26c7c1b428f513fe2b79a3377085004506412604
+ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277221"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899290"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakilder til Power BI-tjenesten
 Dataene er i hjertet af Power BI. Når du udforsker data, opretter diagrammer og dashboards, stiller spørgsmål med Spørgsmål og svar, får alle disse visualiseringer og svar, som du ser, rent faktisk deres underliggende data fra et datasæt. Men hvor kommer dette datasæt fra? Fra en datakilde.
@@ -29,7 +29,7 @@ Du kan hente data fra enhver af disse datakilder i Power BI ved at klikke på **
 ## <a name="files"></a>Filer
 ![](media/service-get-data/pbi_getdata_files.png)
 
-**Excel** (.xlsx, xlxm) – Excel er unikt, i og med at en projektmappe kan indeholde både data, du selv har lagt ind i regneark, og du kan forespørge på og indlæse data fra eksterne datakilder ved hjælp af Power-forespørgsel (Hent og omdan i Excel 2016) eller Power Pivot. Du kan importere data, der er i tabellerne i regneark (dataene *skal* være i en tabel), eller importere data, der er indlæst i en datamodel. Du kan få flere oplysninger i [Hent data fra Excel](service-get-data-from-files.md).
+**Excel** (.xlsx, .xlsm) – Excel er unikt, i og med at en projektmappe kan indeholde både data, du selv har lagt ind i regneark, og du kan forespørge på og indlæse data fra eksterne datakilder ved hjælp af Power-forespørgsel (Hent og transformér i Excel 2016) eller Power Pivot. Du kan importere data, der er i tabellerne i regneark (dataene *skal* være i en tabel), eller importere data, der er indlæst i en datamodel. Du kan få flere oplysninger i [Hent data fra Excel](service-get-data-from-files.md).
 
 **Power BI Desktop** (.pbix) – Du kan bruge Power BI Desktop til at forespørge på og indlæse data fra eksterne datakilder, udvide din datamodel med målinger og relationer samt oprette rapporter. Du kan importere din Power BI Desktop-fil til dit Power BI-websted. Power BI Desktop er bedst til mere erfarne brugere, der har en god forståelse af deres datakilder, dataforespørgsel og omdannelse samt datamodelleringsbegreber. Du kan finde flere oplysninger i [Opret forbindelse til data i Power BI Desktop](desktop-connect-to-data.md).
 

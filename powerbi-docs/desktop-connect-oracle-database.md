@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: dc26d6de5ca22fdabfd80bd7ba1d9830e274f808
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 826338a5e5524bb54c2ebb2207a3d438a8d428b1
+ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284489"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899221"
 ---
 # <a name="connect-to-an-oracle-database"></a>Opret forbindelse til en Oracle-database
 Hvis du vil oprette forbindelse til en Oracle-database med **Power BI Desktop**, skal den korrekte Oracle-klientsoftware være installeret på den computer, der kører Power BI Desktop. Hvilken Oracle-klientsoftware du bruger, afhænger af, hvilken version af Power BI Desktop du har installeret – **32-bit** versionen eller **64-bit** versionen.
@@ -51,3 +51,11 @@ Når den rette Oracle-klientdriver er installeret, kan du oprette forbindelse ti
 4. Når dine oplysninger til Oracle-databasen er angivet i dialogboksen Oracle-database (herunder alle valgfrie oplysninger som f.eks. et SID eller en oprindelig databaseforespørgsel), skal du vælge **OK** for at oprette forbindelse.
 5. Hvis Oracle-databasen kræver brugeroplysninger til databasen, skal du angive disse legitimationsoplysninger i dialogboksen, når du bliver bedt om det.
 
+
+## <a name="troubleshooting"></a>Fejlfinding
+
+Hvis du har downloadet Power BI Desktop via Microsoft Store, kan du muligvis ikke oprette forbindelse til Oracle-databaser på grund af et problem med en Oracle-driver. Hvis du oplever dette problem, returneres fejlmeddelelsen "Objektreferencen er ikke angivet". Du kan løse problemet ved at gøre et af følgende:
+
+* Download i stedet Power BI Desktop fra https://powerbi.microsoft.com/desktop.
+
+* Hvis du vil bruge versionen fra Microsoft Store: Kopiér oraons.dll fra _12.X.X\client_X_ til _12.X.X\client_X\bin_ på din lokale computer. X repræsenterer versions- og mappetal.

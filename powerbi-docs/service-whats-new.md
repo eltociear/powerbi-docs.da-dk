@@ -10,23 +10,23 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: acfc4062677a28824458781b900b271bedd51eb8
-ms.sourcegitcommit: 2c49a7cee9c77f46830ddfa59fdedbf30186d389
+ms.openlocfilehash: ed519f920fc872c8f13d5a10d59ce0f2f531f2fc
+ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54488908"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55147559"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
 Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner i **Power BI-tjenesten**. Du kan finde relaterede oplysninger om nyheder under:
 
+- Produktbemærkninger til [Nyheder i business intelligence, oktober '18 ](https://docs.microsoft.com/business-applications-release-notes/October18/intelligence-platform/planned-features) fra gruppen Microsoft Business Applications: De seneste opdateringer til vores virksomhedsprogrammer.
 - [Nyheder i Power BI Desktop](desktop-latest-update.md)  
 - [Nyheder i mobilappsene til Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md)  
 - [Power BI-temaets blog](https://powerbi.microsoft.com/blog/)
-- [Produktbemærkninger til virksomhedsprogrammer i foråret '18](http://aka.ms/businessappsreleasenotes) fra Dynamics 365: De seneste opdateringer til vores virksomhedsprogrammer samt nye funktioner, så du kan bygge dine egne programmer og udvidelser til vores platform. 
 
-Du kan også tjekke YouTube-kanalerne for at få mere at vide om nyheder og funktioner.
+Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
