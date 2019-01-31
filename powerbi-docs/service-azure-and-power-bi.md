@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/26/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 8717e4938ef558eb4bb8c0614990b651d2b59c28
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 142096ca30422549227ddc1dc2d07e129e22e9af
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277704"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430872"
 ---
 # <a name="azure-and-power-bi"></a>Azure og Power BI
 
@@ -55,7 +55,7 @@ Du kan udvide lige så meget, du har brug for, med Azure og i Power BI. Benyt di
 
 ## <a name="context-insights-with-power-bi-embedded-analytics"></a>Kontekstindsigt med Power BI Embedded-analyse
 
-Integrer flotte, interaktive datavisualiseringer i programmer, websteder, portaler m.m. for at udnytte dine forretningsdata. Hvis du bruger [Power BI Embedded som en ressource i Azure](https://azure.microsoft.com/services/power-bi-embedded/), kan du nemt integrere interaktive rapporter og dashboards, så dine brugere får ensartede oplevelser af høj kvalitet på tværs af enheder.  Power BI, der bruges sammen med integreringsanalyser, skal hjælpe dig med at komme gennem Data -> Viden -> Indsigt -> Handlinger.  Derudover kan du også få mere ud af Power BI og Azure ved at integrere analyser i [organisationens interne programmer og portaler](https://powerbi.microsoft.com/en-us/developers/embedded-analytics/organization/).
+Integrer flotte, interaktive datavisualiseringer i programmer, websteder, portaler m.m. for at udnytte dine forretningsdata. Hvis du bruger [Power BI Embedded som en ressource i Azure](https://azure.microsoft.com/services/power-bi-embedded/), kan du nemt integrere interaktive rapporter og dashboards, så dine brugere får ensartede oplevelser af høj kvalitet på tværs af enheder.  Power BI, der bruges sammen med integreringsanalyser, skal hjælpe dig med at komme gennem Data -> Viden -> Indsigt -> Handlinger.  Derudover kan du også få mere ud af Power BI og Azure ved at integrere analyser i [organisationens interne programmer og portaler](https://powerbi.microsoft.com/developers/embedded-analytics/organization/).
 
 Der er mange oplysninger om Power BI-API'er på [Power BI-udviklerportalen](http://dev.powerbi.com).
 

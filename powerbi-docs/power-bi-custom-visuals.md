@@ -10,16 +10,16 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/18/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cac436c97515f6b6f7b6cfc110469615e7afc4c6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1ebb9633451ab8e2f1b8cbf8ada743ce6c42692e
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289259"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431125"
 ---
 # <a name="custom-visuals-in-power-bi"></a>Brugerdefinerede visualiseringer i Power BI
 
-Når du opretter eller redigerer en Power BI-rapport, er der mange forskellige tilgængelige visualiseringstyper, du kan bruge. Disse visualiseringer vises i ruden **Visualiseringer**. Når du downloader [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) eller åbner [Power BI-tjenesten](https://app.powerbi.com), får du dette sæt "forudpakkede" visualiseringer med.
+Når du opretter eller redigerer en Power BI-rapport, er der mange forskellige tilgængelige visualiseringstyper, du kan bruge. Disse visualiseringer vises i ruden **Visualiseringer**. Når du downloader [Power BI Desktop](https://powerbi.microsoft.com/desktop/) eller åbner [Power BI-tjenesten](https://app.powerbi.com), får du dette sæt "forudpakkede" visualiseringer med.
 
 ![visualiseringer](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
@@ -48,16 +48,16 @@ Hvis du vil have flere oplysninger om brugerdefinerede visualiseringer til virks
 
 ## <a name="marketplace-visuals"></a>Visualiseringer på markedspladser
 
-Medlemmer af community'et og Microsoft har bidraget med deres brugerdefinerede visualiseringer til offentlig brug og udgivet dem på [AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals)-markedspladsen. Disse visualiseringer kan downloades og føjes til Power BI-rapporter. Alle disse brugerdefinerede visualiseringer er blevet testet og godkendt af Microsoft ift. funktionalitet og kvalitet.
+Medlemmer af community'et og Microsoft har bidraget med deres brugerdefinerede visualiseringer til offentlig brug og udgivet dem på [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals)-markedspladsen. Disse visualiseringer kan downloades og føjes til Power BI-rapporter. Alle disse brugerdefinerede visualiseringer er blevet testet og godkendt af Microsoft ift. funktionalitet og kvalitet.
 
-Hvad er [AppSource](developer/office-store.md)? Det er det sted, hvor du finder apps, tilføjelsesprogrammer og udvidelser til din Microsoft-software. [AppSource](https://appsource.microsoft.com/en-us/) forbinder millioner af brugere af produkter som Office 365, Azure, Dynamics 365, Cortana og Power BI med løsninger, der kan hjælpe dem med at arbejde mere effektivt, med større indsigt eller smukkere end før.
+Hvad er [AppSource](developer/office-store.md)? Det er det sted, hvor du finder apps, tilføjelsesprogrammer og udvidelser til din Microsoft-software. [AppSource](https://appsource.microsoft.com/) forbinder millioner af brugere af produkter som Office 365, Azure, Dynamics 365, Cortana og Power BI med løsninger, der kan hjælpe dem med at arbejde mere effektivt, med større indsigt eller smukkere end før.
 
 ### <a name="certified-visuals"></a>Certificerede visualiseringer
 
 Certificerede Power BI-visualiseringer er visualiseringer på markedspladser, der har bestået yderligere strenge test ift. kvalitet, og understøttes i yderligere scenarier, f.eks. [mailabonnementer](https://docs.microsoft.com/power-bi/service-report-subscribe) og [eksport til PowerPoint](https://docs.microsoft.com/power-bi/service-publish-to-powerpoint).
 Hvis du vil have vist en liste over certificerede brugerdefinerede visualiseringer eller indsende dine egne, skal du se under [Certificerede brugerdefinerede visualiseringer](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified).
 
-Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til AppSource? Se under [Udvikling af en brugerdefineret visualisering i Power BI](developer/custom-visual-develop-tutorial.md), og få mere at vide om, hvordan du [publicerer brugerdefinerede visualiseringer i AppSource](https://appsource.microsoft.com/en-us/marketplace/apps?product=power-bi-visuals).
+Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til AppSource? Se under [Udvikling af en brugerdefineret visualisering i Power BI](developer/custom-visual-develop-tutorial.md), og få mere at vide om, hvordan du [publicerer brugerdefinerede visualiseringer i AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals).
 
 ### <a name="import-a-custom-visual-from-a-file"></a>Importér en brugerdefineret visualisering fra en fil
 
@@ -135,7 +135,7 @@ Du har to valgmuligheder for download og import af brugerdefinerede visualiserin
 
     ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
-2. Gå til [siden med appresultater](https://appsource.microsoft.com/en-us/marketplace/apps), hvor du kan få vist de mest populære apps i hver kategori, herunder *Power BI-apps*. Men vi leder efter brugerdefinerede visualiseringer, så lad os indskrænke resultaterne ved at vælge **Power BI-visualiseringer** på listen i navigationsruden til venstre.
+2. Gå til [siden med appresultater](https://appsource.microsoft.com/marketplace/apps), hvor du kan få vist de mest populære apps i hver kategori, herunder *Power BI-apps*. Men vi leder efter brugerdefinerede visualiseringer, så lad os indskrænke resultaterne ved at vælge **Power BI-visualiseringer** på listen i navigationsruden til venstre.
 
     ![AppSource-visualiseringer](media/power-bi-custom-visuals/power-bi-appsource-visuals.png)
 

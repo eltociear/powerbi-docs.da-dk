@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 660f76b5bf04f742d435df928e068e434ca70531
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e8e27c55cdcd85fd9f88a3b1ad425829cfa9cf0d
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281982"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430596"
 ---
 # <a name="basic-concepts-for-power-bi-service-consumers"></a>Grundlæggende koncepter for ***forbrugere*** af Power BI-tjenesten
 
@@ -37,7 +37,7 @@ Du kommer i gang ved blot at åbne en browser og skrive **app.powerbi.com**. Fø
 ![Velkomstskærm til Power BI-tjenesten](media/end-user-basic-concepts/power-bi-open.png)
 
 I takt med at du bruger Power BI, kan du tilpasse det, du ser, når du åbner webstedet.  Nogle personer foretrækker for eksempel, at Power BI åbner med startsiden, mens andre har et favoritdashboard, de vil have vist først. Bare rolig – vi lærer dig, hvordan du gør. 
-- [Start (forhåndsvisning)](https://powerbi.microsoft.com/en-us/blog/introducing-power-bi-home-and-global-search)    
+- [Start (forhåndsvisning)](https://powerbi.microsoft.com/blog/introducing-power-bi-home-and-global-search)    
 - [Angiv indhold som **udvalgt**](end-user-featured.md) 
 
 ![viser siden Hjem og dashboard](media/end-user-basic-concepts/power-bi-first.png)

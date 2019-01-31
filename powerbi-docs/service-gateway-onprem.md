@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 06/05/2018
-ms.openlocfilehash: eea6fe12fdd8821c803863b63ede93179bf67f07
-ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
+ms.openlocfilehash: f477cbd5f2d767333c16a43308b4793527665806
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899244"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430780"
 ---
 # <a name="on-premises-data-gateway"></a>Datagateway i det lokale miljø
 
@@ -91,7 +91,7 @@ Når du føjer en datakilde til gatewayen, skal du angive legitimationsoplysning
 
 * [Azure Information Protection](https://docs.microsoft.com/microsoft-365/enterprise/protect-files-with-aip
 ) understøttes ikke i øjeblikket.
-* [Access Online](https://products.office.com/en-us/access) understøttes ikke i øjeblikket.
+* [Access Online](https://products.office.com/access) understøttes ikke i øjeblikket.
 * R-scripts understøttes kun, når gatewayen køres i personlig tilstand.
 
 ## <a name="tenant-level-administration"></a>Administration på lejerniveau
@@ -102,7 +102,7 @@ Hvis du er lejeradministrator, anbefaler vi, at du beder brugerne i din organisa
 
 ## <a name="enabling-outbound-azure-connections"></a>Aktivér udgående Azure-forbindelser
 
-Datagatewayen i det lokale miljø bruger Azure Service Bus til cloudforbindelsen og opretter tilsvarende udgående forbindelser til det tilknyttede Azure-område. Som standard er dette placeringen af din Power BI-lejer. Se [Hvor er min Power BI-lejer placeret?](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-where-is-my-tenant-located/)
+Datagatewayen i det lokale miljø bruger Azure Service Bus til cloudforbindelsen og opretter tilsvarende udgående forbindelser til det tilknyttede Azure-område. Som standard er dette placeringen af din Power BI-lejer. Se [Hvor er min Power BI-lejer placeret?](https://powerbi.microsoft.com/documentation/powerbi-admin-where-is-my-tenant-located/)
 Hvis en firewall blokerer udgående forbindelser, skal du konfigurere firewallen for at tillade udgående forbindelser fra datagatewayen i det lokale miljø til det tilknyttede Azure-område. Se [Microsoft Azure Datacenter IP-områder](https://www.microsoft.com/download/details.aspx?id=41653) for at få oplysninger om IP-adresseintervallet for hvert Azure-datacenter.
 > [!NOTE]
 > IP-adresseområderne kan ændres over tid, så sørg for, at du downloader de nyeste oplysninger med jævne mellemrum. 

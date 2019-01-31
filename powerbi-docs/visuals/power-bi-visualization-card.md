@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/26/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2bd35e5c2bc92ee660a9524754a3daef95e6e83d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 164385fc232774999a21e1870b02fcb59b74ad50
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275795"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430182"
 ---
 # <a name="card-visualizations"></a>Kortvisualiseringer
 Nogle gange er et enkelt tal det vigtigste, du vil finde frem til på dit Power BI-dashboard eller i din Power BI-rapport som f.eks. salg i alt, markedsandel fra år til år eller salgsmuligheder i alt. Denne type visualisering kaldes et *kort*. Som med næsten alle de oprindelige Power BI-visualiseringer kan kort oprettes ved hjælp af rapporteditoren eller Spørgsmål og svar.
@@ -49,7 +49,7 @@ I denne vejledning bruges Retail Analysis Sample (Eksempel på detailhandelsanal
 
 
 ## <a name="create-a-card-from-the-qa-question-box"></a>Opret et kort fra feltet til spørgsmål i Spørgsmål og svar
-Feltet til spørgsmål er den nemmeste måde at oprette et kort på. Feltet til spørgsmål i Spørgsmål og svar er tilgængeligt i Power BI-tjenesten fra et dashboard eller en rapport og i desktop-rapportvisning. Nedenstående trin beskriver oprettelsen af et kort fra et dashboard i Power BI-tjenesten. Hvis du gerne vil oprette et kort ved hjælp af Spørgsmål og svar i Power BI Desktop, [skal du følge denne vejledning](https://powerbi.microsoft.com/en-us/blog/power-bi-desktop-december-feature-summary/#QandA) for at få prøveversionen af Spørgsmål og svar til Desktop-rapporter.
+Feltet til spørgsmål er den nemmeste måde at oprette et kort på. Feltet til spørgsmål i Spørgsmål og svar er tilgængeligt i Power BI-tjenesten fra et dashboard eller en rapport og i desktop-rapportvisning. Nedenstående trin beskriver oprettelsen af et kort fra et dashboard i Power BI-tjenesten. Hvis du gerne vil oprette et kort ved hjælp af Spørgsmål og svar i Power BI Desktop, [skal du følge denne vejledning](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#QandA) for at få prøveversionen af Spørgsmål og svar til Desktop-rapporter.
 
 1. Opret et [dashboard](../service-dashboards.md), og [hent data](../service-get-data.md). I dette eksempel bruges [eksemplet Opportunity Analysis](../sample-opportunity-analysis.md).
 

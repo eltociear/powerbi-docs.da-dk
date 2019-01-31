@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 76027ff6e75071fde178ae05a8656c1596d36598
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 627a94097d4235f39414c1165ac8cbbc806508a3
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291688"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430047"
 ---
 # <a name="how-to-make-your-excel-data-work-well-with-qa-in-power-bi"></a>Sådan får du dine Excel-data til at fungere godt med Spørgsmål og svar i Power BI
 Hvis du opretter datamodeller eller opbygger Excel-projektmapper, der skal bruges med Power BI, skal du læse videre...
@@ -34,7 +34,7 @@ Spørgsmål og svar er afhængig af navnene på tabeller, kolonner og beregnede 
 
 Her er nogle tip til at få mest ud af Spørgsmål og svar i din projektmappe.
 
-* Kontrollér, at dine data er i en Excel-tabel. Her er oplysninger om, [hvordan du opretter en Excel-tabel](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-e81aa349-b006-4f8a-9806-5af9df0ac664?ui=en-US&rs=en-US&ad=US).
+* Kontrollér, at dine data er i en Excel-tabel. Her er oplysninger om, [hvordan du opretter en Excel-tabel](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-e81aa349-b006-4f8a-9806-5af9df0ac664).
 * Kontrollér, at navnene på tabellerne, kolonnerne og de beregnede felter giver mening i naturlig tale.
   
   Hvis du for eksempel har en tabel med salgsdata, skal du kalde tabellen "Sales". Kolonnenavne som eksempelvis "Year", "Product", "Sales Rep og "Amount" fungerer godt sammen med Spørgsmål og svar.

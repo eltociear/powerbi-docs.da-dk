@@ -9,18 +9,18 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.author: mshenhav
-ms.openlocfilehash: 2d43fe5e0248d3876f70878bbbe8a1c9b6387df7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: a99d18d424421949ede9bacd5642235b04170659
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278900"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430895"
 ---
 # <a name="explore-your-data-in-the-power-bi-mobile-app-on-your-apple-watch"></a>Udforsk dine data i Power BI-mobilappen på dit Apple Watch
 Med Power BI-appen til Apple Watch kan du få vist KPI'er og kortfelter fra dine Power BI-dashboards direkte på uret. KPI'er og kortfelter egner sig bedst til at give en impulsmåling på den lille skærm. Du kan opdatere et dashboard fra din iPhone eller selve uret.
 
 ## <a name="install-the-apple-watch-app"></a>Installér Apple Watch-appen
-Power BI-appen til Apple Watch leveres sammen med Power BI-appen til iOS, så når du [downloader Power BI-appen til din iPhone](http://go.microsoft.com/fwlink/?LinkId=522062 "Download iPhone-appen") fra Apples App Store, downloader du også automatisk Power BI-appen til Apple Watch. Apple-vejledningen forklarer, hvordan du [installerer Apple Watch-apps](https://support.apple.com/en-us/HT204784).
+Power BI-appen til Apple Watch leveres sammen med Power BI-appen til iOS, så når du [downloader Power BI-appen til din iPhone](http://go.microsoft.com/fwlink/?LinkId=522062 "Download iPhone-appen") fra Apples App Store, downloader du også automatisk Power BI-appen til Apple Watch. Apple-vejledningen forklarer, hvordan du [installerer Apple Watch-apps](https://support.apple.com/HT204784).
 
 ## <a name="use-the-power-bi-app-on-the-apple-watch"></a>Brug Power BI-appen på Apple Watch
 Find Power BI-appen til Apple Watch fra urets startskærm eller ved at klikke på Power BI-widgetten (hvis den er konfigureret) direkte fra urskiven.
@@ -69,7 +69,7 @@ Du kan også vise et bestemt Power BI-felt direkte på urskiven på dit Apple Wa
 Power BI-widgetten til Apple Watch opdaterer kort tid efter, dine data opdateres, så de oplysninger, du skal bruge, altid er opdateret.
 
 ### <a name="add-a-power-bi-widget-to-your-watch-face"></a>Føj en Power BI-widget til urskiven
-Se [Tilpas urskiven på dit Apple Watch](https://support.apple.com/en-us/HT205536) i Apple-vejledningen.
+Se [Tilpas urskiven på dit Apple Watch](https://support.apple.com/HT205536) i Apple-vejledningen.
 
 ### <a name="change-the-text-on-the-widget"></a>Rediger teksten på widgetten
 Grundet den begrænsede plads på urskiven kan du med Power BI-appen til Apple Watch ændre titlen på widgetten, så den passer ind på den begrænsede plads.

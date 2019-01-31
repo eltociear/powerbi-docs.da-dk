@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: mblythe
 LocalizationGroup: Get started
-ms.openlocfilehash: f39912f5813f67ed65afde10a0e157385e98b7b7
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
+ms.openlocfilehash: c02ce0a92e258055edf906cf17730fec56bcb450
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406609"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430757"
 ---
 # <a name="microsoft-flow-and-power-bi"></a>Microsoft Flow og Power BI
 
-[Microsoft Flow](https://flow.microsoft.com/en-us/documentation/getting-started) er en SaaS til automatisering af arbejdsprocesser på tværs af det stigende antal programmer og tjenester, erhvervsbrugere er afhængige af. Med Flow kan du automatisere opgaver ved at integrere dine foretrukne apps og tjenester (herunder Power BI) for at få meddelelser, synkronisere filer, indsamle data og meget mere. Gentagne opgaver bliver nemme med automatisering af arbejdsprocessen.
+[Microsoft Flow](https://flow.microsoft.com/documentation/getting-started) er en SaaS til automatisering af arbejdsprocesser på tværs af det stigende antal programmer og tjenester, erhvervsbrugere er afhængige af. Med Flow kan du automatisere opgaver ved at integrere dine foretrukne apps og tjenester (herunder Power BI) for at få meddelelser, synkronisere filer, indsamle data og meget mere. Gentagne opgaver bliver nemme med automatisering af arbejdsprocessen.
 
 [Kom i gang med at bruge Flow nu.](https://flow.microsoft.com/documentation/getting-started)
 
@@ -31,7 +31,7 @@ Se, hvordan Sirui opretter et Flow, der sender en detaljeret mail til kollegaer,
 ## <a name="create-a-flow-that-is-triggered-by-a-power-bi-data-alert"></a>Opret et flow, der udløses af databeskeder i Power BI
 
 ### <a name="prerequisites"></a>Forudsætninger
-Denne vejledning viser, hvordan du opretter to forskellige flows; et fra en skabelon og et fra bunden. Hvis du vil følge med, [skal du oprette en databesked i Power BI](service-set-data-alerts.md), oprette en gratis Slack-konto og [tilmelde dig Microsoft Flow](https://flow.microsoft.com/en-us/#home-signup) (det er gratis!).
+Denne vejledning viser, hvordan du opretter to forskellige flows; et fra en skabelon og et fra bunden. Hvis du vil følge med, [skal du oprette en databesked i Power BI](service-set-data-alerts.md), oprette en gratis Slack-konto og [tilmelde dig Microsoft Flow](https://flow.microsoft.com/#home-signup) (det er gratis!).
 
 ## <a name="create-a-flow-that-uses-power-bi---from-a-template"></a>Opret et flow, der bruger Power BI – fra en skabelon
 I denne opgave skal vi bruge en skabelon til at oprette et enkelt flow, der udløses af en databesked i Power BI (meddelelse).
@@ -108,7 +108,7 @@ I denne opgave skal vi oprette et enkelt flow fra bunden, der udløses af en dat
     ![Flowet udløser en Outlook-meddelelse](media/service-flow-integration/power-bi-flow-notice.png)
 
 ## <a name="next-steps"></a>Næste trin
-* [Kom i gang med Microsoft Flow](https://flow.microsoft.com/en-us/documentation/getting-started/)
+* [Kom i gang med Microsoft Flow](https://flow.microsoft.com/documentation/getting-started/)
 * [Indstil databeskeder i Power BI-tjenesten](service-set-data-alerts.md)
 * [Indstil databeskeder på din iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)
 * [Indstil databeskeder i Power BI-mobilappen til Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)

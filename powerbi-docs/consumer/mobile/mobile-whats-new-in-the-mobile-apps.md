@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: mshenhav
-ms.openlocfilehash: b7301d46279d9b975a07b07506c023e19437631b
-ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
+ms.openlocfilehash: 771b7361efaea436d67c26ee05741f6dc3eba810
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54324037"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431240"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -37,15 +37,15 @@ Rapporter med den nye "moderne visuelle overskrift" skal ikke længere bruge pla
 
 ### <a name="enhance-presentation-mode-windows"></a>Få bedre præsentationstilstand (Windows)
 
-Forbedret præsentationstilstand til Surface Hub- og Windows 10-enheder.  Få glæde af en forbedret oplevelse med mødelokaler i Surface Hub med forbedrede præsentations- og samarbejdsværktøjer samt en optimeret Chromeless-visning på en stor skærm, så du kan fokusere på dine data. Præsentationstilstand indeholder også værktøjer som håndskrift, der på en effektiv måde hjælper dig med at præsentere og drøfte dine data. Læs mere om præsentationstilstand [her](https://powerbi.microsoft.com/en-us/blog/presentation-mode-in-power-bi-windows-app/).
+Forbedret præsentationstilstand til Surface Hub- og Windows 10-enheder.  Få glæde af en forbedret oplevelse med mødelokaler i Surface Hub med forbedrede præsentations- og samarbejdsværktøjer samt en optimeret Chromeless-visning på en stor skærm, så du kan fokusere på dine data. Præsentationstilstand indeholder også værktøjer som håndskrift, der på en effektiv måde hjælper dig med at præsentere og drøfte dine data. Læs mere om præsentationstilstand [her](https://powerbi.microsoft.com/blog/presentation-mode-in-power-bi-windows-app/).
 
 ### <a name="portrait-report-layout-in-tablets-ios-and-android"></a>Stående layout af rapporter på tablets (iOS og Android)
 
-Vi bruger nu telefonlayout for rapporter, når dette findes, så du kan se rapporter på din tablet i stående layout. Læs mere om, [hvordan du opretter telefonlayout i Power BI-tjenesten eller Power BI Desktop](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report/).
+Vi bruger nu telefonlayout for rapporter, når dette findes, så du kan se rapporter på din tablet i stående layout. Læs mere om, [hvordan du opretter telefonlayout i Power BI-tjenesten eller Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-create-phone-report/).
 
 ### <a name="supporting-report-query-string"></a>Understøttelse af forespørgselsstrenge i rapporten 
 
-Hvis du åbner et rapportlink, der indeholder en forespørgselsstreng, åbnes det nu i mobilappen og bliver filtreret på forhånd på baggrund af de betingelser, der er defineret i forespørgselsstrengen. Få mere at vide om, [hvordan du opretter en URL-adresse for en rapport med en forespørgselsstreng](https://docs.microsoft.com/en-us/power-bi/service-url-filters/).  
+Hvis du åbner et rapportlink, der indeholder en forespørgselsstreng, åbnes det nu i mobilappen og bliver filtreret på forhånd på baggrund af de betingelser, der er defineret i forespørgselsstrengen. Få mere at vide om, [hvordan du opretter en URL-adresse for en rapport med en forespørgselsstreng](https://docs.microsoft.com/power-bi/service-url-filters/).  
 
 ### <a name="shared-credentials-now-in-android"></a>Delte legitimationsoplysninger (nu i Android)
 
@@ -65,7 +65,7 @@ Handlingsmenuen for visualiseringer i rapporten (...) indeholder nu muligheden f
 
 Sideinddelte rapporter er nu tilgængelige i Power BI-tjenesten. Brugere med adgang til sideinddelte rapporter i Power BI-tjenesten kan også få adgang til disse rapporter fra deres mobilapp. 
 
-Læs Power BI-[blogindlægget om sideinddelte rapporter på mobilenheder](https://powerbi.microsoft.com/en-us/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/).
+Læs Power BI-[blogindlægget om sideinddelte rapporter på mobilenheder](https://powerbi.microsoft.com/blog/power-bi-paginated-reports-also-available-in-power-bi-mobile-apps-preview/).
 
 ### <a name="shared-credentials-ios"></a>Delte legitimationsoplysninger (iOS)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/30/2018
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 02b98d807ccc84aa83826ae5e9eecdbdd1987a91
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: ca035762f16d2e8e6c7ffb59220a2457daf10545
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008574"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430803"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Opret forbindelse til Salesforce med Power BI
 Med Power BI kan du kan nemt oprette forbindelse til din konto på Salesforce.com. Når du opretter denne forbindelse, hentes dine data, du får automatisk et dashboard og rapporter baseret på dine data.
@@ -60,11 +60,9 @@ Du kan ændre dette dashboard for at få vist dine data, som du ønsker. Du kan 
 
 **Hvad nu?**
 
-* Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
-* [Rediger felterne](service-dashboard-edit-tile.md) i dashboardet <<<<<<< HEAD
-* [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport =======
+* Prøv at [stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboardet
+* [Rediger felterne](service-dashboard-edit-tile.md) i dashboardet
 * [Vælg et felt](service-dashboard-tiles.md) for at åbne den underliggende rapport
->>>>>>> 66fe62d8f200efd9cfeb465eeb5f370dbbaa63be
 * Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
 ## <a name="system-requirements-and-considerations"></a>Systemkrav og overvejelser

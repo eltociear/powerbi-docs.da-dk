@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi - developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: d09312ecf462e557ef33851d9d2b1f91ec936dae
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 7bb805877cf2e7453148d667f863cbbc8b01ee52
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54289204"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430711"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Administrer flere lejere med Power BI Embedded-analyse
 
@@ -29,7 +29,7 @@ I denne artikel beskrives og analyseres de forskellige tilgange i forhold til fl
 
 ## <a name="concepts-and-terminology"></a>Koncepter og terminologi
 
-**[AAD](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)** – Azure Active Directory.
+**[AAD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)** – Azure Active Directory.
 
 **AAD-program** – en programidentitet i AAD. Der kræves et AAD-program til godkendelse.
 
@@ -105,7 +105,7 @@ Power BI Embedded understøtter Multi-Geo-installation (prøveversion). [Multi-G
 
 ### <a name="cost"></a>Omkostning
 
-[Power BI Embedded](https://azure.microsoft.com/en-us/services/power-bi-embedded/) har en ressourcebaseret købsmodel på samme måde som **Power BI Premium**. Du kan købe en eller flere kapaciteter med fast beregningskapacitet og hukommelse. Denne kapacitet er det vigtigste omkostningselement, når du arbejder med **Power BI Embedded**. Der er ingen grænse for antallet af brugere, der benytter kapaciteten. Den eneste begrænsning er ydeevnen for kapaciteten. En [Power BI Pro-licens](../service-admin-licensing-organization.md) er påkrævet for hver *masterbruger* eller bestemte brugere, der skal have adgang til Power BI-portalen.
+[Power BI Embedded](https://azure.microsoft.com/services/power-bi-embedded/) har en ressourcebaseret købsmodel på samme måde som **Power BI Premium**. Du kan købe en eller flere kapaciteter med fast beregningskapacitet og hukommelse. Denne kapacitet er det vigtigste omkostningselement, når du arbejder med **Power BI Embedded**. Der er ingen grænse for antallet af brugere, der benytter kapaciteten. Den eneste begrænsning er ydeevnen for kapaciteten. En [Power BI Pro-licens](../service-admin-licensing-organization.md) er påkrævet for hver *masterbruger* eller bestemte brugere, der skal have adgang til Power BI-portalen.
 
 Vi anbefaler, at du tester og måler den forventede belastning på din kapacitet ved at simulere livemiljøet og forbruget og køre belastningstest i kapaciteten. Du kan måle belastningen og ydeevnen med de forskellige målepunkter, der er tilgængelige i Azure-kapaciteten eller [Premium-appen Capacity Metrics](../service-admin-premium-monitor-capacity.md).
 
@@ -132,17 +132,17 @@ Der er to primære metoder til at administrere lejerens data.
 
 Hvis SaaS-programlageret indeholder en separat database pr. lejer, er det naturlige valg at bruge datasæt med en enkelt lejer i Power BI med forbindelsesstrengen for hvert datasæt, der peger på den tilsvarende database.
 
-Hvis SaaS-programlageret bruger en database med flere lejere for alle lejere, er det er nemt at adskille lejere efter arbejdsområde. Du kan konfigurere databaseforbindelsen til Power BI-datasættet med en parameteriseret databaseforespørgsel, der kun henter den relevante lejers data. Du kan opdatere forbindelsen ved hjælp af [Power BI Desktop](../desktop-query-overview.md) eller ved hjælp af [API'en](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) med [parametre](https://docs.microsoft.com/en-us/rest/api/power-bi/datasets/updateparametersingroup) på forespørgslen.
+Hvis SaaS-programlageret bruger en database med flere lejere for alle lejere, er det er nemt at adskille lejere efter arbejdsområde. Du kan konfigurere databaseforbindelsen til Power BI-datasættet med en parameteriseret databaseforespørgsel, der kun henter den relevante lejers data. Du kan opdatere forbindelsen ved hjælp af [Power BI Desktop](../desktop-query-overview.md) eller ved hjælp af [API'en](https://docs.microsoft.com/rest/api/power-bi/datasets/updatedatasourcesingroup) med [parametre](https://docs.microsoft.com/rest/api/power-bi/datasets/updateparametersingroup) på forespørgslen.
 
 ### <a name="data-isolation"></a>Dataisolation
 
-Dataene i denne lejermodel er adskilt på arbejdsområdeniveau. En enkel tilknytning mellem et arbejdsområde og en lejer forhindrer, at brugere fra én lejer får vist indhold fra en anden lejer. Hvis du bruger en enkelt *masterbruger*, skal du have adgang til alle de forskellige arbejdsområder. Konfigurationen af, hvilke data der skal vises en slutbruger, defineres i løbet af [genereringen af indlejringstokenet](https://docs.microsoft.com/en-us/rest/api/power-bi/embedtoken), en back end-proces, som slutbrugerne ikke kan se eller ændre.
+Dataene i denne lejermodel er adskilt på arbejdsområdeniveau. En enkel tilknytning mellem et arbejdsområde og en lejer forhindrer, at brugere fra én lejer får vist indhold fra en anden lejer. Hvis du bruger en enkelt *masterbruger*, skal du have adgang til alle de forskellige arbejdsområder. Konfigurationen af, hvilke data der skal vises en slutbruger, defineres i løbet af [genereringen af indlejringstokenet](https://docs.microsoft.com/rest/api/power-bi/embedtoken), en back end-proces, som slutbrugerne ikke kan se eller ændre.
 
 Hvis du vil tilføje yderligere isolation, kan en programudvikler definere en *masterbruger* eller et program pr. arbejdsområde i stedet for en enkelt *masterbruger* eller program med adgang til flere arbejdsområder. På den måde kan du sikre, at alle menneskelige fejl eller læk af legitimationsoplysninger ikke medfører, at flere kunders data blotlægges.
 
 ### <a name="scalability"></a>Skalerbarhed
 
-En fordel ved denne model er, at man ved at adskille dataene i flere datasæt for hver lejer omgår [størrelsesbegrænsningerne for et enkelt datasæt](https://docs.microsoft.com/en-us/power-bi/service-premium-large-datasets) (i øjeblikket 10 GB i en kapacitet). Når kapaciteten er overbelastet, [kan den fjerne ubrugte datasæt](../service-premium-understand-how-it-works.md) for at frigøre hukommelse til aktive datasæt. Denne opgave er ikke mulig med et enkelt stort datasæt. Brug af flere datasæt gør det også muligt at opdele lejere i flere Power BI-kapaciteter, hvis det er nødvendigt. [Få mere at vide om, hvordan kapacitet fungerer](../service-admin-premium-manage.md).
+En fordel ved denne model er, at man ved at adskille dataene i flere datasæt for hver lejer omgår [størrelsesbegrænsningerne for et enkelt datasæt](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (i øjeblikket 10 GB i en kapacitet). Når kapaciteten er overbelastet, [kan den fjerne ubrugte datasæt](../service-premium-understand-how-it-works.md) for at frigøre hukommelse til aktive datasæt. Denne opgave er ikke mulig med et enkelt stort datasæt. Brug af flere datasæt gør det også muligt at opdele lejere i flere Power BI-kapaciteter, hvis det er nødvendigt. [Få mere at vide om, hvordan kapacitet fungerer](../service-admin-premium-manage.md).
 
 På trods af disse fordele bør du overveje, hvor meget SaaS-programmet kan rumme i fremtiden. Du kan f.eks. nå begrænsningerne omkring antallet af artefakter, der kan administreres. Se [begrænsninger for udrulninger](#summary-comparison-of-the-different-approaches) senere i denne artikel for at få flere oplysninger. Den kapacitets-SKU, der bruges, introducerer en grænse for størrelsen af den hukommelse, som datasættene er indeholdt i, [hvor mange opdateringer, der kan køre på samme tid,](../service-premium-understand-how-it-works.md) og den maksimale hyppighed af dataopdateringer. Det anbefales at teste, når der administreres hundred- eller tusindvis af datasæt. Det anbefales også at tage højde for det gennemsnitlige forbrug og forbruget ved spidsbelastninger, og om der er nogle bestemte lejere med store datasæt eller forskellige forbrugsmønstre, der administreres anderledes end for andre lejere.
 

@@ -8,12 +8,12 @@ ms.service: powerbi-service
 ms.topic: resource
 ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: f0e81c72fde0275467c3a914d19e916dab604cce
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: 1722c401dfd5d2fdfbba530f440cecf9f1e075f3
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280782"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431263"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordliste til Power BI-tjenesten
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
@@ -70,7 +70,7 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 
 **indholdsliste** Indholdsindekset for en app.
 
-**indholdspakke** En samling af færdigpakkede datasæt, rapporter og dashboards. Oplysninger om **apps**. Få mere at vide [om den nye arbejdsområdeoplevelse](https://docs.microsoft.com/en-us/power-bi/service-create-the-new-workspaces). 
+**indholdspakke** En samling af færdigpakkede datasæt, rapporter og dashboards. Oplysninger om **apps**. Få mere at vide [om den nye arbejdsområdeoplevelse](https://docs.microsoft.com/power-bi/service-create-the-new-workspaces). 
 
 **indholdsvisning**
 

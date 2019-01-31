@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/09/2017
 ms.author: maggies
-ms.openlocfilehash: 2ceb8440cd64b05966caaadc9346771dd28cba82
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8a5382a5e435f916599b05310f89d9b1f0327023
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281223"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430665"
 ---
 # <a name="testing-template-content-packs-for-power-bi"></a>Test af indholdspakkeskabelon til Power BI
 Der er flere måder at teste din indholdspakke på, før du udgiver den.  
@@ -68,7 +68,7 @@ Det anbefales, at navngive dit dashboard, din rapport og dit datasæt ensartet p
 <a name="submission"></a>
 
 ## <a name="submission"></a>Indsendelse
-Indsendelsesprocessen via [Microsoft AppSource](https://appsource.microsoft.com/en-us/partners/list-an-app) giver dig mulighed for at udgive indholdpakkeskabelonen i servicepakkegalleriet i PowerBI.com og angive indholdspakken i [Microsoft AppSource ](http://appsource.microsoft.com).
+Indsendelsesprocessen via [Microsoft AppSource](https://appsource.microsoft.com/partners/list-an-app) giver dig mulighed for at udgive indholdpakkeskabelonen i servicepakkegalleriet i PowerBI.com og angive indholdspakken i [Microsoft AppSource ](http://appsource.microsoft.com).
 
 ### <a name="before-submission"></a>Før indsendelse
 * Gennemse tips til oprettelse for hver af artefakterne i indholdspakken
@@ -77,7 +77,7 @@ Indsendelsesprocessen via [Microsoft AppSource](https://appsource.microsoft.com/
 * Kontrollér, at indholdspakken reagerer korrekt på spørgsmål og svar. Det kan være en god idé at teste mindst 30 forskellige spørgsmål på tværs af datamodellen. Spring dette trin over, hvis du har udviklet din egen brugerdefinerede [dataconnector](https://aka.ms/DataConnectors)
 
 ### <a name="submission"></a>Indsendelse
-Når du er klar til at indsende, skal du gå til [siden Indsendelse af apps](https://appsource.microsoft.com/en-us/partners/list-an-app) på AppSource og indsende dine oplysninger. Sørg for at vælge Power BI på listen over tilgængelige produkter
+Når du er klar til at indsende, skal du gå til [siden Indsendelse af apps](https://appsource.microsoft.com/partners/list-an-app) på AppSource og indsende dine oplysninger. Sørg for at vælge Power BI på listen over tilgængelige produkter
 
 Power BI-teamet gennemser din indsendelse og kontakter dig for at sikre, at alle artefakter opfylder indsendelseskravene. Ud over fuldførelse valideres kvaliteten af de leverede dashboards og rapporter også for at sikre, at de overholder det erhvervsscenario, der er beskrevet i applikationen.
 

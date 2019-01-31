@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 52f679ee143e1009068c7de1ed9ce13e82e957dc
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6b5f2fa44a45cca06f90474d8c76fd6f06cae3ce
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295368"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430435"
 ---
 # <a name="data-point-limits-and-strategies-by-visual-type"></a>Datapunktgrænser og strategier efter visualiseringstype
 
@@ -40,7 +40,7 @@ For hver strateg er der er standarder, der er baseret på den form og type af da
 ## <a name="statistics"></a>Statistik
 Visse modeller kan levere statistikker om antallet af værdier for bestemte kolonner. Når disse oplysninger er til stede, kan vi udnytte disse oplysninger til at give bedre belastningsjustering på tværs af flere hierarkier, hvis en visualisering ikke udtrykkeligt tilsidesætter antallet af værdier for en strategi.
 
-Du kan finde flere oplysninger under [Nyheder i Analysis Services](https://docs.microsoft.com/en-us/sql/analysis-services/what-s-new-in-analysis-services?view=sql-server-2017)
+Du kan finde flere oplysninger under [Nyheder i Analysis Services](https://docs.microsoft.com/sql/analysis-services/what-s-new-in-analysis-services?view=sql-server-2017)
 
 ## <a name="dynamic-limits"></a>Dynamiske grænser
 Ud over ovenfor nævnte strategier bruger visualiseringer med to hierarkier af grupperingskolonner (akse og forklaring eller kategori og serie) yderligere en strategi kaldet *dynamiske grænser*.  Dynamiske grænser er designet til bedre at balancere datapunkter. 
@@ -128,7 +128,7 @@ Ingen reduktionsstrategi
 - Værdier: Virtualisering ved hjælp af vindue på 200 rækker ad gangen
 
 ### <a name="scatter-chart-high-density"></a>Punktdiagram (høj tæthed)
-Se [punktdiagram med høj tæthed](https://docs.microsoft.com/en-us/power-bi/visuals/desktop-high-density-scatter-charts)
+Se [punktdiagram med høj tæthed](https://docs.microsoft.com/power-bi/visuals/desktop-high-density-scatter-charts)
 
 ### <a name="pie"></a>Cirkel
 - Maksimumpunkter: 3,500
