@@ -608,6 +608,8 @@ items:
         href: service-share-dashboards.md
       - name: Del en filtreret rapport
         href: service-share-reports.md
+      - name: Tilmeld dig selv og andre
+        href: service-report-subscribe.md
       - name: Integrer rapport i SharePoint Online
         href: service-embed-report-spo.md
       - name: Integrer en rapport på en sikker portal eller et websted
@@ -1248,6 +1250,8 @@ items:
       href: service-admin-role.md
     - name: Ofte stillede spørgsmål
       href: service-admin-faq.md
+    - name: Høj tilgængelighed og ofte stillede spørgsmål om failover
+      href: service-admin-failover.md
   - name: Sådan gør du
     items:
     - name: Licenser og tilmelding
@@ -1295,9 +1299,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI sikkerhed
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 070efc5b3775b8d675e7f053094f108edabd3115
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 5b2dc80f12aba21c7d5a1f0da71f8eb31d242c5b
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234479"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431102"
