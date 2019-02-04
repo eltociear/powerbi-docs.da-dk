@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 494612b9c8ef448756dfe2d516bfca68e69d2e7a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9002b1871f5e7db4ef67d4f2f77b6b8769aa1de6
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296817"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430274"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration af Power BI – ofte stillede spørgsmål
 
@@ -45,6 +45,7 @@ Denne artikel omhandler ofte stillede spørgsmål om Power BI-administration. Du
 * [Er der andre yderligere ting, jeg skal være forberedt på?](#are-there-any-additional-things-i-should-be-prepared-for)
 * [Hvor findes min Power BI-lejer?](#where-is-my-power-bi-tenant-located)
 * [Hvad er Power BI SLA (Serviceniveauaftale)?](#what-is-the-power-bi-sla)
+* [Hvordan håndterer Power BI høj tilgængelighed og failover?](#how-does-power-bi-handle-high-availability-and-failover)
 
 ### <a name="security-in-power-bi-section"></a>Sikkerhed i afsnittet Power BI
 
@@ -241,11 +242,15 @@ Du kan finde oplysninger om, hvilket dataområde din Power BI-lejer befinder sig
 
 Hvis du vil have oplysninger om Power BI SLA (Serviceniveauaftale), skal du se artiklen [Licensvilkår og dokumentation](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37) i afsnittet **Licenser** på webstedet Microsoft Licensing.
 
+### <a name="how-does-power-bi-handle-high-availability-and-failover"></a>Hvordan håndterer Power BI høj tilgængelighed og failover?
+
+Du kan finde oplysninger om høj tilgængelighed og failover under [Ofte stillede spørgsmål om høj tilgængelighed, failover og it-katastroferedskab i Power BI](service-admin-failover.md).
+
 ## <a name="security-in-power-bi"></a>Sikkerhed i Power BI
 
 ### <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Opfylder Power BI nationale, regionale og branchespecifikke overholdelseskrav?
 
-Få mere at vide om Power BI-overholdelse ved at se [Microsoft Center for sikkerhed og rettighedsadministration](https://www.microsoft.com/en-us/TrustCenter/CloudServices/business-application-platform/default.aspx).
+Få mere at vide om Power BI-overholdelse ved at se [Microsoft Center for sikkerhed og rettighedsadministration](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/default.aspx).
 
 ### <a name="how-does-security-work-in-power-bi"></a>Hvordan fungerer sikkerhed i Power BI?
 

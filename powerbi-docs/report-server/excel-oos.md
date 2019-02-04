@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: 2a0fc921ba576803f02ede8fd269370584c61efe
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 157808d7378b40cb097c2cb667eb9d237654e66d
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284213"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234410"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Konfigurer din rapportserver til at være vært for Excel-projektmapper ved hjælp af Office Online Server (OOS)
 
@@ -57,7 +57,7 @@ Hvis du vil bruge Excel Online-funktioner, der bruger eksterne data (for eksempe
 1. Download Office Online Server fra [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). Du finder overførslen under disse Office-produkter på VLSC-portalen. Til udviklingsmæssige formål kan du downloade OOS fra MSDN-abonnentoverførsler.
 2. Kør Setup.exe.
 3. På siden **Læs licensvilkårene for Microsoft-software** skal du vælge **Jeg accepterer vilkårene i denne aftale** og vælge **Fortsæt**.
-4. På siden **Vælg en filplacering** skal du vælge den mappe, hvor Office Online Server-filerne skal installeres, f.eks. C:\Programmer\Microsoft Office Web Apps*, og vælge **Installér nu**. Hvis den angivne mappe ikke findes, bliver den oprettet for dig.
+4. På siden **Vælg en filplacering** skal du vælge den mappe, hvor Office Online Server-filerne skal installeres (f.eks. C:\Program Files\Microsoft Office Web Apps\*), og vælge **Installér nu**. Hvis den angivne mappe ikke findes, bliver den oprettet for dig.
 
     Vi anbefaler, at du installerer Office Online Server på systemdrevet.
 

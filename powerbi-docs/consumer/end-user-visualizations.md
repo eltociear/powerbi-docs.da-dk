@@ -1,6 +1,6 @@
 ---
-title: Sådan arbejder du med visualiseringer
-description: Power BI-begreber og -terminologi – visualiseringer, visuelle elementer. Hvad er en visualisering/et visuelt element i Power BI?
+title: Sådan arbejder du med visualiseringer som forbruger
+description: Power BI-begreber og -terminologi – visualiseringer, visuals. Hvad er en visualisering/visual i Power BI?
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -8,19 +8,19 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/29/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 875f5cef31ea61fffff29404b03af5bbbfc9f0c6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5eadf12fc1b54e8f5ac657685826816f0fca318d
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287623"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234341"
 ---
 # <a name="visualizations-for-power-bi-consumers"></a>Visualiseringer til Power BI-**forbrugere**
 
-Helt grundlæggende er en ***visualisering*** (eller et *visuelt element*) en form for diagram, der er udarbejdet af Power BI-*designere* ved hjælp af dataene i *rapporter* og *datasæt*. 
+Helt grundlæggende er en ***visualisering*** (eller en *visual*) en form for diagram, der er udarbejdet af Power BI-*designere* ved hjælp af dataene i *rapporter* og *datasæt*. 
 
 > [!TIP]
 > Vi anbefaler, at du først læser det overordnede emne [Power BI – grundlæggende begreber for *forbrugere*](end-user-basic-concepts.md), før du læser dette mere detaljerede indhold.
@@ -53,4 +53,5 @@ Først lidt om spørgsmål og svar. Spørgsmål og svar er Power BI's søgeværk
 
 ## <a name="next-steps"></a>Næste trin
 Tilbage til [Grundlæggende begreber for forbrugere](end-user-basic-concepts.md)    
-[Vælg en visualisering for at åbne en rapport](end-user-report-open.md)
+[Vælg en visualisering for at åbne en rapport](end-user-report-open.md)    
+[Typer af visualiseringer, der er tilgængelige i Power BI](end-user-visual-type.md)

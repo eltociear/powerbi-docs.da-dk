@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: 74d261098ee8385721a0b72d808a6ecb1b89be7c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2a6fe04f3e905a1e2ce02bceed123b6f117e62c8
+ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283799"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55234433"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 
@@ -106,10 +106,10 @@ Power BI understøtter mange operatorer ud over "**and**". I nedenstående tabel
 |**gt**     | større end        |nej | ja | ja  | produkt/pris gt 20
 |**le**     |   mindre end eller lig med      | nej | ja | ja  | produkt/pris le 100
 |**lt**     |  mindre end       | nej | ja | ja |  produkt/pris lt 20
-|**in****     |  inklusive       | ja | ja |  ja | Studerende/alder in (27, 29)
+|**in\*\***     |  inklusive       | ja | ja |  ja | Studerende/alder in (27, 29)
 
 
-\** Når du bruger **in**, kan værdierne til højre for **in** være en kommasepareret liste angivet i parenteser, eller det kan være et udtryk, der returnerer en samling.
+\*\*Når du bruger **in**, kan værdierne til højre for **in** være en kommasepareret liste angivet i parenteser, eller det kan være et enkelt udtryk, der returnerer en samling.
 
 ### <a name="numeric-data-types"></a>Numeriske datatyper
 

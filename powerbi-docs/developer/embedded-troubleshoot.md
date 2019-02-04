@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/20/2018
-ms.openlocfilehash: 4fff6b19b9a17b626d11545a8d4baa8464ffc324
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: a53ddf70e82c191af520f2dbba5b5d3d1b0ced42
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294029"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431217"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Foretag fejlfinding af dit integrerede program
 
@@ -99,6 +99,14 @@ Programmets backend skal muligvis opdatere godkendelsestokenet før kaldet til G
 
 ## <a name="authentication"></a>Godkendelse
 
+### <a name="authentication-failed-with-aadsts90002-tenant-authorize-not-found"></a>Godkendelse mislykkedes med AADSTS90002: Lejeren "godkend" blev ikke fundet
+
+ Hvis du modtager meddelelseslogge, såsom ***fejl: invalid_request, error_description: AADSTS90002: Lejeren "godkend" blev ikke fundet***, er det fordi, ADAL 4.x ikke understøtter "https://login.microsoftonline.com/{Tenant}/oauth2/authorize/" som en URL-adresse for autoritet.
+ 
+Hvis du vil løse dette problem, skal du fjerne "oauth2/authorize/" fra slutningen af din URL-adresse for autoritet. Du kan se flere oplysninger under [Eksempler på Power BI Developer](https://github.com/Microsoft/PowerBI-Developer-Samples).
+
+ Kontrollér [Bedre myndighedsvalidering](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/Changes-adalnet-4.0#better-authority-validation) i produktbemærkningerne til ADAL 4.x.
+ 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Godkendelsen mislykkedes med AADSTS70002 eller AADSTS50053
 
 **_(AADSTS70002: Der opstod en fejl under validering af legitimationsoplysningerne. AADSTS50053: Du har forsøgt at logge på for mange gange med et forkert bruger-id eller en forkert adgangskode)_**
@@ -243,7 +251,7 @@ Du kan gennemgå [Embedding-konfigurationsværktøjet](https://aka.ms/embedsetup
 
 Kontrollér, at du opfylder de påkrævede forudsætninger, før du bruger Embedding-konfigurationsværktøjet. Du skal have en **Power BI Pro**-konto og et **Microsoft Azure**-abonnement.
 
-* Hvis du ikke er tilmeldt **Power BI Pro**, kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/en-us/pricing/), før du begynder.
+* Hvis du ikke er tilmeldt **Power BI Pro**, kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/pricing/), før du begynder.
 * Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://azure.microsoft.com/free/?WT.mc_id=A261C142F), før du begynder.
 * Du skal have din egen konfiguration af [Azure Active Directory-lejer](create-an-azure-active-directory-tenant.md).
 * Du skal have [Visual Studio](https://www.visualstudio.com/) installeret (version 2013 eller nyere).
@@ -294,7 +302,7 @@ Du kan finde flere oplysninger under [Ofte stillede spørgsmål om Power BI Embe
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
-Hvis du har brug for yderligere hjælp, kan du [kontakte support](https://powerbi.microsoft.com/en-us/support/pro/?Type=documentation&q=power+bi+embedded) eller [oprette en supportanmodning via Azure Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) og angive de fejlmeddelelser, du får vist.
+Hvis du har brug for yderligere hjælp, kan du [kontakte support](https://powerbi.microsoft.com/support/pro/?Type=documentation&q=power+bi+embedded) eller [oprette en supportanmodning via Azure Portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest) og angive de fejlmeddelelser, du får vist.
 
 ## <a name="next-steps"></a>Næste trin
 

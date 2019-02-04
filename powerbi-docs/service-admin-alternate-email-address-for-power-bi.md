@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 5998f4b63a168c3056a5464844d008bd657ef7c9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: a37daca38c13cff08be13da619735214002646a3
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294243"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55430527"
 ---
 # <a name="using-an-alternate-email-address"></a>Brug af en alternativ mailadresse
 
@@ -64,7 +64,7 @@ Power BI vælger, hvilken mail der bruges, på baggrund af følgende sekvens:
 
 1. Hvis mailattributten i Azure AD-lejerens brugerobjekt er til stede, så bruger Power BI denne mailattribut til mailadressen.
 
-1. Hvis UPN-mailen *ikke* er en mailadresse på domænet **\*.onmicrosoft.com** (oplysningerne efter "\@"-symbolet), så bruger Power BI denne mailattribut til mailadressen.
+1. Hvis UPN-mailen *ikke* er en mailadresse på domænet **\*.onmicrosoft.com** (oplysningerne efter "\@"-symbolet), bruger Power BI denne mailattribut til mailadressen.
 
 1. Hvis matrixattributten for *anden mailadresse* i Azure AD-brugerobjektet er til stede, så bruges den første mail på denne liste (da der kan være en liste over mails i denne attribut).
 

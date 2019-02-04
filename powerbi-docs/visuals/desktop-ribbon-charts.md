@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/11/2018
+ms.date: 01/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9241c46c368eba094c075efe42d4989c03979125
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 08a2de32b092ba24b66ddd9f173be1eaea8819ab
+ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296406"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55429860"
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Brug bånddiagrammer i Power BI
 Du kan bruge bånddiagrammer til at visualisere data og hurtigt finde ud af, hvilken kategori af data der har den højeste placering (største værdi). Bånddiagrammer er effektive til at vise ændringer af placeringer, hvor den højeste placering (værdi) altid vises øverst for hver tidsperiode. 
@@ -23,16 +23,28 @@ Du kan bruge bånddiagrammer til at visualisere data og hurtigt finde ud af, hvi
 ![bånddiagram](media/desktop-ribbon-charts/ribbon-charts_01.png)
 
 ## <a name="create-a-ribbon-chart"></a>Opret et bånddiagram
-Du opretter et bånddiagram ved at vælge **bånddiagram** på panelet **Visualiseringer**.
+Hvis du vil følge med, skal du åbne [rapporten over et eksempel på analyse af detailhandel](../sample-retail-analysis.md). 
 
-![](media/desktop-ribbon-charts/ribbon-charts_02.png)
+1. Du opretter et bånddiagram ved at vælge **bånddiagram** på panelet **Visualiseringer**.
 
-Med bånddiagrammer tilknyttes en kategori af data for den visualiserede tidsperiode ved hjælp af bånd, hvilket gør det muligt at se, hvordan en bestemt kategori placeres over hele diagrammets x-akse (normalt tidslinjen).
+    ![visualiseringsskabeloner](media/desktop-ribbon-charts/ribbon-charts_02.png)
+
+    Med bånddiagrammer tilknyttes en kategori af data for den visualiserede tidsperiode ved hjælp af bånd, hvilket gør det muligt at se, hvordan en bestemt kategori placeres over hele diagrammets x-akse (normalt tidslinjen).
+
+2. Vælg felter for **Akse**, **Forklaring** og **Værdi**.  I dette eksempel har vi valgt: **Dato**, **Kategori** og **Dette års salg**.  
+
+    ![valgte felter](media/desktop-ribbon-charts/power-bi-ribbon-values.png)
+
+    Da datasættet kun indeholder data for ét år, har vi fjernet feltet **År** fra brønden **Akse**. 
+
+3. I bånddiagrammet kan du se placeringen for hver anden måned. Bemærk, hvordan placering ændres over tid.  Kategorien Hjem flytter f.eks. fra tredje til fjerde og tilbage til tredje igen. Kategorien Juniorer flytter fra tredje til femte i juli. 
+
+    ![bånddiagram](media/desktop-ribbon-charts/power-bi-ribbon.png)
 
 ## <a name="format-a-ribbon-chart"></a>Formatér et bånddiagram
 Når du opretter et bånddiagram, er der formateringsindstillinger tilgængelige under afsnittet **Format** i ruden **Visualiseringer**. Formateringsindstillingerne for bånddiagrammer ligner indstillingerne for et stablet søjlediagram, men byder på yderligere formateringsindstillinger, som er specifikke for båndene.
 
-![båndskabelon i ruden Visualisering](media/desktop-ribbon-charts/ribbon-charts_03.png)
+![båndskabelon i ruden Visualisering](media/desktop-ribbon-charts/power-bi-format-ribbon.png)
 
 Ved hjælp af disse formateringsindstillinger for bånddiagrammer kan du foretage følgende justeringer.
 
@@ -40,6 +52,14 @@ Ved hjælp af disse formateringsindstillinger for bånddiagrammer kan du foretag
 * **Match seriens farve** gør det muligt at matche farven på båndene med seriens farve. Når den er slået **fra**, er båndene grå.
 * **Gennemsigtighed** angiver, hvor gennemsigtige båndene er. Standardværdien er angivet til 30.
 * **Kant** gør det muligt at placere en mørk kant øverst og nederst på båndene. Kanter er som standard slået fra.
+
+Da bånddiagrammet ikke har mærkater for y-aksen, kan det være en god idé at tilføje datamærkater. I ruden Formatering skal du vælge **Datamærkater**. 
+
+![formateringsindstillinger for datamærkater](media/desktop-ribbon-charts/power-bi-labels.png)
+
+Angiv formateringsindstillingerne for dine datamærkater.  I dette eksempel har vi sat tekstfarven til hvid, decimalpladserne til nul og visningsenheder til tusinde. 
+
+![båndskabelon i ruden Visualisering](media/desktop-ribbon-charts/power-bi-data-labels.png)
 
 ## <a name="next-steps"></a>Næste trin
 
