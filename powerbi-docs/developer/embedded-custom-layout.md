@@ -2,22 +2,21 @@
 title: Brugerdefinerede layout med Power BI-integreret indhold
 description: Få mere at vide om brugerdefinerede layout, når du integrerer Power BI-indhold i dit program.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 12/19/2017
-ms.author: maghan
-ms.openlocfilehash: 641369a4410741269a260e036ac3a7930f385e76
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e812fde896072762e113c81b1dd728091a8ff190
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288928"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762300"
 ---
 # <a name="custom-layouts"></a>Brugerdefinerede layout
-
 
 Brug et brugerdefineret layout til at integrere en rapport med et andet layout end i den oprindelige rapport. Du kan definere et nyt layout ved kun at definere en sidestørrelse eller styre de visuelle størrelser eller placering og synlighed.
 
@@ -115,7 +114,6 @@ enum VisualContainerDisplayMode {
 - `width`, højde: Definerer det visuelle elements nye størrelse.
 - `displayState`: Definerer det visuelle elements synlighed.
 
-
 ## <a name="update-layout"></a>Opdater layout
 
 Du kan bruge metoden updateSettings til at opdatere rapportlayoutet, mens rapporten er indlæst. Se [Indstillinger for opdatering](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Update-Settings).
@@ -173,9 +171,7 @@ var embedContainer = document.getElementById('embedContainer');
 var report = powerbi.embed(embedContainer, embedConfiguration);
 ```
 
-
 ## <a name="see-also"></a>Se også
 
 [Integrer dine Power BI-dashboards, -rapporter og -felter](embedding-content.md)   
 [Spørg Power BI-community'et](https://community.powerbi.com/)
-

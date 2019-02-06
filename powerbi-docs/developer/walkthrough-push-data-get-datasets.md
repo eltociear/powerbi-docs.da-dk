@@ -2,21 +2,22 @@
 title: Hent et datasæt for at indsætte rækker
 description: Se, hvordan du overfører data – hent et datasæt for at indsætte rækker i en Power BI-tabel
 author: markingmyname
+ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: cd7f1eabc104da7e310abbfbce2929f047f0e5d8
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: fbde44136f403e3aff0c32d8d4acef4d1970830a
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430826"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762484"
 ---
 # <a name="step-4-get-a-dataset-to-add-rows-into-a-power-bi-table"></a>Trin 4: Hent et datasæt for at føje rækker til en Power BI-tabel
+
 Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
 
 På **trin 3** i overførslen af data til et datasæt, [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md), kaldte du handlingen [Create Dataset](https://docs.microsoft.com/rest/api/power-bi/datasets) for at oprette et datasæt i Power BI. På dette trin skal du bruge handlingen [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) og Newtonsoft.Json til at hente et datasæt-id. Du kan bruge datasættet på trin 4 til at indsætte rækker i et datasæt. 
@@ -26,14 +27,13 @@ Hvis du vil overføre data til et Power BI-datasæt, skal du henvise til tabelle
 Sådan henter du et datasæt.
 
 ## <a name="get-a-power-bi-dataset"></a>Hent et Power BI-datasæt
+
 > **BEMÆRK**! Før du begynder, skal du kontrollere, at du har fulgt de foregående trin i gennemgangen [Send data til et datasæt](walkthrough-push-data.md).
-> 
-> 
 
 1. I projektet konsolprogram, som du oprettede i trin 2: Gennemgang til push af data, [Hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md), og installer pakken Newtonsoft.Json NuGet. Sådan installerer du pakken:
-   
+
      a. Vælg **Tools** > **NuGet Package Manager** > **Package Manager Console** i Visual Studio 2015.
-   
+
      b. Angiv Install-Package Newtonsoft.Json i **Package Manager Console**.
 2. Når pakken er installeret, skal du indsætte **using Newtonsoft.Json;** i Program.cs.
 3. Tilføj koden nedenfor i Program.cs for at hente et **datasæt-id**.
@@ -110,6 +110,7 @@ Nedenfor kan du se den [komplette kodeliste](#code).
 <a name="code"/>
 
 ## <a name="complete-code-listing"></a>Komplet kodeliste
+
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     using System.Net;
@@ -265,6 +266,7 @@ Nedenfor kan du se den [komplette kodeliste](#code).
 [Næste trin >](walkthrough-push-data-add-rows.md)
 
 ## <a name="next-steps"></a>Næste trin
+
 [Indsæt rækker i en Power BI-tabel](walkthrough-push-data-add-rows.md)  
 [Newtonsoft.Json](http://www.newtonsoft.com/json)  
 [Hent datasæt](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets)  
@@ -273,4 +275,3 @@ Nedenfor kan du se den [komplette kodeliste](#code).
 [Power BI REST-API-reference](https://docs.microsoft.com/rest/api/power-bi/)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-

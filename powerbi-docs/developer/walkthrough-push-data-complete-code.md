@@ -2,26 +2,28 @@
 title: Komplet kodeliste
 description: Gennemgang af push af data – komplet kodeliste
 author: markingmyname
+ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: 96620449e8be8dbbfa13a00484fff29f2370fe19
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: 95aadefab6a98413a22dd9386bfb4fc06cb482cb
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55429930"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762231"
 ---
 # <a name="push-data-to-a-dataset-complete-code-listing"></a>Komplet kodeliste til push af data til et datasæt
+
 Denne artikel er en del af en trinvis gennemgang af [push af data til et datasæt](walkthrough-push-data.md).
 
 Når du har fulgt trin 2 til 5 i **Push af data til et datasæt**, bør din komplette kildekode se ud som følger.
 
 ## <a name="push-data-to-dataset-code"></a>Push af data til datasætkode
+
       using System;
       using Microsoft.IdentityModel.Clients.ActiveDirectory;
       using System.Net;
@@ -219,8 +221,8 @@ Når du har fulgt trin 2 til 5 i **Push af data til et datasæt**, bør din komp
           }
       }
 
-
 ## <a name="next-steps"></a>Næste trin
+
 [Push af data til et Power BI-datasæt](walkthrough-push-data.md)  
 [Gennemgang – push af data til et Power BI-datasæt](walkthrough-push-data.md)  
 [Registrer en app med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)  
@@ -231,6 +233,4 @@ Når du har fulgt trin 2 til 5 i **Push af data til et datasæt**, bør din komp
 [Power BI REST-API-reference](https://docs.microsoft.com/rest/api/power-bi/)  
 [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
 
-
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-

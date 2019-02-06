@@ -2,21 +2,22 @@
 title: Spørgsmål og svar i Power BI Embedded
 description: Power BI Embedded giver dig mulighed for at integrere spørgsmål og svar i et program og giver brugerne mulighed for at stille spørgsmål på et naturligt sprog.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 11/20/2017
-ms.author: maghan
-ms.openlocfilehash: 208c1e2a0e188622f989faa6ba391d9742dd7967
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 23e0f7a938116185e05e583f5c7f208efed3ca4d
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277963"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761909"
 ---
 # <a name="qa-in-power-bi-embedded"></a>Spørgsmål og svar i Power BI Embedded
+
 Power BI Embedded giver dig mulighed for at integrere spørgsmål og svar i et program og giver brugerne mulighed for at stille spørgsmål på et naturligt sprog og få øjeblikkelige svar i form af visuelle elementer som diagrammer eller grafer.
 
 ![Interaktive spørgsmål i en integreret ramme](media/qanda/embedded-qanda.gif)
@@ -47,13 +48,14 @@ var qna = powerbi.embed(qnaContainer, config);
 ```
 
 ## <a name="set-question"></a>Stil spørgsmål
+
 Hvis du har brugt **resultattilstanden** med et stillet spørgsmål, kan du indsætte ekstra spørgsmål i rammen og straks få dem besvaret og dermed erstatte det forrige resultat. Der vises et nyt visuelt element, som svarer til det nye spørgsmål.
 
 Et eksempel på denne form for brug kan være en liste med ofte stillede spørgsmål. Brugeren kan gennemse spørgsmålene og få dem besvaret i den samme integrerede del.
 
 **Kodestykke for forbrug af JS SDK:**  
 
-```        
+```
 // Get a reference to the embedded Q&A HTML element
 var qnaContainer = $('#qnaContainer')[0];
 
@@ -70,6 +72,7 @@ qna.setQuestion("This year sales")
 ```
 
 ## <a name="visual-rendered-event"></a>Visuelt gengivet hændelse
+
 I **interaktiv** tilstand kan programmet få besked via en hændelse for ændrede data, hver gang det gengivne visuelle element ændres, for at målrette den opdaterede inputforespørgsel, efterhånden som den skrives.
 
 Hvis du lytter til hændelsen *visualRendered*, kan du gemme spørgsmål til senere brug. 
@@ -93,10 +96,11 @@ qna.on("visualRendered", function(event) {
 ```
 
 ## <a name="embed-token"></a>Integrer token
+
 Opret et integreret token ud fra et datasæt for at starte en spørgsmål og svar-session. Du kan finde flere oplysninger under [Generer token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 ## <a name="next-steps"></a>Næste trin
+
 Hvis du vil prøve at bruge spørgsmål og svar, kan du gå til [Eksempel på JavaScript-integrering](https://microsoft.github.io/PowerBI-JavaScript/demo/).
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-

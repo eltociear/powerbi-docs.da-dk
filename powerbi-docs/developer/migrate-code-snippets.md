@@ -2,21 +2,22 @@
 title: Kodestykker til overførsel af indhold fra Power BI Embedded
 description: Her får du nogle kodestykker til de grundlæggende handlinger, der skal bruges til overførsel af indhold
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 06/30/2018
-ms.author: maghan
-ms.openlocfilehash: ddb0e95e20a22fd6e7e832c415462504d2ef3652
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: f53549e0a046195c353362368e2e3682df152af9
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55429967"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762507"
 ---
 # <a name="code-snippets-for-migrating-content-from-power-bi-workspace-collection"></a>Kodestykker til overførsel af indhold fra Power BI Workspace Collection
+
 Her får du nogle kodestykker til de grundlæggende handlinger, der skal bruges til overførsel af indhold. Hvis du arbejder med relaterede flows til bestemte rapporttyper, skal du se [Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded](migrate-from-powerbi-embedded.md#content-migration).
 
 Der findes et **overførselsværktøj**, som du kan bruge til at kopiere indhold fra Power BI Embedded (PaaS) til Power BI-tjenesten (SaaS). Praktisk, hvis du har en meget indhold. Du kan finde flere oplysninger under [Overførselsværktøjet i Power BI Embedded](migrate-tool.md).
@@ -25,7 +26,7 @@ Kodestykkerne nedenfor er eksempler på brug af C# og [Power BI .NET SDK](https:
 
 Kontrollér, at du bruger følgende navneområder til at udføre kodestykkerne nedenfor.
 
-```
+```csharp
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using Microsoft.PowerBI.Api.V1;
 using Microsoft.PowerBI.Api.V1.Models;
@@ -46,8 +47,8 @@ using System.Text;
 using System.Threading.Tasks;
 ```
 
-
 ## <a name="export-report-from-paas-workspace"></a>Eksportér rapporten fra PaaS-arbejdsområde
+
 ```
     // Create a token credentials with "AppKey" type
     var credentials = new TokenCredentials(<myAppKey==>, "AppKey");
@@ -72,6 +73,7 @@ using System.Threading.Tasks;
 ```
 
 ## <a name="import-report-to-saas-workspace"></a>Importér rapporten til PaaS-arbejdsområde
+
 ```
     AuthenticationContext authContext = new AuthenticationContext("https://login.microsoftonline.net/common/");
     var PBISaaSAuthResult = authContext.AcquireToken("https://analysis.windows.net/powerbi/api", <myClientId>, new Uri("urn:ietf:wg:oauth:2.0:oob"), PromptBehavior.Always);
@@ -85,6 +87,7 @@ using System.Threading.Tasks;
 ```
 
 ## <a name="extract-directquery-connection-string-from-paas-report"></a>Udpak DirectQuery-forbindelsesstrengen fra PaaS-rapporten
+
 Dette gøres for at opdatere PBIX efter overførslen til SaaS.
 
 ```
@@ -105,6 +108,7 @@ Dette gøres for at opdatere PBIX efter overførslen til SaaS.
 ```
 
 ## <a name="update-directquery-connection-string-is-saas-workspace"></a>Opdater DirectQuery-forbindelsesstrengen i SaaS-arbejdsområdet
+
 ```
     public class ConnectionString
     {
@@ -123,6 +127,7 @@ Dette gøres for at opdatere PBIX efter overførslen til SaaS.
 ```
 
 ## <a name="set-directquery-credentials-in-saas-workspace"></a>Angiv legitimationsoplysninger for DirectQuery i SaaS-arbejdsområdet
+
 I dette kodestykke bruger vi for nemheds skyld ukrypterede legitimationsoplysninger. Brug af krypterede legitimationsoplysninger understøttes også.
 
 ```
@@ -159,6 +164,7 @@ I dette kodestykke bruger vi for nemheds skyld ukrypterede legitimationsoplysnin
 ```
 
 ## <a name="push-dataset--report"></a>Overfør datasæt og rapport
+
 Du skal oprette rapporten igen for det datasæt, der er blevet oprettet.
 
 I dette kodestykke antager vi, at det datasæt, der skal overføres, allerede findes i et apparbejdsområde i SaaS-miljøet. Hvis du vil have flere oplysninger om overførsels-API'en, skal du se under [Overfør data til et datasæt i Power BI](walkthrough-push-data.md).
@@ -223,6 +229,7 @@ I dette kodestykke antager vi, at det datasæt, der skal overføres, allerede fi
 ```
 
 ## <a name="next-steps"></a>Næste trin
+
 [Overførselsværktøj i Power BI Embedded](migrate-tool.md)  
 [Integration med Power BI](embedding.md)  
 [Sådan overfører du indhold fra samlinger i arbejdsområdet i Power BI Embedded til Power BI](migrate-from-powerbi-embedded.md)  
@@ -234,4 +241,3 @@ I dette kodestykke antager vi, at det datasæt, der skal overføres, allerede fi
 [Hvidbog til Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
 Flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-

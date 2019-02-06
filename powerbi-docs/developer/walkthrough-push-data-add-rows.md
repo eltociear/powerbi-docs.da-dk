@@ -4,19 +4,20 @@ description: Se, hvordan du overfører data – føj rækker til en Power BI-tab
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/01/2018
-ms.openlocfilehash: 798bfbb5d1ebf127e7b958e02166dea5f1af81ef
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: 52ee2dec11029f7c529362fdb44e2291846449c1
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430482"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761978"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Trin 5: Føj rækker til en Power BI-tabel
+
 Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
 
 I **trin 4** af Overfør data til et datasæt, [Få et datasæt til at føje rækker til en Power BI-tabel](walkthrough-push-data-get-datasets.md) brugte du handlingen [Hent datasæt](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) og Newtonsoft.Json til at hente et datasæt-id. På dette trin bruger du dataset-id'et med handlingen [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) for at føje rækker til et **Power BI**-datasæt. 
@@ -28,10 +29,9 @@ Når du kalder handlingen [PostRows](https://docs.microsoft.com/rest/api/power-b
 Her kan du føje rækker til et datasæt ved hjælp af Power BI-API.
 
 ## <a name="add-rows-to-a-power-bi-table"></a>Føj rækker til en Power BI-tabel
+
 > [!NOTE]
 > Før du begynder, skal du kontrollere, at du har fulgt de foregående trin i gennemgangen [Send data til et datasæt](walkthrough-push-data.md).
-> 
-> 
 
 1. I projektet konsolprogram, som du oprettede i trin 2: Gå videre til overførsel af data, [hent et adgangstoken til godkendelse](walkthrough-push-data-get-token.md), og tilføj koden nedenfor.
 2. Kør konsolprogrammet, og log på din Power BI-konto. Du bør kunne se **Rækker tilføjet** i konsolvinduet. Du kan også logge på Power BI for at se de rækker, der er føjet til datasættet.
@@ -57,7 +57,8 @@ Føj denne kode til Program.cs.
   
        //Add rows to a Power BI table
        AddRows(datasetId, "Product");
-   }     
+   }
+
   ```
 * Tilføj en AddRows()-metode:
 

@@ -2,21 +2,22 @@
 title: Hent et adgangstoken til godkendelse
 description: Gennemgang til push af data – hent et adgangstoken til godkendelse
 author: markingmyname
+ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/10/2017
-ms.author: maghan
-ms.openlocfilehash: 1381706801a1a817927c891fcc205950cef24cbb
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: 2d4e59badf394153dcb6877a270d2ecea63f5df6
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430849"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761955"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Trin 2: Hent et adgangstoken til godkendelse
+
 Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
 
 På **trin 1** i Push data til et datasæt, [Registrer appen med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md), registrerede du en klientapp i Azure AD. På dette trin henter du et adgangstoken til godkendelse. Power BI-apps er integreret med **Azure AD** for at give sikker logon og godkendelse til din app. Du kan bruge et token til at godkende til **Azure AD** og få adgang til Power BI-ressourcer.
@@ -24,15 +25,16 @@ På **trin 1** i Push data til et datasæt, [Registrer appen med Azure AD](walkt
 Sådan henter du et adgangstoken til godkendelse.
 
 ## <a name="get-an-authentication-access-token"></a>Hent et adgangstoken til godkendelse
+
 > **BEMÆRK**! Før du begynder, skal du kontrollere, at du har fulgt de foregående trin i gennemgangen [Send data til et datasæt](walkthrough-push-data.md).
 > 
 > 
 
 1. Opret et projekt med et **konsolprogram** i Visual Studio 2015.
 2. Installér [Azure AD-godkendelsesbiblioteket til .NET NuGet-pakker](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). Du skal bruge denne pakke til at hente et sikkerhedstoken til godkendelse i en .NET-app. Sådan installerer du pakken:
-   
+
      a. Vælg **Tools** > **NuGet Package Manager** > **Package Manager Console** i Visual Studio 2015.
-   
+
      b. I **Package Manager Console** skal du angive Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
 3. Tilføj koden herunder i klassen Program {...}.
 4. Erstat "{ClientID}" med det **klient-id**, du fik, da du registrerede appen. Se [Registrer appen med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md).
@@ -113,6 +115,7 @@ Herunder kan du se den [komplette kode](#code).
 <a name="code"/>
 
 ## <a name="complete-code-listing"></a>Komplet kodeliste
+
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
@@ -172,10 +175,10 @@ Herunder kan du se den [komplette kode](#code).
         }
     }
 
-
 [Næste trin >](walkthrough-push-data-create-dataset.md)
 
 ## <a name="next-steps"></a>Næste trin
+
 [Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md)  
 [Registrer en app med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)  
 [Azure AD-godkendelsesbibliotek til .NET NuGet-pakke](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
@@ -183,4 +186,3 @@ Herunder kan du se den [komplette kode](#code).
 [Oversigt over Power BI REST-API'en](overview-of-power-bi-rest-api.md)  
 [Power BI REST-API-reference](https://docs.microsoft.com/rest/api/power-bi/)  
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-
