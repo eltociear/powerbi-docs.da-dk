@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 01/31/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 2a6fe04f3e905a1e2ce02bceed123b6f117e62c8
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 3f9195ecb4b8679ab65ad6535a85d4d271582d7d
+ms.sourcegitcommit: e05b3863c7758f639894d771193b98b12b93022a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234433"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55648691"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 
@@ -40,6 +40,14 @@ URL?filter=***Tabel***/***Felt*** eq '***værdi***'
 
 * I navnene for **Tabel** og **Felt** skelnes der mellem store og små bogstaver, men ikke i **værdi**.
 * Felter, der er skjult i rapportvisningen, kan stadig filtreres.
+
+### <a name="reports-in-apps"></a>Rapporter i apps
+
+Hvis du vil føje et filter for URL-adresse til en rapport i en app, er formateringen lidt anderledes. Links til rapporter i en app har en forespørgselsparameter (ctid), der føjes til URL-adressen. Forespørgselsparametre skal være adskilt af et &-tegn (&). Du skal derfor tilføje forespørgslen med "&filter=" (efter parameteren ctid) i stedet for "?filter=". 
+
+Som i dette eksempel:
+
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?ctid=*ctid*&filter=*Table*/*Field* eq '*value*'
 
 ### <a name="field-types"></a>Felttyper
 
@@ -118,10 +126,10 @@ Et URL-filter i Power BI kan inkludere tal i følgende formater.
 |Taltype  |Eksempel  |
 |---------|---------|
 |**integer**     |   5      |
-|**long**     |   5L eller 5l      |
+|**long**     |   5 L eller 5 l      |
 |**double**     |   5,5 eller 55e-1 eller 0,55e+1 eller 5D eller 5d eller 0,5e1D eller 0,5e1d eller 5,5D eller 5,5d eller 55e-1D eller 55e-1d     |
-|**decimal**     |   5M eller 5m eller 5,5M eller 5,5m      |
-|**float**     | 5F eller 5f eller 0,5e1F eller 0,5e-1d        |
+|**decimal**     |   5 M eller 5 m eller 5,5 M eller 5,5 m      |
+|**float**     | 5 F eller 5 f eller 0,5e1 F eller 0,5e-1 d        |
 
 ### <a name="date-data-types"></a>Datodatatyper
 
