@@ -1,8 +1,8 @@
 ---
 title: Hvad er Microsoft Power BI Premium?
 description: Power BI Premium er dedikeret kapacitet for din organisation eller dit team og giver dig mere pålidelig ydeevne og større datamængder, uden at du skal købe licenser pr. bruger.
-author: mgblythe
-ms.author: mblythe
+author: minewiskan
+ms.author: owend
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/15/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 6cc26f386a77ad8482d7f1af69fd0fdf2b7de5ac
-ms.sourcegitcommit: a20825ebd0ef4c2cb77232e3dd0e9f8260cacf71
+ms.openlocfilehash: b1a99279087f2d6557da9a70c1e02aae649dc9b4
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54324014"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794541"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Hvad er Microsoft Power BI Premium?
 
@@ -59,25 +59,25 @@ I følgende tabel ses en oversigt over forskellene mellem delt kapacitet og Prem
 
 ### <a name="premium-capacity-nodes"></a>Premium-kapacitetsnoder
 
-Power BI Premium er tilgængelig i nodekonfigurationer med forskellige kapaciteter for virtuelle kerner. Du kan finde flere oplysninger om specifikke SKU-tilbud og omkostninger under [Priser på Power BI](https://powerbi.microsoft.com/pricing/). Der findes også en [omkostningsberegner](https://powerbi.microsoft.com/calculator/). Du kan finde oplysninger om planlægning af integreret analysekapacitet i [Hvidbog om planlægning af en Power BI Enterprise-installation](https://aka.ms/pbienterprisedeploy). Opsummering:
+Power BI Premium er tilgængelig i nodekonfigurationer med andre v-kerne-kapaciteter. Du kan finde flere oplysninger om specifikke SKU-tilbud og omkostninger under [Priser på Power BI](https://powerbi.microsoft.com/pricing/). Der findes også en [omkostningsberegner](https://powerbi.microsoft.com/calculator/). Du kan finde oplysninger om planlægning af integreret analysekapacitet i [Hvidbog om planlægning af en Power BI Enterprise-installation](https://aka.ms/pbienterprisedeploy). Opsummering:
 
 * P-noder kan bruges til integrerede installationer eller tjenesteinstallationer.
 
 * EM-noder kan kun bruges til integrerede installationer. EM-noder har ikke adgang til Premium-funktioner, f.eks. deling af apps med brugere, der ikke har en Power BI Pro-licens.
 
-| Kapacitetsnode | Virtuelle kerner i alt<br/>*(Back-end + front-end)*  | Virtuelle back end-kerner <sup>[1](#fn1)</sup> | Virtuelle front end-kerner <sup>[2](#fn2)</sup> | Grænser for DirectQuery/liveforbindelser | Maks. antal samtidige opdateringer |  Tilgængelighed
+| Kapacitetsnode | V-kerner i alt<br/>*(Back-end + front-end)*  | Virtuelle back end-kerner <sup>[1](#fn1)</sup> | Virtuelle front end-kerner <sup>[2](#fn2)</sup> | Grænser for DirectQuery/liveforbindelser | Maks. antal samtidige opdateringer |  Tilgængelighed
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| EM1 (månedsvis) |1 virtuel kerne |0,5 virtuel kerne, 2,5 GB RAM |0,5 virtuel kerne |3,75 pr. sekund |  1 | Tilgængelig |
-| EM2 (månedsvis) |2 virtuelle kerner |1 virtuel kerne, 5 GB RAM |1 virtuel kerne |7,5 pr. sekund |  2 | Tilgængelig |
-| EM3 (månedsvis) |4 virtuelle kerner |2 virtuelle kerner, 10 GB RAM |2 virtuelle kerner | | 3 |  Tilgængelig |
-| P1 |8 virtuelle kerner |4 virtuelle kerner, 25 GB RAM |4 virtuelle kerner |30 pr. sekund | 6 | Tilgængelig (månedsvis er også tilgængeligt) |
-| P2 |16 virtuelle kerner |8 virtuelle kerner, 50 GB RAM |8 virtuelle kerner |60 pr. sekund | 12 | Tilgængelig |
-| P3 |32 virtuelle kerner |16 virtuelle kerner, 100 GB RAM |16 virtuelle kerner |120 pr. sekund | 24 | Tilgængelig |
+| EM1 (månedsvis) |1 v-kerne |0,5 v-kerner, 2,5 GB RAM |0,5 v-kerner |3.75 pr. sekund |  1 | Tilgængelig |
+| EM2 (månedsvis) |2 v-kerner |1 v-kerne, 5 GB RAM |1 v-kerne |7.5 pr. sekund |  2 | Tilgængelig |
+| EM3 (månedsvis) |4 v-kerner |2 v-kerner, 10 GB RAM |2 v-kerner | | 3 |  Tilgængelig |
+| P1 |8 v-kerner |4 v-kerner, 25 GB RAM |4 v-kerner |30 pr. sekund | 6 | Tilgængelig (månedsvis er også tilgængeligt) |
+| P2 |16 v-kerner |8 v-kerner, 50 GB RAM |8 v-kerner |60 pr. sekund | 12 | Tilgængelig |
+| P3 |32 v-kerner |16 v-kerner, 100 GB RAM |16 v-kerner |120 pr. sekund | 24 | Tilgængelig |
 | | | | | | | |
 
 <a name="fn1">1</a>: Virtuelle front end-kerner er ansvarlige for webtjenesten. Det kan f.eks. være administration af dashboard og rapportdokumenter, administration af adgangsrettigheder, planlægning, API'er, uploads og downloads og generelt alt, der er relateret til brugeroplevelsen. 
 
-<a name="fn2">2</a>: Virtuelle back end-kerner er ansvarlige for det tunge arbejde, f.eks. behandling af forespørgsler, administration af cache, kørsel af R-servere, dataopdatering, behandling på naturligt sprog, feeds i realtid og gengivelse af rapporter og billeder på serversiden. Med virtuelle back end-kernerne er der også reserveret en bestemt mængde hukommelse. Det er især vigtigt at have tilstrækkelig hukommelse i forbindelse med store datamodeller eller med et stort antal aktive datasæt.
+<a name="fn2">2</a>: Virtuelle back end-kerner er ansvarlige for det tunge arbejde, f.eks. behandling af forespørgsler, administration af cache, kørsel af R-servere, dataopdatering, behandling på naturligt sprog, feeds i realtid og gengivelse af rapporter og billeder på serversiden. Med backend-v-kernerne er der også reserveret en bestemt mængde hukommelse. Det er især vigtigt at have tilstrækkelig hukommelse i forbindelse med store datamodeller eller med et stort antal aktive datasæt.
 
 ## <a name="workloads-in-premium-capacity"></a>Arbejdsbelastninger i Premium-kapacitet
 
