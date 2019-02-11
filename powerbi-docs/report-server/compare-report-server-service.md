@@ -4,18 +4,18 @@ description: I denne artikel sammenlignes funktionerne i Power BI-rapportservere
 keywords: ''
 author: maggiesMSFT
 ms.author: maggies
-ms.date: 11/16/2018
+ms.date: 02/06/2019
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 4c7724baf63b1ff4e9e6f3d566da113557ab1b06
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 66f8e03469b28ee4f29c9c679add02e326732943
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234387"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794343"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Sammenlign Power BI-rapportserveren med Power BI-tjenesten
 
@@ -23,37 +23,37 @@ Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigti
 
 ## <a name="features-of-power-bi-report-server-and-the-power-bi-service"></a>Funktioner i Power BI-rapportserveren og Power BI-tjenesten
 
-| Funktioner | Power BI-rapportserver | Power BI-tjeneste | Noter
+| Funktioner | Power BI-rapportserver | Power BI-tjeneste | Noter |
 |---------|---------|---------|---------|
-| Installation | I det lokale miljø eller i hostet cloud | Cloud | Power BI-rapportserveren kan installeres i Azure VM'er (hostet cloud), hvis det er givet i licens via Power BI Premium
-| Kildedata | Cloud og/eller i det lokale miljø | Cloud og/eller i det lokale miljø |  
-| Licens | Power BI Premium eller SQL Server EE med SA | Power BI Pro-og/eller Power BI Premium |  
-| Livscyklus | Politik for moderne livscyklus | Fuldt administreret tjeneste |  
-| Versionscyklus | En gang hver 4. måned | En gang om måneden | Nyeste funktioner og løsninger optræder først i Power BI-tjenesten. De fleste kernefunktioner findes i Power BI-rapportserveren i de næste par versioner. Nogle funktioner er kun beregnet til Power BI-tjenesten.
-| Opret Power BI-rapporter i Power BI Desktop | Ja | Ja |  
-| Opret Power BI-rapporter i browseren | Nej | Ja |  
-| Gateway påkrævet | Nej | Ja, for datakilder i det lokale miljø |  
-| Streaming i realtid | Nej | Ja | [Streaming i realtid i Power BI](../service-real-time-streaming.md)
-| Dashboards | Nej | Ja | [Dashboards i Power BI-tjenesten](../consumer/end-user-dashboards.md) 
-| Distribuer gruppe af rapporter ved hjælp af apps | Nej | Ja | [Opret og udgiv apps med dashboards og rapporter](../service-create-distribute-apps.md) 
-| Indholdspakker | Nej | Ja | [Organisationsindholdspakker: Introduktion](../service-organizational-content-pack-introduction.md) 
-| Opret forbindelse til tjenester som Salesforce | Ja | Ja | [Opret forbindelse til de tjenester, du bruger](../service-connect-to-services.md) med indholdspakker i Power BI-tjenesten. På Power BI-rapportserveren skal du bruge certificerede forbindelser til at oprette forbindelse til tjenester. Du kan finde flere detaljer i [Power BI-rapportdatakilderne på Power BI-rapportserver](data-sources.md).
+| Installation | I det lokale miljø eller i hostet cloud | Cloud | Power BI-rapportserveren kan installeres i Azure VM'er (hostet cloud), hvis det er givet i licens via Power BI Premium |
+| Kildedata | Cloud og/eller i det lokale miljø | Cloud og/eller i det lokale miljø |  |
+| Licens | Power BI Premium eller SQL Server EE med SA | Power BI Pro-og/eller Power BI Premium | |  
+| Livscyklus | Politik for moderne livscyklus | Fuldt administreret tjeneste |  |
+| Versionscyklus | En gang hver 4. måned | En gang om måneden | Nyeste funktioner og løsninger optræder først i Power BI-tjenesten. De fleste kernefunktioner findes i Power BI-rapportserveren i de næste par versioner. Nogle funktioner er kun beregnet til Power BI-tjenesten. |
+| Opret Power BI-rapporter i Power BI Desktop | Ja | Ja |  |
+| Opret Power BI-rapporter i browseren | Nej | Ja |  |
+| Gateway påkrævet | Nej | Ja, for datakilder i det lokale miljø |  |
+| Streaming i realtid | Nej | Ja | [Streaming i realtid i Power BI](../service-real-time-streaming.md) |
+| Dashboards | Nej | Ja | [Dashboards i Power BI-tjenesten](../consumer/end-user-dashboards.md) |
+| Distribuer gruppe af rapporter ved hjælp af programmer | Nej | Ja | [Opret og publicer programmer med dashboards og rapporter](../service-create-distribute-apps.md) |
+| Indholdspakker | Nej | Ja | [Organisationsindholdspakker: Introduktion](../service-organizational-content-pack-introduction.md) |
+| Opret forbindelse til tjenester som Salesforce | Ja | Ja | [Opret forbindelse til de tjenester, du bruger](../service-connect-to-services.md) med indholdspakker i Power BI-tjenesten. På Power BI-rapportserveren skal du bruge certificerede connectorer til at oprette forbindelse til tjenester. Du kan finde flere detaljer i [Power BI-rapportdatakilderne på Power BI-rapportserver](data-sources.md). |
 | Spørgsmål og svar | Nej | Ja | [Spørgsmål og svar i Power BI-tjenesten og Power BI Desktop](../consumer/end-user-q-and-a.md) 
-| Hurtig indsigt | Nej | Ja | [Generér automatisk dataindsigt med Power BI](../consumer/end-user-insights.md) 
+| Hurtig indsigt | Nej | Ja | [Generér automatisk dataindsigt med Power BI](../consumer/end-user-insights.md) |
 | Analysér i Excel | Nej | Ja | [Analysér i Excel](../service-analyze-in-excel.md) 
-| Sideinddelte rapporter | Ja | Ja | [Sideinddelte rapporter er tilgængelige i Power BI-tjenesten](../paginated-reports-report-builder-power-bi.md) som prøveversion i en Premium-kapacitet
-| Power BI-mobilapps | Ja | Ja | [Oversigt over Power BI-mobilapps](../consumer/mobile/mobile-apps-for-mobile-devices.md) 
-| ARC GIS-kort | Nej | Ja | [ArcGIS-kort i Power BI-tjenesten og Power BI Desktop fra Esri](../visuals/power-bi-visualization-arcgis.md)
-| Mailabonnementer på Power BI-rapporter | Nej | Ja | [Abonner på en rapport eller et dashboard](../consumer/end-user-subscribe.md) i Power BI-tjenesten 
-| Mailabonnementer på sideinddelte rapporter | Ja | Nej | [Maillevering i Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  
+| Sideinddelte rapporter | Ja | Ja | [Sideinddelte rapporter er tilgængelige i Power BI-tjenesten](../paginated-reports-report-builder-power-bi.md) som prøveversion i en Premium-kapacitet |
+| Power BI-mobilapps | Ja | Ja | [Oversigt over Power BI-mobilapps](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
+| ARC GIS-kort | Nej | Ja | [ArcGIS-kort i Power BI-tjenesten og Power BI Desktop fra Esri](../visuals/power-bi-visualization-arcgis.md) |
+| Mailabonnementer på Power BI-rapporter | Nej | Ja | [Meld dig selv eller andre til et abonnement](../service-report-subscribe.md) på en rapport eller et dashboard i Power BI-tjenesten |
+| Mailabonnementer på sideinddelte rapporter | Ja | Nej | [Maillevering i Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  |
 | Databeskeder | Nej | Ja | [Databeskeder](../service-set-data-alerts.md) i Power BI-tjenesten
-| Sikkerhed på rækkeniveau | Kun via datakilde i DirectQuery-tilstand | Tilgængelige i både DirectQuery- (datakilde) og importtilstand | [Sikkerhed på rækkeniveau (RLS)](../service-admin-rls.md) med Power BI 
-| Fuldskærmsvisning | Nej | Ja | [Fuldskærmsvisning](../consumer/end-user-focus.md) i Power BI-tjenesten 
-| Avanceret samarbejde i Office 365 | Nej | Ja | [Samarbejd i et apparbejdsområde](../service-collaborate-power-bi-workspace.md) med Office 365 
-| R-visualiseringer | Nej | Ja | [Opret R-visualiseringer](../desktop-r-visuals.md) i Power BI Desktop, og publicer dem i Power BI-tjenesten. Du kan ikke gemme Power BI-rapporter med R-visualiseringer på Power BI-rapportserveren.  
-| Prøveversionsfunktioner | Nej | Ja | [Tilmeld dig prøveversioner af funktioner i Power BI-tjenesten](../consumer/end-user-preview-features.md) 
-| Brugerdefinerede visualiseringer | Ja | Ja | [Brugerdefinerede visualiseringer i Power BI](../power-bi-custom-visuals.md) 
-| Power BI Desktop | Version, der er optimeret til rapportserveren, kan downloades med rapportserveren | Version, der er optimeret til Power BI-tjenesten, er tilgængelig fra Windows Store | [Power BI Desktop til rapportserveren](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop til Power BI-tjenesten](http://aka.ms/pbidesktopstore)
+| Sikkerhed på rækkeniveau (RLS) | Ja | Ja | Tilgængelige i både DirectQuery- (datakilde) og importtilstand <br>Sikkerhed på rækkeniveau i [Power BI-tjenesten](../service-admin-rls.md) <br>Sikkerhed på rækkeniveau i [Power BI-rapportserver](row-level-security-report-server.md) |
+| Fuldskærmsvisning | Nej | Ja | [Fuldskærmsvisning](../consumer/end-user-focus.md) i Power BI-tjenesten |
+| Avanceret samarbejde i Office 365 | Nej | Ja | [Samarbejd i et programarbejdsområde](../service-collaborate-power-bi-workspace.md) med Office 365 |
+| R-visualiseringer | Nej | Ja | [Opret R-visualiseringer](../desktop-r-visuals.md) i Power BI Desktop, og publicer dem i Power BI-tjenesten. Du kan ikke gemme Power BI-rapporter med R-visualiseringer på Power BI-rapportserveren.  |
+| Prøveversionsfunktioner | Nej | Ja | [Tilmeld dig prøveversioner af funktioner i Power BI-tjenesten](../consumer/end-user-preview-features.md) |
+| Brugerdefinerede visualiseringer | Ja | Ja | [Brugerdefinerede visualiseringer i Power BI](../power-bi-custom-visuals.md) |
+| Power BI Desktop | Version, der er optimeret til rapportserveren, kan downloades med rapportserveren | Version, der er optimeret til Power BI-tjenesten, er tilgængelig fra Windows Store | [Power BI Desktop til rapportserveren](https://powerbi.microsoft.com/report-server/) <br><br> [Power BI Desktop til Power BI-tjenesten](http://aka.ms/pbidesktopstore) |
 
 ## <a name="next-steps"></a>Næste trin
 [Installer Power BI-rapportserver](install-report-server.md)  

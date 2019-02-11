@@ -1,25 +1,25 @@
 ---
 title: Opret Power BI Embedded-kapacitet på Azure-portalen | Microsoft Docs
-description: I denne artikel beskriver vi, hvordan du opretter Power BI Embedded-kapacitet i Microsoft Azure.
+description: Denne artikel indeholder en beskrivelse af, hvordan du opretter Power BI Embedded-kapacitet i Microsoft Azure.
 author: markingmyname
-manager: kfile
 ms.author: maghan
+manager: kfile
 ms.service: power-bi-embedded
 ms.subservice: ''
 ms.devlang: csharp, javascript
 ms.topic: conceptual
-ms.reviewer: ''
-ms.date: 07/31/2018
-ms.openlocfilehash: caab7ce649687ec22d171e112382aa13d7652fb9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.reviewer: zakharb
+ms.date: 02/05/2019
+ms.openlocfilehash: 1d829dc31bc6e2419d4f2c187b40d6945f963f69
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288537"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762553"
 ---
 # <a name="create-power-bi-embedded-capacity-in-the-azure-portal"></a>Opret Power BI Embedded-kapacitet på Azure-portalen
 
-I denne artikel beskriver vi, hvordan du opretter Power BI Embedded-kapacitet i Microsoft Azure. Power BI Embedded gør det nemmere for dig at bruge Power BI-funktionerne, så du hurtigt kan tilføje imponerende visualiseringer, rapporter og dashboards i dine apps.
+Denne artikel indeholder en beskrivelse af, hvordan du opretter [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)-kapacitet i Microsoft Azure. Power BI Embedded gør det nemmere for dig at bruge Power BI-funktionerne, så du hurtigt kan tilføje imponerende visualiseringer, rapporter og dashboards i dine programmer.
 
 Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://azure.microsoft.com/free/), før du begynder.
 
@@ -38,13 +38,11 @@ For at følge denne hurtige start skal du have følgende:
 
 1. Log på [Azure-portalen](https://portal.azure.com/).
 
-2. Vælg **Opret en ressource** > **Data + analyse**.
+2. Søg efter *Power BI Embedded* i søgefeltet.
 
-3. Søg efter *Power BI Embedded* i søgefeltet.
+3. Vælg **Opret** i Power BI Embedded.
 
-4. Vælg **Opret** i Power BI Embedded.
-
-5. Angiv de påkrævede oplysninger, og vælg derefter **Opret**.
+4. Angiv de påkrævede oplysninger, og vælg derefter **Opret**.
 
     ![Felter, der skal udfyldes for at oprette ny kapacitet](media/azure-pbie-create-capacity/azure-portal-create-power-bi-embedded.png)
 
@@ -57,9 +55,7 @@ For at følge denne hurtige start skal du have følgende:
     |**Placering**|Den placering, hvor Power BI hostes for din lejer. Din standardplacering er dit lokale område, men du kan ændre placeringen ved hjælp af [Multi-Geo-indstillinger](embedded-multi-geo.md).
     |**Prisniveau**|Vælg det varenummer (antal v-kerner og hukommelsesstørrelse), der opfylder dine behov.  Du kan finde flere oplysninger under [Power BI Embedded-prisberegner](https://azure.microsoft.com/pricing/details/power-bi-embedded/)|
 
-6. Vælg **Opret**.
-
-Det tager normalt under et minut at oprette kapaciteten, og ofte tager det kun ganske få sekunder. Hvis du vælger **Fastgør til dashboard**, kan du gå til dit dashboard for at se den nye kapacitet. Du kan også gå til **Alle tjenester** > **Power BI Embedded** for at se, om kapaciteten er klar.
+Du kan navigere til **Alle tjenester** > **Power BI Embedded** for at se, om kapaciteten er klar. Du kan også vælge **Fastgør til dashboard** fra sektionen med meddelelser eller fra bladet for at navigere til dit dashboard og se din nye kapacitet.
 
 ![Dashboard på Azure-portalen med Power BI Embedded-kapacitet](media/azure-pbie-create-capacity/azure-portal-dashboard.png)
 
@@ -69,6 +65,6 @@ For at bruge den nye Power BI Embedded-kapacitet skal du gå til Power BI-admini
 
 Hvis du ikke længere har behov for kapaciteten, kan du midlertidigt standse den for at stoppe faktureringen. Du kan finde flere oplysninger under [Stands din Power BI Embedded-kapacitet midlertidigt, og start den igen på Azure-portalen](azure-pbie-pause-start.md).
 
-Hvis du vil i gang med at integrere Power BI-indhold i din app, skal du se [Sådan integrerer du Power BI-dashboards, -rapporter og -felter](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
+Hvis du vil i gang med at integrere Power BI-indhold i dit program, skal du se [Sådan integrerer du Power BI-dashboards, -rapporter og -felter](https://powerbi.microsoft.com/documentation/powerbi-developer-embedding-content/).
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

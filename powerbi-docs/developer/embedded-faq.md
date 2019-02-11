@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 01/17/2018
-ms.openlocfilehash: da005c7b1dcf04a61873f2b712083b10a5365329
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.date: 02/05/2019
+ms.openlocfilehash: 54d768e4d2ad1b2eab4559ee5d9db0705fb55542
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430573"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762645"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -25,7 +25,7 @@ ms.locfileid: "55430573"
 
 ### <a name="what-is-power-bi-embedded"></a>Hvad er Power BI Embedded?
 
-Microsoft Power BI Embedded (PBIE) tillader programudviklere at integrere flotte, fuldt interaktive rapporter i programmer, uden at de skal bruge tid og penge på at oprette deres egne datavisualiseringer og -kontrolelementer fra bunden.
+[Microsoft Power BI Embedded (PBIE)](azure-pbie-what-is-power-bi-embedded.md) gør det muligt for programudviklere at integrere flotte, fuldt interaktive rapporter i programmer, uden at de skal bruge tid og penge på at oprette deres egne datavisualiseringer og -kontrolelementer fra bunden.
 
 ### <a name="who-is-the-target-audience-for-power-bi-embedded"></a>Hvem er målgruppen for Power BI Embedded?
 
@@ -33,31 +33,31 @@ Udviklere og softwarefirmaer, der fremstiller deres egne programmer, også kalde
 
 ### <a name="how-is-power-bi-embedded-different-from-power-bi-the-service"></a>Hvordan er Power BI Embedded anderledes end Power BI-tjenesten?
 
-Power BI Embedded er beregnet til ISV'er eller udviklere, der fremstiller programmer og vil integrere visuals i disse programmer, der kan hjælpe deres kunder med at træffe beslutninger, uden at de skal bygge analyseløsninger op fra bunden. Integrerede analyser gør det muligt for virksomhedsbrugere at tilgå virksomhedsdata og udføre forespørgsler for at generere indsigter i at bruge disse data i programmet.
+Power BI Embedded er beregnet til ISV'er eller udviklere, der fremstiller programmer og vil integrere visualiseringer i disse programmer, der kan hjælpe deres kunder med at træffe beslutninger, uden at de skal bygge analyseløsninger op fra bunden. [Integreret analyse](embedding.md) gør det muligt for virksomhedsbrugere at tilgå virksomhedsdata og udføre forespørgsler for at generere indsigter ved hjælp af disse data i programmet.
 
 Power BI er en software-as-a-service-analyseløsning, der giver virksomheder et enkelt overblik over deres vigtigste virksomhedsdata.
 
 ### <a name="what-is-the-difference-between-power-bi-premium-and-power-bi-embedded"></a>Hvad er forskellen mellem Power BI Premium og Power BI Embedded?
 
-Power BI Premium er kapacitetsmæssigt gearet mod virksomheder, som vil have en komplet BI-løsning, der giver adgang til en enkelt visning af virksomheden, kunderne og leverandørerne. Power BI Premium hjælper din virksomhed med at træffe beslutninger. Power BI Premium er et SaaS-produkt og giver mulighed for brugere at forbruge indhold gennem Power BI-portalen, mobil-app og gennem internt udviklede apps.
+Power BI Premium er kapacitetsmæssigt gearet mod virksomheder, som vil have en komplet BI-løsning, der giver adgang til en enkelt visning af virksomheden, kunderne og leverandørerne. Power BI Premium hjælper din virksomhed med at træffe beslutninger. Power BI Premium er et SaaS-produkt og giver mulighed for brugere at forbruge indhold gennem Power BI-portalen, mobilapp og gennem internt udviklede programmer.
 
-Power BI Embedded er beregnet til ISV'er eller udviklere, der fremstiller programmer, og som vil integrere visuals i de pågældende programmer. Power BI Embedded hjælper dine kunder med at træffe beslutninger, og fordi Power BI Embedded er beregnet til programudviklere, så kan kunderne af det pågældende program forbruge indhold lagret på Power BI Embedded-kapaciteter, herunder alle indenfor og udenfor virksomheden. Kapacitetsindhold i Power BI Embedded kan ikke deles gennem publicering med et enkelt klik til web eller publicering med et enkelt klik til SharePoint, og det understøtter ikke SSRS-rapporter.
+Power BI Embedded er beregnet til ISV'er eller udviklere, der fremstiller programmer, og som vil integrere visualiseringer i de pågældende programmer. Power BI Embedded hjælper dine kunder med at træffe beslutninger, og fordi Power BI Embedded er beregnet til programudviklere, så kan kunderne af det pågældende program forbruge indhold lagret på Power BI Embedded-kapaciteter, herunder alle indenfor og udenfor virksomheden. Kapacitetsindhold i Power BI Embedded kan ikke deles gennem publicering med et enkelt klik til web eller publicering med et enkelt klik til SharePoint, og det understøtter ikke SSRS-rapporter.
 
-### <a name="what-is-the-microsoft-recommendation-for-when-a-customer-should-buy-power-bi-premium-vs-power-bi-embedded"></a>Hvad anbefaler Microsoft, når en kunde står over for valget mellem Power BI Premium eller Power BI Embedded?
+### <a name="what-is-the-microsoft-recommendation-for-when-a-customer-should-buy-power-bi-premium-vs-power-bi-embedded"></a>Hvad anbefaler Microsoft, når en kunde står over for valget mellem Power BI Premium og Power BI Embedded?
 
-Microsoft anbefaler, at virksomheder køber Power BI Premium, en professionel, selvbetjent skybaseret BI-løsning, og at ISV'er køber Power BI Embedded, som er skybaserede integrerede analysekomponenter. Kunder kan dog købe begge produkter uden begrænsning.
+Microsoft anbefaler, at virksomheder køber Power BI Premium, som er en selvbetjent cloudbaseret BI-løsning i virksomhedsklassen, og at ISV'er køber Power BI Embedded, som er cloudbaserede, integrerede analysekomponenter. Kunder kan dog købe begge produkter uden begrænsning.
 
 Der kan være situationer, hvor en ISV (typisk en større) ønsker at bruge en P SKU for at få adgang til yderligere fordele i den færdigpakkede Power BI-tjenesten i virksomheden såvel som at integrere den i programmer. Nogle virksomheder beslutter måske at bruge A SKU'er i Azure, hvis de kun er interesserede i at producere line-of-business-programmer og integrere analyser i dem uden at have interesse i at bruge den færdigpakkede Power BI-tjeneste.
 
-### <a name="how-many-embed-tokens-can-i-create"></a>Hvor mange integrerede tokens kan jeg oprette?
+### <a name="how-many-embed-tokens-can-i-create"></a>Hvor mange integreringstokens kan jeg oprette?
 
-Med en PRO-licens er integrerede tokens kun beregnet til udviklingstest, så antallet af integrerede tokens, der kan genereres fra en Power BI-masterkonto, er begrænset. Du skal [købe en kapacitet](#technical) for at kunne integrere i et produktionsmiljø. Der er ingen grænse for hvor mange integrerede tokens, du kan generere, når der er købt en kapacitet. Gå til [Tilgængelige funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures) for at undersøge den brugsværdi, der angiver brugen af integrerede tokens i procent.
+Integreringstokens med en PRO-licens er beregnet til udviklingstest, så antallet af integreringstokens, der kan genereres af en Power BI-masterkonto eller [tjenesteprincipal](embed-service-principal.md), er begrænset. [Køb en kapacitet](#technical) for at integrere i et produktionsmiljø. Der er ingen grænse for hvor mange integreringstokens, du kan generere, når der er købt en kapacitet. Gå til [Tilgængelige funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures) for at undersøge den brugsværdi, der angiver brugen af integreringstokens i procent.
 
 ## <a name="technical"></a>Tekniske spørgsmål
 
 ### <a name="what-is-the-difference-between-the-a-skus-in-azure-and-the-em-skus-in-office-365"></a>Hvad er forskellen mellem A SKU'erne i Azure og EM-SKU'erne i Office 365?
 
-PowerBI.com er en virksomhedsløsning, der indeholder mange funktioner som f.eks. socialt samarbejde, mailabonnement, osv. i en SaaS-ydelse
+PowerBI.com er en virksomhedsløsning, der indeholder mange funktioner, såsom socialt samarbejde, mailabonnement og andre funktioner i en løsning af typen Software som en tjeneste.
 
 Power BI Embedded er en række API'er, der er tilgængelige for udviklere til produktionen af integrerede analyseløsninger på en Platform-as-a-Service-tjeneste. I forbindelse med scenarier i relation til integrerede analyser hjælper PowerBI.com ISV'er og udviklere med at administrere deres integrerede analyseløsningsindhold og indstillinger på lejerniveau.
 
@@ -66,27 +66,27 @@ Her er en delvis liste over forskelle, som du kan bruge i hver.
 | Udvalgt | Power BI Embedded | Power BI Premium-kapacitet | Power BI Premium-kapacitet |
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
 |   | (A-SKU'er) | (EM-SKU'er) | (P-SKU'er) |
-| Integrer artefakter fra arbejdsområder i en Power BI-app | Azure-kapacitet | Office 365-kapacitet | Office 365-kapacitet |
-| Forbrug Power BI-rapporter i en integreret app | Ja | Ja | Ja |
+| Integrer artefakter fra et Power BI-programarbejdsområde | Azure-kapacitet | Office 365-kapacitet | Office 365-kapacitet |
+| Forbrug Power BI-rapporter i et integreret program | Ja | Ja | Ja |
 | Forbrug Power BI-rapporter i SharePoint | Nej | Ja | Ja |
 | Forbrug Power BI-rapporter i Dynamics | Nej | Ja | Ja |
 | Forbrug Power BI-rapporter i Teams (omfatter ikke mobilapp) | Nej | Ja | Ja |
 | Få adgang til indhold med en GRATIS Power BI-licens på Powerbi.com og i Power BI Mobile | Nej | Nej | Ja |
-| Få adgang til indhold med en GRATIS Power BI-licens integreret i MS Office-apps | Nej | Ja | Ja |
+| Få adgang til indhold med en GRATIS Power BI-licens integreret i MS Office-programmer | Nej | Ja | Ja |
 
 ### <a name="power-bi-now-offers-three-skus-for-embedding-a-skus-em-skus-and-p-skus-which-one-should-i-purchase-for-my-scenario"></a>Power BI tilbyder nu tre SKU'er til integration: A-SKU'er, EM-SKU'er og P-SKU'er. Hvilken skal jeg købe til mit scenarie?
 
 |  |A-SKU (Power BI Embedded)  |EM-SKU (Power BI Premium)  |P-SKU (Power BI Premium)  |
 |---------|---------|---------|---------|
 |Køb  |Azure-portal |Office |Office |
-|Use cases | Integrer indhold i din egen app | <li> Integrer indhold i din egen app <br><br></br> <li> Integrer indhold i MS Office-programmer: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (omfatter ikke mobilapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Integrer indhold i din egen app <br><br></br> <li> Integrer indhold i MS Office-programmer: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (omfatter ikke mobilapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br></br> <li> Del indhold med Power BI-brugere via [Power BI-tjenesten](https://powerbi.microsoft.com/)  |
+|Use cases | Integrer indhold i dit eget program | <li> Integrer indhold i dit eget program <br><br></br> <li> Integrer indhold i MS Office-programmer: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (omfatter ikke mobilapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) | <li> Integrer indhold i dit eget program <br><br></br> <li> Integrer indhold i MS Office-programmer: <br> - [SharePoint](https://powerbi.microsoft.com/blog/integrate-power-bi-reports-in-sharepoint-online/) <br> - [Teams (omfatter ikke mobilapp)](https://powerbi.microsoft.com/blog/power-bi-teams-up-with-microsoft-teams/) <br> - [Dynamics 365](https://docs.microsoft.com/dynamics365/customer-engagement/basics/add-edit-power-bi-visualizations-dashboard) <br><br></br> <li> Del indhold med Power BI-brugere via [Power BI-tjenesten](https://powerbi.microsoft.com/)  |
 |Fakturering |Pr. time |Månedlig |Månedlig |
 |Tilsagn  |Intet tilsagn |Årligt  |Månedligt/årligt |
 |Differentiering |Fuld elasticitet, kan skaleres op / ned, pausestille / genoptage ressourcer i Azure-portalen eller gennem API  |Kan bruges til at integrere indhold i SharePoint Online og Microsoft Teams (omfatter ikke mobilapp) |Kombiner integration i programmer og brug Power BI-tjenesten i den samme egenskab |
 
 ### <a name="what-are-the-prerequisites-to-create-a-pbie-capacity-in-azure"></a>Hvad er forudsætningerne for at oprette en PBIE-kapacitet i Azure?
 
-* Du skal logge på din organisationsmappe (MSA-konti understøttes ikke).
+* Log på din organisationsmappe (administrerede tjenestekonti understøttes ikke).
 * Du skal have en Power BI-lejer, dvs. at mindst én bruger i din mappe har tilmeldt sig Power BI. 
 * Du skal have et Azure-abonnement i din organisationsmappe.
 
@@ -98,9 +98,9 @@ Her er en delvis liste over forskelle, som du kan bruge i hver.
 
 * Brug [logføring af Azure-diagnosticering](azure-pbie-diag-logs.md).
 
-### <a name="will-my-capacity-scale-automatically-to-adjust-to-the-consumption-of-my-app"></a>Vil min kapacitetsskala automatisk justere iht. forbruget af min app?
+### <a name="can-my-capacity-scale-automatically-to-adjust-to-the-consumption-of-my-app"></a>Kan min kapacitet skaleres automatisk for at blive at justeret i henhold til forbruget af mit program?
 
-Selvom der ikke er nogen skalering nu, så er alle API'erne tilgængelige for skalering når som helst.
+Automatisk skalering er ikke muligt i øjeblikket, men alle API'er kan skaleres når som helst.
 
 ### <a name="why-creatingscalingresuming-a-capacity-results-in-putting-the-capacity-into-a-suspended-state"></a>Hvorfor afbrydes kapaciteten midlertidigt, når man opretter/skalerer/genoptager en kapacitet?
 
@@ -114,12 +114,12 @@ Med [Multi-Geo-funktionen (prøveversion)](embedded-multi-geo.md) kan du købe e
 
 Du kan bruge PBI-portalen til at finde ud af, hvad er dit PBI-lejerområde er.
 
-[https://app.powerbi.com/](https://app.powerbi.com/) > ? > Om Power BI
+https://app.powerbi.com/ > ? > Om Power BI
 
 ![Om Power BI](media/embedded-faq/about-01.png)
 ![Lejerområde](media/embedded-faq/tenant-location-01.png)
 
-### <a name="what-is-supported-with-the-cloud-solution-provider-csp-channel"></a>Hvad understøttes med kanalen Cloud Solution Provider (CSP)?
+### <a name="what-is-supported-by-the-cloud-solution-provider-csp-channel"></a>Hvad understøttes af kanalen Cloud Solution Provider (CSP)?
 
 * Du kan oprette PBIE for din lejer med abonnementstype CSP
 * Partnerkonto kan logge på kundelejer og købe PBIE for kundelejeren, angive kundelejerbruger som administrator af Power BI-kapacitet
@@ -137,7 +137,7 @@ Ja. Der er Powershell-cmdlet'er og Azure Resource Manager-API'er, du kan bruge t
 
 ### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Hvilken rolle har PBI's integrerede dedikerede kapacitet i en PBI-integreret løsning?
 
-For at [gøre din løsning produktionsklar](https://docs.microsoft.com/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production) har du brug for Power BI-indhold (apparbejdsområde, du bruger i din app, der skal tildeles til Power BI Embedded-kapacitet (A SKU)).
+For at [gøre din løsning produktionsklar](https://docs.microsoft.com/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production) har du brug for Power BI-indhold (det programarbejdsområde, du bruger i dit program, som skal tildeles til en Power BI Embedded-kapacitet (A SKU)).
 
 ### <a name="what-are-the-azure-regions-pbi-embedded-is-available"></a>Hvilke Azure-områder er tilgængelige i PBI integreret?
 
@@ -157,17 +157,17 @@ Tilgængelige områder (16 – samme områder som Power BI)
 
 ### <a name="what-is-the-authentication-model-for-power-bi-embedded"></a>Hvilken godkendelsesmodel benyttes i Power BI Embedded?
 
-Power BI Embedded bruger fortsat Azure AD til godkendelse af masterbrugeren (en udpeget Power BI Pro-licenseret bruger), der godkender programmet internt i Power BI.
+Power BI Embedded bruger fortsat Azure AD til godkendelse af masterbrugeren (en udpeget Power BI Pro-licenseret bruger) eller [tjenesteprincipalen](embed-service-principal.md) til at godkende programmet i Power BI.  
 
-Godkendelsen og autorisationen af programbrugerne bliver implementeret af ISV'en, ISV'en kan implementere sin egen godkendelse til sine programmer.
+Godkendelsen og autorisationen af programbrugerne implementeres af ISV'en, og ISV'en kan implementere godkendelse for sine programmer.
 
 Hvis du allerede har en Azure AD-lejer, kan du bruge din eksisterende mappe, eller du kan oprette en ny Azure AD-lejer med henblik på at sørge for dit integrerede programindholds sikkerhed.
 
-Hvis du skal have et AAD-token, kan du bruge et af Azure Active Directory-godkendelsesbibliotekerne – https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries. Der er klientbiblioteker til flere platforme.
+Du kan bruge et [Azure Active Directory Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) for at få et AAD-token. Der er klientbiblioteker til flere platforme.
 
-### <a name="my-application-already-uses-aad-for-user-authentication-how-can-we-use-this-identity-when-authenticating-to-power-bi-in-an-user-owns-data-scenario"></a>Mit program allerede bruger AAD til brugergodkendelse. Hvordan kan vi bruge dette id til godkendelse til Power BI i et scenarie, hvor "bruger ejer data"?
+### <a name="my-application-already-uses-aad-for-user-authentication-how-can-we-use-this-identity-when-authenticating-to-power-bi-in-a-user-owns-data-scenario"></a>Mit program allerede bruger AAD til brugergodkendelse. Hvordan kan vi bruge dette id til godkendelse til Power BI i et scenarie, hvor "Bruger ejer Data"?
 
-Det er standard OAuth på vegne af flow (https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api) programmet skal være konfigureret til at kræve tilladelser til Power BI-tjenesten (med de påkrævede områder), og når du har et bruger-token til din app, skal du bare kalde ADAL API AcquireTokenAsync ved hjælp af brugeradgangstoken og angive Power BI-ressourcens URL-adresse ressource-id. Se kodestykke nedenfor, der viser, hvordan dette kan gøres:
+Det er standard OAuth på vegne af flow (https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api) programmet skal være konfigureret til at kræve tilladelser til Power BI-tjenesten (med de påkrævede områder), og når du har et bruger-token til dit program, skal du bare kalde ADAL API AcquireTokenAsync ved hjælp af brugeradgangstoken og angive Power BI-ressourcens URL-adresse ressource-id. Se kodestykke nedenfor, der viser, hvordan dette kan gøres:
 
 ```csharp
 var context = new AD.AuthenticationContext(authorityUrl);
@@ -178,7 +178,7 @@ var authenticationResult = await context.AcquireTokenAsync(resourceId, clientAss
 
 ### <a name="how-is-power-bi-embedded-different-from-other-azure-services"></a>Hvordan er Power BI Embedded anderledes end andre Azure-tjenester?
 
-ISV'en/udvikleren skal have en Power BI-konto før købet af Power BI Embedded i Azure. Power BI Embedded-installationens område bestemmes af din Power BI-konto. Administrer din Power BI Embedded-ressource i Azure for at:
+ISV'en/udvikleren skal have en Power BI-konto før købet af Power BI Embedded i Azure. Din Power BI-konto bestemmes af det område, hvor din Power BI Embedded er udrullet. Administrer din Power BI Embedded-ressource i Azure for at:
 
 * Skalere op/ned
 * Tilføje kapacitetsadministratorer
@@ -192,17 +192,45 @@ Det sydøstlige Australien, det sydlige Brasilien, det centrale Canada, det øst
 
 ### <a name="what-type-of-content-pack-data-can-be-embedded"></a>Hvilken type indholdspakke med data kan integreres?
 
-**Dashboards** og **felter**, der er bygget på baggrund af indholdspakker med datasæt *kan ikke* integreres, men **rapporter** bygget på baggrund af en indholdspakke med datasæt *kan* godt integreres.
+**Dashboards** og **felter**, der er bygget på baggrund af indholdspakker med datasæt, *kan ikke* integreres, men **rapporter**, der er bygget på baggrund af en indholdspakke med datasæt, *kan* godt integreres.
 
 ### <a name="what-is-the-difference-between-using-rls-vs-javascript-filters"></a>Hvad er forskellen mellem at bruge RLS- og JavaScript-filtre?
 
 Ofte er der forvirring om, hvornår du skal bruge RLS i forhold til JavaScript-filtre, da én metode vedrører styring af, hvad en bestemt bruger kan se, og den anden vedrører optimering af brugerens visning.
 
-I forbindelse med RLS kontrollerer ISV-udvikleren datafiltreringen som en del af modeloprettelsen og genereringen af integrerede tokens. Slutbrugeren ser kun det, ISV'en tillader brugeren at se. I dette tilfælde kan brugeren vælge at se mindre end det, der filtreres, men vedkommende kan ikke tilsidesætte RLS-konfigurationen og se mere end det, der er tilladt.
+I forbindelse med RLS kontrollerer ISV-udvikleren datafiltreringen som en del af modeloprettelsen og genereringen af integreringstokens. Slutbrugeren ser kun det, ISV'en tillader brugeren at se. I dette tilfælde kan brugeren vælge at se mindre end det, der filtreres, men vedkommende kan ikke tilsidesætte RLS-konfigurationen og se mere end det, der er tilladt.
 
 ISV'en kan muligvis beslutte, hvad brugeren ser på i første visning på vha. filtreringen på klientsiden (JavaScript), men ISV'en kan ikke styre de ændringer, slutbrugeren eventuelt selv foretager af selve visningen. Selvom datafiltrering kan ske i back-end, udløses den af JavaScript-klientkoden og kan derfor ændres af en slutbruger og anses ikke for at være sikker.
 
 Se under [RLS- i forhold til JavaScript-filtre](embedded-row-level-security.md#using-rls-vs-javascript-filters) for at få flere oplysninger.
+
+### <a name="how-do-i-manage-permissions-for-service-principals-with-power-bi"></a>Hvordan administrerer jeg tilladelser for tjenesteprincipaler med Power BI?
+
+Når du aktiverer en [tjenesteprincipal](embed-service-principal.md), der skal bruges med Power BI, er AD-tilladelserne for programmet ikke længere gældende. Tilladelserne for programmet administreres derefter via Power BI-administrationsportalen.
+
+Tjenesteprincipaler nedarver tilladelserne til alle Power BI-lejerindstillinger fra deres sikkerhedsgruppe. Hvis du vil begrænse tilladelserne, skal du oprette en dedikeret sikkerhedsgruppe for tjenesteprincipaler og føje den til listen "Undtagen specifikke sikkerhedsgrupper" for de relevante aktiverede Power BI-indstillinger.
+
+Dette er vigtigt, når du tilføjer tjenesteprincipalen som **administrator** til det nye arbejdsområde. Du kan administrere denne opgave via [API'erne](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) eller Power BI-tjenesten.
+
+### <a name="when-to-use-an-application-id-vs-a-service-principal-object-id"></a>Hvornår skal jeg bruge et program-id i forhold til et objekt-id for en tjenesteprincipal?
+
+**[Program-id'et](embed-sample-for-customers.md#application-id)** bruges til at oprette adgangstokenet, når program-id'et vedtages som godkendelse.
+
+Hvis du vil henvise til en tjenesteprincipal for at udføre handlinger eller foretage ændringer, skal du bruge **[objekt-id'et for tjenesteprincipalen](embed-service-principal.md#how-to-get-the-service-principal-object-id)**, f.eks. ved anvendelse af en tjenesteprincipal som administrator i et arbejdsområde.
+
+### <a name="can-you-manage-an-on-premises-data-gateway-with-service-principal"></a>Kan man administrere en datagateway i det lokale miljø med en tjenesteprincipal?
+
+Du kan ikke administrere en datagateway i det lokale miljø (datagateway) ved hjælp af en [tjenesteprincipal](embed-service-principal.md), som du kan med en masterkonto.
+
+Med en masterkonto kan du installere en datagateway, føje brugere til gatewayen, oprette forbindelse til datakilder og udføre andre administrative opgaver.
+
+Med en tjenesteprincipal kan du konfigurere [sikkerhed på rækkeniveau](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview) ved hjælp af en datakilde i det lokale miljø med direkte forbindelse via SQL Server Analysis Services (SSAS). På denne måde kan du administrere brugere og deres adgang til data i SSAS, når du integrerer med **Power BI Embedded** ved hjælp af en tjenesteprincipal.
+
+### <a name="can-you-sign-into-the-power-bi-service-with-service-principal"></a>Kan man logge på Power BI-tjenesten med en tjenesteprincipal?
+
+Nej. Du kan ikke logge på Power BI ved hjælp af en tjenesteprincipal.
+
+Du kan desuden ikke bruge indhold som en bruger i eksterne programmer (SaaS-integrering). Det kan du kun, når du genererer et integreringstoken.
 
 ### <a name="what-are-the-best-practices-to-improve-performance"></a>Hvad er de bedste fremgangsmåder til at forbedre ydeevnen?
 
@@ -228,15 +256,15 @@ Kunder kan ændre deres brug på timebasis. Der er ingen månedlig eller årlig 
 
 ### <a name="how-does-the-usage-of-power-bi-embedded-show-up-on-my-bill"></a>Hvordan vises forbruget af Power BI Embedded på min regning?
 
-Power BI Embedded fakturerer på en forudsigelig timebaseret rate baseret på typen af node(r), der er installeret. Så længe ressourcen er aktiv, faktureres du, selvom der ikke er noget forbrug. For at stoppe faktureringen skal du aktivt afbryde din ressource.
+Power BI Embedded fakturerer på en forudsigelig timebaseret rate baseret på typen af node(r), der er installeret. Så længe ressourcen er aktiv, faktureres du, selvom der ikke er noget forbrug. For at stoppe faktureringen skal du aktivt afbryde din ressource midlertidigt.
 
 ### <a name="who-needs-a-power-bi-pro-license-for-power-bi-embedded-and-why"></a>Hvem har brug for et Power BI Pro-licens til Power BI Embedded og hvorfor?
 
-Alle analytikere, der skal føje rapporter til et Power BI-arbejdsområde, skal have en Power BI-licens. Alle udviklere, der kræver brug af REST API'er, skal bruge en Power BI Pro-licens. Alle lejeradministratorer, der skal administrere Power BI-lejeren og -kapaciteten, skal have en Power BI Pro-licens.
+Alle udviklere, der kræver brug af REST API'er, skal have en Power BI Pro-licens eller en [tjenesteprincipal](embed-service-principal.md). Alle analytikere, der skal føje rapporter til et Power BI-arbejdsområde, kan enten have en Power BI Pro-licens eller bruge en tjenesteprincipal. Alle lejeradministratorer, der skal administrere Power BI-lejeren og -kapaciteten, skal have en Power BI Pro-licens.
 
-Idet Power BI Embedded tillader brugen af Power BI-portalen til administration og validering af integreret indhold, så er Power BI Pro-licens påkrævet for at godkende App'en internt i PowerBI.com for at få adgang til rapporter i de korrekte lagre.
+Idet Power BI Embedded tillader brugen af Power BI-portalen til administration og validering af integreret indhold, så er Power BI Pro-licens påkrævet for at godkende programmet på PowerBI.com for at få adgang til rapporter i de rette lagre.
 
-Men hvis du vil [oprette/redigere integrerede rapporter](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) i dit eget program, behøver slutbrugeren ikke en Pro-licens, da det ikke er et krav, at slutbrugeren er Power BI-bruger.
+Men hvis man vil [oprette/redigere integrerede rapporter](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Create-Report-in-Embed-View) i sit eget program, behøver slutbrugeren ikke en Pro-licens, da det ikke er et krav, at slutbrugeren er Power BI-bruger.
 
 ### <a name="can-i-get-started-for-free"></a>Kan jeg komme i gang gratis?
 
@@ -275,7 +303,7 @@ Du kan finde flere oplysninger under [Sådan overfører du indhold fra Power BI 
 
 ### <a name="is-power-bi-workspace-collection-on-a-path-to-be-deprecated"></a>Frarådes det senere at bruge Power BI Workspace Collection på en sti?
 
-Ja, men kunder, der allerede bruger **Power BI Workspace Collection**-løsningen, kan fortsætte med at bruge den, indtil det frarådes. Kunder kan også oprette nye arbejdsområdesamlinger og **Power BI Embedded**-programmer, der stadig bruger **Power BI Workspace Collection**-løsningen.
+Ja, men kunder, der allerede bruger **Power BI Workspace Collection**-løsningen, kan fortsætte med at bruge den, indtil det frarådes. Kunder kan også oprette nye arbejdsområdesamlinger og alle **Power BI Embedded**-programmer, der stadig bruger **Power BI Workspace Collection**-løsningen.
 
 Det betyder dog også, at der ikke føjes nye funktioner til **Power BI Workspace Collection**-løsninger, og at kunder opfordres til at planlægge overførsel af deres data til den nye **Power BI Embedded**-løsning.
 
@@ -283,17 +311,17 @@ Det betyder dog også, at der ikke føjes nye funktioner til **Power BI Workspac
 
 Kunder, der allerede bruger **Power BI Workspace Collections**-løsningen, kan fortsætte med at bruge den indtil udgangen af juni 2018 eller indtil udgangen af deres supportaftale.
 
-### <a name="in-what-regions-can-pbi-workspace-collection-be-created"></a>I hvilke områder kan der oprettes PBI Workspace Collection?
+### <a name="in-what-regions-can-pbi-workspace-collection-be-created"></a>I hvilke områder kan der oprettes PBI-arbejdsområdesamling?
 
 De tilgængelige områder er det sydøstlige Australien, det sydlige Brasilien, det centrale Canada, det østlige USA 2, det østlige Japan, det nordcentrale USA, det nordlige Europa, det sydcentrale USA, Sydøstasien, det sydlige Storbritannien, det vestlige Europa, det vestlige Indien og det vestlige USA.
 
 ### <a name="why-should-i-migrate-from-pbi-workspace-collection-to-power-bi-embedded"></a>Hvorfor skal jeg overføre indhold fra PBI Workspace Collection til Power BI Embedded?
 
-Der er nye funktioner og egenskaber, som introduceres i **Power BI Embedded**-løsningen, som ikke findes i **Power BI Workspace Collection**.
+Nogle nye funktioner og egenskaber introduceres i **Power BI Embedded**-løsningen, som ikke kan bruges i **Power BI Workspace Collection**.
 
 Nogle af funktionerne er:
 
-* Alle PBI-datakilder understøttes i modsætning til de to datakilder, der er inkluderet i **Power BI-arbejdsområdesamlingen**). 
+* Alle PBI-datakilder understøttes i modsætning til de to datakilder, der er inkluderet i **Power BI Workspace Collection**). 
 * Nye funktioner, f.eks. Spørgsmål og svar, opdatering, bogmærker, integrering af dashboards og felter, brugerdefinerede menuer, understøttes kun i **Power BI Embedded**-løsningen.
 * Model for fakturering af kapacitet.
 
@@ -305,18 +333,18 @@ Med [Embedding-konfigurationsværktøjet](https://aka.ms/embedsetup) kan du hurt
 
 ### <a name="which-solution-should-i-choose"></a>Hvilken løsning skal jeg vælge?
 
-* [Embedding for your customers](embedding.md#embedding-for-your-customers) giver mulighed for at integrere dashboards og rapporter for de brugere, der ikke har en Power BI-konto. Kør løsningen [Embed for your customers](https://aka.ms/embedsetup/AppOwnsData).
-* Med [Embedding for your organization](embedding.md#embedding-for-your-organization) kan du udvide Power BI-tjenesten. Kør løsningen [Embed for your organization](https://aka.ms/embedsetup/UserOwnsData).
+* Med [Integrering for dine kunder](embedding.md#embedding-for-your-customers) kan du integrere dashboards og rapporter for de brugere, der ikke har en konto til Power BI. Kør løsningen [Integrer for dine kunder](https://aka.ms/embedsetup/AppOwnsData).
+* Med [Integrering for din organisation](embedding.md#embedding-for-your-organization) kan du udvide Power BI-tjenesten. Kør løsningen [Integrer for din organisation](https://aka.ms/embedsetup/UserOwnsData).
 
-### <a name="ive-downloaded-the-sample-app-which-solution-do-i-choose"></a>Jeg har downloadet eksempelappen. Hvilken løsning skal jeg vælge?
+### <a name="ive-downloaded-the-sample-app-which-solution-do-i-choose"></a>Jeg har downloadet eksempelprogrammet. Hvilken løsning skal jeg vælge?
 
-Hvis du arbejder med oplevelsen **Embed for your customers**, skal du gemme og udpakke filen *PowerBI-Developer-Samples.zip*. Derefter skal du åbne mappen *PowerBI-Developer-Samples-master\App Owns Data* og køre filen *PowerBIEmbedded_AppOwnsData.sln*.
+Hvis du arbejder med oplevelsen **Integrer for dine kunder**, skal du gemme og udpakke filen *PowerBI-Developer-Samples.zip*. Derefter skal du åbne mappen *PowerBI-Developer-Samples-master\App Owns Data* og køre filen *PowerBIEmbedded_AppOwnsData.sln*.
 
 Hvis du arbejder med **Embed for your organization**, skal du gemme og udpakke filen *PowerBI-Developer-Samples.zip*. Derefter skal du åbne mappen *PowerBI-Developer-Samples-master\User Owns Data\integrate-report-web-app* og køre filen *pbi-saas-embed-report.sln*.
 
 ### <a name="how-can-i-edit-my-registered-application"></a>Hvordan kan jeg redigere min registrerede app?
 
-Du kan se, hvordan du redigerer AAD-registrerede apps [her](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application).
+Du kan se, hvordan du redigerer AAD-registrerede programmer [her](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application).
 
 ### <a name="how-can-i-edit-my-power-bi-user-profile-or-data"></a>Hvordan kan jeg redigere Power BI-brugerprofilen eller -dataene?
 

@@ -2,190 +2,205 @@
 title: Overførselsværktøj i Power BI Embedded
 description: Du kan bruge dette overførselsværktøj til at kopiere dine rapporter fra Power BI Embedded Azure-tjenesten (PaaS) til Power BI-tjenesten (SaaS).
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.author: maghan
-ms.openlocfilehash: cd88270c75b46267217147d8f02fc707eeef26ab
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 41ab7f06da3038e48e2d1188edc8b91edeee8d4f
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290382"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762346"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Overførselsværktøj i Power BI Embedded
+
 Du kan bruge dette overførselsværktøj til at kopiere dine rapporter fra Power BI Embedded Azure-tjenesten (PaaS) til Power BI-tjenesten (SaaS).
 
 Du kan overføre indhold fra dine arbejdsområdesamlinger til Power BI-tjenesten samtidig med din aktuelle løsning, og det medfører ikke nogen nedetid.
 
 ## <a name="limitations"></a>Begrænsninger
+
 * Du kan ikke downloade sendte datasæt, og de skal oprettes igen ved hjælp af Power BI REST API'erne til Power BI-tjenesten.
 * De PBIX-filer, der er importeret før 26. november 2016, kan ikke downloades.
 
 ## <a name="download"></a>Download
+
 Du kan hente eksemplet med overførselsværktøjet fra [GitHub](https://github.com/Microsoft/powerbi-migration-sample). Du kan enten downloade en ZIP-fil fra lageret, eller du kan klone lokalt. Når du har downloadet, kan du åbne *powerbi-migration-sample.sln* i Visual Studio for at bygge og køre overførselsværktøjet.
 
 ## <a name="migration-plans"></a>Overførselsplaner
+
 Din overførselsplan er blot metadata, der registrerer indholdet i Power BI Embedded, og som angiver, hvordan du vil publicere dem til Power BI-tjenesten.
 
 ### <a name="start-with-a-new-migration-plan"></a>Start med en ny overførselsplan
+
 En overførselsplan er metadataene for de elementer, der findes i Power BI Embedded, og som du vil overføre til Power BI-tjenesten. Overførselsplanen er gemt som en XML-fil.
 
 Du skal starte med at oprette en ny overførselsplan. Du kan oprette en ny overførselsplan ved at gøre følgende:
 
-1. Vælg **File** > **New Migration Plan**.
-   
-    ![](media/migrate-tool/migrate-tool-plan.png)
-2. I dialogboksen **Select Power BI Embedded Resource Group** skal du vælge rullelisten Environment og vælge prod.
+1. Vælg **Fil** > **Ny overførselsplan**.
+
+    ![Planværktøjet](media/migrate-tool/migrate-tool-plan.png)
+
+2. I dialogboksen **Vælg ressourcegruppe for Power BI Embedded** skal du vælge rullelisten Miljø og vælge prod.
+
 3. Du bliver bedt om at logge på. Du skal logge på med dit Azure-abonnement.
-   
+
    > [!IMPORTANT]
    > Dette er **ikke** din Office 365-organisationskonto, som du bruger til at logge på Power BI.
-   > 
-   > 
+
 4. Vælg det Azure-abonnement, som indeholder dine Power BI Embedded-arbejdsområdesamlinger.
-   
-    ![](media/migrate-tool/migrate-tool-select-resource-group.png)
-5. Under abonnementslisten skal du vælge den **Resource Group**, der indeholder dine arbejdsområdesamlinger og vælge **Select**.
-   
-    ![](media/migrate-tool/migrate-tool-select-resource-group2.png)
-6. Vælg **Analyze**. Dette henter en oversigt over elementerne i dit Azure-abonnement, så du kan påbegynde din plan.
-   
-    ![](media/migrate-tool/migrate-tool-analyze-group.png)
-   
+
+    ![Ressourcegruppe](media/migrate-tool/migrate-tool-select-resource-group.png)
+5. Under abonnementslisten skal du vælge den **Ressourcegruppe**, der indeholder dine arbejdsområdesamlinger og vælge **Vælg**.
+
+    ![Vælg ressourcegruppe](media/migrate-tool/migrate-tool-select-resource-group2.png)
+
+6. Vælg **Analysér**. Dette henter en oversigt over elementerne i dit Azure-abonnement, så du kan påbegynde din plan.
+
+    ![Analysér gruppe](media/migrate-tool/migrate-tool-analyze-group.png)
+
    > [!NOTE]
    > Analysen kan tage nogle minutter. Det afhænger af antallet af arbejdsområdesamlinger og af, hvor meget indhold der findes i arbejdsområdesamlingerne.
-   > 
-   > 
+
 7. Når **analysen** er færdig, bliver du bedt om at gemme din overførselsplan.
 
 På nuværende tidspunkt har du forbundet din overførselsplan med dit Azure-abonnement. Herunder kan du læse mere om, hvordan du kan arbejde med din overførselsplan. Dette omfatter Analysér og planlæg overførslen, Download, Opret grupper og Upload.
 
 ### <a name="save-your-migration-plan"></a>Gem din overførselsplan
+
 Du kan gemme din overførselsplan, så du kan bruge den igen på et senere tidspunkt. Dette opretter en XML-fil, der indeholder alle oplysningerne i din overførselsplan.
 
 Du kan gemme din overførselsplan på følgende måde.
 
-1. Vælg **File** > **Save Migration Plan**.
-   
-    ![](media/migrate-tool/migrate-tool-save-plan.png)
-2. Giv filen et navn, eller brug det genererede navn, og vælg **Save**.
+1. Vælg **Fil** > **Gem overførselsplan**.
+
+    ![Gem plan](media/migrate-tool/migrate-tool-save-plan.png)
+
+2. Giv filen et navn, eller brug det genererede navn, og vælg **Gem**.
 
 ### <a name="open-an-existing-migration-plan"></a>Åbn en eksisterende overførselsplan
+
 Du kan åben en gemt overførselsplan for at fortsætte med at arbejde med overførslen.
 
 Du kan åbne en eksisterende overførselsplan på følgende måde:
 
-1. Vælg **File** > **Open Existing Migration Plan**.
-   
-    ![](media/migrate-tool/migrate-tool-open-plan.png)
-2. Vælg din overførselsfil, og vælg **Open**.
+1. Vælg **Fil** > **Åbn eksisterende overførselsplan**.
+
+    ![Åbn plan](media/migrate-tool/migrate-tool-open-plan.png)
+
+2. Vælg din overførselsfil, og vælg **Åbn**.
 
 ## <a name="step-1-analyze--plan-migration"></a>Trin 1: Analysér og planlæg overførsel
-Under fanen **Analyze & Plan Migration** kan du se, hvad der aktuelt findes i ressourcegruppen under dit Azure-abonnement.
 
-![Fanen Analyze & Plan Migration](media/migrate-tool/migrate-tool-step1.png)
+Under fanen **Analysér og planlæg overførsel** kan du se, hvad der aktuelt findes i ressourcegruppen under dit Azure-abonnement.
+
+![Fanen Analysér og planlæg overførsel](media/migrate-tool/migrate-tool-step1.png)
 
 Vi bruger *SampleResourceGroup* som eksempel.
 
 ### <a name="paas-topology"></a>PaaS-topologi
-Dette er en oversigt over dine arbejdsområder under *Resource Group > Workspace collections > Workspaces*. Ressourcegruppen og arbejdsområderne vises med et læsevenligt navn. Arbejdsområderne vises også med et GUID.
 
-Elementerne på listen vises også med en farve og et tal i formatet (#/#). Dette viser, hvor mange rapporter der kan downloades. En sort farve betyder, at alle rapporterne kan downloades.
+Dette er en oversigt over dine arbejdsområder under *Ressourcegruppe > Arbejdsområdesamlinger > Arbejdsområder*. Ressourcegruppen og arbejdsområderne vises med et læsevenligt navn. Arbejdsområderne vises også med et GUID.
+
+Elementerne på listen vises også med en farve og et tal i formatet (#/#). Dette viser, hvor mange rapporter der kan downloades.
+En sort farve betyder, at alle rapporterne kan downloades.
 
 En rød farve betyder, at nogle af rapporterne ikke kan downloades. Tallet til venstre indikerer det samlede antal rapporter, der kan downloades. Tallet til højre indikerer det samlede antal rapport i gruppen.
 
 Du kan vælge et element i PaaS-topologien for at få vist rapporterne i rapportsektionen.
 
-### <a name="reports"></a>Reports
-I sektionen Reports vises alle de tilgængelige rapporter, og det indikeres, om de kan downloades eller ej.
+### <a name="reports"></a>Rapporter
 
-![](media/migrate-tool/migrate-tool-analyze-reports.png)
+I sektionen Rapporter vises alle de tilgængelige rapporter, og det indikeres, om de kan downloades eller ej.
 
-### <a name="target-structure"></a>Target structure
-Under **Target structure** kan du angive, hvor elementerne skal downloades til, og hvordan de skal uploades.
+![Analysér rapporter](media/migrate-tool/migrate-tool-analyze-reports.png)
 
-#### <a name="download-plan"></a>Download Plan
-Der oprettes automatisk en sti for dig. Du kan ændre stien, hvis du vil. Hvis du ændrer stien, skal du vælge **Update paths**.
+### <a name="target-structure"></a>Destinationsstruktur
+
+Under **Destinationsstruktur** kan du angive, hvor elementerne skal downloades til, og hvordan de skal uploades.
+
+#### <a name="download-plan"></a>Downloadplan
+
+Der oprettes automatisk en sti for dig. Du kan ændre stien, hvis du vil. Hvis du ændrer stien, skal du vælge **Opdater stier**.
 
 > [!NOTE]
 > Dette udfører ikke den faktiske download. Her angiver du kun den struktur, som rapporterne downloades til.
-> 
-> 
 
-#### <a name="upload-plan"></a>Upload Plan
-Her kan du angive et præfiks, der skal bruges til de apparbejdsområder, som oprettes i Power BI-tjenesten. Efter præfikset placeres GUID for det arbejdsområde, der fandtes i Azure.
+#### <a name="upload-plan"></a>Uploadplan
 
-![](media/migrate-tool/migrate-tool-upload-plan.png)
+Her kan du angive et præfiks, der skal bruges til de programarbejdsområder, som oprettes i Power BI-tjenesten. Efter præfikset placeres GUID for det arbejdsområde, der fandtes i Azure.
+
+![Uploadplan](media/migrate-tool/migrate-tool-upload-plan.png)
 
 > [!NOTE]
 > Dette opretter ikke grupperne i Power BI-tjenesten. Det definerer kun navngivningsstrukturen for grupperne.
-> 
-> 
 
-Hvis du ændrer præfikset, skal du vælge **Generate Upload Plan**.
+Hvis du ændrer præfikset, skal du vælge **Generér uploadplan**.
 
 Du kan højreklikke på en gruppe og vælge at omdøbe gruppen direkte under Upload plan, hvis du vil.
 
-![](media/migrate-tool/migrate-tool-upload-report-rename-item.png)
+![Upload rapport, og omdøb element](media/migrate-tool/migrate-tool-upload-report-rename-item.png)
 
 > [!NOTE]
 > Navnet på *gruppen* må ikke indeholde mellemrum eller ugyldige tegn.
-> 
-> 
 
 ## <a name="step-2-download"></a>Trin 2: Download
+
 Under fanen **Download** kan du sen en liste over rapporterne og de tilknyttede metadata. Du kan se statussen for eksporten sammen med den tidligere eksportstatus.
 
 ![](media/migrate-tool/migrate-tool-download-tab.png)
 
 Du har to muligheder.
 
-* Markér bestemte rapporter, og vælg **Download Selected**
-* Vælg **Download All**.
+* Markér bestemte rapporter, og vælg **Download valgte**
+* Vælg **Download alle**.
 
-![](media/migrate-tool/migrate-tool-download-options.png)
+![Indstillinger for download](media/migrate-tool/migrate-tool-download-options.png)
 
-Hvis overførslen lykkes, vises statussen *Done*, og det vises, at PBIX-filen findes.
+Hvis overførslen lykkes, vises statussen *Udført*, og det vises, at PBIX-filen findes.
 
-Når overførslen er fuldført, skal du vælge fanen **Create Groups**.
+Når overførslen er fuldført, skal du vælge fanen **Opret grupper**.
 
 ## <a name="step-3-create-groups"></a>Trin 3: Opret grupper
-Når du har downloadet rapporterne, kan du gå til fanen **Create Groups**. Under denne fane oprettes apparbejdsområderne i Power BI-tjenesten baseret på den overførselsplan, du har oprettet. Det opretter apparbejdsområdet med det navn, du har angivet under fanen **Upload** under **Analyze & Plan Migration**.
 
-![](media/migrate-tool/migrate-tool-create-groups.png)
+Når du har downloadet rapporterne, kan du gå til fanen **Opret grupper**. Under denne fane oprettes programarbejdsområderne i Power BI-tjenesten baseret på den overførselsplan, du har oprettet. Det opretter programarbejdsområdet med det navn, du har angivet under fanen **Upload** under **Analysér og planlæg overførsel**.
 
-Du kan oprette apparbejdsområder ved enten at vælge **Create Selected Groups** eller **Create All Missing Groups**.
+![Opret grupper](media/migrate-tool/migrate-tool-create-groups.png)
 
-Når du har valgt en af disse indstillinger, bliver du bedt om at logge på. *Du skal bruge legitimationsoplysningerne til den Power BI-tjeneste, du vil oprette apparbejdsområderne i.*
+Du kan oprette programarbejdsområder ved enten at vælge **Opret valgte grupper** eller **Opret alle manglende grupper**.
 
-![](media/migrate-tool/migrate-tool-create-group-sign-in.png)
+Når du har valgt en af disse indstillinger, bliver du bedt om at logge på. *Du skal bruge legitimationsoplysningerne til den Power BI-tjeneste, du vil oprette programarbejdsområderne i.*
 
-Dette opretter apparbejdsområdet i Power BI-tjenesten. Det uploader ikke rapporterne til apparbejdsområdet.
+![Opret gruppelogon](media/migrate-tool/migrate-tool-create-group-sign-in.png)
 
-Du kan bekræfte, at apparbejdsområdet blev oprettet, ved at logge på Power BI og kontrollere, at arbejdsområdet findes. Arbejdsområdet er tomt.
+Dette opretter programarbejdsområdet i Power BI-tjenesten. Det uploader ikke rapporterne til programarbejdsområdet.
 
-![](media/migrate-tool/migrate-tool-app-workspace.png)
+Du kan bekræfte, at programarbejdsområdet blev oprettet, ved at logge på Power BI og kontrollere, at arbejdsområdet findes. Arbejdsområdet er tomt.
+
+![Programarbejdsområde](media/migrate-tool/migrate-tool-app-workspace.png)
 
 Når arbejdsområdet er oprettet, kan du gå videre til fanen **Upload**.
 
 ## <a name="step-4-upload"></a>Trin 4: Upload
+
 Under fanen **Upload** kan du uploade rapporterne til Power BI-tjenesten. Der vises en liste over de rapporter, du har downloadet under fanen Download, og der vises målgruppenavnet baseret på din overførselsplan.
 
-![](media/migrate-tool/migrate-tool-upload-tab.png)
+![Fanen Upload](media/migrate-tool/migrate-tool-upload-tab.png)
 
 Du kan uploade de valgte rapporter, eller du kan uploade alle rapporterne. Du kan også nulstille statussen for upload for at uploade alle elementerne igen.
 
-Du har også mulighed for at vælge, hvad du vil gøre, hvis der findes en rapport med det samme navn. Du kan vælge mellem **Abort**, **Ignore** og **Overwrite**.
+Du har også mulighed for at vælge, hvad du vil gøre, hvis der findes en rapport med det samme navn. Du kan vælge mellem **Afbryd**, **Ignorer** og **Overskriv**.
 
-![](media/migrate-tool/migrate-tool-upload-report-same-name.png)
+![Upload rapport med samme navn](media/migrate-tool/migrate-tool-upload-report-same-name.png)
 
-![](media/migrate-tool/migrate-tool-upload-selected.png)
+![Upload valgte](media/migrate-tool/migrate-tool-upload-selected.png)
 
 ### <a name="duplicate-report-names"></a>Duplikerede rapportnavne
+
 Hvis du allerede har en rapport med samme navn, men du ved, at det er en anden rapport, skal du ændre rapportens **TargetName**. Du kan ændre navnet manuelt ved at redigere XML-filen med overførselsplanen.
 
 Du skal lukke overførselsværktøjet for at ændre dette, og du skal derefter åbne værktøjet og overførselsplanen igen.
@@ -220,13 +235,14 @@ For det element, hvor der opstod fejl, kan jeg ændre navnet for SaaSTargetRepor
 
 Derefter kan jeg åbne planen i overførselsværktøjet og uploade rapporten igen.
 
-Når jeg går tilbage til Power BI, kan vi se, at rapporterne og datasættene er blevet uploadet i apparbejdsområdet.
+Når jeg går tilbage til Power BI, kan vi se, at rapporterne og datasættene er blevet uploadet i programarbejdsområdet.
 
-![](media/migrate-tool/migrate-tool-upload-app-workspace.png)
+![Upload programarbejdsområde](media/migrate-tool/migrate-tool-upload-app-workspace.png)
 
 <a name="upload-local-file"></a>
 
 ### <a name="upload-a-local-pbix-file"></a>Upload en lokal PBIX-fil
+
 Du kan uploade en lokal version af en Power BI Desktop-fil. Du skal lukke værktøjet, redigere XML-filen og angive den fulde sti til din lokale PBIX-fil i egenskaben **PbixPath**.
 
 ```
@@ -238,7 +254,8 @@ Når du har redigeret XML-filen, skal du åbne planen i overførselsværktøjet 
 <a name="directquery-reports"></a>
 
 ### <a name="directquery-reports"></a>DirectQuery-rapporter
-Du skal opdatere forbindelsesstrengen for DirectQuery-rapporter. Dette kan du gøre på *powerbi.com*, eller du kan programmeringsmæssigt oprette en forepørgsel til forbindelsesstrengen fra Power BI Embedded (Paas). Du kan se et eksempel i [Udtræk DirectQuery-forbindelsesstrengen fra PaaS-rapport](migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
+
+Du skal opdatere forbindelsesstrengen for DirectQuery-rapporter. Dette kan du gøre på *powerbi.com*, eller du kan programmeringsmæssigt oprette en forespørgsel til forbindelsesstrengen fra Power BI Embedded (Paas). Du kan se et eksempel i [Udtræk DirectQuery-forbindelsesstrengen fra PaaS-rapport](migrate-code-snippets.md#extract-directquery-connection-string-from-paas-report).
 
 Du kan derefter opdatere forbindelsesstrengen for datasættet i Power BI-tjenesten (Saas) og angive legitimationsoplysningerne for datakilden. Du kan se følgende eksempler for at få flere detaljer.
 
@@ -246,11 +263,13 @@ Du kan derefter opdatere forbindelsesstrengen for datasættet i Power BI-tjenest
 * [Angiv DirectQuery-legitimationsoplysninger i SaaS-arbejdsområde](migrate-code-snippets.md#set-directquery-credentials-in-saas-workspace)
 
 ## <a name="embedding"></a>Integration
-Nu, hvor dine rapporter er overført fra Power BI Embedded Azure-tjenesten til Power BI-tjenesten, kan du opdatere din app og begynde at integrere rapporterne i dette apparbejdsområde.
+
+Nu, hvor dine rapporter er overført fra Power BI Embedded Azure-tjenesten til Power BI-tjenesten, kan du opdatere dit program og begynde at integrere rapporterne i dette programarbejdsområde.
 
 Du kan finde flere oplysninger under [Sådan overfører du indhold fra arbejdsområdesamlinger i Power BI Embedded til Power BI](migrate-from-powerbi-embedded.md).
 
 ## <a name="next-steps"></a>Næste trin
+
 [Integrer med Power BI](embedding.md)  
 [Sådan overfører du indhold i arbejdsområdesamlingen i Power BI Embedded til Power BI](migrate-from-powerbi-embedded.md)  
 [Power BI Premium – hvad er det?](../service-premium.md)  
@@ -259,5 +278,4 @@ Du kan finde flere oplysninger under [Sådan overfører du indhold fra arbejdsom
 [Integreret JavaScript-eksempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Hvidbog til Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
-Flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

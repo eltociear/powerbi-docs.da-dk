@@ -4,22 +4,21 @@ description: Få mere at vide om, hvordan du kan udrulle indhold til datacentre 
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 08/31/2018
-LocalizationGroup: Embedded
-ms.openlocfilehash: ab1b0f7ea7dbee13f39fbf47505a00e2ed6d41ea
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 02/05/2019
+ms.openlocfilehash: 25627709af2faa78fd30b28cffba21d1442e0d3f
+ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280418"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55762415"
 ---
 # <a name="multi-geo-support-for-power-bi-embedded-preview"></a>Multi-Geo-understøttelse af Power BI Embedded (prøveversion)
 
-**Multi-Geo-understøttelse af Power BI Embedded (prøveversion)** betyder, at ISV'er og organisationer, der bygger programmer ved at bruge Power BI Embedded til at integrere analyser i deres apps, nu kan udrulle deres data i forskellige områder over hele verden.
+**Multi-Geo-understøttelse af Power BI Embedded (prøveversion)** betyder, at ISV'er og organisationer, der bygger programmer ved at bruge Power BI Embedded til at integrere analyser i deres programmer, nu kan udrulle deres data i forskellige områder over hele verden.
 
 Nu kan kunder, der bruger **Power BI Embedded**, konfigurere en **A-kapacitet** ved hjælp af indstillinger for **Multi-Geo** baseret på de samme funktioner og begrænsninger, som [Power BI Premium understøtter ved hjælp af Multi-Geo](../service-admin-premium-Multi-Geo.md).
 
@@ -56,7 +55,9 @@ Du kan ikke ændre placeringen af en Power BI Embedded-ressource, når du har op
 Hvis du vil flytte dit Power BI-indhold til et andet område, skal du følge disse trin:
 
 1. [Opret en ny kapacitet](azure-pbie-create-capacity.md) i et andet område.
+
 2. Tildel alle arbejdsområder fra den eksisterende kapacitet til den nye kapacitet.
+
 3. Slet den gamle kapacitet, eller afbryd den midlertidigt.
 
 Det er vigtigt at bemærke, at hvis du beslutter at slette en kapacitet uden at tildele indholdet, flyttes alt indholdet i den pågældende kapacitet til en delt kapacitet, som er i dit lokale område.
@@ -65,8 +66,10 @@ Det er vigtigt at bemærke, at hvis du beslutter at slette en kapacitet uden at 
 
 Vi har foretaget nogle ændringer af eksisterende API'er for at understøtte administration af kapaciteter med Multi-Geo via API:
 
-1. **[Hent kapaciteter](https://docs.microsoft.com/rest/api/power-bi/capacities/getcapacities)** –API'en returnerer en liste over kapaciteter med adgang til brugeren. Svaret omfatter nu endnu en egenskab, der kaldes "region", som angiver placeringen af kapaciteten.
-2. **[Tildel til kapacitet](https://docs.microsoft.com/rest/api/power-bi/capacities)** – API'en gør det muligt at tildele et givent arbejdsområde til en kapacitet. Denne handling tillader ikke, at du tildeler arbejdsområder til en kapacitet uden for dit lokale område eller flytter arbejdsområder mellem kapaciteter i forskellige områder. For at udføre denne handling skal brugeren stadig have administratortilladelser til arbejdsområdet og administrator- eller tildelingstilladelser til målkapaciteten.
+1. **[Hent kapaciteter](https://docs.microsoft.com/rest/api/power-bi/capacities/getcapacities)** –API'en returnerer en liste over kapaciteter med adgang til brugeren. Svaret omfatter nu endnu en egenskab, der kaldes "område", som angiver placeringen af kapaciteten.
+
+2. **[Tildel til kapacitet](https://docs.microsoft.com/rest/api/power-bi/capacities)** – API'en gør det muligt at tildele et givent arbejdsområde til en kapacitet. Denne handling tillader ikke, at du tildeler arbejdsområder til en kapacitet uden for dit lokale område eller flytter arbejdsområder mellem kapaciteter i forskellige områder. For at udføre denne handling skal brugeren eller [tjenesteprincipalen](embed-service-principal.md) stadig have administratortilladelser til arbejdsområdet og administrator- eller tildelingstilladelser til målkapaciteten.
+
 3. **[Azure Resource Manager-API](https://docs.microsoft.com/rest/api/power-bi-embedded/capacities)** – Alle Azure Resource Manager-API-handlinger, herunder *Opret* og *Slet*, understøtter Multi-Geo.
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser

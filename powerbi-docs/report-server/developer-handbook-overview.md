@@ -9,34 +9,34 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: df77d4b9642a6df511af8af054e3e983c0120f77
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9b1357d2e10214cdf578bff4d2aa7fca8fc19033
+ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291613"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55794715"
 ---
 # <a name="developer-handbook-overview-power-bi-report-server"></a>Oversigt over udviklerhåndbog, Power BI-rapportserver
 Velkommen til udviklerhåndbogen til Power BI-rapportserver, der er en placering i det lokale miljø til lagring og administration af dine Power BI- og mobilrapporter samt dine sideinddelte rapporter.
 
 ![](media/developer-handbook-overview/admin-handbook.png)
 
-I denne håndbog fremhæves de muligheder, du som udvikler har for at arbejde med Power BI-rapportserver.
+I denne håndbog fremhæves de muligheder, du har som udvikler, for at arbejde med Power BI-rapportserver.
 
 ## <a name="embedding"></a>Integration
-Du kan integrere en hvilken som helst rapport på Power BI-rapportserver i en iFrame ved at føje parameteren `?rs:Embed=true` for forespørgselsstrengen til URL-adressen. Dette fungerer for Power BI-rapporter samt for andre rapporttyper.
+Du kan integrere en hvilken som helst rapport på Power BI-rapportserver i en iFrame ved at føje parameteren `?rs:Embed=true` for forespørgselsstrengen til URL-adressen. Denne teknik fungerer til Power BI-rapporter samt til andre rapporttyper.
 
 ### <a name="report-viewer-control"></a>Kontrolelementet Rapportfremviser
-Du kan gøre brug af kontrolelementet Rapportfremviser i forbindelse med sideinddelte rapporter. Det giver dig mulighed for at placere kontrolelementet inde i et .NET-vindue eller --webprogram. Du kan finde flere oplysninger under [Introduktion til kontrolelementet Rapportfremviser](https://docs.microsoft.com/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started).
+Du kan gøre brug af kontrolelementet Rapportfremviser i forbindelse med sideinddelte rapporter. Den giver dig mulighed for at placere kontrolelementet i et .NET-vindue eller -webprogram. Du kan finde flere oplysninger under [Introduktion til kontrolelementet Rapportfremviser](https://docs.microsoft.com/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started).
 
 ## <a name="apis"></a>API'er
-Du har flere API-indstillinger, som du kan bruge til at interagere med Power BI-rapportserver. De omfatter bl.a. følgende.
+Du har flere API-indstillinger, som du kan bruge til at interagere med Power BI-rapportserver. Denne teknik omfatter følgende.
 
 * [REST API'er](rest-api.md)
 * [Adgang til URL-adresse](https://docs.microsoft.com/sql/reporting-services/url-access-ssrs)
 * [WMI-provider](https://docs.microsoft.com/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
 
-Du kan også bruge de åbne kilder for [PowerShell-hjælpeprogrammer](https://github.com/Microsoft/ReportingServicesTools) til at administrere din rapportserver.
+Du kan også bruge [PowerShell-hjælpeprogrammerne](https://github.com/Microsoft/ReportingServicesTools) i åben kildekode til at administrere din rapportserver.
 
 > [!NOTE]
 > PowerShell-hjælpeprogrammerne understøtter i øjeblikket ikke Power BI Desktop-filer (.pbix).
