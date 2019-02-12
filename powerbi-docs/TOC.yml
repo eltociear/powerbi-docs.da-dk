@@ -1,4 +1,484 @@
 items:
+- name: Brug af Power BI
+  items:
+  - name: Oversigt
+    items:
+    - name: Hvad er Power BI?
+      href: power-bi-overview.md
+  - name: Hurtige introduktioner
+    items:
+    - name: Sådan navigerer du i Power BI
+      href: consumer/end-user-experience.md
+  - name: Selvstudier
+    items:
+    - name: Opret forbindelse til et eksempel på en GitHub
+      href: service-tutorial-connect-to-github.md
+    - name: Introduktion til Power BI
+      href: service-get-started.md
+    - name: Interager med ArcGIS-kort i Power BI
+      href: visuals/power-bi-visualizations-arcgis.md
+  - name: Begreber
+    items:
+    - name: Nyheder i Power BI-tjenesten
+      href: service-whats-new.md
+    - name: Tilmelding til selvbetjening
+      href: service-self-service-signup-for-power-bi.md
+    - name: Power BI basics
+      items:
+      - name: Power BI – grundlæggende begreber
+        href: consumer/end-user-basic-concepts.md
+      - name: Søgning og sortering af indhold
+        href: service-navigation-search-filter-sort.md
+      - name: Relateret indhold
+        href: consumer/end-user-related.md
+      - name: Seneste indhold
+        href: consumer/end-user-recent.md
+      - name: Tilmeld dig Power BI-prøveversionsfunktioner
+        href: consumer/end-user-preview-features.md
+      - name: Dashboards i Power BI
+        href: consumer/end-user-dashboards.md
+      - name: Spørgsmål og svar i Power BI
+        href: consumer/end-user-q-and-a.md
+      - name: Rapporter i Power BI
+        href: consumer/end-user-reports.md
+      - name: Introduktion til Cortana til Power BI
+        href: service-cortana-intro.md
+      - name: Dashboardfelter i Power BI
+        href: consumer/end-user-tiles.md
+      - name: Delt med mig
+        href: consumer/end-user-shared-with-me.md
+      - name: Opdatering af data i Power BI
+        href: refresh-data.md
+      - name: Ofte stillede spørgsmål
+        href: consumer/end-user-faq.md
+      - name: Power BI til US Government
+        href: service-govus-overview.md
+      - name: Funktioner efter licenstype
+        href: service-features-license-type.md
+      - name: 10 tips til at få hjælp
+        href: service-tips-for-finding-help.md
+      - name: Om filtre og fremhævning i Power BI-rapporter
+        href: power-bi-reports-filters-and-highlighting.md
+      - name: Power BI forbrugere og -designere
+        href: consumer/end-user-consumer.md
+    - name: Arbejd i Power BI
+      items:
+      - name: Quick Insights i Power BI
+        href: consumer/end-user-insights.md
+      - name: Hent data fra filer
+        href: service-get-data-from-files.md
+      - name: Åbn en Power BI-rapport i Læsevisning eller Redigeringsvisning
+        href: consumer/end-user-reading-view.md
+      - name: Rapporteditoren... Få en introduktion
+        href: service-the-report-editor-take-a-tour.md
+      - name: Visualiseringer i Power BI
+        href: visuals/power-bi-report-visualizations.md
+      - name: Datakilder til Power BI
+        href: service-get-data.md
+      - name: Aktivering af udvidet Pro-prøveversion
+        href: service-extended-pro-trial.md
+      - name: Microsoft Flow og Power BI
+        href: service-flow-integration.md
+      - name: Ofte stillede spørgsmål om Power BI til Germany Cloud-kunder
+        href: service-govde-faq.md
+      - name: Power BI Kom i gang med tredjeparts-apps
+        href: service-power-bi-get-started-third-party-apps.md
+      - name: Typerne af Quick Insights, der understøttes af Power BI
+        href: consumer/end-user-insight-types.md
+      - name: Aggregater (sum, gennemsnit, maksimum, osv.) i Power BI
+        href: service-aggregates.md
+      - name: Indstillinger for sidevisning i en Power BI-rapport
+        href: power-bi-report-display-settings.md
+  - name: Sådan gør du
+    items:
+    - name: Power BI basics
+      items:
+      - name: Almindelige opgaver
+        items:
+        - name: Foretrukne dashboards, rapporter og apps i Power BI
+          href: consumer/end-user-favorite.md
+        - name: Få vist et dashboard-felt i fokustilstand
+          href: consumer/end-user-focus.md
+        - name: Udskriv et dashboard, udskriv et dashboard-felt, udskriv en rapportside
+          href: consumer/end-user-print.md
+        - name: Omdøb indhold i Power BI
+          href: service-rename.md
+        - name: Få vist dashboards og rapporter i fuld skærmtilstand (tv-tilstand)
+          href: service-fullscreen-mode.md
+        - name: Fjern indhold i Power BI
+          href: consumer/end-user-delete.md
+        - name: Tilmeld din US Government-organisation
+          href: service-govus-signup.md
+        - name: Databeskeder i Power BI-tjenesten
+          href: service-set-data-alerts.md
+        - name: Tip og tricks til at stille spørgsmål med Spørgsmål og svar i Power BI
+          href: consumer/end-user-q-and-a-tips.md
+        - name: Installer og brug apps med dashboards og rapporter
+          href: consumer/end-user-apps.md
+        - name: Find og opret forbindelse til en organisationsindholdspakke
+          href: consumer/end-user-content-pack.md
+        - name: Kom i gang vha. spørgsmål og svar om Power BI
+          href: power-bi-visualization-introduction-to-q-and-a.md
+      - name: Opret forbindelse til tjenester
+        items:
+        - name: Opret forbindelse til de tjenester, du bruger
+          href: consumer/end-user-connect-to-services.md
+        - name: Acumatica
+          href: service-connect-to-acumatica.md
+        - name: Adobe Analytics
+          href: service-connect-to-adobe-analytics.md
+        - name: Alpine Metrics Sales Predictions
+          href: service-connect-to-alpine-metrics.md
+        - name: appFigures
+          href: service-connect-to-appfigures.md
+        - name: Application Insights
+          href: service-connect-to-application-insights.md
+        - name: AT Internet Bridge
+          href: service-connect-to-at-internet.md
+        - name: Azure Audit Logs
+          href: service-connect-to-azure-audit-logs.md
+        - name: Azure Mobile Engagement
+          href: service-connect-to-azure-mobile.md
+        - name: Microsoft Azure Consumption Insights
+          href: service-connect-to-azure-consumption-insights.md
+        - name: Azure Search
+          href: service-connect-to-azure-search.md
+        - name: Circuit ID
+          href: service-connect-to-circuit-id.md
+        - name: ClickDimensions
+          href: service-connect-to-clickdimensions.md
+        - name: comScore Digital Analytix
+          href: service-connect-to-connect-to.md
+        - name: GitHub
+          href: service-connect-to-github.md
+        - name: Google Analytics
+          href: service-connect-to-google-analytics.md
+        - name: Insightly
+          href: service-connect-to-insightly.md
+        - name: IntelliBoard
+          href: service-connect-to-intelliboard.md
+        - name: Lithium
+          href: service-connect-to-lithium.md
+        - name: MailChimp
+          href: service-connect-to-mailchimp.md
+        - name: Mandrill
+          href: service-connect-to-mandrill.md
+        - name: Marketo
+          href: service-connect-to-marketo.md
+        - name: Microsoft Azure Enterprise
+          href: service-connect-to-azure-enterprise.md
+        - name: Microsoft Dynamics 365
+          href: service-connect-to-microsoft-dynamics-ax.md
+        - name: Microsoft Dynamics CRM
+          href: service-connect-to-microsoft-dynamics-crm.md
+        - name: Microsoft Dynamics Marketing
+          href: service-connect-to-microsoft-dynamics-marketing.md
+        - name: Microsoft Dynamics NAV
+          href: service-connect-to-microsoft-dynamics-nav.md
+        - name: Office365Mon
+          href: service-connect-to-office365mon.md
+        - name: Planview Enterprise
+          href: service-connect-to-planview.md
+        - name: Prevedere
+          href: service-connect-to-prevedere.md
+        - name: Project Online
+          href: service-connect-to-project-online.md
+        - name: Project Madeira
+          href: service-connect-to-project-madeira.md
+        - name: Projectplace
+          href: service-connect-to-projectplace.md
+        - name: QuickBooks Online
+          href: service-connect-to-quickbooks-online.md
+        - name: Salesforce
+          href: service-connect-to-salesforce.md
+        - name: SendGrid
+          href: service-connect-to-sendgrid.md
+        - name: ServiceNow Incidents
+          href: service-connect-to-servicenow.md
+        - name: Smartsheet
+          href: service-connect-to-smartsheet.md
+        - name: SparkPost
+          href: service-connect-to-sparkpost.md
+        - name: SQL Database Auditing
+          href: service-connect-to-azure-sql-database-auditing.md
+        - name: SQL Sentry
+          href: service-connect-to-sql-sentry.md
+        - name: Stripe
+          href: service-connect-to-stripe.md
+        - name: SweetIQ
+          href: service-connect-to-sweetiq.md
+        - name: Troux
+          href: service-connect-to-troux.md
+        - name: Twilio
+          href: service-connect-to-twilio.md
+        - name: tyGraph
+          href: service-connect-to-tygraph.md
+        - name: UserVoice
+          href: service-connect-to-uservoice.md
+        - name: VMob
+          href: service-connect-to-vmob.md
+        - name: Webtrends
+          href: service-connect-to-webtrends.md
+        - name: Windows Dev Center
+          href: service-connect-to-windows-dev-center.md
+        - name: Xero
+          href: service-connect-to-xero.md
+        - name: Zendesk
+          href: service-connect-to-zendesk.md
+        - name: Ziosk
+          href: service-connect-to-ziosk.md
+        - name: Zuora
+          href: service-connect-to-zuora.md
+      - name: Dashboards
+        items:
+        - name: Udvalgte dashboards i Power BI
+          href: consumer/end-user-featured.md
+        - name: Power BI Unified Notification Center
+          href: consumer/end-user-notification-center.md
+        - name: Dashboardtemaer
+          href: service-dashboard-themes.md
+      - name: Rapporter
+        items:
+        - name: Mange måder at åbne en rapport på
+          href: consumer/end-user-report-open.md
+        - name: Rediger, hvordan et diagram sorteres i en rapport i Power BI
+          href: consumer/end-user-change-sort.md
+        - name: Eksportér data fra en visualisering
+          href: consumer/end-user-export-data.md
+        - name: Sådan bruger du rapportfiltre
+          href: consumer/end-user-report-filter.md
+        - name: Abonner på en rapport eller et dashboard
+          href: consumer/end-user-subscribe.md
+      - name: Publicer
+        items:
+        - name: Power BI Publisher til Excel
+          href: publisher-for-excel.md
+        - name: Publicer til PowerPoint
+          href: consumer/end-user-powerpoint.md
+    - name: Arbejd i Power BI
+      items:
+      - name: Dashboards
+        items:
+        - name: Opret et dashboard fra en rapport
+          href: service-dashboard-create.md
+        - name: Opret en kopi af et dashboard
+          href: service-dashboard-copy.md
+        - name: Fastgør et felt til et Power BI-dashboard fra en rapport
+          href: service-dashboard-pin-tile-from-report.md
+        - name: Fastgør et felt fra ét dashboard til et andet dashboard
+          href: service-pin-tile-to-another-dashboard.md
+        - name: Fastgør et felt til et Power BI-dashboard fra Excel
+          href: service-dashboard-pin-tile-from-excel.md
+        - name: Fastgør et felt til et Power BI-dashboard fra spørgsmålsboksen Spørgsmål og svar
+          href: service-dashboard-pin-tile-from-q-and-a.md
+        - name: Fastgør en hel rapportside til et Power BI-dashboard
+          href: service-dashboard-pin-live-tile-from-report.md
+        - name: Forbrugsmetrik for dashboards
+          href: service-usage-metrics.md
+        - name: Føj billede, tekstfelt, video eller internetkode til dit dashboard
+          href: service-dashboard-add-widget.md
+        - name: Rediger et felt – ændr størrelse, flyt, omdøb, fastgør, slet, tilføj hyperlink
+          href: service-dashboard-edit-tile.md
+        - name: Tips til udformning af et fantastisk Power BI-dashboard
+          href: service-dashboards-design-tips.md
+        - name: Optimer dine data til Power BI Quick Insights
+          href: service-insights-optimize.md
+        - name: Opret en telefonvisning af et dashboard
+          href: service-create-dashboard-mobile-phone-view.md
+        - name: Opret en QR-kode for et felt
+          href: service-create-qr-code-for-tile.md
+        - name: Føj et billede til et dashboard
+          href: service-dashboard-add-image.md
+        - name: Dashboard data-klassificering
+          href: service-data-classification.md
+      - name: Stil spørgsmål til dine data
+        items:
+        - name: Brug spørgsmål og svar til at oprette visualiseringer og oprette rapporter
+          href: power-bi-tutorial-q-and-a.md
+        - name: Brug af Spørgsmål og svar med Power BI Gateway – Enterprise data (Eksempelvisning)
+          href: service-q-and-a-direct-query.md
+        - name: Få dine data til at fungere godt med Spørgsmål og svar i Power BI
+          href: service-prepare-data-for-q-and-a.md
+        - name: Aktiver Cortana til Power BI
+          href: service-cortana-enable.md
+        - name: Opret udvalgte spørgsmål til Spørgsmål og svar i Power BI
+          href: service-q-and-a-create-featured-questions.md
+        - name: Arbejd med det sproglige skema i Power BI Desktop
+          href: power-bi-q-and-a-linguistic-schema.md
+      - name: Del dit arbejde
+        items:
+        - name: Hvordan samarbejder og deler jeg?
+          href: service-how-to-collaborate-distribute-dashboards-reports.md
+        - name: Del dashboards og rapporter
+          href: service-share-dashboards.md
+        - name: Opret apparbejdsområder
+          href: service-create-workspaces.md
+        - name: Opret de nye arbejdsområder (eksempelvisning)
+          href: service-create-the-new-workspaces.md
+        - name: Publicer apps med dashboards og rapporter
+          href: consumer/end-user-apps.md
+        - name: Del en filtreret rapport
+          href: service-share-reports.md
+        - name: Publicer fra Power BI på internettet
+          href: service-publish-to-web.md
+        - name: Integrer rapport i SharePoint Online
+          href: service-embed-report-spo.md
+        - name: Opret forbindelse til filer på din gruppes OneDrive
+          href: service-connect-to-files-in-app-workspace-onedrive-for-business.md
+        - name: Samarbejd i din gruppes arbejdsområde
+          href: service-collaborate-power-bi-workspace.md
+        - name: Administrer din gruppe i Power BI og Office 365
+          href: service-manage-app-workspace-in-power-bi-and-office-365.md
+        - name: Del et dashboard, der er sammenkædet med en Excel-projektmappe på OneDrive for Business
+          href: service-share-dashboard-that-links-to-excel-onedrive.md
+      - name: Indholdspakker
+        items:
+        - name: Administrer, opdater og slet organisationsindholdspakker
+          href: service-organizational-content-pack-manage-update-delete.md
+        - name: 'Organisationsindholdspakker: Kopiér, opdater og få adgang'
+          href: service-organizational-content-pack-copy-refresh-access.md
+        - name: 'Organisationsindholdspakker: Introduktion'
+          href: service-organizational-content-pack-introduction.md
+        - name: Opret og publicer en organisationsindholdspakke
+          href: service-organizational-content-pack-create-and-publish.md
+        - name: Flyt din forbindelse til en organisationsindholdspakke
+          href: service-organizational-content-pack-disconnect.md
+        - name: Certificering
+          items:
+          - name: Program for indholdspakkecertificering
+            href: service-content-pack-overview.md
+          - name: Skabelon til oprettelse af Indholdspakke
+            href: template-content-pack-authoring.md
+          - name: Skabelon til test af Indholdspakke
+            href: template-content-pack-testing.md
+          - name: Skabelon til oplevelse af Indholdspakke
+            href: template-content-pack-experience.md
+      - name: Rapporter
+        items:
+        - name: Opret en ny rapport ud fra en eksisterende rapport
+          href: power-bi-report-copy.md
+        - name: Seneste indhold
+          href: consumer/end-user-recent.md
+        - name: Føj en side til en rapport i Power BI
+          href: power-bi-report-add-page.md
+        - name: Føj et filter til en rapport i Power BI
+          href: power-bi-report-add-filter.md
+        - name: Gem en rapport i Power BI
+          href: service-report-save.md
+        - name: Opret en ny rapport ud fra et datasæt
+          href: service-report-create-new.md
+        - name: Interager med en rapport i Redigeringsvisning i Power BI
+          href: service-interact-with-a-report-in-editing-view.md
+        - name: Analysér i Excel
+          href: service-analyze-in-excel.md
+        - name: Rediger, hvordan visualiseringer interagerer i en rapport
+          href: service-reports-visual-interactions.md
+        - name: Tips og tricks til oprettelse af rapporter i Power BI-tjenesten
+          href: power-bi-reports-tips-and-tricks-for-creating.md
+        - name: Analytics-rude
+          href: service-analytics-pane.md
+        - name: Forbrugsmetrik for rapporter
+          href: service-usage-metrics.md
+        - name: Opret en QR-kode for en rapport
+          href: service-create-qr-code-for-report.md
+        - name: Skift visningsindstillingerne for en side i en Power BI-rapport
+          href: consumer/end-user-report-view.md
+        - name: Dupliker en rapportside i Power BI
+          href: power-bi-report-copy-paste-page.md
+        - name: Eksporter en rapport fra Power BI service til Skrivebord (Eksempelsvisning)
+          href: service-export-to-pbix.md
+        - name: Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
+          href: service-url-filters.md
+        - name: Bedste praksis for oprettelse af hurtige og pålidelige rapporter i Power BI
+          href: power-bi-reports-performance.md
+      - name: Data fra filer
+        items:
+        - name: Fra Excel-projektmappe til fantastisk rapport på ingen tid
+          href: service-from-excel-to-stunning-report.md
+        - name: Hent data fra Excel-projektmappefiler
+          href: service-excel-workbook-files.md
+        - name: Hent data fra Power BI Desktop-filer
+          href: service-desktop-files.md
+        - name: Parameterindstillinger for datasæt
+          href: service-parameters.md
+        - name: Hent data fra kommaseparerede værdifiler(.csv)
+          href: service-comma-separated-value-files.md
+        - name: Streaming i realtid i Power BI (Eksempelsvisning)
+          href: service-real-time-streaming.md
+        - name: Publicer i Power BI fra Excel 2016
+          href: service-publish-from-excel.md
+        - name: Reducer størrelsen på en Excel-projektmappe for at få den vist i Power BI
+          href: reduce-the-size-of-an-excel-workbook.md
+      - name: Data fra databaser
+        items:
+        - name: Azure SQL Data Warehouse med DirectQuery
+          href: service-azure-sql-data-warehouse-with-direct-connect.md
+        - name: Azure SQL Database med DirectQuery
+          href: service-azure-sql-database-with-direct-connect.md
+        - name: Spark on HDInsight med DirectQuery
+          href: spark-on-hdinsight-with-direct-connect.md
+        - name: SQL Server Analysis Services live data i Power BI
+          href: sql-server-analysis-services-tabular-data.md
+        - name: Azure og Power BI
+          href: service-azure-and-power-bi.md
+      - name: Opdatering af data
+        items:
+        - name: Konfigurer planlagt opdatering
+          href: refresh-scheduled-refresh.md
+        - name: Opdater et datasæt, der er oprettet via en Power BI Desktop-fil – lokalt
+          href: refresh-desktop-file-local-drive.md
+        - name: Opdater et datasæt, der er oprettet via en Power BI Desktop-fil – cloud
+          href: refresh-desktop-file-onedrive.md
+        - name: Opdater et datasæt, der er oprettet ud fra en Excel-projektmappe - lokalt
+          href: refresh-excel-file-local-drive.md
+        - name: Opdater et datasæt, der er oprettet ud fra en Excel-projektmappe - cloud
+          href: refresh-excel-file-onedrive.md
+        - name: Opdater et datasæt, der er oprettet ud fra en fil med kommaseparerede værdier (.csv) fil på OneDrive
+          href: refresh-csv-file-onedrive.md
+        - name: Fejlfinding i forbindelse med opdatering af scenarier
+          href: refresh-troubleshooting-refresh-scenarios.md
+      - name: Fejlfinding
+        items:
+        - name: Har du glemt din adgangskode til Power BI?
+          href: service-admin-forgot-your-password.md
+        - name: Hentning af yderligere diagnosticeringsoplysninger til Power BI
+          href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
+        - name: Alternativ mailadresse til Power BI
+          href: service-admin-alternate-email-address-for-power-bi.md
+        - name: Sådan bruger du det samme konto-logon til Power BI og Azure
+          href: service-admin-how-to-use-the-same-account-as-azure.md
+        - name: Office 365 dedikeret - kendte problemer
+          href: service-admin-office-365-dedicated-known-issues.md
+        - name: Fejlfinding af Cortana
+          href: service-cortana-troubleshoot.md
+        - name: Fejlfindingsanalyse i Excel
+          href: desktop-troubleshooting-analyze-in-excel.md
+        - name: Fejlfinding af datagateway i det lokale miljø
+          href: service-gateway-onprem-tshoot.md
+        - name: Fejlfinding af Power BI gateway - personlig
+          href: service-admin-troubleshooting-power-bi-personal-gateway.md
+        - name: Fejlfinding af ikke-understøttet datakilde til opdatering
+          href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
+        - name: Fejlfinding af planlagt opdatering af Azure SQL Databases
+          href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
+        - name: 'Fejl: Der blev ikke fundet nogen data i din Excel-projektmappe'
+          href: service-admin-troubleshoot-excel-workbook-data.md
+        - name: Fejlfinding af feltfejl
+          href: refresh-troubleshooting-tile-errors.md
+        - name: Sådan opdaterer du dine legitimationsoplysninger til Xero-indholdspakken, hvis opdatering mislykkedes
+          href: service-refresh-xero-credentials.md
+  - name: Ressourcer
+    items:
+    - name: Videoer
+      href: videos.md
+    - name: Webinarer
+      href: webinars.md
+    - name: Understøttede browsere
+      href: consumer/end-user-browsers.md
+    - name: Understøttede sprog og lande/områder
+      href: supported-languages-countries-regions.md
+    - name: Hvidbøger
+      href: whitepapers.md
 - name: Power BI Desktop
   items:
   - name: Oversigt
@@ -188,6 +668,8 @@ items:
         href: service-google-analytics-connector.md
       - name: 'Project Online: Opret forbindelse til data via Power BI Desktop'
         href: desktop-project-online-connect-to-data.md
+      - name: Microsoft Graph Security til Power BI Desktop
+        href: desktop-connect-graph-security.md
     - name: Omdan og udform data
       items:
       - name: Brug Figurkort i Power BI Desktop (prøveversion)
@@ -262,6 +744,8 @@ items:
         href: desktop-inline-hierarchy-labels.md
       - name: Brug det numeriske interval-udsnitsværktøj
         href: desktop-slicer-numeric-range.md
+      - name: Brug det relative dato-udsnitsværktøj
+        href: desktop-slicer-filter-date-range.md
       - name: Opret et udsnit, du kan tilpasse størrelsen på
         href: power-bi-slicer-filter-responsive.md
       - name: Opret brugerdefinerede svarkort til Cortana
@@ -288,6 +772,8 @@ items:
         href: desktop-tips-and-tricks-for-creating-reports.md
     - name: Visualiseringer
       items:
+      - name: Visualiseringstyper i Power BI
+        href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: Visualiseringer i Power BI
         href: visuals/power-bi-report-visualizations.md
       - name: Bedste praksisser for visualisering
@@ -330,6 +816,8 @@ items:
         href: visuals/power-bi-visualization-filled-maps-choropleths.md
       - name: Tragtformede diagrammer i Power BI
         href: visuals/power-bi-visualization-funnel-charts.md
+      - name: Diagrammer fra vigtige lobbyister i Power BI
+        href: visuals/power-bi-visualization-influencers.md
       - name: Højdensitets linje-stikprøvetagning
         href: desktop-high-density-sampling.md
       - name: KPI-visualiseringer
@@ -562,7 +1050,7 @@ items:
         href: service-export-to-pbix.md
       - name: Filtrer en rapport ved hjælp af parametre i URL-adressen
         href: service-url-filters.md
-      - name: Bedste praksis for oprettelse af hurtige og pålidelige rapporter
+      - name: Bedste praksis for oprettelse af hurtige og pålidelige rapporter i Power BI
         href: power-bi-reports-performance.md
     - name: Stil spørgsmål til dine data
       items:
@@ -574,8 +1062,6 @@ items:
         href: service-prepare-data-for-q-and-a.md
       - name: Opret udvalgte spørgsmål til Spørgsmål og svar
         href: service-q-and-a-create-featured-questions.md
-      - name: Visualiseringstyper i Spørgsmål og svar
-        href: visuals/power-bi-visualization-types-for-reports-and-q-and-a.md
       - name: Brug Spørgsmål og svar via direkte forbindelser
         href: service-q-and-a-direct-query.md
       - name: Introduktion til Cortana til Power BI
@@ -1305,9 +1791,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI sikkerhed
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 27de32e6dda7f6eba069eaee56582a449dca858c
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: d8ef513bd9611347c9a2c199e99659a70f38591e
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794491"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086603"
