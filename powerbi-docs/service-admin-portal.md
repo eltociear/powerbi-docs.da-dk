@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 8cda803939ee9ae2f864496300fce25890770dac
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 1bc7539eba4f390c02417edd52ea3f792613abe6
+ms.sourcegitcommit: 3729c88bd991e450fcb2d9b79e6ab478b6e8dc76
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430367"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55888227"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -287,16 +287,6 @@ Brugere i organisationen kan markere dashboards med klassificeringsangivelser, d
 ### <a name="embed-content-in-apps"></a>Integrer indhold i apps
 
 Brugere i virksomheden kan integrere Power BI-dashboards og rapporter i Software as a Service (SaaS)-programmer. Hvis denne indstilling deaktiveres, kan brugere ikke anvende REST API'er til at integrere Power BI-indhold i deres program. [Få mere at vide](developer/embedding.md)
-
-## <a name="workspaces-and-import-settings"></a>Indstillinger for arbejdsområder og import
-
-### <a name="author-content-in-workspaces"></a>Opret indhold i arbejdsområder
-
-Brugere i organisationen kan få adgang til arbejdsområder for at oprette forbindelse til data og oprette indhold. [Få mere at vide](service-create-the-new-workspaces.md)
-
-### <a name="import-data-into-power-bi"></a>Importér data i Power BI
-
-Brugere i organisationen kan importere data til tjenesten, f.eks. publicere rapporter fra Power BI Desktop, overføre Power BI-rapportfiler og oprette forbindelse til data direkte fra tjenesten. [Få mere at vide](desktop-upload-desktop-files.md)
 
 ## <a name="dataflow-settings-preview"></a>Indstillinger for dataflow (prøveversion)
 
