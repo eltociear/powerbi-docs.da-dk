@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: d97c59b7c5d25e85dee5f3b5b5b6ae8d24ae6cb2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 28463c065c965b90beb32feabcd5de029311c612
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283316"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56217039"
 ---
 # <a name="using-python-in-query-editor"></a>Brug af Python i Forespørgselseditor
 Du kan bruge **Python**, som er et programmeringssprog, der bruges af statistikere, datavidenskabsfolk og dataanalytikere, i **Forespørgselseditor** i Power BI Desktop. Denne integration af Phyton i **Forespørgselseditor** gør det muligt at udføre datarensning ved hjælp af R og udføre avanceret dataudformning og -analyser i datasæt, herunder fuldførelse af manglende data, forudsigelser og klyngedannelse, blot for at nævne nogle få. **Phyton** er et effektivt sprog og kan bruges i **Forespørgselseditor** til at forberede din datamodel og oprette rapporter.
@@ -43,10 +43,12 @@ Du kan se, hvordan du bruger **Phyton** i **Forespørgselseditor** ved at kigge 
    ![](media/desktop-python-in-query-editor/python-in-query-editor-5.png)
 6. I dette eksempel skal du angive følgende scriptkode:
    
+    ```python
        import pandas as pd
        completedData = dataset.fillna(method='backfill', inplace=False)
        dataset["completedValues"] =  completedData["SMI missing values"]
-   
+   ```
+
    > [!NOTE]
    > Biblioteket *pandas* skal være installeret i Python-miljøet, hvis den forrige scriptkode skal fungere korrekt. Du installerer pandas ved at køre følgende kommando i Python-installationen: |      > pip install pandas
    > 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4dec423e991b695097134d575de8c687b518a66c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 0cad14c9d00c6d027c0235714305fb33847b5f8a
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287065"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215694"
 ---
 # <a name="add-image-text-video-and-more-to-your-dashboard"></a>Føj billede, tekst, video og mere til dit dashboard
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2PD8m1Q0vU" frameborder="0" allowfullscreen></iframe>
@@ -101,12 +101,12 @@ Indsæt eller skriv HTML-indhold.  Power BI føjer det til dit dashboard som et 
 ## <a name="tips-for-embedding-web-content"></a>Tip til at integrere webindhold
 * Til iframes skal du bruge en sikker kilde. Hvis du angiver din iframe-integreringskode og får et tomt felt, skal du undersøge, om du bruger **http** til iframe-kilden.  Hvis det er tilfældet, skal du ændre den til **https**.
   
-  ```
+  ```html
   <iframe src="https://xyz.com">
   ```
 * Rediger oplysninger for bredde og højde. Denne integreringskode integrerer en video og indstiller videoafspilleren til 560 x 315 pixel.  Denne størrelse ændres ikke, når du ændrer størrelsen på feltet.
   
-  ```
+  ```html
   <iframe width="560" height="315"
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
    allowfullscreen></iframe>
@@ -114,14 +114,14 @@ Indsæt eller skriv HTML-indhold.  Power BI føjer det til dit dashboard som et 
   
   Hvis afspillerens størrelse skal tilpasses feltets størrelse, skal du indstille bredden og højden til 100 %.
   
-  ```
+  ```html
   <iframe width="100%" height="100%"
   src="https://www.youtube.com/embed/Cle_rKBpZ28" frameborder="0"
    allowfullscreen></iframe>
   ```
 * Denne kode integrerer et tweet og bevarer, som separate links på dashboardet, links til **AFK**-podcasten, **@GuyInACube's Twitter-side**, **Follow**, **#analytics**, **reply**, **retweet** og **like**.  Hvis du vælger selve feltet, føres du til podcasten på Twitter.
   
-  ```
+  ```html
   <blockquote class="twitter-tweet" data-partner="tweetdeck">
   <p lang="en" dir="ltr">Listen to
   <a href="https://twitter.com/GuyInACube">@GuyInACube</a> talk to

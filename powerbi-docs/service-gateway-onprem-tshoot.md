@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 08/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: 623eb93c27f0ec762b2c9d063b646d757c3b1f0c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: afc4df99b90d6c6d7016f34983ca3691fb500325
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296564"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223914"
 ---
 # <a name="troubleshooting-the-on-premises-data-gateway"></a>Fejlfinding af datagatewayen i det lokale miljø
 
@@ -35,11 +35,15 @@ Gatewayen kører som en Windows-tjeneste, så du kan starte og stoppe den på fl
 
 * Kør følgende kommando for at stoppe tjenesten:
 
-    '''   net stop PBIEgwService   '''
+    ```
+    net stop PBIEgwService
+    ```
 
 * Kør følgende kommando for at starte tjenesten:
 
-    '''   net start PBIEgwService   '''
+    ```
+    net start PBIEgwService
+    ```
 
 ### <a name="log-file-configuration"></a>Konfiguration af logfil
 
@@ -318,7 +322,7 @@ I filen *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* skal du
 > [!IMPORTANT]
 > Aktivering af EmitQueryTraces kan øge logfilens størrelse markant afhængigt af brugen af gatewayen. Når du er færdig med at gennemgå logfilerne, kan du indstille EmitQueryTraces til Falsk. Det anbefales ikke at lade denne indstilling være aktiveret i længere tid.
 
-```
+```xml
 <setting name="EmitQueryTraces" serializeAs="String">
     <value>True</value>
 </setting>
@@ -362,7 +366,7 @@ I filen *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* skal du
 > [!IMPORTANT]
 > Aktivering af TracingVerbosity til `5` kan øge logfilens størrelse markant afhængigt af brugen af gatewayen. Når du er færdig med at gennemgå logfilerne, skal du indstille TraceVerbosity til `4`. Det anbefales ikke at lade denne indstilling være aktiveret i længere tid.
 
-```
+```xml
 <setting name="TracingVerbosity" serializeAs="String">
     <value>5</value>
 </setting>
@@ -486,7 +490,7 @@ Du får vist 1033-fejlen, når dit eksterne id, som er konfigureret i SAP HANA, 
 
     ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
 
-```
+```xml
       <setting name="ADUserNameReplacementProperty" serializeAs="String">
         <value>sAMAccount</value>
       </setting>

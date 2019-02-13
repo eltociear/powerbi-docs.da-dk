@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: 157808d7378b40cb097c2cb667eb9d237654e66d
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: bb87bc95e9d0bbde4d9239d172d341cbebb716cc
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234410"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216832"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Konfigurer din rapportserver til at være vært for Excel-projektmapper ved hjælp af Office Online Server (OOS)
 
@@ -32,13 +32,13 @@ Udfør disse procedurer på den server, der kører Office Online Server. Servere
 
     **Windows Server 2012 R2:**
 
-    ```
+    ```powershell
     Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45,Windows-Identity-Foundation,Server-Media-Foundation
     ```
 
     **Windows Server 2016:**
 
-    ```
+    ```powershell
     Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,NET-Framework-Features,NET-Framework-45-Features,NET-Framework-Core,NET-Framework-45-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45,Windows-Identity-Foundation,Server-Media-Foundation
     ```
 
@@ -80,7 +80,7 @@ Følg disse trin for at installere sprogpakker.
 
 Brug kommandoen New-OfficeWebAppsFarm til at oprette en ny Office Online Server-farm, der består af en enkelt server, som det kan ses i det følgende eksempel.
 
-```
+```powershell
 New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -CertificateName "OfficeWebApps Certificate"
 ```
 
@@ -94,7 +94,7 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 
 Brug kommandoen New-OfficeWebAppsFarm til at oprette en ny Office Online Server-farm, der består af en enkelt server, som det kan ses i det følgende eksempel.
 
-```
+```powershell
 New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp
 ```
 
@@ -113,11 +113,11 @@ Når farmen er oprettet, vises detaljer om farmen i Windows PowerShell prompten.
 
 Hvis Office Online Server virker som forventet, skal du se XML-filen til WOPI-registrering (Web Application Open Platform Interface Protocol) i din webbrowser. De første par linjer af filen skal ligne følgende eksempel:
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8" ?> 
-- <wopi-discovery>
-- <net-zone name="internal-http">
-- <app name="Excel" favIconUrl="<InternalUrl>/x/_layouts/images/FavIcon_Excel.ico" checkLicense="true">
+<wopi-discovery>
+<net-zone name="internal-http">
+<app name="Excel" favIconUrl="<InternalUrl>/x/_layouts/images/FavIcon_Excel.ico" checkLicense="true">
 <action name="view" ext="ods" default="true" urlsrc="<InternalUrl>/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
 <action name="view" ext="xls" default="true" urlsrc="<InternalUrl>/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
 <action name="view" ext="xlsb" default="true" urlsrc="<InternalUrl>/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
@@ -128,7 +128,7 @@ Hvis Office Online Server virker som forventet, skal du se XML-filen til WOPI-re
 
 Den maksimale filstørrelse for alle filer i Power BI-rapportserver er 100 MB. Hvis du vil holde synkroniseringen, skal du manuelt angive dette i OOS.
 
-```
+```powershell
 Set-OfficeWebAppsFarm -ExcelWorkbookSizeMax 100
 ```
 
@@ -140,7 +140,7 @@ I øjeblikket understøttes der kun Analysis Services-forbindelser i en Excel-pr
 
 Kør følgende PowerShell-kommandoer på OOS-serveren.
 
-```
+```powershell
 Set-OfficeWebAppsFarm -ExcelUseEffectiveUserName:$true
 Set-OfficeWebAppsFarm -ExcelAllowExternalData:$true
 Set-OfficeWebAppsFarm -ExcelWarnOnDataRefresh:$false
@@ -152,13 +152,13 @@ Hvis du installerer en Analysis Services Power Pivot-tilstandsforekomst, kan du 
 
 Hvis OOS skal kunne bruge Power Pivot-tilstandsforekomsten, skal du køre følgende kommando.
 
-```
+```powershell
 New-OfficeWebAppsExcelBIServer -ServerId <server_name>\POWERPIVOT
 ```
 
 Hvis du ikke allerede tillader eksterne data, skal du køre følgende kommando fra Analysis Services-trinnet herover.
 
-```
+```powershell
 Set-OfficeWebAppsFarm -ExcelAllowExternalData:$true
 ```
 

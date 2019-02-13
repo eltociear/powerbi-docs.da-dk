@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5c383cf3c7fcbae88be6943bb418026c849db196
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f30ff44fbc4d99818661abc53cb99bb96cfde673
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277428"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215729"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Brug rapporttemaer i Power BI Desktop
 Med **rapporttemaer** kan du anvende et farvetema i hele rapporten, f.eks. organisationens farver, sæsonmæssige farver eller andre farvetemaer. Når du anvender et **rapporttema**, bruges farver fra det valgte tema for alle visuelle elementer i rapporten. Der gælder nogle få undtagelser, som er beskrevet senere i denne artikel.
@@ -101,6 +101,7 @@ Gør følgende for at anvende en typografi i en **table**- eller **matrix**-visu
 
 Derefter følger teksten fra filen *St Patrick's Day.json*, som du kan bruge til at oprette din egen JSON-fil:
 
+```json
     {
         "name": "St Patricks Day",
         "dataColors": ["#568410", "#3A6108", "#70A322", "#915203", "#D79A12", "#bb7711", "#114400", "#aacc66"],
@@ -108,6 +109,7 @@ Derefter følger teksten fra filen *St Patrick's Day.json*, som du kan bruge til
         "foreground": "#3A6108",
         "tableAccent": "#568410"
     }
+```
 
 Herefter kan du angive din egen heksadecimale farvekode for de valgte farver.
 
@@ -158,6 +160,7 @@ Vil du gerne i gang med **rapporttemaer**? Her er nogle færdige JSON-filer med 
 
 I stedet for at give dig mulighed for at downloade, får du koden til JSON-filen for Valentinsdag:
 
+```json
     {
         "name": "Valentine's Day",
         "dataColors": ["#990011", "#cc1144", "#ee7799", "#eebbcc", "#cc4477", "#cc5555", "#882222", "#A30E33"],
@@ -165,6 +168,7 @@ I stedet for at give dig mulighed for at downloade, får du koden til JSON-filen
         "foreground": "#ee7799",
         "tableAccent": "#990011"
     }
+```
 
 **Rapporttemaer** kan gøre dine Power BI Desktop-rapporter til en farverig afspejlning af dig, din organisation eller også den aktuelle sæson eller helligdag. 
 
@@ -303,7 +307,8 @@ I følgende tabel defineres værdier for *cardName*. Den første værdi i hver c
 ### <a name="properties-within-each-card"></a>Egenskaber i hvert kort
 I følgende afsnit defineres egenskaberne i hvert kort:
 
-    "general":
+```json
+      "general":
         "responsive": {
           "type": [
             "bool"
@@ -371,7 +376,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "categoryAxis": {
+      "categoryAxis": {
         "show": {
           "type": [
             "bool"
@@ -557,7 +562,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "valueAxis": {
+      "valueAxis": {
         "show": {
           "type": [
             "bool"
@@ -865,7 +870,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "dataPoint": {
+      "dataPoint": {
         "defaultColor": {
           "type": [
             "fill"
@@ -901,7 +906,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "labels": {
+      "labels": {
         "show": {
           "type": [
             "bool"
@@ -1019,7 +1024,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "lineStyles": {
+      "lineStyles": {
         "strokeWidth": {
           "type": [
             "numeric"
@@ -1094,7 +1099,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "plotArea": {
+      "plotArea": {
         "transparency": {
           "type": [
             "numeric"
@@ -1107,7 +1112,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "trend": {
+      "trend": {
         "show": {
           "type": [
             "bool"
@@ -1297,7 +1302,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "referenceLine": {
+      "referenceLine": {
         "show": {
           "type": [
             "bool"
@@ -1433,7 +1438,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "line": {
+      "line": {
         "lineColor": {
           "type": [
             "fill"
@@ -1470,7 +1475,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "fill": {
+      "fill": {
         "show": {
           "type": [
             "bool"
@@ -1499,7 +1504,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "rotation": {
+      "rotation": {
         "angle": {
           "type": [
             "numeric"
@@ -1509,7 +1514,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "categoryLabels": {
+      "categoryLabels": {
         "show": {
           "type": [
             "bool"
@@ -1546,7 +1551,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "wordWrap": {
+      "wordWrap": {
         "show": {
           "type": [
             "bool"
@@ -1556,7 +1561,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "dataLabels": {
+      "dataLabels": {
         "color": {
           "type": [
             "fill"
@@ -1585,7 +1590,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "cardTitle": {
+      "cardTitle": {
         "color": {
           "type": [
             "fill"
@@ -1614,7 +1619,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "card": {
+      "card": {
         "outline": {
           "type": [
             "enumeration"
@@ -1695,7 +1700,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "percentBarLabel": {
+      "percentBarLabel": {
         "show": {
           "type": [
             "bool"
@@ -1732,7 +1737,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "axis": {
+      "axis": {
         "min": {
           "type": [
             "numeric"
@@ -1758,7 +1763,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "target": {
+      "target": {
         "show": {
           "type": [
             "bool"
@@ -1817,7 +1822,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "calloutValue": {
+      "calloutValue": {
         "show": {
           "type": [
             "bool"
@@ -1860,7 +1865,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "forecast": {
+      "forecast": {
         "show": {
           "type": [
             "bool"
@@ -1927,7 +1932,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "bubbles": {
+      "bubbles": {
         "bubbleSize": {
           "type": [
             "formatting"
@@ -1937,7 +1942,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "mapControls": {
+      "mapControls": {
         "autoZoom": {
           "type": [
             "bool"
@@ -1962,7 +1967,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "mapStyles": {
+      "mapStyles": {
         "mapTheme": {
           "type": [
             "enumeration"
@@ -1972,7 +1977,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "shape": {
+      "shape": {
         "map": {
           "type": [
             "geoJson"
@@ -1990,7 +1995,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "zoom": {
+      "zoom": {
         "autoZoom": {
           "type": [
             "bool"
@@ -2025,7 +2030,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "xAxisReferenceLine": {
+      "xAxisReferenceLine": {
         "show": {
           "type": [
             "bool"
@@ -2150,7 +2155,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "fillPoint": {
+      "fillPoint": {
         "show": {
           "type": [
             "bool"
@@ -2160,7 +2165,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "colorByCategory": {
+      "colorByCategory": {
         "show": {
           "type": [
             "bool"
@@ -2170,7 +2175,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "plotAreaShading": {
+      "plotAreaShading": {
         "show": {
           "type": [
             "bool"
@@ -2213,7 +2218,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "ratioLine": {
+      "ratioLine": {
         "show": {
           "type": [
             "bool"
@@ -2253,7 +2258,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "grid": {
+      "grid": {
         "outlineColor": {
           "type": [
             "fill"
@@ -2373,7 +2378,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "columnHeaders": {
+      "columnHeaders": {
         "outline": {
           "type": [
             "enumeration"
@@ -2448,7 +2453,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "values": {
+      "values": {
         "outline": {
           "type": [
             "enumeration"
@@ -2567,7 +2572,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "total": {
+      "total": {
         "outline": {
           "type": [
             "enumeration"
@@ -2631,7 +2636,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "columnFormatting": {
+      "columnFormatting": {
         "fontColor": {
           "type": [
             "fill"
@@ -2687,7 +2692,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "rowHeaders": {
+      "rowHeaders": {
         "outline": {
           "type": [
             "enumeration"
@@ -2776,7 +2781,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "subTotals": {
+      "subTotals": {
         "outline": {
           "type": [
             "enumeration"
@@ -2848,7 +2853,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "selection": {
+      "selection": {
         "selectAllCheckboxEnabled": {
           "type": [
             "bool"
@@ -2866,7 +2871,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "header": {
+      "header": {
         "show": {
           "type": [
             "bool"
@@ -2919,7 +2924,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "items": {
+      "items": {
         "fontColor": {
           "type": [
             "fill"
@@ -2964,7 +2969,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "numericInputStyle": {
+      "numericInputStyle": {
         "fontColor": {
           "type": [
             "fill"
@@ -3001,7 +3006,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "slider": {
+      "slider": {
         "show": {
           "type": [
             "bool"
@@ -3019,7 +3024,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "dateRange": {
+      "dateRange": {
         "includeToday": {
           "type": [
             "bool"
@@ -3029,7 +3034,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "sentimentColors": {
+      "sentimentColors": {
         "increaseFill": {
           "type": [
             "fill"
@@ -3063,7 +3068,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "breakdown": {
+      "breakdown": {
         "maxBreakdowns": {
           "type": [
             "integer"
@@ -3076,7 +3081,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "indicator": {
+      "indicator": {
         "indicatorDisplayUnits": {
           "type": [
             "formatting"
@@ -3108,7 +3113,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "trendline": {
+      "trendline": {
         "show": {
           "type": [
             "bool"
@@ -3118,7 +3123,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "goals": {
+      "goals": {
         "showGoal": {
           "type": [
             "bool"
@@ -3136,7 +3141,7 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       },
-    "status": {
+      "status": {
         "direction": {
           "type": [
             "enumeration"
@@ -3170,13 +3175,14 @@ I følgende afsnit defineres egenskaberne i hvert kort:
           ]
         }
       }
-
+```
 
 
 
 ### <a name="enumerations-in-the-json-file"></a>Optællingerne i JSON-filen
 I følgende afsnit defineres de optællinger, som du kan bruge i JSON-filen.
 
+```json
     {
         "legend": {
             "position": [
@@ -4205,3 +4211,4 @@ I følgende afsnit defineres de optællinger, som du kan bruge i JSON-filen.
          ]
        }
     }
+```

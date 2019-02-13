@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: b8f78821ccd6f32f9b943b55a45de20b720f3f3c
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: fd311466d244e3ca9297f107edfad7b2cc930bfb
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762093"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223829"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Foretag fejlfinding af dit integrerede program
 
@@ -161,7 +161,7 @@ Prøv nedenstående trin for at bekræfte, hvilken en det er.
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: Tildelingen kræver administratorrettigheder
 
-**_Symptomer:_**</br>
+**_Symptomer:_**<br>
 Når en bruger, der ikke er administrator, forsøger at logge på et program første gang og giver samtykke, får vedkommende vist en af følgende fejl:
 
 * ConsentTest skal have tilladelse til at få adgang til ressourcer i din organisation, som kun en administrator kan tildele. Bed en administrator om at give tilladelse til dette program, før du kan bruge det.
@@ -171,7 +171,7 @@ Når en bruger, der ikke er administrator, forsøger at logge på et program fø
 
 En administratorbruger kan logge på og give samtykke.
 
-**_Hovedårsag:_**</br>
+**_Hovedårsag:_**<br>
 Brugersamtykke er deaktiveret for lejeren.
 
 **_Der er flere mulige fejlrettelser:_**

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7280d7c601e59b15ffad6ececfed8b111ab796cb
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 1302ede9c28cc42b3605e55705f07620f2974990
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430964"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216050"
 ---
 # <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Opret forbindelse til Azure Consumption Insights i Power BI Desktop (beta)
 Ved hjælp af connectoren **Azure Consumption Insights** kan du bruge **Power BI Desktop** til at oprette forbindelse til Azure og få detaljerede data og oplysninger om din organisations brug af Azure-tjenester. Du kan også oprette målinger, brugerdefinerede kolonner og visuelle elementer, som kan rapporteres og deles, om din organisations brug af Azure. Denne version af connectoren **Azure Consumption and Insights** er en betaversion, som måske ændres.

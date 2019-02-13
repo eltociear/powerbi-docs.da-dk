@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: 69ce8088903cbdddef504dbf5e9b2ecc2a8ab9d4
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 51ea85be275be3dbac014392e2d8b3b65c0c4d82
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762668"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216211"
 ---
 # <a name="tutorial-embed-a-power-bi-content-into-your-application-for-sovereign-clouds"></a>Selvstudium: Integrer Power BI-indhold i dit program til nationale clouds
 
@@ -40,15 +40,15 @@ De forskellige nationale cloudmiljøer er:
 Før du begynder denne gennemgang, skal du have en **Power BI**-konto. Hvis du ikke har konfigureret en konto, kan du vælge den rette nationale cloud for dig afhængigt af typen af land eller myndighed. Du kan tilmelde dig en [Power BI-konto af typen US Government](../service-govus-signup.md), [en cloudkonto af typen Power BI til Tyskland](https://powerbi.microsoft.com/power-bi-germany/?ru=https%3A%2F%2Fapp.powerbi.de%2F%3FnoSignUpCheck%3D1) eller en [cloudkonto af typen Power BI til Kina](http://www.21vbluecloud.com/powerbi/).
 
 > [!NOTE]
-> Vil du integrere et dashboard for din organisation i stedet? Se i [Integrer et dashboard i et program for din organisation](integrate-dashboard.md).
+> Vil du integrere et dashboard for din organisation i stedet? Se i [Integrer et dashboard i en app for din organisation](integrate-dashboard.md).
 
-Hvis du vil integrere et dashboard i et webprogram, skal du bruge API'en til **Power BI** og et **adgangstoken** til Azure Active Directory for at hente et dashboard. Derefter skal du indlæse dashboardet ved hjælp af et integrationstoken. **Power BI** API'en leverer programmeringsmæssig adgang til bestemte **Power BI**-ressourcer. Du kan finde flere oplysninger under [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/), [Power BI .NET SDK] og [JavaScript-API'en til Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
+Hvis du vil integrere et dashboard i en webapp, skal du bruge API'en til **Power BI** og et **adgangstoken** til Azure Active Directory for at hente et dashboard. Derefter skal du indlæse dashboardet ved hjælp af et integrationstoken. **Power BI** API'en leverer programmeringsmæssig adgang til bestemte **Power BI**-ressourcer. Du kan finde flere oplysninger under [Power BI REST API](https://docs.microsoft.com/rest/api/power-bi/), [Power BI .NET SDK] og [JavaScript-API'en til Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
 
 ## <a name="download-the-sample"></a>Download eksemplet
 
-I denne artikel vises den kode, der bruges i [eksemplet Programmet ejer data](https://github.com/Microsoft/PowerBI-Developer-Samples) på GitHub. For at kunne følge med i denne gennemgang skal du downloade eksemplet.
+I denne artikel vises den kode, der bruges i [prøveappen App Owns Data](https://github.com/Microsoft/PowerBI-Developer-Samples) på GitHub. For at kunne følge med i denne gennemgang skal du downloade eksemplet.
 
-![Eksemplet Programmet ejer data](media/embed-sample-for-customers-sovereign-clouds/embed-sample-for-customers-026.png)
+![Prøveappen App Owns Data](media/embed-sample-for-customers-sovereign-clouds/embed-sample-for-customers-026.png)
 
 * Government Community Cloud (GCC):
 1. Overskriv Cloud.config-filen med GCCCloud.config-indhold.
@@ -120,9 +120,9 @@ I denne artikel vises den kode, der bruges i [eksemplet Programmet ejer data](ht
 <add key="embedUrlBase" value="https://app.powerbi.cn" />
 ```
 
-## <a name="step-1---register-an-app-in-azure-ad"></a>Trin 1 – Registrer et program i Azure AD
+## <a name="step-1---register-an-app-in-azure-ad"></a>Trin 1 – Registrer en app i Azure AD
 
-Registrer dit program i Azure AD for at foretage REST-API-kald. Du kan finde flere oplysninger under [Registrer et Azure AD-program for at integrere Power BI-indhold](register-app.md). Da der er forskellige tilhørsforhold til nationale cloudmiljøer, er der særskilte URL-adresser til registrering af din tilmelding.
+Registrer din app i Azure AD for at foretage REST-API-kald. Du kan finde flere oplysninger under [Registrer en Azure AD-app for at integrere Power BI-indhold](register-app.md). Da der er forskellige tilhørsforhold til nationale cloudmiljøer, er der særskilte URL-adresser til registrering af din tilmelding.
 
 * Government Community Cloud (GCC) – https://app.powerbigov.us/apps 
 
@@ -134,11 +134,11 @@ Registrer dit program i Azure AD for at foretage REST-API-kald. Du kan finde fle
 
 * Cloudmiljøet Power BI til Kina – https://app.powerbi.cn/apps
 
-Hvis du har downloadet [eksemplet Integration for din kunde](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), skal du bruge det **program-id**, du får, så eksemplet kan godkendes i Azure AD. Du kan konfigurere eksemplet ved at ændre **program-id** i filen *web.config*.
+Hvis du har downloadet [eksemplet Integration for din kunde](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data), skal du bruge det **program-id**, du får, så eksemplet kan godkendes i Azure AD. Du kan konfigurere prøveappen ved at ændre **program-id** i filen *web.config*.
 
 ## <a name="step-2---get-an-access-token-from-azure-ad"></a>Trin 2 – Få et adgangstoken fra Azure AD
 
-I programmet skal du hente et **adgangstoken** fra Azure AD, før du kan foretage kald til Power BI REST-API'en. Du kan finde flere oplysninger under [Godkend brugere, og få et Azure AD-adgangstoken til dit Power BI-program](get-azuread-access-token.md). Da der er forskellige tilhørsforhold til nationale cloudmiljøer, er der særskilte URL-adresser, hvorfra du kan hente et adgangstoken til din tilmelding.
+I programmet skal du hente et **adgangstoken** fra Azure AD, før du kan foretage kald til Power BI REST-API'en. Du kan finde flere oplysninger under [Godkend brugere, og få et Azure AD-adgangstoken til din Power BI-app](get-azuread-access-token.md). Da der er forskellige tilhørsforhold til nationale cloudmiljøer, er der særskilte URL-adresser, hvorfra du kan hente et adgangstoken til din tilmelding.
 
 * Government Community Cloud (GCC) – https://login.microsoftonline.com
 
@@ -154,7 +154,7 @@ Du kan se eksempler på disse adgangstokens i de enkelte indholdselementopgaver 
 
 ## <a name="step-3---get-a-content-item"></a>Trin 3: Hent et indholdselement
 
-Før du integrerer dit Power BI-indhold, er der nogle ting, du skal gøre for at sikre, at det bliver korrekt integreret. Selvom alle disse trin kan udføres direkte med REST API, er .NET SDK blevet brugt til eksempelprogrammet og eksemplerne her.
+Før du integrerer dit Power BI-indhold, er der nogle ting, du skal gøre for at sikre, at det bliver korrekt integreret. Selvom alle disse trin kan udføres direkte med REST API, er .NET SDK blevet brugt til prøveappen og eksemplerne her.
 
 ### <a name="create-the-power-bi-client-with-your-access-token"></a>Opret Power BI-klienten med dit eget adgangstoken
 
@@ -178,7 +178,7 @@ using (var client = new PowerBIClient(new Uri(ApiUrl), tokenCredentials))
 
 Du kan bruge Power BI-klientobjektet til at hente en reference til det element, du vil integrere. Du kan integrere dashboards, felter eller rapporter. Her er et eksempel på, hvordan du henter det første dashboard, det første felt eller den første rapport fra et givent arbejdsområde.
 
-Du kan finde et eksempel i **Controllers\HomeController.cs** i [eksemplet Programmet ejer data](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
+Du kan finde et eksempel i **Controllers\HomeController.cs** i [prøveappen App Owns Data](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 
 #### <a name="reports"></a>Rapporter
 
@@ -227,14 +227,14 @@ ODataResponseListTile tiles = client.Dashboards.GetTilesInGroup(workspaceId, das
 Tile tile = tiles.Value.FirstOrDefault();
 ```
 
-### <a name="create-the-embed-token"></a>Opret integreringstokenet
+### <a name="create-the-embed-token"></a>Opret integrationstokenet
 
-Ved hjælp af JavaScript-API'en kan du generere et integreringstoken. Dette integreringstoken er specifikt for det element, du integrerer. Hver gang du integrerer Power BI-indhold, skal du oprette et nyt integreringstoken for det. Du kan finde flere oplysninger, herunder hvilket **adgangsniveau** du skal bruge, i [Integreringstoken](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
+Ved hjælp af JavaScript-API'en kan du generere et integrationstoken. Dette integreringstoken er specifikt for det element, du integrerer. Hver gang du integrerer Power BI-indhold, skal du oprette et nyt integreringstoken for det. Du kan finde flere oplysninger, herunder hvilket **adgangsniveau** du skal bruge, i [Integreringstoken](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 > [!IMPORTANT]
-> Da integreringstokens kun er beregnet til udviklingstest, er antallet af integreringstokens, der kan genereres fra en Power BI-hovedkonto, begrænset. Der [skal købes en kapacitet](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) til integrerede produktionsscenarier. Der er ingen grænse for generering af integreringstokens, når der er købt en kapacitet.
+> Da integrerede tokens kun er beregnet til udviklingstest, er antallet af integrerede tokens, der kan genereres fra en Power BI-hovedkonto, begrænset. Der [skal købes en kapacitet](https://docs.microsoft.com/power-bi/developer/embedded-faq#technical) til integrerede produktionsscenarier. Der er ingen grænse for generering af integrerede tokens, når der er købt en kapacitet.
 
-Du kan finde et eksempel i **Controllers\HomeController.cs** i [eksemplet Integrering for din organisation](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
+Du kan finde et eksempel i **Controllers\HomeController.cs** i [prøveappen Embedding for your organization](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 
 Dette forudsætter, at der oprettes en klasse for **EmbedConfig** og **TileEmbedConfig**. Du kan finde et eksempel i **Models\EmbedConfig.cs** og **Models\TileEmbedConfig.cs**.
 
@@ -298,9 +298,9 @@ var embedConfig = new TileEmbedConfig()
 
 ## <a name="step-4---load-an-item-using-javascript"></a>Trin 4: Indlæs et element, ved hjælp af JavaScript
 
-Du kan bruge JavaScript til at indlæse et dashboard i et div-element på din webside. Modellen EmbedConfig/TileEmbedConfig bruges sammen med visninger for et dashboard, et felt eller en rapport i dette eksempel. Hvis du vi se et komplet eksempel, hvor JavaScript API'en bruges, kan du bruge [eksemplet Microsoft Power BI Embedded](https://microsoft.github.io/PowerBI-JavaScript/demo).
+Du kan bruge JavaScript til at indlæse et dashboard i et div-element på din webside. Modellen EmbedConfig/TileEmbedConfig bruges sammen med visninger for et dashboard, et felt eller en rapport i dette eksempel. Hvis du vi se et komplet eksempel, hvor JavaScript API'en bruges, kan du bruge [prøveappen Microsoft Power BI Embedded](https://microsoft.github.io/PowerBI-JavaScript/demo).
 
-Du kan finde et eksempel på dette i [eksemplet Integrering for din organisation](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
+Du kan finde et eksempel på dette i [prøveappen Embedding for your organization](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 
 ### <a name="viewshomeembeddashboardcshtml"></a>Views\Home\EmbedDashboard.cshtml
 
@@ -356,7 +356,7 @@ Du kan finde et eksempel på dette i [eksemplet Integrering for din organisation
     var embedTileId = "@Model.Id";
 
     // Read dashboard Id from Model
-    var embedDashboardeId = "@Model.dashboardId";
+    var embedDashboardId = "@Model.dashboardId";
 
     // Get models. models contains enums that can be used.
     var models = window['powerbi-client'].models;
@@ -371,7 +371,7 @@ Du kan finde et eksempel på dette i [eksemplet Integrering for din organisation
         accessToken: accessToken,
         embedUrl: embedUrl,
         id: embedTileId,
-        dashboardId: embedDashboardeId
+        dashboardId: embedDashboardId
     };
 
     // Get a reference to the embedded tile HTML element
@@ -427,7 +427,7 @@ Du kan finde et eksempel på dette i [eksemplet Integrering for din organisation
 
 ## <a name="next-steps"></a>Næste trin
 
-* Du kan finde et eksempelprogram på GitHub, som du kan gennemse. Ovenstående eksempler er baseret på dette eksempel. Du kan finde flere oplysninger i [eksemplet Integrering for din organisation](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
+* Du kan finde en prøveapp på GitHub, som du kan gennemse. Ovenstående eksempler er baseret på denne prøveapp. Du kan finde flere oplysninger i [Prøveappen Embedding for your organization](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data).
 
 * Du kan finde flere oplysninger om JavaScript-API'en i [JavaScript-API til Power BI](https://github.com/Microsoft/PowerBI-JavaScript).
 

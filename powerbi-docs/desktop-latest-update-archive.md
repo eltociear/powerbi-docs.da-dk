@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: b82f739d8e5dd5497ab2a41e44097fda12345bd3
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1672df71d1b555a3ffcbc9f72bab5053d33c6bc3
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278210"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216878"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -2062,7 +2062,7 @@ Følgende funktioner er blevet tilføjet i denne opdatering:
 
 -   Nye tekstkolonnefiltre – **Begynder ikke med** og **Slutter ikke med**
 
--   Dialogboksen Forbedrede niveauer for beskyttelse af personlige oplysninger
+-   Forbedringer til dialogboksen Beskyttelsesniveauer
 
 Se følgende video for at få flere detaljer om denne opdatering:
 

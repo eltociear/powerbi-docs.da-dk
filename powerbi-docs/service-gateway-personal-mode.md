@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/14/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 512b189575acd7651dea8747c36e8666875edae5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ef8146501969697b15a3d1ff3cae2c605cabaacc
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295741"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216809"
 ---
 # <a name="on-premises-data-gateway-personal-mode"></a>Datagateway i det lokale miljø (personlig tilstand)
 Du kan bruge datakilder i det lokale miljø og oprette Power BI-rapporter og -dashboards ved hjælp af en gateway. En **gateway** er software, der gør det nemmere at få adgang til data, som er gemt på et privat netværk i det lokale miljø. Derefter giver den dig mulighed for at bruge disse data i onlinetjenester som **Power BI-tjenesten**. **Datagatewayen i det lokale miljø (personlig tilstand)** er en opdatering, som er blevet udgivet for nylig, til Power BI Gateway. Den giver enkeltpersoner mulighed for at installere en gateway på deres egen computer og få adgang til data i det lokale miljø.
@@ -86,11 +86,11 @@ Hvis du brugte **Kombiner hurtigt** med den tidligere gateway, skal du benytte f
    ```
 2. Tilføj følgende tekst nederst i filen:
    
-       ```
-       <setting name="EnableFastCombine" serializeAs="String">```
+    ```xml
+       <setting name="EnableFastCombine" serializeAs="String">
        <value>true</value>
-       </setting>
-       ```
+    </setting>
+    ```
 3. Når dette er fuldført, træder indstillingen i kraft i ca. ét minut. Du kontrollerer, om den fungerer korrekt, ved at prøve en opdatering efter behov i **Power BI-tjenesten** for at bekræfte, at **Kombiner hurtigt** fungerer.
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser

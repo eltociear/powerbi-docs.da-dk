@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: mahirdiab
-ms.openlocfilehash: 050628dfe179a39ca24d2df72f1296acf48aa261
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 79ab3731abfdf972de1ee9d40456ebb0c5ebfa62
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55763078"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223507"
 ---
 # <a name="encrypt-credentials"></a>Kryptér legitimationsoplysninger
 Når du kalder [Opret datakilde](https://docs.microsoft.com/rest/api/power-bi/gateways/createdatasource) eller [Opdater datakilde](https://docs.microsoft.com/rest/api/power-bi/gateways/updatedatasource) under en **virksomhedsgateway i det lokale miljø** ved hjælp af [REST-API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/), skal legitimationsoplysningerne krypteres ved hjælp af gatewayens offentlige nøgle.
@@ -24,28 +24,28 @@ I nedenstående kodeeksempel kan du se, hvordan du krypterer legitimationsoplysn
 De nedenstående angivne legitimationsoplysninger til metoden EncodeCredentials skal være i et af følgende formater afhængigt af typen af legitimationsoplysninger:
 
 **Basis-/Windows-legitimationsoplysninger**
-```
+```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"username\", \"value\":\"john\"},{\"name\":\"password\", \"value\":\"*****\"}]}";
 ```
 
 **Nøglelegitimationsoplysninger**
-```
+```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"key\", \"value\":\"ec....LA=\"}]}";
 ```
 
 **OAuth2-legitimationsoplysninger**
-```
+```csharp
 var credentials = "{\"credentialData\":[{\"name\":\"accessToken\", \"value\":\"eyJ0....fwtQ\"}]}";
 ```
 
 
 **Anonyme legitimationsoplysninger**
-```
+```csharp
 var credentials = "{\"credentialData\":\"\"}";
 ```
 
 **Kryptér legitimationsoplysninger**
-```
+```csharp
 public static class AsymmetricKeyEncryptionHelper
 {
 
