@@ -8,23 +8,25 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/18/2018
+ms.date: 02/07/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 29e6fe1bfb5a85d2a5ea42db406d4a127a65ec25
-ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
+ms.openlocfilehash: d09ff277ed1c47b9ab11d6ffed4e5c8a57059465
+ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55147444"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "55971711"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Grundlæggende begreber for designere i Power BI-tjenesten
 
-I denne artikel forudsættes det, at du har allerede har [tilmeldt dig Power BI-tjenesten](service-self-service-signup-for-power-bi.md) og [tilføjet nogle data](service-get-data.md). Hvis du ikke har nogen data endnu, kan du installere en [indholdspakke med Power BI-eksempler](sample-datasets.md#the-power-bi-samples-as-content-packs).
+Formålet med denne artikel er at give dig indblik i Power BI-tjenesten: De forskellige elementer, hvordan de arbejder sammen, og hvordan du kan arbejde med dem. Du får muligvis mere ud af den, hvis du allerede har [tilmeldt dig Power BI-tjenesten](service-self-service-signup-for-power-bi.md) og [tilføjet nogle data](service-get-data.md). Som designer starter du normalt en typisk arbejdsgang med at oprette rapporter i Power BI Desktop. Derefter publicerer du dem til Power BI-tjenesten, hvor du kan fortsætte med at ændre dem. Du kan også oprette dashboards baseret på dine rapporter i Power BI-tjenesten. 
+
+Hvis du ikke har dine egne rapporter endnu, kan du i forbindelse med denne artikel installere en [indholdspakke med Power BI-eksempler](sample-datasets.md#the-power-bi-samples-as-content-packs).
 
 ![Startskærmen i Power BI-tjenesten i en browser](media/service-basic-concepts/power-bi-home-screen.png)
 
-Her er de elementer, du kan se, når du åbner Power BI-tjenesten i browseren:
+Når du åbner Power BI-tjenesten i en browser, begynder du på startskærmen. Her er de elementer, du kan se:
 
 1. Navigationsrude (venstre)
 2. Office 365-appstarter
@@ -34,9 +36,9 @@ Her er de elementer, du kan se, når du åbner Power BI-tjenesten i browseren:
 6. Felter fra et foretrukket dashboard
 7. Foretrukne og hyppige dashboards og rapporter
 
-Vi vil gå i dybden med disse funktioner senere, men lad os først se på nogle Power BI-begreber.
+Dine slutbrugere for dine rapporter og dashboards har den samme startoplevelse i Power BI-tjenesten i en browser.
 
-Du kan også vælge at se denne video, før du læser resten af artiklen.  I videoen gennemgår Will de grundlæggende begreber og giver en præsentation af Power BI-tjenesten.
+Vi vil gå i dybden med disse funktioner senere, men lad os først se på nogle Power BI-begreber. Eller måske vil du se denne video først.  I videoen gennemgår Will de grundlæggende begreber og giver en præsentation af Power BI-tjenesten.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 
@@ -45,13 +47,12 @@ Du kan også vælge at se denne video, før du læser resten af artiklen.  I vid
 De fire overordnede elementer i Power BI er: **_dashboards_**, **_rapporter_**, **_projektmapper_** og **_datasæt_**. Og de er alle organiseret i **_arbejdsområder_**. Det er vigtigt at forstå arbejdsområderne, før vi går videre til de fire overordnede elementer, så lad os starte der.
 
 ## <a name="workspaces"></a>Arbejdsområder
-Arbejdsområder er objektbeholdere til dashboards, rapporter, projektmapper og datasæt i Power BI. Der er to typer arbejdsområder: *Mit arbejdsområde* og *apparbejdsområder*. Hvad er en *app*? En *app* i Power BI er en samling dashboards og rapporter, der er bygget til at levere vigtige metrikker til organisationen. Apps er interaktive, men kan ikke redigeres.
+Arbejdsområder er objektbeholdere til dashboards, rapporter, projektmapper og datasæt i Power BI. Der er to typer arbejdsområder: *Mit arbejdsområde* og *apparbejdsområder*. Hvad er en *app*? En *app* i Power BI er en samling dashboards og rapporter, der er bygget til at levere vigtige metrikker til Power BI-slutbrugerne i organisationen. Apps er interaktive, men slutbrugerne kan ikke redigere dem.
 
 - *Mit arbejdsområde* er et personligt arbejdsområde til Power BI-kunder, hvor de kan arbejde med dit indhold. Kun du har adgang til dit Mit arbejdsområde. Du kan dele dashboards og rapporter fra Mit arbejdsområde. Hvis du vil samarbejde om dashboards og rapporter eller oprette en app, skal du arbejde i et apparbejdsområde.      
 -  *Apparbejdsområder* bruges til at samarbejde og dele indhold med kolleger. Det er også de steder, hvor du opretter, publicerer og administrerer apps for din organisation. De er en form for midlertidige områder og beholdere for det indhold, der udgør en Power BI-app. Du kan føje kolleger til dine apparbejdsområder og samarbejde om dashboards, rapporter, projektmapper og datasæt. Alle medlemmer af apparbejdsområdet skal bruge Power BI Pro-licenser, men appforbrugeren (de kolleger, der har adgang til apps) behøver ikke nødvendigvis at have Pro-licenser.  
 
-Du kan få mere at vide i afsnittet **Del dit arbejde** i indholdsfortegnelsen, som starter med [Hvordan skal jeg samarbejde og dele dashboards og rapporter](service-how-to-collaborate-distribute-dashboards-reports.md)
-
+Hvis du vil vide mere, kan du starte med [Måder at dele dashboards for dit arbejde på](service-how-to-collaborate-distribute-dashboards-reports.md).
 
 Lad os gå videre med Power BI-elementerne. Du kan ikke have dashboards og rapporter uden data (det vil sige, du kan have tomme dashboards og tomme rapporter, men de er ikke nyttige, før de indeholder data), så lad os starte med **datasæt**.
 
@@ -72,7 +73,7 @@ I eksemplet nedenfor har jeg valgt apparbejdsområdet "Salg og marketing" og kli
 
   ![Diagram over datasæt](media/service-basic-concepts/drawing2.png)
 
-Hvis du vil [oprette forbindelse til eller importere et datasæt](service-get-data.md), skal du vælge **Hent Data** (nederst på venstre navigationslinje) eller vælge plusikonet **+ Opret > Datasæt** (i øverste højre hjørne). Følg vejledningen for at oprette forbindelse til eller importere den specifikke kilde og føje datasættet til det aktive arbejdsområde. Nye datasæt markeres med en gul stjerne. Det arbejde, du udfører i Power Bi, ændrer ikke det underliggende datasæt.
+Hvis du vil [oprette forbindelse til eller importere et datasæt](service-get-data.md), skal du vælge **Hent Data** nederst på venstre navigationslinje. Følg vejledningen for at oprette forbindelse til eller importere den specifikke kilde og føje datasættet til det aktive arbejdsområde. Nye datasæt markeres med en gul stjerne. Det arbejde, du udfører i Power BI, ændrer ikke det underliggende datasæt.
 
 Hvis du er [en del af et **_apparbejdsområde_**](service-collaborate-power-bi-workspace.md), er datasæt, der er tilføjet af et medlem af arbejdsområdet, tilgængelige for de andre medlemmer af arbejdsområdet.
 

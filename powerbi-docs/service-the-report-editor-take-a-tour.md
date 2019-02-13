@@ -8,21 +8,23 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/25/2019
+ms.date: 02/07/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 51a99d59c74160d229c0d18defe2c5e7be4f48fb
-ms.sourcegitcommit: 5bd9bd890db9a7f9d5988c81232f40b9b260a96f
+ms.openlocfilehash: 66e40462081ee2f1156840d137d4c67ad0eb7b45
+ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55147398"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "55971688"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Præsentation af rapporteditor i Power BI
 
-*Rapporteditoren* i Power BI-tjenesten og rapporteditoren i Power BI Desktop ligner hinanden. Videoen viser rapporteditoren i Power BI Desktop, og denne artikel viser rapporteditoren i Power BI-tjenesten. 
+*Rapporteditoren* i Power BI-tjenesten og rapporteditoren i Power BI Desktop ligner hinanden. Du starter typisk med at oprette rapporter i Power BI Desktop. Derefter publicerer du dem til Power BI-tjenesten, hvor du kan fortsætte med at ændre dem. Power BI-tjenesten er også det sted, hvor du opretter de dashboards, der er baseret på dine rapporter.
 
-Som forfatter af en rapport opretter og redigerer du dashboards og rapporter. Derefter distribuerer du dem til dine rapportforbrugere. De kan interagere med dine dashboards og rapporter i læsevisning i Power BI-tjenesten, men ikke redigere dem. Læs mere om, [hvad brugere af rapporter kan gøre i Power BI-tjenesten](consumer/end-user-reading-view.md) 
+Når du har oprettet dine dashboards og rapporter, kan du distribuere dem til dine rapportforbrugere. Afhængigt af hvordan du deler dem, kan dine slutbrugere muligvis interagere med dem i Læsevisning i Power BI-tjenesten, men ikke redigere dem. Læs mere om, [hvad rapportforbrugere kan gøre i Power BI-tjenesten](consumer/end-user-reading-view.md). 
+
+Denne video viser rapporteditoren i Power BI Desktop. I denne artikel vises rapporteditoren i Power BI-tjenesten. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
@@ -79,7 +81,7 @@ Formateringsmulighederne er næsten uendelige.  Udforsk selv for at få mere for
 Vælg forstørrelsesglasikonet for at få vist ruden Analystics. De tilgængelige indstillinger afhænger af den valgte type visualisering.
 
 ![Ruden Analytics i rapporteditoren](media/service-the-report-editor-take-a-tour/power-bi-analytics.png)    
-Med ruden Analytics i Power BI-tjenesten kan du føje dynamiske referencelinjer til visuelle elementer og give fokus på vigtige tendenser eller indsigt. Du kan finde flere oplysninger i [Ruden Analytics i Power BI-tjenesten](service-analytics-pane.md) eller [Ruden Analytics i Power BI Desktop](desktop-analytics-pane.md).
+I ruden Analytics i Power BI-tjenesten kan du føje dynamiske referencelinjer til visuelle elementer og sætte fokus på vigtige tendenser eller indsigter. Du kan finde flere oplysninger i [Ruden Analytics i Power BI-tjenesten](service-analytics-pane.md) eller [Ruden Analytics i Power BI Desktop](desktop-analytics-pane.md).
 
 - - -
 ## <a name="the-filters-pane"></a>Ruden Filtre
@@ -90,6 +92,12 @@ Ruden Filtre indeholder en anden effektiv funktion – muligheden for at filtrer
 ![Ruden Filtre](media/service-the-report-editor-take-a-tour/power-bi-formatting-pane.png)
 
 Du kan finde flere oplysninger under [Føj et filter til en rapport](power-bi-report-add-filter.md).
+
+Der findes i øjeblikket en ny filtreringsoplevelse som prøveversion. I de nye filtre kan du formatere filtrene, så de ser ud som selve rapporten. Du kan også låse filtre eller skjule dem for dine rapportforbrugere. 
+
+![Ny filteroplevelse](media/service-the-report-editor-take-a-tour/power-bi-filter-reading.png)
+
+Læs mere om [den nye filtreringsoplevelse](power-bi-report-filter-preview.md).
 
 - - -
 ## <a name="the-fields-pane"></a>Ruden Felter

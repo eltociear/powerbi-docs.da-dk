@@ -9,12 +9,12 @@ ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 02/05/2019
-ms.openlocfilehash: a0b1722a54f1e5ea5bf01d8e5bb5fb4753351a60
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 81a40e021ecd094e5e678504f2dd60300802d909
+ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55763048"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "55971665"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Tjenesteprincipal med Power BI (prøveversion)
 
@@ -108,9 +108,6 @@ I modsætning til den traditionelle brug af en masterkonto kræves der nogle få
     Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
     ```
 
-    > [!Note]
-    > AAD-sikkerhedsgrupper kan kun oprettes af en global AAD-administrator.
-
 3. Som Power BI-administrator skal du aktivere tjenesteprincipalen under **Indstillinger for udvikler** på Power BI-administrationsportalen. Føj den sikkerhedsgruppe, du oprettede i Azure AD, til afsnittet **Specifik sikkerhedsgruppe** under **Indstillinger for udvikler**.
 
    > [!Important]
@@ -173,6 +170,7 @@ Nedenfor er et eksempel på et script, der kan bruges til at hente objekt-id'et 
 * Der kræves rettigheder som Power BI-administrator for at kunne aktivere tjenesteprincipalen under Indstillinger for udvikler på Power BI-administrationsportalen.
 * Du kan ikke installere eller administrere en datagateway i det lokale miljø ved hjælp af en tjenesteprincipal.
 * Programmer til [integration i din organisation](embed-sample-for-your-organization.md) kan ikke bruge en tjenesteprincipal.
+* Administration af [dataflow](../service-dataflows-overview.md) understøttes ikke.
 
 ## <a name="next-steps"></a>Næste trin
 
