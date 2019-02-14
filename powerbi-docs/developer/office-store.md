@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 10/30/2018
-ms.openlocfilehash: 850d4c01248a16029b3874548b61c2f9170560bb
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bedf9092e48b0e28c14ec510f1f3b4431e81ea27
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281499"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086396"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publicer brugerdefinerede visuals i AppSource
 
@@ -30,7 +30,7 @@ Når du har oprettet en brugerdefineret visual, kan du udgive den i AppSource, s
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Forberedelser, inden du indsender en brugerdefineret visualisering
 
-Når du er færdig med at kode og teste den brugerdefinerede visualisering, og du har føjet den til en pbiviz-fil, skal du sørge for at have følgende klar, når du vil indsende den.
+Når du er færdig med at kode og [teste den brugerdefinerede visualisering](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md), og du har føjet den til en pbiviz-fil, skal du sørge for at have følgende klar, når du vil indsende den.
 
 | Element | Påkrævet | Beskrivelse |
 | --- | --- | --- |

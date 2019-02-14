@@ -6,24 +6,24 @@ manager: kvivek
 ms.reviewer: lukaszp
 featuredvideoid: EKVvOZmxg9s
 ms.service: powerbi
-ms.subservice: powerbi-desktop
+ms.subservice: powerbi-visuals
 ms.topic: conceptual
-ms.date: 01/29/2019
+ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 279fea3f1b36a86e7606f3b6d69f19ab42763805
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 6b3f1c3780b60efc2ade444960a92234afecc71e
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234582"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086580"
 ---
 # <a name="arcgis-maps-in-power-bi-service-and-power-bi-desktop-by-esri"></a>ArcGIS-kort i Power BI-tjenesten og Power BI Desktop fra Esri
-Dette selvstudium er skrevet fra den person, der opretter et ArcGIS korts synspunkt. Når en opretter deler et ArcGIS-kort med en kollega, kan den pågældende kollega få vist og interagere med kortet, men ikke gemme ændringer. Du kan få mere at vide om visning af et ArcGIS-kort under [Interaktion med ArcGIS-kort](../consumer/power-bi-visualizations-arcgis.md).
+Dette selvstudium er skrevet fra den person, der opretter et ArcGIS korts synspunkt. Når en opretter deler et ArcGIS-kort med en kollega, kan den pågældende kollega få vist og interagere med kortet, men ikke gemme ændringer. Du kan få mere at vide om visning af et ArcGIS-kort under [Interaktion med ArcGIS-kort](power-bi-visualizations-arcgis.md).
 
 Kombinationen af ArcGIS-kort og Power BI tager kort til et helt nyt niveau, som involverer mere end præsentation af punkter på et kort. Du kan vælge mellem grundlæggende kort, placeringstyper, temaer, symboltypografier og referencelag til at oprette fantastiske informative kortvisualiseringer. Kombinationen af autoritative datalag på et kort med rumlige analyser giver en bedre forståelse af dataene i visualiseringen.
 
- Du kan ikke oprette et ArcGIS-kort på en mobilenhed, men du kan få det vist og interagere med det. Se [Interaktion med ArcGIS-kort](../consumer/power-bi-visualizations-arcgis.md).
+ Du kan ikke oprette et ArcGIS-kort på en mobilenhed, men du kan få det vist og interagere med det. Se [Interaktion med ArcGIS-kort](power-bi-visualizations-arcgis.md).
 
 > [!TIP]
 > GIS står for Geographic Information Systems.
@@ -91,7 +91,7 @@ Se, hvordan Will opretter et par forskellige ArcGIS-kortvisualiseringer, og beny
 ## <a name="settings-and-formatting-for-arcgis-maps"></a>Indstillinger og formatering for ArcGIS-kort
 Sådan får du adgang til formateringsfunktionerne i **ArcGIS Maps for Power BI**:
 
-1. Få adgang til yderligere funktioner ved at vælge ellipsen i øverste højre hjørne af visualiseringen og vælge **Edit** (Rediger).
+1. Få adgang til yderligere funktioner ved at vælge de tre prikker i øverste højre hjørne af visualiseringen og vælge **Rediger**.
    
    ![](media/power-bi-visualization-arcgis/power-bi-edit2.png)
    
@@ -175,7 +175,8 @@ I ruden Drive time (Køretid) kan du vælge en placering og derefter angive, hvi
     ![](media/power-bi-visualization-arcgis/power-bi-esri-drive-time.png)
 
 1. Vælg fanen **Drive time** (Køretid), og vælg værktøjet til valg af et eller flere elementer. Vælg knappenålen for Washington D.C.
-    ![](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
+
+   ![](media/power-bi-visualization-arcgis/power-bi-esri-single-select.png)
    
    > [!TIP]
    > Det er lettere at vælge en placering, hvis du zoomer ind på kortet (ved hjælp af +-ikonet).
@@ -340,7 +341,7 @@ Nej, Power BI skal bruge en netværksforbindelse for at vise kortene.
 Ikke endnu. [Stem på denne ide](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9154765-arcgis-geodatabases), og vi sender dig en mail, når vi begynder at arbejde på denne funktion.  
 
 ## <a name="next-steps"></a>Næste trin
-[Interaktion med ArcGIS-kort, som er blevet delt med dig](../consumer/power-bi-visualizations-arcgis.md)
+[Interaktion med ArcGIS-kort, som er blevet delt med dig](power-bi-visualizations-arcgis.md)
 
 [Blogindlæg annoncerer tilgængeligheden af ArcGIS Maps for Power BI](https://powerbi.microsoft.com/blog/announcing-arcgis-maps-for-power-bi-by-esri-preview/)
 

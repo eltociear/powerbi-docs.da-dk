@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 96b6e1a8a92b19181463de404967625b37418582
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bcde69d25b6b73787a4b9d16e4ba2b39b183ffd7
+ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291941"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086419"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Konfigurer indstillinger for dataflow for arbejdsområder (prøveversion)
 
 Med Power BI og dataflow kan du gemme definitionsfilen og datafiler for et dataflow for et arbejdsområde på din Azure Data Lake Storage Gen2-konto. Administratorer af arbejdsområder kan konfigurere Power BI til dette, og i denne artikel gennemgås de trin, der er nødvendige for at komme dertil. 
 
-Før du kan konfigurere lagringsplaceringen for dataflowet for et arbejdsområde, skal dit firmas globale administrator slutte din organisations lagerkonto til Power BI og aktivere tilladelser til tildeling af lager for den pågældende lagerkonto. * [Slut Azure Data Lake Storage Gen2 til dataflowlager (prøveversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md) 
+Før du kan konfigurere lagringsplaceringen for dataflowet for et arbejdsområde, skal dit firmas globale administrator slutte din organisations lagerkonto til Power BI og aktivere tilladelser til tildeling af lager for den pågældende lagerkonto. *[Opret forbindelse til Azure Data Lake Storage Gen2 for dataflowlager (prøveversion)](service-dataflows-connect-azure-data-lake-storage-gen2.md)* 
 
 Der er to måder at konfigurere lagerindstillinger for dataflow for arbejdsområder på: 
 
