@@ -43,7 +43,7 @@ Her er en liste over de fuldt kvalificerede domænenavne, der anvendes af gatewa
 
 Du kan tvinge gatewayen til at kommunikere med Azure Service Bus ved hjælp af HTTPS i stedet for direkte TCP. Brug af HTTPS kan påvirke ydeevnen. Det kan du gøre ved at ændre filen *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* ved at ændre værdien fra `AutoDetect` til `Https` som vist i kodestykket efter dette afsnit. Filen er som standard placeret under *C:\Programmer\On-premises data gateway*.
 
-```
+```xml
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
     <value>Https</value>
 </setting>
