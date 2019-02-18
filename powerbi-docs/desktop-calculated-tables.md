@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 10264540a1ec0b8eb79e446590b86df855505d76
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ffa49cc65c28e0fafb8ca72cb7a1a5bbde798861
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275174"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216326"
 ---
 # <a name="using-calculated-tables-in-power-bi-desktop"></a>Brug af beregnede tabeller i Power BI Desktop
 Med beregnede tabeller kan du føje en ny tabel til modellen. Men i stedet for at forespørge efter og indlæse værdier i din nye tabels kolonner fra en datakilde kan du oprette en DAX-formel (Data Analysis Expressions), der definerer værdierne i tabellen. I Power BI Desktop oprettes der beregnede kolonner ved hjælp af funktionen Ny tabel i Rapportvisning eller Datavisning.
@@ -35,7 +35,7 @@ Jeff, der er projektleder hos Contoso, har en tabel med medarbejdere i nordvest 
 
  ![](media/desktop-calculated-tables/calctables_nwempl.png)
 
-**SoutwestEmployees**
+**SouthwestEmployees**
 
  ![](media/desktop-calculated-tables/calctables_swempl.png)
 

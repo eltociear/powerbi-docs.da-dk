@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d5c6acfb069e026e96dd9944e8001002548b83f8
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: fdb41a7d833ca14dd53b1043c08c244a704004da
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275496"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215383"
 ---
 # <a name="using-the-analytics-pane-in-power-bi-desktop"></a>Brug af ruden Analytics i Power BI Desktop
 Med ruden **Analytics** i **Power BI Desktop** kan du tilføje dynamiske *referencelinjer* for visuelle elementer og give vigtige tendenser eller indsigt fokus. Du finder ruden **Analytics** i området **Visualiseringer** i Power BI Desktop.
@@ -59,7 +59,7 @@ Få vist de tilgængelige dynamiske referencelinjer for en visuel effekt ved at 
 4. Hvis du vil have vist et datanavn, skal du slå skyderen **Datanavn** til. Når du gør dette, får du mange yderligere indstillinger for dit datanavn som vist i følgende billede.
    
    ![](media/desktop-analytics-pane/analytics-pane_5.png)
-5. Bemærk tallet, der vises ved siden af elementet **Gennemsnitslinje** i ruden **Analytics**. Det fortæller dig, hvor mange dynamiske linjer du på nuværende tidspunkt har på dine visuelle effekter og af hvilken type. Hvis vi tilføjer en **Maksimumlinje** for *Cost of Living* (Leveomkostninger), kan du se, at ruden **Analytics** viser, at vi nu har også anvender en **Maksimumlinje** som dynamisk referencelinje for den visuelle effekt.
+5. Bemærk tallet, der vises ved siden af elementet **Gennemsnitslinje** i ruden **Analytics**. Det fortæller dig, hvor mange dynamiske linjer du på nuværende tidspunkt har på dine visuelle effekter og hvilken type. Hvis vi tilføjer en **Maksimumlinje** for *Cost of Living* (Leveomkostninger), kan du se, at ruden **Analytics** viser, at vi nu har også anvender en **Maksimumlinje** som dynamisk referencelinje for den visuelle effekt.
    
    ![](media/desktop-analytics-pane/analytics-pane_6.png)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c6f3e3cf3947abf9ead15fa6b91445c8aadd6420
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: aec463a4ce72f89f0cbbcf1bd42737605657a43c
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008344"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215752"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Opret forbindelse til Acumatica med Power BI
 Med Power BI Acumatica-indholdspakken kan du hurtigt få indsigt i dine data med salgsmuligheder. Power BI henter dine data, herunder salgsmuligheder og kunder og opretter derefter et standarddashboard og relaterede rapporter, der er baseret på disse data.
@@ -45,7 +45,7 @@ Opret forbindelse til [Acumatica-indholdspakken](https://app.powerbi.com/getdata
 5. Som Godkendelsesmetode skal du vælge **Grundlæggende**. Angiv brugernavnet og adgangskoden fra din Acumatica-konto, og klik derefter på **Log på**.
    
     ![](media/service-connect-to-acumatica/creds2.png)
-6. Når Power BI har importeret dataene, vises der et nyt dashboard, en rapport og et datasæt i venstre navigationsrude. Nye elementer er markeret med en gul stjerne \*, som forsvinder, når den er valgt. Når dashboardet vælges, vises et layout svarende til det nedenfor:
+6. Når Power BI har importeret dataene, vises der et nyt dashboard, en ny rapport og et nyt datasæt i venstre navigationsrude. Nye elementer er markeret med en gul stjerne \*, som forsvinder, når den er valgt. Når dashboardet vælges, vises et layout svarende til det nedenfor:
    
     ![](media/service-connect-to-acumatica/dashboard.png)
 

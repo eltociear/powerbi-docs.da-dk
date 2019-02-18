@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 03a0e3cbd2a82c0d6741694c4389a8dcf4d207d9
-ms.sourcegitcommit: 2954de034f5e1be655dd02cc756ff34f126d3034
+ms.openlocfilehash: 3372526dfd7190a90061f3ca83f483dc74a0555f
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55234249"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56225885"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Hvad er nyt i den nyeste opdatering af Power BI Desktop? 
 
-## <a name="december-2018-update-2655313501"></a>Opdatering i december 2018 (2.65.5313.501)
+## <a name="february-2019-update-2655313501"></a>Opdatering i februar 2019 (2.65.5313.501)
 
-Der er en vis sandsynlighed for, at vores opdateringer fra december vil få sukkerfeer til at danse i dine øjne eller i hvert fald betagende datadrevne visualiseringer af sådanne sukkerfeer. Så sæt jer ved pejsen, nyd en kop varm kakao, og pak opdateringerne fra december ud. 
+Vores opdateringer fra februar får dig til at falde i svime over alle vores nye dataforbindelseskomponenter, funktioner og forbedringer af analysefunktioner. Det er ligesom en æske chokolade, du ved aldrig, hvad du får..., men i denne februaropdatering er de alle lækre og fuldstændig uimodståelige. 
 
 Nu kan du [downloade den nyeste version af Power BI Desktop](https://powerbi.microsoft.com/desktop). Hvis du kører Windows 10, kan du også få **Power BI Desktop** fra Windows Store. De månedlige versioner er de samme, selvom versionsnummeret kan variere mellem de to, uanset hvilken måde du installerer **Power BI Desktop** på. Du kan finde flere oplysninger i [denne artikel](desktop-get-the-desktop.md). 
 
@@ -37,57 +37,46 @@ Du kan også se videoen med de **seneste opdateringer** fra starten direkte i ar
 Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 
 ### <a name="reporting"></a>Rapportering
-
-* Smarte hjælpelinjer til at justere objekter på en side [[video]](https://youtu.be/AHNlkjRFdYI?t=11) [[artikel]](power-bi-reports-filters-and-highlighting.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) 
-* Opdateringer til ArcGIS Maps for Power BI [[video]](https://youtu.be/AHNlkjRFdYI?t=84) [[artikel]](visuals/power-bi-visualization-arcgis.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#arcGIS) 
-* Understøttelse af tilgængelighed af listen Felter [[video]](https://youtu.be/AHNlkjRFdYI?t=464) [[artikel]](desktop-report-view.md#copy-and-paste-between-reports) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList)
-* Angiv rækkefølgen af faner for objekter på en side [[video]](https://youtu.be/AHNlkjRFdYI?t=643) [[artikel]](power-bi-reports-filters-and-highlighting.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tabOrder)
-* Værktøjstip til visualiseringer af typen Knapper [[video]](https://youtu.be/AHNlkjRFdYI?t=884) [[artikel]](desktop-accessibility.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#tooltips)
-* Opdaterede ikoner for *interaktioner med visualiseringer* [[video]](https://youtu.be/AHNlkjRFdYI?t=974) [[artikel]](desktop-accessibility.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#icons)
-
-
+* Opdateringer til den nye filterrude (prøveversion) [[video]](https://youtu.be/dMD25wfElLg?t=11)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#smartGuides) 
+* Tværgående fremhævning af et enkelt punkt i kurvediagrammer [[video]](https://youtu.be/dMD25wfElLg?t=197)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#line)
+* Tekstombrydning i titler [[video]](https://youtu.be/dMD25wfElLg?t=298)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#wordWrap)
+* Opdater visuel standardinteraktion med henblik på tværgående fremhævning [[video]](https://youtu.be/dMD25wfElLg?t=358)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#crossFilter)
+* Afrundede hjørner for visuelle kanter [[video]](https://youtu.be/dMD25wfElLg?t=526)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#roundedCorners)
 
 ### <a name="analytics"></a>Analyse
-
-* Livesupport til forbindelse til Spørgsmål og svar (prøveversion) [[video]](https://youtu.be/AHNlkjRFdYI?t=1037) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#liveConnectQA) 
-
-
-### <a name="modeling"></a>Modellering
-
-* Opdateringer af DAX-formellinje [[video]](https://youtu.be/AHNlkjRFdYI?t=1132) [[artikel]](desktop-modeling-view.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#daxFormulaBar) 
-* Understøttelse af tilgængelighed af datavisning [[video]](https://youtu.be/AHNlkjRFdYI?t=1253) [[artikel]](desktop-composite-models.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#dataView) 
-
+* Visualisering af nøglepersoner med indflydelse (prøveversion) [[video]](https://youtu.be/dMD25wfElLg?t=608)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#keyInfluencers) 
+* Indsigtsspørgsmål i spørgsmål og svar [[video]](https://youtu.be/dMD25wfElLg?t=1121)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#insights) 
+* Automatisk genererede forslag til oversigten over spørgsmål og svar [[video]](https://youtu.be/dMD25wfElLg?t=1121)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#autoSuggestions) 
+* Forbedret Python-script og R Script-editor [[video]](https://youtu.be/dMD25wfElLg?t=1282)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#scriptEditor) 
 
 ### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
-
-* En ny brugerdefineret visualisering [[video]](https://youtu.be/AHNlkjRFdYI?t=1370) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#customVisuals) 
+* Ti nye brugerdefinerede visualisering, funktion til nye brugerdefinerede visualiseringer [[video]](https://youtu.be/dMD25wfElLg?t=1324)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#customVisuals) 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
 
-* AtScale-connector (beta) [[video]](https://youtu.be/AHNlkjRFdYI?t=1449) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#atScale) 
-* Oracle Essbase-connector (beta) [[video]](https://youtu.be/AHNlkjRFdYI?t=1449) [[artikel]](desktop-connect-pdf.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#essbase) 
-
-
-### <a name="data-preparation"></a>Dataforberedelse
-
-* Fuzzyfletning – understøttelse af de bedste Top N-match [[video]](https://youtu.be/AHNlkjRFdYI?t=1480) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fuzzyMerge) 
+* Microsoft Graph Security [[video]](https://youtu.be/dMD25wfElLg?t=2787)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#microsoftGraph) 
+* Guidanz' BI-forbindelseskomponenten til OBIEE [[video]](https://youtu.be/dMD25wfElLg?t=2807)   [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#biConnector) 
+* MarkLogic [[video]](https://youtu.be/dMD25wfElLg?t=2825)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#markLogic) 
+* Kronos Workforce Dimensions [[video]](https://youtu.be/dMD25wfElLg?t=2846)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#kronos) 
+* SurveyMonkey [[video]](https://youtu.be/dMD25wfElLg?t=2857)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#surveyMonkey) 
+* Qubole Presto [[video]](https://youtu.be/dMD25wfElLg?t=2872)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#qubole) 
+* Quick Base [[video]](https://youtu.be/dMD25wfElLg?t=2899)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#quickBase) 
+* Sagra Emigo [[video]](https://youtu.be/dMD25wfElLg?t=2909)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#emigo) 
 
 
 ### <a name="other"></a>Andet
-* Understøttelse af høj kontrast for alle sidefødder i ruder og rapporter [[video]](https://youtu.be/AHNlkjRFdYI?t=1631) [[artikel]](desktop-connect-pdf.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#highContrast) 
-* Opdateret dialogboks til tastaturgenveje [[video]](https://youtu.be/AHNlkjRFdYI?t=1654) [[artikel]](desktop-accessibility.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#keyboardShortcuts) 
-
+* Forbedrede Live Connect- og DirectQuery-fejlmeddelelser [[video]](https://youtu.be/dMD25wfElLg?t=2926)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/#error) 
 
 
 > [!NOTE]
 > Du kan også [se alle de datakilder, du kan bruge i Power BI Desktop](desktop-data-sources.md). Vi opdaterer hele tiden listen med nye datakilder, så kig tilbage ofte.
 
-Vil du have flere oplysninger om disse opdateringer? Se nærmere på [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary), hvor du kan få mere detaljerede oplysninger om hver af de nye funktioner (dette er de samme referencer til blogindlæg på listen herover).
+Vil du have flere oplysninger om disse opdateringer? Se nærmere på [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2019-feature-summary/), hvor du kan få mere detaljerede oplysninger om hver af de nye funktioner (dette er de samme referencer til blogindlæg på listen herover).
 
 
 På følgende videokanal beskrives og vises hver af disse opdateringer. Du kan også se videoerne i blogindlægget.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AHNlkjRFdYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dMD25wfElLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!NOTE]
 > Du kan også læse om [nyhederne i Power BI-tjenesten](service-whats-new.md) og se [nyhederne i mobilappsene til Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).

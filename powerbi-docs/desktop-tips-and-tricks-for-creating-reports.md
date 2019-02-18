@@ -1,7 +1,7 @@
 ---
 title: Tip og gode råd til oprettelse af rapporter i Power BI
 description: Få mer at vide om de bedste fremgangsmåder til oprettelse af rapporter i Power BI-tjenesten og Power BI Desktop
-author: davidi
+author: davidiseminger
 manager: kfile
 ms.reviewer: willthom
 ms.custom: seodec18
@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
-ms.openlocfilehash: bd1889605773b1d9eed888550676b8bbc9933b2f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: fa3d24de1f54be127f3f9b23ca33677987464150
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295989"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223852"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips og tricks til oprettelse af rapporter i Power BI Desktop
 For at få mest muligt ud af dine data skal du nogle gange have lidt ekstra hjælp. Vi har samlet nogle tip og tricks, som du kan bruge, når du opretter rapporter i Microsoft Power BI Desktop *og* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-udgaver, hvor tilføjelsesprogrammet Power Pivot er aktiveret, og Power-forespørgsel er installeret og aktiveret. 

@@ -5,51 +5,45 @@ author: christianwade
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-admin
+ms.component: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/19/2018
+ms.date: 01/24/2019
 ms.author: chwade
 LocalizationGroup: Premium
-ms.openlocfilehash: 92bd4043e4cfa37bd8f712491ccbc2990dc0b6a9
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: caa350274b7af62078098d9ef7730046f6e14627
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794378"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56225977"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Trinvis opdatering i Power BI Premium
 
 En trinvis opdatering gør det muligt at have meget store datasæt i Power BI Premium-tjenesten med følgende fordele:
 
-- **Opdateringer udføres hurtigere.** Det er kun data, der er blevet ændret, som skal opdateres. Opdater f.eks. kun de sidste 5 dage i et datasæt på 10 år.
+- **Opdateringer sker hurtigere** – Det er kun ændrede data, der skal opdateres. Opdater f.eks. kun de sidste 5 dage i et datasæt på 10 år.
 
-- **Opdateringer er mere pålidelige.** Det er f.eks. ikke nødvendigt at vedligeholde forbindelser, der kører i lang tid, til ustabile kildesystemer.
+- **Opdateringer er mere pålidelig** – Det er ikke længere nødvendigt at vedligeholde langtidskørende forbindelser til ustabile kildesystemer.
 
-- **Ressourceforbruget reduceres.** Hvis der skal opdateres færre data, reduceres det overordnede forbrug af hukommelsen og andre ressourcer.
+- **Forbrug af ressourcer reduceres** – Hvis der skal opdateres færre data, reduceres det overordnede forbrug af hukommelsen og andre ressourcer.
 
-## <a name="how-to-use-incremental-refresh"></a>Sådan bruger du trinvis opdatering
+## <a name="configure-incremental-refresh"></a>Konfigurer trinvis opdatering
 
 Politikker om trinvis opdatering er defineret i Power BI Desktop og anvendes, når de er publiceret i Power BI-tjenesten.
 
-Start ved at aktivere trinvis opdatering i funktioner til eksempelvisning.
+Start ved at aktivere trinvis opdatering i **funktioner til eksempelvisning**.
 
 ![Indstillinger – funktioner til eksempelvisning](media/service-premium-incremental-refresh/preview-features.png)
 
 ### <a name="filter-large-datasets-in-power-bi-desktop"></a>Filtrer store datasæt i Power BI Desktop
 
-Store datasæt, der kan indeholde milliarder af rækker, kan måske ikke være i Power BI Desktop, da tjenesten normalt er begrænset af de ressourcer, der er tilgængelige på brugerens stationære computer. Disse datasæt filtreres derfor ofte, efter de er importeret, så der er plads til dem i Power BI Desktop. Dette er tilfældet, uanset om der bruges trinvis opdatering eller ej.
+Store datasæt, der kan indeholde milliarder af rækker, kan måske ikke være i en Power BI Desktop-model, fordi PBIX-filen er begrænset af de hukommelsesressourcer, der er tilgængelige på den stationære computer. Disse datasæt filtreres derfor ofte, efter at de er importeret. Denne type filtrering gælder, uanset om du bruger trinvis opdatering eller ej. I forbindelse med trinvis opdatering kan du filtrere ved hjælp af parametrene for dato/klokkeslæt i Power-forespørgsel.
 
 #### <a name="rangestart-and-rangeend-parameters"></a>Parametrene RangeStart og RangeEnd
 
-Hvis du vil bruge trinvis opdatering i Power BI-tjenesten, skal du udføre filtrering ved hjælp af parametrene for dato/klokkeslæt i Power-forespørgsel med de reserverede navne **RangeStart** og **RangeEnd**, hvor der skelnes mellem store og små bogstaver.
+I forbindelse med trinvis opdatering filtreres datasæt ved hjælp af parametrene for dato/klokkeslæt i Power-forespørgsel med de reserverede navne **RangeStart** og **RangeEnd**, hvor der skelnes mellem store og små bogstaver. Disse parametre bruges til at filtrere de data, der importeres til Power BI Desktop, og desuden til dynamisk partitionering af dataene i intervaller, når de er publiceret til Power BI-tjenesten. Parameterværdierne er erstattet af tjenesten til filtrering efter hver partition. Når de er publiceret, overskrives parameterværdierne automatisk af Power BI-tjenesten. Det er ikke nødvendigt at angive dem under indstillinger for datasæt i tjenesten. Når de er publiceret, overskrives parameterværdierne automatisk af Power BI-tjenesten. 
 
-Når de er publiceret, overskrives parameterværdierne automatisk af Power BI-tjenesten. Det er ikke nødvendigt at angive dem under indstillinger for datasæt i tjenesten.
-
-Det er vigtigt, at filteret pushes til kildesystemet, når der sendes forespørgsler til opdatering. For at kunne pushe filtrering ned skal datakilden understøtte "forespørgselsfoldning". De fleste datakilder, der understøtter SQL-forespørgsler, understøtter forespørgselsfoldning. Det gør datakilder som flade filer, BLOBs, web og OData-feeds typisk ikke. På grund af de forskellige supportniveauer af forespørgselsfoldning for de enkelte datakilder anbefales det, at du kontrollerer, at filterlogikken er inkluderet i kildeforespørgslerne. I de tilfælde, hvor filteret ikke understøttes af datakildens backend, kan det ikke pushes ned. I sådanne tilfælde kompenserer miksprogrammet og anvender filteret lokalt, hvilket kan kræve, at hele datasættet skal hentes fra datakilden. Dette kan medføre, at trinvis opdatering er meget langsom, og processen kan løbe tør for ressourcer enten i Power BI-tjenesten eller i datagatewayen i det lokale miljø, hvis de bruges.
-
-Filteret bruges til at partitionere dataene i intervaller i Power BI-tjenesten. Det er ikke designet til at understøtte opdatering af den filtrerede datokolonne. En opdatering fortolkes som en indsætning og sletning (ikke en opdatering). Hvis sletningen sker i historikintervallet og ikke i det trinvis interval, registreres den ikke. Dette kan medføre fejl under dataopdatering på grund af konflikter i forbindelse med partitionsnøglen.
-
-I redigeringsfunktionen til Power-forespørgsel skal du vælge **Administrer parametre** for at definere parametrene med standardværdier.
+Vælg **Administrer parametre** for at definere parametrene med standardværdier i redigeringsfunktionen til Power-forespørgsel.
 
 ![Administrer parametre](media/service-premium-incremental-refresh/manage-parameters.png)
 
@@ -68,6 +62,18 @@ Du skal sikre, at rækker filtreres, hvor kolonneværdien *er efter eller lig me
 
 Vælg **Luk og anvend** fra redigeringsfunktionen til Power-forespørgsel. Du får et undersæt af datasættet i Power BI Desktop.
 
+#### <a name="filter-date-column-updates"></a>Filtrer opdateringer af datokolonner
+
+Filteret i datokolonnen bruges til dynamisk partitionering af dataene i intervaller i Power BI-tjenesten. Trinvis opdatering er ikke beregnet til at understøtte tilfælde, hvor den filtrerede datokolonne opdateres i kildesystemet. En opdatering fortolkes som en indsætning og en sletning, ikke en egentlig opdatering. Hvis sletningen sker i historikintervallet og ikke i det trinvis interval, registreres den ikke. Dette kan medføre fejl under dataopdatering på grund af konflikter i forbindelse med partitionsnøglen.
+
+#### <a name="query-folding"></a>Forespørgselsfoldning
+
+Det er vigtigt, at partitionsfiltre pushes til kildesystemet, når der sendes forespørgsler til opdatering. For at kunne pushe filtrering ned skal datakilden understøtte forespørgselsfoldning. De fleste datakilder, der understøtter SQL-forespørgsler, understøtter forespørgselsfoldning. Det gør datakilder, som flade filer, BLOBs, web og OData-feeds, imidlertid ikke. I de tilfælde, hvor filteret ikke understøttes af datakildens backend, kan det ikke pushes ned. I sådanne tilfælde kompenserer miksprogrammet og anvender filteret lokalt, hvilket kan kræve, at hele datasættet skal hentes fra datakilden. Dette kan medføre, at trinvis opdatering er meget langsom, og processen kan løbe tør for ressourcer enten i Power BI-tjenesten eller i datagatewayen i det lokale miljø, hvis de bruges.
+
+På grund af de forskellige supportniveauer af forespørgselsfoldning for de enkelte datakilder anbefales det, at det kontrolleres, at filterlogikken er inkluderet i kildeforespørgslerne. For at gøre det nemmere forsøger Power BI Desktop til at udføre denne kontrol for dig. Hvis det var ikke muligt at bekræfte, vises der en advarsel i dialogboksen til trinvis opdatering, når du definerer politikken for trinvis opdatering. SQL-baserede datakilder, som SQL, Oracle og Teradata, kan bruge denne advarsel. Andre datakilder kan muligvis ikke bekræfte uden at spore forespørgsler. Hvis Power BI Desktop ikke kan bekræfte, vises følgende advarsel.
+
+ ![Forespørgselsfoldning](media/service-premium-incremental-refresh/query-folding.png)
+
 ### <a name="define-the-refresh-policy"></a>Definer opdateringspolitikken
 
 Trinvis opdatering er tilgængelig via genvejsmenuen for tabeller, undtagen for modeller med direkte forbindelse.
@@ -85,17 +91,17 @@ Dialogboksen Trinvis opdatering vises. Brug til/fra-tasten til at aktivere dialo
 
 Teksten i sidehovedet forklarer følgende:
 
-- Trinvis opdatering understøttes kun for arbejdsområder med Premium-kapacitet. Opdateringspolitikker defineres i Power BI Desktop. De anvendes af opdateringshandlinger i tjenesten.
+- Trinvis opdatering understøttes kun for arbejdsområder med Premium-kapacitet. Opdateringspolitikker defineres i Power BI Desktop, og de anvendes af opdateringshandlinger i tjenesten.
 
-- Hvis du ikke kan hente den PBIX-fil, der indeholder en politik om trinvis opdatering, fra Power BI-tjenesten, åbnes den ikke i Power BI Desktop. Det vil snart ikke være muligt at downloade den overhovedet. Dette understøttes måske i fremtiden, men vær opmærksom på, at disse datasæt kan vokse sig så store, at det er upraktisk at downloade og åbne dem på en typisk stationær computer.
+- Hvis du ikke kan hente den PBIX-fil, der indeholder en politik for trinvis opdatering, fra Power BI-tjenesten, kan den ikke åbnes i Power BI Desktop. Dette understøttes muligvis i fremtiden, men vær opmærksom på, at disse datasæt kan vokse sig så store, at det er upraktisk at downloade og åbne dem på en normal stationær computer.
 
 #### <a name="refresh-ranges"></a>Opdateringsintervaller
 
-I følgende eksempel defineres en opdateringspolitik, hvor data for 5 hele kalenderår samt data for det aktuelle år op til den aktuelle dato gemmes, og hvor data for 10 dage gradvist opdateres. Under den første opdateringshandling indlæses historiske data. De efterfølgende opdateringer er trinvise, hvor følgende handlinger udføres (hvis de er planlagt til at køre dagligt).
+I følgende eksempel defineres en opdateringspolitik, hvor data for 5 hele kalenderår samt data for det aktuelle år op til den aktuelle dato gemmes, og hvor data for 10 dage gradvist opdateres. Under den første opdateringshandling indlæses der historiske data. De efterfølgende opdateringer er trinvise, og følgende handlinger udføres (hvis de er planlagt til at køre dagligt):
 
 - Tilføj en ny dags data.
 
-- Opdater ti dage op til dags dato.
+- Opdater 10 dage op til dags dato.
 
 - Fjern kalenderår, der er ældre end fem år fra den aktuelle dato. Hvis den aktuelle dato f.eks. er 1. januar 2019, fjernes år 2013.
 
@@ -103,13 +109,14 @@ Under den første opdatering i Power BI-tjenesten kan det tage længere tid at i
 
 ![Opdateringsintervaller](media/service-premium-incremental-refresh/refresh-ranges.png)
 
-**En definition af disse intervaller kan være det eneste, du skal bruge, og i dette tilfælde kan du gå direkte til trinnet for publicering nedenfor. De ekstra rullemenuer bruges til avancerede funktioner.**
+> [!NOTE]
+> En definition af disse intervaller kan være det eneste, du skal bruge, og i dette tilfælde kan du gå direkte til trinnet for publicering nedenfor. De ekstra rullemenuer bruges til avancerede funktioner.
 
 ### <a name="advanced-policy-options"></a>Avancerede politikindstillinger
 
 #### <a name="detect-data-changes"></a>Registrer dataændringer
 
-En trinvis opdatering på 10 dage er selvfølgelig meget mere effektiv end en komplet opdatering på 5 år. Men vi kan muligvis gøre det endnu bedre. Hvis du markerer afkrydsningsfeltet**Registrer dataændringer**, kan du vælge en dato/klokkeslæt-kolonne, der bruges til at identificere og kun opdatere de dage, hvor dataene er blevet ændret. Det er en forudsætning, at der findes en sådan kolonne i kildesystemet, der typisk bruges til overvågning. **Det må ikke være den samme kolonne, der bruges til at partitionere dataene med parametrene RangeStart/RangeEnd.** Maksimumværdien for denne kolonne evalueres for hver af perioderne i det trinvise interval. Hvis den ikke er ændret siden den seneste opdatering, er det ikke nødvendigt at opdatere perioden. I eksemplet kan det betyde en yderligere reduktion af den trinvise opdatering fra 10 til måske 2 dage.
+En trinvis opdatering på 10 dage er selvfølgelig meget mere effektiv end en komplet opdatering på 5 år. Det er imidlertid muligt at gøre det på en endnu bedre måde. Hvis du markerer afkrydsningsfeltet**Registrer dataændringer**, kan du vælge en dato/klokkeslæt-kolonne, der bruges til at identificere og kun opdatere de dage, hvor dataene er blevet ændret. Det er en forudsætning, at der findes en sådan kolonne i kildesystemet, der typisk bruges til overvågning. **Det må ikke være den samme kolonne, der bruges til at partitionere dataene med parametrene RangeStart/RangeEnd.** Maksimumværdien for denne kolonne evalueres for hver af perioderne i det trinvise interval. Hvis den ikke er ændret siden den seneste opdatering, er det ikke nødvendigt at opdatere perioden. I eksemplet kan dette yderligere reducere antallet af dage for den trinvise opdatering fra 10 til ca. 2 dage.
 
 ![Registrer ændringer](media/service-premium-incremental-refresh/detect-changes.png)
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: c6395785c3d3e386aa2ac735439a265f5fe3fb02
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 1bb6cfa195e3e6158259c9ff23cb3efdc3da4a09
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286996"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223300"
 ---
 # <a name="customize-x-axis-and-y-axis-properties"></a>Tilpas egenskaberne for x- og y-aksen
 I dette selvstudium lærer du mange forskellige måder til at tilpasse X- og Y-aksen for dine visualiseringer. Det er ikke alle visualiseringer, der har akser, eller som kan tilpasses. Et cirkeldiagram har for eksempel ikke akser. Indstillingerne for tilpasning kan desuden variere mellem visualiseringerne. Samtidig er der for mange indstillinger til, at de kan beskrives i én artikel. Jeg vil derfor se nærmere på nogle af de aksetilpasninger, der oftest bruges. Så får du samtidig erfaring med at bruge fanen Format for visualiseringer på dit rapportcanvas i Power BI.  
@@ -136,7 +136,7 @@ Hvis X-aksen er kategoriseret som en datotype af rapportejeren, vil indstillinge
 ## <a name="next-steps"></a>Næste trin
 Få mere at vide om [Visualiseringer i Power BI-rapporter](power-bi-report-visualizations.md)
 
-[Tilpas ](power-bi-visualization-customize-title-background-and-legend.md)[titler, baggrunde og forklaringer](power-bi-visualization-customize-title-background-and-legend.md)
+[Tilpas titler, baggrunde og forklaringer](power-bi-visualization-customize-title-background-and-legend.md)
 
 [Tilpas farver og akseegenskaber](service-getting-started-with-color-formatting-and-axis-properties.md)
 

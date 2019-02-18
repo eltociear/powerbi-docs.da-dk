@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: 3aa4047f5a4b0146c534a5734d8d13a42c46fe58
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e829d0cf174cc81148287ce1b25449246300606c
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287801"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216694"
 ---
 # <a name="troubleshoot-scheduled-refresh-in-power-bi-report-server"></a>Fejlfinding i forbindelse med planlagt opdatering i Power BI Report Server
 I denne artikel beskrives ressourcer, der er tilgængelige til fejlfinding i forbindelse med planlagt opdatering i Power BI Report Server.
@@ -60,7 +60,7 @@ Følgende indstillinger kan bruges til at påvirke planlagt opdatering. Indstill
 
 **Indstillinger i rsreportserver.config:**
 
-```
+```xml
 <Configuration>
     <Service>
         <PollingInterval>10</PollingInterval>

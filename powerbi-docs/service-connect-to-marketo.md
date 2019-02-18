@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4ad7ce28c512f69e144af98098ab9f13a15b6023
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: 4131758dad29b28de56e3ac450bed22d64c25e46
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008620"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223783"
 ---
 # <a name="connect-to-marketo-with-power-bi"></a>Opret forbindelse til Marketo med Power BI
 Power BI-indholdspakken til Marketo giver dig mulighed at få indsigt i din Marketo-konto med data om kundeemner og de tilhørende aktiviteter. Når du opretter denne forbindelse, hentes dine data, og du får automatisk et dashboard og relaterede rapporter baseret på disse data.
@@ -59,7 +59,7 @@ Følgende data er tilgængelige fra Marketo i Power BI, hvor aktiviteten fandt s
 | Tabelnavn | Beskrivelse |
 | --- | --- |
 | EmailActivities |Data om mail, der er sendt til kundeemner/kontakter med detaljerede oplysninger om enheder, kategorier, antal og procentdel af manglende levering, antal og procentdel af klik, antal og procentdel af åbnede samt programnavn. Mailaktiviteterne som vist i Power BI er en rapport om absolut leveringsevne for mail. Der anvendes ikke nogen yderligere logik på dataene. Du kan se nogle forskellige resultater mellem Marketo-klienten og Power BI på grund af dette. |
-| ProgramActivites |Data om programmer, der har fået en ændring af Status. Dette omfatter oplysninger som: Årsag, succes, antal og procentdel af programkøb og antal og procentdel af programsucces. |
+| ProgramActivities |Data om programmer, der har fået en ændring af Status. Dette omfatter oplysninger som: Årsag, succes, antal og procentdel af programkøb og antal og procentdel af programsucces. |
 | WebPageActivities |Data fra brugerbesøg på webside, herunder søgeagent, brugeragent, webside og tidspunkt på dagen. |
 | Datetable |Datoer fra dags dato og det sidste år.  Gør det muligt at analysere dine Marketo-data efter dato. |
 | Leads |Oplysninger om kundeemner såsom virksomhed, indtægtsstørrelse, antal medarbejdere, land, industri, point for kundeemner og status for kundeemner. Kundeemner hentes på baggrund af deres forekomst i dataene for mail-, program- og websideaktiviteter. |

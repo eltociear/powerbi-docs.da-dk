@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: f527fa17ab242f6835ca99a3ff3ef3e2525a001f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 4b859611df09d5c374ae7483a1ef406b432389ba
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277129"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223714"
 ---
 # <a name="resolve-issues-when-power-bi-desktop-will-not-launch"></a>Løs problemer, når Power BI Desktop ikke vil starte
 I **Power BI Desktop** kan brugere, der har installeret og kører tidligere versioner af **Power BI datagatewayen i det lokale miljø**, blive blokeret, så de ikke kan starte Power BI Desktop. Det skyldes administrative politikbegrænsninger, som Power BI gatewayen i det lokale miljø har angivet for navngivne pipes på den lokale computer. 

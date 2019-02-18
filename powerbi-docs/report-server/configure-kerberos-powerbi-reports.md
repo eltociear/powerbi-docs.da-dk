@@ -9,19 +9,19 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: maghan
-ms.openlocfilehash: b9fcd2dbd664ac4f119c3f00c3d1a173b9251bd3
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5342f509fdd0705b2752aab3315a4968d610b681
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296178"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223760"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Konfigurer Kerberos til at bruge Power BI-rapporter
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Se, hvordan du kan konfigurere din rapportserver til Kerberos-godkendelse af datakilder, der bruges i dine Power BI-rapporter, for et distribueret miljø.
 
-Power BI-rapportserver omfatter muligheden for at hoste Power BI-rapporter. Mange forskellige datakilder understøttes af rapportserveren. Mens denne artikel fokuserer specifikt på SQL Server Analysis Services, kan du bruge koncepterne og anvende dem på andre datakilder som f.eks. SQL Server.
+Power BI-rapportserver omfatter muligheden for at hoste Power BI-rapporter. Mange forskellige datakilder understøttes af rapportserveren. Mens denne artikel fokuserer specifikt på SQL Server Analysis Services, kan du bruge koncepterne og anvende dem på andre datakilder, f.eks. SQL Server.
 
 Du kan installere Power BI-rapportserver, SQL Server og Analysis Services på én enkelt computer, og alt bør fungere uden yderligere konfiguration. Dette er godt i et testmiljø. Du kan støde på fejl, hvis du har disse tjenester installeret på separate computere, hvilket kaldes for et distribueret miljø. I dette miljø er du nødt til at bruge Kerberos-godkendelse. Der kræves konfiguration for at implementere dette. 
 
@@ -63,7 +63,7 @@ I filen rsreportserver.config skal du finde sektionen **Authentication/Authentic
 
 Vi vil gerne sikre os, at RSWindowsNegotiate er angivet, og at det er det første på listen over godkendelsestyper. Det skal se nogenlunde ud som følgende.
 
-```
+```xml
 <AuthenticationTypes>
     <RSWindowsNegotiate/>
     <RSWindowsNTLM/>

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 12/20/2017
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 130c18bb51c99813999f87c69c465dc59783e638
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ff99fc731b5388acd4dbb7c98fe13b227e7d5789
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276715"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216751"
 ---
 # <a name="enable-cortana-to-access-power-bi-reports-and-their-underlying-datasets"></a>Gør Cortana i stand til at få adgang til Power BI-rapporter (og deres underliggende datasæt)
 Du har læst [Introduktion til Cortana og Power BI](service-cortana-intro.md) (hvis ikke, kan du læse den først og derefter vende tilbage). Og nu vil du selv prøve.  Før du kan stille spørgsmål på naturligt sprog i Cortana og finde svar fra data, der er gemt i Power BI-***rapporter***, er der nogle få krav. Du skal specifikt gøre følgende.

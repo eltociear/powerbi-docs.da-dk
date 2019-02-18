@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 05/17/2018
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: bad76adc42fc9f70c1439c6da0cfe2d149bbbe43
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8f44356f79b8a77ef06fe464671dbbaaaa4187e9
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295618"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56215567"
 ---
 # <a name="tutorial-connect-to-a-github-sample-with-power-bi"></a>Selvstudium: Opret forbindelse til et GitHub-eksempel med Power BI
 I dette selvstudium opretter du forbindelse til virkelige data i GitHub-tjenesten med Power BI, og Power BI opretter automatisk dashboards og rapporter. Du opretter forbindelse til det offentlige Power BI-lagerindhold (også kaldet *lager*) og får vist oplysninger: Hvor mange bidrager til det offentlige Power BI-indhold? Hvem der bidrager mest? På hvilken ugedag er der flest bidrag? Og svar på andre spørgsmål. 

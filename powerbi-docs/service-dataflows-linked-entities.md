@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 543a2bafe884a313e4ab392f617ed91026c97207
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 4331878aee591f9e3939c0bb1c239eca160ee61d
+ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277727"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56223645"
 ---
 # <a name="link-entities-between-dataflows-in-power-bi-preview"></a>Link Objekter mellem dataflow i Power BI (prøveversion)
 
@@ -79,7 +79,7 @@ Når du opretter en Power BI-rapport, der indeholder data, som er baseret på et
 Der er nogle få begrænsninger, som du skal være opmærksom på, når du arbejder med linkede objekter:
 
 * Der er et maksimum på fem refererencehops
-* Cykliske afhængigheder af linkede objekter er ikke tilladt
+* Cykliske afhængigheder af sammenkædede objekter er ikke tilladt
 * Dataflowet skal være placeret i et [nyt Power BI-arbejdsområde](service-create-the-new-workspaces.md)
 
 

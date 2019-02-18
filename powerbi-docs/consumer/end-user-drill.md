@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d935b044e5cbe1a2c84ce5749c3a0b58c528bab0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bc5033df204fafcc7316d6708d7b39429e8e9cba
+ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282350"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56216579"
 ---
 # <a name="drill-mode-in-a-visualization-in-power-bi"></a>Analysetilstand i en visualisering i Power BI
 
@@ -112,9 +112,9 @@ Til denne metode bruges ikonet for detailudledning, som vises i øverste højre 
 
 2. Vælg *bladet* for **TN**. Nu vises alle de byer i Tennessee, hvor der er en butik, i træstrukturen. 
 
-    ![træstruktur med data kun for Tennesee](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![træstruktur med data kun for Tennessee](media/end-user-drill/power-bi-drill-down-one1.png)
 
-2. Herfra kan du fortsætte detailudledning for Tennesee, eller du kan foretage detailudledning for en bestemt by i Tennesee, eller du kan i stedet udvide (se **Udvid alle felter på en gang** nedenfor). Lad os fortsætte med detailudledning på ét felt ad gangen.  Vælg **Knoxville, TN**. Postnummeret for din butik i Knoxville vises nu i træstrukturen. 
+2. Herfra kan du fortsætte detailudledning for Tennessee, eller du kan foretage detailudledning for en bestemt by i Tennessee, eller du kan i stedet udvide (se **Udvid alle felter på en gang** nedenfor). Lad os fortsætte med detailudledning på ét felt ad gangen.  Vælg **Knoxville, TN**. Postnummeret for din butik i Knoxville vises nu i træstrukturen. 
 
    ![37919 vises i træstrukturen](media/end-user-drill/power-bi-drill-down-one2.png)
 
@@ -127,18 +127,18 @@ Det er ikke så informativt at have en træstruktur, der kun viser et postnummer
 
     ![viser postnummer og butiksnavn](./media/end-user-drill/power-bi-expand1.png)
 
-2. Hvis du vil se alle fire hierarkiniveauer for Tennesee, skal du vælge pilen for at gå et niveau op, indtil du kommer til andet niveau, **Samlet antal enheder i år efter område og by**, i træstrukturen. 
+2. Hvis du vil se alle fire hierarkiniveauer for Tennessee, skal du vælge pilen for at gå et niveau op, indtil du kommer til andet niveau, **Samlet antal enheder i år efter område og by**, i træstrukturen. 
 
-    ![træstruktur med alle data for Tennesee](media/end-user-drill/power-bi-drill-down-one1.png)
+    ![træstruktur med alle data for Tennessee](media/end-user-drill/power-bi-drill-down-one1.png)
 
 
 3. Sørg for, at detailudledning stadig er slået til ![detailudledning slået til](./media/end-user-drill/power-bi-drill-icon2.png), og vælg ikonet *udvid ned* ![ikonet udvid ned](./media/end-user-drill/power-bi-drill-icon6.png). Nu vises der nogle flere detaljer i træstrukturen. I stedet for kun at vise by og stat vises postnummer også. 
 
     ![ikon for dobbelt analyse](./media/end-user-drill/power-bi-expand-one3.png)
 
-4. Vælg ikonet *udvid ned* en gang mere for at få vist alle fire hierarkiniveauer med detaljer for Tennesee i træstrukturen. Peg på et blad for at få vist flere detaljer.
+4. Vælg ikonet *udvid ned* en gang mere for at få vist alle fire hierarkiniveauer med detaljer for Tennessee i træstrukturen. Peg på et blad for at få vist flere detaljer.
 
-   ![træstruktur med data for Tennesee](./media/end-user-drill/power-bi-expand-all.png)
+   ![trædiagram med data for Tennessee](./media/end-user-drill/power-bi-expand-all.png)
 
 ## <a name="drilling-filters-other-visuals"></a>Analyse filtrerer andre visualiseringer
 Når du arbejder med analysetilstand, skal du beslutte, hvordan detailudledning og udvidelse påvirker andre visualiseringer på siden. 

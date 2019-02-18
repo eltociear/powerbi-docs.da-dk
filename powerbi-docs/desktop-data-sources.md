@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f5fc52df86faa69683fa1e76f8893fb1d1a09ab9
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: da269e3bb025e8d53ee3bb7707f3bb78d592e011
+ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281154"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56225908"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 Med Power BI Desktop kan du oprette forbindelse til data fra mange forskellige kilder. Der findes en komplet liste over tilgængelige datakilder nederst på siden.
@@ -77,11 +77,14 @@ Kategorien **Database** indeholder følgende dataforbindelser:
 * Amazon Redshift
 * Impala
 * Google BigQuery
+* Vertica
 * Snowflake
 * Essbase (beta)
-* BI Connector
+* Dremio
 * Exasol
-* Dremio (beta)
+* MarkLogic (Beta)
+* AtScale-kuber (beta)
+* BI Connector
 * Jethro (beta)
 * Kyligence Enterprise (beta)
 
@@ -95,7 +98,7 @@ På følgende billede vises vinduet **Hent data** for **Database**.
 Kategorien **Power BI** indeholder følgende dataforbindelser:
 
 * Power BI-datasæt
-* Power BI-dataflows (beta)
+* Power BI-dataflow (beta)
 
 På følgende billede vises vinduet **Hent data** for **Power BI**.
 
@@ -136,8 +139,6 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Google Analytics
 * Adobe Analytics
 * appFigures (beta)
-* comScore Digital Analytix (beta)
-* Dynamics 365 for Customer Insights (beta)
 * Data.World – Get Dataset (beta)
 * Facebook
 * GitHub (beta)
@@ -157,6 +158,8 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Webtrends (beta)
 * Zendesk (beta)
 * TeamDesk (beta)
+* Emigo datakilde (beta)
+* Microsoft Graph Security (beta)
 
 På følgende billede vises vinduet **Hent data** for **Onlinetjenester**.
 
@@ -164,7 +167,6 @@ På følgende billede vises vinduet **Hent data** for **Onlinetjenester**.
 
 Kategorien **Andet** indeholder følgende dataforbindelser:
 
-* Vertica
 * Web
 * SharePoint-liste
 * OData-feed
@@ -176,8 +178,12 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Python-script
 * ODBC
 * OLE DB
+* Workforce Dimensions (beta)
 * Denado
 * Paxata (beta)
+* SurveyMonkey (beta)
+* QubolePresto (beta)
+* Hurtig Base (beta)
 * Tom forespørgsel
 
 På følgende billede vises vinduet **Hent data** for **Andet**.
@@ -190,7 +196,7 @@ På følgende billede vises vinduet **Hent data** for **Andet**.
 ## <a name="connecting-to-a-data-source"></a>Opret forbindelse til en datakilde
 For at oprette forbindelse til en datakilde skal du vælge datakilden i vinduet **Hent data** og vælge **Opret forbindelse**. På følgende billede er **Web** valgt fra kategorien **Andet** for dataforbindelsen.
 
-![Opret forbindelse til web](media/desktop-data-sources/data-sources_08a.png)
+![Opret forbindelse til web](media/desktop-data-sources/data-sources_08.png)
 
 Der vises et forbindelsesvindue, som er specifikt for typen af dataforbindelse. Hvis der kræves legitimationsoplysninger, bliver du bedt om at angive dem. På følgende billede vises en URL-adresse, der angives for at oprette forbindelse til en webdatakilde.
 

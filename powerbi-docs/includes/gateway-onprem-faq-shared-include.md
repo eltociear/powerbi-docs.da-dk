@@ -5,8 +5,8 @@
 **Spørgsmål:** Hvilke krav er der til gatewayen?  
 **Svar:** Du kan se afsnittet om krav i den primære [gatewayartikel](../service-gateway-onprem.md).
 
-**Spørgsmål:** Hvilke datakilder understøttes med gatewayen?  
-**Svar:** Se tabellen over datakilder i den primære [gatewayartikel](../service-gateway-onprem.md).
+**Spørgsmål:** Hvilke datakilder understøttes sammen med gatewayen?  
+**Svar:** Se datakildetabellen i den primære [gatewayartikel](../service-gateway-onprem.md).
 
 **Spørgsmål:** Skal jeg have en gateway til clouddatakilder som en Azure SQL-database?  
 **Svar:** Nej! Tjenesten kan oprette forbindelse til datakilden uden en gateway.
@@ -46,7 +46,7 @@ Du kan bruge tredjepartsværktøjet [Azure Speed Test-app](http://azurespeedtest
 **Spørgsmål:** Skal jeg placere Azure Datacenter IP-listen på min hvidliste? Hvor finder jeg listen?  
 **Svar:** Hvis du blokerer udgående IP-trafik, skal du muligvis placere Azure Datacenter IP-listen på din hvidliste. Gatewayen kommunikerer i øjeblikket med Azure Service Bus ved hjælp af IP-adressen foruden det fuldt kvalificerede domænenavn. Azure Datacenter IP-listen opdateres ugentligt. Du kan downloade [Microsoft Azure Datacenter IP-listen](https://www.microsoft.com/download/details.aspx?id=41653).
 
-```
+```xml
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
     <value>Https</value>
 </setting>
