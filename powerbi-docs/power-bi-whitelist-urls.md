@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
 ms.custom: seodec18
-ms.openlocfilehash: 39a62950260789b50be034c2f55808e6991764db
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 07441bd0446e37353984efe97e435ac83d2c355d
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294004"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249062"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>URL-adresser til hvidliste for Power BI
 
@@ -69,10 +69,10 @@ Hvis du vil hente data fra specifikke datakilder, f.eks. OneDrive, skal du kunne
 
 | Række | Formål | Destination(er) | Port(e) |
 | --- | --- | --- | --- |
-| 1 | **Påkrævet:** AppSource (interne eller eksterne apps i Power BI) | appsource.microsoft.com </br> *.s-microsoft.com  | TCP 443 |
+| 1 | **Påkrævet:** AppSource (interne eller eksterne apps i Power BI) | appsource.microsoft.com <br> *.s-microsoft.com  | TCP 443 |
 | 2 | **Valgfrit:** Log på, og hent data til indholdspakker | Afhænger af anvendte indholdspakker | Afhænger af anvendte indholdspakker |
 | 3 | **Valgfrit:** Importér filer fra et personligt OneDrive | S [Krævede URL-adresser og porte til OneDrive-webstedet](https://docs.microsoft.com/onedrive/required-urls-and-ports) | I/T |
-| 4 | **Valgfrit:** 60 sekunders video med selvstudie om Power BI | *.doubleclick.net </br> *.ggpht.com </br> *.google.com </br> *.googlevideo.com </br> *.youtube.com </br> *.ytimg.com </br> fonts.gstatic.com | TCP 443 |
+| 4 | **Valgfrit:** 60 sekunders video med selvstudie om Power BI | *.doubleclick.net <br> *.ggpht.com <br> *.google.com <br> *.googlevideo.com <br> *.youtube.com <br> *.ytimg.com <br> fonts.gstatic.com | TCP 443 |
 | 5 | **Valgfrit:** PubNub-streamingdatakilder | Se [dokumentationen til PubNub](https://support.pubnub.com/support/solutions/articles/14000043522) | I/T |
 | | | |
 
@@ -91,8 +91,8 @@ Power BI afhænger af, at bestemte slutpunkter kan se og få adgang til brugerde
 
 | Række | Formål | Destination(er) | Port(e) |
 | --- | --- | --- | --- |
-| 1 | **Påkrævet:** Importér en brugerdefineret visualisering fra Marketplace-brugergrænsefladen eller fra en fil | *.azureedge.net </br> *.blob.core.windows.net </br> store.office.com | TCP 443 |
-| 2 | **Valgfrit:** Bing Maps | bing.com </br> platform.bing.com </br> *.virtualearth.net | TCP 443 |
+| 1 | **Påkrævet:** Importér en brugerdefineret visualisering fra Marketplace-brugergrænsefladen eller fra en fil | *.azureedge.net <br> *.blob.core.windows.net <br> store.office.com | TCP 443 |
+| 2 | **Valgfrit:** Bing Maps | bing.com <br> platform.bing.com <br> *.virtualearth.net | TCP 443 |
 | 3 | **Valgfrit:** PowerApps | Se [sektionen Krævede tjenester](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) fra webstedet med systemkrav til PowerApps | I/T |
 | 4 | **Valgfrit:** Visio | Se dokumentationen til Office 365 for at få oplysninger om [Office Online og almindelige URL-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) samt [SharePoint Online og OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | I/T |
 | | | |
@@ -103,12 +103,12 @@ Power BI-links til andre relaterede websteder. Disse websteder omfatter dokument
 
 | Række | Formål | Destination(er) | Port(e) |
 | --- | --- | --- | --- |
-| 1 | **Valgfrit:** Communitywebsted | community.powerbi.com </br> oxcrx34285.i.lithium.com | TCP 443 |
-| 2 | **Valgfrit:** Dokumentationswebsted | docs.Microsoft.com </br> img-prod-cms-rt-microsoft-com.akamaized.net </br> statics-uhf-eas.akamaized.net </br> cdnssl.clicktale.net </br> ing-district.clicktale.net | TCP 443 |
+| 1 | **Valgfrit:** Communitywebsted | community.powerbi.com <br> oxcrx34285.i.lithium.com | TCP 443 |
+| 2 | **Valgfrit:** Dokumentationswebsted | docs.Microsoft.com <br> img-prod-cms-rt-microsoft-com.akamaized.net <br> statics-uhf-eas.akamaized.net <br> cdnssl.clicktale.net <br> ing-district.clicktale.net | TCP 443 |
 | 3 | **Valgfrit:** Downloadwebsted (til Power BI Desktop osv.) | download.microsoft.com | TCP 443 |
-| 4 | **Valgfrit:** Eksterne omdirigeringer | aka.ms </br> go.microsoft.com | TCP 443 |
-| 5 | **Valgfrit:** Websted med idéer og feedback| ideas.powerbi.com </br> powerbi.uservoice.com | TCP 443 |
+| 4 | **Valgfrit:** Eksterne omdirigeringer | aka.ms <br> go.microsoft.com | TCP 443 |
+| 5 | **Valgfrit:** Websted med idéer og feedback| ideas.powerbi.com <br> powerbi.uservoice.com | TCP 443 |
 | 6 | **Valgfrit:** Power BI-webstedet – landingsside, links til yderligere oplysninger, supportwebsted, downloadlinks, partnerpræsentation osv. | powerbi.Microsoft.com | TCP 443 |
 | 7 | **Valgfrit:** Power BI Developer Center | dev.powerbi.com | TCP 443 |
-| 8 | **Valgfrit:** Supportwebsted | support.powerbi.com </br> s3.amazonaws.com </br> *.olark.com </br> logx.optimizely.com </br> mscom.demdex.net </br> tags.tiqcdn.com | TCP 443 |
+| 8 | **Valgfrit:** Supportwebsted | support.powerbi.com <br> s3.amazonaws.com <br> *.olark.com <br> logx.optimizely.com <br> mscom.demdex.net <br> tags.tiqcdn.com | TCP 443 |
 | | | |

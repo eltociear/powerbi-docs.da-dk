@@ -2,20 +2,20 @@
 title: Hvad er Power BI-rapportserveren?
 description: Få et overblik over Power BI-rapportserveren for at forstå, hvordan den kan arbejde sammen med SSRS (SQL Server Reporting Services) og resten af Power BI.
 keywords: ''
-author: maggiesMSFT
-ms.author: maggies
+author: markingmyname
+ms.author: maghan
 ms.date: 11/20/2018
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 23b78ba20666d1a1d942c7a5bd59991205991bc1
-ms.sourcegitcommit: ccbe76a0a43c5c5e87354a33e617bf3cb291608e
+ms.openlocfilehash: cd3dbc21c094c0db3f8d32d8d976339a1d1061f4
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54394817"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325168"
 ---
 # <a name="what-is-power-bi-report-server"></a>Hvad er Power BI-rapportserveren?
 

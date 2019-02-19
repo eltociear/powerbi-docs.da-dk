@@ -1,22 +1,23 @@
 ---
 title: Opret et integreret datasæt til en sideinddelt rapport i Power BI (eksempelvisning)
 description: I denne artikel lærer du, hvordan du opretter et integreret datasæt, der er baseret på en integreret datakilde, til en sideinddelt rapport i Power BI-tjenesten.
-author: maggiesMSFT
+author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/5/2018
-ms.author: maggies
-ms.openlocfilehash: 1689d7382c0f3bf7406a4a44ffeab53e6bc59197
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: c625f394fd35c0b1c6b7ccf0fc617f5653533ea1
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281062"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324547"
 ---
 # <a name="create-an-embedded-dataset-for-a-paginated-report-in-the-power-bi-service-preview"></a>Opret et integreret datasæt til en sideinddelt rapport i Power BI-tjenesten (eksempelvisning)
+
 I denne artikel lærer du, hvordan du opretter et integreret datasæt, der er baseret på en integreret datakilde, til en sideinddelt rapport i Power BI-tjenesten. Integrerede datasæt er indeholdt i en enkelt sideinddelt rapport til brug i den pågældende rapport. I øjeblikket skal sideinddelte rapporter, der er publiceret i Power BI-tjenesten, bruge integrerede datasæt og datakilder. Du opretter den integrerede datakilde og det integrerede datasæt i Report Builder, mens du opretter din rapport. 
 
 Du skal oprette en datakilde, før du kan oprette datasættet. Du kan få mere at vide under [Integrerede datakilder for sideinddelte rapporter](paginated-reports-embedded-data-source.md) i Power BI-tjenesten.

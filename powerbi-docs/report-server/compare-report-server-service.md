@@ -2,20 +2,20 @@
 title: Sammenlign Power BI-rapportserveren med Power BI-tjenesten
 description: I denne artikel sammenlignes funktionerne i Power BI-rapportserveren og Power BI-tjenesten.
 keywords: ''
-author: maggiesMSFT
-ms.author: maggies
+author: markingmyname
+ms.author: maghan
 ms.date: 02/06/2019
 ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 66f8e03469b28ee4f29c9c679add02e326732943
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 11b910d687830e525e0495a785153daa32db042d
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794343"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324455"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Sammenlign Power BI-rapportserveren med Power BI-tjenesten
 
@@ -35,7 +35,7 @@ Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigti
 | Gateway påkrævet | Nej | Ja, for datakilder i det lokale miljø |  |
 | Streaming i realtid | Nej | Ja | [Streaming i realtid i Power BI](../service-real-time-streaming.md) |
 | Dashboards | Nej | Ja | [Dashboards i Power BI-tjenesten](../consumer/end-user-dashboards.md) |
-| Distribuer gruppe af rapporter ved hjælp af programmer | Nej | Ja | [Opret og publicer programmer med dashboards og rapporter](../service-create-distribute-apps.md) |
+| Distribuer gruppe af rapporter ved hjælp af apps | Nej | Ja | [Opret og udgiv apps med dashboards og rapporter](../service-create-distribute-apps.md) |
 | Indholdspakker | Nej | Ja | [Organisationsindholdspakker: Introduktion](../service-organizational-content-pack-introduction.md) |
 | Opret forbindelse til tjenester som Salesforce | Ja | Ja | [Opret forbindelse til de tjenester, du bruger](../service-connect-to-services.md) med indholdspakker i Power BI-tjenesten. På Power BI-rapportserveren skal du bruge certificerede connectorer til at oprette forbindelse til tjenester. Du kan finde flere detaljer i [Power BI-rapportdatakilderne på Power BI-rapportserver](data-sources.md). |
 | Spørgsmål og svar | Nej | Ja | [Spørgsmål og svar i Power BI-tjenesten og Power BI Desktop](../consumer/end-user-q-and-a.md) 
@@ -49,7 +49,7 @@ Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigti
 | Databeskeder | Nej | Ja | [Databeskeder](../service-set-data-alerts.md) i Power BI-tjenesten
 | Sikkerhed på rækkeniveau (RLS) | Ja | Ja | Tilgængelige i både DirectQuery- (datakilde) og importtilstand <br>Sikkerhed på rækkeniveau i [Power BI-tjenesten](../service-admin-rls.md) <br>Sikkerhed på rækkeniveau i [Power BI-rapportserver](row-level-security-report-server.md) |
 | Fuldskærmsvisning | Nej | Ja | [Fuldskærmsvisning](../consumer/end-user-focus.md) i Power BI-tjenesten |
-| Avanceret samarbejde i Office 365 | Nej | Ja | [Samarbejd i et programarbejdsområde](../service-collaborate-power-bi-workspace.md) med Office 365 |
+| Avanceret samarbejde i Office 365 | Nej | Ja | [Samarbejd i et apparbejdsområde](../service-collaborate-power-bi-workspace.md) med Office 365 |
 | R-visualiseringer | Nej | Ja | [Opret R-visualiseringer](../desktop-r-visuals.md) i Power BI Desktop, og publicer dem i Power BI-tjenesten. Du kan ikke gemme Power BI-rapporter med R-visualiseringer på Power BI-rapportserveren.  |
 | Prøveversionsfunktioner | Nej | Ja | [Tilmeld dig prøveversioner af funktioner i Power BI-tjenesten](../consumer/end-user-preview-features.md) |
 | Brugerdefinerede visualiseringer | Ja | Ja | [Brugerdefinerede visualiseringer i Power BI](../power-bi-custom-visuals.md) |

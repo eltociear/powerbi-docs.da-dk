@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 35448142ecad249289542493261dfff612a348ad
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: ccfc25496b7bfacaea21e70f93c662600ab9cf5f
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54283339"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56248993"
 ---
 # <a name="using-r-in-query-editor"></a>Brug af R i forespørgselseditoren
 Du kan bruge **R**, som er et programmeringssprog, der bruges af statistikere, datavidenskabsfolk og dataanalytikere, i **forespørgselseditoren** i Power BI Desktop. Denne integration af R i **forespørgselseditoren** gør det muligt at udføre datarensning ved hjælp af R og udføre avanceret dataudformning og -analyser i datasæt, herunder fuldførelse af manglende data, forudsigelser og klyngedannelse, blot for at nævne nogle få. **R** er et effektivt sprog og kan bruges i **forespørgselseditoren** til at forberede din datamodel og oprette rapporter.
@@ -44,11 +44,13 @@ Du kan se, hvordan du bruger **R** i **Forespørgselseditor** ved at kigge på e
    ![](media/desktop-r-in-query-editor/r-in-query-editor_5d.png)
 6. I dette eksempel skal du angive følgende scriptkode:
 
+    ```r
        library(mice)
        tempData <- mice(dataset,m=1,maxit=50,meth='pmm',seed=100)
        completedData <- complete(tempData,1)
        output <- dataset
        output$completedValues <- completedData$"SMI missing values"
+    ```
 
    > [!NOTE]
    > Biblioteket *mice* skal være installeret i R-miljøet, hvis den forrige scriptkode skal fungere korrekt. Du installerer mice ved at køre følgende kommando i R-installationen: |      > install.packages('mice')

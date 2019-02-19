@@ -10,20 +10,20 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: eb1147875accff47b80dcdaf8a4051b57e627625
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: adeb3f09e52d039937ba3cf54afb72f8ed1287f3
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762622"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249154"
 ---
-# <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Selvstudium: Integrer Power BI-indhold i et program til dine kunder
+# <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Selvstudium: Integrer Power BI-indhold i en app til dine kunder
 
-Med **Power BI Embedded i Azure** kan du integrere rapporter, dashboards eller felter i et program ved hjælp af funktionen "programmet ejer data". **Programmet ejer data** handler om at have et program, der bruger Power BI som sin integrerede analyseplatform. Som **ISV-udvikler** kan du oprette Power BI-indhold, der viser rapporter, dashboards eller felter i et program, som er fuldt integreret og interaktivt, uden at brugerne skal have en Power BI-licens. I dette selvstudium kan du se, hvordan du integrerer en rapport i et program ved hjælp af Power BI .NET SDK med Power BI JavaScript-API'en, når du bruger **Power BI Embedded i Azure** for dine kunder.
+Med **Power BI Embedded i Azure** kan du integrere rapporter, dashboards eller felter i et program ved hjælp af funktionen "appen ejer data". **App owns data** handler om at have et program, der bruger Power BI som sin integrerede analyseplatform. Som **ISV-udvikler** kan du oprette Power BI-indhold, der viser rapporter, dashboards eller felter i et program, som er fuldt integreret og interaktivt, uden at brugerne skal have en Power BI-licens. I dette selvstudium kan du se, hvordan du integrerer en rapport i et program ved hjælp af Power BI .NET SDK med Power BI JavaScript-API'en, når du bruger **Power BI Embedded i Azure** for dine kunder.
 
 I dette selvstudium lærer du, hvordan du kan:
 > [!div class="checklist"]
-> * Registrer et program i Azure.
+> * Registrere en app i Azure.
 > * Integrer en Power BI-rapport i et program.
 
 ## <a name="prerequisites"></a>Forudsætninger
@@ -58,13 +58,13 @@ Hvis du derimod fortsætter med en tjenesteprincipal, skal du registrere et **se
 
 ## <a name="set-up-your-power-bi-environment"></a>Konfigurer dit Power BI-miljø
 
-### <a name="create-an-app-workspace"></a>Opret et programarbejdsområde
+### <a name="create-an-app-workspace"></a>Opret et apparbejdsområde
 
-Hvis du integrerer rapporter, dashboards eller felter for dine kunder, skal du placere dit indhold i et programarbejdsområde. Der er forskellige typer arbejdsområder, som du kan konfigurere: [traditionelle arbejdsområder](../service-create-workspaces.md) eller [nye arbejdsområder](../service-create-the-new-workspaces.md). Hvis du bruger en *master*konto, er det ligegyldigt, hvilken type arbejdsområde du bruger. Men hvis du bruger en *[tjenesteprincipal](embed-service-principal.md)* til at logge på dit program, skal du bruge de nye arbejdsområder. I begge scenarier skal både *master*kontoen og *tjenesteprincipalen* være administrator af programarbejdsområderne for dit program.
+Hvis du integrerer rapporter, dashboards eller felter for dine kunder, skal du placere dit indhold i et apparbejdsområde. Der er forskellige typer arbejdsområder, som du kan konfigurere: [traditionelle arbejdsområder](../service-create-workspaces.md) eller [nye arbejdsområder](../service-create-the-new-workspaces.md). Hvis du bruger en *master*konto, er det ligegyldigt, hvilken type arbejdsområde du bruger. Men hvis du bruger en *[tjenesteprincipal](embed-service-principal.md)* til at logge på dit program, skal du bruge de nye arbejdsområder. I begge scenarier skal både *master*kontoen og *tjenesteprincipalen* være administrator af programarbejdsområderne for dit program.
 
 ### <a name="create-and-publish-your-reports"></a>Opret og udgiv dine rapporter
 
-Du kan oprette rapporter og datasæt ved hjælp af Power BI Desktop og derefter udgive disse rapporter til et programarbejdsområde. Du kan opnå dette på to måder: Som slutbruger kan du publicere rapporter i et traditionelt programarbejdsområde med en masterkonto (Power BI Pro-licens). Hvis du bruger en tjenesteprincipal, kan du publicere rapporter i de nye arbejdsområder ved hjælp af [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
+Du kan oprette rapporter og datasæt ved hjælp af Power BI Desktop og derefter udgive disse rapporter til et apparbejdsområde. Du kan opnå dette på to måder: Som slutbruger kan du publicere rapporter i et traditionelt programarbejdsområde med en masterkonto (Power BI Pro-licens). Hvis du bruger en tjenesteprincipal, kan du publicere rapporter i de nye arbejdsområder ved hjælp af [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/imports/postimportingroup).
 
 Nedenstående trin viser, hvordan man publicerer en PBIX-rapport i et Power BI-arbejdsområde.
 
@@ -86,9 +86,9 @@ Følg nedenstående trin for at begynde at integrere indhold ved hjælp af eksem
 
 1. Download [Visual Studio](https://www.visualstudio.com/) (version 2013 eller nyere). Sørg for at downloade den nyeste [NuGet-pakke](https://www.nuget.org/profiles/powerbi).
 
-2. Download [eksemplet Programmet ejer data](https://github.com/Microsoft/PowerBI-Developer-Samples) fra GitHub for at komme i gang.
+2. Download [eksemplet, hvor appen ejer data,](https://github.com/Microsoft/PowerBI-Developer-Samples) fra GitHub for at komme i gang.
 
-    ![Eksempler Programmet ejer data](media/embed-sample-for-customers/embed-sample-for-customers-026.png)
+    ![Appen ejer data-programeksempel](media/embed-sample-for-customers/embed-sample-for-customers-026.png)
 
 3. Åbn filen **Web.config** i eksempelprogrammet. Der er nogle felter, du skal udfylde, for at køre programmet. Du kan vælge **MasterUser** eller **ServicePrincipal** som **AuthenticationType**. Du skal udfylde forskellige felter, afhængigt af hvilken type godkendelsesmetode du vælger.
 
@@ -97,7 +97,7 @@ Følg nedenstående trin for at begynde at integrere indhold ved hjælp af eksem
 
     <center>
 
-    | **MasterUser** </br> (Power BI Pro-licenser) | **ServicePrincipal** </br> (kun program-token)|
+    | **MasterUser** <br> (Power BI Pro-licenser) | **ServicePrincipal** <br> (kun program-token)|
     |---------------|-------------------|
     | [applicationId](#application-id) | [applicationId](#application-id) |
     | [workspaceId](#workspace-id) | [workspaceId](#workspace-id) |
@@ -121,7 +121,7 @@ Hvis du vil hente **applicationId**, skal du følge disse trin:
 
 1. Log på [Azure-portalen](https://portal.azure.com).
 
-2. Vælg **Alle tjenester** i navigationsruden til venstre, og vælg **Programregistreringer**.
+2. Vælg **Alle tjenester** i navigationsruden til venstre, og vælg **Appregistreringer**.
 
     ![Søg efter programregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
@@ -139,11 +139,11 @@ Denne attribut er påkrævet for begge AuthenticationTypes (masterkonto og [tjen
 
 Udfyld oplysningerne for **workspaceId** med GUID for programarbejdsområdet fra Power BI. Du kan få disse oplysninger enten fra URL-adressen, når du er logget på Power BI-tjenesten, eller ved hjælp af Powershell.
 
-URL-adresse </br>
+URL-adresse <br>
 
 ![workspaceId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
-PowerShell </br>
+PowerShell <br>
 
 ```powershell
 Get-PowerBIworkspace -name "App Owns Embed Test"
@@ -157,11 +157,11 @@ Denne attribut er påkrævet for begge AuthenticationTypes (masterkonto og [tjen
 
 Udfyld **reportId** med GUID for rapporten fra Power BI. Du kan få disse oplysninger enten fra URL-adressen, når du er logget på Power BI-tjenesten, eller ved hjælp af Powershell.
 
-URL-adresse</br>
+URL-adresse<br>
 
 ![reportId](media/embed-sample-for-customers/embed-sample-for-customers-032.png)
 
-PowerShell </br>
+PowerShell <br>
 
 ```powershell
 Get-PowerBIworkspace -name "App Owns Embed Test" | Get-PowerBIReport
@@ -182,7 +182,7 @@ Hvis du bruger en [tjenesteprincipal](embed-service-principal.md) til at godkend
 
 Denne attribut bruges kun til [tjenesteprincipalen](embed-service-principal.md) som AuthenticationType.
 
-Udfyld oplysningerne for **ApplicationSecret** ud fra sektionen **Nøgler** i sektionen **Programregistreringer** i **Azure**.  Denne attribut fungerer, når du bruger [tjenesteprincipal](embed-service-principal.md).
+Udfyld oplysningerne for **ApplicationSecret** ud fra sektionen **Nøgler** i sektionen **Appregistreringer** i **Azure**.  Denne attribut fungerer, når du bruger [tjenesteprincipal](embed-service-principal.md).
 
 Hvis du vil hente **ApplicationSecret**, skal du følge disse trin:
 
@@ -194,7 +194,7 @@ Hvis du vil hente **ApplicationSecret**, skal du følge disse trin:
 
 3. Vælg programmet, der skal bruge **ApplicationSecret**.
 
-    ![Vælg et program](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Vælg en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
 
 4. Vælg **Indstillinger**.
 
@@ -269,9 +269,9 @@ ODataResponseListReport reports = await client.Reports.GetReportsInGroupAsync(wo
 Report report = reports.Value.FirstOrDefault();
 ```
 
-### <a name="create-the-embed-token"></a>Opret integreringstokenet
+### <a name="create-the-embed-token"></a>Opret integrationstokenet
 
-Genererede et integreringstoken, som kan bruges fra JavaScript API'en. Dette integreringstoken er specifikt for det element, du integrerer. Hver gang du integrerer Power BI-indhold, skal du oprette et nyt integrationstoken for det. Du kan finde flere oplysninger, herunder hvilket **adgangsniveau** du skal bruge, i [GenerateToken API](https://msdn.microsoft.com/library/mt784614.aspx).
+Genererede et integreringstoken, som kan bruges fra JavaScript API'en. Dette integreringstoken er specifikt for det element, du er ved at integrere. Hver gang du integrerer Power BI-indhold, skal du oprette et nyt integrationstoken for det. Du kan finde flere oplysninger, herunder hvilket **adgangsniveau** du skal bruge, i [GenerateToken API](https://msdn.microsoft.com/library/mt784614.aspx).
 
 *Du kan se et eksempel på, hvordan du opretter et integreringstoken til en rapport, et dashboard eller et felt i filen Services\EmbedService.cs i [eksempelprogrammet](https://github.com/Microsoft/PowerBI-Developer-Samples).*
 
@@ -369,13 +369,13 @@ Brug tabellen nedenfor til at bestemme, hvilken kapacitet til Power BI Embedded 
 
 **_Med A-SKU'er kan du ikke få adgang til Power BI-indhold med en GRATIS Power BI-licens._**
 
-Brug af integreringstokens med en PRO-licens er beregnet til udviklingstest, så antallet af integreringstokens, der kan genereres af en Power BI-masterkonto eller tjenesteprincipal, er begrænset. En dedikeret kapacitet kræver integrering i et produktionsmiljø. Der er ingen grænse for, hvor mange integreringstokens du kan generere med en dedikeret kapacitet. Gå til [Tilgængelige funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) for at undersøge den brugsværdi, der angiver brugen af integreringstokens i procent. Forbrugsbeløbet er baseret på overordnet konto.
+Brug af integreringstokens med en PRO-licens er beregnet til udviklingstest, så antallet af integreringstokens, der kan genereres af en Power BI-masterkonto eller tjenesteprincipal, er begrænset. En dedikeret kapacitet kræver integrering i et produktionsmiljø. Der er ingen grænse for, hvor mange integreringstokens du kan generere med en dedikeret kapacitet. Gå til [Tilgængelige funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) for at undersøge den brugsværdi, der angiver brugen af integrerede tokens i procent. Forbrugsbeløbet er baseret på overordnet konto.
 
 Du kan finde flere oplysninger i [Whitepaper om kapacitetsplanlægning af integreret analyse](https://aka.ms/pbiewhitepaper).
 
-### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Tildel et programarbejdsområde til en dedikeret kapacitet
+### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Tildel et apparbejdsområde til en dedikeret kapacitet
 
-Når du opretter en dedikeret kapacitet, kan du tildele dit programarbejdsområde til den dedikerede kapacitet.
+Når du opretter en dedikeret kapacitet, kan du tildele dit apparbejdsområde til den dedikerede kapacitet.
 
 Hvis du vil tildele en dedikeret kapacitet til et arbejdsområde ved hjælp af en [tjenesteprincipal](embed-service-principal.md), skal du bruge [REST API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/capacities/groups_assigntocapacity). Når du bruger REST API'er til Power BI, skal du sørge for at bruge [objekt-id'et for tjenesteprincipalen](embed-service-principal.md#how-to-get-the-service-principal-object-id).
 
@@ -389,13 +389,13 @@ Følg nedenstående trin for at tildele en dedikeret kapacitet til et arbejdsomr
 
     ![Tildel dedikeret kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-024.png)
 
-3. Når du har valgt **Gem**, kan du se en **rombe** ud for navnet på programarbejdsområdet.
+3. Når du har valgt **Gem**, kan du se en **rombe** ud for navnet på apparbejdsområdet.
 
     ![arbejdsområde knyttet til en kapacitet](media/embed-sample-for-customers/embed-sample-for-customers-037.png)
 
 ## <a name="next-steps"></a>Næste trin
 
-I dette selvstudium har du lært, hvordan du integrerer Power BI-indhold i et program for dine kunder. Du kan også prøve at integrere Power BI-indhold til din organisation.
+I dette selvstudium har du lært, hvordan du integrerer Power BI-indhold i en app for dine kunder. Du kan også prøve at integrere Power BI-indhold til din organisation.
 
 > [!div class="nextstepaction"]
 >[Integrer til din organisation](embed-sample-for-your-organization.md)

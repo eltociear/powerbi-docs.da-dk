@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: cef34e7be0767ce16b84b066663318b66bcbd2d0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5bf9694c42a3a70fbc65085326a03618ae62a8f6
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280538"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324915"
 ---
 # <a name="connect-to-data-sources-for-power-bi-dataflows-preview"></a>Opret forbindelse til datakilder til Power BI-dataflow (prøveversion)
 
@@ -76,6 +76,7 @@ Kategorien **Database** indeholder følgende tilgængelige dataforbindelser til 
 * SQL Server Database
 * Sybase-database
 * Teradata-database
+* Vertica
 
 Kategorien **Power BI** indeholder følgende tilgængelige dataforbindelser til dataflow:
 
@@ -91,7 +92,8 @@ Kategorien **Azure** indeholder følgende tilgængelige dataforbindelser til dat
 
 Kategorien **Onlinetjenester** indeholder følgende tilgængelige dataforbindelser til dataflow:
 
-* Common Data Service til apps
+* Amazon Redshift
+* Common Data Service for Apps
 * Microsoft Exchange Online
 * Salesforce-objekter
 * Salesforce-rapporter
@@ -154,12 +156,8 @@ Hvorefter scriptet opretter forbindelse til den angivne datakilde.
 
 På følgende liste vises, hvilke connectorer du kan bruge i øjeblikket ved at kopiere og indsætte M-forespørgslen i en tom forespørgsel:
 
-* Amazon Redshift
 * SAP Business Warehouse 
-* SAP HANA
-* Analysis Services
 * Azure Analysis Services
-* Google Analytics
 * Adobe Analytics
 * ODBC
 * OLE DB
@@ -170,7 +168,6 @@ På følgende liste vises, hvilke connectorer du kan bruge i øjeblikket ved at 
 * Azure HDInsight (HDFS)
 * Hadoop-fil (HDFS)
 * Informix (beta)
-* Vertica
 
 Det er det eneste, du skal gøre for at oprette forbindelse til datakilder i Power BI-dataflow.
 

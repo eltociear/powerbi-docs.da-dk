@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8ea62f894b01143997850f3c15f2a069b93d7c26
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
+ms.openlocfilehash: bcd92dc0288fc347c5f5931d40b94cf769f5293f
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008689"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249016"
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Opret forbindelse til Adobe Analytics med Power BI
 For at oprette forbindelse til Adobe Analytics via Power BI skal du starte med at oprette forbindelse til din Adobe Analytics Marketing Cloud-konto. Du får en app med et Power BI-dashboard og et sæt af Power BI-rapporter, der giver indsigt i trafikken på dit websted og brugerdimensioner. Dataene opdateres automatisk én gang dagligt. Du kan interagere med dashboards og rapporter, men du kan ikke gemme ændringer.
@@ -53,19 +53,19 @@ Power BI anvender Adobe Analytics-rapporterings-API'en til at definere og køre 
 
 | **Tabelnavn** | **Kolonneoplysninger** |
 | --- | --- |
-| Produkter |elementer=  "product" (top 25) </br> metrikværdier="cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units" |
-| Browsere |elementer= "browser" (top 25)</br>  metrikværdier="bounces", "bouncerate", "visitors", "visits", "uniquevisitors", "totaltimespent", "pageviews" |
-| Sider |elementer= "page" (top 25)</br>  metrikværdier="cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units", "visits", "uniquevisitors", "pageviews", "bounces", "bouncerate", "totaltimespent" |
+| Produkter |elementer=  "product" (top 25) <br> metrikværdier="cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units" |
+| Browsere |elementer= "browser" (top 25)<br>  metrikværdier="bounces", "bouncerate", "visitors", "visits", "uniquevisitors", "totaltimespent", "pageviews" |
+| Sider |elementer= "page" (top 25)<br>  metrikværdier="cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units", "visits", "uniquevisitors", "pageviews", "bounces", "bouncerate", "totaltimespent" |
 | JavaScript aktiveret |elementer=  "javascriptenabled”, “browser” (top 25) |
-| Mobiloperativsystem |elementer= "mobileos"(top 25)</br> metrikværdier="bounces", "bouncerate", "visitors", "visits", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "checkouts", "revenue", "units", "pageviews" |
-| Nøgleord for søgemaskiner |elementer= "searchengine" "searchenginekeyword"</br>  metrikværdier="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units", "pageviews" |
-| Søgemaskine til Produkter |elementer= "searchengine", "product"</br>  metrikværdier="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units", "pageviews" |
-| Sider med henvisning |elementer= "referrer" (top 15), “page" (top 10)</br>  metrikværdier="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units", "pageviews" |
-| Geografi/land for Sider |elementer= "geocountry" (Top 20), "page"</br>  metrikværdier="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units", "pageviews" |
-| Geografi/land for Produkt |elementer= "geocountry" (Top 20), "product"</br> metrikværdier="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units" |
-| Opslag af land og område |elementer= "geocountry" (Top 200)</br>  metrikværdier="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units" |
-| Sprog |elementer= "language", "browser" (Top 25)</br>  metrikværdier="bounces", "bouncerate", "visitors", "visits", "uniquevisitors", "totaltimespent", "pageviews", "cartadditions", "cartremovals", "checkouts", "carts", "cartviews" |
-| Opslag for søgemaskiner |elementer= "searchengine" (top 100)</br>  metrikværdier="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units" |
+| Mobiloperativsystem |elementer= "mobileos"(top 25)<br> metrikværdier="bounces", "bouncerate", "visitors", "visits", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "checkouts", "revenue", "units", "pageviews" |
+| Nøgleord for søgemaskiner |elementer= "searchengine" "searchenginekeyword"<br>  metrikværdier="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units", "pageviews" |
+| Søgemaskine til Produkter |elementer= "searchengine", "product"<br>  metrikværdier="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units", "pageviews" |
+| Sider med henvisning |elementer= "referrer" (top 15), “page" (top 10)<br>  metrikværdier="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units", "pageviews" |
+| Geografi/land for Sider |elementer= "geocountry" (Top 20), "page"<br>  metrikværdier="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units", "pageviews" |
+| Geografi/land for Produkt |elementer= "geocountry" (Top 20), "product"<br> metrikværdier="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units" |
+| Opslag af land og område |elementer= "geocountry" (Top 200)<br>  metrikværdier="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units" |
+| Sprog |elementer= "language", "browser" (Top 25)<br>  metrikværdier="bounces", "bouncerate", "visitors", "visits", "uniquevisitors", "totaltimespent", "pageviews", "cartadditions", "cartremovals", "checkouts", "carts", "cartviews" |
+| Opslag for søgemaskiner |elementer= "searchengine" (top 100)<br>  metrikværdier="bounces", "bouncerate", "visitors", "visits", "entries", "uniquevisitors", "totaltimespent", "cartadditions", "cartremovals", "carts", "cartviews", "checkouts", "revenue", "units" |
 | Browseropslag |elementer= "browser" (top 25) |
 
 ## <a name="system-requirements"></a>Systemkrav

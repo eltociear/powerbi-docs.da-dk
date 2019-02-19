@@ -1,43 +1,44 @@
 ---
 title: Tilføj kommentarer i en rapport i Power BI-rapportserver
 description: Se, hvordan du kan tilføje kommentarer i en Power BI-rapport eller sideinddelt rapport på en Power BI-rapportserver eller SQL Server Reporting Services-rapportserver.
-author: maggiesMSFT
+author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/15/2018
-ms.author: maggies
-ms.openlocfilehash: 14540dc9ecaf1c3baa513b6e8cd12323de973d3d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 7e2dcc24cde68275899b25ff457b7731583c1bc5
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275370"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324225"
 ---
 # <a name="add-comments-to-a-report-in-a-report-server---power-bi-report-server"></a>Tilføj kommentarer i en rapport på en rapportserver – Power BI-rapportserver
+
 Du kan tilføje kommentarer i rapporter, herunder Power BI-rapporter, på webportalen til en rapportserver. Kommentarerne gemmes sammen med rapporten, og alle, der har rettigheder til den, kan se kommentarerne til rapporten. Se i afsnittet [Tilladelser](#permissions) herunder for at få flere oplysninger.
 
 ## <a name="add-or-view-comments"></a>Tilføj eller få vist kommentarer
+
 1. Åbn en sideinddelt rapport eller en Power BI-rapport på en rapportserver.
 2. Vælg **Kommentarer** i øverste højre hjørne.
-   
+
     ![Vælg kommentarer](media/add-comments/report-server-web-portal-comments-button.png)
-   
+
     Du kan se eventuelle eksisterende kommentarer i ruden Kommentarer.
 3. Skriv din kommentar, og vælg derefter **Skriv kommentar**.
-   
+
     ![Skriv kommentar](media/add-comments/report-server-web-portal-comments-pane.png)
-   
+
     Din kommentar vises i ruden på webportalen sammen med alle tidligere kommentarer. De vises ikke sammen med rapporten i Power BI-mobilappsene.
-   
+
    > [!TIP]
    > Vidste du det? Du kan [anmærke Power BI-rapporter i Power BI-mobilapps](../consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) og dele de anmærkede rapporter med andre.
-   > 
-   > 
 
 ## <a name="permissions"></a>Tilladelser
+
 Afhængigt af dine tilladelser kan du:
 
 * Ikke se kommentarer.

@@ -11,18 +11,18 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: ff9f75b216ba64dfdb0b8244bb99016d0edd4ede
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9a2fac64959ece431471eb8d3f32961c9d592c66
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276991"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324823"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Administrer en Power BI-gateway i det lokale miljø
 
-Når du har [installeret en Power BI-datagateway](service-gateway-install.md), kan du administrere den på baggrund af dine krav. I dette emne kan du få mere at vide om, hvordan du tilføjer og fjerner datakilder og brugere, genstarter en gateway samt overfører, gendanner, overtager og fjerner en gateway. 
+Når du har [installeret en Power BI-datagateway](service-gateway-install.md), kan du administrere den på baggrund af dine krav. I dette emne kan du få mere at vide om, hvordan du tilføjer og fjerner datakilder og brugere, genstarter en gateway samt overfører, gendanner, overtager og fjerner en gateway.
 
-Du kan administrere en gateway vha. området **Administrer gateways**i Power BI-tjenesten, i gatewayappen på din lokale computer og via PowerShell-scripts. I denne artikel fokuseres der på Power BI-tjenesten. 
+Du kan administrere en gateway vha. området **Administrer gateways**i Power BI-tjenesten, i gatewayappen på din lokale computer og via PowerShell-scripts. I denne artikel fokuseres der på Power BI-tjenesten.
 
 Hvis du lige har installeret en gateway, anbefales det, at du så [tilføjer en datakilde](#add-a-data-source) og derefter [tilføjer brugere](#add-users-to-a-data-source), så de kan få adgang til datakilden.
 
