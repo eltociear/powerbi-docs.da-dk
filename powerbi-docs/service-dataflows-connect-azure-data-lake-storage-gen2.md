@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8cc1201c506e98ae33b68ef0cf802dae20b6f493
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: dc22c075c479510810b4a914fd999e38118e12e5
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216510"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426717"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Tilslut Azure Data Lake Storage Gen2 for at få et dataflowlager (prøveversion)
 
@@ -70,6 +70,8 @@ Følg trinnene i artiklen [Tildel en rolle til en sikkerhedskonto](https://docs.
 I vinduet **Tilføj rolletildeling** skal du vælge rollen **Læser** og tildele den til Power BI-tjenesten. Brug derefter Søg til at finde **Power BI-tjenesten**. På følgende billeder kan du se, at rollen **Læser** er tildelt Power BI-tjenesten.
 
 ![Power BI-tjenesten tildelt rollen Læser](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_05.jpg)
+
+Bemærk! Vent mindst 30 minutter på, at tilladelsen overføres til Power BI fra portalen. Når du ændrer tilladelser på portalen, skal du vente 30 minutter på, at ændringen overføres til Power BI, inden du prøver igen. 
 
 
 ### <a name="create-a-file-system-for-power-bi"></a>Opret et filsystem til Power BI

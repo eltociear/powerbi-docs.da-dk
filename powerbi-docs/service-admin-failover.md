@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/30/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 7446cb9db0f4ebbb20e316365263fa6f09de71bb
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: a5f3f5003eb1d22b0667698691471150f04553d8
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55448215"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426556"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Ofte stillede spørgsmål om høj tilgængelighed, failover og it-katastrofeberedskab i Power BI
 
@@ -29,7 +29,7 @@ Power BI er fuldt administreret software som en service (SaaS).  Microsoft udvik
 
 Power BI opretholder flere forekomster af hver komponent i Azure-datacentre (også kendt som områder) for at sikre forretningskontinuitet. Hvis der er et nedbrud eller et problem, som medfører, at Power BI bliver utilgængelig eller ikke fungerer i et område, udfører Power BI failover for alle sine komponenter i dette område til en sikkerhedskopi. I forbindelse med denne failover gendannes tilgængeligheden og funktionaliteten til forekomsten af Power BI-tjenesten i et nyt område (som regel inden for samme geografiske placering, som noteret i [Microsofts Center for sikkerhed og rettighedsadministration](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)).
 
-Der understøttes kun _læsehandlinger_ for en forekomst af Power BI-tjenesten med failover, hvilket betyder, at følgende handlinger ikke understøttes under failover: opdateringer, publiceringshandlinger for rapporter, ændringer af dashboards eller rapporter og andre handlinger, der kræver ændringer af Power BI-metadata (f.eks. indsætning af en kommentar i en rapport).  Læsehandlinger, f.eks. visning af dashboards og rapporter, der ikke er baseret på DirectQuery på Live Connect til datakilder i det lokale miljø, fungerer fortsat normalt.
+Der understøttes kun _læsehandlinger_ for en forekomst af Power BI-tjenesten med failover, hvilket betyder, at følgende handlinger ikke understøttes under failover: opdateringer, publiceringshandlinger for rapporter, ændringer af dashboards eller rapporter og andre handlinger, der kræver ændringer af Power BI-metadata (f.eks. indsætning af en kommentar i en rapport).  Læsehandlinger, f.eks. visning af dashboards og rapporter, der ikke er baseret på DirectQuery eller Live Connect til datakilder i det lokale miljø, fungerer fortsat normalt.
 
 ## <a name="how-are-backup-instances-kept-in-sync-with-my-data"></a>Hvordan bliver sikkerhedskopien synkroniseret med mine data?
 

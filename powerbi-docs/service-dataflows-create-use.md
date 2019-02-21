@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 02/19/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: bb550bb2a009c5f227541db41a9bc45fc708d1e1
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: b2b928ea308f546c7cf023c6ef187aa7c516987c
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279038"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426625"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi-preview"></a>Oprettelse og brug af dataflow i Power BI (prøveversion)
 
@@ -155,6 +155,10 @@ Det kan ske, at der opstår problemer med dataflowet, når der oprettes forbinde
 * **Salesforce-connector** – Brug af en prøvekonto til Salesforce med dataflow resulterer i en forbindelsesfejl, uden at der angives nogen oplysninger. For at løse problemet skal du bruge en produktionskonto til Salesforce eller en udviklerkonto til test.
 
 * **SharePoint-connector** – Sørg for at angive rodadressen på SharePoint-webstedet uden nogen undermapper eller dokumenter. Brug f.eks. links, der ligner følgende: https://microsoft.sharepoint.com/teams/ObjectModel/ 
+
+* **JSON-fileconnector** – I øjeblikket kan du kun oprette forbindelse til en JSON-fil ved hjælp af basisgodkendelse.  Oprettelse af forbindelse til en JSON-fil ved hjælp af legitimationsoplysningerne i URL-adressen (f.eks, https://XXXXX.blob.core.windows.net/path/file.json?sv=2019-01-01&si=something&sr=c&sig=123456abcdefg...) er **ikke** understøttet i øjeblikket.  
+
+* **Azure SQL Data Warehouse** – Dataflow understøtter i øjeblikket ikke AAD-godkendelse (Azure Active Directory) for Azure SQL Data Warehouse. Brug basisgodkendelse til dette scenarie.
 
 ## <a name="next-steps"></a>Næste trin
 

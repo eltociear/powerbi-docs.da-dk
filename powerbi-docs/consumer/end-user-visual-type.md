@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/24/2019
+ms.date: 02/12/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 35d5a6f9911afea7b91b37299225c191cd4d7ac9
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 0118c9b7bb1d00daf1b6baeb7638916b49d8af49
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794844"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426763"
 ---
 # <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
-Du finder visualiseringer i rapporter, på dashboards, i programmer og under Spørgsmål og svar. Nogle af disse visualiseringstyper medfølger Power BI som en del af pakken, og nogle er *brugerdefinerede visualiseringer*. Brugerdefinerede visualiseringer oprettes uden for Power BI og på en måde, der gør det muligt for *rapportdesignere* at føje dem til rapporter, dashboards og programmer i Power BI. 
+Du finder visualiseringer i rapporter, på dashboards, i apps og under Spørgsmål og svar. Nogle af disse visualiseringstyper medfølger Power BI som en del af pakken, og nogle er *brugerdefinerede visualiseringer*. Brugerdefinerede visualiseringer oprettes uden for Power BI og på en måde, der gør det muligt for *rapportdesignere* at føje dem til rapporter, dashboards og apps i Power BI. 
 
 Denne artikel indeholder en oversigt over de visualiseringer, der medfølger Power BI som en del pakken.  Disse visualiseringstyper er dem, du oftest vil støde på. 
 
@@ -26,7 +26,7 @@ Denne artikel indeholder en oversigt over de visualiseringer, der medfølger Pow
 > Du kan få mere at vide om brugerdefinerede visualiseringer ved at søge efter dem i afsnittet **Power BI-visualiseringer** i [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). For hver enkelt visualisering finder du en beskrivelse, forfatteroplysninger og enten skærmbilleder eller en video. 
 
 ## <a name="list-of-visualizations-available-in-power-bi"></a>Liste over de visualiseringer, der er tilgængelige i Power BI
-Du finder alle disse visualiseringer i programmer, på dashboards, i rapporter og [angivet under Spørgsmål og svar](#qna) i Power BI. Hvis du vil vide mere om, hvordan du interagerer med visualiseringer, skal du se [Interager med visualiseringer i rapporter, på dashboards og i programmer](end-user-visualizations.md)
+Du finder alle disse visualiseringer i apps, på dashboards, i rapporter og [angivet under Spørgsmål og svar](#qna) i Power BI. Hvis du vil vide mere om, hvordan du interagerer med visualiseringer, skal du se [Interager med visualiseringer i rapporter, på dashboards og i programmer](end-user-visualizations.md)
 
 ### <a name="area-charts-basic-layered-and-stacked"></a>Områdediagrammer: Grundlæggende (lagdelte) og stablede
 ![områdediagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
@@ -98,10 +98,12 @@ Radiale målere er fantastiske til:
 - vise tilstanden for en enkelt måling
 - vise oplysninger, der er hurtige at skimme og forstå.
 
-<!-- ### Key influencers chart
-![key influencer](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencers2.png)
+ ### <a name="key-influencers-chart"></a>Diagram over nøglepersoner med indflydelse
+![nøgleperson med indflydelse](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencer.png)
 
-A key influencer chart displays the major contributors to a selected result or value.  -->
+Et diagram over nøglepersoner med indflydelse viser de største bidragydere for et valgt resultat eller en valgt værdi.
+
+Nøglepersoner med indflydelse er et godt valg til at hjælpe dig med at forstå de faktorer, der påvirker en nøglemetrikværdi. Det kan eksempelvis være, *hvad der har indflydelse på, at kunderne afgiver ordre nummer to *, eller* hvorfor salget var så højt sidste år i juni*. 
 
 ### <a name="kpis"></a>KPI'er
 ![KPI](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
