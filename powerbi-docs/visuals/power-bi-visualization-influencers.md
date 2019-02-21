@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 02/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a82bbc3e4b31dca0a304c1d3f64d4bc63e4e7fb3
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
+ms.openlocfilehash: d7ad1cc4ffb339aeb1a64cd28274fde4f8ef6af6
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086764"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325145"
 ---
 # <a name="key-influencers-visualization"></a>Visualisering af nøglefaktorer
 Visualiseringen af nøglefaktorer hjælper dig med at forstå de faktorer, som driver en metrikværdi, du er interesseret i. Den analyserer dine data, rangerer de faktorer, der betyder noget, og viser dem som nøglefaktorer. Du vil f.eks. gerne finde ud af, hvad der påvirker medarbejderudskiftningen. En faktor kan være varigheden af ansættelsekontrakten og en anden kan være medarbejderens alder. 
@@ -167,11 +167,11 @@ I denne gruppe har 74,3 % givet en lav bedømmelse. Den gennemsnitlige kunde gi
  
 Visualiseringen med nøglefaktorer er i øjeblikket i offentlig prøveversion, og der er flere begrænsninger, som brugerne bør være opmærksomme på. Funktioner, der aktuelt ikke er tilgængelige, omfatter: 
 - Analyse af metrikværdier, der er samlinger/målinger 
-- Forbrug af visualiseringen i integreret 
-- Forbrug af visualiseringen på Power BI til mobilenheder 
+- Forbrug af visualiseringen i Power BI Embedded
+- Forbrug af visualiseringen i Power BI-mobilapps
 - Understøttelse af RLS 
 - Understøttelse af Direct Query 
-- Understøttelse af Live Query 
+- Understøttelse af direkte forbindelse 
  
 **Jeg får vist en fejl om, at der ikke blev fundet nogen faktorer/segmenter. Hvorfor sker det?**  
 
@@ -247,15 +247,16 @@ I nedenstående eksempel kan det ses, at de kunder, som er forbrugere, giver de 
 
 **Hvordan findes nøglefaktorerne?**
 
-AI-visualiseringen kører en logistisk regression for at beregne nøglefaktorerne. En logistisk regression er en statistisk model, der sammenligner forskellige grupper med hinanden. Hvis vi skal se på, hvad der styrer de lave bedømmelser, vil den logistiske regression se på, hvordan de kunder, der gav en lav bedømmelse, adskiller sig fra dem, der gav en høj bedømmelse. Hvis vi havde flere kategorier (høj score, neutral score, lav score), ville vi se på, hvad forskellen er mellem dem, der gav en lav score, og dem der ikke gjorde (hvordan de adskiller sig fra dem, der gav enten en høj eller neutral bedømmelse). 
+AI-visualiseringen bruger [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) til at køre en logistisk regression i kulisserne for at beregne nøglefaktorerne. En logistisk regression er en statistisk model, der sammenligner forskellige grupper med hinanden. Hvis vi skal se på, hvad der styrer de lave bedømmelser, vil den logistiske regression se på, hvordan de kunder, der gav en lav bedømmelse, adskiller sig fra dem, der gav en høj bedømmelse. Hvis vi havde flere kategorier (høj score, neutral score, lav score), ville vi se på, hvad forskellen er mellem dem, der gav en lav score, og dem der ikke gjorde (hvordan de adskiller sig fra dem, der gav enten en høj eller neutral bedømmelse). 
  
 Logistisk regression søger efter mønstre i dataene og leder efter, hvordan de kunder, som gav en lav bedømmelse, adskiller sig fra de kunder, der gav en høj bedømmelse. Det kan f.eks. finde frem til, at de kunder, som har flere supportanmodninger, giver en større andel af lave bedømmelser end dem, som har få eller ingen supportanmodninger.
  
 Den logistiske regression tager også antallet af datapunkter i betragtning. Hvis eksempelvis de kunder, som har en administratorrolle, giver forholdsvis flere negative bedømmelser, men der kun er tale om få administratorer, vil de ikke blive anset for at være faktorer, der har nogen indflydelse. Det skyldes, at der ikke er nok datapunkter til at udlede et mønster. En statistisk test (Wald-test) bruges til at bestemme, om en faktor betragtes som en nøglefaktor. Visualiseringen bruger en p-værdi på 0,05 til at bestemme tærsklen. 
- 
+
+
 **Hvordan beregnes segmenter?**
 
-AI-visualiseringen kører et beslutningstræ for at finde interessante undergrupper. Målet med beslutningstræet er at finde frem til en undergruppe af datapunkter, der er relativt høj inden for de metrikværdier, vi er interesseret i (f.eks. de kunder, der gav en lav bedømmelse). 
+AI-visualiseringen bruger [ML.NET](https://dotnet.microsoft.com/apps/machinelearning-ai/ml-dotnet) til at køre et beslutningstræ i kulisserne for at finde interessante undergrupper. Målet med beslutningstræet er at finde frem til en undergruppe af datapunkter, der er relativt høj inden for de metrikværdier, vi er interesseret i (f.eks. de kunder, der gav en lav bedømmelse). 
 
 Beslutningstræet tager hver forklarende faktor og forsøger at finde frem til, hvilken faktor der giver den bedste opdeling. Hvad hvis vi f.eks. filtrerer dataene, så de kun inkluderer store virksomhedskunder, som vil separere de kunder, som gav en høj eller lav bedømmelse? Eller hvad nu, hvis vi filtrerer dataene, så de kun inkluderer de kunder, som har skrevet kommentarer om sikkerheden? 
 

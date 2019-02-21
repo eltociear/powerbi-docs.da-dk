@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: bdb9e2dcf5e8e22aaaa3bf35035b746777a387b9
-ms.sourcegitcommit: 1574ecba7530e6e0ee97235251a3138fb0e4789b
+ms.openlocfilehash: 93181a7ecaad0ec5bcd837f55ad7863fae53772c
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40126476"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249131"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Logføring af diagnosticering for Power BI Embedded på Azure
 
@@ -114,13 +114,13 @@ Programkategorien instruerer ressourcen i at logføre følgende hændelser, og h
 |    Overvågningslogout    |    Registrerer alle afbrydelser af forbindelse til programhændelserne, siden sporingen startede.    |
 |    Error    |    Registrerer alle programfejlhændleser, siden sporingen startede.    |
 
-</br>
-</br>
+<br>
+<br>
 
 | Egenskabsnavn | Eksempel på ophør af VertiPaq-forespørgsel | Beskrivelse af egenskab |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | EventClass | XM_SEQUERY_END | Hændelsesklasse bruges til at kategorisere hændelser. |
-| Hændelsesunderklasse | 0 | Hændelsesunderklasse giver yderligere oplysninger om hver enkelt hændelsesklasse. (Eksempel: 0: VertiPaq-scanning) |
+| Hændelsesunderklasse | 0 | Hændelsesunderklasse giver yderligere oplysninger om hver enkelt hændelsesklasse. (for eksempel 0: VertiPaq Scan) |
 | RootActivityId | ff217fd2-611d-43c0-9c12-19e202a94f70 | Id for rodaktivitet. |
 | CurrentTime | 2018-04-06T18:30:11.9137358Z | Tidspunkt, hvor hændelsen startede, når det er tilgængeligt. |
 | StartTime | 2018-04-06T18:30:11.9137358Z | Tidspunkt, hvor hændelsen startede, når det er tilgængeligt. |
@@ -136,7 +136,7 @@ Programkategorien instruerer ressourcen i at logføre følgende hændelser, og h
 | ProgressTotal | 0 | Total status. |
 | IntegerData | 0 | Heltalsdata. |
 | Severity | 0 | Niveau for alvorsgrad for en undtagelse. |
-| Udført | 1 | 1 = succes. 0 = fejl (1 betyder f.eks., at tilladelseskontrol er udført uden fejl, og 0 betyder, at der er fejl i denne kontrol). |
+| Vellykket | 1 | 1 = succes. 0 = fejl (1 betyder f.eks., at tilladelseskontrol er udført uden fejl, og 0 betyder, at der er fejl i denne kontrol). |
 | Error | 0 | Fejlnummer for en given hændelse. |
 | TextData | SET DC_KIND=\"AUTO\";  SELECT  [SalesLT Customer (464)].[rowguid (606)] AS [SalesLT Customer (464)$rowguid (606)]  FROM [SalesLT Customer (464)]; [Estimated size (volume marshalling bytes): 850 6800] | Tekstdata, der er knyttet til hændelsen. |
 | ConnectionID | 3 | Entydigt forbindelses-id. |

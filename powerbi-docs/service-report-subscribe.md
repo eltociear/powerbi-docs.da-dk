@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a7c9c72dfbb75958be3119db61fa3aa03ac89171
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 09539bfd26685ffdd9866810b566699e5cdb4a41
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430941"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408109"
 ---
 # <a name="subscribe-yourself-and-others-to-a-report-or-dashboard-in-the-power-bi-service"></a>Meld dig selv og andre til et abonnement på en rapport eller et dashboard i Power BI-tjenesten
 
@@ -60,12 +60,10 @@ Uanset om du abonnerer på et dashboard eller en rapport, er processen den samme
 7. Vælg **Gem og luk**. Dem, der abonnerer, modtager en mail og et snapshot af dashboardet eller rapportsiden med den hyppighed og det tidspunkt, du har valgt. Du kan i alt oprette op til 24 abonnementer pr. rapport eller dashboard, og du kan angive entydige modtagere, tidspunkter og hyppigheder for hvert abonnement.  For alle abonnementer, der er angivet til **Efter dataopdatering** for dashboardet eller rapporten, sendes der stadig kun en mail efter den første planlagte opdatering.   
       
    > [!TIP]
-   > Vil du se mailen med det samme? Udløs en mail ved at opdatere et af de datasæt, der er tilknyttet dashboardet, eller det datasæt, der er tilknyttet rapporten. Hvis du ikke har redigeringstilladelser til datasættet, skal du bede nogen, der har disse tilladelser, om at opdatere det for dig. Hvis du vil se relaterede datasæt, skal du vælge ikonet **Få vist relaterede** ![ikonet Få vist relaterede](media/service-report-subscribe/power-bi-view-related.png) for at åbne **Relateret indhold** og derefter vælge opdateringsikonet ![opdateringsikon](media/service-report-subscribe/power-bi-refresh.png). 
+   > Vil du sende mailen fra et abonnement med det samme eller on-demand når som helst? Vælg **Kør nu** for abonnementerne for det dashboard eller den rapport, du vil sende. Du får vist en meddelelse om, at en mail er på vej til alle med det pågældende abonnement.  Du kan gøre dette så ofte, du vil. Det tæller ikke i forhold til grænsen på 24 planlagte abonnementskørsler pr. dag pr. rapport eller dashboard. Bemærk, at dette IKKE udløser en opdatering af data i det underliggende datasæt. 
    > 
    > 
    
-   ![Relaterede datasæt](media/service-report-subscribe/power-bi-view-related-screen.png)
-
 ## <a name="email-languages"></a>Mailsprog
 
 Det sprog, der er angivet under Power BI-indstillingerne, bruges til mail og snapshot (se [Understøttede sprog og lande/områder for Power BI](supported-languages-countries-regions.md)). Hvis der ikke er angivet et sprog, bruger Power BI det sprog, der stemmer overens med indstillingen for landestandard i din aktuelle browser. Hvis du vil se eller indstille dine sprogindstillinger, skal du vælge ![tandhjulsikonet](media/service-report-subscribe/power-bi-settings-icon.png) > **Indstillinger > Generelt > Sprog**. 
@@ -84,6 +82,7 @@ De abonnementer, der vises, afhænger af, hvilket arbejdsområde der er aktivt i
 Et abonnement slutter, hvis Pro-licensen udløber, hvis ejeren sletter dashboardet eller rapporten, eller hvis den brugerkonto, der blev brugt til at oprette abonnementet, slettes.
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
+* Dashboards med mere end 25 fastgjorte felter eller 4 fastgjorte liverapportsider gengives muligvis ikke fuldstændigt i abonnementsmails, der sendes til brugerne.  Abonnementer på dashboards med flere end dette antal felter, blokeres ikke, men de vil dog blive betragtet som ikke-understøttet, hvis du støder på problemer, og de skal redigeres i overensstemmelse hermed, før de inkluderes i et understøttet interval.
 * For mailabonnementer på dashboard vises nogle felter ikke, hvis der er anvendt sikkerhed på rækkeniveau på dem.  For mailabonnementer på rapporter kan du ikke oprette et abonnement, hvis datasættet anvender sikkerhed på rækkeniveau.
 * Rapportsideabonnementer er bundet til navnet på siden i rapporten. Hvis du abonnerer på en rapportside og omdøber den, skal du genoprette dit abonnement.
 * Din organisation kan konfigurere bestemte indstillinger i Azure Active Directory, som begrænser muligheden for at bruge mailabonnementer i Power BI.  Disse begrænsninger omfatter, men er ikke begrænset til, multifaktorgodkendelse eller IP-intervalbegrænsning, når ressourcer tilgås.

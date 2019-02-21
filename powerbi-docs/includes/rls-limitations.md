@@ -1,3 +1,16 @@
+---
+author: mgblythe
+ms.service: powerbi
+ms.topic: include
+ms.date: 02/15/2019
+ms.author: mblythe
+ms.openlocfilehash: 44ef0aa9d436f3a8a02f9a6b831847d5c996558a
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56333892"
+---
 ## <a name="limitations"></a>Begrænsninger
 
 Her følger en liste over de aktuelle begrænsninger for sikkerhed på rækkeniveau i cloudmodeller.
@@ -8,7 +21,7 @@ Her følger en liste over de aktuelle begrænsninger for sikkerhed på rækkeniv
 
 * Det er kun ETL- og DirectQuery-forbindelser, der understøttes. Dynamiske forbindelser til Analysis Services skal håndteres i modellen i det lokale miljø.
 
-* Spørgsmål og svar samt Cortana understøttes ikke med RLS på nuværende tidspunkt. Du kan ikke se inputfeltet til spørgsmål og svar i dashboards, hvis RLS er konfigureret for alle modeller. Dette problem er sat på vores roadmap, men vi har endnu ikke udarbejdet en tidsplan for det.
+* Cortana understøttes ikke med RLS på nuværende tidspunkt.
 
 ## <a name="known-issues"></a>Kendte problemer
 
@@ -20,4 +33,4 @@ Der er et kendt problem, hvor der vises en fejlmeddelelse, når du forsøger at 
 
 1. Anna modtager en fejl.
 
-**Midlertidig løsning:** Publicer Power BI Desktop-filen igen vha. Power BI-tjenesten, indtil problemet er løst. Det kan du gøre ved at vælge **Hent data** > **Filer**.
+**Midlertidig løsning:** Udgiv Power BI Desktop-filen igen vha. Power BI-tjenesten, indtil problemet er løst. Det kan du gøre ved at vælge **Hent data** > **Filer**.

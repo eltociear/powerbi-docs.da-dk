@@ -8,8 +8,8 @@ Med DAX kan du oprette helt nye beregnede tabeller og derefter behandle dem som 
 DAX har en lang række **tabelfunktioner**, herunder følgende:
 
 * FILTER
-* ALLE
-* VÆRDIER
+* ALL
+* VALUES
 * DISTINCT
 * RELATEDTABLE
 
@@ -21,7 +21,7 @@ Du kan blande tabelfunktioner i udtrykket, så længe hver funktion bruger en ta
 
 Det udtryk lægger et filter over hele *Tabellen* og ignorerer eventuel aktuelt filterindhold.
 
-Funktionen DISTINCT returnerer de distinkte værdier i en kolonne, der også er synlige i den aktuelle kontekst. Så for at bruge ovenstående eksempel på DAX-udtryk: Hvis du bruger **ALLE** i det udtryk, ignoreres filtre, og hvis du erstatter **ALLE** med **DISTINCT**, overvåges de.
+Funktionen DISTINCT returnerer de distinkte værdier i en kolonne, der også er synlige i den aktuelle kontekst. Så for at bruge ovenstående eksempel på DAX-udtryk: Hvis du bruger **ALL** i det udtryk, ignoreres filtre, og hvis du erstatter **ALL** med **DISTINCT**, overvåges de.
 
 ## <a name="counting-values-with-dax"></a>Tæl værdier med DAX
 Et almindeligt spørgsmål, som Power BI-rapportgeneratorer ønsker at besvare, er følgende:

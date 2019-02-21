@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 11/26/2018
-ms.openlocfilehash: 280f60d0ae60a445d94a640af974a2624c73bb83
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 097095cda1e0ffea4f43059351f22638c502e8b4
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55429998"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408063"
 ---
 # <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Retningslinjer for Power BI-visualiseringer med ekstra køb
 
@@ -22,6 +22,10 @@ Indtil for nylig accepterede **Marketplace (AppSource)** kun gratis Power BI-vis
 
 > [!Note]
 > En visualisering kan kun certificeres, hvis den ikke har adgang til eksterne tjenester eller ressourcer.
+
+> [!Note]
+> Alle gratis visualiseringer bør bevare de samme gratis funktioner, som blev tilbudt tidligere. Du kan føje valgfrie avancerede betalte funktioner til de gamle gratis funktioner. Vi anbefaler, at du sender IAP-visualiseringer sammen med de avancerede funktioner som nye visualiseringer i stedet for at opdatere de gratis gamle.
+
 
 ## <a name="whats-changing-in-the-submission-process"></a>Hvad ændres i indsendelsesprocessen?
 

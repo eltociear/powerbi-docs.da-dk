@@ -8,15 +8,15 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/04/2019
+ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: c18257f1f4e4e3f325c8d4d895e3b6abf88e900c
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 1aaa57006b9a5aac2b077d3326ed6a39e6a4206d
+ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794984"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56298862"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Eksportér rapporter fra Power BI til PDF
 Med Power BI kan du publicere din rapport i PDF-format og nemt oprette et dokument ud fra din Power BI-rapport. Når du **eksporterer til PDF**, bliver hver side i Power BI-rapporten en enkelt side i PDF-dokumentet.
@@ -28,6 +28,10 @@ Vælg en rapport for at vise den på lærredet i Power BI-tjenesten. Du kan ogs�
 
     ![Vælg Fil på menulinjen – pil, der peger på Eksportér til PDF](media/end-user-pdf/power-bi-export-pdf.png)
 
+    Der vises et pop op-vindue, hvor du har mulighed for at vælge **Aktuel visning** eller **Standardvisning**.  Med **Aktuel visning** eksporteres rapporten i den aktuelle tilstand, hvilket omfatter de aktive ændringer, du har foretaget i udsnits- og filterværdier.  De fleste brugere vælger denne indstilling.  Alternativt kan du vælge **Standardvisning**, hvor rapporten eksporteres i sin oprindelige tilstand (som forfatteren har delt den), og hvor ændringer, du har foretaget af den oprindelige tilstand, ikke afspejles.
+    
+    Derudover er der et afkrydsningsfelt, hvor du kan markere, om du vil eksportere skjulte faner i en rapport.  Du skal blot markere afkrydsningsfeltet, hvis du kun vil eksportere de rapportfaner, der er synlige for dig i browseren.  Hvis du foretrækker at inkludere alle skjulte faner i din eksport, skal du undlade at markere afkrydsningsfeltet.  Hvis afkrydsningsfeltet er nedtonet, er der ingen skjulte faner i rapporten.  Når du har foretaget dine valg, skal du klikke på knappen Eksportér for at fortsætte.
+    
     Der vises en statuslinje i øverste højre hjørne. Det kan tage nogle få minutter at eksportere, og du kan fortsætte med at arbejde i Power BI, mens rapporten eksporteres.
 
     ![Meddelelse om eksportstatus](media/end-user-pdf/power-bi-export-message.png)
@@ -43,8 +47,6 @@ Så nemt er det. Du kan downloade filen og åbne den med en hvilken som helst PD
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbejder med funktionen **Eksportér til PDF**.
-
-- Interaktivitet i sessionen, såsom fremhævning og filtrering, detailudledning osv., understøttes endnu ikke under eksport til PDF. Den eksporterede PDF viser de oprindelige visualiseringer, sådan som de blev gemt i rapporten. Hvis du har anvendt filtre og udsnit og gerne vil bevare disse i eksporten, skal du gemme rapporten og derefter foretage eksporten.
 
 * **R-visualiseringer** understøttes ikke i øjeblikket. I PDF'en vil disse visualiseringer være tomme, og der vises en fejlmeddelelse.  
 

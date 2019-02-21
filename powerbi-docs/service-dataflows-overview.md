@@ -7,25 +7,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/10/2019
+ms.date: 02/14/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 68d350035732d8335079bf76a859919d696e2721
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 5e1bd67ba14ed35a97d91e5ed76f7a3bd8de56ea
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223668"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324805"
 ---
 # <a name="self-service-data-prep-in-power-bi-preview"></a>Selvbetjent dataforberedelse i Power BI (prøveversion)
 
-Efterhånden som datamængden vokser, stiger behovet for at konvertere dataene i korrekt udformede oplysninger, som der kan handles på. Vi vil gerne have data, der er klar til analyse, til udfyldning af visuelle elementer, rapporter og dashboards, så vi hurtigt kan konvertere vores datamængder til viden, som der kan handles på. Med **selvbetjening til dataforberedelse** til big data i Power BI kan du gå fra data til Power BI-indsigt med bare nogle få klik.
+Efterhånden som datamængden vokser, stiger behovet for at konvertere dataene i korrekt udformede oplysninger, som der kan handles på. Vi vil gerne have data, der er klar til analyse, til udfyldning af visualiseringer, rapporter og dashboards, så vi hurtigt kan konvertere vores datamængder til viden, som der kan handles på. Med **selvbetjening til dataforberedelse** til big data i Power BI kan du gå fra data til Power BI-indsigt med bare nogle få klik.
 
 ![Brug dataflows i Power BI](media/service-dataflows-overview/powerbi-dataflows_01.png)
 
 Power BI introducerer **dataflows**, der kan hjælpe virksomheder med at samle data fra forskellige kilder og forberede dem til modellering. Analytikere kan nemt oprette dataflows ved hjælp af velkendte værktøjer til selvbetjening. Dataflows anvendes til at indsamle, transformere, integrere og forbedre big data ved at definere datakildeforbindelser, ETL-logik, opdatere tidsplaner og meget mere. Desuden gør den nye modelbaserede beregningsmotor, som er en del af dataflows, processen med dataforberedelse lettere at håndtere, mere deterministisk og mindre besværlig for såvel dataanalytikere som rapportoprettere. På samme måde som regneark håndterer genberegninger for alle berørte formler, håndterer dataflows alle ændringer af et objekt eller dataelement på dine vegne, hvilket automatiserer opdatering og letter det, der tidligere selv i forbindelse med almindelige dataopdateringer krævede kedelige og tidskrævende logiske kontroller. Med dataflows kan opgaver, der tidligere krævede opsyn af dataeksperter (og tog mange timer eller dage at fuldføre) nu håndteres med nogle få klik af analytikere og rapportoprettere. 
 
-Data gemmes som objekter i [**Common Data Model**](https://docs.microsoft.com/powerapps/common-data-model/overview) i Azure Data Lake Storage Gen2. Dataflows oprettes og administreres i apparbejdsområder ved hjælp af Power BI-tjenesten.  
+Data gemmes som objekter i [**Common Data Model**](https://docs.microsoft.com/powerapps/common-data-model/overview) i Azure Data Lake Storage Gen2. Dataflows oprettes og administreres i programarbejdsområder ved hjælp af Power BI-tjenesten.  
 
 > [!NOTE]
 > Dataflowfunktionaliteten er tilgængelig som en prøveversion og kan ændres og opdateres, før den bliver offentligt tilgængelig.
@@ -52,6 +52,9 @@ Her er nogle eksempler på, hvad du kan bruge dataflows til:
 ## <a name="how-to-use-dataflows"></a>Sådan bruges dataflows
 
 I det forrige afsnit beskrives en række måder, hvorpå dataflows kan bruges til hurtigt at oprette effektive analyser i Power BI. I dette afsnit får du en gennemgang af, hvor hurtigt du kan oprette viden ved hjælp af dataflows i en organisation, få en hurtig visning af, hvordan BI-teknikere kan oprette deres egne dataflows og tilpasse viden til deres egen organisation.
+
+> [!NOTE]
+> Du skal have en betalt Power BI-konto for at bruge dataflow, f.eks. en Power BI Pro- eller Power BI Premium-konto, men du opkræves ikke særskilt for brug af dataflow. 
 
 ### <a name="extend-the-common-data-model-for-your-business-needs"></a>Udvid den fælles datamodel til dine forretningsbehov
 For organisationer, der ønsker at udvide Common Data Model (CDM), gør dataflows det muligt for business intelligence-teknikere at tilpasse standardobjekterne eller oprette nye. Denne selvbetjente tilgang til tilpasning af datamodellen kan derefter anvendes sammen med dataflows til at bygge apps og Power BI-dashboards, som er skræddersyet til en organization.
@@ -97,7 +100,7 @@ Du kan finde flere oplysninger om, hvordan du aktiverer dataflowarbejdsbelastnin
 ## <a name="summary-of-self-service-data-prep-for-big-data-in-power-bi"></a>Oversigt over selvbetjent dataforberedelse til big data i Power BI
 Som tidligere nævnt i denne artikel er der flere scenarier og eksempler, hvor **dataflows** gør det muligt at få bedre styring – og hurtigere indsigt – fra dine virksomhedsdata. Ved hjælp af en standarddatamodel (skema) defineret af Common Data Model kan dataflows importere dine værdifulde forretningsdata og hurtigt klargøre dataene til modellering og oprettelse af BI-indsigt – som tidligere tog flere måneder eller mere at oprette. 
 
-Ved at gemme forretningsdata i standardiseret format af **Common Data Model**, kan BI-teknikerne (eller udviklerne) udvikle apps, der genererer hurtige, nemme og automatiske visuals og rapporter. Dette omfatter, men er ikke begrænset til:
+Ved at gemme forretningsdata i standardiseret format af **Common Data Model**, kan BI-teknikerne (eller udviklerne) udvikle apps, der genererer hurtige, nemme og automatiske visualiseringer og rapporter. Dette omfatter, men er ikke begrænset til:
 
 
 * Tilknytning af dine data til standardobjekter i Common Data Model for at samle data og udnytte det kendte skema for at skabe indsigt klar til brug
@@ -108,7 +111,7 @@ Ved at gemme forretningsdata i standardiseret format af **Common Data Model**, k
 
 ## <a name="next-steps"></a>Næste trin
 
-Denne artikel giver et overblik over dataforberedelse af big data til selvbetjening i Power BI og de mange måder, du kan bruge det på. De følgende artikler kommere nærmere ind på almindelige forbrugsscenarier for dataflows. 
+Denne artikel giver et overblik over dataforberedelse af big data til selvbetjening i Power BI og de mange måder, du kan bruge det på. De følgende artikler kommer nærmere ind på almindelige forbrugsscenarier for dataflows. 
 
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
 * [Brug beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)

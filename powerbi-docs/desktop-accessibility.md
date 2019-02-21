@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d0c6222c4b10307985ad039c3b391c8648614979
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 18872e65154f70e882c4f6f60c04420b17038d32
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280050"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249108"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Tilgængelighed i Power BI Desktop-rapporter
 Power BI indeholder funktioner, der gør det nemmere for personer med et handicap at bruge og interagere med Power BI-rapporter. Funktionerne omfatter muligheden for at bruge en rapport ved hjælp tastaturet eller en skærmlæser, bruge tabulatortasten til at sætte fokus på forskellige objekter på en side og bruge markører i visualiseringer.
@@ -36,13 +36,13 @@ Du kan skifte fokus mellem rapportens sidefaner eller objekter på en given rapp
 * Når der er fokus på en *rapports sidefaner*, skal du bruge *tabulator*- eller *pile*tasten til at flytte fokus fra én rapportside til den næste. Titlen på rapportsiden, og om den er markeret i øjeblikket, læses højt af skærmlæseren. For at indlæse den rapportside, der i øjeblikket er i fokus, skal du bruge *Enter* eller *mellemrumstasten*.
 * Når der er fokus på en indlæst *rapportside*, skal du bruge *tabulatortasten* til at skifte fokus til de enkelte objekter på siden, som inkluderer alle tekstfelter, billeder, figurer og diagrammer. Skærmlæseren læser objektets type, objektets titel, hvis den har en sådan, og en beskrivelse af objektet, hvis rapportforfatteren har angivet det. 
 
-Mens du navigerer mellem visuelle elementer kan du trykke på **Alt+Skift+F10** for at flytte fokus til overskriften, der indeholder forskellige indstillinger, herunder sortering, eksport af de underliggende data for diagrammet og fokustilstand. 
+Mens du navigerer mellem visualiseringer kan du trykke på **Alt+Skift+F10** for at flytte fokus til overskriften, der indeholder forskellige indstillinger, herunder sortering, eksport af de underliggende data for diagrammet og fokustilstand. 
 
 ![Tryk på Alt+Skift+F10 i Power BI Desktop for at flytte fokus til den visuelle header](media/desktop-accessibility/accessibility_08.png)
 
 Du kan trykke på **Alt+Skift+F11** for at få vist en tilgængelighedsversion af vinduet *Vis data*. På den måde kan du udforske data, der bruges i visualiseringen i en HTML-tabel, ved hjælp af de samme tastaturgenveje, du normalt anvender med din skærmlæser. 
 
-![Tryk på Alt + Skift + F11 i Power BI Desktop for at få vist tilgængelighedsvinduet Se data for et visuelt element](media/desktop-accessibility/accessibility_04.png)
+![Tryk på Alt + Skift + F11 i Power BI Desktop for at få vist tilgængelighedsvinduet Se data for en visualisering](media/desktop-accessibility/accessibility_04.png)
 
 > [!NOTE]
 > Funktionen "Vis data" er kun tilgængelig for skærmlæsere med brug af denne tastaturgenvej. Hvis du åbner Vis data via indstillingen i visualiseringens overskrift, vil det ikke være tilgængelig for skærmlæsere. Når du bruger Vis data, kan du slå scanningstilstand for at drage fordel af alle de genvejstaster, der angives i skærmlæseren.
@@ -60,7 +60,7 @@ Følgende tip kan hjælpe dig med at oprette **Power BI Desktop**-rapporter med 
 
 ### <a name="general-tips-for-accessible-reports"></a>Generelle tip til tilgængelighedsrapporter
 
-* For de visuelle elementer for **linje**, **område** og **kombinationsfelt** samt for de visuelle elementer for **punktdiagram** og **boble** skal du slå mærkerne til og bruge en anden *mærkeform* for hver linje.
+* For visualiseringer for **linje**, **område** og **kombinationsfelt** samt for de visualiseringer for **punktdiagram** og **boble** skal du slå mærkerne til og bruge en anden *mærkeform* for hver linje.
   
   * Slå *Mærker* til, vælg sektionen **Format** i ruden **Visualiseringer**, udvid sektionen **Former**, og rul derefter ned for at finde **Mærker**, og slå indstillingen *til*.
   * Vælg derefter navnet på de enkelte linjer (eller området, hvis du bruger et **område**diagram) på rullelisten i sektionen **Former**. Under rullelisten kan du derefter justere mange aspekter for det mærke, der bruges til den valgte linje, herunder form, farve og størrelse.
@@ -71,12 +71,12 @@ Følgende tip kan hjælpe dig med at oprette **Power BI Desktop**-rapporter med 
 * Som opfølgning til forrige punkt skal du ikke bruge farver til at angive oplysninger. Ud over at bruge figurer på linje- og punktdiagrammer behøver du ikke nøjes med betinget formatering for at få indsigt i tabeller og matrixer. 
 * Vælg en bevidst sorteringsrækkefølge for hver visualisering i din rapport. Når brugere af skærmlæsere navigerer mellem de underliggende data i diagrammet, benyttes den samme rækkefølge som i visualiseringen.
 * Vælg et *tema*, der har stor kontrast, og som kan bruges af farveblinde, fra temagalleriet, og importér det ved hjælp af [eksempelfunktionen **Temaer**](desktop-report-themes.md).
-* For alle objekter i en rapport skal du angive en *alternativ tekst*. Hvis du gør det, sikrer du, at brugere af din rapport forstår, hvad du forsøger at fortælle med et visuelt element, selvom de ikke kan se det visuelle element, billedet, formen eller tekstfeltet. Du kan angive en *alternativ tekst* for et hvilket som helst objekt i en **Power BI Desktop**-rapport ved at vælge objektet (f.eks. en visual, en figur osv.), gå til ruden **Visualiseringer** og vælge **Format**, udvide **Generelt**, rulle til bunden og udfylde tekstfeltet **Alternativ tekst**.
+* For alle objekter i en rapport skal du angive en *alternativ tekst*. Hvis du gør det, sikrer du, at brugere af din rapport forstår, hvad du forsøger at fortælle med en visualisering, selvom de ikke kan se visualiseringen, billedet, formen eller tekstfeltet. Du kan angive en *alternativ tekst* for et hvilket som helst objekt i en **Power BI Desktop**-rapport ved at vælge objektet (f.eks. en visualisering, en figur osv.), gå til ruden **Visualiseringer** og vælge **Format**, udvide **Generelt**, rulle til bunden og udfylde tekstfeltet **Alternativ tekst**.
   
   ![Alternativ tekst for et hvilket som helst objekt i en rapport kan tilføjes i Visualiseringer > Format > Generelt > feltet Alternativ tekst](media/desktop-accessibility/accessibility_02.png)
 * Kontrollér, at der er tilstrækkelig kontrast mellem teksten og eventuelle baggrundsfarver i dine rapporter. Der er flere værktøjer (f.eks. [Colour Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/)), som du kan bruge til at kontrollere farverne i din rapport. 
 * Brug tekststørrelser og skrifttyper, der er nemme at læse. En lille tekststørrelse eller skrifttyper, der kan være vanskelige at læse, hjælper ikke i forbindelse med tilgængelighed.
-* Medtag en titel, akseetiketter og datanavne i alle visuelle elementer.
+* Medtag en titel, akseetiketter og datanavne i alle visualiseringer.
 * Brug titler, der giver mening, for alle rapportsider.
 * Undgå dekorative figurer og billeder i din rapport, hvis det er muligt, da de er inkluderet i tabulatorrækkefølgen af rapporten. Hvis du er nødt til at indsætte dekorative objekter i din rapport, kan du opdatere objektets alternative tekst for at fortælle brugere af skærmlæsere, at objektet kun har et dekorativt formål.
 
@@ -132,15 +132,20 @@ Idet vi løbende forbedrer tilgængeligheden, omfatter ovenstående liste også 
 | Markér eller fjern markeringen af et objekt | Enter eller Mellemrum |
 | Markér flere objekter | CTRL + Mellemrum |
 
-### <a name="on-visual"></a>På visuelt element
+### <a name="on-visual"></a>På visualisering
 | Hvis du vil foretage denne handling:           | Tryk på                |
 | :------------------- | :------------------- |
-| Flyt fokus til menuen for visuelle elementer | Alt + Shift + F10 |
+| Flyt fokus til menuen for visualiseringer | Alt + Shift + F10 |
 | Vis data | Alt + Shift +F11  |
 
 ### <a name="pane-navigation"></a>Rudenavigation
 | Hvis du vil foretage denne handling:           | Tryk på                |
 | :------------------- | :------------------- |
+| Vælg flere | CTRL + Mellemrum |
+| Skjul en enkelt tabel | Venstre piletast |
+| Udvid en enkelt tabel | Højre piletast |
+| Skjul alle tabeller | Alt + Shift + 1 |
+| Udvid alle tabeller | Alt + Shift + 9 |
 | Åbn en genvejsmenu | <ul><li>Windows-tastatur: Windows-genvejstasten + F10.  Windows-genvejstasten er mellem Alt-tasten til venstre og pil til venstre</li><li>Andet tastatur: Shift + F10</li></ul> |
 
 ### <a name="slicer"></a>Udsnit

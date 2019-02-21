@@ -7,21 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/30/2019
+ms.date: 02/14/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 13ab7ccf690c834168da8f9c6dcb0932178651ca
-ms.sourcegitcommit: 7df786871b196725a1c5422ee561c7557660894e
+ms.openlocfilehash: b130ccbe6b3fe6fa09b9a4c4efe388f79350c500
+ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55482700"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56298816"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>Den nye filteroplevelse i Power BI-rapporter (prøveversion)
 
 I denne artikel forklares den nye filteroplevelse: Filtrene i Power BI får ny funktionalitet og et nyt design. Når du designer rapporter i Power BI Desktop eller i Power BI-tjenesten, kan du få ruden Filtre til at se ud som og interagere med hele rapporten. I den nye oplevelse fungerer den gamle Filtre-rude som en rude til redigering af filtre, og den nye Filtreringsrude er den eneste, forbrugerne af din rapport ser. 
  
 ![Standardvisning (ingen yderligere tilpasning er anvendt)](media/power-bi-report-filter-preview/power-bi-filter-reading.png)
+
+> [!NOTE]
+> Den nye filtreringsoplevelse findes som en prøveversion. Nye builds kan tilsidesætte formatering, du allerede har angivet.
 
 Her kan du se, hvad du som rapportdesigner kan gøre med de nye filtre:
 
@@ -83,6 +86,7 @@ En stor del af denne nye oplevelse er, at du nu kan formatere filtreringsruden, 
 - Baggrundsgennemsigtighed
 - Slå kanter på filtreringsruden til og fra
 - Kantfarve på filtreringsruden
+- Skrifttype, farve og tekststørrelse for titel og overskrift i filtreringsruden
 
 Du kan også formatere disse elementer for filterkort, afhængigt af om de er anvendt (indstillet til noget) eller tilgængelige (ryddet): 
 
@@ -90,6 +94,8 @@ Du kan også formatere disse elementer for filterkort, afhængigt af om de er an
 - Baggrundsgennemsigtighed
 - Kant: til eller fra
 - Kantfarve
+- Skrifttype, farve og tekststørrelse
+- Farve på inputfelt
 
 ### <a name="set-the-format-for-the-filters-pane-and-cards"></a>Angiv formatet for ruden Filtre og kort
 
@@ -100,11 +106,11 @@ Du kan også formatere disse elementer for filterkort, afhængigt af om de er an
 
 1. Udvid **Filtreringsruden** for at angive farven på baggrunden, ikonet og den venstre kant, som skal komplementere rapportsiden.
 
-    ![Udvid Filtreringsruden](media/power-bi-report-filter-preview/power-bi-filter-format-pane.png)
+    ![Udvid ruden Filtre](media/power-bi-report-filter-preview/power-bi-filter-format-pane-font.png)
 
 1. Udvid **Filterkort** for at angive farve og kant for **Tilgængelig** og **Anvendt**. Hvis du angiver forskellige farver for kortene Tilgængelig og Anvendt, er det oplagt, hvilke filtre der anvendes. 
   
-    ![Udvid filterkort](media/power-bi-report-filter-preview/power-bi-filter-format-card.png)
+    ![Udvid filterkort](media/power-bi-report-filter-preview/power-bi-filter-format-card-font.png)
 
 ## <a name="view-filters-for-a-visual-in-reading-mode"></a>Vis filtre for en visualisering i Læsetilstand
 

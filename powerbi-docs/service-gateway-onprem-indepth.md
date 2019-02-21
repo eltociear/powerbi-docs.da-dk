@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ef4f9de49619a26e17fbdf2b0df47bc56ba23f4d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 18458820f98bcea32eb5288389d57808646d462c
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279314"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325008"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Datagateway i det lokale miljø – detaljeret
 Det er muligt for brugere i din organisation at få adgang til data i det lokale miljø (som de allerede er godkendt til at få adgang til), men før disse brugere kan oprette forbindelse til datakilden i det lokale miljø, skal der installeres og konfigureres en datagateway i det lokale miljø. Gatewayen muliggør hurtig og sikker kommunikation bag kulisserne mellem en bruger i clouden, til din lokale datakilde og derefter tilbage til clouden.
@@ -90,7 +90,7 @@ Ved at bruge Azure AD Connect sikrer du, at UPN'et matcher mellem AAD og dit lok
 > 
 
 ## <a name="now-this-is-where-the-gateway-comes-in"></a>Her kommer så gatewayen ind i billedet
-Gatewayen fungerer som en bro mellem clouden og din lokale server. Dataoverførsler mellem clouden og gatewayen sikres ved hjælp af [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview). Service Bus opretter en sikker kanal mellem clouden og serveren i det lokale miljø via en udgående forbindelse på gatewayen.  Der er ingen indgående forbindelser, som du skal åbne på firewallen i det lokale miljø.
+Gatewayen fungerer som en bro mellem clouden og din lokale server. Dataoverførsler mellem clouden og gatewayen sikres ved hjælp af [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview). Service Bus opretter en sikker kanal mellem clouden og serveren i det lokale miljø via en udgående forbindelse på gatewayen.  Der er ingen indgående forbindelser, som du skal åbne på firewallen i det lokale miljø. Power BI administrerer Service Bus for dig, så der er ingen yderligere omkostninger eller konfigurationstrin.
 
 Hvis du har en Analysis Services-datakilde, skal du installere gatewayen på en computer, der er tilsluttet det samme område/domæne som din Analysis Services-server.
 

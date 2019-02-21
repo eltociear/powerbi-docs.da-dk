@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: f7e28ce1f72a58fe2bb52103b79fa0106a0024ca
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
+ms.openlocfilehash: 868c1226b70bd12762c20c3af5b0ee1ff59857e5
+ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086465"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56408178"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -130,7 +130,7 @@ De næste par afsnit giver et overblik over de forskellige typer af lejerindstil
 
 ### <a name="create-workspaces-preview"></a>Opret arbejdsområder (prøveversion)
 
-Brugere i organisationen kan oprette apparbejdsområder til at samarbejde om dashboards, rapporter og andet indhold. [Få mere at vide](service-create-the-new-workspaces.md)
+Brugere i organisationen kan oprette programarbejdsområder til at samarbejde om dashboards, rapporter og andet indhold. [Få mere at vide](service-create-the-new-workspaces.md)
 
 ## <a name="export-and-sharing-settings"></a>Eksport- og delingsindstillinger
 
@@ -172,11 +172,11 @@ På følgende billede ses indstillingen for at eksportere data fra et felt.
 > [!NOTE]
 > Hvis **Eksportér data** deaktiveres, kan brugere ikke anvende funktionen **Analysér i Excel** og heller ikke bruge Power BI-tjenestens direkte forbindelse.
 
-### <a name="export-reports-as-powerpoint-presentations"></a>Eksportér rapporter som PowerPoint-præsentationer
+### <a name="export-reports-as-powerpoint-presentations-or-pdf-documents"></a>Eksportér rapporter som PowerPoint-præsentationer eller PDF-dokumenter
 
-Brugere i virksomheden kan eksportere Power BI-rapporter som PowerPoint-filer. [Få mere at vide](consumer/end-user-powerpoint.md)
+Brugere i organisationen kan eksportere Power BI-rapporter som PowerPoint-filer eller PDF-dokumenter. [Få mere at vide](consumer/end-user-powerpoint.md)
 
-På følgende billede ses menuen **Filer** for en rapport, når indstillingen **Eksportér rapporter som PowerPoint-præsentationer** er aktiveret.
+På følgende billede ses menuen **Filer** for en rapport, når indstillingen **Eksportér rapporter som PowerPoint-præsentationer eller PDF-dokumenter** er aktiveret.
 
 ![Eksportér rapporter som PowerPoint-præsentationer](media/service-admin-portal/powerbi-admin-powerpoint.png)
 
@@ -202,9 +202,9 @@ På følgende billede vises indstillingen **Hele min organisation**, når du opr
 
 ![Publicer indholdspakke til organisation](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### <a name="create-template-organizational-content-packs-and-apps"></a>Opret skabelonbaserede indholdspakker og apps for organisationen
+### <a name="create-template-apps"></a>Opret skabelonprogrammer
 
-Brugere i organisationen kan oprette pakker med skabelonindhold, der bruger datasæt bygget i Power BI Desktop. [Få mere at vide](template-content-pack-authoring.md)
+Brugere i organisationen kan oprette skabelonprogrammer, der bruger datasæt, som er indbygget i Power BI Desktop. Få mere at vide om [skabelonprogrammer](template-content-pack-authoring.md)
 
 ### <a name="push-apps-to-end-users"></a>Push apps til slutbrugere
 
@@ -248,11 +248,11 @@ Brugerne i organisationen kan interagere med og dele brugerdefinerede visualiser
 Brugere i organisationen, som er tildelt tilladelser til at tilføje og bruge brugerdefinerede visualiseringer med indstillingen "Tilføj og brug brugerdefinerede visualiseringer", kan kun bruge [certificerede brugerdefinerede visualiseringer](https://go.microsoft.com/fwlink/?linkid=2002010) (de ikke-certificerede visualiseringer blokeres, og der vises en fejlmeddelelse, når de bruges). 
 
 
-## <a name="r-visuals-settings"></a>R visuals – indstillinger
+## <a name="r-visuals-settings"></a>Indstillinger for R-visualiseringer
 
 ### <a name="interact-with-and-share-r-visuals"></a>Interager med og del R-visualiseringer
 
-Brugere i virksomheden kan interagere med og dele visuelle elementer oprettet med R-scripts. [Få mere at vide](visuals/service-r-visuals.md)
+Brugere i virksomheden kan interagere med og dele visualiseringer oprettet med R-scripts. [Få mere at vide](visuals/service-r-visuals.md)
 
 > [!NOTE]
 > Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
@@ -302,6 +302,18 @@ Brugere i organisationen kan oprette og bruge dataflow. Du kan se en oversigt ov
 > [!NOTE]
 > Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
 
+## <a name="template-apps-settings-preview"></a>Indstillinger for skabelonprogrammer (prøveversion)
+
+To indstillinger styrer skabelonprogrammer. 
+
+![Indstillinger for skabelonprogrammer på Power BI-administrationsportal](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
+
+Den første indstilling, **Opret skabelonprogrammer**, styrer, hvem i organisationen der kan oprette skabelonprogrammer. Udviklere af skabelonprogrammer kan derefter distribuere dem til klienter uden for organisationen ved hjælp af AppSource eller en anden distributionsmetode.
+
+![Power BI-administrationsportal, indstillingen Opret skabelonprogrammer](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
+
+Med den anden indstilling, **Installér skabelonprogrammer**, styrer du, hvem i organisationen der kan downloade og installere skabelonprogrammer fra AppSource eller en anden kilde.
+
 ## <a name="capacity-settings"></a>Kapacitetsindstillinger
 
 ### <a name="power-bi-premium"></a>Power BI Premium
@@ -326,43 +338,43 @@ Som administrator kan du få vist integreringskoder, der er genereret for din le
 
 ## <a name="organizational-visuals"></a>Visualiseringer til organisationen
 
-Via fanen **Visualiseringer til organisationen** kan du installere og administrere brugerdefinerede visualiseringer i din organisation. Med visuals til organisationer kan du nemt installere privatejede visuals i din organisation, som forfattere af rapporter efterfølgende kan finde og importere i deres rapporter fra Power BI Desktop. [Få mere at vide](power-bi-custom-visuals-organization.md)
+Via fanen **Visualiseringer til organisationen** kan du installere og administrere brugerdefinerede visualiseringer i din organisation. Med visualiseringer til organisationer kan du nemt installere privatejede visualiseringer i din organisation, som forfattere af rapporter efterfølgende kan finde og importere i deres rapporter fra Power BI Desktop. [Få mere at vide](power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
-> En brugerdefineret visual kan indeholde kode, der udgør en risiko for sikkerheden eller personlige oplysninger. Sørg for at have tillid til forfatteren af og kilden til den brugerdefinerede visual, før du installerer den i organisationens lager.
+> En brugerdefineret visualisering kan indeholde kode, der udgør en risiko for sikkerheden eller personlige oplysninger. Sørg for at have tillid til forfatteren af og kilden til den brugerdefinerede visualisering, før du installerer den i organisationens lager.
 
-Følgende billede viser alle de brugerdefinerede visuals, der i øjeblikket er installeret i en organisations lager.
+Følgende billede viser alle de brugerdefinerede visualiseringer, der i øjeblikket er installeret i en organisations lager.
 
 ![Organisationens administratorvisualisering](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
 
 ### <a name="add-a-new-custom-visual"></a>Tilføj en ny brugerdefineret visualisering
 
-Hvis du vil føje en ny brugerdefineret visual til listen, skal du følge disse trin. 
+Hvis du vil føje en ny brugerdefineret visualisering til listen, skal du følge disse trin. 
 
-1. Vælg **Tilføj en brugerdefineret visual** i ruden til højre.
+1. Vælg **Tilføj en brugerdefineret visualisering** i ruden til højre.
 
-    ![Formular til brugerdefinerede visuals](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
+    ![Formular til brugerdefinerede visualiseringer](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
 
-1. Udfyld formularen **Tilføj brugerdefineret visual**:
+1. Udfyld formularen **Tilføj brugerdefineret visualisering**:
 
     * **Vælg en .pbiviz-fil** (påkrævet): Vælg den brugerdefinerede visualiseringsfil, som du vil uploade. Det er kun brugerdefinerede visualiseringer med versioneret API, der understøttes. Læs her, hvad det betyder.
 
     Før du uploader en brugerdefineret visualisering, bør du gennemgå den for at sikre, at sikkerhed og beskyttelse af personlige oplysninger stemmer overens med din virksomheds standarder.
 
-    * **Navngiv din brugerdefinerede visual** (påkrævet): Angiv en kort titel på din visual, så brugerne af Power BI Desktop nemt kan forstå, hvad de kan bruge den til
+    * **Navngiv din brugerdefinerede visualisering** (påkrævet): Angiv en kort titel på din visualisering, så brugerne af Power BI Desktop nemt kan forstå, hvad de kan bruge den til
 
     * **Ikon**: Den ikonfil, der vises på brugergrænsefladen i Power BI Desktop.
 
-    * **Beskrivelse**: En kort beskrivelse af din visual, som giver brugeren mere kontekst og flere oplysninger
+    * **Beskrivelse**: En kort beskrivelse af din visualisering, som giver brugeren mere kontekst og flere oplysninger
 
 1. Vælg **Tilføj** for at starte anmodningen om upload. Hvis uploadet lykkes, kan du se det nye element på listen. Hvis uploadet mislykkes, får du vist en passende fejlmeddelelse
 
 ### <a name="delete-a-custom-visual-from-the-list"></a>Slet en brugerdefineret visualisering fra listen
 
-Hvis du vil slette en visual permanent, skal du vælge ikonet Papirkurv for den pågældende visual i lageret.
+Hvis du vil slette en visualisering permanent, skal du vælge ikonet Papirkurv for den pågældende visualisering i lageret.
 
 > [!IMPORTANT]
-> Du kan ikke fortryde en sletning. Når visualiseringen er slettet, holder den øjeblikkeligt op med at blive gengivet i eksisterende rapporter. Selv om du uploader den samme visual igen, erstatter den ikke den forrige, der blev slettet. Brugerne kan dog importere den nye visual igen og erstatte det eksemplar, de har i deres rapporter.
+> Du kan ikke fortryde en sletning. Når visualiseringen er slettet, holder den øjeblikkeligt op med at blive gengivet i eksisterende rapporter. Selv om du uploader den samme visualisering igen, erstatter den ikke den forrige, der blev slettet. Brugerne kan dog importere den nye visualisering igen og erstatte det eksemplar, de har i deres rapporter.
 
 ### <a name="disable-a-custom-visual-in-the-list"></a>Deaktiver en brugerdefineret visualisering på listen
 
@@ -376,9 +388,9 @@ Visualiseringer, der er angivet bogmærker for, virker dog stadig.
 
 Efter en opdatering eller ændring af administrator skal brugerne af Power BI Desktop genstarte programmet eller opdatere browseren i Power BI-tjenesten for at se opdateringerne.
 
-### <a name="update-a-visual"></a>Opdater en visual
+### <a name="update-a-visual"></a>Opdater en visualisering
 
-Hvis du vil opdatere en visual fra organisationens lager, skal du vælge tandhjulsikonet. Gennemse og upload en ny version af den pågældende visual.
+Hvis du vil opdatere en visualisering fra organisationens lager, skal du vælge tandhjulsikonet. Gennemse og upload en ny version af den pågældende visualisering.
 
 Sørg for, at id'et for visualiseringen ikke ændres. Den nye fil erstatter den forrige fil for alle rapporter i hele organisationen. Hvis der er risiko for, at den nye version af visualiseringen vil bryde brugen eller datastrukturen af den forrige version af visualiseringen, skal du ikke erstatte den forrige version. Du skal i stedet oprette en ny post for den nye version af visualiseringen. Føj f.eks. et nyt versionsnummer (version X.X) til titlen af den nye angivne visualisering. På den måde bliver det tydeligt, at det er den samme visualisering blot med et opdateret versionsnummer, så funktionaliteten i eksisterende rapporter ikke brydes. Sørg igen for, at id'et for visualiseringen ikke ændres. Næste gang brugerne derefter tilgår virksomhedens lager fra Power BI Desktop, kan de importere den nye version, og de bliver spurgt, om de vil erstatte den aktuelle version, de har i rapporten.
 

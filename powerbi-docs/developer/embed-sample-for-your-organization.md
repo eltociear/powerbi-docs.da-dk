@@ -1,6 +1,6 @@
 ---
 title: Integreret analyse for at integrere Power BI-indhold i dit program for din organisation
-description: Få mere at vide om, hvordan du integrerer en rapport, et dashboard eller et felt i et program ved hjælp af Power BI-API'er for at bruge integreret analyse for din organisation. Få mere at vide om, hvordan du integrerer Power BI i dit program ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence.
+description: Få mere at vide om, hvordan du integrerer en rapport, et dashboard eller et felt i et program ved hjælp af Power BI-API'er til integreret analyse for din organisation. Få mere at vide om, hvordan du integrerer Power BI i dit program ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence.
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.openlocfilehash: 2d095f117fdaafa34a1b9636d03045d0119f4dd8
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 6a6dc71d68fa7ff136d35cbfb185b96db8e0589e
+ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762461"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56249430"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Selvstudium: Integrer Power BI-indhold i en app til din organisation
 
@@ -57,7 +57,7 @@ Registrer dit program i Microsoft Azure Active Directory, så det får adgang ti
 
 3. Vælg **Alle tjenester** i navigationsruden til venstre, og vælg **Appregistreringer**. Vælg derefter **Registrering af nyt program**.
 
-    ![Søg efter programregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)</br>
+    ![Søg efter programregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)<br>
 
     ![Registrering af nyt program](media/embed-sample-for-your-organization/embed-sample-for-your-organization-004.png)
 
@@ -101,11 +101,11 @@ Aktivér tilladelser for dit program foruden det, der er angivet på siden til a
 
 ## <a name="set-up-your-power-bi-environment"></a>Konfigurer dit Power BI-miljø
 
-### <a name="create-an-app-workspace"></a>Opret et apparbejdsområde
+### <a name="create-an-app-workspace"></a>Opret et programarbejdsområde
 
-Hvis du integrerer rapporter, dashboards eller felter til dine kunder, skal du placere dit indhold i et apparbejdsområde:
+Hvis du integrerer rapporter, dashboards eller felter til dine kunder, skal du placere dit indhold i et programarbejdsområde:
 
-1. Start med at oprette arbejdsområdet. Vælg **Arbejdsområder** > **Opret apparbejdsområde**. I dette arbejdsområde placerer du det indhold, som dit program skal have adgang til.
+1. Start med at oprette arbejdsområdet. Vælg **Arbejdsområder** > **Opret programarbejdsområde**. I dette arbejdsområde placerer du det indhold, som dit program skal have adgang til.
 
     ![Opret et arbejdsområde](media/embed-sample-for-your-organization/embed-sample-for-your-organization-020.png)
 
@@ -129,11 +129,11 @@ Hvis du integrerer rapporter, dashboards eller felter til dine kunder, skal du p
 
     Du kan nu se det nye arbejdsområde. Power BI opretter arbejdsområdet og åbner det. Det vises på listen over de arbejdsområder, du er medlem af. Da du er administrator, kan du vælge de tre prikker (…) for at gå tilbage og ændre arbejdsområdet, tilføje nye medlemmer eller ændre deres tilladelser.
 
-    ![Opret apparbejdsområde](media/embed-sample-for-your-organization/embed-sample-for-your-organization-025.png)
+    ![Opret programarbejdsområde](media/embed-sample-for-your-organization/embed-sample-for-your-organization-025.png)
 
 ### <a name="create-and-publish-your-reports"></a>Opret og udgiv dine rapporter
 
-Du kan oprette dine rapporter og datasæt ved hjælp af Power BI Desktop. Du kan derefter udgive rapporterne i et apparbejdsområde. Den slutbruger, der udgiver rapporterne, skal have en Power BI Pro-licens for at kunne udgive til et apparbejdsområde.
+Du kan oprette dine rapporter og datasæt ved hjælp af Power BI Desktop. Du kan derefter udgive rapporterne i et programarbejdsområde. Den slutbruger, der udgiver rapporterne, skal have en Power BI Pro-licens for at kunne udgive til et programarbejdsområde.
 
 1. Download eksemplet [Blogdemo](https://github.com/Microsoft/powerbi-desktop-samples) fra GitHub.
 
@@ -143,7 +143,7 @@ Du kan oprette dine rapporter og datasæt ved hjælp af Power BI Desktop. Du kan
 
    ![Power BI Desktop-eksempelrapport](media/embed-sample-for-your-organization/embed-sample-for-your-organization-027.png)
 
-3. Udgiv til apparbejdsområdet.
+3. Udgiv til programarbejdsområdet.
 
    ![Udgiv en Power BI Desktop-rapport](media/embed-sample-for-your-organization/embed-sample-for-your-organization-028.png)
 
@@ -211,7 +211,7 @@ Følg disse trin for at integrere dit indhold ved hjælp af et eksempelprogram:
 
           ![Nøgleværdi](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
 
-    7. Udfyld **groupId** med apparbejdsområde-GUID'et fra Power BI.
+    7. Udfyld **groupId** med programarbejdsområde-GUID'et fra Power BI.
 
        ![Angiv groupId](media/embed-sample-for-customers/embed-sample-for-customers-031.png)
 
@@ -367,7 +367,7 @@ window.onload = function () {
     // client side click to embed a selected report.
     var el = document.getElementById("bEmbedReportAction");
     if (el.addEventListener) {
-        el.addEventListener("click", updateEmbedReporte, false);
+        el.addEventListener("click", updateEmbedReport, false);
     } else {
         el.attachEvent('onclick', updateEmbedReport);
     }
@@ -425,7 +425,7 @@ Nu, hvor du er færdig med at udvikle dit program, er tiden kommet til at underb
 
 ### <a name="create-a-dedicated-capacity"></a>Opret en dedikeret kapacitet
 
-Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for indholdet i dit apparbejdsområde. Du kan oprette en dedikeret kapacitet ved hjælp af [Power BI Premium ](../service-premium.md).
+Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for indholdet i dit programarbejdsområde. Du kan oprette en dedikeret kapacitet ved hjælp af [Power BI Premium ](../service-premium.md).
 
 I tabellen nedenfor kan du se en oversigt over de Power BI Premium-SKU'er, der er tilgængelige i [Microsoft Office 365](../service-admin-premium-purchase.md):
 
@@ -443,9 +443,9 @@ I tabellen nedenfor kan du se en oversigt over de Power BI Premium-SKU'er, der e
 > - Når du forsøger at integrere med Microsoft Office-apps, kan du bruge EM-SKU'er til at få adgang til indhold med en gratis Power BI-licens. Men du kan ikke få adgang til indhold med en gratis Power BI-licens, når du bruger Powerbi.com eller Power BI – Mobil.
 > - Når du forsøger at integrere med Microsoft Office-apps ved hjælp af Powerbi.com eller Power BI – Mobil, kan du få adgang til indhold med en gratis Power BI-licens.
 
-### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Tildel et apparbejdsområde til en dedikeret kapacitet
+### <a name="assign-an-app-workspace-to-a-dedicated-capacity"></a>Tildel et programarbejdsområde til en dedikeret kapacitet
 
-Når du opretter en dedikeret kapacitet, kan du tildele dit apparbejdsområde til den dedikerede kapacitet. Gennemgå følgende trin for at udføre denne handling:
+Når du opretter en dedikeret kapacitet, kan du tildele dit programarbejdsområde til den dedikerede kapacitet. Gennemgå følgende trin for at udføre denne handling:
 
 1. I Power BI-tjenesten skal du udvide arbejdsområder og vælge ellipsen for det arbejdsområde, du bruger til integrering af dit indhold. Vælg derefter **Rediger arbejdsområder**.
 
@@ -455,9 +455,9 @@ Når du opretter en dedikeret kapacitet, kan du tildele dit apparbejdsområde ti
 
     ![Tildel en dedikeret kapacitet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-024.png)
 
-3. Når du har valgt **Gem**, kan du se en rombe ud for navnet på apparbejdsområdet.
+3. Når du har valgt **Gem**, kan du se en rombe ud for navnet på programarbejdsområdet.
 
-    ![Apparbejdsområde knyttet til en kapacitet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
+    ![Programarbejdsområde knyttet til en kapacitet](media/embed-sample-for-your-organization/embed-sample-for-your-organization-037.png)
 
 ## <a name="admin-settings"></a>Administratorindstillinger
 

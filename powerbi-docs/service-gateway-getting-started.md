@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 04/18/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 0a2c1cb446a0a975a574f5d3f2684ddf80f4f273
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 9c88a09eccd887007df8d2539be861b964c31b5f
+ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54274714"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56324478"
 ---
 # <a name="what-are-power-bi-gateways"></a>Hvad er Power BI-gateways?
 
@@ -53,7 +53,7 @@ Den gateway, du installerer, kører som en Windows-tjeneste, **datagateway i det
 Forespørgsler og datastrøm:
 
 1. En forespørgsel oprettes af cloudtjenesten med de krypterede legitimationsoplysninger for datakilden i det lokale miljø. Den sendes derefter til en kø for at blive behandlet af gatewayen.
-2. Cloudtjenesten for gatewayen analyserer forespørgslen og sender anmodningen til Azure Service Bus.
+2. Cloudtjenesten for gatewayen analyserer forespørgslen og sender anmodningen til Azure Service Bus. Power BI administrerer Service Bus for dig, så der er ingen yderligere omkostninger eller konfigurationstrin.
 3. Datagatewayen i det lokale miljø forespørger Azure Service Bus om ventende anmodninger.
 4. Gatewayen henter forespørgslen, dekrypterer legitimationsoplysningerne og opretter forbindelse til datakilderne med disse legitimationsoplysninger.
 5. Gatewayen sender forespørgslen til datakilden til eksekvering.

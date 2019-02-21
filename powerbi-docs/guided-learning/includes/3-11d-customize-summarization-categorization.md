@@ -3,7 +3,7 @@ Power BI har egenskaber, du kan tildele til felter i din model, som kan være me
 ## <a name="numeric-control-over-summarization"></a>Numerisk kontrol over opsummering
 Lad os tage et eksempel og vise, hvordan du kan kontrollere den måde, som Power BI opsummerer numeriske datafelter på.
 
-Vælg et visuelt element på dit rapportcanvas, og vælg derefter et felt i ruden **Felter**. Fanen **Modellering** vises på båndet og indeholder indstillinger til formatering af data og dataegenskaber.
+Vælg en visualisering på dit rapportcanvas, og vælg derefter et felt i ruden **Felter**. Fanen **Modellering** vises på båndet og indeholder indstillinger til formatering af data og dataegenskaber.
 
 ![](media/3-11d-customize-summarization-categorization/3-11d_1.png)
 
