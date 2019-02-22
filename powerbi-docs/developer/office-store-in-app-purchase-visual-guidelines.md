@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 11/26/2018
-ms.openlocfilehash: 097095cda1e0ffea4f43059351f22638c502e8b4
-ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
+ms.openlocfilehash: 4cbd17a08a8cb7c7253f60f29a19341598c9800f
+ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56408063"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426533"
 ---
 # <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Retningslinjer for Power BI-visualiseringer med ekstra køb
 
@@ -33,7 +33,10 @@ Udviklere uploader deres IAP-visualiseringer til AppSource via Seller Dashboard,
 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>Hvad er en Power BI-visualisering med IAP-funktioner?
 
-En IAP-visualisering er en gratis visualisering, og den indeholder gratis funktioner, men har også yderligere funktioner, der kan anvendes mod ekstrabetaling. I beskrivelsen af visualiseringen skal udviklerne give brugerne besked om, hvilke funktioner der kræver yderligere køb, før de kan anvendes. I øjeblikket leverer Microsoft ikke oprindelige API'er til understøttelse af apptilkøb og tilføjelsesprogrammer. Udviklere kan bruge alle betalingssystemer fra tredjepart til disse køb. Se i vores [politik](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads) for Store.
+En IAP-visualisering er en gratis visualisering, og den indeholder gratis funktioner, men har også yderligere avancerede funktioner, der kan anvendes mod ekstrabetaling. I beskrivelsen af visualiseringen skal udviklerne give brugerne besked om, hvilke funktioner der kræver yderligere køb, før de kan anvendes. I øjeblikket leverer Microsoft ikke oprindelige API'er til understøttelse af apptilkøb og tilføjelsesprogrammer. Udviklere kan bruge alle betalingssystemer fra tredjepart til disse køb. Se i vores [politik](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads) for Store.
+
+> [!NOTE]
+> Vandmærker er ikke tilladt i de gratis funktioner. Udviklere kan vise et pop op-vindue eller et vandmærke, hvis de avancerede betalte funktioner bruges uden en gyldig licens.  
 
 ## <a name="logo-guidelines"></a>Retningslinjer for logo
 
