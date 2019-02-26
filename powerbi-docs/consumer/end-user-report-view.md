@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 075751a95512a7d06e22eb104aacf056978a93ea
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: d3f526b79f6029943743e66b13745a9d037fe9b9
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275772"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56661508"
 ---
 # <a name="change-the-size-of-a-report-page"></a>Skift størrelsen på en rapportside
 I den [tidligere artikel og video](../power-bi-report-display-settings.md) lærte du to forskellige måder at styre sidevisning i Power BI-rapporter på: **Vis** og **Sidestørrelse**. Sidevisning og Sidestørrelse fås i både Power BI-tjenesten og Power BI Desktop med næsten samme udseende og funktionsmåde, men i dette selvstudium bruger vi Power BI-tjenesten.

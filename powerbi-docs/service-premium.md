@@ -11,18 +11,16 @@ ms.topic: conceptual
 ms.date: 01/15/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: b1a99279087f2d6557da9a70c1e02aae649dc9b4
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: a048f589b19acd1a7c38a5b81cf781d1e76b7b5b
+ms.sourcegitcommit: 187d20180d9bae5a2ec53748cede9e7301e0343e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794541"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56725334"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Hvad er Microsoft Power BI Premium?
 
-Microsoft Power BI Premium indeholder ressourcer, der er dedikeret til at køre Power BI-tjenesten for din organisation. Det giver dig mere pålidelig ydeevne og gør det muligt at have større datamængder. Premium giver også mulighed for omfattende distribution af indhold, uden at du skal købe Pro-licenser pr. bruger til forbrugere af indhold. Du kan finde oplysninger om køb under [Sådan køber du Power BI Premium](service-admin-premium-purchase.md).   
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lNQDkN0GXzU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+Microsoft Power BI Premium indeholder ressourcer, der er dedikeret til at køre Power BI-tjenesten for din organisation. Det giver dig mere pålidelig ydeevne og gør det muligt at have større datamængder. Premium giver også mulighed for omfattende distribution af indhold, uden at du skal købe Pro-licenser pr. bruger til forbrugere af indhold.  
 
 ## <a name="premium-capacity-and-shared-capacity"></a>Premium-kapacitet og delt kapacitet
 

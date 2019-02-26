@@ -4,16 +4,17 @@ description: Power BI introducerer mange nye begreber og nye måder at bruge vel
 services: power-bi
 ms.custom: seodec18
 author: mihart
-ms.service: powerbi-service
+ms.service: powerbi
+ms.subservice: powerbi-consumer
 ms.topic: resource
 ms.date: 12/06/2018
 ms.author: mihart
-ms.openlocfilehash: 1722c401dfd5d2fdfbba530f440cecf9f1e075f3
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 91ac7e9990844f6e4f481473d402647a47249ba6
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431263"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56662405"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordliste til Power BI-tjenesten
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.

@@ -6,17 +6,17 @@ manager: kvivek
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 161f699014fcc342ba238cad38d28103f9a63991
-ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
+ms.openlocfilehash: 2303f5b357008de141f084eb0394701420a24dbe
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56298931"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56661485"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Få en præsentation af ruden Rapportfiltre
 I denne artikel ser vi nærmere på ruden Filtre i rapporter i Power BI-tjenesten.
@@ -108,4 +108,4 @@ Hvis feltværdierne repræsenterer en dato eller et klokkeslæt, kan du angive e
 
 
 ## <a name="next-steps"></a>Næste trin
-[Få mere at vide om, hvordan og hvorfor visualiseringer krydsfiltrerer og krydsfremhæver hinanden på en rapportside](end-user-interactions.md)
+[Få mere at vide om, hvordan og hvorfor visuals krydsfiltrerer og krydsfremhæver hinanden på en rapportside](end-user-interactions.md)

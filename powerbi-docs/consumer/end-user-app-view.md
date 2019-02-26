@@ -1,23 +1,23 @@
 ---
-title: Installér og brug apps med dashboards og rapporter i Power BI
+title: Installer og brug apps med dashboards og rapporter i Power BI
 description: I Power BI samler apps relaterede dashboards og rapporter på ét sted.
 author: mihart
 manager: kvivek
 ms.reviewer: lukaszp
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f4e6f0204ed9832a3ed3c3ed8347a44300f606df
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
+ms.openlocfilehash: a0cf919d184946b23cb9ebc4ddfc24e0652c64d7
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249384"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56661831"
 ---
-# <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installér og brug apps med dashboards og rapporter i Power BI
+# <a name="install-and-use-apps-with-dashboards-and-reports-in-power-bi"></a>Installer og brug apps med dashboards og rapporter i Power BI
 Nu hvor du har en [grundlæggende forståelse af apps](end-user-apps.md), skal vi se på, hvordan du kan åbne og interagere med apps. 
 
 ## <a name="ways-to-get-a-new-app"></a>Måder at få en ny app på
@@ -25,12 +25,12 @@ Husk, at der er flere måder at få en ny app på. En kollega, der designer en r
 
 I Power BI på din mobilenhed kan du kun installere en app fra et direkte link og ikke fra AppSource. Hvis appens forfatter installerer appen automatisk, kan du se den på listen over apps.
 
-## <a name="install-an-app-from-a-direct-link"></a>Installér en app fra et direkte link
+## <a name="install-an-app-from-a-direct-link"></a>Installer en app fra et direkte link
 Den nemmeste måde selv at installere en ny app på er ved at få et direkte link fra appens forfatter.  
 
 **På computeren** 
 
-Når du vælger linket i mailen, åbnes Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) i en browser. Bekræft, at du vil installere applikationen, hvorefter Power BI åbnes på programmets landingsside.
+Når du vælger linket i mailen, åbnes Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) i en browser. Bekræft, at du vil installere appen, hvorefter Power BI åbnes på appens landingsside.
 
 ![Applandingsside i Power BI-tjenesten](./media/end-user-app-view/power-bi-app-landing-page-opportunity-480.png)
 
@@ -52,9 +52,9 @@ Du kan også finde og installere apps fra Microsoft AppSource. Der vises kun pro
 3. Vælg **Hent den nu** for at føje den til din appindholdsliste. 
 
 ## <a name="interact-with-the-dashboards-and-reports-in-the-app"></a>Interager med dashboards og rapporter i appen
-Nu kan du udforske dataene i dashboardene og rapporterne i appen. Du har adgang til alle almindelige Power BI-interaktioner som filtrering, fremhævning, sortering og analyse. Du kan også [eksportere dataene til Excel ](end-user-export-data.md) fra en tabel eller en anden visualisering i en rapport. Læs om at [interagere med rapporter i Power BI](end-user-reading-view.md). 
+Nu kan du udforske dataene i dashboardene og rapporterne i appen. Du har adgang til alle almindelige Power BI-interaktioner som filtrering, fremhævning, sortering og analyse. Du kan også [eksportere dataene til Excel ](end-user-export-data.md) fra en tabel eller et andet visuelt element i en rapport. Læs om at [interagere med rapporter i Power BI](end-user-reading-view.md). 
 
-![Eksportér data fra en Power BI-visualisering](./media/end-user-app-view/power-bi-service-export-data-visual.png)
+![Eksportér data fra et visuelt Power BI-element](./media/end-user-app-view/power-bi-service-export-data-visual.png)
 
 
 ## <a name="next-steps"></a>Næste trin

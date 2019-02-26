@@ -6,16 +6,16 @@ manager: kvivek
 ms.reviewer: cmfinlan
 featuredvideoid: ''
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 12/14/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 26ba6d0ea23451863d05b13a79e57d483b15881f
-ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
+ms.openlocfilehash: e8d849c711bb190951feffca072a883137275af7
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56298839"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56661778"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Abonner på en rapport eller et dashboard i Power BI-tjenesten 
 Det har aldrig været nemmere at holde dig opdateret om dine vigtigste dashboards og rapporter. Abonner på rapportsider og dashboards, der betyder mest for dig, og Power BI sender et snapshot til din indbakke. Fortæl Power BI, hvor ofte du vil modtage mails: dagligt, ugentligt eller efter dataopdatering. Du kan tilmed angive et bestemt tidspunkt for, hvornår Power BI sender mails, eller køre det nu.  
@@ -77,8 +77,8 @@ Et abonnement slutter, hvis Pro-licensen udløber, dashboardet eller rapporten s
 * Hvis der er anvendt sikkerhed på rækkeniveau på nogen af felterne, bliver disse felter ikke vist for e-mailabonnementer på dashboard.  Hvis datasættet bruger RLS, vil du ikke kunne oprette et abonnement for mailabonnementer på rapporter.
 * Rapportsideabonnementer er bundet til navnet på siden i rapporten. Hvis du abonnerer på en rapportside, og den bliver omdøbt, skal du genoprette dit abonnement
 * Hvis du ikke kan bruge abonnementsfunktionen, skal du kontakte din systemadministrator. Din organisation kan have deaktiveret denne funktion pga. godkendelse eller af andre årsager.  
-* Mailabonnementer understøtter ikke de fleste [brugerdefinerede visualiseringer](../power-bi-custom-visuals.md).  Undtagelsen er de brugerdefinerede visualiseringer, der er blevet [certificeret](../power-bi-custom-visuals-certified.md).  
-* Mailabonnementer understøtter ikke R-drevne brugerdefinerede visualiseringer på nuværende tidspunkt.  
+* Mailabonnementer understøtter ikke de fleste [brugerdefinerede visuelle elementer](../power-bi-custom-visuals.md).  Undtagelsen er de brugerdefinerede visualiseringer, der er blevet [certificeret](../power-bi-custom-visuals-certified.md).  
+* Mailabonnementer understøtter ikke R-drevne brugerdefinerede visuals på nuværende tidspunkt.  
 * Særligt for dashboardabonnementer understøttes nogle typer af felter endnu ikke.  Det omfatter: streamingfelter, videofelter, felter med brugerdefineret webindhold.     
 * Abonnementer mislykkes muligvis på dashboards og rapporter med meget store billeder på grund af størrelsesbegrænsninger for mails.    
 * Power BI afbryder automatisk midlertidigt opdatering af datasæt, der er knyttet til dashboards og rapporter, som ikke er blevet besøgt i mere end to måneder.  Men hvis du føjer et abonnement til et dashboard eller en rapport, standses det ikke midlertidigt, selvom det ikke besøges.    
