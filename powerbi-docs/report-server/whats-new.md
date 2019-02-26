@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: ad3025b9649529566972f75e9c447bb7558132b8
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: e645cd84b646e180114027464ea4781277d5245f
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325191"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56662451"
 ---
 # <a name="whats-new-in-power-bi-report-server"></a>Nyheder i Power BI-rapportserver
 
@@ -36,11 +36,15 @@ Understøttelse af disse funktioner i Power BI-rapporter:
 
 [**Udvid og skjul i matrixrækkeoverskrifter**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#expandCollapse) Vi har tilføjet muligheden for at udvide eller skjule enkelte rækkeoverskrifter, hvilket er en af de visuelle funktioner, der har været mest efterspurgt.
 
-[**Kopiér og indsæt mellem .pbix-filer**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste) Du kan kopiere visuelle elementer mellem .pbix-filer enten fra genvejsmenuen for det visuelle element eller med standardtastaturgenvejen Ctrl + C og indsætte dem i en anden rapport med Ctrl + V.
+[**Kopiér og indsæt mellem .pbix-filer**](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/#copyPaste) Du kan kopiere visualiseringer mellem .pbix-filer enten fra genvejsmenuen for visualiseringen eller med standardtastaturgenvejen Ctrl + C og indsætte dem i en anden rapport med Ctrl + V.
 
 [**Smarte justeringshjælpelinjer**](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#smartGuides) De smarte justeringshjælpelinjer vises, når du flytter objekter på rapportsiden, f.eks. som i PowerPoint, så du kan justere alt på siden. Du kan se de smarte justeringshjælpelinjer, hver gang du trækker eller ændrer størrelsen på noget på siden. Når du flytter et objekt i nærheden af et andet, fastgøres det i en position, der er justeret i forhold til det andet objekt.
 
 **Tilgængelighedsfunktioner** Der er for mange tilgængelighedsfunktioner til at vise dem allesammen: f.eks. [understøttelse af tilgængelighed til ruden med listen over felter](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#fieldList). Ruden med listen over felter er fuldt tilgængelig. Du kan navigere rundt i ruden ved blot at bruge tastaturet og en skærmlæser, og du kan bruge genvejsmenuen til at føje felter til din rapportside.
+
+#### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
+
+- Med denne version leveres API-version 2.3.
 
 ### <a name="administrator-settings"></a>Administratorindstillinger
 
@@ -102,7 +106,7 @@ SAP HANA SSO Direct Query understøttes nu med Kerberos for Power BI-rapporter.
 >[!Note]
 >Dette scenarie understøttes kun, når SAP HANA behandles som en relationel datakilde med rapporter, du har oprettet i Power BI Desktop.  Hvis du vil aktivere dette i Power BI Desktop, skal du gå til DirectQuery-menuen under Indstillinger, markere "Behandl SAP HANA som en relationel kilde" og klikke på OK.
 
-#### <a name="custom-visuals"></a>Brugerdefinerede visuelle elementer
+#### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
 
 - Med denne version leveres API version 1.13.0.
 
@@ -207,7 +211,7 @@ Når du foretager detaljeudledning i en bestemt kategori i en visualisering, kan
 - [Cellejustering for tabel og matrix](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2017-feature-summary/#alignment)
 - [Vis enheder og præcisionskontrolelementer for kolonnerne Tabel og Matrix](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#displayUnits)
 - [Overløb af datanavne i søjlediagrammer i visualiseringer](https://powerbi.microsoft.com/blog/power-bi-desktop-february-2018-feature-summary/#overflow)
-- [Styre baggrundsfarve for datanavn i kartesiske og visuelle elementer med kort](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#dataLabelBackground)
+- [Styre baggrundsfarve for datanavn i kartesiske visualiseringer og visualiseringer med kort](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#dataLabelBackground)
 - [Kontrolelement til udfyldning af værktøjslinje/kolonne](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#padding)
 - [Forøge område, der bruges til akseetiketter i diagrammer](https://powerbi.microsoft.com/blog/power-bi-desktop-january-2018-feature-summary/#axisSize)
 - [Punktvisualiseringer på baggrund af x- og y-aksegrupperinger](https://powerbi.microsoft.com/blog/power-bi-desktop-december-feature-summary/#scatterChart)
@@ -319,12 +323,12 @@ Excel og Power BI indeholder en portefølje af værktøjer, som er de eneste af 
 Vi har udgivet en [gennemgang af, hvordan du tilføjer Office Online Server (OOS) i miljøet i din prøveversion af Power BI-rapportserver](excel-oos.md). Kunder, der har en volumenlicenskonto, kan downloade OOS fra Volume License Service Center uden omkostninger og få skrivebeskyttet funktionalitet. Efter konfigurationen kan brugerne få vist og interagere med Excel-projektmapper, der:
 
 * ikke har nogen afhængigheder af eksterne data
-* har en direkte forbindelse til en ekstern SQL Server Analysis Services-datakilde
+* har en liveforbindelse til en ekstern SQL Server Analysis Services-datakilde
 * har en PowerPivot-datamodel.
 
-### <a name="support-for-new-table-and-matrix-visuals"></a>Understøttelse af nye tabel- og matrixvisuals
+### <a name="support-for-new-table-and-matrix-visuals"></a>Understøttelse af nye tabel- og matrixvisualiseringer
 
-Power BI-rapportserver understøtter nu de nye Power BI-tabel- og matrixvisuals. Hvis du vil oprette rapporter med disse visuals, skal du bruge en opdateret version af Power BI Desktop-udgave til versionen fra oktober 2017. Den kan ikke installeres side om side med versionen af Power BI Desktop fra juni 2017. Hvis du vil have den seneste version af Power BI Desktop, skal du vælge **Avancerede indstillinger for hentning af filer** på [siden til download af Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
+Power BI-rapportserver understøtter nu de nye Power BI-tabel- og matrixvisualiseringer. Hvis du vil oprette rapporter med disse visualiseringer, skal du bruge en opdateret version af Power BI Desktop-udgave til versionen fra oktober 2017. Den kan ikke installeres side om side med versionen af Power BI Desktop fra juni 2017. Hvis du vil have den seneste version af Power BI Desktop, skal du vælge **Avancerede indstillinger for hentning af filer** på [siden til download af Power BI-rapportserver](https://powerbi.microsoft.com/report-server/).
 
 ## <a name="june-2017"></a>Juni 2017
 

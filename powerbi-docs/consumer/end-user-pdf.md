@@ -6,17 +6,17 @@ manager: kvivek
 ms.custom: ''
 ms.reviewer: cmfinlan
 ms.service: powerbi
-ms.subservice: powerbi-service
+ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1aaa57006b9a5aac2b077d3326ed6a39e6a4206d
-ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
+ms.openlocfilehash: 35efd62e6f00edd9ce6b58774dd73925a721dec5
+ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56298862"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56661922"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Eksportér rapporter fra Power BI til PDF
 Med Power BI kan du publicere din rapport i PDF-format og nemt oprette et dokument ud fra din Power BI-rapport. Når du **eksporterer til PDF**, bliver hver side i Power BI-rapporten en enkelt side i PDF-dokumentet.
@@ -48,9 +48,9 @@ Så nemt er det. Du kan downloade filen og åbne den med en hvilken som helst PD
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbejder med funktionen **Eksportér til PDF**.
 
-* **R-visualiseringer** understøttes ikke i øjeblikket. I PDF'en vil disse visualiseringer være tomme, og der vises en fejlmeddelelse.  
+* **R-visuals** understøttes ikke i øjeblikket. I PDF'en vil disse visualiseringer være tomme, og der vises en fejlmeddelelse.  
 
-* **Brugerdefinerede visualiseringer**, der er blevet **certificeret**, understøttes. Hvis du vil have flere oplysninger om certificerede brugerdefinerede visualiseringer, herunder hvordan du får en brugerdefineret visualisering certificeret, skal du se [Sådan får du en brugerdefineret visualisering certificeret](../power-bi-custom-visuals-certified.md). Brugerdefinerede visualiseringer, som ikke er certificeret, understøttes ikke. De vises med en fejlmeddelelse i PDF'en.   
+* **Brugerdefinerede visuals**, der er blevet **certificeret**, understøttes. Hvis du vil have flere oplysninger om certificerede brugerdefinerede visuals, herunder hvordan du får en brugerdefineret visual certificeret, skal du se [Sådan får du en brugerdefineret visual certificeret](../power-bi-custom-visuals-certified.md). Brugerdefinerede visualiseringer, som ikke er certificeret, understøttes ikke. De vises med en fejlmeddelelse i PDF'en.   
 
 * Rapporter med mere end 30 rapportsider kan ikke eksporteres i øjeblikket.
 
@@ -63,6 +63,8 @@ Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbe
 * Rapporter, der ejes af en bruger uden for dit Power BI-lejerdomæne (f.eks. en rapport, der ejes af nogen uden for din organisation, og som er delt med dig), kan ikke publiceres til PDF.
 
 * Hvis du deler et dashboard med en person uden for din organisation (og dermed en bruger, der ikke er i din Power BI-lejer), kan denne bruger ikke eksportere det delte dashboards tilknyttede rapporter til PDF. Hvis du f.eks. er aaron@contoso.com, kan du dele med cassie@cohowinery.com. Men cassie@cohowinery.com kan ikke eksportere de tilknyttede rapporter til PDF.
+
+* Når du eksporterer rapporter til PDF, som indeholder et baggrundsbillede, kan du muligvis se et forvrænget billede i eksporten, hvis du bruger indstillingen "Tilpas" til sidens baggrund.  For at få de bedste resultater anbefales det, at du bruger indstillingerne "Normal" eller "Udfyld" for at undgå problemer med dit eksporterede dokument.
 
 * I Power BI-tjenesten anvendes din Power BI-sprogindstilling som sprog i forbindelse med PDF-eksporten. Hvis du vil se eller angive dine sprogindstillinger, skal du vælge tandhjulsikonet > **Indstillinger** > **Generelt** > **Sprog**.
 
