@@ -10,12 +10,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: 47558c5aa7318d3ef3ff5c5e92beb6dd4b4b3d44
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 48eb26d3827f69831f2d565b26c20853906ab41d
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290452"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892177"
 ---
 # <a name="use-r-powered-custom-visuals-in-power-bi"></a>Brug R-drevne brugerdefinerede visuelle elementer i Power BI
 
@@ -61,7 +61,7 @@ Her er den fremgangsmåde, du skal benytte for at gennemse og vælge visuals på
 5. Du bliver advaret om at importere en brugerdefineret visualisering, som vist på følgende billede:
 
    ![R-visualisering 5](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_5.png)
-6. Gå til den placering, hvor visualiseringsfilen blev gemt, og vælg derefter filen. Brugerdefinerede visualiseringer i **Power BI Desktop** har filtypenavnet .pbiviz.
+6. Gå til den placering, hvor visualiseringsfilen blev gemt, og vælg derefter filen. Brugerdefinerede **Power BI Desktop**-visualiseringer har filtypenavnet .pbiviz.
 
    ![R-visualisering 6](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_6.png)
 7. Når du går tilbage til Power BI Desktop, kan du se den nye visualiseringstype i ruden **Visualiseringer**.
