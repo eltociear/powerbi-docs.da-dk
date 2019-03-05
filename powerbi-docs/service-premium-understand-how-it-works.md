@@ -9,12 +9,12 @@ ms.author: owend
 ms.reviewer: owend
 author: minewiskan
 manager: kfile
-ms.openlocfilehash: e31f67d978471f4dcc6472860fc5f8315212e563
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: d7cebbd569d16192f4acfa1c96394130731efa17
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794880"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014570"
 ---
 # <a name="microsoft-power-bi-premium-capacity-resource-management-and-optimization"></a>Administration og optimering af ressourcer med Microsoft Power BI Premium-kapacitet
 
@@ -55,7 +55,7 @@ Hvis der oprettes en interaktiv forespørgsel til et datasæt i kapaciteten, og 
 
 ### <a name="workloads"></a>Arbejdsbelastninger
 
-Som standard understøtter kapaciteter for **Power BI Premium** og **Power BI Embedded** kun den arbejdsbelastning, der er knyttet til Power BI-forespørgsler, som kører i clouden. Vi tilbyder nu understøttelse af yderligere to arbejdsbelastninger: **Sideinddelte rapporter** og **Dataflow**. Hvis funktionen er aktiveret, kan det påvirke hukommelsesforbruget i din kapacitet. Du kan finde flere oplysninger under [Konfigurer arbejdsbelastninger](service-admin-premium-manage.md#configure-workloads).
+Som standard understøtter kapaciteter for **Power BI Premium** og **Power BI Embedded** kun den arbejdsbelastning, der er knyttet til Power BI-forespørgsler, som kører i clouden. Vi tilbyder nu understøttelse af yderligere to arbejdsbelastninger: **Sideinddelte rapporter** og **Dataflow**. Hvis funktionen er aktiveret, kan det påvirke hukommelsesforbruget i din kapacitet. 
 
 ## <a name="cpu-resource-management-in-premium-capacity"></a>CPU-ressourcestyring i Premium-kapacitet
 
@@ -116,6 +116,3 @@ Brug Power BI Embedded-kapacitet i Azure til at teste forskellige SKU'er og find
 
 I nogle tilfælde kan du få meget at vide om problemet ved at åbne en Power BI Desktop-fil (PBIX-fil) for modellen på din computer og kontrollere forbruget af hukommelse og CPU. Dette er ikke en hjælp for meget store modeller, men for visse mindre modeller kan du prøve at åbne, opdatere og forespørge modellen fra computeren. Kontrollér modellens størrelse og forbrug af hukommelse og CPU, når du åbner modellen. Prøv at opdatere og oprette en forespørgsel. Brug joblisten til at kontrollere forbrug af CPU og hukommelse for den lokale fil. Nogle gange kan disse målepunkter på selve computeren fortælle, at en lav Premium-kapacitet, f.eks. P1 eller P2, muligvis ikke fungerer for din løsning.
 
-## <a name="next-steps"></a>Næste trin
-
-[Administrer kapaciteter i Power BI Premium og Power BI Embedded](service-admin-premium-manage.md)

@@ -1,6 +1,7 @@
 ---
 title: Ændringslog for Power BI-rapportserver
 description: Denne ændringslog er for Power BI-rapportserver, og den viser nye elementer sammen med fejlrettelser til hvert frigivet build.
+ms.author: jtarquino
 author: jtarquino
 manager: kfile
 ms.reviewer: maggies
@@ -8,13 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.author: jtarquino
-ms.openlocfilehash: 346e1a3d096ba5e8ea8d16b49d49e02c0c65e54a
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 9589c2cf5277995459a9f43f573b6e19c4c8f748
+ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56224036"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57327958"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -23,6 +23,7 @@ Denne ændringslog er for Power BI-rapportserver, og den viser nye elementer sam
 Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder i Power BI-rapportserver](whats-new.md). 
 
 ## <a name="january-2019"></a>Januar 2019
+
 - **Power BI-rapportserver**            
     - *Version 1.4.6969.7395 (Build 15.0.1102.235), udgivet: 30. januar 2019*
         - Fejlrettelser
@@ -65,6 +66,7 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
         - Indeholder ændringer, der er påkrævet for at oprette forbindelse til Power BI-rapportserver (januar 2019)  
 
 ## <a name="august-2018"></a>August 2018
+
 - **Power BI-rapportserver**
     - *Version 1.3.6816.37243 (Build 15.0.2.557), udgivet: 30. august, 2018*
         - Fejlrettelser
@@ -86,6 +88,7 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
         - Indeholder ændringer, der kræves for at oprette forbindelse til Power BI-rapportserver (august 2018)         
         
 ## <a name="march-2018"></a>Marts 2018
+
 - **Power BI-rapportserver**
     - *Version 1.2.6690.34729 (Build 15.0.2.402), udgivet: 27. april, 2018*
         - Fejlrettelser

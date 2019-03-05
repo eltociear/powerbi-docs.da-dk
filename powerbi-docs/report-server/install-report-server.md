@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 12/07/2018
-ms.openlocfilehash: 377e601bde58c0e0a8e5634cd798e3373ebee7b7
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 109c0f98705f81d48811f756c49150c8cb286e27
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324892"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014432"
 ---
 # <a name="install-power-bi-report-server"></a>Installér Power BI-rapportserver
 
@@ -37,11 +37,11 @@ Vi anbefaler, at du læser [Hardware- og softwarekrav til installation af Power 
 
 Hvis du har købt Power BI Premium, har du på fanen **Premium-indstillinger** i Power BI-administrationsportalen adgang til produktnøglen til Power BI-rapportserver. Den kan kun tilgås af globale administratorer eller brugere, som er tildelt rollen som administrator af Power BI-tjenesten.
 
-![Premium-indstillinger](../media/service-admin-premium-manage/pbirs-product-key.png "Nøgle til Power BI-rapportserver i Premium-indstillinger")
+![Premium-indstillinger](../report-server/media/install-report-server/pbirs-product-key.png "Nøgle til Power BI-rapportserver i Premium-indstillinger")
 
 Når du vælger **Power BI-rapportserver-nøgle**, vises en dialogboks med din produktnøgle. Du kan kopiere den og bruge den med installationen.
 
-![Produktnøgle](../media/service-admin-premium-manage/pbirs-product-key-dialog.png "Produktnøgle til Power BI-rapportserver")
+![Produktnøgle](../report-server/media/install-report-server/pbirs-product-key-dialog.png "Produktnøgle til Power BI-rapportserver")
 
 #### <a name="sql-server-enterprise-software-assurance-sa"></a>SQL Server Enterprise Software Assurance (SA)
 
