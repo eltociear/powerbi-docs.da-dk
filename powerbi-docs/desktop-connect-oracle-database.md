@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 02/22/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 826338a5e5524bb54c2ebb2207a3d438a8d428b1
-ms.sourcegitcommit: 3c8196be5626a0f037599abb6ccbd294fb1249df
+ms.openlocfilehash: b28c4ea9b4cacc77a7f98af5bfc006670f40af94
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899221"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892269"
 ---
 # <a name="connect-to-an-oracle-database"></a>Opret forbindelse til en Oracle-database
 Hvis du vil oprette forbindelse til en Oracle-database med **Power BI Desktop**, skal den korrekte Oracle-klientsoftware være installeret på den computer, der kører Power BI Desktop. Hvilken Oracle-klientsoftware du bruger, afhænger af, hvilken version af Power BI Desktop du har installeret – **32-bit** versionen eller **64-bit** versionen.
@@ -43,8 +43,13 @@ Når den rette Oracle-klientdriver er installeret, kan du oprette forbindelse ti
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_2.png)
 2. I dialogboksen **Oracle-database**, der åbnes, skal du angive navnet på serveren og vælge **Opret forbindelse**. Hvis der kræves et SID, kan du angive det i formatet: *ServerName/SID*, hvor SID er det entydige navn på databasen. Hvis formatet *servernavn/SID* ikke virker, kan du prøve at bruge *servernavn/tjenestenavn*, hvor tjenestenavn er det alias, der bruges, når der oprettes forbindelse.
-   
+
+
    ![](media/desktop-connect-oracle-database/connect-oracle-database_3.png)
+
+   > [!TIP]
+   > Hvis du har problemer med at oprette forbindelse i dette trin, kan du prøve at bruge følgende format i feltet Servernavn: (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=host_name)(PORT=port_num))(CONNECT_DATA=(SERVICE_NAME=service_name)))
+   
 3. Hvis du vil importere data ved hjælp af en oprindelig databaseforespørgsel, kan du anbringe din forespørgsel i feltet **SQL-sætning**, der bliver tilgængelig, når du udvider sektionen **Avancerede indstillinger** i dialogboksen **Oracle-database**.
    
    ![](media/desktop-connect-oracle-database/connect-oracle-database_4.png)

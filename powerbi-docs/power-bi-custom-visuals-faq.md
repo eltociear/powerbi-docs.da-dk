@@ -10,12 +10,12 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 9b4ff995b1cfaede1608e976bf2715feece0ade6
-ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
+ms.openlocfilehash: 503a722a387c05952933a4cfa9aaa06eccc164da
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56408132"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892315"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Ofte stillede spørgsmål om brugerdefinerede Power BI-visualiseringer
 
@@ -37,13 +37,13 @@ Nej, brugere får altid vist fanen "MIN ORGANIZATION" fra Power BI-skrivebordet 
   
 ### <a name="if-the-administrator-disables-custom-visuals-from-the-admin-portal-tenant-settings-do-users-still-have-access-to-the-organizational-custom-visuals"></a>Hvis administratoren deaktiverer brugerdefinerede visualiseringer fra administrationsportalen (lejerindstillinger), har brugerne så stadig adgang til de brugerdefinerede visualiseringer til virksomheden?
 
-Ja, hvis administratoren deaktiverer de brugerdefinerede visualiseringer fra administrationsportalen, har det ingen indflydelse på virksomhedslageret. Nogle organisationer deaktiverer brugerdefinerede visualiseringer og aktiverer kun håndplukkede visualiseringer, der er importeret og overført af Power BI-administratoren til virksomhedslageret. Deaktivering af brugerdefinerede visualiseringer fra administrationsportalen gennemtvinges ikke i Power BI Desktop. Desktop-brugere kan stadig tilføje og bruge brugerdefinerede visualiseringer fra den offentlige markedsplads i deres rapporter. Men de offentlige brugerdefinerede visualiseringer stopper med at gengive, når de publiceres på Power BI-tjenesten, og der udstedes en passende fejl. Når du bruger Power BI-tjenesten, kan du ikke importere brugerdefinerede visualiseringer fra den offentlige markedsplads. Det er kun visualiseringer fra virksomhedslageret, der kan importeres, fordi indstillingen for de brugerdefinerede visualiseringer i administrationsportalen gennemtvinges i Power BI-tjenesten.
+Ja, hvis administratoren deaktiverer de brugerdefinerede visualiseringer fra administrationsportalen, har det ingen indflydelse på virksomhedslageret. Nogle organisationer deaktiverer brugerdefinerede visualiseringer og aktiverer kun håndplukkede visualiseringer, der er importeret og overført af Power BI-administratoren til virksomhedslageret. Deaktivering af brugerdefinerede visualiseringer fra administrationsportalen gennemtvinges ikke i Power BI Desktop. Desktop-brugere kan stadig tilføje og bruge brugerdefinerede visualiseringer fra den offentlige markedsplads i deres rapporter. Men de offentlige brugerdefinerede visualiseringer stopper med at gengive, når de publiceres på Power BI-tjenesten, og der udstedes en passende fejl. Når du bruger Power BI-tjenesten, kan du ikke importere brugerdefinerede visualiseringer fra den offentlige markedsplads. Det er kun visualiseringer fra virksomhedslageret, der kan importeres, fordi indstillingen for de brugerdefinerede visualiseringer på administrationsportalen gennemtvinges i Power BI-tjenesten.
 
 ### <a name="why-does-the-organizational-store-and-organizational-custom-visuals-make-a-great-enterprise-solution"></a>Hvorfor er virksomhedslageret og brugerdefinerede visualiseringer til virksomheden en fantastisk virksomhedsløsning?
 
 * Alle får den samme version af visualiseringen, der styres af Power BI-administratoren. Når administratoren opdaterer versionen af visualiseringen på administrationsportalen, får alle brugere i virksomheden automatisk den opdaterede version.
 
-* Der er ikke længere grund til at dele visualfiler via mail eller delte mapper! Ét sted, som er synligt for alle medlemmer, der er logget på.
+* Der er ikke længere grund til at dele visualiseringsfiler via mail eller delte mapper! Ét sted, som er synligt for alle medlemmer, der er logget på.
 
 * Sikkerhed og understøttelse – nye versioner af brugerdefinerede visualiseringer til virksomheden opdateres automatisk i alle rapporter på samme måde som visualiseringer på markedspladsen.
 
@@ -57,8 +57,44 @@ Ja, hvis administratoren deaktiverer de brugerdefinerede visualiseringer fra adm
 
 ### <a name="what-are-certified-custom-visuals"></a>Hvad er certificerede brugerdefinerede visualiseringer?
 
-Certificerede brugerdefinerede visualiseringer er visualiseringer på [markedspladsen](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals), der opfylder visse [angivne](power-bi-custom-visuals-certified.md) kodekrav og test udført af Power BI-teamet.  De udførte test er udviklet for at kontrollere, at visualiseringen ikke har adgang til eksterne tjenester eller ressourcer. Microsoft er dog ikke forfatteren af brugerdefinerede visualiseringer fra tredjepart. Vi råder kunderne til at kontakte forfatteren direkte for at kontrollere funktionaliteten af sådanne visualiseringer.
+Certificerede brugerdefinerede visualiseringer er visualiseringer på [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals), der opfylder visse [angivne](power-bi-custom-visuals-certified.md) kodekrav og test udført af Power BI-teamet.  De udførte test er udviklet til at kontrollere, at visualiseringen ikke har adgang til eksterne tjenester eller ressourcer. Microsoft er dog ikke forfatter af brugerdefinerede visualiseringer fra tredjepart, og vi råder kunderne til at kontakte forfatteren direkte for at bekræfte funktionaliteten af sådanne visualiseringer.
 
+### <a name="what-tests-are-done-during-the-certification-process"></a>Hvilke test udføres under certificeringsprocessen?
+
+Test under certificeringsprocessen omfatter, men er ikke begrænset til: Kodegennemgang, analyse af statisk kode, datalækage, datafuzzytest, indtrængningstest, test af adgang til XSS, ondsindet datainjektion, inputvalidering og funktionstest.
+ 
+### <a name="do-you-certify-visuals-every-submission"></a>Certificerer I visualiseringer ved hver indsendelse?
+
+Ja. Hver gang en ny version af en certificeret visualisering sendes til Marketplace, undergår versionsopdateringen af visualiseringen de samme certificeringskontroller.
+
+Bemærkning til udviklere! Hvis du sender en versionsopdatering af en certificeret visualisering, behøver du ikke at sende en separat mail ligesom ved [anmodningen om førstegangscertificering.](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified#process-for-submitting-a-custom-visual-for-certification) Certificering af versionsopdateringen sker automatisk, og evt. overtrædelser, som medfører en afvisning, sendes i en mail med en forklaring om, hvad der skal rettes. 
+
+### <a name="is-it-possible-that-a-certified-visual-stops-being-certified-with-a-new-update"></a>Kan det ske, at en certificeret visualisering holder op med at være certificeret i forbindelse med en ny opdatering?
+
+Nej, det kan ikke ske. Certificeringen af en certificeret visualisering kan ikke fjernes i forbindelse med en ny opdatering. Opdateringen afvises.
+ 
+### <a name="do-i-need-to-share-my-code-in-public-repository-if-i-am-submitting-to-the-certification-process"></a>Skal jeg dele min kode på et offentligt lager, hvis jeg indsender til certificering?
+
+Nej, du behøver ikke at dele din kode offentligt. Du skal dog give os læserettigheder til at kontrollere visualiseringskoden. F.eks. private lagre i GitHub.
+ 
+### <a name="do-we-have-to-publishhttpsdocsmicrosoftcompower-bideveloperoffice-store-the-visual-in-the-marketplacehttpsappsourcemicrosoftcommarketplaceappspage1productpower-bi-visuals-to-certify-it"></a>Skal vi [publicere](https://docs.microsoft.com/power-bi/developer/office-store) visualiseringen på [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) for at få den certificeret?
+
+Ja. Det er et obligatorisk krav til certificering at publicere visualiseringen på Marketplace først.
+Hvis du vil certificere en brugerdefineret visualisering, skal den være på vores servere. Vi kan ikke certificere private visualiseringer.
+ 
+### <a name="how-long-does-it-take-to-certify-my-visual"></a>Hvor lang tid tager det at certificere min visualisering?
+
+Det kan tage op til to uger for en opdateret version. Det kan tage op til tre uger for en ny indsendelse (førstegangscertificering). 
+
+### <a name="does-the-certification-process-ensure-that-no-data-leakage-occurs"></a>Sikrer certificeringsprocessen, at der ikke opstår datalækage?
+
+De udførte test er udviklet til at kontrollere, at visualiseringen ikke har adgang til eksterne tjenester eller ressourcer. Microsoft er dog ikke forfatter af brugerdefinerede visualiseringer fra tredjepart, og vi råder kunderne til at kontakte forfatteren direkte for at bekræfte funktionaliteten af sådanne visualiseringer.
+ 
+### <a name="are-uncertified-custom-visuals-safe-to-use"></a>Er det sikkert at anvende brugerdefinerede visualiseringer, der ikke er certificerede?
+
+Brugerdefinerede visualiseringer, der ikke er certificerede, er ikke nødvendigvis ensbetydende med usikre visualiseringer.
+Nogle visualiseringer er ikke certificeret, fordi de ikke er i overensstemmelse med et eller flere af [certificeringskravene](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Det kan f.eks. være i forbindelse med oprettelse af forbindelse til en ekstern tjeneste, som f.eks. kortvisualiseringer eller visualiseringer, der anvender kommercielle biblioteker.
+ 
 ## <a name="visuals-with-additional-purchases"></a>Visualiseringer med ekstra køb
 
 ### <a name="what-is-a-visual-with-additional-purchases"></a>Hvad er en visualisering med ekstra køb?
@@ -100,7 +136,6 @@ Hvis du har et logo i den brugerdefinerede visualisering, skal du sørge for, at
 I retningslinjerne kan du også finde noter med bedste praksis.  
 > [!Note]
 > Alle gratis visualiseringer bør bevare de samme gratis funktioner, som blev tilbudt tidligere. Du kan føje valgfrie avancerede betalte funktioner til de gamle gratis funktioner. Vi anbefaler, at du sender IAP-visualiseringer sammen med de avancerede funktioner som nye visualiseringer i stedet for at opdatere de gratis gamle.
-
 
 ### <a name="can-i-get-my-iap-custom-visual-certified"></a>Kan jeg få min brugerdefinerede visualisering med IAP certificeret?
 

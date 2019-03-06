@@ -7,24 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 02/22/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fda2732ff33c324377a73ceb93480fbbcdd404bd
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 59d5ccd6a7179ca4c44210854fb66abb5371ac6c
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325034"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892407"
 ---
 # <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Brug bogmærker til at dele indsigt og oprette historier i Power BI 
 Ved hjælp af **bogmærker** i Power BI kan du indfange den visning af en rapportside, der er konfigureret i øjeblikket, herunder filtrering af og tilstanden for visualiseringer, og senere gå tilbage til denne tilstand ved ganske enkelt at vælge det gemte bogmærke. 
 
-Du kan også oprette en samling af bogmærker, arrangere dem i den ønskede rækkefølge og efterfølgende gennemgå hvert bogmærke i en præsentation for at fremhæve en række indsigter eller den tekstenhed, du vil fortælle med dine visualiseringer og rapporter. 
+Du kan også oprette en samling af bogmærker, arrangere dem i den ønskede rækkefølge og efterfølgende gennemgå hvert bogmærke i en præsentation for at fremhæve en række indsigter eller den tekstenhed, du vil fortælle med dine visuelle elementer og rapporter. 
 
 ![Bogmærker i Power BI](media/desktop-bookmarks/bookmarks_01.png)
 
 Bogmærker kan bruges til mange ting. Du kan bruge dem til at holde styr på dit eget fremskridt, når du opretter rapporter (det er nemt at tilføje, slette og omdøbe bogmærker), og du kan oprette bogmærker, hvis du vil lave en PowerPoint-lignende præsentation, der gennemgår bogmærker i en bestemt rækkefølge og dermed fortæller en historie med din rapport. Der kan også være andre anvendelsesmuligheder, afhængigt af hvordan du mener, at bogmærker bedst kan bruges.
+
+> [!TIP]
+> Du kan finde oplysninger om brug af Personlige bogmærker i Power BI-tjenesten ved at se [blogindlægget](https://powerbi.microsoft.com/blog/announcing-personal-bookmarks-in-the-power-bi-service/) om funktionen Personlige bogmærker. 
 
 ### <a name="enable-the-bookmarks-preview-versions-prior-to-march-2018"></a>Aktivér eksempelvisning af bogmærker (versioner fra før marts 2018)
 Bogmærker er generelt tilgængelige fra og med versionen fra marts 2018 af Power BI Desktop. 
@@ -51,7 +54,7 @@ Når du opretter et bogmærke, gemmes følgende elementer sammen med bogmærket:
 * Synlighed (for et objekt i ruden **Markering**)
 * Tilstanden Fokus eller **Spotlight** for et synligt objekt
 
-Konfigurer en rapportside, som du ønsker, den skal vises i bogmærket. Når din rapportside og dine visualiseringer er arrangeret, som du ønsker det, skal du vælge **Tilføj** i ruden **Bogmærker** for at tilføje et bogmærke. 
+Konfigurer en rapportside, som du ønsker, den skal vises i bogmærket. Når din rapportside og dine visuelle elementer er arrangeret, som du ønsker det, skal du vælge **Tilføj** i ruden **Bogmærker** for at tilføje et bogmærke. 
 
 ![Tilføj et bogmærke](media/desktop-bookmarks/bookmarks_04.png)
 
@@ -92,7 +95,7 @@ Med udgivelsen af bogmærker introduceres den nye rude **Markering** også. Rude
 
 ![Aktivér ruden Markering](media/desktop-bookmarks/bookmarks_08.png)
 
-Du kan vælge et objekt i ruden **Markering**. Du kan også vælge, om objektet i øjeblikket skal være synligt, ved at klikke på ikonet med øjet til højre for visualiseringen. 
+Du kan vælge et objekt i ruden **Markering**. Du kan også vælge, om objektet i øjeblikket skal være synligt, ved at klikke på ikonet med øjet til højre for det visuelle element. 
 
 ![Ruden Markering](media/desktop-bookmarks/bookmarks_09.png)
 
@@ -145,16 +148,16 @@ En anden funktion, der er udgivet sammen med bogmærker, er **Spotlight**. Du ka
 
 Lad os sammenligne **Spotlight** med tilstanden **Fokus** for at se, hvordan de adskiller sig fra hinanden.
 
-1. I tilstanden **Fokus** kan du få én visualisering til at fylde hele lærredet ved at vælge ikonet for **fokustilstanden**.
-2. Du kan bruge **Spotlight** til at fremhæve én visualisering i den oprindelige størrelse ved at få alle andre visualiseringer på siden til at tone ud, så de næsten er gennemsigtige. 
+1. I tilstanden **Fokus** kan du få ét visuelt element til at fylde hele lærredet ved at vælge ikonet for **fokustilstanden**.
+2. Du kan bruge **Spotlight** til at fremhæve ét visuelt element i den oprindelige størrelse ved at få alle andre visuelle elementer på siden til at tone ud, så de næsten er gennemsigtige. 
 
 ![Sammenlign fokustilstand med spotlight](media/desktop-bookmarks/bookmarks_11.png)
 
-Når der klikkes på ikonet **Fokus** for visualiseringen på forrige side, ser siden sådan ud:
+Når der klikkes på ikonet **Fokus** for det visuelle element på forrige side, ser siden sådan ud:
 
 ![fokustilstand](media/desktop-bookmarks/bookmarks_12.png)
 
-Når **Spotlight** derimod er valgt i ellipsemenuen for visualiseringen, ser siden ud, som det, du kan se her:
+Når **Spotlight** derimod er valgt i ellipsemenuen for det visuelle element, ser siden ud, som det, du kan se her:
 
 ![spotligthtilstand](media/desktop-bookmarks/bookmarks_13.png)
 
@@ -172,9 +175,9 @@ Bemærk, at du skal bruge titellinjen for det grå bogmærke til at navigere run
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 I denne version af **bogmærker** er der nogle få begrænsninger og overvejelser at tage betragtning.
 
-* De fleste brugerdefinerede visualiseringerfungerer fint sammen med bogmærker. Hvis du oplever problemer med et bogmærke og en brugerdefineret visualisering, kan du kontakte forfatteren af denne visualisering og bede om at få føjet understøttelse af bogmærker til deres visualiseringer. 
-* Hvis du tilføjer en visualisering på en rapportside, når du har oprettet et bogmærke, vises visualiseringen i standardtilstanden. Det betyder også, at hvis du vil indføre et udsnitsværktøj på en side, hvor du tidligere har oprettet bogmærker, optræder udsnittet i standardtilstanden.
-* Hvis du flytter rundt på visualiseringer, efter at der er oprettet et bogmærke, afspejles det i bogmærket. 
+* De fleste brugerdefinerede visuals fungerer fint sammen med bogmærker. Hvis du oplever problemer med et bogmærke og en brugerdefineret visual, kan du kontakte forfatteren af denne visual og bede om at få føjet understøttelse af bogmærker til deres visuals. 
+* Hvis du tilføjer et visuelt element på en rapportside, når du har oprettet et bogmærke, vises det visuelle element i standardtilstanden. Det betyder også, at hvis du vil indføre et udsnitsværktøj på en side, hvor du tidligere har oprettet bogmærker, optræder udsnittet i standardtilstanden.
+* Hvis du flytter rundt på visuelle elementer, efter at der er oprettet et bogmærke, afspejles det i bogmærket. 
 
 
 ## <a name="next-steps"></a>Næste trin

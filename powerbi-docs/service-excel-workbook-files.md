@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 6a44443918fe0bb9c25343c8960aaaadd5a6977e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 8568013438f6be84b2d4a48efdeffd99db352ed8
+ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285616"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56892361"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Hent data fra Excel-projektmappefiler
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -78,7 +78,7 @@ Når du vælger **Opret forbindelse**, vises din projektmappe i Power BI på sam
 
 Du kan ikke redigere din projektmappe i Power BI. Men hvis du har brug at foretage ændringer, kan du klikke på Rediger og derefter redigere din projektmappe i Excel Online eller åbne den i Excel på din computer. Alle ændringer, du foretager, gemmes i projektmappen på OneDrive.
 
-Når du vælger denne fremgangsmåde, oprettes der ingen datasæt i Power BI. Din projektmappe vises i navigationsruden i Power BI-arbejdsområdet under Rapporter. Projektmapper, der er forbundet, har et særligt Excel-ikon.
+Når du vælger denne fremgangsmåde, opretter Power BI et tilsvarende datasæt for den forbundne projektmappe. Du kan bruge dette datasæt til at oprette en Power BI-rapport, hvis det er nødvendigt. Din projektmappe vises også i navigationsruden i Power BI-arbejdsområdet under Rapporter. Projektmapper, der er forbundet, har et særligt Excel-ikon.
 
 Vælg denne indstilling, hvis du kun har data i regneark, eller hvis du har intervaller, pivottabeller og diagrammer, du vil fastgøre til dashboards.
 
