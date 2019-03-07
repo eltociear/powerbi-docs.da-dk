@@ -1,6 +1,6 @@
 ---
 title: Brug sikkerhed på rækkeniveau med integreret Power BI-indhold
-description: Få mere at vide om, hvordan du integrerer Power BI-indhold i dit program.
+description: Få mere at vide om, hvordan du integrerer Power BI-indhold i din app.
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: f50305eed647bfc94bc5c19ee1a298cb9ac9c782
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: fdc4e90c65ef02f7416ffce9a41b0b2ed028abc8
+ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762691"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57328004"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sikkerhed på rækkeniveau med Power BI Embedded
 
 **Sikkerhed på rækkeniveau (Row Level Security eller RLS)** kan bruges til at begrænse brugeradgang til data i dashboards, felter, rapporter og datasæt. Forskellige brugere kan arbejde med de samme artefakter og stadig få vist forskellige data. Integrering understøtter RLS.
 
-Du bør læse denne artikel, hvis du integrerer for brugere, der ikke anvender Power Bi (programmet ejer dataene), hvilket er typisk ved et Independent Software Vendor-scenarie (ISV). Konfigurer integreringstokenet for at tage højde for brugeren og rollen.
+Du bør læse denne artikel, hvis du integrerer for brugere, der ikke anvender Power Bi (appen ejer dataene), hvilket er typisk ved et Independent Software Vendor-scenarie (ISV). Konfigurer integreringstokenet for at tage højde for brugeren og rollen.
 
 Hvis du integrerer til Power BI-brugere (brugeren ejer dataene) i din organisation, fungerer sikkerhed på rækkeniveau på samme måde, som det gør direkte i Power BI-tjenesten. Der er ikke mere, du skal gøre i dit program. Du kan finde flere oplysninger i [Sikkerhed på rækkeniveau med Power BI](../service-admin-rls.md).
 
@@ -75,7 +75,7 @@ Sådan gør du:
 
 Når du anvender filteret på den måde, som vi gjorde her, vises alle de relevante værdier fra tabellerne **District**, **Store** og **Sales**. Men på grund af filtreringsretningen for relationen mellem tabellerne **Sales** og **Time**, vises værdierne fra tabellerne **Sales** og **Item** og **Item** og **Time** ikke. Du kan få mere at vide om tovejskrydsfiltrering ved at downloade hvidbogen [Bidirectional cross-filtering in SQL Server Analysis Services 2016 and Power BI Desktop](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
 
-## <a name="applying-user-and-role-to-an-embed-token"></a>Anvendelse af bruger og rolle på et integreringstoken
+## <a name="applying-user-and-role-to-an-embed-token"></a>Anvend bruger og rolle for at integrere et token
 
 Nu hvor du har konfigureret roller i Power BI Desktop, er der nogle opgaver, du skal udføre i dit program, så du kan udnytte rollerne.
 
@@ -89,7 +89,7 @@ API'en accepterer en liste over identiteter med angivelse af de relevante datas�
 
 Du kan oprette integreringstokenet ved hjælp af metoden **GenerateTokenInGroup** på **PowerBIClient.Reports**.
 
-Du kan f.eks. ændre eksemplet [PowerBIEmbedded_AppOwnsData](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data). *Home\HomeController.cs line 76 and 77* kunne opdateres fra:
+Du kan f.eks. ændre eksemplet [PowerBIEmbedded_AppOwnsData](https://github.com/Microsoft/PowerBI-Developer-Samples/tree/master/App%20Owns%20Data). *Services\EmbedService.cs line 76 and 77* kunne opdateres fra:
 
 ```csharp
 // Generate Embed Token.
@@ -231,7 +231,7 @@ Her er trinnene, så du kan begynde at konfigurere funktionen CustomData() med d
 
 Når du beslutter dig for at filtrere dine data i en rapport, kan du bruge **RLS (sikkerhed på rækkeniveau)** eller **JavaScript-filtre**.
 
-[Sikkerhed på rækkeniveau](../service-admin-rls.md) er en funktion, der filtrerer data på datamodelniveau. Din backend-datakilde styrer dine RLS-indstillinger. Den generering af integreringstokens, der er baseret på din datamodel, angiver brugernavnet og rollerne for sessionen. Den kan ikke tilsidesættes, fjernet eller styres af koden på klientsiden, og derfor anses den for at være sikker. Vi anbefaler brugen af RLS til filtrering af data på en sikker måde. Du kan filtrere data med RLS ved hjælp af en af nedenstående indstillinger.
+[Sikkerhed på rækkeniveau](../service-admin-rls.md) er en funktion, der filtrerer data på datamodelniveau. Din backend-datakilde styrer dine RLS-indstillinger. Den integrerede tokengeneration, der er baseret på din datamodel, angiver brugernavnet og rollerne for sessionen. Den kan ikke tilsidesættes, fjernet eller styres af koden på klientsiden, og derfor anses den for at være sikker. Vi anbefaler brugen af RLS til filtrering af data på en sikker måde. Du kan filtrere data med RLS ved hjælp af en af nedenstående indstillinger.
 
 * [Konfiguration af roller i en Power BI-rapport](../desktop-rls.md).
 * Konfiguration af roller på datakildeniveau (kun direkte forbindelse til Analysis Services).
@@ -304,7 +304,7 @@ Hvis du kalder [REST-API'en](https://docs.microsoft.com/rest/api/power-bi/embedt
 Værdien i den pågældende identitetsblob skal være et gyldigt adgangstoken til Azure SQL Server (med en URL-adresse til en ressource for (<https://database.windows.net/>).
 
    > [!Note]
-   > Hvis du vil oprette et adgangstoken til Azure SQL, skal programmet have **adgang til Azure SQL Database og Data Warehouse** og delegeret tilladelse til **Azure SQL Database**-API til AAD-konfiguration af programregistrering i Azure-portalen.
+   > Hvis du vil oprette et adgangstoken til Azure SQL, skal programmet have **adgang til Azure SQL Database og Data Warehouse** og delegeret tilladelse til **Azure SQL Database**-API til AAD-konfiguration af appregistrering i Azure-portalen.
 
    ![Programregistrering](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
 

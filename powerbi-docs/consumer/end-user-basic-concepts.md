@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 994645f2ca52c992b8d61590bc02d9f9f63891ce
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
+ms.openlocfilehash: db9f6218d0657946f04b7589a15be99270cf7030
+ms.sourcegitcommit: 086b610cdfd1df5de61abb47acf97589df128a4c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662245"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57196453"
 ---
 # <a name="basic-concepts-for-power-bi-service-consumers"></a>Grundlæggende koncepter for ***forbrugere*** af Power BI-tjenesten
 
@@ -88,6 +88,10 @@ Når en designer deler en app med dig, kan du se, hvilke datasæt der er inklude
 * Og visualiseringer fra dette ene datasæt kan vises på mange forskellige dashboards
   
   ![M:1-relation mellem datasæt](media/end-user-basic-concepts/drawing2.png)
+
+Derudover kan datasæt fra andre arbejdsområder bruges til at oprette indhold (rapporter, dashboards) i dit arbejdsområde. Disse datasæt vises ved hjælp af ikonet for refereret datasæt: 
+
+![database med linkikon](media/end-user-basic-concepts/power-bi-dataset-reference-icon.png)
 
 Videre til næste byggesten: visualiseringer.
 __________________________________________________________

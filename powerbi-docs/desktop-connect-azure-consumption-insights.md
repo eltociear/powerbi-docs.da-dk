@@ -1,5 +1,5 @@
 ---
-title: Opret forbindelse til Azure Consumption Insights-data (beta)
+title: Opret forbindelse til Azure fra Power BI Desktop, og se omkostninger og brug
 description: Du kan nemt oprette forbindelse til Azure og få indsigt i forbrugs- og brugsdata ved hjælp af Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -11,21 +11,27 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1302ede9c28cc42b3605e55705f07620f2974990
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 39678850b2e1acd16c678206feba8cccffa6477d
+ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216050"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57327981"
 ---
-# <a name="connect-to-azure-consumption-insights-in-power-bi-desktop-beta"></a>Opret forbindelse til Azure Consumption Insights i Power BI Desktop (beta)
-Ved hjælp af connectoren **Azure Consumption Insights** kan du bruge **Power BI Desktop** til at oprette forbindelse til Azure og få detaljerede data og oplysninger om din organisations brug af Azure-tjenester. Du kan også oprette målinger, brugerdefinerede kolonner og visuelle elementer, som kan rapporteres og deles, om din organisations brug af Azure. Denne version af connectoren **Azure Consumption and Insights** er en betaversion, som måske ændres.
+# <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Analysér omkostnings- og brugsdata for Azure i Power BI Desktop
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01.png)
+Power BI Desktop kan oprette forbindelse til Azure og levere detaljerede data om din organisations brug af Azure-tjenesten. Du kan bruge disse data til at oprette brugerdefinerede rapporter og målinger, så du bedre kan forstå og analysere Azure-forbruget.
 
-I denne artikel kan du få mere at vide om, hvordan du opretter forbindelse via connectoren **Azure Consumption Insights**, hvordan du henter de data, du skal bruge, og hvordan du overfører ved hjælp af Azure Enterprise Connector, og du kan finde en tilknytning til *kolonner med brugsoplysninger* i **ACI**-API'en (Azure Consumption Insights).
+Power BI understøtter i øjeblikket oprettelse af forbindelse til faktureringskonti under en Enterprise Aftale og en kundeaftale.
 
-## <a name="connect-to-azure-consumption-insights"></a>Opret forbindelse til Azure Consumption Insights
+Brugere med en Enterprise Aftale skal oprette forbindelse vha. connectoren Azure Consumption Insights. Brugere med en konto under en kundeaftale skal oprette forbindelse vha. connectoren Azure Cost Management.
+
+## <a name="connect-with-azure-consumption-insights"></a>Opret forbindelse vha. Azure Consumption Insights
+
+Azure Consumption Insights giver dig mulighed for at oprette forbindelse til faktureringskonti under en Azure Enterprise Aftale.
+
+I dette afsnit kan du få mere at vide om, hvordan du opretter forbindelse og får de data, du har brug for, og hvordan du migrerer fra brug af connectoren Azure Enterprise. Du kan se en tilknytning af *kolonner over brugsoplysninger* i API'en til **ACI** (Azure Consumption Insights).
+
 Hvis du vil oprette forbindelse ved hjælp af connectoren **Azure Consumption Insights**, skal du have adgang til Enterprise-funktionerne på Azure-portalen.
 
 Hvis du vil oprette forbindelse ved hjælp af connectoren **Azure Consumption Insights**, skal du vælge **Hent data** på båndet **Hjem** i **Power BI Desktop**. Hvis du vælger **Onlinetjenester** fra kategorierne til venstre, kan du se **Microsoft Azure Consumption Insights (Beta)**. Vælg **Opret forbindelse**.
@@ -70,7 +76,7 @@ Du kan markere et afkrydsningsfelt ud for en af tabellerne for at få den vist. 
 > 
 > 
 
-Når du vælger **Indlæs**, indlæses dataene i **Power BI Desktop**.  Connectoren indlæser data i henhold til tabellens standardtidsperiode.  Hvis du har brug for at tilpasse tidsperioden, [kan du konfigurere en brugerdefineret forespørgsel](https://docs.microsoft.com/power-bi/desktop-connect-azure-consumption-insights#using-azure-consumption-insights).
+Når du vælger **Indlæs**, indlæses dataene i **Power BI Desktop**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
 
@@ -201,6 +207,71 @@ Kolonnerne og navnene på oplysningerne på Azure-portalen er de samme i API'en 
 | År | |År |Nej |
 | SubscriptionId |subscriptionId |SubscriptionId |Ja |
 | SubscriptionGuid |subscriptionGuid |SubscriptionGuid |Nej |
+
+## <a name="connect-with-azure-cost-management"></a>Opret forbindelse vha. Azure Cost Management
+
+I dette afsnit kan du få mere at vide om, hvordan du opretter forbindelse til din faktureringskonto under din kundeaftale.
+
+Hvis du vil oprette forbindelse ved hjælp af connectoren **Azure Cost Management**, skal du vælge **Hent data** på båndet **Hjem** i **Power BI Desktop**.  Vælg **Azure** i kategorierne til venstre, så kan du se **Azure Cost Management (beta)**. Vælg **Opret forbindelse**.
+
+![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
+
+I den viste dialogboksen skal du indtaste dit *profil-id til fakturering*.
+
+![](media/desktop-connect-azure-consumption-insights/azure-cost-management-01.png)
+
+Du kan få dit profil-id til fakturering fra [Azure Portal](https://portal.azure.com).  Gå til **Cost Management + fakturering**, vælg din faktureringskonto, og vælg derefter **Faktureringsprofiler** på sidepanelet.  Vælg din faktureringsprofil, og vælg **egenskaber** på sidepanelet.  Kopiér dit profil-id til fakturering.
+
+![](media/desktop-connect-azure-consumption-insights/azure-cost-management-02.png)
+
+Du bliver bedt om at logge på med din mailadresse og adgangskode til Azure.  Når godkendelsen er fuldført, får du vist vinduet **Navigatør** med de 12 tabeller, der er tilgængelige for dig:
+
+* **Faktureringshændelser**: Viser en hændelseslog for nye fakturaer, kreditkøb m.m.
+* **Budgetter**: Viser budgetoplysninger, så du kan se de faktiske omkostninger eller brug sammenlignet med eksisterende budgetmål. 
+* **Gebyrer**: Viser en oversigt pr. måned over brug, gebyrer for Marketplace og separat fakturerede gebyrer i Azure.
+* **Kreditpartier**: Viser oplysninger om køb af kreditpartier i Azure for den angivne faktureringsprofil.
+* **Kreditoversigt**: Viser en kreditoversigt for den angivne faktureringsprofil.
+* **Marketplace**: Viser forbrugsbaserede gebyrer for Azure Marketplace.
+* **Prisark**: Viser de gældende priser efter måler for den angivne faktureringsprofil.
+* **Gebyrer for reserverede instanser**: Viser gebyrer knyttet til dine reserverede instanser i løbet af de sidste 24 måneder.
+* **Anbefalinger til reserverede instanser (enkelt)**: Viser anbefalinger til køb af reserverede instanser på baggrund af dine brugstendenser for et enkelt abonnement i løbet af de sidste 7, 30 eller 60 dage.
+* **Anbefalinger til reserverede instanser (delte)**: Viser anbefalinger til køb af reserverede instanser på baggrund af dine brugstendenser på tværs af alle dine abonnementer i løbet af de sidste 7, 30 eller 60 dage.
+* **Brug af reserverede instanser**: Viser oplysninger om forbrug for dine eksisterende reserverede instanser i løbet af den sidste måned.
+* **Brugsoplysninger**: Viser en opdeling af forbrugt antal og anslåede gebyrer for det angivne profil-id til fakturering.
+
+Du kan markere et afkrydsningsfelt ud for en af tabellerne for at få den vist.  Du kan vælge en eller flere tabeller ved at markere afkrydsningsfeltet ud for deres navn og derefter vælge **Indlæs**.
+
+![](media/desktop-connect-azure-consumption-insights/azure-cost-management-03.png)
+
+Når du vælger **Indlæs**, indlæses dataene i **Power BI Desktop**.
+
+![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_05.png)
+
+Når de markerede data er indlæst, kan de tabeller og felter, som du har valgt, ses i ruden **Felter**.
+
+![](media/desktop-connect-azure-consumption-insights/azure-cost-management-05.png)
+
+## <a name="writing-custom-queries"></a>Skrivning af brugerdefinerede forespørgsler
+
+Hvis du vil tilpasse antallet af måneder, ændre API-versionen eller udføre mere avanceret logik på de returnerede data, kan du oprette en brugerdefineret M-forespørgsel.
+
+Gå til båndet **Hjem** i **Power BI Desktop**, vælg rullelisten i **Hent data**, og vælg derefter **Tom forespørgsel**.  Det kan du også gøre i **Forespørgselseditor** ved at højreklikke i ruden **Forespørgsler** til venstre og derefter vælge **Ny forespørgsel > Tom menu** i den menu, der vises.
+
+På **Formellinjen** skal du skrive følgende, hvor du erstatter `billingProfileId` med det faktiske id og "charges" med et gyldigt tabelnavn (listen ovenfor).
+
+```
+let
+    Source = AzureCostManagement.Tables(billingProfileId, [ numberOfMonths = 3 ]),
+    charges = Source{[Key="charges"]}[Data]
+in
+    charges
+```
+
+Ud over at ændre `numberOfMonths` til en værdi mellem 1 og 36, kan du også angive:
+
+* `apiVersion` for at tilpasse, hvilken version af API'en som forespørgslen skal foretage kald til.
+* `lookbackWindow` i forbindelse med anbefalinger på reserverede instanser (enkelt eller delte) for at ændre det vindue, du vil generere anbefalinger fra (gyldige muligheder: 7, 30 eller 60 dage)
+
 
 ## <a name="next-steps"></a>Næste trin
 Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:

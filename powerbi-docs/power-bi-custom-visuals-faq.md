@@ -1,6 +1,6 @@
 ---
-title: Ofte stillede spørgsmål om brugerdefinerede Power BI-visualiseringer
-description: Gennemse en liste med ofte stillede spørgsmål og svar om brugerdefinerede Power BI-visualiseringer
+title: Ofte stillede spørgsmål om brugerdefinerede Power BI-visuals
+description: Gennemse en liste med ofte stillede spørgsmål og svar om brugerdefinerede Power BI-visuals
 author: markingmyname
 ms.author: maghan
 manager: kfile
@@ -10,21 +10,21 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 503a722a387c05952933a4cfa9aaa06eccc164da
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
+ms.openlocfilehash: c33ec747af514611df0ef00832acb785f04c40f1
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892315"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014156"
 ---
-# <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Ofte stillede spørgsmål om brugerdefinerede Power BI-visualiseringer
+# <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Ofte stillede spørgsmål om brugerdefinerede Power BI-visuals
 
-## <a name="organizational-custom-visuals"></a>Brugerdefinerede visualiseringer til virksomheden
+## <a name="organizational-custom-visuals"></a>Brugerdefinerede visuals til virksomheden
 
 ### <a name="how-can-the-admin-manage-the-organizational-custom-visuals"></a>Hvordan kan administratoren administrere de brugerdefinerede visualiseringer til virksomheden?
 
-Under fanen "Brugerdefinerede visualiseringer til virksomheder" på administrationsportalen kan administratoren se og [administrere alle de brugerdefinerede visualiseringer til virksomheden](https://docs.microsoft.com/power-bi/service-admin-portal#organization-visuals): tilføje, deaktivere, aktivere og slette.
-Der er ikke længere grund til at dele disse visualiseringer via mail eller en delt mappe. Når visualiseringerne er udrullet i virksomhedens lager, kan brugerne nemt finde dem og importere de brugerdefinerede visualiseringer til virksomheden i deres rapporter direkte fra Power BI Desktop eller Power BI-tjenesten. Du kan finde de brugerdefinerede visualiseringer til virksomheden i det indbyggede lager (på skrivebordet og i tjenesten) under fanen *MIN ORGANISATION*. Når administratoren overfører en ny version af en brugerdefineret visualisering til virksomheden, får alle i organisationen den samme opdaterede version. Forfattere af rapporter behøver ikke at slette visualiseringen i deres rapporter for at få den nye version af disse visualiseringer, da alle rapporter, der bruger disse visualiseringer, opdateres automatisk. Opdateringsmekanismen svarer til visualiseringer på markedspladser.
+Under fanen "Brugerdefinerede visuals til virksomheder" på administrationsportalen kan administratoren se og [administrere alle de brugerdefinerede visuals til virksomheden](https://docs.microsoft.com/power-bi/service-admin-portal#organization-visuals): tilføje, deaktivere, aktivere og slette.
+Der er ikke længere grund til at dele disse visualiseringer via mail eller en delt mappe. Når visualiseringerne er udrullet i virksomhedens lager, kan brugerne nemt finde dem og importere de brugerdefinerede visualiseringer til virksomheden i deres rapporter direkte fra Power BI Desktop eller Power BI-tjenesten. Du kan finde de brugerdefinerede visualiseringer til virksomheden i det indbyggede lager (på skrivebordet og i tjenesten) under fanen *MIN ORGANISATION*. Når administratoren overfører en ny version af en brugerdefineret visual til virksomheden, får alle i organisationen den samme opdaterede version. Forfattere af rapporter behøver ikke at slette visualiseringen i deres rapporter for at få den nye version af disse visualiseringer, da alle rapporter, der bruger disse visualiseringer, opdateres automatisk. Opdateringsmekanismen svarer til visuals på markedspladser.
 
 ### <a name="if-an-admin-uploads-a-custom-visual-from-the-public-marketplace-to-the-organization-store-is-it-automatically-updated-once-a-vendor-updates-the-visual-in-the-public-marketplace"></a>Hvis en administrator uploader en brugerdefineret visualisering fra den offentlige markedsplads til virksomhedslageret, opdateres den så automatisk, når en leverandør opdaterer visualiseringen på den offentlige markedsplads?
 
@@ -33,27 +33,27 @@ Det er administratorens ansvar at opdatere versionen af de brugerdefinerede visu
 
 ### <a name="is-there-a-way-to-disable-the-organizational-store"></a>Er det muligt at deaktivere virksomhedslageret?
 
-Nej, brugere får altid vist fanen "MIN ORGANIZATION" fra Power BI-skrivebordet og -tjenesten. Administratoren kan deaktivere eller slette alle brugerdefinerede visualiseringer til virksomheden fra administrationsportalen, hvilket medfører, at virksomhedslageret bliver tomt.
+Nej, brugere får altid vist fanen "MIN ORGANIZATION" fra Power BI-skrivebordet og -tjenesten. Administratoren kan deaktivere eller slette alle brugerdefinerede visuals til virksomheden fra administrationsportalen, hvilket medfører, at virksomhedslageret bliver tomt.
   
 ### <a name="if-the-administrator-disables-custom-visuals-from-the-admin-portal-tenant-settings-do-users-still-have-access-to-the-organizational-custom-visuals"></a>Hvis administratoren deaktiverer brugerdefinerede visualiseringer fra administrationsportalen (lejerindstillinger), har brugerne så stadig adgang til de brugerdefinerede visualiseringer til virksomheden?
 
-Ja, hvis administratoren deaktiverer de brugerdefinerede visualiseringer fra administrationsportalen, har det ingen indflydelse på virksomhedslageret. Nogle organisationer deaktiverer brugerdefinerede visualiseringer og aktiverer kun håndplukkede visualiseringer, der er importeret og overført af Power BI-administratoren til virksomhedslageret. Deaktivering af brugerdefinerede visualiseringer fra administrationsportalen gennemtvinges ikke i Power BI Desktop. Desktop-brugere kan stadig tilføje og bruge brugerdefinerede visualiseringer fra den offentlige markedsplads i deres rapporter. Men de offentlige brugerdefinerede visualiseringer stopper med at gengive, når de publiceres på Power BI-tjenesten, og der udstedes en passende fejl. Når du bruger Power BI-tjenesten, kan du ikke importere brugerdefinerede visualiseringer fra den offentlige markedsplads. Det er kun visualiseringer fra virksomhedslageret, der kan importeres, fordi indstillingen for de brugerdefinerede visualiseringer på administrationsportalen gennemtvinges i Power BI-tjenesten.
+Ja, hvis administratoren deaktiverer de brugerdefinerede visuals fra administrationsportalen, har det ingen indflydelse på virksomhedslageret. Nogle organisationer deaktiverer brugerdefinerede visuals og aktiverer kun håndplukkede visuals, der er importeret og overført af Power BI-administratoren til virksomhedslageret. Deaktivering af brugerdefinerede visualiseringer fra administrationsportalen gennemtvinges ikke i Power BI Desktop. Desktop-brugere kan stadig tilføje og bruge brugerdefinerede visualiseringer fra den offentlige markedsplads i deres rapporter. Men de offentlige brugerdefinerede visuals stopper med at gengive, når de publiceres på Power BI-tjenesten, og der udstedes en passende fejl. Når du bruger Power BI-tjenesten, kan du ikke importere brugerdefinerede visualiseringer fra den offentlige markedsplads. Det er kun visuals fra virksomhedslageret, der kan importeres, fordi indstillingen for de brugerdefinerede visuals i administrationsportalen gennemtvinges i Power BI-tjenesten.
 
 ### <a name="why-does-the-organizational-store-and-organizational-custom-visuals-make-a-great-enterprise-solution"></a>Hvorfor er virksomhedslageret og brugerdefinerede visualiseringer til virksomheden en fantastisk virksomhedsløsning?
 
-* Alle får den samme version af visualiseringen, der styres af Power BI-administratoren. Når administratoren opdaterer versionen af visualiseringen på administrationsportalen, får alle brugere i virksomheden automatisk den opdaterede version.
+* Alle får den samme version af visuals, der styres af Power BI-administratoren. Når administratoren opdaterer versionen af visuals på administrationsportalen, får alle brugere i virksomheden automatisk den opdaterede version.
 
-* Der er ikke længere grund til at dele visualiseringsfiler via mail eller delte mapper! Ét sted, som er synligt for alle medlemmer, der er logget på.
+* Der er ikke længere grund til at dele visualfiler via mail eller delte mapper! Ét sted, som er synligt for alle medlemmer, der er logget på.
 
-* Sikkerhed og understøttelse – nye versioner af brugerdefinerede visualiseringer til virksomheden opdateres automatisk i alle rapporter på samme måde som visualiseringer på markedspladsen.
+* Sikkerhed og understøttelse – nye versioner af brugerdefinerede visuals til virksomheden opdateres automatisk i alle rapporter på samme måde som visuals på markedspladsen.
 
-* Brugere i organisationen, der anvender de brugerdefinerede visualiseringer til virksomheden, skal være logget på for at se og bruge de brugerdefinerede visualiseringer til virksomheden, hvilket er en sikkerhedsfaktor for organisationen.
+* Brugere i organisationen, der anvender de brugerdefinerede visuals til virksomheden, skal være logget på for at se og bruge de brugerdefinerede visuals til virksomheden, hvilket er en sikkerhedsfaktor for organisationen.
 
-* Administratorer kan styre, hvilke brugerdefinerede visualiseringer der skal være tilgængelige i organisationen.
+* Administratorer kan styre, hvilke brugerdefinerede visuals der skal være tilgængelige i organisationen.
 
-* Administratorer kan aktivere/deaktivere visualiseringer til test fra administrationsportalen. Bedre håndhævelse af sikkerhed, da disse visualiseringer kun bliver tilladt for medlemmer af organisationen.
+* Administratorer kan aktivere/deaktivere visuals til test fra administrationsportalen. Bedre håndhævelse af sikkerhed, da disse visuals kun bliver tilladt for medlemmer af organisationen.
 
-## <a name="certified-custom-visuals"></a>Certificerede brugerdefinerede visualiseringer
+## <a name="certified-custom-visuals"></a>Certificerede brugerdefinerede visuals
 
 ### <a name="what-are-certified-custom-visuals"></a>Hvad er certificerede brugerdefinerede visualiseringer?
 
@@ -99,7 +99,7 @@ Nogle visualiseringer er ikke certificeret, fordi de ikke er i overensstemmelse 
 
 ### <a name="what-is-a-visual-with-additional-purchases"></a>Hvad er en visualisering med ekstra køb?
 
-En visualisering med ekstra køb svarer til tilføjelsesprogrammet apptilkøb (IAP) på markedspladsen. Disse tilføjelsesprogrammer har prismærket  **Yderligere køb kan være påkrævet**.
+En visualisering med ekstra køb svarer til tilføjelsesprogrammet apptilkøb (IAP) på markedspladsen. Disse tilføjelsesprogrammer har prismærket **Yderligere køb kan være påkrævet**.
 
 Brugerdefinerede visualiseringer med IAP er gratis brugerdefinerede visualiseringer, der kan downloades. Brugerne betaler ikke noget for at downloade disse brugerdefinerede visualiseringer fra markedspladsen. Visualiseringer med IAP tilbyder valgfri apptilkøb for avancerede funktioner.  
 

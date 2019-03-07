@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: f13074c2123808e7b26d40f9c5a7e20cbf0da6e4
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: e1d8d240e4fd5bc05fc015f1c12971a8646370dd
+ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54291782"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226106"
 ---
 # <a name="use-resource-based-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Brug ressourcebaseret Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø
 
@@ -39,7 +39,7 @@ I en standardinstallation kører gatewayen som en tjenestekonto på en lokal com
 
 ![Domænekonto](media/service-gateway-sso-kerberos-resource/domain-account.png)
 
-Når **Kerberos-begrænset delegering skal aktiveres, skal gatewayen køre som en domænekonto, medmindre Azure AD allerede er synkroniseret med dit lokale Active Directory (med Azure AD DirSync/Connect). Hvis du har brug for at skifte kontoen til en domænekonto, kan du se [Skift af gatewayen til en domænekonto](service-gateway-sso-kerberos.md#switching-the-gateway-to-a-domain-account) senere i denne artikel.
+Når **Kerberos-begrænset delegering skal aktiveres, skal gatewayen køre som en domænekonto, medmindre Azure AD allerede er synkroniseret med dit lokale Active Directory (med Azure AD DirSync/Connect). Hvis du har brug for at skifte kontoen til en domænekonto, kan du se [Skift af gatewayen til en domænekonto](service-gateway-sso-kerberos.md).
 
 Hvis Azure AD DirSync/Connect er konfigureret, og brugerkonti er synkroniserede, behøver gatewaytjenesten ikke at udføre lokale AD-opslag på kørselstidspunktet. Du kan bruge det lokale tjeneste-SID (i stedet for at kræve en domænekonto) til gatewaytjenesten. De trin til konfiguration af Kerberos Constrained Delegation, som er beskrevet i denne artikel, er de samme som den konfiguration (de anvendes blot på gatewayens computerobjekt i Active Directory i stedet for på domænekontoen).
 

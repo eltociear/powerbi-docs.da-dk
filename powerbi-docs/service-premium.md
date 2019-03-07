@@ -8,19 +8,22 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 01/15/2019
+ms.date: 02/28/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: a048f589b19acd1a7c38a5b81cf781d1e76b7b5b
-ms.sourcegitcommit: 187d20180d9bae5a2ec53748cede9e7301e0343e
+ms.openlocfilehash: cb9280f47f1f2d28ce6fabda2dbc173fbdc837ac
+ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56725334"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226129"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Hvad er Microsoft Power BI Premium?
 
-Microsoft Power BI Premium indeholder ressourcer, der er dedikeret til at køre Power BI-tjenesten for din organisation. Det giver dig mere pålidelig ydeevne og gør det muligt at have større datamængder. Premium giver også mulighed for omfattende distribution af indhold, uden at du skal købe Pro-licenser pr. bruger til forbrugere af indhold.  
+> [!NOTE]
+> Denne artikel opdateres i øjeblikket for at beskrive nye funktioner, give flere detaljer og forbedre læsbarheden. Se de nyeste oplysninger i [Udrulning og administration af Power BI Premium-kapaciteter](whitepaper-powerbi-premium-deployment.md).
+
+Power BI Premium indeholder ressourcer, der er dedikeret til at køre Power BI-tjenesten for din organisation. Det giver dig mere pålidelig ydeevne og gør det muligt at have større datamængder. Premium giver også mulighed for omfattende distribution af indhold, uden at du skal købe Pro-licenser pr. bruger til forbrugere af indhold.  
 
 ## <a name="premium-capacity-and-shared-capacity"></a>Premium-kapacitet og delt kapacitet
 
@@ -79,9 +82,7 @@ Power BI Premium er tilgængelig i nodekonfigurationer med andre v-kerne-kapacit
 
 ## <a name="workloads-in-premium-capacity"></a>Arbejdsbelastninger i Premium-kapacitet
 
-Tænk på en arbejdsbelastning i Power BI som en af de mange tjenester, du kan vise til brugere. Som standard understøtter kapaciteter for **Power BI Premium** og **Power BI Embedded** kun den arbejdsbelastning, der er knyttet til Power BI-forespørgsler, som kører i clouden.
-
-Vi tilbyder nu understøttelse af yderligere to arbejdsbelastninger: **Sideinddelte rapporter** og **Dataflow**. Du aktiverer disse arbejdsbelastninger på Power BI-administrationsportalen eller via Power BI REST-API'en. Du kan også angive den maksimale hukommelse, som de enkelte arbejdsbelastninger kan forbruge, og dermed styre, hvordan de forskellige arbejdsbelastninger påvirker hinanden. Du kan finde flere oplysninger under [Konfigurer arbejdsbelastninger](service-admin-premium-manage.md#configure-workloads).
+Som standard understøtter kapaciteter for **Power BI Premium** og **Power BI Embedded** kun den arbejdsbelastning, der er knyttet til Power BI-forespørgsler, som kører i clouden. Premium understøtter også yderligere arbejdsbelastninger for **Kunstig intelligens**, **Dataflow** og **Sideinddelte rapporter**. Du aktiverer disse arbejdsbelastninger på Power BI-administrationsportalen eller via Power BI REST-API'en. Du kan også angive den maksimale hukommelse, som de enkelte arbejdsbelastninger kan forbruge, og dermed styre, hvordan de forskellige arbejdsbelastninger påvirker hinanden. Du kan få mere at vide ved at se [Konfigurer arbejdsbelastninger](service-admin-premium-workloads.md).
 
 ### <a name="default-memory-settings"></a>Standardindstillinger for hukommelse
 
@@ -114,10 +115,10 @@ Power BI Premium giver også mulighed for at køre Power BI-rapportserver i det 
 
 ## <a name="next-steps"></a>Næste trin
 
-[Ofte stillede spørgsmål om Power BI Premium](service-premium-faq.md)
-[Sådan køber du Power BI Premium](service-admin-premium-purchase.md)
-[Administration af Power BI Premium](service-admin-premium-manage.md)
-[Whitepaper om Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
-[Whitepaper om planlægning af en Power BI Enterprise-udrulning](https://aka.ms/pbienterprisedeploy)
+[Udrulning og administration af Power BI Premium-kapaciteter](whitepaper-powerbi-premium-deployment.md)   
+[Sådan køber du Power BI Premium](service-admin-premium-purchase.md)   
+[Ofte stillede spørgsmål til Power BI Premium](service-premium-faq.md)   
+
+
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

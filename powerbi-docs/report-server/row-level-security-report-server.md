@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: 8fe48becd106a91c0a57d145eab4b546985e2ba6
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 254b0c5c2e5a9b39f5d04f002a2791f1cd432c52
+ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324938"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57226198"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Sikkerhed på rækkeniveau i Power BI-rapportserver
 
@@ -48,7 +48,7 @@ Når du har gemt din rapport i Power BI-rapportserver, kan du administrere sikke
 1. I Power BI Desktop skal du gemme rapporten i Power BI-rapportserver. Du skal bruge den version af Power BI Desktop, der er optimeret til Power BI-rapportserver.
 2. Vælg ellipsen (**...**) i Power BI-rapporttjenesten ud for rapporten. 
 
-3. Vælg **Administrer** > **Sikkerhed på rækkeniveau**. 
+3. Vælg **Administrer** > **Sikkerhed på rækkeniveau**. 
 
      ![Administrer sikkerhed på rækkeniveau](media/row-level-security-report-server/power-bi-report-server-rls-dialog.png)
 

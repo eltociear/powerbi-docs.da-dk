@@ -2,34 +2,38 @@
 title: Oversigt over udviklerhåndbog, Power BI-rapportserver
 description: Velkommen til udviklerhåndbogen til Power BI-rapportserver, der er en placering i det lokale miljø til lagring og administration af dine Power BI- og mobilrapporter samt dine sideinddelte rapporter.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.author: maghan
-ms.openlocfilehash: 9b1357d2e10214cdf578bff4d2aa7fca8fc19033
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: e981da28a70490d14bca2fa026f6428020d10ae7
+ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794715"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57327889"
 ---
 # <a name="developer-handbook-overview-power-bi-report-server"></a>Oversigt over udviklerhåndbog, Power BI-rapportserver
+
 Velkommen til udviklerhåndbogen til Power BI-rapportserver, der er en placering i det lokale miljø til lagring og administration af dine Power BI- og mobilrapporter samt dine sideinddelte rapporter.
 
-![](media/developer-handbook-overview/admin-handbook.png)
+![Håndbog til administratorer](media/developer-handbook-overview/admin-handbook.png)
 
 I denne håndbog fremhæves de muligheder, du har som udvikler, for at arbejde med Power BI-rapportserver.
 
 ## <a name="embedding"></a>Integration
+
 Du kan integrere en hvilken som helst rapport på Power BI-rapportserver i en iFrame ved at føje parameteren `?rs:Embed=true` for forespørgselsstrengen til URL-adressen. Denne teknik fungerer til Power BI-rapporter samt til andre rapporttyper.
 
 ### <a name="report-viewer-control"></a>Kontrolelementet Rapportfremviser
+
 Du kan gøre brug af kontrolelementet Rapportfremviser i forbindelse med sideinddelte rapporter. Den giver dig mulighed for at placere kontrolelementet i et .NET-vindue eller -webprogram. Du kan finde flere oplysninger under [Introduktion til kontrolelementet Rapportfremviser](https://docs.microsoft.com/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started).
 
 ## <a name="apis"></a>API'er
+
 Du har flere API-indstillinger, som du kan bruge til at interagere med Power BI-rapportserver. Denne teknik omfatter følgende.
 
 * [REST API'er](rest-api.md)
@@ -40,10 +44,9 @@ Du kan også bruge [PowerShell-hjælpeprogrammerne](https://github.com/Microsoft
 
 > [!NOTE]
 > PowerShell-hjælpeprogrammerne understøtter i øjeblikket ikke Power BI Desktop-filer (.pbix).
-> 
-> 
 
 ## <a name="custom-extensions"></a>Brugerdefinerede udvidelser
+
 Udvidelsesbiblioteket er et sæt klasser, grænseflader og værdityper, der er inkluderet i Power BI-rapportserver. Dette bibliotek giver adgang til systemets funktionalitet, og det er designet til at være det fundament, som Microsoft .NET Framework-programmer kan bruge til at udvide komponenter til Power BI-rapportserver.
 
 Der findes flere typer udvidelser, som du kan oprette.
@@ -56,6 +59,7 @@ Der findes flere typer udvidelser, som du kan oprette.
 Du kan finde flere oplysninger under [Udvidelsesbibliotek](https://docs.microsoft.com/sql/reporting-services/extensions/reporting-services-extension-library).
 
 ## <a name="next-steps"></a>Næste trin
+
 [Introduktion til kontrolelementet Rapportfremviser](https://docs.microsoft.com/sql/reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls-get-started)  
 [Oprettelse af programmer ved hjælp af webtjenesten og .NET Framework](https://docs.microsoft.com/sql/reporting-services/report-server-web-service/net-framework/building-applications-using-the-web-service-and-the-net-framework)  
 [Adgang til URL-adresse](https://docs.microsoft.com/sql/reporting-services/url-access-ssrs)  
@@ -63,4 +67,3 @@ Du kan finde flere oplysninger under [Udvidelsesbibliotek](https://docs.microsof
 [WMI-provider](https://docs.microsoft.com/sql/reporting-services/wmi-provider-library-reference/reporting-services-wmi-provider-library-reference-ssrs)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

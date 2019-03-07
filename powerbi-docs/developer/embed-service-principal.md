@@ -9,12 +9,12 @@ ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 02/05/2019
-ms.openlocfilehash: c5915f4f2792496a1521a868180d4ffc2dca3557
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
+ms.openlocfilehash: 8d91b6cc03bb142d6d4aa101f87d8e3c1e6f3196
+ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56248901"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014409"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Tjenesteprincipal med Power BI (prøveversion)
 
@@ -165,7 +165,7 @@ Nedenfor er et eksempel på et script, der kan bruges til at hente objekt-id'et 
 
 * Tjenesteprincipalen fungerer kun med [nye programarbejdsområder](../service-create-the-new-workspaces.md).
 * **Mit arbejdsområde** understøttes ikke til brug sammen med tjenesteprincipalen.
-* [Dedikeret kapacitet](../service-admin-premium-manage.md) er påkrævet for at kunne begynde at producere.
+* Dedikeret Premium-kapacitet er påkrævet for at kunne påbegynde produktion.
 * Du kan ikke logge på Power BI-portalen ved hjælp af en tjenesteprincipal.
 * Der kræves rettigheder som Power BI-administrator for at kunne aktivere tjenesteprincipalen under Indstillinger for udvikler på Power BI-administrationsportalen.
 * Du kan ikke installere eller administrere en datagateway i det lokale miljø ved hjælp af en tjenesteprincipal.

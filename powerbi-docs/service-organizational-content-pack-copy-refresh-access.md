@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f42e9f69c3cdab945c0f000a0cc2ae4654d9ec9b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 6a1834c88fbd7077f49560bc56b545539917ed3e
+ms.sourcegitcommit: 086b610cdfd1df5de61abb47acf97589df128a4c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296105"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57196430"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisationsindholdspakker: Kopiér, opdater og få adgang
 
@@ -36,6 +36,12 @@ Opret din egen kopi af indholdspakken, som ikke kan ses af andre.
 2. Vælg **Gem**.  
 
 Nu har du en kopi, du kan foretage ændringer i. Ingen andre kan se de ændringer, du foretager.
+
+> [!NOTE]
+> Tidligere blev der vist et nyt datasæt på listen over indhold i arbejdsområdet, hver gang du installerede en indholdspakke eller oprettede en kopieret pakke. I forbindelse med en nylig opdatering blev oplevelsen forenklet, så der kun vises ét element ved hjælp det nye ikon for refereret datasæt:
+>
+> ![database med linkikon](media/service-organizational-content-pack-copy-refresh-access/power-bi-dataset-reference-icon.png)
+> 
 
 ## <a name="help--i-can-no-longer-access-the-content-pack"></a>Hjælp!  Jeg har ikke længere adgang til indholdspakken
 Der kan være flere årsager til dette:
