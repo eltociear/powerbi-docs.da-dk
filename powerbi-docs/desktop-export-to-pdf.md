@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/08/2018
+ms.date: 02/28/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7b835231356ad14ab434b86a2d1f99aa7212358d
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 2f64973650edd951a9a780090426afba3e8471f5
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215624"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555579"
 ---
 # <a name="export-reports-to-pdf-from-power-bi-desktop"></a>Eksportér rapporter til PDF-format fra Power BI Desktop
-I **Power BI Desktop** kan du eksportere rapporter til en PDF-fil, så det er nemt at dele eller udskrive dine rapporter fra PDF.
+I **Power BI Desktop** eller Power BI-tjenesten kan du eksportere rapporter til en PDF-fil, så det er nemt at dele eller udskrive dine rapporter fra PDF.
 
 ![Eksportér til PDF](media/desktop-export-to-pdf/export-to-pdf_01.png)
 
@@ -35,7 +35,6 @@ Når eksporten er fuldført, indlæses PDF-filen i PDF-fremviseren på computere
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 Der er et par ting, du skal være opmærksom på i forbindelse med funktionen **Eksportér til PDF**:
 
-* Funktionen **Eksportér til PDF** er kun tilgængelig med **Power BI Desktop**, og den findes i øjeblikket ikke i **Power BI-tjenesten**.
 * Funktionen eksporterer brugerdefinerede visualiseringen, men den eksporterer *ikke* en eventuel baggrund, du har anvendt i rapporten.
 
 Da baggrunden ikke eksporteres til PDF-filen, skal du være ekstra opmærksom på de rapporter, hvor der bruges en mørk baggrund. Hvis teksten i din rapport er lys eller hvid, så den kan læses på den mørke baggrund, vil det være svært at læse den i den eksporterede PDF-fil, da baggrunden ikke eksporteres sammen med resten af rapporten. 

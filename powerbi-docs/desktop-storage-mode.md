@@ -1,5 +1,5 @@
 ---
-title: Brug lagringstilstand i Power BI Desktop (prøveversion)
+title: Brug lagringstilstand i Power BI Desktop
 description: Brug lagringstilstand til at kontrollere, om data cachelagres i hukommelsen for rapporter i Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 02/26/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 26ab2ec7dfd7a091a6a7df89ee4492dc124ed60c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f84e2f95c8ae209828eb1c21f34253015e07aefa
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279176"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555858"
 ---
-# <a name="storage-mode-in-power-bi-desktop-preview"></a>Lagringstilstand i Power BI Desktop (prøveversion)
+# <a name="storage-mode-in-power-bi-desktop"></a>Lagringstilstand i Power BI Desktop
 
 I Microsoft Power BI Desktop kan du angive *lagringstilstanden* for tabeller. Du kan bruge *lagringstilstanden* til at kontrollere, om Power BI Desktop cachelagrer tabeldata i hukommelsen for rapporter. 
 
@@ -37,9 +37,9 @@ Angivelse af lagringstilstanden giver mange fordele. Du kan angive lagringstilst
 
 Indstillingen af lagringstilstand i Power BI Desktop er en af tre relaterede funktioner:
 
-* **Sammensatte modeller**: Gør det muligt for en rapport at have to eller flere dataforbindelser, herunder DirectQuery-forbindelser eller Import, i en hvilken som helst kombination. Du kan finde flere oplysninger under [Sammensatte modeller i Power BI Desktop (prøveversion)](desktop-composite-models.md).
+* **Sammensatte modeller**: Gør det muligt for en rapport at have to eller flere dataforbindelser, herunder DirectQuery-forbindelser eller Import, i en hvilken som helst kombination. Du kan finde flere oplysninger under [Sammensatte modeller i Power BI Desktop](desktop-composite-models.md).
 
-* **Mange til mange-relationer**: Via *sammensatte modeller* kan du oprette *mange til mange-relationer* mellem tabeller. *Mange til mange-relationer* fjerner kravene for entydige værdier i tabeller. Det fjerner også tidligere løsninger, f.eks. introduktion af nye tabeller, kun for at oprette relationer. Du kan finde flere oplysninger under [Mange til mange-relationer i Power BI Desktop (prøveversion)](desktop-many-to-many-relationships.md).
+* **Mange til mange-relationer**: Via *sammensatte modeller* kan du oprette *mange til mange-relationer* mellem tabeller. *Mange til mange-relationer* fjerner kravene for entydige værdier i tabeller. Det fjerner også tidligere løsninger, f.eks. introduktion af nye tabeller, kun for at oprette relationer. Du kan finde flere oplysninger under [Mange til mange-relationer i Power BI Desktop](desktop-many-to-many-relationships.md).
 
 * **Lagringstilstand**: Du kan nu angive, hvilke visualiseringer der kræver en forespørgsel til back end-datakilder. Visuelle elementer, der ikke kræver en forespørgsel, importeres, også selvom de er baseret på DirectQuery. Denne funktion hjælper med at forbedre ydeevnen og reducere belastningen af back-end. Tidligere ville selv enkle visuelle elementer, f.eks. udsnit, starte forespørgsler, der blev sendt til back end-kilderne. Lagringstilstand er beskrevet nærmere i denne artikel.
 
@@ -127,13 +127,13 @@ Følgende forespørgsel er interessant, fordi den kombinerer begge kolonner. Den
 ![Script til diagnosticering af lagringstilstand](media/desktop-storage-mode/storage-mode_08.png)
 
 > [!NOTE]
-> Denne funktionsmåde er anderledes end [mange til mange-relationer i Power BI Desktop (prøveversion)](desktop-many-to-many-relationships.md), når cachelagrede og ikke-cachelagrede tabeller kombineres.
+> Denne funktionsmåde er anderledes end [mange til mange-relationer i Power BI Desktop](desktop-many-to-many-relationships.md), når cachelagrede og ikke-cachelagrede tabeller kombineres.
 
 ## <a name="caches-should-be-kept-in-sync"></a>Cacher bør holdes synkroniserede
 
 Forespørgslerne fra det forrige afsnit viser, at **Dual**-tabeller nogle gange sendes til cachen og andre gange ikke. Dette kan resultere i, at forskellige værdier returneres, hvis cachen er forældet. Udførelse af forespørgsler vil ikke forsøge at maskere dataproblemer ved f.eks. at filtrere DirectQuery-resultater for at matche cachelagrede værdier. Det er dit ansvar at kende dine dataflows, og du bør designe i henhold hertil. Der er fastlagt teknikker til at håndtere sådanne tilfælde ved kilden, hvis det er nødvendigt.
 
-*Dual*-lagringsmodellen er en ydeevneoptimering. Den må kun bruges på måder, der ikke ødelægger muligheden for at opfylde forretningsbehov. Hvis du vil opnå en alternativ funktionalitet, kan du overveje at bruge de teknikker, der er beskrevet i artiklen [Mange til mange-relationer i Power BI Desktop (prøveversion)](desktop-many-to-many-relationships.md).
+*Dual*-lagringsmodellen er en ydeevneoptimering. Den må kun bruges på måder, der ikke ødelægger muligheden for at opfylde forretningsbehov. Hvis du vil opnå en alternativ funktionalitet, kan du overveje at bruge de teknikker, der er beskrevet i artiklen [Mange til mange-relationer i Power BI Desktop](desktop-many-to-many-relationships.md).
 
 ## <a name="data-view"></a>Datavisning
 Hvis mindst én tabel i datasættet har angivet lagringstilstanden som enten **Import** eller **Dual**, vises fanen **Datavisning**.
@@ -162,7 +162,7 @@ De eksisterende begrænsningerne ved at bruge DirectQuery gælder stadig, når d
 ## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger om sammensatte modeller og DirectQuery i følgende artikler:
-* [Sammensatte modeller i Power BI Desktop (prøveversion)](desktop-composite-models.md)
-* [Mange til mange-relationer i Power BI Desktop (prøveversion)](desktop-many-to-many-relationships.md)
+* [Sammensatte modeller i Power BI Desktop](desktop-composite-models.md)
+* [Mange til mange-relationer i Power BI Desktop](desktop-many-to-many-relationships.md)
 * [Brug DirectQuery i Power BI](desktop-directquery-about.md)
 * [Understøttede datakilder i forbindelse med DirectQuery i Power BI](desktop-directquery-data-sources.md)

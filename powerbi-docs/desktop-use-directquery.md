@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 02/28/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: a5aaa50aff2302742d6845c9cb16b0fc36ea2677
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: bf41700b367b7c3c2302eeec9c03b93fa294ed3f
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276766"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555670"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Brug DirectQuery i Power BI Desktop
 Når du opretter forbindelse til din datakilde i **Power BI Desktop**, er det altid muligt at importere en kopi af dataene til **Power BI Desktop**. For nogle datakilder findes der en anden mulighed: du kan oprette direkte forbindelse til datakilden med **DirectQuery**.
@@ -41,19 +41,19 @@ I artiklen [Power BI og DirectQuery](desktop-directquery-about.md) kan du læse 
 ## <a name="benefits-of-using-directquery"></a>Fordele ved at bruge DirectQuery
 Der er nogle få fordele ved at bruge **DirectQuery**:
 
-* Med **DirectQuery** kan du bygge visualiseringer over meget store datasæt, hvor det ellers ikke vil være muligt først at importere alle dataene.
+* Med **DirectQuery** kan du bygge visualiseringer over meget store datasæt, hvor det ellers ikke vil være muligt først at importere alle dataene
 * De underliggende dataændringer kan kræve, at dataene opdateres, og for nogle rapporter kan det kræve store dataoverførsler at vise aktuelle data, hvilket vil gøre det uhensigtsmæssigt at importere dataene igen. I modsætning til det vil de rapporter, der bruger **DirectQuery**, altid vise aktuelle data.
 * Grænsen for datasæt på 1 GB gælder *ikke* for **DirectQuery**
 
 ## <a name="limitations-of-directquery"></a>Begrænsninger i DirectQuery
 Der er i øjeblikket nogle få begrænsninger ved at bruge **DirectQuery**:
 
-* Alle tabeller skal komme fra den samme database.
+* Alle tabeller skal komme fra en enkelt database, medmindre de er baseret på [sammensatte modeller](desktop-composite-models.md)
 * Hvis forespørgslen i **Forespørgselseditor** er for kompliceret, vil der opstå en fejl. Når du skal løse fejlen, skal du enten slette det fejlbehæftede trin i **Forespørgselseditor**, eller du skal i stedet *importere* dataene i stedet for at bruge **DirectQuery**. For flerdimensionelle datakilder som SAP Business Warehouse er der ingen **Forespørgselseditor**
 * Filtrering af relationer er begrænset til en enkelt retning i stedet for begge retninger (selvom det er muligt at aktivere krydsfiltrering i begge retninger for **DirectQuery** som en prøveversion). For flerdimensionelle datakilder som SAP Business Warehouse er der ikke defineret nogen relationer i modellen
 * Funktionerne for tidsintelligens findes ikke i **DirectQuery**. Eksempelvis understøttes særlig behandling af datokolonner (år, kvartal, måned, dag osv.) ikke i **DirectQuery**-tilstand.
 * Som standard er de begrænsninger, der gælder for DAX-udtryk, tilladt i målinger. Du kan se flere oplysninger efter denne punktopstilling.
-* Der er en grænse på 1 million rækker for returnering af data, når du bruger **DirectQuery**. Dette påvirker ikke de aggregeringer eller beregninger, der bruges til at oprette det datasæt, der returneres ved hjælp af **DirectQuery**. Det påvirker kun de returnerede rækker. Du kan for eksempel aggregere 10 millioner rækker med en forespørgsel, der kører på datakilden, og præcist returnere resultaterne for den aggregering til Power BI ved hjælp af **DirectQuery**, så længe der returneres mindre end 1 million rækker til Power BI. Hvis der ville blive returneret mere end 1 million rækker fra **DirectQuery**, vil Power BI returnere en fejl.
+* Der er en grænse på én million rækker for returnering af data, når du bruger **DirectQuery**. Denne grænse påvirker ikke de aggregeringer eller beregninger, der bruges til at oprette det datasæt, der returneres ved hjælp af **DirectQuery**. Det påvirker kun de returnerede rækker. Du kan for eksempel aggregere 10 millioner rækker med en forespørgsel, der kører på datakilden, og præcist returnere resultaterne for den aggregering til Power BI ved hjælp af **DirectQuery**, så længe der returneres mindre end 1 million rækker til Power BI. Hvis der ville blive returneret mere end 1 million rækker fra **DirectQuery**, vil Power BI returnere en fejl.
 
 For at sikre at de forespørgsler, der sendes til den underliggende datakilde, har en acceptabel ydeevne, pålægges der som standard begrænsninger på målingerne. Erfarne brugere kan vælge at omgå denne begrænsning ved at vælge **Filer > Indstillinger > Indstillinger**, derefter **DirectQuery** og vælge indstillingen *Tillad ubegrænsede målinger i DirectQuery-tilstand*. Når du har valgt denne indstilling, kan du bruge ethvert DAX-udtryk, der er gyldigt for en måling. Brugerne skal dog være opmærksomme på, at nogle udtryk, der har en god ydeevne, når dataene importeres, kan være langsomme i backend-kilden, når der bruges DirectQuery-tilstand.
 
