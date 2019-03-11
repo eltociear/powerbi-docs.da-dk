@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/10/2018
+ms.date: 03/05/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: f6a17a3e4033d5a97c5ae7744fef955aeed16eeb
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
+ms.openlocfilehash: c1ca797efa2e40bf74384a1e9f2362acd26c6f8f
+ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57327728"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57555653"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Brug SAML (Security Assertion Markup Language) til enkeltlogon (SSO) fra Power BI til datakilder i det lokale miljø
 
@@ -38,6 +38,8 @@ For at bruge SAML skal du først generere et certifikat for SAML-identitetsudbyd
     ```
 
 1. I SAP HANA Studio skal du højreklikke på din SAP HANA-server og derefter navigere til **Sikkerhed** > **Åbn sikkerhedskonsollen** > **SAML-identitetsudbyder** > **Kryptografisk OpenSSL-bibliotek**.
+
+    Det er også muligt at bruge det SAP-kryptografiske bibliotek (også kendt som CommonCryptoLib eller sapcrypto) i stedet for OpenSSL til at udføre disse konfigurationstrin. Se den officielle SAP-dokumentation for at få flere oplysninger.
 
 1. Vælg **Importér**, naviger til samltest.crt, og importér den.
 
@@ -121,6 +123,37 @@ Følg til sidst disse trin for at føje certifikataftrykket til konfigurationen 
 Nu kan du bruge siden **Administrer gateway** i Power BI til at konfigurere datakilden og aktivere SSO under **Avancerede indstillinger**. Du kan derefter publicere rapporter og datasæt med binding til den pågældende datakilde.
 
 ![Avancerede indstillinger](media/service-gateway-sso-saml/advanced-settings.png)
+
+## <a name="troubleshooting"></a>Fejlfinding
+
+Når du har konfigureret SSO, får du muligvis vist følgende fejl på Power BI-portalen: "De angivne legitimationsoplysninger kan ikke bruges til SapHana-kilden." Denne fejl tyder på, at SAML legitimationsoplysningerne blev afvist af SAP HANA.
+
+Godkendelsessporinger indeholder detaljerede oplysninger om fejlfinding af problemer med legitimationsoplysninger på SAP HANA. Følg disse trin for at konfigurere sporing for din SAP HANA-server.
+
+1. Slå godkendelsessporing til på SAP HANA-serveren ved at køre følgende forespørgsel.
+
+    ```
+    ALTER SYSTEM ALTER CONFIGURATION ('indexserver.ini', 'SYSTEM') set ('trace', 'authentication') = 'debug' with reconfigure 
+    ```
+
+1. Genskab problemet.
+
+1. Åbn administrationskonsollen i HANA Studio, og gå til fanen **Diagnosticeringsfiler**.
+
+1. Åbn den nyeste indexserversporing, og søg efter SAMLAuthenticator.cpp.
+
+    Du bør finde en detaljeret fejlmeddelelse, der angiver rodårsagen, som i følgende eksempel.
+
+    ```
+    [3957]{-1}[-1/-1] 2018-09-11 21:40:23.815797 d Authentication   SAMLAuthenticator.cpp(00091) : Element '{urn:oasis:names:tc:SAML:2.0:assertion}Assertion', attribute 'ID': '123123123123123' is not a valid value of the atomic type 'xs:ID'.
+    [3957]{-1}[-1/-1] 2018-09-11 21:40:23.815914 i Authentication   SAMLAuthenticator.cpp(00403) : No valid SAML Assertion or SAML Protocol detected
+    ```
+
+1. Når fejlfindingen er fuldført, kan du slå godkendelsessporingen fra ved at køre følgende forespørgsel.
+
+    ```
+    ALTER SYSTEM ALTER CONFIGURATION ('indexserver.ini', 'SYSTEM') UNSET ('trace', 'authentication');
+    ```
 
 ## <a name="next-steps"></a>Næste trin
 
