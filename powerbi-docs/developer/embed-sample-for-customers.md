@@ -10,16 +10,18 @@ ms.service: powerbi
 ms.component: powerbi-developer
 ms.custom: seodec18
 ms.date: 02/05/2019
-ms.openlocfilehash: adeb3f09e52d039937ba3cf54afb72f8ed1287f3
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
+ms.openlocfilehash: 3e8a4f443a6784020467ef1cf3a918ef5410b209
+ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249154"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57757409"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Selvstudium: Integrer Power BI-indhold i en app til dine kunder
 
 Med **Power BI Embedded i Azure** kan du integrere rapporter, dashboards eller felter i et program ved hjælp af funktionen "appen ejer data". **App owns data** handler om at have et program, der bruger Power BI som sin integrerede analyseplatform. Som **ISV-udvikler** kan du oprette Power BI-indhold, der viser rapporter, dashboards eller felter i et program, som er fuldt integreret og interaktivt, uden at brugerne skal have en Power BI-licens. I dette selvstudium kan du se, hvordan du integrerer en rapport i et program ved hjælp af Power BI .NET SDK med Power BI JavaScript-API'en, når du bruger **Power BI Embedded i Azure** for dine kunder.
+
+![Integrer Power BI-rapport](media/embed-sample-for-customers/embed-sample-for-customers-035.png)
 
 I dette selvstudium lærer du, hvordan du kan:
 > [!div class="checklist"]

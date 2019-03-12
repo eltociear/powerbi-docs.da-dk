@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 6a1834c88fbd7077f49560bc56b545539917ed3e
-ms.sourcegitcommit: 086b610cdfd1df5de61abb47acf97589df128a4c
+ms.openlocfilehash: f22cac734d98e98cd17a915c09d6705e2cad121a
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57196430"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580053"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisationsindholdspakker: Kopiér, opdater og få adgang
 
@@ -25,13 +25,13 @@ Oprettelse af indholdspakker adskiller sig fra deling af dashboards eller samarb
 
 > [!NOTE]
 > Du kan ikke oprette eller installere organisationsindholdspakker i prøveversionen af nye arbejdsområdeoplevelser. Nu er det et godt tidspunkt at opgradere dine indholdspakker til apps, hvis du ikke er startet endnu. Få [mere at vide om den nye arbejdsområdeoplevelse](service-create-the-new-workspaces.md).
-> 
+>
 
 ## <a name="create-a-copy-of-an-organizational-content-pack"></a>Opret en kopi af en organisationsindholdspakke
 Opret din egen kopi af indholdspakken, som ikke kan ses af andre.
 
 1. Klik på de tre prikker (...) ud for indholdspakkens dashboard > Opret en kopi.
-   
+
     ![](media/service-organizational-content-pack-copy-refresh-access/power-bi-create-copy-organizational-content-pack.png)
 2. Vælg **Gem**.  
 
@@ -41,7 +41,7 @@ Nu har du en kopi, du kan foretage ændringer i. Ingen andre kan se de ændringe
 > Tidligere blev der vist et nyt datasæt på listen over indhold i arbejdsområdet, hver gang du installerede en indholdspakke eller oprettede en kopieret pakke. I forbindelse med en nylig opdatering blev oplevelsen forenklet, så der kun vises ét element ved hjælp det nye ikon for refereret datasæt:
 >
 > ![database med linkikon](media/service-organizational-content-pack-copy-refresh-access/power-bi-dataset-reference-icon.png)
-> 
+>
 
 ## <a name="help--i-can-no-longer-access-the-content-pack"></a>Hjælp!  Jeg har ikke længere adgang til indholdspakken
 Der kan være flere årsager til dette:
@@ -51,7 +51,7 @@ Der kan være flere årsager til dette:
 * **Ændringer af sikkerhedsindstillinger**: Hvis dashboardet og rapporter opretter forbindelse til SSAS-datakilder i det lokale miljø, og der foretages ændringer af sikkerhedsindstillingerne, kan dine tilladelser til denne server blive tilbagekaldt.
 
 ## <a name="how-are-organizational-content-packs-refreshed"></a>Hvordan opdateres organisationsindholdspakker?
-Når indholdspakken oprettes, nedarves opdateringsindstillingerne med datasættet.  Når du opretter en kopi af indholdspakken, bevarer den nye version linket til det oprindelige datasæt og dets tidsplan for opdatering. 
+Når indholdspakken oprettes, nedarves opdateringsindstillingerne med datasættet.  Når du opretter en kopi af indholdspakken, bevarer den nye version linket til det oprindelige datasæt og dets tidsplan for opdatering.
 
 Se [Administrer, opdater og slet organisationsindholdspakker](service-organizational-content-pack-manage-update-delete.md).
 
@@ -59,4 +59,3 @@ Se [Administrer, opdater og slet organisationsindholdspakker](service-organizati
 * [Introduktion til organisationsindholdspakker](service-organizational-content-pack-introduction.md)
 * [Opret en gruppe i Power BI](service-create-distribute-apps.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-
