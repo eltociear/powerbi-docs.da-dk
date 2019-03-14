@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: a4180f211a2b31a8610d410a74e0cca25dcdad15
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.openlocfilehash: ca9a2eff3d05ec10c83dde90eabb779370ca5e96
+ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014639"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57757340"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -192,6 +192,13 @@ På følgende billede ses menuen **Filer** for en rapport, når indstillingen **
 
 ![Udskriv rapport](media/service-admin-portal/powerbi-admin-print-report.png)
 
+### <a name="allow-external-guest-users-to-edit-and-manage-content-in-the-organization"></a>Tillad, at eksterne brugere kan redigere og administrere indhold i organisationen
+Azure B2B-brugere kan redigere og administrere indhold i organisationen [Få mere at vide](service-admin-azure-ad-b2b.md)
+
+På følgende billede vises indstillingen Tillad, at eksterne brugere kan redigere og administrere indhold i organisationen.
+
+![Tillad, at eksterne brugere kan redigere og administrere indhold i organisationen](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
+
 ## <a name="content-pack-and-app-settings"></a>Indholdspakke og appindstillinger
 
 ### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Publicer indholdspakker og apps til hele organisationen
@@ -243,10 +250,45 @@ Brugerne i organisationen kan interagere med og dele brugerdefinerede visualiser
 > [!NOTE]
 > Denne indstilling kan anvendes på hele organisationen, eller den kan begrænses til specifikke grupper.
 
+
+Fra marts 2019 understøtter Power BI Desktop brugen af **Gruppepolitik** til at deaktivere brugen af brugerdefinerede visualiseringer på tværs af de computere, der er installeret i en organisation.
+
+<table>
+<tr><th>Attribut</th><th>Værdi</th>
+</tr>
+<td>key</td>
+    <td>Software\Policies\Microsoft\Power BI Desktop\</td>
+<tr>
+<td>valueName</td>
+<td>EnableCustomVisuals</td>
+</tr>
+</table>
+
+En værdi på 1 (decimal) aktiverer brugen af brugerdefinerede visualiseringer i Power BI (dette er standarden).
+
+En værdi på 0 (decimal) deaktiverer brugen af brugerdefinerede visualiseringer i Power BI.
+
 ### <a name="allow-only-certified-visuals"></a>Tillad kun certificerede visualiseringer
 
 Brugere i organisationen, som er tildelt tilladelser til at tilføje og bruge brugerdefinerede visualiseringer med indstillingen "Tilføj og brug brugerdefinerede visualiseringer", kan kun bruge [certificerede brugerdefinerede visualiseringer](https://go.microsoft.com/fwlink/?linkid=2002010) (de ikke-certificerede visualiseringer blokeres, og der vises en fejlmeddelelse, når de bruges). 
 
+
+Fra marts 2019 understøtter Power BI Desktop brugen af **Gruppepolitik** til at deaktivere brugen af ikke-certificerede brugerdefinerede visualiseringer på tværs af de computere, der er installeret i en organisation.
+
+<table>
+<tr><th>Attribut</th><th>Værdi</th>
+</tr>
+<td>key</td>
+    <td>Software\Policies\Microsoft\Power BI Desktop\</td>
+<tr>
+<td>valueName</td>
+<td>EnableUncertifiedVisuals</td>
+</tr>
+</table>
+
+En værdi på 1 (decimal) aktiverer brugen af ikke-certificerede brugerdefinerede visualiseringer i Power BI (dette er standarden).
+
+En værdi på 0 (decimal) deaktiverer brugen af ikke-certificerede brugerdefinerede visualiseringer i Power BI (denne indstilling aktiverer kun brugen af [certificerede brugerdefinerede visualiseringer](https://go.microsoft.com/fwlink/?linkid=2002010)).
 
 ## <a name="r-visuals-settings"></a>R visuals – indstillinger
 

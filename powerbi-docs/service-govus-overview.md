@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 03/06/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: a48ad26b9da5d5dba9fa04ab74301da7e1265d0b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 4b017ae02ee88df47e426466c212ed6d87a2f92a
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292025"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580030"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til kunder i den amerikanske stat
 **Power BI-tjenesten** har en tilgængelig version for kunder i den amerikanske stat som en del af abonnementer for **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til kunder i den amerikanske stat og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten**.
@@ -54,7 +54,7 @@ IP-pladser er tilgængelige i den offentlige cloud, men for government cloud-tje
 ## <a name="limitations-of-power-bi-us-government"></a>Begrænsninger for Power BI US Government
 Nogle af de funktioner, der er tilgængelige i den kommercielle version af **Power BI-tjenesten**, er *ikke* tilgængelige i **Power BI-tjenesten** til kunder i den amerikanske stat. Power BI-teamet arbejder aktivt på at gøre disse funktioner tilgængelige for kunder i den amerikanske stat og vil opdatere denne artikel, når disse funktioner bliver tilgængelige.
 
-* **Integrer i SharePoint Online** – Det er ikke muligt at integrere indhold i SharePoint Online ved hjælp af Power BI-webdelen.
+* **Integrer i SharePoint Online** – Det er ikke muligt at integrere indhold i SharePoint Online ved hjælp af Power BI-webdelen. Secure embed fungerer dog ved hjælp af webdelen [*Embed*](https://docs.microsoft.com/power-bi/service-embed-secure). Du skal føje *app.powerbigov.us* til listen over undtagelser ved at følge vejledningen i artiklen [Tillad eller begræns muligheden for at integrere indhold på SharePoint-sider](https://support.office.com/article/allow-or-restrict-the-ability-to-embed-content-on-sharepoint-pages-e7baf83f-09d0-4bd1-9058-4aa483ee137b).
 * **Power BI US Government** er kun tilgængelig som en **Pro**-licens. Henvisninger til Power BI-licenser (gratis) på en administrationsportal (eller som brugere) kører i en kommerciel cloud til Power BI-tjenesten.
 * **Overvågning** – overvågning er nu tilgængeligt via portalen Office 365 Security and Compliance fra juni 2018.
 * **Power BI-indhold i Cortana** - Power BI-resultater vises ikke i søgeresultater i Cortana, der omfatter resultaterne for dit Power BI-indhold (dashboards, rapporter og apps) samt resultater, der viser Cortana-optimerede rapportsider for bestemte nøgleord.

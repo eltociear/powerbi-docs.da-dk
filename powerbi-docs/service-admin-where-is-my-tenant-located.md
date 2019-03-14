@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/31/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e71844110eb3452cbcb3b224bbca9db57475367e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 08536d412796b1516b689ed728af0126330edf93
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282166"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580126"
 ---
 # <a name="where-is-my-power-bi-tenant-located"></a>Hvor er min Power BI-lejer placeret?
 
@@ -29,7 +29,7 @@ Følg disse trin, for at finde det område din lejer befinder sig i.
 
 1. Vælg hjælp (**?**) i den øverste menu i Power BI, og vælg derefter **Om Power BI**.
 
-1. Søg efter værdien ud for **Dine data er lagret i**. Dette er det område, din lejer er placeret i.
+1. Søg efter værdien ud for **Dine data er lagret i**. Dette er det område, din lejer er placeret i. Det er også det område, hvor dine data er gemt, medmindre du bruger dedikerede kapaciteter i forskellige områder til dine arbejdsområder.
 
     ![Dataområde](media/service-admin-where-is-my-tenant-located/power-bi-data-region.png)
 

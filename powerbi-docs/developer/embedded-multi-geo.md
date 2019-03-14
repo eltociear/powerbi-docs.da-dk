@@ -1,5 +1,5 @@
 ---
-title: Multi-Geo-understøttelse af Power BI Embedded (prøveversion)
+title: Multi-Geo-understøttelse af Power BI Embedded
 description: Få mere at vide om, hvordan du kan udrulle indhold til datacentre i andre områder end lokalområdet for Power BI Embedded.
 author: markingmyname
 ms.author: maghan
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 25627709af2faa78fd30b28cffba21d1442e0d3f
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: d139f96b6aec2db23b2eabc54c3fa326e4762766
+ms.sourcegitcommit: bd1f0178fd9df152f9e9be57da415829f42116e9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762415"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57572019"
 ---
-# <a name="multi-geo-support-for-power-bi-embedded-preview"></a>Multi-Geo-understøttelse af Power BI Embedded (prøveversion)
+# <a name="multi-geo-support-for-power-bi-embedded"></a>Multi-Geo-understøttelse af Power BI Embedded
 
-**Multi-Geo-understøttelse af Power BI Embedded (prøveversion)** betyder, at ISV'er og organisationer, der bygger programmer ved at bruge Power BI Embedded til at integrere analyser i deres programmer, nu kan udrulle deres data i forskellige områder over hele verden.
+**Multi-Geo-understøttelse af Power BI Embedded** betyder, at ISV'er og organisationer, der bygger programmer ved at bruge Power BI Embedded til at integrere analyser i deres apps, nu kan udrulle deres data i forskellige områder over hele verden.
 
 Nu kan kunder, der bruger **Power BI Embedded**, konfigurere en **A-kapacitet** ved hjælp af indstillinger for **Multi-Geo** baseret på de samme funktioner og begrænsninger, som [Power BI Premium understøtter ved hjælp af Multi-Geo](../service-admin-premium-Multi-Geo.md).
 
@@ -66,7 +66,7 @@ Det er vigtigt at bemærke, at hvis du beslutter at slette en kapacitet uden at 
 
 Vi har foretaget nogle ændringer af eksisterende API'er for at understøtte administration af kapaciteter med Multi-Geo via API:
 
-1. **[Hent kapaciteter](https://docs.microsoft.com/rest/api/power-bi/capacities/getcapacities)** –API'en returnerer en liste over kapaciteter med adgang til brugeren. Svaret omfatter nu endnu en egenskab, der kaldes "område", som angiver placeringen af kapaciteten.
+1. **[Hent kapaciteter](https://docs.microsoft.com/rest/api/power-bi/capacities/getcapacities)** –API'en returnerer en liste over kapaciteter med adgang til brugeren. Svaret omfatter nu endnu en egenskab, der kaldes "region", som angiver placeringen af kapaciteten.
 
 2. **[Tildel til kapacitet](https://docs.microsoft.com/rest/api/power-bi/capacities)** – API'en gør det muligt at tildele et givent arbejdsområde til en kapacitet. Denne handling tillader ikke, at du tildeler arbejdsområder til en kapacitet uden for dit lokale område eller flytter arbejdsområder mellem kapaciteter i forskellige områder. For at udføre denne handling skal brugeren eller [tjenesteprincipalen](embed-service-principal.md) stadig have administratortilladelser til arbejdsområdet og administrator- eller tildelingstilladelser til målkapaciteten.
 

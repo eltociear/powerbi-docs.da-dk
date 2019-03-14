@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/09/2019
+ms.date: 03/07/2019
 ms.author: maggies
-ms.openlocfilehash: 76ea3250c3032c253b87f5f2b0713460a805787e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 5af870bfd3cb6f9c925dd3d6268d0a1cb54df09b
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295790"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580007"
 ---
 # <a name="whitepapers-for-power-bi"></a>Whitepapers til Power BI
 
@@ -28,8 +28,8 @@ Whitepapers gør det muligt at udforske Power BI-emner på et mere detaljeret ni
 | [Planlæg kapacitet for integreret analyse med Power BI Premium](https://aka.ms/pbiewhitepaper) |I dette whitepaper er der en vejledning til appudvikleren/ISV'en om at fastslå den mest relevante kapacitet for virksomheden. | Oktober 2017 |
 | [Planlægning af en Power BI Enterprise-udrulning](https://go.microsoft.com/fwlink/?linkid=2057861) |I denne tekniske hvidbog beskrives, hvilke overvejelser der skal gøres for at få en velfungerende og sikker Power BI-udrulning i organisationen. | Juli 2018 |
 | [Vejledning i kapacitetsplanlægning i Power BI-rapportserver](report-server/capacity-planning.md) |Denne rapports primære sigte er at give en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af adskillelige gennemførsler af belastningstest ved forskellige arbejdsbelastninger i forhold til en rapportserver. | Marts 2018 |
-| [Sikkerhed](service-admin-power-bi-security.md) |Giver en detaljeret beskrivelse af sikkerheden i Power BI. | Juli 2018 |
-| [Distribuer Power BI-indhold til eksterne gæstebrugere vha. Azure Active Directory B2B](https://aka.ms/powerbi-b2b-whitepaper)|I denne rapport forklares det, hvordan indhold kan distribueres til brugere uden for organisationen vha. integrationen af Azure Active Directory Business-to-business (AAD B2B).| Marts 2018 |
+| [Sikkerhed](service-admin-power-bi-security.md) |Giver en detaljeret beskrivelse af sikkerheden i Power BI. | Marts 2019 |
+| [Distribuer Power BI-indhold til eksterne gæstebrugere vha. Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md)|I denne rapport forklares det, hvordan indhold kan distribueres til brugere uden for organisationen vha. integrationen af Azure Active Directory Business-to-business (AAD B2B).| Marts 2018 |
 | [Avanceret analyse med Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Beskriver de avancerede analysefunktioner i Power BI, herunder forudsigende analyser, brugerdefinerede visualiseringer, R-integration og dataanalyseudtryk. | Februar 2017 |
 | [Bedste praksis for design af rapporter og visualiseringer](visuals/power-bi-visualization-best-practices.md) |Dette whitepaper indeholder bedste praksis for design af rapporter i Power BI. | Juni 2018 |
 | [Tovejsfiltrering](desktop-bidirectional-filtering.md) |Forklarer tovejskrydsfiltrering i Power BI Desktop. Dette whitepaper omhandler også SQL Server Analysis Services 2016, da begge programmer har samme funktionsmåde. | Juli 2018 |

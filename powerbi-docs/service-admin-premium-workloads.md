@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 03/11/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 5b9bec67fef672d219b11bf3b3750959e72410b6
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
+ms.openlocfilehash: 0baab138ee98d2ec96bc9f47e6e727525a57ed3e
+ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226060"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57757240"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurer arbejdsbelastninger i en Premium-kapacitet
 
@@ -23,7 +23,7 @@ I denne artikel beskrives, hvordan du aktiverer og konfigurerer arbejdsbelastnin
 
 ## <a name="configure-workloads"></a>Konfigurer arbejdsbelastninger
 
-Du kan aktivere og konfigurere yderligere arbejdsbelastninger for [Dataflow](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium) og [Sideinddelte rapporter](paginated-reports-save-to-power-bi-service.md). Standardværdier for hukommelse for disse arbejdsbelastninger er baseret på de kapacitetsnoder, der er tilgængelige for din SKU. Det maksimale antal hukommelsesindstillinger kan ikke akkumuleres. Hukommelse op til den angivne maksimale værdi tildeles dynamisk for dataflow, men tildeles statisk for sideinddelte rapporter. 
+Du kan aktivere og konfigurere yderligere arbejdsbelastninger for AI, [Dataflow](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium) og [Sideinddelte rapporter](paginated-reports-save-to-power-bi-service.md). Standardværdier for hukommelse for disse arbejdsbelastninger er baseret på de kapacitetsnoder, der er tilgængelige for din SKU. Det maksimale antal hukommelsesindstillinger kan ikke akkumuleres. Hukommelse op til den angivne maksimale værdi tildeles dynamisk for AI og dataflow, men tildeles statisk for sideinddelte rapporter. 
 
 ### <a name="to-configure-workloads-in-the-power-bi-admin-portal"></a>Sådan konfigurerer du arbejdsbelastninger på Power BI-administrationsportalen
 

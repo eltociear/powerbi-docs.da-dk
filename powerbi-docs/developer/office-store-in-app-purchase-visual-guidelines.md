@@ -1,30 +1,34 @@
 ---
-title: Yderligere køb kan være påkrævet – retningslinjer for Power BI-visualiseringer
+title: Retningslinjer for Power BI-visualiseringer
 description: Få mere at vide om, hvordan du kan publicere din brugerdefinerede visualisering i AppSource, så andre kan finde, købe og bruge den.
-author: markingmyname
-ms.author: maghan
+author: sranins
+ms.author: rasala
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 11/26/2018
-ms.openlocfilehash: 92d4320026164e523297cbe48ee87ce33d9ab2f7
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.date: 03/10/2019
+ms.openlocfilehash: 02ce5146a154583d784de8030a0b0ec84740fcb3
+ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826577"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "57757294"
 ---
-# <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Retningslinjer for Power BI-visualiseringer med ekstra køb
+# <a name="guidelines-for-power-bi-visuals"></a>Retningslinjer for Power BI-visualiseringer
 
-Indtil for nylig accepterede Marketplace (AppSource) kun gratis Power BI-visualiseringer. Denne politik er blevet ændret, så du kan nu også indsende visualiseringer til AppSource, som har prismærket "Yderligere køb kan være påkrævet". 
+## <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Retningslinjer for Power BI-visualiseringer med ekstra køb
+
+Indtil for nylig accepterede Marketplace (AppSource) kun gratis Power BI-visualiseringer. Denne politik er blevet ændret (december 2018), så du nu også kan indsende visualiseringer til AppSource, som har prismærket "Yderligere køb kan være påkrævet". 
 
 Visualiseringer med "Yderligere køb kan være påkrævet" er ligesom tilføjelsesprogrammer med apptilkøb i Office Store. Udviklere kan også indsende disse visualiseringer til certificering, efter AppSource-teamet har godkendt dem, og de har kontrolleret, at de overholder certificeringskravene. Du kan finde flere oplysninger om kravene i [Certificerede brugerdefinerede visualiseringer](../power-bi-custom-visuals-certified.md).
 
 > [!NOTE]
-> * En visualisering kan kun certificeres, hvis den ikke har adgang til eksterne tjenester eller ressourcer.
-> * Alle gratis visualiseringer bør bevare de samme gratis funktioner, som blev tilbudt tidligere. Du kan tilføje valgfrie avancerede betalte funktioner udover de eksisterende gratis funktioner. Vi anbefaler, at du indsender visualiseringer med apptilkøb sammen med de avancerede funktioner som nye visualiseringer i stedet for at opdatere de eksisterende gratis.
+> En visualisering kan kun certificeres, hvis den ikke har adgang til eksterne tjenester eller ressourcer.
+
+>[!IMPORTANT]  
+> Hvis du opdaterer din visualisering fra gratis til "Yderligere køb kan være påkrævet", skal brugerne modtage det samme niveau af gratis funktionalitet som før opdateringen. Du kan tilføje valgfrie avancerede betalte funktioner udover de eksisterende gratis funktioner. Vi anbefaler, at du indsender visualiseringer med apptilkøb sammen med de avancerede funktioner som nye visualiseringer i stedet for at opdatere de eksisterende gratis.
 
 
 ## <a name="what-changed-in-the-submission-process"></a>Hvad er blevet ændret i indsendelsesprocessen?
@@ -33,19 +37,19 @@ Udviklere uploader deres IAP-visualiseringer til AppSource via Seller Dashboard,
 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>Hvad er en Power BI-visualisering med IAP-funktioner?
 
-En visualisering med apptilkøb er en gratis visualisering med gratis funktioner. Den indeholder også nogle avancerede funktioner, som man muligvis skal betale for, før de kan anvendes. I beskrivelsen af visualiseringen skal udviklerne give brugerne besked om, hvilke funktioner der kræver yderligere køb, før de kan anvendes. I øjeblikket leverer Microsoft ikke oprindelige API'er til understøttelse af apptilkøb og tilføjelsesprogrammer.
+En visualisering med apptilkøb er en **gratis** visualisering, der tilbyder **gratis funktioner**. Den indeholder også nogle avancerede funktioner, som man muligvis skal betale for, før de kan anvendes. I beskrivelsen af visualiseringen skal udviklerne give brugerne besked om, hvilke funktioner der kræver yderligere køb, før de kan anvendes. I øjeblikket leverer Microsoft ikke oprindelige API'er til understøttelse af apptilkøb og tilføjelsesprogrammer.
 
 Udviklere kan bruge et hvilket som helst betalingssystem fra tredjepart til disse køb. Du kan finde flere oplysninger i [vores politik for Store](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
 
 > [!NOTE]
-> Vandmærker er ikke tilladt i de gratis funktioner. Udviklere kan vise et pop op-vindue eller et vandmærke, hvis de avancerede betalingsfunktioner bruges uden en gyldig licens.  
+> Vandmærker er ikke tilladt i de gratis funktioner eller gratis visualiseringer. Vandmærker må kun bruges på de betalte funktioner, der bruges uden en gyldig licens. Vi anbefaler at vise et pop op-vindue med alle de licensrelaterede oplysninger, hvis de avancerede betalte funktioner bruges uden en gyldig licens.  
 
 ## <a name="logo-guidelines"></a>Retningslinjer for logo
 
 I dette afsnit beskrives specifikationerne for tilføjelse af logoer og logotyper i visualiseringer.
 
-> [!NOTE]
-> Logoer er kun tilladt i redigeringstilstand. Logoer kan ikke vises i visningstilstand.
+> [!IMPORTANT]
+> Logoer er kun tilladt i **redigeringstilstand**. Logoer **må ikke** vises i visningstilstand.
 
 ![Definitioner](media/office-store-in-app-purchase-visual-guidelines/definitions.png)
 

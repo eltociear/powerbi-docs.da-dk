@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 8415e731fd8749397b9604277f9f37f126b5413f
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
+ms.openlocfilehash: 957c6d5fe8797f1b03eaab3a54846e7110b302fb
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892757"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580283"
 ---
 # <a name="power-bi-security-whitepaper"></a>Whitepaper om sikkerhed i Power BI
 
@@ -34,7 +34,7 @@ ms.locfileid: "56892757"
 
 **Power BI** er en onlinesoftwaretjeneste (_SaaS_ eller Software as a Service) fra Microsoft, der gør det nemt og hurtigt for dig at oprette dashboards, rapporter, datasæt og visualiseringer i forbindelse med selvbetjenings-business intelligence. Med Power BI kan du oprette forbindelse til mange forskellige datakilder, kombinere og forme data fra disse forbindelser og derefter oprette rapporter og dashboards, som kan deles med andre.
 
-Power BI-tjenesten er underlagt [servicebetingelserne for Microsoft Online](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) og [erklæringen om beskyttelse af personlige oplysninger for Microsoft Enterprise](http://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Hvis du vil vide mere om placeringen af databehandling, skal du læse vilkår for placering af databehandling i servicebetingelserne for Microsoft Online. Hvis du vil have flere oplysninger om overholdelse af angivne standarder, skal du gå til [Microsoft Trust Center](https://www.microsoft.com/trustcenter), som er den primære ressource for Power BI. Power BI-teamet arbejder hårdt på at give kunderne de nyeste innovationer og produktivitet. Power BI er i øjeblikket på niveau D i [strukturen for overholdelse i Office 365](http://go.microsoft.com/fwlink/p/?LinkID=618494).
+Power BI-tjenesten er underlagt [servicebetingelserne for Microsoft Online](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) og [erklæringen om beskyttelse af personlige oplysninger for Microsoft Enterprise](http://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Hvis du vil have mere at vide om placeringen af databehandling, skal du læse vilkår for placering af databehandling i servicebetingelserne for Microsoft Online. Hvis du vil have flere oplysninger om overholdelse af angivne standarder, skal du gå til [Microsoft Trust Center](https://www.microsoft.com/trustcenter), som er den primære ressource for Power BI. Power BI-teamet arbejder hårdt på at give kunderne de nyeste innovationer og produktivitet. Power BI er i øjeblikket på niveau D i [strukturen for overholdelse i Office 365](http://go.microsoft.com/fwlink/p/?LinkID=618494).
 
 I denne artikel beskrives sikkerhed i Power BI ved at forklare Power BI-arkitekturen og derefter forklare, hvordan brugerne godkender mod Power BI, så der etableres dataforbindelser. Derefter beskrives, hvordan Power BI gemmer og flytter data via tjenesten. Det sidste afsnit er dedikeret til spørgsmål i forbindelse med sikkerhed, og der gives svar for hvert enkelt spørgsmål.
 
@@ -42,7 +42,7 @@ I denne artikel beskrives sikkerhed i Power BI ved at forklare Power BI-arkitekt
 
 **Power BI**-tjenesten er baseret på **Azure**, som er Microsofts [platform til cloudcomputing](http://azure.microsoft.com/overview/what-is-azure/). Power BI er i øjeblikket udrullet i mange datacentre overalt i verden. Der er mange aktive udrulninger tilgængelige for kunder i de områder, der betjenes af disse datacentre, og et lige antal så stort antal passive udrulninger, der fungerer som sikkerhedskopier for hver aktiv udrulning.
 
-Hver udrulning af Power BI består af to klynger – en Web Front End (**WFE**) og en **Back End**. Disse to klynger vises på følgende billede og udgør baggrunden for resten af denne artikel. 
+Hver installation af Power BI består af to klynger – en Web Front End (**WFE**) og en **Back-End**. Disse to klynger vises på følgende billede og udgør baggrunden for resten af denne artikel. 
 
 ![WFE og Back End](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
@@ -60,7 +60,7 @@ Den WFE-klynge, der er tættest på brugeren, administrerer logon- og godkendels
 
 ### <a name="the-power-bi-back-end-cluster"></a>Back End-klyngen for Power BI
 
-**Back End**-klyngen styrer, hvordan godkendte klienter interagerer med Power BI-tjenesten. **Back End**-klyngen styrer visualiseringer, brugerdashboards, datasæt, rapporter, lagring af data, dataforbindelser, dataopdatering og andre aspekter af at interagere med Power BI-tjenesten.
+**Back-End**-klyngen styrer, hvordan godkendte klienter interagerer med Power BI-tjenesten. **Back-End**-klyngen styrer visualiseringer, brugerdashboards, datasæt, rapporter, lagring af data, dataforbindelser, dataopdatering og andre aspekter, når du interagerer med Power BI-tjenesten.
 
 ![Back End-klyngen](media/whitepaper-powerbi-security/powerbi-security-whitepaper_03.png)
 
@@ -98,7 +98,7 @@ En lejer indeholder brugerne i en virksomhed og oplysninger om dem – deres adg
 
 Der oprettes en Power BI-lejer i det datacenter, der anses for at være tættest på de oplysninger om land (eller område) og stat, som er angivet for lejeren i Azure Active Directory, og som blev angivet, da Office 365 eller Power BI-tjenesten oprindeligt blev klargjort. Power BI-lejeren flytter i dag ikke fra den pågældende datacenterplacering.
 
-### <a name="multiple-geographies-multi-geo---preview"></a>Flere geografiske områder (multi-geo) – prøveversion
+### <a name="multiple-geographies-multi-geo"></a>Flere geografiske områder (multi-geo)
 
 På baggrund af deres forretningsbehov kræver nogle organisationer tilstedeværelse af Power BI i flere lande eller områder. En virksomhed kan f.eks. have sin Power BI-lejer i USA, men kan også gøre forretninger i andre geografiske områder, f.eks. Australien, og have brug for, at Power BI-tjenesterne og dataene forbliver i det eksterne område.  Fra og med anden halvdel af 2018 har organisationer, som har deres lejer i ét område, også kunnet få adgang til Power BI-ressourcer i et andet område, når det er klargjort korrekt. For nemheds skyld kaldes denne funktion **multi-geo** i hele dette dokument.
 
@@ -121,48 +121,15 @@ Følgende links indeholder yderligere oplysninger om Azure-datacentre.
 - [Azure-områder](http://azure.microsoft.com/regions/) – oplysninger om Azures globale tilstedeværelse og placeringer
 - [Azure-tjenester efter område](http://azure.microsoft.com/regions/#services) – en komplet liste over Azure-tjenester (både infrastrukturtjenester og platformstjenester) fra Microsoft i hvert område.
 
-Power BI-tjenesten er i øjeblikket tilgængelig i følgende områder, der betjenes af følgende primære datacentre:
+I øjeblikket er Power BI-tjenesten tilgængelig i bestemte områder, der betjenes af datacentre, som beskrevet i [Microsoft Trust Center] ((https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). Følgende link viser et kort over placeringen af Power BI-datacentrene. Du kan placere markøren over et område for at se de datacentre, der er placeret i det pågældende område:
 
-- USA
-  - Det østlige USA
-  - Det østlige USA 2
-  - Det nordcentrale USA
-  - Det sydcentrale USA
-  - Det vestlige USA
-  - Det vestlige USA 2
-- Canada
-  - Det centrale Canada
-  - Det østlige Canada
-- Storbritannien
-  - Det vestlige Storbritannien
-  - Det sydlige Storbritannien
-- Brasilien
-  - Det sydlige Brasilien
-- Tyskland
-  - Det centrale Tyskland
-  - Det nordøstlige Tyskland
-- Europa
-  - Det nordlige Europa
-  - Det vestlige Europa
-- Japan
-  - Det østlige Japan
-  - Det vestlige Japan
-- Indien
-  - Det centrale Indien
-  - Det sydlige Indien
-  - Det vestlige Indien
-- Asien og Stillehavsområdet
-  - Det østlige Asien
-  - Det sydøstlige Asien
-- Australien
-  - Det østlige Australien
-  - Det sydøstlige Australien
+* [Power BI-datacentre](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)
 
 Microsoft leverer også datacentre til nationale clouds. Du kan finde flere oplysninger om tilgængeligheden af Power BI-tjenesten i nationale clouds i [Power BI i nationale clouds](https://powerbi.microsoft.com/clouds/).
 
 Du kan finde flere oplysninger om, hvor dine data gemmes, og hvordan de bruges, under [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Forpligtelser i forbindelse med placeringen af kundedata som inaktive data er angivet under **Vilkår for databehandling** i [Vilkår for Microsoft Online Services](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
 
-## <a name="user-authentication"></a>Godkendelse af brugeren
+## <a name="user-authentication"></a>Brugergodkendelse
 
 Godkendelse af brugeren til Power BI-tjenesten består af en række anmodninger, svar og omdirigeringer mellem brugerens browser og Power BI-tjenesten eller de Azure-tjenester, som bruges af Power BI. I sekvensen beskrives processen for godkendelse af brugeren i Power BI. Du kan finde flere oplysninger om mulighederne for en organisations modeller til godkendelse af brugeren (logonmodeller) under [Sådan vælges en logonmodel til Office 365](https://blogs.office.com/2014/05/13/choosing-a-sign-in-model-for-office-365/).
 
@@ -182,7 +149,7 @@ Sekvensen til godkendelse af brugeren til Power BI-tjenesten sker, som beskrevet
 
 2. Browseren sender en cookie, der blev hentet ved vellykket logon, til Microsoft Online Services, som kontrolleres af **ASP.NET-tjenesten** i **WFE-klyngen**.
 
-3. WFE-klyngen kontakter tjenesten **Azure Active Directory** (**AAD**) for at godkende brugerens abonnement på Power BI-tjenesten og hente et AAD-sikkerhedstoken. Når AAD returnerer vellykket godkendelse af brugeren og returnerer et AAD-sikkerhedstoken, konsulterer WFE-klyngen **Global Service for Power BI******, som bevarer en liste over lejere og deres placeringer for Back End-klyngerne i Power BI og bestemmer, hvilke klynger i Power BI-tjenesten der indeholder brugerens lejer. WFE-klyngen dirigerer derefter brugeren til den Power BI-klynge, hvor lejeren er placeret, og returnerer en samling af elementer til brugerens browser:
+3. WFE-klyngen kontakter tjenesten **Azure Active Directory** (**AAD**) for at godkende brugerens abonnement på Power BI-tjenesten og hente et AAD-sikkerhedstoken. Når AAD returnerer godkendelse af brugeren og returnerer et AAD-sikkerhedstoken, konsulterer WFE-klyngen **Global Service for Power BI******, som bevarer en liste over lejere og deres placeringer for Back End-klyngerne i Power BI og bestemmer, hvilke klynger i Power BI-tjenesten der indeholder brugerens lejer. WFE-klyngen dirigerer derefter brugeren til den Power BI-klynge, hvor lejeren er placeret, og returnerer en samling af elementer til brugerens browser:
 
 
       - **AAD-sikkerhedstoken**
@@ -200,11 +167,23 @@ Når disse elementer er fuldført, indleder browseren kontakt med den angivne Ba
 
 I Power BI-tjenesten er data enten _inaktive_ (data, der er tilgængelige for en Power BI-bruger, men som der i øjeblikket ikke reageres på) eller _i gang_ (for eksempel: kørte forespørgsler, dataforbindelser og modeller, der i øjeblikket reageres på, data og/eller modeller, der uploades til Power BI-tjenesten, og andre handlinger, som brugere eller Power BI-tjenesten kan udføre på data, der aktivt tilgås eller opdateres). Data, der er i gang, kaldes for _data i gang_. Inaktive data i Power BI krypteres. Data, som er under overførsel, hvilket betyder data, der sendes eller modtages af Power BI-tjenesten, krypteres også.
 
-Power BI-tjenesten administrerer også data forskelligt, afhængigt af om der er adgang til dataene via **DirectQuery**, eller om der _ikke_ er adgang via DirectQuery. Så der er to kategorier af brugerdata for Power BI: data, der er adgang til via DirectQuery, og data, der ikke er adgang til via DirectQuery.
+Power BI-tjenesten administrerer også data forskelligt, afhængigt af om der er adgang til dataene via **DirectQuery** eller via import. Så der er to kategorier af brugerdata for Power BI: data, der er adgang til via DirectQuery, og data, der ikke er adgang til via DirectQuery.
 
 **DirectQuery** er en forespørgsel, hvortil en Power BI-brugers forespørgsel er blevet oversat fra Microsofts DAX-sprog (Data Analysis Expressions) – hvilket er det sprog, der bruges af Power BI og andre Microsoft-produkter til at oprette forespørgsler på – til datakildens oprindelige datasprog (f.eks. T-SQL eller andre oprindelig databasesprog). De data, der er knyttet til DirectQuery, gemmes kun som reference, hvilket betyder, at kildedata ikke gemmes i Power BI, når DirectQuery ikke er aktiv (undtagen visualiseringsdata, der bruges til at vise dashboards og rapporter, som beskrevet i afsnittet _Data i gang (dataflytning)_ herunder). Referencer til DirectQuery-data gemmes i stedet, hvilket giver adgang til disse data, når DirectQuery køres. DirectQuery indeholder alle nødvendige oplysninger for at udføre forespørgslen, herunder forbindelsesstrengen og de legitimationsoplysninger, der bruges til at få adgang til datakilderne, hvilket giver DirectQuery mulighed for at oprette forbindelse til de inkluderede datakilder med henblik på automatisk opdatering. Med DirectQuery inkorporeres oplysninger om datamodellen i DirectQuery.
 
-En forespørgsel, der **ikke** bruger DirectQuery, består af en samling af DAX-forespørgsler, som _ikke_ er direkte oversat til det oprindelige sprog af en hvilken som helst underliggende datakilde. Forespørgsler, der ikke er DirectQuery, inkluderer ikke legitimationsoplysninger til de underliggende data, og de underliggende data indlæses i Power BI-tjenesten, medmindre det er data i det lokale miljø, som også tilgås via en [Power BI Gateway](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise/). Hvis det er tilfældet, gemmes der kun referencer til data i det lokale miljø i forespørgslen.
+En forespørgsel om et importdatasæt består af en samling DAX-forespørgsler, der _ikke_ er direkte oversat til det oprindelige sprog af en hvilken som helst underliggende datakilde. Importforespørgsler inkluderer ikke legitimationsoplysninger for de underliggende data, og de underliggende data indlæses i Power BI-tjenesten, medmindre det er data i det lokale miljø, som også tilgås via en [Power BI Gateway](service-gateway-onprem.md). Hvis det er tilfældet, gemmes der kun referencer til data i det lokale miljø i forespørgslen.
+
+I følgende tabel beskrives Power BI-data, der er baseret på den type forespørgsel, der bruges. Et **X** angiver tilstedeværelsen af Power BI-data, når du bruger den tilknyttede forespørgselstype.
+
+
+|  |Importér  |DirectQuery  |Live Connect  |
+|---------|---------|---------|---------|
+|Skema     |     X    |    X     |         |
+|Rækkedata     |    X     |         |         |
+|Cachelagring af data for visuelle elementer     |    X     |     X    |    X     |
+
+
+
 
 Forskellen mellem DirectQuery og andre forespørgsler bestemmer, hvordan inaktive data håndteres i Power BI-tjenesten, og om selve forespørgslen krypteres. I følgende afsnit beskrives inaktive data og dataflytning, og kryptering, placering og processer til håndtering af data forklares.
 
@@ -361,7 +340,7 @@ Hvis Ralph vil have adgang til det delte dashboard eller den delte rapport, vil 
 
 I forbindelse med Power BI og ExpressRoute kan du oprette en privat netværksforbindelse fra din organisation til Power BI (eller bruge en ISP's colocationsfacilitet), der omgår internettet og sørger for bedre sikkerhed for dine følsomme Power BI-data og -forbindelser.
 
-ExpressRoute er en Azure-tjeneste, der giver dig mulighed for at oprette private forbindelser mellem Azure-datacentre (hvor Power BI er placeret) og infrastrukturen i det lokale miljø eller oprette private forbindelser mellem Azure-datacentre og dit colocationsmiljø. Du kan finde yderligere oplysninger i artiklen [Power BI og ExpressRoute](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/).
+ExpressRoute er en Azure-tjeneste, der giver dig mulighed for at oprette private forbindelser mellem Azure-datacentre (hvor Power BI er placeret) og infrastrukturen i det lokale miljø eller oprette private forbindelser mellem Azure-datacentre og dit colocationsmiljø. Du kan finde yderligere oplysninger i artiklen [Power BI og ExpressRoute](service-admin-power-bi-expressroute.md).
 
 ## <a name="power-bi-mobile"></a>Power BI – Mobil
 
@@ -370,7 +349,7 @@ Power BI – Mobil er en samling af apps, der er udviklet til de tre primære mo
 * Enhedskommunikation
 * Appen og dataene på enheden
 
-I forbindelse med **enhedskommunikation** kommunikerer alle apps til Power BI – Mobil med Power BI-tjenesten og bruger de samme forbindelses- og godkendelsessekvenser, som bruges af browsere, hvilket er detaljeret beskrevet tidligere i denne whitepaper. IOS- og Android-apps til Power BI – Mobil åbner en browsersession i selve appen, og Windows Mobile-appen åbner en mægler for at etablere kommunikationskanalen med Power BI.
+I forbindelse med **enhedskommunikation** kommunikerer alle apps til Power BI – Mobil med Power BI-tjenesten og bruger de samme forbindelses- og godkendelsessekvenser, som bruges af browsere, hvilket er beskrevet i detaljer tidligere i dette whitepaper. IOS- og Android-apps til Power BI – Mobil åbner en browsersession i selve appen, og Windows Mobile-appen åbner en mægler for at etablere kommunikationskanalen med Power BI.
 
 I følgende tabel vises understøttelse af certifikatbaseret godkendelse for Power BI – Mobil på baggrund af mobilenhedens platform:
 
@@ -391,7 +370,7 @@ Power BI-**appen på enheden** gemmer data på enheden, der gør brug af appen:
 
 Datacachen fra Power BI – Mobil forbliver på enheden i to uger eller indtil: appen fjernes, brugeren logger af Power BI – Mobil, eller brugeren ikke kan logge på (f.eks. hvis et token udløber, eller adgangskoden ændres). Datacachen omfatter dashboards og rapporter, der tidligere blev tilgået fra appen Power BI – Mobil.
 
-Apps til Power BI – Mobil bruger ikke mapper på enheden. Du kan [få mere at vide om offlinedata i apps til Power BI – Mobil](https://powerbi.microsoft.com/documentation/powerbi-mobile-offline-android/).
+Apps til Power BI – Mobil bruger ikke mapper på enheden. 
 
 Alle tre platforme, som Power BI – Mobil er tilgængelig til, understøtter Microsoft Intune, der er en softwaretjeneste, som muliggør administration af mobilenheder og apps. Når Intune er aktiveret og konfigureret, krypteres data på mobilenheden, og selve Power BI-programmet kan ikke installeres på et SD-kort. [Få mere at vide om Microsoft Intune](http://www.microsoft.com/cloud-platform/microsoft-intune).
 
@@ -403,7 +382,7 @@ Følgende spørgsmål er almindelige spørgsmål og svar om sikkerhed i Power BI
 
 * **Power BI-legitimationsoplysninger og legitimationsoplysninger til domænet:** Brugere logger på Power BI ved hjælp af en mailadresse. Når en bruger forsøger at oprette forbindelse til en dataressource, bruger Power BI mailadressen til Power BI-logon som legitimationsoplysninger. I forbindelse med ressourcer, der er forbundet med et domæne (enten i det lokale miljø eller cloudbaseret), matches logonmailen med _brugerens hovednavn_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx) – User Principal Name) af katalogtjenesten for at afgøre, om der er tilstrækkelige legitimationsoplysningerne til at tillade adgang. For organisationer, der bruger arbejdsbaserede mailadresser til at logge på Power BI (den samme mailadresse, de bruger til at logge på arbejdsressourcer, f.eks. _david@contoso.com_), kan tilknytningen ske uden problemer. For organisationer, der ikke bruger arbejdsbaserede mailadresser (f.eks. _david@contoso.onmicrosoft.com_), skal der være tilknyttet et katalog, før der tillades adgang til ressourcer i det lokale miljø med legitimationsoplysningerne til Power BI-logon.
 
-* **SQL Server Analysis Services og Power BI:** For organisationer, der bruger SQL Server Analysis Services i det lokale miljø, tilbydes Power BI-datagatewayen i det lokale miljø (som er en **gateway**, der blev refereret til i forrige afsnit).  Power BI-datagatewayen i det lokale miljø kan gennemtvinge sikkerhed på rolleniveau for datakilder. Du kan finde flere oplysninger om sikkerhed på rolleniveau under **Godkendelse af brugeren til datakilder** tidligere i dette dokument. Du kan også læse en dybdegående artikel om [Power BI Gateway](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise/).
+* **SQL Server Analysis Services og Power BI:** For organisationer, der bruger SQL Server Analysis Services i det lokale miljø, tilbydes Power BI-datagatewayen i det lokale miljø (som er en **gateway**, der blev refereret til i forrige afsnit).  Power BI-datagatewayen i det lokale miljø kan gennemtvinge sikkerhed på rolleniveau for datakilder. Du kan finde flere oplysninger om sikkerhed på rolleniveau under **Godkendelse af brugeren til datakilder** tidligere i dette dokument. Du kan også læse en dybdegående artikel om [Power BI Gateway](service-gateway-manage.md).
 
   Organisationer kan desuden bruge Kerberos til **enkeltlogon** (SSO) og problemfrit oprette forbindelse fra Power BI til datakilder i det lokale miljø såsom SQL Server, SAP HANA og Teradata. Du kan finde flere oplysninger og se de specifikke konfigurationskrav i [**Brug Kerberos til SSO fra Power BI til datakilder i det lokale miljø**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
@@ -443,7 +422,7 @@ Følgende spørgsmål er almindelige spørgsmål og svar om sikkerhed i Power BI
 
 **Hvilke porte bruges af datagatewayen i det lokale miljø og den personlige gateway? Skal nogle domænenavne være tilladt med henblik på at oprette forbindelse?**
 
-* Et detaljeret svar på dette spørgsmål er tilgængeligt under følgende link: [https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise)
+* Du kan få et detaljeret svar på dette spørgsmål ved at følge dette link: [Power BI Gateway](service-gateway-manage.md)
 
 **Når der arbejdes med datagatewayen i det lokale miljø, hvordan bruges genoprettelsesnøglerne så, og hvor gemmes de? Hvad med sikker administration af legitimationsoplysninger?**
 
@@ -462,7 +441,7 @@ Følgende spørgsmål er almindelige spørgsmål og svar om sikkerhed i Power BI
 
   - **AMQP 1.0 – TCP + TLS**: Denne protokol kræver, at portene 443, 5671-5672 og 9350-9354 er åbne for udgående kommunikation. Denne protokol foretrækkes, da den har lavere kommunikationsspild.
 
-  - **HTTPS – WebSockets via HTTPS + TLS**: Denne protokol bruger kun port 443. WebSocket startes af en enkelt HTTP CONNECT-meddelelse. Når kanalen er etableret, er kommunikationen i bund og grund TCP + TLS. Du kan tvinge gatewayen til at bruge denne protokol ved at ændre en indstilling, som beskrevet i [artiklen Gateway i det lokale miljø](https://powerbi.microsoft.com/documentation/powerbi-gateway-onprem/).
+  - **HTTPS – WebSockets via HTTPS + TLS**: Denne protokol bruger kun port 443. WebSocket startes af en enkelt HTTP CONNECT-meddelelse. Når kanalen er etableret, er kommunikationen i bund og grund TCP + TLS. Du kan tvinge gatewayen til at bruge denne protokol ved at ændre en indstilling, som beskrevet i [artiklen Gateway i det lokale miljø](service-gateway-manage.md).
 
 **Hvilke rolle spiller Azure CDN i Power BI?**
 
@@ -476,7 +455,7 @@ Følgende spørgsmål er almindelige spørgsmål og svar om sikkerhed i Power BI
 
 **Er der andre Power BI-visualiseringer, som sender oplysninger uden for kundens netværk?**
 
-* Ja. Bing Kort og ESRI-visualiseringer overfører data ud af Power BI-tjenesten for visualiseringer, der bruger disse tjenester. Du kan finde flere oplysninger og detaljerede beskrivelser af trafik ud af Power BI-lejeren under [**Power BI og ExpressRoute**](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/).
+* Ja. Bing Kort og ESRI-visualiseringer overfører data ud af Power BI-tjenesten for visualiseringer, der bruger disse tjenester. Du kan finde flere oplysninger og detaljerede beskrivelser af trafik ud af Power BI-lejeren under [**Power BI og ExpressRoute**](service-admin-power-bi-expressroute.md).
 
 **Hvad med nationale data? Kan vi klargøre lejere i datacentre, der er placeret i bestemte geografiske områder, for at sikre, at dataene ikke forlader landets grænser?**
 
@@ -504,11 +483,11 @@ Du kan finde flere oplysninger om Power BI i følgende ressourcer.
 
 - [Grupper i Power BI](https://support.powerbi.com/knowledgebase/articles/654247)
 - [Introduktion til Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
-- [Power BI Gateway](https://powerbi.microsoft.com/documentation/powerbi-gateway-enterprise/)
+- [Power BI Gateway](service-gateway-manage.md)
 - [REST API til Power BI – oversigt](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Reference til Power BI-API](https://msdn.microsoft.com/library/mt147898.aspx)
-- [Datagateway i det lokale miljø](https://powerbi.microsoft.com/documentation/powerbi-gateway-onprem/)
-- [Power BI og ExpressRoute](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
+- [Datagateway i det lokale miljø](service-gateway-manage.md)
+- [Power BI og ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Nationale clouds i Power BI](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
-- [Brug Kerberos til SSO fra Power BI til datakilder i det lokale miljø](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data)
+- [Brug Kerberos til SSO fra Power BI til datakilder i det lokale miljø](service-gateway-sso-overview.md)

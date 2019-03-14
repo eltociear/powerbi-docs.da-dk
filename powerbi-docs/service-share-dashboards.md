@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a4f10253619393ffd9807b1e33730a4dd37a47ff
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: f96e5235aba6f90e6f80286ebfb409004ccd5052
+ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277382"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57580237"
 ---
 # <a name="share-your-power-bi-dashboards-and-reports-with-coworkers-and-others"></a>Del dine Power BI-dashboards og -rapporter med kolleger og andre
 *Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Med Power BI får du også [adskillige andre måder at samarbejde om og distribuere dashboards og rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
@@ -98,13 +98,15 @@ Når du deler med personer uden for din organisation, modtager de en mail med et
 
 Når de har logget på, kan de se det delte dashboard eller den delte rapport i et separat browservindue uden den venstre navigationsrude og ikke på deres normale Power BI-portal. De skal angive et bogmærke for linket for at få adgang til dette dashboard eller denne rapport fremover.
 
-De kan ikke redigere indhold i dette dashboard eller rapporten. De kan interagere med diagrammerne og skifte filtre eller udsnit i rapporten, men de kan ikke gemme ændringer.
+De kan ikke redigere indhold i dette dashboard eller rapporten. De kan interagere med diagrammerne og skifte filtre eller udsnit i rapporten, men de kan ikke gemme ændringer. 
 
 Det er kun dine direkte modtagere, der kan se det delte dashboard eller den delte rapport. Hvis du f.eks. har sendt mailen til Vicki@contoso.com, kan kun Vicki se dashboardet. Ingen andre kan se dette dashboard, selvom de har linket, og Vicki skal bruge den samme mailadresse til at få adgang til dashboardet. Hun kan heller ikke få adgang til dashboardet, hvis hun tilmelder sig med en anden mailadresse.
 
 Personer uden for din organisation kan slet ikke se nogen data, hvis sikkerhed på rolle- eller rækkeniveau er implementeret på Analysis Services-tabelmodeller i det lokale miljø.
 
 Hvis du sender et link fra en Power BI-mobilapp til personer uden for din organisation, åbnes dashboardet i en browser, når de klikker på linket, og ikke i Power BI-mobilappen.
+
+Hvis gæstebrugere har fået adgang via [Tillad, at eksterne gæstebrugere kan redigere og administrere indhold i organisationen](service-admin-portal.md#export-and-sharing-settings), gælder standardforbrugsoplevelsen ikke for dem. [Få mere at vide](service-admin-azure-ad-b2b.md)
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 Ting, du skal være opmærksom på angående deling af dashboards og rapporter:
