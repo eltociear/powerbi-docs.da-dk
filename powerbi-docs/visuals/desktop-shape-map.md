@@ -335,7 +335,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 | mx-bcn |B.C. |MX-BCN |Baja California |Baja California |BN |
 | mx-agu |Ags. |MX-AGU |Aguascalientes |Aguascalientes |AG |
 
-### <a name="netherlands-provinces"></a>Holland: Provinser
+### <a name="netherlands-provinces"></a>Nederlandene: Provinser
 
 | `id` | `iso` | `name` | `name-en` |
 | --- | --- | --- | --- |
