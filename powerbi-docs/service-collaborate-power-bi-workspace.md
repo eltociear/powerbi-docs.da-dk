@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 145ef2da33e0d596f03f75c76aaa99e90f58c4c2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: c1e8e449c2db7e751d719f8fca38b194a9a0042a
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288514"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174562"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Samarbejd i dit Power BI-apparbejdsområde
 Power BI-apparbejdsområder er fantastiske steder, hvor du kan samarbejde med dine kollegaer på dashboards, rapporter og datasæt om at oprette *apps*. Samarbejde slutter ikke med arbejdsområder i Power BI. Office 365 tilbyder andre gruppetjenester som f.eks. deling af filer på OneDrive for Business, samtaler i Exchange, delte kalendere og opgaver osv. Læs mere om [grupper i Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
@@ -49,7 +49,7 @@ Samarbejde i Office 365 starter fra apparbejdsområdet i Power BI.
 2. I denne menu kan du samarbejde med din gruppe på nogle få måder: 
    
    * Hav en [gruppesamtale i Office 365](service-collaborate-power-bi-workspace.md#have-a-group-conversation-in-office-365).
-   * [Planlæg en begivenhed](service-collaborate-power-bi-workspace.md#schedule-an-event-on-the-group-workspace-calendar) på kalenderen i appens gruppearbejdsområde.
+   * [Planlæg en begivenhed](service-collaborate-power-bi-workspace.md#schedule-an-event-on-the-apps-group-workspace-calendar) på kalenderen i appens gruppearbejdsområde.
    
    Den første gang du går til din apps gruppearbejdsområde i Office 365, kan det tage noget tid. Giv det 15 til 30 minutter, og opdater derefter din browser.
 

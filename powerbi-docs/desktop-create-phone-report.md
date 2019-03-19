@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8808391d0794ec4a487526cc5bbe4216fe0f75a6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 760f469ff3b146671292efd70a3c6854aec98b5a
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275312"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174585"
 ---
 # <a name="create-reports-optimized-for-the-power-bi-mobile-apps"></a>Opret rapporter optimeret til Power BI-mobilapps
-Du kan forbedre oplevelsen ved at få vist dine rapporter i mobilapps på en telefon eller tablet. Opret et stående layout af en rapport specifikt til telefoner og tablets. I Power BI Desktop og i Power BI-tjenesten tilpasser du rapporten ved at omarrangere og tilpasse størrelsen af visualiseringer i et stående layout for at sikre en optimal oplevelse. Du behøver ikke at inkludere alle visualiseringer. Du kan også oprette [*dynamiske* visuals](#optimize-a-visual-for-any-size) og [dynamiske udsnitsværktøjer](#enhance-slicers-to-to-work-well-in-phone-reports), der tilpasses flot til visning på en telefon. Hvis du også føjer filtre til din rapport, vises disse filtre automatisk i den optimerede rapport. Læserne af din rapport kan se dem og filtrere rapporten med dem.
+Du kan forbedre oplevelsen ved at få vist dine rapporter i mobilapps på en telefon eller tablet. Opret et stående layout af en rapport specifikt til telefoner og tablets. I Power BI Desktop og i Power BI-tjenesten tilpasser du rapporten ved at omarrangere og tilpasse størrelsen af visualiseringer i et stående layout for at sikre en optimal oplevelse. Du behøver ikke at inkludere alle visualiseringer. Du kan også oprette [*dynamiske* visuals](#optimize-a-visual-for-any-size) og [dynamiske udsnitsværktøjer](#enhance-slicers-to-work-well-in-phone-reports), der tilpasses flot til visning på en telefon. Hvis du også føjer filtre til din rapport, vises disse filtre automatisk i den optimerede rapport. Læserne af din rapport kan se dem og filtrere rapporten med dem.
 
 ![Optimeret rapport på en telefon](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 

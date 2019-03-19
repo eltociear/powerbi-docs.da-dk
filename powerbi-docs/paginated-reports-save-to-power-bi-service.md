@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: d1d1f3c34483737e49129176c833be8384ade999
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 58fc7a6b8ebc5519c1c4bb1835758ca94ba225d2
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324709"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174539"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Publicer en sideinddelt rapport i Power BI-tjenesten (eksempelvisning)
 
 I denne artikel lærer du om publicering af en sideinddelt rapport i Power BI-tjenesten ved at uploade den fra din lokale computer. Du kan uploade sideinddelte rapporter til Mit arbejdsområde eller andre arbejdsområder, så længe arbejdsområdet er i en Premium-kapacitet. Se efter rombeikonet ![Rombeikon for Power BI Premium-kapacitet](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) ud for navnet på arbejdsområdet. 
 
-Hvis din datakilde til rapporten er i det lokale miljø, skal du [oprette en gateway](#create-a-gateway-to-an-on-premises-data-source), når du har uploadet rapporten.
+Hvis din datakilde til rapporten er i det lokale miljø, skal du [oprette en gateway](#create-a-gateway), når du har uploadet rapporten.
 
 ## <a name="add-a-workspace-to-a-premium-capacity"></a>Føj et arbejdsområde til en Premium-kapacitet
 

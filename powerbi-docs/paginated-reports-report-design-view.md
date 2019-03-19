@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.openlocfilehash: 2ee381cae5bd0c0ed1e6a8cab1cd33361a05814f
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 7b84b967a9e6228258027302fc2e4ad4df5b0073
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324804"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174769"
 ---
 # <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Navigering i visningen Rapportdesign for sideinddelte rapporter (eksempelvisning)
 
@@ -22,12 +22,12 @@ Visningen Rapportdesign i Report Builder er designområdet, hvor du kan oprette 
 
 ![Visningen Rapportdesign i Report Builder](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 
-1. [Ruden Rapportdata](#report-data-pane) 
-2. [Rapportdesignområde](#report-design-surface)  
-3. [Ruden Parametre](#parameters-pane) 
-4. [Ruden Egenskaber](#properties-pane) 
-5. [Ruden Gruppering](#grouping-pane) 
-6. [Statuslinje for aktuel rapport](#current-report-status-bar)  
+1. [Ruden Rapportdata](#1-report-data-pane) 
+2. [Rapportdesignområde](#2-report-design-surface)  
+3. [Ruden Parametre](#3-parameters-pane) 
+4. [Ruden Egenskaber](#4-properties-pane) 
+5. [Ruden Gruppering](#5-grouping-pane) 
+6. [Statuslinje for aktuel rapport](#6-current-report-status-bar)  
   
 ## <a name="1-report-data-pane"></a>1 Ruden Rapportdata  
  I ruden Rapportdata kan du definere de rapportdata og rapportressourcer, du skal bruge til en rapport, inden du designer dit rapportlayout. Du kan f.eks. føje datakilder, datasæt, beregnede felter, rapportparametre og billeder til ruden Rapportdata.  
