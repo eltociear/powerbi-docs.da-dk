@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/24/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 451b5967dd648d982132282d2debbd4c4f86780f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 051609c59e155cb6d5c2a982483a7e6d2d91a665
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54294005"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964680"
 ---
 # <a name="publish-apps-with-dashboards-and-reports-in-power-bi"></a>Publicer apps med dashboards og rapporter i Power BI
 
@@ -121,6 +121,11 @@ Her er nogle ting, du skal huske på, når du pusher apps til slutbrugerne:
 
 ## <a name="unpublish-an-app"></a>Annuller publicering af en app
 Et medlem af et apparbejdsområde kan annullerer publicering af appen.
+
+>[!NOTE]
+>Når du annullerer publiceringen af en app, mister app-brugere deres tilpasninger. Det betyder, at alle personlige bogmærker, kommentarer eller abonnementer, der er knyttet til indholdet i appen, går tabt. Annuller kun publicering af en app, hvis du har brug at fjerne den.
+> 
+> 
 
 * I et apparbejdsområde skal du vælge de tre prikker (**...** ) i øverste højre hjørne > **Annuller publicering af app**.
   

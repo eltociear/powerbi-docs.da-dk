@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: fb2b169650360a7dc6a4afaee1c43abb733255c9
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 9fbd47dcefb2daf8d86c6932b5c70617b8bf7ac9
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430987"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964703"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
@@ -22,13 +22,19 @@ Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når
 
 ## <a name="upcoming-webinars"></a>Kommende webinarer
 
-Der er ikke planlagt webinarer endnu. Tjek igen senere for at se flere kommende arrangementer.
+**Opnåelse af en win-win-situation for producenter og forhandlere af forbrugsvarer**
+<br>ved Liz McCreesh
+<br>[Tilmeld dig nu](https://info.microsoft.com/Achieving-a-Win-Win-for-Consumer-Packaged-Goods-Manufacturers-and-Retailers-registration.html)
 
 >[Kommende webinarer fra Power BI-community'et](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
 ## <a name="featured-webinars"></a>Udvalgte webinarer
 
 Kom i gang med disse populære webinarer, når det passer dig
+
+**Power BI og fremtiden for moderne BI og virksomheds-BI**
+<br>ved Arun Ulag og Amir Netz
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-The-Future-of-Modern-and-Enterprise-BI-video.html?LCID=EN-US)
 
 **Introduktion til Power BI**
 <br>ved Miguel Martinez
@@ -46,13 +52,9 @@ Kom i gang med disse populære webinarer, når det passer dig
 <br>ved Cory Hrncirik og Miguel Martinez
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
 
-**Power BI: Udfør analyse korrekt**
-<br>af Gohul Shanmugalingam
-<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
-
-**Gør dine data i Power BI visuelle:  Grundlæggende diagramtyper, og hvordan du bruger dem.**
-<br>ved Miranda Li
-<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
+**Optimer dine programmer ved hjælp af Power BI JavaScript-API’en**
+<br>ved Nimrod Shalit
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-PBI-JavaScript-API-video.html)
 
 **Power BI, Excel og Office 365: Optimer dine virksomhedsdata**
 <br>ved Olaf Hubel og Miguel Martinez
@@ -62,10 +64,6 @@ Kom i gang med disse populære webinarer, når det passer dig
 <br>ved Miranda Li
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-powerbi-tips-for-better-visualization-design.html?Is=Website)
 
-**Den samlede økonomiske indvirkning af Microsoft Flow og PowerApps**
-<br>ved Jonathan Lipsitz og Enrique Plaza Garcia
-<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
-
 >[Gennemse biblioteket med on-demand-webinarer om Power BI fra vores communityeksperter](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/bd-p/VideoTipsTricks?filter=webinars&featured=yes&Is=Website)
 
 ## <a name="on-demand-webinars"></a>On-demand-webinarer
@@ -74,9 +72,25 @@ Se optagne sessioner når som helst
 
 ### <a name="getting-started"></a>Introduktion
 
+**Automatiser daglige forretningsprocesser med Power BI, PowerApps og Microsoft Flow**
+<br>ved Wim Coorevits og Enrique Plaza Garcia
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
+
+**Power BI: Udfør analyse korrekt**
+<br>af Gohul Shanmugalingam
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/CA-PowerBI-WBNR-FY19-11Nov-08-PowerBIAnalyticsDoneRight-MCW0008690_01Registration-ForminBody.html?Is=Website)
+
+**Gør dine data i Power BI visuelle:  Grundlæggende diagramtyper, og hvordan du bruger dem.**
+<br>ved Miranda Li
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Make-your-Power-BI-Data-Visual-Registration.html?Is=Website)
+
 **Sådan designer du visuelt imponerende Power BI-rapporter**
 <br>ved Charles Sterling
 <br>[Se nu](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/5-3-17-Webinar-How-to-Design-Visually-Stunning-Power-BI-Reports/m-p/168204?Is=Website)
+
+**Den samlede økonomiske indvirkning af Microsoft Flow og PowerApps**
+<br>ved Jonathan Lipsitz og Enrique Plaza Garcia
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/The-TEI-of-PowerApps-and-Microsoft-Flow-OnDemandRegistration.html?Is=Website)
 
 **Bedre sammen: Fem fordele Excel-brugere får ved at bruge Power BI**
 <br>ved Carlos Otero og Miguel Martinez
@@ -100,6 +114,10 @@ Se optagne sessioner når som helst
 
 ### <a name="partners"></a>Partnere ###
 
+**Omdan kundedata til en detailhandelssucces med Power BI**
+<br>ved Angad Soni fra Hitachi Solutions
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Transform-Your-Customer-Data-into-Retail-Success-OnDemandRegistration.html?LCID=EN-US?wt.mc_id=undefined)
+
 **Dokumenterede sundhedsmæssige løsninger for at forbedre både resultaterne for patienterne og rentabiliteten**
 <br>ved Stephen Cracknell og Stuart Macanliss fra US Medical IT
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
@@ -111,6 +129,10 @@ Se optagne sessioner når som helst
 **Anvendte efterretninger til salg og tjenester** (webinaret er på engelsk)
 <br>ved Ed Bobrin fra Avanade
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
+
+**En succesfuld fremtidsspotters 5 indkøbsvaner – Rohit Bhargava**
+<br>af Rohit Bhargava fra Non-Obvious
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 **Producenter: Din branche gennemgår en digital transformation – bevar din førerposition ved at benytte analyser til at optimere rentabiliteten**
 <br>ved Jon Thompson fra Blue Margin og Jim Pastor fra Elgin Fastener Group

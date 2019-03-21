@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/18/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d467839582abb3c66c8bf5a57d1f3c5f7b83d354
-ms.sourcegitcommit: d0abedcf07f964418c9e5ea8d8ee3338b0b97a50
+ms.openlocfilehash: ed61d865756748ccd4e60f54de4a4b1b9adcef8d
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57695029"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980329"
 ---
 # <a name="custom-visuals-in-power-bi"></a>Brugerdefinerede visualiseringer i Power BI
 
@@ -159,7 +159,7 @@ Du har to valgmuligheder for download og import af brugerdefinerede visualiserin
 
 6. Gem '.pbiviz'-filen, og åbn derefter Power BI.
 
-7. Importér '.pbiviz'-filen i rapporten (se afsnittet [Importér en brugerdefineret visualisering fra en fil](#import-a-custom-visuals-from-a-file) ovenfor)
+7. Importér '.pbiviz'-filen i din rapport. Se afsnittet [Importér en brugerdefineret visualisering fra en fil](#import-a-custom-visual-from-a-file) ovenfor.
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 

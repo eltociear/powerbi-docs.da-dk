@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/19/2018
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 57beee741ecf51aaf306f6a80d59b7c49653eedc
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 55415126ae4c87381f788729f6f4b23807ac6572
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430294"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174930"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Overvåg forbrugsdata for Power BI-dashboards og -rapporter
 
@@ -47,7 +47,7 @@ Når du vælger **Forbrugsdata** eller ikonet ![forbrugsdataikonj](media/service
 
 Rapporter med forbrugsdata vises ikke i **Seneste**, **Arbejdsområder**, **Favoritter** eller andre indholdslister. De kan ikke føjes til en app. Hvis du fastgør et felt fra en rapport med forbrugsdata til et dashboard, kan dette dashboard ikke føjes til en app eller indholdspakke.
 
-Hvis du vil grave ned i rapportdataene eller oprette dine egne rapporter i forhold til datasættet, kan du bruge **Gem som** (se [Gem rapporten med forbrugsdata som en Power BI-rapport med alle funktioner](#Save-the-Usage-Metrics-report-as-a-full-featured-Power-BI-report-(personalize)).
+Hvis du vil grave ned i rapportdataene eller oprette dine egne rapporter i forhold til datasættet, kan du bruge **Gem som** (se [Gem rapporten med forbrugsdata som en Power BI-rapport med alle funktioner](#save-the-usage-metrics-report-as-a-full-featured-power-bi-report-personalize)).
 
 ## <a name="open-a-usage-metrics-report-for-a-dashboard-or-report"></a>Åbn en rapport med forbrugsdata for et dashboard eller en rapport
 

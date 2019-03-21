@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: da5394c0d1e63619229542b914ae7fd4deed7447
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: 9663c7eb6921718ac4b9690ddc50d78e59c6db3b
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223737"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174884"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -137,7 +137,7 @@ Ja. Der er Powershell-cmdlet'er og Azure Resource Manager-API'er, du kan bruge t
 
 ### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Hvilken rolle har PBI's integrerede dedikerede kapacitet i en PBI-integreret løsning?
 
-For at [gøre din løsning produktionsklar](https://docs.microsoft.com/power-bi/developer/embedding-content#step-3-promote-your-solution-to-production) har du brug for Power BI-indhold (det programarbejdsområde, du bruger i dit program, som skal tildeles til en Power BI Embedded-kapacitet (A SKU)).
+Hvis du vil [gøre din løsning produktionsklar](embed-sample-for-customers.md#move-to-production), har du brug for Power BI-indhold (apparbejdsområde), du bruger i din app, som skal tildeles til en Power BI Embedded-kapacitet (A SKU).
 
 ### <a name="what-are-the-azure-regions-pbi-embedded-is-available"></a>Hvilke Azure-områder er tilgængelige i PBI integreret?
 
@@ -167,7 +167,7 @@ Du kan bruge et [Azure Active Directory Authentication Library](https://docs.mic
 
 ### <a name="my-application-already-uses-aad-for-user-authentication-how-can-we-use-this-identity-when-authenticating-to-power-bi-in-a-user-owns-data-scenario"></a>Mit program allerede bruger AAD til brugergodkendelse. Hvordan kan vi bruge dette id til godkendelse til Power BI i et scenarie, hvor "Bruger ejer Data"?
 
-Det er standard OAuth på vegne af flow (https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios#web-application-to-web-api) programmet skal være konfigureret til at kræve tilladelser til Power BI-tjenesten (med de påkrævede områder), og når du har et bruger-token til din app, skal du bare kalde ADAL API AcquireTokenAsync ved hjælp af brugeradgangstoken og angive Power BI-ressourcens URL-adresse ressource-id. Se kodestykke nedenfor, der viser, hvordan dette kan gøres:
+Det er standard-OAuth på vegne af flow (<https://docs.microsoft.com/azure/active-directory/develop/web-api>). Programmet skal være konfigureret til at kræve tilladelser til Power BI-tjenesten (med de påkrævede områder). Når du har et brugertoken til din app, skal du bare kalde ADAL API AcquireTokenAsync ved hjælp af brugeradgangtokenet og angive URL-adressen til Power BI-ressourcen som ressource-id. Se følgende kodestykke, der viser, hvordan dette kan gøres:
 
 ```csharp
 var context = new AD.AuthenticationContext(authorityUrl);
@@ -344,7 +344,7 @@ Hvis du arbejder med **Embed for your organization**, skal du gemme og udpakke f
 
 ### <a name="how-can-i-edit-my-registered-application"></a>Hvordan kan jeg redigere min registrerede app?
 
-Du kan se, hvordan du redigerer AAD-registrerede apps [her](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application).
+Du kan få mere at vide om, hvordan du redigerer Azure AD-registrerede apps under [Hurtig start: Opdater et program i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app).
 
 ### <a name="how-can-i-edit-my-power-bi-user-profile-or-data"></a>Hvordan kan jeg redigere Power BI-brugerprofilen eller -dataene?
 

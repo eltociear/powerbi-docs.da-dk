@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: fd311466d244e3ca9297f107edfad7b2cc930bfb
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: ebe536aad292fbd780d937cd4b35812afaedbdda
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223829"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174815"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Foretag fejlfinding af dit integrerede program
 
@@ -290,7 +290,7 @@ Når du kører eksempelappen **Embed for your organization**, får du følgende 
 
 Denne fejl skyldes, at den URL-adresse til omdirigering, der er angivet for webserverprogrammet, er forskellig fra URL-adressen i eksemplet. Hvis du vil registrere eksempelappen, skal du bruge `http://localhost:13526/` som URL-adresse til omdirigering.
 
-Hvis du vil redigere det registrerede program, skal du lære at redigere det [AAD-registrerede program](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#updating-an-application), så programmet kan give adgang til web-API'erne.
+Hvis du vil redigere det registrerede program, skal du lære at [opdatere den Azure AD-registrerede app](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v1-update-azure-ad-app), så den kan give adgang til web-API'erne.
 
 Hvis du vil redigere Power BI-brugerprofilen eller -dataene, skal du lære, hvordan du redigere dine [Power BI-data](https://docs.microsoft.com/power-bi/service-basic-concepts).
 

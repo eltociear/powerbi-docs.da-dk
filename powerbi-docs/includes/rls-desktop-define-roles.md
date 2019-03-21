@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 240045c05a35a6583b537b785c6639a39c6aa9d4
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58051722"
+---
 ## <a name="define-roles-and-rules-in-power-bi-desktop"></a>Definer roller og regler i Power BI Desktop
 Du kan definere roller og regler i Power BI Desktop. Når du publicerer til Power BI, publiceres rolledefinitionerne også.
 
@@ -21,7 +29,7 @@ Følg disse trin for at definere sikkerhedsroller.
 7. Angiv DAX-udtrykkene. Dette udtryk skal returnere true eller false. Eksempel: [Entity ID] = “Value”.
    
    > [!NOTE]
-   > Du kan bruger *username()* i udtrykket. Vær opmærksom på, at *username()* har formatet *DOMÆNE\brugernavn* i Power BI Desktop. I Power BI-tjenesten og Power BI-rapportserver har det format som brugerens eget hovednavn. Du kan også bruge *userprincipalname()*, som altid returnerer brugeren i samme format som brugerens hovednavn *username@contoso.com*.
+   > Du kan bruger *username()* i udtrykket. Vær opmærksom på, at *username()* har formatet *DOMÆNE\brugernavn* i Power BI Desktop. I Power BI-tjenesten og Power BI-rapportserver har det format som brugerens eget hovednavn. Du kan også bruge *userprincipalname()*, som altid returnerer brugeren i samme format som brugerens hovednavn *brugernavn\@contoso.com*.
    > 
    > 
    

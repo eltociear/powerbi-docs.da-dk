@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: dc22c075c479510810b4a914fd999e38118e12e5
-ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
+ms.openlocfilehash: 875f30a6e051561f20a7ca54bc48343dd7248e79
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426717"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174746"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Tilslut Azure Data Lake Storage Gen2 for at få et dataflowlager (prøveversion)
 
@@ -65,7 +65,7 @@ Følg trinnene i artiklen [Opret en Azure Data Lake Storage Gen2-lagerkonto](htt
 
 Derefter skal du give Power BI-tjenesten en rolle af typen Læser på din oprettede lagerkonto. Det er en indbygget rolle, så trinnene er ligetil. 
 
-Følg trinnene i artiklen [Tildel en rolle til en sikkerhedskonto](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-role-to-a-security-principal).
+Følg trinnene under [Tildel en indbygget RBAC-rolle](https://docs.microsoft.com/azure/storage/common/storage-auth-aad-rbac#assign-a-built-in-rbac-role).
 
 I vinduet **Tilføj rolletildeling** skal du vælge rollen **Læser** og tildele den til Power BI-tjenesten. Brug derefter Søg til at finde **Power BI-tjenesten**. På følgende billeder kan du se, at rollen **Læser** er tildelt Power BI-tjenesten.
 
@@ -150,6 +150,9 @@ Du tilslutter din **Azure Data Lake Storage Gen2**-konto ved hjælp af følgende
 6. Vælg **Opret forbindelse**.
 
 Når disse trin er fuldført, er din Azure Data Lake Storage Gen2-konto sluttet til Power BI. 
+
+> [!NOTE]
+> Hvis du vil konfigurere en forbindelse til Azure Data Lake Storage Gen2 på Power BI-administrationsportalen, skal du have tilladelser som Global administrator. Globale administratorer kan dog ikke oprette forbindelse til et eksternt lager på administrationsportalen.  
 
 Derefter skal du gøre det muligt for personer i din organisation at konfigurere deres arbejdsområder, hvilket giver dem mulighed for at bruge denne lagerkonto til definition og datalager for dataflow. Lad os gøre det i det næste afsnit. 
 

@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: b4f2d58b9e33e603b6e2dbc97972bb54c66f065c
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.openlocfilehash: 312e010bfa3ea635ef014a0b2dd913fa9e3911b6
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014133"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964841"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Sådan køber du Power BI Premium
 
@@ -95,13 +95,15 @@ Du kan opsige dit abonnementet fra Office 365 Administration. Gør følgende for
 
 1. Læs oplysningerne igennem, og vælg **Annuller abonnement**, hvis du vil fortsætte.
 
+### <a name="when-canceling-or-your-license-expires"></a>Når du annullerer din licens, eller når den udløber
+
+Når du annullerer dit Premium-abonnement, eller når din kapacitetslicens udløber, kan du fortsætte med at få adgang til dine Premium-kapaciteter i en periode på 30 dage fra datoen for licensens annullering eller udløb. Efter 30 dage kan du ikke længere få adgang til dine Premium-kapaciteter eller arbejdsområderne i dem.
+
 ## <a name="next-steps"></a>Næste trin
 
-[Siden Priser for Power BI](https://powerbi.microsoft.com/pricing/)
-[Power BI Premium-beregner](https://powerbi.microsoft.com/calculator/)
-[Hvad Power BI Premium?](service-premium.md)
-[Ofte stillede spørgsmål om Power BI Premium](service-premium-faq.md)
-[Hvidbog om Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
-[Hvidbog om planlægning af en udrulning af Power BI Enterprise](https://aka.ms/pbienterprisedeploy)
+[Side med Power BI-prisfastsættelse](https://powerbi.microsoft.com/pricing/)   
+[Power BI Premium-beregner](https://powerbi.microsoft.com/calculator/)   
+[Ofte stillede spørgsmål om Power BI Premium](service-premium-faq.md)   
+[Hvidbog om planlægning af en Power BI Enterprise-installation](https://aka.ms/pbienterprisedeploy)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

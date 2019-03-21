@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 03/12/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: cb9280f47f1f2d28ce6fabda2dbc173fbdc837ac
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
+ms.openlocfilehash: f327cb95c10756f079778d20e62cba4871b95c02
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226129"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964933"
 ---
 # <a name="what-is-microsoft-power-bi-premium"></a>Hvad er Microsoft Power BI Premium?
 
@@ -66,15 +66,15 @@ Power BI Premium er tilgængelig i nodekonfigurationer med andre v-kerne-kapacit
 
 * EM-noder kan kun bruges til integrerede installationer. EM-noder har ikke adgang til Premium-funktioner, f.eks. deling af apps med brugere, der ikke har en Power BI Pro-licens.
 
-| Kapacitetsnode | V-kerner i alt<br/>*(Back-end + front-end)*  | Virtuelle back end-kerner <sup>[1](#fn1)</sup> | Virtuelle front end-kerner <sup>[2](#fn2)</sup> | Grænser for DirectQuery/liveforbindelser | Maks. antal samtidige opdateringer |  Tilgængelighed
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| EM1 (månedsvis) |1 v-kerne |0,5 v-kerner, 2,5 GB RAM |0,5 v-kerner |3.75 pr. sekund |  1 | Tilgængelig |
-| EM2 (månedsvis) |2 v-kerner |1 v-kerne, 5 GB RAM |1 v-kerne |7.5 pr. sekund |  2 | Tilgængelig |
-| EM3 (månedsvis) |4 v-kerner |2 v-kerner, 10 GB RAM |2 v-kerner | | 3 |  Tilgængelig |
-| P1 |8 v-kerner |4 v-kerner, 25 GB RAM |4 v-kerner |30 pr. sekund | 6 | Tilgængelig (månedsvis er også tilgængeligt) |
-| P2 |16 v-kerner |8 v-kerner, 50 GB RAM |8 v-kerner |60 pr. sekund | 12 | Tilgængelig |
-| P3 |32 v-kerner |16 v-kerner, 100 GB RAM |16 v-kerner |120 pr. sekund | 24 | Tilgængelig |
-| | | | | | | |
+| Kapacitetsnode | V-kerner i alt<br/>*(Back-end + front-end)*  | Virtuelle back end-kerner <sup>[1](#fn1)</sup> | Virtuelle front end-kerner <sup>[2](#fn2)</sup> | Grænser for DirectQuery/liveforbindelser | Maks. antal samtidige opdateringer |
+| --- | --- | --- | --- | --- | --- |
+| EM1 (månedsvis) |1 v-kerne |0,5 v-kerner, 2,5 GB RAM |0,5 v-kerner |3.75 pr. sekund |  1 |
+| EM2 (månedsvis) |2 v-kerner |1 v-kerne, 5 GB RAM |1 v-kerne |7.5 pr. sekund |  2 |
+| EM3 (månedsvis) |4 v-kerner |2 v-kerner, 10 GB RAM |2 v-kerner | 15 | 3 |
+| P1 |8 v-kerner |4 v-kerner, 25 GB RAM |4 v-kerner |30 pr. sekund | 6 |
+| P2 |16 v-kerner |8 v-kerner, 50 GB RAM |8 v-kerner |60 pr. sekund | 12 |
+| P3 |32 v-kerner |16 v-kerner, 100 GB RAM |16 v-kerner |120 pr. sekund | 24 |
+| | | | | | |
 
 <a name="fn1">1</a>: Virtuelle front end-kerner er ansvarlige for webtjenesten. Det kan f.eks. være administration af dashboard og rapportdokumenter, administration af adgangsrettigheder, planlægning, API'er, uploads og downloads og generelt alt, der er relateret til brugeroplevelsen. 
 
@@ -82,32 +82,7 @@ Power BI Premium er tilgængelig i nodekonfigurationer med andre v-kerne-kapacit
 
 ## <a name="workloads-in-premium-capacity"></a>Arbejdsbelastninger i Premium-kapacitet
 
-Som standard understøtter kapaciteter for **Power BI Premium** og **Power BI Embedded** kun den arbejdsbelastning, der er knyttet til Power BI-forespørgsler, som kører i clouden. Premium understøtter også yderligere arbejdsbelastninger for **Kunstig intelligens**, **Dataflow** og **Sideinddelte rapporter**. Du aktiverer disse arbejdsbelastninger på Power BI-administrationsportalen eller via Power BI REST-API'en. Du kan også angive den maksimale hukommelse, som de enkelte arbejdsbelastninger kan forbruge, og dermed styre, hvordan de forskellige arbejdsbelastninger påvirker hinanden. Du kan få mere at vide ved at se [Konfigurer arbejdsbelastninger](service-admin-premium-workloads.md).
-
-### <a name="default-memory-settings"></a>Standardindstillinger for hukommelse
-
-I følgende tabeller vises standard- og minimumværdierne for hukommelse baseret på de forskellige [kapacitetsnoder](#premium-capacity-nodes), der er tilgængelige. Hukommelse allokeres dynamisk til dataflow, men den allokeres statisk til sideinddelte rapporter. Du kan finde flere oplysninger i næste afsnit [Overvejelser i forbindelse med sideinddelte rapporter](#considerations-for-paginated-reports).
-
-#### <a name="microsoft-office-skus-for-software-as-a-service-saas-scenarios"></a>Microsoft Office-SKU'er til SaaS-scenarier (Software som en service)
-
-|                     | EM3                      | P1                       | P2                      | P3                       |
-|---------------------|--------------------------|--------------------------|-------------------------|--------------------------|
-| Sideinddelte rapporter | I/T | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 % | 20 % som standard, minimum 2,5 % |
-| Dataflow | 20 % som standard, minimum 8 %  | 20 % som standard, minimum 4 %  | 20 % som standard, minimum 2 % | 20 % som standard, minimum 1 %  |
-| | | | | |
-
-#### <a name="microsoft-azure-skus-for-platform-as-a-service-paas-scenarios"></a>Microsoft Azure-SKU'er til PaaS-scenarier (Platform as a Service)
-
-|                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
-|-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| Sideinddelte rapporter | I/T                      | I/T                      | I/T                     | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 % | 20 % som standard, minimum 2,5 % |
-| Dataflow         | 27 % som standard, minimum 27 % | 20 % som standard, minimum 16 % | 20 % som standard, minimum 8 % | 20 % som standard, minimum 4 %  | 20 % som standard, minimum 2 % | 20 % som standard, minimum 1 %   |
-
-### <a name="considerations-for-paginated-reports"></a>Overvejelser i forbindelse med sideinddelte rapporter
-
-Hvis arbejdsbelastningen for sideinddelte rapporter bruges, skal du huske på, at sideinddelte rapporter giver dig mulighed for at køre din egen kode, når du gengiver en rapport (f.eks. når du ændrer tekstfarven dynamisk baseret på indhold). Derfor sikrer vi Power BI Premium-kapacitet ved at køre sideinddelte rapporter i et inkluderet område i kapaciteten. Vi kan tildele den maksimale hukommelse, du angiver, til dette område, uanset om arbejdsbelastningen er aktiv eller ej. Hvis du bruger Power BI-rapporter eller -dataflow i den samme egenskab, skal du sørge for, at du har angivet hukommelsen lavt nok til sideinddelte rapporter, så det ikke påvirker andre arbejdsbelastninger.
-
-I sjældne tilfælde kan arbejdsbelastningen i sideinddelte rapporter blive utilgængelige. I dette tilfælde viser arbejdsbelastningen en fejltilstand på administrationsportalen, og brugere får vist timeout for gengivelse af rapporter. Du kan afhjælpe dette problem ved at deaktivere arbejdsbelastningen og derefter aktivere den igen.
+Som standard understøtter Power BI Premium- og Power BI Embedded-kapaciteter kun den arbejdsbelastning, der er knyttet til Power BI-forespørgsler, som kører i cloudmiljøet. Premium understøtter også yderligere arbejdsbelastninger for **Kunstig intelligens**, **Dataflow** og **Sideinddelte rapporter**. Før disse arbejdsprocesser kan bruge din kapacitets ressourcer, skal de være aktiveret i Power BI-administrationsportalen eller via Power BI REST-API'EN. Hver enkelt arbejdsbelastning har standardindstillinger for den maksimale mængde hukommelse, hver arbejdsbelastning kan forbruge. Du kan dog konfigurere forskellige indstillinger for hukommelsesforbrug for at bestemme, hvordan arbejdsbelastningerne påvirker hinanden og forbruger dine kapacitetsressourcer. Du kan få mere at vide ved at se [Konfigurer arbejdsbelastninger](service-admin-premium-workloads.md).
 
 ## <a name="power-bi-report-server"></a>Power BI-rapportserver
 

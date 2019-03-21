@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 9002b1871f5e7db4ef67d4f2f77b6b8769aa1de6
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 25d6c8020e500096507ba5e80a020a7a1c3052a6
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430274"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57980421"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration af Power BI – ofte stillede spørgsmål
 
@@ -84,7 +84,7 @@ Der er tre scenarier, der kan gøre sig gældende for brugere i din organisation
 
 Som administrator kan du tage forholdsregler for at forhindre brugere i at tilmelde sig din eksisterende Office 365-lejer. Hvis du blokerer adgangen, mislykkes brugernes forsøg på at tilmelde sig, og de får besked om at kontakte administratoren for deres organisation. Du skal ikke gentage denne proces, hvis du allerede har deaktiveret automatisk licensdistribution (f.eks. via Office 365 for Education til studerende, undervisere og ansatte).
 
-Brug følgende PowerShell-script til at forhindre, at nye brugere tilmelder sig en administreret lejer. [Få mere at vide om PowerShell](#basic-powershell-information)
+Brug følgende PowerShell-script til at forhindre, at nye brugere tilmelder sig en administreret lejer. [Få mere at vide om PowerShell][1].
 
 ```powershell
 $msolcred = get-credential
@@ -98,7 +98,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $false
 
 ### <a name="how-can-i-allow-users-to-join-my-existing-office-365-tenant"></a>Hvordan kan jeg forhindre brugere i at tilmelde sig min eksisterende Office 365-lejer?
 
-Brug følgende PowerShell-script til at gøre det muligt for nye brugere at tilmelde sig en administreret lejer. [Få mere at vide om PowerShell](#basic-powershell-information)
+Brug følgende PowerShell-script til at gøre det muligt for nye brugere at tilmelde sig en administreret lejer. [Få mere at vide om PowerShell][1].
 
 ```powershell
 $msolcred = get-credential
@@ -109,7 +109,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $true
 
 ### <a name="how-do-i-verify-if-i-have-the-block-on-in-the-tenant"></a>Hvordan bekræfter jeg, om blokering er aktiveret i lejeren?
 
-Brug følgende PowerShell-script til at kontrollere indstillingerne. *AllowEmailVerifiedUsers* skal være falsk. [Få mere at vide om PowerShell](#basic-powershell-information)
+Brug følgende PowerShell-script til at kontrollere indstillingerne. *AllowEmailVerifiedUsers* skal være falsk. [Få mere at vide om PowerShell][1].
 
 ```powershell
 $msolcred = get-credential
@@ -122,7 +122,7 @@ Get-MsolCompanyInformation | fl allow*
 
 Den Azure AD-indstilling, der styrer dette, er **AllowAdHocSubscriptions**. For de fleste lejere er denne indstilling indstillet til sand, hvilket betyder, at den er aktiveret. Hvis du har købt Power BI via en partner, kan denne være indstillet til falsk, hvilket betyder, at den er deaktiveret.
 
-Brug følgende PowerShell-script til at deaktivere ad hoc-abonnementer. [Få mere at vide om PowerShell](#basic-powershell-information)
+Brug følgende PowerShell-script til at deaktivere ad hoc-abonnementer. [Få mere at vide om PowerShell][1].
 
 1. Log på Azure Active Directory ved hjælp af dine legitimationsoplysninger til Office 365. I den første linje i følgende PowerShell-script bliver du bedt om dine legitimationsoplysninger. Den anden linje opretter forbindelse til Azure Active Directory.
 
@@ -270,3 +270,5 @@ Power BI er bygget på grundlag af Office 365, der igen er bygget på Azure-tjen
 [Administration af gruppe i Office 365](/office365/admin/email/create-edit-or-delete-a-security-group/)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+
+[1]: https://docs.microsoft.com/powershell/scripting/overview

@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/25/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 032fae40a7e2328879ba01b6d94c3c532369b3ab
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.openlocfilehash: ac6559ccc9e6dbdf8c4be0550d8522765a4a8b23
+ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826669"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58174907"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Overvåg Premium-kapaciteter vha. appen
 
@@ -31,7 +31,7 @@ Du kan gå direkte til [programmet Premium Capacity Metrics](https://app.powerbi
 
 
 1. I Power BI skal du klikke på **Apps**.   
-    ![Gå til apps](media/service-admin-premium-monitor-capacity/apps.png)
+    ![Gå til programmer](media/service-admin-premium-monitor-capacity/apps.png)
 
 2. I højre side skal du klikke på **Hent apps**.
 3. I kategorien **Apps** skal du søge efter **Power BI-appen Capacity Metrics**.
@@ -58,7 +58,7 @@ Nu, hvor du har installeret programmet, kan du se målepunkter for kapaciteterne
 
 Hvis du vil se et dashboard med en oversigt over de vigtigste målepunkter for kapaciteter, som du er administrator for, skal du under **Dashboards** klikke på **Capacity Metrics i Power BI Premium**. Der vises et dashboard.
 
-![Dashboardet for Metrics-appen](media/service-admin-premium-monitor-capacity/app-dashboard.png)
+![Appdashboardet Målepunkter](media/service-admin-premium-monitor-capacity/app-dashboard.png)
 
 Dashboardet indeholder følgende målepunkter:
 
@@ -97,7 +97,7 @@ Dashboardet indeholder følgende målepunkter:
 | Antal gange med høj udnyttelse af DirectQuery/liveforbindelse| Antal gange, hvor DirectQuery/liveforbindelse overskred 80 % af tærsklerne i løbet af de seneste syv dage opdelt i buckets på tre minutter. |
 | Antal gange med maksimal udnyttelse af DirectQuery/liveforbindelse| De fleste antal gange, hvor DirectQuery/liveforbindelser overskred 80 % i løbet af de seneste syv dage opdelt i buckets på én time. |
 | Maksimal høj udnyttelse af DirectQuery/liveforbindelse | Det maksimale antal gange, hvor DirectQuery/liveforbindelser overskred 80 % af tærsklerne i løbet af de seneste syv dage opdelt i buckets på tre minutter.|
-| Maksimalt antal forekomster af DirectQuery/liveforbindelse | Lokalt tidspunkt, hvor DirectQuery/liveforbindelser overskred 80 % flest gange på én time. |
+| Maksimalt antal forekomster af DirectQuery/liveforbindelse | UTC-tidspunkt, hvor DirectQuery/liveforbindelser overskred 80 % flest gange på én time. |
 | Opdateringer i alt | Det samlede antal opdateringer i løbet af de seneste syv dage. |
 | Opdateringspålidelighed (%) | Det samlede antal vellykkede opdateringer delt med det samlede antal opdateringer i løbet af de seneste syv dage. |
 | Gennemsnitlig varighed af opdateringer (minutter) | Gennemsnitlig mængde tid brugt på at fuldføre opdateringen. |
@@ -162,8 +162,8 @@ På siden Datasæt er der forskellige *områder*, som indeholder **Opdateringer*
 | Opdateringer |  Antal i alt: Det samlede antal opdateringer for hvert datasæt.<br>  Pålidelighed: Antal fuldførte opdateringer i procent for hvert datasæt.<br>  Gennemsnitlig ventetid: Den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starttidspunktet for en opdatering af datasættet i minutter.<br>  Maksimal ventetid: Den maksimale ventetid for datasættet i minutter.<br>  Gennemsnitlig varighed: Den gennemsnitlige varighed af opdateringen af datasættet i minutter.<br>  Maksimal varighed: Varigheden af den længstvarende opdatering af datasættet i minutter. |
 | Top 5-datasæt efter Gennemsnitlig varighed (minutter) |  De fem datasæt med den længstvarende gennemsnitlige opdateringsvarighed i minutter. |
 | Top 5-datasæt efter Gennemsnitlig ventetid (minutter) |  De fem datasæt med den længstvarende gennemsnitlige opdateringsventetid i minutter. |
-| Opdateringsantal og hukommelsesforbrug pr. time (GB) |  Succeser, fejl og hukommelsesforbrug opdelt i buckets på én time rapporteret i lokaltid. |
-| Gennemsnitlig opdateringsventetid pr. time (minutter) |  Den gennemsnitlige opdateringsventetid opdelt i buckets på én time rapporteret i lokaltid. Flere tilfælde af høje opdateringsventetider kan være tegn på, at kapaciteten snart er brugt op. |
+| Opdateringsantal og hukommelsesforbrug pr. time (GB) |  Succeser, fejl og hukommelsesforbrug opdelt i buckets af en times varighed rapporteret i UTC-tid. |
+| Gennemsnitlig opdateringsventetid pr. time (minutter) |  Den gennemsnitlige opdateringsventetid opdelt i buckets på én time rapporteret i UTC-tid. Flere tilfælde af høje opdateringsventetider kan være tegn på, at kapaciteten snart er brugt op. |
 |  |  |
 
 #### <a name="query-durations-area"></a>Område for forespørgselsvarigheder
@@ -173,8 +173,8 @@ På siden Datasæt er der forskellige *områder*, som indeholder **Opdateringer*
 | Forespørgselsvarigheder |  Data i dette afsnit er opdelt i udsnit efter datasæt, arbejdsområde og buckets pr. time for de seneste syv dage.<br>  I alt: Det samlede antal forespørgsler, der er kørt for datasættet.<br>  Gennemsnit: Den gennemsnitlige varighed af forespørgsler for datasættet i millisekunder<br>  Maksimum: Varigheden af den længstvarende forespørgsel i datasættet i millisekunder.|
 | Distribution af forespørgselsvarighed |  Histogrammet med forespørgselsvarighed er opdelt i buckets efter forespørgselsvarigheder (i millisekunder) i følgende kategorier: intervaller af < = 30 ms, 30-100 ms, 100-300 ms, 300 ms-1 sek., 1-3 sek., 3-10 sek., 10-30 sek. og > 30 sek. Lange forespørgselsvarigheder og lange ventetider betyder, at kapaciteten er overbelastet. Det kan også betyde, at et enkelt datasæt forårsager problemer, og at der er behov for yderligere undersøgelser. |
 | Top 5-datasæt efter Gennemsnitlig varighed |  De fem datasæt med den længstvarende gennemsnitlige forespørgselsvarighed i millisekunder. |
-| Distributioner af forespørgselsvarighed pr. time |  Antallet af forespørgsler og gennemsnitlig varighed (i millisekunder) i forhold til hukommelsesforbrug i GB opdelt i buckets på én time rapporteret i lokaltid. |
-| DirectQuery/liveforbindelser (> 80 % udnyttelse) |  Det antal gange, en DirectQuery eller liveforbindelse overskred CPU-udnyttelsen på 80 % opdelt i buckets på én time rapporteret i lokaltid. |
+| Distributioner af forespørgselsvarighed pr. time |  Antallet af forespørgsler og gennemsnitlig varighed (i millisekunder) i forhold til hukommelsesforbrug i GB opdelt i buckets på én time rapporteret i UTC-tid. |
+| DirectQuery/liveforbindelser (> 80 % udnyttelse) |  Det antal gange, en DirectQuery eller liveforbindelse overskred CPU-udnyttelsen på 80 % opdelt i buckets på én time rapporteret i UTC-tid. |
 |  |  |
 
 #### <a name="query-waits-area"></a>Område for ventetider for forespørgsler
@@ -184,7 +184,7 @@ På siden Datasæt er der forskellige *områder*, som indeholder **Opdateringer*
 | Forespørgselsventetider |  Data i dette afsnit er opdelt i udsnit efter datasæt, arbejdsområde og buckets pr. time for de seneste syv dage.<br>  I alt: Det samlede antal forespørgsler, der er kørt for datasættet.<br>  Antal ventende: Antallet af forespørgsler i datasættet, der har ventet på systemressourcer, før udførelsen startes.<br>  Gennemsnit: Den gennemsnitlige ventetid for forespørgsler for datasættet i millisekunder.<br>  Maksimum: Varigheden af den længstventende forespørgsel i datasættet i millisekunder.|
 | Top 5 datasæt efter Gennemsnitlig ventetid |  De fem datasæt med den længstvarende gennemsnitlige ventetid inden udførelsen af en forespørgsel i millisekunder. |
 | Distribution af ventetid |  Histogrammet med forespørgselsvarighed er opdelt i buckets efter forespørgselsvarigheder (i millisekunder) i følgende kategorier: intervaller af <= 50 ms, 50-100 ms, 100-200 ms, 200-400 ms, 400 ms-1 sek., 1-5 sek. og > 5 sek. |
-| Distribution af forespørgselsventetid pr. time |  Mængde af forespørgselsventetid og den gennemsnitlige ventetid (i millisekunder) i forhold til hukommelsesforbrug i GB opdelt i buckets på én time rapporteret i lokaltid. |
+| Distribution af forespørgselsventetid pr. time |  Mængde af forespørgselsventetid og den gennemsnitlige ventetid (i millisekunder) i forhold til hukommelsesforbrug i GB opdelt i buckets på én time rapporteret i UTC-tid. |
 |  |  |
 
 #### <a name="datasets-area"></a>Området Datasæt
@@ -193,8 +193,8 @@ På siden Datasæt er der forskellige *områder*, som indeholder **Opdateringer*
 | --- | --- |
 | Størrelser af datasæt  |  Maksimumstørrelse: Den maksimale størrelse af datasættet i MB for den viste periode. |
 | Antal fjernelser af datasæt |  I alt: Det samlede antal *fjernelser* af datasættet for hver enkelt kapacitet. Når en kapacitet står over for øget hukommelsesforbrug, fjerner noden et eller flere datasæt fra hukommelsen. Datasæt, der er inaktive (uden forespørgsels-/opdateringshandlinger, der udføres i øjeblikket), ryddes først. Derefter er fjernelsesrækkefølgen baseret på en måling af 'mindst brugt for nylig'.|
-| Antal indlæste datasæt pr. time |  Antal datasæt, der er indlæst i hukommelsen, i forhold til hukommelsesforbrug i GB opdelt i buckets på én time rapporteret i lokaltid. |
-| Fjernelser af datasæt og hukommelsesforbrug pr. time |  Fjernelser af datasæt i forhold til hukommelsesforbrug i GB opdelt i buckets på én time rapporteret i lokaltid. |
+| Antal indlæste datasæt pr. time |  Antal datasæt, der er indlæst i hukommelsen, i forhold til hukommelsesforbrug i GB opdelt i buckets på én time rapporteret i UTC-tid. |
+| Fjernelser af datasæt og hukommelsesforbrug pr. time |  Fjernelser af datasæt i forhold til hukommelsesforbrug i GB opdelt i buckets på én time rapporteret i UTC-tid. |
 | Procentdel af forbrugt hukommelse |  Samlet antal aktive datasæt i hukommelsen som en procentdel af den samlede hukommelse. Delta mellem Aktiv og Alle definerer datasæt, der kan fjernes. Vises pr. time for de seneste syv dage. |
 |  |  |
 
@@ -205,8 +205,8 @@ På siden Datasæt er der forskellige *områder*, som indeholder **Opdateringer*
 | Samlet forbrug |  Visninger i alt: Antallet af gange, som rapporten er blevet set af brugere.<br>  Rækkeantal: Antallet af rækker med data i rapporten.<br>  Hentning (gns.): Den gennemsnitlige mængde tid, det tager at hente data til rapporten, i millisekunder. Lange varigheder kan være et tegn på langsomme forespørgsler eller andre datakildeproblemer. <br>  Behandling (gns.): Den gennemsnitlige mængde tid, det tager at behandle dataene til rapporten, i millisekunder.<br> Gengivelse (gns.): Den gennemsnitlige mængde tid, det tager at gengive en rapport i browseren, i millisekunder.<br>  Tid i alt: Den mængde tid, det tager for alle faserne i rapporten, i millisekunder. |
 | Top 5-rapporter efter Gennemsnitlig datahentningstid |  De fem rapporter med den længstvarende gennemsnitlige datahentningstid i millisekunder. |
 | Top 5-rapporter efter Gennemsnitlig rapportbehandlingstid |  De fem rapporter med den længstvarende gennemsnitlige rapportbehandlingstid i millisekunder. |
-| Resultater pr. time |  Succeser, fejl og hukommelsesforbrug opdelt i buckets på én time rapporteret i lokaltid. |
-| Varigheder pr. time |  Datahentning i forhold til behandlings- og gengivelsestid opdelt i buckets på én time rapporteret i lokaltid. |
+| Resultater pr. time |  Succeser, fejl og hukommelsesforbrug opdelt i buckets på én time rapporteret i UTC-tid. |
+| Varigheder pr. time |  Datahentning i forhold til behandlings- og gengivelsestid opdelt i buckets på én time rapporteret i UTC-tid. |
 |  |  |
 
 ### <a name="dataflows"></a>Dataflow
@@ -216,8 +216,8 @@ På siden Datasæt er der forskellige *områder*, som indeholder **Opdateringer*
 | Opdateringer |  I alt: Det samlede antal opdateringer for hvert dataflow.<br>  Pålidelighed: Antal fuldførte opdateringer i procent for hvert dataflow.<br>  Gennemsnitlig ventetid: Den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starttidspunktet for en opdatering af dataflowet i minutter.<br>  Maksimal ventetid: Den maksimale ventetid for dataflowet i minutter.<br>  Gennemsnitlig varighed: Den gennemsnitlige varighed af opdateringen af dataflowet i minutter.<br>  Maksimal varighed: Varigheden af den længstvarende opdatering af dataflowet i minutter. |
 | Top 5-dataflow efter Gennemsnitlig opdateringsvarighed |  De fem dataflow med den længstvarende gennemsnitlige opdateringsvarighed i minutter. |
 | Top 5-dataflow efter Gennemsnitlig ventetid |  De fem dataflow med den længstvarende gennemsnitlige opdateringsventetid i minutter. |
-| Gennemsnitlige opdateringsventetider pr. time |  Den gennemsnitlige opdateringsventetid opdelt i buckets på én time rapporteret i lokaltid. Flere tilfælde af høje opdateringsventetider kan være tegn på, at kapaciteten snart er brugt op. |
-| Opdateringsantal og hukommelsesforbrug pr. time |  Succeser, fejl og hukommelsesforbrug opdelt i buckets på én time rapporteret i lokaltid. |
+| Gennemsnitlige opdateringsventetider pr. time |  Den gennemsnitlige opdateringsventetid opdelt i buckets på én time rapporteret i UTC-tid. Flere tilfælde af høje opdateringsventetider kan være tegn på, at kapaciteten snart er brugt op. |
+| Opdateringsantal og hukommelsesforbrug pr. time |  Succeser, fejl og hukommelsesforbrug opdelt i buckets på én time rapporteret i UTC-tid. |
 |  |  |
 
 ### <a name="resource-consumption"></a>Ressourceforbrug

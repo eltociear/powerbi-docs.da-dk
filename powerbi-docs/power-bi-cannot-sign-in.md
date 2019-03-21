@@ -10,18 +10,20 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/12/2019
-ms.openlocfilehash: a29d251c629437184ff31de275a17c1d152abff3
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: 1605293474a7cbfefb448d74127639153e29325c
+ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757771"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57964611"
 ---
 # <a name="troubleshooting-sign-in-issues-for-power-bi"></a>Lokalisering af fejl i forbindelse med logon i Power BI Desktop
 
-I denne artikel beskrives, hvordan du genererer [supportindhold](https://powerbi.microsoft.com/support/), som beskriver, hvilken fremgangsmåde du kan benytte for at løse problemer med logon.
+I denne artikel beskrives det, hvordan du får [support](https://powerbi.microsoft.com/support/), når du har problemer med Power BI-logon.
 
-Det første, du skal gøre, er at **involvere dit interne supportteam** for at få hjælp. Hvis du er en **lejeradministrator** for din organisation, og du ikke kan logge på Power BI, skal du dog fortsætte med nedenstående oplysninger.
+Det første, du skal gøre, er at **involvere organisationens interne supportteam** for at få hjælp.
+
+Hvis du er **lejeradministrator** for din organisation, og du ikke kan logge på Power BI, skal du dog fortsætte med nedenstående oplysninger.
 
 ## <a name="engage-the-support-team"></a>Involver supportteamet
 
@@ -30,11 +32,13 @@ Først skal du prøve at oprette en supportanmodning via [supportsiden for Power
 Hvis du ikke kan gennemgå siden til Power BI-support, kan du prøve at oprette en supportanmodning via [supportsiden til Office 365 (O365)](https://support.office.com/home/contact).
 
 Hvis du hverken kan oprette en anmodning via Power BI-supportsiden eller gennem O365, kan du prøve at kontakte support via telefon.
+
 * For kunder i USA (USA) og resten af Sydamerika: + 1-800-936-5800
 * For kunder i Europa, Mellemøsten og Asien (EMEA): + 44-844-800-2400
 * For kunder i Indien: + 1-800-419-5666
 
-En anden mulighed for at kontakte Microsoft-support for at få hjælp er ved at købe [Microsoft Premier Support](https://support.microsoft.com/premier). Hvis du ved, at din organisation har købt Microsoft Premier Support, og du stadig ikke kan oprette en sag fra en hvilken som helst O365- eller Power BI-kanal, kan du kontakte Premier Support via telefon.
+En anden mulighed for at kontakte Microsoft-support for at få hjælp er ved at købe [Microsoft Premier Support](https://support.microsoft.com/premier). Hvis du ved, at din organisation har købt Microsoft Premier Support, og du stadig ikke kan oprette en sag fra en hvilken som helst Power BI- eller O365-kanal, kan du kontakte Premier Support via telefon.
+
 * For kunder i USA (USA) og resten af Sydamerika: + 1-800-936-3100
 * For kunder i Europa, Mellemøsten og Asien (EMEA): + 44-844-800-8338
 * For kunder i Indien: + 1-800-425-5666
