@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a8a7aa8ed33e5c1baa7319ea65a67b6338c41ca2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: fc403220ae45fda879802fe480853a3c94fd53c0
+ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277796"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58220948"
 ---
 # <a name="using-computed-entities-on-power-bi-premium-preview"></a>Brug af beregnede objekter i Power BI Premium (prøveversion)
 
@@ -79,7 +79,9 @@ Det er vigtigt at bemærke, at hvis du fjerner arbejdsområdet fra Power BI Prem
 
 Når du arbejder med dataflow, der specifikt er oprettet i en organisations Azure Data Lake Storage Gen2-konto, fungerer tilknyttede enheder og beregnede enheder kun korrekt, når enhederne er placeret i samme lagerkonto. Du kan finde flere oplysninger under [Opret forbindelse til Azure Data Lake Storage Gen2 til dataflowlager (eksempelvisning)](service-dataflows-connect-azure-data-lake-storage-gen2.md).
 
-Derudover er linkede objekter ikke tilgængelige for dataflow, der er oprettet via CDM-mapper. Se under [Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)](service-dataflows-add-cdm-folder.md).
+Linkede objekter ikke tilgængelige for dataflow, der er oprettet via CDM-mapper (Common Data Model). Du kan få flere oplysninger under [Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)](service-dataflows-add-cdm-folder.md).
+
+Når du udfører beregninger af data, der er joinforbundet i det lokale miljø, og clouddata, skal du som bedste praksis oprette et nyt objekt for at udføre disse beregninger. Dette giver en bedre oplevelse, end når du bruger et eksisterende objekt til beregninger, f.eks. et objekt, der også forespørger om data fra begge kilder og udfører lake-transformationer.
 
 ## <a name="next-steps"></a>Næste trin
 
