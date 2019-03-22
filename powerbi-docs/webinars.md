@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: 9fbd47dcefb2daf8d86c6932b5c70617b8bf7ac9
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 3a5a84bdb22996fc3b773a861a85e82985cd036c
+ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57964703"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58220971"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
@@ -39,6 +39,10 @@ Kom i gang med disse populære webinarer, når det passer dig
 **Introduktion til Power BI**
 <br>ved Miguel Martinez
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/getting-started-with-power-bi-ondemand.html?Is=Website)
+
+**Kom i gang med Power BI-mobilappen**
+<br>ved Maya Shenhav
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-Landing-Getting-Started-with-the-Power-BI-Mobile-App-Video.html?LCID=EN-US)
 
 **Få mere at vide om at navigere i et Power BI Dashboard på 20 minutter** (webinaret er på engelsk)
 <br>ved Miguel Martinez
