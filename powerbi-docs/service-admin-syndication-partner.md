@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: f1244535259de2a5b5726d295a64229a0f92f02b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 635a64c08056e82539d33904d4cce60d4cfc00cd
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296416"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58382932"
 ---
 # <a name="unable-to-add-power-bi-to-office-365-partner-subscription"></a>Det var ikke muligt at føje Power BI til en partners Office 365-abonnement
 
@@ -33,9 +33,9 @@ Hvis du vil købe et abonnement på Power BI Pro eller Power BI Premium, skal du
 
 ## <a name="purchase-from-microsoft-or-another-channel"></a>Køb fra Microsoft eller en anden kanal
 
-Afhængigt af relationen med din partner kan du muligvis købe Power BI direkte fra Microsoft eller en anden partner. Du kan kontrollere, om du kan tilføje Power BI-abonnementer på Office 365 Administrationsportal (kræver medlemskab med rollen Global administrator eller Faktureringsadministrator).
+Afhængigt af relationen med din partner kan du muligvis købe Power BI direkte fra Microsoft eller en anden partner. Du kan kontrollere, om du kan tilføje Power BI-abonnementer på Microsoft 365 Administration (kræver medlemskab med rollen Global administrator eller Faktureringsadministrator).
 
-1. Gå til [Office 365 Administrationsportal](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. Gå til [Microsoft 365 Administration](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
 1. Åbn **Fakturering** i menuen til venstre:
 
