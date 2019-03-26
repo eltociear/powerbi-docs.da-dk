@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 01/08/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: e1d8d240e4fd5bc05fc015f1c12971a8646370dd
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
+ms.openlocfilehash: 6da5d89ae1ad3b98a879e4d99a10aa69224e1c46
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226106"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383354"
 ---
 # <a name="use-resource-based-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Brug ressourcebaseret Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø
 
@@ -23,7 +23,7 @@ Brug [ressourcebaseret Kerberos-begrænset delegering](/windows-server/security/
 
 ## <a name="preparing-for-resource-based-kerberos-constrained-delegation"></a>Forberedelse af ressourcebaseret Kerberos-begrænset delegering
 
-Der skal være konfigureret flere elementer, hvis Kerberos-begrænset delegering skal fungere korrekt, herunder _tjenestens hovednavn_ (SPN) og delegeringsindstillinger i tjenestekonti.
+Der skal være konfigureret flere elementer, hvis Kerberos-begrænset delegering skal fungere korrekt, herunder _tjenestens hovednavn_ (SPN) og delegeringsindstillinger i tjenestekonti. 
 
 ### <a name="prerequisite-1-operating-system-requirements"></a>Forudsætning 1: Krav til operativsystem
 
@@ -105,8 +105,8 @@ Med udgangspunkt i disse eksempelnavne og -indstillinger skal du bruge følgende
 1. Åbn en kommandoprompt, og kør følgende kommandoer for domænecontrolleren for domænet **PBIEgwTestBack-end** for at opdatere attributten msDS-AllowedToActOnBehalfOfOtherIdentity for back end-tjenestekontoen:
 
     ```powershell
-    $c=get-adgroupResourceDelGroup
-    set-aduser **SQLService** -principalsAllowedToDelegateToAccount$c
+    $c = Get-ADGroup ResourceDelGroup
+    Set-ADUser SQLService -PrincipalsAllowedToDelegateToAccount $c
     ```
 
 1. Du kan bekræfte, at opdateringen afspejles, på fanen "Attributeditor" i egenskaberne for back end-tjenestekontoen i **Active Directory-brugere og -computere.**

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 03/10/2019
-ms.openlocfilehash: 02ce5146a154583d784de8030a0b0ec84740fcb3
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
+ms.openlocfilehash: cf9a613e82b4f5b7ce9cc67f5b920760d01ccbf7
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58175461"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430294"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Retningslinjer for Power BI-visualiseringer
 
@@ -29,7 +29,6 @@ Visualiseringer med "Yderligere køb kan være påkrævet" er ligesom tilføjels
 
 >[!IMPORTANT]  
 > Hvis du opdaterer din visualisering fra gratis til "Yderligere køb kan være påkrævet", skal brugerne modtage det samme niveau af gratis funktionalitet som før opdateringen. Du kan tilføje valgfrie avancerede betalte funktioner udover de eksisterende gratis funktioner. Vi anbefaler, at du indsender visualiseringer med apptilkøb sammen med de avancerede funktioner som nye visualiseringer i stedet for at opdatere de eksisterende gratis.
-
 
 ## <a name="what-changed-in-the-submission-process"></a>Hvad er blevet ændret i indsendelsesprocessen?
 
@@ -51,17 +50,17 @@ I dette afsnit beskrives specifikationerne for tilføjelse af logoer og logotype
 > [!IMPORTANT]
 > Logoer er kun tilladt i **redigeringstilstand**. Logoer **må ikke** vises i visningstilstand.
 
-![Definitioner](media/office-store-in-app-purchase-visual-guidelines/definitions.png)
+![Definitioner](media/guidelines-powerbi-visuals/definitions.png)
 
-![Husk følgende](media/office-store-in-app-purchase-visual-guidelines/things-to-keep-in-mind.png)
+![Husk følgende](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
 
-![Undgå følgende](media/office-store-in-app-purchase-visual-guidelines/things-to-avoid.png)
+![Undgå følgende](media/guidelines-powerbi-visuals/things-to-avoid.png)
 
-![Størrelse og format](media/office-store-in-app-purchase-visual-guidelines/size-and-format.png)
+![Størrelse og format](media/guidelines-powerbi-visuals/size-and-format.png)
 
-![Margener og størrelse](media/office-store-in-app-purchase-visual-guidelines/margins-and-sizes.png)
+![Margener og størrelse](media/guidelines-powerbi-visuals/margins-and-sizes.png)
 
-![Redigeringstilstand](media/office-store-in-app-purchase-visual-guidelines/logos-in-edit-mode.png)
+![Redigeringstilstand](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
 ## <a name="best-practices"></a>Bedste praksis
 

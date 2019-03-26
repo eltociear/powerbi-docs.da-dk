@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 54515259d0e258284cd5a2e86432a5ef6be89a9e
-ms.sourcegitcommit: 06ae54ed221979939699c67d63aeccba8b9dfcda
+ms.openlocfilehash: 6c63f0bbcf836c90eecf7407d2d9805fc9ab443a
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57965480"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430317"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Selvstudium: Aktivér en Machine Learning Studio-model i Power BI (prøveversion)
 
@@ -92,7 +92,7 @@ Du bliver bedt om at oprette forbindelse til en datakilde på det næste skærmb
 
 `https://raw.githubusercontent.com/santoshc1/PowerBI‑AI‑samples/master/Tutorial\_MLStudio\_model\_integration/Automobile%20price%20data%20\_Raw\_.csv`
 
-!Connect to data source](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
+![Opret forbindelse til datakilde](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
 
 I Power-Forespørgselseditor vises et eksempel på dataene fra CSV-filen. Vælg **Transformér tabel** på kommandobåndet, og vælg derefter **Brug den første række som overskrifter**.  Herefter føjes forespørgselstrinnet _Hævede overskrifter_ til ruden **Anvendte trin** til højre. Du kan også omdøbe forespørgslen til et mere brugervenligt navn, f.eks _Bilpriser_, ved hjælp af ruden til højre.
 
@@ -137,7 +137,7 @@ Når du vælger ikonet **Rediger**, åbnes Power-forespørgselseditoren for enhe
 
 Vælg knappen **AI Insights** på båndet, og vælg derefter mappen _Azure Machine Learning-modeller_ i navigationsmenuen til venstre.
 
-Vælg mappen **Azure Machine Learning-modeller**. De Azure ML-modeller, som du har fået adgang til, er angivet som Power-forespørgselsfunktioner med præfikset *AzureML*.  Når du klikker på den funktion, der svarer til modellen _AutomobilePricePrediction_, vises parametrene for modellens webtjeneste som funktionsparametre.
+De Azure ML-modeller, som du har fået adgang til, er angivet som Power-forespørgselsfunktioner med præfikset *AzureML*.  Når du klikker på den funktion, der svarer til modellen _AutomobilePricePrediction_, vises parametrene for modellens webtjeneste som funktionsparametre.
 
 Du aktiverer en Azure ML-model ved at angive en af den valgte enheds kolonner som input på rullelisten. Du kan også angive en konstant værdi, der skal bruges som input, ved at slå kolonneikonet til venstre for inputdialogboksen til og fra. Når et kolonnenavn svarer til et af navnene på funktionsparametrene, foreslås den pågældende kolonne automatisk som input.  Hvis navnet på en kolonne ikke har noget match, kan du vælge det på rullelisten.
 
