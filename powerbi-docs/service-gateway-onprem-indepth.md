@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 18458820f98bcea32eb5288389d57808646d462c
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: fa7d10403ca6bd8dc94729b7b4fd631475a3671e
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325008"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383410"
 ---
 # <a name="on-premises-data-gateway-in-depth"></a>Datagateway i det lokale miljø – detaljeret
 Det er muligt for brugere i din organisation at få adgang til data i det lokale miljø (som de allerede er godkendt til at få adgang til), men før disse brugere kan oprette forbindelse til datakilden i det lokale miljø, skal der installeres og konfigureres en datagateway i det lokale miljø. Gatewayen muliggør hurtig og sikker kommunikation bag kulisserne mellem en bruger i clouden, til din lokale datakilde og derefter tilbage til clouden.
@@ -77,7 +77,7 @@ Cloudtjenesterne kender kun til konti på Azure Active Directory. Det har ingen 
 
 1. Du kan føje konti manuelt til Azure Active Directory.
    
-   Du kan oprette en konto på Azure-portalen eller i Office 365-administrationsportalen, og kontonavnet matcher UPN i den lokale Active Directory-konto.
+   Du kan oprette en konto på Azure Portal eller i Microsoft 365 Administration, og så matcher kontonavnet UPN for den lokale Active Directory-konto.
 2. Du kan bruge værktøjet [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-sync-whatis) til at synkronisere lokale konti med din Azure Active Directory-lejer.
    
    Azure AD Connect-værktøjet indeholder indstillinger til katalogsynkronisering og konfiguration af godkendelse, inklusive synkronisering af adgangskodehash, pass-through-godkendelse og samling af identiteter. Hvis du ikke er administrator af lejere eller lokal domæneadministrator, skal du kontakte it-administratoren for at få dette konfigureret.

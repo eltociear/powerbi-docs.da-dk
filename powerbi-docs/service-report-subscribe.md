@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 09539bfd26685ffdd9866810b566699e5cdb4a41
-ms.sourcegitcommit: a2f274cfb392fe3b1b466a39ec7eaf58a7c5ce00
+ms.openlocfilehash: 639fbd58236debc2c71a87a9e9cfd551ad4b433d
+ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56408109"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306521"
 ---
 # <a name="subscribe-yourself-and-others-to-a-report-or-dashboard-in-the-power-bi-service"></a>Meld dig selv og andre til et abonnement på en rapport eller et dashboard i Power BI-tjenesten
 
@@ -83,18 +83,18 @@ Et abonnement slutter, hvis Pro-licensen udløber, hvis ejeren sletter dashboard
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 * Dashboards med mere end 25 fastgjorte felter eller 4 fastgjorte liverapportsider gengives muligvis ikke fuldstændigt i abonnementsmails, der sendes til brugerne.  Abonnementer på dashboards med flere end dette antal felter, blokeres ikke, men de vil dog blive betragtet som ikke-understøttet, hvis du støder på problemer, og de skal redigeres i overensstemmelse hermed, før de inkluderes i et understøttet interval.
+* Når du konfigurerer dine mailabonnementer, skal du være opmærksom på, at der er en forsinkelse mellem tidspunktet, hvor abonnementsjobbet startes, og det nøjagtige tidspunkt, hvor mailen sendes.  Hvis du vil minimere forsinkelsen mellem tidspunktet, hvor jobbet startes, og den efterfølgende mail sendes, anbefales det, at du konfigurerer et andet tidspunkt for din planlagte opdatering af data end det tidspunkt, hvor du har planlagt at køre mailabonnementet.
 * For mailabonnementer på dashboard vises nogle felter ikke, hvis der er anvendt sikkerhed på rækkeniveau på dem.  For mailabonnementer på rapporter kan du ikke oprette et abonnement, hvis datasættet anvender sikkerhed på rækkeniveau.
 * Rapportsideabonnementer er bundet til navnet på siden i rapporten. Hvis du abonnerer på en rapportside og omdøber den, skal du genoprette dit abonnement.
 * Din organisation kan konfigurere bestemte indstillinger i Azure Active Directory, som begrænser muligheden for at bruge mailabonnementer i Power BI.  Disse begrænsninger omfatter, men er ikke begrænset til, multifaktorgodkendelse eller IP-intervalbegrænsning, når ressourcer tilgås.
 * Mailabonnementer for rapporter/dashboards, der bruger datasæt med direkte forbindelser, understøttes i øjeblikket ikke, når du abonnerer på brugere ud over dig selv.
-* Mailabonnementer understøtter ikke de fleste [brugerdefinerede visualiseringer](power-bi-custom-visuals.md).  Den eneste undtagelse er de brugerdefinerede visualiseringer, der er blevet [certificeret](power-bi-custom-visuals-certified.md).  
+* Mailabonnementer understøtter ikke de fleste [brugerdefinerede visualiseringer](power-bi-custom-visuals.md).  Den eneste undtagelse er de brugerdefinerede visuelle elementer, der er blevet [certificeret](power-bi-custom-visuals-certified.md).  
 * Mailabonnementer understøtter ikke R-drevne brugerdefinerede visualiseringer på nuværende tidspunkt.  
 * Hvis der er anvendt sikkerhed på rækkeniveau på nogle af dashboardfelterne, vises disse felter ikke.
 * Du kan ikke abonnere for andre brugere til en rapport, der har sikkerhed på rækkeniveau (RLS).
 * Mailabonnementer sendes med rapportens tilstande for standardfilter og -udsnit. Hvis du ændrer standardværdierne, efter du har oprettet abonnementet, vises de ikke i mailen.    
 * For dashboardabonnementer specifikt understøttes visse typer felter endnu ikke.  Det omfatter: streamingfelter, videofelter, felter med brugerdefineret webindhold.     
 * Hvis du deler et dashboard med en kollega uden for din lejer, kan du ikke også oprette et abonnement for den pågældende kollega. Så hvis du er aaron@xyz.com, kan du dele med anyone@ABC.com, men du kan endnu ikke oprette abonnement for anyone@ABC.com, og vedkommende kan ikke abonnere på delt indhold.      
-* Abonnementer mislykkes muligvis på dashboards og rapporter med meget store billeder på grund af størrelsesbegrænsninger for mails.    
 * Power BI afbryder automatisk midlertidigt opdatering af datasæt, der er knyttet til dashboards og rapporter, som ikke er blevet besøgt i mere end to måneder.  Men hvis du føjer et abonnement til et dashboard eller en rapport, afbrydes det ikke midlertidigt, selvom det ikke besøges.    
 * Hvis du ikke modtager abonnementsmailene, skal du kontrollere, at din brugers hovednavn (UPN) kan modtage mails. [Power BI-teamet arbejder på at slække på dette krav](https://community.powerbi.com/t5/Issues/No-Mail-from-Cloud-Service/idc-p/205918#M10163), så hold dig opdateret. 
 * Hvis dit dashboard eller din rapport er i Premium-kapacitet, kan du bruge mailaliasser for grupper til abonnementer i stedet for at oprette abonnementer for kollegaer én mailadresse ad gangen. Aliasserne er baseret på det aktuelle Active Directory. 

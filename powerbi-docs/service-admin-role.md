@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: e4cd85e0e5b4f10ead772875434bce3bd0973505
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2de78497698af3ee00ce77ef9c389169ef460546
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54287550"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58382799"
 ---
 # <a name="understanding-the-power-bi-service-administrator-role"></a>Om rollen Power BI-tjenesteadministrator
 
@@ -25,23 +25,23 @@ Få mere at vide om, hvordan du kan bruge rollen Power BI-tjenesteadministrator 
 
 Rollen Power BI-tjenesteadministrator kan tildeles brugere, som skal have adgang til Power BI-administrationsportalen uden også at tildele dem nogen anden administrativ adgang i Office 365.
 
-Administratorer af Office 365-brugere tildeler brugere rollen Power BI-tjenesteadministrator i Office 365 Administration eller ved hjælp af et PowerShell-script. Når en bruger er tildelt, har vedkommende adgang til [Power BI-administrationsportalen](service-admin-portal.md). Her har vedkommende adgang til lejerbaserede forbrugsdata og kan kontrollere lejerbaseret forbrug af Power BI-funktioner.
+Administratorer af Office 365-brugeradministration tildeler brugere rollen Power BI-tjenesteadministrator i Microsoft 365 Administration eller ved hjælp af et PowerShell-script. Når en bruger er tildelt, har vedkommende adgang til [Power BI-administrationsportalen](service-admin-portal.md). Her har vedkommende adgang til lejerbaserede forbrugsdata og kan kontrollere lejerbaseret forbrug af Power BI-funktioner.
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 
 Rollen Power BI-tjenesteadministrator giver ikke adgang til følgende funktioner:
 
-* Mulighed for at redigere brugere og licenser i Office 365 Administration,
+* Mulighed for at redigere brugere og licenser via Microsoft 365 Administration,
 
 * Adgang til overvågningslogge. Du kan finde flere oplysninger under [Brug af overvågning i din organisation](service-admin-auditing.md).
 
 ## <a name="assign-users-to-the-admin-role-in-office-365"></a>Tildel brugere administratorrollen via Office 365
 
-Følg disse trin for at tildele brugere rollen Power BI-administrator via Office 365 Administration.
+Følg disse trin for at tildele brugere rollen Power BI-administrator via Microsoft 365 Administration.
 
-1. Vælg **Brugere** > **Aktive brugere** i Office 365 Administration.
+1. Vælg **Brugere** > **Aktive brugere** i Microsoft 365 Administration.
 
-    ![Office 365 Administration](media/service-admin-role/powerbi-admin-users.png)
+    ![Microsoft 365 Administration](media/service-admin-role/powerbi-admin-users.png)
 
 1. Vælg den bruger, du vil tildele rollen.
 

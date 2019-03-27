@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: fbb303a85895c08d0dc04630a12076a279e2586f
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
+ms.openlocfilehash: 6aa9265a006135ad87a61979b39a709c874f8d48
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794932"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383331"
 ---
 # <a name="power-bi-premium-faq"></a>Ofte stillede spørgsmål om Power BI Premium
 
@@ -66,7 +66,7 @@ En kapacitet er en gruppering af en eller flere noder, der klargøres af en admi
 Power BI Premium faktureres månedligt med en årlig binding.
 
 **Hvordan køber jeg Power BI Premium?**  
-Power BI Premium er tilgængelig fra Office 365 Administration. Du kan finde flere oplysninger under [Sådan køber du Power BI Premium](service-admin-premium-purchase.md). Du kan også kontakte din Microsoft-repræsentant for at få flere oplysninger.
+Power BI Premium er tilgængelig via Microsoft 365 Administration. Du kan finde flere oplysninger under [Sådan køber du Power BI Premium](service-admin-premium-purchase.md). Du kan også kontakte din Microsoft-repræsentant for at få flere oplysninger.
 
 **Hvordan kan jeg vide, hvor meget Power BI Premium-kapacitet jeg skal købe?**  
 Du kan bruge denne [beregning](https://powerbi.microsoft.com/calculator/) til at få et estimat over, hvor meget Power BI Premium-kapacitet du kan få brug for.

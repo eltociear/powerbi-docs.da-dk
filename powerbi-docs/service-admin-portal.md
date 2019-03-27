@@ -1,6 +1,6 @@
 ---
 title: Power BI-administrationsportal
-description: Administrationsportalen giver adgang til lejeradministration af Power BI i virksomheden. Den indeholder elementer som f.eks. forbrugsdata, adgang til Office 365 Administration og indstillinger.
+description: Administrationsportalen giver adgang til lejeradministration af Power BI i virksomheden. Den indeholder elementer såsom metrikværdier, adgang til Microsoft 365 Administration og indstillinger.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 01/24/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: d592cca246b7d8bf348a9cdd889b6d8ba0e248c1
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 2b5e65ff8e9f603dad0e0537ba52e7da799bf177
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980375"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383548"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
-På administrationsportalen kan du administrere en Power BI-*lejer* for din organisation. Portalen indeholder forskellige elementer, f.eks. forbrugsdata, adgang til Office 365 Administration og indstillinger.
+På administrationsportalen kan du administrere en Power BI-*lejer* for din organisation. Portalen indeholder elementer såsom metrikværdier, adgang til Microsoft 365 Administration og indstillinger.
 
 Hele administrationsportalen kan tilgås af alle brugere, som er globale administratorer i Office 365, eller som er blevet tildelt rollen Power BI-tjenesteadministrator. Hvis du ikke har en af disse roller, kan du kun se **Kapacitetsindstillinger** på portalen. Du kan finde flere oplysninger om Power BI-tjenesteadministratorrollen under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md).
 
@@ -83,9 +83,9 @@ Med disse oplysninger kan du få reel indsigt i, hvordan personer bruger Power B
 
 ## <a name="users"></a>Brugere
 
-Du kan administrere Power BI-brugere, -grupper og -administratorer i Office 365 Administration. Fanen **Brugere** indeholder et link til Administration for din lejer.
+Du kan administrere Power BI-brugere, -grupper og -administratorer i Microsoft 365 Administration. Fanen **Brugere** indeholder et link til Administration for din lejer.
 
-![Gå til O365 Administration](media/service-admin-portal/powerbi-admin-manage-users.png)
+![Gå til Microsoft 365 Administration](media/service-admin-portal/powerbi-admin-manage-users.png)
 
 ## <a name="audit-logs"></a>Overvågningslogge
 

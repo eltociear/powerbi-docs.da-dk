@@ -1,5 +1,5 @@
 ---
-title: Opret forbindelse til Microsoft Graph Security i Power BI Desktop
+title: Opret forbindelse til Microsoft Graph Security API i Power BI Desktop
 description: Opret nemt forbindelse til Microsoft Graph Security API i Power BI Desktop
 author: preetikr
 manager: kfile
@@ -11,87 +11,89 @@ ms.topic: conceptual
 ms.date: 01/29/2019
 ms.author: preetikr
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 2187a24820ef8ea3db9fdd1b7a881dc9cfb6393f
-ms.sourcegitcommit: f07520591db6c3f27ab6490612cc56384abc6633
+ms.openlocfilehash: 9c265a5d8ad1a08396e0bb4fb553a87a134472fd
+ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56298885"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306452"
 ---
-# <a name="connect-to-microsoft-graph-security-in-power-bi-desktop"></a>Opret forbindelse til Microsoft Graph Security i Power BI Desktop
+# <a name="connect-to-the-microsoft-graph-security-api-in-power-bi-desktop"></a>Opret forbindelse til Microsoft Graph Security API i Power BI Desktop
 
-Du kan bruge Power BI Desktop til at oprette forbindelse til Microsoft Graph Security API ved hjælp af Microsoft Graph Security Power BI-connectoren. Det giver dig mulighed for at bygge dashboards og rapporter, så du kan få viden om sikkerhedsrelaterede [beskeder](https://docs.microsoft.com/graph/api/resources/alert?view=graph-rest-1.0) og din [Secure Score](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta). [Microsoft Graph Security API](https://aka.ms/graphsecuritydocs) kan oprette forbindelse til [flere sikkerhedsløsninger](https://aka.ms/graphsecurityalerts) fra Microsoft og økosystempartnere for at give bedre korrelation af beskeder, give adgang til detaljeret kontekstafhængige oplysninger og forenkle automatisering. Dette gør det muligt for organisationer at få hurtig viden og tage handling på tværs af deres sikkerhedsprodukter og samtidig reducere omkostningerne og kompleksiteten ved at bygge og vedligeholde flere integrationer.
+Brug Microsoft Graph Security-connectoren til Power BI Desktop til at oprette forbindelse til [Microsoft Graph Security API](https://aka.ms/graphsecuritydocs). Du kan derefter skabe dashboards og rapporter, så du kan få indsigt i dine sikkerhedsrelaterede [beskeder](https://docs.microsoft.com/graph/api/resources/alert?view=graph-rest-1.0) og [sikkerhedsscorer](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
 
-## <a name="prerequisites-to-connect-with-the-microsoft-graph-security-connector"></a>Forudsætningerne for at oprette forbindelse til Microsoft Graph Security-connectoren
+Microsoft Graph Security API'en opretter forbindelse til [flere sikkerhedsløsninger](https://aka.ms/graphsecurityalerts) fra Microsoft og Microsofts økosystem af partnere for at gøre korrelation mellem beskeder nemmere. Denne kombination giver adgang til detaljerede kontekstuelle oplysninger og forenkler automatisering. Den gør det muligt for organisationer hurtigt at få indsigt og reagere på tværs af flere sikkerhedsprodukter og samtidigt reducere omkostningerne og kompleksiteten.
 
-* Hvis du vil bruge Microsoft Graph Security-connectoren, skal du *give eksplicit* samtykke til Azure Active Directory-lejeradministratoren, da det er en del af [Microsoft Graph Security Authentication-kravene](https://aka.ms/graphsecurityauth). Dette samtykke kræver program-id og navn for Microsoft Graph Security Power BI-connectoren, som du også finder på [Azure-portalen](https://portal.azure.com):
+## <a name="prerequisites-to-use-the-microsoft-graph-security-connector"></a>Forudsætninger for at bruge Microsoft Graph Security-connectoren
 
-   | Egenskab | Værdi |
-   |----------|-------|
-   | **Programnavn** | `MicrosoftGraphSecurityPowerBIConnector` |
-   | **Program-id** | `cab163b7-247d-4cb9-be32-39b6056d4189` |
-   |||
+Hvis du vil bruge Microsoft Graph Security-connectoren, skal du have *udtrykkelig* samtykke fra administratoren af Azure Active Directory-lejeren (Azure AD). Se [Krav til godkendelse af Microsoft Graph Security](https://aka.ms/graphsecurityauth).
+Samtykke kræver connectorens program-id og -navn, hvilket er nævnt her og tilgængeligt på [Azure Portal](https://portal.azure.com):
 
-   For at give samtykke til connectoren skal din Azure AD-lejeradministrator følge et af disse trin:
+| Egenskab | Værdi |
+|----------|-------|
+| **Programnavn** | `MicrosoftGraphSecurityPowerBIConnector` |
+| **Program-id** | `cab163b7-247d-4cb9-be32-39b6056d4189` |
+|||
 
-   * [Giv lejeradministratoren samtykke til Azure AD-programmer](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent).
+For at give samtykke for connectoren skal administratoren af din Azure AD-lejer følge en af disse metoder:
 
-   * Når din logikapp køres første gang, kan din app anmode om samtykke fra din Azure AD-lejeradministrator via [funktionen til programsamtykke](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
+* [Giv samtykke til Azure AD-programmer](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent)
+
+* Besvar en anmodning, som din logikapp sender i løbet af den første kørsel via [oplevelsen for programsamtykke](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)
    
-* Den brugerkonto, der bruges til at logge på for at oprette forbindelse til Microsoft Graph Security Power BI-connectoren, skal være medlem af rollen Security Reader Limited i Azure AD (enten Security Reader eller Security Administrator). Følg trinnene i afsnittet [Tildel Azure AD-roller til brugere](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users). 
+Den brugerkonto, der bruges til at logge på Microsoft Graph Security-connectoren, skal være medlem af rollen Begrænset administrator for Sikkerhedslæser i Azure AD enten som *Sikkerhedslæser* eller *Sikkerhedsadministrator*. Se [Tildel Azure AD-roller til brugere](https://docs.microsoft.com/graph/security-authorization#assign-azure-ad-roles-to-users).
 
 ## <a name="using-the-microsoft-graph-security-connector"></a>Brug af Microsoft Graph Security-connectoren
 
-Følg disse trin for at bruge **Microsoft Graph Security**-connectoren:
+Følg disse trin for at bruge connectoren:
 
-1. Vælg **Hent data -> Flere…** på båndet **Hjem** i Power BI Desktop.
-2. Vælg **Onlinetjenester** fra kategorierne i venstre side.
-3. Klik på **Microsoft Graph Security (Beta)**.
+1. Vælg **Hent data** > **Mere** på båndet **Hjem** i Power BI Desktop.
+2. Vælg **Onlinetjenester** fra listen over kategorier i venstre side af vinduet.
+3. Vælg **Microsoft Graph Security (beta)**.
 
-    ![Hent data](media/desktop-connect-graph-security/GetData.PNG)
+    ![Dialogboksen Hent data](media/desktop-connect-graph-security/GetData.PNG)
     
-4. Vælg den version af Microsoft Graph API, du vil sende forespørgsler til, i vinduet **Microsoft Graph Security**. Du kan vælge mellem v1.0 og beta.
+4. Vælg den version af Microsoft Graph API, du vil sende forespørgsler til, i vinduet **Microsoft Graph Security**: **v1.0** eller **beta**.
 
-    ![Vælg en version](media/desktop-connect-graph-security/selectVersion.PNG)
+    ![Dialogboksen Vælg version](media/desktop-connect-graph-security/selectVersion.PNG)
     
-5. Log på din Azure Active Directory-konto, når du bliver bedt om det. Denne konto skal have rollen **Security Reader**, som det blev nævnt i forudsætningerne herover.
+5. Log på din Azure Active Directory-konto, når du bliver bedt om det. Denne konto skal have rollen *Sikkerhedslæser* eller *Sikkerhedsadministrator*, som nævnt i forrige afsnit.
 
-    ![Log på](media/desktop-connect-graph-security/SignIn.PNG)
+    ![Log på](media/desktop-connect-graph-security/SignIn.PNG) 
     
-6. Hvis du er lejeradministrator, **og** hvis du endnu ikke har givet samtykke til Microsoft Graph Security Power BI-connectoren (program) ifølge forudsætningerne, får du vist følgende dialogboks. Husk at vælge "**Samtykke på vegne af din organisation**".
+6. Hvis du er lejeradministrator, *og* du endnu ikke har givet samtykke til Microsoft Graph Security Power BI-connectoren (program), får du vist følgende dialogboks. Vælg **Samtykke på vegne af din organisation**.
 
-    ![Administratorsamtykke](media/desktop-connect-graph-security/AdminConsent.PNG)
+    ![Dialogboksen Administratorsamtykke](media/desktop-connect-graph-security/AdminConsent.PNG)
     
-7. Når du er logget på, kan du se følgende vindue, der angiver, om du er blevet godkendt. Vælg **Opret forbindelse**.
+7. Når du er logget på, kan du se følgende dialogboks, der angiver, at du er blevet godkendt. Vælg **Opret forbindelse**.
 
-    ![Logget på](media/desktop-connect-graph-security/SignedIn.PNG)
+    ![Dialogboksen "Du er i øjeblikket logget på"](media/desktop-connect-graph-security/SignedIn.PNG)
     
-8. Når du har oprettet forbindelse, vises vinduet **Navigator** på følgende måde, og objekterne vises som beskeder osv. De er tilgængelige i [Microsoft Graph Security API](https://aka.ms/graphsecuritydocs) for den version, du valgte i det foregående trin. Vælg et eller flere objekter, du kan importere og bruge i **Power BI Desktop**. Klik på **Indlæs** for at komme til resultatet, som er beskrevet på trin 10.
+8. Når du har oprettet forbindelse, vil du i vinduet **Navigator** se beskeder, sikkerhedsscorer og andre objekter, der er tilgængelige i [Microsoft Graph Security API](https://aka.ms/graphsecuritydocs), for den version, du valgte i trin 4. Vælg et eller flere objekter, du kan importere og bruge i Power BI Desktop. Vælg derefter **Indlæs** for at se resultatvisningen, der vises efter trin 9.
 
-   ![Navigationstabel](media/desktop-connect-graph-security/NavTable.PNG)
+    ![Dialogboksen Navigator](media/desktop-connect-graph-security/NavTable.PNG)
     
-9. Hvis du vil foretage en avanceret forespørgsel i Microsoft Graph Security API, skal du vælge funktionen **Angiv brugerdefineret URL-adresse til Microsoft Graph Security for at filtrere resultaterne**. Det giver dig mulighed for at foretage en [OData.Feed](https://docs.microsoft.com/power-bi/desktop-connect-odata)-forespørgsel til Microsoft Graph Security API med de tilladelser, der kræves for at få adgang til API'en.
+9. Hvis du vil foretage en avanceret forespørgsel i Microsoft Graph Security API, skal du vælge **Angiv brugerdefineret URL-adresse til Microsoft Graph Security for at filtrere resultaterne**. Brug denne funktion til at foretage en [OData.Feed](https://docs.microsoft.com/power-bi/desktop-connect-odata)-forespørgsel til Microsoft Graph Security API med de påkrævede tilladelser.
 
-   > [!NOTE]
-   > Den serviceUri, der bruges som eksempel herunder, er `https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'`. Se [Graph-understøttede ODATA-forespørgselsparametre](https://docs.microsoft.com/graph/query-parameters) for at bygge forespørgsler, der kan filtrere, sortere eller hente de seneste resultater.
+   Følgende eksempel bruger `https://graph.microsoft.com/v1.0/security/alerts?$filter=Severity eq 'High'` *serviceUri*. I [Indstillinger for forespørgsler til OData-systemet](https://docs.microsoft.com/graph/query-parameters) kan du se, hvordan du skaber forespørgsler for at filtrere, anmode om eller hente de seneste resultater.
 
-   ![OData-feed](media/desktop-connect-graph-security/ODataFeed.PNG)
+   ![OdataFeed-eksempel](media/desktop-connect-graph-security/ODataFeed.PNG)
     
-   Når du vælger **Invoke**, vil OData.Feed-funktionen foretage et kald til API'en, der åbner Forespørgselseditor, så du kan filtrere og finindstille det datasæt, du vil bruge, og derefter indlæse dette finindstillede datasæt i Power BI Desktop.
+   Når du vælger **Kør**, foretager **OData.Feed**-funktionen et kald til API'en, som åbner Forespørgselseditor. Du kan filtrere og finindstille datasæt, du vil bruge. Derefter indlæser du data i Power BI Desktop.
 
-10. I følgende billede kan du se resultatvinduet for de Microsoft Graph Security-objekter, du oprettede forespørgslen for.
+Her er resultaterne for de Microsoft Graph Security-objekter, vi sendte forespørgsler om:
 
-   ![Resultat](media/desktop-connect-graph-security/Result.PNG)
+   ![Eksempel på vindue med resultater](media/desktop-connect-graph-security/Result.PNG)
     
 
-Du er nu klar til at bruge de data, der er importeret fra Microsoft Graph Security-connectoren, i Power BI Desktop til at oprette visualiseringer og rapporter eller interagere med andre data, som du måske vil oprette forbindelse til og importere, f.eks. andre Excel-projektmapper, databaser eller en hvilken som helst anden datakilde.
+Nu er du klar til at bruge de importerede data fra Microsoft Graph Security-connector i Power BI Desktop. Du kan oprette grafik eller rapporter. Eller du kan interagere med andre data, du importerer fra Excel-projektmapper, databaser eller andre datakilder.
 
 ## <a name="next-steps"></a>Næste trin
-* Se Power BI-eksempler og -skabeloner ved hjælp af denne connector under [Microsoft Graph Security GitHub Power BI-eksemplerne](https://aka.ms/graphsecuritypowerbiconnectorsamples).
+* Se Power BI-eksempler og -skabeloner, som bruger denne connector under [GitHub Power BI-eksempler til Microsoft Graph Security](https://aka.ms/graphsecuritypowerbiconnectorsamples).
 
-* Se nogle brugerscenarier og yderligere oplysninger i [dette blogindlæg om Microsoft Graph Security Power BI-connector](https://aka.ms/graphsecuritypowerbiconnectorblogpost).
+* I [dette blogindlæg om Power BI-connectorer til Microsoft Graph Security](https://aka.ms/graphsecuritypowerbiconnectorblogpost) kan du se brugerscenarier og yderligere oplysninger.
 
-* Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:
+* Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger i følgende ressourcer:
 
     * [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
     * [Datakilder i Power BI Desktop](desktop-data-sources.md)

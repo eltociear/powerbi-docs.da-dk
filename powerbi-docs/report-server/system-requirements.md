@@ -2,21 +2,22 @@
 title: Hardware- og softwarekrav til installation af Power BI-rapportserver
 description: I denne artikel kan du se minimumkrav til hardware og software, hvis du vil installere og køre Power BI-rapportserver.
 author: markingmyname
+ms.author: maghan
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/08/2018
-ms.author: maghan
-ms.openlocfilehash: 763b79b50266678a78dc956372f504f30836c4fc
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 28ff098c0f9e228b485a7eb94830ba3736a1463f
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292953"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383502"
 ---
 # <a name="hardware-and-software-requirements-for-installing-power-bi-report-server"></a>Hardware- og softwarekrav til installation af Power BI-rapportserver
+
 I denne artikel kan du se minimumkrav til hardware og software, hvis du vil installere og køre Power BI-rapportserver.
 
 ## <a name="processor-memory-and-operating-system-requirements"></a>Krav til processor, hukommelse og operativsystem
@@ -28,14 +29,14 @@ I denne artikel kan du se minimumkrav til hardware og software, hvis du vil inst
 | Hukommelse |**Minimum:** 1 GB<br/><br/> **Anbefalet:** Mindst 4 GB |
 | Processorhastighed |**Minimum:** x64-processor: 1,4 GHz<br/><br/> **Anbefalet:** 2,0 GHz eller hurtigere |
 | Processortype |x64-processor: AMD Opteron, AMD Athlon 64, Intel Xeon med understøttelse af Intel EM64T, Intel Pentium IV med understøttelse af EM64T |
-| Operativsystem |Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows Server 2012 R2 Datacenter<br><br>Windows Server 2012 R2 Standard<br><br>Windows Server 2012 R2 Essentials<br><br>Windows Server 2012 R2 Foundation<br><br>Windows Server 2012 Datacenter<br><br>Windows Server 2012 Standard<br><br>Windows Server 2012 Essentials<br><br>Windows Server 2012 Foundation<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br><br>Windows 8.1<br><br>Windows 8.1 Pro<br><br>Windows 8.1 Enterprise<br><br>Windows 8<br><br>Windows 8 Pro<br><br>Windows 8 Enterprise |
+| Operativsystem |Windows Server 2019 Datacenter<br><br>Windows Server 2019 Standard<br><br>Windows Server 2016 Datacenter<br><br>Windows Server 2016 Standard<br><br>Windows Server 2012 R2 Datacenter<br><br>Windows Server 2012 R2 Standard<br><br>Windows Server 2012 R2 Essentials<br><br>Windows Server 2012 R2 Foundation<br><br>Windows Server 2012 Datacenter<br><br>Windows Server 2012 Standard<br><br>Windows Server 2012 Essentials<br><br>Windows Server 2012 Foundation<br><br>Windows 10 Home<br><br>Windows 10 Professional<br><br>Windows 10 Enterprise<br><br>Windows 8.1<br><br>Windows 8.1 Pro<br><br>Windows 8.1 Enterprise<br><br>Windows 8<br><br>Windows 8 Pro<br><br>Windows 8 Enterprise |
 
 > [!NOTE]
 > Installation af Power BI-rapportserver er kun understøttet på x64-processorer.
-> 
-> 
+
 
 ## <a name="database-server-version-requirements"></a>Krav til version af databaseserver
+
 SQL Server bruges til at hoste rapportserverdatabaserne. Forekomsten af SQL Server-databaseprogrammet kan være en lokal eller ekstern forekomst. De understøttede versioner af SQL Server-databaseprogrammet, som kan bruges til at hoste rapportserverdatabaserne, er følgende:
 
 * SQL Server 2017
@@ -46,18 +47,21 @@ SQL Server bruges til at hoste rapportserverdatabaserne. Forekomsten af SQL Serv
 Når du opretter rapportserverdatabasen på en fjerncomputer, skal du konfigurere forbindelsen til at bruge en domænebrugerkonto eller en tjenestekonto med netværksadgang. Hvis du beslutter at bruge en ekstern SQL Server-forekomst, skal du overveje grundigt, hvilke legitimationsoplysninger rapportserveren skal bruge til at oprette forbindelse til SQL Server-forekomsten. Få mere at vide i [Konfigurer en rapportservers databaseforbindelse](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)
 
 ## <a name="considerations"></a>Overvejelser
+
 Power BI-rapportserver installerer standardværdier for at konfigurere de hovedindstillinger, der kræves for at gøre en rapportserver driftsklar. Der er følgende betingelser:
 
 * Et SQL Server-databaseprogram skal være tilgængeligt efter konfigurationen, og før du konfigurerer databasen for rapportserveren. Forekomsten af databaseprogrammet hoster rapportserverdatabasen, som oprettes af Reporting Services Configuration Manager. Databaseprogrammet er ikke påkrævet til selve konfigurationen.
-- I [Reporting Services-funktioner, der understøttes af udgaver af SQL Server](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) vises forskellene mellem diverse udgaver af SQL Server.
+* I [Reporting Services-funktioner, der understøttes af udgaver af SQL Server](https://docs.microsoft.com/sql/reporting-services/reporting-services-features-supported-by-the-editions-of-sql-server-2016) vises forskellene mellem diverse udgaver af SQL Server.
 * Den brugerkonto, der kører konfigurationen, skal være den lokale administratorgruppe.
 * Den brugerkonto, der kører Reporting Services Configuration Manager, skal have tilladelse til at få adgang til og oprette databaser på den forekomst af databaseprogrammet, der hoster rapportserverdatabaserne.
 * Konfigurationen skal kunne bruge standardværdierne til at reservere de URL-adresser, der giver adgang til rapportserveren og webportalen. Disse værdier er port 80, et stærkt jokertegn og navnene på de virtuelle mapper i formatet **ReportServer** og **Reports**.
 
 ## <a name="read-only-domain-controller-rodc"></a>Skrivebeskyttet domænecontroller (RODC)
+
  Du kan installere rapportserveren i et miljø, der har en skrivebeskyttet domænecontroller (RODC). Reporting Services skal dog have adgang til en skrivebeskyttet domænecontroller for at fungere korrekt. Hvis Reporting Services kun har adgang til en skrivebeskyttet domænecontroller, kan der opstå fejl under forsøg på at administrere tjenesten.
 
 ## <a name="power-bi-reports-and-analysis-services-live-connections"></a>Power BI-rapporter og Analysis Services-liveforbindelser
+
 Du kan bruge en liveforbindelse til tabellariske eller flerdimensionelle forekomster. Analysis Services-serveren skal være den korrekte version og udgave for at fungere korrekt.
 
 | **Serverversion** | **Påkrævet SKU** |
@@ -67,6 +71,7 @@ Du kan bruge en liveforbindelse til tabellariske eller flerdimensionelle forekom
 | 2016 og nyere |Standard-SKU eller nyere |
 
 ## <a name="next-steps"></a>Næste trin
+
 [Hvad er Power BI-rapportserveren?](get-started.md)  
 [Administratoroversigt](admin-handbook-overview.md)  
 [Installer Power BI-rapportserver](install-report-server.md)  
@@ -74,4 +79,3 @@ Du kan bruge en liveforbindelse til tabellariske eller flerdimensionelle forekom
 [Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

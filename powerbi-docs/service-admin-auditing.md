@@ -11,12 +11,12 @@ ms.date: 11/16/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 59916f904c2905a6858e0c20a67a2c0eae9e8cca
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 27776b251734d025e4dcde9f525f321008647455
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980398"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383479"
 ---
 # <a name="using-auditing-within-your-organization"></a>Brug af overvågning i din organisation
 
@@ -34,7 +34,7 @@ Du skal opfylde disse krav for at få adgang til overvågningslogger:
 
     Hvis du vil give konti, der ikke er administratorer, adgang til overvågningsloggene, skal du føje brugeren til en af disse rollegrupper som medlem. Du kan også oprette en brugerdefineret rollegruppe i Exchange Administration, tildele rollen Audit Logs eller View-Only Audit Logs til denne gruppe og derefter føje den konto, der ikke er administrator, til den nye rollegruppe. Du kan finde flere oplysninger under [Administrer rollegrupper i Exchange Online](/Exchange/permissions-exo/role-groups).
 
-    Hvis du ikke kan få adgang til Exchange Administration via Office 365 Administration, skal du gå til https://outlook.office365.com/ecp og logge på ved hjælp af dine legitimationsoplysninger.
+    Hvis du ikke kan få adgang til Exchange Administration via Microsoft 365 Administration, skal du gå til https://outlook.office365.com/ecp og logge på ved hjælp af dine legitimationsoplysninger.
 
 * Hvis du har adgang til overvågningsloggen, men du ikke er global administrator eller administrator af Power BI-tjenesten, vil du ikke have adgang til portalen Power BI Administration. I dette tilfælde skal du bruge et direkte link til [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog).
 
@@ -50,9 +50,9 @@ Power BI-overvågningslogs er tilgængelige direkte via [Office 365 Security & C
 
 1. Vælg **Overvågningslogger**.
 
-1. Vælg **Gå til O365 Administration**.
+1. Vælg **Gå til Microsoft 365 Administration**.
 
-   ![Gå til O365 Administration](media/service-admin-auditing/audit-log-o365-admin-center.png)
+   ![Gå til Microsoft 365 Administration](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
 ## <a name="search-only-power-bi-activities"></a>Søg kun i Power BI-aktiviteter
 
@@ -214,7 +214,7 @@ Følgende aktiviteter overvåges af Power BI.
 | Power BI-datakilde er overtaget                   | TakeOverDatasource                          |                                          |
 | Power BI-datasæt er overtaget                        | TakeOverDataset                             |                                          |
 | Publicering af Power BI-app er fjernet                          | UnpublishApp                                |                                          |
-| Opdater indstillinger for ressourcestyring af kapacitet      | UpdateCapacityResourceGovernanceSettings    | I øjeblikket ikke en del af Office 365-administrationsportalen |
+| Opdater indstillinger for ressourcestyring af kapacitet      | UpdateCapacityResourceGovernanceSettings    | Findes i øjeblikket ikke i Microsoft 365 Administration |
 | Kapacitetsadministrator er opdateret                            | UpdateCapacityAdmins                        |                                          |
 | Vist navn for kapacitet er opdateret                     | UpdateCapacityDisplayName                   |                                          |
 | Power BI-indstillinger for organisation er opdateret          | UpdatedAdminFeatureSwitch                   |                                          |

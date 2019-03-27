@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 9663c7eb6921718ac4b9690ddc50d78e59c6db3b
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
+ms.openlocfilehash: abc45f3c32ee5db81f71295268db85bfce23aafd
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174884"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430432"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -274,9 +274,9 @@ Ja, du kan bruge din [Azure-kredit](https://azure.microsoft.com/free/) til Power
 
 Idet Power BI Embedded er en del af Azure, er det muligt at bruge tjenesten med [kreditten på 200 USD, der modtages ved tilmeldingen til Azure](https://azure.microsoft.com/free/).
 
-### <a name="is-power-bi-embedded-available-for-sovereign-clouds-us-government-germany-china"></a>Er Power BI Embedded tilgængelig for suveræne cloudløsninger (den amerikanske regering, Tyskland, Kina)?
+### <a name="is-power-bi-embedded-available-for-national-clouds-us-government-germany-china"></a>Er Power BI Embedded tilgængelig til nationale cloudmiljøer (US Government, Tyskland, Kina)?
 
-Power BI Embedded er tilgængelig for visse [suveræne cloudløsninger](embed-sample-for-customers-sovereign-clouds.md). Det er stadig **IKKE** tilgængeligt for cloudløsninger i Kina.
+Power BI Embedded er også tilgængelige til [nationale cloudmiljøer](embed-sample-for-customers-national-clouds.md).
 
 ### <a name="is-power-bi-embedded-available-for-non-profits-and-educational"></a>Er Power BI Embedded tilgængelig for almennyttige organisationer og uddannelsesinstitutioner?
 

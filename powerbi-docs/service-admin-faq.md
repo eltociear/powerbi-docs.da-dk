@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 25d6c8020e500096507ba5e80a020a7a1c3052a6
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 54bdc0cb3490cf2149f2fda51939c201cd51518f
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980421"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383433"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration af Power BI – ofte stillede spørgsmål
 
@@ -60,7 +60,7 @@ Nogle af procedurerne i dette afsnit kræver Windows PowerShell-scripts. Hvis du
 
 ### <a name="how-do-users-sign-up-for-power-bi"></a>Hvordan tilmelder brugerne sig Power BI?
 
-Som administrator kan du tilmelde dig Power BI via [webstedet Power BI](https://powerbi.microsoft.com) eller siden [Purchase services](https://admin.microsoft.com/AdminPortal/Home#/catalog) (Køb tjenester) i Office 365-administration. Når en administrator tilmelder sig Power BI, kan vedkommende tildele brugerlicenser til brugere, der bør have adgang.
+Som administrator kan du tilmelde dig Power BI via [Power BI-webstedet](https://powerbi.microsoft.com) eller siden [Køb tjenester](https://admin.microsoft.com/AdminPortal/Home#/catalog) i Microsoft 365 Administration. Når en administrator tilmelder sig Power BI, kan vedkommende tildele brugerlicenser til brugere, der bør have adgang.
 
 Individuelle brugere i din organisation kan derudover muligvis tilmelde sig Power BI på [Power BI-webstedet](https://powerbi.microsoft.com). Når en bruger i organisationen tilmelder sig Power BI, tildeles brugeren automatisk en Power BI-licens. Du kan finde flere oplysninger i [Tilmelding til Power BI som enkeltperson](service-self-service-signup-for-power-bi.md) og [Power BI-licenser i din organisation](service-admin-licensing-organization.md).
 
@@ -169,7 +169,7 @@ Der er tre scenarier, der kan gøre sig gældende for brugere i din organisation
 
 ### <a name="how-do-we-manage-power-bi"></a>Hvordan administrerer vi Power BI?
 
-Power BI har en administratorportal, der giver dig mulighed for at se brugsstatistik, den indeholder et link til Office 365 Administration for at administrere brugere og grupper, og gør det muligt at kontrollere indstillinger på tværs af lejere.
+Power BI har en administrationsportal, der giver dig mulighed for at se brugsstatistik. Den indeholder også et link til Microsoft 365 Administration, hvor du kan administrere brugere og grupper og giver dig mulighed for at styre indstillinger på tværs af lejere.
 
 Din konto skal være markeret som en **Global administrator** i Office 365 eller Azure Active Directory, eller den skal være tildelt Power BI-tjenesteadministratorrollen for at få adgang til Power BI-administrationsportalen. Du kan finde flere oplysninger i [Beskrivelse af rollen som Power BI administrator](service-admin-role.md) og [Power BI-administrationsportalen](service-admin-portal.md).
 
@@ -196,7 +196,7 @@ Hvis du ikke foretager dig noget, oprettes der en lejer for hvert brugermaildom�
 
 Hvis en bruger er tilmeldt Power BI, men du ikke længere ønsker, at vedkommende skal have adgang til Power BI, kan du fjerne Power BI-licensen fra brugeren.
 
-1. Naviger til [Office 365 Administration](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. Naviger til [Microsoft 365 Administration](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
 1. I navigationspanelet til venstre skal du vælge **Brugere** og derefter vælge  > **Aktive brugere**.
 
@@ -214,7 +214,7 @@ Hvis en bruger er tilmeldt Power BI, men du ikke længere ønsker, at vedkommend
 
 Brugere, der har tilmeldt sig lejeren som en del af dette program, tildeles en unik licens, som du kan filtrere efter i din aktive brugerrude i administratordashboardet. Følg disse trin for at oprette denne nye visning.
 
-1. Naviger til [Office 365 Administration](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+1. Naviger til [Microsoft 365 Administration](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
 1. I navigationspanelet til venstre skal du vælge **Brugere** og derefter vælge  > **Aktive brugere**.
 
@@ -232,7 +232,7 @@ Brugere, der har tilmeldt sig lejeren som en del af dette program, tildeles en u
 
 Du oplever måske en stigning i anmodninger om nulstilling af adgangskode. Se [Nulstil en brugers adgangskode](/office365/admin/add-users/reset-passwords) for at få flere oplysninger om denne proces.
 
-Du kan fjerne en bruger fra lejeren vha. standardprocessen i Office 365 Administration. Men hvis brugeren stadig har en aktiv mailadresse fra organisationen, kan vedkommende tilmelde sig igen, medmindre du blokerer alle brugere fra at tilmelde sig.
+Du kan fjerne en bruger fra lejeren vha. standardprocessen i Microsoft 365 Administration. Men hvis brugeren stadig har en aktiv mailadresse fra organisationen, kan vedkommende tilmelde sig igen, medmindre du blokerer alle brugere fra at tilmelde sig.
 
 ### <a name="where-is-my-power-bi-tenant-located"></a>Hvor er min Power BI-lejer placeret?
 

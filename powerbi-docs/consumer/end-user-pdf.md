@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 02/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 35efd62e6f00edd9ce6b58774dd73925a721dec5
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
+ms.openlocfilehash: c268bd370f32d2089b3b80c7cf4317df33e67280
+ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661922"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306475"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Eksportér rapporter fra Power BI til PDF
 Med Power BI kan du publicere din rapport i PDF-format og nemt oprette et dokument ud fra din Power BI-rapport. Når du **eksporterer til PDF**, bliver hver side i Power BI-rapporten en enkelt side i PDF-dokumentet.
@@ -64,7 +64,7 @@ Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbe
 
 * Hvis du deler et dashboard med en person uden for din organisation (og dermed en bruger, der ikke er i din Power BI-lejer), kan denne bruger ikke eksportere det delte dashboards tilknyttede rapporter til PDF. Hvis du f.eks. er aaron@contoso.com, kan du dele med cassie@cohowinery.com. Men cassie@cohowinery.com kan ikke eksportere de tilknyttede rapporter til PDF.
 
-* Når du eksporterer rapporter til PDF, som indeholder et baggrundsbillede, kan du muligvis se et forvrænget billede i eksporten, hvis du bruger indstillingen "Tilpas" til sidens baggrund.  For at få de bedste resultater anbefales det, at du bruger indstillingerne "Normal" eller "Udfyld" for at undgå problemer med dit eksporterede dokument.
+* Når du eksporterer rapporter til PDF, som indeholder et baggrundsbillede, kan du muligvis se et forvrænget billede i eksporten, hvis du bruger indstillingen "Normal" eller "Udfyld" til sidens baggrund.  Det anbefales, at du bruger indstillingen "Tilpas" for at få de bedste resultater og undgå problemer med dit eksporterede dokument.
 
 * I Power BI-tjenesten anvendes din Power BI-sprogindstilling som sprog i forbindelse med PDF-eksporten. Hvis du vil se eller angive dine sprogindstillinger, skal du vælge tandhjulsikonet > **Indstillinger** > **Generelt** > **Sprog**.
 

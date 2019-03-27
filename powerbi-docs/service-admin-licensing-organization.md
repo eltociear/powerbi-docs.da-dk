@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 65889d1082cee75ed56edc67ece9c99b5f344a6e
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 5da6b465adc544bf64fd4dfb090a2e1faabee59d
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430215"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383232"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI-licenser i din organisation
 
@@ -35,7 +35,7 @@ Du kan købe Power BI Pro-licenser gennem Microsoft Office 365 eller gennem en c
 
 Enkeltpersoner i din organisation kan tilmelde sig en Power BI Pro-prøveversion. Du kan flere oplysninger i [Tilmelding til Power BI som enkeltperson](service-self-service-signup-for-power-bi.md).
 
-Brugere, der benytter sig af Power BI Pro (prøveversion) inde i produktet, vises ikke i Office 365-administrationsportalen som Power BI Pro-prøveversionsbrugere (de vises som Power BI (gratis)-brugere). De vises dog som brugere af Power BI Pro (prøveversion) på siden Administrer lager i Power BI.
+Brugere, der benytter sig af Power BI Pro (prøveversion) i produktet, vises ikke i Microsoft 365 Administration som brugere af prøveversionen af Power BI Pro. De vises som gratis brugere af Power BI. De vises dog som brugere af Power BI Pro (prøveversion) på siden Administrer lager i Power BI.
 
 ### <a name="power-bi-pro-trial-for-organizations"></a>Power BI Pro-prøveversion til organisationer
 
@@ -47,7 +47,7 @@ Vær opmærksom på følgende, før du følge trinnene for at tilmelde dig:
 
 * Der er en grænse på én organisationsprøveversion pr. lejer. Det betyder, at hvis en person allerede har anvendt Power BI Pro (prøveversion) på din lejer, kan du ikke gøre det igen. Hvis du har brug for hjælp til dette, kan du kontakte [Office 365-faktureringssupport](https://support.office.microsoft.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671).
 
-1. Naviger til [Office 365 Administration](https://portal.office.com/adminportal/home#/homepage).
+1. Naviger til [Microsoft 365 Administration](https://portal.office.com/adminportal/home#/homepage).
 
 1. Vælg **Fakturering** og derefter **Abonnementer** i den venstre navigationsrude.
 
@@ -71,7 +71,7 @@ Nu kan du [tildele licenser i Office 365](https://support.office.com/article/ass
 
 Brugerne i organisationen kan få adgang til Power BI (gratis)-licenser på to forskellige måder:
 
-* Du kan tildele dem en licens til Power BI på Office 365-administrationsportalen.
+* Du kan tildele dem en licens til Power BI via Microsoft 365 Administration.
 
 * Hvis en bruger [tilmelder sig en Power BI Pro-prøveversion](service-self-service-signup-for-power-bi.md), og prøveversionen udløber, tildeles vedkommende en gratis licens.
 
@@ -81,7 +81,7 @@ Hvis du vil administrere licensanmodninger og -tildelinger centralt, skal du fø
 
 Denne licensblok bliver tilgængelig, når en person første gang har tilmeldt sig Power BI som enkeltperson. Under denne proces knyttes licensblokken til din organisation, og der tildeles en licens til den bruger, der tilmelder sig.
 
-1. Kontroller, om **ubegrænset** er angivet, under **Fakturering** > **Licenser** i Office 365 Administration.
+1. I Microsoft 365 Administration under **Fakturering** > **Licenser** skal du kigge efter **ubegrænset**.
 
     ![Ubegrænset gratis licensblok](media/service-admin-licensing-organization/unlimited-licenses.png)
 
@@ -93,7 +93,7 @@ Denne licensblok bliver tilgængelig, når en person første gang har tilmeldt s
 
 Hvis den ubegrænsede licensblok Power BI (gratis) ikke er tilgængelig, og du ikke vil foretage en individuel tilmelding, kan du følge denne fremgangsmåde.
 
-1. Naviger til [Office 365 Administration](https://portal.office.com/admin/default.aspx).
+1. Naviger til [Microsoft 365 Administration](https://portal.office.com/admin/default.aspx).
 
 1. Vælg **Fakturering** > **Abonnementer** i den venstre navigationsrude.
 

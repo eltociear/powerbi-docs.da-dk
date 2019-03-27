@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 2/9/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 5a9fa6b5e854fc51487f0a0b4feaef8650b94057
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: 96faaf87c2aa04bdc1175f1b7cb78229bbb87a24
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216855"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383709"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
@@ -346,7 +346,7 @@ I dag har vi udsendt en lang række af de mest efterspurgte funktioner. [Læs bl
 
 ***Administrationsportal***
 
-* Nem brugeradministration med et link til O365 Administration
+* Nem brugeradministration med et link til Microsoft 365 Administration
 * Mulighed for at deaktivere publicering på internettet
 * Forhindring af brugere i at publicere indholdspakker til hele organisationen
 * Mulighed for at deaktivere deling af indhold med eksterne brugere
@@ -508,7 +508,7 @@ Du kan få alle detaljerne ved at besøge [Power BI-bloggen](http://blogs.msdn.c
 * Nyt websted til Power BI-dokumentation – oversat
 * Forbedret indlæsningstid for rapporter
 * Opdater organisationsindholdspakker kun med ændringer i rapporten
-* Power BI-systemstatus i Office 365 Administration
+* Tilstandsstatus for Power BI i Microsoft 365 Administration
 * KPI'er og billeder i tabeller, matricer og kort
 
 Du kan få alle detaljerne ved at besøge [Power BI-bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/11/11/power-bi-weekly-service-update-1110.aspx)

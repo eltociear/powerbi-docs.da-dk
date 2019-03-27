@@ -2,27 +2,29 @@
 title: Power BI-sikkerhed
 description: Power BI-sikkerhed. Sådan relaterer Power BI sig til Azure Active Directory og andre Azure-tjenester. Dette emne indeholder også et link til en hvidbog, der går mere i dybden.
 author: davidiseminger
+ms.author: davidi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/11/2019
-ms.author: davidi
 LocalizationGroup: Administration
-ms.openlocfilehash: e067ac55d606372c05da1e0ebff76e4d05f35e9c
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
+ms.openlocfilehash: b70d23d7f4f5dfab9273319ad890a21c9b74ead2
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757501"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430363"
 ---
 # <a name="power-bi-security"></a>Power BI-sikkerhed
+
 Du kan finde en detaljeret beskrivelse af Power BI-sikkerhed ved at [læse det tilhørende whitepaper om Power BI-sikkerhed](whitepaper-powerbi-security.md).
 
 Power BI-tjenesten er bygget på **Azure**, som er Microsofts Cloud Computing-infrastruktur og -platform. Power BI-tjenestens arkitektur er baseret på to klynger – Web Front End (**WFE**) og **Back-End**. WFE-klyngen administrerer den indledende forbindelse og godkendelse i forhold til Power BI-tjenesten, og når den er godkendt, håndterer Back-End alle efterfølgende brugerinteraktioner. Power BI bruger Azure Active Directory (AAD) til at gemme og administrere brugeridentiteter og administrerer lagring af data og metadata ved hjælp af henholdsvis Azure BLOB og Azure SQL Database.
 
 ## <a name="power-bi-architecture"></a>Power BI-arkitektur
+
 Hver installation af Power BI består af to klynger – en Web Front End (**WFE**) og en **Back-End**.
 
 **WFE**-klyngen administrerer den indledende forbindelses- og godkendelsesproces for Power BI ved hjælp af AAD for at godkende klienter og angive tokens for efterfølgende klientforbindelser til Power BI-tjenesten. Power BI bruger også **Azure Traffic Manager** (ATM) til at dirigere brugertrafik til det nærmeste datacenter, der bestemmes af DNS-posten for den klient, der forsøger at oprette forbindelse, for godkendelsesprocessen og til at downloade statisk indhold og filer. Power BI bruger **Azure Content Delivery Network** (CDN) til effektivt at distribuere det nødvendige statiske indhold og filerne til brugere baseret på geografisk placering.
@@ -35,22 +37,23 @@ Hver installation af Power BI består af to klynger – en Web Front End (**WFE*
 
 > [!IMPORTANT]
 > Det er vigtigt at bemærke, at kun rollerne **Azure API Management** (APIM) og **Gateway** (GW) er tilgængelige via det offentlige internet. De leverer godkendelse, autorisation, DDoS-beskyttelse, begrænsning (throttling), justering af belastning, routing og andre funktioner.
-> 
-> 
 
 ## <a name="data-storage-security"></a>Datalagringssikkerhed
+
 Power BI bruger to primære lagre til at gemme og administrere data: Data, der er uploadet fra brugere, sendes typisk til **Azure BLOB**-lageret, og alle metadata samt artefakter for selve systemet gemmes i **Azure SQL Database**.
 
 Den stiplede linje i billedet herover af **Back-End**-klyngen viser grænsen mellem de to eneste komponenter, der er tilgængelige for brugere (til venstre for den stiplede linje), og roller, der kun kan tilgås af systemet. Når en godkendt bruger opretter forbindelse til Power BI-tjenesten, accepteres og administreres forbindelsen og anmodninger fra klienten af **gatewayrollen** (som til sidst skal håndteres af **Azure API Management**), som derefter interagerer på brugerens vegne med resten af Power BI-tjenesten. Når en klient f.eks. forsøger at få vist et dashboard, accepterer **gatewayrollen** den pågældende anmodning og sender derefter separat en anmodning til **præsentationsrollen** om at hente de data, der skal bruges af browseren til at gengive dashboardet.
 
 ## <a name="user-authentication"></a>Brugergodkendelse
-Power BI bruger Azure Active Directory ([AAD](http://azure.microsoft.com/services/active-directory/)) til at godkende brugere, der logger på Power BI-tjenesten, og bruger igen Power BI-logonoplysningerne, når en bruger forsøger at få adgang til ressourcer, som kræver godkendelse. Brugere logger på Power BI-tjenesten ved hjælp af den mailadresse, der blev brugt til at oprette deres Power BI-konto. Power BI bruger den pågældende logonmail som det *effektive brugernavn*, der videresendes til ressourcer, når en bruger forsøger at oprette forbindelse til data. Det *effektive brugernavn* knyttes derefter til en *brugers hovednavn* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)) og fortolkes til den tilknyttede Windows-domænekonto, som godkendelse gælder i forhold til.
+
+Power BI bruger Azure Active Directory ([AAD](http://azure.microsoft.com/services/active-directory/)) til at godkende brugere, der logger på Power BI-tjenesten, og bruger til gengæld legitimationsoplysningerne til Power BI-logon, når en bruger forsøger at få adgang til ressourcer, som kræver godkendelse. Brugere logger på Power BI-tjenesten ved hjælp af den mailadresse, der blev brugt til at oprette deres Power BI-konto. Power BI bruger den pågældende logonmail som det *effektive brugernavn*, der videresendes til ressourcer, når en bruger forsøger at oprette forbindelse til data. Det *effektive brugernavn* knyttes derefter til en *brugers hovednavn* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)) og fortolkes til den tilknyttede Windows-domænekonto, som godkendelse gælder i forhold til.
 
 For organisationer, der brugte arbejdsmails til at logge på Power BI (f.eks. <em>david@contoso.com</em>), er tilknytningen af det *effektive brugernavn* til UPN ligetil. For organisationer, der ikke brugte arbejdsmails til at logge på Power BI (f.eks. <em>david@contoso.onmicrosoft.com</em>), vil tilknytning mellem AAD og de lokale legitimationsoplysninger kræve [katalogsynkronisering](https://technet.microsoft.com/library/jj573653.aspx) for at fungere korrekt.
 
 Platformssikkerhed i forbindelse med Power BI indeholder også miljøsikkerhed med flere lejere, netværkssikkerhed og mulighed for at tilføje ekstra sikkerhedsforanstaltninger baseret på AAD.
 
 ## <a name="data-and-service-security"></a>Data- og tjenestesikkerhed
+
 Besøg [Microsoft Trust Center](https://www.microsoft.com/trustcenter) for at få flere oplysninger.
 
 Som beskrevet tidligere i denne artikel anvendes en brugers Power BI-logon af lokale Active Directory-servere til at blive tilknyttet et UPN for legitimationsoplysninger. Det er dog **vigtigt** at være opmærksom på, at brugerne er ansvarlige for de data, de deler: Hvis en bruger opretter forbindelse til datakilder ved hjælp af sine legitimationsoplysninger og derefter deler en rapport (eller dashboard eller datasæt) baseret på disse data, er brugere, som dashboardet deles med, ikke godkendt i forhold til den oprindelige datakilde og får tildelt adgang til rapporten.
@@ -66,4 +69,3 @@ Denne gennemtvingelse kan udføres administrativt ved at angive registreringsdat
 **Power BI Desktop** respekterer de indstillinger for registreringsdatabasenøgler, der er beskrevet i disse artikler, og der oprettes kun forbindelse ved hjælp af den tilladte TLS-version på baggrund af disse indstillinger i registreringsdatabasen, når de findes.
 
 Du kan finde flere oplysninger om, hvordan du angiver disse registreringsdatabasenøgler, i artiklen [TLS-indstillinger i registreringsdatabasen](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
-

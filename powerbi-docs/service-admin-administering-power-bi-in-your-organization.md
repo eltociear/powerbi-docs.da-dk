@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 10/29/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: d00e6f2a972e6e41d4d9badc51e30a13a6dc98cc
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
+ms.openlocfilehash: 214a8a3ce0fd647cecd9855b48589cef02bf01c8
+ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430114"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58383308"
 ---
 # <a name="what-is-power-bi-administration"></a>Hvad er Power BI-administration?
 
@@ -71,7 +71,7 @@ Der er flere værktøjer, der er relateret til Power BI-administration, og de vi
 | **Værktøj** | **Typiske opgaver** |
 | --- | --- |
 | Power BI-administrationsportal |<ul><li>Opnå og arbejd med Premium-kapacitet</li><li>Opnå tjenestekvalitet</li><li>Administrer klassificering af virksomhedsdata</li><li>Hjælp til at gennemtvinge udgivelse af indhold og dele politikker</li><li>Administrer arbejdsområder<br><li>Udgiv brugerdefinerede visuelle elementer</li><li>Kontrollér koder, der bruges til at integrere Power BI i andre programmer</li><li>Foretag fejlfinding af dataadgang og andre problemer</li></ul>|
-| Office 365 Administration |<ul><li>Administrer brugertilmelding</li><li>Køb og tildel Pro-licenser</li><li>Bloker brugeres adgang til Power BI</li></ul>|
+| Microsoft 365 Administration |<ul><li>Administrer brugertilmelding</li><li>Køb og tildel Pro-licenser</li><li>Bloker brugeres adgang til Power BI</li></ul>|
 | Office 365 Security & Compliance Center |<ul><li>Gennemse og administrer overvågning af hændelser</li></ul>|
 | Azure Active Directory (AAD) på Azure-portalen |<ul><li>Konfigurer betinget adgang til Power BI-ressourcer via AAD</li><li>Klargør Power BI Embedded-kapacitet</li></ul>|
 | PowerShell-cmdlet'er |<ul><li>Administrer arbejdsområder og andre aspekter af Power BI via scripts</li></ul>|

@@ -2,20 +2,20 @@
 title: Whitepaper om sikkerhed i Power BI
 description: I denne whitepaper drøftes og beskrives sikkerhedsarkitektur og implementering for Power BI
 author: davidiseminger
+ms.author: davidi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/07/2019
-ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 957c6d5fe8797f1b03eaab3a54846e7110b302fb
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: 8a86d17252bea3dbdb6ad30de35667cfbd844c8b
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580283"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430386"
 ---
 # <a name="power-bi-security-whitepaper"></a>Whitepaper om sikkerhed i Power BI
 
@@ -125,7 +125,7 @@ I øjeblikket er Power BI-tjenesten tilgængelig i bestemte områder, der betjen
 
 * [Power BI-datacentre](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location)
 
-Microsoft leverer også datacentre til nationale clouds. Du kan finde flere oplysninger om tilgængeligheden af Power BI-tjenesten i nationale clouds i [Power BI i nationale clouds](https://powerbi.microsoft.com/clouds/).
+Microsoft leverer også datacentre til nationale clouds. Du kan finde flere oplysninger om tilgængeligheden af Power BI-tjenesten i nationale cloudmiljøer i [Power BI i nationale cloudmiljøer](https://powerbi.microsoft.com/clouds/).
 
 Du kan finde flere oplysninger om, hvor dine data gemmes, og hvordan de bruges, under [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Forpligtelser i forbindelse med placeringen af kundedata som inaktive data er angivet under **Vilkår for databehandling** i [Vilkår for Microsoft Online Services](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
 
@@ -151,11 +151,9 @@ Sekvensen til godkendelse af brugeren til Power BI-tjenesten sker, som beskrevet
 
 3. WFE-klyngen kontakter tjenesten **Azure Active Directory** (**AAD**) for at godkende brugerens abonnement på Power BI-tjenesten og hente et AAD-sikkerhedstoken. Når AAD returnerer godkendelse af brugeren og returnerer et AAD-sikkerhedstoken, konsulterer WFE-klyngen **Global Service for Power BI******, som bevarer en liste over lejere og deres placeringer for Back End-klyngerne i Power BI og bestemmer, hvilke klynger i Power BI-tjenesten der indeholder brugerens lejer. WFE-klyngen dirigerer derefter brugeren til den Power BI-klynge, hvor lejeren er placeret, og returnerer en samling af elementer til brugerens browser:
 
-
       - **AAD-sikkerhedstoken**
       - **Oplysninger om session**
       - Webadressen på **Back End**-klyngen, som brugeren kan kommunikere og interagere med
-
 
 1. Brugerens browser kontakter derefter det angivne Azure CDN eller for nogle af filerne den angivne WFE for at downloade samlingen af angivne fælles filer, som er nødvendige for at muliggøre browserens interaktion med Power BI-tjenesten. Browsersiden inkluderer derefter AAD-tokenet, oplysningerne om sessionen, placeringen af den tilknyttede Back End-klynge og samlingen af filer, der blev downloadet fra Azure CDN og WFE-klyngen, i hele varigheden af den pågældende browsersession for Power BI-tjenesten.
 
@@ -182,9 +180,6 @@ I følgende tabel beskrives Power BI-data, der er baseret på den type forespør
 |Rækkedata     |    X     |         |         |
 |Cachelagring af data for visuelle elementer     |    X     |     X    |    X     |
 
-
-
-
 Forskellen mellem DirectQuery og andre forespørgsler bestemmer, hvordan inaktive data håndteres i Power BI-tjenesten, og om selve forespørgslen krypteres. I følgende afsnit beskrives inaktive data og dataflytning, og kryptering, placering og processer til håndtering af data forklares.
 
 ### <a name="data-at-rest"></a>Inaktive data
@@ -210,9 +205,9 @@ I forbindelse med cloudbaserede datakilder krypterer rollen for Dataflytning kry
 #### <a name="datasets"></a>Datasæt
 
 1. Metadata (tabeller, kolonner, målinger, beregninger, forbindelsesstrenge osv.)
-      
+
     a. I forbindelse med Analysis Services i det lokale miljø gemmes intet i tjenesten med undtagelse af en reference til den pågældende database, der er gemt krypteret i Azure SQL.
- 
+
     b. Alle andre metadata for ETL, DirectQuery og pushdata krypteres og gemmes i Azure Blob Storage.
 
 1. Legitimationsoplysninger til de oprindelige datakilder
@@ -255,7 +250,7 @@ Power BI sikrer overvågning af dataintegritet på følgende måder:
    a. Rapporter kan enten være Excel til Office 365-rapporter eller Power BI-rapporter. På baggrund af typen af rapport gælder følgende for metadata:
 
        a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Office 365.
-       
+
        b. Power BI reports are stored encrypted in Azure SQL database.
 
 2. Statiske data
@@ -358,7 +353,7 @@ I følgende tabel vises understøttelse af certifikatbaseret godkendelse for Pow
 | **Power BI** (log på tjenesten) | understøttet | understøttet | Ikke understøttet |
 | **SSRS ADFS** (opret forbindelse til SSRS-serveren) | Ikke understøttet | Understøttet | Ikke understøttet |
 
-Apps til Power BI – Mobil kommunikerer aktivt med Power BI-tjenesten. Telemetri bruges til at indsamle statistikker over brug af mobilappen og lignende data, som sendes til tjenester, der bruges til at overvåge brug og aktivitet. Der sendes ingen personlige id-oplysninger med telemetridata.
+Apps til Power BI – Mobil kommunikerer aktivt med Power BI-tjenesten. Telemetri bruges til at indsamle brugsstatistikker for mobilappen og lignende data, som sendes til tjenester, der bruges til at overvåge brug og aktivitet. Der sendes ingen private oplysninger med telemetridata.
 
 Power BI-**appen på enheden** gemmer data på enheden, der gør brug af appen:
 
@@ -414,7 +409,7 @@ Følgende spørgsmål er almindelige spørgsmål og svar om sikkerhed i Power BI
 
 **Hvordan fungerer Power BI-grupper?**
 
-* Med Power BI-grupper kan brugerne hurtigt og nemt samarbejde om oprettelse af dashboards, rapporter og datamodeller i etablerede teams. Hvis du f.eks. har en Power BI-gruppe, som indeholder alle i dit nærmeste team, kan du nemt samarbejde med alle i teamet ved at vælge gruppen i Power BI. Power BI-grupper svarer til universelle grupper i Office 365 (som du kan [få mere at vide om](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1), [oprette](https://support.office.com/Article/View-create-and-delete-Groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7) og [administrere](https://support.office.com/Article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)) og bruger de samme godkendelsesmetoder, som bruges i Azure Active Directory til at sikre data. Du kan [oprette grupper i Power BI](https://support.powerbi.com/knowledgebase/articles/654250) eller oprette en universel gruppe i Office 365 Administration. Begge giver det samme resultat i forbindelse med oprettelse af en gruppe i Power BI.
+* Med Power BI-grupper kan brugerne hurtigt og nemt samarbejde om oprettelse af dashboards, rapporter og datamodeller i etablerede teams. Hvis du f.eks. har en Power BI-gruppe, som indeholder alle i dit nærmeste team, kan du nemt samarbejde med alle i teamet ved at vælge gruppen i Power BI. Power BI-grupper svarer til universelle grupper i Office 365 (som du kan [få mere at vide om](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1), [oprette](https://support.office.com/Article/View-create-and-delete-Groups-in-the-Office-365-admin-center-a6360120-2fc4-46af-b105-6a04dc5461c7) og [administrere](https://support.office.com/Article/Manage-Group-membership-in-the-Office-365-admin-center-e186d224-a324-4afa-8300-0e4fc0c3000a)) og bruger de samme godkendelsesmetoder, som bruges i Azure Active Directory til at sikre data. Du kan [oprette grupper i Power BI](https://support.powerbi.com/knowledgebase/articles/654250) eller oprette en universel gruppe i Microsoft 365 Administration. Begge giver det samme resultat i forbindelse med oprettelse af en gruppe i Power BI.
 
   Bemærk, at data, der deles med Power BI-grupper, følger de samme sikkerhedsovervejelser som alle delte data i Power BI. I forbindelse med datakilder, der **ikke understøtter sikkerhed på rolleniveau**, godkender Power BI **ikke** brugerne igen i forhold til den oprindelige datakilde, og når data uploades til Power BI, er den bruger, der blev godkendt i forhold til kildedataene, ansvarlig for at administrere, hvilke andre brugere og grupper der kan få vist dataene. Du kan finde flere oplysninger i afsnittet **Godkendelse af brugeren til datakilder** tidligere i dette dokument.
 
@@ -459,9 +454,9 @@ Følgende spørgsmål er almindelige spørgsmål og svar om sikkerhed i Power BI
 
 **Hvad med nationale data? Kan vi klargøre lejere i datacentre, der er placeret i bestemte geografiske områder, for at sikre, at dataene ikke forlader landets grænser?**
 
-* Nogle kunder i visse geografiske områder har mulighed for at oprette en lejer i en national cloud, hvor datalagring og -behandling er isoleret fra alle andre datacentre. Nationale clouds har en lidt anderledes type sikkerhed, da en separat dataforvalter driver den nationale cloud i Power BI-tjenesten på vegne af Microsoft.
+* Nogle kunder i visse geografiske områder har mulighed for at oprette en lejer i et nationalt cloudmiljø, hvor datalagring og -behandling er isoleret fra alle andre datacentre. Nationale cloudmiljøer har en lidt anderledes type sikkerhed, da en separat dataforvalter driver det nationale cloudmiljø i Power BI-tjenesten på vegne af Microsoft.
 
-  Kunderne kan også konfigurere en lejer i et bestemt område, men sådanne lejere har ikke en separat dataforvalter fra Microsoft. Priser på nationale clouds er forskellig fra den offentligt tilgængelige kommercielle Power BI-tjeneste. Du kan finde flere oplysninger om tilgængeligheden af Power BI-tjenesten i nationale clouds i [Power BI i nationale clouds](https://powerbi.microsoft.com/clouds/).
+  Kunderne kan også konfigurere en lejer i et bestemt område, men sådanne lejere har ikke en separat dataforvalter fra Microsoft. Priserne på nationale cloudmiljøer er forskellig fra den offentligt tilgængelige kommercielle Power BI-tjeneste. Du kan finde flere oplysninger om tilgængeligheden af Power BI-tjenesten i nationale cloudmiljøer i [Power BI i nationale cloudmiljøer](https://powerbi.microsoft.com/clouds/).
 
 **Hvordan behandler Microsoft forbindelser til kunder, der har Power BI Premium-abonnementer? Er disse forbindelser anderledes end dem, der er etableret for kunder, der ikke har Premium-versionen af Power BI-tjenesten?**
 
@@ -488,6 +483,6 @@ Du kan finde flere oplysninger om Power BI i følgende ressourcer.
 - [Reference til Power BI-API](https://msdn.microsoft.com/library/mt147898.aspx)
 - [Datagateway i det lokale miljø](service-gateway-manage.md)
 - [Power BI og ExpressRoute](service-admin-power-bi-expressroute.md)
-- [Nationale clouds i Power BI](https://powerbi.microsoft.com/clouds/)
+- [Nationale Power BI-cloudmiljøer](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [Brug Kerberos til SSO fra Power BI til datakilder i det lokale miljø](service-gateway-sso-overview.md)

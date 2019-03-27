@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/13/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 48ea3d5e60c6f6a079be1d7040266817fdf5b97b
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
+ms.openlocfilehash: 536e433540d371838b027e06f857609024e213f3
+ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57964979"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58430478"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -558,7 +558,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i juni:
 
 ### <a name="other"></a>Andet
 
-* Vælger til national cloud [[video]](https://youtu.be/4VpGtWSrssE?t=27m45s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#nationalCloud) 
+* Vælger til nationalt cloudmiljø [[video]](https://youtu.be/4VpGtWSrssE?t=27m45s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#nationalCloud) 
 
 
 > [!NOTE]
@@ -2225,13 +2225,13 @@ Følgende funktioner er blevet tilføjet i denne opdatering:
 
 -   Størrelsen på dialogboksen Navigator kan ændres
 
--   Mulighed for at markere flere elementer i Navigator (Ctril+klik, Skift+klik osv.)
+-   Mulighed for at markere flere elementer i Navigator (CTRL+klik, SKIFT+click osv.)
 
 **Forbedringer i Forespørgselseditor:**
 
 -   Forbedringer af oprettelse/sletning i Forespørgselseditor (markering af flere elementer mm.)
 
--   Mulighed for Opdel forespørgsel (omstrukturer almindelige grundtrin i en ny forespørgsel)
+-   Mulighed for at opdele forespørgsel (dvs. omstrukturere almindelige grundtrin i en ny forespørgsel)
 
 -   Forespørgselsikoner afspejler forespørgselstypen i ruden Forespørgsler i Navigator
 
@@ -2250,7 +2250,7 @@ Se følgende video for at få flere detaljer om denne opdatering:
 
 Følgende funktioner er blevet tilføjet i denne opdatering:
 
--   **Nye dataconnectors**: appFigures, Quickbooks Online, Zendesk, Github, Twilio og SweetIQ.
+-   **Nye dataconnectorer**: appFigures, Quickbooks Online, Zendesk, GitHub, Twilio og SweetIQ.
 
 -   **Nye transformationer**: Udtræk de første, sidste eller et interval af tegn fra en tekstkolonne. Mulighed for at vælge joinforbindelsestype i dialogboksen Flet forespørgsler. Mulighed for at tilpasse typen af anførselstegn i dialogboksen Opdel kolonne efter afgrænser.
 
