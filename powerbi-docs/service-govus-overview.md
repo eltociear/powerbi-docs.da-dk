@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/06/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d846a50ab87fe7d9f20034892e25dedde043f9ee
-ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
+ms.openlocfilehash: 9cf3eea99813d315c72f3210f3938deae94505b0
+ms.sourcegitcommit: 9f31cd41bd92e398717da5a69a074273e8c6f8a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58430248"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58473861"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til kunder i den amerikanske stat
 **Power BI-tjenesten** har en tilgængelig version for kunder i den amerikanske stat som en del af abonnementer for **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til kunder i den amerikanske stat og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten**.
@@ -60,6 +60,7 @@ Nogle af de funktioner, der er tilgængelige i den kommercielle version af **Pow
 * **Power BI-indhold i Cortana** - Power BI-resultater vises ikke i søgeresultater i Cortana, der omfatter resultaterne for dit Power BI-indhold (dashboards, rapporter og apps) samt resultater, der viser Cortana-optimerede rapportsider for bestemte nøgleord.
 * **Deling med eksterne brugere** – deling er tilladt inden for en Power BI-lejer. Fra juni 2018 kan du også dele med brugere uden for din Power BI-lejer. Se [Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B](service-admin-azure-ad-b2b.md).
 * **Forbrugsmålinger for dashboards og rapporter** – forbrugsmålinger er ikke tilgængelige for rapporter og dashboards. Kunder kan bruge data i overvågningsloggen til at få forbrugsoplysninger om indhold i deres organisation.
+* **Dataflows** - Dataflows er ikke tilgængelige.
 
 Hvis du har gratis **Power BI**-licenser knyttet til din konto, kører disse konti i en kommerciel version af **Power BI**-tjenesten og er ikke en del af **Power BI US Government**-tilbuddet. For de gratis kontis vedkommende kan der opstå følgende problemer:
 

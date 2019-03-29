@@ -11,18 +11,19 @@ ms.topic: conceptual
 ms.date: 02/28/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 385a2cb41c0fa58ec3df4ea675a6f43a5b868935
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.openlocfilehash: f06b67dc0072c125d9430079fa756d963fd99f23
+ms.sourcegitcommit: 9f31cd41bd92e398717da5a69a074273e8c6f8a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014294"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58473792"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Eksportér rapporter fra Power BI til PowerPoint
 Med Power BI kan du publicere din rapport i **Microsoft PowerPoint** og nemt oprette et slidesæt ud fra din Power BI-rapport. Når du **eksporterer til PowerPoint**, sker der følgende:
 
 * Hver side i Power BI-rapporten bliver til et enkeltslide i PowerPoint
-* Hver enkelt side i Power BI-rapporten eksporteres som et enkelt billede i høj opløsning i PowerPoint <!-- * The filters and slicers settings that you added to the report are preserved. -->
+* Hver side i Power BI-rapporten eksporteres som et enkelt billede med høj opløsning i PowerPoint
+<!-- * The filters and slicers settings that you added to the report are preserved. -->
 * Der oprettes et link i PowerPoint, som er en kæde til Power BI-rapporten 
 
 Du kan hurtigt eksportere din **Power BI-rapport** til **PowerPoint**. Du skal blot følge de trin, der er beskrevet i det næste afsnit.
@@ -91,6 +92,7 @@ Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbe
 * Hver rapportside eksporteres som tidligere nævnt som et enkelt billede i PowerPoint-filen.
 * I Power BI-tjenesten anvendes din Power BI-sprogindstilling for PowerPoint-eksporten. Hvis du vil se eller angive dine sprogindstillinger, skal du vælge tandhjulsikonet ![tandhjulsikon](media/end-user-powerpoint/power-bi-settings-icon.png) **> Indstillinger > Generelt > Sprog**.
 * **Downloadtidspunktet** på det forreste slide af den eksporterede PowerPoint-fil svarer til eksporttidspunktet iht. den tidszone, der er angivet på din computer.
+* URL-filtre respekteres ikke i øjeblikket, når du vælger "Aktuelle værdier" til din eksport.
 
 ## <a name="next-steps"></a>Næste trin
 [Udskriv en rapport](end-user-print.md)

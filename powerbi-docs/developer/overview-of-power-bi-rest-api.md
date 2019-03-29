@@ -9,45 +9,28 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/25/2018
-ms.openlocfilehash: d8cad602b178dd55184e00e2a318c374433b1a46
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
+ms.openlocfilehash: 764718ab86e040509790dd4debbbef25b6079a14
+ms.sourcegitcommit: 9f31cd41bd92e398717da5a69a074273e8c6f8a6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762323"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58473769"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Hvad kan udviklere bruge Power BI-API'en til?
 
-Power BI viser dashboards, der er interaktive, og som kan oprettes og opdateres fra mange forskellige datakilder i realtid. Du kan bruge alle programmeringssprog, der understøtter REST-kald, til at oprette apps, der kan integreres med et Power BI-dashboard i realtid. Du kan også integrere Power BI-felter og -rapporter i apps.
+Ved brug af Power BI REST API, kan du oprette apps, der integrerer Power BI-rapporter. Det er også muligt at integrere Power BI-felter og -dashboards i apps.
 
-Udviklere kan også oprette deres egne datavisualiseringer, der kan bruges i interaktive rapporter og på dashboards.
+Med Power BI REST API er det muligt at udføre administrationsopgaver på Power BI-objekter som rapporter, datasæt og arbejdsområder.
 
 Her er nogle af de ting, du kan bruge Power BI-API'erne til.
 
 | **Hvis du vil** | **Skal du gå hertil** |
 | --- | --- |
-| Integrer dashboards, rapporter og felter til brugere af Power BI og brugere, der ikke anvender Power BI (appen ejer dataene) |[Sådan integrerer du Power BI-dashboards, -rapporter og -felter](embedding-content.md) |
-| Udvid en eksisterende forretningsarbejdsproces til at overføre vigtige data til et Power BI-dashboard. |[Overfør data til et dashboard](walkthrough-push-data.md) |
-| Godkend til Power BI. |[Godkend til Power BI](get-azuread-access-token.md) |
-| Opret en brugerdefineret visualisering. |[Udvikling af en brugerdefineret visualisering i Power BI](custom-visual-develop-tutorial.md) |
+| Integrer rapporter, dashboards og felter til brugere af Power BI og brugere, der ikke anvender Power BI. |[Sådan integrerer du Power BI-dashboards, -rapporter og -felter](embedding-content.md) |
+| Udfør administrationsopgaver på Power BI-objekter. |[Reference til Power BI REST-API](https://docs.microsoft.com/rest/api/power-bi/) |
 
 > [!NOTE]
 > Power BI-API'erne refererer stadig til apparbejdsområder som grupper. Referencer til grupper betyder, at du arbejder med apparbejdsområder.
-
-## <a name="power-bi-developer-samples"></a>Eksempler på Power BI Developer
-
-Eksemplerne på Power BI Developer omfatter elementer til integration af dashboards, rapporter og felter.
-
-[Eksempler på Power BI Developer](https://github.com/Microsoft/PowerBI-Developer-Samples)
-
-* Eksempler i **App Owns Data** er til integration med brugere, der ikke anvender Power BI.
-* Eksempler i **User Owns Data** er til integration med brugere, der anvender Power BI.
-
-## <a name="github-repositories"></a>GitHub-lagre
-
-* [.NET-SDK](https://github.com/Microsoft/PowerBI-CSharp)
-* [JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript)
-* [Brugerdefinerede visualiseringer](https://github.com/Microsoft/PowerBI-visuals)
 
 ## <a name="developer-tools"></a>Udviklerværktøjer
 
@@ -63,16 +46,10 @@ Vælg den løsning, der er den rette for dig:
 
 Hvis du vil se et komplet eksempel, hvor JavaScript API'en bruges, kan du bruge [værktøjet Playground](https://microsoft.github.io/PowerBI-JavaScript/demo). Med dette værktøj kan du nemt prøve dig frem med forskellige typer af Power BI Embedded-eksempler. Du kan også få flere oplysninger om JavaScript-API'en ved at gå til siden [wiki for PowerBI-JavaScript](https://github.com/Microsoft/powerbi-javascript/wiki).
 
-## <a name="push-data-into-power-bi"></a>Overfør data til Power BI
+## <a name="github-repositories"></a>GitHub-lagre
 
-Du kan bruge Power BI-API til at overføre data til et datasæt. Denne funktion giver dig mulighed at føje en række til en tabel i et datasæt. De nye data kan derefter afspejles på felter på et dashboard og i visualiseringer i rapporten.
-
-![Eksempel på pushdata](media/what-can-you-do/powerbi-push-data.png)
-
-## <a name="next-steps"></a>Næste trin
-
-[Overfør data til et datasæt](walkthrough-push-data.md)  
-[Udvikling af en brugerdefineret visualisering i Power BI](custom-visual-develop-tutorial.md)  
-[Reference til Power BI REST-API](https://docs.microsoft.com/rest/api/power-bi/)  
+* [Eksempler på Power BI Developer](https://github.com/Microsoft/PowerBI-Developer-Samples)
+* [.NET-SDK](https://github.com/Microsoft/PowerBI-CSharp)
+* [JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

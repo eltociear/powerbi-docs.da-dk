@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 2/9/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 96faaf87c2aa04bdc1175f1b7cb78229bbb87a24
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
+ms.openlocfilehash: b65acda3ceb8d375cb34393828b74e191b2e5504
+ms.sourcegitcommit: 4aa99a8dde4e98909da888c151a71476f7bbfe81
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383709"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58489585"
 ---
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
@@ -32,12 +32,21 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
 
-## <a name="february-2019"></a>Februar 2019
-* Arbejdsbelastninger og størrelsesmålepunkter for aktivt datasæt i [kapacitetsovervågningsapp](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
-* Eksportér til PDF og behovsbaserede e-mailabonnementer (service-report-subscribe.md).
-* Bulkhandlinger i administrationsportalen.
+## <a name="march-2019"></a>Marts 2019
+* Generel tilgængelighed af Multi-Geo for Power BI Premium.
+* Understøttelse af redigering og administration af Power BI-indhold til Azure B2B.
 
 ## <a name="previous-months-2019"></a>Forrige måneder (2019)
+### <a name="february-2019"></a>Februar 2019
+* Arbejdsbelastninger og størrelsesmålepunkter for aktivt datasæt i [kapacitetsovervågningsapp](https://powerbi.microsoft.com/blog/new-monitoring-capabilities-for-power-bi-premium-capacities/).
+* Eksportér til PDF for Power BI-rapporter.
+* [Mailabonnementer efter behov](service-report-subscribe.md).
+* Bulkhandlinger i administrationsportalen.
+* Filtreret eksport til PPT og PDF.
+* [Indstillinger for hjælp og support](https://powerbi.microsoft.com/en-us/blog/tailoring-help-and-support-for-power-bi-users/) i administrationsportalen.
+* Data-lineage-oplevelse til [dataflows](service-dataflows-overview.md).
+* Indstilling for certificerede brugerdefinerede visualiseringer i administrationsportalen.
+
 ### <a name="january-2019"></a>Januar 2019
 * [Integration af sikre Power BI-rapporter](service-embed-secure.md) i interne portaler eller på interne websteder.
 * Opdateringer af [dataflow](service-dataflows-overview.md)editor med nye forbindelseskomponenter og understøttelse af oprindelige SQL-forespørgsler og onlinetransformationer i Power-forespørgsel.
