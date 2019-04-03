@@ -8,13 +8,13 @@ ms.topic: overview
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
-ms.date: 09/17/2018
-ms.openlocfilehash: a32bdceb317f2d6a2f5945dc3911f683a306605e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.date: 03/15/2019
+ms.openlocfilehash: 63ee9ed96ed699d116b8d81b0cd612f76994a68d
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282465"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872679"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Hvad kan udviklere bruge Power BI til?
 
@@ -58,7 +58,7 @@ Du kan se nogle af de ting, du kan gøre med Power BI-API'erne, i [Hvad kan udvi
 
 ## <a name="next-steps"></a>Næste trin
 
-[Integrer med Power BI](embedding.md)  
+[Integrering med Power BI](embedding.md)  
 
 [Udvikling af en brugerdefineret visualisering i Power BI](https://microsoft.github.io/PowerBI-visuals/docs/step-by-step-lab/developing-a-power-bi-custom-visual/)
 
