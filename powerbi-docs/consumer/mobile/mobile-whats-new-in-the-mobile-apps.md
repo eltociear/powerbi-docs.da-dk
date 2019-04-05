@@ -9,19 +9,29 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 11/08/2018
 ms.author: mshenhav
-ms.openlocfilehash: 7c17d41d4278c292e494fe6f7203a32d93f2714d
-ms.sourcegitcommit: 796bf513bf8669676e2a44627b56221b1629a6a8
+ms.openlocfilehash: 8755f48653097d5754c4c908f07ea91bdb3c0d53
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826715"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872725"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
 
-* [Power BI-teamets blog til mobilapps](https://powerbi.microsoft.com/blog/tag/mobile/)
+* [Power BI-teamets blog om mobilapps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheder i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheder i Power BI-tjenesten](../../service-whats-new.md)  
+
+## <a name="march-2019"></a>Marts 2019
+
+### <a name="supporting-external-guest-users-in-power-bi-apps-ios-android"></a>Understøttelse af eksterne gæstebrugere i Power BI-apps (iOS, Android)
+
+Du kan få adgang til Power BI-indhold, der er delt med dig fra andre organisationer, direkte fra appen (også kendt som B2B). Læs mere om B2B i forbindelse med Power BI-mobilapps [her](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-now-support-azure-ad-b2b-guest-users/).
+
+### <a name="enhancing-windows-presentation-mode-with-slideshow-windows"></a>Forbedring af Windows-præsentationstilstand med slideshow (Windows)
+
+Med [slideshow](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) kan du bruge udstyr på dit kontor til at køre Power BI-rapporter i fuld skærm, som roterer automatisk mellem rapportsider.  
 
 ## <a name="january---february-2019"></a>Januar-februar 2019
  
@@ -240,7 +250,7 @@ Hvis du opretter en rapport med telefonoptimerede sider i Power BI Desktop, og r
 
 #### <a name="show-data-in-reports"></a>Vis data i rapporter
 
-Du kan nu udskifte visualiseringer i dine rapporter med en tabel for at få vist tallene bag dataene. For at få adgang til denne funktion, skal du trykke på "Vis data" fra den visuelle menu på rapporten eller det nye ikon på den udvidede visualisering i menuen handling.
+Du kan nu udskifte visuelle elementer i dine rapporter med en tabel for at få vist tallene bag dataene. For at få adgang til denne funktion, skal du trykke på "Vis data" fra den visuelle menu på rapporten eller det nye ikon på det udvidede visuelle element i menuen handling.
 
 ### <a name="september-2017"></a>September 2017
 #### <a name="filters-for-phone-reports-in-iphones"></a>Filtre til telefonrapporter på iPhones
@@ -256,8 +266,8 @@ Læs [oversigten over funktioner i mobilapps for juli 2017](https://powerbi.micr
 #### <a name="ios-devices"></a>iOS-enheder
 **Ny oplevelse med spørgsmål og svar på iOS (prøveversion)** I stedet for blot at få svar på dit spørgsmål kan du nu bruge naturligt sprog for at få afgrænset indsigt. Også selvom du ikke helt ved, hvad du søger efter, vises indsigt, der er relevant for dine data, i Q&A. Den nye oplevelse på mobiltelefonen med spørgsmål og svar, der er udviklet i samarbejde med Microsoft Research-teamet, viser de effektive teknologier i vores produkt. Prøv selvstudiet [Stil spørgsmål om dine data i iOS-mobilapps](mobile-apps-ios-qna.md).
 
-### <a name="responsive-visuals"></a>Dynamiske visualiseringer
-**Dynamiske visualiseringer til telefonrapporter og dashboards** Du kan angive, at visualiseringer på dit dashboard eller i din rapport skal være *dynamiske*, så de ændres dynamisk for at vise det maksimale antal data og indsigt uanset skærmstørrelse. Læs [bloggen om dynamiske visualiseringer](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals).
+### <a name="responsive-visuals"></a>Dynamiske visuelle elementer
+**Dynamiske visuelle elementer til telefonrapporter og dashboards** Du kan angive, at de visuelle elementer i dit dashboard eller en rapport skal være *dynamiske*, så de ændres dynamisk for at vise det maksimale antal data og indsigt uanset skærmstørrelse. Læs [bloggen om dynamiske visuelle elementer](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals).
 
 ### <a name="june-2107"></a>Juni 2017
 #### <a name="all-devices"></a>Alle enheder
@@ -280,7 +290,7 @@ Læs [oversigten over funktioner i mobilapps for april 2017](https://powerbi.mic
 #### <a name="all-devices"></a>Alle enheder
 **Baggrundsfarve for telefonrapporter** Når du definerer en baggrundsfarve for en rapport i Power BI Desktop, får telefonrapporten den samme baggrundsfarve. Mere om [optimering af rapportsider for telefoner](../../desktop-create-phone-report.md).
 
-**Udarbejd mobilvenlige brugerdefinerede visualiseringer** Læs denne [Udviklerguide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) med tip til oprettelse af brugerdefinerede visualiseringer, der ser godt ud og fungerer godt på mobilenheder.
+**Udarbejd mobilvenlige brugerdefinerede visuelle elementer** Læs denne [Udviklerguide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) med tip til oprettelse af brugerdefinerede visuelle elementer, der ser godt ud og fungerer godt på mobilenheder.
 
 #### <a name="ios-devices"></a>iOS-enheder
 **Tal med dataene: Stil spørgsmål ved at tale** Nu kan du [stille spørgsmål til dine data med Q&A](mobile-apps-ios-qna.md) ved at tale i stedet for at skrive. 
@@ -289,7 +299,7 @@ Læs [oversigten over funktioner i mobilapps for april 2017](https://powerbi.mic
 Læs [oversigten over funktioner i mobilapps for marts 2017](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-march-2017/).
 
 #### <a name="all-devices"></a>Alle enheder
-**Interaktion med udsnitsværktøj**
+**Interaktion med udsnit**
 
 Vi har forbedret touchinteraktion med tidsudsnitsværktøjer.
 
@@ -311,12 +321,12 @@ Hvis du scanner en QR-kode for et dashboard, som du ikke har adgang til, kan du 
 
 ### <a name="february-2017"></a>Februar 2017
 #### <a name="all-devices"></a>Alle enheder
-**Rulning gjort nemmere** 
+**Nemmere rulning** 
 
 Nu kan du rulle i søjlediagrammer i en rapport ved at berøre selve diagrammet i stedet for at berøre rullepanelet på siden.
 
 #### <a name="ios-devices"></a>iOS-enheder
-**Stil spørgsmål om dine data med en prøveversion af Q&A** 
+**Stil spørgsmål om dine data med en prøveversion af Spørgsmål og svar** 
 
 Med Q&A kan du stille spørgsmål om dataene med dine egne ord, hvorefter Power BI giver svarene. Q&A er allerede tilgængelig i Power BI-tjenesten på http://powerbi.com. Nu er den også [tilgængelig i mobilappen på din iPhone eller iPad](mobile-apps-ios-qna.md).
 
@@ -368,17 +378,17 @@ Du kan anmærke og dele et felt, en rapport eller en visualisering fra Power BI-
 
 Hvis du scanner en QR-kode for et dashboard, som du ikke har adgang til, kan du nu sende en anmodning om adgang direkte fra mobilappen.
 
-**Brugerdefineret webadresse på billedfelt**
+**Brugerdefineret URL-adresse på billedfelt**
 
 Hvis et billedfelt har en brugerdefineret webadresse, der er defineret af ejeren af dashboardet, går du direkte til den pågældende webadresse uden at åbne feltet i fokuseringstilstand, når du trykker på feltet. 
 
 #### <a name="iphone"></a>iPhone
-**Apple Watch-forbedringer**
+**Forbedringer til Apple Watch**
 
 Nu kan du opdatere Apple Watch-data direkte fra Watch-appen. Tryk længe på indekssiden på dashboardet for at opdatere dataene. (Power BI-mobilappen skal køre i baggrunden på din iPhone, hvis det skal fungere).
 
 #### <a name="android"></a>Android
-**Brugerdefineret webadresse på billedfelt**
+**Brugerdefineret URL-adresse på billedfelt**
 
 Hvis et billedfelt har en brugerdefineret webadresse, der er defineret af ejeren af dashboardet, går du direkte til den pågældende webadresse uden at åbne feltet i fokuseringstilstand, når du trykker på feltet. Dashboardfelter, der indeholder foruddefinerede brugerdefinerede URL-adresser, kan desuden nu omdirigere læsere til rapporter i appen.
 

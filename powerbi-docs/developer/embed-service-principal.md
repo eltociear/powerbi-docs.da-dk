@@ -8,13 +8,13 @@ ms.reviewer: nishalit
 ms.subservice: power-bi-developer
 ms.topic: conceptual
 ms.custom: ''
-ms.date: 02/05/2019
-ms.openlocfilehash: 8d91b6cc03bb142d6d4aa101f87d8e3c1e6f3196
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
+ms.date: 03/29/2019
+ms.openlocfilehash: 9b72c1c432e7fa560862452849491c12395d29d1
+ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014409"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58872541"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Tjenesteprincipal med Power BI (prøveversion)
 
@@ -57,8 +57,8 @@ Der er forskelle mellem at bruge en tjenesteprincipal og en standardmasterkonto 
 |------------------------------------------------------|---------------------|-------------------|
 | Kan logge på Power BI-tjenesten  | Ja | Nej |
 | Aktiveret på Power BI-administrationsportalen | Nej | Ja |
-| [Fungerer sammen med programarbejdsområder (v1)](../service-create-workspaces.md) | Ja | Nej |
-| [Fungerer sammen med programarbejdsområder (v2)](../service-create-the-new-workspaces.md) | Ja | Ja |
+| [Fungerer sammen med apparbejdsområder (v1)](../service-create-workspaces.md) | Ja | Nej |
+| [Fungerer sammen med apparbejdsområder (v2)](../service-create-the-new-workspaces.md) | Ja | Ja |
 | Man skal være administrator af et arbejdsområde, hvis det bruges med Power BI Embedded | Ja | Ja |
 | Kan bruge REST API'er til Power BI | Ja | Ja |
 | Der skal være en global administrator for at kunne oprettes | Ja | Nej |
@@ -111,13 +111,15 @@ I modsætning til den traditionelle brug af en masterkonto kræves der nogle få
 3. Som Power BI-administrator skal du aktivere tjenesteprincipalen under **Indstillinger for udvikler** på Power BI-administrationsportalen. Føj den sikkerhedsgruppe, du oprettede i Azure AD, til afsnittet **Specifik sikkerhedsgruppe** under **Indstillinger for udvikler**.
 
    > [!Important]
-   > Tjenesteprincipaler nedarver tilladelserne til alle Power BI-lejerindstillinger fra deres sikkerhedsgruppe. Hvis du vil begrænse tilladelserne, skal du oprette en dedikeret sikkerhedsgruppe for tjenesteprincipaler og føje den til listen "Undtagen specifikke sikkerhedsgrupper" for de relevante aktiverede Power BI-indstillinger.
+   > Tjenesteprincipaler har adgang til alle lejerindstillinger, der er aktiveret for hele organisationen eller aktiveret for sikkerhedsgrupper, der har tjenesteprincipaler som en del af gruppen. Hvis du vil begrænse tjenesteprincipalens adgang til specifikke lejerindstillinger, skal du kun tillade adgang til specifikke sikkerhedsgrupper eller oprette en dedikeret sikkerhedsgruppe for tjenesteprincipaler og ekskludere den pågældende tjenesteprincipal.
 
     ![Administrationsportal](media/embed-service-principal/admin-portal.png)
 
 4. Konfigurer dit [Power BI-miljø](embed-sample-for-customers.md#set-up-your-power-bi-environment).
 
 5. Tilføj tjenesteprincipalen som **administrator** til det nye arbejdsområde, du har oprettet. Du kan administrere denne opgave via [API'erne](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) eller Power BI-tjenesten.
+
+    ![Føj en tjenesteprincipal til et arbejdsområde](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
 6. Du kan nu vælge at integrere indhold i et eksempelprogram eller i dit eget program.
 
@@ -171,9 +173,10 @@ Nedenfor er et eksempel på et script, der kan bruges til at hente objekt-id'et 
 * Du kan ikke installere eller administrere en datagateway i det lokale miljø ved hjælp af en tjenesteprincipal.
 * Programmer til [integration i din organisation](embed-sample-for-your-organization.md) kan ikke bruge en tjenesteprincipal.
 * Administration af [dataflow](../service-dataflows-overview.md) understøttes ikke.
+* Tjenesteprincipaler understøtter ikke administrator-API'er.
 
 ## <a name="next-steps"></a>Næste trin
 
-* [Registrer et program](register-app.md)
+* [Registrer en app](register-app.md)
 * [Power BI Embedded til dine kunder](embed-sample-for-customers.md)
 * [Objekter for et program og en tjenesteprincipal i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)

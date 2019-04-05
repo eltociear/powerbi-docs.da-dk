@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 20faef99f710ebbc3eacebe15b5101726b895688
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: da6ec79a821e7aa9659843d0461ca6ac0b11706d
+ms.sourcegitcommit: de0b72915183a8a784d3227838bd704c1c209422
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279269"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58914161"
 ---
 # <a name="analyze-in-excel"></a>Analysér i Excel
 Der er tidspunkter, hvor du måske vil bruge Excel til at få vist og interagere med et datasæt, du har i Power BI. Det kan du gøre med **Analysér i Excel**, og du kan få adgang til pivottabel-, diagram- og udsnitsfunktioner i Excel, der er baseret på datasættet, der findes i Power BI.
@@ -27,7 +27,8 @@ Der er et par krav til brugen af **Analysér i Excel**:
 * **Analysér i Excel** understøttes for Microsoft Excel 2010 SP1 og nyere.
 * Pivottabeller i Excel understøtter ikke træk og slip-sammenlægning af numeriske felter. Dit datasæt i Power BI *skal have foruddefinerede målinger*.
 * Nogle organisationer har muligvis gruppepolitikregler, der forhindrer installation af de krævede **Analysér i Excel**-opdateringer i Excel. Hvis du ikke kan installere opdateringerne, skal du kontakte din administrator.
-* Der kræves en Pro-licens til **Analysér i Excel**. Hvis du vil vide mere om forskellene i funktionaliteten mellem licenstyper, kan du se [Power BI-funktioner efter licenstype](service-features-license-type.md). 
+* **Analysér i Excel** kræver, at datasættet er i Power BI Premium, eller at brugeren har en Power BI Pro-licens. Hvis du vil vide mere om forskellene i funktionaliteten mellem licenstyper, kan du se [Power BI-funktioner efter licenstype](service-features-license-type.md). 
+* Brugere kan oprette forbindelse til datasæt via Analysér i Excel, hvis de har læsetilladelse til det underliggende datasæt.  En bruger kan have dette på flere måder: Brugeren kan f.eks. være medlem af det arbejdsområde, der indeholder datasættet. Der kan deles en rapport eller et dashboard, hvor datasættet bruges, med brugeren. Eller brugeren kan have tilladelse til en app, der indeholder datasættet.
 
 ## <a name="how-does-it-work"></a>Hvordan fungerer det?
 Når du vælger **Analysér i Excel** i menuen med tre prikker (...), der er tilknyttet et datasæt eller en rapport i **Power BI**, opretter Power BI en .ODC-fil og downloader den fra browseren til din computer.
@@ -100,4 +101,4 @@ Når en bruger, som du har delt din projektmappe med, åbner projektmappen, får
 Da brugere får brug for at opdatere datasættet, og opdatering for eksterne forbindelser ikke understøttes i Excel Online, anbefales det, at brugere åbner projektmappen i desktop-versionen af Microsoft Excel på deres egen computer.
 
 ## <a name="troubleshooting"></a>Fejlfinding
-Når du bruger Analysér i Excel, kan du i nogle tilfælde få et uventet resultat, eller funktionen fungerer måske ikke som forventet. [Denne side indeholder løsninger på almindelige problemer, når du bruger Analysér i Excel](desktop-troubleshooting-analyze-in-excel.md)
+Når du bruger Analysér i Excel, kan du i nogle tilfælde få et uventet resultat, eller funktionen fungerer måske ikke som forventet. [Denne side indeholder løsninger på almindelige problemer med brug af Analysér i Excel](desktop-troubleshooting-analyze-in-excel.md)
