@@ -596,11 +596,11 @@ items:
         href: service-insights-optimize.md
     - name: Samarbejd i Power BI
       items:
+      - name: Opret de nye arbejdsområder
+        href: service-create-the-new-workspaces.md
       - name: Opret apparbejdsområder
         href: service-create-workspaces.md
-      - name: Opret de nye arbejdsområder (eksempelvisning)
-        href: service-create-the-new-workspaces.md
-      - name: Opret og del apps
+      - name: Publicer apps fra arbejdsområder
         href: service-create-distribute-apps.md
       - name: Administrer datalager i arbejdsområder
         href: service-admin-manage-your-data-storage-in-power-bi.md
@@ -882,18 +882,6 @@ items:
         href: developer/embedding.md
       - name: Hvad er Power BI Embedded i Azure?
         href: developer/azure-pbie-what-is-power-bi-embedded.md
-    - name: Hurtige introduktioner
-      items:
-      - name: Administrer kapaciteter i Azure
-        items:
-        - name: Opret en kapacitet i Azure
-          href: developer/azure-pbie-create-capacity.md
-        - name: Opret en kapacitet vha. Multi-Geo i Azure
-          href: developer/embedded-multi-geo.md
-        - name: Skaler en kapacitet i Azure
-          href: developer/azure-pbie-scale-capacity.md
-        - name: Sæt en kapacitet på pause, og start den i Azure
-          href: developer/azure-pbie-pause-start.md
     - name: Selvstudier
       items:
       - name: Integrer indhold til kunder
@@ -930,6 +918,8 @@ items:
         href: developer/get-azuread-access-token.md
       - name: Integration af Q&A
         href: developer/qanda.md
+      - name: Foretag fejlfinding af dit integrerede program
+        href: developer/embedded-troubleshoot.md
       - name: Administrer kapaciteter i Azure
         items:
         - name: Opret en kapacitet i Azure
@@ -940,8 +930,6 @@ items:
           href: developer/azure-pbie-scale-capacity.md
         - name: Sæt en kapacitet på pause, og start den i Azure
           href: developer/azure-pbie-pause-start.md
-        - name: Foretag fejlfinding af dit integrerede program
-          href: developer/embedded-troubleshoot.md
       - name: Overfør fra Workspace Collections
         items:
         - name: Sådan overfører du fra Power BI Workspace Collections
@@ -1048,9 +1036,7 @@ items:
       items:
       - name: Overfør data til et datasæt
         href: developer/walkthrough-push-data.md
-      - name: Registrer en app i Azure AD
-        href: developer/walkthrough-push-data-register-app-with-azure-ad.md
-      - name: Hent en adgangstoken til godkendelse
+      - name: Hent et adgangstoken til godkendelse
         href: developer/walkthrough-push-data-get-token.md
       - name: Opret et datasæt
         href: developer/walkthrough-push-data-create-dataset.md
@@ -1345,9 +1331,9 @@ items:
       href: service-admin-governance.md
     - name: Power BI sikkerhed
       href: service-admin-power-bi-security.md
-ms.openlocfilehash: 9790d4bc855411ed54ce12123d03f5ef731d4689
-ms.sourcegitcommit: de0b72915183a8a784d3227838bd704c1c209422
+ms.openlocfilehash: a804129b06b4eb92e67ae18251cbb9f950fe1beb
+ms.sourcegitcommit: ce59fa2b49658d67a2cbc77f81c53a8266a34e36
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58914207"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59053432"
