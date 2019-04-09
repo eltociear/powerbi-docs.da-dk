@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 7f919234f7635c76ce50d0bfffa393498f141da8
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 340b4d26b8beed4dfda5f7af4dc949088f3857ae
+ms.sourcegitcommit: d2805894fd372c35e11d519f724de2be98407fda
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324386"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59070016"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service-preview"></a>Opret en integreret datakilde for sideinddelte rapporter i Power BI-tjenesten (eksempelvisning)
 
@@ -22,7 +22,8 @@ I denne artikel kan du læse om, hvordan du opretter og redigerer en integreret 
 
 - Azure SQL Database og Data Warehouse
 - SQL Server
-- SQL Server Analysis Services 
+- SQL Server Analysis Services
+- Azure Analysis Services
 
 Sideinddelte rapporter opretter forbindelse til lokale datakilder via en gateway. Du kan konfigurere gatewayen, når du har publiceret rapporten til Power BI-tjenesten. Få mere at vide om [Power BI-gateways](service-gateway-getting-started.md). 
 
@@ -61,4 +62,4 @@ Sideinddelte rapporter opretter forbindelse til lokale datakilder via en gateway
 ## <a name="next-steps"></a>Næste trin
 
 - [Opret et integreret datasæt til en sideinddelt rapport i Power BI-tjenesten](paginated-reports-create-embedded-dataset.md)
-- [Hvad er sideinddelte rapporter i Power BI Premium? (prøveversion)](paginated-reports-report-builder-power-bi.md)
+- [Hvad er sideinddelte rapporter i Power BI Premium? (Eksempelvisning)](paginated-reports-report-builder-power-bi.md)
