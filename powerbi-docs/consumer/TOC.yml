@@ -61,6 +61,8 @@ items:
         href: ../power-bi-visualizations-arcgis.md
     - name: Almindelige opgaver
       items:
+      - name: Eksportér data til Excel
+        href: end-user-export.md
       - name: Slå indholdsejeren og datoen for seneste opdatering op
         href: end-user-fresh.md
       - name: Forskellige måder at zoome ind på indhold på ved hjælp af skærmtilstandene Fokus og Fuldskærm
@@ -137,6 +139,8 @@ items:
         href: mobile/mobile-tiles-in-the-mobile-apps.md
       - name: Favoritter i mobilappsene
         href: mobile/mobile-apps-favorites.md
+      - name: Konfigurer interaktion med rapporten i mobilappsene (kun telefon)
+        href: mobile/mobile-app-single-tap.md
       - name: Indstil databeskeder i Power BI-mobilapps
         href: mobile/mobile-set-data-alerts-in-the-mobile-apps.md
       - name: Modtag meddelelser i Power BI-mobilapps
@@ -175,6 +179,8 @@ items:
         href: mobile/mobile-app-ssrs-kpis-mobile-on-premises-reports.md
       - name: Få vist rapporter, der er optimeret til din telefon
         href: mobile/mobile-apps-view-phone-report.md
+      - name: Få adgang til indhold fra en ekstern organisation
+        href: mobile/mobile-apps-b2b.md
       - name: Scan en Power BI QR-kode fra din telefon
         href: mobile/mobile-apps-qr-code.md
       - name: Anmærk og del i mobilappsene
@@ -195,9 +201,9 @@ items:
     items:
     - name: Understøttede sprog i mobilappsene
       href: mobile/mobile-apps-supported-languages.md
-ms.openlocfilehash: e32baf6ff64b485b1be29dea76bcbe864d2cdc59
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
+ms.openlocfilehash: 6f9f080de3711a6a1a28f49da0298a67932d87e5
+ms.sourcegitcommit: c0add3d749f7e714e23824a742e105e694e4c129
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56248970"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59430276"
