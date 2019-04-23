@@ -50,7 +50,7 @@ Få vist de tilgængelige dynamiske referencelinjer for en visuel effekt ved at 
 
 3. Du opretter en ny linje ved at vælge **+ Tilføj** og beslutte dig for, hvilken måling der skal bruges til at oprette linjen.  Rullelisten **Måling** udfyldes automatisk med tilgængelige data fra den valgte visualisering. Nu skal du bruge **Open store count**.
 
-5. Du har en række forskellige indstillinger for linjen, f.eks. farve, gennemsigtighed, typografi og position (i forhold til den visuelle effekts dataelementer). Hvis du vil navngive linjen, kan du give den en titel og derefter flytte skyderen **Datanavn** til **Til**.  I dette tilfælde kalder vi linjen *Avg # Open Stores* og tilpasser nogle af de andre indstillinger, som vist nedenfor.
+5. Du har en række forskellige indstillinger for linjen, f.eks. farve, gennemsigtighed, typografi og position (i forhold til den visuelle effekts dataelementer). Hvis du vil navngive linjen, kan du give den en titel og derefter flytte skyderen **Datamærkat** til **Til**.  I dette tilfælde kalder vi linjen *Avg # Open Stores* og tilpasser nogle af de andre indstillinger, som vist nedenfor.
    
    ![tilpas analyse for gennemsnitslinje](media/service-analytics-pane/power-bi-average-line2.png)
 

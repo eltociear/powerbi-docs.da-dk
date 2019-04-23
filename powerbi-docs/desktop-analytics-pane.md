@@ -56,7 +56,7 @@ Få vist de tilgængelige dynamiske referencelinjer for en visuel effekt ved at 
    Du har en række forskellige indstillinger for linjen. Du kan f.eks. vælge dens *farve*, *gennemsigtighed*, *typografi* og *position* (forhold til den visuelle effekts dataelementer), og om du vil medtage etiketten. Og du kan vælge, hvilken **Måling** i den visuelle effekt du ønsker, at linjen skal være baseret på, ved at vælge rullemenuen **Måling**, som automatisk er udfyldt med dataelementer fra den visuelle effekt. I dette tilfælde vælger vi *Weather* (Vejr) som målingen, mærker den *Average Weather* (Gennemsnitligt vejr) og tilpasser nogle af de andre indstillinger, som vist nedenfor.
    
    ![](media/desktop-analytics-pane/analytics-pane_4.png)
-4. Hvis du vil have vist et datanavn, skal du slå skyderen **Datanavn** til. Når du gør dette, får du mange yderligere indstillinger for dit datanavn som vist i følgende billede.
+4. Hvis du vil have vist et datamærkat, skal du slå skyderen **Datamærkat** til. Når du gør dette, får du mange yderligere indstillinger for dit datamærkat som vist i følgende billede.
    
    ![](media/desktop-analytics-pane/analytics-pane_5.png)
 5. Bemærk tallet, der vises ved siden af elementet **Gennemsnitslinje** i ruden **Analytics**. Det fortæller dig, hvor mange dynamiske linjer du på nuværende tidspunkt har på dine visuelle effekter og hvilken type. Hvis vi tilføjer en **Maksimumlinje** for *Cost of Living* (Leveomkostninger), kan du se, at ruden **Analytics** viser, at vi nu har også anvender en **Maksimumlinje** som dynamisk referencelinje for den visuelle effekt.

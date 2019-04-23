@@ -115,7 +115,7 @@ Herefter kan du angive din egen heksadecimale farvekode for de valgte farver.
 
 Fra og med september 2017-versionen af **Power BI Desktop** kan JSON-filen være meget mere kompleks. I JSON-filen angiver du kun den formatering, der skal justeres, og alt andet, der *ikke* er angivet i JSON-filen, vender blot tilbage til Power BI-standardindstillingerne.
 
-Der er mange fordele ved at oprette en JSON-fil. Du kan f.eks. angive, at alle diagrammer skal bruge en skriftstørrelse på 12, eller at visse visuelle elementer skal bruge en bestemt skrifttypefamilie. Du kan også deaktivere datanavne for specifikke diagramtyper.
+Der er mange fordele ved at oprette en JSON-fil. Du kan f.eks. angive, at alle diagrammer skal bruge en skriftstørrelse på 12, eller at visse visuelle elementer skal bruge en bestemt skrifttypefamilie. Du kan også deaktivere datamærkater for specifikke diagramtyper.
 
 Når du bruger en detaljeret JSON-fil, kan du oprette en temafil, der standardiserer dine diagrammer og rapporter, hvilket gør det nemt at gøre dine organisationsrapporter konsistente.
 

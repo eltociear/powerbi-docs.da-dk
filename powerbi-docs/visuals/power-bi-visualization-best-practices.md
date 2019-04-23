@@ -370,7 +370,7 @@ Markér en visual for at aktivere den, og åbn ruden Formatering. Der er skydere
 **Figur 27: Slå aksenavne til eller fra**
 
 > [!TIP]
-> Et scenarie, hvor måske vil slå Y-aksenavne fra, kunne være, hvis du har haft **Datanavne** slået til.
+> Et scenarie, hvor du måske vil slå Y-aksenavne fra, kunne være, hvis du har haft **Datamærkater** slået til.
 > 
 > 
 
@@ -419,7 +419,7 @@ Vælg det visuelle element, der skal justeres, og sørg for, at det er indstille
 
 **Angiv tekststørrelsen**
 
-Tekststørrelsen kan tilpasses for titler og datanavne, men ikke for X- eller Y-akserne eller forklaringer.  Specifikt for datanavne skal du prøve at lege med **Vis enheder** og antallet af **Decimaler**, indtil du finder det optimale detaljeniveau til visningen af din rapport.   
+Tekststørrelsen kan tilpasses for titler og datamærkater, men ikke for X- eller Y-akserne eller forklaringer.  Specifikt for datamærkater skal du prøve at lege med **Vis enheder** og antallet af **Decimaler**, indtil du finder det optimale detaljeniveau til visningen af din rapport.   
 
 **Angiv tekstjusteringen**
 
@@ -431,11 +431,11 @@ Placering af tekst kan tilpasses for nogle Y-akser og for forklaringen.   Uanset
 
 **Angiv længde på titel og navn**
 
-Juster længden på titler, aksetitler, datanavne og forklaringer. Hvis du vælger at vise nogen af disse elementer, kan du ved at justere længden (sammen med tekststørrelsen) sikre, at intet er blevet afkortet. For **Titel** og **Forklaring** er indstillingen **Titeltekst**, og det er her, du angiver selve titlen, der vises på din visual. For **X-aksen** og **X-aksen** er indstillingen **Typografi**, og du vælger fra en rulleliste. For **Datanavne** er indstillingerne **Vis** og **Decimal**. Brug rullelisten **Vis** til at vælge måleenheden: millioner, tusinder, ingen, automatisk osv. Brug feltet **Decimal** til at fortælle Power BI, hvor mange decimaler der skal vises.
+Juster længden på titler, aksetitler, datamærkater og forklaringer. Hvis du vælger at vise nogen af disse elementer, kan du ved at justere længden (sammen med tekststørrelsen) sikre, at intet er blevet afkortet. For **Titel** og **Forklaring** er indstillingen **Titeltekst**, og det er her, du angiver selve titlen, der vises på din visual. For **X-aksen** og **X-aksen** er indstillingen **Typografi**, og du vælger fra en rulleliste. For **Datamærkater** er indstillingerne **Vis** og **Decimal**. Brug rullelisten **Vis** til at vælge måleenheden: millioner, tusinder, ingen, automatisk osv. Brug feltet **Decimal** til at fortælle Power BI, hvor mange decimaler der skal vises.
 
 **Angiv tekstfarven**
 
-Tekstfarven kan justeres for titler, akser og datanavne.  
+Tekstfarven kan justeres for titler, akser og datamærkater.  
 
 #### <a name="titles-and-labels-that-are-not-part-of-the-visualizations"></a>Titler og navne, som ikke er en del af visualiseringerne
 Tidligere i dette whitepaper diskuterede vi tilføjelse af tekstfelter på rapportsider. Nogle gange er titlerne på visualiseringerne ikke nok til at fortælle historien.  Tilføj tekstfelter for at kommunikere yderligere oplysninger til rapportens læsere.  
@@ -475,7 +475,7 @@ Tidligere i dette whitepaper talte vi om betydningen af at have en plan for, hvo
 Dette emne er opdelt for at dække:
 
 1. Farven på data
-2. Farven på datanavn
+2. Farven på datamærkat
 3. Farven på kategoriske værdier
 4. Farven på numeriske værdier
 
@@ -516,7 +516,7 @@ I vores eksempel er der tre udenforliggende værdier: 1952, 1956 og 2000.
 
 **Farver på navne og titler**
 
-Når du udforsker alle de tilgængelige formateringsindstillinger, kan du finde mange forskellige steder, hvor du kan føje farve til titler og forklaringer. Du kan f.eks. ændre farven på datanavne og aksenavne. Vær forsigtig.  Generelt er det at foretrække at bruge en enkelt farve til alle visualtitler.  Ligesom med alle retningslinjerne i dette whitepaper kan der altid være situationer og årsager til at "bryde reglerne", men hvis du beslutter at bryde reglerne, skal du have en god grund til at gøre det.
+Når du udforsker alle de tilgængelige formateringsindstillinger, kan du finde mange forskellige steder, hvor du kan føje farve til titler og forklaringer. Du kan f.eks. ændre farven på datamærkater og aksenavne. Vær forsigtig.  Generelt er det at foretrække at bruge en enkelt farve til alle visualtitler.  Ligesom med alle retningslinjerne i dette whitepaper kan der altid være situationer og årsager til at "bryde reglerne", men hvis du beslutter at bryde reglerne, skal du have en god grund til at gøre det.
 
 **Farver på kategoriske værdier**
 
@@ -579,9 +579,9 @@ Efter
 1. Udsnitsværktøj: Vi har fjernet tomme værdier fra udsnitsværktøjet ved at tilføje et sideniveaufilter og kun anvende guld, sølv, bronze. Vi har ændret **Kontrolelementer til markering** til Fra for **Vælg én** og **Markér alle**.
 2. Boble: Der er så mange elementer i forklaringen, at de ruller ud over skærmen.  Vi har fjernet forklaringen og aktiveret **Kategorietiketter** i stedet for. Kunder kan holde musemarkøren over boblerne for at få vist detaljer. Vi har afkortet titlen og fjernet "efter land/område", da det synes indlysende. Vi har slået aksenavne Til for begge for at gøre det lettere at forstå diagrammet.
 3. Udfyldt kort: Vi har ændret **Datafarver** for at få det til at skille sig ud. Vi har slået **Divergerende** til og angivet **Minimum** til pink og **Maksimum** til rød.
-4. Trækort: Vi har fjernet filteret, som var indstillet kun til USA. Angiv **Datanavne** til 1 decimal. Vores visual anvendte feltet for medaljeklasse, som ikke er særligt nyttigt, da det næsten altid vil være 33% (guld/sølv/bronze).  Vi har valgt et andet mere interessante felt, køn. Vi har ændret "Aquatics" (vandsport) til blå og "Athletics" (atletik) til grå af designhensyn.
-5. Øverste søjlediagram: Vi har afkortet titlen, fjernet datanavne og slået titel på forklaring fra. Vi har ændret ordrækkefølgen i titlen, så den stemmer overens med det nedenstående diagram.
-6. Nederste søjlediagram: Sorteret efter år stigende for at stemme overens med det ovenstående diagram. Vi har ændret farverne, så de stemmer overens med medaljeklassen. Vi har ændret titlen. Vi har deaktiveret forklaringen for at få mere plads til data. Vi har slået datanavne til, som ikke vises i rapporten (fordi vores visual er for lille til, at navnet er læseligt), men det vises, når vores visual åbnes i Fokustilstand. [Få mere at vide om Fokustilstand](../consumer/end-user-focus.md). Vi har føjet "Count of Event (Distinct)" (antal begivenheder (særskilte)) til **Værktøjstip**, så når man holder markøren over en stablet søjle, viser værktøjstippet også, hvor mange begivenheder der blev konkurreret om det pågældende år.
+4. Trækort: Vi har fjernet filteret, som var indstillet kun til USA. Angiv **Datamærkater** til 1 decimal. Vores visual anvendte feltet for medaljeklasse, som ikke er særligt nyttigt, da det næsten altid vil være 33% (guld/sølv/bronze).  Vi har valgt et andet mere interessante felt, køn. Vi har ændret "Aquatics" (vandsport) til blå og "Athletics" (atletik) til grå af designhensyn.
+5. Øverste søjlediagram: Vi har afkortet titlen, fjernet datamærkater og slået titel på forklaring fra. Vi har ændret ordrækkefølgen i titlen, så den stemmer overens med det nedenstående diagram.
+6. Nederste søjlediagram: Sorteret efter år stigende for at stemme overens med det ovenstående diagram. Vi har ændret farverne, så de stemmer overens med medaljeklassen. Vi har ændret titlen. Vi har deaktiveret forklaringen for at få mere plads til data. Vi har slået datamærkater til, som ikke vises i rapporten (fordi vores visualisering er for lille til, at mærkatet er læseligt), men det vises, når vores visualisering åbnes i Fokustilstand. [Få mere at vide om Fokustilstand](../consumer/end-user-focus.md). Vi har føjet "Count of Event (Distinct)" (antal begivenheder (særskilte)) til **Værktøjstip**, så når man holder markøren over en stablet søjle, viser værktøjstippet også, hvor mange begivenheder der blev konkurreret om det pågældende år.
 7. Visuelle interaktioner: Vi har deaktiveret interaktioner for begge kort, da jeg altid vil have dem vist for de samlede lege og sportsgrene.
 
 ## <a name="visual-types-and-best-practices"></a>Typer af visuals og bedste praksis
@@ -631,11 +631,11 @@ Hvis kurvediagrammer er standarden for at se på data over tid, er liggende søj
 **Figur 51: Vandret liggende søjlediagram**
 
 #### <a name="best-practices"></a>Bedste praksis
-* Vis datanavne for værdier.  Det gør det lettere at identificere bestemte værdier. For at gøre dette skal du åbne ruden Formatering og indstille **Datanavne** til Til.
+* Vis datamærkater for værdier.  Det gør det lettere at identificere bestemte værdier. For at gøre dette skal du åbne ruden Formatering og indstille **Datamærkater** til Til.
   
   ![](media/power-bi-visualization-best-practices/power-bi-data-labels.png)
   
-  **Figur 52: Slå datanavne til**
+  **Figur 52: Slå datamærkater til**
 * Det liggende søjlediagram er meget praktisk at sammenligne én måling med mange **på en enkelt tidspunkt**.  Mens kurvediagrammet ovenfor viste os tendenser over tid, viser det liggende søjlediagram os tendensen for en enkelt kategori på et bestemt tidspunkt.  Med et hurtigt øjekast kan vi se på vores liggende søjlediagram, at Spanien har en af verdens højeste arbejdsløshedsprocenter – 25 %.
 * Når et helt søjlediagram/liggende søjlediagram ikke passer ind på den tildelte plads, tilføjer Power BI rullepaneler. Når det er muligt, og hvis det giver mening, kan du strukturere din visual for at vise hele diagrammet, så læseren får en oversigt over hele fordelingen.  Dette er desværre ikke muligt i vores eksempel på grund af det store antal lande verden over.
   
@@ -748,7 +748,7 @@ Hvis du tilføjer en afspilningsakse, kan du lade som om, du er Hans Rosling og 
 #### <a name="best-practices"></a>Bedste praksis
 * Punkt- og boblediagrammer er fantastiske historiefortællere. Men de er ikke så nyttige, når du vil udforske data.  Dette er det, Stephen Few påpeger i afsnittet nedenfor *Styrken ved denne tilgang er, når den bruges til at fortælle en historie. Når Rosling fortæller, hvad der sker i diagrammet, når boblerne flytter rundt og ændrer værdi, og påpeger, hvad han vil have os til at se, så vækkes oplysningerne til live. Animerede boblediagrammer er dog meget mindre effektive til at udforske og udlede betydningen af data på egen hånd. Jeg tvivler på, at Rosling bruger denne metode til at opdage historierne, men kun til at fortælle dem, når de er kendt. Vi kan ikke følge mere end én boble ad gangen, når de flytter rundt, så vi er nødt til at køre animationen igen og igen for at forsøge at få en ide om, hvad der sker. Vi kan føje spor til valgte bobler, hvilket gør det muligt at følge hele den sti, disse bobler har flyttet sig, men hvis der bruges spor til mere end nogle få bobler, kan diagrammet hurtigt blive for rodet. I bund og grund forsøger jeg at pointere, at dette ikke er den bedste metode til at vise oplysninger til udforskning og analyse.*
 * Føj navne til X- og Y-aksen for at hjælpe med at fortælle historien.  Især med boblediagrammer er der mange komponenter i spil, og navne gør det lettere for læserne at forstå en visual.
-* Tilføj datanavne for at gøre det lettere at fortolke en visual.  Især med boblediagrammer kan det være svært at skelne mellem ensartede farver, når du har mange elementer i forklaringen.  I den ovenstående visual er forklaringsfarverne for Surinam, Columbia og Ecuador meget ensartede.
+* Tilføj datamærkater for at gøre det lettere at fortolke en visualisering.  Især med boblediagrammer kan det være svært at skelne mellem ensartede farver, når du har mange elementer i forklaringen.  I den ovenstående visual er forklaringsfarverne for Surinam, Columbia og Ecuador meget ensartede.
 * Har du oprettet et punktdiagram og kan kun se ét datapunkt, der lægger alle værdierne på X- og Y-aksen sammen? Eller sammenlægger dit diagram alle værdierne langs en enkelt vandret eller lodret linje?  For at løse dette problemet skal du tilføje et felt i området **Oplysninger** for at fortælle Power BI, hvordan værdierne skal grupperes. Feltet skal være entydigt for hvert punkt, der skal afbildes. Hvis du har brug for hjælp, kan du se [selvstudiet om punktdiagrammer og boblediagrammer i Power BI](power-bi-visualization-scatter.md).
 
 ### <a name="tree-map-charts"></a>Trækortdiagrammer

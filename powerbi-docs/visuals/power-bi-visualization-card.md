@@ -91,7 +91,7 @@ Du har mange muligheder for at ændre etiketter, tekst, farve og meget mere. Den
 1. Start med at åbne formateringsruden ved at vælge ikonet med malerrullen. 
 
     ![kontur af kort med malerrullen](media/power-bi-visualization-card/power-bi-format-card.png)
-2. Udvid **Dataetiket**, og rediger farven, størrelsen og skrifttypefamilien. Hvis du havde tusindvis af butikker, kunne du bruge **Vis enheder** til at få vist antallet af butikker i tusinder samt styre decimalerne. For eksempel 125.8K i stedet for 125.832,00.
+2. Udvid **Datamærkat**, og rediger farven, størrelsen og skrifttypefamilien. Hvis du havde tusindvis af butikker, kunne du bruge **Vis enheder** til at få vist antallet af butikker i tusinder samt styre decimalerne. For eksempel 125.8K i stedet for 125.832,00.
 
 3.  Udvid **Kategorietiket**, og rediger farven og størrelsen.
 

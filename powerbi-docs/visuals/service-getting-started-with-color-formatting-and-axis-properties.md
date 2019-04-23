@@ -38,7 +38,7 @@ Du kan tilpasse mange elementer i hver visualisering:
 * X-akse
 * Y-akse
 * Datafarver
-* Datanavne
+* Datamærkater
 * Figurer
 * Afbildningsområde
 * Titel

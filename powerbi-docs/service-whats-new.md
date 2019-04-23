@@ -435,7 +435,7 @@ Der er mange opdateringer i denne uge, som hovedsageligt gælder for Power BI De
 
 * Opdateringer til oprettelse af rapporter, ruden til formatering samt båndet:
   
-  1. Formatér datanavne efter kategoriserie
+  1. Formatér datamærkater efter kategoriserie
   2. Skift antallet af decimaler, der vises i visuelle elementer
   3. Skift tekststørrelsen i visuelle elementer
   4. Mulighed for nøjagtigt layout i visuelle elementer: justering, distribution, størrelse, placering (kræver Power BI Desktop til oprettelse)
@@ -446,7 +446,7 @@ Der er mange opdateringer i denne uge, som hovedsageligt gælder for Power BI De
   2. Ny visualisering: Diagrammet Stablet område
   3. Smarte værktøjstip til Områdediagram og Kurvediagram, når der peges på dem.
   4. Mulighed for at oprette referencelinje/område for et Kartesiansk visuelt element.
-  5. Forbedrede datanavne for cirkeldiagrammer og punktdiagrammer.
+  5. Forbedrede datamærkater for cirkeldiagrammer og punktdiagrammer
 * Integration af R-visuals i Power BI Desktop (previewfunktion).
 * Desktop foreslår tabel til tabel-relationer, når der forsøges at oprette visuelle elementer med to tabeller, hvor der ikke er oprettet en relation.
 * Optimeret layout af fanen Hjem i Desktop-version.

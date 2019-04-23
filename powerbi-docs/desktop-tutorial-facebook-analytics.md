@@ -168,17 +168,17 @@ Visualiseringen bliver mere interessant, men du kan ikke se meget af teksten i o
    
    ![Vis mere af opslagene](media/desktop-tutorial-facebook-analytics/barchart5.png)
    
-Der vises ikke nøjagtige værdier på diagrammets X-akse (antal kommentarer), og det ser lidt malplaceret ud nederst i diagrammet. Du beslutter dig for at bruge datanavne i stedet. 
+Der vises ikke nøjagtige værdier på diagrammets X-akse (antal kommentarer), og det ser lidt malplaceret ud nederst i diagrammet. Du beslutter dig for at bruge datamærkater i stedet. 
 
 1. Vælg ikonet Formatér, og vælg derefter skyderen ved siden af **X-akse** for at slå den **Fra**. 
    
-2. Vælg skyderen ved siden af **Datanavne** for at slå dem **Til**. Nu vises det nøjagtige antal kommentarer for hvert opslag i diagrammet.
+2. Vælg skyderen ud for **Datamærkater** for at slå dem **Til**. Nu vises det nøjagtige antal kommentarer for hvert opslag i diagrammet.
    
-   ![Anvend datanavne](media/desktop-tutorial-facebook-analytics/barchart6.png)
+   ![Anvend datamærkater](media/desktop-tutorial-facebook-analytics/barchart6.png)
    
 ### <a name="edit-the-data-type"></a>Rediger datatypen
 
-Det nærmer sig, men datanavnene har alle decimalen **,0**, hvilket er distraherende og misvisende, da **antallet af opslag** antal vil være et heltal. Du skal ændre datatypen for kolonnen **Number of posts** til heltal.
+Det nærmer sig, men datamærkaterne har alle decimalen **,0**, hvilket er distraherende og misvisende, da **antallet af opslag** antal vil være et heltal. Du skal ændre datatypen for kolonnen **Number of posts** til heltal.
 
 1. Du redigerer datatypen ved at højreklikke på **Query1** på listen Felter eller holde over den og vælge ellipsen **Flere indstillinger** (...) og derefter vælge **Rediger forespørgsel**. Du kan også vælge **Rediger forespørgsel** i området **Eksterne data** under fanen Hjem på båndet og derefter vælge **Rediger forespørgsler** i rullemenuen. **Power-forespørgselseditor** i Power BI Desktop åbnes i et separat vindue.
    
@@ -193,7 +193,7 @@ Det nærmer sig, men datanavnene har alle decimalen **,0**, hvilket er distraher
    
    ![Skift datatype](media/desktop-tutorial-facebook-analytics/change-datatype.png)
    
-3. Vælg **Luk og anvend**, eller blot **Anvend** for at anvende ændringerne, mens vinduet Power-forespørgselseditor fortsat er åbent. Når ændringerne er blevet indlæst, bliver datanavnene i diagrammet heltal. 
+3. Vælg **Luk og anvend**, eller blot **Anvend** for at anvende ændringerne, mens vinduet Power-forespørgselseditor fortsat er åbent. Når ændringerne er blevet indlæst, bliver datamærkaterne i diagrammet heltal. 
    
    ![Diagram med heltal](media/desktop-tutorial-facebook-analytics/vis-3.png)
    

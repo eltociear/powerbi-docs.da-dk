@@ -52,7 +52,7 @@ En *Cortana-svarside* i en rapport har en størrelse specielt afpasset til Corta
 > 
 > 
 
-4. Kontrollér, at alle visuelle elementer falder inden for sidens kanter. Rediger eventuelt visningsindstillinger, datanavne, farver og baggrunde.  
+4. Kontrollér, at alle visuelle elementer falder inden for sidens kanter. Rediger eventuelt visningsindstillinger, datamærkater, farver og baggrunde.  
    
     ![](media/service-cortana-answer-cards/pbi_cortana_modify-new.png)
 5. Navngiv siden, og tilføj alternative navne. Cortana bruger disse navne, når der søges efter resultater. I ruden **Visualiseringer** skal du vælge malerkostikonet og vælge **Sideoplysninger**. Aktivér Spørgsmål og svar for dette visuelle element ved at flytte skyderen til **Til**.

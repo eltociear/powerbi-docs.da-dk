@@ -82,7 +82,7 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
             Failed to load expression host assembly. Details: Could not load file or assembly 'Microsoft.ReportingServices.ProcessingObjectModel, Version=2018.7.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040) (rsErrorLoadingExprHostAssembly)
              `*
              
-            - Fejl i gennemsigtighed af datanavn er nu løst.
+            - Fejl i gennemsigtighed af datamærkat er nu løst.
             
     - *Version 1.3.6801.38816 (build 15.0.2.540), udgivet: 15. august 2018*
         - Funktioner
