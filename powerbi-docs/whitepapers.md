@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/07/2019
+ms.date: 03/28/2019
 ms.author: maggies
-ms.openlocfilehash: 5af870bfd3cb6f9c925dd3d6268d0a1cb54df09b
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
+ms.openlocfilehash: c0cc6b19e69ebe6400d25b77c15cf577d765c415
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "65201172"
 ---
 # <a name="whitepapers-for-power-bi"></a>Whitepapers til Power BI
 
@@ -24,12 +24,12 @@ Whitepapers gør det muligt at udforske Power BI-emner på et mere detaljeret ni
 | --- | --- | --- |
 | [Power BI og dataflow](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Denne hvidbog beskriver dataflow i tekniske detaljer, og den beskriver de funktioner og initiativer, der ligger bag dataflowets funktioner og funktionalitet. | November 2018 |
 | [Microsoft Power BI Premium](https://aka.ms/pbipremiumwhitepaper) |Beskriver Power BI Premium, både som den findes, når startes, og hvordan den udvikler sig. | Oktober 2017 |
-| [Planlægning og installation af Power BI Premium](https://aka.ms/Premium-Capacity-Planning-Deployment)| Denne rapport indeholder en vejledning og bedste praksis for planlægning og installation af Premium-kapacitet for veldefinerede arbejdsbelastninger.| November 2017 |
+| [Planlægning og installation af Power BI Premium](whitepaper-powerbi-premium-deployment.md)| Denne rapport indeholder en vejledning og bedste praksis for planlægning og installation af Premium-kapacitet for veldefinerede arbejdsbelastninger.| Marts 2019 |
 | [Planlæg kapacitet for integreret analyse med Power BI Premium](https://aka.ms/pbiewhitepaper) |I dette whitepaper er der en vejledning til appudvikleren/ISV'en om at fastslå den mest relevante kapacitet for virksomheden. | Oktober 2017 |
 | [Planlægning af en Power BI Enterprise-udrulning](https://go.microsoft.com/fwlink/?linkid=2057861) |I denne tekniske hvidbog beskrives, hvilke overvejelser der skal gøres for at få en velfungerende og sikker Power BI-udrulning i organisationen. | Juli 2018 |
 | [Vejledning i kapacitetsplanlægning i Power BI-rapportserver](report-server/capacity-planning.md) |Denne rapports primære sigte er at give en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af adskillelige gennemførsler af belastningstest ved forskellige arbejdsbelastninger i forhold til en rapportserver. | Marts 2018 |
 | [Sikkerhed](service-admin-power-bi-security.md) |Giver en detaljeret beskrivelse af sikkerheden i Power BI. | Marts 2019 |
-| [Distribuer Power BI-indhold til eksterne gæstebrugere vha. Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md)|I denne rapport forklares det, hvordan indhold kan distribueres til brugere uden for organisationen vha. integrationen af Azure Active Directory Business-to-business (AAD B2B).| Marts 2018 |
+| [Distribuer Power BI-indhold til eksterne gæstebrugere vha. Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md)|I denne rapport forklares det, hvordan indhold kan distribueres til brugere uden for organisationen vha. integrationen af Azure Active Directory Business-to-business (AAD B2B).| Marts 2019 |
 | [Avanceret analyse med Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Beskriver de avancerede analysefunktioner i Power BI, herunder forudsigende analyser, brugerdefinerede visualiseringer, R-integration og dataanalyseudtryk. | Februar 2017 |
 | [Bedste praksis for design af rapporter og visualiseringer](visuals/power-bi-visualization-best-practices.md) |Dette whitepaper indeholder bedste praksis for design af rapporter i Power BI. | Juni 2018 |
 | [Tovejsfiltrering](desktop-bidirectional-filtering.md) |Forklarer tovejskrydsfiltrering i Power BI Desktop. Dette whitepaper omhandler også SQL Server Analysis Services 2016, da begge programmer har samme funktionsmåde. | Juli 2018 |
