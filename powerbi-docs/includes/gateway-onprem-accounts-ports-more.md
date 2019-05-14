@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 79789e4a90167e440f859e73048e5972d2a5aacb
+ms.sourcegitcommit: 2df541facab8a1621953e91dbbee18c7d4e9a3c3
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64861162"
+---
 ## <a name="sign-in-account"></a>Logonkonto
 
 Brugere logger på med enten en arbejds- eller skolekonto. Denne konto er din **organisationskonto**. Hvis du har tilmeldt dig et tilbud på Office 365 og ikke angav din rigtige arbejdsmailadresse, kan den se ud som nancy@contoso.onmicrosoft.com. Din konto gemmes i en lejer i Azure Active Directory (AAD). I de fleste tilfælde vil AAD-kontoens UPN svare til mailadressen.
@@ -15,29 +23,31 @@ Hvis du oplever godkendelsesproblemer med din proxyserver, kan du prøve at ænd
 
 Gatewayen opretter en udgående forbindelse til Azure Service Bus. Den kommunikerer via udgående porte: TCP 443 (standard), 5671, 5672, 9350 via 9354.  Gatewayen kræver ikke indgående porte.
 
-Det anbefales, at du føjer IP-adresserne for dit dataområde til hvidlisten i din firewall. Du kan downloade [listen over IP-adresser til Microsoft Azure Datacenter](https://www.microsoft.com/download/details.aspx?id=41653). Listen opdateres ugentligt. Gatewayen kommunikerer med Azure Service Bus ved hjælp af IP-adressen foruden det fuldt kvalificerede domænenavn (FQDN). Hvis du tvinger gatewayen til at kommunikere ved hjælp af HTTPS, vil det gennemtvinge kun at bruge FQDN, og der sker ingen kommunikation via IP-adressen.
+Det anbefales, at du føjer IP-adresserne for dit dataområde til hvidlisten i din firewall. Du kan downloade [listen over IP-adresser til Microsoft Azure Datacenter](https://www.microsoft.com/download/details.aspx?id=41653). Listen opdateres ugentligt. Du kan også få listen over påkrævede porte ved at udføre [netværksporttesten](../service-gateway-onprem-tshoot.md#network-ports-test) i datagatewayprogrammet i det lokale miljø. Gatewayen kommunikerer med Azure Service Bus ved hjælp af IP-adressen foruden det fuldt kvalificerede domænenavn (FQDN). Hvis du tvinger gatewayen til at kommunikere ved hjælp af HTTPS, vil det gennemtvinge kun at bruge FQDN, og der sker ingen kommunikation via IP-adressen.
+
 
 > [!NOTE]
 > På listen over IP-adresser til Azure Datacenter er adresserne angivet i CIDR-notation. 10.0.0.0/24 er f.eks. ikke det samme som 10.0.0.0 til og med 10.0.0.24. Få mere at vide om [CIDR-notation](http://whatismyipaddress.com/cidr).
 
 Her er en liste over de fuldt kvalificerede domænenavne, der anvendes af gatewayen.
 
-| Domænenavne | Udgående porte | Beskrivelse |
-| --- | --- | --- |
-| *.download.microsoft.com |80 |Der bruges HTTP til at downloade installationsprogrammet. |
-| *.powerbi.com |443 |HTTPS |
-| *.analysis.windows.net |443 |HTTPS |
-| *.login.windows.net |443 |HTTPS |
-| *.servicebus.windows.net |5671-5672 |Advanced Message Queuing Protocol (AMQP) |
-| *.servicebus.windows.net |443, 9350-9354 |Lyttere på Service Bus Relay via TCP (kræver 443 til anskaffelse af adgangskontroltoken) |
-| *.frontend.clouddatahub.net |443 |HTTPS |
-| *.core.windows.net |443 |HTTPS |
-| login.microsoftonline.com |443 |HTTPS |
-| *.msftncsi.com |443 |Bruges til at teste internetforbindelsen, hvis der ikke kan oprettes forbindelse til gatewayen fra Power BI-tjenesten. |
-| *.microsoftonline-p.com |443 |Bruges til godkendelse afhængigt af konfigurationen. |
+| Domænenavne | Udgående porte | Beskrivelse |  |
+|-----------------------------|----------------|--------------------------------------------------------------------------------------------------------------------|---|
+| *.download.microsoft.com | 80 | Bruges til at downloade installationsprogrammet. Det bruges også af datagatewayappen til at kontrollere version og gatewayområde. |  |
+| *.powerbi.com | 443 | Bruges til at identificere den relevante Power BI-klynge. |  |
+| *.analysis.windows.net | 443 | Bruges til at identificere den relevante Power BI-klynge. |  |
+| *.login.windows.net | 443 | Bruges til at godkende datagatewayappen med Azure Active Directory/OAuth2. |  |
+| *.servicebus.windows.net | 5671-5672 | Bruges til Advanced Message Queuing Protocol (AMQP). |  |
+| *.servicebus.windows.net | 443, 9350-9354 | Bruges af lyttefunktioner i Service Bus Relay over TCP (kræver 443 for at få et adgangskontroltoken). |  |
+| *.frontend.clouddatahub.net | 443 | Frarådet – ikke længere nødvendig. Fjernes fra dokumentationen fremover. |  |
+| *.core.windows.net | 443 | Bruges af dataflows i Power BI til at skrive data til Azure Data Lake. |  |
+| login.microsoftonline.com | 443 | Bruges til at godkende datagatewayappen med Azure Active Directory/OAuth2. |  |
+| *.msftncsi.com | 443 | Bruges til at teste internetforbindelsen, og om gatewayen er tilgængelig for Power BI-tjenesten. |  |
+| *.microsoftonline-p.com | 443 | Bruges til at godkende datagatewayappen med Azure Active Directory/OAuth2. |  |
+| | |
 
 > [!NOTE]
-> Den trafik, der kommer gennem visualstudio.com eller visualstudioonline.com er ikke til appindsigt, og det er ikke krævet for at gatewayen kan fungere.
+> Når gatewayen er installeret og registreret, er de eneste påkrævede porte/IP-adresser dem, der skal bruges af Azure Service Bus (servicebus.windows.net ovenfor). Du kan få listen over påkrævede porte ved at udføre [netværksporttesten](../service-gateway-onprem-tshoot.md#network-ports-test) i datagatewayprogrammet i det lokale miljø.
 
 ## <a name="forcing-https-communication-with-azure-service-bus"></a>Gennemtving HTTPS-kommunikation med Azure Service Bus
 

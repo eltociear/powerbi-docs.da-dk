@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 03/05/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 91a4cf3ff4fef4530c7c45712a86419298da53f4
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
+ms.openlocfilehash: 3c9fd8877347ad0eebf7db059cc791583c89f353
+ms.sourcegitcommit: af2b2238fe77eaa1b2392a19a143a0250b8665cf
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306498"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "65533715"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Brug SAML (Security Assertion Markup Language) til enkeltlogon (SSO) fra Power BI til datakilder i det lokale miljø
 
@@ -75,7 +75,7 @@ Det resulterende IdP-certifikat er gyldigt i ét år (se indstillingen -dage). I
 
     ![Konfigurer SAML](media/service-gateway-sso-saml/configure-saml.png)
 
-1. Vælg den identitetsudbyder, du oprettede i trin 2. Angiv UPN for Power BI-brugeren under **Ekstern identitet**, og vælg derefter **Tilføj**.
+1. Vælg den identitetsudbyder, du oprettede i trin 2. For **eksterne id**, Angiv Power BI brugerens UPN (typisk den mailadresse brugeren logger på Power BI med), og vælg derefter **Tilføj**. Bemærk, at hvis du har konfigureret din Gateway, så brug konfigurationsindstillingen ADUserNameReplacementProperty skal du angive den værdi, der erstatter Power BI brugerens oprindelige UPN. F.eks, hvis du har angivet ADUserNameReplacementProperty til SAMAccountName, skal du indtaste brugerens SAMAccountName.
 
     ![Vælg identitetsudbyder](media/service-gateway-sso-saml/select-identity-provider.png)
 
@@ -179,7 +179,7 @@ Godkendelsessporinger indeholder detaljerede oplysninger om fejlfinding af probl
 
 Du kan finde flere oplysninger om **datagatewayen i det lokale miljø** og **DirectQuery** i følgende ressourcer:
 
-* [Datagateway i det lokale miljø](service-gateway-onprem.md)
+* [On-premises data gateway (Datagateway i det lokale miljø)](service-gateway-onprem.md)
 * [DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakilder, der understøttes af DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery og SAP BW](desktop-directquery-sap-bw.md)

@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/07/2019
+ms.date: 05/02/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 8a86d17252bea3dbdb6ad30de35667cfbd844c8b
-ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
+ms.openlocfilehash: 1099cf8a7e26d46d871134239502dc918a88a316
+ms.sourcegitcommit: e02a7a7ab538553deb519403aa0e4fb87cc95e1c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58430386"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65202759"
 ---
 # <a name="power-bi-security-whitepaper"></a>Whitepaper om sikkerhed i Power BI
 
@@ -46,7 +46,7 @@ Hver installation af Power BI består af to klynger – en Web Front End (**WFE*
 
 ![WFE og Back End](media/whitepaper-powerbi-security/powerbi-security-whitepaper_01.png)
 
-Power BI bruger Azure Active Directory (**AAD**) til godkendelse og administration af konti. Power BI bruger også **Azure Traffic Manager** (ATM) til at dirigere brugertrafik til det nærmeste datacenter, hvilket bestemmes af DNS-posten for den klient, der forsøger at oprette forbindelse, til godkendelsesprocessen og til at downloade statisk indhold og statiske filer. Power BI bruger **Azure Content Delivery Network** (CDN) til effektivt at distribuere det nødvendige statiske indhold og de nødvendige statiske filer til brugerne på baggrund af geografisk landestandard.
+Power BI bruger Azure Active Directory (**AAD**) til godkendelse og administration af konti. Power BI bruger også **Azure Traffic Manager** (ATM) til at dirigere brugertrafik til det nærmeste datacenter, hvilket bestemmes af DNS-posten for den klient, der forsøger at oprette forbindelse, til godkendelsesprocessen og til at downloade statisk indhold og statiske filer. Power BI bruger den WFE, der geografisk er tættest på, til effektivt at distribuere det nødvendige statiske indhold og filerne til brugere, med undtagelse af brugerdefinerede visuelle elementer, der leveres ved hjælp af **Azure Content Delivery Network (CDN)**.
 
 ### <a name="the-wfe-cluster"></a>WFE-klyngen
 
@@ -231,7 +231,7 @@ I forbindelse med cloudbaserede datakilder krypterer rollen for Dataflytning kry
 
     b. ETL – krypteret i Azure Blob Storage, men alle data, der i øjeblikket er i Azure Blob Storage i Power BI-tjenesten, bruger [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), som også kaldes for kryptering på serversiden. Multi-geo bruger også SSE.
 
-    c. Pushdata v1 – gemmes krypteret i Azure Blob Storage, men alle data, der i øjeblikket er i Azure Blob Storage i Power BI-tjenesten, bruger [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), som også kaldes for kryptering på serversiden. Multi-geo bruger også SSE.
+    c. Pushdata v1 – gemmes krypteret i Azure Blob Storage, men alle data, der i øjeblikket er i Azure Blob Storage i Power BI-tjenesten, bruger [Azure Storage Service Encryption (SSE)](https://docs.microsoft.com/azure/storage/common/storage-service-encryption), som også kaldes for kryptering på serversiden. Multi-geo bruger også SSE. Push data v1 udgik fra 2016. 
 
     d. Pushdata v2 – gemmes krypteret i Azure SQL.
 
@@ -248,22 +248,24 @@ Power BI sikrer overvågning af dataintegritet på følgende måder:
 1. Metadata (rapportdefinition)
 
    a. Rapporter kan enten være Excel til Office 365-rapporter eller Power BI-rapporter. På baggrund af typen af rapport gælder følgende for metadata:
+        
+    &ensp; &ensp; a. Excel-rapportmetadata gemmes krypteret i SQL Azure. Metadata gemmes også i Office 365.
 
-       a. Excel Report metadata is stored encrypted in SQL Azure. Metadata is also stored in Office 365.
-
-       b. Power BI reports are stored encrypted in Azure SQL database.
+    &ensp; &ensp; b. Power BI-rapporter gemmes krypteret i Azure SQL Database.
 
 2. Statiske data
 
    Statiske data omfatter artefakter såsom baggrundsbilleder og brugerdefinerede visualiseringer.
 
-    a. Der gemmes intet i forbindelse med rapporter, der er oprettet i Excel til Office 365.
+    &ensp; &ensp; a. Der gemmes intet i forbindelse med rapporter, der er oprettet i Excel til Office 365.
 
-    b. I forbindelse med Power BI-rapporter gemmes og krypteres statiske data i Azure Blob Storage.
+    &ensp; &ensp; b. I forbindelse med Power BI-rapporter gemmes og krypteres statiske data i Azure Blob Storage.
 
-3. Cachelagring a. Der cachelagres intet i forbindelse med rapporter, der er oprettet i Excel til Office 365.
+3. Cacher
 
-    b. I forbindelse med Power BI-rapporter cachelagres data for de viste visualiseringer krypteret i Azure SQL Database.
+    &ensp; &ensp; a. Der cachelagres intet i forbindelse med rapporter, der er oprettet i Excel til Office 365.
+
+    &ensp; &ensp; b. I forbindelse med Power BI-rapporter cachelagres data for de viste visualiseringer krypteret i Azure SQL Database.
  
 
 4. Oprindelige .pbix-filer (Power BI Desktop) eller .xlsx-filer (Excel), der er publiceret i Power BI
@@ -280,7 +282,7 @@ Uanset hvilken krypteringsmetode der bruges, administrerer Microsoft nøglekrypt
 
 ### <a name="data-transiently-stored-on-non-volatile-devices"></a>Midlertidigt gemte data på permanente enheder
 
-I det følgende beskrives data, der gemmes midlertidigt på permanente enheder.
+Permanente enheder er enheder, der har hukommelse, der bevares uden konstant strøm. I det følgende beskrives data, der gemmes midlertidigt på permanente enheder. 
 
 #### <a name="datasets"></a>Datasæt
 
@@ -293,6 +295,9 @@ I det følgende beskrives data, der gemmes midlertidigt på permanente enheder.
     a. Analysis Services i det lokale miljø – intet gemmes
 
     b. DirectQuery – Dette afhænger af, om modellen er oprettet direkte i tjenesten. Hvis det er tilfældet, gemmes den i forbindelsesstrengen i et krypteret format med krypteringsnøglen gemt som klartekst samme sted (sammen med de krypterede oplysninger). Hvis modellen er importeret fra Power BI Desktop, gemmes legitimationsoplysningerne ikke på permanente enheder.
+
+    > [!NOTE]
+    > Funktionen til modeloprettelse på tjenestesiden udgik i begyndelsen af 2017.
 
     c. Data sendt via push – ingen (ikke relevant)
 
@@ -452,6 +457,12 @@ Følgende spørgsmål er almindelige spørgsmål og svar om sikkerhed i Power BI
 
 * Ja. Bing Kort og ESRI-visualiseringer overfører data ud af Power BI-tjenesten for visualiseringer, der bruger disse tjenester. Du kan finde flere oplysninger og detaljerede beskrivelser af trafik ud af Power BI-lejeren under [**Power BI og ExpressRoute**](service-admin-power-bi-expressroute.md).
 
+**I forbindelse med skabelonapps udfører Microsoft da alle vurderinger af skabelonappens sikkerhed eller beskyttelse af personlige oplysninger før udgivelse af elementer i galleriet?**
+* Nej. Appudgiveren er ansvarlig for indholdet, mens kundens ansvar er at gennemse og bestemme, om der er tillid til skabelonappens udgiver. 
+
+**Er der skabelonapps, der kan sende oplysninger til steder uden for kundenetværket?**
+* Ja. Det er kundens ansvar at gennemse udgiverens beskyttelse af personlige oplysninger og afgøre, om skabelonappen skal installeres i lejeren. Udgiveren er desuden ansvarlig for at underrette om appens funktionalitet og funktioner.
+
 **Hvad med nationale data? Kan vi klargøre lejere i datacentre, der er placeret i bestemte geografiske områder, for at sikre, at dataene ikke forlader landets grænser?**
 
 * Nogle kunder i visse geografiske områder har mulighed for at oprette en lejer i et nationalt cloudmiljø, hvor datalagring og -behandling er isoleret fra alle andre datacentre. Nationale cloudmiljøer har en lidt anderledes type sikkerhed, da en separat dataforvalter driver det nationale cloudmiljø i Power BI-tjenesten på vegne af Microsoft.
@@ -481,7 +492,7 @@ Du kan finde flere oplysninger om Power BI i følgende ressourcer.
 - [Power BI Gateway](service-gateway-manage.md)
 - [REST API til Power BI – oversigt](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Reference til Power BI-API](https://msdn.microsoft.com/library/mt147898.aspx)
-- [Datagateway i det lokale miljø](service-gateway-manage.md)
+- [On-premises data gateway (Datagateway i det lokale miljø)](service-gateway-manage.md)
 - [Power BI og ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Nationale Power BI-cloudmiljøer](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)

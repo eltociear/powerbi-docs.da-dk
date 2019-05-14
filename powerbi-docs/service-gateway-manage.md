@@ -11,12 +11,12 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9a2fac64959ece431471eb8d3f32961c9d592c66
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: ddd476e47f90be50ed8b4564a70d312e98bef90e
+ms.sourcegitcommit: 2df541facab8a1621953e91dbbee18c7d4e9a3c3
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324823"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64770036"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Administrer en Power BI-gateway i det lokale miljø
 
@@ -38,26 +38,28 @@ Power BI understøtter mange datakilder i det lokale miljø, og de har hver isæ
 
     ![Administrer gateways](media/service-gateway-manage/manage-gateways.png)
 
-2. Vælg enten en gateway > **Tilføj datakilde**, eller gå til Gateways > **Tilføj datakilde**.
+1. Vælg enten en gateway > **Tilføj datakilde**, eller gå til Gateways > **Tilføj datakilde**.
 
     ![Tilføj datakilde](media/service-gateway-manage/add-data-source.png)
 
-3. Vælg **Datakildetype**.
+1. Vælg **Datakildetype**.
 
     ![Vælg SQL Server](media/service-gateway-manage/select-sql-server.png)
 
 
-4. Angiv oplysninger for datakilden. I dette eksempel er det **Server**, **Database** og andre oplysninger.  
+1. Angiv oplysninger for datakilden. I dette eksempel er det **Server**, **Database** og andre oplysninger.  
 
     ![Indstillinger for datakilde](media/service-gateway-manage/data-source-settings.png)
 
-5. For SQL Server kan du vælge **godkendelsesmetoden** **Windows** eller **Basic** (SQL-godkendelse).  Hvis du vælger **Basic**, skal du angive legitimationsoplysningerne for datakilden.
+1. For SQL Server kan du vælge **godkendelsesmetoden** **Windows** eller **Basic** (SQL-godkendelse).  Hvis du vælger **Basic**, skal du angive legitimationsoplysningerne for datakilden.
 
-6. Under **Avancerede indstillinger** kan du eventuelt konfigurere [niveauet for beskyttelse af personlige oplysninger](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for din datakilde (gælder ikke for [DirectQuery](desktop-directquery-about.md)).
+1. Hvis denne datakilde i øjeblikket ikke er tilgængelig eller langsom, skal du vælge **Spring test af forbindelse over**. I modsat fald kan oprettelsen af datakilden mislykkes.
+
+1. Under **Avancerede indstillinger** kan du eventuelt konfigurere [niveauet for beskyttelse af personlige oplysninger](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for din datakilde (gælder ikke for [DirectQuery](desktop-directquery-about.md)).
 
     ![Avancerede indstillinger](media/service-gateway-manage/advanced-settings.png)
 
-7. Vælg **Tilføj** Du får vist *Forbindelsen er oprettet*, hvis processen lykkes.
+1. Vælg **Tilføj** Du får vist *Forbindelsen er oprettet*, hvis processen lykkes.
 
     ![Forbindelsen er oprettet](media/service-gateway-manage/connection-successful.png)
 
