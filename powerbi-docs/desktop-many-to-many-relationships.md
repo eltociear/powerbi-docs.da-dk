@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 02/13/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 3f3c901140ca4f2ae2d93d1c3bc17bb519d41212
-ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
+ms.openlocfilehash: 97718ee6411d0063aa145e768fd20d3ebb6024b6
+ms.sourcegitcommit: c9080e77ab705f1814a352c0dda6b10910a5018e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56225954"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65941444"
 ---
 # <a name="relationships-with-a-many-many-cardinality-in-power-bi-desktop"></a>Relationer med en mange til mange-kardinalitet i Power BI Desktop
 
@@ -25,7 +25,7 @@ Med funktionen *Relationer med en mange til mange-kardinalitet* i Power BI Deskt
 
 Funktionaliteten *Relationer med en mange til mange-kardinalitet* i Power BI Desktop er en del af tre relaterede funktioner:
 
-* **Sammensatte modeller**: Gør det muligt for en rapport at have to eller flere dataforbindelser, herunder DirectQuery-forbindelser eller Import, i en hvilken som helst kombination. Du kan finde flere oplysninger under [Sammensatte modeller i Power BI Desktop (prøveversion)](desktop-composite-models.md).
+* **Sammensatte modeller**: Gør det muligt for en rapport at have to eller flere dataforbindelser, herunder DirectQuery-forbindelser eller Import, i en hvilken som helst kombination. Du kan finde flere oplysninger under [Sammensatte modeller i Power BI Desktop](desktop-composite-models.md).
 
 * **Relationer med en mange til mange-kardinalitet**: Via *sammensatte modeller* kan du oprette *relationer med en mange til mange-kardinalitet* mellem tabeller. Med denne tilgang fjernes kravene for entydige værdier i tabeller. Tidligere midlertidige løsninger, f.eks. introduktion af nye tabeller kun for at oprette relationer, fjernes også. Funktionen er beskrevet nærmere i denne artikel.
 
@@ -157,7 +157,7 @@ De eksisterende begrænsninger ved at bruge DirectQuery gælder stadig, når du 
 ## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger om sammensatte modeller og DirectQuery i følgende artikler:
-* [Sammensatte modeller i Power BI Desktop (prøveversion)](desktop-composite-models.md)
+* [Sammensatte modeller i Power BI Desktop](desktop-composite-models.md)
 * [Lagringstilstand i Power BI Desktop (prøveversion)](desktop-storage-mode.md)
 * [Brug DirectQuery i Power BI Desktop](desktop-directquery-about.md)
 * [Understøttede datakilder i forbindelse med DirectQuery i Power BI Desktop](desktop-directquery-data-sources.md)

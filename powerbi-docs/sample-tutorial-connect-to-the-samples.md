@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 63924dd4769b4ce452d2d8de4252228bb6d37d37
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 846f783e2a022504f192cf0c03179ce3f3c00e22
+ms.sourcegitcommit: 1dfabc8596ec2eb66ccccceb11419361f704b607
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275542"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65625066"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Opret forbindelse til eksemplerne i Power BI-tjenesten
 
@@ -78,7 +78,7 @@ Udforsk nu dashboardet, datasættet og rapporten på egen hånd. Der er mange fo
     ![rapportside med tilsvarende visualisering fremhævet](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > Hvis feltet var blevet oprettet ved brug af [Power BI Q&A](consumer/end-user-q-and-a.md), ville Q&A-siden være blevet åbent i stedet for. Hvis feltet er [fastgjort fra Excel](service-dashboard-pin-tile-from-excel.md), åbnes Excel Online i Power BI.
+   > Hvis feltet var blevet oprettet ved brug af [Power BI Q&A](power-bi-tutorial-q-and-a.md), ville Q&A-siden være blevet åbent i stedet for. Hvis feltet er [fastgjort fra Excel](service-dashboard-pin-tile-from-excel.md), åbnes Excel Online i Power BI.
    > 
    > 
 1. Tilbage på fanen **Datasæt** har du flere muligheder for at udforske dit datasæt.  Du kan ikke åbne det for at se alle rækkerne og kolonnerne (ligesom du kan i Power BI Desktop eller Excel).  Når en person deler en indholdspakke med kollegaer, ønsker de typisk at dele indsigt og ikke give deres kollegaer direkte adgang til dataene. Men det betyder ikke, at du ikke kan udforske datasættet.  
@@ -129,11 +129,9 @@ Udforsk nu datasættet, relationerne og rapporten på egen hånd. Du kan få hj�
 
 
 ## <a name="next-steps"></a>Næste trin
-[Grundlæggende begreber i Power BI](consumer/end-user-basic-concepts.md)
 
-[Eksempler til Power BI-tjenesten](sample-datasets.md)
-
-[Datakilder til Power BI](service-get-data.md)
+- [Grundlæggende begreber i Power BI](consumer/end-user-basic-concepts.md)
+- [Eksempler til Power BI-tjenesten](sample-datasets.md)
+- [Datakilder til Power BI](service-get-data.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-

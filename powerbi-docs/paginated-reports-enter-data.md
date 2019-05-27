@@ -1,7 +1,7 @@
 ---
 title: Angiv data direkte i en sideinddelt rapport i Report Builder (eksempelvisning)
 description: I denne artikel kan se du, hvordan du kan angive data direkte i en sideinddelt rapport i Report Builder.
-author: markingmyname
+author: maggiesMSFT
 ms.author: maggies
 manager: kfile
 ms.reviewer: ''
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/19/2018
-ms.openlocfilehash: 27f8434b336c2d1281fb087d4e9acf83958f7329
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
+ms.openlocfilehash: 3237f4751083f374ac00a959f226429b17757b50
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61424316"
 ---
 # <a name="enter-data-directly-in-a-paginated-report-in-report-builder-preview---power-bi"></a>Angiv data direkte i en sideinddelt rapport i Report Builder (eksempelvisning) – Power BI
 
@@ -23,7 +23,7 @@ I denne artikel kan du få mere at vide om en funktion i den nye version af SQL 
 ## <a name="prerequisites"></a>Forudsætninger
 
 - Hvis du vil angive data direkte i en sideinddelt rapport, skal du installere den nye version af [Report Builder fra Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53613). 
-- Hvis du vil gemme din sideinddelte rapport i Power BI-tjenesten, skal du bruge en [Power BI Pro-konto](service-self-service-signup-for-power-bi.md) og have skriveadgang til et arbejdsområde i en [Power BI Premium-kapacitet](service-premium.md).
+- Hvis du vil gemme din sideinddelte rapport i Power BI-tjenesten, skal du bruge en [Power BI Pro-konto](service-self-service-signup-for-power-bi.md) og have skriveadgang til et arbejdsområde i en [Power BI Premium-kapacitet](service-premium-what-is.md).
 - Hvis du vil gemme din sideinddelte rapport på en rapportserver, skal du have tilladelse til at [redigere filen RsReportServer.config](#upload-the-paginated-report-to-a-report-server).
 
 ## <a name="get-started"></a>Kom i gang

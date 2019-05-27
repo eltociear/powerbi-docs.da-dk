@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/02/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 1099cf8a7e26d46d871134239502dc918a88a316
-ms.sourcegitcommit: e02a7a7ab538553deb519403aa0e4fb87cc95e1c
-ms.translationtype: HT
+ms.openlocfilehash: e75810d18b39619d249c3acd9a9140b3d19d5f35
+ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65202759"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66051486"
 ---
 # <a name="power-bi-security-whitepaper"></a>Whitepaper om sikkerhed i Power BI
 
@@ -316,7 +316,7 @@ Power BI bruger HTTPS, TCP/IP og TLS til at overvåge dataintegriteten for data 
 
 ## <a name="user-authentication-to-data-sources"></a>Godkendelse af brugeren til datakilder
 
-Brugeren etablerer en forbindelse for hver enkelt datakilde på baggrund af vedkommendes logon og tilgår dataene ved hjælp af disse legitimationsoplysninger. Brugerne kan derefter oprette forespørgsler, dashboards og rapporter på baggrund af de underliggende data.
+Med hver enkelt datakilde, en bruger opretter en forbindelse, der er baseret på deres logon, og får adgang til data ved hjælp af disse legitimationsoplysninger. Brugerne kan derefter oprette forespørgsler, dashboards og rapporter på baggrund af de underliggende data.
 
 Når en bruger deler forespørgsler, dashboards, rapporter eller en visualisering, afhænger adgang til disse data og visualiseringer af, om de underliggende datakilder understøtter sikkerhed på rolleniveau.
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: de993d9cf7ef86ce5d25f31c300d4e7b1c9f06e7
-ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
-ms.translationtype: HT
+ms.openlocfilehash: 79b8ae80413cc54b065d12bf36ccb1651a670812
+ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "65202414"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66051582"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere vha. Azure Active Directory B2B
 
@@ -265,7 +265,7 @@ Power BI-integration med Azure AD B2B giver Contoso en problemfri og nem måde a
     ![Invitationslink](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_17.png)
 
 
-    Når gæstebrugeren klikker på linket, kan vedkommende få adgang til indhold i Contoso Azure AD-lejeren.
+    Når gæstebrugere klikker på linket, kan de få adgang til indhold i Contoso Azure AD-lejer.
 
     > [!NOTE]
     > Det er muligt at ændre layoutet for invitationsmailen ved hjælp af brandingfunktionen i Azure AD, som beskrevet [her](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-invitation-email).
@@ -275,7 +275,7 @@ Power BI-integration med Azure AD B2B giver Contoso en problemfri og nem måde a
 
     Hvad nu hvis Contoso ikke kender alle de gæstebrugere, det skal inviteres på forhånd? Eller hvad nu hvis analytikeren i Contoso, der oprettede BI-portalen, gerne selv vil distribuere indhold til gæstebrugerne? Vi understøtter også dette scenarie i Power BI med ad hoc-invitationer.
 
-    Analytikeren kan blot tilføje de eksterne brugere til adgangslisten for appen, når hun publicerer den. Gæstebrugeren får en invitation, og når den accepteres, omdirigeres vedkommende automatisk til Power BI-indholdet.
+    Analytikeren kan blot tilføje eksterne brugere til appens adgangsliste, når de udgive den. Af gæstebrugere får en invitation, og når de har accepteret det, de omdirigeres automatisk til Power BI-indholdet.
 
     ![Tilføj ekstern bruger](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_18.png)
 
@@ -355,7 +355,7 @@ Contoso kan også drage nytte af andre Power BI Premium-funktioner i forbindelse
 Med denne metode tildeler Contoso Pro-licenser til gæstebrugere fra partnerorganisationer – dette kan gøres fra Contosos Microsoft 365 Administration. Det gør det muligt for gæstebrugere fra partnerorganisationer at få adgang til Contosos Power BI-app uden selv at købe en licens. Det kan være relevant i forbindelse med deling med eksterne brugere, hvis organisation endnu ikke bruger Power BI.
 
 > [!NOTE]
-> _Contosos Pro-licens gælder kun for gæstebrugere, når de får adgang til indhold i Contoso-lejeren. Pro-licenser giver adgang til indhold, der ikke er i en Power BI Premium-kapacitet. Eksterne brugere med en Pro-licens er dog som standard begrænset til kun at forbruge. Dette kan ændres ved at benytte den metode, der er beskrevet i detaljer i afsnittet _ _Mulighed for eksterne brugere for at redigere og administrere indhold i Power BI_ _ senere i dette dokument._
+> _Contosos Pro-licens gælder kun for gæstebrugere, når de får adgang til indhold i Contoso-lejeren. Pro-licenser giver adgang til indhold, der ikke er i en Power BI Premium-kapacitet. Eksterne brugere med en Pro-licens er dog som standard begrænset til kun at forbruge. Dette kan ændres ved at benytte den metode, der er beskrevet i detaljer i afsnittet_  _Mulighed for eksterne brugere for at redigere og administrere indhold i Power BI_  _senere i dette dokument._
 
 ![Licensoplysninger](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_25.png)
 
@@ -365,7 +365,7 @@ Med denne metode tildeler Contoso Pro-licenser til gæstebrugere fra partnerorga
 Med denne metode tildeler Leverandør1 en Power BI Pro-licens til Lucy. Hun kan derefter få adgang til Contosos Power BI-app med denne licens. Eftersom Lucy kan bruge Pro-licensen fra sin egen organisation til at få adgang til et eksternt Power BI-miljø, kaldes denne fremgangsmåde nogle gange _Medbring din egen licens_. Hvis begge organisationer bruger Power BI, er dette den mest fordelagtige licenseringsmetode for den overordnede analyseløsning og minimerer den tid, der bruges på at tildele licenser til eksterne brugere.
 
 > [!NOTE]
-> _Den Pro-licens, der tildeles til Lucy af Leverandør1, gælder for alle Power BI-lejere, hvor Lucy er en gæstebruger. Pro-licenser giver adgang til indhold, der ikke er i en Power BI Premium-kapacitet. Eksterne brugere med en Pro-licens er dog som standard begrænset til kun at forbruge. Dette kan ændres ved at benytte den metode, der er beskrevet i detaljer i afsnittet _ _Mulighed for eksterne brugere for at redigere og administrere indhold i Power BI_ _ senere i dette dokument._
+> _Den Pro-licens, der tildeles til Lucy af Leverandør1, gælder for alle Power BI-lejere, hvor Lucy er en gæstebruger. Pro-licenser giver adgang til indhold, der ikke er i en Power BI Premium-kapacitet. Eksterne brugere med en Pro-licens er dog som standard begrænset til kun at forbruge. Dette kan ændres ved at benytte den metode, der er beskrevet i detaljer i afsnittet_  _Mulighed for eksterne brugere for at redigere og administrere indhold i Power BI_  _senere i dette dokument._
 
 ![Pro-licenskrav](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_26.png)
 
@@ -438,7 +438,7 @@ Contoso opretter også en anden "AllRole" for sine interne brugere, der kan få 
 
 Efter at have uploadet Power BI Desktop-filen til tjenesten kan Contoso tildele gæstebrugere til "SecurityRole" og interne brugere til "AllRole".
 
-Når gæstebrugeren nu åbner rapporten, kan vedkommende kun få vist salg fra gruppe A:
+Nu, når gæstebrugere åbner rapporten, de ser kun salg fra gruppen SV.:
 
 ![Kun fra gruppe A](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_38.png)
 

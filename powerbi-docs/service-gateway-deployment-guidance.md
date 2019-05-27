@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5ebc5472ffcbd5d6b493b919b3e2965968261d20
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: e3092c320008df760ef72408c93f601dde26cdef
+ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279843"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66051146"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Vejledning i at installere en datagateway til Power BI
 
@@ -42,7 +42,7 @@ Der findes en begrænsning i **Power BI**, der kun tillader *én* gateway pr. *r
 ### <a name="connection-type"></a>Forbindelsestype
 **Power BI** giver mulighed for to typer forbindelser: **DirectQuery** og **Import**. Ikke alle datakilder understøtter begge forbindelsestyper, og mange årsager kan bidrage til, at man vælger den ene frem for den anden, som f.eks. sikkerhedskrav, ydeevne, datagrænser og datamodelstørrelser. Du kan få mere at vide om forbindelsestype og understøttede datakilder i *listen over tilgængelige datakildetyper* i [artiklen om datagateway i det lokale miljø](service-gateway-onprem.md).
 
-Brugen af gatewayen kan variere afhængigt af den brugte forbindelsestype. Du bør f.eks. altid prøve at adskille **DirectQuery**-datakilder fra **Planlagt opdatering**-datakilder, når det er muligt (hvis altså de er i forskellige rapporter og kan adskilles). Dette forhindrer, at gatewayen ophobes med tusindvis af DirectQuery-anmodninger samtidigt med morgenens planlagte opdatering af en stor datamodelstørrelse, der bruges til virksomhedens primære dashboard. Følgende overvejelser bør tages i hver situation:
+Brugen af gatewayen kan være forskellig, afhængigt af hvilken type forbindelse bruges. Du bør f.eks. altid prøve at adskille **DirectQuery**-datakilder fra **Planlagt opdatering**-datakilder, når det er muligt (hvis altså de er i forskellige rapporter og kan adskilles). Hvis du gør det forhindrer, at gatewayen ophobes med tusindvis af **DirectQuery** anmodninger i kø, på samme tid morgenens planlagte opdatering af en stor datamodelstørrelse, der bruges til virksomhedens primære dashboard. Følgende overvejelser bør tages i hver situation:
 
 * **Planlagt opdatering**: Afhængigt af din forespørgselstørrelse og antallet af foretagne opdateringer pr. dag kan du vælge at forblive mellem de anbefalede mindstekrav til hardware eller opgradere til en computer med større ydeevne. Hvis en given forespørgsel ikke foldes, så sker transformationen på gatewayens computer og dermed drager gatewayens computer fordel af at have mere tilgængelig RAM.
 * I relation til **DirectQuery**: En forespørgsel sendes hver gang, en given bruger åbner rapporten eller gransker data. Så hvis du forventer, at flere end 1000 brugere tilgår data samtidigt, så bør du sørge for, at din computer har robuste og kapacitetstunge hardwarekomponenter. Flere CPU-kerner vil resultere i et forbedret gennemløb for en **DirectQuery**-forbindelse.

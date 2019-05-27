@@ -11,12 +11,12 @@ ms.date: 12/06/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Get started
-ms.openlocfilehash: 15a2e292aee04ed915611204e62a19d2836aa827
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 6f44f4b382dacf3850cc5b3aa67f712a607468a6
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54274852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "65554427"
 ---
 # <a name="power-bi-service-features-by-license-type"></a>Funktioner i Power BI-tjenesten efter licenstype
 
@@ -42,7 +42,7 @@ Her er en liste over understøttede funktioner efter licenstypen Pr. bruger.
 
 ## <a name="next-steps"></a>Næste trin
 
-Hvis du vil vide mere om Power BI Premium, kan du se under [Hvad er Power BI-Premium?](service-premium.md).
+Hvis du vil vide mere om Power BI Premium, kan du se under [Hvad er Power BI-Premium?](service-premium-what-is.md).
 
 For at komme i gang med Power BI gennem tilmelding, skal du se [Tilmelding til Power BI som enkeltperson](service-self-service-signup-for-power-bi.md).
 
