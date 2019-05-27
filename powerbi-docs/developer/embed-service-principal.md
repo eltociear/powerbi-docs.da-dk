@@ -1,20 +1,21 @@
 ---
 title: Tjenesteprincipal med Power BI
 description: Få mere at vide om, hvordan du registrerer et program i Azure Active Directory ved hjælp af en tjenesteprincipal, som kan bruges til at integrere Power BI-indhold.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
-ms.subservice: power-bi-developer
+ms.service: powerbi
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 9b72c1c432e7fa560862452849491c12395d29d1
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
+ms.openlocfilehash: 5c97eacbdbf89a9ef828dad3a5da01e794952f15
+ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872541"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65710530"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Tjenesteprincipal med Power BI (prøveversion)
 
@@ -57,8 +58,8 @@ Der er forskelle mellem at bruge en tjenesteprincipal og en standardmasterkonto 
 |------------------------------------------------------|---------------------|-------------------|
 | Kan logge på Power BI-tjenesten  | Ja | Nej |
 | Aktiveret på Power BI-administrationsportalen | Nej | Ja |
-| [Fungerer sammen med apparbejdsområder (v1)](../service-create-workspaces.md) | Ja | Nej |
-| [Fungerer sammen med apparbejdsområder (v2)](../service-create-the-new-workspaces.md) | Ja | Ja |
+| [Fungerer sammen med programarbejdsområder (v1)](../service-create-workspaces.md) | Ja | Nej |
+| [Fungerer sammen med programarbejdsområder (v2)](../service-create-the-new-workspaces.md) | Ja | Ja |
 | Man skal være administrator af et arbejdsområde, hvis det bruges med Power BI Embedded | Ja | Ja |
 | Kan bruge REST API'er til Power BI | Ja | Ja |
 | Der skal være en global administrator for at kunne oprettes | Ja | Nej |
@@ -177,6 +178,6 @@ Nedenfor er et eksempel på et script, der kan bruges til at hente objekt-id'et 
 
 ## <a name="next-steps"></a>Næste trin
 
-* [Registrer en app](register-app.md)
+* [Registrer et program](register-app.md)
 * [Power BI Embedded til dine kunder](embed-sample-for-customers.md)
 * [Objekter for et program og en tjenesteprincipal i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
