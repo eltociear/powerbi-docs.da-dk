@@ -12,23 +12,24 @@ ms.service: powerbi
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 12/06/2018
+ms.date: 05/13/2019
 ms.author: mihart
-ms.openlocfilehash: 84ce069913b1c262ce4e91138f8496cf3f19dddd
-ms.sourcegitcommit: cd85d88fba0d9cc3c7a4dc03d2f35d2bd096759b
+ms.openlocfilehash: babdcebcdbc45ce3f7f737785ca4becab50cb3be
+ms.sourcegitcommit: 187f306438d53ba8742db2c7a5532f1acc81fa36
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53280115"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65608279"
 ---
-<!-- once the sample aps are live, change this so consumers can follow along -->
+<!-- once the sample apps are live, change this so consumers can follow along -->
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Hurtig introduktion: Få mere at vide om egenskaberne for ***forbrugere*** i Power BI
 I denne hurtige introduktion får du mere at vide om, hvordan du interagerer med Power BI for at få datadrevet forretningsindsigt. Denne artikel er ikke beregnet som en detaljeret gennemgang, men mere som en hurtig gennemgang af de handlinger, der er tilgængelige for Power BI-**forbrugere**.
 
 Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
 
 ## <a name="prerequisites"></a>Forudsætninger
-- Power BI-tjeneste (app.powerbi.com) <!-- app from AppSource -->
+- Power BI-tjenesten (app.powerbi.com)
+<!-- app from AppSource -->
 
 ## <a name="reading-view"></a>Læsevisning
 Læsevisning er tilgængelig i Power BI-tjenesten for rapport*forbrugere*. Når en kollega deler en rapport med dig, er Læsevisning den måde, du kan udforske og interagere med rapporten på. 
@@ -185,7 +186,7 @@ En Power BI-visualisering oprettes vha. data fra underliggende datasæt. Hvis du
 1. Åbn en rapport i Power BI-tjenesten, og vælg en visualisering.  
 2. Hvis du vil have vist de underliggende data for visualiseringen, skal du vælge ellipsen (...) og vælge **Vis data**.
    
-   ![vælg Få vist data](./media/end-user-show-data/power-bi-show-data2.png)
+   ![vælg Få vist data](./media/end-user-show-data/power-bi-explore-show-data.png)
 
 Dette har været et hurtigt overblik over nogle af de ting, **forbrugere** kan anvende Power BI-tjenesten til.  
 
