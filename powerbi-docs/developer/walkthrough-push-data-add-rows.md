@@ -10,10 +10,10 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
 ms.openlocfilehash: a355f09984bc454f74dfab8ef137e29fd5aed110
-ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/16/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65710402"
 ---
 # <a name="step-5-add-rows-to-a-power-bi-table"></a>Trin 5: Føj rækker til en Power BI-tabel
@@ -311,7 +311,7 @@ Nedenfor kan du se den [komplette kodeliste](#code).
     }
 ```
 
-Selvom vi angiver, at vi **_//Henter det første id_** i ovenstående kode, er den korrekte fremgangsmåde at søge i datasættet efter navn.
+Selvom vi angiver, at vi ** _//Henter det første id_** i ovenstående kode, er den korrekte fremgangsmåde at søge i datasættet efter navn.
 
 ## <a name="next-steps"></a>Næste trin
 [Send data til et Power BI-dashboard](walkthrough-push-data.md)  
