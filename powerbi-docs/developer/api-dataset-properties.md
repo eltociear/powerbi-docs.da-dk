@@ -1,20 +1,20 @@
 ---
 title: Egenskaber for Power BI-datasæt
 description: Få mere at vide om Power BI-datasæt API'ers egenskaber
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: d272914fc41c8bd4abc78ae36a46de9e53817c81
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 508f304e2f5033c301db683e3b7557856fb3731b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56248924"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61386287"
 ---
 # <a name="dataset-properties"></a>Egenskaber for datasæt
 
@@ -31,7 +31,7 @@ id     |  Guid       | Entydigt id for datasættet overalt i systemet.        | 
 navn     | Streng        | Datasættets brugerdefinerede navn.        | Falsk        | Sandt        
 tabeller     | Tabel[]        | Samling af tabeller.        |  Falsk       | Falsk        
 relationer     | Relation[]        | Samling af relationer mellem tabeller.        | Falsk        |  Falsk  
-standardtilstand     | Streng        | Bestemmer, om datasættet pushes, streames eller begge dele, med værdierne af "Push", "Streaming" og "PushStreaming".         | Falsk        |  Falsk
+standardtilstand     | Streng        | Bestemmer, om datasættet udgives, streames, eller begge dele, med værdier af "Overfør" og "Streaming".         | Falsk        |  Falsk
 
 ## <a name="table"></a>Tabel
 

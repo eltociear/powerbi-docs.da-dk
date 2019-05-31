@@ -1,6 +1,6 @@
 ---
 title: Vejledning i kapacitetsplanlægning i Power BI-rapportserver
-description: 'Denne rapport omfatter en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af gennemførslen af belastningstest ved forskellige arbejdsbelastninger. '
+description: Denne rapport omfatter en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af gennemførslen af belastningstest ved forskellige arbejdsbelastninger.
 author: parthsha
 manager: kfile
 ms.reviewer: maghan
@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 3/5/2018
 ms.author: pashah
 ms.openlocfilehash: c479b2600dad31756101c57ba2b1c5fc7fa19b2f
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296656"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60976729"
 ---
 # <a name="capacity-planning-guidance-for-power-bi-report-server"></a>Vejledning i kapacitetsplanlægning i Power BI-rapportserver
 Power BI-rapportserver er en selvbetjenings-BI og virksomhedsrapporteringsløsning, som kunder kan installere i deres lokale miljø, bag deres firewall. Løsningen kombinerer den interaktive rapporteringskapacitet i Power BI Desktop med serverplatformen i SQL Server Reporting Services i det lokale miljø. I takt med virksomheders stigende og omfattende brug af analyser og rapportering, kan det være en udfordring at udarbejde et budget, der tager højde for de skalerbare løsninger til hardwareinfrastrukturen og de softwarelicenser, der kræves til en virksomheds brugergrundlag. Denne rapports primære sigte er at give en vejledning i kapacitetsplanlægning i Power BI-rapportserver ved at dele resultater af adskillelige gennemførsler af belastningstest ved forskellige arbejdsbelastninger i forhold til en rapportserver. Organisationers rapporterings-, forespørgsels- og brugsmønstre varierer betydeligt, men resultaterne forelagt i denne rapport kan, sammen med de anvendte faktiske test og en detaljeret beskrivelse af deres gennemførselsmetode, bruges som referencepunkt for alle, der er i den tidlige planlægningsfase i processen med at installere Power BI-rapportserver.

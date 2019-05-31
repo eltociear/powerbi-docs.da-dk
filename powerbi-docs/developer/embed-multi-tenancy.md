@@ -1,20 +1,20 @@
 ---
 title: Administrer flere lejere med Power BI Embedded-analyse
 description: Opret et program med flere lejere med integreret analyse.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi - developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 60441e950eb8ddea386e38731b794a58c2342620
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
-ms.translationtype: HT
+ms.openlocfilehash: 31222828d1a12a5f46fd7c04b3aa32240ff35736
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014248"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61374650"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Administrer flere lejere med Power BI Embedded-analyse
 
@@ -53,7 +53,7 @@ I denne artikel beskrives og analyseres de forskellige tilgange i forhold til fl
 
 **AAD-programbruger (tjenesteprincipal)** – den identitet, der repræsenterer SaaS-programmet i Power BI, og som SaaS-programmet bruger ved kald af Power BI-API'er. Skal være et AAD-webprogram. Kan erstatte brugen af en *masterbruger* til at godkende med Power BI.
 
-**Kapacitet** – et sæt ressourcer, der er dedikeret til at køre Power BI-tjenesten. [Power BI Premium-kapaciteter](../service-premium.md) – beregnet til virksomheder, der bruger Power BI internt, mens [Power BI Embedded-kapaciteter](azure-pbie-create-capacity.md) er beregnet til programudviklere til at udvikle SaaS-programmer til tredjeparter.
+**Kapacitet** – et sæt ressourcer, der er dedikeret til at køre Power BI-tjenesten. [Power BI Premium-kapaciteter](../service-premium-what-is.md) – beregnet til virksomheder, der bruger Power BI internt, mens [Power BI Embedded-kapaciteter](azure-pbie-create-capacity.md) er beregnet til programudviklere til at udvikle SaaS-programmer til tredjeparter.
 
 **[Power BI Pro-licens](../service-admin-purchasing-power-bi-pro.md)** – en brugerbaseret licens, der giver rettigheder til at publicere indhold i apparbejdsområder, forbruge apps uden Premium-kapacitet, dele dashboards og abonnere på dashboards og rapporter.
 
@@ -142,9 +142,9 @@ Hvis du vil tilføje yderligere isolation, kan en programudvikler definere en *m
 
 ### <a name="scalability"></a>Skalerbarhed
 
-En fordel ved denne model er, at man ved at adskille dataene i flere datasæt for hver lejer omgår [størrelsesbegrænsningerne for et enkelt datasæt](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (i øjeblikket 10 GB i en kapacitet). Når kapaciteten er overbelastet, [kan den fjerne ubrugte datasæt](../service-premium-understand-how-it-works.md) for at frigøre hukommelse til aktive datasæt. Denne opgave er ikke mulig med et enkelt stort datasæt. Brug af flere datasæt gør det også muligt at opdele lejere i flere Power BI-kapaciteter, hvis det er nødvendigt.
+En fordel ved denne model er, at man ved at adskille dataene i flere datasæt for hver lejer omgår [størrelsesbegrænsningerne for et enkelt datasæt](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (i øjeblikket 10 GB i en kapacitet). Når kapaciteten er overbelastet, kan det fjerne ubrugte datasæt for at frigøre hukommelse til aktive datasæt. Denne opgave er ikke mulig med et enkelt stort datasæt. Brug af flere datasæt gør det også muligt at opdele lejere i flere Power BI-kapaciteter, hvis det er nødvendigt.
 
-På trods af disse fordele bør du overveje, hvor meget SaaS-programmet kan rumme i fremtiden. Du kan f.eks. nå begrænsningerne omkring antallet af artefakter, der kan administreres. Se [begrænsninger for udrulninger](#summary-comparison-of-the-different-approaches) senere i denne artikel for at få flere oplysninger. Den kapacitets-SKU, der bruges, introducerer en grænse for størrelsen af den hukommelse, som datasættene er indeholdt i, [hvor mange opdateringer, der kan køre på samme tid,](../service-premium-understand-how-it-works.md) og den maksimale hyppighed af dataopdateringer. Det anbefales at teste, når der administreres hundred- eller tusindvis af datasæt. Det anbefales også at tage højde for det gennemsnitlige forbrug og forbruget ved spidsbelastninger, og om der er nogle bestemte lejere med store datasæt eller forskellige forbrugsmønstre, der administreres anderledes end for andre lejere.
+På trods af disse fordele bør du overveje, hvor meget SaaS-programmet kan rumme i fremtiden. Du kan f.eks. nå begrænsningerne omkring antallet af artefakter, der kan administreres. Se [begrænsninger for udrulninger](#summary-comparison-of-the-different-approaches) senere i denne artikel for at få flere oplysninger. Den kapacitet, der bruges af SKU introducerer en grænse for størrelsen af den hukommelse, der skal passe på, hvor mange opdateringer kan køre på samme tid og de maksimale hyppigheden af dataopdateringer datasæt. Det anbefales at teste, når der administreres hundred- eller tusindvis af datasæt. Det anbefales også at tage højde for det gennemsnitlige forbrug og forbruget ved spidsbelastninger, og om der er nogle bestemte lejere med store datasæt eller forskellige forbrugsmønstre, der administreres anderledes end for andre lejere.
 
 ### <a name="automation--operational-complexity"></a>Automatisering og driftsmæssig kompleksitet
 
@@ -245,17 +245,17 @@ Når slutbrugere redigerer eller opretter rapporter, kan de bruge produktionsdat
 
 **Overvejelser og begrænsninger i forbindelse med Power BI-kapacitet:**
 
-* Hver kapacitet kan kun bruge den hukommelse og de V-kerner, kapaciteten har fået tildelt, i overensstemmelse med det [SKU, der er købt](../service-premium.md).
-* Du kan finde den anbefalede datasætstørrelse for hver SKU i [store datasæt i Premium](../service-premium-large-datasets.md).
+* Hver kapacitet kan kun bruge den hukommelse og de V-kerner, kapaciteten har fået tildelt, i overensstemmelse med det [SKU, der er købt](../service-premium-what-is.md).
+* Du kan finde den anbefalede datasætstørrelse for hver SKU i [store datasæt i Premium](../service-premium-what-is.md#large-datasets).
 * Den maksimale datasætstørrelse i en dedikeret kapacitet er 10 GB.
 * Antallet af planlagte opdateringer for et datasæt i *importtilstand* i løbet af en dag er 48.
 * Intervallet mellem planlagte opdateringer for et datasæt i *importtilstand* er 30 minutter.
-* Du kan få oplysninger om det antal opdateringer, der kan køre samtidigt på en kapacitet, i [ressourcestyring og optimering](../service-premium-understand-how-it-works.md).
+* Du kan få oplysninger om det antal opdateringer, der kan køre samtidigt på en kapacitet, i [ressourcestyring og optimering](../service-premium-what-is.md#capacity-nodes).
 * Den gennemsnitlige tid, det tager at skalere en kapacitet, er mellem 1-2 minutter. Kapaciteten er ikke tilgængelig i denne periode. Det anbefales at bruge en scale-out-tilgang for at [undgå nedetid](https://powerbi.microsoft.com/blog/power-bi-developer-community-november-update-2018/#scale-script).
 
 ## <a name="next-steps"></a>Næste trin
 
 * [Integreret analyse med Power BI](embedding.md)
 * [Power BI Embedded](azure-pbie-what-is-power-bi-embedded.md)
-* [Power BI Premium](../service-premium.md)
+* [Power BI Premium](../service-premium-what-is.md)
 * [Sikkerhed på rækkeniveau](embedded-row-level-security.md)

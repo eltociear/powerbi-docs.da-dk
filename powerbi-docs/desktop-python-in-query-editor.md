@@ -11,11 +11,11 @@ ms.date: 06/18/2018
 ms.author: otarb
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 28463c065c965b90beb32feabcd5de029311c612
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56217039"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61286546"
 ---
 # <a name="using-python-in-query-editor"></a>Brug af Python i Forespørgselseditor
 Du kan bruge **Python**, som er et programmeringssprog, der bruges af statistikere, datavidenskabsfolk og dataanalytikere, i **Forespørgselseditor** i Power BI Desktop. Denne integration af Phyton i **Forespørgselseditor** gør det muligt at udføre datarensning ved hjælp af R og udføre avanceret dataudformning og -analyser i datasæt, herunder fuldførelse af manglende data, forudsigelser og klyngedannelse, blot for at nævne nogle få. **Phyton** er et effektivt sprog og kan bruges i **Forespørgselseditor** til at forberede din datamodel og oprette rapporter.
@@ -91,7 +91,7 @@ Der er nogle begrænsninger til forespørgsler, der indeholder Python-scripts, d
   
   ![](media/desktop-python-in-query-editor/python-in-query-editor-9.png)
   
-  Vælg datakilderne i dialogboksen **Indstillinger for datakilde**, og vælg derefter **Rediger tilladelser...**. Kontrollér, at **Niveau for beskyttelse af personlige oplysninger** er angivet til *Offentlig*.
+  Vælg datakilderne i dialogboksen **Indstillinger for datakilde**, og vælg derefter **Rediger tilladelser...** . Kontrollér, at **Niveau for beskyttelse af personlige oplysninger** er angivet til *Offentlig*.
   
   ![](media/desktop-python-in-query-editor/python-in-query-editor-10.png)    
 * Hvis du vil aktivere planlagt opdatering af dine Python-visuals eller datasættet, skal du aktivere **Planlagt opdatering** og have en **personlig gateway** installeret på den computer, der indeholder projektmappen og Python-installationen. Du kan få flere oplysninger om begge dele i det forrige afsnit i denne artikel, der indeholder links, så du kan få mere at vide.

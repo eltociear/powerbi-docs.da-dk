@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: bcd92dc0288fc347c5f5931d40b94cf769f5293f
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249016"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61180193"
 ---
 # <a name="connect-to-adobe-analytics-with-power-bi"></a>Opret forbindelse til Adobe Analytics med Power BI
 For at oprette forbindelse til Adobe Analytics via Power BI skal du starte med at oprette forbindelse til din Adobe Analytics Marketing Cloud-konto. Du får en app med et Power BI-dashboard og et sæt af Power BI-rapporter, der giver indsigt i trafikken på dit websted og brugerdimensioner. Dataene opdateres automatisk én gang dagligt. Du kan interagere med dashboards og rapporter, men du kan ikke gemme ændringer.
@@ -91,7 +91,7 @@ Fra Adobe-[dokumentationen](https://marketing.adobe.com/resources/help/en_US/ref
 ## <a name="troubleshooting"></a>Fejlfinding
 Hvis du får vist en fejl, når du har angivet dine legitimationsoplysninger, hvor der står, at du ikke har tilladelser, skal du bekræfte med din administrator, at du har adgang til Adobe Analytics-API'en. Bekræft også det angivne Adobe-id, som er knyttet til Marketing Cloud-organisationen (der er knyttet til et Adobe Analytics-firma).
 
-Hvis du er kommet gennem skærmbilledet med legitimationsoplysninger, før der opstår en fejl, er det muligt, at rapporterne er for længe om at blive afsluttet. En almindelig fejl er i formatet *"Der kunne ikke hentes data fra Adobe Analytics-rapporten. Indhold omfattede &quot;henviser, side&quot;, den omtrentlige varighed var xx sekunder"*. Se afsnittet "Følgende er inkluderet", og sammenlign med størrelsen af din Adobe-forekomst. Det er desværre ikke muligt at omgå denne timeout i dag. Men vi overvejer opdateringer for bedre at kunne understøtte større forekomster. Giv feedback til Power BI-teamet på https://ideas.powerbi.com
+Hvis du er kommet gennem skærmbilledet med legitimationsoplysninger, før der opstår en fejl, er det muligt, at rapporterne er for længe om at blive afsluttet. En almindelig fejl er i formatet *"Der kunne ikke hentes data fra Adobe Analytics-rapporten. Indhold omfattede &quot;henviser, side&quot;, den omtrentlige varighed var xx sekunder"* . Se afsnittet "Følgende er inkluderet", og sammenlign med størrelsen af din Adobe-forekomst. Det er desværre ikke muligt at omgå denne timeout i dag. Men vi overvejer opdateringer for bedre at kunne understøtte større forekomster. Giv feedback til Power BI-teamet på https://ideas.powerbi.com
 
 ## <a name="next-steps"></a>Næste trin
 * [Hvad er apps i Power BI?](service-create-distribute-apps.md)

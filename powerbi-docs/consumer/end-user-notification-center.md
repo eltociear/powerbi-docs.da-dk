@@ -13,11 +13,11 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 34bb77c84d1813e32421b87e957e24a946f282f7
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661988"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61066197"
 ---
 # <a name="view-power-bi-notifications"></a>Få vist Power BI-meddelelser
 Meddelelsescenteret er et sekventielt feed af oplysninger, der er knyttet til din Power BI-oplevelse. Åbn det for at se meddelelser om nye dashboards, der er delt med dig, ændringer af dit gruppeområde, oplysninger om Power BI-begivenheder og -møder, beskeder, du har indstillet, og meget mere. Du kan [indstille beskeder i Power BI-tjenesten](../service-set-data-alerts.md) og også i Power BI-mobilapps.

@@ -9,20 +9,20 @@ featuredvideoid: SYk_gWrtKvM
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/21/2018
+ms.date: 05/28/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 83ef4aa17de5edb18bc6b9cff1b50c29596704f7
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: d470a262bd8a5e6590746fb07889b1230f5cfc25
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292861"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375656"
 ---
 # <a name="visualizations-in-power-bi-reports"></a>Visualiseringer i Power BI-rapporter
 
 Visualiseringer (dvs. visuals) viser indsigter, der er blevet registreret i dataene. En rapport i Power BI har muligvis en enkelt side med én visual, eller den kan have sider fulde af visuals. I Power BI-tjenesten kan visuals [fastgøres fra rapporter til dashboards](../service-dashboard-pin-tile-from-report.md).
 
-Det er vigtigt at skelne mellem rapporters *forfattere* og rapporters *forbrugere* Hvis du er personen, der opretter eller redigerer rapporten, så er du forfatter.  Forfattere har tilladelse til at redigere rapporten og dens underliggende datasæt. Det betyder, at du i Power BI Desktop kan åbne datasættet i Datavisning og oprette visuals i Rapportvisning. Det betyder, at du i Power BI-tjenesten kan åbne datasæt eller rapporter i rapporteditoren i [Redigeringsvisning](../consumer/end-user-reading-view.md). Hvis en rapport eller et dashboard er blevet [delt med dig](../consumer/end-user-shared-with-me.md), så er du rapportens **forbruger**. Du kan få vist og interagere med rapporten og dens visuals, men du kan ikke gemme ændringerne.
+Det er vigtigt at skelne mellem rapporters *designere* og rapport *forbrugere* Hvis du er den person, der opretter eller redigerer rapporten, så du er en designer.  Designere har redigeringsrettigheder til rapporten og dens underliggende datasæt. Det betyder, at du i Power BI Desktop kan åbne datasættet i Datavisning og oprette visuals i Rapportvisning. I Power BI-tjenesten, betyder det, du kan åbne datasæt eller rapporter i rapporteditoren i [redigeringsvisning](../consumer/end-user-reading-view.md). Hvis en rapport eller et dashboard er blevet [delt med dig](../consumer/end-user-shared-with-me.md), så er du rapportens **forbruger**. Du vil kunne se og interagere med rapporten og dens visuelle elementer, men du kan ikke gemme større ændringer.
 
 Der er mange forskellige typer visuals, der fås direkte fra ruden VISUALISERINGER i Power BI.
 
@@ -50,6 +50,11 @@ Prøv at [vælge en anden type visualisering](power-bi-report-change-visualizati
 ## <a name="pin-the-visualization"></a>Fastgør visualiseringen
 
 Når du har fået tilpasset visualiseringen til det, du har brug for i Power BI-tjenesten, kan du [fastgøre den på et dashboard](../service-dashboard-pin-tile-from-report.md) som et felt. Hvis du ændrer visualiseringen, der bruges i rapporten, når du har fastgjort den, så ændres feltet på dashboardet ikke – et kurvediagram forbliver et kurvediagram, selvom du har ændret det til et kransediagram i rapporten.
+
+## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
+- Afhængigt af datakilden og antallet af felter (målinger eller kolonner), et visuelt element indlæses muligvis langsomt.  Det anbefales at begrænse visuelle elementer til 10-20 samlede felter, både med hensyn til læsbarheden og ydeevne. 
+
+- Den øvre grænse for visuelle elementer er 100 felter (målinger eller kolonner). Hvis dit visual ikke indlæses, reducere antallet af felter.   
 
 ## <a name="next-steps"></a>Næste trin
 

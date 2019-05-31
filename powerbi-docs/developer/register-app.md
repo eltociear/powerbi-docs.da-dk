@@ -1,20 +1,20 @@
 ---
-title: Registrer et program for at integrere Power BI-indhold
+title: Registrer en app for at integrere Power BI-indhold
 description: Få mere at vide om, hvordan du registrerer et program i Azure Active Directory, som skal bruges til at integrere Power BI-indhold.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: 2fb633c8f23d5d9d70dc6a01c2467debb169da54
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
-ms.translationtype: HT
+ms.date: 04/02/2019
+ms.openlocfilehash: 73cca097ce6693c3bbee538eb1518a2ede19beab
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762369"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61269573"
 ---
 # <a name="register-an-azure-ad-application-to-use-with-power-bi"></a>Registrer et Azure AD-program, som skal bruges sammen med Power BI
 
@@ -23,9 +23,9 @@ Få mere at vide om, hvordan du registrerer et program i Azure Active Directory 
 Du kan registrere dit program i Azure AD for at give programmet adgang til REST [API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/). Når du har registreret dit program, kan du oprette en identitet for programmet og angive tilladelser til Power BI REST-ressourcer.
 
 > [!IMPORTANT]
-> Før du kan registrere et Power BI-program, skal du have en [Azure Active Directory-lejer og en organisationsbruger](create-an-azure-active-directory-tenant.md). Hvis du ikke har tilmeldt dig Power BI med en bruger i din lejer, fuldføres registreringen af programmet ikke.
+> Før du kan registrere et Power BI-app, skal du have en [Azure Active Directory-lejer og en organisationsbruger](create-an-azure-active-directory-tenant.md). Hvis du ikke har tilmeldt dig Power BI med en bruger i din lejer, fuldføres registreringen af appen ikke.
 
-Der er to måder at registrere dit program på. Den første er med brug af [værktøjet Power BI App Registration](https://dev.powerbi.com/apps/), men du kan også vælge at gøre det direkte fra Azure-portalen. Værktøjet Power BI App Registration er mere praktisk at bruge, da der kun er nogle få felter at udfylde. Brug Azure-portalen, hvis du vil foretage ændringer i dit program.
+Der er to måder at registrere din app på. Den første er med brug af [værktøjet Power BI App Registration](https://dev.powerbi.com/apps/), men du kan også vælge at gøre det direkte fra Azure-portalen. Værktøjet Power BI App Registration er mere praktisk at bruge, da der kun er nogle få felter at udfylde. Brug Azure-portalen, hvis du vil foretage ændringer i din app.
 
 ## <a name="register-with-the-power-bi-application-registration-tool"></a>Registrer ved hjælp af værktøjet Power BI Application Registration
 
@@ -53,7 +53,7 @@ Sådan registrerer du dit program ved hjælp af værktøjet Power BI App Registr
 
     ![Programtype](media/register-app/register-app-new-design-app-type.png)
 
-5. Hvis du har valgt **serverbaseret webprogram** som programtype, skal du fortsætte med at angive en værdi for **URL-adresse til startside** og **URL-adresse til omdirigering**. **URL-adressen til omdirigering** fungerer sammen med en hvilken som helst gyldig URL-adresse og bør stemme overens med det program, du har oprettet. Hvis du har valgt **oprindeligt**, skal du fortsætte til trin 6.
+5. Hvis du har valgt **serverbaseret webprogram** som programtype, skal du fortsætte med at angive en værdi for **URL-adresse til startside** og **URL-adresse til omdirigering**. Den **URL-adressen til omdirigering** fungerer sammen med enhver gyldig URL-adresse og stemmer overens med det program, du har oprettet. Hvis du har valgt **oprindeligt**, skal du fortsætte til trin 6.
 
 6. Vælg de Power BI-API'er, som dit program har brug for. Du kan få flere oplysninger om adgangstilladelser til Power BI i [Power BI-tilladelser](power-bi-permissions.md). Vælg derefter **Registrer**.
 
@@ -62,7 +62,7 @@ Sådan registrerer du dit program ved hjælp af værktøjet Power BI App Registr
     > [!Important]
     > Hvis du aktiverer tjenesteprincipaler, der skal bruges med Power BI, er Azure Active Directory-tilladelserne ikke længere gældende. Tilladelserne administreres via Power BI-administrationsportalen.
 
-7. Hvis du vælger **oprindeligt** som programtype, modtager du et **program-id**. Hvis du vælger **Serverbaseret webprogram** som programtype, modtager du et **program-id** og en **programhemmelighed**.
+7. Hvis du vælger **oprindelige** for programtypen, derefter derefter får du en **program-ID'ET**. Hvis du vælger **Serverbaseret webprogram** som programtype, modtager du et **program-id** og en **programhemmelighed**.
 
     > [!Note]
     > **Program-id'et** kan hentes fra Azure Portal på et senere tidspunkt, hvis det er nødvendigt. Hvis du mister **programhemmeligheden**, skal du oprette en ny på Azure Portal.
@@ -73,7 +73,7 @@ Sådan registrerer du dit program ved hjælp af værktøjet Power BI App Registr
 
 Du kan nu bruge det registrerede program som en del af dit brugerdefinerede program til at interagere med Power BI-tjenesten og dit Power BI Embedded-program.
 
-## <a name="register-with-the-azure-portal"></a>Registrer via Azure Portal
+## <a name="register-with-the-azure-portal"></a>Registrer via Azure-portalen
 
 Din anden mulighed for at registrere dit program er at gør det direkte på Azure-portalen. Følg nedenstående trin, når du vil registrere dit program.
 
@@ -83,16 +83,11 @@ Din anden mulighed for at registrere dit program er at gør det direkte på Azur
 
 3. Vælg din Azure AD-lejer ved at vælge din konto i øverste højre hjørne af siden.
 
-4. Vælg **Alle tjenester** i navigationsruden til venstre. Vælg derefter **Azure Active Directory**, vælg **Programregistreringer**, og vælg derefter **Ny programregistrering**.
-
-    ![Ny programregistrering](media/register-app/azuread-new-app-registration.png)
+4. I navigationsruden til venstre, gå til **alle tjenester**, skal du vælge **Appregistreringer** og derefter vælge **registrering af nyt**.
 
 5. Følg prompterne, og opret et nyt program.
 
-   * I forbindelse med webprogrammer skal du angive URL-adressen til logon, hvilket er den grundlæggende URL-adresse for dit program, hvor brugere logger på (f.eks. `http://localhost:13526`).
-   * Til oprindelige programmer skal du angive en **omdirigerings-URI**, som Azure AD bruger til at returnere token-svar. Angiv en værdi, der er specifik for dit program, f.eks. `http://myapplication/Redirect`.
-
-Du kan finde flere oplysninger om, hvordan du registrerer programmer i Azure Active Directory i [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) (Integrering af programmer med Azure Active Directory)
+   Du kan finde flere oplysninger om, hvordan du registrerer programmer i Azure Active Directory i [Registrer en app med Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v2-register-an-app)
 
 ## <a name="how-to-get-the-application-id"></a>Sådan får du program-id'et
 
@@ -104,44 +99,35 @@ Når du bruger [Power BI-API'erne](https://docs.microsoft.com/rest/api/power-bi/
 
 ## <a name="apply-permissions-to-your-application-within-azure-ad"></a>Anvend tilladelser til dit program i Azure AD
 
-Aktivér yderligere tilladelser for dit program, ud over det der er angivet på siden til programregistrering. Du kan opnå dette via Azure AD-portalen eller fra et program.
+Aktivér yderligere tilladelser for din app ud over det, der er angivet på siden til appregistrering. Du kan opnå dette via Azure AD-portalen eller fra et program.
 
 Du skal være logget på enten via *hovedkontoen*, der er brugt til integrering, eller en global administratorkonto.
 
 ### <a name="using-the-azure-ad-portal"></a>Brug af Azure AD-portalen
 
-1. Gå til [Programregistreringer](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) på Azure Portal, og vælg det program, du bruger til at integrere.
+1. Gå til [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) (Appregistreringer) i Azure Portal, og vælg den app, du bruger til at integrere.
 
-    ![Registrerede programmer i Azure AD](media/register-app/powerbi-embedded-azuread-registered-apps.png)
-2. Vælg **Krævede tilladelser** under **API-adgang**.
+2. Vælg **API tilladelser** under **Administrer**.
 
-    ![Påkrævede tilladelser for program i Azure AD](media/register-app/powerbi-embedded-azuread-app-required-permissions.png)
+3. I **API tilladelser**, skal du vælge **Tilføj en tilladelse**, og vælg derefter **Power BI-tjenesten**.
 
-3. Under **Påkrævede tilladelser** skal du vælge **Power BI-tjeneste (Power BI)**.
+    ![Apptilladelser 03](media/register-app/powerbi-embedded-azuread-app-permissions03.png)
 
-    ![Programtilladelser 03](media/register-app/powerbi-embedded-azuread-app-permissions03.png)
+4. Vælg de specifikke tilladelser, du har brug for under **delegeret tilladelser**. Vælg dem én for én for at gemme valgene. Vælg **Gem**, når du er færdig.
 
-   > [!NOTE]
-   > Hvis du har oprettet programmet direkte på Azure AD-portalen, er **Power BI-tjeneste (Power BI)** muligvis ikke til stede. Hvis den ikke er det, skal du vælge **+ Tilføj** og derefter **1 Vælg og API**. Vælg **Power BI-tjeneste** på listen API og derefter **Vælg**.  Hvis **Power BI-tjenesten (Power BI)** ikke er tilgængelig i **+ Tilføj**, skal du tilmelde dig Power BI med mindst én bruger.
+5. Vælg **give samtykke**.
 
-4. Vælg alle tilladelser under **Delegerede tilladelser**. Vælg dem én for én for at gemme valgene. Vælg **Gem**, når du er færdig.
-
-    ![Programtilladelser 04](media/register-app/powerbi-embedded-azuread-app-permissions04.png)
-5. Under **Krævede tilladelser** skal du vælge **Tildel tilladelser**.
-
-    Handlingen **Grant Permissions** skal bruges til *hovedkontoen* for at undgå at blive bedt af Azure AD om at angive dit samtykke. Hvis kontoen, der udfører denne handling, er en Global administrator, tildeler du tilladelser til alle brugere i organisationen for dette program. Hvis kontoen, der udfører denne handling, er *masterkontoen* og ikke en Global administrator, tildeler du kun tilladelser til *masterkontoen* for dette program.
-
-    ![Tildel tilladelser i dialogboksen til krævede tilladelser](media/register-app/powerbi-embedded-azuread-app-grant-permissions.png)
+    Den **give samtykke** handling, der har brug for til den *hovedkontoen* for at undgå at beder om samtykke af Azure AD. Hvis kontoen, der udfører denne handling, er en Global administrator, giver du tilladelser til alle brugere i organisationen til appen. Hvis kontoen, der udfører denne handling, er *masterkontoen* og ikke en Global administrator, tildeler du kun tilladelser til *masterkontoen* for dette program.
 
 ### <a name="applying-permissions-programmatically"></a>Anvendelse af tilladelser fra et program
 
-1. Du skal hente de eksisterende tjenesteprincipaler (brugere) inden for din lejer. Du kan finde oplysninger om, hvordan du gør det, i [Get servicePrincipal](https://developer.microsoft.com/graph/docs/api-reference/beta/api/serviceprincipal_get).
+1. Du skal hente de eksisterende tjenesteprincipaler (brugere) inden for din lejer. Du kan finde oplysninger om, hvordan du gør dette, i [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta).
 
     Du kan kalde API'en *Get servicePrincipal* uden {ID}, så får du alle tjenesteprincipalerne i lejeren.
 
 2. Kig efter en tjenesteprincipal med dit program-id med egenskaben **appId**.
 
-3. Opret en ny serviceaftale, hvis der mangler en til dit program.
+3. Opret en ny serviceaftale, hvis der mangler en til din app.
 
     ```json
     Post https://graph.microsoft.com/beta/servicePrincipals
@@ -154,14 +140,14 @@ Du skal være logget på enten via *hovedkontoen*, der er brugt til integrering,
     }
     ```
 
-4. Tildel programtilladelser til Power BI-API
+4. Tildel apptilladelse til PowerBI API
 
    Hvis du bruger en eksisterende lejer og ikke er interesseret i at tildele tilladelser på vegne af alle brugere af lejeren, kan du tildele tilladelser til en bestemt bruger ved at erstatte værdien af **contentType** med **Principal**.
 
    Værdien for **consentType** kan være enten **AllPrincipals** eller **Principal**.
 
    * **AllPrincipals** kan kun bruges af en lejeradministrator til at give tilladelser på vegne af alle brugere i lejeren.
-   * **Principal** bruges til at give tilladelser på vegne af en bestemt bruger. I dette tilfælde skal endnu en egenskab føjes til anmodningens brødtekst – *principalId = {User_ObjectId}*.
+   * **Principal** bruges til at give tilladelser på vegne af en bestemt bruger. I dette tilfælde skal endnu en egenskab føjes til anmodningens brødtekst – *principalId = {User_ObjectId}* .
 
      Du skal bruge *Tildel tilladelser* for masterkontoen for at undgå, at Azure AD beder om dit samtykke, hvilket ikke er muligt, når der ikke logges på interaktivt.
 
@@ -186,12 +172,12 @@ Du skal være logget på enten via *hovedkontoen*, der er brugt til integrering,
 
     2. Søg efter "Power BI-tjeneste" i søgefeltet
 
-5. Tildel programtilladelser til Azure Active Directory (AAD)
+5. Tildel apptilladelser til Azure Active Directory (AAD)
 
    Værdien for **consentType** kan være enten **AllPrincipals** eller **Principal**.
 
-   * **AllPrincipals** kan kun bruges af en lejeradministrator til at give tilladelser på vegne af alle brugere i lejeren.
-   * **Principal** bruges til at give tilladelser på vegne af en bestemt bruger. I dette tilfælde skal endnu en egenskab føjes til anmodningens brødtekst – *principalId = {User_ObjectId}*.
+   * **AllPrincipals** kan kun bruges af en lejeradministrator for at tildele tilladelser til alle brugere i lejeren.
+   * **Principal** bruges til at tildele tilladelser for en bestemt bruger. I dette tilfælde skal endnu en egenskab føjes til anmodningens brødtekst – *principalId = {User_ObjectId}* .
 
    Du skal bruge *Tildel tilladelser* for masterkontoen for at undgå, at Azure AD beder om dit samtykke, hvilket ikke er muligt, når der ikke logges på interaktivt.
 
@@ -211,6 +197,6 @@ Du skal være logget på enten via *hovedkontoen*, der er brugt til integrering,
 
 ## <a name="next-steps"></a>Næste trin
 
-Nu, hvor du har registreret dit program i Azure AD, skal du godkende brugere i dit program. Du kan finde flere oplysninger under [Godkend brugere, og få et Azure AD-adgangstoken til dit Power BI-program](get-azuread-access-token.md).
+Nu, hvor du har registreret dit program i Azure AD, skal du godkende brugere i dit program. Du kan finde flere oplysninger under [Godkend brugere, og få et Azure AD-adgangstoken til din Power BI-app](get-azuread-access-token.md).
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

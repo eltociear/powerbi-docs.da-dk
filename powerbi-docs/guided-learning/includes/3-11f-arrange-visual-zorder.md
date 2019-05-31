@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 2019376373268ff57802525ba5b7ee6b7a8ff32e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396447"
+---
 Når du har mange elementer i en rapport, kan du med Power BI administrere, hvordan de overlapper hinanden. Den måde, hvorpå elementer er lagdelt eller arrangeret oven på hinanden, kaldes ofte for z-rækkefølgen.
 
 Hvis du vil administrere elementernes z-rækkefølge i en rapport, skal du markere et element og bruge knappen **Arranger** på fanen **Hjem** på båndet for at ændre dets z-rækkefølge.

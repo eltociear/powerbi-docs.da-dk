@@ -11,11 +11,11 @@ ms.date: 09/11/2018
 ms.author: mihart
 LocalizationGroup: Create reports
 ms.openlocfilehash: 385cae5511d89ec86e52232066227687673f9523
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275979"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61394062"
 ---
 # <a name="high-density-sampling-in-power-bi-scatter-charts"></a>Stikprøvetagning med høj tæthed i Power BI-punktdiagrammer
 Fra og med udgivelsen af **Power BI Desktop** fra september 2017 og opdateringerne til **Power BI-tjenesten** findes der en ny udsnitsalgoritme, som forbedrer den måde, punktdiagrammer viser data med høj tæthed på.

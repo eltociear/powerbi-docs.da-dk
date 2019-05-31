@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 5bf9694c42a3a70fbc65085326a03618ae62a8f6
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: 81449d7a07bec3c142930573154ecd13a0ceff49
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324915"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61141003"
 ---
-# <a name="connect-to-data-sources-for-power-bi-dataflows-preview"></a>Opret forbindelse til datakilder til Power BI-dataflow (prøveversion)
+# <a name="connect-to-data-sources-for-power-bi-dataflows"></a>Opret forbindelse til datakilder til Power BI dataflows
 
 Med Power BI-dataflow kan du oprette forbindelse til mange forskellige datakilder for at oprette nye dataflow eller føje nye enheder til et eksisterende dataflow.
 
 Denne artikel indeholder en liste over de mange tilgængelige datakilder til oprettelse eller tilføjelse af dataflow og beskriver, hvordan du kan oprette disse dataflow ved hjælp af disse datakilder.
 
-Du kan få en oversigt over, hvordan du opretter og bruger dataflow, i [oprettelse og brug af dataflow i Power BI (prøveversion)](service-dataflows-create-use.md).
+Se en oversigt over, hvordan du opretter og bruger dataflows, i [opretter og bruger dataflows i Power BI](service-dataflows-create-use.md).
 
 ## <a name="create-a-dataflow-from-a-data-source"></a>Opret et dataflow fra en datakilde
 
@@ -176,11 +176,11 @@ Det er det eneste, du skal gøre for at oprette forbindelse til datakilder i Pow
 
 I denne artikel viste vi, hvilke datakilder du kan oprette forbindelse til for dataflow. De følgende artikler kommere nærmere ind på almindelige forbrugsscenarier for dataflows. 
 
-* [Selvbetjent dataforberedelse i Power BI (prøveversion)](service-dataflows-overview.md)
+* [Selvbetjening dataforberedelse i Power BI](service-dataflows-overview.md)
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Brug beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
-* [Brug dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
+* [Ved hjælp af den beregnede enheder på Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Ved hjælp af dataflows med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI dataflows](service-dataflows-developer-resources.md)
 * [Integration af dataflow og Azure Data Lake (prøveversion)](service-dataflows-azure-data-lake-integration.md)
 
 Du kan finde flere oplysninger om Power-forespørgsel og planlagt opdatering i disse artikler:

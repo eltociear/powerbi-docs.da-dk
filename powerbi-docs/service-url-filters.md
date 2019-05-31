@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/31/2019
+ms.date: 04/24/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 3f9195ecb4b8679ab65ad6535a85d4d271582d7d
-ms.sourcegitcommit: e05b3863c7758f639894d771193b98b12b93022a
-ms.translationtype: HT
+ms.openlocfilehash: cf640be131e1bffb571ad3c2ae2713dee1c4c0ca
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "55648691"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051301"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 
@@ -43,11 +43,11 @@ URL?filter=***Tabel***/***Felt*** eq '***værdi***'
 
 ### <a name="reports-in-apps"></a>Rapporter i apps
 
-Hvis du vil føje et filter for URL-adresse til en rapport i en app, er formateringen lidt anderledes. Links til rapporter i en app har en forespørgselsparameter (ctid), der føjes til URL-adressen. Forespørgselsparametre skal være adskilt af et &-tegn (&). Du skal derfor tilføje forespørgslen med "&filter=" (efter parameteren ctid) i stedet for "?filter=". 
+Hvis du vil føje et filter for URL-adresse til en rapport i en app, er formateringen lidt anderledes. Links til rapporter i en app har en forespørgselsparameter (ctid), der føjes til URL-adressen. Adskil forespørgselsparametrene med et &-tegn (&). Hold "? filter =", og Flyt parameteren ctid til slutningen af URL-adressen, indledes med et &-tegn (&). 
 
 Som i dette eksempel:
 
-app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?ctid=*ctid*&filter=*Table*/*Field* eq '*value*'
+app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter=*Table*/*Field* eq '*value*&'ctid=*ctid*
 
 ### <a name="field-types"></a>Felttyper
 
@@ -83,7 +83,7 @@ Hvis du vil filtrere rapporten, så der kun vises data for butikker i "NC" (Nort
 
 Nu er rapporten filtreret for North Carolina, så alle visualiseringer på rapportsiden viser kun data for North Carolina.
 
-![](media/service-url-filters/power-bi-report4.png)
+![Rapporten filtreret for North carolina ud](media/service-url-filters/power-bi-report4.png)
 
 ## <a name="filter-on-multiple-fields"></a>Filtrer på flere felter
 
@@ -133,19 +133,19 @@ Et URL-filter i Power BI kan inkludere tal i følgende formater.
 
 ### <a name="date-data-types"></a>Datodatatyper
 
-Power BI understøtter både OData V3 og V4 for datatyperne **Date** og **DateTimeOffset**.  Datoer repræsenteres ved hjælp af formatet EDM (2019-02-12T00:00:00), så når du angiver en dato som YYYY-MM-DD, fortolker Power BI det som YYYY-MM-DDT00:00:00.
+Power BI understøtter både OData V3 og V4 for datatyperne **Date** og **DateTimeOffset**.  Datoer er repræsenteret vha. formatet EDM (2019-02-12T00:00:00), så når du angiver en dato som 'Åååå-MM-DD', Power BI fortolker den som ' åååå-MM-DDT00:00:00'.
 
-Hvorfor er den forskel vigtig? Lad os sige, at du oprette en forespørgselsstrengparameter **Tabel/Dato gt 2018-08-03**.  Inkluderer resultaterne 3. august 2018, eller starter de med 4. august 2018? Da Power BI oversætter din forespørgsel til **Tabel/Dato gt 2018-08-03T00:00:00**, inkluderer dine resultater alle de datoer, som ikke har et klokkeslæt, der kun består af nuller, da disse datoer vil være større end **2018-08-03T00:00:00**.
+Hvorfor er den forskel vigtig? Lad os sige, at du opretter en forespørgselsstrengparameter **tabel/dato gt ' 2018-08-03'** .  Inkluderer resultaterne 3. august 2018, eller starter de med 4. august 2018? Da Power BI oversætter din forespørgsel til **tabel/dato gt ' 2018-08-03T00:00:00'** , dine resultater, der omfatter alle datoer, der har en klokkeslætsdel, der ikke er nul, da disse datoer skal være større end **' 2018-08-03T00:00:00'** .
 
 ## <a name="special-characters-in-url-filters"></a>Specialtegn i URL-filtre
 
-Specialtegn og mellemrum kræver yderligere formatering. Når din forespørgsel indeholder mellemrum, tankestreger eller andre tegn, der ikke er ASCII, skal du foranstille en *escape-kode*, der starter med et understregningstegn og et X (**_x**) og derefter angive den firecifrede **Unicode** efterfulgt af endnu et understregningstegn. Hvis Unicode-værdien består af færre end fire tegn, skal du foranstille den med nuller. Her vises nogle eksempler.
+Specialtegn og mellemrum kræver yderligere formatering. Når din forespørgsel indeholder mellemrum, tankestreger eller andre tegn, der ikke er ASCII, skal du foranstille en *escape-kode*, der starter med et understregningstegn og et X ( **_x**) og derefter angive den firecifrede **Unicode** efterfulgt af endnu et understregningstegn. Hvis Unicode-værdien består af færre end fire tegn, skal du foranstille den med nuller. Her vises nogle eksempler.
 
 |Identifikator  |Unicode-værdi  | Kode til Power BI  |
 |---------|---------|---------|
 |**Tabelnavn**     | Området er 0x20        |  Navn_x0020_på_x0020_tabel       |
 |**Kolonne**@**tal**     |   @ er 0x40     |  Kolonne_x0040_tal       |
-|**[Kolonne]**     |  [ er 0x0058 ] er 0x0050       |  _x0058_Kolonne_x0050       |
+|**[Kolonne]**     |  [ er 0x0058 ] er 0x0050       |  _x0058_Column_x0050_       |
 |**Kolonne+Plus**     | + er 0x2B        |  Kolonne_x002B_Plus       |
 
 Navn_x0020_på_x0020_tabel/Kolonne_x002B_Plus eq 3 ![specialtegn til gengivelse af tabelvisualisering](media/service-url-filters/power-bi-special-characters1.png)
@@ -177,7 +177,7 @@ Der er et par ting, du skal være opmærksom på, når du bruger parametre for f
 
 * Når du bruger operatoren *in*, skal værdierne til højre for *in* være en kommasepareret liste angivet i parenteser.    
 * På Power BI-rapportserveren kan du [sende rapportparametre](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) ved at inkludere dem i en URL-adresse til rapporten. Disse parametre i URL-adressen har ikke noget præfiks, da de sendes direkte til det program, der behandler rapporten.
-* Filtrering af forespørgselsstrengen fungerer ikke sammen med [Publicer på internettet](service-publish-to-web.md).
+* Filtrering af forespørgselsstrengen fungerer ikke med [Publicer på internettet](service-publish-to-web.md) eller [eksport til PDF](consumer/end-user-pdf.md).
 * [Integrer med rapportwebdelen i SharePoint Online](service-embed-report-spo.md) understøtter ikke URL-adressefiltre.
 * Datatypen long er (2^53-1) på grund af begrænsninger i Javascript.
 * URL-adresse-filtre for rapporter har en grænse på 10-udtryk (10 filtre, der er forbundet med OG).

@@ -13,11 +13,11 @@ ms.date: 12/09/2018
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: abf6052d7cb912f9a8ff33f064b5dc1d44f5ba3e
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662084"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61050011"
 ---
 # <a name="view-related-content-in-power-bi-service"></a>Få vist relateret indhold i Power BI-tjenesten
 Ruden **Relateret indhold** viser, hvordan din Power BI-tjenestes indhold – dashboards, rapporter og datasæt – er forbundet. Ruden Relateret indhold er også startstedet til at udføre en handling. Herfra kan du opdatere, omdøbe, generere indsigt og meget mere. Vælg en relateret rapport eller dashboard, så åbnes den i dit Power BI-arbejdsområde.   

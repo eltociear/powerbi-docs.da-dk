@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: eb7cba03daee47f6772fc46be50419731b41765e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61193696"
+---
 ## <a name="validate-the-roles-within-power-bi-desktop"></a>Valider rollerne i Power BI Desktop
 Når du har oprettet dine roller, kan du teste resultaterne af rollerne i Power BI Desktop.
 

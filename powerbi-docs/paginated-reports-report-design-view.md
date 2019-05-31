@@ -1,24 +1,24 @@
 ---
 title: Navigering i visningen Rapportdesign for sideinddelte rapporter (eksempelvisning)
 description: Visningen Rapportdesign i Report Builder er designområdet, hvor du kan oprette sideinddelte rapporter, som du kan publicere i Power BI-tjenesten.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.openlocfilehash: 7b84b967a9e6228258027302fc2e4ad4df5b0073
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 2e9c402c09bc6f504729b8d6057ef5052f489f41
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174769"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61423334"
 ---
 # <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Navigering i visningen Rapportdesign for sideinddelte rapporter (eksempelvisning)
 
-Visningen Rapportdesign i Report Builder er designområdet, hvor du kan oprette sideinddelte rapporter, som du kan publicere i Power BI-tjenesten. Designområdet er placeret centralt i Report Builder, og båndet og ruderne er placeret rundt om det. Designområdet er, hvor du tilføjer og organiserer dine rapportelementer. I denne artikel forklares de ruder, du bruger til at tilføje, vælge og organisere dine rapportressourcer og ændre egenskaber for rapportelementer.  
+Rapportdesign i Power BI Report Builder er området design til oprettelse af sideinddelte rapporter, som du kan publicere til Power BI-tjenesten. Designområdet er placeret centralt i Report Builder, og båndet og ruderne er placeret rundt om det. Designområdet er, hvor du tilføjer og organiserer dine rapportelementer. I denne artikel forklares de ruder, du bruger til at tilføje, vælge og organisere dine rapportressourcer og ændre egenskaber for rapportelementer.  
 
 ![Visningen Rapportdesign i Report Builder](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 

@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/01/2019
+ms.date: 04/01/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4c32f27a04b055eb67015d9c8308866b972c06a7
-ms.sourcegitcommit: 364ffa1178cdfb0a20acffc0fd79922ebc892d72
-ms.translationtype: HT
+ms.openlocfilehash: 55571cda4558b5dd9ba28f757f6e11ad4b45f939
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57226083"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136357"
 ---
-# <a name="self-service-data-prep-in-power-bi-preview"></a>Selvbetjent dataforberedelse i Power BI (prøveversion)
+# <a name="self-service-data-prep-in-power-bi"></a>Selvbetjening dataforberedelse i Power BI
 
 Efterhånden som datamængden vokser, stiger behovet for at konvertere dataene i korrekt udformede oplysninger, som der kan handles på. Vi vil gerne have data, der er klar til analyse, til udfyldning af visuelle elementer, rapporter og dashboards, så vi hurtigt kan konvertere vores datamængder til viden, som der kan handles på. Med **selvbetjening til dataforberedelse** til big data i Power BI kan du gå fra data til Power BI-indsigt med bare nogle få klik.
 
@@ -26,10 +26,6 @@ Efterhånden som datamængden vokser, stiger behovet for at konvertere dataene i
 Power BI introducerer **dataflows**, der kan hjælpe virksomheder med at samle data fra forskellige kilder og forberede dem til modellering. Analytikere kan nemt oprette dataflows ved hjælp af velkendte værktøjer til selvbetjening. Dataflows anvendes til at indsamle, transformere, integrere og forbedre big data ved at definere datakildeforbindelser, ETL-logik, opdatere tidsplaner og meget mere. Desuden gør den nye modelbaserede beregningsmotor, som er en del af dataflows, processen med dataforberedelse lettere at håndtere, mere deterministisk og mindre besværlig for såvel dataanalytikere som rapportoprettere. På samme måde som regneark håndterer genberegninger for alle berørte formler, håndterer dataflows alle ændringer af et objekt eller dataelement på dine vegne, hvilket automatiserer opdatering og letter det, der tidligere selv i forbindelse med almindelige dataopdateringer krævede kedelige og tidskrævende logiske kontroller. Med dataflows kan opgaver, der tidligere krævede opsyn af dataeksperter (og tog mange timer eller dage at fuldføre) nu håndteres med nogle få klik af analytikere og rapportoprettere. 
 
 Data gemmes som objekter i [**Common Data Model**](https://docs.microsoft.com/powerapps/common-data-model/overview) i Azure Data Lake Storage Gen2. Dataflows oprettes og administreres i apparbejdsområder ved hjælp af Power BI-tjenesten.  
-
-> [!NOTE]
-> Dataflowfunktionaliteten er tilgængelig som en prøveversion og kan ændres og opdateres, før den bliver offentligt tilgængelig.
-
  
 **Dataflows** designes til at anvende **Common Data Model**, en standardiseret, modulær og fleksibel samling af dataskemaer udgivet af Microsoft, som er udviklet til at gøre det nemmere for dig opbygge, bruge og analysere data. Med denne model kan du gå fra datakilder til Power BI-dashboards næsten helt uden friktion.
 
@@ -112,10 +108,10 @@ Ved at gemme forretningsdata i standardiseret format af **Common Data Model**, k
 Denne artikel giver et overblik over dataforberedelse af big data til selvbetjening i Power BI og de mange måder, du kan bruge det på. De følgende artikler kommere nærmere ind på almindelige forbrugsscenarier for dataflows. 
 
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Brug beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
-* [Brug dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
-* [Integration af dataflow og Azure Data Lake (prøveversion)](service-dataflows-azure-data-lake-integration.md)
+* [Ved hjælp af den beregnede enheder på Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Ved hjælp af dataflows med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI dataflows](service-dataflows-developer-resources.md)
+* [Dataflows og Azure Data Lake-integration](service-dataflows-azure-data-lake-integration.md)
 
 Du kan finde flere oplysninger om Power-forespørgsel og planlagt opdatering i disse artikler:
 * [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)

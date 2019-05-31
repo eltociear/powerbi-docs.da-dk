@@ -12,11 +12,11 @@ ms.date: 01/16/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 6484046f6c69f47e01e14b56c38c4c9a5871b28b
-ms.sourcegitcommit: 658b0de4f5a544d0906665b40925552804a61880
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "54406586"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61199464"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Føj et link til et tekstfelt i en rapport
 Tekstfelter kan føjes til rapporter, fastgøres til dashboards fra rapporter og føjes direkte til dashboards. Uanset hvor tekstfeltet er, kan du altid føje et link til det.  

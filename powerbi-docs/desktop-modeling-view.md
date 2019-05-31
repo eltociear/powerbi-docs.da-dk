@@ -1,5 +1,5 @@
 ---
-title: Brug Udformningsvisning i Power BI Desktop (prøveversion)
+title: Brug modellering visning i Power BI Desktop
 description: Brug Udformningsvisning til at se komplekse datasæt i en visualisering i Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,30 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ccb78c8d22fdb7b9fecbb202dca488c44d36a15d
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 1fdb6058a6306f63f53c770812f85ccd9f9113ea
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216303"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65941352"
 ---
-# <a name="modeling-view-in-power-bi-desktop-preview"></a>Udformningsvisning i Power BI Desktop (prøveversion)
+# <a name="modeling-view-in-power-bi-desktop"></a>Udformning i Power BI Desktop
 
-Med **Udformningsvisning** i **Power BI Desktop** kan du få vist og arbejde med komplekse datasæt, der indeholder mange tabeller. Med Udformningsvisning kan du gøre følgende:
+Med **Udformningsvisning** i **Power BI Desktop** kan du få vist og arbejde med komplekse datasæt, der indeholder mange tabeller.
 
-
-## <a name="enabling-the-modeling-view-preview-feature"></a>Aktivering af prøveversionsfunktionen Udformningsvisning
-
-Funktionen Udformningsvisning er en prøveversion og skal aktiveres i **Power BI Desktop**. For at aktivere Udformningsvisning skal du vælge **Filer > Indstillinger > Indstillinger > Prøveversionsfunktioner** og derefter markere afkrydsningsfeltet **Udformningsvisning**, som vist på følgende billede.
-
-![Aktivér prøveversionsfunktionen Udformningsvisning i Power BI Desktop](media/desktop-modeling-view/modeling-view_01.png)
-
-Du skal genstarte **Power BI Desktop**, før prøveversionsfunktionen bliver aktiveret. 
-
-![Genstart Power BI Desktop for at aktivere prøveversionsfunktionerne](media/desktop-modeling-view/modeling-view_01b.png)
 
 ## <a name="using-modeling-view"></a>Brug af Udformningsvisning
 
@@ -66,9 +56,9 @@ Du kan f.eks. ændre [lagringstilstanden](desktop-storage-mode.md) for flere tab
 I følgende artikler beskrives flere detaljer om datamodeller og DirectQuery.
 
 * [Sammenlægninger i Power BI Desktop (prøveversion)](desktop-aggregations.md)
-* [Sammensatte modeller i Power BI Desktop (Preview)](desktop-composite-models.md)
+* [Sammensatte modeller i Power BI Desktop](desktop-composite-models.md)
 * [Lagringstilstand i Power BI Desktop (Preview)](desktop-storage-mode.md)
-* [Mange til mange-relationer i Power BI Desktop (Preview)](desktop-many-to-many-relationships.md)
+* [Mange til mange-relationer i Power BI Desktop](desktop-many-to-many-relationships.md)
 
 
 Artikler om DirectQuery:

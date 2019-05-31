@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: dda23e6b41613e76d5507d272e792f9f9130f982
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: d900d8622f086ef28f39ee050e9e9f1639dfd53d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282235"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61231525"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Administrer dit apparbejdsområde i Power BI og Office 365
 Som opretter eller administrator af et [apparbejdsområde i Power BI](service-create-distribute-apps.md) eller i Office 365 kan du administrere visse aspekter i arbejdsområdet i Power BI. Andre aspekter kan du administrere i Office 365. 
@@ -36,10 +36,10 @@ Som opretter eller administrator af et [apparbejdsområde i Power BI](service-cr
 * Se gruppens mailadresse.
 * Slette gruppen.
 
-Du skal bruge en [Power BI Pro-licens](service-features-license-type.md) for at være administrator eller medlem af et apparbejdsområde. Dine appbrugere har også brug for en Power BI Pro-licens, medmindre dit apparbejdsområde er i kraft af en Power BI Premium-kapacitet. Læs [Hvad er Power BI Premium?](service-premium.md) for at få flere oplysninger.
+Du skal bruge en [Power BI Pro-licens](service-features-license-type.md) for at være administrator eller medlem af et apparbejdsområde. Dine appbrugere har også brug for en Power BI Pro-licens, medmindre dit apparbejdsområde er i kraft af en Power BI Premium-kapacitet. Læs [Hvad er Power BI Premium?](service-premium-what-is.md) for at få flere oplysninger.
 
 ## <a name="edit-your-app-workspace-in-power-bi"></a>Rediger dit apparbejdsområde i Power BI
-1. I Power BI-tjenesten skal du vælge pilen ud for **Arbejdsområder** > vælge ellipsen (**...** ) ud for navnet på dit arbejdsområde > **Rediger arbejdsområde**. 
+1. I Power BI-tjenesten skal du vælge pilen ud for **Arbejdsområder** > vælge ellipsen ( **...** ) ud for navnet på dit arbejdsområde > **Rediger arbejdsområde**. 
    
    ![Rediger arbejdsområder i Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
    
@@ -53,14 +53,14 @@ Du skal bruge en [Power BI Pro-licens](service-features-license-type.md) for at 
 3. Vælg **Gem** eller **Annuller**.
 
 ## <a name="edit-power-bi-app-workspace-properties-in-office-365"></a>Rediger egenskaberne for Power BI-apparbejdsområder i Office 365
-1. I Power BI-tjenesten skal du vælge pilen ud for **Arbejdsområder** > vælge ellipsen (**...** ) ud for navnet på dit arbejdsområde > **Medlemmer**. 
+1. I Power BI-tjenesten skal du vælge pilen ud for **Arbejdsområder** > vælge ellipsen ( **...** ) ud for navnet på dit arbejdsområde > **Medlemmer**. 
    
    ![Rediger arbejdsområder i Power BI](media/service-manage-app-workspace-in-power-bi-and-office-365/power-bi-app-ellipsis.png)
    
    Dette åbner gruppevisningen i Outlook for Office 365 af dit apparbejdsområde.
    
    Du skal muligvis logge på din firmakonto.
-2. Tryk på ellipsen (**...** ) ud for et medlems navn for at gøre medlemmet til administrator eller for at slette medlemmet fra apparbejdsområdet. 
+2. Tryk på ellipsen ( **...** ) ud for et medlems navn for at gøre medlemmet til administrator eller for at slette medlemmet fra apparbejdsområdet. 
    
    ![Rediger en gruppe i Office 365](media/service-manage-app-workspace-in-power-bi-and-office-365/pbi_managegroupo365.png)
 

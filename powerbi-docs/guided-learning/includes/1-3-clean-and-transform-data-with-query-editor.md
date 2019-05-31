@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e8b920763ea619fe74af2b71730164183f333a95
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264472"
+---
 **Power BI Desktop** indeholder **Forespørgselseditoren**, som er et stærkt redskab til formning og omformning af data, så de er klar til dine modeller og visualiseringer. Når du vælger Rediger fra Navigator, starter forespørgselseditoren og udfyldes med tabellerne eller andre enheder, som du har valgt fra datakilden.
 
 Du kan også starte **Forespørgselseditoren** direkte fra **Power BI Desktop** ved hjælp af knappen **Rediger forespørgsler** på båndet **Hjem**.

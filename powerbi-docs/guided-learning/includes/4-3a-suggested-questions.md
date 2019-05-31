@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 4a9d873632853a69c835d7326653102107dd239f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263388"
+---
 Med Power BI kan du kan tilføje dine egne forslag til spørgsmål for andre brugere, der benytter forespørgselsfeltet på et naturligt sprog til et dashboard, der ofte henvises til som **spørgsmål og svar**-feltet. Disse forslag til spørgsmål er, hvad brugere vil se, når de klikker på tekstfeltet øverst i et dashboard.
 
 ![](media/4-3a-suggested-questions/4-3a_1.png)

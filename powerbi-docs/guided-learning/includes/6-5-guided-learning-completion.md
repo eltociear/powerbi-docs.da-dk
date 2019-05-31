@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: a0510b9f9bc7303d7ed63a5a1c4c7ee9862d7c85
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255544"
+---
 Du gjorde det! **Tillykke!** Du har gennemført kurset**Automatiseret læring** til Power BI. Du har været hele vejen rundt, siden du lærte de grundlæggende elementer i Power BI. Du har taget turen gennem softwarefunktioner og -elementer, og du har lært, hvordan det hele fungerer sammen.
 
 ![](media/6-5-guided-learning-completion/c0a0_2.png)

@@ -1,20 +1,20 @@
 ---
 title: Brug sikkerhed på rækkeniveau med integreret Power BI-indhold
 description: Få mere at vide om, hvordan du integrerer Power BI-indhold i din app.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: fdc4e90c65ef02f7416ffce9a41b0b2ed028abc8
-ms.sourcegitcommit: e9c45d6d983e8cd4cb5af938f838968db35be0ee
-ms.translationtype: HT
+ms.date: 03/27/2019
+ms.openlocfilehash: 4fc35b88496674206437507ae866e9eb8cb5dd39
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57328004"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61353672"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sikkerhed på rækkeniveau med Power BI Embedded
 
@@ -49,7 +49,7 @@ Her er nogle ting, du bør bemærke i dette skema:
 
 * Alle mål, f.eks. **Total Sales**, gemmes i faktatabellen **Sales**.
 * Der er fire andre relaterede tabeller med mål: **Item**, **Time**, **Store** og **District**.
-* Pilene på relationslinjerne angiver, hvilken vej filtrene kan gå fra en tabel til en anden. Hvis der f.eks. filtreres på **Time[Date]**, vil det kun være værdierne fra tabellen **Sales**, der medtages i det aktuelle skema. Ingen andre tabeller vil blive påvirket af dette filter, da alle pilene på relationslinjerne peger mod tabellen Sales og ikke væk fra den.
+* Pilene på relationslinjerne angiver, hvilken vej filtrene kan gå fra en tabel til en anden. Hvis der f.eks. filtreres på **Time[Date]** , vil det kun være værdierne fra tabellen **Sales**, der medtages i det aktuelle skema. Ingen andre tabeller vil blive påvirket af dette filter, da alle pilene på relationslinjerne peger mod tabellen Sales og ikke væk fra den.
 * Tabellen **District** angiver, hvem der er chef for hvert område:
   
     ![Rækker i tabellen District](media/embedded-row-level-security/powerbi-embedded-district-table.png)
@@ -98,7 +98,7 @@ var generateTokenRequestParameters = new GenerateTokenRequest(accessLevel: "view
 var tokenResponse = await client.Reports.GenerateTokenInGroupAsync(GroupId, report.Id, generateTokenRequestParameters);
 ```
 
-til
+to
 
 ```csharp
 var generateTokenRequestParameters = new GenerateTokenRequest("View", null, identities: new List<EffectiveIdentity> { new EffectiveIdentity(username: "username", roles: new List<string> { "roleA", "roleB" }, datasets: new List<string> { "datasetId" }) });
@@ -145,9 +145,9 @@ Funktionen CustomData fungerer kun for modeller, der findes i **Azure Analysis S
 
 Funktionen CustomData gør det muligt for dig at tilføje et rækkefilter, når du får vist Power BI-data i dit program, mens du bruger **Azure Analysis Services** som datakilde (visning af Power BI-data, der er forbundet med Azure Analysis Services i dit program).
 
-Funktionen CustomData gør det muligt at fortolke fritekst (streng) vha. egenskaben CustomData for forbindelsesstrengen. Analysis Services bruger denne værdi via funktionen *CUSTOMDATA()*.
+Funktionen CustomData gør det muligt at fortolke fritekst (streng) vha. egenskaben CustomData for forbindelsesstrengen. Analysis Services bruger denne værdi via funktionen *CUSTOMDATA()* .
 
-Den eneste måde, du kan få dynamisk sikkerhed på rækkeniveau (som bruger dynamiske værdier til filterevaluering) i **Azure Analysis Services** er at bruge funktionen *CUSTOMDATA()*.
+Den eneste måde, du kan få dynamisk sikkerhed på rækkeniveau (som bruger dynamiske værdier til filterevaluering) i **Azure Analysis Services** er at bruge funktionen *CUSTOMDATA()* .
 
 Du kan bruge den i rollen DAX-forespørgsel, og du kan bruge den uden en rolle i en DAX-målingsforespørgsel.
 Funktionen CustomData er en del af vores tokengenerations funktionalitet for følgende artefakter: dashboard, rapport og felt. Dashboards kan have flere CustomData-identiteter (én pr. felt/model).
@@ -205,7 +205,7 @@ Her er trinnene, så du kan begynde at konfigurere funktionen CustomData() med d
 
     ![Opret rolle – angiv indstillinger for medlemskab](media/embedded-row-level-security/azure-analysis-services-database-create-role-membership.png)
 
-5. Angiv din DAX-forespørgsel for **rækkefiltre** ved hjælp af funktionen*CUSTOMDATA()*.
+5. Angiv din DAX-forespørgsel for **rækkefiltre** ved hjælp af funktionen*CUSTOMDATA()* .
 
     ![Opret rolle – angiv rækkefiltre](media/embedded-row-level-security/azure-analysis-services-database-create-role-row-filters.png)
 
@@ -214,6 +214,8 @@ Her er trinnene, så du kan begynde at konfigurere funktionen CustomData() med d
     ![Eksempel på PBI-rapport](media/embedded-row-level-security/rls-sample-pbi-report.png)
 
 7. Brug Power BI-API'er til at anvende funktionen CustomData i dit program.  Når et token genereres med funktionen CustomData, skal du have et brugernavn. Brugernavnet skal være lig med UPN for masterbrugeren. Masterbrugeren skal være medlem af den eller de roller, du har oprettet. Hvis der ikke er angivet nogen roller, bruges alle de roller, masterbrugeren er medlem af, til evaluering af sikkerhed på rækkeniveau.
+
+    Når du arbejder med en [tjenesteprincipal](embed-service-principal.md), du skal også udføre trinnene ovenfor stedet ved hjælp af en masterkonto. Når generering af integrerede tokens, kan du bruge den [service principal objekt-ID](embed-service-principal.md#how-to-get-the-service-principal-object-id) som brugernavn.
 
     > [!Note]
     > Når du er klar til at udrulle dit program til produktion, må feltet eller indstillingen for masterbrugerkontoen ikke være synlig for slutbrugeren.

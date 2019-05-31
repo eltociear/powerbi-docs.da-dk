@@ -11,11 +11,11 @@ ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
 ms.openlocfilehash: 9c5d2665f012881f951a186c3ec8c9fd94031a28
-ms.sourcegitcommit: ac63b08a4085de35e1968fa90f2f49ea001b50c5
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "57980352"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60977196"
 ---
 # <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Ofte stillede spørgsmål om brugerdefinerede Power BI-visuals
 
@@ -149,7 +149,7 @@ Husk, at certificering er en valgfri proces. Det er op til dig at beslutte, om d
 
 ### <a name="how-to-get-support"></a>Hvordan får jeg support?
 
-Du er meget velkommen til at kontakte supportteamet til brugerdefinerede visualiseringer: *pbicvsupport@microsoft.com* , hvis du har spørgsmål, kommentarer eller problemer.  
+Du er meget velkommen til at kontakte supportteamet til brugerdefinerede visualiseringer: *pbicvsupport@microsoft.com*  , hvis du har spørgsmål, kommentarer eller problemer.  
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2018
+ms.date: 04/15/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: f30ff44fbc4d99818661abc53cb99bb96cfde673
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 5f0f09c3f64795ca0530bbe5ec5cec09de6c7b53
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215729"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60989206"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Brug rapporttemaer i Power BI Desktop
 Med **rapporttemaer** kan du anvende et farvetema i hele rapporten, f.eks. organisationens farver, sæsonmæssige farver eller andre farvetemaer. Når du anvender et **rapporttema**, bruges farver fra det valgte tema for alle visuelle elementer i rapporten. Der gælder nogle få undtagelser, som er beskrevet senere i denne artikel.
@@ -24,21 +24,7 @@ Med **rapporttemaer** kan du anvende et farvetema i hele rapporten, f.eks. organ
 
 Når du anvender et **Rapporttema**, skal du bruge en JSON-fil, der anvender en grundlæggende struktur. Du kan derefter importere denne JSON-fil i Power BI Desktop og anvende den til din rapport. JSON-filstrukturen og importprocessen er hurtig og nem (kræver kun nogle få klik).
 
-Fra og med september 2017-versionen af **Power BI Desktop** kan du definere endnu flere rapporttemaelementer ved hjælp af en JSON-fil. Du kan også tilpasse og standardisere næsten alle elementer. Hvis du vil tilpasse, skal du bruge JSON-filen, som du justerer manuelt i ruden **Formatering**. Målet med udgivelsen fra september 2017 (og nyere) er at give dig fuld kontrol over, hvordan dine rapporter ser ud på et detaljeret niveau.
-
-### <a name="enable-report-themes"></a>Aktivér rapporttemaer
-Fra og med august 2018-versionen af **Power BI Desktop** er rapporttemaer generelt tilgængelige og skal ikke længere aktiveres. 
-
-Hvis du bruger en tidligere version af **Power BI Desktop**, kan du aktivere det som en prøveversionsfunktion ved at gøre følgende: 
-
-1. Vælg **Fil > Indstillinger > Indstillinger > Funktioner til eksempelvisning**. 
-2. Derefter skal du markere afkrydsningsfeltet ud for **Brugerdefinerede rapporttemaer**. 
-
-Du skal genstarte **Power BI Desktop**, når du har markeret indstillingen.
-
-![Brugerdefinerede rapporttemaer](media/desktop-report-themes/report-themes_2.png)
-
-Vi anbefaler, at du altid opgraderer til den nyeste version af **Power BI Desktop**, hvilket du kan gøre via et link i [Hent Power BI Desktop](desktop-get-the-desktop.md). 
+Du kan også tilpasse og standardisere næsten alle elementer. Hvis du vil tilpasse, skal du bruge JSON-filen, som du justerer manuelt i ruden **Formatering**. Målet er at give dig fuld kontrol over, hvordan dine rapporter ser ud på et detaljeret niveau.
 
 ## <a name="how-report-themes-work"></a>Sådan fungerer rapporttemaer
 For at anvende et rapporttema på en rapport i Power BI Desktop kan du vælge mellem de tilgængelige indbyggede rapporttemaer eller importere et brugerdefineret tema.
@@ -113,7 +99,7 @@ Derefter følger teksten fra filen *St Patrick's Day.json*, som du kan bruge til
 
 Herefter kan du angive din egen heksadecimale farvekode for de valgte farver.
 
-Fra og med september 2017-versionen af **Power BI Desktop** kan JSON-filen være meget mere kompleks. I JSON-filen angiver du kun den formatering, der skal justeres, og alt andet, der *ikke* er angivet i JSON-filen, vender blot tilbage til Power BI-standardindstillingerne.
+I JSON-filen angiver du kun den formatering, der skal justeres, og alt andet, der *ikke* er angivet i JSON-filen, vender blot tilbage til Power BI-standardindstillingerne.
 
 Der er mange fordele ved at oprette en JSON-fil. Du kan f.eks. angive, at alle diagrammer skal bruge en skriftstørrelse på 12, eller at visse visuelle elementer skal bruge en bestemt skrifttypefamilie. Du kan også deaktivere datamærkater for specifikke diagramtyper.
 

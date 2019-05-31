@@ -7,21 +7,32 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 11/08/2018
+ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 8755f48653097d5754c4c908f07ea91bdb3c0d53
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
-ms.translationtype: HT
+ms.openlocfilehash: 967af5bc560d5312cd26964e5ca6b2b7eafd60d7
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872725"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65991052"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
 
-* [Power BI-teamets blog om mobilapps](https://powerbi.microsoft.com/blog/tag/mobile/)
+* [Power BI-teamets blog til mobilapps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheder i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheder i Power BI-tjenesten](../../service-whats-new.md)  
+
+## <a name="april-2019"></a>April 2019
+
+### <a name="key-influencers-visual"></a>Nøgle Lobbyister visual 
+Nøgle Lobbyister visual er nu tilgængelig på din mobilapp. Denne visual, kan du udføre analyse af vigtige drivere over dine data med blot nogle få tryk.
+
+### <a name="add-comments-to-report-content-android-and-ios"></a>Tilføj kommentarer i rapportens indhold (Android og iOS)
+Du kan nu bruge kommentarer til at samarbejde og del din feedback på rapportsider og visualiseringer. Læs mere om rapporten kommentarer i Power BI-tjenesten og Mobile [i denne blog](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/). 
+
+### <a name="maximize-the-view-with-full-screen-mode-android-and-ios"></a>Maksimer visningen med fuld skærm (Android og iOS)
+Vi har tilføjet nye knap, kan du styre, hvornår du skal fokusere på dine data ved at fjerne rapport sidehoveder og sidefødder og giver dig maksimal diskplads til at få vist dine rapporter.
 
 ## <a name="march-2019"></a>Marts 2019
 
@@ -31,7 +42,20 @@ Du kan få adgang til Power BI-indhold, der er delt med dig fra andre organisati
 
 ### <a name="enhancing-windows-presentation-mode-with-slideshow-windows"></a>Forbedring af Windows-præsentationstilstand med slideshow (Windows)
 
-Med [slideshow](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) kan du bruge udstyr på dit kontor til at køre Power BI-rapporter i fuld skærm, som roterer automatisk mellem rapportsider.  
+Med [slideshow](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) du kan bruge offentlige viser befinder sig på kontoret til at køre Power BI-rapporter i fuld skærm, der bliver automatisk Roter mellem rapportsider.  
+
+### <a name="supporting-pbi-rs-reports-over-adfs-and-wap-configuration-ios-only"></a>Understøttende PBI-RS rapporter over ADFS og WAP-konfiguration (kun iOS)
+
+Power BI-rapporter (PBIX) hostes i PBI-RS over ADFS-konfiguration kan nu også tilgås fra Power BI iOS-app.
+
+### <a name="enabling-single-tap-interaction-with-report-visuals"></a>Aktivering af enkelt tryk interaktion med visuelle elementer
+
+Vi har ændret interaktion med rapporten, så det kræver kun én Tryk på et visuelt element, knappen eller udsnittet for at interagere med sine data med det samme. Brugerne behøver ikke længere at trykke på et visuelt element for at vælge den og tryk igen for at interagere med det, et enkelt tryk gør dem begge.
+
+![Tryk på en enkelt interaktion](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
+
+> [!NOTE]
+> Eksisterende brugere skal slå denne funktionsmåde i indstillingen app. Du kan finde flere oplysninger i den [Sådan konfigurerer du Tryk på en enkelt rapport interaktion](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-app-single-tap) artikel.
 
 ## <a name="january---february-2019"></a>Januar-februar 2019
  
@@ -299,7 +323,7 @@ Læs [oversigten over funktioner i mobilapps for april 2017](https://powerbi.mic
 Læs [oversigten over funktioner i mobilapps for marts 2017](https://powerbi.microsoft.com/blog/power-bi-mobile-apps-feature-summary-march-2017/).
 
 #### <a name="all-devices"></a>Alle enheder
-**Interaktion med udsnit**
+**Interaktion med udsnitsværktøj**
 
 Vi har forbedret touchinteraktion med tidsudsnitsværktøjer.
 
@@ -321,12 +345,12 @@ Hvis du scanner en QR-kode for et dashboard, som du ikke har adgang til, kan du 
 
 ### <a name="february-2017"></a>Februar 2017
 #### <a name="all-devices"></a>Alle enheder
-**Nemmere rulning** 
+**Rulning gjort nemmere** 
 
 Nu kan du rulle i søjlediagrammer i en rapport ved at berøre selve diagrammet i stedet for at berøre rullepanelet på siden.
 
 #### <a name="ios-devices"></a>iOS-enheder
-**Stil spørgsmål om dine data med en prøveversion af Spørgsmål og svar** 
+**Stil spørgsmål om dine data med en prøveversion af Q&A** 
 
 Med Q&A kan du stille spørgsmål om dataene med dine egne ord, hvorefter Power BI giver svarene. Q&A er allerede tilgængelig i Power BI-tjenesten på http://powerbi.com. Nu er den også [tilgængelig i mobilappen på din iPhone eller iPad](mobile-apps-ios-qna.md).
 
@@ -378,17 +402,17 @@ Du kan anmærke og dele et felt, en rapport eller en visualisering fra Power BI-
 
 Hvis du scanner en QR-kode for et dashboard, som du ikke har adgang til, kan du nu sende en anmodning om adgang direkte fra mobilappen.
 
-**Brugerdefineret URL-adresse på billedfelt**
+**Brugerdefineret webadresse på billedfelt**
 
 Hvis et billedfelt har en brugerdefineret webadresse, der er defineret af ejeren af dashboardet, går du direkte til den pågældende webadresse uden at åbne feltet i fokuseringstilstand, når du trykker på feltet. 
 
 #### <a name="iphone"></a>iPhone
-**Forbedringer til Apple Watch**
+**Apple Watch-forbedringer**
 
 Nu kan du opdatere Apple Watch-data direkte fra Watch-appen. Tryk længe på indekssiden på dashboardet for at opdatere dataene. (Power BI-mobilappen skal køre i baggrunden på din iPhone, hvis det skal fungere).
 
 #### <a name="android"></a>Android
-**Brugerdefineret URL-adresse på billedfelt**
+**Brugerdefineret webadresse på billedfelt**
 
 Hvis et billedfelt har en brugerdefineret webadresse, der er defineret af ejeren af dashboardet, går du direkte til den pågældende webadresse uden at åbne feltet i fokuseringstilstand, når du trykker på feltet. Dashboardfelter, der indeholder foruddefinerede brugerdefinerede URL-adresser, kan desuden nu omdirigere læsere til rapporter i appen.
 
@@ -640,7 +664,7 @@ Læs [blogindlæg om Power BI – Mobil fra midt i oktober](http://blogs.msdn.co
 
 #### <a name="all-power-bi-mobile-apps"></a>Alle Power BI-mobilapps
 * Kurvediagrammer med en procentdel-baseret y-akse beregner nu det visuelle område i overensstemmelse med de faktiske data. Grafen starter nu fra det laveste datapunkt i diagrammet i stedet for fra en standardværdi.
-* Kurvediagrammer, søjlediagrammer og liggende søjlediagrammer kan nu have dataetiketter. 
+* Kurvediagrammer, søjlediagrammer og liggende søjlediagrammer kan nu have datamærkater. 
   
     ![](media/mobile-whats-new-in-the-mobile-apps/pbi_mobilelinechart.png)
 

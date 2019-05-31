@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: d7f30dd43fe875380939520f3dc54fcbbe2f4c9c
-ms.sourcegitcommit: 883a58f63e4978770db8bb1cc4630e7ff9caea9a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57555965"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61273245"
 ---
 Én væsentlig forskel mellem **DAX** og Excel-formelsprog er, at DAX giver dig mulighed at overføre *hele tabeller* mellem udtryk i stedet for, at det er begrænset til en enkelt værdi. Én effektiv effekt er, at DAX gør det muligt at filtrere tabeller i dens udtryk og derefter arbejde med det filtrerede værdisæt.
 

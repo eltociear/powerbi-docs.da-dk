@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/19/2019
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: b2b928ea308f546c7cf023c6ef187aa7c516987c
-ms.sourcegitcommit: 654fae0af739bd599e029d692f142faeba0a502f
-ms.translationtype: HT
+ms.openlocfilehash: 4507490fc2986ec7934af4c9e7417585523c7a05
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426625"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61143343"
 ---
-# <a name="creating-and-using-dataflows-in-power-bi-preview"></a>Oprettelse og brug af dataflow i Power BI (prøveversion)
+# <a name="creating-and-using-dataflows-in-power-bi"></a>Oprettelse og brug af dataflow i Power BI
 
 Med klargøring af avancerede data, som er tilgængelig i **Power BI**, kan du oprette en samling af data, hvilket kaldes et dataflow. Det kan du derefter bruge til at oprette forbindelse til virksomhedens data fra forskellige kilder, rense dataene, transformere dem og derefter indlæse dem i Power BI-lageret.
 
@@ -34,9 +34,6 @@ Der er tre primære trin til at bruge et dataflow:
 3. Byg datasættet ved hjælp af dataflowet via Power BI Desktop 
 
 I følgende afsnit gennemgår vi hvert af disse trin og bliver fortrolige med de værktøjer, der skal bruges til at fuldføre hvert trin. Lad os komme i gang.
-
-> [!NOTE]
-> Dataflowfunktionaliteten er tilgængelig som en prøveversion og kan ændres og opdateres, før den bliver offentligt tilgængelig.
 
 ## <a name="creating-a-dataflow"></a>Oprettelse af et dataflow
 Du opretter et dataflow ved at starte Power BI-tjenesten i en browser og derefter vælge et **apparbejdsområde** i navigationsruden til venstre på følgende skærm. Dataflow er ikke tilgængelige i *mit arbejdsområde* i Power BI-tjenesten. Du kan også oprette et nyt arbejdsområde, hvor du kan oprette dit nye dataflow. 
@@ -165,9 +162,9 @@ Det kan ske, at der opstår problemer med dataflowet, når der oprettes forbinde
 I denne artikel blev det beskrevet, hvordan du opretter dine egne **dataflow** og opretter et datasæt og en rapport i **Power BI Desktop**, hvor du kan drage fordel af det. Følgende artikler indeholder nyttige oplysninger og scenarier, når du bruger dataflow:
 
 * [Selvbetjent dataforberedelse med dataflow](service-dataflows-overview.md)
-* [Brug af beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
-* [Brug dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
+* [Ved hjælp af den beregnede enheder på Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Ved hjælp af dataflows med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI dataflows](service-dataflows-developer-resources.md)
 * [Integration af dataflow og Azure Data Lake (prøveversion)](service-dataflows-azure-data-lake-integration.md)
 
 Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:

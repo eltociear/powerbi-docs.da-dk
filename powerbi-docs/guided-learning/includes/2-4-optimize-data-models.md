@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b42efb2c9237baf85a71be12cfaf61da189601d4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255047"
+---
 Importerede data indeholder ofte felter, som du faktisk ikke har brug for til opgaver med rapportering og visualisering, fordi det enten er ekstra oplysninger, eller fordi disse data allerede er tilgængelige i en anden kolonne. Power BI Desktop har værktøjer til at optimere dine data og gøre dem mere brugbare til rapporter og visuelle elementer og til at få vist dine delte rapporter.
 
 ## <a name="hiding-fields"></a>Skjul felter

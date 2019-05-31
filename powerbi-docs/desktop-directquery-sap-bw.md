@@ -11,14 +11,14 @@ ms.date: 11/28/2018
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 61de19e50437cf8cb5920d2a413821e325da2a1a
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278072"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61304399"
 ---
 # <a name="directquery-and-sap-business-warehouse-bw"></a>DirectQuery og SAP Business Warehouse (BW)
-Du kan oprette forbindelse til **SAP Business Warehouse (BW)**-datakilder direkte ved hjælp af **DirectQuery**. Da der arbejdes med OLAP/flere dimensioner i SAP BW, er der mange vigtige forskelle mellem DirectQuery via SAP BW og relationskilder som SQL Server. Disse forskelle kan opsummeres på følgende måde:
+Du kan oprette forbindelse til **SAP Business Warehouse (BW)** -datakilder direkte ved hjælp af **DirectQuery**. Da der arbejdes med OLAP/flere dimensioner i SAP BW, er der mange vigtige forskelle mellem DirectQuery via SAP BW og relationskilder som SQL Server. Disse forskelle kan opsummeres på følgende måde:
 
 * I **DirectQuery** via relationsdatakilder er der et sæt forespørgsler (som defineret i dialogboksen **Hent data** eller **Forespørgselseditor**), der på en logisk måde definerer de data, der er tilgængelige på feltlisten. Dette er *ikke* tilfældet, når der oprettes forbindelse til en OLAP-kilde, f.eks. SAP BW. Når der oprettes forbindelse til SAP-serveren med **Hent data**, er det i stedet bare Infocube- eller BEx-forespørgslen, der vælges. Derefter vil alle nøgletal og dimensioner for den valgte Infocube-/BEx-forespørgsel være tilgængelige på feltlisten.   
 * På samme måde er der ingen **forespørgselseditor**, når du opretter forbindelse til SAP BW. Du kan ændre indstillingerne for datakilden (f.eks. servernavn) ved at vælge **Rediger forespørgsler > Indstillinger for datakilde**. Du kan ændre indstillingerne for alle parametre ved at vælge **Rediger forespørgsler > Administrer parametre**.

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e2745c211dbb9f855bcf90589f0fbbe65857b3a3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396416"
+---
 Med Power BI Desktop få du mulighed for at styre layout og formatering af dine rapportsider, f.eks. størrelse og retning.
 
 Brug menuen **Sidevisning** fra fanen Hjem for at ændre den måde, dine rapportsider skalerer. De tilgængelige indstillinger omfatter **Tilpas til side** (standard), **Tilpas til bredde** og **Faktisk størrelse**.

@@ -1,20 +1,20 @@
 ---
 title: Sådan konfigurerer du en planlagt opdatering af en Power BI-rapport
 description: Hvis du vil opdatere dataene i din Power BI-rapport, skal du oprette en plan for planlagt opdatering.
-author: markingmyname
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.author: maghan
-ms.openlocfilehash: 4ca6d7c5ed47433614dc194db7d09162d5e96eae
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.author: mblythe
+ms.openlocfilehash: f502ae89eb4c413dd900077272dbed5a4a9c4c6f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285708"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61219283"
 ---
 # <a name="how-to-configure-power-bi-report-scheduled-refresh"></a>Sådan konfigurerer du en planlagt opdatering af en Power BI-rapport
 Hvis du vil opdatere dataene i din Power BI-rapport, skal du oprette en plan for planlagt opdatering. Det gør du i området *Administrer* i en Power BI-rapport.

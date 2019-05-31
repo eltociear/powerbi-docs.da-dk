@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 6ed1690ec77880467007200c30038d185c98d6c2
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61273232"
+---
 Der er to primære beregninger, som du kan oprette ved hjælp af DAX:
 
 * **beregnede kolonner**
@@ -32,7 +40,7 @@ Du kan oprette beregnede kolonner i Power BI Desktop ved at vælge **Ny kolonne*
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_2a.png)
 
-Når du vælger knappen **Ny kolonne**, udfyldes **formellinjen** med et grundlæggende kolonnenavn (som du selvfølgelig ændrer, så det passer til formlen) og operatoren **=**, og den nye kolonne vises i datagitteret, som vist på følgende billede.
+Når du vælger knappen **Ny kolonne**, udfyldes **formellinjen** med et grundlæggende kolonnenavn (som du selvfølgelig ændrer, så det passer til formlen) og operatoren **=** , og den nye kolonne vises i datagitteret, som vist på følgende billede.
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_3.png)
 

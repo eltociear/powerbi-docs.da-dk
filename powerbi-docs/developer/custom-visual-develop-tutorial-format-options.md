@@ -10,11 +10,11 @@ ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 11/21/2018
 ms.openlocfilehash: 56134143a752a094c339248c3eeeab57116d3501
-ms.sourcegitcommit: d0abedcf07f964418c9e5ea8d8ee3338b0b97a50
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57695144"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61379810"
 ---
 # <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Selvstudium: Føj formateringsindstillinger til en brugerdefineret visual i Power BI
 
@@ -211,7 +211,7 @@ Angiv egenskabsværdier for projektet med det brugerdefinerede visual, opdater i
 
 6. Gem filen **pbiviz.json**.
 
-7. I objektet **assets** kan du se, at dokumentet definerer en sti til et ikon. Ikonet er det billede, der vises i ruden **_Visualiseringer_**. Det skal være en **PNG**-fil, *20 pixel gange 20 pixel*.
+7. I objektet **assets** kan du se, at dokumentet definerer en sti til et ikon. Ikonet er det billede, der vises i ruden **_Visualiseringer_** . Det skal være en **PNG**-fil, *20 pixel gange 20 pixel*.
 
 8. I Windows Stifinder skal du kopiere icon.png-filen og derefter indsætte den for at erstatte standardfilen, der er placeret i mappen assets.
 
@@ -251,7 +251,7 @@ Du kan nu åbne rapporten i Power BI Desktop og importere den brugerdefinerede v
 
 6. Når visualen er importeret, skal du vælge **OK**.
 
-7. Kontrollér, at visualen er tilføjet i ruden **_Visualiseringer_**.
+7. Kontrollér, at visualen er tilføjet i ruden **_Visualiseringer_** .
 
     ![Få vist i PBI Desktop-visualiseringsruden](media/custom-visual-develop-tutorial-format-options/view-in-desktop-viz-pane.png)
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/12/2019
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: f2921ac581416d519e224f10de53a24db442b969
-ms.sourcegitcommit: 06ae54ed221979939699c67d63aeccba8b9dfcda
-ms.translationtype: HT
+ms.openlocfilehash: 63de805b357fd5b4d15aeea2231dc952ec9e7077
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57965503"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61181952"
 ---
 # <a name="cognitive-services-in-power-bi-preview"></a>Cognitive Services i Power BI (prøveversion)
 
@@ -102,7 +102,7 @@ Der er angivet en oversigt over brugen af Cognitive Services vha. Power BI-tjene
 
 Du kan få flere oplysninger om dataflow i disse artikler:
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Brug beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
-* [Brug dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
+* [Ved hjælp af den beregnede enheder på Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Ved hjælp af dataflows med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI dataflows](service-dataflows-developer-resources.md)
 * [Integration af dataflow og Azure Data Lake (prøveversion)](service-dataflows-azure-data-lake-integration.md)

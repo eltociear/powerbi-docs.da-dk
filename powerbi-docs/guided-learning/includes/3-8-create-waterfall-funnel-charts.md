@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 78e5ba4edc84e7dabef17d608c938adc4693145d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396398"
+---
 Vandfalds- og tragtdiagrammer er to af de mere interessante (og måske usædvanlige) standardvisualiseringer, der er medtaget i Power BI. Hvis du vil oprette et tomt diagram af enten vandfalds- eller tragttypen, skal du vælge dens ikon fra ruden **Visualiseringer**.
 
 ![](media/3-8-create-waterfall-funnel-charts/3-8_1.png)

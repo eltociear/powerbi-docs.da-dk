@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 48e553ebd81632cb0baa9a2c9c6a761860c3c9c6
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255079"
+---
 Det er let at analysere tidsbaserede data med Power BI. Modelleringsfunktionerne i Power BI Desktop indeholder automatisk genererede felter, som kan bruges til at analysere gennem år, kvartaler, måneder og dage med et enkelt klik.  
 
 Når du opretter en tabelvisualisering i rapporten ved hjælp af et datofelt, så inkluderer Power BI Desktop automatisk opdelinger efter tidsperiode. F.eks. blev det enkelte datofelt i tabellen **Dato** automatisk opdelt i år, kvartal, måned og dag af Power BI, som vist i det følgende billede.
@@ -23,7 +31,7 @@ For at komme tilbage til individuelle datoer i stedet for at bruge datohierarkie
 ![](media/2-6a-explore-time-based-data/2-6a_5.png)
 
 ## <a name="next-steps"></a>Næste trin
-**Tillykke!** Du har gennemført dette afsnit af kurset **Automatiseret læring** til Power BI. Nu hvor du er blevet bekendt med *modellering* af data, så er du klar til at få mere at vide om alt det sjove, som venter i det næste afsnit: **Visualiseringer**.
+**Tillykke!** Du har gennemført dette afsnit af kurset **Automatiseret læring** til Power BI. Nu kender du om *udformning* data, du er klar til at få mere at vide om alt sjovt ting, der venter i det næste afsnit: **Visualiseringer**.
 
 Som nævnt opbygger dette kursus din viden ved at følge det almindelige arbejdsflow i Power BI:
 

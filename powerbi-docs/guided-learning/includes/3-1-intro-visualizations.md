@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 74be4112071aba3f629d6b44d322cf2caa522f18
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396434"
+---
 Velkommen til afsnittet **Visualiseringer** i kurset **Undervisning** til Power BI. Vær parat til en sjov, interessant og oplysende tur gennem de mange, mange visualiseringer, som Power BI tilbyder. Og det er ikke dem alle sammen – der kommer hele tiden flere visualiseringer til!
 
 ![](media/3-1-intro-visualizations/3-1_1.png)

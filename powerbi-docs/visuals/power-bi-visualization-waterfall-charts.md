@@ -12,11 +12,11 @@ ms.date: 09/27/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 3835bedc1b4ab2df87abf4704ef338ff7f4abc5d
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215038"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61392999"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vandfaldsdiagrammer i Power BI
 Et vandfaldsdiagram viser en løbende total som værdier, der tilføjes eller trækkes fra. Det er nyttigt for at forstå, hvordan en indledende værdi (f.eks, årets resultat) påvirkes af en række positive og negative ændringer.

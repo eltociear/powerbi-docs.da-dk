@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 68645069b22163ca7ae2a64310e43f1a801434f5
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255555"
+---
 Du kan opdatere rapporter og datasæt, som du allerede har udgivet, fra Power BI Desktop til Power BI-tjenesten. Dette kan du gøre ved at markere **Udgiv** fra fanen **Hjem** på båndet.
 
 ![](media/4-5-manually-republish-reports/4-5_0.png)

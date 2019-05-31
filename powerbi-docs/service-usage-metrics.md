@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 12/19/2018
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 55415126ae4c87381f788729f6f4b23807ac6572
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174930"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61400860"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Overvåg forbrugsdata for Power BI-dashboards og -rapporter
 
@@ -105,7 +105,7 @@ Men endnu bedre, så indeholder det underliggende datasæt forbrugsoplysninger f
 
 ### <a name="what-is-created-when-using-save-as"></a>Hvad oprettes der, når "Gem som" bruges?
 
-Når Power BI opretter den komplette rapport, oprettes der også et nyt datasæt, som **består af alle de dashboards eller alle de rapporter i det aktuelle arbejdsområde**, der har været tilgået i de sidste 90 dage. Antag, at du f.eks. har et arbejdsområde med navnet "Salg", og det indeholder tre dashboards og to rapporter, og du opretter en rapport med forbrugsdata på dashboardet "Nordøst". Og du derefter bruger **Gem som** for at tilpasse og konvertere det til en komplet rapport. Datasættet til den nye rapport indeholder forbrugsdataene *ikke kun til dette ene dashboard med navnet "Nordøst"*, men til alle tre dashboards i arbejdsområdet "Salg". Som standard indeholder rapporten data for dashboardet "Nordøst", og du skal [fjerne et filter](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) (enkelt klik) for at få vist data om alle tre dashboards.
+Når Power BI opretter den komplette rapport, oprettes der også et nyt datasæt, som **består af alle de dashboards eller alle de rapporter i det aktuelle arbejdsområde**, der har været tilgået i de sidste 90 dage. Antag, at du f.eks. har et arbejdsområde med navnet "Salg", og det indeholder tre dashboards og to rapporter, og du opretter en rapport med forbrugsdata på dashboardet "Nordøst". Og du derefter bruger **Gem som** for at tilpasse og konvertere det til en komplet rapport. Datasættet til den nye rapport indeholder forbrugsdataene *ikke kun til dette ene dashboard med navnet "Nordøst"* , men til alle tre dashboards i arbejdsområdet "Salg". Som standard indeholder rapporten data for dashboardet "Nordøst", og du skal [fjerne et filter](#remove-the-filter-to-see-all-the-usage-metrics-data-in-the-workspace) (enkelt klik) for at få vist data om alle tre dashboards.
 
 ### <a name="create-a-copy-of-the-usage-report-using-save-as"></a>Opret en kopi af forbrugsrapporten ved hjælp af "Gem som"
 
@@ -159,7 +159,7 @@ Når administratorer deaktiverer forbrugsdata for hele organisationen, kan de br
 
 ## <a name="usage-metrics-in-national-clouds"></a>Forbrugsværdier i nationale cloudmiljøer
 
-Power BI fås med forskellige nationale cloudmiljøer. Disse skyløsninger giver den samme sikkerhed, privatlivsbeskyttelse, overholdelse af standarder og gennemsigtighed som den globale version af Power BI kombineret med en unik lokal model, der lever op til lokale retningslinjer for levering af tjenester, dataopbevaring, adgang og kontrol. Forbrugsværdier er ikke tilgængelige i nationale cloudmiljøer pga. denne unikke model til lokale forordninger. Du kan få flere oplysninger under [nationale cloudmiljøer](https://powerbi.microsoft.com/clouds/).
+Power BI fås med forskellige nationale cloudmiljøer. Disse skyløsninger giver de samme sikkerhed, beskyttelse af personlige oplysninger, overholdelse af angivne standarder og gennemsigtighed som den globale version af Power BI kombineret med en unik datamodel for lokale bestemmelser om levering af tjenester, dataopbevaring, adgang og kontrol. Forbrugsværdier er ikke tilgængelige i nationale cloudmiljøer pga. denne unikke model til lokale forordninger. Du kan få flere oplysninger under [nationale cloudmiljøer](https://powerbi.microsoft.com/clouds/).
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 

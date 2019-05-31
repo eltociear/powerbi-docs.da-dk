@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0e29076a33a17b6097fd3fbf1db411f97ff45818
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61271279"
+---
 Velkommen til afsnittet **Power BI og Excel** i **undervisningskurset** til Power BI.
 
 Du har sandsynligvis brugt **Excel** før. Måske brugte du Excel til at oprette eller få vist rapporter eller til at bygge cirkeldiagrammer eller andre visuelle elementer. Eller måske brugte du **Power Pivot** eller **Power Query** til bygge løsninger, der var lidt mere tekniske. Hvis det er tilfældet, vil du føle dig hjemme i Power BI, og det gælder også dine projektmapper.

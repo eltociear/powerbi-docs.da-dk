@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: ea958349988cade1045e80b073254ab1f29bbe9e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263408"
+---
 I de forrige emner kiggede vi på, hvordan du kan bruge Power BI til at oprette forbindelse til datakilder, og hvordan du manuelt opdaterer datasæt på Power BI-tjenesten. Det er dog ikke meningen, at du skal opdatere data manuelt ved hver dataændring. Du kan bruge Power BI til at konfigurere en planlagt opdatering, der opretter forbindelse til datakilder og udgiver dem i Power BI-tjenesten automatisk. På denne måde kan du også forbinde tjenesten til givne lokale datakilder, herunder Excel-filer, Access-databaser, SQL-databaser m.m.
 
 Systemet, der giver dig mulighed for at forbinde lokale datakilder til Power BI-tjenesten, kaldes en **datagateway**. Det er et mindre program, der kører på computeren og bruger en foruddefineret plan til at forbinde data, indsamle relevante opdateringer og føre dem op til Power BI-tjenesten. Den **personlige gateway** er en version af den **datagateway**, der kan bruges uden nogen administratorkonfiguration.

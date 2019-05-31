@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa6296485897b983c3ca4044ffa2875de3326dec
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264466"
+---
 Selvom Power BI kan importere dine data fra næsten enhver kilde, så fungerer programmets visualiserings- og udformningsværktøjer bedst med kolonnedata. Nogle gange formateres dataene ikke i simple kolonner, hvilket ofte er tilfældet med Excel-regneark, hvor et tabellayout, der ser flot ud ved første øjekast, ikke nødvendigvis fungerer optimalt ved automatiserede forespørgsler. Det følgende regneark har f.eks. overskrifter, der strækker sig over flere kolonner.
 
 ![](media/1-5-cleaning-irregular-data/1-5_1.png)

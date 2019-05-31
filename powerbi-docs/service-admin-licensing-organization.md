@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 10/30/2018
+ms.date: 04/23/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 5da6b465adc544bf64fd4dfb090a2e1faabee59d
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: 003d179902ad3eeb5dc6dea841936a217a292d0c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383232"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65099817"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI-licenser i din organisation
 
@@ -27,9 +27,15 @@ I denne artikel fokuseres der på licenser pr. bruger fra et administratorperspe
 
 Som administrator kan du købe og tildele Power BI Pro-licenser, og du kan tilmelde dig en Power BI Pro-prøveversion til din organisation. Enkeltpersoner kan også tilmelde sig en Power BI Pro-prøveversion.
 
-### <a name="purchasing-power-bi-pro"></a>Køb Power BI Pro
+### <a name="purchase-power-bi-pro"></a>Køb Power BI Pro
 
 Du kan købe Power BI Pro-licenser gennem Microsoft Office 365 eller gennem en certificeret Microsoft-partner. Når du køber licenserne, kan du tildele dem til individuelle brugere. Du kan finde flere oplysninger i [Køb og tildel Power BI Pro-licenser](service-admin-purchasing-power-bi-pro.md).
+
+### <a name="power-bi-pro-license-expiration"></a>Udløb af Power BI Pro-licens
+
+Der er en respitperiode, efter en Power BI Pro-licens er udløbet. For licenser, der er en del af et volumenlincenskøb, er respitperioden 90 dage. Hvis du har købt licensen direkte, er respitperioden 30 dage.
+
+Power BI Pro har den samme abonnementslivscyklus som Office 365. Du kan finde flere oplysninger i [Hvad sker der med mine data og adgang, når min Office 365 for business-abonnementet slutter?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
 
 ### <a name="power-bi-pro-trial-for-individuals"></a>Power BI Pro-prøveversion til enkeltpersoner
 
@@ -57,7 +63,7 @@ Vær opmærksom på følgende, før du følge trinnene for at tilmelde dig:
 
    ![Tilføj abonnementer](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-06.png)
 
-1. Hold musemarkøren over ellipsen (**…**) under **Andre planer** for at vælge Power BI Pro, og vælg **Start gratis prøveversion**.
+1. Hold musemarkøren over ellipsen ( **…** ) under **Andre planer** for at vælge Power BI Pro, og vælg **Start gratis prøveversion**.
 
    ![Start gratis prøveversion](media/service-admin-licensing-organization/service-power-bi-pro-in-your-organization-07.png) 
 
@@ -99,7 +105,7 @@ Hvis den ubegrænsede licensblok Power BI (gratis) ikke er tilgængelig, og du i
 
 1. Vælg **Tilføj abonnementer +** i højre side.
 
-1. Hold musemarkøren over ellipsen (**…**) under **Andre planer** for at vælge Power BI (gratis), og vælg **Køb nu**.
+1. Hold musemarkøren over ellipsen ( **…** ) under **Andre planer** for at vælge Power BI (gratis), og vælg **Køb nu**.
 
     ![Køb nu – Power BI (gratis)](media/service-admin-licensing-organization/buy-powerbi-free.png)
 
@@ -128,12 +134,12 @@ Den AAD-indstilling, der styrer tilmelding, er **AllowAdHocSubscriptions**. For 
      connect-msolservice -credential $msolcred
     ```
 
-   ![Azure Active Directory-logon](media/service-admin-licensing-organization/aad-signin.png)
+   ![Azure Active Directory-logon](media/service-admin-licensing-organization/azure-ad-sign-in.png)
 
-1. Når du er logget på, skal du køre følgende kommando for at se, hvordan din lejer i øjeblikket er konfigureret.
+1. Når du er logget på, skal du køre følgende kommando for at se, hvordan din lejer i øjeblikket er konfigureret. (Bemærk, at 'fl' nedenfor bruger bogstavet 'l', ikke tallet 1).
 
     ```powershell
-     Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
+     Get-MsolCompanyInformation | fl AllowAdHocSubscriptions 
     ```
 1. Kør følgende kommando for at aktivere ($true) eller deaktivere ($false) **AllowAdHocSubscriptions**.
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/05/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 440874b96b4bf01023c86e3ef053e8c77e9ef289
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
-ms.translationtype: HT
+ms.openlocfilehash: a34de25af7febf63b34d7608ff7ef40e8b653fc4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430092"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61284818"
 ---
 # <a name="use-qa-in-power-bi-desktop-for-natural-language-queries"></a>Brug Spørgsmål og svar i Power BI Desktop til forespørgsler på et naturligt sprog
 Det er effektivt, når du bruger almindelige udtryk og naturligt sprog til dataforespørgsler. Endnu mere effektiv er det, når dataene svarer dig, hvilket Spørgsmål og svar i **Power BI Desktop** gør muligt for dig.
@@ -23,7 +23,7 @@ Det er effektivt, når du bruger almindelige udtryk og naturligt sprog til dataf
 For at aktivere Spørgsmål og svar med henblik på at kunne fortolke den store samling af spørgsmål, som funktionen er i stand til at svare på, så skal Spørgsmål og svar opstille forudsætninger for modellen. Hvis strukturen i din model ikke opfylder en eller flere af disse forudsætninger, så er du nødt til at justere din model. De pågældende justeringer for Spørgsmål og svar er de samme bedste praksis-optimeringer for enhver model i Power BI, uanset om du bruger Spørgsmål og svar. 
 
 > [!NOTE]
-> Spørgsmål og svar er kun tilgængelig, når du arbejder med en model, der indeholder **importerede** data. Direkte forbindelser til SSAS- og DirectQuery-modeller understøttes ikke.
+> Spørgsmål og svar er kun tilgængelig, når du arbejder med en model, der indeholder **importeret** data eller direkte forbindelser til SSAS. DirectQuery-modeller understøttes ikke.
 >
 > Spørgsmål og svar kræver følgende C runtime-opdatering, hvis du bruger en ældre version af Windows end Windows 10. Du kan prøve at installere vigtige opdateringer fra Windows Update eller installere den påkrævede komponent manuelt fra Microsoft (KB2999226). [https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows)
 >

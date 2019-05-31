@@ -1,20 +1,20 @@
 ---
 title: 'Selvstudium: Udforsk Power BI Report Server i en VM'
 description: I dette selvstudium skal du oprette en virtuel maskine med Power BI-rapportserveren, der allerede er installeret, og udforske webportalen.
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: tutorial
-ms.date: 05/18/2018
-ms.author: maghan
-ms.openlocfilehash: 098aa1cd2c031a200e3ce246890a467a6e15149d
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.date: 05/06/2019
+ms.author: maggies
+ms.openlocfilehash: d30a396eeb4d461d7c36cecf9759306236810cab
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325076"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65240023"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Selvstudium: Udforsk webportalen til Power BI-rapportserver i en VM
 I dette selvstudium skal du oprette en virtuel Azure-maskine med Power BI-rapportserver, der allerede er installeret, så du kan få vist, redigere og administrere eksempler på Power BI og sideinddelte rapporter samt KPI'er.
@@ -37,32 +37,38 @@ Til dette selvstudium skal du have et Azure-abonnement. Hvis du ikke har en, ska
 
 Power BI-teamet har heldigvis oprettet en VM, der leveres sammen med Power BI-rapportserveren, som allerede er installeret.
 
-1. Gå til Azure Marketplace, og åbn [Power BI-rapportserveren](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
+1. Vælg Power BI Report Server i Azure Marketplace. Dette link åbner det direkte: [Power BI-rapportserver](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
 
 2. Vælg **Hent det nu**.
 3. Vælg **Fortsæt** for at acceptere udbyderens vilkår for anvendelse og politik om beskyttelse af personlige oplysninger.
 
-    ![Opret en virtuel maskine til Power BI-rapportserveren](media/tutorial-explore-report-server-web-portal/power-bi-report-server-virtual-machine-create.png)
+4. Vælg **Opret**.
 
-4. **Trin 1 Grundlæggende**: Angiv **VM-navn** til **reportservervm**.
+    ![Opret en virtuel maskine til Power BI-rapportserveren](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create.png)
+
+5. I **trin 1 grundlæggende**, for **VM-navn**, kalde den **reportservervm**.
+
+    Power BI Report Server VM navnet må ikke indeholde tankestreger.
 
 5. Opret et brugernavn og en adgangskode.
 
-6. For **Ressourcegruppe** skal du bevare **Opret ny** og kalde den **reportserverresourcegroup**.
+6. For **ressourcegruppe**, skal du vælge **Opret ny**, og kald den **reportserverresourcegroup** > **OK**.
 
     Hvis du gennemgår selvstudiet mere end én gang, skal du give ressourcegruppen et andet navn efter den første gang. Du kan ikke bruge samme navn på ressourcegruppen to gange i ét abonnement. 
 
-7. Bevar de andre standarder > **OK**.
-
     ![Navnet på VM'en og ressourcegruppen](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create-resource-group.png)
 
-8. **Trin 2 Indstillinger**: Bevar standardindstillingerne > **OK**.
+7. Bevar de andre standarder > **OK**.
 
-9. **Trin 3 Oversigt** > **OK**.
+8. I **trin 2 indstillinger**, hold standardindstillingerne > **OK**.
+ 
+    Den **SQL Storage-konto** og **diagnosticering lagerkonto** værdier skal også være entydigt. Hvis du gennemgå selvstudiet mere end én gang, skal du give dem forskellige navne.
 
-10. **Trin 4**: Gennemgå vilkårene for anvendelse og politikken om beskyttelse af personlige oplysninger > **Opret**.
+9. I **trin 3 oversigt**, gennemse dine valg > **OK**.
 
-    Processen til **afsendelse af udrulning for Power BI-rapportserveren** tager flere minutter.
+10. I **trin 4 købe**, gennemgå vilkårene i bruger- og beskyttelse af personlige oplysninger politikken > **Opret**.
+
+    Den **indsender udrulning til Power BI Report Server** kan tage nogle minutter.
 
 ## <a name="connect-to-your-virtual-machine"></a>Opret forbindelse til din virtuelle maskine
 
@@ -78,11 +84,13 @@ Power BI-teamet har heldigvis oprettet en VM, der leveres sammen med Power BI-ra
 
     ![Opret forbindelse til den virtuelle maskine](media/tutorial-explore-report-server-web-portal/power-bi-report-server-connect-to-virtual-machine.png)
 
-5. Vælg **Opret forbindelse** i dialogboksen Forbindelse til Fjernskrivebord.
+5. I den **Opret forbindelse til en virtuel maskine** ruden holde standardindstillingerne, og vælg **Download RDP-filen**.
+
+1. I den **Fjernskrivebord** dialogboksen Vælg **Connect**.
 
 6. Angiv det navn og den adgangskode, du har oprettet for VM'en > **OK**.
 
-7. I næste dialogboks får du besked om, at identiteten af fjerncomputeren ikke kan identificeres. Vælg **Ja**.
+7. Den næste dialogboks siger **identiteten af den eksterne computer ikke kan identificeres**. Vælg **Ja**.
 
    Sådan – din nye VM åbnes.
 
@@ -90,15 +98,15 @@ Power BI-teamet har heldigvis oprettet en VM, der leveres sammen med Power BI-ra
 
 Når din VM åbner, vises følgende elementer på skrivebordet.
 
-![Den virtuelle maskine på Power BI-rapportserveren starter](media/tutorial-explore-report-server-web-portal/power-bi-report-server-start-vm-numbered.png)
+![Den virtuelle maskine på Power BI-rapportserveren starter](media/tutorial-explore-report-server-web-portal/power-bi-report-server-vm-5-numbers.png)
 
 |Tal  |Hvad er det  |
 |---------|---------|
-|![Nummer 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Starter SQL Server Data Tools for at oprette sideinddelte rapporter (. RDL) |
-|![Nummer 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Eksempel på Power BI-rapporter (.PBIX)  |
-|![Nummer 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Links til dokumentation til Power BI-rapportserveren   |
-|![Nummer 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Start Power BI Desktop optimeret til Power BI-rapportserver (marts 2018)  |
-|![Nummer 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Åbner webportalen til Power BI-rapportserveren i browseren   |
+|![Nummer 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Eksempel på Power BI-rapporter (.PBIX) |
+|![Nummer 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Links til dokumentation til Power BI-rapportserveren |
+|![Nummer 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Starter Power BI Desktop optimeret til Power BI Report Server (2019 januar) |
+|![Nummer 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Åbner webportalen til Power BI-rapportserveren i browseren |
+|![Nummer 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Starter SQL Server Data Tools for at oprette sideinddelte rapporter (. RDL) |
 
 Dobbeltklik på ikonet **Webportalen Rapportserver**. Browseren åbner `http://localhost/reports/browse`. Du kan se forskellige filer grupperet efter type på webportalen. 
 
@@ -117,7 +125,7 @@ Dobbeltklik på ikonet **Webportalen Rapportserver**. Browseren åbner `http://l
 ## <a name="tag-your-favorites"></a>Tag dine favoritter
 Du kan mærke rapporter og KPI'er, som skal være favoritter. De er lettere at finde, fordi de alle sammen er samlet i en enkelt Favoritter-mappe, både i webportalen og i Power BI-mobilappsene. 
 
-1. Klik på ellipsen (**...**) i øverste højre hjørne af **Avance** > KPI > **Føj til Favoritter**.
+1. Klik på ellipsen ( **...** ) i øverste højre hjørne af **Avance** > KPI > **Føj til Favoritter**.
    
     ![Føj til Favoritter](media/tutorial-explore-report-server-web-portal/power-bi-report-server-add-to-favorites.png)
 2. Vælg **Favoritter** på båndet på webportalen for at se den sammen med andre favoritter på siden Favoritter på webportalen.
@@ -155,11 +163,9 @@ Du kan få vist og interagere med Power BI-rapporter på webportalen og starte P
 
 1. Vælg **Tillad** for at give dette websted tilladelse til at åbne et program på din computer. 
 
-     Rapporten åbnes i Power BI Desktop. Bemærk navnet på den øverste linje "Power BI Desktop (marts 2018)". Det er den version, der er optimeret til Power BI-rapportserveren.
+     Rapporten åbnes i Power BI Desktop. Bemærk, at navnet på den øverste linje, "Power BI Desktop (januar 2019)". Det er den version, der er optimeret til Power BI-rapportserveren.
 
-    ![Power BI Desktop](media/tutorial-explore-report-server-web-portal/power-bi-report-server-power-bi-desktop.png)
-
-     Brug den version af Power BI Desktop, der er installeret på VM'en. Du kan ikke skifte mellem domæner for at uploade en rapport.
+    Brug den version af Power BI Desktop, der er installeret på VM'en. Du kan ikke skifte mellem domæner for at uploade en rapport.
 
 3. Udvid tabellen Kunder i ruden Felter, og træk feltet Beskæftigelse til Filtre på rapporteringsniveau.
 

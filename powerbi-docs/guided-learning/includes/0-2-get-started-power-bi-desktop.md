@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 4c1a7bce8eb24534974fe6a06a8bada4ba9fb708
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264471"
+---
 I dette emne ser vi nærmere på, hvordan de første to dele af Power BI passer sammen:
 
 * Opret en rapport i **Power BI Desktop**
@@ -41,7 +49,7 @@ Du bliver bedt om at logge på Power BI.
 
 ![](media/0-2-get-started-power-bi-desktop/c0a2_7.png)
 
-Når du er logget på, og udgivelsesprocessen er gennemført, så får du vist den følgende dialogskærm. Du kan vælge linket (under **Udført!**) for at gå til Power BI-tjenesten, hvor du kan se rapporten, du netop har udgivet.
+Når du er logget på, og udgivelsesprocessen er gennemført, så får du vist den følgende dialogskærm. Du kan vælge linket (under **Udført!** ) for at gå til Power BI-tjenesten, hvor du kan se rapporten, du netop har udgivet.
 
 ![](media/0-2-get-started-power-bi-desktop/c0a2_8.png)
 

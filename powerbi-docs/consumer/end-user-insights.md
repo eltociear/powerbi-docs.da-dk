@@ -13,11 +13,11 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: fcfb16de53b4e6c67b7c46fec87ab614d07cb9b1
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661554"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61049104"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Få vist dataindsigt på dashboardfelter med Power BI
 Hvert enkelt visualiseringsfelt på dashboardet er en indgang til at udforske data. Når du vælger et felt, åbnes en rapport, hvor du kan filtrere, sortere og fordybe dig i datasættet bag rapporten. Når du kører indsigt, udfører Power BI denne udforskning af data for dig.
@@ -59,7 +59,7 @@ Vælg **Afslut Fokustilstand** i øverste venstre hjørne, hvis du vil vende til
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 - **Vis indsigter** fungerer ikke med DirectQuery. Det fungerer kun med data, der er uploadet til Power BI.
-- **Vis indsigter** fungerer ikke med alle typer af dashboardfelter. Det er f.eks. ikke tilgængeligt for brugerdefinerede visualiseringer.<!--[custom visuals](end-user-custom-visuals.md)-->
+- **Vis indsigter** fungerer ikke med alle typer af dashboardfelter. F.eks, er det ikke tilgængelig for brugerdefinerede visualiseringer.<!--[custom visuals](end-user-custom-visuals.md)-->
 
 
 ## <a name="next-steps"></a>Næste trin

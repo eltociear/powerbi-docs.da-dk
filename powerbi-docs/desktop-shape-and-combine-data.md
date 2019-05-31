@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: 2835dd34ce5ba2d7bc6be8659b87eb1f550fdc28
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514586"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Selvstudium: Form og kombiner data i Power BI Desktop
@@ -153,7 +153,7 @@ På båndet **Hjem** i Forespørgselseditor skal du vælge **Ny kilde\> Web** og
 
  ![](media/desktop-shape-and-combine-data/designer_gsg_usstateabbreviationsnavigator2.png)
 
-Vælg **Koder og forkortelser...**, da det omfatter de ønskede data, men det kræver lidt mere formning af dataene.
+Vælg **Koder og forkortelser...** , da det omfatter de ønskede data, men det kræver lidt mere formning af dataene.
 
 > [!TIP]
 > Er der en hurtigere eller nemmere måde at udføre disse trin på? Ja, vi kunne oprette en *relation* mellem de to tabeller og forme dataene baseret på relationen. Det er stadig en god idé at følge trinnene herunder, da det er en god måde at lære at arbejde med tabeller på. Du skal bare også vide, at du kan bruge relationer til hurtigt at bruge data fra flere tabeller.

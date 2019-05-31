@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/22/2019
+ms.date: 05/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 1dc085d822463ecf394d6257741d4af82d72b8c0
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 81987b864224b6afd254a3bffe17ecbb019198d0
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661580"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65608346"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Dashboards til brugere af Power BI-tjenesten
 
@@ -24,7 +24,7 @@ Et Power BI-***dashboard*** er en enkelt side, der ofte kaldes et canvas, hvor d
 
 ![dashboard](media/end-user-dashboards/power-bi-dashboard2.png)
 
-De visualiseringer, du kan se på dashboardet, kaldes *felter* og er *fastgjort* til dashboardet af rapportdesigneren. Når du vælger et felt, kommer du til den rapportside, hvor visualiseringen blev oprettet. Hvis du ikke har arbejdet med Power BI før, kan du få et godt overblik ved at læse [Power BI – Grundlæggende begreber](end-user-basic-concepts.md).
+De visualiseringer, du kan se på dashboardet, kaldes *felter* og er *fastgjort* til dashboardet ved rapport *designere*. I de fleste tilfælde fører du vælger et felt dig til rapportsiden hvor Visualiseringen blev oprettet. Hvis du ikke har arbejdet med Power BI før, kan du få et godt overblik ved at læse [Power BI – Grundlæggende begreber](end-user-basic-concepts.md).
 
 > [!NOTE]
 > Dashboards kan [vises og deles på mobilenheder](mobile/mobile-apps-view-dashboard.md).
@@ -39,7 +39,7 @@ Visualiseringerne på et dashboard stammer fra rapporter, og hver rapport er bas
 ## <a name="advantages-of-dashboards"></a>Fordele ved dashboards
 Dashboards er en fantastisk måde at holde øje med din virksomhed, søge efter svar og se dine vigtigste data i korte træk på. Visualiseringer på et dashboard kan stamme fra ét underliggende datasæt eller mange og fra én underliggende rapport eller mange. På et dashboard kan data fra det lokale miljø og cloudmiljøet kombineres, hvilket giver dig en samlet visning, uanset hvor dataene er gemt.
 
-Et dashboard er ikke kun et flot billede. Det er yderst interaktivt og kan i vidt omfang tilpasses, og felterne opdateres, når de underliggende data ændres.
+Et dashboard er ikke kun et flot billede; det er interaktiv og felterne opdateres, når de underliggende data ændres.
 
 ## <a name="dashboards-versus-reports-for-power-bi-consumers"></a>Dashboards sammenlignet med rapporter til Power BI-***forbrugere***
 Rapporter forveksles ofte med dashboards, da de også er lærreder med visualiseringer. Men der er nogle store forskelle set fra Power BI-*forbrugernes* synspunkt.
@@ -48,11 +48,9 @@ Rapporter forveksles ofte med dashboards, da de også er lærreder med visualise
 | --- | --- | --- |
 | Sider |Én side |Én eller flere sider |
 | Datakilder |Én eller flere rapporter og et eller flere datasæt pr. dashboard |Et enkelt datasæt pr. rapport |
-| Abonner |Der kan abonneres på mails om dashboards |Der kan abonneres på mails om rapportsider |
 | Filtrering |Der kan ikke filtreres eller laves udsnit |Der er mange forskellige måder at filtrere, fremhæve og lave udsnit på |
 | Angivelse af beskeder |Der kan oprettes beskeder, som sendes via mail, når visse betingelser er opfyldt |Nej |
 | Fremhævet |Ét dashboard kan angives som dit "udvalgte" dashboard |Der kan ikke oprettes en udvalgt rapport |
-| Forespørgsler på et naturligt sprog |Tilgængelig via dashboard |Ikke tilgængelig via rapporter |
 | Kan underliggende datasættabeller og felter ses? |Nej. Data kan eksporteres, men tabeller og felter på selve dashboardet kan ikke ses. |Ja. Datasættabeller, felter og værdier kan ses. |
 
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8fc17759ea38cc96c69e7639ed25172e782a9d4d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263387"
+---
 Når du har bygget et dashboard, kan du redigere **felterne* i Power BI-tjenesten for at foretage nogle få formateringsændringer.
 
 Hvis du vil foretage ændringer af et felt, skal du pege på feltet og vælge ellipsen (tre prikker) for at vise en samling af ikoner, der gør det muligt at foretage ændringer af feltet.

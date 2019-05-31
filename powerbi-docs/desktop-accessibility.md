@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e3dd7d9120b524dd09d6f0d60764385185210d83
-ms.sourcegitcommit: 89e9875e87b8114abecff6ae6cdc0146df40c82a
-ms.translationtype: HT
+ms.openlocfilehash: 54c842a91684eec1cf60eca4442592500d1bcb11
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306291"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770404"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Tilgængelighed i Power BI Desktop-rapporter
 Power BI indeholder funktioner, der gør det nemmere for personer med et handicap at bruge og interagere med Power BI-rapporter. Funktionerne omfatter muligheden for at bruge en rapport ved hjælp tastaturet eller en skærmlæser, bruge tabulatortasten til at sætte fokus på forskellige objekter på en side og bruge markører i visualiseringer.
@@ -23,7 +23,7 @@ Power BI indeholder funktioner, der gør det nemmere for personer med et handica
 ![Brug forskellige mærker til kurve- og områdediagrammer til at forbedre tilgængelighed](media/desktop-accessibility/accessibility_01.png)
 
 ## <a name="consuming-a-power-bi-desktop-report-with-a-keyboard-or-screen-reader"></a>Brug en Power BI Desktop-rapport med et tastatur eller en skærmlæser
-Fra og med versionen af **Power BI Desktop** fra september 2017 kan du trykke på tasten med spørgsmålstegnet (**?**) for at få vist et vindue, der beskriver de tastaturgenveje for tilgængelighed, som findes i **Power BI Desktop**.
+Fra og med versionen af **Power BI Desktop** fra september 2017 kan du trykke på tasten med spørgsmålstegnet ( **?** ) for at få vist et vindue, der beskriver de tastaturgenveje for tilgængelighed, som findes i **Power BI Desktop**.
 
 ![Tryk på tasten ? i Power BI Desktop for at få vist tastaturgenveje for tilgængelighed](media/desktop-accessibility/accessibility_03.png)
 
@@ -144,6 +144,12 @@ Idet vi løbende forbedrer tilgængeligheden, omfatter ovenstående liste også 
 | Vælg flere | Ctrl + Enter eller Ctrl + mellemrumstast |
 | Højreklik | <ul><li>Windows-tastatur: Windows-genvejstasten + F10.  Windows-genvejstasten er mellem Alt-tasten til venstre og pil til venstre</li><li>Andet tastatur: Shift + F10</li></ul> |
 | Ryd det markerede | Ctrl + Skift + C |
+
+### <a name="table--matrix-navigation"></a>Tabel & Matrix Navigation
+| Hvis du vil foretage denne handling:           | Tryk på                |
+| :------------------- | :------------------- |
+| Flyt fokus op / ned én celle (på tværs af alle celler i alle områder)  | Pil nøgle / ned pil op |
+| Flyt fokus tilbage / lige én celle (på tværs af alle celler i alle områder)  | Venstre pil / højre pil |
 
 ### <a name="pane-navigation"></a>Rudenavigation
 | Hvis du vil foretage denne handling:           | Tryk på                |

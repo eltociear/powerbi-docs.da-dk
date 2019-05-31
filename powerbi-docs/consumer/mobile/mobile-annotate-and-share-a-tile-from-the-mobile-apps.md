@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: b3f0232fdf377ba75a31f5057f1e094bf9fac39d
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 8d48f7c42ac88f5a3b659bf4aff2ece65a2010e5
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54273587"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61342842"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Anmærk og del et felt, en rapport eller en visualisering i Power BI-mobilapps
 Gælder for:
@@ -29,7 +29,7 @@ Du kan anmærke og dele et øjebliksbillede af et felt, en rapport eller en visu
 
 *En rapport med anmærkninger*
 
-Mailen med snapshottet af feltet, rapporten eller visualiseringen indeholder også et link til det faktiske objekt i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)). Dine modtagere kan klikke på linket og gå direkte til feltet, rapporten eller visualiseringen, hvis både du og modtagerne har Power BI Pro-licenser, eller hvis indholdet er i en [Premium-kapacitet](../../service-premium.md), og du allerede har delt et element med disse modtagere. 
+Mailen med snapshottet af feltet, rapporten eller visualiseringen indeholder også et link til det faktiske objekt i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)). Dine modtagere kan klikke på linket og gå direkte til feltet, rapporten eller visualiseringen, hvis både du og modtagerne har Power BI Pro-licenser, eller hvis indholdet er i en [Premium-kapacitet](../../service-premium-what-is.md), og du allerede har delt et element med disse modtagere. 
 
 Du kan også [dele et felt fra Power BI-mobilappen til Windows 10-enheder](mobile-windows-10-phone-app-get-started.md), men du kan ikke anmærke det.
 

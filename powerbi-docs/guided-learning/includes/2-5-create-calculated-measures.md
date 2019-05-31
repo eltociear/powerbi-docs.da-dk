@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: a4d51bb3295c2b5512b98fe2ac231ed1b3467c8a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255022"
+---
 En *måling* er en beregning, der findes i din Power BI-datamodel. Hvis du vil oprette en måling, skal du i visningen **Rapport** markere **Ny måling** fra fanen **Udformning**.
 
 ![](media/2-5-create-calculated-measures/2-5_1.png)
