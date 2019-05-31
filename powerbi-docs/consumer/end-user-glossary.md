@@ -7,14 +7,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: resource
-ms.date: 12/06/2018
+ms.date: 05/14/2019
 ms.author: mihart
-ms.openlocfilehash: 91ac7e9990844f6e4f481473d402647a47249ba6
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 4a67e7ef8171b3f342530d187590e9e018f584df
+ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662405"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412894"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordliste til Power BI-tjenesten
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
@@ -141,6 +141,8 @@ Det er i orden at bruge Power BI-miljø (lejer) i dokumentationen, hvor det kan 
 
 ## <a name="h"></a>H
 **high-density visuals (visuals med høj tæthed)** Visuals med flere datapunkter, end Power BI kan gengive. Power BI sampler dataene for at få vist formen og de udenforliggende værdier.
+
+**Hjem** standard landing alder for brugere af Power BI-tjenesten. Uden at ændre noget. Kan kun kaldes Powerbi hjem eller blot hjem.
 
 ## <a name="i"></a>I
 
@@ -288,7 +290,7 @@ På mobilenheder kan deling referere til oprindelige OS-delingsfunktioner, f.eks
 
 **streaming data (streaming af data)** se *streaming i realtid*.
 
-**subscriptions (abonnementer)**, **Subscribe (Abonner)**  
+**subscriptions (abonnementer)** , **Subscribe (Abonner)**  
 Du kan abonnere på rapportsider, apps og dashboards og modtage mails, der indeholder et snapshot. Kræver en Power BI Pro-licens.
 
 **summarization (opsummering)** [Power BI Desktop] Den handling, der udføres på værdierne i én kolonne.
