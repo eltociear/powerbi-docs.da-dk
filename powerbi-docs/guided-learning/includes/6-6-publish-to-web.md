@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: eeb063707e9a81b3d3551dd4e79e9da01bfe7178
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255612"
+---
 I denne lektion får vi lært, hvordan vi deler en Power BI-rapport på en webside – eller deler den via mail – med nogle ganske få trin. Denne funktion i Power BI kaldes ofte **Publicer på internettet** og er let at bruge og administrere.
 
 Vælg den rapport i Power BI, du vil dele, så den vises på lærredet. Vælg derefter **Filer > Publicer på internettet** på menuen.

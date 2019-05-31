@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa891e06c83a21ac8fea299f068e3b95ad019062
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264465"
+---
 Velkommen til det andet afsnit i dette kursus i **Automatiseret læring** i Power Bi kaldet **Hent data**. Dette afsnit fokuserer på de mange datacentrerede funktioner og værktøjer i Power BI og specielt Power BI Desktop. Mange af disse værktøjer fås også til Power BI-tjenesten, så du får dobbelt så meget ud af læringen i dette afsnit.
 
 Når du henter data, så er de ikke så veludformet eller *rene*, som du ønsker. Så i dette afsnit skal du lære, hvordan du henter data, renser dem (også kaldet *rensning* eller *transformering* af data), samt lære nogle avancerede tricks, der kan afhjælpe datahentning.

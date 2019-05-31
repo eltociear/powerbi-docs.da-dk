@@ -3,7 +3,7 @@ title: Fejlfinding af ikke-understøttet datakilde til opdatering
 description: Fejlfinding af ikke-understøttet datakilde til opdatering
 author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.date: 12/06/2017
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 340c3fe2dc18fadb6be0ac47556547e6131833bc
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: bd0ea66b8caf32e3244ed4e5eef648100fc5169e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280395"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61188021"
 ---
 # <a name="troubleshooting-unsupported-data-source-for-refresh"></a>Fejlfinding af ikke-understøttet datakilde til opdatering
 Du får muligvis vist en fejl, når du forsøger at konfigurere et datasæt til planlagt opdatering.
@@ -41,7 +41,7 @@ Hvis du ikke er sikker på, hvilken datakilde, der er blevet brugt, kan du finde
 ## <a name="next-steps"></a>Næste trin
 [Dataopdatering](refresh-data.md)  
 [Power BI Gateway - Personal](service-gateway-personal-mode.md)  
-[Datagateway i det lokale miljø](service-gateway-onprem.md)  
+[On-premises data gateway (Datagateway i det lokale miljø)](service-gateway-onprem.md)  
 [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
 [Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)  
 

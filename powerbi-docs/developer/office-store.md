@@ -8,13 +8,13 @@ ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 10/30/2018
-ms.openlocfilehash: 2db993a9521b25db28973a5a987edfde4271c5cd
-ms.sourcegitcommit: d0abedcf07f964418c9e5ea8d8ee3338b0b97a50
-ms.translationtype: HT
+ms.date: 3/27/2019
+ms.openlocfilehash: cf9b3335b10b7a2cd3abcc3f02c651ed4416184e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57695190"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61269653"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publicer brugerdefinerede visuals i AppSource
 
@@ -30,7 +30,7 @@ Når du har oprettet en brugerdefineret visual, kan du udgive den i AppSource, s
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Forberedelser, inden du indsender en brugerdefineret visualisering
 
-Når du er færdig med at kode og [teste den brugerdefinerede visualisering](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md), og du har føjet den til en pbiviz-fil, skal du sørge for at have følgende klar, når du vil indsende den.
+Når du er færdig læsning vores [retningslinjer for Power BI-visualiseringer](guidelines-powerbi-visuals.md), kodning og [teste den brugerdefinerede visualisering](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md) og har føjet den til en pbiviz-fil, skal du også have følgende klar til din indsendelse.
 
 | Element | Påkrævet | Beskrivelse |
 | --- | --- | --- |

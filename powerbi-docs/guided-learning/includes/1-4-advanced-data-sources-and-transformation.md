@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 9eff90168ea221a269a8b5ded712645cca01cd9f
-ms.sourcegitcommit: c09241803664643e1b2ba0c150e525e1262ca466
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54083961"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264459"
 ---
 I denne artikel undersøger vi nogle avancerede dataimporterings- og -rensningsteknikker til **Power BI Desktop**. Når du har formet dine data i **Forespørgselseditoren** og lagt dem i **Power BI Desktop**, kan du se dem på forskellige måder. Der er tre visninger i Power BI Desktop: **Rapport**, **Data** og **Relationer**. Du kan se hver visning ved at vælge på dens ikon øverst til venstre på lærredet. I det følgende billede er visningen **Rapport** valgt. Den gule søjle ud for ikonet angiver, hvilken visning der er aktiv.
 

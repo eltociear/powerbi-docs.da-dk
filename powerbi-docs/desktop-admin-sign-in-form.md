@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/21/2019
+ms.date: 04/15/2019
 ms.author: davidi
-ms.openlocfilehash: 9e35bbffec40aa57d3097e122bd038659405dfed
-ms.sourcegitcommit: 76772a361e6cd4dd88824b2e4b32af30656e69db
-ms.translationtype: HT
+ms.openlocfilehash: 5c31277b640b16882bef5c5f2cd9c56b441ede82
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56892292"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61329876"
 ---
 # <a name="how-administrators-can-manage-the-power-bi-desktop-sign-in-form"></a>Sådan kan administratorer administrere logon-formularen i Power BI Desktop
 Første gang Power BI Desktop startes, vises der en logon-formular. Du kan udfylde oplysninger, eller du kan logge på Power BI for at fortsætte. Administratorer kan administrere denne formular ved brug af en registreringsnøgle. 
@@ -27,8 +27,17 @@ Administratorer kan bruge følgende registreringsnøgle til at deaktivere logonf
 Key: HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop
 valueName: ShowLeadGenDialog
 ```
+Du kan også prøve følgende nøgle, som er blevet fuldført for nogle kunder, der er baseret på deres konfigurationer:
+
+```
+Key: HKEY_CURRENT_USER\SOFTWARE\Microsoft\Microsoft Power BI Desktop
+valueName: ShowLeadGenDialog
+```
 
 En værdi på 0 deaktiverer dialogen.
+
+
+
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

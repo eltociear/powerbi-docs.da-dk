@@ -7,29 +7,29 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/27/2018
+ms.date: 05/28/2019
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: c29145e4a51821bab284693bc13a508cb9c046c6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 3d8057c4d35294dd5e83638b721169e4d54d2adf
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279153"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374397"
 ---
-# <a name="use-a-relative-date-slicer-and-filter-in-power-bi-desktop"></a>Brug et relativt datoudsnit og -filter i Power BI Desktop
+# <a name="use-a-relative-date-slicer-and-filter-in-power-bi"></a>Brug et relativt datoudsnit og -filter i Power BI
 Med det **relative datoudsnit** eller det **relative datofilter** kan du anvende tidsbaserede filtre på en hvilken som helst datokolonne i datamodellen. Du kan f.eks. bruge det **relative datoudsnit** til kun at vise salgsdata, der er oprettet i løbet af de sidste 30 dage (eller måned eller kalendermåneder osv.). Og når du opdaterer dataene, anvender den relative tidsperiode automatisk den relevante relative datobegrænsning.
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter_01.png)
+![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-01.png)
 
 ## <a name="using-the-relative-date-range-slicer"></a>Brug det relative datoområdeudsnit
 Du kan bruge det relative datoudsnit på samme måde som alle andre udsnit. Du skal bare oprette et **udsnit**, der er synligt for din rapport, og derefter vælge en datoværdi for **Felt**-værdien. På følgende billede er feltet *OrderDate* markeret.
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter_02.png)
+![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-02.png)
 
-Hvis du vælger karaten i øverste højre hjørne af det **relative datoudsnit**, vises der en menu.
+Vælg udsnittet på lærredet og derefter karaten i øverste højre hjørne af udsnittet visual. Hvis det visuelle element indeholder data for datoer, vises menuen indstillingen for **Relative**. 
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter_03.png)
+![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-03.png)
 
 For det relative datoudsnit skal du vælge *Relativ*.
 
@@ -41,7 +41,7 @@ Du kan derefter vælge indstillingerne. Du har følgende valgmuligheder for den 
 
 Disse valg vises på billedet nedenfor.
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter_04.png)
+![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-04.png)
 
 Den næste (midterste) indstilling i det *relative datoudsnit* gør det muligt at indtaste et tal for at definere det relative datoområde.
 
@@ -57,24 +57,24 @@ Den tredje indstilling giver dig mulighed for at vælge datomålingen. Du har f�
 
 Disse valg vises på billedet nedenfor.
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter_05.png)
+![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-05.png)
 
 Hvis du vælger *Måned* på denne liste og angiver 2 i den midterste indstilling, sker følgende: Hvis dags dato er 20. juli, viser de data, der er inkluderet i de visuals, som er begrænset af udsnittet, data for de to forrige måneder fra og med 20. maj og frem til 20. juli (dags dato).
 
-Hvis du til sammenligning har valgt *Måneder (kalender)*, viser de begrænsede visuelle elementer data fra 1. maj til 30. juni (de to sidste hele kalendermåneder).
+Hvis du til sammenligning har valgt *Måneder (kalender)* , viser de begrænsede visuelle elementer data fra 1. maj til 30. juni (de to sidste hele kalendermåneder).
 
 ## <a name="using-the-relative-date-range-filter"></a>Brug det relative datoområdefilter
 Du kan også oprette et relativt datoområdefilter for din rapportside eller hele rapporten. Det kan du gøre ved blot at trække datofeltet til området **Filtre på sideniveau** eller **Filtre på rapporteringsniveau** i ruden **Felt** som vist på følgende billede.
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter_06.png)
+![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-06.png)
 
 Når du er der, kan du ændre det relative datoområde i forhold til den måde, som det **relative datoudsnit** er tilpasset. Vælg **Filtrering af relativ dato** på rullelisten **Filtertype**.
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter_07.png)
+![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-07.png)
 
 Når du har valgt **Filtrering af relativ dato**, du kan se tre sektioner, der skal redigeres, herunder et numerisk felt i midten, på samme måde som udsnittet.
 
-![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter_08.png)
+![](media/desktop-slicer-filter-date-range/relative-date-range-slicer-filter-08.png)
 
 Og det er det eneste, du skal gøre, når du bruger disse relative datobegrænsninger i dine rapporter.
 

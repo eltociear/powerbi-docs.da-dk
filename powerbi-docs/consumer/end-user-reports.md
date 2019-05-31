@@ -8,30 +8,39 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 5/10/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 42648c4b2ad82eb3091ee1aa9ca75af1c87edd42
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 02652bd027d7dab8a40d77fb92c5aae8f09d8820
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662175"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65607873"
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
 ## <a name="what-is-a-power-bi-report"></a>Hvad er en Power BI-rapport?
-En Power BI-***rapport*** er en visning med flere perspektiver af et datasæt med visualiseringer, som repræsenterer forskellige resultater og indsigt fra dette datasæt.  En rapport kan have en enkelt visualisering eller sider fulde af visualiseringer. Afhængigt af din jobfunktion kan du være én, der *opretter* rapporter, og/eller du kan være én, der *forbruger* eller bruger rapporter.
+En Power BI ***rapport*** er en visning med flere perspektiver et datasæt med visualiseringer, der repræsenterer forskellige resultater og Indsigter fra dette datasæt.  En rapport kan have en enkelt visualisering eller sider fulde af visualiseringer. Afhængigt af din jobfunktion kan du være en person, der *design* rapporter og/eller du kan være en person, der *forbruger* eller bruger rapporter.
 
-![rapportside](./media/end-user-reports/reportview.png)
+![rapportside](./media/end-user-reports/power-bi-report.png)
 
-Denne rapport indeholder tre sider (eller faner), og vi ser i øjeblikket siden "Store Sales Overview". På denne side er der seks forskellige visualiseringer og en sidetitel. Visualiseringer kan være *fastgjort* til dashboards, og når denne fastgjorte visualisering bliver valgt, åbner den den rapport, den var fastgjort til.
+Denne rapport indeholder seks sider (eller faner), og vi ser i øjeblikket siden synspunkt. På denne side er 6 forskellige visualiseringer og en sidetitel.  
 
 Hvis du ikke har arbejdet med Power BI før, kan du få et godt overblik ved at læse [Grundlæggende begreber i Power BI](end-user-basic-concepts.md)
 
-Rapporter er en funktion i Power BI-tjenesten og Power BI Desktop. Det er en næsten identisk oplevelse at arbejde med rapporter. Hvis du arbejder på mobilenheder, kan du dog ikke oprette rapporter, men du kan [få vist, dele og anmærke rapporter](mobile/mobile-reports-in-the-mobile-apps.md).
+Rapporter er tilgængelige for at få vist, dele og anmærke på mobile enheder. Du kan finde flere oplysninger i [Power BI mobile rapporter](mobile/mobile-reports-in-the-mobile-apps.md).
 
 ## <a name="advantages-of-reports"></a>Fordele ved rapporter
-Rapporter er baseret på et enkelt datasæt. Visualiseringerne i en rapport repræsenterer en guldgrube af oplysninger. Og visualiseringerne er ikke statiske. Du kan tilføje og fjerne data, ændre visualiseringstyper og anvende filtre og udsnit, når du graver i dataene for at finde indsigt og lede efter svar. En rapport er som et dashboard, blot i endnu højere grad: Den tillader mere interaktivitet og tilpasningsmuligheder, og visualiseringerne opdateres, når de underliggende data ændres.
+En rapport er baseret på et enkelt datasæt. De visuelle elementer i en rapport er oprettet af rapporten *designere* og repræsenterer en guldgrube af oplysninger. De visuelle elementer er desuden ikke statiske; Du kan interagere med de visuelle elementer og filtre, som du grave ned i dataene for at få indsigt og søge efter svar. Men mere, en rapport er meget interaktive og kan tilpasses i høj som et dashboard, og visualiseringerne opdateres, når de underliggende data ændres.
+
+### <a name="safely-interact-with-content"></a>Sikker interaktion med indhold
+Som du kan udforske og interagere med dit indhold, filtrering, udsnit, abonnerer, og eksport, tryg; dit arbejde påvirker ikke det underliggende datasæt eller det oprindelige delte indhold (dashboards, rapporter og apps).
+ 
+> [!NOTE]
+> Husk, at du ikke kan bare dine data. Powerbi er et godt sted at udforske og eksperimentere uden at bekymre dig, at du vil "bryde" noget.
+
+### <a name="save-your-changes-or-revert-to-the-default-settings"></a>Gem dine ændringer, eller Gendan standardindstillingerne
+Det betyder ikke, at du ikke kan gemme ændringerne. Du kan, men disse ændringer påvirker kun visningen af indholdet. Vender tilbage til den oprindelige standardvisning er lige så nemt som at vælge nulstillet til standardknap.
 
 ## <a name="dashboards-versus-reports"></a>Dashboards sammenlignet med rapporter
 [Dashboards](end-user-dashboards.md) forveksles ofte med rapporter, da de også er lærreder med visualiseringer. Men der er nogle store forskelle.  
@@ -40,31 +49,18 @@ Rapporter er baseret på et enkelt datasæt. Visualiseringerne i en rapport repr
 | --- | --- | --- |
 | Sider |Én side |Én eller flere sider |
 | Datakilder |Én eller flere rapporter og et eller flere datasæt pr. dashboard |Et enkelt datasæt pr. rapport |
-| Tilgængelig i Power BI Desktop |Nej |Ja, der kan oprettes og vises rapporter i Desktop |
-| Fastgørelse |Eksisterende visualiseringer (felter) kan kun fastgøres fra det aktuelle dashboard til dine andre dashboards |Visualiseringer kan fastgøres (som felter) til et hvilket som helst af dine dashboards. Hele rapportsider kan fastgøres til et hvilket som helst af dine dashboards. |
-| Abonnement |Der kan ikke abonneres på et dashboard |Der kan abonneres på rapportsider |
 | Filtrering |Der kan ikke filtreres eller laves udsnit |Der er mange forskellige måder at filtrere, fremhæve og lave udsnit på |
 | Angivelse af beskeder |Der kan oprettes beskeder, som sendes via mail, når visse betingelser er opfyldt |Nej |
 | Udvalgt |Ét dashboard kan angives som dit "udvalgte" dashboard |Der kan ikke oprettes en udvalgt rapport |
-| Forespørgsler på et naturligt sprog |Tilgængelig via dashboard |Ikke tilgængelig via rapporter |
-| Kan visualiseringstypen ændres? |Nej. Faktisk opdateres en fastgjort visualisering på dashboardet ikke, hvis en rapportejer ændrer visualiseringstypen i rapporten |Ja |
-| Kan underliggende datasættabeller og felter ses? |Nej. Data kan eksporteres, men tabeller og felter på selve dashboardet kan ikke ses. |Ja. Datasættabeller, felter og værdier kan ses. |
-| Oprettelse af visualiseringer |Begrænset til tilføjelse af knapper til dashboardet ved hjælp af "Tilføj felt" |Mange forskellige typer visualiseringer kan oprettes, brugerdefinerede visualiseringer kan tilføjes, visualiseringer kan redigeres m.m. ved hjælp af Redigeringstilladelser |
-| Tilpasning |Der kan foretages handlinger for visualiseringerne (felterne), f.eks. flytte og arrangere, tilpasse størrelsen, tilføje links, omdøbe, slette og få vist hele skærmen. Men selve dataene og visualiseringerne er skrivebeskyttede. |I Læsevisning kan du publicere, integrere, filtrere, eksportere, downloade som .pbix, få vist relateret indhold, generere QR-koder og analysere i Excel m.m.  I Redigeringsvisning kan du foretage alle de ovennævnte handlinger og meget mere. |
+| Kan underliggende datasættabeller og felter ses? |Nej. Kan eksportere data, men kan ikke se de datasættabeller og felter i selve dashboardet. |Ja. Datasættabeller, felter og værdier, som du har tilladelse til at se kan se. |
+| Tilpasning |Nej  |Kan filtrere, eksportere, få vist relateret indhold, tilføje bogmærker, generere QR-koder, analysér i Excel, og meget mere.   |
+
+<!--| Available in Power BI Desktop |No |Yes, can create and view reports in Desktop |
+| Pinning |Can pin existing visuals (tiles) only from current dashboard to your other dashboards |Can pin visuals (as tiles) to any of your dashboards. Can pin entire report pages to any of your dashboards. | -->
 
 ## <a name="report-creators-and-report-consumers"></a>Rapportens ***oprettere*** og rapportens ***forbrugere***
-Afhængigt af din rolle kan du være en person, der opretter rapporter til eget brug eller til at dele med kolleger. Du vil måske gerne vil vide mere om, hvordan du opretter og deler rapporter. Eller du kan være en person, der modtager rapporter fra andre. Du vil måske gerne vil vide mere om, hvordan du forstår og interagerer med rapporter.
+Afhængigt af din rolle kan du være en *designer*, en person, der opretter rapporter til eget brug eller til at dele med kolleger. Du vil måske gerne vil vide mere om, hvordan du opretter og deler rapporter. Eller du kan være en person, der modtager rapporter fra andre. Du vil måske gerne vil vide mere om, hvordan du forstår og interagerer med rapporter. Hvis du er en rapport **forbruger**, er disse links til dig. 
 
-Her er nogle emner opdelt efter rolle, som kan hjælpe dig med at komme i gang.
-
-### <a name="if-you-will-be-creating-and-sharing-reports"></a>Hvis du skal oprette og dele rapporter
-* Start med en [præsentation af Power BI-tjenesten](end-user-basic-concepts.md), så du ved, hvor du kan finde rapporter og værktøjer til rapporten.
-* Få en præsentation af [rapporteditor](../service-the-report-editor-take-a-tour.md).
-* Få mere at vide om, hvordan du [opretter en rapport fra et datasæt](../service-report-create-new.md).
-* [Få mere at vide om, hvordan du bruger filtre på visualiserings-, side- og rapportniveau](end-user-report-filter.md)
-* Opdag alle de forskellige måder, som du kan [dele en rapport med kollegaer](../service-share-dashboards.md) på.
-
-### <a name="if-you-will-be-receiving-and-consuming-reports"></a>Hvis du skal modtage og bruge rapporter
 * Start med en [præsentation af Power BI-tjenesten](end-user-basic-concepts.md), så du ved, hvor du kan finde rapporter og værktøjer til rapporten.
 * Få mere at vide om, hvordan du [åbner en rapport](end-user-report-open.md) og al den interaktion, der er tilgængelig i [Læsevisning](end-user-reading-view.md).
 * Bliv fortrolig med rapporter ved at se præsentationen af et af vores [eksempler](../sample-tutorial-connect-to-the-samples.md).  

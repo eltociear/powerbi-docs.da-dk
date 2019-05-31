@@ -11,11 +11,11 @@ ms.date: 08/22/2018
 ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: 8e444c78c1f6f9f3f0be1375f96f7381489cc069
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54282894"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61143228"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Brug Dashboard-temaer i Power BI-tjenesten
 Med **dashboardtemaer** kan du anvende et farvetema på hele dit dashboard, f.eks virksomhedens farver, sæsonmæssige farver eller andre farvetemaer, som du gerne vil anvende. Når du anvender et **dashboardtema**, bruges farver fra det valgte tema for alle visualiseringer på dashboardet (med nogle få undtagelser, der er beskrevet senere i denne artikel).

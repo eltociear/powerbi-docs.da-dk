@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 3c5b33b4b056a5d2dfeeffd4c72ea878cf7d79c0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 6d03097eb886813b934c75b61ddb056b55bde7b8
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54280280"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61160916"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)
 
@@ -30,9 +30,6 @@ Der er et par krav til oprettelse af dataflow fra CDM-mapper, som beskrevet på 
 * Du skal være tildelt læse- og kørselstilladelser til alle filer og mapper i CDM-mappen for at føje dem til Power BI.
 
 I følgende afsnit beskrives, hvordan du opretter et dataflow fra en CDM-mappe.
-
-> [!NOTE]
-> Dataflowfunktionaliteten er tilgængelig som en prøveversion og kan ændres og opdateres, før den bliver offentligt tilgængelig.
 
 ## <a name="create-a-dataflow-from-a-cdm-folder"></a>Opret et dataflow fra en CDM-mappe
 
@@ -99,9 +96,9 @@ Du kan finde flere oplysninger om dataflow, CDM og Azure Data Lake Storage Gen2 
 Du kan finde generelle oplysninger om dataflow i disse artikler:
 
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Brug beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
-* [Brug dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
+* [Ved hjælp af den beregnede enheder på Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Ved hjælp af dataflows med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI dataflows](service-dataflows-developer-resources.md)
 
 Du kan finde flere oplysninger om Azure-lager i disse artikler:
 * [Sikkerhedsvejledning til Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-security-guide)

@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: 4efb4e2c02671671d42d9f66c1f9f57ee028c9a1
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: e7afdddc6d87b9494fa9264bdd253a3f93de6192
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174669"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61383231"
 ---
 # <a name="tutorial-developing-a-power-bi-custom-visual"></a>Selvstudium: Udvikling af en brugerdefineret visualisering i Power BI
 
-Vi gør det nemt for udviklere at tilføje brugerdefinerede visuals i Power BI, som kan bruges i dashboards og rapporter. For at hjælpe dig i gang har vi udgivet koden til alle vores visualiseringer på GitHub.
+Vi gør det nemt for udviklere at tilføje brugerdefinerede visuals i Power BI, som kan bruges i dashboards og rapporter. For at hjælpe dig med at komme i gang, har vi udgivet koden til alle vores visualiseringer på GitHub.
 
 Ud over visualiseringssystemet stiller vi vores testpakke og -værktøjer til rådighed, så vores community kan udarbejde visuals i høj kvalitet til Power BI.
 
@@ -79,7 +79,7 @@ Nu skal du installere pakken **pbiviz**.
     pbiviz --create-cert
     ```
 
-  Den returnerer et resultat, der opretter et *adgangsudtryk*. I dette tilfælde er *adgangsudtrykket* **_15105661266553327_**.
+  Den returnerer et resultat, der opretter et *adgangsudtryk*. I dette tilfælde er *adgangsudtrykket* **_15105661266553327_** .
 
   ![Certifikat oprettet via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
 
@@ -95,7 +95,7 @@ Nu skal du installere pakken **pbiviz**.
 
 4. I trinnet **Fil, der skal importeres** skal du vælge *Næste*.
 
-5. I trinnet **Beskyttelse af privat nøgle** skal du indsætte det adgangsudtryk, du modtog, da du oprettede certifikatet, i feltet Adgangskode.  Igen i dette tilfælde er det **_15105661266553327_**.
+5. I trinnet **Beskyttelse af privat nøgle** skal du indsætte det adgangsudtryk, du modtog, da du oprettede certifikatet, i feltet Adgangskode.  Igen i dette tilfælde er det **_15105661266553327_** .
 
       ![Kopiér adgangsudtryk](media/custom-visual-develop-tutorial/cert-install-wizard-show-passphrase.png)
 
@@ -559,14 +559,14 @@ Rediger filen **capabilities.json** for at definere datarollen og tilknytningern
 
     Denne sætning tildeler *dataView* til en variabel for at give nem adgang og erklærer, at variablen skal referere til objektet *dataView*.
 
-2. I **opdaterings**metoden skal du erstatte .text("Value") ** med følgende.
+2. I den **opdatere** metode, erstatter **.text("Value")** med følgende.
 
     ```typescript
     .text(dataView.single.value as string)
     ```
     ![Erstat textValue](media/custom-visual-develop-tutorial/text-value-replace.png)
 
-3. I **opdaterings**metoden skal du erstatte **.text("Label")** med følgende.
+3. I den **opdatere** metode, erstatter **.text("Label")** med følgende.
 
     ```typescript
     .text(dataView.metadata.columns[0].displayName)

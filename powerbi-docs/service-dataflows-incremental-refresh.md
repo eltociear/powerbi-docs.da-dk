@@ -1,23 +1,23 @@
 ---
 title: Brug af trinvis opdatering med Power BI-dataflow
 description: Få mere at vide om, hvordan du konfigurerer trinvis opdatering for dataflow
-author: davidiseminger
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
-ms.author: davidi
+ms.date: 04/02/2019
+ms.author: mblythe
 LocalizationGroup: Data from files
-ms.openlocfilehash: 224fc07fccc2b12b0a28c016f427a4d5f4613290
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 1bc9e0d5de909c5d0859b6d31185cf0cb27bda23
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293694"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136494"
 ---
-# <a name="using-incremental-refresh-with-power-bi-dataflows-preview"></a>Brug af trinvis opdatering med Power BI-dataflow (prøveversion)
+# <a name="using-incremental-refresh-with-power-bi-dataflows"></a>Brug af trinvis opdatering med Power BI-dataflow
 
 Med dataflow kan du overføre store mængder data til Power BI for at oprette betagende rapporter og analyser. I nogle tilfælde er det dog ikke praktisk at opdatere et helt sæt kildedata ved hver opdatering. Et godt alternativ til det er **trinvis opdatering**, som giver følgende fordele for dataflow:
 
@@ -27,13 +27,13 @@ Med dataflow kan du overføre store mængder data til Power BI for at oprette be
 
 ![Trinvis opdatering for dataflow](media/service-dataflows-incremental-refresh/dataflows-incremental-refresh_03.png)
 
-Brug af trinvis opdatering for Power BI-dataflow kræver, at det arbejdsområde, hvor dataflowet findes, er i en [Premium-kapacitet](service-premium.md), hvor det kan køres, og at den datakilde, der overføres til dataflowet, har et felt af typen *datetime*, som trinvis opdatering kan filtrere efter. 
+Brug af trinvis opdatering for Power BI-dataflow kræver, at det arbejdsområde, hvor dataflowet findes, er i en [Premium-kapacitet](service-premium-what-is.md), hvor det kan køres, og at den datakilde, der overføres til dataflowet, har et felt af typen *datetime*, som trinvis opdatering kan filtrere efter. 
 
 ## <a name="configuring-incremental-refresh-for-dataflows"></a>Konfiguration af trinvis opdatering for dataflow
 
 Et dataflow kan indeholde mange objekter. Trinvis opdatering kan konfigureres på objektniveau, så ét dataflow kan indeholde både fuldt opdaterede objekter og trinvist opdaterede objekter.
 
-Du konfigurerer et trinvist opdateret objekt ved at starte med at konfigurere objektet, som du ville gøre med et hvilket som helst andet objekt. Du kan få mere at vide om konfiguration af dataflow i [Selvbetjent dataforberedelse i Power BI (prøveversion)](service-dataflows-overview.md).
+Du konfigurerer et trinvist opdateret objekt ved at starte med at konfigurere objektet, som du ville gøre med et hvilket som helst andet objekt. Hvis du vil vide mere om dataflowet, konfigurere, se [selvbetjent eksamensforberedende i Power BI](service-dataflows-overview.md).
 
 Når dataflowet er oprettet og gemt, skal du vælge ikonet for **trinvis opdatering** i objektvisningen, som vist på følgende billede:
 
@@ -156,8 +156,8 @@ I denne artikel beskrives trinvis opdatering for dataflow. Her er nogle flere ar
 
 * [Selvbetjent dataforberedelse med dataflow](service-dataflows-overview.md)
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Brug af dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
+* [Ved hjælp af dataflows med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI dataflows](service-dataflows-developer-resources.md)
 
 Du kan finde flere oplysninger om Power-forespørgsel og planlagt opdatering i disse artikler:
 * [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)

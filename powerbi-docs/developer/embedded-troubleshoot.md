@@ -1,20 +1,20 @@
 ---
 title: Fejlfinding af det integrerede program
 description: Denne artikel beskriver nogle almindelige problemer, som kan opstå under integrationen af indhold fra Power BI.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: ebe536aad292fbd780d937cd4b35812afaedbdda
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 43cb59853e884b1e3e6a49c328aa3385e88b62fc
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174815"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770483"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Foretag fejlfinding af dit integrerede program
 
@@ -109,7 +109,7 @@ Hvis du vil løse dette problem, skal du fjerne "oauth2/authorize/" fra slutning
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Godkendelsen mislykkedes med AADSTS70002 eller AADSTS50053
 
-**_(AADSTS70002: Der opstod en fejl under validering af legitimationsoplysningerne. AADSTS50053: Du har forsøgt at logge på for mange gange med et forkert bruger-id eller en forkert adgangskode)_**
+** _(AADSTS70002: Der opstod en fejl under validering af legitimationsoplysningerne. AADSTS50053: Du har forsøgt at logge på for mange gange med et forkert bruger-id eller en forkert adgangskode)_ **
 
 Hvis du bruger Power BI Embedded og Azure AD Direkte-godkendelse, og du modtager meddelelser, når du logger på, f.eks. ***fejl: uautoriseret_klient, fejlbeskrivelse:AADSTS70002: Der opstod en fejl under validering af legitimationsoplysningerne. AADSTS50053: Du har forsøgt at logge på for mange gange med et forkert bruger-id eller en forkert adgangskode***, fordi direkte godkendelse som standard ikke har været i brug siden d. 14. juni 2018.
 
@@ -161,7 +161,7 @@ Prøv nedenstående trin for at bekræfte, hvilken en det er.
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: Tildelingen kræver administratorrettigheder
 
-**_Symptomer:_**<br>
+**_Symptomer:_ **<br>
 Når en bruger, der ikke er administrator, forsøger at logge på et program første gang og giver samtykke, får vedkommende vist en af følgende fejl:
 
 * ConsentTest skal have tilladelse til at få adgang til ressourcer i din organisation, som kun en administrator kan tildele. Bed en administrator om at give tilladelse til dette program, før du kan bruge det.
@@ -171,10 +171,10 @@ Når en bruger, der ikke er administrator, forsøger at logge på et program fø
 
 En administratorbruger kan logge på og give samtykke.
 
-**_Hovedårsag:_**<br>
+**_Hovedårsag:_ **<br>
 Brugersamtykke er deaktiveret for lejeren.
 
-**_Der er flere mulige fejlrettelser:_**
+**_Der er flere mulige fejlrettelser:_ **
 
 *Aktivere brugersamtykke for hele lejeren (alle brugere, alle programmer)*
 
@@ -184,6 +184,10 @@ Brugersamtykke er deaktiveret for lejeren.
     ![Fejlrettelse af samtykketest](media/embedded-troubleshoot/consent-test-02.png)
 
 *Tildel tilladelser* til programmet af en administrator – enten til hele lejeren eller til en bestemt bruger.
+
+### <a name="cs1061-error"></a>CS1061 fejl
+
+Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) Hvis du oplever en "'AuthenticationContext' indeholder ikke en definition for 'AcquireToken' og ingen tilgængelig 'AcquireToken' accepterer en første argument af typen ' AuthenticationContext' blev fundet (mangler en ved hjælp af direktiv eller en reference til en assembly?) "fejl.
 
 ## <a name="data-sources"></a>Datakilder
 

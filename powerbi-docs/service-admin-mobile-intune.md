@@ -11,10 +11,10 @@ ms.date: 11/01/2018
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: d28a27d69d6e8799f08ddaa05e734ded62150c8f
-ms.sourcegitcommit: a284c38d42dd8042e468e10c0157f30918c2bdd1
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/16/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65710925"
 ---
 # <a name="configure-mobile-apps-with-microsoft-intune"></a>Konfiguration af mobilapps med Microsoft Intune
@@ -50,11 +50,11 @@ For at få URL-adressen for appen til iOS skal vi hente den fra iTunes.
 
     ![URL-adresse til iTunes](media/service-admin-mobile-intune/itunes-url.png)
 
-Det bør ligne følgende: *https://itunes.apple.com/us/app/microsoft-power-bi/id929738808?mt=8*.
+Det bør ligne følgende: *https://itunes.apple.com/us/app/microsoft-power-bi/id929738808?mt=8* .
 
 ### <a name="get-android-url"></a>Hent URL-adressen til Android
 
-Du kan hente URL-adressen til Google Play via [Power BI-mobilsiden](https://powerbi.microsoft.com/mobile/). Vælg **Download fra Google Play** for at komme til appsiden. Du kan kopiere URL-adressen fra browserens adresselinje. Det bør ligne følgende: *https://play.google.com/store/apps/details?id=com.microsoft.powerbim*.
+Du kan hente URL-adressen til Google Play via [Power BI-mobilsiden](https://powerbi.microsoft.com/mobile/). Vælg **Download fra Google Play** for at komme til appsiden. Du kan kopiere URL-adressen fra browserens adresselinje. Det bør ligne følgende: *https://play.google.com/store/apps/details?id=com.microsoft.powerbim* .
 
 ## <a name="step-2-create-a-mobile-application-management-policy"></a>Trin 2: Opret en politik for administration af mobilapps
 
@@ -66,7 +66,7 @@ Du kan oprette programmet eller politikken først. Det har ingen betydning, i hv
 
     ![Intune-portalen](media/service-admin-mobile-intune/intune-policy.png)
 
-1. Vælg **Tilføj...**.
+1. Vælg **Tilføj...** .
 
 1. Under **Software** kan du vælge administration af mobilapps til enten Android eller iOS. For at komme hurtigt i gang kan du vælge **Opret en politik med de anbefalede indstillinger**, eller du kan oprette en brugerdefineret politik.
 
@@ -122,7 +122,7 @@ Når du har tilføjet programmet, skal du installere det, så det bliver tilgæn
 
 ### <a name="deploy-for-ios"></a>Udrul på iOS
 
-1. Vælg den app, du har oprettet, på skærmbilledet med apps. Vælg derefter linket **Administrer installation...**.
+1. Vælg den app, du har oprettet, på skærmbilledet med apps. Vælg derefter linket **Administrer installation...** .
 
     ![Administrer udrulning](media/service-admin-mobile-intune/intune-deploy-ios1.png)
 
@@ -144,7 +144,7 @@ Når du har installeret appen, skal der stå **Ja** ud for installeret på siden
 
 ### <a name="deploy-for-android"></a>Udrul på Android
 
-1. Vælg den app, du har oprettet, på skærmbilledet med apps. Vælg derefter linket **Administrer installation...**.
+1. Vælg den app, du har oprettet, på skærmbilledet med apps. Vælg derefter linket **Administrer installation...** .
 
     ![Administrer udrulning](media/service-admin-mobile-intune/intune-deploy-android1.png)
 1. I skærmbilledet **Vælg grupper** kan du vælge, hvilke grupper du vil installere denne app til. Vælg **Næste**.

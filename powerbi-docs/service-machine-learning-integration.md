@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/12/2019
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 9a7afafaa14ed890e10e77507aafb637755cd87f
-ms.sourcegitcommit: 06ae54ed221979939699c67d63aeccba8b9dfcda
-ms.translationtype: HT
+ms.openlocfilehash: 6c09392566805f2857c50784f16c0e3f9d4b5697
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57965488"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61232395"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi-preview"></a>Azure Machine Learning-integration i Power BI (prøveversion)
 
@@ -51,7 +51,7 @@ Trinnene i denne artikel beskriver, hvordan du tildeler en Power BI-bruger adgan
 
     ![Vælg dit abonnement](media/service-machine-learning-integration/machine-learning-integration_02.png)
 
-4. Vælg **Adgangskontrol (IAM)**, og vælg derefter knappen **Tilføj**.
+4. Vælg **Adgangskontrol (IAM)** , og vælg derefter knappen **Tilføj**.
 
     ![Adgangskontrol IAM](media/service-machine-learning-integration/machine-learning-integration_03.png)
 
@@ -106,9 +106,9 @@ Denne artiken omfatter en oversigt over integration af Machine Learning i Power 
 
 Du kan få flere oplysninger om dataflow i disse artikler:
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Brug beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
-* [Brug dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
+* [Ved hjælp af den beregnede enheder på Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Ved hjælp af dataflows med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI dataflows](service-dataflows-developer-resources.md)
 * [Integration af dataflow og Azure Data Lake (prøveversion)](service-dataflows-azure-data-lake-integration.md)
 
 

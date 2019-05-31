@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/13/2018
+ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: a593a918c59452c922f6061189ad6c2885478aad
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 02fbe26fc4d0c8be0439ca656151ef7712d201b6
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174861"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61398992"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Understøttede sprog og lande/områder til Power BI
 
-Denne artikel indeholder en liste over understøttede sprog og lande/områder til Power BI-tjenesten, Power BI Desktop og Power BI-dokumentationen.
+I denne artikel indeholder en liste over understøttede sprog og lande/områder til Power BI-tjenesten, Power BI Desktop og Power BI-dokumentationen.
 
 ## <a name="countries-and-regions-where-power-bi-is-available"></a>Lande og områder, hvor Power BI er tilgængelig
 Se [listen over international tilgængelighed](https://products.office.com/business/international-availability) for at få vist en liste over lande og områder, hvor Power BI er tilgængelig. 
@@ -73,11 +73,11 @@ Power BI-tjenesten (i browseren) er tilgængelig på følgende 44 sprog:
 * Vietnamesisk – Tiếng Việt
 
 ### <a name="whats-translated"></a>Hvad er oversat
-Menuer, knapper, meddelelser og andre elementer i oplevelsen oversættes til dit sprog og gør det lettere at navigere i og interagere med Power BI.
+Powerbi oversætter menuer, knapper, meddelelser og andre elementer i oplevelsen på dit sprog.
 
 I øjeblikket er nogle få funktioner kun tilgængelige på engelsk:
 
-* Dashboards og rapporter, som Power BI opretter for dig, når du opretter forbindelse til tjenester som f.eks. Microsoft Dynamics CRM, Google Analytics, Salesforce osv. (Du kan stadig oprette dine egen dashboards og rapporter på dit eget sprog).
+* Dashboards og rapporter, opretter Power BI, når du opretter forbindelse til tjenester som f.eks Microsoft Dynamics CRM, Google Analytics og Salesforce. Du kan stadig oprette dine egne dashboards og rapporter i dit eget sprog.
 * Udforsk dine data med spørgsmål og svar.
 
 Hold dig informeret, mens vi arbejder på at gøre yderligere funktioner tilgængelige på sprog. 
@@ -142,7 +142,7 @@ Det sprog, du vælger til Power BI Desktop, påvirker visningsformatet for tal o
 Hvis du vil ændre sproget i Power BI Desktop, skal du gå tilbage til downloadsiden og downloade den på et andet sprog.
 
 ### <a name="choose-the-locale-for-importing-data-into-power-bi-desktop"></a>Vælg landestandarden til import af data til Power BI Desktop
-Uanset om du downloader Power BI Desktop eller installerer den fra Windows Store, kan du vælge en landestandard for en bestemt rapport, der skal være en anden end landestandarden i din version af Power BI Desktop. Det ændrer den måde, data fortolkes på, når de importeres fra datakilden, for eksempel om "3/4/2017" fortolkes som 3. april eller 4. marts. 
+Uanset om du downloader Power BI Desktop eller installerer den fra Windows Store, kan du vælge en landestandard for en bestemt rapport, der skal være en anden end landestandarden i din version af Power BI Desktop. Ændringerne landestandard datas fortolkes på, når de er importeret fra dine data til datakilden, for eksempel om "3/4/2017" fortolkes som 3. April eller 4. marts. 
 
 1. Gå til **Filer** > **Indstillinger** > **Indstillinger** i Power BI Desktop.
 2. Vælg **Internationale indstillinger** under **Aktuel fil**.
@@ -193,5 +193,5 @@ Hjælp er lokaliseret på disse 10 sprog:
 ## <a name="next-steps"></a>Næste trin
 * Bruger du en af Power BI-mobilapperne? Se [Understøttede sprog i Power BI-mobilapperne](consumer/mobile/mobile-apps-supported-languages.md) for at få flere oplysninger.
 * Har du spørgsmål? Prøv at spørge [Power BI-community'et](http://community.powerbi.com/).
-* Har du stadig problemer? Besøg [supportsiden for Power BI](https://powerbi.microsoft.com/support/).
+* Har du stadig problemer? Gå til [supportsiden for Power BI](https://powerbi.microsoft.com/support/).
 

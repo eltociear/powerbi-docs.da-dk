@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/13/2019
+ms.date: 05/15/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: da269e3bb025e8d53ee3bb7707f3bb78d592e011
-ms.sourcegitcommit: d010b10bc14097a1948daeffbc91b864bd91f7c8
-ms.translationtype: HT
+ms.openlocfilehash: f045e9076cdd8552d6e35e72b9c5f6e2319add68
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56225908"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65853426"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 Med Power BI Desktop kan du oprette forbindelse til data fra mange forskellige kilder. Der findes en komplet liste over tilgængelige datakilder nederst på siden.
@@ -51,7 +51,7 @@ Kategorien **Fil** indeholder følgende dataforbindelser:
 * XML
 * JSON
 * Mappe
-* PDF (beta)
+* PDF
 * SharePoint-mappe
 
 På følgende billede vises vinduet **Hent data** for **Fil**.
@@ -79,14 +79,16 @@ Kategorien **Database** indeholder følgende dataforbindelser:
 * Google BigQuery
 * Vertica
 * Snowflake
-* Essbase (beta)
-* Dremio
-* Exasol
-* MarkLogic (Beta)
+* Essbase
 * AtScale-kuber (beta)
 * BI Connector
+* Dremio
+* Exasol
+* Indexima (Beta)
+* InterSystems IRIS (Beta)
 * Jethro (beta)
 * Kyligence Enterprise (beta)
+* MarkLogic (Beta)
 
 > [!NOTE]
 > Nogle databaseforbindelser kræver, at du aktiverer dem ved at vælge **Filer > Indstillinger > Indstillinger** og derefter vælger **Funktioner til eksempelvisning** og aktiverer forbindelsen. Hvis du ikke kan se nogle af de forbindelser, der er nævnt ovenfor, og du vil bruge dem, skal du kontrollere dine indstillinger for **Funktioner til eksempelvisning**. Bemærk også, at alle datakilder, der er markeret som *Beta* eller *Preview*, har begrænset support og funktionalitet og skal ikke bruges i produktionsmiljøer.
@@ -98,7 +100,7 @@ På følgende billede vises vinduet **Hent data** for **Database**.
 Kategorien **Power BI** indeholder følgende dataforbindelser:
 
 * Power BI-datasæt
-* Power BI-dataflow (beta)
+* Power BI-dataflow
 
 På følgende billede vises vinduet **Hent data** for **Power BI**.
 
@@ -112,11 +114,12 @@ Kategorien **Azure** indeholder følgende dataforbindelser:
 * Azure Blob Storage
 * Azure Table Storage
 * Azure Cosmos DB (beta)
-* Azure Data Lake Storage
+* Azure Data Lake Storage Gen1
 * Azure HDInsight (HDFS)
 * Azure HDInsight Spark
 * Interaktiv HDInsight-forespørgsel
-* Azure Data Explorer (beta)
+* Azure Data Explorer (Kusto)
+* Azure omkostningsstyring (Beta)
 
 På følgende billede vises vinduet **Hent data** for **Azure**.
 
@@ -139,7 +142,7 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Google Analytics
 * Adobe Analytics
 * appFigures (beta)
-* Data.World – Get Dataset (beta)
+* Data.World - Get Dataset (Beta)
 * Facebook
 * GitHub (beta)
 * MailChimp (beta)
@@ -157,9 +160,10 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * tyGraph (beta)
 * Webtrends (beta)
 * Zendesk (beta)
-* TeamDesk (beta)
 * Emigo datakilde (beta)
+* IndustrialAppStore (Beta)
 * Microsoft Graph Security (beta)
+* TeamDesk (beta)
 
 På følgende billede vises vinduet **Hent data** for **Onlinetjenester**.
 
@@ -178,12 +182,16 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Python-script
 * ODBC
 * OLE DB
-* Workforce Dimensions (beta)
+* BI360 - budgettering og finansiel rapportering (Beta)
 * Denado
-* Paxata (beta)
-* SurveyMonkey (beta)
+* Oplysninger om gitter (Beta)
+* Paxatas 
 * QubolePresto (beta)
 * Hurtig Base (beta)
+* Roamler (Beta)
+* SurveyMonkey (beta)
+* Tenforce (Beta)
+* Workforce Dimensions (beta)
 * Tom forespørgsel
 
 På følgende billede vises vinduet **Hent data** for **Andet**.

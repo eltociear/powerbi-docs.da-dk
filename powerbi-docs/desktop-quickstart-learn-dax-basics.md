@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 64957fa71249c551b4f69b619a12baf03fae6b06
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513705"
 ---
 # <a name="dax-basics-in-power-bi-desktop"></a>Grundlæggende DAX i Power BI Desktop
@@ -47,9 +47,9 @@ Formlen inkluderer følgende syntakselementer:
 
 **A.** Målingsnavnet **Samlet salg**.
 
-**B.** Operatoren lighedstegn (**=**) angiver starten af formlen. Når den er beregnet, returneres et resultat.
+**B.** Operatoren lighedstegn ( **=** ) angiver starten af formlen. Når den er beregnet, returneres et resultat.
 
-**C.** DAX-funktionen **SUM** adderer alle tallene i kolonnen **Sales[SalesAmount]**. Du får mere at vide om funktioner senere.
+**C.** DAX-funktionen **SUM** adderer alle tallene i kolonnen **Sales[SalesAmount]** . Du får mere at vide om funktioner senere.
 
 **D.** Parenteser **()** omslutter et udtryk, der indeholder et eller flere argumenter. Alle funktioner kræver mindst ét argument. Et argument overfører en værdi til en funktion.
 
@@ -91,19 +91,19 @@ For at udføre denne opgave skal du åbne filen Contoso Sales Sample Power BI De
 
    Du skal bruge CALCULATE-funktionen til at filtrere de beløb, som vi vil optælle efter et argument, som vi sender til funktionen CALCULATE. Dette er, hvad der refereres til som indlejrede funktioner. Funktionen CALCULATE har mindst to argumenter. Det første er udtrykket, der skal evalueres, og det andet er et filter.
    
-4. Efter venstreparentesen **(** for funktionen **CALCULATE** skal du skrive **SUM** efterfulgt af endnu en venstreparentes **(**. Nu skal vi sende et argument til funktionen SUM.
+4. Efter venstreparentesen **(** for funktionen **CALCULATE** skal du skrive **SUM** efterfulgt af endnu en venstreparentes **(** . Nu skal vi sende et argument til funktionen SUM.
 
-5. Begynd at skrive **Sal**, og vælg derefter **Sales [SalesAmount]** efterfulgt af en højreparentes **)**. Dette er det første udtryksargument til vores CALCULATE-funktion.
+5. Begynd at skrive **Sal**, og vælg derefter **Sales [SalesAmount]** efterfulgt af en højreparentes **)** . Dette er det første udtryksargument til vores CALCULATE-funktion.
     
-6. Skriv et komma (**,**) efterfulgt af et mellemrum for at angive det første filter, og skriv derefter **PREVIOUSQUARTER**. Dette er vores filter.
+6. Skriv et komma ( **,** ) efterfulgt af et mellemrum for at angive det første filter, og skriv derefter **PREVIOUSQUARTER**. Dette er vores filter.
     
    Du skal bruge tidsintelligensfunktionen PREVIOUSQUARTER til at filtrere SUM-resultater efter det forrige kvartal.
     
-7. Efter venstreparentesen **(** for funktionen PREVIOUSQUARTER skal du skrive **Calendar[DateKey]**.
+7. Efter venstreparentesen **(** for funktionen PREVIOUSQUARTER skal du skrive **Calendar[DateKey]** .
     
    Funktionen PREVIOUSQUARTER har ét argument, som er en kolonne, der indeholder et sammenhængende datoområde. I vores tilfælde er det kolonnen DateKey i tabellen Calendar.
     
-8. Sørg for, at begge argumenter, der overføres til funktionen PREVIOUSQUARTER og funktionen CALCULATE, lukkes, ved at skrive to højreparenteser **))**.
+8. Sørg for, at begge argumenter, der overføres til funktionen PREVIOUSQUARTER og funktionen CALCULATE, lukkes, ved at skrive to højreparenteser **))** .
     
    Din formel skal se sådan ud:
     
@@ -176,7 +176,7 @@ Formlen inkluderer følgende syntakselementer:
 
 **A.** Målingsnavnet **Butikssalg**.
 
-**B.** Operatoren lighedstegn (**=**) angiver starten af formlen.
+**B.** Operatoren lighedstegn ( **=** ) angiver starten af formlen.
 
 **C.** Funktionen **CALCULATE** evaluerer et udtryk som et argument i en kontekst, der er ændret af de angivne filtre.
 
@@ -184,9 +184,9 @@ Formlen inkluderer følgende syntakselementer:
 
 **E.** En måling **[Samlet salg]** i samme tabel som et udtryk. Målingen Samlet salg har formlen: =SUM(Sales[SalesAmount]).
 
-**F.** Et komma (**,**) adskiller det første udtryksargument fra filterargumentet.
+**F.** Et komma ( **,** ) adskiller det første udtryksargument fra filterargumentet.
 
-**G.** Den fuldt kvalificerede kolonne **Channel[ChannelName]**. Dette er vores rækkekontekst. Hver række i denne kolonne angiver en kanal: Butik, Online osv.
+**G.** Den fuldt kvalificerede kolonne **Channel[ChannelName]** . Dette er vores rækkekontekst. Hver række i denne kolonne angiver en kanal: Butik, Online osv.
 
 **H.** Den særskilte værdi **Butik** som et filter. Dette er vores filterkontekst.
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d6424f63d992eaa7c8a4a8a5f76765b6aeb6104d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263407"
+---
 Når du arbejder med et dashboard, en rapport eller et datasæt i Power BI-tjenesten, kan Power BI søge efter hurtig indsigt i dataene. I Power BI skal du fra sektionen **Datasæt** i venstre rude vælge *ellipserne* (de tre prikker) ud for det datasæt, du er interesseret i. Der vises en menu med indstillinger, og yderst til højre får du vist en indstilling, der hedder **Hurtig indsigt**.
 
 ![](media/4-1a-quick-insights/4-1a_1.png)

@@ -7,27 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2017
+ms.date: 04/30/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 849c377a140cd0dd31f55760987336fc3711bc79
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 6fb02e6cbaca30859aa00f58ae07c9a3fd7f6fe0
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285846"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65101359"
 ---
 # <a name="error-we-couldnt-find-any-data-in-your-excel-workbook"></a>Fejl: Der blev ikke fundet nogen data i din Excel-projektmappe
 
->[!NOTE]
+>[!NOTE]  
 >Denne artikel gælder for Excel 2007 og nyere.
 
 Når du importerer en Excel-projektmappe til Power BI, kan du se følgende fejl:
 
-*Fejl: Der blev ikke fundet nogen data i din Excel-projektmappe. Dine data er muligvis ikke formateret korrekt. Du skal redigere projektmappen i Excel og importere den igen.*
+*Fejl: Vi kunne ikke finde nogen data, der er formateret som en tabel. Hvis du vil importere fra Excel til Power BI-tjenesten, skal du formatere dataene som en tabel. Vælg alle de data, du ønsker i tabellen, og tryk på Ctrl + T.*
 
-![Data blev ikke fundet i projektmappen](media/service-admin-troubleshoot-excel-workbook-data/pbi_wecouldntfindanydata.png)
+![Data blev ikke fundet i projektmappen](media/service-admin-troubleshoot-excel-workbook-data/power-bi-we-couldnt-find-any-data.png)
 
 ## <a name="quick-solution"></a>Hurtig løsning
 1. Rediger din projektmappe i Excel.
@@ -47,28 +47,28 @@ Når du importerer en Excel-projektmappe, leder Power BI efter disse tabeller og
     >[!NOTE]
     >Billederne her er til Excel 2013. Hvis du bruger en anden version, kan det se lidt anderledes ud, men trinnene er de samme.
     
-    ![Åbn projektmappe](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlwksht1.png)
+    ![Åbn projektmappe](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-worksheet-1.png)
 2. Markér det celleområde, der indeholder dataene. Den første række skal indeholde kolonneoverskrifterne (kolonnenavnene):
    
-    ![Vælg celleområde](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlwksht2.png)
+    ![Vælg celleområde](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-worksheet-2.png)
 3. Klik på **Tabel** på båndet under fanen **INDSÆT**. (Eller som en genvej kan du trykke på **Ctrl + T**).
    
-    ![Indsæt tabel](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlwksht3.png)
+    ![Indsæt tabel](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-worksheet-3.png)
 4. Du kan se følgende dialogboks. Sørg for, at **Tabellen indeholder overskrifter** er markeret, og vælg **OK**:
    
-    ![Opret tabel](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xlcreatetbl.png)
+    ![Opret tabel](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-create-table.png)
 5. Nu er dataene formateret som en tabel:
    
-    ![Data, der er formateret som en tabel](media/service-admin-troubleshoot-excel-workbook-data/pbi_trb_xltbl.png)
+    ![Data, der er formateret som en tabel](media/service-admin-troubleshoot-excel-workbook-data/power-bi-troubleshoot-excel-table.png)
 6. Gem projektmappen.
 7. Vend tilbage til Power BI. Vælg Hent data nederst i venstre navigationsrude.
    
-    ![Hent data](media/service-admin-troubleshoot-excel-workbook-data/pbi_getdata.png)
+    ![Hent data](media/service-admin-troubleshoot-excel-workbook-data/power-bi-get-data.png)
 8. Vælg **Hent** i feltet **Filer**.
    
-    ![Hent filer](media/service-admin-troubleshoot-excel-workbook-data/pbi_getfiles.png)
+    ![Hent filer](media/service-admin-troubleshoot-excel-workbook-data/power-bi-get-files.png)
 9. Importér Excel-projektmappen igen. Denne gang bør importen finde tabellen.
    
     Hvis importen stadig mislykkes, kan du give os besked ved at klikke på **Community ** i menuen Hjælp:
    
-    ![Communitylink](media/service-admin-troubleshoot-excel-workbook-data/pbi_questionmenucommunity.png)
+    ![Communitylink](media/service-admin-troubleshoot-excel-workbook-data/power-bi-question-menu-community.png)

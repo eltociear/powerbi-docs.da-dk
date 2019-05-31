@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: f945c46d96bea4e0326c99f7fcb881f495ba560f
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513701"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Selvstudium: Facebook-analyse ved hjælp af Power BI Desktop
@@ -23,9 +23,9 @@ I dette selvstudium lærer du, hvordan du importerer data fra Facebook og bruger
 
 ## <a name="connect-to-a-facebook-page"></a>Opret forbindelse til en Facebook-side
 
-I dette selvstudium bruges der data fra [Microsoft Power BI's Facebook-side](https://www.facebook.com/microsoftbi) (*https://www.facebook.com/microsoftbi*). Du behøver ikke nogen særlige legitimationsoplysninger for at oprette forbindelse og importere dataene fra denne side bortset fra en personlig Facebook-konto.
+I dette selvstudium bruges der data fra [Microsoft Power BI's Facebook-side](https://www.facebook.com/microsoftbi) ( *https://www.facebook.com/microsoftbi* ). Du behøver ikke nogen særlige legitimationsoplysninger for at oprette forbindelse og importere dataene fra denne side bortset fra en personlig Facebook-konto.
 
-1. Åbn Power BI Desktop, og vælg **Hent data** i dialogboksen **Introduktion**. Du kan også vælge **Hent data** på fanen **Hjem** på båndet og derefter vælge **Mere...**.
+1. Åbn Power BI Desktop, og vælg **Hent data** i dialogboksen **Introduktion**. Du kan også vælge **Hent data** på fanen **Hjem** på båndet og derefter vælge **Mere...** .
    
 2. I dialogboksen **Hent data** skal du vælge **Facebook** i gruppen **Onlinetjenester** og derefter vælge **Opret forbindelse**.
    
@@ -147,7 +147,7 @@ Nu, hvor du har importeret dataene fra Facebook-siden, kan du hurtigt og nemt f�
    
    ![Sortér efter antallet af kommentarer](media/desktop-tutorial-facebook-analytics/barchart2.png)
    
-5. Bemærk, at de fleste kommentarer er knyttet til **tomme** meddelelser. Disse opslag kan have været historier, links, videoer eller andet indhold, der ikke er tekst. Hvis du vil bortfiltrere tomme rækker, skal du vælge **message (alle)** under **Filtre** nederst i ruden Visualiseringer, vælge **Markér alle** og derefter vælge **Tomme** for at fjerne markeringen af den. Filterindtastningen ændres til **message er ikke (Tomme)**, så forsvinder rækken Tomme fra diagramvisualiseringen. 
+5. Bemærk, at de fleste kommentarer er knyttet til **tomme** meddelelser. Disse opslag kan have været historier, links, videoer eller andet indhold, der ikke er tekst. Hvis du vil bortfiltrere tomme rækker, skal du vælge **message (alle)** under **Filtre** nederst i ruden Visualiseringer, vælge **Markér alle** og derefter vælge **Tomme** for at fjerne markeringen af den. Filterindtastningen ændres til **message er ikke (Tomme)** , så forsvinder rækken Tomme fra diagramvisualiseringen. 
    
    ![Bortfiltrer tomme](media/desktop-tutorial-facebook-analytics/barchart3.png)
    
@@ -220,7 +220,7 @@ Du beslutter dig for at give diagrammet en mere beskrivende og spændende titel.
 1. Med diagrammet markeret skal du vælge ikonet **Formatér** og derefter pilen i rullemenuen for at udvide **Titel**.
 2. Ret **Titelteksten** til **Kommentar pr. opslag**. 
 3. Vælg pilen i rullemenuen ved siden af **Skrifttypefarve**, og vælg derefter en grøn farve for at matche de grønne søjler i visualiseringerne.
-4. Øg **Tekststørrelsen** til **10**, og ret **Skrifttypefamilien** til **Segoe (Bold)**.
+4. Øg **Tekststørrelsen** til **10**, og ret **Skrifttypefamilien** til **Segoe (Bold)** .
 
 ![Formatér diagramtitel](media/desktop-tutorial-facebook-analytics/formatting1.png)
 

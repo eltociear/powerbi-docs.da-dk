@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: c074d6aa4fc7bdc530aa52f125f7f3d898b402c0
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514510"
 ---
 # <a name="create-tooltips-based-on-report-pages-in-power-bi-desktop"></a>Opret værktøjstip baseret på rapportsider i Power BI Desktop
@@ -27,7 +27,7 @@ Du kan oprette så mange værktøjstipsider, du vil. Hver værktøjstipside kan 
 Du kan gøre mange forskellige interessante ting med værktøjstip i rapporter. Herunder kan du se, hvordan du opretter værktøjstip, og hvad du skal gøre for at konfigurere dem.
 
 ## <a name="create-a-report-tooltip-page"></a>Opret en værktøjstipside i en rapport
-Du starter ved at oprette en ny rapportside. Det gør du ved at klikke på knappen **+**, som du finder nederst på canvasset **Power BI Desktop** i området for fanesider. Knappen er ved siden af den sidste side i rapporten. 
+Du starter ved at oprette en ny rapportside. Det gør du ved at klikke på knappen **+** , som du finder nederst på canvasset **Power BI Desktop** i området for fanesider. Knappen er ved siden af den sidste side i rapporten. 
 
 ![Opret en ny rapportside til værktøjstippet](media/desktop-tooltips/desktop-tooltips_02.png)
 

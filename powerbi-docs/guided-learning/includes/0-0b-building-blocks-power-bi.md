@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8d9388977c088c51094cf2835c8dab9e7d019a59
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61260244"
+---
 Alle funktionerne i Power BI kan brydes ned til nogle få grundlæggende **byggesten**. Når du er bekendt med disse byggesten, kan du bygge videre på dem alle hver især og begynde at oprette detaljerede og komplekse rapporter. Selv komplekse ting er jo opbygget af grundlæggende byggesten – bygninger er bygget af træ, stål, beton og glas. Biler består af metal, stof og gummi. Bygninger og biler kan selvfølgelig også være basale og detaljerede – afhængigt af hvordan de pågældende byggesten er tilrettelagt.
 
 Lad os kigge nærmere på disse grundlæggende byggesten og granske nogen af de enkle ting, der kan bygges med dem og derefter give et kort indblik i, hvordan komplekse ting kan opbygges.

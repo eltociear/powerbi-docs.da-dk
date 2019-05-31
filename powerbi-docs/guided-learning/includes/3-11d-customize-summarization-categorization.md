@@ -1,9 +1,17 @@
+---
+ms.openlocfilehash: 1db5f34ce7a08b32b665409322836eba483be927
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396417"
+---
 Power BI har egenskaber, du kan tildele til felter i din model, som kan være med til at rapportere og visualisere og præsentere data på måder, der giver større overblik. Som eksempel kan du nogle gange have brug for at beregne et gennemsnit af en liste over tal, men Power BI opsummerer listen automatisk. Med Power BI kan du justere, hvordan disse lister over tal opsummeres.
 
 ## <a name="numeric-control-over-summarization"></a>Numerisk kontrol over opsummering
 Lad os tage et eksempel og vise, hvordan du kan kontrollere den måde, som Power BI opsummerer numeriske datafelter på.
 
-Vælg en visualisering på dit rapportcanvas, og vælg derefter et felt i ruden **Felter**. Fanen **Modellering** vises på båndet og indeholder indstillinger til formatering af data og dataegenskaber.
+Vælg et visuelt element på dit rapportcanvas, og vælg derefter et felt i ruden **Felter**. Fanen **Modellering** vises på båndet og indeholder indstillinger til formatering af data og dataegenskaber.
 
 ![](media/3-11d-customize-summarization-categorization/3-11d_1.png)
 

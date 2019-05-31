@@ -1,75 +1,75 @@
 ---
-title: Visualiseringstyper i Power BI til forbrugere
-description: Visualiseringstyper i Power BI-tjenesten
+title: Typer af visuals i Power BI til forbrugere
+description: Typer af visuals i Power BI-tjenesten
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/21/2019
+ms.date: 05/14/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: ea86970565717d5dae8db865a65765f2c8245bad
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: acee7e78a19986a0f83e13836ba6d77f7c35fdce
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662382"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65711376"
 ---
-# <a name="visualization-types-in-power-bi"></a>Visualiseringstyper i Power BI
-Du finder visualiseringer i rapporter, på dashboards, i apps og under Spørgsmål og svar. Nogle af disse visualiseringstyper medfølger Power BI som en del af pakken, og nogle er *brugerdefinerede visualiseringer*. Brugerdefinerede visualiseringer oprettes uden for Power BI og på en måde, der gør det muligt for *rapportdesignere* at føje dem til rapporter, dashboards og apps i Power BI. 
+# <a name="visual-types-in-power-bi"></a>Typer af visuals i Power BI
+Du finder visuelle elementer i rapporter, dashboards, apps og spørgsmål og svar. Nogle af disse typer af visuals er pakket med Power BI, og nogle er *brugerdefinerede visualiseringer*. Brugerdefinerede visualiseringer oprettes uden for Power BI og på en måde, der gør det muligt for *rapportdesignere* at føje dem til rapporter, dashboards og apps i Power BI. 
 
-Denne artikel indeholder en oversigt over de visualiseringer, der medfølger Power BI som en del pakken.  Disse visualiseringstyper er dem, du oftest vil støde på. 
+Denne artikel er en oversigt over de visuelle elementer, der er pakket med Power BI.  Disse er de visuelle elementer, der vil opstå oftest. 
 
 > [!NOTE]
 > Du kan få mere at vide om brugerdefinerede visualiseringer ved at søge efter dem i afsnittet **Power BI-visualiseringer** i [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). For hver enkelt visualisering finder du en beskrivelse, forfatteroplysninger og enten skærmbilleder eller en video. 
 
-## <a name="list-of-visualizations-available-in-power-bi"></a>Liste over de visualiseringer, der er tilgængelige i Power BI
-Du finder alle disse visualiseringer i apps, på dashboards, i rapporter og [angivet under Spørgsmål og svar](#qna) i Power BI. Hvis du vil vide mere om, hvordan du interagerer med visualiseringer, skal du se [Interager med visualiseringer i rapporter, på dashboards og i programmer](end-user-visualizations.md)
+## <a name="list-of-visuals-available-in-power-bi"></a>Liste over visualiseringer, der er tilgængelige i Power BI
+Alle disse visualiseringer kan ses i Power BI-apps, dashboards, rapporter og [angivet i spørgsmål og svar](end-user-q-and-a.md). For at få mere for at vide, hvordan du interagerer med visualiseringer, se [Interager med visuelle elementer i rapporter, dashboards og apps](end-user-visualizations.md)
 
 ### <a name="area-charts-basic-layered-and-stacked"></a>Områdediagrammer: Grundlæggende (lagdelte) og stablede
-![områdediagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
+![områdediagram](media/end-user-visual-type/basic-area-map-small.png)
 
 Det grundlæggende områdediagram er baseret på kurvediagrammet med området mellem aksen og kurven udfyldt. Områdediagrammer fremhæver omfanget af ændringer over tid og kan bruges til at fremhæve den samlede værdi på tværs af en udvikling. Data, som repræsenterer indtjening over tid, kan f.eks. afbildes i et områdediagram for at fremhæve den samlede indtjening.
 
 ### <a name="bar-and-column-charts"></a>Liggende søjlediagrammer og søjlediagrammer
-![søjlediagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bar.png)
+![søjlediagram](media/end-user-visual-type/pbi-nancy-viz-bar.png)
 
- ![liggende søjlediagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_col.png)
+ ![liggende søjlediagram](media/end-user-visual-type/pbi-nancy-viz-col.png)
 
 Liggende søjlediagrammer er standarden for at finde en specifik værdi på tværs af en række kategorier.
 
 ### <a name="cards-single-number"></a>Kort: Enkelt tal
-![kort med enkelt tal](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_card.png)
+![kort med enkelt tal](media/end-user-visual-type/pbi-nancy-viz-card.png)
 
 Kort med et enkelt tal viser et enkelt faktum, dvs. et enkelt datapunkt. Nogle gange er et enkelt tal det vigtigste, du vil finde frem til på dit Power BI-dashboard eller i din Power BI-rapport som f.eks. salg i alt, markedsandel fra år til år eller salgsmuligheder i alt.  
 
 ### <a name="cards-multi-row"></a>Kort: Med flere rækker
-![Kort med flere rækker](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
+![Kort med flere rækker](media/end-user-visual-type/multi-row-card.png)
 
 Kort med flere rækker viser et eller flere datapunkter; én pr. række.
 
 
 ### <a name="combo-charts"></a>Kombinationsdiagrammer
-![kombinationsdiagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/combosmall.png)
+![kombinationsdiagram](media/end-user-visual-type/combo-small.png)
 
 I et kombinationsdiagram kombineres et søjlediagram og et kurvediagram. Ved at kombinere disse to diagrammer kan du hurtigere sammenligne dine data. Kombinationsdiagrammer kan have en eller to Y-akser, så sørg for at se nøje efter. 
 
 Kombinationsdiagrammer er et fantastisk valg i følgende tilfælde:
 - Når du har et kurvediagram og et søjlediagram med den samme X-akse.
 - til at sammenligne flere målinger med forskellige værdiområder
-- til at illustrere sammenhængen mellem to målinger i én visualisering
+- til at illustrere sammenhængen mellem to målinger i ét visuelt element
 - Til at kontrollere, om en måling opfylder målet, der er defineret af en anden måling
 - til at spare plads på lærredet.
 
 ### <a name="doughnut-charts"></a>Kransediagrammer
-![kransediagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/donutsmall.png)
+![kransediagram](media/end-user-visual-type/donut-small.png)
 
 Kransediagrammer ligner cirkeldiagrammer.  De viser relationen mellem dele og en helhed. Den eneste forskel er, at centreret i det er tomt og giver plads til en etiket eller et ikon.
 
 ### <a name="funnel-charts"></a>Tragtformede diagrammer
-![tragtformet diagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_funnel.png)
+![tragtformet diagram](media/end-user-visual-type/pbi-nancy-viz-funnel.png)
 
 Tragtformede diagrammer hjælper med at visualisere en proces med faser og elementer, der flyder sekventielt fra den ene fase til den næste.  Et eksempel er en salgsproces, der starter med kundeemner og ender med køb.
 
@@ -86,7 +86,7 @@ Tragtformede diagrammer er et fantastisk valg i følgende tilfælde:
 - Til at holde øje med statussen på og succesen af reklame-/marketingkampagner vha. klikfrekvensen.
 
 ### <a name="gauge-charts"></a>Målerdiagrammer
-![målerdiagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/gauge_m.png)
+![målerdiagram](media/end-user-visual-type/gauge-m.png)
 
 Et radialt målerdiagram har en cirkulær bue og viser en enkelt værdis status i forhold til et mål/en KPI. Målet, eller målværdien, er repræsenteret med en streg (nål). Statussen mod målet repræsenteres med en skygge. Den værdi, der repræsenterer statussen, vises med fed i buen. Alle de mulige værdier er fordelt langs buen fra minimumværdien (længst til venstre) til maksimumværdien (længst til højre).
 
@@ -99,14 +99,14 @@ Radiale målere er fantastiske til:
 - vise oplysninger, der er hurtige at skimme og forstå.
 
  ### <a name="key-influencers-chart"></a>Diagram over nøglepersoner med indflydelse
-![nøgleperson med indflydelse](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-influencer.png)
+![nøgleperson med indflydelse](media/end-user-visual-type/power-bi-influencer.png)
 
 Et diagram over nøglepersoner med indflydelse viser de største bidragydere for et valgt resultat eller en valgt værdi.
 
 Nøglepersoner med indflydelse er et godt valg til at hjælpe dig med at forstå de faktorer, der påvirker en nøglemetrikværdi. Det kan eksempelvis være, *hvad der har indflydelse på, at kunderne afgiver ordre nummer to *, eller* hvorfor salget var så højt sidste år i juni*. 
 
 ### <a name="kpis"></a>KPI'er
-![KPI](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
+![KPI](media/end-user-visual-type/power-bi-kpi.png)
 
 Et nøgletal (KPI) er en visuel ledetråd, der viser fremgangen mod et målbart mål. 
 
@@ -115,42 +115,42 @@ KPI'er er et godt valg:
 - til at måle afstanden til et mål (hvor langt foran eller bagefter er jeg?)
 
 ### <a name="line-charts"></a>Kurvediagrammer
-![kurvediagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_line.png)
+![kurvediagram](media/end-user-visual-type/pbi-nancy-viz-line.png)
 
 Kurvediagrammer fremhæver den overordnede form af en hel serie af værdier som regel over tid.
 
 ### <a name="maps-basic-maps"></a>Kort: Basiskort
-![basiskort](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/pbi-nancy_viz_map.png)
+![basiskort](media/end-user-visual-type/pbi-nancy-viz-map.png)
 
 Brug et basiskort til at knytte både kategoriinddelte og kvantitative oplysninger til spatiale placeringer.
 
 ### <a name="maps-arcgis-maps"></a>Kort: ArcGIS-kort
-![ArcGis-kort](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-esri-map-theme2.png)
+![ArcGis-kort](media/end-user-visual-type/power-bi-esri-map-theme2.png)
 
-Kombinationen af ArcGIS-kort og Power BI tager kort til et helt nyt niveau, som involverer mere end præsentation af punkter på et kort. De tilgængelige indstillinger til grundlæggende kort, placeringstyper, temaer, symboltypografier og referencelag opretter fantastiske informative kortvisualiseringer. Kombinationen af autoritative datalag på et kort (f.eks. census-data) med rumlige analyser giver en bedre forståelse af dataene i visualiseringen.
+Kombinationen af ArcGIS-kort og Power BI tager kort til et helt nyt niveau, som involverer mere end præsentation af punkter på et kort. De tilgængelige indstillinger til grundlæggende kort, placeringstyper, temaer, symboltypografier og referencelag opretter fantastiske informative kortvisualiseringer. Kombinationen af autoritative datalag (f.eks census-data) på et kort med rumlige analyser giver en bedre forståelse af dataene i din visualisering.
 
 ### <a name="maps-filled-maps-choropleth"></a>Kort: Kartogrammer (Choropleth)
-![Kartogram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_filledmap.png)
+![Kartogram](media/end-user-visual-type/pbi-nancy-viz-filledmap.png)
 
 Et udfyldt kort bruger skygger eller toner eller mønstre til at vise, hvordan en værdi varierer i forhold på tværs af et geografisk område eller en region. Fremvis hurtigt disse relative forskelle med skygger, der går fra lys (mindre-hyppige/lavere) til mørk (mere-hyppige/mere).
 
 ### <a name="maps-shape-maps"></a>Kort: Figurkort
-![figurkort](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-shape-map2.png)
+![figurkort](media/end-user-visual-type/power-bi-shape-map2.png)
 
 Med figurkort sammenlignes områder på et kort ved hjælp af farve. I modsætning til visualiseringen M/kort kan der på figurkort ikke vises præcise geografiske placeringer af datapunkter på et kort. I stedet er dets primære formål at vise relative sammenligninger mellem områder på et kort ved at give dem forskellige farver.
 
 ### <a name="matrix"></a>Matrix
-![matrix](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/matrix.png)
+![matrix](media/end-user-visual-type/matrix.png)
 
 Matrixvisualiseringen er en type tabelvisualisering (se "Tabel" herunder), som understøtter et trinvist layout. Rapportdesignere inkluderer ofte matricer i rapporter og på dashboards, så brugerne kan vælge et eller flere elementer (rækker, kolonner, celler) i matrixen til tværgående fremhævning af andre visualiseringer på en rapportside.  
 
 ### <a name="pie-charts"></a>Cirkeldiagrammer
-![cirkeldiagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_pie.png)
+![cirkeldiagram](media/end-user-visual-type/pbi-nancy-viz-pie.png)
 
 I cirkeldiagrammer vises relationen mellem dele og en helhed. 
 
 ### <a name="ribbon-chart"></a>Bånddiagram
-![bånddiagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/power-bi-ribbon.png)
+![bånddiagram](media/end-user-visual-type/power-bi-ribbon.png)
 
 I bånddiagrammer vises, hvilken datakategori der har den højeste placering (største værdi). Bånddiagrammer er effektive til at vise ændringer af placeringer, hvor den højeste placering (værdi) altid vises øverst for hver tidsperiode.
 
@@ -159,21 +159,21 @@ I bånddiagrammer vises, hvilken datakategori der har den højeste placering (st
 
 Et punktdiagram har altid to værdiakser for at vise ét sæt numeriske data langs en vandret akse og et andet sæt numeriske værdier langs en lodret akse. Diagrammet viser punkter ved skæringspunktet for en numerisk x- og y-værdi og kombinerer disse værdier i enkelte datapunkter. Disse datapunkter kan være fordelt jævnt eller ujævnt på tværs af den vandrette akse afhængigt af dataene.
 
-![boblediagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_bubble.png)
+![boblediagram](media/end-user-visual-type/pbi-nancy-viz-bubble.png)
 
 Et boblediagram erstatter datapunkter med bobler, hvor boblestørrelsen repræsenterer en yderligere dimension af dataene.
 
 Et prikdiagram svarer til et boblediagram og et punktdiagram, bortset fra at der plottes numeriske eller kategoriske data langs X-aksen.
 
 ### <a name="scatter-high-density"></a>Punktdiagram – høj tæthed
-![punktdiagram med høj tæthed](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/density-scatter.png)
+![punktdiagram med høj tæthed](media/end-user-visual-type/density-scatter.png)
 
-Stikprøver af data med høj tæthed tages pr. definition for at kunne oprette visualiseringer forholdsvist hurtigt og bruge disse visualiseringer interaktivt. Ved stikprøvetagning med høj tæthed bruges en algoritme, der fjerner overlappende punkter og sikrer, at alle punkter i datasættet repræsenteres i visualiseringen. Der afbildes ikke blot en repræsentativ stikprøve af dataene.  
+Pr. definition stikprøvetagning af data med høj tæthed for at oprette visualiseringer forholdsvist hurtigt, der reagerer også på interaktivitet. Ved stikprøvetagning med høj tæthed bruges en algoritme, der fjerner overlappende punkter og sikrer, at alle punkter i datasættet repræsenteres i visualiseringen. Der afbildes ikke blot en repræsentativ stikprøve af dataene.  
 
 Dette sikrer den bedste kombination af svartid, repræsentation og tydelig bevarelse af vigtige punkter i det samlede datasæt.
 
 ### <a name="slicers"></a>Udsnit
-![udsnit](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_slicer.png)
+![udsnit](media/end-user-visual-type/pbi-slicer.png)
 
 Et udsnit er et separat diagram, der kan bruges til at filtrere de andre visualiseringer på siden. Udsnit kommer i mange forskellige formater (kategori, område, dato osv.) og kan formateres til kun at tillade valg af én, mange eller alle tilgængelige værdier. 
 
@@ -184,13 +184,13 @@ Udsnit er et fantastisk valg til at:
 - oprette mere fokuserede rapporter ved at placere udsnit ved siden af vigtige visualiseringer.
 
 ### <a name="standalone-images"></a>Separate billeder
-![separate billeder](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_image.png)
+![separate billeder](media/end-user-visual-type/pbi-nancy-viz-image.png)
 
 Et separat billede er en grafik, der er blevet føjet til en rapport eller et dashboard. 
 
 
 ### <a name="tables"></a>Tabeller
-![tabeldiagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/tabletype.png)
+![tabeldiagram](media/end-user-visual-type/table-type.png)
 
 En tabel er et gitter, der indeholder relaterede data i logiske serier af rækker og kolonner. Den kan også indeholde overskrifter og en række til totaler. Tabeller fungerer godt med kvantitative sammenligninger, hvor du får vist mange værdier for en enkelt kategori. I denne tabel vises f.eks. fem forskellige målinger for Kategori.
 
@@ -200,7 +200,7 @@ Tabeller er et godt valg til at:
 - Se numeriske data efter kategorier.
 
 ### <a name="treemaps"></a>Træstrukturer
-![træstrukturdiagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/pbi_nancy_viz_tree.png)
+![træstrukturdiagram](media/end-user-visual-type/pbi-nancy-viz-tree.png)
 
 Træstrukturer er diagrammer med farvede rektangler, hvor størrelsen repræsenterer værdien.  De kan være hierarkiske, hvor rektangler er indlejret i de primære rektangler. Pladsen inde i hvert rektangel er allokeret ud fra den værdi, der måles. Og rektanglerne er arrangeret efter størrelse fra øverst til venstre (størst) til nederst til højre (mindst).
 
@@ -213,7 +213,7 @@ Træstrukturer er et godt valg:
 - til at identificere mønstre, udenforliggende værdier, de vigtigste bidragsydere samt undtagelser.
 
 ### <a name="waterfall-charts"></a>Vandfaldsdiagrammer
-![vandfaldsdiagram](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/waterfallsmall.png)
+![vandfaldsdiagram](media/end-user-visual-type/waterfall-small.png)
 
 Et vandfaldsdiagram viser en løbende total som værdier, der tilføjes eller trækkes fra. Det er nyttigt for at forstå, hvordan en indledende værdi (f.eks, årets resultat) påvirkes af en række positive og negative ændringer.
 
@@ -226,13 +226,14 @@ Vandfaldsdiagrammer er et godt valg:
 - til illustration af antal medarbejdere ved årets start og slutning
 - til visualisering af, hvor mange penge du tjener og bruger hver måned, samt den løbende kontobalance.
 
-## <a name="tell-qa-which-visualization-to-use"></a>Fortæl Spørgsmål og svar, hvilken visualisering der skal bruges
-Når du skriver forespørgsler i naturligt sprog med Spørgsmål og svar i Power BI, kan du angive visualiseringstypen i din forespørgsel.  Eksempel:
+## <a name="qna"></a>Fortæl spørgsmål og svar hvilke visualiseringer der skal bruge
+Når du skriver forespørgsler i naturligt sprog med Power BI-spørgsmål og svar, kan du angive den visuelle type i forespørgslen.  Eksempel:
+
 
 "***salg efter område som trækort***"
 
-![Spørgsmål og svar-session](../visuals/media/power-bi-visualization-types-for-reports-and-q-and-a/qatreemap.png)
+![Spørgsmål og svar-session](media/end-user-visual-type/qa-treemap.png)
 
 ## <a name="next-steps"></a>Næste trin
-[Interager med visualiseringer i rapporter, på dashboards og i programmer](end-user-visualizations.md)    
+[Interagere med visuelle elementer i rapporter, dashboards og apps](end-user-visualizations.md)    
 [Den rette visuelle reference fra sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

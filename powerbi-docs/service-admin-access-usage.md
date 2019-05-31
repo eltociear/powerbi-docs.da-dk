@@ -1,36 +1,36 @@
 ---
 title: Find Power BI-brugere, der er logget på
-description: Hvis du er en lejeradministrator, og du vil se, hvem der er logget på Power BI, kan du bruge Azure Active Directory-adgang og anvendelsesrapporter til at skabe synlighed.
+description: Hvis du er administrator af lejere, og du vil se, hvem der har logget på Power BI, kan du bruge rapporter om adgang og forbrug af Azure Active Directory til at skabe synlighed.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 04/23/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 12a15360efbff62c40f5bd1098886ee046661e4f
-ms.sourcegitcommit: 5222bc6a8336acc77c8e22db57ea6a7bf7daea57
-ms.translationtype: HT
+ms.openlocfilehash: e513607dd89aee15f10145cf62bd461621cc12c0
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59290736"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64906715"
 ---
 # <a name="find-power-bi-users-that-have-signed-in"></a>Find Power BI-brugere, der er logget på
 
-Hvis du er lejeradministrator og gerne vil se, hvem der er logget på Power BI, skal du bruge [adgangs- og brugsrapporter i Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins) til at få indsigt.
+Hvis du er administrator af lejere, og du vil se, hvem der har logget på Power BI, Brug den [Azure Active Directory-adgang og forbrug rapporter](/azure/active-directory/reports-monitoring/concept-sign-ins) til at skabe synlighed.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/1AVgh9w9VM8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 > [!NOTE]
-> Aktivitetsrapporten indeholder nyttige oplysninger, men du kan ikke se, hvilken type licens hver bruger har. Brug Microsoft 365 Administration til at få vist licenser.
+> Den **logonaktivitet** rapport indeholder nyttige oplysninger, men det ikke identificere typen licens hver bruger har. Brug Microsoft 365 Administration til at få vist licenser.
 
 ## <a name="requirements"></a>Krav
 
 Alle brugere (herunder personer, der ikke er administratorer) kan se en rapport over deres egne logon, men du skal opfylde følgende krav for at få vist en rapport for alle brugere.
 
-* Din lejer skal have en Azure AD Premium-licens tilknyttet.
+* Din lejer skal have en Azure Active Directory Premium-licens, der er knyttet til den.
 
 * Du skal være i en af følgende roller: Global administrator, Sikkerhedsadministrator eller Sikkerhedslæser.
 
@@ -42,31 +42,32 @@ Følg disse trin for at få vist logonaktivitet.
 
 1. Under **Overvågning** skal du vælge **Logon**.
    
-    ![Azure AD-logon](media/service-admin-access-usage/azure-portal-sign-ins.png)
+    ![Skærmbillede af Brugergrænsefladen i Azure med Azure Active Directory og logonaktivitet indstillinger fremhævet.](media/service-admin-access-usage/azure-portal-sign-ins.png)
 
 1. Filtrer programmet efter enten **Microsoft Power BI** eller **Power BI Gateway**, og vælg **Anvend**.
 
-    **Microsoft Power BI** filtrerer efter logonaktivitet relateret til tjenesten, hvorimod **Power BI Gateway** filtrerer efter logonaktivitet, der er specifik for datagatewayen i det lokale miljø.
+    **Microsoft Power BI** filtre til logonaktivitet relateret til tjenesten, mens **Power BI Gateway** filtre til logonaktivitet specifikke for datagatewayen i det lokale miljø.
    
-    ![Filtrering efter logon](media/service-admin-access-usage/sign-in-filter.png)
+    ![Skærmbillede af filteret login med feltet programmer, der er fremhævet.](media/service-admin-access-usage/sign-in-filter.png)
 
 ## <a name="export-the-data"></a>Eksportér dataene
 
-Du har to muligheder for at eksportere logondataene: Download en csv-fil, eller brug PowerShell. Øverst i logonrapporten skal du vælge en af følgende muligheder:
+Du kan [hente en rapport, der logon](/azure/active-directory/reports-monitoring/quickstart-download-sign-in-report) i en af to formater: en CSV-fil eller en JSON-fil.
 
-* **Download** for at downloade en csv-fil for de data, der er filtreret i øjeblikket.
+![Skærmbillede af knappen Hent.](media/service-admin-access-usage/download-sign-in-data-csv.png)
 
-* **Script** for at downloade et PowerShell-script for de data, der er filtreret i øjeblikket. Du kan opdatere filteret i scriptet efter behov.
+Øverst i den **logonaktivitet** rapporten, vælge **Download** , og vælg derefter en af følgende indstillinger:
 
-![Download csv-fil eller script](media/service-admin-access-usage/download-sign-in-data-csv.png)
+* **CSV** at downloade en CSV-fil for de data, der i øjeblikket er filtreret.
+
+* **JSON** at downloade en JSON-fil for de data, der i øjeblikket er filtreret.
 
 ## <a name="data-retention"></a>Dataopbevaring
 
-Relaterede logondata er tilgængelige i op til 30 dage. Du kan finde flere oplysninger i [Politikker til opbevaring af Azure Active Directory-rapport](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
+Relaterede logondata er tilgængelige i op til 30 dage. Du kan finde flere oplysninger, i [politikker til opbevaring af Azure Active Directory-rapport](/azure/active-directory/reports-monitoring/reference-reports-data-retention).
 
 ## <a name="next-steps"></a>Næste trin
 
 [Brug af overvågning i din organisation](service-admin-auditing.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
-

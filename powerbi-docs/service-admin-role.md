@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/30/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 2de78497698af3ee00ce77ef9c389169ef460546
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: aad02103903837afbb7bbce48ab9607b5dbf62c3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58382799"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65099627"
 ---
 # <a name="understanding-the-power-bi-service-administrator-role"></a>Om rollen Power BI-tjenesteadministrator
 
@@ -39,7 +39,7 @@ Rollen Power BI-tjenesteadministrator giver ikke adgang til følgende funktioner
 
 Følg disse trin for at tildele brugere rollen Power BI-administrator via Microsoft 365 Administration.
 
-1. Vælg **Brugere** > **Aktive brugere** i Microsoft 365 Administration.
+1. I den [Microsoft 365 administration](https://portal.office.com/adminportal/home#/homepage), skal du vælge **brugere** > **aktive brugere**.
 
     ![Microsoft 365 Administration](media/service-admin-role/powerbi-admin-users.png)
 
@@ -61,9 +61,14 @@ Du bør se, at den pågældende bruger er tildelt rollen **Power BI-tjenesteadmi
 
 ## <a name="assign-users-to-the-admin-role-with-powershell"></a>Tildel brugere administratorrollen via PowerShell
 
-Du kan også tildele brugere roller ved hjælp af PowerShell. Brugere administreres i Azure Active Directory (Azure AD). Hvis du ikke allerede har Azure AD PowerShell-modulet, skal du [downloade og installere den nyeste version](https://www.powershellgallery.com/packages/AzureAD/).
+Du kan også tildele brugere roller ved hjælp af PowerShell. Brugere, der administreres i Azure Active Directory (Azure AD). Hvis du ikke allerede har Azure AD PowerShell-modulet, skal du [downloade og installere den nyeste version](https://www.powershellgallery.com/packages/AzureAD/).
 
-1. Hent først **ObjectId** for rollen **Power BI-tjenesteadministrator**. Du kan køre [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole) for at hente **ObjectId**
+1. Først skal du oprette forbindelse til Azure AD:
+   ```
+   PS C:\Windows\system32> Connect-AzureAD
+   ```
+
+1. Sekund, og få den **ObjectId** for den **Power BI-Tjenesteadministrator** rolle. Du kan køre [Get-AzureADDirectoryRole](/powershell/module/azuread/get-azureaddirectoryrole) for at hente **ObjectId**
 
     ```
     PS C:\Windows\system32> Get-AzureADDirectoryRole
@@ -85,7 +90,7 @@ Du kan også tildele brugere roller ved hjælp af PowerShell. Brugere administre
 1. Hent derefter brugerens **ObjectId**. Det finder du ved at køre [Get-AzureADUser](/powershell/module/azuread/get-azureaduser).
 
     ```
-    PS C:\Windows\system32> Get-AzureADUser -SearchString 'tim@contoso.com'
+    PS C:\Windows\system32> Get-AzureADUser -ObjectId 'tim@contoso.com'
 
     ObjectId                             DisplayName UserPrincipalName      UserType
     --------                             ----------- -----------------      --------

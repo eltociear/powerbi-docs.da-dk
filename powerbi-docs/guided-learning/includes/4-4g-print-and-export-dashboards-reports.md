@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 87a55881a9b6551dc9c7814696aa8d8252482a09
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255542"
+---
 Du kan nogle gange have behov for at tage en udskreven rapport eller dashboard med til et møde, eller for at du kan dele det med andre. Med Power BI kan du lave udskrifter af dine visualiseringer på et par forskellige måder.
 
 Vælg ellipsen (tre prikker) i øverste højre side af Power BI-tjenesten, og vælg **Udskriv dashboard**.

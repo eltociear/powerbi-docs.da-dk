@@ -1,21 +1,21 @@
 ---
 title: Konfigurer indstillinger for dataflow for arbejdsområder
-description: Konfigurer et apparbejdsområde i Power BI for at gemme definitionen og datafilerne for dataflowet i Azure Data Lake Storage Gen2
+description: Konfigurer et apparbejdsområde i Power BI til at gemme dens definition dataflowet og datafiler i Azure Data Lake Storage Gen2
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8c17a7b4ad455077d383eaff9b35a5d1004fce11
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.openlocfilehash: 52ef3f57276e7f7560b9d7df7bc1be465d842eb3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223622"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61168475"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Konfigurer indstillinger for dataflow for arbejdsområder (prøveversion)
 
@@ -52,9 +52,6 @@ Udvid derefter området **Avanceret** i dialogboksen **Opret et apparbejdsområd
 ![Avancerede indstillinger for det nye arbejdsområde](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_04.jpg)
 
 Vælg **Gem** for at oprette det nye arbejdsområde. Alle nye dataflow, der oprettes i dette arbejdsområde, gemmer nu sin definitionsfil (filen Model.json) og sine data på din organisations Azure Data Lake Storage Gen2-konto. 
-
-> [!NOTE]
-> Dataflowfunktionaliteten er tilgængelig som en prøveversion og kan ændres og opdateres, før den bliver offentligt tilgængelig.
 
 ## <a name="update-dataflow-storage-for-an-existing-workspace"></a>Opdater dataflowlageret for et eksisterende arbejdsområde
 

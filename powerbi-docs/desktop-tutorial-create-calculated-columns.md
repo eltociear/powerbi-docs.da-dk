@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 6974e0eccd8c16bdb06a050873e40f1a5be6f75f
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514551"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Selvstudium: Opret beregnede kolonner i Power BI Desktop
@@ -44,7 +44,7 @@ I din salgsrapport vil du gerne have vist produktkategorier sammen med produktun
     
     ![Formellinje](media/desktop-tutorial-create-calculated-columns/create3.png)
     
-2.  En ny beregnet kolonne hedder som standard blot Column (Kolonne). Hvis du ikke omdøber den, navngives nye ekstra kolonner Column 2, Column 3 osv. Din kolonne skal være lettere at identificere, så eftersom navnet **Column** (Kolonne) allerede er markeret på formellinjen, kan du omdøbe den ved at indtaste **ProductFullCategory** og derefter indtaste et lighedstegn (**=**).
+2.  En ny beregnet kolonne hedder som standard blot Column (Kolonne). Hvis du ikke omdøber den, navngives nye ekstra kolonner Column 2, Column 3 osv. Din kolonne skal være lettere at identificere, så eftersom navnet **Column** (Kolonne) allerede er markeret på formellinjen, kan du omdøbe den ved at indtaste **ProductFullCategory** og derefter indtaste et lighedstegn ( **=** ).
     
 3.  Værdierne i den nye kolonne skal starte med navnet ProductCategory. Eftersom denne kolonne er i en anden, men relateret tabel, kan du bruge funktionen [RELATED](https://msdn.microsoft.com/library/ee634202.aspx) til at hjælpe med at hente kolonnen.
     
@@ -56,19 +56,19 @@ I din salgsrapport vil du gerne have vist produktkategorier sammen med produktun
     
     ![Vælg ProductCategory](media/desktop-tutorial-create-calculated-columns/create5.png)
     
-4.  I dette tilfælde skal du bruge kolonnen **ProductCategory** i tabellen **ProductCategory**. Vælg **ProductCategory[ProductCategory]**, tryk på **Enter**, og angiv derefter en slutparentes.
+4.  I dette tilfælde skal du bruge kolonnen **ProductCategory** i tabellen **ProductCategory**. Vælg **ProductCategory[ProductCategory]** , tryk på **Enter**, og angiv derefter en slutparentes.
     
     > [!TIP]
     > Syntaksfejl skyldes oftest en manglende eller forkert placeret slutparentes, selvom Power BI Desktop nogle gange tilføjer den for dig.
     
-4. ProductCategories og ProductSubcategories skal adskilles af tankestreger og mellemrum i de nye værdier, så efter slutparentesen i det første udtryk skal du indtaste et mellemrum, et ampersand (**&**), dobbelte anførselstegn (**"**), mellemrum, tankestreg (**-**), endnu et mellemrum, endnu et dobbelt anførselstegn og endnu et ampersand. Din formel skal se sådan ud:
+4. ProductCategories og ProductSubcategories skal adskilles af tankestreger og mellemrum i de nye værdier, så efter slutparentesen i det første udtryk skal du indtaste et mellemrum, et ampersand ( **&** ), dobbelte anførselstegn ( **"** ), mellemrum, tankestreg ( **-** ), endnu et mellemrum, endnu et dobbelt anførselstegn og endnu et ampersand. Din formel skal se sådan ud:
     
     `ProductFullCategory = RELATED(ProductCategory[ProductCategory]) & " - " &`
     
     > [!TIP]
     > Klik på den nedadvendte pil i højre side af formellinjen for at udvide formeleditoren, hvis du har brug for mere plads. Klik på **Alt + Enter** i teksteditoren for at gå en linje ned og **tabulator** for at flytte ting.
     
-5.  Indtast endnu en venstreparentes (**[**), og vælg derefter kolonnen **[ProductSubcategory]** for at afslutte formlen. 
+5.  Indtast endnu en venstreparentes ( **[** ), og vælg derefter kolonnen **[ProductSubcategory]** for at afslutte formlen. 
     
     ![Vælg ProductSubcategory](media/desktop-tutorial-create-calculated-columns/create6.png)
     
@@ -106,19 +106,19 @@ Tabellen Stores indeholder heldigvis en kolonne ved navn **Status** med værdier
     
     ![Vælg IF](media/desktop-tutorial-create-calculated-columns/if1.png)
     
-3.  Det første argument for IF er en logisk test af, om en butiks status er "On". Indtast en venstreparentes **[**, som oplister kolonner fra tabellen Stores, og vælg **[Status]**.
+3.  Det første argument for IF er en logisk test af, om en butiks status er "On". Indtast en venstreparentes **[** , som oplister kolonner fra tabellen Stores, og vælg **[Status]** .
     
     ![Vælg Status](media/desktop-tutorial-create-calculated-columns/if2.png)
     
-4.  Lige efter **[Status]** skal du skrive **= "On"** og derefter skrive et komma (**,**) for at afslutte argumentet. Værktøjstippet foreslår, at du skal tilføje en værdi, der skal returneres, hvis resultatet er TRUE.
+4.  Lige efter **[Status]** skal du skrive **= "On"** og derefter skrive et komma ( **,** ) for at afslutte argumentet. Værktøjstippet foreslår, at du skal tilføje en værdi, der skal returneres, hvis resultatet er TRUE.
     
     ![Tilføj TRUE-værdi](media/desktop-tutorial-create-calculated-columns/if3.png)
     
-5.  Hvis butikkens status er "On" (Aktiveret), vil du have vist butikkens navn. Skriv en venstreparentes **[**, og vælg kolonnen **[StoreName]**, og skriv derefter endnu et komma. Værktøjstippet angiver nu, at du skal tilføje en værdi, der skal returneres, hvis resultatet er FALSE. 
+5.  Hvis butikkens status er "On" (Aktiveret), vil du have vist butikkens navn. Skriv en venstreparentes **[** , og vælg kolonnen **[StoreName]** , og skriv derefter endnu et komma. Værktøjstippet angiver nu, at du skal tilføje en værdi, der skal returneres, hvis resultatet er FALSE. 
     
     ![Tilføj værdien FALSE](media/desktop-tutorial-create-calculated-columns/if4.png)
     
-6.  Du vil have, at værdien er *Inactive*, så skriv **"Inactive"**, og afslut derefter formlen ved at trykke på **Enter** eller ved at vælge fluebenet i formellinjen. Formlen valideres, og navnet på den nye kolonne vises i tabellen **Stores** på listen over felter.
+6.  Du vil have, at værdien er *Inactive*, så skriv **"Inactive"** , og afslut derefter formlen ved at trykke på **Enter** eller ved at vælge fluebenet i formellinjen. Formlen valideres, og navnet på den nye kolonne vises i tabellen **Stores** på listen over felter.
     
     ![Kolonnen Active StoreName](media/desktop-tutorial-create-calculated-columns/if5.png)
     

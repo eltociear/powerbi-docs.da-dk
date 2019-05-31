@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
 ms.openlocfilehash: 306738f4df765638c591c9612adf885facdceda0
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513867"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Selvstudium: Opret dine egne målinger i Power BI Desktop
@@ -89,7 +89,7 @@ Du vil analysere din nettoomsætning ved at trække rabatter og returneringer fr
     
     ![Vælg SalesAmount](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure_formula_salesam.png)
     
-4. Vælg **Sales[SalesAmount]**, og skriv derefter en slutparentes.
+4. Vælg **Sales[SalesAmount]** , og skriv derefter en slutparentes.
     
     > [!TIP]
     > Syntaksfejl skyldes ofte, at der mangler en slutparentes, eller at den er placeret forkert.
@@ -97,7 +97,7 @@ Du vil analysere din nettoomsætning ved at trække rabatter og returneringer fr
     
     
 5.  Sådan trækker du de to andre kolonner fra:
-    1. Skriv et mellemrum, et minustegn (**-**) og endnu et mellemrum efter slutparentesen for det første udtryk. 
+    1. Skriv et mellemrum, et minustegn ( **-** ) og endnu et mellemrum efter slutparentesen for det første udtryk. 
     2. Angiv en anden SUM-funktion, og begynd at skrive "DiscountAmount", indtil du kan vælge kolonnen **Sales[DiscountAmount]** som argument. Tilføj en slutparentes. 
     3. Angiv et mellemrum, endnu et minustegn, et mellemrum, en anden SUM-funktion med **Sales[ReturnAmount]** som argument og en slutparentes.
     
@@ -160,15 +160,15 @@ Du ønsker at finde ud af, hvilke produkter der har den højeste nettoomsætning
 
 1.  Opret en ny måling med navnet **Net Sales per unit** i tabellen Sales.
     
-2.  Begynd at skrive **Net Sales** i formellinjen. På forslagslisten kan du se, hvad du kan tilføje. Vælg **[Net Sales]**.
+2.  Begynd at skrive **Net Sales** i formellinjen. På forslagslisten kan du se, hvad du kan tilføje. Vælg **[Net Sales]** .
     
     ![Formel med Net Sales](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2a.png)
     
-    Du kan også referere til en måling ved blot at begynde at skrive en startparentes (**[**). På forslagslisten kan du kun se målinger, du kan føje til formlen.
+    Du kan også referere til en måling ved blot at begynde at skrive en startparentes ( **[** ). På forslagslisten kan du kun se målinger, du kan føje til formlen.
     
     ![Parenteser viser kun målinger](media/desktop-tutorial-create-measures/meastut_nspu_formulastep2b.png)
     
-3.  Angiv et mellemrum, en divisionsoperator (**/**), endnu et mellemrum, en SUM-funktion, og skriv derefter **Quantity**. På forslagslisten kan du se alle de kolonner, hvor Quantity indgår i navnet. Vælg **Sales[SalesQuantity]**, skriv slutparentesen, og tryk på Enter, eller markér afkrydsningsfeltet for at validere formlen. Formlen skal se sådan ud:
+3.  Angiv et mellemrum, en divisionsoperator ( **/** ), endnu et mellemrum, en SUM-funktion, og skriv derefter **Quantity**. På forslagslisten kan du se alle de kolonner, hvor Quantity indgår i navnet. Vælg **Sales[SalesQuantity]** , skriv slutparentesen, og tryk på Enter, eller markér afkrydsningsfeltet for at validere formlen. Formlen skal se sådan ud:
     
     `Net Sales per Unit = [Net Sales] / SUM(Sales[SalesQuantity])`
     

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f81300becc8a79b8a169aebe2ce3c56991c03262
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255557"
+---
 Velkommen til afsnittet **Publicer og del** i kurset **Automatiseret læring** til Power BI.
 
 Du har nu erfaret, hvordan Excel og Power BI arbejder problemfrit sammen, og du har lært alt om de visuelle elementer, som du kan oprette i rapporter og dashboards, så nu vil du sikkert gerne dele dine erfaringer med kolleger og venner. Med Power BI er det let at **publicere og dele**.

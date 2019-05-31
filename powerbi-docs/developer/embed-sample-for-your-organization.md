@@ -1,21 +1,21 @@
 ---
 title: Integreret analyse for at integrere Power BI-indhold i dit program for din organisation
 description: Få mere at vide om, hvordan du integrerer en rapport, et dashboard eller et felt i et program ved hjælp af Power BI-API'er til integreret analyse for din organisation. Få mere at vide om, hvordan du integrerer Power BI i dit program ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 03/12/2019
-ms.openlocfilehash: 34d7ec423f3d4cb0f7487c78eff68c580ff0489e
-ms.sourcegitcommit: f176ba9d52d50d93f264eca21bb3fd987dbf934b
-ms.translationtype: HT
+ms.date: 04/02/2019
+ms.openlocfilehash: 53311929aa6277efd621fb2b944ea062ab99999d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "57757455"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61354881"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Selvstudium: Integrer Power BI-indhold i en app til din organisation
 
@@ -116,17 +116,17 @@ Hvis du vil hente **applicationId**, skal du følge disse trin:
 
 2. Vælg **Alle tjenester** i navigationsruden til venstre, og vælg **Appregistreringer**.
 
-    ![Søg efter programregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
-
 3. Vælg programmet, der skal bruge **applicationId**.
 
-    ![Vælg app](media/embed-sample-for-customers/embed-sample-for-customers-006.png)
+    ![Vælg app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
 
 4. Der er angivet et **program-id** som GUID. Brug dette **Program-id** som **applicationId** for programmet.
 
-    ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
+    ![applicationId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-043.png)
 
 ### <a name="application-secret"></a>Programhemmelighed
+
+Denne attribut bruges kun til [tjenesteprincipalen](embed-service-principal.md) som AuthenticationType.
 
 Udfyld oplysningerne for **ApplicationSecret** ud fra sektionen **Nøgler** i sektionen **Appregistreringer** i **Azure**.  Denne attribut fungerer, når du bruger [tjenesteprincipal](embed-service-principal.md).
 
@@ -136,25 +136,19 @@ Hvis du vil hente **ApplicationSecret**, skal du følge disse trin:
 
 2. Vælg **Alle tjenester** i navigationsruden til venstre, og vælg derefter **Programregistreringer**.
 
-    ![Søg efter programregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
-
 3. Vælg programmet, der skal bruge **ApplicationSecret**.
 
-    ![Vælg en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Vælg en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
 
-4. Vælg **Indstillinger**.
+4. Vælg **certifikater og hemmeligheder** under **Administrer**.
 
-    ![Vælg Indstillinger](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
-
-5. Vælg **Nøgler**.
-
-    ![Vælg Nøgler](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+5. Vælg **nye klienthemmelighed**.
 
 6. Angiv et navn i feltet **Beskrivelse**, og vælg en varighed. Vælg derefter **Gem** for at hente **værdien** til dit program. Når du lukker ruden **Nøgler** efter at have gemt nøgleværdien, vises feltet med værdien kun som skjult. På det tidspunkt kan du ikke hente nøgleværdien. Hvis du mister nøgleværdien, skal du oprette en ny i Azure Portal.
 
-    ![Nøgleværdi](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+    ![Nøgleværdi](media/embed-sample-for-your-organization/embed-sample-for-your-organization-046.png)
 
-### <a name="workspace-id"></a>Arbejdsområde-id
+### <a name="workspace-id"></a>Id for arbejdsområde
 
 Udfyld oplysningerne for **workspaceId** med GUID for programarbejdsområdet fra Power BI. Du kan få disse oplysninger enten fra URL-adressen, når du er logget på Power BI-tjenesten, eller ved hjælp af Powershell.
 
@@ -400,7 +394,7 @@ Nu, hvor du er færdig med at udvikle dit program, er tiden kommet til at underb
 
 ### <a name="create-a-dedicated-capacity"></a>Opret en dedikeret kapacitet
 
-Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for indholdet i dit apparbejdsområde. Du kan oprette en dedikeret kapacitet ved hjælp af [Power BI Premium ](../service-premium.md).
+Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for indholdet i dit apparbejdsområde. Du kan oprette en dedikeret kapacitet ved hjælp af [Power BI Premium ](../service-premium-what-is.md).
 
 I tabellen nedenfor kan du se en oversigt over de Power BI Premium-SKU'er, der er tilgængelige i [Microsoft Office 365](../service-admin-premium-purchase.md):
 

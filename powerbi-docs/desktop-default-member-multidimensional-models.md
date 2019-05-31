@@ -11,11 +11,11 @@ ms.date: 01/10/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 01b0cdf70c985169d474a130ed4ad846ad708963
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54284742"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61308808"
 ---
 # <a name="default-member-in-multidimensional-models-in-power-bi"></a>Standardmedlem i flerdimensionelle modeller i Power BI
 
@@ -36,7 +36,7 @@ Antag for eksempel, at vi har kolonnen *Valuta*, der har et standardmedlem, der 
 * Hvis vi i dette eksempel har et kort, der viser *Samlet salg*, anvendes standardmedlemmet for den pågældende værdi, og vi ser, at salg svarer til "USD".
 * Hvis vi trækker *Valuta* til filterkortruden, vælges *USD* som standardværdi. Værdien for *Samlet salg* forbliver uændret, da standardmedlemmet anvendes.
 * Men hvis vi fravælger værdien *USD* fra filterkortet, ryddes standardmedlemmet for *Valuta*, og nu afspejler *Samlet salg* alle valutaer.
-* Derfor, når vi vælger en anden værdi i filterkortet (lad os sige, at vi vælger *EURO*) sammen med standardmedlemmet, afspejler *Samlet salg* filteret *Currency IN {USD, EURO}*.
+* Derfor, når vi vælger en anden værdi i filterkortet (lad os sige, at vi vælger *EURO*) sammen med standardmedlemmet, afspejler *Samlet salg* filteret *Currency IN {USD, EURO}* .
 
 ## <a name="grouping-behavior"></a>Funktionsmåde for gruppering
 

@@ -12,10 +12,10 @@ ms.date: 05/08/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 57a285b075b17b2229ec4267a476cdd4b86ea7ad
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513604"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel
@@ -32,10 +32,10 @@ I løbet af dette selvstudium beskrives trinnene nedenfor udførligt, hvilket hj
 * Opret et nyt dashboard baseret på rapporten, og endelig
 * Del dashboardet med dine kolleger
 
-Hvis du vil følge fremgangsmåden i dette selvstudium, skal du bruge databasen **AdventureworksDW2012**, som du kan downloade fra dette **[lager](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)**.
+Hvis du vil følge fremgangsmåden i dette selvstudium, skal du bruge databasen **AdventureworksDW2012**, som du kan downloade fra dette **[lager](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)** .
 
 ## <a name="task-1-create-the-user-security-table-and-define-data-relationship"></a>Opgave 1: Opret brugersikkerhedstabellen, og definer datarelationen
-Der er udgivet mange artikler, som beskriver, hvordan du definerer dynamisk sikkerhed på rækkeniveau med **SSAS-tabelmodellen (SQL Server Analysis Services)**. I dette eksempel følger vi artiklen [Implementér dynamisk sikkerhed ved hjælp af rækkefiltre](https://msdn.microsoft.com/library/hh479759.aspx). Følgende trin fører dig gennem den første opgave i dette selvstudium:
+Der er udgivet mange artikler, som beskriver, hvordan du definerer dynamisk sikkerhed på rækkeniveau med **SSAS-tabelmodellen (SQL Server Analysis Services)** . I dette eksempel følger vi artiklen [Implementér dynamisk sikkerhed ved hjælp af rækkefiltre](https://msdn.microsoft.com/library/hh479759.aspx). Følgende trin fører dig gennem den første opgave i dette selvstudium:
 
 1. I vores eksempel bruger vi relationsdatabasen **AdventureworksDW2012**. I denne database skal du oprette tabellen **DimUserSecurity**, som vist på følgende billede. I dette eksempel bruger vi SSMS (SQL Server Management Studio) til at oprette tabellen.
    
@@ -56,7 +56,7 @@ Der er udgivet mange artikler, som beskriver, hvordan du definerer dynamisk sikk
 5. Bemærk, at billedet ovenfor viser oplysninger om, hvilken bruger der er ansvarlig for hvilket salgsområde. Dataene vises på grund af den relation, vi oprettede i **trin 2**. Bemærk også, at brugeren **Jon Doe er en del af det australske salgsområde**. Vi vender tilbage til John Doe i senere trin og opgaver.
 
 ## <a name="task-2-create-the-tabular-model-with-facts-and-dimension-tables"></a>Opgave 2: Opret tabelmodellen med fakta- og dimensionstabeller
-1. Når relationsdatalageret er på plads, skal du definere din tabelmodel. Du kan oprette modellen ved hjælp af **SQL Server Data Tools (SSDT)**. Du kan få flere oplysninger om, hvordan du definerer en tabelmodel, i [Opret et nyt tabelmodelprojekt](https://msdn.microsoft.com/library/hh231689.aspx).
+1. Når relationsdatalageret er på plads, skal du definere din tabelmodel. Du kan oprette modellen ved hjælp af **SQL Server Data Tools (SSDT)** . Du kan få flere oplysninger om, hvordan du definerer en tabelmodel, i [Opret et nyt tabelmodelprojekt](https://msdn.microsoft.com/library/hh231689.aspx).
 2. Importér alle nødvendige tabeller i modellen som vist nedenfor.
    
     ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/ssdt_model.png)
@@ -70,7 +70,7 @@ Der er udgivet mange artikler, som beskriver, hvordan du definerer dynamisk sikk
 6. I dette trin bruger vi funktionen **LOOKUPVALUE** til at returnere værdier for en kolonne, hvor Windows-brugernavnet er det samme som det brugernavn, der returneres af funktionen **USERNAME**. Forespørgsler kan derefter begrænses, hvor de værdier, der returneres af **LOOKUPVALUE**, stemmer overens med værdier i den samme eller en relateret tabel. I kolonnen **DAX Filter** skal du skrive følgende formel:
    
        =DimSalesTerritory[SalesTerritoryKey]=LOOKUPVALUE(DimUserSecurity[SalesTerritoryID], DimUserSecurity[UserName], USERNAME(), DimUserSecurity[SalesTerritoryID], DimSalesTerritory[SalesTerritoryKey])
-    I denne formel returnerer funktionen **LOOKUPVALUE** alle værdier for kolonnen **DimUserSecurity[SalesTerritoryID]**, hvor **DimUserSecurity[UserName]** er det samme som det Windows-brugernavn, der i øjeblikket er logget på, og **DimUserSecurity[SalesTerritoryID]** er det samme som **DimSalesTerritory[SalesTerritoryKey]**.
+    I denne formel returnerer funktionen **LOOKUPVALUE** alle værdier for kolonnen **DimUserSecurity[SalesTerritoryID]** , hvor **DimUserSecurity[UserName]** er det samme som det Windows-brugernavn, der i øjeblikket er logget på, og **DimUserSecurity[SalesTerritoryID]** er det samme som **DimSalesTerritory[SalesTerritoryKey]** .
    
     > [!IMPORTANT]
     > Vær opmærksom på, at DAX-funktionen [USERELATIONSHIP](https://msdn.microsoft.com/query-bi/dax/userelationship-function-dax) ikke understøttes, når du bruger sikkerhed på rækkeniveau.
@@ -85,7 +85,7 @@ Der er udgivet mange artikler, som beskriver, hvordan du definerer dynamisk sikk
 
 ## <a name="task-3-adding-data-sources-within-your-on-premises-data-gateway"></a>Opgave 3: Tilføjelse af datakilder i din datagateway i det lokale miljø
 1. Når din tabelmodel er udrullet og klar til forbrug, skal du føje en datakildeforbindelse til din Analysis Services-tabelserver i det lokale miljø i din Power BI-portal.
-2. Hvis du vil give **Power BI-tjenesten** adgang til din analysetjeneste i det lokale miljø, skal du i dit miljø have installeret og konfigureret en **[datagateway i det lokale miljø](service-gateway-onprem.md)**.
+2. Hvis du vil give **Power BI-tjenesten** adgang til din analysetjeneste i det lokale miljø, skal du i dit miljø have installeret og konfigureret en **[datagateway i det lokale miljø](service-gateway-onprem.md)** .
 3. Når gatewayen er konfigureret korrekt, skal du oprette en datakildeforbindelse til din forekomst af **Analysis Services**-tabellen. I denne artikel kan du få hjælp til at [tilføje en datakilde i Power BI-portalen](service-gateway-enterprise-manage-ssas.md).
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/pbi_gateway.png)

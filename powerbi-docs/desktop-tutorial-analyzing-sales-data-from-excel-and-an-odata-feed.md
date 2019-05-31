@@ -11,11 +11,11 @@ ms.date: 05/21/2018
 ms.author: v-thepet
 LocalizationGroup: Learn more
 ms.openlocfilehash: 94e40681d065591db008f8a9062d851e0bd83f61
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285754"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61368338"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Selvstudium: Kombiner salgsdata fra Excel og et OData-feed
 
@@ -114,7 +114,7 @@ I Power-forespørgselseditor kan du oprette beregninger og brugerdefinerede felt
    
 2. I dialogboksen **Brugerdefineret kolonne** skal du skrive **LineTotal** i feltet **Nyt kolonnenavn**.
 
-3. I feltet **Formel for brugerdefineret kolonne:** Efter **=** skal du angive **[Order_Details.UnitPrice]** \* **[Order_ Details.Quantity]**. Du kan også vælge feltnavnene fra rulleboksen **Tilgængelige kolonner** og vælge **<< Indsæt** i stedet at skrive dem. 
+3. I feltet **Formel for brugerdefineret kolonne:** Efter **=** skal du angive **[Order_Details.UnitPrice]** \* **[Order_ Details.Quantity]** . Du kan også vælge feltnavnene fra rulleboksen **Tilgængelige kolonner** og vælge **<< Indsæt** i stedet at skrive dem. 
 3. Vælg **OK**.
    
    ![Dialogboksen Brugerdefineret kolonne](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/11.png)
@@ -208,7 +208,7 @@ Først skal du oprette et stablet søjlediagram, der bruger felter fra begge for
    
 2. Vælg **ProductName** fra **Products** i ruden **Felter**, eller træk det til diagrammet for at få vist antallet af bestilte produkter. 
    
-3. Hvis du vil sortere produkterne efter mest til mindst bestilt, skal du vælge ellipsen **Flere indstillinger** (**...**) øverst til højre i visualiseringen og derefter vælge **Sortér efter antal**.
+3. Hvis du vil sortere produkterne efter mest til mindst bestilt, skal du vælge ellipsen **Flere indstillinger** ( **...** ) øverst til højre i visualiseringen og derefter vælge **Sortér efter antal**.
    
 4. Brug håndtagene i hjørnerne af diagrammet til at udvide det, så flere produktnavne bliver synlige. 
    

@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 52876f05eba098466b3f0b8cebc614d10a3cd277
-ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
-ms.translationtype: HT
+ms.openlocfilehash: d766730185a9064241621d15efc9faf31334fe95
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58220902"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136444"
 ---
-# <a name="link-entities-between-dataflows-in-power-bi-preview"></a>Link Objekter mellem dataflow i Power BI (prøveversion)
+# <a name="link-entities-between-dataflows-in-power-bi"></a>Link objekter mellem dataflow i Power BI
 
 Med dataflow i Power BI kan du have en enkelt lagerkilde med organisationsdata, hvor forretningsanalytikere kan forberede og administrere deres data én gang og derefter genbruge dem i forskellige analyseapps i organisationen. 
 
@@ -29,7 +29,7 @@ Linkede objekter er **skrivebeskyttet**. Hvis du vil oprette transformationer fo
 
 ## <a name="linked-entity-availability"></a>Tilgængelighed af linket objekt
 
-Der kræves et [Power BI Premium](service-premium.md)-abonnement for at opdatere linkede objekter. Linkede objekter er tilgængelige i et hvilket som helst dataflow i et arbejdsområde, der er hostet på Power BI Premium-kapaciteten. Der er ingen begrænsninger på kildedataflowet.
+Der kræves et [Power BI Premium](service-premium-what-is.md)-abonnement for at opdatere linkede objekter. Linkede objekter er tilgængelige i et hvilket som helst dataflow i et arbejdsområde, der er hostet på Power BI Premium-kapaciteten. Der er ingen begrænsninger på kildedataflowet.
 
 Linkede objekter fungerer kun korrekt i nye Power BI-arbejdsområder. Du kan få mere at vide om [nye Power BI-arbejdsområder](service-create-the-new-workspaces.md). Alle linkede dataflow skal findes i nye arbejdsområder, for at de fungerer korrekt.
 
@@ -88,11 +88,11 @@ Der er nogle få begrænsninger, som du skal være opmærksom på, når du arbej
 
 Følgende artikler kan være nyttige, når du opretter eller arbejder med dataflow. 
 
-* [Selvbetjent dataforberedelse i Power BI (prøveversion)](service-dataflows-overview.md)
+* [Selvbetjening dataforberedelse i Power BI](service-dataflows-overview.md)
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Brug beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
-* [Brug dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
+* [Ved hjælp af den beregnede enheder på Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Ved hjælp af dataflows med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI dataflows](service-dataflows-developer-resources.md)
 
 Du kan finde flere oplysninger om Power-forespørgsel og planlagt opdatering i disse artikler:
 * [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)

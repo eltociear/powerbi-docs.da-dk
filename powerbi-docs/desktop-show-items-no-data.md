@@ -11,11 +11,11 @@ ms.date: 01/03/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: a687e42ef2963ce5e85bd1e0be72c2562afa5b6c
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279981"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61370435"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Vis elementer uden data i Power BI
 
@@ -36,7 +36,7 @@ Lad os kigge på en tabel som et simpelt eksempel for at komme i gang med at for
 |Blå     |Lille         |
 |Red     |Stor         |
 
-I dette eksempel viser Power BI kombinationer af *[Farve – Størrelse]*, som findes i tabellen *[Produkt]*. 
+I dette eksempel viser Power BI kombinationer af *[Farve – Størrelse]* , som findes i tabellen *[Produkt]* . 
 
 Las os nu se på en anden kombination:
 
@@ -47,7 +47,7 @@ Las os nu se på en anden kombination:
 |Blank     |Blå         |10         |
 |Mat     |Blå         |15         |
 
-I dette eksempel viser Power BI kun kombinationer, der findes. Der vises f.eks. ikke ("Ingen" + "Blå") eller ("Mat" + "Rød"), da disse kombinationer ikke findes i modulet. Den betingelse, der bestemmer, hvilke kombinationer der findes, er værdien for *Sum(Salg[Antal])*, som ikke må være tom.
+I dette eksempel viser Power BI kun kombinationer, der findes. Der vises f.eks. ikke ("Ingen" + "Blå") eller ("Mat" + "Rød"), da disse kombinationer ikke findes i modulet. Den betingelse, der bestemmer, hvilke kombinationer der findes, er værdien for *Sum(Salg[Antal])* , som ikke må være tom.
 
 Las os se på en anden sag: 
 
@@ -59,9 +59,9 @@ Las os se på en anden sag:
 |Blank     |Red         |
 |Mat     |Blå         |
 
-Da der ikke er nogen eksplicit måling, og de to tabeller er direkte relateret, forsøger Power BI at indsætte en måling for at begrænse de kombinationer, der er resultatet. I dette tilfælde indsætter Power BI en måling af typen *BEREGN(ANTALRÆKKER("Produkt"))*, som ikke må være tom, da *Produkt* er den tabel, som er fælles for begge tabeller.
+Da der ikke er nogen eksplicit måling, og de to tabeller er direkte relateret, forsøger Power BI at indsætte en måling for at begrænse de kombinationer, der er resultatet. I dette tilfælde indsætter Power BI en måling af typen *BEREGN(ANTALRÆKKER("Produkt"))* , som ikke må være tom, da *Produkt* er den tabel, som er fælles for begge tabeller.
 
-Derfor viser Power BI de kombinationer, der har poster i tabellen Produkt, hvilket udelukker kombinationerne *("Ingen" + "Blå")* og *("Mat" + "Rød")*.
+Derfor viser Power BI de kombinationer, der har poster i tabellen Produkt, hvilket udelukker kombinationerne *("Ingen" + "Blå")* og *("Mat" + "Rød")* .
 
 **4. Grupper fra forskellige og ikke-relaterede tabeller**
 
@@ -135,7 +135,7 @@ Sådan ser det ud, når funktionen **Vis elementer uden data** er slået til:
 Bemærk, at *(Blank – Rød)* og *(Ingen – Tom)* blev vist som kombinationer. Her er årsagen til, at de blev vist:
 * Power BI overvejede først Produktstil[Finish] og valgte alle værdier, der kunne vises. Dette resulterede i Blank, Mat og Ingen.
 * Ved hjælp af hver af disse værdier valgte Power BI alle tilsvarende poster for *Produkt[Farve]* 
-* Da *Ingen* ikke svarer til nogen *Produkt[Farve]*, vises der ikke noget for denne værdi
+* Da *Ingen* ikke svarer til nogen *Produkt[Farve]* , vises der ikke noget for denne værdi
 
 Det er vigtigt at bemærke, at mekanismen med at vælge værdier for kolonnerne afhænger af rækkefølgen og kan opfattes som en handling af typen *venstre ydre joinforbindelse* mellem tabeller. Hvis rækkefølgen af kolonnerne ændres, ændres resultaterne også.
 

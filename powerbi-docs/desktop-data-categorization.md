@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 5b6bbf7a203d8e87d129b6336be4f4531ae34107
-ms.sourcegitcommit: 2116af72f435cd30f1401bb9c7afdcbc76b1c3ce
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454494"
 ---
 # <a name="data-categorization-in-power-bi-desktop"></a>Datakategorisering i Power BI Desktop
@@ -33,7 +33,7 @@ Skal Power BI Desktop behandle koderne i kolonnen GeoCode som en forkortelse for
 **Sådan angiver du en datakategori**
 
 1. I Rapportvisning eller Datavisning på listen **Felter** skal du vælge det felt, der skal sorteres efter en anden kategorisering.
-2. På fanen **Modellering** på båndet skal du klikke på rullelisten **Datakategori:**.  Dermed får du vist listen over mulige datakategorier, du kan vælge imellem til kolonnen.  Nogle valgmuligheder kan være deaktiveret, hvis de ikke fungerer med den aktuelle datatype for kolonnen.  Hvis en kolonne f.eks. er en binær datatype, kan du ikke vælge geografiske datakategorier i Power BI Desktop. 
+2. På fanen **Modellering** på båndet skal du klikke på rullelisten **Datakategori:** .  Dermed får du vist listen over mulige datakategorier, du kan vælge imellem til kolonnen.  Nogle valgmuligheder kan være deaktiveret, hvis de ikke fungerer med den aktuelle datatype for kolonnen.  Hvis en kolonne f.eks. er en binær datatype, kan du ikke vælge geografiske datakategorier i Power BI Desktop. 
 
 ![](media/desktop-data-categorization/datacategorization.gif)
 

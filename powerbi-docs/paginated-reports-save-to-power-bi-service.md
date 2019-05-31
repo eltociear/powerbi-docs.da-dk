@@ -1,20 +1,20 @@
 ---
 title: Publicer en sideinddelt rapport i Power BI-tjenesten (eksempelvisning)
 description: I dette selvstudium lærer du at publicere en sideinddelt rapport i Power BI-tjenesten ved at uploade den fra din lokale computer.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 58fc7a6b8ebc5519c1c4bb1835758ca94ba225d2
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 93b712d385b78ea806e57769da72bdf41fbaefc3
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174539"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61423926"
 ---
 # <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Publicer en sideinddelt rapport i Power BI-tjenesten (eksempelvisning)
 
@@ -26,7 +26,7 @@ Hvis din datakilde til rapporten er i det lokale miljø, skal du [oprette en gat
 
 Hvis arbejdsområdet ikke har rombeikonet ![Rombeikon for Power BI Premium-kapacitet](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) ud for navnet, skal du føje arbejdsområdet til en Premium-kapacitet. 
 
-1. Vælg **Arbejdsområder**, vælg ellipsen (**...**) ud for navnet på arbejdsområdet, og vælg derefter **Rediger arbejdsområde**.
+1. Vælg **Arbejdsområder**, vælg ellipsen ( **...** ) ud for navnet på arbejdsområdet, og vælg derefter **Rediger arbejdsområde**.
 
     ![Vælg Rediger arbejdsområde](media/paginated-reports-save-to-power-bi-service/power-bi-paginated-edit-workspace.png)
 

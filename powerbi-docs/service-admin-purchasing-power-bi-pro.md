@@ -11,11 +11,11 @@ ms.date: 10/21/2018
 ms.author: mblythe
 LocalizationGroup: Administration
 ms.openlocfilehash: 15cd5e021969a050937b9d67eb7695f4fcde07c0
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383080"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61188431"
 ---
 # <a name="purchase-and-assign-power-bi-pro-licenses"></a>Køb og tildel Power BI Pro-licenser
 
@@ -59,7 +59,7 @@ Køb Power BI Pro-licenser ved at benytte følgende fremgangsmåde:
 
 6. Vælg **Betal en gang om måneden** eller **Betal for et helt år** afhængigt af dine ønsker.
 
-7. Angiv det ønskede antal licenser under **Hvor mange brugere ønsker du?**, og vælg derefter **Gå til kassen** for at gennemføre transaktionen.
+7. Angiv det ønskede antal licenser under **Hvor mange brugere ønsker du?** , og vælg derefter **Gå til kassen** for at gennemføre transaktionen.
 
 8. Kontrollér, at abonnementet nu vises på siden **Abonnementer**.
 

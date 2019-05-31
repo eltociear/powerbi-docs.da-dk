@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: e15333af4e2fb8508f76517b193ca4351c2782c7
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54007907"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61149564"
 ---
 # <a name="connect-to-prevedere-with-power-bi"></a>Opret forbindelse til Prevedere med Power BI
 Få adgang til eksklusive og vigtige økonomiske oplysninger, der sikkert og proaktivt kan drive din virksomhed fremad.

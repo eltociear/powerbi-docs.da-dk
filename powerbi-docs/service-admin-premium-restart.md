@@ -1,8 +1,8 @@
 ---
 title: Genstart en Power BI Premium-kapacitet
 description: Få mere at vide om, hvordan du genstarter en Power BI Premium-kapacitet for at løse problemer med ydeevnen.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 7fbd8bd9c7712dbd2476544fef900547310f35fa
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
-ms.translationtype: HT
+ms.openlocfilehash: 214b9fe48d5254e1bd2d436dd873b3c2d1d35f98
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794971"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65564924"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Genstart en Power BI Premium-kapacitet
 
@@ -31,7 +31,7 @@ Power BI forbedrer konstant, hvordan brugere af Premium-kapacitet beskyttes mod 
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Er det sikkert at genstarte? Mister jeg nogen data?
 
-Alle de gemte data, definitioner, rapporter og dashboards på din kapacitet forbliver intakte efter genstart. Når du genstarter en kapacitet, stoppes alle igangværende planlagte opdateringer og ad hoc-opdateringer. Opdateringer genstartes, når kapaciteten er tilgængelig. De brugere, der interagerer med kapaciteten, mister det arbejde, der ikke er gemt. De skal opdatere deres browsere, når genstarten er fuldført.
+Alle de gemte data, definitioner, rapporter og dashboards på din kapacitet forbliver intakte efter genstart. Når du genstarter en kapacitet, stoppes alle igangværende planlagte opdateringer og ad hoc-opdateringer. Tjenesten forsøger at gentage opdateres, når kapaciteten, der er tilgængelig. De brugere, der interagerer med kapaciteten, mister det arbejde, der ikke er gemt. De skal opdatere deres browsere, når genstarten er fuldført.
 
 ## <a name="how-do-i-restart-a-capacity"></a>Hvordan genstarter jeg en kapacitet?
 
@@ -57,6 +57,6 @@ Vi anbefaler også, at du [overvåger kapaciteterne](service-admin-premium-monit
 
 ## <a name="next-steps"></a>Næste trin
 
-[Hvad er Power BI Premium?](service-premium.md)
+[Hvad er Power BI Premium?](service-premium-what-is.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

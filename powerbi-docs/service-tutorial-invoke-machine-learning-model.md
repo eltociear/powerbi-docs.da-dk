@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 6c63f0bbcf836c90eecf7407d2d9805fc9ab443a
-ms.sourcegitcommit: 39bc75597b99bc9e8d0a444c38eb02452520e22b
-ms.translationtype: HT
+ms.openlocfilehash: 31c1cd7a8455232fdaa3bb3d391fb93e87ad5062
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58430317"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61404231"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Selvstudium: Aktivér en Machine Learning Studio-model i Power BI (prøveversion)
 
@@ -48,7 +48,7 @@ Log på [Azure Portal](https://portal.azure.com), og gå til siden **Abonnemente
 
 ![Azure-portal](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_01.png)
 
-Vælg det Azure-abonnement, som du brugte til publicering af modellen, og vælg **Access Control (IAM)**. Vælg derefter **Tilføj rolletildeling**, rollen **Læser**, og vælg Power BI-brugeren. Vælg **Gem**, når du er færdig. På følgende billede vises disse valg.
+Vælg det Azure-abonnement, som du brugte til publicering af modellen, og vælg **Access Control (IAM)** . Vælg derefter **Tilføj rolletildeling**, rollen **Læser**, og vælg Power BI-brugeren. Vælg **Gem**, når du er færdig. På følgende billede vises disse valg.
 
 ![Access Control i Azure Portal](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_02.png)
 
@@ -76,9 +76,9 @@ Når arbejdsområdet er blevet oprettet, kan du vælge **Spring over** nederst t
 
 ![Spring over](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_04.png)
 
-Vælg fanen **Dataflow (prøveversion)**, vælg knappen **Opret** øverst til højre i arbejdsområdet, og vælg derefter **Dataflow**.
+Vælg fanen **Dataflow (prøveversion)** , vælg knappen **Opret** øverst til højre i arbejdsområdet, og vælg derefter **Dataflow**.
 
-![Dataflow (prøveversion)](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_05.png)
+![Dataflow (forhåndsvisning)](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_05.png)
 
 Vælg **Tilføj nye enheder**, hvilket starter **Power-forespørgselseditor** i browseren.
 
@@ -90,7 +90,7 @@ Vælg **Tekst/CSV-fil** som en datakilde.
 
 Du bliver bedt om at oprette forbindelse til en datakilde på det næste skærmbillede. Indsæt linket til de data, du brugte til at oprette din Azure ML-model. Hvis du har brugt dataene om _bilpriser_, kan du indsætte følgende link i feltet **Filsti eller URL-adresse** og derefter vælge **Næste**.
 
-`https://raw.githubusercontent.com/santoshc1/PowerBI‑AI‑samples/master/Tutorial\_MLStudio\_model\_integration/Automobile%20price%20data%20\_Raw\_.csv`
+`https://raw.githubusercontent.com/MicrosoftLearning/Principles-of-Machine-Learning-Python/master/Module7/Automobile%20price%20data%20_Raw_.csv`
 
 ![Opret forbindelse til datakilde](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_08.png)
 

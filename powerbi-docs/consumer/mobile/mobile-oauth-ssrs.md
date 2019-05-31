@@ -1,20 +1,20 @@
 ---
 title: Brug OAuth til at oprette forbindelse til Power BI-rapportserver og SSRS
 description: Få mere at vide om, hvordan du konfigurerer dit miljø til at understøtte OAuth-godkendelse med Power BI-mobilappen for at oprette forbindelse til SQL Server Reporting Services 2016 eller nyere.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2018
-ms.openlocfilehash: 6e0b1c5d4a067925e4898cf23968cc14fd3f8fd6
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: ae56a27393ba476828ff87d7f458815318ea79c1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383617"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770360"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Brug OAuth til at oprette forbindelse til Power BI-rapportserver og SSRS
 
@@ -25,7 +25,7 @@ Få mere at vide om, hvordan du konfigurerer dit miljø til at understøtte OAut
 Du kan bruge OAuth til at oprette forbindelse til Power BI-rapportserver og Reporting Services for at få vist mobilrapporter eller KPI'er. Windows Server 2016 indeholder forbedringer til rollen Web Application Proxy (WAP) for at tillade denne type godkendelse.
 
    > [!NOTE]
-   > Visning af Power BI-rapporter, der hostes på Power BI-rapportserver vha. WAP-godkendelse, understøttes ikke officielt på nuværende tidspunkt.
+   > Få vist Power BI-rapporter, der hostes i Power BI Report Server understøttes ved hjælp af WAP til at godkende i øjeblikket kun i iOS-app. Android-app er officielt ikke understøttes på nuværende tidspunkt.
 
 ## <a name="requirements"></a>Krav
 
@@ -118,7 +118,7 @@ Du kan oprette programgruppen vha. følgende trin.
    > [!NOTE]
    > I denne URL-adresse er der forskel på store og små bogstaver!
 
-   *https://<url to report server>/reports*
+   *https://< URL-adresse til report server > / rapporter*
 
    ![ADFS Application Group Wizard 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Vælg **Næste**.
@@ -191,7 +191,7 @@ Du skal benytte følgende fremgangsmåde for at konfigurere begrænset delegerin
 Mens du kan udgive programmer i administrationskonsollen for rapportadgang, opretter vi programmet via PowerShell. Her er kommandoen, der skal bruges i forbindelse med tilføjelse af programmet.
 
 ```powershell
-Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/reports/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/reports/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
+Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentication ADFS -ExternalUrl https://reports.contoso.com/ -ExternalCertificateThumbprint "0ff79c75a725e6f67e3e2db55bdb103efc9acb12" -BackendServerUrl http://ContosoSSRS/ -ADFSRelyingPartyName "Reporting Services - Web API" -BackendServerAuthenticationSPN "http/ContosoSSRS.contoso.com" -UseOAuthAuthentication
 ```
 
 | Parameter | Kommentarer |

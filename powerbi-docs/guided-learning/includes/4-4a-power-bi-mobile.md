@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 3548f02e91c6ebc5a2ea985777cdaceda9661185
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255584"
+---
 Hvis du vil holde styr på dine data, mens du er på farten, kan du bruge et af Power BI's mobile programmer til iOS-, Android- og Windows-enheder.
 
 Når du bruger Power BI-appen, skal du først logge på din konto med dine kontooplysninger i Power BI-tjenesten. På en Windows-mobilenhed (i dette tilfælde en tablet) ser logon-processen således ud:

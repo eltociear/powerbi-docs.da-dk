@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 04/19/2019
 ms.author: maggies
-ms.openlocfilehash: 282638c7c1c8a60ee93292602766d63fd0fe436e
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 83049a16ecd42b41375da57a5a99a374596a9846
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249582"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65514855"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi-preview"></a>Tip til udarbejdelse af skabelonprogrammer i Power BI (prøveversion)
 
@@ -23,7 +23,8 @@ Når du [udarbejder dit skabelonprogram](service-template-apps-create.md) i Powe
 * Med **forespørgsler** kan du [oprette forbindelse til](desktop-connect-to-data.md) og [transformere](desktop-query-overview.md) dataene samt definere [parametre](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/). 
 * I **datamodellen** opretter du [relationer](desktop-create-and-manage-relationships.md), [målinger](desktop-measures.md) og forbedringer af Spørgsmål og svar.  
 * **[Rapportsider](desktop-report-view.md)** indeholder visualiseringer og filtre, som kan hjælpe med at give indsigt i dine data.  
-* **[Dashboards](consumer/end-user-dashboards.md)** og [felter](service-dashboard-create.md) hjælper med at give et overblik over den inkluderede indsigt.  
+* **[Dashboards](consumer/end-user-dashboards.md)** og [felter](service-dashboard-create.md) hjælper med at give et overblik over den inkluderede indsigt.
+* Opret prøveeksempel af data gør din app lettere at finde umiddelbart efter installationen.
 
 Du kender hver enkelt del som eksisterende funktioner i Power BI. Når du udarbejder et skabelonprogram, er der flere ting, du bør overveje for hver enkelt del. Du kan finde flere oplysninger under de enkelte afsnit herunder.
 
@@ -38,7 +39,7 @@ Du kommer i gang ved at oprette forbindelse til din API fra Power BI Desktop, s�
 Du kan bruge de dataconnectorer i Power BI Desktop, der er klar til brug, til at oprette forbindelse til din API. Du kan bruge Web Data Connector (Hent Data -> Web) til at oprette forbindelse til din Rest API eller OData-connectoren (Hent Data -> OData-feed) for at oprette forbindelse til dit OData-feed. Disse connectorer er kun klar til brug, hvis din API understøtter grundlæggende godkendelse.
 
 > [!NOTE]
-> Hvis din API bruger andre godkendelsestyper, f.eks. OAuth 2.0 eller Web API-nøgle, skal du udvikle din egen dataconnector, så Power BI Desktop kan oprette forbindelse til og godkendes til din API. Du kan få flere oplysninger om, hvordan du udvikler din egen dataconnector til skabelonprogrammet i [dokumentationen til dataconnectorer](https://aka.ms/DataConnectors). 
+> Hvis din API bruger andre godkendelsestyper, f.eks. OAuth 2.0 eller Web API-nøgle, skal du udvikle din egen dataconnector, så Power BI Desktop kan oprette forbindelse til og godkendes til din API. Den brugerdefinerede connector skal føjes til PBI-tjenesten at få adgang til skabelonen app under installationen. <br> Du kan få flere oplysninger om, hvordan du udvikler din egen dataconnector til skabelonprogrammet i [dokumentationen til dataconnectorer](https://aka.ms/DataConnectors). 
 >
 >
 
@@ -70,8 +71,6 @@ En veldefineret datamodel sikrer, at dine kunder nemt og intuitivt kan interager
 
 > [!NOTE]
 > Du bør udføre meget af den grundlæggende udformning (indtastning, kolonnenavne) i [forespørgslerne](#queries).
->
-
 
 ### <a name="qa"></a>Spørgsmål og svar
 Udformningen har også indflydelse på, i hvor høj grad Spørgsmål og svar kan levere resultater til dine kunder. Sørg for at føje synonymer til ofte anvendte kolonner, og at du har navngivet dine kolonner korrekt i [forespørgslerne](#queries).
@@ -79,8 +78,9 @@ Udformningen har også indflydelse på, i hvor høj grad Spørgsmål og svar kan
 ### <a name="additional-data-model-tips"></a>Flere tip til datamodeller
 
 Sørg for, at du har gjort følgende:
+
 * Anvendt formatering på alle værdikolonner. Anvendt typer i forespørgslen.  
-* Anvendt formatering på alle målinger. 
+* Anvendt formatering på alle målinger.
 * Angivet standardopsummering. Specielt "Opsummer ikke", når det er relevant (f.eks. til entydige værdier).  
 * Angivet datakategori, når det er relevant.  
 * Angivet relationer efter behov.  
@@ -88,10 +88,6 @@ Sørg for, at du har gjort følgende:
 ## <a name="reports"></a>Rapporter
 Med rapportsider får du yderligere indsigt i de data, der er inkluderet i dit skabelonprogram. Brug siderne i rapporterne til at besvare de vigtigste forretningsspørgsmål, som dit skabelonprogram prøver at håndtere. Opret rapporten ved hjælp af Power BI Desktop.
 
-> [!NOTE]
-> Du kan kun inkludere én rapport i et skabelonprogram, så udnyt fordelene ved de forskellige sider til at forklare bestemte dele af dit scenarie.
->
->
 
 ### <a name="additional-report-tips"></a>Flere tip til rapporter
 
@@ -110,10 +106,6 @@ Dine kunder bruger primært dashboardet til at interagere med dit skabelonprogra
 
 Når du vil oprette et dashboard for dit skabelonprogram, skal du blot uploade din PBIX via Hent data > Filer eller udgive direkte fra Power BI Desktop.
 
-> [!NOTE]
-> Skabelonprogrammer kræver i øjeblikket en enkelt rapport og et enkelt datasæt pr. skabelonprogram. Fastgør ikke indhold fra flere rapporter/datasæt på dashboardet, der bruges i skabelonprogrammet.
->
->
 
 ### <a name="additional-dashboard-tips"></a>Flere tip til dashboard
 
@@ -123,18 +115,38 @@ Når du vil oprette et dashboard for dit skabelonprogram, skal du blot uploade d
 * Alle dashboardfelter skal have relevante titler/undertitler.  
 * Overvej at anvende grupperinger på dashboardet til forskellige scenarier enten lodret eller vandret.  
 
+## <a name="sample-data"></a>Eksempeldata
+Skabelon-apps, som en del af app oprettelse af fase, må ombrydes cache dataene i arbejdsområdet som en del af appen:
+
+* Gør det muligt for installationsprogrammet for at forstå funktionalitet og formålet med appen, før du opretter forbindelse til data.
+* Opretter en oplevelse, der styrer installationsprogrammet for at udforske yderligere appfunktioner, der fører til at oprette forbindelse app datasættet.
+
+Det anbefales at have kvalitet eksempeldata, før du opretter appen. Sørg for, at app rapporten og dashboards er udfyldt med data.
+
+## <a name="publishing-on-appsource"></a>Udgivelse på AppSource
+Skabelon apps kan publiceres på AppSource, skal du følge disse retningslinjer før indsendelse af din app på AppSource:
+
+* Sørg for, at du opretter en skabelonapp med engagerende eksempeldata, som kan hjælpe med at forstå, hvad appen kan gøre installationsprogrammet (tom rapport og et dashboard er ikke godkendt).
+Skabelon apps understøtter eksempler på data kun apps, skal du huske at afkrydsningsfeltet statisk app. [Få mere at vide](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Har instruktioner at følge, der omfatter legitimationsoplysninger og parametre, der er nødvendige for at oprette forbindelse til data-teamet validering.
+* Programmet skal indeholde et appikon, i Power BI og på dit CPP tilbud. [Få mere at vide](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Landingsside, der er konfigureret. [Få mere at vide](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Sørg for at følge dokumentationen [Power BI-App tilbud](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-power-bi-offer).
+* I tilfælde af et dashboard er en del af din app, Sørg for, at det ikke er tom.
+* Installerer appen ved hjælp af linket til appen, før du udgiver den, og Sørg for, at du kan oprette forbindelse til datasættet og app-oplevelsen er, som du har planlagt.
+* Før du overfører bpix i apparbejdsområdet skabelon, Sørg for at fjerne alle unødvendige forbindelser.
+* Følg Power BI [bedste praksis for design rapporter og visuelle elementer](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-best-practices) til at opnå maksimal indflydelse på dine brugere og er godkendt til distribution.
+
 ## <a name="known-limitations"></a>Kendte begrænsninger
 
 | Udvalgt | Kendt begrænsning |
 |---------|---------|
 |Indhold:  Datasæt   | Nøjagtigt ét datasæt skal være til stede. Der tillades kun datasæt, som er udarbejdet i Power BI Desktop (.pbix-filer). <br>Understøttes ikke: Datasæt fra andre skabelonprogrammer, datasæt på tværs af arbejdsområder, sideinddelte rapporter (.rdl-filer), Excel-projektmapper |
-|Indhold: Rapporter     | Op til én rapport    |
-| Indhold: Dashboards | Op til ét dashboard, der ikke er tomt <br>Understøttes ikke: Felter i realtid (med andre ord, så understøttes PushDataset eller pubnub ikke) |
-| Indhold: Dataflow | Understøttes ikke: Dataflow |
-| Indhold fra filer | Der tillades kun PBIX-filer. <br>Understøttes ikke: .rdl-filer (sideinddelte rapporter), Excel-projektmapper   |
-| Datakilder | Der tillades datakilder, som understøttes for planlagt dataopdatering i cloudmiljøet. <br>Understøttes ikke: <br>DirectQuery <br>Direkte forbindelser (ingen Azure AS) <br>Datakilder i det lokale miljø (personlige gateways og virksomhedsgateways understøttes ikke) <br>Realtid (PushDataset understøttes ikke) <br>Sammensatte modeller |
+|Indhold: Dashboards | Felter i realtid er ikke tilladt (med andre ord, ingen understøttelse af push eller streaming-datasæt) |
+|Indhold: Dataflow | Understøttes ikke: Dataflow |
+|Indhold fra filer | Der tillades kun PBIX-filer. <br>Understøttes ikke: .rdl-filer (sideinddelte rapporter), Excel-projektmapper   |
+| Datakilder | Der tillades datakilder, som understøttes for planlagt dataopdatering i cloudmiljøet. <br>Understøttes ikke: <li> DirectQuery</li><li>Direkte forbindelser (ingen Azure AS)</li> <li>I det lokale miljø (personlig og enterprise gateways ikke understøttes) datakilder</li> <li>Realtid (ingen understøttelse af push-datasæt)</li> <li>Sammensatte modeller</li></ul> |
 | Datasæt: på tværs af arbejdsområde | Datasæt på tværs af arbejdsområder er ikke tilladt  |
-| Indhold: Dashboards | Felter i realtid tillades ikke (med andre ord, så understøttes PushDataset eller pubnub ikke) |
 | Forespørgselsparametre | Understøttes ikke: Parametre af typen "Any" eller "Binary" blokerer opdateringshandlinger for datasæt |
 | Brugerdefinerede visualiseringer | Der understøttes kun offentligt tilgængelige visualiseringer. [Brugerdefinerede visualiseringer til virksomheder](power-bi-custom-visuals-organization.md) understøttes ikke |
 

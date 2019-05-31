@@ -11,10 +11,10 @@ ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
 ms.openlocfilehash: dc6aa42691c7caa2593b28e441f96985b1e3bcda
-ms.sourcegitcommit: b11e908650379913d00673215e3eaf25d712b122
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65239458"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Almindelige forespørgselsopgaver i Power BI Desktop
@@ -63,7 +63,7 @@ Det samme gælder for andre dataforbindelser. Hvis godkendelse er nødvendig for
 Hvis du vil have en trinvis vejledning til, hvordan du opretter forbindelse til data i Power BI Desktop, skal du se [Opret forbindelse til data i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-connect-to-data).
 
 ## <a name="shape-and-combine-data"></a>Form og kombiner data
-Du kan nemt forme og kombinere data ved hjælp af Forespørgselseditor. Dette afsnit indeholder nogle eksempler på, hvordan du kan forme data. Hvis du vil have en mere komplet demonstration af, hvordan du former og kombinere data, skal du se **[Form og kombiner data med Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data)**.
+Du kan nemt forme og kombinere data ved hjælp af Forespørgselseditor. Dette afsnit indeholder nogle eksempler på, hvordan du kan forme data. Hvis du vil have en mere komplet demonstration af, hvordan du former og kombinere data, skal du se **[Form og kombiner data med Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-shape-and-combine-data)** .
 
 I det forrige afsnit tilsluttede vi to datasæt – en Excel-projektmappe og en webressource. Når dataene indlæses i Forespørgselseditor, får vi vist følgende, hvor forespørgslen fra websiden er valgt (taget fra de tilgængelige forespørgsler, der er angivet i ruden **Forespørgsler** i venstre side af vinduet Forespørgselseditor).
 

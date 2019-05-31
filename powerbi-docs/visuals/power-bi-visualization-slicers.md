@@ -8,15 +8,15 @@ featuredvideoid: zIZPA0UrJyA
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 10/25/2018
+ms.date: 05/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: e2c9daf54ec18b53655043cd4a472674ee5123be
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: f5eed81a5750bebb4df968a09cd1fcfd2aa069d1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295929"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710899"
 ---
 # <a name="slicers-in-power-bi"></a>Udsnitsværktøjer i Power BI
 Du vil gerne give rapportlæserne mulighed for at se de overordnede salgstal, men samtidig fremhæve resultaterne for individuelle distriktsledere (District Manager) og forskellige tidsperioder. Du kan oprette separate rapporter eller diagrammer til sammenligning, eller du kan bruge udsnit. Et udsnit er en alternativ metode til filtrering, som begrænser den del af datasættet, der vises i andre visualiseringer i en rapport. 
@@ -42,7 +42,7 @@ Der er følgende begrænsninger for udsnit i Power BI:
 
 ## <a name="create-slicers"></a>Opret udsnit
 
-Du kan oprette et udsnit ved at vælge udnitsikonet og derefter vælge det datafelt, du vil filtrere efter (eller trække det til feltet **Felter** i ruden **Visualiseringer**), eller du kan vælge eller trække datafeltet først for at oprette en visualisering og derefter vælge udsnitsikonet for at ændre visualiseringen til et udsnit. Forskellige datatyper opretter forskellige typer udsnit med forskellige effekter og indstillinger. 
+For at oprette et nyt udsnit, kan du vælge udsnitsfilterikonet og derefter vælge det datafelt til at filtrere på (eller trække det til den **filtre** feltet den **visualiseringer** ruden), eller du kan vælge eller trække datafeltet først til Opret en visualisering, og vælg derefter ikonet udsnit for at ændre Visualiseringen til et udsnit. Forskellige datatyper opretter forskellige typer udsnit med forskellige effekter og indstillinger. 
 
 Når du ændrer en rapport første gang, vil knappen **Nulstil til standard** lyse op. Dette er en påmindelse om, at du har foretaget en ændring i de oprindelige rapportindstillinger. Hvis du navigerer væk fra rapporten, gemmes ændringen. Når du vender tilbage til rapporten, skal du ikke oprette nye udsnit.  Hvis du vil nulstille rapporten til forfatterens standardindstillinger, skal du dog vælge knappen **Nulstil til standard** på den øverste menulinje.
 
@@ -51,26 +51,30 @@ Når du ændrer en rapport første gang, vil knappen **Nulstil til standard** ly
 > [!NOTE]
 > Hvis knappen **Nulstil til standard** forbliver deaktiveret, betyder det enten, at rapportens forfatter har deaktiveret funktionen for rapporten, eller det betyder, at rapporten indeholder en brugerdefineret visualisering. Du skal blot pege på knappen for at læse værktøjstippet for at få en forklaring. 
 
-**Sådan opretter du et nyt udsnit for at filtrere data efter District Manager**
+**Opret et nyt udsnit for at filtrere data efter District Manager**
 
-1. Åbn [Retail Analysis Sample](../sample-retail-analysis.md) i Power BI Desktop eller Power BI-tjenesten. I Power BI-tjenesten skal du vælge **Rediger rapport** øverst til venstre.
-2. På siden **Oversigt** skal du vælge ikonet **Udsnit** (uden at du har markeret noget på dit lærred) ![udsnitsikonet](media/power-bi-visualization-slicers/slicer-icon.png) i ruden **Visualiseringer** for at oprette et nyt udsnit. 
-3. Med det nye udsnit markeret skal du vælge **District Manager** under **District** i ruden **Felter** for at udfylde udsnittet. Det nye udsnit er en liste med afkrydsningsfelter ud for navnene. 
+1. Åbn i Power BI Desktop eller Power BI-tjenesten, den [Retail Analysis Sample](../sample-retail-analysis.md). I Power BI-tjenesten skal du vælge **Rediger rapport** øverst til venstre.
+2. På siden med oversigt over uden noget på lærredet, skal du vælge den **udsnittet** ikonet ![udsnitsikonet](media/power-bi-visualization-slicers/slicer-icon.png) i den **visualiseringer** rude for at oprette et nyt udsnit. 
+3. Med det nye udsnit markeret, fra ruden Fields skal du vælge **District** > **DM** til at udfylde udsnittet. Det nye udsnit er en liste med afkrydsningsfelter ud for navnene. 
     
-    ![nyt udsnit](media/power-bi-visualization-slicers/2-slicer.png)
+    ![nyt udsnit](media/power-bi-visualization-slicers/power-bi-new-slicer.png)
     
 4. Tilpas størrelsen på udsnittet, og træk udsnittet og andre elementet på lærredet for at gøre plads til udsnittet. Bemærk, at elementerne i udsnittet bliver afskåret, hvis du gør udsnittet for lille. 
-5. Vælg navne på udsnittene, og bemærk, hvordan det påvirker de øvrige visualiseringer på siden. Vælg navnene igen for at fjerne markeringen af dem, og hold **Ctrl** nede for at markere mere end ét navn. Hvis du markerer alle navnene, vil det have samme effekt som ikke at markere nogen af dem. 
+5. Vælg navne på udsnittene, og bemærk, hvordan det påvirker de øvrige visualiseringer på siden. Vælg navnene igen for at fjerne markeringen af dem, og hold **Ctrl** nede for at markere mere end ét navn. Hvis du markerer alle navnene, vil det have samme effekt som ikke at markere nogen af dem. \
 
+6. Alternativt kan du vælge ikonet med malerullen for at formatere udsnittet. Der er ganske enkelt for mange muligheder for at beskrive dem alle her – så eksperimentere og oprette et udsnit, der fungerer for dig. Første udsnittet er blevet konverteret til en rulleliste til at spare plads i nedenstående eksempler, og indstillingen "Vælg alle" er blevet tilføjet.  Anden udsnittet er blevet formateret med farver, størrelser af skrifttyper, og tillader kun én enkelt markering.
+
+   ![nyt udsnit](media/power-bi-visualization-slicers/power-bi-filter-examples.png)
 >[!TIP]
->Listeudsnitselementer sorteres som standard i stigende alfabetisk rækkefølge. Hvis du vil sortere elementerne i udsnittet i omvendt alfabetisk rækkefølge, skal du vælge ellipsen (**...**) i øverste højre hjørne af udsnittet og derefter vælge **Sortér efter District Manager**. 
+>Listeudsnitselementer sorteres som standard i stigende alfabetisk rækkefølge. Hvis du vil sortere elementerne i udsnittet i omvendt alfabetisk rækkefølge, skal du vælge ellipsen ( **...** ) i øverste højre hjørne af udsnittet og derefter vælge **Sortér efter District Manager**. 
 
 **Sådan opretter du et nyt udsnit for at filtrere data efter datointerval**
 
-1. Vælg rullelisten **Tid** i ruden Felter (uden først at markere noget på lærredet), og træk **Måned** (eller **Dato** i Power BI-tjenesten) til feltet **Værdier** i ruden Visualiseringer for at oprette en ny visualisering.
+1. Intet på lærredet, rullelisten **dato** i ruden felter, og træk **dato** til den **værdier** i ruden visualiseringer for at oprette en ny visualisering.
 2. Med den nye visualisering markeret skal du vælge ikonet **Udsnit** for at konvertere den nye visualisering til et udsnit. Dette udsnit er en skyder med det angivne datointerval.
     
-    ![nyt intervaludsnit](media/power-bi-visualization-slicers/2a-date-slicer.png)
+    ![nyt intervaludsnit](media/power-bi-visualization-slicers/power-bi-date-slicer.png)
+
     
 4. Tilpas størrelsen på udsnittet, og træk udsnittet og andre elementet på lærredet for at gøre plads til udsnittet. Vær opmærksom på, at udsnittets størrelse tilpasses, når du tilpasser størrelsen på udsnittet, men hvis udsnittet bliver for lille, skjules udsnittet, og datoerne vil være beskåret. 
 4. Vælg et andet datointerval på skyderen, vælg et datofelt for at skrive en værdi, eller brug en pop op-kalender for at gør det nemt at vælge nøjagtige datoer. Bemærk, hvordan det påvirker de øvrige visualiseringer på siden.
@@ -78,8 +82,11 @@ Når du ændrer en rapport første gang, vil knappen **Nulstil til standard** ly
     >[!NOTE]
     >Numeriske data og data af typen dato/klokkeslæt kan oprettet udsnit med skydere som standard. Fra og med Power BI-opdateringen i februar 2018 vil skyderen med heltalsintervaller nu fastgøre til heltalsværdier og ikke vise decimaler. 
 
->[!TIP]
->Selvom datafeltet **Måned** opretter et udsnit med intervalskyderen **Mellem** som standard, kan du ændre den til andre udsnitstyper og andre vælgere. Hvis du vil ændre udsnitstypen, skal du markere udsnittet, pege på det øverste højre hjørne af udsnittet for at få vist en rulleliste og vælge en af de andre indstillinger, for eksempel **Liste** eller **Før**. Bemærk, hvordan udsnittets udseende og indstillingerne ændres. 
+
+5. Nu ændre værdien i feltet fra **dato** til **MonthIndex**.  Dette giver en **mellem** område udsnit som standard, men du kan ændre det til andre udsnitstyper og andre vælgere. Hvis du vil ændre udsnitstypen, skal du markere udsnittet, pege på det øverste højre hjørne af udsnittet for at få vist en rulleliste og vælge en af de andre indstillinger, for eksempel **Liste** eller **Før**. Bemærk, hvordan udsnittets udseende og indstillingerne ændres. 
+ 
+    ![nyt intervaludsnit](media/power-bi-visualization-slicers/power-bi-between-slicer.png)
+
 
 Hvis du vil vide mere om, hvordan du opretter udsnit med datointervaller eller talintervaller, skal du se følgende video og se [Brug udsnittet til talintervaller i Power BI Desktop](../desktop-slicer-numeric-range.md).
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zIZPA0UrJyA" frameborder="0" allowfullscreen></iframe> 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f66cc9f911c63703accb348e49133dbf3587d58a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61264477"
+---
 **Power BI Desktop** kan oprette forbindelse til en lang række datakilder, herunder databaser i det lokale miljø, Excel-projektmapper og cloudtjenester. I øjeblikket har over 59 forskellige cloudtjenester som f.eks. GitHub og Marketo specifikke connectors, og du kan oprette forbindelse til generiske datakilder via XML, CSV, tekst og ODBC. Power BI kan endda indsamle data i tabelformat direkte fra et websteds URL-adresse! Men lad os starte fra begyndelse med at åbne Power BI Desktop og oprette forbindelse til data.
 
 Når du starter **Power BI Desktop** og flytter forbi startskærmen, kan du vælge Hent data fra båndet under fanen **Hjem**.

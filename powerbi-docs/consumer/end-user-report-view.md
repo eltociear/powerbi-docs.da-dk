@@ -8,111 +8,43 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/10/2018
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: d3f526b79f6029943743e66b13745a9d037fe9b9
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: e2d3bec59078577e2b4d4595c0925753b2cbb53a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661508"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65608107"
 ---
-# <a name="change-the-size-of-a-report-page"></a>Skift størrelsen på en rapportside
-I den [tidligere artikel og video](../power-bi-report-display-settings.md) lærte du to forskellige måder at styre sidevisning i Power BI-rapporter på: **Vis** og **Sidestørrelse**. Sidevisning og Sidestørrelse fås i både Power BI-tjenesten og Power BI Desktop med næsten samme udseende og funktionsmåde, men i dette selvstudium bruger vi Power BI-tjenesten.
+# <a name="change-the-display-of-a-report-page"></a>Ændre visningen af en rapportside
+Rapporter vises på mange forskellige enheder med forskellig skærmstørrelse og størrelsesforhold.  Ændre måde, en rapportside vises til dine behov.    
 
-### <a name="prerequisites"></a>Forudsætninger
-- Power BI-tjenesten   
-- [Retail Analysis Sample-rapport](../sample-retail-analysis.md)
+![rapporten vises på lærredet](media/end-user-report-view/power-bi-report.png)
 
-## <a name="first-lets-change-the-page-view-setting"></a>Først skal vi ændre sidens Visningsindstilling
+## <a name="explore-the-view-menu"></a>Udforsk menuen Vis
+Indstillingerne i menuen Vis giver dig fleksibilitet til at få vist rapportsider på størrelsen og bredde, som du vælger.
 
-1. Åbn rapporten i Læsevisning eller Redigeringsvisning, og vælg rapportfanen for **Nye butikker**. Denne rapportside vises som standard ved hjælp af indstillingen **Tilpas til siden**.  I dette tilfælde viser Tilpas til siden rapportsiden uden rullepaneler, men nogle af oplysningerne og titlerne er for små til at læse.
+- Antag, at du får vist en rapport på en lille enhed, og det er svært at se titler og forklaringer.  Vælg **visning** > **faktisk størrelse** at øge størrelsen på siden i rapporten. Brug rullepanelerne til at flytte rundt i rapporten. 
 
-   ![rapporten vist på lærredet](media/end-user-report-view/pbi_fit_to_page.png)
-2. Sørg for, at der ikke er valgt nogen visuelle effekter på lærredet. Vælg **Vis** og gennemse visningsindstillingerne.
+    ![rapporten vises på lærredet med to rullepaneler](media/end-user-report-view/power-bi-actual-size-new.png)
 
-   * I Læsetilstand ser du dette.
 
-     ![Rullemenuen Vis med Tilpas til siden valgt](media/end-user-report-view/power-bi-page-view-menu-new.png)
-   * I Redigeringstilstand ser du dette.
+- En anden mulighed er at passe til din skærmbredde rapporten ved at vælge **Tilpas til bredde**. Dette kan stadig kræve brug af et lodret rullepanel.
 
-     ![Rullemenuen Vis med Tilpas til siden valgt](media/end-user-report-view/power-bi-view-editing-view.png)
+  ![Rapporten viser ved hjælp af hele lærredet bredde](media/end-user-report-view/power-bi-fit-to-width-new.png)
 
-3. Lad os se, hvordan siden ser ud til, vha. indstillingen **Faktisk størrelse**.
+- Hvis du ikke ønsker, at alle rullepaneler, men du vil gøre det bedste ud af din skærmens størrelse.  Vælg **Tilpas til siden**.
 
-   ![rapporten vises på lærredet med to rullepaneler](media/end-user-report-view/power-bi-actal-size2.png)
+   ![rapporten vises uden rullepaneler](media/end-user-report-view/power-bi-fit-to-width.png)
 
-   Ikke fantastisk. Dashboardet har nu dobbelte rullepaneler.
-4. Skift til **Tilpas til bredde**.
+   
+- Den sidste indstilling **fuld skærm**, viser din rapportside uden menulinjer og overskrifter. Fuld skærm kan være et godt valg for små skærme, hvor oplysningerne er svært at se.  Fuld skærm kan også være et godt valg, når projicerer rapportsider på store skærme for andre at få vist, men ikke arbejde.  
 
-   ![rapporten vises uden rullepaneler; kun ét rullepanel](media/end-user-report-view/pbi_fit_to_width.png)
+    ![Rapporten viser fuld skærm](media/end-user-report-view/power-bi-full-screen.png)
 
-   Det ser bedre ud. Vi har stadig ét rullepanel, men det er nemmere at læse oplysningerne.
-
-## <a name="change-the-default-view-for-a-report-page"></a>Skift standardvisningen for en rapportside
-Hvis du er *forfatter* til rapporten, så kan du ændre standardvisningen for dine rapportsider. Når du deler din rapport med andre, åbnes rapportsiderne ved hjælp af den visning, du har angivet. Rapportens *forbrugere* kan ændre visningen, men kan ikke gemme ændringer, når de afslutter rapporten.
-
-1. På siden **New stores** i rapporten, kan du skifte tilbage til visningen **Faktisk størrelse**.
-
-   ![Rullemenuen Vis med Faktisk størrelse valgt](media/end-user-report-view/power-bi-actual-size.png)
-
-2. På rapportsiden **District Monthly Sales** skal du indstille Vis til **Tilpas til bredde**.
-
-3. På rapportsiden **Oversigt** skal du beholde standardindstillingen for Vis.
-
-4. Nu skal du gemme rapporten ved at vælge **Filer > Gem**. Næste gang du åbner denne rapport, vises siderne ved hjælp af de nye indstillinger for Vis. Lad os se.
-
-   ![Rullemenuen Fil med Gem valgt](media/end-user-report-view/power-bi-save.png)
-3. Vælg navnet på arbejdsområdet i den øverste navigationslinje for at vende tilbage til det arbejdsområde.  
-
-   ![Øverste menulinje med brødkrummer vist](media/end-user-report-view/power-bi-my-workspace.png)
-4. Vælg fanen **Rapporter**, og vælg den samme rapport (Detail Analysis Sample).
-
-    ![Indholdsvisning med fanen Rapporter valgt](media/end-user-report-view/power-bi-new-report2.png)
-5. Åbn hver side i rapporten for at se de nye indstillinger.
-
-   ![video viser, hvordan visningsindstillingerne ændres](media/end-user-report-view/power-bi-page-view.gif)
-
-## <a name="now-lets-explore-the-page-size-setting"></a>Nu skal vi kigge nærmere på indstillingen *Sidestørrelse*
-Indstillingerne for sidestørrelse er kun tilgængelige i [Redigeringsvisning](../service-interact-with-a-report-in-editing-view.md), så du skal have redigeringstilladelse (*forfatter*) for at ændre indstillingerne for sidestørrelse i rapporten. Hvis du har oprettet forbindelse til nogle af vores [eksempler](../sample-datasets.md), har du *forfatter*rettigheder til disse rapporter.
-
-1. Åbn siden "District monthly sales" for [Eksempel på analyse af detailhandel](../sample-retail-analysis.md) i Redigeringsvisning.
-2. Sørg for, at der ikke er valgt nogen visuelle effekter på lærredet.  Vælg malerrulleikonet i ruden **Visuelle effekter**![](media/end-user-report-view/power-bi-paintroller.png).
-3. Vælg **Sidestørrelse** &gt; **Type** for at få vist indstillinger for sidestørrelse.
-
-   ![Kortet Sidestørrelse udvidet og 16:9 valgt](media/end-user-report-view/power-bi-page-size-menu-new.png)
-4. Vælg **Letter**.  På lærredet forbliver kun indholdet, der passer til 816 x 1056 pixel (Letter) på den hvide del af lærredet.
-
-   ![Rapportlærred med kortet Sidestørrelse udvidet og Type > Bogstav valgt](media/end-user-report-view/power-bi-letter-new.png)
-5. Vælg **Sidestørrelse** **16:9**-højde-bredde-forhold.
-
-   ![Kortet Sidestørrelse udvidet og Type > 16:9 valgt](media/end-user-report-view/power-bi-16-to-9-new.png)
-
-   Siden i rapporten vises med et højde-bredde-forhold på 16 bred og 9 høj. Se den faktiske pixelstørrelse, der bruges, ved at se på de gråtonede Bredde- og Højde-felter (1280 x 720). Der er meget tom plads rundt om rapportlærredet. Dette skyldes, at vi tidligere angav **Vis** til "Tilpas til bredde".
-7. Fortsæt med at udforske indstillingerne **Sidestørrelse**.
-
-## <a name="use-page-view-and-page-size-together"></a>Brug siderne Visning og Sidestørrelse sammen
-Brug siden Visning og Sidestørrelse sammen for at oprette en rapport, der ser bedst ud, når den deles med kollegaer eller er integreret i et andet program.
-
-I denne opgave skal du oprette en rapportside, der vises i et program, som har plads til 500 pixel i bredden og 750 pixel i højden.
-
-Husk, at vi i det forrige trin så, at vores rapportside i øjeblikket vises med 1280 pixel i bredden og 720 pixel i højden. Så vi ved, at vi skal udføre meget tilpasning af størrelse og omarrangering, hvis alle vores visuelle effekter skal passe.
-
-1. Tilpas og flyt de visuelle effekter, så de passer på mindre end halvdelen af det aktuelle lærredsområde.
-
-    ![video viser visualiseringer, hvor størrelsen tilpasses, og som flyttes rundt på lærredet](media/end-user-report-view/power-bi-custom-view.gif)
-2. Vælg **Sidestørrelse** &gt; **Brugerdefineret**.
-3. Angiv Bredde til 500, og angiv Højde til 750.
-
-    ![Ruden Formatering med kortet Sidestørrelse udvidet](media/end-user-report-view/power-bi-custom-new.png)
-4. Skift rapportsiden, så den ser bedst ud. Skift mellem **Vis > Faktisk størrelse** og **Vis > Tilpas til siden** for at foretage ændringer.
-
-    ![rapportlærredet med ruden Formatering udvidet](media/end-user-report-view/power-bi-final-new.png)
+Når du lukker rapporten, dine visningsindstillinger er ikke gemt, men vende tilbage til standardværdien. Hvis det er vigtigt, at du vil gemme disse indstillinger, kan du bruge [bogmærker](end-user-bookmarks.md). 
 
 ## <a name="next-steps"></a>Næste trin
 [Opret rapporter for Cortana](../service-cortana-answer-cards.md)
-
-Tilbage til [Indstillinger for sidevisning i en Power BI-rapport](../power-bi-report-display-settings.md)
-
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

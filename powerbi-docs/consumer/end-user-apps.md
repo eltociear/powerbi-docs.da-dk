@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 01/21/2019
+ms.date: 05/11/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f5572d5b5a8a8d9d652eabce95edc16ea9a2d0c6
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: 1b5891ce24c43b0a7416cd82cec3e9a10c1989bf
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662129"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65608354"
 ---
 # <a name="apps-in-power-bi"></a>Apps i Power BI
 ## <a name="what-is-a-power-bi-app"></a>Hvad er en Power BI-app?
@@ -30,7 +30,7 @@ Dine apps er organiseret på **appindholdslisten**.
 > Brug af Apps-funktionen kræver en Power BI Pro-licens. <!-- add link to how to figure out your license -->
 
 ## <a name="app-designers-and-app-consumers"></a>***Appdesignere*** og ***appforbrugere***
-Afhængigt af din rolle kan du være en person, der opretter apps (designer) til eget brug eller til at dele med kolleger. Eller du kan være en person, der modtager og downloader apps (forbruger), der er oprettet af andre. Denne artikel henvender sig til *appforbrugere*.
+Afhængigt af din rolle kan du være en person, der opretter apps (*designer*) til eget brug eller til at dele med kolleger. Eller du kan være en person, der modtager og downloads apps (*forbruger*) oprettet af andre. Denne artikel henvender sig til *appforbrugere*.
 
 ## <a name="advantages-of-apps"></a>Fordele ved apps
 Det er nemt at finde og installere apps i Power BI-tjenesten ([https://powerbi.com](https://powerbi.com)) og på din mobilenhed. Når du har installeret en app, behøver du ikke huske navnene på mange forskellige dashboards, fordi de alle er samlet i én app, i webbrowseren eller på din mobilenhed.

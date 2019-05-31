@@ -1,5 +1,5 @@
 ---
-title: Opret rapporter optimeret til mobilapps
+title: Optimer rapporter for de mobile apps – Power BI
 description: Få mere at vide om, hvordan du optimerer rapportsider til Power BI-mobilapps ved at oprette en stående version af rapporten specifikt til telefoner og tablets.
 author: maggiesMSFT
 manager: kfile
@@ -7,20 +7,24 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/10/2018
+ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 760f469ff3b146671292efd70a3c6854aec98b5a
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: f55d1e518c3c710503bb56539667bb652f287aa7
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174585"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61310606"
 ---
-# <a name="create-reports-optimized-for-the-power-bi-mobile-apps"></a>Opret rapporter optimeret til Power BI-mobilapps
-Du kan forbedre oplevelsen ved at få vist dine rapporter i mobilapps på en telefon eller tablet. Opret et stående layout af en rapport specifikt til telefoner og tablets. I Power BI Desktop og i Power BI-tjenesten tilpasser du rapporten ved at omarrangere og tilpasse størrelsen af visualiseringer i et stående layout for at sikre en optimal oplevelse. Du behøver ikke at inkludere alle visualiseringer. Du kan også oprette [*dynamiske* visuals](#optimize-a-visual-for-any-size) og [dynamiske udsnitsværktøjer](#enhance-slicers-to-work-well-in-phone-reports), der tilpasses flot til visning på en telefon. Hvis du også føjer filtre til din rapport, vises disse filtre automatisk i den optimerede rapport. Læserne af din rapport kan se dem og filtrere rapporten med dem.
+# <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Optimer rapporter til Power BI-mobilapps
+Du kan forbedre oplevelsen af visning af rapporter i mobilapps ved at oprette en stående layout. I Power BI Desktop og Power BI-tjenesten kan du omarrangere og tilpasse størrelsen på visuelle elementer til en optimal oplevelse i stående format.  
+
+Leder du efter oplysninger om i stedet for visning af rapporter på en mobilenhed? Prøv denne hurtige Start [Udforsk dashboards og rapporter i Power BI-mobilappsene](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
 
 ![Optimeret rapport på en telefon](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
+
+Desuden kan du oprette [ *dynamisk* visualiseringer](#optimize-a-visual-for-any-size) og [dynamiske udsnitsværktøjer](#enhance-slicers-to-work-well-in-phone-reports) , tilpasse størrelsen og hvor som helst. Hvis du føjer filtre til din rapport, vises de automatisk i den optimerede rapport.
 
 ## <a name="lay-out-a-portrait-version-of-a-report-page"></a>Opsæt en stående version af en rapportside
 
@@ -40,7 +44,7 @@ Når du har oprettet en rapport, kan du optimere den til telefoner og tablets.
    
     ![Træk og slip en visualisering](media/desktop-create-phone-report/desktop-create-phone-report-4.gif)
    
-    Du kan føje nogle eller alle visualiseringerne på masterrapportsiden til telefonrapportsiden. Du kan kun tilføje hver visualisering én gang.
+    Du kan føje nogle eller alle visualiseringerne på masterrapportsiden til telefonrapportsiden. Du kan kun tilføje hver visualisering én gang. Du behøver ikke at medtage alle visuelle elementer.
 
 4. Du kan tilpasse størrelsen på dine visualiseringer i gitteret, ligesom du ville gøre det for felter på dashboards og mobildashboards.
    

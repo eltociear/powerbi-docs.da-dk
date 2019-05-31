@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 8762be72353aa779281d721ac8038b6e3dd16aa2
-ms.sourcegitcommit: 2116af72f435cd30f1401bb9c7afdcbc76b1c3ce
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454246"
 ---
 # <a name="use-inline-hierarchy-labels-in-power-bi-desktop"></a>Brug indbyggede hierarkietiketter i Power BI Desktop
@@ -51,7 +51,7 @@ Lad os nu se på en anden diagramtype – ved hjælp af data med uformelle hiera
 
 ![Diagram med uformelt hierarki](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-top-expand.png)
 
-Hvis du vælger **Udvid til næste niveau**, vises næste niveau med indbygget visning af hierarkietiketter. Som standard er indbyggede hierarkier sorteret efter måleværdien – i dette tilfælde **Mængde**. Hvis indbyggede hierarkietiketter er aktiveret, kan du også vælge at sortere disse data efter hierarki ved at vælge ellipsen i øverste højre hjørne (**...** ) og derefter vælge **Sortér efter ProductName ShipCountry** som vist på følgende billede.
+Hvis du vælger **Udvid til næste niveau**, vises næste niveau med indbygget visning af hierarkietiketter. Som standard er indbyggede hierarkier sorteret efter måleværdien – i dette tilfælde **Mængde**. Hvis indbyggede hierarkietiketter er aktiveret, kan du også vælge at sortere disse data efter hierarki ved at vælge ellipsen i øverste højre hjørne ( **...** ) og derefter vælge **Sortér efter ProductName ShipCountry** som vist på følgende billede.
 
 ![Diagram med uformelt hierarki sorteret som standard](media/desktop-inline-hierarchy-labels/desktop-inline-hierarchy-labels-informal-sort-quantity.png)
 

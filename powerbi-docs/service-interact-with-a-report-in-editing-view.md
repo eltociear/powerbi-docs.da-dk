@@ -11,11 +11,11 @@ ms.date: 04/11/2018
 ms.author: maggies
 LocalizationGroup: Reports
 ms.openlocfilehash: 12ee21427f06f0bce373adffa7ef336de144a3a4
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54290561"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61234451"
 ---
 # <a name="interact-with-a-report-in-editing-view-in-power-bi-service"></a>Interager med en rapport i Redigeringsvisning i Power BI-tjenesten
 Rapporter kan oprettes og redigeres i Power BI-tjenesten og Power BI Desktop. I Power BI-tjenesten kan rapporter oprettes og redigeres i **Redigeringsvisning**. I Power BI Desktop kan rapporter oprettes og redigeres i [**Rapportvisning**](desktop-report-view.md). Denne artikel dækker Redigeringsvisning i Power BI-tjenesten. 

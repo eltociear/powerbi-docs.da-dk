@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d6755233733c4500865615c28850793aae7972d9
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263398"
+---
 Vi har allerede set, hvordan Power BI kan hjælpe med at finde data, indsamle dem i en datamodel og oprette rapporter og visualiseringer vedr. brugen af de pågældende data. Vi har også set, hvordan du kan publicere disse rapporter i Power BI-tjenesten og oprette dashboards, der hjælper med at overvåge oplysningerne over tid. Alle disse funktioner er endnu mere effektive, når du deler dine indsigter med andre i organisationen. Det er heldigvis nemt at dele dine dashboards.
 
 For at dele et dashboard skal du åbne det i Power BI-tjenesten og vælge **Del**-linket i øverste højre hjørne.

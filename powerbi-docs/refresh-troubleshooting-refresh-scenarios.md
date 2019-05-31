@@ -1,21 +1,21 @@
 ---
 title: Fejlfinding i forbindelse med opdatering af scenarier
 description: Fejlfinding i forbindelse med opdatering af scenarier
-author: davidiseminger
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/28/2018
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 8535787cb66ad2dc897ff3a3e4ecaccddfaa80f0
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: ce353ec70b933319faaabb0040c0df1a31103a27
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54285110"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770534"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Fejlfinding i forbindelse med opdatering af scenarier
 Her kan du finde oplysninger om forskellige scenarier, som du kan stå overfor, når du opdaterer data i Power BI-tjenesten.
@@ -57,6 +57,9 @@ Den maksimale størrelse for datasæt, der importeres i **Power BI-tjenesten**, 
 
 ## <a name="scheduled-refresh-timeout"></a>Timeout for planlagt opdatering
 Planlagt opdatering for importerede datasæt får timeout efter to timer. Denne timeout er øget til fem timer for datasæt på **Premium**-arbejdsområder. Hvis du støder på denne grænse, kan du overveje at reducere dit datasæts størrelse eller kompleksitet eller overveje at inddele datasættet i mindre dele.
+
+## <a name="scheduled-refresh-failures"></a>Planlagt opdatering fejl
+Hvis en planlagt opdatering mislykkes fire gange i træk, deaktiverer opdateringen i Power BI. Løs det underliggende problem, og derefter genaktivere den planlagte opdatering.
 
 ## <a name="access-to-the-resource-is-forbidden"></a>Der er ikke adgang til ressourcen  
 Denne fejl kan opstå, hvis cachelagrede legitimationsoplysninger er udløbet. Ryd din browsers cache ved at logge på Power BI og gå til https://app.powerbi.com?alwaysPromptForContentProviderCreds=true. Dette gennemtvinger en opdatering af dine legitimationsoplysninger. 

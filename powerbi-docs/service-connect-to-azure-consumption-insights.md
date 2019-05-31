@@ -7,18 +7,18 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 05/20/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8a8b6d930dcb5ded8c8913ca9e706fe50d16048f
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.openlocfilehash: 089f8c31a0b1eb11f6871268f2f848949be95d9b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008206"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66222139"
 ---
 # <a name="connect-to-microsoft-azure-consumption-insights-with-power-bi"></a>Opret forbindelse til Microsoft Azure Consumption Insights med Power BI
-Udforsk og overvåg dine Microsoft Azure-forbrugsdata i Power BI med Power BI-indholdspakken. Dataene opdateres automatisk én gang dagligt.
+Udforsk og overvåg dine Microsoft Azure-forbrugsdata i Power BI med Power BI-indholdspakken. Dataene opdateres automatisk én gang om dagen.
 
 Opret forbindelse til [Microsoft Azure Consumption Insights-indholdspakken](https://app.powerbi.com/getdata/services/azureconsumption) til Power BI.
 
@@ -26,19 +26,19 @@ Opret forbindelse til [Microsoft Azure Consumption Insights-indholdspakken](http
 1. Vælg **Hent data** nederst i venstre navigationsrude.
    
     ![](media/service-connect-to-azure-consumption-insights/getdata.png)
-2. I feltet **Tjenester** skal du vælge **Hent**.
+2. Markér **Hent** i feltet **Tjenester**.
    
    ![](media/service-connect-to-azure-consumption-insights/services.png)
-3. Vælg **Microsoft Azure Consumption Insights** \> **Hent**. 
+3. Vælg **Microsoft Azure Consumption Insights** \> **Hent det nu**. 
    
    ![](media/service-connect-to-azure-consumption-insights/mazureconsumption.png)
 4. Angiv den antal måneder, du vil importere data for, og dit Azure Enterprise-tilmeldingsnummer. Herunder kan du se detaljer om, hvordan du [finder de pågældende parametre](#FindingParams).
    
     ![](media/service-connect-to-azure-consumption-insights/azureconsumptionparams.png)
-5. Angiv din Access-nøgle for at oprette forbindelse. Du finder nøglen til tilmelding på Azure EA Portal. 
+5. Angiv din Access-nøgle for at oprette forbindelse. Du kan finde din nøgle til tilmelding på Azure EA-portalen. 
    
     ![](media/service-connect-to-azure-consumption-insights/msazureconsumptioncreds.png)
-6. Importprocessen starter automatisk. Når processen er fuldført, vises et nyt dashboard samt en ny rapport og model i navigationsruden. Vælg dashboardet for at få vist de importerede data.
+6. Importprocessen starter automatisk. Når du er færdig, vises et nyt dashboard, rapport og model i navigationsruden. Vælg dashboardet for at få vist de importerede data.
    
    ![](media/service-connect-to-azure-consumption-insights/msazureconsumptiondashboard.png)
 
@@ -47,38 +47,38 @@ Opret forbindelse til [Microsoft Azure Consumption Insights-indholdspakken](http
 * Prøv [at stille et spørgsmål i feltet Spørgsmål og svar](consumer/end-user-q-and-a.md) øverst i dashboard'et
 * [Rediger felterne](service-dashboard-edit-tile.md) i dashboard'et.
 * [Vælg et felt](consumer/end-user-tiles.md) for at åbne den underliggende rapport.
-* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
+* Mens dit datasæt er planlagt til daglig opdatering, du kan ændre tidsplanen for opdatering eller forsøge at opdatere efter behov ved hjælp af **Opdater nu**
 
 ## <a name="whats-included"></a>Det følgende er inkluderet
-Microsoft Azure Consumption Insights-indholdspakken indeholder månedlige rapporteringsdata for det månedsinterval, du angiver under forbindelsesflowet. Intervallet er et fleksibelt vindue, så de inkluderede datoer bliver opdateret, når datasættet opdateres.
+Til Microsoft Azure Consumption Insights-indholdspakken indeholder månedlige rapporteringsdata for det månedsinterval, du har angivet, når der oprettes forbindelse. Intervallet er et fleksibelt vindue, så de inkluderede datoer bliver opdateret, når datasættet opdateres.
 
 ## <a name="system-requirements"></a>Systemkrav
-Indholdspakken kræver adgang til virksomhedsfunktioner på Azure Portal. 
+Indholdspakken kræver adgang til Enterprise-funktionerne på Azure-portalen. 
 
 <a name="FindingParams"></a>
 
-## <a name="finding-parameters"></a>Søg efter parametre
-Power BI-rapportering er tilgængeligt for EA-kunder af typen Direct, Partner og Indirect, som kan få vist faktureringsoplysninger. Herunder kan du finde oplysninger om hver af de værdier, der forventes i forbindelsesflowet.
+## <a name="finding-parameters"></a>Søgning efter parametre
+Power BI-rapportering er tilgængeligt for EA Direct, Partner og Indirect-kunder, der kan få vist faktureringsoplysninger. Læs nedenfor for at få oplysninger om hver af de værdier, der forventer forbindelsesflowet.
 
 **Antal måneder**
 
-* Dette skal være et tal mellem 1-36, der repræsenterer det antal måneder (fra i dag), du vil importere data for.
+* Antallet af måneder (1-36) af data fra i dag, du vil importere.
 
 **Tilmeldingsnummer**
 
-* Dette er dit Azure Enterprise-tilmeldingsnummer, som findes på startskærmen på [Azure Enterprise Portal](https://ea.azure.com/) under "Enrollment Detail".
+* Dit Azure Enterprise-tilmeldingsnummer, som du kan finde på den [Azure Enterprise Portal](https://ea.azure.com/) startskærm under **tilmeldingsoplysninger**.
   
     ![](media/service-connect-to-azure-consumption-insights/params2.png)
 
 **Access-nøgle**
 
-* Du finder din nøgle på Azure Enterprise Portal under "Download Usage" > "API Access Key"
+* Du kan finde din adgangsnøgle i Azure Enterprise portal, under **Download Usage** > **API Access Key**.
   
     ![](media/service-connect-to-azure-consumption-insights/creds2.png)
 
 **Yderligere hjælp**
 
-* Hvis du vil have yderligere hjælp til at konfigurere Azure Enterprise Power BI-pakken, skal du logge på Azure Enterprise Portal for at få vist API-hjælpefilen under "Help" og yderligere oplysninger under Reports -> Download Usage -> API Access Key. 
+* Log på Azure Enterprise Portal for at få yderligere hjælp til at konfigurere Azure Enterprise Power BI-pakken, og få vist API-hjælpefilen under **hjælpe**. Du kan også finde yderligere oplysninger under **rapporter** -> **Download Usage** -> **API Access Key**.
 
 ## <a name="next-steps"></a>Næste trin
 [Kom i gang med Power BI](service-get-started.md)

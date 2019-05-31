@@ -12,10 +12,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: 57f95a35ff12d546d4fd03202d14212e0df9c78e
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513656"
 ---
 # <a name="using-r-in-query-editor"></a>Brug af R i forespørgselseditoren
@@ -94,7 +94,7 @@ Der er nogle begrænsninger til forespørgsler, der indeholder R-scripts, der er
 
   ![](media/desktop-r-in-query-editor/r-in-query-editor_9.png)
 
-  Vælg datakilderne i dialogboksen **Indstillinger for datakilde**, og vælg derefter **Rediger tilladelser...**. Kontrollér, at **Niveau for beskyttelse af personlige oplysninger** er angivet til *Offentlig*.
+  Vælg datakilderne i dialogboksen **Indstillinger for datakilde**, og vælg derefter **Rediger tilladelser...** . Kontrollér, at **Niveau for beskyttelse af personlige oplysninger** er angivet til *Offentlig*.
 
   ![](media/desktop-r-in-query-editor/r-in-query-editor_10.png)    
 * Hvis du vil aktivere planlagt opdatering af dine visuelle R-elementer eller datasættet, skal du aktivere **Planlagt opdatering** og have en **personlig gateway** installeret på den computer, der indeholder projektmappen og R-installationen. Du kan få flere oplysninger om begge dele i det forrige afsnit i denne artikel, der indeholder links, så du kan få mere at vide.

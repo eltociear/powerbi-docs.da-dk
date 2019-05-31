@@ -7,119 +7,119 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 04/23/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 27776b251734d025e4dcde9f525f321008647455
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: 559ff45974274420e2545228720000359d5fe971
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383479"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64906861"
 ---
-# <a name="using-auditing-within-your-organization"></a>Brug af overvågning i din organisation
+# <a name="use-auditing-within-your-organization"></a>Brug af overvågning i din organisation
 
-Det kan være vigtigt at vide, hvem der udfører en bestemt handling på et element i din Power BI-lejer, for at hjælpe din organisation med at opfylde sine krav, for eksempel efterleve lovmæssig kravoverholdelse og datastyring. Brug overvågning i Power BI, hvis du vil overvåge brugernes handlinger, f.eks. "Vis rapport" og "Vis dashboard". Du kan ikke bruge overvågning til at overvåge tilladelser.
+At vide, hvem der udfører en bestemt handling på et element i din Power BI kan lejer være vigtigt at hjælpe din organisation, opfylde sine krav, som efterleve LOVMÆSSIG kravoverholdelse og datastyring. Brug Power BI, overvågning, hvis du vil overvåge handlinger, der udføres af brugere, f.eks. "Vis rapport" og "Vis Dashboard". Du kan ikke bruge overvågning til at overvåge tilladelser.
 
 Du arbejder med overvågning i Office 365 Security and Compliance Center eller ved hjælp af PowerShell. Overvågning er afhængig af funktionaliteten i Exchange Online, som er klargjort automatisk til at understøtte Power BI.
 
-Du kan filtrere overvågningsdataene efter datointerval, bruger, dashboard, rapport, datasæt og aktivitetstype. Du kan også downloade aktiviteterne i en CSV-fil (fil med kommaseparerede værdier), der kan analyseres offline.
+Du kan filtrere overvågningsdataene efter datointerval, bruger, dashboard, rapport, datasæt og aktivitetstype. Du kan også downloade aktiviteterne i en csv (kommasepareret værdi)-fil, der kan analyseres offline.
 
 ## <a name="requirements"></a>Krav
 
 Du skal opfylde disse krav for at få adgang til overvågningslogger:
 
-* Du skal enten være global administrator eller være tildelt rollen Audit Logs eller View-Only Audit Logs i Exchange Online for at få adgang til overvågningsloggen. Disse roller tildeles som standard til rollegrupperne Compliance Management og Organization Management på siden **Tilladelser** i Exchange Administration.
+* Du skal enten være global administrator eller tildelt rollen Audit Logs eller View-Only Audit Logs i Exchange Online til at få adgang til overvågningsloggen. Som standard grupperne administration af overholdelse af angivne standarder og administration af organisation rolle, der følger med disse roller, der er tildelt på den **tilladelser** side i Exchange administration.
 
-    Hvis du vil give konti, der ikke er administratorer, adgang til overvågningsloggene, skal du føje brugeren til en af disse rollegrupper som medlem. Du kan også oprette en brugerdefineret rollegruppe i Exchange Administration, tildele rollen Audit Logs eller View-Only Audit Logs til denne gruppe og derefter føje den konto, der ikke er administrator, til den nye rollegruppe. Du kan finde flere oplysninger under [Administrer rollegrupper i Exchange Online](/Exchange/permissions-exo/role-groups).
+    Hvis du vil give adgang til overvågningsloggen bruger uden administrative konti, skal du tilføje brugeren som medlem af en af disse rollegrupper. Hvis du vil gøre det en anden måde, du kan oprette en brugerdefineret rollegruppe i Exchange administration, tildele rollen overvågningslogger eller View-Only overvågningslogge til denne gruppe og derefter tilføje den ikke-administratorkonto til den nye rollegruppe. Du kan finde flere oplysninger under [Administrer rollegrupper i Exchange Online](/Exchange/permissions-exo/role-groups).
 
     Hvis du ikke kan få adgang til Exchange Administration via Microsoft 365 Administration, skal du gå til https://outlook.office365.com/ecp og logge på ved hjælp af dine legitimationsoplysninger.
 
-* Hvis du har adgang til overvågningsloggen, men du ikke er global administrator eller administrator af Power BI-tjenesten, vil du ikke have adgang til portalen Power BI Administration. I dette tilfælde skal du bruge et direkte link til [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog).
+* Hvis du har adgang til overvågningsloggen, men ikke er en global administrator eller administrator af Power BI-tjenesten, kan du ikke har adgang til Power BI-administrationsportalen. I dette tilfælde skal du bruge et direkte link til [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog).
 
-## <a name="accessing-your-audit-logs"></a>Adgang til dine overvågningslogge
+## <a name="access-your-audit-logs"></a>Få adgang til dine overvågningslogge
 
-For at få adgang til logfiler skal du først sørge for, at log er aktiveret i Power BI. Du kan finde flere oplysninger i [Overvågningslogs](service-admin-portal.md#audit-logs) i dokumentationen til administrationsportalen. Der kan være op til 48 timers forsinkelse, fra at du aktiverer overvågning, til at du får vist data i overvågningsloggen. Hvis du ikke får vist data med det samme, skal du tjekke overvågningsloggene senere. Der kan være en lignende forsinkelse mellem at få tilladelse til at få vist overvågningslogge og til at kunne åbne logfilerne.
+For at få adgang til logfiler, du først sørge for at aktivere logføring i Power BI. Du kan finde flere oplysninger i [Overvågningslogs](service-admin-portal.md#audit-logs) i dokumentationen til administrationsportalen. Der kan være op til 48 timer forsinkelse mellem det tidspunkt, hvor du aktiverer overvågning og hvornår du kan få vist overvågningsdataene. Hvis du ikke får vist data med det samme, skal du tjekke overvågningsloggene senere. Der kan være en lignende forsinkelse mellem at få tilladelse til at få vist overvågningslogge og til at kunne åbne logfilerne.
 
 Power BI-overvågningslogs er tilgængelige direkte via [Office 365 Security & Compliance Center](https://sip.protection.office.com/#/unifiedauditlog). Der er også et link fra Power BI-administrationsportalen:
 
-1. Vælg **tandhjulsikonet** øverst til højre i Power BI, og vælg derefter **Administrationsportal**.
+1. I Power BI, skal du vælge den **tandhjulsikonet** i øverste højre hjørne, vælg derefter **administrationsportalen**.
 
-   ![Administrationsportal](media/service-admin-auditing/powerbi-admin.png)
+   ![Skærmbillede af menuen gear rullelisten med indstillingen Admin-portalen påpeges.](media/service-admin-auditing/powerbi-admin.png)
 
 1. Vælg **Overvågningslogger**.
 
-1. Vælg **Gå til Microsoft 365 Administration**.
+1. Vælg **Gå til O365 Administration**.
 
-   ![Gå til Microsoft 365 Administration](media/service-admin-auditing/audit-log-o365-admin-center.png)
+   ![Skærmbillede af administrationsportalen til audit logfører indstilling og farten til påpeges, indstillinger for Microsoft O365 Admin Center.](media/service-admin-auditing/audit-log-o365-admin-center.png)
 
 ## <a name="search-only-power-bi-activities"></a>Søg kun i Power BI-aktiviteter
 
 Begræns resultaterne til aktiviteter, der kun er for Power BI, ved at følge disse trin. Se listen over [aktiviteter, der overvåges af Power BI](#activities-audited-by-power-bi) senere i denne artikel for at få et overblik.
 
-1. På siden **Søgning i overvågningslog** under **Søg** skal du vælge rullelisten for **Aktiviteter**.
+1. På den **overvågningslogfil** siden under **Search**, skal du vælge rullelisten for **aktiviteter**.
 
 2. Vælg **Power BI-aktiviteter**.
 
-   ![Søgning i overvågningslogfil](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
+   ![Skærmbillede af Audit log search med Power BI-aktiviteter påpeges.](media/service-admin-auditing/audit-log-search-filter-by-powerbi.png)
 
 3. Vælg et vilkårligt sted uden for markeringsfeltet for at lukke det.
 
-Dine søgninger filtreres nu kun på aktiviteter i Power BI.
+Dine søgninger Returner kun Power BI-aktiviteter.
 
 ## <a name="search-the-audit-logs-by-date"></a>Søg i overvågningslogfilerne efter dato
 
-Du kan søge i logfilerne efter datointerval ved hjælp af felterne **Startdato** og **Slutdato**. De sidste syv dage er valgt som standard. Datoen og klokkeslættet vises i UTC-format (Coordinated Universal Time). Det maksimale datointerval, du kan angive, er 90 dage. 
+Du kan søge i logfilerne efter datointerval ved hjælp af felterne **Startdato** og **Slutdato**. Standardindstillingen er de seneste syv dage. Visningen præsenterer dato og klokkeslæt i Coordinated Universal Time (UTC)-format. Det maksimale datointerval, du kan angive, er 90 dage. 
 
-Der vises en fejlmeddelelse, hvis det angivne datointerval er større end 90 dage. Hvis du bruger det maksimale datointerval på 90 dage, skal du vælge det aktuelle klokkeslæt som **Startdato**. Ellers får du vist en fejlmeddelelse om, at startdatoen ligger tidligere end slutdatoen. Hvis du har slået overvågning til inden for de sidste 90 dage, kan datointervallet ikke starte før den dato, hvor overvågning blev slået til.
+Du får vist en fejlmeddelelse, hvis det angivne datointerval er større end 90 dage. Hvis du bruger det maksimale datointerval på 90 dage, skal du vælge det aktuelle klokkeslæt som **Startdato**. Ellers får du vist en fejlmeddelelse om, at startdatoen ligger tidligere end slutdatoen. Hvis du har slået overvågning til inden for de sidste 90 dage, kan datointervallet ikke starte før den dato, hvor overvågning blev slået til.
 
-![Søg efter dato](media/service-admin-auditing/search-audit-log-by-date.png)
+![Skærmbillede af Audit log search med startdato og slutdato for indstillinger påpeges.](media/service-admin-auditing/search-audit-log-by-date.png)
 
 ## <a name="search-the-audit-logs-by-users"></a>Søg i overvågningslogfilerne efter brugere
 
-Du kan søge efter overvågningslogposter for aktiviteter, der er udført af bestemte brugere. Det gør du ved at angive et eller flere brugernavne i feltet **Brugere**. Brugernavnet ligner en e-mailadresse. Det er den konto, som brugerne logger på Power BI med. Lad dette felt være tomt for at returnere poster for alle brugere (og tjenestekonti) i din organisation.
+Du kan søge efter overvågningslogposter for aktiviteter, der er udført af bestemte brugere. Angiv en eller flere brugernavne i den **brugere** felt. Brugernavnet ligner en mailadresse. Det er den konto, som brugerne logger på Power BI. Lad dette felt være tomt for at returnere poster for alle brugere (og tjenestekonti) i din organisation.
 
 ![Søg efter brugere](media/service-admin-auditing/search-audit-log-by-user.png)
 
 ## <a name="view-search-results"></a>Få vist søgeresultaterne
 
-Når du har valgt **Søg**, indlæses søgeresultaterne, og efter et øjeblik vises de under **Resultater**. Når du er færdig med søgningen, vises antallet af fundne resultater. Der kan maksimalt vises 1000 hændelser. Hvis mere end 1000 hændelser opfylder søgekriterierne, vises de 1000 seneste hændelser.
+Når du har valgt **Search**, indlæses søgeresultaterne. Efter et øjeblik, de vises **resultater**. Når du er færdig med søgningen, vises visningen af antallet af fundne resultater. **Overvågningslogfil** vises maksimalt 1000 hændelser. Hvis mere end 1000 hændelser opfylder søgekriterierne, viser appen de nyeste 1000 hændelser.
 
 ### <a name="view-the-main-results"></a>Få vist de vigtigste resultater
 
-Området **Resultater** indeholder følgende oplysninger om hver hændelse, der returneres af søgningen. Vælg en kolonneoverskrift under **Resultater** for at sortere resultaterne.
+Den **resultater** område har følgende oplysninger for hver hændelse, der returneres af søgningen. Vælg en kolonneoverskrift under **Resultater** for at sortere resultaterne.
 
 | **Kolonne** | **Definition** |
 | --- | --- |
 | Dato |Den dato og det klokkeslæt (i UTC-format), da hændelsen fandt sted. |
-| IP-adresse |IP-adressen på den enhed, der blev brugt, da aktiviteten blev logført. IP-adressen vises i enten et IPv4- eller IPv6-adresseformat. |
+| IP-adresse |IP-adressen på den enhed, der bruges til den registrerede aktivitet. Appen Viser IP-adressen i enten et IPv4- eller IPv6-adresseformat. |
 | Bruger |Brugeren (eller tjenestekontoen), som udførte den handling, der udløste hændelsen. |
 | Aktivitet |Den aktivitet, der blev udført af brugeren. Denne værdi svarer til de aktiviteter, som du har valgt på rullelisten **Aktiviteter**. For en hændelse fra Exchange-administratorens overvågningslogfil er værdien i denne kolonne en Exchange-cmdlet . |
-| Element |Det objekt, der blev oprettet eller ændret som følge af den tilsvarende aktivitet. For eksempel den fil, der blev vist eller ændret, eller den brugerkonto, som blev opdateret. Ikke alle aktiviteter har en værdi i denne kolonne. |
-| Detaljer |Yderligere oplysninger om en aktivitet. Igen er det ikke alle aktiviteter, der har en værdi. |
+| Element |Objektet, der oprettes eller ændres på grund af den tilsvarende aktivitet. For eksempel viste eller ændrede filen, eller den opdaterede brugerkonto. Ikke alle aktiviteter har en værdi i denne kolonne. |
+| Detaljer |Yderligere oplysninger om en aktivitet. Igen, ikke alle aktiviteter har en værdi. |
 
 ### <a name="view-the-details-for-an-event"></a>Få vist oplysninger om en hændelse
 
-Du kan få vist flere oplysninger om en hændelse ved at klikke på hændelsesposten på listen over søgeresultater. Siden **Detaljer**, som indeholder de detaljerede egenskaber fra hændelsesposten, vises. De egenskaber, der skal vises, afhænger af den Office 365-tjeneste, hændelsen finder sted i. 
+For at få vist flere detaljer om en hændelse, skal du vælge hændelsesposten på listen over søgeresultater. A **detaljer** vises en side, der indeholder de detaljerede egenskaber fra hændelsesposten. Den **detaljer** side viser egenskaberne afhængigt af den Office 365-tjeneste, hændelsen finder sted.
 
 Vælg **Flere oplysninger** for at få vist disse detaljer. Alle poster i Power BI har en værdi på 20 for egenskaben RecordType. Du kan finde oplysninger om andre egenskaber i [Detaljerede egenskaber i overvågningsloggen](/office365/securitycompliance/detailed-properties-in-the-office-365-audit-log/).
 
-   ![Overvågningsoplysninger](media/service-admin-auditing/audit-details.png)
+   ![Skærmbillede af dialogboksen audit oplysninger med mulighed for flere oplysninger om påpeges.](media/service-admin-auditing/audit-details.png)
 
 ## <a name="export-search-results"></a>Eksporter søgeresultaterne
 
-Følg disse trin for at eksportere Power BI-overvågningslogfilen til en csv-fil.
+For at eksportere Power BI-overvågningslogfilen til en CSV-fil, skal du følge disse trin.
 
 1. Vælg **Eksportér resultater**.
 
 1. Vælg enten **Gem indlæste resultater** eller **Download alle resultater**.
 
-    ![Eksportér resultater](media/service-admin-auditing/export-auditing-results.png)
+    ![Skærmbillede af eksport resultater indstilling.](media/service-admin-auditing/export-auditing-results.png)
 
 ## <a name="use-powershell-to-search-audit-logs"></a>Brug PowerShell til at søge efter overvågningslogs
 
-Du kan også bruge PowerShell til at få adgang til overvågningslogfilerne baseret på dit logon. I følgende eksempel kan du se, hvordan du opretter forbindelse til Exchange Online PowerShell og derefter bruger kommandoen [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) til at trække poster fra Power BI-overvågningsloggen. Hvis du vil køre scriptet, skal du være tildelt de nødvendige tilladelser, som beskrevet i afsnittet [Krav](#requirements).
+Du kan også bruge PowerShell til at få adgang til overvågningslogfilerne baseret på dit logon. I følgende eksempel kan du se, hvordan du opretter forbindelse til Exchange Online PowerShell og derefter bruger kommandoen [Search-UnifiedAuditLog](/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog?view=exchange-ps/) til at trække poster fra Power BI-overvågningsloggen. Hvis du vil køre scriptet skal en administrator skal tildele dig de nødvendige tilladelser, som beskrevet i den [krav](#requirements) afsnit.
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned
@@ -136,7 +136,7 @@ Du kan finde flere oplysninger om at oprette forbindelse til Exchange Online und
 
 ## <a name="activities-audited-by-power-bi"></a>Aktiviteter, der overvåges af Power BI
 
-Følgende aktiviteter overvåges af Power BI.
+Følgende aktiviteter, der overvåges af Power BI:
 
 | Brugervenligt navn                                     | Handlingsnavn                              | Noter                                  |
 |---------------------------------------------------|---------------------------------------------|------------------------------------------|

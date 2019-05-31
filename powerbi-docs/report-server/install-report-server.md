@@ -1,30 +1,32 @@
 ---
 title: Installér Power BI-rapportserver
 description: Find ud af, hvordan du installerer Power BI-rapportserver.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 12/07/2018
-ms.openlocfilehash: 109c0f98705f81d48811f756c49150c8cb286e27
-ms.sourcegitcommit: d4d36b6b200f2693b545e4a3e66d94c77a3cfafb
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.openlocfilehash: 02104acdbff6e6a1a4e785553b689a3e74183a4d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014432"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187738"
 ---
 # <a name="install-power-bi-report-server"></a>Installér Power BI-rapportserver
 
 Find ud af, hvordan du installerer Power BI-rapportserver.
 
- **Download** ![download](media/install-report-server/download.png "download")
+## <a name="download-power-bi-report-server"></a>Download Power BI-rapportserver
 
-Hvis du vil downloade Power BI-rapportserver, skal du gå til [Rapportering i det lokale miljø med Power BI-rapportserver](https://powerbi.microsoft.com/report-server/) og vælge **Download gratis prøveversion**. 
+[Download Power BI-rapportserver](https://www.microsoft.com/download/details.aspx?id=56722) fra Microsoft Download Center.
 
-## <a name="before-you-begin"></a>Inden du starter
+Der er også en gratis prøveversion. På den [i det lokale miljø rapportering med Power BI Report Server](https://powerbi.microsoft.com/report-server/) side, Vælg **Download gratis prøveversion**.
+
+## <a name="before-you-install"></a>Før du installerer
 
 Vi anbefaler, at du læser [Hardware- og softwarekrav til installation af Power BI-rapportserver](system-requirements.md), før du installerer Power BI-rapportserver.
 
@@ -32,6 +34,13 @@ Vi anbefaler, at du læser [Hardware- og softwarekrav til installation af Power 
  > Du kan installere Power BI-rapportserver i et miljø med en skrivebeskyttet domænecontroller (RODC), men Power BI-rapportserver skal have adgang til domænecontroller med læse-/skriveadgang for at fungere korrekt. Hvis Power BI-rapportserver kun har adgang til en skrivebeskyttet domænecontroller, kan der opstå fejl under forsøg på at administrere tjenesten.
 
 ### <a name="power-bi-report-server-product-key"></a>Produktnøgle til Power BI-rapportserver
+
+Du kan få produktnøglen til Power BI Report Server fra to forskellige kilder:
+
+- Power BI Premium
+- SQL Server Enterprise Software Assurance (SA)
+
+Læs videre for at få flere oplysninger.
 
 #### <a name="power-bi-premium"></a>Power BI Premium
 
@@ -66,8 +75,8 @@ Du behøver ikke adgang til en SQL Server-databaseprogramserver på installation
 
     ![Version 2](media/install-report-server/pbireportserver-choose-edition2.png)
 
-    Ellers kan du angive en produktnøgle til den server, du har købt fra Power BI-tjenesten eller fra Volume License Service Center. Hvis du vil have mere at vide om, hvordan du får din produktnøgle, skal du se afsnittet [Inden du starter](#before-you-begin).
-4. Læs og acceptér vilkår og betingelser for licensen, og vælg derefter **Næste**.
+    Ellers skal du indtaste den produktnøgle, du fik fra enten Power BI-tjenesten eller fra Volume License Service Center. Du kan finde flere oplysninger om, hvordan du får din produktnøgle under den [før du installerer](#before-you-install) ovenstående afsnit.
+4. Læs og Acceptér licensens vilkår og betingelser, og vælg derefter **næste**.
 
     ![Licensbetingelser](media/install-report-server/pbireportserver-eula.png)
 5. Du skal have et tilgængeligt databaseprogram til at gemme rapportserverdatabasen. Vælg **Næste** for kun at installere rapportserveren.
@@ -83,7 +92,7 @@ Du behøver ikke adgang til en SQL Server-databaseprogramserver på installation
 
     ![Konfigurer rapportserveren](media/install-report-server/pbireportserver-configure.png)
 
-## <a name="configuring-your-report-server"></a>Konfiguration af rapportserveren
+## <a name="configure-your-report-server"></a>Konfigurer din rapportserver
 
 Når du har valgt **Configure Report Server** i konfigurationen, vises Reporting Services Configuration Manager. Du kan få mere at vide under [Reporting Services Configuration Manager](https://docs.microsoft.com/sql/reporting-services/install-windows/reporting-services-configuration-manager-native-mode).
 

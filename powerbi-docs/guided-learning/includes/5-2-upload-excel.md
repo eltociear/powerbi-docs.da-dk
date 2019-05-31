@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: cff8e70e43496b264fd0dd549759f939bf90e33f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61271284"
+---
 I dette emne vil vi først kigge nærmere på, hvordan du kan importere en Excel-projektmappefil, der indeholder en enkel **tabel** fra et lokalt drev, til Power BI. Du skal derefter lære, hvordan du kan begynde at udforske tabellens data i Power BI ved at oprette en rapport.
 
 ## <a name="make-sure-your-data-is-formatted-as-a-table"></a>Sørg for, at dataene er formateret som en tabel

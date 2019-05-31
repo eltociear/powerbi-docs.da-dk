@@ -7,101 +7,110 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
+ms.date: 04/24/2019
 ms.author: mshenhav
-ms.openlocfilehash: ccb3b390b0654c7dc850cf66a7f0c9a7ec02f910
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 4e09b10e38b018f8e5572343b343a243ace3bf81
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278394"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64906519"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Opret et link til en bestemt placering i Power BI-mobilappsene
-Du kan oprette og bruge en URI til at linke til en bestemt placering (et *dybt link*) i Power BI-mobilappsene på alle mobilplatformene: iOS, Android og Windows 10.
+Du kan bruge links til direkte adgang til bestemte elementer i Power BI: Rapporten Dashboard og felt.
 
-URI-links kan pege direkte på dashboards, felter og rapporter.
+Der er hovedsageligt to scenarier for brug af links i Power BI Mobile: 
 
-Destinationen for det dybe link bestemmer URI'ens format. Følg disse trin for at oprette dybe links til forskellige placeringer. 
-
-## <a name="open-the-power-bi-mobile-app"></a>Åbn Power BI-mobilappen
-Brug denne URI til at åbne Power BI-mobilappen på en hvilken som helst enhed:
-
-    mspbi://app/
+* Til at åbne Power BI fra **uden for appen**, og lande på specifikt indhold (rapport/dashboard/app). Dette er normalt en integrationsscenarie, når du vil åbne Power BI – mobil fra andre app. 
+* Til **navigere** i Power BI. Dette er normalt, når du vil oprette en brugerdefineret navigation i Power BI.
 
 
-## <a name="open-to-a-specific-dashboard"></a>Åbn på et bestemt dashboard
-Denne URI åbner Power BI-mobilappen på et bestemt dashboard:
+## <a name="use-links-from-outside-of-power-bi"></a>Brug links fra uden for Power BI
+Når du bruger et link fra uden for Power BI-app, du vil sikre dig, så vil blive åbnet af appen, og hvis appen ikke er installeret på enheden, og derefter at tilbyde brugeren at installere den. For at understøtte lige præcis, har vi oprettet en særlig link-format. Dette link-format, sikrer, at enheden bruger appen til at åbne linket, og hvis appen ikke er installeret på enheden, det vil tilbyde brugeren om at gå til butikken for at få den.
 
-    mspbi://app/OpenDashboard?DashboardObjectId=<36-character-dashboard-id>
+Linket, der skal starte med følgende  
+```html
+https://app.powerbi.com/Redirect?[**QUERYPARAMS**]
+```
 
-Du kan finde det 36 tegn lange objekt-id for dashboardet ved at gå til det pågældende dashboard i Power BI-tjenesten (https://powerbi.com). Se eksempelvis den fremhævede del af denne URL-adresse:
+> [!IMPORTANT]
+> Hvis dit indhold er hostet i særlig datacenter som Goverment, Kina osv. Linket skal starte med den rigtige Power BI-adresse, som `app.powerbigov.us` eller `app.powerbi.cn`.   
+>
 
-`https://powerbi.com/groups/me/dashboards/**61b7e871-cb98-48ed-bddc-6572c921e270**`
 
-Hvis dashboardet er i en anden gruppe end Mit arbejdsområde, skal du tilføje `&GroupObjectId=<36-character-group-id>` enten før eller efter dashboard-id'et. Eksempel: 
+Den **forespørgsel PARAMS** er:
+* **handling** (obligatorisk) = OpenApp / OpenDashboard / OpenTile / ÅbnRapport
+* **appId** =, hvis du vil åbne en rapport eller et dashboard, der er en del af en app 
+* **groupObjectId** =, hvis du vil åbne en rapport eller et dashboard, der er en del af arbejdsområde (men ikke mit arbejdsområde)
+* **dashboardObjectId** = dashboard objekt-ID (hvis handling er OpenDashboard eller OpenTile)
+* **reportObjectId** = rapport objekt-ID (hvis handling er ÅbnRapport)
+* **tileObjectId** = felt objekt-ID (hvis handling er OpenTile)
+* **reportPage** =, hvis du vil åbne specifikke rapportsektion (hvis handling er ÅbnRapport)
+* **ctId** = element organisations-ID (relevante til B2B-scenarie. Dette kan udelades, hvis elementet, der hører til brugerens organisation).
 
-mspbi://app/OpenDashboard?DashboardObjectId=e684af3a-9e7f-44ee-b679-b9a1c59b5d60 **&GroupObjectId=8cc900cc-7339-467f-8900-fec82d748248**
+**Eksempler:**
 
-Bemærk &-tegnet mellem de to.
+* Åbn app-link 
+  ```html
+  https://app.powerbi.com/Redirect?action=OpenApp&appId=appidguid&ctid=organizationid
+  ```
 
-## <a name="open-to-a-specific-tile-in-focus"></a>Åbn med et bestemt felt i fokus
-Denne URI åbner Power BI-mobilappen med et bestemt felt i fokus:
+* Åbn dashboardet, der er en del af en app 
+  ```html
+  https://app.powerbi.com/Redirect?action=OpenDashboard&appId=**appidguid**&dashboardObjectId=**dashboardidguid**&ctid=**organizationid**
+  ```
 
-    mspbi://app/OpenTile?DashboardObjectId=<36-character-dashboard-id>&TileObjectId=<36-character-tile-id>
+* Åbn en rapport, der er en del af et arbejdsområde
+  ```html
+  https://app.powerbi.com/Redirect?Action=OpenReport&reportObjectId=**reportidguid**&groupObjectId=**groupidguid**&reportPage=**ReportSectionName**
+  ```
 
-Du kan finde de 36 tegn lange id'er til dashboards og felter ved at gå til dashboardet for Power BI-tjenesten (https://powerbi.com). og åbne feltet i fokustilstand. Se eksempelvis de fremhævede dele af denne URL-adresse:
+### <a name="how-to-get-the-right-link-format"></a>Sådan får du det rigtige link-format
 
-`https://powerbi.com/groups/me/dashboards/**3784f99f-b460-4d5e-b86c-b6d8f7ec54b7**/tiles/**565f9740-5131-4648-87f2-f79c4cf9c5f5**/infocus`
+#### <a name="links-of-apps-and-items-in-app"></a>Links på apps og elementer i app
 
-For dette felt ville URI'en være:
+For **apps og rapporter og dashboard, der er en del af en app**, er den nemmeste måde at få linket for at gå til apparbejdsområdet, og vælg "Opdater app". Derved åbnes oplevelsen "Publicer app" og under fanen adgang, skal du finde en **Links** afsnit. Udvider, afsnit, og du får vist en liste over app, og alle dens indhold links, der kan bruges til at få adgang til dem direkte.
 
-    mspbi://app/OpenTile?DashboardObjectId=3784f99f-b460-4d5e-b86c-b6d8f7ec54b7&TileObjectId=565f9740-5131-4648-87f2-f79c4cf9c5f5
+![Powerbi Publicer app links ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
-Bemærk &-tegnet mellem de to.
+#### <a name="links-of-items-not-in-app"></a>Links af elementer, der ikke er i app 
 
-Hvis dashboardet er i en anden gruppe end Mit arbejdsområde, skal du tilføje `&GroupObjectId=<36-character-group-id>`
+For rapporter og dashboards, der ikke er en del af en app, du har brug at udtrække id'erne fra element URL-adressen.
 
-## <a name="open-to-a-specific-report"></a>Åbn på en bestemt rapport
-Denne URI åbner en bestemt rapport i Power BI-mobilappen:
+F.eks, for at finde 36 tegnet lange **dashboard** objekt-ID, skal du gå til det pågældende dashboard i Power BI-tjenesten 
 
-    mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>
+```html
+https://app.powerbi.com/groups/me/dashboards/**dashboard guid comes here**?ctid=**organization id comes here**`
+```
 
-Du kan finde det 36 tegn lange objekt-id for rapporten ved at gå til den pågældende rapport i Power BI-tjenesten (https://powerbi.com). Se eksempelvis den fremhævede del af denne URL-adresse:
+Til at finde 36 tegnet lange **rapport** objekt-ID, skal du gå til den pågældende rapport i Power BI-tjenesten.
+Dette er et eksempel på rapport fra "My Workspace"
 
-`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300`
+```html
+https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**`
+```
+Ovenstående URL-adressen indeholder også specifikke rapportside **"ReportSection3"** .
 
-Hvis rapporten er i en anden gruppe end Mit arbejdsområde, skal du tilføje `&GroupObjectId=<36-character-group-id>` enten før eller efter dashboard-id'et. Eksempel: 
+Dette er et eksempel på en rapport fra et arbejdsområde (ikke mit arbejdsområde)
 
-mspbi://app/OpenReport?ReportObjectId=e684af3a-9e7f-44ee-b679-b9a1c59b5d60 **&GroupObjectId=8cc900cc-7339-467f-8900-fec82d748248**
+```html
+https://app.powerbi.com/groups/**groupid comes here**/reports/**reportid comes here**/ReportSection1?ctid=**organizationid comes here**
+```
 
-Bemærk &-tegnet mellem de to.
+## <a name="use-links-inside-power-bi"></a>Brug links i Power BI
 
-## <a name="open-to-a-specific-report-page"></a>Åbn på en bestemt rapportside
-Denne URI åbner en bestemt rapportside i Power BI-mobilappen:
+Links i Power BI arbejder i mobilappsene præcis som i Power BI-tjenesten.
 
-    mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>&reportPage=ReportSection<number>
+Hvis du vil tilføje link til din rapport, der peger på en anden Power BI-element, kan du blot kopiere denne URL-adresse til element fra browserens adresselinje. Læs mere om [hvordan du føjer et hyperlink til et tekstfelt i en rapport](https://docs.microsoft.com/power-bi/service-add-hyperlink-to-text-box).
 
-Rapportsiden hedder "ReportSection" efterfulgt af et tal. Igen skal du åbne rapporten i Power BI-tjenesten (https://powerbi.com)) og navigere til den pågældende rapportside. 
+## <a name="use-report-url-with-filter"></a>Brug rapportens URL-adresse med filter
+Samme som Power BI-tjenesten, Power BI Mobile apps understøtter også rapportens URL-adresse, der indeholder en filter-forespørgsel param. Du kan åbne en rapport i Power BI-mobilapp og filtrere dem til specifikke tilstand. F.eks, denne URL-adresse, åbnes rapporten og filtreres efter distrikt
 
-Se eksempelvis den fremhævede del af denne URL-adresse:
+```html
+https://app.powerbi.com/groups/me/reports/**report guid comes here**/ReportSection3?ctid=**organization id comes here**&filter=Store/Territory eq 'NC'
+```
 
-`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/ReportSection11`
-
-## <a name="open-in-full-screen-mode"></a>Åbn i fuldskærmsvisning
-Tilføj parameteren med fed skrift for at åbne på en bestemt rapport i fuldskærmsvisning:
-
-    mspbi://app/OpenReport?ReportObjectId=<36-character-report-id>**&openFullScreen=true**
-
-Eksempel: 
-
-mspbi://app/OpenReport?ReportObjectId=500217de-50f0-4af1-b345-b81027224033&openFullScreen=true
-
-## <a name="add-context-optional"></a>Tilføj kontekst (valgfrit)
-Du kan også tilføje kontekst i strengen. Hvis du får brug for at kontakte os, kan vi bruge denne kontekst til at filtrere vores data til din app. Tilføj `&context=<app-name>` i linket
-
-Se eksempelvis den fremhævede del af denne URL-adresse: 
-
-`https://powerbi.com/groups/me/reports/df9f0e94-31df-450b-b97f-4461a7e4d300/&context=SlackDeepLink`
+Læs mere om [rapporter, hvordan du bygger param for forespørgslen til at filtrere](https://docs.microsoft.com/power-bi/service-url-filters).
 
 ## <a name="next-steps"></a>Næste trin
 Din feedback hjælper os med at afgøre, hvad der skal implementeres fremover, så husk at stemme på andre funktioner, du gerne vil se i Power BI-mobilapps. 

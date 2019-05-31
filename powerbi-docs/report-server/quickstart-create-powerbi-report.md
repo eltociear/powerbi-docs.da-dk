@@ -1,20 +1,20 @@
 ---
 title: Opret en Power BI-rapport til Power BI-rapportserveren
 description: Få mere at vide om, hvordan du opretter en Power BI-rapport til Power BI-rapportserver med nogle få hurtige trin.
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 09/19/2018
-ms.author: maghan
-ms.openlocfilehash: 7d97e375f7743b381f222d64e230d71133060464
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.date: 05/22/2019
+ms.author: maggies
+ms.openlocfilehash: 2401064f1f7f3be63c23d72e79987784e1ec7049
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324841"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187529"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Opret en Power BI-rapport til Power BI-rapportserveren
 Du kan gemme og administrere Power BI-rapporter i det lokale miljø på Microsoft Power BI-rapportservers webportal, på samme måde som du kan gemme Power BI-rapporter i skyen i Power BI-tjenesten (https://powerbi.com). Du kan oprette og redigere rapporter i Power BI Desktop og publicere dem på webportalen. Derefter kan rapportlæsere i din organisation få dem vist i en browser eller i en Power BI-mobilapp på en mobilenhed.
@@ -31,7 +31,7 @@ Hvis du allerede har oprettet Power BI-rapporter i Power BI Desktop, er du næst
 
     ![Download Power BI Desktop fra webportalen](media/quickstart-create-powerbi-report/report-server-download-web-portal.png)
 
-    Du kan også gå direkte til [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=57271) (optimeret til Power BI-rapportserver – august 2018) i Microsoft Download Center.
+    Gå direkte til [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (optimeret til Power BI Report Server – maj 2019) i Microsoft Download Center.
 
 2. På siden Download Center skal du vælge **Download**.
 
@@ -41,13 +41,13 @@ Hvis du allerede har oprettet Power BI-rapporter i Power BI Desktop, er du næst
 
     - **PBIDesktopRS_x64.msi** (64-bit-version).
 
-4. Når du har downloadet installationsprogrammet, skal du køre installationsguiden til Power BI Desktop (august 2018).
+4. Når du har downloadet installationsprogrammet, skal du køre installationsguiden til Power BI Desktop (maj 2019).
 
 2. Til sidst i installationsprocessen skal du markere **Start Power BI Desktop nu**.
    
-    Programmet starter automatisk, og du er klar til at gå i gang. Du kan se, at du har den rigtige version, hvis der står "Power BI Desktop (august 2018)" i titellinjen.
+    Programmet starter automatisk, og du er klar til at gå i gang. Du kan fortælle, at du har den rigtige version, der står "Power BI Desktop (maj 2019)" i titellinjen.
 
-    ![Power BI Desktop august 2018-version](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-august-2018.png)
+    ![Power BI Desktop version i maj 2019](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-may-2019.png)
 
 3. Hvis du ikke kender til Power BI Desktop, bør du overveje at se videoerne på velkomstskærmbilledet.
    

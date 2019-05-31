@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 226fdd59b00dc2daa625f9b1941599d21cc35087
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396399"
+---
 Du kan bruge Power BI Desktop til at udføre analytiske og statistiske analyser og oprette overbevisende visuelle elementer via integration med R. Du kan hoste disse R-visualiseringer inde fra Power BI Desktop-rapporten.
 
 Når du vælger ikonet **R visual** i ruden **Visualiseringer**, så opretter Power BI en pladsholder på lærredet til at hoste det visuelle R-element og præsenterer dig derefter for en R-scripteditor, du kan bruge direkte på lærredet. Når du føjer felter til det visuelle R-element, så føjer Power BI Desktop dem til R-scripteditorens rude.

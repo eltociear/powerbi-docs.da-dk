@@ -11,11 +11,11 @@ ms.date: 06/22/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: e426d781f7a2e663687f443c423e1fc326624289
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54296707"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61145604"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Bedste praksis for design af rapporter og visuals
 <!-- Shared newnav Include -->
@@ -411,7 +411,7 @@ For hver af de formateringsjusteringer, der er anført nedenfor, skal du vælge 
 
 **Figur 31: Åbn ruden Formatering**
 
-Vælg det visuelle element, der skal justeres, og sørg for, at det er indstillet til Til. Eksempler på visuelle elementer er: **X-aksen**, **y-aksen**, **titel**, **datanavne** og **forklaring**. I eksemplet nedenfor vises elementet **Titel**.
+Vælg det visuelle element, der skal justeres, og sørg for, at det er indstillet til Til. Eksempler på visuelle elementer er: **X-aksen**, **y-aksen**, **titel**, **datamærkater** og **forklaring**. I eksemplet nedenfor vises elementet **Titel**.
 
 ![](media/power-bi-visualization-best-practices/power-bi-title-formatting.png)
 
@@ -713,7 +713,7 @@ Hold øje med dine akser! Er det nemt at læse og fortolke dit kombinationsdiagr
 
 Så kombinationsdiagrammet vil ikke give mening, hvis dit søjlediagram og dit kurvediagram anvender to forskellige målinger, og du ikke opretter dobbeltakser.  For eksempel dollars i forhold til procent. Sørg for medtage begge akser, så læseren forstår diagrammet, og overvej også at tilføje aksenavne.
 
-Hvis du vil gøre dette, skal du åbne ruden Formatering, udvide **Y-aksen** og indstille **Vis sekundær** til Til (hvis den ikke allerede er indstillet til det). Denne indstilling kan nogle gange være svær at finde: Udvid **Y-akse (kolonne)**, og rul ned, indtil du ser **Vis sekundær**. Du skal også indstille **Titel** for Y-akse (kolonne) til Til og indstille **Titel** for Y-akse (linje) til Til.
+Hvis du vil gøre dette, skal du åbne ruden Formatering, udvide **Y-aksen** og indstille **Vis sekundær** til Til (hvis den ikke allerede er indstillet til det). Denne indstilling kan nogle gange være svær at finde: Udvid **Y-akse (kolonne)** , og rul ned, indtil du ser **Vis sekundær**. Du skal også indstille **Titel** for Y-akse (kolonne) til Til og indstille **Titel** for Y-akse (linje) til Til.
 
 ![](media/power-bi-visualization-best-practices/power-bi-show-secondary-new.png)
 

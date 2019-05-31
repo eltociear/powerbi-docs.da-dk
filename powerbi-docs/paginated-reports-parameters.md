@@ -1,26 +1,26 @@
 ---
 title: Opret parametre for sideinddelte rapporter i Power BI-tjenesten (eksempelvisning)
 description: I denne artikel kan du lære, hvordan du opretter parametre for sideinddelte rapporter i Power BI-tjenesten.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 2240d2bf622122527d4d052a9d7098be648e368d
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: d58d1c84199c698089f4b3abccb26f9dbaea76d6
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324596"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60987651"
 ---
 # <a name="create-parameters-for-paginated-reports-in-the-power-bi-service-preview"></a>Opret parametre for sideinddelte rapporter i Power BI-tjenesten (eksempelvisning)
 
 I denne artikel kan du lære, hvordan du opretter parametre for sideinddelte rapporter i Power BI-tjenesten.  En rapportparameter gør det muligt at vælge rapportdata og variere rapportpræsentationen. Du kan angive en standardværdi og en liste over tilgængelige værdier, og læserne af din rapport kan ændre valget.  
 
-I følgende illustration vises Designvisning i Report Builder for en rapport med parametrene @BuyingGroup, @Customer, @FromDate og @ToDate. 
+Nedenfor viser designvisning i Power BI Report Builder for en rapport med parametre @BuyingGroup, @Customer, @FromDate, og @ToDate. 
   
 ![Parametre i Report Builder](media/paginated-reports-parameters/power-bi-paginated-parameters-report-builder.png)
   
@@ -37,7 +37,7 @@ I følgende illustration vises Designvisning i Report Builder for en rapport med
   
 ## <a name="create-or-edit-a-report-parameter"></a>Opret eller rediger en rapportparameter  
   
-1.  Åbn din sideinddelte rapport i Report Builder.
+1.  Åbn din sideinddelte rapport i Power BI Report Builder.
 
 1. I ruden **Rapportdata** skal du højreklikke på **Parametre** node > **Tilføj parameter**. Dialogboksen **Egenskaber for rapportparametre** åbnes.  
   

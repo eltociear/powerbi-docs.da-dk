@@ -7,25 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/02/2018
+ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: e1748c478f9f58b568b901f3a243e64e4658f6a6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: bb0f6febfaee30c3eab3ce8b8aa618eb09c464bf
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54273081"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375253"
 ---
 # <a name="use-power-bi-service-or-power-bi-desktop-to-create-a-custom-answer-page-for-cortana"></a>Du kan bruge Power BI-tjenesten eller Power BI Desktop til at oprette en tilpasset svarside til Cortana
 Få det fulde udbytte ud af Power BI ved at oprette særlige rapportsider, *Cortana-svarsider* (optræder undertiden også under benævnelsen *Cortana-svarkort*), udviklet specielt til at besvare Cortana spørgsmål.
 
-![](media/service-cortana-answer-cards/power-bi-cortana.png)
-
 > [!IMPORTANT]
-> Hvis du afprøver eksempelvisningen af Cortana- og Power BI-**dashboard**, kan du springe resten af denne artikel over. Der er ingen krav om konfiguration, før Cortana er i stand til at søge i dine Power BI-dashboards.
-> 
-> 
+> Integration af Cortana frarådes i Power BI. Fra og med 11. juni, fungerer Cortana ikke længere for alle dashboards og rapporter.
+
+![](media/service-cortana-answer-cards/power-bi-cortana.png)
 
 ## <a name="before-you-begin"></a>Inden du starter
 Du har fire dokumenter, der hjælper dig igennem konfiguration og anvendelse af Cortana til Power BI. Hvis du ikke allerede har gjort det, skal du starte med at læse artikel et. Og artikel to er vigtig, fordi den beskriver nogle trin, du skal tage, før du kan begynde at bruge Cortana-svarsiderne.

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 74d45bf5fcaf51c29d1f1818b3d14d85d73ff086
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396410"
+---
 I denne artikel kan du få mere at vide om, hvordan du kan oprette nye liggende søjlediagrammer, cirkeldiagrammer og træstrukturer og tilpasse dem, så de passer til dine rapporter.
 
 Der er to forskellige måder at oprette en ny visualisering i Power BI Desktop:

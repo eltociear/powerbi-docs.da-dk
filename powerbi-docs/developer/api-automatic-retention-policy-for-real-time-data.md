@@ -1,24 +1,24 @@
 ---
 title: Power BI-API'er, der bruger politik for automatisk opbevaring for data i realtid
 description: Få mere at vide om politikken for automatisk opbevaring i Power BI-tjenesten
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/08/2018
-ms.openlocfilehash: 246feb1cb15d1688cab044151b50ba62db45c453
-ms.sourcegitcommit: 0abcbc7898463adfa6e50b348747256c4b94e360
-ms.translationtype: HT
+ms.openlocfilehash: 07726535246f8b115402373c315062151177d27c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55762392"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61347305"
 ---
 # <a name="automatic-retention-policy-for-real-time-data"></a>Politik for automatisk opbevaring for data i realtid
 
-Politikken for automatisk opbevaring i Power BI-tjenesten er en parameter for en forespørgselsstreng, som gør det muligt for en standardopbevaringspolitik at rydde op i gamle data automatisk, samtidig med at en konstant strøm af nye data overføres til dit dashboard. Den første opbevaringspolitik kaldes *FIFO (først ind – først ud)*. Når den er aktiveret, samles dataene i en tabel, indtil den når 200.000 rækker. Når der er flere end 200.000 rækker med data, slettes de ældste rækker fra datasættet. På den måde gemmes mellem 200.000 og 210.000 rækker med de nyeste data.  
+Politikken for automatisk opbevaring i Power BI-tjenesten er en parameter for en forespørgselsstreng, som gør det muligt for en standardopbevaringspolitik at rydde op i gamle data automatisk, samtidig med at en konstant strøm af nye data overføres til dit dashboard. Den første opbevaringspolitik kaldes *FIFO (først ind – først ud)* . Når den er aktiveret, samles dataene i en tabel, indtil den når 200.000 rækker. Når der er flere end 200.000 rækker med data, slettes de ældste rækker fra datasættet. På den måde gemmes mellem 200.000 og 210.000 rækker med de nyeste data.  
   
 <center>
 

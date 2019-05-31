@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 08/17/2018
+ms.date: 04/21/2019
 ms.author: mshenhav
-ms.openlocfilehash: 037cab2435abddc0988d076f6598ab8313b4dda6
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: bee60dd6f3254b049f2445e6e985c625933caf5b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54281568"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65565475"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -32,89 +32,78 @@ En Power BI-rapport er en interaktiv visning af dine data, hvor visualiseringer 
 ## <a name="open-a-power-bi-report-in-the-mobile-app"></a>Åbn en Power BI-rapport i mobilappen
 Power BI-rapporter er gemt på forskellige steder i mobilappen, afhængigt af hvor du har fået dem. De kan være placeret under Apps, Delt med mig, Arbejdsområder(herunder Mit arbejdsområde) eller på en rapportserver. Nogle gange skal du gennem et relateret dashboard for at komme til en rapport. Andre gange vises de på en liste.
 
-* Tryk på de tre prikker (...) i øverste højre hjørne af et felt på et dashboard, og vælg **Åbn rapport**.
+I lister og menuer, kan du se et ikon ud for rapportnavnet på en, hjælper dig med at forstå, at dette element er en rapport. 
+
+![rapporter i mit arbejdsområde](./media/mobile-reports-in-the-mobile-apps/reports-my-workspace.png) 
+
+Der er to ikoner for rapporter i Power BI Mobile apps:
+
+* ![Ikonet Rapport](./media/mobile-reports-in-the-mobile-apps/report-default-icon.png) Angiver en rapport, der får vist i liggende retning i appen og ser den samme som den ser ud i browseren.
+
+* ![Telefonrapport-ikon](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) Angiver en rapport, der har mindst én telefon optimerede rapportside, der præsenteres i stående. 
+
+Bemærk! Holder telefonen i liggende format, får du altid det liggende layout, selvom rapportsiden har telefonlayout. 
+
+Tryk på ellipsen (...) i øverste højre hjørne af et felt for at få en rapport fra et dashboard, > **Åbn rapport**.
   
   ![Åbn rapport](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
   Det er ikke alle felter, der kan åbnes i en rapport. De felter, der er oprettet ved at stille spørgsmål i feltet Spørgsmål og svar, kan for eksempel ikke åbnes i en rapport, når du trykker på dem. 
   
-  På en telefon åbnes rapporten i liggende format, medmindre den er [optimeret til visning på en telefon](mobile-reports-in-the-mobile-apps.md#view-reports-optimized-for-phones).
-  
-  ![Telefonrapport i liggende format](./media/mobile-reports-in-the-mobile-apps/power-bi-iphone-report-landscape.png)
+## <a name="interacting-with-reports"></a>Interagere med rapporter
+Når du har en rapport, der er åbnet i appen, kan du begynde at arbejde med den. Der er mange ting, du kan gøre med din rapport og de tilhørende data. Du finder handlinger, du kan udføre på rapporten, og ved at trykke på og lange trykke på dataene, der vises i rapporten, du kan også opdele og Opdel dataene i rapportens sidefod.
 
-## <a name="view-reports-optimized-for-phones"></a>Vis rapporter, der er optimeret til telefoner
-Den, der opretter en rapport i Power BI, kan oprette et rapportlayout, som er specifikt optimeret til telefoner. Rapportsider optimeret til telefoner har supplerende funktionalitet: Du kan f.eks. analysere og sortere i visuals, og du kan få adgang til de [filtre, som rapportens forfatter har føjet til rapportsiden](mobile-apps-view-phone-report.md#filter-the-report-page-on-a-phone). Rapporten åbnes på din telefon filtreret efter de værdier, der filtreres efter i rapporten på internettet, sammen med en meddelelse om, at der er aktive filtre på siden. Du kan ændre filtrene på telefonen.
+### <a name="using-tap-and-long-tap"></a>Ved hjælp af tryk, og tryk længe på
+Tryk på er lig med en mus klik. Hvis du vil fremhæve den rapport, der er baseret på et datapunkt på tværs af tryk så på dette datapunkt.
+Trykke på en værdi i udsnittet, gør denne værdi, der er valgt, og udsnit i resten af rapporten ved at denne værdi. Trykke på et link, vil knap eller et bogmærke aktivere den baseret på den handling, der er defineret af forfatteren.
 
-Hvis en rapport er optimeret til telefoner, vises den med et særligt ikon på listen over rapporter ![Ikon for rapport, der er optimeret til telefoner](./media/mobile-reports-in-the-mobile-apps/power-bi-phone-report-icon.png):
+Du bemærket sikkert, at når du trykker på et visuelt element, vises en kant. På den øverste højre hjørne på kanten er der tre prikker (...). Trykke på det får du en menu med de handlinger, du kan udføre på dette visuelle element.
 
-![Åbn en rapport, der er optimeret til telefoner](./media/mobile-reports-in-the-mobile-apps/power-bi-android-phone-report.png)
+![rapportvisualisering og menuen](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
-Når du får vist rapporten på en telefon, åbnes den i stående format.
+### <a name="tooltip-and-drill-actions"></a>Værktøjstip og analysér handlinger
 
-![Rapport i stående format](./media/mobile-reports-in-the-mobile-apps/07-power-bi-phone-report-portrait.png)
+Når du langt tryk (Tryk på og hold) et datapunkt, et værktøjstip vises præsentere de værdier, der repræsenterer dette datapunkt. 
 
- En rapport kan have flere sider, hvor nogle er optimeret til telefoner, mens andre sider ikke er. Hvis det er tilfældet, skifter visningen fra stående til liggende format på de enkelte sider, når du bladrer i rapporten.
+![værktøjstip til en rapport](./media/mobile-reports-in-the-mobile-apps/report-tooltip.png)
 
-Læs mere om [rapporter, der er optimeret til visning på telefoner](mobile-apps-view-phone-report.md).
+Forfattere kan definere hierarkier i data og relationer mellem rapportsider. Hierarki gør det muligt for detailudledning, analysér op, og gå gennem en anden rapportside fra et visuelt element og en værdi. Så når du tryk længe på en værdi, ud over værktøjstippet, vises de relevante analyseindstillinger i sidefoden. 
 
-## <a name="use-slicers-to-filter-a-report"></a>Brug udsnit til at filtrere en rapport
-Når du opretter en rapport i Power BI Desktop eller Power BI-tjenesten, bør du overveje at [føje udsnit til en rapportside](../../visuals/power-bi-visualization-slicers.md). Du og dine kolleger kan bruge udsnittene til at filtrere siden i en browser og i mobilapps. Når du får vist rapporten på en telefon, kan du se og interagere med udsnittene i liggende tilstand og på en side, der er optimeret til telefonens lodrette tilstand. Hvis du vælger en værdi i et udsnitsværktøj eller et filter i browseren, vælges værdien også, når du får vist siden i mobilappen. Du får vist en meddelelse om, at der er aktive filtre på siden.  
+![Analysér handlinger i rapporter](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
 
-* Når du vælger en værdi i et udsnit på rapportsiden, filtreres de andre visualiseringer på siden.
-  
-  ![Rapportudsnit](./media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-slicer.png)
-  
-  I denne illustration filtrerer udsnittet søjlediagrammet, så der kun vises værdier for juli måned.
-
-## <a name="cross-filter-and-highlight-a-report"></a>Krydsfiltrer og fremhæv en rapport
-Når du vælger en værdi i en visualisering, filtreres de øvrige visualiseringer ikke. I stedet fremhæves de relaterede værdier i de andre visualiseringer.
-
-* Tryk på en værdi i en visualisering.
-  
-  ![Krydsfiltrer en side](./media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-highlight.png)
-  
-  Hvis du trykker på kolonnen Stor i en visualisering, fremhæves de relaterede værdier i andre visualiseringer. 
-
-## <a name="sort-a-visual-on-an-ipad-or-a-tablet"></a>Sortér en visualisering på en iPad eller en tablet
-* Tryk på diagrammet, tryk på de tre prikker (**...**), og tryk på feltnavnet.
-  
-   ![Sortér en visualisering](./media/mobile-reports-in-the-mobile-apps/power-bi-android-tablet-report-sort.png)
-* Hvis du vil vende sorteringsrækkefølgen, skal du trykke på de tre prikker (**...**) igen og derefter trykke på det samme feltnavn igen.
-
-## <a name="drill-down-and-up-in-a-visual"></a>Analysér ned og op i en visualisering
-Hvis forfatteren til en rapport har gjort det muligt at analysere ned i en visualisering, kan du gør det for at se de værdier, som er brugt til en del af den. Du kan [tilføje detailudledning i en visualisering](../end-user-drill.md) i Power BI Desktop eller Power BI-tjenesten. 
-
-* Tryk på og hold ned på et datapunkt i en visualisering for at få vist værktøjstippet. Hvis du kan analysere ned, findes der pile nederst i værktøjstippet, som du kan trykke på. 
-  
-  ![Detailudledning i en visualisering](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-down-tooltip.png)
-
-* Hvis du vil have vist færre detaljer igen, skal du trykke på pil op i værktøjstippet.
-  
-  ![Færre detaljer](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-up-tooltip.png)
-
-* Du kan også analysere ned i alle datapunkterne i visualiseringen. Åbn den i fokustilstand, tryk på ikonet Udforsk, og vælg derefter Vis alle næste niveauer. Du kan også udvide, så du får vist det nuværende og næste niveau.
-
-   ![Detailudledning i Power BI](./media/mobile-reports-in-the-mobile-apps/power-bi-drill-down-all.png)
-
-## <a name="drill-through-from-one-page-to-another"></a>Analysér ned fra én side til en anden
-
-Når der er mulighed for *detaljeadgang*, og du trykker på en bestemt del af en visualisering, føres du til en anden side i rapporten, der er filtreret, så den værdi, du har klikket på, vises. En forfatter af en rapport kan angive en eller flere muligheder for detaljeadgang, som hver især fører dig til en anden side. Hvis det er tilfældet, kan du vælge, hvilken mulighed du vil. I eksemplet nedenfor kan du vælge mellem at analysere ned til **forbrug pr. forretningsområde** eller **planlægning pr. forretningsområde**, når du trykker på værdien i måleren.
-
-![Detaljeadgang i rapport i Power BI Mobile](./media/mobile-reports-in-the-mobile-apps/power-bi-mobile-drill-through-it-spent-report.png)
-
-Når du analyserer ned, kan du bruge knappen Tilbage til at komme tilbage til den forrige rapportside.
+Når der er mulighed for *detaljeadgang*, og du trykker på en bestemt del af en visualisering, føres du til en anden side i rapporten, der er filtreret, så den værdi, du har klikket på, vises.  En forfatter af en rapport kan angive en eller flere muligheder for detaljeadgang, som hver især fører dig til en anden side. Hvis det er tilfældet, kan du vælge, hvilken mulighed du vil. Knappen tilbage, vender du tilbage til den forrige rapportside.
 
 Læs om, hvordan du [tilføjer detaljeadgang i Power BI Desktop](../../desktop-drillthrough.md).
+   
+   > [!IMPORTANT]
+   > Detailudledning i matrix- og tabelvisuals er aktiveret i Power BI Mobile app via en celleværdi, og ikke af kolonne- og overskrifter.
+   
+   
+   
+### <a name="using-the-actions-in-the-report-footer"></a>Ved hjælp af handlingerne i rapportens sidefod
+Rapportens sidefod har handlinger, du kan gøre på den aktuelle rapportside eller hele rapporten. Sidefoden har hurtig adgang til de handlinger, der er mest nyttige, og alle handlinger, der kan være adgang fra de tre prikker (...).
 
-## <a name="show-data-and-copy-values"></a>Vis data, og kopiér værdier
+![rapportens sidefod](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
-Du kan få vist de underliggende data for en visualisering ved at vælge menuen Indstillinger vha. ellipsen (**...** ) i øverste højre hjørne af en visualisering i en telefonrapport og derefter vælge **Vis data**.
+De handlinger, du kan udføre fra sidefoden er:
+1) Nulstille rapportfilteret og tværgående fremhævning valg tilbage til den oprindelige tilstand.
+2) Åbn samtaleruden for at få vist eller tilføje kommentarer i denne rapport.
+3) Åbn filterruden for at få vist og redigere filteret anvendes i øjeblikket i rapporten.
+4) Vis alle sider i denne rapport. Trykke på sidenavn indlæser og præsenterer denne side.
+Flytte mellem rapportsider kan gøres ved at stryge fra side af skærmen til center.
+5) Få vist alle handlinger i rapporter.
 
-![Vis datamenuen Indstillinger i Power BI – Mobil](./media/mobile-reports-in-the-mobile-apps/copy-data-visual.png)
+#### <a name="all-report-actions"></a>Alle handlinger i rapporter
+Trykke på den... indstillingen i rapportens sidefod, får du alle de handlinger, du kan udføre i en rapport. 
 
-Hvis du trykker længe på en celle i tabellen, vises den oprindelige menu for markering og kopiering, så du kan vælge at kopiere dataene i tabellen (eller hele tabellen).
+![rapportere alle handlinger](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
 
-![Detaljeadgang i rapport i Power BI Mobile](./media/mobile-reports-in-the-mobile-apps/copy-data-table.png)
+Nogle af handlingerne, der kan være deaktiveret, da de er afhængige af de specifikke rapport-funktioner.
+Eksempel:
+1) **Filtrer efter den aktuelle placering** er aktiveret, hvis dataene i din rapport er kategoriseret på af forfatteren med geografiske data. [Lær, hvordan du Identificer geografiske data i din rapport](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
+2) **Scanning til at filtrere rapporten efter stregkode** aktiveres kun, hvis datasættet i din rapport blev markeret som stregkode. [Hvordan du kan mærke stregkoder i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes). 
+3) **Inviter** aktiveres kun, hvis du har tilladelse til at dele denne rapport med andre. Du får tilladelse kun, hvis du er ejeren af rapporten, eller hvis du har fået tilladelse del af ejeren.
+4) **Anmærk og del** Deaktiver kan være, hvis der er en [Intune-politik for beskyttelse af](https://docs.microsoft.com/intune/app-protection-policies) i din organisation, der er forbudt deling fra Power BI-mobilappen. 
 
 ## <a name="next-steps"></a>Næste trin
 * [Få vist og interager med Power BI-rapporter, der er optimeret til din telefon](mobile-apps-view-phone-report.md)

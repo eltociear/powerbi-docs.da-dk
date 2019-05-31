@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b7f2dbd4fa58e86598c0258c432d31cf2f775ecf
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61260243"
+---
 Lad os hurtigt opfriske det, vi gennemgik i første afsnit.
 
 **Power BI** er en samling af softwaretjenester, apps og forbindelser, der arbejder sammen for gøre dataene til interaktive indsigter. Du kan bruge data fra enkle, grundlæggende kilder, f.eks. en Excel-projektmappe, eller trække data ind fra flere databaser og skybaserede kilder for at oprette komplekse datasæt og rapporter. Power BI kan være så enkel, som du ønsker, eller så klar til brug i virksomheden, som din komplekse, globale virksomhed kræver.

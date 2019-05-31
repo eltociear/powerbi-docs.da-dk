@@ -1,21 +1,21 @@
 ---
 title: Integreret analyse for at integrere Power BI-indhold i dit program for dine kunder
 description: Få mere at vide om, hvordan du integrerer en rapport, et dashboard eller et felt i et program ved hjælp af Power BI-API'er for at bruge integreret analyse for dine kunder. Få mere at vide om, hvordan du integrerer Power BI i dit program ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence.
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.topic: tutorial
 ms.service: powerbi
-ms.component: powerbi-developer
+ms.subservice: powerbi-developer
 ms.custom: seodec18
-ms.date: 02/05/2019
-ms.openlocfilehash: 5bb4a739b6a333ecaf0ddc3ee2596fc210033470
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.date: 04/02/2019
+ms.openlocfilehash: e945e19505d7342cf3ba2236b4811e87a69730ab
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174953"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710961"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Selvstudium: Integrer Power BI-indhold i en app til dine kunder
 
@@ -135,7 +135,7 @@ Hvis du vil hente **applicationId**, skal du følge disse trin:
 
     ![applicationId](media/embed-sample-for-customers/embed-sample-for-customers-007.png)
 
-### <a name="workspace-id"></a>Arbejdsområde-id
+### <a name="workspace-id"></a>Id for arbejdsområde
 
 Denne attribut er påkrævet for begge AuthenticationTypes (masterkonto og [tjenesteprincipal](embed-service-principal.md)).
 
@@ -192,23 +192,19 @@ Hvis du vil hente **ApplicationSecret**, skal du følge disse trin:
 
 2. Vælg **Alle tjenester** i navigationsruden til venstre, og vælg derefter **Programregistreringer**.
 
-    ![Søg efter programregistrering](media/embed-sample-for-your-organization/embed-sample-for-your-organization-003.png)
+    ![Søg efter programregistrering](media/embed-sample-for-customers/embed-sample-for-customers-003.png)
 
 3. Vælg programmet, der skal bruge **ApplicationSecret**.
 
-    ![Vælg en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-006.png)
+    ![Vælg en app](media/embed-sample-for-customers/embed-sample-for-customers-0038.png)
 
-4. Vælg **Indstillinger**.
+4. Vælg **certifikater og hemmeligheder** under **Administrer**.
 
-    ![Vælg Indstillinger](media/embed-sample-for-your-organization/embed-sample-for-your-organization-038.png)
-
-5. Vælg **Nøgler**.
-
-    ![Vælg Nøgler](media/embed-sample-for-your-organization/embed-sample-for-your-organization-039.png)
+5. Vælg **nye klient hemmeligheder**.
 
 6. Angiv et navn i feltet **Beskrivelse**, og vælg en varighed. Vælg derefter **Gem** for at hente **værdien** til dit program. Når du lukker ruden **Nøgler** efter at have gemt nøgleværdien, vises feltet med værdien kun som skjult. På det tidspunkt kan du ikke hente nøgleværdien. Hvis du mister nøgleværdien, skal du oprette en ny i Azure Portal.
 
-    ![Nøgleværdi](media/embed-sample-for-your-organization/embed-sample-for-your-organization-031.png)
+    ![Nøgleværdi](media/embed-sample-for-customers/embed-sample-for-customers-042.png)
 
 ### <a name="tenant"></a>Lejer
 
@@ -369,7 +365,7 @@ Brug tabellen nedenfor til at bestemme, hvilken kapacitet til Power BI Embedded 
 | A5 |16 v-kerne(r) |8 kerne(r), 50 GB RAM |8 kerne(r) |60 pr. sekund |
 | A6 |32 v-kerne(r) |16 kerne(r), 100 GB RAM |16 kerne(r) |120 pr. sekund |
 
-**_Med A-SKU'er kan du ikke få adgang til Power BI-indhold med en GRATIS Power BI-licens._**
+**_Med A-SKU'er kan du ikke få adgang til Power BI-indhold med en GRATIS Power BI-licens._ **
 
 Brug af integreringstokens med en PRO-licens er beregnet til udviklingstest, så antallet af integreringstokens, der kan genereres af en Power BI-masterkonto eller tjenesteprincipal, er begrænset. En dedikeret kapacitet kræver integrering i et produktionsmiljø. Der er ingen grænse for, hvor mange integreringstokens du kan generere med en dedikeret kapacitet. Gå til [Tilgængelige funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) for at undersøge den brugsværdi, der angiver brugen af integrerede tokens i procent. Forbrugsbeløbet er baseret på overordnet konto.
 

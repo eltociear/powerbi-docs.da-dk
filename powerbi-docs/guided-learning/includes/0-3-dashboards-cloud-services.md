@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d600581b9d1df8c8436da45e9629fccb79873c21
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61260252"
+---
 Vi har lært, at den hyppigste arbejdsgang i Power BI er at oprette en rapport i Power BI Desktop, udgive den i Power BI-tjenesten og derefter dele den med andre, så de kan få vist den i tjenesten eller på en mobil-app.
 
 Nogle brugere starter dog i Power BI-tjenesten, så vi tager et hurtigt kig på tjenesten og får mere at vide om, hvordan man let og hurtigt opretter visuelle elementer i Power BI med *indholdspakker*.

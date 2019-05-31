@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 034dc98b1e623bd0d509eb2d174cdc3e3b865067
-ms.sourcegitcommit: 10a87c016f497dbeba32f94ed1f3688a70816fea
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65514310"
 ---
 # <a name="real-time-streaming-in-power-bi"></a>Streaming i realtid i Power BI
@@ -134,11 +134,11 @@ Hvis du endnu ikke har konfigureret streamingdatasæt, så bare rolig: Du kan v�
 
 ![](media/service-real-time-streaming/real-time-streaming_2.png)
 
-På denne side kan du angive slutpunktet for dit streamingdatasæt, hvis du allerede har oprettet et (i tekstfeltet). Hvis du endnu ikke har et streamingdatasæt, skal du vælge plus-ikonet (**+**) i øverste højre hjørne for at se de tilgængelige indstillinger til oprettelse af et streamingdatasæt.
+På denne side kan du angive slutpunktet for dit streamingdatasæt, hvis du allerede har oprettet et (i tekstfeltet). Hvis du endnu ikke har et streamingdatasæt, skal du vælge plus-ikonet ( **+** ) i øverste højre hjørne for at se de tilgængelige indstillinger til oprettelse af et streamingdatasæt.
 
 ![](media/service-real-time-streaming/real-time-streaming_3.png)
 
-Når du klikker på ikonet **+**, vises to indstillinger:
+Når du klikker på ikonet **+** , vises to indstillinger:
 
 ![](media/service-real-time-streaming/real-time-streaming_4a.png)
 

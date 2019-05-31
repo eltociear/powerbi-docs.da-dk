@@ -1,20 +1,20 @@
 ---
 title: Hvad kan jeg bruge Power BI-API'en til?
 description: Hvad kan jeg bruge Power BI-API'en til?
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/25/2019
-ms.openlocfilehash: 443aa370ebb4122d0f979f60726ba953ce13195d
-ms.sourcegitcommit: 3a05f34dbeabac62ea8c35c12a045284271971bc
-ms.translationtype: HT
+ms.openlocfilehash: fd49c69a14d3dac6b1a045f6aba407ec7aac0deb
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58872564"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61269408"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Hvad kan udviklere bruge Power BI-API'en til?
 
@@ -24,12 +24,12 @@ Med REST API for Power BI er det muligt at udføre administrationsopgaver på Po
 
 Her er nogle af de ting, du kan bruge Power BI-API'erne til.
 
-| **Få mere at vide** | **Se disse oplysninger** |
+| **Til at få mere at vide** | **Denne referenceoplysninger** |
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Integrer rapporter, dashboards og felter både for brugere af Power BI og brugere, der ikke anvender Power BI. | [Sådan integrerer du Power BI-dashboards, -rapporter og -felter ](embedding-content.md) |
-| Udfør administrationsopgaver på Power BI-objekter. | [Reference til REST API for Power BI](https://docs.microsoft.com/rest/api/power-bi/) |
+| Integrer rapporter, dashboards og felter både for brugere af Power BI og brugere, der ikke anvender Power BI. | [Sådan integrerer du Power BI-dashboards, rapporter og felter ](embedding-content.md) |
+| Udfør administrationsopgaver på Power BI-objekter. | [Reference til Power BI REST-API](https://docs.microsoft.com/rest/api/power-bi/) |
 | Udvid en eksisterende forretningsarbejdsproces til at overføre vigtige data til et Power BI-dashboard. | [Overfør data til et dashboard ](walkthrough-push-data.md) |
-| Godkend til Power BI. | [Godkend til Power BI ](get-azuread-access-token.md) |
+| Godkend til Power BI. | [Godkend til Powerbi ](get-azuread-access-token.md) |
 
 > [!NOTE]
 > Power BI-API'erne refererer stadig til apparbejdsområder som grupper. Referencer til grupper betyder, at du arbejder med apparbejdsområder.
@@ -38,8 +38,8 @@ Her er nogle af de ting, du kan bruge Power BI-API'erne til.
 
 | Værktøj(er) | Beskrivelse |  |  |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
-| [Værktøj til teststed](https://microsoft.github.io/PowerBI-JavaScript/demo) | Oplev et komplet eksempel på brug af JavaScript-API'er for Power BI. Med dette værktøj kan du nemt prøve dig frem med forskellige typer Power BI Embedded-eksempler. |  |  |
-| [Power BI JavaScript-wiki](https://github.com/Microsoft/powerbi-javascript/wiki) | For at få flere oplysninger om JavaScript-API'er for Power BI. |  |  |
+| [Legeplads, hvor værktøjet](https://microsoft.github.io/PowerBI-JavaScript/demo) | Oplev et komplet eksempel på brug af JavaScript-API'er for Power BI. Med dette værktøj kan du nemt prøve dig frem med forskellige typer Power BI Embedded-eksempler. |  |  |
+| [Power BI JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) | For at få flere oplysninger om JavaScript-API'er for Power BI. |  |  |
 | [Postman](https://www.getpostman.com/) | Kør anmodninger, test, find fejl, overvåg, kør automatiserede test og meget mere. |
 
 ## <a name="push-data-into-power-bi"></a>Overfør data til Power BI
@@ -51,14 +51,14 @@ Du kan bruge Power BI-API'en til at [sende data til et datasæt via push](walkth
 ## <a name="github-repositories"></a>GitHub-lagre
 
 * [Eksempler på Power BI Developer](https://github.com/Microsoft/PowerBI-Developer-Samples)
-* [.NET SDK](https://github.com/Microsoft/PowerBI-CSharp)
+* [.NET-SDK](https://github.com/Microsoft/PowerBI-CSharp)
 * [JavaScript-API](https://github.com/Microsoft/PowerBI-JavaScript)
 
 ## <a name="next-steps"></a>Næste trin
 
 * [Overfør data til et datasæt](walkthrough-push-data.md)
 * [Udvikling af en brugerdefineret visualisering i Power BI](custom-visual-develop-tutorial.md)
-* [Reference til Power BI REST-API](rest-api-reference.md)
+* [Power BI REST API-Reference](rest-api-reference.md)
 * [REST-API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

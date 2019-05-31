@@ -13,11 +13,11 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 8172934357c24516a40a670c68e008521bd4d82d
-ms.sourcegitcommit: 378265939126fd7c96cb9334dac587fc80291e97
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57580099"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61051188"
 ---
 # <a name="basic-concepts-for-power-bi-service-consumers"></a>Grundlæggende koncepter for ***forbrugere*** af Power BI-tjenesten
 
@@ -104,7 +104,7 @@ Her er blot nogle af de visualiseringer, du kan støde på i Power BI: vandfald,
 
    ![8 eksempel på visualiseringer](media/end-user-basic-concepts/power-bi-visuals.png)
 
-Visualiseringer er også tilgængelige fra community'et. Disse kaldes for *brugerdefinerede visualiseringer*. Hvis du modtager en rapport med en visualisering, du ikke genkender, er det sandsynligvis en brugerdefineret visualisering. Hvis du har brug for hjælp til at forstå den brugerdefinerede visualisering, <!--[look up the name of the report or dashboard *designer*](end-user-owner.md)-->kan du slå navnet på *designeren* af rapporten eller dashboardet op og kontakte ham eller hende.
+Visualiseringer er også tilgængelige fra community'et. Disse kaldes for *brugerdefinerede visualiseringer*. Hvis du modtager en rapport med en visualisering, du ikke genkender, er det sandsynligvis en brugerdefineret visualisering. Hvis du har brug for hjælp til at fortolke den brugerdefinerede visualisering, <!--[look up the name of the report or dashboard *designer*](end-user-owner.md)-->Slå op på navnet på rapporten eller dashboardet *designer* , og Kontakt ham eller hende.
 
 **ÈN** visualisering i en rapport...
 

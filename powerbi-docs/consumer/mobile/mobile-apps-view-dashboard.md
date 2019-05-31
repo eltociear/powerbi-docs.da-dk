@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
 ms.openlocfilehash: dc117c9b17e9d20d1e5be6e6fedd18cb7aa3ae61
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279222"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61139296"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Vis dashboards og rapporter i Power BI-mobilappsene
 Gælder for:
@@ -87,7 +87,7 @@ Du kan også "klemme sammen" med fingrene for at zoome ind og ud på forskellige
    
    * De gule stjerner ![Stjerner for favoritter](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) viser, hvilke dashboards der er favoritter. 
    * Notationen under hvert dashboardnavn (i dette tilfælde "MBI") ![Dataklassifikation](././media/mobile-apps-view-dashboard/power-bi-dashboard-ios-medium-classification.png) viser, hvordan dataene i hvert dashboard klassificeres. Læs mere om [dataklassifikation i Power BI](../../service-data-classification.md).
-3. Du kan dele et dashboard fra dit arbejdsområde. Tryk på de tre prikker (**...**) i nederste højre hjørne af dashboardfeltet, og tryk på **Inviter andre**.
+3. Du kan dele et dashboard fra dit arbejdsområde. Tryk på de tre prikker ( **...** ) i nederste højre hjørne af dashboardfeltet, og tryk på **Inviter andre**.
    
    ![Ikonet Inviter](./media/mobile-apps-view-dashboard/power-bi-ipad-tile-invite-others.png)
 4. Du kan også trykke på et dashboard for at åbne det og få vist felterne i dashboardet. Du kan interagere med felterne på et dashboard:

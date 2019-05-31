@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: fc403220ae45fda879802fe480853a3c94fd53c0
-ms.sourcegitcommit: 69c31c15020e2707f961697eeb05cb550c9968f6
-ms.translationtype: HT
+ms.openlocfilehash: ccd8569650bd4f3da1a05c0999ad510029e5ab49
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58220948"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61137812"
 ---
-# <a name="using-computed-entities-on-power-bi-premium-preview"></a>Brug af beregnede objekter i Power BI Premium (prøveversion)
+# <a name="using-computed-entities-on-power-bi-premium"></a>Brug af beregnede objekter i Power BI Premium
 
 Du kan udføre **i lager-beregninger**, når du bruger **dataflow** vha. et Power BI Premium-abonnement. Dermed kan du udføre beregninger af dine eksisterende dataflow og få resultater, der giver dig mulighed for at fokusere på oprettelse af rapporter og analyser. 
 
@@ -31,10 +31,6 @@ Der er to måder, du kan oprette forbindelse mellem dataflowdata og Power BI på
 * Brug af et eksternt dataflow
 
 I følgende afsnit beskrives, hvordan du kan oprette beregnede objekter for dine dataflowdata.
-
-> [!NOTE]
-> Dataflowfunktionaliteten er tilgængelig som prøveversion og kan ændres og opdateres, før den bliver generelt tilgængelig.
-
 
 ## <a name="how-to-create-computed-entities"></a>Sådan opretter du beregnede objekter 
 
@@ -89,9 +85,9 @@ I denne artikel beskrives beregnede objekter og dataflow, der er tilgængelige i
 
 * [Selvbetjent dataforberedelse med dataflow](service-dataflows-overview.md)
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Brug af dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
-* [Konfigurer indstillinger for dataflow for arbejdsområde (eksempelvisning)](service-dataflows-configure-workspace-storage-settings.md)
+* [Ved hjælp af dataflows med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI dataflows](service-dataflows-developer-resources.md)
+* [Konfigurer indstillinger for dataflow for et arbejdsområde (prøveversion)](service-dataflows-configure-workspace-storage-settings.md)
 * [Føj en CDM-mappe til Power BI som et dataflow (prøveversion)](service-dataflows-add-cdm-folder.md)
 * [Opret forbindelse til Azure Data Lake Storage Gen2 til dataflowlager (eksempelvisning)](service-dataflows-connect-azure-data-lake-storage-gen2.md)
 

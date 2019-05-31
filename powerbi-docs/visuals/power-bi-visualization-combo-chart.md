@@ -8,15 +8,15 @@ featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 896c415028b99db8662e93b5d709b76520996fef
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: e461480f53f4a97aeb4282e64a8a03eb8e1418d1
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275749"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66187809"
 ---
 # <a name="combo-chart-in-power-bi"></a>Kombinationsdiagram i Power BI
 I Power BI er et kombinationsdiagram en enkelt visualisering, der kombinerer et kurvediagram og et søjlediagram. Ved at kombinere disse to diagrammer kan du hurtigere sammenligne dine data.
@@ -52,7 +52,7 @@ Se, hvordan Will opretter et kombinationsdiagram ved hjælp af salgs- og marketi
 
     b.  Træk **Sales** \> **Gross Margin This Year** til beholderen **Value**.
 
-    c.  Vælg **Time**\>**FiscalMonth** for at føje det til beholderen **Axis**.
+    c. Vælg **Time**\>**FiscalMonth** for at føje det til beholderen **Axis**.
 
     ![](media/power-bi-visualization-combo-chart/combotutorial1new.png)
 5. Vælg ellipsen (...) i øverste højre hjørne af visualiseringen, og vælg **Sortér efter > FiscalMonth**. Hvis du vil ændre sorteringsrækkefølgen, skal du vælge ellipsen igen og vælge enten **Sortér stigende** eller **Sortér faldende**.
@@ -71,7 +71,7 @@ Se, hvordan Will opretter et kombinationsdiagram ved hjælp af salgs- og marketi
 ## <a name="create-a-combo-chart-with-two-axes"></a>Opret et kombinationsdiagram med to akser
 I denne opgave skal vi sammenligne bruttomargen og salg.
 
-1. Opret et nyt kurvediagram, der sporer **Gross Margin Last Year %** efter **Month**. Vælg ellipsen for at sortere den efter **måned** og **stigende**.  
+1. Opret et nyt kurvediagram, der sporer **Gross Margin last year %** ved **FiscalMonth**. Vælg ellipsen for at sortere den efter **måned** og **stigende**.  
 I januar var BM% på 35 %, den steg til 45 % i april, faldt i juli og steg igen i august. Kan vi se et tilsvarende mønster for salget i dette og sidste år?
 
    ![](media/power-bi-visualization-combo-chart/combo1_new.png)
@@ -83,22 +83,22 @@ I januar var BM% på 35 %, den steg til 45 % i april, faldt i juli og steg igen 
    ![](media/power-bi-visualization-combo-chart/converttocombo_new.png)
 4. Træk **Gross Margin Last Year %** fra **Kolonneværdier** til **Kurveværdier**. Der oprettes to akser i Power BI, og datasættene kan derfor skaleres forskelligt. Det kan ses ved, at den venstre akse for salg måles i dollar, mens den højre akse måles i procent. Og vi kan se svaret på vores spørgsmål. Ja, vi kan se et lignende mønster.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-combochart.png)    
+   ![](media/power-bi-visualization-combo-chart/power-bi-clustered-combo.png)    
 
 ## <a name="add-titles-to-the-axes"></a>Føj titler til akserne
 1. Vælg ikonet med malerullen ![](media/power-bi-visualization-combo-chart/power-bi-paintroller.png) for at åbne fanen Formatering.
 2. Udvid indstillingerne for **Y-axis** ved at vælge den nedadvendte pil.
-3. For **Y-Axis (Column)** skal du angive **Position** til **Left**, indstille **Title** til **On**, **Style** til **Show title only** og **Display** som **Millions**.
+3. For **y-akse (kolonne)** skal du angive **Position** til **venstre**skal du angive **titel** til **på**,  **Typografi** til **Vis kun titel**, og **visningsenheder** som **millioner**.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-y-axis-column.png)
-4. Under **Y-Axis (Column)** skal du rulle ned og sikre dig, at **Show Secondary** er indstillet til **On**. Dette viser indstillingerne for formatering af kurvediagramdelen af kombinationsdiagrammet.
+   ![](media/power-bi-visualization-combo-chart/power-bi-open-y.png)
+4. Under **y-akse (kolonne)** , Rul ned, indtil du kan se **Vis sekundær**. Fordi der er så mange muligheder for Y-akserne, skal du muligvis bruge begge rullepaneler. Vis sekundær afsnittet viser indstillingerne for formatering af kurvediagramdelen af kombinationsdiagrammet.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-show-secondary.png)
+   ![](media/power-bi-visualization-combo-chart/power-bi-secondary.png)
 5. For **Y-Axis (Line)** skal du lade **Position** forblive **Right**, aktivere **Title** til **On** og indstille **Style** til **Show title only**.
 
    Dit kombinationsdiagram viser nu to akser, som begge har en titel.
 
-   ![](media/power-bi-visualization-combo-chart/power-bi-titles-on.png)
+   ![](media/power-bi-visualization-combo-chart/power-bi-2-titles.png)
 
 6. Du har mulighed for at tilpasse tekstens skrifttype, størrelse og farve og ændre andre formatindstillinger for at forbedre diagrammets visning og læsbarhed.
 

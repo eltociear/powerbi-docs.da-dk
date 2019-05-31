@@ -1,22 +1,22 @@
 ---
 title: Fejlfinding af feltfejl
 description: Almindelige fejl, der kan opstå, når et felt forsøger at opdatere i Power BI
-author: davidiseminger
+author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 12/06/2018
-ms.author: davidi
+ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: bfb6178908a9d6a4bcfe81f8d3d9771ac5b12b9d
-ms.sourcegitcommit: 88ac51106ec7d0ead8c2a1550a11afae0d502bb9
-ms.translationtype: HT
+ms.openlocfilehash: c1df7e6293db703922f37c3f28546bb296d1a46a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086626"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66051006"
 ---
 # <a name="troubleshooting-tile-errors"></a>Fejlfinding af feltfejl
 Nedenfor er de mest almindelige fejl, der kan opstå med felter, sammen med en forklaring.
@@ -64,6 +64,17 @@ Feltet blev sandsynligvis slettet eller omdøbt. Du kan fjerne det ødelagte fel
 **Dataene kunne ikke hentes for dette visuelle element. Prøv igen senere.**
 
 Det er normalt et midlertidigt problem. Hvis du prøver igen senere, og du stadig får vist denne meddelelse, skal du kontakte support.
+
+**Felter, der fortsat viser ufiltrerede data efter aktivering af enkeltlogon (SSO).**
+
+Dette kan ske, hvis det underliggende datasæt er konfigureret til at bruge DirectQuery-tilstand eller en direkte forbindelse til Analysis Services via en datagateway i det lokale miljø. I dette tilfælde fortsætte felterne til at vise ufiltrerede dataene efter aktivere SSO til datakilden, indtil den næste opdatering af dashboardfelt er forfalden. Power BI bruger SSO, som er konfigureret på den næste opdatering af felter, og felterne, der viser de data, der er filtreret i henhold til brugerens identitet. 
+
+Hvis du vil se de filtrerede data med det samme, du kan gennemtvinge en opdatering af feltet ved at vælge ellipsen (...) i øverste højre hjørne af et dashboard og vælge **Opdater dashboardfelter**.
+
+Du kan også ændre opdateringshyppigheden felt og angive den til 15 minutter at sætte skub i opdatering af felter som datasætejer af et. Vælg tandhjulsikonet i øverste højre hjørne af Power BI-tjenesten og derefter vælge **indstillinger**. På den **indstillinger** side, Vælg den **datasæt** fanen. Udvid **planlagt cacheopdatering** og ændre **opdateringshyppighed**. Kontrollér, at du nulstille konfigurationen oprindelige opdateringshyppigheden, når Power BI udfører den næste opdatering af felter.
+
+> [!NOTE]
+> Den **planlagt cacheopdatering** afsnit er kun tilgængelig for datasæt i tilstanden DirectQuery/LiveConnection. Datasæt i Import-tilstand kræver ikke en opdatering af separate felter, fordi felterne opdateres automatisk i løbet af den næste planlagte opdatering.
 
 ## <a name="contact-support"></a>Kontakt support
 Hvis du stadig har et problem, skal du [kontakte support](https://support.powerbi.com) for at undersøge det yderligere.

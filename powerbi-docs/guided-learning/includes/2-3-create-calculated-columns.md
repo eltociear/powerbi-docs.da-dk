@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fcf73962534ec8f1fda009304768fd43aaa0955a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255077"
+---
 Oprettelse af beregnede kolonner er en nem måde at berige og forbedre dine data. En **beregnet kolonne** er en ny kolonne, som du opretter ved at definere en beregning, der transformerer eller kombinerer to eller flere elementer af eksisterende data. Du kan f.eks. oprette en ny kolonne ved at kombinere to kolonner til én.
 
 En nyttig årsag til oprettelse af en beregnet kolonne er at oprette en relation mellem tabeller, når der ikke findes nogen entydige felter, der kan bruges til at oprette en relation. En manglende relation bliver synlig, når du opretter en enkel visuel tabel i Power BI Desktop, og du får den samme værdi for alle poster, selv om du ved, at de underliggende data er forskellige.

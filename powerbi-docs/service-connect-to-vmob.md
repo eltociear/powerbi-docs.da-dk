@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 2cf6b351c00d89ad6e87b6bc95661dab57078bac
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54008252"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61151825"
 ---
 # <a name="connect-to-vmob-with-power-bi"></a>Opret forbindelse til VMob med Power BI
 Det er nemt at spore og udforske dine VMob-data med Power BI og VMob-indholdspakken. Power BI henter følgende data: Brugerstatistik for al tid og de seneste 30 dage, nøgletal for handel for de seneste 30 dage og kampagneresultater for de seneste 30 dage.

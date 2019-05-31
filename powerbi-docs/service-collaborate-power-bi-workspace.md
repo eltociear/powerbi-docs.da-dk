@@ -11,11 +11,11 @@ ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
 ms.openlocfilehash: c1e8e449c2db7e751d719f8fca38b194a9a0042a
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174562"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61181615"
 ---
 # <a name="collaborate-in-your-power-bi-app-workspace"></a>Samarbejd i dit Power BI-apparbejdsområde
 Power BI-apparbejdsområder er fantastiske steder, hvor du kan samarbejde med dine kollegaer på dashboards, rapporter og datasæt om at oprette *apps*. Samarbejde slutter ikke med arbejdsområder i Power BI. Office 365 tilbyder andre gruppetjenester som f.eks. deling af filer på OneDrive for Business, samtaler i Exchange, delte kalendere og opgaver osv. Læs mere om [grupper i Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9).
@@ -43,7 +43,7 @@ Når du har oprettet en Power BI Desktop-fil, kan alle i dit arbejdsområde sama
 ## <a name="collaborate-in-office-365"></a>Samarbejd i Office 365
 Samarbejde i Office 365 starter fra apparbejdsområdet i Power BI.
 
-1. I Power BI-tjenesten skal du vælge pilen ud for Arbejdsområder > vælge ellipsen (**…**) ud for navnet på dit arbejdsområde. 
+1. I Power BI-tjenesten skal du vælge pilen ud for Arbejdsområder > vælge ellipsen ( **…** ) ud for navnet på dit arbejdsområde. 
    
    ![Menuen Arbejdsområder](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
 2. I denne menu kan du samarbejde med din gruppe på nogle få måder: 
@@ -64,7 +64,7 @@ Samarbejde i Office 365 starter fra apparbejdsområdet i Power BI.
 2. Læs mere om [gruppesamtaler i Outlook til Office 365](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 ## <a name="schedule-an-event-on-the-apps-group-workspace-calendar"></a>Planlæg en begivenhed på kalenderen i appens gruppearbejdsområde
-1. Vælg ellipsen (**...**) ud for navnet på apparbejdsområdet \> **Samtaler**. 
+1. Vælg ellipsen ( **...** ) ud for navnet på apparbejdsområdet \> **Samtaler**. 
    
    ![Fanen Kalender](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    

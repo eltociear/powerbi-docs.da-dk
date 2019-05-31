@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 5c4bf7c1e1abb8fd87b97c48bfa94b57d5481b00
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 16114793b190996b3ef9e800e562dd0caf62089c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54295827"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65514816"
 ---
 # <a name="frequently-asked-questions-for-power-bi-for-germany-cloud-customers"></a>Ofte stillede spørgsmål om Power BI til Germany Cloud-kunder
 **Power BI-tjenesten** har en version, der er tilgængelig for EU/EFTA-kunder, ofte kaldet Microsoft Cloud Deutschland (MCD). Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til EU/EFTA-kunder og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten** eller Power BI-tjenester, der leveres til regeringskunder.
@@ -32,10 +32,10 @@ Følgende spørgsmål og svar giver vigtige oplysninger om Power BI Pro-tjeneste
    Power BI-tjenesten for EU/EFTA-kunder, også kaldet Microsoft Cloud Deutschland (MCD), er en skybaseret EU/EFTA-kompatibel tjeneste med Power BI-tjenesten leveret fra tyske datacentre. Alle kundedate i Power BI-tjenesten for EU/EFTA-clouden er lagret inaktivt i Tyskland med T-systemer fungerende som den uafhængige tyske datatillidshaver og med fysisk og logisk adgang til data kontrolleret i henhold til tysk lovgivning. Power BI-tjenesten for EU/EFTA-cloud kræver en entydig og separat konto i forhold til den kommercielle version af Power BI-tjenesten. Få mere at vide om Microsoft Cloud Deutschland [her](https://www.microsoft.com/trustcenter/cloudservices/nationalcloud).
 2. **Hvor kan jeg finde pris- og tilmeldingsoplysninger til Power Germany Cloud?**
    
-   Du kan finde mange oplysninger på [Power BI Germany Cloud-hjemmesiden](https://powerbi.microsoft.com/power-bi-germany/), herunder oplysninger om priser. På den pågældende side finder du også et tilmeldingslink til **Power BI Pro-service** 30-dages prøveversion med 25 brugerlicenser. Som en del af tilmeldingen til prøveversionen får du mulighed for at købe eller tilføje yderligere licenser efter behov. Vi tilbyder også priser på Enterprise Agreement (EA), til offentlige myndigheder og almennyttige organisationer. Kontakt din Microsoft-kunderepræsentant for at få nærmere oplysninger.
+   Du kan finde mange oplysninger på [Power BI Germany Cloud-hjemmesiden](https://powerbi.microsoft.com/power-bi-germany/), herunder oplysninger om priser. På denne side, du kan også finde et link til at tilmelde dig **Power BI Pro-tjenesten** 30-dages prøveversion med 25 brugerlicenser. Som en del af prøveversionen Tilmeld dig har du mulighed for at købe eller tilføje yderligere licenser efter behov. Vi tilbyder også priser på Enterprise Agreement (EA), til offentlige myndigheder og almennyttige organisationer. Kontakt din Microsoft-kunderepræsentant for at få flere oplysninger.
 3. **Jeg har en Germany Cloud-lejer som en del af Azure Germany og/eller Office 365 Germany-abonnementer. Kan jeg bruge den eksisterende lejer til at tilmelde mig Power BI Germany?**
    
-   Ja. Som en del af tilmeldingsprocessen får du mulighed for at logge på med en eksisterende Germany Cloud-lejeradministratorkonto og føje Power BI Pro-tjenestelicenserne til din eksisterende lejer i Germany Cloud. Vær opmærksom på, at Germany Cloud-lejere og brugerkonti er forskellige fra Power BI-tjenesten for Germany Cloud.
+   Ja. Som en del af tilmeldingsprocessen får du mulighed for at logge på med en eksisterende Germany Cloud-lejeradministratorkonto og føje Power BI Pro-tjenestelicenserne til din eksisterende lejer i Germany Cloud. Bemærk, at Germany Cloud-lejere og brugerkonti er forskellige fra Power BI-tjenesten for Germany cloud.
 4. **Er der en gratis tjeneste i Power BI-tjenesten for Germany Cloud?**
    
    Nej. Vi tilbyder ikke versioner med gratis licens af Power BI-tjenesten for Germany Cloud. Men vi opfordrer dig til at tilmelde dig [den gratis version af Power BI i vores offentlige cloud](https://powerbi.microsoft.com/get-started/), hvis dine virksomhedsbehov opfyldes med den gratis version af Power BI.
@@ -56,7 +56,7 @@ Følgende spørgsmål og svar giver vigtige oplysninger om Power BI Pro-tjeneste
    * Power BI Embedded (særskilt forbrugsbaseret ISV-licensering bliver tilgængeligt gennem [Microsoft Azure Germany](https://azure.microsoft.com/overview/clouds/germany/) i fremtiden)
 7. **Hvor kan jeg finde Power BI-tjenesten for Germany Cloud-specifikke konfigurationsoplysninger for brug og integration i mine programmer?**
    
-   Vi har opdateret vores [eksempler på SaaS-integration til udviklere](https://github.com/Microsoft/PowerBI-Developer-Samples) med Germany og andre specifikke konfigurationsoplysninger tilknyttet Power BI Clouds. Se mappen **Cloud Configs** for eksempler på cloud-specifikke konfigurationslutpunkter. Den følgende tabel viser en oversigt over forskellige konfigurationsslutpunkter for Power BI-tjenesten for Germany Cloud (og Public Cloud for krydsreference).
+   Vi har opdateret vores [eksempler på SaaS-integration til udviklere](https://github.com/Microsoft/PowerBI-Developer-Samples) med Germany og andre specifikke konfigurationsoplysninger tilknyttet Power BI Clouds. Se på de **Cloud Configs** mappe i eksempler på cloud-specifikke konfigurationslutpunkter. Den følgende tabel viser en oversigt over forskellige konfigurationsslutpunkter for Power BI-tjenesten for Germany Cloud (og Public Cloud for krydsreference).
 
 | **Slutpunktnavn og/eller forbrug** | **Power BI-tjeneste for Germany cloud-URL** | **Tilsvarende URL i Public Cloud (for krydshenvisning)** |
 | --- | --- | --- |
@@ -68,7 +68,7 @@ Følgende spørgsmål og svar giver vigtige oplysninger om Power BI Pro-tjeneste
 | Power BI-tjenesteressources Uri-adresse |[https://analysis.cloudapi.de/powerbi/api](https://analysis.cloudapi.de/powerbi/api) |[https://analysis.windows.net/powerbi/api](https://analysis.windows.net/powerbi/api) |
 | Bibliotek med brugerdefinerede visuals |[https://app.powerbi.de/visuals/](https://app.powerbi.de/visuals/) |[https://app.powerbi.com/visuals/](https://app.powerbi.com/visuals/) |
 | Registrering af et program til Power BI (til Embedded) |[https://app.powerbi.de/apps](https://app.powerbi.de/apps) |[https://app.powerbi.com/apps](https://app.powerbi.com/apps) |
-| Azure-portal (til Embedded) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
+| Azure-portalen (til Embedded) |[https://portal.microsoftazure.de/](https://portal.microsoftazure.de/) |[https://portal.azure.com/](https://portal.azure.com/) |
 | Community |[https://community.powerbi.com/](https://community.powerbi.com/) |[https://community.powerbi.com/](https://community.powerbi.com/) |
 
 ## <a name="next-steps"></a>Næste trin

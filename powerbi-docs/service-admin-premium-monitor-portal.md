@@ -1,51 +1,123 @@
 ---
 title: Overvåg Power BI Premium-kapaciteter ved hjælp af administrationsportalen
 description: Brug Power BI-administrationsportalen til at overvåge dine Premium-kapaciteter.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 04/10/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 59097c07719e4bb8db188e8a86db377076aea7a9
-ms.sourcegitcommit: 54d44deb6e03e518ad6378656c769b06f2a0b6dc
-ms.translationtype: HT
+ms.openlocfilehash: 36b03a67e7c02702a70b6486880cc8eabf93e823
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55794110"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65564907"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Overvåg kapaciteter på administrationsportalen
 
-Denne artikel indeholder en beskrivelse af, hvordan du kan bruge området Kapacitetsindstillinger på administrationsportalen til at få et hurtigt overblik over ydeevnen af din kapacitet.  Du får de mest detaljerede målepunkter for din kapacitet ved at bruge programmet [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md).
+Den **Health** fanen i den **kapacitetsindstillinger** område i administrationsportalen giver en oversigt over, om din kapacitet og aktiveret arbejdsbelastninger målepunkter.  
 
-## <a name="capacity-metrics"></a>Målepunkter for kapacitet
+![Under fanen kapacitet tilstand i portalen](media/service-admin-premium-monitor-portal/admin-portal-health.png)
 
-Området **Kapacitetsindstillinger** på administrationsportalen indeholder fire målere, der angiver de placerede belastninger og de ressourcer, der er brugt af din kapacitet i løbet af de seneste syv dage. Disse fire felter arbejder på timebasis og angiver, hvor mange timer i løbet af de seneste syv dage det tilknyttede målepunkt oversteg 80 %. Dette målepunkt angiver en potentiel forringelse af slutbrugerens oplevelse.
+Hvis du har brug for mere omfattende målepunkter, kan du bruge den [Power BI Premium-kapacitet målepunkter](service-admin-premium-monitor-capacity.md) app. Appen giver detailudledning og filtrering, og de mest detaljerede målepunkter for næsten alle aspekter påvirker ydeevnen kapacitet. Hvis du vil vide mere, kan du se [Monitor Premium-kapaciteter med appen](service-admin-premium-monitor-capacity.md).
 
-![Forbrug i løbet af syv dage](media/service-admin-premium-monitor-capacity/usage-in-days.png)
+## <a name="system-metrics"></a>Forbrugsdata for system
+
+På den **Health** fanen CPU-forbruget på det højeste niveau, og brug af hukommelse, der giver et hurtigt overblik over de vigtigste målepunkter for kapaciteten. Disse metrikværdier er akkumuleret, herunder alle aktiveret arbejdsbelastninger for kapaciteten.
 
 | **Målepunkt** | **Beskrivelse** |
 | --- | --- |
-| CPU |Det antal gange, CPU-forbruget har overskredet 80 %. |
-| Hukommelsesudskiftning |Repræsenterer hukommelsesforbrug på backend-kerner. Disse data angiver specifikt, hvor mange gange datasæt ryddes fra hukommelsen pga. hukommelsesforbrug grundet brugen af flere datasæt. |
-| Hukommelsesforbrug |Gennemsnitligt hukommelsesforbrug vist i GB. |
-| DQ/s | Det antal gange, antallet af direkte forespørgsler og direkte forbindelser har overskredet 80 % af grænsen. <br>  Det samlede antal forespørgsler af typen DirectQuery og direkte forbindelse pr. sekund er begrænset. Grænserne er 30/sek. for P1, 60/sek. for P2 og 120/sek. for P3.  Antallet af forespørgsler af typen DirectQuery og direkte forbindelse indgår også i ovenstående begrænsning. Hvis du f.eks. har 15 DirectQueries og 15 direkte forbindelser på et sekund, er grænsen nået<br> Dette gælder både for forbindelser i det lokale miljø og cloudbaserede forbindelser. |
-|  |  |
+| CPU-FORBRUG | Gennemsnitlig CPU-forbruget, som en procentdel af samlede tilgængelige CPU. |
+| HUKOMMELSESBRUG | Gennemsnitligt hukommelsesforbrug i gigabyte (GB).|
 
-Målepunkter afspejler udnyttelse i løbet af den seneste uge.  Hvis du vil se en mere detaljeret visning af målepunkter, kan du gøre det ved at klikke på et af oversigtsfelterne.  Derved åbnes detaljerede diagrammer over de enkelte målepunkter for din Premium-kapacitet. I følgende diagram vises der oplysninger om CPU-målepunktet.
+## <a name="workload-metrics"></a>Arbejdsbelastning målepunkter
 
-![Detaljeret diagram over forbrug, CPU](media/service-admin-premium-monitor-capacity/premium-usage-detailed-chart-cpu.png)
+For hver enkelt arbejdsbelastning, der er aktiveret for kapaciteten. CPU-forbruget og hukommelsesforbrug vises.
 
-Disse diagrammer opsummeres for hver time i løbet af den seneste uge og kan hjælpe med at identificere, hvornår du har haft særlige hændelser relateret til ydeevne i din Premium-kapacitet.
+| **Målepunkt** | **Beskrivelse** |
+| --- | --- |
+| CPU-FORBRUG | Gennemsnitlig CPU-forbruget, som en procentdel af samlede tilgængelige CPU. |
+| HUKOMMELSESBRUG | Gennemsnitligt hukommelsesforbrug i gigabyte (GB).|
 
-Du kan også eksportere de underliggende data for et eller flere målepunkter til en CSV-fil.  Via denne eksport får du detaljerede oplysninger i tre minutters intervaller for hver dag fra den seneste uge.
+### <a name="detailed-workload-metrics"></a>Detaljerede arbejdsbelastning målepunkter
+
+Hver enkelt arbejdsbelastning har flere målepunkter. Typen af målepunkter, der vises, afhænger af arbejdsbelastningen. Hvis du vil se detaljerede målepunkter for en arbejdsbelastning, skal du klikke på Udvid (pil ned).
+
+![Udvid arbejdsbelastning tilstand](media/service-admin-premium-monitor-portal/admin-portal-health-expand.png)
+
+#### <a name="dataflows"></a>Dataflow
+
+##### <a name="dataflow-operations"></a>Dataflow operationer
+
+| **Målepunkt** | **Beskrivelse** |
+| --- | --- |
+| Antal i alt | Det samlede antal opdateringer for hvert dataflow. |
+| Antal succeser | Samlede vellykkede opdateringer for hver dataflowet.|
+| Gennemsnitlig varighed (min.) | Den gennemsnitlige varighed af opdateringen af dataflowet i minutter |
+| Maks varighed (min.) | Varigheden af den længstvarende opdatering af dataflowet i minutter. |
+| Gennemsnitlig ventetid (min.) | Den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starttidspunktet for en opdatering af dataflowet i minutter. |
+| Maks ventetiden (min.) | Den maksimale ventetid for dataflowet i minutter.  |
+
+#### <a name="datasets"></a>Datasæt
+
+##### <a name="refresh"></a>Opdater
+
+| **Målepunkt** | **Beskrivelse** |
+| --- | --- |
+| Antal i alt | Det samlede antal opdateringer for hvert datasæt. |
+| Antal succeser | Samlede vellykkede opdateringer for hvert datasæt. |
+| Antal fejl | Samlet antal mislykkede opdateringer for hvert datasæt. |
+| Hyppighed for fuldførte  | Antallet af vellykkede opdateringer divideret med de samlede opdateringer til at måle. pålidelighed. |
+| Gennemsnitlig varighed (min.) | Den gennemsnitlige varighed af opdateringen af datasættet i minutter.  |
+| Maks varighed (min.) | Varigheden af den længstvarende opdatering af datasættet i minutter. |
+| Gennemsnitlig ventetid (min.) | Den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starttidspunktet for en opdatering af datasættet i minutter. |
+| Maks ventetiden (min.) | Den maksimale ventetid for datasættet i minutter. |
+
+##### <a name="query"></a>Forespørgsel
+
+| **Målepunkt** | **Beskrivelse** |
+| --- | --- |
+| Antal i alt | Det samlede antal forespørgsler, der er kørt for datasættet. |
+| Gennemsnitlig varighed (minutter) |Den gennemsnitlige varighed af forespørgsler for datasættet i millisekunder|
+| Maksimal varighed (minutter) |Varigheden af den længstvarende forespørgsel i datasættet i millisekunder. |
+| Gennemsnitlig ventetid (minutter) |Den gennemsnitlige ventetid for forespørgsler for datasættet i millisekunder. |
+| Maks. antal ventetid (ms) |Varigheden af den længstventende forespørgsel i datasættet i millisekunder. |
+
+##### <a name="eviction"></a>Hård
+
+| **Målepunkt** | **Beskrivelse** |
+| --- | --- |
+| Model-antal | Det samlede antal datasæt evictions for denne kapacitet. Når en kapacitet står over for øget hukommelsesforbrug, fjerner noden et eller flere datasæt fra hukommelsen. Datasæt, der er inaktive (uden forespørgsels-/opdateringshandlinger, der udføres i øjeblikket), ryddes først. Derefter er fjernelsesrækkefølgen baseret på en måling af 'mindst brugt for nylig'. |
+
+#### <a name="paginated-reports"></a>Sideinddelte rapporter
+
+##### <a name="report-execution"></a>Rapporteksekvering
+
+| **Målepunkt** | **Beskrivelse** |
+| --- | --- |
+| Antal udførelser  | Antallet gange, som rapporten blev kørt og overvåget af brugere.|
+
+##### <a name="report-usage"></a>Brug
+
+| **Målepunkt** | **Beskrivelse** |
+| --- | --- |
+| Antal succeser | Antallet gange, som rapporten er blevet vist af en bruger. |
+| Antal fejl |Antallet gange, som rapporten er blevet vist af en bruger.|
+| Rækkeantal |Antallet af rækker med data i rapporten. |
+| Varighed for hentning af data (ms) |Den gennemsnitlige mængde tid, det tager at hente data til rapporten, i millisekunder. Lange varigheder kan være et tegn på langsomme forespørgsler eller andre datakildeproblemer.  |
+| Varighed af behandling af (ms) |Den gennemsnitlige mængde tid, det tager at behandle dataene til rapporten, i millisekunder. |
+| Gengivelse varighed (ms) |Den gennemsnitlige mængde tid, det tager at gengive en rapport i browseren, i millisekunder. |
+
+> [!NOTE]
+> Detaljerede målepunkter for den **AI** arbejdsbelastning er endnu ikke tilgængelige.
 
 ## <a name="next-steps"></a>Næste trin
 
 Nu, hvor du har en forståelse af, hvordan du overvåger Power BI Premium-kapaciteter, kan du få mere at vide om optimering af kapaciteter.
 
 > [!div class="nextstepaction"]
-> [Administration og optimering af ressourcer med Power BI Premium-kapacitet](service-premium-understand-how-it-works.md)
+> [Optimering af Power BI Premium-kapaciteter](service-premium-capacity-optimize.md)

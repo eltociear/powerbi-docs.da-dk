@@ -1,20 +1,20 @@
 ---
 title: Konfigurer Kerberos til at bruge Power BI-rapporter
 description: Se, hvordan du kan konfigurere din rapportserver til Kerberos-godkendelse af datakilder, der bruges i dine Power BI-rapporter, for et distribueret miljø.
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
-ms.author: maghan
-ms.openlocfilehash: 5342f509fdd0705b2752aab3315a4968d610b681
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
-ms.translationtype: HT
+ms.author: maggies
+ms.openlocfilehash: 63bf5653ddf17097a44113324011951734f6d13c
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223760"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770717"
 ---
 # <a name="configure-kerberos-to-use-power-bi-reports"></a>Konfigurer Kerberos til at bruge Power BI-rapporter
 <iframe width="640" height="360" src="https://www.youtube.com/embed/vCH8Fa3OpQ0?showinfo=0" frameborder="0" allowfullscreen></iframe>

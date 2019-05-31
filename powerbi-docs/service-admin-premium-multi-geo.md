@@ -1,8 +1,8 @@
 ---
 title: Multi-Geo-understøttelse i Power BI Premium
 description: Få mere at vide om, hvordan du kan udrulle indhold til datacentre i andre områder end i Power BI-lejerens lokalområde.
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,14 +10,14 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 02/05/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: dfa412e32c49e0b3de406f2665fcd9bd6d1a345e
-ms.sourcegitcommit: bd1f0178fd9df152f9e9be57da415829f42116e9
-ms.translationtype: HT
+ms.openlocfilehash: 7735ce3d6d28f51ca95efbe12394c2e0cb2cba29
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57571973"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65564954"
 ---
-# <a name="multi-geo-support-for-power-bi-premium"></a>Multi-Geo-understøttelse i Power BI Premium
+# <a name="configure-multi-geo-support-for-power-bi-premium"></a>Konfigurer Multi-Geo-support til Power BI Premium
 
 Multi-Geo er en Power BI Premium-funktion, som hjælper multinationale kunder med at opfylde regionale, industrispecifikke eller organisatoriske krav til dataopbevaring. Som en Power BI Premium-kunde kan du udrulle indhold til datacentre i andre områder end i Power BI-lejerens lokalområde. Et geografisk område (geografi) kan dække mere end ét område. F.eks. er USA et geografisk område, og det vestlige centrale USA og det sydlige centrale USA er områder i USA. Du kan vælge at udrulle indhold til en af de følgende geografiske områder:
 
@@ -35,7 +35,7 @@ Multi-Geo fås ikke til Power BI Germany, Power BI China drevet af 21Vianet elle
 
 Multi-Geo er nu også tilgængelig i Power BI Embedded. Læs mere i [Multi-Geo-understøttelse i Power BI Embedded](developer/embedded-multi-geo.md).
 
-## <a name="using-multi-geo"></a>Sådan bruges Multi-Geo
+## <a name="enable-and-configure"></a>Aktivere og konfigurere
 
 Nye kapaciteter tilgås ved at aktivere Multi-Geo og vælge et andet område end standardområdet på rullelisten.  Hver tilgængelige kapacitet viser området, hvor den aktuelt er placeret, som f.eks. **det vestlige centrale USA**.
 
@@ -68,7 +68,7 @@ Disse elementer forbliver i lejerens lokalområde:
 - Tilladelser
 - Datasæts legitimationsoplysninger
 
-## <a name="view-capacity-regions"></a>Få vist kapacitetsområder
+## <a name="view-capacity-regions"></a>Få vist kapacitet områder
 
 Du kan i Administrationsportalen få vist alle kapaciteterne for din Power BI-lejer og de områder, hvor de er placeret i øjeblikket.
 
@@ -98,7 +98,7 @@ Du kan fjerne arbejdsområder fra Multi-Geo-kapacitet på to måder:
 
 ## <a name="next-steps"></a>Næste trin
 
-- [Power BI Premium: Hvad er det?](service-premium.md)
+- [Hvad er Power BI Premium?](service-premium-what-is.md)
 - [Multi-Geo til Power BI Embedded-kapaciteter](developer/embedded-multi-geo.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

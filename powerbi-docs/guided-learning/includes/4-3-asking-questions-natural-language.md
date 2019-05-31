@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 2a0ec80120e30d8d652eb2bd28461b9f88f7610a
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263377"
+---
 Power Bi har en kraftfuld motor til sproggenkendelse, som lader dig stille spørgsmål til dine data med vendinger og spørgsmål i talesprog. Så udover at lave rapporter og visualiseringer med Power BI kan du skabe diagrammer og grafer ved blot at stille simple spørgsmål.
 
 Stil et spørgsmål til dine data ved at åbne et dashboard i Power BI. Øverst på skærmen ser du et felt, hvor du kan stille spørgsmål om de viste data. Denne funktion hedder *Spørgsmål og svar*, men som oftest henvises der til den som **Q&A**.

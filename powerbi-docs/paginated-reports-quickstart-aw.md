@@ -1,24 +1,24 @@
 ---
 title: 'Selvstudium: Opret en sideinddelt rapport, og upload den i Power BI-tjenesten (prøveversion)'
 description: I dette selvstudium kan du oprette forbindelse til et eksempel på en Azure SQL-database. Du kan bruge en guide i Report Builder til at oprette en sideinddelt rapport. Derefter uploader du den sideinddelte rapport til et arbejdsområde i en Premium-kapacitet i Power BI-tjenesten.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 15c7d9e922ef7041c6b0f021382cae8d2aca84e9
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: e7baff9a6427578266e08e7bde91be664e46edb9
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325237"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60989655"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Selvstudium: Opret en sideinddelt rapport, og upload den i Power BI-tjenesten (prøveversion)
 
-I dette selvstudium kan du oprette forbindelse til et eksempel på en Azure SQL-database. Derefter bruger du en guide i Report Builder til at oprette en sideinddelt rapport med en tabel, der ombrydes på flere sider. Derefter uploader du den sideinddelte rapport til et arbejdsområde i en Premium-kapacitet i Power BI-tjenesten. Sideinddelte rapporter i Power BI-tjenesten er aktuelt tilgængelige som prøveversion.
+I dette selvstudium kan du oprette forbindelse til et eksempel på en Azure SQL-database. Du kan bruge en guide i Power BI Report Builder til at oprette en sideinddelt rapport med en tabel, der skal ombrydes på flere sider. Derefter uploader du den sideinddelte rapport til et arbejdsområde i en Premium-kapacitet i Power BI-tjenesten. Sideinddelte rapporter i Power BI-tjenesten er aktuelt tilgængelige som prøveversion.
 
 ![Sideinddelt rapport i Power BI-tjenesten](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
@@ -26,7 +26,7 @@ Her er de trin, du har fuldført i dette selvstudium:
 
 > [!div class="checklist"]
 > * Oprette et eksempel på en Azure-database.
-> * Oprette en matrix i Report Builder ved hjælp af en guide.
+> * Opret en matrix i Power BI Report Builder ved hjælp af en guide.
 > * Formatere rapporten med titel, sidetal og kolonneoverskrifter på hver side.
 > * Formatere valutaen.
 > * Uploade rapporten til Power BI-tjenesten.
@@ -37,18 +37,18 @@ Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://
 
 Her er forudsætningerne for oprettelse af den sideinddelte rapport:
 
-- Installér [Report Builder fra Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=734968). 
+- Installér [Power BI Report Builder fra Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513). 
 
 - Følg den hurtige introduktion [Opret en Azure SQL-databaseprøve på Azure-portalen](https://docs.microsoft.com/azure/sql-database/sql-database-get-started-portal). Kopiér og gem værdien i feltet **Servernavn** på fanen **Oversigt**. Husk det brugernavn og den adgangskode, du oprettede i Azure.
 
 Her er forudsætningerne for at overføre din sideinddelte rapport til Power BI-tjenesten:
 
 - Du skal bruge en [licens til Power BI Pro](service-admin-power-bi-pro-in-your-organization.md).
-- Du skal bruge et apparbejdsområde på tjenesten i en [Power BI Premium-kapacitet](service-premium.md). Den har rombeikonet ![Premium-rombeikon](media/paginated-reports-quickstart-aw/premium-diamond.png) ved siden af navnet på arbejdsområdet.
+- Du skal bruge et apparbejdsområde på tjenesten i en [Power BI Premium-kapacitet](service-premium-what-is.md). Den har rombeikonet ![Premium-rombeikon](media/paginated-reports-quickstart-aw/premium-diamond.png) ved siden af navnet på arbejdsområdet.
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Opret matrixen ved hjælp af en guide
   
-1.  Start Report Builder fra din computer.  
+1.  Start Power BI Report Builder fra din computer.  
   
      Dialogboksen **Kom i gang** åbnes.  
   
@@ -177,7 +177,7 @@ Hvis du vil se de faktiske værdier, skal du køre rapporten.
 
 1. Vælg **Kørsel** i værktøjslinjen **Hjem**.
 
-   Nu kan du se værdierne. Matrixen har mange flere rækker, end du så i Designvisning! Bemærk, at Report Builder angiver, at det er side **1** af **2?**. Report Builder indlæser rapporten så hurtigt som muligt, så den henter kun data til et par sider ad gangen. Spørgsmålstegnet angiver, at Report Builder endnu ikke har indlæst alle dataene.
+   Nu kan du se værdierne. Matrixen har mange flere rækker, end du så i Designvisning! Bemærk, at Report Builder angiver, at det er side **1** af **2?** . Report Builder indlæser rapporten så hurtigt som muligt, så den henter kun data til et par sider ad gangen. Spørgsmålstegnet angiver, at Report Builder endnu ikke har indlæst alle dataene.
 
    ![Kør rapporten](media/paginated-reports-quickstart-aw/power-bi-paginated-run-report.png)
 
@@ -249,7 +249,7 @@ Som du måske bemærkede, da du kørte rapporten, er dollarbeløbene ikke format
 
     ![Vælg celler med valutaværdier](media/paginated-reports-quickstart-aw/power-bi-paginated-select-money-cells.png)
 
-2. På fanen **Hjem** skal du vælge valutasymbolet dollartegn (**$**) og derefter vælge pilen ud for **Pladsholdertypografier**  >  **Eksempelværdier**.
+2. På fanen **Hjem** skal du vælge valutasymbolet dollartegn ( **$** ) og derefter vælge pilen ud for **Pladsholdertypografier**  >  **Eksempelværdier**.
  
     ![Vis eksempelværdier](media/paginated-reports-quickstart-aw/power-bi-paginated-format-currency.png)
 

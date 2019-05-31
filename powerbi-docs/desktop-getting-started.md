@@ -11,10 +11,10 @@ ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: ecd58ca21e7fb6c5fb0bc2d3410788e2563efa9b
-ms.sourcegitcommit: 2116af72f435cd30f1401bb9c7afdcbc76b1c3ce
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/09/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454509"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Kom i gang med Power BI Desktop
@@ -148,7 +148,7 @@ Vi skal foretage lidt flere ændringer for at får forespørgslen helt på plads
 
 * *Skift tabelnavnet* – **Tabel 0** er ikke en nyttige beskrivelse, men det er let at ændre navnet
 
-Hvert af disse trin er vist under **[Form og kombiner data i Power BI Desktop](desktop-shape-and-combine-data.md)**. Du kan se nærmere på den side eller fortsætte med dette dokument for at se, hvad du herefter kan gøre. Næste sektion fortsættes umiddelbart efter, at ovenstående ændringer er implementeret.
+Hvert af disse trin er vist under **[Form og kombiner data i Power BI Desktop](desktop-shape-and-combine-data.md)** . Du kan se nærmere på den side eller fortsætte med dette dokument for at se, hvad du herefter kan gøre. Næste sektion fortsættes umiddelbart efter, at ovenstående ændringer er implementeret.
 
 ## <a name="combine-data"></a>Kombiner data
 Dataene omkring de forskellige stater er interessante og kan bruges til at skabe yderligere analyser og forespørgsler. Men der er et problem: De fleste data anvender forkortelser på to bogstaver for statskoder og ikke statens fulde navn. Vi skal bruge en måde at knytte forkortelserne for staterne til deres navne på.
@@ -161,7 +161,7 @@ På båndet **Hjem** i **Forespørgselseditor** vælger vi **Hent data \> Web** 
 
  ![](media/desktop-getting-started/designer_gsg_usstateabbreviationsnavigator.png)
 
-Vi vælger **Tabel[rediger]**, fordi den indeholder de ønskede data, men den skal formes lidt for at trimme dataene i tabellen. Hvert af disse trin vises også under **[Form og kombiner data i Power BI Desktop](desktop-shape-and-combine-data.md)**. Som opsummering af disse trin gør vi følgende:
+Vi vælger **Tabel[rediger]** , fordi den indeholder de ønskede data, men den skal formes lidt for at trimme dataene i tabellen. Hvert af disse trin vises også under **[Form og kombiner data i Power BI Desktop](desktop-shape-and-combine-data.md)** . Som opsummering af disse trin gør vi følgende:
 
 Vi vælger **Rediger**, derefter er fremgangsmåden som følger:
 

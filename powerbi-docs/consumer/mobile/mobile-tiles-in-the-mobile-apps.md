@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
 ms.openlocfilehash: aa0827c0be31d65db7bff2c6e2476e5db59b2895
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286398"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60977995"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Udforsk felter i Power BI-mobilappsene
 Kan anvendes med:
@@ -71,7 +71,7 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
    * Trykke på diagrammet for at flytte værktøjslinjen i et kurvediagram, et liggende eller stående søjlediagram eller et boblediagram og få vist værdierne for et bestemt sted i visualiseringen.  
    * Trykke på ikonet Del snapshot ![](./media/mobile-tiles-in-the-mobile-apps/pbi_andr_sharesnapicon.png) for at [anmærke og dele feltet](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) med andre.
    * Trykke på ikonet Åbn rapport ![](./media/mobile-tiles-in-the-mobile-apps/power-bi-android-tablet-open-report-icon.png) for at [få vist rapporten](mobile-reports-in-the-mobile-apps.md) i mobilappen.
-3. Nogle gange har opretteren af dashboardet føjet et link til et felt. I så fald vil du, når du trykker på den lodrette ellipse (**...**), få vist **Åbn link** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png):
+3. Nogle gange har opretteren af dashboardet føjet et link til et felt. I så fald vil du, når du trykker på den lodrette ellipse ( **...** ), få vist **Åbn link** ![](media/mobile-tiles-in-the-mobile-apps/power-bi-iphone-link-icon.png):
    
     ![](media/mobile-tiles-in-the-mobile-apps/power-bi-android-tile-link.png)
    

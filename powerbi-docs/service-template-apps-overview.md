@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.component: powerbi-service
 ms.topic: conceptual
-ms.date: 02/04/2019
+ms.date: 04/26/2019
 ms.author: maggies
-ms.openlocfilehash: 445f5f087bd9589b18f798e8db40a63b0ddceafe
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 0ea8f19fa36bf1f9ceb5f8f0b92bd53ebdfa2a01
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249739"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64578516"
 ---
 # <a name="what-are-power-bi-template-apps-preview"></a>Hvad er Power BI-skabelonprogrammer? (eksempelvisning)
 
@@ -24,10 +24,10 @@ Skabelonprogrammer er en erstatning for de aktuelle tjenesteindholdspakker. Som 
 
 Du kan udarbejde skabelonprogrammer, som gør det muligt for dine kunder at oprette forbindelse til og instantiere deres egne konti. Som domæneeksperter kan de låse op for data på en måde, så deres erhvervsbrugere nemt kan bruge dem.  
 
-Du kan sende dine partnerudarbejdede skabelonprogrammer til Cloud Partner-portalen. Programmerne bliver derefter offentligt tilgængelige i Power BI-programgalleriet (app.powerbi.com/getdata/services) og på Microsoft AppSource (appsource.microsoft.com). Her er et eksempel på oplevelsen med det offentlige skabelonprogram.  
+Du kan sende dine skabelon apps til Cloud Partner-portalen. Programmerne bliver derefter offentligt tilgængelige i Power BI-programgalleriet (app.powerbi.com/getdata/services) og på Microsoft AppSource (appsource.microsoft.com). Her er et overordnet Kig på oprettelse af den offentlige skabelon appoplevelsen.  
 
-## <a name="overview"></a>Oversigt
-Den generelle proces for at udvikle og indsende et skabelonprogram omfatter flere faser, hvoraf nogle kan omfatte mere end én aktivitet på samme tid.
+## <a name="process"></a>Proces
+Den generelle proces for at udvikle og indsende en skabelonapp omfatter flere faser. Nogle faser kan indeholde mere end én aktivitet på samme tid.
 
 
 | Fase | Power BI Desktop |  |Power BI-tjenesten  |  |Cloud Partner-portal  |

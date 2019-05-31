@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 01/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: ef29c6b73a9a430fda35c2274dd278d11bd29dcc
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.openlocfilehash: f32a5704d611153e5b4a0f3a485f2a4a25f93e8b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56661945"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61059943"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Ofte stillede spørgsmål om Power BI
 * Hvis du har andre spørgsmål, kan du [prøve at spørge Power BI-community'et](http://community.powerbi.com/).
@@ -31,8 +31,9 @@ Power BI Pro er en individuel licens, der giver adgang til alt indhold og alle f
 Premium indeholder dedikeret kapacitet til at levere en mere ensartet ydeevne og understøtter større datamængder i Power BI. For individuelle brugere muliggør Premium også omfattende distribution af indhold for Pro-brugere uden at kræve licenser pr. bruger i forbindelse med visning af indholdet.
 
 ## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>Hvad sker der, hvis min Power BI Pro-licens udløber?
-Der er en 30-dages respitperiode, efter en Power BI Pro-licens er udløbet.
-Power BI Pro har den samme abonnementslivscyklus som Office 365. Du kan finde flere oplysninger under [Hvad sker der med mine data og adgang, når mit abonnement på Office 365 til virksomheder slutter?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
+Der er en respitperiode, efter en Power BI Pro-licens er udløbet. For licenser, der er en del af et volumenlincenskøb, er respitperioden 90 dage. Hvis du har købt licensen direkte, er respitperioden 30 dage.
+
+Power BI Pro har den samme abonnementslivscyklus som Office 365. Du kan finde flere oplysninger i [Hvad sker der med mine data og adgang, når min Office 365 for business-abonnementet slutter?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3).
 
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Hvad hvis jeg har spørgsmål til Power BI Premium?
 For spørgsmål knyttet til Power BI Premium henvises til [Power BI Premium – ofte stillede spørgsmål](../service-premium-faq.md).
@@ -90,11 +91,6 @@ Her er en komplet liste over [områder og sprog, der understøttes af Power BI](
 Du kan købe Power BI Pro-licenser direkte eller chatte med en repræsentant på [www.powerbi.com](http://www.powerbi.com).
 
 Du kan også finde en [Microsoft-partner](https://partner.microsoft.com/), som kan hjælpe dig med at implementere Power BI.
-
-## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>Hvad sker der, hvis min Power BI Pro-licens udløber?
-Der er en respitperiode, efter en Power BI Pro-licens er udløbet. For licenser, der er en del af et volumenlincenskøb, er respitperioden 90 dage. Hvis du har købt licensen direkte, er respitperioden 30 dage.
-
-Power BI Pro har den samme abonnementslivscyklus som Office 365. Du kan finde flere oplysninger under [Hvad sker der med mine data og adgang, når mit abonnement på Office 365 til virksomheder slutter?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
 
 ## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Opfylder Power BI nationale, regionale og branchespecifikke overholdelseskrav?
 Få mere at vide om Power BI-overholdelse i [Microsoft Trust Center](http://go.microsoft.com/fwlink/?LinkId=785324).

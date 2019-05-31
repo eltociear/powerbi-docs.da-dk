@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/06/2018
+ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 4b45c6708f2f4c1ec0f8df2a330dcbb683210926
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: e23fd2aca90ee14c2376b0175c7c8b5132cf9a9f
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54292020"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66222273"
 ---
 # <a name="conditional-formatting-in-tables"></a>Betinget formatering af tabeller 
 Med betinget formatering af tabeller kan du angive brugerdefinerede farver for celler baseret på celleværdier eller baseret på andre værdier eller felter, og du kan bruge gradueringsfarver. Du kan også få vist celleværdier med datalinjer. 
@@ -129,6 +129,12 @@ Og du kan derefter få resultater som følgende matrix.
 ![Matrixvisualisering med en farve, der er baseret på KPI-værdien](media/desktop-conditional-table-formatting/conditional-table-formatting_07.png)
 
 Med lidt fantasi og DAX kan du oprette mange flere variationer.
+
+Du kan bruge nogen af de værdier, der er angivet i CSS-farver specifikationer for på [ https://www.w3.org/TR/css-color-3/ ](https://www.w3.org/TR/css-color-3/) farve dine visuelle elementer:
+* 6- eller 8 cifrede hex-3, koder f.eks. #3E4AFF. Kontrollér, at du medtage symbolet # i begyndelsen af koden. "3E4AFF" kan ikke accepteres. 
+* RGB- eller RGBA værdier, f.eks. RGBA (234 234 234, og 0,5)
+* HSL eller HSLA værdier f.eks. HSLA (123 75% 75%, og 0,5)
+* Farve på navne, f.eks. grøn, SkyBlue, PeachPuff 
 
 ## <a name="next-steps"></a>Næste trin
 Du kan få flere oplysninger i følgende artikel:  

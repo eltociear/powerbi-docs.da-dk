@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 50cdaded75f81828542afa10abf104079d09ebd8
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396428"
+---
 Som standard vises kolonneoverskrifterne kun i dine rapporter, hvis de indeholder data. Hvis du f.eks. viser indtægter efter land og ikke havde noget salg i Norge, ville Norge ikke blive vist nogen steder i din visualisering.
 
 For at få vist tomme kategorier skal du klikke på pil ned i det felt, du vil ændre i ruden **Visualiseringer**, og markere **Vis elementer uden data**.

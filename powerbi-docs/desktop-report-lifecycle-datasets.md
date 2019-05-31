@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 04/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9a0e87eca537fc8c22dffaad6a725dc949b2b121
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 02beb69148c347847f346c170651ef31ddd1e786
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275565"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60987858"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Opret forbindelse til datasæt i Power BI-tjenesten fra Power BI Desktop
 Du kan oprette en direkte forbindelse til et delt datasæt i Power Bi-tjenesten og oprette mange forskellige rapporter fra det samme datasæt. Dette betyder, at du kan forfine din datamodel i Power Bi Desktop, udgive den til Power BI-tjenesten, hvorefter du og andre kan oprette mange forskellige rapporter (i separate .pbix-filer) fra den samme fælles datamodel. Denne funktion kaldes **Direkte forbindelse til Power BI-tjeneste**.
@@ -77,9 +77,8 @@ Når den er færdig, viser **Power BI Desktop** dig, at udgivelsen er udført og
 Lad os nu se, hvordan andre teammedlemmer, der har adgang til arbejdsområdet, hvor rapporten (og datasættet) blev udgivet, kan oprette forbindelse til datasættet og lave deres egne rapporter.
 
 ### <a name="establish-a-power-bi-service-live-connection-to-the-published-dataset"></a>Opret en direkte forbindelse til en Power BI-tjeneste til det udgivne datasæt
-Vælg **Hent data** på båndet **Hjem** i **Power BI Desktop**, og vælg **Power BI-tjeneste** for at oprette en forbindelse til den udgivne rapport og oprette din egen rapport baseret på det udgivne datasæt. Du kan også vælge det fra **Hent data > Onlinetjenester > Power BI-tjeneste**.
+Hvis du vil oprette forbindelse til den publicerede rapport og oprette din egen rapport baseret på det udgivne datasæt, skal du vælge **Hent Data** fra den **hjem** båndet i **Power BI Desktop** , skal du vælge **Power BI** fra ruden til venstre, og vælg derefter **Power BI-datasæt**.
 
-![](media/desktop-report-lifecycle-datasets/report-lifecycle_08.png)
 
 Hvis du ikke allerede er logget på Power BI, bliver du bedt om at gøre det. Når du er logget på, får du vist et vindue, der viser, hvilke arbejdsområder du er medlem af, og du kan vælge, hvilket arbejdsområde der indeholder datasættet, som du vil oprette en **Direkte forbindelse til Power Bi-tjeneste** til.
 

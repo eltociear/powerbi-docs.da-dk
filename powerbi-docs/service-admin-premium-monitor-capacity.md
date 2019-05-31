@@ -1,29 +1,27 @@
 ---
 title: Overvåg Power BI Premium-kapacitet med programmet Premium Capacity Metrics
 description: Brug Power BI-administrationsportalen og Power BI Premium-appen Capacity Metrics
-author: minewiskan
-ms.author: owend
+author: mgblythe
+ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/25/2019
+ms.date: 03/27/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: ac6559ccc9e6dbdf8c4be0550d8522765a4a8b23
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.openlocfilehash: 5a8db746606e42b4e9b094dc6d17d6d2e0f08f67
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174907"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65565305"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Overvåg Premium-kapaciteter vha. appen
 
 Overvågning af dine kapaciteter er afgørende for at træffe beslutninger om den bedste måde, du kan udnytte dine ressourcer i Premium-kapaciteten på. Du kan overvåge kapacitet via administrationsportalen eller programmet **Power BI Premium Capacity Metrics**. Denne artikel indeholder en beskrivelse af brugen af programmet Premium Capacity Metrics. Programmet giver de mest detaljerede oplysninger om ydeevnen af dine kapaciteter. Hvis du vil have et overblik over målepunkter for den gennemsnitlige brug på et højere niveau for de seneste syv dage, skal du bruge administrationsportalen. Du kan finde flere oplysninger om overvågning på portalen under [Overvåg Premium-kapaciteter på administrationsportalen](service-admin-premium-monitor-portal.md).
 
-Programmet opdateres jævnligt med nye funktioner og funktionalitet. Sørg for at køre den nyeste version.   
-**Den nyeste version af programmet er 1.10.1.2 (22. februar 2019)**.   
-Hvis en tidligere version af programmet allerede er installeret, er det bedst at slette den fra dine programmer og derefter trykke på CTRL + F5 for at opdatere. 
+Programmet opdateres jævnligt med nye funktioner og funktionalitet. Kontrollér, at du kører den nyeste version. Hvis en tidligere version af programmet allerede er installeret, er det bedst at slette den fra dine programmer og derefter trykke på CTRL + F5 for at opdatere. 
 
 ## <a name="install-the-app"></a>Installér programmet
 
@@ -39,7 +37,6 @@ Du kan gå direkte til [programmet Premium Capacity Metrics](https://app.powerbi
 
 Vær tålmodig. Det tager nogle få minutter at installere og opdatere målepunkterne. Hvis der vises tomme målepunkter i programmet, kan du trykke på F5 for at opdatere din browser.
 
-
 ## <a name="get-app-refresh-history"></a>Få historik over programopdateringer
 
 Hvis du vil kontrollere, hvornår programmet Premium Capacity Metrics sidst blev opdateret, skal du klikke på **Indstillinger** > **Datasæt** > **Power BI Premium Capacity Metrics** > **Opdateringshistorik**. 
@@ -52,7 +49,7 @@ Den seneste opdatering vises. Ellers skal du klikke på **Opdateringshistorik** 
 
 ## <a name="monitor-capacities-with-the-app"></a>Overvåg kapaciteter vha. appen
 
-Nu, hvor du har installeret programmet, kan du se målepunkter for kapaciteterne i din organisation. Appen indeholder et [Dashboard](#Dashboard) med oversigter over målepunkter og detaljerede [rapporter](#Reports) for målepunkter.
+Nu, hvor du har installeret programmet, kan du se målepunkter for kapaciteterne i din organisation. Appen indeholder et Dashboard med forbrugsdata oversigter og rapporter med detaljerede forbrugsdata.
 
 ### <a name="dashboard"></a>Dashboard
 
@@ -136,6 +133,19 @@ Dashboardet indeholder følgende målepunkter:
 | Hukommelse – gennemsnitligt forbrug for sideinddelte rapporter (GB) | Det gennemsnitlige hukommelsesforbrug af arbejdsbelastninger i sideinddelte rapporter i løbet af de sidste syv dage. |
 |||
 
+#### <a name="ai-summary"></a>AI-oversigt
+
+| Data | Beskrivelse |
+| --- | --- |
+| Opdateringer i alt | Det samlede antal opdateringer i løbet af de seneste syv dage. |
+| Opdateringspålidelighed (%) | Det samlede antal vellykkede opdateringer delt med det samlede antal opdateringer i løbet af de seneste syv dage. |
+| Maks CPU (%)| Maks CPU-forbruget af AI-arbejdsbelastninger i de seneste syv dage. |
+| Maks hukommelse (GB) | Maks hukommelsesforbrug af AI-arbejdsbelastninger i de seneste syv dage.|
+| Opdaterer Max ventetid (MS) | Maksimale tidsrum før start af opdatering. |
+| Opdaterer Gennemsnitlig ventetid (MS)| Gennemsnitlig mængde tid, før opdateringen starter. |
+| Opdaterer Maks varighed (MS) | Maksimale tidsrum til komplet opdatering. |
+| Gennemsnitlig varighed af opdateringer (MS)| Gennemsnitlig mængde tid brugt på at fuldføre opdateringen. |
+| | |
 
 ### <a name="reports"></a>Rapporter
 
@@ -143,10 +153,11 @@ Rapporter giver mere detaljerede målepunkter. Hvis du vil se rapporter for kapa
 
 Nederst i rapporten er der fem *faner*:
 
-[**Datasæt**](#datasets) – Giver detaljerede målepunkter for tilstanden af Power BI-datasættene i dine kapaciteter.   
-[**Sideinddelte rapporter**](#paginated-reports) – Giver detaljerede målepunkter for tilstanden af sideinddelte rapporter i dine kapaciteter.   
-[**Dataflow**](#dataflows) – Giver detaljerede målepunkter for opdatering af dataflow i dine kapaciteter.   
-[**Ressourceforbrug**](#resource-consumption) – Giver detaljerede målepunkter for ressourcer, herunder hukommelse og høj CPU-udnyttelse.    
+[**Datasæt**](#datasets) – Giver detaljerede målepunkter for tilstanden af Power BI-datasættene i dine kapaciteter.
+[**Sideinddelte rapporter**](#paginated-reports) – Giver detaljerede målepunkter for tilstanden af sideinddelte rapporter i dine kapaciteter.
+[**Dataflow**](#dataflows) – Giver detaljerede målepunkter for opdatering af dataflow i dine kapaciteter.
+[**AI** ](#ai) -giver detaljeret målepunkter for tilstanden af de AI-funktioner, der bruges i dine kapaciteter.
+[**Ressourceforbrug**](#resource-consumption) – Giver detaljerede målepunkter for ressourcer, herunder hukommelse og høj CPU-udnyttelse.
 [**Id'er og oplysninger**](#ids-and-info) – Indeholder navne, id'er og ejere for kapaciteter, arbejdsområder og arbejdsbelastninger.
 
 Hver fane åbner en side, hvor du kan filtrere målepunkter efter kapacitet og datointerval. Hvis der ikke er valgt nogen filtre, viser rapporten som standard målepunkter for den seneste uge for alle kapaciteter, der rapporterer målepunkter. 
@@ -159,7 +170,7 @@ På siden Datasæt er der forskellige *områder*, som indeholder **Opdateringer*
 
 | Rapportsektion | Metrikværdier |
 | --- | --- |
-| Opdateringer |  Antal i alt: Det samlede antal opdateringer for hvert datasæt.<br>  Pålidelighed: Antal fuldførte opdateringer i procent for hvert datasæt.<br>  Gennemsnitlig ventetid: Den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starttidspunktet for en opdatering af datasættet i minutter.<br>  Maksimal ventetid: Den maksimale ventetid for datasættet i minutter.<br>  Gennemsnitlig varighed: Den gennemsnitlige varighed af opdateringen af datasættet i minutter.<br>  Maksimal varighed: Varigheden af den længstvarende opdatering af datasættet i minutter. |
+| Opdateringer |  Antal i alt: Det samlede antal opdateringer for hvert datasæt.<br>  Pålidelighed: Procentdelen af opdateringer, for hvert datasæt er fuldført.<br>  Gennemsnitlig ventetid: Den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starttidspunktet for en opdatering af datasættet i minutter.<br>  Maksimal ventetid: Den maksimale ventetid for datasættet i minutter.<br>  Gennemsnitlig varighed: Den gennemsnitlige varighed af opdateringen af datasættet i minutter.<br>  Maksimal varighed: Varigheden af den længstvarende opdatering af datasættet i minutter. |
 | Top 5-datasæt efter Gennemsnitlig varighed (minutter) |  De fem datasæt med den længstvarende gennemsnitlige opdateringsvarighed i minutter. |
 | Top 5-datasæt efter Gennemsnitlig ventetid (minutter) |  De fem datasæt med den længstvarende gennemsnitlige opdateringsventetid i minutter. |
 | Opdateringsantal og hukommelsesforbrug pr. time (GB) |  Succeser, fejl og hukommelsesforbrug opdelt i buckets af en times varighed rapporteret i UTC-tid. |
@@ -213,12 +224,23 @@ På siden Datasæt er der forskellige *områder*, som indeholder **Opdateringer*
 
 | **Rapportafsnit** | **Målepunkter** |
 | --- | --- |
-| Opdateringer |  I alt: Det samlede antal opdateringer for hvert dataflow.<br>  Pålidelighed: Antal fuldførte opdateringer i procent for hvert dataflow.<br>  Gennemsnitlig ventetid: Den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starttidspunktet for en opdatering af dataflowet i minutter.<br>  Maksimal ventetid: Den maksimale ventetid for dataflowet i minutter.<br>  Gennemsnitlig varighed: Den gennemsnitlige varighed af opdateringen af dataflowet i minutter.<br>  Maksimal varighed: Varigheden af den længstvarende opdatering af dataflowet i minutter. |
+| Opdateringer |  I alt: Det samlede antal opdateringer for hvert dataflow.<br>  Pålidelighed: Procentdelen af opdateringer, der er fuldført for hver dataflowet.<br>  Gennemsnitlig ventetid: Den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starttidspunktet for en opdatering af dataflowet i minutter.<br>  Maksimal ventetid: Den maksimale ventetid for dataflowet i minutter.<br>  Gennemsnitlig varighed: Den gennemsnitlige varighed af opdateringen af dataflowet i minutter.<br>  Maksimal varighed: Varigheden af den længstvarende opdatering af dataflowet i minutter. |
 | Top 5-dataflow efter Gennemsnitlig opdateringsvarighed |  De fem dataflow med den længstvarende gennemsnitlige opdateringsvarighed i minutter. |
 | Top 5-dataflow efter Gennemsnitlig ventetid |  De fem dataflow med den længstvarende gennemsnitlige opdateringsventetid i minutter. |
 | Gennemsnitlige opdateringsventetider pr. time |  Den gennemsnitlige opdateringsventetid opdelt i buckets på én time rapporteret i UTC-tid. Flere tilfælde af høje opdateringsventetider kan være tegn på, at kapaciteten snart er brugt op. |
 | Opdateringsantal og hukommelsesforbrug pr. time |  Succeser, fejl og hukommelsesforbrug opdelt i buckets på én time rapporteret i UTC-tid. |
 |  |  |
+
+### <a name="ai"></a>AI
+
+| **Rapportafsnit** | **Målepunkter** |
+| --- | --- |
+| Samlet forbrug | Samlet antal: Antallet af AI-funktioner i et arbejdsområde eller dataflowet. <br> Pålidelighed: Procentdelen af opdateringer, er fuldført.<br> Gns. Ventetid: Den gennemsnitlige mellemliggende mellem det planlagte tidspunkt og starten af en opdatering, i millisekunder.<br> Maksimal ventetid: Maksimalt ventetid, i millisekunder.<br> Gns. Varighed: Den gennemsnitlige varighed af en opdatering, i millisekunder.<br> Maksimal varighed: Varigheden af den længste kører opdatering, i millisekunder.<br> Gns. Input størrelse: Gennemsnitlige input størrelse i byte, om funktionen AI, der udføres af en opdatering af dataflowet.<br> Gns. Output, størrelse: Den gennemsnitlige outputstørrelse i byte, om funktionen AI, der udføres af en opdatering af dataflowet. |
+| Top 5 AI-funktioner ved gennemsnitlige varighed | De fem funktioner med længste gennemsnittet opdatere varigheden i millisekunder. |
+| Top 5 AI-funktioner ved gennemsnitlige Input størrelse | De fem funktioner med den største gennemsnitlige data input størrelse i byte. |
+| Opdateringsantal og hukommelsesforbrug pr. time | Succeser, fejl og hukommelsesforbrug opdelt i buckets på én time rapporteret i UTC-tid. |
+| Pr. time gennemsnitlige varighed | Den gennemsnitlige varighed af en opdatering, opdeles i én time buckets, rapporteret i UTC-tid. |
+| | |
 
 ### <a name="resource-consumption"></a>Ressourceforbrug
 
@@ -274,7 +296,7 @@ Du kan bruge programmet Power BI Premium Capacity Metrics til at overvåge *A SK
 
 1. Åbn din kapacitet på Azure-portalen.
 
-1. Klik på **Adgangskontrol (IAM)**, og føj derefter appen **Power BI Premium** til rollen Læser. Hvis du ikke kan finde appen ved hjælp af navnet, kan du også tilføje den ved hjælp af klient-id'et: `cb4dc29f-0bf4-402a-8b30-7511498ed654`.
+1. Klik på **Adgangskontrol (IAM)** , og føj derefter appen **Power BI Premium** til rollen Læser. Hvis du kunne ikke finde app efter navn, kan du også tilføje den efter klient-id: `cb4dc29f-0bf4-402a-8b30-7511498ed654`.
 
     ![Tilladelser til Power BI Embedded](media/service-admin-premium-monitor-capacity/embedded-permissions.png)
 
@@ -285,4 +307,4 @@ Du kan bruge programmet Power BI Premium Capacity Metrics til at overvåge *A SK
 ## <a name="next-steps"></a>Næste trin
 
 > [!div class="nextstepaction"]
-> [Administration og optimering af ressourcer med Power BI Premium-kapacitet](service-premium-understand-how-it-works.md)
+> [Optimering af Power BI Premium-kapaciteter](service-premium-capacity-optimize.md)

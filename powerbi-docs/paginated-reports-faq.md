@@ -1,20 +1,20 @@
 ---
 title: 'Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål (prøveversion)'
 description: I denne artikel finder du svar på ofte stillede spørgsmål om sideinddelte rapporter. Disse rapporter indeholder megen formatering og er perfekt pixeleret output, der er optimeret til udskrivning eller generering af PDF.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.openlocfilehash: d248bbf8374b64c947fa872f6294ae0d1195ede9
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.openlocfilehash: cedf72585d7aa4f2ece39739dc0bdba33ca66e21
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324732"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "60987779"
 ---
 # <a name="paginated-reports-in-power-bi-faq-preview"></a>Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål (prøveversion)
 
@@ -63,7 +63,7 @@ Ja, overvågning er tilgængelig som en ny fane med de samme relevante oplysning
 
 ### <a name="do-i-need-a-pro-license-to-create-and-publish-paginated-reports"></a>Skal jeg have en Pro-licens for at oprette og publicere sideinddelte rapporter?
 
-Ja. Du kan ikke uploade rapporter til arbejdsområdet uden en Pro-licens. Du kan downloade og prøve Report Builder uden Pro-licensen, men du kan ikke publicere de sideinddelte rapporter, du opretter. 
+Ja. Du kan ikke uploade rapporter til arbejdsområdet uden en Pro-licens. Vi opfordrer dig til at hente og bruge Power BI Report Builder selv uden at Pro-licens, men du kan ikke publicere de sideinddelte rapporter, du uden opretter. 
 
 ### <a name="what-if-i-have-a-paginated-report-in-a-workspace-and-the-paginated-report-workload-is-turned-off"></a>Hvad nu hvis jeg har en sideinddelt rapport i et arbejdsområde, og arbejdsbelastningen for sideinddelte rapporter er slået fra?
 
@@ -85,13 +85,13 @@ Sideinddelte rapporter er bedst til scenarier, hvor der kræves megen formaterin
 
 Power BI-rapporter er optimeret til udforskning og interaktivitet.  En salgsrapport, hvor forskellige sælgere vil opdele dataene i den samme rapport for deres specifikke område/branche/kunde og se, hvordan tallene ændres, vil fungere bedst som en Power BI-rapport.
 
-### <a name="the-documentation-says-report-builder-is-the-preferred-authoring-tool-can-i-create-paginated-reports-in-sql-server-data-tools-for-power-bi"></a>Ifølge dokumentationen er Report Builder det foretrukne værktøj til oprettelse. Kan jeg oprette sideinddelte rapporter i SQL Server Data Tools til Power BI?
+### <a name="the-documentation-says-power-bi-report-builder-is-the-preferred-authoring-tool-can-i-create-paginated-reports-in-sql-server-data-tools-for-power-bi"></a>Dokumentationen siger Power BI Report Builder er den foretrukne rapporteringsværktøj. Kan jeg oprette sideinddelte rapporter i SQL Server Data Tools til Power BI?
 
 Ja, men Power BI-tjenesten giver dig kun mulighed for at uploade et enkelt element ad gangen, så mange af de scenarier, forfattere bruger med SQL Server Data Tools (SSDT), understøttes endnu ikke. Du kan se en komplet [liste over ikke-understøttede funktioner](#what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi) senere i disse Ofte stillede spørgsmål.  
 
 ### <a name="what-versions-of-report-builder-do-you-support"></a>Hvilke versioner af Report Builder understøttes?
 
-Brug den nyeste version af SQL Server 2016 Report Builder til at udarbejde og publicere dine rapporter i Power BI-tjenesten. Installér [Report Builder fra Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53613).
+Vi har for nylig udgivet Power BI Report Builder som den primære rapporteringsværktøj til sideinddelte rapporter i Power BI-tjenesten. Installér [Power BI Report Builder fra Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513).
 
 ### <a name="how-do-i-move-existing-reports-i-have-saved-in-sql-server-reporting-services-to-power-bi"></a>Hvordan flytter jeg eksisterende rapporter, som jeg har gemt i SQL Server Reporting Services, til Power BI?
 
@@ -99,7 +99,7 @@ Du skal downloade rapporten fra serveren og derefter uploade den til Power BI vi
 
 ### <a name="can-i-open-reports-and-publish-directly-to-the-service"></a>Kan jeg åbne rapporter og publicere direkte i tjenesten?
 
-Ikke på nuværende tidspunkt. Vi tilføjer understøttelse af åbning af rapporter og publicering af dem direkte i tjenesten fra Report Builder på et tidspunkt, ligesom du kan med Power BI Desktop.
+Ikke på nuværende tidspunkt. Vi tilføjer understøtter åbning af rapporter og publicering af dem direkte til tjenesten fra Power BI Report Builder, før den offentligt tilgængelige version, som du kan med Power BI Desktop.
 
 ### <a name="what-paginated-report-features-in-ssrs-arent-yet-supported-in-power-bi"></a>Hvilke funktioner for sideinddelte rapporter i SSRS understøttes endnu ikke i Power BI?
 
@@ -118,17 +118,27 @@ Du får vist en fejlmeddelelse, hvis du forsøger at uploade en fil, som indehol
 
 ### <a name="what-data-sources-do-you-support-currently-for-paginated-reports"></a>Hvilke datakilder understøttes i øjeblikket for sideinddelte rapporter?
 
-Vi understøtter Azure SQL Database, SQL Server samt både tabelmodeller (DAX) og flerdimensionelle modeller (MDX) til SQL Server Analysis Services (SSAS) ved hjælp af gatewayen i det lokale miljø.
+Vi understøtter følgende datakilde- 
+
+- Power BI Premium-datasæt
+- Azure Analysis Services (via single sign-on (SSO))
+- Azure SQL Database
+- SQL Server *
+- SQL Server Analysis Services (SSAS) tabelformat (DAX) og MDX-udtryk (Multidimensional) modeller * 
+- Oracle * 
+- Teradata * 
+
+* kræver, at gatewayen i det lokale miljø.
 
 Når du åbner SSAS gennem gatewayen, skal den bruger, hvis legitimationsoplysninger er gemt, have administratorrettigheder i SSAS for at kunne arbejde via denne Gateway.
 
 ### <a name="what-authentication-methods-do-you-support"></a>Hvilke godkendelsesmetoder understøttes?
 
-I øjeblikket skal du gemme et brugernavn og en adgangskode med datakilden på portalen eller i gatewayen.  Yderligere godkendelsesmetoder til understøttelse af ting som sikkerhed på rækkeniveau kommer senere i prøveversionen.
+Vi understøtter Enkeltlogon for både Azure Analysis Services og Power BI Premium-datakilder.  For alle andre datakilder skal du i øjeblikket til at gemme et brugernavn og adgangskode til datakilden i portalen eller gateway.  
 
 ### <a name="can-i-use-a-power-bi-dataset-as-a-data-source-for-my-paginated-report"></a>Kan jeg bruge et Power BI-datasæt som en datakilde til min sideinddelte rapport?
 
-Ikke endnu, men denne understøttelse er planlagt til at komme snart.
+Ja, vi understøtter nu datasæt i Power BI Premium som datakilder for dine sideinddelte rapporter.
 
 ### <a name="can-i-use-stored-procedures-through-the-gateway"></a>Kan jeg bruge gemte procedurer via denne gateway?
 
@@ -140,7 +150,7 @@ Du kan eksportere til Microsoft Excel, Microsoft Word, Microsoft PowerPoint, PDF
 
 ### <a name="can-i-print-paginated-reports"></a>Kan jeg udskrive sideinddelte rapporter?
 
-Ja, udskrivning er tilgængelig til sideinddelte rapporter, herunder en ny og forbedret udskrivningsoplevelse. 
+Ja, udskrivning er tilgængelig for sideinddelte rapporter, herunder en ny og forbedret udskrift oplevelse. 
 
 ### <a name="are-e-mail-subscriptions-available-yet-for-paginated-reports"></a>Er mailabonnementer tilgængelige for sideinddelte rapporter?
 
@@ -168,15 +178,11 @@ Ikke endnu, men vi har helt sikkert planer om at understøtter dette scenarie.
 
 ### <a name="can-i-share-my-paginated-report-content-through-a-power-bi-app"></a>Kan jeg dele indhold i min sideinddelte rapport via en Power BI-app?
 
-I øjeblikket kan du dele individuelle sideinddelte rapporter med andre brugere via delingshandlingen på portalen eller via værktøjslinjen. Vi understøtter endnu ikke deling i en app, men det forventer vi at gøre snart. 
+Ja, sideinddelte rapporter, der understøttes for at være installeret med apps fra både v1 og v2-arbejdsområder. 
 
 ### <a name="will-other-report-specific-features-in-power-bi-like-pinning-to-report-tiles-to-dashboards-work-with-paginated-reports"></a>Vil andre rapportspecifikke funktioner i Power BI, f.eks. fastgørelse af rapportfelter til dashboards, fungere med sideinddelte rapporter?
 
 Vi har planer om, at rapporterne skal understøtte de samme overordnede scenarier i tjenesten så meget som muligt.  Selvom værktøjet til at oprette dem er forskelligt, er det, set fra en brugers synspunkt, ideelt set blot endnu en rapport på deres liste på portalen. De er ligeglade med, hvordan den blev oprettet, så længe de kan gøre det, de har brug for.  Et godt eksempel på denne funktionsparitet er understøttelsen af planlagte kommentarer. Selvom selve funktionen muligvis fungerer en smule anderledes for hver rapporttype, vil du kunne bruge kommentarer til begge.
-
-### <a name="are-you-planning-to-create-a-new-authoring-tool-for-paginated-reports-in-the-power-bi-service--we-cant-do-everything-we-need-to-with-report-builder-today"></a>Er der planer om at oprette et nyt værktøj til oprettelse af sideinddelte rapporter i Power BI-tjenesten?  Vi kan endnu ikke gøre alt det, vi gerne vil med Report Builder.
-
-Vi undersøger forskellige muligheder for at få de bedste værktøjer til sideinddelte rapporter i Power BI. 
 
 ### <a name="is-a-migration-tool-planned-so-ssrs-customers-can-move-their-existing-reports-and-assets-to-power-bi"></a>Er der planer om et overførselsværktøj, så SSRS-kunder kan flytte deres eksisterende rapporter og aktiver til Power BI?
 
@@ -196,5 +202,5 @@ Nej, du kan i øjeblikket ikke søge efter dine sideinddelte rapporter fra Hjem.
 
 ## <a name="next-steps"></a>Næste trin
 
-- [Installér Report Builder fra Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53613)
+- [Installér Power BI Report Builder fra Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=2086513)
 - [Selvstudium: Opret en sideinddelt rapport](paginated-reports-quickstart-aw.md)

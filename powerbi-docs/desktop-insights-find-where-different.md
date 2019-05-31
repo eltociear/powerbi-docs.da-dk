@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 82844a1e928d30db12ba5659edcee7b07eaaf7b3
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 99ad06b84b01ce94b3433952cdd031a81c336e04
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56215341"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65454138"
 ---
 # <a name="use-insights-in-power-bi-desktop-to-find-where-a-distribution-is-different-preview"></a>Brug indsigter i Power BI Desktop til at finde ud af, hvor distributionen er anderledes (Preview)
 
@@ -48,7 +48,7 @@ Hvis du vil bruge indsigt for at finde ud af, hvor distributioner i et diagram e
 
 Værdierne med det valgte filter anvendt vises med den almindelige standardfarve. De samlede værdier, som vises i den oprindelige visualisering, vises med grå farve, så de er nemme at sammenligne. Der kan inkluderes op til tre forskellige filtre (*Touring Bikes*, *Mountain Bikes*, *Road Bikes* i dette eksempel), og der kan vælges forskellige filtre ved at klikke på dem (eller du kan Ctrl+klikke for at vælge flere).
 
-For enkle additive målinger, f.eks. *Total Sales* i dette eksempel, er sammenligningen baseret på relative værdier. Det betyder, at selvom salget af Touring Bikes er lavere end det samlede salg for alle kategorier, vil visualiseringen bruge en dobbelt akse for at tillade sammenligning af forholdet mellem salget på tværs af de forskellige lande for Touring Bikes i forhold til alle kategorier af cykler.  Hvis du skifter til/fra-knappen under visualiseringen, kan de to værdier vises på den samme akse, så det er nemt at sammenligne absolutte værdier (som vist i følgende billede).    
+For enkle additive målinger, f.eks. *Total Sales* i dette eksempel, er sammenligningen baseret på relative værdier. Derfor mens salgstallene for verdenskendt cykler er lavere end det samlede salg for alle kategorier, bruger som standard det visuelle element en dual akse for at tillade sammenligningen mellem andelen af salg på tværs af forskellige lande, for verdenskendt cykler i forhold til alle kategorier af cykler.  Hvis du skifter til/fra-knappen under visualiseringen, kan de to værdier vises på den samme akse, så det er nemt at sammenligne absolutte værdier (som vist i følgende billede).    
 
 ![visualiseringer, der vises, når der bruges indsigt](media/desktop-insights-find-where-different/find-where-different_04.png)
 
@@ -63,7 +63,7 @@ Du kan bruge indsigt, når rapporten er i læse- eller redigeringstilstand, hvil
 ## <a name="details-of-the-returned-results"></a>Oplysninger om de returnerede resultater
 Du kan tænke på algoritmen som en metode til at tage alle kolonnerne i modellen, og for alle værdierne i disse kolonner, anvendes de som filtre på den oprindelige visualisering, hvorefter den finder de filtrerede værdier, som medfører den største *forskel* i forhold til originalen.
 
-Du vil måske undre dig over, hvad *forskel* helt præcis betyder. Vi kan f.eks. antage, at fordelingen af det samlede salg for USA og Canada er følgende:
+Du sandsynligvis i tvivl om, hvad *forskellige* betyder. Vi kan f.eks. antage, at fordelingen af det samlede salg for USA og Canada er følgende:
 
 |Land  |Salg ($ mio.)|
 |---------|----------|
@@ -97,7 +97,7 @@ På grund af betydningen af målingen *bliver* dette betragtet som en interessan
 
 De viste visualiseringer er derfor beregnet til tydeligt at vise de forskelle, der blev fundet mellem den samlede distribution (som vist i den oprindelige visualisering), og værdien med det bestemte filtre anvendt.  
 
-For additive målinger, f.eks. *Sales*, i det foregående eksempel, blev der brugt et søjle- og kurvediagram, hvor det er nemt at sammenligne skaleringen af relative værdier med de to akser. Søjlerne viser værdien med filteret anvendt, mens kurven viser den samlede værdi (hvor aksen for søjlen vises til venstre, mens aksen for kurven vises til højre). Kurven viser et *trinvist* format med en stiplet linje, som er udfyldt med grå farve. Hvis maksimumværdien på aksen for søjlediagrammet i det forrige eksempel er 4, og maksimumværdien på aksen for kurvediagrammet er 20, vil det være nemt at sammenligne de relative værdier mellem USA og Canada for de filtrerede og samlede værdier. 
+For additive målinger, f.eks. *Sales*, i det foregående eksempel, blev der brugt et søjle- og kurvediagram, hvor det er nemt at sammenligne skaleringen af relative værdier med de to akser. Søjlerne viser værdien med filteret anvendt, mens kurven viser den samlede værdi (hvor aksen for søjlen vises til venstre, mens aksen for kurven vises til højre). Linjen, der vises ved hjælp af en *trinvise* typografi, med en stiplet linje, der er udfyldt med gråt. For det tidligere eksempel, hvis den maksimale værdi af kolonnen akse er 4, og den maksimale værdi på linje akse er 20, derefter det gør det muligt nemt sammenligning af de relative værdier mellem USA og Canada for de filtrerede og samlede værdier. 
 
 Tilsvarende bruges der et søjle- og kurvediagram til målinger, der ikke er additive, f.eks. for *Avance* i det forrige eksempel, hvor brugen af en enkelt akse betyder, at det er nemt at sammenligne værdierne. Igen viser kurven (udfyldt med grå) den samlede værdi. Uanset om du sammenligner faktiske eller relative tal, handler det ikke kun om at beregne forskellen i værdierne for at fastslå, hvilke to distributioner der er forskellige. Eksempel:
 
@@ -107,7 +107,7 @@ Tilsvarende bruges der et søjle- og kurvediagram til målinger, der ikke er add
 
 * Der anvendes forskellige typer heuristik for at kunne vælge de mest betydende resultater, f.eks. ved at overveje andre relationer mellem dataene.
      
-Efter at have undersøgt forskellige kolonner og værdierne i hver af disse kolonner, vælges de værdier, der giver de største forskelle. Af hensyn til at gøre det nemmere at forstå bliver outputtet grupperet efter kolonne, hvor den kolonne, som har værdier med den største forskel, vises først. Der vises op til tre værdier pr. kolonne, men der kan også blive vist færre, hvis der enten var færre end tre værdier, som har en stor indflydelse, eller hvis nogle værdier har meget større indflydelse end andre. 
+Efter at have undersøgt forskellige kolonner og værdierne i hver af disse kolonner, vælges de værdier, der giver de største forskelle. Af hensyn til at gøre det nemmere at forstå bliver outputtet grupperet efter kolonne, hvor den kolonne, som har værdier med den største forskel, vises først. Op til tre værdier vises pr. kolonne, men mindre muligvis skal vises, hvis der er færre end tre værdier, der har en stor træder i kraft, eller hvis nogle værdier er langt mere effektfulde end andre. 
 
 Det er ikke sikkert, at alle kolonner i modellen bliver undersøgt på den tilgængelige tid, så det kan ikke garanteres, at du får vist de kolonner og værdier, som har den største indflydelse. Der anvendes dog forskellige typer heuristik for at sikre, at de mest sandsynlige kolonner undersøges først. Det kan f.eks. ske, at efter, at alle kolonner er blevet undersøgt, bliver det fastslået, at følgende kolonner/værdier har den største indflydelse på distributionen angivet fra største til mindste indflydelse:
 

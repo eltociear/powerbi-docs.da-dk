@@ -1,20 +1,20 @@
 ---
 title: Sikkerhed på rækkeniveau i Power BI-rapportserver
 description: Få mere at vide om sikkerhed på rækkeniveau i Power BI-rapportserver.
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/22/2019
-ms.openlocfilehash: 5a39c976a9b9812754ade2e30eac13aa922fd7f9
-ms.sourcegitcommit: 4aa99a8dde4e98909da888c151a71476f7bbfe81
-ms.translationtype: HT
+ms.openlocfilehash: b4a5d11697cff2cae8d137916636907967a7c276
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58489562"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64769810"
 ---
 # <a name="row-level-security-rls-in-power-bi-report-server"></a>Sikkerhed på rækkeniveau i Power BI-rapportserver
 
@@ -46,7 +46,7 @@ Når du har gemt din rapport i Power BI-rapportserver, kan du administrere sikke
  Hvis rapporten ikke har de roller, der skal bruges, skal du åbne den i Power BI Desktop, tilføje eller redigere roller og derefter gemme i Power BI-rapportserver igen. 
 
 1. I Power BI Desktop skal du gemme rapporten i Power BI-rapportserver. Du skal bruge den version af Power BI Desktop, der er optimeret til Power BI-rapportserver.
-2. Vælg ellipsen (**...**) i Power BI-rapporttjenesten ud for rapporten. 
+2. Vælg ellipsen ( **...** ) i Power BI-rapporttjenesten ud for rapporten. 
 
 3. Vælg **Administrer** > **Sikkerhed på rækkeniveau**. 
 

@@ -7,34 +7,42 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/02/2018
+ms.date: 05/14/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4ab0fe4e3398a37da34af02282a847f316f3f727
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
-ms.translationtype: HT
+ms.openlocfilehash: 37108c88b3a4f1efe2d324d2b182276252072d78
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383147"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710459"
 ---
 # <a name="track-power-bi-service-health-in-office-365"></a>Registrer Power BI-tjenestetilstand i Office 365
 
-Microsoft 365 Administration indeholder vigtige værktøjer til Power BI-administratorer, herunder aktuelle og tidligere oplysninger om tjenestetilstand. Du skal have en af følgende roller for at få adgang til disse oplysninger: Power BI-tjenesteadministrator eller global Office 365-administrator. Du kan finde flere oplysninger om roller under [Administratorroller, der er relateret til Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
+Microsoft 365 admin center indeholder vigtige værktøjer til Power BI-administratorer. Værktøjerne inkluderer aktuelle og historiske oplysninger om tjenestetilstand. For at få adgang til tjenesten statusoplysninger, skal du være i en af følgende roller:
+
+* Power BI Service Administrator
+
+* Office 365 Global Administrator
+
+Du kan finde flere oplysninger om roller, i [administratorroller, der er relateret til Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 
 1. Log på [Microsoft 365 Administration](https://portal.office.com/adminportal).
 
-1. Vælg feltet **Tjenestetilstand**.
+1. Vælg den venstre navigationslinje, **Vis alle** > **Health** > **Service health**. Siden Service health vises:
 
-    ![Feltet Tjenestetilstand](media/service-admin-health/service-health-tile.png)
+    ![Skærmbillede af Microsoft 365 administration med Health Service health indstillingerne og påpeges.](media/service-admin-health/service-health-tile.png)
 
-1. På den aktuelle liste skal du vælge **N rådgivere** eller **N hændelser** og gennemse resultaterne. I illustrationen nedenfor kan du se en af de tre aktive rådgivere.
+1. Fra den **alle tjenester** listen, Vælg **sikkerhedsmeddelelser** eller **hændelser** og gennemse resultaterne. På skærmbilledet nedenfor se du én af tre aktive sikkerhedsmeddelelser.
 
-    ![Aktive rådgivere](media/service-admin-health/active-advisories.png)
+    ![Skærmbillede af siden Service health med tre meddelelserne til Power BI og mulighed for Vis detaljer påpeges.](media/service-admin-health/active-advisories.png)
 
-1. Du kan se flere oplysninger ved at vælge **Vis oplysninger** for et element. I illustrationen nedenfor kan du se yderligere oplysninger, herunder seneste statusopdateringer.
+1. Du kan se flere oplysninger ved at vælge **Vis oplysninger** for et element. På skærmbilledet nedenfor, kan du se yderligere oplysninger, herunder de seneste statusopdateringer.
 
-    ![Oplysninger om rådgivning](media/service-admin-health/advisory-details.png)
+    ![Skærmbillede af Advisory oplysninger.](media/service-admin-health/advisory-details.png)
 
     Rul ned for at se flere oplysninger, og luk ruden, når du er færdig.
 
-1. Hvis du vil se oversigtsoplysninger på tværs af alle tjenester, skal du vælge **Vis oversigt** øverst til højre på hovedlisten. Vælg derefter **Seneste 7 dage** eller **Seneste 30 dage**. Vælg **Vis aktuel status** for at vende tilbage til den aktuelle tjenestetilstand.
+1. Se historiske oplysninger på tværs af alle tjenester, i det øverste højre hjørne af den **Service health** side, Vælg **Vis historik**. Vælg derefter **Seneste 7 dage** eller **Seneste 30 dage**. 
+
+1. Vælg **Vis aktuel status** for at vende tilbage til den aktuelle tjenestetilstand.

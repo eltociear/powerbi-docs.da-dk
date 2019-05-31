@@ -7,25 +7,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/28/2018
+ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5fc013df4526c62a9f2e1aa25328119983aaa30e
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: d5259ba22287a8a2ade3107e4320c39713dcb45e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278095"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65239760"
 ---
 # <a name="customizing-tooltips-in-power-bi-desktop"></a>Tilpasning af værktøjstips i Power BI Desktop
 Værktøjstips er en elegant måde at angive flere oplysninger om kontekst og detaljer om datapunkter på i en visualisering. På følgende billede vises et værktøjstip, der er anvendt på et diagram i Power BI Desktop.
 
 ![Standardværktøjstip](media/desktop-custom-tooltips/custom-tooltips-1.png)
 
-Når der oprettes en visualisering, viser standardværktøjstippet datapunktets værdi og kategori. Tilpasning af oplysningerne i værktøjstips kan i mange tilfælde være meget nyttigt og give yderligere kontekst og oplysninger til brugere, der får vist visualiseringen. Med brugerdefinerede værktøjstips kan du angive yderligere datapunkter, der vises som en del af værktøjstippet.
+Når der oprettes en visualisering, viser standardværktøjstippet datapunktets værdi og kategori. Der er mange forekomster, når tilpasning af oplysningerne i værktøjstips kan er nyttige, og kan give yderligere kontekst og oplysninger til brugere, der får vist Visualiseringen. Med brugerdefinerede værktøjstips kan du angive yderligere datapunkter, der vises som en del af værktøjstippet.
 
 ## <a name="how-to-customize-tooltips"></a>Sådan tilpasser du værktøjstips
-Du opretter et brugerdefineret værktøjstip på følgende måde: I brønden **Felter** i ruden **Visualiseringer** skal du blot trække et felt til den bucket, der hedder **Værktøjstips**, som vist på følgende billede. I det følgende billede er to felter blevet placeret i feltet **Værktøjstip**.
+Til at oprette et brugerdefineret værktøjstip i den **felter** i den **visualiseringer** ruden trække et felt til den **værktøjstip** bucket, som vist på følgende billede. I det følgende billede er to felter blevet placeret i feltet **Værktøjstip**.
 
 ![Tilføj felter til værktøjstip](media/desktop-custom-tooltips/custom-tooltips-2.png)
 
@@ -38,5 +38,5 @@ Du kan tilpasse et værktøjstip yderligere ved at vælge en sammenlægningsfunk
 
 ![Værktøjstip med Hurtig beregning](media/desktop-custom-tooltips/custom-tooltips-4.png)
 
-Der er mange forskellige måder at tilpasse **Værktøjstips** på ved hjælp af et hvilket som helst felt i dit datasæt, så du hurtigt kan vise oplysninger og levere indsigt til dine brugere, som får vist dine dashboards eller rapporter.
+Der er mange måder at tilpasse **værktøjstip**, ved hjælp af en hvilken som helst felt i dit datasæt, at udtrykke en hurtig oplysninger og indsigt, så brugerne får vist dine dashboards eller rapporter.
 

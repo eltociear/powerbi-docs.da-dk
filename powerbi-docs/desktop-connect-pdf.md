@@ -1,5 +1,5 @@
 ---
-title: Opret forbindelse til en PDF-fil i Power BI Desktop (prøveversion)
+title: Opret forbindelse til en PDF-fil i Power BI Desktop
 description: Opret nemt forbindelse til og brug data fra PDF-filer i Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,36 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 11/13/2018
+ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: ff61c4d2cc8ec3570e7eee45b7e43ec81f8f7161
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 0c63a62edfce62a5cee13bef3c68014027313e8b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54275105"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65514019"
 ---
-# <a name="connect-to-a-pdf-file-in-power-bi-desktop-preview"></a>Opret forbindelse til en PDF-fil i Power BI Desktop (prøveversion)
+# <a name="connect-to-a-pdf-file-in-power-bi-desktop"></a>Opret forbindelse til en PDF-fil i Power BI Desktop
 I Power BI Desktop kan du oprette forbindelse til en **PDF-fil** og bruge dataene fra filen på samme måde som enhver anden datakilde i Power BI Desktop.
 
 ![Opret forbindelse til data i PDF-filer](media/desktop-connect-pdf/connect-pdf_04.png)
 
 I følgende afsnit beskrives det, hvordan du opretter forbindelse til en **PDF-fil**, vælger data og indfører disse data i **Power BI Desktop**.
 
-## <a name="enable-the-pdf-connector"></a>Aktivér PDF-connector
-PDF-connectoren indgår i prøveversionen til **Power BI Desktop** og skal aktiveres. Du aktiverer PDF-connectoren ved at vælge **Fil > Indstillinger > Indstillinger > Funktioner til eksempelvisning** og derefter markere afkrydsningsfeltet ud for **Hent data fra PDF-filer**. 
-
-![Aktivér PDF-connector fra Indstillinger > Prøveversionsfunktioner](media/desktop-connect-pdf/connect-pdf_01.png)
-
-Du skal genstarte **Power BI Desktop**, når du har markeret indstillingen.
-
-Første gang du bruger **PDF (beta)**-connectoren, bliver du advaret om, at PDF-connectoren stadig er under udvikling og kan ændres senere. Vælg **Fortsæt** for at bruge connectoren.
-
 Vi anbefaler, at du altid opgraderer til den nyeste version af **Power BI Desktop**, hvilket du kan gøre via et link i [Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="connect-to-a-pdf-file"></a>Opret forbindelse til en PDF-fil
-Hvis du vil oprette forbindelse til en **PDF-fil**, skal du vælge **Hent data** på båndet **Hjem** i Power BI Desktop. Vælg **Fil** blandt kategorierne til venstre, hvorefter du kan se **PDF (beta)**.
+Hvis du vil oprette forbindelse til en **PDF-fil**, skal du vælge **Hent data** på båndet **Hjem** i Power BI Desktop. Vælg **Fil** blandt kategorierne til venstre, hvorefter du kan se **PDF (beta)** .
 
 ![Vælg PDF i Hent data](media/desktop-connect-pdf/connect-pdf_01.png)
 

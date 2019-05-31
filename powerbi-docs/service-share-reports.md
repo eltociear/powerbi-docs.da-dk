@@ -1,5 +1,5 @@
 ---
-title: Del en filtreret Power BI-rapport med dine kolleger
+title: Filtrer en rapport og dele den med kollegaer – Power BI
 description: Få mere at vide om, hvordan du filtrerer Power BI-rapporter og deler dem med kolleger i din organisation.
 author: maggiesMSFT
 manager: kfile
@@ -8,49 +8,54 @@ featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 04/24/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 05bdb9ccca7715b74cb18462f215f7d1bf640526
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 5f3808884e63521ec1dd775d876f1cf707bbe56b
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54279734"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770692"
 ---
-# <a name="share-a-filtered-power-bi-report-with-your-coworkers"></a>Del en filtreret Power BI-rapport med dine kolleger
-*Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Med Power BI får du [adskillige andre måder at samarbejde om og distribuere dine rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md).
+# <a name="filter-a-power-bi-report-and-share-it-with-coworkers"></a>Filtrer en rapport i Power BI og dele den med kolleger
+*Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Hvad nu hvis du vil dele en filtreret version af en rapport? Måske en rapport, der kun viser data for en bestemt by eller sælger eller et bestemt år. Prøv at filtrere en rapport og deler den, eller oprette en brugerdefineret URL-adresse. Rapporten filtreres, når modtagerne åbner den. De kan fjerne filteret ved at ændre URL-adressen. 
 
-Til deling skal du og dine modtagere bruge en [Power BI Pro-licens](service-features-license-type.md), eller indholdet skal være i en [Premium-kapacitet](service-premium.md). 
+Med Power BI får du [adskillige andre måder at samarbejde om og distribuere dine rapporter på](service-how-to-collaborate-distribute-dashboards-reports.md). Til deling skal du og dine modtagere bruge en [Power BI Pro-licens](service-features-license-type.md), eller indholdet skal være i en [Premium-kapacitet](service-premium-what-is.md). 
 
-Du kan dele en rapport med kolleger inden for det samme maildomæne som dig fra de fleste steder i Power BI-tjenesten: Favoritter, Seneste, Delt med mig (hvis ejeren tillader det), Mit arbejdsområde eller andre arbejdsområder. Når du deler en rapport, kan de kolleger, du deler den med, få den vist og interagere med den, men ikke redigere den. De kan se de samme data, som du kan se i rapporterne, medmindre der er anvendt [sikkerhed på rækkeniveau (RLS)](service-admin-rls.md). 
+## <a name="two-ways-to-filter-a-report"></a>To måder at filtrere en rapport
 
-Hvad nu hvis du vil dele en filtreret version af en rapport? Måske en rapport, der kun viser data for en bestemt by eller sælger eller et bestemt år. Opret en brugerdefineret URL-adresse. Rapporten filtreres, når modtagerne åbner den. De kan fjerne filteret ved at ændre URL-adressen.
+### <a name="set-a-filter"></a>Angiv et filter
 
-## <a name="filter-and-share-a-report"></a>Filtrer og del en rapport
+Åbn rapporten i [Redigeringsvisning](consumer/end-user-reading-view.md), anvend filteret, og gem rapporten.
+   
+I dette eksempel filtrerer vi [Eksempel på detailanalyse](sample-tutorial-connect-to-the-samples.md) for kun at vise værdier, hvor **Territory** (Område) er lig med **NC**.
+   
+![Ruden Rapportfilter](media/service-share-reports/power-bi-filter-report2.png)
 
-1. Åbn rapporten i [Redigeringsvisning](consumer/end-user-reading-view.md), anvend filteret, og gem rapporten.
-   
-   I dette eksempel filtrerer vi [Eksempel på detailanalyse](sample-tutorial-connect-to-the-samples.md) for kun at vise værdier, hvor **Territory** (Område) er lig med **NC**.
-   
-   ![Ruden Rapportfilter](media/service-share-reports/power-bi-filter-report2.png)
-2. Tilføj følgende i slutningen af rapportsidens URL-adresse:
-   
-   ?filter=*tabelnavn*/*feltnavn* eq *værdi*
-   
-    Feltet skal være af typen **streng**. Værdierne *tablename* eller *fieldname* må ikke indeholde mellemrum.
-   
-   I vores eksempel er navnet på tabellen **Store** (Butik), navnet på feltet er **Territory** (Område), og den værdi, vi vil filtrere på, er **NC**:
-   
-    ?filter=Store/Territory eq 'NC'
-   
-   ![URL-adresse til filtreret rapport](media/service-share-reports/power-bi-filter-url3.png)
-   
-   Din browser tilføjer specialtegn for at repræsentere skråstreger, mellemrum og apostrofer, så du ender med:
-   
-   app.powerbi.com/groups/me/reports/010ae9ad-a9ab-4904-a7a1-xxxxxxxxxxxx/ReportSection2?filter=Store%252FTerritory%20eq%20%27NC%27
+### <a name="create-a-filter-in-the-url"></a>Opret et filter i URL-adressen
 
-3. [Del rapporten](service-share-dashboards.md), men fjern markeringen i afkrydsningsfeltet **Send mail til modtagere**. 
+Tilføj følgende i slutningen af rapportsidens URL-adresse:
+   
+?filter=*tabelnavn*/*feltnavn* eq *værdi*
+   
+Feltet skal være af typen number, datetime eller streng. Værdierne *tablename* eller *fieldname* må ikke indeholde mellemrum.
+   
+I vores eksempel er navnet på tabellen **Store** (Butik), navnet på feltet er **Territory** (Område), og den værdi, vi vil filtrere på, er **NC**:
+   
+?filter=Store/Territory eq 'NC'
+   
+![URL-adresse til filtreret rapport](media/service-share-reports/power-bi-filter-url3.png)
+   
+Din browser tilføjer specialtegn for at repræsentere skråstreger, mellemrum og apostrofer, så du ender med:
+   
+app.powerbi.com/groups/me/reports/010ae9ad-a9ab-4904-a7a1-xxxxxxxxxxxx/ReportSection2?filter=Store%252FTerritory%20eq%20%27NC%27
+
+Se artiklen [filtrere en rapport med forespørgselsstrengparametre i URL-adressen](service-url-filters.md) for meget flere detaljer.
+
+## <a name="share-the-filtered-report"></a>Del den filtreret rapport
+
+1. Når du [dele rapporten](service-share-dashboards.md)skal du fjerne markeringen af **Send meddelelse via mail til modtagere** afkrydsningsfelt.
 
     ![Dialogboksen Deling af rapport](media/service-share-reports/power-bi-share-report-dialog.png)
 

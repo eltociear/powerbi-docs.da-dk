@@ -1,20 +1,20 @@
 ---
 title: Bedste praksis for ydeevnen i Power BI Embedded
 description: Denne artikel indeholder en vejledning til bedste praksis for integreret analyse
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-embedded
 ms.topic: conceptual
 ms.date: 12/12/2018
-ms.openlocfilehash: 50fbb175640e38431db62df34276417f1080e42a
-ms.sourcegitcommit: a36f82224e68fdd3489944c9c3c03a93e4068cc5
-ms.translationtype: HT
+ms.openlocfilehash: ac8052b78e452f5da1f3db8988a180923c08e0b6
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55430344"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61343162"
 ---
 # <a name="power-bi-embedded-performance-best-practices"></a>Bedste praksis for ydeevnen i Power BI Embedded
 
@@ -26,7 +26,7 @@ Metoden Powerbi.embed() modtager nogle få parametre til at integrere en rapport
 
 ### <a name="embed-url"></a>Integreret URL-adresse
 
-Undgå at generere den integrerede URL-adresse selv. Sørg i stedet for at få den integrerede URL-adresse ved at kalde API'en for [Hent rapporter](/rest/api/power-bi/reports/getreportsingroup), [Hent dashboards](/rest/api/power-bi/dashboards/getdashboardsingroup) eller [Hent felter](/rest/api/power-bi/dashboards/gettilesingroup). Vi har føjet en ny parameter til URL-adressen kaldet **_config_**, som bruges til forbedringer af ydeevnen.
+Undgå at generere den integrerede URL-adresse selv. Sørg i stedet for at få den integrerede URL-adresse ved at kalde API'en for [Hent rapporter](/rest/api/power-bi/reports/getreportsingroup), [Hent dashboards](/rest/api/power-bi/dashboards/getdashboardsingroup) eller [Hent felter](/rest/api/power-bi/dashboards/gettilesingroup). Vi har føjet en ny parameter til URL-adressen kaldet **_config_** , som bruges til forbedringer af ydeevnen.
 
 ### <a name="permissions"></a>Tilladelser
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 3fd97374836978a4902a878da141865c271df643
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396411"
+---
 Generelt bruges visualiseringer til at sammenligne to eller flere forskellige værdier. Men nogle gange når du bygger rapporter, kan du have brug for at spore kun ét nøgletal eller én metrisk værdi over tid. I Power BI Desktop gør du det med en **måler** eller kortvisualisering med **et enkelt tal**. Hvis du vil oprette et tomt diagram af en af typerne, skal du vælge dets ikon i ruden **Visualiseringer**.
 
 ![](media/3-9-create-gauges-cards/3-9_1.png)

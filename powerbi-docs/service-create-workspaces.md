@@ -1,36 +1,34 @@
 ---
-title: Opret arbejdsområder med dine kollegaer i Power BI
-description: Få mere at vide om, hvordan du opretter arbejdsområder, der er samlinger af dashboards og rapporter, som er udviklet til at levere vigtige målepunkter for din organisation.
+title: Opret klassiske arbejdsområder i Power BI
+description: Få mere at vide, hvordan du kan oprette arbejdsområder, samlinger af dashboards, rapporter og sideinddelte rapporter, der er udviklet til at levere vigtige metrikker til organisationen.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 23c011eded113a0249f5e4a354f909a30bc97148
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: dcf9b8befabfec98fcae154e6276f8e698b3ddc2
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54277900"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61150829"
 ---
-# <a name="create-workspaces-with-your-colleagues-in-power-bi"></a>Opret arbejdsområder med dine kollegaer i Power BI
+# <a name="create-classic-workspaces-in-power-bi"></a>Opret klassiske arbejdsområder i Power BI
 
-I Power BI kan du oprette *arbejdsområder*, hvor du kan samarbejde med kollegaer om at oprette og tilpasse samlinger af dashboards og rapporter. Derefter kan du gruppere samlingerne i *apps*, som du kan distribuere til hele organisationen eller til bestemte personer eller grupper. 
+I Power BI, kan du oprette *arbejdsområder*, placerer for at samarbejde med kolleger til at oprette og afgrænse samlinger af dashboards, rapporter og sideinddelte rapporter. Så du kan bundte samlingen sammen i *apps* , som du kan distribuere til hele organisationen eller til bestemte personer eller grupper. 
 
-![Power BI-apps](media/service-create-workspaces/power-bi-apps-left-nav.png)
+**Vidste du det?** Powerbi tilbyder en ny arbejdsområde, som nu er standard. Læs [organisere arbejde i nye arbejdsområder](service-new-workspaces.md) for at få oplysninger om de nye arbejdsområder. 
 
-Når du opretter et arbejdsområde, opretter du en underliggende tilknyttet Office 365-gruppe. Al administration af arbejdsområder foregår i Office 365. Du kan føje kollegaer til disse arbejdsområder som medlemmer eller administratorer. I arbejdsområdet kan alle samarbejde i dashboards, rapporter og andre artikler, som du vil publicere til en større målgruppe. Alle de brugere, du føjer til et apparbejdsområde, skal have en Power BI Pro-licens. 
-
-**Vidste du det?** Power BI udgiver en ny prøveversion af arbejdsområdeoplevelsen. Læs [Organiser arbejde i nye arbejdsområder (prøveversion)](service-new-workspaces.md) for at få oplysninger om de nye arbejdsområder. 
+Når du opretter et klassisk arbejdsområde, opretter du et underliggende, tilknyttede Office 365-gruppe. Al administration af arbejdsområder foregår i Office 365. Du kan føje kollegaer til disse arbejdsområder som medlemmer eller administratorer. I arbejdsområdet kan alle samarbejde i dashboards, rapporter og andre artikler, som du vil publicere til en større målgruppe. Alle de brugere, du føjer til et apparbejdsområde, skal have en Power BI Pro-licens. 
 
 ## <a name="video-apps-and-app-workspaces"></a>Video: Apps og apparbejdsområder
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## <a name="create-an-app-workspace-based-on-an-office-365-group"></a>Opret et apparbejdsområde baseret på en Office 365-gruppe
+## <a name="create-a-classic-app-workspace-based-on-an-office-365-group"></a>Opret en klassisk app-arbejdsområde, der er baseret på en Office 365-gruppe
 
 Når du opretter et apparbejdsområde, oprettes det ud fra en Office 365-gruppe.
 
@@ -52,6 +50,8 @@ Power BI opretter som standard en lille farvet cirkel for din app med appens for
 3. Vælg blyantsikonet igen, og find det billede, du vil bruge.
    
      ![Vælg blyanten igen](media/service-create-distribute-apps/power-bi-apps-workspace-edit-group.png)
+
+     Billeder kan være .png, .jpg eller .bmp filer. Deres filstørrelsen kan være stor, op til 3 MB. 
 
 4. Vælg **Gem**.
    
@@ -77,9 +77,16 @@ I de aktuelle arbejdsområder kan du også oprette forbindelse via organisations
 
 ## <a name="distribute-an-app"></a>Distribuer en app
 
-Når indholdet er klar, skal du vælge, hvilke dashboards og rapporter du vil publicere, og derefter skal du publicere det som en *app*. Dine kollegaer kan hente dine apps på flere måder. Du kan automatisk installere dem i dine kollegaers Power BI-konti, hvis Power BI-administratoren giver dig tilladelse til det. Ellers kan de søge efter og installere dine apps fra Microsoft AppSource, eller du kan sende dem et direkte link. De får automatisk opdateringer, og du kan styre, hvor ofte dataene opdateres. Se [Publicer apps med dashboards og rapporter i Power BI](service-create-distribute-apps.md) for at få flere oplysninger.
+Hvis du vil distribuere officielle indhold til en stor målgruppe i din organisation, kan du udgive en app fra dit arbejdsområde.  Når indholdet er klar, skal du vælge, hvilke dashboards og rapporter, du vil publicere og derefter publicere den som en *app*. Du kan oprette en app fra hvert arbejdsområde.
 
-## <a name="power-bi-apps-faq"></a>Ofte stillede spørgsmål om Power BI-apps
+Listen over Apps på navigationslinjen til venstre viser alle de apps, du har installeret. Dine kollegaer kan hente dine apps på flere måder. 
+- De kan finde og installere din app fra Microsoft AppSource
+- Du kan sende dem et direkte link. 
+- Du kan automatisk installere dem i dine kollegaers Power BI-konti, hvis Power BI-administratoren giver dig tilladelse til det. 
+
+Brugere se opdateret appindhold automatisk, når du har udgivet en opdatering fra dit arbejdsområde. Du kan styre, hvor ofte dataene opdateres ved at angive tidsplanen for opdatering i de datasæt, der bruges af appindhold i dit arbejdsområde. Se [Publicer en app ud fra de nye arbejdsområder i Power BI](service-create-distribute-apps.md) for at få oplysninger.
+
+## <a name="power-bi-classic-apps-faq"></a>Power BI-klassiske apps ofte stillede spørgsmål
 
 ### <a name="how-are-apps-different-from-organizational-content-packs"></a>Hvordan adskiller apps sig fra organisationsindholdspakker?
 Apps er en udviklet form af organisationsindholdspakker. Hvis du allerede har organisationsindholdspakker, vil de fortsætte med at fungere side om side med apps. Der er et par større forskelle mellem apps og indholdspakker. 

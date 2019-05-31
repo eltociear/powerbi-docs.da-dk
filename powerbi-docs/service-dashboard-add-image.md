@@ -12,11 +12,11 @@ ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 8fc00df58620afe56e863fe42f899e0116ab36f2
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54286329"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61137576"
 ---
 # <a name="add-an-image-to-a-power-bi-dashboard"></a>Føj et billede til et Power BI-dashboard
 Du kan føje et separat billede til et dashboard på flere forskellige måder: Én måde er at fastgøre et billede fra en rapport til et dashboard, og en anden måde er at føje det direkte til dashboard'et ved hjælp af **Tilføj felt**.  Du kan få flere oplysninger ved at læse disse artikler:

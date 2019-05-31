@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 9aac366f04d53da56b62c10fdb85229d0d412834
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396422"
+---
 Når du tilføjer et *dato*felt til et visuelt element på feltbeholderen *Akse*, tilføjer Power BI automatisk et tidshierarki, der omfatter *År*, *Kvartal*, *Måned* og *Dag*. Herved gør Power BI det muligt, at dine visuelle elementer har tidsbaseret interaktion med dem, der ser dine rapporter, ved at lade brugerne analysere de forskellige tidsniveauer.
 
 ![](media/3-11g-visual-hierarchies-drilling/3-11g_1.png)

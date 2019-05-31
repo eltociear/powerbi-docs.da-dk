@@ -1,5 +1,5 @@
 ---
-title: Udviklerressourcer til Power BI-dataflow (prøveversion)
+title: Udviklerressourcer til Power BI dataflows
 description: Find ressourcer til udvikling og Power BI-dataflow
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 20bd8cd06e2a183d284752dc378a8aa1440c3aef
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: 9a4caed97881e176d075527c90ae8d5eff213676
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54274683"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61136752"
 ---
-# <a name="developer-resources-for-power-bi-dataflows-preview"></a>Udviklerressourcer til Power BI-dataflow (prøveversion)
+# <a name="developer-resources-for-power-bi-dataflows"></a>Udviklerressourcer til Power BI dataflows
 
 Du kan bruge dataflow uden kode på mange måder ved at oprette forbindelse til eller oprette enheder i Power BI-tjenesten og oprette forbindelse til dem i Power BI Desktop. Mange organisationer ønsker fleksibiliteten til at udvikle deres egne løsninger. Denne artikel indeholder oplysninger om Power BI REST-API'en og andre udviklerressourcer.
 
@@ -38,8 +38,8 @@ I denne artikel kan du finde oplysninger om udviklerressourcer til dataflow. Du 
 
 * [Selvbetjent dataforberedelse med dataflow](service-dataflows-overview.md)
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Brug beregnede objekter i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
-* [Brug dataflow med datakilder i det lokale miljø (prøveversion)](service-dataflows-on-premises-gateways.md)
+* [Ved hjælp af den beregnede enheder på Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Ved hjælp af dataflows med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
 
 Du kan finde oplysninger om CDM udviklings- og selvstudium ressourcer her:
 * [Common Data Model – oversigt](https://docs.microsoft.com/powerapps/common-data-model/overview)

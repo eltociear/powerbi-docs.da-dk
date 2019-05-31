@@ -1,20 +1,20 @@
 ---
 title: Administrer indhold på webportalen til Power BI-rapportserveren
 description: Læs om, hvordan du administrerer indhold på webportalen til Power BI-rapportserveren.
-author: markingmyname
+author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/24/2018
-ms.author: maghan
-ms.openlocfilehash: dcb0507e5812ae35b5be8405ce0a2e347077511b
-ms.sourcegitcommit: 91ac6185f7026ddbaa925dc54057bb742b4fa411
-ms.translationtype: HT
+ms.author: maggies
+ms.openlocfilehash: e7a9b4da760f02672f51aa7ace0f3bb19c501834
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56324501"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770144"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Administrer indhold på webportalen 
 Webportalen Power BI-rapportserver er en placering i det lokale miljø til visning, lagring og administration af dine Power BI-rapporter, dine mobile og sideinddelte rapporter og KPI'er.

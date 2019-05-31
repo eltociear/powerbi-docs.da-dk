@@ -11,11 +11,11 @@ ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 9029d5b6268cacf17fc862a4c0a3d19f440f7de1
-ms.sourcegitcommit: 750f0bfab02af24c8c72e6e9bbdd876e4a7399de
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54007920"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61163854"
 ---
 # <a name="connect-to-lithium-with-power-bi"></a>Opret forbindelse til Lithium med Power BI
 Lithium skaber tillidsforhold mellem verdens bedste varemærker og deres kunder, så alle kan få svar og dele deres oplevelser. Ved at forbinde Lithium-indholdspakken med Power BI kan du foretage vigtige målinger i dit onlinecommunity, som kan hjælpe med at fremme salget, reducere serviceomkostningerne og forbedre loyaliteten. 
@@ -35,7 +35,7 @@ Opret forbindelse til [Lithium-indholdspakken](https://app.powerbi.com/getdata/s
 3. Vælg **Lithium** \> **Hent**.
    
    ![](media/service-connect-to-lithium/lithiumconnect.png)
-4. Angiv URL-adressen til dit Lithium-community. Den vil være i formatet *https://community.yoursite.com*.
+4. Angiv URL-adressen til dit Lithium-community. Den vil være i formatet *https://community.yoursite.com* .
    
    ![](media/service-connect-to-lithium/params.png)
 5. Angiv dine legitimationsoplysninger til Lithium, når du bliver bedt om dem. Vælg **oAuth 2** som godkendelsesmetoden, og klik på **Log på** , og følg derefter logonflowet for Lithium.

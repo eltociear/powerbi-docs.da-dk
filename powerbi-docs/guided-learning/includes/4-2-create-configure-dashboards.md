@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 94ff18339d2eb14faebf124786cab7f9ac66393e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61263418"
+---
 **Dashboards** i Power BI er én-sides samlinger af visualiseringer, der er oprettet indefra Power BI-tjenesten. Du kan oprette dashboards ved at **fastgøre** visualiseringer fra rapporter, du har skrevet og publiceret ved hjælp af Power BI Desktop, eller visualiseringer, du har oprettet i selve Power BI-tjenesten. **Fastgørelse af** et visuelt element til et dashboard er i store træk som at fastgøre et billede på en opslagstavle på en væg – det visuelle element sættes fast på et bestemt sted, så andre kan se den. Du fastgør et visuelt element ved at åbne dens rapport i Power BI-tjenesten. Peg på det visuelle element, du vil fastgøre, og vælg derefter **fastgørelsesikonet**.
 
 ![](media/4-2-create-configure-dashboards/4-2_1.png)

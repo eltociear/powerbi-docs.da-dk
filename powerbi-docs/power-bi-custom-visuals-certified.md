@@ -9,13 +9,13 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
-ms.date: 03/10/2019
-ms.openlocfilehash: a9f8c6248f9754192009e12bab34d3f1427269c2
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
-ms.translationtype: HT
+ms.date: 05/9/2019
+ms.openlocfilehash: 8c806f0de021c3857039649876864f47e1fffdb2
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174792"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65454550"
 ---
 # <a name="certified-custom-visuals"></a>Certificerede brugerdefinerede visuals
 
@@ -31,7 +31,7 @@ Certificeringsprocessen er en valgfri proces, og det er op til udviklerne at bes
 
 **Ikke-certificerede brugerdefinerede visualiseringer** er ikke nødvendigvis ensbetydende med usikre visualiseringer. Nogle visualiseringer er ikke certificeret, fordi de ikke er i overensstemmelse med et eller flere af [certificeringskravene](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Det kan f.eks. være i forbindelse med oprettelse af forbindelse til en ekstern tjeneste, som f.eks. kortvisualiseringer eller visualiseringer, der anvender kommercielle biblioteker.
 
-Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til  **[Microsoft AppSource](https://appsource.microsoft.com)**? Du kan se under  **[Udvikling af en brugerdefineret Power BI-visualisering for at få mere at vide](developer/custom-visual-develop-tutorial.md)**.
+Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til  **[Microsoft AppSource](https://appsource.microsoft.com)** ? Du kan se under  **[Udvikling af en brugerdefineret Power BI-visualisering for at få mere at vide](developer/custom-visual-develop-tutorial.md)** .
 
 ## <a name="removal-of-power-bi-certified-custom-visuals"></a>Fjernelse af certificerede brugerdefinerede Power BI-visualiseringer
 
@@ -44,11 +44,34 @@ Microsoft kan, efter eget skøn, fjerne en visualisering fra [listen over certif
 Hvis du vil have din brugerdefinerede visualisering [certificeret](#certified-custom-visuals), skal du sørge for, at den er i overensstemmelse med følgende:  
 
 * Godkendt af Microsoft AppSource. Din brugerdefinerede visualisering skal findes på vores [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
-* Den brugerdefinerede visualisering er skrevet vha. API version 1.2 eller nyere.
-* Et kodelager, der er tilgængeligt til gennemsyn af Power BI-teamet (f.eks. kildekoden (JavaScript eller TypeScript) i formater, der kan læses af mennesker, og som er tilgængeligt for os via GitHub).
+* Den brugerdefinerede visualisering er skrevet med versioneret **API v2.5 blev ikke** eller nyere.
+* Lager er tilgængelig for gennemgang af Power BI-teamet (for forekomst, kildekode (JavaScript- eller TypeScript) i menneskelige læsbare format er tilgængeligt for os, via GitHub).
 
     >[!Note]
     > Du behøver ikke at dele din kode offentligt i GitHub.
+* Kodekrav lager:
+   * Den påkrævede mindstemål af filer, skal indeholde:
+      * .gitignore
+      * capabilities.json
+      * pbiviz.json
+      * package.json
+      * pakke-lock.json
+      * tsconfig.json
+   * Må ikke indeholde node_modules mappe (Tilføj node_modules til .gitingore-fil)
+   * **Installér npm** kommandoen skal ikke returnere eventuelle fejl.
+   * **npm audit** kommandoen skal ikke returnere en hvilken som helst advarsler med høj eller moderat niveau.
+   * **pbiviz-pakken** kommandoen skal ikke returnere eventuelle fejl.
+   * Skal indeholde [TSlint fra Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) med ingen tilsidesatte konfiguration, og denne kommando skal ikke returnere en hvilken som helst lint fejl.
+   * Den kompilerede pakke med brugerdefineret Visual skal stemme overens med indsendte pakke (md5-hash for begge filer skal være lig med).
+* Kilde kodekrav:
+   * Det visuelle element skal understøtte [gengivelse af hændelser API](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
+   * Sørg for, at ingen vilkårlige/dynamisk koden køres (forkert: eval(), usikre til brugen af settimeout() requestAnimationFrame() setinterval (en funktion med brugerinput), og kører brugerens input/data).
+   * Sørg for, at der arbejdes med sikkert DOM (forkert: innerHTML, D3.html (< nogle brugerdata/inputtet >), og brug sanitization til brugerens input/data før at føje den til INDLAND
+   * Sørg for, at der er ingen javascript fejl/undtagelser i administratorkonsollen til en hvilken som helst inputdata browser. Brugere kan bruge det visuelle element med en anden række uventede data, så det visuelle element ikke skal mislykkes. Du kan bruge [denne eksempelrapport](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) som et datasæt til test.
+
+* Hvis alle egenskaberne i capabilities.json ændres, skal du kontrollere, at de ikke brydes eksisterende bruger rapporter.
+
+* Sørg for, at den visuelle gengivelse er i overensstemmelse med den [retningslinjer for Power BI-visualiseringer](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Der tillades ingen vandmærker**.
 
 * Anvender kun OSS-komponenter, der kan gennemses offentligt (Offentlige JS-biblioteker eller TypeScript. Kildekoden er tilgængelig til gennemsyn og har ikke kendte sikkerhedsrisici). Vi kan ikke bekræfte en brugerdefineret visualisering ved hjælp af en kommerciel komponent.
 

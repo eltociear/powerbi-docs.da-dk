@@ -8,26 +8,23 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/20/2017
+ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 5aac4b32fc90720af4954dff2afa61243b1f1587
-ms.sourcegitcommit: 8207c9269363f0945d8d0332b81f1e78dc2414b0
-ms.translationtype: HT
+ms.openlocfilehash: 449d47606829c8555e0b64e7f07d1b414b99fea7
+ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56249039"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66375220"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Fejlfinding i Cortana til Power BI
-Denne artikel er en del af en serie. Hvis du ikke allerede har gjort det, anbefaler vi, at du læser de følgende tre artikler.
+Denne artikel er en del af en serie. 
 
-**Artikel 1**: [Om hvordan Cortana og Power BI arbejder sammen for at søge efter Power BI-dashboards og -rapporter](service-cortana-intro.md)
+> [!IMPORTANT]
+> Integration af Cortana frarådes i Power BI. Fra og med 11. juni, fungerer Cortana ikke længere for alle dashboards og rapporter.
 
-**Artikel 2**: [Søgning i rapporter: Aktivér Windows-integration mellem Cortana og Power BI](service-cortana-enable.md)
-
-**Artikel 3**: [Søgning i rapporter: Opret særlige *Cortana-svarkort*](service-cortana-answer-cards.md)
-
-Hvis du stadig har problemer med at integrere Cortana i Power BI, er du kommet til det rette sted. Benyt følgende fremgangsmåde til at diagnosticere og løse problemet.
+Hvis du har problemer med at integrere Cortana i Power BI, er du kommet til det rette sted. Benyt følgende fremgangsmåde til at diagnosticere og løse problemet.
 
 ## <a name="why-doesnt-cortana-find-answers-from-my-power-bi-reports-or-dashboards"></a>Hvorfor kan Cortana ikke finde svar fra mine Power BI-rapporter eller -dashboards?
 1. Har du en Power BI-konto?  Hvis ikke, så kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/get-started/).

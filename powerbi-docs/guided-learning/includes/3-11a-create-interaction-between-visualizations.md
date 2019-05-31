@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 29a274bb847c6c0395d3cdba868024ded326290e
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61396405"
+---
 Når du har flere visualiseringer på samme rapportside, påvirker det alle visuelle elementer på denne side, hvis du markerer et bestemt segment ved at klikke på det eller ved at bruge et udsnitsværktøj. I nogle tilfælde har du dog kun brug for at foretage udsnit af bestemte visuelle elementer. Dette er især tilfældet, når du bruger elementer som f.eks punktdiagrammer, hvor det fjerner vigtige elementer, hvis du begrænser dataene til et bestemt segment. Heldigvis kan du med Power BI Desktop styre, hvordan interaktioner overføres mellem visuelle elementer.
 
 Hvis du vil ændre interaktionen mellem dine visualiseringer, skal du markere **Rediger** fra afsnittet Visuelle elementer på båndet **Hjem** for at slå **Redigeringstilstand** til.

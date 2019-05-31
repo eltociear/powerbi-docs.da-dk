@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e3d62b182f9b142f912a608bee693b7356b1a68d
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
+ms.contentlocale: da-DK
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61255571"
+---
 I denne lektion starter vi med at oprette en *gruppe*. En **gruppe** definerer en gruppe brugere, der har adgang til bestemte dashboards, rapporter og data.
 
 Grupper i Power BI er baseret på grupper i Office 365, så hvis du har brugt Office 365-grupper til at administrere din gruppes mail, kalender og dokumenter, vil du opdage, at Power BI har de samme funktioner og mere. Når du opretter en gruppe i Power BI, opretter du rent faktisk en Office 365-gruppe.

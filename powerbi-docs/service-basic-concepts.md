@@ -8,15 +8,15 @@ featuredvideoid: B2vd4MQrz4M
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/07/2019
+ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: d09ff277ed1c47b9ab11d6ffed4e5c8a57059465
-ms.sourcegitcommit: b717118c44499c8fd8f57534a275f2f78aacc0f1
-ms.translationtype: HT
+ms.openlocfilehash: ff962335b573c6dd2a03ae5ab4633c1042a77059
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "55971711"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "64770791"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Grundlæggende begreber for designere i Power BI-tjenesten
 
@@ -44,22 +44,22 @@ Vi vil gå i dybden med disse funktioner senere, men lad os først se på nogle 
 
 
 ## <a name="power-bi-concepts"></a>Power BI-begreber
-De fire overordnede elementer i Power BI er: **_dashboards_**, **_rapporter_**, **_projektmapper_** og **_datasæt_**. Og de er alle organiseret i **_arbejdsområder_**. Det er vigtigt at forstå arbejdsområderne, før vi går videre til de fire overordnede elementer, så lad os starte der.
+De fire overordnede elementer i Power BI er: **_dashboards_** , **_rapporter_** , **_projektmapper_** og **_datasæt_** . Og de er alle organiseret i **_arbejdsområder_** . Det er vigtigt at forstå arbejdsområderne, før vi går videre til de fire overordnede elementer, så lad os starte der.
 
 ## <a name="workspaces"></a>Arbejdsområder
 Arbejdsområder er objektbeholdere til dashboards, rapporter, projektmapper og datasæt i Power BI. Der er to typer arbejdsområder: *Mit arbejdsområde* og *apparbejdsområder*. Hvad er en *app*? En *app* i Power BI er en samling dashboards og rapporter, der er bygget til at levere vigtige metrikker til Power BI-slutbrugerne i organisationen. Apps er interaktive, men slutbrugerne kan ikke redigere dem.
 
 - *Mit arbejdsområde* er et personligt arbejdsområde til Power BI-kunder, hvor de kan arbejde med dit indhold. Kun du har adgang til dit Mit arbejdsområde. Du kan dele dashboards og rapporter fra Mit arbejdsområde. Hvis du vil samarbejde om dashboards og rapporter eller oprette en app, skal du arbejde i et apparbejdsområde.      
--  *Apparbejdsområder* bruges til at samarbejde og dele indhold med kolleger. Det er også de steder, hvor du opretter, publicerer og administrerer apps for din organisation. De er en form for midlertidige områder og beholdere for det indhold, der udgør en Power BI-app. Du kan føje kolleger til dine apparbejdsområder og samarbejde om dashboards, rapporter, projektmapper og datasæt. Alle medlemmer af apparbejdsområdet skal bruge Power BI Pro-licenser, men appforbrugeren (de kolleger, der har adgang til apps) behøver ikke nødvendigvis at have Pro-licenser.  
+-  *Apparbejdsområder* bruges til at samarbejde og dele indhold med kolleger. Det er også de steder, hvor du opretter, publicerer og administrerer apps for din organisation. De er en form for midlertidige områder og beholdere for det indhold, der udgør en Power BI-app. Du kan føje kolleger til dine apparbejdsområder og samarbejde om dashboards, rapporter, projektmapper og datasæt. Alle medlemmer af apparbejdsområdet, skal Power BI Pro-licenser. App-forbrugere, kollegerne, der har adgang til apps, behøver ikke nødvendigvis Pro-licenser. Læs mere om den [nye arbejdsområder](service-create-the-new-workspaces.md).  
 
-Hvis du vil vide mere, kan du starte med [Måder at dele dashboards for dit arbejde på](service-how-to-collaborate-distribute-dashboards-reports.md).
+Hvis du vil vide mere om deling Generelt, kom i gang med [måder at dele dit arbejde for dashboards](service-how-to-collaborate-distribute-dashboards-reports.md).
 
 Lad os gå videre med Power BI-elementerne. Du kan ikke have dashboards og rapporter uden data (det vil sige, du kan have tomme dashboards og tomme rapporter, men de er ikke nyttige, før de indeholder data), så lad os starte med **datasæt**.
 
 ## <a name="datasets"></a>Datasæt
 Et *datasæt* er en samling af data, som du *importerer* eller *opretter forbindelse* til. Med Power BI kan du oprette forbindelse til og importere alle mulige forskellige datasæt og samle dem alle sammen på ét sted.  
 
-Datasæt er knyttet til *arbejdsområder*, og et enkelt datasæt kan være en del af mange arbejdsområder. Når du åbner et arbejdsområde, vises de tilknyttede datasæt under fanen **Datasæt**. Hvert angivet datasæt repræsenterer en enkelt datakilde, f.eks. en Excel-projektmappe på OneDrive, et lokalt SSAS-tabeldatasæt eller et Salesforce-datasæt. Der er mange forskellige understøttede datakilder, og vi tilføjer hele tiden nye. [Se listen over typer af datasæt, der kan bruges med Power BI](service-get-data.md).
+Datasæt er knyttet til *arbejdsområder*, og et enkelt datasæt kan være en del af mange arbejdsområder. Når du åbner et arbejdsområde, vises de tilknyttede datasæt under fanen **Datasæt**. Hvert angivet datasæt repræsenterer en enkelt datakilde, f.eks. en Excel-projektmappe på OneDrive, et lokalt SSAS-tabeldatasæt eller et Salesforce-datasæt. Der er mange forskellige understøttede datakilder, og vi tilføjer hele tiden nye. Se en liste over [datasættyper, som du kan bruge med Power BI](service-get-data.md).
 
 I eksemplet nedenfor har jeg valgt apparbejdsområdet "Salg og marketing" og klikket på fanen for **datasæt**.
 
@@ -75,41 +75,41 @@ I eksemplet nedenfor har jeg valgt apparbejdsområdet "Salg og marketing" og kli
 
 Hvis du vil [oprette forbindelse til eller importere et datasæt](service-get-data.md), skal du vælge **Hent Data** nederst på venstre navigationslinje. Følg vejledningen for at oprette forbindelse til eller importere den specifikke kilde og føje datasættet til det aktive arbejdsområde. Nye datasæt markeres med en gul stjerne. Det arbejde, du udfører i Power BI, ændrer ikke det underliggende datasæt.
 
-Hvis du er [en del af et **_apparbejdsområde_**](service-collaborate-power-bi-workspace.md), er datasæt, der er tilføjet af et medlem af arbejdsområdet, tilgængelige for de andre medlemmer af arbejdsområdet.
+Er tilgængelige for de andre medlemmer af arbejdsområdet med datasæt, der er tilføjet af et arbejdsområdemedlem af en *administrator*, *medlem*, eller *bidragyder* rolle.
 
 Datasæt kan opdateres, omdøbes, udforskes og fjernes. Brug et datasæt til at oprette en rapport fra bunden eller ved at køre [hurtig indsigt](service-insights.md).  Hvis du vil se, hvilke rapporter og dashboards der allerede bruger et datasæt, skal du vælge **Få vist relaterede**. Vælg et datasæt for at udforske det. Det, du rent faktisk gør, er at åbne datasættet i rapporteditoren, hvor du virkelig kan starte med at udforske dataene og oprette visualiseringer. Så lad os gå videre til næste emne: rapporter.
 
 ### <a name="dig-deeper"></a>Grav dybere
-* [Hvad er Power BI Premium?](service-premium.md)
+* [Hvad er Power BI Premium?](service-premium-what-is.md)
 * [Hent data til Power BI](service-get-data.md)
 * [Eksempel på datasæt til Power BI](sample-datasets.md)
 
 ## <a name="reports"></a>Rapporter
-En Power BI-rapport er en eller flere sider med visualiseringer, f.eks. kurvediagrammer, kort og træstrukturdiagrammer. Visualiseringer kaldes også **_visualiseringer_**. Alle visualiseringerne i en rapport stammer fra et enkelt datasæt. Rapporter kan oprettes fra bunden i Power BI, kan importeres med dashboards, som kolleger deler med dig, eller kan oprettes, når du opretter forbindelse til datasæt fra Excel, Power BI Desktop, databaser, SaaS-programmer og [apps](service-get-data.md).  Når du f.eks. opretter forbindelse til en Excel-projektmappe, der indeholder Power View-ark, opretter Power BI en rapport, der er baseret på de ark. Og når du opretter forbindelse til et SaaS-program, importerer Power BI en færdigbygget rapport.
+En Power BI-rapport er en eller flere sider med visualiseringer, f.eks. kurvediagrammer, kort og træstrukturdiagrammer. Visualiseringer kaldes også **_visualiseringer_** . Alle visualiseringerne i en rapport stammer fra et enkelt datasæt. Du kan oprette rapporter ud fra bunden i Power BI, importere dem med dashboards, som kollegaer deler med dig, eller Power BI kan oprette dem, når du opretter forbindelse til datasæt fra Excel, Power BI Desktop, databaser og SaaS-programmer.  Når du f.eks. opretter forbindelse til en Excel-projektmappe, der indeholder Power View-ark, opretter Power BI en rapport, der er baseret på de ark. Og når du opretter forbindelse til et SaaS-program, importerer Power BI en færdigbygget rapport.
 
-Der er to forskellige tilstande, hvor du kan få vist og interagere med rapporter: [læsevisning og redigeringsvisning](service-reading-view-and-editing-view.md).  Det er kun rapportopretteren, medejerne og dem, som har tilladelse, der har adgang til alle udforsknings-, udformnings-, oprettelses- og delingsfunktioner i **_Redigeringsvisning_** for den pågældende rapport. De personer, de deler rapporten med, kan udforske og interagere med rapporten ved hjælp af **_læsevisning_**.   
+Der er to forskellige tilstande, hvor du kan få vist og interagere med rapporter: *Læsevisning* og *redigeringsvisning*. Når du åbner en rapport, åbnes den i læsevisning. Hvis du har redigeringsrettigheder, kan du se **Rediger rapport** i det øverste venstre hjørne, og du kan få vist rapporten i redigeringsvisning.  Hvis en rapport er i et arbejdsområde, alle med en *administrator*, *medlem*, eller *bidragyder* rolle kan redigere den. De har adgang til alle den udforskning, design, udvikling og Delingsfunktionen i redigering se for denne rapport. De personer, de deler rapporten med, kan udforske og interagere med rapporten i læsevisning.   
 
 Når du åbner et arbejdsområde, vises de tilknyttede rapporter under fanen **Rapporter**. Hver rapport på listen repræsenterer én eller flere siders visualiseringer, der er baseret på et af de underliggende datasæt. Du skal markere en rapport for at åbne den.
 
-Når du åbner en app, vises et dashboard.  Du kan få adgang til en underliggende rapport ved at vælge et dashboardfelt (mere om felter senere), der er fastgjort fra en rapport. Vær opmærksom på, at ikke alle felter er fastgjort fra rapporter, så du skal muligvis klikke på nogle felter for at finde en rapport.
+Når du åbner en app, du får vist et dashboard.  Du kan få adgang til en underliggende rapport ved at vælge et dashboardfelt (mere om felter senere), der er fastgjort fra en rapport. Vær opmærksom på, at ikke alle felter er fastgjort fra rapporter, så du skal muligvis klikke på nogle felter for at finde en rapport.
 
 Rapporten åbnes som standard i Læsevisning.  Du skal blot vælge **Rediger rapport** for at åbne den i Redigeringsvisning (hvis du har de nødvendige tilladelser).
 
-I eksemplet nedenfor har jeg valgt apparbejdsområdet "Salg og marketing" og klikket på fanen for **rapporter**.
+I eksemplet nedenfor, jeg har valgt apparbejdsområdet "Salg og marketing" og klikket på fanen for **rapporter**.
 
 ![Valgte rapporter](media/service-basic-concepts/power-bi-reports.png)
 
 **ÉN** rapport...
 
 * er inkluderet i et enkelt arbejdsområde.
-* kan være knyttet til flere dashboards i det pågældende arbejdsområde (felter, der er fastgjort fra den ene rapport, kan blive vist på flere dashboards).
-* kan oprettes ved brug af data fra et datasæt. (en lille undtagelse til dette er, at Power BI Desktop kan kombinere mere end ét datasæt i en enkelt rapport, og at rapporten kan importeres i Power BI).
+* kan være knyttet til flere dashboards i dette arbejdsområde. Felter, der er fastgjort fra, at én rapport kan vises på flere dashboards.
+* kan oprettes ved brug af data fra et datasæt. Power BI Desktop kan kombinere mere end én datakilde i et enkelt datasæt i en rapport, og rapporten kan importeres til Power BI.
 
   ![Diagram over rapporter](media/service-basic-concepts/drawing3new.png)
 
 ### <a name="dig-deeper"></a>Grav dybere
-* [Rapporter i Power BI-tjenesten og Power BI Desktop](service-reports.md)
-* [Rapporter i Power BI-mobilapps](mobile-reports-in-the-mobile-apps.md)
+- [Opret en rapport i Power BI-tjenesten ved at importere et datasæt](service-report-create-new.md)
+- [Optimer rapporter til Power BI-mobilapps](desktop-create-phone-report.md)
 
 ## <a name="dashboards"></a>Dashboards
 Et *dashboard* er noget, du opretter **i Power BI-tjenesten**, eller noget en kollega opretter **i Power BI-tjenesten** og deler med dig. Det er et enkelt lærred, der indeholder ingen eller flere felter og widgets. Hvert felt, der er fastgjort fra en rapport eller fra [Spørgsmål og svar ](power-bi-q-and-a.md), viser en enkelt [visualisering](power-bi-report-visualizations.md), der blev oprettet fra et datasæt og fastgjort til dashboardet. Hele rapportsider kan også fastgøres til et dashboard som et enkelt felt. Der er mange forskellige måder at føje felter til dit dashboard; for mange til at dække i dette oversigtsemne. Du kan få mere at vide i [Dashboard-felter i Power BI](service-dashboard-tiles.md).
@@ -136,7 +136,7 @@ Der er mange forskellige måder, som du eller en kollega kan [dele et dashboard]
   ![Valgt dashboard](media/service-basic-concepts/drawing1.png)
 
 ### <a name="dig-deeper"></a>Grav dybere
-* [Opret et nyt tomt dashboard, og hent derefter nogle data](service-dashboard-create.md)
+* [Opret et tomt dashboard, og Hent derefter nogle data](service-dashboard-create.md) .
 * [Dupliker et dashboard](service-dashboard-copy.md)
 * [Opret en telefonvisning af et dashboard](service-create-dashboard-mobile-phone-view.md)
 
@@ -200,7 +200,7 @@ Ikonerne øverst til højre er dine ressourcer til indstillinger, beskeder, down
 
 ![ikonknapper](media/service-basic-concepts/power-bi-icons.png)
 
-### <a name="5-dashboard-title-navigation-path-aka-breadcrumbs"></a>5. **Dashboardtitel** (navigationssti, dvs. brødkrummer)
+### <a name="5-dashboard-title-navigation-path-or-breadcrumbs"></a>5. **Dashboardets titel** (navigationssti eller brødkrummer)
 Det er ikke altid nemt at finde ud af, hvilket arbejdsområde og dashboard der er aktivt, og Power BI opretter derfor en navigationssti for dig.  I dette eksempel vises arbejdsområdet (Mit arbejdsområde) og dashboardoverskriften (Eksempel på detailhandelsanalyse).  Hvis vi har åbnet en rapport, føjes navnet på rapporten til slutningen af navigationsstien.  Hver del i stien er et aktivt hyperlink.  
 
 Bemærk ikonet "C" efter dashboardtitlen. Dette dashboard er markeret med [dataklassifikationsmærket](service-data-classification.md) "fortrolig". Mærket angiver dataenes fortroligheds- og sikkerhedsniveau. Hvis din administrator har slået dataklassificering til, har hvert enkelt dashboard et standardtagsæt. Dashboardejere skal ændre mærket, så det stemmer overens med deres dashboards korrekte sikkerhedsniveau.

@@ -1,5 +1,5 @@
 ---
-title: Opret en visning af et Power BI-dashboard til mobiltelefoner
+title: Optimer et dashboard til mobiltelefoner – Power BI
 description: Lær at oprette en tilpasset visning af et dashboard i Power BI-tjenesten, der er specialdesignet til visning på mobiltelefoner.
 author: maggiesMSFT
 manager: kfile
@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/12/2017
+ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: cd7df8383ad22d273ebf396fc1cf8297f110dde5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
-ms.translationtype: HT
+ms.openlocfilehash: f2b8c2c4be343dc135fe1b133bfcb956c1549de4
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54288146"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61158168"
 ---
-# <a name="create-a-view-of-a-power-bi-dashboard-optimized-for-mobile-phones"></a>Opret en visning af et Power BI-dashboard optimeret til mobiltelefoner
-Når du får vist dashboards i Power BI-mobilappen på en telefon, vil du opdage, at dashboardfelterne er placeret et ad gangen efter hinanden, alle med den samme størrelse. Du kan i Power BI-tjenesten oprette en tilpasset visning af et dashboard, som du ejer, specifikt til telefoner.
+# <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Optimer et dashboard til mobiltelefoner – Power BI 
+Når du får vist dashboards i stående visning på en telefon, kan du opdage dashboardfelterne er placeret et ad gangen efter hinanden, alle de samme størrelse. I Power BI-tjenesten, kan du oprette en tilpasset visning af et dashboard, specielt til stående visning på telefoner. Selv hvis du opretter en telefonvisning, når du vender telefonen sidelæns, ser du dashboardet, som det er arrangeret i tjenesten.
 
-Når du vender telefonen om på siden, ser du dashboardet, som det er arrangeret i tjenesten, ikke som du designede det til telefonen.
+Leder du efter oplysninger om at få vist dashboards på en mobilenhed? Prøv denne hurtige Start [Udforsk dashboards og rapporter i Power BI-mobilappsene](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md) i stedet.
 
 > [!NOTE]
 > Når du redigerer telefonvisningen, kan alle, der ser dashboardet på en telefon, i realtid se de ændringer, du foretager. Hvis du eksempelvis frigør alle felter i dashboardets telefonvisning, har dashboardet på telefonen pludseligt ingen felter. 

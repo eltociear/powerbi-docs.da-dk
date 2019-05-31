@@ -11,11 +11,11 @@ ms.date: 02/08/2019
 ms.author: mihart
 LocalizationGroup: Get started
 ms.openlocfilehash: 4b4bc6398466b4c603126efed5b6591c9c3ad6c0
-ms.sourcegitcommit: a054782370dec56d49bb205ee10b7e2018f22693
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56662014"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "61059747"
 ---
 # <a name="your-content-is-up-to-date"></a>Dit indhold er opdateret
 Som *forbruger* interagerer du med indhold, der er oprettet af *designere* og delt med dig. Du undrer dig måske over, om indholdet er opdateret, eller du vil måske blot gerne vide, hvornår indholdet senest blev opdateret. Det giver ro i sindet at vide, at du arbejder med det nyeste indhold.  

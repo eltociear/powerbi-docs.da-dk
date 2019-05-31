@@ -1,20 +1,20 @@
 ---
 title: Hent et adgangstoken til godkendelse
 description: Gennemgang til push af data – hent et adgangstoken til godkendelse
-author: markingmyname
-ms.author: maghan
+author: rkarlin
+ms.author: rkarlin
 manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 0840d01a53a8d1f2c19ef1d5d263bf9a3d2d8f81
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
-ms.translationtype: HT
+ms.openlocfilehash: 4a0b0f5e7d697c137da343576d05fbcc91b4a4f7
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216556"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "65710371"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Trin 2: Hent et adgangstoken til godkendelse
 
@@ -27,13 +27,11 @@ Sådan henter du et adgangstoken til godkendelse.
 ## <a name="get-an-authentication-access-token"></a>Hent et adgangstoken til godkendelse
 
 > **BEMÆRK**! Før du begynder, skal du kontrollere, at du har fulgt de foregående trin i gennemgangen [Send data til et datasæt](walkthrough-push-data.md).
-> 
-> 
 
-1. Opret et projekt med et **konsolprogram** i Visual Studio 2015.
-2. Installér [Azure AD-godkendelsesbiblioteket til .NET NuGet-pakker](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). Du skal bruge denne pakke til at hente et sikkerhedstoken til godkendelse i en .NET-app. Sådan installerer du pakken:
+1. I Visual Studio (2015 eller nyere), opretter en **konsolprogram** projekt.
+2. Installér [Azure AD-godkendelsesbiblioteket til .NET NuGet-pakker](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). Du skal bruge denne pakke til at hente et sikkerhedstoken til godkendelse i en .NET-app. Sådan installerer du pakken:
 
-     a. Vælg **Tools** > **NuGet Package Manager** > **Package Manager Console** i Visual Studio 2015.
+     a. Visual Studio (2015 eller nyere), Vælg **værktøjer** > **NuGet Package Manager** > **Package Manager Console**.
 
      b. I **Package Manager Console** skal du angive Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
 3. Tilføj koden herunder i klassen Program {...}.
@@ -152,7 +150,7 @@ namespace walkthrough_push_data
             string resourceUri = "https://analysis.windows.net/powerbi/api";
 
             //OAuth2 authority Uri
-            string authorityUri = "https://login.microsoftonline.net/common/";
+            string authorityUri = "https://login.microsoftonline.com/common/";
 
             //Get access token:
             // To call a Power BI REST operation, create an instance of AuthenticationContext and call AcquireToken

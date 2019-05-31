@@ -11,10 +11,10 @@ ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: c172ca90a849ca83a1faeed5dbab3bda96698c1a
-ms.sourcegitcommit: b11e908650379913d00673215e3eaf25d712b122
-ms.translationtype: HT
+ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 05/29/2019
 ms.locfileid: "65239813"
 ---
 # <a name="add-a-column-from-an-example-in-power-bi-desktop"></a>Tilføj en kolonne ud fra et eksempel i Power BI Desktop
@@ -61,7 +61,7 @@ Denne rude hedder **Add Columns From Examples** (Tilføj kolonner fra eksempler)
 
 Mens du skriver dit eksempel i den nye kolonne, får du i Power BI vist et eksempel på, hvordan den kolonne, som er ved at blive oprettet, vil se ud baseret på de transformationer, der registreres. Hvis du for eksempel skriver *Alabama* i den første række, svarer det til værdien *Alabama* i den første kolonne i tabellen. Så snart du trykker på *Enter*, udfylder Power BI kolonnen med udgangspunkt i denne værdi.
 
-Men prøv så at gå til den række, der indeholder *Massachusetts [A]*, og slette den sidste del *[E]* (fordi du ikke har brug for den længere). Power BI registrerer ændringen og bruger eksemplet til at oprette en transformation. Læg mærke til forklaringen til transformationen i ruden foroven i midten.
+Men prøv så at gå til den række, der indeholder *Massachusetts [A]* , og slette den sidste del *[E]* (fordi du ikke har brug for den længere). Power BI registrerer ændringen og bruger eksemplet til at oprette en transformation. Læg mærke til forklaringen til transformationen i ruden foroven i midten.
 
 ![](media/desktop-add-column-from-example/add-column-from-example_06.png)
 
