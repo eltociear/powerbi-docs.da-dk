@@ -11,12 +11,12 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: ddd476e47f90be50ed8b4564a70d312e98bef90e
-ms.sourcegitcommit: 2df541facab8a1621953e91dbbee18c7d4e9a3c3
-ms.translationtype: HT
+ms.openlocfilehash: 5d9e468ecf3bf1fdc2e138ac06202820bbd96bcf
+ms.sourcegitcommit: 57a12aa42c8549debc60ff1c8e78533dc42e1b86
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64770036"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66469774"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Administrer en Power BI-gateway i det lokale miljø
 
@@ -52,8 +52,6 @@ Power BI understøtter mange datakilder i det lokale miljø, og de har hver isæ
     ![Indstillinger for datakilde](media/service-gateway-manage/data-source-settings.png)
 
 1. For SQL Server kan du vælge **godkendelsesmetoden** **Windows** eller **Basic** (SQL-godkendelse).  Hvis du vælger **Basic**, skal du angive legitimationsoplysningerne for datakilden.
-
-1. Hvis denne datakilde i øjeblikket ikke er tilgængelig eller langsom, skal du vælge **Spring test af forbindelse over**. I modsat fald kan oprettelsen af datakilden mislykkes.
 
 1. Under **Avancerede indstillinger** kan du eventuelt konfigurere [niveauet for beskyttelse af personlige oplysninger](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for din datakilde (gælder ikke for [DirectQuery](desktop-directquery-about.md)).
 
