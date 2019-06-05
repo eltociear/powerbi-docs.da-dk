@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 462f0fb30fd1f77167253fd404e91c2d80d6ac35
-ms.sourcegitcommit: 317980e9f40fb3ed6eeb91b92056f242bd814a2c
-ms.translationtype: HT
+ms.openlocfilehash: fbae2a8b577c52ae597d44bd6ea9913510c4c65c
+ms.sourcegitcommit: dc73e932c9982a4aa0b0ec5297fb9f94c6156bc5
+ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65565208"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66518577"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Udrulning og administration af Premium-kapaciteter i Power BI
 
@@ -437,168 +437,7 @@ I Power BI-tjenesten er et arbejdsområde, der er tildelt til en Premium-kapacit
 
 ### <a name="monitoring-capacities"></a>Overvågning af kapaciteter
 
-Overvågning af Premium-kapaciteter giver administratorer en forståelse af, hvordan kapaciteterne kører. Kapaciteter kan overvåges ved hjælp af **portalen** **Power BI Administration** eller appen **Power BI Premium Capacity Metrics** (Power BI).
-
-#### <a name="power-bi-admin-portal"></a>Power BI-administrationsportal
-
-I **portalen** **Power BI Administration** er det muligt at overvåge fire oversigtsfelter, som rapporterer om kapacitetsressourcernes belastninger. De fire oversigtsfelter er:
-
-- **CPU** : Det antal gange, CPU-forbruget har overskredet 80 %.
-- **Hukommelsesudskiftning**: Det antal gange hukommelsesforbruget har overskredet 80 % i backend-v-kernerne. Det er især en måling af, hvor mange gange et datasæt blev fjernet fra hukommelsen på grund af hukommelsesforbrug og en måling af behovet for flere aktive datasæt.
-- **Hukommelsesforbrug**: Gennemsnitligt hukommelsesforbrug (i GB).
-- **DirectQuery** : Det antal gange DQ- og LC-forespørgsler – målt pr. sekund – overskred 80 % af grænsen.
-
-![Fire oversigtsfelter, der bruges til at overvåge kapacitetsressourcer](media/whitepaper-premium-deployment/resource-summary-tiles.png)
-
-Feltværdierne beregnes over et en times tidsrum til at angive, hvor mange timer i de seneste syv dage, der svarede til den metriske grænse. Det er vigtigt at forstå, at overstigelser af en grænse ikke nødvendigvis er en alvorlig situation, men muligvis en indikation af en forringelse af ydeevnen.
-
-Hvis du klikker på en feltoversigt, er det muligt at klikke sig videre til en rapport for at få vist metrikværdien som et kurvediagram over de seneste syv dage. Dataene i diagrammet er en oversigt over resultaterne på timebasis, der kan hjælpe dig med at give en generel forståelse af, hvad der fandt sted på et bestemt tidspunkt.
-
-Overvågningsfunktionaliteten i portalen **Power BI Administration**er grundlæggende og er designet til at give en hurtig forståelse af systemets vigtige målepunkter. Hvis du vil have mere detaljeret overvågning, anbefales det, at du bruger appen **Power BI Premium Capacity Metrics**.
-
-#### <a name="power-bi-premium-capacity-metrics-app"></a>Appen Power BI Premium Capacity Metrics
-
-Appen **Power BI Premium Capacity Metrics** er en Power BI-app, der er tilgængelig for kapacitetsadministratorer og installeres på samme måde som en hvilken som helst anden Power BI-app \[[15](#endnote-15)\]. Den indeholder et dashboard og en rapport.
-
-![Appen Power BI Premium Capacity Metrics](media/whitepaper-premium-deployment/capacity-metrics-app.png)
-
-Når appen åbnes, indlæses dashboardet og viser de mange felter, der udtrykker en samlet visning over alle de kapaciteter, som brugeren er kapacitetsadministrator for. Dashboardlayoutet indeholder følgende primære afsnit:
-
-- **Oversigt**: Appversion samt antallet af kapaciteter og arbejdsområder
-- **Systemoversigt**: Hukommelses- og CPU-målepunkter
-- **Oversigt over datasæt**: Antallet af datasæt, DQ/LC samt målepunkter for opdateringer og forespørgsler
-- **Oversigt over dataflows**: Antallet af dataflows og metrikværdier for datasæt
-- **Oversigt over sideinddelte rapporter**: Målepunkter for opdateringer og visningsmålinger
-- **AI-oversigt**: Antallet af handlinger og målepunkter for datasæt
-
-Du kan få adgang til den underliggende rapport (som felterne i dashboardet er fastgjort fra) ved at klikke på et vilkårligt felt på dashboardet. Den giver et mere detaljeret overblik over hvert af dashboardafsnittene og understøtter interaktiv filtrering. Du kan filtrere ved at angive udsnit efter datointerval, kapacitet, arbejdsområde og arbejdsbelastning (rapport, datasæt, dataflow) og ved at vælge elementer i rapportvisualiseringer for at filtrere på tværs af rapportsiden. Tværgående filtrering er en effektiv teknik til at indsnævre til bestemte tidsperioder, kapaciteter, arbejdsområder, datasæt, osv., og det kan være meget nyttigt, når du diagnosticerer den underliggende årsag.
-
-Rapporten består af følgende sider:
-
-- **Datasæt**: Viser detaljerede målinger af datasættets tilstand. Klik på en knap for at få vist tilstanden fra forskellige perspektiver: Oversigt, opdateringer, varighed af forespørgsler, ventetid for forespørgsler og datasæt.
-- **Sideinddelte rapporter**: Viser detaljerede målinger af tilstanden for sideinddelte rapporter.
-- **Dataflows**: Viser detaljerede målinger af datasættets tilstand.
-- **AI**: Viser detaljerede målinger af AI-arbejdsbelastningens tilstand.
-- **System**: Viser overordnede kapacitetsmålepunkter, herunder hukommelses- og CPU-forbrug.
-- **Vis navne og id'er**: Viser navne, id'er og ejere for kapaciteter, arbejdsområder og arbejdsbelastninger.
-
-Rapportsiderne omfatter forskellige perspektiver, der er tilgængelige ved at klikke på knapperne. Rapportvisualiseringer giver mulighed for overvågning af målepunkter over tid for at sammenligne dem i forhold til systemressourceforbruget.
-
-Hver side og hvert perspektiv beskrives ikke i dette whitepaper. I stedet vises en liste over de målepunkter, der er tilgængelige i rapporten sammen med målepunkternes formål. Rapporten præsenterer mange sider og visualiseringer, der er baseret på følgende målepunkter, først efter ressource, som vist i følgende tabeller.
-
-##### <a name="entities-of-which-the-user-is-a-capacity-admin"></a>Enheder (som brugeren er kapacitetsadministrator for)
-
-| Data | Beskrivelse |
-| --- | --- |
-| Kapaciteter | Antal kapaciteter |
-| Arbejdsområder | Det antal arbejdsområder i dine kapaciteter, som er rapporteringsmålepunkter fra de seneste syv dage. |
-| Datasæt | Antallet af datasæt i alle arbejdsområder i dine kapaciteter. |
-| Dataflow | Antallet af dataflows i alle arbejdsområder i dine kapaciteter. |
-| Sideinddelte rapporter | Antallet af sideinddelte rapporter i alle arbejdsområder i dine kapaciteter. |
-| |
-
-##### <a name="memory"></a>Hukommelse
-
-| Data | Beskrivelse |
-| --- | --- |
-| Gennemsnitlig hukommelse | Det gennemsnitlige hukommelsesforbrug i GB over de seneste syv dage. |
-| Gennemsnitlig hukommelse efter arbejdsbelastninger: datasæt, dataflows og sideinddelte rapporter | Det gennemsnitlige hukommelsesforbrug i løbet af de seneste syv dage (i GB) efter arbejdsbelastninger: datasæt, dataflow og sideinddelte rapporter. |
-| Højeste udnyttelse | Det maksimale hukommelsesforbrug (i GB) i de seneste syv dage opdelt i 3-minutters intervaller i 1-times buckets. |
-| |
-
-##### <a name="cpu"></a>CPU
-
-| Data | Beskrivelse |
-| --- | --- |
-| Antal gange med høj udnyttelse | Det antal gange, hvor CPU'en overskred 80 % af grænseværdierne i løbet af de seneste syv dage opdelt i 3-minutters intervaller i 1-times buckets. |
-| |
-
-##### <a name="dqlc-connections"></a>DQ-/liveforbindelser
-
-| Data | Beskrivelse |
-| --- | --- |
-| Antal gange med høj udnyttelse | Det antal gange, hvor DQ-/liveforbindelserne overskred 80 % af grænseværdierne i løbet af de seneste syv dage opdelt i 3-minutters intervaller i 1-times buckets. |
-| |
-
-I følgende tabeller vises arbejdsbelastningsrelaterede målepunkter.
-
-##### <a name="dataset-refresh"></a>Opdatering af datasæt
-
-| Data | Beskrivelse |
-| --- | --- |
-| Opdateringer | Antallet af opdateringer i løbet af de seneste syv dage |
-| Vellykkede opdateringer | Antallet af vellykkede opdateringer i løbet af de seneste syv dage |
-| Mislykkede opdateringer | Antallet af mislykkede opdateringer i løbet af de seneste syv dage |
-| Gennemsnitlig opdateringsvarighed | Den gennemsnitlige varighed for opdateringer i løbet af de seneste syv dage |
-| Maksimal opdateringsvarighed | Varigheden af den længstvarende opdatering i minutter |
-| Gennemsnitlig ventetid | Den gennemsnitlige ventetid for opdateringer (den mellemliggende tid mellem det planlagte tidspunkt og starttidspunktet) i minutter \[[16](#endnote-16)\] |
-| Maksimal ventetid | Den maksimale ventetid for opdateringer (den mellemliggende tid mellem det planlagte tidspunkt og starttidspunktet) i minutter |
-| Opdateringspålidelighed | Procentdel af opdateringer, som er fuldført i løbet af de seneste syv dage |
-| |
-
-##### <a name="dataset-queries"></a>Datasætforespørgsler
-
-| Data | Beskrivelse |
-| --- | --- |
-| Forespørgsler | Antallet af forespørgsler, der er kørt i løbet af de seneste syv dage. |
-| Vellykkede forespørgsler | Antallet af vellykkede forespørgsler i løbet af de seneste syv dage. |
-| Mislykkede forespørgsler | Antallet af mislykkede forespørgsler i løbet af de seneste syv dage. |
-| Gennemsnitlig varighed af forespørgsler | Den gennemsnitlige varighed (i millisekunder) i løbet af de sidste syv dage. Kan bruges til at fastsætte distributionen af forespørgsler på timebasis sammen med hukommelsesforbrug, opdelt i 1-times buckets. |
-| Maksimal varighed af forespørgsler | Den maksimale varighed af forespørgsler (i millisekunder) i løbet af de seneste syv dage. |
-| Antal ventetider for forespørgsler | Antallet af forespørgsler, der er oplevede ventetid i løbet af de seneste 7 dage. |
-| Gennemsnitlig ventetid for forespørgsler | Den gennemsnitlige ventetid (i millisekunder) i løbet af de seneste syv dage. Kan bruges til at fastsætte distributionen af ventetiden for forespørgsler på timebasis sammen med hukommelsesforbrug, opdelt i 1-times buckets. |
-| Maksimal ventetid for forespørgsler | Den maksimale ventetid for forespørgsler (i millisekunder) i løbet af de seneste syv dage. |
-| |
-
-##### <a name="dataset-loads"></a>Datasætindlæsninger
-
-| Data | Beskrivelse |
-| --- | --- |
-| Gennemsnitlig datasætstørrelse | Gennemsnitlig størrelse (i MB) af datasæt i hukommelsen \[[17](#endnote-17)\]. |
-| Aktive datasæt, der er indlæst i hukommelsen | Antallet af datasæt, der indlæses i hukommelsen pr. time. |
-| Fjernelse af datasæt | Det antal datasæt, der er blevet udsat pga. stort hukommelsesforbrug. |
-| Fjernelse af datasæt og hukommelsesforbrug | Det antal datasæt, der er blevet fjernet fra hukommelsen pr. time. |
-| Aktiv hukommelse | Den aktive hukommelse viser den samlede mængde hukommelse, der ikke kan fjernes, da den er i brug. Forskellen mellem den aktive hukommelse og den samlede hukommelse er summen af den hukommelse, der forbruges af datasæt, der i hukommelsen, men som ikke er blevet brugt i de sidste 3 minutter. |
-| |
-
-##### <a name="dataflows"></a>Dataflow
-
-| Data | Beskrivelse |
-| --- | --- |
-| Opdateringer | Antallet af opdateringer af dataflows i løbet af de seneste syv dage. |
-| Gennemsnitlig opdateringsvarighed | Den gennemsnitlige varighed for opdateringer af dataflows (i minutter) i løbet af de seneste syv dage. |
-| Maksimal opdateringsvarighed | Den maksimale varighed for opdateringer af dataflows (i minutter) i løbet af de seneste syv dage. |
-| Gennemsnitlige opdateringsventetid | Den gennemsnitlige ventetid for opdateringer af dataflows (den mellemliggende tid mellem det planlagte tidspunkt og starttidspunktet i minutter). |
-| Maksimal opdateringsventetid | Den maksimale ventetid for opdateringer af dataflows (den mellemliggende tid mellem det planlagte tidspunkt og starttidspunktet i minutter). |
-| Opdateringspålidelighed | Procentdel af opdateringer af dataflows, som er fuldført i løbet af de seneste syv dage. |
-| |
-
-##### <a name="paginated-reports"></a>Sideinddelte rapporter
-
-| Data | Beskrivelse |
-| --- | --- |
-| Visninger | Antallet af rapportvisninger |
-| Rækkeantal | Antallet af rækker med data i rapporten. |
-| Gennemsnitlig hentning | Den gennemsnitlige varighed for datahentning (i millisekunder) i løbet af de seneste syv dage. |
-| Gennemsnitlig behandling | Den gennemsnitlige behandling (i millisekunder) i løbet af de seneste syv dage. |
-| Gennemsnitlig gengivelse | Den gennemsnitlige gengivelse (i millisekunder) i løbet af de seneste syv dage. |
-| Gennemsnitlig varighed | Den gennemsnitlige samlede tid til at behandle alle faser af en rapportvisning (i millisekunder) i løbet af de seneste syv dage. |
-| |
-
-##### <a name="ai"></a>AI
-
-| Data | Beskrivelse |
-| --- | --- |
-|    Kald    |    Antallet af kald til AI-funktioner efter funktionstype i løbet af de seneste syv dage.    |
-|    Gennemsnitligt rækkeantal    |    Det gennemsnitlige antal rækker for hvert kald i løbet af de seneste syv dage.    |
-|    Gennemsnitlig inputstørrelse    |    Den gennemsnitlige størrelse af inputdataene i byte i løbet af de seneste syv dage.    |
-|    Gennemsnitlig outputstørrelse    |    Den gennemsnitlige størrelse af outputdataene i byte i løbet af de seneste syv dage.    |
-|    Gennemsnitlig varighed    |    Den gennemsnitlige varighed for API-kald (i millisekunder) i løbet af de seneste syv dage.    |
-|    Gennemsnitlig ventetid    |    Gennemsnitlig ventetid (i millisekunder) for et AI-kald i løbet af de seneste syv dage.    |
-|    Fuldført/mislykket    |    Antallet af vellykkede og mislykkede opdateringer i løbet af de seneste syv dage.    |
-|         |         |
-
-Appen opdateres med stor sandsynlighed hyppigt. Du kan få opdaterede oplysninger i dokumentet [Overvåg Power BI Premium- og Power BI Embedded-kapaciteter](service-admin-premium-monitor-capacity.md).
+Overvågning af Premium-kapaciteter giver administratorer en forståelse af, hvordan kapaciteterne kører. Kapaciteter kan overvåges ved hjælp af den [Power BI Premium-kapacitet målepunkter app](service-admin-premium-monitor-capacity.md) eller [Power BI-administrationsportalen](service-admin-premium-monitor-portal.md).
 
 #### <a name="interpreting-metrics"></a>Fortolkning af målepunkter
 
