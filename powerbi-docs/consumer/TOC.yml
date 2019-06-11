@@ -176,12 +176,20 @@
           items:
             - name: Kom i gang med iOS-appen
               href: mobile/mobile-iphone-app-get-started.md
+            - name: 'Beskyt med Face ID, Touch ID eller adgangskode'
+              href: mobile/mobile-ios-native-secure-access.md
             - name: Virtuel Spørgsmål og svar-analytiker i iOS-mobilapps
               href: mobile/mobile-apps-ios-qna.md
+            - name: Integration af Power BI-mobilapp med Siri-genveje
+              href: mobile/mobile-apps-iOS-siri-Shortcuts.md
+            - name: Integration af iOS-enhedssøgning
+              href: mobile/mobile-apps-iOS-search-integration.md
             - name: Power BI-app til Apple Watch
               href: mobile/mobile-apple-watch.md
             - name: Scan en stregkode med appen på din iPhone
               href: mobile/mobile-apps-scan-barcode-iphone.md
+            - name: Konfigurer ved hjælp af administration af mobilenheder
+              href: mobile/mobile-app-configuration.md
         - name: Android-enheder
           items:
             - name: Kom i gang med Android-appen
