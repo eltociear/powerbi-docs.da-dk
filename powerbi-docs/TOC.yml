@@ -681,9 +681,9 @@
               href: service-dataflows-configure-workspace-storage-settings.md
             - name: Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)
               href: service-dataflows-add-cdm-folder.md
-            - name: Integrer Machine Learning i Power BI (prøveversion)
+            - name: Integrer Machine Learning i Power BI
               href: service-machine-learning-integration.md
-            - name: Brug Cognitive Services i Power BI (prøveversion)
+            - name: Brug Cognitive Services i Power BI
               href: service-cognitive-services.md
             - name: Automatiseret maskinel indlæring i Power BI (prøveversion)
               href: service-machine-learning-automated.md
@@ -745,8 +745,6 @@
               href: service-admin-troubleshooting-power-bi-personal-gateway.md
             - name: Fejlfinding af ikke-understøttet datakilde til opdatering
               href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
-            - name: Fejlfinding i forbindelse med indlejrede værdier returneres som tekst
-              href: service-troubleshooting-nested-values.md
             - name: Fejlfinding af planlagt opdatering af Azure SQL Databases
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
             - name: 'Fejl: Der blev ikke fundet nogen data i din Excel-projektmappe'
@@ -927,6 +925,8 @@
           href: service-premium-incremental-refresh.md
         - name: Konfigurer multigeografisk område
           href: service-admin-premium-multi-geo.md
+        - name: Medbring dine egne krypteringsnøgler
+          href: service-encryption-byok.md
         - name: Genstart en Premium-kapacitet
           href: service-admin-premium-restart.md
         - name: Opret forbindelse til datasæt med klientprogrammer og -værktøjer
