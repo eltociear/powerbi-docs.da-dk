@@ -1,5 +1,5 @@
 ---
-title: Få vist en sideinddelt rapport i Power BI-tjenesten (eksempelvisning)
+title: Få vist en sideinddelt rapport i Power BI-tjenesten
 description: I dette selvstudium kan du få mere at vide om visning af sideinddelte rapporter i Power BI-tjenesten.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 8a87cb292da1a1fb3f4fc3e14d569ad8c97c60b6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f80b13ccd1393e98199acbcaabfbf80ad63707c8
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769686"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839579"
 ---
-# <a name="view-a-paginated-report-in-the-power-bi-service-preview"></a>Få vist en sideinddelt rapport i Power BI-tjenesten (eksempelvisning)
+# <a name="view-a-paginated-report-in-the-power-bi-service"></a>Få vist en sideinddelt rapport i Power BI-tjenesten
 
 I denne artikel kan du få mere at vide om visning af en sideinddelt rapport i Power BI-tjenesten. Sideinddelte rapporter er rapporter, der oprettes i Report Builder og overføres til et hvilket som helst arbejdsområde i en Premium-kapacitet. Se efter rombeikonet ![Rombeikon for Power BI Premium-kapacitet](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) ud for navnet på arbejdsområdet. 
 
@@ -55,4 +55,4 @@ Du kan også eksportere sideinddelte rapporter til en række formater:
 
 ## <a name="next-steps"></a>Næste trin
 
-[Hvad er sideinddelte rapporter i Power BI Premium? (prøveversion)](paginated-reports-report-builder-power-bi.md)
+[Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)

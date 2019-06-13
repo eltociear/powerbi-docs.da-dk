@@ -1,5 +1,5 @@
 ---
-title: Publicer en sideinddelt rapport i Power BI-tjenesten (eksempelvisning)
+title: Publicer en sideinddelt rapport i Power BI-tjenesten
 description: I dette selvstudium lærer du at publicere en sideinddelt rapport i Power BI-tjenesten ved at uploade den fra din lokale computer.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 11/05/2018
-ms.openlocfilehash: 93b712d385b78ea806e57769da72bdf41fbaefc3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1e5f4a4fda8c6d11ead487ce2891e5c085463b75
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61423926"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839599"
 ---
-# <a name="publish-a-paginated-report-to-the-power-bi-service-preview"></a>Publicer en sideinddelt rapport i Power BI-tjenesten (eksempelvisning)
+# <a name="publish-a-paginated-report-to-the-power-bi-service"></a>Publicer en sideinddelt rapport i Power BI-tjenesten
 
 I denne artikel lærer du om publicering af en sideinddelt rapport i Power BI-tjenesten ved at uploade den fra din lokale computer. Du kan uploade sideinddelte rapporter til Mit arbejdsområde eller andre arbejdsområder, så længe arbejdsområdet er i en Premium-kapacitet. Se efter rombeikonet ![Rombeikon for Power BI Premium-kapacitet](media/paginated-reports-save-to-power-bi-service/premium-diamond.png) ud for navnet på arbejdsområdet. 
 
@@ -89,5 +89,5 @@ I øjeblikket understøtter gateways ikke parametre med flere værdier.
 ## <a name="next-steps"></a>Næste trin
 
 - [Publicer en sideinddelt rapport i Power BI-tjenesten](paginated-reports-view-power-bi-service.md)
-- [Hvad er sideinddelte rapporter i Power BI Premium? (prøveversion)](paginated-reports-report-builder-power-bi.md)
+- [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 
