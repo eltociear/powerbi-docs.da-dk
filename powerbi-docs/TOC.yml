@@ -257,8 +257,6 @@
               href: desktop-add-column-from-example.md
             - name: Tilføj en brugerdefineret kolonne
               href: desktop-add-custom-column.md
-            - name: Opret responsive visualiseringer i Power BI
-              href: visuals/desktop-create-responsive-visuals.md
             - name: Brug indbyggede hierarkietiketter i Power BI Desktop
               href: desktop-inline-hierarchy-labels.md
             - name: Brug det numeriske interval-udsnitsværktøj
@@ -689,24 +687,6 @@
               href: service-machine-learning-automated.md
         - name: Sideinddelte rapporteri på Power BI
           items:
-            - name: Hvad er sideinddelte rapporter? (Eksempelvisning)
-              href: paginated-reports-report-builder-power-bi.md
-            - name: Ofte stillede spørgsmål om sideinddelte rapporter (eksempelvisning)
-              href: paginated-reports-faq.md
-            - name: 'Opret en sideinddelt rapport, og upload den (eksempelvisning)'
-              href: paginated-reports-quickstart-aw.md
-            - name: Rundt om visningen Rapportdesign (eksempelvisning)
-              href: paginated-reports-report-design-view.md
-            - name: Angiv data direkte i en sideinddelt rapport (eksempelvisning)
-              href: paginated-reports-enter-data.md
-            - name: Opret en integreret datakilde (eksempelvisning)
-              href: paginated-reports-embedded-data-source.md
-            - name: Opret et integreret datasæt (eksempelvisning)
-              href: paginated-reports-create-embedded-dataset.md
-            - name: Opret parametre (eksempelvisning)
-              href: paginated-reports-parameters.md
-            - name: Udgiv en sideinddelt rapport (eksempelvisning)
-              href: paginated-reports-save-to-power-bi-service.md
             - name: Få vist en sideinddelt rapport (eksempelvisning)
               href: paginated-reports-view-power-bi-service.md
             - name: Interager med parametre (eksempelvisning)
@@ -931,6 +911,52 @@
           href: service-admin-premium-restart.md
         - name: Opret forbindelse til datasæt med klientprogrammer og -værktøjer
           href: service-premium-connect-tools.md
+- name: Sideinddelt Report Builder i Power BI
+  items:
+    - name: Oversigt
+      items:
+        - name: Hvad er sideinddelte rapporter?
+          href: paginated-reports-report-builder-power-bi.md
+        - name: Report Builder i Power BI
+          href: report-builder-power-bi.md
+    - name: Selvstudier
+      items:
+        - name: 'Opret en sideinddelt rapport, og upload Interact'
+          href: paginated-reports-quickstart-aw.md
+    - name: Begreber
+      items:
+        - name: Rundt om visningen Rapportdesign
+          href: paginated-reports-report-design-view.md
+        - name: Planlægning af en rapport
+          href: report-builder-planning-report.md
+        - name: Report Builder-data
+          href: report-builder-data.md
+        - name: Designtips
+          href: report-builder-design-tips.md
+        - name: 'Tabeller, matrixer, lister'
+          href: report-builder-tables-matrices-lists.md
+        - name: Parametre
+          href: report-builder-parameters.md
+        - name: Udtryk
+          href: report-builder-expressions.md
+        - name: Eksempler på udtryk
+          href: report-builder-expression-examples.md
+        - name: Forhåndsvisning af rapporter
+          href: report-builder-previewing-reports.md
+        - name: Ofte stillede spørgsmål om sideinddelte rapporter
+          href: paginated-reports-faq.md
+    - name: Sådan gør du
+      items:
+        - name: Angiv data direkte i en sideinddelt rapport
+          href: paginated-reports-enter-data.md
+        - name: Opret en integreret datakilde
+          href: paginated-reports-embedded-data-source.md
+        - name: Opret et integreret datasæt
+          href: paginated-reports-create-embedded-dataset.md
+        - name: Opret parametre
+          href: paginated-reports-parameters.md
+        - name: Udgiv en sideinddelt rapport
+          href: paginated-reports-save-to-power-bi-service.md
 - name: Power BI for udviklere
   items:
     - name: Hvad kan udviklere bruge Power BI til?
