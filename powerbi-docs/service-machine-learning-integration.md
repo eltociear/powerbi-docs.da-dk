@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 6c09392566805f2857c50784f16c0e3f9d4b5697
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 86fab3a760eb8bb12ed1955fd5bf357790090e0e
+ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61232395"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448344"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi-preview"></a>Azure Machine Learning-integration i Power BI (prøveversion)
 
@@ -51,7 +51,7 @@ Trinnene i denne artikel beskriver, hvordan du tildeler en Power BI-bruger adgan
 
     ![Vælg dit abonnement](media/service-machine-learning-integration/machine-learning-integration_02.png)
 
-4. Vælg **Adgangskontrol (IAM)** , og vælg derefter knappen **Tilføj**.
+4. Vælg **Adgangskontrol (IAM)**, og vælg derefter knappen **Tilføj**.
 
     ![Adgangskontrol IAM](media/service-machine-learning-integration/machine-learning-integration_03.png)
 
@@ -68,7 +68,14 @@ Trinnene i denne artikel beskriver, hvordan du tildeler en Power BI-bruger adgan
 
 Dataeksperter bruger primært Python til at udvikle og endda installere deres modeller til maskinel indlæring for Machine Learning-tjenesten.  I modsætning til Machine Learning Studio, som hjælper med at automatisere oprettelse af en skemafil for modellen, skal dataspecialisterne eksplicit oprette skemafilen ved hjælp af Python, når det drejer sig om Machine Learning-tjenesten.
 
-Denne skemafil skal medtages i
+Denne skemafil skal inkluderes i den udrullede webtjeneste for modeller i Machine Learning Service. Hvis du vil generere skemaet for webtjenesten automatisk, skal du angive et eksempel på inputtet/outputtet i postscriptet for den udrullede model. Se underafsnittet om (Valgfri) Automatisk generering af Swagger-skema i dokumentationen Udrul modeller med Azure Machine Learning Service. Linket inkluderer eksemplet på postscriptet med sætninger for generering af skemaet. 
+
+Funktionerne *@input_schema* og *@output_schema* i postscriptet refererer specifikt til eksempelformaterne for input og output i variablerne *input_sample* og *output_sample* og bruger disse eksempler til at generere en OpenAPI-specifikation (Swagger) for webtjenesten under udrulningen.
+
+Disse instruktioner til generering af skemaet ved opdatering af postscriptet skal også anvendes for modeller, der er oprettet via automatiserede eksperimenter for maskinel indlæring veds hjælp af SDK'et til Azure Machine Learning.
+
+> [!NOTE]
+> Modeller, der er oprettet ved hjælp af den visuelle brugergrænseflade i Azure Machine Learning Service (prøveversion), understøtter i øjeblikket ikke generering af skemaer, men det vil de i efterfølgende udgaver. 
 
 ## <a name="invoking-the-azure-ml-model-in-power-bi"></a>Aktivering af Azure Machine Learning-modellen i Power BI
 
@@ -106,9 +113,9 @@ Denne artiken omfatter en oversigt over integration af Machine Learning i Power 
 
 Du kan få flere oplysninger om dataflow i disse artikler:
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Ved hjælp af den beregnede enheder på Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Ved hjælp af dataflows med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power BI dataflows](service-dataflows-developer-resources.md)
+* [Brug af beregnede objekter i Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Brug af dataflow med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI-dataflow](service-dataflows-developer-resources.md)
 * [Integration af dataflow og Azure Data Lake (prøveversion)](service-dataflows-azure-data-lake-integration.md)
 
 

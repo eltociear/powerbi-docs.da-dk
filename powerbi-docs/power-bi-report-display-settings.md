@@ -11,59 +11,59 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 8a96371d6cb54d47d412165ef179df78a34b8e19
-ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
-ms.translationtype: MT
+ms.openlocfilehash: 97df2d6910f0215bd01875c88ea5d81d5dcc2c7c
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412957"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720843"
 ---
 # <a name="page-display-settings-in-a-power-bi-report"></a>Indstillinger for sidevisning i en Power BI-rapport
-Vi ved, at det er vigtigt at holde dit rapportlayout helt perfekt. Nogle gange kan det udfordrende, fordi du og dine kollegaer kan se disse rapporter på skærme med forskellige højde-bredde-forhold og størrelser. 
+Vi forstår, at det er yderst vigtigt, at dit rapportlayout altid er helt perfekt. Det kan nogle gange være udfordrende, fordi du og dine kolleger kan få vist disse rapporter på skærme med forskellige højde-bredde-forhold og størrelser. 
 
-Standardskærmvisningen er **Tilpas til siden**, og standardskærmstørrelsen er **16:9**. Hvis du vil fastlåse i et andet højde-bredde-forhold eller tilpasse rapporten på anden vis, er der to værktøjer til at hjælpe dig: ***Sidelayout*** indstillinger og ***sidestørrelse*** indstillinger.
+Standardskærmvisningen er **Tilpas til siden**, og standardskærmstørrelsen er **16:9**. Hvis du vil fastlåse i et andet højde-bredde-forhold eller tilpasse rapporten på anden vis, er der to værktøjer til at hjælpe dig: Indstillinger for ***sidevisning*** og ***sidestørrelse***.
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5tg-OXzxe2g" frameborder="0" allowfullscreen></iframe>
 
 
-## <a name="where-to-find-page-view-settings-in-the-power-bi-service-and-power-bi-desktop"></a>Hvor du kan finde sidelayout i Power BI-tjenesten og Power BI Desktop
-Sidevisning er tilgængelige i både Power BI-tjenesten og Power BI Desktop, men grænsefladen er lidt anderledes. I følgende afsnit beskrives, hvor du kan finde visningsindstillinger i hvert Power BI-værktøj.
+## <a name="where-to-find-page-view-settings-in-the-power-bi-service-and-power-bi-desktop"></a>Her kan du finde indstillinger for sidevisning i Power BI-tjenesten og Power BI Desktop
+Indstillinger for sidevisning findes både i Power BI-tjenesten og Power BI Desktop, men grænsefladen er lidt forskellig. I følgende afsnit beskrives, hvor du kan finde indstillingerne for visning i hvert Power BI-værktøj.
 
 ### <a name="in-power-bi-desktop"></a>I Power BI Desktop
 Vælg fanen **Vis** i Rapportvisning for at åbne indstillingerne for Sidevisning samt indstillingerne for Telefonlayout.
 
-  ![Stationære sidelayout](media/power-bi-report-display-settings/power-bi-desktop-view-settings.png)
+  ![Indstillinger for sidevisning i Desktop](media/power-bi-report-display-settings/power-bi-desktop-view-settings.png)
 
 ### <a name="in-the-power-bi-service-apppowerbicom"></a>I Power BI-tjenesten (app.powerbi.com)
-I Power BI-tjenesten, skal du åbne en rapport, og vælg **visning** på den øverste menulinje til venstre.
+I Power BI-tjenesten skal du åbne en rapport og vælge **Vis** på den øverste menulinje til venstre.
 
-![Tjenesten sidelayout](media/power-bi-report-display-settings/power-bi-change-page-view.png)
+![indstillinger for sidevisning i tjenesten](media/power-bi-report-display-settings/power-bi-change-page-view.png)
 
-Sidevisning er tilgængelige i både [læsevisning og redigeringsvisning](consumer/end-user-reading-view.md). I redigeringsvisning, kan ejeren af en rapport tildele sidevisning til individuelle rapportsider, og disse indstillinger gemmes sammen med rapporten. Når en kollega åbner den pågældende rapport i Læsevisning, får vedkommende vist rapportsiderne ved hjælp af ejerens indstillinger. I læsevisning, kan kolleger ændre *nogle* af den **sidelayout** indstillinger, men ændringerne gemmes ikke, når rapporten afsluttes.
+Indstillinger for sidevisning er tilgængelige i både [Læsevisning og Redigeringsvisning](consumer/end-user-reading-view.md). I Redigeringsvisning kan ejeren af en rapport tildele indstillinger for sidevisning til individuelle rapportsider, så disse indstillinger gemmes sammen med rapporten. Når en kollega åbner den pågældende rapport i Læsevisning, får vedkommende vist rapportsiderne ved hjælp af ejerens indstillinger. I Læsevisning kan kolleger ændre *nogle* af indstillingerne for **sidevisning**, men ændringerne gemmes ikke, når rapporten lukkes.
 
 ## <a name="page-view-settings"></a>Indstillinger for Sidelayout
-Det første sæt sidelayout styrer visningen af din rapportside i forhold til browservinduet. Vælg mellem:
+Det første sæt indstillinger for sidevisning styrer visningen af din rapportside i forhold til browservinduet. Vælg mellem:
 
-* **Tilpas til siden** (standard): Indholdet skaleres, så det passer bedst til siden
-* **Tilpas til bredde**: Indholdet skaleres, så det passer til siden bredde
+* **Tilpas til siden** (standard): Indholdet skaleres, så det passer bedst muligt til siden
+* **Tilpas til bredden**: Indholdet skaleres, så det passer til sidens bredde
 * **Faktisk størrelse**: Indholdet vises i fuld størrelse
 
-Anden sæt af indstillinger for visning til Sidenavigering placeringen af objekterne på rapportcanvasset. Vælg mellem:
+Det andet sæt indstillinger for sidevisning styrer placeringen af objekterne på rapportlærredet. Vælg mellem:
 
-* **Vis gitterlinjer**: Aktivér gitterlinjer, så du kan placere objekter på rapportcanvasset.
-* **Fastgør til gitter**: Brug med **Vis gitterlinjer** at placere og justere objekter på rapportcanvasset. 
-* **Lås objekter**: Lås alle objekter på canvasset, så de ikke kan flyttes eller tilpasses.
-* **Valgrude**: Den **valg** rude vises alle objekter på lærredet. Du kan beslutte, hvor der skal vises og skjules.
+* **Vis gitterlinjer**: Slå gitterlinjer til, så du får hjælp til at placere objekter på rapportlærredet.
+* **Fastgør til gitter**: Brug indstillingen sammen med **Vis gitterlinjer** for at placere og justere objekter præcist på rapportlærredet. 
+* **Lås objekter**: Lås alle objekter på lærredet, så de ikke kan flyttes eller tilpasses i størrelsen.
+* **Ruden Markering**: I ruden **Markering** vises alle objekter på lærredet. Du kan beslutte, hvad der skal vises, og hvad der skal skjules.
 
     ![valgrude](media/power-bi-report-display-settings/power-bi-selection-pane.png)
 
 
 
-## <a name="page-size-settings"></a>Indstillingerne for sidestørrelse
-![ændre indstillingerne for sidestørrelse](media/power-bi-report-display-settings/power-bi-page-size.png)
+## <a name="page-size-settings"></a>Indstillinger for sidestørrelse
+![skift indstillinger for sidestørrelse](media/power-bi-report-display-settings/power-bi-page-size.png)
 
-**Sidestørrelse** indstillinger er kun tilgængelige for rapportejere. I Power BI-tjenesten (app.powerbi.com), betyder det, at kunne åbne rapporten i [redigeringsvisning](consumer/end-user-reading-view.md). **Sidestørrelse** indstillinger er i den **visualiseringer** ruden og kontrol forholdet vises faktiske størrelse (i pixel) af rapportlærredet:   
+Indstillinger for **sidestørrelse** er kun tilgængelige for rapportejere. I Power BI-tjenesten (app.powerbi.com) betyder det, at rapporten skal åbnes i [Redigeringsvisning](consumer/end-user-reading-view.md). Indstillinger for **sidestørrelse** findes i ruden **Visualiseringer** og styrer højde-bredde-forhold og den faktiske størrelse (i pixel) på rapportlærredet:   
 
 * 4:3-format
 * 16:9-format (standard)
@@ -74,11 +74,11 @@ Anden sæt af indstillinger for visning til Sidenavigering placeringen af objekt
 ## <a name="next-steps"></a>Næste trin
 [Rapportvisning i Power BI Desktop](desktop-report-view.md)
 
-[Skift sidevisning og sidestørrelse i dine egne Power BI-rapporter](consumer/end-user-report-view.md)
+[Skift indstillinger for sidevisning og sidestørrelse i dine egne Power BI-rapporter](consumer/end-user-report-view.md)
 
 Få mere at vide om [rapporter i Power BI](consumer/end-user-reports.md)
 
-[Grundlæggende begreber for Power BI-tjenesten forbrugere](consumer/end-user-basic-concepts.md)
+[Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

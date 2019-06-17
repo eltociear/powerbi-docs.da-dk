@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/10/2019
+ms.date: 05/31/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 3bb7de9685a1e0fc9fa423328ad9e1e5faa53603
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: dae93a2555101a42f072158f8536319783b3f973
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61305449"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809120"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Understøttede datakilder i forbindelse med DirectQuery i Power BI
 
@@ -24,10 +24,11 @@ ms.locfileid: "61305449"
 Følgende datakilder understøtter DirectQuery i Power BI:
 
 * Amazon Redshift
-* AtScale (Beta)
+* AtScale (beta)
+* Azure Data Explorer
 * Azure HDInsight Spark
-* Azure SQL Database
-* Azure SQL Data Warehouse
+* [Azure SQL Database](service-azure-sql-database-with-direct-connect.md)
+* [Azure SQL Data Warehouse](service-azure-sql-data-warehouse-with-direct-connect.md)
 * Google BigQuery
 * Interaktiv HDInsight-forespørgsel
 * IBM DB2-database
@@ -57,22 +58,39 @@ I følgende tabel kan du se, om der kræves en **datagateway i det lokale miljø
 
 | Kilde | Er en gateway påkrævet? |
 | --- | --- |
-| SQL Server |Ja |
+| Amazon Redshift |Nej |
+| Azure HDInsight Spark (beta) |Nej |
 | Azure SQL Database |Nej |
 | Azure SQL Data Warehouse |Nej |
-| SAP HANA |Ja |
-| Oracle Database |Ja |
-| Teradata Database |Ja |
-| Amazon Redshift |Nej |
-| Impala (version 2.x) |Ja |
-| Snowflake |Ja |
-| Spark (beta), version 0.9 og nyere |Ja |
-| Azure HDInsight Spark (beta) |Nej |
+| Google BigQuery |Nej |
 | IBM Netezza |Ja |
+| Impala (version 2.x) |Ja |
+| Oracle Database |Ja |
 | SAP Business Warehouse-programserver |Ja |
 | SAP Business Warehouse-meddelelsesserver |Understøttes endnu ikke i **Power BI-tjenesten** |
-| Google BigQuery |Nej |
+| SAP HANA |Ja |
+| Snowflake |Ja |
+| Spark (beta), version 0.9 og nyere |Ja |
+| SQL Server |Ja |
+| Teradata Database |Ja |
 
+## <a name="single-sign-on-sso-for-directquery-sources"></a>Enkeltlogon til DirectQuery-kilder
+
+Når indstillingen for enkeltlogon er aktiveret, og dine brugere får adgang til rapporter, som er baseret på datakilden, sender Power BI deres godkendte Azure AD-legitimationsoplysninger i forespørgslerne til den underliggende datakilde. På den måde kan Power BI overholde de sikkerhedsindstillinger, der er konfigureret på datakildeniveauet.
+
+Indstillingen SSO gælder for alle datasæt, der bruger denne datakilde. Den påvirker ikke den godkendelsesmetode, der bruges til import af scenarier. Følgende datakilder understøtter enkeltlogon for forbindelser via DirectQuery:
+
+- Azure SQL Database
+- Azure SQL Data Warehouse
+- Impala
+- SAP HANA
+- SAP BW
+- Spark
+- SQL Server
+- Teradata
+
+> [!Note]
+> Azure MFA (Multi-Factor Authentication) understøttes ikke. Brugere, der gerne vil bruge enkeltlogon med DirectQuery, skal fritages fra multifaktorgodkendelse.
 
 ## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om DirectQuery i følgende ressourcer:

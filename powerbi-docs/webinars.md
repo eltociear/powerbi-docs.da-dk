@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.author: maikelson
-ms.openlocfilehash: b0a6b3027e548becf56cc5f0d7036e35c9316cd4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a2db3f8c88231663ecb115c4609d3af177d96292
+ms.sourcegitcommit: 9da792d470dfe43dc6e15ddef5d471f3f6c50970
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187703"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66453768"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
@@ -72,13 +72,13 @@ Kom i gang med disse populære webinarer, når det passer dig
 
 Se optagne sessioner når som helst
 
-### <a name="getting-started"></a>Introduktion
+### <a name="getting-started"></a>Kom i gang
 
 **Automatiser daglige forretningsprocesser med Power BI, PowerApps og Microsoft Flow**
 <br>ved Wim Coorevits og Enrique Plaza Garcia
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Automate-Day-to-Day-Business-Processes-with-Power-BI-Power-Apps-and-Microsoft-Flow-OnDemandRegistration.html)
 
-**Bedste fremgangsmåder til administration af Power BI Embedded-analyser for implementeringer med flere lejere**
+**Bedste praksis for administration af Power BI Embedded-analyser til udrulninger med flere lejere**
 <br>ved Nimrod Shalit
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-PBI-webinar-Best-Practices-for-Managing-Power-BI-Embedded-video.html?LCID=EN-US)
 
@@ -118,7 +118,8 @@ Se optagne sessioner når som helst
 <br>ved Reid Havens
 <br>[Se nu](https://community.powerbi.com/t5/Webinars-and-Video-Gallery/Power-BI-Transforming-A-Report-From-Good-to-GREAT/m-p/315119?Is=Website)
 
-### <a name="partners"></a>Partnere ###
+### <a name="partner-solutions-series"></a>Serie af partnerløsninger ###
+[Se denne serie](https://info.microsoft.com/ww-landing-PartnerWebinarSeriesPage.html)
 
 **Opnåelse af en win-win-situation for producenter og forhandlere af forbrugsvarer**
 <br>ved Liz McCreesh fra Thorogood

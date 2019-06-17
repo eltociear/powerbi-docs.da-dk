@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: a9d3856f643eed0ccb5383f2dda55ea57a32908a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a8acb5ab382c541b330d3448da8187238c42a3f5
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61136265"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720304"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Fastgør et felt til et Power BI-dashboard fra en rapport
 ## <a name="pinning-tiles-from-a-report"></a>Fastgørelse af felter fra en rapport
@@ -66,7 +66,7 @@ Du kan få mere at vide under [Fastgør en hel rapportside](service-dashboard-pi
 
 [Opdatering af data i Power BI](refresh-data.md)
 
-[Grundlæggende begreber i Power BI](consumer/end-user-basic-concepts.md)
+[Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -11,12 +11,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/20/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: f03f4933566a8c18510ef0ce07b71db61ecfa8fd
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 5365c076b75d0989df8db15c1dc16f4e11bc3f09
+ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770587"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448357"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database med DirectQuery
 
@@ -42,28 +42,15 @@ Disse begrænsninger og noter kan ændres, efterhånden som vi fortsat forbedrer
 
 For at kunne oprette forbindelse til Azure SQL Database med DirectQuery skal du bruge Power BI Desktop. Denne metode sikrer yderligere fleksibilitet og funktioner. De rapporter, der oprettes ved hjælp af Power BI Desktop, kan derefter publiceres til Power BI-tjenesten. Du kan få mere at vide om at oprette forbindelse til [Azure SQL Database med DirectQuery](desktop-use-directquery.md) i Power BI Desktop.
 
-## <a name="single-sign-on"></a>Enkeltlogon
-
-Når du har publiceret et datasæt med Azure SQL DirectQuery til tjenesten, kan du aktivere enkeltlogon (SSO) via Azure Active Directory (Azure AD) OAuth2 for dine slutbrugere.
-
-Du aktiverer SSO ved at gå til indstillinger for datasæt, åbne fanen **Datakilder** og markere feltet SSO.
-
-![Dialogboksen Configure Azure SQL DQ (Konfigurer Azure SQL DQ)](media/service-azure-sql-database-with-direct-connect/sso-dialog.png)
-
-Når indstillingen SSO er aktiveret, og dine brugere får adgang til rapporter, som er bygget på datakilden, sender Power BI deres godkendte Azure AD-legitimationsoplysninger i forespørgslerne til Azure SQL-databasen. På den måde kan Power BI overholde de sikkerhedsindstillinger, der er konfigureret på datakildeniveauet.
-
-Indstillingen SSO gælder for alle datasæt, der bruger denne datakilde. Den påvirker ikke den godkendelsesmetode, der bruges til import af scenarier.
-
-> [!Note]
-> Azure MFA (Multi-Factor Authentication) understøttes ikke. Brugere, der gerne vil bruge SSO med Azure SQL DirectQuery, skal fritages fra MFA.
-
 ## <a name="finding-parameter-values"></a>Find parameterværdier
 
-Dit fulde gyldige servernavn og databasenavn kan findes i Azure Portal.
+Dit fulde gyldige servernavn og databasenavn kan findes på Azure-portalen.
 
-![Nye Azure port opdatering](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
+![Ny opdatering til Azure Portal](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
 
-![Opdatering af Azure-portalen](media/service-azure-sql-database-with-direct-connect/azureportal_update.png)
+![Opdatering til Azure Portal](media/service-azure-sql-database-with-direct-connect/azureportal_update.png)
+
+[!INCLUDE [direct-query-sso](includes/direct-query-sso.md)]
 
 ## <a name="next-steps"></a>Næste trin
 

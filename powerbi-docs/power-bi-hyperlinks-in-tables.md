@@ -1,6 +1,6 @@
 ---
 title: Føj hyperlinks til en tabel
-description: Brug Power BI Desktop til at oprette hyperlinks. Brug derefter enten Power BI Desktop eller Power BI-tjenesten til at tilføje disse links til din rapport tabeller og matrixer.
+description: Brug Power BI Desktop til at oprette hyperlinks. Derefter kan du bruge enten Power BI Desktop eller Power BI-tjenesten til at føje disse links til tabeller og matricer i din rapport.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9611d8cd45eba89854fd6cbb485c52097f77f4c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 386c52908d54833e350a7b1a6d846f78c7b88c6d
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61421497"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721367"
 ---
 # <a name="add-hyperlinks-to-a-table"></a>Føj hyperlinks til en tabel
 I dette emne kan du lære at bruge Power BI Desktop til at oprette links. Derefter kan du bruge enten Power BI Desktop eller Power BI-tjenesten til at tilføje disse links i tabeller og matricer i din rapport. 
@@ -28,7 +28,7 @@ I dette emne kan du lære at bruge Power BI Desktop til at oprette links. Dereft
 > 
 
 ## <a name="to-create-a-hyperlink-in-a-table-or-matrix-using-power-bi-desktop"></a>Sådan opretter du et link i en tabel eller en matrix ved hjælp af Power BI Desktop
-Du kan oprette links i tabeller og matricer i Power BI Desktop, men ikke i Power BI-tjenesten. Du kan også oprette links i Excel Power Pivot, før du importerer projektmappen til Power BI. Begge metoder er beskrevet nedenfor.
+Du kan oprette links i tabeller og matricer i Power BI Desktop, men ikke i Power BI-tjenesten. Du kan også oprette links i Excel Power Pivot, før projektmappen importeres i Power BI. Begge metoder er beskrevet nedenfor.
 
 ## <a name="create-a-table-or-matrix-hyperlink-in-power-bi-desktop"></a>Opret et tabel- eller matrixlink i Power BI Desktop
 Proceduren for at tilføje et link afhænger af, om du har importeret dataene eller har oprettet forbindelse til dem ved hjælp af DirectQuery. Begge scenarier er beskrevet nedenfor.
@@ -55,7 +55,7 @@ Proceduren for at tilføje et link afhænger af, om du har importeret dataene el
 
     Udvid **Værdier**, find **URL-ikonet**, og slå indstillingen **til.**
 
-    ![Slå URL-adresseikon](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
+    ![Ikon for at slå URL-adressen til](media/power-bi-hyperlinks-in-tables/power-bi-url-icon-on.png)
 
 1. (Valgfrit) [Publicer rapporten fra Power BI Desktop til Power BI-tjenesten](guided-learning/publishingandsharing.yml?tutorial-step=2), og åbn rapporten i Power BI-tjenesten. Linkene fungerer også der.
 
@@ -99,7 +99,7 @@ Svar: Nej. Du kan bruge et linkikon. Hvis du har brug for brugerdefineret tekst 
 ## <a name="next-steps"></a>Næste trin
 [Visualiseringer i Power BI-rapporter](visuals/power-bi-report-visualizations.md)
 
-[Power BI – grundlæggende begreber](consumer/end-user-basic-concepts.md)
+[Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

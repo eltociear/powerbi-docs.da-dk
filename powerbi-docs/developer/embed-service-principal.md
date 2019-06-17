@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 8fa11926a66b5e295ee23fa6c5b90bfedb2b9761
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: 1b0386d523e4a89b7687506564f575e31b55f2e7
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375073"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720351"
 ---
 # <a name="service-principal-with-power-bi-preview"></a>Tjenesteprincipal med Power BI (prøveversion)
 
@@ -120,7 +120,7 @@ I modsætning til den traditionelle brug af en masterkonto kræves der nogle få
 
 5. Tilføj tjenesteprincipalen som **administrator** til det nye arbejdsområde, du har oprettet. Du kan administrere denne opgave via [API'erne](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser) eller Power BI-tjenesten.
 
-    ![Tilføj en tjenesteprincipal som en administrator til et arbejdsområde](media/embed-service-principal/add-service-principal-in-the-UI.png)
+    ![Føj en tjenesteprincipal til et arbejdsområde som administrator](media/embed-service-principal/add-service-principal-in-the-UI.png)
 
 6. Du kan nu vælge at integrere indhold i et eksempelprogram eller i dit eget program.
 
@@ -168,17 +168,17 @@ Nedenfor er et eksempel på et script, der kan bruges til at hente objekt-id'et 
 
 * Tjenesteprincipalen fungerer kun med [nye programarbejdsområder](../service-create-the-new-workspaces.md).
 * **Mit arbejdsområde** understøttes ikke til brug sammen med tjenesteprincipalen.
-* Dedikeret Premium-kapacitet er påkrævet for at kunne påbegynde produktion.
+* Der kræves dedikeret kapacitet for at kunne begynde at producere.
 * Du kan ikke logge på Power BI-portalen ved hjælp af en tjenesteprincipal.
 * Der kræves rettigheder som Power BI-administrator for at kunne aktivere tjenesteprincipalen under Indstillinger for udvikler på Power BI-administrationsportalen.
 * Du kan ikke installere eller administrere en datagateway i det lokale miljø ved hjælp af en tjenesteprincipal.
 * Programmer til [integration i din organisation](embed-sample-for-your-organization.md) kan ikke bruge en tjenesteprincipal.
 * Administration af [dataflow](../service-dataflows-overview.md) understøttes ikke.
-* Service principal understøtter i øjeblikket ikke alle API'er-administratorer.
+* Tjenesteprincipaler understøtter i øjeblikket ingen administrator-API'er.
 
 ## <a name="next-steps"></a>Næste trin
 
 * [Registrer et program](register-app.md)
 * [Power BI Embedded til dine kunder](embed-sample-for-customers.md)
 * [Objekter for et program og en tjenesteprincipal i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
-* [Sikkerhed på rækkeniveau ved hjælp af datagatewayen i det lokale miljø med tjenesteprincipal (prøveversion)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)
+* [Sikkerhed på rækkeniveau ved hjælp af datagateway i det lokale miljø med tjenesteprincipal (prøveversion)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)

@@ -10,27 +10,27 @@ ms.topic: conceptual
 ms.date: 05/14/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: b0c939b6b4f3b69a2abcfbbbdc63bd2ccaec44ad
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 138c14e98485777d84130854c7811a33b74dffd3
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65625316"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721129"
 ---
 # <a name="create-featured-questions-for-power-bi-qa"></a>Opret udvalgte spørgsmål til Spørgsmål og svar i Power BI
-Hvis du ejer et datasæt, kan du tilføje dine egne udvalgte spørgsmål i det pågældende datasæt. Power BI Q & A viser disse spørgsmål til kollegaer, der kan forbruger rapporter baseret på dette datasæt.  De udvalgte spørgsmål giver dine kollegaer en ide om, hvilke typer af spørgsmål, de kan stille om datasættet. Det er op til dig, hvilke udvalgte spørgsmål, du tilføjer – tilføj populære spørgsmål, spørgsmål, der viser interessante resultater, eller spørgsmål, der kan være svære at sætte ord på.
+Hvis du ejer et datasæt, kan du tilføje dine egne udvalgte spørgsmål i det pågældende datasæt. Spørgsmål og svar i Power BI viser disse spørgsmål til kolleger, der bruger rapporter baseret på dette datasæt.  De udvalgte spørgsmål giver dine kollegaer en ide om, hvilke typer af spørgsmål, de kan stille om datasættet. Det er op til dig, hvilke udvalgte spørgsmål, du tilføjer – tilføj populære spørgsmål, spørgsmål, der viser interessante resultater, eller spørgsmål, der kan være svære at sætte ord på.
 
 
 > [!NOTE]
-> En udvalgte spørgsmål i spørgsmål og er tilgængelige til brug i det [Microsoft Power BI-appen til iOS på iPads, iPhones og iPod Touch-enheder](consumer/mobile/mobile-apps-ios-qna.md) og Power BI Desktop spørgsmål og svar. Oprettelse af spørgsmålene er kun tilgængelig i Power BI-tjenesten (app.powerbi.com).
+> Udvalgte spørgsmål i Spørgsmål og svar er tilgængelige til brug i [Microsoft Power BI-appen til iOS på iPads, iPhones og iPod Touch-enheder](consumer/mobile/mobile-apps-ios-qna.md) samt Spørgsmål og svar til Power BI Desktop. Oprettelse af spørgsmålene er kun tilgængelig i Power BI-tjenesten (app.powerbi.com).
 > 
 
 ## <a name="create-a-featured-question"></a>Opret et udvalgt spørgsmål
 
-I denne artikel anvendes [Retail Analysis Sales-eksemplet](sample-datasets.md). Følg disse trinvise instruktioner til at prøve selv at udforske et datasæt.
+I denne artikel anvendes [Retail Analysis Sales-eksemplet](sample-datasets.md). Følg disse trinvise instruktioner for selv at prøve at udforske et datasæt.
 
 1. Markér feltet Spørgsmål og svar øverst i dashboardet.   Bemærk, at Spørgsmål og svar allerede hjælper ved at vise en liste over udtryk, der findes i datasættet.
-2. Hvis du vil føje til denne liste, skal du vælge tandhjulsikonet i øverste højre hjørne af Power BI.  
+2. Hvis du vil føje noget til listen, skal du vælge tandhjulsikonet i øverste højre hjørne af Power BI.  
    ![tandhjulsikon](media/service-q-and-a-create-featured-questions/pbi_gearicon2.jpg)
 3. Vælg **Indstillinger** &gt; **Datasæt** &gt; **Retail Analysis Sample** &gt; **Udvalgte spørgsmål i Spørgsmål og svar**.  
 4. Vælg **Tilføj et spørgsmål**.
@@ -39,16 +39,16 @@ I denne artikel anvendes [Retail Analysis Sales-eksemplet](sample-datasets.md). 
 5. Skriv dit spørgsmål i tekstfeltet, og vælg **Anvend**.   Du kan også tilføje et andet spørgsmål ved at vælge **Tilføj et spørgsmål**.  
    ![Ruden Udvalgte spørgsmål fra Spørgsmål og svar](media/service-q-and-a-create-featured-questions/power-bi-type-featured-question.png)
 6. Gå tilbage til Power BI-dashboardet for Retail Analysis Sample, og anbring markøren i spørgsmålsfeltet.   
-   ![Spørgsmål og svar med udvalgt spørgsmål](media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question-to-start.png)
+   ![Spørgsmålsfelt i Spørgsmål og svar med udvalgt spørgsmål](media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question-to-start.png)
 7. Det nye udvalgte spørgsmål, **Sales by territory as a map**, er det første på listen. Vælg det.  
 8. Svaret vises som en visualisering i form af et udfyldt kort.  
-   ![Spørgsmål og svar udvalgt spørgsmål besvaret: kortvisualisering](media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question.png)
+   ![Svar på udvalgt spørgsmål i Spørgsmål og svar: kortvisualisering](media/service-q-and-a-create-featured-questions/power-bi-qna-featured-question.png)
 
 ## <a name="next-steps"></a>Næste trin
 
 - [Spørgsmål og svar til forbrugere](consumer/end-user-q-and-a.md)  
-- [Brug spørgsmål og svar i dashboards og rapporter](power-bi-tutorial-q-and-a.md)  
-- [Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)  
+- [Brug Spørgsmål og svar på dashboards og i rapporter](power-bi-tutorial-q-and-a.md)  
+- [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

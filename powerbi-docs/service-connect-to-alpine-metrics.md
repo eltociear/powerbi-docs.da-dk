@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5162edf7035918289d0f45ec71a0e908fc444cbf
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 73a469c1625d24c20deaa01237c10dd6459db65c
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61181776"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66720521"
 ---
 # <a name="connect-to-alpine-metrics-sales-predictions-with-power-bi"></a>Opret forbindelse til Alpine Metrics Sales Predictions med Power BI
 Alpine Metrics leverer avanceret Predictive Sales-procesoptimering i clouden og efter behov til små og store salgsorganisationer. Alpine Metrics Sales Predictions-indholdspakken til Power BI indeholder målinger, som f.eks. potentielle og forventede salg og risici, så du får bedre indsigt i fremtiden for din virksomhed. 
@@ -68,5 +68,5 @@ Der kræves en Alpine Metrics-konto med rettigheder til ovenstående tabeller fo
 ## <a name="next-steps"></a>Næste trin
 [Hvad er Power BI?](power-bi-overview.md)
 
-[Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)
+[Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
 

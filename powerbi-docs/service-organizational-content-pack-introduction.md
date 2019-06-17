@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f7e8d58e5fd738e5da678723ef239f5303be5070
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: da5a36454e52891df7906b444b29b4df2db44d7f
+ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61226098"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66721181"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion til organisationsindholdspakker i Power BI
 > [!NOTE]
@@ -75,6 +75,6 @@ Alle medlemmer af distributionsgruppen har de samme tilladelser til dataene som 
 ## <a name="next-steps"></a>Næste trin
 * [Opret og publicer en organisationsindholdspakke](service-organizational-content-pack-create-and-publish.md)
 * [Opret og distribuer en app i Power BI](service-create-distribute-apps.md) 
-* [Power BI – Grundlæggende begreber](consumer/end-user-basic-concepts.md)
+* [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

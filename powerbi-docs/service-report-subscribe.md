@@ -1,6 +1,6 @@
 ---
-title: Selv og andre Abonner rapporter og dashboards – Power BI
-description: Lær, hvordan du abonnerer på dig selv og andre et snapshot af en Power BI-rapportside, dashboard eller sideinddelt rapport.
+title: Meld dig selv og andre til et abonnement på rapporter og dashboards – Power BI
+description: Få mere at vide om, hvordan du melder dig selv og andre til abonnementer på et snapshot af en rapportside, et dashboard eller en sideinddelt rapport i Power BI.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a344e3cdd93fbd237387b61fb4735b41f22625e3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b1d0914f146ea56697ada2a64c59744690595054
+ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65991122"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66498071"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Meld dig selv og andre til abonnementer på rapporter og dashboards i Power BI-tjenesten
 
-Du kan abonnere på dig selv og dine kollegaer til rapportsider, dashboards og sideinddelte rapporter, der betyder mest for dig. Powerbi sender en mail med et snapshot til din indbakke. Fortæl Power BI, hvor ofte du vil modtage mails: dagligt, ugentligt eller én gang om dagen efter den første dataopdatering.  Hvis du vælger dagligt eller ugentligt, kan du vælge tid vil du gerne have køre abonnementet.  Du kan i alt angive op til 24 forskellige abonnementer pr. dag for hver rapportside og hvert dashboard.
+Du kan melde dig selv og dine kolleger til abonnementer på de rapportsider, dashboards og sideinddelte rapporter, der betyder mest for jer. Så sender Power BI et snapshot via mail til jeres indbakke. Fortæl Power BI, hvor ofte du vil modtage mails: dagligt, ugentligt eller én gang om dagen efter den første dataopdatering.  Hvis du vælger dagligt eller ugentligt, kan du vælge, hvilket tidspunkt abonnementet skal køres på.  Du kan i alt angive op til 24 forskellige abonnementer pr. dag for hver rapportside og hvert dashboard.
 
 ![mail snapshot af dashboard](media/service-report-subscribe/power-bi-dashboard-email-new.jpg) 
 
@@ -30,13 +30,12 @@ Du kan kun oprette abonnementer i Power BI-tjenesten. Du modtager en mail med et
 
 - **Oprettelse af** et abonnement er en Power BI Pro-funktion.
 - Du behøver ikke at have redigeringstilladelser til indholdet (dashboard eller rapport) for at oprette et abonnement til dig selv, men du skal have redigeringstilladerlser for at oprette et for andre. 
-- Fra og med januar 2019 behøver du ikke længere at have opdatering af datasæt angivet for at køre et abonnement.  Den kører uafhængigt af eventuelle planlagte opdateringer, som du har angivet.  
 
 ## <a name="subscribe-to-a-dashboard-report-page-or-paginated-report"></a>Abonner på et dashboard, en rapportside eller en sideinddelt rapport
 
-Uanset om du abonnerer på et dashboard, rapport eller sideinddelt rapport, processen er tilsvarende. Du bruger den samme knap til at abonnere på dashboards og rapporter i Power BI-tjenesten.
+Uanset om du abonnerer på et dashboard, en rapport eller en sideinddelt rapport, er processen den samme. Du bruger den samme knap til at abonnere på dashboards og rapporter i Power BI-tjenesten.
 
-Abonnerer på sideinddelte rapporter er lidt anderledes. Se [dig selv og andre abonnerer en sideinddelt rapport i Power BI-tjenesten](paginated-reports-subscriptions.md) for at få oplysninger.
+Det er lidt anderledes at abonnere på sideinddelte rapporter. Du kan finde flere oplysninger i [Meld dig selv og andre til et abonnement på en sideinddelt rapport i Power BI-tjenesten](paginated-reports-subscriptions.md).
  
 ![vælg ikonet Abonner](media/service-report-subscribe/power-bi-subscribe-orientation.png).
 
@@ -64,7 +63,7 @@ Abonnerer på sideinddelte rapporter er lidt anderledes. Se [dig selv og andre a
 7. Vælg **Gem og luk**. Dem, der abonnerer, modtager en mail og et snapshot af dashboardet eller rapportsiden med den hyppighed og det tidspunkt, du har valgt. Du kan i alt oprette op til 24 abonnementer pr. rapport eller dashboard, og du kan angive entydige modtagere, tidspunkter og hyppigheder for hvert abonnement.  For alle abonnementer, der er angivet til **Efter dataopdatering** for dashboardet eller rapporten, sendes der stadig kun en mail efter den første planlagte opdatering.   
       
    > [!TIP]
-   > Vil du sende mailen fra et abonnement med det samme eller on-demand når som helst? Vælg **Kør nu** for abonnementerne for det dashboard eller den rapport, du vil sende. Du får vist en meddelelse om, at en mail er på vej til alle med det pågældende abonnement.  Du kan gøre dette så ofte, som du ønsker. Det tæller ikke i forhold til grænsen på 24 planlagte abonnementskørsler pr. dag pr. rapport eller dashboard. De udløser ikke en opdatering af data i det underliggende datasæt. 
+   > Vil du sende mailen fra et abonnement med det samme eller on-demand når som helst? Vælg **Kør nu** for abonnementerne for det dashboard eller den rapport, du vil sende. Du får vist en meddelelse om, at en mail er på vej til alle med det pågældende abonnement.  Du kan gøre dette så ofte, du vil. Det tæller ikke i forhold til grænsen på 24 planlagte abonnementskørsler pr. dag pr. rapport eller dashboard. Dette udløser IKKE en opdatering af data i det underliggende datasæt. 
    > 
    > 
    
@@ -87,10 +86,11 @@ Et abonnement slutter, hvis Pro-licensen udløber, hvis ejeren sletter dashboard
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 
-* Dashboards med mere end 25 fastgjorte felter eller 4 fastgjorte liverapportsider gengives muligvis ikke fuldstændigt i abonnementsmails, der sendes til brugerne.  Abonnementer på dashboards over disse antallet af felter, der ikke er blokeret. De er dog betragtes som ikke understøttes, hvis du støder på problemer. Overvej at ændre dem for at falder inden for en understøttede område i overensstemmelse hermed.
-* Når du konfigurerer din e-mail-abonnementer, Vær opmærksom på er der en forsinkelse mellem, når abonnementet jobbet starter og det nøjagtige tidspunkt e-mailen er sendt.  For at minimere forsinkelsen mellem to, ved at konfigurere et andet tidspunkt for din planlagt opdatering af data end når din e-mail-abonnement er planlagt til at køre.
-* For mailabonnementer på dashboardet, hvis alle felter har rækkeniveau (RLS) anvendes, vises disse felter ikke.  
-* For mailabonnementer rapport, hvis datasættet bruger sikkerhed på Rækkeniveau, kan du oprette et abonnement til dig selv. Du kan ikke abonnere på andre til en rapport med sikkerhed på rækkeniveau (RLS) anvendes.
+* Dashboards med mere end 25 fastgjorte felter eller 4 fastgjorte liverapportsider gengives muligvis ikke fuldstændigt i abonnementsmails, der sendes til brugerne.  Abonnementer på dashboards over dette antal felter blokeres ikke. De anses dog for ikke at være understøttet, hvis du oplever problemer. Overvej at ændre dem i henhold dertil, så de ligger inden for det understøttede antal.
+* Dette er tidspunktet for, hvornår abonnementsjobbet starter. I visse situationer kan det tage et par minutter, før mailen leveres i din indbakke.
+* I sjældne tilfælde kan det tage længere tid end 15 minutter at levere mailabonnementer til deres modtagere. Hvis det sker, anbefaler vi, at du kører en opdatering af dine data og dit mailabonnement på forskellige tidspunkter for at sikre rettidig levering. Hvis problemet fortsætter, skal du kontakte Power BI-support.
+* For mailabonnementer på dashboards vises nogle felter ikke, hvis der er anvendt sikkerhed på rækkeniveau for dem.  
+* For mailabonnementer på rapporter kan du ikke oprette et abonnement til dig selv, hvis datasættet anvender sikkerhed på rækkeniveau. Du kan ikke melde andre til et abonnement på en rapport med sikkerhed på rækkeniveau.
 * Rapportsideabonnementer er bundet til navnet på siden i rapporten. Hvis du abonnerer på en rapportside og omdøber den, skal du genoprette dit abonnement.
 * Din organisation kan konfigurere bestemte indstillinger i Azure Active Directory, som begrænser muligheden for at bruge mailabonnementer i Power BI.  Disse begrænsninger omfatter, men er ikke begrænset til, multifaktorgodkendelse eller IP-intervalbegrænsning, når ressourcer tilgås.
 * Mailabonnementer for rapporter/dashboards, der bruger datasæt med direkte forbindelser, understøttes i øjeblikket ikke, når du abonnerer på brugere ud over dig selv.
@@ -105,6 +105,6 @@ Et abonnement slutter, hvis Pro-licensen udløber, hvis ejeren sletter dashboard
 
 ## <a name="next-steps"></a>Næste trin
 
-- [Selv og andre Abonner en sideinddelt rapport i Power BI-tjenesten](paginated-reports-subscriptions.md)
+- [Meld dig selv og andre til et abonnement på en sideinddelt rapport i Power BI-tjenesten](paginated-reports-subscriptions.md)
 - Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)    
 - [Læs blogindlægget](https://powerbi.microsoft.com/blog/introducing-dashboard-email-subscriptions-a-360-degree-view-of-your-business-in-your-inbox-every-day/)

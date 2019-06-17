@@ -11,52 +11,52 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 05/16/2019
-ms.openlocfilehash: c8789d47ed1b67f9fd6808865514120457a29dfe
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ec70f4c9d6f3e6f51210a32f7efac7f160f462cb
+ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051278"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66498010"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Integrer med rapportwebdelen i SharePoint Online
 
 Med Power BI’s nye rapportwebdel til SharePoint Online kan du nemt kan integrere interaktive Power BI-rapporter på SharePoint Online-sider.
 
-Når du bruger den nye **Integrer i SharePoint Online** indstilling, de integrerede rapporter er helt sikre, så du kan nemt oprette sikre interne webportaler.
+Når du bruger den nye indstilling **Integrer i SharePoint Online**, er de integrerede rapporter helt sikre, så du kan nemt oprette sikre interne portaler.
 
 ## <a name="requirements"></a>Krav
 
-For **Integrer i SharePoint Online** rapporter kan fungere, kræves følgende:
+Følgende kræves, før rapporter kan **integreres i SharePoint Online**:
 
-* En Power BI Pro-licens eller en [Power BI Premium-kapacitet (EM eller P SKU)](service-premium-what-is.md) med en licens til Power BI.
+* En Power BI Pro-licens eller en [Power BI Premium-kapacitet (EM- eller P-SKU)](service-premium-what-is.md) med en Power BI-licens.
 * Power BI-webdelen til SharePoint Online kræver [moderne sider](https://support.office.com/article/Allow-or-prevent-creation-of-modern-site-pages-by-end-users-c41d9cc8-c5c0-46b4-8b87-ea66abc6e63b).
 
 ## <a name="embed-your-report"></a>Integrer din rapport
-Hvis du vil integrere din rapport i SharePoint Online, skal du få rapportens URL-adresse og bruge den sammen med SharePoint Online nye Power BI-webdelen.
+Hvis du vil integrere din rapport i SharePoint Online, skal du have URL-adressen til rapporten og bruge den sammen med Power BI-webdelen i SharePoint Online.
 
-### <a name="get-a-report-url"></a>Hent en URL-adresse til rapporten
+### <a name="get-a-report-url"></a>Hent en URL-adresse til en rapport
 
 1. Få vist rapporten i Power BI.
 
-2. Vælg den **fil** rullemenuen, vælg derefter **Integrer i SharePoint Online**.
+2. Vælg rullemenuen **Fil**, og vælg derefter **Integrer i SharePoint Online**.
 
     ![Filmenu](media/service-embed-report-spo/powerbi-file-menu.png)
 
-3. Kopiér rapport URL-adressen fra dialogboksen.
+3. Kopiér URL-adressen til rapporten fra dialogboksen.
 
     ![Integrer link](media/service-embed-report-spo/powerbi-embed-link-sharepoint.png)
 
 ### <a name="add-the-power-bi-report-to-a-sharepoint-online-page"></a>Føj Power BI-rapporten til en SharePoint Online-side
 
-1. Åbn siden target i SharePoint Online, og vælg **Rediger**.
+1. Åbn destinationssiden i SharePoint Online, og vælg **Rediger**.
 
     ![Side med SP-redigeringer](media/service-embed-report-spo/powerbi-sharepoint-edit-page.png)
 
-    I Sharepoint Online, skal du vælge **+ ny** til at oprette en ny moderne webside.
+    Eller vælg **+ Ny** i SharePoint Online for at oprette en ny moderne webside.
 
     ![Ny SP-side](media/service-embed-report-spo/powerbi-sharepoint-new-page.png)
 
-2. Vælg den **+** rullelisten og derefter vælge den **Power BI**.
+2. Vælg rullemenuen **+** , og vælg derefter webdelen **Power BI**.
 
     ![Ny SP-webdel](media/service-embed-report-spo/powerbi-sharepoint-new-web-part.png)
 
@@ -64,7 +64,7 @@ Hvis du vil integrere din rapport i SharePoint Online, skal du få rapportens UR
 
     ![Ny SP-rapport](media/service-embed-report-spo/powerbi-sharepoint-new-report.png)  
 
-4. Indsæt den tidligere kopieret rapportens URL-adresse til den **Power BI-rapportlinket** rude. Rapporten indlæses automatisk.
+4. Indsæt den tidligere kopierede URL-adresse til rapporten i ruden **Link til Power BI-rapport**. Rapporten indlæses automatisk.
 
     ![Egenskaber for ny SP-webdel](media/service-embed-report-spo/powerbi-sharepoint-new-web-part-properties.png)
 
@@ -74,30 +74,30 @@ Hvis du vil integrere din rapport i SharePoint Online, skal du få rapportens UR
 
 ## <a name="grant-access-to-reports"></a>Giv adgang til rapporter
 
-Integration af en rapport i SharePoint Online ikke automatisk give brugerne tilladelse til at få vist rapporten – du skal angive visningstilladelser i Power BI.
+Integrering af en rapport i SharePoint Online giver ikke automatisk brugerne tilladelse til at få vist rapporten. Du skal angive visningstilladelser i Power BI.
 
 > [!IMPORTANT]
 > Sørg for at gennemse, hvem der kan få vist rapporten, i Power BI-tjenesten, og giv adgang til dem, der er ikke angivet.
 
-Der er to måder til at give adgang til rapporten i Power BI. Den første måde, hvis du bruger en Office 365-gruppe til at oprette SharePoint Online-teamwebstedet, er at angive brugeren som medlem af den **apparbejdsområdet i Power BI-tjenesten** og **SharePoint-side**. Du kan finde flere oplysninger under [Administrer dit apparbejdsområde](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Der er to måder at give adgang til rapporten i Power BI på. Hvis du bruger en Office 365-gruppe til at udarbejde dit SharePoint Online-teamwebsted, er den første måde at angive brugeren som medlem af **apparbejdsområdet i Power BI-tjenesten** og på **SharePoint-siden**. Du kan finde flere oplysninger under [Administrer dit apparbejdsområde](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
-Den anden måde er at integrere en rapport i en app og dele den direkte med brugere:  
+Den anden måde er at integrere en rapport i en app og dele den direkte med brugerne:  
 
-1. Forfatteren (skal være en Pro-bruger) opretter en rapport i et apparbejdsområde. Til at dele med **gratis Power BI-brugere**, app-arbejdsområdet skal angives som en **Premium-arbejdsområde**.
+1. Forfatteren, som skal være Pro-bruger, opretter en rapport i et apparbejdsområde. For at kunne dele med *brugere af den gratis version af Power BI* skal apparbejdsområdet være angivet som et *Premium-arbejdsområde*.
 
-2. Forfatteren udgiver appen og installerer den. Forfatteren har brug at sikre, at du installerer appen for at få adgang til den URL-adresse til rapporten, der bruges til at integrere i SharePoint Online.
+2. Forfatteren publicerer appen og installerer den. Forfatteren skal installere appen, så den har adgang til den URL-adresse til rapporten, som bruges til integrering i SharePoint Online.
 
-3. Nu skal alle slutbrugere også installere appen. Du kan også bruge den **installere appen automatisk** -funktionen, som du kan aktivere på den [Power BI-administrationsportalen](service-admin-portal.md)skal have den app, der er installeret på forhånd for slutbrugere.
+3. Nu skal alle slutbrugere også installere appen. Du kan også bruge funktionen **Installér appen automatisk**, som du kan aktivere på [Power BI-administrationsportalen](service-admin-portal.md) for at forudinstallere appen for slutbrugerne.
 
    ![Installér appen automatisk](media/service-embed-report-spo/install-app-automatically.png)
 
 4. Opretteren åbner appen og går til rapporten.
 
-5. Forfatteren kopierer den integrerede rapport URL-adresse fra rapporten, hvor appen er installeret. **Brug ikke den oprindelige rapport URL-adresse fra app-arbejdsområdet.**
+5. Forfatteren kopierer URL-adressen til den integrerede rapport fra den rapport, der er installeret af appen. Brug ikke den oprindelige URL-adresse til rapporten fra apparbejdsområdet.
 
 6. Opret et nyt teamwebsted i SharePoint Online.
 
-7. Føj tidligere kopieret rapport URL-adressen til Power BI-webdelen.
+7. Føj den tidligere kopierede URL-adresse til rapporten til Power BI-webdelen.
 
 8. Tilføj alle slutbrugere og/eller grupper, som skal bruge dataene på siden SharePoint Online og i den Power BI-app, du har oprettet.
 
@@ -108,36 +108,36 @@ Nu kan slutbrugeren gå til teamwebstedet i SharePoint Online og få vist rappor
 
 ## <a name="multi-factor-authentication"></a>Multifaktorgodkendelse
 
-Hvis du bliver bedt om at logge på ved hjælp af multifaktorgodkendelse i dit Power BI-miljø, bliver du muligvis bedt om at logge på med en sikkerhedsenhed for at bekræfte din identitet. Dette sker, hvis du ikke har logget SharePoint Online ved hjælp af multifaktorgodkendelse, men dit Power BI-miljø kræver en sikkerhedsenhed for at validere en konto.
+Hvis du bliver bedt om at logge på ved hjælp af multifaktorgodkendelse i dit Power BI-miljø, bliver du muligvis bedt om at logge på med en sikkerhedsenhed for at bekræfte din identitet. Dette kan ske, hvis du ikke loggede på SharePoint Online ved hjælp af multifaktorgodkendelse, men dit Power BI-miljø kræver, at en sikkerhedsenhed validerer en konto.
 
 > [!NOTE]
-> Azure Active Directory 2.0 understøtter ikke Multi-Factor Authentication til Azure - brugere får vist en fejlmeddelelse. Hvis brugeren logger på SharePoint Online igen ved hjælp af sin sikkerhedsenhed, kan vedkommende muligvis få vist rapporten.
+> Power BI understøtter endnu ikke multifaktorgodkendelse med Azure Active Directory 2.0, og brugerne får vist en fejlmeddelelse. Hvis brugeren logger på SharePoint Online igen ved hjælp af sin sikkerhedsenhed, kan vedkommende muligvis få vist rapporten.
 
 ## <a name="web-part-settings"></a>Indstillinger for webdele
 
-Nedenfor er de indstillinger, kan du justere til Power BI-webdelen til SharePoint Online.
+Nedenfor er de indstillinger, som du kan justere for Power BI-webdelen til SharePoint Online.
 
 ![Egenskaber for SP-webdel](media/service-embed-report-spo/powerbi-sharepoint-web-part-properties.png)
 
 | Egenskab | Beskrivelse |
 | --- | --- |
-| Sidenavn |Angiver den webdelen standardside. Vælg en værdi på rullelisten. Hvis der ikke vises nogen sider, har rapporten enten kun én side, eller den URL-adresse, du har indsat, indeholder et sidenavn. Fjern rapportsektion fra URL-adressen for at vælge en bestemt side. |
-| Vis |Justerer, hvordan rapporten passer ind i SharePoint Online-siden. |
+| Sidenavn |Angiver standardsiden for webdelen. Vælg en værdi på rullelisten. Hvis der ikke vises nogen sider, har rapporten enten kun én side, eller den URL-adresse, du har indsat, indeholder et sidenavn. Fjern rapportsektion fra URL-adressen for at vælge en bestemt side. |
+| Vis |Justerer den måde, som rapporten er tilpasset SharePoint Online-siden på. |
 | Vis navigationsruden |Viser eller skjuler ruden Sidenavigation. |
 | Vis filterruden |Viser eller skjuler filterruden. |
 
 ## <a name="reports-that-do-not-load"></a>Rapporter, der ikke indlæses
 
-Hvis rapporten ikke indlæses i Power BI-webdelen, kan du se følgende meddelelse:
+Hvis rapporten ikke indlæses i Power BI-webdelen, kan du få vist følgende meddelelse:
 
-![Dette indhold er ikke tilgængelig meddelelse](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
+![Dette indhold er ikke tilgængeligt](media/service-embed-report-spo/powerbi-sharepoint-report-not-found.png)
 
 Der er to almindelige årsager til denne meddelelse.
 
 1. Du har ikke adgang til rapporten.
 2. Rapporten blev slettet.
 
-Kontakt ejeren af SharePoint Online-side for at hjælpe med at løse problemet.
+Kontakt ejeren af SharePoint Online-siden for at få hjælp til at løse problemet.
 
 ## <a name="licensing"></a>Licensering
 
@@ -151,7 +151,7 @@ Brugere, der ser en rapport i SharePoint, skal enten have en **Power BI Pro-lice
   
   1. Log af SharePoint, og log på igen. Sørg for at lukke alle browservinduer, før du logger på igen.
 
-  2. Hvis din brugerkonto kræver multifaktorgodkendelse (MFA), derefter logge på SharePoint ved hjælp af enheden MFA (telefonapp, chipkort osv.).
+  2. Hvis din brugerkonto kræver multifaktorgodkendelse, skal du logge på SharePoint ved hjælp af din enhed til multifaktorgodkendelse (telefonapp, chipkort osv.).
   
   3. Azure B2B-gæstebrugerkonti understøttes ikke. Brugerne kan se det Power BI-logo, der viser, at delen indlæses, men den viser ikke rapporten.
 

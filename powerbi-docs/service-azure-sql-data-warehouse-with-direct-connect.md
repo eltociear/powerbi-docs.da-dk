@@ -11,12 +11,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/20/2018
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 896e58b95f253c403bf7cd4bc3e1c069b3628f69
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 69b40b81677de8af259f9c8ce871c39f5303c09a
+ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770259"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66448441"
 ---
 # <a name="azure-sql-data-warehouse-with-directquery"></a>Azure SQL Data Warehouse med DirectQuery
 
@@ -40,7 +40,7 @@ Disse begrænsninger og noter kan ændres, efterhånden som vi fortsat forbedrer
 
 Den nemmeste måde at flytte mellem dit SQL Data Warehouse og Power BI er med knappen **Åbn i Power BI** på Azure-portalen. Med denne knap kan du nemt og problemfrit begynde at oprette nye dashboards i Power BI.
 
-1. For at komme i gang skal du gå til din instans af SQL Data Warehouse på Azure-portalen. SQL Data Warehouse findes i øjeblikket kun på Azure Preview-portalen.
+1. For at komme i gang skal du gå til din instans af SQL Data Warehouse på Azure-portalen. Bemærk, at SQL Data Warehouse i øjeblikket kun findes på Azure Portal.
 
 2. Klik på knappen **Åbn i Power BI**
 
@@ -64,13 +64,13 @@ SQL Data Warehouse er også angivet på siden Power BI Hent data.
 
 3. Vælg **SQL Data Warehouse** \> **Tilslut**.
 
-    ![Azure SQL data Warehouse med direkte forbindelse](media/service-azure-sql-data-warehouse-with-direct-connect/azuresqldatawarehouseconnect.png)
+    ![Azure SQL Data Warehouse med direkte forbindelse](media/service-azure-sql-data-warehouse-with-direct-connect/azuresqldatawarehouseconnect.png)
 
-4. Angiv de nødvendige oplysninger for at oprette forbindelse. Sektionen **Find parametre** nedenfor viser, hvor disse data kan være placeret i Azure-portalen.
+4. Angiv de nødvendige oplysninger for at oprette forbindelse. I sektionen **Find parametre** nedenfor kan du se, hvor disse data kan være placeret på Azure Portal.
 
     ![Servernavn](media/service-azure-sql-data-warehouse-with-direct-connect/servername.png)
 
-    ![Avancerede servernavn](media/service-azure-sql-data-warehouse-with-direct-connect/servernamewithadvanced.png)
+    ![Avanceret servernavn](media/service-azure-sql-data-warehouse-with-direct-connect/servernamewithadvanced.png)
 
     ![Brugernavn](media/service-azure-sql-data-warehouse-with-direct-connect/username.png)
 
@@ -87,12 +87,14 @@ SQL Data Warehouse er også angivet på siden Power BI Hent data.
 
 ## <a name="finding-parameter-values"></a>Find parameterværdier
 
-Dit fulde gyldige servernavn og databasenavn kan findes på Azure-portalen. SQL Data Warehouse findes i øjeblikket kun på Azure Preview-portalen.
+Dit fulde gyldige servernavn og databasenavn kan findes på Azure-portalen. Bemærk, at SQL Data Warehouse i øjeblikket kun findes på Azure Portal.
 
 ![Azure-portal](media/service-azure-sql-data-warehouse-with-direct-connect/azureportal.png)
 
 > [!NOTE]
 > Hvis din Power BI-lejer befinder sig i det samme område som Azure SQL Data Warehouse, er der ingen gebyrer for udgående data. Du kan se, hvor din Power BI-befinder sig, ved hjælp af [disse instruktioner](https://docs.microsoft.com/power-bi/service-admin-where-is-my-tenant-located).
+
+[!INCLUDE [direct-query-sso](includes/direct-query-sso.md)]
 
 ## <a name="next-steps"></a>Næste trin
 
