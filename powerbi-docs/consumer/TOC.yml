@@ -106,6 +106,8 @@
       items:
         - name: Ordliste og terminologi
           href: end-user-glossary.md
+        - name: Ofte stillede spørgsmål
+          href: end-user-faq.md
         - name: Understøttede browsere
           href: end-user-browsers.md
         - name: 'Typerne af Quick Insights, der understøttes af Power BI'
