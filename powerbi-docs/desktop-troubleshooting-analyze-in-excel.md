@@ -10,14 +10,15 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 083d78552c124c3a53d669357678fb473dfcd5f2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0a80a75765d6e25f42163953e28b544171e8fdb2
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514567"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408324"
 ---
 # <a name="troubleshooting-analyze-in-excel"></a>Fejlfinding af Analysér i Excel
+
 Når du bruger Analysér i Excel, kan du i nogle tilfælde få et uventet resultat, eller funktionen fungerer måske ikke som forventet. Denne side indeholder løsninger på almindelige problemer, når du bruger Analysér i Excel.
 
 > [!NOTE]
@@ -57,8 +58,6 @@ Du kan hente den nyeste version af Excel OLE DB-providerbibliotekerne fra linkse
 Hvis klientbibliotekerne til Excel OLE DB-provideren er opdateret, får du vist en dialogboks, der ser sådan ud:
 
 ![](media/desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
-
-C:\Users\davidi\Desktop\powerbi-content-pr\articles\media\powerbi-desktop-troubleshooting-analyze-in-excel
 
 Eller hvis den nye version, du er ved at installere, er nyere end versionen på din computer, vises følgende dialogboks:
 
