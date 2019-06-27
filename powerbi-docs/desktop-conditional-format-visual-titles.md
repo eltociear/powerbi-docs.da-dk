@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Connect to data
 ms.openlocfilehash: b90ef66d2c118a70f1b18ed4fe302ce1db23e45c
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "64769756"
@@ -57,7 +57,7 @@ Når du har oprettet DAX-udtrykket for det felt, du opretter i din model, skal d
 
 For at markere feltet og anvende den, skal du gå til den **visualiseringer** rude. I den **Format** område, Vælg **titel** til at vise titlen indstillingerne for det visuelle element. 
 
-Når du højreklikker på **titeltekst**, vises en genvejsmenu, der gør det muligt at vælge ***fx * betinget formatering**. Når du vælger denne menu-element, en **titeltekst** dialogboksen vises. 
+Når du højreklikker på **titeltekst**, vises en genvejsmenu, der gør det muligt at vælge ***fx* betinget formatering**. Når du vælger denne menu-element, en **titeltekst** dialogboksen vises. 
 
 ![Skærmbillede af titel dialogboksen for tekst](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 
