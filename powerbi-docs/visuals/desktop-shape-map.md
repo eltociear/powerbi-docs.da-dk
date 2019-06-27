@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/11/2018
+ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 163fc60052c4124e7c6cbac60f1486a185c35f17
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0789d7e77e3ae501cc2aec92c366c9c2608edd52
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61394685"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839278"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Figurkort i Power BI Desktop (prøveversion)
 Opret en visualisering af typen **Figurkort** til at sammenligne områder på et kort ved hjælp af farver. I modsætning til visualiseringen **Kort** kan **Figurkort** ikke vise den nøjagtige geografiske placering af datapunkter på et kort. I stedet er dens primære formål at vise relative sammenligninger mellem områder på et kort ved at give dem forskellige farver.
@@ -27,15 +27,15 @@ Du kan afprøve kontrolelementet **Figurkort** med de kort, som medfølger i den
 
 Visualiseringen **Figurkort** er en prøveversion og skal aktiveres i Power BI Desktop. Du aktiverer **Figurkort** ved at vælge **Filer > Indstillinger > Indstillinger > Prøveversionsfunktioner** og derefter markere afkrydsningsfeltet **Visualiseringen Figurkort**. Du skal genstarte Power BI Desktop, når du har markeret indstillingen.
 
-![](media/desktop-shape-map/shape-map_1a.png)
+![aktivér prøveversionsfunktionen Figurkort](media/desktop-shape-map/power-bi-preview-features.png)
 
-Når du har aktiveret **Figurkort**, skal du klikke på kontrolelementet **Figurkort** i ruden **Visualiseringer**.
+Når du har aktiveret **Figurkort**, skal du vælge ikonet **Figurkort** i ruden **Visualiseringer**.
 
-![](media/desktop-shape-map/shape-map_2.png)
+![vælg skabelonen for figurkort](media/desktop-shape-map/power-bi-shape-map-template2.png)
 
 Power BI Desktop opretter et tomt designlærred for **figurkortet**.
 
-![](media/desktop-shape-map/shape-map_3.png)
+![der vises et tomt figurkort på lærredet](media/desktop-shape-map/shape-map-3.png)
 
 Gør følgende for at oprette et **figurkort**:
 
@@ -46,26 +46,23 @@ Gør følgende for at oprette et **figurkort**:
    > 
    > 
 
-   ![](media/desktop-shape-map/shape-map_3a.png)
+   ![udarbejd dit figurkort](media/desktop-shape-map/shape-map-3a.png)
 2. I ruden **Format** skal du udvide **Figur** og vælge på rullemenuen **Standardkort** for at få vist dine data. På nuværende tidspunkt vises gengivelsen af kortet som vist på følgende billede.
 
-   ![](media/desktop-shape-map/shape-map_3b.png)
+   ![åbn ruden Formatering, og vælg Figur](media/desktop-shape-map/shape-map-3b-new.png)
 
    > [!NOTE]
    > I afsnittet **Områdenøgler** sidst i denne artikel kan du se en samling af tabeller, som indeholder kortområdenøgler, du kan bruge til at teste visualiseringen **Figurkort**.
    > 
    > 
-3. Derefter kan du ændre kortprojiceringen og zoomindstillinger samt farverne på datapunkterne under indstillingerne i ruden **Format**. Du kan også ændre zoomindstillingerne. Du kan for eksempel ændre farver, angive maksimum- og minimumværdier med mere.
-
-   ![](media/desktop-shape-map/shape-map_3d.png)
-4. Du kan også tilføje en kolonne med kategoridata i feltet **Forklaring** og klassificere kortområderne baseret på kategorier.
+3. Du kan derefter redigere kortet ved hjælp af indstillingerne for formatering, f.eks. **Standardfarve**, **Zoom** m.m. Du kan også tilføje en kolonne med kategoridata i bucket'en **Forklaring** og klassificere kortområderne baseret på kategorier.
 
 ## <a name="use-custom-maps"></a>Brug brugerdefinerede kort
 Du kan bruge brugerdefinerede kort med **Figurkort**, hvis de er i formatet **TopoJSON**. Hvis dit kort er i et andet format, kan du bruge onlineværktøjer som [**Map Shaper**](http://mapshaper.org/) til at konvertere dine *figurfiler* eller dine *GeoJSON*-kort til **TopoJSON**-format.
 
 Hvis du vil bruge kortfilen **TopoJSON**, skal du tilføje visualiseringen Figurkort i din rapport og tilføje nogle data i felterne *Placering* og *Farvemætning*. Derefter skal du i ruden **Visualiseringer** kontrollere, at sektionen **Format** er markeret (som vist på følgende billede som (1)). Udvid dernæst sektionen **Figur**, og vælg **+ Tilføj kort**.
 
-![](media/desktop-shape-map/shape-map_6.png)
+![åbn ruden Formatering, og vælg Tilføj kort](media/desktop-shape-map/shape-map-6-new.png)
 
 ## <a name="sample-custom-map"></a>Eksempel på et brugerdefineret kort
 Den *offentlige anklagemyndighed i USA* udgiver en årlig finansiel rapport over dens processer og sager.  Alle rapporter kan findes via nedenstående link.
@@ -74,11 +71,11 @@ https://www.justice.gov/usao/resources/annual-statistical-reports
 
 Eftersom amerikanske delstater kan være inddelt i forskellige retskredse, er vi nødt til at bruge et brugerdefineret figurkort.  Ved at importere kortet **TopoJSON** over USA's retskredse i **Power BI Desktop** kan vi efterfølgende visualisere årlige finansielle data for den offentlige anklagemyndigheds forskellige retskredse.  På billedet nedenfor er vist et eksempel på dette kort.
 
-![](media/desktop-shape-map/shape-map_7a.png)
+![brugerdefineret figurkort](media/desktop-shape-map/shape-map-7a.png)
 
 Du kan bruge kortene over de forskellige delstater til mange forskellige ting, og du kan få vist flere oplysninger om de enkelte distrikter. 
 
-![](media/desktop-shape-map/shape-map_7b.png)
+![figurkort over Texas](media/desktop-shape-map/shape-map-7b.png)
 
 Hvis du ønsker at eksperimentere med dette datasæt og visualiseringen, kan du downloade den oprindelige PBIX-fil, der blev brugt til at generere rapporten, ved hjælp af følgende link.
 
@@ -87,11 +84,11 @@ Hvis du ønsker at eksperimentere med dette datasæt og visualiseringen, kan du 
 ## <a name="getting-map-data"></a>Hent kortdata
 Hvis du hurtigt vil hente data ind i en model, så du kan teste **Figurkort**, kan du kopiere en af tabellerne sidst i denne artikel og derefter vælge **Angiv data** under fanen **Hjem**.
 
-![](media/desktop-shape-map/shape-map_4.png)
+![I Desktop skal du vælge Angiv data](media/desktop-shape-map/shape-map-4-new.png)
 
 Hvis der er flere kolonner til dine data, skal du bruge en editor, f.eks. Excel, til at indsætte dataene og derefter kopiere hver datakolonne separat. Du kan derefter indsætte dataene i Power BI Desktop. Den øverste række bliver automatisk identificeret som overskrift.
 
-![](media/desktop-shape-map/shape-map_5.png)
+![Ruden Opret tabel](media/desktop-shape-map/shape-map-5.png)
 
 Du kan angive en ny kolonne ved at skrive et nyt kolonnenavn (i den tomme kolonne til højre) og derefter angive værdier i hver celle på samme måde som i Excel. Når du er færdig, skal du vælge **Indlæs**, hvorefter tabellen tilføjes i datamodellen for Power BI Desktop.
 

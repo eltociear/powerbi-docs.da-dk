@@ -8,27 +8,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: a38547807fbbcf3c76366f32caa46945e57ca8bc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/04/2019
+ms.openlocfilehash: f0e8a9931248860e11f783d04fead6172559afc1
+ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710310"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66814276"
 ---
 # <a name="get-an-azure-ad-access-token-for-your-power-bi-application"></a>Få et Azure AD-adgangstoken til dit Power BI-program
 
-Få mere at vide om, hvordan du godkender brugere i dit Power BI-program og henter et adgangstoken, der skal bruges sammen med REST-API'en.
+I denne artikel får du mere at vide om, hvordan du godkender brugere i dit Power BI-program og henter et adgangstoken, der skal bruges sammen med [Power BI REST-API'en](https://docs.microsoft.com/rest/api/power-bi/).
 
-Før du kan kalde Power BI REST-API'en, skal du have et Azure AD-**adgangstoken** til godkendelse (Azure Active Directory). Et **adgangstoken** bruges til at give dit program adgang til **Power BI**-dashboards, -felter og -rapporter. Du kan finde flere oplysninger om flowet for Azure Active Directory-**adgangstoken** under [Flowet for tildeling af Azure AD-godkendelseskode](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code).
+Før din app kalder Power BI REST-API'en, skal du have et Azure AD-**adgangstoken til godkendelse** (Azure Active Directory). Et adgangstoken bruges til at få adgang til Power BI-dashboards, -felter og -rapporter. Du kan få mere at vide i [Godkend adgang til Azure Active Directory-webprogrammer ved hjælp af flowet til tildeling af OAuth 2.0.-kode](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-oauth-code).
 
 Adgangstokenet hentes på forskellige måder, afhængigt af hvordan du integrerer indhold. I denne artikel bruges to forskellige metoder.
 
 ## <a name="access-token-for-power-bi-users-user-owns-data"></a>Adgangstoken til Power BI-brugere (brugeren ejer data)
 
-Dette eksempel er relateret til, når brugerne manuelt logger på Azure AD med deres organisationslogon. Denne opgave bruges i forbindelse med integrering af indhold for Power BI-brugere, der tilgår indhold med adgang til Power BI-tjenesten.
+Dette eksempel er relateret til, når brugerne manuelt logger på Azure AD med deres organisationslogon. Denne opgave bruges, når du integrerer indhold for brugere, der har adgang til Power BI-tjenesten.
 
-### <a name="get-an-authorization-code-from-azure-ad"></a>Hent en godkendelseskode fra Azure AD
+### <a name="get-an-azure-ad-authorization-code"></a>Hent en godkendelseskode fra Azure AD
 
 Det første trin til at få et **adgangstoken** er at få en godkendelseskode fra **Azure AD**. Konstruer en forespørgselsstreng med følgende egenskaber, og omdiriger til **Azure AD**.
 
@@ -54,7 +54,7 @@ var @params = new NameValueCollection
 };
 ```
 
-Når du har konstrueret en forespørgselsstreng, omdirigerer du til **Azure AD** for at hente en **godkendelseskode**.  Nedenfor kan du se en komplet C#-metode til at konstruere en forespørgselsstreng til en **godkendelseskode** og omdirigere til **Azure AD**. Når du har fået godkendelseskoden, får du et **adgangstoken** ved hjælp af **godkendelseskoden**.
+Når du har konstrueret en forespørgselsstreng, omdirigerer du til **Azure AD** for at hente en **godkendelseskode**.  Nedenfor kan du se en komplet C#-metode til at konstruere en forespørgselsstreng til en **godkendelseskode** og omdirigere til **Azure AD**. Du kan derefter bruge **godkendelseskoden** til at få et **adgangstoken**.
 
 I redirect.aspx.cs kaldes [AuthenticationContext.AcquireTokenByAuthorizationCode](https://docs.microsoft.com/dotnet/api/microsoft.identitymodel.clients.activedirectory.authenticationcontext.acquiretokenbyauthorizationcodeasync?view=azure-dotnet#Microsoft_IdentityModel_Clients_ActiveDirectory_AuthenticationContext_AcquireTokenByAuthorizationCodeAsync_System_String_System_Uri_Microsoft_IdentityModel_Clients_ActiveDirectory_ClientCredential_System_String_) for at generere tokenet.
 
@@ -98,9 +98,9 @@ protected void signInButton_Click(object sender, EventArgs e)
 
 ### <a name="get-an-access-token-from-authorization-code"></a>Få et adgangstoken fra en godkendelseskode
 
-Du bør nu have en godkendelseskode fra Azure AD. Når **Azure AD** omdirigerer tilbage til din webapp med en **godkendelseskode**, skal du bruge **godkendelseskoden** til at få et adgangstoken. Nedenfor er et C#-eksempel, som du kan bruge på omdirigeringssiden og i Page_Load-hændelsen til siden default.aspx.
+Når **Azure AD** omdirigerer tilbage til din webapp med en **godkendelseskode**, skal du bruge godkendelseskoden til at få et adgangstoken. Nedenfor er et C#-eksempel, som du kan bruge på omdirigeringssiden og i `Page_Load`-hændelsen til siden default.aspx.
 
-Navneområdet **Microsoft.IdentityModel.Clients.ActiveDirectory** kan hentes fra NuGet-pakken i [biblioteket til Active Directory-godkendelse](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
+Du kan hente navneområdet **Microsoft.IdentityModel.Clients.ActiveDirectory** fra NuGet-pakken i [Active Directory Authentication Library](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
 
 ```powershell
 Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
@@ -165,11 +165,11 @@ protected void Page_Load(object sender, EventArgs e)
 
 ## <a name="access-token-for-non-power-bi-users-app-owns-data"></a>Adgangstoken til brugere, der ikke har Power BI (appen ejer data)
 
-Denne metode bruges typisk til programmer af ISV-typen, hvor appen ejer adgang til dataene. Brugerne er ikke nødvendigvis Power BI-brugere, og programmet styrer godkendelse og adgang for slutbrugerne.
+Denne metode bruges typisk til programmer af ISV-typen (Independent Software Vendor), hvor appen ejer adgang til dataene. Brugerne er ikke nødvendigvis Power BI-brugere, og programmet styrer godkendelse og adgang.
 
 ### <a name="access-token-with-a-master-account"></a>Adgangstoken med en masterkonto
 
-Til denne metode skal du bruge en enkelt *masterkonto*, der er en Power BI Pro-bruger. Legitimationsoplysningerne for denne konto er gemt i applikationen. Programmet godkender til Azure AD med disse gemte legitimationsoplysninger. Den viste eksempelkode nedenfor kommer fra [eksemplet, hvor appen ejer data](https://github.com/guyinacube/PowerBI-Developer-Samples)
+Til denne metode skal du bruge en enkelt *masterkonto*, der er en Power BI Pro-bruger. Legitimationsoplysningerne for denne konto er gemt i programmet. Programmet godkender til Azure AD med disse gemte legitimationsoplysninger. Den viste eksempelkode nedenfor kommer fra [eksemplet, hvor appen ejer data](https://github.com/guyinacube/PowerBI-Developer-Samples)
 
 ### <a name="access-token-with-service-principal"></a>Adgangstoken med tjenesteprincipal
 
@@ -199,10 +199,12 @@ m_tokenCredentials = new TokenCredentials(authenticationResult.AccessToken, "Bea
 
 ## <a name="troubleshoot"></a>Fejlfind
 
-* Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) Hvis du oplever en "'AuthenticationContext' indeholder ikke en definition for 'AcquireToken' og ingen tilgængelig 'AcquireToken' accepterer en første argument af typen ' AuthenticationContext' blev fundet (mangler en ved hjælp af direktiv eller en reference til en assembly?) "fejl.
+Fejlmeddelelse: "'AuthenticationContext' doesn't contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)".
+
+   Prøv at hente [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727), hvis du får vist denne fejl.
 
 ## <a name="next-steps"></a>Næste trin
 
-Nu, hvor du har et adgangstoken, kan du kalde Power BI REST-API'en for at integrere indhold. Du kan finde flere oplysninger om, hvordan du integrerer indhold under [Sådan integrerer du Power BI-indhold](embed-sample-for-customers.md#embed-content-within-your-application).
+Nu, hvor du har et adgangstoken, kan du kalde Power BI REST-API'en for at integrere indhold. Du kan finde oplysninger under [Sådan integrerer du dit Power BI-indhold](embed-sample-for-customers.md#embed-content-within-your-application).
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

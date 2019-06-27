@@ -1,20 +1,20 @@
 ---
 title: Power BI-webinarer
 description: Power BI-webinarer
-author: maikelson
+author: v-tatero
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 11/26/2018
-ms.author: maikelson
-ms.openlocfilehash: a2db3f8c88231663ecb115c4609d3af177d96292
-ms.sourcegitcommit: 9da792d470dfe43dc6e15ddef5d471f3f6c50970
+ms.date: 06/01/2019
+ms.author: v-tatero
+ms.openlocfilehash: 1050cf5ee5060a19e4f38b98fb6766b6e5510451
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66453768"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66750980"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
@@ -22,7 +22,15 @@ Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når
 
 ## <a name="upcoming-webinars"></a>Kommende webinarer
 
-Der er ikke planlagt webinarer endnu. Tjek igen senere for at se flere kommende arrangementer.
+Tilmeld dig for at høre fra Power BI-eksperter og deltage i livesessioner med Spørgsmål og svar.
+
+**Microsoft kører på Power BI: Brug af Power BI i moderne Treasury**
+<br>ved Pankaj Gudimella og Guru Kirthigavasan
+<br>[Tilmeld dig for at se med d. 25. juni, kl. 10:00-11:00 PST](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
+
+**Power BI: Sådan får du indsigt fra HR-data for din arbejdsdag**
+<br>ved Iman Eftekhari, Julia Paton fra Agile Analytics og Shahram Karimi fra QBE Insurance
+<br>[Tilmeld dig for at se med d. 27. juni, kl. 13:30-14:30 PST](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
 
 >[Kommende webinarer fra Power BI-community'et](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -72,7 +80,7 @@ Kom i gang med disse populære webinarer, når det passer dig
 
 Se optagne sessioner når som helst
 
-### <a name="getting-started"></a>Kom i gang
+### <a name="getting-started"></a>Introduktion
 
 **Automatiser daglige forretningsprocesser med Power BI, PowerApps og Microsoft Flow**
 <br>ved Wim Coorevits og Enrique Plaza Garcia

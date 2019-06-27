@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/15/2019
+ms.date: 06/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f045e9076cdd8552d6e35e72b9c5f6e2319add68
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b689a4d0718c92608fe7fc0cdb34d27803015269
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65853426"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823535"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 Med Power BI Desktop kan du oprette forbindelse til data fra mange forskellige kilder. Der findes en komplet liste over tilgængelige datakilder nederst på siden.
@@ -119,7 +119,7 @@ Kategorien **Azure** indeholder følgende dataforbindelser:
 * Azure HDInsight Spark
 * Interaktiv HDInsight-forespørgsel
 * Azure Data Explorer (Kusto)
-* Azure omkostningsstyring (Beta)
+* Azure Cost Management (Beta)
 
 På følgende billede vises vinduet **Hent data** for **Azure**.
 
@@ -133,7 +133,7 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Dynamics NAV
 * Dynamics 365 Business Central
 * Dynamics 365 Business Central (i det lokale miljø)
-* Common Data Service til apps (beta)
+* Common Data Service
 * Microsoft Azure Consumption Insights (beta)
 * Azure DevOps (beta)
 * Azure DevOps Server (beta)
@@ -161,8 +161,11 @@ Kategorien **Onlinetjenester** indeholder følgende dataforbindelser:
 * Webtrends (beta)
 * Zendesk (beta)
 * Emigo datakilde (beta)
-* IndustrialAppStore (Beta)
+* Entersoft Business Suite (Beta)
+* Industrial App Store
+* Intune Data Warehouse (Beta)
 * Microsoft Graph Security (beta)
+* Quick Base
 * TeamDesk (beta)
 
 På følgende billede vises vinduet **Hent data** for **Onlinetjenester**.
@@ -182,15 +185,14 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Python-script
 * ODBC
 * OLE DB
-* BI360 - budgettering og finansiel rapportering (Beta)
+* BI360 – Budgeting & Financial Reporting (Beta)
 * Denado
-* Oplysninger om gitter (Beta)
+* Information Grid (Beta)
 * Paxatas 
 * QubolePresto (beta)
-* Hurtig Base (beta)
 * Roamler (Beta)
 * SurveyMonkey (beta)
-* Tenforce (Beta)
+* Tenforce (Smart)List (Beta)
 * Workforce Dimensions (beta)
 * Tom forespørgsel
 

@@ -1,6 +1,6 @@
 ---
 title: Måder at dele dit arbejde i Power BI på
-description: I Power BI kan du samarbejde om og dele dashboards, rapporter, felter og apps på forskellige måder. Hver har særskilte fordele.
+description: I Power BI kan du samarbejde om og dele dashboards, rapporter, felter og apps på forskellige måder. De har hver især særskilte fordele.
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
@@ -8,57 +8,54 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 06/07/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 10f287c72cbdec8885952dd7cec766420eabfb2e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 00574228fbfa8954b8cfb9cb026a9230eb1bd73e
+ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61234804"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66816534"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Måder at dele dit arbejde i Power BI på
 
-Du har oprettet dashboards og rapporter. Måske har du også samarbejdet med kolleger om dem. Du vil du gerne have, at andre kan få adgang til dem. Hvordan distribueres de på bedste vis?
+Du har oprettet dashboards og rapporter. Måske har du også samarbejdet med kolleger om dem. Du vil du gerne have, at andre kan få adgang til dem. Hvordan distribueres de på bedste vis? I denne artikel sammenligner vi disse muligheder for at samarbejde og dele i Power BI:
 
-I denne artikel sammenligner vi disse muligheder for at samarbejde og dele i Power BI:
+* Samarbejd med kolleger om at oprette relevante rapporter og dashboards i *arbejdsområder*.
+* Gruppér disse dashboards og rapporter i *apps*, og distribuer dem til en større gruppe eller hele organisationen.
+* Opret *delte datasæt*, som dine kolleger kan bruge som udgangspunkt for deres egne rapporter i deres egne arbejdsområder.
+* Opret en *skabelonapp*, som du kan distribuere til eksterne Power BI-brugere via Microsoft AppSource.
+* Del dashboards eller rapporter med nogle få personer fra tjenesten eller Power BI-mobilapps.
+* Udskriv rapporter.
+* *Integrer* rapporter på sikre portaler eller offentlige websteder.
 
-* Samarbejde med kolleger om at oprette relevante rapporter og dashboards i *arbejdsområder*.
-* Gruppering af disse dashboards og rapporter i *apps* og publicering af dem til en større gruppe eller hele organisationen.
-* Deling af dashboards eller rapporter med nogle få personer, fra tjenesten eller Power BI-mobilapps.
-* Udskrivning af rapporter.
-* Integrer rapporter på sikre portaler eller offentlige websteder.
-
-Uanset hvilken indstilling du vælger, skal du bruge en [Power BI Pro-licens](service-features-license-type.md) for at dele, ellers skal indholdet være i [Premium-kapacitet](service-premium-what-is.md). Licenskrav varierer alt efter kollegerne, der får vist dine dashboards, afhængigt af din valgte indstilling. De følgende afsnit går længere ned i detaljen. 
+Uanset hvilken indstilling du vælger, skal du bruge en [Power BI Pro-licens](service-features-license-type.md) for at dele dit indhold, ellers skal indholdet være i en [Premium-kapacitet](service-premium-what-is.md). Licenskrav varierer alt efter de kolleger, der får vist dine dashboards, afhængigt af den valgte indstilling. De følgende afsnit går længere ned i detaljen. 
 
 ![Apps i Power BI-tjenesten](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-home-blog.png)
 
 *Apps i Power BI-tjenesten*
 
-## <a name="collaborate-with-coworkers-in-a-workspace"></a>Samarbejd med kolleger i et arbejdsområde
+## <a name="collaborate-in-a-workspace"></a>Samarbejde i et arbejdsområde
 
-Når teams arbejder sammen, skal de have adgang til de samme dokumenter, så de kan samarbejde hurtigere. I Power BI-arbejdsområder mødes teams for at skabe dele ejerskabet og administrationen af deres dashboards, rapporter, datasæt og projektmapper. Nogle gange organiserer Power BI-brugere deres arbejdsområder baseret på organisationens strukturer, og andre gange opretter de dem til specifikke projekter. Andre organisationer bruger stadig flere arbejdsområder til at gemme forskellige versioner af rapporter eller dashboards, de bruger. 
+Når teams arbejder sammen, skal de have adgang til de samme dokumenter, så de kan samarbejde hurtigere. I arbejdsområder i Power BI mødes teams og deler ejerskabet og administrationen af de dashboards, rapporter, datasæt og projektmapper, der er vigtige for dem. Nogle gange organiserer Power BI-brugere deres arbejdsområder baseret på organisationens strukturer, og andre gange opretter de dem til specifikke projekter. Andre organisationer bruger stadig flere arbejdsområder til at gemme forskellige versioner af rapporter eller dashboards, de bruger. 
 
-I arbejdsområder findes der roller, der bestemmer, hvilke tilladelser dine kolleger har. Du kan bruge disse roller til at bestemme, hvem der kan administrere hele arbejdsområdet eller levere indhold til det.
+I arbejdsområder findes der roller, der bestemmer, hvilke tilladelser dine kolleger har. Du kan bruge disse roller til at bestemme, hvem der kan administrere hele arbejdsområdet eller redigere og distribuere dets indhold.
 
 ![Arbejdsområder](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-apps-workspaces.png)
 
-Nogle brugere lægger indhold i deres Mit arbejdsområde og deler det. Arbejdsområder er mere velegnet til samarbejde end Mit arbejdsområde, da de gør det muligt at eje indhold i fællesskab. Du og hele dit team kan nemt foretage opdateringer eller give andre adgang. Mit arbejdsområde er mest velegnet til enkeltpersoner til skiftende eller personligt indhold.
+Du kan selvfølgelig lægge indhold i Mit arbejdsområde og dele det derfra. Arbejdsområder er mere velegnede til samarbejde end Mit arbejdsområde, da de gør det muligt at eje indhold i fællesskab. Du og hele dit team kan nemt foretage opdateringer eller give andre adgang. Mit arbejdsområde er mest velegnet til enkeltpersoner til skiftende eller personligt indhold.
 
 Lad os forestille os, at du har et færdigt dashboard, du skal dele med dine kollegaer. Hvordan kan du bedst give dem adgang til dashboardet? Svaret afhænger af en række faktorer. 
 
-- Hvis kollegaer, skal du holde dashboardet opdateret eller skal have adgang til alt indholdet i arbejdsområdet, kan du overveje at føje dem til arbejdsområdet. 
-- Hvis kollegaer blot har brug at se dette dashboard, og ikke alt indholdet i arbejdsområdet, kan du igen har alternativer. 
-- Hvis dashboardet er en del af et større indholdssæt, du skal distribuere til mange kollegaer, er den bedste løsning sandsynligvis at publicere en app. 
-- Men hvis kolleger skal blot dette ene dashboard, derefter dele dashboardet kan være den bedste løsning.
+- Hvis kolleger skal holde dashboardet opdateret eller skal have adgang til alt indholdet i arbejdsområdet, kan du overveje at føje dem til arbejdsområdet. 
+- Hvis kolleger bare skal have vist dashboardet og ikke alt indholdet i arbejdsområdet, kan du igen vælge mellem en række alternativer. Hvis nogle få personer har brug for dette ene dashboard, kan deling af dashboardet være den bedste løsning.
+- Hvis dashboardet er en del af et større indholdssæt, du skal distribuere til mange kolleger, er den bedste løsning sandsynligvis at publicere en *app*.
 
-Læs mere om [oprettelse af arbejdsområder](service-create-workspaces.md).
+Power BI har en ny arbejdsområdeoplevelse. Læs [Opret nye arbejdsområder](service-create-the-new-workspaces.md) for at se, hvordan arbejdsområder er blevet ændret. 
 
-**Vidste du det?** Powerbi har en ny oplevelse i arbejdsområdet. Læs [oprette nye arbejdsområder](service-create-the-new-workspaces.md) at se, hvordan arbejdsområder er ved at ændre. 
+## <a name="distribute-insights-in-an-app"></a>Distribuer indsigt i en app
 
-## <a name="distribute-data-and-insights-by-creating-an-app"></a>Distribuer data og indsigt ved at oprette en app
-
-Lad os sige, at du gerne vil distribuere dit dashboard til en bred målgruppe. Du og dine kolleger har oprettet et *arbejdsområde*, derefter har I oprettet og forfinet dashboards, rapporter og datasæt i arbejdsområdet. Nu vælger du de pågældende dashboards og rapporter og publicerer dem som en app – enten til en gruppe eller til hele din organisation.
+Lad os sige, at du gerne vil distribuere dit dashboard til en bred målgruppe i organisationen. Du og dine kolleger har oprettet et *arbejdsområde*, derefter har I oprettet og forfinet dashboards, rapporter og datasæt i arbejdsområdet. Nu vælger du de pågældende dashboards og rapporter og publicerer dem som en app – enten til en gruppe eller til hele din organisation.
 
 ![Ikonet Publicer app](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-app-publish-600.png)
 
@@ -68,7 +65,13 @@ Efter de har installeret en app, kan de få den vist i deres browser eller mobil
 
 Dine brugere kan få vist din app ved enten også at have Power BI Pro-licens, eller ved at appen er lagret i en Power BI Premium-kapacitet. Læs [Hvad er Power BI Premium?](service-premium-what-is.md) for at få flere oplysninger.
 
-Du kan også publicere apps til personer uden for organisationen. De kan få vist og interagere med appindholdet, men de kan ikke dele det med andre.
+Du kan også publicere apps til personer uden for organisationen. De kan få vist og interagere med appindholdet, men de kan ikke dele det med andre. Du kan nu oprette *skabelonapps* og udrulle dem til Power BI-kunder.
+
+## <a name="share-a-dataset"></a>Deling af et datasæt
+
+Lad os indrømme det, nogle personer er bare bedre til at oprette veludformede datamodeller i høj kvalitet i deres rapporter. Måske er det dig? Hele organisationen kan drage nytte af at benytte de samme veludformede datamodeller. *Delte datasæt* udfylder denne rolle. Når du opretter en rapport med en datamodel, som alle skal bruge, kan du gemme rapporten i Power BI-tjenesten og give tilladelse til at bruge den til de rette personer. De kan derefter bygge deres rapporter på dit datasæt. På den måde baserer alle deres rapporter på de samme data og ser den samme "version af sandheden".
+
+Læs mere om [oprettelse og brug af delte datasæt](service-datasets-across-workspaces.md).
 
 ## <a name="share-dashboards-and-reports"></a>Del dashboards og rapporter
 
@@ -98,20 +101,29 @@ Du kan også [dele et snapshot af et felt](consumer/mobile/mobile-windows-10-pho
 
 Du kan udskrive eller gemme som pdf-fil (eller andre statiske filformatet), et helt dashboard, dashboardfelt, rapportside eller visualisering fra Power BI-tjenesten. Rapporter kan kun udskrives med én side ad gangen – du kan ikke udskrive hele rapporten på en gang. Mere om at [udskrive eller gemme som en statisk fil](consumer/end-user-print.md).
 
-## <a name="embed-reports-in-secure-portals-or-public-websites"></a>Integrer rapporter på sikre portaler eller offentlige websteder
+## <a name="embed-reports-in-secure-portals-or-public-web-sites"></a>Integrer rapporter i sikre portaler eller på offentlige websteder
 
-Du kan integrere Power BI-rapporter på portaler eller websteder, hvor dine brugere forventer at se dem.  
+### <a name="embed-in-secure-portals"></a>Integrer i sikre portaler
+
+Du kan integrere Power BI-rapporter i portaler eller på websteder, hvor dine brugere forventer at se dem.  
 Indstillingerne **Integrer i SharePoint Online** og **Integrer** i Power BI-tjenesten giver dig mulighed for at integrere rapporter for dine interne brugere på en sikker måde. 
 
-- **Integrer i SharePoint Online** fungerer sammen med Power BI-webdelen til SharePoint Online. Det giver en enkelt-logon-oplevelse med kontrol over, hvordan rapporten er integreret. 
-- **Integrer** fungerer sammen med en hvilken som helst portal eller et websted, der understøtter integrere indhold ved hjælp af en URL-adresse eller en iFrame. 
+- **Integrer i SharePoint Online** fungerer sammen med Power BI-webdelen til SharePoint Online. Indstillingen giver en enkeltlogon-oplevelse med kontrol over, hvordan rapporten er integreret. 
+- Indstillingen **Integrer** fungerer sammen med en hvilken som helst portal eller et hvilket som helst websted, der understøtter integrering af indhold ved hjælp af en URL-adresse eller en iFrame. 
 
-Uanset hvilken indstilling du vælger, Power BI, hvis det gennemtvinger alle tilladelser og datasikkerhed, før brugerne kan se indholdet. Den person, der får vist rapporten, skal have den rette licens. Flere oplysninger om [integrering i SharePoint Online](service-embed-report-spo.md) og [Integrer](service-embed-secure.md) indstilling i Power BI.
+Uanset hvilken indstilling du vælger, gennemtvinger Power BI alle tilladelser og al datasikkerhed, før brugerne kan få vist indholdet. Den person, der får vist rapporten, skal have den rette licens. Flere oplysninger om indstillingerne [Integrer i SharePoint Online](service-embed-report-spo.md) og [Integrer](service-embed-secure.md) i Power BI.
+
+### <a name="publish-to-public-web-sites"></a>Publicer på offentlige websteder
 
 Med **Publicer på internettet** kan du publicere Power BI-rapporter på hele internettet ved at integrere interaktive visualiseringer i blogindlæg, på websteder, på sociale medier og andre steder til onlinekommunikation på en hvilken som helst enhed. Alle på internettet kan få vist dine rapporter, og du har ingen kontrol over, hvem der kan se, hvad du har publiceret. Modtagerne skal ikke bruge en Power BI-licens. Publicering til internettet er kun tilgængeligt for rapporter, som du kan redigere. Du kan ikke publicere rapporter til internettet, hvis de er delt med dig, eller hvis de er i en app. Mere om [publicering på internettet](service-publish-to-web.md).
 
 >[!Warning]
 >Brug kun [Publicer på internettet](service-publish-to-web.md), hvis du vil dele indhold offentligt, ikke til deling internt.
+
+## <a name="create-and-deploy-template-apps"></a>Opret og udrul skabelonapps
+
+*Skabelonapps* er designet til at blive distribueret offentligt, ofte i Microsoft AppSource. Du opretter en app, og med kun lidt eller ingen kode kan du udrulle den til Power BI-kunder. Dine kunder opretter forbindelse til deres egne data og bruger deres egne konti. Læs mere om [Power BI-skabelonapps](service-template-apps-overview.md).
+
 
 ## <a name="next-steps"></a>Næste trin
 

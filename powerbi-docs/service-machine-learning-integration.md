@@ -1,5 +1,5 @@
 ---
-title: Azure Machine Learning-integration i Power BI (prøveversion)
+title: Integrering af Azure Machine Learning i Power BI
 description: Se, hvordan du kan bruge Machine Learning med Power BI
 author: davidiseminger
 manager: kfile
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 86fab3a760eb8bb12ed1955fd5bf357790090e0e
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.openlocfilehash: 10ee974b73372fb2243febdcb4431b5decebdf4b
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448344"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823479"
 ---
-# <a name="azure-machine-learning-integration-in-power-bi-preview"></a>Azure Machine Learning-integration i Power BI (prøveversion)
+# <a name="azure-machine-learning-integration-in-power-bi"></a>Integrering af Azure Machine Learning i Power BI
 
 Mange organisationer bruger **Machine Learning**-modeller for at få større indsigt i deres virksomhed og dens fremtidige udvikling. Muligheden for at visualisere og aktivere indsigt fra disse modeller i dine rapporter og dashboards og andre analyser kan hjælpe med at udbrede denne indsigt til de forretningsbrugere, der har størst behov for den.  Power BI gør det nu nemt at integrere indsigt fra modeller, der hostes i Azure Machine Learning Service, ved hjælp af enkle peg og klik-håndbevægelser.
 
@@ -51,7 +51,7 @@ Trinnene i denne artikel beskriver, hvordan du tildeler en Power BI-bruger adgan
 
     ![Vælg dit abonnement](media/service-machine-learning-integration/machine-learning-integration_02.png)
 
-4. Vælg **Adgangskontrol (IAM)**, og vælg derefter knappen **Tilføj**.
+4. Vælg **Adgangskontrol (IAM)** , og vælg derefter knappen **Tilføj**.
 
     ![Adgangskontrol IAM](media/service-machine-learning-integration/machine-learning-integration_03.png)
 
@@ -75,7 +75,7 @@ Funktionerne *@input_schema* og *@output_schema* i postscriptet refererer specif
 Disse instruktioner til generering af skemaet ved opdatering af postscriptet skal også anvendes for modeller, der er oprettet via automatiserede eksperimenter for maskinel indlæring veds hjælp af SDK'et til Azure Machine Learning.
 
 > [!NOTE]
-> Modeller, der er oprettet ved hjælp af den visuelle brugergrænseflade i Azure Machine Learning Service (prøveversion), understøtter i øjeblikket ikke generering af skemaer, men det vil de i efterfølgende udgaver. 
+> Modeller, der er oprettet ved hjælp af den visuelle brugergrænseflade i Azure Machine Learning Service, understøtter i øjeblikket ikke generering af skemaer, men det vil de i efterfølgende udgaver. 
 
 ## <a name="invoking-the-azure-ml-model-in-power-bi"></a>Aktivering af Azure Machine Learning-modellen i Power BI
 
@@ -107,9 +107,9 @@ Når du gemmer dit dataflow, aktiveres modellen automatisk, når dataflowet opfr
 
 Denne artiken omfatter en oversigt over integration af Machine Learning i Power BI-tjenesten. Følgende artikler kan også være interessante eller nyttige. 
 
-* [Selvstudium: Aktivér en Machine Learning Studio-model i Power BI (prøveversion)](service-tutorial-invoke-machine-learning-model.md)
+* [Selvstudium: Aktivér en Machine Learning Studio-model i Power BI](service-tutorial-invoke-machine-learning-model.md)
 * [Selvstudium: Brug af Cognitive Services i Power BI](service-tutorial-use-cognitive-services.md)
-* [Cognitive Services i Power BI (prøveversion)](service-cognitive-services.md)
+* [Cognitive Services i Power BI](service-cognitive-services.md)
 
 Du kan få flere oplysninger om dataflow i disse artikler:
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)

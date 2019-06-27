@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/15/2019
+ms.date: 06/10/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2ac622c33aaf9ed72c00e37af4b6ab765cc04113
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 8833f9f4cc4bea23d2070ce19fe34f9400d6bac4
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65853309"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823254"
 ---
 # <a name="whats-new-in-the-latest-power-bi-desktop-update"></a>Hvad er nyt i den nyeste opdatering af Power BI Desktop? 
 
-## <a name="may-2019-update-26954671251"></a>Maj 2019 opdatering (2.69.5467.1251)
+## <a name="june-2019-update-2705494561"></a>Opdatering fra juni 2019 (2.70.5494.561)
 
-Vores maj opdateringer er klar til at springer ud i din have af fantastiske rapporter med spændende nye funktioner og en blomster pot, der er fulde af farverig, smukke visualiseringer. 
+Vores opdateringer i juni er klar til at sprede solskin og blå himmel i dine rapporter med et forfriskende og helt nyt farveskema til Power BI Desktop og en lang række andre forbedringer. 
 
 Nu kan du [downloade den nyeste version af Power BI Desktop](https://powerbi.microsoft.com/desktop). Hvis du kører Windows 10, kan du også få **Power BI Desktop** fra Windows Store. De månedlige versioner er de samme, selvom versionsnummeret kan variere mellem de to, uanset hvilken måde du installerer **Power BI Desktop** på. Du kan finde flere oplysninger i [denne artikel](desktop-get-the-desktop.md). 
 
@@ -37,49 +37,54 @@ Du kan også se videoen med de **seneste opdateringer** fra starten direkte i ar
 Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 
 ### <a name="reporting"></a>Rapportering
-* Ydeevne Analyzer ruden [[video]](https://youtu.be/O8GlHDz8xUQ?t=10)[[artikel]](desktop-performance-analyzer.md)[[blog]    ](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#perfAnalyzer) 
-* Filtrer forbedringer (prøveversion) i ruden [[video]](https://youtu.be/O8GlHDz8xUQ?t=377)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#filterPane)
-* Tabel og matrix tastaturet navigation [[video]](https://youtu.be/O8GlHDz8xUQ?t=518)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#accessibility)
-* Linje data etiketkontrolelement position [[video]](https://youtu.be/O8GlHDz8xUQ?t=572)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#dataLabels)
-* KPI visuel indikator størrelse tekstkontrolelementet [[video]](https://youtu.be/O8GlHDz8xUQ?t=664)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#kpi)
+* Opdateret design af ruden [[video]](https://youtu.be/7k-nP38uHyQ?t=8) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#panes) 
+* Filtre på visualiseringsniveau for udsnit [[video]](https://youtu.be/7k-nP38uHyQ?t=116) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#slicerFilters)
+* Sortering i ruden Ydeevneanalyse [[video]](https://youtu.be/7k-nP38uHyQ?t=237) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#perfAnalyzer)
+* Betinget formatering af opdateringer til formateringsindstillinger [[video]](https://youtu.be/7k-nP38uHyQ?t=311) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#conditionalFormatting)
+* Visuelt værktøjstip til overskrifter [[video]](https://youtu.be/7k-nP38uHyQ?t=530) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#headerTooltips)
+* Tilpasning af etiketten I alt for tabeller og matrixer [[video]](https://youtu.be/7k-nP38uHyQ?t=722) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#totalLabels)
+* Understøttelse af synkroniseringsudsnit for hierarkisk udsnit [[video]](https://youtu.be/7k-nP38uHyQ?t=859) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#syncSlicer)
+* Konsekvente skrifttypestørrelser på tværs af visualiseringer [[video]](https://youtu.be/7k-nP38uHyQ?t=962) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#fontSizes)
 
 
 ### <a name="analytics"></a>Analyse
-* Vigtige lobbyister visuelle forbedringer (prøveversion) [[video]](https://youtu.be/O8GlHDz8xUQ?t=717)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#keyInfluencers) 
-    * Understøttelse af gruppering 
-    * Formateringsindstillinger
-    * Mobil support
-
+* Opdateringer af visualiseringen af nøglefaktorer (prøveversion) [[video]](https://youtu.be/7k-nP38uHyQ?t=1064) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#keyInfluencers) 
+    * Nøglefaktorer med Live Connect til Power BI-datasæt
+    * Tilgængelighed til nøglefaktorer
+    * Understøttelse af Cloud RLS
+* Tilgængelighed til dialogboksen Administrer sammenlægninger [[video]](https://youtu.be/7k-nP38uHyQ?t=1213) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#aggregationsAccessibility) 
 
 ### <a name="modeling"></a>Modellering
-* Deaktiver automatisk datotabeller for nye rapporter [[video]](https://youtu.be/O8GlHDz8xUQ?t=984)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#autoDate) 
-* Opdatering til funktionen ALLSELECTED DAX [[video]](https://youtu.be/O8GlHDz8xUQ?t=1080)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#dax) 
+* Ny = DAX-sammenligningsoperator [[video]](https://youtu.be/7k-nP38uHyQ?t=1267) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#dax) 
 
 
 ### <a name="visuals"></a>Visualiseringer
-* ArcGIS maps for Power BI opdaterer [[video]](https://youtu.be/O8GlHDz8xUQ?t=1093)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#esri) 
-* Seks nye brugerdefinerede visualiseringer og opdateringer [[video]](https://youtu.be/O8GlHDz8xUQ?t=1199)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#mapbox) 
+* Ruden Tilpasset visualisering (prøveversion) [[video]](https://youtu.be/7k-nP38uHyQ?t=1349) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#personalizedVizPane) 
+* Tre nye brugerdefinerede visualiseringer og opdateringer [[video]](https://youtu.be/7k-nP38uHyQ?t=1391) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#synopticVisual) 
 
 
 ### <a name="data-connectivity"></a>Dataforbindelse
-* Essbase-connector – understøttelse for Oprindelig forespørgsel (MDX) [[video]](https://youtu.be/O8GlHDz8xUQ?t=2518)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#essbase) 
-* Intune Data Warehouse-connector [[video]](https://youtu.be/O8GlHDz8xUQ?t=2538)[[blog]   ](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#intune) 
-* Tenforce connector [[video]](https://youtu.be/O8GlHDz8xUQ?t=2560)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#tenforce) 
-* Roamler connector [[video]](https://youtu.be/O8GlHDz8xUQ?t=2596)[[blog]  ](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#roamler) 
+* Opret forbindelse til delte og certificerede datasæt [[video]](https://youtu.be/7k-nP38uHyQ?t=1739) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#sharedCertifiedDatasets) 
+* Generel adgang til Common Data Service-connector [[video]](https://youtu.be/7k-nP38uHyQ?t=1807) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#cds) 
+* Generel adgang til Azure Data Explorer-connector [[video]](https://youtu.be/7k-nP38uHyQ?t=1823) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#azureDataExplorer) 
+* Forbedringer til Cosmos DB-connectoren [[video]](https://youtu.be/7k-nP38uHyQ?t=1835) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#cosmosDB)
+* Entersoft-dataconnector [[video]](https://youtu.be/7k-nP38uHyQ?t=1851) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#entersoft) 
 
 
-### <a name="other"></a>Andet
-* Annullering af automatisk forespørgsel til Power BI Desktop [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#queryCancellation) 
+### <a name="data-preparation"></a>Dataforberedelse
+* Forbedringer af M Intellisense [[video]](https://youtu.be/7k-nP38uHyQ?t=1866) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#intellisense) 
+
 
 > [!NOTE]
 > Du kan også [se alle de datakilder, du kan bruge i Power BI Desktop](desktop-data-sources.md). Vi opdaterer hele tiden listen med nye datakilder, så kig tilbage ofte.
 
-Vil du have flere oplysninger om disse opdateringer? Se nærmere på [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/), hvor du kan få mere detaljerede oplysninger om hver af de nye funktioner (dette er de samme referencer til blogindlæg på listen herover).
+Vil du have flere oplysninger om disse opdateringer? Se nærmere på [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/), hvor du kan få mere detaljerede oplysninger om hver af de nye funktioner (dette er de samme referencer til blogindlæg på listen herover).
 
 
 I følgende video beskrives og vises hver af disse opdateringer. Du kan også se videoen i blogindlægget.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/O8GlHDz8xUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7k-nP38uHyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 > [!NOTE]
 > Du kan også læse om [nyhederne i Power BI-tjenesten](service-whats-new.md) og se [nyhederne i mobileapperne til Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).

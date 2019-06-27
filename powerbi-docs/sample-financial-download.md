@@ -7,29 +7,25 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: sample
-ms.date: 06/23/2018
+ms.date: 06/11/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: c508a97d10c1ac16df5c5a006900257d7003ed43
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1227179a143ccfb4f313a298f9ab8eaacae9c652
+ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61200385"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67038884"
 ---
 # <a name="download-the-financial-sample-workbook-for-power-bi"></a>Download projektmappen Financial Sample til Power BI
-Mangler du nogle data til at teste Power BI-tjenesten? Vi har en enkel Excel-projektmappe med økonomiske eksempeldata, som du kan downloade.  Sådan downloader du den:
+Mangler du nogle data for at teste Power BI-tjenesten? Vi har en simpel Excel-projektmappe med økonomiske eksempeldata, som du kan downloade: [Excel-projektmappe med økonomisk eksempel](http://go.microsoft.com/fwlink/?LinkID=521962).
 
-Projektmappen Financial Sample: [download eksemplet direkte](http://go.microsoft.com/fwlink/?LinkID=521962).
-
-Projektmappen indeholder én tabel med data for salg og overskud efter markedssegment og land/område.
+Projektmappen indeholder en tabel med data for salg og overskud sorteret efter markedssegment og land.
 
 ### <a name="next-steps"></a>Næste trin
-[Hent data](service-get-data.md)
+[Hent data fra Excel-projektmappefiler](service-excel-workbook-files.md).
 
-[Sådan importerer du Excel-data](service-excel-workbook-files.md)
+[Eksempeldata, du kan prøve med Power BI](sample-datasets.md).
 
-[Andre data, som du kan prøve med Power BI – eksempeldatasæt og indholdspakker](sample-datasets.md)
-
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/).
 

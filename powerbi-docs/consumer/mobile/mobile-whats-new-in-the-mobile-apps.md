@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 967af5bc560d5312cd26964e5ca6b2b7eafd60d7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d491855a268c57d7958d52b7c1e9e9191c28601e
+ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65991052"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67038906"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -23,16 +23,45 @@ Du kan finde relaterede oplysninger om nyheder under:
 * [Nyheder i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheder i Power BI-tjenesten](../../service-whats-new.md)  
 
+## <a name="may-2019"></a>Maj 2019
+
+### <a name="siri-shortcuts-support-ios"></a>Understøttelse af Siri-tastaturgenveje (iOS)
+Brugerne kan oprette Siri-genveje til deres Power BI-rapporter og -dashboards og derefter åbne dem direkte via den stemmestyrede grænseflade i Siri. [Læs, hvordan du bruger Siri-genveje i Power BI iOS-appen](https://powerbi.microsoft.com/blog/introducing-siri-integration-with-power-bi-mobile-ios-app-preview/).
+
+### <a name="device-search-ios"></a>Enhedssøgning (iOS)
+Integrering af Power BI med iOS-enhedssøgning (Spotlight). Søgning efter indhold i en iPhone eller på en iPad omfatter nu også Power BI-elementer. Når brugere anvender oprindelig søgning på enheden, vises de Power BI-rapporter, dashboards, apps, arbejdsområder og personer, der svarer til søgekriterierne, også i resultaterne. [Se blogindlægget for at få mere at vide](https://powerbi.microsoft.com/blog/introducing-siri-integration-with-power-bi-mobile-ios-app-preview/).
+
+
+### <a name="single-tap-report-interaction---ga"></a>Rapportinteraktion med enkelt tryk – generelt tilgængelig
+
+Enkelt tryk er nu generelt tilgængelig og bliver standardmåden for interaktion via touch for nye brugere. Brugerne kan stadig slå det fra og bruge dobbelttryk under appindstillingerne.
+
+### <a name="enhanced-conditional-access-protection-ios-android"></a>Forbedret beskyttelse af betinget adgang (iOS, Android)
+
+I AAD har vi integreret [en ny egenskab for beskyttelse af appen via betinget adgang](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) for at øge sikkerheden ved at begrænse adgang til Power BI, før politikken for appen er anvendt.
+
+### <a name="device-protection-ios"></a>Enhedsbeskyttelse (iOS)
+
+Brugere kan anvende indbygget beskyttelse af enhed til at sikre Power BI ved at bede om Face ID, Touch ID eller en adgangskode for at få adgang til Power BI. Dette kan styres af brugeren ved hjælp af appindstillingerne, men også af administratorer ved hjælp af Intune og andre MDM-værktøjer. [Få mere at vide](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-ios-native-secure-access).
+
+### <a name="one-page-report-slideshow-windows"></a>Slideshow med en rapport med én side (Windows)
+
+Understøttelse af automatisk opdatering også for rapporter med én side i slideshows. Hvis rapportens underliggende datakilde opdateres, så registreres og dataene på siden opdateres også.
+
+
 ## <a name="april-2019"></a>April 2019
 
-### <a name="key-influencers-visual"></a>Nøgle Lobbyister visual 
-Nøgle Lobbyister visual er nu tilgængelig på din mobilapp. Denne visual, kan du udføre analyse af vigtige drivere over dine data med blot nogle få tryk.
+### <a name="key-influencers-visual"></a>Visualisering af vigtige influencere 
 
-### <a name="add-comments-to-report-content-android-and-ios"></a>Tilføj kommentarer i rapportens indhold (Android og iOS)
-Du kan nu bruge kommentarer til at samarbejde og del din feedback på rapportsider og visualiseringer. Læs mere om rapporten kommentarer i Power BI-tjenesten og Mobile [i denne blog](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/). 
+Visualisering af vigtige influencere er nu tilgængelig til din mobilapp. Med denne visualisering kan du analysere vigtige drivere for dine data med blot nogle få tryk.
 
-### <a name="maximize-the-view-with-full-screen-mode-android-and-ios"></a>Maksimer visningen med fuld skærm (Android og iOS)
-Vi har tilføjet nye knap, kan du styre, hvornår du skal fokusere på dine data ved at fjerne rapport sidehoveder og sidefødder og giver dig maksimal diskplads til at få vist dine rapporter.
+### <a name="add-comments-to-report-content-android-and-ios"></a>Føj kommentarer til rapportens indhold (Android og iOS)
+
+Du kan nu bruge kommentarer til at samarbejde og dele din feedback om rapportsider og visualiseringer. Læs mere om kommentering i rapporter i Power BI-tjenesten og Mobil [i denne blog](https://powerbi.microsoft.com/blog/announcing-report-commenting-for-power-bi-service-and-mobile/). 
+
+### <a name="maximize-the-view-with-full-screen-mode-android-and-ios"></a>Maksimer visningen med fuldskærmsvisning (Android og iOS)
+
+Vi har tilføjet en ny knap, der giver dig mulighed for at styre, hvornår du skal fokusere på dine data ved at fjerne sidehoveder og sidefødder i rapporter og give dig maksimal plads til at få vist dine rapporter.
 
 ## <a name="march-2019"></a>Marts 2019
 
@@ -42,20 +71,20 @@ Du kan få adgang til Power BI-indhold, der er delt med dig fra andre organisati
 
 ### <a name="enhancing-windows-presentation-mode-with-slideshow-windows"></a>Forbedring af Windows-præsentationstilstand med slideshow (Windows)
 
-Med [slideshow](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) du kan bruge offentlige viser befinder sig på kontoret til at køre Power BI-rapporter i fuld skærm, der bliver automatisk Roter mellem rapportsider.  
+Med [slideshow](https://powerbi.microsoft.com/blog/enhancing-presentation-mode-with-slideshow-in-windows-power-bi-app/) kan du bruge udstyr på dit kontor til at køre Power BI-rapporter i fuld skærm, som roterer automatisk mellem rapportsider.  
 
-### <a name="supporting-pbi-rs-reports-over-adfs-and-wap-configuration-ios-only"></a>Understøttende PBI-RS rapporter over ADFS og WAP-konfiguration (kun iOS)
+### <a name="supporting-pbi-rs-reports-over-adfs-and-wap-configuration-ios-only"></a>Understøttelse af PBI-RS-rapporter via ADFS- og WAP-konfiguration (kun iOS)
 
-Power BI-rapporter (PBIX) hostes i PBI-RS over ADFS-konfiguration kan nu også tilgås fra Power BI iOS-app.
+Power BI-rapporter (PBIX), der hostes i PBI-RS via ADFS-konfiguration, kan nu også tilgås fra Power BI iOS-appen.
 
-### <a name="enabling-single-tap-interaction-with-report-visuals"></a>Aktivering af enkelt tryk interaktion med visuelle elementer
+### <a name="enabling-single-tap-interaction-with-report-visuals"></a>Aktivering af interaktion med et enkelt tryk i forbindelse med visualiseringer i rapporter
 
-Vi har ændret interaktion med rapporten, så det kræver kun én Tryk på et visuelt element, knappen eller udsnittet for at interagere med sine data med det samme. Brugerne behøver ikke længere at trykke på et visuelt element for at vælge den og tryk igen for at interagere med det, et enkelt tryk gør dem begge.
+Vi har ændret interaktionen med rapporten, så der kun kræves ét tryk på en visualisering, en knap eller et udsnit for at interagere med dataene øjeblikkeligt. Brugerne behøver ikke længere at trykke på en visualisering for at vælge den og trykke igen for at interagere med den – begge dele gøres nu med et enkelt tryk.
 
-![Tryk på en enkelt interaktion](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
+![Interaktion med et enkelt tryk](./media/mobile-whats-new-in-the-mobile-apps/single-tap-2.gif)
 
 > [!NOTE]
-> Eksisterende brugere skal slå denne funktionsmåde i indstillingen app. Du kan finde flere oplysninger i den [Sådan konfigurerer du Tryk på en enkelt rapport interaktion](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-app-single-tap) artikel.
+> Eksisterende brugere skal slå denne funktionsmåde til under appindstillingerne. Du kan finde flere oplysninger i artiklen [Sådan konfigurerer du interaktion i en rapport med et enkelt tryk](https://docs.microsoft.com/power-bi/consumer/mobile/mobile-app-single-tap).
 
 ## <a name="january---february-2019"></a>Januar-februar 2019
  

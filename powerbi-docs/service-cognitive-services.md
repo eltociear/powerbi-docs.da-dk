@@ -1,5 +1,5 @@
 ---
-title: Cognitive Services i Power BI (prøveversion)
+title: Cognitive Services i Power BI
 description: Få mere at vide om, hvordan du bruger Cognitive Services med Power BI
 author: davidiseminger
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/02/2019
+ms.date: 06/10/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 63de805b357fd5b4d15aeea2231dc952ec9e7077
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 267534198d40b91a5550321162b42ecd45500673
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61181952"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823494"
 ---
-# <a name="cognitive-services-in-power-bi-preview"></a>Cognitive Services i Power BI (prøveversion)
+# <a name="cognitive-services-in-power-bi"></a>Cognitive Services i Power BI 
 
 Med Cognitive Services i Power BI kan du anvende forskellige algoritmer fra [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) til forbedre dine data i den selvbetjente dataforberedelse til dataflow.
 
@@ -25,7 +25,7 @@ De tjenester, der understøttes i dag, er [Synspunktsanalyse](https://docs.micro
 
 ## <a name="enabling-ai-features"></a>**Aktivering af AI-funktioner**
 
-Cognitive Services understøttes i forbindelse med Premium-kapacitetsnoder EM2, A2 eller P1 og højere. En separat AI-arbejdsbelastning i kapaciteten bruges til at køre Cognitive Services. Denne arbejdsbelastning er som standard deaktiveret i den offentlige prøveversion. Før du bruger Cognitive Services i Power BI, skal AI-arbejdsbelastningen være aktiveret i indstillingerne for kapaciteten på administrationsportalen. Du kan slå AI-arbejdsbyrden til i afsnittet for arbejdsbelastninger og definere den maksimale hukommelsesmængde, denne opgave må forbruge. Den anbefalede hukommelsesgrænse er 20 %. En overskridelse af denne grænse medfører, at forespørgslen bliver langsommere.
+Cognitive Services understøttes i forbindelse med Premium-kapacitetsnoder EM2, A2 eller P1 og højere. En separat AI-arbejdsbelastning i kapaciteten bruges til at køre Cognitive Services. Denne arbejdsbelastning er som standard deaktiveret i den offentlige prøveversion (før juni 2019). Før du bruger Cognitive Services i Power BI, skal AI-arbejdsbelastningen være aktiveret i indstillingerne for kapaciteten på administrationsportalen. Du kan slå AI-arbejdsbyrden til i afsnittet for arbejdsbelastninger og definere den maksimale hukommelsesmængde, denne opgave må forbruge. Den anbefalede hukommelsesgrænse er 20 %. En overskridelse af denne grænse medfører, at forespørgslen bliver langsommere.
 
 ![Cognitive Services i Power BI](media/service-cognitive-services/cognitive-services_01.png)
 
@@ -95,14 +95,14 @@ Denne funktion kræver en URL-adresse til billedet eller et abase 64-felt som in
 
 Der er angivet en oversigt over brugen af Cognitive Services vha. Power BI-tjenesten i denne artikel. Følgende artikler kan også være interessante eller nyttige. 
 
-* [Selvstudium: Aktivér en Machine Learning Studio-model i Power BI (prøveversion)](service-tutorial-invoke-machine-learning-model.md)
-* [Azure Machine Learning-integration i Power BI (prøveversion)](service-machine-learning-integration.md)
+* [Selvstudium: Aktivér en Machine Learning Studio-model i Power BI](service-tutorial-invoke-machine-learning-model.md)
+* [Integration af Azure Machine Learning i Power BI](service-machine-learning-integration.md)
 * [Selvstudium: Brug af Cognitive Services i Power BI](service-tutorial-use-cognitive-services.md)
 
 
 Du kan få flere oplysninger om dataflow i disse artikler:
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Ved hjælp af den beregnede enheder på Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Ved hjælp af dataflows med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power BI dataflows](service-dataflows-developer-resources.md)
+* [Brug af beregnede objekter i Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Brug af dataflow med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI-dataflow](service-dataflows-developer-resources.md)
 * [Integration af dataflow og Azure Data Lake (prøveversion)](service-dataflows-azure-data-lake-integration.md)

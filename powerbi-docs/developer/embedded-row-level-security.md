@@ -8,13 +8,13 @@ ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 03/27/2019
-ms.openlocfilehash: 4fc35b88496674206437507ae866e9eb8cb5dd39
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/10/2019
+ms.openlocfilehash: 6aebc45f2341f098f0f54dad66652967077c2a08
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61353672"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823409"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sikkerhed på rækkeniveau med Power BI Embedded
 
@@ -215,7 +215,7 @@ Her er trinnene, så du kan begynde at konfigurere funktionen CustomData() med d
 
 7. Brug Power BI-API'er til at anvende funktionen CustomData i dit program.  Når et token genereres med funktionen CustomData, skal du have et brugernavn. Brugernavnet skal være lig med UPN for masterbrugeren. Masterbrugeren skal være medlem af den eller de roller, du har oprettet. Hvis der ikke er angivet nogen roller, bruges alle de roller, masterbrugeren er medlem af, til evaluering af sikkerhed på rækkeniveau.
 
-    Når du arbejder med en [tjenesteprincipal](embed-service-principal.md), du skal også udføre trinnene ovenfor stedet ved hjælp af en masterkonto. Når generering af integrerede tokens, kan du bruge den [service principal objekt-ID](embed-service-principal.md#how-to-get-the-service-principal-object-id) som brugernavn.
+    Når du arbejder med en [tjenesteprincipal](embed-service-principal.md), skal du også udføre trinnene ovenfor i stedet for at bruge en masterkonto. Når du genererer et integreret token, skal du bruge den [tjenesteprincipalens objekt-id](embed-service-principal.md#how-to-get-the-service-principal-object-id) som brugernavn.
 
     > [!Note]
     > Når du er klar til at udrulle dit program til produktion, må feltet eller indstillingen for masterbrugerkontoen ikke være synlig for slutbrugeren.
@@ -310,7 +310,7 @@ Værdien i den pågældende identitetsblob skal være et gyldigt adgangstoken ti
 
    ![Programregistrering](media/embedded-row-level-security/token-based-app-reg-azure-portal.png)
 
-## <a name="on-premises-data-gateway-with-service-principal-preview"></a>Datagateway i det lokale miljø med tjenesteprincipal (prøveversion)
+## <a name="on-premises-data-gateway-with-service-principal"></a>Datagateway i det lokale miljø med tjenesteprincipal
 
 Kunder, der konfigurerer sikkerhed på rækkeniveau ved hjælp af en datakilde med direkte forbindelse via SQL Server Analysis Services (SSAS) kan benytte sig af den nye funktionalitet med en [tjenesteprincipal](embed-service-principal.md) til at administrere brugere og deres adgang til data i SSAS, når der integreres med **Power BI Embedded**.
 

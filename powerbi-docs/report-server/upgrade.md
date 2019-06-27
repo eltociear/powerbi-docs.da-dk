@@ -10,12 +10,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 09/05/2017
-ms.openlocfilehash: 8cee670028da828e052d8fe30c594882555c5d53
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 52863ea4bd666547a9c63b3add1d2d9c0626adc7
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770166"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839689"
 ---
 # <a name="upgrade-power-bi-report-server"></a>Opgrader Power BI Report Server
 
@@ -31,21 +31,21 @@ Inden du opgraderer en rapportserver, anbefales det, at du udfører følgende tr
 
 ### <a name="backing-up-the-encryption-keys"></a>Sikkerhedskopiering af krypteringsnøgler
 
-Du skal sikkerhedskopiere krypteringsnøgler, når du konfigurerer en rapportserverinstallation for første gang. Du skal også sikkerhedskopiere nøglerne, hver gang du ændrer identiteten for tjenestekontiene eller omdøber computeren. Du kan finde flere oplysninger i [Sikkerhedskopiér og gendan krypteringsnøgler til rapporttjenester](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
+Du skal sikkerhedskopiere krypteringsnøglerne, første gang du konfigurerer en rapportserverinstallation. Du skal også sikkerhedskopiere nøglerne, hver gang du ændrer identiteten for tjenestekontiene eller omdøber computeren. Du kan finde flere oplysninger i [Sikkerhedskopiér og gendan krypteringsnøgler til rapporttjenester](https://docs.microsoft.com/sql/reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys).
 
 ### <a name="backing-up-the-report-server-databases"></a>Sikkerhedskopiér rapportserverdatabaser
 
-Da en rapportserver er en tilstandsløs server, gemmes alle programdata i databaserne **reportserver** og **reportservertempdb**, der kører på en forekomst af SQL Server Database Engine. Du kan sikkerhedskopiere de **reportserver** og **reportservertempdb** vha.en af de understøttede metoder til sikkerhedskopiering af SQL Server-databaser. Anbefalinger, der er specifikke for rapportserverdatabaserne, omfatter følgende:
+Da en rapportserver er en tilstandsløs server, gemmes alle programdata i databaserne **reportserver** og **reportservertempdb**, der kører på en forekomst af SQL Server Database Engine. Du kan sikkerhedskopiere databaserne **reportserver** og **reportservertempdb** ved hjælp af en af de understøttede metoder til sikkerhedskopiering af SQL Server-databaser. Anbefalinger, der er specifikke for rapportserverdatabaserne, omfatter følgende:
 
-* Brug den fulde gendannelsesmodel til sikkerhedskopiering af den **reportserver** database.
-* Brug simple gendannelsesmodellen til sikkerhedskopiering af den **reportservertempdb** database.
-* Du kan bruge forskellige tidsplaner til sikkerhedskopiering af hver database. Den eneste årsag til at sikkerhedskopiere de **reportservertempdb** er at undgå at skulle oprette den igen, hvis der er en hardwarefejl. I tilfælde af hardwarefejl er det ikke nødvendigt at genoprette dataene i **reportservertempdb**, men du skal dog bruge tabelstrukturen. Hvis du mister **reportservertempdb**, er den eneste måde at få den tilbage på at genoprette rapportserverdatabasen. Hvis du opretter **reportservertempdb** igen, er det vigtigt, at den har samme navn som den primære rapportserverdatabase.
+* Brug modellen for fuldstændig genoprettelse til at sikkerhedskopiere databasen **reportserver**.
+* Brug den enkle genoprettelsesmodel til at sikkerhedskopiere databasen **reportservertempdb**.
+* Du kan bruge forskellige tidsplaner til sikkerhedskopiering af hver database. Den eneste grund til at sikkerhedskopiere **reportservertempdb** er for at undgå at skulle oprette den igen, hvis der opstår en hardwarefejl. I tilfælde af hardwarefejl er det ikke nødvendigt at genoprette dataene i **reportservertempdb**, men du skal dog bruge tabelstrukturen. Hvis du mister **reportservertempdb**, er den eneste måde at få den tilbage på at genoprette rapportserverdatabasen. Hvis du opretter **reportservertempdb** igen, er det vigtigt, at den har samme navn som den primære rapportserverdatabase.
 
 Du kan finde flere oplysninger om sikkerhedskopiering og gendannelse af SQL Server-relationsdatabaser ved at læse [Sikkerhedskopiering og gendannelse af SQL Server-databaser](https://docs.microsoft.com/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases).
 
 ### <a name="backing-up-the-configuration-files"></a>Sikkerhedskopiér konfigurationsfilerne
 
-Power BI Report Server bruger konfigurationsfilerne til at gemme programindstillinger. Du skal sikkerhedskopiere filerne, når du først konfigurere serveren, og når du udruller brugerdefinerede udvidelser. Filer, der skal sikkerhedskopieres, omfatter:
+Power BI Report Server bruger konfigurationsfilerne til at gemme programindstillinger. Du skal sikkerhedskopiere filerne, første gang du konfigurerer serveren, og efter du udruller brugerdefinerede udvidelser. Filer, der skal sikkerhedskopieres, omfatter:
 
 * config.json
 * RSHostingService.exe.config
@@ -63,11 +63,11 @@ Det er nemt at opgradere Power BI Report Server. Der er kun et par trin til inst
 
 2. Vælg **Opgrader Power BI Report Server**.
 
-    ![Opgrader Power BI Report Server](media/upgrade/reportserver-upgrade1.png "Opgrader Power BI Report Server")
+    ![Opgrader Power BI-rapportserver](media/upgrade/reportserver-upgrade1.png "Opgrader Power BI-rapportserver")
 
 3. Læs og acceptér licensens vilkår og betingelser, og vælg derefter **Opgrader**.
 
-    ![Licensaftalen](media/upgrade/reportserver-upgrade-eula.png "licensaftalen")
+    ![Licensaftale](media/upgrade/reportserver-upgrade-eula.png "Licensaftale")
 
 4. Når opgraderingen er udført, kan du vælge **Konfigurer Report Server** for at starte Reporting Services Configuration Manager, eller vælge **Luk** for at afslutte installationen.
 
@@ -81,7 +81,7 @@ Når rapportserveren er opgraderet, skal du sikre dig, at Power Bi-rapportforfat
 
 * [Administratoroversigt](admin-handbook-overview.md)  
 * [Installer Power BI Desktop optimeret til Power BI-rapportserver](install-powerbi-desktop.md)  
-* [Bekræft installationen af en rapporteringstjeneste](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
+* [Bekræft installationen af Reporting Services](https://docs.microsoft.com/sql/reporting-services/install-windows/verify-a-reporting-services-installation)  
 * [Konfigurer kontoen til rapportservertjenesten](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-the-report-server-service-account-ssrs-configuration-manager)  
 * [Konfigurer rapportserverens URL-adresser](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-report-server-urls-ssrs-configuration-manager)  
 * [Konfigurer en rapportservers databaseforbindelse](https://docs.microsoft.com/sql/reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager)  

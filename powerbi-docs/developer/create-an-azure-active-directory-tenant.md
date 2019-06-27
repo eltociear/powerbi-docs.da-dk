@@ -1,6 +1,6 @@
 ---
 title: Opret en Azure Active Directory-lejer, du kan bruge med Power BI
-description: Du kan få mere at vide om, hvordan du opretter en ny Azure Active Directory-lejer (Azure AD), du kan bruge sammen med det brugerdefinerede program vha. Power BI REST-API'er.
+description: Du kan få mere at vide om, hvordan du opretter en ny Azure Active Directory-lejer (Azure AD) til et brugerdefineret program, der kalder REST API'er for Power BI.
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -8,35 +8,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 11/30/2017
-ms.openlocfilehash: ae3d15cce7c0beb8122542e3768a0ec10ca0a1ae
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 05/28/2019
+ms.openlocfilehash: 73dddd00b6f811cd29c76c97b04136358d6e6b7a
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61381614"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809186"
 ---
 # <a name="create-an-azure-active-directory-tenant-to-use-with-power-bi"></a>Opret en Azure Active Directory-lejer, du kan bruge med Power BI
 
-Du kan få mere at vide om, hvordan du opretter en ny Azure Active Directory-lejer (Azure AD), du kan bruge sammen med det brugerdefinerede program vha. Power BI REST-API'er.
+Du kan få mere at vide om, hvordan du opretter en ny Azure Active Directory-lejer (Azure AD) til et brugerdefineret program, der kalder [REST API'er for Power BI](rest-api-reference.md).
 
-En lejer repræsenterer en organisation i Azure Active Directory. Det er en dedikeret instans af Azure AD-tjenesten, som en organisation modtager og ejer, når den tilmelder sig en Microsoft-cloudtjeneste, f.eks Azure, Microsoft Intune eller Office 365. Hver enkelt Azure AD-lejer er specifik og adskilt fra andre Azure AD-lejere.
+En lejer repræsenterer en organisation i Azure Active Directory. Det er en dedikeret instans af Azure AD-tjenesten, som en organisation modtager og ejer, når den tilmelder sig en Microsoft-cloudtjeneste, f.eks. Azure, Microsoft Intune eller Office 365. Hver enkelt Azure AD-lejer er specifik og adskilt fra andre Azure AD-lejere.
 
-Når du har en Azure AD-lejer, kan du definere et program og tildele tilladelser, så programmet kan gøre brug af Power BI REST-API'er.
+Når du har en Azure AD-lejer, kan du definere et program og tildele tilladelser, så programmet kan kalde REST API'er for [Power BI](rest-api-reference.md).
 
-Din organisation har muligvis allerede en Azure AD-lejer, som du kan bruge til dit program. Du kan bruge denne lejer til dine programbehov, eller du kan oprette en ny lejer specielt til dit program. I denne artikel ser vi nærmere på, hvordan du opretter en ny lejer.
+Din organisation har muligvis allerede en Azure AD-lejer, som du kan bruge til dit program. Du kan også oprette en ny lejer specifikt til dit program. I denne artikel kan du se, hvordan du opretter en ny lejer.
 
 ## <a name="create-an-azure-active-directory-tenant"></a>Opret en Azure Active Directory-lejer
 
-Hvis du vil integrere Power BI i dit brugerdefinerede program, skal du definere et program i Azure AD. Det gør du vha. en mappe i Azure AD. Dette er din lejer. Hvis din organisation endnu ikke har en lejer, fordi den ikke bruger Power BI eller Office 365, [skal du oprette en](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Du skal muligvis også oprette en, hvis du ikke vil have, at dit program bliver blandet med organisationens lejer. Det giver dig mulighed for at holde tingene adskilt.
+Hvis du vil integrere Power BI i dit brugerdefinerede program, skal du definere et program i Azure AD, hvilket kræver en Azure AD-mappe. Denne mappe er din *lejer*. Hvis din organisation endnu ikke har en lejer, fordi den ikke bruger Power BI eller Office 365, så [skal du oprette et udviklingsmiljø](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant). Du skal også oprette en, hvis du ikke vil have, at dit program bliver blandet med organisationens lejer, hvilket giver dig mulighed for at isolere ting. Eller måske vil du kun oprette et program til testformål.
 
-Eller måske vil du kun oprette et program til testformål.
-
-Benyt følgende fremgangsmåde for at oprette en ny Azure AD-lejer.
+Sådan opretter du en ny Azure AD-lejer:
 
 1. Gå til [Azure Portal](https://portal.azure.com), og log på med en konto, der har et Azure-abonnement.
 
-2. Vælg **plusikonet (+)** , og søg efter *Azure Active Directory*.
+2. Vælg **plusikonet (+)** , og søg efter **Azure Active Directory**.
 
     ![Plus-ikon (+)](media/create-an-azure-active-directory-tenant/new-directory.png)
 
@@ -46,53 +44,58 @@ Benyt følgende fremgangsmåde for at oprette en ny Azure AD-lejer.
 
 4. Vælg **Opret**.
 
-5. Angiv et **navn for organisationen** sammen med det **oprindelige domænenavn**. Vælg derefter **Opret**. Dermed oprettes din mappe.
+5. Angiv et **Organisationsnavn** og et **Indledende domænenavn**. Vælg derefter **Opret**. Mappen er oprettet.
 
     ![Organisation og domæne](media/create-an-azure-active-directory-tenant/organization-and-domain.png)
 
    > [!NOTE]
-   > Det oprindelige domæne skal være en del af onmicrosoft.com. Du kan tilføje andre domænenavne senere. Mappen for en lejer kan have flere domæner tilknyttet.
+   > Det indledende domæne er en del af onmicrosoft.com. Du kan tilføje andre domænenavne senere. En lejermappe kan have flere domæner tilknyttet.
 
-6. Når du har fuldført oprettelsen af mappen, skal du markere oplysningsfeltet for at administrere din nye mappe.
+6. Når mappen er blevet oprettet, skal du markere oplysningsfeltet for at administrere din nye mappe.
 
-Mappen er nu oprettet. Derefter vil vi føje en bruger til lejeren.
+Derefter skal du tilføje brugere af lejeren.
 
-## <a name="create-some-users-in-your-azure-active-directory-tenant"></a>Opret nogle brugere i Azure Active Directory-lejeren
+## <a name="create-azure-active-directory-tenant-users"></a>Opret brugere af Azure Active Directory-lejeren
 
-Nu, hvor vi har en mappe, vil vi oprette mindst to brugere. Én, der skal være global administrator af lejeren, og én, der skal være vores overordnede bruger i forbindelse med integration. Tænk på denne konto som en tjenestekonto.
+Nu, hvor vi har en mappe, skal vi oprette mindst to brugere. En har rollen Global administrator for lejeren, og den anden er overordnet bruger i forbindelse med integrering. Du kan tænke på sidstnævnte som en tjenestekonto.
 
-1. Kontrollér, at vi er på udfoldningsfanen Azure Active Directory på Azure Portal.
+1. Kontrollér, at du er på udfoldningsfanen Azure Active Directory på Azure Portal.
 
     ![](media/create-an-azure-active-directory-tenant/aad-flyout.png)
 
-    Hvis det ikke er tilfældet, skal du vælge ikonet for Azure Active Directory på linjen med tjenester til venstre.
+    Hvis det ikke er tilfældet, skal du vælge ikonet for Azure Active Directory i navigationen for tjenester til venstre.
 
     ![](media/create-an-azure-active-directory-tenant/aad-service.png)
-2. Under **Administrer** skal du vælge **Brugere og grupper**.
+
+2. Under **Administrer** skal du vælge **Brugere**.
 
     ![](media/create-an-azure-active-directory-tenant/users-and-groups.png)
+
 3. Vælg **Alle brugere**, og vælg derefter **+ ny bruger**.
-4. Angiv et navn og et brugernavn for denne bruger. Dette er din globale administrator for lejeren. Du skal også ændre **Mapperollen** til *Global administrator*. Du kan også få vist den midlertidige adgangskode. Når du er færdig, skal du vælge **Næste**.
+
+4. Angiv et **Navn** og **Brugernavn** for den Globale administrator for lejeren. Skift **Mapperollen** til **Global administrator**. Du kan også få vist den midlertidige adgangskode. Når du er færdig, skal du vælge **Opret**.
 
     ![](media/create-an-azure-active-directory-tenant/global-admin.png)
 
-5. Du skal gøre det samme for almindelige brugere i din lejer. Du kan også benytte denne fremgangsmåde for din overordnede integrationskonto. På dette tidspunkt bevarer vi **Mapperolle** som *Bruger*. Sørg for at notere dig adgangskoden. Vælg derefter **Opret**.
+5. Gør det samme for en almindelige bruger af lejeren. Du kan bruge denne konto til din overordnede integreringskonto. Lad **Mapperolle** være angivet som **Bruger** på nuværende tidspunkt. Angiv adgangskoden, og vælg derefter **Opret**.
 
     ![](media/create-an-azure-active-directory-tenant/pbiembed-user.png)
-6. Tilmeld dig Power BI med den konto, du oprettede under trin 5. Det kan du gøre ved at gå til [powerbi.com](https://powerbi.microsoft.com/get-started/) og vælge **Prøv gratis** under *Power BI – Cloudsamarbejde og deling*.
+
+6. Tilmeld dig Power BI med den konto, du oprettede under trin 5. Gå til [powerbi.com](https://powerbi.microsoft.com/get-started/), og vælg **Prøv gratis** under **Power BI – Cloudsamarbejde og deling**.
 
     ![](media/create-an-azure-active-directory-tenant/try-powerbi-free.png)
 
-    Når du tilmelder dig, bliver du spurgt, om du vil prøve Power BI Pro gratis i 60 dage. Det kan du vælge for at blive professionel bruger. Nu kan du også begynde at udvikle en integreret løsning, hvis det er det, du er på udkig efter.
+    Når du tilmelder dig, bliver du spurgt, om du vil prøve Power BI Pro gratis i 60 dage. Det kan du vælge at gøre, så du kan blive Pro-bruger, hvilket giver dig mulighed for at [begynde at udvikle en integreret løsning](embedding-content.md).
 
    > [!NOTE]
-   > Sørg for at tilmelde dig med den mailadresse, du brugte til brugerkontoen.
+   > Sørg for at tilmelde dig med mailadressen for din brugerkonto.
 
 ## <a name="next-steps"></a>Næste trin
 
-Nu, hvor du har en Azure AD-lejer, kan du bruge den til at teste elementer i Power BI og/eller gå videre med at integrere Power BI-dashboards og -rapporter i programmet. Du kan finde flere oplysninger om, hvordan du integrerer elementer under [Sådan integrerer du Power BI-dashboards, -rapporter og -felter](embedding-content.md).
+Nu, hvor du har en Azure AD-lejer, kan du bruge denne lejer til at teste elementer i Power BI. Du kan også integrere Power BI-dashboards og -rapporter i dit program. Du kan finde flere oplysninger i [Sådan integrerer du Power BI-dashboards, -rapporter og -felter](embedding-content.md).
 
-[Hvad er en Azure AD-mappe?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis)  
-[Sådan henter du Azure Active Directory-lejer](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
+[Hvad er en Azure Active-mappe?](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) 
+ 
+[Hurtig introduktion: Konfigurer et udviklingsmiljø](https://docs.microsoft.com/azure/active-directory/develop/active-directory-howto-tenant)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

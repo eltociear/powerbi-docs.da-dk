@@ -1,5 +1,5 @@
 ---
-title: Integrerede datakilder for sideinddelte rapporter i Power BI-tjenesten (eksempelvisning)
+title: Integrerede datakilder for sideinddelte rapporter i Power BI-tjenesten
 description: I denne artikel kan du læse om, hvordan du opretter og redigerer en integreret datakilde i en sideinddelt rapport i Power BI-tjenesten.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 05/16/2019
-ms.openlocfilehash: 4dd9ad935a9f7b286aa64d977a78364f2aed0e0f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/06/2019
+ms.openlocfilehash: 7b687fd67f844e000811ae00a53772ab9403ab90
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65853390"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66838943"
 ---
-# <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service-preview"></a>Opret en integreret datakilde for sideinddelte rapporter i Power BI-tjenesten (eksempelvisning)
+# <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Opret en integreret datakilde for sideinddelte rapporter i Power BI-tjenesten
 
 I denne artikel kan du læse om, hvordan du opretter og redigerer en integreret datakilde for en sideinddelt rapport i Power BI-tjenesten. Du definerer en integreret datakilde i en enkelt rapport og bruger den kun i denne rapport. I øjeblikket skal sideinddelte rapporter, der er publiceret i Power BI-tjenesten, bruge integrerede datasæt og datakilder, og de kan oprette forbindelse til følgende datakilder:
 
@@ -26,16 +26,18 @@ I denne artikel kan du læse om, hvordan du opretter og redigerer en integreret 
 - Oracle 
 - Teradata 
 
-For disse datakilder, kan du bruge den [forbindelse til SQL Server Analysis Services](service-premium-connect-tools.md) indstilling:
+I forbindelse med følgende datakilder skal du bruge følgende indstilling for [SQL Server Analysis Services-forbindelse](service-premium-connect-tools.md):
 
 - Azure Analysis Services
 - Power BI Premium-datasæt
 
-Sideinddelte rapporter opretter forbindelse til lokale datakilder via en gateway. Du kan konfigurere gatewayen, når du har publiceret rapporten til Power BI-tjenesten. Få mere at vide om [Power BI-gateways](service-gateway-getting-started.md). 
+Sideinddelte rapporter opretter forbindelse til datakilder i det lokale miljø via en [Power BI-gateway](service-gateway-getting-started.md). Du kan konfigurere gatewayen, når du har publiceret rapporten til Power BI-tjenesten.
+
+Se [Rapportdata i Power BI Report Builder](report-builder-data.md) for at få mere detaljerede oplysninger.
 
 ## <a name="create-an-embedded-data-source"></a>Opret en integreret datakilde
   
-1. Åbn Power BI Report Builder.
+1. Åbn Microsoft Power BI Report Builder.
 
 1. På værktøjslinjen i ruden Rapportdata skal du vælge **Ny** > **Datakilde**. Dialogboksen **Egenskaber for datakilde** åbnes.
 
@@ -68,4 +70,4 @@ Sideinddelte rapporter opretter forbindelse til lokale datakilder via en gateway
 ## <a name="next-steps"></a>Næste trin
 
 - [Opret et integreret datasæt til en sideinddelt rapport i Power BI-tjenesten](paginated-reports-create-embedded-dataset.md)
-- [Hvad er sideinddelte rapporter i Power BI Premium? (prøveversion)](paginated-reports-report-builder-power-bi.md)
+- [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)

@@ -1,6 +1,6 @@
 ---
 title: Hent et adgangstoken til godkendelse
-description: Gennemgang til push af data – hent et adgangstoken til godkendelse
+description: Gå videre til overførsel af data – hent et adgangstoken til godkendelse
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -8,42 +8,49 @@ ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
-ms.date: 02/05/2019
-ms.openlocfilehash: 4a0b0f5e7d697c137da343576d05fbcc91b4a4f7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 05/29/2019
+ms.openlocfilehash: 5cb741d194d787014fec39f963e19d04de59a668
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710371"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809087"
 ---
 # <a name="step-2-get-an-authentication-access-token"></a>Trin 2: Hent et adgangstoken til godkendelse
 
-Denne artikel er en del af en trinvis gennemgang af, hvordan du [sender data til et datasæt](walkthrough-push-data.md).
+Denne artikel er det andet trin i serien [Overfør data til et datasæt i Power BI](walkthrough-push-data.md).
 
-På **trin 1** i Push data til et datasæt, [Registrer appen med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md), registrerede du en klientapp i Azure AD. På dette trin henter du et adgangstoken til godkendelse. Power BI-apps er integreret med **Azure AD** for at give sikker logon og godkendelse til din app. Du kan bruge et token til at godkende til **Azure AD** og få adgang til Power BI-ressourcer.
-
-Sådan henter du et adgangstoken til godkendelse.
+I trin 1 [registrerede du en klientapp i Azure AD](walkthrough-push-data-register-app-with-azure-ad.md). På dette trin henter du et adgangstoken til godkendelse. Power BI-apps er integreret med Azure Active Directory for at give sikker logon og godkendelse til din app. Din app bruger et token til at godkende til Azure AD og få adgang til Power BI-ressourcer.
 
 ## <a name="get-an-authentication-access-token"></a>Hent et adgangstoken til godkendelse
 
-> **BEMÆRK**! Før du begynder, skal du kontrollere, at du har fulgt de foregående trin i gennemgangen [Send data til et datasæt](walkthrough-push-data.md).
+Før du starter, skal du sikre, at du har fuldført det [forrige trin](walkthrough-push-data-register-app-with-azure-ad.md) i serien [Overfør data til et datasæt i Power BI](walkthrough-push-data.md). 
 
-1. I Visual Studio (2015 eller nyere), opretter en **konsolprogram** projekt.
-2. Installér [Azure AD-godkendelsesbiblioteket til .NET NuGet-pakker](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). Du skal bruge denne pakke til at hente et sikkerhedstoken til godkendelse i en .NET-app. Sådan installerer du pakken:
+Denne fremgangsmåde kræver Visual Studio 2015 eller nyere.
 
-     a. Visual Studio (2015 eller nyere), Vælg **værktøjer** > **NuGet Package Manager** > **Package Manager Console**.
+1. Opret et nyt C#-projekt med et **konsolprogram** i Visual Studio 2015.
 
-     b. I **Package Manager Console** skal du angive Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
-3. Tilføj koden herunder i klassen Program {...}.
-4. Erstat "{ClientID}" med det **klient-id**, du fik, da du registrerede appen. Se [Registrer appen med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md).
-5. Når du har installeret pakken Microsoft.IdentityModel.Clients.ActiveDirectory, skal du tilføje **using Microsoft.IdentityModel.Clients.ActiveDirectory;** i Program.cs.
-6. Kør konsolprogrammet, og log på din Power BI-konto. Der skulle blive vist en tokenstreng i konsolvinduet.
+2. Installér [Azure AD-godkendelsesbiblioteket til .NET NuGet-pakker](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727). Din .Net-app skal bruge denne pakke til at hente et sikkerhedstoken til godkendelse. 
+
+     a. Vælg **Værktøjer** > **NuGet Package Manager** > **Package Manager Console**.
+
+     b. Åbn **Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612**
+
+     c. Tilføj `using Microsoft.IdentityModel.Clients.ActiveDirectory;` i Program.cs.
+
+3. Tilføj den eksempelkode, der er angivet efter disse trin, i Program.cs.
+
+4. Erstat "{ClientID}" med det **klient-id**, du fik i den [tidligere artikel i serien](walkthrough-push-data-register-app-with-azure-ad.md), når du har registreret din app.
+
+5. Kør konsolprogrammet, og log på din Power BI-konto. 
+
+   En tokenstreng bør blive vist i konsolvinduet.
 
 **Eksempelkode til at hente et sikkerhedstoken til godkendelse**
 
 Tilføj denne kode i Program {...}.
 
-* En tokenvariabel til kald:
+* En tokenvariabel til kald: 
   
   ```csharp
   private static string token = string.Empty;
@@ -104,13 +111,10 @@ Tilføj denne kode i Program {...}.
        #endregion
 ```
 
-Når du har hentet et godkendelsestoken, kan du kalde enhver Power BI-handling. På næste trin kan du se, hvordan du kalder handlingen [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets) for at oprette et datasæt, der kan sende data til et dashboard.
+Når du har hentet et godkendelsestoken, kan du kalde enhver Power BI-handling.
 
-På næste trin kan du se, hvordan du [opretter et datasæt i Power BI](walkthrough-push-data-create-dataset.md).
+I næste artikel i serien kan du se, hvordan du [opretter et datasæt i Power BI](walkthrough-push-data-create-dataset.md).
 
-Herunder kan du se den [komplette kode](#code).
-
-<a name="code"/>
 
 ## <a name="complete-code-listing"></a>Komplet kodeliste
 
@@ -175,14 +179,13 @@ namespace walkthrough_push_data
 }
 ```
 
-[Næste trin >](walkthrough-push-data-create-dataset.md)
+
 
 ## <a name="next-steps"></a>Næste trin
 
-[Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md)  
-[Registrer en app med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md)  
-[Azure AD-godkendelsesbibliotek til .NET NuGet-pakke](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
-[Push data til et Power BI-datasæt](walkthrough-push-data.md)  
-[Oversigt over Power BI REST-API'en](overview-of-power-bi-rest-api.md)  
-[Power BI REST-API-reference](https://docs.microsoft.com/rest/api/power-bi/)  
+[Næste artikel i denne serie > Opret et datasæt i Power BI](walkthrough-push-data-create-dataset.md)
+
+[Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
+[REST-API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/)  
+
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

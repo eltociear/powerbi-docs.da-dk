@@ -10,14 +10,14 @@ ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: 1b0386d523e4a89b7687506564f575e31b55f2e7
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 97903b4e6f906f2cb09f6285832ad6eb9a5a8dca
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720351"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823285"
 ---
-# <a name="service-principal-with-power-bi-preview"></a>Tjenesteprincipal med Power BI (prøveversion)
+# <a name="service-principal-with-power-bi"></a>Tjenesteprincipal med Power BI
 
 Med en **tjenesteprincipal** kan du integrere Power BI-indhold i et program og bruge automatisering med Power BI ved hjælp af et **kun program**-token. En tjenesteprincipal er nyttig, når du bruger **Power BI Embedded**, eller når du **automatiserer Power BI-opgaver og -processer**.
 
@@ -94,7 +94,7 @@ I modsætning til den traditionelle brug af en masterkonto kræves der nogle få
    > [!Important]
    > Når du aktiverer en tjenesteprincipal, der skal bruges med Power BI, er AD-tilladelserne for programmet ikke længere gældende. Tilladelserne for programmet administreres derefter via Power BI-administrationsportalen.
 
-2. Opret en [sikkerhedsgruppe i Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal), og føj det program, du oprettede, til denne sikkerhedsgruppe. Du kan oprette en AAD-sikkerhedsgruppe med [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
+2.  **Anbefalet** – Opret en [sikkerhedsgruppe i Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal), og føj det program, du oprettede, til denne sikkerhedsgruppe. Du kan oprette en AAD-sikkerhedsgruppe med [PowerShell](https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.1.0).
 
     Nedenfor er et eksempel på et script, der kan bruges til at oprette en ny sikkerhedsgruppe og føje et program til denne sikkerhedsgruppe.
 
@@ -109,7 +109,7 @@ I modsætning til den traditionelle brug af en masterkonto kræves der nogle få
     Add-AzureADGroupMember -ObjectId $($group.ObjectId) -RefObjectId $($sp.ObjectId)
     ```
 
-3. Som Power BI-administrator skal du aktivere tjenesteprincipalen under **Indstillinger for udvikler** på Power BI-administrationsportalen. Føj den sikkerhedsgruppe, du oprettede i Azure AD, til afsnittet **Specifik sikkerhedsgruppe** under **Indstillinger for udvikler**.
+3. Som Power BI-administrator skal du aktivere tjenesteprincipalen under **Indstillinger for udvikler** på Power BI-administrationsportalen. Føj den sikkerhedsgruppe, du oprettede i Azure AD, til det specifikke afsnit for sikkerhedsgruppen under **Indstillinger for udvikler**. Du kan også aktivere adgang til tjenesteprincipal for hele organisationen. I så fald er trin 2 ikke nødvendig.
 
    > [!Important]
    > Tjenesteprincipaler har adgang til alle lejerindstillinger, der er aktiveret for hele organisationen eller aktiveret for sikkerhedsgrupper, der har tjenesteprincipaler som en del af gruppen. Hvis du vil begrænse tjenesteprincipalens adgang til specifikke lejerindstillinger, skal du kun tillade adgang til specifikke sikkerhedsgrupper eller oprette en dedikeret sikkerhedsgruppe for tjenesteprincipaler og ekskludere den pågældende tjenesteprincipal.
@@ -181,4 +181,4 @@ Nedenfor er et eksempel på et script, der kan bruges til at hente objekt-id'et 
 * [Registrer et program](register-app.md)
 * [Power BI Embedded til dine kunder](embed-sample-for-customers.md)
 * [Objekter for et program og en tjenesteprincipal i Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
-* [Sikkerhed på rækkeniveau ved hjælp af datagateway i det lokale miljø med tjenesteprincipal (prøveversion)](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal-preview)
+* [Sikkerhed på rækkeniveau ved hjælp af datagateway i det lokale miljø med tjenesteprincipal](embedded-row-level-security.md#on-premises-data-gateway-with-service-principal)

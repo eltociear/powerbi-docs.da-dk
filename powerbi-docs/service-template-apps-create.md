@@ -5,24 +5,24 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/22/2019
 ms.author: maggies
-ms.openlocfilehash: 653050fbe5c860ef1902a4700c3a70a8af2f7092
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2dc9ae7eb7ecd82cdd6c9ea7ddbc6aa1fc70ca8b
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514976"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751200"
 ---
 # <a name="create-a-template-app-in-power-bi-preview"></a>Opret et skabelonprogram i Power BI (prøveversion)
 
 Med de nye Power BI-*skabelonprogrammer* kan Power BI-partnere udarbejde programmer i Power BI med kun lidt eller ingen kode og udrulle dem til Power BI-kunder.  Denne artikel indeholder en trinvis vejledning til at oprette et Power BI-skabelonprogram.
 
-Hvis du kan oprette Power BI-rapporter og dashboards, du kan blive en *skabelon generator* og builds og pakker analytiske indhold i en *app*. Du kan installere din app til andre Power BI-lejere via alle tilgængelige platforme, f.eks AppSource, eller ved at bruge det i dit eget webtjeneste. Som en builder har du mulighed for at oprette en beskyttet analytics-pakke til distribution.
+Hvis du kan oprette Power BI-rapporter og -dashboards, kan du blive *udvikler af skabelonprogrammer* og udarbejde og pakke analytisk indhold i et *program*. Du kan udrulle dit program til andre Power BI-lejere via alle tilgængelige platforme, f.eks. AppSource, eller ved at bruge den i din egen webtjeneste. Som udvikler har du mulighed for at oprette en beskyttet analysepakke, som du kan distribuere.
 
-Administratorer af Power BI-lejere styrer, hvem der kan oprette skabelonprogrammer i organisationen, og hvem der kan installere dem. Disse brugere, der er godkendt kan installere din skabelonapp, og derefter redigere den og distribuere den til Power BI brugerne i deres organisation.
+Administratorer af Power BI-lejere styrer, hvem der kan oprette skabelonprogrammer i organisationen, og hvem der kan installere dem. Godkendte brugere kan installere dit skabelonprogram og derefter redigere det og distribuere det til Power BI-brugerne i deres organisation.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -66,7 +66,7 @@ Hvis du vil oprette et skabelonprogram, som du kan distribuere til andre Power B
 
 5. Vælg **Gem**.
 >[!NOTE]
->Du skal have tilladelse fra din Power BI-administrator for at markedsføre skabelon apps.
+>Du skal have tilladelse fra din Power BI-administrator til at hæve skabelonprogrammer.
 
 ## <a name="create-the-content-in-your-template-app"></a>Opret indhold i dit skabelonprogram
 
@@ -86,43 +86,43 @@ Nu, hvor du har indhold i dit arbejdsområde, er du klar til at pakke det i et s
 
     ![Opret app](media/service-template-apps-create/power-bi-create-app.png)
 
-    Her, udfylde du bygning af yderligere indstillinger til din skabelonapp i fem kategorier:
+    Her udfylder du yderligere indstillinger i fem kategorier for oprettelse for dit skabelonprogram:
 
     **Branding**
 
     ![Branding](media/service-template-apps-create/power-bi-create-branding.png)
     - Appnavn
     - Beskrivelse
-    - Supportwebsted (link vises under app-oplysninger efter fordeling af skabelonapp som org app)
-    - App-logo (45K filstørrelser, 1:1 højde-bredde-forhold, .png .jpg .jpeg formater)
-    - Temafarve for App
+    - Supportwebsted (link præsenteres under programoplysningerne, efter skabelonprogrammet er blevet distribueret igen som organisationsprogram)
+    - Programlogo (begrænsning på filstørrelsen på 45 K, 1:1 højde-bredde-forhold, formaterne .png .jpg og .jpeg)
+    - Programmets temafarve
 
     **Indhold**
 
-    **App-landingsside:** Definer en rapport eller et dashboard for at være landingssiden af din app, skal du bruge en landingsside, der giver den rette indtryk:
+    **Programmets landingside:** Angiv en rapport eller et dashboard som landingsside for dit program, og brug en landingsside, der giver det rigtige indtryk:
 
     ![Indhold](media/service-template-apps-create/power-bi-create-content.png)
 
     **Kontrolelement**
 
-    Angiv grænser og begrænsninger, som dit programbrugere har med indholdet af dit program. Du kan bruge dette kontrolelement til at beskytte immaterielle rettigheder i din app.
+    Angiv begrænsninger og restriktioner for programindhold for brugerne af dit program. Du kan bruge dette kontrolelement til at beskytte immaterielle rettigheder i programmet.
 
-    ![Kontrolelementet](media/service-template-apps-create/power-bi-create-control.png)
+    ![Kontrolelement](media/service-template-apps-create/power-bi-create-control.png)
 
     >[!NOTE]
-    >Eksport til .pbix-format er altid blokeret for brugere, der installerer appen.
+    >Eksport til .pbix-format blokeres altid for brugere, der installerer programmet.
 
     **Parametre**
 
-    Brug denne kategori til at administrere parameteren funktionsmåde, når der oprettes forbindelse til datakilder. Få mere at vide om [oprette forespørgselsparametre](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
+    Brug denne kategori til at administrere funktionsmåden af parameteren, når der oprettes forbindelse til datakilder. Få mere at vide om [oprettelse af forespørgselsparametre](https://powerbi.microsoft.com/blog/deep-dive-into-query-parameters-and-power-bi-templates/).
 
     ![Parametre](media/service-template-apps-create/power-bi-create-parameters.png)
-    - **Værdien**: Parameteren standardværdi.
-    - **Påkrævet**: bruges til at kræve, at indtaste en brugerspecifikke parameter under installationen.
-    - **Lås**: Låsning forhindrer installationsprogrammet opdaterer en parameter.
-    - **Statisk**: Aktivér i tilfælde af appen indeholder *kun* eksempel på data. Når du vælger **statisk**, installationsguiden ikke beder brugerne om at oprette forbindelse til en datakilde.
+    - **Værdien**: Standardparameterværdi.
+    - **Påkrævet**: Brug dette til at kræve, at installationsprogrammet angiver en brugerspecifik parameter.
+    - **Lås**: Låsning forhindrer, at installationsprogrammet opdaterer en parameter.
+    - **Statisk**: Aktivér, hvis programmet *kun* indeholder eksempeldata. Når du vælger **statisk**, bliver brugerne ikke bedt om at oprette forbindelse til en datakilde af installationsguiden.
 
-    **Få adgang til** i testfasen beslutte, hvilke andre i virksomheden kan installere og teste din app. Bare rolig, du kan altid vende tilbage og ændre disse indstillinger senere (indstilling påvirker ikke adgang til appen distribuerede skabelon).
+    **Adgang** I testfasen kan du bestemme, hvem i din organisation der kan installere og teste dit program. Bare rolig, du kan altid vende tilbage og ændre disse indstillinger senere. Indstillingen påvirker ikke adgangen til det distribuerede skabelonprogram.
 
 2. Vælg **Opret program**.
 
@@ -141,9 +141,9 @@ Før du udgiver dette skabelonprogram offentligt, skal du sikre, at det er klar.
 - Hæv præproduktionspakken til produktion: produktionsversion.
 - Slet en pakke, eller start forfra fra den forrige fase.
 
-URL-adressen ændres ikke, når du flytter mellem version faser. Kampagnetilbud påvirker ikke den URL-adresse til sig selv.
+URL-adressen ændres ikke, når du flytter mellem udgivelsesfaser. Opprioritering påvirker ikke selve URL-adressen.
 
-Lad os gå gennem faserne:
+Lad os gennemgå faserne:
 
 1. Vælg **Udgivelsesadministration** i arbejdsområdet for skabelonprogrammet.
 
@@ -171,15 +171,15 @@ Lad os gå gennem faserne:
     ![Kom i gang med dit program](media/service-template-apps-create/power-bi-template-app-get-started.png)
 8. Vælg **Udforsk program** for at bekræfte testprogrammet sammen med eksempeldataene.
 9. Hvis du vil foretage ændringer, skal du vende tilbage til programmet i det oprindelige arbejdsområde. Opdater testprogrammet, indtil du er tilfreds.
-10. Når du er klar til at markedsføre din app til præ-produktions til yderligere test uden for din lejer, gå tilbage til den **Release Management** rude, og vælg **Hæv app**. 
+10. Når du er klar til at hæve dit program til præproduktion med henblik på yderligere test uden for din lejer, skal du gå tilbage til ruden **Udgivelsesadministration** og vælge **Hæv program**. 
 
     ![Hæv programmet til præproduktion](media/service-template-apps-create/power-bi-template-app-promote.png)
 
     >[!NOTE]
-    > Når appen er forfremmet bliver offentligt tilgængelige uden for din organisation.
+    > Når programmet er hævet, bliver det offentligt tilgængelige uden for organisationen.
 
 11. Vælg **Hæv** for at bekræfte dit valg.
-12. Kopiér denne nye URL-adresse for at dele den uden for din lejer med henblik på test. Dette link er også et du indsender, for at starte processen med at distribuere din app på AppSource ved at oprette en [nye Cloudpartnerportal tilbud](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Send kun præ-produktions-links til Cloud Partner-portalen. Kun, når appen er blevet godkendt, og du får besked, den er publiceret i AppSource, og derefter kan du forfremme denne pakke til produktion i Power BI.
+12. Kopiér denne nye URL-adresse for at dele den uden for din lejer med henblik på test. Dette link er også det, du sender for at begynde processen med at distribuere dit program på AppSource ved at oprette et [nyt tilbud på Cloud-partnerportalen](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-publish-offer). Send kun links til præproduktion til Cloud-partnerportalen. Du kan først hæve denne pakke til produktion i Power BI, når programmet er blevet godkendt, og du har fået en meddelelse om, at det er udgivet i AppSource.
 13. Når programmet er klar til produktion eller deling via AppSource, skal du gå tilbage til ruden **Udgivelsesadministration** og vælge **Hæv program** ud for **Præproduktion**.
 14. Vælg **Hæv** for at bekræfte dit valg.
 
@@ -202,11 +202,11 @@ Nu, hvor programmet er i produktion, kan du starte forfra i testfasen uden at af
 
     ![To versioner af et skabelonprogram](media/service-template-apps-create/power-bi-template-app-2-versions.png)
 
-5. Når du er klar til at markedsføre din app til præ-produktions til yderligere test uden for din lejer, skal du gå tilbage til ruden Release Management, og vælg **Hæv app** ud for **Testing**.
-6. Link til dit er nu live og sende den igen til Cloud Partner Portal ved at følge trinnene i [Power BI-App tilbud opdatering](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
+5. Når du er klar til at hæve dit program til præproduktion med henblik på yderligere test uden for din lejer, skal du gå tilbage til ruden Udgivelsesadministration og vælge **Hæv program** ud for **Test**.
+6. Dit link er nu live. Send det igen til Cloud-partnerportalen ved at følge trinnene for [opdatering af tilbud på Power BI-app](https://docs.microsoft.com/azure/marketplace/cloud-partner-portal/power-bi/cpp-update-existing-offer).
 
 >[!NOTE]
->Markedsfør din app til produktion fase, når din app er godkendt af Cloud Partner-portalen, og du har udgivet den.
+>Du kan først hæve dit program til produktionsfasen, når programmet er blevet godkendt af Cloud-partnerportalen, og du har udgivet det.
 
 ## <a name="next-steps"></a>Næste trin
 

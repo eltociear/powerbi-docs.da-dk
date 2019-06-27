@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/20/2017
+ms.date: 06/11/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 201e4e75c9a1ce0d05c85112457191a8d306c596
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c2ccbf8eaa272d6e5a57f88c76c79b5d06bb3892
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61248032"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839676"
 ---
 # <a name="change-the-type-of-visualization-in-a-power-bi-report"></a>Skift visualiseringstype i en Power BI-rapport
 Prøv forskellige visualiseringstyper i Power BI-tjenesten og Power BI Desktop for at se, hvilken type der illustrerer dine data bedst. 
@@ -24,7 +24,7 @@ Prøv forskellige visualiseringstyper i Power BI-tjenesten og Power BI Desktop f
 2. Vælg en visualisering for at aktivere den. En aktiv visualisering har håndtag og en kant.    
 3. Vælg den nye visualiseringstype i ruden Visualiseringer. 
    
-   ![](media/power-bi-report-change-visualization-type/changeviz.gif).
+   ![video, der viser ændring af et søjlediagram til et kurvediagram](media/power-bi-report-change-visualization-type/changeviz.gif).
 4. (Valgfri) [Fastgør din visualisering](../service-dashboard-pin-tile-from-report.md) til dit dashboard som et felt. 
 
 Hvis du ændrer visualiseringstypen i rapporten, efter at du har fastgjort den til dit dashboard, opdateres feltet på dashboardet ikke automatisk. Det vil sige, at hvis du har fastgjort visualiseringen som et kurvediagram og derefter i rapporten, ændrer det til et liggende søjlediagram, så bliver den allerede fastgjorte version af disse data ved med at være et kurvediagram. Fastgør det liggende søjlediagram for også at se det på dashboardet.

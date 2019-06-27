@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 02/05/2019
-ms.openlocfilehash: 43cb59853e884b1e3e6a49c328aa3385e88b62fc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6e28af5a03fd799f088d428f16621358c2a4f7c5
+ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770483"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66823329"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Foretag fejlfinding af dit integrerede program
 
@@ -80,6 +80,7 @@ En fiddler-optagelse kan være påkrævet med henblik på yderligere efterforskn
 * Azure AD auth-tokenet kan være udløbet.
 * Den godkendte bruger er ikke medlem af gruppen (programarbejdsområde).
 * Den godkendte bruger er ikke administrator for gruppen (programarbejdsområde).
+* Den godkendte bruger har ikke tilladelser. Tilladelser kan opdateres ved hjælp af [refreshUserPermissions API](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions)
 * Godkendelsesheaderen kan være angivet forkert. Kontroller for tastefejl.
 
 Programmets backend skal muligvis opdatere godkendelsestokenet før kaldet til GenerateToken.
@@ -185,9 +186,9 @@ Brugersamtykke er deaktiveret for lejeren.
 
 *Tildel tilladelser* til programmet af en administrator – enten til hele lejeren eller til en bestemt bruger.
 
-### <a name="cs1061-error"></a>CS1061 fejl
+### <a name="cs1061-error"></a>CS1061-fejl
 
-Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727) Hvis du oplever en "'AuthenticationContext' indeholder ikke en definition for 'AcquireToken' og ingen tilgængelig 'AcquireToken' accepterer en første argument af typen ' AuthenticationContext' blev fundet (mangler en ved hjælp af direktiv eller en reference til en assembly?) "fejl.
+Download [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/2.22.302111727), hvis du oplever fejlmeddelelsen: "'AuthenticationContext' doesn't contain a definition for 'AcquireToken' and no accessible 'AcquireToken' accepting a first argument of type 'AuthenticationContext' could be found (are you missing a using directive or an assembly reference?)".
 
 ## <a name="data-sources"></a>Datakilder
 

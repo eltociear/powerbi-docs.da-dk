@@ -6,15 +6,15 @@ ms.author: rkarlin
 manager: kfile
 ms.reviewer: nishalit
 ms.service: powerbi
-ms.subservice: powerbi - developer
+ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 31222828d1a12a5f46fd7c04b3aa32240ff35736
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 56b417cb60f7c149b926f4307be0a50b33c278d6
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61374650"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751033"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Administrer flere lejere med Power BI Embedded-analyse
 
@@ -142,9 +142,9 @@ Hvis du vil tilføje yderligere isolation, kan en programudvikler definere en *m
 
 ### <a name="scalability"></a>Skalerbarhed
 
-En fordel ved denne model er, at man ved at adskille dataene i flere datasæt for hver lejer omgår [størrelsesbegrænsningerne for et enkelt datasæt](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (i øjeblikket 10 GB i en kapacitet). Når kapaciteten er overbelastet, kan det fjerne ubrugte datasæt for at frigøre hukommelse til aktive datasæt. Denne opgave er ikke mulig med et enkelt stort datasæt. Brug af flere datasæt gør det også muligt at opdele lejere i flere Power BI-kapaciteter, hvis det er nødvendigt.
+En fordel ved denne model er, at man ved at adskille dataene i flere datasæt for hver lejer omgår [størrelsesbegrænsningerne for et enkelt datasæt](https://docs.microsoft.com/power-bi/service-premium-large-datasets) (i øjeblikket 10 GB i en kapacitet). Når kapaciteten er overbelastet, kan den fjerne ubrugte datasæt for at frigøre hukommelse til aktive datasæt. Denne opgave er ikke mulig med et enkelt stort datasæt. Brug af flere datasæt gør det også muligt at opdele lejere i flere Power BI-kapaciteter, hvis det er nødvendigt.
 
-På trods af disse fordele bør du overveje, hvor meget SaaS-programmet kan rumme i fremtiden. Du kan f.eks. nå begrænsningerne omkring antallet af artefakter, der kan administreres. Se [begrænsninger for udrulninger](#summary-comparison-of-the-different-approaches) senere i denne artikel for at få flere oplysninger. Den kapacitet, der bruges af SKU introducerer en grænse for størrelsen af den hukommelse, der skal passe på, hvor mange opdateringer kan køre på samme tid og de maksimale hyppigheden af dataopdateringer datasæt. Det anbefales at teste, når der administreres hundred- eller tusindvis af datasæt. Det anbefales også at tage højde for det gennemsnitlige forbrug og forbruget ved spidsbelastninger, og om der er nogle bestemte lejere med store datasæt eller forskellige forbrugsmønstre, der administreres anderledes end for andre lejere.
+På trods af disse fordele bør du overveje, hvor meget SaaS-programmet kan rumme i fremtiden. Du kan f.eks. nå begrænsningerne omkring antallet af artefakter, der kan administreres. Se [begrænsninger for udrulninger](#summary-comparison-of-the-different-approaches) senere i denne artikel for at få flere oplysninger. Den kapacitets-SKU, der bruges, introducerer en grænse for størrelsen af den hukommelse, som datasættene er indeholdt i, hvor mange opdateringer, der kan køre på samme tid, og den maksimale hyppighed af dataopdateringer. Det anbefales at teste, når der administreres hundred- eller tusindvis af datasæt. Det anbefales også at tage højde for det gennemsnitlige forbrug og forbruget ved spidsbelastninger, og om der er nogle bestemte lejere med store datasæt eller forskellige forbrugsmønstre, der administreres anderledes end for andre lejere.
 
 ### <a name="automation--operational-complexity"></a>Automatisering og driftsmæssig kompleksitet
 

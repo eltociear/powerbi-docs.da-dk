@@ -1,21 +1,21 @@
 ---
 title: Trinvis opdatering i Power BI Premium
 description: Få mere at vide om, hvordan du aktiverer meget store datasæt i Power BI Premium-tjenesten.
-author: christianwade
+author: mgblythe
 manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
-ms.component: powerbi-admin
+ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/10/2019
-ms.author: chwade
+ms.author: mblythe
 LocalizationGroup: Premium
-ms.openlocfilehash: b338044433d1d87f07ab38d64c15974a1cfaa173
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ee5ec87e04517ce93589b371e97116acbcb02e87
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65536132"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408573"
 ---
 # <a name="incremental-refresh-in-power-bi-premium"></a>Trinvis opdatering i Power BI Premium
 
@@ -41,7 +41,7 @@ Store datasæt, der kan indeholde milliarder af rækker, kan måske ikke være i
 
 #### <a name="rangestart-and-rangeend-parameters"></a>Parametrene RangeStart og RangeEnd
 
-I forbindelse med trinvis opdatering filtreres datasæt ved hjælp af parametrene for dato/klokkeslæt i Power-forespørgsel med de reserverede navne **RangeStart** og **RangeEnd**, hvor der skelnes mellem store og små bogstaver. Disse parametre bruges til at filtrere de data, der importeres til Power BI Desktop, og desuden til dynamisk partitionering af dataene i intervaller, når de er publiceret til Power BI-tjenesten. Parameterværdierne er erstattet af tjenesten til filtrering efter hver partition. Når de er publiceret, overskrives parameterværdierne automatisk af Power BI-tjenesten. Det er ikke nødvendigt at angive dem under indstillinger for datasæt i tjenesten. Når de er publiceret, overskrives parameterværdierne automatisk af Power BI-tjenesten. 
+I forbindelse med trinvis opdatering filtreres datasæt ved hjælp af parametrene for dato/klokkeslæt i Power-forespørgsel med de reserverede navne **RangeStart** og **RangeEnd**, hvor der skelnes mellem store og små bogstaver. Disse parametre bruges til at filtrere de data, der importeres til Power BI Desktop, og desuden til dynamisk partitionering af dataene i intervaller, når de er publiceret til Power BI-tjenesten. Parameterværdierne er erstattet af tjenesten til filtrering efter hver partition. Det er ikke nødvendigt at angive dem under indstillinger for datasæt i tjenesten. Når de er publiceret, overskrives parameterværdierne automatisk af Power BI-tjenesten.
 
 Vælg **Administrer parametre** for at definere parametrene med standardværdier i redigeringsfunktionen til Power-forespørgsel.
 
@@ -163,4 +163,4 @@ in
 
 ## <a name="limitations"></a>Begrænsninger
 
-I øjeblikket for [sammensatte modeller](desktop-composite-models.md), trinvis opdatering understøttes for SQL, Oracle og Teradata-datakilder kun.
+Gradvis opdatering understøttes i øjeblikket kun for [sammensatte modeller](desktop-composite-models.md) for datakilder fra SQL, Oracle og Teradata.

@@ -1,7 +1,7 @@
 ---
 title: Ændringslog for Power BI-rapportserver
 description: Denne ændringslog er for Power BI-rapportserver, og den viser nye elementer sammen med fejlrettelser til hvert frigivet build.
-ms.author: jtarquino
+ms.author: jaimeta
 author: jtarquino
 manager: kfile
 ms.reviewer: maggies
@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: bb25bfb9b3278ef5eccfd54436a6de430d17677d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d7d3bf85661284835271b68c476ee53ec2c474bc
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65990608"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751127"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -25,31 +25,31 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
 ## <a name="may-2019"></a>Maj 2019
 
 - **Power BI-rapportserver**          
-    - *Version 1.5.7074.36177 (Build 15.0.1102.371), udgivet: Den 21. maj 2019*
+    - *Version 1.5.7074.36177 (build 15.0.1102.371), udgivet: 21. maj 2019*
         - Fejlrettelser
             - Sideinddelte rapporter
-                - Rettelse til at aktivere altid pdf-integration af skrifttypen.
-                - Ret til at angive cookies, der sendes via https som Secure
-                - Løs problemer med pop ups på grund af scriptfejl
-                - Rettelse til af visningsproblemer med Mobilappen på Android-telefoner
-                - Rettelse til mobil rapport Tidsnavigator til at vise de korrekte uge tal, uanset hvilken begyndelsen af regnskabsår
-                - Tilføjede 'RestrictedResourceMimeTypeForUpload' konfigurerbare egenskab for administratorer at angive spærret mime-typer
+                - Rettelse, så integrering af skrifttyper i PDF altid aktiveres.
+                - Rettelse for at angive cookies, der sendes via https som sikre
+                - Rettelse af problemer med pop op-vinduer på grund af scriptfejl
+                - Rettelse af visningsproblemer med mobilappen på Android-telefoner
+                - Rettelse af tidsnavigator i mobilrapporten, så det korrekte ugenummer vises, uanset hvornår regnskabsåret begynder
+                - Den konfigurerbare egenskab "RestrictedResourceMimeTypeForUpload" blev tilføjet, så administratorer kan angive forbudte MIME-typer
          - Funktioner
-            - Tilføjelse af understøttelse af visualiseringer, der er tillid til at PBIRS
+            - Understøttelse af visualiseringer, der er tillid til, er føjet til PBIRS
 
 - **Power BI Desktop (optimeret til Power BI-rapportserver)**
-    - *Version: 2.69.5467.1801 (maj 2019), udgivet: Den 21. maj 2019*
+    - *Version: 2.69.5467.1801 (maj 2019), udgivet: 21. maj 2019*
         - Fejlrettelser
-            - Løsning for at undgå tidsintervaller legitimationsoplysninger under upload af PBIX til PBIRS
-            - Rettelser åbner dokumenter med # i filnavnet
-            - Tilføjede nemmere link tilbage navigere på vinduet PBIRS valg
-            - Rettelse til høj kontrast i PBIRS Vis advarsel visual meddelelser for at få vist knappen tilbage.
-            - Brugergrænsefladen rettelser til Valgrude, lærredet skalering.
+            - Rettelse for at undgå gentagen angivelse af legitimationsoplysninger under upload af PBIX til PBIRS
+            - Rettelser til åbning af dokumenter med # i filnavnet
+            - Nemmere link i forbindelse med at navigere tilbage er føjet til vinduet Valg i PBIRS
+            - Rettelse til tilstanden Høj kontrast i PBIRS, så knappen Tilbage vises, vis visuelle advarselsmeddelelser.
+            - Rettelser af brugergrænsefladen for ruden Valg, skalering af lærred.
 
 ## <a name="january-2019"></a>Januar 2019
 
 - **Power BI-rapportserver**          
-    - *Version 1.4.7024.16477 (Build 15.0.1102.299), udgivet: 28. marts 2019*
+    - *Version 1.4.7024.16477 (build 15.0.1102.299), udgivet: 28. marts 2019*
         - Fejlrettelser
             - Power BI-rapporter
                 - Rettelse af en fejl i grundlæggende legitimationsoplysninger, når en direkte forespørgsel bruges i forbindelse med SAP Hana og SAP BW

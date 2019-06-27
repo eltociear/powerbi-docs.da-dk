@@ -8,20 +8,20 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/27/2018
+ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: ef03a562351b8f4487e4822ef28b89009ee5cbb4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 2fa8fa5248ee1e4330804205b2cedb64021b1913
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61145198"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839780"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Udfyldte kort (Choropleths) i Power BI
 Et udfyldt kort bruger skygger eller toner eller mønstre til at vise, hvordan en værdi varierer i forhold på tværs af et geografisk område eller en region.  Fremvis hurtigt disse relative forskelle med skygger, der går fra lys (mindre-hyppige/lavere) til mørk (mere-hyppige/mere).    
 
-![USA-kort](media/power-bi-visualization-filled-maps-choropleths/large_map.png)
+![USA-kort](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
 
 ## <a name="what-is-sent-to-bing"></a>Hvad sendes til Bing
 Power BI integreres med Bing for at angive standardkortkoordinaterne (en proces, der kaldes geokodning). Når du opretter en kortvisualisering i Power BI-tjenesten eller Power BI Desktop, sendes dataene i feltbeholderne **Location**, **Latitude** og **Longitude** ( der bruges til at oprette den pågældende visualisering) til Bing.
@@ -55,10 +55,11 @@ I denne video opretter Kim et grundlæggende kort og konverterer det til et udfy
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
 ### <a name="get-data-and-add-a-new-blank-page-to-the-report"></a>Hent data, og tilføj en ny tom side i rapporten
-1. Hvis du vil oprette dit eget udfyldte kort, kan du [downloade salgs- og marketingeksemplet](../sample-datasets.md) ved at logge på Power BI og vælge **Hent data \> Eksempler \> Salg og marketing \> Tilslut**.
-2. Når du får vist meddelelsen om, at processen lykkedes, skal du lukke den og vælge fanen **Rapporter**. Vælg derefter **Eksempel på salg og marketing** for at åbne rapporten.
+1. Hvis du vil oprette dit eget udfyldte kort, kan du [downloade salgs- og marketingeksemplet](../sample-datasets.md) ved at logge på Power BI og vælge **Hent data \> Eksempler \> Salg og marketing \> Tilslut**. Eller hent appen **Power BI-salg og -marketing** på appsource.com. 
 
-   ![Liste over rapportindhold](media/power-bi-visualization-filled-maps-choropleths/power-bi-content-reports2.png)
+2. Åbn rapporten Salg og marketing.
+
+   ![Rapporten Salg og marketing åbnes](media/power-bi-visualization-filled-maps-choropleths/power-bi-report-canvas.png)
 3. Power BI åbner rapporten. Vælg **Rediger rapport** for at åbne rapporten i [redigeringsvisning](../service-interact-with-a-report-in-editing-view.md).
 
 4. Tilføj en ny side ved at vælge det gule plusikon nederst på rapportcanvasset.
@@ -123,13 +124,13 @@ Hvis du fremhæver en placering på et kartogram, krydsfiltreres de andre visual
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 Kortdata kan være tvetydige.  Der er f.eks. en by, der hedder Paris i Frankrig, men der er også en by, der hedder Paris i Texas. Dine geografiske data gemmes sikkert i separate kolonner – en kolonne til bynavne, en kolonne til statsnavne osv. – så Bing kan muligvis ikke regne ud, hvilket Paris du mener. Hvis dit datasæt allerede indeholder data om breddegrad og længdegrad, har Power BI særlige felter, der kan hjælpe med at gøre kortdataene entydige. Træk det felt, der indeholder dine data om breddegrad til området Visualizations \> Latitude.  Og gør det samme med dine længdegradsdata.    
 
-![Ruderne Visualisering og Felter](media/power-bi-visualization-filled-maps-choropleths/pbi_latitude.png)
+![Ruderne Visualisering og Felter](media/power-bi-visualization-filled-maps-choropleths/pbi-latitude.png)
 
 Hvis du har rettigheder til at redigere datasættet i Power BI Desktop, kan du se denne video for at få hjælp til at korrigere tvetydighed på kortet.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Co2z9b-s_yM" frameborder="0" allowfullscreen></iframe>
 
-Hvis du ikke har adgang til data om breddegrad og længdegrad, [kan du følge disse instrukser for at opdatere datasættet](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
+Hvis du ikke har adgang til data om breddegrad og længdegrad, men du har redigeringsadgang til datasættet, [skal du følge disse instruktioner for at opdatere datasættet](https://support.office.com/article/Maps-in-Power-View-8A9B2AF3-A055-4131-A327-85CC835271F7).
 
 Du kan få hjælp til kortvisualiseringer under [Tip og råd til kortvisualiseringer](../power-bi-map-tips-and-tricks.md).
 

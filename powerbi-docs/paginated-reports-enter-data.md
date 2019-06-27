@@ -1,5 +1,5 @@
 ---
-title: Angiv data direkte i en sideinddelt rapport i Report Builder (eksempelvisning)
+title: Angiv data direkte i en sideinddelt rapport i Report Builder
 description: I denne artikel kan se du, hvordan du kan angive data direkte i en sideinddelt rapport i Report Builder.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 11/19/2018
-ms.openlocfilehash: 3237f4751083f374ac00a959f226429b17757b50
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/06/2019
+ms.openlocfilehash: fd000ffd0d47935f36e72f6d0000d548623edf0a
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61424316"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839102"
 ---
-# <a name="enter-data-directly-in-a-paginated-report-in-report-builder-preview---power-bi"></a>Angiv data direkte i en sideinddelt rapport i Report Builder (eksempelvisning) – Power BI
+# <a name="enter-data-directly-in-a-paginated-report-in-report-builder---power-bi"></a>Angiv data direkte i en sideinddelt rapport i Report Builder – Power BI
 
 I denne artikel kan du få mere at vide om en funktion i den nye version af SQL Server 2016 Report Builder, som gør det muligt at indtaste data direkte i en RDL-rapport som et integreret datasæt.  Denne funktion er magen til Power BI Desktop. Du kan skrive data direkte i et datasæt i din rapport eller indsætte dem vha. et andet program, f.eks. Microsoft Excel. Når du har oprettet et datasæt ved at angive data, kan du bruge det på præcis samme måde, som du ville bruge alle andre integrerede datasæt, du har oprettet. Du kan desuden tilføje mere end én tabel og bruge én som et filter for den anden. Denne funktion er især nyttig til små, statiske datasæt, som du evt. vil bruge i din rapport, f.eks. rapportparametre.
  
@@ -76,7 +76,7 @@ Du kan bruge dit datasæt som grundlag for datavisualiseringer i din rapport. Du
 
 ## <a name="upload-the-paginated-report-to-the-power-bi-service"></a>Upload den sideinddelte rapport i Power BI-tjenesten
 
-Nu, hvor sideinddelte rapporter understøttes i prøveversionen af Power BI-tjenesten, kan du uploade din sideinddelte rapport til en Premium-kapacitet. Se flere detaljer under [Upload en sideinddelt rapport](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report).
+Nu, hvor sideinddelte rapporter understøttes i Power BI-tjenesten, kan du uploade din sideinddelte rapport til en Premium-kapacitet. Se flere detaljer under [Upload en sideinddelt rapport](paginated-reports-save-to-power-bi-service.md#upload-a-paginated-report).
 
 ## <a name="upload-the-paginated-report-to-a-report-server"></a>Upload den sideinddelte rapport til en rapportserver
 
@@ -98,5 +98,5 @@ Det var det. Du kan nu publicere rapporter, der bruger denne nye funktionalitet 
 
 ## <a name="next-steps"></a>Næste trin
 
-- [Hvad er sideinddelte rapporter i Power BI Premium? (prøveversion)](paginated-reports-report-builder-power-bi.md)
+- [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 - [Hvad er Power BI-rapportserveren?](report-server/get-started.md)

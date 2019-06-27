@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 10/10/2018
 LocalizationGroup: Gateways
-ms.openlocfilehash: eb50d8096c448e1a01533a7d8570e9dcc716ef23
-ms.sourcegitcommit: 8fda7843a9f0e8193ced4a7a0e5c2dc5386059a6
+ms.openlocfilehash: d8cebda3ad0db9fba48804fb8d2dd029c1c07f8d
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58174976"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809268"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Brug Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø
 
@@ -146,7 +146,7 @@ På den computer, der kører gatewaytjenesten (**PBIEgwTestGW** i eksemplet), sk
 
     Højreklik, og åbn **Egenskaber**. Se listen over konti. Den skal omfatte gatewaytjenestekontoen (**PBIEgwTest\GatewaySvc**).
 
-1. Under **Tildeling af brugerrettigheder** på listen over politikker skal du vælge **Optræd som en del af operativsystemet (SeTcbPrivilege)**. Kontrollér, at gatewaytjenestekontoen også er medtaget på listen over konti.
+1. Under **Tildeling af brugerrettigheder** på listen over politikker skal du vælge **Optræd som en del af operativsystemet (SeTcbPrivilege)** . Kontrollér, at gatewaytjenestekontoen også er medtaget på listen over konti.
 
 1. Genstart processen for tjenesten med **datagatewayen i det lokale miljø**.
 
@@ -195,9 +195,7 @@ Denne vejledning er et forsøg på at være så omfattende som muligt. Hvis du a
 ### <a name="set-up-gsskrb5-on-client-machines-and-the-sap-bw-server"></a>Konfigurer gsskrb5 på klientcomputere og SAP BW-serveren
 
 > [!NOTE]
-> `gsskrb5` understøttes ikke længere aktivt af SAP. Du kan finde flere oplysninger under [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Bemærk også, at `gsskrb5` ikke tillader SSO-forbindelser fra datagatewayen til SAP BW-meddelelsesservere. Det er kun forbindelser til SAP BW-programservere, der er mulige.
-
-`gsskrb5` skal bruges af både klienten og serveren, før en SSO-forbindelse via gatewayen kan fuldføres. Common Crypto-biblioteket (sapcrypto) understøttes ikke i øjeblikket.
+> `gsskrb5` understøttes ikke længere aktivt af SAP. Du kan finde flere oplysninger under [SAP Note 352295](https://launchpad.support.sap.com/#/notes/352295). Bemærk også, at `gsskrb5` ikke tillader SSO-forbindelser fra datagatewayen til SAP BW-meddelelsesservere. Det er kun forbindelser til SAP BW-programservere, der er mulige. `gsskrb5` skal bruges af både klienten og serveren, før en SSO-forbindelse via gatewayen kan fuldføres. Common Crypto-biblioteket (sapcrypto) understøttes nu til SAP BW.
 
 1. Download `gsskrb5` - `gx64krb5` fra [SAP Note 2115486](https://launchpad.support.sap.com/) (SAP s-bruger er påkrævet). Sørg for, at du mindst har version 1.0.11.x af gsskrb5.dll og gx64krb5.dll.
 
@@ -398,7 +396,7 @@ Resultatet er, at gatewayen ikke kan repræsentere den oprindelige bruger korrek
 
 Du kan finde flere oplysninger om **datagatewayen i det lokale miljø** og **DirectQuery** i følgende ressourcer:
 
-* [Datagateway i det lokale miljø](service-gateway-onprem.md)
+* [On-premises data gateway (Datagateway i det lokale miljø)](service-gateway-onprem.md)
 * [DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakilder, der understøttes af DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery og SAP BW](desktop-directquery-sap-bw.md)

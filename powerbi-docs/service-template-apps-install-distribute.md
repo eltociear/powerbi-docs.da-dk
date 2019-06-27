@@ -5,24 +5,24 @@ author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
-ms.component: powerbi-service
+ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/19/2019
 ms.author: maggies
-ms.openlocfilehash: 2b7b2630e665fca9013920718ff58dd973f01392
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0671dfb324b3d66a9dee9585f94d3cb6825fb5eb
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64578575"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751249"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi-preview"></a>Installér og distribuer skabelonprogrammer i din organisation – Power BI (prøveversion)
 
-Er du en analytiker for Power BI? Hvis du så i denne artikel forklares, hvordan du installerer *skabelon apps* til at oprette forbindelse til mange af de tjenester, du bruger til at køre din virksomhed, f.eks Salesforce, Microsoft Dynamics og Google Analytics. Du kan ændre de dashboards og rapporter til at opfylde behovene i din organisation, og derefter distribuere dem til dine kollegaer som en *app*. 
+Er du Power BI-analytiker? Hvis du er det, så kan du i denne artikel se en forklaring på, hvordan du installerer *skabelonprogrammer* for at oprette forbindelse til mange af de tjenester, du bruger til at drive din forretning, f.eks. Salesforce, Microsoft Dynamics og Google Analytics. Du kan redigere dashboardet og rapporterne, så de opfylder din organisations behov, og derefter distribuere dem til dine kolleger som et *program*. 
 
 ![Installerede Power BI-programmer](media/service-template-apps-install-distribute/power-bi-get-apps.png)
 
-Hvis du er interesseret i at oprette skabelonprogrammer, som du selv distribuerer, skal du se [Opret et skabelonprogram i Power BI](service-template-apps-create.md). Power BI-partnere kan oprette Power BI-apps med kun lidt eller ingen kode, og udrulle dem til Power BI-kunder. 
+Hvis du er interesseret i at oprette skabelonprogrammer, som du selv distribuerer, skal du se [Opret et skabelonprogram i Power BI](service-template-apps-create.md). Power BI-partnere kan udarbejde Power BI-programmer med kun lidt eller ingen kode og udrulle dem til Power BI-kunder. 
 
 ## <a name="prerequisites"></a>Forudsætninger  
 

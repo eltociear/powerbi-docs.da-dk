@@ -1,5 +1,5 @@
 ---
-title: 'Selvstudium: Opret en sideinddelt rapport, og upload den i Power BI-tjenesten (prøveversion)'
+title: 'Selvstudium: Opret en sideinddelt rapport, og upload den til Power BI-tjenesten'
 description: I dette selvstudium kan du oprette forbindelse til et eksempel på en Azure SQL-database. Du kan bruge en guide i Report Builder til at oprette en sideinddelt rapport. Derefter uploader du den sideinddelte rapport til et arbejdsområde i en Premium-kapacitet i Power BI-tjenesten.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,24 +9,24 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: e7baff9a6427578266e08e7bde91be664e46edb9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 44af74b722e5d21c7475a382f8097f453854230d
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60989655"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839740"
 ---
-# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service-preview"></a>Selvstudium: Opret en sideinddelt rapport, og upload den i Power BI-tjenesten (prøveversion)
+# <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Selvstudium: Opret en sideinddelt rapport, og upload den til Power BI-tjenesten
 
-I dette selvstudium kan du oprette forbindelse til et eksempel på en Azure SQL-database. Du kan bruge en guide i Power BI Report Builder til at oprette en sideinddelt rapport med en tabel, der skal ombrydes på flere sider. Derefter uploader du den sideinddelte rapport til et arbejdsområde i en Premium-kapacitet i Power BI-tjenesten. Sideinddelte rapporter i Power BI-tjenesten er aktuelt tilgængelige som prøveversion.
+I dette selvstudium kan du oprette forbindelse til et eksempel på en Azure SQL-database. Brug derefter en guide i Power BI Report Builder til at oprette en sideinddelt rapport med en tabel, der ombrydes på flere sider. Derefter uploader du den sideinddelte rapport til et arbejdsområde i en Premium-kapacitet i Power BI-tjenesten.
 
 ![Sideinddelt rapport i Power BI-tjenesten](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
-Her er de trin, du har fuldført i dette selvstudium:
+Her er de trin, du fuldfører i dette selvstudium:
 
 > [!div class="checklist"]
 > * Oprette et eksempel på en Azure-database.
-> * Opret en matrix i Power BI Report Builder ved hjælp af en guide.
+> * Oprette en matrix i Power BI Report Builder ved hjælp af en guide.
 > * Formatere rapporten med titel, sidetal og kolonneoverskrifter på hver side.
 > * Formatere valutaen.
 > * Uploade rapporten til Power BI-tjenesten.
@@ -329,5 +329,5 @@ Nu, hvor du har oprettet denne sideinddelte rapport, er det tid til at uploade d
 
 ## <a name="next-steps"></a>Næste trin
 
-[Hvad er sideinddelte rapporter i Power BI Premium? (prøveversion)](paginated-reports-report-builder-power-bi.md)
+[Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
 

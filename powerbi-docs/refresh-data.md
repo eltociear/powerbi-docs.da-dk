@@ -1,279 +1,327 @@
 ---
 title: Opdatering af data i Power BI
-description: Opdatering af data i Power BI
+description: I denne artikel beskrives funktionerne til opdatering af data i Power BI og deres afhængigheder på et konceptuelt niveau.
 author: mgblythe
 manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/21/2019
+ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 149f6963cc59c70342bee824579f6ae4c97a16d1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 24a559fe35291c5256a5280b3c7d63d110868f4a
+ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60974183"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67038944"
 ---
 # <a name="data-refresh-in-power-bi"></a>Opdatering af data i Power BI
-At sørge for altid at have de nyeste data er ofte kritisk for at kunne tage de rigtige beslutninger. Du har muligvis allerede brugt Hent data i Power BI til at oprette forbindelse til og overføre data, så du kunne oprette nogle rapporter og et dashboard. Nu skal du sikre dig, at dataene virkelig er de nyeste og bedste.
 
-I mange tilfælde behøver du ikke foretage dig noget som helst. Nogle data, som fra f.eks. en Salesforce- eller Marketo-indholdspakke, opdateres automatisk for dig. Hvis din forbindelse gør brug af en liveforbindelse eller DirectQuery, bliver dataene holdt opdateret. Men i andre tilfælde, som f.eks. med en Excel-projektmappe eller Power BI Desktop-fil, der opretter forbindelse til en ekstern onlinedatakilde eller en datakilde i det lokale miljø, skal du opdatere manuelt eller oprette en tidsplan for opdatering, så Power BI kan opdatere dataene i dine rapporter og dashboards for dig.
+Power BI gør det muligt for dig at konvertere data til indsigt til handling hurtigt, men du skal sørge for, at Power BI-rapporterne og -dashboardene er opdateret med de nyeste data. Det er ofte kritisk at vide, hvordan man opdaterer dataene, for at kunne levere nøjagtige resultater.
 
-Denne artikel er, sammen med et par andre, beregnet til at hjælpe dig med at forstå, hvordan opdatering af data i Power BI virkelig fungerer, om du har brug for at oprette en tidsplan for opdatering, og hvad der skal være på plads for at opdatere dine data.
+I denne artikel beskrives funktionerne til opdatering af data i Power BI og deres afhængigheder på et konceptuelt niveau. Den indeholder også bedste praksis og tip til at undgå almindelige problemer med opdateringer. Indholdet danner et fundament, som hjælper dig med at forstå, hvordan opdatering af data fungerer. Du kan finde målrettede trinvise instruktioner til at konfigurere opdatering af data i de selvstudier og Sådan gør du-vejledninger, der er angivet under afsnittet Næste trin i slutningen af denne artikel.
 
 ## <a name="understanding-data-refresh"></a>Forstå opdatering af data
-Før du konfigurerer opdatering, er det vigtigt at forstå, hvad det er, der opdateres, og hvor du får dine data fra.
 
-En *datakilde* er stedet, hvor dataene, du udforsker i dine rapporter og dashboards, egentlig kommer fra – f.eks. en onlinetjeneste som Google Analytics eller QuickBooks, en database i clouden som Azure SQL Database eller en database eller fil på en lokal computer eller server i din egen organisation. Disse er alle datakilder. Datakildens type bestemmer, hvordan data derfra opdateres. Vi ser nærmere på opdatering af den enkelte type datakilde lidt senere i afsnittet [Hvad kan opdateres?](#what-can-be-refreshed)
+Når du opdaterer data, skal Power BI sende en forespørgsel til de underliggende datakilder, muligvis indlæse kildedataene i et datasæt og derefter opdatere alle visualiseringer i dine rapporter eller på dine dashboards, der er afhænger af det opdaterede datasæt. Hele processen består af flere faser afhængigt af lagertilstandene for dine datasæt, som forklaret i efterfølgende afsnit.
 
-Et *datasæt* oprettes automatisk i Power BI, når du bruger Hent data til at oprette forbindelse til og overføre data fra en indholdspakke eller fil, eller du opretter forbindelse til en livedatakilde. I Power BI Desktop og Excel 2016 kan du også publicere din fil direkte til Power BI-tjenesten. Det fungerer på samme måde, som hvis du bruger Hent data.
+Du skal være opmærksom på følgende begreber for at forstå, hvordan Power BI opdaterer dine datasæt, rapporter og dashboards:
 
-I hvert enkelt tilfælde oprettes et datasæt, og det vises i Mit arbejdsområde eller Gruppe, som er objektbeholdere i Power BI-tjenesten. Hvis du vælger **ellipsen (...)**  ud for et datasæt, kan du udforske dataene i en rapport, redigere indstillingerne og konfigurere opdatering.
+- **Lagertilstande og typer af datasæt**: De lagertilstande og typer af datasæt, som Power BI understøtter har forskellige opdateringskrav. Du kan vælge mellem at importerer data i Power BI igen for at se eventuelle ændringer eller sende forespørgsler til dataene direkte ved kilden.
+- **Power BI-opdateringstyper**: Hvis du kender de forskellige opdateringstyper, kan det hjælpe dig med at forstå, hvor Power BI bruger tiden under en opdateringshandling, uanset hvad detaljerne for datasættet er. Og når du kombinerer disse oplysninger med detaljerne for lagertilstanden, hjælper det dig med at forstå, hvad det er Power BI præcist gør, når du vælger **Opdater nu** for et datasæt.
 
-![](media/refresh-data/dataset-menu.png)
+### <a name="storage-modes-and-dataset-types"></a>Lagertilstande og typer af datasæt
 
-Et datasæt kan hente data fra en eller flere datakilder. Du kan f.eks. bruge Power BI Desktop til at hente data fra en SQL-database i din organisation og få andre data fra et OData-feed online. Derefter oprettes et enkelt datasæt, når du publicerer filen til Power BI, men det vil have datakilder til både SQL-databasen og OData-feedet.
+Et Power BI-datasæt kan køre i en af følgende tilstande for at få adgang til data fra en lang række datakilder. Du kan finde flere oplysninger i [Lagertilstand i Power BI Desktop](desktop-storage-mode.md).
 
-Et datasæt indeholder oplysninger om datakilderne, legitimationsoplysninger til datakilderne og i de fleste tilfælde et undersæt af data, der er kopieret fra datakilden. Når du opretter visualiseringer i rapporter og dashboards, ser du på data i datasættet, eller hvis det er en liveforbindelse som Azure SQL Database, definerer datasættet dataene, du kan se, direkte fra datakilden. Hvis der er tale om en liveforbindelse til Analysis Services stammer datasætdefinitionen fra Analysis Services direkte.
+- Importtilstand
+- DirectQuery-tilstand
+- LiveConnect-tilstand
+- Pushtilstand
 
-> *Når du opdaterer data, opdaterer du dataene i det datasæt, der er gemt i Power BI fra din datakilde. Denne opdatering er en fuld opdatering og ikke trinvis.*
-> 
-> 
+I følgende diagram vises de forskellige dataflow baseret på lagertilstand. Det vigtigste er, at det kun er Importtilstand for datasæt, der kræver en opdatering af kildedata. De skal opdateres, fordi det kun er denne type datasæt, der importerer data fra dets datakilder, og de importerede data opdateres muligvis enten regelmæssigt elle ad hoc. DirectQuery-datasæt og datasæt i LiveConnect-tilstand til Analysis Services importerer ikke data; de sender forespørgsler til de underliggende datakilder ved hver brugerinteraktion. Datasæt i pushtilstand tilgår ingen datakilder direkte, men forventer, at du sender dataene til Power BI via push. Kravene til opdatering af datasæt varierer afhængigt af typen af lagertilstand/datasæt.
 
-Når du opdaterer data i et datasæt, uanset om det er ved hjælp af Opdater nu, eller ved at indstille en tidsplan for opdatering, bruger Power BI oplysninger i datasættet til at oprette forbindelse til de datakilder, der er defineret for den, efterspørger opdaterede data og indlæser derefter de opdaterede data i datasættet. Alle visualiseringer i dine rapporter eller dashboards, der er baseret på dataene, opdateres automatisk.
+![Lagertilstande og typer af datasæt](media/refresh-data/storage-modes-dataset-types-diagram.png)
 
-Før vi fortsætter, er der noget andet, som er meget vigtigt at få med:
+#### <a name="datasets-in-import-mode"></a>Datasæt i Importtilstand
 
-> *Uanset hvor ofte du opdaterer datasættet, eller hvor ofte du ser på livedata, er det dataene hos datakilden, som skal være opdaterede først.*
-> 
-> 
+Power BI importerer dataene fra de oprindelige datakilder til datasættet. Forespørgsler til Power BI-rapporter og -dashboards, der sendes til datasættet, returnerer resultater fra de importerede tabeller og kolonner. Du kan anse sådan et datasæt for at være en tidsspecifik kopi. Da Power BI kopierer dataene, skal du opdatere datasættet for at hente ændringer fra de underliggende datakilder.
 
-De fleste organisationer bearbejder deres data en gang om dagen, som regel om aftenen. Hvis du planlægger en opdatering af et datasæt, der er baseret på en Power BI Desktop-fil, der har forbindelse til en database i et lokalt miljø, og din it-afdeling bearbejder den SQL-database én gang om aftenen, skal du kun konfigurere planlagt opdatering til at køre en gang om dagen. For eksempel efter bearbejdningen af databasen har fundet sted, men før du tager på arbejde. Det er selvfølgelig ikke altid tilfældet. Power BI tilbyder mange måder, hvorpå du kan oprette forbindelse til datakilder, der opdateres ofte eller endda i realtid.
+Da Power BI cachelagrer dataene, kan datasæt i Importtilstand have en betydelig størrelse. I følgende tabel kan du se den maksimale størrelse af datasæt pr. kapacitet. Hold dig godt under den maksimale størrelse for datasæt for at undgå opdateringsproblemer, som kan opstå, hvis dine datasæt kræver mere end de maksimale tilgængelige ressourcer under en opdateringshandling.
 
-## <a name="types-of-refresh"></a>Opdateringstyper
-Der er fire primære opdateringstyper, der sker i Power BI. Opdatering af pakke, opdatering af model/data, opdatering af felt og opdatering af visuelle beholdere.
+| Kapacitetstype | Maksimal størrelse af datasæt |
+| --- | --- |
+| Delte, A1, A2 eller A3 | 1 GB |
+| A4 eller P1 | 3 GB |
+| A4 eller P2 | 6 GB |
+| A6 eller P3 | 10 GB |
+| | |
 
-### <a name="package-refresh"></a>Opdatering af pakke
-Dette synkroniserer din Power BI Desktop- eller Excel-fil mellem Power BI-tjenesten og OneDrive eller SharePoint Online. Denne metode henter ikke data fra den oprindelige datakilde. Datasættet i Power BI vil kun blive opdateret med indhold, der er i filen i OneDrive eller SharePoint Online.
+#### <a name="datasets-in-directqueryliveconnect-mode"></a>Datasæt i DirectQuery-/LiveConnect-tilstand
 
-![](media/refresh-data/package-refresh.png)
+Power BI importerer ikke data via forbindelser, der kører i DirectQuery-/LiveConnect-tilstand. I stedet returnerer datasættet resultaterne fra den underliggende datakilde, når en rapport eller et dashboard sender forespørgsler til datasættet. Power BI transformerer og videresender forespørgslerne til datakilden.
 
-### <a name="modeldata-refresh"></a>Opdatering af model/data
-Dette henviser til at opdatere datasættet i Power BI-tjenesten med data fra den oprindelige datakilde. Dette gøres enten ved hjælp af planlagte opdateringer eller Opdater nu. Det kræver en gateway i forbindelse med datakilder i lokale miljøer.
+Selvom DirectQuery- og LiveConnect-tilstand er ens i forhold til den måde, som Power BI videresender forespørgsler til kilden på, er det vigtigt at bemærke, at Power BI ikke behøver at transformere forespørgsler i LiveConnect-tilstand. Forespørgslerne føres direkte til den forekomst af Analysis Services, der hoster databasen, uden at forbruge ressourcer på den delte kapacitet eller en Premium-kapacitet.
 
-### <a name="tile-refresh"></a>Opdatering af felter
-Opdatering af felter opdaterer cachen for feltvisuals på dashboardet, når dataene ændres. Dette sker ca. hvert 15. minut. Du kan desuden gennemtvinge en opdatering af felter ved at vælge **ellipsen (...)** i øverste højre hjørne af et dashboard og derefter vælge **Opdater dashboardfelter**.
+Da Power BI ikke importerer dataene, behøver du ikke at køre en opdatering af data. Power BI udfører dog stadig opdateringer af felter og muligvis opdateringer af rapporten, som det forklares i næste afsnit om opdateringstyper. Et felt er en visualisering i en rapport, som er fastgjort til et dashboard, og opdateringer af felter i dashboards forekommer hver time, så de nyeste resultater vises i felterne. Du kan ændre tidsplanen under indstillingerne for datasæt, som vist på skærmbilledet nedenfor, eller gennemtvinge en opdatering af dashboardet manuelt ved hjælp af indstillingen **Opdater nu**.
 
-![](media/refresh-data/dashboard-tile-refresh.png)
-
-Yderligere oplysninger om almindelige fejl under opdatering af felter finder du under [Fejlfinding af feltfejl](refresh-troubleshooting-tile-errors.md).
-
-### <a name="visual-container-refresh"></a>Opdatering af visuelle beholdere
-Opdatering af visuelle beholdere opdaterer de cachelagrede visuals i rapporten, når dataene ændres.
-
-## <a name="what-can-be-refreshed"></a>Hvad kan opdateres?
-I Power BI kan du typisk bruge Hent data til at importere data fra en fil på et lokalt drev, OneDrive eller SharePoint Online, publicere en rapport fra Power BI Desktop eller oprette direkte forbindelse til en database i clouden i din egen organisation. Stort set alle data i Power BI kan opdateres, men om du behøver det eller ej, afhænger af hvad dit datasæt er baseret på, og de datakilder det har forbindelse til. Lad os se på, hvordan hver af disse metoder opdaterer data.
-
-Her er nogle vigtige definitioner, før vi gå videre:
-
-**Automatisk opdatering** – Det betyder, at ingen brugerkonfiguration er nødvendig for, at datasættet kan opdateres med jævne mellemrum. Indstillinger for dataopdatering konfigurerer Power BI for dig. Ved onlinetjenesteudbydere opdateres der normalt en gang om dagen. Ved filer, der er indlæst fra OneDrive, sker opdatering automatisk cirka en gang i timen for data, der ikke kommer fra en ekstern datakilde. Det er muligt at konfigurere forskellige indstillinger for planlagte opdateringer og opdatere manuelt, men det er formentlig ikke nødvendigt.
-
-**Brugerkonfigureret manuel eller planlagt opdatering** – Det betyder, at du manuelt kan opdatere et datasæt ved hjælp af Opdater nu eller konfigurere en tidsplan for opdatering ved hjælp af Planlæg opdatering i indstillingerne for et datasæt. Denne type opdatering er påkrævet for Power BI Desktop-filer og Excel-projektmapper, der har forbindelse til eksterne onlinedatakilder og datakilder i det lokale miljø.
+![Tidsplan for opdatering](media/refresh-data/refresh-schedule.png)
 
 > [!NOTE]
-> Når du konfigurerer et tidspunkt for en planlagt opdatering, kan der være en forsinkelse på op til en time, før den starter.
-> 
-> 
+> Afsnittet **Planlagt opdatering af cache** under fanen **Datasæt** er ikke tilgængelig for datasæt i importtilstand. Disse datasæt kræver ikke en opdatering af separate felter, fordi Power BI opdaterer felterne automatisk under hver planlagt opdatering eller opdatering on-demand af dataene.
 
-**Live/DirectQuery** – Det betyder, at der er en liveforbindelse mellem Power BI og datakilden. Ved datakilder i det lokale miljø skal administratorer have en datakilde, der er konfigureret i en virksomhedsgateway, men indgriben fra brugeren er muligvis ikke nødvendig.
+#### <a name="push-datasets"></a>Push-datasæt
 
-> [!NOTE]
-> For at forbedre ydelsen opdateres dashboards med data, der er forbundet med DirectQuery, automatisk. Du kan også til enhver tid manuelt opdatere et felt ved hjælp af menuen **Mere** på feltet.
-> 
-> 
-
-## <a name="local-files-and-files-on-onedrive-or-sharepoint-online"></a>Lokale filer og filer på OneDrive eller SharePoint Online
-Dataopdatering understøttes for Power BI Desktop-filer og Excel-projektmapper, der er forbundet med eksterne onlinedatakilder eller datakilder i det lokale miljø. Denne metode vil kun opdatere dataene til datasættet i Power BI-tjenesten. Din lokale fil opdateres ikke.
-
-Hvis du lagrer dine filer på OneDrive eller SharePoint Online og opretter forbindelse til dem fra Power BI, får du stor fleksibilitet. Men fordi du får al den fleksibilitet, er det også en af de løsninger, der er sværest at forstå. Planlagte opdateringer af filer, der er gemt i OneDrive eller på SharePoint Online, er anderledes end opdatering af pakker. Du kan få mere at vide i afsnittet [Opdateringstyper](#types-of-refresh).
-
-### <a name="power-bi-desktop-file"></a>Power BI Desktop-fil
-
-| **Datakilde** | **Automatisk opdatering** | **Brugerkonfigureret manuel eller planlagt opdatering** | **Gateway påkrævet** |
-| --- | --- | --- | --- |
-| Hent data (på båndet) bruges til at oprette forbindelse til og sende en forespørgsel om data fra alle viste onlinedatakilder. |Nej |Ja |Nej (se nedenfor) |
-| Hent data bruges til at oprette forbindelse til og udforske en live-Analysis Services-database. |Ja |Nej |Ja |
-| Hent data bruges til at oprette forbindelse til og udforske en understøttet DirectQuery-datakilde i det lokale miljø. |Ja |Nej |Ja |
-| Hent data bruges til at oprette forbindelse til og sende forespørgsler om data fra en Azure SQL Database, Azure SQL Data Warehouse, Azure HDInsight Spark. |Ja |Ja |Nej |
-| Hent data bruges til at oprette forbindelse til og sende en forespørgsel om data fra alle viste datakilder i det lokale miljø undtagen Hadoop-filer (HDFS) og Microsoft Exchange. |Nej |Ja |Ja |
+Pushdatasæt indeholder ikke en formel datakildedefinition, så de kræver ikke, at du udfører en opdatering af data i Power BI. Du kan opdatere dem ved at sende dine data til datasættet via push ved hjælp af en ekstern tjeneste eller en proces, f.eks. Azure Stream Analytics. Dette er en fælles tilgang til analyse i realtid med Power BI. Power BI udfører stadig opdateringer af cachen for alle felter, der bruges oven på et pushdatasæt. Du kan finde en detaljeret gennemgang i [Selvstudium: Stream Analytics og Power BI: Et analysedashboard i realtid til streaming af data](/azure/stream-analytics/stream-analytics-power-bi-dashboard).
 
 > [!NOTE]
-> Hvis du bruger [ **Web.Page** ](https://msdn.microsoft.com/library/mt260924.aspx)-funktionen, har du brug for en gateway, hvis du har genpubliceret datasættet eller din rapport efter 18. november 2016.
-> 
-> 
+> Der er adskillige begrænsninger for Pushtilstand, som dokumenteret i [REST API-begrænsninger i Power BI](developer/api-rest-api-limitations.md).
 
-Se flere oplysninger under [Opdater et datasæt, der er baseret på en Power BI Desktop-fil på OneDrive](refresh-desktop-file-onedrive.md).
+### <a name="power-bi-refresh-types"></a>Power BI-opdateringstyper
 
-### <a name="excel-workbook"></a>Excel-projektmappe
+En handling til opdatering af Power BI kan bestå af flere opdateringstyper, herunder opdatering af data, opdatering af OneDrive, opdatering af forespørgselscacher, opdatering af felter og opdatering af visualiseringer i rapporter. Mens Power BI bestemmer de påkrævede opdateringstrin for et givet datasæt automatisk, skal du vide, hvordan de bidrager til kompleksiteten og varigheden af en opdateringshandling. Du kan se et overblik i følgende tabel.
 
-| **Datakilde** | **Automatisk opdatering** | **Brugerkonfigureret manuel eller planlagt opdatering** | **Gateway påkrævet** |
-| --- | --- | --- | --- |
-| Tabeller med data i et regneark, der ikke er indlæst i Excel-datamodellen. |Ja, én gang i timen *(kun OneDrive/SharePoint Online)* |Kun manuelt *(kun OneDrive/SharePoint Online)* |Nej |
-| Tabeller med data i et regneark, der er forbundet med en tabel i Excel-datamodellen (sammenkædede tabeller). |Ja, én gang i timen *(kun OneDrive/SharePoint Online)* |Kun manuelt *(kun OneDrive/SharePoint Online)* |Nej |
-| Power Query* bruges til at oprette forbindelse til og sende forespørgsler om data fra alle viste onlinedatakilder og til at indlæse data i Excel-datamodellen. |Nej |Ja |Nej |
-| Power Query* bruges til at oprette forbindelse til og sende forespørgsler om data fra alle viste datakilder i det lokale miljø undtagen Hadoop-filer (HDFS) og Microsoft Exchange og til at indlæse data i Excel-datamodellen. |Nej |Ja |Ja |
-| Power Pivot bruges til at oprette forbindelse til og sende forespørgsler om data fra alle viste onlinedatakilder og til at indlæse data i Excel-datamodellen. |Nej |Ja |Nej |
-| Power Pivot bruges til at oprette forbindelse til og sende forespørgsler om data fra alle viste datakilder i det lokale miljø og til at indlæse data i Excel-datamodellen. |Nej |Ja |Ja |
+| Lagertilstand | Opdatering af data | Opdatering af OneDrive | Forespørgselscacher | Opdatering af felter | Visualiseringer i rapporter |
+| --- | --- | --- | --- | --- | --- |
+| Importér | Planlagt og on-demand | Ja, for forbundne datasæt | Hvis aktiveret for en Premium-kapacitet | Automatisk og on-demand | Nej |
+| DirectQuery | Ikke tilgængelig | Ja, for forbundne datasæt | Hvis aktiveret for en Premium-kapacitet | Automatisk og on-demand | Nej |
+| LiveConnect | Ikke tilgængelig | Ja, for forbundne datasæt | Hvis aktiveret for en Premium-kapacitet | Automatisk og on-demand | Ja |
+| Push | Ikke tilgængelig | Ikke tilgængelig | Ikke praktisk | Automatisk og on-demand | Nej |
+| | | | | | |
 
-*\*Power Query er kendt som Hent og omdan data i Excel 2016.*
+#### <a name="data-refresh"></a>Opdatering af data
 
-Du kan få mere at vide under [Opdater et datasæt baseret på en Excel-arbejdsmappe på OneDrive](refresh-excel-file-onedrive.md).
+For Power BI-brugere betyder opdatering af data typisk import af data fra de oprindelige datakilder til et datasæt enten på baggrund af en tidsplan for opdatering eller en opdatering on-demand. Du kan udføre flere opdateringer af datasæt dagligt, hvilket kan være nødvendigt, hvis den underliggende kildedata ændres ofte. Power BI begrænser datasæt på en delt kapacitet til otte daglige opdateringer. Hvis datasættet befinder sig på en Premium-kapacitet, kan du udføre op til 48 opdateringer pr. dag. Du kan finde flere oplysninger konfiguration af planlagte opdateringer senere i denne artikel.
 
-### <a name="comma-separated-value-csv-file-on-onedrive-or-sharepoint-online"></a>Fil med kommaseparerede værdier (.csv) på OneDrive eller SharePoint Online
+Det er også vigtigt at fremhæve, at begrænsningen for daglige opdateringer gælder for både planlagte opdateringer og opdateringer on-demand. Du kan udløse en opdatering on-demand ved at vælge **Opdater nu** i menuen for datasættet, som vist på følgende skærmbillede. Du kan også udløse en opdatering af data programmatisk ved hjælp af REST API'en for Power BI. Se [Datasæt – Opdater datasæt](/rest/api/power-bi/datasets/refreshdataset), hvis du er interesseret i at udarbejde din egen opdateringsløsning.
 
-| **Datakilde** | **Automatisk opdatering** | **Brugerkonfigureret manuel eller planlagt opdatering** | **Gateway påkrævet** |
-| --- | --- | --- | --- |
-| Enkel kommasepareret værdi |Ja, én gang i timen |Kun manuelt |Nej |
-
-Du kan få mere at vide under [Opdater et datasæt, der er baseret på en fil med kommaseparerede værdier (.csv) på OneDrive](refresh-csv-file-onedrive.md).
-
-## <a name="content-packs"></a>Indholdspakker
-Der er to typer indholdspakker i Power BI:
-
-**Indholdspakker fra onlinetjenester**: som f.eks. Adobe Analytics, SalesForce og Dynamics CRM Online. Datasæt, der er baseret på onlinetjenester, opdateres automatisk en gang om dagen. Du kan manuelt opdatere eller oprette en tidsplan for opdatering, men det er formentlig ikke nødvendigt. Der er ikke behov for en gateway, fordi onlinetjenester er i skyen.
-
-**Organisationsindholdspakker**: oprettes og deles af brugere i din egen organisation. Forbrugere af indholdspakker kan ikke oprette en tidsplan for opdatering eller opdatere manuelt. Kun personen, der har oprettet indholdspakken, kan konfigurere opdatering af datasættene i indholdspakken. Indstillinger til opdateringer nedarves i datasættet.
-
-### <a name="content-packs-from-online-services"></a>Indholdspakker fra onlinetjenester
-
-| **Datakilde** | **Automatisk opdatering** | **Brugerkonfigureret manuel eller planlagt opdatering** | **Gateway påkrævet** |
-| --- | --- | --- | --- |
-| Onlinetjenester i Hent data-tjenester&gt; |Ja |Ja |Nej |
-
-### <a name="organizational-content-packs"></a>Organisationsindholdspakker
-Opdateringsfunktionerne for et datasæt, der er en del af en organisationsindholdspakke, afhænger af datasættet. Se oplysninger ovenfor i forbindelse med lokale filer, OneDrive eller SharePoint Online.
-
-Du kan få mere at vide i [Introduktion til organisationsindholdspakker](service-organizational-content-pack-introduction.md).
-
-## <a name="live-connections-and-directquery-to-on-premises-data-sources"></a>Liveforbindelser og DirectQuery til datakilder i det lokale miljø
-Med datagatewayen i det lokale miljø kan du sende forespørgsler fra Power BI til dine datakilder i det lokale miljø. Når du arbejder med en visualisering, sendes forespørgsler fra Power BI direkte til databasen. Derefter returneres opdaterede data, og visualiseringer opdateres. Da der er en direkte forbindelse mellem Power BI og databasen, er det ikke nødvendigt at planlægge en opdatering.
-
-Når der oprettes forbindelse til en SQL Service Analysis Services (SSAS)-datakilde ved hjælp af en liveforbindelse, kan liveforbindelsen til SSAS-kilden i modsætning til DirectQuery køre mod cachen, selvom den indlæser en rapport. Denne adfærd forbedrer indlæsningsydeevnen for rapporten. Du kan sende en forespørgsel om de seneste data fra SSAS-datakilden ved hjælp af knappen til **opdatering**. Ejere af SSAS-datakilder kan konfigurere hyppigheden for planlagt opdatering af cachen for datasættet for at sikre, at rapporterne er så opdaterede, som de kræver. 
-
-Når du konfigurerer en datakilde med datagatewayen i det lokale miljø, kan du bruge denne datakilde som den planlagte opdateringsmulighed. Det ville være et alternativ til at bruge den personlige gateway.
+![Opdater nu](media/refresh-data/refresh-now.png)
 
 > [!NOTE]
-> Hvis dit datasæt er konfigureret til en live- eller DirectQuery-forbindelse, opdateres datasæt ca. en gang i timen, eller når der arbejdes med dataene. Du kan tilpasse *opdateringshyppigheden* manuelt i indstillingen *Planlagt cacheopdatering* i Power BI-tjenesten.
-> 
-> 
+> Opdateringer af data skal fuldføres på mindre end 2 timer. Hvis dit datasæt kræver længerevarende opdateringshandlinger, kan du overveje at flytte datasættet til en Premium-kapacitet. For Premium er den maksimale opdateringsvarighed 5 timer.
 
-| **Datakilde** | **Live/DirectQuery** | **Brugerkonfigureret manuel eller planlagt opdatering** | **Gateway påkrævet** |
-| --- | --- | --- | --- |
-| Analysis Services Tabel |Ja |Ja |Ja |
-| Analysis Services Multidimensional |Ja |Ja |Ja |
-| SQL Server |Ja |Ja |Ja |
-| SAP HANA |Ja |Ja |Ja |
-| Oracle |Ja |Ja |Ja |
-| Teradata |Ja |Ja |Ja |
+#### <a name="onedrive-refresh"></a>Opdatering af OneDrive
 
-Læs mere i [Datagateways i det lokale miljø](service-gateway-onprem.md)
+Hvis du har oprettet dit datasæt og dine rapporter på baggrund af en Power BI Desktop-fil, en Excel-projektmappe eller en fil med kommaseparerede værdier (.csv) på OneDrive eller SharePoint Online, udfører Power BI en anden type opdatering, der er kendt som opdatering af OneDrive. Du kan finde flere oplysninger under [Hent data fra filer til Power BI](service-get-data-from-files.md).
 
-## <a name="databases-in-the-cloud"></a>Databaser i clouden
-Med DirectQuery er der en direkte forbindelse mellem Power BI og databasen i clouden. Når du arbejder med en visualisering, sendes forespørgsler fra Power BI direkte til databasen. Derefter returneres opdaterede data, og visualiseringer opdateres. Og fordi både Power BI-tjenesten og datakilden er i clouden, er det ikke nødvendigt at have en personlig gateway.
+I modsætning til en opdatering af datasæt, hvor Power BI importerer data fra en datakilde til et datasæt, synkroniseres datasæt og rapporter med deres kildefiler under en opdatering af OneDrive. Power BI kontrollerer som standard ca. hver time, om et datasæt, der er forbundet til en fil på OneDrive eller SharePoint Online, kræver synkronisering. Hvis du vil se tidligere synkroniseringscyklusser, skal du kigge på OneDrive-fanen i opdateringshistorikken. På følgende skærmbillede kan du se en fuldført synkroniseringscyklus for et prøvedatasæt.
 
-Hvis der ingen brugerinteraktion er i visualiseringen, opdateres dataene automatisk ca. en gang i timen. Du kan ændre denne opdateringsfrekvens ved hjælp af indstillingen *Planlagt cacheopdatering* og angive opdateringshyppigheden.
+![Opdater historik](media/refresh-data/refresh-history.png)
 
-Hvis du vil angive frekvensen, skal du vælge **tandhjulsikonet** i øverste højre hjørne af Power BI-tjenesten og derefter vælge **Indstillinger**.
+Som skærmbilledet oven for viser har Power BI identificeret denne opdatering af OneDrive som en **Planlagt** opdatering, men det er ikke muligt at konfigurere opdateringsintervallet. Du kan kun deaktivere opdatering af OneDrive under indstillingerne for datasættet. Deaktivering af en opdatering er nyttigt, hvis du ikke ønsker, at dine datasæt og rapporter i Power BI opfanger eventuelle ændringer fra kildefilerne automatisk.
 
-![](media/refresh-data/refresh-data_2.png)
+Bemærk, at afsnittene **Legitimationsoplysninger til OneDrive** og **Opdatering af OneDrive** kun vises på siden med indstillingerne for datasæt, hvis datasættet er forbundet til en fil i OneDrive eller SharePoint Online, som vist på følgende skærmbillede. Disse afsnit vises ikke for datasæt, der ikke er forbundet til kildefiler i OneDrive eller SharePoint Online.
 
-Siden **Indstillinger** vises, og her kan du vælge det datasæt, som du vil justere frekvensen for. På denne side skal du vælge fanen **Datasæt** øverst.
+![Legitimationsoplysninger til OneDrive og opdatering af OneDrive](media/refresh-data/onedrive-credentials-refresh.png)
 
-![](media/refresh-data/refresh-data_3.png)
+Hvis du deaktiverer opdatering af OneDrive for et datasæt, kan du stadig synkronisere dine datasæt on-demand ved at vælge **Opdater nu** i menuen for datasættet. Som en del af opdateringen on-demand kontrollerer Power BI, om kildefilen på OneDrive eller SharePoint Online er nyere end datasættet i Power BI, og synkroniserer datasættet, hvis det er tilfældet. Disse aktiviteter vises i **opdateringshistorikken** som opdateringer on-demand på fanen **OneDrive**.
 
-Vælg datasættet. I ruden til højre får du vist et udvalg af indstillinger for dette datasæt. I forbindelse med DirectQuery-/liveforbindelser kan du angive opdateringshyppigheden fra perioder på 15 minutter til en gang om ugen ved hjælp af den tilknyttede rullelistemenu, som vist på følgende billede.
+Husk, at der ikke hentes data fra de oprindelige datakilder ved en opdatering af OneDrive. I forbindelse med opdatering af OneDrive opdateres ressourcerne i Power BI blot med metadataene og dataene fra .pbix-, .xlsx- eller .csv-filen, som vist i følgende diagram. Power BI udløser desuden en opdatering af data som en del af opdateringen on-demand for at sikre, at datasættet indeholder de nyeste data fra datakilderne. Du kan bekræfte dette ved at se **opdateringshistorikken**, hvis du skifter til fanen **Planlagt**.
 
-![](media/refresh-data/refresh-data_1.png)
+![Diagram over opdatering af OneDrive](media/refresh-data/onedrive-refresh-diagram.png)
 
-| **Datakilde** | **Live/DirectQuery** | **Brugerkonfigureret manuel eller planlagt opdatering** | **Gateway påkrævet** |
-| --- | --- | --- | --- |
-| SQL Azure Data Warehouse |Ja |Ja |Nej |
-| Spark på HDInsight |Ja |Ja |Nej |
+Hvis du bevarer opdatering af OneDrive aktiveret for et datasæt, der er forbundet med OneDrive eller SharePoint Online, og du vil udføre en opdatering af data efter en plan, skal du sørge for at konfigurere tidsplanen, så Power BI udfører opdateringen af dataene efter opdateringen af OneDrive. Hvis du f.eks. har oprettet din egen tjeneste eller proces for at opdatere kildefilen i OneDrive eller SharePoint Online hver nat kl. 1, kan du konfigurere en planlagt opdatering til kl. 2.30 for at give Power BI nok tid til at fuldføre opdateringen af OneDrive, før opdateringen af data startes.
 
-Du kan få mere at vide i [Azure og Power BI](service-azure-and-power-bi.md).
+#### <a name="refresh-of-query-caches"></a>Opdatering af forespørgselscacher
 
-## <a name="real-time-dashboards"></a>Realtidsdashboards
-Realtidsdashboards bruger Microsoft Power BI REST API eller Microsoft Stream Analytics til at sørge for, at dataene er opdateret. Da dashboards i realtid ikke kræver, at brugerne konfigurerer opdatering, dækkes de ikke i denne artikel.
+Hvis dit datasæt befinder sig på en Premium-kapacitet, kan du muligvis forbedre ydeevnen af alle tilknyttede rapporter og dashboards ved at aktivere cachelagring af forespørgsel, som vist på følgende skærmbillede. Ved cachelagring af forespørgsler beordres Premium-kapaciteten til at bruge dens lokale cachelagringstjeneste til at bevare forespørgselsresultaterne, derved undgår man, at den underliggende datakilde skal beregne disse resultater. Du kan finde flere oplysninger i [Cachelagring af forespørgsel i Power BI Premium](power-bi-query-caching.md).
 
-| **Datakilde** | **Automatisk** | **Brugerkonfigureret manuel eller planlagt opdatering** | **Gateway påkrævet** |
-| --- | --- | --- | --- |
-| Brugerdefinerede apps, der er udviklet med Power BI Rest API eller Microsoft Stream Analytics |Ja, livestreaming |Nej |Nej |
+![Cachelagring af forespørgsel](media/refresh-data/query-caching.png)
+
+Efter en opdatering af data er tidligere cachelagrede forespørgselsresultater dog ikke længere gyldige. Power BI kasserer disse cachelagrede resultater og skal genopbygge dem. Derfor er cachelagring af forespørgsel muligvis ikke så nyttig i forbindelse med rapporter og dashboards, der er knyttet til datasæt, som du opdaterer meget ofte, f.eks. 48 gange om dagen.
+
+#### <a name="tile-refresh"></a>Opdatering af felter
+
+Power BI bevarer en cache for hver feltvisualisering på dine dashboards og opdaterer proaktivt feltcacherne, når data ændres. Med andre ord forekommer opdatering af felter automatisk efter en opdatering af data. Dette er tilfældet for både planlagte opdateringer og opdateringer on-demand. Du kan desuden gennemtvinge en opdatering af felter ved at vælge ellipsen (...) i øverste højre hjørne af et dashboard og derefter vælge **Opdater dashboardfelter**.
+
+![Opdater dashboardfelter](media/refresh-data/refresh-dashboard-tiles.png)
+
+Da det forekommer automatisk, kan du anses opdatering af felt for at være en indbygget del af opdatering af data. Du vil måske bl.a. bemærke, at varigheden af opdateringen øges i forhold til antallet af felter. Spildet i forbindelse med opdatering af feltet kan være markant.
+
+Power BI bevarer som standard en enkelt cache for hvert felt, men hvis du bruger dynamisk sikkerhed til at begrænse adgang til data baseret på brugerroller, som beskrevet i artiklen [Sikkerhed på rækkeniveau med Power BI](service-admin-rls.md), så skal Power BI opretholde en cache for hver rolle og hvert felt. Antallet af feltcacher ganges med antallet af roller.
+
+Situationen kan blive endnu mere involveret, hvis dit datasæt bruger en dynamisk forbindelse til en Analysis Services-datamodel med sikkerhed på rækkeniveau, som fremhævet i selvstudiet [Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel](desktop-tutorial-row-level-security-onprem-ssas-tabular.md). I denne situation skal Power BI bevare og opdatere en cache for hvert felt og hver bruger, der nogensinde har fået vist dashboardet. Det er ikke ualmindeligt, at den del af opdateringen af data, der vedrører opdatering af feltet, langt overskrider den tid, det tager at hente dataene fra kilden. Du kan finde flere oplysninger om opdatering af felter i [Fejlfinding af feltfejl](refresh-troubleshooting-tile-errors.md).
+
+#### <a name="refresh-of-report-visuals"></a>Opdatering af visualiseringer i rapporter
+
+Denne opdateringsproces er mindre vigtig, da den kun er relevant for dynamiske forbindelser til Analysis Services. For disse forbindelser cachelagrer Power BI den sidste tilstand for visualiseringerne i rapporten, så Power BI ikke behøver at sende en forespørgsel til Analysis Services-tabelmodellen igen, når du får vist rapporten igen. Når du interagerer med rapporten, f.eks. ved at ændre et rapportfilter, sender Power BI en forespørgsel til tabelmodellen og opdaterer visualiseringerne i rapporten automatisk. Hvis du har mistanke om, at der vises forældede data i en rapport, kan du også vælge knappen Opdater i rapporten for at udløse en opdatering af alle visualiseringer i rapporten, som vist på følgende skærmbillede.
+
+![Opdater visualiseringer i rapporter](media/refresh-data/refresh-report-visuals.png)
+
+## <a name="review-data-infrastructure-dependencies"></a>Gennemse afhængigheder af infrastrukturen for data
+
+Uanset hvad lagertilstanden er, kan ingen opdatering af data fuldføres, medmindre de underliggende datakilder er tilgængelige. Der er tre primære scenarier for adgang til data:
+
+- Et datasæt bruger datakilder, der er placeret i det lokale miljø
+- Et datasæt bruger datakilder i cloudmiljøet
+- Et datasæt bruger data fra kilde både i det lokale miljø og i cloudmiljøet
+
+### <a name="connecting-to-on-premises-data-sources"></a>Oprettelse af forbindelse til data i det lokale miljø
+
+Hvis dit datasæt bruger en datakilde, som Power BI ikke kan få adgang til via en direkte netværksforbindelse, skal du konfigurere en gatewayforbindelse for dette datasæt, før du kan aktivere en tidsplan for opdatering eller udføre en opdatering af data on-demand. Du kan finde flere oplysninger om datagateways, og hvordan de fungerer, i [Hvad er datagateways i det lokale miljø?](service-gateway-getting-started.md)
+
+Du har følgende muligheder:
+
+- Vælg en datagateway til virksomheder med den påkrævede datakildedefinition
+- Udrul en personlig datagateway
+
+> [!NOTE]
+> Du kan finde en liste over typer af datakilder, der kræver en datagateway, i artiklen [Administrer din datakilde – Import/Planlagt opdatering](service-gateway-enterprise-manage-scheduled-refresh.md).
+
+#### <a name="using-an-enterprise-data-gateway"></a>Brug af en datagateway til virksomheder
+
+Microsoft anbefaler at bruge en datagateway til virksomheder frem for en personlig gateway til at oprette forbindelse mellem et datasæt og en datakilde i det lokale miljø. Sørg for, at gatewayen er konfigureret korrekt, hvilket betyder, at gatewayen skal have de nyeste opdateringer og alle nødvendige datakildedefinitioner. En datakildedefinition giver Power BI forbindelsesoplysningerne for en bestemt kilde, herunder forbindelsesslutpunkter, godkendelsestilstand og legitimationsoplysninger. Du kan finde flere oplysninger om administration af datakilder via en gateway i [Administrer din datakilde – Import/Planlagt opdatering](service-gateway-enterprise-manage-scheduled-refresh.md).
+
+Det er forholdsvist ligetil at oprette forbindelse mellem et datasæt og en gateway til virksomheder, hvis du er gatewayadministrator. Med administratorrettigheder kan du straks opdatere gatewayen og tilføje manglende datakilder, hvis det er nødvendigt. Du kan faktisk føje en manglende datakilde til din gateway direkte fra siden med indstillinger for datasæt. Udvid til/fra-knappen for at få vist datakilderne, og vælg linket **Føj til gateway**, som vist på følgende skærmbillede. Hvis du ikke er gatewayadministrator, skal du derimod bruge de viste kontaktoplysninger til at sende en anmodning til en gatewayadministrator for at få tilføjet den påkrævede datakildedefinition.
+
+![Føj til gateway](media/refresh-data/add-to-gateway.png)
+
+> [!NOTE]
+> Et datasæt kan kun bruge en enkelt gatewayforbindelse. Det er med andre ord ikke muligt at få adgang til datakilder i det lokale miljø på tværs af flere gatewayforbindelser. Derfor skal du føje alle påkrævede datakildedefinitioner til den samme gateway.
+
+#### <a name="deploying-a-personal-data-gateway"></a>Udrulning af en personlig datagateway
+
+Hvis du har ikke adgang til en datagateway til virksomheder, og du er den eneste person, der administrerer datasæt, så du behøver ikke at dele datakilder med andre, kan du udrulle en datagateway i personlig tilstand. I afsnittet **Gatewayforbindelse** under **Du har ingen personlige gateways installeret** skal du vælge **Installér nu**. Der er flere begrænsninger for den personlige datagateway, som beskrevet i [Datagateway i det lokale miljø (personlig tilstand)](service-gateway-personal-mode.md).
+
+I modsætning til en datagateway til virksomheder behøver du ikke at føje datakildedefinitioner til en personlig gateway. Du kan i stedet administrere konfigurationen af datakilden ved hjælp af afsnittet **Legitimationsoplysninger for datakilde** under indstillingerne for datasæt, som vist på følgende skærmbillede.
+
+![Konfigurer legitimationsoplysninger for datakilden for gatewayen](media/refresh-data/configure-data-source-credentials-gateway.png)
+
+> [!NOTE]
+> Den personlige datagateway understøtter ikke datasæt i DirectQuery-/LiveConnect-tilstand. På siden med indstillinger for datasæt bliver du muligvis bedt om at installere den, men hvis du kun har en personlig gateway, kan du ikke konfigurere en gatewayforbindelse. Sørg for, at du har en datagateway til virksomheder, der understøtter disse typer datasæt.
+
+### <a name="accessing-cloud-data-sources"></a>Adgang til datakilder i cloudmiljøet
+
+Datasæt, der bruger datakilder i cloudmiljøet, f.eks. Azure SQL DB, kræver ikke en datagateway, hvis Power BI kan etablere en direkte netværksforbindelse til kilden. Du kan derfor administrere konfigurationen af disse datakilder ved hjælp af afsnittet **Legitimationsoplysninger for datakilde** under indstillingerne for datasæt. Som vist på følgende skærmbillede behøver du ikke konfigurere en gatewayforbindelse.
+
+![Konfigurer legitimationsoplysninger for datakilden uden en gateway](media/refresh-data/configure-data-source-credentials.png)
+
+### <a name="accessing-on-premises-and-cloud-sources-in-the-same-source-query"></a>Adgang til kilder i det lokale miljø og cloudmiljøet i den samme kildeforespørgsel
+
+Et datasæt kan hente data fra flere kilder, og disse kilder kan være placeret i det lokale miljø eller i cloudmiljøet. Men som tidligere nævnt kan et datasæt kun bruge en enkelt gatewayforbindelse. Selvom der ikke nødvendigvis kræves en gateway til datakilder i cloudmiljøet, kræves der en gateway, hvis et datasæt opretter forbindelse til kilder både i det lokale miljø og cloudmiljøet i en enkelt mikset forespørgsel. I dette scenarie skal Power BI også bruge en gateway til datakilder i cloudmiljøet. Følgende diagram viser, hvordan sådan et datasæt tilgår dets datakilder.
+
+![Datakilder i cloudmiljøet og det lokale miljø](media/refresh-data/cloud-on-premises-data-sources-diagram.png)
+
+> [!NOTE]
+> Hvis et datasæt bruger separate miksforespørgsler til at oprette forbindelse til kilder i det lokale miljø og cloudmiljøet, bruger Power BI en gatewayforbindelse til at nå ud til kilder i det lokale miljø og en direkte netværksforbindelse til kilder i cloudmiljøet. Hvis en miksforespørgsel fletter eller tilføjer data fra kilder i det lokale miljø eller cloudmiljøet, skifter Power BI til gatewayforbindelsen for kilder i cloudmiljøet.
+
+Power BI-datasæt er afhængige af Power-forespørgsel for at få adgang til og hente kildedata. På følgende miksliste kan du se et grundlæggende eksempel på en forespørgsel, der fletter data fra en kilde i det lokale miljø og en kilde i cloudmiljøet.
+
+```
+Let
+
+    OnPremSource = Sql.Database("on-premises-db", "AdventureWorks"),
+
+    CloudSource = Sql.Databases("cloudsql.database.windows.net", "AdventureWorks"),
+
+    TableData1 = OnPremSource{[Schema="Sales",Item="Customer"]}[Data],
+
+    TableData2 = CloudSource {[Schema="Sales",Item="Customer"]}[Data],
+
+    MergedData = Table.NestedJoin(TableData1, {"BusinessEntityID"}, TableData2, {"BusinessEntityID"}, "MergedData", JoinKind.Inner)
+
+in
+
+    MergedData
+```
+
+Der er to muligheder for at konfigurere en datagateway til at understøtte fletning eller tilføjelse af data fra kilder i det lokale miljø og cloudmiljøet:
+
+- Føj en datakildedefinition for kilden i cloudmiljøet til datagatewayen udover til kilder i det lokale miljø.
+- Markér afkrydsningsfeltet **Tillad, at brugerens datakilder i cloudmiljøet opdateres via denne gatewayklynge**.
+
+![Opdater via gatewayklynge](media/refresh-data/refresh-gateway-cluster.png)
+
+Hvis du markerer afkrydsningsfeltet **Tillad, at brugerens datakilder i cloudmiljøet opdateres via denne gatewayklynge i gatewaykonfigurationen**, som vist på skærmbilledet ovenfor, kan Power BI bruge den konfiguration, som brugeren har defineret for kilden i cloudmiljøet under **Legitimationsoplysninger for datakilde** i indstillingerne for datasættet. Dette kan hjælpe med at reducere spildet for gatewaykonfigurationen. Hvis du derimod vil have større kontrol over de forbindelser, som din gateway etablerer, skal du ikke markere dette afkrydsningsfelt. I dette tilfælde skal du føje en eksplicit datakildedefinition for hver kilde i cloudmiljøet, du vil understøtte, til din gateway. Det er også muligt at markere afkrydsningsfeltet og føje eksplicitte datakildedefinitioner for dine kilder i cloudmiljøet til en gateway. I dette tilfælde bruger gatewayen datakildedefinitionerne for alle matchende datakilder.
+
+### <a name="configuring-query-parameters"></a>Konfiguration af forespørgselsparametre
+
+Miks- eller M-forespørgsler, som du opretter ved hjælp af Power-forespørgsel, kan variere i kompleksitet fra trivielle trin til parameteriserede konstruktioner. På følgende liste kan du se et eksempel på små miksforespørgsel, der bruger to parametre kaldet _SchemaName_ og _TableName_ til at få adgang til en bestemt tabel i en AdventureWorks-database.
+
+```
+let
+
+    Source = Sql.Database("SqlServer01", "AdventureWorks"),
+
+    TableData = Source{[Schema=SchemaName,Item=TableName]}[Data]
+
+in
+
+    TableData
+```
+
+> [!NOTE]
+> Forespørgselsparametre understøttes kun for datasæt i Importtilstand. DirectQuery-/LiveConnect-tilstand understøtter ikke definitioner for forespørgselsparametre.
+
+Du skal konfigurere forespørgselsparametrene for mikset under indstillingerne for datasættet for at sikre, at et parameteriseret datasæt tilgår de korrekte data. Du kan også opdatere parametrene programmatisk ved hjælp af [REST API'en for Power BI](/rest/api/power-bi/datasets/updateparametersingroup). På følgende skærmbillede kan du se den brugergrænseflade, du skal bruge til at konfigurere forespørgselsparametrene for et datasæt, der bruger ovenstående miksforespørgsel.
+
+![Konfigurer forespørgselsparametre](media/refresh-data/configure-query-parameters.png)
+
+> [!NOTE]
+> Power BI understøtter i øjeblikket ikke parameteriserede datakildedefinitioner også kendt som dynamiske datakilder. Du kan f.eks. ikke parameterisere funktionen Sql.Database("SqlServer01", "AdventureWorks") for dataadgang. Hvis dit datasæt er afhængig af dynamiske datakilder, giver Power BI dig besked om, at der blev registreret ukendte eller ikke-understøttede datakilder. Du skal erstatte parametrene i funktionerne til dataadgang med statiske værdier, hvis Power BI skal kunne identificere og oprette forbindelse til datakilderne. Du kan finde flere oplysninger i [Fejlfinding af ikke-understøttet datakilde til opdatering](service-admin-troubleshoot-unsupported-data-source-for-refresh.md).
 
 ## <a name="configure-scheduled-refresh"></a>Konfigurer planlagt opdatering
-Hvis du vil vide, hvordan du konfigurerer planlagt opdatering, skal du se [Konfigurer planlagt opdatering](refresh-scheduled-refresh.md)
 
-## <a name="common-data-refresh-scenarios"></a>Almindelige dataopdateringsscenarier
-Nogle gange er det nemmest at lære om opdatering af data i Power BI ved at se på et par eksempler. Her er nogle af de mest almindelige dataopdateringsscenarier:
+Etablering af forbindelse mellem Power BI og dine datakilder er klart den største udfordring ved at konfigurere en opdatering af data. De resterende trin er relativt enkle og omfatter angivelse af tidsplanen for opdateringen og aktivering af meddelelser om fejl under opdateringen. Du kan finde en trinvis vejledning i Sådan gør du-vejledningen [Konfiguration af planlagt opdatering](refresh-scheduled-refresh.md).
 
-### <a name="excel-workbook-with-tables-of-data"></a>Excel-projektmappe med tabeller med data
-Du har en Excel-projektmappe med flere tabeller med data, men ingen af dem er indlæst i Excel-datamodellen. Du kan bruge Hent data til at overføre projektmappefilen fra din lokale harddisk til Power BI og oprette et dashboard. Men nu har du foretaget nogle ændringer i et par af projektmappens tabeller på din lokale harddisk, og du vil gerne opdatere dit dashboard i Power BI med de nye data.
+### <a name="setting-a-refresh-schedule"></a>Angivelse af en tidsplan for opdatering
 
-Desværre understøttes opdatering ikke i denne situation. For at opdatere datasættet på dit dashboard skal du overføre projektmappen igen. Der er dog en glimrende løsning: Gem din projektmappefil på OneDrive eller SharePoint Online!
+I afsnittet **Planlagt opdatering** angiver du hyppigheden og tidspunktet for opdateringen af et datasæt. Som tidligere nævnt kan du konfigurere op til otte daglige tidspunkter, hvis dit datasæt befinder sig på en delt kapacitet eller 48 tidspunkter i forbindelse med Power BI Premium. På følgende skærmbillede kan du se en tidsplan for opdatering angivet i et 12-timers interval.
 
-Når du opretter forbindelse til en fil på OneDrive eller SharePoint Online, viser dine rapporter og dashboards data, som de ser ud i filen. I dette tilfælde din Excel-projektmappe. Power BI tjekker automatisk efter opdateringer i filen en gang i timen. Hvis du foretager ændringer i projektmappen (der er gemt i OneDrive eller SharePoint Online), afspejles disse ændringer i dit dashboard og dine rapporter inden for en time. Du behøver slet ikke at konfigurere opdatering. Men hvis du vil se dine opdateringer i Power BI med det samme, kan du manuelt opdatere datasættet ved hjælp af Opdater nu.
+![Konfigurer planlagt opdatering](media/refresh-data/configure-scheduled-refresh.png)
 
-Du kan få mere at vide under [Excel-data i Power BI](service-excel-workbook-files.md) eller [Opdater et datasæt baseret på en Excel-arbejdsmappe på OneDrive](refresh-excel-file-onedrive.md).
+Når du har konfigureret en tidsplan for opdatering, kan du på siden med indstillinger for datasættet se oplysninger om det næste opdateringstidspunkt, som vist på skærmbilledet ovenfor. Hvis du vil opdatere dataene hurtigere, f.eks. teste din gateway og konfigurationen af din datakilde, skal du udføre en opdatering on-demand ved hjælp af indstillingen Opdater nu i menuen for datasæt i navigationsruden til venstre. Opdateringer on-demand påvirker ikke det næste planlagte opdateringstidspunkt, men de tæller i forhold til den daglige grænse for opdateringer, som beskrevet tidligere i denne artikel.
 
-### <a name="excel-workbook-connects-to-a-sql-database-in-your-company"></a>Excel-projektmappe, der opretter forbindelse til en SQL-database i din virksomhed
-Lad os sige, at du har en Excel-projektmappe, der er navngivet SalesReport.xlsx på din lokale computer. Power Query i Excel blev brugt til at oprette forbindelse til en SQL-database på en server i din virksomhed og sendte forespørgsler om salgsdata, der indlæses i datamodellen. Hver morgen åbner du projektmappen og klikker på Opdater for at opdatere din pivottabeller.
-
-Nu vil du gerne se nærmere på dine salgsdata i Power BI, så du bruger Hent data til at oprette forbindelse til og overføre SalesReport.xlsx-projektmappen fra den lokale harddisk.
-
-I dette tilfælde kan du manuelt opdatere dataene i SalesReport.xlsx-datasættet eller oprette en tidsplan for opdatering. Da dataene virkelig kommer fra SQL-databasen i din virksomhed, skal du downloade og installere en gateway. Når du har installeret og konfigureret gatewayen, skal du gå til indstillingerne for SalesReport-datasættet og logge på datakilden, men du behøver kun gøre det en gang. Du kan derefter oprette en tidsplan for opdatering, så Power BI automatisk opretter forbindelse til SQL-databasen og henter opdaterede data. Dine rapporter og dashboards vil også bliver opdateret automatisk.
+Bemærk også, at det konfigurerede opdateringstidspunkt muligvis ikke er præcist det tidspunkt, hvor Power BI starter den næste planlagte proces. Power BI starter planlagte opdateringer efter bedste evne. Målet er at starte opdateringen inden for 15 minutter fra det planlagte tidspunkt, men der kan opstå en forsinkelse på op til én time, hvis tjenesten ikke kan tildele de påkrævede ressourcer hurtigere.
 
 > [!NOTE]
-> Denne metode opdaterer kun dataene i datasættet i Power BI-tjenesten. Din lokale fil opdateres ikke som en del af opdateringen.
-> 
-> 
+> Power BI deaktiverer din tidsplan for opdatering efter fire fejl i træk, eller når tjenesten registrerer en uoprettelig fejl, der kræver en opdatering af konfigurationen, f.eks. ugyldige eller udløbne legitimationsoplysninger. Det er ikke muligt at ændre grænsen for gentagne fejl.
 
-Hvis du vil vide mere, kan du se [Excel-data i Power BI](service-excel-workbook-files.md), [Power BI Gateway – Personal](service-gateway-personal-mode.md), [Datagateway i det lokale miljø](service-gateway-onprem.md), [Opdater et datasæt, der er baseret op en Excel-projektmappe på et lokalt drev](refresh-excel-file-local-drive.md).
+### <a name="getting-refresh-failure-notifications"></a>Få meddelelser om mislykket opdatering
 
-### <a name="power-bi-desktop-file-with-data-from-an-odata-feed"></a>Power BI Desktop-fil med data fra et OData-feed
-I dette tilfælde skal du bruge Hent data i Power BI Desktop for at oprette forbindelse til og importere censusdata fra et OData-feed.  Du opretter flere rapporter i Power BI Desktop og navngiver derefter filen WACensus og gemmer den på et delt drev i din virksomhed. Du publicerer derefter filen til Power BI-tjenesten.
+Power BI sender som standard meddelelser om mislykket opdatering via mail til ejeren af datasættet, så ejeren kan reagere i tide, hvis der opstår opdateringsfejl. Power BI sender dig også en meddelelse, når tjenesten deaktiverer din tidsplan på grund af gentagne fejl. Microsoft anbefaler, at du markerer afkrydsningsfeltet **Send meddelelse om mislykket opdatering via mail til mig**.
 
-I dette tilfælde kan du manuelt opdatere dataene i WACensus-datasættet eller oprette en tidsplan for opdatering. Da dataene i datakilden stammer fra et OData-feed online, behøver du ikke at installere en gateway, men du skal åbne indstillingerne for WACensus-datasættet og logge på OData-datakilden. Du kan derefter oprette en tidsplan for opdatering, så Power BI automatisk opretter forbindelse til OData-feeden og henter opdaterede data. Dine rapporter og dashboards vil også bliver opdateret automatisk.
+Bemærk, at Power BI ikke kun sender meddelelser om mislykkede opdateringer, men også når tjenesten afbryder en planlagt opdatering midlertidigt på grund af inaktivitet. Power BI anser et datasæt for at være inaktivt, hvis et dashboard eller en rapport, der er baseret på det pågældende datasæt, ikke er blevet besøgt af en bruger i to måneder. I denne situation sender Power BI en mail til ejeren af datasættet, der angiver, hvor der står, at tjenesten har deaktiveret tidsplanen for opdatering af datasættet. På følgende skærmbillede kan du se et eksempel på sådan en meddelelse.
 
-Hvis du vil vide mere, kan du se [Publicér fra Power BI Desktop](desktop-upload-desktop-files.md), [Opdater et datasæt, der er baseret på en Power BI Desktop-fil på et lokalt drev](refresh-desktop-file-local-drive.md), [Opdater et datasæt, der er baseret på en Power BI Desktop-fil på OneDrive ](refresh-desktop-file-onedrive.md).
+![Mail om midlertidig afbrydelse af opdatering](media/refresh-data/email-paused-refresh.png)
 
-### <a name="shared-content-pack-from-another-user-in-your-organization"></a>Delt indholdspakke fra en anden bruger i din organisation
-Du har oprettet forbindelse til en organisationsindholdspakke. Den indeholder et dashboard, flere rapporter og et datasæt.
+For at fortsætte den planlagte opdatering skal du gå til en rapport eller et dashboard, som er skabt ved hjælp af dette datasæt, eller manuelt opdatere datasættet ved hjælp af indstillingen **Opdater nu**.
 
-I denne situation kan du ikke konfigurere opdatering af datasættet. Dataanalytikeren, der oprettede indholdspakken, er ansvarlig for at sikre, at datasættet opdateres, afhængigt af de datakilder, der er anvendt.
+### <a name="checking-refresh-status-and-history"></a>Kontrol af status for opdatering og historik
 
-Hvis dine dashboards og rapporter fra indholdspakken ikke opdateres, skal du tale med dataanalytikeren, der oprettede indholdspakken.
+Ud over at få meddelelser om mislykkede opdateringer er det en god idé at kontrollere dine datasæt for opdateringsfejl regelmæssigt. En hurtig måde at gøre det på er ved at se på listen over datasæt i et arbejdsområde. Der står et lille advarselsikon ud for datasæt med fejl. Vælg advarselsikonet for at få yderligere oplysninger, som vist på følgende skærmbillede. Du kan finde flere oplysninger om fejlfinding af specifikke opdateringsfejl i [Scenarier i forbindelse med fejlfinding af opdatering](refresh-troubleshooting-refresh-scenarios.md).
 
-Hvis du vil vide mere, kan du se [Introduktion til organisationsindholdspakker](service-organizational-content-pack-introduction.md), [Arbejd med organisationsindholdspakker](service-organizational-content-pack-copy-refresh-access.md).
+![Advarsel om opdateringsstatus](media/refresh-data/refresh-status-warning.png)
 
-### <a name="content-pack-from-an-online-service-provider-like-salesforce"></a>Indholdspakke fra en udbyder af onlinetjenester, f.eks. Salesforce
-I Power BI kan du bruge Hent data til at oprette forbindelse til og importere data fra en udbyder af onlinetjenester, som f.eks. Salesforce. Her skal du ikke gøre så meget. Det planlægges automatisk, at dit Salesforce-datasæt opdateres en gang om dagen. 
+Advarselsikonet hjælper med at indikere aktuelle problemer med datasættet, men det er også en god idé at kontrollere opdateringshistorikken regelmæssigt. Som navnet antyder, kan du i opdateringshistorikken se statussen for tidligere synkroniseringscyklusser. En gatewayadministrator kan f.eks. have opdateret et udløbet sæt legitimationsoplysninger til en database. Som du kan se på følgende skærmbillede, viser opdateringshistorikken, hvornår en berørt opdatering er begyndt at virke igen.
 
-Som de fleste udbydere af onlinetjenester opdaterer Salesforce data en gang i døgnet, som regel om natten. Du kan opdatere dit Salesforce-datasæt manuelt eller oprette en tidsplan for opdatering, men det er ikke nødvendigt, da Power BI automatisk opdaterer datasættet, og dine rapporter og dashboards opdateres også.
+![Meddelelser om opdateringshistorik](media/refresh-data/refresh-history-messages.png)
 
-Hvis du vil vide mere, kan du se [Salesforce-indholdspakken til Power BI](service-connect-to-salesforce.md).
+> [!NOTE]
+> Du kan finde et link til at få vist opdateringshistorikken under indstillingerne for datasættet. Du kan også hente opdateringshistorikken programmatisk ved hjælp af [REST API'en for Power BI](/rest/api/power-bi/datasets/getrefreshhistoryingroup). Ved hjælp af en brugerdefineret løsning kan du overvåge opdateringshistorikken for flere datasæt på en centraliseret måde.
 
-## <a name="troubleshooting"></a>Fejlfinding
-Når tingene går galt, skyldes det normalt, at Power BI ikke kan logge på datakilder, eller at gatewayen er offline, når datasættet opretter forbindelse til en datakilde i det lokale miljø. Sørg for, at Power BI kan logge på datakilder. Hvis en adgangskode, du bruger til at logge på en datakilde med, ændres, eller Power BI logges af datakilden, skal du prøve at logge på datakilderne igen vha. legitimationsoplysningerne for datakilden.
+## <a name="best-practices"></a>Bedste praksis
 
-Du kan se flere oplysninger om fejlfinding i [Værktøjer til fejlfinding i forbindelse med opdateringproblemer](service-gateway-onprem-tshoot.md) og [Fejlfinding i forbindelse med opdatering af scenarier](refresh-troubleshooting-refresh-scenarios.md).
+Det er en af de vigtigste dele af bedste praksis at kontrollere opdateringshistorikken regelmæssigt for sine datasæt, da du på den måde kan sikre, at dine rapporter og dashboards bruger de mest aktuelle data. Hvis du finder problemer, bør du løse dem straks og kontakte ejerne af datakilden og gatewayadministratorer, hvis det er nødvendigt.
+
+Derudover bør du overveje følgende anbefalinger til at etablere og bevare pålidelige processer for opdatering af dine datasæt:
+
+- Planlæg dine opdateringer til mindre travle tidspunkter, især hvis dine datasæt befinder sig på Power BI Premium. Hvis du distribuerer opdateringscyklusser for dine datasæt på tværs af et bredere tidsvindue, kan du hjælpe med at undgå spidsbelastninger, der ellers kan overbelaste tilgængelige ressourcer. Forsinkelser af start af en opdateringscyklus er en indikator for overbelastning af ressourcen. Hvis en Premium-kapacitet er helt opbrugt, springer Power BI muligvis tilmed en opdateringscyklus over.
+- Vær opmærksom på grænser for opdatering. Hvis kildedata ændres ofte, eller du har en betragtelig datamængde, kan du overveje at bruge DirectQuery-/LiveConnect-tilstand i stedet for Importtilstand, hvis den øgede belastning på kilden og indvirkning på ydeevnen af forespørgsler er acceptabel. Undgå at opdatere et datasæt i Importtilstand konstant. Der er dog flere begrænsninger for DirectQuery-/LiveConnect-tilstanden, f.eks. en grænse på en million pr. række i forbindelse med returnering af data og en grænse på 225-sekunders svartid i forbindelse med kørsel af forespørgsler, som dokumenteret i [Brug DirectQuery i Power BI Desktop](desktop-use-directquery.md). Disse begrænsninger kan kræve, at du alligevel skal bruge Importtilstand. I forbindelse med meget store datamængder bør du overveje at bruge [sammenlægninger i Power BI](desktop-aggregations.md).
+- Bekræft, at opdateringstidspunktet for dit datasæt ikke overstiger den maksimale opdateringsvarighed. Brug Power BI Desktop til at tjekke opdateringsvarigheden. Hvis det tager mere end 2 timer, bør du overveje at flytte dit datasæt til Power BI Premium. Dit datasæt kan muligvis ikke opdateres på en delt kapacitet. Du bør også overveje at bruge [gradvis opdatering i Power BI Premium](service-premium-incremental-refresh.md) i forbindelse med datasæt, der er større end 1 GB eller tager flere timer at opdatere.
+- Optimer dine datasæt, så det kun er de tabeller og kolonner, der bruges i dine rapporter og dashboards, der inkluderes. Optimer din miksforespørgsler, og undgå definitioner for dynamisk datakilder og dyre DAX-beregninger, hvis det er muligt. Undgå specifikt DAX-funktioner, der tester hver række i en tabel, på grund af højt forbrug af hukommelse og behandlingsspild.
+- Anvend de samme indstillinger for beskyttelse af personlige oplysninger som i Power BI Desktop for at sikre, at Power BI kan generere effektive kildeforespørgsler. Husk på, at Power BI Desktop ikke publicerer indstillinger for beskyttelse af personlige oplysninger. Du skal manuelt anvende indstillingerne i definitionerne for datakilder efter publicering af dit datasæt.
+- Begræns antallet af visualiseringer på dine dashboards, især hvis du bruger [sikkerhed på rækkeniveau](service-admin-rls.md). Som beskrevet tidligere i denne artikel, kan et overdrevet stort antal felter på dashboardet øge opdateringsvarigheden.
+- Brug en pålidelig udrulning af en datagateway til virksomheder til at forbinde dine datasæt med datakilder i det lokale miljø. Hvis du opdager mislykkede opdateringer i forbindelse med gateways, f.eks. hvis gatewayen ikke er tilgængelig, eller den er overbelastet, skal du kontakte gatewayadministratorerne for enten at føje yderligere gateways til en eksisterende klynge eller udrulle en ny klynge (opskalering i forhold til udskalering).
+- Brug separate datagateways i forbindelse med Import-datasæt og DirectQuery-/LiveConnect-datasæt, så dataimporten under den planlagte opdatering ikke påvirker ydeevnen af rapporter og dashboards oven i DirectQuery-/LiveConnect-datasæt, som sender forespørgsler til datakilderne ved hver brugerinteraktion.
+- Sørg for, at Power BI kan sende meddelelser om mislykkede opdateringer til din postkasse. Spamfiltre kan blokere mails eller flytte dem til en særskilt mappe, hvor du måske ikke bemærker dem med det samme.
 
 ## <a name="next-steps"></a>Næste trin
+
+[Konfiguration af planlagt opdatering](refresh-scheduled-refresh.md)  
 [Værktøjer til fejlfinding af opdateringsfejl](service-gateway-onprem-tshoot.md)  
 [Fejlfinding i forbindelse med opdatering af scenarier](refresh-troubleshooting-refresh-scenarios.md)  
-[Power BI Gateway – Personal](service-gateway-personal-mode.md)  
-[Datagateway i det lokale miljø](service-gateway-onprem.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-

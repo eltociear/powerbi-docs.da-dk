@@ -1,5 +1,5 @@
 ---
-title: Hvad er sideinddelte rapporter i Power BI Premium? (Eksempelvisning)
+title: Hvad er sideinddelte rapporter i Power BI Premium?
 description: Sideinddelte rapporter, der længe har været standardrapportformatet i SQL Server Reporting Services, er nu tilgængelige i Power BI-tjenesten. Disse rapporter kan udskrives eller deles. Du kan styre rapportlayoutet præcist. De viser alle data i en tabel, også selvom tabellen strækker sig over flere sider.
 author: maggiesMSFT
 ms.author: maggies
@@ -8,41 +8,42 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 05/20/2019
-ms.openlocfilehash: 8da24bb8f7d3b8d507dbb6792556004083b673fe
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 06/06/2019
+ms.openlocfilehash: f7cf5091c60a6a916b24d6170eae96b3c1ee64dc
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65991078"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839642"
 ---
-# <a name="what-are-paginated-reports-in-power-bi-premium-preview"></a>Hvad er sideinddelte rapporter i Power BI Premium? (Eksempelvisning)
+# <a name="what-are-paginated-reports-in-power-bi-premium"></a>Hvad er sideinddelte rapporter i Power BI Premium?
 
 Sideinddelte rapporter, der længe har været standardrapportformatet i SQL Server Reporting Services, er nu tilgængelige i Power BI-tjenesten. Disse rapporter kan udskrives eller deles. De kaldes "sideinddelte", fordi de er formateret til at passe godt på en side. De viser alle data i en tabel, selvom tabellen strækker sig over flere sider. De kaldes også nogle gange "perfekt pixel", fordi du kan styre deres rapportsidelayout helt præcist. Sideinddelte rapporter er baseret på RDL-rapportteknologien i SQL Server Reporting Services. Report Builder er det separate værktøj, der bruges til oprettelse af sideinddelte rapporter. 
 
 Sideinddelte rapporter kan indeholde mange sider. Denne rapport indeholder f.eks. 563 sider. Hver side viser præcis én side pr. faktura og har gentagne sidehoveder og sidefødder.
 
-![Sideinddelt rapport i Power BI-tjenesten](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
+![Sideinddelt](media/paginated-reports-report-builder-power-bi/power-bi-paginated-wwi-report-page.png)
 
-Du kan få vist et eksempel på rapporten i Report Builder og derefter publicere den i Power BI-tjenesten, http://app.powerbi.com. Du skal bruge en Power BI Pro-licens for at publicere en rapport i tjenesten. Du kan publicere og dele sideinddelte rapporter i Mit arbejdsområde eller i apparbejdsområder, så længe arbejdsområdet er placeret i Power BI Premium-kapaciteten. En Power BI-administrator skal også aktivere sideinddelte rapporter på Power BI-administrationsportalen. 
+![Sideinddelt rapport i Power BI-tjenesten](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
+
+Du kan få vist et eksempel på rapporten i Report Builder og derefter publicere den i Power BI-tjenesten, http://app.powerbi.com. Du skal bruge en Power BI Pro-licens for at publicere en rapport i tjenesten. Du kan publicere og dele sideinddelte rapporter i Mit arbejdsområde eller i apparbejdsområder, så længe arbejdsområdet er placeret i en Power BI Premium-kapacitet. En Power BI-administrator skal også aktivere sideinddelte rapporter under [afsnittet for Premium-kapaciteter](service-admin-premium-workloads.md#paginated-reports-preview) på Power BI-administrationsportalen. 
 
 ## <a name="create-reports-in-power-bi-report-builder"></a>Opret rapporter i Power BI Report Builder
 
-Sideinddelte rapporter har deres egne designværktøj, Power BI Report Builder. Det er et nyt værktøj, der deler samme fundament som de værktøjer, du tidligere har brugt til at oprette sideinddelte rapporter til Power BI Report Server eller SQL Server Reporting Services (SSRS). Sideinddelte rapporter, som du opretter til SSRS-2016 og -2017 eller til Power BI-rapportserveren i det lokale miljø, er faktisk kompatible med Power BI-tjenesten. Power BI-tjenesten opretholder bagudkompatibilitet, så du kan fortsat bruge tidligere oprettede rapporter, og du kan opgradere sideinddelte rapporter, der er oprettet i en tidligere version. Det er ikke alle rapportfunktioner, der er tilgængelige ved lanceringen. Se under [Begrænsninger og overvejelser](#limitations-and-considerations) i denne artikel for at få flere oplysninger.
+Sideinddelte rapporter har deres eget designværktøj, Power BI Report Builder. Det er et nyt værktøj, der deler samme fundament som de værktøjer, du tidligere har brugt til at oprette sideinddelte rapporter for Power BI-rapportserver eller SQL Server Reporting Services (SSRS). Sideinddelte rapporter, som du opretter til SSRS-2016 og -2017 eller til Power BI-rapportserveren i det lokale miljø, er faktisk kompatible med Power BI-tjenesten. Power BI-tjenesten opretholder bagudkompatibilitet, så du kan fortsat bruge tidligere oprettede rapporter, og du kan opgradere sideinddelte rapporter, der er oprettet i en tidligere version. Det er ikke alle rapportfunktioner, der er tilgængelige ved lanceringen. Se under [Begrænsninger og overvejelser](#limitations-and-considerations) i denne artikel for at få flere oplysninger.
      
 ## <a name="report-from-a-variety-of-data-sources"></a>Rapport fra forskellige datakilder
 
-En enkelt sideinddelt rapport kan have en række forskellige datakilder. Til forskel fra Power BI-rapporter har den ikke en underliggende datamodel. I forbindelse med den første version af sideinddelte rapporter i Power BI-tjenesten kan du oprette integrerede datakilder og datasæt i selve rapporten. I øjeblikket kan du ikke bruge delte datakilder eller delte datasæt. Du opretter rapporter i Report Builder på din lokale computer. Hvis en rapport er forbundet med data i det lokale miljø, skal du efter upload af rapporten til Power BI-tjenesten oprette en gateway og omdirigere dataforbindelsen. Her er de datakilder, du kan oprette forbindelse til på dette tidspunkt:
+En enkelt sideinddelt rapport kan have en række forskellige datakilder. Til forskel fra Power BI-rapporter har den ikke en underliggende datamodel. I forbindelse med den første version af sideinddelte rapporter i Power BI-tjenesten kan du oprette integrerede datakilder og datasæt i selve rapporten. I øjeblikket kan du ikke bruge delte datakilder eller delte datasæt. Du opretter rapporter i Report Builder på din lokale computer. Hvis en rapport er forbundet med data i det lokale miljø, skal du efter upload af rapporten til Power BI-tjenesten oprette en gateway og omdirigere dataforbindelsen. Her er de datakilder, du kan oprette forbindelse til på nuværende tidspunkt:
 
 - Azure SQL Database og Data Warehouse
-- Azure Analysis Services (via SSO)
+- Azure Analysis Services (via enkeltlogon)
 - SQL Server via en gateway
 - SQL Server Analysis Services via en gateway
 - Power BI Premium-datasæt
 - Oracle
 - Teradata
- 
-Der vil komme flere datakilder til i løbet af prøveperioden.
+- Flere datakilder, i takt med at de tilføjes
 
 ## <a name="design-your-report"></a>Design rapporten  
 
@@ -67,11 +68,11 @@ Når du designer en sideinddelt rapport, opretter du faktisk en *rapportdefiniti
 ## <a name="view-your-paginated-report"></a>Få vist din sideinddelte rapport
 Du får vist din sideinddelte rapport i Power BI-tjenesten i en browser og i Power BI-mobilapps. I Power BI-tjenesten kan du eksportere rapporten til en række formater, f.eks. HTML, MHTML, PDF, XML, CSV, TIFF-, Word og Excel. Du kan også dele den med andre.  
 
-## <a name="create-a-subscription-to-your-report"></a>Opret et abonnement til din rapport
+## <a name="create-a-subscription-to-your-report"></a>Opret et abonnement på din rapport
 
-Du kan nu oprette mailabonnementer til dig selv og andre for sideinddelte rapporter i Power BI-tjenesten. Generelt er processen den samme som at abonnere på rapporter og dashboards i Power BI-tjenesten. At konfigurere abonnementer, du vælger, hvor ofte du gerne vil modtage mails: dagligt, ugentligt eller pr. time. Abonnementet indeholder en vedhæftet PDF-fil på outputtet i hele rapporten.
+Du kan nu oprette mailabonnementer på sideinddelte rapporter i Power BI-tjenesten for dig selv og andre. Generelt er processen den samme som at abonnere på rapporter og dashboards i Power BI-tjenesten. Under konfigurationen af abonnementer vælger du, hvor ofte du gerne vil modtage mails: dagligt, ugentligt eller hver time. Abonnementet indeholder en vedhæftet PDF-fil med hele outputtet for rapporten.
 
-Yderligere oplysninger finder du artiklen [dig selv og andre abonnerer sideinddelte rapporter i Power BI-tjenesten](paginated-reports-subscriptions.md). 
+Du kan finde flere oplysninger i artiklen [Meld dig selv og andre til et abonnement på sideinddelte rapporter i Power BI-tjenesten](paginated-reports-subscriptions.md). 
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 

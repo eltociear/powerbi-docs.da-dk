@@ -7,19 +7,21 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 06/07/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a5e4b41b36dfbf6cca14a348268b96eaad21b00e
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: d893088978d7a412d0e005ca7b3280824974c76c
+ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461850"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66816661"
 ---
 # <a name="use-datasets-across-workspaces-preview"></a>Brug datasæt på tværs af arbejdsområder (prøveversion)
 
 Business intelligence er en aktivitet baseret på samarbejde. Det er vigtigt at oprette standardiserede datasæt, der fungerer som fælles udgangspunkt. Registrering og genbrug af disse standardiserede datasæt er nøglen. Når eksperter inden for datamodellering i din organisation opretter og deler optimerede datasæt, kan oprettere af rapporter bruge disse datasæt som udgangspunkt for at oprette præcise rapporter. Din organisation har derefter ensartede data, når der skal træffes beslutninger, samt en sund datakultur.
+
+![Vælg et delt datasæt](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
 Power BI gør det nemt for oprettere af datasæt at certificere eller fremhæve datasæt, så andre kan finde dem. Derefter kan rapportforfattere finde officielle datasæt i god kvalitet, som de kan bruge, uanset hvor de er i Power BI. Ejere af datasæt kan bevare kontrollen over, hvem der har adgang til deres data, ved hjælp af [tilladelsen Opret](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Lejeradministratorer har en ny lejerindstilling til at [styre brugen af datasæt på tværs af arbejdsområder](service-datasets-admin-across-workspaces.md).
 

@@ -6,15 +6,15 @@ ms.custom: seodec18
 author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
-ms.topic: resource
+ms.topic: conceptual
 ms.date: 05/14/2019
 ms.author: mihart
-ms.openlocfilehash: 4a67e7ef8171b3f342530d187590e9e018f584df
-ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
-ms.translationtype: MT
+ms.openlocfilehash: 6a66d134a3399fed3ee03eddd7059265b5cf7c13
+ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412894"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66751018"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordliste til Power BI-tjenesten
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
@@ -142,7 +142,7 @@ Det er i orden at bruge Power BI-miljø (lejer) i dokumentationen, hvor det kan 
 ## <a name="h"></a>H
 **high-density visuals (visuals med høj tæthed)** Visuals med flere datapunkter, end Power BI kan gengive. Power BI sampler dataene for at få vist formen og de udenforliggende værdier.
 
-**Hjem** standard landing alder for brugere af Power BI-tjenesten. Uden at ændre noget. Kan kun kaldes Powerbi hjem eller blot hjem.
+**Hjem** Standardlandingssiden for brugere af Power BI-tjenesten. Ændrer ikke noget. Kan kaldes Power BI Start eller blot Start.
 
 ## <a name="i"></a>I
 

@@ -1,5 +1,5 @@
 ---
-title: Navigering i visningen Rapportdesign for sideinddelte rapporter (eksempelvisning)
+title: Navigering i visningen Rapportdesign for sideinddelte rapporter
 description: Visningen Rapportdesign i Report Builder er designområdet, hvor du kan oprette sideinddelte rapporter, som du kan publicere i Power BI-tjenesten.
 author: maggiesMSFT
 ms.author: maggies
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 11/05/2018
-ms.openlocfilehash: 2e9c402c09bc6f504729b8d6057ef5052f489f41
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 76c12cf411f49fda9f9fe042a6d1aafa457bf914
+ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61423334"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66839525"
 ---
-# <a name="getting-around-in-report-design-view-for-paginated-reports-preview"></a>Navigering i visningen Rapportdesign for sideinddelte rapporter (eksempelvisning)
+# <a name="getting-around-in-report-design-view-for-paginated-reports"></a>Navigering i visningen Rapportdesign for sideinddelte rapporter
 
-Rapportdesign i Power BI Report Builder er området design til oprettelse af sideinddelte rapporter, som du kan publicere til Power BI-tjenesten. Designområdet er placeret centralt i Report Builder, og båndet og ruderne er placeret rundt om det. Designområdet er, hvor du tilføjer og organiserer dine rapportelementer. I denne artikel forklares de ruder, du bruger til at tilføje, vælge og organisere dine rapportressourcer og ændre egenskaber for rapportelementer.  
+Rapportdesignet Vis i Power BI Report Builder er det designområde, hvor du kan oprette sideinddelte rapporter, som du kan publicere i Power BI-tjenesten. Designområdet er placeret centralt i Report Builder, og båndet og ruderne er placeret rundt om det. Designområdet er, hvor du tilføjer og organiserer dine rapportelementer. I denne artikel forklares de ruder, du bruger til at tilføje, vælge og organisere dine rapportressourcer og ændre egenskaber for rapportelementer.  
 
 ![Visningen Rapportdesign i Report Builder](media/paginated-reports-report-design-view/power-bi-paginated-report-design-view.png)
 
@@ -109,7 +109,7 @@ På statuslinjen for den aktuelle rapport vises navnet på den server, rapporten
 
 ## <a name="next-steps"></a>Næste trin
 
-[Hvad er sideinddelte rapporter i Power BI Premium? (prøveversion)](paginated-reports-report-builder-power-bi.md) 
+[Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md) 
 
   
   

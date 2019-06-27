@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 12/06/2017
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: e3092c320008df760ef72408c93f601dde26cdef
-ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
-ms.translationtype: MT
+ms.openlocfilehash: f06632e80bad8796ded3e3616836832967435b24
+ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66051146"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66809261"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Vejledning i at installere en datagateway til Power BI
 
@@ -42,7 +42,7 @@ Der findes en begrænsning i **Power BI**, der kun tillader *én* gateway pr. *r
 ### <a name="connection-type"></a>Forbindelsestype
 **Power BI** giver mulighed for to typer forbindelser: **DirectQuery** og **Import**. Ikke alle datakilder understøtter begge forbindelsestyper, og mange årsager kan bidrage til, at man vælger den ene frem for den anden, som f.eks. sikkerhedskrav, ydeevne, datagrænser og datamodelstørrelser. Du kan få mere at vide om forbindelsestype og understøttede datakilder i *listen over tilgængelige datakildetyper* i [artiklen om datagateway i det lokale miljø](service-gateway-onprem.md).
 
-Brugen af gatewayen kan være forskellig, afhængigt af hvilken type forbindelse bruges. Du bør f.eks. altid prøve at adskille **DirectQuery**-datakilder fra **Planlagt opdatering**-datakilder, når det er muligt (hvis altså de er i forskellige rapporter og kan adskilles). Hvis du gør det forhindrer, at gatewayen ophobes med tusindvis af **DirectQuery** anmodninger i kø, på samme tid morgenens planlagte opdatering af en stor datamodelstørrelse, der bruges til virksomhedens primære dashboard. Følgende overvejelser bør tages i hver situation:
+Brugen af gatewayen kan variere, afhængigt af den anvendte forbindelsestype. Du bør f.eks. altid prøve at adskille **DirectQuery**-datakilder fra **Planlagt opdatering**-datakilder, når det er muligt (hvis altså de er i forskellige rapporter og kan adskilles). Dette forhindrer, at gatewayen ophobes med tusindvis af **DirectQuery**-anmodninger samtidigt med morgenens planlagte opdatering af en stor datamodelstørrelse, der bruges til virksomhedens primære dashboard. Følgende overvejelser bør tages i hver situation:
 
 * **Planlagt opdatering**: Afhængigt af din forespørgselstørrelse og antallet af foretagne opdateringer pr. dag kan du vælge at forblive mellem de anbefalede mindstekrav til hardware eller opgradere til en computer med større ydeevne. Hvis en given forespørgsel ikke foldes, så sker transformationen på gatewayens computer og dermed drager gatewayens computer fordel af at have mere tilgængelig RAM.
 * I relation til **DirectQuery**: En forespørgsel sendes hver gang, en given bruger åbner rapporten eller gransker data. Så hvis du forventer, at flere end 1000 brugere tilgår data samtidigt, så bør du sørge for, at din computer har robuste og kapacitetstunge hardwarekomponenter. Flere CPU-kerner vil resultere i et forbedret gennemløb for en **DirectQuery**-forbindelse.
@@ -61,7 +61,7 @@ Der er følgende krav til den computer, du installerer en **datagateway i det lo
 * 64-bit-version af Windows 2012 R2 (eller nyere)
 
 ### <a name="location"></a>Placering
-Gateway-installationens placering kan have stor indvirkning på din forespørgselsydeevne, så du bør sørge for, at din gateway, datakildeplacering og Power BI-lejeren er placeret så tæt på hinanden som muligt for at minimere netværksventetid. For at fastsætte din Power BI-lejerplacering i Power BI-tjenesten, skal du vælge **?**- ikonet i det øverste højre hjørne og vælge **Om Power BI**.
+Gateway-installationens placering kan have stor indvirkning på din forespørgselsydeevne, så du bør sørge for, at din gateway, datakildeplacering og Power BI-lejeren er placeret så tæt på hinanden som muligt for at minimere netværksventetid. For at fastsætte din Power BI-lejerplacering i Power BI-tjenesten, skal du vælge **?** - ikonet i det øverste højre hjørne og vælge **Om Power BI**.
 
 ![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_02.png)
 
@@ -104,14 +104,34 @@ Gatewayen opretter en udgående forbindelse til **Azure Service Bus**. Gatewayen
 
 Gatewayen kræver *ikke* indgående porte. Alle påkrævede porte er angivet på den ovenstående liste.
 
-Det anbefales, at du føjer IP-adresserne for dit dataområde til hvidlisten i din firewall. Du kan downloade en liste over IP-adresser, som findes på [Microsoft Azure Datacenter IP-listen](https://www.microsoft.com/download/details.aspx?id=41653). Listen opdateres ugentligt. Gatewayen kommunikerer med **Azure Service Bus** ved hjælp af den specificerede IP-adresse foruden det fuldt kvalificerede domænenavn (FQDN). Hvis du tvinger gatewayen til at kommunikere ved hjælp af HTTPS, vil gatewayen udelukkende bruge FQDN, og der foregår ingen kommunikation via IP-adressen.
+Det anbefales, at du føjer IP-adresserne til en liste over tilladte adresser for dit dataområde i din firewall. Du kan downloade en liste over IP-adresser, som findes på [Microsoft Azure Datacenter IP-listen](https://www.microsoft.com/download/details.aspx?id=41653). Listen opdateres ugentligt. Gatewayen kommunikerer med **Azure Service Bus** ved hjælp af den specificerede IP-adresse foruden det fuldt kvalificerede domænenavn (FQDN). Hvis du tvinger gatewayen til at kommunikere ved hjælp af HTTPS, vil gatewayen udelukkende bruge FQDN, og der foregår ingen kommunikation via IP-adressen.
 
 #### <a name="forcing-https-communication-with-azure-service-bus"></a>Gennemtving HTTPS-kommunikation med Azure Service Bus
-Du kan tvinge gatewayen til at kommunikere med **Azure Service Bus** ved hjælp af HTTPS i stedet for direkte TCP. Dette vil bevirke en mindre ydelsesforringelse. Du kan også tvinge gatewayen til at kommunikere med **Azure Service Bus** ved at bruge gatewayens brugergrænseflade (begyndende med versionen af gatewayen fra marts 2017).
 
-Dette gør du ved at vælge **Netværk** i gatewayen og derefter slå **Azure Service Bus-forbindelsestilstand** **Til**.
+Du kan tvinge gatewayen til at kommunikere med Azure Service Bus ved hjælp af HTTPS i stedet for direkte TCP.
 
-![](media/service-gateway-deployment-guidance/powerbi-gateway-deployment-guidance_04.png)
+> [!NOTE]
+> Fra og med udgivelsen i juni 2019 bruges HTTPS for nye installationer (ikke opdateringer) som standard i stedet for TCP baseret på anbefalinger fra Azure Service Bus.
+
+Hvis du vil gennemtvinge kommunikation via HTTPS, skal du redigere filen *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* ved at ændre værdien fra `AutoDetect` til `Https` som vist i kodestykket efter dette afsnit. Filen er som standard placeret under *C:\Programmer\On-premises data gateway*.
+
+```xml
+<setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
+    <value>Https</value>
+</setting>
+```
+
+Der skelnes mellem store og små bogstaver i parameteren *ServiceBusSystemConnectivityModeString*. Gyldige værdier er *AutoDetect* og *Https*.
+
+Du kan også tvinge gatewayen til at fungere på denne måde ved hjælp af gatewaybrugergrænsefladen. I gatewaybrugergrænsefladen skal du vælge **Netværk** og derefter angive **Azure Service Bus-forbindelsestilstand**  til **Til**.
+
+![](./includes/media/gateway-onprem-accounts-ports-more/gw-onprem_01.png)
+
+Når indstillingen er ændret, kan du vælge **Anvend** (en knap, der kun vises, når du har ændret noget), og *Windows-gatewaytjenesten* bliver automatisk genstartet, så ændringen kan træde i kraft.
+
+Til fremtidig reference kan du genstarte *Windows-gatewaytjenesten* fra dialogboksen ved at vælge **Tjenesteindstillinger** og derefter vælge *Genstart nu*.
+
+![](./includes/media/gateway-onprem-accounts-ports-more/gw-onprem_02.png)
 
 ### <a name="additional-guidance"></a>Yderligere vejledning
 Dette afsnit giver yderligere vejledning i at udrulle og administrere gateways.
