@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 1050cf5ee5060a19e4f38b98fb6766b6e5510451
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 3465d9280af84a97ebf2ea5ec90ff60daf9e96fa
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66750980"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389542"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
@@ -23,10 +23,6 @@ Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når
 ## <a name="upcoming-webinars"></a>Kommende webinarer
 
 Tilmeld dig for at høre fra Power BI-eksperter og deltage i livesessioner med Spørgsmål og svar.
-
-**Microsoft kører på Power BI: Brug af Power BI i moderne Treasury**
-<br>ved Pankaj Gudimella og Guru Kirthigavasan
-<br>[Tilmeld dig for at se med d. 25. juni, kl. 10:00-11:00 PST](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
 
 **Power BI: Sådan får du indsigt fra HR-data for din arbejdsdag**
 <br>ved Iman Eftekhari, Julia Paton fra Agile Analytics og Shahram Karimi fra QBE Insurance
@@ -61,6 +57,10 @@ Kom i gang med disse populære webinarer, når det passer dig
 **Microsoft kører på Power BI – finansiel planlægning og analyse på den nemme måde**
 <br>ved Cory Hrncirik og Miguel Martinez
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-OnDemandRegistration.html?Is=Website)
+
+**Microsoft kører på Power BI: Brug af Power BI i moderne Treasury**
+<br>ved Pankaj Gudimella og Guru Kirthigavasan
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Microsoft-Runs-on-Power-BI-Using-Power-BI-in-Modern-Treasury-Registration.html?LCID=EN-US)
 
 **Optimer dine programmer ved hjælp af Power BI JavaScript-API’en**
 <br>ved Nimrod Shalit
@@ -141,17 +141,9 @@ Se optagne sessioner når som helst
 <br>ved Stephen Cracknell og Stuart Macanliss fra US Medical IT
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/Proven-Techniques-for-Building-Effective-Dashboards-Registration.html?Is=Website)
 
-**Styrk din BI med Location Intelligence**
-<br>af Scott Ball fra Esri og Enrique Plaza fra Microsoft
-<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
-
 **Anvendte efterretninger til salg og tjenester** (webinaret er på engelsk)
 <br>ved Ed Bobrin fra Avanade
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/applied-intelligence-for-sales-service.html?Is=Website)
-
-**En succesfuld fremtidsspotters 5 indkøbsvaner – Rohit Bhargava**
-<br>af Rohit Bhargava fra Non-Obvious
-<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 **Producenter: Din branche gennemgår en digital transformation – bevar din førerposition ved at benytte analyser til at optimere rentabiliteten**
 <br>ved Jon Thompson fra Blue Margin og Jim Pastor fra Elgin Fastener Group
@@ -160,6 +152,14 @@ Se optagne sessioner når som helst
 **Visualiser offentlige eller private datasæt med den nye forbindelse til Power BI og data.world**
 <br>ved Patrick McGarry og Miguel Martinez
 <br>[Tilmeld dig, og se det nu](https://info.microsoft.com/data-world-connector-powerbi.html?Is=Website)
+
+**Styrk din BI med Location Intelligence**
+<br>af Scott Ball fra Esri og Enrique Plaza fra Microsoft
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-ondeamnd-boost-powerbi-with-arcgis.html?Is=Website)
+
+**En succesfuld fremtidsspotters 5 indkøbsvaner – Rohit Bhargava**
+<br>af Rohit Bhargava fra Non-Obvious
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/ww-landing-5-Habits-of-a-Successful-Trend-Curator-Video.html?LCID=EN-US)
 
 ### <a name="community"></a>Community ###
 
