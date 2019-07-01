@@ -1,22 +1,22 @@
 ---
-title: Distribuer skabelonprogrammer i din organisation – Power BI (prøveversion)
+title: Distribuer skabelonprogrammer i din organisation – Power BI
 description: Få mere at vide om installation, tilpasning og distribution af skabelonprogrammer i din organisation i Power BI.
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/19/2019
-ms.author: maggies
-ms.openlocfilehash: 0671dfb324b3d66a9dee9585f94d3cb6825fb5eb
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.date: 06/10/2019
+ms.author: tebercov
+ms.openlocfilehash: 158345c44f8801a98e19dcd9b4c7dde14aa6126b
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751249"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264524"
 ---
-# <a name="install-and-distribute-template-apps-in-your-organization---power-bi-preview"></a>Installér og distribuer skabelonprogrammer i din organisation – Power BI (prøveversion)
+# <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Installér og distribuer skabelonprogrammer i din organisation – Power BI
 
 Er du Power BI-analytiker? Hvis du er det, så kan du i denne artikel se en forklaring på, hvordan du installerer *skabelonprogrammer* for at oprette forbindelse til mange af de tjenester, du bruger til at drive din forretning, f.eks. Salesforce, Microsoft Dynamics og Google Analytics. Du kan redigere dashboardet og rapporterne, så de opfylder din organisations behov, og derefter distribuere dem til dine kolleger som et *program*. 
 
@@ -55,14 +55,13 @@ Vælg dette link for at åbne AppSource, der er filtreret efter Power BI-program
 
 3. Gennemse, eller søg efter programmet, og vælg derefter **Hent det nu**.
 
-2. Vælg **Installér** i dialogboksen.
+4. Vælg **Installér** i dialogboksen.
 
-    Hvis du har en Power BI Pro-licens, er programmet installeret med dets tilknyttede programarbejdsområde. Du kan tilpasse programmet i det tilknyttede arbejdsområde.
+    ![Installér app](media/service-template-apps-install-distribute/power-install-dialog.png) Hvis du har en Power BI Pro-licens, er programmet installeret med dets tilknyttede programarbejdsområde. Du kan tilpasse programmet i det tilknyttede arbejdsområde.
 
-    Når installationen er fuldført, får du vist en meddelelse om, at dit nye program er klar. 
-
-3. Vælg **Gå til program**.
-4. Vælg en af tre indstillinger under **Kom i gang med dit nye program**:
+    Når installationen er fuldført, får du vist en meddelelse om, at dit nye program er klar.
+4. Vælg **Gå til program**.
+5. Vælg en af tre indstillinger under **Kom i gang med dit nye program**:
 
     ![Kom i gang med dit program](media/service-template-apps-create/power-bi-template-app-get-started.png)
 
@@ -70,13 +69,22 @@ Vælg dette link for at åbne AppSource, der er filtreret efter Power BI-program
     - **Forbind data**: Skift datakilden fra eksempeldataene til din egen datakilde. Du kan omdefinere parametre for datasæt og legitimationsoplysninger for datakilden. Se [Kendte begrænsninger](service-template-apps-tips.md#known-limitations) i artiklen om tip til skabelonprogrammer. 
     - **Gå til arbejdsområde** (mest avancerede indstilling): Du kan foretage alle de ændringer, der er tilladt af programudvikleren.
 
-    Eller du kan springe denne dialogboks over og få adgang til det tilknyttede arbejdsområde direkte via **Arbejdsområder** i navigationsruden til venstre.   
+    Eller du kan springe denne dialogboks over og få adgang til det tilknyttede arbejdsområde direkte via **Arbejdsområder** i navigationsruden til venstre.
+    >[!NOTE]
+    >Installation af en skabelonapp installerer både en *organisationsapp* og et *apparbejdsområde*. Læs mere om [distribution af apps i Power BI](service-create-distribute-apps.md).
  
-5. Før du deler den med dine kolleger, er det en god idé at oprette forbindelse til dine egne data. Det kan også være en god idé at redigere rapporten eller dashboardet, så de fungerer for din organisation. På dette tidspunkt kan du også tilføje andre rapporter eller dashboards.
+6. Før du deler den med dine kolleger, er det en god idé at oprette forbindelse til dine egne data. Det kan også være en god idé at redigere rapporten eller dashboardet, så de fungerer for din organisation. På dette tidspunkt kan du også tilføje andre rapporter eller dashboards.
+
+   Hvis du vælger et installationslink for en app, der ikke er angivet på AppSource, får du vist valideringsdialogboksen, hvor du skal bekræfte dit valg.
+
+   ![Installér app](media/service-template-apps-install-distribute/power-install-unvalidated-dialog.png)
+
+   >[!NOTE]
+   >Du skal anmode om tilladelse fra administratoren for at installere skabelonapps, der ikke er vist på AppSource. Du kan finde flere oplysninger på Power BI[-administrationsportal, indstillingen Skabelonprogram](service-admin-portal.md#template-apps-settings).
 
 ## <a name="update-and-distribute-the-app"></a>Opdater og distribuer programmet
 
-Når du har opdateret programmet til din organisation, er du klar til at udgive det. Fremgangsmåden er den samme som udgivelse af et hvilket som helst andet program. 
+Når du har opdateret programmet til din organisation, er du klar til at udgive det. Fremgangsmåden er den samme som udgivelse af et hvilket som helst andet program.
 
 1. Når du er færdig med tilpasningen, skal du vælge **Opdater program** i øverste højre hjørne af listevisningen af arbejdsområdet.  
 

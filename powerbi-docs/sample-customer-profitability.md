@@ -7,27 +7,30 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/11/2019
+ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 2b89125cd2ad45bdad18bd198385e1117b5e3f16
-ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.openlocfilehash: 70f47e4885b3abeb6ee17bea23dec35a230d57ec
+ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67039508"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67349329"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Eksempel på kunderentabilitet til Power BI: Få en introduktion
 
 ## <a name="overview-of-the-customer-profitability-sample"></a>Oversigt over eksemplet på kunderentabilitet
-Indholdspakken Eksempel på kunderentabilitet indeholder et dashboard, en rapport og datasæt for en virksomhed, der producerer markedsføringsmateriale. Dette dashboard blev oprettet af en økonomidirektør med henblik på at se nøgletal for hendes fem afdelingsledere (direktører), produkter, kunder og bruttoavance (BA). Hun kan hurtigt se, hvilke faktorer der påvirker rentabiliteten.
+Indholdspakken med eksemplet på kunderentabilitet indeholder et dashboard, en rapport og datasæt for en virksomhed, der producerer markedsføringsmateriale. Dette dashboard blev oprettet af en økonomidirektør med henblik på at se nøgletal for hendes fem afdelingsledere (direktører), produkter, kunder og bruttoavance (BA). Hun kan hurtigt se, hvilke faktorer der påvirker rentabiliteten.
 
-![Power BI-dashboard](media/sample-customer-profitability/power-bi-dash.png)
+![Dashboard for eksempel på Kunderentabilitet](media/sample-customer-profitability/power-bi-dash.png)
 
-Dette eksempel er en del af en række, der illustrerer, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Dette eksempel blev oprettet med rigtige data fra obviEnce ([www.obvience.com](http://www.obvience.com/)), som er blevet anonymiseret. Dataene er tilgængelige i flere formater: indholdspakke/app, Excel-projektmappe eller .pbix Power BI Desktop-fil. Se [Eksempler til Power BI](sample-datasets.md).
+Dette eksempel er en del af en række, der viser, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Det blev oprettet med rigtige data fra [obviEnce](http://www.obvience.com/), som er blevet anonymiseret. Dataene er tilgængelige i flere formater: indholdspakke/app, .pbix Power BI Desktop-fil eller Excel-projektmappe. Se [Eksempler til Power BI](sample-datasets.md). 
+
+I dette selvstudium bruges Power BI-tjenesten og indholdspakken med eksemplet på kunderentabilitet. Da rapportoplevelserne ligner hinanden rigtig meget, kan du også følge med ved hjælp af Power BI Desktop og .pbix-eksempelfilen. 
 
 ## <a name="prerequisites"></a>Forudsætninger
-Vil du følge med? I dette selvstudium bruges Power BI-tjenesten og indholdspakken Eksempel på kunderentabilitet. Da rapportoplevelserne ligner hinanden rigtig meget, kan du også følge med ved hjælp af Power BI Desktop og .pbix-eksempelfilen. Instruktioner til oprettelse af forbindelse til indholdspakken og .pbix-filen er beskrevet i følgende afsnit.
+
+Før du kan bruge eksemplet, skal du først downloade det som en [indholdspakke](#get-the-content-pack-for-this-sample), [.pbix-fil](#get-the-pbix-file-for-this-sample) eller [Excel-projektmappe](#get-the-excel-workbook-for-this-sample).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Hent indholdspakken for dette eksempel
 
@@ -35,26 +38,23 @@ Vil du følge med? I dette selvstudium bruges Power BI-tjenesten og indholdspakk
 
 2. Vælg **Hent data** i nederste venstre hjørne.
 
-    ![Hent data](media/sample-datasets/power-bi-get-data.png)
+   ![Vælg Hent data](media/sample-datasets/power-bi-get-data.png)
 3. På siden **Hent data**, der vises, skal du vælge **Eksempler**.
 
 4. Vælg **Eksempel på kunderentabilitet**, og vælg derefter **Opret forbindelse**.  
 
-   ![Hent data](media/sample-customer-profitability/get-supplier-sample.png)
+    ![Opret forbindelse til eksempel](media/sample-customer-profitability/get-supplier-sample.png)
 5. Power BI importerer indholdspakken og føjer derefter et nyt dashboard, en rapport og datasæt til dit aktuelle arbejdsområde.
 
-   ![Posten Eksempel på kunderentabilitet](media/sample-customer-profitability/customer-profitability-sample-entry.png)
+    ![Posten Eksempel på kunderentabilitet](media/sample-customer-profitability/customer-profitability-sample-entry.png)
 
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hent .pbix-filen knyttet til dette eksempel
 
-Alternativt kan du downloade [Eksempel på kunderentabilitet](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix) som en .pbix-fil, der er designet til at blive brugt sammen med Power BI Desktop.
-
+Alternativt kan du downloade eksemplet på kunderentabilitet som en [.pbix-fil](http://download.microsoft.com/download/6/A/9/6A93FD6E-CBA5-40BD-B42E-4DCAE8CDD059/Customer%20Profitability%20Sample%20PBIX.pbix), der er designet til at blive brugt sammen med Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hent Excel-projektmappen for dette eksempel
 
 Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529781). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, skal se [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for at få flere oplysninger.
-
-
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Hvad fortæller vores dashboard os?
 
@@ -69,13 +69,13 @@ Find dashboardet Kunderentabilitet i det arbejdsområde, hvor du gemte eksemplet
 
     ![Felter til ledere](media/sample-customer-profitability/power-bi-manager.png)
 
-- Virksomhedens bruttoavance er på 42,5 %.
-- Den har 80 kunder.
-- Den sælger fem forskellige produkter.
-- Den havde den laveste omsætningsafvigelse i % ift. budgettet for februar efterfulgt af den højeste i marts.
-- Den største omsætning stammer fra de østlige og nordlige områder. Bruttoavancen har aldrig overskredet budgettet, men forretningsenhederne ER-0 og MA-0 skal undersøges nærmere.
-- Den samlede omsætning for året ligger tæt på budgettet.
-
+   Bemærk følgende oplysninger:
+   - Virksomhedens bruttoavance er på 42,5 %.
+   - Den har 80 kunder.
+   - Den sælger fem forskellige produkter.
+   - Den havde den laveste omsætningsafvigelse i % ift. budgettet for februar efterfulgt af den højeste i marts.
+   - Den største omsætning stammer fra de østlige og nordlige områder. Bruttoavancen har aldrig overskredet budgettet, men forretningsenhederne ER-0 og MA-0 skal undersøges nærmere.
+   - Den samlede omsætning for året ligger tæt på budgettet.
 
 ### <a name="manager-specific-dashboard-tiles"></a>Chefspecifikke dashboardfelter
 Ved hjælp af felterne i højre side af dashboardet får du et teamscorecard. Økonomidirektøren skal holde styr på sine ledere, og disse felter giver hende et godt overblik over fortjenesten ved hjælp af BA i %. Hvis BA%-tendensen er uventet for en given chef, så kan hun undersøge det nærmere.
@@ -100,8 +100,10 @@ To felter på dette dashboard **Mål vs. Faktisk** og **Omsætningsstigning år 
 1. Vælg et af de felter, der er fastgjort fra Excel. Excel Online åbnes i Power BI-tjenesten.
 2. Bemærk, at der er tre faner med data i projektmappen. Åben **Omsætning**.
 3. Lad os se, hvorfor Carlos endnu ikke har nået sit mål:  
+
     a. Via skyderen **Direktør** skal du vælge **Carlos Grilo**.   
-    b. Den første pivottabel fortæller os, at Carlos' omsætningsstigning for det bedste produkt, Primus, er faldet med 152 % siden sidste år. Diagrammet over omsætningsafvigelse år-til-år viser, at han i de fleste måneder lå under budgettet.  
+
+    b. Den første pivottabel fortæller os, at Carlos' omsætningsstigning for det bedste produkt, Primus, er faldet med 152 % siden sidste år. Diagrammet over **omsætningsafvigelse år-til-år** viser, at han i de fleste måneder lå under budgettet.  
 
     ![Pivottabel](media/sample-customer-profitability/power-bi-pivotchart.png)
 
@@ -129,54 +131,57 @@ Mange af felterne på dashboardet med Eksempel på kunderentabilitet er fastjort
 ### <a name="team-scorecard-page"></a>Siden Teamscorecard
 ![Rapportsiden Teamscorecard](media/sample-customer-profitability/customer2.png)
 
-Lad os se nærmere på to af teammedlemmerne, og på hvad det giver os af indsigter. I feltet **Direktør** til venstre skal du vælge Andrews navn for at filtrere rapportsiden, så der kun vises data for Andrew.
+Lad os se nærmere på to af teammedlemmerne, og på hvad det giver os af indsigter: 
 
-* Hvis du vil se et hurtigt KPI, skal du kigge på Andrews **Omsætningsstatus (Samlet for året)** . Det er grøn, hvilket betyder, at han præsterer godt.
-* Diagrammet **Omsætningsafvigelse i % for budget pr. måned** viser, at Andrew generelt klarer sig godt med undtagelse af et fald i februar. Hans stærkeste område er det østlige område, og han håndterer 49 kunder og 5 ud af 7 produkter. Hans BA i % er hverken den højeste eller den laveste.
-* Diagrammet **Samlet omsætning i år og omsætningsafvigelse i % ift. budget pr. måned** viser en konstant og tilmed rentabel historie. Men hvis du filtrerer ved at vælge firkanten ud for **Central** i områdetræstrukturen, opdager du, at Andrew kun har omsætning i marts og kun i Indiana. Er dette bevidst, eller er det noget, der skal undersøges nærmere?
+1. I udsnittet **Direktør** til venstre skal du vælge Andrews navn for at filtrere rapportsiden, så der kun vises data for Andrew:
 
-Nu videre til Valery. Vælg Valerys navn i feltet **Direktør** for at filtrere rapportsiden og kun få vist data om hende. 
+   * Hvis du vil se et hurtigt KPI, skal du kigge på Andrews **Omsætningsstatus (Samlet for året)** . Det er grøn, hvilket betyder, at han præsterer godt.
+   * Diagrammet **Omsætningsafvigelse i % for budget pr. måned** viser, at Andrew generelt klarer sig godt med undtagelse af et fald i februar. Hans stærkeste område er det østlige område, og han håndterer 49 kunder og 5 ud af 7 produkter. Hans BA i % er hverken den højeste eller den laveste.
+   * Diagrammet **Samlet omsætning i år og omsætningsafvigelse i % ift. budget pr. måned** viser en konstant og tilmed rentabel historie. Men hvis du filtrerer ved at vælge firkanten ud for **Central** i områdetræstrukturen, opdager du, at Andrew kun har omsætning i marts og kun i Indiana. Er dette bevidst, eller er det noget, der skal undersøges nærmere?
 
-![Valerys data](media/sample-customer-profitability/customer3.png)
+2. Nu videre til Valery. Vælg Valerys navn i udsnittet **Direktør** for at filtrere rapportsiden og kun få vist data om hende. 
 
-* Bemærk det røde KPI for **Omsætningsstatus (Samlet for året)** . Dette skal helt sikkert undersøges nærmere.
-* Hendes omsætningsafvigelse tegner også et bekymrende billede: Hun opfylder ikke sine omsætningsmargener.
-* Valery har kun ni kunder, håndterer kun to produkter og arbejder næsten udelukkende med kunder i det nordlige område. Denne specialisering kan være forklaringen på de stærkt svingende tal.
-* Hvis du vælger firkanten **Nord** i træstrukturen, kan du se, at Valerys bruttoavance i det nordlige område svarer til hendes overordnede margen.
-* Hvis du vælger de andre firkanter **Samlet omsætning efter område**, kan du se et interessant billede: Hendes BA i % strækker sig fra 23 % til 79 %. Hendes omsætningstal i alle områder undtagen det nordlige område er ekstremt sæsonafhængige.
+   ![Valerys data](media/sample-customer-profitability/customer3.png)
 
-Fortsæt med udforskningen for at finde ud af, hvorfor Valerys område ikke præsterer så godt. Kig på områder, de andre forretningsenheder og den næste side i rapporten: **Branchemargenanalyse**.
+   * Bemærk det røde KPI for **Omsætningsstatus (Samlet for året)** . Dette skal helt sikkert undersøges nærmere.
+   * Hendes omsætningsafvigelse tegner også et bekymrende billede: Hun opfylder ikke sine omsætningsmargener.
+   * Valery har kun ni kunder, håndterer kun to produkter og arbejder næsten udelukkende med kunder i det nordlige område. Denne specialisering kan være forklaringen på de stærkt svingende tal.
+   * Hvis du vælger firkanten **Nord** i træstrukturen, kan du se, at Valerys bruttoavance i det nordlige område svarer til hendes overordnede margen.
+   * Hvis du vælger en af de andre **Samlet omsætning efter område**-firkanter, kan du se et interessant billede: Hendes BA i % strækker sig fra 23 % til 79 %. Hendes omsætningstal i alle områder undtagen det nordlige område er ekstremt sæsonafhængige.
+
+3. Fortsæt med udforskningen for at finde ud af, hvorfor Valerys område ikke præsterer så godt. Kig på områder, de andre forretningsenheder og den næste side i rapporten: **Branchemargenanalyse**.
 
 ### <a name="industry-margin-analysis"></a>Branchemargenanalyse
 Denne rapportside indeholder et andet udsnit af dataene. Den ser på bruttoavancen for hele branchen, opdelt efter segment. Økonomidirektøren bruger denne side til at sammenligne virksomheds- og afdelingsdata som en hjælp til at forklare tendenser og lønsomhed. Du undrer dig måske over, hvorfor områdediagrammet **Bruttoavance i % efter måned og direktør** er på denne side, da det er teamspecifikt. Den er placeret her, fordi vi så kan filtrere siden efter afdelingschef.  
 
 ![Rapportsiden Branchemargenanalyse](media/sample-customer-profitability/customer6.png)
 
-Hvor meget varierer lønsomheden efter branche? Hvordan fordeler produkter og kunder sig efter branche? For at besvare disse spørgsmål skal du vælge en eller flere brancher øverst til venstre (start med CPG-branchen). Vælg viskelæderikonet for at fjerne filteret.
+1. Hvor meget varierer lønsomheden efter branche? Hvordan fordeler produkter og kunder sig efter branche? For at besvare disse spørgsmål skal du vælge en eller flere brancher øverst til venstre (start med CPG-branchen). Vælg viskelæderikonet for at fjerne filteret.
 
-I boblediagrammet (**Omsætningsafvigelse i % ift. budget, BA i % og samlet omsætning i år efter branche**) kigger økonomidirektøren efter de største bobler, fordi de har den største indvirkning på omsætningen. Hvis du nemt vil se hver leders indvirkning efter branchesegment, skal du filtrere siden ved at klikke på hver leders navn i områdediagrammet.
+2. I boblediagrammet **Omsætningsafvigelse i % ift. budget, BA i % og samlet omsætning i år efter branche** kigger økonomidirektøren efter de største bobler, fordi de har den største indvirkning på omsætningen. Hvis du nemt vil se hver leders indvirkning efter branchesegment, skal du filtrere siden ved at klikke på hver leders navn i områdediagrammet.
 
-* Andrews indvirkning ses i mange forskellige branchesegmenter med meget varierende BA% (mest positiv) og Var%.
-* Annelies diagram er lignende, bortset fra at hun kun koncentrerer sig om en håndfuld branchesegmenter med fokus på det delstatsmæssige segment og fokus på Gladius-produktet.
-* Carlos har et klart fokus på segmentet for serviceydelser med et godt overskud. Han har markant forbedret afvigelsen i % for segmentet for højteknologi, og et nyt segment for ham, industriel, præsterede rigtigt godt i forhold til budgettet.
-* Tina arbejder inden for en håndfuld segmenter og har den højeste BA%, men hendes bobler er generelt små, hvilket viser, at hendes indvirkning på virksomhedens bundlinje er minimal.
-* Valery, som kun har ansvaret for et enkelt produkt, arbejder i kun fem branchesegmenter. Hendes indvirkning er sæsonafhængig, men leverer altid en stor boble, hvilket viser, at hun har en stor indvirkning på virksomhedens bundlinje. Er branchesegmenterne forklaringen på hendes negative præstation?
+3. Når du vælger de enkelte ledere i diagrammet, skal du bemærke følgende oplysninger:
+   * Andrews indvirkning ses i mange forskellige branchesegmenter med meget varierende BA% (mest positiv) og Var%.
+   * Annelies diagram er lignende, bortset fra at hun kun koncentrerer sig om en håndfuld branchesegmenter med fokus på det delstatsmæssige segment og fokus på Gladius-produktet.
+   * Carlos har et klart fokus på segmentet for serviceydelser med et godt overskud. Han har markant forbedret afvigelsen i % for segmentet for højteknologi, og et nyt segment for ham, industriel, præsterede rigtigt godt i forhold til budgettet.
+   * Tina arbejder inden for en håndfuld segmenter og har den højeste BA%, men hendes bobler er generelt små, hvilket viser, at hendes indvirkning på virksomhedens bundlinje er minimal.
+   * Valery, som kun har ansvaret for et enkelt produkt, arbejder i kun fem branchesegmenter. Hendes indvirkning er sæsonafhængig, men leverer altid en stor boble, hvilket viser, at hun har en stor indvirkning på virksomhedens bundlinje. Er branchesegmenterne forklaringen på hendes negative præstation?
 
 ### <a name="executive-scorecard"></a>Chefscorecard
-Denne side er formateret som en Cortana-svarside til Cortana. Du kan finde flere oplysninger i [Opret et brugerdefineret svarside til Cortana](service-cortana-answer-cards.md).
+Denne side er formateret som en Cortana-svarside. Du kan finde flere oplysninger i [Opret et brugerdefineret svarside til Cortana](service-cortana-answer-cards.md).
 
 ## <a name="dig-into-the-data-by-asking-questions-with-qa"></a>Grav dybere ned i dataene ved at stille spørgsmål med spørgsmål og svar
 I forhold til vores analyse kan det være nyttigt at få fastlagt, hvilken branche der genererer den største omsætning for Valery. Lad os bruge spørgsmål og svar.
 
-1. Åbn rapporten i Redigeringsvisning ved at vælge **Rediger rapport**. Redigeringsvisning er kun tilgængelig, hvis du ejer rapporten. Denne visning kaldes nogle gange for **oprettertilstand**. Hvis rapporten i stedet kun er delt med dig, kan du ikke åbne den i Redigeringsvisning.
+1. Vælg **Rediger rapport** for at åbne rapporten i Redigeringsvisning. Redigeringsvisning er kun tilgængelig, hvis du ejer rapporten. Denne visning kaldes nogle gange for *oprettertilstand*. Hvis rapporten i stedet kun er delt med dig, kan du ikke åbne den i Redigeringsvisning.
 
-2.  På menulinjen øverst kan du vælge **Stil et spørgsmål** for at åbne dialogboksen Spørgsmål og svar.
+2.  På menulinjen øverst i dashboardet kan du vælge **Stil et spørgsmål** for at åbne dialogboksen Spørgsmål og svar.
 
     ![Stil et spørgsmål om dine data](media/sample-customer-profitability/power-bi-ask-question.png)
 
-3. Typen *samlet omsætning efter branche for Valery Ushakov*. Se, hvordan visualiseringen opdateres, mens du skriver spørgsmålet.
+3. Skriv *samlet omsætning efter branche for Valery* i spørgsmålsfeltet. Se, hvordan visualiseringen opdateres, mens du skriver spørgsmålet.
 
-    ![skriv spørgsmål i feltet til spørgsmål](media/sample-customer-profitability/power-bi-qna.png)
+    ![Skriv spørgsmål i spørgsmålsfeltet](media/sample-customer-profitability/power-bi-qna.png)
 
    Som du kan se, er branchen Distribution det største omsætningsområde for Valery.
 
@@ -192,17 +197,15 @@ Lad os se på branchen Distribution.
    ![Filtrer efter distribution](media/sample-customer-profitability/customer7.png)
 4. I områdediagrammet **Bruttoavance i % efter måned og direktør** kan du se, at det kun er Valery og Tina, der har kunder i denne branche, og at Valery kun arbejdede med denne branche fra juni til november.   
 5. Vælg **Tina** og derefter **Valery** i områdediagramforklaringen **Bruttoavance efter måned og direktør**. Bemærk, at Tinas andel af **Samlet omsætning efter produkt** er meget lille i forhold til Valery.
-6. Hvis du vil se den faktiske omsætning, skal du bruge Spørgsmål og svar til at angive *samlet omsætning pr. direktør for distribution efter scenarie*.  
+6. Hvis du vil se den faktiske indtægt, skal du vælge feltet Spørgsmål og svar i dashboardet og indtaste den *samlede indtægt pr. direktør for distribution efter scenarie*.  
 
-     ![skriv et spørgsmål i feltet til spørgsmål for at få vist søjlediagram](media/sample-customer-profitability/power-bi-qna2.png)
+     ![Skriv spørgsmål i feltet Spørgsmål og svar](media/sample-customer-profitability/power-bi-qna2.png)
 
     Vi kan ligeledes granske andre brancher og endog føje kunder til vores visuals for at få indsigt i årsagerne til Valerys præstation.
 
-Dette er et sikkert miljø at lege i. Du kan altid vælge ikke at gemme dine ændringer. Hvis du gemmer dem, kan du altid vælge **Hent data** for at få en ny kopi af dette eksempel.
-
-Du kan også nøjes med at [downloade datasættet (Excel-projektmappe) til dette eksempel](http://go.microsoft.com/fwlink/?LinkId=529781).
+Dette miljø er sikkert at eksperimentere i, fordi du kan vælge ikke at gemme dine ændringer. Hvis du gemmer dem, kan du altid vælge **Hent data** for at få en ny kopi af dette eksempel.
 
 ## <a name="next-steps-connect-to-your-data"></a>Næste trin: Opret forbindelse til dine data
-Vi håber, at denne rundtur har vist, hvordan Power BI-dashboards, spørgsmål og svar og rapporter kan give indsigt i kundedata. Nu er det din tur: Opret forbindelse til dine egne data. Med Power BI kan du oprette forbindelse til en lang række datakilder. Få mere at vide om, hvordan du [kommer i gang med Power BI](service-get-started.md).
+Vi håber, at denne rundtur har vist, hvordan Power BI-dashboards, spørgsmål og svar og rapporter kan give indsigt i kundedata. Nu er det din tur: Opret forbindelse til dine egne data. Med Power BI kan du oprette forbindelse til en lang række datakilder. Få mere at vide ved at se [Introduktion til Power BI-tjenesten](service-get-started.md).
 
 [Eksempler til Power BI](sample-datasets.md)  

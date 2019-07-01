@@ -9,18 +9,20 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 7b687fd67f844e000811ae00a53772ab9403ab90
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 3dcc8211f6752d272d550dfaff343374866187c9
+ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66838943"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67345490"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Opret en integreret datakilde for sideinddelte rapporter i Power BI-tjenesten
 
 I denne artikel kan du læse om, hvordan du opretter og redigerer en integreret datakilde for en sideinddelt rapport i Power BI-tjenesten. Du definerer en integreret datakilde i en enkelt rapport og bruger den kun i denne rapport. I øjeblikket skal sideinddelte rapporter, der er publiceret i Power BI-tjenesten, bruge integrerede datasæt og datakilder, og de kan oprette forbindelse til følgende datakilder:
 
-- Azure SQL Database og Data Warehouse
+- Azure Analysis Services
+- Azure SQL Database og 
+- Azure SQL Data Warehouse
 - SQL Server
 - SQL Server Analysis Services
 - Oracle 
@@ -28,7 +30,6 @@ I denne artikel kan du læse om, hvordan du opretter og redigerer en integreret 
 
 I forbindelse med følgende datakilder skal du bruge følgende indstilling for [SQL Server Analysis Services-forbindelse](service-premium-connect-tools.md):
 
-- Azure Analysis Services
 - Power BI Premium-datasæt
 
 Sideinddelte rapporter opretter forbindelse til datakilder i det lokale miljø via en [Power BI-gateway](service-gateway-getting-started.md). Du kan konfigurere gatewayen, når du har publiceret rapporten til Power BI-tjenesten.
@@ -66,6 +67,30 @@ Se [Rapportdata i Power BI Report Builder](report-builder-data.md) for at få me
 5.  Vælg **OK**.  
   
      Datakilden vises i ruden Rapportdata.  
+     
+## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
+
+Sideinddelte rapporter, der opretter forbindelse til Power BI-datasæt, følger reglerne for delte datasæt i Power BI med nogle mindre ændringer.  For at brugere kan få vist sideinddelte rapporter korrekt ved hjælp af Power BI-datasæt og for at sikre, at sikkerhed på rækkeniveau er aktiveret og gennemtvunget for dine seere, skal du følge disse regler:
+
+### <a name="classic-apps-and-app-workspaces"></a>Klassiske apps og apparbejdsområder
+
+- .rdl i samme arbejdsområde som datasæt (samme ejer): Understøttet
+- .rdl i andet arbejdsområde end datasæt (samme ejer): Understøttet
+- Delt .rdl: Du skal have tildelt oprettelsestilladelser til hver bruger, der få vist rapporten på datasætniveau
+- Delt app: Du skal have tildelt oprettelsestilladelser til hver bruger, der får vist rapporten på datasætniveau
+- .rdl i samme arbejdsområde som datasæt (anden ejer): Understøttet
+- .rdl i samme arbejdsområde som datasæt (anden ejer): Du skal have tildelt oprettelsestilladelser til hver bruger, der får vist rapporten på datasætniveau
+- Sikkerhed på rækkeniveau: Du skal have tildelt oprettelsestilladelser til hver bruger, der får vist rapporten på datasætniveau, for at gennemtvinge det.
+
+### <a name="new-experience-apps-and-app-workspaces"></a>Apps og apparbejdsområder med nye oplevelser
+
+- .rdl i samme arbejdsområde som datasæt: Understøttet
+- .rdl i andet arbejdsområde end datasæt (samme ejer): Understøttet
+- Delt .rdl: Du skal have tildelt oprettelsestilladelser til hver bruger, der får vist rapporten på datasætniveau
+- Delt app: Du skal have tildelt oprettelsestilladelser til hver bruger, der får vist rapporten på datasætniveau
+- .rdl i samme arbejdsområde som datasæt (anden ejer) – understøttet
+- .rdl i andet arbejdsområde end datasæt (anden ejer): Du skal have tildelt oprettelsestilladelser til hver bruger, der får vist rapporten på datasætniveau
+- Sikkerhed på rækkeniveau: Du skal have tildelt oprettelsestilladelser til hver bruger, der får vist rapporten på datasætniveau, for at gennemtvinge det
 
 ## <a name="next-steps"></a>Næste trin
 

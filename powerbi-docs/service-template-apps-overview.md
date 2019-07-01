@@ -1,22 +1,22 @@
 ---
-title: Hvad er Power BI-skabelonprogrammer? (eksempelvisning)
+title: Hvad er Power BI-skabelonprogrammer?
 description: Denne artikel indeholder en oversigt over Power BI-skabelonprogrammet. Få mere at vide om, hvordan du udarbejder Power BI-programmer med kun lidt eller ingen kode og udruller dem til dine Power BI-kunder.
-author: maggiesMSFT
+author: teddybercovitz
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/26/2019
-ms.author: maggies
-ms.openlocfilehash: 600e2ed603773cada415f603202cc72f22e0d25b
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.date: 06/24/2019
+ms.author: tebercov
+ms.openlocfilehash: c05b53a5fd61d348b6d304b17123d5f2497ab647
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751096"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408222"
 ---
-# <a name="what-are-power-bi-template-apps-preview"></a>Hvad er Power BI-skabelonprogrammer? (eksempelvisning)
+# <a name="what-are-power-bi-template-apps"></a>Hvad er Power BI-skabelonprogrammer?
 
 Med de nye Power BI-*skabelonprogrammer* kan Power BI-partnere udarbejde programmer i Power BI med kun lidt eller ingen kode og udrulle dem til Power BI-kunder.  Denne artikel indeholder en oversigt over Power BI-skabelonprogrammet.
 
@@ -37,7 +37,7 @@ Der er flere faser i den generelle proces for udvikling og indsendelse af et ska
 | **Tre** | |  | Hæv testpakken til præproduktion, så den kan valideres uden for din Power BI-lejer, og send den til AppSource  |  | Ved hjælp af din præproduktionspakke kan du oprette et tilbud på et Power BI-skabelonprogram og starte valideringsprocessen |
 | **Fire** | |  | Hæv præprodukstionspakken til produktion |  | Gå live |
 
-## <a name="requirements"></a>Krav
+## <a name="before-you-begin"></a>Inden du starter
 
 Du skal have tilladelse til at oprette et skabelonprogram. Du kan finde flere oplysninger på Power BI-administrationsportal, indstillingen Skabelonprogram. 
 
@@ -66,9 +66,11 @@ Her er de overordnede trin.
 
 ## <a name="requirements"></a>Krav
 
-Du skal have tilladelse til at oprette et skabelonprogram. Du kan finde flere oplysninger på Power BI[-administrationsportal, indstillingen Skabelonprogram](service-admin-portal.md#template-apps-settings-preview). 
+Du skal have tilladelse til at oprette et skabelonprogram. Du kan finde flere oplysninger på Power BI[-administrationsportal, indstillingen Skabelonprogram](service-admin-portal.md#template-apps-settings). 
 
 Hvis du vil udgive et skabelonprogram i Power BI-tjenesten og AppSource, skal du opfylde kravene til at [blive udgiver på Cloud Marketplace](https://docs.microsoft.com/azure/marketplace/become-publisher).
+ > [!NOTE] 
+ > Indsendelser af skabelonapps administreres i [Cloud Partner-portal](https://cloudpartner.azure.com). Brug den samme Microsoft Developer Center-registreringskonto for at logge på. Du skal kun have én Microsoft-konto til dine tilbud i AppSource. Konti skal ikke være specifikke for individuelle tjenester eller tilbud.
 
 ## <a name="tips"></a>Tip 
 
@@ -78,7 +80,7 @@ Hvis du vil udgive et skabelonprogram i Power BI-tjenesten og AppSource, skal du
 - Overvej at tilbyde mere end ét skabelonprogram til de enkelte unikke scenarier. 
 - Aktivér datatilpasning, f.eks. understøttelse af brugerdefineret forbindelse og konfiguration af parametre af installationsprogrammet.
 
-Du kan finde flere forslag under [Tip til udarbejdelse af skabelonprogrammer i Power BI (prøveversion)](service-template-apps-tips.md).
+Du kan finde flere forslag under [Tip til udarbejdelse af skabelonprogrammer i Power BI](service-template-apps-tips.md).
 
 ## <a name="support"></a>Support
 Hvis du vil have support under udvikling, skal du bruge [https://powerbi.microsoft.com/support](https://powerbi.microsoft.com/support). Vi overvåger og administrerer aktivt dette websted. Kundehændelser finder hurtigt vej til det relevante team.

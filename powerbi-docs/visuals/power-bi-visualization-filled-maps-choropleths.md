@@ -8,15 +8,15 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2fa8fa5248ee1e4330804205b2cedb64021b1913
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 0123d8123170cfa78b3d13a55ed2f367af0447ae
+ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839780"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67299325"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Udfyldte kort (Choropleths) i Power BI
 Et udfyldt kort bruger skygger eller toner eller mønstre til at vise, hvordan en værdi varierer i forhold på tværs af et geografisk område eller en region.  Fremvis hurtigt disse relative forskelle med skygger, der går fra lys (mindre-hyppige/lavere) til mørk (mere-hyppige/mere).    
@@ -70,10 +70,10 @@ I denne video opretter Kim et grundlæggende kort og konverterer det til et udfy
 1. Fra ruden Fields skal du vælge feltet **Geo** \> **State**.    
 
    ![gult flueben ud for Tilstand](media/power-bi-visualization-filled-maps-choropleths/power-bi-state.png)
-5. [Konvertér diagrammet](power-bi-report-change-visualization-type.md) til et udfyldt kort. Bemærk, at **State** nu befinder sig i beholderen **Location**. Bing Maps bruger feltet i beholderen **Location** til at oprette kortet.  Der er mange forskellige muligheder for gyldige placeringer: lande, stater, kommuner, byer, postnumre osv. Bing Maps levere udfyldte kortfigurer for placeringer over hele verden. Uden en gyldig post i beholderen Location kan Power BI ikke oprette det udfyldte kort.  
+2. [Konvertér diagrammet](power-bi-report-change-visualization-type.md) til et udfyldt kort. Bemærk, at **State** nu befinder sig i beholderen **Location**. Bing Maps bruger feltet i beholderen **Location** til at oprette kortet.  Der er mange forskellige muligheder for gyldige placeringer: lande, stater, kommuner, byer, postnumre osv. Bing Maps levere udfyldte kortfigurer for placeringer over hele verden. Uden en gyldig post i beholderen Location kan Power BI ikke oprette det udfyldte kort.  
 
    ![skabeloner med fremhævet ikon for udfyldte kort](media/power-bi-visualization-filled-maps-choropleths/img003.png)
-6. Filtrer kortet, så du kun ser det kontinentale USA.
+3. Filtrer kortet, så du kun ser det kontinentale USA.
 
    a.  Nederst i ruden Visualizations skal du finde området **Filters**.
 
@@ -83,21 +83,24 @@ I denne video opretter Kim et grundlæggende kort og konverterer det til et udfy
    c.  Markér afkrydsningsfeltet ud for **All**, og fjern markeringen ud for **AK**.
 
    ![Tilstandsrulleliste med Alle og AK ikke valgt](media/power-bi-visualization-filled-maps-choropleths/img005.png)
-7. Vælg **SalesFact** \> **Sentiment** for at føje det til beholderen **Color saturation**. Feltet i beholderen **Color saturation** styrer skyggerne på kortet.  
-   ![Synspunkt i feltet Farvemætning godt](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map.png)
-8. Kartogrammet har grønne og røde skygger, hvor rød repræsenterer de lavere tillidstal, og grøn repræsenterer den højere, mere positive tillid.  Jeg har her fremhævet staten Wyoming (WY), og vi kan se, at tilliden (sentiment) er rigtig god, 74.  
-   ![sort dialogboksen viser tilstand og synspunkt](media/power-bi-visualization-filled-maps-choropleths/power-bi-wy.png)
-9. [Gem rapporten](../service-report-save.md).
-##    <a name="adjust-the-color-formatting"></a>Juster farveformateringen
-I Power BI kan du i høj grad selv styre udseendet af dit kartogram.
-1. Vælg ikonet med malerrullen for at åbne fanen Formatering.
+4. Vælg ikonet med malerrullen for at åbne ruden Formatering, og vælg **Datafarver**.
 
-    ![Ruden Formatering](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-colors.png)
+    ![Ruden Formatering med indstillingen Datafarver](media/power-bi-visualization-filled-maps-choropleths/power-bi-data-color.png)
 
-2. Vælg **Datafarver** for at få vist indstillinger for farver.
-3. Angiv minimum- og maksimumfarverne til gul og blå. Og tilføj minimum- og maksimumværdier baseret på dine data. Leg lidt med disse funktioner, indtil du får det ønskede udseende. 
+5. Klik på de tre lodrette prikker, og vælg **Betinget formatering**.
 
-    ![ikke-divergerende farver](media/power-bi-visualization-filled-maps-choropleths/power-bi-color.png)
+    ![Knappen Betinget formatering af datafarver](media/power-bi-visualization-filled-maps-choropleths/power-bi-conditional-formatting.png)
+
+6. Brug skærmen **Standardfarve - Datafarver** til at bestemme, hvordan dit kartogram skyggelægges. De indstillinger, der er tilgængelige for dig, omfatter, hvilket felt skyggen skal baseres på, og hvordan skyggen skal anvendes. I dette eksempel bruger vi feltet **SalesFact** > **Synspunkt** og angiver den laveste værdi for synspunkt som rød og den højeste værdi som grøn. Værdier, der ligger mellem den maksimale og den minimale, er være nuancer af rød og grøn. På illustration nederst på skærmen vises det farveområde, der bruges. 
+
+    ![Standardfarverude med Synspunkt valgt](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment.png)
+
+7. Kartogrammet har grønne og røde skygger, hvor rød repræsenterer de lavere tillidstal, og grøn repræsenterer den højere, mere positive tillid.  For at få vist yderligere detaljer skal du trække et felt til brønden Værktøjstip.  Her har jeg tilføjet **Synspunktsforskydning** og fremhævet staten Idaho (ID) og kan se, at den pågældende synspunktforskydning er lav, på 6.
+   ![kartogram, der viser Idaho-værktøjstip](media/power-bi-visualization-filled-maps-choropleths/power-bi-filled-map-idaho.png)
+
+10. [Gem rapporten](../service-report-save.md).
+
+Power BI giver dig masser af kontrol over dit kartograms udseende. Leg lidt med disse datafarvekontrolelementer, indtil du opnår det ønskede udseende. 
 
 ## <a name="highlighting-and-cross-filtering"></a>Fremhævning og krydsfiltrering
 Du kan få mere at vide om brug af ruden Filters under [Føj et filter til en rapport](../power-bi-report-add-filter.md).

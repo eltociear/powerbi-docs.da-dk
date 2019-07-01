@@ -7,13 +7,13 @@ ms.service: powerbi
 ms.author: maggies
 author: maggiesMSFT
 ms.topic: hub-page
-ms:date: 05/10/2019
-ms.openlocfilehash: cebaf83edd2fab39502c7b2953922dec0446c8bc
-ms.sourcegitcommit: af2b2238fe77eaa1b2392a19a143a0250b8665cf
+ms:date: 06/10/2019
+ms.openlocfilehash: e1a6700f2f266cffb788f4d8b0f10be88f79e643
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65533663"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264460"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -38,7 +38,7 @@ ms.locfileid: "65533663"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Power BI til forbrugere</h3>
-                                                    <p>Skal du i gang med Power BI? Lær de forskellige produkter og tjenester, der udgør Power BI, at kende, og se, hvad du kan bruge dem til.</p>
+                                                    <p>Bruger du rapporter og dashboards, der er oprettet af andre, når du skal træffe forretningsmæssige beslutninger? Få kendskab til Power BI-tjenesten til forbrugere.</p>
                                                 </div>
                                             </div>
                                         </div>

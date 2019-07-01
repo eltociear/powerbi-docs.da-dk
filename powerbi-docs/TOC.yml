@@ -417,50 +417,46 @@
           href: service-whats-new.md
         - name: Grundlæggende begreber
           items:
-            - name: Grundlæggende begreber for designere
+            - name: Om Power BI-tjenesten
               href: service-basic-concepts.md
-            - name: Datatyper i Power BI
-              href: service-get-data.md
             - name: Præsentation af rapporteditoren
               href: service-the-report-editor-take-a-tour.md
-        - name: Arbejdsproces i Power BI
-          items:
-            - name: Organisering af dit arbejde
-              href: service-new-workspaces.md
-            - name: Måder at dele dit arbejde på
-              href: service-how-to-collaborate-distribute-dashboards-reports.md
-            - name: Sikring af friske data
+            - name: Power BI-datakilder
+              href: service-get-data.md
+            - name: Opdatering af data i Power BI
               href: refresh-data.md
-            - name: Overvågning af forbrug
+        - name: Samarbejd i Power BI
+          items:
+            - name: Organiser dit arbejde
+              href: service-new-workspaces.md
+            - name: Del dit arbejde
+              href: service-how-to-collaborate-distribute-dashboards-reports.md
+            - name: Overvåg Power BI-forbrug
               href: service-usage-metrics.md
         - name: Licensering
           items:
-            - name: Tilmelding til selvbetjening
+            - name: Tilmeld dig Power BI
               href: service-self-service-signup-for-power-bi.md
-            - name: Licensering i din organisation
+            - name: Administrer Power BI-licenser
               href: service-admin-licensing-organization.md
             - name: Funktioner efter licenstype
               href: service-features-license-type.md
-        - name: Flere begreber
+            - name: Power BI til US Government
+              href: service-govus-overview.md
+            - name: Ofte stillede spørgsmål til Germany Cloud-kunder
+              href: service-govde-faq.md
+        - name: Få hjælp og support
           items:
-            - name: 10 tips til at få hjælp
-              href: service-tips-for-finding-help.md
             - name: Supportmuligheder til Power BI
               href: service-support-options.md
-            - name: Licensering af specielle cases
-              items:
-                - name: Aktivering af udvidet Pro-prøveversion
-                  href: service-extended-pro-trial.md
-                - name: Power BI til US Government
-                  href: service-govus-overview.md
-                - name: Ofte stillede spørgsmål til Germany Cloud-kunder
-                  href: service-govde-faq.md
-            - name: Andet
-              items:
-                - name: Microsoft Flow og Power BI
-                  href: service-flow-integration.md
-                - name: Kom i gang med tredjepartsapps
-                  href: service-power-bi-get-started-third-party-apps.md
+            - name: Ti tips til at få hjælp
+              href: service-tips-for-finding-help.md
+        - name: Udvid Power BI
+          items:
+            - name: Microsoft Flow og Power BI
+              href: service-flow-integration.md
+            - name: Brug apps fra tredjepart
+              href: service-power-bi-get-started-third-party-apps.md
     - name: Sådan gør du
       items:
         - name: Hent data fra filer
@@ -859,14 +855,12 @@
                   href: service-organizational-content-pack-manage-update-delete.md
                 - name: Fjern en forbindelse til en indholdspakke
                   href: service-organizational-content-pack-disconnect.md
+        - name: Reference
+          items:
+            - name: Understøttede sprog og lande/områder
+          href: supported-languages-countries-regions.md
     - name: Ressourcer
       items:
-        - name: Videoer
-          href: videos.md
-        - name: Webinarer
-          href: webinars.md
-        - name: Understøttede sprog og lande/områder
-          href: supported-languages-countries-regions.md
         - name: Hvidbøger
           items:
             - name: Oversigt over whitepapers
@@ -877,6 +871,10 @@
               href: whitepaper-powerbi-premium-deployment.md
             - name: Distribuer Power BI eksternt vha. Azure Active Directory B2B
               href: whitepaper-azure-b2b-power-bi.md
+        - name: Videoer
+          href: videos.md
+        - name: Webinarer
+          href: webinars.md
 - name: Power BI Premium
   items:
     - name: Oversigt
