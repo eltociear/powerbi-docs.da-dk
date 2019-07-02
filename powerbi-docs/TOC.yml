@@ -225,12 +225,14 @@
               href: desktop-analytics-pane.md
             - name: Brug indsigter til at forklare stigninger og fald
               href: desktop-insights.md
-            - name: 'Brug indsigter til at finde, hvor distributionen er anderledes i diagrammer'
+            - name: 'Brug indsigter til at finde steder, hvor distributionen er anderledes i diagrammer'
               href: desktop-insights-find-where-different.md
             - name: Bogmærker i Power BI
               href: desktop-bookmarks.md
             - name: Brug rapporttemaer
               href: desktop-report-themes.md
+            - name: Typer af filtre
+              href: power-bi-report-filter-types.md
             - name: Prøv den nye filteroplevelse
               href: power-bi-report-filter-preview.md
             - name: Brug Hurtigmålinger
@@ -523,8 +525,6 @@
               href: refresh-csv-file-onedrive.md
             - name: Cachelagring af forespørgsler i Power BI Premium
               href: power-bi-query-caching.md
-            - name: Fejlfinding i forbindelse med opdatering af scenarier
-              href: refresh-troubleshooting-refresh-scenarios.md
         - name: Dashboards
           items:
             - name: Introduktion til dashboards
@@ -705,6 +705,8 @@
           items:
             - name: Har du glemt din adgangskode til Power BI?
               href: service-admin-forgot-your-password.md
+            - name: Kan du ikke logge på?
+              href: power-bi-cannot-sign-in.md
             - name: Hentning af yderligere diagnosticeringsoplysninger til Power BI
               href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
             - name: Alternativ mailadresse til Power BI
@@ -713,26 +715,26 @@
               href: service-admin-how-to-use-the-same-account-as-azure.md
             - name: Office 365 dedikeret - kendte problemer
               href: service-admin-office-365-dedicated-known-issues.md
-            - name: Fejlfinding af Cortana
-              href: service-cortana-troubleshoot.md
-            - name: Fejlfindingsanalyse i Excel
-              href: desktop-troubleshooting-analyze-in-excel.md
-            - name: Fejlfinding af datagateway i det lokale miljø
-              href: service-gateway-onprem-tshoot.md
-            - name: Fejlfinding af Power BI gateway - personlig
-              href: service-admin-troubleshooting-power-bi-personal-gateway.md
-            - name: Fejlfinding af ikke-understøttet datakilde til opdatering
+            - name: Foretag fejlfinding af opdateringsscenarier
+              href: refresh-troubleshooting-refresh-scenarios.md
+            - name: Foretag fejlfinding af ikke-understøttet datakilde til opdatering
               href: service-admin-troubleshoot-unsupported-data-source-for-refresh.md
-            - name: Fejlfinding af planlagt opdatering af Azure SQL Databases
+            - name: Foretag fejlfinding af planlagt opdatering af Azure SQL Databases
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
+            - name: Foretag fejlfinding af fejl i felter
+              href: refresh-troubleshooting-tile-errors.md
+            - name: Foretag fejlfinding af datagateway i det lokale miljø
+              href: service-gateway-onprem-tshoot.md
+            - name: Foretag fejlfinding af Power BI Gateway – Personal
+              href: service-admin-troubleshooting-power-bi-personal-gateway.md
+            - name: Foretag fejlfinding af analysering i Excel
+              href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Fejl: Der blev ikke fundet nogen data i din Excel-projektmappe'
               href: service-admin-troubleshoot-excel-workbook-data.md
-            - name: Fejlfinding af feltfejl
-              href: refresh-troubleshooting-tile-errors.md
+            - name: Fejlfinding af Cortana
+              href: service-cortana-troubleshoot.md
             - name: 'Sådan opdaterer du dine legitimationsoplysninger til Xero-indholdspakken, hvis opdatering mislykkedes'
               href: service-refresh-xero-credentials.md
-            - name: Kan du ikke logge på
-              href: power-bi-cannot-sign-in.md
         - name: Andre opgaver
           items:
             - name: Omdøb indhold i Power BI
@@ -855,9 +857,9 @@
                   href: service-organizational-content-pack-manage-update-delete.md
                 - name: Fjern en forbindelse til en indholdspakke
                   href: service-organizational-content-pack-disconnect.md
-        - name: Reference
-          items:
-            - name: Understøttede sprog og lande/områder
+    - name: Reference
+      items:
+        - name: Understøttede sprog og lande/områder
           href: supported-languages-countries-regions.md
     - name: Ressourcer
       items:
@@ -1331,7 +1333,7 @@
           href: service-gateway-personal-mode.md
         - name: Brugerdefinerede forbindelser
           href: service-gateway-custom-connectors.md
-        - name: Fejlfinding af datagateway i det lokale miljø
+        - name: Foretag fejlfinding af datagateway i det lokale miljø
           href: service-gateway-onprem-tshoot.md
     - name: Ressourcer
       items:
