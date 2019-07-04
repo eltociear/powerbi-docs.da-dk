@@ -10,16 +10,15 @@ ms.topic: conceptual
 ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 3fc93f255d6645ffa6f15676b9a70f24326fcfdc
-ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
+ms.openlocfilehash: eea93888cf3a8ea5c7ca7b6eb9389cbabc79dc9c
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67349123"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418714"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på analyse af it-forbrug til Power BI: Få en introduktion
 
-## <a name="overview-of-the-it-spend-analysis-sample"></a>Oversigt over eksemplet på analyse af it-forbrug
 Indholdspakken til analysen af it-forbruget indeholder et dashboard, en rapport og et datasæt, der analyserer de planlagte omkostninger i forhold til de faktiske omkostninger i en it-afdeling. Sammenligningen hjælper os med at forstå, om virksomheden har lagt en god plan for året, og giver os mulighed for at undersøge de områder, som afviger væsentligt fra planen. Virksomheden i eksemplet gennemgår en årlig planlægningscyklus og genererer et nyt 'Seneste estimat' (Latest Estimate, LE) hvert kvartal for at gøre det nemmere at analysere ændringer i it-forbruget i løbet af regnskabsåret.
 
 ![Dashboard for eksemplet IT Spend Analysis](media/sample-it-spend/it1.png)
@@ -124,7 +123,7 @@ Vælg **Rediger rapport** i det øverste venstre hjørne for at udforske den i r
 * Skift til en anden type visualisering for hvert diagram.
 * Fastgør diagrammer, du er interesseret i, til dit dashboard.
 
+## <a name="next-steps-connect-to-your-data"></a>Næste trin: Opret forbindelse til dine data
 Det er sikkert at eksperimentere i dette miljø, fordi du kan vælge ikke at gemme dine ændringer. Hvis du gemmer dem, kan du altid vælge **Hent data** for at få en ny kopi af dette eksempel.
 
-## <a name="next-steps-connect-to-your-data"></a>Næste trin: Opret forbindelse til dine data
 Vi håber, at denne rundtur viser, hvordan Power BI-dashboards, spørgsmål og svar og rapporter kan give indsigt i data om it-forbrug. Nu er det din tur: Opret forbindelse til dine egne data. Med Power BI kan du oprette forbindelse til en lang række datakilder. Få mere at vide ved at se [Introduktion til Power BI-tjenesten](service-get-started.md).

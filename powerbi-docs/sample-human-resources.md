@@ -10,16 +10,15 @@ ms.topic: conceptual
 ms.date: 06/20/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: ae2e4dcfe1fdcd88c3e6ff9e4942afdedf9d126b
-ms.sourcegitcommit: a2c4f912af1729fdfdf20369bf3eff67c3927eec
+ms.openlocfilehash: 762a28d2340a691316b1aaf26b7ce62d45cc7496
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67349429"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418737"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Eksempel på HR til Power BI: Få en introduktion
 
-## <a name="overview-of-the-human-resources-sample"></a>Oversigt over eksempel på HR
 Indholdspakken HR-eksempel indeholder et dashboard, en rapport og et datasæt til HR-afdelingen. I dette eksempel anvender HR-afdelingen samme rapporteringsmodel i forskellige virksomheder, også selvom de tilhører forskellige brancher og har forskellige størrelser. I dette eksempel kigger vi på nyansættelser, aktive medarbejdere og medarbejdere, der har forladt virksomheden. Formålet er at afdække tendenser i ansættelsesstrategien. Vores overordnede formål er at forstå:
 
 * Hvem vi ansætter
@@ -159,7 +158,7 @@ I [feltet til spørgsmål og svar](power-bi-tutorial-q-and-a.md) i dashboardet k
 
    Bemærk, at de fleste af de forkerte ansættelser af kvinder er under 30.
 
+## <a name="next-steps-connect-to-your-data"></a>Næste trin: Opret forbindelse til dine data
 Det er sikkert at eksperimentere i dette miljø, fordi du kan vælge ikke at gemme dine ændringer. Hvis du gemmer dem, kan du altid vælge **Hent data** for at få en ny kopi af dette eksempel.
 
-## <a name="next-steps-connect-to-your-data"></a>Næste trin: Opret forbindelse til dine data
 Vi håber, at denne rundtur har vist, hvordan Power BI-dashboards, spørgsmål og svar samt rapporter kan give indsigt i HR-data. Nu er det din tur: Opret forbindelse til dine egne data. Med Power BI kan du oprette forbindelse til en lang række datakilder. Få mere at vide ved at se [Introduktion til Power BI-tjenesten](service-get-started.md).
