@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: 3465d9280af84a97ebf2ea5ec90ff60daf9e96fa
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: ec50369715efdd7bcb9ab764a3240acceb72508e
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389542"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418657"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
@@ -22,11 +22,7 @@ Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når
 
 ## <a name="upcoming-webinars"></a>Kommende webinarer
 
-Tilmeld dig for at høre fra Power BI-eksperter og deltage i livesessioner med Spørgsmål og svar.
-
-**Power BI: Sådan får du indsigt fra HR-data for din arbejdsdag**
-<br>ved Iman Eftekhari, Julia Paton fra Agile Analytics og Shahram Karimi fra QBE Insurance
-<br>[Tilmeld dig for at se med d. 27. juni, kl. 13:30-14:30 PST](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
+Der er ikke planlagt webinarer endnu. Tjek igen senere for at se flere kommende arrangementer.
 
 >[Kommende webinarer fra Power BI-community'et](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 
@@ -128,6 +124,10 @@ Se optagne sessioner når som helst
 
 ### <a name="partner-solutions-series"></a>Serie af partnerløsninger ###
 [Se denne serie](https://info.microsoft.com/ww-landing-PartnerWebinarSeriesPage.html)
+
+**Power BI: Sådan får du indsigt fra HR-data for din arbejdsdag**
+<br>ved Iman Eftekhari, Julia Paton fra Agile Analytics og Shahram Karimi fra QBE Insurance
+<br>[Tilmeld dig, og se det nu](https://info.microsoft.com/How-to-Get-insights-from-Your-Workday-HR-Data-Registration.html?Lcid=en-us)
 
 **Opnåelse af en win-win-situation for producenter og forhandlere af forbrugsvarer**
 <br>ved Liz McCreesh fra Thorogood
