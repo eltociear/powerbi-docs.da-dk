@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 6c9d59bbc2c6bf81242166bef4cd7584f52fb633
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 992524d3467ebe9bb130b3c61476301ab2bc563c
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65941606"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67409177"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -44,8 +44,8 @@ Der er ni faner på portalen. Resten af denne artikel indeholder oplysninger om 
 * [Lejerindstillinger](#tenant-settings)
 * [Kapacitetsindstillinger](#capacity-settings)
 * [Integrer koder](#embed-codes)
-* [Visualiseringer til virksomheder](#organization-visuals)
-* [Dataflowet storage (prøveversion)](#dataflowStorage)
+* [Visualiseringer til virksomheder](#organizational-visuals)
+* [Dataflowlager (eksempelvisning)](#dataflowStorage)
 * [Arbejdsområder](#workspaces)
 
 ## <a name="usage-metrics"></a>Forbrugsmålepunkter
@@ -59,11 +59,11 @@ Når dashboardet er indlæst, får du vist to afsnit med felter. Det første afs
 
 Nedenfor er en oversigt over indholdet i hvert felt:
 
-* Specifik optælling af alle dashboards, rapporter og datasæt i brugerarbejdsområdet
+* Specifik optælling af alle dashboards, rapporter og datasæt i brugerarbejdsområdet.
   
     ![Særskilt optælling af dashboards, rapporter og datasæt](media/service-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
-* Mest brugte dashboard efter antallet af brugere, der har adgang til det. Hvis du f.eks. har et dashboard, som du har delt med tre brugere, og du også har føjet det til en indholdspakke med to forskellige brugere tilsluttet, så er antallet 6 (1 + 3 + 2)
+* Mest brugte dashboard efter antallet af brugere, der har adgang til det. Hvis du f.eks. har et dashboard, som du har delt med tre brugere, og du også har føjet det til en indholdspakke med to forskellige brugere tilsluttet, så er antallet 6 (1 + 3 + 2).
   
     ![Mest anvendte dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
@@ -75,7 +75,7 @@ Nedenfor er en oversigt over indholdet i hvert felt:
   
     ![Topbrugere – dashboards](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-dashboards.png)
 
-* En visning af dine vigtigste brugere baseret på, hvor mange rapporter de har
+* En visning af dine vigtigste brugere baseret på, hvor mange rapporter de har.
   
     ![Topbrugere – rapporter](media/service-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
 
@@ -128,23 +128,23 @@ Indstillingerne kan have tre tilstande:
 
 De næste par afsnit giver et overblik over de forskellige typer af lejerindstillinger.
 
-## <a name="help-and-support-settings"></a>Hjælp og support indstillinger
+## <a name="help-and-support-settings"></a>Indstillinger for hjælp og support
 
-### <a name="publish-get-help-information"></a>Publicer "Hent Help" oplysninger
+### <a name="publish-get-help-information"></a>Publicer "Få hjælp"-oplysninger
 
-Brugere i organisationen kan gå til intern Hjælp og support af ressourcer i menuen Hjælp Power BI. Specifikt ændre disse parametre funktionaliteten af få mere at vide, Community og få hjælp i genvejsmenuen.
+Brugere i organisationen kan gå til interne hjælp- og supportressourcer i Power BI-menuen Hjælp. Funktionaliteten for disse parametre ændres specifikt for menupunkterne Lær, Community og Få hjælp.
 
-Det er også muligt at angive en URL-adresse for at dirigere brugere til en brugerdefineret løsning for licenser anmodninger. Denne parameter tilpasser target URL-adressen for knappen Opgrader konto, som en bruger uden en Power BI Pro-licens kan finde i opdateringen til Power BI Pro dialogboksen samt på siden Administrer personligt lager.
+Det er også muligt at angive en URL-adresse for at dirigere brugere til en brugerdefineret løsning for licensanmodninger. Denne parameter tilpasser destinations-URL-adressen for knappen Opgrader konto, som en bruger uden en Power BI Pro-licens kan finde i dialogboksen Opdater til Power BI Pro og på siden Administrer personligt lager.
 
 ## <a name="workspace-settings"></a>Indstillinger for arbejdsområde
 
 ### <a name="create-workspaces"></a>Opret arbejdsområder
 
-Administratorer kan bruge den **oprette arbejdsområder** indstilling for at angive, hvilke brugere i organisationen kan oprette apparbejdsområder til at samarbejde om dashboards, rapporter og andet indhold. Få mere at vide om [apparbejdsområder](service-create-the-new-workspaces.md).
+Administratorer bruger indstillingen **Opret arbejdsområder** til at angive, hvilke brugere i organisationen der kan oprette apparbejdsområder til at samarbejde om dashboards, rapporter og andet indhold. Få mere at vide om [apparbejdsområder](service-create-the-new-workspaces.md).
 
-Administrationsportalen har et andet afsnit i indstillinger for om arbejdsområder i din lejer. I dette afsnit, kan du sortere og filtrere listen over arbejdsområder og vise detaljer for hvert arbejdsområde. Se [arbejdsområder](#workspaces) for at få oplysninger.
+Administrationsportalen indeholder en anden sektion med indstillinger for arbejdsområderne i din lejer. I denne sektion kan du sortere og filtrere listen over arbejdsområder og få vist detaljerne for hvert arbejdsområde. Se [Arbejdsområder](#workspaces) for at få flere oplysninger.
 
-I admin-portalen, du kan også styre hvilke brugere der har tilladelse til at distribuere apps til organisationen. Se [Udgiv indholdspakker og apps til hele organisationen](#publish-content-packs-and-apps-to-the-entire-organization) i denne artikel for at få flere oplysninger.
+I administrationsportalen kan du også styre, hvilke brugere der har tilladelse til at distribuere apps til organisationen. Se [Publicer indholdspakker og apps til hele organisationen](#publish-content-packs-and-apps-to-the-entire-organization) i denne artikel for at få flere oplysninger.
 
 ## <a name="export-and-sharing-settings"></a>Eksport- og delingsindstillinger
 
@@ -213,23 +213,28 @@ På følgende billede vises indstillingen Tillad, at eksterne brugere kan redige
 
 ![Tillad, at eksterne brugere kan redigere og administrere indhold i organisationen](media/service-admin-portal/powerbi-admin-tenant-settings-b2b-guest-edit-manage.png)
 
+### <a name="email-subscriptions"></a>Mailabonnementer
+Brugere i organisationen kan oprette mailabonnementer. Få mere at vide om [abonnementer](service-report-subscribe.md).
+
+![Aktivér mailabonnementer](media/service-admin-portal/power-bi-manage-email-subscriptions.png)
+
 ## <a name="content-pack-and-app-settings"></a>Indholdspakke og appindstillinger
 
 ### <a name="publish-content-packs-and-apps-to-the-entire-organization"></a>Publicer indholdspakker og apps til hele organisationen
 
-Administratorer bruge denne indstilling til at beslutte, hvilke brugere kan publicere indholdspakker og apps til det hele organisationen, i stedet for blot bestemte grupper. Få mere at vide om [udgivelse af apps](service-create-distribute-apps.md).
+Administratorer bruger denne indstilling til at bestemme, hvilke brugere i organisationen der kan publicere indholdspakker og apps til hele organisationen frem for kun til specifikke grupper. Få mere at vide om [publicering af apps](service-create-distribute-apps.md).
 
 På følgende billede vises indstillingen **Hele min organisation**, når du opretter en indholdspakke.
 
 ![Publicer indholdspakke til organisation](media/service-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### <a name="create-template-apps-and-organizational-content-packs"></a>Opret skabelon apps og organisationsindholdspakker
+### <a name="create-template-apps-and-organizational-content-packs"></a>Opret skabelonbaserede apps og indholdspakker for organisationen
 
-Brugere i organisationen kan oprette skabelon apps og organisationsindholdspakker, der bruger datasæt bygget på én datakilde i Power BI Desktop. Få mere at vide om [skabelon apps](template-content-pack-authoring.md).
+Brugere i virksomheden kan oprette skabelonbaserede apps og indholdspakker for organisationen, der bruger datasæt baseret på én datakilde i Power BI Desktop. Få mere at vide om [skabelonapps](template-content-pack-authoring.md).
 
 ### <a name="push-apps-to-end-users"></a>Push apps til slutbrugere
 
-Oprettere af rapporten kan dele apps direkte med slutbrugere uden at skulle installere fra [AppSource](https://appsource.microsoft.com). Få mere at vide om [automatisk installation af apps til slutbrugere](service-create-distribute-apps.md#automatically-install-apps-for-end-users).
+Rapportoprettere kan dele apps direkte med slutbrugere uden at kræve installation fra [AppSource](https://appsource.microsoft.com). Få mere at vide om [automatisk installation af apps til slutbrugere](service-create-distribute-apps.md#automatically-install-apps-for-end-users).
 
 ## <a name="integration-settings"></a>Integrationsindstillinger
 
@@ -351,7 +356,7 @@ Brugere i virksomheden kan integrere Power BI-dashboards og rapporter i Software
 
 ### <a name="allow-service-principals-to-use-power-bi-apis"></a>Tillad, at tjenesteprincipaler bruger Power BI-API'er
 
-Webapps, der er registreret i Azure Active Directory (Azure AD) vil bruge en tjenesteprincipal, der er tildelt til at få adgang til Power BI-API'erne uden en bruger har logget på. For at give en app, du bruger tjenesteprincipal godkendelse dens tjenesteprincipal skal medtages i en tilladte sikkerhedsgruppe. [Få mere at vide](developer/embed-service-principal.md)
+Webapps, der er registreret i Azure Active Directory (Azure AD), bruger en tildelt tjenesteprincipal til at få adgang til Power BI-API'erne, uden at en bruger er logget på. Hvis du vil tillade, at en app anvender den godkendte tjenesteprincipal, skal tjenesteprincipalen være inkluderet i den tilladte sikkerhedsgruppe. [Få mere at vide](developer/embed-service-principal.md)
 
 > [!NOTE]
 > Tjenesteprincipaler nedarver tilladelserne til alle Power BI-lejerindstillinger fra deres sikkerhedsgruppe. Hvis du vil begrænse tilladelserne, skal du oprette en dedikeret sikkerhedsgruppe for tjenesteprincipaler og føje den til listen "Undtagen specifikke sikkerhedsgrupper" for de relevante aktiverede Power BI-indstillinger.
@@ -360,29 +365,34 @@ Webapps, der er registreret i Azure Active Directory (Azure AD) vil bruge en tje
 
 ### <a name="create-and-use-dataflows"></a>Opret og brug dataflow
 
-Brugere i organisationen kan oprette og bruge dataflow. Se en oversigt over dataflows, [selvbetjent eksamensforberedende i Power BI](service-dataflows-overview.md). Hvis du vil aktivere dataflow i en Premium-kapacitet, skal du se under [Konfigurer arbejdsbelastninger](service-admin-premium-workloads.md).
+Brugere i organisationen kan oprette og bruge dataflow. Du kan se en oversigt over dataflow i [Selvbetjent dataforberedelse i Power BI](service-dataflows-overview.md). Hvis du vil aktivere dataflow i en Premium-kapacitet, skal du se under [Konfigurer arbejdsbelastninger](service-admin-premium-workloads.md).
 
 > [!NOTE]
 > Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
 
-## <a name="template-apps-settings-preview"></a>Indstillinger for skabelonprogrammer (prøveversion)
+## <a name="template-apps-settings"></a>Indstillinger for skabelonapps
 
-To indstillinger styrer skabelonprogrammer. 
+Tre indstillinger styrer, hvorvidt skabelonapps kan publicere eller installere skabelonapps.
 
 ![Indstillinger for skabelonprogrammer på Power BI-administrationsportal](media/service-admin-portal/power-bi-admin-portal-template-apps.png)
 
-### <a name="create-template-apps-preview"></a>Opret skabelonapps (prøveversion)
+### <a name="publish-template-apps"></a>Publicer skabelonapps
 
-Brugere i organisationen kan oprette apps i skabelonen. Skabelon appudviklere kan distribuere dem derefter til klienter uden for din organisation som [AppSource](https://appsource.microsoft.com) eller andre metoder til distribution.
+Brugere i organisationen kan oprette arbejdsområder for skabelonapps. Styr, hvilke brugere der kan publicere skabelonapps eller distribuere dem til klienter uden for organisationen ved hjælp af [AppSource](https://appsource.microsoft.com) eller en anden distributionsmetode.
 
 ![Power BI-administrationsportal, indstillingen Opret skabelonprogrammer](media/service-admin-portal/power-bi-admin-portal-template-app-settings.png)
 
-### <a name="install-template-apps-preview"></a>Installér skabelon apps (prøveversion)
+### <a name="install-template-apps-listed-on-appsource"></a>Installér skabelonapps, der er angivet på AppSource
 
-Brugere i organisationen kan downloade og installere skabelon apps fra [AppSource](https://appsource.microsoft.com) eller en anden kilde.
+Brugere i organisationen kan **kun** downloade og installere skabelonapps fra [AppSource](https://appsource.microsoft.com). Styr, hvilke specifikke brugere eller sikkerhedsgrupper der kan installere skabelonapps fra AppSource.
 
-> [!NOTE]
-> Denne indstilling bestemmer, hvilke brugere kan installere skabelon apps på deres Power BI-konti.
+![Power BI-administrationsportal, indstillingen Installér skabelonapps](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-appsource.png)
+
+### <a name="install-template-apps-not-listed-on-appsource"></a>Installér skabelonapps, der ikke er angivet på AppSource
+
+Styr, hvilke brugere i organisationen der kan downloade og installere skabelonapps, som **ikke er anført på [AppSource](https://appsource.microsoft.com)** .
+
+![Power BI-administrationsportal, indstillingen Installér skabelonapps](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-nonappsource.png)
 
 ## <a name="capacity-settings"></a>Kapacitetsindstillinger
 
@@ -394,7 +404,7 @@ Under fanen **Power BI Premium** kan du administrere en hvilken som helst Power 
 
 ### <a name="power-bi-embedded"></a>Power BI Embedded
 
-Under fanen **Power BI Embedded** kan du se dine Power BI Embedded-kapaciteter (A SKU), som du har købt til din kunde. Da du kun kan købe A-SKU'er fra Azure, du [Administrer integrerede kapaciteter i Azure](developer/azure-pbie-create-capacity.md) fra **Azure-portalen**.
+Under fanen **Power BI Embedded** kan du se dine Power BI Embedded-kapaciteter (A SKU), som du har købt til din kunde. Da du kun kan købe A SKU'er fra Azure, kan du [administrere integrerede kapaciteter i Azure](developer/azure-pbie-create-capacity.md) fra **Azure-portalen**.
 
 Du kan finde flere oplysninger om, hvordan du administrerer indstillinger for Power BI Embedded (A SKU), under [Hvad er Power BI Embedded](developer/azure-pbie-what-is-power-bi-embedded.md).
 
@@ -404,7 +414,7 @@ Som administrator kan du få vist integreringskoder, der er genereret for din le
 
 ![Integrer koder i Power BI-administrationsportalen](media/service-admin-portal/embed-codes.png)
 
-## <a name="organizational-visuals">Visualiseringer til virksomheder</a>
+ ## <a name="organizational-visuals">Visualiseringer til virksomheder</a> 
 
 Fanen **Organisationens visuals** giver dig mulighed for at installere og administrere brugerdefinerede visuals i din organisation. Med visuals til organisationer kan du nemt installere privatejede visuals i din organisation, som forfattere af rapporter efterfølgende kan finde og importere i deres rapporter fra Power BI Desktop. [Få mere at vide](power-bi-custom-visuals-organization.md)
 
@@ -464,13 +474,13 @@ Sørg for, at id'et for visualiseringen ikke ændres. Den nye fil erstatter den 
 
 Du kan finde flere oplysninger under [Ofte stillede spørgsmål om brugerdefinerede visualiseringer til virksomheder](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
 
-## <a name="dataflowStorage">Dataflowet storage (prøveversion)</a>
+## <a name="dataflowStorage">Dataflowlager (eksempelvisning)</a>
 
 Som standard gemmes data, der bruges med Power BI, i et internt lager, der leveres af Power BI. Med integrationen af dataflow og Azure Data Lake Storage Gen2 (ADLS Gen2) kan du gemme dine dataflow på din organisations Azure Data Lake Storage Gen2-konto. Du kan finde flere oplysninger under [Integration af dataflow og Azure Data Lake (prøveversion)](service-dataflows-azure-data-lake-integration.md).
 
 ## <a name="workspaces"></a>Arbejdsområder
 
-Som administrator kan du få vist de arbejdsområder, der findes i din lejer. Du kan sortere og filtrere listen over arbejdsområder og få vist detaljerne for hvert arbejdsområde. Kolonnerne i tabellen, der svarer til de egenskaber, der returneres af den [Power BI Rest API-administrator](/rest/api/power-bi/admin) for arbejdsområder. Personlige arbejdsområder er af typen **PersonalGroup**, klassiske arbejdsområder er af typen **gruppe**, og de nye oplevelse arbejdsområder til arbejdsområde er af typen **arbejdsområde**. Du kan finde flere oplysninger i [opretter de nye arbejdsområder i Power BI](service-create-the-new-workspaces.md).
+Som administrator kan du få vist de arbejdsområder, der findes i din lejer. Du kan sortere og filtrere listen over arbejdsområder og få vist detaljerne for hvert arbejdsområde. Kolonnerne i tabellen svarer til de egenskaber, der returneres af [REST API'erne til Power BI Administration](/rest/api/power-bi/admin) for arbejdsområder. Personlige arbejdsområder er af typen **Personlig gruppe**, klassiske arbejdsområder er af typen **Gruppe**, og arbejdsområder med den nye arbejdsområdeoplevelse er af typen **Arbejdsområde**. Du kan finde flere oplysninger under [Opret de nye arbejdsområder i Power BI](service-create-the-new-workspaces.md).
 
 ![Liste over arbejdsområder](media/service-admin-portal/workspaces-list.png)
 

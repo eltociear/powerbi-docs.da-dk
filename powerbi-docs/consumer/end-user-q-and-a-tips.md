@@ -8,21 +8,21 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 06/26/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 97beaa749855d29f0ac559776a99f4be851489fb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4f6dc7167d64385182ecbd448b6c400fa7f829df
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61048128"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408180"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tip til at stille spørgsmål med Spørgsmål og svar i Power BI
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Ord og terminologi, som Spørgsmål og svar genkender
-Denne liste over nøgleord på denne side er ikke udtømmende.  Den bedste måde at se, om Power BI genkender et nøgleord, er ved at prøve at indtaste det i spørgsmålsfeltet.  Hvis ordet eller begrebet er nedtonet, genkender Power BI det ikke.
+Listen over nøgleord på denne side er ikke udtømmende.  Den bedste måde at se, om Power BI genkender et nøgleord, er ved at prøve at indtaste det i spørgsmålsfeltet.  Hvis ordet eller begrebet er nedtonet, genkender Power BI det ikke.
 
-Listen nedenfor bruger nutid, men alle tider genkendes i de fleste tilfælde. "er" omfatter f.eks.: **er**, **var**, **være**, **vil være**, **have**, **har**, **havde**, **vil have**, **har fået**, **gøre**, **gør**, **gjorde**.  Og "sortér" omfatter: **sorteret** og **sorterer**.  Desuden genkender Power BI og inkluderer entals- og flertalsformer af et ord. 
+Listen nedenfor bruger nutid, men alle tider genkendes i de fleste tilfælde. "er" omfatter f.eks.: **er**, **var**, **være**, **vil være**, **have**, **har**, **havde**, **vil have**, **har fået**, **gøre**, **gør**, **gjorde**.  Og "sortér" omfatter: **sorteret** og **sorterer**.  Desuden genkender og inkluderer Power BI entals- og flertalsformer af et ord. 
 
 > [!NOTE]
 > Spørgsmål og svar er også tilgængelig i [Microsoft Power BI-appen til iOS på iPads, iPhones og iPod Touch-enheder](mobile/mobile-apps-ios-qna.md).
@@ -41,7 +41,7 @@ Listen nedenfor bruger nutid, men alle tider genkendes i de fleste tilfælde. "e
 |     |         |         |
 |**Bindeord**     |  og, eller, hver af, med, versus, &, og, men, hverken, sammen med, ud over       |         
 |          |         |
-|**Sammentrækninger**     |  Spørgsmål og svar genkender næsten alle sammentrækninger. Prøv det.  Her er nogle få eksempler på engelsk: didn't, haven't, he'd, he's, isn't, it's, she'll, they'd, weren't, where'll, who's, won't, wouldn't          |
+|**Sammentrækninger**     |  Spørgsmål og svar genkender næsten alle sammentrækninger. Prøv det.  Her er nogle få eksempler på engelsk: didn’t, haven’t, he’d, he’s, isn’t, it’s, she’ll, they’d, weren’t, who’s, won’t, wouldn’t          |
 |        |         |
 |**Datoer**     |       Power BI genkender de fleste datobegreber (dag, uge, måned, år, kvartal, årti osv.) og datoer, der er skrevet i mange forskellige formater (se nedenfor). Power BI genkender også følgende nøgleord: Månednavn, dage 1-31, årti. Eksempler: 3. januar 1995, jan 03 1995, 3 jan 1995, den 3. januar 1995, januar 1995, 1995 januar, 1995-01, 01/1995, navne på måneder         |
 |        |         |
@@ -66,15 +66,15 @@ Listen nedenfor bruger nutid, men alle tider genkendes i de fleste tilfælde. "e
 |  |  |
 |**Top N**     |     (sortering, rangering): top, bund, højeste, laveste, første, sidste, næste, tidligste, nyeste, ældste, seneste            |
 |        |         |
-|**Visualiseringstyper**     |  alle visualiseringstyper, der er indbygget i Power BI.  Hvis det er en indstilling i ruden med visuelle effekter, kan du medtage den i dit spørgsmål.  Undtagelsen herfra er [brugerdefinerede visuelle elementer](../power-bi-custom-visuals.md), som du manuelt har føjet til ruden med visuelle effekter.  |
+|**Visualiseringstyper**     |  alle visualiseringstyper, der er indbygget i Power BI.  Hvis det er en indstilling i ruden med visuelle effekter, kan du medtage den i dit spørgsmål.  Undtagelsen til denne regel er [brugerdefinerede visualiseringer](../power-bi-custom-visuals.md), som du manuelt har føjet til ruden Visualiseringer.  |
 |  |  Eksempel: vis distrikter efter måned og samlet salg som søjlediagram               |
 |        |         |
 |**HV (relation, kvalificeret)**  | hvornår, hvor, hvilken, hvem, hvor mange, hvor meget, hvor ofte, hvor mange gange, hvor hyppigt, antal, tal, mængde, hvor længe, hvad                |
 
 ## <a name="qa-helps-you-phrase-the-question"></a>Spørgsmål og svar hjælper dig med at stille spørgsmålet
-Spørgsmål og svar gør sit bedste for at forstå og besvare det spørgsmål, der stilles. Det sker på flere måder. For alle disse kan du acceptere handlingen fuldt ud, delvist eller slet ikke. Mens du skriver dit spørgsmål, gør Spørgsmål og svar følgende:
+Spørgsmål og svar gør sit bedste for at forstå og besvare det spørgsmål, der stilles. Det forsøger at forstå på flere måder. For alle disse vendinger kan du acceptere handlingen fuldt ud, delvist eller slet ikke. Mens du skriver dit spørgsmål, gør Spørgsmål og svar følgende:
 
-* fuldfører automatisk ord og spørgsmål. Der bruges forskellige strategier, herunder automatisk fuldførelse af genkendte ord og tidligere anvendte spørgsmål, der returnerede gyldige svar. Hvis der er mere end én mulighed i forbindelse med automatisk fuldførelse, vises de på en rulleliste.
+* fuldfører automatisk ord og spørgsmål. Der bruges forskellige strategier, herunder automatisk fuldførelse af genkendte ord, gemte spørgsmål og tidligere anvendte spørgsmål, der har returneret brugbare svar. Hvis der er mere end én mulighed i forbindelse med automatisk fuldførelse, vises de på en rulleliste.
 * udfører stavekontrol.
 * giver et eksempel på svaret i form af en visualisering. Visualiseringen opdateres, mens du skriver og redigerer spørgsmålet (den venter ikke på, at du trykker på Enter).
 * foreslår tilsvarende termer fra det eller de underliggende datasæt, når du flytter markøren tilbage i spørgsmålsfeltet.

@@ -1,6 +1,6 @@
 ---
-title: Meld dig selv og andre til et abonnement på rapporter og dashboards
-description: Få mere at vide om, hvordan du melder dig selv og kolleger til et abonnement på et snapshot af en rapport eller et dashboard, sendt via mail, i Power BI.
+title: Meld dig selv til et abonnement på rapporter og dashboards
+description: Få mere at vide om, hvordan du abonnerer på et snapshot via mail af en rapport eller et dashboard i Power BI.
 author: mihart
 ms.author: mihart
 manager: kvivek
@@ -9,16 +9,16 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/11/2019
+ms.date: 06/26/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: d452b036c7890d59e27df328ae12ad7f5b3b8dbb
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 85976d191fba627b75f8b415acc312817d11ed34
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497959"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408509"
 ---
-# <a name="subscribe-to-a-report-or-dashboard-in-power-bi-service"></a>Abonner på en rapport eller et dashboard i Power BI-tjenesten 
+# <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Abonner på en rapport eller et dashboard i Power BI-tjenesten 
 Det har aldrig været nemmere at holde dig opdateret om dine vigtigste dashboards og rapporter. Abonner på rapportsider og dashboards, der betyder mest for dig, så sender Power BI et snapshot via mail til din indbakke. Fortæl Power BI, hvor ofte du vil modtage mails: dagligt, ugentligt eller efter dataopdatering. Du kan tilmed angive et bestemt tidspunkt for, hvornår Power BI sender mails, eller køre det nu.  
 
 Det sprog, der er angivet under Power BI-indstillingerne, bruges til mail og snapshot (se [Understøttede sprog og lande/regioner til Power BI](../supported-languages-countries-regions.md)). Hvis der ikke er angivet et sprog, bruger Power BI det sprog, der stemmer overens med indstillingen for landestandard i din aktuelle browser. Hvis du vil se eller indstille dine sprogindstillinger, skal du vælge ![tandhjulsikonet](./media/end-user-subscribe/power-bi-settings-icon.png) > **Indstillinger > Generelt > Sprog**. 
@@ -29,7 +29,7 @@ Når du modtager mailen, indeholder den et link til at "gå til rapport eller da
 
 
 ## <a name="requirements"></a>Krav
-**Oprettelse af** et abonnement er en Power BI Pro-funktion.   
+Hvis du vil **oprette** et abonnement til dig selv, skal du have en Power BI Pro-licens. Brugere, der ser indhold i et Premium-arbejdsområde eller i en Premium-app, kan også abonnere på indhold, der findes der, selv uden en Power BI Pro-licens. **Abonnement til andre** kan kun oprettes af ejeren af dashboardet. 
 
 ## <a name="subscribe-to-a-dashboard-or-a-report-page"></a>Abonner på et dashboard eller en rapportside
 Uanset om du abonnerer på et dashboard eller en rapport, er processen den samme. Du bruger den samme knap til at abonnere på dashboards og rapporter i Power BI-tjenesten.
@@ -41,17 +41,15 @@ Uanset om du abonnerer på et dashboard eller en rapport, er processen den samme
    
    ![Ikonet Abonner](./media/end-user-subscribe/power-bi-subscribe-icon.png)
 
-   ![Vinduet Abonner](./media/end-user-subscribe/power-bi-emails-newer.png)
+   ![Vinduet Abonner](./media/end-user-subscribe/power-bi-emails-newest.png)
     
     Skærmen til venstre vises, når du er på et dashboard og vælger **Abonner**. Skærmen til højre vises, når du er på en rapportside og vælger **Abonner**. Hvis du vil abonnere på mere end én side i en rapport, skal du vælge **Tilføj et andet abonnement** og vælge en anden side. 
 
 4. Brug den gule skyder til at slå abonnementet til og fra.  Abonnementet slettes ikke, når skyderen sættes til Fra. Hvis du vil slette abonnementet, skal du vælge ikonet for papirkurven.
 
-4. Din mailadresse føjes automatisk til feltet **Abonner**. Hvis du vil melde andre i din organisation til abonnementet, skal du også tilføje deres mailadresser her. 
+5. Alternativt kan du tilføje et emne og mailoplysninger. 
 
-5. Alternativt kan du tilføje mailoplysninger. 
-
-5. Vælg en **Hyppighed** for dit abonnement.  Du kan vælge Dagligt, Ugentligt eller Efter dataopdatering (dagligt).  Hvis du kun vil modtage abonnementsmailen på bestemte dage, skal du vælge **Ugentligt** og vælge, hvilke dage du vil modtage den.  Hvis du f.eks. kun vil modtage abonnementsmailen på hverdage, skal du vælge **Ugentligt** som hyppighed og fjerne markeringen af felterne for lørdag og søndag.   
+5. Vælg en **Hyppighed** for dit abonnement.  Du kan vælge Dagligt, Ugentligt eller Efter dataopdatering (dagligt).  Hvis du kun vil modtage abonnementsmailen på bestemte dage, skal du vælge **Ugentligt** og vælge, hvilke dage du vil modtage den.  Hvis du f.eks. kun vil modtage abonnementsmailen på hverdage, skal du vælge **Ugentligt** som hyppighed og fjerne markeringen i felterne for lørdag og søndag.   
 
 6. Planlæg det tidspunkt, som mailen skal sendes på, ved at vælge Dagligt eller Ugentligt som hyppighed, og angiv et **planlagt** **tidspunkt** for abonnementet.  Dette er tidspunktet for, hvornår abonnementsjobbet starter. I visse situationer kan det tage et par minutter, før mailen leveres i din indbakke.    
 
@@ -59,7 +57,7 @@ Uanset om du abonnerer på et dashboard eller en rapport, er processen den samme
 
 8. Hvis du vil gennemse abonnementet og teste det, skal du vælge **Kør nu**.  Så sendes der en mail til dig med det samme. 
 
-8. Hvis alt ser rigtigt ud, skal du vælge **Gem og luk** for at gemme abonnementet. Du og dine kolleger med abonnement modtager en mail og et snapshot af dashboardet eller rapporten iht. den plan, du har angivet. For alle abonnementer, hvor hyppigheden er angivet til **Efter dataopdatering**, sendes der kun en mail efter den første planlagte opdatering på den pågældende dag.
+8. Hvis alt ser rigtigt ud, skal du vælge **Gem og luk** for at gemme abonnementet. Du modtager en mail og et snapshot af dashboardet eller rapporten iht. den plan, du har angivet. For alle abonnementer, hvor hyppigheden er angivet til **Efter dataopdatering**, sendes der kun en mail efter den første planlagte opdatering på den pågældende dag.
    
    ![mail snapshot af dashboard](media/end-user-subscribe/power-bi-subscribe-email.png)
    

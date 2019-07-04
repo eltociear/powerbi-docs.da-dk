@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: b1d0914f146ea56697ada2a64c59744690595054
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: e7b2f03d561faa7df582b4ad5a975d09d617f98f
+ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66498071"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67264612"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Meld dig selv og andre til abonnementer på rapporter og dashboards i Power BI-tjenesten
 
@@ -28,8 +28,12 @@ Du kan kun oprette abonnementer i Power BI-tjenesten. Du modtager en mail med et
 
 ## <a name="requirements"></a>Krav
 
-- **Oprettelse af** et abonnement er en Power BI Pro-funktion.
-- Du behøver ikke at have redigeringstilladelser til indholdet (dashboard eller rapport) for at oprette et abonnement til dig selv, men du skal have redigeringstilladerlser for at oprette et for andre. 
+**Oprettelse** af et abonnement kan udføres af:
+
+- Brugere med en Power BI Pro-licens
+- Brugere, der ser indhold i et Premium-arbejdsområde eller i en Premium-app, kan også abonnere på indhold, der findes der, selv uden en Power BI Pro-licens.
+
+Du behøver ikke at have redigeringstilladelser til indholdet (dashboard eller rapport) for at oprette et abonnement til dig selv, men du skal have redigeringstilladerlser for at oprette et for andre. 
 
 ## <a name="subscribe-to-a-dashboard-report-page-or-paginated-report"></a>Abonner på et dashboard, en rapportside eller en sideinddelt rapport
 
@@ -87,7 +91,6 @@ Et abonnement slutter, hvis Pro-licensen udløber, hvis ejeren sletter dashboard
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 
 * Dashboards med mere end 25 fastgjorte felter eller 4 fastgjorte liverapportsider gengives muligvis ikke fuldstændigt i abonnementsmails, der sendes til brugerne.  Abonnementer på dashboards over dette antal felter blokeres ikke. De anses dog for ikke at være understøttet, hvis du oplever problemer. Overvej at ændre dem i henhold dertil, så de ligger inden for det understøttede antal.
-* Dette er tidspunktet for, hvornår abonnementsjobbet starter. I visse situationer kan det tage et par minutter, før mailen leveres i din indbakke.
 * I sjældne tilfælde kan det tage længere tid end 15 minutter at levere mailabonnementer til deres modtagere. Hvis det sker, anbefaler vi, at du kører en opdatering af dine data og dit mailabonnement på forskellige tidspunkter for at sikre rettidig levering. Hvis problemet fortsætter, skal du kontakte Power BI-support.
 * For mailabonnementer på dashboards vises nogle felter ikke, hvis der er anvendt sikkerhed på rækkeniveau for dem.  
 * For mailabonnementer på rapporter kan du ikke oprette et abonnement til dig selv, hvis datasættet anvender sikkerhed på rækkeniveau. Du kan ikke melde andre til et abonnement på en rapport med sikkerhed på rækkeniveau.

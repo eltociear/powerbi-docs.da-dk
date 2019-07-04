@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/19/2019
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 587cc5b5d81ca57e809a3973c700c71a214dc045
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0af278171a00c792e466bbd0e21a3efb5ffa8962
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61389512"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389736"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>Opret visuelle R-elementer i Power BI-tjenesten
 Power BI-tjenesten understøtter visning og interaktion med visuelle elementer, der er oprettet med R-scripts. Visuelle elementer, der er oprettet med R-scripts, også kaldet *R-visuals*, kan vise avanceret dataformatering og analyse, f.eks. prognoser, ved hjælp af styrken i R's omfattende analyse- og visualiseringsfunktioner.
@@ -64,7 +64,7 @@ Som et andet eksempel viser følgende billede den fejlmeddelelse, der vises, nå
 ![](media/service-r-visuals/r-visuals-service_5.png)
 
 ## <a name="licensing"></a>Licensering
-Visuelle R-elementer kræver en [Power BI Pro](../service-self-service-signup-for-power-bi.md)-licens for at kunne gengives i rapporter, opdateres, filtreres og filtreres i tværgående retning. Du kan finde flere oplysninger om Power BI Pro-licenser, og hvordan de adskiller sig fra gratis licenser, under [Power BI Pro-indhold – Hvad er det?](../service-premium-what-is.md)
+Visuelle R-elementer kræver en [Power BI Pro](../service-self-service-signup-for-power-bi.md)-licens for at kunne gengives i rapporter, opdateres, filtreres og filtreres i tværgående retning. Du kan finde flere oplysninger om Power BI Pro-licenser, og hvordan de adskiller sig fra gratis licenser, under [Power BI Pro-indhold – Hvad er det?](../service-admin-purchasing-power-bi-pro.md)
 
 Gratis brugere af Power BI kan kun anvende felter, der deles med dem i Premium-arbejdsområder. Du kan få mere at vide under [Køb af Power BI Pro](../service-admin-purchasing-power-bi-pro.md).
 
@@ -73,7 +73,7 @@ I nedenstående tabel beskrives visuelle R-elementers funktioner baseret på lic
 
 |  |Forfatter til R-visualiseringer i Power BI Desktop  | Opret PBI-servicerapporter med R-visualiseringer |Vis visuelle R-elementer i rapporter  | Vis R-felter i dashboards |
 |---------|---------|---------|---------|--------|
-|**Gæst** (Power BI Embedded)     |  Ikke relevant|  Ikke relevant       | Ikke understøttet  | Ikke relevant |
+|**Gæst** (Power BI Embedded)     |  Understøttet|  Ikke understøttet      | Kun understøttet i Premium/Azure-kapacitet  | Kun understøttet i Premium/Azure-kapacitet |
 |**Ikke-administreret lejer** (domæne er ikke bekræftet) | Understøttet | Ikke understøttet |  Ikke understøttet |Understøttet (B2B-scenarie) |
 |**Administreret lejer** med gratis licens    |  Understøttet       |  Ikke understøttet       |    Kun understøttet i Premium-kapacitet    | Understøttet |
 **Administreret lejer** med Pro-licens     |   Understøttet      | Understøttet      | Understøttet    |Understøttet|

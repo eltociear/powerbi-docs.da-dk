@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 24a559fe35291c5256a5280b3c7d63d110868f4a
-ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.openlocfilehash: 2760731e7be1216c4ec8755884467eca9d7eb4c4
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67038944"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418793"
 ---
 # <a name="data-refresh-in-power-bi"></a>Opdatering af data i Power BI
 
@@ -34,7 +34,7 @@ Du skal være opmærksom på følgende begreber for at forstå, hvordan Power BI
 
 ### <a name="storage-modes-and-dataset-types"></a>Lagertilstande og typer af datasæt
 
-Et Power BI-datasæt kan køre i en af følgende tilstande for at få adgang til data fra en lang række datakilder. Du kan finde flere oplysninger i [Lagertilstand i Power BI Desktop](desktop-storage-mode.md).
+Et Power BI-datasæt kan køre i en af følgende tilstande for at få adgang til data fra en lang række datakilder. Du kan finde flere oplysninger i [Lagringstilstand i Power BI Desktop](desktop-storage-mode.md).
 
 - Importtilstand
 - DirectQuery-tilstand
@@ -272,7 +272,7 @@ I afsnittet **Planlagt opdatering** angiver du hyppigheden og tidspunktet for op
 
 ![Konfigurer planlagt opdatering](media/refresh-data/configure-scheduled-refresh.png)
 
-Når du har konfigureret en tidsplan for opdatering, kan du på siden med indstillinger for datasættet se oplysninger om det næste opdateringstidspunkt, som vist på skærmbilledet ovenfor. Hvis du vil opdatere dataene hurtigere, f.eks. teste din gateway og konfigurationen af din datakilde, skal du udføre en opdatering on-demand ved hjælp af indstillingen Opdater nu i menuen for datasæt i navigationsruden til venstre. Opdateringer on-demand påvirker ikke det næste planlagte opdateringstidspunkt, men de tæller i forhold til den daglige grænse for opdateringer, som beskrevet tidligere i denne artikel.
+Når du har konfigureret en tidsplan for opdatering, kan du på siden med indstillinger for datasættet se oplysninger om det næste opdateringstidspunkt, som vist på skærmbilledet ovenfor. Hvis du vil opdatere dataene hurtigere, f.eks. for at teste din gateway og konfigurationen af din datakilde, skal du udføre en opdatering efter behov ved hjælp af indstillingen **Opdater nu** i menuen for datasæt i navigationsruden til venstre. Opdateringer on-demand påvirker ikke det næste planlagte opdateringstidspunkt, men de tæller i forhold til den daglige grænse for opdateringer, som beskrevet tidligere i denne artikel.
 
 Bemærk også, at det konfigurerede opdateringstidspunkt muligvis ikke er præcist det tidspunkt, hvor Power BI starter den næste planlagte proces. Power BI starter planlagte opdateringer efter bedste evne. Målet er at starte opdateringen inden for 15 minutter fra det planlagte tidspunkt, men der kan opstå en forsinkelse på op til én time, hvis tjenesten ikke kan tildele de påkrævede ressourcer hurtigere.
 
@@ -283,7 +283,7 @@ Bemærk også, at det konfigurerede opdateringstidspunkt muligvis ikke er præci
 
 Power BI sender som standard meddelelser om mislykket opdatering via mail til ejeren af datasættet, så ejeren kan reagere i tide, hvis der opstår opdateringsfejl. Power BI sender dig også en meddelelse, når tjenesten deaktiverer din tidsplan på grund af gentagne fejl. Microsoft anbefaler, at du markerer afkrydsningsfeltet **Send meddelelse om mislykket opdatering via mail til mig**.
 
-Bemærk, at Power BI ikke kun sender meddelelser om mislykkede opdateringer, men også når tjenesten afbryder en planlagt opdatering midlertidigt på grund af inaktivitet. Power BI anser et datasæt for at være inaktivt, hvis et dashboard eller en rapport, der er baseret på det pågældende datasæt, ikke er blevet besøgt af en bruger i to måneder. I denne situation sender Power BI en mail til ejeren af datasættet, der angiver, hvor der står, at tjenesten har deaktiveret tidsplanen for opdatering af datasættet. På følgende skærmbillede kan du se et eksempel på sådan en meddelelse.
+Bemærk, at Power BI ikke kun sender meddelelser om mislykkede opdateringer, men også når tjenesten afbryder en planlagt opdatering midlertidigt på grund af inaktivitet. Power BI anser et datasæt for at være inaktivt, hvis et dashboard eller en rapport, der er baseret på det pågældende datasæt, ikke er blevet besøgt af en bruger i to måneder. I denne situation sender Power BI en mail til ejeren af datasættet, hvor der står, at tjenesten midlertidigt har afbrudt tidsplanen for opdatering af datasættet. På følgende skærmbillede kan du se et eksempel på sådan en meddelelse.
 
 ![Mail om midlertidig afbrydelse af opdatering](media/refresh-data/email-paused-refresh.png)
 

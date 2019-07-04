@@ -8,36 +8,38 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 06/04/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2acdada1a0b6955fb7d85f445bdbf5895b795bb4
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 5d704e32a9e5f85f280e17042ae4eb799058d739
+ms.sourcegitcommit: 7d52401f50944feaaa112c84113ee47f606dbf68
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751176"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67124061"
 ---
 # <a name="refresh-a-dataset-stored-on-onedrive-or-sharepoint-online"></a>Opdater et datasæt, der er gemt på OneDrive eller SharePoint Online
-Hvis du importerer filer fra OneDrive eller SharePoint Online til Power BI-tjenesten, kan du nemt sikre, at det arbejde, du udfører i **Power BI Desktop**, altid er synkroniseret med Power BI-tjenesten.
+Hvis du importerer filer fra OneDrive eller SharePoint Online til Power BI-tjenesten, kan du nemt sikre, at dit arbejde i Power BI Desktop altid er synkroniseret med Power BI-tjenesten.
 
 ## <a name="advantages-of-storing-a-power-bi-desktop-file-on-onedrive-or-sharepoint-online"></a>Fordele ved at gemme en Power BI Desktop-fil på OneDrive eller SharePoint Online
-Når du gemmer en **Power BI Desktop**-fil på OneDrive eller SharePoint Online, bliver de data, du har indlæst i filens model, importeret til datasættet, og de rapporter, du har oprettet i filen, indlæses i **Rapporter** i Power BI-tjenesten. Hvis du ændrer i din fil på OneDrive eller SharePoint Online, for eksempel tilføjer nye målinger, omdøber kolonnenavne eller redigerer visualiseringer, bliver ændringerne opdateret i Power BI-tjenesten, når du gemmer filen. Det sker som regel inden for en time.
+Når du gemmer en Power BI Desktop-fil på OneDrive eller SharePoint Online, bliver de data, du har indlæst i filens model, importeret til datasættet. Alle rapporter, du har oprettet i filen, indlæses i **rapporter** i Power BI-tjenesten. Lad os sige, at du foretager ændringer i din fil på OneDrive eller SharePoint Online. Disse ændringer kan omfatte tilføjelse af nye målinger, ændring af kolonnenavne eller redigering af visualiseringer. Når du gemmer filen, synkroniseres Power BI-tjenesten også med disse ændringer, som regel inden for cirka en time.
 
-Du kan udføre en manuel engangsopdatering direkte i Power BI Desktop ved at vælge Opdater under Hjem på båndet. Når du vælger Opdater her, opdateres dataene i *filens* model med de opdaterede data fra den oprindelige datakilde. Denne type opdatering, som foretages i selve Power BI Desktop, er forskellig fra den manuelle eller planlagte opdatering i Power BI, og det er vigtigt at forstå forskellen.
+Du kan udføre en manuel engangsopdatering direkte i Power BI Desktop ved at vælge **Opdater** på båndet **Hjem**. Når du vælger **Opdater**, opdaterer du filens model med de opdaterede data fra den oprindelige datakilde. Denne form for opdatering sker udelukkende inde fra selve Power BI Desktop-programmet. Den adskiller sig fra en manuel eller planlagt opdatering i Power BI, og det er vigtigt at forstå forskellen.
 
 ![](media/refresh-desktop-file-onedrive/pbix-refresh.png)
 
-Når du importerer din Power BI Desktop-fil fra OneDrive eller SharePoint Online, indlæses data og andre oplysninger om modellen i et datasæt i Power BI. Du skal opdatere dataene i datasættet i Power BI-tjenesten, ikke i Power BI Desktop, da dine rapporter i Power BI-tjenesten er baseret på disse data. Da datakilderne er eksterne, kan du manuelt opdatere datasættet vha. **Opdater nu**, eller du kan oprette en tidsplan for opdatering vha. **Planlæg opdatering**.
+Når du importerer din Power BI Desktop-fil fra OneDrive eller SharePoint Online, indlæser du data og modeloplysninger i et datasæt i Power BI. Du skal opdatere datasættet i Power BI-tjenesten, fordi det er det, dine rapporter er baseret på. Da datakilderne er eksterne, kan du manuelt opdatere datasættet vha. **Opdater nu**, eller du kan oprette en tidsplan for opdatering vha. **Planlæg opdatering**. 
 
-Når du opdaterer datasættet, oprettes der ikke forbindelse til filen på OneDrive eller SharePoint Online for at forespørge om opdaterede data. Oplysningerne i datasættet bruges til at oprette forbindelse direkte til datakilderne for at hente opdaterede data, som derefter indlæses i datasættet. De opdaterede data i datasættet synkroniseres ikke tilbage til filen på OneDrive eller SharePoint Online.
+![](media/refresh-desktop-file-onedrive/powerbi-service-refresh.png)
+
+Når du opdaterer datasættet, oprettes der ikke forbindelse til filen på OneDrive eller SharePoint Online for at forespørge om opdaterede data. Oplysningerne i datasættet bruges til at oprette direkte forbindelse til datakilderne for at hente opdaterede data. Derefter indlæses disse data i datasættet. De opdaterede data i datasættet synkroniseres ikke tilbage til filen på OneDrive eller SharePoint Online.
 
 ## <a name="whats-supported"></a>Hvad understøttes?
-I Power BI understøttes "Opdater nu" og "Planlæg opdatering" for de datasæt, der er oprettet via Power BI Desktop-filer, som er importeret fra et lokalt drev, hvor Hent data/Forespørgselseditor bruges til at oprette forbindelse til og indlæse data fra en af følgende datakilder:
+Power BI understøtter **Opdater** og **Planlæg opdatering** for de datasæt, der er oprettet via Power BI Desktop-filer, som er importeret fra et lokalt drev, hvor du bruger **Hent data** eller **Forespørgselseditor** til at oprette forbindelse til og indlæse data fra en af følgende datakilder.
 
 ### <a name="power-bi-gateway---personal"></a>Power BI Gateway – Personlig
-* Alle onlinedatakilder, der vises i Hent data og Query Editor i Power BI Desktop.
-* Alle datakilder i det lokale miljø, der vises i Hent data og Forespørgselseditor i Power BI Desktop, undtagen Hadoop-fil (HDFS) og Microsoft Exchange.
+* Alle onlinedatakilder, der vises i **Hent data** og **Forespørgselseditor** i Power BI Desktop.
+* Alle datakilder i det lokale miljø, der vises i **Hent data** og **Forespørgselseditor** i Power BI Desktop, undtagen Hadoop-fil (HDFS) og Microsoft Exchange.
 
 <!-- Refresh Data sources-->
 [!INCLUDE [refresh-datasources](./includes/refresh-datasources.md)]
@@ -48,33 +50,34 @@ I Power BI understøttes "Opdater nu" og "Planlæg opdatering" for de datasæt, 
 > 
 
 ## <a name="onedrive-or-onedrive-for-business-whats-the-difference"></a>OneDrive eller OneDrive for Business. Hvad er forskellen?
-Hvis du har både et personligt OneDrive og OneDrive for Business, anbefales det, at du opbevarer alle filer, som du vil importere til Power BI, i OneDrive for Business. Årsag: Du bruger sandsynligvis to forskellige konti til at logge på dem.
+Hvis du både har en personlig version af OneDrive og OneDrive for Business, skal du opbevare alle filer, som du vil importere til Power BI, i OneDrive for Business. Årsag: Du bruger sandsynligvis to forskellige konti til at logge på dem.
 
-Når du opretter forbindelse til OneDrive for Business i Power BI, sker det normalt automatisk, fordi den konto, du bruger til at logge på Power BI med, ofte er den samme konto, der bruges til at logge på OneDrive for Business. Men med et personligt OneDrive kan du logge på med en anden [Microsoft-konto](https://account.microsoft.com).
+Det er nemt at oprette forbindelse til OneDrive for Business i Power BI, fordi din Power BI-konto ofte er den samme konto som din OneDrive for Business-konto. Med et personligt OneDrive logger du som regel på med en anden [Microsoft-konto](https://account.microsoft.com).
 
-Når du logger på med din Microsoft-konto, skal du vælge Forbliv logget på. Power BI kan derefter synkronisere eventuelle opdateringer, som du foretager i filen i Power BI Desktop, med datasæt i Power BI  
-    ![](media/refresh-desktop-file-onedrive/refresh_signin_keepmesignedin.png)
+Når du logger på med din Microsoft-konto, skal du vælge **Forbliv logget på**. Power BI kan derefter synkronisere eventuelle opdateringer, som du foretager i filen i Power BI Desktop, med datasæt i Power BI.
 
-Hvis du foretager ændringer i din fil på OneDrive, som ikke kan synkroniseres med datasættet eller rapporterne i Power BI, fordi dine legitimationsoplysninger til Microsoft muligvis er blevet ændret, skal du oprette forbindelse til og importere filen igen fra dit personlige OneDrive.
+![](media/refresh-desktop-file-onedrive/refresh_signin_keepmesignedin.png)
+
+Hvis du har ændret dine legitimationsoplysninger til Microsoft, kan du ikke synkronisere ændringer mellem din fil på OneDrive og datasættet i Power BI. Du skal oprette forbindelse til og importere filen fra OneDrive igen.
 
 ## <a name="how-do-i-schedule-refresh"></a>Hvordan kan jeg planlægge en opdatering?
-Når du konfigurerer en tidsplan for opdatering, oprettes der direkte forbindelse til datakilderne i Power BI vha. forbindelsesoplysningerne og legitimationsoplysningerne i datasættet for at hente opdaterede data. Derefter indlæses de opdaterede data i datasættet. Alle visuelle elementer i rapporter og dashboards, der er baseret på dette datasæt i Power BI-tjenesten, opdateres også.
+Når du konfigurerer en tidsplan for opdatering, opretter Power BI direkte forbindelse til datakilderne. Power BI bruger forbindelsesoplysningerne og legitimationsoplysningerne i datasættet til at bede om opdaterede data. Derefter indlæser Power BI de opdaterede data i datasættet. Og derefter opdateres alle visualiseringer i rapporter og dashboards, der er baseret på dette datasæt, i Power BI-tjenesten.
 
 Du kan finde oplysninger om, hvordan du konfigurerer en tidsplan for opdatering, under [Konfigurer tidsplan for opdatering](refresh-scheduled-refresh.md).
 
 ## <a name="when-things-go-wrong"></a>Når det går galt
-Når tingene går galt, skyldes det som regel, at Power BI ikke kan logge på datakilder, at gatewayen er offline, eller hvis datasættet opretter forbindelse til en datakilde i det lokale miljø. Kontrollér, at Power BI kan logge på datakilderne. Hvis du har ændret den adgangskode, du bruger til at logge på en datakilde med, eller hvis Power BI logges af datakilden, skal du prøve at logge på datakilderne igen vha. legitimationsoplysningerne for datakilden.
+Når noget går galt, skyldes det som regel, at Power BI ikke kan logge på datakilder. Det kan også gå galt, hvis datasættet forsøger at oprette forbindelse til en datakilde i det lokale miljø, mens gatewayen er offline. Du kan undgå disse problemer ved at kontrollere, at Power BI kan logge på datakilderne. Prøv at logge på datakilderne i **Legitimationsoplysninger for datakilde**. Nogle gange ændres den adgangskode, du bruger til at logge på en datakilde, eller Power BI bliver logget af en datakilde.
 
-Hvis du ændrer i Power BI Desktop-filen på OneDrive og gemmer, og hvis ændringerne ikke afspejles i Power BI inden for ca. en time, kan det skyldes, at Power BI ikke kan oprette forbindelse til OneDrive. Prøv at oprette forbindelse til filen på OneDrive igen. Hvis du bliver bedt om at logge på, skal du vælge Forbliv logget på. Da Power BI ikke kunne oprette forbindelse til OneDrive for at synkronisere med filen, skal du importere filen igen.
+Når du gemmer dine ændringer i Power BI Desktop-filen på OneDrive, og du ikke kan se ændringerne i Power BI inden for ca. en time, kan det skyldes, at Power BI ikke kan oprette forbindelse til OneDrive. Prøv at oprette forbindelse til filen på OneDrive igen. Hvis du bliver bedt om at logge på, skal du vælge **Forbliv logget på**. Da Power BI ikke kunne oprette forbindelse til OneDrive for at synkronisere med filen, skal du importere filen igen.
 
 Sørg for, at indstillingen **Send mig en mail med meddelelse om opdateringsfejl** er markeret. Du vil have det at vide med det samme, hvis en planlagt opdatering mislykkes.
 
 ## <a name="troubleshooting"></a>Fejlfinding
-Nogle gange går opdateringen af data muligvis ikke som forventet. Dette skyldes som regel et problem i forbindelse med en gateway. Se artiklerne om fejlfinding af gatewayen for at få oplysninger om værktøjer og kendte problemer.
+Nogle gange går opdateringen af data muligvis ikke som forventet. Du støder typisk på problemer med at opdatere data, når du har forbindelse til en gateway. Se artiklerne om fejlfinding af gatewayen for at få oplysninger om værktøjer og kendte problemer.
 
 [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)
 
 [Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](http://community.powerbi.com/).
 

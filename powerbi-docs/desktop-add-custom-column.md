@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e2412fe72d62549277001b64121ecf9db2ea5502
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 5633370259662141296550aa3d5d2343ac4fedaa
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239573"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67408569"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Tilføj en brugerdefineret kolonne i Power BI Desktop
 Du kan nemt føje en ny brugerdefineret kolonne med data til din model ved hjælp af **forespørgselseditoren** i **Power BI Desktop**. Du kan oprette og omdøbe din brugerdefinerede kolonne ved hjælp af knapper til oprettelse af [M-formler](https://msdn.microsoft.com/library/mt270235.aspx), der definerer din brugerdefinerede kolonne. M-formlen har et [indholdssæt med omfattende funktionsreference](https://msdn.microsoft.com/library/mt779182.aspx). 
@@ -68,6 +68,5 @@ Den **avancerede editor** giver dig fuld kontrol over din forespørgsel.
 Du kan også oprette en brugerdefineret kolonne på andre måder, f.eks. ved at oprette en kolonne, der er baseret på eksempler, du angiver i **forespørgselseditoren**. I følgende artikel kan du få flere oplysninger om, hvordan du opretter brugerdefinerede kolonner ud fra eksempler:
 
 * [Tilføj en kolonne ud fra et eksempel i Power BI Desktop](desktop-add-column-from-example.md)
-* [Introduktion til M-formelsprog](https://msdn.microsoft.com/library/mt270235.aspx)
-* [M-funktionsreference](https://msdn.microsoft.com/library/mt779182.aspx)  
+* [M-reference til Power-forespørgsel](/powerquery-m/power-query-m-reference)  
 

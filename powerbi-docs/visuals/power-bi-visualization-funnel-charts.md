@@ -8,15 +8,15 @@ featuredvideoid: maTzOJSRB3g
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/24/2018
+ms.date: 06/12/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 071b45a4ad9cbd9c753c44de5c55a352767bccbf
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b12b2035d7686667535dfdddba42b4b8ca014d96
+ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61067738"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67161109"
 ---
 # <a name="funnel-charts"></a>Tragtformede diagrammer
 Et tragtformet diagram hjælper dig med at visualisere en lineær proces, der har fortløbende forbundne faser. F.eks. et tragtformet salgsdiagram, der sporer kunder gennem forskellige faser: Potentielt kundeemne \> Kvalificeret kundeemne \> Kundeemne \> Kontrakt \> Luk.  I korte træk afspejler tragtens form tilstanden af den proces, du holder øje med.
@@ -61,7 +61,7 @@ I denne vejledning bruges Opportunity Analysis Sample. Du skal [downloade eksemp
 2. [Konvertér diagrammet](power-bi-report-change-visualization-type.md) til en tragt. Bemærk, at **Sales Stage** også er under **Group**. 
 3. I ruden **Fields** skal du vælge **Fact** \> **Opportunity Count**.
    
-    ![byg det tragtformede diagram](media/power-bi-visualization-funnel-charts/power-bi-funnel.png)
+    ![byg det tragtformede diagram](media/power-bi-visualization-funnel-charts/power-bi-funnel-2.png)
 4. Når du holder over en søjle, vises en masse oplysninger.
    
    * Navnet på fasen

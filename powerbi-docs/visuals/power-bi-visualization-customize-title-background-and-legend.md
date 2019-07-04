@@ -8,118 +8,163 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/22/2018
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d7a8c1600de65ba39b075d89f3c2d95e0b0c7cde
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6228ed70dd78ffca6cd3c8803518b2b27674576f
+ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051221"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389930"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Tilpas visualiseringernes titler, forklaringer og baggrunde
-I dette selvstudium lærer du et par forskellige måder, hvorpå du kan tilpasse dine visualiseringer.   Der findes mange muligheder for at tilpasse dine visualiseringer. Den bedste måde at lære dem at kende på, er ved at prøve sig frem med indstillingerne under fanen Formatering (vælg ikonet med malerullen).  I denne artikel kan du se, hvordan du tilpasser en visualiserings titel, forklaring og baggrund.  
 
-Det er ikke alle visualiseringer, der kan tilpasses. [Se en komplet oversigt](#list).  
+I dette selvstudium lærer du, hvordan du kan tilpasse dine visualiseringer, på flere måder. Du har mange muligheder for at tilpasse dine visualiseringer. Den bedste måde, du kan lære om dem alle på, er at udforske ruden **Format** (vælg malerrulleikonet). I denne artikel kan du se, hvordan du tilpasser en visualiserings titel, forklaring og baggrund.
 
-Spole til 4:50 i videoen til en demonstration af, hvordan du kan tilpasse visualiseringer. Følg derefter instruktionerne nedenfor for selv at prøve det med dine egne data.
+Du kan ikke tilpasse alle visualiseringer. Se den [komplette liste](#visualization-types-that-you-can-customize) over visualiseringer for at få flere oplysninger.
+
+Spol til 4:50 i videoen for at få en demonstration af, hvordan du kan tilpasse visualiseringer:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-### <a name="prerequisites"></a>Forudsætninger
+Nu skal du følge instruktionerne nedenfor for selv at prøve det med dine egne data.
+
+## <a name="prerequisites"></a>Forudsætninger
+
 - Power BI-tjenesten eller Power BI Desktop
-- Eksempel på analyse af detailhandel
+
+- Rapporten Retail Analysis Sample
 
 ## <a name="customize-visualization-titles-in-reports"></a>Tilpas titler på visualiseringer i rapporter
-Hvis du vil følge med, skal du logge på Power BI-tjenesten (app.powerbi.com) og [åbne rapporten Retail Analysis Sample](../sample-datasets.md) i [redigeringsvisning](../service-interact-with-a-report-in-editing-view.md).
+
+Hvis du vil følge med, skal du logge på [Power BI-tjenesten](https://app.powerbi.com) og åbne rapporten [Retail Analysis Sample](../sample-datasets.md) i visningen [Rediger rapport](../service-interact-with-a-report-in-editing-view.md).
 
 > [!NOTE]
-> Når du fastgør en visualisering på et dashboard, bliver den til et dashboardfelt.  Selve felterne kan også tilpasses med [nye titler og undertitler, links og tilpasning af størrelsen](../service-dashboard-edit-tile.md).
-> 
-> 
+> Når du fastgør en visualisering på et dashboard, bliver den til et dashboardfelt. Du kan også tilpasse selve felterne med [nye titler og undertitler, links og tilpasning af størrelsen](../service-dashboard-edit-tile.md).
 
-1. Gå til siden "New Stores" i rapporten, og vælg søjlediagrammet "Open Store Count by Open Month".
-2. I ruden Visualiseringer kan du vælge ikonet med malerullen for at få vist formateringsindstillingerne.  og vælg **Titel** for at udvide den sektion.  
+1. Gå til siden **New Stores** i rapporten **Retail Analysis Sample**.
 
-   ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-formatting-menu.png)
-3. Slå **Titel** til eller fra ved at vælge skyderen Til (eller Fra). Lad den stå på **Til**.  
+1. Vælg det grupperede søjlediagram **Open Store Count by Open Month and Chain**.
 
-   ![](media/power-bi-visualization-customize-title-background-and-legend/onoffslider.png)
-4. Jeg retter **Titeltekst** ved at skrive **Store count by month opened** i tekstfeltet.  
-5. Ret **Skriftfarve** til orange og **Baggrundsfarve** til gul.
+1. I ruden **Visualiseringer** skal du vælge ikonet med malerrullen for at få vist formateringsindstillingerne.
 
-   * Vælg rullelisten, og vælg en farve fra **Temafarver**, **Seneste farver** eller **Brugerdefineret farve**.
-   * Vælg rullelisten for at lukke farvevinduet.  
-     ![](media/power-bi-visualization-customize-title-background-and-legend/customizecolorpicker.png)
+1. Vælg **Titel** for at udvide den sektion.
 
-   Du kan til enhver tid gendanne de oprindelige farver ved at vælge **Vend tilbage til standard** i farvevinduet.
-6. Øg tekststørrelsen til 12.
-7. Den sidste tilpasning af diagramtitlen er at justere placeringen, så den står midt i visualiseringen. Som standard er titlen venstrejusteret.  
-   ![](media/power-bi-visualization-customize-title-background-and-legend/customizealign.png)
+   ![Skærmbillede af formateringsruden med malerrulleikonet fremhævet og en pil til rullelisten Titel.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-formatting-menu.png)
 
-    På dette punkt i selvstudiet skulle **titlen** i dit søjlediagram se nogenlunde sådan ud:  
-    ![](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
+1. Flyt skyderen **Titel** til **Til**.
 
-    Hvis du vil fjerne alle tilpasningerne af titlen, skal du vælge **Vend tilbage til standard** nederst i ruden **Titel**.  
-    ![](media/power-bi-visualization-customize-title-background-and-legend/revertall.png)
+   ![Skærmbillede af skyderen slået til.](media/power-bi-visualization-customize-title-background-and-legend/onoffslider.png)
+
+1. Hvis du vil ændre titlen, skal du skrive **Store count by month opened** i feltet *Titeltekst*.
+
+1. Ret **Skriftfarve** til orange og **Baggrundsfarve** til gul.
+
+    1. Vælg rullelisten, og vælg en farve fra **Temafarver**, **Seneste farver** eller **Brugerdefineret farve**.
+
+        ![Skærmbillede af indstillinger for skriftfarve og baggrundsfarve.](media/power-bi-visualization-customize-title-background-and-legend/customizecolorpicker.png)
+
+    1. Vælg rullelisten for at lukke farvevinduet.
+
+       Gem de ændringer, du har foretaget.
+
+       Hvis du skulle få brug for at gendanne alle ændringerne, kan du vende tilbage til de oprindelige farver ved at vælge **Vend tilbage til standard** i farvevinduet.
+
+1. Øg tekststørrelsen til **12 pt**.
+
+1. Den sidste tilpasning, du skal foretage af diagramtitlen, er at justere placeringen, så den står midt i visualiseringen.
+
+    ![Skærmbillede af kontrolelementerne til justering med indstillingen Centrer valgt.](media/power-bi-visualization-customize-title-background-and-legend/customizealign.png)
+
+På dette tidspunkt i selvstudiet ser titlen på dit grupperede søjlediagram nogenlunde sådan ud:
+
+![Skærmbillede af det grupperede søjlediagram, der netop er konfigureret.](media/power-bi-visualization-customize-title-background-and-legend/tutorialprogress1.png)
+
+Gem de ændringer, du har foretaget, og gå til næste sektion.
+
+Hvis du vil genindlæse alle ændringerne, skal du vælge **Vend tilbage til standard** nederst i tilpasningsruden **Titel**.
+
+![Skærmbillede af indstillingen Vend tilbage til standard.](media/power-bi-visualization-customize-title-background-and-legend/revertall.png)
 
 ## <a name="customize-visualization-backgrounds"></a>Tilpas baggrunden i en visualisering
-Udvid indstillingerne under Baggrund i det samme søjlediagram.
 
-1. Du kan slå baggrunden til og fra ved at angive skyderen til Til (eller Fra). Lad den stå på **Til**.
-2. Skift baggrundsfarve til 74 % grå.
+Udvid indstillingerne under **Baggrund** i det samme grupperede søjlediagram.
 
-   * Vælg rullelisten, og vælg en grå farve fra **Temafarver**, **Seneste farver** eller **Brugerdefineret farve**.
-   * Ret Gennemsigtighed til 74 %.   
-     ![](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
+1. Flyt skyderen **Baggrund** til **Til**.
 
-   Hvis du vil fjerne alle tilpasningerne af baggrunden, skal du vælge **Vend tilbage til standard** nederst i ruden **Baggrund**.
+1. Vælg rullelisten, og vælg en grå farve.
+
+1. Ret **Gennemsigtighed** til **74 %** .
+
+På dette tidspunkt i selvstudiet ser baggrunden på dit grupperede søjlediagram nogenlunde sådan ud:
+
+![Skærmbillede af grupperet søjlediagram med opdateret baggrundsfarve.](media/power-bi-visualization-customize-title-background-and-legend/power-bi-customize-background.png)
+
+Gem de ændringer, du har foretaget, og gå til næste sektion.
+
+Hvis du vil genindlæse alle ændringerne, skal du vælge **Vend tilbage til standard** nederst i tilpasningsruden **Baggrund**.
 
 ## <a name="customize-visualization-legends"></a>Tilpas forklaringer i en visualisering
-1. Åbn rapportsiden **Overview**, og vælg diagrammet "Total Sales Variance by FiscalMonth and District Manager".
-2. Under fanen Visualiseringer skal du vælge ikonet med malerullen for at åbne ruden Formatering.  
-3. Udvid indstillingerne under **Forklaring**.
 
-      ![](media/power-bi-visualization-customize-title-background-and-legend/legend.png)
-4. Du kan slå forklaringen til og fra ved at angive skyderen til Til (eller Fra). Lad den stå på **Til**.
-5. Flyt forklaringen til venstre side af visualiseringen.    
-6. Føj en titel til forklaringen ved at slå **Titel** **Til**, og skriv **Chefer** i feltet **Navn på forklaring**.
-   ![](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
+1. Åbn rapportsiden **Overview**, og vælg diagrammet **Total Sales Variance by FiscalMonth and District Manager**.
 
-   Hvis du vil fjerne alle tilpasningerne af forklaringen, skal du vælge **Vend tilbage til standard** nederst i ruden **Forklaring**.
+1. Under fanen **Visualiseringer** skal du vælge malerrulleikonet for at åbne ruden Formatering.
 
-<a name="list"></a>
+1. Udvid indstillingerne under **Forklaring**:
 
-## <a name="visualization-types-that-can-be-customized"></a>Visualiseringstyper, der kan tilpasses
+      ![Skærmbillede af indstillingen Forklaring.](media/power-bi-visualization-customize-title-background-and-legend/legend.png)
+
+1. Flyt skyderen **Forklaring** til **Til**.
+
+1. Flyt forklaringen til venstre side af visualiseringen.
+
+1. Føj en titel til forklaringen ved at slå **Titel** **Til**.
+
+1. Skriv *Managers* i feltet **Navn på forklaring**.
+
+På dette tidspunkt i selvstudiet ser forklaringen på dit grupperede søjlediagram nogenlunde sådan ud:
+
+![Skærmbillede af opdateret forklaring i det grupperede søjlediagram.](media/power-bi-visualization-customize-title-background-and-legend/legend-move.png)
+
+Gem de ændringer, du har foretaget, og gå til næste sektion.
+
+Hvis du vil genindlæse alle ændringerne, skal du vælge **Vend tilbage til standard** nederst i tilpasningsruden **Forklaring**.
+
+## <a name="visualization-types-that-you-can-customize"></a>Visualiseringstyper, du kan tilpasse
+
+Her er en liste over de visualiseringer og tilpasningsindstillinger, der er tilgængelige for de enkelte:
 
 | Visualisering | Titel | Baggrund | Forklaring |
 |:--- |:--- |:--- |:--- |
-| Områdediagram |ja |ja |ja |
-| Liggende søjlediagram |ja |ja |ja |
-| Kort |ja |ja |i/t |
-| Kort med flere rækker |ja |ja |i/t |
-| Søjlediagram |ja |ja |ja |
-| Kombinationsdiagram |ja |ja |ja |
-| Kransediagram |ja |ja |ja |
-| Kartogram |ja |ja |ja |
-| Tragt |ja |ja |i/t |
-| Måler |ja |ja |i/t |
-| KPI |ja |ja |i/t |
-| Kurvediagram |ja |ja |ja |
-| Kort |ja |ja |ja |
-| Matrix |ja |ja |i/t |
-| Cirkeldiagram |ja |ja |ja |
-| Punktdiagram |ja |ja |ja |
-| Udsnit |ja |ja |i/t |
-| Tabel |ja |ja |i/t |
-| Tekstfelt |nej |ja |i/t |
-| Træstruktur |ja |ja |ja |
-| Vandfaldsdiagram |ja |ja |ja |
+| Område | ja | ja |ja |
+| Liggende søjle | ja | ja |ja |
+| Kort | ja | ja |i/t |
+| Kort med flere rækker | ja | ja | i/t |
+| Kolonne | ja | ja | ja |
+| Kombinationsdiagram | ja | ja | ja |
+| Krans | ja | ja | ja |
+| Kartogram | ja | ja | ja |
+| Tragt | ja | ja | i/t |
+| Måler | ja | ja | i/t |
+| KPI | ja | ja | i/t |
+| Linje | ja | ja | ja |
+| Kort | ja | ja | ja |
+| Matrix | ja | ja | i/t |
+| Cirkel | ja | ja | ja |
+| Punktdiagram | ja | ja | ja |
+| Udsnit | ja | ja | i/t |
+| Tabel | ja | ja | i/t |
+| Tekstfelt | nej | ja | i/t |
+| Treemap | ja | ja | ja |
+| Vandfaldsdiagram | ja | ja | ja |
 
 ## <a name="next-steps"></a>Næste trin
-[Tilpas X- og Y-aksen](power-bi-visualization-customize-x-axis-and-y-axis.md)  
-[Tilpas farver og akseegenskaber](service-getting-started-with-color-formatting-and-axis-properties.md)  
-[Power BI – Grundlæggende begreber](../consumer/end-user-basic-concepts.md)  
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
+- [Tilpas egenskaberne for X- og Y-aksen](power-bi-visualization-customize-x-axis-and-y-axis.md)
+
+- [Introduktion til farveformatering og akseegenskaber](service-getting-started-with-color-formatting-and-axis-properties.md)
+
+- [Grundlæggende begreber for forbrugere af Power BI-tjenesten](../consumer/end-user-basic-concepts.md)
+
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

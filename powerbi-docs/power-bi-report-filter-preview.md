@@ -7,38 +7,38 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/16/2019
+ms.date: 06/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 0a9e4986ae2f686eb8a8fd2d9fa07b169661ce60
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6a95ddd8f13be2407736c126b087723ceb5d9f31
+ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65853484"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67409153"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports-preview"></a>Den nye filteroplevelse i Power BI-rapporter (prøveversion)
 
-Filtre i Power BI har nye funktioner og et nyt design. Når du vælger i den nye oplevelse med filteret, kan du formatere ruden filtre for at se ud som i resten af rapporten. Du kan låse og endda Skjul filtre. Når du designer din rapport, kan du ikke længere se den tidligere ruden filtre på alle i ruden visualiseringer. Du kan gøre dit filter redigering og formatering i en enkelt filterruden. 
+Filtrene i Power BI har fået ny funktionalitet og et nyt design. Når du vælger den nye filteroplevelse, kan du formatere filtreringsruden, så den ser ud som i resten af rapporten. Du kan låse og endda skjule filtre. Når du designer din rapport, kan du slet ikke længere se den gamle filtreringsrude i ruden Visualiseringer. Du kan udføre al redigering og formatering af dine filtre i en enkelt filtreringsrude. 
 
 ![Ny filteroplevelse](media/power-bi-report-filter-preview/power-bi-filter-reading.png)
 
 > [!NOTE]
 > Den nye filtreringsoplevelse findes som en prøveversion. Nye builds kan tilsidesætte formatering, du allerede har angivet.
 
-Som en Rapportdesigner er her det, du kan gøre i den nye enkelt ruden filtre:
+Her kan du se, det som du som rapportdesigner kan gøre i den nye rude med et enkelt filter:
 
-- Tilføje og fjerne felter til at filtrere på. 
-- Rediger filtertilstand.
-- Formatér og tilpasse ruden filtre, så den position, hvor en del af din rapport.
+- Tilføj og fjern felter, der kan filtreres efter. 
+- Rediger filtertilstanden.
+- Formatér og tilpas filtreringsruden, så den føles som en del af rapporten.
 - Definer, om ruden Filtre skal være åben eller skjult som standard, når en forbruger åbner rapporten.
-- Skjul hele filterruden eller de specifikke filtre, du ikke vil rapportforbrugeren se.
-- Kontrol og endda bogmærke synligheden, åbne og skjult tilstand af ruden filtre i nye.
+- Skjul hele filtreringsruden eller specifikke filtre, som forbrugerne af rapporten ikke skal se.
+- Kontrollér og angiv også bogmærke for tilstanden Synlighed, Åben og Skjult for den nye filtreringsrude.
 - Lås filtre, som forbrugerne ikke må redigere.
 
-Med den nye oplevelse med filteret, kan rapportforbrugeren også peg på et visuelt element for at se en skrivebeskyttet liste over alle de filtre eller udsnit påvirker dette visuelle element.
+Med den nye filtreringsoplevelse kan rapportforbrugere også pege på en hvilken som helst visualisering for at se en skrivebeskyttet liste over alle de filtre eller udsnit, der påvirker den pågældende visualisering.
 
-![Oversigt over filtre til en visualisering](media/power-bi-report-filter-preview/power-bi-filter-visual.png)
+![Liste over filtre for en visualisering](media/power-bi-report-filter-preview/power-bi-filter-visual.png)
 
 ## <a name="turn-on-the-new-filter-experience"></a>Slå den nye filteroplevelse til 
 
@@ -56,12 +56,12 @@ Efter du har genstartet Power BI Desktop, er oplevelsen som standard aktiveret f
 Du kan også aktivere de nye filtre for eksisterende rapporter.
 
 1. I en eksisterende rapport i Power BI Desktop skal du vælge **Filer** > **Indstillinger** > **Indstillinger**
-2. I den venstre navigationslinje, under **aktuelle fil**, skal du vælge **rapportere indstillinger**.
-3. Under **filtrering oplevelse**, skal du vælge **aktivere opdaterede filterruden, og få vist filtre i overskriften for denne rapport**.
+2. Under **Aktuel fil** på venstre navigationslinje skal du vælge **Rapportindstillinger**.
+3. Under **Filtreringsoplevelse** skal du vælge **Aktivér den opdaterede filtreringsrude, og vis filtre i rapportens visuelle overskrift**.
 
 ## <a name="view-filters-for-a-visual-in-reading-mode"></a>Vis filtre for en visualisering i Læsetilstand
 
-I Læsetilstand kan du holde markøren over filterikonet for en visualisering og se et pop op-vindue med alle de filtre, udsnitsværktøjer m.m., der påvirker denne visualisering. Formateringen af pop op-vinduet, er det samme som den filtre ruden formatering. 
+I Læsetilstand kan du holde markøren over filterikonet for en visualisering og se et pop op-vindue med alle de filtre, udsnitsværktøjer m.m., der påvirker denne visualisering. Formateringen af pop op-vinduet er den samme som formateringen af filtreringsruden. 
 
 ![Filtre, der påvirker en visualisering](media/power-bi-report-filter-preview/power-bi-filter-per-visual.png)
 
@@ -77,39 +77,39 @@ Her er de filtertyper, der vises i denne visning:
 - Filtre for Inkluder/Ekskluder
 - Filtre sendt via en URL-adresse
 
-## <a name="build-the-new-filters-pane"></a>Byg nye filterruden
+## <a name="build-the-new-filters-pane"></a>Byg den nye filtreringsrude
 
-Når du aktiverer den nye ruden filtre, kan du se det til højre for den rapportside, der er formateret som standard, der er baseret på de aktuelle rapportindstillinger. Du kan bruge den nye ruden filtre til at konfigurere hvilke filtre, der skal medtages, og at opdatere eksisterende filtre i den nye rude. Ruden filtre i nye viser, hvilke dine rapportforbrugere vises, når du udgiver din rapport. 
+Efter du har aktiveret den nye filtreringsrude, kan du se den til højre for den rapportside, der som standard er formateret på baggrund af de aktuelle rapportindstillinger. Du kan bruge den nye filtreringsrude til at konfigurere, hvilke filtre der skal inkluderes, og til at opdatere eksisterende filtre i den nye rude. Den nye filtreringsrude viser dig, hvad forbrugerne af din rapport kan se, når du publicerer rapporten. 
 
-1. Som standard kan din rapportforbrugeren se ruden filtre. Hvis du ikke vil dem til at se det, skal du vælge ikonet med øjet ud for **filtre**.
+1. Dine rapportforbrugere kan som standard se filtreringsruden. Hvis de ikke skal kunne se den, skal du vælge ikonet med øjet ud for **Filtre**.
 
-    ![Power BI-ikonet med øjet af filter](media/power-bi-report-filter-preview/power-bi-filter-eye.png)
+    ![Ikon med øje for Power BI-filter](media/power-bi-report-filter-preview/power-bi-filter-eye.png)
 
-2. For at begynde at bygge din nye ruden filtre, trække felter af renter i ruden filtre i nye enten som visual, side eller på rapporteringsniveau.
+2. Du begynder at bygge din nye filtreringsrude ved at trække de ønskede felter til den nye filtreringsrude enten som en visualisering, en side eller som filtre på rapporteringsniveau.
 
-Når du tilføjer et visuelt element til en rapportlærred, føjer Power BI automatisk et filter til ruden filtre for hvert felt i det visuelle element. 
+Når du føjer en visualisering til et rapportlærred, tilføjer Power BI automatisk et filter i filtreringsruden for hvert felt i visualiseringen. 
 
 ## <a name="lock-or-hide-filters"></a>Lås eller skjul filtre
 
 Du kan låse eller skjule de enkelte filterkort. Hvis du låser et filter, kan forbrugerne af rapporten se, men ikke ændre det. Hvis du skjuler det, kan de slet ikke se det. Det er typisk nyttigt at skjule filterkort, hvis du har brug for at skjule filtre til dataoprydning, der udelukker Null-værdier eller uventede værdier. 
 
-- I ruden nye filtre skal du markere eller fjerne markeringen af **Zamknout Filtr** eller **Skjul filter** ikonerne i et filterkort.
+- I den nye filtreringsrude skal du markere eller fjerne markeringen i ikonerne **Lås filter** eller **Skjul filter** på et filterkort.
 
    ![Skjul eller lås filtre](media/power-bi-report-filter-preview/power-bi-filter-lock-hide.png)
 
-Når du aktiverer disse indstillinger til og fra i ruden filtre i nye, kan du se ændringerne afspejles i rapporten. Skjulte filtre vises ikke i pop op-vinduet for filtret for en visualisering.
+I takt med at du slår disse indstillinger til og fra i den nye filtreringsrude, kan du se ændringerne blive afspejlet i rapporten. Skjulte filtre vises ikke i pop op-vinduet for filtret for en visualisering.
 
-Du kan også konfigurere nye filtre ruden tilstand for at flow med dine bogmærker i rapporten. Der kan angives bogmærke for tilstandene Åben, Lukket og Synlighed for ruden.
+Du kan også konfigurere tilstanden for den nye filtreringsrude, så den følger dine bogmærker i rapporten. Der kan angives bogmærke for tilstandene Åben, Lukket og Synlighed for ruden.
  
 ## <a name="format-the-new-filters-pane"></a>Formatér den nye Filtre-rude
 
-En stor del af denne nye oplevelse er, at du kan formatere ruden filtre for at matche udseendet af din rapport. Du kan formatere ruden filtre anderledes for hver side i rapporten. Her er de elementer, du kan formatere: 
+En stor del af denne nye oplevelse er, at du kan formatere filtreringsruden, så den matcher udseendet af din rapport. Du kan formatere filtreringsruden forskelligt for hver side i rapporten. Her er de elementer, du kan formatere: 
 
 - Baggrundsfarve
 - Baggrundsgennemsigtighed
-- Kant til eller fra
+- Kant slået til eller fra
 - Kantfarve
-- Titel og header skrifttype, farve og størrelse
+- Skrifttype, farve og tekststørrelse for titel og overskrift
 
 Du kan også formatere disse elementer for filterkort, afhængigt af om de er anvendt (indstillet til noget) eller tilgængelige (ryddet): 
 
@@ -120,10 +120,10 @@ Du kan også formatere disse elementer for filterkort, afhængigt af om de er an
 - Skrifttype, farve og tekststørrelse
 - Farve på inputfelt
 
-### <a name="format-the-filters-pane-and-cards"></a>Format ruden filtre og kort
+### <a name="format-the-filters-pane-and-cards"></a>Formatér filtreringsruden og kortene
 
 1. I rapporten skal du klikke på selve rapporten eller baggrunden (*tapetet*), og derefter skal du i ruden **Visualiseringer** vælge **Formatér**. 
-    Du kan se indstillinger til formatering af siden i rapporten, tapetet, og også ruden filtre og Filter kort.
+    Du kan se formateringsindstillinger for rapportsiden, tapetet samt filtreringsruden og filterkort.
 
     ![Vælg ikonet Formatér](media/power-bi-report-filter-preview/power-bi-filter-format.png)    
 
@@ -135,8 +135,8 @@ Du kan også formatere disse elementer for filterkort, afhængigt af om de er an
   
     ![Udvid filterkort](media/power-bi-report-filter-preview/power-bi-filter-format-card-font.png)
 
-## <a name="theming-for-filter-pane"></a>Temaer for filterruden
-Du kan nu ændre standardindstillingerne for filterruden med temafilen. Her er et eksempel på tema kodestykke for at komme i gang:
+## <a name="theming-for-filter-pane"></a>Temaer for filtreringsruden
+Du kan nu ændre standardindstillingerne for filtreringsruden med temafilen. Her er et eksempel på kodestykke for et tema, der kan hjælpe dig i gang:
 
  
 ```
@@ -207,41 +207,42 @@ Du kan nu ændre standardindstillingerne for filterruden med temafilen. Her er e
 }] 
 ```
 
-## <a name="sort-the-filter-pane"></a>Sortér filterruden
+## <a name="sort-the-filter-pane"></a>Sortér filtreringsruden
 
-Brugerdefineret sortering funktionalitet er en del af den nye oplevelse med filter rude. Oprettere af rapporten kan trække og slippe filtre til at flytte rundt på dem i den rækkefølge, de ønsker.
+Brugerdefineret sorteringsfunktionalitet er en del af den nye oplevelse med filtreringsruden. Oprettere af rapporter kan trække og slippe filtre for at flytte rundt på dem i den ønskede rækkefølge.
 
-![Omarranger filter sorteringsrækkefølge](media/power-bi-report-filter-preview/power-bi-filter-sort.gif)
+![Omarranger sorteringsrækkefølge for filtre](media/power-bi-report-filter-preview/power-bi-filter-sort.gif)
 
-Standardsorteringsrækkefølgen er alfabetisk for filtre. For at starte brugerdefineret sortering tilstand, blot trække et filter til en ny placering. Du kan kun sortere filtre inden for det niveau, som de gælder for – f.eks, et visualiseringsniveau, sideniveau eller rapportniveau filter.
+Standardsorteringsrækkefølgen er alfabetisk for filtre. Hvis du vil starte en brugerdefineret sorteringstilstand, skal du bare trække et filter til en ny placering. Du kan kun sortere filtre inden for det niveau, som de gælder for – f.eks. et filter på visualiseringsniveau, sideniveau eller rapportniveau.
 
-## <a name="filters-pane-scaling"></a>Filtrerer ruden skalering
+## <a name="filters-pane-scaling"></a>Skalering i filtreringsruden
 
-Ruden filtre i nye skalerer med rapportside og visualiseringer, så rapportsiden og filtrerer ruden forbliver i andel med hinanden.
+Den nye filtreringsrude skaleres med rapportsiden og visualiseringerne, så rapportsiden og filtreringsruden bevarer proportionerne i forhold til hinanden.
 
-## <a name="improved-filters-pane-accessibility"></a>Forbedret filtre ruden tilgængelighed
+## <a name="improved-filters-pane-accessibility"></a>Forbedret tilgængelighed i filtreringsruden
 
-Vi har forbedret navigationen tastatur for nye filterruden. Du kan bevæger sig gennem alle dele af ruden filtre og bruge nøglen kontekst på tastaturet eller Skift + F10 for at åbne kontekstmenuen.
+Vi har forbedret navigation via tastaturet for den nye filtreringsrude. Du kan bruge tabulator til at bevæge dig gennem alle dele af filtreringsruden og bruge genvejstasten på tastaturet eller Skift + F10 til at åbne genvejsmenuen.
 
-![Filtre ruden hjælp til handicappede](media/power-bi-report-filter-preview/power-bi-filter-accessible.png)
+![Tilgængelighed i filtreringsruden](media/power-bi-report-filter-preview/power-bi-filter-accessible.png)
 
 ## <a name="rename-filters"></a>Omdøb filtre
-Når du redigerer ruden filtre, kan du dobbeltklikke på titlen for at redigere den. Omdøbning er nyttigt, hvis du vil opdatere filterkortet for at gøre mere mening for dine slutbrugere. Husk omdøbe filterkortet stemmer *ikke* omdøbe det viste navn for feltet på feltlisten. Det ændrer blot det viste navn, der bruges i filterkortet.
+Når du redigerer filtreringsruden, kan du dobbeltklikke på titlen for at redigere den. Det er nyttigt at kunne omdøbe filtre, hvis du vil opdatere filterkortet, så det giver mere mening for dine slutbrugere. Husk, at når du omdøber filterkortet, omdøbes det viste navn på feltet på feltlisten *ikke*. Det ændrer blot det viste navn, der bruges i filterkortet.
 
 ![Omdøb et filter](media/power-bi-report-filter-preview/power-bi-filter-rename.png)
 
-## <a name="restrict-changes-to-filter-type"></a>Begræns ændringer for at filtrere type
+## <a name="restrict-changes-to-filter-type"></a>Begræns ændringer af filtertype
 
-Oplev afsnit af rapportindstillingerne, du har mulighed for at styre, om brugerne kan ændre filtertypen under filtrering.
+Under sektionen Filtreringsoplevelse i rapportindstillingerne kan du styre, om brugere kan ændre filtertypen.
 
-![Begræns skiftende filtertype](media/power-bi-report-filter-preview/power-bi-filter-restrict-change.png)
+![Begræns ændring af filtertype](media/power-bi-report-filter-preview/power-bi-filter-restrict-change.png)
 
 ## <a name="next-steps"></a>Næste trin
 
-Prøv den nye filteroplevelse. Giv os din feedback til denne funktion, og hvordan vi kan fortsætte med at forbedre den, på den [Power BI Ideas websted](https://ideas.powerbi.com/forums/265200-power-bi). 
+Prøv den nye filteroplevelse. Giv os din feedback på denne funktion, og hvordan vi fortsat kan forbedre den, på [webstedet med Power BI-ideer](https://ideas.powerbi.com/forums/265200-power-bi). 
 
 - [Sådan bruger du rapportfiltre](consumer/end-user-report-filter.md)
 - [Filtre og fremhævning i rapporter](power-bi-reports-filters-and-highlighting.md)
+- [Forskellige typer af filtre i Power BI](power-bi-report-filter-types.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

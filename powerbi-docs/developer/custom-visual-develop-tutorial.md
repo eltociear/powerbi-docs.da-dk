@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: e7afdddc6d87b9494fa9264bdd253a3f93de6192
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d21a0ab1bada981a563e04ba26815f661664f51a
+ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61383231"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67161229"
 ---
 # <a name="tutorial-developing-a-power-bi-custom-visual"></a>Selvstudium: Udvikling af en brugerdefineret visualisering i Power BI
 
-Vi gør det nemt for udviklere at tilføje brugerdefinerede visuals i Power BI, som kan bruges i dashboards og rapporter. For at hjælpe dig med at komme i gang, har vi udgivet koden til alle vores visualiseringer på GitHub.
+Vi gør det nemt for udviklere at tilføje brugerdefinerede visuals i Power BI, som kan bruges i dashboards og rapporter. For at hjælpe dig i gang har vi udgivet koden til alle vores visualiseringer på GitHub.
 
 Ud over visualiseringssystemet stiller vi vores testpakke og -værktøjer til rådighed, så vores community kan udarbejde visuals i høj kvalitet til Power BI.
 
@@ -73,21 +73,15 @@ Nu skal du installere pakken **pbiviz**.
 
 #### <a name="windows"></a>Windows
 
-1. Du skal køre følgende kommando for at oprette et certifikat.
-
-    ```powershell
-    pbiviz --create-cert
-    ```
-
-  Den returnerer et resultat, der opretter et *adgangsudtryk*. I dette tilfælde er *adgangsudtrykket* **_15105661266553327_** .
-
-  ![Certifikat oprettet via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
-
-2. Nu skal vi installere certifikatet. Kør følgende kommando for at installere certifikatet.
+1. Du skal køre følgende kommando for at oprette og installere et certifikat.
 
     ```powershell
     pbiviz --install-cert
     ```
+
+  Den returnerer et resultat, der opretter et *adgangsudtryk*. I dette tilfælde er *adgangsudtrykket* **_15105661266553327_** , og det starter guiden Import.
+
+  ![Certifikat oprettet via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
 
 3. I guiden til import af certifikatet skal du bekræfte, at lagerplaceringen er angivet til den aktuelle bruger. Vælg derefter *Næste*.
 
@@ -559,14 +553,14 @@ Rediger filen **capabilities.json** for at definere datarollen og tilknytningern
 
     Denne sætning tildeler *dataView* til en variabel for at give nem adgang og erklærer, at variablen skal referere til objektet *dataView*.
 
-2. I den **opdatere** metode, erstatter **.text("Value")** med følgende.
+2. I **opdaterings**metoden skal du erstatte **.text("Value")** med følgende.
 
     ```typescript
     .text(dataView.single.value as string)
     ```
     ![Erstat textValue](media/custom-visual-develop-tutorial/text-value-replace.png)
 
-3. I den **opdatere** metode, erstatter **.text("Label")** med følgende.
+3. I **opdaterings**metoden skal du erstatte **.text("Label")** med følgende.
 
     ```typescript
     .text(dataView.metadata.columns[0].displayName)
