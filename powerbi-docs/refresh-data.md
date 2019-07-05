@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 2760731e7be1216c4ec8755884467eca9d7eb4c4
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: 0013080f3640c4c4d3d717104dcc069ccce3923a
+ms.sourcegitcommit: 952afd75fe8ddcf9350bd9aae88e1a4c438d0f3e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418793"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67561802"
 ---
 # <a name="data-refresh-in-power-bi"></a>Opdatering af data i Power BI
 
@@ -177,6 +177,8 @@ Microsoft anbefaler at bruge en datagateway til virksomheder frem for en personl
 Det er forholdsvist ligetil at oprette forbindelse mellem et datasæt og en gateway til virksomheder, hvis du er gatewayadministrator. Med administratorrettigheder kan du straks opdatere gatewayen og tilføje manglende datakilder, hvis det er nødvendigt. Du kan faktisk føje en manglende datakilde til din gateway direkte fra siden med indstillinger for datasæt. Udvid til/fra-knappen for at få vist datakilderne, og vælg linket **Føj til gateway**, som vist på følgende skærmbillede. Hvis du ikke er gatewayadministrator, skal du derimod bruge de viste kontaktoplysninger til at sende en anmodning til en gatewayadministrator for at få tilføjet den påkrævede datakildedefinition.
 
 ![Føj til gateway](media/refresh-data/add-to-gateway.png)
+
+Sørg for at knytte den korrekte datakildedefinition til datakilden. Som ovenstående skærmbillede illustrerer, kan gatewayadministratorer oprette flere definitioner, der hver især har forskellige legitimationsoplysninger, i en enkelt gateway, som opretter forbindelse til den samme datakilde. I det viste eksempel ville en datasætejer i salgsafdelingen vælge datakildedefinitionen AdventureWorksProducts-Sales, mens en datasætejer i supportafdelingen ville knytte datasættet til datakildedefinitionen AdventureWorksProducts-Support. Hvis navnene på datakildedefinitionerne ikke er intuitive, kan du kontakte gatewayadministratoren for at få afklaret, hvilken definition du skal vælge.
 
 > [!NOTE]
 > Et datasæt kan kun bruge en enkelt gatewayforbindelse. Det er med andre ord ikke muligt at få adgang til datakilder i det lokale miljø på tværs af flere gatewayforbindelser. Derfor skal du føje alle påkrævede datakildedefinitioner til den samme gateway.

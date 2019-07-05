@@ -683,9 +683,9 @@
               href: service-machine-learning-automated.md
         - name: Sideinddelte rapporteri på Power BI
           items:
-            - name: Få vist en sideinddelt rapport (eksempelvisning)
+            - name: Se en sideinddelt rapport
               href: paginated-reports-view-power-bi-service.md
-            - name: Interager med parametre (eksempelvisning)
+            - name: Interager med parametre
               href: paginated-reports-view-parameters.md
             - name: Tilmeld dig selv eller andre
               href: paginated-reports-subscriptions.md

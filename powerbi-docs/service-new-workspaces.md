@@ -1,5 +1,5 @@
 ---
-title: Organiser arbejde i nye arbejdsområder – Power BI
+title: Organiser arbejde i nye arbejdsområder i Power BI
 description: Få mere at vide om de nye arbejdsområder, der er samlinger af dashboards og rapporter, som er udviklet til at levere vigtige målepunkter for din organisation.
 author: maggiesMSFT
 manager: kfile
@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/18/2019
+ms.date: 06/26/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 419cd2137b8924f153009843d6f60db594219059
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.openlocfilehash: a3982716ac2eb64f7512ba6ef606af299f1c5f46
+ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345529"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67418673"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser arbejde i nye arbejdsområder i Power BI
 
@@ -135,7 +135,7 @@ Nogle funktioner fungerer anderledes i forhold til aktuelle arbejdsområder i de
 - Medlemmer kan eller kan ikke dele igen: erstattet af rollen som bidragyder
 - Skrivebeskyttede arbejdsområder: I stedet for at tildele brugere skrivebeskyttet adgang til et arbejdsområde skal du tildele brugere Fremviser-rollen, hvilket gør det muligt for lignende skrivebeskyttet adgang til indholdet i et arbejdsområde.
 - Brugere med en Pro-licens kan få adgang til arbejdsområdet, hvis det er i en Power BI Premium-kapacitet, også selvom brugerne kun har Fremviser-rollen.
-- Hvis du vil tillade brugere med rollen som Fremviser at eksportere data, skal du sikre, at de har tilladelse til at oprette for datasættene i arbejdsområdet.
+- Hvis du vil tillade brugere med rollen som Fremviser at eksportere data, skal du sikre, at de har tilladelse til at oprette for datasættene i arbejdsområdet. Læs mere om [tilladelsen Opret for datasæt](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 - Knappen **Forlad arbejdsområde** findes ikke.
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
