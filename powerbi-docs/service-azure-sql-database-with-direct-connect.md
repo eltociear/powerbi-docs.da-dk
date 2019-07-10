@@ -9,14 +9,14 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.custom: ''
-ms.date: 06/20/2018
+ms.date: 06/13/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 5365c076b75d0989df8db15c1dc16f4e11bc3f09
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
+ms.openlocfilehash: 2363b9da3ac46ce9fd49f19a00950a4a3cf23502
+ms.sourcegitcommit: 30ee81f8c54fd7e4d47d7e3ffcf0e6c3bb68f6c2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448357"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468133"
 ---
 # <a name="azure-sql-database-with-directquery"></a>Azure SQL Database med DirectQuery
 
@@ -26,12 +26,12 @@ Med DirectQuery sendes forespørgsler tilbage til din Azure SQL Database, mens d
 
 **Bemærk!**
 
-* Angiv det fuldt gyldige servernavn, når du opretter forbindelse (se yderligere oplysninger nedenfor)
-* Kontrollér, at firewallreglerne for databasen er konfigureret til at "[Tillade adgang til Azure-tjenester](https://msdn.microsoft.com/library/azure/ee621782.aspx)".
-* Hver handling, f.eks. markering af en kolonne eller tilføjelse af et filter, vil sende en forespørgsel tilbage til databasen
-* Felterne opdateres ca. hver time (opdateringen skal ikke planlægges). Dette kan tilpasses i Avancerede indstillinger, når du opretter forbindelse.
-* Spørgsmål og svar er ikke tilgængelige for DirectQuery-datasæt
-* Skemaændringer hentes ikke automatisk
+* Angiv det fuldt gyldige servernavn, når du opretter forbindelse (se yderligere oplysninger nedenfor).
+* Kontrollér, at firewallreglerne for databasen er konfigureret til "[Tillad adgang til Azure-tjenester](https://msdn.microsoft.com/library/azure/ee621782.aspx)".
+* Hver handling, f.eks. markering af en kolonne eller tilføjelse af et filter, vil sende en forespørgsel tilbage til databasen.
+* Felterne opdateres ca. hver time (opdateringen skal ikke planlægges). Du kan tilpasse, hvor ofte der skal opdateres, i Avancerede indstillinger, når du opretter forbindelse.
+* Spørgsmål og svar er ikke tilgængelig for DirectQuery-datasæt.
+* Skemaændringer hentes ikke automatisk.
 
 Disse begrænsninger og noter kan ændres, efterhånden som vi fortsat forbedrer oplevelserne. Trinnene til at oprette forbindelse er beskrevet nedenfor.
 
@@ -40,11 +40,11 @@ Disse begrænsninger og noter kan ændres, efterhånden som vi fortsat forbedrer
 
 ## <a name="power-bi-desktop-and-directquery"></a>Power BI Desktop og DirectQuery
 
-For at kunne oprette forbindelse til Azure SQL Database med DirectQuery skal du bruge Power BI Desktop. Denne metode sikrer yderligere fleksibilitet og funktioner. De rapporter, der oprettes ved hjælp af Power BI Desktop, kan derefter publiceres til Power BI-tjenesten. Du kan få mere at vide om at oprette forbindelse til [Azure SQL Database med DirectQuery](desktop-use-directquery.md) i Power BI Desktop.
+Hvis du vil oprette forbindelse til Azure SQL Database med DirectQuery, skal du bruge Power BI Desktop. Denne metode sikrer yderligere fleksibilitet og funktioner. De rapporter, der oprettes ved hjælp af Power BI Desktop, kan derefter publiceres til Power BI-tjenesten. Du kan få mere at vide om at oprette forbindelse til [Azure SQL Database med DirectQuery](desktop-use-directquery.md) i Power BI Desktop.
 
-## <a name="finding-parameter-values"></a>Find parameterværdier
+## <a name="find-parameter-values"></a>Find parameterværdier
 
-Dit fulde gyldige servernavn og databasenavn kan findes på Azure-portalen.
+Du kan finde dit fulde gyldige servernavn og databasenavn på Azure Portal.
 
 ![Ny opdatering til Azure Portal](media/service-azure-sql-database-with-direct-connect/azureportnew_update.png)
 

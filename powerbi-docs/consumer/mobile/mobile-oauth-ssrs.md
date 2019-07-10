@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2018
-ms.openlocfilehash: ae56a27393ba476828ff87d7f458815318ea79c1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 9673217cfd7c5af70bdd293e8d5df51e5e7dee07
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770360"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559087"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Brug OAuth til at oprette forbindelse til Power BI-rapportserver og SSRS
 
@@ -25,7 +25,7 @@ Få mere at vide om, hvordan du konfigurerer dit miljø til at understøtte OAut
 Du kan bruge OAuth til at oprette forbindelse til Power BI-rapportserver og Reporting Services for at få vist mobilrapporter eller KPI'er. Windows Server 2016 indeholder forbedringer til rollen Web Application Proxy (WAP) for at tillade denne type godkendelse.
 
    > [!NOTE]
-   > Få vist Power BI-rapporter, der hostes i Power BI Report Server understøttes ved hjælp af WAP til at godkende i øjeblikket kun i iOS-app. Android-app er officielt ikke understøttes på nuværende tidspunkt.
+   > Visning af Power BI-rapporter, der hostes på Power BI-rapportserver ved hjælp af WAP-godkendelse, understøttes nu til iOS- og Android-apps.
 
 ## <a name="requirements"></a>Krav
 
@@ -63,7 +63,7 @@ Du kan finde oplysninger om, hvordan du konfigurerer det korrekte hovednavn for 
 
 ### <a name="enabling-negotiate-authentication"></a>Aktivering af forhandling af godkendelse
 
-Hvis du vil aktivere, at en rapportserver kan bruge Kerberos-godkendelse, skal du konfigurere, at godkendelsestypen for rapportserveren er RSWindowsNegotiate. Det gør du vha. rsreportserver.config-filen.
+Hvis du vil aktivere, at en rapportserver kan bruge Kerberos-godkendelse, skal du konfigurere, at godkendelsestypen for rapportserveren er RSWindowsNegotiate. Du gør dette i filen rsreportserver.config.
 
 ```xml
 <AuthenticationTypes>  
@@ -81,7 +81,7 @@ Du skal konfigurere ADFS på en Windows-2016-server i dit miljø. Det gør du vi
 
 ### <a name="create-an-application-group"></a>Opret en programgruppe
 
-På ADFS Management-skærmbilledet opretter du en programgruppe til Reporting Services, som omfatter oplysninger til Power BI-mobilapps.
+På ADFS Management-skærmbilledet opretter du en programgruppe til Reporting Services, som indeholder oplysninger til Power BI-mobilapps.
 
 Du kan oprette programgruppen vha. følgende trin.
 
@@ -118,7 +118,7 @@ Du kan oprette programgruppen vha. følgende trin.
    > [!NOTE]
    > I denne URL-adresse er der forskel på store og små bogstaver!
 
-   *https://< URL-adresse til report server > / rapporter*
+   *https://< URL-adresse til rapportserver >/reports*
 
    ![ADFS Application Group Wizard 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Vælg **Næste**.
@@ -239,7 +239,7 @@ Du kan aktivere multifaktorgodkendelse for at aktivere yderligere sikkerhed for 
 
 ## <a name="troubleshooting"></a>Fejlfinding
 
-### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-please-verify-server-configuration"></a>Du får vist fejlen Det lykkedes ikke at logge på SSRS-serveren. Kontrollér serverkonfigurationen.
+### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-verify-server-configuration"></a>Du får vist fejlen Det lykkedes ikke at logge på SSRS-serveren. Kontrollér serverkonfigurationen.
 
 ![](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 

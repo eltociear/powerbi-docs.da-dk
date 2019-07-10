@@ -3,206 +3,205 @@ title: 'Selvstudium: Opret forbindelse til lokale data i SQL Server'
 description: Få mere at vide om, hvordan du kan bruge SQL Server som gatewaydatakilde, herunder hvordan du opdaterer data.
 author: mgblythe
 manager: kfile
-ms.reviewer: ''
+ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: tutorial
 ms.date: 05/03/2018
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 96ea117ff0ba28a158eb9f0eaf748d66b25f90d5
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: d73d2ea5e21196d4856d2906805e6dec1f7e60b7
+ms.sourcegitcommit: 30ee81f8c54fd7e4d47d7e3ffcf0e6c3bb68f6c2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54278923"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468353"
 ---
-# <a name="tutorial-connect-to-on-premises-data-in-sql-server"></a>Selvstudium: Opret forbindelse til lokale data i SQL Server
+# <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Opdater data fra en lokal SQL Server-database
 
-En gateway i det lokale miljø er software, som du installerer på et lokalt netværk. Det gør det nemmere at få adgang til data på dette netværk. I dette selvstudium opretter du en rapport i Power BI Desktop, der er baseret på eksempeldata, som er importeret fra SQL Server. Du udgiver derefter rapporten i Power BI-tjenesten og konfigurerer en gateway, så tjenesten har adgang til dataene i det lokale miljø. Denne adgang betyder, at tjenesten kan opdatere dataene for at holde rapporten opdateret.
+I dette selvstudium kan udforske, hvordan du opdaterer et Power BI-datasæt fra en relationsdatabase, der findes i det lokale miljø på dit lokale netværk. Dette selvstudium bruger et specifikt eksempel på en SQL Server-database, som Power BI skal have adgang til via en datagateway i det lokale miljø.
 
-I dette selvstudium lærer du, hvordan du kan:
+I dette selvstudium kan du udføre følgende trin:
+
 > [!div class="checklist"]
-> * Oprette en rapport ud fra data i SQL Server
-> * Udgive rapporten i Power BI-tjenesten
-> * Tilføje SQL Server som en datakilde til gatewayen
-> * Opdatere dataene i rapporten
-
-Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
-
+> * Opret og publicer en Power BI Desktop-fil (.pbix), der importerer data fra en lokal SQL Server-database.
+> * Konfigurer indstillinger for datakilde og datasæt i Power BI til SQL Server-forbindelsen via en datagateway.
+> * Konfigurer en tidsplan for opdatering at sikre, at dit datasæt i Power BI har de nyeste data.
+> * Udfør en opdatering efter behov af datasættet.
+> * Gennemse opdateringshistorikken for at analysere resultaterne af tidligere opdateringscyklusser.
+> * Fjern ressourcer ved at slette de artefakter, der er oprettet i dette selvstudium.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-* [Installér Power BI Desktop](https://powerbi.microsoft.com/desktop/)
-* [Installér SQL Server](https://docs.microsoft.com/sql/database-engine/install-windows/install-sql-server) på en lokal computer 
-* [Installér en datagateway i det lokale miljø](service-gateway-install.md) på den samme lokale computer (i produktion vil det typisk være en anden computer)
+- Hvis du ikke allerede har en [gratis prøveversion af Power BI](https://app.powerbi.com/signupredirect?pbi_source=web), skal du tilmelde dig for at få en, før du begynder.
+- [Installér Power BI Desktop](https://powerbi.microsoft.com/desktop/) på en lokal computer.
+- [Installér SQL Server](/sql/database-engine/install-windows/install-sql-server) på en lokal computer, og gendan [eksempeldatabasen fra en sikkerhedskopi]((https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak)). Du kan finde flere oplysninger om AdventureWorks under [Installation og konfiguration af AdventureWorks](/sql/samples/adventureworks-install-configure).
+- [Installér en datagateway i det lokale miljø](service-gateway-install.md) på den samme lokale computer som SQL Server (i produktionsmiljøet vil det typisk være en anden computer).
 
+> [!NOTE]
+> Hvis du er ikke gatewayadministrator, og du ikke selv vil installere en gateway, skal du kontakte en gatewayadministrator i din organisation. De kan oprette den påkrævede datakildedefinition til at forbinde dit datasæt med din SQL Server-database.
 
-## <a name="set-up-sample-data"></a>Konfigurer eksempeldata
+## <a name="create-and-publish-a-power-bi-desktop-file"></a>Opret og udgiv en Power BI Desktop-fil
 
-Du starter ved at føje eksempeldata til SQL Server, så du kan bruge disse data i resten af selvstudiet.
+Benyt følgende procedure til at oprette en grundlæggende Power BI-rapport ved hjælp af AdventureWorksDW-eksempeldatabasen. Udgiv rapporten til Power BI-tjenesten, så du får et datasæt i Power BI, som du derefter kan konfigurere og opdatere i de efterfølgende trin.
 
-1. I SSMS (SQL Server Management Studio) skal du oprette forbindelse til din instans af SQL Server og oprette en testdatabase.
+1. I Power BI Desktop på fanen **Startside** skal du vælge **Hent data** \> **SQL Server**.
 
-    ```sql
-    CREATE DATABASE TestGatewayDocs
-    ```
+2. I dialogboksen **SQL Server-database** skal du angive navnet på din **Server** og **Database (valgfrit)** . Sørg for, at **Dataforbindelsestilstand** er **Import**, og vælg derefter **OK**.
 
-2. I den database, du har oprettet, skal du tilføje en tabel og indsætte data.
+    ![SQL Server-database](./media/service-gateway-sql-tutorial/sql-server-database.png)
 
-    ```sql
-    USE TestGatewayDocs
+3. Kontrollér dine **legitimationsoplysninger**, og vælg derefter **Opret forbindelse**.
 
-    CREATE TABLE Product (
-        SalesDate DATE,
-        Category  VARCHAR(100),
-        Product VARCHAR(100),
-        Sales MONEY,
-        Quantity INT
-    )
+    > [!NOTE]
+    > Hvis du ikke kan opnå godkendelse, skal du sikre dig, at du vælger den korrekte godkendelsesmetode og bruger en konto med databaseadgang. I testmiljøer kan du bruge Databasegodkendelse med eksplicit brugernavn og adgangskode. I produktionsmiljøer bruger du typisk Windows-godkendelse. Se [Fejlfinding i forbindelse med opdatering](refresh-troubleshooting-refresh-scenarios.md), og kontakt databaseadministratoren for at få yderligere hjælp.
 
-    INSERT INTO Product VALUES('2018-05-05','Accessories','Carrying Case',9924.60,68)
-    INSERT INTO Product VALUES('2018-05-06','Accessories','Tripod',1350.00,18)
-    INSERT INTO Product VALUES('2018-05-11','Accessories','Lens Adapter',1147.50,17)
-    INSERT INTO Product VALUES('2018-05-05','Accessories','Mini Battery Charger',1056.00,44)
-    INSERT INTO Product VALUES('2018-05-06','Accessories','Telephoto Conversion Lens',1380.00,18)
-    INSERT INTO Product VALUES('2018-05-06','Accessories','USB Cable',780.00,26)
-    INSERT INTO Product VALUES('2018-05-08','Accessories','Budget Movie-Maker',3798.00,9)
-    INSERT INTO Product VALUES('2018-05-09','Digital video recorder','Business Videographer',10400.00,13)
-    INSERT INTO Product VALUES('2018-05-10','Digital video recorder','Social Videographer',3000.00,60)
-    INSERT INTO Product VALUES('2018-05-11','Digital','Advanced Digital',7234.50,39)
-    INSERT INTO Product VALUES('2018-05-07','Digital','Compact Digital',10836.00,84)
-    INSERT INTO Product VALUES('2018-05-08','Digital','Consumer Digital',2550.00,17)
-    INSERT INTO Product VALUES('2018-05-05','Digital','Slim Digital',8357.80,44)
-    INSERT INTO Product VALUES('2018-05-09','Digital SLR','SLR Camera 35mm',18530.00,34)
-    INSERT INTO Product VALUES('2018-05-07','Digital SLR','SLR Camera',26576.00,88)
-    ```
+1. Hvis dialogboksen **Understøttelse af kryptering** vises, skal du vælge **OK**.
 
-3. Vælg dataene fra tabellen for at kontrollere dem.
+2. I dialogboksen **Navigator** skal du vælge tabellen **DimProduct** og derefter vælge **Indlæs**.
 
-    ```sql
-    SELECT * FROM Product
-    ```
+    ![Datakildenavigator](./media/service-gateway-sql-tutorial/data-source-navigator.png)
 
-    ![Forespørgselsresultater](media/service-gateway-sql-tutorial/query-results.png)
+3. I ruden **Visualiseringer** i Power BI Desktop-visningen **Rapport** skal du vælge **Stablet søjlediagram**.
 
+    ![Stablet søjlediagram](./media/service-gateway-sql-tutorial/stacked-column-chart.png)
 
-## <a name="build-and-publish-a-report"></a>Opret og udgiv en rapport
+4. Mens søjlediagrammet er markeret på rapportlærredet, skal du vælge felterne **EnglishProductName** og **ListPrice** i ruden **Felter**.
 
-Nu, hvor du har eksempeldata, du kan arbejde med, skal du oprette forbindelse til SQL Server i Power BI Desktop og oprette en rapport, der er baseret på disse data. Derefter udgiver du rapporten i Power BI-tjenesten.
+    ![Ruden Felter](./media/service-gateway-sql-tutorial/fields-pane.png)
 
-1. Under fanen **Hjem** i Power BI Desktop skal du vælge **Hent data** > **SQL Server**.
+5. Træk **EndDate** til **Filtre på rapportniveau**, og markér kun afkrydsningsfeltet for **(Tom)** under **Grundlæggende filtrering**.
 
-2. Under **Server** skal du angive navnet på serveren, og under **Database** skal du skrive "TestGatewayDocs". Vælg **OK**. 
-
-    ![Angiv server og database](media/service-gateway-sql-tutorial/server-database.png)
-
-3. Kontrollér dine legitimationsoplysninger, og vælg derefter **Opret forbindelse**.
-
-4. Under **Navigator** skal du vælge tabellen **Produkt** og derefter vælge **Indlæs**.
-
-    ![Vælg produkttabel](media/service-gateway-sql-tutorial/select-product-table.png)
-
-5. I ruden **Visualiseringer** i Power BI Desktop-visningen **Rapport** skal du vælge **Stablet søjlediagram**.
-
-    ![Stablet søjlediagram](media/service-gateway-sql-tutorial/column-chart.png)    
-
-6. Mens søjlediagrammet er markeret på rapportlærredet, skal du vælge felterne **Produkt** og **Salg** i ruden **Felter**.  
-
-    ![Vælg felter](media/service-gateway-sql-tutorial/select-fields.png)
+    ![Filtre på rapportniveau](./media/service-gateway-sql-tutorial/report-level-filters.png)
 
     Diagrammet bør nu se ud som i det følgende.
 
-    ![Vælg produkttabel](media/service-gateway-sql-tutorial/finished-chart.png)
+    ![Færdigt søjlediagram](./media/service-gateway-sql-tutorial/finished-column-chart.png)
 
-    Bemærk, at **SLR Camera** er den vare, der i øjeblikket sælger bedst. Dette ændrer sig, når du opdaterer data og opdaterer rapporten senere i dette selvstudium.
+    Bemærk, at de fem **Road-250**-produkter er angivet med den højeste listepris. Dette ændrer sig, når du opdaterer dataene og opdaterer rapporten senere i dette selvstudium.
 
-7. Gem rapporten med navnet "TestGatewayDocs.pbix".
+6. Gem rapporten med navnet "AdventureWorksProducts.pbix".
 
-8. Under fanen **Hjem** skal du vælge **Udgiv** > **Mit arbejdsområde** > **Vælg**. Log på Power BI-tjenesten, hvis du bliver bedt om det. 
+7. På fanen **Startside** skal du vælge **Publicer** \> **Mit arbejdsområde** \> **Vælg**. Log på Power BI-tjenesten, hvis du bliver bedt om det.
 
-    ![Udgiv rapport](media/service-gateway-sql-tutorial/publish-report.png)
+8. På skærmen **Udført** skal du vælge **Åbn 'AdventureWorksProducts.pbix' i Power BI**.
 
-9. På skærmen **Lykkedes** skal du vælge **Åbn 'TestGatewayDocs.pbix' i Power BI**.
+    [Publicer i Power BI](./media/service-gateway-sql-tutorial/publish-to-power-bi.png)
 
+## <a name="connect-a-dataset-to-a-sql-server-database"></a>Forbind et datasæt til en SQL Server-database
 
-## <a name="add-sql-server-as-a-gateway-data-source"></a>Tilføj SQL Server som en datakilde til gatewayen
+Du har oprettet forbindelse direkte til din lokale SQL Server-database i Power BI Desktop, men Power BI-tjenesten kræver en datagateway for at kunne fungere som bro mellem cloudmiljøet og dit netværk i det lokale miljø. Følg disse trin for at tilføje din lokale SQL Server-database som datakilde til en gateway og derefter forbinde dit datasæt til denne datakilde.
 
-I Power BI Desktop opretter du direkte forbindelse til SQL Server, men Power BI-tjenesten kræver en gateway for at fungere som bro. Nu kan du tilføje din instans af SQL Server som datakilde for den gateway, som du oprettede i en tidligere artikel (angivet under [Forudsætninger](#prerequisites)). 
+1. Log på Power BI. Vælg tandhjulsikonet i øverste højre hjørne, og vælg derefter **Indstillinger**.
 
-1. I øverste højre hjørne af Power BI-tjenesten skal du vælge tandhjulsikonet ![tandhjulsikonet for indstillinger](media/service-gateway-sql-tutorial/icon-gear.png) > **Administrer gateways**.
+    ![Indstillinger for Power BI](./media/service-gateway-sql-tutorial/power-bi-settings.png)
 
-    ![Administrer gateways](media/service-gateway-sql-tutorial/manage-gateways.png)
+2. På fanen **Datasæt** skal du vælge datasættet **AdventureWorksProducts**, så du kan oprette forbindelse til din SQL Server-database i det lokale miljø via en datagateway.
 
-2. Vælg **Tilføj datakilde**, og angiv "test-sql-datakilde" for **Navn på datakilde**.
+3. Udvid **Gatewayforbindelse**, og bekræft, at der er angivet mindst én gateway. Hvis du ikke har en gateway, kan du gå tilbage til afsnittet [Forudsætninger](#prerequisites) tidligere i dette selvstudium for at få et link til produktdokumentationen, der beskriver, hvordan du installerer og konfigurerer en gateway.
 
-    ![Tilføj datakilde](media/service-gateway-sql-tutorial/add-data-source.png)
+    ![Gatewayforbindelse](./media/service-gateway-sql-tutorial/gateway-connection.png)
 
-3. For **Datakildetype** skal du vælge **SQL Server**, og angiv derefter andre værdier som vist.
+4. Under **Handlinger** skal du udvide til/fra-knappen for at få vist datakilderne og derefter vælge linket **Føj til gateway**.
 
-    ![Angiv datakildeindstillinger](media/service-gateway-sql-tutorial/data-source-settings.png)
+    ![Tilføj en datakilde til gatewayen](./media/service-gateway-sql-tutorial/add-data-source-gateway.png)
 
+    > [!NOTE]
+    > Hvis du er ikke gatewayadministrator, og du ikke selv vil installere en gateway, skal du kontakte en gatewayadministrator i din organisation. De kan oprette den påkrævede datakildedefinition til at forbinde dit datasæt med din SQL Server-database.
 
-   |          Indstilling           |                                               Værdi                                                |
-   |---------------------------|----------------------------------------------------------------------------------------------------|
-   |   **Navn på datakilde**    |                                          test-sql-source                                           |
-   |   **Datakildetype**    |                                             SQL Server                                             |
-   |        **Server**         | Navnet på din instans af SQL Server (skal være identisk med det, du har angivet i Power BI Desktop) |
-   |       **Database**        |                                          TestGatewayDocs                                           |
-   | **Godkendelsesmetode** |                                              Windows                                               |
-   |       **Brugernavn**        |             Den konto, f.eks. michael@contoso.com, du bruger til at oprette forbindelse til SQL Server             |
-   |       **Adgangskode**        |                   Adgangskoden til den konto, du bruger til at oprette forbindelse til SQL Server                    |
+5. På administrationssiden **Gateways** på fanen **Indstillinger for datakilde** skal du angive og kontrollere følgende oplysninger og vælge **Tilføj**.
 
+    | Indstilling | Værdi |
+    | --- | --- |
+    | Navn på datakilde | AdventureWorksProducts |
+    | Datakildetype | SQL Server |
+    | Server | Navnet på din SQL Server-forekomst, f.eks. SQLServer01 (det skal være identisk med det, du har angivet i Power BI Desktop). |
+    | Database | Navnet på din SQL Server-database, f.eks. AdventureWorksDW (det skal være identisk med det, du har angivet i Power BI Desktop). |
+    | Godkendelsesmetode | Windows eller Basic (typisk Windows). |
+    | Brugernavn | Den brugerkonto, du bruger til at oprette forbindelse til SQL Server. |
+    | Adgangskode | Adgangskoden til den konto, du bruger til at oprette forbindelse til SQL Server. |
 
-4. Vælg **Tilføj** Du får vist *Forbindelsen er oprettet*, når processen lykkes.
+    ![Indstillinger for datakilde](./media/service-gateway-sql-tutorial/data-source-settings.png)
 
-    ![Forbindelsen er oprettet](media/service-gateway-sql-tutorial/connection-successful.png)
+6. På fanen **Datasæt** skal du udvide sektionen **Gatewayforbindelse** igen. Vælg den datagateway, du har konfigureret, og som viser en **Status**, om at den kører på den maskine, hvor du har installeret den, og vælg **Anvend**.
 
-    Du kan nu bruge denne datakilde til at inkludere data fra SQL Server i dine Power BI-dashboards og -rapporter.
+    ![Opdater gatewayforbindelse](./media/service-gateway-sql-tutorial/update-gateway-connection.png)
 
+## <a name="configure-a-refresh-schedule"></a>Konfigurer tidsplan for opdatering
 
-## <a name="configure-and-use-data-refresh"></a>Konfigurer og brug dataopdatering
+Nu, hvor du har forbundet dit datasæt i Power BI til din SQL Server-database i det lokale miljø via en datagateway, skal du følge disse trin for at konfigurere en tidsplan for opdatering. Opdatering af datasættet efter en tidsplan hjælper med at sikre, at dine rapporter og dashboards indeholder de nyeste data.
 
-Du har en rapport, der er udgivet i Power BI-tjenesten, og SQL Server-datakilden er konfigureret. Når det er på plads, skal du nu foretage en ændring i tabellen Produkt, og denne ændring passerer gennem gatewayen til den udgivne rapport. Du kan også konfigurere en planlagt opdatering for at håndtere fremtidige ændringer.
+1. I navigationsruden til venstre skal du vælge **Mit arbejdsområde** \> **Datasæt**. Vælg ellipsen ( **. . .** ) for datasættet **AdventureWorksProducts**, og vælg derefter **Planlæg opdatering**.
 
-1. Opdater data i tabellen Produkt i SSMS (SQL Server Management Studio).
+    > [!NOTE]
+    > Sørg for at vælge ellipsen for datasættet **AdventureWorksProducts** og ikke ellipsen for rapporten med det samme navn. Genvejsmenuen for rapporten **AdventureWorksProducts** indeholder ikke indstillingen **Planlæg opdatering**.
 
-    ```sql
-    UPDATE Product
-    SET Sales = 32508, Quantity = 252
-    WHERE Product='Compact Digital'     
+2. I sektionen **Planlagt opdatering** under **Hold dine data opdateret** skal du slå opdateringen **Til**.
 
-    ```
+3. Vælg en passende **Opdateringshyppighed**, ( **Dagligt** i dette eksempel), og derefter under **Klokkeslæt** skal du vælge **Tilføj et andet tidspunkt** for at angive det ønskede opdateringstidspunkt (6:30 AM og PM i dette eksempel).
 
-2. I venstre navigationsrude i Power BI-tjenesten skal du vælge **Mit arbejdsområde**.
+    ![Konfigurer planlagt opdatering](./media/service-gateway-sql-tutorial/configure-scheduled-refresh.png)
 
-3. Under **Datasæt** skal du vælge **flere** (**. . .**) > **Opdater nu** for datasættet **TestGatewayDocs**.
+    > [!NOTE]
+    > Du kan konfigurere op til 8 daglige tidspunkter, hvis dit datasæt befinder sig på en delt kapacitet, eller 48 tidspunkter med Power BI Premium.
 
-    ![Opdater nu](media/service-gateway-sql-tutorial/refresh-now.png)
+4. Lad afkrydsningsfeltet **Send meddelelse om mislykket opdatering via mail til mig** forblive markeret, og vælg **Anvend**.
 
-4. Vælg **Mit arbejdsområde** > **Rapporter** > **TestGatewayDocs**. Se, hvordan opdateringen passerede igennem, og nu er det **Compact Digital**, der sælger bedst. 
+## <a name="perform-an-on-demand-refresh"></a>Udfør en opdatering efter behov
 
-    ![Opdaterede data](media/service-gateway-sql-tutorial/updated-data.png)
+Nu, hvor du har konfigureret en tidsplan for opdatering, opdaterer Power BI dit datasæt på det næste planlagte tidspunkt inden for en margen på 15 minutter. Hvis du vil opdatere dataene hurtigere, f.eks. for at teste din gateway og konfigurationen af din datakilde, kan du udføre en opdatering efter behov ved hjælp af indstillingen **Opdater nu** i menuen for datasæt i navigationsruden til venstre. Opdateringer efter behov påvirker ikke det næste planlagte opdateringstidspunkt, men de tæller i forhold til grænsen for antal daglige opdateringer, som er nævnt i foregående sektion.
 
-5. Vælg **Mit arbejdsområde** > **Rapporter** > **TestGatewayDocs**. Vælg **flere** (**. . .**) > **Planlæg opdatering**.
+Du kan simulere en ændring af eksempeldataene for at illustrere dette ved at opdatere tabellen DimProduct i databasen AdventureWorksDW ved hjælp af SSMS (SQL Server Management Studio).
 
-6. Under **Planlæg opdatering** skal du slå opdatering **til** og derefter vælge **Anvend**. Datasættet opdateres dagligt som standard.
+```sql
 
-    ![Planlæg opdatering](media/service-gateway-sql-tutorial/schedule-refresh.png)
+UPDATE [AdventureWorksDW].[dbo].[DimProduct]
+SET ListPrice = 5000
+WHERE EnglishProductName ='Road-250 Red, 58'
+
+```
+
+Følg nu disse trin, så de opdaterede data kan bevæge sig gennem gatewayforbindelsen til datasættet og ind i rapporterne i Power BI.
+
+1. I venstre navigationsrude i Power BI-tjenesten skal du vælge og udvide **Mit arbejdsområde**.
+
+2. Under **Datasæt** skal du vælge ellipsen ( **. . .** ) for datasættet **AdventureWorksProducts** og derefter vælge **Opdater nu**.
+
+    ![Opdater nu](./media/service-gateway-sql-tutorial/refresh-now.png)
+
+    Bemærk, at i øverste højre hjørne kan du se, at Power BI forbereder sig til at udføre den anmodede opdatering.
+
+3. Vælg **Mit arbejdsområde \> Rapporter \> AdventureWorksProducts**. Se, hvordan de opdaterede data har bevæget sig gennem systemet, så produktet med den højeste listepris nu er **Road-250 Red, 58**.
+
+    ![Opdateret søjlediagram](./media/service-gateway-sql-tutorial/updated-column-chart.png)
+
+## <a name="review-the-refresh-history"></a>Gennemgå opdateringshistorikken
+
+Det er en god idé at kontrollere resultaterne af tidligere opdateringscyklusser med jævne mellemrum i opdateringshistorikken. Måske var databasens legitimationsoplysninger udløbet, eller den valgte gateway var offline på tidspunktet for den planlagte opdatering. Følg disse trin for at se opdateringshistorikken og undersøge, om der er problemer.
+
+1. Vælg tandhjulsikonet i øverste højre hjørne af Power BI-grænsefladen, og vælg derefter **Indstillinger**.
+
+2. Skift til **Datasæt**, og vælg det datasæt, du vil undersøge, f.eks **AdventureWorksProducts**.
+
+3. Vælg linket **Opdateringshistorik** for at åbne dialogboksen **Opdateringshistorik**.
+
+    ![Linket Opdateringshistorik](./media/service-gateway-sql-tutorial/refresh-history-link.png)
+
+4. På fanen **Planlagt** kan du se tidligere planlagte opdateringer og opdateringer efter behov, der vises med klokkeslæt for **Start** og **Slut**, og en **Status** som **Fuldført**, hvilket angiver, at Power BI kunne fuldføre opdateringen uden problemer. Hvis en opdatering mislykkedes, kan du se en fejlmeddelelse og undersøge de nærmere oplysninger om fejlen.
+
+    ![Detaljerede oplysninger i Opdateringshistorik](./media/service-gateway-sql-tutorial/refresh-history-details.png)
+
+    > [!NOTE]
+    > Fanen OneDrive er kun relevant for datasæt, der er forbundet til Power BI Desktop-filer, Excel-projektmapper eller CSV-filer på OneDrive eller SharePoint Online, hvilket er forklaret mere detaljeret i [Opdatering af Data i Power BI](refresh-data.md).
 
 ## <a name="clean-up-resources"></a>Fjern ressourcer
-Hvis du ikke længere vil bruge eksempeldataene, kan du køre `DROP DATABASE TestGatewayDocs` i SSMS (SQL Server Management Studio). Hvis du ikke vil bruge SQL Server-datakilden, kan du [fjerne datakilden](service-gateway-manage.md#remove-a-data-source). 
 
+Hvis du ikke længere vil bruge eksempeldataene, kan du slippe databasen i SSMS (SQL Server Management Studio). Hvis du ikke vil bruge SQL Server-datakilden, kan du fjerne datakilden fra din datagateway. Overvej også at fjerne datagatewayen, hvis du kun har installeret den med henblik på at udføre dette selvstudium. Du bør også slette AdventureWorksProducts-datasættet og AdventureWorksProducts-rapporten, som Power BI oprettede, da du uploadede filen AdventureWorksProducts.pbix.
 
 ## <a name="next-steps"></a>Næste trin
-I dette selvstudium lærte du, hvordan du kan:
-> [!div class="checklist"]
-> * Oprette en rapport ud fra data i SQL Server
-> * Udgive rapporten i Power BI-tjenesten
-> * Tilføje SQL Server som en datakilde til gatewayen
-> * Opdatere dataene i rapporten
 
-Gå videre til den næste artikel for at få mere at vide
-> [!div class="nextstepaction"]
-> [Administrer en Power BI-gateway](service-gateway-manage.md)
+I dette selvstudium har du undersøgt, hvordan du importerer data fra en lokal SQL Server-database til et Power BI-datasæt, og hvordan du opdaterer dette datasæt efter en planlagt tidsplan og efter behov, så du kan holde rapporter og dashboards, der bruger datasættet, opdateret i Power BI. Nu kan du lære mere om at administrere datagateways og datakilder i Power BI. Det kan også være en god idé at læse den konceptuelle artikel om Opdatering af data i Power BI.
 
+- [Administrer en Power BI-gateway i det lokale miljø](service-gateway-manage.md)
+- [Administrer din datakilde – Import/Planlagt opdatering](service-gateway-enterprise-manage-scheduled-refresh.md)
+- [Opdatering af data i Power BI](refresh-data.md)

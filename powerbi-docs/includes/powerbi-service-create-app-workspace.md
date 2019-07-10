@@ -1,12 +1,33 @@
+---
+title: Opret et arbejdsområde – Power BI
+description: Hvordan du opretter et arbejdsområde – inkluderet
+services: powerbi
+author: maggiesMSFT
+ms.service: powerbi
+ms.topic: include
+ms.date: 04/04/2019
+ms.author: maggies
+ms.custom: include file
+ms.openlocfilehash: bbd1f47b2d798e662f84f009b3260a11d39cb23d
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
+ms.contentlocale: da-DK
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67534615"
+---
 1. Start med at oprette arbejdsområdet. Vælg **Arbejdsområder** > **Opret apparbejdsområde**. 
    
      ![Opret apparbejdsområde](media/powerbi-service-create-app-workspace/power-bi-create-app-workspace.png)
    
-    Det er her, du kan placere det indhold, som du og dine kolleger skal samarbejde om.
+    Her placerer du det indhold, som du og dine kolleger skal samarbejde om.
 
-2. Giv arbejdsområdet et navn. Hvis det tilsvarende **Arbejdsområde-id** ikke er tilgængeligt, skal du redigere det og angive et entydigt id.
+2. I banneret **Du opretter et opgraderet arbejdsområde**, skal du klikke på **Vend tilbage til klassisk**. 
+
+    ![Indstillingen Vend tilbage til klassisk arbejdsområde](media/powerbi-service-create-app-workspace/power-bi-revert-classic-workspace.png)
+
+3. Giv arbejdsområdet et navn. Hvis det tilsvarende **Arbejdsområde-id** ikke er tilgængeligt, skal du redigere det og angive et entydigt id.
    
-     Dette vil også være navnet på appen.
+     Appen har samme navn.
    
      ![Navn på arbejdsområdet](media/powerbi-service-create-app-workspace/power-bi-apps-create-workspace-name.png)
 

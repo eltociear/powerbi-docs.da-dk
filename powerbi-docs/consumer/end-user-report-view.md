@@ -8,43 +8,52 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/10/2018
+ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: e2d3bec59078577e2b4d4595c0925753b2cbb53a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d740dd012c6041893a2fa5fc5f1a97a74dcf1566
+ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65608107"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67532526"
 ---
-# <a name="change-the-display-of-a-report-page"></a>Ændre visningen af en rapportside
-Rapporter vises på mange forskellige enheder med forskellig skærmstørrelse og størrelsesforhold.  Ændre måde, en rapportside vises til dine behov.    
+# <a name="change-the-display-of-a-report-page"></a>Skift visningen af en rapportside
 
-![rapporten vises på lærredet](media/end-user-report-view/power-bi-report.png)
+Folk får vist rapporter på mange forskellige enheder med forskellige skærmstørrelser og størrelsesforhold. Rediger, hvordan en rapportside skal vises, så den passer til dine behov.
+
+![Skærmbillede af, hvordan en rapport vises på lærredet.](media/end-user-report-view/power-bi-report.png)
 
 ## <a name="explore-the-view-menu"></a>Udforsk menuen Vis
-Indstillingerne i menuen Vis giver dig fleksibilitet til at få vist rapportsider på størrelsen og bredde, som du vælger.
 
-- Antag, at du får vist en rapport på en lille enhed, og det er svært at se titler og forklaringer.  Vælg **visning** > **faktisk størrelse** at øge størrelsen på siden i rapporten. Brug rullepanelerne til at flytte rundt i rapporten. 
-
-    ![rapporten vises på lærredet med to rullepaneler](media/end-user-report-view/power-bi-actual-size-new.png)
+![Skærmbillede af indstillingerne på rullelisten Vis.](media/end-user-report-view/power-bi-view-menu.png)
 
 
-- En anden mulighed er at passe til din skærmbredde rapporten ved at vælge **Tilpas til bredde**. Dette kan stadig kræve brug af et lodret rullepanel.
+Indstillingerne på menuen **Vis** giver dig fleksibilitet til at få vist rapportsiderne i en størrelse og bredde, du selv vælger:
 
-  ![Rapporten viser ved hjælp af hele lærredet bredde](media/end-user-report-view/power-bi-fit-to-width-new.png)
+- Lad os sige, at du får vist en rapport på en lille enhed, og du har svært ved at se titler og forklaringer.  Vælg **Vis** > **Faktisk størrelse** for gøre rapportsiden større. Brug rullepanelerne til at bevæge dig rundt i rapporten.
 
-- Hvis du ikke ønsker, at alle rullepaneler, men du vil gøre det bedste ud af din skærmens størrelse.  Vælg **Tilpas til siden**.
+    ![Skærmbillede af en rapport, der er angivet til Faktisk størrelse, og hvor de to rullepaneler er fremhævet.](media/end-user-report-view/power-bi-actual-size-new.png)
 
-   ![rapporten vises uden rullepaneler](media/end-user-report-view/power-bi-fit-to-width.png)
+- En anden mulighed er at tilpasse rapporten til din skærmbredde vælge **Tilpas til bredden**. Da det er kun bredden, der tilpasses, og ikke højden, skal du muligvis stadig bruge det lodrette rullepanel.
 
-   
-- Den sidste indstilling **fuld skærm**, viser din rapportside uden menulinjer og overskrifter. Fuld skærm kan være et godt valg for små skærme, hvor oplysningerne er svært at se.  Fuld skærm kan også være et godt valg, når projicerer rapportsider på store skærme for andre at få vist, men ikke arbejde.  
+  ![Skærmbillede af en rapport, der er angivet til Tilpas til bredden, og hvor det lodrette rullepanel er fremhævet.](media/end-user-report-view/power-bi-fit-to-width-new.png)
 
-    ![Rapporten viser fuld skærm](media/end-user-report-view/power-bi-full-screen.png)
+- Hvis du ikke ønsker nogen rullepaneler, men vil udnytte skærmens størrelse bedst muligt, skal du vælge **Tilpas til siden**.
 
-Når du lukker rapporten, dine visningsindstillinger er ikke gemt, men vende tilbage til standardværdien. Hvis det er vigtigt, at du vil gemme disse indstillinger, kan du bruge [bogmærker](end-user-bookmarks.md). 
+   ![Skærmbillede af en rapport, der er angivet til Tilpas til siden.](media/end-user-report-view/power-bi-fit-to-width.png)
+
+- Du kan også vælge mellem fire **Farver med høj kontrast**: Høj kontrast #1, Høj kontrast #2, Høj kontrast sort og Høj kontrast hvid. Dette er en funktion til øget tilgængelighed, som gør det nemmere for svagtseende at se rapporterne:
+
+    ![Skærmbillede af en rapport, der er angivet til Høj kontrast #1. ](media/end-user-report-view/power-bi-high-contrast-1.png)![Skærmbillede af en rapport, der er angivet til Høj kontrast #2.](media/end-user-report-view/power-bi-high-contrast-2.png)
+    ![Skærmbillede af en rapport, der er angivet til Høj kontrast sort. ](media/end-user-report-view/power-bi-high-contrast-black.png)![Skærmbillede af en rapport, der er angivet til Høj kontrast hvid.](media/end-user-report-view/power-bi-high-contrast-white.png)
+
+- Den sidste indstilling er **Fuld skærm**, der viser din rapportside uden menulinjer og overskrifter. Fuld skærm kan være et godt valg til små skærme, hvor det er svært at se detaljerne.  Fuld skærm kan også være nyttigt, når rapportsider skal projiceres op på en stor skærm, så andre kan se dem, og der ikke er behov for at interagere med dem.  
+
+    ![Rapport, der vises i Fuld skærm](media/end-user-report-view/power-bi-full-screen.png)
+
+Når du lukker rapporten, gemmes indstillingerne i **Vis** ikke, men nulstilles til standardværdien. Hvis det er vigtigt for dig at gemme disse indstillinger, kan du bruge [bogmærker](end-user-bookmarks.md).
 
 ## <a name="next-steps"></a>Næste trin
-[Opret rapporter for Cortana](../service-cortana-answer-cards.md)
+
+* [Få en præsentation af ruden Rapportfiltre](end-user-report-filter.md)

@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: d491855a268c57d7958d52b7c1e9e9191c28601e
-ms.sourcegitcommit: 69a0e340b1bff5cbe42293eed5daaccfff16d40a
+ms.openlocfilehash: a6718ed8f582150ad8f13d638308700f9004a354
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67038906"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558979"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -22,6 +22,15 @@ Du kan finde relaterede oplysninger om nyheder under:
 * [Power BI-teamets blog til mobilapps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheder i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheder i Power BI-tjenesten](../../service-whats-new.md)  
+
+## <a name="june-2019"></a>Juni 2019
+
+### <a name="barcode-scanning-is-now-available-in-android"></a>Stregkodescanning er nu tilgængelig på Android
+Nu kan du bruge din Power BI-app på Android (telefon og tablet) til at scanne stregkoder, der er trykt på produkterne eller findes på hylderne på dit lager, for at vise relaterede Power BI-rapporter, der er filtreret efter den scannede værdi. Mere om [filtrering af dine data med stregkoder](mobile-apps-scan-barcode-iphone.md).
+
+### <a name="supporting-pbix-reports-hosted-in-pbi-rs-over-adfs-configuration-ios-android"></a>Understøttende PBIX-rapporter, der hostes i PBI-RS via ADFS-konfiguration (iOS, Android)
+
+Power BI-rapporter (PBIX), der hostes i PBI-RS via ADFS-konfiguration, kan nu også tilgås fra Power BI-mobilapps.
 
 ## <a name="may-2019"></a>Maj 2019
 

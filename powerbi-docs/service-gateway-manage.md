@@ -11,12 +11,12 @@ ms.date: 04/18/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5d9e468ecf3bf1fdc2e138ac06202820bbd96bcf
-ms.sourcegitcommit: 57a12aa42c8549debc60ff1c8e78533dc42e1b86
-ms.translationtype: MT
+ms.openlocfilehash: 8acc0e403c983de79657cd01a7aa7f458bfb01ad
+ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66469774"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559066"
 ---
 # <a name="manage-a-power-bi-on-premises-gateway"></a>Administrer en Power BI-gateway i det lokale miljø
 
@@ -31,6 +31,8 @@ Hvis du lige har installeret en gateway, anbefales det, at du så [tilføjer en 
 
 Power BI understøtter mange datakilder i det lokale miljø, og de har hver især sine egne krav. En gateway kan bruges til en enkelt datakilde eller flere datakilder. I dette eksempel viser vi dig, hvordan du tilføjer SQL Server som en datakilde, men trinnene er de samme for andre datakilder.
 
+> [!NOTE]
+> Gatewayadministratorer kan nu oprette flere datakilder, der opretter forbindelse til den samme datakilde, hver med forskellige legitimationsoplysninger, og føje brugere til hver af disse datakilder på baggrund af deres adgangsniveau.
 
 ### <a name="add-a-data-source"></a>Tilføj en datakilde
 
@@ -53,6 +55,11 @@ Power BI understøtter mange datakilder i det lokale miljø, og de har hver isæ
 
 1. For SQL Server kan du vælge **godkendelsesmetoden** **Windows** eller **Basic** (SQL-godkendelse).  Hvis du vælger **Basic**, skal du angive legitimationsoplysningerne for datakilden.
 
+1. Hvis denne datakilde i øjeblikket ikke er tilgængelig eller langsom, skal du vælge **Spring test af forbindelse over**. I modsat fald kan oprettelsen af datakilden mislykkes.
+
+    > [!NOTE]
+    > Muligheden for at springe forbindelsestesten over understøttes ikke for Analysis Services.
+
 1. Under **Avancerede indstillinger** kan du eventuelt konfigurere [niveauet for beskyttelse af personlige oplysninger](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540) for din datakilde (gælder ikke for [DirectQuery](desktop-directquery-about.md)).
 
     ![Avancerede indstillinger](media/service-gateway-manage/advanced-settings.png)
@@ -74,7 +81,7 @@ Hvis du vil fjerne en datakilde, skal du gå til datakilden og derefter vælge *
 
 ## <a name="manage-users-and-administrators"></a>Administrer brugere og administratorer
 
-Når du har føjet en datakilde til en gateway, giver du brugere og sikkerhedsgrupper adgang til den specifikke datakilde (ikke hele gatewayen). Brugerlisten for datakilden styrer kun, hvem der har tilladelse til at udgive rapporter, der indeholder data fra datakilden. Rapporternes ejere kan oprette dashboards, indholdspakker og apps og derefter dele dem med andre brugere.
+Når du har føjet en datakilde til en gateway, giver du brugere og mailaktiverede sikkerhedsgrupper adgang til den specifikke datakilde (ikke hele gatewayen). Brugerlisten for datakilden styrer kun, hvem der har tilladelse til at udgive rapporter, der indeholder data fra datakilden. Rapporternes ejere kan oprette dashboards, indholdspakker og apps og derefter dele dem med andre brugere.
 
 Du kan også give brugere og sikkerhedsgrupper administrativ adgang til gatewayen.
 
@@ -98,14 +105,14 @@ Så nemt er det. Vær opmærksom på, at du skal føje brugere til hver enkelt d
 
 ### <a name="remove-users-from-a-data-source"></a>Fjern brugere fra en datakilde
 
-Under fanen **Brugere** for datakilden kan du fjerne brugere og sikkerhedsgrupper, som bruger denne datakilde.
+Under fanen **Brugere** for datakilden kan du fjerne brugere og mailaktiverede sikkerhedsgrupper, som bruger denne datakilde.
 
 ![Fjern bruger](media/service-gateway-manage/remove-user.png)
 
 
 ### <a name="add-and-remove-administrators"></a>Tilføj og fjern administratorer
 
-Under fanen **Administratorer** for gatewayen kan du tilføje og fjerne brugere (eller sikkerhedsgrupper), som kan administrere gatewayen.
+Under fanen **Administratorer** for gatewayen kan du tilføje og fjerne brugere (eller mailaktiverede sikkerhedsgrupper), som kan administrere gatewayen.
 
 ![Fanen Administratorer](media/service-gateway-manage/administrators-tab.png)
 
