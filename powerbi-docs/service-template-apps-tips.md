@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/26/2019
 ms.author: tebercov
-ms.openlocfilehash: 59d581697091df68df827ec699c8999a6993daef
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 5e34601c3ebacb3cfd8a4a5ddeb282756d0f700b
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408350"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791813"
 ---
 # <a name="tips-for-authoring-template-apps-in-power-bi"></a>Tip til udarbejdelse af skabelonapps i Power BI
 
@@ -126,6 +126,7 @@ Skabelonapps kan publiceres på AppSource. Følg disse retningslinjer, før du s
 
 * Sørg for at oprette en skabelonapp med engagerende eksempeldata, som kan hjælpe den person, der installerer appen, med at forstå, hvad appen kan gøre (en tom rapport og et tomt dashboard godkendes ikke).
 Skabelonapps understøtter eksempeldata kun for apps. Husk at markere afkrydsningsfeltet for den statiske app. [Få mere at vide](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
+* Generelt kan kun programmer med værdifuld funktionalitet godkendes til generel brug på AppSource. Programmer, der kun indeholder eksempeldataindhold, skal enten levere nyttig vejledning eller have statistisk værdi.
 * Få en vejledning, som valideringsteamet skal følge, der omfatter legitimationsoplysninger og parametre, som kræves for at oprette forbindelse til data.
 * Programmet skal inkludere et appikon i Power BI og på dit CPP-tilbud. [Få mere at vide](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)
 * Konfigureret landingsside. [Få mere at vide](https://docs.microsoft.com/power-bi/service-template-apps-create#create-the-test-template-app)

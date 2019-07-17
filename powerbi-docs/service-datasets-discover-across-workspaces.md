@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 99769b78060756c557223dd366da550ad3e11056
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: f8229c74a233d8bc44370380bf635527506194f0
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461275"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567444"
 ---
 # <a name="create-reports-based-on-datasets-from-different-workspaces-preview"></a>Opret rapporter baseret på datasæt fra forskellige arbejdsområder (prøveversion)
 
@@ -51,7 +51,7 @@ På denne måde kan medlemmer af arbejdsområdet se, hvilke rapporter og dashboa
 
 ## <a name="find-an-endorsed-dataset"></a>Find et godkendt datasæt
 
-Der er to forskellige typer godkendte datasæt. Ejere af datasæt kan *fremhæve* et datasæt, som de har anbefalet til dig. Power BI-lejeradministratoren kan udpege eksperter i din organisation, der kan *certificere* datasæt, som alle kan bruge. Der vises *badges* for fremhævede og certificerede datasæt, som du ser, både når du leder efter et datasæt og på listen over datasæt i et arbejdsområde. 
+Der er to forskellige typer godkendte datasæt. Ejere af datasæt kan *fremhæve* et datasæt, som de har anbefalet til dig. Desuden kan Power BI-lejeradministratoren udpege eksperter i din organisation, der kan *certificere* datasæt, som alle kan bruge. Der vises *badges* for fremhævede og certificerede datasæt, som du ser, både når du leder efter et datasæt og på listen over datasæt i et arbejdsområde. Navnet på den person, der har certificeret et datasæt, vises i et værktøjstip i søgningsoplevelsen for datasæt. Peg på etiketten **Certificeret**, så kan du se det.
 
 - I Power BI-tjenesten: **Hent data** > **Publicerede datasæt**.
 - I Power BI Desktop: **Hent data** > **Power BI-datasæt**.

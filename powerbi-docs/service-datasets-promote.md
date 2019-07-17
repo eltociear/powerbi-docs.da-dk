@@ -7,21 +7,21 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 366f80ccb1db2d226a80528da610b15082c44ed6
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 681cd9f65713738e2b842bfa3404511f9e3a98f4
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461367"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567346"
 ---
 # <a name="promote-your-dataset-preview"></a>Fremhæv dit datasæt (prøveversion)
 
 Forfattere af Power BI-rapporten har nu muligvis adgang til mange forskellige datasæt, så virksomheder skal guide dem til pålidelige datasæt af høj kvalitet. Power BI indeholder to måder at *godkende* datasæt på:
 
-- **Fremhævning**: Som ejer af et datasæt kan du fremhæve dine egne datasæt, når de er klar til almindelig brug. Fremhævning understøtter samarbejdsmæssig spredning af datasæt i organisationer. Denne artikel handler om at fremhæve dit datasæt.
+- **Fremhævning**: Som ejer af et datasæt kan du fremhæve dine egne datasæt, når de er klar til almindelig brug. Et hvilket som helst medlem af et arbejdsområde med skriverettigheder kan fremhæve et datasæt. Der er ingen begrænsninger på, hvem der kan fremhæve et datasæt. Fremhævning understøtter samarbejdsmæssig spredning af datasæt i organisationer. Denne artikel handler om at fremhæve dit datasæt.
 - **Certificering**: Du kan anmode om certificering for et fremhævet datasæt. En udvalgt gruppe af brugere, der er defineret under indstillingen **Certificering af datasæt** for lejeradministratoren, beslutter, hvilke datasæt der skal certificeres. Du kan finde flere oplysninger i [Certificer datasæt (prøveversion)](service-datasets-certify.md).
 
 ## <a name="promote-a-dataset"></a>Fremhæv et datasæt

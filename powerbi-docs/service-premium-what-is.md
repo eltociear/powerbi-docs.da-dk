@@ -8,28 +8,29 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/22/2019
+ms.date: 07/06/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1c2f867140c5a717c80d39db75b3a54e40bd1e34
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 21518d2c5160c8e5a696c193d3d6f4d352a02271
+ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721063"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67596541"
 ---
 # <a name="what-is-power-bi-premium"></a>Hvad er Power BI Premium?
 
 Power BI Premium indeholder dedikerede og forbedrede ressourcer til at køre Power BI-tjenesten for din organisation. Eksempel:
 
-- Større skalering og ydeevne
-- Fleksibilitet til at licensere efter kapacitet
-- Foren selvbetjenings-BI og virksomhedsmæssig BI
-- Udvid BI i det lokale miljø med Power BI-rapportserver
-- Understøttelse af dataopbevaring efter område (Multi-Geo)
-- Del data med alle uden at købe en licens pr. bruger
+> [!div class="checklist"]
+> * Større skalering og ydeevne
+> * Fleksibilitet til at licensere efter kapacitet
+> * Foren selvbetjenings-BI og virksomhedsmæssig BI
+> * Udvid BI i det lokale miljø med Power BI-rapportserver
+> * Understøttelse af dataopbevaring efter område (Multi-Geo)
+> * Del data med alle uden at købe en licens pr. bruger
 
-Denne artikel indeholder ikke detaljerede oplysninger om alle funktioner i Power BI Premium, men nævner dem blot. Hvor det er nødvendigt, leveres der links til flere artikler med mere detaljerede oplysninger.
+I denne artikel introduceres vigtige funktioner i Power BI Premium. Hvor det er nødvendigt, leveres der links til flere artikler med mere detaljerede oplysninger.
 
 ## <a name="subscriptions-and-licensing"></a>Abonnementer og licenser
 
@@ -52,7 +53,7 @@ Power BI Premium-abonnementer købes af administratorer i Microsoft 365 Administ
 
 Med Power BI Premium får du *dedikerede kapaciteter*. I modsætning til en delt kapacitet, hvor arbejdsbelastninger kører på databehandlingsressourcer, der deles med andre kunder, er en dedikeret kapacitet udelukkende til brug af en organisation. Den isoleres med dedikerede databehandlingsressourcer, som sikrer en pålidelig og konsekvent ydeevne for det indhold, der hostes. 
 
-Der er placeret arbejdsområder i kapaciteter. Hver bruger af Power BI har et personligt arbejdsområde, der er kendt som **Mit arbejdsområde**. Flere arbejdsområder kan oprettes for at muliggøre samarbejde og udrulning, og disse kaldes **Apparbejdsområder**. Arbejdsområder, herunder personlige arbejdsområder, oprettes som standard i den delte kapacitet. Når du har Premium-kapaciteter, kan både Mine arbejdsområder og Apparbejdsområder tildeles til Premium-kapaciteter.
+Der er placeret arbejdsområder i kapaciteter. Hver bruger af Power BI har et personligt arbejdsområde, der er kendt som **Mit arbejdsområde**. Der kan oprettes flere arbejdsområder for at muliggør samarbejde, og disse kaldes **Apparbejdsområder**. Arbejdsområder, herunder personlige arbejdsområder, oprettes som standard i den delte kapacitet. Når du har Premium-kapaciteter, kan både Mine arbejdsområder og Apparbejdsområder tildeles til Premium-kapaciteter.
 
 ### <a name="capacity-nodes"></a>Kapacitetsnoder
 
@@ -102,7 +103,7 @@ Importmodeller indlæses derfor i og fjernes fra hukommelsen i henhold til forbr
 
 Sletning af en model fra hukommelsen kaldes *fjernelse*. Det er en handling, som Power BI kan udføre hurtigt afhængigt af størrelsen på modellerne. Hvis kapaciteten ikke oplever noget pres på hukommelsen, indlæses modellerne i hukommelsen og forbliver der. Men hvis der ikke er tilstrækkelig hukommelse til at indlæse en model, skal Power BI-tjenesten først frigøre hukommelse. Den frigør hukommelse ved at registrere modeller, der er blevet inaktive, ved at søge efter modeller, som ikke har været anvendt i de sidste tre minutter \[[1](#endnote-1)\], og fjerner dem derefter. Hvis der ikke er nogen inaktive modeller at fjerne, forsøger Power BI-tjenesten at fjerne modeller, der er indlæst til handlinger i baggrunden. En sidste udvej efter 30 sekunder med mislykkede forsøg \[[1](#endnote-1)\] er at afbryde den interaktive handling. I dette tilfælde får rapportbrugeren besked om fejlen med et forslag om at prøve igen om et øjeblik. I nogle tilfælde fjernes modeller fra hukommelsen pga. servicehandlinger.
 
-Det er vigtigt at understrege, at fjernelse af datasæt er en normal og forventet funktionsmåde. Den har til formål at maksimere forbruget af hukommelse ved at indlæse og fjerne modeller, hvis størrelse tilsammen kan overskride den tilgængelige hukommelse. Dette er tilsigtet og helt åbenlyst for rapportbrugerne. Høje fjernelsesrater betyder ikke nødvendigvis, at kapaciteten har fået tildelt utilstrækkelige ressourcer. De kan dog blive et problem, hvis svartiden for forespørgsler eller opdateringer bliver påvirket af de høje fjernelsesrater.
+Det er vigtigt at understrege, at fjernelse af datasæt er en normal og forventet funktionsmåde. Den har til formål at maksimere forbruget af hukommelse ved at indlæse og fjerne modeller, hvis størrelse tilsammen kan overskride den tilgængelige hukommelse. Dette er tilsigtet og åbenlyst for rapportbrugerne. Høje fjernelsesrater betyder ikke nødvendigvis, at kapaciteten har fået tildelt utilstrækkelige ressourcer. De kan dog blive et problem, hvis svartiden for forespørgsler eller opdateringer bliver påvirket af de høje fjernelsesrater.
 
 Opdateringer af importmodeller er altid hukommelseskrævende, da modeller skal indlæses i hukommelsen. Der kræves ekstra hukommelse til behandling. En fuld opdatering kan bruge ca. dobbelt så meget hukommelse, der kræves af modellen. Dette sikrer, at modellen kan forespørges, selv når den behandles, da forespørgsler sendes til den eksisterende model, indtil opdateringen er fuldført, og de nye modeldata er tilgængelige. En trinvis opdatering kræver mindre hukommelse og kan fuldføres hurtigere og kan derfor i høj grad reducere belastningen af kapacitetsressourcer. Opdateringer kan også være CPU-krævende for modeller, især dem med komplekse Power-transformationer eller beregnede tabeller/kolonner, som er komplekse eller baseret på store tabeller.
 
@@ -125,7 +126,7 @@ Når der oprettes kapaciteter, udføres de fleste administrative opgaver på [ad
 
 ![Administrationsportal](media/service-premium-what-is/premium-admin-portal.png)
 
-Kapacitetsadministratorer kan tildele arbejdsområder til kapaciteten, administrere brugertilladelser og tildele andre administratorer. Kapacitetsadministratorer kan også konfigurere arbejdsbelastninger, justere hukommelsesallokeringer og om nødvendigt genstarte en kapacitet, hvilken medfører nulstilling af handlinger i tilfælde af overbelastning af en kapacitet.
+Kapacitetsadministratorer kan tildele arbejdsområder til kapaciteten, administrere brugertilladelser og tildele andre administratorer. Kapacitetsadministratorer kan også konfigurere arbejdsbelastninger, justere hukommelsesallokeringer og om nødvendigt genstarte en kapacitet, hvilket medfører nulstilling af handlinger, hvis en kapacitet overbelastes.
 
 ![Administrationsportal](media/service-premium-what-is/premium-admin-portal-mgmt.png)
 
@@ -175,7 +176,7 @@ I nedenstående tabel beskrives de anbefalede SKU'er til forskellige .pbix-stør
    |P2    | < 6 GB        |
    |P3, P4, P5    | op til 10 GB   |
 
-Power BI Embedded A4-SKU'en er lig med P1-SKU'en, A5-SKU'en = P2 og A6-SKU'en = P3. Bemærk, at hvis du udgiver store modeller til A- og EM-SKU'er, kan det returnere fejl, der ikke er specifikke for størrelsesbegrænsningen af modellen i den delte kapacitet. Opdateringsfejl for store modeller i A- og EM-SKU'er skyldes sandsynligvis timeout. 
+Power BI Embedded A4-SKU'en er lig med P1-SKU'en, A5-SKU'en = P2 og A6-SKU'en = P3. Hvis du udgiver store modeller til A- og EM-SKU'er, kan det returnere fejl, der ikke er specifikke for størrelsesbegrænsningen af modellen i den delte kapacitet. Opdateringsfejl for store modeller i A- og EM-SKU'er skyldes sandsynligvis timeout. 
 
 Dine .pbix-filer repræsenterer data i en *stærkt komprimeret tilstand*. Data udvides sandsynligvis flere gange, når de indlæses i hukommelsen, og herfra vil de sikkert blive udvidet gentagne gange under dataopdatering.
 

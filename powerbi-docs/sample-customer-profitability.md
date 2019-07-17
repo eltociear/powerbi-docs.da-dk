@@ -7,15 +7,15 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/20/2019
+ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: af20d5842664311a0d543ee189ef671f7865058b
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: 333403ca74c5c5a13c94cbd41100915c7260e304
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418762"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791994"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Eksempel på kunderentabilitet til Power BI: Få en introduktion
 
@@ -23,17 +23,21 @@ Indholdspakken med eksemplet på kunderentabilitet indeholder et dashboard, en r
 
 ![Dashboard for eksempel på Kunderentabilitet](media/sample-customer-profitability/power-bi-dash.png)
 
-Dette eksempel er en del af en række, der viser, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Det blev oprettet med rigtige data fra [obviEnce](http://www.obvience.com/), som er blevet anonymiseret. Dataene er tilgængelige i flere formater: indholdspakke/app, .pbix Power BI Desktop-fil eller Excel-projektmappe. Se [Eksempler til Power BI](sample-datasets.md). 
+Dette eksempel er en del af en række, der viser, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Det blev oprettet med rigtige data fra [obviEnce](http://www.obvience.com/), som er blevet anonymiseret. Dataene er tilgængelige i flere formater: indholdspakke, .pbix-fil til Power BI Desktop eller Excel-projektmappe. Se [Eksempler til Power BI](sample-datasets.md). 
 
-I dette selvstudium bruges Power BI-tjenesten og indholdspakken med eksemplet på kunderentabilitet. Da rapportoplevelserne ligner hinanden rigtig meget, kan du også følge med ved hjælp af Power BI Desktop og .pbix-eksempelfilen. 
+I dette selvstudium udforskes indholdspakken med eksemplet på kunderentabilitet i Power BI-tjenesten. Da rapportoplevelsen i Power BI Desktop og i tjenesten minder meget om hinanden, kan du også følge med ved at bruge .pbix-eksempelfilen i Power BI Desktop. 
 
-## <a name="prerequisites"></a>Forudsætninger
+Du behøver ikke en Power BI-licens for at udforske eksemplerne i Power BI Desktop. Hvis du ikke har en Power BI Pro-licens, kan du gemme eksemplet i Mit arbejdsområde i Power BI-tjenesten. 
+
+## <a name="get-the-sample"></a>Hent eksemplet
 
 Før du kan bruge eksemplet, skal du først downloade det som en [indholdspakke](#get-the-content-pack-for-this-sample), [.pbix-fil](#get-the-pbix-file-for-this-sample) eller [Excel-projektmappe](#get-the-excel-workbook-for-this-sample).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Hent indholdspakken for dette eksempel
 
 1. Åbn Power BI-tjenesten (app.powerbi.com), log på, og åbn det arbejdsområde, hvor du vil gemme eksemplet.
+
+   Hvis du ikke har en Power BI Pro-licens, kan du gemme eksemplet i Mit arbejdsområde.
 
 2. Vælg **Hent data** i nederste venstre hjørne.
 
@@ -43,7 +47,7 @@ Før du kan bruge eksemplet, skal du først downloade det som en [indholdspakke]
 4. Vælg **Eksempel på kunderentabilitet**, og vælg derefter **Opret forbindelse**.  
 
     ![Opret forbindelse til eksempel](media/sample-customer-profitability/get-supplier-sample.png)
-5. Power BI importerer indholdspakken og føjer derefter et nyt dashboard, en rapport og datasæt til dit aktuelle arbejdsområde.
+5. Power BI importerer indholdspakken og føjer derefter et nyt dashboard, en ny rapport og et nyt datasæt til dit aktuelle arbejdsområde.
 
     ![Posten Eksempel på kunderentabilitet](media/sample-customer-profitability/customer-profitability-sample-entry.png)
 
@@ -53,7 +57,7 @@ Alternativt kan du downloade eksemplet på kunderentabilitet som en [.pbix-fil](
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hent Excel-projektmappen for dette eksempel
 
-Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529781). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, skal se [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself) for at få flere oplysninger.
+Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529781). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, kan du finde flere oplysninger under [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Hvad fortæller vores dashboard os?
 
@@ -135,8 +139,8 @@ Lad os se nærmere på to af teammedlemmerne, og på hvad det giver os af indsig
 1. I udsnittet **Direktør** til venstre skal du vælge Andrews navn for at filtrere rapportsiden, så der kun vises data for Andrew:
 
    * Hvis du vil se et hurtigt KPI, skal du kigge på Andrews **Omsætningsstatus (Samlet for året)** . Det er grøn, hvilket betyder, at han præsterer godt.
-   * Diagrammet **Omsætningsafvigelse i % for budget pr. måned** viser, at Andrew generelt klarer sig godt med undtagelse af et fald i februar. Hans stærkeste område er det østlige område, og han håndterer 49 kunder og 5 ud af 7 produkter. Hans BA i % er hverken den højeste eller den laveste.
-   * Diagrammet **Samlet omsætning i år og omsætningsafvigelse i % ift. budget pr. måned** viser en konstant og tilmed rentabel historie. Men hvis du filtrerer ved at vælge firkanten ud for **Central** i områdetræstrukturen, opdager du, at Andrew kun har omsætning i marts og kun i Indiana. Er dette bevidst, eller er det noget, der skal undersøges nærmere?
+   * Diagrammet **Indtægtsvarians i % i forhold til budget efter måned og overordnet** viser, at Andrew klarer sig godt med undtagelse af et fald i februar. Hans stærkeste område er det østlige område, og han håndterer 49 kunder og fem ud af syv produkter. Hans BA i % er hverken den højeste eller den laveste.
+   * Diagrammet **Samlet omsætning i år og omsætningsafvigelse i % ift. budget pr. måned** viser en konstant og tilmed rentabel historie. Men hvis du filtrerer ved at vælge firkanten ud for **Central** i områdetræstrukturen, opdager du, at Andrew kun har omsætning i marts og kun i Indiana. Er denne tendens bevidst, eller er det noget, der skal undersøges nærmere?
 
 2. Nu videre til Valery. Vælg Valerys navn i udsnittet **Direktør** for at filtrere rapportsiden og kun få vist data om hende. 
 
@@ -203,7 +207,7 @@ Lad os se på branchen Distribution.
     Vi kan ligeledes granske andre brancher og endog føje kunder til vores visuals for at få indsigt i årsagerne til Valerys præstation.
 
 ## <a name="next-steps-connect-to-your-data"></a>Næste trin: Opret forbindelse til dine data
-Dette miljø er sikkert at eksperimentere i, fordi du kan vælge ikke at gemme dine ændringer. Hvis du gemmer dem, kan du altid vælge **Hent data** for at få en ny kopi af dette eksempel.
+Det er sikkert at eksperimentere i dette miljø, fordi du kan vælge ikke at gemme dine ændringer. Hvis du gemmer dem, kan du altid vælge **Hent data** for at få en ny kopi af dette eksempel.
 
-Vi håber, at denne rundtur har vist, hvordan Power BI-dashboards, spørgsmål og svar og rapporter kan give indsigt i kundedata. Nu er det din tur: Opret forbindelse til dine egne data. Med Power BI kan du oprette forbindelse til en lang række datakilder. Få mere at vide ved at se [Introduktion til Power BI-tjenesten](service-get-started.md).
+Vi håber, at denne rundtur har vist, hvordan Power BI-dashboards, spørgsmål og svar samt rapporter kan give indsigt i eksempeldata. Nu er det din tur: Opret forbindelse til dine egne data. Med Power BI kan du oprette forbindelse til en lang række datakilder. Få mere at vide ved at se [Introduktion til Power BI-tjenesten](service-get-started.md).
 

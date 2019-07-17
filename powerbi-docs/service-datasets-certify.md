@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e790afee5b57b73a756ca3c1afd564b00e778186
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 915fb9d10b69142621554f29a7fd77e7a41932e5
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461321"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567328"
 ---
 # <a name="certify-datasets-preview"></a>Certificer datasæt (prøveversion)
 
@@ -23,8 +23,8 @@ Din organisation kan certificere datasæt, der er den autoritative kilde til vig
 
 Power BI-brugere har nu muligvis adgang til mange forskellige datasæt, så virksomheder skal guide dem til pålidelige datasæt af høj kvalitet. Power BI indeholder to måder at *godkende* datasæt på:
 
-- **Fremhævning**: Ejere af datasæt kan fremhæve deres egne datasæt, når de er klar til almindelig brug. Du kan finde flere oplysninger under [Fremhæv dit datasæt](service-datasets-promote.md). 
-- **Certificering**: Ejere af datasæt kan anmode om certificering for et fremhævet datasæt. En udvalgt gruppe af brugere, der er defineret under indstillingen **Certificering af datasæt** for lejeradministratoren, beslutter, hvilke datasæt der skal certificeres.
+- **Fremhævning**: Ejere af datasæt og andre i et arbejdsområde kan fremhæve deres datasæt, når de er klar til almindelig brug. Du kan finde flere oplysninger under [Fremhæv dit datasæt](service-datasets-promote.md). 
+- **Certificering**: Ejere af datasæt kan anmode om certificering for et fremhævet datasæt. En udvalgt gruppe af brugere, der er defineret under indstillingen **Certificering af datasæt** for lejeradministratoren, beslutter, hvilke datasæt der skal certificeres. Navnet på den person, der har certificeret et datasæt, vises i et værktøjstip i søgningsoplevelsen for datasæt. Peg på etiketten **Certificeret**, så kan du se det.
 
 ## <a name="certify-a-dataset"></a>Certificer et datasæt
 

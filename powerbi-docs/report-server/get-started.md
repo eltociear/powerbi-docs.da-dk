@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.openlocfilehash: 37751117853c8bca686585992108c006c6c76b70
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 59913e5d17d15dad8729cd5c96582d09f708c30a
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187470"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791841"
 ---
 # <a name="what-is-power-bi-report-server"></a>Hvad er Power BI-rapportserveren?
 
@@ -24,7 +24,7 @@ Power BI-rapportserveren er en rapportserver med en webportal i det lokale milj�
 ![Webportalen til Power BI-rapportserver](media/get-started/power-bi-report-server-overview.png)
 
 ## <a name="comparing-power-bi-report-server"></a>Sammenlign Power BI-rapportserveren 
-Power BI-rapportserveren ligner både SQL Server Reporting Services og Power BI-onlinetjenesten, men på forskellige måder. F.eks. Power BI-tjenesten, Power BI Report Server er vært for Power BI-rapporter (. PBIX) Excel-filer og sideinddelte rapporter (. RDL). Som Reporting Services er Power BI Report Server i det lokale miljø. Funktioner i Power BI-rapportserver er en delmængde af Reporting Services: alt, hvad du kan gøre i Reporting Services, kan du gøre med Power BI-rapportserver, sammen med support til Power BI-rapporter. Se [Sammenlign Power BI-rapportserveren med Power BI-tjenesten](compare-report-server-service.md) for at få flere oplysninger.
+Power BI-rapportserveren ligner både SQL Server Reporting Services og Power BI-onlinetjenesten, men på forskellige måder. På samme måde som Power BI-tjenesten er Power BI-rapportserveren vært for Power BI-rapporter (.PBIX), Excel-filer og sideinddelte rapporter (.RDL). På samme måde som Reporting Services findes Power BI-rapportserveren i det lokale miljø. Power BI-rapportserverens funktioner er overordnede i forhold til Reporting Services: Alt det, du kan bruge Reporting Services til, kan du også bruge Power BI-rapportserveren til, inklusive understøttelse af Power BI-rapporter. Se [Sammenlign Power BI-rapportserveren med Power BI-tjenesten](compare-report-server-service.md) for at få flere oplysninger.
 
 ## <a name="licensing-power-bi-report-server"></a>Licens til Power BI-rapportserveren
 Power BI-rapportserver er tilgængelig via to forskellige licenser: [Power BI Premium](../service-premium-what-is.md) og [SQL Server Enterprise Edition](https://www.microsoft.com/sql-server/sql-server-2017-editions) med Software Assurance. Med en Power BI Premium-licens kan du oprette en hybrid udrulning med en blanding af clouden og det lokale miljø.  
@@ -48,14 +48,14 @@ Du kan oprette Power BI-rapporter (.PBIX) med den version af Power BI Desktop, d
 
 En Power BI-rapport er en visning med flere perspektiver af en datamodel med visualiseringer, som repræsenterer forskellige resultater og indsigter fra denne datamodel.  En rapport kan indeholde en enkelt visualisering eller sider fulde af visualiseringer. Afhængigt af din rolle kan du læse og udforske rapporter, eller du kan oprette dem for andre.
 
-Læs om [installerer Microsoft Power BI Desktop](install-powerbi-desktop.md).
+Læs om [installation af Microsoft Power BI Desktop](install-powerbi-desktop.md).
 
 ## <a name="paginated-reports"></a>Sideinddelte rapporter
 Sideinddelte rapporter (.RDL) er dokumentlignende rapporter med visualiseringer, hvor tabeller udvides vandret og lodret for at vise alle de indeholdte data, og de fortsætter fra side til side efter behov. De er velegnede, når du vil oprette dokumenter med fast layout og perfekte pixel, der er optimeret til udskrivning, f.eks. PDF- og Word-filer. 
 
 ![Sideinddelte rapporter på Power BI-rapportserveren](media/get-started/paginated-reports.png)
 
-Du kan oprette sideinddelte rapporter ved hjælp af [Report Builder](https://docs.microsoft.com/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) eller Rapportdesigner i [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
+Du kan oprette sideinddelte rapporter, der bruger [Report Builder](https://docs.microsoft.com/sql/reporting-services/report-builder/report-builder-in-sql-server-2016) eller Rapportdesigner i [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt).
 
 ## <a name="reporting-services-mobile-reports"></a>Reporting Services-mobilrapporter
 Mobilrapporter opretter forbindelse til data i det lokale miljø og har et dynamisk layout, der kan tilpasses til forskellige enheder og de forskellige måder, du holder dem på. Du kan oprette dem med SQL Server Mobile Report Publisher.

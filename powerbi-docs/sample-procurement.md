@@ -7,137 +7,140 @@ ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/23/2018
+ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 18b99bf86f49f1355d4ab9f20ff6e8a83c89731d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 17a4a3770cb2c3e2adff2bcce64c3e101688e002
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61233617"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791855"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på indkøbsanalyse for Power BI: Få en introduktion
 
-## <a name="overview-of-the-procurement-analysis-sample"></a>Oversigt over eksemplet på indkøbsanalyse
-Dette brancheeksempel på et dashboard og den underliggende rapport tager udgangspunkt i en produktionsvirksomheds udgifter til leverandører efter kategori og placering. I eksemplet udforsker vi følgende områder:
+Indholdspakken til eksemplet på indkøbsanalyse indeholder et dashboard, en rapport og et datasæt, der analyserer en produktionsvirksomheds udgifter til leverandører efter kategori og placering. I eksemplet udforsker vi følgende områder:
 
 * Hvem er topleverandørerne
 * Hvilke kategorier vi har flest udgifter til
 * Hvilke leverandører giver os de største rabatter og hvornår
 
-Dette eksempel er en del af en række, der illustrerer, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Der er anvendt rigtige data fra obviEnce ([www.obvience.com)](http://www.obvience.com/), som er blevet anonymiseret.
+![Dashboard til eksemplet på indkøbsanalyse](media/sample-procurement/procurement1.png)
 
-![](media/sample-procurement/procurement1.png)
+Dette eksempel er en del af en serie, der viser, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Det blev oprettet med rigtige data fra [obviEnce](http://www.obvience.com/), som er blevet anonymiseret. Dataene er tilgængelige i flere formater: indholdspakke, .pbix-fil til Power BI Desktop eller Excel-projektmappe. Se [Eksempler til Power BI](sample-datasets.md). 
 
-## <a name="prerequisites"></a>Forudsætninger
+I dette selvstudium udforskes indholdspakken med eksemplet på indkøbsanalyse i Power BI-tjenesten. Da rapportoplevelsen i Power BI Desktop og i tjenesten minder meget om hinanden, kan du også følge med ved at bruge .pbix-eksempelfilen i Power BI Desktop. 
 
- Før du kan bruge eksemplet, skal du først downloade det som en [indholdspakke](https://docs.microsoft.com/power-bi/sample-procurement#get-the-content-pack-for-this-sample), [.pbix-fil](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix) eller [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529784).
+Du behøver ikke en Power BI-licens for at udforske eksemplerne i Power BI Desktop. Hvis du ikke har en Power BI Pro-licens, kan du gemme eksemplet i Mit arbejdsområde i Power BI-tjenesten. 
+
+## <a name="get-the-sample"></a>Hent eksemplet
+
+Før du kan bruge eksemplet, skal du først downloade det som en [indholdspakke](#get-the-content-pack-for-this-sample), [.pbix-fil](#get-the-pbix-file-for-this-sample) eller [Excel-projektmappe](#get-the-excel-workbook-for-this-sample).
 
 ### <a name="get-the-content-pack-for-this-sample"></a>Hent indholdspakken for dette eksempel
 
-1. Åbn Power BI-tjenesten (app.powerbi.com), og log på.
+1. Åbn Power BI-tjenesten (app.powerbi.com), log på, og åbn det arbejdsområde, hvor du vil gemme eksemplet. 
+
+    Hvis du ikke har en Power BI Pro-licens, kan du gemme eksemplet i Mit arbejdsområde.
+
 2. Vælg **Hent data** i nederste venstre hjørne.
-   
-    ![](media/sample-datasets/power-bi-get-data.png)
-3. Vælg ikonet **Eksempler** på siden Hent data, der vises.
-   
-   ![](media/sample-datasets/power-bi-samples-icon.png)
-4. Vælg **Eksempel på indkøbsanalyse**, og vælg **Opret forbindelse**.  
+
+    ![Vælg Hent data](media/sample-datasets/power-bi-get-data.png)
+3. På siden **Hent data**, der vises, skal du vælge **Eksempler**.
+
+4. Vælg **Eksempel på indkøbsanalyse**, og vælg derefter **Opret forbindelse**.  
   
-   ![Hent data](media/sample-procurement/procurement1a.png)
+   ![Opret forbindelse til eksempel](media/sample-procurement/procurement1a.png)
    
-5. Power BI importerer indholdspakken og føjer et nyt dashboard, en rapport og et datasæt til dit aktuelle arbejdsområde. Det nye indhold er markeret med en gul stjerne. 
+5. Power BI importerer indholdspakken og føjer derefter et nyt dashboard, en ny rapport og et nyt datasæt til dit aktuelle arbejdsområde.
    
-   ![Stjerne](media/sample-procurement/procurement1b.png)
+   ![Posten Eksempel på indkøbsanalyse](media/sample-procurement/procurement-entry.png)
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hent .pbix-filen knyttet til dette eksempel
 
-Du kan også hente eksemplet som en pbix-fil, som er beregnet til brug med Power BI Desktop. 
-
- * [Procurement Analysis Sample](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix)
+Du kan også hente Eksempel på indkøbsanalyse som en [.pbix-fil](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix), der er beregnet til brug med Power BI Desktop. 
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hent Excel-projektmappen for dette eksempel
-Du kan også [kun downloade datasættet (Excel-projektmappe)](http://go.microsoft.com/fwlink/?LinkId=529784) for dette eksempel. Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Du kan se de rå data ved at vælge **Power Pivot > Administrer**.
+
+Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529784). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, kan du finde flere oplysninger under [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 
 ## <a name="spending-trends"></a>Udgiftstendenser
 Lad os først se på udgiftstendenser efter kategori og placering.  
 
-1. Åbn fanen **Dashboards** fra arbejdsområdet, og vælg dashboardet Procurement Analysis.
-2. Vælg dashboardfeltet **Total Invoice by Country/Region**. Det åbner siden "Spend Overview" i rapporten "Procurement Analysis Sample".
+1. I det arbejdsområde, hvor du har gemt eksemplet, skal du åbne fanen **Dashboards** og derefter finde og vælge dashboardet **Eksempel på indkøbsanalyse**. 
+2. Vælg dashboardfeltet **Samlet faktureringsbeløb efter land/område**, som åbner siden **Oversigt over forbrug** i rapporten **Eksempel på indkøbsanalyse**.
 
-    ![](media/sample-procurement/procurement2.png)
+    ![Siden Oversigt over forbrug](media/sample-procurement/procurement2.png)
 
-Vær opmærksom på et par ting:
+Bemærk følgende oplysninger:
 
-* I kurvediagrammet **Total Invoice by Month and Category**: Kategorien **Direct** har ret konsistente udgifter, **Logistics** er højest i december, og **Other** er højest i februar.
-* På kortet **Total Invoice by Country/Region**: De fleste af vores udgifter er i USA.
-* I søjlediagrammet **Total Invoice by Sub Category**: **Hardware** og **Indirect Goods & Services** er de største udgiftskategorier.
-* I det liggende søjlediagram Total Invoice by Tier: De fleste af vores forretninger finder sted med vores leverandører på niveau 1 (de 10 øverste). Dette hjælper os med at bedre administrere leverandørrelationer.
+* I kurvediagrammet **Samlet faktureringsbeløb efter måned og kategori** har kategorien **Direkte** konstante udgifter, **Logistik** er højest i december, og **Andet** er højest i februar.
+* På kortet **Samlet faktureringsbeløb efter land/område** kan du se, at de fleste udgifter ligger i USA.
+* I søjlediagrammet **Samlet faktureringsbeløb efter underkategori** er **Hardware** og **Indirekte varer og tjenesteydelser** de største udgiftskategorier.
+* I det liggende søjlediagram **Samlet faktureringsbeløb efter niveau** kan du se, at de fleste af forretningerne udføres med leverandørerne på niveau 1 (top 10). Det giver os mulighed at administrere bedre leverandørrelationer.
 
 ## <a name="spending-in-mexico"></a>Udgifter i Mexico
 Lad os udforske udgiftsområder i Mexico.
 
-1. I cirkeldiagrammet skal du vælge boblen **Mexico** på kortet. Læg mærke til, at i søjlediagrammet "Total Invoice by Sub Category"er det meste i underkategorien **Indirect Goods & Services**.
+1. På kortet **Samlet faktureringsbeløb efter land/område** skal du vælge boblen **Mexico**. Læg mærke til, at i søjlediagrammet **Samlet faktureringsbeløb efter underkategori** ligger de fleste udgifter i underkategorien **Indirekte varer og tjenesteydelser**.
 
-   ![](media/sample-procurement/pbi_procsample_spendmexico.png)
+   ![Vælg Mexico på siden Oversigt over forbrug](media/sample-procurement/pbi_procsample_spendmexico.png)
 2. Foretag detaljeudledning i kolonnen **Indirect Goods & Services**:
 
-   * Vælg pilen til detaljeudledning ![](media/sample-procurement/pbi_drilldown_icon.png) i øverste højre hjørne af diagrammet.
+   * I søjlediagrammet **Samlet faktureringsbeløb efter underkategori** skal du vælge pilen til detailudledning ![pil til detailudledning](media/sample-procurement/pbi_drilldown_icon.png) i øverste højre hjørne af diagrammet.
    * Markér kolonnen **Indirect Goods & Services**.
 
-      Salg og marketing er langt den største udgift samlet set i denne kategori.
+      Som du kan se, ligger de allerstørste udgifter i underkategorien **Salg og marketing**.
    * Vælg **Mexico** på kortet igen.
 
-      Den største udgift i denne kategori i Mexico er Maintenance & Repair.
+      For Mexico ligger de største udgifter i underkategorien **Vedligeholdelse og reparation**.
 
-      ![](media/sample-procurement/pbi_procsample_drill_mexico.png)
-3. Vælg pil op i det øverste venstre hjørne af diagrammet for at få vist en detaljeudledning.
-4. Vælg pilen igen for at deaktivere detaljeudledning.  
-5. Vælg **Power BI** i navigationslinjen øverst for at vende tilbage til dit arbejdsområde.
+      ![Detailudledning for Indirekte varer og tjenesteydelser for Mexico](media/sample-procurement/pbi_procsample_drill_mexico.png)
+3. Vælg pil op i det øverste venstre hjørne af diagrammet for at gå tilbage i detailudledningen.
+4. Vælg pilen til detailudledning igen for at deaktivere detailudledning.  
+5. Vælg **Eksempel på indkøbsanalyse** på den øverste navigationslinje for at vende tilbage til dashboardet.
 
 ## <a name="evaluate-different-cities"></a>Evaluer forskellige byer
 Vi kan bruge markering til at evaluere forskellige byer.
 
-1. Vælg dashboardfeltet **Total Invoice, Discount % By Month**. Rapporten åbner på siden "Discount Analysis".
-2. Vælg de forskellige byer i træstrukturen **Total Invoice by City** for at se, hvordan de sammenlignes. Næsten alle Miamis fakturaer er fra leverandører på niveau 1.
+1. Vælg dashboardfeltet **Samlet faktureringsbeløb, rabat i % efter måned**, som siden **Rabatanalyse** i rapporten **Eksempel på indkøbsanalyse**.
+2. Vælg en by ad gangen i træstrukturen **Samlet faktureringsbeløb efter by** for at sammenligne dem. Bemærk, at næsten alle Miamis fakturaer er fra leverandører på niveau 1.
 
-   ![](media/sample-procurement/pbi_procsample_miamitreemap2.png)
+   ![By i forhold til Rabat i % efter niveau](media/sample-procurement/pbi_procsample_miamitreemap2.png)
 
 ## <a name="vendor-discounts"></a>Leverandørrabatter
-Lad os også udforske rabatter, der er tilgængelige fra leverandører, og de tidsperioder, hvor vi får flest rabatter.
-
-![](media/sample-procurement/procurement4.png)
-
-Specifikt disse spørgsmål:
-
-* Er rabatter forskellige fra måned til måned, eller er rabatter de samme hver måned?
+Lad os også udforske de rabatter, der er tilgængelige fra leverandører, og de tidsperioder, hvor vi får flest rabatter:
+* Er rabatterne forskellige hver måned, eller gælder de samme rabatter hele tiden?
 * Får nogle byer flere rabatter end andre?
 
-### <a name="discount-by-month"></a>Rabat pr. måned
-På kombinationsdiagrammet **Total Invoice and Discount % by Month** kan vi se, at **February** er den travleste måned, og **September** er den mindst travle måned. Se nu på rabatprocenten i løbet af disse måneder.
-Bemærk, at når mængden går op, falder rabatten, og når mængden er lav, går rabatten op. Jo større brug vi har for rabatten, desto dårligere handel får vi.
+![Siden Rabatanalyse](media/sample-procurement/procurement4.png)
 
-![](media/sample-procurement/procurement5.png)
+### <a name="discount-by-month"></a>Rabat pr. måned
+På kombinationsdiagrammet **Samlet faktureringsbeløb og rabat i % efter måned** kan du se, at februar er den travleste måned, og september er den mindst travle måned. 
+
+Se på rabatprocenten i løbet af disse måneder: Når mængden stiger, falder rabatten, og når mængden er lav, stiger rabatten. Jo mere vi har brug for rabatten, desto dårligere en aftale får vi.
+
+![Diagrammet Samlet faktureringsbeløb og rabat i % efter måned](media/sample-procurement/procurement5.png)
 
 ### <a name="discount-by-city"></a>Rabat efter by
-Et andet område at udforske er rabat efter by. Vælg alle byerne i træstrukturen, og se, hvordan de andre diagrammer ændrer sig.
+Et andet område at udforske er rabat efter by. Vælg en by ad gangen i træstrukturen, og se, hvordan de andre diagrammer ændrer sig:
 
-* St. Louis, MO havde en stor stigning i samlet faktura i februar og et stort fald i rabatbesparelser i april.
-* Mexico City, Mexico har den højeste rabatprocent (11,05 %), og Atlanta, GA har den mindste (0,08 %).
+* St. Louis havde en stor stigning i samlet faktureringsbeløb i februar og et stort fald i rabatbesparelser i april.
+* Mexico City har den højeste rabatprocent (11,05 %), og Atlanta har den mindste (0,08 %).
 
-![](media/sample-procurement/procurement6.png)
+![Grafer for Rabat for Mexico City](media/sample-procurement/procurement6.png)
 
 ### <a name="edit-the-report"></a>Rediger rapporten
-Vælg **Rediger rapport** i det øverste venstre hjørne, og udforsk Redigeringsvisning.
+Vælg **Rediger rapport** i det øverste venstre hjørne, og udforsk Redigeringsvisning:
 
-* Se, hvordan siderne laves
-* Tilføj sider og diagrammer baseret på de samme data
-* Skift visualiseringstypen for et diagram – skift f.eks. træstrukturen til et kransediagram
-* Fastgør dem til dit dashboard
-
-Dette er et sikkert miljø at lege i. Du kan altid vælge ikke at gemme dine ændringer. Hvis du gemme dem, kan du altid gå til **Hent data** for at få en ny kopi af dette eksempel.
+* Se, hvordan siderne laves.
+* Tilføj sider og diagrammer, der er baseret på de samme data.
+* Skift visualiseringstypen for et diagram – du kan f.eks. ændre træstrukturen til et kransediagram.
+* Fastgør diagrammer til dit dashboard.
 
 ## <a name="next-steps-connect-to-your-data"></a>Næste trin: Opret forbindelse til dine data
-Vi håber, at denne rundtur viser, hvordan Power BI-dashboards og -rapporter kan give indsigt i indkøbsdata. Nu er det din tur &#151; opret forbindelse til dine egne data. Med Power BI kan du oprette forbindelse til en lang række datakilder. Få mere at vide om, hvordan du [kommer i gang med Power BI](service-get-started.md).
+Det er sikkert at eksperimentere i dette miljø, fordi du kan vælge ikke at gemme dine ændringer. Hvis du gemmer dem, kan du altid vælge **Hent data** for at få en ny kopi af dette eksempel.
+
+Vi håber, at denne rundtur har vist, hvordan Power BI-dashboards, spørgsmål og svar samt rapporter kan give indsigt i eksempeldata. Nu er det din tur: Opret forbindelse til dine egne data. Med Power BI kan du oprette forbindelse til en lang række datakilder. Få mere at vide ved at se [Introduktion til Power BI-tjenesten](service-get-started.md).
+

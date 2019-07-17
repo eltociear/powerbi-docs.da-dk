@@ -7,21 +7,19 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 507af4de9d57d2d54fe3e28bca8b1aff7da5cf30
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 2db4c23b50071e387913ed79b4d01daeafb928a4
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461459"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567420"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Kopiér rapporter fra andre arbejdsområder (prøveversion)
 
-Få mere at vide, hvordan du kopierer en rapport fra ét arbejdsområde og gemmer den i et andet arbejdsområde. Du kan derefter ændre rapporten og tilføje eller slette visualiseringer og andre elementer.
-
-Når du finder en rapport, du vil bruge, i et arbejdsområde eller en app, kan du lave en kopi af den og derefter redigere den, så den passer til dine behov. Du behøver ikke at oprette datamodellen. Den er allerede oprettet for dig. Og det er meget nemmere at ændre en eksisterende rapport, end det er at starte forfra.
+Når du finder en rapport, du vil bruge i et arbejdsområde eller en app, kan du lave en kopi af den og gemme den i et andet arbejdsområde. Du kan derefter ændre rapporten og tilføje eller slette visualiseringer og andre elementer. Du behøver ikke at oprette datamodellen. Den er allerede oprettet for dig. Og det er meget nemmere at redigere en eksisterende rapport end at starte forfra. Du kan dog ikke publicere din kopi af rapporten i en app fra det nye arbejdsområde. Se listen over andre [overvejelser og begrænsninger](service-datasets-across-workspaces.md#considerations-and-limitations) i artiklen "Brug datasæt på tværs af arbejdsområder".
 
 ## <a name="save-a-copy-of-a-report"></a>Gem en kopi af en rapport
 
@@ -61,6 +59,21 @@ Når du har en rapport i dit arbejdsområde, har du måske brug for at vide, hvi
 1. I dialogboksen **Relateret indhold** vises alle relaterede elementer. På denne liste ligner datasættet ethvert andet. Du kan ikke se, at den befinder sig i et andet arbejdsområde. Dette er et kendt problem.
  
     ![Dialogboksen Relateret indhold](media/service-datasets-copy-reports/power-bi-dataset-related.png)
+
+## <a name="delete-a-report-and-its-shared-dataset"></a>Slet en rapport og dens delte datasæt
+
+Du kan beslutte, du ikke længere vil have rapporten og dens tilknyttede delte datasæt i arbejdsområdet.
+
+1. Slet rapporten. På listen over rapporter i arbejdsområdet, skal du vælge ikonet **Slet**.
+
+    ![Ikonet Slet rapport](media/service-datasets-across-workspaces/power-bi-datasets-delete-report.png)
+
+2. På listen over datasæt kan du se, at de delte datasæt ikke har ikonet **Slet**. Opdater siden, eller gå til en anden side og vend tilbage igen. Datasættet vil nu være væk. Hvis dette ikke er tilfældet, skal du markere **Få vist relaterede**. Det kan være relateret til en anden tabel i dit arbejdsområde.
+
+    ![ikonet Få vist relaterede](media/service-datasets-across-workspaces/power-bi-dataset-view-related-icon.png)
+
+    > [!NOTE]
+    > Hvis du sletter det delte datasæt i dette arbejdsområde, slette datasættet ikke. Der er kun referencen til det, der slettes.
 
 
 ## <a name="next-steps"></a>Næste trin

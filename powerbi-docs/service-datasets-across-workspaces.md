@@ -7,29 +7,29 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d893088978d7a412d0e005ca7b3280824974c76c
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 17a8e1c9e0d46a56d6b6ff3e46c0fda6da8ffe12
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816661"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567834"
 ---
 # <a name="use-datasets-across-workspaces-preview"></a>Brug datasæt på tværs af arbejdsområder (prøveversion)
 
-Business intelligence er en aktivitet baseret på samarbejde. Det er vigtigt at oprette standardiserede datasæt, der fungerer som fælles udgangspunkt. Registrering og genbrug af disse standardiserede datasæt er nøglen. Når eksperter inden for datamodellering i din organisation opretter og deler optimerede datasæt, kan oprettere af rapporter bruge disse datasæt som udgangspunkt for at oprette præcise rapporter. Din organisation har derefter ensartede data, når der skal træffes beslutninger, samt en sund datakultur.
+Business intelligence er en aktivitet baseret på samarbejde. Det er vigtigt at oprette standardiserede datasæt, der fungerer som fælles udgangspunkt. Derefter er registrering og genbrug af disse standardiserede datasæt helt centralt. Når eksperter inden for datamodellering i din organisation opretter og deler optimerede datasæt, kan oprettere af rapporter bruge disse datasæt som udgangspunkt for at oprette præcise rapporter. Din organisation har derefter ensartede data, når der skal træffes beslutninger, samt en sund datakultur.
 
 ![Vælg et delt datasæt](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-Power BI gør det nemt for oprettere af datasæt at certificere eller fremhæve datasæt, så andre kan finde dem. Derefter kan rapportforfattere finde officielle datasæt i god kvalitet, som de kan bruge, uanset hvor de er i Power BI. Ejere af datasæt kan bevare kontrollen over, hvem der har adgang til deres data, ved hjælp af [tilladelsen Opret](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Lejeradministratorer har en ny lejerindstilling til at [styre brugen af datasæt på tværs af arbejdsområder](service-datasets-admin-across-workspaces.md).
+I Power BI er det nemt for oprettere af datasæt at *certificere* eller *fremhæve* datasæt, så andre kan finde dem. På denne måde ved forfattere af rapporter, hvilke datasæt der er i høj kvalitet og officielle, og de kan bruge disse datasæt, uanset hvor de er forfattere i Power BI. Ejere af datasæt kan bevare kontrollen over, hvem der har adgang til deres data, ved hjælp af [tilladelsen Opret](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Lejeradministratorer har en ny lejerindstilling til at [styre brugen af datasæt på tværs af arbejdsområder](service-datasets-admin-across-workspaces.md).
 
 ## <a name="dataset-sharing-and-the-new-workspace-experience"></a>Deling af datasæt og den nye arbejdsområdeoplevelse
 
 Oprettelse af rapporter baseret på datasæt i forskellige arbejdsområder og kopiering af rapporter til forskellige arbejdsområder er tæt forbundet med den [nye arbejdsområdeoplevelse](service-create-the-new-workspaces.md):
 
-- Når du åbner datasætkataloget fra en ny arbejdsområdeoplevelse i tjenesten, viser datasætkataloget datasæt, der findes i Mit arbejdsområde og i den nye arbejdsområdeoplevelse. 
+- Når du åbner datasætkataloget fra en ny arbejdsområdeoplevelse i tjenesten, viser datasætkataloget datasæt, der findes i Mit arbejdsområde og i andre nye arbejdsområdeoplevelser. 
 - Når du åbner datasætkataloget fra et klassisk arbejdsområde, kan du kun se datasættene i det pågældende arbejdsområde, ikke datasættene i andre arbejdsområder.
 - I Desktop kan du publicere Live Connect-rapporter til forskellige arbejdsområder, så længe deres datasæt er i arbejdsområder med den nye oplevelse.
 - Når du kopierer rapporter på tværs af arbejdsområder, skal destinationsarbejdsområdet være et arbejdsområde med den nye oplevelse.

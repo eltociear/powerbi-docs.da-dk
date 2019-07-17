@@ -723,10 +723,6 @@
               href: service-admin-troubleshooting-scheduled-refresh-azure-sql-databases.md
             - name: Foretag fejlfinding af fejl i felter
               href: refresh-troubleshooting-tile-errors.md
-            - name: Foretag fejlfinding af datagateway i det lokale miljø
-              href: service-gateway-onprem-tshoot.md
-            - name: Foretag fejlfinding af Power BI Gateway – Personal
-              href: service-admin-troubleshooting-power-bi-personal-gateway.md
             - name: Foretag fejlfinding af analysering i Excel
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Fejl: Der blev ikke fundet nogen data i din Excel-projektmappe'
@@ -1279,38 +1275,38 @@
   items:
     - name: Oversigt
       items:
-        - name: Hvad er Power BI-gateways?
-          href: service-gateway-getting-started.md
-    - name: Selvstudier
-      items:
-        - name: Opret forbindelse til SQL Server-data
-          href: service-gateway-sql-tutorial.md
+        - name: Hvad er en datagateway i det lokale miljø?
+          href: service-gateway-onprem.md
     - name: Begreber
       items:
         - name: Vejledning til installation af en datagateway
           href: service-gateway-deployment-guidance.md
         - name: Ofte stillede spørgsmål vedrørende datagateway i lokalt miljø
-          href: service-gateway-onprem-faq.md
+          href: service-gateway-power-bi-faq.md
     - name: Sådan gør du
       items:
-        - name: Installér gateways
-          href: service-gateway-install.md
-        - name: Administrer gateways
-          href: service-gateway-manage.md
-        - name: Overvåg gatewayydeevne
-          href: service-gateway-performance-monitoring.md
-        - name: Administrer din virksomheds datakilde – Analysis Services
-          href: service-gateway-enterprise-manage-ssas.md
-        - name: Administrer din virksomheds datakilde – SAP HANA
-          href: service-gateway-enterprise-manage-sap.md
-        - name: Administrer din virksomheds datakilde – SQL
-          href: service-gateway-enterprise-manage-sql.md
-        - name: Administrer din datakilde - Oracle
-          href: service-gateway-onprem-manage-oracle.md
-        - name: Administrer din virksomheds datakilde - import/planlagt opdatering
-          href: service-gateway-enterprise-manage-scheduled-refresh.md
-        - name: Flet datakilder i det lokale miljø og i cloudmiljøet
-          href: service-gateway-mashup-on-premises-cloud.md
+        - name: Datagateway i lokalt miljø - detaljeret
+          href: service-gateway-onprem-indepth.md
+        - name: Datagateway i det lokale miljø (personlig tilstand)
+          href: service-gateway-personal-mode.md
+        - name: Administrer brugere og administratorer
+          href: service-gateway-manage-admins.md
+        - name: Administrer datakilder
+          items:
+            - name: Administrer datakilder
+              href: service-gateway-data-sources.md
+            - name: Administrer din virksomheds datakilde – Analysis Services
+              href: service-gateway-enterprise-manage-ssas.md
+            - name: Administrer din virksomheds datakilde – SAP HANA
+              href: service-gateway-enterprise-manage-sap.md
+            - name: Administrer din virksomheds datakilde – SQL
+              href: service-gateway-enterprise-manage-sql.md
+            - name: Administrer din datakilde - Oracle
+              href: service-gateway-onprem-manage-oracle.md
+            - name: Administrer din virksomheds datakilde - import/planlagt opdatering
+              href: service-gateway-enterprise-manage-scheduled-refresh.md
+            - name: Flet datakilder i det lokale miljø og i cloudmiljøet
+              href: service-gateway-mashup-on-premises-cloud.md
         - name: Aktivér enkeltlogon (SSO)
           items:
             - name: Enkeltlogon (SSO) – oversigt
@@ -1321,24 +1317,16 @@
               href: service-gateway-sso-kerberos-resource.md
             - name: Enkeltlogon (SSO) – SAML
               href: service-gateway-sso-saml.md
-        - name: Konfigurer proxyindstillinger
-          href: service-gateway-proxy.md
-        - name: Klynger med høj tilgængelighed for en datagateway i det lokale miljø
-          href: service-gateway-high-availability-clusters.md
-        - name: Datagateway i det lokale miljø
-          href: service-gateway-onprem.md
-        - name: Datagateway i lokalt miljø - detaljeret
-          href: service-gateway-onprem-indepth.md
-        - name: Datagateway i det lokale miljø (personlig tilstand)
-          href: service-gateway-personal-mode.md
-        - name: Brugerdefinerede forbindelser
-          href: service-gateway-custom-connectors.md
-        - name: Foretag fejlfinding af datagateway i det lokale miljø
+        - name: Foretag fejlfinding af gatewayen
           href: service-gateway-onprem-tshoot.md
+        - name: Foretag fejlfinding af gatewayen (personlig tilstand)
+          href: service-admin-troubleshooting-power-bi-personal-gateway.md
+        - name: Brug brugerdefinerede connectorer
+          href: service-gateway-custom-connectors.md
     - name: Ressourcer
       items:
         - name: Månedlige gatewayopdateringer
-          href: service-gateway-monthly-updates.md
+          href: 'https://review.docs.microsoft.com/data-integration/gateway/service-gateway-monthly-updates?branch=master'
 - name: Administration
   items:
     - name: Oversigt

@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/07/2018
-ms.openlocfilehash: 9673217cfd7c5af70bdd293e8d5df51e5e7dee07
-ms.sourcegitcommit: 9278540467765043d5cb953bcdd093934c536d6d
+ms.date: 07/03/2019
+ms.openlocfilehash: 7067d4c7fdc3fc328db417e5d6733569ecc7be01
+ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559087"
+ms.lasthandoff: 07/04/2019
+ms.locfileid: "67567824"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Brug OAuth til at oprette forbindelse til Power BI-rapportserver og SSRS
 
 Få mere at vide om, hvordan du konfigurerer dit miljø til at understøtte OAuth-godkendelse med Power BI-mobilappen for at oprette forbindelse til Power BI-rapportserver og SQL Server Reporting Services 2016 eller nyere.
 
-![](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
+![Opret forbindelse til en server](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
 
 Du kan bruge OAuth til at oprette forbindelse til Power BI-rapportserver og Reporting Services for at få vist mobilrapporter eller KPI'er. Windows Server 2016 indeholder forbedringer til rollen Web Application Proxy (WAP) for at tillade denne type godkendelse.
 
@@ -118,7 +118,7 @@ Du kan oprette programgruppen vha. følgende trin.
    > [!NOTE]
    > I denne URL-adresse er der forskel på store og små bogstaver!
 
-   *https://< URL-adresse til rapportserver >/reports*
+   *https://< URL-adresse til rapportserver >/*
 
    ![ADFS Application Group Wizard 03](media/mobile-oauth-ssrs/adfs-application-group-wizard3.png)
 9. Vælg **Næste**.
@@ -209,7 +209,7 @@ Når du har tilføjet WAP-programmet, skal du angive, at BackendServerAuthentica
 Get-WebApplicationProxyApplication “Contoso Reports” | fl
 ```
 
-![](media/mobile-oauth-ssrs/wap-application-id.png)
+![Tilføj programgruppe](media/mobile-oauth-ssrs/wap-application-id.png)
 
 Kør følgende kommando for at angive BackendServerAuthenticationMode vha. id'et for WAP-programmet.
 
@@ -217,21 +217,19 @@ Kør følgende kommando for at angive BackendServerAuthenticationMode vha. id'et
 Set-WebApplicationProxyApplication -id 30198C7F-DDE4-0D82-E654-D369A47B1EE5 -BackendServerAuthenticationMode IntegratedWindowsAuthentication
 ```
 
-![](media/mobile-oauth-ssrs/wap-application-backendauth.png)
+![Guiden Tilføj programgruppe](media/mobile-oauth-ssrs/wap-application-backendauth.png)
 
 ## <a name="connecting-with-the-power-bi-mobile-app"></a>Oprettelse af forbindelse vha. Power BI-mobilappen
 
 I Power BI-mobilappen skal du oprette forbindelse til Reporting Services-instansen. Det gør du ved at angive den **eksterne URL-adresse** for WAP-programmet.
 
-![](media/mobile-oauth-ssrs/powerbi-mobile-app1.png)
+![Skriv serveradressen](media/mobile-oauth-ssrs/powerbi-mobile-app1.png)
 
 Når du vælger **Opret forbindelse**, bliver du dirigeret til ADFS-logonsiden. Angiv de gyldige legitimationsoplysninger for dit domæne.
 
-![](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
+![Log på ADFS](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
 Når du har valgt **Log på**, kan du se elementerne fra Reporting Services-serveren.
-
-![](media/mobile-oauth-ssrs/powerbi-mobile-app2.png)
 
 ## <a name="multi-factor-authentication"></a>Multifaktorgodkendelse
 
@@ -239,9 +237,9 @@ Du kan aktivere multifaktorgodkendelse for at aktivere yderligere sikkerhed for 
 
 ## <a name="troubleshooting"></a>Fejlfinding
 
-### <a name="you-receive-the-error-failed-to-login-to-ssrs-server-verify-server-configuration"></a>Du får vist fejlen Det lykkedes ikke at logge på SSRS-serveren. Kontrollér serverkonfigurationen.
+### <a name="you-receive-the-error-failed-to-login-to-ssrs-server"></a>Du får vist fejlen "Der kunne ikke logges på SSRS-serveren"
 
-![](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
+![Fejlen "Der kunne ikke logges på SSRS-serveren"](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
 Du kan konfigurere, at [Fiddler](http://www.telerik.com/fiddler) skal fungere som en proxy for dine mobilenheder, for at se, hvor langt anmodningen er kommet. Hvis du vil aktivere en Fiddler-proxy for telefonen, skal du konfigurere [CertMaker til iOS og Android](http://www.telerik.com/fiddler/add-ons) på den computer, der kører Fiddler. Dette er et tilføjelsesprogram fra Telerik til Fiddler.
 

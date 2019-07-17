@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: mblythe
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1bc9e0d5de909c5d0859b6d31185cf0cb27bda23
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7e9d8779480eb7a00dacfc9fc52fc81987629e7b
+ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61136494"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67791922"
 ---
 # <a name="using-incremental-refresh-with-power-bi-dataflows"></a>Brug af trinvis opdatering med Power BI-dataflow
 
@@ -33,7 +33,7 @@ Brug af trinvis opdatering for Power BI-dataflow kræver, at det arbejdsområde,
 
 Et dataflow kan indeholde mange objekter. Trinvis opdatering kan konfigureres på objektniveau, så ét dataflow kan indeholde både fuldt opdaterede objekter og trinvist opdaterede objekter.
 
-Du konfigurerer et trinvist opdateret objekt ved at starte med at konfigurere objektet, som du ville gøre med et hvilket som helst andet objekt. Hvis du vil vide mere om dataflowet, konfigurere, se [selvbetjent eksamensforberedende i Power BI](service-dataflows-overview.md).
+Du konfigurerer et trinvist opdateret objekt ved at starte med at konfigurere objektet, som du ville gøre med et hvilket som helst andet objekt. Du kan få mere at vide om konfiguration af dataflow under [Selvbetjent dataforberedelse i Power BI](service-dataflows-overview.md).
 
 Når dataflowet er oprettet og gemt, skal du vælge ikonet for **trinvis opdatering** i objektvisningen, som vist på følgende billede:
 
@@ -156,8 +156,8 @@ I denne artikel beskrives trinvis opdatering for dataflow. Her er nogle flere ar
 
 * [Selvbetjent dataforberedelse med dataflow](service-dataflows-overview.md)
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Ved hjælp af dataflows med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power BI dataflows](service-dataflows-developer-resources.md)
+* [Brug af dataflow med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI-dataflow](service-dataflows-developer-resources.md)
 
 Du kan finde flere oplysninger om Power-forespørgsel og planlagt opdatering i disse artikler:
 * [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)
