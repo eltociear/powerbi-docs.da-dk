@@ -1289,8 +1289,6 @@
           href: service-gateway-onprem-indepth.md
         - name: Datagateway i det lokale miljø (personlig tilstand)
           href: service-gateway-personal-mode.md
-        - name: Administrer brugere og administratorer
-          href: service-gateway-manage-admins.md
         - name: Administrer datakilder
           items:
             - name: Administrer datakilder
