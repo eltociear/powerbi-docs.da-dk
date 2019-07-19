@@ -12,7 +12,7 @@ ms.custom: seodec18
 ms.date: 04/02/2019
 ms.openlocfilehash: e945e19505d7342cf3ba2236b4811e87a69730ab
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65710961"
@@ -365,7 +365,7 @@ Brug tabellen nedenfor til at bestemme, hvilken kapacitet til Power BI Embedded 
 | A5 |16 v-kerne(r) |8 kerne(r), 50 GB RAM |8 kerne(r) |60 pr. sekund |
 | A6 |32 v-kerne(r) |16 kerne(r), 100 GB RAM |16 kerne(r) |120 pr. sekund |
 
-**_Med A-SKU'er kan du ikke få adgang til Power BI-indhold med en GRATIS Power BI-licens._ **
+**_Med A-SKU'er kan du ikke få adgang til Power BI-indhold med en GRATIS Power BI-licens._**
 
 Brug af integreringstokens med en PRO-licens er beregnet til udviklingstest, så antallet af integreringstokens, der kan genereres af en Power BI-masterkonto eller tjenesteprincipal, er begrænset. En dedikeret kapacitet kræver integrering i et produktionsmiljø. Der er ingen grænse for, hvor mange integreringstokens du kan generere med en dedikeret kapacitet. Gå til [Tilgængelige funktioner](https://docs.microsoft.com/rest/api/power-bi/availablefeatures/getavailablefeatures) for at undersøge den brugsværdi, der angiver brugen af integrerede tokens i procent. Forbrugsbeløbet er baseret på overordnet konto.
 

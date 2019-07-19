@@ -110,7 +110,7 @@ Hvis du vil løse dette problem, skal du fjerne "oauth2/authorize/" fra slutning
 
 ### <a name="authentication-failed-with-aadsts70002-or-aadsts50053"></a>Godkendelsen mislykkedes med AADSTS70002 eller AADSTS50053
 
-** _(AADSTS70002: Der opstod en fejl under validering af legitimationsoplysningerne. AADSTS50053: Du har forsøgt at logge på for mange gange med et forkert bruger-id eller en forkert adgangskode)_ **
+** _(AADSTS70002: Der opstod en fejl under validering af legitimationsoplysningerne. AADSTS50053: Du har forsøgt at logge på for mange gange med et forkert bruger-id eller en forkert adgangskode)_**
 
 Hvis du bruger Power BI Embedded og Azure AD Direkte-godkendelse, og du modtager meddelelser, når du logger på, f.eks. ***fejl: uautoriseret_klient, fejlbeskrivelse:AADSTS70002: Der opstod en fejl under validering af legitimationsoplysningerne. AADSTS50053: Du har forsøgt at logge på for mange gange med et forkert bruger-id eller en forkert adgangskode***, fordi direkte godkendelse som standard ikke har været i brug siden d. 14. juni 2018.
 
@@ -162,7 +162,7 @@ Prøv nedenstående trin for at bekræfte, hvilken en det er.
 
 ### <a name="aadsts90094-the-grant-requires-admin-permission"></a>AADSTS90094: Tildelingen kræver administratorrettigheder
 
-**_Symptomer:_ **<br>
+**_Symptomer:_**<br>
 Når en bruger, der ikke er administrator, forsøger at logge på et program første gang og giver samtykke, får vedkommende vist en af følgende fejl:
 
 * ConsentTest skal have tilladelse til at få adgang til ressourcer i din organisation, som kun en administrator kan tildele. Bed en administrator om at give tilladelse til dette program, før du kan bruge det.
@@ -172,10 +172,10 @@ Når en bruger, der ikke er administrator, forsøger at logge på et program fø
 
 En administratorbruger kan logge på og give samtykke.
 
-**_Hovedårsag:_ **<br>
+**_Hovedårsag:_**<br>
 Brugersamtykke er deaktiveret for lejeren.
 
-**_Der er flere mulige fejlrettelser:_ **
+**_Der er flere mulige fejlrettelser:_**
 
 *Aktivere brugersamtykke for hele lejeren (alle brugere, alle programmer)*
 
