@@ -55,7 +55,7 @@
           href: desktop-latest-update.md
         - name: Modelleringsvisning i Power BI Desktop
           href: desktop-modeling-view.md
-        - name: Sammenlægninger i Power BI Desktop (prøveversion)
+        - name: Sammenlægninger i Power BI Desktop
           href: desktop-aggregations.md
         - name: Sammensatte modeller i Power BI Desktop
           href: desktop-composite-models.md
@@ -234,7 +234,7 @@
             - name: Typer af filtre
               href: power-bi-report-filter-types.md
             - name: Prøv den nye filteroplevelse
-              href: power-bi-report-filter-preview.md
+              href: power-bi-report-filter.md
             - name: Brug Hurtigmålinger
               href: desktop-quick-measures.md
             - name: Brug af Hvad hvis-parametre
@@ -453,6 +453,8 @@
               href: service-support-options.md
             - name: Ti tips til at få hjælp
               href: service-tips-for-finding-help.md
+            - name: Meddelelser om tjenesteafbrydelser
+              href: service-interruption-notifications.md
         - name: Udvid Power BI
           items:
             - name: Microsoft Flow og Power BI
@@ -685,6 +687,8 @@
           items:
             - name: Se en sideinddelt rapport
               href: paginated-reports-view-power-bi-service.md
+            - name: Understøttede datakilder
+              href: paginated-reports-data-sources.md
             - name: Interager med parametre
               href: paginated-reports-view-parameters.md
             - name: Tilmeld dig selv eller andre
