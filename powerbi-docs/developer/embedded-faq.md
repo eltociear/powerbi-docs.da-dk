@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/27/2019
-ms.openlocfilehash: 1bee1b31b5e264ec8cd092a90484fc20866db0b3
-ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.openlocfilehash: af3c22197e4d6783787bd72c9cf010bf6db64bc1
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66823359"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270965"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -95,7 +95,7 @@ Her er en ufuldstændig liste over funktionsforskelle.
 
 * Brug [Power BI-administrationsportalen](../service-admin-portal.md#power-bi-embedded).
 
-* Download den [metriske app](https://review.docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) i Power BI.
+* Download den [metriske app](https://docs.microsoft.com/power-bi/service-admin-premium-monitor-capacity) i Power BI.
 
 * Brug [logføring af Azure-diagnosticering](azure-pbie-diag-logs.md).
 

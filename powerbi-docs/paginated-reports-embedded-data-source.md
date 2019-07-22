@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 3dcc8211f6752d272d550dfaff343374866187c9
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.openlocfilehash: 83e3ffbae43d25e89cf52077acaa731cdee9b502
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345490"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270839"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Opret en integreret datakilde for sideinddelte rapporter i Power BI-tjenesten
 
@@ -32,7 +32,7 @@ I forbindelse med følgende datakilder skal du bruge følgende indstilling for [
 
 - Power BI Premium-datasæt
 
-Sideinddelte rapporter opretter forbindelse til datakilder i det lokale miljø via en [Power BI-gateway](service-gateway-getting-started.md). Du kan konfigurere gatewayen, når du har publiceret rapporten til Power BI-tjenesten.
+Sideinddelte rapporter opretter forbindelse til datakilder i det lokale miljø via en [Power BI-gateway](service-gateway-onprem.md). Du kan konfigurere gatewayen, når du har publiceret rapporten til Power BI-tjenesten.
 
 Se [Rapportdata i Power BI Report Builder](report-builder-data.md) for at få mere detaljerede oplysninger.
 
@@ -76,7 +76,7 @@ Sideinddelte rapporter, der opretter forbindelse til Power BI-datasæt, følger 
 
 - .rdl i samme arbejdsområde som datasæt (samme ejer): Understøttet
 - .rdl i andet arbejdsområde end datasæt (samme ejer): Understøttet
-- Delt .rdl: Du skal have tildelt oprettelsestilladelser til hver bruger, der få vist rapporten på datasætniveau
+- Delt .rdl: Du skal have tildelt oprettelsestilladelser til hver bruger, der får vist rapporten på datasætniveau
 - Delt app: Du skal have tildelt oprettelsestilladelser til hver bruger, der får vist rapporten på datasætniveau
 - .rdl i samme arbejdsområde som datasæt (anden ejer): Understøttet
 - .rdl i samme arbejdsområde som datasæt (anden ejer): Du skal have tildelt oprettelsestilladelser til hver bruger, der får vist rapporten på datasætniveau

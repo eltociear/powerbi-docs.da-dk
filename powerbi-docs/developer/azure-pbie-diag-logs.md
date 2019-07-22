@@ -8,12 +8,12 @@ ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: 695d1f219b3438f07125447db04aad3ba971683a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: dc1a034a062ca07fd9f31a847378913fd7ee4002
+ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61385302"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68289857"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Logføring af diagnosticering for Power BI Embedded på Azure
 
@@ -22,7 +22,6 @@ Med [diagnosticeringslogge for Azure-ressourcer](https://docs.microsoft.com/azur
 Ved hjælp af diagnosticering kan du får svar på nogle få scenarier, f.eks.:
 
 * Registrering af langvarige eller problematiske forespørgsler.
-* Registrering af fejl, når du når grænsen for din kapacitet.
 * Afledning af [målepunkter for kapacitet](https://powerbi.microsoft.com/blog/power-bi-developer-community-april-update/).
 * Sporing af brug af bestemte datasæt.
 
@@ -127,9 +126,6 @@ Programkategorien instruerer ressourcen i at logføre følgende hændelser, og h
 | JobID | 0 | Job-id for status. |
 | ObjectID | 464 | Objekt-id |
 | ObjectType | 802012 | Objekttype |
-| ObjectName | SalesLT Customer | Objektnavn |
-| ObjectPath | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527.Model.SalesLT Customer | Objektsti. En kommasepareret liste over overordnede, startende med objektets overordnede. |
-| ObjectReference | <Object><Table>SalesLT Customer</Table><Model>Model</Model><Database>5eaa550e-06ac-4adf-aba9-dbf0e8fd1527</Database></Object> | Objektreference. Kodet som XML for alle overordnede, og der bruges koder til at beskrive objektet. |
 | EndTime | 2018-04-06T18:30:11.9137358Z | Tidspunkt, hvor hændelsen ophørte. |
 | Varighed | 0 | Tid (i millisekunder), der optages af hændelsen. |
 | SessionType | Bruger | Sessionstype (hvilken enhed udløste handlingen). |
@@ -138,7 +134,6 @@ Programkategorien instruerer ressourcen i at logføre følgende hændelser, og h
 | Severity | 0 | Niveau for alvorsgrad for en undtagelse. |
 | Vellykket | 1 | 1 = succes. 0 = fejl (1 betyder f.eks., at tilladelseskontrol er udført uden fejl, og 0 betyder, at der er fejl i denne kontrol). |
 | Error | 0 | Fejlnummer for en given hændelse. |
-| TextData | SET DC_KIND=\"AUTO\";  SELECT  [SalesLT Customer (464)].[rowguid (606)] AS [SalesLT Customer (464)$rowguid (606)]  FROM [SalesLT Customer (464)]; [Estimated size (volume marshalling bytes): 850 6800] | Tekstdata, der er knyttet til hændelsen. |
 | ConnectionID | 3 | Entydigt forbindelses-id. |
 | DatasetID | 5eaa550e-06ac-4adf-aba9-dbf0e8fd1527 | Id'et for det datasæt, som brugerens erklæring kører på. |
 | SessionID | 3D063F66-A111-48EE-B960-141DEBDA8951 | Sessions-GUID. |
@@ -146,8 +141,7 @@ Programkategorien instruerer ressourcen i at logføre følgende hændelser, og h
 | ClientProcessID | null | Proces-id for klientprogrammet. |
 | ApplicationName | null | Navnet på det klientprogram, der oprettede forbindelse til serveren. |
 | CapacityName | pbi641fb41260f84aa2b778a85891ae2d97 | Navnet på Power BI Embedded-kapacitetsressourcen. |
-| RequestParameters |  |  |
-| RequestProperties |  |  |
+
 
 ### <a name="allmetrics"></a>Alle målepunkter
 

@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/31/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 68e21e14227aff538c56951249edbddc249d68eb
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 0ef74a776e7220477a36d652ce1a48ebbf60c267
+ms.sourcegitcommit: 850e7883e21190151684e32f4d957beecd08e959
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497982"
+ms.lasthandoff: 07/20/2019
+ms.locfileid: "68362735"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Overvåg Premium-kapaciteter vha. appen
 
@@ -41,7 +41,7 @@ Vær tålmodig. Det tager nogle få minutter at installere og opdatere målepunk
 
 Hvis du vil kontrollere, hvornår programmet Premium Capacity Metrics sidst blev opdateret, skal du klikke på **Indstillinger** > **Datasæt** > **Power BI Premium Capacity Metrics** > **Opdateringshistorik**. 
 
-![Opdateringshistorik under Indstillinger](media/settings-refresh-history.png)
+![Opdateringshistorik under Indstillinger](media/service-admin-premium-monitor-capacity/settings-refresh-history.png)
 
 Den seneste opdatering vises. Ellers skal du klikke på **Opdateringshistorik** for at se planlagte opdateringer og opdateringer efter behov.
 

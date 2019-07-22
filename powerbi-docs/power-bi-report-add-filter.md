@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 06/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 7cd2c7acbec9b8d21aeb78cbb159df2a46b12564
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 903883290def07ee6467dbebab1c7b31dec80b74
+ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67409775"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68342187"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Føj et filter til en rapport i Power BI
 
 I denne artikel forklares det, hvordan du føjer et sidefilter, visualiseringsfilter, rapportfilter eller detaljeadgangsfilter til en rapport i Power BI. Eksemplerne i denne artikel er i Power BI-tjenesten. Trinnene er stort set de samme i Power BI Desktop.
 
-**Vidste du det?** Power BI indeholder en ny filtreringsoplevelse, der i øjeblikket findes som en prøveversion. Læs mere om [den nye filtreringsoplevelse i Power BI-rapporter](power-bi-report-filter-preview.md).
+**Vidste du det?** Power BI indeholder en ny filtreringsoplevelse, der i øjeblikket findes som en prøveversion. Læs mere om [den nye filtreringsoplevelse i Power BI-rapporter](power-bi-report-filter.md).
 
 ![Ny filteroplevelse](media/power-bi-report-add-filter/power-bi-filter-reading.png)
 
