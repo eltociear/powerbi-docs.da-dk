@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: fbae2a8b577c52ae597d44bd6ea9913510c4c65c
-ms.sourcegitcommit: dc73e932c9982a4aa0b0ec5297fb9f94c6156bc5
+ms.openlocfilehash: 783f82ecd5c6dea5c26b096b8b1bfcffe388864b
+ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66518577"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68391442"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Udrulning og administration af Premium-kapaciteter i Power BI
 
@@ -437,7 +437,7 @@ I Power BI-tjenesten er et arbejdsområde, der er tildelt til en Premium-kapacit
 
 ### <a name="monitoring-capacities"></a>Overvågning af kapaciteter
 
-Overvågning af Premium-kapaciteter giver administratorer en forståelse af, hvordan kapaciteterne kører. Kapaciteter kan overvåges ved hjælp af den [Power BI Premium-kapacitet målepunkter app](service-admin-premium-monitor-capacity.md) eller [Power BI-administrationsportalen](service-admin-premium-monitor-portal.md).
+Overvågning af Premium-kapaciteter giver administratorer en forståelse af, hvordan kapaciteterne kører. Kapaciteter kan overvåges ved hjælp af [appen Power bi Premium Capacity Metrics](service-admin-premium-monitor-capacity.md) eller [Power bi administrations portalen](service-admin-premium-monitor-portal.md).
 
 #### <a name="interpreting-metrics"></a>Fortolkning af målepunkter
 
@@ -698,7 +698,9 @@ Testindholdet kan føjes til de arbejdsområder, der er oprettet på Azure-kapac
 
 Det er vigtigt, at testene gentages: Testene skal køres flere gange, og de skal levere ca. det samme resultat hver gang. Et gennemsnit af disse resultater kan bruges til at ekstrapolere og estimere arbejdsbelastning under ægte produktionsbetingelser.
 
-I forbindelse med en belastningstest bør du overveje at udvikle et program til belastningstest for at simulere en realistisk arbejdsbelastning. Fremgangsmåden til dette er ikke omfattet af dette whitepaper. Du kan få flere oplysninger herunder et kodeeksempel i webinaret [Load Testing Power BI Applications with Visual Studio Load Test](https://blogs.msdn.microsoft.com/charles_sterling/2018/04/04/webinar-load-testing-power-bi-applications-with-visual-studio-load-test/).
+Hvis du allerede har en kapacitet og de rapporter, du vil indlæse, skal du bruge [PowerShell-værktøjet](https://aka.ms/PowerBILoadTestingTool) til indlæsning af PowerShell til hurtigt at generere en belastningstest. Værktøjet gør det muligt for dig at anslå, hvor mange instanser af hver rapport din kapacitet kan køre i en time. Du kan bruge værktøjet til at vurdere din kapacitets evne til individuel rapportgengivelse eller til at gengive flere forskellige rapporter parallelt. Du kan finde flere oplysninger i videoen [Microsoft Power bi: Premium-](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw)kapacitet.
+
+Hvis du vil generere en mere kompleks test, skal du overveje at udvikle et program til belastningstest, der simulerer en realistisk arbejdsbelastning. Du kan finde flere oplysninger under webinar [belastningstest Power bi programmer med Visual Studio belastningstest](https://blogs.msdn.microsoft.com/charles_sterling/2018/04/04/webinar-load-testing-power-bi-applications-with-visual-studio-load-test/).
 
 ## <a name="exploring-real-world-scenarios"></a>Udforskning af virkelige scenarier
 
