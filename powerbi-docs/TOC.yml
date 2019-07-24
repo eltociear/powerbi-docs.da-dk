@@ -73,7 +73,7 @@
           href: desktop-data-source-prerequisites.md
         - name: Standardmedlem i flerdimensionelle modeller i Power BI
           href: desktop-default-member-multidimensional-models.md
-        - name: Ofte stillede spørgsmål om brugerdefinerede visualiseringer
+        - name: Ofte stillede spørgsmål om visualiseringer
           href: power-bi-custom-visuals-faq.md
     - name: Sådan gør du
       items:
@@ -1067,48 +1067,70 @@
       items:
         - name: Oversigt
           items:
-            - name: Brugerdefinerede visualiseringer i Power BI
+            - name: Visualiseringer i Power BI
               href: power-bi-custom-visuals.md
         - name: Selvstudier
           items:
-            - name: Udvikling af en brugerdefineret visualisering i Power BI
+            - name: Udvikl en Power BI-visualisering
               href: developer/custom-visual-develop-tutorial.md
-            - name: Tilføjelse af formateringsindstillinger
+            - name: Tilføj formateringsindstillinger
               href: developer/custom-visual-develop-tutorial-format-options.md
+            - name: Tilføj enhedstests for det visuelle projekt
+              href: developer/visuals/unit-tests-introduction.md
         - name: Begreber
           items:
-            - name: Brugerdefinerede visualiseringer til organisationer i Power BI
+            - name: Visualiseringer til organisationer i Power BI
               href: power-bi-custom-visuals-organization.md
             - name: Retningslinjer for Power BI-visualiseringer
               href: developer/guidelines-powerbi-visuals.md
-            - name: Ofte stillede spørgsmål om brugerdefinerede visualiseringer
+            - name: Ofte stillede spørgsmål om visualiseringer
               href: power-bi-custom-visuals-faq.md
-            - name: Brug af funktionalitet
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/capabilities/'
+            - name: Brug af funktionaliteter
+              href: developer/visuals/capabilities.md
             - name: Tilknytning af datavisning
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/dataviewmappings/'
-            - name: Objekt og egenskaber
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties/'
+              href: developer/visuals/dataview-mappings.md
+            - name: Objekter og egenskaber
+              href: developer/visuals/objects-properties.md
             - name: Avanceret redigeringstilstand
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/advanced-edit-mode/'
-            - name: Vejledning til overførsel til versioneret API
-              href: 'https://microsoft.github.io/PowerBI-visuals/docs/concepts/migrating-to-versioned-api-guide/'
+              href: developer/visuals/advanced-edit-mode.md
         - name: Sådan gør du
           items:
-            - name: Få en brugerdefineret visualisering certificeret
+            - name: Få en visualisering certificeret
               href: power-bi-custom-visuals-certified.md
             - name: Publicer brugerdefinerede visuals i AppSource
               href: developer/office-store.md
             - name: Brug R-drevne brugerdefinerede visuelle elementer i Power BI
               href: desktop-r-powered-custom-visuals.md
-            - name: Fejlfind
-              items:
-                - name: Foretag fejlfinding af udvikling af brugerdefinerede visualiseringer
-                  href: power-bi-custom-visuals-troubleshoot.md
+            - name: Interaktioner mellem visualiseringer
+              href: developer/visuals/visuals-interactions.md
+            - name: Føj værktøjstip til visualiseringer
+              href: developer/visuals/add-tooltips.md
+            - name: Tilføj analyserude
+              href: developer/visuals/analytics-pane.md
+            - name: Filtrer visualiseringer
+              href: developer/visuals/filter-api.md
+            - name: Hent flere data
+              href: developer/visuals/fetch-more-data.md
+            - name: Tilføj understøttelse af bogmærker
+              href: developer/visuals/bookmarks-support.md
+            - name: Fremhæv data i visualiseringer
+              href: developer/visuals/highlight.md
+            - name: Tilføj understøttelse af tilstand med høj kontrast
+              href: developer/visuals/high-contrast-support.md
+            - name: Aktivér synkroniseringsudsnit
+              href: developer/visuals/enable-sync-slicers.md
+            - name: Fejlfind visualiseringer i Power BI
+              href: power-bi-custom-visuals-troubleshoot.md
         - name: Reference
           items:
-            - name: API'er
-              href: 'https://microsoft.github.io/PowerBI-visuals/api/references/ivisualhost/'
+            - name: Landingside
+              href: developer/visuals/landing-page.md
+            - name: Start URL-adresse
+              href: developer/visuals/launch-url.md
+            - name: Gengivelse af hændelser
+              href: developer/visuals/event-service.md
+            - name: Sortering
+              href: developer/visuals/sort-options.md
         - name: Ressourcer
           items:
             - name: Udviklingscenter
@@ -1117,6 +1139,8 @@
               href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
             - name: Git-lager for brugerdefinerede visualiseringer
               href: 'https://go.microsoft.com/fwlink/?linkid=848277'
+            - name: Oprettelse af SSL-certifikat
+              href: developer/visuals/create-ssl-certificate.md
     - name: Automatisering
       items:
         - name: Oversigt
