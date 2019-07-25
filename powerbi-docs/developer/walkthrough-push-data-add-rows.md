@@ -311,7 +311,7 @@ Nedenfor kan du se den [komplette kodeliste](#code).
     }
 ```
 
-Selvom vi angiver, at vi ** _//Henter det første id_** i ovenstående kode, er den korrekte fremgangsmåde at søge i datasættet efter navn.
+Selvom vi angiver, at vi **_//Henter det første id_** i ovenstående kode, er den korrekte fremgangsmåde at søge i datasættet efter navn.
 
 ## <a name="next-steps"></a>Næste trin
 [Send data til et Power BI-dashboard](walkthrough-push-data.md)  
