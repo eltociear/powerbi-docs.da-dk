@@ -44,13 +44,13 @@ Når du får vist en rapport, der indeholder parametre, viser værktøjslinjen f
   
 1. **Ruden Parametre** På værktøjslinjen i rapportfremviseren vises der en prompt og en standardværdi for de enkelte parametre. Du kan tilpasse layoutet af parametre i ruden Parametre.  
   
-2. **@SalesDate-parameteren** Parameteren @SalesDate er af datatypen **DateTime**. Prompten Vælg datoen vises ud for tekstfeltet. Hvis du vil redigere datoen, skal du skrive en ny dato i tekstfeltet eller bruge kalenderkontrolelementet.  
+2. **@SalesDate Parameteren** parameteren @SalesDate er datatype **DateTime**. Prompten Vælg datoen vises ud for tekstfeltet. Hvis du vil redigere datoen, skal du skrive en ny dato i tekstfeltet eller bruge kalenderkontrolelementet.  
   
-3. **@ShowAll-parameteren** Parameteren @ShowAll er af datatypen **Boolesk**. Brug alternativknapperne til at angive **Sand** eller **Falsk**.  
+3. **@ShowAll parameteren** Parameteren @ShowAll er af datatypen **Boolesk**. Brug alternativknapperne til at angive **Sand** eller **Falsk**.  
   
 4. **Vis eller skjul håndtaget til parameterområde** På værktøjslinjen i rapportfremviseren skal du klikke på pilen for at vise eller skjule parameterruden.  
   
-5. **@CategoryQuota-parameteren** Parameteren @CategoryQuota er af datatypen **Flydende**, så den skal have en numerisk værdi.  @CategoryQuota er angivet til at tillade flere værdier.  
+5. **@CategoryQuota parameteren** Parameteren @CategoryQuota er af datatypen **Flydende**, så den skal have en numerisk værdi.  @CategoryQuota er angivet til at tillade flere værdier.  
   
 6. **Få vist rapport** Når du har angivet parameterværdier, skal du klikke på **Vis rapport** for at køre rapporten. Hvis alle parametre har standardværdier, køres rapporten automatisk ved første visning.  
   
