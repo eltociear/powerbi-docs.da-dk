@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/07/2019
 ms.author: davidi
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 79b8ae80413cc54b065d12bf36ccb1651a670812
-ms.sourcegitcommit: ec5b6a9f87bc098a85c0f4607ca7f6e2287df1f5
+ms.openlocfilehash: 7500b5b5ff7f3eabde730b527c16fb6fe2570b89
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66051582"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523539"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-using-azure-active-directory-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere vha. Azure Active Directory B2B
 
@@ -265,7 +265,7 @@ Power BI-integration med Azure AD B2B giver Contoso en problemfri og nem måde a
     ![Invitationslink](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_17.png)
 
 
-    Når gæstebrugere klikker på linket, kan de få adgang til indhold i Contoso Azure AD-lejer.
+    Når gæste brugerne klikker på linket, kan de få adgang til indhold i contoso Azure AD-lejeren.
 
     > [!NOTE]
     > Det er muligt at ændre layoutet for invitationsmailen ved hjælp af brandingfunktionen i Azure AD, som beskrevet [her](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-invitation-email).
@@ -275,7 +275,7 @@ Power BI-integration med Azure AD B2B giver Contoso en problemfri og nem måde a
 
     Hvad nu hvis Contoso ikke kender alle de gæstebrugere, det skal inviteres på forhånd? Eller hvad nu hvis analytikeren i Contoso, der oprettede BI-portalen, gerne selv vil distribuere indhold til gæstebrugerne? Vi understøtter også dette scenarie i Power BI med ad hoc-invitationer.
 
-    Analytikeren kan blot tilføje eksterne brugere til appens adgangsliste, når de udgive den. Af gæstebrugere får en invitation, og når de har accepteret det, de omdirigeres automatisk til Power BI-indholdet.
+    Analytikeren kan bare tilføje de eksterne brugere på adgangslisten til appen, når de udgiver dem. Gæste brugerne modtager en invitation, og når de har accepteret den, bliver de automatisk omdirigeret til Power BI indhold.
 
     ![Tilføj ekstern bruger](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_18.png)
 
@@ -330,14 +330,14 @@ Power BI's integration med Azure AD B2B fungerer sammen med alle mailadresser i 
 ![Diagram over integrationsforløb](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_23.png)
 
 
-Vær opmærksom på, at Azure Active Directory-kontoen anvendes eller oprettes i den eksterne parts Azure AD, da det gør det muligt for Lucy at benytte sit eget brugernavn og sin egen adgangskode. Hendes legitimationsoplysninger vil automatisk holde op med at virke i andre lejere, når hun forlader virksomheden, når hendes organisation også bruger Azure AD.
+Det er vigtigt at registrere, at Azure AD-kontoen vil blive brugt eller oprettet i den eksterne parts Azure AD. Dette gør det muligt for Lucy at bruge deres eget Brugernavn og adgangskode, og deres legitimationsoplysninger stopper automatisk med at arbejde med andre lejere, når Lucy forlader virksomheden, når deres organisation også bruger Azure AD.
 
 ## <a name="licensing"></a>Licensering
 
 Contoso kan vælge en af de tre metoder for at give gæstebrugere fra virksomhedens leverandører og partnerorganisationer licens til at få adgang til Power BI-indhold.
 
 > [!NOTE]
-> _Det gratis Azure AD B2B-niveau er tilstrækkeligt til at bruge Power BI sammen med Azure AD B2B. Visse avancerede Azure AD B2B-funktioner som f.eks. dynamiske grupper kræver yderligere licenser. Se dokumentationen til Azure AD B2B for at få flere oplysninger:_ [_https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
+> _Det gratis Azure AD B2B-niveau er tilstrækkeligt til at bruge Power BI sammen med Azure AD B2B. Visse avancerede Azure AD B2B-funktioner som f.eks. dynamiske grupper kræver yderligere licenser. Se dokumentationen til Azure AD B2B for at få flere oplysninger:_ [ _https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance_ ](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance)
 
 ### <a name="approach-1-contoso-uses-power-bi-premium"></a>Metode 1: Contoso bruger Power BI Premium
 
@@ -362,7 +362,7 @@ Med denne metode tildeler Contoso Pro-licenser til gæstebrugere fra partnerorga
 
 ### <a name="approach-3-guest-users-bring-their-own-power-bi-pro-license"></a>Metode 3: Gæstebrugeren benytter sin egen Power BI Pro-licens
 
-Med denne metode tildeler Leverandør1 en Power BI Pro-licens til Lucy. Hun kan derefter få adgang til Contosos Power BI-app med denne licens. Eftersom Lucy kan bruge Pro-licensen fra sin egen organisation til at få adgang til et eksternt Power BI-miljø, kaldes denne fremgangsmåde nogle gange _Medbring din egen licens_. Hvis begge organisationer bruger Power BI, er dette den mest fordelagtige licenseringsmetode for den overordnede analyseløsning og minimerer den tid, der bruges på at tildele licenser til eksterne brugere.
+Med denne metode tildeler Leverandør1 en Power BI Pro-licens til Lucy. De kan derefter få adgang til Contosos Power BI-app med denne licens. Da Lucy kan bruge deres Pro-licens fra deres egen organisation, når der opnås adgang til et eksternt Power BI miljø, kaldes denne tilgang nogle gange for at tage _din egen licens_ (BYOL). Hvis begge organisationer bruger Power BI, er dette den mest fordelagtige licenseringsmetode for den overordnede analyseløsning og minimerer den tid, der bruges på at tildele licenser til eksterne brugere.
 
 > [!NOTE]
 > _Den Pro-licens, der tildeles til Lucy af Leverandør1, gælder for alle Power BI-lejere, hvor Lucy er en gæstebruger. Pro-licenser giver adgang til indhold, der ikke er i en Power BI Premium-kapacitet. Eksterne brugere med en Pro-licens er dog som standard begrænset til kun at forbruge. Dette kan ændres ved at benytte den metode, der er beskrevet i detaljer i afsnittet_  _Mulighed for eksterne brugere for at redigere og administrere indhold i Power BI_  _senere i dette dokument._
@@ -408,7 +408,7 @@ Når dette løses af Azure AD, får Contoso vist navnet i vinduet, der nu er par
 
 ![Vis roller](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_32.png)
 
-Når brugeren nu åbner den app, som blev delt med ham, får han kun vist en rapport med data fra Europa:
+Når denne bruger åbner den app, der er delt med dem, vises der nu kun en rapport med data fra Europa:
 
 ![Få vist indhold](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_33.png)
 
@@ -438,7 +438,7 @@ Contoso opretter også en anden "AllRole" for sine interne brugere, der kan få 
 
 Efter at have uploadet Power BI Desktop-filen til tjenesten kan Contoso tildele gæstebrugere til "SecurityRole" og interne brugere til "AllRole".
 
-Nu, når gæstebrugere åbner rapporten, de ser kun salg fra gruppen SV.:
+Når gæste brugerne åbner rapporten, kan de kun se salg fra gruppe A:
 
 ![Kun fra gruppe A](media/whitepaper-azure-b2b-power-bi/whitepaper-azure-b2b-power-bi_38.png)
 
@@ -555,7 +555,7 @@ Contoso kan håndhæve politikker for betinget adgang for gæstebrugere, der har
 
 Selvom Azure AD B2B gør det nemt at dele data og rapporter på tværs af organisationer, er der flere andre fremgangsmåder, som ofte bruges, og som i visse tilfælde kan være bedre.
 
-### <a name="alternative-option-1-create-duplicate-identities-for-partner-users"></a>1. alternative mulighed: Opret duplikerede identiteter for partnerbrugere
+### <a name="alternative-option-1-create-duplicate-identities-for-partner-users"></a>1\. alternative mulighed: Opret duplikerede identiteter for partnerbrugere
 
 Med denne indstilling skal Contoso oprette duplikerede id'er for hver partnerbruger i Contoso-lejeren, som vist på følgende billede. Contoso kan derefter i Power BI dele de relevante rapporter, dashboards eller apps med de tildelte identiteter.
 
@@ -575,7 +575,7 @@ Med denne indstilling skal Contoso oprette duplikerede id'er for hver partnerbru
 - Når brugeren forlader organisationen, har vedkommende fortsat adgang til Contosos ressourcer, indtil Contoso-administratoren sletter vedkommendes konto manuelt.
 - Contoso-administratorer skal administrere gæstens identitet, herunder oprettelse, nulstilling af adgangskoder osv.
 
-### <a name="alternative-option-2-create-a-custom-power-bi-embedded-application-using-custom-authentication"></a>2. alternative mulighed: Opret et brugerdefineret Power BI Embedded-program ved hjælp af brugerdefineret godkendelse
+### <a name="alternative-option-2-create-a-custom-power-bi-embedded-application-using-custom-authentication"></a>2\. alternative mulighed: Opret et brugerdefineret Power BI Embedded-program ved hjælp af brugerdefineret godkendelse
 
 En anden mulighed for Contoso er at oprette sit eget brugerdefinerede integrerede Power BI-program med brugerdefineret godkendelse (["Appen ejer data"](https://docs.microsoft.com/power-bi/developer/embed-sample-for-customers)). Selvom mange organisationer ikke har tid eller ressourcer til at oprette et brugerdefineret program til at distribuere Power BI-indhold til deres eksterne partnere, er dette den bedste metode for nogle organisationer og bør overvejes.
 
