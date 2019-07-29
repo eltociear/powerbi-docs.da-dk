@@ -1,6 +1,6 @@
 ---
-title: Fejlfinding af datagatewayen i det lokale miljø
-description: Artiklen viser, hvordan du kan foretage fejlfinding af problemer, som du har med datagatewayen i det lokale miljø. Der angives mulige løsninger på kendte problemer samt værktøjer, der kan være en hjælp for dig.
+title: Foretag fejlfinding af gateways – Power BI
+description: Denne artikel indeholder oplysninger om måder, hvorpå du kan foretage fejlfinding af problemer, du har med datagatewayen i det lokale miljø og Power BI. Der angives mulige løsninger på kendte problemer samt værktøjer, der kan være en hjælp for dig.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -8,116 +8,26 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 08/08/2018
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: afc4df99b90d6c6d7016f34983ca3691fb500325
-ms.sourcegitcommit: 80961ace38ff9dac6699f81fcee0f7d88a51edf4
+ms.openlocfilehash: a013b42f1cd7cc9b2c5c24f9636683a52687ceb8
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56223914"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271424"
 ---
-# <a name="troubleshooting-the-on-premises-data-gateway"></a>Fejlfinding af datagatewayen i det lokale miljø
+# <a name="troubleshoot-gateways---power-bi"></a>Foretag fejlfinding af gateways – Power BI
 
-I denne artikel beskrives nogle af de almindelige problemer, der kan opstå, når du bruger **datagatewayen i det lokale miljø**.
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-<!-- Shared Community & support links Include -->
-[!INCLUDE [gateway-onprem-tshoot-support-links-include](./includes/gateway-onprem-tshoot-support-links-include.md)]
-
-<!-- Shared Troubleshooting Install Include -->
-[!INCLUDE [gateway-onprem-tshoot-install-include](./includes/gateway-onprem-tshoot-install-include.md)]
+I denne artikel beskrives nogle af de almindelige problemer, der kan opstå, når du bruger **datagatewayen i det lokale miljø** med Power BI. Hvis der opstår et problem, som ikke er angivet nedenfor, kan du bruge [community'erne](http://community.powerbi.com) til Power BI eller oprette en [supportanmodning](http://powerbi.microsoft.com/support).
 
 ## <a name="configuration"></a>Konfiguration
 
-### <a name="how-to-restart-the-gateway"></a>Sådan genstarter du gatewayen
-
-Gatewayen kører som en Windows-tjeneste, så du kan starte og stoppe den på flere måder. Du kan f.eks. åbne en kommandoprompt med administratorrettigheder på den computer, hvor gatewayen kører, og derefter køre en af følgende kommandoer:
-
-* Kør følgende kommando for at stoppe tjenesten:
-
-    ```
-    net stop PBIEgwService
-    ```
-
-* Kør følgende kommando for at starte tjenesten:
-
-    ```
-    net start PBIEgwService
-    ```
-
-### <a name="log-file-configuration"></a>Konfiguration af logfil
-
-Loggene for gatewaytjenesten kategoriseres i tre buckets: oplysninger, fejl og netværk. Denne kategorisering sikrer bedre fejlfinding, hvor du har mulighed for at fokusere på et bestemt område afhængigt af fejlen eller problemet. Du kan se de tre kategorier i følgende stykke af konfigurationsfilen for gatewayen: `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log`.
-
-```xml
-  <system.diagnostics>
-    <trace autoflush="true" indentsize="4">
-      <listeners>
-        <remove name="Default" />
-        <add name="ApplicationFileTraceListener"
-             type="Microsoft.PowerBI.DataMovement.Pipeline.Common.Diagnostics.RotatableFilesManagerTraceListener, Microsoft.PowerBI.DataMovement.Pipeline.Common"
-             initializeData="%LOCALAPPDATA%\Microsoft\On-premises data gateway\,GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50" />
-      </listeners>
-    </trace>
-  </system.diagnostics>
-```
-
-Denne fil findes som standard under: *\Programmer\Datagateway i det lokale miljø\Microsoft.PowerBI.EnterpriseGateway.exe.config*. Du konfigurerer antallet af logfiler, du vil bevare, ved at ændre det første tal (20 i dette eksempel): `GatewayInfo.log,GatewayErrors.log,GatewayNetwork.log,20,50`.
-
-### <a name="error-failed-to-create-a-gateway-try-again"></a>Fejl: Der kunne ikke oprettes en gateway. Prøv igen
-
-Alle oplysningerne er tilgængelige, men kaldet til Power BI-tjenesten returnerede en fejl. Fejlen og en aktivitets-id vises. Der er flere årsager til, at dette kan ske. Du kan indsamle og gennemse logfilerne som angivet nedenfor, hvis du vil have flere oplysninger.
-
-Dette kan også være på grund af problemer med proxykonfigurationen. Brugergrænsefladen tillader ikke proxykonfiguration. Du kan få mere at vide mere om at foretage [ændringer af proxykonfiguration](service-gateway-proxy.md)
-
-### <a name="error-failed-to-update-gateway-details-please-try-again"></a>Fejl: Oplysninger om gatewayen kunne ikke opdateres. Prøv igen
-
-Oplysninger blev modtaget fra Power BI-tjenesten til gatewayen. Oplysninger blev videresendt til den lokale Windows-tjeneste, men den kunne ikke returnere. Eller en symmetrisk nøgle blev ikke oprettet. Den indre undtagelse kan ses under **Vis detaljer**. Hvis du vil have flere oplysninger, kan du indsamle og gennemse logfilerne som angivet nedenfor.
-
 ### <a name="error-power-bi-service-reported-local-gateway-as-unreachable-restart-the-gateway-and-try-again"></a>Fejl: Power BI-tjenesten rapporterede, at den lokale gateway ikke er tilgængelig. Genstart gatewayen, og prøv igen
 
-I slutningen af konfigurationen kaldes Power BI-tjenesten igen for at bekræfte gatewayen. Power BI-tjenesten rapporterer ikke gatewayen som *live*. Kommunikationen kan muligvis gennemføres, hvis Windows-tjenesten startes igen. Du kan indsamle og gennemse logfilerne som angivet nedenfor, hvis du vil have flere oplysninger.
-
-### <a name="script-error-during-sign-into-power-bi"></a>Scriptfejl under logon til Power BI
-
-Du modtager måske en scriptfejl, når du logger på Power BI som led i konfigurationen af datagatewayen i det lokale miljø. Problemet bliver løst med installation af følgende sikkerhedsopdatering. Den kan installeres via Windows Update.
-
-[MS16-051: Sikkerhedsopdatering til Internet Explorer: 10. maj 2016 (KB 3154070)](https://support.microsoft.com/kb/3154070)
-
-### <a name="gateway-configuration-failed-with-a-null-reference-exception"></a>Konfigurationen af gatewayen mislykkedes med en undtagelse pga. null-reference
-
-Der kan opstå en fejl, som er meget lig følgende.
-
-        Failed to update gateway details.  Please try again.
-        Error updating gateway configuration.
-
-Dette omfatter en staksporing, og denne staksporing kan inkludere følgende meddelelse.
-
-        Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.CouldNotUpdateGatewayConfigurationException: Error updating gateway configuration. ----> System.ArgumentNullException: Value cannot be null.
-        Parameter name: serviceSection
-
-Hvis du opgraderer fra en ældre gateway, bevarer vi konfigurationsfilen. Der kan være et afsnit, som mangler. Når gatewayen prøver at læse det, kan ovenstående undtagelse fås pga. en null-reference.
-
-Benyt følgende fremgangsmåde for at løse problemet.
-
-1. Fjern gatewayen.
-2. Slet følgende mappe.
-
-        c:\Program Files\On-premises data gateway
-3. Installer gatewayen igen.
-4. Anvend evt. genoprettelsesnøglen til at gendanne en eksisterende gateway.
-
-## <a name="support-for-tls-12"></a>Understøttelse af TLS 1.2
-
-Datagatewayen i det lokale miljø bruger som standard TLS 1.2 (Transport Layer Security) til at kommunikere med Power BI-tjenesten. Hvis du vil sikre, at al gatewaytrafik bruger TLS 1.2, skal du muligvis tilføje eller redigere følgende registreringsdatabasenøgler på den computer, hvor gatewaytjenesten kører:
-
-```
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
-[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319]"SchUseStrongCrypto"=dword:00000001
-```
-
-> [!NOTE]
-> Når du tilføjer eller ændrer disse registreringsdatabasenøgler, anvendes ændringerne for alle .NET-programmer. Hvis du vil vide mere om, hvilke ændringer i registreringsdatabasen der påvirker TLS for andre programmer, skal du se [Indstillinger for TLS (Transport Layer Security) i registreringsdatabasen](https://docs.microsoft.com/windows-server/security/tls/tls-registry-settings).
+I slutningen af konfigurationen kaldes Power BI-tjenesten igen for at bekræfte gatewayen. Power BI-tjenesten rapporterer ikke gatewayen som live. Kommunikationen kan muligvis gennemføres, hvis Windows-tjenesten startes igen. Du kan indsamle og gennemse loggene, som beskrevet i [Indsaml logge fra programmet til datagatewayen i det lokale miljø](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app), for at få flere oplysninger.
 
 ## <a name="data-sources"></a>Datakilder
 
@@ -145,7 +55,7 @@ I **Vis detaljer** får du vist fejlkoden **DM_GWPipeline_UnknownError**.
 
 Du kan også se i hændelseslogfilerne > **Logfiler for programmer og tjenester** > **datagatewaytjenesten i det lokale miljø** for at få flere oplysninger.
 
-### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Fejl: Der opstod en fejl under forsøget på at oprette forbindelse til <server>. Detaljer: Vi har nået den ønskede datagateway, men gatewayen kan ikke få adgang til datakilden i det lokale miljø.
+### <a name="error-we-encountered-an-error-while-trying-to-connect-to-server-details-we-reached-the-data-gateway-but-the-gateway-cant-access-the-on-premises-data-source"></a>Fejl: Der opstod en fejl under forsøget på at oprette forbindelse til \<serveren\>. Detaljer: Vi har nået den ønskede datagateway, men gatewayen kan ikke få adgang til datakilden i det lokale miljø.
 
 Vi kunne ikke oprette forbindelse til den angivne datakilde. Sørg for at kontrollere de oplysninger, der er angivet for denne datakilde.
 
@@ -188,7 +98,7 @@ Sørg for, at din konto er angivet under fanen **Brugere** i datakilden i konfig
 
 ### <a name="error-you-dont-have-any-gateway-installed-or-configured-for-the-data-sources-in-this-dataset"></a>Fejl: Du har ikke nogen gateway, der er installeret eller konfigureret til datakilderne i dette datasæt.
 
-Kontrollér, at du har føjet en eller flere datakilder til gatewayen, som beskrevet i [Tilføj en datakilde](service-gateway-manage.md#add-a-data-source). Hvis gatewayen ikke vises på administrationsportalen under **Administrer gateways**, skal du prøve at rydde browsercachen eller logge af tjenesten og derefter logge på igen.
+Kontrollér, at du har føjet en eller flere datakilder til gatewayen, som beskrevet i [Tilføj en datakilde](service-gateway-data-sources.md#add-a-data-source). Hvis gatewayen ikke vises på administrationsportalen under **Administrer gateways**, skal du prøve at rydde browsercachen eller logge af tjenesten og derefter logge på igen.
 
 ## <a name="datasets"></a>Datasæt
 
@@ -218,8 +128,8 @@ Den nøjagtige begrænsning er 10 GB ikke-komprimerede data pr. tabel. Hvis du s
 
 Dette skyldes som regel et af nedenstående forhold.
 
-1. Oplysningerne om datakilden stemmer ikke overens med de oplysninger, der findes i det underliggende datasæt. Navn på server og database skal stemme overens mellem den datakilde, der er defineret for datagatewayen i det lokale miljø, og det, du angiver i Power BI Desktop. Hvis du bruger en IP-adresse i Power BI Desktop, skal datakilden for datagatewayen i det lokale miljø også bruge en IP-adresse.
-2. Der er ikke en tilgængelig datakilde på nogen gateway i din organisation. Du kan konfigurere datakilden på en ny eller eksisterende datagateway i det lokale miljø.
+1. Oplysningerne om datakilden matcher ikke de oplysninger, der findes i det underliggende datasæt. Navn på server og database skal stemme overens mellem den datakilde, der er defineret for datagatewayen i det lokale miljø, og det, du angiver i Power BI Desktop. Hvis du bruger en IP-adresse i Power BI Desktop, skal datakilden for datagatewayen i det lokale miljø også bruge en IP-adresse.
+2. Der er ingen tilgængelig datakilde på nogen gateway i din organisation. Du kan konfigurere datakilden på en ny eller eksisterende datagateway i det lokale miljø.
 
 ### <a name="error-data-source-access-error-please-contact-the-gateway-administrator"></a>Fejl: Adgangsfejl i datakilden. Kontakt gatewayadministratoren
 
@@ -227,7 +137,7 @@ Hvis denne rapport gør brug af en direkte forbindelse til Analysis Services, ka
 
 Du kan få bekræftet dette ved at gøre som angivet herunder.
 
-1. Find det effektive brugernavn i [gatewaylogfilerne](#logs).
+1. Find det effektive brugernavn i [gatewaylogfilerne](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 2. Når du har den værdi, der sendes, skal du bekræfte, at den er korrekt. Hvis det er din bruger, kan du bruge følgende kommando fra en kommandoprompt til at se UPN-værdien. UPN-værdien ligner en mailadresse.
 
         whoami /upn
@@ -241,213 +151,11 @@ Du kan eventuelt se, hvad Power BI henter fra Azure Active Directory.
         https://graph.windows.net/me?api-version=1.5
 4. Søg efter **userPrincipalName**.
 
-Hvis dit Azure Active Directory-UPN ikke stemmer overens med dit lokale Active Directory-UPN, kan du bruge funktionen [Tilknyt brugernavne](service-gateway-enterprise-manage-ssas.md#map-user-names) til at erstatte det med en gyldig værdi. Du kan også arbejde sammen med enten din lejeradministrator eller den lokale Active Directory-administrator om at få ændret dit UPN.
-
-<!-- Shared Troubleshooting Firewall/Proxy Include -->
-[!INCLUDE [gateway-onprem-tshoot-firewall-include](./includes/gateway-onprem-tshoot-firewall-include.md)]
-
-Du kan finde det datacenterområde, du befinder dig i, ved at gøre følgende:
-
-1. Vælg **?** i øverste højre hjørne af Power BI-tjenesten.
-2. Vælg **Om Power BI**.
-3. Dit dataområde vises under **Dine data er lagret i**.
-
-    ![Dataområde](media/service-gateway-onprem-tshoot/power-bi-data-region.png)
-
-Hvis du stadig ikke kan komme videre, kan du prøve at få en netværkssporing ved hjælp af et værktøj som [fiddler](#fiddler) eller netsh, selvom disse er avancerede indsamlingsmetoder, og det kan være nødvendigt at få hjælp til at analysere de indsamlede data. Du kan kontakte [support](https://support.microsoft.com) for at få hjælp.
-
-## <a name="performance"></a>Ydeevne
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IJ_DJ30VNk4?showinfo=0" frameborder="0" allowfullscreen></iframe>
-
-### <a name="performance-counters"></a>Ydelsestællere
-
-Der er en række ydelsestællere, der kan bruges til at måle aktiviteter for gatewayen. Det kan være nyttigt at vide, om der er en stor aktivitetsbelastning, så der kan være behov for en ny gateway. Disse tællere afspejler ikke, hvor lang tid noget tager.
-
-Der er adgang til disse tællere via Windows-værktøjet Ydelsesmåler.
-
-![](media/service-gateway-onprem-tshoot/gateway-perfmon.png)
-
-Der er generelle grupperinger af disse tællere.
-
-| Tællertype | Beskrivelse |
-| --- | --- |
-| ADO.NET |Dette bruges til alle DirectQuery-forbindelser. |
-| ADOMD |Dette bruges til Analysis Services 2014 og tidligere. |
-| OLEDB |Det bruges af visse datakilder. Det omfatter SAP HANA og Analysis Service 2016 eller senere. |
-| Miks |Dette omfatter alle importerede datakilder. Hvis du planlægger opdatering eller udfører en anmodet opdatering, går det gennem miksprogrammet. |
-
-Her er en liste over tilgængelige ydelsestællere.
-
-| Tæller | Beskrivelse |
-| --- | --- |
-| Antal åbne ADO.NET-forbindelser udført pr. sek. |Antal handlinger på åbne ADO.NET-forbindelser udført pr. sekund (gennemført eller mislykket). |
-| Antal åbne ADO.NET-forbindelser mislykket pr. sekund |Antal handlinger på åbne ADO.NET-forbindelser mislykket pr. sekund. |
-| Antal ADO.NET-forespørgsler udført pr. sekund |Antal ADO.NET-forespørgsler udført pr. sekund (gennemført eller mislykket). |
-| Antal ADO.NET-forespørgsler mislykket pr. sekund |Antal mislykkede ADO.NET-forespørgsler udført pr. sekund. |
-| Antal åbne ADOMD-forbindelser udført pr. sekund |Antal handlinger på åbne ADOMD-forbindelser udført pr. sekund (gennemført eller mislykket). |
-| Antal åbne ADOMD-forbindelser mislykket pr. sekund |Antal handlinger på åbne ADOMD-forbindelser mislykket pr. sekund. |
-| Antal ADOMD-forespørgsler udført pr. sekund |Antal ADOMD-forespørgsler udført pr. sekund (gennemført eller mislykket). |
-| Antal ADOMD-forespørgsler mislykket pr. sekund |Antal mislykkede ADOMD-forespørgsler udført pr. sekund. |
-| Antallet af alle åbne forbindelser udført pr. sekund |Antal handlinger på åbne forbindelser udført pr. sekund (gennemført eller mislykket). |
-| Antallet af alle åbne forbindelser mislykket pr. sekund |Antal handlinger på åbne forbindelser udført pr. sekund. |
-| Antallet af alle forespørgsler udført pr. sekund |Antal forespørgsler udført pr. sekund (gennemført eller mislykket). |
-| Antal elementer i ADO.NET-forbindelsesgruppen |Antal elementer i ADO.NET-forbindelsesgruppen. |
-| Antal elementer i OLEDB-forbindelsesgruppen |Antal elementer i OLEDB-forbindelsesgruppen. |
-| Antal elementer i Service Bus-gruppen |Antal elementer i Service Bus-gruppen. |
-| Antal åbne Miks-forbindelser udført pr. sekund |Antal handlinger på åbne Miks-forbindelser udført pr. sekund (gennemført eller mislykket). |
-| Antal åbne Miks-forbindelser mislykket pr. sekund |Antal handlinger på åbne Miks-forbindelser mislykket pr. sekund. |
-| Antal Miks-forespørgsler udført pr. sekund |Antal Miks-forespørgsler udført pr. sekund (gennemført eller mislykket). |
-| Antal Miks-forespørgsler mislykket pr. sekund |Antal mislykkede Miks-forespørgsler udført pr. sekund |
-| Antal mislykkede OLEDB-forespørgsler med flere resultatsæt pr. sekund |Antal mislykkede OLEDB-forespørgsler med flere resultatsæt udført pr. sekund. |
-| Antal OLEDB-forespørgsler med flere resultatsæt udført pr. sekund |Antal OLEDB-forespørgsler med flere resultatsæt udført pr. sekund (gennemført eller mislykket). |
-| Antal åbne OLEDB-forbindelser udført pr. sekund |Antal handlinger på åbne OLEDB-forbindelser udført pr. sekund (gennemført eller mislykket). |
-| Antal åbne OLEDB-forbindelser mislykket pr. sekund |Antal handlinger på åbne OLEDB-forbindelser mislykket pr. sekund. |
-| Antal OLEDB-forespørgsler udført pr. sekund |Antal OLEDB-forespørgsler med flere resultatsæt udført pr. sekund (gennemført eller mislykket). |
-| Antal OLEDB-forespørgsler mislykket pr. sekund |Antal OLEDB-forespørgsler med flere resultatsæt, der mislykkedes pr. sekund. |
-| Antal OLEDB-forespørgsler med enkelt resultatsæt udført pr. sekund |Antal OLEDB-forespørgsler med enkelt resultatsæt udført pr. sekund (gennemført eller mislykket). |
-| Antal mislykkede forespørgsler pr. sekund |Antal mislykkede forespørgsler udført pr. sekund. |
-| Antal OLEDB-forespørgsler med enkelt resultatsæt mislykket pr. sekund |Antal mislykkede OLEDB-forespørgsler med enkelt resultatsæt udført pr. sekund. |
-
-## <a name="reviewing-slow-performing-queries"></a>Gennemgå forespørgsler med langsom ydeevne
-
-Du vil muligvis opdage, at svar via gatewayen kan gå langsomt. Det kan være for DirectQuery-forespørgsler, eller når dit importerede datasæt opdateres. Du kan aktivere yderligere logføring af output af forespørgsler og deres tidsindstillinger for at få en idé om, hvad der har en lav ydeevne. Når du har fundet en forespørgsel, der har kørt i lang tid, kan det kræve yderligere ændring af datakilden at finindstille ydeevnen af forespørgslen. F.eks. justering af indekser for en SQL Server-forespørgsel.
-
-Du skal ændre to konfigurationsfiler for at bestemme varigheden af en forespørgsel.
-
-### <a name="microsoftpowerbidatamovementpipelinegatewaycoredllconfig"></a>Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
-
-I filen *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* skal du ændre `EmitQueryTraces`-værdien fra `False` til `True`. Filen er som standard placeret i *C:\Programmer\On-premises data gateway*. Aktivering af `EmitQueryTraces` begynder at logføre forespørgsler, der er sendt fra gatewayen til en datakilde.
-
-> [!IMPORTANT]
-> Aktivering af EmitQueryTraces kan øge logfilens størrelse markant afhængigt af brugen af gatewayen. Når du er færdig med at gennemgå logfilerne, kan du indstille EmitQueryTraces til Falsk. Det anbefales ikke at lade denne indstilling være aktiveret i længere tid.
-
-```xml
-<setting name="EmitQueryTraces" serializeAs="String">
-    <value>True</value>
-</setting>
-```
-
-**Eksempel på en forespørgselsindtastning**
-
-```
-DM.EnterpriseGateway Information: 0 : 2016-09-15T16:09:27.2664967Z DM.EnterpriseGateway    4af2c279-1f91-4c33-ae5e-b3c863946c41    d1c77e9e-3858-4b21-3e62-1b6eaf28b176    MGEQ    c32f15e3-699c-4360-9e61-2cc03e8c8f4c    FF59BC20 [DM.GatewayCore] Executing query (timeout=224) "<pi>
-SELECT
-TOP (1000001) [t0].[ProductCategoryName],[t0].[FiscalYear],SUM([t0].[Amount])
- AS [a0]
-FROM
-(
-(select [$Table].[ProductCategoryName] as [ProductCategoryName],
-    [$Table].[ProductSubcategory] as [ProductSubcategory],
-    [$Table].[Product] as [Product],
-    [$Table].[CustomerKey] as [CustomerKey],
-    [$Table].[Region] as [Region],
-    [$Table].[Age] as [Age],
-    [$Table].[IncomeGroup] as [IncomeGroup],
-    [$Table].[CalendarYear] as [CalendarYear],
-    [$Table].[FiscalYear] as [FiscalYear],
-    [$Table].[Month] as [Month],
-    [$Table].[OrderNumber] as [OrderNumber],
-    [$Table].[LineNumber] as [LineNumber],
-    [$Table].[Quantity] as [Quantity],
-    [$Table].[Amount] as [Amount]
-from [dbo].[V_CustomerOrders] as [$Table])
-)
- AS [t0]
-GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
-```
-
-### <a name="microsoftpowerbidatamovementpipelinediagnosticsdllconfig"></a>Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config
-
-I filen *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* skal du ændre `TracingVerbosity`-værdien fra `4` til `5`. Filen er som standard placeret i *C:\Programmer\On-premises data gateway*. Hvis du ændrer denne indstilling, logføres detaljerede indtastninger i gatewayens logfil. Dette omfatter indtastninger, der viser varighed. Du kan også aktivere detaljerede poster ved at aktivere knappen "Yderligere logføring" i gatewayprogrammet i det lokale miljø.
-
-   ![yderligere logføring](media/service-gateway-onprem-tshoot/additional-logging.png)
-
-> [!IMPORTANT]
-> Aktivering af TracingVerbosity til `5` kan øge logfilens størrelse markant afhængigt af brugen af gatewayen. Når du er færdig med at gennemgå logfilerne, skal du indstille TraceVerbosity til `4`. Det anbefales ikke at lade denne indstilling være aktiveret i længere tid.
-
-```xml
-<setting name="TracingVerbosity" serializeAs="String">
-    <value>5</value>
-</setting>
-```
-
-<a name="activities"></a>
-
-### <a name="activity-types"></a>Aktivitetstyper
-
-| Aktivitetstype | Beskrivelse |
-| --- | --- |
-| MGEQ |Forespørgsler udført via ADO.NET. Dette omfatter DirectQuery-datakilder. |
-| MGEO |Forespørgsler udført via OLEDB. Det omfatter SAP HANA og Analysis Service 2016 . |
-| MGEM |Forespørgsler udført fra Miks-programmet. Dette anvendes med importerede datasæt, der bruger planlagt opdatering eller opdatering efter behov. |
-
-### <a name="determine-the-duration-of-a-query"></a>Fastlæg varigheden af en forespørgsel
-Når du vil fastlægge den tid, det tog at forespørge på datakilden, kan du gøre som beskrevet herunder.
-
-1. Åbn gatewayens logfil.
-2. Søg efter en [aktivitetstype](#activities) for at finde forespørgslen. Et eksempel på dette ville være MGEQ.
-3. Notér den anden GUID, da dette er anmodnings-id'et.
-4. Fortsæt med at søge efter MGEQ, indtil du finder indtastningen FireActivityCompletedSuccessfullyEvent med varigheden. Du kan bekræfte, at indtastningen har samme anmodnings-id. Varigheden er i millisekunder.
-
-        DM.EnterpriseGateway Verbose: 0 : 2016-09-26T23:08:56.7940067Z DM.EnterpriseGateway    baf40f21-2eb4-4af1-9c59-0950ef11ec4a    5f99f566-106d-c8ac-c864-c0808c41a606    MGEQ    21f96cc4-7496-bfdd-748c-b4915cb4b70c    B8DFCF12 [DM.Pipeline.Common.TracingTelemetryService] Event: FireActivityCompletedSuccessfullyEvent (duration=5004)
-
-   > [!NOTE]
-   > FireActivityCompletedSuccessfullyEvent er en detaljeret indtastning. Denne post logføres ikke, medmindre TraceVerbosity er på niveau 5.
-
-## <a name="firewall-or-proxy"></a>Firewall eller proxy
-
-Du kan finde oplysninger om, hvordan du angiver proxyoplysninger for din gateway, under [Konfigurer proxyindstillinger for Power BI-gateways](service-gateway-proxy.md).
-
-Du kan teste, om din firewall eller proxy blokerer forbindelser. Det gør du ved at køre [Test-NetConnection](https://docs.microsoft.com/powershell/module/nettcpip/test-netconnection) fra en PowerShell-prompt. Dette tester forbindelsen til Azure Service Bus. Det er kun netværksforbindelsen, der testes, og det har ikke noget med cloudservertjenesten eller gatewayen at gøre. Det hjælper med at finde ud af, om din computer faktisk kan få forbindelse til internettet.
-
-    Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
-
-> [!NOTE]
-> Test-NetConnection er kun tilgængeligt på Windows Server 2012 R2 og nyere versioner. Det er også tilgængeligt på Windows 8.1 og nyere. På tidligere operativsystemversioner kan du bruge Telnet til at teste portforbindelser.
-
-Resultatet ligner dette eksempel. Forskellen vil være TcpTestSucceeded. Hvis **TcpTestSucceeded** ikke er *true*, er du muligvis blokeret af en firewall.
-
-    ComputerName           : watchdog.servicebus.windows.net
-    RemoteAddress          : 70.37.104.240
-    RemotePort             : 5672
-    InterfaceAlias         : vEthernet (Broadcom NetXtreme Gigabit Ethernet - Virtual Switch)
-    SourceAddress          : 10.120.60.105
-    PingSucceeded          : False
-    PingReplyDetails (RTT) : 0 ms
-    TcpTestSucceeded       : True
-
-Hvis du vil se mere omfattende oplysninger, skal du udskifte værdierne for **computernavn** og **port** med de værdier, der vises for [porte](https://docs.microsoft.com/power-bi/service-gateway-onprem#ports).
-
-Firewallen kan også blokere de forbindelser, som Azure Service Bus opretter til Azure-datacentrene. Hvis det er tilfældet, kan du føje IP-adresserne for dit område til hvidlisten (fjerne blokeringen) for de pågældende datacentre. Du kan få vist en liste over Azure IP-adresser [her](https://www.microsoft.com/download/details.aspx?id=41653).
-
-### <a name="network-ports-test"></a>Test af netværksporte
-
-Test af netværksporte er et værktøj, du kan bruge til at teste, om din gateway kan få adgang til de korrekte porte for alle de fjernservere, som er påkrævet af din gateway til overførsel af data. Hvis testen af netværksporte ikke kan oprette forbindelse til nogen af portene, kan der være netværksproblemer på gatewayen. Hvis du oplever netværksproblemer med din gateway, kan du køre testen af netværksporte for at kontrollere, om dit netværksmiljø er optimalt.  
-
-#### <a name="start-a-new-test"></a>Start en ny test
-
-Du kan køre en ny test af netværksporte fra brugergrænsefladen til datagatewayen i det lokale miljø.
-
-![Start porttest](media/service-gateway-onprem-tshoot/gateway-onprem-porttest-starttest.png)
-
-Når du kører en test af netværksporte, henter din gateway en liste over porte og servere fra Azure Service Bus, og den forsøger derefter at oprette forbindelse til alle serverne og portene. Når linket Start ny test vises, er testen af netværksporte afsluttet.  
-
-#### <a name="test-results"></a>Testresultater
-
-Du kan se en oversigt over testen under Seneste testresultater under linket Start ny test. De to resultater er Fuldført (uden fejl) og Fuldført (fejl, se seneste testresultater). Hvis testen er fuldført uden fejl, kunne din gateway oprette forbindelse til alle de krævede porte. Hvis testen mislykkedes, kan det skyldes, at dit netværksmiljø blokerer de krævede porte og servere. 
-
-![Porttestresultater](media/service-gateway-onprem-tshoot/gateway-onprem-porttest-result.png)
-
-Hvis du vil se resultaterne af den senest fuldført test, skal du vælge linket Åbn senest fuldførte test. Testresultaterne åbnes i standardteksteditoren i Windows.  
-
-Testresultaterne viser alle de servere, porte og IP-adresser, som din gateway skal have adgang til. Hvis testresultaterne viser Lukket for nogle af portene, skal du sikre, at dit netværksmiljø ikke blokerer for forbindelsen. Du skal muligvis kontakte din netværksadministrator for at få åbnet de krævede porte.
-
-![Fil med porttestresultater](media/service-gateway-onprem-tshoot/gateway-onprem-porttest-result-file.png)
+Hvis dit Azure Active Directory-UPN ikke stemmer overens med dit lokale Active Directory-UPN, kan du bruge funktionen [Tilknyt brugernavne](service-gateway-enterprise-manage-ssas.md#mapping-usernames-for-analysis-services-data-sources) til at erstatte det med en gyldig værdi. Du kan også arbejde sammen med enten din lejeradministrator eller den lokale Active Directory-administrator om at få ændret dit UPN.
 
 ## <a name="kerberos"></a>Kerberos
 
-Hvis den underliggende databaseserver og datagatewayen i det lokale miljø ikke er konfigureret korrekt til [begrænset Kerberos-delegering](service-gateway-sso-kerberos.md), skal du aktivere [detaljeret logføring](#microsoftpowerbidatamovementpipelinediagnosticsdllconfig) på gatewayen og, som udgangspunkt for fejlfindingen, foretage undersøgelser baseret på fejlene/sporene i gatewayens logfiler.
+Hvis den underliggende databaseserver og datagatewayen i det lokale miljø ikke er konfigureret korrekt til [begrænset delegering i Kerberos](service-gateway-sso-kerberos.md), skal du aktivere [detaljeret logføring](/data-integration/gateway/service-gateway-performance#slow-performing-queries) på gatewayen og som udgangspunkt for fejlfindingen foretage undersøgelser baseret på fejlene/sporene i gatewayens logfiler. Hvis du vil indsamle logge for gatewayen for at få dem vist, skal du se [Indsaml logge fra programmet til datagatewayen i det lokale miljø](/data-integration/gateway/service-gateway-tshoot#collect-logs-from-the-on-premises-data-gateway-app).
 
 ### <a name="impersonationlevel"></a>ImpersonationLevel
 
@@ -460,21 +168,22 @@ ImpersonationLevel er relateret til SPN-konfigurationen eller den lokale politik
 **Løsning**
 
 Følg disse trin til at løse problemet:
-1. Konfigurer et SPN for gatewayen i det lokale miljø
-2. Konfigurer begrænset delegering i dit Active Directory (AD)
+
+1. Konfigurer et SPN for gatewayen i det lokale miljø.
+2. Konfigurer begrænset delegering i dit Active Directory (AD).
 
 ### <a name="failedtoimpersonateuserexception-failed-to-create-windows-identity-for-user-userid"></a>FailedToImpersonateUserException: Kunne ikke oprette Windows-identiteten for bruger-id'et.
 
-FailedToImpersonateUserException sker, hvis du ikke kan repræsentere en anden bruger. Det kan også ske, hvis den konto, du forsøger at repræsentere, er fra et andet domæne end det, som domænet for gatewaytjenesten er på (dette er en begrænsning).
+FailedToImpersonateUserException sker, hvis du ikke kan repræsentere på vegne af en anden bruger. Dette kan også ske, hvis den konto, du forsøger at repræsentere, er fra et andet domæne end det, som domænet for gatewaytjenesten er på (dette er en begrænsning).
 
 **Løsning**
 
-* Kontrollér, at konfigurationen er korrekt iht. trinnene i afsnittet ImpersonationLevel ovenfor
-* Kontrollér, at det brugerid, der gøres forsøg på at repræsentere, er til en gyldig AD-konto
+* Bekræft, at konfigurationen er korrekt i henhold til trinnene i afsnittet ImpersonationLevel ovenfor.
+* Kontrollér, at det bruger-id, der gøres forsøg på at repræsentere, er til en gyldig AD-konto.
 
 ### <a name="general-error-1033-error-while-parsing-the-protocol"></a>Generel fejl; 1033-fejl under parsing af protokollen
 
-Du får vist 1033-fejlen, når dit eksterne id, som er konfigureret i SAP HANA, ikke stemmer overens med logon, hvis brugeren repræsenteres ved hjælp af UPN (alias@domain.com). Øverst i logfilerne kan du se følgende, som vist nedenfor: "Original UPN "alias@domain.com" replaced with a new UPN "alias@domain.com"."
+Du får vist fejlen 1033, når dit eksterne id, som er konfigureret i SAP HANA, ikke matcher det pågældende logon, hvis brugeren repræsenteres ved hjælp af (alias@domain.com). I loggene kan du se "Originalt UPN "alias@domain.com" er erstattet med et nyt UPN "alias@domain.com"" øverst i fejlloggene, som vist nedenfor.
 
 ```
 [DM.GatewayCore] SingleSignOn Required. Original UPN 'alias@domain.com' replaced with new UPN 'alias@domain.com.'
@@ -486,7 +195,7 @@ Du får vist 1033-fejlen, når dit eksterne id, som er konfigureret i SAP HANA, 
 
     ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount.png)
 
-* I logfilerne bør du se sAMAccountName (alias) og ikke UPN, som er aliasset efterfulgt af domænet (alias@doimain.com)
+* I loggene kan du se sAMAccountName (alias) og ikke UPN, som er aliasset efterfulgt af domænet (alias@doimain.com).
 
     ![sAMAccount](media/service-gateway-onprem-tshoot/sAMAccount-02.png)
 
@@ -510,34 +219,39 @@ Du får vist meddelelsen "-10709 Connection failed", hvis din delegering ikke er
 
 **Løsning**
 
-* Kontrollér, at du har SAP Hana-serveren på fanen Delegering i AD for kontoen til gatewaytjenesten
+* Kontrollér, at SAP Hana-serveren findes under fanen Delegering i AD for gatewaytjenestekontoen.
 
    ![fanen delegering](media/service-gateway-onprem-tshoot/delegation-in-AD.png)
 
-<!-- Shared Troubleshooting tools Include -->
-[!INCLUDE [gateway-onprem-tshoot-tools-include](./includes/gateway-onprem-tshoot-tools-include.md)]
+## <a name="refresh-history"></a>Opdateringshistorik
 
-### <a name="refresh-history"></a>Opdater historik
-
-Når gatewayen bruges til planlagt opdatering, kan **Opdater historik** hjælpe dig med at se, hvilke fejl der er opstået samt levere brugbare data, hvis du får brug for at oprette en supportanmodning. Du kan få vist både planlagte opdateringer samt opdateringer efter behov. Sådan får du vist **Opdater historik**.
+Når gatewayen bruges til planlagt opdatering, kan **Opdateringshistorik** hjælpe dig med at se, hvilke fejl der er opstået samt levere brugbare data, hvis du får brug for at oprette en supportanmodning. Du kan få vist både planlagte opdateringer samt opdateringer efter behov. Følgende trin viser, hvordan du kommer til **Opdateringshistorik**.
 
 1. I Power BI-navigationsruden i **Datasæt** skal du vælge et datasæt &gt; Åbn menu &gt; **Planlæg opdatering**.
 
-    ![](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
-2. I **Indstillinger for...** &gt;**Planlæg opdatering** skal du vælge **Opdater historik**.
+    ![Sådan vælger du en planlagt opdatering](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 
-    ![](media/service-gateway-onprem-tshoot/scheduled-refresh-2.png)
+2. I **Indstillinger for...** &gt; **Planlæg opdatering**, vælg **Opdateringshistorik**.
 
-    ![](media/service-gateway-onprem-tshoot/refresh-history.png)
+    ![Vælg opdateringshistorik](media/service-gateway-onprem-tshoot/scheduled-refresh-2.png)
+
+    ![Visning af opdateringshistorik](media/service-gateway-onprem-tshoot/refresh-history.png)
 
 Du kan finde yderligere oplysninger om fejlfinding af opdateringsscenarier i artiklen [Fejlfinding i forbindelse med opdatering af scenarier](refresh-troubleshooting-refresh-scenarios.md).
 
+## <a name="fiddler-trace"></a>Fiddler-sporing
+
+[Fiddler](http://www.telerik.com/fiddler) er et gratis værktøj fra Telerik, der overvåger HTTP-trafik. Du kan se det, der sendes frem og tilbage vha. Power BI-tjenesten fra klientcomputeren. Dette kan vise fejl og andre relaterede oplysninger.
+
+![Brug af Fiddler-sporing](media/service-gateway-onprem-tshoot/fiddler.png)
+
 ## <a name="next-steps"></a>Næste trin
-[Konfiguration af proxyindstillinger for Power BI-gateways](service-gateway-proxy.md)  
-[Datagateway i det lokale miljø](service-gateway-onprem.md)  
-[Datagateway i det lokale miljø – detaljeret](service-gateway-onprem-indepth.md)  
-[Administrer din datakilde – Analysis Services](service-gateway-enterprise-manage-ssas.md)  
-[Administrer din datakilde – SAP HANA](service-gateway-enterprise-manage-sap.md)  
-[Administrer din datakilde – SQL Server](service-gateway-enterprise-manage-sql.md)  
-[Administrer din datakilde – Import/Planlagt opdatering](service-gateway-enterprise-manage-scheduled-refresh.md)  
+
+* [Foretag fejlfinding af datagatewayen i det lokale miljø](/data-integration/gateway/service-gateway-tshoot)
+* [Konfiguration af proxyindstillinger for datagateway i det lokale miljø](/data-integration/gateway/service-gateway-proxy)  
+* [Administrer din datakilde – Analysis Services](service-gateway-enterprise-manage-ssas.md)  
+* [Administrer din datakilde – SAP HANA](service-gateway-enterprise-manage-sap.md)  
+* [Administrer din datakilde – SQL Server](service-gateway-enterprise-manage-sql.md)  
+* [Administrer din datakilde – Import/Planlagt opdatering](service-gateway-enterprise-manage-scheduled-refresh.md)  
+
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

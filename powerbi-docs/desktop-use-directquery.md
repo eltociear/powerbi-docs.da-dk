@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 07/18/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: bf41700b367b7c3c2302eeec9c03b93fa294ed3f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 775abf014f571b508832c5cb9a52a62aad455a7b
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61348772"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68324802"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Brug DirectQuery i Power BI Desktop
 Når du opretter forbindelse til din datakilde i **Power BI Desktop**, er det altid muligt at importere en kopi af dataene til **Power BI Desktop**. For nogle datakilder findes der en anden mulighed: du kan oprette direkte forbindelse til datakilden med **DirectQuery**.
@@ -50,12 +50,10 @@ Der er i øjeblikket nogle få begrænsninger ved at bruge **DirectQuery**:
 
 * Alle tabeller skal komme fra en enkelt database, medmindre de er baseret på [sammensatte modeller](desktop-composite-models.md)
 * Hvis forespørgslen i **Forespørgselseditor** er for kompliceret, vil der opstå en fejl. Når du skal løse fejlen, skal du enten slette det fejlbehæftede trin i **Forespørgselseditor**, eller du skal i stedet *importere* dataene i stedet for at bruge **DirectQuery**. For flerdimensionelle datakilder som SAP Business Warehouse er der ingen **Forespørgselseditor**
-* Filtrering af relationer er begrænset til en enkelt retning i stedet for begge retninger (selvom det er muligt at aktivere krydsfiltrering i begge retninger for **DirectQuery** som en prøveversion). For flerdimensionelle datakilder som SAP Business Warehouse er der ikke defineret nogen relationer i modellen
+* Filtrering af relationer er begrænset til en enkelt retning i stedet for begge retninger (selvom det er muligt at aktivere krydsfiltrering i begge retninger for **DirectQuery**). For flerdimensionelle datakilder som SAP Business Warehouse er der ikke defineret nogen relationer i modellen
 * Funktionerne for tidsintelligens findes ikke i **DirectQuery**. Eksempelvis understøttes særlig behandling af datokolonner (år, kvartal, måned, dag osv.) ikke i **DirectQuery**-tilstand.
-* Som standard er de begrænsninger, der gælder for DAX-udtryk, tilladt i målinger. Du kan se flere oplysninger efter denne punktopstilling.
+* Der er pålagt begrænsninger på de DAX-udtryk, der er tilladt i målinger, for at sikre, at de forespørgsler, der sendes til den underliggende datakilde, har en acceptabel ydeevne.
 * Der er en grænse på én million rækker for returnering af data, når du bruger **DirectQuery**. Denne grænse påvirker ikke de aggregeringer eller beregninger, der bruges til at oprette det datasæt, der returneres ved hjælp af **DirectQuery**. Det påvirker kun de returnerede rækker. Du kan for eksempel aggregere 10 millioner rækker med en forespørgsel, der kører på datakilden, og præcist returnere resultaterne for den aggregering til Power BI ved hjælp af **DirectQuery**, så længe der returneres mindre end 1 million rækker til Power BI. Hvis der ville blive returneret mere end 1 million rækker fra **DirectQuery**, vil Power BI returnere en fejl.
-
-For at sikre at de forespørgsler, der sendes til den underliggende datakilde, har en acceptabel ydeevne, pålægges der som standard begrænsninger på målingerne. Erfarne brugere kan vælge at omgå denne begrænsning ved at vælge **Filer > Indstillinger > Indstillinger**, derefter **DirectQuery** og vælge indstillingen *Tillad ubegrænsede målinger i DirectQuery-tilstand*. Når du har valgt denne indstilling, kan du bruge ethvert DAX-udtryk, der er gyldigt for en måling. Brugerne skal dog være opmærksomme på, at nogle udtryk, der har en god ydeevne, når dataene importeres, kan være langsomme i backend-kilden, når der bruges DirectQuery-tilstand.
 
 ## <a name="important-considerations-when-using-directquery"></a>Vigtige overvejelser i forbindelse med brugen af DirectQuery
 Der skal tages højde for følgende tre punkter, når der bruges **DirectQuery**:

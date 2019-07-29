@@ -7,24 +7,24 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: tutorial
-ms.date: 05/03/2018
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 1c77c272bf5c03ce7df0a5173d194a4c0583ccf2
-ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.openlocfilehash: 54ef11b51fb02b6913b4d591967a140c5affc1b8
+ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67596623"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68307387"
 ---
-# <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Opdater data fra en lokal SQL Server-database
+# <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Opdater data fra en SQL Server-database i det lokale miljø
 
 I dette selvstudium kan udforske, hvordan du opdaterer et Power BI-datasæt fra en relationsdatabase, der findes i det lokale miljø på dit lokale netværk. Dette selvstudium bruger et specifikt eksempel på en SQL Server-database, som Power BI skal have adgang til via en datagateway i det lokale miljø.
 
 I dette selvstudium kan du udføre følgende trin:
 
 > [!div class="checklist"]
-> * Opret og publicer en Power BI Desktop-fil (.pbix), der importerer data fra en lokal SQL Server-database.
+> * Opret og publicer en Power BI Desktop-fil (.pbix), der importerer data fra en SQL Server-database i det lokale miljø.
 > * Konfigurer indstillinger for datakilde og datasæt i Power BI til SQL Server-forbindelsen via en datagateway.
 > * Konfigurer en tidsplan for opdatering at sikre, at dit datasæt i Power BI har de nyeste data.
 > * Udfør en opdatering efter behov af datasættet.
@@ -36,7 +36,7 @@ I dette selvstudium kan du udføre følgende trin:
 - Hvis du ikke allerede har en [gratis prøveversion af Power BI](https://app.powerbi.com/signupredirect?pbi_source=web), skal du tilmelde dig for at få en, før du begynder.
 - [Installér Power BI Desktop](https://powerbi.microsoft.com/desktop/) på en lokal computer.
 - [Installér SQL Server](/sql/database-engine/install-windows/install-sql-server) på en lokal computer, og gendan [eksempeldatabasen fra en sikkerhedskopi](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksDW2017.bak). Du kan finde flere oplysninger om AdventureWorks under [Installation og konfiguration af AdventureWorks](/sql/samples/adventureworks-install-configure).
-- [Installér en datagateway i det lokale miljø](service-gateway-install.md) på den samme lokale computer som SQL Server (i produktionsmiljøet vil det typisk være en anden computer).
+- [Installér en datagateway i det lokale miljø](service-gateway-onprem.md) på den samme lokale computer som SQL Server (i produktionsmiljøet vil det typisk være en anden computer).
 
 > [!NOTE]
 > Hvis du er ikke gatewayadministrator, og du ikke selv vil installere en gateway, skal du kontakte en gatewayadministrator i din organisation. De kan oprette den påkrævede datakildedefinition til at forbinde dit datasæt med din SQL Server-database.
@@ -200,8 +200,8 @@ Hvis du ikke længere vil bruge eksempeldataene, kan du slippe databasen i SSMS 
 
 ## <a name="next-steps"></a>Næste trin
 
-I dette selvstudium har du undersøgt, hvordan du importerer data fra en lokal SQL Server-database til et Power BI-datasæt, og hvordan du opdaterer dette datasæt efter en planlagt tidsplan og efter behov, så du kan holde rapporter og dashboards, der bruger datasættet, opdateret i Power BI. Nu kan du lære mere om at administrere datagateways og datakilder i Power BI. Det kan også være en god idé at læse den konceptuelle artikel om Opdatering af data i Power BI.
+I dette selvstudium har du undersøgt, hvordan du importerer data fra en SQL Server-database i det lokale miljø til et Power BI-datasæt, og hvordan du opdaterer dette datasæt efter en planlagt tidsplan og efter behov, så du kan holde rapporter og dashboards, der bruger datasættet, opdateret i Power BI. Nu kan du lære mere om at administrere datagateways og datakilder i Power BI. Det kan også være en god idé at læse den konceptuelle artikel om Opdatering af data i Power BI.
 
-- [Administrer en Power BI-gateway i det lokale miljø](service-gateway-manage.md)
+- [Administrer en datagateway i det lokale miljø](/data-integration/gateway/service-gateway-manage)
 - [Administrer din datakilde – Import/Planlagt opdatering](service-gateway-enterprise-manage-scheduled-refresh.md)
 - [Opdatering af data i Power BI](refresh-data.md)

@@ -1,123 +1,78 @@
 ---
 title: Administrer din datakilde – Import/Planlagt opdatering
-description: Sådan administrerer du en datagateway i det lokale miljø og de datakilder, der hører til denne gateway. Denne artikel gælder kun for de datakilder, der kan bruges med import/planlagt opdatering.
+description: Sådan administrerer du en datagateway i det lokale miljø samt de datakilder, der hører til denne gateway. Denne artikel gælder kun for de datakilder, der kan bruges med import/planlagt opdatering.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 12/06/2017
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 8f45fbed0b2c4e5de62f8ef18ee9a552bf05486b
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 2a3cdc3e6c4fc4f18613994a919f8ab733df5e14
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54293762"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271680"
 ---
 # <a name="manage-your-data-source---importscheduled-refresh"></a>Administrer din datakilde – Import/Planlagt opdatering
-Når du har installeret datagatewayen i det lokale miljø, skal du tilføje datakilder, der kan bruges sammen med gatewayen. Denne artikel indeholder oplysninger om, hvordan du arbejder med gateways og datakilder, der bruges til planlagt opdatering, i modsætning til DirectQuery eller direkte forbindelser.
 
-## <a name="download-and-install-the-gateway"></a>Download og installér gatewayen
-Du kan downloade gatewayen fra Power BI-tjenesten. Vælg **Downloads** > **Datagateway**, eller gå til [siden til download af gateway](https://go.microsoft.com/fwlink/?LinkId=698861).
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/powerbi-download-data-gateway.png)
-
-## <a name="add-a-gateway"></a>Tilføj en gateway
-Hvis du vil tilføje en gateway, skal du blot [downloade](https://go.microsoft.com/fwlink/?LinkId=698863) og installere virksomhedsgatewayen på en server i dit miljø. Når du har installeret gatewayen, vises den på listen over gateways under **Administrer gateways**.
-
-> [!NOTE]
-> **Administrer gateways** vises ikke, før du er administrator af mindst én gateway. Det kan du blive ved enten at blive tilføjet som administrator eller ved at installere og konfigurere en gateway.
-> 
-> 
-
-## <a name="remove-a-gateway"></a>Fjern en gateway
-Hvis du fjerner en gateway, slettes også eventuelle datakilder under denne gateway.  Dette vil også ødelægge alle dashboards og rapporter, der anvender disse datakilder.
-
-1. Vælg tandhjulsikonet ![](media/service-gateway-enterprise-manage-scheduled-refresh/pbi_gearicon.png) i øverste højre hjørne > **Administrer gateways**.
-2. Gateway > **Fjern**
-   
-   ![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings7.png)
+Når du har [installeret datagatewayen i det lokale miljø](/data-integration/gateway/service-gateway-install), skal du [tilføje datakilder](service-gateway-data-sources.md#add-a-data-source), der kan bruges sammen med gatewayen. Denne artikel indeholder oplysninger om, hvordan du arbejder med gateways og datakilder, der bruges til planlagte opdateringer, i modsætning til DirectQuery eller direkte forbindelser.
 
 ## <a name="add-a-data-source"></a>Tilføj en datakilde
-Du kan tilføje en datakilde ved enten at vælge en gateway og klikke på **Tilføj datakilde** eller gå til Gateway > **Tilføj datakilde**.
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings1.png)
+Du kan finde oplysninger om, hvordan du tilføjer en datakilde i [Tilføj en datakilde](service-gateway-data-sources.md#add-a-data-source).
 
-Du kan derefter vælge **Datakildetype** på listen. Alle datakilder, der er angivet på listen, kan bruges til planlagt opdatering med virksomhedsgatewayen. Analysis Services, SQL Server og SAP HANA kan enten bruges til planlagt opdatering eller DirectQuery/direkte forbindelser.
+Alle datakildetyper, der er angivet på listen, kan bruges til planlagte opdateringer med datagatewayen i det lokale miljø. Analysis Services, SQL Server og SAP HANA kan bruges til enten planlagte opdateringer eller DirectQuery/direkte forbindelser.
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings2.png)
+![Vælg datakilde](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings2.png)
 
-Du skal derefter angive oplysninger om datakilden, herunder kildeoplysninger og -legitimationsoplysninger, som skal bruges til at få adgang til datakilden.
+Du skal derefter udfylde oplysninger om datakilden, herunder kildeoplysninger og legitimationsoplysninger, som skal bruges til at få adgang til datakilden.
 
 > [!NOTE]
-> Alle forespørgsler til datakilden kører ved hjælp af disse legitimationsoplysninger. Du kan finde flere oplysninger om, hvordan du gemmer [legitimationsoplysninger](service-gateway-onprem.md#credentials) i hovedartiklen om datagateways i det lokale miljø.
-> 
-> 
+> Alle forespørgsler til datakilden kører ved hjælp af disse legitimationsoplysninger. Hvis du vil have mere at vide om, hvor legitimationsoplysningerne gemmes, skal du se [Lagring af krypterede legitimationsoplysninger i cloudmiljøet](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud).
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings3-oracle.png)
+![Angivelse af indstillinger for datakilden](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings3-oracle.png)
 
-Du kan klikke på **Tilføj**, når du har udfyldt det hele.  Du kan nu bruge denne datakilde til planlagt opdatering med dine data i det lokale miljø. Du får vist *Forbindelsen blev oprettet*, hvis det lykkes.
+Du kan få vist en liste over datakildetyper, der kan bruges til planlagte opdateringer, i [Liste over tilgængelige datakildetyper](service-gateway-data-sources.md#list-of-available-data-source-types).
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings4.png)
+Vælg **Tilføj**, når du har udfyldt det hele. Du kan nu bruge denne datakilde til planlagt opdatering med dine data i det lokale miljø. Du får vist *Forbindelsen blev oprettet*, hvis det lykkes.
 
-<!-- Shared Install steps Include -->
-[!INCLUDE [gateway-onprem-datasources-include](./includes/gateway-onprem-datasources-include.md)]
+![Visning af forbindelsesstatus](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings4.png)
 
 ### <a name="advanced-settings"></a>Avancerede indstillinger
-Du kan konfigurere niveauet for beskyttelse af personlige oplysninger for datakilden. Dette styrer, hvordan data kan blandes. Dette bruges kun til planlagt opdatering. [Få mere at vide](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings9.png)
+Du kan eventuelt konfigurere niveauet for beskyttelse af personlige oplysninger for datakilden. Dette styrer, hvordan data kan kombineres. Dette bruges kun for planlagte opdateringer. Hvis du vil vide mere om niveauer for beskyttelse af personlige oplysninger, skal du se [Niveauer for beskyttelse af personlige oplysninger (Power-forespørgsel)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
-## <a name="remove-a-data-source"></a>Fjern en datakilde
-Hvis du fjerner en datakilde, ødelægger det alle dashboards eller rapporter, der anvender den pågældende datakilde.  
-
-Hvis du vil fjerne en datakilde, skal du gå til datakilden > **Fjern**.
-
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings6.png)
-
-## <a name="manage-administrators"></a>Administrer administratorer
-Under fanen Administratorer for gatewayen kan du tilføje og fjerne brugere, som kan administrere gatewayen. Du kan kun tilføje brugere på nuværende tidspunkt. Sikkerhedsgrupper kan ikke tilføjes.
-
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings8.png)
-
-## <a name="manage-users"></a>Administrer brugere
-Under fanen Brugere for datakilden kan du tilføje og fjerne brugere eller sikkerhedsgrupper, som kan bruge denne datakilde.
-
-> [!NOTE]
-> Listen over brugere kan kun bruges til at styre, hvem der har tilladelse til at publicere rapporter. Rapporternes ejere kan oprette dashboards eller indholdspakker og dele dem med andre brugere.
-> 
-> 
-
-![](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings5.png)
+![Angivelse af niveauet for beskyttelse af personlige oplysninger](media/service-gateway-enterprise-manage-scheduled-refresh/datasourcesettings9.png)
 
 ## <a name="using-the-data-source-for-scheduled-refresh"></a>Brug af datakilden med planlagt opdatering
-Når du har oprettet datakilden, bliver den tilgængelig til brug med enten DirectQuery-forbindelser eller via planlagt opdatering.
+
+Når du har oprettet datakilden, bliver den tilgængelig til brug med enten DirectQuery-forbindelser eller via en planlagt opdatering.
 
 > [!NOTE]
-> Server- og databasenavn skal stemme overens mellem Power BI Desktop og datakilden i datagatewayen i det lokale miljø!
-> 
-> 
+> Servernavnet og databasenavnet skal matche mellem Power BI Desktop og datakilden i datagatewayen i det lokale miljø.
 
-Linket mellem dit datasæt og datakilden i gatewayen er baseret på dit servernavn og databasenavn. Disse skal stemme overens. Hvis du f.eks. angiver en IP-adresse for servernavnet i Power BI Desktop, skal du bruge IP-adressen til datakilden i konfigurationen af gatewayen. Hvis du bruger *SERVER\FOREKOMST* i Power BI Desktop, skal du bruge det samme i den datakilde, der er konfigureret for gatewayen.
+Linket mellem dit datasæt og datakilden i gatewayen er baseret på dit servernavn og databasenavn. Disse skal stemme overens. Hvis du f.eks. angiver en IP-adresse for servernavnet i Power BI Desktop, skal du bruge IP-adressen for datakilden i konfigurationen af gatewayen. Hvis du bruger *SERVER\INSTANCE* i Power BI Desktop, skal du bruge det samme i den datakilde, der er konfigureret for gatewayen.
 
-Hvis du er angivet på fanen **Brugere** for den datakilde, der er konfigureret i gatewayen, og server- og databasenavnet stemmer overens, får du vist gatewayen som en mulighed, der kan bruges sammen med planlagt opdatering.
+Hvis du er angivet under fanen **Brugere** i den datakilde, der er konfigureret i gatewayen, og server- og databasenavnet stemmer overens, får du vist gatewayen som en mulighed, der kan bruges sammen med en planlagt opdatering.
 
-![](media/service-gateway-enterprise-manage-scheduled-refresh/powerbi-gateway-enterprise-schedule-refresh.png)
+![Visning af brugerne](media/service-gateway-enterprise-manage-scheduled-refresh/powerbi-gateway-enterprise-schedule-refresh.png)
 
 > [!WARNING]
-> Hvis dit datasæt indeholder flere datakilder, skal hver enkelt datakilde tilføjes i gatewayen. Hvis en eller flere datakilder ikke er føjet til gatewayen, kan du ikke se gatewayen som tilgængelig i forbindelse med planlagt opdatering.
-> 
-> 
+> Hvis dit datasæt indeholder flere datakilder, skal hver enkelt datakilde tilføjes i gatewayen. Hvis en eller flere datakilder ikke er føjet til gatewayen, kan du ikke se gatewayen som tilgængelig i forbindelse med en planlagt opdatering.
 
 ## <a name="limitations"></a>Begrænsninger
-* OAuth er ikke en understøttet godkendelsesplan for datagatewayen i det lokale miljø. Du kan ikke tilføje datakilder, der kræver OAuth. Hvis dit datasæt har en datakilde, der kræver OAuth, kan du ikke bruge gatewayen til planlagt opdatering.
+
+OAuth er ikke en understøttet godkendelsesplan for datagatewayen i det lokale miljø. Du kan ikke tilføje datakilder, der kræver OAuth. Hvis dit datasæt har en datakilde, der kræver OAuth, kan du ikke bruge gatewayen til planlagt opdatering.
 
 ## <a name="next-steps"></a>Næste trin
-[Datagateway i det lokale miljø](service-gateway-onprem.md)  
-[Datagateway i det lokale miljø – detaljeret](service-gateway-onprem-indepth.md)  
-[Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
+* [Fejlfinding af datagateway i det lokale miljø](/data-integration/gateway/service-gateway-tshoot)
+* [Foretag fejlfinding af gateways – Power BI](service-gateway-onprem-tshoot.md)
+
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

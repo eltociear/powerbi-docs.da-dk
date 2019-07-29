@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 01/30/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: a5f3f5003eb1d22b0667698691471150f04553d8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b3fa7fd07a4c7f1992623871ed408b959582a125
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61196889"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270597"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Ofte stillede spørgsmål om høj tilgængelighed, failover og it-katastrofeberedskab i Power BI
 
@@ -65,7 +65,7 @@ Forekomster af Power BI-tjenesten vender tilbage til deres oprindelige område, 
 Hvis den Power BI-løsning, der bruges i din organisation, omfatter en af følgende elementer, skal du udføre nogle foranstaltninger for at garantere, at løsningen forbliver lettilgængelig:
 
 - Hvis din organisation bruger Power BI Premium, skal du sikre, at størrelsen af Premium-kapaciteten er fastsat, så den imødekommer indlæsningskravene for din udrulning.  Du kan finde hjælp til at planlægge og opfylde dette krav i [Hvidbog om planlægning og udrulning i Power BI Premium](https://aka.ms/Premium-Capacity-Planning-Deployment) og [appen Power BI Premium Capacity Metrics ](service-admin-premium-monitor-capacity.md). Vi føjer jævnligt nye funktioner til Metrics-appen og administrationsportalen i Power BI som en hjælp.
-- Hvis din organisation tilgår datakilder i det lokale miljø ved hjælp af Power BI-gatewayen i det lokale miljø, skal du konfigurere gatewayen, [som beskrevet i denne artikel](service-gateway-high-availability-clusters.md), for at sikre understøttelse af høj tilgængelighed. Følg denne vejledning, uanset om du er ved at opdatere rapporter i importtilstand, eller du tilgår data eller datamodeller ved hjælp af DirectQuery eller Live Connect.
+- Hvis din organisation tilgår datakilder i det lokale miljø ved hjælp af datagatewayen i det lokale miljø, skal du konfigurere gatewayen, [som beskrevet i denne artikel](/data-integration/gateway/service-gateway-high-availability-clusters), for at kunne understøtte høj tilgængelighed. Følg denne vejledning, uanset om du er ved at opdatere rapporter i importtilstand, eller du tilgår data eller datamodeller ved hjælp af DirectQuery eller Live Connect.
 
 ## <a name="will-gateways-function-when-in-failover-mode"></a>Fungerer gateways i failovertilstand?
 

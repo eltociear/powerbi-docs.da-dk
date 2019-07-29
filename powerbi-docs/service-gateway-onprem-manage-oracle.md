@@ -1,47 +1,44 @@
 ---
 title: Administrer din datakilde – Oracle
-description: Sådan administrerer du en datagateway i det lokale miljø og de datakilder, der hører til denne gateway.
+description: Sådan administrerer du en datagateway i det lokale miljø samt de datakilder, der hører til denne gateway.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 01/24/2018
+ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: f2c7cff36639007276622b095980a9460e539285
-ms.sourcegitcommit: 5e83fa6c93a0bc6599f76cc070fb0e5c1fce0082
+ms.openlocfilehash: af3ebd421a82448ce8a3f13661801ffc1d0051e0
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56216740"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271457"
 ---
 # <a name="manage-your-data-source---oracle"></a>Administrer din datakilde – Oracle
-Når du har installeret datagatewayen i det lokale miljø, skal du tilføje datakilder, der kan bruges sammen med gatewayen. I denne artikel kan du se, hvordan du arbejder med gateways og datakilder. Du kan bruge Oracle-datakilden til enten planlagte opdateringer eller DirectQuery.
 
-## <a name="download-and-install-the-gateway"></a>Download og installér gatewayen
-Du kan downloade gatewayen fra Power BI-tjenesten. Vælg **Downloads** > **Datagateway**, eller gå til [siden til download af gateway](https://go.microsoft.com/fwlink/?LinkId=698861).
+[!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-![](media/service-gateway-onprem-manage-oracle/powerbi-download-data-gateway.png)
-
-> [!WARNING]
-> Oracle Data Provider til .NET (ODP.NET) skal være installeret og konfigureret, for at gatewayen kan oprette forbindelse til Oracle-serveren. Dette er en del af Oracle Data Access Components (ODAC). Få flere oplysninger om, hvordan du downloader Oracle-udbyderen ved at se [Installér Oracle-klienten](#installing-the-oracle-client) nedenfor.
-> 
-> 
+Når du har [installeret datagatewayen i det lokale miljø](/data-integration/gateway/service-gateway-install), skal du [tilføje datakilder](service-gateway-data-sources.md#add-a-data-source), der kan bruges sammen med gatewayen. Denne artikel indeholder oplysninger om, hvordan du arbejder med gateways og Oracle-datakilder, der enten bruges til planlagte opdateringer eller DirectQuery.
 
 ## <a name="installing-the-oracle-client"></a>Installér Oracle-klienten
+
+Oracle Data Provider til .NET (ODP.NET) skal være installeret og konfigureret, for at gatewayen kan oprette forbindelse til Oracle-serveren. Dette er en del af Oracle Data Access Components (ODAC).
+
 Til **32-bit** versioner af Power BI Desktop skal du bruge følgende link til at downloade og installere **32-bit** Oracle-klienten:
 
 * [32-bit Oracle Data Access Components (ODAC) med Oracle Developer Tools til Visual Studio (12.1.0.2.4)](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
 
-Til **64-bit** versioner af Power BI Desktop eller til datagatewayen i det lokale miljø skal du bruge følgende link til at downloade og installere **64-bit** Oracle-klienten:
+Til **64-bit** versioner af Power BI Desktop eller til den lokale datagateway skal du bruge følgende link til at downloade og installere **64-bit** Oracle-klienten:
 
 * [64-bit ODAC 12.2c Release 1 (12.2.0.1.0) til Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
-Når den er installeret, skal du konfigurere filen tnsnames.ora med de korrekte oplysninger for databasen. Power BI Desktop og gatewayen forsvinder fra net_service_name, der er defineret i filen tnsnames.ora. Hvis den ikke er konfigureret, kan du ikke oprette forbindelse. Standardstien til tnsnames.ora er følgende: `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. Se flere oplysninger om, hvordan du konfigurerer tnsnames.ora-filer ved at se [Oracle: lokale navngivningsparametre (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
+Når den er installeret, skal du konfigurere filen tnsnames.ora med de korrekte oplysninger for databasen. Power BI Desktop og gatewayen forsvinder fra net_service_name, der er defineret i filen tnsnames.ora. Hvis den ikke er konfigureret, kan du ikke oprette forbindelse. Standardstien til tnsnames.ora er `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. Se flere oplysninger om, hvordan du konfigurerer tnsnames.ora-filer ved at se [Oracle: lokale navngivningsparametre (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
 
 ### <a name="example-tnsnamesora-file-entry"></a>Eksempel på indtastning i filen tnsnames.ora
+
 Det grundlæggende format for en indtastning i tnsnames.ora er følgende:
 
 ```
@@ -65,96 +62,56 @@ CONTOSO =
   )
 ```
 
-## <a name="add-a-gateway"></a>Tilføj en gateway
-Hvis du vil tilføje en gateway, skal du blot [downloade](https://go.microsoft.com/fwlink/?LinkId=698861) og installere gatewayen på en server i dit miljø. Når du har installeret gatewayen, vises den på listen over gateways under **Administrer gateways**.
-
-> [!NOTE]
-> **Administrer gateways** vises ikke, før du er administrator af mindst én gateway. Det kan du blive ved enten at blive tilføjet som administrator eller ved at installere og konfigurere en gateway.
-> 
-> 
-
-## <a name="remove-a-gateway"></a>Fjern en gateway
-Hvis du fjerner en gateway, slettes også eventuelle datakilder under denne gateway.  Dette vil også ødelægge alle dashboards og rapporter, der anvender disse datakilder.
-
-1. Vælg tandhjulsikonet ![](media/service-gateway-onprem-manage-oracle/pbi_gearicon.png) i øverste højre hjørne > **Administrer gateways**.
-2. Gateway > **Fjern**
-   
-   ![](media/service-gateway-onprem-manage-oracle/datasourcesettings7.png)
-
 ## <a name="add-a-data-source"></a>Tilføj en datakilde
-Du kan tilføje en datakilde ved enten at vælge en gateway og klikke på **Tilføj datakilde** eller gå til Gateway > **Tilføj datakilde**.
 
-![](media/service-gateway-onprem-manage-oracle/datasourcesettings1.png)
+Du kan finde oplysninger om, hvordan du tilføjer en datakilde i [Tilføj en datakilde](service-gateway-data-sources.md#add-a-data-source). Vælg Oracle som **datakildetype**.
 
-Du kan derefter vælge **Datakildetype** på listen.
+![Tilføj Oracle-datakilden](media/service-gateway-onprem-manage-oracle/data-source-oracle.png)
 
-![](media/service-gateway-onprem-manage-oracle/data-source-oracle.png)
+Når du har valgt Oracle-datakildetypen, skal du derefter udfylde oplysninger om datakilden, hvilket omfatter **Server** og **Database**.  
 
-Derefter skal du angive oplysninger om datakilden, herunder **Server** og **Database**.  
-
-Du skal også vælge en **Godkendelsesmetode**.  Denne kan enten være **Windows** eller **Basis**.  Du skal vælge **Basis**, hvis du skal bruge en konto, der er oprettet i Oracle i stedet for Windows-godkendelse. Indtast derefter legitimationsoplysningerne, der skal bruges til denne datakilde.
+Du skal også vælge en **Godkendelsesmetode**.  Denne kan enten være **Windows** eller **Basic**.  Du skal vælge **Basic**, hvis du vil bruge en konto, der er oprettet i Oracle, i stedet for Windows-godkendelse. Indtast derefter legitimationsoplysningerne, der skal bruges til denne datakilde.
 
 > [!NOTE]
-> Alle forespørgsler til datakilden kører ved hjælp af disse legitimationsoplysninger. Du kan finde flere oplysninger om, hvordan du gemmer [legitimationsoplysninger](service-gateway-onprem.md#credentials) i hovedartiklen om datagateways i det lokale miljø.
-> 
-> 
+> Alle forespørgsler til datakilden kører ved hjælp af disse legitimationsoplysninger. Hvis du vil have mere at vide om, hvor legitimationsoplysningerne gemmes, skal du se [Lagring af krypterede legitimationsoplysninger i cloudmiljøet](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud).
 
-![](media/service-gateway-onprem-manage-oracle/data-source-oracle2.png)
+![Angivelse af indstillinger for datakilden](media/service-gateway-onprem-manage-oracle/data-source-oracle2.png)
 
-Du kan klikke på **Tilføj**, når du har udfyldt det hele.  Du kan nu bruge denne datakilde til planlagt opdatering eller DirectQuery op mod en Oracle-server, der er i det lokale miljø. Du får vist *Forbindelsen er oprettet*, hvis det lykkes.
+Vælg **Tilføj**, når du har udfyldt det hele. Du kan nu bruge denne datakilde til planlagt opdatering eller DirectQuery op mod en Oracle-server, der er i det lokale miljø. Du får vist *Forbindelsen blev oprettet*, hvis det lykkes.
 
-![](media/service-gateway-onprem-manage-oracle/datasourcesettings4.png)
+![Visning af forbindelsesstatus](media/service-gateway-onprem-manage-oracle/datasourcesettings4.png)
 
 ### <a name="advanced-settings"></a>Avancerede indstillinger
-Du kan konfigurere niveauet for beskyttelse af personlige oplysninger for datakilden. Dette styrer, hvordan data kan blandes. Dette bruges kun til planlagt opdatering. Det gælder ikke for DirectQuery. [Få mere at vide](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
 
-![](media/service-gateway-onprem-manage-oracle/datasourcesettings9.png)
+Du kan eventuelt konfigurere niveauet for beskyttelse af personlige oplysninger for datakilden. Dette styrer, hvordan data kan kombineres. Dette bruges kun for planlagte opdateringer. Det gælder ikke for DirectQuery. Hvis du vil vide mere om niveauer for beskyttelse af personlige oplysninger, skal du se [Niveauer for beskyttelse af personlige oplysninger (Power-forespørgsel)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
-## <a name="remove-a-data-source"></a>Fjern en datakilde
-Hvis du fjerner en datakilde, ødelægger det alle dashboards eller rapporter, der anvender den pågældende datakilde.  
-
-Hvis du vil fjerne en datakilde, skal du gå til datakilden > **Fjern**.
-
-![](media/service-gateway-onprem-manage-oracle/datasourcesettings6.png)
-
-## <a name="manage-administrators"></a>Administrer administratorer
-Under fanen Administratorer for gatewayen kan du tilføje og fjerne brugere (eller sikkerhedsgrupper), som kan administrere gatewayen.
-
-![](media/service-gateway-onprem-manage-oracle/datasourcesettings8.png)
-
-## <a name="manage-users"></a>Administrer brugere
-Under fanen Brugere for datakilden kan du tilføje og fjerne brugere eller sikkerhedsgrupper, som kan bruge denne datakilde.
-
-> [!NOTE]
-> Listen over brugere kan kun bruges til at styre, hvem der har tilladelse til at publicere rapporter. Rapporternes ejere kan oprette dashboards eller indholdspakker og dele dem med andre brugere. Brugere, der anvender rapporten eller dashboardet, behøver ikke være på brugerlisten.
-> 
-> 
-
-![](media/service-gateway-onprem-manage-oracle/datasourcesettings5.png)
+![Angivelse af niveauet for beskyttelse af personlige oplysninger](media/service-gateway-onprem-manage-oracle/datasourcesettings9.png)
 
 ## <a name="using-the-data-source"></a>Brug datakilden
+
 Når du har oprettet datakilden, bliver den tilgængelig til brug med enten DirectQuery-forbindelser eller via planlagt opdatering.
 
 > [!WARNING]
-> Server- og databasenavn skal stemme overens mellem Power BI Desktop og datakilden i datagatewayen i det lokale miljø!
-> 
-> 
+> Servernavnet og databasenavnet skal matche mellem Power BI Desktop og datakilden i datagatewayen i det lokale miljø.
 
-Linket mellem dit datasæt og datakilden i gatewayen er baseret på dit servernavn og databasenavn. Disse skal stemme overens! Hvis du f.eks. angiver en IP-adresse for servernavnet i Power BI Desktop, skal du bruge IP-adressen til datakilden i konfigurationen af gatewayen. Dette navn skal også stemme overens med et alias defineret i filen tnsnames.ora. Se flere oplysninger om filen tnsnames.ora i [Installér Oracle-klienten](#installing-the-oracle-client).
+Linket mellem dit datasæt og datakilden i gatewayen er baseret på dit servernavn og databasenavn. Disse skal stemme overens. Hvis du f.eks. angiver en IP-adresse for servernavnet i Power BI Desktop, skal du bruge IP-adressen for datakilden i konfigurationen af gatewayen. Dette navn skal også stemme overens med et alias defineret i filen tnsnames.ora. Se flere oplysninger om filen tnsnames.ora i [Installér Oracle-klienten](#installing-the-oracle-client).
 
 Det er tilfældet for både DirectQuery og planlagt opdatering.
 
-### <a name="using-the-data-source-with-directquery-connections"></a>Brug af datakilden med DirectQuery-forbindelser
-Du skal sikre dig, at servernavn og databasenavn stemmer overens mellem Power BI Desktop og den konfigurerede datakilde for gatewayen. Du skal også at sikre dig, at din bruger er angivet på fanen **Brugere** i datakilden for at kunne publicere DirectQuery-datasæt. Valget til DirectQuery sker i Power BI Desktop, når du importerer data første gang. [Få mere at vide](desktop-use-directquery.md)
+### <a name="using-the-data-source-with-directquery-connections"></a>Brug datakilden med DirectQuery-forbindelser
 
-Når du publicerer fra enten Power BI Desktop eller **Hent data**, bør dine rapporter begynde at fungere. Det kan tage flere minutter, efter du har oprettet datakilden i gatewayen, før forbindelsen kan bruges.
+Du skal sikre, at servernavnet og databasenavnet matcher mellem Power BI Desktop og den konfigurerede datakilde for gatewayen. Du skal også at sikre, at din bruger er angivet under fanen **Brugere** i datakilden for at kunne publicere DirectQuery-datasæt. Valget til DirectQuery sker i Power BI Desktop, når du importerer data første gang. Du kan finde flere oplysninger om brug af DirectQuery under [Brug DirectQuery i Power BI Desktop](desktop-use-directquery.md).
+
+Når du publicerer fra enten Power BI Desktop eller **Hent Data**, bør dine rapporter begynde at fungere. Det kan tage flere minutter, efter du har oprettet datakilden i gatewayen, før forbindelsen kan bruges.
 
 ### <a name="using-the-data-source-with-scheduled-refresh"></a>Brug datakilden med planlagt opdatering
-Hvis du er angivet på fanen **Brugere** for den datakilde, der er konfigureret i gatewayen, og server- og databasenavn stemmer overens, får du vist gatewayen som en mulighed, der kan bruges sammen med planlagt opdatering.
 
-![](media/service-gateway-onprem-manage-oracle/powerbi-gateway-enterprise-schedule-refresh.png)
+Hvis du er angivet under fanen **Brugere** i den datakilde, der er konfigureret i gatewayen, og server- og databasenavnet stemmer overens, får du vist gatewayen som en mulighed, der kan bruges sammen med en planlagt opdatering.
+
+![Visning af brugerne](media/service-gateway-onprem-manage-oracle/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## <a name="troubleshooting"></a>Fejlfinding
+
 Du kan støde på flere fejl fra Oracle, når navngivningssyntaksen enten er forkert eller ikke konfigureret korrekt.
 
 * ORA-12154: TNS: Den angivne forbindelsesidentifikator kunne ikke løses  
@@ -163,20 +120,17 @@ Du kan støde på flere fejl fra Oracle, når navngivningssyntaksen enten er for
 * ORA-12170: TNS: Timeout indtruffet for forbindelse  
 * ORA-12504: TNS-lytter blev ikke tildelt SERVICE_NAME i CONNECT_DATA  
 
-Disse fejl kan opstå, hvis Oracle-klienten enten ikke er installeret, eller hvis den ikke er konfigureret korrekt. Hvis den er installeret, skal du bekræfte, at filen tnsnames.ora er konfigureret korrekt, og at du bruger det korrekte net_service_name. Du skal også sikre, at net_service_name er det samme for maskinen, der bruger Power BI Desktop, og maskinen, der kører gatewayen. Du kan finde flere oplysninger under [Installér Oracle-klienten](#installing-the-oracle-client).
+Disse fejl kan opstå, hvis Oracle-klienten enten ikke er installeret, eller hvis den ikke er konfigureret korrekt. Hvis den er installeret, skal du bekræfte, at filen tnsnames.ora er konfigureret korrekt, og at du bruger det korrekte net_service_name. Du skal også sikre, at net_service_name er det samme for den maskine, der bruger Power BI Desktop, og den maskine, der kører gatewayen. Du kan finde flere oplysninger under [Installér Oracle-klienten](#installing-the-oracle-client).
 
 > [!NOTE]
 > Du støder måske også på et problem pga. kompatibilitet mellem Oracle-serverversionen og Oracle-klientversionen. Disse skal normalt stemme overens.
-> 
-> 
 
-Se yderligere fejlfindingsoplysninger i forbindelse med gatewayen i [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md).
+Se yderligere fejlfindingsoplysninger i forbindelse med gatewayen i [Fejlfinding af datagatewayen i det lokale miljø](/data-integration/gateway/service-gateway-tshoot).
 
 ## <a name="next-steps"></a>Næste trin
-[Datagateway i det lokale miljø](service-gateway-onprem.md)  
-[Datagateway i det lokale miljø – detaljeret](service-gateway-onprem-indepth.md)  
-[Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
-[Power BI Premium](service-premium.md)
+
+* [Foretag fejlfinding af gateways – Power BI](service-gateway-onprem-tshoot.md)
+* [Power BI Premium](service-premium.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

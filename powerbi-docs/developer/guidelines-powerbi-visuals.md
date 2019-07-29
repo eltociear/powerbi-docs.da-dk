@@ -8,15 +8,41 @@ ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
-ms.date: 03/10/2019
-ms.openlocfilehash: cf9a613e82b4f5b7ce9cc67f5b920760d01ccbf7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 07/16/2019
+ms.openlocfilehash: ea1ae18f877793da9ac47023c236ba8a24f78ccf
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61342693"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271192"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Retningslinjer for Power BI-visualiseringer
+Før du [publicerer](https://docs.microsoft.com/power-bi/developer/office-store) din visualisering i AppSource, så andre kan finde og bruge den, skal du sørge for at følge retningslinjerne for at skabe en fantastisk oplevelse for dine brugere. 
+
+## <a name="context-menu"></a>Genvejsmenu
+Genvejsmenuen er den menu, du kommer til ved at højreklikke, som vises, når brugeren holder markøren over en visualisering.
+Genvejsmenuen bør være aktiveret i alle Power BI-visualiseringer for at sikre en ensartet oplevelse. Læs [denne artikel](https://github.com/Microsoft/PowerBI-visuals/blob/gh-pages/tutorials/building-bar-chart/adding-context-menu-to-the-bar.md) for at få mere at vide om, hvordan du tilføjer en genvejsmenu.
+
+
+## <a name="logo-guidelines"></a>Retningslinjer for logo
+
+I dette afsnit beskrives specifikationerne for tilføjelse af logoer og logotyper i visualiseringer.
+
+> [!IMPORTANT]
+> Logoer er kun tilladt i *redigeringstilstand*. Logoer *må ikke* vises i visningstilstand.
+
+![Definitioner](media/guidelines-powerbi-visuals/definitions.png)
+
+![Husk følgende](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
+
+![Undgå følgende](media/guidelines-powerbi-visuals/things-to-avoid.png)
+
+![Størrelse og format](media/guidelines-powerbi-visuals/size-and-format.png)
+
+![Margener og størrelse](media/guidelines-powerbi-visuals/margins-and-sizes.png)
+
+![Redigeringstilstand](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
+
 
 ## <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Retningslinjer for Power BI-visualiseringer med ekstra køb
 
@@ -36,31 +62,13 @@ Udviklere uploader deres IAP-visualiseringer til AppSource via Seller Dashboard,
 
 ## <a name="what-is-a-power-bi-visual-with-iap-features"></a>Hvad er en Power BI-visualisering med IAP-funktioner?
 
-En visualisering med apptilkøb er en **gratis** visualisering, der tilbyder **gratis funktioner**. Den indeholder også nogle avancerede funktioner, som man muligvis skal betale for, før de kan anvendes. I beskrivelsen af visualiseringen skal udviklerne give brugerne besked om, hvilke funktioner der kræver yderligere køb, før de kan anvendes. I øjeblikket leverer Microsoft ikke oprindelige API'er til understøttelse af apptilkøb og tilføjelsesprogrammer.
+En visualisering med apptilkøb er en *gratis* visualisering, der tilbyder *gratis funktioner*. Den indeholder også nogle avancerede funktioner, som man muligvis skal betale for, før de kan anvendes. I beskrivelsen af visualiseringen skal udviklerne give brugerne besked om, hvilke funktioner der kræver yderligere køb, før de kan anvendes. I øjeblikket leverer Microsoft ikke oprindelige API'er til understøttelse af apptilkøb og tilføjelsesprogrammer.
 
 Udviklere kan bruge et hvilket som helst betalingssystem fra tredjepart til disse køb. Du kan finde flere oplysninger i [vores politik for Store](https://docs.microsoft.com/office/dev/store/validation-policies#2-apps-or-add-ins-can-display-certain-ads).
 
 > [!NOTE]
 > Vandmærker er ikke tilladt i de gratis funktioner eller gratis visualiseringer. Vandmærker må kun bruges på de betalte funktioner, der bruges uden en gyldig licens. Vi anbefaler at vise et pop op-vindue med alle de licensrelaterede oplysninger, hvis de avancerede betalte funktioner bruges uden en gyldig licens.  
 
-## <a name="logo-guidelines"></a>Retningslinjer for logo
-
-I dette afsnit beskrives specifikationerne for tilføjelse af logoer og logotyper i visualiseringer.
-
-> [!IMPORTANT]
-> Logoer er kun tilladt i **redigeringstilstand**. Logoer **må ikke** vises i visningstilstand.
-
-![Definitioner](media/guidelines-powerbi-visuals/definitions.png)
-
-![Husk følgende](media/guidelines-powerbi-visuals/things-to-keep-in-mind.png)
-
-![Undgå følgende](media/guidelines-powerbi-visuals/things-to-avoid.png)
-
-![Størrelse og format](media/guidelines-powerbi-visuals/size-and-format.png)
-
-![Margener og størrelse](media/guidelines-powerbi-visuals/margins-and-sizes.png)
-
-![Redigeringstilstand](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
 ## <a name="best-practices"></a>Bedste praksis
 

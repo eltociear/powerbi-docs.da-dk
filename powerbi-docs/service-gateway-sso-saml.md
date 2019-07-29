@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 03/05/2019
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3c9fd8877347ad0eebf7db059cc791583c89f353
-ms.sourcegitcommit: af2b2238fe77eaa1b2392a19a143a0250b8665cf
+ms.openlocfilehash: b1d84e9de9ae6d6fd8306fce4865977a8d273652
+ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65533715"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68289936"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Brug SAML (Security Assertion Markup Language) til enkeltlogon (SSO) fra Power BI til datakilder i det lokale miljø
 
@@ -27,7 +27,7 @@ Vi understøtter i øjeblikket SAP HANA med SAML. Få mere at vide om opsætning
 
 Vi understøtter flere datakilder med [Kerberos](service-gateway-sso-kerberos.md).
 
-Bemærk! Det anbefales på det **kraftigste** at aktivere kryptering for HANA, før der etableres en SAML SSO-forbindelse, dvs. du skal konfigurere HANA-serveren til at acceptere krypterede forbindelser og også konfigurere gatewayen til at bruge kryptering, når der kommunikeres med HANA-serveren. HANA ODBC-driveren kan som standard **ikke** kryptere SAML-påstande, og hvis kryptering ikke er slået til, bliver den signerede SAML-påstand sendt fra gatewayen til HANA-serveren som "godkendt" og er sårbar over for opfangelse og genbrug af tredjeparter.
+Bemærk! Det anbefales på det **kraftigste**, at kryptering for HANA aktiveres, før der etableres en SAML SSO-forbindelse, dvs. du skal konfigurere HANA-serveren til at acceptere krypterede forbindelser og også konfigurere gatewayen til at bruge kryptering, når der kommunikeres med HANA-serveren. HANA ODBC-driveren kan som standard **ikke** kryptere SAML-påstande, og hvis kryptering ikke er slået til, bliver den signerede SAML-påstand sendt fra gatewayen til HANA-serveren som "godkendt" og er sårbar over for opfangelse og genbrug af tredjeparter.
 
 ## <a name="configuring-the-gateway-and-data-source"></a>Konfiguration af gatewayen og datakilden
 
@@ -39,24 +39,25 @@ I følgende trin beskrives, hvordan du etablerer et tillidsforhold mellem en HAN
 
 1. Opret X509-certifikatet og den private nøgle for rodnøglecentret. Du opretter f.eks. X509-certifikatet og den private nøgle for rodnøglecentret i .pem-format ved at gøre følgende:
 
-```
-openssl req -new -x509 -newkey rsa:2048 -days 3650 -sha256 -keyout CA_Key.pem -out CA_Cert.pem -extensions v3_ca
-```
+   ```
+   openssl req -new -x509 -newkey rsa:2048 -days 3650 -sha256 -keyout CA_Key.pem -out CA_Cert.pem -extensions v3_ca
+   ```
+  Sørg for, at rodnøglecenterets certifikat er beskyttet korrekt. Hvis det er hentet af tredjeparter, kan det bruges til at få uautoriseret adgang til HANA-serveren. 
 
-Føj certifikatet (f.eks. CA_Cert.pem) til HANA-serverens tillidslager, så HANA-serveren har tillid til alle certifikater, der er signeret af det rodnøglecenter, du lige har oprettet. Du finder placeringen af din HANA-servers tillidslager ved at undersøge konfigurationsindstillingen **ssltruststore**. Hvis du har fulgt SAP-dokumentationen, der dækker den måde, du konfigurerer OpenSSL på, har din HANA-server måske allerede tillid til et rodnøglecenter, som du kan genbruge. Du kan finde oplysninger i [Se, hvordan du konfigurerer OpenSSL for SAP HANA Studio til SAP HANA-server](https://archive.sap.com/documents/docs/DOC-39571). Hvis du har flere HANA-servere, som du vil aktivere SAML SSO for, skal du kontrollere, at alle serverne har tillid til dette rodnøglecenter.
+  Føj certifikatet (f.eks. CA_Cert.pem) til HANA-serverens tillidslager, så HANA-serveren har tillid til alle certifikater, der er signeret af det rodnøglecenter, du lige har oprettet. Du finder placeringen af din HANA-servers tillidslager ved at undersøge konfigurationsindstillingen **ssltruststore**. Hvis du har fulgt SAP-dokumentationen, der dækker den måde, du konfigurerer OpenSSL på, har din HANA-server måske allerede tillid til et rodnøglecenter, som du kan genbruge. Du kan finde oplysninger i [Sådan konfigureres Open SSL til SAP HANA Studio til SAP HANA Server](https://archive.sap.com/documents/docs/DOC-39571). Hvis du har flere HANA-servere, som du vil aktivere SAML SSO for, skal du kontrollere, at alle serverne har tillid til dette rodnøglecenter.
 
-1. Opret X509-certifikatet for gatewayens IdP. Hvis du f.eks. vil oprette en anmodning om signering af certifikat (IdP_Req.pem) og en privat nøgle (IdP_Key.pem), som er gyldige i ét år, skal du udføre følgende kommando:
+1. Opret X509-certifikatet for gatewayens idP. Hvis du f.eks. vil oprette en anmodning om signering af certifikat (IdP_Req.pem) og en privat nøgle (IdP_Key.pem), som er gyldige i ét år, skal du udføre følgende kommando:
 
-```
- openssl req -newkey rsa:2048 -days 365 -sha256 -keyout IdP_Key.pem -out IdP_Req.pem -nodes
-```
+   ```
+   openssl req -newkey rsa:2048 -days 365 -sha256 -keyout IdP_Key.pem -out IdP_Req.pem -nodes
+   ```
 
+   Signer anmodningen om signering af certifikat ved hjælp af det rodnøglecenter, som dine HANA-servere har tillid til. Hvis du f.eks. vil signere IdP_Req.pem ved hjælp af CA_Cert.pem og CA_Key.pem (rodnøglecentrets certifikat og nøgle), skal du udføre følgende kommando:
 
-Signer anmodningen om signering af certifikat ved hjælp af det rodnøglecenter, som dine HANA-servere har tillid til. Hvis du f.eks. vil signere IdP_Req.pem ved hjælp af CA_Cert.pem og CA_Key.pem (rodnøglecentrets certifikat og nøgle), skal du udføre følgende kommando:
+   ```
+   openssl x509 -req -days 365 -in IdP_Req.pem -sha256 -extensions usr_cert -CA CA_Cert.pem -CAkey CA_Key.pem -CAcreateserial -out IdP_Cert.pem
+   ```
 
-  ```
-openssl x509 -req -days 365 -in IdP_Req.pem -sha256 -extensions usr_cert -CA CA_Cert.pem -CAkey CA_Key.pem -CAcreateserial -out IdP_Cert.pem
-```
 Det resulterende IdP-certifikat er gyldigt i ét år (se indstillingen -dage). Importér nu certifikatet for din IdP i HANA Studio for at oprette en ny SAML-identitetsudbyder.
 
 1. I SAP HANA Studio skal du højreklikke på din SAP HANA-server og derefter navigere til **Sikkerhed** > **Åbn sikkerhedskonsollen** > **SAML-identitetsudbyder** > **Kryptografisk OpenSSL-bibliotek**.
@@ -75,11 +76,11 @@ Det resulterende IdP-certifikat er gyldigt i ét år (se indstillingen -dage). I
 
     ![Konfigurer SAML](media/service-gateway-sso-saml/configure-saml.png)
 
-1. Vælg den identitetsudbyder, du oprettede i trin 2. For **eksterne id**, Angiv Power BI brugerens UPN (typisk den mailadresse brugeren logger på Power BI med), og vælg derefter **Tilføj**. Bemærk, at hvis du har konfigureret din Gateway, så brug konfigurationsindstillingen ADUserNameReplacementProperty skal du angive den værdi, der erstatter Power BI brugerens oprindelige UPN. F.eks, hvis du har angivet ADUserNameReplacementProperty til SAMAccountName, skal du indtaste brugerens SAMAccountName.
+1. Vælg den identitetsudbyder, du oprettede i trin 2. Angiv Power BI-brugerens UPN (typisk den mailadresse, brugeren logger på Power BI med) som **Ekstern identitet**, og vælg derefter **Tilføj**. Bemærk! Hvis du har konfigureret din gateway til at bruge konfigurationsindstillingen *ADUserNameReplacementProperty*, så skal du angive den værdi, der skal erstatte Power BI-brugerens oprindelige UPN. Hvis du f.eks. angiver *ADUserNameReplacementProperty* til **SAMAccountName**, så skal du angive brugerens **SAMAccountName**.
 
     ![Vælg identitetsudbyder](media/service-gateway-sso-saml/select-identity-provider.png)
 
-Nu, hvor du har konfigureret certifikatet og identiteten, kan du konvertere certifikatet til et pfx-format og konfigurere gatewaycomputeren til at bruge certifikatet.
+Nu, hvor du har konfigureret certifikatet og identiteten for gatewayen, kan du konvertere certifikatet til et pfx-format og konfigurere gatewaymaskinen til at bruge certifikatet.
 
 1. Konvertér certifikatet til pfx-formatet ved at køre følgende kommando. Bemærk, at denne kommando indstiller "root" som adgangskode for pfx-filen.
 
@@ -99,7 +100,7 @@ Nu, hvor du har konfigureret certifikatet og identiteten, kan du konvertere cert
 
     ![Importér certifikat](media/service-gateway-sso-saml/import-certificate.png)
 
-1. Giv kontoen for gatewaytjenesten adgang til den private nøgle for certifikatet:
+1. Giv gatewaytjenestekontoen adgang til den private nøgle for certifikatet:
 
     1. Kør Microsoft Management Console (MMC) på gatewaycomputeren.
 
@@ -119,7 +120,7 @@ Nu, hvor du har konfigureret certifikatet og identiteten, kan du konvertere cert
 
         ![Administrer private nøgler](media/service-gateway-sso-saml/manage-private-keys.png)
 
-    1. Føj kontoen for gatewaytjenesten til listen. Kontoen er som standard **NT SERVICE\PBIEgwService.** Du kan finde ud af, hvilken konto der kører gatewaytjenesten ved at køre **services.msc** og finde **Datagatewaytjeneste i det lokale miljø**.
+    1. Føj gatewaytjenestekontoen til listen. Kontoen er som standard **NT SERVICE\PBIEgwService.** Du kan finde ud af, hvilken konto der kører gatewaytjenesten ved at køre **services.msc** og finde **Datagatewaytjeneste i det lokale miljø**.
 
         ![Gatewaytjeneste](media/service-gateway-sso-saml/gateway-service.png)
 
@@ -132,7 +133,7 @@ Følg til sidst disse trin for at føje certifikataftrykket til konfigurationen 
     ```
 1. Kopiér aftrykket for det certifikat, du har oprettet.
 
-1. Naviger til gatewaymappen, der som standard ligger her C:\Programmer\Datagateway i det lokale miljø.
+1. Naviger til gatewaymappen, der som standard ligger her C:\Programmer\On-premises data gateway.
 
 1. Åbn PowerBI.DataMovement.Pipeline.GatewayCore.dll.config, og find afsnittet \*SapHanaSAMLCertThumbprint\*. Indsæt det aftryk, du har kopieret.
 
@@ -148,7 +149,7 @@ Nu kan du bruge siden **Administrer gateway** i Power BI til at konfigurere data
 
 Når du har konfigureret SSO, får du muligvis vist følgende fejl på Power BI-portalen: "De angivne legitimationsoplysninger kan ikke bruges til SapHana-kilden." Denne fejl tyder på, at SAML legitimationsoplysningerne blev afvist af SAP HANA.
 
-Godkendelsessporinger indeholder detaljerede oplysninger om fejlfinding af problemer med legitimationsoplysninger på SAP HANA. Følg disse trin for at konfigurere sporing for din SAP HANA-server.
+Godkendelsessporinger på serversiden indeholder detaljerede oplysninger om fejlfinding af problemer med legitimationsoplysninger på SAP HANA. Følg disse trin for at konfigurere sporing for din SAP HANA-server.
 
 1. Slå godkendelsessporing til på SAP HANA-serveren ved at køre følgende forespørgsel.
 
@@ -177,9 +178,9 @@ Godkendelsessporinger indeholder detaljerede oplysninger om fejlfinding af probl
 
 ## <a name="next-steps"></a>Næste trin
 
-Du kan finde flere oplysninger om **datagatewayen i det lokale miljø** og **DirectQuery** i følgende ressourcer:
+Du kan finde flere oplysninger om **datagateway i det lokale miljø** og **DirectQuery** i følgende ressourcer:
 
-* [On-premises data gateway (Datagateway i det lokale miljø)](service-gateway-onprem.md)
+* [Hvad er en datagateway i det lokale miljø?](/data-integration/gateway/service-gateway-getting-started)
 * [DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakilder, der understøttes af DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery og SAP BW](desktop-directquery-sap-bw.md)

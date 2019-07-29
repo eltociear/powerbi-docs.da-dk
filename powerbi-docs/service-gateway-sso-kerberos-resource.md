@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 01/08/2018
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6da5d89ae1ad3b98a879e4d99a10aa69224e1c46
-ms.sourcegitcommit: 20ae9e9ffab6328f575833be691073de2061a64d
+ms.openlocfilehash: 6dc530305634b44415ddccb9c42952c0bfbe2e5f
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58383354"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271934"
 ---
 # <a name="use-resource-based-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Brug ressourcebaseret Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø
 
@@ -23,15 +23,15 @@ Brug [ressourcebaseret Kerberos-begrænset delegering](/windows-server/security/
 
 ## <a name="preparing-for-resource-based-kerberos-constrained-delegation"></a>Forberedelse af ressourcebaseret Kerberos-begrænset delegering
 
-Der skal være konfigureret flere elementer, hvis Kerberos-begrænset delegering skal fungere korrekt, herunder _tjenestens hovednavn_ (SPN) og delegeringsindstillinger i tjenestekonti. 
+Der skal være konfigureret flere elementer, hvis Kerberos-begrænset delegering skal fungere korrekt, herunder _tjenestens hovednavn_ (SPN) og delegeringsindstillinger i tjenestekonti.
 
 ### <a name="prerequisite-1-operating-system-requirements"></a>Forudsætning 1: Krav til operativsystem
 
 Ressourcebaseret begrænset delegering kan kun konfigureres på en domænecontroller, der kører Windows Server 2012 R2- eller Windows Server 2012 eller nyere.
 
-### <a name="prerequisite-2-install-and-configure-the-on-premises-data-gateway"></a>Forudsætning 2: Installér og konfigurer datagatewayen i det lokale miljø.
+### <a name="prerequisite-2-install-and-configure-the-on-premises-data-gateway"></a>Forudsætning 2: Installér og konfigurer datagatewayen i det lokale miljø
 
-Denne version af datagatewayen i det lokale miljø understøtter en direkte opgradering samt _indstillingsovertagelse_ af eksisterende gateways.
+Datagatewayen i det lokale miljø understøtter en direkte opgradering samt _overtagelse af indstillinger_ for eksisterende gateways.
 
 ### <a name="prerequisite-3-run-the-gateway-windows-service-as-a-domain-account"></a>Forudsætning 3: Kør gatewayens Windows-tjeneste som en domænekonto.
 
@@ -39,7 +39,7 @@ I en standardinstallation kører gatewayen som en tjenestekonto på en lokal com
 
 ![Domænekonto](media/service-gateway-sso-kerberos-resource/domain-account.png)
 
-Når **Kerberos-begrænset delegering skal aktiveres, skal gatewayen køre som en domænekonto, medmindre Azure AD allerede er synkroniseret med dit lokale Active Directory (med Azure AD DirSync/Connect). Hvis du har brug for at skifte kontoen til en domænekonto, kan du se [Skift af gatewayen til en domænekonto](service-gateway-sso-kerberos.md).
+Når **Kerberos-begrænset delegering skal aktiveres, skal gatewayen køre som en domænekonto, medmindre Azure AD allerede er synkroniseret med dit lokale Active Directory (med Azure AD DirSync/Connect). Hvis du har brug for at skifte kontoen til en domænekonto, skal du se [Skift gatewaytjenestekontoen](/data-integration/gateway/service-gateway-service-account).
 
 Hvis Azure AD DirSync/Connect er konfigureret, og brugerkonti er synkroniserede, behøver gatewaytjenesten ikke at udføre lokale AD-opslag på kørselstidspunktet. Du kan bruge det lokale tjeneste-SID (i stedet for at kræve en domænekonto) til gatewaytjenesten. De trin til konfiguration af Kerberos Constrained Delegation, som er beskrevet i denne artikel, er de samme som den konfiguration (de anvendes blot på gatewayens computerobjekt i Active Directory i stedet for på domænekontoen).
 
@@ -51,9 +51,9 @@ Selvom det teknisk set er muligt for en domæneadministrator midlertidigt eller 
 
 Følgende to elementer skal konfigureres eller valideres, før systemet kan konfigureres korrekt:
 
-1. Hvis det er nødvendigt, kan du konfigurere et SPN for gatewaytjenestens domænekonto.
+* Hvis det er nødvendigt, kan du konfigurere et SPN for gatewaytjenestens domænekonto.
 
-1. Konfigurer delegeringsindstillinger på gatewaytjenestens domænekonto.
+* Konfigurer delegeringsindstillinger på gatewaytjenestens domænekonto.
 
 Bemærk, at du skal være domæneadministrator for at kunne udføre disse to konfigurationstrin.
 
@@ -61,15 +61,15 @@ I de følgende afsnit beskrives disse trin efter tur.
 
 ### <a name="configure-an-spn-for-the-gateway-service-account"></a>Konfigurer et SPN til gatewaytjenestekontoen
 
-Først skal du fastlægge, om der allerede er oprettet et SPN for den domænekonto, der er anvendt som gatewaytjenestekonto, ved at følge disse trin:
+Først skal du finde ud af, om der allerede er oprettet et SPN for den domænekonto, der bruges som gatewaytjenestekontoen, ved at følge disse trin:
 
 1. Start **Active Directory-brugere og -computere** som domæneadministrator.
 
-1. Højreklik på domænet, vælg **Find**, og skriv kontonavnet for gatewaytjenestekontoen
+1. Højreklik på domænet, vælg **Find**, og skriv kontonavnet på gatewaytjenestekontoen.
 
 1. Højreklik i søgeresultaterne på gatewaytjenestekontoen, og vælg **Egenskaber**.
 
-1. Hvis fanen **Delegering** kan ses i dialogboksen **Egenskaber**, så var der allerede oprettet et SPN, og du kan gå videre til næste underafsnit om konfiguration af Delegering-indstillinger.
+1. Hvis fanen **Delegering** kan ses i dialogboksen **Egenskaber**, så var der allerede oprettet et SPN, og du kan gå videre til næste underafsnit om [konfiguration af indstillinger for Delegering](#configure-delegation-settings).
 
     Hvis der ikke er en **Delegering**-fane i dialogboksen **Egenskaber**, kan du manuelt oprette et SPN for den pågældende konto, som tilføjer fanen **Delegering** (det er den nemmeste måde at konfigurere delegeringsindstillinger på). Oprettelse af et hovednavn til tjenesten, eller et SPN, kan udføres ved hjælp af [setspn-værktøjet](https://technet.microsoft.com/library/cc731241.aspx), der følger med Windows (du skal have rettigheder som domæneadministrator for at kunne oprette SPN'et).
 
@@ -83,10 +83,10 @@ Først skal du fastlægge, om der allerede er oprettet et SPN for den domænekon
 
 I følgende trin antager vi, at vi har et lokalt miljø med to computere i forskellige domæner: en gatewaycomputer og en databaseserver, der kører SQL Server. Af hensyn til dette eksempel antager vi også, at vi har følgende indstillinger og navne:
 
-- Gatewaymaskinens navn: **PBIEgwTestGW**
-- Gatewaytjenestekonto: **PBIEgwTestFrontEnd\GatewaySvc** (kontoens viste navn: Gateway Connector)
-- Navn på computer med SQL Server-datakilde: **PBIEgwTestSQL**
-- SQL Server-datakildes tjenestekonto: **PBIEgwTestBackEnd\SQLService**
+* Gatewaymaskinens navn: **PBIEgwTestGW**
+* Gatewaytjenestekonto: **PBIEgwTestFrontEnd\GatewaySvc** (kontoens viste navn: Gateway Connector)
+* Navn på computer med SQL Server-datakilde: **PBIEgwTestSQL**
+* SQL Server-datakildes tjenestekonto: **PBIEgwTestBackEnd\SQLService**
 
 Med udgangspunkt i disse eksempelnavne og -indstillinger skal du bruge følgende konfigurationstrin:
 
@@ -125,7 +125,7 @@ På den computer, der kører gatewaytjenesten (**PBIEgwTestGW** i eksemplet), sk
 
 1. Højreklik og åbn **Egenskaber** for **Repræsenter en klient efter godkendelse**, og kontrollér listen over konti. Den skal omfatte gatewaytjenestekontoen ( **PBIEgwTestFront-end**  **\GatewaySvc** ).
 
-1. Fra listen over politikker under **Tildeling af brugerrettigheder** skal du vælge **Optræd som en del af operativsystemet (SeTcbPrivilege)**. Kontrollér, at gatewaytjenestekontoen også er medtaget på listen over konti.
+1. Fra listen over politikker under **Tildeling af brugerrettigheder** skal du vælge **Optræd som en del af operativsystemet (SeTcbPrivilege)** . Kontrollér, at gatewaytjenestekontoen også er medtaget på listen over konti.
 
 1. Genstart processen for tjenesten med **datagatewayen i det lokale miljø**.
 
@@ -139,10 +139,10 @@ Denne konfiguration fungerer i de fleste tilfælde. Med Kerberos kan der dog væ
 
 ## <a name="next-steps"></a>Næste trin
 
-Du kan finde flere oplysninger om **datagatewayen i det lokale miljø** og **DirectQuery** i følgende ressourcer:
+Du kan finde flere oplysninger om **datagateway i det lokale miljø** og **DirectQuery** i følgende ressourcer:
 
-- [Datagateway i det lokale miljø](service-gateway-onprem.md)
-- [DirectQuery i Power BI](desktop-directquery-about.md)
-- [Datakilder, der understøttes af DirectQuery](desktop-directquery-data-sources.md)
-- [DirectQuery og SAP BW](desktop-directquery-sap-bw.md)
-- [DirectQuery og SAP HANA](desktop-directquery-sap-hana.md)
+* [Hvad er en datagateway i det lokale miljø?](/data-integration/gateway/service-gateway-onprem.md)
+* [DirectQuery i Power BI](desktop-directquery-about.md)
+* [Datakilder, der understøttes af DirectQuery](desktop-directquery-data-sources.md)
+* [DirectQuery og SAP BW](desktop-directquery-sap-bw.md)
+* [DirectQuery og SAP HANA](desktop-directquery-sap-hana.md)

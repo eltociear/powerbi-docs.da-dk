@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 07/15/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: cc2c9cbc15240e3dc4d46c7f02ef0b0d82bb36f8
-ms.sourcegitcommit: e48ef4c88e4a1a0b259bf899d85d520c4edd5751
+ms.openlocfilehash: 55ffc166d5a42e850bc4e2dedf80de1c6b9f8634
+ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66823442"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68342134"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -33,6 +33,90 @@ Linkene ud for hver opdatering betyder følgende:
 Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
 
 I de følgende afsnit beskrives tidligere måneders opdateringer til **Power BI Desktop**.
+
+
+## <a name="june-2019-update-2705494561"></a>Opdatering fra juni 2019 (2.70.5494.561)
+
+Vores opdateringer i juni spreder solskin og blå himmel over dine rapporter med et forfriskende og helt nyt farveskema til Power BI Desktop og en lang række andre forbedringer. 
+
+Nu kan du [downloade den nyeste version af Power BI Desktop](https://powerbi.microsoft.com/desktop). Hvis du kører Windows 10, kan du også få **Power BI Desktop** fra Windows Store. De månedlige versioner er de samme, selvom versionsnummeret kan variere mellem de to, uanset hvilken måde du installerer **Power BI Desktop** på. Du kan finde flere oplysninger i [denne artikel](desktop-get-the-desktop.md). 
+
+Linkene ud for hver opdatering betyder følgende:
+
+* **[video]** angiver, at videoen afspilles på en ny fane i browseren, når funktionen beskrives.
+* Til nogle funktioner findes der en **[artikel]** , hvor funktionen beskrives mere detaljeret.
+* De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** indlæg.
+* Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
+
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
+
+Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
+
+### <a name="reporting"></a>Rapportering
+* Opdateret design af ruden [[video]](https://youtu.be/7k-nP38uHyQ?t=8) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#panes) 
+* Filtre på visualiseringsniveau for udsnit [[video]](https://youtu.be/7k-nP38uHyQ?t=116) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#slicerFilters)
+* Sortering i ruden Ydeevneanalyse [[video]](https://youtu.be/7k-nP38uHyQ?t=237) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#perfAnalyzer)
+* Betinget formatering af opdateringer til formateringsindstillinger [[video]](https://youtu.be/7k-nP38uHyQ?t=311) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#conditionalFormatting)
+* Visuelt værktøjstip til overskrifter [[video]](https://youtu.be/7k-nP38uHyQ?t=530) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#headerTooltips)
+* Tilpasning af etiketten I alt for tabeller og matrixer [[video]](https://youtu.be/7k-nP38uHyQ?t=722) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#totalLabels)
+* Understøttelse af synkroniseringsudsnit for hierarkisk udsnit [[video]](https://youtu.be/7k-nP38uHyQ?t=859) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#syncSlicer)
+* Konsekvente skrifttypestørrelser på tværs af visualiseringer [[video]](https://youtu.be/7k-nP38uHyQ?t=962) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#fontSizes)
+
+
+### <a name="analytics"></a>Analyse
+* Opdateringer af visualiseringen af nøglefaktorer (prøveversion) [[video]](https://youtu.be/7k-nP38uHyQ?t=1064) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#keyInfluencers) 
+    * Nøglefaktorer med Live Connect til Power BI-datasæt
+    * Tilgængelighed til nøglefaktorer
+    * Understøttelse af Cloud RLS
+* Tilgængelighed til dialogboksen Administrer sammenlægninger [[video]](https://youtu.be/7k-nP38uHyQ?t=1213) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#aggregationsAccessibility) 
+
+### <a name="modeling"></a>Modellering
+* Ny = DAX-sammenligningsoperator [[video]](https://youtu.be/7k-nP38uHyQ?t=1267) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#dax) 
+
+
+### <a name="visuals"></a>Visualiseringer
+* Ruden Tilpasset visualisering (prøveversion) [[video]](https://youtu.be/7k-nP38uHyQ?t=1349) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#personalizedVizPane) 
+* Tre nye brugerdefinerede visualiseringer og opdateringer [[video]](https://youtu.be/7k-nP38uHyQ?t=1391) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#synopticVisual) 
+
+
+### <a name="data-connectivity"></a>Dataforbindelse
+* Opret forbindelse til delte og certificerede datasæt [[video]](https://youtu.be/7k-nP38uHyQ?t=1739) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#sharedCertifiedDatasets) 
+* Generel adgang til Common Data Service-connector [[video]](https://youtu.be/7k-nP38uHyQ?t=1807) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#cds) 
+* Generel adgang til Azure Data Explorer-connector [[video]](https://youtu.be/7k-nP38uHyQ?t=1823) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#azureDataExplorer) 
+* Forbedringer til Cosmos DB-connectoren [[video]](https://youtu.be/7k-nP38uHyQ?t=1835) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#cosmosDB)
+* Entersoft-dataconnector [[video]](https://youtu.be/7k-nP38uHyQ?t=1851) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#entersoft) 
+
+
+### <a name="data-preparation"></a>Dataforberedelse
+* Forbedringer af M Intellisense [[video]](https://youtu.be/7k-nP38uHyQ?t=1866) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#intellisense) 
+
+
+> [!NOTE]
+> Du kan også [se alle de datakilder, du kan bruge i Power BI Desktop](desktop-data-sources.md). Vi opdaterer hele tiden listen med nye datakilder, så kig tilbage ofte.
+
+Vil du have flere oplysninger om disse opdateringer? Se nærmere på [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/), hvor du kan få mere detaljerede oplysninger om hver af de nye funktioner (dette er de samme referencer til blogindlæg på listen herover).
+
+
+I følgende video beskrives og vises hver af disse opdateringer. Du kan også se videoen i blogindlægget.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7k-nP38uHyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+> [!NOTE]
+> Du kan også læse om [nyhederne i Power BI-tjenesten](service-whats-new.md) og se [nyhederne i mobilappsene til Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisation kræver det. Vi anbefaler altid, at du bruger den nyeste version af Power BI Desktop i stedet for en tidligere version. Der er følgende begrænsninger for alle tidligere versioner:
+
+* Der ydes ikke service til tidligere versioner af Power BI Desktop – du skal altid bruge den nyeste version for at få de nyeste funktioner og opdateringer.
+* Du kan muligvis ikke åbne filer, der er oprettet eller gemt i nyere versioner af Power BI Desktop, med tidligere versioner af Power BI Desktop. 
+* Hvis du får vist en advarsel, når du indlæser en rapport, der er gemt i en nyere version af Power BI Desktop, og derefter gemmer rapporten i den tidligere version, mister du alle oplysninger, der er relateret til nye funktioner.
+* Vi arkiverer kun de engelske versioner af Power BI Desktop.
+
+Vælg følgende links for at downloade denne tidligere version: 
+
+* [Power BI Desktop-version fra maj 2019 – 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06.msi)
+* [Power BI Desktop-version fra maj 2019 – 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06_x64.msi)
+
 
 ## <a name="may-2019-update-26954671251"></a>Opdatering fra maj 2019 (2.69.5467.1251)
 
@@ -130,7 +214,7 @@ Du kan også se videoen med de **seneste opdateringer** fra starten direkte i ar
 Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 
 ### <a name="reporting"></a>Rapportering
-* Forbedringer af filterruden [[video]](https://youtu.be/vih35kSrEHU?t=9)  [[artikel]](power-bi-report-filter-preview.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#filterPane) 
+* Forbedringer af filterruden [[video]](https://youtu.be/vih35kSrEHU?t=9)  [[artikel]](power-bi-report-filter.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#filterPane) 
 * Betinget formatering af visualtitler  [[video]](https://youtu.be/vih35kSrEHU?t=254)  [[artikel]](desktop-conditional-format-visual-titles.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dynamicTitles)
 * Betinget formatering af URL-handlinger på websteder for knapper, figurer og billeder [[video]](https://youtu.be/vih35kSrEHU?t=439)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dynamicURLs)
 
@@ -542,7 +626,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i oktober:
 * Implementering af SAP BW-connector v2 er nu offentlig tilgængelig [[video]](https://youtu.be/MhrhIXNtelw?t=133) [[artikel]](desktop-sap-bw-connector.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBW) 
 * Connector til SAP BW-beskedserver er nu offentlig tilgængelig [[video]](https://youtu.be/MhrhIXNtelw?t=159) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBWmessageServer) 
 * Vertica-connector er nu offentlig tilgængelig [[video]](https://youtu.be/MhrhIXNtelw?t=175) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23vertica) 
-* Connectorer til Dynamics NAV og Dynamics 365 Business Central er nu offentlig tilgængelige [[video]](https://youtu.be/MhrhIXNtelw?t=197) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamics) 
+* Connectors til Dynamics NAV og Dynamics 365 Business Central er nu offentlig tilgængelige [[video]](https://youtu.be/MhrhIXNtelw?t=197) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamics) 
 * Ny connector til Dynamics 365 Business Central i det lokale miljø [[video]](https://youtu.be/MhrhIXNtelw?t=219) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamicsOnPrem) 
 
 ### <a name="data-preparation"></a>Dataforberedelse
@@ -2386,7 +2470,7 @@ Med denne store samling af opdateringer får du 44 nye funktioner:
 - Filtre på rapportniveau
 - Skift detailniveau i søjle- og punktdiagrammer
 - Nye indstillinger: Sidestørrelse og Sidevisning
-- Understøtter nu indsættelse af former på rapportcanvas
+- Understøtter nu indsættelse af former på rapportlærred
 - Forbedringer i ruden Felter
     - Søgefelt, der gør det nemmere at finde felter efter navn
     - "Udvid/Skjul alle" forbedrer navigation, når der er flere tabeller i ruden Felter
@@ -2491,7 +2575,7 @@ Se følgende video for at få flere detaljer om denne opdatering:
 
 Følgende funktioner er blevet tilføjet i denne opdatering:
 
--   **Nye dataconnectorer**: appFigures, Quickbooks Online, Zendesk, GitHub, Twilio og SweetIQ.
+-   **Nye dataconnectors**: appFigures, Quickbooks Online, Zendesk, GitHub, Twilio og SweetIQ.
 
 -   **Nye transformationer**: Udtræk de første, sidste eller et interval af tegn fra en tekstkolonne. Mulighed for at vælge joinforbindelsestype i dialogboksen Flet forespørgsler. Mulighed for at tilpasse typen af anførselstegn i dialogboksen Opdel kolonne efter afgrænser.
 

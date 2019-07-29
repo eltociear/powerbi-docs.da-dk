@@ -1,5 +1,5 @@
 ---
-title: Brug sammenlægninger i Power BI Desktop (prøveversion)
+title: Brug sammenlægninger i Power BI Desktop
 description: Udfør interaktiv analyse af big data i Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -10,14 +10,14 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f14b6878d44510631822dd26458bdaa17c1fe3a0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 54264a645160542d7bda6a964164af65bfa45dfd
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239586"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68325175"
 ---
-# <a name="aggregations-in-power-bi-desktop-preview"></a>Sammenlægninger i Power BI Desktop (prøveversion)
+# <a name="aggregations-in-power-bi-desktop"></a>Sammenlægninger i Power BI Desktop
 
 Brug af **sammenlægninger** i Power BI muliggør interaktiv analyse af big data på måder, der ikke tidligere var mulig. **Sammenlægninger** kan drastisk reducere omkostningerne til at låse store datasæt op i forbindelse med beslutningstagning.
 
@@ -36,16 +36,6 @@ Lagring på tabelniveau bruges normalt sammen med sammenlægningsfunktionen. Du 
 Sammenlægninger bruges sammen med datakilder, der repræsenterer dimensionelle modeller, f.eks. data warehouses, datacentre og Hadoop-baserede big data-kilder. Denne artikel beskriver de typiske modelleringsforskelle i Power BI for hver type datakilde.
 
 Alle Power BI Import- og DirectQuery-kilder (ikke-flerdimensionelle) fungerer sammen med sammenlægninger.
-
-## <a name="enabling-the-aggregations-preview-feature"></a>Aktivering af prøveversionsfunktionen for sammenlægninger
-
-Funktionen **sammenlægninger** findes i en prøveversion og skal aktiveres i **Power BI Desktop**. Du kan aktivere **sammenlægninger** ved at vælge **Fil > Indstillinger > Indstillinger > Funktioner til eksempelvisning** og derefter vælge afkrydsningsfelterne **Sammensatte modeller** og **Administrer sammenlægninger**. 
-
-![aktivering af prøveversionsfunktioner](media/desktop-aggregations/aggregations_01.jpg)
-
-Du skal genstarte **Power BI Desktop**, før funktionen kan bruges.
-
-![genstart er nødvendig for, at ændringerne kan træde i kraft](media/desktop-composite-models/composite-models_03.png)
 
 ## <a name="aggregations-based-on-relationships"></a>Sammenlægninger baseret på relationer
 
@@ -103,10 +93,12 @@ Det eneste tilfælde, hvor en relation *på tværs af kilder* anses for at være
 
 Se afsnittet herunder om sammenlægninger baseret på kolonner af typen Gruppér efter for at få mere at vide om sammenlægningsforekomster *på tværs af kilder*, der ikke er afhængige af relationer.
 
-### <a name="aggregation-table-is-hidden"></a>Sammenlægningstabellen er skjult
-Tabellen **Sales Agg** er skjult. Sammenlægningstabeller bør altid skjules for brugerne af datasættet. Brugere og forespørgsler refererer til tabellen med detaljer, ikke sammenlægningstabellen. De behøver ikke vide, at sammenlægningstabellen eksisterer.
+### <a name="aggregation-tables-are-not-addressable"></a>Sammenlægningstabeller er ikke adresserbare
+Brugere med skrivebeskyttet adgang til datasættet kan ikke forespørge på sammenlægningstabeller. Dette forhindrer sikkerhedsproblemer, når de bruges sammen med sikkerhed på rækkeniveau. Brugere og forespørgsler refererer til detaljetabellen, ikke sammenlægningstabellen. De behøver ikke vide, at sammenlægningstabellen eksisterer.
 
-### <a name="manage-aggregations-dialog"></a>Administrer dialogboksen sammenlægninger
+Derfor bør tabellen **Sales Agg** være skjult. Hvis den ikke er det, vil dialogboksen Administrer sammenlægninger angive den til at være skjult, når der klikkes på knappen Anvend alle.
+
+### <a name="manage-aggregations-dialog"></a>Dialogboksen Administrer sammenlægninger
 Lad os definere sammenlægningerne. Vælg genvejsmenuen **Administrer sammenlægninger** for tabellen **Sales Agg** ved at højreklikke på tabellen.
 
 ![Administrer valg fra sammenlægningsmenuen](media/desktop-aggregations/aggregations_06.jpg)
@@ -136,11 +128,7 @@ Følgende bemærkelsesværdige valideringer gennemtvinges af dialogboksen:
 * Den valgte detaljekolonne skal have samme datatype som sammenlægningskolonnen med undtagelse af opsummeringsfunktionerne Optæl og Optæl tabelrækker. Optæl og Optæl tabelrækker tilbydes kun til kolonner til sammenlægning af heltal og kræver ikke en tilsvarende datatype.
 * Sammenkædede sammenlægninger, der dækker tre eller flere tabeller, er ikke tilladt. Det er f.eks. ikke muligt at konfigurere sammenlægninger på **Tabel A**, som refererer til **Tabel B**, der har sammenlægninger, som refererer til **Tabel C**.
 * Duplikerede sammenlægninger, hvor to poster bruger samme opsummeringsfunktion og henviser til den samme detaljetabel/-kolonne, er ikke tilladt.
-
-I denne offentlige prøveversion til **sammenlægninger** gennemtvinges følgende valideringer også. Vi har til hensigt at fjerne disse valideringer, når de er frigivet og offentligt tilgængelige.
-
-* Sammenlægninger kan ikke bruges med sikkerhed på rækkeniveau (RLS). *Begrænsning af offentlig prøveversion.*
-* Detaljetabellen skal være DirectQuery, ikke Import. *Begrænsning af offentlig prøveversion.*
+* Detaljetabellen skal være DirectQuery, ikke Import.
 
 De fleste sådanne valideringer gennemtvinges ved at deaktivere værdier i rullelisten og vise forklarende tekst i værktøjstippet som vist på følgende billede.
 
@@ -149,6 +137,9 @@ De fleste sådanne valideringer gennemtvinges ved at deaktivere værdier i rulle
 ### <a name="group-by-columns"></a>Kolonnevis gruppering
 
 I dette eksempel er de tre GroupBy-poster valgfrie. De påvirker ikke sammenlægningsadfærden (undtagen eksempelforespørgslen DISTINCTCOUNT, som vises på det følgende billede). De medfølger primært af hensyn til læsbarheden. Uden disse GroupBy-poster ville sammenlægninger stadig få forekomster på baggrund af relationerne. Dette er forskellig funktionalitet fra brug af sammenlægninger uden relationer, som er omfattet af eksemplet med big data, der følger senere i denne artikel.
+
+### <a name="inactive-relationships"></a>Inaktive relationer
+Gruppering efter en fremmed nøglekolonne, der bruges af en inaktiv relation, og som er afhængig af funktionen USERELATIONSHIP til sammenlægning af hits, understøttes ikke.
 
 ### <a name="detecting-whether-aggregations-are-hit-or-missed-by-queries"></a>Registrering af, om sammenlægninger giver forekomster eller ej ved forespørgsler
 
@@ -191,6 +182,17 @@ I visse tilfælde kan funktionen DISTINCTCOUNT drage fordel af sammenlægninger.
 
 ![forespørgselseksempel](media/desktop-aggregations/aggregations-code_07.jpg)
 
+### <a name="rls"></a>Sikkerhed på rækkeniveau
+Sikkerhed på rækkeniveau bør filtrere både sammenlægningstabellen og detaljetabellen, så de fungerer korrekt. I henhold til eksemplet fungerer udtrykket for sikkerhed på rækkeniveau for tabellen **Geography**, fordi Geography er på filtreringssiden af relationen for både tabellen **Sales** og tabellen **Sales Agg**. Sikkerhed på rækkeniveau er anvendt for forespørgsler, der når sammenlægningsstabellen, og dem, der ikke gør.
+
+![roller til administration af sammenlægninger](media/desktop-aggregations/manage-roles.jpg)
+
+Et udtryk for sikkerhed på rækkeniveau for tabellen **Product** filtrerer kun tabellen **Sales** og ikke tabellen **Sales Agg**. Dette anbefales ikke. Forespørgsler, som indsendes af brugere, der tilgår datasættet ved hjælp af denne rolle, drager fordel af sammenlægningshits. Da sammenlægningstabellen er en anden repræsentation af de samme data i detaljetabellen, ville det være usikkert at svare på forespørgsler fra sammenlægningstabellen, fordi filtret for sikkerhed på rækkeniveau ikke kan anvendes.
+
+Et udtryk for sikkerhed på rækkeniveau for selve tabellen **Sales Agg** filtrerer kun sammenlægningstabellen og ikke detaljetabellen. Dette er ikke tilladt.
+
+![roller til administration af sammenlægninger](media/desktop-aggregations/filter-agg-error.jpg)
+
 ## <a name="aggregations-based-on-group-by-columns"></a>Sammenlægninger baseret på gruppér efter-kolonner 
 
 Hadoop-baserede big data-modeller har andre egenskaber end dimensionelle modeller. For at undgå joinforbindelser mellem store tabeller er de ofte ikke afhængige af relationer. I stedet denormaliseres dimensionsattributter ofte til faktatabeller. Sådanne big data-modeller kan låses op til interaktiv analyse ved hjælp af **sammenlægninger** baseret på gruppér efter-kolonner.
@@ -225,6 +227,10 @@ Især til modeller, der indeholder filterattributter i faktatabeller, er det en 
 
 ![dialogboksen filtre](media/desktop-aggregations/aggregations_12.jpg)
 
+### <a name="rls"></a>Sikkerhed på rækkeniveau
+
+Ovenfor er reglerne for sikkerhed på rækkeniveau beskrevet for sammenlægninger baseret på relationer, i forhold til om et udtryk for sikkerhed på rækkeniveau kan filtrere sammenlægningstabellen, detaljetabellen eller begge. Disse samme regler gælder også for sammenlægninger baseret på gruppering efter kolonner. I eksemplet kan et udtryk for sikkerhed på rækkeniveau, der er anvendt for tabellen **Driver Activity**, bruges til at filtrere tabellen **Driver Activity Agg**, fordi alle grupperinger efter kolonner i sammenlægningstabellen er dækket af detaljetabellen. Et filter for sikkerhed på rækkeniveau for tabellen **Driver Activity Agg** kan derimod ikke anvendes på tabellen **Driver Activity**, og det tillades derfor ikke.
+
 ## <a name="aggregation-precedence"></a>Rangplacering af sammenlægninger
 
 Rangplacering af sammenlægninger gør det muligt for en enkelt underforespørgsel at tage flere sammenlægningstabeller i betragtning.
@@ -232,8 +238,11 @@ Rangplacering af sammenlægninger gør det muligt for en enkelt underforespørgs
 Se følgende eksempel. Det er en [sammensat model](desktop-composite-models.md), som indeholder flere DirectQuery-kilder.
 
 * Importtabellen **Driver aktivitet Agg2** har høj granularitet, fordi der er få gruppér efter-attributter, og disse har lav kardinalitet. Antallet af rækker kan være så lavt som nogle tusinde, så den kan nemt cachelagres i hukommelsen. Disse attributter anvendes af et executive dashboard med høj profil, så forespørgsler, der henviser til disse, skal være så hurtige som muligt.
-* Tabellen **Driver Activity Agg** er en mellemliggende sammenlægningstabel i DirectQuery-tilstand. Den indeholder over en milliard rækker og er optimeret til den datakilde, der anvender kolonnelagerindekser.
+* Tabellen **Driver Activity Agg** er en mellemliggende sammenlægningstabel i DirectQuery-tilstand. Den indeholder over en milliard rækker i Azure SQL Data Warehouse og er optimeret ved kilden ved hjælp af kolonnelagerindekser.
 * Tabellen **Driver Activity** er DirectQuery og indeholder mere end en billion rækker med IoT-data, der leveres af et big data-system. Det behandler forespørgsler med detaljeadgang for at se individuelle IoT-aflæsninger i forbindelse med styrede filtre.
+
+> [!NOTE]
+> DirectQuery-sammenlægningstabeller, der bruger en anden datakilde til detaljetabellen, understøttes kun, hvis sammenlægningstabellen er fra en kilde af typen SQL Server, Azure SQL eller Azure SQL Data Warehouse.
 
 Denne model bruger forholdsvis lidt hukommelse, men giver adgang til et stort datasæt. Den repræsenterer en balanceret arkitektur, fordi den fordeler forespørgselsbelastningen på flere komponenter i arkitekturen og udnytter dem ud fra deres styrker.
 
@@ -261,8 +270,6 @@ I følgende tabel vises de poster, der er angivet i dialogboksen **Administrer s
 
 ![Sammenlægningstabellen Sales Agg](media/desktop-aggregations/aggregations-table_04.jpg)
 
-> Bemærk! Denne model kræver, at tabellen **Dato** skal være i DirectQuery-tilstand for at udfylde dialogboksen Administrer sammenlægninger, fordi det er en detaljetabel. Dette er en begrænsning i prøveversion, som vi forventer at fjerne for at sikre offentlig tilgængelighed.
-
 ### <a name="query-examples"></a>Eksempler på forespørgsler
 
 Følgende forespørgsel giver forekomster ved sammenlægningen, fordi CalendarMonth er dækket af sammenlægningstabellen, og CategoryName er tilgængelig via en-til-mange-relationer. Sammenlægningen Sum for **SalesAmount** anvendes.
@@ -285,9 +292,9 @@ Følgende tidsintelligensforespørgsel giver ikke forekomster ved sammenlægning
 
 I følgende artikler beskrives sammensatte modeller yderligere, og du finder også en detaljeret beskrivelse af DirectQuery.
 
-* [Sammensatte modeller i Power BI Desktop (Preview)](desktop-composite-models.md)
-* [Mange til mange-relationer i Power BI Desktop (Preview)](desktop-many-to-many-relationships.md)
-* [Lagringstilstand i Power BI Desktop (Preview)](desktop-storage-mode.md)
+* [Sammensatte modeller i Power BI Desktop](desktop-composite-models.md)
+* [Mange til mange-relationer i Power BI Desktop](desktop-many-to-many-relationships.md)
+* [Lagringstilstand i Power BI Desktop](desktop-storage-mode.md)
 
 Artikler om DirectQuery:
 

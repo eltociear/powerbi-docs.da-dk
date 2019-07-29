@@ -8,39 +8,35 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 10/15/2018
+ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9e91c162c9b748fd0ef122aed8fc7ffee6dba5fc
-ms.sourcegitcommit: c539726c9c180e899a8a34443e3fda2b9848beb2
-ms.translationtype: MT
+ms.openlocfilehash: 6f270c28f643736f07c09ceb3e544e473f831ad9
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448298"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68271860"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Oversigt over enkeltlogon (SSO) til gateways i Power BI
 
-Du kan få problemfri forbindelse med enkeltlogon, så Power BI-rapporter og -dashboards kan opdateres fra data i det lokale miljø, ved at konfigurere din datagateway i det lokale miljø med begrænset delegering fra Kerberos eller SAML (Security Assertion Markup Language). Datagatewayen i det lokale miljø gør det muligt at foretage SSO ved hjælp af DirectQuery, som den bruger til at oprette forbindelse til datakilder i det lokale miljø.
+Du kan få problemfri forbindelse med enkeltlogon, så Power BI-rapporter og -dashboards kan opdateres fra data i det lokale miljø, ved at konfigurere din datagateway i det lokale miljø med begrænset delegering fra Kerberos eller SAML (Security Assertion Markup Language). Datagatewayen i det lokale miljø faciliterer enkeltlogon ved hjælp af DirectQuery, som den bruger til at oprette forbindelse til datakilder i det lokale miljø.
 
 Vi understøtter i øjeblikket følgende datakilder:
 
 * SQL Server ([Kerberos](service-gateway-sso-kerberos.md))
-* SAP HANA ([Kerberos](service-gateway-sso-kerberos.md) og [SAML](service-gateway-sso-saml.md)
-* SAP BW ([Kerberos](service-gateway-sso-kerberos.md)
+* SAP HANA ([Kerberos](service-gateway-sso-kerberos.md) og [SAML](service-gateway-sso-saml.md))
+* SAP BW ([Kerberos](service-gateway-sso-kerberos.md))
 * Teradata ([Kerberos](service-gateway-sso-kerberos.md))
 * Spark ([Kerberos](service-gateway-sso-kerberos.md))
 * Impala ([Kerberos](service-gateway-sso-kerberos.md))
-* SSO er også muligt for [andre datakilder](desktop-directquery-data-sources.md#single-sign-on-sso-for-directquery-sources) uden brug af en datagateway
 
-Når en bruger kommunikerer med en DirectQuery-rapport i Power BI-tjenesten, kan hvert krydsfilter, udsnit, sortering og rapportredigering resultere i forespørgsler, der udføres direkte mod den underliggende datakilde i det lokale miljø.  Når SSO er konfigureret for datakilden, udføres forespørgsler i henhold til id'et for den bruger, som interagerer med Power BI (dvs. via weboplevelsen eller Power BI-mobilapps). På den måde får hver bruger præcist de data, som de har tilladelser til i den underliggende datakilde – med enkeltlogon konfigureret er der ingen cachelagring af delte data på tværs af flere brugere.
+Når en bruger kommunikerer med en DirectQuery-rapport i Power BI-tjenesten, kan hvert krydsfilter, udsnit, sortering og rapportredigering resultere i forespørgsler, der udføres direkte mod den underliggende datakilde i det lokale miljø. Når SSO er konfigureret for datakilden, udføres forespørgsler i henhold til id'et for den bruger, som interagerer med Power BI (dvs. via weboplevelsen eller Power BI-mobilapps). På den måde får hver bruger præcist de data, som de har tilladelser til i den underliggende datakilde – med enkeltlogon konfigureret er der ingen cachelagring af delte data på tværs af flere brugere.
 
 ## <a name="query-steps-when-running-sso"></a>Forespørgselstrin under kørsel af SSO
 
 En forespørgsel, der køres med SSO, består af tre trin som vist i følgende diagram.
 
 ![SSO-forespørgselstrin](media/service-gateway-sso-overview/sso-query-steps.png)
-
-> [!NOTE]
-> SSO til Oracle er endnu ikke aktiveret, men den er under udvikling og kommer snart.
 
 Der følger flere oplysninger om disse trin:
 
@@ -59,4 +55,5 @@ Der følger flere oplysninger om disse trin:
 Nu, hvor du har en grundlæggende forståelse af SSO, kan du læse mere detaljerede oplysninger om Kerberos og SAML:
 
 * [Enkeltlogon (SSO) – Kerberos](service-gateway-sso-kerberos.md)
+* [Enkeltlogon (SSO) – Kerberos – ressourcebaseret](service-gateway-sso-kerberos-resource.md)
 * [Enkeltlogon (SSO) – SAML](service-gateway-sso-saml.md)

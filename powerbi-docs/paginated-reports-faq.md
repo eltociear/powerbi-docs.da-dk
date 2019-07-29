@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 06/18/2019
-ms.openlocfilehash: 10ac6ed9f49241103d03f2667ccc8db5d619db6c
-ms.sourcegitcommit: a42c6758aa255c21ece6366a3257b0dd82f3606b
+ms.date: 07/15/2019
+ms.openlocfilehash: 10135e0fa725cd4093802cd1416cab302174e21d
+ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67345517"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270784"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål 
 
@@ -119,10 +119,10 @@ Du får vist en fejlmeddelelse, hvis du forsøger at uploade en fil, som indehol
 
 Vi understøtter følgende datakilde – 
 
-- Power BI Premium-datasæt
+- Power BI-datasæt (via enkeltlogon (SSO))
 - Azure Analysis Services (via enkeltlogon (SSO) og oAuth)
 - Azure SQL Data Warehouse
-- Azure SQL Database (brugernavn/adgangskode og oAuth)
+- Azure SQL Database (brugernavn/adgangskode, SSO og oAuth)
 - SQL Server*
 - SSAS-modeller (SQL Server Analysis Services) i tabelformat (DAX) og multidimensionale (MDX) SSAS-modeller* 
 - Oracle* 
@@ -134,11 +134,11 @@ Når du åbner SSAS gennem gatewayen, skal den bruger, hvis legitimationsoplysni
 
 ### <a name="what-authentication-methods-do-you-support"></a>Hvilke godkendelsesmetoder understøttes?
 
-Vi understøtter SSO til både Azure Analysis Services- og Power BI Premium-datakilder, og vi understøtter oAuth og SSO til Azure SQL Database.  For alle andre datakilder skal du i øjeblikket gemme et brugernavn og en adgangskode sammen med datakilden på portalen eller i gatewayen.  
+Vi understøtter SSO til Azure Analysis Services, Azure SQL Database og Power BI-datakilder.  Vi understøtter også OAuth til Azure SQL Database og Azure Analysis Services.  For alle andre datakilder skal du i øjeblikket gemme et brugernavn og en adgangskode sammen med datakilden på portalen eller i gatewayen.  
 
 ### <a name="can-i-use-a-power-bi-dataset-as-a-data-source-for-my-paginated-report"></a>Kan jeg bruge et Power BI-datasæt som en datakilde til min sideinddelte rapport?
 
-Ja, vi understøtter Power BI Premium-datasæt som datakilder for dine sideinddelte rapporter.
+Ja, vi understøtter Power BI-datasæt som datakilder for dine sideinddelte rapporter.
 
 ### <a name="can-i-use-stored-procedures-through-the-gateway"></a>Kan jeg bruge gemte procedurer via denne gateway?
 
@@ -179,10 +179,6 @@ Vi har planer om, at rapporterne skal understøtte de samme overordnede scenarie
 ### <a name="is-a-migration-tool-planned-so-ssrs-customers-can-move-their-existing-reports-and-assets-to-power-bi"></a>Er der planer om et overførselsværktøj, så SSRS-kunder kan flytte deres eksisterende rapporter og aktiver til Power BI?
 
 Vi evaluerer mulighederne for at tillade, at indhold flyttes til Power BI automatisk, men det bliver ikke tilgængeligt indtil efter versionen, der er offentligt tilgængelig.
-
-### <a name="will-i-ever-be-able-to-create-both-paginated-reports-and-power-bi-reports-in-a-single-authoring-tool"></a>Kommer jeg nogensinde til at kunne oprette både sideinddelte rapporter og Power BI-rapporter i et enkelt værktøj til oprettelse?
-
-Vi har set på forskellige måder, dette scenarie kan aktiveres på, men det er ikke en del af vores planer på nuværende tidspunkt.
 
 ### <a name="is-there-a-report-viewer-control-for-paginated-reports-in-the-power-bi-service"></a>Er der et kontrolelement til rapportfremviser for sideinddelte rapporter i Power BI-tjenesten?
 

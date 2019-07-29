@@ -7,15 +7,15 @@ ms.reviewer: bhmerc
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/25/2019
+ms.date: 07/16/2019
 ms.author: maggies
 LocalizationGroup: ''
-ms.openlocfilehash: c981a3e2a05129a470c8d26675226bfb42c1bb68
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e45773784fbe97f8521ad071c03e86dcbddddbeb
+ms.sourcegitcommit: 4689766f08f5285deac50bec595d57c3a398fff5
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769545"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68329119"
 ---
 # <a name="query-caching-in-power-bi-premium"></a>Cachelagring af forespørgsler i Power BI Premium
 
@@ -24,7 +24,7 @@ Organisationer med Power BI Premium kan drage fordel af *cachelagring af foresp�
 > [!IMPORTANT]
 > Cachelagring af forespørgsler er kun tilgængelig til Power BI Premium. Det gælder ikke for LiveConnect-datasæt, der gør brug af Azure Analysis Services eller SQL Server Analysis Services.
 
-Cachelagrede forespørgselsresultater er specifikke for brugeren og datasættets kontekst, og sikkerhedsreglerne overholdes altid. På nuværende tidspunkt udfører tjenesten kun cachelagring af forespørgsler for den første side, du lander på. Med andre ord, så cachelagres forespørgsler ikke, når du interagerer med rapporten. Cachen afspejler personlige bogmærker og faste filtre. [Dashboardfelter](service-dashboard-tiles.md), der leveres af de samme forespørgsler, får samme fordel, når forespørgslen cachelagres. Det er særligt en fordel for ydeevnen, når et datasæt tilgås ofte og ikke skal opdateres så ofte. Cachelagring af forespørgsler kan også reducere belastningen på Premium-kapaciteten ved at reducere det samlede antal forespørgsler.
+Cachelagrede forespørgselsresultater er specifikke for brugeren og datasættets kontekst, og sikkerhedsreglerne overholdes altid. På nuværende tidspunkt udfører tjenesten kun cachelagring af forespørgsler for den første side, du lander på. Med andre ord, så cachelagres forespørgsler ikke, når du interagerer med rapporten. Forespørgselscachen respekterer [personlige bogmærker](consumer/end-user-bookmarks.md#personal-bookmarks) og [faste filtre](https://powerbi.microsoft.com/blog/announcing-persistent-filters-in-the-service/), så forespørgsler, der genereres af en personligt tilpasset rapport, cachelagres. [Dashboardfelter](service-dashboard-tiles.md), der leveres af de samme forespørgsler, får samme fordel, når forespørgslen cachelagres. Det er særligt en fordel for ydeevnen, når et datasæt tilgås ofte og ikke skal opdateres så ofte. Cachelagring af forespørgsler kan også reducere belastningen på Premium-kapaciteten ved at reducere det samlede antal forespørgsler.
 
 Du styrer funktionsmåden af cachelagring af forespørgsler på siden **Indstillinger** for datasættet i Power BI-tjenesten. Der er to mulige indstillinger:
 
@@ -34,7 +34,12 @@ Du styrer funktionsmåden af cachelagring af forespørgsler på siden **Indstill
 
 ![Dialogboks for cachelagring af forespørgsler](media/power-bi-query-caching/power-bi-query-caching.png)
 
-> [!NOTE]
-> Når du ændrer indstillingerne for cachelagring fra **Til** til **Fra**, fjernes alle tidligere gemte forespørgselsresultater for datasættet fra kapacitetscachen. Du kan enten slå cachelagring fra eksplicit eller ved at gå tilbage til indstillingen Standardkapacitet, som en administrator har angivet til **Fra**. Når indstillingen slås fra, kan det medføre en lille forsinkelse, næste gang en rapport kører forespørgsler i forhold til dette datasæt. Forsinkelsen skyldes, at disse rapportforespørgsler kører efter behov, og at der ikke gøres brug af gemte resultater. Det krævede datasæt skal muligvis også indlæses i hukommelsen, før det kan håndtere forespørgsler.
+## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
+- Når du ændrer indstillingerne for cachelagring fra **Til** til **Fra**, fjernes alle tidligere gemte forespørgselsresultater for datasættet fra kapacitetscachen. Du kan enten slå cachelagring fra eksplicit eller ved at gå tilbage til indstillingen Standardkapacitet, som en administrator har angivet til **Fra**. Når indstillingen slås fra, kan det medføre en lille forsinkelse, næste gang en rapport kører forespørgsler i forhold til dette datasæt. Forsinkelsen skyldes, at disse rapportforespørgsler kører efter behov, og at der ikke gøres brug af gemte resultater. Det krævede datasæt skal muligvis også indlæses i hukommelsen, før det kan håndtere forespørgsler.
+- Når forespørgselscachen opdateres, skal Power BI køre forespørgsler mod de underliggende datamodeller for at få de nyeste resultater. Hvis et stort antal datasæt har aktiveret cachelagring af forespørgsler, og der er kraftig belastning på Premium-kapaciteten, kan der opstå en forringelse af ydeevnen under opdatering af cachen. Forringelsen skyldes den øgede mængde forespørgsler, der udføres.
+
+## <a name="next-steps"></a>Næste trin
+
+[Hvad er Power BI Premium?](service-premium-what-is.md)
 

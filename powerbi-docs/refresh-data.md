@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/12/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 0013080f3640c4c4d3d717104dcc069ccce3923a
-ms.sourcegitcommit: 952afd75fe8ddcf9350bd9aae88e1a4c438d0f3e
+ms.openlocfilehash: 7492651d2b5be8a63c97594fce3f3399b1122cc3
+ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67561802"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68325025"
 ---
 # <a name="data-refresh-in-power-bi"></a>Opdatering af data i Power BI
 
@@ -55,7 +55,7 @@ Da Power BI cachelagrer dataene, kan datasæt i Importtilstand have en betydelig
 | --- | --- |
 | Delte, A1, A2 eller A3 | 1 GB |
 | A4 eller P1 | 3 GB |
-| A4 eller P2 | 6 GB |
+| A5 eller P2 | 6 GB |
 | A6 eller P3 | 10 GB |
 | | |
 
@@ -108,7 +108,7 @@ Hvis du har oprettet dit datasæt og dine rapporter på baggrund af en Power BI 
 
 I modsætning til en opdatering af datasæt, hvor Power BI importerer data fra en datakilde til et datasæt, synkroniseres datasæt og rapporter med deres kildefiler under en opdatering af OneDrive. Power BI kontrollerer som standard ca. hver time, om et datasæt, der er forbundet til en fil på OneDrive eller SharePoint Online, kræver synkronisering. Hvis du vil se tidligere synkroniseringscyklusser, skal du kigge på OneDrive-fanen i opdateringshistorikken. På følgende skærmbillede kan du se en fuldført synkroniseringscyklus for et prøvedatasæt.
 
-![Opdater historik](media/refresh-data/refresh-history.png)
+![Opdateringshistorik](media/refresh-data/refresh-history.png)
 
 Som skærmbilledet oven for viser har Power BI identificeret denne opdatering af OneDrive som en **Planlagt** opdatering, men det er ikke muligt at konfigurere opdateringsintervallet. Du kan kun deaktivere opdatering af OneDrive under indstillingerne for datasættet. Deaktivering af en opdatering er nyttigt, hvis du ikke ønsker, at dine datasæt og rapporter i Power BI opfanger eventuelle ændringer fra kildefilerne automatisk.
 
@@ -160,7 +160,7 @@ Uanset hvad lagertilstanden er, kan ingen opdatering af data fuldføres, medmind
 
 ### <a name="connecting-to-on-premises-data-sources"></a>Oprettelse af forbindelse til data i det lokale miljø
 
-Hvis dit datasæt bruger en datakilde, som Power BI ikke kan få adgang til via en direkte netværksforbindelse, skal du konfigurere en gatewayforbindelse for dette datasæt, før du kan aktivere en tidsplan for opdatering eller udføre en opdatering af data on-demand. Du kan finde flere oplysninger om datagateways, og hvordan de fungerer, i [Hvad er datagateways i det lokale miljø?](service-gateway-getting-started.md)
+Hvis dit datasæt bruger en datakilde, som Power BI ikke kan få adgang til via en direkte netværksforbindelse, skal du konfigurere en gatewayforbindelse for dette datasæt, før du kan aktivere en tidsplan for opdatering eller udføre en opdatering af data on-demand. Du kan finde flere oplysninger om datagateways, og hvordan de fungerer, i [Hvad er datagateways i det lokale miljø?](service-gateway-onprem.md)
 
 Du har følgende muligheder:
 
@@ -174,7 +174,10 @@ Du har følgende muligheder:
 
 Microsoft anbefaler at bruge en datagateway til virksomheder frem for en personlig gateway til at oprette forbindelse mellem et datasæt og en datakilde i det lokale miljø. Sørg for, at gatewayen er konfigureret korrekt, hvilket betyder, at gatewayen skal have de nyeste opdateringer og alle nødvendige datakildedefinitioner. En datakildedefinition giver Power BI forbindelsesoplysningerne for en bestemt kilde, herunder forbindelsesslutpunkter, godkendelsestilstand og legitimationsoplysninger. Du kan finde flere oplysninger om administration af datakilder via en gateway i [Administrer din datakilde – Import/Planlagt opdatering](service-gateway-enterprise-manage-scheduled-refresh.md).
 
-Det er forholdsvist ligetil at oprette forbindelse mellem et datasæt og en gateway til virksomheder, hvis du er gatewayadministrator. Med administratorrettigheder kan du straks opdatere gatewayen og tilføje manglende datakilder, hvis det er nødvendigt. Du kan faktisk føje en manglende datakilde til din gateway direkte fra siden med indstillinger for datasæt. Udvid til/fra-knappen for at få vist datakilderne, og vælg linket **Føj til gateway**, som vist på følgende skærmbillede. Hvis du ikke er gatewayadministrator, skal du derimod bruge de viste kontaktoplysninger til at sende en anmodning til en gatewayadministrator for at få tilføjet den påkrævede datakildedefinition.
+Det er forholdsvist ligetil at oprette forbindelse mellem et datasæt og en gateway til virksomheder, hvis du er gatewayadministrator. Med administratorrettigheder kan du straks opdatere gatewayen og tilføje manglende datakilder, hvis det er nødvendigt. Du kan faktisk føje en manglende datakilde til din gateway direkte fra siden med indstillinger for datasæt. Udvid til/fra-knappen for at få vist datakilderne, og vælg linket **Føj til gateway**, som vist på følgende skærmbillede. Hvis du ikke er gatewayadministrator, skal du i stedet kontakte en gatewayadministrator for at tilføje den påkrævede definition af datakilden.
+
+> [!NOTE]
+> Det er kun gatewayadministratorer, der kan føje datakilder til en gateway. Sørg også for, at din gatewayadministration føjer din brugerkonto til listen over brugere, der har tilladelse til at bruge datakilden. På siden med indstillinger for datasæt kan du kun vælge en virksomhedsgateway med en tilsvarende datakilde, som du har tilladelse til at bruge.
 
 ![Føj til gateway](media/refresh-data/add-to-gateway.png)
 
@@ -284,6 +287,8 @@ Bemærk også, at det konfigurerede opdateringstidspunkt muligvis ikke er præci
 ### <a name="getting-refresh-failure-notifications"></a>Få meddelelser om mislykket opdatering
 
 Power BI sender som standard meddelelser om mislykket opdatering via mail til ejeren af datasættet, så ejeren kan reagere i tide, hvis der opstår opdateringsfejl. Power BI sender dig også en meddelelse, når tjenesten deaktiverer din tidsplan på grund af gentagne fejl. Microsoft anbefaler, at du markerer afkrydsningsfeltet **Send meddelelse om mislykket opdatering via mail til mig**.
+
+Det er også en god idé at angive yderligere modtagere ved hjælp af tekstfeltet **Send en mail til disse brugere, når opdateringen mislykkes**. Foruden ejeren af datasættet modtager de angivne modtagere meddelelser om opdateringsfejl. Det kan være en kollega, der tager sig af dine datasæt, mens du er på ferie. Det kan også være mailaliasset for dit supportteam, der tager sig af opdateringsproblemer for din afdeling eller organisation. Det kan være nyttigt at sende meddelelser om opdateringsfejl til andre foruden ejeren af datasættet for at sikre, at problemerne bliver opdaget og håndteret rettidigt.
 
 Bemærk, at Power BI ikke kun sender meddelelser om mislykkede opdateringer, men også når tjenesten afbryder en planlagt opdatering midlertidigt på grund af inaktivitet. Power BI anser et datasæt for at være inaktivt, hvis et dashboard eller en rapport, der er baseret på det pågældende datasæt, ikke er blevet besøgt af en bruger i to måneder. I denne situation sender Power BI en mail til ejeren af datasættet, hvor der står, at tjenesten midlertidigt har afbrudt tidsplanen for opdatering af datasættet. På følgende skærmbillede kan du se et eksempel på sådan en meddelelse.
 
