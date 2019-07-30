@@ -947,6 +947,8 @@
           href: report-builder-expressions.md
         - name: Eksempler på udtryk
           href: report-builder-expression-examples.md
+        - name: Sideinddeling af rapport
+          href: paginated-reports-pagination.md
         - name: Forhåndsvisning af rapporter
           href: report-builder-previewing-reports.md
         - name: Ofte stillede spørgsmål om sideinddelte rapporter
