@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 8600dce5012abb41c37b202dcc8eb204da11fa33
-ms.sourcegitcommit: acd9f8212c9b0c6d3d8c4d56bba3c285246f3122
+ms.openlocfilehash: a7e26fd96066ce35e7d61443a8d7c32c64011d5e
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68230186"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665422"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -243,7 +243,7 @@ Appen Power BI for Mixed Reality er nu tilgængelig i Microsoft Store. Se dine d
 
 #### <a name="mobile-drill-down-and-drill-up"></a>Detailudledning og færre detaljer på mobilenheder
 
-Nu kan du foretage detailudledning og få vist færre detaljer i visuals i rapporter på din mobilenhed. Du får adgang til denne nye funktion ved at trykke og holde nede på en visualisering i en rapport for at åbne værktøjstippet og derefter trykke på detaljeknapperne for at udforske dataene i dybden. Flere oplysninger om, hvordan du [analyserer op og ned i mobilapps](https://powerbi.microsoft.com/blog/drill-down-up-in-power-bi-mobile-apps/).
+Nu kan du foretage detailudledning og få vist færre detaljer i visuals i rapporter på din mobilenhed. Du får adgang til denne nye funktion ved at trykke og holde nede på en visual i en rapport for at åbne værktøjstippet og derefter trykke på detaljeknapperne for at udforske dataene i dybden. Flere oplysninger om, hvordan du [analyserer op og ned i mobilapps](https://powerbi.microsoft.com/blog/drill-down-up-in-power-bi-mobile-apps/).
 
 #### <a name="persistent-filters"></a>Faste filtre
 
@@ -340,8 +340,8 @@ Læs [oversigten over funktioner i mobilapps for juli 2017](https://powerbi.micr
 #### <a name="ios-devices"></a>iOS-enheder
 **Ny oplevelse med spørgsmål og svar på iOS (prøveversion)** I stedet for blot at få svar på dit spørgsmål kan du nu bruge naturligt sprog for at få afgrænset indsigt. Også selvom du ikke helt ved, hvad du søger efter, vises indsigt, der er relevant for dine data, i Q&A. Den nye oplevelse på mobiltelefonen med spørgsmål og svar, der er udviklet i samarbejde med Microsoft Research-teamet, viser de effektive teknologier i vores produkt. Prøv selvstudiet [Stil spørgsmål om dine data i iOS-mobilapps](mobile-apps-ios-qna.md).
 
-### <a name="responsive-visuals"></a>Dynamiske visualiseringer
-**Dynamiske visualiseringer til telefonrapporter og dashboards** Du kan angive, at visualiseringerne på dit dashboard eller i din rapport skal være *dynamiske*, så de ændres dynamisk for at vise det maksimale antal data og indsigt uanset skærmstørrelse. Læs [bloggen om dynamiske visualiseringer](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals).
+### <a name="responsive-visuals"></a>Dynamiske visuelle elementer
+**Dynamiske visuelle elementer til telefonrapporter og dashboards** Du kan angive, at de visuelle elementer i dit dashboard eller en rapport skal være *dynamiske*, så de ændres dynamisk for at vise det maksimale antal data og indsigt uanset skærmstørrelse. Læs [bloggen om dynamiske visuelle elementer](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary-2/#responsiveVisuals).
 
 ### <a name="june-2107"></a>Juni 2017
 #### <a name="all-devices"></a>Alle enheder
@@ -364,7 +364,7 @@ Læs [oversigten over funktioner i mobilapps for april 2017](https://powerbi.mic
 #### <a name="all-devices"></a>Alle enheder
 **Baggrundsfarve for telefonrapporter** Når du definerer en baggrundsfarve for en rapport i Power BI Desktop, får telefonrapporten den samme baggrundsfarve. Mere om [optimering af rapportsider for telefoner](../../desktop-create-phone-report.md).
 
-**Udarbejd mobilvenlige brugerdefinerede visualiseringer** Læs denne [Udviklerguide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) med tip til oprettelse af brugerdefinerede visualiseringer, der ser godt ud og fungerer godt på mobilenheder.
+**Udarbejd mobilvenlige brugerdefinerede visuelle elementer** Læs denne [Udviklerguide](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/MobileGuideline.md) med tip til oprettelse af brugerdefinerede visuelle elementer, der ser godt ud og fungerer godt på mobilenheder.
 
 #### <a name="ios-devices"></a>iOS-enheder
 **Tal med dataene: Stil spørgsmål ved at tale** Nu kan du [stille spørgsmål til dine data med Q&A](mobile-apps-ios-qna.md) ved at tale i stedet for at skrive. 
@@ -649,8 +649,6 @@ Læs [blog om Power BI-mobilapps fra marts 2016](https://powerbi.microsoft.com/b
 Få vist dashboards i [liggende tilstand på Android-telefoner](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone). 
 
 #### <a name="power-bi-app-for-windows-10-devices"></a>Power BI-app til Windows 10-enheder
-Få vist dashboards i [liggende tilstand på Windows 10-telefoner](mobile-apps-view-dashboard.md#view-dashboards-on-your-windows-10-device).
-
 Få vist [rapporter på din Windows 10-telefon](mobile-reports-in-the-mobile-apps.md).
 
 Hurtigere [indsigt i dine Windows 10-mobildashboards](mobile-tiles-in-the-mobile-apps.md): Del et snapshot af et felt, eller åbn en rapport direkte fra dashboardet.

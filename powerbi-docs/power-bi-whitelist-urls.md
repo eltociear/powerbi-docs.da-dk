@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/22/2018
 ms.custom: seodec18
-ms.openlocfilehash: 07441bd0446e37353984efe97e435ac83d2c355d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 5b8cce3c62811509b5a2fa80bdde683c6278c7b2
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60978367"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68624174"
 ---
 # <a name="power-bi-urls-for-whitelisting"></a>URL-adresser til hvidliste for Power BI
 
@@ -38,7 +38,7 @@ Power BI er afhængigt af de krævede slutpunkter til Office 365-autorisation og
 
 | Række | Formål | Destination(er) | Port(e) |
 | --- | --- | --- | --- |
-| 1 | **Påkrævet:** Godkendelse og identitet | Se dokumentationen til Office 365 for at få oplysninger om [Office Online og almindelige URL-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online)  | I/T |
+| 1 | **Påkrævet:** Godkendelse og identitet | Se dokumentationen til Office 365 for at få oplysninger om [Office Online og almindelige URL-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office)  | I/T |
 
 ## <a name="general-site-usage"></a>Websted til generel brug
 
@@ -47,7 +47,7 @@ Hvis du vil bruge Power BI, skal du kunne oprette forbindelse til slutpunkterne 
 | Række | Formål | Destination(er) | Port(e) |
 | --- | --- | --- | --- |
 | 1 | **Påkrævet:** Back-end-API'er | *.analysis.windows.net | TCP 443 |
-| 2 | **Påkrævet:** Office 365-integration | Se dokumentationen til Office 365 for at få oplysninger om [Office Online og almindelige URL-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | I/T |
+| 2 | **Påkrævet:** Office 365-integration | Se dokumentationen til Office 365 for at få oplysninger om [Office Online og almindelige URL-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office) | I/T |
 | 3 | **Påkrævet:** Portal | app.powerbi.com | TCP 443 |
 | 4 | **Påkrævet:** Tjenestetelemetri | dc.services.visualstudio.com | TCP 443 |
 | 5 | **Valgfrit:** Meddelelser til orientering | dynmsg.modpim.com | TCP 443 |
@@ -60,7 +60,7 @@ Hvis du vil udføre administrative funktioner i Power BI, skal du kunne oprette 
 
 | Række | Formål | Destination(er) | Port(e) |
 | --- | --- | --- | --- |
-| 1 | **Påkrævet:** Til administration af brugere og visning af overvågningslogge | Se dokumentationen til Office 365 for at få oplysninger om [Office Online og almindelige URL-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | I/T |
+| 1 | **Påkrævet:** Til administration af brugere og visning af overvågningslogge | Se dokumentationen til Office 365 for at få oplysninger om [Office Online og almindelige URL-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office) | I/T |
 | | | |
 
 ## <a name="getting-data"></a>Hent data
@@ -82,7 +82,7 @@ Power BI afhænger af, at bestemte slutpunkter kan understøtte dine dashboards 
 
 | Række | Formål | Destination(er) | Port(e) |
 | --- | --- | --- | --- |
-| 1 | **Påkrævet:** Excel-integration | Se dokumentationen til Office 365 for at få oplysninger om [Office Online og almindelige URL-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) | I/T |
+| 1 | **Påkrævet:** Excel-integration | Se dokumentationen til Office 365 for at få oplysninger om [Office Online og almindelige URL-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office) | I/T |
 | | | |
 
 ## <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
@@ -94,7 +94,7 @@ Power BI afhænger af, at bestemte slutpunkter kan se og få adgang til brugerde
 | 1 | **Påkrævet:** Importér en brugerdefineret visualisering fra Marketplace-brugergrænsefladen eller fra en fil | *.azureedge.net <br> *.blob.core.windows.net <br> store.office.com | TCP 443 |
 | 2 | **Valgfrit:** Bing Maps | bing.com <br> platform.bing.com <br> *.virtualearth.net | TCP 443 |
 | 3 | **Valgfrit:** PowerApps | Se [sektionen Krævede tjenester](https://docs.microsoft.com/powerapps/maker/canvas-apps/limits-and-config#required-services) fra webstedet med systemkrav til PowerApps | I/T |
-| 4 | **Valgfrit:** Visio | Se dokumentationen til Office 365 for at få oplysninger om [Office Online og almindelige URL-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online) samt [SharePoint Online og OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | I/T |
+| 4 | **Valgfrit:** Visio | Se dokumentationen til Office 365 for at få oplysninger om [Office Online og almindelige URL-adresser](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office) samt [SharePoint Online og OneDrive for Business](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#sharepoint-online-and-onedrive-for-business) | I/T |
 | | | |
 
 ## <a name="related-external-sites"></a>Relaterede eksterne websteder
