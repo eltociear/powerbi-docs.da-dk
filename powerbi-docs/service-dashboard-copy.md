@@ -11,17 +11,17 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 59ffa05d34b86ba2a4673e3d9db39e15f030fb17
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 5507356e42c58574a2d7c6787074fb987ddfeaec
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61136611"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523177"
 ---
 # <a name="create-a-copy-of-a-dashboard-in-power-bi-service"></a>Opret en kopi af et dashboard i Power BI-tjenesten
 ![dashboard](media/service-dashboard-copy/power-bi-dashboard.png)
 
- Der er mange forskellige grunde til at lave en kopi af et dashboard. Måske vil du foretage ændringer og teste ydeevnen i forhold til originalen, eller måske vil du oprette forskellige versioner til at dele ud til hhv. kollegaer, områder eller teams. Måske kan en kollega godt lide dit dashboard design og ønsker at bruge det i rapporter til hendes overordnede. En anden årsag kunne være, hvis du har en ny database med samme datastruktur og datatyper, og du gerne vil genbruge det dashboard, du allerede har oprettet – det kan også lade sig gøre, men det kræver noget arbejde i Power BI Desktop. 
+ Der er mange forskellige grunde til at lave en kopi af et dashboard. Måske vil du foretage ændringer og teste ydeevnen i forhold til originalen, eller måske vil du oprette forskellige versioner til at dele ud til hhv. kollegaer, områder eller teams. Måske kan en kollega godt lide dit dashboarddesign og ønsker at bruge det, når vedkommende skal rapportere til sine ledere. En anden årsag kunne være, hvis du har en ny database med samme datastruktur og datatyper, og du gerne vil genbruge det dashboard, du allerede har oprettet – det kan også lade sig gøre, men det kræver noget arbejde i Power BI Desktop. 
 
 Du bruger Power BI-tjenesten til at oprette dashboards og kan få dem vist i Power BI – Mobil og Power BI Embedded.  Dashboards er ikke tilgængelige i Power BI Desktop. 
 

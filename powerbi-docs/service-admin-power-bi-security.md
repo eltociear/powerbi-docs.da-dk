@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/11/2019
 LocalizationGroup: Administration
-ms.openlocfilehash: b70d23d7f4f5dfab9273319ad890a21c9b74ead2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: df2e31ea9c8030e00001081e5fbe280605188bc5
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61187358"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523292"
 ---
 # <a name="power-bi-security"></a>Power BI-sikkerhed
 
@@ -56,7 +56,7 @@ Platformssikkerhed i forbindelse med Power BI indeholder også miljøsikkerhed m
 
 Besøg [Microsoft Trust Center](https://www.microsoft.com/trustcenter) for at få flere oplysninger.
 
-Som beskrevet tidligere i denne artikel anvendes en brugers Power BI-logon af lokale Active Directory-servere til at blive tilknyttet et UPN for legitimationsoplysninger. Det er dog **vigtigt** at være opmærksom på, at brugerne er ansvarlige for de data, de deler: Hvis en bruger opretter forbindelse til datakilder ved hjælp af sine legitimationsoplysninger og derefter deler en rapport (eller dashboard eller datasæt) baseret på disse data, er brugere, som dashboardet deles med, ikke godkendt i forhold til den oprindelige datakilde og får tildelt adgang til rapporten.
+Som beskrevet tidligere i denne artikel anvendes en brugers Power BI-logon af lokale Active Directory-servere til at blive tilknyttet et UPN for legitimationsoplysninger. Det er dog **vigtigt** at være opmærksom på, at brugerne er ansvarlige for de data, de deler: Hvis en bruger opretter forbindelse til datakilder ved hjælp af sine legitimationsoplysninger og derefter deler en rapport (eller et dashboard eller et datasæt) baseret på disse data, er brugere, som dashboardet deles med, ikke godkendt i forhold til den oprindelige datakilde og får tildelt adgang til rapporten.
 
 En undtagelse er forbindelser til **SQL Server Analysis Services** ved hjælp af **datagatewayen i det lokale miljø**. Dashboards cachelagres i Power BI, men adgang til underliggende rapporter eller datasæt initierer godkendelse af den bruger, der forsøger at få adgang til rapporten (eller datasættet), og adgang tildeles kun, hvis brugeren har tilstrækkelige rettigheder til at få adgang til dataene. Du kan finde flere oplysninger i [Detaljerede oplysninger om datagateway i det lokale miljø](service-gateway-onprem-indepth.md).
 

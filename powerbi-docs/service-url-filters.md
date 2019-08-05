@@ -11,16 +11,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 04/24/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: cf640be131e1bffb571ad3c2ae2713dee1c4c0ca
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1d1371fa63af51f50a631739e4b2eed5550dc7ee
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051301"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523331"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 
-Når du åbner en rapport i Power BI-tjenesten, har hver side i rapporten sin egen entydige URL-adresse. Hvis du vil filtrere denne rapportside, kan du bruge ruden Filtre på rapportcanvasset.  Eller du kan føje forespørgselsstrengparametre til URL-adressen for at filtrere rapporten. Du har måske en rapport, du vil vise til kollegaer, og du vil filtrere den på forhånd for dem. En måde, du kan filtrere på, er ved at starte med URL-standardadressen til rapporten, føje filterparametrene til URL-adressen og derefter sende hele den nye URL-adresse til dem via mail.
+Når du åbner en rapport i Power BI-tjenesten, har hver side i rapporten sin egen entydige URL-adresse. Hvis du vil filtrere denne rapportside, kan du bruge ruden Filtre på rapportlærredet.  Eller du kan føje forespørgselsstrengparametre til URL-adressen for at filtrere rapporten. Du har måske en rapport, du vil vise til kollegaer, og du vil filtrere den på forhånd for dem. En måde, du kan filtrere på, er ved at starte med URL-standardadressen til rapporten, føje filterparametrene til URL-adressen og derefter sende hele den nye URL-adresse til dem via mail.
 
 ![Power BI-rapport i tjenesten](media/service-url-filters/power-bi-report2.png)
 
@@ -28,7 +28,7 @@ Når du åbner en rapport i Power BI-tjenesten, har hver side i rapporten sin eg
 
 Forestil dig, at du arbejder i Power BI Desktop. Du vil gerne oprette en rapport, der indeholder links til andre Power BI-rapporter, men vil kun vise nogle af oplysningerne i de andre rapporter. Start med at filtrere rapporterne ved hjælp af forespørgselsstrengparametre, og gem URL-adresserne. Derefter skal du oprette en tabel i Desktop med de nye URL-adresser til rapporterne.  Derefter skal du publicere og dele rapporten.
 
-Et andet anvendelsesområde for forespørgselsstrengparametre er ved oprettelse af en avanceret Power BI-løsning.  Ved hjælp af DAX kan der oprettes en rapport, der dynamisk genererer en URL-adresse til en filtreret rapport baseret på de valg, som kunden udfører i den aktuelle rapport. Når kunderne vælger URL-adressen, får de kun vist de relevante oplysninger. 
+Et andet anvendelsesområde for forespørgselsstrengparametre er ved oprettelse af en avanceret Power BI-løsning.  Ved hjælp af DAX kan der oprettes en rapport, der dynamisk genererer en URL-adresse til en filtreret rapport på baggrund af de valg, kunden foretager i den aktuelle rapport. Når kunderne vælger URL-adressen, får de kun vist de relevante oplysninger. 
 
 ## <a name="query-string-parameter-syntax-for-filtering"></a>Syntaks til parametre for forespørgselsstreng til filtrering
 
@@ -43,7 +43,7 @@ URL?filter=***Tabel***/***Felt*** eq '***værdi***'
 
 ### <a name="reports-in-apps"></a>Rapporter i apps
 
-Hvis du vil føje et filter for URL-adresse til en rapport i en app, er formateringen lidt anderledes. Links til rapporter i en app har en forespørgselsparameter (ctid), der føjes til URL-adressen. Adskil forespørgselsparametrene med et &-tegn (&). Hold "? filter =", og Flyt parameteren ctid til slutningen af URL-adressen, indledes med et &-tegn (&). 
+Hvis du vil føje et filter for URL-adresse til en rapport i en app, er formateringen lidt anderledes. Links til rapporter i en app har en forespørgselsparameter (ctid), der føjes til URL-adressen. Adskil forespørgselsparametrene med et &-tegn. Bevar "?filter=", og flyt ctid-parameteren til slutningen af URL-adressen med et &-tegn foran. 
 
 Som i dette eksempel:
 
@@ -83,7 +83,7 @@ Hvis du vil filtrere rapporten, så der kun vises data for butikker i "NC" (Nort
 
 Nu er rapporten filtreret for North Carolina, så alle visualiseringer på rapportsiden viser kun data for North Carolina.
 
-![Rapporten filtreret for North carolina ud](media/service-url-filters/power-bi-report4.png)
+![Rapport filtreret efter North Carolina](media/service-url-filters/power-bi-report4.png)
 
 ## <a name="filter-on-multiple-fields"></a>Filtrer på flere felter
 
@@ -133,9 +133,9 @@ Et URL-filter i Power BI kan inkludere tal i følgende formater.
 
 ### <a name="date-data-types"></a>Datodatatyper
 
-Power BI understøtter både OData V3 og V4 for datatyperne **Date** og **DateTimeOffset**.  Datoer er repræsenteret vha. formatet EDM (2019-02-12T00:00:00), så når du angiver en dato som 'Åååå-MM-DD', Power BI fortolker den som ' åååå-MM-DDT00:00:00'.
+Power BI understøtter både OData V3 og V4 for datatyperne **Date** og **DateTimeOffset**.  Datoer repræsenteres ved hjælp af EDM-formatet (2019-02-12T00:00:00), så når du angiver en dato som "YYYY-MM-DD", fortolker Power BI det som "YYYY-MM-DDT00:00:00".
 
-Hvorfor er den forskel vigtig? Lad os sige, at du opretter en forespørgselsstrengparameter **tabel/dato gt ' 2018-08-03'** .  Inkluderer resultaterne 3. august 2018, eller starter de med 4. august 2018? Da Power BI oversætter din forespørgsel til **tabel/dato gt ' 2018-08-03T00:00:00'** , dine resultater, der omfatter alle datoer, der har en klokkeslætsdel, der ikke er nul, da disse datoer skal være større end **' 2018-08-03T00:00:00'** .
+Hvorfor er den forskel vigtig? Lad os sige, at du opretter en parameter for en forespørgselstreng af typen **Tabel/Dato gt "2018-08-03"** .  Inkluderer resultaterne 3. august 2018, eller starter de med 4. august 2018? Da Power BI oversætter din forespørgsel til **Tabel/Dato gt "2018-08-03T00:00:00"** , inkluderer dine resultater alle de datoer, som ikke har et klokkeslæt, der kun består af nuller, da disse datoer vil være større end **"2018-08-03T00:00:00"** .
 
 ## <a name="special-characters-in-url-filters"></a>Specialtegn i URL-filtre
 
@@ -145,7 +145,7 @@ Specialtegn og mellemrum kræver yderligere formatering. Når din forespørgsel 
 |---------|---------|---------|
 |**Tabelnavn**     | Området er 0x20        |  Navn_x0020_på_x0020_tabel       |
 |**Kolonne**@**tal**     |   @ er 0x40     |  Kolonne_x0040_tal       |
-|**[Kolonne]**     |  [ er 0x0058 ] er 0x0050       |  _x0058_Column_x0050_       |
+|**[Kolonne]**     |  [ er 0x0058 ] er 0x0050       |  _x0058_Kolonne_x0050_       |
 |**Kolonne+Plus**     | + er 0x2B        |  Kolonne_x002B_Plus       |
 
 Navn_x0020_på_x0020_tabel/Kolonne_x002B_Plus eq 3 ![specialtegn til gengivelse af tabelvisualisering](media/service-url-filters/power-bi-special-characters1.png)
@@ -177,7 +177,7 @@ Der er et par ting, du skal være opmærksom på, når du bruger parametre for f
 
 * Når du bruger operatoren *in*, skal værdierne til højre for *in* være en kommasepareret liste angivet i parenteser.    
 * På Power BI-rapportserveren kan du [sende rapportparametre](https://docs.microsoft.com/sql/reporting-services/pass-a-report-parameter-within-a-url?view=sql-server-2017.md) ved at inkludere dem i en URL-adresse til rapporten. Disse parametre i URL-adressen har ikke noget præfiks, da de sendes direkte til det program, der behandler rapporten.
-* Filtrering af forespørgselsstrengen fungerer ikke med [Publicer på internettet](service-publish-to-web.md) eller [eksport til PDF](consumer/end-user-pdf.md).
+* Filtrering af forespørgselsstrengen fungerer ikke sammen med [Publicer på internettet](service-publish-to-web.md) eller [Eksportér til PDF](consumer/end-user-pdf.md).
 * [Integrer med rapportwebdelen i SharePoint Online](service-embed-report-spo.md) understøtter ikke URL-adressefiltre.
 * Datatypen long er (2^53-1) på grund af begrænsninger i Javascript.
 * URL-adresse-filtre for rapporter har en grænse på 10-udtryk (10 filtre, der er forbundet med OG).

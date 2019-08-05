@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 41d35eb9e078a63e499bb65dead05fe7dbbc2985
-ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.openlocfilehash: 233b4c36b5e59b38c82f5c3ccc1f0b49b70c5ac8
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67791887"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523470"
 ---
 # <a name="opportunity-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på analyse af salgsmuligheder til Power BI: Få en introduktion
 
@@ -33,7 +33,7 @@ Eksemplet anvender to målinger af indtægt:
 
 ![Dashboard for eksemplet på analyse af salgsmuligheder](media/sample-opportunity-analysis/opportunity1.png)
 
-Dette eksempel er en del af en serie, der viser, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Det blev oprettet med rigtige data fra [obviEnce](http://www.obvience.com/), som er blevet anonymiseret. Dataene er tilgængelige i flere formater: indholdspakke, .pbix-fil til Power BI Desktop eller Excel-projektmappe. Se [Eksempler til Power BI](sample-datasets.md). 
+Dette eksempel er en del af en serie, der viser, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Det blev oprettet af [obviEnce](http://www.obvience.com/) med rigtige data, som er blevet anonymiseret. Dataene er tilgængelige i flere formater: indholdspakke, .pbix-fil til Power BI Desktop eller Excel-projektmappe. Se [Eksempler til Power BI](sample-datasets.md). 
 
 I dette selvstudium udforskes indholdspakken med eksemplet på analyse af salgsmuligheder i Power BI-tjenesten. Da rapportoplevelsen i Power BI Desktop og i tjenesten minder meget om hinanden, kan du også følge med ved at bruge .pbix-eksempelfilen i Power BI Desktop. 
 
@@ -70,7 +70,7 @@ Du kan også hente eksemplet på analyse af salgsmuligheder som en [.pbix-fil](h
 Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529782). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, kan du finde flere oplysninger under [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Hvad fortæller vores dashboard os?
-Salgschefen har oprettet et dashboard til at spore de vigtigste målepunkter. Når hun ser noget interessant, kan hun vælge et felt for at se nærmere på dataene:
+Salgschefen har oprettet et dashboard for at spore de vigtigste målepunkter. Når vedkommende ser noget interessant, kan han eller hun vælge et felt for at se nærmere på dataene:
 
 - Virksomhedens indtægter er $2 milliarder, og indregnede indtægter er $461 millioner.
 - Antal salgsmuligheder og indtægt følger et velkendt tragtformet mønster, hvor totaler formindskes i hver efterfølgende fase.
@@ -127,7 +127,7 @@ På denne side ser vi igen på lignende faktorer, men denne gang fra et dato og 
  
 ![Siden Kommende salgsmuligheder](media/sample-opportunity-analysis/opportunity6.png)
 
-Vores CFO bruger denne side til at administrere arbejdsbyrde. Ved at se på indtægtsmulighederne efter salgsfase og måned kan hun planlægge i forhold til dette.
+Vores CFO bruger denne side til at administrere arbejdsbyrde. Ved at se på indtægtsmulighederne efter salgsfase og måned kan vedkommende planlægge i forhold til dette.
 
 Bemærk følgende oplysninger:
 * Den gennemsnitlige indtægt for fasen Færdiggør er den højeste. Det har højeste prioritet at lukke disse handler.

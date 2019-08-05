@@ -1,5 +1,5 @@
 ---
-title: Ofte stillede spørgsmål om brugerdefinerede Power BI-visuals
+title: Ofte stillede spørgsmål om Power BI-visualiseringer
 description: Gennemse en liste med ofte stillede spørgsmål og svar om brugerdefinerede Power BI-visuals
 author: sranins
 ms.author: rasala
@@ -10,16 +10,18 @@ ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 0fcb3451249c121281790dca77bd6008c39deaef
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 58fa65abfa2d2cff5e02b34fe8db8aa10b36ee14
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497940"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415391"
 ---
-# <a name="frequently-asked-questions-about-power-bi-custom-visuals"></a>Ofte stillede spørgsmål om brugerdefinerede Power BI-visuals
+# <a name="frequently-asked-questions-about-power-bi-visuals"></a>Ofte stillede spørgsmål om Power BI-visualiseringer
 
 ## <a name="organizational-custom-visuals"></a>Brugerdefinerede visuals til virksomheden
+
+På administrationsportalen kan du administrere en Power BI-visualisering for din virksomhed.
 
 ### <a name="how-can-the-admin-manage-the-organizational-custom-visuals"></a>Hvordan kan administratoren administrere de brugerdefinerede visualiseringer til virksomheden?
 

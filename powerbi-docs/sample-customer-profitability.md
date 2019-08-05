@@ -10,20 +10,20 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 333403ca74c5c5a13c94cbd41100915c7260e304
-ms.sourcegitcommit: 1789815c87e306b1427a5838655d30d3b9ba1d29
+ms.openlocfilehash: ddda7d6aaacbcde2d71371b316d14a9cd411bd43
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67791994"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523413"
 ---
 # <a name="customer-profitability-sample-for-power-bi-take-a-tour"></a>Eksempel på kunderentabilitet til Power BI: Få en introduktion
 
-Indholdspakken med eksemplet på kunderentabilitet indeholder et dashboard, en rapport og datasæt for en virksomhed, der producerer markedsføringsmateriale. Dette dashboard blev oprettet af en økonomidirektør med henblik på at se nøgletal for hendes fem afdelingsledere (direktører), produkter, kunder og bruttoavance (BA). Hun kan hurtigt se, hvilke faktorer der påvirker rentabiliteten.
+Indholdspakken med eksemplet på kunderentabilitet indeholder et dashboard, en rapport og datasæt for en virksomhed, der producerer markedsføringsmateriale. Dette dashboard blev oprettet af en økonomidirektør med henblik på at se nøgletal for de fem afdelingsledere (direktører), produkter, kunder og bruttoavance (BA). Det er hurtigt at se, hvilke faktorer der påvirker rentabiliteten.
 
 ![Dashboard for eksempel på Kunderentabilitet](media/sample-customer-profitability/power-bi-dash.png)
 
-Dette eksempel er en del af en række, der viser, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Det blev oprettet med rigtige data fra [obviEnce](http://www.obvience.com/), som er blevet anonymiseret. Dataene er tilgængelige i flere formater: indholdspakke, .pbix-fil til Power BI Desktop eller Excel-projektmappe. Se [Eksempler til Power BI](sample-datasets.md). 
+Dette eksempel er en del af en serie, der viser, hvordan du kan bruge Power BI med forretningsrelaterede data, rapporter og dashboards. Det blev oprettet af [obviEnce](http://www.obvience.com/) med rigtige data, som er blevet anonymiseret. Dataene er tilgængelige i flere formater: indholdspakke, .pbix-fil til Power BI Desktop eller Excel-projektmappe. Se [Eksempler til Power BI](sample-datasets.md). 
 
 I dette selvstudium udforskes indholdspakken med eksemplet på kunderentabilitet i Power BI-tjenesten. Da rapportoplevelsen i Power BI Desktop og i tjenesten minder meget om hinanden, kan du også følge med ved at bruge .pbix-eksempelfilen i Power BI Desktop. 
 
@@ -66,7 +66,7 @@ Find dashboardet Kunderentabilitet i det arbejdsområde, hvor du gemte eksemplet
 ![Dashboard for eksempel på Kunderentabilitet](media/sample-customer-profitability/power-bi-dash.png)
 
 ### <a name="company-wide-dashboard-tiles"></a>Virksomhedsdækkende dashboardfelter
-1. Åbn dashboardet i Power BI-tjenesten. Dashboardfelterne giver vores økonomidirektør et overblik over de vigtige virksomhedsdata. Når hun ser noget interessant, kan hun vælge et felt for at grave ned i dataene.
+1. Åbn dashboardet i Power BI-tjenesten. Dashboardfelterne giver vores økonomidirektør et overblik over de vigtigste virksomhedsdata. Når vedkommende ser noget interessant, kan han eller hun vælge et felt for at se nærmere på dataene.
 
 2. Gennemse felterne i venstre side af dashboardet.
 
@@ -81,7 +81,7 @@ Find dashboardet Kunderentabilitet i det arbejdsområde, hvor du gemte eksemplet
    - Den samlede omsætning for året ligger tæt på budgettet.
 
 ### <a name="manager-specific-dashboard-tiles"></a>Chefspecifikke dashboardfelter
-Ved hjælp af felterne i højre side af dashboardet får du et teamscorecard. Økonomidirektøren skal holde styr på sine ledere, og disse felter giver hende et godt overblik over fortjenesten ved hjælp af BA i %. Hvis BA%-tendensen er uventet for en given chef, så kan hun undersøge det nærmere.
+Ved hjælp af felterne i højre side af dashboardet får du et teamscorecard. Økonomidirektøren skal holde styr på sine ledere, og disse felter giver vedkommende et godt overblik over fortjenesten ved hjælp af BA i %. Hvis tendensen for BA i % er uventet for en given leder, kan vedkommende undersøge det nærmere.
 
 ![BA% til ledere](media/sample-customer-profitability/power-bi-manager2.png)
 
@@ -89,7 +89,7 @@ Ved at analysere de ledelsesspecifikke dashboardfelter kan vi se følgende:
 
 - Alle direktører, med undtagelse af Carlos, har allerede overskredet deres salgsmål. Carlos' faktiske salg er dog det højeste.
 - Annelies BA% er den laveste, men vi kan se en konstant stigning siden marts.
-- Men Valery har oplevet et væsentligt fald i sin BA%.
+- Valery har derimod oplevet et væsentligt fald i sin BA i %.
 - Andrew har haft et svingende år.
 
 ## <a name="explore-the-dashboards-underlying-data"></a>Udforsk dashboardets underliggende data
@@ -106,7 +106,7 @@ To felter på dette dashboard **Mål vs. Faktisk** og **Omsætningsstigning år 
 
     a. Via skyderen **Direktør** skal du vælge **Carlos Grilo**.   
 
-    b. Den første pivottabel fortæller os, at Carlos' omsætningsstigning for det bedste produkt, Primus, er faldet med 152 % siden sidste år. Diagrammet over **omsætningsafvigelse år-til-år** viser, at han i de fleste måneder lå under budgettet.  
+    b. Den første pivottabel fortæller os, at Carlos' omsætningsstigning for det bedste produkt, Primus, er faldet med 152 % siden sidste år. Diagrammet over **omsætningsafvigelse år-til-år** viser, at Carlos i de fleste måneder lå under budgettet.  
 
     ![Pivottabel](media/sample-customer-profitability/power-bi-pivotchart.png)
 
@@ -139,7 +139,7 @@ Lad os se nærmere på to af teammedlemmerne, og på hvad det giver os af indsig
 1. I udsnittet **Direktør** til venstre skal du vælge Andrews navn for at filtrere rapportsiden, så der kun vises data for Andrew:
 
    * Hvis du vil se et hurtigt KPI, skal du kigge på Andrews **Omsætningsstatus (Samlet for året)** . Det er grøn, hvilket betyder, at han præsterer godt.
-   * Diagrammet **Indtægtsvarians i % i forhold til budget efter måned og overordnet** viser, at Andrew klarer sig godt med undtagelse af et fald i februar. Hans stærkeste område er det østlige område, og han håndterer 49 kunder og fem ud af syv produkter. Hans BA i % er hverken den højeste eller den laveste.
+   * Diagrammet **Indtægtsvarians i % i forhold til budget efter måned og overordnet** viser, at Andrew klarer sig godt med undtagelse af et fald i februar. Andrews stærkeste område er det østlige område, som omfatter 49 kunder og 5 ud af 7 produkter. Andrews BA i % er hverken den højeste eller den laveste.
    * Diagrammet **Samlet omsætning i år og omsætningsafvigelse i % ift. budget pr. måned** viser en konstant og tilmed rentabel historie. Men hvis du filtrerer ved at vælge firkanten ud for **Central** i områdetræstrukturen, opdager du, at Andrew kun har omsætning i marts og kun i Indiana. Er denne tendens bevidst, eller er det noget, der skal undersøges nærmere?
 
 2. Nu videre til Valery. Vælg Valerys navn i udsnittet **Direktør** for at filtrere rapportsiden og kun få vist data om hende. 
@@ -147,28 +147,28 @@ Lad os se nærmere på to af teammedlemmerne, og på hvad det giver os af indsig
    ![Valerys data](media/sample-customer-profitability/customer3.png)
 
    * Bemærk det røde KPI for **Omsætningsstatus (Samlet for året)** . Dette skal helt sikkert undersøges nærmere.
-   * Hendes omsætningsafvigelse tegner også et bekymrende billede: Hun opfylder ikke sine omsætningsmargener.
+   * Valerys omsætningsafvigelse tegner også et bekymrende billede: Hun opfylder ikke de angivne omsætningsmargener.
    * Valery har kun ni kunder, håndterer kun to produkter og arbejder næsten udelukkende med kunder i det nordlige område. Denne specialisering kan være forklaringen på de stærkt svingende tal.
-   * Hvis du vælger firkanten **Nord** i træstrukturen, kan du se, at Valerys bruttoavance i det nordlige område svarer til hendes overordnede margen.
-   * Hvis du vælger en af de andre **Samlet omsætning efter område**-firkanter, kan du se et interessant billede: Hendes BA i % strækker sig fra 23 % til 79 %. Hendes omsætningstal i alle områder undtagen det nordlige område er ekstremt sæsonafhængige.
+   * Hvis du vælger firkanten **Nord** i træstrukturen, kan du se, at Valerys bruttoavance i det nordlige område svarer til den overordnede margen.
+   * Hvis du vælger en af de andre firkanter for **Samlet omsætning efter område**, kan du se et interessant billede: BA'en i % strækker sig fra 23 % til 79 %. Valerys omsætningstal i alle områder undtagen det nordlige område er ekstremt sæsonafhængige.
 
 3. Fortsæt med udforskningen for at finde ud af, hvorfor Valerys område ikke præsterer så godt. Kig på områder, de andre forretningsenheder og den næste side i rapporten: **Branchemargenanalyse**.
 
 ### <a name="industry-margin-analysis"></a>Branchemargenanalyse
-Denne rapportside indeholder et andet udsnit af dataene. Den ser på bruttoavancen for hele branchen, opdelt efter segment. Økonomidirektøren bruger denne side til at sammenligne virksomheds- og afdelingsdata som en hjælp til at forklare tendenser og lønsomhed. Du undrer dig måske over, hvorfor områdediagrammet **Bruttoavance i % efter måned og direktør** er på denne side, da det er teamspecifikt. Den er placeret her, fordi vi så kan filtrere siden efter afdelingschef.  
+Denne rapportside indeholder et andet udsnit af dataene. Den ser på bruttoavancen for hele branchen, opdelt efter segment. Økonomidirektøren bruger denne side til at sammenligne virksomheds- og afdelingsdata som en hjælp til at forklare tendenser og rentabilitet. Du undrer dig måske over, hvorfor områdediagrammet **Bruttoavance i % efter måned og direktør** er på denne side, da det er teamspecifikt. Den er placeret her, fordi vi så kan filtrere siden efter afdelingschef.  
 
 ![Rapportsiden Branchemargenanalyse](media/sample-customer-profitability/customer6.png)
 
-1. Hvor meget varierer lønsomheden efter branche? Hvordan fordeler produkter og kunder sig efter branche? For at besvare disse spørgsmål skal du vælge en eller flere brancher øverst til venstre (start med CPG-branchen). Vælg viskelæderikonet for at fjerne filteret.
+1. Hvor meget varierer rentabiliteten efter branche? Hvordan fordeler produkter og kunder sig efter branche? For at besvare disse spørgsmål skal du vælge en eller flere brancher øverst til venstre (start med CPG-branchen). Vælg viskelæderikonet for at fjerne filteret.
 
 2. I boblediagrammet **Omsætningsafvigelse i % ift. budget, BA i % og samlet omsætning i år efter branche** kigger økonomidirektøren efter de største bobler, fordi de har den største indvirkning på omsætningen. Hvis du nemt vil se hver leders indvirkning efter branchesegment, skal du filtrere siden ved at klikke på hver leders navn i områdediagrammet.
 
 3. Når du vælger de enkelte ledere i diagrammet, skal du bemærke følgende oplysninger:
    * Andrews indvirkning ses i mange forskellige branchesegmenter med meget varierende BA% (mest positiv) og Var%.
-   * Annelies diagram er lignende, bortset fra at hun kun koncentrerer sig om en håndfuld branchesegmenter med fokus på det delstatsmæssige segment og fokus på Gladius-produktet.
-   * Carlos har et klart fokus på segmentet for serviceydelser med et godt overskud. Han har markant forbedret afvigelsen i % for segmentet for højteknologi, og et nyt segment for ham, industriel, præsterede rigtigt godt i forhold til budgettet.
-   * Tina arbejder inden for en håndfuld segmenter og har den højeste BA%, men hendes bobler er generelt små, hvilket viser, at hendes indvirkning på virksomhedens bundlinje er minimal.
-   * Valery, som kun har ansvaret for et enkelt produkt, arbejder i kun fem branchesegmenter. Hendes indvirkning er sæsonafhængig, men leverer altid en stor boble, hvilket viser, at hun har en stor indvirkning på virksomhedens bundlinje. Er branchesegmenterne forklaringen på hendes negative præstation?
+   * Annelies diagram er lignende, bortset fra at hun kun koncentrerer sig om en håndfuld branchesegmenter med fokus på det delstatsmæssige segment og Gladius-produktet.
+   * Carlos har et klart fokus på segmentet for serviceydelser med et godt overskud. Carlos har markant forbedret afvigelsen i % for segmentet for højteknologi, og et nyt segment, industriel, præsterede rigtigt godt i forhold til budgettet.
+   * Tina arbejder inden for en håndfuld segmenter og har den højeste BA i %, men hendes bobler er generelt små, hvilket viser, at Tinas indvirkning på virksomhedens bundlinje er minimal.
+   * Valery, som kun har ansvaret for et enkelt produkt, arbejder i kun fem branchesegmenter. Valerys indvirkning er sæsonafhængig, men leverer altid en stor boble, hvilket viser, at hun har en stor indvirkning på virksomhedens bundlinje. Er branchesegmenterne forklaringen på den negative præstation?
 
 ### <a name="executive-scorecard"></a>Chefscorecard
 Denne side er formateret som en Cortana-svarside. Du kan finde flere oplysninger i [Opret et brugerdefineret svarside til Cortana](service-cortana-answer-cards.md).

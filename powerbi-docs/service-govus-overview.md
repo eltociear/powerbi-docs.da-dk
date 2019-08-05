@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/06/2019
+ms.date: 07/26/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 554a5de238af650ab4009669d55a2fadedd4a29f
-ms.sourcegitcommit: aef57ff94a5d452d6b54a90598bd6a0dd1299a46
+ms.openlocfilehash: 531cb34379c984a26e983db7acfc9b4deebf68b9
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66809134"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590446"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til kunder i den amerikanske stat
 **Power BI-tjenesten** har en tilgængelig version for kunder i den amerikanske stat som en del af abonnementer for **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til kunder i den amerikanske stat og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten**.
@@ -48,8 +48,7 @@ Azure er fordelt blandt adskillige cloud-tjenester. Som standard har lejere till
 * USGov Texas
 * USGov Arizona
 
-IP-pladser er tilgængelige i den offentlige cloud, men for government cloud-tjenesten, skal du oprette en anmodning om support i Azure for at bede om IP-områderne for ovenstående datacentre. 
-
+Pladserne for IP-adresse er tilgængelige i det offentlige cloudmiljø. Du kan finde de nyeste oplysninger i [dokumentationen til tjenesten Azure Government](https://www.microsoft.com/download/details.aspx?id=57063) for Government Cloud.
 
 ## <a name="limitations-of-power-bi-us-government"></a>Begrænsninger for Power BI US Government
 Nogle af de funktioner, der er tilgængelige i den kommercielle version af **Power BI-tjenesten**, er *ikke* tilgængelige i **Power BI-tjenesten** til kunder i den amerikanske stat. Power BI-teamet arbejder aktivt på at gøre disse funktioner tilgængelige for kunder i den amerikanske stat og vil opdatere denne artikel, når disse funktioner bliver tilgængelige.

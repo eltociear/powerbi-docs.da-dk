@@ -1,5 +1,5 @@
 ---
-title: Udvikling af en brugerdefineret visualisering i Power BI
+title: Udvikling af en Power BI-visualisering
 description: Et selvstudium i, hvordan du udvikler en brugerdefineret visual i Power BI
 author: sranins
 ms.author: rasala
@@ -9,14 +9,14 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: d21a0ab1bada981a563e04ba26815f661664f51a
-ms.sourcegitcommit: 4ae1257c5d7b33aa2fafd91caf8b353a985c6771
+ms.openlocfilehash: 2dc1d0a316319867513dc9f25a195c3f2d1140b9
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67161229"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415427"
 ---
-# <a name="tutorial-developing-a-power-bi-custom-visual"></a>Selvstudium: Udvikling af en brugerdefineret visualisering i Power BI
+# <a name="tutorial-developing-a-power-bi-visual"></a>Selvstudium: Udvikling af en Power BI-visualisering
 
 Vi gør det nemt for udviklere at tilføje brugerdefinerede visuals i Power BI, som kan bruges i dashboards og rapporter. For at hjælpe dig i gang har vi udgivet koden til alle vores visualiseringer på GitHub.
 
@@ -31,8 +31,8 @@ I Power BI Desktop-rapporten er kortene ændret for at blive til visuals af type
 I dette selvstudium lærer du, hvordan du kan:
 > [!div class="checklist"]
 > * Opret en brugerdefineret visual i Power BI.
-> * Udvikl den brugerdefinerede visual med visuelle D3-elementer.
-> * Konfigurer databinding med visuelle elementer.
+> * Udvikl den brugerdefinerede visualiseringer med visuelle D3-elementer.
+> * Konfigurer databinding med visualiseringer.
 > * Formatér dataværdier.
 
 ## <a name="prerequisites"></a>Forudsætninger
@@ -79,35 +79,35 @@ Nu skal du installere pakken **pbiviz**.
     pbiviz --install-cert
     ```
 
-  Den returnerer et resultat, der opretter et *adgangsudtryk*. I dette tilfælde er *adgangsudtrykket* **_15105661266553327_** , og det starter guiden Import.
+    Den returnerer et resultat, der opretter et *adgangsudtryk*. I dette tilfælde er *adgangsudtrykket* **_15105661266553327_** . Guiden til import af certifikatet startes også.
 
-  ![Certifikat oprettet via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
+    ![Certifikat oprettet via PowerShell](media/custom-visual-develop-tutorial/cert-create.png)
 
-3. I guiden til import af certifikatet skal du bekræfte, at lagerplaceringen er angivet til den aktuelle bruger. Vælg derefter *Næste*.
+2. I guiden til import af certifikatet skal du bekræfte, at lagerplaceringen er angivet til den aktuelle bruger. Vælg derefter *Næste*.
 
       ![Installation af certifikat](media/custom-visual-develop-tutorial/install-cert-PowerShell.png)
 
-4. I trinnet **Fil, der skal importeres** skal du vælge *Næste*.
+3. I trinnet **Fil, der skal importeres** skal du vælge *Næste*.
 
-5. I trinnet **Beskyttelse af privat nøgle** skal du indsætte det adgangsudtryk, du modtog, da du oprettede certifikatet, i feltet Adgangskode.  Igen i dette tilfælde er det **_15105661266553327_** .
+4. I trinnet **Beskyttelse af privat nøgle** skal du indsætte det adgangsudtryk, du modtog, da du oprettede certifikatet, i feltet Adgangskode.  Igen i dette tilfælde er det **_15105661266553327_** .
 
       ![Kopiér adgangsudtryk](media/custom-visual-develop-tutorial/cert-install-wizard-show-passphrase.png)
 
-6. I trinnet **Certifikatlager** skal du vælge indstillingen **Placer alle certifikater i følgende lager**. Vælg derefter *Gennemse*.
+5. I trinnet **Certifikatlager** skal du vælge indstillingen **Placer alle certifikater i følgende lager**. Vælg derefter *Gennemse*.
 
       ![Alle certifikater i følgende lager](media/custom-visual-develop-tutorial/all-certs-in-the-following-store.png)
 
-7. Vælg **Nøglecentre, der er tillid til** i vinduet **Vælg certifikatlager**, og vælg derefter *OK*. Vælg derefter *Næste* på skærmen **Certifikatlager**.
+6. Vælg **Nøglecentre, der er tillid til** i vinduet **Vælg certifikatlager**, og vælg derefter *OK*. Vælg derefter *Næste* på skærmen **Certifikatlager**.
 
       ![Rodcertifikat, der er tillid til](media/custom-visual-develop-tutorial/trusted-root-cert.png)
 
-8. Fuldfør importen ved at vælge **Udfør**.
+7. Fuldfør importen ved at vælge **Udfør**.
 
-9. Hvis du modtager en sikkerhedsadvarsel, skal du vælge **Ja**.
+8. Hvis du modtager en sikkerhedsadvarsel, skal du vælge **Ja**.
 
     ![Sikkerhedsadvarsel](media/custom-visual-develop-tutorial/cert-security-warning.png)
 
-10. Når du får besked om, at importen er fuldført, skal du vælge **OK**.
+9. Når du får besked om, at importen er fuldført, skal du vælge **OK**.
 
     ![Certifikatet er importeret](media/custom-visual-develop-tutorial/cert-import-successful.png)
 
@@ -255,7 +255,7 @@ I dette afsnit tester vi den brugerdefinerede visual CircleCard ved at overføre
     > [!Note]
     > Denne visualisering repræsenterer den brugerdefinerede visual, som du har startet på din computer. Den er kun tilgængelig, når udviklerindstillingerne er blevet aktiveret.
 
-6. Bemærk, at en visualisering er føjet til rapportcanvasset.
+6. Bemærk, at en visualisering er føjet til rapportlærredet.
 
     ![Ny visual](media/custom-visual-develop-tutorial/new-visual-in-report.png)
 
@@ -272,7 +272,7 @@ I dette afsnit tester vi den brugerdefinerede visual CircleCard ved at overføre
 
 Hvis den brugerdefinerede visual ikke længere skal køre i PowerShell, skal du trykke på Ctrl + C. Når du bliver bedt om at afslutte batchjobbet, skal du trykke på Y og derefter trykke på Enter.
 
-## <a name="adding-visual-elements"></a>Tilføj visuelle elementer
+## <a name="adding-visual-elements"></a>Tilføj visualiseringer
 
 Nu skal du installere **JavaScript-biblioteket D3**. D3 er et JavaScript-bibliotek til oprettelse af dynamiske, interaktive datavisualiseringer i webbrowsere. Det bruger SVG HTML5 og CSS-standarder, der er implementeret i vid udstrækning.
 
@@ -326,7 +326,7 @@ Nu kan du udvikle den brugerdefinerede visual til at vise en cirkel med tekst.
 
 8. Gem ændringerne af filen **pbiviz.json**.
 
-### <a name="developing-the-visual-elements"></a>Udvikling af visuelle elementer
+### <a name="developing-the-visual-elements"></a>Udvikling af visualiseringer
 
 Nu kan vi undersøge, hvordan du kan udvikle den brugerdefinerede visual for at få vist en cirkel og eksempeltekst.
 
@@ -437,7 +437,7 @@ Nu kan vi undersøge, hvordan du kan udvikle den brugerdefinerede visual for at 
      .style("font-size", fontSizeLabel + "px");
     ```
 
-    *Denne kode angiver bredden og højden af visualen og initialiserer derefter attributterne og typografierne for de visuelle elementer.*
+    *Denne kode angiver bredden og højden af visualen og initialiserer derefter attributterne og typografierne for visualiseringerne.*
 
 6. Gem filen **visual.ts**.
 
@@ -472,9 +472,9 @@ Nu kan vi undersøge, hvordan du kan udvikle den brugerdefinerede visual for at 
 
     Bemærk, at cirklen og tekstværdien skaleres, så det passer til den tilgængelige dimension af visualen.
 
-    Opdateringsmetoden kaldes løbende i forbindelse med ændring af størrelsen på visualen, og det resulterer i glidende tilpasning af visuelle elementer.
+    Opdateringsmetoden kaldes løbende i forbindelse med ændring af størrelsen på visualen, og det resulterer i glidende tilpasning af visualiseringer.
 
-    Nu har du udviklet visuelle elementer.
+    Nu har du udviklet visualiseringer.
 
 6. Fortsæt med at køre visualen.
 

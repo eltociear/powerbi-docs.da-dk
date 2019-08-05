@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 96939c3ad29418ad868175dfd8093847ab427187
-ms.sourcegitcommit: 63a697c67e1ee37e47b21047e17206e85db64586
+ms.openlocfilehash: d1a057f56237a0609f3330d4728c7dfcded84a71
+ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67498961"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68391131"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Medbring dine egne krypteringsnøgler til Power BI (prøveversion)
 
@@ -45,6 +45,9 @@ I vejledningen i dette afsnit antages det, at du har grundlæggende viden om Azu
 
 1. Opret en RSA-nøgle med en længde på 4096-bit (eller brug en eksisterende nøgle af denne type) med tilladelse til ombrydning og fjernelse af ombrydning.
 
+    > [!IMPORTANT]
+    > Power BI BYOK understøtter kun RSA-nøgler med en længde på 4096-bit.
+
 1. Anbefalet: Kontrollér, at din key vault har indstillingen til _blød sletning_ aktiveret.
 
 ### <a name="add-the-service-principal"></a>Tilføj tjenesteprincipalen
@@ -52,6 +55,9 @@ I vejledningen i dette afsnit antages det, at du har grundlæggende viden om Azu
 1. Under **Adgangspolitikker** i din key vault i Microsoft Azure-portal skal du vælge **Tilføj ny**.
 
 1. Søge efter og vælg Microsoft.Azure.AnalysisServices under **Vælg principal**.
+
+    > [!NOTE]
+    > Hvis du ikke kan finde "Microsoft.Azure.AnalysisServices", skyldes det sandsynligvis, at det Azure-abonnement, der er tilknyttet din Azure Key Vault, aldrig har haft en Power BI-ressource tilknyttet. Prøv i stedet at søge efter følgende streng: 00000009-0000-0000-c000-000000000000.
 
 1. Under **Key permissions** (Nøgletilladelser) skal du vælge **Unwrap Key** (Fjern ombrydning af nøgle) og **Wrap Key** (Ombryd nøgle).
 

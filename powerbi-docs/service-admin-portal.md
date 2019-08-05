@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/27/2019
+ms.date: 07/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: a871a7475dd8282f9ce63646c371182548504357
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 751bcb5ee3b383853f0087bab406d59a2271b588
+ms.sourcegitcommit: 4595a6231615d253aead315cb3f85472e2f189e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67568117"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68501767"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -133,7 +133,7 @@ Hvis du vil bruge overvågningslogs, skal du sørge for, at indstillingen [**Opr
 
 Fanen **Lejerindstillinger** giver dig detaljeret kontrol over de funktioner, der er til rådighed for din organisation. Hvis du har bekymringer om følsomme data, kan det være, at nogle af vores funktioner ikke er passende for din organisation, eller du vil måske kun have, at en bestemt funktion er tilgængelig for en bestemt gruppe.
 
-På følgende billede ses de første to afsnit på fanen **Lejerindstillinger**.
+På følgende billede ses flere indstillinger under fanen **Lejerindstillinger**.
 
 ![Lejerindstillinger](media/service-admin-portal/powerbi-admin-tenant-settings.png)
 
@@ -169,6 +169,10 @@ De næste par afsnit giver et overblik over de forskellige typer af lejerindstil
 Brugere i organisationen kan gå til interne hjælp- og supportressourcer i Power BI-menuen Hjælp. Funktionaliteten for disse parametre ændres specifikt for menupunkterne Lær, Community og Få hjælp.
 
 Det er også muligt at angive en URL-adresse for at dirigere brugere til en brugerdefineret løsning for licensanmodninger. Denne parameter tilpasser destinations-URL-adressen for knappen Opgrader konto, som en bruger uden en Power BI Pro-licens kan finde i dialogboksen Opdater til Power BI Pro og på siden Administrer personligt lager.
+
+### <a name="receive-email-notifications-for-service-outages-or-incidents"></a>Modtag mails ved tjenesteafbrydelser eller -hændelser
+
+Mailaktiverede sikkerhedsgrupper modtager mails, hvis lejeren påvirkes af en tjenesteafbrydelse eller -hændelse. Få mere at vide om [Meddelelser om tjenesteafbrydelser](service-interruption-notifications.md).
 
 ## <a name="workspace-settings"></a>Indstillinger for arbejdsområde
 
@@ -347,7 +351,7 @@ En værdi på 0 (decimal) deaktiverer brugen af ikke-certificerede brugerdefiner
 
 ### <a name="interact-with-and-share-r-visuals"></a>Interager med og del R-visualiseringer
 
-Brugere i virksomheden kan interagere med og dele visuelle elementer oprettet med R-scripts. [Få mere at vide](visuals/service-r-visuals.md)
+Brugere i virksomheden kan interagere med og dele visualiseringer oprettet med R-scripts. [Få mere at vide](visuals/service-r-visuals.md)
 
 > [!NOTE]
 > Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.

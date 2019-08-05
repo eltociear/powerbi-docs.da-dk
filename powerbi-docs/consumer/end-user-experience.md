@@ -12,16 +12,16 @@ ms.topic: quickstart
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 86c8297c9a55f2b59e7c01390ff15bb3b2d4bf2e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: af7f2f0ca5407694b13f0b053ff347f883c8c983
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61048916"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523036"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Hurtig introduktion – Navigation i Power BI-tjenesten
 
-Nu, hvor du kender de grundlæggende funktioner i Power BI, kan vi kigge på **Power BI-tjenesten**. Som tidligere nævnt kan en bruger i dit team bruge al sin tid i **Power BI Desktop** på at kombinere data og oprette rapporter for andre. Mens du på den anden side kan bruge al din tid i Power BI-tjenesten på at se og interagere med indhold, der er oprettet af andre (**brugs**oplevelse). I denne hurtige introduktion skal du importere eksempeldata og bruge disse data til at få mere at vide om Power BI-tjenesten. 
+Nu, hvor du kender de grundlæggende funktioner i Power BI, kan vi kigge på **Power BI-tjenesten**. Som tidligere nævnt kan en person i dit team måske bruge al sin tid i **Power BI Desktop** på at kombinere data og oprette rapporter for andre. Mens du på den anden side kan bruge al din tid i Power BI-tjenesten på at se og interagere med indhold, der er oprettet af andre (**brugs**oplevelse). I denne hurtige introduktion skal du importere eksempeldata og bruge disse data til at få mere at vide om Power BI-tjenesten. 
  
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -61,7 +61,7 @@ Hvis du er ny bruger, kan du kun se ét arbejdsområde – **Mit arbejdsområde*
 
 ![kort video om arbejdsområde](./media/end-user-experience/nav.gif)
 
-Under disse faner (dvs. *indholdsvisninger*) får du vist oplysninger om indhold samt handlinger, som du kan udføre med dette indhold.  Fra fanen Dashboards kan du f.eks. åbne et dashboard, dele, slette, søge, sortere og meget mere.
+Under disse faner (som også kaldes *indholdsvisninger*) får du vist oplysninger om indhold samt handlinger, du kan udføre med dette indhold.  Fra fanen Dashboards kan du f.eks. åbne et dashboard, dele, slette, søge, sortere og meget mere.
 
 ![Fanen Dashboards](./media/end-user-experience/power-bi-dashboard-tab.png)
 

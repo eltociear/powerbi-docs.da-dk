@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.author: mblythe
-ms.openlocfilehash: 0bb78e29cc3e9b9792d5916050179703281aa01a
-ms.sourcegitcommit: 850e7883e21190151684e32f4d957beecd08e959
+ms.openlocfilehash: a33ace000917311cbd060c853e0122034a396ae2
+ms.sourcegitcommit: 4595a6231615d253aead315cb3f85472e2f189e6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "68366743"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68501739"
 ---
 # <a name="service-interruption-notifications"></a>Meddelelser om tjenesteafbrydelser
 
@@ -28,10 +28,10 @@ På nuværende tidspunkt sender vi mails for følgende _pålidelighedsscenarier_
 - Pålidelighed af opdatering af model
 - Pålidelighed af opdatering af forespørgsel
 
-Når en hændelse er løst, modtager du en opfølgningsmail.
+Eksempler på disse meddelelser omfatter, når brugerne oplever en længere forsinkelse i driften, f.eks. åbning af rapporter, opdatering af datasæt eller udførelse af forespørgsler. Når en hændelse er løst, modtager du en opfølgningsmail.
 
 > [!NOTE]
-> Denne funktion er i øjeblikket kun tilgængelig for dedikerede kapaciteter i Power BI Premium. Den er ikke tilgængelig for delt kapacitet.
+> Denne funktion er i øjeblikket kun tilgængelig for dedikerede kapaciteter i Power BI Premium. Den er ikke tilgængelig til delt eller integreret kapacitet.
 
 ## <a name="enable-notifications"></a>Aktivér meddelelser
 

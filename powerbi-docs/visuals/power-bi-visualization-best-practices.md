@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7d716c79146a0d53d261dba514aacb8787ca2fa3
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: 53a8847f96d6aa3143e91cab07029a8e0f6afc85
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67300193"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523730"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Bedste praksis for design af rapporter og visuals
 
@@ -93,7 +93,7 @@ Ovenstående eksempel har mange pladsrelaterede (layoutmæssige) designproblemer
 
 Layoutet for dine rapportelementer påvirker læserens forståelse og guider læseren gennem rapportsiden. Måden hvorpå du anbringer og positionerer elementer, fortæller en historie. Historien kunne være "start her, og se derefter her" eller "disse tre elementer er relateret til hinanden".
 
-* I mange kulturer scanner folk fra venstre mod højre og oppefra og ned. Placer det vigtigste element i øverste venstre hjørne af rapporten. Organiser resten af de visuelle elementer på en måde, der fører til en logisk navigation og forståelse af oplysningerne.
+* I mange kulturer scanner folk fra venstre mod højre og oppefra og ned. Placer det vigtigste element i øverste venstre hjørne af rapporten. Organiser resten af visualiseringerne på en måde, der fører til en logisk navigation og forståelse af oplysningerne.
 
 * Anbring elementer, der kræver, at læseren træffer et valg, til venstre for de visualiseringer, valget påvirker: f.eks. udsnit.
 
@@ -107,7 +107,7 @@ Layoutet for dine rapportelementer påvirker læserens forståelse og guider læ
 
 * Vær bevidst om størrelsen af dine rapportelementer. Lad ikke den tilgængelige plads bestemme størrelsen på en visualisering.
 
-* Gør vigtige elementer større end de øvrige, eller tilføj et visuelt element som f.eks en pil for at tiltrække opmærksomhed.
+* Gør vigtige elementer større end de øvrige, eller tilføj en visualisering som f.eks en pil for at tiltrække opmærksomhed.
 
 * Juster elementerne på rapportsiden enten symmetrisk eller bevidst asymmetrisk.
 
@@ -211,7 +211,7 @@ Indtast tekst i det tomme felt. Brug derefter kontrolelementerne til at angive s
 
 **Figur 9: Formatér tekstfeltet**
 
-Men lad være med at overdrive. For meget tekst på en rapport fjerner opmærksomheden fra de visuelle elementer. Hvis din rapportside kræver en hel masse tekst for at gøre den forståelig, skal du starte forfra. Kan du vælge en anden visual, der i sig selv kan fortælle en bedre historie? Kan du ændre din visuals oprindelige titel for at gøre den mere forståelig?
+Men lad være med at overdrive. For meget tekst på en rapport fjerner opmærksomheden fra visualiseringerne. Hvis din rapportside kræver en hel masse tekst for at gøre den forståelig, skal du starte forfra. Kan du vælge en anden visual, der i sig selv kan fortælle en bedre historie? Kan du ændre din visuals oprindelige titel for at gøre den mere forståelig?
 
 #### <a name="text"></a>Tekst
 
@@ -407,7 +407,7 @@ Selv når du vælger den absolut bedste visual for historien, kan du stadig have
 
 Fortæller din visual en overbevisende historie? Betyder det noget? Du skal ikke oprette visuals bare for at oprette visuals. Måske har du tænkt, at dataene ville fortælle en interessant historie, men det gør de ikke. Du skal ikke være bange for at starte forfra og prøve at finde en mere interessant historie. Måske er historien der, men den skal måles på en anden måde.
 
-Det kan f.eks. være, at du vil måle dine salgschefers resultater. Hvilken måling ville du bruge til at gøre dette? Vil du bedst kunne måle det ved at kigge på det samlede salg, den samlede fortjeneste, vækst i løbet af det seneste år eller resultat i forhold til en målsætning? Sælgeren Sally har måske den største indtjening. Hvis du viser den samlede fortjeneste efter de enkelte sælgere i et liggende søjlediagram, ville hun fremstå som en rockstjerne sammenlignet med de andre sælgere. Men hvis Sally har høje salgsomkostninger (rejseudgifter, leveringsomkostninger, produktionsomkostninger osv.), får vi ikke hele historien med ved kun at kigge på salget.
+Det kan f.eks. være, at du vil måle dine salgschefers resultater. Hvilken måling ville du bruge til at gøre dette? Vil du bedst kunne måle det ved at kigge på det samlede salg, den samlede fortjeneste, vækst i løbet af det seneste år eller resultat i forhold til en målsætning? Sælgeren Sally har måske den største indtjening. Hvis du viser den samlede fortjeneste efter de enkelte sælgere i et liggende søjlediagram, ville vedkommende fremstå som en rockstjerne sammenlignet med de andre sælgere. Men hvis Sally har høje salgsomkostninger (rejseudgifter, leveringsomkostninger, produktionsomkostninger osv.), får vi ikke hele historien med ved kun at kigge på salget.
 
 #### <a name="reflect-reality-dont-distort-reality"></a>Afspejl virkeligheden i stedet for at forvrænge den
 
@@ -526,7 +526,7 @@ Overvej, hvordan dine læsere får vist rapporten. Sørg for, at dine visuals og
 
 #### <a name="titles-and-labels-that-are-part-of-the-visualizations"></a>Titler og navne, som er en del af visualiseringerne
 
-Sørg for, at titler og navne kan læses og ikke kræver nogen forklaring. Tekst i titler og navne skal have en optimal størrelse med farver, som træder frem. Husker du vores vejledning til typografi (se [Tekst](#text) ovenfor)? Begræns antallet af farver og størrelser – for mange forskellige skriftstørrelser og farver får siden til at virke overfyldt og forvirrende. Overvej at bruge samme skriftfarve og -størrelse i titlerne på alle visuelle elementer på en rapportside. Desuden skal du vælge den samme justering for alle titler på en rapportside.
+Sørg for, at titler og navne kan læses og ikke kræver nogen forklaring. Tekst i titler og navne skal have en optimal størrelse med farver, som træder frem. Husker du vores vejledning til typografi (se [Tekst](#text) ovenfor)? Begræns antallet af farver og størrelser – for mange forskellige skriftstørrelser og farver får siden til at virke overfyldt og forvirrende. Overvej at bruge samme skriftfarve og -størrelse i titlerne på alle visualiseringer på en rapportside. Desuden skal du vælge den samme justering for alle titler på en rapportside.
 
 **Ruden Format**
 
@@ -536,7 +536,7 @@ For hver af de formateringsjusteringer, der er anført nedenfor, skal du vælge 
 
 **Figur 31: Åbn ruden Format**
 
-Vælg det visuelle element, der skal justeres, og sørg for, at det er slået **Til**. Eksempler på visuelle elementer er: **X-aksen**, **y-aksen**, **titel**, **datamærkater** og **forklaring**. I eksemplet nedenfor vises elementet **Titel**.
+Vælg det visuelle element, der skal justeres, og sørg for, at det er slået **Til**. Eksempler på visualiseringer er: **X-aksen**, **y-aksen**, **titel**, **datamærkater** og **forklaring**. I eksemplet nedenfor vises elementet **Titel**.
 
 ![Formatér en visualtitel.](media/power-bi-visualization-best-practices/power-bi-title-formatting.png)
 
@@ -600,7 +600,7 @@ En af de mest overbevisende funktioner i Power BI er muligheden for at redigere 
 
 **Figur 34: Interaktioner mellem visualiseringer**
 
-Derefter skal du for hver visual på siden overveje, om du vil have den pågældende visual til at filtrere, fremhæve eller gøre ingenting. Du kan ikke fremhæve alle visuelle elementer. Kontrolelementet til fremhævning er ikke tilgængeligt for de visualiseringer, du ikke kan fremhæve. Du kan få mere at vide i [Interaktioner mellem visualiseringer i Power BI](../consumer/end-user-interactions.md).
+Derefter skal du for hver visual på siden overveje, om du vil have den pågældende visual til at filtrere, fremhæve eller gøre ingenting. Du kan ikke fremhæve alle visualiseringer. Kontrolelementet til fremhævning er ikke tilgængeligt for de visualiseringer, du ikke kan fremhæve. Du kan få mere at vide i [Interaktioner mellem visualiseringer i Power BI](../consumer/end-user-interactions.md).
 
 > [!TIP]
 > For de læsere, der ikke har forhåndskendskab til Power BI, vil denne mulighed for at klikke og interagere med rapporter måske ikke være umiddelbart indlysende. Tilføj tekstfelter for at hjælpe dem med at forstå, hvad de kan vælge for at få yderligere indsigt.
@@ -1007,7 +1007,7 @@ Flere oplysninger om træstrukturer:
 
 Grundlæggende egner søjlediagrammer, liggende søjlediagrammer og kurvediagrammer sig til det meste. Der er bred enighed om, at mennesker kan have svært ved at tolke cirkel- og kransediagrammer korrekt. Faktisk kan de ofte forvrænge data. Undgå dem, hvor det er muligt. Stephen Few har skrevet en fremragende tekst om historien og farerne i [Save the Pies for Dessert](https://www.perceptualedge.com/articles/08-21-07.pdf).
 
-Han forklarer det ene tilfælde, hvor cirkeldiagrammer kan være nyttige, nemlig når du vil sammenligne del-helhed-relationer. Det er sjældent bedre end et 100 % stablet liggende søjlediagram.
+Stephen forklarer det ene tilfælde, hvor cirkeldiagrammer kan være nyttige, nemlig når du vil sammenligne del-helhed-relationer. Det er sjældent bedre end et 100 % stablet liggende søjlediagram.
 
 Du kan finde en anden sjov artikel (og animation) om cirkeldiagrammer på [Darkhorse Analytics-webstedet](http://www.darkhorseanalytics.com/blog/salvaging-the-pie).
 

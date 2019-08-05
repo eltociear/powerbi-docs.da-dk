@@ -12,15 +12,15 @@ ms.topic: tutorial
 ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: cd92374a23a2ee7023c75cfb2612c00d513e9895
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 64da077e079ca3df11ce2a89da546e24865eaf0e
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61065647"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522899"
 ---
 # <a name="tutorial-set-data-alerts-in-power-bi-service"></a>Selvstudium: Indstil databeskeder i Power BI-tjenesten
-Angiv beskeder, så du får besked, når dataene på dine dashboards ændres ud over de grænser, du har angivet. 
+Angiv beskeder, så du får besked, når dataene på dine dashboards ændres ud over de grænser, du har angivet.  
 
 Du kan angive beskeder for felter, hvis du har en Power BI Pro-licens, eller hvis et dashboard er blevet delt med dig fra en [Premium-kapacitet](../service-premium-what-is.md). Der kan kun angives beskeder på felter, der er fastgjort via rapportvisualiseringer, og kun på målere, KPI'er og kort. Beskeder kan angives på visualiseringer, der oprettes ud fra streamingdatasæt, der er fastgjort på et dashboard via en rapport, men de kan ikke angives på streamingfelter, der er oprettet direkte på dashboardet ved hjælp af **Tilføj felt** > **Brugerdefinerede streamingdata**. 
 
@@ -44,7 +44,7 @@ Denne artikel omhandler følgende:
 Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
 
 ## <a name="set-data-alerts-in-power-bi-service"></a>Indstil databeskeder i Power BI-tjenesten
-Se, hvordan Amanda føjer nogle beskeder til felterne på sit dashboard. Følg derefter den trinvise vejledning under videoen for at prøve det selv.
+Se, hvordan Amanda føjer nogle beskeder til felterne på dashboardet. Følg derefter den trinvise vejledning under videoen for at prøve det selv.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JbL2-HJ8clE" frameborder="0" allowfullscreen></iframe>
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: d001c75d006838f46ce40a8f81bad0a9a058b148
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: 86a3faf2095ff5100bc372a68b7d56861eb94806
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299429"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523343"
 ---
 # <a name="export-data-from-visualizations"></a>Eksportér data fra visualiseringer
 
@@ -150,9 +150,9 @@ Disse begrænsninger og overvejelser gælder for Power BI Desktop og Power BI-tj
 
 - Hvis du vil eksportere dataene fra en visualisering, skal du have [tilladelse til at oprette for det underliggende datasæt](https://docs.microsoft.com/power-bi/service-datasets-build-permissions#build-permissions-for-shared-datasets).
 
--  Det maksimale antal rækker, som **Power BI Desktop** og **Power BI-tjenesten** kan eksportere til en *.csv*-fil, er 30.000.
+-  Det maksimale antal rækker, som **Power BI Desktop** og **Power BI-tjenesten** kan eksportere fra en **rapport for importtilstand** til en *.csv-fil* er 30.000.
 
-- Det maksimale antal rækker, som programmerne kan eksportere til en *.xlsx*-fil, er 150.000.
+- Det maksimale antal rækker, som programmerne kan eksportere fra en **rapport for importtilstand** til en *.xlsx-fil* er 150.000.
 
 - Eksport ved hjælp af *underliggende data* fungerer ikke, hvis:
 
@@ -166,7 +166,7 @@ Disse begrænsninger og overvejelser gælder for Power BI Desktop og Power BI-tj
 
 - Eksport ved hjælp af *underliggende data* fungerer ikke, hvis du aktiverer indstillingen *Vis elementer uden data* for den visualisering, som Power BI eksporterer.
 
-- Når du bruger DirectQuery, er den maksimale datamængde, som Power BI kan eksportere, 16 MB. Det kan være et utilsigtet resultat, hvis du eksporterer mindre end det maksimale antal rækker. Dette er sandsynligt, hvis:
+- Når du bruger DirectQuery, kan Power BI maks. eksportere 16 MB dekomprimerede data. Det kan være et utilsigtet resultat, hvis du eksporterer mindre end det maksimale antal rækker. Dette er sandsynligt, hvis:
 
     - Der er mange kolonner.
 

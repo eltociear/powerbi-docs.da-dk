@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 4395884dfbc7ef5ebfb0df34e416d69ee553ebd3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d46fa8be055186d2430ca4d3c387fae93b91acc3
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514147"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523202"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Målinger i Power BI Desktop
 
@@ -41,21 +41,21 @@ Målinger beregner et resultat af en udtryksformel. Når du opretter dine egne m
 DAX-formler ligner Excel-formler meget. DAX har oven i købet mange af de samme funktioner, du kender fra Excel, f.eks. DATO, SUM og VENSTRE. Men funktionerne i DAX er beregnet til at arbejde med relationsdata, som vi har i Power BI Desktop.
 
 ## <a name="lets-look-at-an-example"></a>Lad os se på et eksempel
-Jane er salgschef hos Contoso. Hun er blevet bedt om at angive projektioner for forhandlersalg for det kommende regnskabsår. Jane beslutter sig for at basere sine estimater på sidste års salgsbeløb med en årlig stigning på 6 % som følge af forskellige kampagner, der er planlagt for de næste seks måneder.
+Jane er salgschef hos Contoso. Jane er blevet bedt om at angive projektioner for forhandlersalg for det kommende regnskabsår. Jane beslutter sig for at basere sine estimater på sidste års salgsbeløb med en årlig stigning på 6 % som følge af forskellige kampagner, der er planlagt for de næste seks måneder.
 
-For at rapportere estimaterne importerer hun sidste års salgsdata i Power BI Desktop. Hun finder feltet Salgsbeløb i tabellen Forhandlersalg. Eftersom de importerede data kun indeholder beløb for sidste år, omdøber hun feltet Salgsbeløb til Sidste års salg. Hun trækker derefter Sidste års salg til rapportcanvassen. I en diagramvisualisering ser det ud som en enkelt værdi, der er summen af alle forhandlersalg fra sidste år.
+For at rapportere estimaterne importerer hun sidste års salgsdata i Power BI Desktop. Jane finder feltet Salgsbeløb i tabellen Forhandlersalg. Eftersom de importerede data kun indeholder beløb for sidste år, omdøber hun feltet Salgsbeløb til Sidste års salg. Jane trækker derefter Sidste års salg til rapportlærredet. I en diagramvisualisering ser det ud som en enkelt værdi, der er summen af alle forhandlersalg fra sidste år.
 
-Hun bemærker, at selvom hun ikke selv har angivet en beregning, er der angivet en automatisk. I Power BI Desktop er der automatisk blevet oprettet en måling, der summerer alle værdierne i Sidste års salg.
+Jane bemærker, at selvom hun ikke har angivet en beregning, er der angivet en automatisk. I Power BI Desktop er der automatisk blevet oprettet en måling, der summerer alle værdierne i Sidste års salg.
 
-Men Jane har brug for en måling til at beregne salgsprojektioner for det kommende år, som er baseret på sidste års salg ganget med 1,06 for at indregne den forventede stigning på 6 %. Hun opretter sin egen måling til denne beregning. Ved hjælp af funktionen Ny måling opretter hun en ny måling og angiver derefter følgende DAX-formel:
+Men Jane har brug for en måling til at beregne salgsprojektioner for det kommende år, som er baseret på sidste års salg ganget med 1,06 for at indregne den forventede stigning på 6 %. Jane opretter sin egen måling til denne beregning. Ved hjælp af funktionen Ny måling opretter hun en ny måling og angiver derefter følgende DAX-formel:
 
     Projected Sales = SUM('Sales'[Last Years Sales])*1.06
 
-Derefter trækker Jane den ny måling Projekteret salg til diagrammet.
+Derefter trækker Jane den nye måling Projekteret salg til diagrammet.
 
 ![](media/desktop-measures/measuresinpbid_lastyearsales.png)
 
-Jane har nu hurtigt og med en minimal indsats en måling til at beregne det projekterede salg. Hun kan analysere sine projektioner yderligere ved at filtrere efter bestemte forhandlere eller ved at føje andre felter til sin rapport.
+Jane har nu hurtigt og med en minimal indsats en måling til at beregne det projekterede salg. Jane kan analysere sine projektioner yderligere ved at filtrere efter bestemte forhandlere eller ved at føje andre felter til sin rapport.
 
 ## <a name="data-categories-for-measures"></a>Datakategorier til målinger
 

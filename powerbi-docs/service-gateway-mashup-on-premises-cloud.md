@@ -10,21 +10,21 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 39f5a01a396e45207777b1a5e58e73808ddf3f88
-ms.sourcegitcommit: a58461fe7dfa65c751490b52de5fc73f8e69a17f
+ms.openlocfilehash: 1a2415ba840a1b88f4c7a215a520d0cc88f70e49
+ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68352186"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68462239"
 ---
 # <a name="merge-or-append-on-premises-and-cloud-data-sources"></a>Flet eller tilføj datakilder i det lokale miljø og i clouden
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Med datagatewayen i det lokale miljø kan du flette eller tilføje datakilder i det lokale miljø eller cloudmiljøet i samme forespørgsel. Dette er nyttigt, når du vil kombinere data fra flere kilder uden at bruge separate forespørgsler.
+Du kan bruge datagatewayen i det lokale miljø til at flette eller tilføje datakilder i det lokale miljø og cloudmiljøet i samme forespørgsel. Denne løsning er nyttig, når du vil kombinere data fra flere kilder uden at bruge separate forespørgsler.
 
 >[!NOTE]
->Denne artikel gælder kun for datasæt, der har datakilder i cloudmiljøet og det lokale miljø, som er flettet eller tilføjet i en enkelt forespørgsel. I forbindelse med datasæt, som indeholder separate forespørgsler – én, der opretter forbindelse til datakilder i det lokale miljø, og en anden, der opretter forbindelse til datakilder i cloudmiljøet – udføres forespørgslen, der bruger datakilden i cloudmiljøet, ikke ved hjælp af gatewayen.
+>Denne artikel gælder kun for datasæt, der har datakilder i cloudmiljøet og det lokale miljø, som er flettet eller tilføjet i en enkelt forespørgsel. I forbindelse med datasæt, som indeholder separate forespørgsler – én, der opretter forbindelse til en datakilde i det lokale miljø, og en anden, der opretter forbindelse til en datakilde i cloudmiljøet – udfører gatewayen ikke forespørgslen for datakilden i cloudmiljøet.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -51,14 +51,13 @@ Med datagatewayen i det lokale miljø kan du flette eller tilføje datakilder i 
 6. På siden **Datasætindstillinger** for det nye datasæt:
 
    - For kilden i det lokale miljø skal du vælge den gateway, der er knyttet til datakilden.
-
    - Under **Legitimationsoplysninger for datakilde** skal du redigere legitimationsoplysningerne for datakilden efter behov.
 
     Sørg for, at niveauet for beskyttelse af personlige oplysninger for datakilder både i cloudmiljøet og i det lokale miljø er angivet korrekt for at sikre, at joinforbindelserne håndteres sikkert.
 
      ![Indstillinger for datasæt](media/service-gateway-mashup-on-premises-cloud/dataset-settings.png)
 
-7. Med cloudlegitimationsoplysningerne kan du nu opdatere datasættet ved hjælp af **Opdater nu**, eller du kan planlægge at opdatere med jævne mellemrum.
+7. Når du har angivet cloudlegitimationsoplysningerne, kan du nu opdatere datasættet ved hjælp indstillingen **Opdater nu**. Du kan også vælge at planlægge, at det skal opdateres regelsmæssigt.
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: c7a2b3580516c563d8a2a6d79fdc48d241e89849
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 805e052a2d5b493705c604d1817fc03c0a8b5376
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239860"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68522210"
 ---
 # <a name="using-calculated-columns-in-power-bi-desktop"></a>Brug beregnede kolonner i Power BI Desktop
 Med beregnede kolonner kan du føje nye data til en tabel, der allerede findes i din model. Men i stedet for at forespørge efter og indlæse værdier i din nye kolonne fra en datakilde kan du oprette en DAX-formel (Data Analysis Expressions), der definerer værdierne i kolonnen. I Power BI Desktop oprettes der beregnede kolonner ved hjælp af funktionen Ny kolonne i rapportvisningen.
@@ -30,24 +30,24 @@ Beregnede kolonner beregner resultater ved hjælp af [Data Analysis Expressions]
 
 DAX-formler ligner Excel-formler. Faktisk har DAX mange af de samme funktioner som Excel. Men DAX-funktioner er udviklet til at arbejde via data, der opdeles eller filtreres interaktivt i en rapport som i Power BI Desktop. I modsætning til Excel, hvor du kan have en forskellig formel for hver række i en tabel, er det sådan, at når du opretter en DAX-formel for en ny kolonne, beregner den et resultat for alle rækker i tabellen. Kolonneværdier genberegnes efter behov, f.eks. når de underliggende data opdateres, og værdier er ændret.
 
-## <a name="lets-look-at-an-example"></a>Lad os tage et kig på et eksempel
-Jeff er shipping manager hos Contoso. Han vil gerne oprette en rapport, der viser antallet af forsendelser til diverse byer. Han har tabellen Geography med separate felter for by og stat. Men Jeff ønsker, at rapporten skal vise City, State som en enkelt værdi på samme række. Jeffs tabel Geography indeholder i øjeblikket ikke det ønskede felt.
+## <a name="lets-look-at-an-example"></a>Lad os se på et eksempel
+Jeff er shipping manager ved Contoso og vil gerne oprette en rapport, der viser antallet af forsendelser til diverse byer. Jeff har tabellen Geography med separate felter for by og stat. Men Jeff vil gerne have, at rapporten skal vise City, State som en enkelt værdi på samme række. Jeffs Geography-tabel indeholder i øjeblikket ikke det ønskede felt.
 
 ![](media/desktop-calculated-columns/calccolinpbid_cityandstatefields.png)
 
-Men med en beregnet kolonne kan Jeff ganske enkelt samle, eller sammenkæde, byerne fra kolonnen City med staterne fra kolonnen State.
+Men med en beregnet kolonne kan Jeff samle, eller sammenkæde, byerne fra kolonnen City med staterne fra kolonnen State.
 
-Jeff højreklikker på tabellen Geography og klikker derefter på Ny kolonne. Derefter indtaster han følgende DAX-formel i formellinjen:
+Jeff højreklikker på tabellen Geography og klikker derefter på Ny kolonne. Derefter indtaster Jeff følgende DAX-formel i formellinjen:
 
 ![](media/desktop-calculated-columns/calccolinpbid_formula.png)
 
 Denne formel opretter ganske enkelt en ny kolonne, der hedder CityState, og for hver række i tabellen Geography henter den værdier fra kolonnen City, tilføjer et komma og et mellemrum og sammenkæder derefter værdierne fra kolonnen State.
 
-Nu har Jeff det felt, han ønsker.
+Jeff har nu det ønskede felt.
 
 ![](media/desktop-calculated-columns/calccolinpbid_citystatefield.png)
 
-Han kan føje det til sit rapportlærred sammen med antallet af forsendelser. Jeff har nu meget hurtigt og uden det store arbejde et felt af typen City, State, som han kan føje til stort set alle visualiseringstyper. Jeff ser, at når han opretter en kortvisualisering, ved Power BI Desktop tilmed, hvordan værdierne for City, State i hans nye kolonne skal læses.
+Jeff kan føje det til sit rapportlærred sammen med antallet af forsendelser. Jeff har nu meget hurtigt og med minimal indsats et felt af typen City, State, som kan føjes til stort set alle visualiseringstyper. Jeff ser, at når der oprettes en kortvisualisering, ved Power BI Desktop allerede, hvordan værdierne for City, State i den nye kolonne skal læses.
 
 ![](media/desktop-calculated-columns/calccolinpbid_citystatemap.png)
 

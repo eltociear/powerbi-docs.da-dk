@@ -1,6 +1,6 @@
 ---
 title: Opret en rapport ud fra et datasæt
-description: Opret en Power BI-rapport fra et datasæt.
+description: Opret en Power BI-rapport ud fra et datasæt.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -10,27 +10,27 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 6b69c2b1fa811d395a26403de852c44af33491c7
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f2d9046c907b78ce2c1bb2754007c34199877a08
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770221"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523068"
 ---
 # <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Opret en rapport i Power BI-tjenesten ved at importere et datasæt
-Du har læst [Rapporter i Power BI](consumer/end-user-reports.md), og nu vil du oprette din egen. Der er forskellige måder at oprette en rapport. I denne artikel bruger starter vi ved at oprette en grundlæggende rapport i Power BI-tjenesten fra et Excel-datasæt. Når du har forstået de grundlæggende funktioner til oprettelse af en rapport, kan du se nærmere på [næste trin](#next-steps) sidst for mere avancerede rapportemner.  
+Du har læst [Rapporter i Power BI](consumer/end-user-reports.md), og nu vil du oprette din egen. Der er forskellige måder at oprette en rapport på. I denne artikel starter vi med at oprette en grundlæggende rapport i Power BI-tjenesten ud fra et Excel-datasæt. Når du har forstået de grundlæggende ting i forbindelse med at oprette en rapport, skal du se de [Næste trin](#next-steps) nederst for at se mere avancerede rapportemner.  
 
 ## <a name="prerequisites"></a>Forudsætninger
-- [Tilmeld dig Power BI-tjenesten](service-self-service-signup-for-power-bi.md). Til at oprette rapporter ved hjælp af Power BI Desktop, kan du se [Desktop rapportvisning](desktop-report-view.md). 
-- [Download Excel-datasættet Retail Analysis sample](http://go.microsoft.com/fwlink/?LinkId=529778) og gemme det på OneDrive for Business eller lokalt.
+- [Tilmeld dig Power BI-tjenesten](service-self-service-signup-for-power-bi.md). Se [Desktop-rapportvisning](desktop-report-view.md) for at se, hvordan du opretter rapporter ved hjælp af Power BI Desktop. 
+- [Download Excel-datasættet med Retail Analysis-eksemplet](http://go.microsoft.com/fwlink/?LinkId=529778), og gem det i OneDrive for Business eller lokalt.
 
 ## <a name="import-the-dataset"></a>Importér datasættet
-Denne metode til oprettelse af en rapport starter med et datasæt og et tomt rapportlærred. Du kan følge med i Excel-datasættet Retail Analysis sample.
+Denne metode til oprettelse af en rapport starter med et datasæt og et tomt rapportlærred. Du kan følge med ved at se Excel-datasættet med Retail Analysis-eksemplet.
 
-1. Vi skal oprette rapporten i et arbejdsområde i Power BI-tjenesten, så Vælg et eksisterende arbejdsområde eller Opret et én.
+1. Vi opretter rapporten i et arbejdsområde i Power BI-tjenesten, så vælg et eksisterende arbejdsområde eller opret et.
    
    ![liste over apparbejdsområder](media/service-report-create-new/power-bi-workspaces2.png)
-2. Nederst i venstre navigationsrude, skal du vælge **Hent data**.
+2. Vælg **Hent data** nederst i venstre navigationsrude.
    
    ![Hent data](media/service-report-create-new/power-bi-get-data3.png)
 3. Vælg **Filer**, og naviger til den placering, hvor du har gemt Retail Analysis-eksemplet.
@@ -47,7 +47,7 @@ Denne metode til oprettelse af en rapport starter med et datasæt og et tomt rap
    ![rapporteditor](media/service-report-create-new/power-bi-blank-report.png)
 
 > [!TIP]
-> Hvis du ikke er fortrolig med lærredet til redigering af rapporten, eller du skal få det genopfrisket, [få en præsentation af rapporteditoren](service-the-report-editor-take-a-tour.md) før du fortsætter. > 
+> Hvis du ikke kender til lærredet til redigering af rapporten, eller hvis du har brug for at få det genopfrisket, kan du [få en introduktion til rapporteditoren](service-the-report-editor-take-a-tour.md), før du fortsætter. 
 > 
 
 ## <a name="add-a-radial-gauge-to-the-report"></a>Føj en radial måler til rapporten
@@ -62,12 +62,12 @@ Nu hvor vores datasæt er blevet importeret, så lad os komme i gang med at besv
 3. Træk **Sales** > **This Year Sales** > **Goal** til feltet **Target value**. Det ser ud til, at vi er meget tæt på vores mål.
    
     ![Målervisualiseringer med Mål som Målværdi](media/service-report-create-new/power-bi-report-step3.png)
-4. Nu vil være et godt tidspunkt at gemme din rapport.
+4. Det er nu en god idé at gemme rapporten.
    
    ![Filmenu](media/service-report-create-new/powerbi-save.png)
 
 ## <a name="add-an-area-chart-and-slicer-to-the-report"></a>Tilføj et områdediagram og et udsnit i rapporten
-Vores marketingchef har nogle yderligere spørgsmål, vi skal besvare. Hun vil gerne vide, hvordan salget i år er i sammenligning med sidste år. Og hun vil gerne have vist resultaterne efter område.
+Vores marketingchef har nogle yderligere spørgsmål, vi skal besvare. Vedkommende vil gerne vide, hvordan salget i år er sammenlignet med sidste år. Og vedkommende vil gerne have vist resultaterne efter område.
 
 1. Vi starter med at lave plads på vores lærred. Markér måleren, og flyt den til øverste højre hjørne. Træk derefter i hjørnerne for at gøre den mindre.
 2. Fjern markeringen af måleren. I ruden Felter skal du vælge **Sales** > **This Year Sales** > **Value**og vælge **Sales** > **Last Year Sales**.
@@ -78,9 +78,9 @@ Vores marketingchef har nogle yderligere spørgsmål, vi skal besvare. Hun vil g
    
     ![rapporteditor med aktivt områdediagram](media/service-report-create-new/power-bi-report-step5.png)
 5. Hvis du vil sortere visualiseringen efter tidsperiode, skal du vælge ellipsen og vælge **Sortér efter periode**.
-6. Nu vil vi tilføje udsnittet. Markér et tomt område på lærredet, og vælg skabelonen Udsnit ![Udsnit-ikon](media/service-report-create-new/power-bi-slicer-icon.png) . Vi har nu et tomt udsnitsværktøj på lærredet.
+6. Nu vil vi tilføje udsnittet. Markér et tomt område på lærredet, og vælg skabelonen Udsnit ![Udsnit-ikon](media/service-report-create-new/power-bi-slicer-icon.png) . Vi har nu et tomt udsnit på vores lærred.
    
-    ![rapportcanvas](media/service-report-create-new/power-bi-report-step6.png)    
+    ![rapportlærred](media/service-report-create-new/power-bi-report-step6.png)    
 7. Vælg **District** > **District** i ruden Fields. Flyt og tilpas størrelsen af udsnitsværktøjet.
    
     ![Rapporteditor, tilføj District](media/service-report-create-new/power-bi-report-step7.png)  

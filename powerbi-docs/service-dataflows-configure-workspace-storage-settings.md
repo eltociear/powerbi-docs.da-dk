@@ -1,6 +1,6 @@
 ---
 title: Konfigurer indstillinger for dataflow for arbejdsområder
-description: Konfigurer et apparbejdsområde i Power BI til at gemme dens definition dataflowet og datafiler i Azure Data Lake Storage Gen2
+description: Konfigurer et apparbejdsområde i Power BI for at gemme definitionen og datafilerne for dataflowet i Azure Data Lake Storage Gen2
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 52ef3f57276e7f7560b9d7df7bc1be465d842eb3
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 12f4f24be9189041d5906844ebe71d6ffb023ec5
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61168475"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523508"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Konfigurer indstillinger for dataflow for arbejdsområder (prøveversion)
 
@@ -105,7 +105,7 @@ På følgende liste er der beskrevet nogle yderligere overvejelser:
 
 1.  Anna opretter et nyt apparbejdsområde og konfigurerer det til at gemme dataflow i organisationens data lake.
 2.  Ben, der også er medlem af det arbejdsområde, Anna har oprettet, vil gerne bruge Power BI Desktop og dataflowconnectoren til at hente data fra det dataflow, Anna har oprettet.
-3.  Ben får vist en fejl, da han ikke er føjet til dataflowets CDM-mappe som en godkendt bruger i den pågældende lake.
+3.  Ben får vist en fejl, da han ikke er føjet til dataflowets CDM-mappe som en godkendt bruger i datasøen.
 
     ![Fejl under forsøg på at bruge dataflow](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_08.jpg)
 

@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 05/28/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 28fe39788dab6f22845d3ffcb7115fb1da5cb268
-ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
+ms.openlocfilehash: 6bfcb218f92c2b6e8a3349261e15e6b71b9512b2
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66826667"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523223"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel
 
@@ -144,7 +144,7 @@ Når din tabelmodel er udrullet og klar til forbrug, skal du føje en datakildef
    
    I sin rolle som **salgschef** kan Sumit se data fra alle de forskellige salgsområder. Sumit opretter denne rapport (den rapport, der blev oprettet i de forrige opgavetrin) og publicerer den i Power BI-tjenesten.
    
-   Når han udgiver rapporten, opretter han et dashboard i Power BI-tjenesten med navnet **TabularDynamicSec**, der er baseret på denne rapport. På det følgende billede skal du lægge mærke til, at Sumit kan se de data, der svarer til hele salgsområdet.
+   Når Sumit udgiver rapporten, er det næste trin, at der oprettes et dashboard i Power BI-tjenesten med navnet **TabularDynamicSec** på baggrund af denne rapport. På det følgende billede skal du lægge mærke til, at Sumit kan se de data, der svarer til hele salgsområdet.
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/donut_chart_1.png)
 
@@ -154,7 +154,7 @@ Når din tabelmodel er udrullet og klar til forbrug, skal du føje en datakildef
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/pbi_dashboard.png)
 
-3. Når Jon Doe logger på **Power BI**-tjenesten og ser det delte dashboard, som Sumit har oprettet, kan han **kun** se salg fra sit eget område. 
+3. Når Jon Doe logger på **Power BI**-tjenesten og ser det delte dashboard, som Sumit har oprettet, er det **kun** salg fra eget område, der bør være synligt. 
    
    ![](media/desktop-tutorial-row-level-security-onprem-ssas-tabular/dashboard_jon_doe.png)
 

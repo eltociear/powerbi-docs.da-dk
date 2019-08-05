@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 06/18/2019
+ms.date: 07/24/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 48513ea163847ee3bf1df07151e9985c5bce9656
-ms.sourcegitcommit: 5f22dcda8885d840b7da344d38e89329d02b14fb
+ms.openlocfilehash: 4c39cf5a60786f7cc1748155ce7004254d40ad00
+ms.sourcegitcommit: ebac79f8c2871d4a7e54c1e99ce6d2409345b060
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67235059"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68475626"
 ---
 # <a name="connect-to-datasets-with-client-applications-and-tools-preview"></a>Opret forbindelse til datasæt med klientprogrammer og værktøjer (prøveversion)
 
-Power BI Premium-arbejdsområder og -datasæt understøtter *skrivebeskyttede* forbindelser fra klientprogrammer og værktøjer fra Microsoft og tredjeparter. 
+Power BI Premium-arbejdsområder og -datasæt understøtter *skrivebeskyttede* forbindelser fra klientprogrammer og værktøjer fra Microsoft og tredjeparter. Forbindelser er som standard aktiveret
 
 > [!NOTE]
 > I denne artikel introduceres kun skrivebeskyttede forbindelser til Power BI Premium-arbejdsområder og -datasæt. Den indeholder *ikke* detaljerede oplysninger om programmering, bestemte værktøjer og programmer, arkitektur og administration af arbejdsområder og datasæt. Emner, der er beskrevet her, kræver en grundig forståelse af databasearkitektur og administration af Analysis Services-tabelmodeller.
@@ -104,6 +104,10 @@ Følgende datasæt understøttes ikke i Power BI-tjenesten:
 ### <a name="roles-and-role-memberships"></a>Roller og rollemedlemskaber
 
 I øjeblikket kan du ikke finde eller få vist modelroller og rollemedlemskaber ved hjælp af XMLA-slutpunkter.
+
+## <a name="disable-connectivity"></a>Deaktiver netværksmuligheder
+
+Netværksmuligheder for XMLA-slutpunkter er som standard aktiveret for arbejdsbelastningerne for datasæt. Du kan deaktivere netværksmulighederne under [indstillingerne for arbejdsbelastning](service-admin-premium-workloads.md#workload-settings).
 
 ## <a name="audit-logs"></a>Overvågningslogge 
 

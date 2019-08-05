@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cf07318b5866d3f893d745fc8a8bba85cc9680d9
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: d41fc5991a95b51f71d0db522d4de84454de4ca2
+ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751262"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590591"
 ---
 # <a name="key-influencers-visualization"></a>Visualisering af nøglefaktorer
 Visualiseringen af nøglefaktorer hjælper dig med at forstå de faktorer, som ligger bag en metrikværdi, du er interesseret i. Den analyserer dine data, rangerer de faktorer, der betyder noget, og viser dem som nøglefaktorer. Lad os antage, at du vil finde ud af, hvad der påvirker medarbejderomsætningen. En faktor kan være varigheden af ansættelseskontrakten og en anden kan være medarbejderens alder. 
@@ -116,7 +116,7 @@ Markér afkrydsningsfeltet **Vis kun de værdier, der er nøglefaktorer** for at
 
 ## <a name="interact-with-other-visuals"></a>Interager med andre visualiseringer 
  
-Hver gang du vælger et udsnit, et filter eller andre visualiseringer på canvasset, kører visualiseringen af nøglefaktorerne analysen på de nye dele af dataene. Du kan f.eks. flytte **Firmastørrelse** til rapporten og bruge det som et udsnit. Du kan bruge det for at se, om nøglefaktorerne for dine virksomhedskunder er anderledes end befolkningen som helhed. En virksomhed af enterprisetypen har flere end 50.000 medarbejdere.
+Hver gang du vælger et udsnit, et filter eller andre visualiseringer på lærredet, kører visualiseringen af nøglefaktorerne analysen på de nye dele af dataene. Du kan f.eks. flytte **Firmastørrelse** til rapporten og bruge det som et udsnit. Du kan bruge det for at se, om nøglefaktorerne for dine virksomhedskunder er anderledes end befolkningen som helhed. En virksomhed af enterprisetypen har flere end 50.000 medarbejdere.
  
 Hvis du vælger **>50,000**, køres analysen igen, og du kan se, at nøglefaktorerne har ændret sig. For store virksomhedskunder har den vigtigste nøglefaktor for lave bedømmelser et tema, der relaterer til sikkerhed. Det kan være, at det skal undersøges nærmere for at se, om der er bestemte sikkerhedsfunktioner, som dine store kunder er utilfredse med. 
 
@@ -132,8 +132,13 @@ Visualiseringen fortæller os, at hver gang brugsperioden stiger med 13,44 måne
  
 Punktdiagrammet i ruden til højre viser den gennemsnitlige procentdel af lave bedømmelser for hver brugsperiodeværdi. Den fremhæver hældningen med en tendenslinje.
 
-
 ![Punktdiagram for brugsperiode](media/power-bi-visualization-influencers/power-bi-tenure.png)
+
+## <a name="binned-continuous-key-influencers"></a>Kasserede fortløbende nøglefaktorer
+
+I nogle tilfælde kan du opleve, at dine fortløbende faktorer automatisk blev konverteret til kategorier. Det skyldes, at vi har indset, at relationen mellem variablerne ikke er lineær, så vi kan ikke beskrive relationen som blot værende forøget eller formindsket (som vi gjorde i eksemplet ovenfor).
+
+Vi kører korrelationstest for at bestemme, hvor lineær faktoren er med hensyn til målet. Hvis målet er fortløbende, kører vi Perasons-korrelationen, og hvis målet er en kategori, kører vi Point Biserial-korrelationstest. Hvis vi registrerer, at relationen ikke er tilstrækkelig lineær, foretager vi overvåget kassering og genererer maksimalt 5 beholdere. For at finde ud af, hvilke beholdere der giver mest mening, bruger vi en metode med overvåget kassering, hvor der kigges på relationen mellem den forklarende faktor og det mål, der analyseres.
 
 ## <a name="interpret-measures-and-aggregates-as-key-influencers"></a>Fortolkning af målinger og aggregeringer som nøglefaktorer 
  
@@ -209,15 +214,14 @@ De øverste segmenter for numeriske mål viser de grupper, hvor huspriserne i ge
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding 
  
-**Hvilke begrænsninger er der i prøveversionen?** 
+**Hvilke begrænsninger er der for visualiseringen?** 
  
-Visualiseringen for nøglefaktorer fås i øjeblikket som en offentlig prøveversion og har visse begrænsninger. Funktioner, der ikke er tilgængelige i øjeblikket, omfatter: 
-- Analyse af metrikværdier, der er aggregeringer eller målinger.
-- Forbrug af visualiseringen i Power BI Embedded.
-- Forbrug af visualiseringen i Power BI-mobilapps.
-- Understøttelse af RLS.
-- Understøttelse af Direct Query.
-- Understøttelse af direkte forbindelse.
+Der er nogle begrænsninger for visualiseringen af nøglefaktorerne:
+
+- DirectQuery understøttes ikke
+- Direkte forbindelse til Azure Analysis Services og SQL Server Analysis Services understøttes ikke
+- Publicering til internettet understøttes ikke
+- .NET Framework 4.6 eller nyere kræves
 
 ![Numerisk spørgsmål](media/power-bi-visualization-influencers/power-bi-ki-numeric-question.png)
 
@@ -263,7 +267,7 @@ Denne fejlmeddelelse vises, fordi enheden ikke er defineret på kundeniveauet. E
 - Du kan ændre opsummeringen af de enheder, der skal tælles. Du kan f.eks. bruge antal, hvis antallet af enheder kan påvirke den score, som en kunde giver. 
 - Du kan oprette en pivot for enhedskolonnen for at se, om den anvendte type enhed har betydning for kundens bedømmelse.
  
-I dette eksempel blev dataene pivoteret for at oprette nye kolonner for browser, mobil og tablet. Du kan nu bruge disse specifikke enheder i **Forklar ved**. Alle enheder viser sig at være nøglefaktorer, mens browseren har den største betydning for kundens bedømmelse.
+I dette eksempel er dataene blevet pivoteret til at oprette nye kolonner for browser, mobil og tablet. Sørg for at slette og genoprette dine relationer i modelvisningen, efter dataene er blevet pivoteret. Du kan nu bruge disse specifikke enheder i **Forklar ved**. Alle enheder viser sig at være nøglefaktorer, mens browseren har den største betydning for kundens bedømmelse.
 
 De kunder, der ikke bruger tjenesten via en browser, vil være 3,79 gange mere tilbøjelige til at give en lav score end de kunder, der bruger tjenesten via en browser. Længere nede på listen er det modsatte tilfældet for mobiltelefoner. De kunder, der bruger mobilappen, vil med større sandsynlighed give end lavere score end dem, der ikke bruger mobilappen. 
 

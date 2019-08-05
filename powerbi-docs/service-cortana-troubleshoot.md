@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 449d47606829c8555e0b64e7f07d1b414b99fea7
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: cb0870bf6f1cdca3cb1f95dc516f5f9124422327
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375220"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523374"
 ---
 # <a name="troubleshoot-cortana-for-power-bi"></a>Fejlfinding i Cortana til Power BI
 Denne artikel er en del af en serie. 
 
 > [!IMPORTANT]
-> Integration af Cortana frarådes i Power BI. Fra og med 11. juni, fungerer Cortana ikke længere for alle dashboards og rapporter.
+> Integration med Cortana udfases i Power BI. Fra og med 11. juni vil Cortana ikke længere fungere for nogen dashboards og rapporter.
 
 Hvis du har problemer med at integrere Cortana i Power BI, er du kommet til det rette sted. Benyt følgende fremgangsmåde til at diagnosticere og løse problemet.
 

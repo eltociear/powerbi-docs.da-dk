@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/16/2019
-ms.openlocfilehash: ea1ae18f877793da9ac47023c236ba8a24f78ccf
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 6a2fce59171ec36241cd5de03d41f6a27f54c664
+ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271192"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68380224"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Retningslinjer for Power BI-visualiseringer
 Før du [publicerer](https://docs.microsoft.com/power-bi/developer/office-store) din visualisering i AppSource, så andre kan finde og bruge den, skal du sørge for at følge retningslinjerne for at skabe en fantastisk oplevelse for dine brugere. 
@@ -26,7 +26,7 @@ Genvejsmenuen bør være aktiveret i alle Power BI-visualiseringer for at sikre 
 
 ## <a name="logo-guidelines"></a>Retningslinjer for logo
 
-I dette afsnit beskrives specifikationerne for tilføjelse af logoer og logotyper i visualiseringer.
+I dette afsnit beskrives specifikationerne for tilføjelse af logoer og logotyper i visualiseringer. Logoer er ikke obligatoriske. Hvis de tilføjes, skal de følge disse retningslinjer. 
 
 > [!IMPORTANT]
 > Logoer er kun tilladt i *redigeringstilstand*. Logoer *må ikke* vises i visningstilstand.

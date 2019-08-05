@@ -8,128 +8,132 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: dfa8ff694a1f4a4ba4e5078fe93300e4bf26cc73
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 3577c19342d9f2dc5b0e3ab9908f47f82430e6db
+ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721404"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68391477"
 ---
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Opret forbindelse til eksemplerne i Power BI-tjenesten
 
-Med denne vejledning lærer du, hvordan du kan: 
-- importere en eksempelindholdspakke, føje den til Power BI-tjenesten og åbne indholdet. En *indholdspakke* er en eksempeltype, hvor datasættet er pakket sammen med et dashboard og en rapport. 
+I denne vejledning lærer du, hvordan du kan: 
+- Importere en eksempelindholdspakke, føje den til Power BI-tjenesten og åbne indholdet. En *indholdspakke* er en eksempeltype, hvor datasættet er pakket sammen med et dashboard og en rapport. 
 - åbne en .pbix-eksempelfil i Power BI Desktop.
 
-Hvis du gerne vil have flere baggrundsoplysninger, inden du går i gang, anbefaler vi, at du starter med artiklen [Eksempeldatasæt til Power BI](sample-datasets.md). I den artikel lærer du alt om eksemplerne. Hvordan du får dem, hvor du gemmer dem, hvordan du bruger dem og nogle af historierne, som hvert eksempel fortæller. Når du har fået styr på det grundlæggende, så vend tilbage til dette selvstudium.   
+Hvis du gerne vil have flere baggrundsoplysninger, kan du se [Eksempeldatasæt til Power BI](sample-datasets.md). I den artikel lærer du alt om eksemplerne. Hvordan du får fat i dem, hvor du gemmer dem, hvordan du bruger dem og nogle af de historier, som hvert eksempel fortæller. 
 
 ## <a name="prerequisites"></a>Forudsætninger
 Eksemplerne er tilgængelige for Power BI-tjenesten og Power BI Desktop. Hvis du vil følge med, bruger vi eksemplet på detailhandelsanalyse.
 
 Indholdspakke med eksemplet *Retail Analysis*, der bruges i dette selvstudium, består af et dashboard, en rapport og et datasæt.
-Lær denne indholdspakke og dens scenarie at kende ved at [tage en rundvisning af Retail Analysis-eksemplet](sample-retail-analysis.md), før du starter.
+Lær denne indholdspakke og dens scenarie at kende ved at se [Eksempel på detailhandelsanalyse til Power BI: Få en introduktion](sample-retail-analysis.md), før du går i gang.
 
-## <a name="samples-and-power-bi-service"></a>Eksempler og Power BI-tjenesten
+## <a name="samples-in-the-power-bi-service"></a>Eksempler i Power BI-tjenesten
 
-1. Åbn Power BI-tjenesten (app.powerbi.com), og log på.
-2. Vælg **Hent data** nederst i venstre navigationsrude. Hvis du ikke kan se **Hent data**, så udvid ruden ved at vælge ![hamburgerikonet](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
-   
-   ![hent data-ikon](media/sample-tutorial-connect-to-the-samples/pbi_getdata.png)
-5. Vælg **Eksempler**.  
-   
-   ![Knappen Eksempler](media/sample-tutorial-connect-to-the-samples/pbi_samplesdownload.png)
-6. Vælg *Retail Analysis Sample*, og vælg **Opret forbindelse**.   
-   
-   ![gul Opret forbindelse-knap](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
+1. Åbn Power BI-tjenesten (app.powerbi.com), log på, og åbn det arbejdsområde, hvor du vil gemme eksemplet. 
 
-## <a name="what-exactly-was-imported"></a>Hvad blev der helt præcist importeret?
-Med indholdspakkerne med eksempel henter Power BI en kopi af indholdet og gemmer det for dig i clouden, når du vælger **Opret forbindelse**. Da den person, der oprettede indholdspakken inkluderede et datasæt, en rapport og et dashboard, er det, det du får, når du klikker på **Opret forbindelse**. 
+    Hvis du ikke har en Power BI Pro-licens, kan du gemme eksemplet i Mit arbejdsområde.
 
-1. Power BI opretter det nye dashboard og viser det på fanen **Dashboards**. Den gule stjerne viser dig, at det er nyt.
+2. Vælg **Hent data** nederst i venstre navigationsrude. 
+
+   ![Vælg Hent data](media/sample-datasets/power-bi-get-data.png)
+
+   Hvis du ikke kan se **Hent data**, kan du udvide navigationsruden ved at vælge følgende ikon øverst i ruden: ![hamburgerikon](media/sample-tutorial-connect-to-the-samples/expand-nav.png).
+
+5. På siden **Hent data**, der vises, skal du vælge **Eksempler**.
    
-   ![meddelelse om fuldførelse](media/sample-tutorial-connect-to-the-samples/power-bi-new-dashboard.png)
-2. Åbn fanen **Rapporter**.  Her kan du se en ny rapport med navnet *Retail Analysis Sample*.
+6. Vælg **Eksempel på detailhandelsanalyse**, og vælg derefter **Opret forbindelse**.   
    
-   ![rød boks omkring eksempel på detailhandelsanalyse og gul stjerne](media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
+   ![Knappen Opret forbindelse](media/sample-tutorial-connect-to-the-samples/pbi_retailanalysissampleconnect.png)
+
+## <a name="what-was-imported"></a>Hvad er importeret?
+Når du bruger indholdspakkerne med eksempler og vælger **Opret forbindelse**, henter Power BI en kopi af indholdspakken og gemmer den for dig i cloudmiljøet. Eftersom den person, der oprettede indholdspakken, inkluderede et datasæt, en rapport og et dashboard, er det, det du får, når du vælger **Opret forbindelse**. 
+
+1. Når du vælger **Opret forbindelse**, opretter Power BI det nye dashboard og viser det på fanen **Dashboards**. 
    
-   Og se fanen **Datasæt**.  Der er også et nyt datasæt.
+   ![Posten Eksempel på detailhandelsanalyse](media/sample-retail-analysis/retail-entry.png)
+2. Åbn fanen **Rapporter**. Her kan du se en ny rapport med navnet *Detailhandelsanalyse*.
    
-   ![rød boks omkring eksempel på detailhandelsanalyse](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
+   ![Rapporten Detailhandelsanalyse](media/sample-tutorial-connect-to-the-samples/power-bi-new-report.png)
+   
+   Tjek fanen **Datasæt**. Her er der også et nyt datasæt.
+   
+   ![Datasættet Detailhandelsanalyse](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
 
 ## <a name="explore-your-new-content"></a>Udforsk dit nye indhold
-Udforsk nu dashboardet, datasættet og rapporten på egen hånd. Der er mange forskellige måder til at navigere til dine dashboards, rapporter og datasæt, og kun en af dem er beskrevet herunder.  
+Udforsk nu dashboardet, datasættet og rapporten på egen hånd. Der er mange forskellige måder at navigere til dine dashboards, rapporter og datasæt på. En af disse måder er beskrevet i følgende procedure.  
 
-> [!TIP]
-> Vil du holdes lidt i hånden først?  Prøv [Tour of the Retail Analysis sample](sample-retail-analysis.md), hvor du får en trinvis gennemgang af dette eksempel.
-> 
-> 
+1. Naviger tilbage til fanen **Dashboards**, og vælg dashboardet **Detailhandelsanalyse** for at åbne det.       
 
-1. Naviger tilbage til fanen **Dashboards**, og vælg dashboardet *Retail Analysis Sample* for at åbne det.    
+   Dashboardet åbnes og indeholder en række visualiseringsfelter.   
+ 
+1. Vælg et af felterne i dashboardet for at åbne den underliggende rapport. I dette eksempel vælger vi områdediagrammet **Dette års salg, sidste års salg efter regnskabsmåned**.  
+
+   ![Dashboardet Detailhandelsanalyse, hvor en visualisering er fremhævet](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png)
+
+   Rapporten åbnes på den side, der indeholder det områdediagram, du har valgt. I dette tilfælde siden **Månedligt salg pr. distrikt** i rapporten.
    
-   ![Fanen dashboard markeret](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards.png)
-2. Dashboardet åbnes.  Det har forskellige visualiseringsfelter.
-   
-   ![dashboard med fremhævet visualisering](media/sample-tutorial-connect-to-the-samples/power-bi-dashboards2new.png)
-3. Vælg et af felterne for at åbne den underliggende rapport.  I dette eksempel vælger vi områdediagrammet (vist med lyserødt på det forrige billede). Rapporten åbnes på siden, der indeholder områdediagrammet.
-   
-    ![rapportside med tilsvarende visualisering fremhævet](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
+   ![Rapportsiden Månedligt salg pr. distrikt](media/sample-tutorial-connect-to-the-samples/power-bi-report.png)
    
    > [!NOTE]
-   > Hvis feltet var blevet oprettet ved brug af [Power BI Q&A](power-bi-tutorial-q-and-a.md), ville Q&A-siden være blevet åbent i stedet for. Hvis feltet er [fastgjort fra Excel](service-dashboard-pin-tile-from-excel.md), åbnes Excel Online i Power BI.
+   > Hvis feltet blev oprettet ved hjælp af [Spørgsmål og svar i Power BI](power-bi-tutorial-q-and-a.md), åbnes siden Spørgsmål og svar i stedet for. Hvis feltet er [fastgjort fra Excel](service-dashboard-pin-tile-from-excel.md), åbnes Excel Online i Power BI.
    > 
    > 
-1. Tilbage på fanen **Datasæt** har du flere muligheder for at udforske dit datasæt.  Du kan ikke åbne det for at se alle rækkerne og kolonnerne (ligesom du kan i Power BI Desktop eller Excel).  Når en person deler en indholdspakke med kollegaer, ønsker de typisk at dele indsigt og ikke give deres kollegaer direkte adgang til dataene. Men det betyder ikke, at du ikke kan udforske datasættet.  
+1. Når en person deler en indholdspakke med kolleger, ønsker de typisk at dele indsigt og ikke give deres kolleger adgang til dataene. På fanen **Datasæt** har du flere muligheder for at udforske dit datasæt. Du kan dog ikke få vist rækkerne og kolonnerne i dine data, som du kan i Power BI Desktop eller Excel. 
    
-   ![Fanen Datasæt](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon2.png)
+   ![Datasættet Detailhandelsanalyse](media/sample-tutorial-connect-to-the-samples/power-bi-new-dataset.png)
    
-   * En af måderne til at udforske datasættet er ved at oprette dine egne visualiseringer og rapporter fra bunden.  Vælg ikonet Diagram ![Ikonet Rapport](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) for at åbne datasættet i rapportredigeringstilstand.
+1. En af måderne til at udforske datasættet er ved at oprette dine egne visualiseringer og rapporter fra bunden. Vælg ikonet Diagram ![Ikonet Diagram](media/sample-tutorial-connect-to-the-samples/power-bi-chart-icon4.png) for at åbne datasættet i rapportredigeringstilstand.
      
-       ![helt ny rapport](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
-   * En anden måde til at udforske datasættet er ved at køre [Hurtig indsigt](consumer/end-user-insights.md). Vælg ellipsen (...), og vælg **Få indsigt**. Vælg **Vis indsigt**, når indsigten er klar.
+   ![Helt ny rapport](media/sample-tutorial-connect-to-the-samples/power-bi-report-editing.png)
+
+1. En anden måde at udforske datasættet på er ved at køre [Hurtig indsigt](consumer/end-user-insights.md). Vælg ellipsen (...), og vælg derefter **Få hurtig indsigt**. Vælg **Vis indsigt**, når indsigten er klar.
      
-       ![Rapporten Indsigt](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
+    ![Rapporten Indsigt](media/sample-tutorial-connect-to-the-samples/power-bi-insights.png)
 
-## <a name="samples-and-power-bi-desktop"></a>Eksempler og Power BI Desktop 
-Når du åbner PBIX-eksempelfilen for første gang, vises den i Rapportvisning, hvor du kan udforske, oprette og redigere et vilkårligt antal rapportsider med visualiseringer. Med Rapportvisning får du stort set samme designoplevelse som i Redigeringsvisning af en rapport i Power BI-tjenesten. Du kan flytte visualiseringer rundt, kopiere, indsætte og flette dem med mere.
+## <a name="samples-in-power-bi-desktop"></a>Eksempler i Power BI Desktop 
+Når du åbner PBIX-eksempelfilen for første gang i Power BI Desktop, vises den i Rapportvisning, hvor du kan udforske, oprette og redigere et vilkårligt antal rapportsider med visualiseringer. Med Rapportvisning får du næsten samme designoplevelse som i Redigeringsvisning af en rapport i Power BI-tjenesten. Du kan f.eks. flytte visualiseringer rundt og kopiere, indsætte og flette dem. 
 
-Forskellen mellem dem er, at når du bruger Power BI Desktop, kan du arbejde med dine forespørgsler og modellere dine data for at sikre, at dataene giver den bedste indsigt i dine rapporter. Du kan derefter gemme din Power BI Desktop-fil et sted efter eget valg, uanset om det er på dit lokale drev eller i cloudmiljøet.
+I modsætning til redigering af en rapport i Power BI-tjenesten kan du i Power BI Desktop arbejde med dine forespørgsler og modellere dine data for at sikre, at dataene giver den bedste indsigt i dine rapporter. Du kan derefter gemme din Power BI Desktop-fil et sted efter eget valg, uanset om det er på dit lokale drev eller i cloudmiljøet.
 
-1. Åbn [.pbix-filen med Eksempel på detailhandelsanalyse](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix) i Power BI Desktop. 
+1. Download [PBIX-filen Eksempel på detailhandelsanalyse](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), og åbn den i Power BI Desktop. 
 
-    ![Eksempel åbent i Rapportvisning i Power BI](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
+    ![Eksempel i Rapportvisning i Power BI](media/sample-tutorial-connect-to-the-samples/power-bi-samples-desktop.png)
 
-1. Filen åbnes i Rapportvisning. Har du set de fire faner nederst i rapporteditoren? De betyder, at der er fire sider i denne rapport, og at siden "Nye butikker" er valgt i øjeblikket. 
+1. Filen åbnes i Rapportvisning. Læg mærke til de fire faner nederst i rapporteditoren. Disse faner repræsenterer de fire sider i denne rapport. Siden **Nye butikker** er i dette eksempel markeret i øjeblikket. 
 
-    ![nærbillede af faner nederst og fremhævede nye butikker](media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png).
+    ![Fanen Nye butikker fremhævet](media/sample-tutorial-connect-to-the-samples/power-bi-sample-tabs.png).
 
-3. Hvis du vil have en detaljeret gennemgang af rapporteditoren, skal du se [Få en præsentation af rapporteditoren](service-the-report-editor-take-a-tour.md)
+1. Hvis du vil have en detaljeret gennemgang af rapporteditoren, skal du se [Få en præsentation af rapporteditoren](service-the-report-editor-take-a-tour.md).
 
-## <a name="what-exactly-was-imported"></a>Hvad blev der helt præcist importeret?
-Når du åbner PBIX-eksempelfilen i Desktop, får du faktisk vist en kopi af dataene, som gemmes i cloudmiljøet af Power BI. Fra Desktop har du adgang til rapporten ***og det underliggende datasæt***. Når dataene er indlæst, forsøger Power BI Desktop at finde og oprette relationer for dig.  
+## <a name="whats-in-your-report"></a>Hvad er der i din rapport?
+Når du downloader en PBIX-fil med et eksempel, har du ikke blot downloadet *en rapport*, men også det underliggende datasæt. Når du åbner filen, indlæser Power BI Desktop dataene med de tilknyttede forespørgsler og relationer. Du kan få vist de underliggende data og relationer, men du kan ikke få vist de underliggende forespørgsler i Forespørgselseditoren.
+
 
 1. Skift til [Datavisning](desktop-data-view.md) ved at vælge ![tabelikonet](media/sample-tutorial-connect-to-the-samples/power-bi-data-icon.png).
  
     ![Visningen Data i Desktop](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-sample-data.png)
 
-    Med Datavisning kan du få hjælp til at undersøge, udforske og forstå data i din Power BI Desktop-model. Det er forskelligt fra den måde, du får vist tabeller, kolonner og data på i Forespørgselseditor. Med Datavisning får du vist dine data, når de er blevet indlæst i modellen.
+    I Datavisning kan du undersøge, udforske og forstå data i din Power BI Desktop-model. Det er forskelligt fra den måde, du får vist tabeller, kolonner og data på i Forespørgselseditor. Dataene i Datavisning er allerede indlæst i modellen.
 
-    Når du udformer dine data, har du nogle gange brug for at se, hvad der rent faktisk findes i en tabel eller kolonne uden at skulle oprette en visualisering på rapportcanvasset, ofte helt ned på rækkeniveau. Dette er særligt tilfældet, når du opretter målinger og beregnede kolonner, eller du har brug for at identificere en datatype eller datakategori.
+    Når du udformer dine data, har du nogle gange brug for at se, hvad der rent faktisk findes i rækkerne og kolonnerne i en tabel uden at skulle oprette en visualisering på rapportcanvasset. Dette er særligt tilfældet, når du opretter målinger og beregnede kolonner, eller du har brug for at identificere en datatype eller datakategori.
 
-1. Skift til [Relationsvisning](desktop-relationship-view.md) ved at vælge ikonet, ![ der ligner 3 forbundne bokse](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png) .
+1. Skift til [Relationsvisning](desktop-relationship-view.md) ved at vælge følgende ikon: ![Ikonet Relationsvisning](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png).
  
     ![Relationsvisning i Power BI Desktop](media/sample-tutorial-connect-to-the-samples/power-bi-relationships.png)
 
     I Relationsvisning vises alle tabellerne, kolonnerne og relationerne i din model. Her kan du få vist, redigere og oprette relationer.
 
-## <a name="explore-your-new-content"></a>Udforsk dit nye indhold
-Udforsk nu datasættet, relationerne og rapporten på egen hånd. Du kan få hjælp til at komme i gang ved at gå til [Introduktion til Desktop](desktop-getting-started.md).    
-
-
 ## <a name="next-steps"></a>Næste trin
+Det er sikkert at eksperimentere i dette miljø, fordi du kan vælge ikke at gemme dine ændringer. Hvis du gemmer dem, kan du altid vælge **Hent data** for at få en ny kopi af dette eksempel.
 
+Vi håber, at denne rundtur har vist, hvordan dashboards, datasæt, relationer og rapporter i Power BI kan give indsigt i eksempeldata. Nu er det din tur: Opret forbindelse til dine egne data. Med Power BI kan du oprette forbindelse til en lang række datakilder. Du kan få mere at vide i [Introduktion til Power BI-tjenesten](service-get-started.md) og [Introduktion til Power BI Desktop](desktop-getting-started.md).  
+
+Her finder du flere oplysninger:  
 - [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
 - [Eksempler til Power BI-tjenesten](sample-datasets.md)
 - [Datakilder til Power BI](service-get-data.md)

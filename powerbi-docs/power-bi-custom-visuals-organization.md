@@ -1,6 +1,6 @@
 ---
-title: Brugerdefinerede visualiseringer til virksomheder i Power BI
-description: Brug, administrer og opret brugerdefinerede visualiseringer til virksomheder i Power BI
+title: Visualiseringer til virksomheder i Power BI
+description: Brug, administrer og opret visualiseringer til virksomheder i Power BI
 author: sranins
 ms.author: rasala
 manager: kfile
@@ -10,14 +10,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 157b20107a5be106ac97e0cb927b1e496e1ba115
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 9775b7cd1eb936019051ae952bc270924061daaa
+ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61421878"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415347"
 ---
-# <a name="organizational-custom-visuals-in-power-bi"></a>Brugerdefinerede visualiseringer til virksomheder i Power BI
+# <a name="organizational-visuals-in-power-bi"></a>Visualiseringer til virksomheder i Power BI
 
 Du kan bruge brugerdefinerede visualiseringer i Power BI til at oprette unikke visualiseringer, der er skræddersyet til dig. Brugerdefinerede visualiseringer oprettes ofte af udviklere, og de oprettes ofte, når mængden af visualiseringer, der er inkluderet i Power BI, ikke opfylder deres behov.
 

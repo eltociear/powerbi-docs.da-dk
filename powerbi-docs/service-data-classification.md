@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/10/2017
 ms.author: amac
 LocalizationGroup: Dashboards
-ms.openlocfilehash: b7d9bdf0982ea7ad4f57225e5a1eaf8c9da90b50
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: e687c72ae058f56ca4f528783c5e2326d82db6bb
+ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61139327"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523137"
 ---
 # <a name="dashboard-data-classification"></a>Dashboard-dataklassificering
 Hvert dashboard er forskelligt, og afhængigt af den datakilde, du opretter forbindelse til, opdager du sandsynligvis, at du og de kollegaer, du deler med, skal tage forskellige forholdsregler, afhængigt af dataenes følsomhed. Nogle dashboards skal aldrig deles med personer uden for dit firma, eller udskrives, mens andre frit kan deles. Ved at bruge dashboard-dataklassifikation kan du øge bevidstheden hos dem, der ser dine dashboards, om, hvilket sikkerhedsniveau, der skal bruges. Du kan mærke dine dashboards med klassificeringer, der er defineret af din virksomheds it-afdeling, så alle, der ser indholdet, har samme forståelse af dataenes følsomhed.
@@ -45,7 +45,7 @@ Administratorer kan også angive en URL-adresse for et mærke for at angive fler
 ## <a name="setting-a-dashboards-classification"></a>Angiv et dashboards klassificering
 Hvis dataklassificering er slået til for din virksomhed, har alle dashboards i til at begynde med en standardklassificeringstype, men som dashboardejer kan du ændre klassificeringen, så den passer til dit dashboards sikkerhedsniveau.
 
-Benyt følgende fremgangsmåde for at ændre klassificeringstypen.
+Benyt følgende fremgangsmåde for at ændre klassificeringstypen:
 
 1. Gå til indstillinger for dashboardet ved at vælge **ellipsen** ud for dashboardets navn og vælge **Indstillinger**.
    
@@ -58,7 +58,7 @@ Benyt følgende fremgangsmåde for at ændre klassificeringstypen.
 Når du har anvendt ændringen, kan alle, som du har delt med, se opdateringen, næste gang de indlæser dashboardet.
 
 ## <a name="working-with-data-classification-tags-as-an-admin"></a>Arbejd med dataklassificeringsmærker som en administrator
-Dataklassificering er konfigureret af den globale administrator i din organisation. Benyt følgende fremgangsmåde til at aktivere dataklassificering.
+Dataklassificering er konfigureret af den globale administrator i din organisation. Benyt følgende fremgangsmåde for at aktivere dataklassificering:
 
 1. Vælg tandhjulsikonet for Indstillinger, og vælg **Administrationsportal**.
    
@@ -79,7 +79,7 @@ Når du udfylder formularen med klassificeringstyper, skal du vælge **Anvend** 
 
 ![](media/service-data-classification/filled_in_classification_form.png)
 
-På dette tidspunkt tildeles alle dashboards standardklassificeringen, og dashboardejere kan nu opdatere klassificeringstypen til én, der er relevant for indholdet. Du kan komme tilbage hertil på et senere tidspunkt for at tilføje eller fjerne klassificeringstyper eller ændre standarden.  
+På dette tidspunkt vil alle dashboards få tildelt standardklassificeringen. Dashboardejere kan nu opdatere klassificeringstypen til den, der er relevant for deres indhold. Du kan komme tilbage hertil på et senere tidspunkt for at tilføje eller fjerne klassificeringstyper eller ændre standarden.  
 
 > [!NOTE]
 > Der er nogle få vigtige ting, du skal huske, når du vender tilbage for at foretage ændringer:
