@@ -9,18 +9,18 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/24/2019
+ms.date: 07/25/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 1d1371fa63af51f50a631739e4b2eed5550dc7ee
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 9e2b1132e48e824b70ddb0e0d86bfed4efedff2f
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523331"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623900"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 
-Når du åbner en rapport i Power BI-tjenesten, har hver side i rapporten sin egen entydige URL-adresse. Hvis du vil filtrere denne rapportside, kan du bruge ruden Filtre på rapportlærredet.  Eller du kan føje forespørgselsstrengparametre til URL-adressen for at filtrere rapporten. Du har måske en rapport, du vil vise til kollegaer, og du vil filtrere den på forhånd for dem. En måde, du kan filtrere på, er ved at starte med URL-standardadressen til rapporten, føje filterparametrene til URL-adressen og derefter sende hele den nye URL-adresse til dem via mail.
+Når du åbner en rapport i Power BI-tjenesten, har hver side i rapporten sin egen entydige URL-adresse. Hvis du vil filtrere denne rapportside, kan du bruge ruden Filtre på rapportcanvasset.  Eller du kan føje forespørgselsstrengparametre til URL-adressen for at filtrere rapporten. Du har måske en rapport, du vil vise til kollegaer, og du vil filtrere den på forhånd for dem. En måde, du kan filtrere på, er ved at starte med URL-standardadressen til rapporten, føje filterparametrene til URL-adressen og derefter sende hele den nye URL-adresse til dem via mail.
 
 ![Power BI-rapport i tjenesten](media/service-url-filters/power-bi-report2.png)
 
@@ -53,9 +53,9 @@ app.powerbi.com/groups/me/apps/*app-id*/reports/*report-id*/ReportSection?filter
 
 Felttypen kan være et tal, dato og klokkeslæt eller streng, og typen skal stemme overens med den type, der er angivet i datasættet.  Du kan f.eks. ikke angive en tabelkolonne af typen "streng", hvis du skal finde dato og klokkeslæt eller en numerisk værdi i et datasæt, der er indstillet som en dato, f.eks. Table/StringColumn eq 1.
 
-* **Strenge** skal omgives af enkelte anførselstegn: 'leders navn'.
-* **Tal** kræver ingen særlig formatering
-* **Datoer og klokkeslæt** skal omgives af enkelte anførselstegn. I OData v3 skal ordet datoklokkeslæt være foranstillet, men datoklokkeslæt er ikke nødvendig i OData v4.
+* **Strenge** skal være indeholdt i enkelte anførselstegn, f.eks. 'styringsnavn'.
+* **Tal** kræver ingen særlig formatering. Se [numeriske datatyper](#numeric-data-types) i denne artikel for at få flere oplysninger.
+* **Datoer og klokkeslæt** Se [Datodatatyper](#date-data-types) i denne artikel. 
 
 Hvis det stadig er forvirrende, kan du fortsætte med at læse og vi undersøger det nærmere.  
 
@@ -133,9 +133,17 @@ Et URL-filter i Power BI kan inkludere tal i følgende formater.
 
 ### <a name="date-data-types"></a>Datodatatyper
 
-Power BI understøtter både OData V3 og V4 for datatyperne **Date** og **DateTimeOffset**.  Datoer repræsenteres ved hjælp af EDM-formatet (2019-02-12T00:00:00), så når du angiver en dato som "YYYY-MM-DD", fortolker Power BI det som "YYYY-MM-DDT00:00:00".
+Power BI understøtter både OData V3 og V4 for datatyperne **Date** og **DateTimeOffset**. For OData V3 skal datoer være indeholdt i enkelte anførselstegn og have ordet DateTime foranstillet. Enkelte anførselstegn og ordet DateTime er ikke nødvendige i OData V4. 
+  
+Datoer repræsenteres vha. EDM-formatet (2019-02-12T00:00:00): Når du angiver en dato som ÅÅÅÅ-MM-DD, vil Power BI fortolke den som 'ÅÅÅÅ-MM-DDT00:00:00'. Sørg for, at måned og dag er to cifre, MM og DD.
 
-Hvorfor er den forskel vigtig? Lad os sige, at du opretter en parameter for en forespørgselstreng af typen **Tabel/Dato gt "2018-08-03"** .  Inkluderer resultaterne 3. august 2018, eller starter de med 4. august 2018? Da Power BI oversætter din forespørgsel til **Tabel/Dato gt "2018-08-03T00:00:00"** , inkluderer dine resultater alle de datoer, som ikke har et klokkeslæt, der kun består af nuller, da disse datoer vil være større end **"2018-08-03T00:00:00"** .
+Hvorfor er den forskel vigtig? Lad os sige, at du opretter en parameter for en forespørgselstreng af typen **Tabel/Dato gt "2018-08-03"** .  Inkluderer resultaterne 3. august 2018, eller starter de med 4. august 2018? Power BI oversætter din forespørgsel til **Table/Date gt '2018-08-03T00:00:00'** . Derfor omfatter resultaterne alle datoer, der har en tidsdel, der ikke er nul, da disse datoer ville være større end **'2018-08-03T00:00:00'.**
+
+Der er andre forskelle mellem V3 og V4. OData V3 understøtter ikke datoer, kun DateTime. Så hvis du bruger V3-formatet, skal du kvalificere det med hele datoen og klokkeslættet. Datokonstanter, f.eks. "DateTime'2019-05-20'", understøttes ikke i V3-notation. Men du kan bare skrive den som "2019-05-20" i V4-notationen. Her er to tilsvarende filterforespørgsler i V3 og V4:
+
+- OData V4-format: filter = Table/Date gt 2019-05-20
+- OData V3-format: filter = Table/Date gt datetime'2019-05-20T00:00:00'
+
 
 ## <a name="special-characters-in-url-filters"></a>Specialtegn i URL-filtre
 

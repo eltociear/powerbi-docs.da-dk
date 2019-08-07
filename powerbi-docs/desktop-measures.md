@@ -7,25 +7,25 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 07/29/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: d46fa8be055186d2430ca4d3c387fae93b91acc3
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 431c1738a5d2e975fd96a8209ca8245cd4414d40
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523202"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730173"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Målinger i Power BI Desktop
 
 Du kan få hjælp af **Power BI Desktop** til at oprette indsigt i dine data med nogle få klik. Men nogle gange indeholder disse data bare ikke alt det, du skal bruge for at få svar på nogle af dine vigtigste spørgsmål. Det kan målinger hjælpe dig med.
 
-Målinger bruges i nogle af de mest almindelige dataanalyser. Det er f.eks. sum, gennemsnit, minimum- og maksimumværdier, optællinger eller mere avancerede beregninger, som du selv opretter vha. en DAX-formel. De beregnede resultater fra målinger ændres altid som reaktion på din interaktion med dine rapporter. Det giver mulighed hurtig og dynamisk dataudforskning ad hoc. Lad os se nærmere på det.
+Målinger bruges i nogle af de mest almindelige dataanalyser. Enkle opsummeringer, f.eks. sum, gennemsnit, minimum, maksimum og antal, kan angives via feltbrønden, som beskrevet i videoen [Opsummering og kategori](https://docs.microsoft.com/power-bi/guided-learning/visualizations?tutorial-step=16). Du kan selv oprette mere avancerede beregninger ved hjælp af en DAX-formel. De beregnede resultater fra målinger ændres altid som reaktion på din interaktion med dine rapporter. Det giver mulighed hurtig og dynamisk dataudforskning ad hoc. Lad os se nærmere på det.
 
 ## <a name="understanding-measures"></a>Om målinger
 
-I **Power BI Desktop** oprettes og bruges målinger i **Rapportvisning** eller **Datavisning**. Målinger, som du selv har oprettet, vises på listen Felter med et lommeregnerikon. Du kan navngive målinger, som du ønsker det, og føje dem til en ny eller eksisterende visualisering på samme måde som alle andre felter.
+I **Power BI Desktop** oprettes målinger, og de vises i **Rapportvisning** eller **Datavisning**. Målinger, som du selv har oprettet, vises på listen Felter med et lommeregnerikon. Du kan navngive målinger, som du ønsker det, og føje dem til en ny eller eksisterende visualisering på samme måde som alle andre felter.
 
 ![](media/desktop-measures/measuresinpbid_measinfieldlist.png)
 
@@ -64,6 +64,25 @@ Du kan også vælge datakategorier til målinger.
 Blandt andet kan du bruge målinger til at oprette URL-adresser dynamisk og markere datakategorien som en URL-adresse. 
 
 Du kan oprette tabeller, der vises målingerne som URL-adresser, og du kan klikke på den URL-adresse, der er oprettet ud fra dine valg. Dette er især nyttigt, når du vil oprette links til andre Power BI-rapporter med [URL-filterparametre](service-url-filters.md).
+
+
+## <a name="organizing-your-measures"></a>Organisering af dine målinger
+
+Målinger har en *hjemmetabel*, der definerer, hvor de findes på feltlisten. Du kan ændre deres placering ved at vælge en placering blandt tabellerne i din model.
+
+![Vælg en tabel til din måling](media/desktop-measures/measures-03.png)
+
+Du kan også organisere felter i en tabel i *visningsmapper.* Vælg **Modelvisning** i venstre side af vinduet Power BI Desktop, og vælg derefter det felt, du vil flytte, på listen over tilgængelige felter, der vises på lærredet. I egenskabsruden vises der et tekstfelt for **Visningsmappe**. Hvis du skriver et navn i feltet **Visningsmappe**, oprettes mappen, og det valgte felt flyttes til den pågældende mappe.
+
+![Opret et felt til målinger](media/desktop-measures/measures-04.gif)
+
+Du kan oprette undermapper ved hjælp af en omvendt skråstreg. *Finance\Currencies* opretter f.eks. en *Finance*-mappe og deri en *Currencies*-mappe.
+
+Du kan få vist et felt i flere mapper ved at bruge et semikolon til at adskille mappenavnene. *Products\Names;Departments* medfører f.eks., at feltet vises i en *Departments*-mappe samt i en *Names*-mappe, der findes i en *Products*-mappe.
+
+Endelig kan du oprette en specialtabel, der kun indeholder de målinger, der altid vises øverst på **feltlisten**. Det gør du ved at oprette en tabel med kun én kolonne. Du kan bruge **Angiv data** til at oprette tabellen. Flyt derefter dine målinger til denne tabel. Til sidst skal du skjule den kolonne (ikke den tabel), du har oprettet. Du skal lukke og åbne **feltlisten** igen, hvis du vil have den vist korrekt i Power BI Desktop. Det gør du ved at klikke på dobbeltvinklen øverst på **feltlisten**.
+
+![Organiser målinger, og opbevar dem oven på feltlisten](media/desktop-measures/measures-05.png)
 
 ## <a name="learn-more"></a>Få mere at vide
 Vi har kun givet en hurtig introduktion til målinger her, men der er mange flere oplysninger, der kan hjælpe dig med at få mere at vide om, hvordan du opretter dine egne målinger. Husk at se [Selvstudium: Opret dine egne målinger i Power BI Desktop](desktop-tutorial-create-measures.md), hvor du kan downloade en eksempelfil og få trinvise vejledninger i, hvordan du opretter flere målinger.  

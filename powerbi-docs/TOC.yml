@@ -629,7 +629,7 @@
               href: service-admin-manage-your-data-storage-in-power-bi.md
             - name: Opret forbindelse til filer på din gruppes OneDrive
               href: service-connect-to-files-in-app-workspace-onedrive-for-business.md
-            - name: Samarbejd i din gruppes arbejdsområde
+            - name: Samarbejd i et klassisk arbejdsområde
               href: service-collaborate-power-bi-workspace.md
             - name: Administrer din gruppe i Power BI og Office 365
               href: service-manage-app-workspace-in-power-bi-and-office-365.md

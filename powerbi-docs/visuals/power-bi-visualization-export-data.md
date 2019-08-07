@@ -8,15 +8,15 @@ featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/19/2019
+ms.date: 07/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 86a3faf2095ff5100bc372a68b7d56861eb94806
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 21fa3c5c3907e8c1aa4d40bd3e6332c77ff62b98
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523343"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730070"
 ---
 # <a name="export-data-from-visualizations"></a>Eksportér data fra visualiseringer
 
@@ -79,6 +79,8 @@ Hvis du vil følge med, skal du åbne [eksempelrapporten med en indkøbsanalyse]
     ![Skærmbillede af Eksportér data, hvor indstillingerne Opsummerede data, xlsx og Eksportér vises.](media/power-bi-visualization-export-data/power-bi-export-data5.png)
 
     Hvis du har anvendt filtre på visualiseringen, vil de eksporterede data være filtreret. Når du vælger **Eksportér**, bliver du i browseren bedt om at gemme filen. Når du har gemt den, skal du åbne filen i Excel.
+    
+    Alle de data, der bruges af hierarkiet, eksporteres, og ikke blot de data, der bruges til det aktuelle detaljeniveau for visualiseringen. Hvis visualiseringen f.eks. endnu ikke er blevet analyseret ned fra det øverste niveau, vil de eksporterede data indeholde alle dataene i hierarkiet, og ikke kun de data, der bruges til at oprette visualiseringen på det aktuelt analyserede niveau.
 
     **Opsummerede data**: Vælg denne indstilling, hvis du vil eksportere dataene til det, du ser i visualiseringen.  Denne type eksport viser kun de data, (kolonner og målinger), du vælger for at oprette visualiseringen.  Hvis visualiseringen har en aggregering, skal du eksportere aggregerede data. Hvis du f.eks. har et søjlediagram med fire søjler, vises der fire rækker med data. Opsummerede data er tilgængelige som *.xlsx* og *.csv*.
 
@@ -92,6 +94,8 @@ Hvis du vil følge med, skal du åbne [eksempelrapporten med en indkøbsanalyse]
     > Afhængigt af rapportindstillinger har du mulighed for at eksportere de underliggende data.
 
     Hvis du har anvendt filtre på visualiseringen, vil de eksporterede data være filtreret. Når du vælger **Eksportér**, bliver du i browseren bedt om at gemme filen. Når du har gemt den, skal du åbne filen i Excel.
+    
+    Alle de data, der bruges af hierarkiet, eksporteres, og ikke blot de data, der bruges til det aktuelle detaljeniveau for visualiseringen. Hvis visualiseringen f.eks. endnu ikke er blevet analyseret ned fra det øverste niveau, vil de eksporterede data indeholde alle dataene i hierarkiet, og ikke kun de data, der bruges til at oprette visualiseringen på det aktuelt analyserede niveau.
 
     >[!WARNING]
     >Eksport af underliggende data giver brugerne mulighed at se alle de detaljerede data – for alle kolonner i dataene. Administratorer af Power BI-tjenesten kan slå denne funktion fra for deres organisation. Hvis du ejer datasættet, kan du angive, at beskyttede kolonner skal være **skjult**, så de ikke vises på listen **Felter** i Desktop- eller Power BI-tjenesten.

@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 06/18/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: d1a057f56237a0609f3330d4728c7dfcded84a71
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 1e836dd9fe4be1c0267a0ba4008c2455cf59e2e2
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391131"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665392"
 ---
 # <a name="bring-your-own-encryption-keys-for-power-bi-preview"></a>Medbring dine egne krypteringsnøgler til Power BI (prøveversion)
 
@@ -64,6 +64,9 @@ I vejledningen i dette afsnit antages det, at du har grundlæggende viden om Azu
     ![Komponenter i PBIX-fil](media/service-encryption-byok/service-principal.png)
 
 1. Vælg **OK** og derefter **Gem**.
+
+> [!NOTE]
+> Hvis du vil tilbagekalde Power BI-adgangen til dine data i fremtiden, skal du fjerne adgangsrettighederne til denne tjenesteprincipal fra din Azure Key Vault.
 
 ### <a name="create-an-rsa-key"></a>Opret en RSA-nøgle
 
