@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: b61d794701d18fd25ab9acb5d5208ae289376eb6
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: a09388e8b22131c9b82771385b69142b18e3cc84
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271756"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730012"
 ---
 # <a name="manage-your-data-source---sap-hana"></a>Administrer din datakilde – SAP HANA
 
@@ -32,7 +32,7 @@ Du kan finde oplysninger om, hvordan du tilføjer en datakilde i [Tilføj en dat
 Når du har valgt SAP HANA-datakildetypen, skal du derefter udfylde oplysninger om **Server**, **Brugernavn** og **Adgangskode** for datakilden.
 
 > [!NOTE]
-> Alle forespørgsler til datakilden kører ved hjælp af disse legitimationsoplysninger. Hvis du vil have mere at vide om, hvor legitimationsoplysningerne gemmes, skal du se [Lagring af krypterede legitimationsoplysninger i cloudmiljøet](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud).
+> Alle forespørgsler til datakilden kører ved hjælp af disse legitimationsoplysninger. Hvis du vil have mere at vide om, hvor legitimationsoplysningerne gemmes, skal du se [Lagring af krypterede legitimationsoplysninger i cloudmiljøet](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
 ![Angivelse af indstillinger for datakilden](media/service-gateway-enterprise-manage-sap/datasourcesettings3-sap.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Integreret analyse for at integrere Power BI-indhold i dit program for din organisation
-description: Få mere at vide om, hvordan du integrerer en rapport, et dashboard eller et felt i et program ved hjælp af Power BI-API'er til integreret analyse for din organisation. Få mere at vide om, hvordan du integrerer Power BI i dit program ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence.
+description: Få mere at vide om, hvordan du integrerer en rapport (Power BI eller sideinddelt), et dashboard eller et felt i et program ved hjælp af Power BI-API'er til integreret analyse for din organisation. Få mere at vide om, hvordan du integrerer Power BI i dit program ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence.
 author: rkarlin
 ms.author: rkarlin
 manager: kfile
@@ -9,24 +9,24 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
-ms.date: 04/02/2019
-ms.openlocfilehash: 53311929aa6277efd621fb2b944ea062ab99999d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 07/29/2019
+ms.openlocfilehash: 02e11e167d859d3ef23124fed4f9f699766db8fe
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61354881"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665541"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Selvstudium: Integrer Power BI-indhold i en app til din organisation
 
-I **Power BI** kan du integrere rapporter, dashboards eller felter i et program ved hjælp af funktionen "brugeren ejer data". Ved hjælp af funktionen **Brugeren ejer data** kan programmet udvide Power BI-tjenesten til at bruge integreret analyse. Dette selvstudium viser, hvordan du integrerer en rapport i et program. Du kan bruge Power BI .NET SDK med Power BI JavaScript-API'en til at integrere Power BI i et program for din organisation.
+I **Power BI** kan du integrere rapporter (Power BI eller sideinddelte), dashboards eller felter i et program ved hjælp af funktionen "brugeren ejer data". Ved hjælp af funktionen **Brugeren ejer data** kan programmet udvide Power BI-tjenesten til at bruge integreret analyse. Dette selvstudium viser, hvordan du integrerer en rapport (Power BI eller sideinddelt) i et program. Du kan bruge Power BI .NET SDK med Power BI JavaScript-API'en til at integrere Power BI i et program for din organisation.
 
 ![Integrer Power BI-rapport](media/embed-sample-for-your-organization/embed-sample-for-your-organization-035.png)
 
 I dette selvstudium får du at vide, hvordan du udfører følgende opgaver:
 > [!div class="checklist"]
 > * Registrere en app i Azure.
-> * Integrer en Power BI-rapport i et program ved hjælp af din Power BI-lejer.
+> * Integrer en Power BI- eller sideinddelt rapport i et program ved hjælp af din Power BI-lejer.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
@@ -35,6 +35,7 @@ Du skal have følgende for at komme i gang:
 * En [Power BI Pro-konto](../service-self-service-signup-for-power-bi.md).
 * Et [Microsoft Azure](https://azure.microsoft.com/)-abonnement.
 * Du skal have din egen konfiguration af [Azure Active Directory-lejer](create-an-azure-active-directory-tenant.md).
+* Hvis du vil integrere sideinddelte rapporter, skal du som minimum have A4/P1-kapacitet. Se [Hvilken størrelse Premium-kapacitet skal jeg bruge til sideinddelte rapporter?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
 
 Hvis du ikke er tilmeldt **Power BI Pro**, kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/pricing/), før du begynder.
 
@@ -44,9 +45,9 @@ Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://
 
 Før du begynder at integrere rapporter, dashboards eller felter i dit program, skal du sikre dig, at du kan integrere med Power BI i dit miljø.
 
-Du kan gennemgå [værktøjet til konfiguration af integrering](https://aka.ms/embedsetup/UserOwnsData) for hurtigt at komme i gang med og downloade et eksempelprogram, der hjælper dig med at oprette et miljø og integrere en rapport.
+Du kan gennemgå [værktøjet til konfiguration af integrering](https://aka.ms/embedsetup/UserOwnsData) for hurtigt at komme i gang med og downloade et eksempelprogram, der hjælper dig med at oprette et miljø og integrere en rapport. Hvis du vil integrere en sideinddelt rapport, skal du som minimum tildele A4/P1-kapacitet til det oprettede app-arbejdsområde.
 
-Hvis du vælger at konfigurere miljøet manuelt, kan du dog fortsætte nedenfor.
+Hvis du vælger at konfigurere miljøet manuelt, kan du fortsætte nedenfor.
 
 ### <a name="register-an-application-in-azure-active-directory"></a>Registrer et program i Microsoft Azure Active Directory
 
@@ -60,7 +61,7 @@ Du skal fortsætte med at registrere en app med et **serverbaseret webprogram**.
 
 Hvis du integrerer rapporter, dashboards eller felter for dine kunder, skal du placere dit indhold i et apparbejdsområde. Der er forskellige typer arbejdsområder, som du kan konfigurere: [traditionelle arbejdsområder](../service-create-workspaces.md) eller [nye arbejdsområder](../service-create-the-new-workspaces.md).
 
-### <a name="create-and-publish-your-reports"></a>Opret og udgiv dine rapporter
+### <a name="create-and-publish-your-power-bi-reports"></a>Opret og udgiv dine Power BI-rapporter
 
 Du kan oprette dine rapporter og datasæt ved hjælp af Power BI Desktop. Du kan derefter udgive rapporterne i et apparbejdsområde. Den slutbruger, der udgiver rapporterne, skal have en Power BI Pro-licens for at kunne udgive til et apparbejdsområde.
 
@@ -79,7 +80,11 @@ Du kan oprette dine rapporter og datasæt ved hjælp af Power BI Desktop. Du kan
     Nu kan du se rapporten online i Power BI-tjenesten.
 
    ![Få vist en Power BI Desktop-rapport](media/embed-sample-for-your-organization/embed-sample-for-your-organization-029.png)
+   
+### <a name="create-and-publish-your-paginated-reports"></a>Opret og udgiv dine sideinddelte rapporter
 
+Du kan oprette dine sideinddelte rapporter ved hjælp af [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Derefter kan du [overføre rapporten](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) til et app-arbejdsområde, der som minimum har A4/P1-kapacitet. Den slutbruger, der har uploadet rapporten, skal have en Power BI Pro-licens for at kunne publicere til et app-arbejdsområde.
+   
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Integrer dit indhold ved hjælp af eksempelprogrammet
 
 Dette eksempel er med vilje enkelt, da det kun skal bruges til demonstrationen.
@@ -124,30 +129,6 @@ Hvis du vil hente **applicationId**, skal du følge disse trin:
 
     ![applicationId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-043.png)
 
-### <a name="application-secret"></a>Programhemmelighed
-
-Denne attribut bruges kun til [tjenesteprincipalen](embed-service-principal.md) som AuthenticationType.
-
-Udfyld oplysningerne for **ApplicationSecret** ud fra sektionen **Nøgler** i sektionen **Appregistreringer** i **Azure**.  Denne attribut fungerer, når du bruger [tjenesteprincipal](embed-service-principal.md).
-
-Hvis du vil hente **ApplicationSecret**, skal du følge disse trin:
-
-1. Log på [Azure Portal](https://portal.azure.com).
-
-2. Vælg **Alle tjenester** i navigationsruden til venstre, og vælg derefter **Programregistreringer**.
-
-3. Vælg programmet, der skal bruge **ApplicationSecret**.
-
-    ![Vælg en app](media/embed-sample-for-your-organization/embed-sample-for-your-organization-042.png)
-
-4. Vælg **certifikater og hemmeligheder** under **Administrer**.
-
-5. Vælg **nye klienthemmelighed**.
-
-6. Angiv et navn i feltet **Beskrivelse**, og vælg en varighed. Vælg derefter **Gem** for at hente **værdien** til dit program. Når du lukker ruden **Nøgler** efter at have gemt nøgleværdien, vises feltet med værdien kun som skjult. På det tidspunkt kan du ikke hente nøgleværdien. Hvis du mister nøgleværdien, skal du oprette en ny i Azure Portal.
-
-    ![Nøgleværdi](media/embed-sample-for-your-organization/embed-sample-for-your-organization-046.png)
-
 ### <a name="workspace-id"></a>Id for arbejdsområde
 
 Udfyld oplysningerne for **workspaceId** med GUID for programarbejdsområdet fra Power BI. Du kan få disse oplysninger enten fra URL-adressen, når du er logget på Power BI-tjenesten, eller ved hjælp af Powershell.
@@ -168,9 +149,17 @@ Get-PowerBIworkspace -name "User Owns Embed Test"
 
 Udfyld **reportId** med GUID for rapporten fra Power BI. Du kan få disse oplysninger enten fra URL-adressen, når du er logget på Power BI-tjenesten, eller ved hjælp af Powershell.
 
-URL-adresse <br>
+URL til Power BI-rapport <br>
 
-![reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
+![PBI-reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
+
+URL til sideinddelt rapport <br>
+
+
+
+URL til sideinddelt rapport<br>
+
+![Sideinddelt reportId](media/embed-sample-for-your-organization/paginated-reports-url.png)
 
 PowerShell <br>
 
@@ -214,7 +203,7 @@ I programmet skal du hente et adgangstoken fra Microsoft Azure Active Directory,
 
 ### <a name="get-a-report"></a>Hent en rapport
 
-Du henter en Power BI-rapport ved at bruge handlingen [Hent rapporter](https://docs.microsoft.com/rest/api/power-bi/reports/getreports), hvilket bevirker, at der hentes en liste over Power BI-rapporter. Du kan få et rapport-id fra listen over rapporter.
+Du henter en Power BI eller sideinddelt rapport ved at bruge handlingen [Hent rapporter](https://docs.microsoft.com/rest/api/power-bi/reports/getreports), hvilket bevirker, at der hentes en liste over Power BI og sideinddelte rapporter. Du kan få et rapport-id fra listen over rapporter.
 
 ### <a name="get-reports-by-using-an-access-token"></a>Hent rapporter ved hjælp af et adgangstoken
 
@@ -275,6 +264,7 @@ public class PBIReports
 public class PBIReport
 {
     public string id { get; set; }
+    public string reportType { get; set }
     public string name { get; set; }
     public string webUrl { get; set; }
     public string embedUrl { get; set; }
@@ -394,7 +384,7 @@ Nu, hvor du er færdig med at udvikle dit program, er tiden kommet til at underb
 
 ### <a name="create-a-dedicated-capacity"></a>Opret en dedikeret kapacitet
 
-Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for indholdet i dit apparbejdsområde. Du kan oprette en dedikeret kapacitet ved hjælp af [Power BI Premium ](../service-premium-what-is.md).
+Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for indholdet i dit apparbejdsområde. I forbindelse med sideinddelte rapporter skal du som minimum understøtte dit app-arbejdsområde med A4/P1-kapacitet. Du kan oprette en dedikeret kapacitet ved hjælp af [Power BI Premium](../service-premium-what-is.md).
 
 I tabellen nedenfor kan du se en oversigt over de Power BI Premium-SKU'er, der er tilgængelige i [Microsoft Office 365](../service-admin-premium-purchase.md):
 
@@ -435,7 +425,7 @@ Globale administratorer, eller Power BI-tjenesteadministratorer, kan slå muligh
 
 ## <a name="next-steps"></a>Næste trin
 
-I dette selvstudium har du fået at vide, hvordan du integrerer Power BI-indhold i et program ved hjælp af din Power BI-organisationskonto. Nu kan du prøve at integrere Power BI-indhold i et program ved hjælp af apps. Du kan også prøve at integrere Power BI-indhold for din kunder:
+I dette selvstudium har du fået at vide, hvordan du integrerer Power BI-indhold i et program ved hjælp af din Power BI-organisationskonto. Nu kan du prøve at integrere Power BI-indhold i et program ved hjælp af apps. Du kan også prøve at integrere Power BI-indhold til dine kunder (understøttes endnu ikke for integrering af sideinddelte rapporter):
 
 > [!div class="nextstepaction"]
 > [Integrer fra apps](embed-from-apps.md)

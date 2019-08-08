@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: d7d3bf85661284835271b68c476ee53ec2c474bc
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 031274f4f35ef1e36ec17648c2cbf967f5436020
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751127"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68729798"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -45,6 +45,10 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
             - Nemmere link i forbindelse med at navigere tilbage er føjet til vinduet Valg i PBIRS
             - Rettelse til tilstanden Høj kontrast i PBIRS, så knappen Tilbage vises, vis visuelle advarselsmeddelelser.
             - Rettelser af brugergrænsefladen for ruden Valg, skalering af lærred.
+
+    - *Version: 2.69.5467.5201 (maj 2019), udgivet: Juli 30, 2019*
+        - Fejlrettelser
+            - Rettelse af forkert telemetri-logføring
 
 ## <a name="january-2019"></a>Januar 2019
 
@@ -93,8 +97,11 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
         - Genvej og fastgjorte ikoner bevares efter fjernelse af Power BI-rapportserver
         - Rettelse af fastgørelse af Power BI-rapportserver til startmenuen, som medfører sort tekst på et sort ikon
 
-    - *Version: 2.65.5313.1421 (januar 2019), udgivet: 22. januar, 2019*
-        - Indeholder ændringer, der er påkrævet for at oprette forbindelse til Power BI-rapportserver (januar 2019)  
+    - *Version: 2.65.5313.1421 (januar 2019), udgivet: Januar 22, 2019* (nyt build og ny version)
+        - Indeholder ændringer, der er påkrævet for at oprette forbindelse til Power BI-rapportserver (januar 2019) 
+    - *Version: 2.65.5313.5141 (januar 2019), udgivet: Juli 31, 2019* (nyt build og ny version)
+        - Fejlrettelser
+            - Rettelse af forkert telemetri-logføring
 
 ## <a name="august-2018"></a>August 2018
 

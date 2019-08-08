@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/18/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 775abf014f571b508832c5cb9a52a62aad455a7b
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: fcad10a77ad531562443470296c9d712b2aa9724
+ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68324802"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68757602"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Brug DirectQuery i Power BI Desktop
 Når du opretter forbindelse til din datakilde i **Power BI Desktop**, er det altid muligt at importere en kopi af dataene til **Power BI Desktop**. For nogle datakilder findes der en anden mulighed: du kan oprette direkte forbindelse til datakilden med **DirectQuery**.
@@ -62,10 +62,9 @@ Der skal tages højde for følgende tre punkter, når der bruges **DirectQuery**
   
   Der skal også tages højde for belastningen af kildedatabasen baseret på, hvor mange Power BI-brugere der skal bruge den publicerede rapport. Når der bruges *Sikkerhed på rækkeniveau*, kan det også have en stor indflydelse. Hvis flere brugere deles om et dashboardfelt, der ikke bruger sikkerhed på rækkeniveau, medfører det en enkelt forespørgsel til databasen. Hvis der bruges sikkerhed på rækkeniveau for et dashboardfelt, vil det som regel medføre, at opdatering af feltet kræver en forespørgsel *pr. bruger*, og det vil give en væsentlig større belastning af kildedatabasen og potentielt påvirke ydeevnen.
   
-  Power BI opretter forespørgsler, der er så effektive som muligt. I visse situationer vil den genererede forespørgsel muligvis ikke være tilstrækkeligt effektiv til at undgå, at en opdatering medfører fejl. Et eksempel på denne situation er, når den genererede forespørgsel henter et stort antal rækker (mere end 1 million) fra backend-datakilden, hvilket vil give følgende fejl:
+  Power BI opretter forespørgsler, der er så effektive som muligt. I visse situationer vil den genererede forespørgsel muligvis ikke være tilstrækkeligt effektiv til at undgå, at en opdatering medfører fejl. Et eksempel på denne situation er, når den genererede forespørgsel henter et stort antal rækker fra backend-datakilden, hvilket vil give følgende fejl:
   
       The resultset of a query to external data source has exceeded
-      the maximum allowed size of '1000000' rows.
   
   Denne situation kan opstå med et simpelt diagram, der indeholder en kolonne med høj kardinalitet, hvor indstillingen for aggregering er angivet til *Opsummer ikke*. Visualiseringen skal kun have kolonner med en kardinalitet under 1 million, eller der skal være anvendt relevante filtre.
 * **Sikkerhed** – Alle de brugere, der anvender en publiceret rapport, opretter forbindelse til backend-datakilden ved hjælp af de legitimationsoplysninger, der angives efter publiceringen til Power BI-tjenesten. Det er samme situation som for de data, der er importeret: alle brugere ser de samme data, uanset hvilke sikkerhedsregler der er defineret i backend-kilden. Kunder, der ønsker sikkerhed pr. bruger implementeret med DirectQuery-kilder, skal bruge RLS. [Få mere at vide om RLS](service-admin-rls.md).

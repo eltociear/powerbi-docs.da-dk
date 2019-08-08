@@ -10,48 +10,50 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 16b96d91a9dd37fa8a502bbcca772438c703cb63
-ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
-ms.translationtype: MT
+ms.openlocfilehash: 7d5d743dda31d05df0beb528648c5a43ffc6b335
+ms.sourcegitcommit: 32a44dd17a44ccfd4a2d86a0d235251c2fda1c5c
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412993"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68702103"
 ---
 # <a name="connector-extensibility-in-power-bi"></a>Forbindelsesudvidelse i Power BI
 
-I Power BI, kan kunder og -udviklere udvide de datakilder, som de opretter forbindelse på mange måder. De kan bruge eksisterende forbindelser og generiske datakilder (f.eks ODBC, OData, Oledb, Web-, CSV, XML, JSON). Eller, udviklere oprette dataudvidelser, der refereres til som **brugerdefinerede Connectors**, og gør dem **certificerede forbindelser**.
+I Power BI kan kunder og udviklere udvide de datakilder, som de opretter forbindelse til, på mange måder. De bruger eksisterende connectors og generiske datakilder (f.eks. ODBC, OData, Oledb, Web, CSV, XML og JSON). Eller udviklere opretter dataudvidelser kaldet **brugerdefinerede connectors** og gør dem til **certificerede forbindelser**.
 
-I øjeblikket kan du aktivere **brugerdefinerede Connectors** ved hjælp af en menu, der giver dig mulighed for sikkert styrer adgangsniveauet brugerdefineret kode, du ønsker, at køre på systemet. Du kan vælge alle brugerdefinerede connectors eller kun forbindelser certificeret og distribueres af Microsoft i den **Hent Data** dialog.
+I øjeblikket aktiverer du **brugerdefinerede connectors** ved hjælp af en menu, der gør det muligt for dig sikkert at styre det niveau af brugerdefineret kode, som du tillader at køre på systemet. Du kan vælge alle brugerdefinerede connectors eller kun connectors, som er certificeret og distribueret af Microsoft, i dialogboksen **Hent data**.
 
 ## <a name="custom-connectors"></a>Brugerdefinerede forbindelser
 
-**Brugerdefinerede Connectors** kan indeholde en bred vifte af muligheder, lige fra små API'er, der er vigtige for din virksomhed, til store branchespecifikke tjenester, som Microsoft ikke har udgivet en forbindelse til. Mange connectorer distribueres af leverandøren. Hvis du har behov for en bestemt forbindelse, skal du kontakte en leverandør.
+**Brugerdefinerede forbindelser** kan inkludere en bred vifte af muligheder lige fra små API'er, som er vigtige for din virksomhed, til store branchespecifikke tjenester, som Microsoft ikke har frigivet en forbindelse til. Mange connectors distribueres af leverandøren. Hvis du har brug for en bestemt dataconnector, skal du kontakte en leverandør.
 
-At bruge en **brugerdefineret forbindelseskomponent**, placeres i den  *\[dokumenter]\\Power BI Desktop\\brugerdefinerede Connectors* -mappe, og Juster sikkerhedsindstillingerne, som beskrevet i i følgende afsnit.
+Hvis du vil bruge en **brugerdefineret forbindelse**, skal du placere den i mappen *\[Dokumenter]\\Power BI Desktop\\Custom Connectors* og tilpasse sikkerhedsindstillingerne som beskrevet i følgende afsnit.
 
 Du behøver ikke at justere sikkerhedsindstillingerne for at bruge **certificerede forbindelser**.
 
 ## <a name="data-extension-security"></a>Sikkerhed for dataudvidelse
 
-Ændre data udvidelse sikkerhedsindstillinger, **Power BI Desktop** Vælg **fil > Indstillinger > Indstillinger > Sikkerhed**.
+Hvis du vil ændre sikkerhedsindstillingerne for en dataudvidelse i **Power BI Desktop**, skal du vælge **Fil > Indstillinger > Indstillinger > Sikkerhed**.
 
-![Styre, om du vil indlæse brugerdefinerede forbindelser med indstillinger for udvidelse af datasikkerhed](media/desktop-connector-extensibility/data-extension-security-1.png)
+![Du kan styre, om du vil indlæse brugerdefinerede forbindelser med indstillingerne under Sikkerhed for dataudvidelse](media/desktop-connector-extensibility/data-extension-security-1.png)
 
 Under **Dataudvidelser** kan du vælge mellem to niveauer af sikkerhed:
 
 * (Anbefalet) Tillad kun, at certificerede udvidelser indlæses
 * (Ikke anbefalet) Tillad, at alle udvidelser indlæses uden advarsel
 
-Hvis du planlægger at bruge **brugerdefinerede Connectors** eller forbindelser, som du eller en tredjepart har udviklet, skal du vælge **"(Not Recommended) Tillad alle udvidelser til at indlæse uden advarsel"** . Vi anbefaler ikke denne sikkerhedsindstilling, medmindre du har fuld tillid til din brugerdefinerede Connectors. Da koden, der kan håndtere de legitimationsoplysninger, herunder at sende dem via HTTP, og Ignorer niveauerne for beskyttelse af personlige oplysninger.
+Hvis du planlægger at bruge **brugerdefinerede forbindelser** eller forbindelser, som du eller en tredjepart har udviklet, skal du vælge **(Ikke anbefalet) Tillad, at alle udvidelser indlæses uden advarsel**. Vi anbefaler ikke denne sikkerhedsindstilling, medmindre du har fuld tillid til dine brugerdefinerede forbindelser. Det skyldes, at koden kan håndtere legitimationsoplysninger, herunder sende dem via HTTP, og ignorere beskyttelsesniveauer.
 
-På den **"(anbefales)"** sikkerhed indstilling, hvis der er brugerdefinerede connectorer på systemet, vises der en fejl, der beskriver de forbindelser, der ikke kan indlæses på grund af sikkerhed.
+Hvis der er brugerdefinerede connectors på computeren, får du vist fejlmeddelelsen "(anbefales)", får du fejlen "følgende connector er ikke certificeret, og vi kan ikke bekræfte, at den er sikker at bruge" efterfulgt af en liste over forbindelser, der ikke kan indlæses sikkert, ved sikkerhedsindstillingen **"(Anbefalet)"** .
 
-![En dialogboks, der beskriver brugerdefinerede Connectors, der ikke kan indlæses på grund af sikkerhedsindstillinger, i dette tilfælde TripPin](media/desktop-connector-extensibility/data-extension-security-2.png)
+![Der åbnes en dialogboks med en beskrivelse af, hvilke brugerdefinerede connectors der ikke kan indlæses pga. sikkerhedsindstillingerne – i dette tilfælde forbindelsen TripPin](media/desktop-connector-extensibility/data-extension-security-2.png)
 
-For at løse fejlen, og bruge disse forbindelser, skal du ændre dine indstillinger for at den **"(Not Recommended) Tillad alle udvidelser til at indlæse uden advarsel"** indstilling, som beskrevet tidligere. Genstart derefter **Power BI Desktop**.
+Hvis du vil løse fejlen uden at ændre sikkerheden, skal du fjerne de usignerede connectors fra mappen 'Custom connectors'.
+
+Hvis du vil løse fejlen og bruge disse forbindelser, skal du ændre dine sikkerhedsindstillinger til indstillingen **"(Ikke anbefalet) Tillad indlæsning af alle udvidelser uden advarsel"** som tidligere beskrevet. Genstart derefter **Power BI Desktop**.
 
 ## <a name="certified-connectors"></a>Certificerede forbindelser
 
-Betragtes som en begrænset undersæt af dataudvidelser **Certified**. Få adgang til de certificerede forbindelser i den **Hent Data** dialog. Men, der oprettede connectoren tredjeparter udvikleren er ansvarlig for sin vedligeholdelse og support. Det er ikke ansvarlig for deres ydeevne eller fortsatte funktionen, mens Microsoft distribuerer forbindelserne.
+Et begrænset undersæt af dataudvidelser anses som **certificerede**. Få adgang til de certificerede connectors i dialogboksen **Hent data**. Men den tredjepartsudvikler, der oprettede connectoren, er ansvarlig for dens vedligeholdelse og support. Selvom Microsoft distribuerer disse connectors, er de ikke ansvarlige for deres ydeevne og fortsatte funktion.
 
 Hvis du vil certificere en brugerdefineret forbindelse, skal du få din leverandør til at kontakte dataconnectors@microsoft.com.

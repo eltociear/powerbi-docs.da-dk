@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: cf9b3335b10b7a2cd3abcc3f02c651ed4416184e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: cb21d3baf9523a90b0446b44704587b5af73904f
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269653"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623794"
 ---
 # <a name="publish-custom-visuals-to-appsource"></a>Publicer brugerdefinerede visuals i AppSource
 
@@ -22,7 +22,7 @@ Få mere at vide om, hvordan du kan udgive din brugerdefinerede visual i AppSour
 
 Når du har oprettet en brugerdefineret visual, kan du udgive den i AppSource, så andre kan finde og bruge den. Det kræver nogle forberedelser, før du kan gøre det. Du kan finde flere oplysninger om, hvordan du opretter en brugerdefineret visualisering, under [Udvikling af en brugerdefineret visualisering i Power BI](custom-visual-develop-tutorial.md).
 
-   ![Office Store](media/office-store/AppSource_01.jpg)
+   ![Office Store](media/office-store/appsource-01.png)
 
 ## <a name="what-is-appsource"></a>Hvad er AppSource?
 
@@ -30,7 +30,7 @@ Når du har oprettet en brugerdefineret visual, kan du udgive den i AppSource, s
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Forberedelser, inden du indsender en brugerdefineret visualisering
 
-Når du er færdig læsning vores [retningslinjer for Power BI-visualiseringer](guidelines-powerbi-visuals.md), kodning og [teste den brugerdefinerede visualisering](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md) og har føjet den til en pbiviz-fil, skal du også have følgende klar til din indsendelse.
+Når du er færdig med at læse vores [retningslinjer for Power BI-visuals](guidelines-powerbi-visuals.md) samt kode og [teste den brugerdefinerede visual](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md), og du har føjet den til en pbiviz-fil, skal du sørge for at have følgende klar, når du vil indsende den.
 
 | Element | Påkrævet | Beskrivelse |
 | --- | --- | --- |

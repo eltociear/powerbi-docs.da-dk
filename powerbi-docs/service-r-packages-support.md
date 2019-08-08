@@ -11,15 +11,15 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 76361bba2690e0ab6ae8fa49008d7a6accae900e
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: 60d97d8b2226e9a3f9aba2bf043bd9c6aade161a
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325075"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665323"
 ---
 # <a name="r-packages-in-the-power-bi-service"></a>R-pakker i Power BI-tjenesten
-Du kan bruge det effektive [R-programmeringssprog](https://www.r-project.org/) til at skabe visualiseringer i Power BI-tjenesten. Mange R-pakker understøttes i Power BI-tjenesten (og der understøttes hele tiden flere og flere), og nogle pakker understøttes ikke.
+Du kan bruge det effektive [R-programmeringssprog](https://www.r-project.org/) til at skabe visuelle elementer i Power BI-tjenesten. Mange R-pakker understøttes i Power BI-tjenesten (og der understøttes hele tiden flere og flere), og nogle pakker understøttes ikke.
 
 De følgende afsnit indeholder en alfabetisk tabel over de R-pakker, der understøttes i Power BI, og dem, der ikke understøttes. Du kan finde flere oplysninger om R i Power BI i artiklen [R-visuals](visuals/service-r-visuals.md).
 
@@ -29,6 +29,7 @@ De R-pakker, der understøttes i **Power BI-tjenesten**, står i følgende afsni
 ## <a name="requirements-and-limitations-of-r-packages"></a>R-pakkers krav og begrænsninger
 Der er en række krav og begrænsninger for R-pakker:
 
+* Nuværende R-runtime: Microsoft R 3.4.4
 * Power BI-tjenesten understøtter i de fleste tilfælde R-pakker med gratis og open source-softwarelicenser, f.eks. GPL-2, GPL-3, MIT+ osv.
 * Power BI-tjenesten understøtter pakker, der er publiceret i CRAN. Tjenesten understøtter ikke private eller brugerdefinerede R-pakker. Brugerne opfordres til at gøre deres private pakker tilgængelige på CRAN, før de anmoder om, at pakken gøres tilgængelig i Power BI tjenesten.
 * Der er to variationer af R-pakker til **Power BI Desktop**:

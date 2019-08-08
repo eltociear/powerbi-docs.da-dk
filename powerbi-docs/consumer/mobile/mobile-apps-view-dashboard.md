@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 06/28/2018
+ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: dc117c9b17e9d20d1e5be6e6fedd18cb7aa3ae61
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 4629b78379ba87d58c31f8102b855e1f62565abd
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61139296"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665513"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Vis dashboards og rapporter i Power BI-mobilappsene
 Gælder for:
 
-| ![iPhone](./media/mobile-apps-view-dashboard/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-view-dashboard/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-view-dashboard/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | ![Windows 10-enheder](./media/mobile-apps-view-dashboard/win-10-logo-50-px.png) |
+| ![iPhone](./media/mobile-apps-view-dashboard/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-view-dashboard/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-view-dashboard/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-apps-view-dashboard/android-tablet-logo-50-px.png) | 
 |:--- |:--- |:--- |:--- |:--- |
-| [iPhone-telefoner](mobile-apps-view-dashboard.md#view-dashboards-on-your-iphone) |[iPad-tablets](mobile-apps-view-dashboard.md#view-dashboards-on-your-ipad) |[Android-telefoner](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone) |[Android-tablets](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-tablet) |[Windows 10-enheder](mobile-apps-view-dashboard.md#view-dashboards-on-your-windows-10-device) |
+| [iPhone-telefoner](mobile-apps-view-dashboard.md#view-dashboards-on-your-iphone) |[iPad-tablets](mobile-apps-view-dashboard.md#view-dashboards-on-your-ipad) |[Android-telefoner](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-phone) |[Android-tablets](mobile-apps-view-dashboard.md#view-dashboards-on-your-android-tablet) |
 
 Dashboards er en portal til din virksomhed og jeres processer. Et dashboard er en oversigt – et samlet sted, hvor du kan se de aktuelle resultater for virksomheden.
 
@@ -145,45 +145,6 @@ Du kan også "klemme sammen" med fingrene for at zoome ind og ud på forskellige
     ![Brødkrumme](./media/mobile-apps-view-dashboard/power-bi-android-tablet-breadcrumb.png)
 
     Du kan også "klemme sammen" med fingrene for at zoome ind og ud på forskellige områder af dit dashboard, og du kan panorere for at navigere i det. Du kan også [trykke på et felt](mobile-tiles-in-the-mobile-apps.md) for at åbne feltet i Fokustilstand og interagere med dine data.
-
-## <a name="view-dashboards-on-your-windows-10-device"></a>Få vist dashboards på din Windows 10-enhed
-1. Åbn Power BI-appen på din Windows 10-enhed, og log på.
-   
-   Skal du først [downloade appen](http://go.microsoft.com/fwlink/?LinkID=526478)?
-2. Tryk på et dashboard for at åbne det.   
-   
-   ![Startside for dashboards](./media/mobile-apps-view-dashboard/power-bi-windows-10-device-dashboard-home.png)
-   
-   * De sorte stjerner viser, hvilke dashboards der er favoritter. 
-   * Notationen under hvert dashboardnavn (i dette tilfælde **MBI**) viser, hvordan dataene i hvert dashboard klassificeres. Læs mere om [dataklassifikation i Power BI](../../service-data-classification.md).
-   
-   Power BI-dashboards ser en smule anderledes ud på din Windows 10-telefon. Alle felterne vises med samme bredde, og de er arrangeret fra top til bund.
-   
-   ![Dashboard i stående format](./media/mobile-apps-view-dashboard/power-bi-windows-10-dashboard-0928.png)
-   
-    Eller du kan dreje telefonen til liggende format for at se dashboardet i liggende format på din telefon.
-   
-   > [!TIP]
-   > Hvis du ejer dashboardet, kan du i Power BI-tjenesten [oprette en visning af dashboardet specifikt til telefoner](../../service-create-dashboard-mobile-phone-view.md) i stående format. 
-   > 
-   > 
-3. I dashboardet kan du:
-   
-   * [Trykke på et felt](mobile-tiles-in-the-mobile-apps.md) for at åbne det og interagere med det.
-   * Trykke på ikonet **Fuld skærm** ![Ikonet Fuld skærm](./media/mobile-apps-view-dashboard/power-bi-windows-10-full-screen-icon.png) for at få vist dit Power BI-dashboard uden kanter eller menuer, for eksempel som visningen **Slideshow** i PowerPoint.
-   * Trykke på ikonet **Inviter** ![Ikonet Inviter](./media/mobile-apps-view-dashboard/pbi_andr_inviteicon.png) for at [dele dit dashboard](mobile-share-dashboard-from-the-mobile-apps.md) med en kollega.
-   * Trykke på stjernen ![Favoritstjerne](././media/mobile-apps-view-dashboard/power-bi-mobile-not-favorite-icon.png) for at [markere dashboardet som en favorit](mobile-apps-favorites.md).
-   * Trykke på ikonet **Fastgør til Start** for at [fastgøre dashboardet til Start-skærmen i Windows](mobile-pin-dashboard-start-screen-windows-10-phone-app.md). 
-4. Hvis du vil tilbage til startsiden for dine dashboards, skal du trykke på dashboardnavnet for at åbne brødkrummesporet og derefter trykke på **Mit arbejdsområde**:
-   
-    ![Brødkrumme](./media/mobile-apps-view-dashboard/power-bi-windows-10-dashboard-breadcrumb.png)
-
-### <a name="view-dashboards-in-landscape-mode-on-your-windows-10-phone"></a>Få vist dashboards i liggende format på din Windows 10-telefon
-Du kan også få vist dashboards i liggende format ved at dreje telefonen. Dashboardlayoutet ændres fra en række felter til at vise hele dashboardet &#150; du kan se alle felterne på dashboardet på samme måde som i Power BI-tjenesten.
-
-![Dashboard i liggende format](./media/mobile-apps-view-dashboard/pbi_iph_landscape.png)
-
-Du kan også "klemme sammen" med fingrene for at zoome ind og ud på forskellige områder af dit dashboard, og du kan panorere for at navigere i det. Du kan også [trykke på et felt](mobile-tiles-in-the-mobile-apps.md) for at åbne feltet i Fokustilstand og interagere med dine data.
 
 ## <a name="create-a-phone-view-of-a-dashboard-in-the-power-bi-service"></a>Opret en telefonvisning af et dashboard i Power BI-tjenesten
 Hvis du ejer dashboardet, kan du *i Power BI-tjenesten* oprette en visning af dashboardet specifikt til telefoner i stående format. 

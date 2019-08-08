@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: b1d84e9de9ae6d6fd8306fce4865977a8d273652
-ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.openlocfilehash: a240d84b20f63542c33bb7cbbb9a9c97af7db2f7
+ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68289936"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68757686"
 ---
 # <a name="use-security-assertion-markup-language-saml-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Brug SAML (Security Assertion Markup Language) til enkeltlogon (SSO) fra Power BI til datakilder i det lokale miljø
 
@@ -33,7 +33,7 @@ Bemærk! Det anbefales på det **kraftigste**, at kryptering for HANA aktiveres,
 
 Hvis du vil bruge SAML, skal du etablere et tillidsforhold mellem de HANA-servere, du vil aktivere SSO for, og den gateway, der fungerer som SAML-identitetsudbyderen (IdP) i dette scenarie. Der er forskellige måder at etablere denne relation på, f.eks. ved at importere X509-certifikatet for gatewayens IdP til HANA-servernes tillidslager eller ved at få signeret X509-certifikatet for gatewayen af et rodnøglecenter, som HANA-serverne har tillid til. Vi beskriver den sidste fremgangsmåde i denne vejledning, men du kan bruge en anden fremgangsmåde, hvis det er nemmere.
 
-Bemærk også, at selvom denne vejledning bruger OpenSSL som HANA-serverens kryptografiske provider, er det også muligt at bruge SAP Cryptographic Library (også kendt som CommonCryptoLib eller sapcrypto) i stedet for OpenSSL til at fuldføre konfigurationstrinnene, der hvor tillidsforholdet etableres. Se den officielle SAP-dokumentation for at få flere oplysninger.
+Bemærk også, at selvom denne vejledning bruger OpenSSL som HANA-serverens kryptografiske provider, anbefales det af SAP at bruge SAP Cryptographic Library (også kendt som CommonCryptoLib eller sapcrypto) i stedet for OpenSSL til at fuldføre konfigurationstrinnene, der hvor tillidsforholdet etableres. Se den officielle SAP-dokumentation for at få flere oplysninger.
 
 I følgende trin beskrives, hvordan du etablerer et tillidsforhold mellem en HANA-server og gatewayens IdP ved at signere X509-certifikatet for gatewayens IdP ved hjælp af et rodnøglecenter, som HANA-serveren har tillid til.
 
@@ -100,7 +100,7 @@ Nu, hvor du har konfigureret certifikatet og identiteten for gatewayen, kan du k
 
     ![Importér certifikat](media/service-gateway-sso-saml/import-certificate.png)
 
-1. Giv gatewaytjenestekontoen adgang til den private nøgle for certifikatet:
+1. Giv kontoen for gatewaytjenesten adgang til den private nøgle for certifikatet:
 
     1. Kør Microsoft Management Console (MMC) på gatewaycomputeren.
 
@@ -120,7 +120,7 @@ Nu, hvor du har konfigureret certifikatet og identiteten for gatewayen, kan du k
 
         ![Administrer private nøgler](media/service-gateway-sso-saml/manage-private-keys.png)
 
-    1. Føj gatewaytjenestekontoen til listen. Kontoen er som standard **NT SERVICE\PBIEgwService.** Du kan finde ud af, hvilken konto der kører gatewaytjenesten ved at køre **services.msc** og finde **Datagatewaytjeneste i det lokale miljø**.
+    1. Føj kontoen for gatewaytjenesten til listen. Kontoen er som standard **NT SERVICE\PBIEgwService.** Du kan finde ud af, hvilken konto der kører gatewaytjenesten ved at køre **services.msc** og finde **Datagatewaytjeneste i det lokale miljø**.
 
         ![Gatewaytjeneste](media/service-gateway-sso-saml/gateway-service.png)
 
@@ -180,7 +180,7 @@ Godkendelsessporinger på serversiden indeholder detaljerede oplysninger om fejl
 
 Du kan finde flere oplysninger om **datagateway i det lokale miljø** og **DirectQuery** i følgende ressourcer:
 
-* [Hvad er en datagateway i det lokale miljø?](/data-integration/gateway/service-gateway-getting-started)
+* [Hvad er en datagateway i det lokale miljø?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakilder, der understøttes af DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery og SAP BW](desktop-directquery-sap-bw.md)

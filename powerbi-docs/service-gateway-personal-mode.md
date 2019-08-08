@@ -10,21 +10,21 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 93d2c4358b0f4b4090a2c8bea3daa8eec71c4982
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: b910f20935c76f8723d8ca876cb57d811976772b
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270898"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68729931"
 ---
 # <a name="use-personal-gateways-in-power-bi"></a>Brug personlige gateways i Power BI
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Datagatewayen i det lokale miljø (personlig tilstand) er en version af datagatewayen i det lokale miljø, som kun fungerer med Power BI. En personlig gateway gør det muligt for enkeltpersoner at installere en gateway på deres egen computer og få adgang til data i det lokale miljø.
+Datagatewayen i det lokale miljø (personlig tilstand) er en version af datagatewayen i det lokale miljø, som kun fungerer med Power BI. Du kan bruge en personlig gateway til at installere en gateway på din egen computer og få adgang til data i det lokale miljø.
 
 > [!NOTE]
-> Du kan kun have én gateway i personlig tilstand, der kører for hver bruger af Power BI. Hvis du installerer endnu en gateway i personlig tilstand for den samme bruger, selv på en anden computer, erstatter den nyeste installation den tidligere eksisterende installation.
+> Du kan kun have én gateway i tilstanden Personlig for hver Power BI-bruger. Hvis du installerer endnu en gateway i personlig tilstand for den samme bruger, selv på en anden computer, erstatter den nyeste installation den tidligere eksisterende installation.
 
 ## <a name="on-premises-data-gateway-vs-on-premises-data-gateway-personal-mode"></a>Datagateway i det lokale miljø kontra datagateway (personlig tilstand)
 
@@ -32,7 +32,7 @@ I følgende tabel beskrives forskelle mellem en datagateway i det lokale miljø 
 
 |   |Datagateway i det lokale miljø | Datagateway i det lokale miljø (personlig tilstand) |
 | ---- | ---- | ---- |
-|Understøttede cloudtjenester |Power BI, PowerApps, Azure Logic Apps, Microsoft Flow, Azure Analysis Services, Data Flows |Power BI |
+|Understøttede cloudtjenester |Power BI, PowerApps, Azure Logic Apps, Microsoft Flow, Azure Analysis Services og Dataflows |Power BI |
 |Kørsler |Som konfigureret af brugere, der har adgang til gatewayen |Som dig til Windows-godkendelse og som konfigureret af dig til andre godkendelsestyper |
 |Kan kun installeres som computeradministrator |Ja |Nej |
 |Centraliseret administration af gateway og datakilde |Ja |Nej |
@@ -46,15 +46,15 @@ Gør følgende for at installere datagatewayen i det lokale miljø (personlig ti
 
 1. [Download datagatewayen i det lokale miljø](https://go.microsoft.com/fwlink/?LinkId=820925&clcid=0x409).
 
-2. I installationsprogrammet skal du vælge datagatewayen i det lokale miljø (personlig tilstand) og derefter vælge knappen **Næste**.
+2. I installationsprogrammet skal du vælge datagatewayen i det lokale miljø (personlig tilstand) og derefter vælge **Næste**.
 
    ![Vælg datagatewayen i det lokale miljø (personlig tilstand)](media/service-gateway-personal-mode/personal-gateway-select.png)
 
-Når installationen er fuldført, og du har logget på, kan du se følgende skærmbillede.
+Gatewayfilerne er installeret i _"%localappdata%\Microsoft\On-Premises data gateway (personlig tilstand)._ Efter installationen er fuldført, og du logger på, kan du se følgende skærmbillede.
 
 ![Datagateway i det lokale miljø (personlig tilstand) lykkedes](media/service-gateway-personal-mode/personal-gateway-complete.png)
 
-## <a name="using-fast-combine-with-the-personal-gateway"></a>Brug af Kombiner hurtigt med den personlige gateway
+## <a name="use-fast-combine-with-the-personal-gateway"></a>Brug Kombiner hurtigt med den personlige gateway
 
 Med Kombiner hurtigt på en personlig gateway kan du ignorere angivne niveauer for beskyttelse af personlige oplysninger under udførelse af forespørgsler. Gør følgende for at aktivere Kombiner hurtig, så det kan fungere sammen med datagatewayen i det lokale miljø (personlig tilstand):
 
@@ -70,31 +70,31 @@ Med Kombiner hurtigt på en personlig gateway kan du ignorere angivne niveauer f
     </setting>
     ```
 
-3. Når dette er fuldført, træder indstillingen i kraft i ca. ét minut. Du kontrollerer, om den fungerer korrekt, ved at prøve en opdatering efter behov i **Power BI-tjenesten** for at bekræfte, at **Kombiner hurtigt** fungerer.
+3. Når den er færdig, træder indstillingen i kraft i ca. ét minut. Du kontrollerer, om den fungerer korrekt, ved at prøve en opdatering efter behov i Power BI-tjenesten for at bekræfte, at Kombiner hurtigt fungerer.
 
 ## <a name="frequently-asked-questions-faq"></a>Ofte stillede spørgsmål
 
-**Spørgsmål:** Kan jeg køre **datagatewayen i det lokale miljø (personlig tilstand)** side om side med **datagateways i det lokale miljø** (tidligere kaldet Enterprise-versionen af gatewayen)?
+**Spørgsmål:** Kan jeg køre datagatewayen i det lokale miljø (personlig tilstand) side om side med datagateways i det lokale miljø (tidligere kaldet Enterprise-versionen af gatewayen)?
   
-**Svar:** Ja, begge kan køre samtidigt.
+**Svar:** Ja, begge gateways kan køre samtidigt.
 
-**Spørgsmål:** Kan jeg køre **datagatewayen i det lokale miljø (personlig tilstand)** som en tjeneste?
+**Spørgsmål:** Kan jeg køre datagatewayen i det lokale miljø (personlig tilstand) som en tjeneste?
   
-**Svar:** Nej. **Datagatewayen i det lokale miljø (personlig tilstand)** kan kun køres som et program. Hvis du har brug for at køre gatewayen som en tjeneste og/eller i administratortilstand, skal du overveje [**datagatewayen i det lokale miljø**](/data-integration/gateway/service-gateway-onprem) (tidligere kaldet Enterprise-gatewayen).
+**Svar:** Nej. Datagatewayen i det lokale miljø (personlig tilstand) kan kun køres som et program. Hvis du har brug for at køre gatewayen som en tjeneste eller i administratortilstand, skal du overveje [datagatewayen](/data-integration/gateway/service-gateway-onprem) i det lokale miljø (tidligere kaldet Enterprise-gatewayen).
 
-**Spørgsmål:** Hvor ofte opdateres **datagatewayen i det lokale miljø (personlig tilstand)** ?
+**Spørgsmål:** Hvor ofte opdateres datagatewayen i det lokale miljø (personlig tilstand)?
   
 **Svar:** Vi planlægger at opdatere den personlige gateway hver måned.
 
 **Spørgsmål:** Hvorfor bliver jeg bedt om at opdatere mine legitimationsoplysninger?
   
-**Svar:** Mange situationer kan udløse en anmodning om legitimationsoplysninger. Den mest almindelige er, at du har geninstalleret **datagatewayen i det lokale miljø (personlig tilstand)** på en anden maskine end din **Power BI Gateway – Personal**. Det kan også skyldes et problem i datakilden, og Power BI kunne ikke udføre en test af forbindelsen, eller der opstod en timeout eller en systemfejl. Du kan opdatere dine legitimationsoplysninger i **Power BI-tjenesten** ved at gå til **tandhjulsikonet** og vælge **Indstillinger**. Vælg derefter **Datasæt**, find det pågældende datasæt, og vælg **Legitimationsoplysninger for datakilde**.
+**Svar:** Mange situationer kan udløse en anmodning om legitimationsoplysninger. Den mest almindelige er, at du har geninstalleret datagatewayen i det lokale miljø (personlig tilstand) på en anden maskine end din Power BI Gateway – Personal. Det kan også skyldes et problem i datakilden, og Power BI kunne ikke udføre en test af forbindelsen, eller der opstod en timeout eller en systemfejl. Hvis du vil opdatere dine legitimationsoplysninger i Power BI-tjenesten, skal du vælge tandhjulsikonet og vælge **Indstillinger** > **Datasæt**. Find det pågældende datasæt, og vælg **Legitimationsoplysninger til datakilde**.
 
-**Spørgsmål:** I hvor lang tid er min tidligere personlige gateway offline under opgraderingen?
+**Spørgsmål:** Hvor længe er min tidligere personlige gateway offline under opgraderingen?
   
-**Svar:** Opgradering af den personlige gateway til den nye version bør kun tage nogle få minutter.
+**Svar:** Opgradering af den personlige gateway til den nye version tager kun nogle få minutter.
 
-**Spørgsmål:** Jeg bruger R- og Python-scripts. Understøttes det?
+**Spørgsmål:** Jeg bruger R- og Python-scripts. Understøttes de?
   
 **Svar:** R- og Python-scripts understøttes i forbindelse med personlig tilstand.
 
@@ -102,5 +102,4 @@ Med Kombiner hurtigt på en personlig gateway kan du ignorere angivne niveauer f
 
 * [Konfiguration af proxyindstillinger for datagateway i det lokale miljø](/data-integration/gateway/service-gateway-proxy)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-
+Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](http://community.powerbi.com/).

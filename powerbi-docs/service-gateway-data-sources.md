@@ -11,32 +11,28 @@ ms.date: 07/15/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3a4b343894f23d6f5720d95eb6c92436259befaa
-ms.sourcegitcommit: a58461fe7dfa65c751490b52de5fc73f8e69a17f
+ms.openlocfilehash: c46a5c419c242ae25ecca74428362ec27f234afd
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68352204"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730211"
 ---
 # <a name="manage-data-sources"></a>Administrer datakilder
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-Power BI understøtter mange datakilder i det lokale miljø, og de har hver især sine egne krav. En gateway kan bruges til en enkelt datakilde eller flere datakilder. I dette eksempel viser vi dig, hvordan du tilføjer SQL Server som en datakilde, men trinnene er de samme for andre datakilder.
+Power BI understøtter mange datakilder i det lokale miljø, og de har hver især sine egne krav. En gateway kan bruges til en enkelt datakilde eller flere datakilder. I dette eksempel viser vi dig, hvordan du tilføjer SQL Server som en datakilde. Trinnene svarer til trinnene for andre datakilder.
 
->[!NOTE]
->De fleste handlinger til administration af datakilder kan også udføres vha. API'er. Du kan finde flere oplysninger i [REST API'er (gateways)](/rest/api/power-bi/gateways).
+De fleste handlinger til administration af datakilder kan også udføres vha. API'er. Du kan finde flere oplysninger i [REST API'er (gateways)](/rest/api/power-bi/gateways).
 
 ## <a name="add-a-data-source"></a>Tilføj en datakilde
-
->[!NOTE]
->Grupper uden en mail kan ikke tilføjes.
 
 1. I øverste højre hjørne af Power BI-tjenesten skal du vælge tandhjulsikonet ![tandhjulsikonet for indstillinger](media/service-gateway-data-sources/icon-gear.png) > **Administrer gateways**.
 
     ![Administrer gateways](media/service-gateway-data-sources/manage-gateways.png)
 
-2. Vælg enten en gateway > **Tilføj datakilde**, eller gå til Gateways > **Tilføj datakilde**.
+2. Vælg en gateway, og vælg derefter **Tilføj datakilde**. Eller gå til **Gateways** > **Tilføjdata kilde**.
 
     ![Tilføj datakilde](media/service-gateway-data-sources/add-data-source.png)
 
@@ -44,7 +40,7 @@ Power BI understøtter mange datakilder i det lokale miljø, og de har hver isæ
 
     ![Vælg SQL Server](media/service-gateway-data-sources/select-sql-server.png)
 
-4. Angiv oplysninger for datakilden. I dette eksempel er det **Server**, **Database** og andre oplysninger.  
+4. Angiv oplysninger for datakilden. I dette eksempel er det **Server**, **Database** og andre oplysninger. 
 
     ![Indstillinger for datakilde](media/service-gateway-data-sources/data-source-settings.png)
 
@@ -62,27 +58,27 @@ Du kan nu bruge denne datakilde til at inkludere data fra SQL Server i dine Powe
 
 ## <a name="remove-a-data-source"></a>Fjern en datakilde
 
-Du kan fjerne en datakilde, hvis du ikke længere bruger den. Vær opmærksom på, at hvis du fjerner en datakilde, ødelægger det alle dashboards og rapporter, der anvender den pågældende datakilde.
+Du kan fjerne en datakilde, hvis du ikke længere bruger den. Hvis du fjerner en datakilde, ødelægger det alle dashboards og rapporter, der anvender den pågældende datakilde.
 
 Hvis du vil fjerne en datakilde, skal du gå til datakilden og derefter vælge **Fjern**.
 
 ![Fjern en datakilde](media/service-gateway-data-sources/remove-data-source.png)
 
-## <a name="using-the-data-source-for-scheduled-refresh-or-directquery"></a>Brug af datakilden til planlagt opdatering eller DirectQuery
+## <a name="use-the-data-source-for-scheduled-refresh-or-directquery"></a>Brug af datakilden til planlagt opdatering eller DirectQuery
 
-Når du har oprettet datakilden, bliver den tilgængelig til brug med enten DirectQuery-forbindelser eller via en planlagt opdatering.
+Når du opretter datakilden, er den tilgængelig til brug med enten DirectQuery-forbindelser eller via en planlagt opdatering.
 
 > [!NOTE]
 >Server- og databasenavne skal matche mellem Power BI Desktop og datakilden i datagatewayen i det lokale miljø.
 
-Linket mellem dit datasæt og datakilden i gatewayen er baseret på dit servernavn og databasenavn. Disse navne skal matche hinanden. Hvis du f.eks. angiver en IP-adresse for servernavnet i Power BI Desktop, skal du bruge IP-adressen til datakilden i konfigurationen af gatewayen. Hvis du bruger *SERVER\INSTANCE* i Power BI Desktop, skal du bruge det samme i den datakilde, der er konfigureret for gatewayen.
+Linket mellem dit datasæt og datakilden i gatewayen er baseret på dit servernavn og databasenavn. Disse navne skal være ens. Hvis du f.eks. angiver en IP-adresse for servernavnet i Power BI Desktop, skal du bruge IP-adressen til datakilden i konfigurationen af gatewayen. Hvis du bruger *SERVER\INSTANCE* i Power BI Desktop, skal du bruge det samme i den datakilde, der er konfigureret for gatewayen.
 
 Hvis du er angivet under fanen **Brugere** i den datakilde, der er konfigureret i gatewayen, og server- og databasenavnet stemmer overens, får du vist gatewayen som en mulighed, der kan bruges sammen med en planlagt opdatering.
 
 ![Gatewayforbindelse](media/service-gateway-data-sources/gateway-connection.png)
 
 > [!WARNING]
-> Hvis dit datasæt indeholder flere datakilder, skal hver enkelt datakilde føjes til gatewayen. Hvis en eller flere datakilder ikke er føjet til gatewayen, kan du ikke se gatewayen som tilgængelig i forbindelse med planlagt opdatering.
+> Hvis dit datasæt indeholder flere datakilder, skal hver enkelt datakilde føjes til gatewayen. Hvis en eller flere datakilder ikke er føjet til gatewayen, kan du ikke se gatewayen som tilgængelig i forbindelse med en planlagt opdatering.
 
 ### <a name="limitations"></a>Begrænsninger
 
@@ -90,7 +86,7 @@ OAuth er kun en understøttet godkendelsesplan for brugerdefinerede connectors m
 
 ## <a name="manage-users"></a>Administrer brugere
 
-Når du har føjet en datakilde til en gateway, giver du brugere og mailaktiverede sikkerhedsgrupper adgang til den specifikke datakilde (ikke hele gatewayen). Brugerlisten for datakilden styrer kun, hvem der har tilladelse til at udgive rapporter, der indeholder data fra datakilden. Rapporternes ejere kan oprette dashboards, indholdspakker og apps og derefter dele dem med andre brugere.
+Når du har føjet en datakilde til en gateway, giver du brugere og mailaktiverede sikkerhedsgrupper adgang til den specifikke datakilde (ikke hele gatewayen). Brugerlisten for datakilden styrer kun, hvem der har tilladelse til at udgive rapporter, der indeholder data fra datakilden. Rapporternes ejere kan oprette dashboards, indholdspakker og apps og derefter dele disse med andre brugere.
 
 Du kan også give brugere og sikkerhedsgrupper administrativ adgang til gatewayen.
 
@@ -100,15 +96,15 @@ Du kan også give brugere og sikkerhedsgrupper administrativ adgang til gatewaye
 
 2. Vælg den datakilde, hvor du vil tilføje brugere.
 
-3. Vælg **Brugere**, og angiv en bruger fra din organisation, som du vil give adgang til den valgte datakilde. På følgende skærmbillede tilføjes Maggie og Adam for eksempel.
+3. Vælg **Brugere**, og angiv en bruger fra din organisation, som du vil give adgang til den valgte datakilde. På følgende skærmbillede tilføjer du f.eks. Maggie og Adam.
 
     ![Fanen Brugere](media/service-gateway-data-sources/users-tab.png)
 
-4. Hvis du vælger **Tilføj**, vises det tilføjede medlem i feltet.
+4. Hvis du vælger **Tilføj**, vises det tilføjede medlems navn i feltet.
 
     ![Tilføj bruger](media/service-gateway-data-sources/add-user.png)
 
-Så nemt er det. Husk, at du skal føje brugere til hver enkelt datakilde, som du vil give adgang til. Hver enkelt datakilde har en separat liste over brugere, og du skal føje brugere til hver enkelt datakilde særskilt.
+Husk, at du skal føje brugere til hver enkelt datakilde, som du vil give adgang til. Hver datakilde har en separat liste over brugere. Føj brugere separat til hver enkelt datakilde.
 
 ### <a name="remove-users-from-a-data-source"></a>Fjern brugere fra en datakilde
 
@@ -116,20 +112,20 @@ Under fanen **Brugere** for datakilden kan du fjerne brugere og sikkerhedsgruppe
 
 ![Fjern bruger](media/service-gateway-data-sources/remove-user.png)
 
-## <a name="storing-encrypted-credentials-in-the-cloud"></a>Lagring af krypterede legitimationsoplysninger i clouden
+## <a name="store-encrypted-credentials-in-the-cloud"></a>Lagring af krypterede legitimationsoplysninger i clouden
 
-Når du føjer en datakilde til gatewayen, skal du angive legitimationsoplysninger for den pågældende datakilde. Alle forespørgsler til datakilden kører ved hjælp af disse legitimationsoplysninger. Legitimationsoplysningerne krypteres sikkert ved hjælp af symmetrisk kryptering, så de ikke kan dekrypteres i cloudmiljøet, før de er gemt i cloudmiljøet. Legitimationsoplysningerne sendes til den maskine, der kører gatewayen, i det lokale miljø, hvor de dekrypteres, når datakilderne tilgås.
+Når du føjer en datakilde til gatewayen, skal du angive legitimationsoplysninger for den pågældende datakilde. Alle forespørgsler til datakilden kører ved hjælp af disse legitimationsoplysninger. Legitimationsoplysningerne er krypteret på en sikker måde. De anvender symmetrisk kryptering, så de ikke kan dekrypteres i cloudmiljøet, før de er gemt i cloudmiljøet. Legitimationsoplysningerne sendes til den maskine, der kører gateway'en, i det lokale miljø, hvor de dekrypteres, når datakilderne tilgås.
 
 ## <a name="list-of-available-data-source-types"></a>Liste over tilgængelige datakildetyper
 
 Datagatewayen i det lokale miljø understøtter følgende datakilder til Power BI. Ud over datakilder i det lokale miljø kan kilder bag en firewall, VPN eller et virtuelt netværk også have brug for en datagateway.
 
-| **Datakilde** | **Live/DirectQuery** | **Brugerkonfigureret manuel eller planlagt opdatering** |
+| **Datakilde** | **Live/DirectQuery** | **Manuel eller planlagt opdatering (brugerkonfigureret)** |
 | --- | --- | --- |
-| ActiveDirectory |Nej |Ja |
 | Amazon Redshift |Ja |Ja |
-| Analysis Services |Ja |Ja |
 | AtScale-kuber |Ja |Ja |
+| Azure Active Directory |Nej |Ja |
+| Azure Analysis Services |Ja |Ja |
 | Azure Blob Storage |Nej |Ja |
 | Azure DevOps Server |Nej |Ja |
 | Azure Table Storage |Nej |Ja |
@@ -153,7 +149,7 @@ Datagatewayen i det lokale miljø understøtter følgende datakilder til Power B
 | MySQL |Nej |Ja |
 | ODBC |Nej |Ja |
 | OData |Nej |Ja |
-| OleDb |Nej |Ja |
+| OLE DB |Nej |Ja |
 | Oracle |Ja |Ja |
 | PostgreSQL |Nej |Ja |
 | QubolePresto |Ja |Ja |
@@ -179,7 +175,7 @@ Datagatewayen i det lokale miljø understøtter følgende datakilder til Power B
 * [Administrer din datakilde – SAP HANA](service-gateway-enterprise-manage-sap.md)
 * [Administrer din datakilde – SQL Server](service-gateway-enterprise-manage-sql.md)
 * [Administrer din datakilde – Oracle](service-gateway-onprem-manage-oracle.md)
-* [Administrer din datakilde – Import/Planlagt opdatering](service-gateway-enterprise-manage-scheduled-refresh.md)
-* [Vejledning til udrulning af en datagateway](service-gateway-deployment-guidance.md)
+* [Administrer din datakilde – Import/planlagt opdatering](service-gateway-enterprise-manage-scheduled-refresh.md)
+* [Vejledning til installation af en datagateway](service-gateway-deployment-guidance.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](http://community.powerbi.com/).

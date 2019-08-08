@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 7d9e670d2567181a0dc99c23997ac3bc2d35f3c9
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 2c21792f97445b336709038f7ec2ec39d041312b
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271572"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730062"
 ---
 # <a name="manage-your-data-source---sql-server"></a>Administrer din datakilde – SQL Server
 
@@ -34,10 +34,10 @@ Du kan finde oplysninger om, hvordan du tilføjer en datakilde i [Tilføj en dat
 
 Du skal derefter udfylde oplysningerne om datakilden, herunder **Server** og **Database**.  
 
-Du skal også vælge en **Godkendelsesmetode**. Denne kan enten være **Windows** eller **Basic**. Du skal vælge **Basic**, hvis du vil bruge SQL-godkendelse i stedet for Windows-godkendelse. Indtast derefter legitimationsoplysningerne, der skal bruges til denne datakilde.
+Du skal også vælge en **Godkendelsesmetode**. Denne kan enten være **Windows** eller **Basis**. Du skal vælge **Basic**, hvis du vil bruge SQL-godkendelse i stedet for Windows-godkendelse. Indtast derefter legitimationsoplysningerne, der skal bruges til denne datakilde.
 
 > [!NOTE]
-> Alle forespørgsler på datakilden kører ved hjælp af disse legitimationsoplysninger, medmindre Kerberos SSO (enkeltlogon) er konfigureret og aktiveret for datakilden. Med SSO bruges de gemte legitimationsoplysninger i forbindelse med import af datasæt, men den aktuelle Power BI-bruger bruges til DirectQuery-datasæt for at udføre forespørgslerne ved hjælp af SSO. Hvis du vil vide mere om, hvordan legitimationsoplysninger gemmes, skal du se [Lagring af krypterede legitimationsoplysninger i cloudmiljøet](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud) eller den artikel, der beskriver, hvordan du [bruger Kerberos til SSO (enkeltlogon) fra Power BI datakilder i det lokale miljø](service-gateway-sso-kerberos.md).
+> Alle forespørgsler på datakilden kører ved hjælp af disse legitimationsoplysninger, medmindre Kerberos SSO (enkeltlogon) er konfigureret og aktiveret for datakilden. Med SSO bruges de gemte legitimationsoplysninger i forbindelse med import af datasæt, men den aktuelle Power BI-bruger bruges til DirectQuery-datasæt for at udføre forespørgslerne ved hjælp af SSO. Hvis du vil vide mere om, hvordan legitimationsoplysninger gemmes, skal du se [Lagring af krypterede legitimationsoplysninger i cloudmiljøet](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud) eller den artikel, der beskriver, hvordan du [bruger Kerberos til SSO (enkeltlogon) fra Power BI datakilder i det lokale miljø](service-gateway-sso-kerberos.md).
 
 ![Angivelse af indstillinger for datakilden](media/service-gateway-enterprise-manage-sql/datasourcesettings3.png)
 

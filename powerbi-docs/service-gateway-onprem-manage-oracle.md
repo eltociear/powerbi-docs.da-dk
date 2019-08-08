@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: af3ebd421a82448ce8a3f13661801ffc1d0051e0
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 3e3e51bf13a904e46552529d9131dbbb4665cb7d
+ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271457"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68730246"
 ---
 # <a name="manage-your-data-source---oracle"></a>Administrer din datakilde – Oracle
 
@@ -70,10 +70,10 @@ Du kan finde oplysninger om, hvordan du tilføjer en datakilde i [Tilføj en dat
 
 Når du har valgt Oracle-datakildetypen, skal du derefter udfylde oplysninger om datakilden, hvilket omfatter **Server** og **Database**.  
 
-Du skal også vælge en **Godkendelsesmetode**.  Denne kan enten være **Windows** eller **Basic**.  Du skal vælge **Basic**, hvis du vil bruge en konto, der er oprettet i Oracle, i stedet for Windows-godkendelse. Indtast derefter legitimationsoplysningerne, der skal bruges til denne datakilde.
+Du skal også vælge en **Godkendelsesmetode**.  Denne kan enten være **Windows** eller **Basis**.  Du skal vælge **Basic**, hvis du vil bruge en konto, der er oprettet i Oracle, i stedet for Windows-godkendelse. Indtast derefter legitimationsoplysningerne, der skal bruges til denne datakilde.
 
 > [!NOTE]
-> Alle forespørgsler til datakilden kører ved hjælp af disse legitimationsoplysninger. Hvis du vil have mere at vide om, hvor legitimationsoplysningerne gemmes, skal du se [Lagring af krypterede legitimationsoplysninger i cloudmiljøet](service-gateway-data-sources.md#storing-encrypted-credentials-in-the-cloud).
+> Alle forespørgsler til datakilden kører ved hjælp af disse legitimationsoplysninger. Hvis du vil have mere at vide om, hvor legitimationsoplysningerne gemmes, skal du se [Lagring af krypterede legitimationsoplysninger i cloudmiljøet](service-gateway-data-sources.md#store-encrypted-credentials-in-the-cloud).
 
 ![Angivelse af indstillinger for datakilden](media/service-gateway-onprem-manage-oracle/data-source-oracle2.png)
 

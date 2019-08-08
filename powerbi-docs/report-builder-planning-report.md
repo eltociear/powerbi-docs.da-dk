@@ -1,22 +1,23 @@
 ---
 title: Planlægning af en rapport i Power BI Report Builder
 description: Med Power BI Paginated Report Builder kan du oprette mange slags sideinddelte rapporter. Hvis du vil oprette en nyttig rapport, der er let at forstå, er det en god idé at planlægge den først.
-ms.date: 06/06/2019
+ms.date: 07/25/2019
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 79113505-1ce8-4f8c-9260-d861838f7813
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: fd4a318d7a61f6f2298de6b9d5d23ad2ae063d28
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 33cdb53ab411e0d2f4686f7cc9a41bb3f0fe4cb6
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840504"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623863"
 ---
 # <a name="planning-a-report-in-power-bi-report-builder"></a>Planlægning af en rapport i Power BI Report Builder
-  Med Power BI Paginated Report Builder kan du oprette mange slags sideinddelte rapporter. Du kan f.eks. oprette rapporter, der viser en oversigt over eller detaljerede salgsdata, marketing- og salgstendenser, driftsrapporter eller dashboards. Du kan også oprette rapporter, der drager fordel af formateret tekst, f.eks. til salgsordrer, produktkataloger eller standardbreve. Alle disse rapporter oprettes ved hjælp af forskellige kombinationer af de samme grundlæggende byggesten i Report Builder. Hvis du vil oprette en nyttig rapport, der er let at forstå, er det en god idé at planlægge den først. Her er nogle ting, det kan være en god idé at overveje, før du går i gang:  
+
+Med Power BI Paginated Report Builder kan du oprette mange slags sideinddelte rapporter. Du kan f.eks. oprette rapporter, der viser en oversigt over eller detaljerede salgsdata, marketing- og salgstendenser, driftsrapporter eller dashboards. Du kan også oprette rapporter, der drager fordel af formateret tekst, f.eks. til salgsordrer, produktkataloger eller standardbreve. Alle disse rapporter oprettes ved hjælp af forskellige kombinationer af de samme grundlæggende byggesten i Report Builder. Hvis du vil oprette en nyttig rapport, der er let at forstå, er det en god idé at planlægge den først. Her er nogle ting, det kan være en god idé at overveje, før du går i gang:  
   
 ## <a name="in-what-format-do-you-want-the-report-to-appear"></a>I hvilket format skal rapporten vises?
   
@@ -36,7 +37,7 @@ Du vil muligvis indsnævre omfanget af rapporten for bestemte brugere eller loka
   
 ## <a name="do-you-need-to-create-calculations"></a>Har du brug at oprette beregninger? 
   
-     Sometimes, your data source and datasets do not contain the exact fields that you need for your report. In that situation, you might have to create your own calculated fields. For example, you might want to multiply the price per unit times the quantity to get a line item sales amount. Expressions are also used to provide conditional formatting and other advanced features. For more information, see [Expressions in Power BI Report Builder](report-builder-expressions.md).  
+Nogle gange indeholder din datakilde og dine datasæt ikke de nøjagtige felter, du skal bruge til din rapport. I denne situation skal du muligvis oprette dine egne beregnede felter. Det kan f.eks. være, at du vil gange prisen pr. enhed med antallet for at få salgsbeløbet for en fakturalinje. Udtryk bruges også til at levere betinget formatering og andre avancerede funktioner. Du kan finde flere oplysninger i [Udtryk i Power BI Report Builder](report-builder-expressions.md).  
   
 ## <a name="do-you-want-to-hide-report-items-initially"></a>Vil du skjule rapportelementer indledningsvist?
   
@@ -44,7 +45,7 @@ Overvej, om du vil skjule rapportelementer, herunder dataområder, grupper og ko
   
 ## <a name="how-are-you-going-to-deliver-your-report"></a>Hvordan vil du levere din rapport?  
   
-     You can save your report to your local computer and continue to work on it, or run it locally for your own information. However, to share your report with others, you need to save the report to Power BI. Saving it to Power BI lets others run it whenever they want to. Alternatively, you can set up a subscription and e-mail delivery of the report to other individuals. You can have the report delivered in a specific export format if you prefer. 
+Du kan gemme din rapport på din lokale computer og fortsætte med at arbejde på den eller køre den lokalt med dine egne oplysninger. Men hvis du vil dele rapporten med andre, skal du gemme den på Power BI. Hvis du gemmer den på Power BI, kan andre køre den, når de vil. Alternativt kan du konfigurere et abonnement og e-mail-levering af rapporten til andre personer. Du kan få rapporten leveret i et bestemt eksportformat, hvis du foretrækker det. 
   
 ## <a name="next-steps"></a>Næste trin
 

@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
 ms.date: 07/15/2019
-ms.openlocfilehash: 10135e0fa725cd4093802cd1416cab302174e21d
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 2e59499b93f4d1b4879cdec5b807f863a80718aa
+ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270784"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68665359"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål 
 
@@ -162,7 +162,7 @@ Ja, vi understøtter muligheden for at køre kode i dine rapporter, ligesom du k
 
 ### <a name="can-i-use-power-bi-embedded-to-embed-my-paginated-reports-into-an-app-im-hosting"></a>Kan jeg bruge Power BI Embedded til at integrere mine sideinddelte rapporter i en app, jeg er vært for?
 
-SaaS-integrering understøttes fra og med juni.  Vi har også planer om at understøtte PaaS-integrering med eksisterende Power BI-API'er, men vi har endnu ikke en tidsramme for, hvornår dette scenarie vil være tilgængeligt.
+SaaS-integration understøttes allerede. PaaS-integration understøttes ikke i øjeblikket.
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Kan jeg få detaljeadgang fra en Power BI-rapport til en sideinddelt rapport?
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: db0ea02237a2279c26f2c47cecd3bae794a5cba4
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 9f3131749a484380a1352d39ae35ea409f6dc697
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840297"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68624141"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Eksempler på udtryk i Power BI Report Builder
 Udtryk bruges ofte i sideinddelte rapporter i Power BI Paginated Report Builder til at styre indhold og rapportens udseende. Udtryk er skrevet i Microsoft Visual Basic, og du kan bruge indbyggede funktioner, brugerdefinerede kode, rapport- og gruppevariabler samt brugerdefinerede variabler. Udtryk begynder med et lighedstegn (=).   
@@ -40,7 +40,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
 ##  <a name="VisualBasicFunctions"></a> Funktioner i Visual Basic  
  Du kan bruge funktioner i Visual Basic til at håndtere de data, der vises i tekstfelter, eller der bruges til parametre, egenskaber eller andre områder af rapporten. Dette afsnit indeholder eksempler, der demonstrerer nogle af disse funktioner. Du kan finde flere oplysninger i [Medlemmer af kørselsbiblioteket i Visual Basic](https://go.microsoft.com/fwlink/?LinkId=198941) på MSDN.  
   
- .NET Framework indeholder mange muligheder for brugerdefinerede formater, f.eks. specifikke datoformater. Du kan finde flere oplysninger i [Formateringstyper](https://go.microsoft.com/fwlink/?LinkId=112024) på MSDN.  
+ .NET Framework indeholder mange muligheder for brugerdefinerede formater, f.eks. specifikke datoformater. Du kan finde flere oplysninger i [Formateringstyper](/dotnet/standard/base-types/formatting-types).  
   
 ### <a name="math-functions"></a>Matematikfunktioner  
   

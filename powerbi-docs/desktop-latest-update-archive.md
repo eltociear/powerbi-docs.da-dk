@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 07/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 55ffc166d5a42e850bc4e2dedf80de1c6b9f8634
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: 80bb78d6074fde907fe6b2d3bbb835cdc5e82976
+ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68342134"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68623839"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -114,8 +114,8 @@ Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisatio
 
 Vælg følgende links for at downloade denne tidligere version: 
 
-* [Power BI Desktop-version fra maj 2019 – 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06.msi)
-* [Power BI Desktop-version fra maj 2019 – 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06_x64.msi)
+* [Power BI Desktop-version fra juni 2019 – 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06.msi)
+* [Power BI Desktop-version fra juni 2019 – 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-06_x64.msi)
 
 
 ## <a name="may-2019-update-26954671251"></a>Opdatering fra maj 2019 (2.69.5467.1251)
@@ -516,19 +516,6 @@ På følgende videokanal beskrives og vises hver af disse opdateringer. Du kan o
 > Du kan også læse om [nyhederne i Power BI-tjenesten](service-whats-new.md) og se [nyhederne i mobilappsene til Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
-Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisation kræver det. Vi anbefaler altid, at du bruger den nyeste version af Power BI Desktop i stedet for en tidligere version. Der er følgende begrænsninger for alle tidligere versioner:
-
-* Der ydes ikke service til tidligere versioner af Power BI Desktop – du skal altid bruge den nyeste version for at få de nyeste funktioner og opdateringer.
-* Du kan muligvis ikke åbne filer, der er oprettet eller gemt i nyere versioner af Power BI Desktop, med tidligere versioner af Power BI Desktop. 
-* Hvis du får vist en advarsel, når du indlæser en rapport, der er gemt i en nyere version af Power BI Desktop, og derefter gemmer rapporten i den tidligere version, mister du alle oplysninger, der er relateret til nye funktioner.
-* Vi arkiverer kun de engelske versioner af Power BI Desktop.
-
-Vælg følgende links for at downloade denne tidligere version: 
-
-* [Power BI Desktop-version fra december 2018 – 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-12.msi)
-* [Power BI Desktop-version fra december 2018 – 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-12_x64.msi)
-
-
 ## <a name="november-2018-update-2645285582"></a>Opdatering fra november 2018 (2.64.5285.582)
 
 Vores opdateringer fra november bugnede af nye funktioner og ny funktionalitet. Så du kunne roligt samle din familie af data- og analyseentusiaster og gå ombord i vores festmåltid af opdateringer. 
@@ -580,20 +567,6 @@ På følgende videokanal beskrives og vises hver af disse opdateringer. Du kan o
 > Du kan også læse om [nyhederne i Power BI-tjenesten](service-whats-new.md) og se [nyhederne i mobilappsene til Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
-
-Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisation kræver det. Vi anbefaler altid, at du bruger den nyeste version af Power BI Desktop i stedet for en tidligere version. Der er følgende begrænsninger for alle tidligere versioner:
-
-* Der ydes ikke service til tidligere versioner af Power BI Desktop – du skal altid bruge den nyeste version for at få de nyeste funktioner og opdateringer.
-* Du kan muligvis ikke åbne filer, der er oprettet eller gemt i nyere versioner af Power BI Desktop, med tidligere versioner af Power BI Desktop. 
-* Hvis du får vist en advarsel, når du indlæser en rapport, der er gemt i en nyere version af Power BI Desktop, og derefter gemmer rapporten i den tidligere version, mister du alle oplysninger, der er relateret til nye funktioner.
-* Vi arkiverer kun de engelske versioner af Power BI Desktop.
-
-Vælg følgende links for at downloade denne tidligere version: 
-
-* [Power BI Desktop-version fra november 2018 – 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-11.msi)
-* [Power BI Desktop-version fra november 2018 – 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-11_x64.msi)
-
-
 ## <a name="october-2018-update-263327240262"></a>Oktober 2018-opdatering (2.63.3272.40262)
 
 Vores opdateringer fra oktober var uhyggeligt gode, frygteligt nyttige og endnu bedre end et græskarhoved fuld af slik. 
@@ -626,7 +599,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i oktober:
 * Implementering af SAP BW-connector v2 er nu offentlig tilgængelig [[video]](https://youtu.be/MhrhIXNtelw?t=133) [[artikel]](desktop-sap-bw-connector.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBW) 
 * Connector til SAP BW-beskedserver er nu offentlig tilgængelig [[video]](https://youtu.be/MhrhIXNtelw?t=159) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23sapBWmessageServer) 
 * Vertica-connector er nu offentlig tilgængelig [[video]](https://youtu.be/MhrhIXNtelw?t=175) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23vertica) 
-* Connectors til Dynamics NAV og Dynamics 365 Business Central er nu offentlig tilgængelige [[video]](https://youtu.be/MhrhIXNtelw?t=197) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamics) 
+* Connectorer til Dynamics NAV og Dynamics 365 Business Central er nu offentlig tilgængelige [[video]](https://youtu.be/MhrhIXNtelw?t=197) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamics) 
 * Ny connector til Dynamics 365 Business Central i det lokale miljø [[video]](https://youtu.be/MhrhIXNtelw?t=219) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23dynamicsOnPrem) 
 
 ### <a name="data-preparation"></a>Dataforberedelse
@@ -651,21 +624,6 @@ På følgende videokanal beskrives og vises hver af disse opdateringer. Du kan o
 
 > [!NOTE]
 > Du kan også læse om [nyhederne i Power BI-tjenesten](service-whats-new.md) og se [nyhederne i mobilappsene til Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
-
-
-
-Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisation kræver det. Vi anbefaler altid, at du bruger den nyeste version af Power BI Desktop i stedet for en tidligere version. Der er følgende begrænsninger for alle tidligere versioner:
-
-* Der ydes ikke service til tidligere versioner af Power BI Desktop – du skal altid bruge den nyeste version for at få de nyeste funktioner og opdateringer.
-* Du kan muligvis ikke åbne filer, der er oprettet eller gemt i nyere versioner af Power BI Desktop, med tidligere versioner af Power BI Desktop. 
-* Hvis du får vist en advarsel, når du indlæser en rapport, der er gemt i en nyere version af Power BI Desktop, og derefter gemmer rapporten i den tidligere version, mister du alle oplysninger, der er relateret til nye funktioner.
-* Vi arkiverer kun de engelske versioner af Power BI Desktop.
-
-Vælg følgende links for at downloade denne tidligere version: 
-
-* [Power BI Desktop-version fra oktober 2018 – 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-10.msi)
-* [Power BI Desktop-version fra oktober 2018 – 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-10_x64.msi)
-
 
 
 ## <a name="september-2018-update-2625222582"></a>September 2018-opdatering (2.62.5222.582)
@@ -715,20 +673,6 @@ I følgende video beskrives og vises hver af disse opdateringer. Du kan også se
 > Du kan også læse om [nyhederne i Power BI-tjenesten](service-whats-new.md) og se [nyhederne i mobilappsene til Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
 
 
-Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisation kræver det. Vi anbefaler altid, at du bruger den nyeste version af Power BI Desktop i stedet for en tidligere version. Der er følgende begrænsninger for alle tidligere versioner:
-
-* Der ydes ikke service til tidligere versioner af Power BI Desktop – du skal altid bruge den nyeste version for at få de nyeste funktioner og opdateringer.
-* Du kan muligvis ikke åbne filer, der er oprettet eller gemt i nyere versioner af Power BI Desktop, med tidligere versioner af Power BI Desktop. 
-* Hvis du får vist en advarsel, når du indlæser en rapport, der er gemt i en nyere version af Power BI Desktop, og derefter gemmer rapporten i den tidligere version, mister du alle oplysninger, der er relateret til nye funktioner.
-* Vi arkiverer kun de engelske versioner af Power BI Desktop.
-
-Vælg følgende links for at downloade denne tidligere version: 
-
-* [Power BI Desktop-version fra september 2018 – 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-09.msi)
-* [Power BI Desktop-version fra september 2018 – 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-09_x64.msi)
-
-
-
 
 ## <a name="august-2018-update-2615192321"></a>August 2018-opdatering (2.61.5192.321)
 
@@ -776,21 +720,6 @@ I følgende video beskrives og vises hver af disse opdateringer. Du kan også se
 
 > [!NOTE]
 > Du kan også læse om [nyhederne i Power BI-tjenesten](service-whats-new.md) og se [nyhederne i mobilappsene til Power BI](mobile-whats-new-in-the-mobile-apps.md).
-
-
-
-Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisation kræver det. Vi anbefaler altid, at du bruger den nyeste version af Power BI Desktop i stedet for en tidligere version. Der er følgende begrænsninger for alle tidligere versioner:
-
-* Der ydes ikke service til tidligere versioner af Power BI Desktop – du skal altid bruge den nyeste version for at få de nyeste funktioner og opdateringer.
-* Du kan muligvis ikke åbne filer, der er oprettet eller gemt i nyere versioner af Power BI Desktop, med tidligere versioner af Power BI Desktop. 
-* Hvis du får vist en advarsel, når du indlæser en rapport, der er gemt i en nyere version af Power BI Desktop, og derefter gemmer rapporten i den tidligere version, mister du alle oplysninger, der er relateret til nye funktioner.
-* Vi arkiverer kun de engelske versioner af Power BI Desktop.
-
-Vælg følgende links for at downloade denne tidligere version: 
-
-* [Power BI Desktop-version fra august 2018 – 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-08.msi)
-* [Power BI Desktop-version fra august 2018 – 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2018-08_x64.msi)
-
 
 
 
@@ -2470,7 +2399,7 @@ Med denne store samling af opdateringer får du 44 nye funktioner:
 - Filtre på rapportniveau
 - Skift detailniveau i søjle- og punktdiagrammer
 - Nye indstillinger: Sidestørrelse og Sidevisning
-- Understøtter nu indsættelse af former på rapportlærred
+- Understøtter nu indsættelse af former på rapportcanvas
 - Forbedringer i ruden Felter
     - Søgefelt, der gør det nemmere at finde felter efter navn
     - "Udvid/Skjul alle" forbedrer navigation, når der er flere tabeller i ruden Felter
@@ -2575,7 +2504,7 @@ Se følgende video for at få flere detaljer om denne opdatering:
 
 Følgende funktioner er blevet tilføjet i denne opdatering:
 
--   **Nye dataconnectors**: appFigures, Quickbooks Online, Zendesk, GitHub, Twilio og SweetIQ.
+-   **Nye dataconnectorer**: appFigures, Quickbooks Online, Zendesk, GitHub, Twilio og SweetIQ.
 
 -   **Nye transformationer**: Udtræk de første, sidste eller et interval af tegn fra en tekstkolonne. Mulighed for at vælge joinforbindelsestype i dialogboksen Flet forespørgsler. Mulighed for at tilpasse typen af anførselstegn i dialogboksen Opdel kolonne efter afgrænser.
 
