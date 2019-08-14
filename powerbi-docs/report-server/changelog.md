@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: 031274f4f35ef1e36ec17648c2cbf967f5436020
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: 0aa1d964485297c5e0dae3f4a309cc0dd15b92b2
+ms.sourcegitcommit: 90ad0572a92f640684cdc32c9a6478d299de9dc0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68729798"
+ms.lasthandoff: 08/10/2019
+ms.locfileid: "68940912"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -124,7 +124,10 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
 - **Power BI Desktop (optimeret til Power BI-rapportserver)**
     - *Version: 2.61.5192.641 (august 2018), udgivet: 15. august, 2018*
         - Indeholder ændringer, der kræves for at oprette forbindelse til Power BI-rapportserver (august 2018)         
-        
+    - *Version: 2.61.5192.7701 (august 2018), udgivet: 8. august 2019* (nyt build og ny version)
+        - Fejlrettelser
+            - Rettelse af forkert telemetri-logføring
+            
 ## <a name="march-2018"></a>Marts 2018
 
 - **Power BI-rapportserver**

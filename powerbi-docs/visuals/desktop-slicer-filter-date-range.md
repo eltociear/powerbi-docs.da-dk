@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: c039b00ced1bf62c8be72d218177d04a9fd3accf
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: e1dfda3c759d225019cc50d36cfe746976bd797a
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67532620"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867082"
 ---
 # <a name="use-a-relative-date-slicer-and-filter-in-power-bi-desktop"></a>Brug et relativt datoudsnit og -filter i Power BI Desktop
 
@@ -75,7 +75,7 @@ Hvis du vælger **Måneder** på listen, og indtaster *2* i midterste indstillin
 
 * vises der data for de to foregående måneder i de data i visualiseringer, der er begrænset af udsnittet,
 
-* dvs. fra og med 20. maj og frem til 20. juli (dags dato)
+* fra og med d. 21. maj og frem til og med d. 20. juli (dags dato)
 
 Hvis du til sammenligning har valgt *Måneder (kalender)* , viser de begrænsede visualiseringer data fra 1. maj til 30. juni (de to sidste hele kalendermåneder).
 

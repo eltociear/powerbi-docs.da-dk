@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 05/20/2019
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: e7b2f03d561faa7df582b4ad5a975d09d617f98f
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: 92dd8d7221c9c60fa4ffcd3e3ceefeda319d8670
+ms.sourcegitcommit: 90ad0572a92f640684cdc32c9a6478d299de9dc0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264612"
+ms.lasthandoff: 08/10/2019
+ms.locfileid: "68940919"
 ---
 # <a name="subscribe-yourself-and-others-to-reports-and-dashboards-in-the-power-bi-service"></a>Meld dig selv og andre til abonnementer på rapporter og dashboards i Power BI-tjenesten
 
@@ -33,7 +33,7 @@ Du kan kun oprette abonnementer i Power BI-tjenesten. Du modtager en mail med et
 - Brugere med en Power BI Pro-licens
 - Brugere, der ser indhold i et Premium-arbejdsområde eller i en Premium-app, kan også abonnere på indhold, der findes der, selv uden en Power BI Pro-licens.
 
-Du behøver ikke at have redigeringstilladelser til indholdet (dashboard eller rapport) for at oprette et abonnement til dig selv, men du skal have redigeringstilladerlser for at oprette et for andre. 
+Du behøver ikke at have redigeringstilladelser til indholdet (dashboard eller rapport) for at oprette et abonnement til dig selv, men du skal have redigeringstilladelser for at oprette et for andre. 
 
 ## <a name="subscribe-to-a-dashboard-report-page-or-paginated-report"></a>Abonner på et dashboard, en rapportside eller en sideinddelt rapport
 
@@ -54,9 +54,9 @@ Det er lidt anderledes at abonnere på sideinddelte rapporter. Du kan finde fler
 
 5. Udfyld mailoplysningerne **Emne** og **Meddelelse**. 
 
-5. Vælg en **Hyppighed** for dit abonnement: **Dagligt**, **Ugentligt** eller **Efter dataopdatering (dagligt)** .  Hvis du kun vil modtage abonnementsmailen på bestemte dage, skal du vælge **Ugentligt** og vælge, hvilke dage du vil modtage den.  Hvis du f.eks. kun vil modtage abonnementsmailen på hverdage, skal du vælge **Ugentligt** og fjerne markeringen af felterne for **lørdag** og **søndag**.  
+5. Vælg en **Hyppighed** for dit abonnement: **Dagligt**, **Timevist**, **Ugentligt** eller **Efter dataopdatering (dagligt)** .  Hvis du kun vil modtage abonnementsmailen på bestemte dage, skal du vælge **Timevist** eller **Ugentligt** og vælge, hvilke dage du vil modtage den.  Hvis du f.eks. kun vil modtage abonnementsmailen på hverdage, skal du vælge **Ugentligt** og fjerne markeringen af felterne for **lørdag** og **søndag**.  
 
-6. Hvis du vælger **Dagligt** eller **Ugentligt**, kan du også vælge et **Planlagt tidspunkt** for abonnementet.  Du kører den hver hele time eller 15, 30 eller 45 minutter over.  Vælg morgen (AM) eller eftermiddag/aften (PM). Du kan også angive tidszonen.
+6. Hvis du vælger **Dagligt** eller **Ugentligt**, kan du også vælge et **Planlagt tidspunkt** for abonnementet.  Du kører den hver hele time eller 15, 30 eller 45 minutter over.  Vælg morgen (AM) eller eftermiddag/aften (PM). Du kan også angive tidszonen.  Hvis du vælger **Timevist**, skal du vælge det **planlagte tidspunkt**, hvor abonnementet skal starte, så kommer det hver time derefter.
 
 7. Startdatoen for dit abonnement er som standard den dato, du har oprettet det. Du har mulighed for at vælge en slutdato. Hvis du ikke angiver en slutdato, er den automatisk ét år efter startdatoen. Du kan ændre den til en hvilken som helst dato i fremtiden (op til år 9999) når som helst, før abonnementet slutter. Når et abonnement når en slutdato, ophører det, indtil du aktiveret det igen. Du modtager en meddelelse, før den planlagte slutdato, hvor du bliver spurgt, om du vil forlænge det.    
 
@@ -93,18 +93,18 @@ Et abonnement slutter, hvis Pro-licensen udløber, hvis ejeren sletter dashboard
 * Dashboards med mere end 25 fastgjorte felter eller 4 fastgjorte liverapportsider gengives muligvis ikke fuldstændigt i abonnementsmails, der sendes til brugerne.  Abonnementer på dashboards over dette antal felter blokeres ikke. De anses dog for ikke at være understøttet, hvis du oplever problemer. Overvej at ændre dem i henhold dertil, så de ligger inden for det understøttede antal.
 * I sjældne tilfælde kan det tage længere tid end 15 minutter at levere mailabonnementer til deres modtagere. Hvis det sker, anbefaler vi, at du kører en opdatering af dine data og dit mailabonnement på forskellige tidspunkter for at sikre rettidig levering. Hvis problemet fortsætter, skal du kontakte Power BI-support.
 * For mailabonnementer på dashboards vises nogle felter ikke, hvis der er anvendt sikkerhed på rækkeniveau for dem.  
-* For mailabonnementer på rapporter kan du ikke oprette et abonnement til dig selv, hvis datasættet anvender sikkerhed på rækkeniveau. Du kan ikke melde andre til et abonnement på en rapport med sikkerhed på rækkeniveau.
+* For mailabonnementer på rapporter kan du ikke oprette et abonnement til dig selv, hvis datasættet anvender sikkerhed på rækkeniveau. Du kan ikke tilmelde andre et abonnement på en rapport med sikkerhed på rækkeniveau, medmindre du bruger en sideinddelt rapport, som giver dig mulighed for at sende abonnementet til andre, der bruger din sikkerhedskontekst. 
 * Rapportsideabonnementer er bundet til navnet på siden i rapporten. Hvis du abonnerer på en rapportside og omdøber den, skal du genoprette dit abonnement.
 * Din organisation kan konfigurere bestemte indstillinger i Azure Active Directory, som begrænser muligheden for at bruge mailabonnementer i Power BI.  Disse begrænsninger omfatter, men er ikke begrænset til, multifaktorgodkendelse eller IP-intervalbegrænsning, når ressourcer tilgås.
-* Mailabonnementer for rapporter/dashboards, der bruger datasæt med direkte forbindelser, understøttes i øjeblikket ikke, når du abonnerer på brugere ud over dig selv.
+* Mailabonnementer på rapporter/dashboards, der bruger direkte forbindelser, understøttes i øjeblikket ikke, når andre end dig selv tilmeldes et abonnement, medmindre du bruger en sideinddelt rapport, som giver dig mulighed for at sende abonnementet til andre, som bruger din sikkerhedskontekst. 
 * Mailabonnementer understøtter ikke de fleste [brugerdefinerede visualiseringer](power-bi-custom-visuals.md).  Den eneste undtagelse er de brugerdefinerede visuelle elementer, der er blevet [certificeret](power-bi-custom-visuals-certified.md).  
 * Mailabonnementer understøtter ikke R-drevne brugerdefinerede visualiseringer på nuværende tidspunkt.  
-* Mailabonnementer sendes med rapportens tilstande for standardfilter og -udsnit. Hvis du ændrer standardværdierne, efter du har oprettet abonnementet, vises de ikke i mailen.    
+* Mailabonnementer sendes med rapportens tilstande for standardfilter og -udsnit. Hvis du ændrer standardværdierne, efter du har oprettet abonnementet, vises de ikke i mailen.  Sideinddelte rapporter understøtter denne egenskab og giver dig mulighed for at angive de specifikke parameterværdier pr. abonnement.   
 * For dashboardabonnementer specifikt understøttes visse typer felter endnu ikke.  Det omfatter: streamingfelter, videofelter, felter med brugerdefineret webindhold.     
 * Hvis du deler et dashboard med en kollega uden for din lejer, kan du ikke også oprette et abonnement for den pågældende kollega. Så hvis du er aaron@xyz.com, kan du dele med anyone@ABC.com, men du kan endnu ikke oprette abonnement for anyone@ABC.com, og vedkommende kan ikke abonnere på delt indhold.      
 * Power BI afbryder automatisk midlertidigt opdatering af datasæt, der er knyttet til dashboards og rapporter, som ikke er blevet besøgt i mere end to måneder.  Men hvis du føjer et abonnement til et dashboard eller en rapport, afbrydes det ikke midlertidigt, selvom det ikke besøges.    
 * Hvis du ikke modtager abonnementsmailene, skal du kontrollere, at din brugers hovednavn (UPN) kan modtage mails. [Power BI-teamet arbejder på at slække på dette krav](https://community.powerbi.com/t5/Issues/No-Mail-from-Cloud-Service/idc-p/205918#M10163), så hold dig opdateret. 
-* Hvis dit dashboard eller din rapport er i Premium-kapacitet, kan du bruge mailaliasser for grupper til abonnementer i stedet for at oprette abonnementer for kollegaer én mailadresse ad gangen. Aliasserne er baseret på det aktuelle Active Directory. 
+* Hvis dit dashboard eller din rapport er i Premium-kapacitet, kan du bruge mailaliasser for grupper til abonnementer i stedet for at oprette abonnementer for kolleger én mailadresse ad gangen. Aliasserne er baseret på det aktuelle Active Directory. 
 
 ## <a name="next-steps"></a>Næste trin
 

@@ -1,5 +1,5 @@
 ---
-title: 'Selvstudium: Opret forbindelse til en GitHub-lager med Power BI'
+title: 'Selvstudium: Opret forbindelse til et GitHub-lager med Power BI'
 description: I dette selvstudium opretter du forbindelse til virkelige data i GitHub-tjenesten med Power BI, og Power BI opretter automatisk dashboards og rapporter.
 author: maggiesMSFT
 manager: kfile
@@ -8,18 +8,18 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.custom: connect-to-services
 ms.topic: tutorial
-ms.date: 04/19/2019
+ms.date: 08/07/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 3aeb1fc16ae200399125a2366a8993d45aad34c4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7540083b49e0790bfd9062d28d2655ff024d577f
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64578609"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867171"
 ---
-# <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Selvstudium: Opret forbindelse til en GitHub-lager med Power BI
-I dette selvstudium opretter du forbindelse til virkelige data i GitHub-tjenesten med Power BI, og Power BI opretter automatisk dashboards og rapporter. Du opretter forbindelse til Power BI content offentlige lager (også kendt som en *lager*), og se svar på spørgsmål som: Hvor mange bidrager til det offentlige Power BI-indhold? Hvem der bidrager mest? På hvilken ugedag er der flest bidrag? Og andre spørgsmål. 
+# <a name="tutorial-connect-to-a-github-repo-with-power-bi"></a>Selvstudium: Opret forbindelse til et GitHub-lager med Power BI
+I dette selvstudium opretter du forbindelse til virkelige data i GitHub-tjenesten med Power BI, og Power BI opretter automatisk dashboards og rapporter. Du opretter forbindelse til det offentlige Power BI-lagerindhold (også kaldet *lager*) og ser svar på spørgsmål såsom: Hvor mange bidrager til det offentlige Power BI-indhold? Hvem der bidrager mest? På hvilken ugedag er der flest bidrag? Og andre spørgsmål. 
 
 ![GitHub-rapporten i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-punch-card.png)
 
@@ -40,7 +40,7 @@ Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion]
 
 Hvis du vil gennemføre dette selvstudium, skal du oprette en GitHub-konto, hvis du ikke allerede har en. 
 
-- Tilmelde dig en [GitHub-konto](https://docs.microsoft.com/contribute/get-started-setup-github).
+- Tilmeld dig en [GitHub-konto](https://docs.microsoft.com/contribute/get-started-setup-github).
 
 
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
@@ -49,15 +49,15 @@ Hvis du vil gennemføre dette selvstudium, skal du oprette en GitHub-konto, hvis
    
    ![Hent apps i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial.png) 
 
-3. Vælg **Apps**, type **GitHub** i søgefeltet > **Hent det nu**.
+3. Vælg **Apps**, og skriv **GitHub** i søgefeltet > **Hent det nu**.
    
    ![Hent GitHub i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-app-source.png) 
 
-4. I **installere denne App i Power BI?** Vælg **installere**.
-5. I **din nye app er klar**, skal du vælge **gå til app**.
-6. I **Kom i gang med din nye app**, skal du vælge **forbinde data**.
+4. Vælg **Installér** under **Installér denne Power BI-app?** .
+5. Under **Din nye app er klar** skal du vælge **Gå til app**.
+6. Under **Kom i gang med din nye app** skal du vælge **Opret forbindelse**.
 
-    ![Kom i gang med din nye app](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-connect-data.png)
+    ![Kom i gang med din nye app](media/service-tutorial-connect-to-github/power-bi-new-app-connect-get-started.png)
 
 7. Angiv lagernavnet og lagerejeren. URL-adressen til dette lager er https://github.com/MicrosoftDocs/powerbi-docs, så **Lagerejer** er **MicrosoftDocs**, og **Lager** er **powerbi-docs**. 
    
@@ -65,16 +65,16 @@ Hvis du vil gennemføre dette selvstudium, skal du oprette en GitHub-konto, hvis
 
 5. Angiv de GitHub-legitimationsoplysninger, du har oprettet. Power BI springer måske dette trin over, hvis du allerede er logget på GitHub i din browser. 
 
-6. For **godkendelsesmetode**, hold **oAuth2** valgte \> **Log på**.
+6. Som **Godkendelsesmetode** skal du bevare **oAuth2** valgt \> **Log på**.
 
 7. Følg skærmbillederne for GitHub-godkendelse. Giv Power BI-tilladelse til GitHub-dataene.
    
    Nu kan Power BI oprette forbindelse til GitHub og oprette forbindelse til dataene.  Dataene opdateres én gang om dagen.
 
-8. Når Power BI har importeret dataene, kan du se indholdet af det nye GitHub-arbejdsområde. 
-9. Vælg pilen ud for Arbejdsområdenavnet på i den venstre navigationslinje. Du kan se arbejdsområdet indeholder et dashboard og en rapport. 
+8. Når Power BI importerer dataene, får du vist indholdet af dit nye GitHub-arbejdsområde. 
+9. Vælg pilen ud for navnet på arbejdsområdet på navigationslinjen til venstre. Du kan se, at arbejdsområdet indeholder et dashboard og en rapport. 
 
-    ![App i navigationsruden til venstre](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
+    ![App i venstre navigationsrude](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-left-nav-expanded.png)
 
 10. Vælg ellipsen (...) ud for navnet på dashboardet > **Omdøb** > type **GitHub-dashboard**.
  
@@ -84,9 +84,9 @@ Hvis du vil gennemføre dette selvstudium, skal du oprette en GitHub-konto, hvis
 
     ![Ikonet til global navigation](media/service-tutorial-connect-to-github/power-bi-global-navigation-icon.png)
 
-10. Vælg din GitHub-dashboardet.
+10. Vælg dit nye GitHub-dashboard.
     
-    GitHub-dashboardet indeholder dynamiske data, så du kan se værdierne kan være anderledes.
+    GitHub-dashboardet indeholder dynamiske data, så de værdier, du ser, kan være anderledes.
 
     ![GitHub-dashboard i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-new-dashboard.png)
 
@@ -94,28 +94,28 @@ Hvis du vil gennemføre dette selvstudium, skal du oprette en GitHub-konto, hvis
 
 ## <a name="ask-a-question"></a>Stil et spørgsmål
 
-1. Placer markøren i **stil et spørgsmål om dine data**. Power BI tilbyder **spørgsmål for at komme i gang**. 
+1. Anbring din markør på **Stil et spørgsmål om dine data**. Power BI indeholder **spørgsmål om, hvordan du kan komme i gang**. 
 
-1. Vælg **hvor mange brugere er der**.
+1. Vælg, **hvor mange brugere der er**.
  
     ![Hvor mange brugere er der](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-qna-how-many-users.png)
 
-13. Derimellem **hvor mange** og **brugere er der**, type **pull-anmodninger pr.** . 
+13. Mellem **hvor mange** og **brugere er der** skal du skrive **pull-anmodninger pr.** . 
 
-     Powerbi opretter et søjlediagram med antallet af pull-anmodninger pr. person.
+     Power BI opretter et liggende søjlediagram, der viser antallet af pull-anmodninger pr. person.
 
-    ![Hvor mange pull-anmodninger pr. bruger, er der](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-qna-how-many-prs.png)
+    ![Hvor mange pull-anmodninger pr. bruger er der](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-qna-how-many-prs.png)
 
 
-13. Vælg pinkoden for at fastgøre den til dit dashboard, derefter **Afslut spørgsmål og svar**.
+13. Vælg nålen for at fastgøre det til dit dashboard, og **afslut derefter Spørgsmål og svar**.
 
 ## <a name="view-the-github-report"></a>Få vist GitHub-rapporten 
 
-1. Vælg søjlediagrammet i GitHub-dashboardet, **Pull-anmodninger pr. måned** at åbne den tilknyttede rapport.
+1. På GitHub-dashboardet skal du vælge søjlediagrammet **Pull-anmodninger pr. måned** for at åbne den relaterede rapport.
 
-    ![Pull-anmodninger pr. måned søjlediagram](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-column-chart.png)
+    ![Søjlediagram over pull-anmodninger pr. måned](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-column-chart.png)
 
-2. Vælg et brugernavn i den **samlede pull-anmodninger pr. bruger** diagram. I dette eksempel skal se vi mest muligt ud af deres timer var i februar.
+2. Vælg et brugernavn i diagrammet **Samlede pull-anmodninger pr. bruger**. I dette eksempel kan vi se, at de fleste af deres timer var i februar.
 
     ![Fremhævelse af GitHub-rapport i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-cross-filter-total-prs.png)
 
@@ -123,7 +123,7 @@ Hvis du vil gennemføre dette selvstudium, skal du oprette en GitHub-konto, hvis
  
     ![Hulkort for GitHub-rapport i Power BI](media/service-tutorial-connect-to-github/power-bi-github-app-tutorial-tues-3pm.png)
 
-    Tilsyneladende tirsdag kl. 3 er det mest almindelige tidspunkt og dag i ugen for *bekræftelser*, når personer Kontrollér i deres arbejde.
+    Det ser ud til, at tirsdag kl. 15 er det mest almindelige tidspunkt og den mest almindelige dag i ugen til *bekræftelser*, når medarbejdere tjekker deres arbejde ind.
 
 ## <a name="clean-up-resources"></a>Fjern ressourcer
 

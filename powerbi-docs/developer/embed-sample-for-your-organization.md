@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: 02e11e167d859d3ef23124fed4f9f699766db8fe
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: ce13b161f0a9bf5291f2c0d127106b0db2c6fa29
+ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665541"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68808233"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Selvstudium: Integrer Power BI-indhold i en app til din organisation
 
@@ -83,7 +83,7 @@ Du kan oprette dine rapporter og datasæt ved hjælp af Power BI Desktop. Du kan
    
 ### <a name="create-and-publish-your-paginated-reports"></a>Opret og udgiv dine sideinddelte rapporter
 
-Du kan oprette dine sideinddelte rapporter ved hjælp af [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Derefter kan du [overføre rapporten](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) til et app-arbejdsområde, der som minimum har A4/P1-kapacitet. Den slutbruger, der har uploadet rapporten, skal have en Power BI Pro-licens for at kunne publicere til et app-arbejdsområde.
+Du kan oprette dine sideinddelte rapporter ved hjælp af [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Derefter kan du [uploade rapporten](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) til et apparbejdsområde, der som minimum har A4/P1-kapacitet. Den slutbruger, der uploader rapporten, skal have en Power BI Pro-licens for at kunne udgive til et apparbejdsområde.
    
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Integrer dit indhold ved hjælp af eksempelprogrammet
 

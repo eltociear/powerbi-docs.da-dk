@@ -1,6 +1,6 @@
 ---
 title: Føj et link til et tekstfelt i en rapport
-description: Føj et link til et tekstfelt i Power BI-tjenesten og Desktop
+description: Føj et link til et tekstfelt i Power BI Desktop og Power BI-tjenesten
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,52 +8,60 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 01/16/2019
+ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6484046f6c69f47e01e14b56c38c4c9a5871b28b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0ceb1749fcbf78ac844ca1c6e4b3f08a6f4c5d3f
+ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61199464"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68832417"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Føj et link til et tekstfelt i en rapport
-Tekstfelter kan føjes til rapporter, fastgøres til dashboards fra rapporter og føjes direkte til dashboards. Uanset hvor tekstfeltet er, kan du altid føje et link til det.  
+Du kan føje et tekstfelt til en rapport i Power BI Desktop eller Power BI-tjenesten. Du kan fastgøre et tekstfelt fra en rapport til et dashboard eller føje et direkte til et dashboard. Uanset hvor tekstfeltet er, kan du altid føje et link til det. I denne artikel kan du se, hvordan du føjer et link til et tekstfelt i en rapport. 
 
-> **BEMÆRK**! Du kan finde oplysninger om links i Power BI-tabeller og -matrixer under [Links i tabeller](power-bi-hyperlinks-in-tables.md). Du kan se flere oplysninger om tilføjelse af tekstfelter i dit **dashboard** under [Tilføj et felt direkte fra dashboardet ](service-dashboard-add-widget.md). 
-> 
-> 
+
+Se, hvordan Will Thompson opretter et tekstfelt og føjer et link til det. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew#t=0m55s" frameborder="0" allowfullscreen></iframe>
 
+Du kan finde oplysninger om links i Power BI-tabeller og -matrixer under [Føj links til en tabel](power-bi-hyperlinks-in-tables.md). Du kan finde flere oplysninger om tilføjelse af tekstfelter til dit dashboard under [Føj billeder, videoer og mere til dit dashboard](service-dashboard-add-widget.md). 
 
-## <a name="to-add-a-hyperlink-to-a-text-box-in-a-report"></a>Sådan føjer du et link til et tekstfelt i en rapport
-1. [Opret et tekstfelt, og tilføj en tekst](power-bi-reports-add-text-and-shapes.md). 
-2. Markér eksisterende tekst, eller tilføj ny tekst, der skal bruges som et link.
+## <a name="to-add-a-hyperlink-to-a-text-box"></a>Sådan føjer du et link til et tekstfelt
+1. Åbn en rapport, [opret et tekstfelt](power-bi-reports-add-text-and-shapes.md), og tilføj noget tekst. 
+2. Markér eksisterende tekst, eller tilføj ny tekst, der skal bruges som et link. 
+
+   Tekstfeltets menu vises.
    
    ![Vælg tekst i tekstfeltet](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-new.png)
-3. Vælg linkikonet ![Hyperlinkikon](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-icon.png).
-4. Skriv eller indsæt URL-adressen i linkfeltet, og vælg **Udfør**.
+3. Vælg linkikonet ![Ikon for link](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-icon.png) i tekstfeltets menu.
+
+   Linkfeltet vises i tekstfeltets menu.
+
+4. Skriv eller indsæt URL-adressen i linkfeltet, og vælg derefter **Udfør**.
    
    ![Skriv eller indsæt URL-adressen i linkfeltet](media/service-add-hyperlink-to-text-box/power-bi-add-link.png)
-5. Test linket.  
-   
-   ![Test linket](media/service-add-hyperlink-to-text-box/power-bi-test-link.png)
-   
-   * Placer markøren et sted i den markerede tekst for at få vist URL-adressen.  
-     
-      ![Placer markøren et sted i den markerede tekst](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-edit.png)
-   * Vælg URL-adressen for at åbne siden i et nyt browservindue.
+5. Test linket:  
 
-## <a name="to-remove-the-hyperlink-but-leave-the-text"></a>Sådan fjerner du linket, men lader teksten stå
+   a. Placer markøren et vilkårligt sted i det nye link i tekstfeltet for at få vist URL-adressen i linkfeltet.  
+     
+      ![Link i tekstfelt](media/service-add-hyperlink-to-text-box/power-bi-test-link.png)
+   
+      ![URL-adresse i linkfelt](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-edit.png)
+
+   b. Vælg URL-adressen i linkfeltet for at åbne siden i et nyt browservindue.
+
+## <a name="to-remove-the-hyperlink"></a>Sådan fjerner du linket
 1. Vælg linket i tekstfeltet for at fremhæve det.
    
      ![Fjern linket](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-remove.png)
-2. Vælg **Fjern**. 
+2. Vælg **Fjern** i tekstfeltets menu. 
+
+   Linket fjernes i Power BI Desktop, men teksten beholdes.
 
 ## <a name="next-steps"></a>Næste trin
-[Tekstfelter i Power BI-rapporter](power-bi-reports-add-text-and-shapes.md)
+[Tekstfelter og figurer i Power BI-rapporter](power-bi-reports-add-text-and-shapes.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/).
 

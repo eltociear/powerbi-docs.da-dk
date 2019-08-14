@@ -10,16 +10,16 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 02fbe26fc4d0c8be0439ca656151ef7712d201b6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1c4a16d0dbe22a154dacfd296bfedab8acb97e81
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61398992"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867137"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Understøttede sprog og lande/områder til Power BI
 
-I denne artikel indeholder en liste over understøttede sprog og lande/områder til Power BI-tjenesten, Power BI Desktop og Power BI-dokumentationen.
+I denne artikel kan du se en liste over understøttede sprog og lande/områder for Power BI-tjenesten, Power BI Desktop og Power BI-dokumentationen.
 
 ## <a name="countries-and-regions-where-power-bi-is-available"></a>Lande og områder, hvor Power BI er tilgængelig
 Se [listen over international tilgængelighed](https://products.office.com/business/international-availability) for at få vist en liste over lande og områder, hvor Power BI er tilgængelig. 
@@ -73,11 +73,11 @@ Power BI-tjenesten (i browseren) er tilgængelig på følgende 44 sprog:
 * Vietnamesisk – Tiếng Việt
 
 ### <a name="whats-translated"></a>Hvad er oversat
-Powerbi oversætter menuer, knapper, meddelelser og andre elementer i oplevelsen på dit sprog.
+I Power BI oversættes menuer, knapper, meddelelser og andre elementer af oplevelsen til dit sprog. Rapportindhold, f.eks. automatisk genererede titler, filtre og værktøjstip, oversættes, men dine data oversættes ikke automatisk. I rapporter ændres layoutet af visualiseringer ikke, hvis du bruger et sprog, der går fra højre mod venstre, f.eks. hebraisk.
 
 I øjeblikket er nogle få funktioner kun tilgængelige på engelsk:
 
-* Dashboards og rapporter, opretter Power BI, når du opretter forbindelse til tjenester som f.eks Microsoft Dynamics CRM, Google Analytics og Salesforce. Du kan stadig oprette dine egne dashboards og rapporter i dit eget sprog.
+* Dashboards og rapporter, som Power BI opretter for dig, når du opretter forbindelse til tjenester såsom Microsoft Dynamics CRM, Google Analytics, Salesforce. Du kan stadig oprette dine egen dashboards og rapporter på dit eget sprog.
 * Udforsk dine data med spørgsmål og svar.
 
 Hold dig informeret, mens vi arbejder på at gøre yderligere funktioner tilgængelige på sprog. 
@@ -134,15 +134,20 @@ Du kan få Power BI Desktop på to måder: Du kan downloade det, eller du kan in
    
      Næste gang du starter Power BI Desktop, bruges det sprog, du har angivet som standard. 
 
+Hvis du vil tilsidesætte standarden og bruge Power BI Desktop på et andet sprog end dit Windows-sprog, skal du benytte følgende fremgangsmåde.
+1. Gå til **Filer** > **Indstillinger** > **Indstillinger** i Power BI Desktop.
+2. Under **Globale indstillinger** skal du vælge **Regionale indstillinger**.
+3. Vælg en anden landestandard i feltet **Applikationssprog**. 
+
+Sprogunderstøttelse i Power BI Desktop er begrænset til de sprog, der vises på rullelisten Applikationssprog.
+
 ### <a name="choose-a-language-when-you-download-power-bi-desktop"></a>Vælg et sprog, når du downloader Power BI Desktop
-Det sprog, du vælger til Power BI Desktop, påvirker visningsformatet for tal og datoer i rapporter. 
+Hvis du bruger. msi-versionen af Power BI Desktop-installationsprogrammet, er sproget angivet på det tidspunkt, hvor du downloader den. Du vælger sproget på siden [Download Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=45331). 
 
-* Vælg et sprog, når du [downloader Power BI Desktop](https://powerbi.microsoft.com/desktop). 
-
-Hvis du vil ændre sproget i Power BI Desktop, skal du gå tilbage til downloadsiden og downloade den på et andet sprog.
+Hvis du vil ændre sproget i Power BI Desktop, når du installerer på denne måde, skal du gå tilbage til downloadsiden og downloade det på et andet sprog.
 
 ### <a name="choose-the-locale-for-importing-data-into-power-bi-desktop"></a>Vælg landestandarden til import af data til Power BI Desktop
-Uanset om du downloader Power BI Desktop eller installerer den fra Windows Store, kan du vælge en landestandard for en bestemt rapport, der skal være en anden end landestandarden i din version af Power BI Desktop. Ændringerne landestandard datas fortolkes på, når de er importeret fra dine data til datakilden, for eksempel om "3/4/2017" fortolkes som 3. April eller 4. marts. 
+Uanset om du downloader Power BI Desktop eller installerer den fra Windows Store, kan du vælge en landestandard for en bestemt rapport, der skal være en anden end landestandarden i din version af Power BI Desktop. Landestandarden ændrer den måde, data fortolkes på, når de importeres fra datakilden, f.eks. om "3/4/2017" fortolkes som 3. april eller 4. marts. 
 
 1. Gå til **Filer** > **Indstillinger** > **Indstillinger** i Power BI Desktop.
 2. Vælg **Internationale indstillinger** under **Aktuel fil**.

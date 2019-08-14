@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3a5b6b89984064101b683532cbfb77ae5540c307
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: cd3afd0ed3ba1f5b734aab2106cbd70f65f29006
+ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730255"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68867062"
 ---
 # <a name="on-premises-data-gateway-faq---power-bi"></a>Ofte stillede spørgsmål om datagatewayen i det lokale miljø – Power BI
 
@@ -23,9 +23,9 @@ ms.locfileid: "68730255"
 
 ## <a name="power-bi"></a>Power BI
 
-**Spørgsmål:** Behøver jeg at opgradere den personlige gateway? 
+**Spørgsmål:** Skal jeg opgradere datagatewayen i det lokale miljø (personlig tilstand)?
 
-**Svar:** Nej, du kan blive ved med at bruge den personlige gateway til Power BI.
+**Svar:** Nej, du kan blive ved med at bruge gatewayen (personlig tilstand) til Power BI.
 
 **Spørgsmål:** Kræves der specialtilladelser for at installere gatewayen og administrere den i Power BI-tjenesten?
 
@@ -41,7 +41,7 @@ ms.locfileid: "68730255"
 
 **Spørgsmål:** Hvorfor kan jeg ikke oprette forbindelse til Oracle-serveren? 
 
-**Svar:** Du skal muligvis installere Oracle-klienten og konfigurere tnsnames.ora-filen med oplysninger om den korrekte server for at oprette forbindelse til Oracle-serveren. Dette er en separat installation uden for gateway'en. Du kan finde flere oplysninger under [Installér Oracle-klienten](service-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
+**Svar:** Du skal muligvis installere Oracle-klienten og konfigurere tnsnames.ora-filen med oplysninger om den korrekte server for at oprette forbindelse til Oracle-serveren. Dette er en separat installation uden for gateway'en. Du kan finde flere oplysninger under [Installér Oracle-klienten](service-gateway-onprem-manage-oracle.md#install-the-oracle-client).
 
 **Spørgsmål:** Kan gatewayen fungere med Microsoft Azure ExpressRoute? 
 
