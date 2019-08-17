@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/02/2019
+ms.date: 08/15/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: dd656f81cb0fdb32f9637f969ef538e263e20053
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 1ae51620a51c0dc76cd50bd85fc09aa2bfc8e026
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271991"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69561041"
 ---
 # <a name="power-bi-security-whitepaper"></a>Whitepaper om sikkerhed i Power BI
 
@@ -100,17 +100,16 @@ Der oprettes en Power BI-lejer i det datacenter, der anses for at være tættest
 
 ### <a name="multiple-geographies-multi-geo"></a>Flere geografiske områder (multi-geo)
 
-På baggrund af deres forretningsbehov kræver nogle organisationer tilstedeværelse af Power BI i flere lande eller områder. En virksomhed kan f.eks. have sin Power BI-lejer i USA, men kan også gøre forretninger i andre geografiske områder, f.eks. Australien, og have brug for, at Power BI-tjenesterne og dataene forbliver i det eksterne område.  Fra og med anden halvdel af 2018 har organisationer, som har deres lejer i ét område, også kunnet få adgang til Power BI-ressourcer i et andet område, når det er klargjort korrekt. For nemheds skyld kaldes denne funktion **multi-geo** i hele dette dokument.
+På baggrund af deres forretningsbehov kræver nogle organisationer tilstedeværelse af Power BI i flere lande eller områder. En virksomhed kan f. eks. have sin Power BI lejer i USA men kan også gøre forretninger i andre geografiske områder, f. eks. Australien, og du skal bruge bestemte Power BI data for at kunne være i resten af det pågældende Fjern område for at overholde de lokale regler. Fra og med den anden halvdel af 2018 kan organisationer med deres hjem lejer i én geografi også klargøre og få adgang til Power BI ressourcer, der er placeret i et andet geografisk område. For nemheds skyld kaldes denne funktion **multi-geo** i hele dette dokument.
 
-Der er teknisk konsekvenser, som man skal være opmærksom på, når man bruger forskellige geografiske områder. De forklares i dette dokument. Vigtige overvejelser omfatter følgende:
+Den mest aktuelle og primære artikel med oplysninger om flere geografiske områder er, at du kan [konfigurere understøttelse af flere geografiske områder til Power bi Premium](service-admin-premium-multi-geo.md) artikel. 
 
-- En cachelagret forespørgsel, der er gemt i et eksternt område, forbliver i dette område som inaktive data, men andre data under overførsel kan skifte frem og tilbage mellem flere geografiske områder.
-- Rapporter i PBIX eller XLSX-filer i et ekstern område, der er publiceret til Power BI, resulterer nogle gang i, at der gemmes en kopi eller et øjebliksbillede i Azure Blob Storage i Power BI. Når det sker, krypteres dataene ved hjælp af Azure Storage Service Encryption (SSE).
-- Når du flytter data fra et område til et andet i et multi-geo-miljø, opstår der spildopsamling i det område, som dataene blev flyttet fra, inden for 7 til 10 dage. På dette tidspunkt vil kopien af de data, der blev flyttet fra det oprindelige område, blive destrueret.
+Der er flere tekniske detaljer, der skal evalueres i forbindelse med lokale love og administrative bestemmelser, når de opererer i forskellige geografiske områder. Disse oplysninger omfatter følgende:
 
-Følgende billede viser, hvordan Power BI-tjenesterne i det eksterne område med et multi-geo-miljø dirigeres gennem **Back End-klyngen i Power BI**, hvor der etableres en forbindelse til klientens virtuelle fjernmaskine under Power BI-abonnementet.
-
-![Multi-geo](media/whitepaper-powerbi-security/powerbi-security-whitepaper_07.png)
+- Der findes et eksternt forespørgsels udførelses lag i området Fjern kapacitet for at sikre, at datamodellen, cache lagrene og de fleste databehandling forbliver i området for fjern kapacitet. Der er nogle undtagelser, som beskrevet i det [fler geografiske område for Power bi Premium](service-admin-premium-multi-geo.md) artikel.
+- En cachelagret forespørgselstekst og et tilsvarende resultat, der er gemt i en fjern region, forbliver i det pågældende område, men andre data i transit kan gå frem og tilbage mellem flere geografiske områder.
+- PBIX-eller XLSX-filer, der publiceres (overføres) til en kapacitet med flere områder af Power BI-tjeneste, kan medføre, at en kopi gemmes midlertidigt i Azure blob Storage i Power BI Rens lejer område. I sådanne tilfælde krypteres dataene ved hjælp af Azure Storage service Encryption (SSE), og kopien planlægges for spildopsamling, så snart indholdet af filindholdet og overførsel til fjern området er fuldført. 
+- Når der flyttes data på tværs af områder i et miljø med flere områder, slettes forekomsten af dataene i kildeområdet inden for 7-30 dage. 
 
 ### <a name="datacenters-and-locales"></a>Datacentre og landestandarder
 
@@ -316,7 +315,7 @@ Power BI bruger HTTPS, TCP/IP og TLS til at overvåge dataintegriteten for data 
 
 ## <a name="user-authentication-to-data-sources"></a>Godkendelse af brugeren til datakilder
 
-Med hver enkelt datakilde, en bruger opretter en forbindelse, der er baseret på deres logon, og får adgang til data ved hjælp af disse legitimationsoplysninger. Brugerne kan derefter oprette forespørgsler, dashboards og rapporter på baggrund af de underliggende data.
+Med hver enkelt datakilde opretter en bruger en forbindelse baseret på deres logon og får adgang til dataene med disse legitimationsoplysninger. Brugerne kan derefter oprette forespørgsler, dashboards og rapporter på baggrund af de underliggende data.
 
 Når en bruger deler forespørgsler, dashboards, rapporter eller en visualisering, afhænger adgang til disse data og visualiseringer af, om de underliggende datakilder understøtter sikkerhed på rolleniveau.
 
@@ -382,7 +381,7 @@ Følgende spørgsmål er almindelige spørgsmål og svar om sikkerhed i Power BI
 
 * **Power BI-legitimationsoplysninger og legitimationsoplysninger til domænet:** Brugere logger på Power BI ved hjælp af en mailadresse. Når en bruger forsøger at oprette forbindelse til en dataressource, bruger Power BI mailadressen til Power BI-logon som legitimationsoplysninger. I forbindelse med ressourcer, der er forbundet med et domæne (enten i det lokale miljø eller cloudbaseret), matches logonmailen med _brugerens hovednavn_ ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx) – User Principal Name) af katalogtjenesten for at afgøre, om der er tilstrækkelige legitimationsoplysningerne til at tillade adgang. For organisationer, der bruger arbejdsbaserede mailadresser til at logge på Power BI (den samme mailadresse, de bruger til at logge på arbejdsressourcer, f.eks. _david@contoso.com_ ), kan tilknytningen ske uden problemer. For organisationer, der ikke bruger arbejdsbaserede mailadresser (f.eks. _david@contoso.onmicrosoft.com_ ), skal der være tilknyttet et katalog, før der tillades adgang til ressourcer i det lokale miljø med legitimationsoplysningerne til Power BI-logon.
 
-* **SQL Server Analysis Services og Power BI:** For organisationer, der bruger SQL Server Analysis Services i det lokale miljø, tilbydes Power BI-datagatewayen i det lokale miljø (som er en **gateway**, der blev refereret til i forrige afsnit).  Power BI-datagatewayen i det lokale miljø kan gennemtvinge sikkerhed på rolleniveau for datakilder. Du kan finde flere oplysninger om sikkerhed på rolleniveau under **Godkendelse af brugeren til datakilder** tidligere i dette dokument. Du kan finde flere oplysninger om gateways, i [datagatewayen i det lokale miljø](service-gateway-onprem.md).
+* **SQL Server Analysis Services og Power BI:** For organisationer, der bruger SQL Server Analysis Services i det lokale miljø, tilbydes Power BI-datagatewayen i det lokale miljø (som er en **gateway**, der blev refereret til i forrige afsnit).  Power BI-datagatewayen i det lokale miljø kan gennemtvinge sikkerhed på rolleniveau for datakilder. Du kan finde flere oplysninger om sikkerhed på rolleniveau under **Godkendelse af brugeren til datakilder** tidligere i dette dokument. Du kan finde flere oplysninger om gateways i [data gateways i det lokale miljø](service-gateway-onprem.md).
 
   Organisationer kan desuden bruge Kerberos til **enkeltlogon** (SSO) og problemfrit oprette forbindelse fra Power BI til datakilder i det lokale miljø såsom SQL Server, SAP HANA og Teradata. Du kan finde flere oplysninger og se de specifikke konfigurationskrav i [**Brug Kerberos til SSO fra Power BI til datakilder i det lokale miljø**](https://docs.microsoft.com/power-bi/service-gateway-kerberos-for-sso-pbi-to-on-premises-data).
 
@@ -422,15 +421,15 @@ Følgende spørgsmål er almindelige spørgsmål og svar om sikkerhed i Power BI
 
 **Hvilke porte bruges af datagatewayen i det lokale miljø og den personlige gateway? Skal nogle domænenavne være tilladt med henblik på at oprette forbindelse?**
 
-* Du kan få et detaljeret svar på dette spørgsmål ved at følge dette link: [Gateway-porte](/data-integration/gateway/service-gateway-communication#ports)
+* Du kan få et detaljeret svar på dette spørgsmål ved at følge dette link: [Gateway porte](/data-integration/gateway/service-gateway-communication#ports)
 
 **Når der arbejdes med datagatewayen i det lokale miljø, hvordan bruges genoprettelsesnøglerne så, og hvor gemmes de? Hvad med sikker administration af legitimationsoplysninger?**
 
-* Under installationen og konfigurationen af gatewayen skriver administratoren en **genoprettelsesnøgle** til gatewayen. **Genoprettelsesnøglen** bruges til at generere en stærk **AES** den symmetriske nøgle. En **RSA** asymmetrisk nøgle, oprettes der også på samme tid.
+* Under installationen og konfigurationen af gatewayen skriver administratoren en **genoprettelsesnøgle** til gatewayen. Denne **genoprettelsesnøgle** bruges til at generere en stærk **AES** symmetrisk nøgle. Der oprettes også en asymmetrisk **RSA** -nøgle på samme tid.
 
     Disse genererede nøgler (**RSA** og **AES**) gemmes i en fil, der er placeret på den lokale computer. Denne fil er også krypteret. Indholdet af filen kan kun dekrypteres af denne specifikke Windows-computer og kun af denne specifikke konto for gatewaytjenesten.
 
-    Når en bruger angiver legitimationsoplysninger for datakilden i brugergrænsefladen i Power BI-tjenesten, krypteres legitimationsoplysningerne med den offentlige nøgle i browseren. Gatewayen dekrypterer legitimationsoplysningerne ved hjælp af den private RSA-nøgle og igen krypterer dem med en AES symmetriske nøgle, før dataene er gemt i Power BI-tjenesten. Denne proces sikrer, at Power BI-tjenesten aldrig har adgang til ukrypterede data.
+    Når en bruger angiver legitimationsoplysninger for datakilden i brugergrænsefladen i Power BI-tjenesten, krypteres legitimationsoplysningerne med den offentlige nøgle i browseren. Gatewayen dekrypterer legitimationsoplysningerne ved hjælp af den private RSA-nøgle og krypterer dem igen med en AES symmetrisk nøgle, før dataene gemmes i Power BI-tjeneste. Denne proces sikrer, at Power BI-tjenesten aldrig har adgang til ukrypterede data.
 
 **Hvilke kommunikationsprotokoller bruges af datagatewayen i det lokale miljø, og hvordan sikres de?**
 
@@ -438,7 +437,7 @@ Følgende spørgsmål er almindelige spørgsmål og svar om sikkerhed i Power BI
 
   - **AMQP 1.0 – TCP + TLS**: Denne protokol kræver, at portene 443, 5671-5672 og 9350-9354 er åbne for udgående kommunikation. Denne protokol foretrækkes, da den har lavere kommunikationsspild.
 
-  - **HTTPS – WebSockets via HTTPS + TLS**: Denne protokol bruger kun port 443. WebSocket startes af en enkelt HTTP CONNECT-meddelelse. Når kanalen er etableret, er kommunikationen i bund og grund TCP + TLS. Du kan tvinge gatewayen til at bruge denne protokol ved at ændre en indstilling, der er beskrevet i den [lokale gateway-artikel](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
+  - **HTTPS – WebSockets via HTTPS + TLS**: Denne protokol bruger kun port 443. WebSocket startes af en enkelt HTTP CONNECT-meddelelse. Når kanalen er etableret, er kommunikationen i bund og grund TCP + TLS. Du kan tvinge gatewayen til at bruge denne protokol ved at ændre en indstilling, der er beskrevet i [artiklen gateway i det lokale miljø](/data-integration/gateway/service-gateway-communication#force-https-communication-with-azure-service-bus).
 
 **Hvilke rolle spiller Azure CDN i Power BI?**
 
