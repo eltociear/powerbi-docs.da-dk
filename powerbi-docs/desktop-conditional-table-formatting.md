@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e23fd2aca90ee14c2376b0175c7c8b5132cf9a9f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 35f60c0e41a06c8f13931d158fe092184da8838d
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222273"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69561071"
 ---
 # <a name="conditional-formatting-in-tables"></a>Betinget formatering af tabeller 
 Med betinget formatering af tabeller kan du angive brugerdefinerede farver for celler baseret på celleværdier eller baseret på andre værdier eller felter, og du kan bruge gradueringsfarver. Du kan også få vist celleværdier med datalinjer. 
@@ -130,11 +130,17 @@ Og du kan derefter få resultater som følgende matrix.
 
 Med lidt fantasi og DAX kan du oprette mange flere variationer.
 
-Du kan bruge nogen af de værdier, der er angivet i CSS-farver specifikationer for på [ https://www.w3.org/TR/css-color-3/ ](https://www.w3.org/TR/css-color-3/) farve dine visuelle elementer:
-* 6- eller 8 cifrede hex-3, koder f.eks. #3E4AFF. Kontrollér, at du medtage symbolet # i begyndelsen af koden. "3E4AFF" kan ikke accepteres. 
-* RGB- eller RGBA værdier, f.eks. RGBA (234 234 234, og 0,5)
-* HSL eller HSLA værdier f.eks. HSLA (123 75% 75%, og 0,5)
-* Farve på navne, f.eks. grøn, SkyBlue, PeachPuff 
+Du kan bruge en hvilken som helst værdi, der er angivet i CSS-farvespektret på [https://www.w3.org/TR/css-color-3/](https://www.w3.org/TR/css-color-3/) til at farvelægge dine visualiseringer:
+* 3-, 6- eller 8-cifrede heksadecimale koder, f.eks. #3E4AFF. Sørg for at inkludere #-tegnet i starten af koden. "3E4AFF" accepteres ikke. 
+* RGB- eller RGBA-værdier, f.eks. RGBA (234, 234, 234, 0,5)
+* HSL- eller HSLA-værdier, f.eks. HSLA (123, 75 %, 75 %, 0,5)
+* Farvenavne, f.eks. grøn, himmelblå, fersken 
+
+## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
+Der er et par overvejelser, du skal gøre, når du arbejder med betinget formatering af tabeller:
+
+* Betinget formatering anvendes kun på værdier i **Matrix**visualiseringen og ikke på nogen subtotaler eller samlede totaler. 
+
 
 ## <a name="next-steps"></a>Næste trin
 Du kan få flere oplysninger i følgende artikel:  

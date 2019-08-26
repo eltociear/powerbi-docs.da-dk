@@ -10,12 +10,12 @@ ms.subservice: powerbi-developer
 ms.topic: tutorial
 ms.custom: seodec18
 ms.date: 07/29/2019
-ms.openlocfilehash: ce13b161f0a9bf5291f2c0d127106b0db2c6fa29
-ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
+ms.openlocfilehash: 1c110022c27cf0e213484619a750140a63a7d0dc
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68808233"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490397"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-organization"></a>Selvstudium: Integrer Power BI-indhold i en app til din organisation
 
@@ -35,7 +35,7 @@ Du skal have følgende for at komme i gang:
 * En [Power BI Pro-konto](../service-self-service-signup-for-power-bi.md).
 * Et [Microsoft Azure](https://azure.microsoft.com/)-abonnement.
 * Du skal have din egen konfiguration af [Azure Active Directory-lejer](create-an-azure-active-directory-tenant.md).
-* Hvis du vil integrere sideinddelte rapporter, skal du som minimum have A4/P1-kapacitet. Se [Hvilken størrelse Premium-kapacitet skal jeg bruge til sideinddelte rapporter?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
+* Hvis du vil integrere sideinddelte rapporter, skal du som minimum have en P1-kapacitet. Se [Hvilken størrelse Premium-kapacitet skal jeg bruge til sideinddelte rapporter?](../paginated-reports-faq.md#what-size-premium-capacity-do-i-need-for-paginated-reports).
 
 Hvis du ikke er tilmeldt **Power BI Pro**, kan du [tilmelde dig en gratis prøveversion](https://powerbi.microsoft.com/pricing/), før du begynder.
 
@@ -45,7 +45,7 @@ Hvis du ikke har et Azure-abonnement, skal du oprette en [gratis konto](https://
 
 Før du begynder at integrere rapporter, dashboards eller felter i dit program, skal du sikre dig, at du kan integrere med Power BI i dit miljø.
 
-Du kan gennemgå [værktøjet til konfiguration af integrering](https://aka.ms/embedsetup/UserOwnsData) for hurtigt at komme i gang med og downloade et eksempelprogram, der hjælper dig med at oprette et miljø og integrere en rapport. Hvis du vil integrere en sideinddelt rapport, skal du som minimum tildele A4/P1-kapacitet til det oprettede app-arbejdsområde.
+Du kan gennemgå [værktøjet til konfiguration af integrering](https://aka.ms/embedsetup/UserOwnsData) for hurtigt at komme i gang med og downloade et eksempelprogram, der hjælper dig med at oprette et miljø og integrere en rapport. Hvis du vil integrere en sideinddelt rapport, skal du som minimum tildele en P1-kapacitet til det oprettede apparbejdsområde.
 
 Hvis du vælger at konfigurere miljøet manuelt, kan du fortsætte nedenfor.
 
@@ -83,7 +83,7 @@ Du kan oprette dine rapporter og datasæt ved hjælp af Power BI Desktop. Du kan
    
 ### <a name="create-and-publish-your-paginated-reports"></a>Opret og udgiv dine sideinddelte rapporter
 
-Du kan oprette dine sideinddelte rapporter ved hjælp af [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Derefter kan du [uploade rapporten](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) til et apparbejdsområde, der som minimum har A4/P1-kapacitet. Den slutbruger, der uploader rapporten, skal have en Power BI Pro-licens for at kunne udgive til et apparbejdsområde.
+Du kan oprette dine sideinddelte rapporter ved hjælp af [Power BI Report Builder](../paginated-reports-report-builder-power-bi.md#create-reports-in-power-bi-report-builder). Derefter kan du [uploade rapporten](../paginated-reports-quickstart-aw.md#upload-the-report-to-the-service) til et apparbejdsområde, der som minimum har fået tildelt en P1-kapacitet. Den slutbruger, der uploader rapporten, skal have en Power BI Pro-licens for at kunne udgive til et apparbejdsområde.
    
 ## <a name="embed-your-content-by-using-the-sample-application"></a>Integrer dit indhold ved hjælp af eksempelprogrammet
 
@@ -152,9 +152,6 @@ Udfyld **reportId** med GUID for rapporten fra Power BI. Du kan få disse oplysn
 URL til Power BI-rapport <br>
 
 ![PBI-reportId](media/embed-sample-for-your-organization/embed-sample-for-your-organization-041.png)
-
-URL til sideinddelt rapport <br>
-
 
 
 URL til sideinddelt rapport<br>
@@ -384,7 +381,7 @@ Nu, hvor du er færdig med at udvikle dit program, er tiden kommet til at underb
 
 ### <a name="create-a-dedicated-capacity"></a>Opret en dedikeret kapacitet
 
-Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for indholdet i dit apparbejdsområde. I forbindelse med sideinddelte rapporter skal du som minimum understøtte dit app-arbejdsområde med A4/P1-kapacitet. Du kan oprette en dedikeret kapacitet ved hjælp af [Power BI Premium](../service-premium-what-is.md).
+Når du opretter en dedikeret kapacitet, kan du drage fordel af at have en dedikeret ressource for indholdet i dit apparbejdsområde. I forbindelse med sideinddelte rapporter skal du som minimum understøtte dit apparbejdsområde med en P1-kapacitet. Du kan oprette en dedikeret kapacitet ved hjælp af [Power BI Premium ](../service-premium-what-is.md).
 
 I tabellen nedenfor kan du se en oversigt over de Power BI Premium-SKU'er, der er tilgængelige i [Microsoft Office 365](../service-admin-premium-purchase.md):
 
@@ -425,7 +422,7 @@ Globale administratorer, eller Power BI-tjenesteadministratorer, kan slå muligh
 
 ## <a name="next-steps"></a>Næste trin
 
-I dette selvstudium har du fået at vide, hvordan du integrerer Power BI-indhold i et program ved hjælp af din Power BI-organisationskonto. Nu kan du prøve at integrere Power BI-indhold i et program ved hjælp af apps. Du kan også prøve at integrere Power BI-indhold til dine kunder (understøttes endnu ikke for integrering af sideinddelte rapporter):
+I dette selvstudium har du fået at vide, hvordan du integrerer Power BI-indhold i et program ved hjælp af din Power BI-organisationskonto. Nu kan du prøve at integrere Power BI-indhold i et program ved hjælp af apps. Du kan også prøve at integrere Power BI-indhold for dine kunder (understøttes endnu ikke til integrering af sideinddelte rapporter):
 
 > [!div class="nextstepaction"]
 > [Integrer fra apps](embed-from-apps.md)

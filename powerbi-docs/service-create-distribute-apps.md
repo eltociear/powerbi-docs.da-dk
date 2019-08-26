@@ -6,37 +6,37 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/20/2019
+ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: eccda071b6c6abc92640024c3587bafa71038dee
-ms.sourcegitcommit: c122c1a8c9f502a78ccecd32d2708ab2342409f0
+ms.openlocfilehash: ed3a65e25694c23e1852a554742e0f8a6e6ff668
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66826638"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530598"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicer en app i Power BI
 
-I Power BI kan du oprette officielt pakket indhold og derefter distribuere det til en bred målgruppe som en *app*. Du opretter apps i *apparbejdsområder*, hvor du kan samarbejde om Power BI-indhold med dine kollegaer. Du kan derefter publicere de færdige apps til store grupper af personer i din organisation. 
+I Power BI kan du oprette officielt pakket indhold og derefter distribuere det til en bred målgruppe som en *app*. Du opretter apps i *arbejdsområder*, hvor du kan samarbejde om Power BI-indhold med dine kolleger. Du kan derefter publicere de færdige apps til store grupper af personer i din organisation. 
 
 ![Power BI-apps](media/service-create-distribute-apps/power-bi-new-apps.png)
 
-Forretningsbrugere har ofte brug for flere Power BI-dashboards og -rapporter for at kunne drive deres virksomhed. Med Power BI-apps kan du oprette samlinger af dashboards og rapporter og publicere disse apps til hele organisationen eller til bestemte personer eller grupper. Hvis du er forfatter af rapporten eller administrator, gør apps det nemmere for dig at administrere tilladelser til disse samlinger.
+Forretningsbrugere har ofte brug for flere Power BI-dashboards og -rapporter for at kunne drive deres virksomhed. Med Power BI-apps kan du oprette samlinger af dashboards og rapporter og publicere disse samlinger som apps til hele organisationen eller til bestemte personer eller grupper. Hvis du er forfatter af rapporten eller administrator, gør apps det nemmere for dig at administrere tilladelser til disse samlinger.
 
 Forretningsbrugere kan få dine apps på flere måder:
 
-- De kan finde og installere din app fra Microsoft AppSource
+- De kan finde og installere din app fra Microsoft AppSource.
 - Du kan sende dem et direkte link.
 - Du kan automatisk installere dem i dine kollegaers Power BI-konti, hvis Power BI-administratoren giver dig tilladelse til det.
 
-Du kan oprette appen med tilpasset, indbygget navigation, så brugerne nemt kan finde rundt i dit indhold. De kan ikke ændre indholdet af appen. De kan interagere med det enten i Power BI-tjenesten eller en af mobilappsene – og selv filtrere, markere og sortere data. De får automatisk opdateringer, og du kan styre, hvor ofte dataene opdateres. Læs mere om [appoplevelsen for forretningsbrugere](consumer/end-user-apps.md).
+Du kan oprette appen med tilpasset, indbygget navigation, så brugerne nemt kan finde rundt i dit indhold. De kan ikke ændre indholdet af appen. De kan interagere med det enten i Power BI-tjenesten eller en af mobilappsene – og selv filtrere, markere og sortere data. De får automatisk opdateringer, og du kan styre, hvor ofte dataene opdateres. Du kan også give dem adgang til at oprette forbindelse til de underliggende datasæt og oprette kopier af rapporterne i appen. Læs mere om [tilladelsen Opret](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
 
 ## <a name="licenses-for-apps"></a>Licenser til apps
 Hvis du vil oprette eller opdatere en app, skal du have en Power BI Pro-licens. Der er to muligheder for *forbrugere*.
 
-* Mulighed 1: Alle forretningsbrugere skal have licens til **Power BI Pro** for at få vist din app. 
-* Mulighed 2: Hvis dit apparbejdsområde er placeret i en Power BI Premium-kapacitet, kan gratisbrugere i din organisation få vist appindhold. Læs [Hvad er Power BI Premium?](service-premium.md) for at få flere oplysninger.
+* **Mulighed 1** Arbejdsområdet til denne app er *ikke* i en Power BI Premium-kapacitet: Alle forretningsbrugere skal have licens til Power BI Pro for at få vist din app. 
+* **Mulighed 2** Arbejdsområdet for denne app *er* i en Power BI Premium-kapacitet: Forretningsbrugere uden Power BI Pro-licenser i din organisation kan få vist appindhold. De kan dog ikke kopiere rapporterne eller oprette rapporter, der er baseret på de underliggende datasæt. Læs [Hvad er Power BI Premium?](service-premium.md) for at få flere oplysninger.
 
 ## <a name="publish-your-app"></a>Publicer din app
 Når dashboards og rapporter i dit arbejdsområde er klar, skal du vælge, hvilke dashboards og rapporter du vil publicere, og derefter publicerer du dem som en app. 
@@ -57,21 +57,19 @@ Når dashboards og rapporter i dit arbejdsområde er klar, skal du vælge, hvilk
    
      ![Byg din app](media/service-create-distribute-apps/power-bi-apps-build-your-apps.png)
 
-4. Under **Navigation** skal du vælge det indhold, der skal publiceres som en del af appen. Derefter kan du tilføje appnavigation for at organisere indholdet i sektioner. Se [Design navigationsoplevelsen til din app](#design-the-navigation-experience-for-your-app) i denne artikel for at få flere oplysninger.
+4. Under **Navigation** skal du vælge det indhold, der skal publiceres som en del af appen. Derefter kan du tilføje appnavigation for at organisere indholdet i sektioner. Se [Design navigationsoplevelsen til din app](#design-the-navigation-experience) i denne artikel for at få flere oplysninger.
    
      ![Appnavigation](media/service-create-distribute-apps/power-bi-apps-navigation.png)
 
 5. Under **Tilladelser** skal du bestemme, hvem der har adgang til appen, og hvad de kan gøre med den. 
     - I [klassiske arbejdsområder](service-create-workspaces.md): alle i din organisation, bestemte personer eller ADD-sikkerhedsgrupper (Azure Active Directory).
     - I [arbejdsområder med den nye oplevelse](service-create-the-new-workspaces.md): bestemte personer, AAD-sikkerhedsgrupper og -distributionslister samt Office 365 Grupper. Alle brugere af arbejdsområdet får automatisk adgang til appen for arbejdsområdet.
-    - Du kan give brugere af appen tilladelse til at oprette forbindelse til appens underliggende datasæt ved hjælp af tilladelsen Opret. Disse datasæt vises i søgeoplevelserne for datasættet.
-    - Du kan give brugerne af appen tilladelse til at lave en kopi af rapporter i denne app til deres Mit arbejdsområde. 
+    - Du kan give brugere af appen tilladelse til at oprette forbindelse til appens underliggende datasæt ved hjælp af tilladelsen Opret. De får vist disse datasæt, når de søger efter delte datasæt. Læs mere om [at give brugerne mulighed for at oprette forbindelse til appens datasæt](#allow-users-to-connect-to-datasets) i denne artikel.
+    - Brugere med tilladelse til at oprette kan også have tilladelse til at kopiere rapporter fra denne app til et andet arbejdsområde. Læs mere om at [give brugere mulighed for at kopiere rapporter i appen](#allow-users-to-copy-reports) i denne artikel.
     
     >[!IMPORTANT]
     >Hvis din app er afhængig af datasæt fra andre arbejdsområder, er det dit ansvar at sikre, at alle brugere af appen har adgang til de underliggende datasæt.
-> 
->     
-
+    >
 
 6. Du kan installere appen automatisk for modtagerne, hvis din Power BI-administrator har aktiveret denne indstilling for dig på Power BI-administrationsportalen. Læs mere om, hvordan du [installerer en app automatisk](#automatically-install-apps-for-end-users), i denne artikel.
 
@@ -84,26 +82,26 @@ Når dashboards og rapporter i dit arbejdsområde er klar, skal du vælge, hvilk
 Du kan sende dette direkte link til de personer, du har delt den med, eller de kan finde din app under fanen Apps ved at gå til **Download og udforsk flere apps fra AppSource**. Læs mere om [appoplevelsen for forretningsbrugere](consumer/end-user-apps.md).
 
 ## <a name="change-your-published-app"></a>Skift din publicerede app
-Når du publicerer din app, vil du muligvis ændre eller opdatere den. Det er nemt at opdatere den, hvis du er administrator eller medlem af det nye apparbejdsområde. 
+Når du publicerer din app, vil du muligvis ændre eller opdatere den. Det er nemt at opdatere den, hvis du er administrator eller medlem af det nye arbejdsområde. 
 
-1. Åbn apparbejdsområdet, der svarer til appen. 
+1. Åbn det apparbejdsområde, der svarer til appen. 
    
      ![Åbn arbejdsområde](media/service-create-distribute-apps/power-bi-apps-open-workspace.png)
 
 2. Foretag de ønskede ændringer i dashboards eller rapporter.
  
-     Apparbejdsområdet er dit testområde, så dine ændringer sendes ikke live i appen, før du publicerer igen. Her kan du foretage ændringer, uden at det påvirker publicerede apps.  
+     Arbejdsområdet er dit testområde, så dine ændringer sendes ikke live i appen, før du publicerer igen. Her kan du foretage ændringer, uden at det påvirker publicerede apps.  
  
     > [!IMPORTANT]
     > Hvis du fjerner en rapport og opdaterer appen, mister dine appforbrugere alle tilpasninger, f.eks. bogmærker, kommentarer osv., også selvom du tilføjer rapporten i appen igen.  
  
-3. Gå tilbage til apparbejdsområdets liste over indhold, og vælg **Opdater app** i hjørnet øverst til højre.
+3. Gå tilbage til arbejdsområdets liste over indhold, og vælg **Opdater app** i hjørnet øverst til højre.
    
 1. Opdater evt. **Installation**, **Navigation** og **Tilladelser**, og vælg derefter **Opdater app**.
    
 De personer, du har publiceret appen for, får automatisk vist den opdaterede version af appen. 
 
-## <a name="design-the-navigation-experience-for-your-app"></a>Design navigationsoplevelsen til din app
+## <a name="design-the-navigation-experience"></a>Design navigationsoplevelsen
 Du kan bruge indstillingen **Ny navigationsgenerator** til at udvikle brugerdefineret navigation til din app. Den brugerdefinerede navigation gør det nemmere for dine brugere at finde og bruge indhold i appen. For eksisterende apps er denne indstilling slået fra, og for nye apps er indstillingen som standard slået til.
 
 Når indstillingen er slået fra, kan du vælge, at **App-landingsside** enten skal angives til **Specifikt indhold**, f.eks. et dashboard eller en rapport, eller vælge **Ingen** for at vise brugeren en grundlæggende oversigt over indhold.
@@ -160,27 +158,32 @@ Her er nogle ting, du skal huske på, når du pusher apps til slutbrugerne:
 
 * Gæstebrugere, der ikke har accepteret en invitation, får ikke installeret apps automatisk.  
 
-## <a name="allowing-users-to-connect-to-the-apps-underlying-datasets"></a>Giv brugere tilladelse til at oprette forbindelse til appens underliggende datasæt
-Når du markerer indstillingen for at give brugerne tilladelse til at oprette forbindelse til appens underliggende datasæt, modtager brugerne af appen tilladelsen Opret for det underliggende datasæt. Dette giver brugerne mulighed for at [bruge datasættet for appen på tværs af arbejdsområder](service-datasets-across-workspaces.md) til at søge efter disse datasæt i Power BI Desktop og tjenesten at hente dataoplevelse samt til at oprette rapporter og dashboards ved hjælp af disse datasæt. 
+## <a name="allow-users-to-connect-to-datasets"></a>Tillad, at brugere opretter forbindelse til datasæt
 
-Når du fjerner markeringen af denne indstilling, får nye brugere, du føjer til appen, ikke længere tilladelsen Opret. Eksisterende tilladelser for de underliggende datasæt ændres dog ikke. Du kan bruge den angivne brugergrænseflade til at fjerne tilladelsen Opret manuelt fra brugere af appen, som ikke længere skal have den. Læs mere om [tilladelsen Opret](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Når du markerer indstillingen for at **tillade brugere at oprette forbindelse til appens underliggende datasæt**, giver du appbrugere *tilladelse til at oprette* i disse datasæt. Med denne tilladelse kan de udføre flere vigtige handlinger:
 
-## <a name="allowing-users-to-make-a-copy-of-the-reports-in-the-app"></a>Giv brugerne tilladelse til at lave en kopi af rapporterne i appen
-Når du markerer indstillingen **Giv brugerne tilladelse til at lave en kopi af rapporterne i denne app**, giver du brugerne tilladelse til at gemme rapporterne i appen i deres Mit arbejdsområde. De kan derefter tilpasse rapporterne til deres unikke behov. Denne indstilling kræver, at **Giv alle brugere tilladelse til at oprette forbindelse til appens underliggende datasæt ved hjælp af tilladelsen Opret** aktiveres. Denne funktionalitet fungerer som den nye funktionalitet [Kopiér rapporter fra andre arbejdsområder](service-datasets-copy-reports.md).
+- [Bruge appdatasæt](service-datasets-across-workspaces.md) som udgangspunkt for deres rapporter.
+- Søge efter disse datasæt i Power BI Desktop og i brugergrænsefladen til hentning af data i Power BI-tjenesten.
+- Oprette rapporter og dashboards baseret på disse datasæt.
+
+Når du fjerner markeringen af denne indstilling, får nye brugere, du føjer til appen, ikke længere tilladelsen Opret. Eksisterende tilladelser for de underliggende datasæt for eksisterende brugere af appen ændres dog ikke. Du kan fjerne tilladelsen Opret manuelt fra brugere af appen, som ikke længere skal have den. Læs mere om [tilladelsen Opret](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+
+## <a name="allow-users-to-copy-reports"></a>Tillad brugere at kopiere rapporter
+
+Når du markerer indstillingen **Giv brugerne tilladelse til at lave en kopi af rapporterne i denne app**, giver du brugerne tilladelse til at gemme rapporterne i appen i deres Mit arbejdsområde eller i et andet arbejdsområde. Det er nødvendigt at have en Pro-licens, hvis man vil lave en kopi, selvom den oprindelige rapport er i et arbejdsområde med en Premium-kapacitet. De kan derefter tilpasse rapporterne til deres unikke behov. Du skal markere indstillingen **Giv alle brugere tilladelse til at oprette forbindelse til appens underliggende datasæt ved hjælp af tilladelsen Opret** først. Når du vælger disse indstillinger, aktiverer du den nye funktion til [kopiering af rapporter fra andre arbejdsområder](service-datasets-copy-reports.md).
 
 ## <a name="unpublish-an-app"></a>Annuller publicering af en app
-Et medlem af et apparbejdsområde kan annullerer publicering af appen.
+Et medlem af et arbejdsområde kan annullere publicering af appen.
 
 >[!IMPORTANT]
 >Når du annullerer publiceringen af en app, mister app-brugere deres tilpasninger. De mister alle personlige bogmærker, kommentarer eller abonnementer, der er knyttet til indholdet i appen. Annuller kun publicering af en app, hvis du har brug at fjerne den.
 > 
-> 
 
-* I et apparbejdsområde skal du vælge de tre prikker ( **...** ) i øverste højre hjørne > **Annuller publicering af app**.
+* I et arbejdsområde skal du vælge de tre prikker ( **...** ) i øverste højre hjørne > **Annuller publicering af app**.
   
      ![Annuller publicering af app](media/service-create-distribute-apps/power-bi-app-unpublish.png)
 
-Denne handling fjerner installationen af appen for alle, du har udgivet den til, så de ikke længere har adgang til den. Den sletter ikke apparbejdsområdet eller dets indhold.
+Denne handling fjerner installationen af appen for alle, du har udgivet den til, så de ikke længere har adgang til den. Den sletter ikke arbejdsområdet eller dets indhold.
 
 ## <a name="view-your-published-app"></a>Se din publicerede app
 
@@ -189,7 +192,7 @@ Når forbrugerne af din app åbner din app, kan de se den navigation, du har opr
 ![App med navigation](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
 
 ## <a name="next-steps"></a>Næste trin
-* [Opret et apparbejdsområde](service-create-workspaces.md)
+* [Opret et arbejdsområde](service-create-workspaces.md)
 * [Installér og brug apps i Power BI](consumer/end-user-apps.md)
 * [Power BI-apps til eksterne tjenester](service-connect-to-services.md)
 * [Power BI-administrationsportal](https://docs.microsoft.com/power-bi/service-admin-portal)

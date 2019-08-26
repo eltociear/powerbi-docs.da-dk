@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/25/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: bea8b954cb1c0743745ef6d3bf9d48aa8513f2fe
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 436040f11534ede9d2e42e4f939d24a19e3d1c24
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624058"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655181"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-from-power-bi-to-on-premises-data-sources"></a>Brug Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø
 
@@ -192,7 +192,7 @@ Nu hvor du forstår, hvordan Kerberos fungerer sammen med en gateway, kan du kon
 1. Hent CommonCryptoLib (sapcrypto.dll) version **8.5.25 eller nyere** fra SAP Launchpad, og kopiér den til en mappe på din gateway-computer. I den samme mappe, hvortil du kopierede sapcrypto.dll, skal du oprette en fil med navnet sapcrypto.ini med følgende indhold:
 
     ```
-    ccl/snc/enable\_kerberos\_in\_client\_role = 1
+    ccl/snc/enable_kerberos_in_client_role = 1
     ```
 
     Ini-filen indeholder konfigurationsoplysninger, der kræves af CommonCryptoLib for at aktivere SSO i gateway-scenariet.
@@ -242,7 +242,7 @@ Hvis du ikke kan opdatere rapporten i Power BI-tjenesten, kan du bruge gateway-s
 
     ```
     ccl/trace/level=5
-    ccl/trace/directory=\\<drive\\>:\logs\sectrace
+    ccl/trace/directory=<drive>:\logs\sectrace
     ```
 
     Sørg for at ændre indstillingen _ccl/trace/directory_ til en placering, som medlemmer af gruppen Godkendte brugere kan skrive til. Alternativt kan du oprette en ny .ini-fil for at ændre denne funktion. Oprette en fil med navnet sectrace.ini i den samme mappe som sapcrypto.ini og sapcrypto.dll med følgende indhold.  Erstat indstillingen DIRECTORY med en placering på computeren, som den godkendte bruger kan skrive til:
@@ -250,7 +250,7 @@ Hvis du ikke kan opdatere rapporten i Power BI-tjenesten, kan du bruge gateway-s
     ```
     LEVEL = 5
     
-    DIRECTORY = \\<drive\\>:\logs\sectrace
+    DIRECTORY = <drive>:\logs\sectrace
     ```
 
     Du kan nu genskabe problemet og kontrollere, at den placering, der peges på af DIRECTORY, indeholder sporingsfiler. Sørg for at slå sporing af CPIC og CCL fra, når du er færdig.

@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 04/21/2019
+ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: 49ee06d544e409cadc6728d286cb841f5f4adec4
-ms.sourcegitcommit: acd9f8212c9b0c6d3d8c4d56bba3c285246f3122
+ms.openlocfilehash: 3105736c6576428af2d00b6f502c94f94c409977
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68230283"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995252"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -42,22 +42,23 @@ Der findes to ikoner til rapporter i Power BI - Mobil-apps:
 
 * ![ikon for rapport, der er optimeret til telefoner](./media/mobile-reports-in-the-mobile-apps/report-phone-icon.png) angiver en rapport, der har mindst én rapportside, som er optimeret til telefoner og vises i stående format. 
 
-Bemærk! Når du holder din telefon i liggende retning, får du altid det liggende layout, selv om rapportsiden har et layout, der er optimeret til telefoner. 
+> [!NOTE]
+> Når du holder din telefon i liggende retning, får du altid det liggende layout, selvom rapportsiden har et layout, der er optimeret til telefoner. 
 
 Hvis du vil hente en rapport fra et dashboard, skal du trykke på de tre prikker (...) i øverste højre hjørne af et felt > **Åbn rapport**.
   
   ![Åbn rapport](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
-  Det er ikke alle felter, der kan åbnes i en rapport. De felter, der er oprettet ved at stille spørgsmål i feltet Spørgsmål og svar, kan for eksempel ikke åbnes i en rapport, når du trykker på dem. 
+  Ikke alle felter kan åbnes i en rapport. De felter, der er oprettet ved at stille spørgsmål i feltet Spørgsmål og svar, kan for eksempel ikke åbnes i en rapport, når du trykker på dem. 
   
 ## <a name="interacting-with-reports"></a>Arbejde med rapporter
-Når du har åbnet en rapport i appen, kan du begynde at arbejde med den. Du kan gøre mange ting med rapporten og dens data. I rapportfoden kan du finde handlinger, som du kan udføre på rapporten, og ved at trykke på og trykke længe på de data, der vises i rapporten, kan du opdele dataene.
+Når du har åbnet en rapport i appen, kan du begynde at arbejde med den. Du kan gøre mange ting med rapporten og dens data. I rapportfoden kan du finde handlinger, der skal udføres i rapporten. Når du trykker på og trykker længe på de data, der vises i rapporten, kan du opdele dataene.
 
 ### <a name="using-tap-and-long-tap"></a>Brug af tryk og langt tryk
 Et tryk svarer til et klik med musen. Så hvis du vil fremhæve rapporten på baggrund af et datapunkt, skal du trykke på det pågældende datapunkt.
 Hvis du trykker på værdien af et udsnit, vælges denne værdi, som bruges til opdeling af resten af rapporten. Hvis du trykker på et link, en knap eller et bogmærke, aktiveres den ud fra hvilken handling, der er defineret af forfatteren.
 
-Du har sikkert bemærket, at der vises en kant, når du trykker på en visual. I øverste højre hjørne af kanten vises der tre prikker (...). Når du trykker på dem, vises en menu med handlinger, du kan udføre på denne visual.
+Du har sikkert bemærket, at der vises en kant, når du trykker på en visual. I øverste højre hjørne af kanten vises en ellipse (...). Når du trykker på den, vises en menu med handlinger, du kan udføre på dette visuelle element.
 
 ![rapportvisual og menu](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
@@ -78,7 +79,7 @@ Rapportforfattere kan definere hierarkier i dataene og relationer mellem rapport
 
 ![rapportanalysehandlinger](./media/mobile-reports-in-the-mobile-apps/report-drill-actions.png)
 
-Når der er mulighed for *detaljeadgang*, og du trykker på en bestemt del af en visualisering, føres du til en anden side i rapporten, der er filtreret, så den værdi, du har klikket på, vises.  En forfatter af en rapport kan angive en eller flere muligheder for detaljeadgang, som hver især fører dig til en anden side. Hvis det er tilfældet, kan du vælge, hvilken mulighed du vil. Du kan bruge knappen Tilbage til at komme tilbage til den forrige rapportside.
+Når der er mulighed for *detaljeadgang*, og du trykker på en bestemt del af en visualisering, føres du til en anden side i rapporten, der er filtreret, så den værdi, du har klikket på, vises. En forfatter af en rapport kan angive en eller flere muligheder for detaljeadgang, som hver især fører dig til en anden side. Du kan vælge, hvilken en du vil foretage detaljeadgang for. Du kan bruge knappen Tilbage til at komme tilbage til den forrige rapportside.
 
 Læs om, hvordan du [tilføjer detaljeadgang i Power BI Desktop](../../desktop-drillthrough.md).
    
@@ -97,7 +98,7 @@ De handlinger, du kan udføre fra sidefoden, er:
 2) Åbne samtaleruden for at få vist eller tilføje kommentarer til denne rapport.
 3) Åbne filterruden for at få vist og ændre det filter, der aktuelt anvendes på rapporten.
 4) Få vist alle siderne i denne rapport. Når du trykker på sidenavnet, indlæses og præsenteres den pågældende side.
-Det er muligt at flytte mellem rapportsider ved at stryge fra kanten af skærmen til midten.
+Du kan flytte mellem rapportsider ved at stryge fra kanten af skærmen til midten.
 5) Se alle rapporthandlinger.
 
 #### <a name="all-report-actions"></a>Alle rapporthandlinger
@@ -110,7 +111,7 @@ Eksempel:
 1) **Filtrering efter aktuel placering** er aktiveret, hvis dataene i din rapport er kategoriseret af forfatteren med geografiske data. [Se, hvordan du identificerer geografiske data i din rapport](https://docs.microsoft.com/power-bi/desktop-mobile-geofiltering).
 2) **Scan for at filtrere rapporten efter stregkode** er kun aktiveret, hvis datasættet i din rapport er mærket som stregkode. [Sådan mærkes stregkoder i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-mobile-barcodes). 
 3) **Inviter** er kun aktiveret, hvis du har tilladelse til at dele denne rapport med andre. Du har kun tilladelse, hvis du er ejer af rapporten, eller hvis du har fået tilladelse til at dele den igen af ejeren.
-4) **Anmærk og del** kan være deaktiveret, hvis din organisation har er en [Intune-beskyttelsespolitik](https://docs.microsoft.com/intune/app-protection-policies), som forbyder deling fra Power BI - Mobil-appen. 
+4) **Anmærk og del** kan være deaktiveret, hvis din organisation har en [Intune-beskyttelsespolitik](https://docs.microsoft.com/intune/app-protection-policies), som forbyder deling fra Power BI - Mobil-appen. 
 
 ## <a name="next-steps"></a>Næste trin
 * [Få vist og interager med Power BI-rapporter, der er optimeret til din telefon](mobile-apps-view-phone-report.md)

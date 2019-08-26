@@ -8,31 +8,31 @@ featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/21/2018
+ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 8d690e8fd19ab988192c2aa36053416d2bb3d45c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 7583c108bd996505937242cc083c4aa9abbaa5a8
+ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61403400"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68961709"
 ---
 # <a name="comparing-power-bi-desktop-and-the-power-bi-service"></a>Sammenligning af Power BI Desktop og Power BI-tjenesten
 
-I et Venn-diagram, der sammenligner Power BI Desktop og Power BI-tjenesten, viser området i midten, hvordan de to overlapper hinanden. Nogle opgaver kan du foretage i enten Power BI Desktop eller tjenesten. Men på de to sider af Venn-diagrammet har både programmet og tjenesten unikke funktioner.  
+I et Venn-diagram, der sammenligner Power BI Desktop og Power BI-tjenesten, viser området i midten, hvordan de to overlapper hinanden. Nogle opgaver kan du foretage i enten Power BI Desktop eller tjenesten. De to sider af Venn-diagrammet viser de funktioner, der er unikke for programmet og for tjenesten.  
 
 ![Venn-diagram over Power BI Desktop og tjenesten](media/service-service-vs-desktop/power-bi-venn-desktop-service.png)
 
-**Power BI Desktop** er et komplet værktøj til dataanalyse og oprettelse af rapporter. Når du installerer det gratis program på din lokale computer, kan du oprette forbindelse til mange forskellige datakilder og kombinere dem (også kaldet modellering) i en datamodel. I [Introduktionsvejledning til Power BI Desktop](desktop-getting-started.md) gennemgås processen.
+**Power BI Desktop** er et komplet værktøj til dataanalyse og rapportoprettelse, som du installerer gratis på din lokale computer. Det omfatter Forespørgselseditor, hvor du kan oprette forbindelse til mange forskellige datakilder og kombinere dem (også kaldet modellering) i en datamodel. Derefter designer du en rapport, der er baseret på den pågældende datamodel. I [Introduktionsvejledning til Power BI Desktop](desktop-getting-started.md) gennemgås processen.
 
-**Power BI-tjenesten** er en cloudbaseret onlinetjeneste til let redigering af rapporter og samarbejde mellem teams og virksomheder. Du kan også oprette forbindelse til datakilder i Power BI-tjenesten, men mulighederne for modellering er begrænsede. 
+**Power BI-tjenesten** er en cloudbaseret tjeneste. Den understøtter let rapportredigering og samarbejde for teams og organisationer. Du kan også oprette forbindelse til datakilder i Power BI-tjenesten, men mulighederne for modellering er begrænsede. 
 
-De fleste rapportdesignere, der arbejder på business intelligence-projekter, bruger **Power BI Desktop** til at oprette rapporter og bruger derefter **Power BI-tjenesten** til at dele deres rapporter med andre.
+De fleste rapportdesignere, der arbejder på business intelligence-projekter, bruger **Power BI Desktop** til at oprette rapporter og bruger derefter **Power BI-tjenesten** til at distribuere deres rapporter til andre.
 
 ## <a name="report-editing"></a>Rapportredigering
 
-I både programmet og tjenesten kan du oprette og redigere *rapporter*. En rapport kan have en eller flere sider med visualiseringer og samlinger af visualiseringer. Du kan tilføje bogmærker, knapper, filtre og detaljeadgang for at forbedre navigationen i dine rapporter.
+I både programmet og tjenesten kan du oprette og redigere *rapporter*. En rapport kan have en eller flere sider med visualiseringer og samlinger af visualiseringer. Tilføj bogmærker, knapper, filtre og detaljeadgang for at forbedre navigationen i dine rapporter.
 
 ![Redigering af en rapport i Power BI Desktop eller i tjenesten](media/service-service-vs-desktop/power-bi-editing-desktop-service.png)
 
@@ -46,9 +46,16 @@ Denne video viser rapporteditoren i Power BI Desktop.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
-## <a name="collaborating-in-the-power-bi-service"></a>Samarbejde i Power BI-tjenesten
+## <a name="working-in-the-power-bi-service"></a>Arbejde i Power BI-tjenesten
 
-Når du har oprettet dine rapporter, kan du gemme dem i et *arbejdsområde* i **Power BI-tjenesten**, hvor du og dine kolleger kan samarbejde. Du kan bygge *dashboards* oven på disse rapporter. Derefter deler du disse dashboards og rapporter med brugere af rapporter i og uden for din organisation. Brugerne af rapporterne får dem vist i Power BI-tjenesten i [læsevisning](consumer/end-user-reading-view.md) ikke redigeringsvisning. De har ikke adgang til alle de funktioner, der er tilgængelig for oprettere af rapporten. 
+### <a name="collaborating"></a>Samarbejde
+
+
+Når du har oprettet dine rapporter, kan du gemme dem i et *arbejdsområde* i **Power BI-tjenesten**, hvor du og dine kolleger kan samarbejde. Du kan bygge *dashboards* oven på disse rapporter. Derefter deler du disse dashboards og rapporter med brugere af rapporter i og uden for din organisation. Brugerne af rapporterne får dem vist i Power BI-tjenesten i en *læsevisning* ikke redigeringsvisning. De har ikke adgang til alle de funktioner, der er tilgængelige for oprettere af rapporter.  Du kan også dele dine datasæt og lade andre bygge deres egne rapporter ud fra dem. Læs mere om [samarbejde i Power BI-tjenesten](service-new-workspaces.md).
+
+### <a name="self-service-data-prep-with-dataflows"></a>Selvbetjent dataforberedelse med dataflow
+
+Dataflows hjælper virksomheder med at samle data fra forskellige kilder og forberede dem til modellering. Analytikere kan nemt oprette dataflows ved hjælp af velkendte værktøjer til selvbetjening. Analytikere bruger dataflows til at indsamle, transformere, integrere og forbedre big data ved at definere datakildeforbindelser, ETL-logik, opdatere tidsplaner og meget mere. Læs mere om [selvbetjent dataforberedelse med dataflows](service-dataflows-overview.md).
 
 ## <a name="next-steps"></a>Næste trin
 

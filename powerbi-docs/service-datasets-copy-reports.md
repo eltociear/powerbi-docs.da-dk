@@ -7,19 +7,22 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/03/2019
+ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 2db4c23b50071e387913ed79b4d01daeafb928a4
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: af0ffa5a879a2249c34ac73895103dfdf63e4d27
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567420"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530599"
 ---
 # <a name="copy-reports-from-other-workspaces-preview"></a>Kopiér rapporter fra andre arbejdsområder (prøveversion)
 
-Når du finder en rapport, du vil bruge i et arbejdsområde eller en app, kan du lave en kopi af den og gemme den i et andet arbejdsområde. Du kan derefter ændre rapporten og tilføje eller slette visualiseringer og andre elementer. Du behøver ikke at oprette datamodellen. Den er allerede oprettet for dig. Og det er meget nemmere at redigere en eksisterende rapport end at starte forfra. Du kan dog ikke publicere din kopi af rapporten i en app fra det nye arbejdsområde. Se listen over andre [overvejelser og begrænsninger](service-datasets-across-workspaces.md#considerations-and-limitations) i artiklen "Brug datasæt på tværs af arbejdsområder".
+Når du finder en rapport, du vil bruge i et arbejdsområde eller en app, kan du lave en kopi af den og gemme den i et andet arbejdsområde. Du kan derefter ændre din kopi af rapporten og tilføje eller slette visualiseringer og andre elementer. Du behøver ikke at oprette datamodellen. Den er allerede oprettet for dig. Og det er meget nemmere at redigere en eksisterende rapport end at starte forfra. Når du opretter en app fra det nye arbejdsområde, kan du dog nogle gange ikke publicere din kopi af rapporten i appen. Se yderligere oplysninger under [Overvejelser og begrænsninger i artiklen "Brug datasæt på tværs af arbejdsområder"](service-datasets-across-workspaces.md#considerations-and-limitations).
+
+> [!NOTE]
+> Hvis du vil lave en kopi, skal du have en Pro-licens, selvom den oprindelige rapport er i et arbejdsområde med en Premium-kapacitet.
 
 ## <a name="save-a-copy-of-a-report"></a>Gem en kopi af en rapport
 

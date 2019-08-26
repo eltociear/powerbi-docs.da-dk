@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 08/12/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5f0f09c3f64795ca0530bbe5ec5cec09de6c7b53
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0c098baa42e4fdc45b23519856eed824dbab5cad
+ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60989206"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69023397"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Brug rapporttemaer i Power BI Desktop
-Med **rapporttemaer** kan du anvende et farvetema i hele rapporten, f.eks. organisationens farver, sæsonmæssige farver eller andre farvetemaer. Når du anvender et **rapporttema**, bruges farver fra det valgte tema for alle visuelle elementer i rapporten. Der gælder nogle få undtagelser, som er beskrevet senere i denne artikel.
+Med **rapporttemaer** kan du anvende et farvetema i hele rapporten, f.eks. organisationens farver, sæsonmæssige farver, ikonsæt eller andre farvetemaer. Når du anvender et **rapporttema**, bruges farver fra det valgte tema for alle visualiseringer i rapporten. Der gælder nogle få undtagelser, som er beskrevet senere i denne artikel.
 
 ![Rapporttemaer](media/desktop-report-themes/report-themes_1.png)
 
@@ -40,7 +40,7 @@ For at anvende et rapporttema på en rapport i Power BI Desktop kan du vælge me
 | Solnedgang    | ![#B6B0FF](https://placehold.it/20/B6B0FF/000000?text=+) ![#3049AD](https://placehold.it/20/3049AD/000000?text=+) ![#FF994E](https://placehold.it/20/FF994E/000000?text=+) ![#C83D95](https://placehold.it/20/C83D95/000000?text=+) ![#FFBBED](https://placehold.it/20/FFBBED/000000?text=+) ![#42F9F9](https://placehold.it/20/42F9F9/000000?text=+) ![#00B2D9](https://placehold.it/20/00B2D9/000000?text=+) ![#FFD86C](https://placehold.it/20/FFD86C/000000?text=+)|
 | Tusmørke  | ![#F17925](https://placehold.it/20/F17925/000000?text=+) ![#004753](https://placehold.it/20/004753/000000?text=+) ![#CCAA14](https://placehold.it/20/CCAA14/000000?text=+) ![#4B4C4E](https://placehold.it/20/4B4C4E/000000?text=+) ![#D82C20](https://placehold.it/20/D82C20/000000?text=+) ![#A3D0D4](https://placehold.it/20/A3D0D4/000000?text=+) ![#536F18](https://placehold.it/20/536F18/000000?text=+) ![#46ABB0](https://placehold.it/20/46ABB0/000000?text=+)|
 
-For at vælge mellem de tilgængelige indbyggede rapporttemaer skal du vælge knappen **Switch Theme** (Skift tema) fra båndet **Home** (Hjem) og derefter vælge et af temaerne fra rullemenuen.
+For at vælge mellem de tilgængelige indbyggede rapporttemaer skal du vælge knappen **Skift tema** på båndet **Start** og derefter vælge et af temaerne fra rullemenuen.
 
 ![Vælg et rapporttema](media/desktop-report-themes/report-themes_2a.png)
 
@@ -48,7 +48,7 @@ Dit rapporttema anvendes på rapporten, og du er klar til at gå i gang.
 
 ### <a name="importing-report-themes"></a>Import af rapporttemaer
 
-Du importerer et brugerdefineret rapporttema ved at vælge knappen **Switch Theme** (Skift tema) på båndet **Home** (Hjem). Vælg derefter **Import Theme** (Importér tema) fra rullemenuen.
+Du importerer et brugerdefineret rapporttema ved at vælge knappen **Skift tema** på båndet **Start**. Vælg derefter **Import Theme** (Importér tema) fra rullemenuen.
 
 ![Importér tema](media/desktop-report-themes/report-themes_3.png)
 
@@ -78,8 +78,8 @@ JSON-filen har følgende påkrævede linjer:
   - **background** anvendes til knapfyld og baggrunden i navne på kombinationsdiagrammer. Hvordan disse farver bruges, afhænger af den specifikke typografi, der anvendes. 
   - Visuals i en **tabel** og **matrix** anvender disse typografier som standard.
 
-Gør følgende for at anvende en typografi i en **table**- eller **matrix**-visual: 
-1. Vælg en visual. 
+Gør følgende for at anvende en typografi i en **tabel-** eller **matrixvisualisering**: 
+1. Vælg en visualisering. 
 2. I ruden **Visualiseringer** vælger du sektionen **Format**.
 3. Udvid **typografien Matrix**, og vælg derefter en typografi på rullelisten **Typografi**.
 
@@ -101,7 +101,7 @@ Herefter kan du angive din egen heksadecimale farvekode for de valgte farver.
 
 I JSON-filen angiver du kun den formatering, der skal justeres, og alt andet, der *ikke* er angivet i JSON-filen, vender blot tilbage til Power BI-standardindstillingerne.
 
-Der er mange fordele ved at oprette en JSON-fil. Du kan f.eks. angive, at alle diagrammer skal bruge en skriftstørrelse på 12, eller at visse visuelle elementer skal bruge en bestemt skrifttypefamilie. Du kan også deaktivere datamærkater for specifikke diagramtyper.
+Der er mange fordele ved at oprette en JSON-fil. Du kan f.eks. angive, at alle diagrammer skal bruge en skriftstørrelse på 12, eller at visse visualiseringer skal bruge en bestemt skrifttypefamilie. Du kan også deaktivere datamærkater for specifikke diagramtyper.
 
 Når du bruger en detaljeret JSON-fil, kan du oprette en temafil, der standardiserer dine diagrammer og rapporter, hvilket gør det nemt at gøre dine organisationsrapporter konsistente.
 
@@ -110,14 +110,14 @@ Du kan finde oplysninger om formatet af den detaljerede JSON-fil i afsnittet om 
 ## <a name="how-report-theme-colors-stick-to-your-reports"></a>Sådan fastgøres rapporttemafarver til dine rapporter
 Når du publicerer rapporten til **Power BI-tjenesten**, bliver rapporttemafarverne ved med at være de samme.
 
-Rapporttemaet vises i sektionen **Data colors** (Datafarver) i panelet **Format**. Når vi f.eks. har anvendt de mange grønne og brune farver fra temaet **Skt. Patricks dag**, skal vi vælge en visual. Derefter fortsætter vi til **Format > Datafarver** og ser følgende oplysninger:
+Rapporttemaet vises i sektionen **Data colors** (Datafarver) i panelet **Format**. Når vi f.eks. har anvendt de mange grønne og brune farver fra temaet **Skt. Patricks dag**, skal vi vælge en visualisering. Derefter fortsætter vi til **Format > Datafarver** og ser følgende oplysninger:
 
 ![Visualiseringer](media/desktop-report-themes/report-themes_8.png)
 
 Se alle de grønne farver? Det skyldes, at disse farver var en del af det **rapporttema**, som vi importerede og anvendte.
 
 ### <a name="situations-when-report-theme-colors-wont-stick-to-your-reports"></a>Situationer, hvor rapporttemafarver ikke bliver i rapporterne
-Lad os sige, at du anvender et brugerdefineret farvesæt (eller individuel farve) til et bestemt datapunkt i en visual. Når du anvender et Rapporttema, tilsidesætter det *ikke* den brugerdefinerede farve for datapunktet.
+Lad os sige, at du anvender et brugerdefineret farvesæt (eller individuel farve) til et bestemt datapunkt i en visualisering. Når du anvender et Rapporttema, tilsidesætter det *ikke* den brugerdefinerede farve for datapunktet.
 
 Det er også muligt at angive farven på et datapunkt manuelt ved hjælp af afsnittet Temafarver. Farverne opdateres *ikke*, når du anvender et nyt Rapporttema. Hvis du vil have standardfarverne tilbage (så de ikke opdateres, når du anvender et nyt rapporttema), skal du vælge **Revert to default** (Vend tilbage til standard) i paletten med **temafarver**.
 
@@ -170,7 +170,7 @@ JSON-basisfilen har fem påkrævede linjer:
 
 * **name**: Dette er temanavnet, som er det eneste påkrævede felt.
 * **dataColors**: Listen over heksadecimale farvekoder til brug sammen med data i visuals i Power BI Desktop. Listen kan indeholde et vilkårligt antal farver.
-* **background**, **foreground** og **tableAccent**: De farver, der skal anvendes i forskellige typer visuals. **foreground** anvendes til tekst i tekstfelter, tekst til KPI-mål, tekst i kort med flere rækker, kortværditekst, tekst til målere, tekst til lodrette udsnitselementer og tekster med totaler og værdier for **table** og **matrix**. **background** anvendes til knapfyld og baggrunden i navne på kombinationsdiagrammer. Hvordan disse farver bruges, afhænger af den specifikke typografi, der anvendes. De visuelle elementer i en **tabel** og **matrix** anvender disse typografier som standard.
+* **background**, **foreground** og **tableAccent**: De farver, der skal anvendes i forskellige typer visuals. **foreground** anvendes til tekst i tekstfelter, tekst til KPI-mål, tekst i kort med flere rækker, kortværditekst, tekst til målere, tekst til lodrette udsnitselementer og tekster med totaler og værdier for **table** og **matrix**. **background** anvendes til knapfyld og baggrunden i navne på kombinationsdiagrammer. Hvordan disse farver bruges, afhænger af den specifikke typografi, der anvendes. Disse typografier anvendes som standard i **tabel-** og **matrixvisualiseringerne**.
 
 Hvis du vil oprette et udvidet JSON-filformat med mere detaljeret kontrol over formateringen, skal du også føje et afsnit af typen **visualStyles** til JSON-filen. Du indlejrer de formateringsspecifikke data i afsnittet **visualStyles**. Afsnittet **visualStyles** har et format, der svarer til følgende:
 
@@ -184,7 +184,7 @@ Hvis du vil oprette et udvidet JSON-filformat med mere detaljeret kontrol over f
         }
     }
 
-Du skal bruge en bestemt visual og et cardName til afsnittene **visualName** og **cardName**. Brug en stjerne ("\*"), hvis indstillingen skal gælde for alle visuals eller kort, der har en egenskab for en bestemt visual. Du kan også bruge stjernen ("\*"), når du vil anvende en indstilling globalt i rapporten, f.eks. en skriftstørrelse eller en bestemt skrifttypefamilie til visuals.
+Du skal bruge en bestemt visualisering og et cardName til afsnittene **visualName** og **cardName**. Brug en stjerne ("\*"), hvis indstillingen skal gælde for alle visuals eller kort, der har en egenskab for en bestemt visualisering. Du kan også bruge stjernen ("\*"), når du vil anvende en indstilling globalt i rapporten, f.eks. en skriftstørrelse eller en bestemt skrifttypefamilie til visuals.
 
 > [!NOTE]
 > Du skal kun angive de formateringselementer, som skal justeres. De formateringselementer, der ikke er omfattet af JSON-filen, vender blot tilbage til deres standardværdier og -indstillinger.

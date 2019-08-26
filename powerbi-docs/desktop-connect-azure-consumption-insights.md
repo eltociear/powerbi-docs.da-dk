@@ -1,6 +1,6 @@
 ---
-title: Opret forbindelse til Azure fra Power BI Desktop, og se omkostninger og brug
-description: Du kan nemt oprette forbindelse til Azure og få indsigt i forbrugs- og brugsdata ved hjælp af Power BI Desktop
+title: Analysér omkostnings- og forbrugsdata for Azure i Power BI Desktop
+description: Du kan nemt oprette forbindelse til Azure og få indsigt i forbrugs- og forbrugsdata ved hjælp af Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -8,66 +8,77 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 08/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 4c2ef62dc3ea8aac9c4a0d30ba4dba58e2279490
-ms.sourcegitcommit: 57a12aa42c8549debc60ff1c8e78533dc42e1b86
+ms.openlocfilehash: 80eb366015de3822b9c8c455f1ee386a34e1f457
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66469833"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69561019"
 ---
-# <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Analysér omkostnings- og brugsdata for Azure i Power BI Desktop
+# <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Analysér omkostnings- og forbrugsdata for Azure i Power BI Desktop
 
-Power BI Desktop kan oprette forbindelse til Azure og levere detaljerede data om din organisations brug af Azure-tjenesten. Du kan bruge disse data til at oprette brugerdefinerede rapporter og målinger, så du bedre kan forstå og analysere Azure-forbruget.
+Du kan bruge Power BI Desktop til at oprette forbindelse til Azure og få detaljerede data om din organisations forbrug af Azure-tjenesten. Med disse data kan du oprette brugerdefinerede rapporter og målinger, så du bedre kan forstå og analysere dit Azure-forbrug.
 
 Power BI understøtter i øjeblikket oprettelse af forbindelse til faktureringskonti under en Enterprise Aftale og en kundeaftale.
 
-* Brugere med en **Enterprise Aftale** skal oprette forbindelse vha. **connectoren Azure Consumption Insights**.
+* Brugere med en **Enterprise Aftale** skal oprette forbindelse ved hjælp af **Azure Consumption Insights-connectoren** (nedenfor).
 
-* Brugere med en **kundeaftale** skal oprette forbindelse vha. **connectoren Azure Cost Management**.
+* Brugere med en **kundeaftale** skal oprette forbindelse ved hjælp af [**connectoren Azure Cost Management**](#connect-with-azure-cost-management).
 
 ## <a name="connect-with-azure-consumption-insights"></a>Opret forbindelse vha. Azure Consumption Insights
 
 Azure Consumption Insights giver dig mulighed for at oprette forbindelse til faktureringskonti under en Azure Enterprise Aftale.
 
-I dette afsnit kan du få mere at vide om, hvordan du får fat i de data, du har brug for, og hvordan du migrerer fra brug af connectoren Azure Enterprise. Du kan se en oversigt over *kolonner med brugsoplysninger* i API'en til **ACI** (Azure Consumption Insights).
+I dette afsnit får du mere at vide om, hvordan du henter de data, du skal migrere, ved hjælp af Azure Enterprise Connector. Der er også en oversigt over *kolonner med forbrugsoplysninger* tilgængelig i API'en til **ACI** (Azure Consumption Insights).
 
-Hvis du vil oprette forbindelse ved hjælp af connectoren **Azure Consumption Insights**, skal du have adgang til Enterprise-funktionerne på Azure-portalen.
+Hvis du vil bruge **Azure Consumption Insights**-connectoren, skal du have adgang til Enterprise-funktionerne på Azure Portal.
 
-Hvis du vil oprette forbindelse ved hjælp af connectoren **Azure Consumption Insights**, skal du vælge **Hent data** på båndet **Hjem** i **Power BI Desktop**. Hvis du vælger **Onlinetjenester** fra kategorierne til venstre, kan du se **Microsoft Azure Consumption Insights (Beta)** . Vælg **Opret forbindelse**.
+Sådan bruger du **Azure Consumption Insights**-connector i **Power BI Desktop**: 
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
+1. På båndet **Start** skal du vælge **Hent data**.
 
-I den dialogboks, der vises, skal du angive dit *tilmeldingsnummer*.
+1. Vælg **Onlinetjenester** blandt kategorierne til venstre.  
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
+1. Vælg **Microsoft Azure Consumption Insights (beta)** . 
 
-* Du kan hente dit tilmeldingsnummer på [Azure Enterprise Portal](https://ea.azure.com) på den placering, der er vist på følgende billede:
+1. Vælg **Opret forbindelse**.
+
+   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_01b.png)
+
+   I den viste dialogboks skal du angive dit **Azure-tilmeldingsnummer**.
+
+   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
+
+   * Du kan se dit tilmeldingsnummer på [Azure Enterprise Portal](https://ea.azure.com) på den placering, der er vist på følgende billede:
 
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_08.png)
 
-  Denne version af connectoren understøtter kun virksomhedstilmeldinger fra https://ea.azure.com. Tilmeldinger i Kina understøttes ikke i øjeblikket.
+   Denne version af connectoren understøtter kun virksomhedstilmeldinger fra https://ea.azure.com. Tilmeldinger i Kina understøttes ikke i øjeblikket.
 
-Derefter skal du angive din *adgangsnøgle* for at oprette forbindelse.
+   Derefter skal du angive din *adgangsnøgle* for at oprette forbindelse.
 
-![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_03.png)
+   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_03.png)
 
-* Din adgangsnøgle for tilmelding findes på [Azure Enterprise Portal](https://ea.azure.com).
+   * Din adgangsnøgle for tilmelding findes på [Azure Enterprise Portal](https://ea.azure.com).
 
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_09.png)
 
-Når du har angivet din *adgangsnøgle* og valgt **Opret forbindelse**, åbnes vinduet **Navigator** med de ni tabeller, der er tilgængelige for dig:
-* **Budgetter**: Viser budgetoplysninger, så du kan se de faktiske omkostninger eller brug sammenlignet med eksisterende budgetmål.
-* **MarketPlace**: Viser forbrugsbaserede gebyrer for Azure Marketplace.
-* **PriceSheets**: Viser gældende priser pr. måler for en tilmelding.
-* **RICharges**: Viser gebyrer knyttet til dine reserverede instanser i løbet af de sidste 24 måneder.
-* **RIRecommendations_Single**: Viser anbefalinger til køb af reserverede instanser på baggrund af dine brugstendenser for et enkelt abonnement i løbet af de sidste 7, 30 eller 60 dage.
-* **RIRecommendations_Shared**: Viser anbefalinger til køb af reserverede instanser på baggrund af dine brugstendenser på tværs af alle dine abonnementer i løbet af de sidste 7, 30 eller 60 dage.
-* **RIUsage**: Viser oplysninger om forbrug for dine eksisterende reserverede instanser i løbet af den sidste måned.
-* **Oversigter**: Viser en månedlig oversigt over saldi, nye køb, gebyrer for Azure Marketplace-tjenesten, justeringer og gebyrer for overforbrug.
-* **UsageDetails**: Viser en opdeling af forbrugt antal og anslåede gebyrer for en tilmelding.
+Når du har angivet din *adgangsnøgle* og valgt **Opret forbindelse**, åbnes vinduet **Navigator**, hvor du kan se ni tilgængelige tabeller:
+
+| Tabel        | Beskrivelse |
+|------------- | -------------------------------------------------------------|
+| **Budgetter** | Budgetoplysninger, hvor du kan se de faktiske omkostninger eller det faktiske forbrug sammenlignet med eksisterende budgetmål. |
+| **MarketPlace** | Forbrugsbaserede gebyrer for Azure Marketplace. |
+| **Prisark** | Gældende priser pr. måler for en tilmelding. |
+| **RICharges** | Gebyrer knyttet til dine reserverede instanser i løbet af de sidste 24 måneder. |
+| **RIRecommendations_Single** | Anbefalinger til køb af reserverede instanser på baggrund af dine forbrugstendenser for et enkelt abonnement i løbet af de sidste 7, 30 eller 60 dage. |
+| **RIRecommendations_Shared** | Anbefalinger til køb af reserverede instanser på baggrund af dine forbrugstendenser på tværs af alle dine abonnementer i løbet af de sidste 7, 30 eller 60 dage. |
+| **RIUsage** | Oplysninger om forbrug for dine eksisterende reserverede instanser i løbet af den sidste måned. |
+| **Oversigter** | En månedlig oversigt over saldi, nye køb, Azure Marketplace-gebyrer, justeringer og gebyrer for overforbrug. |
+| **UsageDetails** | En oversigt over forbrugte mængder og anslåede abonnementsgebyrer. |
 
 Du kan markere et afkrydsningsfelt ud for en af tabellerne for at få den vist. Du kan vælge en eller flere tabeller ved at markere afkrydsningsfeltet ud for deres navn og derefter vælge **Indlæs**.
 
@@ -87,41 +98,52 @@ Når de markerede data er indlæst, kan de tabeller og felter, som du har valgt,
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_06.png)
 
 ## <a name="using-azure-consumption-insights"></a>Brug Azure Consumption Insights
-Hvis du vil bruge connectoren **Azure Consumption Insights**, skal du have adgang til Enterprise-funktionerne på Azure-portalen.
+Hvis du vil bruge **Azure Consumption Insights**-connectoren, skal du have adgang til Enterprise-funktionerne på Azure Portal.
 
-Når du har indlæst data ved hjælp af connectoren **Azure Consumption Insights**, kan du oprette dine egne brugerdefinerede målinger og kolonner ved hjælp af **forespørgselseditoren**, og du kan oprette visuelle elementer, rapporter og dashboards, som du kan dele i **Power BI-tjenesten**.
+Når du har indlæst data ved hjælp af **Azure Consumption Insights**-connectoren, kan du oprette dine egne brugerdefinerede målinger og kolonner ved hjælp af **Forespørgselseditoren**. Du kan også oprette visualiseringer, rapporter og dashboards med henblik på deling i **Power BI-tjenesten**.
 
-Azure indeholder også en samling af brugerdefinerede eksempelforespørgsler, som du kan hente ved hjælp af en tom forespørgsel. For at gøre det skal du gå til båndet **Hjem** i **Power BI Desktop**, vælge rullelistepilen i **Hent data** og derefter vælge **Tom forespørgsel**. Det kan du også gøre i **forespørgselseditoren** ved at højreklikke i ruden **Forespørgsler** til venstre og derefter vælge **Ny forespørgsel > Tom forespørgsel** i den menu, der vises.
+Hvis du har en tom forespørgsel, kan du hente et eksempel på en Azure-samling med brugerdefinerede forespørgsler. Der er to måder, du kan gøre dette på: 
 
-Skriv følgende på **formellinjen**:
+I **Power BI Desktop**: 
+
+1. Vælg båndet **Start** 
+2. Vælg **Hent data** > **Tom forespørgsel** 
+
+Eller i **Forespørgselseditor**: 
+
+1. Højreklik i ruden **Forespørgsler** til venstre 
+2. Vælg **Ny forespørgsel > Tom forespørgsel** i den viste menu
+
+Skriv følgende i **formellinjen**:
 
     = MicrosoftAzureConsumptionInsights.Contents
 
-Der vises en samling eksempler som vist på følgende billede:
+Følgende billede viser en eksemelsamling, der kommer frem.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_07.png)
 
-Når du arbejder med rapporter og opretter forespørgsler, kan du bruge følgende:
+Når du arbejder med rapporter og opretter forespørgsler, kan du gøre følgende:
 
 * Hvis du vil definere antallet af måneder fra og med dags dato, skal du bruge *numberOfMonth*
-  * Brug en værdi mellem 1 og 36 til at repræsentere antallet af måneder – fra dags dato – du vil importere. Det anbefales, at du højst henter 12 måneders data, for at undgå begrænsninger for import og begrænsninger for mængden af data, der er tilladt for forespørgsler i Power BI.
+  * Brug en værdi mellem 1 og 36. Repræsenter antallet af måneder – fra dags dato – du vil importere. Det anbefales, at du ikke får data for mere end 12 måneder. Med denne grænse undgår du begrænsninger for import af Power BI-forespørgsler og tærskler for datamængde.
 * Hvis du vil definere en månedsperiode i et historisk tidsvindue, skal du bruge *startBillingDataWindow* og *endBillingDataWindow*
-* Brug *ikke* *numberOfMonth* sammen med *startBillingDataWindow* eller *endBillingDataWindow*
+* Brug ikke *numberOfMonth* sammen med *startBillingDataWindow* eller *endBillingDataWindow*
 
-## <a name="migrating-from-the-azure-enterprise-connector"></a>Overfør fra Azure Enterprise Connector
-Nogle kunder har oprettet visuelle elementer ved hjælp af *Azure Enterprise Connector (beta)* , som ophører og erstattes med connectoren **Azure Consumption Insights**. Connectoren **Azure Consumption Insights** indeholder funktioner og forbedringer, der omfatter følgende:
+## <a name="migrate-from-the-azure-enterprise-connector"></a>Migrer fra Azure Enterprise Connector
+
+Nogle kunder har oprettet visualiseringer ved hjælp af *Azure Enterprise Connector (beta)* . Den bliver på et tidspunkt erstattet med **Azure Consumption Insights**-connectoren. Den nye connector indeholder funktioner og forbedringer, der omfatter:
 
 * Flere tilgængelige datakilder for *Saldooversigt* og *Køb fra Marketplace*
 * Nye og avancerede parametre, f.eks. *startBillingDataWindow* og *endBillingDataWindow*
 * Bedre ydeevne og svartid
 
-For at hjælpe kunder med at skifte til den nyere **Azure Consumption Insights**-connector og for at gemme det arbejde, de har udført med at oprette brugerdefinerede dashboards og rapporter, kan du i følgende trin se, hvordan de kan flytte til den nye connector.
+I de næste trin kan du se, hvordan du overgår til **Azure consumption Insights**-connectoren. Med disse trin bevares det arbejde, du allerede har udført med at oprette brugerdefinerede dashboards eller rapporter.
 
 ### <a name="step-1-connect-to-azure-using-the-new-connector"></a>Trin 1: Opret forbindelse til Azure ved hjælp af den nye connector
-I første trin skal der oprettes forbindelse ved hjælp af connectoren **Azure Consumption Insights** som beskrevet detaljeret tidligere i denne artikel. I dette trin skal du vælge **Hent data > Tom forespørgsel** på båndet **Hjem** i **Power BI Desktop**.
+Det første trin er at bruge den **Azure Consumption Insights**-connector, som blev detaljeret beskrevet tidligere i denne artikel. I dette trin skal du vælge **Hent data > Tom forespørgsel** på båndet **Start** i **Power BI Desktop**.
 
-### <a name="step-2-use-the-advanced-editor-to-create-a-query"></a>Trin 2: Brug den avancerede editor til at oprette en forespørgsel
-I **forespørgselseditoren** skal du vælge **Avanceret editor** i sektionen **Forespørgsel** på båndet **Hjem**. Angiv følgende forespørgsel i vinduet **Avanceret editor**, der åbnes:
+### <a name="step-2-create-a-query-in-advanced-editor"></a>Trin 2: Opret en forespørgsel i Avanceret editor
+I **Forespørgselseditor** skal du vælge **Avanceret editor** i sektionen **Forespørgsel** på båndet **Start**. Angiv følgende forespørgsel i vinduet **Avanceret editor**, der vises:
 
     let    
         enrollmentNumber = "100",
@@ -132,9 +154,9 @@ I **forespørgselseditoren** skal du vælge **Avanceret editor** i sektionen **F
 
 ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_10.png)
 
-Du skal naturligvis erstatte værdien i *enrollmentNumber* med dit eget tilmeldingsnummer, som du kan hente på [Azure Enterprise Portal](https://ea.azure.com). Parameteren *numberOfMonth* angiver, hvor mange måneder med data du vil gå tilbage i forhold til den aktuelle dato. Brug (0) for den aktuelle måned.
+Du skal udskifte værdien *enrollmentNumber* med dit tilmeldingsnummer. Du kan se dit nummer på [Azure Enterprise Portal](https://ea.azure.com). Parameteren *numberOfMonth* angiver, hvor mange måneder med data du vil gå tilbage i forhold til den aktuelle dato. Brug (0) for den aktuelle måned.
 
-Når du har valgt **Udført** i vinduet **Avanceret editor**, opdateres eksempelvisningen, og du kan se data fra det angivne månedsinterval i tabellen. Vælg **Luk og anvend**, og vend tilbage.
+Når du har valgt **Udført** i vinduet **Avanceret editor**, opdateres eksempelvisningen, og der vises data fra det angivne månedsinterval i tabellen. Vælg **Luk og anvend**, og vend tilbage.
 
 ### <a name="step-3-move-measures-and-custom-columns-to-the-new-report"></a>Trin 3: Flyt målinger og brugerdefinerede kolonner til den nye rapport
 Derefter skal du flytte de brugerdefinerede kolonner eller målinger, du har oprettet, til den nye detaljetabel. Her er trinnene.
@@ -144,9 +166,9 @@ Derefter skal du flytte de brugerdefinerede kolonner eller målinger, du har opr
 
    ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_11.png)
 3. Omdøb *Query1* til navnet på den oprindelige detaljetabel.
-4. Opret nye målinger og brugerdefinerede kolonner i tabellen ved at højreklikke på tabellen og vælge **Ny måling**. Klip og indsæt derefter dine gemte målinger og kolonner, når de er helt færdige.
+4. Hvis du vil oprette nye tabelmålinger og brugerdefinerede kolonner, skal du højreklikke på tabellen og vælge **Ny måling**. Klip og indsæt derefter dine gemte målinger og kolonner, indtil du er færdig.
 
-### <a name="step-4-re-link-tables-that-had-relationships"></a>Trin 4: Sammenkæd igen tabeller, der havde relationer
+### <a name="step-4-relink-tables-that-had-relationships"></a>Trin 4: Sammenkæd igen tabeller, der havde relationer
 Mange dashboards indeholder flere tabeller, der bruges til opslag eller filtrering, f.eks. datotabeller eller tabeller til brugerdefinerede projekter. De kan løse de fleste andre problemer ved at genoprette disse relationer. Her kan du se, hvordan du gør.
 
 - Under fanen **Udformning** i **Power BI Desktop** skal du vælge **Administrer relationer** for at åbne et vindue, hvor du kan oprette relationer i modellen. Sammenkæd igen tabellerne efter behov.
@@ -154,13 +176,13 @@ Mange dashboards indeholder flere tabeller, der bruges til opslag eller filtreri
     ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_12.png)
 
 ### <a name="step-5-verify-your-visuals-and-adjust-field-formatting-as-needed"></a>Trin 5: Kontrollér dine visualiseringer, og juster feltformatering efter behov
-Nu, hvor du er nået så langt, fungerer de fleste af dine oprindelige visuelle elementer, tabeller, og detaljeadgange som forventet. Men du skal måske foretage et par mindre justeringer af formateringen, så det hele ser ud, som du ønsker det. Brug lidt tid på at kigge på dine dashboards og visuelle elementer for at sikre, at de ser ud, som du ønsker det.
+På nuværende tidspunk burde de fleste af dine oprindelige visualiseringer, tabeller og detailudledninger fungere som forventet. Nogle små finjusteringer kan være nødvendige, før du kan formatere udseende og funktionalitet præcist. Brug lidt tid på at gennemse dine dashboards og visualiseringer for at sikre, at de ser ud som ønsket.
 
 ## <a name="using-the-azure-consumption-and-insights-aci-api-to-get-consumption-data"></a>Brug ACI-API'en (Azure Consumption and Insights) til at hente forbrugsdata
 Azure leverer også [**ACI-API'en (Azure Consumption and Insights)** ](https://azure.microsoft.com/blog/announcing-general-availability-of-consumption-and-charge-apis-for-enterprise-azure-customers/). Du kan oprette dine egne brugerdefinerede løsninger til indsamling, rapportering og visualisering af oplysninger om Azure-forbrug ved hjælp af ACI-API'en.
 
 ### <a name="mapping-names-and-usage-details-between-the-portal-the-connector-and-the-api"></a>Tilknyt navne og brugsoplysninger mellem portalen, connectoren og API'en
-Kolonnerne og navnene på oplysningerne på Azure-portalen er de samme i API'en og connectoren, men de er ikke altid identiske. For at tydeliggøre det indeholder tabellen nedenfor en tilknytning mellem API'en, connectoren og de kolonner, der vises på Azure-portalen. Det angives også, om kolonnen er forældet. Du kan finde flere oplysninger om og definitioner på disse vilkår ved at kigge i [Azure-ordbogen for faktureringsdata](https://docs.microsoft.com/azure/billing/billing-enterprise-api-usage-detail).
+Kolonnerne og navnene på oplysninger på Azure Portal svarer til dem i API'en og connectoren, selvom de ikke altid er identiske. Som en hjælp til at afklare dette indeholder følgende tabel en oversigt. Det angives også, om kolonnen er forældet. Du kan finde flere oplysninger om og definitioner på disse vilkår i [ordbog over Azure-faktureringsdata](https://docs.microsoft.com/azure/billing/billing-enterprise-api-usage-detail).
 
 | ACI-connector/ContentPack ColumnName | Kolonnenavn for ACI-API | Kolonnenavn for EA | Forældet/vises for bagudkompatibilitet |
 | --- | --- | --- | --- |
@@ -215,38 +237,61 @@ Kolonnerne og navnene på oplysningerne på Azure-portalen er de samme i API'en 
 I dette afsnit kan du få mere at vide om, hvordan du opretter forbindelse til din faktureringskonto under din kundeaftale.
 
 > [!NOTE]
-> Connectoren Azure Cost Management understøtter i øjeblikket kunder med en **kundeaftale**.  Brugere med en **Enterprise Aftale** skal bruge connectoren Azure Consumption Insights.
+> Connectoren Azure Cost Management understøtter i øjeblikket kunder med en **kundeaftale**.  Brugere med en **Enterprise Aftale** skal bruge Azure Consumption Insights-connectoren.
 >
 >
 
-Hvis du vil oprette forbindelse ved hjælp af connectoren **Azure Cost Management**, skal du vælge **Hent data** på båndet **Hjem** i **Power BI Desktop**.  Vælg **Azure** i kategorierne til venstre, så kan du se **Azure Cost Management (beta)** . Vælg **Opret forbindelse**.
+Sådan bruger du **Azure Cost Management**-connectoren i **Power BI Desktop**:
 
-![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
+1. På båndet **Start** skal du vælge **Hent data**.
 
-I den viste dialogboksen skal du indtaste dit *profil-id til fakturering*.
+1. Vælg **Azure** blandt kategorierne til venstre.
 
-![](media/desktop-connect-azure-consumption-insights/azure-cost-management-01.png)
+1. Vælg **Azure Cost Management (beta)** til højre.
 
-Du kan få dit profil-id til fakturering fra [Azure Portal](https://portal.azure.com).  Gå til **Cost Management + fakturering**, vælg din faktureringskonto, og vælg derefter **Faktureringsprofiler** på sidepanelet.  Vælg din faktureringsprofil, og vælg **egenskaber** på sidepanelet.  Kopiér dit profil-id til fakturering.
+1. Vælg **Opret forbindelse**.
 
-![](media/desktop-connect-azure-consumption-insights/azure-cost-management-02.png)
 
-Du bliver bedt om at logge på med din mailadresse og adgangskode til Azure.  Når godkendelsen er fuldført, får du vist vinduet **Navigatør** med de 12 tabeller, der er tilgængelige for dig:
+   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-00.png)
 
-* **Faktureringshændelser**: Viser en hændelseslog for nye fakturaer, kreditkøb m.m.
-* **Budgetter**: Viser budgetoplysninger, så du kan se de faktiske omkostninger eller brug sammenlignet med eksisterende budgetmål.
-* **Gebyrer**: Viser en oversigt pr. måned over brug, gebyrer for Marketplace og separat fakturerede gebyrer i Azure.
-* **Kreditpartier**: Viser oplysninger om køb af kreditpartier i Azure for den angivne faktureringsprofil.
-* **Kreditoversigt**: Viser en kreditoversigt for den angivne faktureringsprofil.
-* **Marketplace**: Viser forbrugsbaserede gebyrer for Azure Marketplace.
-* **Prisark**: Viser de gældende priser efter måler for den angivne faktureringsprofil.
-* **Gebyrer for reserverede instanser**: Viser gebyrer knyttet til dine reserverede instanser i løbet af de sidste 24 måneder.
-* **Anbefalinger til reserverede instanser (enkelt)** : Viser anbefalinger til køb af reserverede instanser på baggrund af dine brugstendenser for et enkelt abonnement i løbet af de sidste 7, 30 eller 60 dage.
-* **Anbefalinger til reserverede instanser (delte)** : Viser anbefalinger til køb af reserverede instanser på baggrund af dine brugstendenser på tværs af alle dine abonnementer i løbet af de sidste 7, 30 eller 60 dage.
-* **Brug af reserverede instanser**: Viser oplysninger om forbrug for dine eksisterende reserverede instanser i løbet af den sidste måned.
-* **Brugsoplysninger**: Viser en opdeling af forbrugt antal og anslåede gebyrer for det angivne profil-id til fakturering.
+   I den viste dialogboksen skal du angive dit **profil-id til fakturering**.
 
-Du kan markere et afkrydsningsfelt ud for en af tabellerne for at få den vist.  Du kan vælge en eller flere tabeller ved at markere afkrydsningsfeltet ud for deres navn og derefter vælge **Indlæs**.
+   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-01.png)
+
+Du kan se dit id på [Azure Portal](https://portal.azure.com):
+
+1. Naviger til **Omkostningsstyring og fakturering**.
+
+1. Vælg din faktureringskonto.
+
+1. Vælg **Faktureringsprofiler** i sidepanelet.
+
+1. Vælg din faktureringsprofil.
+
+1. Vælg **Egenskaber** i sidepanelet.
+
+1. Kopiér dit profil-id til fakturering.
+
+   ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-02.png)
+
+   Du bliver bedt om at logge på med din mailadresse og adgangskode til Azure.  Når godkendelsen er fuldført, får du vist vinduet **Navigatør** med 12 tilgængelige tabeller:
+
+| Tabel        | Beskrivelse |
+|-------------------- | -------------------------------------------------------------|
+| **Faktureringshændelser** | Viser en hændelseslog for nye fakturaer, kreditkøb m.m. |
+| **Budgetter** | Budgetoplysninger, hvor du kan se de faktiske omkostninger eller det faktiske forbrug sammenlignet med eksisterende budgetmål. |
+| **Gebyrer** | En oversigt pr. måned over forbrug, gebyrer for Marketplace og separat fakturerede gebyrer i Azure. |
+| **Kreditpartier** | Oplysninger om køb af Azure-kreditpartier for den angivne faktureringsprofil. |
+| **Kreditoversigt** | En kreditoversigt for den angivne faktureringsprofil. |
+| **Marketplace** | Forbrugsbaserede gebyrer for Azure Marketplace. |
+| **Prisark** | Gældende priser efter måler for den angivne faktureringsprofil. |
+| **Gebyrer for reserverede instanser** | Gebyrer knyttet til dine reserverede instanser i løbet af de sidste 24 måneder. |
+| **Anbefalinger til reserverede instanser (enkelt)** | Anbefalinger til køb af reserverede instanser på baggrund af dine forbrugstendenser for et enkelt abonnement i løbet af de sidste 7, 30 eller 60 dage. |
+| **Anbefalinger til reserverede instanser (delt)** | Anbefalinger til køb af reserverede instanser på baggrund af dine forbrugstendenser for alle abonnementer i løbet af de sidste 7, 30 eller 60 dage. |
+| **Brug af reserverede instanser** | Oplysninger om forbrug for dine eksisterende reserverede instanser i løbet af den sidste måned. |
+| **Detaljer om forbrug** | En oversigt over forbrugt antal og anslåede gebyrer for det angivne profil-id til fakturering. |
+
+Du kan markere et afkrydsningsfelt ud for en tabel for at få vist et eksempel.  Du kan vælge en eller flere tabeller ved at markere afkrydsningsfeltet ud for deres navn og derefter vælge **Indlæs**.
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-03.png)
 
@@ -258,13 +303,21 @@ Når de markerede data er indlæst, kan de tabeller og felter, som du har valgt,
 
 ![](media/desktop-connect-azure-consumption-insights/azure-cost-management-05.png)
 
-Se videoen [Sådan analyserer du forbrug i Power BI med Azure Consumption Insights](https://www.youtube.com/watch?v=QKBMXXrlpEk), der handler om at gennemgå dine omkostningsdata i Power BI Desktop ved hjælp af connectoren Azure Consumption Insights.
+Se [Sådan analyserer du forbruget i Power BI med Azure Consumption Insights](https://www.youtube.com/watch?v=QKBMXXrlpEk). I denne video forklares det, hvordan du gennemgår dine omkostningsdata i Power BI Desktop ved hjælp af Azure Consumption Insights-connectoren.
 
 ## <a name="writing-custom-queries"></a>Skrivning af brugerdefinerede forespørgsler
 
-Hvis du vil tilpasse antallet af måneder, ændre API-versionen eller udføre mere avanceret logik på de returnerede data, kan du oprette en brugerdefineret M-forespørgsel.
+Du kan oprette en brugerdefineret [M-forespørgsel](/powerquery-m/power-query-m-reference), hvis du vil tilpasse antallet af måneder, ændre API-versionen eller udføre mere avanceret logik på de returnerede data.
 
-Gå til båndet **Hjem** i **Power BI Desktop**, vælg rullelisten i **Hent data**, og vælg derefter **Tom forespørgsel**.  Det kan du også gøre i **Forespørgselseditor** ved at højreklikke i ruden **Forespørgsler** til venstre og derefter vælge **Ny forespørgsel > Tom menu** i den menu, der vises.
+I **Power BI Desktop**:
+
+1. Vælg båndet **Start**
+2. Vælg **Hent data** > **Tom forespørgsel**
+
+Eller i **Forespørgselseditor**:
+
+1. Højreklik i ruden **Forespørgsler** til venstre
+2. Vælg **Ny forespørgsel > Tom menu** i den viste menu
 
 På **Formellinjen** skal du skrive følgende, hvor du erstatter `billingProfileId` med det faktiske id og "charges" med et gyldigt tabelnavn (listen ovenfor).
 
@@ -278,12 +331,12 @@ in
 
 Ud over at ændre `numberOfMonths` til en værdi mellem 1 og 36, kan du også angive:
 
-* `apiVersion` for at tilpasse, hvilken version af API'en som forespørgslen skal foretage kald til.
-* `lookbackWindow` i forbindelse med anbefalinger på reserverede instanser (enkelt eller delte) for at ændre det vindue, du vil generere anbefalinger fra (gyldige muligheder: 7, 30 eller 60 dage)
-
+* `apiVersion` for at tilpasse, hvilken API-version forespørgslen kalder.
+* `lookbackWindow` i forbindelse med anbefalinger på reserverede instanser (enkelt eller delte) for at ændre det vindue, du vil generere anbefalinger fra (gyldige muligheder: 7, 30 eller 60 dage).
 
 ## <a name="next-steps"></a>Næste trin
-Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:
+
+Du kan oprette forbindelse til mange forskellige datakilder ved hjælp af Power BI Desktop. Du kan få flere oplysninger i følgende artikler:
 
 * [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 * [Datakilder i Power BI Desktop](desktop-data-sources.md)

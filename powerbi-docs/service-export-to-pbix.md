@@ -1,5 +1,5 @@
 ---
-title: Sådan eksporterer du en rapport fra Power BI-tjenesten til Desktop (eksempelvisning)
+title: Download en rapport fra Power BI-tjenesten til Power BI Desktop (prøveversion)
 description: Download en rapport fra Power BI-tjenesten til en Power BI Desktop-fil
 author: maggiesMSFT
 manager: kfile
@@ -7,72 +7,69 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 03/02/2018
+ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 296970466505f01ae9ad11f994fe2008563f4884
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 61fc821e63889951aefd0ef815f885ffa8a880cf
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720191"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68994814"
 ---
-# <a name="export-a-report-from-power-bi-service-to-desktop-preview"></a>Eksportér en rapport fra Power BI-tjenesten til Desktop (eksempelvisning)
-I Power BI Desktop kan du eksportere (også kaldet *downloade*) en rapport til Power BI-tjenesten ved at gemme rapporten og vælge **Publicer**. Du kan også eksportere i den anden retning og downloade en rapport fra Power BI-tjenesten til Desktop. Filtypenavnet for filer, der eksporteres, i begge retninger, er *.pbix*.
+# <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Download en rapport fra Power BI-tjenesten til Power BI Desktop (prøveversion)
+I Power BI Desktop kan du publicere en rapport (en *.pbix*-fil) fra din lokale computer til Power BI-tjenesten. Power BI-rapporter kan også gå i den modsatte retning: Du kan downloade en rapport fra Power BI-tjenesten til Power BI Desktop. Filtypenavnet for en Power BI-rapport er i begge tilfælde .pbix.
 
 Der er et par begrænsninger og overvejelser, du skal være opmærksom på, som behandles senere i denne artikel.
 
 ![Rullelisten Filer](media/service-export-to-pbix/power-bi-file-export.png)
 
-## <a name="download-the-report-as-a-pbix"></a>Download rapporten som en .pbix
+## <a name="download-the-report-as-a-pbix-file"></a>Download rapporten som en .pbix-fil
+
+Du kan kun downloade rapporter, [der er oprettet med Power BI Desktop](guided-learning/publishingandsharing.yml?tutorial-step=2) efter den 23. november 2016 og opdateret siden da. Hvis den var oprettet før da, er menuindstillingen **Download rapport** nedtonet i Power BI-tjenesten.
+
 Følg disse trin for at downloade .pbix-filen:
 
-1. Åbn den rapport, som du vil downloade, i [Redigeringsvisning](consumer/end-user-reading-view.md) i **Power BI-tjenesten**.
-2. Vælg **Filer > Download rapport** på menulinjen.
-   
-   > [!NOTE]
-   > Rapporten skal være [oprettet ved hjælp af Power BI Desktop](guided-learning/publishingandsharing.yml?tutorial-step=2) efter 23. november 2016 – og opdateret efterfølgende – for at den kan downloades. Hvis det ikke er tilfældet, er menupunktet *Download rapport* nedtonet i Power BI-tjenesten.
-   > 
-   > 
-3. Under oprettelse af .pbix-filen vises fremskridt på et statusbanner. Når filen er klar, bliver du bedt om at åbne eller gemme .pbix-filen. Navnet på filen stemmer overens med titlen på rapporten.
-   
-    ![åbn, gem eller annuller](media/service-export-to-pbix/power-bi-save-pbix.png)
-   
-    Du har nu mulighed for at åbne .pbix-filen i enten Power BI-tjenesten (app.powerbi.com) eller Power BI Desktop.     
-4. Hvis du vil åbne rapporten i Desktop med det samme, skal du vælge **Åbn**. Vælg **Gem > Gem som** for at gemme filen på en bestemt placering. Hvis du ikke allerede har gjort det, skal du [installere Power BI Desktop](desktop-get-the-desktop.md).
-   
-    Når du åbner rapporten i Desktop, vises der muligvis en advarsel om, at visse funktioner, der er tilgængelige i Power BI-tjenestens rapport, muligvis ikke er tilgængelige i Desktop.
-   
-    ![advarselsdialogboks](media/service-export-to-pbix/power-bi-export-to-pbix_2.png)
+1. Åbn den rapport, du vil downloade, i [Redigeringsvisning](https://docs.microsoft.com/power-bi/service-interact-with-a-report-in-editing-view) i Power BI-tjenesten.
 
-5. Rapporteditoren i Desktop og rapporteditoren i Power BI-tjenesten er næsten identiske.  
+2. Vælg **Filer > Download rapport** på den øverste navigationslinje.
    
-    ![Rapporteditor i Desktop](media/service-export-to-pbix/power-bi-desktop.png)
+3. Mens rapporten downloades, vises statussen på et statusbanner. Når filen er klar, bliver du spurgt, hvor du vil gemme .pbix-filen. Standardnavnet på filen matcher titlen på rapporten.
+   
+4. Hvis du ikke allerede har gjort det, så skal du [installere Power BI Desktop](desktop-get-the-desktop.md) og derefter åbne .pbix-filen i Power BI Desktop.
+   
+    Når du åbner rapporten i Power BI Desktop, vises der muligvis en advarsel om, at visse funktioner, der er tilgængelige i rapporten i Power BI-tjenesten, muligvis ikke er tilgængelige i Power BI Desktop.
+   
+    ![Advarselsdialogboks](media/service-export-to-pbix/power-bi-export-to-pbix_2.png)
+
+5. Rapporteditoren i Power BI Desktop og rapporteditoren i Power BI-tjenesten ligner hinanden.  
+   
+    ![Power BI Desktop-rapporteditor](media/service-export-to-pbix/power-bi-desktop.png)
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
-Der er nogle vigtige overvejelser og begrænsninger, som er knyttet til download (eksport) af en *.pbix*-fil fra Power BI-tjenesten.
+Der er nogle få vigtige overvejelser og begrænsninger knyttet til download af en .pbix-fil fra Power BI-tjenesten.
 
-* Hvis du vil hente filen, skal du have adgang til at redigere rapporten
-* Rapporten skal være oprettet ved hjælp af **Power BI Desktop** og være blevet *publiceret* til **Power BI-tjenesten**, eller .pbix skal være *uploadet* til tjenesten.
-* Rapporter skal være publiceret eller opdateret efter 23. november 2016. Rapporter publiceret før dette tidspunkt kan ikke downloades.
-* Denne funktion vil ikke fungere sammen med rapporter, der oprindeligt er oprettet i **Power BI-tjenesten**, herunder indholdspakker.
-* Du skal altid bruge den seneste version af **Power BI Desktop** ved åbning af downloadede filer. Downloadede *.pbix*-filer åbnes muligvis ikke i versioner af **Power BI Desktop**, der ikke er de nyeste.
-* Hvis administratoren har deaktiveret muligheden for at eksportere data, kan denne funktion ikke ses i **Power BI-tjenesten**.
-* Datasæt med trinvis opdatering kan ikke downloades til en *.pbix*-fil.
+* Hvis du vil downloade filen, skal du have adgang til at redigere rapporten.
+* Rapporten skal være oprettet ved hjælp af Power BI Desktop og være *publiceret* i Power BI-tjenesten, eller .pbix-filen skal være *uploadet* til Power BI-tjenesten.
+* Rapporter skal være publiceret eller opdateret efter 23. november 2016. Rapporter, der er publiceret tidligere, kan ikke downloades.
+* Denne funktion fungerer ikke sammen med rapporter og indholdspakker, der oprindeligt er oprettet i Power BI-tjenesten.
+* Du skal altid bruge den nyeste version af Power BI Desktop, når du åbner downloadede filer. Downloadede .pbix-filer åbnes muligvis ikke i versioner af Power BI Desktop, der ikke er de nyeste.
+* Hvis administratoren har deaktiveret muligheden for at downloade data, er denne funktion ikke synlig i Power BI-tjenesten.
+* Datasæt med trinvis opdatering kan ikke downloades til en .pbix-fil.
 
 ## <a name="next-steps"></a>Næste trin
 Se videoen **Guy in a Cube** om denne funktion, den varer ét minut:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ymWqU5jiUl0" frameborder="0" allowfullscreen></iframe>
 
-Desuden er her nogle flere artikler, der kan hjælpe dig med at lære at bruge **Power BI-tjenesten**:
+Her er nogle flere artikler, der kan hjælpe dig med at lære at bruge Power BI-tjenesten:
 
 * [Rapporter i Power BI](consumer/end-user-reports.md)
 * [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
 
-Når du får **Power BI Desktop** installeret, kan følgende indhold hjælpe dig med at komme i gang hurtigt:
+Når du har installeret Power BI Desktop, kan du se følgende artikel for at få hjælp til at komme i gang hurtigt:
 
 * [Introduktion til Power BI Desktop](desktop-getting-started.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)   
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/).
 

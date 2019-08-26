@@ -9,15 +9,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 12/06/2018
+ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 9e1c4a3942c75f41dc105e424685d32badbf3866
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0492b797d75e29145c14a70d8a8058bad295ef18
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61238220"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68994943"
 ---
 # <a name="generate-data-insights-automatically-with-power-bi"></a>Generér automatisk dataindsigt med Power BI
 Har du et nyt datasæt, og er du ikke helt sikker på, hvor du skal starte?  Har du brug for hurtigt at oprette et dashboard?  Vil du hurtigt søge efter indsigter, som du måske gik glip af?
@@ -36,63 +36,65 @@ Se Amanda køre Quick Insights på et datasæt, åbne en indsigt i Fokustilstand
 <iframe width="560" height="315" src="https://www.youtube.com/embed/et_MLSL2sA8" frameborder="0" allowfullscreen></iframe>
 
 
-Nu er det din tur. Udforsk Quick Insights ved hjælp af [Eksempel på analyse af leverandørkvalitet](sample-supplier-quality.md).
+Nu er det din tur. Udforsk Insights ved hjælp af [Eksempel på analyse af leverandørkvalitet](sample-supplier-quality.md).
 
-1. Vælg ellipsen (...) fra fanen **Datasæt**, og vælg **Få indsigt**.
+1. Vælg ellipsen (...) på fanen **Datasæt**, og vælg derefter **Få hurtig indsigt**.
    
     ![Fanen Datasæt](media/service-insights/power-bi-ellipses.png)
    
-    ![ellipsemenu](media/service-insights/power-bi-tab.png)
+    ![Menuen med tre prikker](media/service-insights/power-bi-tab.png)
 2. Power BI bruger [forskellige algoritmer](service-insight-types.md) til at søge efter tendenser i dit datasæt.
    
     ![Søger efter dialogboksen Indsigt](media/service-insights/pbi_autoinsightssearching.png)
 3. Dine indsigter er klar på få sekunder.  Vælg **Vis indsigt** for at vise visualiseringer.
    
-    ![meddelelse om fuldførelse](media/service-insights/pbi_autoinsightsuccess.png)
+    ![Meddelelse om fuldførelse](media/service-insights/pbi_autoinsightsuccess.png)
    
     > [!NOTE]
     > Nogle datasæt kan ikke generere indsigt, da dataene ikke er statistisk vigtige.  Hvis du vil vide mere, kan du se [Optimer dine data til indsigt](service-insights-optimize.md).
-   > 
+    > 
     
-1. Visualiseringerne vises på et særligt **Hurtig indsigt**-lærred med op til 32 separate indsigtskort. Hvert kort har et diagram eller en graf samt en kort beskrivelse.
+4. Visualiseringerne vises på et særligt **Hurtig indsigt**-lærred med op til 32 separate indsigtskort. Hvert kort har et diagram eller en graf samt en kort beskrivelse.
    
     ![Lærred med Hurtig indsigt](media/service-insights/power-bi-insights.png)
 
 ## <a name="interact-with-the-insight-cards"></a>Interager med indsigtskortene
-  ![tegnestiftikon](media/service-insights/pbi_hover.png)
 
 1. Hold markøren over et kort, og vælg ikonet med tegnestiften for at føje visualiseringen til et dashboard.
-2. Peg på et kort, vælg ellipsen (...), og vælg **Vis indsigt**. Dette åbner indsigt i fuld skærm.
+
+2. Peg på et kort, vælg ellipsen (...), og vælg derefter **Vis indsigt**. 
+
+    Skærmbilledet Indsigt åbnes i fokustilstand.
    
-    ![Fuld skærm med indsigt](media/service-insights/power-bi-insight-focus.png)
+    ![Indsigt i fokustilstand](media/service-insights/power-bi-insight-focus.png)
 3. I fokustilstand kan du:
    
-   * Filtrér visualiseringerne.  For at få vist filtrene skal du øverst til højre vælge pilen til at udvide ruden Filtre.
-        ![Indsigt og menuen Filtre er udvidet](media/service-insights/power-bi-insights-filter-new.png)
-   * Fastgør indsigtskortet til et dashboard ved at vælge ikonet Fastgør ![tegnestiftikon](media/service-insights/power-bi-pin-icon.png) eller **Fastgør visualisering**.
-   * Kør indsigt på selve kortet. Dette kaldes ofte **Områdebaseret indsigt**. Øverst til højre skal du vælge ikonet med elpæren ![Få indblik-ikon](media/service-insights/power-bi-bulb-icon.png) eller **Få indblik**.
+   * Filtrér visualiseringerne. Hvis ruden **Filtre** ikke allerede er åben, skal du udvide den ved at vælge pilen i højre side af vinduet.
+
+       ![Menuen Filtre i Indsigt udvidet](media/service-insights/power-bi-insights-filter-new.png)
+   * Fastgør indsigtskortet til et dashboard ved at vælge **Fastgør visuelt element**.
+   * Kør indsigt på selve kortet, der ofte kaldes for *Områdebaseret indsigt*. Øverst til højre skal du vælge ikonet med elpæren ![Få indblik-ikon](media/service-insights/power-bi-bulb-icon.png) eller **Få indblik**.
      
-       ![menulinje, der viser ikonet Få indblik](media/service-insights/pbi-autoinsights-tile.png)
+       ![Få indsigt-ikon](media/service-insights/pbi-autoinsights-tile.png)
      
      Indsigterne vises til venstre, og nye kort, som udelukkende er baseret på dataene i den enkelte indsigt, vises til højre.
      
-       ![indblik i indblik](media/service-insights/power-bi-insights-on-insights-new.png)
+       ![Indsigt i indsigt](media/service-insights/power-bi-insights-on-insights-new.png)
 4. Vælg **Afslut Fokustilstand** øverst til venstre, hvis du vil vende tilbage til det oprindelige indsigtslærred.
 
 ## <a name="run-insights-on-a-dashboard-tile"></a>Kør indsigt på et dashboardfelt
-I stedet for at søge efter indsigter i et helt datasæt kan du begrænse din søgning til de data, der er brugt til at oprette et enkelt dashboardfelt. Også dette kaldes ofte **Områdebaseret indsigt**.
+I stedet for at søge efter indsigt i et helt datasæt kan du begrænse din søgning og foretage en områdebaseret indsigt for de data, der er brugt til at oprette et enkelt dashboardfelt. 
 
 1. Åbn et dashboard.
-2. Peg på et felt. vælg ellipsen (...), og vælg **Vis indsigt**. Feltet åbnes i [Fokustilstand](service-focus-mode.md) med indsigtskortene vist langs højre.    
+2. Peg på et felt. Vælg ellipsen (...), og vælg derefter **Vis indsigt**. Feltet åbnes i [Fokustilstand](service-focus-mode.md) med indsigtskortene vist langs højre.    
    
     ![Fokustilstand](media/service-insights/pbi-insights-tile.png)    
-4. Er der en indsigt, der vækker din interesse? Vælg indsigtskortet for at udforske mere. Den valgte indsigt vises til venstre, og nye indsigtskort, som udelukkende er baseret på dataene i den enkelte indsigt, vises til højre.    
-6. Fortsæt med udforske dine data, og når du finder en interessant indsigt, kan du fastgøre den til dit dashboard ved at vælge **Fastgør din visual** fra øverste højre hjørne.
+3. Er der en indsigt, der vækker din interesse? Vælg indsigtskortet for at udforske mere. Den valgte indsigt vises til venstre, og nye indsigtskort, som udelukkende er baseret på dataene i den enkelte indsigt, vises til højre.    
+4. Fortsæt med udforske dine data, og når du finder en interessant indsigt, kan du fastgøre den til dit dashboard ved at vælge **Fastgør din visual** fra øverste højre hjørne.
 
 ## <a name="next-steps"></a>Næste trin
-Hvis du ejer et datasæt, [kan du optimere det til Quick Insights](service-insights-optimize.md)
+- Hvis du ejer et datasæt, [kan du optimere det til Hurtig indsigt](service-insights-optimize.md).
+- Få mere at vide om de [tilgængelige typer Hurtig indsigt](service-insight-types.md).
 
-Få mere at vide om de [tilgængelige typer Hurtig indsigt](service-insight-types.md)
-
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/).
 

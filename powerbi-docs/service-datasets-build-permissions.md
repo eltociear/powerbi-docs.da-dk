@@ -1,5 +1,5 @@
 ---
-title: Opret og del datasæt (prøveversion) – Power BI
+title: Del et datasæt (prøveversion)
 description: Som ejer af datasæt kan du oprette og dele dine datasæt, så andre kan bruge dem. Få mere at vide om, hvordan du bevarer styringen over, hvem der har adgang til dataene, ved hjælp af tilladelsen Opret.
 author: maggiesMSFT
 manager: kfile
@@ -7,17 +7,17 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/31/2019
+ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 22339b3d5062c01b3795086eede24ed6a8e7d7e7
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: 17c3322ed5f24d106412bafb9c4235ee15a626aa
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461758"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530525"
 ---
-# <a name="create-and-share-datasets-preview"></a>Opret og del datasæt (prøveversion)
+# <a name="share-a-dataset-preview"></a>Del et datasæt (prøveversion)
 
 Som forfatter af *datamodeller* i Power BI Desktop kan du dele dem som *datasæt* i Power BI-tjenesten. Derefter kan forfattere af rapporter nemt finde og genbruge de datasæt, du har delt. Få mere at vide om, hvordan du deler dem, og hvordan du styrer, hvem der har adgang til dataene, ved hjælp af tilladelsen Opret.
 
@@ -31,7 +31,7 @@ Som forfatter af *datamodeller* i Power BI Desktop kan du dele dem som *datasæt
     
     Andre medlemmer af dette arbejdsområde kan allerede oprette rapporter i andre arbejdsområder baseret på dette datasæt.
 
-1. Nu kan du [oprette en app](service-create-distribute-apps.md) ud fra dette arbejdsområde. Når du gør det, skal du på siden **Tilladelser** angive, hvem der har tilladelser, og hvad de kan gøre.
+1. Du kan også [publicere en app](service-create-distribute-apps.md) fra dette arbejdsområde. Når du gør det, skal du på siden **Tilladelser** angive, hvem der har tilladelser, og hvad de kan gøre.
 
     > [!NOTE]
     > Hvis du vælger **Hele organisationen**, har ingen i organisationen tilladelsen Opret. Dette er et kendt problem. Angiv i stedet mailadresser under **Bestemte personer eller grupper**.  Hvis hele organisationen skal have tilladelsen Opret, skal du angive mailaliasser for hele organisationen.
@@ -46,6 +46,8 @@ Tilladelsestypen Opret er kun relevant for datasæt. Med den kan brugere oprette
 
 Brugerne får tilladelsen Opret på forskellige måder:
 
+- Hvis du er medlem af et arbejdsområde med mindst en bidragyderrolle, har du automatisk tilladelsen Opret for et datasæt og tilladelse til at kopiere en rapport.
+ 
 - Et medlem af arbejdsområdet, hvor datasættet er placeret, kan tildele tilladelsen til specifikke brugere eller sikkerhedsgrupper i centret for tilladelser. Vælg ellipsen (...) ud for et datasæt > **Administrer tilladelser**.
 
     ![Vælg ellipsen](media/service-datasets-build-permissions/power-bi-dataset-manage-permissions.png)
@@ -54,13 +56,13 @@ Brugerne får tilladelsen Opret på forskellige måder:
 
     ![Center for tilladelse](media/service-datasets-build-permissions/power-bi-dataset-permissions.png)
 
-- En administrator eller et medlem af arbejdsområdet, hvor datasættet er placeret, kan beslutte under publicering af appen, at brugere med tilladelse til appen også får tilladelsen Opret for de underliggende datasæt. Du kan finde yderligere oplysninger under [Trin til at dele dit datasæt](#steps-to-sharing-your-dataset).
+- En administrator eller et medlem af arbejdsområdet, hvor datasættet er placeret, kan beslutte under publicering af appen, at brugere med tilladelse til appen også får tilladelsen Opret for de underliggende datasæt. Du kan finde yderligere oplysninger under [Trin til at dele dit datasæt](#steps-to-sharing-your-dataset) i denne artikel.
 
 - Lad os antage, at du har tilladelserne Del igen og Opret for et datasæt. Når du deler en rapport eller et dashboard, der er baseret på et datasæt, kan du angive, at modtagerne også får tilladelsen Opret for det underliggende datasæt.
 
     ![Tilladelsen Opret](media/service-datasets-build-permissions/power-bi-share-report-allow-users.png)
 
-Du kan fjerne tilladelsen Opret for et datasæt fra andre. Hvis du gør det, kan de stadig få vist rapporten, som er baseret på det delte datasæt, men de kan ikke længere redigere den.
+Du kan fjerne tilladelsen Opret for et datasæt fra en person. Hvis du gør det, kan de stadig få vist rapporten, som er baseret på det delte datasæt, men de kan ikke længere redigere den.
 
 ## <a name="more-granular-permissions"></a>Flere detaljerede tilladelser
 

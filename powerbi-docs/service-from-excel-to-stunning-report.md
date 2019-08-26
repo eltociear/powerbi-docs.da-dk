@@ -1,103 +1,144 @@
 ---
-title: Fra Excel-projektmappe til fantastisk rapport på ingen tid
-description: Fra Excel-projektmappe til fantastisk rapport på ingen tid
+title: Fra Excel-projektmappe til fantastisk rapport i Power BI-tjenesten
+description: I denne artikel kan du se, hvordan du hurtigt kan oprette en fantastisk rapport fra en Excel-projektmappe.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/28/2018
+ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: d613085e47477500390ac6111887df89a802ea0b
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: ed4bc9d10e3e1512aba559d77ba8729a39cb8a84
+ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522870"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68995134"
 ---
-# <a name="from-excel-workbook-to-stunning-report-in-no-time"></a>Fra Excel-projektmappe til fantastisk rapport på ingen tid
-Din chef vil gerne se en rapport om dine seneste salgstal kombineret med dine seneste kampagneannoncer, inden dagen er omme. Men de seneste data befinder sig på forskellige systemer hos tredjeparter og i filer på din bærbare computer. Tidligere har det taget timevis at oprette visuals og formatere en rapport. Du begynder at blive bekymret.
+# <a name="from-excel-workbook-to-stunning-report-in-the-power-bi-service"></a>Fra Excel-projektmappe til fantastisk rapport i Power BI-tjenesten
+Din chef vil gerne se en rapport om dine seneste salgstal kombineret med dine seneste kampagneannoncer, inden dagen er omme. Men de nyeste data befinder sig i forskellige systemer hos tredjeparter og i filer på din bærbare computer. Tidligere har det taget timer at oprette visuelle elementer og formatere en rapport, og du er ved at være lidt nervøs.
 
 Bare rolig. Med Power BI kan du oprette en imponerende rapport på ingen tid.
 
-I dette eksempel uploader vi en Excel-fil fra et lokalt system, opretter en ny rapport og deler den med kollegaer – alt sammen fra Power BI.
+I dette eksempel uploader vi en Excel-fil fra et lokalt system, opretter en ny rapport og deler den med kolleger – alt sammen fra Power BI.
 
 ## <a name="prepare-your-data"></a>Forbered dine data
-Lad os tage en simpel Excel-fil som eksempel. Før du kan indlæse din Excel-fil i Power BI, skal du organisere dine data i en flad tabel. Det betyder, at hver kolonne indeholder den samme datatype – f.eks. tekst, dato, tal eller valuta. Du skal have en kolonneoverskrift, men der må ikke være en kolonne eller række, der viser totaler.
+Lad os tage en simpel Excel-fil som eksempel. 
 
-![data, der er organiseret i Excel](media/service-from-excel-to-stunning-report/pbi_excel_file.png)
+1. Før du kan indlæse din Excel-fil i Power BI, skal du organisere dine data i en flad tabel. I en flad tabel indeholder hver kolonne den samme datatype – f.eks. tekst, dato, tal eller valuta. Tabellen skal have en kolonneoverskrift, men ikke nogen kolonner eller rækker, der viser totaler.
 
-Formatér derefter dataene som en tabel. I Excel skal du vælge **Formatér som tabel** i gruppen Typografier på fanen Hjem. Vælg en tabeltypografi, der skal anvendes på regnearket. Dit Excel-regneark er nu klar til at blive indlæst i Power BI.
+   ![Data, der er organiseret i Excel](media/service-from-excel-to-stunning-report/pbi_excel_file.png)
 
-![data, der er formateret som en tabel](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
+2. Formatér derefter dataene som en tabel. I Excel skal du vælge **Formatér som tabel** på fanen **Hjem** i gruppen **Typografier**. 
 
-## <a name="upload-your-excel-file-into-power-bi"></a>Upload din Excel-fil til Power BI
-Power BI opretter forbindelse til mange datakilder, herunder Excel-filer, der findes på din computer. Log på Power BI-tjenesten for at komme i gang. Hvis du ikke har tilmeldt dig, [kan du gøre det gratis](https://powerbi.com).
+3. Vælg en tabeltypografi, der skal anvendes på regnearket. 
 
-Du vil oprette et nyt dashboard. Åbn **Mit arbejdsområde**, og vælg ikonet **+ Opret**.
+   Dit Excel-regneark er nu klar til at blive indlæst i Power BI.
 
-![Ikonet Opret](media/service-from-excel-to-stunning-report/power-bi-new-dash.png)
+   ![Data, der er formateret som en tabel](media/service-from-excel-to-stunning-report/pbi_excel_table.png)
 
-Vælg **Dashboard**, angiv et navn, og vælg **Opret**. Det nye dashboard vises – uden data.
+## <a name="upload-your-excel-file-to-the-power-bi-service"></a>Upload din Excel-fil til Power BI-tjenesten
+Power BI-tjenesten opretter forbindelse til mange datakilder, herunder Excel-filer, der findes på din computer. 
 
-![Rullelisten Opret](media/service-from-excel-to-stunning-report/power-bi-create-dash.png)
+ > [!NOTE] 
+ > Brug [projektmappen Økonomieksempel](sample-financial-download.md) for at følge med i resten af dette selvstudium.
 
-Vælg **Hent data** nederst i venstre navigationsrude. Vælg **Hent** i feltet Filer under Opret forbindelse til data på siden Hent data.
+1. Log på Power BI-tjenesten for at komme i gang. Hvis du ikke har tilmeldt dig, [kan du gøre det gratis](https://powerbi.com).
 
-![Hent data fra filer](media/service-from-excel-to-stunning-report/pbi_get_files.png)
+2. Du vil oprette et nyt dashboard. Åbn **Mit arbejdsområde**, og vælg ikonet **Opret**.
 
-Vælg **Lokal fil** på siden Filer. Gå til Excel-projektmappefilen på computeren, og markér den for at indlæse den i Power BI. Vælg **Importér**.
+   ![Ikonet Opret](media/service-from-excel-to-stunning-report/power-bi-new-dash.png)
 
-> **BEMÆRK**! Brug [projektmappen Financial Sample](sample-financial-download.md) for at følge med i resten af dette selvstudium.
-> 
-> 
+3. Vælg **Dashboard**, angiv et navn, og vælg **Opret**. 
 
-![Hent data > Vinduet Filer](media/service-from-excel-to-stunning-report/pbi_local_file.png)
+   Det nye dashboard vises – uden data.
+
+   ![Rullelisten Opret](media/service-from-excel-to-stunning-report/power-bi-create-dash.png)
+
+4. Vælg **Hent data** nederst i venstre navigationsrude. 
+
+5. Vælg **Hent** under **Opret nyt indhold** i feltet **Filer** på siden **Hent data**.
+
+   ![Hent data fra filer](media/service-from-excel-to-stunning-report/pbi_get_files.png)
+
+6. Vælg **Lokal fil** på siden **Filer**. Gå til Excel-projektmappefilen på computeren, og vælg **Åbn** for at indlæse den i Power BI-tjenesten. 
+
+   ![Hent data > Vinduet Filer](media/service-from-excel-to-stunning-report/pbi_local_file.png)
+
+7. Vælg **Importér** på siden **Lokal fil**.
+
 
 ## <a name="build-your-report"></a>Opbyg din rapport
-Når Power BI har importeret din Excel-fil, kan du begynde at opbygge din rapport. Når meddelelsen **Dit datasæt er parat** vises, skal du vælge **Vis datasæt**.  Power BI åbnes i redigeringsvisningen og viser rapportlærredet. Til højre finder du ruderne Visualizations, Filters og Fields.
+Når Power BI-tjenesten har importeret din Excel-fil, kan du begynde at opbygge din rapport. 
 
-Bemærk, at dataene fra tabellen din Excel-projektmappe vises i ruden Felter. Under tabellens navn viser Power BI kolonneoverskrifterne som individuelle felter.
+1. Når meddelelsen **Dit datasæt er parat** vises, skal du vælge **Vis datasæt**.  
 
-![sådan ser Excel-data ud i ruden Felter](media/service-from-excel-to-stunning-report/pbi_report_fields.png)
+   Power BI åbnes i redigeringsvisningen og viser rapportlærredet. Til højre finder du ruderne **Visualiseringer**, **Filtre** og **Felter**. Bemærk, at dataene fra tabellen i din Excel-projektmappe vises i ruden **Felter**. Under tabellens navn viser Power BI kolonneoverskrifterne som individuelle felter.
 
-Nu kan du begynde at oprette visualiseringer. Din chef vil gerne se profit over tid. I ruden Fields skal du trække **Profit** over på rapportlærredet. Power BI viser et søjlediagram som standard. Derefter skal du trække **Date** over på rapportlærredet. Power BI opdaterer søjlediagrammet for at vise profit efter dato.
+   ![Sådan ser Excel-data ud i ruden Felter](media/service-from-excel-to-stunning-report/pbi_report_fields.png)
 
-![Søjlediagram i rapporteditor](media/service-from-excel-to-stunning-report/pbi_report_pin-new.png)
+2. Nu kan du begynde at oprette visualiseringer. Lad os sige, at din chef gerne vil have vist profit over tid. I ruden **Felter** skal du trække **Profit** til rapportlærredet. 
 
-> **Tip**! Hvis diagrammet ikke ser ud som forventet, skal du kontrollere dine aggregeringer. For eksempel kan du under **Value** højreklikke på det felt, du lige har tilføjet, og kontrollere, at dataene lægges sammen på den måde, du ønsker.  I dette eksempel bruger vi **Sum**.
-> 
-> 
+   Power BI viser et søjlediagram som standard. 
 
-Din chef vil gerne vide, hvilke lande/områder der er mest rentable. Imponer dem med en kortvisualisering. Vælg et tomt område på lærredet, og træk felterne **Country** og derefter **Profit** dertil fra ruden Fields. Power BI opretter en kortvisual med bobler, der repræsenterer avancen for hver af de enkelte placeringer.
+3. Derefter skal du trække **Dato** til rapportlærredet. 
 
-![kortvisualisering i rapporteditor](media/service-from-excel-to-stunning-report/pbi_report_map-new.png)
+   Power BI opdaterer søjlediagrammet for at vise profit efter dato.
 
-Hvad med at vise en visual for salg efter produkt og markedssegment? Nemt nok. Markér afkrydsningsfelterne ud for Sales, Product og Segment i ruden Fields. Power BI opretter straks et liggende søjlediagram. Du kan ændre diagramtypen ved at vælge et af ikonerne i menuen Visualizations. Du kan f.eks. ændre det til et stablet liggende søjlediagram.  Hvis du vil sortere diagrammet, skal du vælge ellipsen (...) > **Sort by**.
+   ![Søjlediagram i rapporteditor](media/service-from-excel-to-stunning-report/pbi_report_pin-new.png)
 
-![Stablet søjlediagram i rapporteditor](media/service-from-excel-to-stunning-report/pbi_barchart-new.png)
+   > [!TIP]
+   > Hvis diagrammet ikke ser ud som forventet, skal du kontrollere dine aggregeringer. For eksempel kan du under **Værdi** højreklikke på det felt, du lige har tilføjet, og kontrollere, at dataene lægges sammen på den måde, du ønsker. I dette eksempel bruger vi **Sum**.
+   > 
 
-Fastgør alle dine visuals til dashboardet. Du er klar til at dele dem med dine kollegaer.
+Din chef vil gerne vide, hvilke lande/områder der er mest rentable. Imponer dem med en kortvisualisering. 
 
-![dashboard, hvor de tre visualiseringer er fastgjort](media/service-from-excel-to-stunning-report/pbi_report.png)
+1. Vælg et tomt område på dit rapportlærred. 
+
+2. I ruden **Felter** skal du trække felterne **Land** og **Profit** til rapportlærredet.
+
+   Power BI opretter en kortvisual med bobler, der repræsenterer avancen for hver af de enkelte placeringer.
+
+   ![Kortvisualisering i rapporteditor](media/service-from-excel-to-stunning-report/pbi_report_map-new.png)
+
+Hvad med at vise en visual for salg efter produkt og markedssegment? Nemt nok. 
+
+1. I ruden **Felter** skal du markere felterne **Salg**, **Produkt** og **Segment**. 
+   
+   Power BI opretter straks et liggende søjlediagram. 
+
+2. Du kan ændre diagramtypen ved at vælge et af ikonerne i menuen **Visualiseringer**. Du kan f.eks. ændre det til et **stablet liggende søjlediagram**. 
+
+3. Vælg ellipsen (...) > **Sortér efter** for at sortere diagrammet.
+
+   ![Stablet søjlediagram i rapporteditor](media/service-from-excel-to-stunning-report/pbi_barchart-new.png)
+
+Fastgør alle dine visuelle elementer til dashboardet. Du er nu klar til at dele dem med dine kolleger.
+
+   ![Dashboard, hvor de tre visuelle elementer er fastgjort](media/service-from-excel-to-stunning-report/pbi_report.png)
 
 ## <a name="share-your-dashboard"></a>Del dit dashboard
-Du vil gerne dele dashboardet med din chef, Paula. Du kan dele dit dashboard og den underliggende rapport med enhver kollega, der har en Power BI-konto. De kan interagere med rapporten, men du kan ikke gemme ændringerne.
+Lad os sige, at du gerne vil dele dashboardet med din chef. Du kan dele dit dashboard og den underliggende rapport med enhver kollega, der har en Power BI-konto. De kan interagere med rapporten, men ikke gemme ændringerne.
 
-Hvis du vil dele din rapport, skal du vælge **Del** øverst på dashboardet.
+1. Hvis du vil dele din rapport, skal du vælge **Del** øverst på dashboardet.
 
-![Delingsikon](media/service-from-excel-to-stunning-report/power-bi-share.png)
+   ![Delingsikon](media/service-from-excel-to-stunning-report/power-bi-share.png)
 
-Power BI viser siden Del dashboard. Angiv mailadresser på modtagerne i det øverste område. Tilføj en meddelelse i feltet nedenfor. Hvis du vil tillade dine kollegaer at dele dit dashboard med andre, skal du markere **Tillad, at modtagerne må dele dette dashboard**. Vælg **Del**.
+   Power BI viser siden **Del dashboard**. 
 
-![Del dashboardvindue](media/service-from-excel-to-stunning-report/power-bi-share-dash-new.png)
+2. Angiv mailadresser på modtagerne i feltet **Angiv mailadresser**, og tilføj en meddelelse i feltet nedenfor. 
 
-Næste trin
+3. Hvis du vil tillade dine kollegaer at dele dit dashboard med andre, skal du markere **Tillad, at modtagerne må dele dette dashboard**. Vælg **Del**.
+
+   ![Del dashboardvindue](media/service-from-excel-to-stunning-report/power-bi-share-dash-new.png)
+
+## <a name="next-steps"></a>Næste trin
 
 * [Kom i gang med Power BI-tjenesten](service-get-started.md)
 * [Kom i gang med Power BI Desktop](desktop-getting-started.md)
 * [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/).
 

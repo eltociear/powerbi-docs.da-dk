@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/29/2019
+ms.date: 08/12/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 80bb78d6074fde907fe6b2d3bbb835cdc5e82976
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: c2af7db67c637ca795bd501609d05d317d2a3e00
+ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623839"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69023453"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -33,6 +33,76 @@ Linkene ud for hver opdatering betyder følgende:
 Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
 
 I de følgende afsnit beskrives tidligere måneders opdateringer til **Power BI Desktop**.
+
+## <a name="july-2019-update-2715523641"></a>Opdatering i juli 2019 (2.71.5523.641)
+
+Vores opdateringer i juli var fulde af fantastiske nye funktioner og spændende funktionalitet til Power BI Desktop. 
+
+Nu kan du [downloade den nyeste version af Power BI Desktop](https://powerbi.microsoft.com/desktop). Hvis du kører Windows 10, kan du også få **Power BI Desktop** fra Windows Store. De månedlige versioner er de samme, selvom versionsnummeret kan variere mellem de to, uanset hvilken måde du installerer **Power BI Desktop** på. Du kan finde flere oplysninger i [denne artikel](desktop-get-the-desktop.md). 
+
+Linkene ud for hver opdatering betyder følgende:
+
+* **[video]** angiver, at videoen afspilles på en ny fane i browseren, når funktionen beskrives.
+* Til nogle funktioner findes der en **[artikel]** , hvor funktionen beskrives mere detaljeret.
+* De fleste funktioner i den månedlige opdatering beskrives i et **[blog]** indlæg.
+* Nogle af funktionerne er selvforklarende og vil ikke være tilknyttet en artikel elle video.
+
+Du kan også se videoen med de **seneste opdateringer** fra starten direkte i artiklen. Det gør du ved at klikke på **afspil**-ikonet på videobilledet under listen med opdateringer.
+
+Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
+
+### <a name="reporting"></a>Rapportering
+* Ikonsæt til tabel og matrix [[video]](https://youtu.be/l7OMRUF9UYg?t=11) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#iconSets) 
+* Understøttelse af procent i forbindelse med betinget formatering efter regler [[video]](https://youtu.be/l7OMRUF9UYg?t=445) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#percentRules)
+* Ny filtreringsrude er nu generelt tilgængelig [[video]](https://youtu.be/l7OMRUF9UYg?t=543) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#filterPane)
+* Understøttelse af datafarver, når der bruges afspilningsakser i punktdiagrammer [[video]](https://youtu.be/l7OMRUF9UYg?t=610) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#playAxis)
+* Forbedringer af ydeevnen, når der bruges relativ dato og udsnitsværktøjer til rullemenuer [[video]](https://youtu.be/l7OMRUF9UYg?t=669) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#slicers)
+
+
+### <a name="analytics"></a>Analyse
+* Visualisering af antal vigtige influencere (prøveversion) [[video]](https://youtu.be/l7OMRUF9UYg?t=760) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#keyInfluencers) 
+* Forbedringer af sammenlægninger [[video]](https://youtu.be/l7OMRUF9UYg?t=870) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#aggregations) 
+
+
+### <a name="visuals"></a>Visualiseringer
+* PowerApps-visualisering er nu certificeret [[video]](https://youtu.be/l7OMRUF9UYg?t=894) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#powerapps) 
+* Tre nye brugerdefinerede visualiseringer og opdateringer [[video]](https://youtu.be/l7OMRUF9UYg?t=932) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#infocard) 
+
+
+### <a name="data-connectivity"></a>Dataforbindelse
+* Azure Data Lake Storage Gen2-connector (beta) [[video]](https://youtu.be/l7OMRUF9UYg?t=1203) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#azureDataLake) 
+* Dynamics 365 Customer Insights-connector [[video]](https://youtu.be/l7OMRUF9UYg?t=1250) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#customerInsights) 
+
+
+### <a name="data-preparation"></a>Dataforberedelse
+* Ny transformering: Opdel kolonne efter placering [[video]](https://youtu.be/l7OMRUF9UYg?t=1321) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/#splitColumn) 
+
+
+> [!NOTE]
+> Du kan også [se alle de datakilder, du kan bruge i Power BI Desktop](desktop-data-sources.md). Vi opdaterer hele tiden listen med nye datakilder, så kig tilbage ofte.
+
+Vil du have flere oplysninger om disse opdateringer? Se nærmere på [blogindlægget](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2019-feature-summary/), hvor du kan få mere detaljerede oplysninger om hver af de nye funktioner (dette er de samme referencer til blogindlæg på listen herover).
+
+
+I følgende video beskrives og vises hver af disse opdateringer. Du kan også se videoen i blogindlægget.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l7OMRUF9UYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [!NOTE]
+> Du kan også læse om [nyhederne i Power BI-tjenesten](service-whats-new.md) og se [nyhederne i mobilappsene til Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
+
+
+Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisation kræver det. Vi anbefaler altid, at du bruger den nyeste version af Power BI Desktop i stedet for en tidligere version. Der er følgende begrænsninger for alle tidligere versioner:
+
+* Der ydes ikke service til tidligere versioner af Power BI Desktop – du skal altid bruge den nyeste version for at få de nyeste funktioner og opdateringer.
+* Du kan muligvis ikke åbne filer, der er oprettet eller gemt i nyere versioner af Power BI Desktop, med tidligere versioner af Power BI Desktop. 
+* Hvis du får vist en advarsel, når du indlæser en rapport, der er gemt i en nyere version af Power BI Desktop, og derefter gemmer rapporten i den tidligere version, mister du alle oplysninger, der er relateret til nye funktioner.
+* Vi arkiverer kun de engelske versioner af Power BI Desktop.
+
+Vælg følgende links for at downloade denne tidligere version: 
+
+* [Power BI Desktop-version fra juli 2019 – 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-07.msi)
+* [Power BI Desktop-version fra juli 2019 – 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-07_x64.msi)
 
 
 ## <a name="june-2019-update-2705494561"></a>Opdatering fra juni 2019 (2.70.5494.561)
@@ -70,7 +140,7 @@ Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
     * Understøttelse af Cloud RLS
 * Tilgængelighed til dialogboksen Administrer sammenlægninger [[video]](https://youtu.be/7k-nP38uHyQ?t=1213) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#aggregationsAccessibility) 
 
-### <a name="modeling"></a>Modellering
+### <a name="modeling"></a>Udformning
 * Ny = DAX-sammenligningsoperator [[video]](https://youtu.be/7k-nP38uHyQ?t=1267) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#dax) 
 
 
@@ -150,7 +220,7 @@ Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
     * Mobilunderstøttelse
 
 
-### <a name="modeling"></a>Modellering
+### <a name="modeling"></a>Udformning
 * Deaktiver tabeller med automatisk dato for nye rapporter [[video]](https://youtu.be/O8GlHDz8xUQ?t=984)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#autoDate) 
 * Opdater til funktionen ALLSELECTED DAX [[video]](https://youtu.be/O8GlHDz8xUQ?t=1080)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#dax) 
 
@@ -226,7 +296,7 @@ Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 * Delvis synonymmatchning for ord i Spørgsmål og svar [[video]](https://youtu.be/vih35kSrEHU?t=912)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#partialMatching) 
 
 
-### <a name="modeling"></a>Modellering
+### <a name="modeling"></a>Udformning
 * Ny DAX-funktion – ALLCROSSFILTERED [[video]](https://youtu.be/vih35kSrEHU?t=970)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dax) 
 
 ### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
@@ -316,7 +386,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i marts:
 * Visning af datoer som et hierarki er nu offentligt tilgængelig [[video]](https://youtu.be/rBPGH6eYlT0?t=397)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#dateHierarchy) 
 
 
-### <a name="modeling"></a>Modellering
+### <a name="modeling"></a>Udformning
 * Ny modelleringsvisning er nu offentligt tilgængelig [[video]](https://youtu.be/rBPGH6eYlT0?t=417)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#modellingView) 
 * Nye DAX-funktioner [[video]](https://youtu.be/rBPGH6eYlT0?t=560) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#DAX) 
 
@@ -475,7 +545,7 @@ Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 * Livesupport til forbindelse til Spørgsmål og svar (prøveversion) [[video]](https://youtu.be/AHNlkjRFdYI?t=1037) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#liveConnectQA) 
 
 
-### <a name="modeling"></a>Modellering
+### <a name="modeling"></a>Udformning
 
 * Opdateringer af DAX-formellinje [[video]](https://youtu.be/AHNlkjRFdYI?t=1132) [[artikel]](desktop-modeling-view.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#daxFormulaBar) 
 * Understøttelse af tilgængelighed af datavisning [[video]](https://youtu.be/AHNlkjRFdYI?t=1253) [[artikel]](desktop-composite-models.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#dataView) 
@@ -535,7 +605,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i november:
 * Opfølgningsspørgsmål i stifinder til spørgsmål og svar [[video]](https://youtu.be/1xsXXoyTxfk?t=1429) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23relatedQuestions) 
 
 
-### <a name="modeling"></a>Modellering
+### <a name="modeling"></a>Udformning
 
 * Ny udformningsvisning (prøveversion) [[video]](https://youtu.be/1xsXXoyTxfk?t=1642) [[artikel]](desktop-modeling-view.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingView) 
 * Sammensatte modeller er nu offentligt tilgængelige [[video]](https://youtu.be/1xsXXoyTxfk?t=1941) [[artikel]](desktop-composite-models.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23compositeModels) 
@@ -580,7 +650,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i oktober:
 * Forbedringer af ydeevne til ArcGIS-kort [[video]](https://youtu.be/cT3L2VzgBRU?t=333) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23esri)
 
 
-### <a name="modeling"></a>Modellering
+### <a name="modeling"></a>Udformning
 
 * Forbedringer af DAX-editor [[video]](https://youtu.be/GO1dhDJhSDY) [[artikel]](desktop-formula-editor.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23daxEditor) 
 
@@ -680,7 +750,7 @@ Vi fulgte hurtigt op på de store opdateringer fra juli med en frisk buket af au
 
 Følgende opdateringer var nye i **Power BI Desktop** i august:
 
-### <a name="modeling"></a>Modellering
+### <a name="modeling"></a>Udformning
 
 * Datakategorier til målinger  [[video]](https://youtu.be/dgv5HhHxxe8?t=15m27s)  [[artikel]](desktop-measures.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#dataCategory)
 * Statistiske DAX-funktioner  [[video]](https://youtu.be/dgv5HhHxxe8?t=18m56s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#dax)
@@ -729,7 +799,7 @@ De store opdateringer i juli omfattede længe ønskede data- og rapporteringsfun
 
 Følgende opdateringer var nye i **Power BI Desktop** i juli:
 
-### <a name="modeling"></a>Modellering
+### <a name="modeling"></a>Udformning
 
 * Sammensatte modeller (prøveversion) [[video]](https://youtu.be/Mtig3rmIUe0?t=15s) [[artikel]](desktop-composite-models.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#compositeModels)
 * Mange til mange-relationer (prøveversion) (knyttet til sammensatte modeller) [[video]](https://youtu.be/Mtig3rmIUe0?t=4m53s) [[artikel]](desktop-many-to-many-relationships.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#compositeModels)
@@ -799,7 +869,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i juni:
 
 * To nye brugerdefinerede visualiseringer [[video]](https://youtu.be/4VpGtWSrssE?t=17m42s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#customVisuals) 
 
-### <a name="modeling"></a>Modellering
+### <a name="modeling"></a>Udformning
 * Filtrering og sortering i datavisning [[video]](https://youtu.be/4VpGtWSrssE?t=13m11s) [[artikel]](desktop-data-view.md#filtering-in-data-view) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#filterAndSort) 
 * Forbedret filtrering af landestandard [[video]](https://youtu.be/4VpGtWSrssE?t=15m35s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#locale) 
 
@@ -2243,13 +2313,13 @@ December måned er gavernes tid, og Power BI-teamet giver dig en gave med flere 
     - Ret skriftstørrelsen i visualiseringer
     - Bedre layoutmuligheder for visualiseringer med større præcision, justering, fordelinger, størrelse og placering
     - Angiv formatering for flere visualiseringer ved hjælp af **Formatpensel**
-    - Optimeret layout af fanen **Hjem**
+    - Optimeret layout af fanen **Start**
 
 
 -   Forbedringer i visualiseringer:
     - Visuelt tip om sorteringstilstanden i visualiseringen **Tabel**
     - Ny visualisering: Diagrammet **Stablet område**
-    - Smarte værktøjstip til **Områdediagram** og **Kurvediagram**, når der peges på dem
+    - Smarte værktøjstip til **Områdediagram** og **Kurvediagram**, når der holdes over dem
     - Mulighed for at oprette referencelinje/område for virtualiseringen **Kartesisk**
     - Forbedrede datamærkater for **cirkeldiagrammer** og **punktdiagrammer**
 
@@ -2399,7 +2469,7 @@ Med denne store samling af opdateringer får du 44 nye funktioner:
 - Filtre på rapportniveau
 - Skift detailniveau i søjle- og punktdiagrammer
 - Nye indstillinger: Sidestørrelse og Sidevisning
-- Understøtter nu indsættelse af former på rapportcanvas
+- Understøtter nu indsættelse af former på rapportlærredet
 - Forbedringer i ruden Felter
     - Søgefelt, der gør det nemmere at finde felter efter navn
     - "Udvid/Skjul alle" forbedrer navigation, når der er flere tabeller i ruden Felter

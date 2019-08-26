@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/27/2019
-ms.openlocfilehash: af3c22197e4d6783787bd72c9cf010bf6db64bc1
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 62b5498558b2c89a23e2ed2caf3dacdf343d3a79
+ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270965"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490340"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
@@ -66,9 +66,10 @@ Her er en ufuldstændig liste over funktionsforskelle.
 
 | Udvalgt | Power BI Embedded | Power BI Premium-kapacitet | Power BI Premium-kapacitet |
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
-|   | (A-SKU'er) | (EM-SKU'er) | (P-SKU'er) |
-| Integrer artefakter fra et Power BI-programarbejdsområde | Azure-kapacitet | Office 365-kapacitet | Office 365-kapacitet |
-| Forbrug Power BI-rapporter i en integreret app | Ja | Ja | Ja |
+|   | Kapacitet for A-varenumre i Azure | Kapacitet for EM-varenumre i O365 | Kapacitet for P-varenumre i O365 |
+| Integrer artefakter fra et Power BI-programarbejdsområde | Ja | Ja | Ja |
+| Forbrug Power BI-rapporter i en integreret applikation – SaaS | Nej | Ja | Ja |
+| Forbrug Power BI-rapporter i en integreret applikation – PaaS | Ja | Ja | Ja |
 | Forbrug Power BI-rapporter i SharePoint | Nej | Ja | Ja |
 | Forbrug Power BI-rapporter i Dynamics | Nej | Ja | Ja |
 | Forbrug Power BI-rapporter i Teams (omfatter ikke mobilapp) | Nej | Ja | Ja |

@@ -7,15 +7,15 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 07/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: a6ada87813593fd0f06d7870fa1727bc35fe7d47
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: 0978e87167f96b40082819764d7e3ae35e930a4b
+ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68324897"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69023768"
 ---
 # <a name="connect-to-project-web-app-with-power-bi"></a>Opret forbindelse til Project Web App med Power BI
 Microsoft Project Web App er en fleksibel onlineløsning til projektporteføljestyring (PPM) og det daglige arbejde. Project Web App gør det muligt for organisationer at komme i gang, prioritere investeringer i projektporteføljen og levere den tilsigtede forretningsværdi. Med Project Web App-skabelonappen til Power BI får du indsigt fra Project Web App, som kan hjælpe dig med at administrere projekter, porteføljer og ressourcer.
@@ -24,49 +24,51 @@ Opret forbindelse til [Project Web App-skabelonappen](https://appsource.microsof
 
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
 
-   ![](media/service-connect-to-project-online/GetApps.png)
 1. Vælg **Apps** i navigationsruden til venstre > vælg **Hent apps** i øverste højre hjørne.
+
+    ![Hent apps](media/service-connect-to-project-online/GetApps.png)
+
 2. Markér **Hent** i feltet **Tjenester**.
    
-   ![](media/service-connect-to-project-online/AppSource.png)
+   ![AppSource](media/service-connect-to-project-online/AppSource.png)
 3. I AppSource skal du vælge fanen **Apps** og søge/vælge **Microsoft Project Web App**.
    
 4. Du får vist en meddelelse med teksten **Vil du installere denne Power BI-app?** . Vælg **Installér**. 
 
-   ![](media/service-connect-to-project-online/ProjectTile.png)
+   ![Installér Project Web](media/service-connect-to-project-online/ProjectTile.png)
 5. I ruden **Apps** skal du vælge feltet **Microsoft Project Web App**. 
    
-   ![](media/service-connect-to-project-online/getstarted.png)
+   ![Microsoft Project-webapp](media/service-connect-to-project-online/getstarted.png)
 6. Under **Kom i gang med din nye app** skal du vælge **Opret forbindelse til data**.
    
-   ![](media/service-connect-to-project-online/mproject.png)
+   ![Opret forbindelse til data](media/service-connect-to-project-online/mproject.png)
 7. I tekstfeltet **URL-adresse til Project Web App** skal du angive URL-adressen til den Project Web App (PWA), du vil oprette forbindelse til.  Bemærk, at dette kan afvige fra eksemplet, hvis du har et brugerdefineret domæne. I tekstboksen **PWA-sprog på webstedet** skal du skrive det tal, der svarer til dit PWA-sprog på webstedet. Skriv det enkelte ciffer, '1' for engelsk, '2' for fransk, '3' for tysk, '4' for portugisisk (Brasilien), '5' for portugisisk (Portugal) og '6' for spansk. 
    
-   ![](media/service-connect-to-project-online/params.png)
+   ![Opret forbindelse til Microsoft Project Online](media/service-connect-to-project-online/params.png)
 8. Som godkendelsesmetode skal du vælge **oAuth2** \> **Log på**. Når du bliver spurgt, skal du angive dine legitimationsoplysninger til Project Web App og følge godkendelsesprocessen.
 
-    
-Bemærk, at du skal have Oversigtsfremviser-, Oversigtsleder- eller Administratortilladelser til den Project Web App, du opretter forbindelse til.
+    > [!NOTE]
+    > Du skal have Oversigtsfremviser-, Oversigtsleder- eller Administratortilladelser til den Project Web App, du opretter forbindelse til.
 
 9. Du får vist en meddelelse, der indikerer, at dine data indlæses. Afhængigt af størrelsen på din konto kan det tage noget tid. Når Power BI importerer dataene, får du vist indholdet af dit nye arbejdsområde. Det kan være nødvendigt at opdatere datasættet for at få de nyeste opdateringer. 
 
-Når Power BI har importeret dataene, får du vist rapporten med 13 sider og datasættet i navigationsrude til venstre. 
+    Når Power BI har importeret dataene, får du vist rapporten med 13 sider og datasættet i navigationsrude til venstre. 
 
 10. Når dine rapporter er klar, kan du gå videre og begynde at udforske dataene i Project Web App. Skabelonappen leveres med 13 omfattende og detaljerede rapporter til oversigt over portefølje (6 rapportsider), oversigt over ressource (5 rapportsider) og projektstatus (2 rapportsider). 
 
-   ![](media/service-connect-to-project-online/report1.png)
+    ![Porteføljedashboard](media/service-connect-to-project-online/report1.png)
    
-   ![](media/service-connect-to-project-online/report3.png)
+    ![Tilgængelighed](media/service-connect-to-project-online/report3.png)
    
-   ![](media/service-connect-to-project-online/report2.png)
+    ![Projektstatus](media/service-connect-to-project-online/report2.png)
 
 **Hvad nu?**
 
-* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
+* Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**.
 
 **Udvid skabelonappen**
 
-Download [GitHub PBIT-filen](https://github.com/OfficeDev/Project-Power-BI-Content-Packs) for at tilpasse og opdatere indholdspakken yderligere
+Download [GitHub PBIT-filen](https://github.com/OfficeDev/Project-Power-BI-Content-Packs) for at tilpasse og opdatere indholdspakken yderligere.
 
 ## <a name="next-steps"></a>Næste trin
 [Kom i gang med Power BI](service-get-started.md)

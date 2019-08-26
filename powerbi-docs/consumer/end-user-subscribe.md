@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 08/12/2019
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 85976d191fba627b75f8b415acc312817d11ed34
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 2b0554729824b170fecbe6493141c6f3a8354002
+ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408509"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68961669"
 ---
 # <a name="subscribe-to-a-report-or-dashboard-in-the-power-bi-service"></a>Abonner på en rapport eller et dashboard i Power BI-tjenesten 
 Det har aldrig været nemmere at holde dig opdateret om dine vigtigste dashboards og rapporter. Abonner på rapportsider og dashboards, der betyder mest for dig, så sender Power BI et snapshot via mail til din indbakke. Fortæl Power BI, hvor ofte du vil modtage mails: dagligt, ugentligt eller efter dataopdatering. Du kan tilmed angive et bestemt tidspunkt for, hvornår Power BI sender mails, eller køre det nu.  
@@ -76,6 +76,7 @@ Et abonnement slutter, hvis Pro-licensen udløber, dashboardet eller rapporten s
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 * Dashboards med mere end 25 fastgjorte felter eller 4 fastgjorte liverapportsider gengives muligvis ikke fuldstændigt i abonnementsmails, der sendes til brugerne. Det anbefales, at du kontakter designeren af dashboardet og beder vedkommende om at reducere antallet af fastgjorte felter til mindre end 25 og fastgjorte liverapporter til mindre end 4 for at sikre, at mailen gengives korrekt.  
 * Hvis der er anvendt sikkerhed på rækkeniveau på nogen af felterne, bliver disse felter ikke vist for e-mailabonnementer på dashboard.  Hvis datasættet bruger RLS, vil du ikke kunne oprette et abonnement for mailabonnementer på rapporter.
+* Hvis linkene i din mail (til indholdet) ikke længere fungerer, kan det være, at indholdet er blevet slettet. Under skærmbilledet i mailen kan du se, om du eller en anden har tilmeldt dig. Hvis en anden person har, kan du bede denne kollega om enten at annullere mailene eller at tilmelde dig igen.
 * Rapportsideabonnementer er bundet til navnet på siden i rapporten. Hvis du abonnerer på en rapportside, og den bliver omdøbt, skal du genoprette dit abonnement.
 * Hvis du ikke kan bruge abonnementsfunktionen, skal du kontakte din systemadministrator. Din organisation kan have deaktiveret denne funktion pga. godkendelse eller af andre årsager.  
 * Mailabonnementer understøtter ikke de fleste [brugerdefinerede visuelle elementer](../power-bi-custom-visuals.md).  Undtagelsen er de brugerdefinerede visualiseringer, der er blevet [certificeret](../power-bi-custom-visuals-certified.md).  

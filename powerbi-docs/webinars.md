@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/01/2019
 ms.author: v-tatero
-ms.openlocfilehash: ec50369715efdd7bcb9ab764a3240acceb72508e
-ms.sourcegitcommit: 8dee40f07d284ec84a8afa0100359f146e1dd88b
+ms.openlocfilehash: 5a5dca5c3fb4b3b375d3fbb603703e8aaaf91c6c
+ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418657"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69023425"
 ---
 # <a name="power-bi-webinars"></a>Power BI-webinarer
 
@@ -22,7 +22,9 @@ Tilmeld dig vores kommende livewebinarer, eller se vores optagne sessioner, når
 
 ## <a name="upcoming-webinars"></a>Kommende webinarer
 
-Der er ikke planlagt webinarer endnu. Tjek igen senere for at se flere kommende arrangementer.
+**Brug af Power BI med Dynamics 365 Finance and Operations**
+<br>ved Kristian Horlock
+<br>[Tilmeld dig, og se med den 11. september](https://info.microsoft.com/ww-landing-Using-Power-BI-with-Dynamics-365-Finance-and-Operations.html?LCID=EN-US)
 
 >[Kommende webinarer fra Power BI-community'et](https://powerbi.microsoft.com/blog/tag/community-webinars/?Is=Website)
 

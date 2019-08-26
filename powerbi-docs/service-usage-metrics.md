@@ -9,14 +9,14 @@ featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/28/2019
+ms.date: 08/15/2019
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 30552ee407460856fd1548073f0b3046ab508115
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: e77bfdf771e84afbc87335aa77993640d10282b0
+ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567568"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69530539"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Overvåg forbrugsdata for Power BI-dashboards og -rapporter
 
@@ -41,20 +41,7 @@ Du kan kun køre forbrugsdatarapporter i Power BI-tjenesten. Men hvis du gemmer 
 - Hvis du vil have adgang til forbrugsdata for et bestemt dashboard eller en bestemt rapport, skal du have redigeringsadgang til det pågældende dashboard eller den pågældende rapport.
 - Din Power BI-administrator skal have aktiveret forbrugsdata for oprettere af indhold. Din Power BI-administrator kan også have aktiveret indsamling af brugerspecifikke data i forbrugsdata. Få mere at vide om, hvordan du [aktiverer disse indstillinger på administrationsportalen](service-admin-portal.md#control-usage-metrics). 
 
-## <a name="about-the-usage-metrics-report"></a>Om rapporten med forbrugsdata
-
-Når du vælger **Forbrugsdata** eller ![ikonet forbrugsdata](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) ud for et dashboard, opretter Power BI en rapport, der allerede indeholder forbrugsdata for dette indhold for de seneste 90 dage.  Rapporten ligner de Power BI-rapporter, du allerede kender. Du kan oprette udsnit baseret på, hvordan dine slutbrugere fik adgang, om de fik adgang via internettet eller mobilapp osv. I takt med at dine dashboards og rapporter udvikler sig, gælder det også rapporten med forbrugsdata, som opdateres hver dag med nye data.  
-
-Forbrugsdatarapporter vises ikke i **Seneste**, **Arbejdsområder**, **Favoritter** eller andre indholdslister. De kan ikke føjes til en app. Hvis du fastgør et felt fra en forbrugsdatarapport til et dashboard, kan du ikke føje det pågældende dashboard til en app.
-
-Hvis du vil grave dybere ned i rapportdataene eller udarbejde dine egne rapporter ud fra det underliggende datasæt, har du to valgmuligheder: 
-
-- Opret en kopi af rapporten i Power BI-tjenesten. Få mere at vide under [Gem en kopi af forbrugsdatarapporten](#save-a-copy-of-the-usage-metrics-report) senere i denne artikel.
-- Opret forbindelse til datasættet fra Power BI Desktop. Få mere at vide under [Opret forbindelse til et publiceret datasæt](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset).
-
-    ![Opret forbindelse til et datasæt fra en forbrugsdatarapport](media/service-usage-metrics/power-bi-usage-dataset.png)
-
-## <a name="open-a-usage-metrics-report-for-a-dashboard-or-report"></a>Åbn en rapport med forbrugsdata for et dashboard eller en rapport
+## <a name="view-a-usage-metrics-report"></a>Få vist en rapport over forbrugsdata
 
 1. Start i arbejdsområdet, der indeholder dashboardet eller rapporten.
 2. Vælg ikonet for **Forbrugsdata** ![forbrugsdataikon](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) på indholdslisten til arbejdsområdet eller fra selve dashboardet eller rapporten.
@@ -82,6 +69,18 @@ Hvis du vil grave dybere ned i rapportdataene eller udarbejde dine egne rapporte
 
 ![Rapporten forbrugsdatarapport](media/service-usage-metrics/power-bi-report-usage-metrics-update.png)
 
+## <a name="about-the-usage-metrics-report"></a>Om rapporten med forbrugsdata
+
+Når du vælger **Forbrugsdata** eller ![ikonet forbrugsdata](media/service-usage-metrics/power-bi-usage-metrics-report-icon.png) ud for et dashboard, opretter Power BI en rapport, der allerede indeholder forbrugsdata for dette indhold for de seneste 90 dage.  Rapporten ligner de Power BI-rapporter, du allerede kender. Du kan oprette udsnit baseret på, hvordan dine slutbrugere fik adgang, om de fik adgang via internettet eller mobilapp osv. I takt med at dine dashboards og rapporter udvikler sig, gælder det også rapporten med forbrugsdata, som opdateres hver dag med nye data.  
+
+Forbrugsdatarapporter vises ikke i **Seneste**, **Arbejdsområder**, **Favoritter** eller andre indholdslister. De kan ikke føjes til en app. Hvis du fastgør et felt fra en forbrugsdatarapport til et dashboard, kan du ikke føje det pågældende dashboard til en app.
+
+Hvis du vil grave dybere ned i rapportdataene eller udarbejde dine egne rapporter ud fra det underliggende datasæt, har du to valgmuligheder: 
+
+- Opret en kopi af rapporten i Power BI-tjenesten. Få mere at vide under [Gem en kopi af forbrugsdatarapporten](#save-a-copy-of-the-usage-metrics-report) senere i denne artikel.
+- Opret forbindelse til datasættet fra Power BI Desktop. For hvert arbejdsområde har datasættet navnet "Rapport over model med forbrugsdata". Få mere at vide under [Opret forbindelse til et publiceret datasæt](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset).
+
+    ![Opret forbindelse til et datasæt fra en forbrugsdatarapport](media/service-usage-metrics/power-bi-usage-dataset.png)
 
 ## <a name="which-metrics-are-reported"></a>Hvilke forbrugsdata rapporteres?
 
@@ -105,7 +104,7 @@ Hvis du vil grave dybere ned i rapportdataene eller udarbejde dine egne rapporte
 
 Brug **Gem som** til at konvertere forbrugsdatarapporten til en almindelig Power BI-rapport, som du kan tilpasse specifikt til dine behov. Du kan også bruge Power BI Desktop til at udarbejde tilpassede forbrugsdatarapporter, der er baseret på det underliggende datasæt. Få mere at vide under [Opret forbindelse til et publiceret datasæt](desktop-report-lifecycle-datasets.md#establish-a-power-bi-service-live-connection-to-the-published-dataset).
 
-Men endnu bedre, så indeholder det underliggende datasæt forbrugsoplysninger for alle dashboards og rapporter i arbejdsområdet. Dette åbner op for flere muligheder. Du kan f.eks. oprette en rapport, der sammenligner alle dashboards i arbejdsområdet baseret på forbrug. Eller du kan oprette et dashboard med forbrugsdata til din Power BI-app ved at samle forbrugsdata på tværs af alt det indhold, der er distribueret i denne app.  Se under [Fjern filter på sideniveau](#remove-the-filter-to-see-all-workspace-usage-metrics) senere i denne artikel.
+Men endnu bedre, så indeholder det underliggende datasæt forbrugsoplysninger for alle dashboards og rapporter i arbejdsområdet. Dette åbner op for flere muligheder. Du kan f.eks. oprette en rapport, der sammenligner alle dashboards i arbejdsområdet baseret på forbrug. Eller du kan oprette et dashboard med forbrugsdata til din Power BI-app ved at samle forbrugsdata på tværs af alt det indhold, der er distribueret i denne app.  Se, hvordan du fjerner filteret og [får vist alle forbrugsdata for arbejdsområdet](#see-all-workspace-usage-metrics) senere i denne artikel.
 
 ### <a name="create-a-copy-of-the-usage-report"></a>Opret en kopi af forbrugsrapporten
 
@@ -121,7 +120,7 @@ Når du opretter en kopi af den skrivebeskyttede, færdigbyggede forbrugsrapport
 
     ![Fanen Rapporter](media/service-usage-metrics/power-bi-new-report.png)
 
-## <a name="remove-the-filter-to-see-all-workspace-usage-metrics"></a>Fjern filteret for at få vist *alle* forbrugsdataene for arbejdsområdet
+## <a name="see-all-workspace-usage-metrics"></a>Se *alle* forbrugsdata for arbejdsområdet
 
 Hvis du vil se forbrugsdataene for alle dashboards eller for alle rapporter i arbejdsområdet, skal du fjerne et filter. Som standard filtreres rapporten for at vise forbrugsdata for det specifikke dashboard eller den rapport, du brugte til at oprette den.
 
@@ -169,7 +168,7 @@ Ud over eventuelle forskelle mellem forbrugsdata og overvågningslogge kan følg
 
 **Spørgsmål:**    Kan forbrugsdata hente visninger fra integrerede dashboards og rapporter?
 
-**Svar:**    Forbrugsdata understøtter i øjeblikket ikke hentning af forbrug for integrerede dashboards og rapporter samt flowet [Publicer på internettet](service-publish-to-web.md).          I de tilfælde anbefales det at bruge eksisterende webanalyseplatforme til at spore brugen for hostingappen eller -portalen.
+**Svar:**    Forbrugsdata understøtter i øjeblikket ikke hentning af forbrug for integrerede dashboards og rapporter samt flowet [Publicer på internettet](service-publish-to-web.md). I de tilfælde anbefales det at bruge eksisterende webanalyseplatforme til at spore brugen for hostingappen eller -portalen.
 
 **Spørgsmål:**    Jeg kan slet ikke køre forbrugsdata på noget indhold.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 01/03/2019
+ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: a687e42ef2963ce5e85bd1e0be72c2562afa5b6c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 637a6476af6368fae2bcfed8d89aeb9f43276a6b
+ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61370435"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69560842"
 ---
 # <a name="show-items-with-no-data-in-power-bi"></a>Vis elementer uden data i Power BI
 
@@ -25,7 +25,7 @@ Med Power BI kan du visualisere mange forskellige data fra forskellige kilder. I
 
 ## <a name="determining-relevant-data"></a>Fastlæggelse af relevante data
 
-Lad os kigge på en tabel som et simpelt eksempel for at komme i gang med at forstå, hvordan Power BI fastlægger, hvilke data er relevante. Overvej at skabe en tabel med følgende indstillinger ved hjælp af den model, der vises i eksempelafsnittene nederst i denne artikel:
+Lad os kigge på en tabel som et simpelt eksempel for at komme i gang med at forstå, hvordan Power BI fastlægger, hvilke data er relevante. Overvej at skabe en tabel med følgende indstillinger ved hjælp af den model, der repræsenteres i sektionen [eksempel på datamodel](#example-data-model), som kan ses i slutningen af denne artikel:
 
 **1. Grupper fra den samme tabel:** *Produkt[Farve] – Produkt[Størrelse]*
 
@@ -152,6 +152,25 @@ Sådan ser det ud, når funktionen **Vis elementer uden data** er slået til:
 |Red     |Blank         |         |
 
 Bemærk i dette tilfælde, at *Produktstil[Finish]=Ingen* ikke vises i tabellen. I dette tilfælde skyldes det, at Power BI først valgte alle værdierne for *Farve* i tabellen *Produkt*. For hver farve valgte Power BI derefter de tilsvarende værdier for *Finish*, som indeholdt data. Da *Ingen* ikke vises i nogen kombination af *Farve*, vælges denne værdi ikke.
+
+
+## <a name="power-bi-visual-behavior"></a>Funktionsmåde af visualiseringer i Power BI
+
+Når **Vis elementer uden data** er aktiveret for ét felt i en visualisering, aktiveres funktionen automatisk for alle andre felter, der findes i den samme *visuelle bucket* eller det samme hierarki. En visuel bucket eller et hierarki kan være henholdsvist **Akse** eller **Forklaring** eller **Kategori**, **Rækker** eller **Kolonner**.
+
+![Felter for akse og forklaring](media/desktop-show-items-no-data/show-items-no-data-04.png)
+
+Hvis **Vis elementer uden data** f.eks. er aktiveret for ét felt i en matrixvisualisering med fire felter i bucketen **Rækker**, er funktionen aktiveret for alle elementer i matrixen. På følgende billede er **Vis elementer uden data** aktiveret for det første felt i bucketen **Rækker**, nemlig feltet *Leverandør-id*. Men det er også automatisk aktiveret for de andre felter i bucketen **Rækker**.
+
+![Vis elementer uden data er automatisk aktiveret for felter i den samme visualisering](media/desktop-show-items-no-data/show-items-no-data-05.png)
+
+I modsætning hertil er **Vis elementer uden data** *ikke* aktiveret automatisk for feltet *Kontinent*, som vises i bucketen **Kolonner**. 
+
+Funktionsmåden af visualiseringen ses ofte, når en visualisering konverteres til en anden type, f.eks. konvertering af en matrixvisualisering til en tabelvisualisering. Ved sådanne konverteringer er **Vis elementer uden data** automatisk aktiveret for alle felter, der flyttes til en bucket, hvor funktionen er aktiveret for et felt i det pågældende bucket. Hvis funktionen **Vis elementer uden data** er aktiveret for *Leverandør-id* i forrige eksempel, og visualiseringen konverteres til en tabel, flyttes feltet *Kontinent* fra bucketen **Kolonner** (sammen med felterne i bucketen **Rækker**) til den eneste bucket, der bruges i en tabelvisualisering, nemlig bucketen **Værdier**. Derfor vil **Vis elementer uden data** være aktiveret for alle felter i bucketen **Værdier**.
+
+### <a name="exporting-data"></a>Eksport af data
+
+Når du bruger funktionen **Eksportér opsummerede data**, er funktionsmåden af funktionen **Vis elementer uden data** den samme, som hvis eksporten blev konverteret til en tabelvisualisering. Når du eksporterer en visualisering, f.eks. visualiseringen Diagrammatrix, vil de eksporterede data derfor muligvis se anderledes ud end den viste visualisering. Det skyldes, at **Vis elementer uden data** aktiveres for alle eksporterede felter under konverteringen til en tabelvisualisering. 
 
 ## <a name="example-data-model"></a>Eksempel på datamodel
 

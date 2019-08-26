@@ -8,102 +8,130 @@ featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 02/28/2018
+ms.date: 08/08/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: a26cd6d654f9378d9fa09ae46b64762213b26089
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: c87a54a0e991af3faa53b9ac4ac6c92893b2ed0a
+ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522974"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68962561"
 ---
-# <a name="data-alerts-in-power-bi-service"></a>Databeskeder i Power BI-tjenesten
-Angiv beskeder, så du får besked, når dataene på dine dashboards ændres ud over de grænser, du har angivet. 
+# <a name="data-alerts-in-the-power-bi-service"></a>Databeskeder i Power BI-tjenesten
 
-Du kan angive beskeder for felter, hvis du har en Power BI Pro-licens, eller hvis et dashboard er blevet delt med dig fra en [Premium-kapacitet](service-premium-what-is.md). Der kan kun angives beskeder på felter, der er fastgjort via rapportvisualiseringer, og kun på målere, KPI'er og kort. Beskeder kan angives på visualiseringer, der oprettes ud fra streamingdatasæt, der er fastgjort på et dashboard via en rapport, men de kan ikke angives på streamingfelter, der er oprettet direkte på dashboardet ved hjælp af **Tilføj felt** > **Brugerdefinerede streamingdata**. 
+Angiv beskeder, så du får besked, når dataene på dine dashboards ændres ud over de grænser, du har angivet.
 
-Det er kun dig, der kan se de angivne beskeder, selvom du deler dashboardet. Databeskeder er fuldt synkroniseret på tværs af platforme. Angiv og få vist databeskeder [i Power BI-mobilapps](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) og i Power BI-tjenesten. De er ikke tilgængelige for Power BI Desktop. Beskeder kan også være [automatiseret og integreret med Microsoft Flow](https://flow.microsoft.com) - [Prøv det](service-flow-integration.md).
+Du kan angive beskeder på felter, hvis du har en Power BI Pro-licens. Du kan også angive beskeder, hvis nogen deler et dashboard, der er i en [Premium-kapacitet](service-premium-what-is.md). Der kan kun angives beskeder på felter, der er fastgjort via rapportvisualiseringer, og kun på målere, KPI'er og kort. Beskeder kan angives på visuelle elementer, der er oprettet ud fra streamingdatasæt, som du fastgør fra en rapport til et dashboard. Der kan ikke angives beskeder for streamingfelter, der er oprettet direkte på dashboardet ved hjælp af **Tilføj felt** > **Brugerdefinerede streamingdata**.
+
+Det er kun dig, der kan se de angivne beskeder, selvom du deler dashboardet. Databeskeder er fuldt synkroniseret på tværs af platforme. Angiv og få vist databeskeder [i Power BI-mobilapps](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) og i Power BI-tjenesten. De er ikke tilgængelige for Power BI Desktop. Du kan endda automatisere og integrere beskeder med Microsoft Flow. Du kan prøve det selv i denne artikel om [Microsoft Flow og Power BI](service-flow-integration.md).
 
 ![felter](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
 > [!WARNING]
-> Datadrevne beskeder indeholder oplysninger om dine data. Hvis du få vist dine data i Power BI på en mobilenhed, og enheden bliver stjålet, anbefaler vi, at du bruger Power BI-tjenesten til at slå alle datadrevne regler for beskeder fra.
-> 
-> 
+> Datadrevne beskeder indeholder oplysninger om dine data. Hvis du får vist dine data i Power BI på en mobilenhed, og du mister enheden, eller den bliver stjålet, anbefaler vi, at du bruger Power BI-tjenesten til at slå alle datadrevne regler for beskeder fra.
 
-## <a name="set-data-alerts-in-power-bi-service"></a>Indstil databeskeder i Power BI-tjenesten
+## <a name="set-data-alerts-in-the-power-bi-service"></a>Indstil databeskeder i Power BI-tjenesten
+
 Se, hvordan Amanda føjer nogle beskeder til felterne på dashboardet. Følg derefter den trinvise vejledning under videoen for at prøve det selv.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JbL2-HJ8clE" frameborder="0" allowfullscreen></iframe>
 
-I dette eksempel bruges et kortfelt fra eksempeldashboardet Retail Analysis.
+I dette eksempel bruges et kortfelt fra eksempeldashboardet Retail Analysis. Hvis du vil følge med, skal du hente [eksemplet med en detailhandelsanalyse](sample-retail-analysis.md#get-the-content-pack-for-this-sample).
 
-1. Start på et dashboard. Vælg på ellipsen på en dashboardmåler, et KPI eller et kortfelt.
-   
+1. Start på et dashboard. Vælg ellipsen på feltet **Butikker i alt**.
+
    ![Feltet Butikker i alt](media/service-set-data-alerts/powerbi-card.png)
-2. Vælg på klokkeikonet ![beskedikon](media/service-set-data-alerts/power-bi-bell-icon.png) for at tilføje en eller flere beskeder om **Butikker i alt**.
-   
-1. Når du starter, skal du vælge **+ Tilføj påmindelsesregel**, sikre, at skyderen er angivet til **Til**, og give beskeden en titel. Titler hjælper dig med let at genkende dine beskeder.
-   
+
+1. Vælg klokkeikonet for ![Beskedikon](media/service-set-data-alerts/power-bi-bell-icon.png) for at tilføje en eller flere beskeder om **Butikker i alt**.
+
+1. Når du starter, skal du vælge **+ Tilføj påmindelsesregel**, sikre, at skyderen **Aktiv** er angivet til **Til** og give din besked en titel. Titler hjælper dig med let at genkende dine beskeder.
+
    ![Vinduet Administrer beskeder](media/service-set-data-alerts/powerbi-alert-title.png)
-4. Rul ned, og angiv oplysninger om beskederne.  I dette eksempel opretter vi en besked, som skal sendes til os én gang om dagen, hvis antallet af samlede butikker går over 100. Beskederne vises i vores meddelelsescenter. Vi får også Power BI til at sende os en mail.
-   
+
+1. Rul ned, og angiv oplysninger om beskederne.  I dette eksempel opretter vi en besked, som skal sendes til os én gang om dagen, hvis antallet af samlede butikker går over 100.
+
    ![Vinduet Administrer beskeder, angiv grænseværdi](media/service-set-data-alerts/power-bi-set-alert-details.png)
-5. Vælg **Gem**.
 
-## <a name="receiving-alerts"></a>Modtagelse af beskeder
-Når de sporede data når en af de angivne tærskelværdier, sker der flere ting. Først tjekker Power BI, om der er gået mere end én time eller mere end et døgn (afhænger af den valgte indstilling), siden den seneste besked blev sendt. Du får en besked, så længe dataene har overskredet grænsen.
+    Beskederne vises i dit **meddelelsescenter**. Power BI sender også en mail om beskeden, hvis du markerer afkrydsningsfeltet.
 
-Derefter sendes en besked til meddelelsescenteret og evt. en mail via Power BI. Hver enkelt besked indeholder et direkte link til dine data. Vælg linket for at se det relevante felt, hvor du kan udforske, dele og få mere at vide.  
+1. Vælg **Gem og luk**.
 
-1. Hvis du har indstillet beskeden til at sende en mail til dig, modtager du mail i din indbakke.
-   
+## <a name="receiving-alerts"></a>Modtag beskeder
+
+Når de sporede data når en af de angivne tærskelværdier, som du har angivet, sker der flere ting. Først tjekker Power BI, om der er gået mere end én time eller mere end et døgn (afhænger af den valgte indstilling) siden den seneste besked. Du får en besked, hvis dataene har overskredet grænsen.
+
+Derefter sendes en besked til dit **meddelelsescenter** og eventuelt en mail via Power BI. Hver enkelt besked indeholder et direkte link til dine data. Vælg linket for at se det relevante felt, hvor du kan udforske, dele og få mere at vide.  
+
+* Hvis du har indstillet beskeden til at sende en mail til dig, modtager du mail i din indbakke.
+
    ![Mail med vigtig besked](media/service-set-data-alerts/powerbi-alerts-email.png)
-2. Power BI føjer en meddelelse til dit **meddelelsescenter** og føjer et ny beskedikon til det relevante felt.
-   
+
+* Power BI føjer en meddelelse til dit **meddelelsescenter** og føjer et ny beskedikon til det relevante felt.
+
    ![Meddelelsesikon i Power BI-tjeneste](media/service-set-data-alerts/powerbi-alert-notifications.png)
-3. Åbn dit meddelelsescenter for at få vist oplysningerne for beskeder.
-   
+
+* Detaljer om beskeden vises i dit **meddelelsescenter**.
+
     ![læs beskeden](media/service-set-data-alerts/powerbi-alert-notification.png)
-   
+
    > [!NOTE]
-   > Beskeder fungerer kun i forbindelse med opdaterede data. Når data opdateres, kontrolleres det via Power BI, om der er angivet en besked for disse data. Hvis dataene har nået grænsen for en besked, udløses der en besked.
-   > 
-   > 
+   > Beskeder fungerer kun for opdaterede data. Når data opdateres, kontrolleres det via Power BI, om der er angivet en besked for disse data. Hvis dataene har nået grænsen for en besked, udløser Power BI en besked.
 
 ## <a name="managing-alerts"></a>Administration af beskeder
-Der er mange måder at administrere dine beskeder på: Fra selve dashboardfeltet, fra menuen Indstillinger for Power BI og på et individuelt felt i [Power BI-mobilappen på iPhone](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) eller i [Power BI-mobilappen til Windows 10](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
-### <a name="from-the-tile-itself"></a>Fra selve feltet
-1. Hvis du vil ændre eller fjerne en besked fra et felt, skal du genåbne vinduet **Administrer beskeder** ved at vælge klokkeikonet for ![Beskedikon](media/service-set-data-alerts/power-bi-bell-icon.png). Alle de beskeder, du har angivet for dette felt, vises.
-   
-    ![Vinduet Administrer beskeder](media/service-set-data-alerts/powerbi-see-alerts.png).
-2. Hvis du vil redigere en besked, skal du vælge pilen til venstre for beskednavnet.
-   
-    ![pil ud for Beskednavn](media/service-set-data-alerts/powerbi-see-alerts-arrow.png).
-3. Hvis du vil slette en besked, skal du vælge skraldespanden til højre for beskednavnet.
-   
+Der er mange måder at administrere dine beskeder på:
+
+* Fra dashboardfeltet.
+
+* Fra menuen Indstillinger for Power BI.
+
+* På et felt i [Power BI-mobilappene](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
+
+### <a name="from-the-dashboard-tile"></a>Fra dashboardfeltet
+
+1. Hvis du vil ændre eller fjerne en besked fra et felt, skal du åbne vinduet **Administrer beskeder** igen ved at vælge klokkeikonet for ![Beskedikon](media/service-set-data-alerts/power-bi-bell-icon.png).
+
+    Power BI viser alle de beskeder, du har angivet for dette felt.
+
+    ![Vinduet Administrer beskeder](media/service-set-data-alerts/powerbi-see-alerts.png)
+
+1. Hvis du vil redigere en besked, skal du vælge pilen til venstre for beskednavnet.
+
+    ![pil ud for Beskednavn](media/service-set-data-alerts/powerbi-see-alerts-arrow.png)
+
+1. Hvis du vil slette en besked, skal du vælge skraldespanden til højre for beskednavnet.
+
       ![Skraldespandsikonet er valgt](media/service-set-data-alerts/powerbi-see-alerts-delete.png)
 
 ### <a name="from-the-power-bi-settings-menu"></a>I menuen Indstillinger for Power BI
-1. Vælg tandhjulsikonet på menulinjen i Power BI.
-   
+
+1. Vælg tandhjulsikonet på menulinjen i Power BI, og vælg **Indstillinger**.
+
     ![tandhjulsikon](media/service-set-data-alerts/powerbi-gear-icon.png).
-2. Under **Indstillinger** skal du vælge **Beskeder**.
-   
+
+1. Under **Indstillinger** skal du vælge **Beskeder**.
+
     ![Fanen Beskeder i vinduet Indstillinger](media/service-set-data-alerts/powerbi-alert-settings.png)
-3. Her kan du slå beskeder til og fra, åbne vinduet **Administrer beskeder** for at ændre eller slette beskeden.
+
+1. Her kan du slå beskeder til og fra, åbne vinduet **Administrer beskeder** for at ændre eller slette beskeden.
 
 ## <a name="tips-and-troubleshooting"></a>Tip og fejlfinding
-* Beskeder understøttes ikke i øjeblikket for Bing-felter eller kortfelter med målinger for dato/klokkeslæt.
+
+* Beskeder understøttes ikke for kortfelter med målinger for dato/klokkeslæt.
+
 * Beskeder fungerer kun i forbindelse med numeriske datatyper.
-* Beskeder fungerer kun i forbindelse med opdaterede data. De fungerer ikke med statistiske data.
+
+* Beskeder fungerer kun for opdaterede data. De fungerer ikke med statiske data.
+
 * Beskeder fungerer kun i forbindelse med streamingdatasæt, hvis du opretter en rapportvisualisering for KPI/kort/måler og derefter fastgør visualiseringen til dashboardet.
 
 ## <a name="next-steps"></a>Næste trin
-[Opret et Microsoft Flow, der indeholder en databesked](service-flow-integration.md)    
-[Angiv databeskeder på din mobilenhed](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md)    
-[Hvad er Power BI?](power-bi-overview.md)    
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 
+* [Opret et Microsoft Flow, der indeholder en databesked](service-flow-integration.md).
+
+* [Angiv databeskeder på din mobilenhed](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
+
+* [Hvad er Power BI?](power-bi-overview.md)
+
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

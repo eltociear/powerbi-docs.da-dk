@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 5391fee3c5a05d1c34cac4f3a097a0577ce5d191
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: b3adcf3ba97e83875187a11116fdb7b642e5560b
+ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462380"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68962226"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på detailhandelsanalyse til Power BI: Få en introduktion
 
@@ -92,10 +92,10 @@ Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig s
 ## <a name="review-a-tile-created-with-power-bi-qa"></a>Gennemgå et felt, der er oprettet med Spørgsmål og svar i Power BI
 Lad os gå mere specifikt til værks.
 
-1. Rediger spørgsmålet, så du bruger *dette års salg **efter distrikt***. Se resultatet: Spørgsmål og svar indsætter automatisk svaret i et liggende søjlediagram, og der foreslås andre sætninger:
+1. Ret spørgsmålet til _dette års salg **efter distrikt**_ . Se resultatet: Spørgsmål og svar indsætter automatisk svaret i et liggende søjlediagram, og der foreslås andre sætninger:
 
    ![Dette års salg efter distrikt i Spørgsmål og svar](media/sample-retail-analysis/retail8.png)
-2. Rediger nu spørgsmålet til *dette års salg **efter postnummer og kæde***.
+2. Ret nu spørgsmålet til _dette års salg **efter postnummer og kæde**_ .
 
    Bemærk, hvordan Power BI besvarer spørgsmålet, mens du skriver, og viser det relevante diagram.
 3. Eksperimentér med flere spørgsmål, og se, hvilken type resultater du får.

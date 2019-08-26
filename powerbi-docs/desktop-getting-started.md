@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: ecd58ca21e7fb6c5fb0bc2d3410788e2563efa9b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d1739d97b0741c67e29ed7ab9a35a70bf4fdc484
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65454509"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654824"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Kom i gang med Power BI Desktop
 Velkommen til **Introduktionsvejledning til Power BI Desktop**. Med denne korte præsentation af Power BI Desktop får du en idé om, hvordan det fungerer, og du får mulighed for at sætte skub i oprettelsen af robust datamodeller – sammen med fantastiske rapporter – som styrker din indsats på business intelligence-området. 
@@ -130,7 +130,7 @@ For det første blev de fleste klassificeringer lagt ind i **Forespørgselsedito
 
 Du kan også ændre eller *transformere* disse kolonner fra tekst til overskrift vha. båndet **Transformation**. Her er båndet **Transformation** med en pil, der peger på knappen **Datatype**, som gør det muligt at transformere den aktuelle datatype til en anden.
 
- ![](media/desktop-getting-started/shapecombine_changetype.png)
+ ![](media/desktop-getting-started/shapecombine-changetype-b.png)
 
 Bemærk, at under **Forespørgselsindstillinger**, afspejler **Anvendte trin** de ændringer, der er foretaget. Hvis jeg vil fjerne et trin fra formningsprocessen, skal jeg ganske enkelt vælge det pågældende trin, og derefter vælge **X** til venstre for trinnet.
 
