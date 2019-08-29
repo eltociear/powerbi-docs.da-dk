@@ -1,8 +1,8 @@
 ---
 title: Rediger SAP-variabler i Power BI-tjenesten (prøveversion)
 description: Azure og Power BI
-author: maggiesMSFT
-ms.author: maggies
+author: Sujata994
+ms.author: sunaraya
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/12/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: aff72d8efed716af2e7f4c881b22af12e248c207
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: db1d4a8a9734c910514b4952b664bf7ebce324c1
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68962889"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654887"
 ---
 # <a name="edit-sap-variables-in-the-power-bi-service-preview"></a>Rediger SAP-variabler i Power BI-tjenesten (prøveversion)
 
@@ -38,7 +38,7 @@ Der er et par krav til at bruge funktionen Rediger SAP-variabler. På følgende 
 
 **Power BI Premium-abonnement kræves** – Funktionen Rediger SAP-variabler fungerer i øjeblikket kun i Power BI Premium-abonnementer.
 
-**Konfiguration af enkeltlogon kræves** – Enkeltlogon (SSO) skal være konfigureret, før denne funktion fungerer. Du kan finde flere oplysninger under [Oversigt over enkeltlogon (SSO)](service-gateway-sso-overview.md).
+**Konfiguration af enkeltlogon kræves** – enkeltlogon (SSO) skal være konfigureret, før denne funktion fungerer. Du kan finde flere oplysninger under [Oversigt over enkeltlogon (SSO)](service-gateway-sso-overview.md).
 
 **Nye gatewaybits kræves** – Download den nyeste gateway, og opdater din eksisterende gateway. Du kan finde flere oplysninger under [Tjenestegateway](service-gateway-onprem.md).
 
@@ -48,7 +48,7 @@ Der er et par krav til at bruge funktionen Rediger SAP-variabler. På følgende 
 
 ## <a name="how-to-enable-the-feature"></a>Sådan aktiverer du funktionen
 
-Hvis du vil aktivere funktionen **Rediger SAP-variabler**, skal du i Power BI Desktop oprette forbindelse til en SAP HANA- eller SAP BW-datakilde. Gå derefter til **Filer > Indstillinger > Indstillinger**, og vælg derefter **DirectQuery** i sektionen Aktuel fil i ruden til venstre. Når du vælger dette, kan du se DirectQuery-indstillinger i ruden til højre og et afkrydsningsfelt, hvor du kan **give slutbrugere tilladelse til at ændre SAP-variabler i rapporten (prøveversion)**, som vist på følgende billede.
+Hvis du vil aktivere funktionen **Rediger SAP-variabler**, skal du i Power BI Desktop oprette forbindelse til en SAP HANA- eller SAP BW-datakilde. Gå derefter til **Filer > Indstillinger > Indstillinger**, og vælg derefter **DirectQuery** i sektionen Aktuel fil i ruden til venstre. Når du vælger dette, kan du se DirectQuery-indstillinger i ruden til højre og et afkrydsningsfelt, hvor du kan **give slutbrugere tilladelse til at ændre SAP-variabler i rapporten (prøveversion)** , som vist på følgende billede.
 
 ![DirectQuery-indstillinger](media/service-edit-sap-variables/sap-preview-setting-in-desktop.png)
 

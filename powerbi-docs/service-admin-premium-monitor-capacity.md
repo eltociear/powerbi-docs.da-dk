@@ -10,26 +10,26 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 05/31/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 0ef74a776e7220477a36d652ce1a48ebbf60c267
-ms.sourcegitcommit: 850e7883e21190151684e32f4d957beecd08e959
+ms.openlocfilehash: b57f444f11c9592d80ffccf7a80be5fa9c7dcf3b
+ms.sourcegitcommit: c2197c3ad1d747b4ad490ab75771a0d32d0ae208
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/20/2019
-ms.locfileid: "68362735"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70008128"
 ---
 # <a name="monitor-premium-capacities-with-the-app"></a>Overvåg Premium-kapaciteter vha. appen
 
 Overvågning af dine kapaciteter er afgørende for at træffe beslutninger om den bedste måde, du kan udnytte dine ressourcer i Premium-kapaciteten på. Du kan overvåge kapacitet via administrationsportalen eller programmet **Power BI Premium Capacity Metrics**. Denne artikel indeholder en beskrivelse af brugen af programmet Premium Capacity Metrics. Programmet giver de mest detaljerede oplysninger om ydeevnen af dine kapaciteter. Hvis du vil have et overblik over målepunkter for den gennemsnitlige brug på et højere niveau for de seneste syv dage, skal du bruge administrationsportalen. Du kan finde flere oplysninger om overvågning på portalen under [Overvåg Premium-kapaciteter på administrationsportalen](service-admin-premium-monitor-portal.md).
 
-Programmet opdateres jævnligt med nye funktioner og funktionalitet. Sørg for, at du kører den nyeste version. Hvis en tidligere version af programmet allerede er installeret, er det bedst at slette den fra dine programmer og derefter trykke på CTRL + F5 for at opdatere. 
+Programmet opdateres jævnligt med nye funktioner og funktionalitet. Sørg for, at du kører den nyeste version. Hvis en tidligere version af programmet allerede er installeret, er det bedst at slette den fra dine programmer og derefter trykke på CTRL + F5 for at opdatere.
 
 ## <a name="install-the-app"></a>Installér programmet
 
 Du kan gå direkte til [programmet Premium Capacity Metrics](https://app.powerbi.com/groups/me/getapps/services/capacitymetrics) eller installere det på samme måde som med andre programmer i Power BI.
 
+1. I Power BI skal du klikke på **Apps**.
 
-1. I Power BI skal du klikke på **Apps**.   
-    ![Gå til programmer](media/service-admin-premium-monitor-capacity/apps.png)
+    ![Gå til Apps](media/service-admin-premium-monitor-capacity/apps.png)
 
 2. I højre side skal du klikke på **Hent apps**.
 3. I kategorien **Apps** skal du søge efter **Power BI-appen Capacity Metrics**.
@@ -245,7 +245,7 @@ På siden Datasæt er der forskellige *områder*, som indeholder **Opdateringer*
 | **Rapportafsnit** | **Målepunkter** |
 | --- | --- |
 | CPU-forbrug |  Forbrug efter arbejdsbelastning som en procentdel af den samlede CPU-kapacitet. Vises pr. time for de seneste syv dage. |
-| Hukommelsesforbrug |  Hukommelsesforbrug i GB efter arbejdsbelastning (hele linjer) overlejret af grænser for arbejdsbelastning (stiplede linjer). Vises pr. time for de seneste syv dage. |
+| Hukommelsesforbrug |  Det maksimale hukommelsesforbrug i timen i GB efter arbejdsbelastning (hele linjer) overlejret af grænser for arbejdsbelastning (stiplede linjer). Vises pr. time for de seneste syv dage. |
 |  |  |
 
 ### <a name="ids-and-info"></a>Id'er og Oplysninger

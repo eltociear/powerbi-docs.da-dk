@@ -10,12 +10,12 @@ ms.topic: reference
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1b4e134ef6f8da43a1856c8a5458c8c09b2c42b5
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 7917edc17bd93d96c22641b14c4c70bfe3222e10
+ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522186"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69621266"
 ---
 # <a name="expression-based-titles-in-power-bi-desktop"></a>Udtryksbaserede titler i Power BI Desktop
 
@@ -57,7 +57,7 @@ Når du har oprettet DAX-udtrykket for det felt, du opretter i din model, skal d
 
 Gå vil ruden **Visualiseringer** for at vælge feltet og anvende det. I området **Format** skal du vælge **Titel** for at få vist titelindstillingerne for det visuelle element. 
 
-Når du højreklikker på **titeltekst**, vises en genvejsmenu, der giver dig mulighed for at vælge***f.eks.*betinget formatering**. Når du vælger dette menupunkt, vises dialogboksen **Titeltekst**. 
+Når du højreklikker på **titeltekst**, vises en genvejsmenu, der giver dig mulighed for at vælge **<em>f.eks.</em>betinget formatering**. Når du vælger dette menupunkt, vises dialogboksen **Titeltekst**. 
 
 ![Skærmbillede af dialogboksen Titeltekst](media/desktop-conditional-formatting-visual-titles/expression-based-title-02b.png)
 

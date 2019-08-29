@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 07/22/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 591a837bb085ba901316e672112b568923995718
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: 11de32b8119e8b6922dcc1a971750e4256812932
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590543"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654766"
 ---
 # <a name="using-directquery-in-power-bi"></a>Brug af DirectQuery i Power BI
 Du kan oprette forbindelse til alle mulige forskellige datakilder, når du bruger **Power BI Desktop** eller **Power BI-tjenesten** og oprette disse dataforbindelser på forskellige måder. Du kan *importere* data i Power BI, hvilket er den mest almindelige måde at hente data på, eller oprette forbindelse direkte til dataene i det oprindelige kildelager, der også er kendt som **DirectQuery**. I denne artikel beskrives **DirectQuery** og dens egenskaber:
@@ -140,11 +140,8 @@ Når du bruger **DirectQuery**, kan mange af disse modelforbedringer stadig fore
 * **Begrænsninger i beregnede kolonner:** Beregnede kolonner er begrænset til samme række, dvs. de kan kun referere til andre kolonner i samme tabel uden at bruge samlingsfunktioner. Derudover er de tilladte DAX-skaleringsfunktioner (f.eks. LEFT()) desuden begrænset til dem, som ganske enkelt kan sendes til den underliggende kilde via push. Dermed vil de variere afhængigt af kildens specifikke egenskaber. Funktioner, der ikke understøttes, vises ikke under autofuldførelse, når DAX godkendes for en beregnet kolonne, og det vil medføre en fejl, hvis de bruges.
 * **Ingen understøttelse af overordnede/underordnede DAX-funktioner:** I DirectQuery-modellen er det ikke muligt at bruge serien af DAX PATH()-funktioner, som normalt håndterer overordnet/underordnet-strukturer (f.eks. diagram over konti eller medarbejderhierarkier).
 * **Beregnede kolonner understøttes ikke:** Muligheden for at definere en beregnet tabel vha. et DAX-udtryk understøttes ikke i DirectQuery-tilstand.
-* **Relationsfiltrering er begrænset til en enkelt retning:** Når du bruger DirectQuery, er det ikke muligt at angive retningen På tværs af filtre for en relation til "Begge". I nedenstående tre tabeller vil det f.eks. ikke være muligt at oprette en visualisering, der viser hver enkelt Customer[Gender] og antallet af Product[Category], der er købt af hver enkelt. Brugen af denne type tovejsfiltrering er beskrevet [i dette detaljerede whitepaper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) (rapporten præsenterer eksempler i forbindelse med SQL Server Analysis Services, men de grundlæggende pointer gælder også for Power BI).
-  
-  ![](media/desktop-directquery-about/directquery-about_01.png)
-  
-  Endnu engang er grænsen angivet på grund af konsekvenserne for ydeevnen. En særlig vigtig anvendelse af denne er, at når sikkerhed på rækkeniveau skal defineres som en del af rapporten, skal et fælles mønster have mange-til-mange-relationer mellem brugerne og de enheder, de har adgang til. Brugen af tovejsfiltrering er nødvendig for at håndhæve dette. Brugen af tovejsfiltrering for DirectQuery-modeller skal dog bruges med omtanke, og det er vigtigt at være opmærksom på eventuelle skadelige konsekvenser for ydeevnen.  
+* **Filtrering af relationer:** Brugen af tovejsfiltrering er beskrevet [i dette detaljerede whitepaper](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx) (rapporten præsenterer eksempler i forbindelse med SQL Server Analysis Services, men de grundlæggende pointer gælder også for Power BI).
+
 * **Ingen klyngeoprettelse:** Når du bruger DirectQuery, er det ikke muligt at bruge klyngeoprettelsesegenskaben til automatisk at finde grupper
 
 ### <a name="reporting-limitations"></a>Rapporteringsbegrænsninger
@@ -259,9 +256,9 @@ Når du opretter en rapport vha. en DirectQuery-forbindelse, skal den være i ov
 
     Disse indstillinger anvendes på din rapport, mens du interagerer med den i **Power BI Desktop**, og når brugerne gør brug af rapporten i **Power BI-tjenesten**.
 
-* **Anvend filtre først:** Du skal altid anvende de relevante filtre, når du begynder at oprette en visualisering. I stedet for f.eks. at trække TotalSalgsmængde Produktnavn ind skal du filtrere efter et bestemt år og anvende filteret på År helt fra starten af. Dette skyldes, at hvert enkelt trin i oprettelsen af en visualisering sender en forespørgsel, og selvom det er muligt derefter at foretage en anden ændring, før den første forespørgsel er fuldført, så giver det stadig en unødvendig belastning på den underliggende kilde. Når du anvender filtre tidligt, reducerer det generelt omkostningerne ved disse mellemliggende forespørgsler. Hvis du ikke anvender filtre tidligt, kan det også resultere i, at du rammer grænsen på 1 mio. rækker som angivet ovenfor.
-* **Begræns antallet af visualiseringer på en side:** Når en side åbnes (eller et udsnitsværktøj på sideniveau eller et filter ændres), opdateres alle visualiseringerne på en side. Der er også en grænse for antallet af forespørgsler, der sendes parallelt. Derfor opdateres nogle visualiseringer i rækkefølge, når antallet af visualiseringer øges, hvilket medfører, at den tid, det tager at opdatere hele siden, øges tilsvarende. Derfor anbefales det at begrænse antallet af visuals på en enkelt side og i stedet anvende flere enkle sider.
-* **Overvej at slå interaktion mellem visualiseringer fra:** Som standard kan visualiseringer på en rapportside bruges til tværgående filtrering og tværgående fremhævning af de andre visualiseringer på siden. Hvis "1999" f.eks. er valgt i cirkeldiagrammet, er søjlediagrammet fremhævet på tværs for at vise salget efter kategori for "1999".                                                                  
+* **Anvend filtre først:** Du skal altid anvende de relevante filtre, når du begynder at oprette et visuelt element. I stedet for f.eks. at trække TotalSalgsmængde Produktnavn ind skal du filtrere efter et bestemt år og anvende filteret på År helt fra starten af. Dette skyldes, at hvert enkelt trin i oprettelsen af en visualisering sender en forespørgsel, og selvom det er muligt derefter at foretage en anden ændring, før den første forespørgsel er fuldført, så giver det stadig en unødvendig belastning på den underliggende kilde. Når du anvender filtre tidligt, reducerer det generelt omkostningerne ved disse mellemliggende forespørgsler. Hvis du ikke anvender filtre tidligt, kan det også resultere i, at du rammer grænsen på 1 mio. rækker som angivet ovenfor.
+* **Begræns antallet af visuelle elementer på en side:** Når en side åbnes (eller et udsnitsværktøj på sideniveau eller et filter ændres), opdateres alle de visuelle elementer på en side. Der er også en grænse for antallet af forespørgsler, der sendes parallelt. Derfor opdateres nogle visualiseringer i rækkefølge, når antallet af visualiseringer øges, hvilket medfører, at den tid, det tager at opdatere hele siden, øges tilsvarende. Derfor anbefales det at begrænse antallet af visuals på en enkelt side og i stedet anvende flere enkle sider.
+* **Overvej at slå interaktion mellem visuelle elementer fra:** Som standard kan visualiseringer på en rapportside bruges til tværgående filtrering og tværgående fremhævning af de andre visualiseringer på siden. Hvis "1999" f.eks. er valgt i cirkeldiagrammet, er søjlediagrammet fremhævet på tværs for at vise salget efter kategori for "1999".                                                                  
   
   ![](media/desktop-directquery-about/directquery-about_04.png)
   
@@ -269,7 +266,7 @@ Når du opretter en rapport vha. en DirectQuery-forbindelse, skal den være i ov
 
 Ud over ovenstående liste over forslag skal du bemærke, at hver af følgende rapporteringsegenskaber kan medføre problemer med ydeevnen:
 
-* **Målingsfiltre:** Visualiseringer, der indeholder målinger (eller samlinger af kolonner), kan indeholde filtre i disse målinger. Nedenstående visualisering viser f.eks. Salgsmængde efter kategori, men inkluderer kun kategorier med et salg på mere end 20 mio.
+* **Målingsfiltre:** Visuelle elementer, der indeholder målinger (eller samlinger af kolonner), kan indeholde filtre i disse målinger. Nedenstående visualisering viser f.eks. Salgsmængde efter kategori, men inkluderer kun kategorier med et salg på mere end 20 mio.
   
   ![](media/desktop-directquery-about/directquery-about_05.png)
   
@@ -284,7 +281,7 @@ Ud over ovenstående liste over forslag skal du bemærke, at hver af følgende r
 * **Avancerede tekstfiltre ("indeholder" og lignende):** Når du filtrerer på en tekstkolonne, tillades filtre som "indeholder" og "begynder med" osv. i forbindelse med avanceret filtrering. Disse filtre kan medføre forringet ydeevne for nogle datakilder. Standardfilteret "indeholder" skal især ikke bruges, hvis det, der ønskes, er et præcist match ("er" eller "er ikke"). Selvom resultaterne kan være de samme, afhængigt af de faktiske data, kan ydeevnen være markant anderledes på grund af brugen af indekser.
 * **Udsnitsværktøjer til flere markeringer:** Udsnitsværktøjer tillader som standard kun, at der foretages én enkelt markering. Tilladelse af flere markeringer i filtre kan medføre problemer med ydeevnen, da brugeren vælger et sæt elementer i udsnitsværktøjet (f.eks. de ti produkter, vedkommende er interesseret i). Derefter vil hver enkelt ny markering medføre, at der sendes forespørgsler til backendkilden. Selvom brugeren kan markere det næste element, før forespørgslen er udført, resulterer det i en ekstra belastning af den underliggende kilde.
 
-* **Overvej at slå totaler fra i visualiseringer:** Som standard vises totaler og subtotaler i tabeller og matrixer. I mange tilfælde skal der sendes separate forespørgsler til den underliggende kilde for at hente værdierne for sådanne totaler. Dette gælder, når *DistinctCount*-samling bruges eller i alle tilfælde, når DirectQuery via SAP BW eller SAP HANA bruges. Sådanne totaler bør slås fra (ved hjælp af ruden **Format**), hvis de ikke er påkrævet. 
+* **Overvej at slå totaler fra i visuelle elementer:** Som standard vises totaler og subtotaler i tabeller og matrixer. I mange tilfælde skal der sendes separate forespørgsler til den underliggende kilde for at hente værdierne for sådanne totaler. Dette gælder, når *DistinctCount*-samling bruges eller i alle tilfælde, når DirectQuery via SAP BW eller SAP HANA bruges. Sådanne totaler bør slås fra (ved hjælp af ruden **Format**), hvis de ikke er påkrævet. 
 
 ### <a name="maximum-number-of-connections-option-for-directquery"></a>Maksimalt antal forbindelsesmuligheder for DirectQuery
 
@@ -296,7 +293,7 @@ Det maksimale standardantal samtidige forbindelser, DirectQuery derefter åbner.
 
 Denne indstilling er kun aktiveret, når der er mindst én DirectQuery-datakilde i den aktuelle rapport. Værdien gælder for alle DirectQuery-kilder og for alle nye DirectQuery-kilder, der føjes til den samme rapport.
 
-En forøgelse af værdien for det **maksimale antal forbindelser** sikrer, at der kan sendes flere forespørgsler (op til det maksimalt angivne antal) til den underliggende datakilde, hvilket er nyttigt, når der er mange visualiseringer på en enkelt side, eller når mange brugere opretter adgang til en rapport på samme tid. Når det maksimale antal forbindelser er nået, sættes yderligere forespørgsler i kø, indtil en forbindelse bliver tilgængelig. En forøgelse af denne grænse resulterer i en større belastning af den underliggende kilde, så indstillingen garanterer ikke, at den overordnede ydeevne forbedres.
+En forøgelse af værdien for det **maksimale antal forbindelser** sikrer, at der kan sendes flere forespørgsler (op til det maksimalt angivne antal) til den underliggende datakilde, hvilket er nyttigt, når der er mange visuelle elementer på en enkelt side, eller når mange brugere opretter adgang til en rapport på samme tid. Når det maksimale antal forbindelser er nået, sættes yderligere forespørgsler i kø, indtil en forbindelse bliver tilgængelig. En forøgelse af denne grænse resulterer i en større belastning af den underliggende kilde, så indstillingen garanterer ikke, at den overordnede ydeevne forbedres.
 
 Når en rapport er publiceret, afhænger det maksimale antal samtidige forespørgsler, der sendes til den underliggende datakilde, også af faste grænser, som afhænger af det målmiljø, som rapporten publiceres til. Forskellige miljøer (f.eks Power BI, Power BI Premium eller Microsoft Power BI-rapportserver) kan hver især fastsætte forskellige grænser.
 

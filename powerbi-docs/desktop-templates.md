@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/16/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7965751740384c5a5f1cc663389a559e0c1bd1c0
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: e28306532714369830df46304aa4a1ebff67bd8f
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69563660"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985663"
 ---
 # <a name="using-templates-in-power-bi-desktop"></a>Brug af skabeloner i Power BI Desktop
 
@@ -70,7 +70,10 @@ Når der er angivet parametre og data, oprettes en rapport med alle de sider, vi
 Det var det. Det er nemt at oprette og bruge rapportskabeloner i Power BI Desktop, så du nemt kan genskabe overbevisende layout og andre rapportaspekter og dele dem med andre.
 
 ## <a name="next-steps"></a>Næste trin
-Du kan gøre mange forskellige ting med Power BI Desktop. Du kan finde flere oplysninger om funktionerne i følgende ressourcer:
+Du er måske også interesseret i at få mere at vide om **forespørgselsparametre**:
+* [Bruger du forespørgselsparametre i Power BI Desktop?](https://docs.microsoft.com/power-query/power-query-query-parameters)
+
+Herudover er der mange andre forskellige ting, du kan gøre med Power BI Desktop. Du kan finde flere oplysninger om funktionerne i følgende ressourcer:
 
 * [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 * [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: Gå til Power BI-tjenestens nye udseende
+title: Power BI-tjenestens nye udseende
 description: Power BI-tjenesten (app.powerbi.com) har fået et nyt udseende. I denne artikel beskrives, hvordan du navigerer til rapporter ved hjælp af det nye udseende.
 author: maggiesMSFT
 manager: kfile
@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/24/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: aa7de324e77b8f2b1c58e558c0814df97d997631
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 6c752b6083d2f3baecf7e1a9ce20f77e8c5a46d0
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68471301"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654928"
 ---
-# <a name="navigate-the-new-look-of-the-power-bi-service"></a>Gå til Power BI-tjenestens nye udseende
+# <a name="the-new-look-of-the-power-bi-service"></a>Power BI-tjenestens nye udseende
 
-Power BI-tjenesten har fået et nyt udseende. Vi har gjort det nemmere for dig at få vist rapporter. Det nye udseende er en moderne oplevelse, der er mere enkel, og som bygger på dit kendskab til andre Microsoft-produkter. På tværs af Power BI-tjenesten har vi sat rapportindhold i fokus ved at skifte til et lysere farvetema og opdatere ikoner. Her er en oversigt over, hvad der er ændret i det nye udseende. Du kan finde flere oplysninger i de nummererede afsnit:
+Power BI-tjenesten (app.powerbi.com) har fået et nyt udseende, der gør det lettere at få vist og interagere med dine rapporter. Det nye udseende er en moderne oplevelse, der er mere enkel, og som bygger på dit kendskab til andre Microsoft-produkter. På tværs af Power BI-tjenesten har vi sat rapportindhold i fokus ved at skifte til et lysere farvetema og opdatere ikoner. Her er en oversigt over, hvad der er ændret i det nye udseende. Du kan finde flere oplysninger i de nummererede afsnit:
 
 ![Oversigt over ændringer i det nye udseende](media/service-new-look/power-bi-new-look-changes.png)
 
@@ -35,7 +35,7 @@ Alle brugere af Power BI-tjenesten kan vælge det nye udseende. Du skal blot sku
 
 ![Tilmeld dig det nye udseende](media/service-new-look/power-bi-new-look-off.png)
 
-Hvis du har brug for at gå tilbage til det gamle udseende, skal du vælge ellipsemenuen i øverste højre hjørne.
+Hvis du har brug for at vende tilbage til det gamle udseende, skal du blot skubbe tilbage til **fra** ![Nyt udseende til](media/service-new-look/power-bi-new-look-toggle-on.png). Hvis du ikke kan se indstillingen, skal du vælge ellipsemenuen i øverste højre hjørne.
 
 ![Frameld dig det nye udseende](media/service-new-look/power-bi-new-look-on.png)
 

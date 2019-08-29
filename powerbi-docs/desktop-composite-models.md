@@ -7,19 +7,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/09/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f3d67d0b57f2f04a31d99fb36476871c164aad4d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ae896fb737eda6f95efa1589f2b3384e7426cf30
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65533587"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654567"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Brug af sammensatte modeller i Power BI Desktop
 
-Tidligere i Power BI Desktop, når du har brugt en DirectQuery i en rapport, ingen andre dataforbindelser – uanset om DirectQuery eller Import - blev tilladt for denne rapport. Denne begrænsning er nu fjernet med sammensatte modeller. En rapport kan uden problemer indeholde dataforbindelser fra mere end én DirectQuery eller importdataforbindelse i en hvilken som helst kombination, du vælger.
+Tidligere i Power BI Desktop når du brugte en DirectQuery i en rapport, var ingen andre dataforbindelser, hverken DirectQuery eller Importér, tilladt for den pågældende rapport. Denne begrænsning er nu fjernet med sammensatte modeller. En rapport kan uden problemer indeholde dataforbindelser fra mere end én DirectQuery eller importdataforbindelse i en hvilken som helst kombination, du vælger.
 
 ![Sammensatte modeller i Power BI Desktop](media/desktop-composite-models/composite-models_01.png)
 
@@ -39,7 +39,7 @@ Med sammensatte modeller kan du oprette forbindelse til en række forskellige da
 * Ved at importere data til Power BI, hvilket er den mest almindelige måde at hente data på.
 * Ved at oprette direkte forbindelse til data i det oprindelige kildelager ved hjælp af DirectQuery. Du kan finde flere oplysninger om DirectQuery under [DirectQuery i Power BI](desktop-directquery-about.md).
 
-Når du bruger DirectQuery, *sammensatte modeller* gør det muligt at oprette en Power BI-model (f.eks en enkelt *.pbix* Power BI Desktop-fil), der har et eller flere af følgende:
+Når du bruger DirectQuery, gør *sammensatte modeller* det muligt at oprette en Power BI-model (f.eks. en enkelt *.pbix* Power BI Desktop-fil), der gør et eller begge af følgende:
 
 * kombinerer data fra en eller flere DirectQuery-kilder.
 * kombinerer data fra DirectQuery-kilder og importdata.
@@ -100,7 +100,7 @@ Vi kan nu oprette visuals ved hjælp af et af felterne på listen **Fields**. De
 
 ![Ruden Felter](media/desktop-composite-models/composite-models_11.png)
 
-Følgende eksempel viser et fælles tilfælde af en *dimension* tabel – f.eks *produkt* eller *kunde* -, der er udvidet med nogle ekstra data importeret fra et andet sted. Det er også muligt at få tabeller til at bruge DirectQuery til at oprette forbindelse til forskellige kilder. I forlængelse af vores eksempel antager vi nu, at *Sales Targets* pr. *Country* og *Period* er lagret i en separat afdelingsdatabase. Som sædvanlig kan du bruge *GetData* til at oprette forbindelse til disse data, som vist på følgende billede: 
+I følgende eksempel vises en fælles brug af en *dimensionstabel*, f.eks. *Product* eller *Customer*, der er udvidet med nogle ekstra data, som er importeret et andet sted fra. Det er også muligt at få tabeller til at bruge DirectQuery til at oprette forbindelse til forskellige kilder. I forlængelse af vores eksempel antager vi nu, at *Sales Targets* pr. *Country* og *Period* er lagret i en separat afdelingsdatabase. Som sædvanlig kan du bruge *GetData* til at oprette forbindelse til disse data, som vist på følgende billede: 
 
 ![Vinduet Navigator](media/desktop-composite-models/composite-models_12.png)
 
@@ -125,6 +125,9 @@ Lagringstilstanden kan også ses på værktøjstippet for hver tabel.
 For alle Power BI Desktop-filer (en *.pbix*-fil), der indeholder nogle tabeller fra DirectQuery og nogle importtabeller, viser statuslinjen en lagringstilstand, der kaldes **Blandet**. Du kan klikke på elementet på statuslinjen og let skifte alle tabeller til import.
 
 Du kan finde flere oplysninger om lagringstilstand i [Lagringstilstand i Power BI Desktop (prøveversion)](desktop-storage-mode.md).  
+
+> [!NOTE]
+> Du kan bruge *kombineret* lagringstilstand i Power BI Desktop og i Power BI-tjenesten.
 
 ## <a name="calculated-tables"></a>Beregnede tabeller
 
@@ -152,7 +155,7 @@ Af samme årsager skal du være forsigtig, når du åbner en Power BI Desktop-fi
 
 Når du bruger DirectQuery, skal du altid være opmærksom på ydeevnen primært for at sikre, at backend-kilden har tilstrækkelige ressourcer til at give brugerne en god oplevelse. En god oplevelse betyder, at visuals opdateres efter fem sekunder eller mindre. Du skal også følge de råd om ydeevne, der er nævnt i artiklen [Brug DirectQuery i Power BI](desktop-directquery-about.md). 
 
-Når du bruger sammensatte modeller, skal du have yderligere overvejelser. En enkelt visualisering kan resultere i sender forespørgsler til flere datakilder, som ofte sender resultaterne fra én forespørgsel på tværs af til en anden kilde. Denne situation kan føre til følgende scenarier:
+Når du bruger sammensatte modeller, skal du have yderligere overvejelser. Et enkelt visual kan resultere i, at der sendes forespørgsler til flere datakilder, som ofte overfører resultaterne fra én forespørgsel til en anden kilde. Denne situation kan føre til følgende scenarier:
 
 * **En SQL-forespørgsel, der indeholder et stort antal konstantværdier**: Et visual, der anmoder om det samlede *salgsbeløb* for nogle valgte *produktchefer*, skal først finde ud af, hvilke *produkter* der er administreret af disse produktchefer. Denne sekvens skal finde sted, før det pågældende visual sender en SQL-forespørgsel, der inkluderer alle produkt-id'erne i en *WHERE*-delsætning.
 
@@ -160,7 +163,7 @@ Når du bruger sammensatte modeller, skal du have yderligere overvejelser. En en
 
 * **Flere SQL-forespørgsler, én pr. gruppe efter værdi**: Når aggregeringen bruger **DistinctCount** og er grupperet efter en relevant kolonne fra en anden kilde, og hvis den eksterne kilde ikke understøtter effektiv overførsel af mange konstantværdier, der definerer grupperingen, er det nødvendigt at sende én SQL-forespørgsel pr. gruppe efter værdi. 
 
-   Et visual, der anmoder om et bestemt antal for *CustomerAccountNumber* (fra SQL Server-tabellen) efter *Produktchef* (importeret fra regnearket), skal f.eks. overføre oplysningerne fra tabellen *Product Managers* i den forespørgsel, der er sendt til SQL Server. I forhold til andre kilder (f.eks. Redshift) er denne handling ikke mulig. I stedet, der vil være en SQL-forespørgsel, der er sendt pr. *salgschef* – op til nogle praktiske limit, på hvilket tidspunkt forespørgslen vil mislykkes. 
+   Et visual, der anmoder om et bestemt antal for *CustomerAccountNumber* (fra SQL Server-tabellen) efter *Produktchef* (importeret fra regnearket), skal f.eks. overføre oplysningerne fra tabellen *Product Managers* i den forespørgsel, der er sendt til SQL Server. I forhold til andre kilder (f.eks. Redshift) er denne handling ikke mulig. Der sendes i stedet én SQL-forespørgsel pr. *salgschef* op til en given praktisk grænse, hvorefter forespørgslen mislykkes. 
 
 Hver af disse scenarier har konsekvenser for ydeevnen, og de præcise detaljer varierer for hver datakilde. Selvom kardinaliteten for de kolonner, der bruges i den relation, der forbinder de to kilder, forbliver lav (nogle få tusind), påvirkes ydeevnen ikke. Efterhånden som denne kardinalitet stiger, skal du være mere opmærksomhed på effekten af ydeevnen. Brug denne retningslinje som tommelfingerregel. 
 
@@ -168,9 +171,9 @@ Desuden betyder brugen af *mange-til-mange*-relationer, at særskilte forespørg
 
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 
-Denne version af sammensatte modeller præsenterer nogle få begrænsninger:
+Der er nogle få begrænsninger ved denne udgave af sammensatte modeller:
 
-I øjeblikket [trinvis opdatering](service-premium-incremental-refresh.md) understøttes for at oprette forbindelse til SQL, Oracle og Teradata-datakilder, der kun sammensatte-modeller.
+[Gradvis opdatering](service-premium-incremental-refresh.md) understøttes i øjeblikket kun for sammensatte modeller for datakilder fra SQL, Oracle og Teradata.
 
 Følgende Live Connect-kilder (flerdimensionelle) kan ikke bruges sammen med sammensatte modeller:
 
@@ -188,7 +191,7 @@ De eksisterende begrænsninger ved DirectQuery gælder stadig, når du bruger sa
 
 Du kan finde flere oplysninger om sammensatte modeller og DirectQuery i følgende artikler:
 * [Mange til mange-relationer i Power BI Desktop](desktop-many-to-many-relationships.md)
-* [Storage-tilstand i Power BI Desktop](desktop-storage-mode.md)
+* [Lagringstilstand i Power BI Desktop](desktop-storage-mode.md)
 * [Brug DirectQuery i Power BI](desktop-directquery-about.md)
 * [Understøttede datakilder i forbindelse med DirectQuery i Power BI](desktop-directquery-data-sources.md)
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: 4629b78379ba87d58c31f8102b855e1f62565abd
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: e5e8df2be443b215a02f196c4f676af1cbff6275
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665513"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654615"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Vis dashboards og rapporter i Power BI-mobilappsene
 Gælder for:
@@ -31,7 +31,7 @@ Dashboards er en portal til din virksomhed og jeres processer. Et dashboard er e
 Hvis du vil have vist dashboards og rapporter på din mobilenhed, skal du oprette dashboards eller oprette forbindelse til dashboards i en webbrowser. 
 
 1. Gå til Power BI-tjenesten ([https://www.powerbi.com](https://www.powerbi.com)), og [opret en konto](../../service-self-service-signup-for-power-bi.md).
-2. [Opret dine egne Power BI-dashboards og -rapporter](../../service-get-started.md), eller opret forbindelse til eksisterende [Power BI-apps](../../service-connect-to-services.md) for at få et stort udvalg af tjenester, f.eks [Microsoft Dynamics CRM](../../service-connect-to-microsoft-dynamics-crm.md) og [Adobe Analytics](../../service-connect-to-adobe-analytics.md).
+2. [Opret dine egne Power BI-dashboards og -rapporter](../../service-get-started.md), eller opret forbindelse til eksisterende [Power BI-apps](../../service-connect-to-services.md) for at få adgang til et stort udvalg af tjenester, f.eks [Microsoft Dynamics CRM](../../service-connect-to-microsoft-dynamics-crm.md).
 
 Her er et Power BI-dashboard i Power BI-tjenesten:
 

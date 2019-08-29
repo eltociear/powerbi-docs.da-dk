@@ -7,21 +7,21 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/18/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 148f4881f78b5bba9b6936f5688ba6aaea3a0145
-ms.sourcegitcommit: dc0258bb4f647ff646c6fff2aaffa29b413aa2df
+ms.openlocfilehash: 73db8f9741685549042dbaf1172e57a55a26ab36
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68346221"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654484"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>Den nye filtreringsoplevelse i Power BI-rapporter
 
-Filtrene i Power BI har fået ny funktionalitet og et nyt design. Når du vælger den nye filtreringsoplevelse, kan du formatere filtreringsruden, så den ser ud som i resten af rapporten. Du kan låse og endda skjule filtre. Når du designer din rapport, kan du slet ikke længere se den gamle filtreringsrude i ruden Visualiseringer. Du kan udføre al redigering og formatering af dine filtre i en enkelt filtreringsrude. 
+Filtrene i Power BI har fået ny funktionalitet og et nyt design. Når du vælger den nye filteroplevelse, kan du formatere filtreringsruden, så den ser ud som i resten af rapporten. Du kan låse og endda skjule filtre. Når du designer din rapport, kan du slet ikke længere se den gamle filtreringsrude i ruden Visualiseringer. Du kan udføre al redigering og formatering af dine filtre i en enkelt filtreringsrude. 
 
-![Ny filtreringsoplevelse](media/power-bi-report-filter/power-bi-filter-reading.png)
+![Ny filteroplevelse](media/power-bi-report-filter/power-bi-filter-reading.png)
 
 Her kan du se, det som du som rapportdesigner kan gøre i den nye rude med et enkelt filter:
 
@@ -37,7 +37,7 @@ Med den nye filtreringsoplevelse kan rapportforbrugere også pege på en hvilken
 
 ![Liste over filtre for en visualisering](media/power-bi-report-filter/power-bi-filter-visual.png)
 
-## <a name="turn-on-the-new-filter-experience"></a>Slå den nye filtreringsoplevelse til 
+## <a name="turn-on-the-new-filter-experience"></a>Slå den nye filteroplevelse til 
 
 Den nye filtreringsoplevelse er som standard slået til for nye rapporter. Du kan aktivere den nye oplevelse for eksisterende rapporter i Power BI Desktop eller i Power BI-tjenesten.
 
@@ -48,6 +48,10 @@ Den nye filtreringsoplevelse er som standard slået til for nye rapporter. Du ka
 3. Under **Filtreringsoplevelse** skal du vælge **Aktivér den opdaterede filtreringsrude, og vis filtre i rapportens visuelle overskrift**.
 
 ### <a name="turn-on-new-filters-for-an-existing-report-in-the-service"></a>Slå nye filtre til for en eksisterende rapport i tjenesten
+
+Hvis du har aktiveret **det nye udseende** i Power BI-tjenesten ![Nyt udseende aktiveret](media/power-bi-report-filter/power-bi-new-look-on.png), aktiveres den nye filtreringsoplevelse automatisk. Læs mere om [det nye udseende i Power BI-tjenesten](service-new-look.md).
+
+Hvis du ikke har aktiveret det nye udseende, kan du alligevel få vist den nye filtreringsoplevelse ved at benytte denne fremgangsmåde.
 
 1. Vælg fanen **Rapporter** på indholdslisten for et arbejdsområde i Power BI-tjenesten.
 2. Find den rapport, du vil aktivere, og vælg ikonet **Indstillinger** ![ikonet Rapportindstillinger](media/power-bi-report-filter/power-bi-settings-icon.png) for den pågældende rapport.
@@ -121,15 +125,13 @@ Du kan også formatere disse elementer for filterkort, afhængigt af om de er an
 1. I rapporten skal du klikke på selve rapporten eller baggrunden (*tapetet*), og derefter skal du i ruden **Visualiseringer** vælge **Formatér**. 
     Du kan se formateringsindstillinger for rapportsiden, tapetet samt filtreringsruden og filterkort.
 
-    ![Vælg ikonet Formatér](media/power-bi-report-filter/power-bi-filter-format.png)    
-
 1. Udvid **Filtreringsruden** for at angive farven på baggrunden, ikonet og den venstre kant, som skal komplementere rapportsiden.
 
-    ![Udvid Filtreringsruden](media/power-bi-report-filter/power-bi-filter-format-pane-font.png)
+    ![Udvid Filtreringsruden](media/power-bi-report-filter/power-bi-format-filter-pane.png)
 
 1. Udvid **Filterkort** for at angive farve og kant for **Tilgængelig** og **Anvendt**. Hvis du angiver forskellige farver for kortene Tilgængelig og Anvendt, er det oplagt, hvilke filtre der anvendes. 
   
-    ![Udvid filterkort](media/power-bi-report-filter/power-bi-filter-format-card-font.png)
+    ![Udvid filterkort](media/power-bi-report-filter/power-bi-format-filter-cards.png)
 
 ## <a name="theming-for-filter-pane"></a>Temaer for filtreringsruden
 Du kan nu ændre standardindstillingerne for filtreringsruden med temafilen. Her er et eksempel på kodestykke for et tema, der kan hjælpe dig i gang:
@@ -230,7 +232,7 @@ Under sektionen Filtreringsoplevelse i rapportindstillingerne kan du styre, om b
 
 ## <a name="next-steps"></a>Næste trin
 
-Prøv den nye filtreringsoplevelse. Giv os din feedback på denne funktion, og hvordan vi fortsat kan forbedre den, på [webstedet med Power BI-ideer](https://ideas.powerbi.com/forums/265200-power-bi). 
+Prøv den nye filteroplevelse. Giv os din feedback på denne funktion, og hvordan vi fortsat kan forbedre den, på [webstedet med Power BI-ideer](https://ideas.powerbi.com/forums/265200-power-bi). 
 
 - [Sådan bruger du rapportfiltre](consumer/end-user-report-filter.md)
 - [Filtre og fremhævning i rapporter](power-bi-reports-filters-and-highlighting.md)

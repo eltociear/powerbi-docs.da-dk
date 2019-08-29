@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: f84e2f95c8ae209828eb1c21f34253015e07aefa
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 67cd57a981f7c1fcab118652dc5424fa935ecd13
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61363701"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654743"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Lagringstilstand i Power BI Desktop
 
@@ -62,6 +62,10 @@ Der er tre værdier for lagringstilstand:
 * **Dual**: Dual-tabeller kan enten fungere som cachelagrede eller ikke-cachelagrede, afhængigt af konteksten for den forespørgsel, der er sendt til Power BI-datasættet. I nogle tilfælde kan du opfylde forespørgsler fra cachelagrede data. I andre tilfælde kan du opfylde forespørgsler ved at køre en forespørgsel efter behov til datakilden.
 
 Hvis du ændrer en tabel til **Import**, kan du *ikke fortryde* handlingen. Denne egenskab kan ikke ændres tilbage til enten DirectQuery eller Dual.
+
+> [!NOTE]
+> Du kan bruge *dobbelt* lagringstilstand i Power BI Desktop og i Power BI-tjenesten.
+
 
 ## <a name="constraints-on-directquery-and-dual-tables"></a>Begrænsninger af DirectQuery- og Dual-tabeller
 

@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 08/19/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 92b515cfa9c4d3ca796d48ac90415cc0d1d5d5a9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 747ff7788ce30f5d4f61c48cc70a737bc74cd612
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65565372"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654274"
 ---
 # <a name="power-bi-premium-faq"></a>Ofte stillede spørgsmål om Power BI Premium
 
@@ -76,7 +76,7 @@ Power BI Premium fås som et tilføjelsesprogram til Power BI Pro. Office 365 E5
 
 **Hvad er Power BI Report Server? Betyder det, at Power BI bliver tilgængeligt i det lokale miljø?**
 
-Power BI Report Server er en server i det lokale miljø-server, der muliggør installation og distribution af interaktive rapporter i Power BI og sideinddelte rapporter inden for organisationens firewalls grænser. Power BI-rapportserver er tilgængelig via Power BI Premium eller som en fordel for kunder med SQL Server Enterprise Edition med Software Assurance. Kontakt din Microsoft-repræsentant for at få flere oplysninger.
+Power BI Report Server er en server i det lokale miljø-server, der muliggør installation og distribution af interaktive rapporter i Power BI og sideinddelte rapporter inden for organisationens firewalls grænser. Power BI-rapportserver er tilgængelig via Power BI Premium eller som en fordel for kunder med SQL Server Enterprise Edition med Software Assurance. Du kan finde oplysninger om licenser under [Licensering af Power BI-rapportserver](report-server/get-started.md#licensing-power-bi-report-server). Kontakt din Microsoft-repræsentant for at få flere oplysninger.
 
 Med Power BI Premium kan det samme antal virtuelle kerner, som en organisation klargør i clouden, installeres i det lokale miljø via Power BI-rapportserver. Der er ingen grund til at opdele kapaciteten. Organisationer kan vælge Power BI i clouden eller vælge at beholde rapporter i det lokale miljø med Power BI Report Server og flytte til clouden i eget tempo.
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/15/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: dee2ff4376242883d30f606e687184c0dde43ffe
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 8000397e5d8f26847349c35b541aa82c5907292e
+ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523479"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69621242"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Tilslut Azure Data Lake Storage Gen2 for at få et dataflowlager (prøveversion)
 
@@ -111,7 +111,7 @@ Du finder dine lejerprogrammer ved at følge disse trin:
 
     ![AAD-virksomhedsprogrammer](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_06.jpg)
 
-4. Skriv *Power* i søgelinjen, så vises der en samling af objekt-id'er for programmerne Power BI og Power Query. Du skal bruge alle tre værdier i de efterfølgende trin.  
+4. Skriv *Power* i søgelinjen, så vises der en samling af objekt-id'er for programmerne Power BI og Power-forespørgsel. Du skal bruge alle tre værdier i de efterfølgende trin.  
 
     ![Søg efter Power-programmer](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
@@ -177,6 +177,7 @@ Denne funktion er en prøveversionsfunktion, og funktionsmåden kan ændres, nå
 * Det er som standard kun ejere af et dataflow, der er gemt i Azure Data Lake Storage Gen2, der kan få adgang til dataene. Hvis du vil give andre personer adgang til de dataflow, der er gemt i Azure, skal du føje dem til dataflowets CDM-mappe 
 * Oprettelse af dataflow med linkede objekter er kun muligt, når de gemmes på den samme lagerkonto
 * Datakilder i det lokale miljø i delte Power BI-kapaciteter understøttes ikke i dataflow, der er gemt i din organisations data lake
+* Snapshots slettes ikke automatisk i ADLS gen. 2. Hvis du vil frigøre plads, kan du oprette en Azure-funktion, så du jævnligt rydder op i gamle snapshots.
 
 Der er også nogle få kendte problemer, som beskrevet i dette afsnit.
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 6a1ce47d7af41df51b7c439240f3e9db0dd28397
-ms.sourcegitcommit: d74aca333595beaede0d71ba13a88945ef540e44
+ms.openlocfilehash: 260860ba1ac875b097b12a1ac32ef09e983fe08d
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68757728"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69655145"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -48,7 +48,7 @@ Der er ni faner på portalen. Resten af denne artikel indeholder oplysninger om 
 * [Dataflowlager (eksempelvisning)](#dataflowStorage)
 * [Arbejdsområder](#workspaces)
 
-## <a name="usage-metrics"></a>Forbrugsmålepunkter
+## <a name="usage-metrics"></a>Forbrugsdata
 
 Med **Forbrugsdata** kan du overvåge Power BI-forbruget i organisationen. Den giver dig også mulighed for at se, hvilke brugere og grupper, der er mest aktive i Power BI i virksomheden. 
 
@@ -188,7 +188,7 @@ I administrationsportalen kan du også styre, hvilke brugere der har tilladelse 
 
 ### <a name="share-content-with-external-users"></a>Del indhold med eksterne brugere
 
-Brugere i organisationen kan dele dashboards med brugere uden for organisationen. [Få mere at vide](service-share-dashboards.md#share-a-dashboard-or-report-with-people-outside-your-organization)
+Brugere i organisationen kan dele dashboards med brugere uden for organisationen. Få mere at vide om [ekstern deling](service-share-dashboards.md#share-a-dashboard-or-report-outside-your-organization).
 
 ![Indstilling for eksterne brugere](media/service-admin-portal/powerbi-admin-sharing-external-02.png)
 
@@ -290,7 +290,7 @@ Brugere i virksomheden kan bruge Excel til at se og interagere med Power BI-data
 > [!NOTE]
 > Hvis **Eksportér data** deaktiveres, kan brugere heller ikke anvende funktionen **Analysér i Excel**.
 
-### <a name="use-arcgis-maps-for-power-bi"></a>Brug ArcGIS Maps til Power BI
+### <a name="use-arcgis-maps-for-power-bi"></a>Brug ArcGIS-kort til Power BI
 
 Brugere i organisationen kan bruge ArcGIS Maps for Power BI-visualiseringen fra Esri. [Få mere at vide](visuals/power-bi-visualization-arcgis.md)
 
@@ -379,7 +379,7 @@ Brugerspecifikke data er som standard aktiveret for forbrugsdata, og kontooplysn
 
 ## <a name="dashboard-settings"></a>Indstillinger for dashboard
 
-### <a name="data-classification-for-dashboards"></a>Dataklassificering til dashboards
+### <a name="data-classification-for-dashboards"></a>Dataklassifikation for dashboards
 
 Brugere i organisationen kan markere dashboards med klassificeringsangivelser, der angiver sikkerhedsniveauer for dashboards. [Få mere at vide](service-data-classification.md)
 

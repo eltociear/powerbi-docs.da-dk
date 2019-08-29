@@ -9,14 +9,14 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: df8a7b2f8564c8862a5c2db3177df42640ce295d
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: bb8c0582e08d8e1e05c78c30df0b59bd89aafbd0
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68996053"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985798"
 ---
-# <a name="understand-a-star-schema-and-the-importance-for-power-bi"></a>Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI
+# <a name="understand-star-schema-and-the-importance-for-power-bi"></a>Forstå, hvad et stjerneskema er, og hvorfor det er vigtigt for Power BI
 
 Denne artikel henvender sig til personer, der skaber Power BI Desktop-datamodeller. Heri beskrives, hvad et stjerneskemadesign er, og hvilken relevans det har for udvikling af Power BI-datamodeller, der er optimeret til ydeevne og anvendelighed.
 
@@ -66,7 +66,7 @@ Der er mange andre begreber, som er relateret til stjerneskemadesign, der kan an
 
 I et stjerneskemadesign er en **måling** en kolonne i en faktatabel, der gemmer værdier, som skal opsummeres.
 
-I en Power BI-model har en **måling** en anden – men lignende – definition. Det er en formel, som er skrevet i [DAX (Data Analysis Expressions)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference), der resulterer i opsummering. DAX-sammenlægningsfunktioner, som SUM, MIN., MAKS., GENNEMSNIT osv., bruges ofte i målingsudtryk til at skabe et skalarværdisæt på forespørgselstidspunktet (værdierne gemmes aldrig i modellen). Målingsudtryk kan variere fra simple kolonnesammenlægninger til mere avancerede formler, der tilsidesætter filterkontekst og/eller relationsoverførsler. Du kan finde flere oplysninger i artiklen [Grundlæggende om DAX i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics). Link til at få mere at vide?
+I en Power BI-model har en **måling** en anden – men lignende – definition. Det er en formel, som er skrevet i [DAX (Data Analysis Expressions)](https://docs.microsoft.com/dax/data-analysis-expressions-dax-reference), der resulterer i opsummering. DAX-sammenlægningsfunktioner, som SUM, MIN., MAKS., GENNEMSNIT osv., bruges ofte i målingsudtryk til at skabe et skalarværdisæt på forespørgselstidspunktet (værdierne gemmes aldrig i modellen). Målingsudtryk kan variere fra simple kolonnesammenlægninger til mere avancerede formler, der tilsidesætter filterkontekst og/eller relationsoverførsler. Du kan finde flere oplysninger i artiklen [Grundlæggende om DAX i Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-quickstart-learn-dax-basics).
 
 Det er vigtigt at forstå, at Power BI-modeller understøtter en anden metode for at resultere i opsummering. En hvilken som helst kolonne – og som regel numeriske kolonner – kan opsummeres i en visualisering i en rapport eller ved hjælp af Spørgsmål og svar. Dette er praktisk for dig som modeludvikler, da du i mange tilfælde ikke har brug for at oprette målinger. Kolonnen **Salgsbeløb** for Adventure Works-forhandlersalg kan opsummeres på flere måder (sum, antal, gennemsnit, median, min., maks. osv.), uden at det er nødvendigt at oprette en måling for hver mulige sammenlægningstype.
 

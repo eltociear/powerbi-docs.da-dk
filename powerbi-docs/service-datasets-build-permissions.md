@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 17c3322ed5f24d106412bafb9c4235ee15a626aa
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: c5b880132255fbdf37996273dc6c70029e548df6
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530525"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654903"
 ---
 # <a name="share-a-dataset-preview"></a>Del et datasæt (prøveversion)
 
@@ -42,7 +42,7 @@ Som forfatter af *datamodeller* i Power BI Desktop kan du dele dem som *datasæt
 
 ## <a name="build-permissions-for-shared-datasets"></a>Tilladelsen Opret for delte datasæt
 
-Tilladelsestypen Opret er kun relevant for datasæt. Med den kan brugere oprette nyt indhold i et datasæt, f.eks. dashboards, rapporter, fastgjorte felter fra Spørgsmål og svar samt søgning efter indsigt. De kan også oprette nyt indhold i datasæt uden for Power BI, f.eks. Excel-ark via Analysér i Excel, XMLA og Eksportér.
+Tilladelsestypen Opret er kun relevant for datasæt. Med den kan brugere oprette nyt indhold i et datasæt, f.eks. dashboards, rapporter, fastgjorte felter fra Spørgsmål og svar samt søgning efter indsigt. De kan også oprette nyt indhold i datasæt uden for Power BI, f.eks. Excel-ark via Analysér i Excel og XMLA og eksportere underliggende data.
 
 Brugerne får tilladelsen Opret på forskellige måder:
 
@@ -72,7 +72,7 @@ Med den mere detaljerede tilladelse Opret kan du vælge, hvem der kun kan se ind
 
 Hvis dit datasæt bruges af en rapport uden for datasættets arbejdsområde, kan du ikke slette dette datasæt. I stedet får du vist en fejlmeddelelse.
 
-Du kan fjerne tilladelsen Opret. Hvis du gør det, kan de personer, hvis tilladelser du har tilbagekaldt, stadig få vist rapporten, men de kan ikke længere redigere den.
+Du kan fjerne tilladelsen Opret. Hvis du gør det, kan de personer, hvis tilladelser du har tilbagekaldt, stadig få vist rapporten, men de kan ikke længere redigere den eller eksportere underliggende data. Brugere med læsetilladelse kan stadig eksportere opsummerede data. 
 
 ## <a name="track-your-dataset-usage"></a>Spor forbruget af dit datasæt
 

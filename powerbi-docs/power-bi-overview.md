@@ -6,15 +6,15 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: overview
-ms.date: 05/30/2019
+ms.date: 08/19/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: d6c9eb47d5f88a2d835c1ba6835e871b0c64bf1c
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: 0e12d110708c955e0c63e11f7578523222375448
+ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68324781"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69654980"
 ---
 # <a name="what-is-power-bi"></a>Hvad er Power BI?
 **Power BI** er en samling af softwaretjenester, apps og forbindelser, der arbejder sammen for at forvandle usammenhængende data til faste, visuelt fordybende og interaktive indsigter. Dine data kan være et Excel-regneark eller en samling cloudbaserede hybride data warehouses og hybride data warehouses i det lokale miljø. Med Power BI kan du nemt oprette forbindelse til dine datakilder, visualisere og finde vigtigt indhold samt dele det med alle, du vil.
@@ -25,11 +25,11 @@ Power BI kan være enkelt og hurtigt – og er i stand til at oprette hurtig ind
 
 ## <a name="the-parts-of-power-bi"></a>Delene i Power BI
 Power BI består af: 
-- Et Windows Skrivebordsprogram kaldet **Power BI Desktop**
-- En onlinetjeneste af typen SaaS (*Software som en service*) kaldet **Power BI-tjeneste** 
-- Power BI-**mobilapps** til Windows-, iOS- og Android-enheder
+- Et skrivebordsprogram til Windows, der hedder **Power BI Desktop**.
+- En onlinetjeneste af typen SaaS (*Software som en service*) kaldet **Power BI-tjeneste**. 
+- Power BI-**mobilapps** til Windows-, iOS- og Android-enheder.
 
-![Power BI Desktop, tjeneste, mobil](media/power-bi-overview/power-bi-blocks.png)
+![Power BI Desktop, tjeneste, mobil](media/power-bi-overview/power-bi-overview-blocks.png)
 
 Disse tre elementer &mdash;Power BI Desktop, tjenesten og mobilappsene&mdash; er designet til at lade folk oprette, dele og forbruge forretningsindsigt på en måde, der opfylder brugernes behov eller rolle mest effektivt.
 
@@ -40,7 +40,7 @@ Din brug af Power BI kan afhænge af din rolle i et projekt eller på et team. A
 
 Du bruger f.eks. primært **Power BI-tjenesten**. Men en talfokuseret kollega med ansvar for oprettelse af forretningsrapporter bruger måske overvejende **Power BI Desktop** til oprettelse af rapporter og udgiver derefter de pågældende rapporter til Power BI-tjenesten, hvor du derefter kan se dem. En anden kollega arbejder måske med salg og bruger hovedsageligt **Power BI-telefonappen** til at overvåge sine salgskvoter og til at analysere nye salgsemners oplysninger.
 
-Hvis du er udvikler, bruger du måske Power BI-API'er til at pushe data til datasæt eller til at integrere dashboards og rapporter i dine egne brugerdefinerede programmer. Har du en ide til en ny visualisering? Skab det selv, og del det med andre.  
+Hvis du er udvikler, bruger du måske Power BI-API'er til at pushe data til datasæt eller til at integrere dashboards og rapporter i dine egne brugerdefinerede programmer. Har du en ide til et nyt visuelt element? Skab det selv, og del det med andre.  
 
 Det kan også være, du bruger alle elementer af Power BI på forskellige tidspunkter, afhængigt af hvad du arbejder med, eller hvad din rolle er i et bestemt projekt.
 

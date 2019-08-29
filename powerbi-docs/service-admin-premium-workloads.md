@@ -8,28 +8,28 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 08/21/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 49a1f02e5aa327c2704b6c2d789934a43b760ad0
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: 2d2eb51c5aad44572f1b427248fd85ef19a6306f
+ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68962020"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69985690"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurer arbejdsbelastninger i en Premium-kapacitet
 
-I denne artikel beskrives, hvordan du aktiverer og konfigurerer arbejdsbelastninger for Power BI Premium-kapaciteter. Kapaciteter understøtter som standard kun de arbejdsbelastninger, der er tilknyttet kørende Power BI-forespørgsler. Du kan også aktivere og konfigurere yderligere arbejdsbelastninger for **[Kunstig intelligens (Cognitive Services)](service-cognitive-services.md)**, **[Dataflow](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** og **[Sideinddelte rapporter](paginated-reports-save-to-power-bi-service.md)**.
+I denne artikel beskrives, hvordan du aktiverer og konfigurerer arbejdsbelastninger for Power BI Premium-kapaciteter. Kapaciteter understøtter som standard kun de arbejdsbelastninger, der er tilknyttet kørende Power BI-forespørgsler. Du kan også aktivere og konfigurere yderligere arbejdsbelastninger for **[AI (Cognitive Services)](service-cognitive-services.md)** , **[Dataflow](service-dataflows-overview.md#dataflow-capabilities-on-power-bi-premium)** og **[Sideinddelte rapporter](paginated-reports-save-to-power-bi-service.md)** .
 
 ## <a name="default-memory-settings"></a>Standardindstillinger for hukommelse
 
-Arbejdsbelastninger for forespørgsler optimeres til og begrænses af de ressourcer, som er fastlagt af din SKU for Premium-kapacitet. Premium-kapaciteter understøtter også yderligere arbejdsbelastninger, der kan bruge din kapacitets ressourcer. Standardværdier for hukommelse for disse arbejdsbelastninger er baseret på de kapacitetsnoder, der er tilgængelige for din SKU. Det maksimale antal hukommelsesindstillinger kan ikke akkumuleres. Hukommelse op til den angivne maksimale værdi tildeles dynamisk for kunstig intelligens og dataflow, men tildeles statisk for sideinddelte rapporter.
+Arbejdsbelastninger for forespørgsler optimeres til og begrænses af de ressourcer, som er fastlagt af din SKU for Premium-kapacitet. Premium-kapaciteter understøtter også yderligere arbejdsbelastninger, der kan bruge din kapacitets ressourcer. Standardværdier for hukommelse for disse arbejdsbelastninger er baseret på de kapacitetsnoder, der er tilgængelige for din SKU. Det maksimale antal hukommelsesindstillinger kan ikke akkumuleres. Hukommelse op til den angivne maksimale værdi tildeles dynamisk for AI og dataflow, men tildeles statisk for sideinddelte rapporter.
 
 ### <a name="microsoft-office-skus-for-software-as-a-service-saas-scenarios"></a>Microsoft Office-SKU'er til SaaS-scenarier (Software som en service)
 
 |                     | EM2                      | EM3                       | P1                      | P2                       | P3                       |
 |---------------------|--------------------------|--------------------------|-------------------------|--------------------------|--------------------------|
-| Kunstig intelligens | I/T | I/T | 20 % som standard, minimum 20 % | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 % |
+| AI | I/T | I/T | 20 % som standard, minimum 20 % | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 % |
 | Dataflow | I/T |20 % som standard, minimum 12 %  | 20 % som standard, minimum 5 %  | 20 % som standard, minimum 3 % | 20 % som standard, minimum 2 %  |
 | Sideinddelte rapporter | I/T |I/T | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 % | 20 % som standard, minimum 2,5 % |
 | | | | | | |
@@ -38,7 +38,7 @@ Arbejdsbelastninger for forespørgsler optimeres til og begrænses af de ressour
 
 |                  | A1                       | A2                       | A3                      | A4                       | A5                      | A6                        |
 |-------------------|--------------------------|--------------------------|-------------------------|--------------------------|-------------------------|---------------------------|
-| Kunstig intelligens | I/T                      | 20 % som standard, minimum 100 %                     | 20 % som standard, minimum 50 %                     | 20 % som standard, minimum 20 % | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 % |
+| AI | I/T                      | 20 % som standard, minimum 100 %                     | 20 % som standard, minimum 50 %                     | 20 % som standard, minimum 20 % | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 % |
 | Dataflow         | 40 % som standard, minimum 40 % | 24 % som standard, minimum 24 % | 20 % som standard, minimum 12 % | 20 % som standard, minimum 5 %  | 20 % som standard, minimum 3 % | 20 % som standard, minimum 2 %   |
 | Sideinddelte rapporter | I/T                      | I/T                      | I/T                     | 20 % som standard, minimum 10 % | 20 % som standard, minimum 5 % | 20 % som standard, minimum 2,5 % |
 | | | | | | |
@@ -47,39 +47,67 @@ Arbejdsbelastninger for forespørgsler optimeres til og begrænses af de ressour
 
 ### <a name="ai-preview"></a>Kunstig intelligens (prøveversion)
 
-Udover indstillingen **Maks. hukommelse** findes der en yderligere indstilling for arbejdsbelastningen for kunstig intelligens, nemlig **Tillad brug fra Power BI Desktop**. Standarden er **Fra**. Denne indstilling er reserveret til fremtidig brug og vises muligvis ikke i alle lejere.
+AI-arbejdsbelastningen gør det muligt for dig at bruge kognitive tjenester og automatiseret maskinel indlæring i Power BI. Brug følgende indstillinger til at styre funktionsmåden for arbejdsbelastninger.
 
-### <a name="datasets-preview"></a>Datasæt (prøveversion)
+| Navn på indstilling | Beskrivelse |
+|---------------------------------|----------------------------------------|
+| **Maks. hukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse, som AI-processer kan bruge i en kapacitet. |
+| **Tillad brug fra Power BI Desktop** | Denne indstilling er reserveret til fremtidig brug og vises ikke i alle lejere. |
+| **Tillad oprettelse af modeller til maskinel indlæring** | Angiver, om forretningsanalytikere kan oplære, validere og aktivere modeller til maskinel indlæring direkte i Power BI. Du kan få flere oplysninger i [Automatiseret maskinel indlæring i Power BI (prøveversion)](service-machine-learning-automated.md). |
+| **Aktivér parallelitet for AI-anmodninger** | Angiver, om AI-anmodninger kan køre parallelt. |
+|  |  |
 
-Arbejdsbelastningen for datasæt er som standard aktiveret og kan ikke deaktiveres. Denne arbejdsbelastning indeholder en yderligere indstilling for _XMLA-slutpunktet_ og et sæt indstillinger, der er relateret til ydeevne. Indstillingen for **XMLA-slutpunkt** angiver, at forbindelser fra klientprogrammer overholder medlemskabet af sikkerhedsgrupper, der er angivet for arbejdsområdet og appniveauerne. Du kan få mere at vide under [Opret forbindelse til datasæt med klientprogrammer og -værktøjer](service-premium-connect-tools.md).
+### <a name="datasets"></a>Datasæt
 
-Indstillingerne, der er relateret til ydeevne, er beskrevet i følgende tabel.
+Arbejdsbelastningen for datasæt er som standard aktiveret og kan ikke deaktiveres. Brug følgende indstillinger til at styre funktionsmåden for arbejdsbelastninger.
 
-| Navn på indstilling | Beskrivelse | Forbrug |
-|---------------------------------|----------------------------------------|----------------------------------------|
-| **Maks. antal mellemliggende rækker** | Det maksimale antal mellemliggende rækker, der blev returneret af DirectQuery. Standardværdien er indstillet til 1000000, og det tilladte interval er mellem 100000 og 2147483647 | Styr effekten af ressourcetunge eller dårligt designede rapporter. |
-| **Maksimal størrelse på offlinedatasæt (GB)** | Den maksimale størrelse på offlinedatasæt i hukommelsen. Dette er den komprimerede størrelse på disken. Standardværdien er angivet af SKU, og det tilladte interval er fra 0,1-10 GB | Undgå, at forfattere af rapporter publicerer et stort datasæt, der kan have negativ indvirkning på kapaciteten. |
-| **Maks. antal resulterende rækker** | Angiver det maksimale antal rækker, der returneres i en DAX-forespørgsel. Standardværdien er angivet til -1 (ingen grænse), og det tilladte interval er mellem 100000 og 2147483647 | Styr effekten af ressourcetunge eller dårligt designede rapporter. |
-| **Grænse for forespørgselshukommelse (%)** | Gælder kun for DAX-målinger og -forespørgsler. Angivet i % og begrænser, hvor meget hukommelse der kan bruges af midlertidige resultater under en forespørgsel. | Styr effekten af ressourcetunge eller dårligt designede rapporter. |
-| **Timeout for forespørgsel (sekunder)** | Et heltal, der definerer timeout i sekunder for forespørgsler. Standarden er 3600 sekunder (eller 60 minutter). Nul (0) angiver, at der ikke er timeout for nogen forespørgsler. | Bevar bedre kontrol over forespørgsler, der kører i lang tid. |
+| Navn på indstilling | Beskrivelse |
+|---------------------------------|----------------------------------------|
+| **Maks. hukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse, som datasæt kan bruge i en kapacitet. |
+| **XMLA-slutpunkt** | Angiver, at forbindelser fra klientprogrammer overholder det medlemskab af sikkerhedsgrupper, der er angivet for arbejdsområdet og appniveauerne. Du kan få mere at vide i [Opret forbindelse til datasæt med klientprogrammer og -værktøjer](service-premium-connect-tools.md). |
+| **Maks. antal mellemliggende rækker** | Det maksimale antal mellemliggende rækker, der blev returneret af DirectQuery. Standardværdien er 1000000, og det tilladte interval er mellem 100000 og 2147483647. Brug denne indstilling til at styre effekten af ressourcetunge eller dårligt designede rapporter. |
+| **Maksimal størrelse på offlinedatasæt (GB)** | Den maksimale størrelse på offlinedatasæt i hukommelsen. Dette er den komprimerede størrelse på disken. Standardværdien er angivet af SKU, og det tilladte interval er mellem 0,1 og 10 GB. Brug denne indstilling for at undgå, at forfattere af rapporter publicerer et stort datasæt, der kan have negativ indvirkning på kapaciteten. |
+| **Maks. antal resulterende rækker** | Det maksimale antal rækker, der returneres i en DAX-forespørgsel. Standardværdien er -1 (ingen grænse), og det tilladte interval er mellem 100000 og 2147483647. Brug denne indstilling til at styre effekten af ressourcetunge eller dårligt designede rapporter. |
+| **Grænse for forespørgselshukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse, der kan bruges til midlertidige resultater i en forespørgsels-eller DAX-måling. Brug denne indstilling til at styre effekten af ressourcetunge eller dårligt designede rapporter. |
+| **Timeout for forespørgsel (sekunder)** | Det maksimale tidsrum, før en forespørgsel udløber. Standarden er 3600 sekunder (1 time). Værdien 0 angiver, at der ikke opstår timeout for forespørgsler. Brug denne indstilling for bedre at bevare kontrollen over forespørgsler, der kører i lang tid. |
 |  |  |  |
 
 ### <a name="dataflows"></a>Dataflow
 
-Udover indstillingen **Maks. hukommelse** findes der en yderligere indstilling for arbejdsbelastningen for dataflow, nemlig **Størrelse af objektbeholder**. Med denne indstilling kan du optimere ydeevnen af arbejdsbelastningen for dataflow, så der kan behandles mere komplekse, beregningstunge dataflow.
+Dataflowarbejdsbelastningen gør det muligt for dig at bruge selvbetjeningsforberedelse af data til dataflows for at overføre, transformere, integrere og forbedre data. Brug følgende indstillinger til at styre funktionsmåden for arbejdsbelastninger.
 
-Når du opdaterer et dataflow, opretter arbejdsbelastningen for dataflow en objektbeholder for hver enhed i dataflowet. Hver objektbeholder kan have hukommelse op til den mængde, der er angivet i indstillingen Størrelse af objektbeholder. Standarden for alle SKU'er er **700 MB**. Det kan være en god idé at ændre denne indstilling, hvis:
+| Navn på indstilling | Beskrivelse |
+|---------------------------------|----------------------------------------|
+| **Maks. hukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse, som dataflows kan bruge i en kapacitet. |
+| **Forbedret beregningsprogram til dataflows (prøveversion)** | Aktivér denne indstilling for at få op til 20 gange hurtigere beregning af beregnede enheder, når der arbejdes med store datamængder. **Du skal genstarte kapaciteten for at aktivere det nye program.** Du kan finde flere oplysninger i [Forbedret beregningsprogram til dataflows](#enhanced-dataflows-compute-engine). |
+| **Størrelse af objektbeholder** | Den maksimale størrelse på den objektbeholder, som dataflows bruger til hver enhed i dataflowet. Standardværdien er 700 MB. Du kan finde flere oplysninger i [Størrelse af objektbeholder](#container-size). |
+|  |  |
+
+#### <a name="enhanced-dataflows-compute-engine"></a>Forbedret beregningsprogram til dataflows
+
+Hvis du vil drage fordel af det nye beregningsprogram, skal du opdele dataindtagelsen i separate dataflows og placere transformationslogik i beregnede enheder i forskellige dataflows. Denne fremgangsmåde anbefales, da beregningsprogrammet fungerer for dataflows, der refererer til et eksisterende dataflow. Det fungerer ikke på dataflows til indtagelse. Hvis du følger denne vejledning, kan du sikre, at det nye beregningsprogram håndterer transformationstrinnene, f.eks. joinforbindelser og sammenfletninger, for at opnå optimal ydeevne.
+
+#### <a name="container-size"></a>Størrelse af objektbeholder
+
+Når du opdaterer et dataflow, opretter arbejdsbelastningen for dataflow en objektbeholder for hver enhed i dataflowet. Hver objektbeholder kan have hukommelse op til den mængde, der er angivet i indstillingen **Størrelse af objektbeholder. Standarden for alle SKU'er er 700 MB. Det kan være en god idé at ændre denne indstilling, hvis:
 
 - det tager for lang tid at opdatere dataflow, eller opdateringen af dataflow mislykkes pga. timeout.
 - Dataflowenheder omfatter beregningstrin, f.eks. en joinforbindelse.  
 
-Det anbefales, at du bruger appen [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md) til at analysere ydeevnen af arbejdsbelastningen for dataflow. 
+Det anbefales, at du bruger appen [Power BI Premium Capacity Metrics](service-admin-premium-monitor-capacity.md) til at analysere ydeevnen af arbejdsbelastningen for dataflow.
 
 I nogle tilfælde forbedres ydeevnen ikke ved at øge størrelsen af objektbeholderen. Hvis dataflowet f.eks. kun henter data fra en kilde uden at udføre betydelige beregninger, vil det sandsynligvis ikke hjælpe at ændre størrelsen af objektbeholderen. Det kan hjælpe at øge størrelsen af objektbeholderen, hvis det giver arbejdsbelastningen for dataflowet mulighed for at allokere mere hukommelse til opdateringshandlinger. Når der er allokeret mere hukommelse, kan det reducere den tid, det tager at opdatere beregningstunge enheder.
 
 Værdien af Størrelse på objektbeholder kan ikke overstige den maksimale hukommelse for arbejdsbelastningen for dataflow. En P1-kapacitet har f.eks. 25 GB hukommelse. Hvis Maks. hukommelse (%) for arbejdsbelastningen for dataflow er angivet til 20 %, kan Størrelse af objektbeholder (MB) ikke overstige 5000. I alle tilfælde kan Størrelse på objektbeholder ikke overstige Maks. hukommelse, heller ikke selvom du har angivet en højere værdi.
 
-### <a name="paginated-reports-preview"></a>Sideinddelte rapporter (prøveversion)
+### <a name="paginated-reports"></a>Sideinddelte rapporter
+
+Med arbejdsbelastningen for sideinddelte rapporter kan du køre sideinddelte rapporter, der er baseret på standardformatet for SQL Server Reporting Services i Power BI-tjenesten. Brug følgende indstilling til at styre funktionsmåden for arbejdsbelastninger.
+
+| Navn på indstilling | Beskrivelse |
+|---------------------------------|----------------------------------------|
+| **Maks. hukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse, som sideinddelte rapporter kan bruge i en kapacitet. |
+|  |  |
 
 Med sideinddelte rapporter kan der køres brugerdefineret kode, når en rapport gengives. Det kan f.eks. være at ændre tekstfarven dynamisk på baggrund af indhold, hvilket kan optage yderligere hukommelse. Power BI Premium kører sideinddelte rapporter i et afgrænset området i kapaciteten. Den angivne Maks. hukommelse bruges, *uanset om* arbejdsbelastningen er aktiv eller ej. Hvis du ændrer indstillingen Maks. hukommelse fra standardindstillingen, skal du sørge for, at du angiver den til at være lav nok til, at den ikke har negativ indvirkning på andre arbejdsbelastninger.
 
