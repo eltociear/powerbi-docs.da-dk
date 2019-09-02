@@ -7,18 +7,20 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: c8c17fe5349486d9583b8f44ccee1af36e86c761
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3c8ef3e522c9f20ff9602d29670ccaf28cd92048
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61180922"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185945"
 ---
 # <a name="connect-to-circuit-id-with-power-bi"></a>Opret forbindelse til Circuit ID med Power BI
 Du kan nemt analysere dine kommunikationsdata fra Circuit ID med Power BI. Power BI henter dine data og opretter derefter et standarddashboard og relaterede rapporter baseret på disse data. Når du har oprettet forbindelsen, kan du udforske dine data og tilpasse dashboardet efter dine behov. Dataene opdateres automatisk hver dag.
+
+[!INCLUDE [include-short-name](./includes/service-deprecate-content-packs.md)]
 
 Opret forbindelse til [Circuit ID-indholdspakken](https://app.powerbi.com/getdata/services/circuitid) til Power BI.
 

@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 04/26/2018
 ms.author: mshenhav
 ms.custom: ''
-ms.openlocfilehash: 7f81dc1c33cf1c7cc48dfddecce81f43fd3146c4
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 40dd5a0ed03a7d6bd258de39bb9c29dcd7390cd9
+ms.sourcegitcommit: 2b340946ed5f1deedeace4071845e1720ea155c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654376"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70064655"
 ---
 # <a name="what-are-the-power-bi-mobile-apps"></a>Hvad er Power BI-mobilapps?
 Power BI tilbyder en række mobilapps til iOS-, Android- og Windows 10-mobilenheder. I mobilappsene kan du oprette forbindelse til og interagere med dataene i clouden og i det lokale miljø. 
@@ -23,6 +23,10 @@ Power BI tilbyder en række mobilapps til iOS-, Android- og Windows 10-mobilenhe
 ![Power BI på mobilenheder](./media/mobile-apps-for-mobile-devices/power-bi-mobile-apps-all-up.png)
 
 Du opretter rapporter i Power BI Desktop. Du kan oprette dashboards og få vist dashboards og rapporter i Power BI-rapporttjenesten ([https://powerbi.com](https://powerbi.com)). Du kan se Power BI-rapporter i det lokale miljø på [Power BI-rapportserveren](../../report-server/get-started.md). Alle disse rapporter og dashboards er tilgængelige i Power BI-mobilappsene, uanset om de er i det lokale miljø eller i clouden. Prøv at få vist og interagere med dem på din mobilenhed – det kan være iOS (iPad, iPhone, iPod Touch eller Apple Watch), en Android-telefon eller -tablet eller en Windows 10-enhed.
+
+### <a name="get-the-app-from-the-application-store"></a>Hent appen fra programbutikken 
+
+[![Gå til Power BI i App Store](./media/mobile-apps-for-mobile-devices/mobile-apps-app-store.png)](https://go.microsoft.com/fwlink/?LinkId=526218&clcid=0x409) [![Gå til Power BI i Google Play](./media/mobile-apps-for-mobile-devices/mobile-apps-google-play.png)](https://go.microsoft.com/fwlink/?LinkId=544867&clcid=0x409) [![Gå til Power BI i Windows Store](./media/mobile-apps-for-mobile-devices/mobile-apps-windows-store.png)](https://go.microsoft.com/fwlink/?LinkId=526478&clcid=0x409)
 
 ## <a name="mobile-apps-for-different-devices"></a>Mobilapps til forskellige enheder
 
@@ -34,11 +38,7 @@ Du opretter rapporter i Power BI Desktop. Du kan oprette dashboards og få vist 
 | [![Android-tablet](./media/mobile-apps-for-mobile-devices/android-tablet-logo-50-px.png)](mobile-android-app-get-started.md) |Mobilappen kører på mange forskellige **Android-tablets** og giver dig opdateret, touchaktiveret mobiladgang til dine virksomhedsoplysninger. På Android-tablets viser Power BI-mobilappen dashboards og rapporter, som de blev formateret til Power BI-tjenesten. Du kan [markere dine foretrukne dashboards og rapporter](mobile-apps-favorites.md), så du hurtigt kan gå til dem, samt dine foretrukne Power BI Report Server og Reporting Services KPI'er og rapporter. <br/>Kom i gang med [Power BI-mobilapp til Android](mobile-android-app-get-started.md). |
 | [![Windows-enheder](./media/mobile-apps-for-mobile-devices/win-10-logo-50-px.png)](../../desktop-getting-started.md) |Power BI-mobilappen til Windows 10 kører på alle Windows 10-enheder, herunder Windows 10-telefoner. Sammen med mange af funktionerne fra de andre mobilapps indeholder Power BI-appen til Windows 10 særlige funktioner. Du kan f.eks. [fastgøre et Power BI-dashboard til startskærmen i Windows 10](mobile-pin-dashboard-start-screen-windows-10-phone-app.md) fra Power BI-mobilappen. Du kan også [køre Power BI i præsentationstilstand på Surface Hub](mobile-windows-10-app-presentation-mode.md) og i Power BI-mobilappen til Windows 10. <br/>Kom i gang med [Power BI-mobilappen til Windows 10-enheder](mobile-windows-10-phone-app-get-started.md). ||| 
 
-### <a name="get-the-app-from-the-application-store"></a>Hent appen fra programbutikken 
-
-[![Gå til Power BI i App Store](./media/mobile-apps-for-mobile-devices/mobile-apps-app-store.png)](https://go.microsoft.com/fwlink/?LinkId=526218&clcid=0x409) [![Gå til Power BI i Google Play](./media/mobile-apps-for-mobile-devices/mobile-apps-google-play.png)](https://go.microsoft.com/fwlink/?LinkId=544867&clcid=0x409) [![Gå til Power BI i Windows Store](./media/mobile-apps-for-mobile-devices/mobile-apps-windows-store.png)](https://go.microsoft.com/fwlink/?LinkId=526478&clcid=0x409)
-
-## <a name="enterprise-support-for-the-power-bi-mobile-apps"></a>Erhvervssupport til Power BI-mobilappsene
+## <a name="enterprise-support-for-the-power-bi-mobile-apps"></a>Erhvervssupport til Power BI-mobilapperne
 Organisationer kan bruge Microsoft Intune til at styre enheder og programmer, herunder Power BI-mobilapps til Android og iOS.
 
 Microsoft Intune giver organisationerne mulighed for at kontrollere ting som at anmode om adgangskode, kontrollere, hvordan data skal håndteres af programmet, og kryptere programdata, selv når appen ikke er i brug.

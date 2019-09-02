@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 08/26/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: c2af7db67c637ca795bd501609d05d317d2a3e00
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: a7061597df08e82f3128b6fc85ed2841569922c4
+ms.sourcegitcommit: 2b340946ed5f1deedeace4071845e1720ea155c9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023453"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70064636"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -492,19 +492,6 @@ På følgende videokanal beskrives og vises hver af disse opdateringer. Du kan o
 
 > [!NOTE]
 > Du kan også læse om [nyhederne i Power BI-tjenesten](service-whats-new.md) og se [nyhederne i mobilappsene til Power BI](consumer/mobile/mobile-whats-new-in-the-mobile-apps.md).
-
-
-Du kan også hente tidligere versioner af Power BI Desktop, hvis din organisation kræver det. Vi anbefaler altid, at du bruger den nyeste version af Power BI Desktop i stedet for en tidligere version. Der er følgende begrænsninger for alle tidligere versioner:
-
-* Der ydes ikke service til tidligere versioner af Power BI Desktop – du skal altid bruge den nyeste version for at få de nyeste funktioner og opdateringer.
-* Du kan muligvis ikke åbne filer, der er oprettet eller gemt i nyere versioner af Power BI Desktop, med tidligere versioner af Power BI Desktop. 
-* Hvis du får vist en advarsel, når du indlæser en rapport, der er gemt i en nyere version af Power BI Desktop, og derefter gemmer rapporten i den tidligere version, mister du alle oplysninger, der er relateret til nye funktioner.
-* Vi arkiverer kun de engelske versioner af Power BI Desktop.
-
-Vælg følgende links for at downloade denne tidligere version: 
-
-* [Power BI Desktop-version fra februar 2019 – 32-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-02.msi)
-* [Power BI Desktop-version fra februar 2019 – 64-bit](http://download.microsoft.com/download/9/B/A/9BAEFFEF-1A68-4102-8CDF-5D28BFFE6A61/PBIDesktop-2019-02_x64.msi)
 
 
 ## <a name="january-2019-update"></a>Opdatering fra januar 2019
@@ -2313,13 +2300,13 @@ December måned er gavernes tid, og Power BI-teamet giver dig en gave med flere 
     - Ret skriftstørrelsen i visualiseringer
     - Bedre layoutmuligheder for visualiseringer med større præcision, justering, fordelinger, størrelse og placering
     - Angiv formatering for flere visualiseringer ved hjælp af **Formatpensel**
-    - Optimeret layout af fanen **Start**
+    - Optimeret layout af fanen **Hjem**
 
 
 -   Forbedringer i visualiseringer:
     - Visuelt tip om sorteringstilstanden i visualiseringen **Tabel**
     - Ny visualisering: Diagrammet **Stablet område**
-    - Smarte værktøjstip til **Områdediagram** og **Kurvediagram**, når der holdes over dem
+    - Smarte værktøjstip til **Områdediagram** og **Kurvediagram**, når der peges på dem
     - Mulighed for at oprette referencelinje/område for virtualiseringen **Kartesisk**
     - Forbedrede datamærkater for **cirkeldiagrammer** og **punktdiagrammer**
 
@@ -2469,7 +2456,7 @@ Med denne store samling af opdateringer får du 44 nye funktioner:
 - Filtre på rapportniveau
 - Skift detailniveau i søjle- og punktdiagrammer
 - Nye indstillinger: Sidestørrelse og Sidevisning
-- Understøtter nu indsættelse af former på rapportlærredet
+- Understøtter nu indsættelse af former på rapportcanvas
 - Forbedringer i ruden Felter
     - Søgefelt, der gør det nemmere at finde felter efter navn
     - "Udvid/Skjul alle" forbedrer navigation, når der er flere tabeller i ruden Felter

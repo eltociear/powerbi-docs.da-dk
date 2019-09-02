@@ -939,8 +939,8 @@
           href: report-builder-tables-matrices-lists.md
         - name: Parametre
           href: report-builder-parameters.md
-        - name: Udtryk
-          href: report-builder-expressions.md
+        - name: URL-parametre i sideinddelte rapporter
+          href: report-builder-url-parameters.md
         - name: Eksempler på udtryk
           href: report-builder-expression-examples.md
         - name: Sideinddeling af rapport
@@ -959,6 +959,8 @@
           href: paginated-reports-create-embedded-dataset.md
         - name: Opret parametre
           href: paginated-reports-parameters.md
+        - name: Overfør en rapportparameter i en URL-adresse
+          href: report-builder-url-pass-parameters.md
         - name: Udgiv en sideinddelt rapport
           href: paginated-reports-save-to-power-bi-service.md
 - name: Power BI for udviklere
