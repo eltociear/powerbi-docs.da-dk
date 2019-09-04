@@ -7,18 +7,21 @@ ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
+ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 4131758dad29b28de56e3ac450bed22d64c25e46
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 66dcbd76d76de04675204674626c2942aef515fa
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61172751"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200993"
 ---
 # <a name="connect-to-marketo-with-power-bi"></a>Opret forbindelse til Marketo med Power BI
 Power BI-indholdspakken til Marketo giver dig mulighed at få indsigt i din Marketo-konto med data om kundeemner og de tilhørende aktiviteter. Når du opretter denne forbindelse, hentes dine data, og du får automatisk et dashboard og relaterede rapporter baseret på disse data.
+
+>[!IMPORTANT]
+>Vi udfaser denne indholdspakke den 4. september 2019. Hvis du installerede denne indholdspakke før dette tidspunkt, vil den fortsat fungere, men du kan ikke installere en ny efter dette tidspunkt. Skabelonapps erstatter tjenesteindholdspakker.
 
 Opret forbindelse til [Marketo-indholdspakken](https://app.powerbi.com/getdata/services/marketo) til Power BI.
 
@@ -79,10 +82,10 @@ Mængden af API-kald, som Power BI foretager til Marketo, afhænger af datamæng
 | Datatype | Antal rækker | API-kald |
 | --- | --- | --- |
 | Oplysninger om kundeemner |15.000 |50 |
-| Mailaktiviteter |150.000 |1.000 |
+| Mailaktiviteter |150.000 |1\.000 |
 | Programaktiviteter |15.000 |100 |
-| Webaktiviteter |150.000 |1.000 |
-| Programændringer |7.500 |50 |
+| Webaktiviteter |150.000 |1\.000 |
+| Programændringer |7\.500 |50 |
 | **Samlet antal API-opkald** | |**2.200** |
 
 ## <a name="next-steps"></a>Næste trin

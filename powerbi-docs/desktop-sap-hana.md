@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/21/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f40ed1b3950ace0b3cb362a22670e98c3ef83112
-ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
+ms.openlocfilehash: 1932848cb2f8ad7d75e841870265cc22308467c2
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69985667"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200855"
 ---
 # <a name="use-sap-hana-in-power-bi-desktop"></a>Brug SAP HANA i Power BI Desktop
 Med Power BI Desktop har du nu adgang til **SAP HANA**-databaser. Hvis du vil bruge **SAP HANA**, skal SAP HANA ODBC-driveren være installeret på den lokale klientcomputer, for at Power BI Desktop **SAP HANA**-dataforbindelsen skal fungere korrekt. Du kan hente SAP HANA ODBC-driveren fra [SAP Software Download Center](https://support.sap.com/swdc). Herfra kan du søge efter SAP HANA CLIENT til Windows-computere. Da strukturen i **SAP Software Download Center** ofte ændres, kan vi ikke give en mere specifik vejledning til, hvordan du henter programmet.
@@ -25,9 +25,7 @@ Hvis du vil oprette forbindelse til en **SAP HANA**-database, skal du vælge **H
 
 ![](media/desktop-sap-hana/sap-hana-1.png)
 
-Når du opretter forbindelse til en SAP HANA-database, skal du angive servernavnet og porten i følgende format: *serve:port*. På billedet nedenfor kan du se et eksempel på en server med navnet *ServerXYZ* og port *30015*.
-
-![](media/desktop-sap-hana/sap-hana-2.png)
+Når du opretter forbindelse til en SAP HANA-database, skal du angive servernavnet. Derefter skal du angive porten fra rullelisten og inputfeltet.
 
 I denne version understøttes **SAP HANA** i [DirectQuery](desktop-directquery-sap-hana.md)-tilstand i Power BI Desktop og Power BI tjenesten, og du kan publicere og uploade de rapporter, der bruger **SAP HANA** i DirectQuery-tilstand, til Power BI tjenesten. Du kan også publicere og overføre rapporter til Power BI-tjenesten, når du ikke bruger **SAP HANA** i DirectQuery-tilstand.
 

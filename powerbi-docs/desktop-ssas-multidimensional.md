@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 7a25a9cc220dcb9f4620b7fb77e6bac264a47256
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 848019a020e4a91e80caf342acb15c0d9b7e3121
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514753"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160225"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Opret forbindelse til SSAS flerdimensionelle modeller i Power BI Desktop
 Med Power BI Desktop har du adgang til **SSAS flerdimensionelle modeller**, der ofte refereres til som **SSAS MD**.
@@ -78,7 +78,8 @@ Flerdimensionelle modeller understøtter dimensions- og cellesikkerhed vha. *Rol
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 Der er visse begrænsninger for brug af **SSAS MD**:
 
-* Serverne skal køre SQL Server 2012 SP1 CU4 eller nyere versioner af Analysis Services, for at Power BI Desktop SSAS MD-forbindelsen fungerer korrekt
+* Serverne skal køre SQL Server 2012 SP1 CU4 eller nyere versioner af Analysis Services, for at Power BI Desktop SSAS MD-forbindelsen fungerer korrekt.
+* Kun Enterprise- og BI-udgaver af SQL Server 2012 og SQL Server 2014 understøtter direkte forbindelser. I forbindelse med standardversionen af SQL Server kræves der SQL Server 2016 eller nyere til direkte forbindelser.
 * *Handlinger* og *navngivne sæt* er ikke synlige for Power BI, men du kan stadig oprette forbindelse til kuber, der også indeholder *handlinger* eller *navngivne sæt*, og oprette visuelle elementer og rapporter.
 * Der kan opstå et problem, hvor Power BI viser metadata for en SSAS-model, men du kan ikke hente data fra modellen. Det kan ske, hvis du har installeret 32-bit-versionen af MSOLAP-provideren på dit system, og du ikke har 64-bit-versionen. Problemet kan muligvis løses ved at installere 64-bit-versionen.
 * Du kan ikke oprette målinger på "rapportniveau", når du opretter en rapport, som er direkte forbundet til en flerdimensionel SSAS-model. De eneste målinger, der er tilgængelige, er dem, der er defineret i MD-modellen.

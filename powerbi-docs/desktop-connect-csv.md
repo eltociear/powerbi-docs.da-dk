@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f1e02197f36da66a64fac95209fe8fabaa67b6c0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 8eecbfdaa948163ab6d0623a70f237d479fcdb88
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514171"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200918"
 ---
 # <a name="connect-to-csv-files-in-power-bi-desktop"></a>Opret forbindelse til CSV-filer i Power BI Desktop
 Den måde, du opretter forbindelse til en kommasepareret fil (*CSV*) på fra Power BI Desktop, ligner meget den måde, du opretter forbindelse til en Excel-projektmappe på. Begge dele er nemt, og i denne artikel får du en trinvis vejledning til, hvordan du opretter forbindelse til en hvilken som helst CSV-fil, som du har adgang til.
@@ -44,6 +44,10 @@ Når du indlæser data i Power BI Desktop, kan du se tabellen og dens kolonner, 
 Det er alt, hvad du skal gøre! Dataene fra din CSV-fil er nu i Power BI Desktop.
 
 Du kan bruge disse data i Power BI Desktop til at oprette visualiseringer og rapporter eller interagere med andre data, som du måske vil oprette forbindelse til og importere, f.eks. Excel-projektmapper, databaser eller en hvilken som helst anden datakilde.
+
+> [!IMPORTANT]
+> Når du importerer en CSV-fil, opretter Power BI Desktop en *columns=x* (hvor *x* er antallet af kolonner i CSV-filen under den indledende import) som et trin i Power-forespørgselseditor. Hvis du efterfølgende tilføjer flere kolonner, og datakilden er indstillet til at blive opdateret, opdateres kolonner efter det indledende antal på *x* ikke. 
+
 
 ## <a name="next-steps"></a>Næste trin
 Du kan oprette forbindelse til mange forskellige typer data ved hjælp af Power BI Desktop. Du kan finde flere oplysninger om datakilder i følgende ressourcer:

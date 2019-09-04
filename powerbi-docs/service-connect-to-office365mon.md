@@ -1,29 +1,29 @@
 ---
 title: Opret forbindelse til Office365Mon med Power BI
 description: Office365Mon til Power BI
-author: SarinaJoan
+author: teddybercovitz
 manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
 ms.topic: conceptual
-ms.date: 10/16/2017
-ms.author: sarinas
+ms.date: 8/29/2019
+ms.author: tebercov
 LocalizationGroup: Connect to services
-ms.openlocfilehash: cce886edbed00075efaa43bae9c8a712929e8b9a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 364220d5d900004252e51184fc9cbd7e03b45b2d
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61170166"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70159897"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Opret forbindelse til Office365Mon med Power BI
-Du kan nemt analysere nedetid i Office 365 og ydeevnedata med Power BI og Office365Mon-indholdspakken. Power BI henter dine data, herunder om nedetid og fra tilstandsundersøgelser, og opretter derefter et færdigt dashboard og rapporter ud fra de pågældende data.
+Du kan nemt analysere nedetid i Office 365 og ydeevnedata med Power BI og Office365Mon-skabelonappen. Power BI henter dine data, herunder om nedetid og fra tilstandsundersøgelser, og opretter derefter et færdigt dashboard og rapporter ud fra de pågældende data.
 
-Opret forbindelse til [Office365Mon-indholdspakken](https://app.powerbi.com/groups/me/getdata/services/office365mon) til Power BI.
+Opret forbindelse til [Office365Mon-skabelonappen](https://app.powerbi.com/groups/me/getdata/services/office365mon) til Power BI.
 
 >[!NOTE]
->Det er nødvendigt med en Office365Mon-administratorkonto for at oprette forbindelse til og indlæse Power BI-indholdspakken.
+>Det er nødvendigt med en Office365Mon-administratorkonto for at oprette forbindelse til og indlæse Power BI-skabelonappen.
 
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
 1. Vælg **Hent data** nederst i venstre navigationsrude.

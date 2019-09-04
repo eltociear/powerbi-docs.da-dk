@@ -10,30 +10,30 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0c63a62edfce62a5cee13bef3c68014027313e8b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 77a036cd1852c237c827dca07363492c94d8a272
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514019"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160300"
 ---
 # <a name="connect-to-a-pdf-file-in-power-bi-desktop"></a>Opret forbindelse til en PDF-fil i Power BI Desktop
 I Power BI Desktop kan du oprette forbindelse til en **PDF-fil** og bruge dataene fra filen på samme måde som enhver anden datakilde i Power BI Desktop.
 
-![Opret forbindelse til data i PDF-filer](media/desktop-connect-pdf/connect-pdf_04.png)
+![Opret forbindelse til data i PDF-filer](media/desktop-connect-pdf/connect-pdf-04.png)
 
 I følgende afsnit beskrives det, hvordan du opretter forbindelse til en **PDF-fil**, vælger data og indfører disse data i **Power BI Desktop**.
 
 Vi anbefaler, at du altid opgraderer til den nyeste version af **Power BI Desktop**, hvilket du kan gøre via et link i [Power BI Desktop](desktop-get-the-desktop.md). 
 
 ## <a name="connect-to-a-pdf-file"></a>Opret forbindelse til en PDF-fil
-Hvis du vil oprette forbindelse til en **PDF-fil**, skal du vælge **Hent data** på båndet **Hjem** i Power BI Desktop. Vælg **Fil** blandt kategorierne til venstre, hvorefter du kan se **PDF (beta)** .
+Hvis du vil oprette forbindelse til en **PDF-fil**, skal du vælge **Hent data** på båndet **Hjem** i Power BI Desktop. Vælg **Fil** blandt kategorierne til venstre, hvorefter du kan se **PDF**.
 
-![Vælg PDF i Hent data](media/desktop-connect-pdf/connect-pdf_01.png)
+![Vælg PDF i Hent data](media/desktop-connect-pdf/connect-pdf-01.png)
 
 Du bliver bedt om at angive placeringen af den PDF-fil, du vil bruge. Når du har angivet placeringen, og PDF-filen indlæses, vises der et vindue af typen **Navigator**, hvor de data, der er tilgængelige fra filen, vises. Her kan du vælge et eller flere elementer, der skal importeres og bruges i **Power BI Desktop**.
 
-![Opret forbindelse til data i PDF-filer](media/desktop-connect-pdf/connect-pdf_04.png)
+![Opret forbindelse til data i PDF-filer](media/desktop-connect-pdf/connect-pdf-04.png)
 
 Hvis du markerer et afkrydsningsfelt ud for de registrerede elementer i PDF-filen, vises de i ruden til højre. Når du er klar til at importere, skal du vælge knappen **Indlæse** for at overføre dataene til **Power BI Desktop**.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 04/15/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 8000397e5d8f26847349c35b541aa82c5907292e
-ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
+ms.openlocfilehash: 1e4d589702bb471a2abc6af9448a6846825adbfe
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69621242"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160361"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Tilslut Azure Data Lake Storage Gen2 for at få et dataflowlager (prøveversion)
 
@@ -115,19 +115,19 @@ Du finder dine lejerprogrammer ved at følge disse trin:
 
     ![Søg efter Power-programmer](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07.jpg)
 
-5. Vælg og kopiér begge objekt-id'er for Power BI-tjenesten og Power Query online fra søgeresultaterne. Vær klar til at indsætte disse værdier i de efterfølgende trin.
+5. Vælg og kopiér begge objekt-id'er for Power BI Premium-tjenesten og Power Query online fra søgeresultaterne. Vær klar til at indsætte disse værdier i de efterfølgende trin.
 
-7. Brug derefter **Azure Storage Explorer** til at navigere til det *powerbi*-filsystem, du oprettede i forrige afsnit. Følg vejledningen under afsnittet [Administration af adgang](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) i artiklen [Angiv tilladelser på fil- og mappeniveau ved hjælp af Azure Storage Explorer](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer).
+6. Brug derefter **Azure Storage Explorer** til at navigere til det *powerbi*-filsystem, du oprettede i forrige afsnit. Følg vejledningen under afsnittet [Administration af adgang](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer#managing-access) i artiklen [Angiv tilladelser på fil- og mappeniveau ved hjælp af Azure Storage Explorer](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer).
 
-8. For hver af de to objekt-id'er til Power BI, du hentede i trin 5, skal du tildele adgang af typen **Læs**, **Skriv** og **Udfør** samt standardadgangskontrollister til dit *powerbi*-filsystem.
+7. For hver af de to objekt-id'er til Power BI Premium, du hentede i trin 5, skal du tildele adgang af typen **Læs**, **Skriv** og **Udfør** samt standardadgangskontrollister til dit *powerbi*-filsystem.
 
    ![tildel alle tre for begge](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07a.jpg)
 
-9. For det objekt-id for Power Query Online, du indsamlede under trin 4, skal du tildele ACL'er af typen **Skriv**, **Udfør**, Adgang og Standard til dit *powerbi*-filsystem.
+8. For det objekt-id for Power Query Online, du indsamlede under trin 4, skal du tildele ACL'er af typen **Skriv**, **Udfør**, Adgang og Standard til dit *powerbi*-filsystem.
 
    ![tildel derefter skriv og udfør](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07b.jpg)
 
-10. For **Andet** skal du desuden tildele adgang af typen **Udfør** samt standardadgangskontrollister.
+9. For **Andet** skal du desuden tildele adgang af typen **Udfør** samt standardadgangskontrollister.
 
     ![tildel til sidst udfør for Andet](media/service-dataflows-connect-azure-data-lake-storage-gen2/dataflows-connect-adlsg2_07c.jpg)
 

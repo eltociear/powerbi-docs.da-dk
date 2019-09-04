@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/07/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: cccbfb6bbe43e70ebcea94322923f7600d58aca8
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: 5477d7772681f0dd5ac4426335521f6ab1a7844e
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590498"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160333"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Opret forbindelse til datasæt i Power BI-tjenesten fra Power BI Desktop
 Du kan oprette en direkte forbindelse til et delt datasæt i Power Bi-tjenesten og oprette mange forskellige rapporter fra det samme datasæt. Det betyder, at du kan oprette en perfekt datamodel i Power BI Desktop og publicere den i Power BI-tjenesten. Derefter kan du og andre oprette flere forskellige rapporter (i separate .pbix-filer) ud fra den samme almindelige datamodel og gemme dem i forskellige arbejdsområder. Denne funktion kaldes **Direkte forbindelse til Power BI-tjeneste**.
@@ -108,4 +108,5 @@ Når du bruger **Direkte forbindelse til Power BI-tjeneste**, er der et par begr
 * Hvad angår indholdspakker skal du først oprette en kopi af en indholdspakke, inden den bruges som basis for at dele en .pbix-rapport eller et .pbix-datasæt til **Power BI-tjenesten**.
 * Hvad angår indholdspakker fra *Min organisation* kan du, når de er kopieret, ikke erstatte rapporten, der er oprettet på tjenesten, og/eller en rapport, der er oprettet som en del af kopiering af en indholdspakke med en direkte forbindelse. Forsøg på at gøre dette resulterer i en advarsel, der beder dig om at omdøbe filen og udgive den. I denne situation kan du kun erstatte udgivne rapporter, der er direkte forbundne.
 * Sletning af et delt datasæt i **Power BI-tjenesten** betyder, at ingen længere kan få adgang til det datasæt fra **Power BI Desktop**.
+* Rapporter, der deler et datasæt i Power BI-tjenesten, understøtter ikke automatiserede udrulninger ved hjælp af Power BI REST API'en.
 

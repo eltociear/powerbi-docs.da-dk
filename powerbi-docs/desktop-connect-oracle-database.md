@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/22/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b28c4ea9b4cacc77a7f98af5bfc006670f40af94
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3dce16287c9cdcb7882e332e338137f7598b4010
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61314958"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200901"
 ---
 # <a name="connect-to-an-oracle-database"></a>Opret forbindelse til en Oracle-database
 Hvis du vil oprette forbindelse til en Oracle-database med **Power BI Desktop**, skal den korrekte Oracle-klientsoftware være installeret på den computer, der kører Power BI Desktop. Hvilken Oracle-klientsoftware du bruger, afhænger af, hvilken version af Power BI Desktop du har installeret – **32-bit** versionen eller **64-bit** versionen.
@@ -64,3 +64,5 @@ Hvis du har downloadet Power BI Desktop via Microsoft Store, kan du muligvis ikk
 * Download i stedet Power BI Desktop fra https://powerbi.microsoft.com/desktop.
 
 * Hvis du vil bruge versionen fra Microsoft Store: Kopiér oraons.dll fra _12.X.X\client_X_ til _12.X.X\client_X\bin_ på din lokale computer. X repræsenterer versions- og mappetal.
+
+Hvis du får vist fejlmeddelelsen *Objektreference er ikke angivet* i Power BI Gateway, når du opretter forbindelse til en Oracle-database, kan du muligvis løse problemet ved at følge instruktionerne i artiklen [Administrer din datakilde – Oracle](service-gateway-onprem-manage-oracle.md).

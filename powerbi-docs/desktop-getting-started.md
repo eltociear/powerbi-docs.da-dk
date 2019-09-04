@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d1739d97b0741c67e29ed7ab9a35a70bf4fdc484
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 2049d996c9f6130718e203a8f6d27a2a7fac911f
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654824"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70201021"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Kom i gang med Power BI Desktop
 Velkommen til **Introduktionsvejledning til Power BI Desktop**. Med denne korte præsentation af Power BI Desktop får du en idé om, hvordan det fungerer, og du får mulighed for at sætte skub i oprettelsen af robust datamodeller – sammen med fantastiske rapporter – som styrker din indsats på business intelligence-området. 
@@ -105,6 +105,9 @@ Når vi vælger **Rediger**, startes Forespørgselseditor, og der vises en repr�
  ![](media/desktop-getting-started/designer_gsg_editquery.png)
 
 Du kan finde flere oplysninger om oprettelse af forbindelse til data, under [Opret forbindelse til data i Power BI Desktop](desktop-connect-to-data.md).
+
+> [!NOTE]
+> De tabeldata, der refereres til i denne artikel, kan blive ændret med tiden. Derfor kan de trin, du skal følge, være forskellige fra de nedenstående, og du kan derfor være nødt til at være kreativ med, hvordan du justerer trinene eller resultaterne – hvilket alt sammen er med til at gøre det sjovt at lære. 
 
 I næste sektion justerer vi dataene, så de passer til vores behov. Processen med tilpasning af de forbundne data kaldes *formning* af data.
 

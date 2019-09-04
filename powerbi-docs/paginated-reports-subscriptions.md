@@ -8,19 +8,19 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 07/15/2019
-ms.openlocfilehash: 2d48892450bbf6ab09a4bc88cd2be9a58bbdc863
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.date: 08/29/2019
+ms.openlocfilehash: 4b0ead5697dc94497609ac925a0a46142584f0ba
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307070"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185603"
 ---
 # <a name="subscribe-yourself-and-others-to-paginated-reports-in-the-power-bi-service"></a>Meld dig selv og andre til et abonnement på sideinddelte rapporter i Power BI-tjenesten 
 
 Du kan nu oprette mailabonnementer på sideinddelte rapporter i Power BI-tjenesten for dig selv og andre. Generelt er processen den samme som [at abonnere på rapporter og dashboards i Power BI-tjenesten](service-report-subscribe.md). I denne artikel forklares forskelle og overvejelser. 
 
-Under konfigurationen af abonnementer vælger du, hvor ofte du gerne vil modtage mails: dagligt, ugentligt eller hver time. Hvis du vælger dagligt eller ugentligt, kan du vælge, hvilket tidspunkt abonnementet skal køres på. Du kan i alt angive op til 24 forskellige abonnementer pr. dag for hver rapport. 
+Når du konfigurerer abonnementer, vælger du ofte, hvordan du vil modtage mails: dagligt, ugentligt, månedligt eller hver time. Du kan også vælge det eller de tidspunkter, du vil have abonnementet til at køre på. Du kan i alt angive op til 24 forskellige abonnementer for hver rapport. 
 
 ## <a name="considerations-for-paginated-report-subscriptions"></a>Overvejelser i forbindelse med abonnementer på sideinddelte rapporter 
 

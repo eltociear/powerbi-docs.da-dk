@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d7f30dd43fe875380939520f3dc54fcbbe2f4c9c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 629c53358f757002f2b3dcda468641bbaaa2f4d4
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273245"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70166694"
 ---
 Én væsentlig forskel mellem **DAX** og Excel-formelsprog er, at DAX giver dig mulighed at overføre *hele tabeller* mellem udtryk i stedet for, at det er begrænset til en enkelt værdi. Én effektiv effekt er, at DAX gør det muligt at filtrere tabeller i dens udtryk og derefter arbejde med det filtrerede værdisæt.
 
@@ -36,7 +36,7 @@ Et almindeligt spørgsmål, som Power BI-rapportgeneratorer ønsker at besvare, 
 
 * Hvor mange værdier har jeg til denne kolonne?
 
-Det kan være et enkelt spørgsmål at besvare med en tabel foran dig, men DAX griber det an på en anden måde, særligt når der er en relation mellem tabellerne.
+Det kan være et simpelt spørgsmål at besvare med en tabel foran dig, men DAX griber det an på en anden måde, særligt når der er en relation mellem tabellerne.
 
 Power BI og DAX indeholder værdier, der ikke er korrekt krydsindekseret. Hvis den indgående relationen brydes, tilføjer DAX en ny række til den relaterede tabel, der indeholder de tomme celler i alle felter, og tilknytter den nye række til den ikke-indekserede række for at garantere referentiel integritet. Hvis din funktion indeholder tomme rækker, hvilket ofte er tilfældet, når man bruger **ALLE**, vil de tomme rækker derefter blive medtaget i antallet af værdier, der returneres for den pågældende kolonne.
 

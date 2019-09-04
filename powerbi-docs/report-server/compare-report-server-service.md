@@ -9,13 +9,13 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 manager: kfile
 ms.custom: mvc
-ms.date: 05/22/2019
-ms.openlocfilehash: c4254420ae949b1fae6a1407cd045589c23da3c8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 08/29/2019
+ms.openlocfilehash: 0755b41fbeef1f62d2722e3529007dc4f8773634
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187673"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70186076"
 ---
 # <a name="comparing-power-bi-report-server-and-the-power-bi-service"></a>Sammenlign Power BI-rapportserveren med Power BI-tjenesten
 
@@ -44,10 +44,10 @@ Power BI-rapportserveren og Power BI-tjenesten har mange ligheder og nogle vigti
 | Sideinddelte rapporter | Ja | Ja | [Sideinddelte rapporter er tilgængelige i Power BI-tjenesten](../paginated-reports-report-builder-power-bi.md) som prøveversion i en Premium-kapacitet |
 | Power BI-mobilapps | Ja | Ja | [Oversigt over Power BI-mobilapps](../consumer/mobile/mobile-apps-for-mobile-devices.md) |
 | ARC GIS-kort | Nej | Ja | [ArcGIS-kort i Power BI-tjenesten og Power BI Desktop fra Esri](../visuals/power-bi-visualization-arcgis.md) |
-| Mailabonnementer på Power BI-rapporter | Nej | Ja | [Meld dig selv eller andre til et abonnement](../service-report-subscribe.md) på en rapport eller et dashboard i Power BI-tjenesten |
-| Mailabonnementer på sideinddelte rapporter | Ja | Nej | [Maillevering i Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  |
+| Mailabonnementer på Power BI-rapporter | Ja | Ja | [Meld dig selv eller andre til et abonnement](../service-report-subscribe.md) på en rapport eller et dashboard i Power BI-tjenesten |
+| Mailabonnementer på sideinddelte rapporter | Ja | Ja | [Meld dig selv og andre til et abonnement på sideinddelte rapporter i Power BI-tjenesten](../paginated-reports-subscriptions.md)<br><br>[Maillevering i Reporting Services](https://docs.microsoft.com/sql/reporting-services/subscriptions/e-mail-delivery-in-reporting-services)  |
 | Databeskeder | Nej | Ja | [Databeskeder](../service-set-data-alerts.md) i Power BI-tjenesten
-| Sikkerhed på rækkeniveau (RLS) | Ja | Ja | Tilgængelige i både DirectQuery- (datakilde) og importtilstand <br>Sikkerhed på rækkeniveau i [Power BI-tjenesten](../service-admin-rls.md) <br>Sikkerhed på rækkeniveau i [Power BI-rapportserver](row-level-security-report-server.md) |
+| Sikkerhed på rækkeniveau (RLS) | Ja | Ja | Tilgængelige i både DirectQuery- (datakilde) og importtilstand <br><br>Sikkerhed på rækkeniveau i [Power BI-tjenesten](../service-admin-rls.md) <br><br>Sikkerhed på rækkeniveau i [Power BI-rapportserver](row-level-security-report-server.md) |
 | Fuldskærmsvisning | Nej | Ja | [Fuldskærmsvisning](../consumer/end-user-focus.md) i Power BI-tjenesten |
 | Avanceret samarbejde i Office 365 | Nej | Ja | [Samarbejd i et apparbejdsområde](../service-collaborate-power-bi-workspace.md) med Office 365 |
 | R-visualiseringer | Nej | Ja | [Opret R-visualiseringer](../desktop-r-visuals.md) i Power BI Desktop, og publicer dem i Power BI-tjenesten. Du kan ikke gemme Power BI-rapporter med R-visualiseringer på Power BI-rapportserveren.  |

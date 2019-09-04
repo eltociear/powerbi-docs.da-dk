@@ -1,6 +1,6 @@
 ---
-title: Analysér omkostnings- og forbrugsdata for Azure i Power BI Desktop
-description: Du kan nemt oprette forbindelse til Azure og få indsigt i forbrugs- og forbrugsdata ved hjælp af Power BI Desktop
+title: Analysér omkostnings- og brugsdata for Azure i Power BI Desktop
+description: Du kan nemt oprette forbindelse til Azure og få indsigt i forbrugs- og brugsdata ved hjælp af Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -8,17 +8,17 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/14/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 80eb366015de3822b9c8c455f1ee386a34e1f457
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: 0474bc4182f77e7084ca8cb78062ba0f2063e7ae
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69561019"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160212"
 ---
-# <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Analysér omkostnings- og forbrugsdata for Azure i Power BI Desktop
+# <a name="analyze-azure-cost-and-usage-data-in-power-bi-desktop"></a>Analysér omkostnings- og brugsdata for Azure i Power BI Desktop
 
 Du kan bruge Power BI Desktop til at oprette forbindelse til Azure og få detaljerede data om din organisations forbrug af Azure-tjenesten. Med disse data kan du oprette brugerdefinerede rapporter og målinger, så du bedre kan forstå og analysere dit Azure-forbrug.
 
@@ -27,6 +27,10 @@ Power BI understøtter i øjeblikket oprettelse af forbindelse til faktureringsk
 * Brugere med en **Enterprise Aftale** skal oprette forbindelse ved hjælp af **Azure Consumption Insights-connectoren** (nedenfor).
 
 * Brugere med en **kundeaftale** skal oprette forbindelse ved hjælp af [**connectoren Azure Cost Management**](#connect-with-azure-cost-management).
+
+> [!NOTE]
+> Hvis du er en Enterprise Agreement-kunde, der bruger Azure Cost Management-connectoren, og ikke kan se *faktureringsprofil-id'et* på dit Cost Management-blad, betyder det, at du ikke er på den moderne Commerce-platform. Hvis det er tilfældet, skal du bruge Azure Consumption Insights-connectoren, der anmoder om EA-tilmeldingsnummeret i stedet for *faktureringsprofil-id'et*.
+
 
 ## <a name="connect-with-azure-consumption-insights"></a>Opret forbindelse vha. Azure Consumption Insights
 
@@ -52,7 +56,7 @@ Sådan bruger du **Azure Consumption Insights**-connector i **Power BI Desktop**
 
    ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_02.png)
 
-   * Du kan se dit tilmeldingsnummer på [Azure Enterprise Portal](https://ea.azure.com) på den placering, der er vist på følgende billede:
+   * Du kan hente dit tilmeldingsnummer på [Azure Enterprise Portal](https://ea.azure.com) på den placering, der er vist på følgende billede:
 
   ![](media/desktop-connect-azure-consumption-insights/azure-consumption-insights_08.png)
 
@@ -140,7 +144,7 @@ Nogle kunder har oprettet visualiseringer ved hjælp af *Azure Enterprise Connec
 I de næste trin kan du se, hvordan du overgår til **Azure consumption Insights**-connectoren. Med disse trin bevares det arbejde, du allerede har udført med at oprette brugerdefinerede dashboards eller rapporter.
 
 ### <a name="step-1-connect-to-azure-using-the-new-connector"></a>Trin 1: Opret forbindelse til Azure ved hjælp af den nye connector
-Det første trin er at bruge den **Azure Consumption Insights**-connector, som blev detaljeret beskrevet tidligere i denne artikel. I dette trin skal du vælge **Hent data > Tom forespørgsel** på båndet **Start** i **Power BI Desktop**.
+Det første trin er at bruge den **Azure Consumption Insights**-connector, som blev detaljeret beskrevet tidligere i denne artikel. I dette trin skal du vælge **Hent data > Tom forespørgsel** på båndet **Hjem** i **Power BI Desktop**.
 
 ### <a name="step-2-create-a-query-in-advanced-editor"></a>Trin 2: Opret en forespørgsel i Avanceret editor
 I **Forespørgselseditor** skal du vælge **Avanceret editor** i sektionen **Forespørgsel** på båndet **Start**. Angiv følgende forespørgsel i vinduet **Avanceret editor**, der vises:
@@ -237,7 +241,7 @@ Kolonnerne og navnene på oplysninger på Azure Portal svarer til dem i API'en o
 I dette afsnit kan du få mere at vide om, hvordan du opretter forbindelse til din faktureringskonto under din kundeaftale.
 
 > [!NOTE]
-> Connectoren Azure Cost Management understøtter i øjeblikket kunder med en **kundeaftale**.  Brugere med en **Enterprise Aftale** skal bruge Azure Consumption Insights-connectoren.
+> Connectoren Azure Cost Management understøtter i øjeblikket kunder med en **kundeaftale**.  Brugere med en **Enterprise Aftale** skal bruge connectoren Azure Consumption Insights.
 >
 >
 

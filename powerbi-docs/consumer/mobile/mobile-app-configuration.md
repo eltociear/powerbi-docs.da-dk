@@ -1,7 +1,7 @@
 ---
 title: Konfigurationsindstillinger i Power BI-appen til iOS
 description: Sådan tilpasser du funktionsmåden for Power BI til iOS, ved hjælp af MDM-værktøjet
-author: mshenhav
+author: paulinbar
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/07/2019
 ms.author: mshenhav
-ms.openlocfilehash: a0883927f3a0a09bbe4d1ed618b7d5f708807464
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: bc9c6dd8cd892ab0304cc5a99a3bb780486f32f0
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66817001"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160167"
 ---
 # <a name="remotely-configure-power-bi-ios-app-using-mobile-device-management-mdm-tool"></a>Du kan fjernkonfigurere Power BI-appen til iOS ved hjælp af MDM-værktøjet (Mobile Device Management)
 
@@ -34,7 +34,7 @@ Power BI-appen til iOS gør det muligt for administratorer at fjern-"pushe" konf
 | com.microsoft.powerbi.mobile.ServerURL-adresse | Streng | URL-adresse til rapportserver.<br><br>Skal starte med http/https.|
 | com.microsoft.powerbi.mobile.ServerBrugernavn | Streng | [valgfri]<br><br>Det brugernavn, der skal bruges til at oprette forbindelse til serveren.<br><br>Hvis der ikke findes et brugernavn, vil appen bede brugeren skrive brugernavnet til forbindelsen.|
 | com.microsoft.powerbi.mobile.ServerVist navn | Streng | [valgfri]<br><br>Standardværdien er "Rapportserver"<br><br>Et navn, der bruges i appen til at repræsentere serveren. |
-| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolesk | [valgfri]<br><br>Standardværdien er True. Når værdien er angivet til True, tilsidesætter den alle eksisterende rapportserverdefinitioner på mobilenheden. Eksisterende servere, der allerede er konfigureret, slettes. Dette forhindrer også, at brugeren kan fjerne konfigurationen.<br><br>Når værdien er angivet til False, tilføjes de pushede værdier og lader eventuelle eksisterende indstillinger være. Hvis den samme URL-adresse allerede er konfigureret i mobilappen, forbliver konfigurationen, som den er. Appen beder ikke brugeren om at godkende igen for den samme server. |
+| com.microsoft.powerbi.mobile.OverrideServerDetails | Boolesk | [valgfri]<br><br>Standardværdien er True. Når værdien er angivet til True, tilsidesætter den alle eksisterende rapportserverdefinitioner på mobilenheden. Eksisterende servere, der allerede er konfigureret, slettes. Dette forhindrer også, at brugeren kan fjerne konfigurationen.<br><br>Hvis indstillingen er angivet til "False", tilføjes de overførte værdier, og eksisterende indstillinger ændres ikke. Hvis den samme URL-adresse allerede er konfigureret i mobilappen, forbliver konfigurationen, som den er. Appen beder ikke brugeren om at godkende igen for den samme server. |
 
 ## <a name="data-protection-setting"></a>Indstilling for databeskyttelse
 

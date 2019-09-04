@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/29/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d6d6ca0b9a1a2ec312a9168aad7a7cc93981e396
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 21a7bf05330373febe1e9f121f07df6de0779c69
+ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816753"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70200960"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakilder til Power BI-tjenesten
 Dataene er i hjertet af Power BI. Lad os antage, at du er i gang med at udforske data. Det kan du gøre ved at oprette diagrammer og dashboards eller stille spørgsmål i **Spørgsmål og svar**. De visualiseringer og svar, du ser, får deres underliggende data fra et datasæt. Men hvor kommer dette datasæt fra? Det kommer fra en datakilde.
@@ -46,7 +46,7 @@ Afsnittet **Opret nyt indhold** indeholder indstillinger, så du selv kan oprett
 ### <a name="files"></a>Filer
 ![](media/service-get-data/pbi_getdata_files.png)
 
-**Excel** ( *.xlsx*, *.xlsm*) – Excel er unikt. I Excel kan en projektmappe indeholde forskellige datatyper. Den kan f.eks, indeholde data, du selv har indtastet i regneark. Den kan også indeholde data, som du har forespurgt og indlæst fra eksterne datakilder ved hjælp af Power-forespørgsel. Power-forespørgsel er tilgængelig via **Hent og omdan** i Excel 2016 eller Power Pivot. Du kan importere data fra tabeller i regneark, eller importere data fra en datamodel. Du kan finde flere oplysninger under [Hent data fra filer til Power BI](service-get-data-from-files.md).
+**Excel** ( *.xlsx*, *.xlsm*) – en projektmappe i Excel kan indeholde forskellige datatyper. Den kan f.eks, indeholde data, du selv har indtastet i regneark. Den kan også indeholde data, som du har forespurgt og indlæst fra eksterne datakilder ved hjælp af Power-forespørgsel. Power-forespørgsel er tilgængelig via **Hent og omdan** i Excel 2016 eller Power Pivot. Du kan importere data fra tabeller i regneark, eller importere data fra en datamodel. Du kan finde flere oplysninger under [Hent data fra filer til Power BI](service-get-data-from-files.md).
 
 **Power BI Desktop** ( *.pbix*) – du kan bruge Power BI Desktop til at forespørge på og indlæse data fra eksterne datakilder samt oprette rapporter. Du kan også udvide din datamodel med målinger og relationer, eller du kan importere din Power BI Desktop-fil til Power BI-webstedet. Power BI Desktop er bedst til mere erfarne brugere. Disse brugere er normalt dem, der har en god forståelse af deres datakilder. De har også kendskab til dataforespørgsel og -transformation samt datamodelleringsbegreber. Du kan finde flere oplysninger i [Opret forbindelse til data i Power BI Desktop](desktop-connect-to-data.md).
 
@@ -102,9 +102,9 @@ Du kan gemme filerne på OneDrive for Business eller SharePoint – teamwebstede
 
 Indholdspakker fra tjenester opdateres automatisk. I de fleste tilfælde opdateres de en gang om dagen. Du kan opdatere manuelt, men det afhænger af tjenesteudbyderen, om du får vist opdaterede data. Opdateringer til indholdspakker fra personer i din organisation afhænger af de anvendte datakilder. De afhænger også af, hvordan den person, der oprettede indholdspakken, konfigurerede opdateringen.
 
-Azure SQL Database, Azure SQL Data Warehouse og Spark på Azure HDInsight er unikke, fordi de er datakilder i cloudmiljøet. Da Power BI-tjenesten også er i clouden, kan Power BI kan oprette direkte forbindelse til de pågældende data ved hjælp af **DirectQuery**. Det, du ser i Power BI, er altid synkroniseret, og det er ikke nødvendigt at konfigurere en planlagt opdatering.
+Azure SQL Database, Azure SQL Data Warehouse og Spark på Azure HDInsight er datakilder i cloudmiljøet. Da Power BI-tjenesten også er i clouden, kan Power BI kan oprette direkte forbindelse til de pågældende data ved hjælp af **DirectQuery**. Det, du ser i Power BI, er altid synkroniseret, og det er ikke nødvendigt at konfigurere en planlagt opdatering.
 
-SQL Server Analysis Services er unik. Når du opretter forbindelse til den fra Power BI, er det en direkte forbindelse på samme måde som en Azure-database i cloudmiljøet. Forskellen er selve databasen er på en server i din organisation. Denne type forbindelse kræver en Power BI-gateway, som normalt konfigureres af en it-afdeling.
+Når du opretter forbindelse til SQL Server Analysis Service fra Power BI, er det en direkte forbindelse på samme måde som en Azure-database i cloudmiljøet. Forskellen er selve databasen er på en server i din organisation. Denne type forbindelse kræver en Power BI-gateway, som normalt konfigureres af en it-afdeling.
 
 Opdatering af data er en supervigtig del af Power BI og alt for omfattende til at behandle her. Hvis du vil have en grundig forståelse, kan du finde oplysninger i [Opdatering af data i Power BI](refresh-data.md).
 

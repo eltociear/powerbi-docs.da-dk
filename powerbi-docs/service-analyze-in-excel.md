@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 7ccbfee788bbada580c02544a4af4b1b25c1a169
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6f4beb98c195c5af9967f988015959806d485696
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514210"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70159981"
 ---
 # <a name="analyze-in-excel"></a>Analysér i Excel
 Der er tidspunkter, hvor du måske vil bruge Excel til at få vist og interagere med et datasæt, du har i Power BI. Det kan du gøre med **Analysér i Excel**, og du kan få adgang til pivottabel-, diagram- og udsnitsfunktioner i Excel, der er baseret på datasættet, der findes i Power BI.
@@ -28,7 +28,8 @@ Der er et par krav til brugen af **Analysér i Excel**:
 * Pivottabeller i Excel understøtter ikke træk og slip-sammenlægning af numeriske felter. Dit datasæt i Power BI *skal have foruddefinerede målinger*.
 * Nogle organisationer har muligvis gruppepolitikregler, der forhindrer installation af de krævede **Analysér i Excel**-opdateringer i Excel. Hvis du ikke kan installere opdateringerne, skal du kontakte din administrator.
 * **Analysér i Excel** kræver, at datasættet er i Power BI Premium, eller at brugeren har en Power BI Pro-licens. Hvis du vil vide mere om forskellene i funktionaliteten mellem licenstyper, kan du se [Power BI-funktioner efter licenstype](service-features-license-type.md). 
-* Brugere kan oprette forbindelse til datasæt via analysér i Excel, hvis de har læsetilladelse til det underliggende datasæt.  En bruger kan have dette på flere måder: Brugeren kan f.eks. være medlem af det arbejdsområde, der indeholder datasættet. Der kan deles en rapport eller et dashboard, hvor datasættet bruges, med brugeren. Eller brugeren kan have tilladelse til en app, der indeholder datasættet.
+* Brugere kan oprette forbindelse til datasæt via Analysér i Excel, hvis de har læsetilladelse til det underliggende datasæt.  En bruger kan have dette på flere måder: Brugeren kan f.eks. være medlem af det arbejdsområde, der indeholder datasættet. Der kan deles en rapport eller et dashboard, hvor datasættet bruges, med brugeren. Eller brugeren kan have tilladelse til en app, der indeholder datasættet.
+* **Analysér i Excel** er en funktion i Power BI-tjenesten og er ikke tilgængelig i Power BI-rapportserver eller Power BI Embedded. 
 
 ## <a name="how-does-it-work"></a>Hvordan fungerer det?
 Når du vælger **Analysér i Excel** i menuen med tre prikker (...), der er tilknyttet et datasæt eller en rapport i **Power BI**, opretter Power BI en .ODC-fil og downloader den fra browseren til din computer.

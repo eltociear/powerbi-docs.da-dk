@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 757a2ca5a88e8ee98aa1c460c30e001f14bc6789
-ms.sourcegitcommit: 88e2a80b95b3e735689e75da7c35d84e24772e13
+ms.openlocfilehash: f18dae9ecd0eff0b7f62a3152fc59c81f1292ba4
+ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66814331"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70160391"
 ---
 # <a name="tutorial-combine-sales-data-from-excel-and-an-odata-feed"></a>Selvstudium: Kombiner salgsdata fra Excel og et OData-feed
 
@@ -52,7 +52,7 @@ Først skal du importere produktdata fra Excel-projektmappen Products.xlsx til P
    
 Der åbnes en forhåndsvisning af tabellen i **Power-forespørgselseditor**, hvor du kan anvende transformationer til at rydde op i dataene.
    
-![Power-forespørgselseditor](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_3.png)
+![Power Query-editor](media/desktop-tutorial-analyzing-sales-data-from-excel-and-an-odata-feed/t_excelodata_3.png)
    
 >[!NOTE]
 >Du kan også åbne **Power-forespørgselseditor** ved at vælge **Rediger forespørgsler** > **Rediger forespørgsler** på båndet **Hjem** i Power BI Desktop eller ved at højreklikke eller vælge **Flere indstillinger** ud for en hvilket som helst forespørgsel i **rapportvisning** og vælge **Rediger forespørgsel**.
@@ -119,7 +119,7 @@ I Power-forespørgselseditor kan du oprette beregninger og brugerdefinerede felt
    
 2. I dialogboksen **Brugerdefineret kolonne** skal du skrive **LineTotal** i feltet **Nyt kolonnenavn**.
 
-3. I feltet **Formel for brugerdefineret kolonne** efter **= skal du angive **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** . Du kan også vælge feltnavnene fra rulleboksen **Tilgængelige kolonner** og vælge **<< Indsæt** i stedet at skrive dem. 
+3. I feltet **Formel for brugerdefineret kolonne** efter *=* skal du angive **[Order_Details.UnitPrice]** \* **[Order_Details.Quantity]** . Du kan også vælge feltnavnene fra rulleboksen **Tilgængelige kolonner** og vælge **<< Indsæt** i stedet at skrive dem. 
 
 4. Vælg **OK**.
    

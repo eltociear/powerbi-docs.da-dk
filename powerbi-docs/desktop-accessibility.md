@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/17/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: d67ca5a4c8014dc295f3ffc458eca3dc5496282a
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.openlocfilehash: 14e57f5b19fe4dccea9aa47d21c959eaf93a45ae
+ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307227"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70185710"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Tilgængelighed i Power BI Desktop-rapporter
 Power BI indeholder funktioner, der gør det nemmere for personer med et handicap at bruge og interagere med Power BI-rapporter. Funktionerne omfatter muligheden for at bruge en rapport ved hjælp tastaturet eller en skærmlæser, bruge tabulatortasten til at sætte fokus på forskellige objekter på en side og bruge markører i visualiseringer.
@@ -75,6 +75,9 @@ Følgende tip kan hjælpe dig med at oprette **Power BI Desktop**-rapporter med 
 * For alle objekter i en rapport skal du angive en alternativ tekst. Det sikrer, at brugerne af din rapport forstår, hvad du forsøger at kommunikere med en visual. Det hjælper også, hvis de ikke kan se visualen, billedet, figuren eller tekstboksen. Du kan angive en alternativ tekst for et hvilket som helst objekt i en **Power BI Desktop**-rapport ved at vælge objektet (f.eks. en visual, en figur osv.), gå til ruden **Visualiseringer** og vælge **Format**. Udvid derefter **Generelt**, rul til bunden, og udfyld tekstboksen **Alternativ tekst**.
   
   ![Alternativ tekst for et hvilket som helst objekt i en rapport kan tilføjes i Visualiseringer > Format > Generelt > feltet Alternativ tekst](media/desktop-accessibility/accessibility-02.png)
+  
+  Alternativ tekst kan også ændres dynamisk med et udtryk, der f.eks. afspejler filtre, der er anvendt i en visualisering. Du angiver et udtryk på samme måde som en visualiseringstitel. [Betinget formatering af titler på visualiseringer](desktop-conditional-format-visual-titles.md)
+  
 * Kontrollér, at der er tilstrækkelig kontrast mellem teksten og eventuelle baggrundsfarver i dine rapporter. Der er flere værktøjer (f.eks. [Colour Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/)), som du kan bruge til at kontrollere farverne i din rapport. 
 * Brug tekststørrelser og skrifttyper, der er nemme at læse. En lille tekststørrelse eller skrifttyper, der kan være vanskelige at læse, hjælper ikke i forbindelse med tilgængelighed.
 * Inkluder en titel, akseetiketter og datamærkater i alle visualieringer.

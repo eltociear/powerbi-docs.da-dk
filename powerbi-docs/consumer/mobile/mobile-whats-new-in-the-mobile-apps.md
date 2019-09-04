@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: a7e26fd96066ce35e7d61443a8d7c32c64011d5e
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: 5b0921689a923b5c787a5e4208fe35a863372878
+ms.sourcegitcommit: 9eae2a52af6926cda4d6b03de4d50d7fa8b2f216
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665422"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70030171"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -22,6 +22,12 @@ Du kan finde relaterede oplysninger om nyheder under:
 * [Power BI-teamets blog til mobilapps](https://powerbi.microsoft.com/blog/tag/mobile/)
 * [Nyheder i Power BI Desktop](../../desktop-latest-update.md)  
 * [Nyheder i Power BI-tjenesten](../../service-whats-new.md)  
+
+## <a name="august-2019"></a>August 2019
+
+### <a name="secured-access-with-azure-active-directory-ad-application-proxy"></a>Sikker adgang med AD-programproxy (Azure Active Directory)
+
+Vi har indgået partnerskab med Azure Active Directory-teamet om at integrere Power BI-mobilapps med en AAD-programproxy (Azure Active Directory). Med denne konfiguration kan du oprette forbindelse til rapportserveren, der er hostet inden for virksomhedsgrænserne, fra Power BI-mobilappen, uden at det er nødvendigt at konfigurere kompleks konfiguration i det lokale miljø. Læs mere om [Power BI-mobil og Azure AD Application Proxy-integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Få mere at vide om, [hvordan du konfigurerer Azure AD Application Proxy og Power BI](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
 ## <a name="july-2019"></a>Juli 2019
 
