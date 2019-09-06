@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 07/16/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 2458c99192779c0597c38ea9f3a3baf23f4e1dd2
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: b3e1ea53abeff39609515b0b615f9e000432e9c6
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832469"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70303186"
 ---
 # <a name="manage-your-data-source---sap-hana"></a>Administrer din datakilde – SAP HANA
 
@@ -42,7 +42,7 @@ Når du har udfyldt alt, skal du vælge **Tilføj**. Du kan nu bruge denne datak
 
 ### <a name="advanced-settings"></a>Avancerede indstillinger
 
-Du kan eventuelt konfigurere niveauet for beskyttelse af personlige oplysninger for datakilden. Denne indstilling styrer, hvordan data kan kombineres. Det bruges kun for planlagte opdateringer. Indstillingen for beskyttelse af personlige oplysninger gælder ikke for DirectQuery. Hvis du vil vide mere om niveauer for beskyttelse af personlige oplysninger, skal du se [Niveauer for beskyttelse af personlige oplysninger (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
+Du kan eventuelt konfigurere niveauet for beskyttelse af personlige oplysninger for datakilden. Denne indstilling styrer, hvordan data kan kombineres. Det bruges kun for planlagte opdateringer. Indstillingen for beskyttelse af personlige oplysninger gælder ikke for DirectQuery. Hvis du vil vide mere om niveauer for beskyttelse af personlige oplysninger, skal du se [Niveauer for beskyttelse af personlige oplysninger (Power-forespørgsel)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
 ![Angivelse af niveauet for beskyttelse af personlige oplysninger](media/service-gateway-enterprise-manage-sap/datasourcesettings9.png)
 

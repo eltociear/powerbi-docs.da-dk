@@ -1,7 +1,7 @@
 ---
 title: Modtag meddelelser i Power BI-mobilapps
 description: Meddelelsescenteret sender oplysninger omkring din Power BI-oplevelse direkte til dig på din mobilenhed.
-author: mshenhav
+author: KesemSharabi
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 01/16/2018
 ms.author: mshenhav
-ms.openlocfilehash: 378e81207cb9b0f09e094ddbdced99defedde1ff
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: fe502b2d1822140c47f8c09266497144f07bb8a8
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "60973136"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236769"
 ---
 # <a name="get-notifications-in-the-power-bi-mobile-apps"></a>Modtag meddelelser i Power BI-mobilapps
 Gælder for:
