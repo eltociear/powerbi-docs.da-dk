@@ -403,6 +403,8 @@
       items:
         - name: Hvad er Power BI?
           href: power-bi-overview.md
+        - name: Hvad er Power BI-tjenesten?
+          href: power-bi-service-overview.md
         - name: Sammenligning af Power BI Desktop og tjenesten
           href: service-service-vs-desktop.md
     - name: Selvstudier
