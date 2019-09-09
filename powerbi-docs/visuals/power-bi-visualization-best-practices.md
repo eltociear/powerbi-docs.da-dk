@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 53a8847f96d6aa3143e91cab07029a8e0f6afc85
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 5bae8983df58353ea57e073defb001795976591b
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523730"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751696"
 ---
 # <a name="best-design-practices-for-reports-and-visuals"></a>Bedste praksis for design af rapporter og visuals
 
@@ -93,7 +93,7 @@ Ovenstående eksempel har mange pladsrelaterede (layoutmæssige) designproblemer
 
 Layoutet for dine rapportelementer påvirker læserens forståelse og guider læseren gennem rapportsiden. Måden hvorpå du anbringer og positionerer elementer, fortæller en historie. Historien kunne være "start her, og se derefter her" eller "disse tre elementer er relateret til hinanden".
 
-* I mange kulturer scanner folk fra venstre mod højre og oppefra og ned. Placer det vigtigste element i øverste venstre hjørne af rapporten. Organiser resten af visualiseringerne på en måde, der fører til en logisk navigation og forståelse af oplysningerne.
+* I mange kulturer scanner folk fra venstre mod højre og oppefra og ned. Placer det vigtigste element i øverste venstre hjørne af rapporten. Organiser resten af de visuelle elementer på en måde, der fører til en logisk navigation og forståelse af oplysningerne.
 
 * Anbring elementer, der kræver, at læseren træffer et valg, til venstre for de visualiseringer, valget påvirker: f.eks. udsnit.
 
@@ -107,7 +107,7 @@ Layoutet for dine rapportelementer påvirker læserens forståelse og guider læ
 
 * Vær bevidst om størrelsen af dine rapportelementer. Lad ikke den tilgængelige plads bestemme størrelsen på en visualisering.
 
-* Gør vigtige elementer større end de øvrige, eller tilføj en visualisering som f.eks en pil for at tiltrække opmærksomhed.
+* Gør vigtige elementer større end de øvrige, eller tilføj et visuelt element som f.eks en pil for at tiltrække opmærksomhed.
 
 * Juster elementerne på rapportsiden enten symmetrisk eller bevidst asymmetrisk.
 
@@ -211,7 +211,7 @@ Indtast tekst i det tomme felt. Brug derefter kontrolelementerne til at angive s
 
 **Figur 9: Formatér tekstfeltet**
 
-Men lad være med at overdrive. For meget tekst på en rapport fjerner opmærksomheden fra visualiseringerne. Hvis din rapportside kræver en hel masse tekst for at gøre den forståelig, skal du starte forfra. Kan du vælge en anden visual, der i sig selv kan fortælle en bedre historie? Kan du ændre din visuals oprindelige titel for at gøre den mere forståelig?
+Men lad være med at overdrive. For meget tekst på en rapport fjerner opmærksomheden fra de visuelle elementer. Hvis din rapportside kræver en hel masse tekst for at gøre den forståelig, skal du starte forfra. Kan du vælge en anden visual, der i sig selv kan fortælle en bedre historie? Kan du ændre din visuals oprindelige titel for at gøre den mere forståelig?
 
 #### <a name="text"></a>Tekst
 
@@ -526,7 +526,7 @@ Overvej, hvordan dine læsere får vist rapporten. Sørg for, at dine visuals og
 
 #### <a name="titles-and-labels-that-are-part-of-the-visualizations"></a>Titler og navne, som er en del af visualiseringerne
 
-Sørg for, at titler og navne kan læses og ikke kræver nogen forklaring. Tekst i titler og navne skal have en optimal størrelse med farver, som træder frem. Husker du vores vejledning til typografi (se [Tekst](#text) ovenfor)? Begræns antallet af farver og størrelser – for mange forskellige skriftstørrelser og farver får siden til at virke overfyldt og forvirrende. Overvej at bruge samme skriftfarve og -størrelse i titlerne på alle visualiseringer på en rapportside. Desuden skal du vælge den samme justering for alle titler på en rapportside.
+Sørg for, at titler og navne kan læses og ikke kræver nogen forklaring. Tekst i titler og navne skal have en optimal størrelse med farver, som træder frem. Husker du vores vejledning til typografi (se [Tekst](#text) ovenfor)? Begræns antallet af farver og størrelser – for mange forskellige skriftstørrelser og farver får siden til at virke overfyldt og forvirrende. Overvej at bruge samme skriftfarve og -størrelse i titlerne på alle visuelle elementer på en rapportside. Desuden skal du vælge den samme justering for alle titler på en rapportside.
 
 **Ruden Format**
 
@@ -536,7 +536,7 @@ For hver af de formateringsjusteringer, der er anført nedenfor, skal du vælge 
 
 **Figur 31: Åbn ruden Format**
 
-Vælg det visuelle element, der skal justeres, og sørg for, at det er slået **Til**. Eksempler på visualiseringer er: **X-aksen**, **y-aksen**, **titel**, **datamærkater** og **forklaring**. I eksemplet nedenfor vises elementet **Titel**.
+Vælg det visuelle element, der skal justeres, og sørg for, at det er slået **Til**. Eksempler på visuelle elementer er: **X-aksen**, **y-aksen**, **titel**, **datamærkater** og **forklaring**. I eksemplet nedenfor vises elementet **Titel**.
 
 ![Formatér en visualtitel.](media/power-bi-visualization-best-practices/power-bi-title-formatting.png)
 
@@ -600,7 +600,7 @@ En af de mest overbevisende funktioner i Power BI er muligheden for at redigere 
 
 **Figur 34: Interaktioner mellem visualiseringer**
 
-Derefter skal du for hver visual på siden overveje, om du vil have den pågældende visual til at filtrere, fremhæve eller gøre ingenting. Du kan ikke fremhæve alle visualiseringer. Kontrolelementet til fremhævning er ikke tilgængeligt for de visualiseringer, du ikke kan fremhæve. Du kan få mere at vide i [Interaktioner mellem visualiseringer i Power BI](../consumer/end-user-interactions.md).
+Derefter skal du for hver visual på siden overveje, om du vil have den pågældende visual til at filtrere, fremhæve eller gøre ingenting. Du kan ikke fremhæve alle visuelle elementer. Kontrolelementet til fremhævning er ikke tilgængeligt for de visualiseringer, du ikke kan fremhæve. Du kan få mere at vide i [Interaktioner mellem visualiseringer i Power BI](../consumer/end-user-interactions.md).
 
 > [!TIP]
 > For de læsere, der ikke har forhåndskendskab til Power BI, vil denne mulighed for at klikke og interagere med rapporter måske ikke være umiddelbart indlysende. Tilføj tekstfelter for at hjælpe dem med at forstå, hvad de kan vælge for at få yderligere indsigt.
@@ -730,7 +730,7 @@ Lad os nu tage de visuelle principper, vi diskuterede ovenfor, og anvende dem p�
 | Udsnit | Vi har fjernet blanktegn fra udsnitsværktøjerne ved at tilføje et sideniveaufilter og kun anvende **guld**, **sølv** og **bronze**. <br> Vi har ændret **Kontrolelementer til markering** til **Fra** for **Vælg én** og **Markér alle**. |
 | Boble | Der er så mange elementer i forklaringen, at de ruller ud over skærmen. Vi har fjernet forklaringen og aktiveret **Kategorietiketter** i stedet for. Kunder kan holde musemarkøren over boblerne for at få vist detaljer.<br> Vi har afkortet titlen og fjernet "efter land/område", da det synes indlysende. <br> Vi har slået aksenavne **Til** for begge for at gøre det lettere at forstå diagrammet. |
 | Kartogram | Vi har ændret **Datafarver** for at få det til at skille sig ud. <br> Vi har slået **Divergerende** til og angivet **Minimum** til pink og **Maksimum** til rød.
-| Treemap | Vi har fjernet filteret, som var indstillet kun til USA. <br> Vi har angivet **Datamærkater** til én decimal. <br> Vores visual anvendte feltet **Klasse**, som ikke er særligt nyttigt, da det næsten altid vil være 33 % for de tre medaljer: guld, sølv og bronze. <br> Vi har valgt et andet mere interessant felt, **Køn**. Vi har ændret "Aquatics" (vandsport) til blå og "Athletics" (atletik) til grå af designhensyn.
+| Træstruktur | Vi har fjernet filteret, som var indstillet kun til USA. <br> Vi har angivet **Datamærkater** til én decimal. <br> Vores visual anvendte feltet **Klasse**, som ikke er særligt nyttigt, da det næsten altid vil være 33 % for de tre medaljer: guld, sølv og bronze. <br> Vi har valgt et andet mere interessant felt, **Køn**. Vi har ændret "Aquatics" (vandsport) til blå og "Athletics" (atletik) til grå af designhensyn.
 | Øverste søjlediagram | Vi har afkortet titlen, fjernet datamærkater og slået titel på forklaring fra. <br> Vi har ændret ordrækkefølgen i titlen, så den stemmer overens med det nedenstående diagram.
 | Nederste søjlediagram | Vi har sorteret stigende efter år, så det stemmer overens med det ovenstående diagram. <br> Vi har ændret farverne, så de stemmer overens med medaljeklassen. <br> Vi har ændret titlen. <br> Vi har deaktiveret forklaringen for at få mere plads til data. <br> Vi har slået datamærkater til. De vises ikke i rapporten, fordi det visuelle element er for lille til, at navnene er nemme at læse. De vises, når læseren åbner det visuelle element i **fokustilstand**. Få mere at vide om [Fokustilstand](../consumer/end-user-focus.md). <br> Vi har føjet **Antal discipliner (bestemte)** til **værktøjstip**. Når du nu holder markøren over en stablet søjle, fortæller værktøjstippene også, hvor mange discipliner personen har konkurreret i det pågældende år. |
 | Interaktioner mellem visualiseringer | Vi har deaktiveret interaktioner for begge kort, da vi altid vil have dem vist for de samlede lege og sportsgrene. |
@@ -823,7 +823,7 @@ Hvis kurvediagrammer er standarden for at se på data over tid, er liggende søj
 
 Her finder du flere oplysninger om søjlediagrammer og liggende søjlediagrammer:
 
-* [Datavisualisering 101: liggende søjlediagrammer](http://blog.newscred.com/article/data-visualization-101-bar-charts)
+* [Datavisualisering 101: liggende søjlediagrammer](https://insights.newscred.com/data-visualization-101-bar-charts/)
 
 * [Datavisualiseringskatalog: Liggende søjlediagram](http://www.datavizcatalogue.com/methods/bar_chart.html#.VYV-hY3bLJw)
 

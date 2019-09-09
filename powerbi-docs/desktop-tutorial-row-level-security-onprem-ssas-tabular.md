@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 05/28/2019
 ms.author: selvar
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6bfcb218f92c2b6e8a3349261e15e6b71b9512b2
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: bbd40173bd10abf312ff382a9452f7636234bc95
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523223"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751686"
 ---
 # <a name="dynamic-row-level-security-with-analysis-services-tabular-model"></a>Dynamisk sikkerhed på rækkeniveau med Analysis Services-tabelmodel
 
@@ -35,7 +35,7 @@ Dette selvstudium kræver databasen [**AdventureworksDW2012**](https://github.co
 
 ## <a name="task-1-create-the-user-security-table-and-define-data-relationship"></a>Opgave 1: Opret brugersikkerhedstabellen, og definer datarelationen
 
-Du finder mange artikler, som beskriver, hvordan du definerer dynamisk sikkerhed på rækkeniveau med **SSAS-tabelmodellen (SQL Server Analysis Services)** . I dette eksempel bruger vi [Implementér dynamisk sikkerhed ved hjælp af rækkefiltre](https://msdn.microsoft.com/library/hh479759.aspx). 
+Du finder mange artikler, som beskriver, hvordan du definerer dynamisk sikkerhed på rækkeniveau med **SSAS-tabelmodellen (SQL Server Analysis Services)** . I dette eksempel bruger vi [Implementér dynamisk sikkerhed ved hjælp af rækkefiltre](https://docs.microsoft.com/analysis-services/tutorial-tabular-1200/supplemental-lesson-implement-dynamic-security-by-using-row-filters). 
 
 Disse trin kræver brug af relationsdatabasen **AdventureworksDW2012**.
 

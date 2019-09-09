@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 848019a020e4a91e80caf342acb15c0d9b7e3121
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: b089c3e51ce80fdb776455519f2569ee8fa24572
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160225"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751645"
 ---
 # <a name="connect-to-ssas-multidimensional-models-in-power-bi-desktop"></a>Opret forbindelse til SSAS flerdimensionelle modeller i Power BI Desktop
 Med Power BI Desktop har du adgang til **SSAS flerdimensionelle modeller**, der ofte refereres til som **SSAS MD**.
@@ -87,7 +87,7 @@ Der er visse begrænsninger for brug af **SSAS MD**:
 ## <a name="supported-features-of-ssas-md-in-power-bi-desktop"></a>Understøttede funktioner i SSAS MD i Power BI Desktop
 Følgende SSAS MD-funktioner understøttes i Power BI Desktop:
 
-* Forbrug af følgende elementer, der understøttes i denne version af **SSAS MD** (du kan få [yderligere oplysninger](https://msdn.microsoft.com/library/jj969574.aspx) om disse funktioner):
+* Forbrug af følgende elementer, der understøttes i denne version af **SSAS MD** (du kan få [yderligere oplysninger](https://docs.microsoft.com/sql/analysis-services/multidimensional-models/understanding-power-view-for-multidimensional-models?view=sql-server-2014) om disse funktioner):
   * Få vist mapper
   * KPI-tendenser
   * Standardmedlemmer
