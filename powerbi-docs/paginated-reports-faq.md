@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 07/15/2019
-ms.openlocfilehash: 2e59499b93f4d1b4879cdec5b807f863a80718aa
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.date: 09/04/2019
+ms.openlocfilehash: 2be953c31ba3090e83e58f8e5626bb83e249556e
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665359"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302702"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål 
 
@@ -26,11 +26,11 @@ I denne artikel finde du svar på mange almindelige spørgsmål, som folk har om
 
 ### <a name="what-size-premium-capacity-do-i-need-for-paginated-reports"></a>Hvilken størrelse Premium-kapacitet for sideinddelte rapporter skal jeg bruge?
 
-Arbejdsbelastningen for sideinddelte rapporter er tilgængelig på P1-P3 SKU'er.  Du kan også bruge den til SaaS-integreringsscenarier med A4-A6 SKU'er.
+Arbejdsbelastningen for sideinddelte rapporter er tilgængelig på P1-P3 SKU'er.  Du kan også bruge den med A4 – A6 SKU'er til integrerings- eller test/dev-scenarier.
 
 ### <a name="what-is-the-maximum-memory-threshold-i-can-put-for-paginated-reports-in-my-capacity"></a>Hvad er den maksimale hukommelsestærskel, jeg kan angive, for sideinddelte rapporter i min kapacitet?
 
-Du må bruge op til 100 % af hukommelsen til denne arbejdsbelastning ved slutningen af juni 2019. 
+Du må bruge op til 100 % af hukommelsen til denne arbejdsbelastning.
 
 ### <a name="how-does-user-access-work-for-paginated-reports"></a>Hvordan fungerer brugeradgang til sideinddelte rapporter?
 
@@ -152,7 +152,7 @@ Du kan eksportere til Microsoft Excel, Microsoft Word, Microsoft PowerPoint, PDF
 
 Ja, udskrivning er tilgængelig for sideinddelte rapporter, herunder en ny og forbedret oplevelse af Vis udskrift. 
 
-### <a name="are-e-mail-subscriptions-available-yet-for-paginated-reports"></a>Er mailabonnementer tilgængelige for sideinddelte rapporter?
+### <a name="are-e-mail-subscriptions-available-for-paginated-reports"></a>Er mailabonnementer tilgængelige for sideinddelte rapporter?
 
 Ja, mailabonnementer understøttes fuldt ud for sideinddelte rapporter og omfatter understøttelse af seks forskellige filformater og parameterværdier.
 
@@ -166,7 +166,7 @@ SaaS-integration understøttes allerede. PaaS-integration understøttes ikke i �
 
 ### <a name="can-i-drill-through-from-a-power-bi-report-to-a-paginated-report"></a>Kan jeg få detaljeadgang fra en Power BI-rapport til en sideinddelt rapport?
 
-Ikke endnu, men vi har helt sikkert planer om at understøtter dette scenarie.
+Ja, dette kan gøres ved at bruge URL-parametre sammen med sideinddelte rapporter.
 
 ### <a name="can-i-share-my-paginated-report-content-through-a-power-bi-app"></a>Kan jeg dele indhold i min sideinddelte rapport via en Power BI-app?
 
