@@ -1,6 +1,6 @@
 ---
-title: Aktivér Synkroniser udsnit
-description: Sådan tilføjer du funktionen Synkroniser udsnit for Power BI-visualiseringer
+title: Tilføj funktionen Synkroniser udsnitsværktøjer i Power BI-visualiseringer
+description: I denne artikel beskrives det, hvordan du føjer funktionen Synkroniser udsnitsværktøjer til visualiseringer i Power BI.
 author: EugeneElkin
 ms.author: v-evelk
 manager: rkarlin
@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 9966475e8bcaccad2090451b47ef09ef0a9af125
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 4d7b73a5d06f34fd197464d4444d0e19d6c1c026
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425016"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237200"
 ---
-# <a name="sync-slicers"></a>Synkroniser udsnit
+# <a name="sync-slicers-in-power-bi-visuals"></a>Synkroniser udsnitsværktøjer i visualiseringer i Power BI
 
-Din brugerdefinerede visualisering skal bruge API 1.13 eller nyere for at understøtte [Synkroniser udsnit](https://docs.microsoft.com/power-bi/desktop-slicers).
+For at understøtte funktionen [Synkroniser udsnitsværktøjer](https://docs.microsoft.com/power-bi/desktop-slicers) skal dit brugerdefinerede visuelle udsnit bruge API-version 1.13 eller nyere.
 
-Derudover er det nødvendigt at aktivere indstillingen i `capabilities.json` (se eksemplet nedenfor).
+Derudover skal du aktivere indstillingen i filen *capabilities.json* som vist i følgende kode:
 
 ```json
 {
@@ -34,11 +34,11 @@ Derudover er det nødvendigt at aktivere indstillingen i `capabilities.json` (se
 }
 ```
 
-Når du har foretaget ændringer i `capabilities.json`, kan du se panelet med indstillinger for Synkroniser udsnit, når du klikker på den brugerdefinerede visualisering med udsnit.
+Når du har opdateret filen *capabilities.json*, kan du få vist ruden med indstillinger for **Synkroniser udsnitsværktøjer**, når du vælger det brugerdefinerede visuelle udsnit.
 
 > [!NOTE]
-> Hvis der er mere end ét felt i udsnittet (kategori eller måling), deaktiveres funktionen, for Synkroniser udsnit understøtter ikke flere felter.
+> Funktionen Synkroniser udsnitsværktøjer understøtter ikke mere end ét felt. Hvis udsnittet har mere end ét felt (**kategori** eller **måling**), er funktionen deaktiveret.
 
-![Panelet Synkroniser udsnit](./media/sync-slicers-panel.png)
+![Ruden "Synkroniser udsnit"](./media/sync-slicers-panel.png)
 
-På panelet kan du se, at synligheden af og filtreringen med dit udsnit muligvis er anvendt på flere rapportsider.
+I ruden **Synkroniser udsnit** kan du se, at synligheden af og filtreringen med dit udsnit muligvis er anvendt på flere rapportsider.

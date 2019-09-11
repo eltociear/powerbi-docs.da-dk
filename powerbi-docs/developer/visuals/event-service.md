@@ -1,6 +1,6 @@
 ---
-title: Gengivelse af hændelser
-description: Power BI-visualiseringer kan give Power BI besked om, at de er klar til at blive eksporteret til Power Point/PDF
+title: Gengiv begivenheder i visualiseringer i Power BI
+description: Power BI-visualiseringer kan give Power BI besked om, at de er klar til at blive eksporteret til Power Point eller PDF.
 author: Yarovinsky
 ms.author: alexyar
 manager: rkarlin
@@ -9,22 +9,22 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 46166b3503a770e033b98474fcf9240235296cc2
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: b481ce94e5025045466a05d71e30a00f02be7ead
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425085"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237161"
 ---
-# <a name="event-service"></a>Hændelsestjeneste
+# <a name="render-events-in-power-bi-visuals"></a>Gengiv begivenheder i visualiseringer i Power BI
 
-Den nye API består af tre metoder (startet, afsluttet eller mislykket), som skal kaldes under gengivelse.
+Den nye API består af tre metoder (`started`, `finished` eller `failed`), som skal kaldes under gengivelse.
 
-Når gengivelsen starter, kalder den brugerdefinerede visualiseringskode metoden renderingStarted for at angive, at gengivelses processen er startet.
+Når gengivelsen starter, kalder Power BI-visualiseringskoden metoden `renderingStarted` for at angive, at gengivelsesprocessen er startet.
 
-Hvis gengivelsen er fuldført, kalder den brugerdefinerede visualiseringskode øjeblikkeligt metoden `renderingFinished`, hvilket giver lyttefunktionen (**primært "eksportér til PDF" og "eksportér til PowerPoint"** ) besked om, at visualiseringens afbildning er klar.
+Hvis gengivelsen er fuldført, kalder visualiseringskoden i Power BI øjeblikkeligt metoden `renderingFinished`, hvilket giver lyttefunktionen (primært *eksportér til PDF* og *eksportér til PowerPoint*) besked om, at visualiseringens afbildning er klar til eksport.
 
-Hvis der opstod problemer under gengivelsesprocessen, kan det forhindre, at den brugerdefinerede visualisering fuldføres korrekt. Den brugerdefinerede visualiseringskode bør kalde metoden `renderingFailed`, hvilket giver lyttefunktionen besked om, at gengivelsesprocessen ikke er fuldført. Denne metode indeholder også en valgfri streng med årsagen til fejlen.
+Hvis der opstår et problem under processen, forhindres gengivelsen af det visuelle element i Power BI. Den brugerdefinerede Power BI-visualiseringskode bør kalde metoden `renderingFailed` for at give lytterne besked om, at gengivelsesprocessen ikke er fuldført. Denne metode indeholder også en valgfri streng, der giver en årsag til fejlen.
 
 ## <a name="usage"></a>Forbrug
 
@@ -38,31 +38,31 @@ export interface IVisualHost extends extensibility.IVisualHost {
  */
 export interface IVisualEventService {
     /**
-     * Should be called just before the actual rendering was started. 
-     * Usually at the very start of the update method.
+     * Should be called just before the actual rendering starts, 
+     * usually at the start of the update method
      *
-     * @param options - the visual update options received as update parameter
+     * @param options - the visual update options received as an update parameter
      */
     renderingStarted(options: VisualUpdateOptions): void;
 
     /**
-     * Shoudl be called immediately after finishing successfull rendering.
+     * Should be called immediately after rendering finishes successfully
      * 
-     * @param options - the visual update options received as update parameter
+     * @param options - the visual update options received as an update parameter
      */
     renderingFinished(options: VisualUpdateOptions): void;
 
     /**
-     * Called when rendering failed with optional reason string
+     * Called when rendering fails, with an optional reason string
      * 
-     * @param options - the visual update options received as update parameter
-     * @param reason - the option failure reason string
+     * @param options - the visual update options received as an update parameter
+     * @param reason - the optional failure reason string
      */
     renderingFailed(options: VisualUpdateOptions, reason?: string): void;
 }
 ```
 
-### <a name="simple-sample-the-visual-hasnt-any-animations-on-rendering"></a>Enkelt eksempel. Visualiseringen indeholder ingen animationer, der kan gengives
+### <a name="sample-the-visual-displays-no-animations"></a>Eksempel: Visualiseringen viser ingen animationer
 
 ```typescript
     export class Visual implements IVisual {
@@ -83,7 +83,7 @@ export interface IVisualEventService {
         }
 ```
 
-### <a name="sample-the-visual-with-animation"></a>Eksempel. Visualisering med animation
+### <a name="sample-the-visual-displays-animations"></a>Eksempel: Visualiseringen viser animationer
 
 Hvis visualiseringen indeholder animationer eller asynkrone funktioner til gengivelse, skal metoden `renderingFinished` kaldes efter animationen eller inde i den asynkrone funktion.
 
@@ -104,7 +104,7 @@ Hvis visualiseringen indeholder animationer eller asynkrone funktioner til gengi
         public update(options: VisualUpdateOptions) {
             this.events.renderingStarted(options);
             ...
-            // read more https://github.com/d3/d3-transition/blob/master/README.md#transition_end
+            // Learn more at https://github.com/d3/d3-transition/blob/master/README.md#transition_end
             d3.select(this.element).transition().duration(100).style("opacity","0").end().then(() => {
                 // renderingFinished called after transition end
                 this.events.renderingFinished(options);
@@ -114,4 +114,4 @@ Hvis visualiseringen indeholder animationer eller asynkrone funktioner til gengi
 
 ## <a name="rendering-events-for-visual-certification"></a>Gengivelse af hændelser til visuel certificering
 
-Understøttelsen af gengivelseshændelser fra visualiseringen er en af kravene til certificering af visualiseringer. Læs mere om [certificeringskrav](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements)
+Et af kravene til certificering af visualiseringer er understøttelse af gengivelseshændelser fra visualiseringen. Du kan finde flere oplysninger i [certificeringskrav](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements).

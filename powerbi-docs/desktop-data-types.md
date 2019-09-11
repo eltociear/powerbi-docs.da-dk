@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: reference
-ms.date: 04/10/2019
+ms.date: 09/05/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 00ff6a901ef4056e15ccc0087f0783826b1a64b2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ccde7f01968a9fdcdd74903819b7083a552479b0
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61308979"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391774"
 ---
 # <a name="data-types-in-power-bi-desktop"></a>Datatyper i Power BI Desktop
 I denne artikel beskrives de datatyper, der understøttes i Power BI Desktop, og DAX-udtryk (Data Analysis Expressions). 
@@ -44,7 +44,7 @@ Power BI Desktop understøtter tre taltyper:
 
 **Fixed Decimal Number** – har en fast placering af decimaltegnet. Decimaltegnet har altid fire cifre til højre, og gør det muligt at have 19 signifikante cifre.  Den største værdi, den kan repræsentere, er 922.337.203.685.477,5807 (positiv eller negativ).  Typen med faste decimaltal er nyttig i de tilfælde, hvor afrunding kan medføre fejl.  Når du arbejder med mange tal, der har små decimalværdier, kan de nogle gange blive akkumuleret og resultere i, at et tal bliver lidt forkert.  Eftersom værdierne efter fire cifre til høre for decimaltegnet afkortes, kan typen med faste decimaltal forhindre denne type fejl.   Hvis du kender SQL Server, svarer denne datatype til SQL Servers decimal (19.4), eller valutadatatypen i Power Pivot. 
 
-**Whole Number** – repræsenterer en 64-bit (8-byte) heltalsværdi. Eftersom der er tale om et heltal, er der ingen cifre til højre for decimaltegnet. Værdien muliggør 19 cifre; positive eller negative heltal mellem -9.223.372.036.854.775.808 (-2^63) og 9.223.372.036.854.775.807 (2^63-1).  Den kan repræsentere det størst mulige tal for de forskellige numeriske datatyper.  Som med typen til faste decimaltal kan typen til heltal være nyttig i de tilfælde, hvor du skal kunne kontrollere afrundingen. 
+**Whole Number** – repræsenterer en 64-bit (8-byte) heltalsværdi. Eftersom der er tale om et heltal, er der ingen cifre til højre for decimaltegnet. Værdien muliggør 19 cifre; positive eller negative heltal mellem -9,223,372,036,854,775,807 (-2^63+1) og 9,223,372,036,854,775,806 (2^63-2). Den kan repræsentere det størst mulige tal for de forskellige numeriske datatyper.  Som med typen til faste decimaltal kan typen til heltal være nyttig i de tilfælde, hvor du skal kunne kontrollere afrundingen. 
 
 > [!NOTE]
 >  Datamodellen i Power BI Desktop understøtter 64-bit heltalsværdier, men det største tal, de visuelle elementer kan udtrykke sikkert er 9.007.199.254.740.991 (2^53-1) på grund af JavaScript-begrænsninger. Hvis du arbejder med højere tal i din datamodel, kan du reducere størrelsen via beregninger, før du føjer dem til et visuelt element 

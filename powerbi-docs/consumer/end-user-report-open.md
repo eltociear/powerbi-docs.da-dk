@@ -4,20 +4,19 @@ description: I dette emne beskrives, at Power BI-forbrugere og slutbrugere var n
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 8/28/2018
+ms.date: 08/28/2018
 ms.author: mihart
-ms.openlocfilehash: 0896d397c7cc78ce36109cf1c975b34d081169a1
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: e02d7bfa295b3bd18b0b6b9c64c688ed668c8389
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70184759"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391727"
 ---
-# <a name="view-a-report-in-power-bi-service-for-consumers"></a>Få vist en rapport i Power BI-tjenesten for *forbrugere*
+# <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Få vist en rapport i Power BI-tjenesten for *forbrugere*
 En rapport er en eller flere sider med visualiseringer. Rapporter oprettes af Power BI-*designere* og [deles med *forbrugere* direkte](end-user-shared-with-me.md) eller som en del af en [app](end-user-apps.md). 
 
 Der er mange forskellige måder at åbne en rapport på. Her kan du se to af dem: Åbn fra startsiden, og åbn fra et dashboard. 
@@ -31,7 +30,7 @@ Lad os åbne en rapport, der er delt med dig direkte, og derefter åbne en rappo
    ![Startside](./media/end-user-report-open/power-bi-home-canvas.png)
 
 ### <a name="open-a-report-that-has-been-shared-with-you"></a>Åbn en rapport, der er delt med dig
-Power BI-*designere* kan dele en rapport direkte med dig. Indhold, der deles på denne måde, vises i objektbeholderen **Delt med mig** i navigationslinjen og i afsnittet **Delt med mig** på lærredet på startsiden.
+Power BI-*designere* kan dele en individuel rapport direkte med dig via et link i en mail eller ved at føje den til din Power BI Start. Indhold, der deles på denne måde, vises i objektbeholderen **Delt med mig** i navigationslinjen og i afsnittet **Delt med mig** på lærredet på startsiden.
 
 1. Åbn Power BI-tjenesten (app.powerbi.com).
 
@@ -45,13 +44,13 @@ Power BI-*designere* kan dele en rapport direkte med dig. Indhold, der deles på
 
 4. Du skal blot vælge *rapportkortet* for at åbne rapporten.
 
-   ![rapportside](./media/end-user-report-open/power-bi-report-open.png)
+   ![rapportside](./media/end-user-report-open/power-bi-open.png)
 
 5. Bemærk fanerne til venstre.  Hver fane repræsenterer en *side* i rapporten. Siden med *Growth Opportunity* er i øjeblikket åben. Vælg fanen *YTD Category* for at åbne denne rapportside i stedet for. 
 
    ![faner på rapportside](./media/end-user-report-open/power-bi-ytd.png)
 
-6. Lige nu får vi vist hele rapportsiden. Hvis du vil ændre visningen af siden (zoom), skal du vælge rullemenuen Vis i øverste højre hjørne ( **>** ) og vælge **Faktisk størrelse**.
+6. Lige nu får vi vist hele rapportsiden. Hvis du vil ændre visningen af siden (zoom), skal du vælge rullemenuen Vis i øverste højre hjørne og vælge **Faktisk størrelse**.
 
    ![skift zoom](./media/end-user-report-open/power-bi-fit-new.png)
 
@@ -66,7 +65,7 @@ Hvis du har modtaget apps fra kolleger eller fra AppSource, er disse apps tilgæ
 
    ![Startside](./media/end-user-report-open/power-bi-my-apps.png)
 
-8. Vælg en af appsene for at åbne den. Afhængigt af de indstillinger der er angivet af app*designeren*, åbner appen enten et dashboard, en rapport eller en apps indholdsliste. Hvis valg af appen:
+8. Vælg en af appsene for at åbne den. Afhængigt af de indstillinger der er angivet af app*designeren*, åbner appen enten et dashboard eller en rapport. Hvis valg af appen:
     - åbner en rapport, er du klar.
     - åbner et dashboard, skal du se ***Åbn en rapport fra et dashboard*** nedenfor.
 
@@ -95,5 +94,5 @@ Når du bliver mere fortrolig med at navigere i Power BI-tjenesten, finder du ud
 - og meget mere
 
 ## <a name="next-steps"></a>Næste trin
-Der er [så mange måder at interagere med en rapport på](end-user-reading-view.md).  Begynd udforskningen ved at vælge hver fane i siden af rapportlærredet.
+[Åbn og få vist et dashboard](end-user-dashboard-open.md)
 

@@ -7,123 +7,177 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/18/2018
+ms.date: 08/20/2018
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7390f029144e5cb37830921071ad5c2c678b2d4d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b41a50ae7c4aaf8f70c9d7745ea4767b7644a62f
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61285268"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70303024"
 ---
 # <a name="create-power-bi-visuals-using-python"></a>Opret Power BI-visualiseringer ved hjælp af Python
 Med **Power BI Desktop** kan du bruge **Python** til at visualisere dine data.
 
-## <a name="install-python"></a>Installér Python
-**Power BI Desktop** indeholder ikke **Python**-programmet, og det udrulles og installeres ikke i forbindelse med Power BI Desktop. Hvis du vil køre Python-scripts i **Power BI Desktop**, skal du installere **Python** separat på din lokale computer. Du kan downloade og installere **Python** gratis fra mange forskellige steder, herunder den [officielle downloadside for Python](https://www.python.org/) og [Anaconda](https://anaconda.org/anaconda/python/). Den aktuelle version af Python-scriptet i Power BI Desktop understøtter Unicode-tegn og mellemrum (tomme tegn) i installationsstien.
+## <a name="prerequisites"></a>Forudsætninger
 
-## <a name="enable-python-visuals"></a>Aktivér Python-visuals
-Du aktiverer Python-visuals ved at vælge **Fil > Indstillinger > Indstillinger**. Kontroller derefter, at din lokale Python-installation er angivet i afsnittet **Python-script** i vinduet **Indstillinger** på siden **Indstillinger** som vist på følgende billede. På følgende billede er installationsstien for Python **C:\Phyton27**, og denne sti er angivet eksplicit i tekstfeltet. Sørg for, at den viste sti afspejler den lokale Python-installation, som skal bruges af **Power BI Desktop**.
-   
-   ![](media/desktop-python-visuals/python-visuals-1.png)
+Gennemgå selvstudiet [Kør Python-scripts i Power BI Desktop](desktop-python-scripts.md) ved hjælp af følgende Python-script:
 
-Når du har angivet din Python-installation, er du klar til at begynde at oprette Python-visuals.
+```python
+import pandas as pd 
+df = pd.DataFrame({ 
+    'Fname':['Harry','Sally','Paul','Abe','June','Mike','Tom'], 
+    'Age':[21,34,42,18,24,80,22], 
+    'Weight': [180, 130, 200, 140, 176, 142, 210], 
+    'Gender':['M','F','M','M','F','M','M'], 
+    'State':['Washington','Oregon','California','Washington','Nevada','Texas','Nevada'],
+    'Children':[4,1,2,3,0,2,0],
+    'Pets':[3,2,2,5,0,1,5] 
+}) 
+print (df) 
+```
+Artiklen [Kør Python-scripts i Power BI Desktop](desktop-python-scripts.md) viser, hvordan du installerer Python på din lokale maskine og bruger den til Python-scripting i **Power BI Desktop**. Dette selvstudium anvender data fra ovenstående script til at illustrere oprettelse af Python-visualiseringer.
 
 ## <a name="create-python-visuals-in-power-bi-desktop"></a>Opret Python-visuals i Power BI Desktop
-1. Vælg ikonet **Visuelt Python-element** i ruden **Visualisering**, som vist på følgende billede, for at tilføje et visuelt Python-element.
+1. Vælg ikonet **Python Visual** i ruden **Visualisering**.
    
    ![](media/desktop-python-visuals/python-visuals-2.png)
 
-   Når du føjer et visuelt Python-element til en rapport, sker der følgende i **Power BI Desktop**:
-   
-   - Der vises en pladsholder for din Python-visual på rapportlærredet.
-   
-   - **Python Scripteditor** vises nederst i den midterste rude.
-   
-   ![](media/desktop-python-visuals/python-visuals-3.png)
+1.  I dialogboksen **Aktivér visuelle script-elementer**, der vises, skal du vælge **Aktivér**. 
 
-2. Føj derefter de felter, du vil bruge i Python-scriptet, til afsnittet **Værdier** i området **Felter** på samme måde som med alle andre **Power BI Desktop**-visuals. 
-    
-    Kun de felter, der er føjet til området **Felter**, er tilgængelige i Python-scriptet. Du kan føje nye felter til eller fjerne unødvendige felter fra området **Felter**, mens du arbejder med Python-scriptet i **Python Scripteditor til Power BI Desktop**. Det registreres automatisk i **Power BI Desktop**, hvilke felter du har tilføjet eller fjernet.
+    Når du føjer et visuelt Python-element til en rapport, foretager **Power BI Desktop** følgende handlinger:
+   
+     - Der vises en pladsholder for din Python-visual på rapportlærredet.
+   
+     - **Python Scripteditor** vises nederst i den midterste rude.
+   
+    ![](media/desktop-python-visuals/python-visuals-3.png)
+
+1. Træk derefter felterne **Alder**, **Børn**, **Fnavn**, **Køn**, **Kæledyr**, **Stat** og **Vægt** til afsnittet **Værdier**, hvor der står "**Tilføj datafelter her**". 
+
+    ![](media/desktop-python-visuals/python-visuals-15.png)
+
+   Python-scriptet kan kun bruge felter, der er føjet til afsnittet **Værdier**. Du kan tilføje eller fjerne felter fra afsnittet **Værdier**, mens du arbejder med dit Python-script. **Power BI Desktop** registrerer automatisk feltændringer.
    
    > [!NOTE]
    > Standardsammenlægningstypen for Python-visuals er *Opsummer ikke*.
    > 
    > 
    
-3. Du kan nu bruge de valgte data til at oprette en afbildning. 
+1. Du kan nu bruge de valgte data til at oprette en afbildning. 
 
-    I takt med at du vælger felter, opretter **Python Scripteditor** understøttende bindingskode for Python-scriptet baseret på dine valg i det grå afsnit øverst i editorruden. I takt med at du vælger eller fjerner flere felter, genereres eller fjernes der tilsvarende automatisk understøttende kode i Python Scripteditor.
-   
-   I det viste eksempel på følgende billede er tre felter valgt: hp, gear og drat. Som resultat af disse valg opretter Python Scripteditor følgende bindingskode:
-   
-   * En dataramme kaldet **dataset** blev oprettet
-     * Denne dataramme består af de forskellige felter, brugeren har valgt
-   * Standardsammenlægningen er *Opsummer ikke*
-   * På samme måde som med tabelvisualiseringer grupperes felter, og duplikerede rækker vises kun én gang
-   
-   ![](media/desktop-python-visuals/python-visuals-4.png)
-   
-   > [!TIP]
-   > I nogle tilfælde ønsker du måske ikke automatisk gruppering, eller du vil måske have alle rækker vist, inklusive dubletter. I disse tilfælde kan du føje et indeksfelt til dit datasæt, hvilket medfører, at alle rækker opfattes som værende entydige, og gruppering derfor forhindres.
-   > 
-   > 
-   
-   Den genererede dataramme kaldes et **dataset**, og der kan opnås adgang til udvalgte kolonner ved hjælp af deres respektive navne. Du kan for eksempel få adgang til feltet Gear ved at skrive *dataset$gear* i Python-scriptet.
+    I takt med at du vælger eller fjerner felter, genereres eller fjernes der automatisk understøttende kode i Python Scripteditor. 
+    
+    Som resultat af dine valg opretter Python Scripteditor følgende bindingskode.
 
-4. Idet datarammen genereres automatisk ved hjælp af de felter, du har valgt, kan du skrive et Python-script, der resulterer i en afbildning på Python-standardenheden. Når scriptet er fuldført, skal du vælge **Kør** på titellinjen i **Python Scripteditor** (**Kør** findes i højre side af titellinjen).
+    * Editoren opretter en **datasæt**-dataramme med de felter, du har tilføjet. 
+    * Standardsammenlægningen er *Opsummer ikke*.
+    * På samme måde som med tabelvisualiseringer grupperes felter, og duplikerede rækker vises kun én gang.
+
+        ![](media/desktop-python-visuals/python-visuals-10.png)
    
-    Når du vælger **Kør**, identificeres afbildningen i **Power BI Desktop**, og den præsenteres på canvasset. Eftersom processen udføres på din lokale Python-installation, skal du kontrollere, at de påkrævede pakker er installeret.
+     > [!TIP] 
+     > I nogle tilfælde ønsker du måske ikke automatisk gruppering, eller du vil måske have alle rækker vist, inklusive dubletter. I disse tilfælde kan du føje et indeksfelt til dit datasæt, hvilket medfører, at alle rækker opfattes som værende entydige, og gruppering derfor forhindres.
    
-   Visualiseringen afbildes igen i **Power BI Desktop**, når en eller flere af følgende hændelser opstår:
+   Du kan få adgang til kolonner i datasættet ved hjælp af deres respektive navne. Du kan f.eks. kode datasættet ["Alder"] i dit Python-script for at få adgang til feltet alder.
+
+1. Idet datarammen genereres automatisk ved hjælp af de felter, du har valgt, kan du skrive et Python-script, der resulterer i en afbildning på Python-standardenheden. Når scriptet er færdigt, vælger du **Kør** på titellinjen i **Python Scripteditor**.
+
+   Visualiseringen afbildes igen i **Power BI Desktop**, hvis en eller flere af følgende hændelser opstår:
    
    * Når du vælger **Kør** på titellinjen i **Python Scripteditor**
    * Når data ændres pga. opdatering, filtrering eller fremhævning af data
+   
+   Når du kører et Python-script, der resulterer i en fejl, afbildes Python-visualiseringen ikke, og der vises en fejlmeddelelse på lærredet. Du kan finde oplysninger om fejlen ved at vælge **Se oplysninger** i meddelelsen.
 
-    På følgende billede vises et eksempel på den tilsvarende afbildningskode, og korrelationen mellem forskellige biltypers egenskaber afbildes.
+   Hvis du vil have en større visning af visualiseringerne, kan du minimere **Python Scripteditor**.
 
-    ![](media/desktop-python-visuals/python-visuals-5.png)
+OK, lad os oprette nogle visualiseringer.
 
-5. Hvis du vil have en større visning af visualiseringerne, kan du minimere **Python Scripteditor**. Som med alle andre visualiseringer i **Power BI Desktop** kan du filtrere på tværs af afbildningen af korrelationen ved kun at vælge sportsvogne i kransevisualiseringen (den runde visualisering til højre på eksempelbilledet ovenfor).
+## <a name="create-a-scatter-plot"></a>Opret et punktdiagram
 
-    ![](media/desktop-python-visuals/python-visuals-6.png)
+Lad os oprette et punktdiagram for at se, om der er korrelation mellem alder og vægt. 
 
-6. Du kan også ændre Python-scriptet for at tilpasse din visual og udnytte effektiviteten i Python ved at føje parametre til afbildningskommandoen.
+1. Indtast følgende kode under **Indsæt eller indtast din scriptkode her**:
 
-    Den oprindelige kommando for afbildning var følgende:
+   ```python
+   import matplotlib.pyplot as plt 
+   dataset.plot(kind='scatter', x='Age', y='Weight', color='red')
+   plt.show() 
+   ```  
+   Ruden Python Scripteditor ser nu ud på følgende måde:
 
-    plt.matshow(dataset.corr('pearson'))
+   ![](media/desktop-python-visuals/python-visuals-11.png)
 
-    Med nogle få ændringer i Python-scriptet er kommandoen nu følgende:
+   **Matplotlib**-biblioteket importeres for at afbilde og oprette vores visualiseringer.
 
-    plt.matshow(dataset.corr('kendall'))
+1. Når du vælger scriptknappen **Kør**, genereres følgende punktdiagram i pladsholderen Python visuelt billede.
 
-    Som et resultat heraf afbildes din Python-visual nu ved hjælp af Kendall Tau korrelationskoefficienten som vist på følgende billede.
+   ![](media/desktop-python-visuals/python-visuals-12.png)
 
-    ![](media/desktop-python-visuals/python-visuals-7.png)
+## <a name="create-a-line-plot-with-multiple-columns"></a>Opret et linjeområde med flere kolonner
 
-    Ved udførelse af et Python-script, der resulterer i en fejl, afbildes en Python-visual ikke, og der vises en fejlmeddelelse på lærredet. Du kan få flere oplysninger om fejlen ved at vælge **Se detaljer** i fejlmeddelelsen på lærredet i din Python-visual.
+ Lad os oprette et linjeområde for hver person, der viser antallet af børn og kæledyr. Fjern eller kommenter koden under **Indsæt eller indtast din scriptkode her**, og indtast følgende Python-kode:
 
-    ![](media/desktop-python-visuals/python-visuals-8.png)
+ ```python
+ import matplotlib.pyplot as plt 
+ax = plt.gca() 
+dataset.plot(kind='line',x='Fname',y='Children',ax=ax) 
+dataset.plot(kind='line',x='Fname',y='Pets', color='red', ax=ax) 
+plt.show() 
+```
+Når du vælger scriptknappen **Kør**, genereres følgende linjeområde med flere kolonner.
 
-    > **Sikkerhed i forbindelse med Python-scripts:** Python-visualiseringer oprettes på baggrund af Python-scripts, som kan indeholde kode, der udgør en sikkerhedsrisiko eller en risiko for dine personlige oplysninger. Første gang en bruger forsøger at få vist eller interagere med en Python-visual, vises der en sikkerhedsadvarsel. Du skal kun aktivere Python-visuals, hvis du har tillid til forfatteren og kilden, eller når du har gennemset og forstået Python-scriptet.
-    > 
-    > 
+![](media/desktop-python-visuals/python-visuals-13.png) 
+
+## <a name="create-a-bar-plot"></a>Opret et søjlediagram
+
+Lad os oprette et søjlediagram for hver persons alder. Fjern eller kommenter koden under **Indsæt eller indtast din scriptkode her**, og indtast følgende Python-kode:
+
+```python
+import matplotlib.pyplot as plt 
+dataset.plot(kind='bar',x='Fname',y='Age') 
+plt.show() 
+```
+
+Når du vælger scriptknappen **Kør**, genereres følgende søjlediagram:
+
+![](media/desktop-python-visuals/python-visuals-14.png) 
+
+## <a name="security"></a>Sikkerhed
+
+> [!IMPORTANT] 
+  > **Sikkerhed i forbindelse med Python-scripts:** Python-visualiseringer oprettes på baggrund af Python-scripts, som kan indeholde kode, der udgør en sikkerhedsrisiko eller en risiko for dine personlige oplysninger. Første gang en bruger forsøger at få vist eller interagere med en Python-visual, vises der en sikkerhedsadvarsel. Du skal kun aktivere Python-visuals, hvis du har tillid til forfatteren og kilden, eller når du har gennemset og forstået Python-scriptet. 
+  >  
+
+## <a name="more-information-about-plotting-with-matprolib-pandas-and-python"></a>Flere oplysninger om afbildning med Matprolib, Pandas og Python
+
+Dette selvstudium er udformet, så du kan komme i gang med at oprette visualiseringer med Python i **Power BI Desktop.** Det behandler bare nogle få af de mange muligheder og funktioner, der findes til oprettelse af visuelle rapporter ved hjælp af Python, Pandas og Matprolib-biblioteket. Der er mange flere oplysninger, og her er nogle links, så du kan komme i gang.
+
+* Dokumentation på webstedet [Matplotlib](https://matplotlib.org/). 
+* [Matplotlib-selvstudium: En grundlæggende vejledning i brug af Matplotlib med Python](https://www.datasciencelearner.com/matplotlib-tutorial-complete-guide-to-use-matplotlib-with-python/) 
+* [Matplotlib-selvstudium – Python Matplotlib-bibliotek med eksempler](https://www.edureka.co/blog/python-matplotlib-tutorial/) 
+* [Pandas API-reference](http://pandas.pydata.org/pandas-docs/stable/reference/index.html) 
+* [Python-visualiseringer i Power BI Service](https://powerbi.microsoft.com/blog/python-visualizations-in-power-bi-service/) 
+* [Brug af Python-visualiseringer i Power BI](https://www.absentdata.com/how-to-user-python-and-power-bi/)
+
 
 ## <a name="known-limitations"></a>Kendte begrænsninger
-Python-visuals i **Power BI Desktop** har nogle få begrænsninger:
+
+Python-visualiseringer i **Power BI Desktop** har nogle få begrænsninger:
 
 * Begrænsninger for datastørrelse – Data, der bruges af en Python-visual til afbildning, er begrænset til 150.000 rækker. Hvis der er valgt flere end 150.000 rækker, bruges kun de øverste 150.000 rækker, og der vises en meddelelse på billedet.
 * Begrænsning af beregningstid – hvis en beregning af en Python-visual overskrider fem minutter, opstår der timeout for udførelsen, hvilket medfører en fejl.
 * Relationer – På samme måde som med andre Power BI Desktop-visualiseringer opstår der en fejl, hvis der vælges datafelter fra forskellige tabeller, hvor der ikke er defineret en relation.
 * Python-visuals opdateres, når data opdateres, filtreres eller fremhæves. Selve billedet er dog ikke interaktivt og må ikke være kilden til tværgående filtrering.
-* Python-visuals reagerer på fremhævning af andre visuals, men du kan ikke klikke på elementer i en Python-visual for at filtrere på tværs af andre elementer.
+* Python-visualiseringer reagerer på fremhævning af andre visualiseringer, men du kan ikke klikke på elementer i en Python-visualisering for at filtrere på tværs af andre elementer.
 * Det er kun afbildninger, der afbildes på den Python-enhed, som bruges til standardvisning, der vises korrekt på lærredet. Undgå at bruge en anden Python-enhed til visning.
 
 ## <a name="next-steps"></a>Næste trin
+
 Du kan finde yderligere oplysninger om Python i Power BI i følgende artikler.
 
-* [Kørsel af Python-scripts i Power BI Desktop](desktop-python-scripts.md)
+* [Kør Python-scripts i Power BI Desktop](desktop-python-scripts.md)
 * [Brug en ekstern Python IDE sammen med Power BI](desktop-python-ide.md)
 

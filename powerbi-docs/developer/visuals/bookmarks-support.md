@@ -1,6 +1,6 @@
 ---
-title: Bogmærker
-description: Power BI Visuals kan håndtere skift mellem bogmærker
+title: Tilføj understøttelse af bogmærker i Power BI-visualiseringer
+description: Power BI-visualiseringer kan håndtere skift mellem bogmærker
 author: zBritva
 ms.author: v-ilgali
 manager: rkarlin
@@ -9,57 +9,54 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 90e3fc73cd49a5c84a5c2acc68a8cf5e0e4aa42b
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: c7fb8fa6fcf8c07f0d8f466892fff8d03a492a79
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425499"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237271"
 ---
-# <a name="add-bookmarks-support-for-power-bi-visuals"></a>Tilføj understøttelse af bogmærker i Power BI Visuals
+# <a name="add-bookmark-support-for-power-bi-visuals"></a>Tilføj understøttelse af bogmærker i Power BI-visualiseringer
 
-Bogmærker i Power BI-rapporter giver mulighed for at registrere en konfigureret visning af en rapportside med visualiseringens markeringstilstand og filtreringstilstand. Dette kræver dog yderligere handlinger i forbindelse med brugerdefinerede visualiseringer for at understøtte bogmærket og reagere korrekt på ændringer.
+Med bogmærker i Power BI-rapporter kan du registrere en konfigureret visning af en rapportside med visualiseringens markeringstilstand og dens filtreringstilstand. Dette kræver dog yderligere handlinger i forbindelse med brugerdefinerede visualiseringer for at understøtte bogmærket og reagere korrekt på ændringer.
 
-Få mere at vide om bogmærker i [dokumentationen](https://docs.microsoft.com/power-bi/desktop-bookmarks)
+Du kan finde flere oplysninger om bogmærker under [Brug bogmærker til at dele indsigt og oprette tekstenheder i Power BI](https://docs.microsoft.com/power-bi/desktop-bookmarks).
 
 ## <a name="report-bookmarks-support-in-your-visual"></a>Understøttelse af bogmærker i rapporter for din visualisering
 
 Hvis din visualisering interagerer med andre visualiseringer, vælger datapunkter eller filtrerer andre visualiseringer, skal du gendanne tilstanden fra egenskaberne.
 
-## <a name="how-to-add-report-bookmarks-support"></a>Sådan tilføjer du understøttelse af bogmærker i rapporter
+## <a name="add-report-bookmarks-support"></a>Tilføj understøttelse af bogmærker i rapporter
 
-1. Installér (eller opdater) det krævede værktøj: `powerbi-visuals-utils-interactivityutils` (https://github.com/Microsoft/PowerBI-visuals-utils-interactivityutils/) ) version 3.0.0 eller nyere. Det indeholder flere klasser til redigering af valg af tilstand eller filter. Det er påkrævet til visualiseringer med filtrering og alle visualiseringer, der bruger `InteractivityService`.
+1. Installér (eller opdater) det krævede værktøj, [powerbi-visuals-utils-interactivityutils](https://github.com/Microsoft/PowerBI-visuals-utils-interactivityutils/), version 3.0.0 eller nyere. Det indeholder flere klasser til redigering af valg af tilstand eller filter. Det er påkrævet til visualiseringer med filtrering og alle visualiseringer, der bruger `InteractivityService`.
 
-2. Opdater Visual API til 1.11.0 for at kunne bruge `registerOnSelectCallback` i forekomster af `SelectionManager`. Det er påkrævet for visualiseringer uden filtrering, der bruger den almindelige `SelectionManager` i stedet for `InteractivityService`.
+2. Opdater visualiseringens API til version 1.11.0 for at bruge `registerOnSelectCallback` i en forekomst af `SelectionManager`. Det er påkrævet til visualiseringer uden filtrering, der bruger den almindelige `SelectionManager` i stedet for `InteractivityService`.
 
-### <a name="how-custom-visuals-interact-with-power-bi-in-the-report-bookmarks-scenario"></a>Sådan interagerer brugerdefinerede visualiseringer med Power BI i scenarier med bogmærker i rapporter
+### <a name="how-custom-visuals-interact-with-power-bi-in-report-bookmarks"></a>Sådan interagerer brugerdefinerede visualiseringer med Power BI i bogmærker i rapporter
 
-Lad os se på følgende eksempel: En bruger opretter flere bogmærker på rapportsiden med forskellig markeringstilstand i hvert bogmærke.
+Lad os overveje følgende scenarie: du vil oprette flere bogmærker på rapportsiden med en anden markeringstilstand i hvert bogmærke.
 
-Først vælger brugeren et datapunkt i din visualisering. Visualiseringen interagerer med Power BI og andre visualiseringer ved at sende valgene til værten. Derefter vælger brugeren "Tilføj" i `Bookmark panel`, og Power BI gemmer de aktuelle valg til det nye bogmærke.
+Først vælger du et datapunkt i din visualisering. Visualiseringen interagerer med Power BI og andre visualiseringer ved at sende valgene til værten. Derefter vælger du **Tilføj** i ruden **Bogmærke**, og Power BI gemmer de aktuelle valg til det nye bogmærke.
 
-Det sker gentagne gange, når brugeren ændrer valget og tilføjer nye bogmærker.
-Når bogmærkerne er oprettet, kan brugeren skifte mellem dem.
+Det sker gentagne gange, når du ændrer valget og tilføjer nye bogmærker. Når du har oprettet bogmærkerne, kan du skifte mellem dem.
 
-Når brugerne vælger et bogmærke, gendanner Power BI det gemte filter eller den gemte markeringstilstand, som sendes til visualiseringerne. Andre visualiseringer markeres eller filtreres i overensstemmelse med den tilstand, der er gemt i bogmærket. Power BI-værten er ansvarlig for handlingerne. Din visualisering er ansvarlig for at afspejle den nye markeringstilstand korrekt (f.eks. ændre farve på de gengivne datapunkter).
+Når du vælger et bogmærke, gendanner Power BI det gemte filter eller den gemte markeringstilstand, som sendes til visualiseringerne. Andre visualiseringer markeres eller filtreres i overensstemmelse med den tilstand, der er gemt i bogmærket. Power BI-værten er ansvarlig for handlingerne. Din visualisering er ansvarlig for at afspejle den nye markeringstilstand korrekt (f.eks. ændring af farverne på de gengivne datapunkter).
 
-Den nye markeringstilstand kommunikeres til visualiseringen gennem metoden `update`. Argumentet `options` indeholder en særlig egenskab: `options.jsonFilters`. Det er et JSONFilter, og egenskaben kan indeholde værdierne `Advanced Filter` og `Tuple Filter`.
+Den nye markeringstilstand kommunikeres til visualiseringen gennem metoden `update`. Argumentet `options` indeholder en særlig egenskab, `options.jsonFilters`. Det er egenskaben JSONFilter, der kan indeholde værdierne `Advanced Filter` og `Tuple Filter`.
 
-Visualiseringen skal gendanne filterværdierne for at vise den tilsvarende tilstand for visualiseringen for det valgte bogmærke.
+Visualiseringen skal gendanne filterværdierne for at vise den tilsvarende tilstand for visualiseringen for det valgte bogmærke. Eller hvis visualiseringen kun bruger markeringer, kan du bruge den specielle metode `registerOnSelectCallback` i ISelectionManager, der er registreret til callback-funktionskald.
 
-Alternativt kan du bruge den specielle metode `registerOnSelectCallback` i ISelectionManager, der er registreret til callback-funktionskald, hvis visualiseringen kun bruger markeringer.
+### <a name="visuals-with-selection"></a>Visualiseringer med markeringer
 
-### <a name="visuals-with-selections"></a>Visualiseringer med markeringer
+Hvis din visualisering interagerer med andre visualiseringer ved hjælp af [markering](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/Selection.md), kan du tilføje bogmærker på en af to måder:
 
-Hvis dine visualiseringer interagerer med andre visualiseringer ved hjælp af [markeringer](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/Selection.md). Du kan tilføje bogmærker på to måder.
+* Hvis visualiseringen ikke allerede har brugt [InteractivityService](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md), kan du bruge metoden `FilterManager.restoreSelectionIds`.
 
-* Du kan bruge metoden `FilterManager.restoreSelectionIds`, hvis du **ikke har brugt [`InteractivityService`](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md)** tidligere i din visualisering.
+* Hvis visualiseringen allerede administrerer markeringer ved hjælp af [InteractivityService](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md), skal du bruge metoden `applySelectionFromFilter` til forekomsten `InteractivityService`.
 
-* Hvis din visualisering allerede bruger **[`InteractivityService`](https://github.com/Microsoft/powerbi-visuals-utils-interactivityutils/blob/master/docs/api/interactivityService.md)** til at administrere markeringer, skal du bruge metoden `applySelectionFromFilter` i forekomster af `InteractivityService`.
+#### <a name="use-iselectionmanagerregisteronselectcallback"></a>Brug ISelectionManager.registerOnSelectCallback
 
-#### <a name="using-iselectionmanagerregisteronselectcallback"></a>Brug af `ISelectionManager.registerOnSelectCallback`
-
-Når en bruger klikker på bogmærker, kalder Power BI metoden `callback` for visualiseringen med de tilsvarende markeringer. 
+Når du vælger et bogmærke, kalder Power BI metoden `callback` for visualiseringen med de tilsvarende markeringer. 
 
 ```typescript
 this.selectionManager.registerOnSelectCallback(
@@ -69,7 +66,7 @@ this.selectionManager.registerOnSelectCallback(
 );
 ```
 
-Lad os antage, at du har et datapunkt i din visualisering, der er oprettet i metoden [`'visualTransform'`](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts#L74).
+Lad os antage, at du har et datapunkt i din visualisering, der blev oprettet i metoden [visualTransform](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/src/barChart.ts#L74).
 
 Desuden ser `datapoints` således ud:
 
@@ -84,7 +81,7 @@ visualDataPoints.push({
 });
 ```
 
-Du har dermed `visualDataPoints` som dine datapunkter, og et `ids`-matrix overføres til funktionen `callback`.
+Du har nu `visualDataPoints` som dine datapunkter, og `ids`-matricen overføres til funktionen `callback`.
 
 På dette tidspunkt skal visualiseringen sammenligne matricen i `ISelectionId[]` med markeringen i din `visualDataPoints`-matrix og angive de tilsvarende datapunkter som markeret.
 
@@ -102,19 +99,21 @@ this.selectionManager.registerOnSelectCallback(
 );
 ```
 
-Når datapunkterne er opdateret, afspejler de den aktuelle markeringstilstand, der er gemt i objektet `filter`. Når datapunkterne derefter gengives, vil markeringstilstanden for den brugerdefinerede visualisering matche tilstanden i bogmærket.
+Når du har opdateret datapunkterne, afspejler de den aktuelle markeringstilstand, der er gemt i objektet `filter`. Når datapunkterne derefter gengives, vil markeringstilstanden for den brugerdefinerede visualisering stemme overens med tilstanden i bogmærket.
 
-### <a name="using-interactivityservice-for-control-selections-in-the-visual"></a>Brug af `InteractivityService` til at styre markeringerne i visualiseringen
+### <a name="use-interactivityservice-for-control-selections-in-the-visual"></a>Brug af InteractivityService til at styre markeringerne i en visualisering
 
-Hvis den visualisering bruger `InteractivityService`, behøver du ikke yderligere handlinger for at understøtte bogmærker i din visualisering.
+Hvis din visualisering bruger `InteractivityService`, behøver du ikke yderligere handlinger for at understøtte bogmærkerne i din visualisering.
 
-Dette værktøj håndterer visualiseringens markeringstilstand, når brugeren vælger bogmærker.
+Når du vælger bogmærker, håndterer hjælpeværktøjet visualiseringens valgtilstand.
 
-### <a name="visuals-with-filter"></a>Visualiseringer med filter
+### <a name="visuals-with-a-filter"></a>Visualiseringer med filter
 
-Lad os antage, at visualiseringen opretter et filter for data efter datoområde. Det betyder, at `startDate` og `endDate` definerer starten og slutningen på området.
+Lad os antage, at visualiseringen opretter et filter for data efter datoområde. Du har `startDate` og `endDate` som start- og slutdatoer for intervallet.
+
 Visualiseringen opretter et avanceret filter og kalder værtsmetoden `applyJsonFilter` for at filtrere data efter de relevante betingelser.
-`target` er den tabel, der bruges til filtrering.
+
+Målet er den tabel, der bruges til filtrering.
 
 ```typescript
 import { AdvancedFilter } from "powerbi-models";
@@ -145,7 +144,7 @@ this.host.applyJsonFilter(
 );
 ```
 
-Hver gang en bruger klikker på et bogmærke, modtager den brugerdefinerede visualisering et `update`-kald.
+Hver gang du vælger et bogmærke, modtager den brugerdefinerede visualisering et `update`-kald.
 
 Den brugerdefinerede visualisering skal kontrollere filteret i objektet:
 
@@ -176,21 +175,21 @@ if (jsonFilters
 }
 ```
 
-Derefter skal visualiseringen ændre sin interne tilstand – datapunkter og visualiseringsobjekter (linjer, rektangler osv.) – så de afspejler de aktuelle betingelser.
+Derefter skal den pågældende visualisering ændre sin interne tilstand, så den afspejler de aktuelle betingelser. Den interne tilstand indeholder datapunkterne og visualiseringsobjekterne (linjer, rektangler osv.).
 
 > [!IMPORTANT]
-> I scenariet med bogmærker i rapporter skal visualiseringen ikke kalde `applyJsonFilter` for at filtrere andre visualiseringer – de er allerede filtreret af Power BI.
+> I scenariet med bogmærker i rapporter skal visualiseringen ikke kalde `applyJsonFilter` for at filtrere andre visualiseringer. De vil allerede blive filtreret af Power BI.
 
-Visualiseringen Tidslinjeudsnitsværktøj skifer områdevælger, så den svarer til dataområderne.
+Visualiseringen Tidslinjeudsnitsværktøj skifter områdevælger, så den svarer til dataområderne.
 
 Få mere at vide i [lageret med Tidslinjeudsnitsværktøj](https://github.com/Microsoft/powerbi-visuals-timeline/commit/606f1152f59f82b5b5a367ff3b117372d129e597?diff=unified#diff-b6ef9a9ac3a3225f8bd0de84bee0a0df).
 
-### <a name="filter-state-to-save-visual-properties-in-bookmarks"></a>Brug af filterState til at gemme visualiseringens egenskaber i bogmærker
+### <a name="filter-the-state-to-save-visual-properties-in-bookmarks"></a>Filtrer tilstanden for at gemme egenskaber for en visualisering i bogmærker
 
-Egenskaben `filterState` opretter en egenskab for en del af filtrering. Visualiseringen kan gemme forskellige værdier i bogmærker.
+Egenskaben `filterState` opretter en egenskab for en del af filtrering. En visualisering kan gemme flere forskellige værdier i bogmærker.
 
-Hvis du vil gemme egenskabens værdi for filtertilstanden, skal objektegenskaben være markeret som `"filterState": true` i `capabilities.json`.
+Hvis du vil gemme egenskabsværdien som en filtertilstand, skal du markere objektets egenskab som `"filterState": true` i filen *capabilities.json*.
 
-Eksempel: `Timeline Slicer` gemmer værdier for egenskaben `Granularity` i filteret. Desuden giver det mulighed for at ændre den aktuelle kornethed, hvis brugeren ændrer bogmærke.
+Tidslinjeudsnitsværktøjet gemmer f.eks. egenskabsværdierne `Granularity` i et filter. Det gør det muligt at ændre den aktuelle granularitet, når du ændrer bogmærkerne.
 
 Få mere at vide i [lageret med Tidslinjeudsnitsværktøj](https://github.com/microsoft/powerbi-visuals-timeline/commit/8b7d82dd23cd2bd71817f1bc5d1e1732347a185e#diff-290828b604cfa62f1cb310f2e90c52fdR334).

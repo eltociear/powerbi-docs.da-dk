@@ -1,30 +1,29 @@
 ---
-title: Få vist en rapport i Power BI
-description: Rapporter i Power BI
+title: Rapporter i Power BI-tjenesten
+description: Rapporter i Power BI-tjenesten til forbrugere
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 08/24/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 9a844ff813435328df63240aa46aff3430117f6e
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: c13398ff08722c54a9f0c373a1c103e4d684c9bb
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67532163"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391382"
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
 
 En Power BI-rapport er en visning med flere perspektiver af et datasæt med visualiseringer, som repræsenterer forskellige resultater og indsigter fra dette datasæt.  En rapport kan indeholde en enkelt visualisering eller sider fulde af visualiseringer. Afhængigt af din jobfunktion kan du være en person, der *designer* rapporter. Du også kan være en person, der *forbruger* eller anvender rapporter.
 
-![Skærmbillede af en rapportside.](./media/end-user-reports/power-bi-report.png)
+![Skærmbillede af en rapportside.](./media/end-user-reports/power-bi-reports.png)
 
-Denne rapport indeholder fire sider (eller faner), og du ser i øjeblikket siden **Synspunkt**. På denne side er der fem forskellige visualiseringer og en sidetitel.
+Denne rapport indeholder seks sider (eller faner), og du ser i øjeblikket siden **Synspunkt**. På denne side er der fem forskellige visualiseringer og en sidetitel. Ruden *Filtre* viser ét filter, som er anvendt på alle rapportsider. Hvis du vil skjule ruden Filtre, skal du vælge pilen ( **>** ).
 
 Hvis du ikke har arbejdet med Power BI før, kan du få et godt overblik ved at læse [Grundlæggende begreber for forbrugere af Power BI-tjenesten](end-user-basic-concepts.md). Rapporter er tilgængelige til visning, deling og anmærkning på mobilenheder. Du kan få flere oplysninger under: [Udforsk rapporter i Power BI-mobilapps](mobile/mobile-reports-in-the-mobile-apps.md).
 
@@ -42,6 +41,8 @@ Når du udforsker og interagerer med dit indhold, kan du filtrere, lave udsnit, 
 ### <a name="save-your-changes-or-revert-to-the-default-settings"></a>Gem dine ændringer, eller gendan standardindstillingerne
 
 Dette betyder ikke, at du ikke kan gemme dine ændringer. Det kan du godt, men disse ændringer påvirker kun din visning af indholdet. Hvis du vil vende tilbage til den oprindelige standardvisning af rapporten, skal du vælge **Nulstil til standard**.
+
+![Skærmbillede af ikonet Vend tilbage til standard.](./media/end-user-reports/power-bi-reset.png)
 
 ## <a name="dashboards-versus-reports"></a>Dashboards sammenlignet med rapporter
 
@@ -76,6 +77,5 @@ Eller måske er du en *forbruger*, der modtager rapporter fra andre. Du vil gern
 
 ## <a name="next-steps"></a>Næste trin
 
-[Hvad er Power BI?](../power-bi-overview.md)
-
-[Grundlæggende begreber for forbrugere af Power BI-tjenesten](end-user-basic-concepts.md)
+[Åbn og få vist en rapport](end-user-report-open.md)    
+[Dashboards i Power BI-tjenesten](end-user-dashboards.md)

@@ -1,21 +1,21 @@
 ---
 title: Integreret analyse for at integrere Power BI-indhold i dit program for dine kunder
 description: Få mere at vide om, hvordan du integrerer en rapport, et dashboard eller et felt i et program ved hjælp af Power BI-API'er for at bruge integreret analyse for dine kunder. Få mere at vide om, hvordan du integrerer Power BI i dit program ved hjælp af software til integreret analyse, integrerede analyseværktøjer eller integrerede værktøjer til business intelligence.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
-ms.reviewer: nishalit
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
+ms.reviewer: rkarlin
 ms.topic: tutorial
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: seodec18
 ms.date: 04/02/2019
-ms.openlocfilehash: e945e19505d7342cf3ba2236b4811e87a69730ab
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 8fd87174a1f94ac8a6472238164298c47aa5691e
+ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710961"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70391796"
 ---
 # <a name="tutorial-embed-power-bi-content-into-an-application-for-your-customers"></a>Selvstudium: Integrer Power BI-indhold i en app til dine kunder
 
@@ -198,9 +198,9 @@ Hvis du vil hente **ApplicationSecret**, skal du følge disse trin:
 
     ![Vælg en app](media/embed-sample-for-customers/embed-sample-for-customers-0038.png)
 
-4. Vælg **certifikater og hemmeligheder** under **Administrer**.
+4. Vælg **Certifikater og hemmeligheder** under **Administrer**.
 
-5. Vælg **nye klient hemmeligheder**.
+5. Vælg **Nye kundehemmeligheder**.
 
 6. Angiv et navn i feltet **Beskrivelse**, og vælg en varighed. Vælg derefter **Gem** for at hente **værdien** til dit program. Når du lukker ruden **Nøgler** efter at have gemt nøgleværdien, vises feltet med værdien kun som skjult. På det tidspunkt kan du ikke hente nøgleværdien. Hvis du mister nøgleværdien, skal du oprette en ny i Azure Portal.
 

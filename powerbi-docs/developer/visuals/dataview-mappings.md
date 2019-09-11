@@ -1,6 +1,6 @@
 ---
-title: Tilknytning af datavisning
-description: Sådan transformeres Power BI-data, før de overføres til visuals
+title: Forstå tilknytning af datavisning i Power BI-visualiseringer
+description: I denne artikel beskrives det, hvordan Power BI transformerer data, før de sendes til visualiseringer.
 author: asander
 ms.author: asander
 manager: rkarlin
@@ -9,19 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: ff70b2f12921694617a736164484df1326471eea
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 07989183688045f34d78e71cdaad5045d080f436
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425177"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237235"
 ---
-# <a name="data-view-mappings-in-power-bi-visuals"></a>Tilknytning af datavisning i Power BI Visuals
+# <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Forstå tilknytning af datavisning i Power BI-visualiseringer
 
-En `dataViewMappings` beskriver, hvordan datarollerne er relateret til hinanden og giver dig mulighed for at angive betingede krav til dem.
-Der er et afsnit til hver af `dataMappings`.
+I denne artikel gennemgår tilknytning af datavisning og beskriver, hvordan dataroller er relateret til hinanden, og giver dig mulighed for at angive betingede krav til dem. Artiklen beskriver også hver `dataMappings`-type.
 
-Hver gyldig tilknytning opretter en `DataView`, men vi understøtter i øjeblikket kun, at der udføres én forespørgsel pr. visual, så du i de fleste situationer kun får én `DataView`. Du kan dog angive flere datatilknytninger med forskellige betingelser, hvilket muliggør
+Hver af de gyldige tilknytninger resulterer i en datavisning, men vi understøtter i øjeblikket kun én forespørgsel pr. visualisering. Du får normalt kun én datavisning. Du kan dog angive flere datatilknytninger under visse betingelser, hvilket muliggør:
 
 ```json
 "dataViewMappings": [
@@ -35,10 +34,10 @@ Hver gyldig tilknytning opretter en `DataView`, men vi understøtter i øjeblikk
 ]
 ```
 
-> [!NOTE]
-> Det er vigtigt at bemærke, at Power BI opretter en tilknytning til en DataView, hvis og kun hvis den gyldige tilknytning er udfyldt i `dataViewMappings`.
+Power BI opretter en tilknytning til en datavisning, hvis og kun hvis den gyldige tilknytning er udfyldt i `dataViewMappings`.
 
-Med andre ord, hvis `categorical` er defineret i `dataViewMappings`, men andre tilknytninger såsom `table`, `single` osv. ikke er det som i følgende eksempel:
+Med andre ord kan `categorical` være defineret i `dataViewMappings`, mens andre tilknytninger såsom `table` eller `single` ikke er det. Eksempel:
+
 ```json
 "dataViewMappings": [
     {
@@ -47,7 +46,8 @@ Med andre ord, hvis `categorical` er defineret i `dataViewMappings`, men andre t
 ]
 ```
 
-opretter Power BI en `DataView` med en enkelt `categorical` tilknytning (`table` og andre tilknytninger vil være `undefined`):
+Power BI opretter en datavisning med en enkelt `categorical`-tilknytning, mens `table` og andre tilknytninger ikke defineres:
+
 ```javascript
 {
     "categorical": {
@@ -60,16 +60,16 @@ opretter Power BI en `DataView` med en enkelt `categorical` tilknytning (`table`
 
 ## <a name="conditions"></a>Betingelser
 
-Beskriver betingelser for en bestemt datatilknytning. Du kan angive flere sæt af betingelser, og hvis dataene svarer til et af de sæt betingelser, der er beskrevet, accepterer visualen dataene som gyldige.
+I dette afsnit beskrives betingelserne for en bestemt datatilknytning. Du kan angive flere sæt af betingelser, og hvis dataene svarer til et af de sæt betingelser, der er beskrevet, accepterer visualiseringen dataene som gyldige.
 
-I øjeblikket kan du angive en minimum- og maksimumværdi for hvert felt. Det angiver antallet af felter, der kan bindes til den pågældende datarolle. 
+I øjeblikket kan du angive en minimum- og maksimumværdi for hvert felt. Værdien angiver antallet af felter, der kan bindes til den pågældende datarolle. 
 
 > [!NOTE]
 > Hvis en datarolle udelades i betingelsen, kan den have et vilkårligt antal felter.
 
 ### <a name="example-1"></a>Eksempel 1
 
-Du kan trække flere felter til hver datarolle. I dette eksempel begrænser vi kategorien til ét datafelt og måler til to datafelter.
+Du kan trække flere felter til hver datarolle. I dette eksempel begrænser du kategorien til ét datafelt og målingen til to datafelter.
 
 ```json
 "conditions": [
@@ -79,7 +79,9 @@ Du kan trække flere felter til hver datarolle. I dette eksempel begrænser vi k
 
 ### <a name="example-2"></a>Eksempel 2
 
-I dette eksempel kræves der en af to betingelser. Enten præcis ét kategoridatafelt og præcis to målinger eller præcis to kategorier og præcis én måling.
+I dette eksempel kræves der én af to betingelser:
+* Præcis ét kategoridatafelt og præcis to målinger
+* Præcis to kategorier og præcis én måling.
 
 ```json
 "conditions": [
@@ -90,9 +92,9 @@ I dette eksempel kræves der en af to betingelser. Enten præcis ét kategoridat
 
 ## <a name="single-data-mapping"></a>Tilknytning af enkeltdata
 
-Tilknytning af enkeltdata er den enkleste form for datatilknytning. Den accepterer et felt med en enkelt måling og giver dig totalen. Hvis feltet er numerisk, får du summen. Ellers vil det give dig et antal entydige værdier.
+Tilknytning af enkeltdata er den enkleste form for datatilknytning. Den accepterer et felt med en enkelt måling og giver dig totalen. Hvis feltet er numerisk, får du summen. Ellers giver det dig et antal entydige værdier.
 
-Hvis du vil bruge enkel datatilknytning, skal du definere navnet på den datarolle, som du vil tilknytte. Denne tilknytning fungerer kun med et felt med en enkelt måling. Hvis der er tildelt et andet felt, genereres der ingen datavisning. så det er også god praksis at inkludere en betingelse, der begrænser dataene til et enkelt felt.
+Hvis du vil bruge enkel datatilknytning, skal du definere navnet på den datarolle, som du vil tilknytte. Denne tilknytning fungerer kun med et felt med en enkelt måling. Hvis der er tildelt et andet felt, genereres der ingen datavisning, så det er også en god praksis at inkludere en betingelse, der begrænser dataene til et enkelt felt.
 
 > [!NOTE]
 > Denne datatilknytning kan ikke bruges sammen med andre datatilknytninger. Det skal reducere data til en enkelt numerisk værdi.
@@ -135,7 +137,7 @@ Datatilknytning efter kategori anvendes til at skabe en eller to uafhængige dat
 
 ### <a name="example-4"></a>Eksempel 4
 
-Her er definitionen fra vores forrige eksempel på DataRoles.
+Her er definitionen fra det forrige eksempel på dataroller:
 
 ```json
 "dataRole":[
@@ -152,7 +154,7 @@ Her er definitionen fra vores forrige eksempel på DataRoles.
 ]
 ```
 
-Nu til tilknytningen:
+Her er tilknytningen:
 
 ```json
 "dataViewMappings": {
@@ -169,14 +171,14 @@ Nu til tilknytningen:
 }
 ```
 
-Det er et enkelt eksempel, som lyder "Tilknyt min `category` DataRole, så for hvert felt, jeg trækker til `category`, tilknyttes dets data til `categorical.categories`. Tilknyt også min `measure` DataRole til `categorical.values`."
+Det er et enkelt eksempel. Det lyder "Tilknyt min `category` DataRole, så for hvert felt, jeg trækker til `category`, tilknyttes dets data til `categorical.categories`. Tilknyt også min `measure` DataRole til `categorical.values`."
 
-* **for...i** – for alle elementerne i denne datarolle skal du medtage dem i dataforespørgslen.
-* **bind...til** – giver det samme resultat som for...in, men forventer, at datarollen har en betingelse, som begrænser den til et enkelt felt.
+* **for...in**: For alle elementerne i denne datarolle skal du medtage dem i dataforespørgslen.
+* **bind...to**: Giver det samme resultat som *for...in*, men forventer, at datarollen har en betingelse, som begrænser den til et enkelt felt.
 
 ### <a name="example-5"></a>Eksempel 5
 
-I dette eksempel bruger vi de første to DataRoles fra det foregående eksempel, som vi yderligere definerer som `grouping` og `measure2`.
+I dette eksempel bruger vi de første to dataroller fra det foregående eksempel, som vi yderligere definerer som `grouping` og `measure2`.
 
 ```json
 "dataRole":[
@@ -203,7 +205,7 @@ I dette eksempel bruger vi de første to DataRoles fra det foregående eksempel,
 ]
 ```
 
-Nu til tilknytningen:
+Her er tilknytningen:
 
 ```json
 "dataViewMappings":{
@@ -224,11 +226,11 @@ Nu til tilknytningen:
 }
 ```
 
-Her er forskellen, hvordan vi knytter kategoriværdier. Vi siger "Tilknyt mine dataroller `measure` og `measure2`, så de grupperes efter datarollen `grouping`."
+Her er forskellen, hvordan vi knytter kategoriværdier. Vi siger, at "Tilknyt mine dataroller `measure` og `measure2`, så de grupperes efter datarollen `grouping`."
 
 ### <a name="example-6"></a>Eksempel 6
 
-Her er dataRoles.
+Her er datarollerne:
 
 ```json
 "dataRoles": [
@@ -250,7 +252,7 @@ Her er dataRoles.
 ]
 ```
 
-Her er dataViewMapping.
+Her er tilknytningen mellem datavisninger:
 
 ```json
 "dataViewMappings": [
@@ -277,7 +279,7 @@ Her er dataViewMapping.
 ]
 ```
 
-Kategorien `dataview` kan visualiseres på følgende måde.
+Datavisning i kategorier kan visualiseres på følgende måde:
 
 | Efter kategori |  |  | | | |
 |-----|-----|------|------|------|------|
@@ -288,7 +290,7 @@ Kategorien `dataview` kan visualiseres på følgende måde.
 | Mexico | | 300 | x | x | x |
 | Storbritannien | | x | x | 75 | x |
 
-Power BI producerer den som kategoridatavisning. Det er sættet af kategorier.
+Power BI fremstiller det som den kategoriske datavisning. Det er sættet af kategorier.
 
 ```JSON
 {
@@ -310,7 +312,7 @@ Power BI producerer den som kategoridatavisning. Det er sættet af kategorier.
 }
 ```
 
-Hver kategori knyttes også et sæt af værdier. Hver af disse værdier grupperes efter serie, som er år.
+Hver kategori knyttes også et sæt af værdier. Hver af disse værdier er grupperet efter serie, der udtrykkes som år.
 
 For eksempel er salg i Canada i 2013 null, mens salg i Canada i 2014 er 50.
 
@@ -393,7 +395,7 @@ Med de angivne egenskaber:
 ]
 ```
 
-Tabellen `dataview` kan visualiseres som dette.  
+Tabeldatavisningen kan visualiseres på følgende måde:  
 
 | Land| År | Salg |
 |-----|-----|------|
@@ -405,7 +407,7 @@ Tabellen `dataview` kan visualiseres som dette.
 | Storbritannien | 2014 | 150 |
 | USA | 2015 | 75 |
 
-Power BI producerer den som tabeldatavisning. Du kan ikke antage, at der er en rækkefølge.
+Power BI viser dine data som tabeldatavisningen. Du bør ikke antage, at dataene står i rækkefølge.
 
 ```JSON
 {
@@ -452,13 +454,13 @@ Power BI producerer den som tabeldatavisning. Du kan ikke antage, at der er en r
 }
 ```
 
-Dataene kan samles ved at markere det ønskede felt og klikke på sum.  
+Du kan sammenlægge dataene ved at markere det ønskede felt og derefter vælge sum.  
 
 ![Datasammenlægning](./media/data-aggregation.png)
 
 ## <a name="matrix-data-mapping"></a>Matrixdatatilknytning
 
-Matrixdatatilknytning ligner tabeldatatilknytning, men rækkerne præsenteres hierarkisk. Og en af `dataRole`-værdierne kan bruges som en kolonneoverskriftsværdi.
+Matrixdatatilknytning ligner tabeldatatilknytning, men rækkerne præsenteres hierarkisk. Alle datarolleværdierne kan bruges som en kolonneoverskriftsværdi.
 
 ```json
 {
@@ -510,11 +512,11 @@ Matrixdatatilknytning ligner tabeldatatilknytning, men rækkerne præsenteres hi
 }
 ```
 
-Power BI skaber hierarkisk datastruktur. Roden af træet inkluderer dataene fra den første kolonne af datarollen `Category` med underordnede fra den anden kolonne med datarollen.
+Power BI skaber en hierarkisk datastruktur. Roden af træhierarkiet inkluderer dataene fra kolonnen **Overordnede** i datarollen `Category` med underordnede fra kolonnen **Underordnede** i datarolletabellen.
 
 Datasæt:
 
-| Overordnede elementer | Underordnede elementer | Underordnede med underordnet | Kolonner | Værdier |
+| Overordnede elementer | Underordnede elementer | På andet niveau | Kolonner | Værdier |
 |-----|-----|------|-------|-------|
 | Overordnet1 | Underordnet1 | Underordnet med underordnet1 | Kol1 | 5 |
 | Overordnet1 | Underordnet1 | Underordnet med underordnet1 | Kol2 | 6 |
@@ -533,11 +535,11 @@ Datasæt:
 | Overordnet2 | Underordnet3 | Underordnet med underordnet8 | Kol1 | 10 |
 | Overordnet2 | Underordnet3 | Underordnet med underordnet8 | Kol2 | 13 |
 
-Den primære matrix-visual af Power BI gengiver den som en tabel.
+Den primære matrix-visualisering af Power BI gengiver dataene som en tabel.
 
 ![Matrixvisualisering](./media/matrix-visual-smaple.png)
 
-Visualen henter datastrukturen som beskrevet nedenfor (kun de første to rækker er præsenteret):
+Visualiseringen henter sin datastruktur som beskrevet i følgende kode (kun de første to tabelrækker vises her):
 
 ```json
 {
@@ -612,11 +614,11 @@ Visualen henter datastrukturen som beskrevet nedenfor (kun de første to rækker
 }
 ```
 
-## <a name="data-reduction-algorithm"></a>Algoritmer til datareduktion
+## <a name="data-reduction-algorithm"></a>Algoritme til datareduktion
 
-Der kan anvendes en `DataReductionAlgorithm`, hvis du vil kontrollere mængden af data, der modtages i datavisningen.
+Hvis du vil kontrollere den datamængde, der skal modtages i datavisningen, kan du anvende en algoritme til datareduktion.
 
-Alle brugerdefinerede visuals anvender som standard den øverste DataReductionAlgorithm med "antal" angivet til 1000 dataPoints. Det svarer til at angive følgende egenskaber i capabilities.json:
+Alle brugerdefinerede visualiseringer anvender som standard den øverste datareduktionsalgoritme med *antal* angivet til 1000 datapoint. Det svarer til at angive følgende egenskaber i filen *capabilities.json*:
 
 ```json
 "dataReductionAlgorithm": {
@@ -626,23 +628,23 @@ Alle brugerdefinerede visuals anvender som standard den øverste DataReductionAl
 }
 ```
 
-Du kan ændre 'antal'-værdien til en vilkårligt heltalsværdi på op til 30000. R-baserede brugerdefinerede visuals kan understøtte op til 150000 rækker.
+Du kan ændre værdien *antal* til en vilkårligt heltalsværdi på op til 30000. R-baserede brugerdefinerede visuals kan understøtte op til 150000 rækker.
 
 ## <a name="data-reduction-algorithm-types"></a>Typer af algoritmer til datareduktion
 
-Der findes fire typer `DataReductionAlgorithm`-indstillinger:
+Der findes fire typer indstillinger for datareduktionsalgoritmer:
 
-* `top` – hvis du vil begrænse dataene til værdier, der er hentet fra toppen af datasættet. De første "antal"-værdier i toppen hentes fra datasættet.
-* `bottom` – hvis du vil begrænse dataene til værdier, der er hentet fra bunden af datasættet. De sidste "antal"-værdier hentes fra datasættet.
-* `sample` – reducer datasættet med en simpel algoritme for stikprøvetagning, der er begrænset til "antal" elementer. Det betyder, at de første og sidste elementer er inkluderet, og at et "antal" elementer har det samme indbyrdes interval.
-Hvis du f.eks. har fået et datasæt [0, 1, 2, ... 100] og en `count: 9`, få du derefter følgende værdier [0, 10, 20... 100]
-* `window` – indlæser ét 'vindue' af datapunkter ad gangen, som indeholder "antal" elementer. `top` og `window` er i øjeblikket lige. Der arbejdes aktuelt på fuld understøttelse af en vinduesfunktion.
+* `top`: Hvis du vil begrænse dataene til værdier, der er hentet fra toppen af datasættet. De første *antal*-værdier i toppen hentes fra datasættet.
+* `bottom`: Hvis du vil begrænse dataene til værdier, der er hentet fra bunden af datasættet. De sidste "antal"-værdier hentes fra datasættet.
+* `sample`: Reducer datasættet med en simpel algoritme for stikprøvetagning, der er begrænset til *antal* elementer. Det betyder, at de første og sidste elementer er inkluderet, og at et *antal* elementer har det samme indbyrdes interval.
+Hvis du f.eks. har et datasæt [0, 1, 2, ... 100] og et *antal* på 9, modtager du værdierne [0, 10, 20... 100].
+* `window`: Indlæser ét *vindue* af datapunkter ad gangen, som indeholder *antal* elementer. `top` og `window` er i øjeblikket lige. Vi arbejder mod fuldt ud at understøtte en vinduesindstilling.
 
 ## <a name="data-reduction-algorithm-usage"></a>Brug af algoritmer til datareduktion
 
-`DataReductionAlgorithm` kan bruges til tilknytning af kategori, tabel eller matrix `dataview`.
+Algoritmen til datareduktion kan bruges i tilknytning af kategori-, tabel-eller matrix-datavisning.
 
-Dette kan indstilles i `categories` og/eller gruppesektionen af `values` til tilknytning af kategoridata.
+Du kan indstille algoritmen i `categories` og/eller gruppesektionen af `values` til tilknytning af kategoridata.
 
 ### <a name="example-8"></a>Eksempel 8
 
@@ -677,7 +679,7 @@ Dette kan indstilles i `categories` og/eller gruppesektionen af `values` til til
 }
 ```
 
-Algoritmen til datareduktion kan anvendes i afsnittet `rows` af tabellen `dataview`-tilknytning.
+Du kan anvende algoritmen datareduktion til sektionen `rows` i tilknytningstabellen Datavisning.
 
 ### <a name="example-9"></a>Eksempel 9
 
@@ -700,4 +702,4 @@ Algoritmen til datareduktion kan anvendes i afsnittet `rows` af tabellen `datavi
 ]
 ```
 
-Algoritmen til datareduktion kan anvendes på afsnittet `rows` og/eller `columns` af `matrix` `dataview` tilknytning.
+Du kan anvende algoritmen datareduktion til sektionerne `rows` og `columns` i tilknytningsmatrixen Datavisning.

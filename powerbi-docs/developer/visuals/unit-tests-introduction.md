@@ -1,6 +1,6 @@
 ---
-title: Introduktion til enhedstest
-description: Sådan skriver du enhedstests til Power BI Visuals-projekter
+title: Introduktion til enhedstests i Power BI-visualiseringsprojekter
+description: I denne artikel beskrives det, hvordan du skriver enhedstests til visuelle projekter i Power BI
 author: zBritva
 ms.author: v-ilgali
 manager: rkarlin
@@ -9,31 +9,29 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: 4b16eaad9b541bf6e5d8df49ffda99d9bbd5bbf2
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: f0040ef53fbbce8c7133e5f645bcbddb0bbfadea
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424533"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236729"
 ---
-# <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Selvstudium: Tilføj enhedstests i Power BI Visuals-projekter
+# <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Selvstudium: Tilføj enhedstests i visuelle projekter i Power BI
 
-Dette selvstudium beskriver grundprincipperne for, hvordan du skriver enhedstest til dine Power BI-visualiseringer.
+Denne artikel beskriver det grundlæggende ved at skrive enhedstest til dine Power BI-visualiseringer, herunder hvordan du:
 
-I dette selvstudium vil vi gennemgå
-
-* hvordan du udfører testkørsel med karma.js og bruger teststrukturen jasmine.js
-* hvordan du bruger pakken powerbi-visuals-utils-testutils
-* hvordan du kan bruge sæt med modeller og uægte elementer til at forenkle enhedstest af Power BI-visualiseringer.
+* Konfigurerer Jasmine – teststrukturen til kørsel af Karma JavaScript.
+* Bruger pakken powerbi-visuals-utils-testutils.
+* Bruger sæt med modeller og uægte elementer til at forenkle enhedstest af Power BI-visualiseringer.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-* Du har et Power BI Visuals-projekt og
-* Et konfigureret Node.JS-miljø
+* Et installeret visuelt projekt i Power BI
+* Et konfigureret Node.js-miljø
 
-## <a name="install-and-configure-karmajs-and-jasmine"></a>Installér og konfigurer karma.js og jasmine
+## <a name="install-and-configure-the-karma-javascript-test-runner-and-jasmine"></a>Installér og konfigurer Karma JavaScript-testkørsel og Jasmine
 
-Tilføj de påkrævede biblioteker i package.json i sekstionen `devDependencies`:
+Tilføj de obligatoriske biblioteker til filen *package.json* i afsnittet `devDependencies`:
 
 ```json
 "@babel/polyfill": "^7.2.5",
@@ -67,19 +65,19 @@ Tilføj de påkrævede biblioteker i package.json i sekstionen `devDependencies`
 "webpack": "4.26.0"
 ```
 
-Se beskrivelsen nedenfor for at få mere at vide om pakken.
+Se beskrivelsen for at få mere at vide om pakken.
 
-Gem `package.json`, og udfør følgende på kommandolinjen på placeringen for `package.json`:
+Gem filen *package.json*, og kør følgende kommando på placeringen `package.json`:
 
 ```cmd
 npm install
 ```
 
-Pakkestyring installerer alle nye pakker, der er føjet til `package.json`
+Pakkestyringen installer alle nye pakker, som føjes til *package.json*.
 
-I forbindelse med kørsel af enhedstests skal vi konfigurere testkørslen og `webpack`-konfigurationen. Du kan se et eksempel på config-filen her
+Hvis du vil køre enhedstests, skal du køre testkørslen og konfigurationen `webpack`.
 
-Eksempel på `test.webpack.config.js`:
+Følgende kode er et eksempel på filen *test.webpack.config.js*:
 
 ```typescript
 const path = require('path');
@@ -147,7 +145,7 @@ module.exports = {
 };
 ```
 
-Eksempel på `karma.conf.ts`
+Følgende kode er et eksempel på filen *karma.conf.ts*:
 
 ```typescript
 "use strict";
@@ -252,31 +250,29 @@ module.exports = (config: Config) => {
 
 Du kan ændre denne konfiguration, hvis det er nødvendigt.
 
-Nogle indstillinger i `karma.conf.js`:
+Koden i *karma.conf.js* indeholder følgende variabel:
 
-* `recursivePathToTests`-variablen angiver placeringen af koden til tests.
+* `recursivePathToTests`: Angiver testkoden
 
-* `srcRecursivePath`-variablen angiver placeringen af output-JS-koden efter kompilering.
+* `srcRecursivePath`: Angiver JavaScript-output-koden efter kompilering
 
-* `srcCssRecursivePath`-variablen angiver placeringen af output-CSS efter kompilering af Less-filen med typografier.
+* `srcCssRecursivePath`: Angiver output-CSS efter kompilering af Less-filen med typografier
 
-* `srcOriginalRecursivePath`-variablen angiver placeringen af kildekoden for din visualisering.
+* `srcOriginalRecursivePath`: Angiver kildekoden for din visualisering
 
-* `coverageFolder`-variablen angiver den placering, hvor dækningsrapporten bliver oprettet.
+* `coverageFolder`: Bestemmer, hvor dækningsrapporten skal oprettes
 
-Nogle egenskaber i config-filen:
+Konfigurationsfilen har følgende egenskaber:
 
-* `singleRun: true` – tests køres på CI-systemet. Det er nok at udføre dette én gang.
-Du kan skifte til `false`, når du foretager fejlfinding af dine tests. Karma fortsætter med at køre browseren, og det giver dig mulighed for at bruge konsollen til fejlfinding.
+* `singleRun: true`: Tests køres på et system med løbende integration (CI), eller de kan køres på én gang. Indstillingen kan ændres til *false* for at foretage fejlfinding på dine tests. Karma holder browseren kørende, så du kan bruge konsollen til fejlfinding.
 
-* `files: [...]` – i denne matrix kan du angive filer, der skal indlæses i browseren.
-Normalt er det kildefiler, testcases, biblioteker (jasmine, test-utils). Du kan føje andre filer til listen, hvis du har behov for det.
+* `files: [...]`: I denne matrix kan du angive de filer, der skal indlæses i browseren. Normalt er det kildefiler, testcases og biblioteker (Jasmine, testprogrammer). Du kan føje flere filer til listen, hvis det er nødvendigt.
 
-* `preprocessors` – i dette afsnit i config-filen konfigurerer du handlinger, der udføres inden udførelsen af enhedstests. Der sker en forudkompilering af typescript til JS og forberedelse af kildetilknytningsfiler. Desuden genereres der en rapport om kodedækning. Du kan deaktivere `coverage`, når du foretager fejlfinding af dine tests. Coverage genererer ekstra kode til kontrol af testens dækning, hvilket vil komplicere fejlfinding af tests.
+* `preprocessors`: I dette afsnit kan du konfigurere de handlinger, der skal køre før testkørsel af en enhed. De forudkompilerer typescript til JavaScript til forberedelse af kildetilknytningsfiler og genererer en rapport om kodedækning. Du kan deaktivere `coverage`, når du foretager fejlfinding af dine test. Dækning genererer ekstra kode til kontrol af testens dækning, hvilket vil komplicere fejlfinding af tests.
 
-**Du kan finde en beskrivelse af alle konfigurationer i [dokumentationen](https://karma-runner.github.io/1.0/config/configuration-file.html) til karma.js**
+Du kan finde beskrivelser af alle Karma-konfigurationer ved at gå til siden med [Karma-konfigurationsfilen](https://karma-runner.github.io/1.0/config/configuration-file.html).
 
-Det kan være praktisk at tilføje kommandoen test i `scripts`:
+Du kan nemt gøre dette ved at tilføje en testkommando i `scripts`:
 
 ```json
 {
@@ -294,13 +290,13 @@ Det kan være praktisk at tilføje kommandoen test i `scripts`:
 
 Nu er du klar til at begynde at skrive dine enhedstests.
 
-## <a name="simple-unit-test-for-check-dom-element-of-the-visual"></a>Simpel enhedstest til at kontrollere visualiseringens DOM-element
+## <a name="check-the-dom-element-of-the-visual"></a>Kontrollér DOM-elementet i en visualisering
 
-Når vi skal teste en visualisering, skal vi oprette en forekomst af visualiseringen.
+For at teste en visualisering skal du oprette en forekomst af den.
 
-### <a name="creating-visual-instance-builder"></a>Oprettelse af en generator til forekomsten af visualiseringen
+### <a name="create-a-visual-instance-builder"></a>Opret en generator til forekomsten af en visualisering
 
-Tilføj `visualBuilder.ts`-filen i mappen `test` med følgende kode:
+Føj en *visualBuilder.ts*-fil til *testmappen* ved hjælp af følgende kode:
 
 ```typescript
 import {
@@ -329,13 +325,13 @@ export class BarChartBuilder extends VisualBuilderBase<VisualClass> {
 }
 ```
 
-Metoden `build` anvendes til at oprette en forekomst af din visualisering. `mainElement` er en get-metode, der returnerer en forekomst af DOM-elementet "root" i visualiseringen. Hentningsfunktionen er valgfri, men den gør det nemmere at skrive enhedstests.
+Metoden `build` anvendes til at oprette en forekomst af din visualisering. `mainElement` er en get-metode, der returnerer en forekomst af DOM-elementet "root" i din visualisering. Hentningsfunktionen er valgfri, men den gør det nemmere at skrive enhedstests.
 
-Vi har nu koden til at generere en forekomst af visualiseringen. Lad os gå videre med at skrive selve testcasen. Det bliver en testcase til at kontrollere de SVG-elementer, der oprettes, når din visualisering vises.
+Nu har du et build af en forekomst af dit visuelle element. Lad os gå videre med at skrive selve testcasen. Testcasen kontrollerer de SVG-elementer, der oprettes, når din visualisering vises.
 
-### <a name="creating-typescript-file-to-write-test-cases"></a>Oprettelse af en typescript-fil til at skrive testcases
+### <a name="create-a-typescript-file-to-write-test-cases"></a>Opret en typescript-fil til skrivning af testcases
 
-Tilføj `visualTest.ts`-filen til testcases med denne kode:
+Føj en *visualTest.ts*-fil til testcases ved hjælp af følgende kode:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -362,40 +358,36 @@ describe("BarChart", () => {
 });
 ```
 
-Den foretages kald af flere metoder.
+Der kaldes flere metoder:
 
-* [`describe`](https://jasmine.github.io/api/2.6/global.html#describe)-metoden beskriver testcasen. I Jasmine-udviklingsmiljøet kaldes dette ofte en pakke eller gruppe af specifikationer.
+* [`describe`](https://jasmine.github.io/api/2.6/global.html#describe): Beskriver en testcase. I Jasmine-strukturens kontekst beskriver den ofte en suite eller en gruppe af specifikationer.
 
-* `beforeEach`-metoden kaldes før hvert kald af `it`-metoden, hvilket defineres inde i [`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach)-metoden.
+* `beforeEach`: Den kaldes før hvert kald til `it`-metoden, som er defineret i metoden [`describe`](https://jasmine.github.io/api/2.6/global.html#beforeEach).
 
-* `it` angiver en enkelt specifikation. [`it`](https://jasmine.github.io/api/2.6/global.html#it)-metoden skal indeholde en eller flere `expectations`.
+* [`it`](https://jasmine.github.io/api/2.6/global.html#it): Definerer en enkelt specifikation. Metoden `it` skal indeholde en eller flere `expectations`.
 
-* [`expect`](https://jasmine.github.io/api/2.6/global.html#expect)-metoden opretter en forventning for en specifikation. En specifikation lykkes, hvis alle forventninger opfyldes uden fejl.
+* [`expect`](https://jasmine.github.io/api/2.6/global.html#expect): Opretter en forventning til en specifikation. En specifikation lykkes, hvis alle forventninger opfyldes uden fejl.
 
-* `toBeInDOM` er en af matchers-metoderne. Du kan finde flere oplysninger om de tilgængelige matchers i [dokumentationen](https://jasmine.github.io/api/2.6/matchers.html) til Jasmine-udviklingsmiljøet.
+* `toBeInDOM`: En af *matchers*-metoderne. Du kan finde flere oplysninger om matchere i [Navneområdet Jasmine: matchere](https://jasmine.github.io/api/2.6/matchers.html).
 
-**Læs mere om Jasmine-udviklingsmiljøet i den officielle [dokumentation](https://jasmine.github.io/).**
-
-Derefter kan du køre din enhedstest ved at skrive en kommando i kommandolinjeværktøjet.
-
-Denne test kontrollerer, at der oprettes et rod-SVG-element til visualiseringerne.
+Du kan finde flere oplysninger om Jasmine på siden med [dokumentation til Jasmine Framework](https://jasmine.github.io/).
 
 ### <a name="launch-unit-tests"></a>Kørsel af enhedstests
 
-Hvis du vil køre enhedstesten, kan du skrive denne kommando i kommandolinjeværktøjet.
+Denne test kontrollerer, at der oprettes et rod-SVG-element til visualiseringerne. Hvis du vil køre enhedstesten, skal du indtaste følgende kommando i kommandolinjeværktøjet:
 
 ```cmd
 npm run test
 ```
 
-`karma.js` starter Chrome-browseren og kører testcasen.
+`karma.js` kører testcasen i Chrome-browseren.
 
-![KarmaJS startes i Chrome](./media/karmajs-chrome.png)
+![Karma JavaScript åbnes i Chrome](./media/karmajs-chrome.png)
 
 > [!NOTE]
 > Google Chrome skal installeres lokalt.
 
-I kommandolinjen får du følgende output:
+Du får følgende output i vinduet med kommandolinjen:
 
 ```cmd
 > karma start
@@ -418,7 +410,7 @@ Lines        : 20.85% ( 44/211 )
 
 ### <a name="how-to-add-static-data-for-unit-tests"></a>Sådan tilføjer du statiske data til enhedstests
 
-Opret filen `visualData.ts` i mappen `test`. Med denne kode:
+Opret en *visualData.ts*-fil i *testmappen* ved hjælp af følgende kode:
 
 ```typescript
 import powerbi from "powerbi-visuals-api";
@@ -458,19 +450,19 @@ export class SampleBarChartDataBuilder extends TestDataViewBuilder {
 }
 ```
 
-Klassen `SampleBarChartDataBuilder` udvider `TestDataViewBuilder` og implementerer den abstrakte metode `getDataView`.
+Klassen `SampleBarChartDataBuilder` udvides `TestDataViewBuilder` og implementerer den abstrakte metode `getDataView`.
 
-Når du placerer data i datafelt-buckets, opretter Power BI et `dataview`-kategoriobjekt, der er baseret på dine data.
+Når du placerer data i datafelt-buckets, opretter Power BI et `dataview`-kategoriobjekt, som er baseret på dine data.
 
-![Gemte buckets](./media/fields-buckets.png)
+![Datafelt-buckets](./media/fields-buckets.png)
 
-I enhedstests har du ikke Power BI-kernefunktioner til at genskabe det. Du skal dog knytte dine statiske data til `dataview`-kategorien. Desuden kan du bruge klassen `TestDataViewBuilder` til at hjælpe dig.
+I enhedstests har du ikke Power BI-kernefunktioner til at genskabe dataene. Du skal dog knytte dine statiske data til `dataview`-kategorien. Klassen `TestDataViewBuilder` kan hjælpe dig med at tilknytte den.
 
-[Læs mere om DataViewMapping](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md)
+Du kan finde flere oplysninger om tilknytning af datavisning i [DataViewMappings](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/DataViewMappings.md).
 
-I metoden `getDataView` kan du blot kalde metoden `createCategoricalDataViewBuilder` med dine data.
+I metoden `getDataView` kan du kalde metoden `createCategoricalDataViewBuilder` med dine data.
 
-I `sampleBarChart`-visualiseringens [capabilities.json](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/capabilities.json#L2) har vi dataRoles- og dataViewMapping-objekter:
+I `sampleBarChart`-visualiseringens [capabilities.json](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/blob/master/capabilities.json#L2)-fil har vi dataRoles- og dataViewMapping-objekter:
 
 ```json
 "dataRoles": [
@@ -549,13 +541,13 @@ Hvis du vil oprette den samme tilknytning, skal du angive følgende parametre ti
 ], columnNames)
 ```
 
-Med `this.valuesCategory`-matrix af kategorier.
+Hvor `this.valuesCategory` er en matrix af kategorier:
 
 ```ts
 public valuesCategory: string[] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 ```
 
-Samt `this.valuesMeasure`-matrix af målinger for hver kategori. Eksempel:
+Og `this.valuesMeasure` er en matrix af målinger for hver kategori:
 
 ```ts
 public valuesMeasure: number[] = [742731.43, 162066.43, 283085.78, 300263.49, 376074.57, 814724.34, 570921.34];
@@ -563,7 +555,7 @@ public valuesMeasure: number[] = [742731.43, 162066.43, 283085.78, 300263.49, 37
 
 Nu kan du bruge klassen `SampleBarChartDataBuilder` i din enhedstest.
 
-`ValueType`-klassen er defineret i pakken `powerbi-visuals-utils-testutils`. Desuden kræver metoden `createCategoricalDataViewBuilder` biblioteket `lodash`.
+Klassen `ValueType` er defineret i pakken powerbi-visuals-utils-testutils. Og metoden `createCategoricalDataViewBuilder` kræver biblioteket `lodash`.
 
 Tilføj disse pakker af hensyn til afhængigheder.
 
@@ -582,7 +574,7 @@ npm install
 
 for at installere biblioteket `lodash-es`.
 
-Nu kan du køre enhedstesten igen. Du skal have dette output
+Nu kan du køre enhedstesten igen. Følgende output skal vises:
 
 ```cmd
 > karma start
@@ -603,27 +595,25 @@ Lines        : 52.83% ( 112/212 )
 ================================================================================
 ```
 
-Desuden skal du se den startede Chrome-browser med din visualisering.
+Det visuelle element åbnes i Chrome-browseren som vist:
 
 ![UT starter i Chrome](./media/karmajs-chrome-ut-runned.png)
 
-Læg mærke til, at dækningsoversigten er forbedret. Åbn `coverage\index.html` for at få mere at vide om den aktuelle kodedækning
+Oversigten viser, at dækningen er steget. Åbn `coverage\index.html` for at få mere at vide om den aktuelle kodedækning.
 
 ![UT-dækningsindeks](./media/code-coverage-index.png)
 
-Eller se området i `src`-mappen
+Eller se på området for mappen `src` :
 
-![Dækning i src-mappen](./media/code-coverage-src-folder.png)
+![Src-mappens dækning](./media/code-coverage-src-folder.png)
 
-I filområdet kan du se på kildekoden. `Coverage`-utils markerer en rækkes baggrund med rød, hvis en kode ikke blev udført under kørsel af enhedstests.
+I filområdet kan du se på kildekoden. Hvis der ikke udføres en bestemt kode under enhedstesten, fremhæver hjælpeprogrammerne `Coverage` rækken med rødt.
 
-![Kodedækning i filen visual.ts](./media/code-coverage-visual-src.png)
+![Kodedækningen for filen visual.ts](./media/code-coverage-visual-src.png)
 
 > [!IMPORTANT]
-> Kodedækning betyder dog ikke nødvendigvis, at du har god funktionalitetsdækning af visualiseringen. En enkel enhedstest leverede over 96 % dækning i `src\visual.ts`.
+> Kodedækning betyder ikke nødvendigvis, at du har god funktionalitetsdækning af en visualisering. En enkel enhedstest leverede over 96 % dækning i `src\visual.ts`.
 
 ## <a name="next-steps"></a>Næste trin
 
-Når din visualisering er klar, kan du sende den til publikation.
-
-[Læs mere om publikation af visualiseringer i AppSource](../office-store.md)
+Når din visualisering er klar, kan du sende den til publicering. Se [Publicer brugerdefinerede visualiseringer til AppSource](../office-store.md) for at få flere oplysninger.

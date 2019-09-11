@@ -1,5 +1,5 @@
 ---
-title: Kørsel af Python-scripts i Power BI Desktop
+title: Kør Python-scripts i Power BI Desktop
 description: Kørsel af Python-scripts i Power BI Desktop
 author: otarb
 manager: rajatt
@@ -7,37 +7,75 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/18/2018
+ms.date: 08/16/2019
 ms.author: otarb
 LocalizationGroup: Connect to data
-ms.openlocfilehash: fcfbf4fb7be34739364fba176b28ea42934d5562
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 25970d09feac02a0b45e83ab1b348e800efc022d
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61283893"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302914"
 ---
 # <a name="run-python-scripts-in-power-bi-desktop"></a>Kør Python-scripts i Power BI Desktop
+
 Du kan køre Python-scripts direkte i **Power BI Desktop** og importere de resulterende datasæt i en datamodel i Power BI Desktop.
 
 ## <a name="install-python"></a>Installér Python
-Hvis du vil køre Python-scripts i Power BI Desktop, skal du installere **Python** på din lokale maskine. Du kan downloade og installere **Python** gratis fra mange forskellige steder, herunder den [officielle downloadside for Python](https://www.python.org/) og [Anaconda](https://anaconda.org/anaconda/python/). Den aktuelle version af Python-scriptet i Power BI Desktop understøtter Unicode-tegn og mellemrum (tomme tegn) i installationsstien.
 
-### <a name="install-required-python-packages"></a>Installér påkrævede Python-pakker
-Integration af Power BI Python kræver, at der er installeret to Python-pakker (Pandas og Matplotlib).  Installér følgende to pakker ved hjælp af pip-kommandolinjeværktøjet:
+Hvis du vil køre Python-scripts i Power BI Desktop, skal du installere **Python** på din lokale maskine. Du kan downloade **Python** fra den [officielle Python-overførselsside](https://www.python.org/). Den aktuelle Python-scripting-version understøtter Unicode-tegn og mellemrum i installationsstien.
 
-```
+### <a name="install-required-python-packages"></a>Installér de påkrævede Python-pakker
+
+Power BI Python-integrationen kræver installation af to Python-pakker:
+
+- [Pandas](https://pandas.pydata.org/) – et softwarebibliotek til manipulation og analyse af data. Det indeholder datastrukturer og handlinger til manipulation af numeriske tabeller og tidsserier. Dine importerede data skal være i en [Pandas-dataramme](https://www.tutorialspoint.com/python_pandas/python_pandas_dataframe.htm). En dataramme er en todimensional datastruktur. Dataene justeres f.eks. i rækker og kolonner som i en tabel.
+- [Matplotlib](https://matplotlib.org/) – et afbildningsbibliotek til Python og dets numeriske matematiske udvidelse [NumPy](https://www.numpy.org/). Det indeholder en objektorienteret API til integrering af afbildninger i programmer ved hjælp af de generelle grafiske værktøjssæt til GUI (f.eks. Tkinter, wxPython, QT eller GTK +).
+
+1. Brug kommandolinjeværktøjet [pip](https://pip.pypa.io/en/stable/) i en konsol eller skal for at installere de to pakker. Pip-værktøjet leveres sammen med nyere Python-versioner.
+
+```CMD
 pip install pandas
 pip install matplotlib
 ```
 
+## <a name="enable-python-scripting"></a>Aktivér Python-scripting
+
+Aktivering af Python-scripting:
+
+1. Vælg **Filer** > **Indstillinger** > **Indstillinger** > **Python-scripting** i Power BI Desktop. Siden med indstillinger for Python-scripts vises.
+
+   ![](media/desktop-python-scripts/python-scripts-7.png)
+
+1. Hvis det er nødvendigt, skal du angive din lokale Python-installationssti i den **registrerede Python-startmappe:** tekstfelt. 
+
+   I ovenstående billede er den lokale sti til Python-installationen **C:\Python**. Sørg for, at det er den rigtige sti til den lokale Python-installation, som skal bruges af Power BI Desktop.
+
+1. Vælg **OK**.
+
+Når du har angivet din Python-installation, er du klar til at begynde at køre Python-scripts i Power BI Desktop.
+
 ## <a name="run-python-scripts"></a>Kør Python-scripts
-Med blot nogle få trin i Power BI Desktop kan du køre Python-scripts og oprette en datamodel, hvorfra du kan oprette rapporter og dele dem i Power BI tjenesten.
+
+Ved hjælp af nogle få trin kan du køre Python-scripts og oprette en datamodel. Fra denne model kan du oprette rapporter og dele dem på Power BI-tjenesten.
 
 ### <a name="prepare-a-python-script"></a>Klargør et Python-script
-Hvis du vil køre et Python-script i Power BI Desktop, skal du oprette scriptet i dit lokale Python-udviklingsmiljø og sørge for, at det kører korrekt.
+Først skal du oprette et script i dit lokale Python-udviklingsmiljø og sørge for, at det kører korrekt. Det kan f.eks. være et simpelt Python-script, der importerer Pandas og bruger en dataramme:
 
-Hvis du vil køre scriptet i Power BI Desktop, skal du kontrollere, at scriptet kører korrekt i et nyt og uændret arbejdsområde. Det betyder, at alle pakker og afhængigheder udtrykkeligt skal være indlæst og køre.
+```python
+import pandas as pd
+data = [['Alex',10],['Bob',12],['Clarke',13]]
+df = pd.DataFrame(data,columns=['Name','Age'],dtype=float)
+print (df)
+```
+Når det kører, udskrives det:
+
+```python
+     Name   Age
+0    Alex  10.0
+1     Bob  12.0
+2  Clarke  13.0
+```
 
 Når du forbereder og kører et Python-script i Power BI Desktop, er der et par begrænsninger:
 
@@ -45,28 +83,38 @@ Når du forbereder og kører et Python-script i Power BI Desktop, er der et par 
 * Der opstår timeout for Python-scripts, som har kørt i mere end 30 minutter
 * Interaktive kald i Python-scriptet, f.eks. venten på brugerinput, stopper kørslen af scriptet
 * Når arbejdsmappen angives i Python-scriptet, *skal* du definere en fuld sti til arbejdsmappen i stedet for en relativ sti
-* Indlejrede tabeller (tabel over tabeller) understøttes ikke i øjeblikket 
+* Indlejrede tabeller understøttes ikke i øjeblikket 
 
 ### <a name="run-your-python-script-and-import-data"></a>Kør Python-scriptet, og importér data
-1. I Power BI Desktop findes dataconnectoren for Python-scriptet under **Hent data**. Hvis du vil køre Python-scriptet, skal du vælge **Hent data &gt; Mere...**  og derefter vælge **Andet &gt; Python-script** som vist på følgende billede:
+
+Sådan kører du dit Python-script i Power BI Desktop:
+
+1. Vælg **Hent data** > **Mere...** på båndet Hjem.
    
+1. Vælg **Andet** > **Python-script** som vist på følgende billede:
+
    ![](media/desktop-python-scripts/python-scripts-1.png)
-2. Hvis Python er installeret på din lokale maskine, vælges den senest installerede version som Python-programmet. Du skal blot kopiere scriptet ind i scriptvinduet og vælge **OK**.
    
-   ![](media/desktop-python-scripts/python-scripts-2.png)
-3. Hvis Python ikke er installeret, ikke kan identificeres, eller hvis der er flere installationer på din lokale maskine, vises der en advarsel.
-   
-   ![](media/desktop-python-scripts/python-scripts-3.png)
-   
-   Indstillingerne for Python-installationen findes centralt i afsnittet om Python-scripts i dialogboksen Indstillinger. Du angiver indstillingerne for din Python-installation ved at vælge **Filer > Indstillinger**  og derefter **Indstillinger > Python-script**. Hvis der er flere Python-installationer tilgængelige, vises der en rullemenu, hvor du kan vælge, hvilken installation der skal bruges. Du kan også vælge **Andre** og angive en brugerdefineret sti.
-   
-   ![](media/desktop-python-scripts/python-scripts-4.png)
-4. Vælg **OK** for at køre Python-scriptet. Når scriptet køres, kan du vælge de resulterende datarammer, der skal føjes til Power BI-modellen.
+1. Vælg **Opret forbindelse**. Den senest installerede Python-version på din lokale maskine vælges som dit Python-program. Kopiér scriptet til dialogboksen Python-script, der vises. Her angiver vi det simple Python-script, der blev vist før.
+
+   ![](media/desktop-python-scripts/python-scripts-6.png)
+
+1. Vælg **OK**. Hvis scriptet kører korrekt, vises dialogboksen Navigator, og du kan indlæse dataene og bruge dem. I dette eksempel skal du markere afkrydsningsfeltet **df** som vist på billedet og derefter **Indlæs**.
+
+   ![](media/desktop-python-scripts/python-scripts-5.png) 
+
+### <a name="troubleshooting"></a>Fejlfinding
+
+Hvis Python ikke er installeret eller identificeret, vises der en advarsel. Du kan også få vist en advarsel, hvis du har flere installationer på den lokale maskine. Vend tilbage, og gennemgå de forrige sektioner Installer Python og Aktivér Python-scripting.
+
+![](media/desktop-python-scripts/python-scripts-3.png)
 
 ### <a name="refresh"></a>Opdater
-Du kan opdatere et Python-script i Power BI Desktop. Når du opdaterer et Python-script, køres Python-scriptet i Power BI Desktop igen i Power BI Desktop-miljøet.
+
+Du kan opdatere et Python-script i Power BI Desktop. Hvis du vil opdatere, skal du gå til båndet **Hjem** og vælge **Opdater**. Når du opdaterer et Python-script, køres Python-scriptet i Power BI Desktop igen.
 
 ## <a name="next-steps"></a>Næste trin
+
 Du kan finde yderligere oplysninger om Python i Power BI i følgende artikler.
 
 * [Opret Python-visuals i Power BI Desktop](desktop-python-visuals.md)

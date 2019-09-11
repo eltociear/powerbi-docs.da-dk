@@ -1,32 +1,32 @@
 ---
-title: Typer af visuals i Power BI til forbrugere
-description: Typer af visuals i Power BI-tjenesten
+title: Visualiseringstyper i Power BI til forbrugere
+description: Visualiseringstyper i Power BI-tjeneste
 author: mihart
 manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 08/21/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: acee7e78a19986a0f83e13836ba6d77f7c35fdce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 875e154dbac063c0e4b9d5dc4208387e6d529a93
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65711376"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302532"
 ---
-# <a name="visual-types-in-power-bi"></a>Typer af visuals i Power BI
-Du finder visuelle elementer i rapporter, dashboards, apps og spørgsmål og svar. Nogle af disse typer af visuals er pakket med Power BI, og nogle er *brugerdefinerede visualiseringer*. Brugerdefinerede visualiseringer oprettes uden for Power BI og på en måde, der gør det muligt for *rapportdesignere* at føje dem til rapporter, dashboards og apps i Power BI. 
+# <a name="visual-types-in-power-bi"></a>Visualiseringstyper i Power BI
+Du finder visualiseringer i rapporter, på dashboards og under Spørgsmål og svar. Nogle af disse visualiseringstyper medfølger Power BI som en del af pakken, og nogle er *brugerdefinerede visualiseringer*. Brugerdefinerede visualiseringer oprettes uden for Power BI og på en måde, der gør det muligt for *rapportdesignere* at føje dem til rapporter og dashboards i Power BI. 
 
-Denne artikel er en oversigt over de visuelle elementer, der er pakket med Power BI.  Disse er de visuelle elementer, der vil opstå oftest. 
+Denne artikel indeholder en oversigt over de visualiseringer, der medfølger til Power BI-tjenesten som en del pakken.  Disse visualiseringstyper er dem, du oftest vil støde på. Du kan finde detaljerede oplysninger om en af disse visualiseringer i dokumentationen til [Power BI Report *Designer* om visuelle typer](../visuals/power-bi-visualization-types-for-reports-and-q-and-a.md)
 
 > [!NOTE]
 > Du kan få mere at vide om brugerdefinerede visualiseringer ved at søge efter dem i afsnittet **Power BI-visualiseringer** i [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals). For hver enkelt visualisering finder du en beskrivelse, forfatteroplysninger og enten skærmbilleder eller en video. 
 
 ## <a name="list-of-visuals-available-in-power-bi"></a>Liste over visualiseringer, der er tilgængelige i Power BI
-Alle disse visualiseringer kan ses i Power BI-apps, dashboards, rapporter og [angivet i spørgsmål og svar](end-user-q-and-a.md). For at få mere for at vide, hvordan du interagerer med visualiseringer, se [Interager med visuelle elementer i rapporter, dashboards og apps](end-user-visualizations.md)
+Du finder alle disse visualiseringer på dashboards, i rapporter og [angivet under Spørgsmål og svar](end-user-q-and-a.md) i Power BI. Hvis du vil vide mere om, hvordan du interagerer med visualiseringer, skal du se [Interager med visualiseringer i rapporter, på dashboards og i apps](end-user-visualizations.md)
 
 ### <a name="area-charts-basic-layered-and-stacked"></a>Områdediagrammer: Grundlæggende (lagdelte) og stablede
 ![områdediagram](media/end-user-visual-type/basic-area-map-small.png)
@@ -59,7 +59,7 @@ I et kombinationsdiagram kombineres et søjlediagram og et kurvediagram. Ved at 
 Kombinationsdiagrammer er et fantastisk valg i følgende tilfælde:
 - Når du har et kurvediagram og et søjlediagram med den samme X-akse.
 - til at sammenligne flere målinger med forskellige værdiområder
-- til at illustrere sammenhængen mellem to målinger i ét visuelt element
+- til at illustrere sammenhængen mellem to målinger i én visualisering
 - Til at kontrollere, om en måling opfylder målet, der er defineret af en anden måling
 - til at spare plads på lærredet.
 
@@ -76,14 +76,6 @@ Tragtformede diagrammer hjælper med at visualisere en proces med faser og eleme
 F.eks. et tragtformet salgsdiagram, der sporer kunder gennem forskellige faser: Kundeemne > Kvalificeret kundeemne > Kundeemne > Kontrakt > Luk. I korte træk afspejler tragtens form tilstanden af den proces, du holder øje med.
 De enkelte faser i tragten repræsenterer en procentdel af det samlede antal. Så i de fleste tilfælde vil et tragtformet diagram være formet som en tragt – hvor det første trin er det største, og hvor hvert efterfølgende trin bliver mindre end det foregående. En pæreformet tragt er også nyttig – det kan bruges til at identificere et problem i processen. Det første trin i fasen, "indgangsfasen", er dog typisk det største.
 
-Tragtformede diagrammer er et fantastisk valg i følgende tilfælde:
-- Når dataene er fortløbende og dækker over mindst fire faser.
-- Når antallet af "elementer" i den første fase forventes at være større end antallet i den sidste fase.
-- Til at beregne potentiale (omsætning/salg/handler/osv.) efter fase.
-- Til at beregne og holde øje med gennemførelsesfrekvens og fastholdelsesrate.
-- Til at vise flaskehalse i en lineær proces.
-- Til at holde øje med arbejdsprocessen i forbindelse med indkøbskurv.
-- Til at holde øje med statussen på og succesen af reklame-/marketingkampagner vha. klikfrekvensen.
 
 ### <a name="gauge-charts"></a>Målerdiagrammer
 ![målerdiagram](media/end-user-visual-type/gauge-m.png)
@@ -127,7 +119,7 @@ Brug et basiskort til at knytte både kategoriinddelte og kvantitative oplysning
 ### <a name="maps-arcgis-maps"></a>Kort: ArcGIS-kort
 ![ArcGis-kort](media/end-user-visual-type/power-bi-esri-map-theme2.png)
 
-Kombinationen af ArcGIS-kort og Power BI tager kort til et helt nyt niveau, som involverer mere end præsentation af punkter på et kort. De tilgængelige indstillinger til grundlæggende kort, placeringstyper, temaer, symboltypografier og referencelag opretter fantastiske informative kortvisualiseringer. Kombinationen af autoritative datalag (f.eks census-data) på et kort med rumlige analyser giver en bedre forståelse af dataene i din visualisering.
+Kombinationen af ArcGIS-kort og Power BI tager kort til et helt nyt niveau, som involverer mere end præsentation af punkter på et kort. De tilgængelige indstillinger til grundlæggende kort, placeringstyper, temaer, symboltypografier og referencelag opretter fantastiske informative kortvisualiseringer. Kombinationen af autoritative datalag på et kort (f.eks. census-data) med rumlige analyser giver en bedre forståelse af dataene i visualiseringen.
 
 ### <a name="maps-filled-maps-choropleth"></a>Kort: Kartogrammer (Choropleth)
 ![Kartogram](media/end-user-visual-type/pbi-nancy-viz-filledmap.png)
@@ -137,7 +129,7 @@ Et udfyldt kort bruger skygger eller toner eller mønstre til at vise, hvordan e
 ### <a name="maps-shape-maps"></a>Kort: Figurkort
 ![figurkort](media/end-user-visual-type/power-bi-shape-map2.png)
 
-Med figurkort sammenlignes områder på et kort ved hjælp af farve. I modsætning til visualiseringen M/kort kan der på figurkort ikke vises præcise geografiske placeringer af datapunkter på et kort. I stedet er dets primære formål at vise relative sammenligninger mellem områder på et kort ved at give dem forskellige farver.
+Med figurkort sammenlignes områder på et kort ved hjælp af farve. Et figurkort kan ikke vise den nøjagtige geografiske placering af datapunkter på et kort. I stedet er dets primære formål at vise relative sammenligninger mellem områder på et kort ved at give dem forskellige farver.
 
 ### <a name="matrix"></a>Matrix
 ![matrix](media/end-user-visual-type/matrix.png)
@@ -163,12 +155,16 @@ Et punktdiagram har altid to værdiakser for at vise ét sæt numeriske data lan
 
 Et boblediagram erstatter datapunkter med bobler, hvor boblestørrelsen repræsenterer en yderligere dimension af dataene.
 
-Et prikdiagram svarer til et boblediagram og et punktdiagram, bortset fra at der plottes numeriske eller kategoriske data langs X-aksen.
+
+
+Et prikdiagram svarer til et boblediagram og et punktdiagram, bortset fra at der plottes numeriske eller kategoriske data langs X-aksen. Dette eksempel anvender firkanter i stedet for cirkler og afbilder salg langs X-aksen.
+
+![prikdiagram](media/end-user-visual-type/power-bi-dot-plot-squares.png)
 
 ### <a name="scatter-high-density"></a>Punktdiagram – høj tæthed
 ![punktdiagram med høj tæthed](media/end-user-visual-type/density-scatter.png)
 
-Pr. definition stikprøvetagning af data med høj tæthed for at oprette visualiseringer forholdsvist hurtigt, der reagerer også på interaktivitet. Ved stikprøvetagning med høj tæthed bruges en algoritme, der fjerner overlappende punkter og sikrer, at alle punkter i datasættet repræsenteres i visualiseringen. Der afbildes ikke blot en repræsentativ stikprøve af dataene.  
+Stikprøver af data med høj tæthed tages pr. definition for at kunne oprette visualiseringer forholdsvist hurtigt og bruge disse visualiseringer interaktivt. Ved stikprøvetagning med høj tæthed bruges en algoritme, der fjerner overlappende punkter og sikrer, at alle punkter i datasættet repræsenteres i visualiseringen. Der afbildes ikke blot en repræsentativ stikprøve af dataene.  
 
 Dette sikrer den bedste kombination af svartid, repræsentation og tydelig bevarelse af vigtige punkter i det samlede datasæt.
 
@@ -220,14 +216,14 @@ Et vandfaldsdiagram viser en løbende total som værdier, der tilføjes eller tr
 Kolonnerne er farvekodet, så du hurtigt kan se stigninger og fald. Kolonnerne med den indledende og endelige værdi starter ofte på den vandrette akse, mens de mellemliggende værdier er flydende kolonner. Vandfaldsdiagrammer kaldes også brodiagrammer på grund af deres "udseende".
 
 Vandfaldsdiagrammer er et godt valg:
-- når du har ændringer til målingen på tværs af tidsserier eller forskellige kategorier
+- når du har ændringer til målingen på tværs af tider eller forskellige kategorier
 - til overvågning af overordnede ændringer, der bidrager til den samlede værdi
 - til afbildning af årets resultatet for virksomhed vha. visning af flere omsætningskilder og opnåelse af det samlede resultat.
 - til illustration af antal medarbejdere ved årets start og slutning
 - til visualisering af, hvor mange penge du tjener og bruger hver måned, samt den løbende kontobalance.
 
-## <a name="qna"></a>Fortæl spørgsmål og svar hvilke visualiseringer der skal bruge
-Når du skriver forespørgsler i naturligt sprog med Power BI-spørgsmål og svar, kan du angive den visuelle type i forespørgslen.  Eksempel:
+## <a name="qna"></a>Fortæl Spørgsmål og svar, hvilken visualisering der skal bruges
+Når du skriver forespørgsler i naturligt sprog med Spørgsmål og svar i Power BI, kan du angive visualiseringstypen i din forespørgsel.  Eksempel:
 
 
 "***salg efter område som trækort***"
@@ -235,5 +231,5 @@ Når du skriver forespørgsler i naturligt sprog med Power BI-spørgsmål og sva
 ![Spørgsmål og svar-session](media/end-user-visual-type/qa-treemap.png)
 
 ## <a name="next-steps"></a>Næste trin
-[Interagere med visuelle elementer i rapporter, dashboards og apps](end-user-visualizations.md)    
+[Interager med visualiseringer i rapporter, på dashboards og i apps](end-user-visualizations.md)    
 [Den rette visuelle reference fra sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

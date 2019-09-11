@@ -1,6 +1,6 @@
 ---
-title: Hent flere data
-description: Aktivér segmenteret hentning af store datasæt for Power BI-visualiseringer
+title: Hent flere data fra Power BI
+description: I denne artikel gennemgås det, hvordan segmenteret hentning af store datasæt for Power BI-visualiseringer aktiveres.
 author: AviSander
 ms.author: asander
 manager: rkarlin
@@ -9,23 +9,22 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: bc8ff673927fd66bf44164e4e9950c279b98c6c1
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 7e5ecc0e317a21d10e76e9413926822ac4d6760b
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425062"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237132"
 ---
 # <a name="fetch-more-data-from-power-bi"></a>Hent flere data fra Power BI
 
-API'en til indlæsning af flere data tilsidesætter den faste grænse på 30.000 datapunkter. Så får du dataene i dele. Størrelsen af delene kan konfigureres for at forbedre ydeevnen i henhold til brugscasen.  
+I denne artikel beskrives det, hvordan du indlæser flere data for at overskride den faste grænse for et datapunkt på 30 KB. Denne fremgangsmåde omfatter data i segmenter. Hvis du vil forbedre ydeevnen, kan du konfigurere segmentstørrelsen, så den passer til din use case.  
 
-## <a name="enable-segmented-fetch-of-large-datasets"></a>Aktivér segmenteret hentning af store datasæt
+## <a name="enable-a-segmented-fetch-of-large-datasets"></a>Aktivér en segmenteret hentning af store datasæt
 
-I segmenteringstilstanden `dataview` skal du definere et "vindue" for dataReductionAlgorithm i visualiseringens `capabilities.json` for den påkrævede dataViewMapping.
-`count` fastsætter størrelsen af vinduet, hvilket begrænser antallet af nye datarækker, der kan føjes til `dataview` ved hver opdatering.
+I segmenteringstilstanden `dataview` skal du definere et vindue for dataReductionAlgorithm i visualiseringens *capabilities.json*-fil for den påkrævede dataViewMapping. `count` fastsætter størrelsen af vinduet, hvilket begrænser antallet af nye datarækker, der kan føjes til `dataview` ved hver opdatering.
 
-Skal føjes til capabilities.json
+Tilføj følgende kode i filen *capabilities.json*:
 
 ```typescript
 "dataViewMappings": [
@@ -47,9 +46,9 @@ Skal føjes til capabilities.json
 
 Nye segmenter føjes til den eksisterende `dataview` og leveres til visualiseringen som et `update`-kald.
 
-## <a name="usage-in-the-custom-visual"></a>Brug i den brugerdefinerede visualisering
+## <a name="usage-in-the-power-bi-visual"></a>Brug i visualiseringer i Power BI
 
-Du kan se om indikationsdataene findes ved at tjekke om `dataView.metadata.segment` findes:
+Du kan se, om dataene findes, ved at kontrollere forekomsten af `dataView.metadata.segment`:
 
 ```typescript
     public update(options: VisualUpdateOptions) {
@@ -59,11 +58,9 @@ Du kan se om indikationsdataene findes ved at tjekke om `dataView.metadata.segme
     }
 ```
 
-Det er også muligt at kontrollere, om det er den første eller en efterfølgende opdatering ved at tjekke `options.operationKind`.
+Du kan også se, om det er den første eller en efterfølgende opdatering, ved at kontrollere `options.operationKind`. I følgende kode refererer `VisualDataChangeOperationKind.Create` til det første segment, mens `VisualDataChangeOperationKind.Append` refererer til efterfølgende segmenter.
 
-`VisualDataChangeOperationKind.Create` betyder det første segment, og `VisualDataChangeOperationKind.Append` betyder efterfølgende segmenter.
-
-Se kodestykket nedenfor for at se et eksempel på implementering:
+Se følgende kodestykke for at se et eksempel på implementering:
 
 ```typescript
 // CV update implementation
@@ -73,7 +70,7 @@ public update(options: VisualUpdateOptions) {
 
     }
 
-    // on second or subesquent segments:
+    // on second or subsequent segments:
     if (options.operationKind == VisualDataChangeOperationKind.Append) {
 
     }
@@ -82,24 +79,24 @@ public update(options: VisualUpdateOptions) {
 }
 ```
 
-Metoden `fetchMoreData` kan også aktiveres fra en hændelsesmanager i brugergrænsefladen
+Du kan også aktivere metoden `fetchMoreData` fra en hændelsesmanager for brugergrænsefladen som vist her:
 
 ```typescript
 btn_click(){
 {
-    // check if more data is expected for the current dataview
+    // check if more data is expected for the current data view
     if (dataView.metadata.segment) {
-        //request for more data if available, as resopnce Power BI will call update method
+        //request for more data if available; as a response, Power BI will call update method
         let request_accepted: bool = this.host.fetchMoreData();
         // handle rejection
         if (!request_accepted) {
-            // for example when the 100 MB limit has been reached
+            // for example, when the 100 MB limit has been reached
         }
     }
 }
 ```
 
-Power BI kalder metoden `update` for visualiseringen med et nyt datasegment som et svar på at kalde metoden `this.host.fetchMoreData`.
+Som svar på kald af metoden `this.host.fetchMoreData` kalder Power BI metoden `update` for det visuelle element med et nyt datasegment.
 
 > [!NOTE]
-> Power BI begrænser for øjeblikket det samlede antal hentede data til **100 MB** for at undgå begrænsninger i klientens hukommelse. Du kan registrere, at denne grænse nås, når fetchMoreData() returnerer "false".*
+> Power BI begrænser i øjeblikket det samlede antal hentede data til 100 MB for at undgå begrænsninger af klientens hukommelse. Du kan se, at grænsen er nået, når fetchMoreData() returnerer `false`.

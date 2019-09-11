@@ -1,6 +1,6 @@
 ---
-title: API til filtre i visualiseringer
-description: Sådan filtrerer Power BI-visualiseringer andre visualiseringer
+title: Visuelle filtres API i Power BI-visualiseringer
+description: I denne artikel gennemgås det, hvordan Power BI-visualiseringer kan filtrere andre visualiseringer.
 author: sranins
 ms.author: rasala
 manager: rkarlin
@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 50e9601faf497675ebc3f24609a856a600e3bcb1
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: fc0b21116888c8455d4d7b8efc5c476bfc592483
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425039"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237119"
 ---
-# <a name="power-bi-visual-filters-api"></a>API til filtre i Power BI-visualiseringer
+# <a name="the-visual-filters-api-in-power-bi-visuals"></a>Visuelle filtres API i Power BI-visualiseringer
 
-Med filtre i visualiseringer kan der filtreres efter data. Den største forskel i forhold til markeringer er, at andre visualiseringer filtreres på en hvilken som helst måde, trods understøttelse af fremhævning i andre visualiseringer.
+Visual Filters API gør det muligt at filtrere data i Power BI-visualiseringer. Den største forskel i forhold til andre markeringer er, at andre visualiseringer filtreres på en hvilken som helst måde, trods understøttelse af fremhævning i andre visualiseringer.
 
-Hvis du vil aktivere filtrering for visualiseringen, skal visualiseringen indeholde objektet `filter` i afsnittet `general` under indholdet capabilities.json.
+Hvis du vil aktivere filtrering for en visualisering, skal den indeholde objektet `filter` i kodeafsnittet `general` i *capabilities.json*.
 
 ```json
 "objects": {
@@ -38,15 +38,15 @@ Hvis du vil aktivere filtrering for visualiseringen, skal visualiseringen indeho
     }
 ```
 
-Grænsefladerne til API til filtre er tilgængelig i [`powerbi-models`](https://www.npmjs.com/package/powerbi-models)-pakken. Pakken indeholder også klasser til oprettelse af filterforekomster.
+Visual Filters API-grænseflader er tilgængelige i pakken [powerbi-models](https://www.npmjs.com/package/powerbi-models). Pakken indeholder også klasser til oprettelse af filterforekomster.
 
 ```cmd
 npm install powerbi-models --save
 ```
 
-Hvis du bruger ældre versioner af værktøjerne (versioner, der er ældre end 3.x.x), skal du inkludere `powerbi-models` i visualiseringspakken. [Kort vejledning til, hvordan man inkluderer pakken](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/AddingAdvancedFilterAPI.md)
+Hvis du bruger en ældre version af værktøjerne (før 3.x.x), skal du medtage `powerbi-models` i visualiseringspakken. Du kan finde flere oplysninger i den korte vejledning [Føj API til avanceret filtrering til den brugerdefinerede visualisering](https://github.com/Microsoft/powerbi-visuals-sampleslicer/blob/master/doc/AddingAdvancedFilterAPI.md).
 
-Alle filtre udvider `IFilter`-grænsefladen.
+Alle filtre udvider grænsefladen `IFilter` som vist i følgende kode:
 
 ```typescript
 export interface IFilter {
@@ -54,12 +54,12 @@ export interface IFilter {
     target: IFilterTarget;
 }
 ```
+Hvor:
+* `target` er tabelkolonnen i datakilden.
 
-`target` – er en tabelkolonne i datakilden.
+## <a name="the-basic-filter-api"></a>API til grundlæggende filtrering
 
-## <a name="basic-filter-api"></a>API til grundlæggende filtrering
-
-Grænsefladen til grundlæggende filtrering er
+Den grundlæggende filtergrænseflade vises i følgende kode:
 
 ```typescript
 export interface IBasicFilter extends IFilter {
@@ -68,9 +68,9 @@ export interface IBasicFilter extends IFilter {
 }
 ```
 
-`operator` – er optælling med værdierne "In", "NotIn", "All"
-
-`values` – er værdier for betingelse
+Hvor:
+* `operator` er en optælling med værdierne *In*, *NotIn* og *All*.
+* `values` er værdier for betingelsen.
 
 Eksempel på grundlæggende filtrering:
 
@@ -84,9 +84,9 @@ let basicFilter = {
 }
 ```
 
-Filteret betyder, "Giv mig alle rækker, hvor `col1` er lig med en af værdierne 1, 2 eller 3".
+Filteret betyder "Giv mig alle rækker, hvor `col1` er lig med en af værdierne 1, 2 eller 3."
 
-De tilsvarende til SQL er
+Den tilsvarende SQL er:
 
 ```sql
 SELECT * FROM table WHERE col1 IN ( 1 , 2 , 3 )
@@ -94,7 +94,7 @@ SELECT * FROM table WHERE col1 IN ( 1 , 2 , 3 )
 
 Hvis du vil oprette et filter, kan du bruge BasicFilter-klassen i `powerbi-models`.
 
-Hvis du bruger ældre versioner af værktøjerne, skal du hente en forekomst af modeller i vinduesobjektet ved hjælp af `window['powerbi-models']`:
+Hvis du bruger en ældre version af værktøjet, skal du hente en forekomst af modellerne i vinduesobjektet ved hjælp af `window['powerbi-models']` som vist i følgende kode:
 
 ```javascript
 let categories: DataViewCategoricalColumn = this.dataView.categorical.categories[0];
@@ -109,19 +109,19 @@ let values = [ 1, 2, 3 ];
 let filter: IBasicFilter = new window['powerbi-models'].BasicFilter(target, "In", values);
 ```
 
-Visualiseringen aktiverer filteret ved hjælp af metoden applyJsonFilter() på den værtsgrænseflade, som IVisualHost leverede til visualiseringen i konstruktøren.
+En visualisering aktiverer filteret ved hjælp af metoden applyJsonFilter() på den værtsgrænseflade, som IVisualHost leverede til visualiseringen i konstruktøren.
 
 ```typescript
 visualHost.applyJsonFilter(filter, "general", "filter", FilterAction.merge);
 ```
 
-## <a name="advanced-filter-api"></a>API til avanceret filtrering
+## <a name="the-advanced-filter-api"></a>API til avanceret filtrering
 
-[API til avanceret filtrering](https://github.com/Microsoft/powerbi-models) muliggør komplekse forespørgsler for markering/filtrering af datapunkter på tværs af visualiseringer baseret på flere kriterier (såsom "LessThan", "Contains", "Is", "IsBlank" osv.).
+[API til avanceret filtrering](https://github.com/Microsoft/powerbi-models) muliggør komplekse forespørgsler for markering og filtrering af datapunkter på tværs af visualiseringer, som er baseret på flere kriterier (f.eks. *LessThan*, *Contains*, *Is* og *IsBlank*).
 
 Filteret blev introduceret i API til visualiseringer 1.7.0.
 
-API til avanceret filtrering kræver også `target` med `table`- og `column`-navn. Men operatorerne for API til avanceret filtrering er `"And" | "Or"`. 
+API til avanceret filtrering kræver også `target` med et `table`- og `column`-navn. Men operatorerne for API til avanceret filtrering er *And* og *Or*. 
 
 Derudover bruger filteret betingelser i stedet for værdier med grænsefladen:
 
@@ -132,7 +132,7 @@ interface IAdvancedFilterCondition {
 }
 ```
 
-Betingelsesoperatorer til parameteren `operator` er `"None" | "LessThan" | "LessThanOrEqual" | "GreaterThan" | "GreaterThanOrEqual" | "Contains" | "DoesNotContain" | "StartsWith" | "DoesNotStartWith" | "Is" | "IsNot" | "IsBlank" | "IsNotBlank"`
+Betingelsesoperatører for parametren `operator` er *None*, *LessThan*, *LessThanOrEqual*, *GreaterThan*, *GreaterThanOrEqual*, *Contains*, *DoesNotContain*, *StartsWith*, *DoesNotStartWith*, *Is*, *IsNot*, *IsBlank* og "IsNotBlank"`
 
 ```javascript
 let categories: DataViewCategoricalColumn = this.dataView.categorical.categories[0];
@@ -155,21 +155,19 @@ let filter: IAdvancedFilter = new window['powerbi-models'].AdvancedFilter(target
 visualHost.applyJsonFilter(filter, "general", "filter", FilterAction.merge);
 ```
 
-De tilsvarende til SQL er
+Den tilsvarende SQL er:
 
 ```sql
 SELECT * FROM table WHERE col1 < 0;
 ```
 
-Du kan finde en komplet eksempelkode til brug af API til avanceret filtrering i [`Sampleslicer visual` lageret](https://github.com/Microsoft/powerbi-visuals-sampleslicer).
+Hvis du vil se hele eksempelkoden til brug af API til avanceret filtrering, skal du gå til [lageret med Sampleslicer-visualiseringer](https://github.com/Microsoft/powerbi-visuals-sampleslicer).
 
-## <a name="tuple-filter-api-multi-column-filter"></a>API til tupelfilter (filter til flere kolonner)
+## <a name="the-tuple-filter-api-multi-column-filter"></a>API til tupelfilter (filter til flere kolonner)
 
-API til tupelfilter blev introduceret i API til visualiseringer 2.3.0.
+API til tupelfilter blev introduceret i API til visualiseringer 2.3.0. Den ligner det grundlæggende API-filter, men gør det muligt at definere betingelser for flere kolonner og tabeller.
 
-API til tupelfilter ligner det grundlæggende filter, men den muliggør definering af betingelser for flere kolonner og tabeller.
-
-Filteret har grænsefladen: 
+Filtergrænsefladen vises i følgende kode: 
 
 ```typescript
 interface ITupleFilter extends IFilter {
@@ -181,21 +179,22 @@ interface ITupleFilter extends IFilter {
 }
 ```
 
-`target` er en matrix af kolonner med tabelnavne:
+Hvor:
+* `target` er en matrix af kolonner med tabelnavne:
 
-```typescript
-declare type ITupleFilterTarget = IFilterTarget[];
-```
+    ```typescript
+    declare type ITupleFilterTarget = IFilterTarget[];
+    ```
 
   Filteret kan håndtere kolonner fra forskellige tabeller.
 
-`$schema` er "http://powerbi.com/product/schema#tuple"
+* `$schema` er http://powerbi.com/product/schema#tuple.
 
-`filterType` er `FilterType.Tuple`
+* `filterType` er *FilterType.Tuple*.
 
-`operator` tillader kun brug af operatoren `"In"`
+* `operator` tillader kun brug i operatoren *In*.
 
-`values` er en matrix af værditupler, hvor hver tupel repræsenterer én tilladt kombination af værdier for destinationskolonnen 
+* `values` er en matrix af værditupler, og hver tupel repræsenterer én tilladt kombination af værdier for destinationskolonnen. 
 
 ```typescript
 declare type TupleValueType = ITupleElementValue[];
@@ -221,16 +220,16 @@ let target: ITupleFilterTarget = [
 
 let values = [
     [
-        // the 1st column combination value (aka column tuple/vector value) that the filter will pass through
+        // the first column combination value (or the column tuple/vector value) that the filter will pass through
         {
-            value: "Team1" // the value for `Team` column of `DataTable` table
+            value: "Team1" // the value for the `Team` column of the `DataTable` table
         },
         {
-            value: 5 // the value for `Value` column of `DataTable` table
+            value: 5 // the value for the `Value` column of the `DataTable` table
         }
     ],
     [
-        // the 2nd column combination value (aka column tuple/vector value) that the filter will pass through
+        // the second column combination value (or the column tuple/vector value) that the filter will pass through
         {
             value: "Team2" // the value for `Team` column of `DataTable` table
         },
@@ -252,17 +251,18 @@ let filter: ITupleFilter = {
 visualHost.applyJsonFilter(filter, "general", "filter", FilterAction.merge);
 ```
 
-**Rækkefølgen af kolonnenavne og værdier i betingelser er følsomme.**
+> [!IMPORTANT]
+> Rækkefølgen af kolonnenavne og betingelsesværdier har betydning.
 
-De tilsvarende til SQL er
+Den tilsvarende SQL er:
 
 ```sql
 SELECT * FROM DataTable WHERE ( Team = "Team1" AND Value = 5 ) OR ( Team = "Team2" AND Value = 6 );
 ```  
 
-## <a name="restoring-json-filter-from-dataview"></a>Gendanner JSON-filter fra DataView
+## <a name="restore-the-json-filter-from-the-data-view"></a>Gendan JSON-filteret fra datavisningen
 
-Start fra API 2.2 **JSON-filtre** kan gendannes fra **VisualUpdateOptions**
+Fra og med API version 2.2 kan du gendanne JSON-filteret fra *VisualUpdateOptions* som vist i følgende kode:
 
 ```typescript
 export interface VisualUpdateOptions extends extensibility.VisualUpdateOptions {
@@ -276,16 +276,17 @@ export interface VisualUpdateOptions extends extensibility.VisualUpdateOptions {
 }
 ```
 
-Power BI kalder metoden `update` for visualiseringen, når funktionen Skift bogmærker og visualiseringen modtager det tilsvarende `filter`-objekt.
-[Læs mere om understøttelse af bogmærker](bookmarks-support.md)
+Når du skifter bogmærker, kalder Power BI `update`-metoden til visualiseringen, som får et tilsvarende `filter`-objekt. Du kan finde flere oplysninger i [Tilføj understøttelse af bogmærker til visualiseringer i Power BI](bookmarks-support.md).
 
 ### <a name="sample-json-filter"></a>Eksempel på JSON-filter
 
-![Skærmbillede af JSON-filter](./media/json-filter.png)
+Følgende billede viser et eksempel på en JSON-filterkode:
 
-### <a name="clear-json-filter"></a>Ryd JSON-filter
+![JSON-filterkode](./media/json-filter.png)
 
-API til filtrering accepterer værdien `null` for filteret som Nulstil eller Ryd.
+### <a name="clear-the-json-filter"></a>Ryd JSON-filtret
+
+API til filtrering accepterer værdien `null` for filteret som *nulstil* eller *ryd*.
 
 ```typescript
 // invoke the filter

@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e25a004098c5bfe5cf607f5ee4b26dfda09d792d
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 9add7ce3c5caf675fde15fd15eea03d9d9b49d9b
+ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530491"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70750890"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser arbejde i nye arbejdsområder i Power BI
 
@@ -61,7 +61,7 @@ Du kan bruge roller til at administrere, hvem der kan gøre hvad i et arbejdsomr
 
 Når du tildeler roller til en brugergruppe, har enkeltpersoner i gruppen adgang til indhold. Hvis du indlejrer brugergrupper, har alle brugere i grupperne tilladelse.
 
-Her er egenskaberne for de fire roller: administratorer, medlemmer, bidragydere og fremvisere.
+Her er egenskaberne for de fire roller: administratorer, medlemmer, bidragydere og fremvisere. Alle disse funktioner, undtagen den sidste, kræver en Power BI Pro-licens.
 
 |Egenskab   | Administrator  | Medlem  | Bidragyder  | Fremviser |
 |---|---|---|---|---|
@@ -73,9 +73,9 @@ Her er egenskaberne for de fire roller: administratorer, medlemmer, bidragydere 
 | Give andre tilladelse til at dele elementer igen. |  X | X  |   |   |
 | Oprette, redigere og slette indhold i arbejdsområdet.  |  X | X  | X  |   |
 | Publicere rapporter til arbejdsområdet, slette indhold.  |  X | X  | X  |   |
-| Få vist et element. |  X | X  | X  | X  |
 | Oprette en rapport i et andet arbejdsområde, der er baseret på et datasæt i dette arbejdsområde. |  X | X  | X  | X <sup>1</sup>  |
 | Kopiere en rapport. | X | X | X | X <sup>1</sup> |
+| Få vist og interager med et element. |  X | X  | X  | X  |
 
 **1** Kræver en Power BI Pro-licens og [oprettelsestilladelser for datasæt](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
  

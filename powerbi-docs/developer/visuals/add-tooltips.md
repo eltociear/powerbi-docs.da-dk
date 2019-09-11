@@ -1,6 +1,6 @@
 ---
-title: Værktøjstip i Visuals
-description: Power BI Visuals kan vise værktøjstip
+title: Værktøjstip i visualiseringer i Power BI
+description: I denne artikel beskrives det, hvordan du kan få vist værktøjstip i visualiseringer i Power BI.
 author: AviSander
 ms.author: asander
 manager: rkarlin
@@ -9,32 +9,32 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 286c5eef2c341ad77c351008b321992597bef292
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5ad14c632955c42607206dd09a16a8fdb3670e92
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425637"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237359"
 ---
-# <a name="power-bi-visuals-tooltips"></a>Værktøjstip i Power BI Visuals
+# <a name="tooltips-in-power-bi-visuals"></a>Værktøjstip i visualiseringer i Power BI
 
-Visuals kan nu anvende understøttelse af Power BI-værktøjstip. Power BI-værktøjstip håndterer følgende interaktioner:
+Visualiseringer kan nu anvende understøttelse af Power BI-værktøjstip. Power BI-værktøjstip håndterer følgende interaktioner:
 
-Vis et værktøjstip.
-Skjul et værktøjstip.
-Flyt et værktøjstip.
+* Vis et værktøjstip.
+* Skjul et værktøjstip.
+* Flyt et værktøjstip.
 
-Værktøjstip kan vise et tekstelement med en titel, en værdi i en given farve og uigennemsigtighed med et angivet sæt koordinater. Disse data leveres til API'en. Power BI-værten gengiver dem derefter på samme måde som værktøjstip til oprindelige visualiseringer.
+Værktøjstip kan vise et tekstelement med en titel, en værdi i en given farve og uigennemsigtighed med et angivet sæt koordinater. Dataene leveres til API, og Power BI-værten gengiver dem derefter på samme måde som værktøjstip til oprindelige visualiseringer.
 
-Eksempelvis værktøjstip i eksemplet BarChart.
+Følgende billede viser et værktøjstip i et eksempel på et søjlediagram:
 
-![Værktøjstip i eksemplet BarChart](./media/tooltips-in-samplebarchart.png)
+![Værktøjstip i eksempel på søjlediagram](./media/tooltips-in-samplebarchart.png)
 
-Værktøjstippet ovenfor angiver kategori og værdi for en enkelt søjle i diagrammet. Det kan udvides til at vise flere værdier i et enkelt værktøjstip.
+Billedet af værktøjstippet ovenfor angiver kategori og værdi for en enkelt søjle i diagrammet. Du kan udvide et enkelt værktøjstip for at få vist flere værdier.
 
-## <a name="handling-tooltips"></a>Håndtering af værktøjstip
+## <a name="manage-tooltips"></a>Administrer værktøjstip
 
-Den grænseflade, du skal bruge til at administrere værktøjstip, er ITooltipService. Denne grænseflade bruges til at underrette værten om, at et værktøjstip skal vises, fjernes eller flyttes.
+Den grænseflade, du skal bruge til at administrere værktøjstip, er "ITooltipService". Den bruges til at underrette værten om, at et værktøjstip skal vises, fjernes eller flyttes.
 
 ```typescript
     interface ITooltipService {
@@ -47,19 +47,21 @@ Den grænseflade, du skal bruge til at administrere værktøjstip, er ITooltipSe
 
 Din visualisering skal lytte efter musehændelser i din visualisering og kalde de delegerede for `show()`, `move()` og `hide()` efter behov med det relevante indhold udfyldt i `Tooltip****Options`-objekterne.
 `TooltipShowOptions` og `TooltipHideOptions` definerer, hvad der skal vises, og hvordan der skal reageres, når disse hændelser indtræffer.
-Da kaldet af disse metoder kræver brugerhændelser, f.eks. bevægelse eller berøring med musen, er det en god idé at oprette lyttefunktioner til disse hændelser, som derefter kalder `TooltipService`-medlemmerne.
+
+Da kaldet af disse metoder kræver brugerhændelser, f.eks. bevægelse og berøring med musen, er det en god idé at oprette lyttefunktioner til disse hændelser, som derefter kalder `TooltipService`-medlemmerne.
 Vores eksempel samles i en klasse, der kaldes `TooltipServiceWrapper`.
 
-### <a name="tooltipservicewrapper-class"></a>Klassen TooltipServiceWrapper
+### <a name="the-tooltipservicewrapper-class"></a>Klassen TooltipServiceWrapper
 
-Det grundlæggende princip bag denne klasse er, at den indeholder forekomsten af `TooltipService`, lytter efter D3-musehændelser over relevante elementer og derefter foretager kald af `show()` og `hide()`, når det er nødvendigt.
-Klassen indeholder og administrerer enhver relevant tilstand og logik for disse hændelser, og den er hovedsageligt beregnet til at fungere sammen med den underliggende D3-kode. D3-grænsefladen og -konverteringen er ikke beskrevet i dette dokument.
+Det grundlæggende princip bag denne klasse er, at den indeholder forekomsten af `TooltipService`, lytter efter D3-musehændelser over relevante elementer og derefter foretager kald af `show()` og `hide()` til elementerne, når det er nødvendigt.
 
-Du kan finde hele eksempelkoden i [lageret med SampleBarChart-visualiseringen](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14)
+Klassen indeholder og administrerer enhver relevant tilstand og logik for disse hændelser, som hovedsageligt er beregnet til at fungere sammen med den underliggende D3-kode. D3-grænsefladen og -konverteringen er ikke beskrevet i denne artikel.
 
-### <a name="creating-tooltipservicewrapper"></a>Oprettelse af TooltipServiceWrapper
+Du kan finde hele eksempelkoden i [lageret med SampleBarChart-visualiseringen](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14).
 
-BarChart-konstruktøren har nu et `tooltipServiceWrapper`-medlem, som er instantieret i konstruktøren med værtens `tooltipService`-forekomst.
+### <a name="create-tooltipservicewrapper"></a>Opret TooltipServiceWrapper
+
+BarChart-konstruktøren har nu et `TooltipServiceWrapper`-medlem, som er instantieret i konstruktøren med værtens `tooltipService`-forekomst.
 
 ```typescript
         private tooltipServiceWrapper: ITooltipServiceWrapper;
@@ -89,7 +91,7 @@ Klassen `TooltipServiceWrapper` indeholder instansen `tooltipService` – også 
 
 Det eneste indgangspunkt for denne klasse angående registrering af lyttefunktioner for hændelser er metoden `addTooltip`.
 
-### <a name="addtooltip-method"></a>Metoden addTooltip
+### <a name="the-addtooltip-method"></a>Metoden addTooltip
 
 ```typescript
         public addTooltip<T>(
@@ -106,20 +108,19 @@ Det eneste indgangspunkt for denne klasse angående registrering af lyttefunktio
         }
 ```
 
-* **selection: d3.Selection<Element>**
-* De D3-elementer, over hvilke der håndteres værktøjstip
-* **getTooltipInfoDelegate: (args: TooltipEventArgs<T>) => VisualTooltipDataItem[]**
-* Delegeret til udfyldelse af indholdet af værktøjstippet (hvad skal vises) pr. kontekst
-* **getDataPointIdentity: (args: TooltipEventArgs<T>) => ISelectionId**
-* Delegeret til hentning af datapunkt-id – bruges ikke i dette eksempel 
-* **reloadTooltipDataOnMouseMove?: boolean**
-* Boolesk værdi, der angiver, om værktøjstippet skal opdateres under en mouseMove-hændelse – bruges ikke i dette eksempel
+* **selection: d3.Selection<Element>** : De D3-elementer, over hvilke der håndteres værktøjstip.
+
+* **getTooltipInfoDelegate: (args: TooltipEventArgs<T>) => VisualTooltipDataItem[]** : Delegeret til udfyldelse af indholdet af værktøjstippet (hvad skal vises) pr. kontekst.
+
+* **getDataPointIdentity: (args: TooltipEventArgs<T>) => ISelectionId**: Delegeret til hentning af datapunkt-id (bruges ikke i dette eksempel). 
+
+* **reloadTooltipDataOnMouseMove? boolean**: En boolesk værdi, der angiver, om værktøjstippet skal opdateres under en MouseMove-hændelse (bruges ikke i dette eksempel).
 
 Som du kan se, afsluttes `addTooltip` uden handling, hvis `tooltipService` er deaktiveret, eller der ikke er noget reelt valg.
 
-### <a name="call-of-show-method-to-display-a-tooltip"></a>Kald af visningsmetoden for at få vist et værktøjstip
+### <a name="call-the-show-method-to-display-a-tooltip"></a>Kald af visningsmetoden for at få vist et værktøjstip
 
-Dernæst lytter `addTooltip` efter D3-hændelsen `mouseover`.
+`addTooltip`-metoden lytter derefter til D3 `mouseover`-event som vist i følgende kode:
 
 ```typescript
         ...
@@ -148,22 +149,21 @@ Dernæst lytter `addTooltip` efter D3-hændelsen `mouseover`.
         });
 ```
 
-* **makeTooltipEventArgs**
-* Udtrækker konteksten fra de valgte D3-elementer til tooltipEventArgs. Desuden beregnes koordinaterne.
-* **getTooltipInfoDelegate**
-* Bygger derefter indholdet af værktøjstippet ud fra tooltipEventArgs. Der sker et tilbagekald til BarChart-klassen, da det er visualiseringens logik. Det er det faktiske tekstindhold, der vises i værktøjstippet.
-* **getDataPointIdentity**
-* Bruges ikke i dette eksempel
-* **this.visualHostTooltipService.show**
-* Kaldet til at vise værktøjstippet  
+* **makeTooltipEventArgs**: Udtrækker konteksten fra de valgte D3-elementer til tooltipEventArgs. Desuden beregner den koordinaterne.
+
+* **getTooltipInfoDelegate**: Den bygger derefter indholdet af værktøjstippet ud fra tooltipEventArgs. Der sker et tilbagekald til BarChart-klassen, fordi det er visualiseringens logik. Det er det faktiske tekstindhold, der vises i værktøjstippet.
+
+* **getDataPointIdentity**: Bruges ikke i dette eksempel.
+
+* **this.visualHostTooltipService.show**: Kaldet til at vise værktøjstippet.  
 
 Du kan finde andre håndteringer i eksemplet til `mouseout`- og `mousemove`-hændelser.
 
 Du kan finde flere oplysninger i [lageret med SampleBarChart-visualiseringen](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/981b021612d7b333adffe9f723ab27783c76fb14).
 
-### <a name="populating-the-tooltip-content-by-gettooltipdata-method"></a>Udfyldelse af værktøjstippets indhold med metoden getTooltipData
+### <a name="populate-the-tooltip-content-by-the-gettooltipdata-method"></a>Udfyld værktøjstippets indhold med metoden getTooltipData
 
-`BarChart` blev tilføjet med medlemmet `getTooltipData`, der blot udtrækker datapunktets kategori, værdi og farve til elementet VisualTooltipDataItem[].
+Klassen BarChart blev tilføjet med et `getTooltipData`-medlem, der blot udtrækker datapunktets `category`, `value` og `color` til elementet VisualTooltipDataItem[].
 
 ```typescript
         private static getTooltipData(value: any): VisualTooltipDataItem[] {
@@ -176,11 +176,11 @@ Du kan finde flere oplysninger i [lageret med SampleBarChart-visualiseringen](ht
         }
 ```
 
-I ovenstående implementering er `header`-medlemmet konstant, men det kan bruges til mere komplekse implementeringer, som kræver dynamiske værdier. Du kan udfylde `VisualTooltipDataItem[]` med mere end ét element, hvilket betyder, at der tilføjes flere linjer i værktøjstippet. Dette kan være nyttigt i visualiseringer som f.eks. stablede liggende søjlediagrammer, hvor værktøjstippet kan vise data fra mere end et enkelt datapoint.
+I ovenstående implementering er `header`-medlemmet konstant, men du kan bruge den til mere komplekse implementeringer, som kræver dynamiske værdier. Du kan udfylde `VisualTooltipDataItem[]` med mere end ét element, hvilket betyder, at der tilføjes flere linjer i værktøjstippet. Dette kan være nyttigt i visualiseringer som f.eks. stablede liggende søjlediagrammer, hvor værktøjstippet kan vise data fra mere end et enkelt datapoint.
 
-### <a name="calling-addtooltip-method"></a>Kald af metoden addTooltip
+### <a name="call-the-addtooltip-method"></a>Kald metoden addTooltip
 
-Det sidste trin er at kalde `addTooltip`, når de faktiske data kan ændre sig. Dette kald sker i metoden `BarChart.update()`. Der foretages et kald for at overvåge valg af alle 'bar'-elementerne, der kun sender `BarChart.getTooltipData()`, som det er beskrevet ovenfor.
+Det sidste trin er at kalde metoden `addTooltip`, når de faktiske data kan ændre sig. Dette kald sker i metoden `BarChart.update()`. Der foretages et kald for at overvåge valg af alle 'bar'-elementerne, der kun sender `BarChart.getTooltipData()`, som det er beskrevet ovenfor.
 
 ```typescript
         this.tooltipServiceWrapper.addTooltip(this.barContainer.selectAll('.bar'),
@@ -188,9 +188,9 @@ Det sidste trin er at kalde `addTooltip`, når de faktiske data kan ændre sig. 
             (tooltipEvent: TooltipEventArgs<number>) => null);
 ```
 
-## <a name="adding-report-page-tooltips"></a>Tilføjelse af værktøjstip på rapportsider
+## <a name="add-report-page-tooltips"></a>Tilføj værktøjstip for rapportside
 
-Hvis du vil tilføje understøttelse af værktøjstip til rapportsider, er de fleste ændringer placeret i capabilities.json.
+Hvis du vil tilføje understøttelse af værktøjstip til rapportsider, kan du finde de fleste ændringer i filen *capabilities.json*.
 
 Følgende er et eksempel på et skema
 
@@ -208,19 +208,21 @@ Følgende er et eksempel på et skema
 }
 ```
 
-Definitionen af værktøjstip til rapportsider kan angives i ruden Format.
+Du kan definere værktøjstip til rapportsider i ruden **Format.**
 
 ![Værktøjstip til rapportsider](media/report-page-tooltip.png)
 
-`supportedTypes` er den konfiguration af værktøjstip, der understøttes af visualiseringen og afspejles på feltoversigten. `default` angiver, om binding af "automatiske" værktøjstip via datafelter understøttes. canvas angiver, om værktøjstip på rapportsider understøttes.
+* `supportedTypes`: Den konfiguration af værktøjstip, der understøttes af visualiseringen og afspejles på feltoversigten. 
+   * `default`: Angiver, om binding af "automatiske" værktøjstip via datafelter understøttes. 
+   * `canvas`: Angiver, om værktøjstip på rapportsider understøttes.
 
-`roles` er valgfri. Når den er defineret, får du besked om, hvilke dataroller der bindes til den valgte indstilling for værktøjstip i feltoversigten.
+* `roles`: (Valgfrit) Når den er defineret, får du besked om, hvilke dataroller der bindes til den valgte indstilling for værktøjstip i feltoversigten.
 
-Du kan finde flere oplysninger i retningslinjer for brug af værktøjstip på rapportsider under [Værktøjstip til rapportsider](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips)
+Du kan finde flere oplysninger under [Retningslinjer for brug af værktøjstip på rapportsider](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2018-feature-summary/#tooltips).
 
-Hvis der skal vises værktøjstip til rapportsider ved kald af `ITooltipService.Show(options: TooltipShowOptions)` eller `ITooltipService.Move(options: TooltipMoveOptions)`, anvender Power BI-værten selectionId (egenskaben `identities` for argumentet `options` ovenfor). SelectionId skal repræsentere de valgte data (kategori, serie osv.) for det element, du holdt markøren over, og som skal hentes af værktøjstippet.
+For at vise værktøjstip til rapportsiden, efter at Power BI-værten har kaldt `ITooltipService.Show(options: TooltipShowOptions)` eller `ITooltipService.Move(options: TooltipMoveOptions)`, bruger den selectionId (egenskaben `identities` for det foregående `options`-argument). For at blive hentet af værktøjstippet skal selectionId repræsentere de valgte data (kategori, serie osv.) for det element, du holdt markøren over.
 
-Eksempel på, hvordan selectionId sendes ved kald om visning af værktøjstip:
+Et eksempel på, hvordan selectionId sendes ved kald om visning af værktøjstip, vises i den følgende kode:
 
 ```typescript
     this.tooltipServiceWrapper.addTooltip(this.barContainer.selectAll('.bar'),

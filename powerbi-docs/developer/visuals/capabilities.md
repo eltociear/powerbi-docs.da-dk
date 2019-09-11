@@ -1,6 +1,6 @@
 ---
-title: Egenskaber
-description: Funktioner og egenskaber for visuelle elementer i Power BI
+title: Funktioner og egenskaber for visualiseringer i Power BI
+description: I denne artikel beskrives egenskaberne og funktionerne for visualiseringer i Power BI.
 author: asander
 ms.author: asander
 manager: rkarlin
@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: f6bb4293a44f98f2f8098fb197c7b406b618d211
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5c32a1679f09e05d134da7f27ffa0cee90d75fab
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425453"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237304"
 ---
-# <a name="power-bi-visual-capabilities"></a>Egenskaber for visuelle elementer i Power BI
+# <a name="capabilities-and-properties-of-power-bi-visuals"></a>Funktioner og egenskaber for visualiseringer i Power BI 
 
-Egenskaber indeholder oplysninger til værten om din visualisering. Alle egenskaber i modellen Egenskaber er `optional`
+Du bruger egenskaber til at give værten oplysninger om din visualisering. Alle egenskaber i modellen Egenskaber er `optional`.
 
-Rodobjekter for visualiseringernes egenskaber er `dataRoles`, `dataViewMappings` osv.
+Rodobjekterne for visualiseringernes egenskaber er `dataRoles`, `dataViewMappings` osv.
 
 ```json
 {
@@ -34,29 +34,29 @@ Rodobjekter for visualiseringernes egenskaber er `dataRoles`, `dataViewMappings`
 
 ```
 
-## <a name="define-the-data-fields-your-visual-expects---dataroles"></a>Definer de datafelter, som din visualisering forventer – `dataRoles`
+## <a name="define-the-data-fields-that-your-visual-expects-dataroles"></a>Definer de datafelter, som din visualisering forventer: dataRoles
 
-Hvis du vil definere felter, der kan bindes til data, skal du bruge `dataRoles`, der omfatter en matrix med `DataViewRole`-objekter, som definerer alle de egenskaber, der er behov for.
+Hvis du vil definere felter, der kan bindes til data, skal du bruge `dataRoles`. `dataRoles` tager en matrix af `DataViewRole` objekter, der definerer alle de påkrævede egenskaber.
 
 ### <a name="properties"></a>Egenskaber
 
-* **name** –det interne navn på dette datafelt (skal være entydigt).
-* **kind** – feltets type:
-    * `Grouping` – diskrete værdier, der bruges til gruppering af målingsfelter.
-    * `Measure` – numeriske dataværdier
-    * `GroupingOrMeasure` – kan bruges som enten en gruppering eller en måling.
-* **displayName** – det navn, der vises for brugeren i ruden Egenskaber.
-* **description** – en kort beskrivelse af feltet (valgfrit).
-* **requiredTypes** – den påkrævede datatype for denne datarolle. Alle værdier, der ikke stemmer overens, indstilles til NULL (valgfrit).
-* **preferredTypes** – den foretrukne datatype for denne datarolle (valgfrit).
+* **name**: Det interne navn på dette datafelt (skal være entydigt).
+* **kind**: Feltets type:
+    * `Grouping`: Adskilte værdier, der anvendes til at gruppere målingsfelter.
+    * `Measure`: Numeriske dataværdier.
+    * `GroupingOrMeasure`: Værdier, der kan bruges som enten en gruppering eller en måling.
+* **displayName**: Det navn, der vises for brugeren i ruden **Egenskaber**.
+* **description**: En kort beskrivelse af feltet (valgfrit).
+* **requiredTypes**: Den påkrævede datatype for denne datarolle. Værdier, der ikke stemmer overens, er angivet som NULL (valgfrit).
+* **preferredTypes**: Den foretrukne datatype for denne datarolle (valgfrit).
 
-### <a name="valid-data-types-in-requiredtypes-and-preferredtypes"></a>Gyldige datatyper i "requiredTypes" og "preferredTypes"
+### <a name="valid-data-types-in-requiredtypes-and-preferredtypes"></a>Gyldige datatyper i requiredTypes og preferredTypes
 
-* **bool** – en boolesk værdi
-* **Integer** – en heltalsværdi (heltal)
-* **numeric** – en numerisk værdi
-* **text** – en tekstværdi
-* **geography** – geografiske data
+* **bool**: En boolesk værdi
+* **integer**: En heltalsværdi (heltal)
+* **numeric**: En numerisk værdi
+* **text**: En tekstværdi
+* **geography**: Geografiske data
 
 ### <a name="example"></a>Eksempel
 
@@ -157,15 +157,15 @@ Hvis du vil definere felter, der kan bindes til data, skal du bruge `dataRoles`,
 ]
 ```
 
-Ovenstående dataroller opretter følgende felter
+De foregående dataroller opretter de felter, der vises i følgende billede:
 
-![Visning af datarolle](./media/data-role-display.png)
+![Datarollefelter](./media/data-role-display.png)
 
-## <a name="define-how-you-want-the-data-mapped---dataviewmappings"></a>Definer, hvordan du vil have dataene tilknyttet – `dataViewMappings`
+## <a name="define-how-you-want-the-data-mapped-dataviewmappings"></a>Definer, hvordan dataene skal tilknyttes: dataViewMappings
 
-En DataViewMapping beskriver, hvordan datarollerne er relateret til hinanden, og giver dig mulighed for at angive betingede krav til dem.
+Egenskaben DataViewMapping beskriver, hvordan datarollerne er relateret til hinanden, og giver dig mulighed for at angive betingede krav til dem.
 
-De fleste visualiseringer rummer en enkelt tilknytning, men du kan angive flere dataViewMappings. Hver af de gyldige tilknytninger opretter en DataView. 
+De fleste visualiseringer rummer en enkelt tilknytning, men du kan angive flere dataViewMappings. Hver af de gyldige tilknytninger resulterer i en datavisning. 
 
 ```json
 "dataViewMappings": [
@@ -179,13 +179,11 @@ De fleste visualiseringer rummer en enkelt tilknytning, men du kan angive flere 
 ]
 ```
 
-[Få mere at vide om DataViewMappings](dataview-mappings.md)
+Du kan finde flere oplysninger under [Forstå tilknytning af datavisning i Power BI-visualiseringer](dataview-mappings.md).
 
-## <a name="define-property-pane-options---objects"></a>Definer indstillinger for egenskabsrude – `objects`
+## <a name="define-property-pane-options-objects"></a>Definer indstillinger for egenskabsrude: objekter
 
-Objekter beskriver de egenskaber, der kan tilpasses, og som er knyttet til den pågældende visualisering.
-Hvert objekt kan have flere egenskaber, og hver egenskab har en type tilknyttet.
-Typerne refererer til det, som egenskaben vil være. Se nedenfor for at få flere oplysninger om typer.
+Objekter beskriver de egenskaber, der kan tilpasses, og som er knyttet til den pågældende visualisering. Hvert objekt kan have flere egenskaber, og hver egenskab har en type tilknyttet. Typerne refererer til det, som egenskaben vil blive. 
 
 ```json
 "objects": {
@@ -196,24 +194,22 @@ Typerne refererer til det, som egenskaben vil være. Se nedenfor for at få fler
 }
 ```
 
-[Få mere at vide om objekter](objects-properties.md)
+Du kan finde flere oplysninger i [Objekter og egenskaber for Power BI-visualiseringer](objects-properties.md).
 
-## <a name="handle-partial-highlighting---supportshighlight"></a>Håndter delvis fremhævning – `supportsHighlight`
+## <a name="handle-partial-highlighting-supportshighlight"></a>Håndter delvis fremhævning: supportsHighlight
 
-Denne værdi er som standard angivet til falsk, hvilket betyder, at "værdier" filtreres automatisk, når noget på siden vælges, hvilket opdaterer visualiseringen, så den kun viser den valgte værdi. Hvis du vil have vist alle dataene, men kun fremhæve de valgte elementer, skal du angive `supportsHighlight` til sand i capabilities.json.
+Som standard er denne værdi angivet til `false`, hvilket betyder, at værdierne automatisk filtreres, når der vælges noget på siden. Denne automatiske filtrering opdaterer din visualisering, så den kun viser den valgte værdi. Hvis du vil have vist alle dataene, men kun fremhæve de valgte elementer, skal du angive `supportsHighlight` til `true` i filen *capabilities.json*.
 
-[Få mere at vide om fremhævning](highlight.md)
+Du kan finde flere oplysninger under [Fremhæv datapunkter i Power BI-visualiseringer](highlight.md).
 
-## <a name="handle-advanced-edit-mode---advancededitmodesupport"></a>Håndter avanceret redigeringstilstand – `advancedEditModeSupport`
+## <a name="handle-advanced-edit-mode-advancededitmodesupport"></a>Håndter avanceret redigeringstilstand: advancedEditModeSupport
 
-En visualisering kan erklære sin understøttelse af avanceret redigeringstilstand.
-En visualisering understøtter ikke som standard avanceret redigeringstilstand, medmindre andet er angivet i capabilities.json.
+En visualisering kan erklære sin understøttelse af avanceret redigeringstilstand. En visualisering understøtter ikke som standard avanceret redigeringstilstand, medmindre andet er angivet i filen *capabilities.json*.
 
-[Få mere at vide om advancedEditModeSupport](advanced-edit-mode.md)
+Du kan finde flere oplysninger i [Avanceret redigeringstilstand i Power BI-visualiseringer](advanced-edit-mode.md).
 
-## <a name="data-sorting-options-for-visual---sorting"></a>Indstillinger for datasortering for visualisering – `sorting`
+## <a name="data-sorting-options-for-visual-sorting"></a>Indstillinger for datasortering for visualisering: sortering
 
-Sorteringsfunktionsmåden for en visualisering kan defineres via visualiseringens egenskaber.
-En visualisering understøtter ikke som standard ændring af sorteringsrækkefølgen, medmindre andet er angivet i capabilities.json.
+Sorteringsfunktionsmåden for en visualisering kan defineres via visualiseringens egenskaber. En visualisering understøtter ikke som standard ændring af sorteringsrækkefølgen, medmindre andet er angivet i filen *capabilities.json*.
 
-[Få mere at vide om sortering](sort-options.md)
+Du kan finde flere oplysninger under [Sorteringsmuligheder til Power BI-visualiseringer](sort-options.md).

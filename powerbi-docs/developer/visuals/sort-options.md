@@ -1,6 +1,6 @@
 ---
-title: Sortér
-description: Standardfunktionsmåde for sortering i Power BI-visualisering.
+title: Sorteringsmuligheder for Power BI-visualiseringer
+description: I denne artikel beskrives standardsorteringen af visualiseringer i Power BI.
 author: zBritva
 ms.author: v-ilgali
 manager: rkarlin
@@ -9,22 +9,22 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: f3d913e2bce34850dfae4c9486b2e43c78521a58
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: cecec80dc9fe8570535cbd1e0c1e7114363472d8
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424510"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236670"
 ---
-# <a name="sorting-options"></a>Sorteringsindstillinger
+# <a name="sorting-options-for-power-bi-visuals"></a>Sorteringsmuligheder for Power BI-visualiseringer
 
-`Sorting` angiver standardfunktionsmåden for sortering i visualiseringen.
-Egenskaben kræver en af parametrene, der er beskrevet nedenfor:
+I denne artikel beskrives det, hvordan *sorteringsindstillinger* angiver sorteringen af visualiseringer i Power BI. 
+
+Sorteringsfunktionen kræver en af følgende parametre.
 
 ## <a name="default-sorting"></a>Standardsortering
 
-Indstillingen `default` er den enkleste form. Den muliggør sortering af de data, der præsenteres i afsnittet "DataMappings".
-Denne indstilling giver brugeren mulighed for at sortere "DataMappings" og angive sorteringsretningen.
+Indstillingen `default` er den enkleste form. Den muliggør sortering af de data, der præsenteres i afsnittet "DataMappings". Denne indstilling gør det muligt for brugeren at sortere datatilknytninger og angiver sorteringsretningen.
 
 ```json
     "sorting": {
@@ -36,15 +36,12 @@ Denne indstilling giver brugeren mulighed for at sortere "DataMappings" og angiv
 
 ## <a name="implicit-sorting"></a>Implicit sortering
 
-`implicit` sorterer med en matrixparameter – `clauses`, der beskriver, hvordan der sorteres efter hver datarolle.
-`implicit` betyder, at brugeren af visualiseringen ikke kan ændre sorteringsrækkefølgen.
-Der vises ikke sorteringsindstillinger i visualiseringens menu i Power BI. Men Power BI sorterer data i henhold til de angivne indstillinger.
+Implicit sortering sorterer med en matrixparameteren `clauses`, der beskriver, hvordan der sorteres efter hver datarolle. `implicit` betyder, at visualiseringens bruger ikke kan ændre sorteringsrækkefølgen. Der vises ikke sorteringsindstillinger i visualiseringens menu i Power BI. Men Power BI sorterer data i henhold til de angivne indstillinger.
 
 Parametrene `clauses` kan indeholde flere objekter med to parametre:
 
-- `role` – bestemmer `DataMapping` for sortering.
-
-- `direction` – bestemmer sorteringsretningen (1 = stigende, 2 = faldende).
+- `role`: Bestemmer `DataMapping` for sortering
+- `direction`: Bestemmer sorteringsretningen (1 = stigende, 2 = faldende)
 
 ```json
     "sorting": {
@@ -65,4 +62,4 @@ Parametrene `clauses` kan indeholde flere objekter med to parametre:
 
 ## <a name="custom-sorting"></a>Brugerdefineret sortering
 
-`custom` betyder, at sorteringen administreres af udvikleren i visualiseringens kode.
+Brugerdefineret sortering betyder, at sorteringen administreres af udvikleren i visualiseringens kode.

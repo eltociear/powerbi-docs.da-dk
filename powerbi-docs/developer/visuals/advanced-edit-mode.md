@@ -1,6 +1,6 @@
 ---
-title: Avanceret redigeringstilstand
-description: Power BI-visualiseringer med avancerede kontrolelementer i brugergrænsefladen
+title: Avanceret redigeringstilstand i Power BI-visualiseringer
+description: I denne artikel beskrives det, hvordan du angiver avancerede kontrolelementer til brugergrænsefladen i Power BI-visualiseringer.
 author: shaym83
 ms.author: shaym
 manager: rkarlin
@@ -9,51 +9,46 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 625105aed773bce5cf70932f092faf60ea001c2c
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 54cd9d106132979e5ace71a2617a9e2520363176
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68425545"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237352"
 ---
-# <a name="advanced-edit-mode"></a>Avanceret redigeringstilstand
+# <a name="advanced-edit-mode-in-power-bi-visuals"></a>Avanceret redigeringstilstand i Power BI-visualiseringer
 
-Visualiseringer, der kræver avancerede kontrolelementer i brugergrænsefladen, kan deklarere understøttelse af Avanceret redigeringstilstand.
-Hvis den understøttes, vises knappen `Edit` i visualiseringens menu i redigeringstilstand for rapporten.
-Når der klikkes på knappen `Edit`, angives EditMode til `Advanced`.
-Visualiseringen kan bruge EditMode-flaget til at bestemme, hvilke kontrolelementer i brugergrænsefladen der skal vises.
+Hvis du har brug for avancerede kontrolelementer til brugergrænsefladen i din Power BI-visualisering, kan du benytte dig af avanceret redigeringstilstand. Når du er i redigeringstilstand for en rapport, vælger du knappen **Rediger** for at indstille redigeringstilstanden til **Avanceret**. En visualisering kan bruge flaget `EditMode` til at bestemme, om dette kontrolelement skal vises.
 
-Som standard understøtter visualiseringen ikke Avanceret redigeringstilstand.
-Hvis der kræves en anden funktionsmåde, skal den angives eksplicit i visualiseringens `capabilities.json`-fil ved at angive egenskaben `advancedEditModeSupport`.
+Som standard understøtter visualiseringen ikke avanceret redigeringstilstand. Hvis der kræves en anden funktionsmåde, kan du angive dette eksplicit i visualiseringens *capabilities.json*-fil ved at angive egenskaben `advancedEditModeSupport`.
 
 De mulige værdier er:
 
-- 0 – NotSupported
+- `0` - NotSupported
 
-- 1 – SupportedNoAction
+- `1` - SupportedNoAction
 
-- 2 – SupportedInFocus
+- `2` - SupportedInFocus
 
-## <a name="entering-advanced-edit-mode"></a>Åbning af Avanceret redigeringstilstand
+## <a name="enter-advanced-edit-mode"></a>Start avanceret redigeringstilstand
 
-Knappen `Edit` er synlig, hvis:
+Knappen **Rediger** vises, hvis:
 
- 1 – egenskaben `advancedEditModeSupport` under capabilities.json er angivet til enten `SupportedNoAction` eller `SupportedInFocus`.
+* Egenskaben `advancedEditModeSupport` i filen *capabilities.json* er indstillet til enten `SupportedNoAction` eller `SupportedInFocus`.
 
- 2 – visualiseringen vises i redigeringstilstand for rapporten.
+* Visualiseringen vises i redigeringstilstand for rapporten.
 
-Hvis egenskaben `advancedEditModeSupport` mangler under capabilities.json eller er angivet til `NotSupported`, forsvinder knappen "Rediger".
+Hvis egenskaben `advancedEditModeSupport` mangler i filen *capabilities.json* eller er angivet til `NotSupported`, forsvinder knappen **Rediger**.
 
 ![Åbning af redigeringstilstand](./media/edit-mode.png)
 
-Når brugeren klikker på `Edit`, modtager visualiseringen kaldet update(), hvor EditMode er angivet til `Advanced`.
-I henhold til værdierne, der er angivet under egenskaberne, sker følgende handlinger:
+Når du vælger **Rediger**, får det visuelle element et opdateringskald(), hvor EditMode er angivet til `Advanced`. Afhængigt af den værdi, der er angivet i filen *capabilities.json*, udføres følgende handlinger:
 
-* `SupportedNoAction` – Der kræves ingen yderligere handling af værten.
-* `SupportedInFocus` – Værten fremviser visualiseringen i fokustilstand.
+* `SupportedNoAction`: Der kræves ingen yderligere handling af værten.
+* `SupportedInFocus`: Værten fremviser visualiseringen i fokustilstand.
 
-## <a name="exiting-advanced-edit-mode"></a>Afslutning af Avanceret redigeringstilstand
+## <a name="exit-advanced-edit-mode"></a>Afslut avanceret redigeringstilstand
 
-Knappen `Back to report` er synlig, hvis:
+Knappen **Tilbage til rapport** vises, hvis:
 
-1 – egenskaben `advancedEditModeSupport` under capabilities.json er angivet til `SupportedInFocus`.
+* Egenskaben `advancedEditModeSupport` i filen *capabilities.json* er indstillet til `SupportedInFocus`.

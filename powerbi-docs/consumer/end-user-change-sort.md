@@ -4,19 +4,18 @@ description: Rediger, hvordan et diagram sorteres i en rapport i Power BI
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 08/21/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: aa6193045ba1c399eaae1b48bf813738edba99f1
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 98a91b0651e7a357f0ba0462f6ba8734c64ab162
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66750856"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302732"
 ---
 # <a name="change-how-a-chart-is-sorted-in-a-power-bi-report"></a>Rediger, hvordan et diagram sorteres i en rapport i Power BI
 I en Power BI-rapport kan du sortere de fleste visualiseringer alfabetisk efter navnene på kategorierne i diagrammet eller efter de numeriske værdier for hver kategori. Dette diagram er f.eks. sorteret efter kategorien **lagernavn**.
@@ -31,12 +30,12 @@ Det er nemt at ændre sorteringen fra en kategori (gem navn) til en værdi (salg
    ![video viser valg af Sortér efter og derefter stigende, faldende](media/end-user-change-sort/sort.gif)
 
 > [!NOTE]
-> Det er ikke alle visualiseringer, der kan sorteres. Følgende visualiseringer kan f.eks, ikke sorteres: træstruktur, kort, udfyldt kort, punktdiagram, måler, kort, kort med flere rækker, vandfaldsdiagram.
+> Det er ikke alle visualiseringer, der kan sorteres. Følgende visualiseringer kan f.eks. ikke sorteres: træstruktur, kort (map), kartogram, punkt, måler, kort (card) og vandfald.
 
 ## <a name="saving-changes-you-make-to-sort-order"></a>Gem dine ændringer af sorteringsrækkefølgen
 Power BI-rapporter bevarer filtre, udsnit, sortering og andre ændringer af datavisning. Hvis du navigerer væk fra en rapport og vender tilbage igen senere, er dine ændringer blevet gemt.  Hvis du vil ændre indstillingerne tilbage til de indstillinger, som rapportens designer oprindeligt valgte, skal du vælge **Nulstil til standard** på den øverste menulinje. 
 
-![fast sortering](media/end-user-change-sort/power-bi-reset-to-default.png)
+![fast sortering](media/end-user-change-sort/power-bi-reset.png)
 
 Hvis knappen **Nulstil til standard** er nedtonet, betyder det, at rapportens designer har deaktiveret muligheden for at gemme dine egne ændringer.
 

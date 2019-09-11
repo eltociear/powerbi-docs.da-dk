@@ -1,6 +1,6 @@
 ---
-title: Start-URL-adresse
-description: URL-adresser kan åbnes på en ny fane i Power BI-visualiseringer
+title: Opret en start-URL-adresse
+description: I denne artikel beskrives det, hvordan du åbner URL-adresser på en ny fane ved hjælp af visualiseringer i Power BI.
 author: Guy-Moses
 ms.author: guymos
 manager: rkarlin
@@ -9,16 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 1a7002c3b45f341c0cbc0db683bc4f8a113e21f9
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 3ef6be9383b606ce865b4bcd3ccda397e471301b
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424855"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236648"
 ---
-# <a name="launch-url"></a>Start-URL-adresse
+# <a name="create-a-launch-url"></a>Opret en start-URL-adresse
 
-Med Start-URL-adresser er det muligt at åbne en ny browserfane (eller et vindue) ved at delegere det reelle arbejde til Power BI.
+Ved at oprette start-URL-adresser kan du åbne en ny browserfane (eller et vindue) ved at delegere det reelle arbejde til Power BI.
 
 ## <a name="sample"></a>Eksempel
 
@@ -36,18 +36,21 @@ this.host.launchUrl('http://some.link.net');
 
 ## <a name="restrictions"></a>Begrænsninger
 
-* Brug kun absolutte stier og ikke relative stier. `http://some.link.net/subfolder/page.html` er fin, men `/page.html` åbnes ikke.
-* I øjeblikket er det kun protokollerne `http` og `https`, der understøttes. Undgå `ftp`, `mailto` osv.
+* Brug kun absolutte stier og ikke relative stier. Du kan f.eks. bruge en absolut sti såsom `http://some.link.net/subfolder/page.html`. Den relative sti, `/page.html`, åbnes ikke.
+
+* I øjeblikket understøttes kun protokollerne *HTTP* og *HTTPS*. Undgå *FTP*, *MAILTO* osv.
 
 ## <a name="best-practices"></a>Bedste praksis
 
-1. I de fleste tilfælde er det bedst kun at åbne et link som et svar på en brugers eksplicitte handling. Gør det nemt for brugeren at forstå, at der åbnes en ny fane, når der klikkes på linket eller knappen. Det kan være forvirrende eller frustrerende for brugeren, hvis der udløses et `launchUrl()`-kald, uden at brugeren har foretaget en handling.
-2. Hvis linket ikke er essentielt for en korrekt fungerende visualisering, anbefales det at give forfatteren af rapporten mulighed for at deaktivere og gemme linket. Dette er især relevant for særlige Power BI-brugssager, f.eks. integrering af en rapport i et tredjepartsprogram eller publicering af den på internettet.
-3. Undgå at udløse et `launchUrl()`-kald fra en løkke, visualiseringens `update`-funktion eller andre ofte tilbagevendende koder.
+* Normalt er det bedst kun at åbne et link som et svar på en brugers eksplicitte handling. Gør det nemt for brugeren at forstå, at der åbnes en ny fane, når der klikkes på linket eller knappen. Det kan være forvirrende eller frustrerende for brugeren, hvis der udløses et `launchUrl()`-kald, uden at brugeren har foretaget en handling.
 
-## <a name="step-by-step-example"></a>Trinvist eksempel
+* Hvis linket ikke er essentielt for en korrekt fungerende visualisering, anbefaler vi, at du giver forfatteren af rapporten mulighed for at deaktivere og gemme linket. Denne anbefaling er især relevant for særlige Power BI-brugssager, f.eks. integrering af en rapport i et tredjepartsprogram eller publicering af den på internettet.
 
-### <a name="adding-a-link-launching-element"></a>Tilføjelse af et element til start af et link
+* Undgå at udløse et `launchUrl()`-kald fra en løkke, visualiseringens `update`-funktion eller andre ofte tilbagevendende koder.
+
+## <a name="a-step-by-step-example"></a>Et trinvist eksempel
+
+### <a name="add-a-link-launching-element"></a>Tilføj et element til start af et link
 
 Følgende linjer blev føjet til visualiseringens `constructor`-funktion:
 
@@ -56,7 +59,7 @@ Følgende linjer blev føjet til visualiseringens `constructor`-funktion:
     options.element.appendChild(this.helpLinkElement);
 ```
 
-Og der blev tilføjet en privat funktion, som opretter og tilknytter ankerelementet:
+Der blev tilføjet en privat funktion, som opretter og tilknytter ankerelementet:
 
 ```typescript
 private createHelpLinkElement(): Element {
@@ -71,7 +74,7 @@ private createHelpLinkElement(): Element {
 };
 ```
 
-Til sidst definerer en post i filen visual.less typografien for linkelementet:
+Til sidst definerer en post i filen *visual.less* typografien for linkelementet:
 
 ```less
 .helpLink {
@@ -103,10 +106,11 @@ Til sidst definerer en post i filen visual.less typografien for linkelementet:
 }
 ```
 
-### <a name="adding-a-toggling-mechanism"></a>Tilføjelse af en til/fra-mekanisme
+### <a name="add-a-toggling-mechanism"></a>Tilføj en til/fra-mekanisme
 
-Dette kræver, at du tilføjer et statisk objekt (se [selvstudiet om statiske objekter](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties)), så forfatteren af rapporten kan skifte synligheden af linkelementet (det er som standard angivet til skjult).
-Et boolesk statisk objekt af typen `showHelpLink` blev føjet til objektposten `capabilities.json`:
+Hvis du vil tilføje en til/fra-mekanisme, skal du tilføje et statisk objekt, så rapportens forfatter kan skifte synligheden af link-elementet. (Standardindstillingen er angivet til *skjult*). Du kan finde flere oplysninger i [selvstudiet om statiske objekter](https://microsoft.github.io/PowerBI-visuals/docs/concepts/objects-and-properties).
+
+Der blev føjet et `showHelpLink` boolesk statisk objekt til objektelementet i filen *capabilities.json* som vist i følgende kode:
 
 ```typescript
 "objects": {
@@ -136,4 +140,4 @@ if (settings.generalView.showHelpLink) {
 }
 ```
 
-Klassen `hidden` er defineret i visual.less til at styre visningen af elementet.
+Den *skjulte* klasse er defineret i filen *visual.less* for at styre visningen af elementet.

@@ -1,6 +1,6 @@
 ---
-title: Understøttelse af tilstand med stor kontrast
-description: Sådan føjer du tilstanden med understøttelse af stor kontrast til visuelle elementer i Power BI
+title: Understøttelse af stor kontrast til visualiseringer i Power BI
+description: I denne artikel beskrives det, hvordan du føjer tilstanden med understøttelse af stor kontrast til visualiseringer i Power BI.
 author: sranins
 ms.author: rasala
 manager: rkarlin
@@ -9,30 +9,22 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: cb77ea012fdfdbd5be62c58c6f9b94a0355db1a9
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: f7f1a2277b3cdf38554039136010ab60c8f09bae
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424924"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70237197"
 ---
-# <a name="high-contrast-mode-support"></a>Understøttelse af tilstand med stor kontrast
+# <a name="high-contrast-mode-support-in-power-bi-visuals"></a>Understøttelse af stor kontrast til visualiseringer i Power BI
 
-Indstillingen *Stor kontrast* i Windows gør det nemmere at se tekst og apps ved at bruge tydeligere farver.
-Læs mere om [understøttelse af stor kontrast i Power BI](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast).
+Indstillingen *stor kontrast* i Windows gør det nemmere at se tekst og apps ved at anvende tydeligere farver. I denne artikel gennemgås det, hvordan du føjer tilstanden med understøttelse af stor kontrast til visualiseringer i Power BI. Du kan finde flere oplysninger under [understøttelse af stor kontrast i Power BI](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#highContrast).
 
-Hvis du tilføjer understøttelse af stor kontrast til din visualisering, skal du benytte følgende fremgangsmåde:
+Hvis du vil se understøttelse af stor kontrast implementeret, skal du gå til [lageret med visualiseringer, PowerBI-visuals-sampleBarChart](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6).
 
-1. Ved init: Kontrollér, om Power BI er i en tilstand med stor kontrast, og hvis det er tilfældet, kan du hente aktuelle farver med stor kontrast.
-2. Alle opdateringer: Rediger den måde, det visuelle element gengives på, for at gøre det nemmere at se det.
+## <a name="on-initialization"></a>Ved initialisering
 
-Visualiseringen PowerBI-visuals-sampleBarChart understøtter implementering af stor kontrast.
-
-Du kan finde flere oplysninger i [lageret med PowerBI-visuals-sampleBarChart-visualiseringen](https://github.com/Microsoft/PowerBI-visuals-sampleBarChart/commit/61011c82b66ca0d3321868f1d089c65101ca42e6).
-
-## <a name="on-init"></a>Ved init
-
-ColorPalette-medlemmet af `options.host` har flere egenskaber for tilstand med stor kontrast. Brug disse egenskaber til at afgøre, om tilstanden med stor kontrast er aktiv, og hvilke farver der skal bruges.
+ColorPalette-medlemmet af `options.host` har flere egenskaber for tilstand med stor kontrast. Brug disse egenskaber til at afgøre, om tilstanden med stor kontrast er aktiv, og hvilke farver der i givet fald skal bruges.
 
 ### <a name="detect-that-power-bi-is-in-high-contrast-mode"></a>Kontrollér, om Power BI er i tilstanden med stor kontrast
 
@@ -40,7 +32,7 @@ Hvis `host.colorPalette.isHighContrast` er `true`, er tilstanden med stor kontra
 
 ### <a name="get-high-contrast-colors"></a>Hent farver med stor kontrast
 
-I tilstanden med stor kontrast bør dit visuelle element begrænse sig selv til følgende farver:
+I tilstanden med stor kontrast bør dit visuelle element være begrænset til følgende indstillinger:
 
 * **Forgrundsfarven** bruges til at tegne streger, ikoner, tekst og konturer eller udfyldning af figurer.
 * **Baggrundsfarven** bruges til baggrunden og som fyldfarve for skitserede figurer.
@@ -50,7 +42,7 @@ I tilstanden med stor kontrast bør dit visuelle element begrænse sig selv til 
 > [!NOTE]
 > Hvis der er behov for en sekundær farve, kan forgrundsfarven bruges sammen med en vis uigennemsigtighed (indbyggede visuelle elementer i Power BI anvender 40 % uigennemsigtighed). Brug dette med måde for at gøre det nemt at se de visuelle detaljer.
 
-Du kan gemme disse værdier under initialisering:
+Du kan gemme følgende værdier under initialisering:
 
 ```typescript
 private isHighContrast: boolean;
@@ -74,28 +66,28 @@ constructor(options: VisualConstructorOptions) {
     }
 ```
 
-Eller du kan gemme objektet `host` under initialisering og få adgang til de relevante `colorPalette`-egenskaber under opdateringen.
+Alternativt kan du gemme objektet `host` under initialisering og få adgang til de relevante `colorPalette`-egenskaber under opdateringen.
 
 ## <a name="on-update"></a>Ved opdatering
 
-De specifikke implementeringer af understøttelse med stor kontrast varierer fra visualisering til visualisering og afhænger af detaljerne i det grafiske design. Tilstanden med stor kontrast kræver typisk et lidt andet design end standarddesignet, så det er nemt at skelne detaljerne fra hinanden med de begrænsede farver.
+De specifikke implementeringer af understøttelse med stor kontrast varierer fra visualisering til visualisering og afhænger af detaljerne i det grafiske design. For at gøre vigtige detaljer tydelige ved hjælp af de begrænsede farver kræver tilstanden med stor kontrast normalt et design, der adskiller sig lidt fra standardtilstanden.
 
-Her er nogle retningslinjer efterfulgt af indbyggede visualiseringer i Power BI:
+Oprindelige visualiseringer i Power BI følger disse retningslinjer:
 
 * Alle datapunkter bruger samme farve (forgrund).
-* Al tekst samt alle akser, pile, linjer osv. bruger forgrundsfarve.
+* Tekst, akser, pile, linjer osv. bruger forgrundsfarven.
 * Tykke figurer tegnes som konturer med tykke strøg (mindst to pixel) og baggrundsfarvefyld.
-* Når det er relevant, skelnes der mellem datapunkter med forskellige markørfigurer, og til datalinjer bruges forskellige tankestreger.
+* Når datapunkter er relevante, skelnes der mellem forskellige markørfigurer, og til datalinjer bruges der forskellige tankestreger.
 * Når et dataelement fremhæves, ændres uigennemsigtigheden for alle andre elementer til 40 %.
 * I forbindelse med udsnitsværktøjer bruger aktive filterelementer den farve, der er valgt til forgrunden.
 
-I eksemplet med søjlediagrammet tegnes alle linjer med en to pixel tyk forgrundskontur og baggrundsfyld. Sammenlign den måde, det ser ud på, med standardfarver og med et par temaer med stor kontrast:
+I følgende eksempel med søjlediagrammet tegnes alle linjer med en to pixel tyk forgrundskontur og baggrundsfyld. Sammenlign den måde, det ser ud på, med standardfarver og med et par temaer med stor kontrast:
 
 ![Eksempel på søjlediagram med standardfarver](./media/hc-samplebarchart-standard.png)
 ![Eksempel på søjlediagram med farvetemaet *Dark #2*](./media/hc-samplebarchart-dark2.png)
 ![Eksempel på søjlediagram med farvetemaet *White*](./media/hc-samplebarchart-white.png)
 
-Her er ét sted i funktionen `visualTransform`, der blev ændret for at understøtte stor kontrast, den kaldes som en del af gengivelsen under `update`:
+Næste afsnit viser ét sted i funktionen `visualTransform`, der blev ændret for at understøtte stor kontrast. Det kaldes som en del af gengivelsen under opdateringen.
 
 ### <a name="before"></a>Før
 

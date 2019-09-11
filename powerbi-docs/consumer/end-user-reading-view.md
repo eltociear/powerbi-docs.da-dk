@@ -1,194 +1,197 @@
 ---
 title: Egenskaber for Power BI-forbrugere i Power BI-tjenesten
-description: I denne hurtige introduktion lærer **forbrugere**, hvordan de arbejder med Power BI-tjenesten.
+description: I denne hurtige introduktion får **forbrugerne** mere at vide om Power BI, apps, rapporter og dashboards.
 services: powerbi
 documentationcenter: ''
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 editor: ''
 tags: ''
 ms.service: powerbi
 ms.topic: quickstart
 ms.tgt_pltfrm: NA
 ms.workload: powerbi
-ms.date: 05/13/2019
+ms.date: 08/30/2019
 ms.author: mihart
-ms.openlocfilehash: babdcebcdbc45ce3f7f737785ca4becab50cb3be
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ef955f672bc7266979b1e0b9ddbab6e9b6ae1ff7
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65608279"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236857"
 ---
-<!-- once the sample apps are live, change this so consumers can follow along -->
-# <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Hurtig introduktion: Få mere at vide om egenskaberne for ***forbrugere*** i Power BI
+# <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Hurtig introduktion: Få mere at vide om egenskaberne for *forbrugere* i Power BI
 I denne hurtige introduktion får du mere at vide om, hvordan du interagerer med Power BI for at få datadrevet forretningsindsigt. Denne artikel er ikke beregnet som en detaljeret gennemgang, men mere som en hurtig gennemgang af de handlinger, der er tilgængelige for Power BI-**forbrugere**.
 
 Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
 
-## <a name="prerequisites"></a>Forudsætninger
-- Power BI-tjenesten (app.powerbi.com)
-<!-- app from AppSource -->
+## <a name="what-is-power-bi"></a>Hvad er Power BI? 
+Power BI er en samling af softwaretjenester, apps og forbindelser, der arbejder sammen for at forvandle usammenhængende data til faste, visuelt fordybende og interaktive indsigter. Uanset om dataene er et enkelt Excel-regneark eller en samling data fra forskellige datakilder, så giver Power BI dig let adgang til at oprette forbindelse til dine datakilder, visualisere (eller granske) vigtige elementer og dele indholdet med alle. 
+
+![Ikonet Hent apps](./media/end-user-reading-view/power-bi-conceptual.png)
 
 ## <a name="reading-view"></a>Læsevisning
-Læsevisning er tilgængelig i Power BI-tjenesten for rapport*forbrugere*. Når en kollega deler en rapport med dig, er Læsevisning den måde, du kan udforske og interagere med rapporten på. 
+Læsevisning er tilgængelig i Power BI-tjenesten for rapport*forbrugere*. Når en kollega deler en rapport, et dashboard eller en app med dig, er Læsevisning den måde, du kan udforske og interagere med rapporten på. 
 
-Den anden rapporttilstand i Power BI-tjenesten er [Redigeringsvisning](../service-interact-with-a-report-in-editing-view.md), som er tilgængelig for rapport*designere*.  
+Du skal blot åbne Power BI-tjenesten i en browser eller på en mobilenhed. Du og dine kolleger arbejder fra de samme apps, dashboards og rapporter, der er tillid til, som opdateres automatisk, så du altid arbejder med det nyeste indhold.   
 
-Læsevisning er en effektiv og sikker måde at udforske dine dashboards og rapporter på. Mens du opdeler de dashboards og rapporter, der er delt med dig, forbliver de underliggende datasæt intakte og uændrede. 
+Da indholdet ikke er statisk, kan du se nærmere på dataene, lede efter tendenser, indsigt og anden business intelligence. Opdel indholdet, og stil selv spørgsmål til det med dine egne ord. Eller læn dig tilbage, og lad dine data finde interessant indsigt for dig: Give dig besked, når data ændres, og sende rapporter til dig via mail efter en tidsplan, som du har angivet. Alle dine data, når som helst, i cloudmiljøet eller i det lokale miljø og fra alle enheder. 
 
-I Læsevisning kan du lave tværgående fremhævning og tværgående filtrering af visualiseringer på en side.  Du skal blot fremhæve eller vælge en værdi i ét visuelt element, og straks kan du se dens indvirkning på de andre visuelle elementer. Brug Filterruden til at tilføje og redigere filtre på en rapportside og ændre den måde, hvorpå værdier sorteres i en visualisering. Disse er bare nogle få af egenskaberne for *forbrugere* i Power BI.  Læs videre for at få mere at vide om dem og meget mere.
+Læs videre for at få mere at vide om dem og meget mere.
 
+
+## <a name="power-bi-content"></a>Power BI-indhold
+Når vi bruger termen "indhold" i Power BI, henviser vi til rapporter, dashboards og apps. Det er de byggesten, du skal bruge til at udforske dine data og træffe forretningsbeslutninger. 
+
+> [!NOTE]
+> Dashboards, rapporter og apps kan også vises og deles på mobilenheder.
+
+###  <a name="apps"></a>Apps
+
+En *app* er en Power BI-indholdstype, der kombinerer relaterede dashboards og rapporter på ét sted. En app kan have et eller flere dashboards og en eller flere rapporter, der alle er samlet. Apps oprettes af *Power BI-designere*, der distribuerer og deler apps med *forbrugere* som dig. 
+
+En måde at få vist dine apps på er at vælge **Apps** på navigationslinjen og vælge en app, der skal åbnes.
+
+![Ikonet Hent apps](./media/end-user-reading-view/power-bi-apps.png)
+
+Du kan få mere at vide om visning af apps i [Power BI-apps](end-user-apps.md)
+
+### <a name="reports"></a>Rapporter
+
+En Power BI-rapport er en visning med flere perspektiver af et datasæt med visualiseringer, som repræsenterer forskellige resultater og indsigter fra dette datasæt. En rapport kan indeholde en enkelt visualisering eller sider fulde af visualiseringer. Rapporter oprettes af *Power BI-designere*, der distribuerer og deler rapporterne med *forbrugere* som dig.
+
+![Ikonet Hent apps](./media/end-user-reading-view/power-bi-report-phone.png)
+
+Hvis du vil vide, hvordan du får vist rapporter, skal du se [Power BI-rapporter](end-user-reports.md)
+
+### <a name="dashboards"></a>Dashboards
+
+Et Power BI-dashboard er en enkelt side, der ofte kaldes et lærred, hvor der bruges visualiseringer til at fortælle en historie. Da det er begrænset til én side, indeholder et dashboard, der er godt designet, kun de vigtigste elementer fra historien.
+
+De visualiseringer, du kan se på dashboardet, kaldes felter og er fastgjort til dashboardet af rapport*designerne*. I de fleste tilfælde kommer du til den rapportside, hvor visualiseringen blev oprettet, når du vælger et felt. 
+
+![Ikonet Hent apps](./media/end-user-reading-view/power-bi-dashboard-phone.png)
+
+Hvis du vil vide mere at vide om, hvordan du får vist dashboards, skal du se [Power BI-dashboards](end-user-dashboards.md)
  
-### <a name="view-an-app"></a>Få vist en app
-I Power BI samles relaterede dashboards og rapporter i *apps* – alt sammen på ét sted.
+## <a name="interact-in-the-power-bi-service"></a>Interager i Power BI-tjenesten
 
-1. Vælg **Apps** ![Apps i navigationsruden til venstre](./media/end-user-apps/power-bi-apps-bar.png) > **Hent apps**. 
-   
-     ![Ikonet Hent apps](./media/end-user-reading-view/power-bi-get-app.png)
-2. I AppSource under **Min organisation** kan du udføre en søgning for at afgrænse resultatet og finde den app, du leder efter.
-   
-     ![I AppSource under Min organisation](./media/end-user-reading-view/power-bi-appsource.png)
-3. Vælg **Hent det nu** for at føje det til objektbeholderen Apps. 
+### <a name="collaborate-with-colleagues"></a>Samarbejd med kollegaer
+Spring mailen over. Tilføj en personlig kommentar, eller start en samtale med kolleger om et dashboard direkte på dashboardet. Kommentarfunktionen er bare én af de måder, du kan samarbejde med sine kolleger på. 
 
-### <a name="view-a-dashboard"></a>Få vist et dashboard
-Denne app åbnes i et dashboard. Et Power BI-***dashboard*** er en enkelt side, der ofte kaldes et canvas, hvor der bruges visualiseringer til at fortælle en historie. Da det er begrænset til én side, indeholder et dashboard, der er godt designet, kun de vigtigste elementer fra historien.
+![kommentering af video](./media/end-user-reading-view/comment.gif)
 
-![dashboard](media/end-user-reading-view/power-bi-dashboard.png)
+Få mere at vide om [kommentering](end-user-comment.md)
 
-De visualiseringer, du kan se på dashboardet, kaldes *felter* og er *fastgjort* til dashboardet fra rapporter.
+### <a name="sit-back-and-let-power-bi-work-for-you"></a>Læn dig tilbage, og lad Power BI gøre arbejdet
+To af de måder, Power BI-tjenesten udfører arbejdet for dig på, er med abonnementer og beskeder. 
 
-### <a name="subscribe-to-a-dashboard-or-report"></a>Abonner på et dashboard (eller en rapport)
+#### <a name="subscribe-to-a-dashboard-or-report"></a>Abonner på et dashboard (eller en rapport)
 Det er ikke nødvendigt at åbne Power BI for at overvåge et dashboard.  Du kan abonnere i stedet for, så Power BI mailer dig et snapshot af det pågældende dashboard iht. en tidsplan, du har angivet. 
 
-![vælg ikonet Abonner](./media/end-user-subscribe/power-bi-subscribe-orientation.png).
+![vælg ikonet Abonner](./media/end-user-reading-view/power-bi-subscribe-email.png).
 
+ Få mere at vide om [Power BI-abonnementer](end-user-subscribe.md)
 
-1. Vælg **Abonner** på den øverste menulinje, eller vælg konvolutikonet ![ikonet Abonner](./media/end-user-subscribe/power-bi-icon-envelope.png).
-   
-   ![Ikonet Abonner](./media/end-user-subscribe/power-bi-subscribe-icon.png)
+#### <a name="get-alerts-when-your-data-reaches-a-threshold"></a>Få beskeder, når dine data når en tærskel
+Dine data er online, og dine visualiseringer opdateres automatisk for at afspejle dette. Hvis du vil have besked, når data kommer over eller under en tærskel, du har angivet, skal du bruge databeskeder. Beskeder fungerer på målere, KPI'er og kort.    
+![felt, kort, KPI](media/end-user-alerts/card-gauge-kpi.png)
 
-3. Brug den gule skyder til at slå abonnementet til og fra.  Alternativt kan du tilføje mailoplysninger. 
+Power BI sender dig en mail, når værdien kommer over eller under den grænse, du har angivet.  
+![Mail med vigtig besked](media/end-user-alerts/power-bi-alert-email.png)
 
-    I skærmbilledet nedenfor kan du se, at når du abonnerer på en rapport, abonnerer du rent faktisk på en *rapportside*.  Hvis du vil abonnere på mere end én side i en rapport, skal du vælge **Tilføj et andet abonnement** og vælge en anden side. 
-      
-   ![Vinduet Abonner](./media/end-user-subscribe/power-bi-emails.png)
-   
-    Opdatering af rapportsiden opdaterer ikke datasættet. Det er kun ejeren af datasættet, der kan opdatere et datasæt manuelt. Hvis du vil søge efter navnet på det eller de underliggende datasæt, skal du vælge **Få vist relaterede** på den øverste menulinje.
+Få mere at vide om [Power BI-advarsler](end-user-alerts.md)
 
-### <a name="view-related-content"></a>Vis relateret indhold
-Ruden **Relateret indhold** viser, hvordan din Power BI-tjenestes indhold – dashboards, rapporter og datasæt – er forbundet. Ruden viser ikke kun relateret indholdet, det gør det også muligt for dig at handle på indholdet og let navigere mellem relateret indhold.
-
-På et dashboard eller i en rapport skal du vælge **Få vist relaterede** på den øverste menulinje.
-
-![relateret indhold](./media/end-user-reading-view/power-bi-view-related-dashboard.png)
 
 ### <a name="use-qa-to-ask-questions-using-natural-language"></a>Brug Spørgsmål og svar til at stille spørgsmål på et naturligt sprog
 Den hurtigste måde at få svar ud af dine data på er nogle gange at stille et spørgsmål på et naturligt sprog. Spørgefeltet i Spørgsmål og svar er placeret øverst i dit dashboard. Eksempel: "vis mig antallet af store salgsmuligheder efter salgsfase som en tragt." 
 
-![Spørgsmål og svar](./media/end-user-reading-view/power-bi-qna.png)
+![Spørgsmål og svar](./media/end-user-reading-view/power-bi-q-and-a.png)
+
+Få mere at vide om [Power BI Spørgsmål og svar](end-user-q-and-a.md)
+
+### <a name="display-details-on-a-visualization"></a>Få vist detaljer på en visualisering
+Visualiseringer består af datapunkter, og ved at holde musen over et datapunkt kan du få vist detaljerne.
+
+![peg for at få vist oplysninger](media/end-user-reading-view/power-bi-hover.gif)
 
 ### <a name="favorite-a-dashboard"></a>Gør et dashboard til favorit
-Når du gør indhold til en *favorit*, kan du få adgang til det fra navigationslinjen til venstre. Navigationslinjen til venstre er synlig fra næsten alle områder i Power BI. Favoritter er normalt de dashboards, rapportsider og apps, du besøger oftest.
+Når du gør indhold til en *favorit*, kan du få adgang til det fra navigationslinjen. Navigationslinjen er synlig fra næsten alle områder i Power BI. Favoritter er normalt de dashboards, rapportsider og apps, du besøger oftest.
 
-1. Afslut Spørgsmål og svar for at vende tilbage til et dashboard.    
-2. Vælg **Favorit** eller ikonet Stjerne ![stjerneikon](./media/end-user-favorite/power-bi-favorite-icon.png) i øverste højre hjørne af Power BI-tjenesten.
+I øverste højre hjørne af Power BI-tjenesten skal du vælge **Favoritter** eller ellipsen (...), hvis det ikke vises, og derefter vælge **Foretrukne** på rullelisten. 
    
-   ![ikonet Favoritter](./media/end-user-favorite/powerbi-dashboard-favorite.png)
+![ikonet Favoritter](./media/end-user-reading-view/power-bi-favorites.png)
 
+Se nærmere på de øvrige handlinger, der er tilgængelige på rullelisten.  Vi dækker ikke alle disse i denne artikel, men vi dækker dem i andre artikler.  Få mere at vide ved at bruge indholdsfortegnelsen til Power BI eller **søgefeltet**. 
 
-### <a name="open-and-view-a-report-and-report-pages"></a>Åbn og få vist en rapport og rapportsider
-En rapport er en eller flere sider med visualiseringer. Rapporter oprettes af Power BI-*rapportdesignere* og [deles med *forbrugere* direkte](end-user-shared-with-me.md) eller som en del af en [app](end-user-apps.md). 
-
-Rapporter kan åbnes fra et dashboard. De fleste dashboardfelter er *fastgjort* fra rapporter. Når du vælger et felt, åbnes den rapport, der blev brugt til at oprette feltet. 
-
-1. Vælg et felt fra et dashboard. I dette eksempel har vi valgt søjlediagramfeltet "Omsætning".
-
-    ![dashboard med valgt felt](./media/end-user-reading-view/power-bi-dashboard2.png)
-
-2.  Den tilknyttede rapport åbnes. Bemærk, at vi er på siden "Oversigt over omsætning". Dette er rapportsiden, der indeholder det søjlediagram, vi har valgt på dashboardet.
-
-    ![rapport, der er åbnet i Læsevisning](./media/end-user-reading-view/power-bi-report-opens.png)
+Få mere at vide om [foretrukne og udvalgte](end-user-favorite.md)
 
 ### <a name="adjust-the-display-dimensions"></a>Tilpas visningsdimensionerne
 Rapporter vises på mange forskellige enheder med forskellig skærmstørrelse og størrelsesforhold.  Standardgengivelsen er måske ikke lige det, du ønsker at se på din enhed.  
 
-1. Hvis du vil justere, skal du vælge **Vis** på den øverste menulinje.
+Hvis du vil justere, skal du vælge **Vis** i den øverste højre menulinje og vælge en af visningsindstillingerne. 
 
-    ![menuen Rapportvisning](media/end-user-reading-view/power-bi-fit.png)
-
-2.  Vælg en af visningsindstillingerne. I dette eksempel har vi valgt **Tilpas til siden**.
-
-    ![rapportvisningen Tilpas til siden](media/end-user-reading-view/power-bi-report-fit.png)    
-
-### <a name="use-the-report-filters-pane"></a>Brug ruden Rapportfiltre
-Hvis rapportens forfatter har føjet filtre til en side i en rapport, kan du interagere med dem og gemme dine ændringer i rapporten.
-
-1. Vælg ikonet **Filtre** i øverste højre hjørne.
-   
-   ![vælg ikonet for filtre](media/end-user-reading-view/filters.png)  
-
-2. Vælg først en visualisering for at aktivere den. Du får vist alle de filtre, der er anvendt til den pågældende visualisering (Filtre på visualiseringsniveau), på tværs af hele rapportsiden (Filtre på sideniveau) og på tværs af hele rapporten (Filtre på rapportniveau).
-   
-   ![typer af rapportfiltre](media/end-user-reading-view/power-bi-reading-filters.png)
-
-3. Peg på et filter, og udvid det ved at vælge pil ned.
-   
-   ![udvid filteret](media/end-user-reading-view/power-bi-expan-filter.png)
-
-4. Foretag ændringer af filtrene, og se, hvordan de visuelle elementer påvirkes.  
-   
-     
-     ![avanceret filtrering](media/end-user-reading-view/power-bi-advanced-filter.png)
+![menuen Rapportvisning](media/end-user-reading-view/power-bi-view-menu.png)
 
 ### <a name="see-how-all-the-visuals-on-a-page-are-interconnected"></a>Se, hvordan alle visualiseringerne på en side er forbundet
-Foretag tværgående fremhævning og tværgående filtrering af de relaterede visualiseringer på en side. De visuelle effekter på en enkelt rapportside er alle indbyrdes "forbundet".  Det betyder, at hvis du vælger én eller flere værdier i en visualisering, ændres andre visualiseringer, der bruger den samme værdi, på baggrund af din markering.
+Foretag tværgående fremhævning og tværgående filtrering af de relaterede visualiseringer på en rapportside. De visuelle effekter på en enkelt rapportside er alle indbyrdes "forbundet".  Det betyder, at hvis du vælger én eller flere værdier i en visualisering, ændres andre visualiseringer, der bruger den samme værdi, på baggrund af din markering.
 
 ![tværgående fremhævning](media/end-user-reading-view/pagefilter3b.gif)
 > 
-### <a name="display-details-on-a-visualization"></a>Få vist detaljer på en visualisering
-Peg på visuelle elementer for at få vist detaljer
 
-![peg for at få vist oplysninger](media/end-user-reading-view/amarillachart.png)
+Få mere at vide om [visuelle interaktioner](end-user-interactions.md)
 
-### <a name="sort-a-visualization"></a>Sortér en visualisering
-Visualiseringer på en rapportside kan sorteres og gemmes sammen med dine anvendte ændringer. 
+<!-- ###  Open the **Selection** pane
+Easily navigate between the visualizations on the report page. 
 
-1. Hold markøren over en visualisering for at aktivere den.    
-2. Vælg ellipsen (...) for at åbne sorteringsindstillingerne.
+1. Select **View > Selection pane** to open the Selection pane. Toggle **Selection pane** to On.
 
-    ![sorter et diagram](media/end-user-reading-view/sort.gif) 
+    ![Turn on the report Selection pane](media/end-user-reading-view/power-bi-selection-pane2.png)
 
-###  <a name="open-the-selection-pane"></a>Åbn **Valgrude**
-Du kan nemt navigere mellem visualiseringer på rapportsiden. 
+2. The Selection pane opens on your report canvas. Select a visual from the list to make it active.
 
-1. Vælg **Vis > ruden Valg** for at åbne ruden Valg. Slå **ruden Valg** Til.
-
-    ![Slå ruden Valg til for rapporten](media/end-user-reading-view/power-bi-selection-pane2.png)
-
-2. Ruden Valg åbnes på dit rapportlærred. Vælg først en visualisering på listen for at aktivere den.
-
-    ![valgrude i rapport](media/end-user-reading-view/power-bi-selection-pane-new.png)
+    ![report Selection pane](media/end-user-reading-view/power-bi-selection-pane-new.png) -->
 
 ### <a name="zoom-in-on-individual-visuals"></a>Zoom ind på individuelle visuelle elementer
 Peg på en visuel gengivelse, og vælg ikonet **Fokuseringstilstand**![](media/end-user-reading-view/pbi_popouticon.jpg). Når du får vist en visualisering i fokuseringstilstand, udvides den, så den fylder hele rapportlærredet som vist nedenfor.
 
-![fokustilstand](media/end-user-reading-view/powerbi-focus-mode.png)
+![fokustilstand](media/end-user-reading-view/power-bi-full-screen-before.png)
 
-To display that same visualization without the distraction of menubars, filter pane, and other chrome -- Vælg ikonet **Fuld skærm** i den øverste menulinje ![ikonet fuld skærm](media/end-user-reading-view/power-bi-focus-icon.png) for at vise den samme visualisering uden forstyrrende menulinjer, filterruder og andet.
+![fuldskærmstilstand](media/end-user-reading-view/power-bi-full-screen-after.png)
 
-![fuldskærmstilstand](media/end-user-reading-view/power-bi-full-screen.png)
+<!-- To display that same visualization without the distraction of menubars, filter pane, and other chrome -- select the **Full Screen** icon from the top menubar  ![full screen icon](media/end-user-reading-view/power-bi-focus-icon.png)  .
+
+![full screen mode](media/end-user-reading-view/power-bi-full-screen-after.png) -->
+
+Få mere at vide om [fokustilstand og fuldskærmsvisning](end-user-focus.md)
+
+### <a name="sort-a-visualization"></a>Sortér en visualisering
+Visualiseringer på en rapportside kan sorteres og gemmes sammen med dine anvendte ændringer. 
+
+Peg på en visualisering for at aktivere den, og vælg ellipsen (...) for at åbne sorteringsindstillinger.
+
+![sorter et diagram](media/end-user-reading-view/sort.gif) 
+
+Få mere at vide om [sortering af visualiseringer](end-user-search-sort.md)
 
 ### <a name="show-the-data-used-to-create-a-visualization"></a>Få vist de data, der bruges til at oprette en visualisering
 En Power BI-visualisering oprettes vha. data fra underliggende datasæt. Hvis du vil se bag kulisserne, kan du i Power BI *få vist* de data, der bruges til at oprette visualiseringen. Når du vælger **Vis data**, vises dataene under (eller ud for) visualiseringen i Power BI.
 
-1. Åbn en rapport i Power BI-tjenesten, og vælg en visualisering.  
-2. Hvis du vil have vist de underliggende data for visualiseringen, skal du vælge ellipsen (...) og vælge **Vis data**.
+Når en visualisering er aktiv, skal du vælge ellipsen (... ) og vælge **Vis data**.
    
    ![vælg Få vist data](./media/end-user-show-data/power-bi-explore-show-data.png)
 
-Dette har været et hurtigt overblik over nogle af de ting, **forbrugere** kan anvende Power BI-tjenesten til.  
+
+### <a name="export-data-to-excel"></a>Eksportér data til Excel
+Ud over at vise de data, der bruges til at oprette en visualisering, kan du også eksportere dataene og få dem vist i Microsoft Excel. Når du eksporterer til Excel, opretter du et separat dokument, et regneark, som ikke er en del af Power BI. De ændringer, du foretager i Excel-filen, påvirker ikke dataene i Power BI. Power BI giver dig fleksibilitet, uanset om du vil se nærmere på dataene eller bruge dataene i et andet program eller til et andet formål.
+
+![data eksporteret til Excel](./media/end-user-reading-view/power-bi-export-powerpoint.png)
+
+<!-- Exporting isn’t limited to individual visuals; you can export entire reports to PowerPoint or PDF to share with your colleagues.
+
+![data exported to PowerPoint](./media/end-user-reading-view/power-bi-export-powerpoint.png) -->
+
+Dette har været et hurtigt overblik over nogle af de ting, *forbrugere* kan anvende Power BI-tjenesten til.  
 
 ## <a name="clean-up-resources"></a>Fjern ressourcer
 - Hvis du har oprettet forbindelse til en app, skal du på navigationslinjen til venstre vælge **Apps** for at åbne indholdslisten Apps. Hold markøren over den app, du vil slette, og vælg affaldsspandsikonet.
@@ -196,5 +199,5 @@ Dette har været et hurtigt overblik over nogle af de ting, **forbrugere** kan a
 - Hvis du har importeret eller oprettet forbindelse til en eksempelrapport i Power BI skal du åbne **Mit arbejdsområde** på navigationslinjen til venstre. Ved hjælp af fanerne øverst skal du finde dashboardet, rapporten og datasættet og vælge affaldsspandsikonet for hver enkelt.
 
 ## <a name="next-steps"></a>Næste trin
-
+[Power BI for forbrugere](end-user-consumer.md)
 

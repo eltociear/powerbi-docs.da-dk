@@ -9,12 +9,12 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cfinlan
 ms.date: 08/29/2019
-ms.openlocfilehash: 4dae849a18bbfc6e85eedc7ae9e338ad205cb436
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: bda35bfb4690d8109f7bd611e3d319278d235f33
+ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70189340"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302663"
 ---
 # <a name="url-parameters-in-paginated-reports-in-power-bi"></a>URL-parametre i sideinddelte rapporter i Power BI
 
@@ -68,12 +68,12 @@ Du kan bruge følgende parametre som en del af en URL-adresse til at konfigurere
 
 ### <a name="report-commands-rdl"></a>Rapportkommandoer (`rdl:`) 
 
-**Eksportformat** Angiver det format, der skal gengives og eksporteres i en rapport. Værdierne omfatter: 
-- PPTX 
+**Eksportformat** Angiver det format, der skal gengives og eksporteres i en rapport. Tilgængelige værdier er: 
+- PPTX (PowerPoint)
 - MHTML 
 - BILLEDE 
-- EXCEL 
-- WORD 
+- EXCELOPENXML (EXCEL) 
+- WORDOPENXML (WORD) 
 - CSV 
 - PDF 
 - XML 

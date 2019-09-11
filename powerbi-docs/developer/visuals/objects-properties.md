@@ -1,6 +1,6 @@
 ---
-title: Objekter og egenskaber
-description: Egenskaber i visuelle elementer i Power BI, der kan tilpasses
+title: Objekter og egenskaber for visualiseringer i Power BI
+description: I denne artikel beskrives egenskaber, der kan brugertilpasses, for visualiseringer i Power BI.
 author: MrMeison
 ms.author: rasala
 manager: rkarlin
@@ -9,18 +9,16 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: c22a1cfb281c9902d490e2320b85c2f6bbb63468
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: e15d80af35ff7c56879dab4380d4ae0c9fdd0e8a
+ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68424602"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70236637"
 ---
-# <a name="object-and-properties"></a>Objekter og egenskaber
+# <a name="objects-and-properties-of-power-bi-visuals"></a>Objekter og egenskaber for visualiseringer i Power BI
 
-Objekter beskriver de egenskaber, der kan tilpasses, og som er knyttet til den pågældende visualisering.
-Hvert objekt kan have flere egenskaber, og hver egenskab har en type tilknyttet.
-Typerne refererer til det, som egenskaben vil blive. Se nedenfor for at få flere oplysninger om typer.
+Objekter beskriver de egenskaber, der kan tilpasses, og som er knyttet til en visualisering. Et objekt kan have flere egenskaber, og hver egenskab har en tilknyttet type, der beskriver, hvad egenskaben skal være. Denne artikel indeholder oplysninger om objekter og egenskabstyper.
 
 `myCustomObject` er det interne navn, der bruges til at referere objektet i `dataView` og `enumerateObjectInstances`.
 
@@ -66,12 +64,13 @@ Eksempel:
 
 ### <a name="property-types"></a>Egenskabstyper
 
-Der findes to typer egenskaber: `ValueTypeDescriptor` og `StructuralTypeDescriptor`.
+Der findes to egenskabstyper: `ValueTypeDescriptor` og `StructuralTypeDescriptor`.
 
 #### <a name="value-type-descriptor"></a>Beskrivelse af værditype
 
-`ValueTypeDescriptor` er hovedsageligt primitive typer og bruges typisk som et statisk objekt.
-Her er nogle af de mest almindelige `ValueTypeDescriptor`
+`ValueTypeDescriptor`-typer er hovedsageligt primitive og bruges normalt som et statisk objekt.
+
+Her er nogle af de mest almindelige `ValueTypeDescriptor`-elementer:
 
 ```typescript
 export interface ValueTypeDescriptor {
@@ -84,8 +83,8 @@ export interface ValueTypeDescriptor {
 
 #### <a name="structural-type-descriptor"></a>Beskrivelse af strukturel type
 
-`StructuralTypeDescriptor` bruges hovedsageligt til databundne objekter.
-Udfyldning er den mest almindelige `StructuralTypeDescriptor`
+`StructuralTypeDescriptor`-typer bruges hovedsageligt til databundne objekter.
+Den mest almindelige `StructuralTypeDescriptor`-type er *udfyldning*.
 
 ```typescript
 export interface StructuralTypeDescriptor {
@@ -95,8 +94,9 @@ export interface StructuralTypeDescriptor {
 
 ## <a name="gradient-property"></a>Egenskaben Graduering
 
-Egenskaben Graduering er en egenskab, der ikke kan angives som en standardegenskab. I stedet skal du angive en regel for erstatning af egenskaben Farvevælger (udfyldningstype).
-Se eksemplet nedenfor:
+Egenskaben Graduering er en egenskab, der ikke kan angives som en standardegenskab. I stedet skal du angive en regel for erstatning af egenskaben Farvevælger (*udfyldningstype*).
+
+Et eksempel vises i følgende kode:
 
 ```json
 "properties": {
@@ -137,13 +137,13 @@ Se eksemplet nedenfor:
 }
 ```
 
-Vær opmærksom på egenskaberne `"fill"` og `"fillRule"`. Den første er farvevælgeren, den anden er erstatningsreglen for graduering, der erstatter udfyldningsegenskaben `visually`, når regelbetingelserne er opfyldt.
+Vær opmærksom på egenskaberne *udfyldning* og *fillRule*. Den første er farvevælgeren, den anden er erstatningsreglen for graduering, der erstatter *udfyldningsegenskaben*, `visually`, når regelbetingelserne er opfyldt.
 
-Dette link mellem udfyldningsegenskaben og erstatningsreglen angives i afsnittet `"rule"`->`"output"` for egenskaben `"fillRule"`.
+Dette link mellem *udfyldningsegenskaben* og erstatningsreglen angives i afsnittet `"rule"`>`"output"` for egenskaben *fillRule*.
 
-`"Rule"`->`"InputRole"` angiver, hvilken datarolle der udløser reglen (betingelsen). Hvis datarollen `"Gradient"` indeholder data i dette eksempel, anvendes reglen for egenskaben `"fill"`.
+Egenskaben `"Rule"`>`"InputRole"` angiver, hvilken datarolle der udløser reglen (betingelsen). Hvis datarollen `"Gradient"` indeholder data i dette eksempel, anvendes reglen for egenskaben `"fill"`.
 
-Nedenfor kan du se et eksempel på den datarolle, der udløser udfyldningsreglen (`the last item`).
+Følgende kode viser et eksempel på den datarolle, der udløser udfyldningsreglen (`the last item`):
 
 ```json
 {
@@ -170,7 +170,7 @@ Nedenfor kan du se et eksempel på den datarolle, der udløser udfyldningsreglen
 }
 ```
 
-## <a name="enumerateobjectinstances-method"></a>Metoden `enumerateObjectInstances`
+## <a name="the-enumerateobjectinstances-method"></a>Metoden enumerateObjectInstances
 
 Hvis du vil bruge objekter effektivt, skal du bruge en funktion i din brugerdefinerede visualisering, der hedder `enumerateObjectInstances`. Denne funktion udfylder egenskabsruden med objekter og bestemmer også, hvor objekterne skal bindes i datavisningen.  
 
@@ -197,7 +197,7 @@ public enumerateObjectInstances(options: EnumerateVisualObjectInstancesOptions):
 
 ### <a name="properties"></a>Egenskaber
 
-Egenskaberne i `enumerateObjectInstances` afspejler de egenskaber, du har defineret i dine funktioner. Se eksempel nederst på siden.
+Egenskaberne i `enumerateObjectInstances` afspejler de egenskaber, du har defineret i dine funktioner. Du kan finde et eksempel ved at gå til slutningen af denne artikel.
 
 ### <a name="objects-selector"></a>Objektvælger
 
@@ -205,7 +205,7 @@ Vælgeren `enumerateObjectInstances` angiver, hvor hvert objekt skal bindes i da
 
 #### <a name="static"></a>statisk
 
-Dette objekt bindes til metadata `dataviews[index].metadata.objects`
+Dette objekt er bundet til metadata `dataviews[index].metadata.objects` som vist her.
 
 ```typescript
 selector: null
@@ -223,7 +223,7 @@ selector: {
 
 #### <a name="selector"></a>vælger
 
-Dette objekt bindes til det element, vi har oprettet et `selectionID` for. I dette eksempel antager vi, at vi har oprettet `selectionID`'er for nogle dataPoints, og vi looper gennem dem.
+Dette objekt bindes til det element, som du har oprettet et `selectionID` for. I dette eksempel antager vi, at vi har oprettet `selectionID`'er for nogle datapunkter, og at vi looper gennem dem.
 
 ```typescript
 for (let dataPoint in dataPoints) {
@@ -234,7 +234,7 @@ for (let dataPoint in dataPoints) {
 
 #### <a name="scope-identity"></a>Område-id
 
-Dette objekt bindes til bestemte værdier ved gruppernes skæringspunkt. Hvis du f.eks. har kategorierne `["Jan", "Feb", "March", ...]` og serierne `["Small", "Medium", "Large"]`, vil du måske have et objekt på skæringspunktet for værdier, der stemmer overens med `Feb` og `Large`. Det kan du gøre ved at hente `DataViewScopeIdentity` for begge kolonner, skubbe dem til variablen `identities` og benytte denne syntaks sammen med vælgeren.
+Dette objekt bindes til bestemte værdier ved gruppernes skæringspunkt. Hvis du f.eks. har kategorierne `["Jan", "Feb", "March", ...]` og serien `["Small", "Medium", "Large"]`, kan det være en fordel at have et objekt på skæringspunktet for værdier, der stemmer overens med `Feb` og `Large`. Det kan du gøre ved at hente `DataViewScopeIdentity` for begge kolonner, skubbe dem til variablen `identities` og benytte denne syntaks sammen med vælgeren.
 
 ```typescript
 selector: {
@@ -244,7 +244,7 @@ selector: {
 
 ##### <a name="example"></a>Eksempel
 
-I dette eksempel vises, hvordan en objectEnumeration ville se ud for et customColor-objekt med egenskaben `fill`. Dette objekt skal bindes statisk til `dataViews[index].metadata.objects`
+Det følgende eksempel viser, hvordan en objectEnumeration ville se ud for et customColor-objekt med egenskaben *udfyldning*. Dette objekt skal bindes statisk til `dataViews[index].metadata.objects` som vist:
 
 ```typescript
 objectEnumeration.push({
