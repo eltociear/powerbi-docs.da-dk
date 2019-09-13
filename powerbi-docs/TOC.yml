@@ -283,6 +283,8 @@
               href: service-add-hyperlink-to-text-box.md
             - name: Links i tabeller
               href: power-bi-hyperlinks-in-tables.md
+            - name: Vis billeder i tabeller
+              href: power-bi-images-tables.md
             - name: Brugerdefinerede formatstrenge
               href: desktop-custom-format-strings.md
             - name: Betinget tabelformatering
@@ -569,8 +571,6 @@
               href: service-create-dashboard-mobile-phone-view.md
             - name: Opret en QR-kode for et felt
               href: service-create-qr-code-for-tile.md
-            - name: Føj et billede til et dashboard
-              href: service-dashboard-add-image.md
             - name: Dashboard-dataklassificering
               href: service-data-classification.md
             - name: Dashboardtemaer
