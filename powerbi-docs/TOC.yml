@@ -283,6 +283,8 @@
               href: service-add-hyperlink-to-text-box.md
             - name: Links i tabeller
               href: power-bi-hyperlinks-in-tables.md
+            - name: Brugerdefinerede formatstrenge
+              href: desktop-custom-format-strings.md
             - name: Betinget tabelformatering
               href: desktop-conditional-table-formatting.md
             - name: Betinget udtryksbaseret formatering af titel
@@ -669,12 +671,14 @@
               href: service-dataflows-computed-entities-premium.md
             - name: Opret forbindelse til datakilder med dataflow
               href: service-dataflows-data-sources.md
-            - name: Brug af dataflow med datakilder i det lokale miljø
+            - name: Brug dataflow med datakilder i det lokale miljø
               href: service-dataflows-on-premises-gateways.md
             - name: Link enheder mellem dataflow
               href: service-dataflows-linked-entities.md
-            - name: Brug af gradvis opdatering med dataflow
+            - name: Brug gradvis opdatering med dataflow
               href: service-dataflows-incremental-refresh.md
+            - name: Bedste praksis i forbindelse med dataflow
+              href: service-dataflows-best-practices.md
             - name: Udviklerressourcer til dataflow
               href: service-dataflows-developer-resources.md
             - name: Opret forbindelse til dataflow i Power BI Desktop
@@ -715,6 +719,8 @@
               href: service-template-apps-install-distribute.md
             - name: 'Opdater, slet og udtræk en Power BI-skabelonapp'
               href: service-template-update-delete-extract.md
+            - name: Eksempler på skabelonapps
+              href: service-template-apps-samples.md
         - name: Fejlfind
           items:
             - name: Har du glemt din adgangskode til Power BI?
