@@ -677,8 +677,6 @@
               href: service-dataflows-linked-entities.md
             - name: Brug gradvis opdatering med dataflow
               href: service-dataflows-incremental-refresh.md
-            - name: Bedste praksis i forbindelse med dataflow
-              href: service-dataflows-best-practices.md
             - name: Udviklerressourcer til dataflow
               href: service-dataflows-developer-resources.md
             - name: Opret forbindelse til dataflow i Power BI Desktop
@@ -1432,6 +1430,8 @@
           href: service-admin-power-bi-security.md
 - name: Vejledning
   items:
+    - name: Bedste praksis i forbindelse med dataflow
+      href: service-dataflows-best-practices.md
     - name: Hvad er et stjerneskema?
       href: guidance/star-schema.md
     - name: Reducer størrelse på datamodel
