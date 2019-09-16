@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 54108b8d4fd02730cb1aa027d2fefbad2bbfd9fb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a98ccf3477a6e8e996efb0b8cb1ccf2c6728c594
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513113"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70840952"
 ---
 # <a name="get-data-from-excel-workbook-files"></a>Hent data fra Excel-projektmappefiler
 ![](media/service-excel-workbook-files/excel_icon.png)
@@ -77,8 +77,6 @@ I Excel 2016 kan du også bruge Publicer > Eksportér. Det er næsten det samme.
 Når du vælger **Opret forbindelse**, vises din projektmappe i Power BI på samme måde, som den ville blive vist i Excel Online. Men i modsætning til Excel Online får du nogle fantastiske funktioner, så du kan fastgøre elementer fra dine regneark direkte i dine dashboards.
 
 Du kan ikke redigere din projektmappe i Power BI. Men hvis du har brug at foretage ændringer, kan du klikke på Rediger og derefter redigere din projektmappe i Excel Online eller åbne den i Excel på din computer. Alle ændringer, du foretager, gemmes i projektmappen på OneDrive.
-
-Når du vælger denne fremgangsmåde, opretter Power BI et tilsvarende datasæt for den forbundne projektmappe. Du kan bruge dette datasæt til at oprette en Power BI-rapport, hvis det er nødvendigt. Din projektmappe vises også i navigationsruden i Power BI-arbejdsområdet under Rapporter. Projektmapper, der er forbundet, har et særligt Excel-ikon.
 
 Vælg denne indstilling, hvis du kun har data i regneark, eller hvis du har intervaller, pivottabeller og diagrammer, du vil fastgøre til dashboards.
 

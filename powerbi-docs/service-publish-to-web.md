@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/16/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: d18e61343496eef63dee29afae0a9e95fb382848
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: 86fc2f8d13cdcd006c01dfff0114c13cc78f5e65
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66497994"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987015"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -115,7 +115,7 @@ Når du har oprettet en integreringskode for **Publicer på internettet**, kan d
 
 Når du har oprettet din integreringskode for **Publicer på internettet** og deler den, opdateres rapporten med de ændringer, du foretager, og linket til integreringskoden bliver straks aktivt. Alle, der åbner linket, kan se den. Men efter denne indledende handling kan opdateringer af rapporter eller visuelle elementer tage ca. én time, før de bliver synlige for dine brugere. Hvis dine opdateringer skal være tilgængelige med det samme, kan du slette integreringskoden og oprette en ny. Se afsnittet [**Sådan fungerer det**](#howitworks) senere i denne artikel, hvis du vil vide mere. 
 
-## <a name="data-refresh"></a>Opdater data
+## <a name="data-refresh"></a>Opdatering af data
 
 Dataopdateringer afspejles automatisk i din integrerede rapport eller det visuelle element. Det kan tage ca. én time, før opdaterede data kan ses fra integreringskoder. Du kan deaktivere automatisk opdatering ved at vælge **Opdater ikke** i tidsplanen for det datasæt, der bruges af rapporten.  
 
@@ -137,7 +137,7 @@ Brugerdefinerede visuelle elementer, der understøttes i **Publicer på internet
 - Rapporter med DAX-målinger på rapportniveau.
 - Forespørgselsmodeller for enkeltlogon til data.
 - [Fortrolige eller beskyttede oplysninger](#publish-to-web-from-power-bi).
-- Muligheden for automatisk godkendelse, der er tilgængelig med indstillingen **Integrer** fungerer ikke sammen med Power BI JavaScript API. Til Power BI JavaScript API kan du bruge den strategi til integreringen, at [brugeren ejer dataene](developer/embed-sample-for-your-organization.md). Få mere at vide om, [brugeren ejer dataene](developer/embed-sample-for-your-organization.md).
+- Muligheden for automatisk godkendelse, der er tilgængelig med indstillingen **Integrer** fungerer ikke sammen med Power BI JavaScript API. Til Power BI JavaScript API kan du bruge den strategi til integreringen, at [brugeren ejer dataene](developer/embed-sample-for-your-organization.md).
 
 ## <a name="tenant-setting"></a>Lejerindstillinger
 
