@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 06/03/2019
 ms.author: michalfo
 ms.openlocfilehash: 8f40781bb15b06f894a53f16d4ec6754d88e6b53
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/10/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "66817070"
 ---
 # <a name="ios-device-search-spotlight-integration-with-power-bi-mobile-ios-app-preview"></a>Integration af iOS-enhedssøgning (spotlight) med Power BI Mobil-appen til iOS (prøveversion)
@@ -51,7 +51,7 @@ Enhedssøgning via Siri omfatter også forslag, der er baseret på de handlinger
 ## <a name="next-steps"></a>Næste trin
 Få mere at vide om Power BI-mobilappen ved at gøre følgende: 
 
-* Download [Power BI-mobilappen til iPhone](http://go.microsoft.com/fwlink/?LinkId=522062)
-* Følg [@MSPowerBI på Twitter](https://twitter.com/MSPowerBI)
-* Deltag i samtalen i [Power BI-communityet](http://community.powerbi.com/)
+* Downloade [Power BI-mobilappen til iPhone](http://go.microsoft.com/fwlink/?LinkId=522062)
+* Følge [@MSPowerBI på Twitter](https://twitter.com/MSPowerBI)
+* Deltage i samtalen i [Power BI-communityet](http://community.powerbi.com/)
 

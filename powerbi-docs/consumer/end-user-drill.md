@@ -13,10 +13,10 @@ ms.date: 6/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
 ms.openlocfilehash: 29823a2f1ca7f1448df54282e0ce081310974eb3
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/19/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "67265662"
 ---
 # <a name="drill-mode-in-a-visualization-in-power-bi"></a>Analysetilstand i en visualisering i Power BI
@@ -161,7 +161,7 @@ Det er ikke så informativt at have en træstruktur, der kun viser et postnummer
 
     ![Skærmbillede af træstrukturen, der viser et værktøjstip med bladspecifikke data.](./media/end-user-drill/power-bi-expand-all.png)
 
-## <a name="drilling-filters-other-visuals"></a>Analyse filtrerer andre visualiseringer
+## <a name="drilling-filters-other-visuals"></a>Zooming på detaljeniveauet filtrerer andre visualiseringer
 
 Når du arbejder med analysetilstand, skal du beslutte, hvordan detailudledning og udvidelse påvirker andre visualiseringer på siden.
 
@@ -208,7 +208,7 @@ I dette eksempel:
 
     | Brønd | Felt |
     | ---- | ----- |
-    | Akse | Tidspunkt<br>\|\_ Måned |
+    | Akse | Klokkeslæt<br>\|\_ Måned |
     | Værdier | Salg<br>\|\_ Salg i alt |
 
     Selvom datafeltet Akse er **Måned**, opretter det stadigt en kategori af typen **År** i brønden **Akse**. Det er fordi, Power BI giver den komplette DateTime-struktur for alle de værdier, der læses. Øverst i hierarkiet vises årets data.
