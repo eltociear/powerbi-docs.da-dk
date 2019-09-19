@@ -13,10 +13,10 @@ ms.date: 12/06/2018
 ms.author: mihart
 LocalizationGroup: Common tasks
 ms.openlocfilehash: 4bb69c8ead92bf69671107fdd5bfa0eef0ae5c0d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "61054835"
 ---
 # <a name="recent-content-in-power-bi-service"></a>**Nyligt** indhold i Power BI-tjeneste
@@ -37,7 +37,7 @@ Hvis du har mere end fem elementer, du har besøgt for nylig, skal du vælge **S
 
 ![vis alt det nylige indhold](./media/end-user-recent/power-bi-recent-list.png)
 
-Herfra du kan interagere med indholdet, som du ville gøre det på enkelte [ **Dashboards**](end-user-dashboards.md), [ **rapporter**](end-user-reports.md), og  **Projektmapper** faner, og på appsene <!--[**Apps**](end-user-apps.md)--> skærmen.
+Herfra kan du interagere med indholdet, som du kan med de særskilte faner [**Dashboards**](end-user-dashboards.md), [**Rapporter**](end-user-reports.md) og **Projektmapper** og på appens <!--[**Apps**](end-user-apps.md)--> skærm.
 
 ## <a name="next-steps"></a>Næste trin
 <!--[Power BI service Apps](end-user-apps.md)-->

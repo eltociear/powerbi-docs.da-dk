@@ -12,14 +12,14 @@ ms.date: 05/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: cd0b680265d526ecf7adbf4db8c54b77535eadf8
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65608460"
 ---
 # <a name="view-a-dashboard"></a>Få vist et dashboard
-Power BI *forbrugere* bruger en masse tid, der får vist dashboards. Dashboards er designet til at fremhæve bestemte oplysninger fra de underliggende rapporter og datasæt. Power BI-forbrugerne bruger disse oplysninger til sporing, overvågning, besvarelse af spørgsmål, test og meget mere for at kunne tage datadrevne forretningsbeslutninger.
+Power BI-*forbrugere* bruger meget tid på at se på dashboards. Dashboards er designet til at fremhæve bestemte oplysninger fra de underliggende rapporter og datasæt. Power BI-forbrugerne bruger disse oplysninger til sporing, overvågning, besvarelse af spørgsmål, test og meget mere for at kunne tage datadrevne forretningsbeslutninger.
 
 ![dashboard](media/end-user-dashboard-open/power-bi-new-dash-new.png)
 
@@ -41,7 +41,7 @@ Du kan finde dashboards i alle objektbeholderne på den venstre navigationslinje
 
 ![dashboardikon](media/end-user-dashboard-open/opendash.gif)
 
-- **Startside** 
+- **Hjem** 
 - **Favoritter** – Hvis du har [angivet et dashboard som favorit](end-user-favorite.md)
 - **Seneste** – Hvis du har besøgt et dashboard for nylig
 - **Apps** – De fleste apps indeholder både dashboards og rapporter

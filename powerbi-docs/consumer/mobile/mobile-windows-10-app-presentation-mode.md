@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 12/10/2018
 ms.author: mshenhav
 ms.openlocfilehash: ac9072c69edfd245454e92855dcefa461e80cc23
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "61338144"
 ---
 # <a name="view-reports-and-dashboards-in-presentation-mode-on-surface-hub-and-windows-10-devices"></a>Få vist rapporter og dashboards i præsentationstilstand på Surface Hub og Windows 10-enheder
@@ -43,7 +43,7 @@ Fra værktøjslinjen kan du udføre følgende handlinger:
 1. Tryk på ikonet Tilbage ![ikonet Tilbage](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-back-icon.png) for at gå tilbage til den forrige side. Hvis du trykker på ikonet, og holder det nede, åbnes brødkrummevinduerne, hvilket giver dig mulighed for at navigere til mappen med indhold i din rapport eller på dit dashboard.
 2. Ikonet Håndskrift ![ikonet Håndskrift](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-ink-icon.png) giver dig mulighed for at vælge en farve, når du bruger Surface-pennen til at tegne på og anmærke din rapportside. 
 3. Brug ikonet Sider ![ikonet for sideinddeling](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-pages-icon.png) til at erstatte den rapportside, du præsenterer i øjeblikket.
-4. Afspilningsikonet  ![Afspilningsikonet](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png) vil skjule handlingslinjen og starte slideshow, hvor appen automatisk Roter mellem rapportsider. 
+4. Ikonet Afspil  ![Ikonet Afspil](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-play-icon.png) skjuler handlingslinjen og starter diasshowet der, hvor appen automatisk roterer mellem rapportsiderne. 
 5. Tryk på ikonet Søg ![Ikonet Søg](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-presentation-search-icon.png) for at søge efter andre artefakter i Power BI.
 6. Hvis du vil afslutte præsentationstilstand, skal du trykke på ikonet med to pile, der peger ind mod hinanden ![Afslut fuldskærmsvisning](./media/mobile-windows-10-app-presentation-mode/power-bi-windows-10-exit-full-screen-icon.png) på værktøjslinjen.
 

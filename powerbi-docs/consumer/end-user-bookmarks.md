@@ -1,5 +1,5 @@
 ---
-title: Oversigt over bogmærker i Power BI-tjenesten rapporter
+title: Oversigt over bogmærker i rapporter i Power BI-tjenesten
 description: Oversigtsemne i dokumentationen om forespørgsler i naturligt sprog i Spørgsmål og svar i Power BI.
 author: mihart
 manager: kvivek
@@ -12,33 +12,33 @@ ms.date: 05/10/2019
 ms.author: mihart
 LocalizationGroup: Create reports
 ms.openlocfilehash: 55fafb00135908dc4f82151b96ed04d2cf2568da
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65608319"
 ---
 # <a name="what-are-bookmarks"></a>Hvad er bogmærker?
-Bogmærker indfange den visning, der er konfigureret i øjeblikket af en rapportside, herunder filtre, udsnitsværktøjer og tilstanden for visualiseringer. Når du vælger et bogmærke, vender Power BI du tilbage til visningen. Der er to typer af bogmærker – dem, du opretter, dig selv, og dem, der er oprettet af rapporten *designere*.
+Bogmærker henter den aktuelt konfigurerede visning af en rapportside, herunder filtre, udsnitsværktøjer og tilstanden for visuals. Når du vælger et bogmærke, sender Power BI dig tilbage til den pågældende visning. Der er to typer bogmærker – dem, du selv opretter, og dem, der oprettes af *rapportdesignere*.
 
 ## <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Brug bogmærker til at dele indsigt og oprette historier i Power BI 
-Der er mange situationer, hvor bogmærker. Sige, at du finder en interessant indsigt, og du vil bevare den – Opret et bogmærke, så du kan vende tilbage senere. Skal du lade og vil bevare din aktuelle arbejde, skal du oprette et bogmærke. Du kan endda gøre et bogmærke, din standardvisning af rapporten, så hver gang du vender tilbage, visning af rapportsiden åbnes først. 
+Bogmærker kan bruges til mange ting. Lad os sige, at du opdager en interessant indsigt og ønsker at bevare den – opret et bogmærke, så du kan vende tilbage til den senere. Hvis du skal afsted, men ønsker at bevare dit aktuelle arbejde, kan du oprette et bogmærke. Du kan også gøre et bogmærke til din standardvisning af rapporten, så hver gang du vender tilbage, åbnes denne visning af rapportsiden først. 
 
-Du kan også oprette en samling af bogmærker, arrangere dem i den rækkefølge, du vil, og efterfølgende Gennemgå hvert bogmærke i en præsentation for at fremhæve en række Indsigter, der fortæller en historie.  
+Du kan også oprette en samling af bogmærker, arrangere dem i den ønskede rækkefølge og efterfølgende gennemgå hvert bogmærke i en præsentation for at fremhæve en række indsigter, der fortæller en historie.  
 
-![Vis Bogmærkeruden ved at vælge det på båndet.](media/end-user-bookmarks/power-bi-bookmarks-pane.png)
+![Vis ruden Bogmærker ved at vælge den på båndet.](media/end-user-bookmarks/power-bi-bookmarks-pane.png)
 
 ## <a name="using-bookmarks"></a>Brug bogmærker
-For at åbne ruden bogmærker, skal du vælge **bogmærker** på menulinjen. For at vende tilbage til den oprindelige publicerede visning af rapporten, skal du vælge **Nulstil til standard**.
+Hvis du vil åbne ruden Bogmærker, skal du vælge **Bogmærker** på menulinjen. Hvis du vil vende tilbage til den oprindelige publicerede visning af rapporten, skal du vælge **Nulstil til standard**.
 
-### <a name="report-bookmarks"></a>Rapporten bogmærker
-Hvis rapporten *designer* inkluderet rapport bogmærker, du kan finde dem under den **rapportere bogmærker** overskrift. 
+### <a name="report-bookmarks"></a>Rapportbogmærker
+Hvis *rapportdesigneren* har medtaget rapportbogmærker, kan du finde dem under overskriften **Rapportbogmærker**. 
 
-![Få vist rapporten bogmærker.](media/end-user-bookmarks/power-bi-report-bookmark.png)
+![Vis rapportbogmærker.](media/end-user-bookmarks/power-bi-report-bookmark.png)
 
-Vælg et bogmærke til at skifte til den pågældende rapportvisningen. 
+Vælg et bogmærke for at skifte til den pågældende rapportvisning. 
 
-![Videoen viser rapporten bogmærker er valgt.](media/end-user-bookmarks/power-bi-bookmarks.gif)
+![Video, der viser rapportbogmærker, som vælges.](media/end-user-bookmarks/power-bi-bookmarks.gif)
 
 ### <a name="personal-bookmarks"></a>Personlige bogmærker
 
@@ -57,9 +57,9 @@ Konfigurer en rapportside, som du ønsker, den skal vises i bogmærket. Når din
 
 ![Tilføj personlige bogmærker.](media/end-user-bookmarks/power-bi-add-personal.png)
 
-**Power BI** opretter et bogmærke og giver det et standardnavn eller et navn, du angiver. Du kan *Omdøb*, *slette*, eller *opdatere* et bogmærke ved at vælge ellipsen ud for bogmærkets navn og derefter vælge en handling i den viste menu.
+**Power BI** opretter et bogmærke og giver det et standardnavn eller et navn, du angiver. Du kan *omdøbe*, *slette* eller *opdatere* et bogmærke ved at vælge ellipsen ud for bogmærkets navn og derefter vælge en handling i den viste menu.
 
-Når du har et bogmærke, du kan få vist det ved ganske enkelt at vælge bogmærket i den **bogmærker** rude. 
+Når du har et bogmærke, kan du få vist det ved ganske enkelt at vælge bogmærket i ruden **Bogmærker**. 
 
 ![Tilføj personlige bogmærker.](media/end-user-bookmarks/power-bi-personal-bookmark.png)
 
@@ -77,7 +77,7 @@ The order of your bookmarks can become important when you use the **View** featu
 -->
 
 ## <a name="bookmarks-as-a-slide-show"></a>Bogmærker som et slideshow
-Hvis du vil præsentere eller få vist bogmærker i rækkefølge, skal du vælge **visning** fra den **bogmærker** rude for at starte et slideshow.
+Hvis du vil vise eller se bogmærker i en bestemt rækkefølge, skal du vælge **Vis** i ruden **Bogmærker** for at starte et diasshow.
 
 I tilstanden **Vis** er der nogle funktioner, du skal lægge mærke til:
 
@@ -85,7 +85,7 @@ I tilstanden **Vis** er der nogle funktioner, du skal lægge mærke til:
 2. Bogmærkets titellinje har pile, som du kan bruge til at flytte til næste eller forrige bogmærke.
 3. Du kan afslutte tilstanden **Vis** ved at vælge **Afslut** i ruden **Bogmærker** eller ved at vælge krydset (**X**) i bogmærkets titellinje. 
 
-![Diasshow bogmærke](media/end-user-bookmarks/power-bi-bookmark-slideshow.png)
+![Diasshow med bogmærker](media/end-user-bookmarks/power-bi-bookmark-slideshow.png)
 
 Når du er i tilstanden **Vis**, kan du lukke ruden **Bogmærker** (ved at klikke på krydset (X) i ruden) for at give mere plads til præsentationen. Mens du er i tilstanden **Vis**, er alle visualiseringer interaktive og tilgængelige for tværgående fremhævning, ligesom når du interagerer med dem. 
 
@@ -155,7 +155,7 @@ I denne version af **bogmærker** er der nogle få begrænsninger og overvejelse
 * De fleste brugerdefinerede visuals fungerer fint sammen med bogmærker. Hvis du oplever problemer med et bogmærke og en brugerdefineret visual, kan du kontakte forfatteren af denne visual og bede om at få føjet understøttelse af bogmærker til deres visuals. 
 * Hvis du tilføjer et visuelt element på en rapportside, når du har oprettet et bogmærke, vises det visuelle element i standardtilstanden. Det betyder også, at hvis du vil indføre et udsnitsværktøj på en side, hvor du tidligere har oprettet bogmærker, optræder udsnittet i standardtilstanden.
 * Hvis du flytter rundt på visuelle elementer, efter at der er oprettet et bogmærke, afspejles det i bogmærket. 
-* Som hovedregel dine bogmærker vil ikke blive berørt, hvis rapporten *designer* opdaterer eller genudgiver rapporten. Men hvis designeren gør større ændringer i rapporten, f.eks fjerne felter, der bruges af et bogmærke, derefter får du en fejlmeddelelse næste gang du forsøger at åbne denne bogmærke. 
+* Normalt har det ingen indflydelse på dine bogmærker, hvis *rapportdesigneren* opdaterer eller publicerer rapporten igen. Men hvis designeren foretager større ændringer i rapporten, f.eks. fjerner felter, der bruges af et bogmærke, modtager du en fejlmeddelelse, næste gang du forsøger at åbne bogmærket. 
 
 <!--
 ## Next steps

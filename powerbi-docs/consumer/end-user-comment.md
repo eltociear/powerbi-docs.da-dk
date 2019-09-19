@@ -9,15 +9,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 04/30/2019
+ms.date: 09/16/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 2796b29ee553ece77846f5edc8af4b2523fd48c6
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: d09ada0d3309a9cb2b93a8cd4fa3d6740e69ba77
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522803"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073539"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Føj kommentarer til et dashboard eller en rapport
 Tilføj en personlig kommentar, eller start en samtale om et dashboard eller en rapport med dine kolleger. **Kommentarfunktionen** er bare én af de måder, en *forbruger* kan samarbejde med sine kolleger på. 
@@ -25,16 +25,18 @@ Tilføj en personlig kommentar, eller start en samtale om et dashboard eller en 
 ![video om kommentarer](media/end-user-comment/comment.gif)
 
 ## <a name="how-to-use-the-comments-feature"></a>Sådan bruges kommentarfunktionen
-Kommentarer kan føjes til et helt dashboard, til individuelle visualiseringer på et dashboard, til en rapportside og til individuelle visualiseringer på en rapportside. Tilføj en generel kommentar eller en kommentar, der er målrettet bestemte kolleger.  
+Kommentarer kan føjes til et helt dashboard, til individuelle visualiseringer på et dashboard, til en rapportside, til en sideinddelt rapport og til individuelle visualiseringer på en rapportside. Tilføj en generel kommentar eller en kommentar, der er målrettet bestemte kolleger.  
 
 Når du føjer en kommentar til en rapport, henter Power BI de aktuelle værdier for filter og udsnit. Det betyder, at når du vælger eller reagerer på en kommentar, så kan en rapportside eller en visualisering i rapporten blive ændret for at vise dig den filtrerede værdi eller det udsnit, der var aktivt, da kommentaren blev tilføjet.  
 
 ![video om rapport med filtre](media/end-user-comment/comment-reports-with-filters/comment-reports-with-filters.gif)
 
-Hvorfor er det vigtigt? Forestil dig, at en kollega har anvendt et filter, der viste en interessant indsigt, som vedkommende vil dele med teamet. Hvis filteret ikke er valgt, giver kommentaren måske ikke mening. 
+Hvorfor er det vigtigt? Forestil dig, at en kollega har anvendt et filter, der viste en interessant indsigt, som vedkommende vil dele med teamet. Hvis filteret ikke er valgt, giver kommentaren måske ikke mening.
+
+Hvis du bruger en sideinddelt rapport, kan du kun angive en generel kommentar om din rapport.  Det er ikke muligt at angive kommentarer om de enkelte visualiseringer i rapporter.
 
 ### <a name="add-a-general-comment-to-a-dashboard-or-report"></a>Føj en generel kommentar til et dashboard eller en rapport
-Processerne for at føje kommentarer til et dashboard eller en rapport er ens. I dette eksempel bruger vi et dashboard. 
+Processerne for at føje kommentarer til et dashboard eller en rapport er ens.  I dette eksempel bruger vi et dashboard. 
 
 1. Åbn et Power BI-dashboard eller en rapport, og vælg ikonet **Kommentarer**. Herefter åbnes dialogboksen Kommentarer.
 
@@ -80,7 +82,7 @@ Ud over at du kan føje kommentarer til et helt dashboard eller en hel rapport, 
 
     - På et dashboard viser diagramikonet ![kommentar med diagramikon](media/end-user-comment/power-bi-comment-chart-icon.png) os, at der er knyttet en kommentar til en specifik visualisering. Kommentarer, der gælder for hele dashboardet, har ikke et særligt ikon. Når du vælger diagramikonet, fremhæves den relaterede visualisering på dashboardet.
 
-        ![relateret visualisering, der er fremhævet](media/end-user-comment/power-bi-comment-highlight2.png)
+        ![relateret visuelt element, der er fremhævet](media/end-user-comment/power-bi-comment-highlight2.png)
 
 5. Vælg **Luk** for at vende tilbage til dashboardet eller rapporten.
 

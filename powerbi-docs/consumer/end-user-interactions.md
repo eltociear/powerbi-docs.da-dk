@@ -12,10 +12,10 @@ ms.date: 05/29/2019
 ms.author: mihart
 LocalizationGroup: Reports
 ms.openlocfilehash: 7148a52d7c7475fbe685f83b1e1cc325521460db
-ms.sourcegitcommit: d88cc6a87d4ba82ad2c4d496a3634f927e4ac529
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/30/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "66413146"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Sådan krydsfiltrerer visualiseringer hinanden i en Power BI-rapport
@@ -23,11 +23,11 @@ En af de fantastiske funktioner i Power BI er den måde, som alle visualiseringe
 
 ![video af interaktion mellem visualiseringer](media/end-user-interactions/interactions.gif)
 
-Som standard, hvis du vælger et datapunkt i én visualisering på en rapportside vil tværgående filtrering, tværgående fremhævning, og analysere de andre visualiseringer på siden. 
+Hvis du vælger et datapunkt i én visualisering på en rapportside, udføres der som standard tværgående filtrering, tværgående fremhævning og analyse af de andre visualiseringer på siden. 
 
-Dette kan være nyttigt at identificere hvordan én værdi i dine data, der bidrager til en anden. F.eks, at vælge redigering segmentet i kransediagram, fremhæves bidraget fra dette segment til hver kolonne i de enheder i alt efter måned diagrammet, og det har filtreret kurvediagrammet til højre.
+Det kan være nyttigt for at identificere, hvordan en værdi i dine data bidrager til en anden. Hvis du f.eks. vælger segmentet Redigering i kransediagrammet, fremhæves bidraget fra dette segment for de enkelte kolonner i diagrammet Antal enheder i alt efter måned, og kurvediagrammet til højre er filtreret.
 
-![Billede af visuelle elementer interaktion](media/end-user-interactions/power-bi-interactions.png)
+![billede af interaktion mellem visualiseringer](media/end-user-interactions/power-bi-interactions.png)
 
 Se [Om filtrering og fremhævning](../power-bi-reports-filters-and-highlighting.md). 
 
@@ -37,8 +37,8 @@ Lige præcis hvordan visualiseringerne på en side interagerer på, angives af *
 > Begreberne *tværgående filter* og *tværgående fremhævning* bruges til at skelne mellem den funktionsmåde, der er beskrevet her, og hvad der sker, når du bruger ruden **Filtre** til at filtrere og fremhæve visualiseringer.  
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
-- Hvis rapporten indeholder en visualisering, der understøtter [detailudledning](../power-bi-visualization-drill-down.md), som standard foretager detailudledning i én visualisering har ingen indvirkning på de andre visualiseringer på rapportsiden.     
-- Hvis du bruger visualA til at interagere med visualB, anvendes filtre på visualiseringsniveau fra visualA til visualB.
+- Hvis din rapport har en visualisering, der understøtter [detailudledning](../power-bi-visualization-drill-down.md), har det som standard ingen indvirkning på andre visualiseringer på rapportsiden, hvis du foretager detailudledning i én visualisering.     
+- Hvis du bruger visual A til at interagere med visual B, anvendes der filtre på visualiseringsniveau fra visual A på visual B.
 
 ## <a name="next-steps"></a>Næste trin
 [Sådan bruger du rapportfiltre](../power-bi-how-to-report-filter.md)

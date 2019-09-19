@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.date: 04/22/2019
 ms.author: mshenhav
 ms.openlocfilehash: 79ca47f83bb39ab9d6df141b5a26dcb54e00c72c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65100956"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Få vist Power BI-rapporter, der er optimeret til din telefon
@@ -24,7 +24,7 @@ Gælder for:
 |:--- |:--- |
 | iPhone-telefoner |Android-telefoner |
 
-Når du får vist en rapport i Power BI på din telefon, kontrollerer Power BI for at se, hvis rapporten er blevet optimeret til telefoner. Hvis det er tilfældet, åbner Power BI automatisk den optimerede rapport i stående format.
+Når du får vist en Power BI-rapport på din telefon, kontrollerer Power BI, om rapporten er optimeret til telefoner. Hvis den er, åbner Power BI automatisk den optimerede rapport i stående visning.
 
 ![Rapport i stående format](./media/mobile-apps-view-phone-report/07-power-bi-phone-report-portrait.png)
 
@@ -46,7 +46,7 @@ Hvis der er defineret filtre i en rapport, der er optimeret til telefoner, kan d
     ![Avanceret filter i Power BI-telefonrapport](./media/mobile-apps-view-phone-report/power-bi-iphone-advanced-filter-toronto.gif)
 
 ## <a name="cross-highlight-visuals"></a>Tværgående fremhævning i visualiseringer
-Tværgående fremhævning af visuelle elementer i stående fungerer visning på samme måde det i Power BI-tjenesten og på telefoner i liggende format: Når du vælger data i en visualisering, fremhæves relaterede data i de andre visualiseringer på siden.
+Tværgående fremhævning af visualiseringer i stående visning fungerer på samme måde som i Power BI-tjenesten og i telefoner i liggende visning: Når du vælger data i en visualisering, fremhæves relaterede data i de andre visualiseringer på siden.
 
 Læs mere om [filtre og fremhævning i Power BI](../../power-bi-reports-filters-and-highlighting.md).
 
@@ -56,13 +56,13 @@ Når du vælger en visualisering i en rapport på en telefon, fremhæves visuali
 Når du har valgt en visualisering kan du bladre i visualiseringen. Hvis du vil fravælge en visualisering, skal du trykke et sted uden for visualiseringen.
 
 ## <a name="open-visuals-in-focus-mode"></a>Åbn visualisering i Fokustilstand
-Telefonrapporter tilbyder også en fokustilstand: Du få en større visning af en enkelt visualisering og udforske det nemmere.
+Telefonrapporter tilbyder også en fokustilstand: Du får en større visning af en enkelt visual, og det er nemmere at udforske den.
 
 * Tryk på de tre prikker ( **...** ) i øverste højre hjørne af en visualisering i en rapport på telefonen, og vælg **Udvid til fokustilstand**.
   
     ![Udvid til fokustilstand](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
 
-Hvad du skal gøre i fokustilstand påvirker på dit rapportcanvas og omvendt. F.eks, hvis du fremhæver en værdi i et visuelt element og derefter vende tilbage til hele rapporten, er rapporten filtreret til den værdi, du fremhævede i Visualiseringen.
+Det, du foretager dig i fokustilstand, påvirker dit rapportlærred og omvendt. Hvis du for eksempel fremhæver en værdi i en visualisering og derefter går tilbage til hele rapporten, filtreres rapporten efter den værdi, du fremhævede i visualiseringen.
 
 Nogle handlinger kan kun udføres i Fokustilstand på grund af den begrænsede skærmstørrelse:
 
@@ -74,23 +74,23 @@ Nogle handlinger kan kun udføres i Fokustilstand på grund af den begrænsede s
   
     ![Vend tilbage](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
   
-    Gendan er tilgængelige på rapportniveau, ryddes dine ændringer fra alle visualiseringer, eller på visualiseringsniveau, ryddes dine ændringer i den valgte visualisering.   
+    Hvis du bruger Tilbagefør på rapportniveau, ryddes dine ændringer fra alle visualiseringer. Hvis du bruger Tilbagefør på visualiseringsniveau, ryddes ændringer i den valgte visualisering.   
 
 ## <a name="drill-down-in-a-visual"></a>Detailudledning i en visualisering
 Hvis der er defineret hierarkiniveauer i en visualisering, kan du dykke ned i de mere detaljerede oplysninger, som vises i en visualisering, og derefter gå opad i hierarkiet igen. Du kan [tilføje detailudledning i en visualisering](../end-user-drill.md) i enten Power BI-tjenesten eller i Power BI Desktop.
 
-Der er nogle typer detailudledning:
+Der findes få typer detailudledning:
 
-### <a name="drill-down-on-a-value"></a>Analysér ned på en værdi
-1. Tryk længe (Tryk på og hold) på et datapunkt i et visuelt element.
-2. Værktøjstip vises, og hvis hierarki er defineret, derefter værktøjstip sidefoden vises analysér ned og pil op.
+### <a name="drill-down-on-a-value"></a>Detailudledning for en værdi
+1. Tryk længe (tryk og hold nede) på et datapunkt i en visual.
+2. Der vises værktøjstip, og hvis der er defineret et hierarki, vises der en pil for detailudledning og færre detaljer i sidefoden for værktøjstippet.
 3. Tryk på pil ned for detailudledning
 
-    ![Tryk på en detailudledning](././media/mobile-apps-view-phone-report/report-drill-down.png)
+    ![Tryk på detailudledning](././media/mobile-apps-view-phone-report/report-drill-down.png)
     
 4. Tryk på pil op for færre detaljer.
 
-### <a name="drill-to-next-level"></a>Analysér til næste niveau
+### <a name="drill-to-next-level"></a>Udvid til næste niveau
 1. Tryk på de tre prikker ( **...** ) i øverste højre hjørne i en rapport på telefonen, og vælg **Udvid til fokustilstand**.
    
     ![Udvid til fokustilstand](././media/mobile-apps-view-phone-report/power-bi-phone-report-focus-mode.png)
@@ -113,21 +113,21 @@ Der er nogle typer detailudledning:
    
     ![Vend tilbage](././media/mobile-apps-view-phone-report/power-bi-phone-report-revert-levels.png)
 
-## <a name="drill-through-from-a-value"></a>Få detaljeadgang fra en værdi
-Detaljeadgang forbinder værdier i én rapportside, med andre rapportsider. Når du analyserer via fra et datapunkt på en anden rapportside, datapunktværdier bruges til at filtrere den dykket via siden, eller den vil være inden for rammerne af de valgte data.
-Forfattere kan [definere detaljeadgang](https://docs.microsoft.com/power-bi/desktop-drillthrough) når de opretter rapporten.
+## <a name="drill-through-from-a-value"></a>Detaljeadgang fra en værdi
+Detaljeadgang knytter værdier på én rapportside til andre rapportsider. Når du får detaljeadgang fra et datapunkt til en anden rapportside, bruges datapunktets værdier til at filtrere siden med detaljeadgang, eller den vil være i konteksten for de valgte data.
+Rapportforfattere kan [definere detaljeadgang](https://docs.microsoft.com/power-bi/desktop-drillthrough), når de opretter rapporten.
 
-1. Tryk længe (Tryk på og hold) på et datapunkt i et visuelt element.
-2. Værktøjstip vises, og hvis detaljeadgang er defineret, derefter værktøjstip sidefoden vises pil detaljeadgang.
+1. Tryk længe (tryk og hold nede) på et datapunkt i en visual.
+2. Der vises værktøjstip, og hvis der er defineret detaljeadgang, vises der en pil for detaljeadgang i sidefoden for værktøjstippet.
 3. Tryk på pilen for detaljeadgang
 
     ![Tryk på detaljeadgang](././media/mobile-apps-view-phone-report/report-drill-through1.png)
 
-4. Vælg, hvilken rapportside til at gennemgå
+4. Vælg den rapportside, du vil have detaljeadgang til
 
-    ![Vælg rapportside](././media/mobile-apps-view-phone-report/report-drill-through2.png)
+    ![Vælg en rapportside](././media/mobile-apps-view-phone-report/report-drill-through2.png)
 
-5. Brug knappen Tilbage i headeren app for at gå tilbage til den side, du har startet fra.
+5. Brug knappen Tilbage i appoverskriften for at gå tilbage til den side, du startede fra.
 
 
 ## <a name="next-steps"></a>Næste trin

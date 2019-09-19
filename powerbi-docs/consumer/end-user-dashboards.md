@@ -12,10 +12,10 @@ ms.date: 05/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
 ms.openlocfilehash: 81987b864224b6afd254a3bffe17ecbb019198d0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
+ms.lasthandoff: 09/16/2019
 ms.locfileid: "65608346"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Dashboards til brugere af Power BI-tjenesten
@@ -24,7 +24,7 @@ Et Power BI-***dashboard*** er en enkelt side, der ofte kaldes et canvas, hvor d
 
 ![dashboard](media/end-user-dashboards/power-bi-dashboard2.png)
 
-De visualiseringer, du kan se på dashboardet, kaldes *felter* og er *fastgjort* til dashboardet ved rapport *designere*. I de fleste tilfælde fører du vælger et felt dig til rapportsiden hvor Visualiseringen blev oprettet. Hvis du ikke har arbejdet med Power BI før, kan du få et godt overblik ved at læse [Power BI – Grundlæggende begreber](end-user-basic-concepts.md).
+De visualiseringer, du kan se på dashboardet, kaldes *felter* og er *fastgjort* til dashboardet af *rapportdesignerne*. I de fleste tilfælde kommer du til den rapportside, hvor visualiseringen blev oprettet, når du vælger et felt. Hvis du ikke har arbejdet med Power BI før, kan du få et godt overblik ved at læse [Power BI – Grundlæggende begreber](end-user-basic-concepts.md).
 
 > [!NOTE]
 > Dashboards kan [vises og deles på mobilenheder](mobile/mobile-apps-view-dashboard.md).
@@ -39,7 +39,7 @@ Visualiseringerne på et dashboard stammer fra rapporter, og hver rapport er bas
 ## <a name="advantages-of-dashboards"></a>Fordele ved dashboards
 Dashboards er en fantastisk måde at holde øje med din virksomhed, søge efter svar og se dine vigtigste data i korte træk på. Visualiseringer på et dashboard kan stamme fra ét underliggende datasæt eller mange og fra én underliggende rapport eller mange. På et dashboard kan data fra det lokale miljø og cloudmiljøet kombineres, hvilket giver dig en samlet visning, uanset hvor dataene er gemt.
 
-Et dashboard er ikke kun et flot billede; det er interaktiv og felterne opdateres, når de underliggende data ændres.
+Et dashboard er ikke kun et flot billede. Det er interaktivt, og felterne opdateres, når de underliggende data ændres.
 
 ## <a name="dashboards-versus-reports-for-power-bi-consumers"></a>Dashboards sammenlignet med rapporter til Power BI-***forbrugere***
 Rapporter forveksles ofte med dashboards, da de også er lærreder med visualiseringer. Men der er nogle store forskelle set fra Power BI-*forbrugernes* synspunkt.
