@@ -1347,13 +1347,21 @@
               href: service-gateway-mashup-on-premises-cloud.md
         - name: Aktivér enkeltlogon (SSO)
           items:
-            - name: Enkeltlogon (SSO) – oversigt
+            - name: SSO-oversigt
               href: service-gateway-sso-overview.md
-            - name: Enkeltlogon (SSO) – Kerberos
-              href: service-gateway-sso-kerberos.md
-            - name: Enkeltlogon (SSO) – Kerberos – ressourcebaseret
-              href: service-gateway-sso-kerberos-resource.md
-            - name: Enkeltlogon (SSO) – SAML
+            - name: Kerberos-baseret SSO
+              items:
+                - name: Konfigurer Kerberos-baseret SSO
+                  href: service-gateway-sso-kerberos.md
+                - name: Datakildespecifik konfiguration
+                  items:
+                    - name: SAP HANA
+                      href: service-gateway-sso-kerberos-sap-hana.md
+                    - name: SAP BW – sapcrypto.dll (Common Crypto Library)
+                      href: service-gateway-sso-kerberos-sap-bw-commoncryptolib.md
+                    - name: SAP BW – gx64krb5.dll og gsskrb5.dll
+                      href: service-gateway-sso-kerberos-sap-bw-gx64krb.md
+            - name: SAML-baseret SSO
               href: service-gateway-sso-saml.md
         - name: Foretag fejlfinding af gatewayen
           href: service-gateway-onprem-tshoot.md
