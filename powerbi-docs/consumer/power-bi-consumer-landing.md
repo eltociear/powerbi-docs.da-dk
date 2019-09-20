@@ -6,17 +6,17 @@ manager: kvivek
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: hub-page
-ms.date: 05/29/2019
+ms.date: 09/11/2019
 ms.author: mihart
 layout: HubPage
 ms.custom: seodec18
 LocalizationGroup: Get started
-ms.openlocfilehash: 7dae9f7a2768a8e9f51d5454019cff740304fe2f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: d43d1072c9eafa71d336f71e22ac2d6d68144558
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66270602"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073389"
 ---
 <div id="main" class="v2">
       <div class="container">
@@ -42,7 +42,7 @@ ms.locfileid: "66270602"
                                             </div>
                                             <div class="cardText">
                                                 <h3>Kom i gang</h3>
-                                                <p><a href="/power-bi/service-get-started" data-linktype="absolute-path">Få en præsentation af Power BI-tjenesten</a></p>
+                                                <p><a href="/power-bi/consumer/end-user-reading-view" data-linktype="absolute-path">Få en præsentation af Power BI-tjenesten</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-consumer" data-linktype="absolute-path">Hvad er Power BI til <b><i>forbruger</i></b>?</a></p>
                                                 <p><b>Hvad er forskellen:</b> <a href="/power-bi/consumer/end-user-reports" data-linktype="absolute-path">Rapporter</a>, <a href="/power-bi/consumer/end-user-dashboards" data-linktype="absolute-path">Dashboards</a>, <a href="/power-bi/consumer/end-user-apps" data-linktype="absolute-path">Programmer</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-sign-in" data-linktype="absolute-path">Log på, og log af</a></p>
@@ -65,7 +65,7 @@ ms.locfileid: "66270602"
                                                 <p><a href="/power-bi/consumer/end-user-report-open" data-linktype="absolute-path">Få vist en rapport</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-dashboard-open" data-linktype="absolute-path">Få vist et dashboard</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-app-view" data-linktype="absolute-path">Få vist et program</a></p>
-                                                <p><a href="/power-bi/consumer/end-user-export" data-linktype="absolute-path">Eksport data</a>
+                                                <p><a href="/power-bi/consumer/end-user-export" data-linktype="absolute-path">Eksportér data</a>
                                             </div>
                                         </div>
                                     </div>
@@ -122,7 +122,7 @@ ms.locfileid: "66270602"
                                             </div>
                                             <div class="cardText">
                                                 <h3>Få hjælp</h3>
-                                            <p><a href="https://docs.microsoft.com/en-us/learn/paths/consume-data-with-power-bi/" data-linktype="absolute-path">Microsoft LEARN selvstyrede undervisning</a></p>
+                                            <p><a href="https://docs.microsoft.com/en-us/learn/paths/consume-data-with-power-bi/" data-linktype="absolute-path">Microsoft LEARN – uddannelse i eget tempo</a></p>
                                                 <p><a href="https://powerbi.microsoft.com/blog/" data-linktype="absolute-path">Læs Power BI-bloggen</a></p>
                                                 <p><a href="http://community.powerbi.com/" data-linktype="absolute-path">Stil spørgsmål i Power BI-forummer</a></p>
                                             </div>
@@ -152,10 +152,10 @@ ms.locfileid: "66270602"
                 </ul>
             </li>
             <li>
-                <a href="#concepts-terminology" data-linktype="self-bookmark"> Koncepter &amp; begreber</a>
+                <a href="#concepts-terminology" data-linktype="self-bookmark"> Koncepter &amp; terminologi</a>
                 <ul id="concepts-terminology">
                     <li>
-                        <a href="#conceptsterminology" data-linktype="self-bookmark"> Koncepter &amp; begreber</a>
+                        <a href="#conceptsterminology" data-linktype="self-bookmark"> Koncepter &amp; terminologi</a>
                         <ul id="conceptsterminology" class="cardsC">
                             <br>
                             <li>
@@ -314,25 +314,6 @@ ms.locfileid: "66270602"
                                                 <div class="cardText">
                                                     <h3>Tilgængelighed</h3>
                                                     <p>Få mere at vide om, hvordan Microsoft hjælper personer med handicap til nemt at bruge og interagere med Power BI. </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>                            
-                            <li>
-                                <a href="/power-bi/consumer/end-user-browsers" data-linktype="absolute-path">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="media/end-user-consumer/browser-info.svg" alt="Browsers Info" data-linktype="relative-path">
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Browseroplysninger</h3>
-                                                    <p>Se en liste over de browsere, der fungerer bedst med Power BI. </p>
                                                 </div>
                                             </div>
                                         </div>
