@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/26/2019
+ms.date: 09/09/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 531cb34379c984a26e983db7acfc9b4deebf68b9
-ms.sourcegitcommit: 0332efe8f83cb55a9b8ea011db7c99e9b4568118
+ms.openlocfilehash: d491ca460d8393e9da308c826e69aad454d0e766
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590446"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841620"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til kunder i den amerikanske stat
 **Power BI-tjenesten** har en tilgængelig version for kunder i den amerikanske stat som en del af abonnementer for **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til kunder i den amerikanske stat og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten**.
@@ -85,13 +85,13 @@ Følgende spørgsmål (og svar) er angivet, så du hurtigt kan få oplysninger, 
 
 **Svar:** Tilmelding (kaldes ofte *onboarding*) kan være forskellig, afhængigt af din eksisterende licens og dit abonnement. Se artiklen [Tilmeld dig Power BI US Government](service-govus-signup.md) for at få flere oplysninger.
 
-**Spørgsmål:** Er URL-adressen til at oprette forbindelse til **Power BI** for US Government-versionen anderledes end URL-adressen til den kommercielle **Power BI**?
+**Spørgsmål:** Er URL-adressen til at oprette forbindelse til **Power BI** for US Government-versionen anderledes end URL-adressen til den kommercielle **Power BI**? Er der en anden URL-adresse til GCC High-kunder (Government Community Cloud High)?
 
 **Svar:** Ja, URL-adresserne er forskellige. Følgende tabel indeholder hver URL-adresse:
 
-| URL-adresse til kommerciel version | URL-adresse til US Government-version |
-| --- | --- |
-| https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) |
+| URL-adresse til kommerciel version | URL-adresse til US Government-version | De amerikanske myndigheders URL-adresse til GCC High |
+| --- | --- | --- |
+| https://app.powerbi.com/ |[https://app.powerbigov.us](https://app.powerbigov.us) | [https://app.high.powerbigov.us](https://app.high.powerbigov.us) |
 
 **Spørgsmål:** Min konto er klargjort i mere end ét nationalt cloudmiljø. Når jeg bruger **Power BI Desktop**, hvordan kan jeg så vælge, hvilken cloud jeg opretter forbindelse til?
 

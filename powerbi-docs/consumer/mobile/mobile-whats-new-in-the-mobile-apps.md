@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 5b0921689a923b5c787a5e4208fe35a863372878
-ms.sourcegitcommit: 9eae2a52af6926cda4d6b03de4d50d7fa8b2f216
+ms.openlocfilehash: 5697fd79551d238f095696dcc940afb8ea330d11
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70030171"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70841380"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -25,7 +25,15 @@ Du kan finde relaterede oplysninger om nyheder under:
 
 ## <a name="august-2019"></a>August 2019
 
-### <a name="secured-access-with-azure-active-directory-ad-application-proxy"></a>Sikker adgang med AD-programproxy (Azure Active Directory)
+### <a name="introducting-power-bi-mobile-new-look-preview-ios-and-android"></a>Introduktion af det nye udseende af Power BI – Mobil (prøveversion) (iOS og Android)
+
+Vi har opdateret vores app og introduceret nye oplevelser, hvor vi har tilføjet en hjemmeside, der giver hurtig adgang til dit mest brugte indhold, samt nye navigationslinjer, der giver dig en nem måde at navigere i appen på. Med de nye og opdaterede oplevelser er det nu hurtigere og nemmere at finde det, du har brug for, når du har brug for det.
+Da det nye udseende er en prøveversion, skal du slå det til for at nyde godt af det.
+Læs mere om [det nye udseende af Power BI – Mobil](https://powerbi.microsoft.com/blog/introducing-power-bi-mobile-apps-new-look-preview/).
+
+![Det nye udseende af Power BI – Mobil](./media/mobile-whats-new-in-the-mobile-apps/power-bi-mobile-new-look2.gif)
+
+### <a name="secured-access-with-azure-active-directory-ad-application-proxy-ios-and-android"></a>Sikker adgang med Azure Active Directory-proxyprogram (AD) (iOS og Android)
 
 Vi har indgået partnerskab med Azure Active Directory-teamet om at integrere Power BI-mobilapps med en AAD-programproxy (Azure Active Directory). Med denne konfiguration kan du oprette forbindelse til rapportserveren, der er hostet inden for virksomhedsgrænserne, fra Power BI-mobilappen, uden at det er nødvendigt at konfigurere kompleks konfiguration i det lokale miljø. Læs mere om [Power BI-mobil og Azure AD Application Proxy-integration](https://powerbi.microsoft.com/blog/access-on-prem-report-server-from-your-power-bi-mobile-app-with-azure-active-directory-application-proxy/). Få mere at vide om, [hvordan du konfigurerer Azure AD Application Proxy og Power BI](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi).
 
@@ -36,7 +44,7 @@ Vi har indgået partnerskab med Azure Active Directory-teamet om at integrere Po
 Værktøjstip til rapportsider understøttes nu, når du får vist rapporter i mobilapps. Du skal bare trykke på en visualisering, der har et værktøjstip til rapporten tilknyttet, og holde den nede, så bliver det vist.  
 
 ![Værktøjstip til rapportlærred](./media/mobile-whats-new-in-the-mobile-apps/report-canvas-tooltip.png)
-
+ 
 > [!NOTE]
 > Værktøjstip til rapporter understøttes for enheder, der har en størrelse på mere end 640 pixels og et billede på 320. Mindre enheder bruger standardværktøjstip.
 

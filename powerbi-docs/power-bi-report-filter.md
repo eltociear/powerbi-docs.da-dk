@@ -7,23 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 73db8f9741685549042dbaf1172e57a55a26ab36
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: e5e67863888e5bd6d611ded7a58254fe693f4bb6
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654484"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841294"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>Den nye filtreringsoplevelse i Power BI-rapporter
 
 Filtrene i Power BI har fået ny funktionalitet og et nyt design. Når du vælger den nye filteroplevelse, kan du formatere filtreringsruden, så den ser ud som i resten af rapporten. Du kan låse og endda skjule filtre. Når du designer din rapport, kan du slet ikke længere se den gamle filtreringsrude i ruden Visualiseringer. Du kan udføre al redigering og formatering af dine filtre i en enkelt filtreringsrude. 
 
-![Ny filteroplevelse](media/power-bi-report-filter/power-bi-filter-reading.png)
+![Ny filteroplevelse](media/power-bi-report-filter/power-bi-filter-new-look.png)
 
-Her kan du se, det som du som rapportdesigner kan gøre i den nye rude med et enkelt filter:
+Her er nogle af de opgaver, som du som rapportdesigner kan udføre i den nye Filterrude:
 
 - Tilføj og fjern felter, der kan filtreres efter. 
 - Rediger filtertilstanden.
@@ -207,7 +207,7 @@ Du kan nu ændre standardindstillingerne for filtreringsruden med temafilen. Her
 
 ## <a name="sort-the-filter-pane"></a>Sortér filtreringsruden
 
-Brugerdefineret sorteringsfunktionalitet er en del af den nye oplevelse med filtreringsruden. Oprettere af rapporter kan trække og slippe filtre for at flytte rundt på dem i den ønskede rækkefølge.
+Brugerdefineret sorteringsfunktionalitet er en del af den nye oplevelse med filtreringsruden. Oprettere af rapporter kan trække og slippe filtre for at omarrangere dem i en hvilken som helst rækkefølge.
 
 ![Omarranger sorteringsrækkefølge for filtre](media/power-bi-report-filter/power-bi-filter-sort.gif)
 

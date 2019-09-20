@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/08/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 278d631e755c4d484db0788b6c58fca9cfce4616
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: 218124542570d313c3d5893a6f1d69c75594f33c
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68961891"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903792"
 ---
 # <a name="manage-your-app-workspace-in-power-bi-and-office-365"></a>Administrer dit apparbejdsområde i Power BI og Office 365
 
@@ -72,7 +72,7 @@ Du kan også redigere aspekter af et apparbejdsområde direkte i Outlook til Off
 
 ### <a name="add-an-image-and-set-other-workspace-properties"></a>Tilføj et billede, og angiv andre egenskaber for arbejdsområdet
 
-Når du distribuerer din app fra apparbejdsområdet, bliver det billede, du tilføjer her, billedet for din app. Se afsnittet [Føj et billede til dit Office 365-apparbejdsområde (valgfrit)](service-create-workspaces.md#add-an-image-to-your-office-365-app-workspace-optional) i artiklen **Opret de nye arbejdsområder**.
+Når du distribuerer din app fra apparbejdsområdet, bliver det billede, du tilføjer her, billedet for din app. Se afsnittet [Føj et billede til dit Office 365-apparbejdsområde](service-create-workspaces.md#add-an-image-to-your-office-365-workspace-optional) i artiklen **Opret de nye arbejdsområder**.
 
 1. I visningen Outlook til Office 365 i dit apparbejdsområde skal du gå til fanen **Om** og vælge **Rediger**.
 

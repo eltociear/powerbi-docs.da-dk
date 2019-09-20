@@ -7,14 +7,14 @@ author: mihart
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: 6a66d134a3399fed3ee03eddd7059265b5cf7c13
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: b9622a08506c6f5ade900296d91b449c64dc374c
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751018"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903668"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordliste til Power BI-tjenesten
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
@@ -60,14 +60,19 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 
 **calculation (beregning)** En matematisk bestemmelse af størrelsen eller antallet af noget.
 
+**kort** (visualiseringstype) En [visualiseringstype](end-user-visual-type.md) i Power BI.
+
+**kort** (Power BI Start) Power BI Start viser rektangulære og firkantede billeder, der repræsenterer dashboards, rapporter, apps med mere. Disse billeder kaldes *kort*.
+
 **certified custom visual (certificeret brugerdefineret visual)** En brugerdefineret Power BI-visual, der opfylder kravene og har bestået strenge sikkerhedstests.
 
 **classification (klassificering)** Kaldes også kaldet dataklassificering. Denne indstilling kan aktiveres af Power BI-administratorer for at øge opmærksomheden på det sikkerhedsniveau, der kræves til et dashboard. En organisation kan tilpasse klassificeringstyperne.
 
 **connect live (opret liveforbindelse)** En metode til oprettelse af forbindelse til SQL Server Analysis Services-datamodeller. Kaldes også en direkte forbindelse.
 
-**content (indhold)**
+**objektbeholder** Områderne i navigationslinjen er *objektbeholdere*. I navigationslinjen kan du finde objektbeholdere til: Favoritter, Seneste, Apps, Delt med mig og Hjem. 
 
+**indhold** Indhold til Power BI-tjenesten er generelt dashboards, rapporter og apps. Det kan også omfatte projektmapper og datasæt.
 
 **content list (indholdsliste)** Indholdsindekset for en app.
 
@@ -109,7 +114,8 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 
 **Editing View (Redigeringsvisning)** Den tilstanden, hvor rapport*designere* kan udforske, designe, bygge og dele en rapport.
 
-**ellipse** ...
+**ellipse** ...    
+Når du vælger en ellipse, vises der flere menuindstillinger.
 
 **embed code (integreringskode)** en fælles standard på tværs af internettet. I Power BI kan kunden oprette en integreringskode og kopiere den for at placere indhold, f.eks en rapportvisual, på et websted eller i en blog.
 
@@ -158,7 +164,8 @@ Det er i orden at bruge Power BI-miljø (lejer) i dokumentationen, hvor det kan 
 
 ## <a name="l"></a>L
 
-**left navigation (left nav) (venstre navigationsrude (venstre nav.))** Kontrolelementerne langs den venstre kant af Power BI-tjenesten.
+**venstre navigationslinje**  Den er nu erstattet med **navigationslinje**, men kan stadig ses i noget af dokumentationen.    
+Kontrolelementerne langs den venstre kant af Power BI-tjenesten.
 
 Første forekomst: venstre navigation, efterfølgende forekomster eller lidt plads: venstre nav.
 
@@ -176,7 +183,11 @@ Første forekomst: venstre navigation, efterfølgende forekomster eller lidt pla
 
 **native (oprindelig)** Er inkluderet i produktet. Power BI leveres f.eks. med et sæt *oprindelige* visualiseringstyper. Men du kan også importere andre typer, f.eks brugerdefinerede visuals.
 
-**navigation pane (navigationsrude)** Se **Venstre navigation**
+**navigationslinje** eller **navlinje** Kontrolelementerne langs den venstre kant i Power BI-tjenesten.
+
+Første forekomst: navigationslinje, efterfølgende forekomster eller ved lidt plads: navlinje
+
+**navigationsrude** Se **navigationslinje**
 
 **notification (meddelelse)** Meddelelser, der sendes af og til Power BI Meddelelsescenter.  
 

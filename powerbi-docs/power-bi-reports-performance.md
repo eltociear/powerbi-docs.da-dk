@@ -1,8 +1,8 @@
 ---
 title: Power BI-ydeevne – bedste praksis
 description: Denne artikel indeholder en vejledning i at oprette hurtige og pålidelige rapporter i Power BI
-author: MarkMcGeeAtAquent
-ms.author: kfile
+author: Bhavik-MSFT
+ms.author: bhmerc
 manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
@@ -10,16 +10,20 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/30/2018
 LocalizationGroup: Reports
-ms.openlocfilehash: bddd653b5ac8b49a38a69ae79baf2f96824444ed
-ms.sourcegitcommit: 805d52e57a935ac4ce9413d4bc5b31423d33c5b1
+ms.openlocfilehash: 736c1ee1b1998ec7f991167352313a05061b3f3c
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68665351"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841495"
 ---
 # <a name="power-bi-performance-best-practices"></a>Power BI-ydeevne – bedste praksis
 
 Denne artikel giver vejledning i at oprette hurtige og pålidelige rapporter i Power BI.  
+
+## <a name="choose-an-appropriate-storage-mode-import-directquery"></a>Vælg en relevant lagringstilstand: Import, DirectQuery
+
+I de fleste tilfælde er importtilstanden det bedste valg, da den giver den højeste hastighed ved at anvende lokale cachelagrede data i hukommelsen, der komprimeres ved hjælp af kolonnelagring. Importtilstand giver også mulighed for fuld DAX-funktionalitet. Overvej DirectQuery (og sammensatte modeller), når mængden af kildedata er for stor til Power BI-kapaciteten. DirectQuery er også nyttig, når du skal hente de seneste data fra kilden, hver gang en rapport indlæses. Hvis du ikke har disse krav, og brugere kun har brug for at få vist de data, der opdateres et par gange om dagen eller mindre (f.eks. fra en virksomheds data warehouse), anbefales Import på det kraftigste. I DirectQuery-tilstand vil brugerne muligvis forsøge at opdatere rapporten, uden at de er klar over, at de henter præcis de samme data fra kilden.      
 
 ## <a name="use-filters-to-limit-report-visuals-to-display-only-whats-needed"></a>Brug filtre for kun at vise de mest nødvendige visuelle elementer i rapporter 
 
@@ -57,7 +61,7 @@ Når du implementerer Power BI-rapporter, der er baseret på DirectQuery og dire
 ## <a name="directquery-best-practices"></a>DirectQuery – bedste praksis
 
 I følgende afsnit beskrives generelle bedste praksisser for oprettelse af forbindelse via DirectQuery.
-  
+
 ### <a name="db-design-guidance"></a>Vejledning i DB-design
 
 - Push-beregnede kolonner og målinger til kilden, hvor det er muligt. Jo tættere på kilden, jo højere er sandsynligheden for ydeevne.

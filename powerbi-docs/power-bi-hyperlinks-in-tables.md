@@ -1,6 +1,6 @@
 ---
-title: Føj hyperlinks til en tabel
-description: Brug Power BI Desktop til at oprette hyperlinks. Derefter kan du bruge enten Power BI Desktop eller Power BI-tjenesten til at føje disse links til tabeller og matricer i din rapport.
+title: Føj links (URL-adresser) til en tabel
+description: I dette emne lærer du, hvordan du føjer links (URL-adresser) til en tabel. Du kan bruge Power BI Desktop til at føje links (URL-adresser) til en tabel eller matrix. Derefter kan du bruge enten Power BI Desktop eller Power BI-tjenesten til at føje disse links til tabeller og matrixer i din rapport.
 author: maggiesMSFT
 manager: kfile
 ms.reviewer: ''
@@ -8,23 +8,23 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 04/09/2019
+ms.date: 08/30/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 386c52908d54833e350a7b1a6d846f78c7b88c6d
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 58cb009e29c05ce318c5931fb418617e1ef63f4f
+ms.sourcegitcommit: ba085b248c54e8fb1fd8eb2bb23a814e3fdd7ff6
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721367"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70937056"
 ---
-# <a name="add-hyperlinks-to-a-table"></a>Føj hyperlinks til en tabel
-I dette emne kan du lære at bruge Power BI Desktop til at oprette links. Derefter kan du bruge enten Power BI Desktop eller Power BI-tjenesten til at tilføje disse links i tabeller og matricer i din rapport. 
+# <a name="add-hyperlinks-urls-to-a-table"></a>Føj links (URL-adresser) til en tabel
+I dette emne lærer du, hvordan du føjer links (URL-adresser) til en tabel. Du kan bruge Power BI Desktop til at føje links (URL-adresser) til en tabel eller matrix. Derefter kan du bruge enten Power BI Desktop eller Power BI-tjenesten til at føje disse links til tabeller og matrixer i din rapport. 
 
 ![Tabel med hyperlinks](media/power-bi-hyperlinks-in-tables/hyperlinkedtable.png)
 
 > [!NOTE]
-> Du kan oprette links i [felter på dashboards](service-dashboard-edit-tile.md) og [tekstfelter på dashboards](service-dashboard-add-widget.md) på farten ved hjælp af Power BI-tjenesten. Du kan oprette links i [tekstfelter i rapporter](service-add-hyperlink-to-text-box.md) på farten ved hjælp af Power BI-tjenesten og Power BI Desktop.
+> Du kan oprette links i [felter på dashboards](service-dashboard-edit-tile.md) og [tekstfelter på dashboards](service-dashboard-add-widget.md) på farten i Power BI-tjenesten. Du kan oprette links i [tekstfelter i rapporter](service-add-hyperlink-to-text-box.md) på farten i Power BI-tjenesten og Power BI Desktop.
 > 
 
 ## <a name="to-create-a-hyperlink-in-a-table-or-matrix-using-power-bi-desktop"></a>Sådan opretter du et link i en tabel eller en matrix ved hjælp af Power BI Desktop

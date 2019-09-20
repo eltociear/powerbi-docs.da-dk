@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/19/2019
+ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 67cd57a981f7c1fcab118652dc5424fa935ecd13
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: e77e61d00ac555c907a6d87ab0ffdeb8e21a5bd8
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654743"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841301"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Lagringstilstand i Power BI Desktop
 
@@ -42,6 +42,9 @@ Indstillingen af lagringstilstand i Power BI Desktop er en af tre relaterede fun
 * **Mange til mange-relationer**: Via *sammensatte modeller* kan du oprette *mange til mange-relationer* mellem tabeller. *Mange til mange-relationer* fjerner kravene for entydige værdier i tabeller. Det fjerner også tidligere løsninger, f.eks. introduktion af nye tabeller, kun for at oprette relationer. Du kan finde flere oplysninger under [Mange til mange-relationer i Power BI Desktop](desktop-many-to-many-relationships.md).
 
 * **Lagringstilstand**: Du kan nu angive, hvilke visualiseringer der kræver en forespørgsel til back end-datakilder. Visuelle elementer, der ikke kræver en forespørgsel, importeres, også selvom de er baseret på DirectQuery. Denne funktion hjælper med at forbedre ydeevnen og reducere belastningen af back-end. Tidligere ville selv enkle visuelle elementer, f.eks. udsnit, starte forespørgsler, der blev sendt til back end-kilderne. Lagringstilstand er beskrevet nærmere i denne artikel.
+
+> [!NOTE]
+> Du kan få vist den aktuelle lagringstilstand ved at vælge visningen **Model**, den relevante tabel og derefter se værdien **Lagringstilstand** i afsnittet **Avanceret** i ruden **Egenskaber**.
 
 ## <a name="use-the-storage-mode-property"></a>Brug lagringstilstand korrekt
 

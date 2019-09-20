@@ -7,23 +7,27 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/24/2019
+ms.date: 09/05/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: c13398ff08722c54a9f0c373a1c103e4d684c9bb
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: 21a77d585707b19cd8a3d06ad44471fac45d7178
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391382"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903701"
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
 
-En Power BI-rapport er en visning med flere perspektiver af et datasæt med visualiseringer, som repræsenterer forskellige resultater og indsigter fra dette datasæt.  En rapport kan indeholde en enkelt visualisering eller sider fulde af visualiseringer. Afhængigt af din jobfunktion kan du være en person, der *designer* rapporter. Du også kan være en person, der *forbruger* eller anvender rapporter.
+En Power BI-rapport er en visning med flere perspektiver af et datasæt med visualiseringer, som repræsenterer forskellige resultater og indsigter fra dette datasæt.  En rapport kan indeholde en enkelt visualisering eller sider fulde af visualiseringer. Afhængigt af din jobfunktion kan du være en person, der *designer* rapporter. Du også kan være en person, der *forbruger* eller anvender rapporter. Denne artikel er til *forbrugere*.
 
-![Skærmbillede af en rapportside.](./media/end-user-reports/power-bi-reports.png)
+![Skærmbillede af en rapportside.](./media/end-user-reports/power-bi-report.png)
 
-Denne rapport indeholder seks sider (eller faner), og du ser i øjeblikket siden **Synspunkt**. På denne side er der fem forskellige visualiseringer og en sidetitel. Ruden *Filtre* viser ét filter, som er anvendt på alle rapportsider. Hvis du vil skjule ruden Filtre, skal du vælge pilen ( **>** ).
+A. Denne rapport indeholder seks sider (eller faner), og du ser i øjeblikket siden **Synspunkt**.    
+B. På denne side er der fem forskellige visualiseringer og en sidetitel.    
+C. Ruden *Filtre* viser ét filter, som er anvendt på alle rapportsider. Hvis du vil skjule ruden Filtre, skal du vælge pilen ( **>** ).    
+D. På Power BI-banneret kan du se navnet på rapporten og de seneste opdaterede dato. Vælg pilen for at åbne en menu, der også viser navnet på ejeren af rapporten.    
+E. Handlingslinjen indeholder handlinger, du kan udføre på denne rapport.  Du kan f.eks. tilføje en kommentar, få vist et bogmærke eller eksportere data fra rapporten.  Vælg ellipsen (...) for at få vist en liste over yderligere rapportfunktionalitet.    
 
 Hvis du ikke har arbejdet med Power BI før, kan du få et godt overblik ved at læse [Grundlæggende begreber for forbrugere af Power BI-tjenesten](end-user-basic-concepts.md). Rapporter er tilgængelige til visning, deling og anmærkning på mobilenheder. Du kan få flere oplysninger under: [Udforsk rapporter i Power BI-mobilapps](mobile/mobile-reports-in-the-mobile-apps.md).
 
@@ -68,9 +72,9 @@ Afhængigt af din rolle kan du være en person, der *designer* rapporter til ege
 Eller måske er du en *forbruger*, der modtager rapporter fra andre. Du vil gerne vide mere om, hvordan du forstår og interagerer med rapporter. Hvis du er *forbruger* af rapporter, er disse links beregnet til dig:
 
 * Start med en [præsentation af Power BI-tjenesten](end-user-basic-concepts.md), så du ved, hvor du kan finde rapporter og værktøjer til rapporten.
-* Få mere at vide om, hvordan du [åbner en rapport](end-user-report-open.md) og al den interaktion, der er tilgængelig i [Læsevisning](end-user-reading-view.md).
+* Få mere at vide om, hvordan du [åbner en rapport](end-user-report-open.md) og alle de [handlinger, der er tilgængelige for forbrugere](end-user-reading-view.md).
 * Bliv fortrolig med rapporter ved at se præsentationen af et af vores [eksempler](../sample-tutorial-connect-to-the-samples.md).  
-* Hvis du vil se, hvilke datasæt rapporten bruger, og hvilke dashboards der har felter fastgjort fra rapporten, kan du se under [Få vist relateret indhold i Power BI-tjenesten](end-user-related.md).
+* Hvis du vil se, hvilke datasæt rapporten bruger, og hvilke dashboards der indeholder visualiseringer fra rapporten (*fastgjorte*), skal du se [Få vist relateret indhold i Power BI-tjenesten](end-user-related.md).
 
 > [!TIP]
 > Hvis du ikke kunne finde det, du ledte efter her, kan du bruge indholdsfortegnelsen til venstre til at gennemse alle artikler om *Rapporter*.

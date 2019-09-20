@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 09/04/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: ef7e4f556832f1323043a80cf219678a16511c9e
-ms.sourcegitcommit: e67bacbfc5638ee97e3d2e0e7f5bd2d9aac78f9c
+ms.openlocfilehash: a1dee67279e6f43c0ff8008338f7b8a9f5a2d41a
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67532892"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70841036"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Få en præsentation af ruden Rapportfiltre
 
@@ -24,95 +24,84 @@ I denne artikel ser vi nærmere på ruden **Filtre** i rapporter i Power BI-tjen
 
 Der er mange forskellige måder at filtrere data på i Power BI. Du kan få flere oplysninger under [Om filtre og fremhævning i Power BI-rapporter](../power-bi-reports-filters-and-highlighting.md).
 
-![Skærmbillede af en rapport i browseren med en pil, der peger på indstillingen Filtre.](media/end-user-report-filter/power-bi-browser-new2.png)
+![Skærmbillede af en rapport i browseren med en pil, der peger på indstillingen Filtre.](media/end-user-report-filter/power-bi-report.png)
 
 ## <a name="working-with-the-report-filters-pane"></a>Arbejde med ruden Filtre i rapporter
 
 Når en kollega deler en rapport med dig, skal du søge efter ruden **Filtre**. Nogle gange er den skjult langs højre kant af rapporten. Vælg den for at udvide den.
 
-![Skærmbillede af rapporten med ruden Filtre udvidet.](media/end-user-report-filter/power-bi-filter-pane.png)
+![Skærmbillede af rapporten med ruden Filtre udvidet.](media/end-user-report-filter/power-bi-expand-filter-pane.png)
 
-Ruden **Filtre** indeholder filtre, der er tilføjet i rapporten af rapportens *designer*. *Forbrugere* som dig selv kan interagere med de eksisterende filtre og gemme ændringer, men forbrugere kan ikke tilføje nye filtre i rapporten. På skærmbilledet ovenfor har designeren f.eks. tilføjet to filtre på sideniveau: **Segment** og **År**. Du kan interagere og ændre disse filtre, men du kan ikke tilføje et tredje filter på sideniveau.
+Ruden **Filtre** indeholder filtre, der er tilføjet i rapporten af rapportens *designer*. *Forbrugere* som dig selv kan interagere med de eksisterende filtre og gemme ændringer, men forbrugere kan ikke tilføje nye filtre i rapporten. På ovenstående skærmbillede har designeren f.eks. tilføjet tre filtre på sideniveau: **Segment er Alle**, **År er 2014** og **Område er Central**. Du kan interagere med og ændre disse filtre, men du kan ikke tilføje et filter på et fjerde sideniveau.
 
 I Power BI-tjenesten beholder rapporter eventuelle ændringer, du foretager i ruden **Filtre**. Tjenesten overfører også disse ændringer til mobilversionen af rapporten.
 
-Hvis du vil nulstille ruden **Filtre** til designerens standardindstillinger, skal du vælge ![Skærmbillede af indstillingen Nulstil til standard](media/end-user-report-filter/power-bi-reset.png). på den øverste menulinje.
+Hvis du vil nulstille ruden **Filtre** til designerens standarder, skal du vælge **Nulstil til standard** i den øverste menulinje.
+
+![Skærmbillede af ikonet Nulstil til standard.](media/end-user-report-filter/power-bi-reset-icon.png) 
 
 ## <a name="view-all-the-filters-for-a-report-page"></a>Vis alle filtrene for en rapportside
 
-I ruden **Filtre** vises alle de filtre, der er tilføjet af rapportens designer. Ruden **Filtre** er også det område, hvor du kan få vist oplysninger om filtrene og interagere med dem. Du kan gemme ændringer, du foretager, eller bruge **Nulstil til standard** for at vende tilbage til de oprindelige filterindstillinger.
+I ruden **Filtre** vises alle de filtre, der er tilføjet af rapportens designer. Ruden **Filtre** er også det område, hvor du kan få vist oplysninger om filtrene og interagere med dem. Gem de ændringer, du foretager, eller brug **Nulstil til standard** for at vende tilbage til de oprindelige filterindstillinger.
 
-Hvis der er ændringer, du vil gemme, kan du også oprette et personligt bogmærke.  Du kan finde flere oplysninger under [Hvad er bogmærker?](end-user-bookmarks.md).
+Hvis der er ændringer, du vil gemme, kan du også oprette et personligt bogmærke. Du kan finde flere oplysninger under [Hvad er bogmærker?](end-user-bookmarks.md).
 
-Ruden **Filtre** viser og administrerer flere typer rapportfiltre. De kan anvendes på en visualisering, på en rapportside og på hele rapporten.
+I ruden **Filtre** vises og administreres flere typer rapportfiltre: rapport, rapportside og visualisering.
 
-I dette eksempel har vi valgt en visualisering, der indeholder to filtre. Der er også filtre på rapportsiden. De er angivet under overskriften **Filtre på denne side**. Hele rapporten har desuden et filter for **Dato**.
+I dette eksempel har vi valgt en visualisering, der indeholder tre filtre. Der er også filtre på rapportsiden. De er angivet under overskriften **Filtre på denne side**. Hele rapporten har desuden et filter for **Dato**.
 
-![Skærmbillede af en rapport med en visualisering og dens relaterede filtre fremhævet.](media/end-user-report-filter/power-bi-all-filters2.png)
+![Skærmbillede af en rapport med en visualisering og dens relaterede filtre fremhævet.](media/end-user-report-filter/power-bi-filters-pane.png)
 
-Ud for nogle af filtrene vises teksten **(Alle)** . **(Alle)** betyder, at alle værdier er inkluderet i filteret. På skærmbilledet ovenfor viser **Segment (Alle)** , at denne rapportside indeholder data om alle produktsegmenterne. Hvis du vælger filteret **Område er Vest** på sideniveau, indeholder rapportsiden kun data for det vestlige område.
+Ud for nogle af filtrene vises teksten **(Alle)** . **(Alle)** betyder, at alle værdier er inkluderet i filteret. På skærmbilledet ovenfor viser **Segment (Alle)** , at denne rapportside indeholder data om alle produktsegmenterne. 
 
 Alle, der får vist denne rapport, kan arbejde med disse filtre.
 
 ### <a name="view-only-those-filters-applied-to-a-visual"></a>Vis kun de filtre, der anvendes på en visualisering
 
-Hvis du vil se nærmere på de filtre, der anvendes på en bestemt visualisering, skal du holde markøren over visualiseringen for at få vist filterikonet ![Skærmbillede af filterikonet](media/end-user-report-filter/power-bi-filter-icon.png). Vælg filterikonet for at se et pop op-vindue med alle de filtre, udsnitsværktøjer m.m., der påvirker den pågældende visualisering. Filtrene i pop op-vinduet er de samme filtre, som vises i ruden **Filtre**.
+Hvis du vil se nærmere på de filtre, der anvendes på en bestemt visualisering, skal du holde markøren over visualiseringen for at få vist filterikonet ![Skærmbillede af filterikonet](media/end-user-report-filter/power-bi-filter-icon.png). Vælg filterikonet for at se et pop op-vindue med alle de filtre, udsnitsværktøjer m.m., der påvirker den pågældende visualisering. Filtrene i pop op-vinduet indeholder de samme filtre, der vises i ruden **Filtre**, samt yderligere filtrering, der påvirker den valgte visualisering.
 
-![Skærmbillede af en liste over filtre med pile, der peger på de steder, hvor filtrene vises i ruden Filtre.](media/end-user-report-filter/power-bi-hover-visual-filter.png)
+![Skærmbillede af en liste over filtre med pile, der peger på de steder, hvor filtrene vises i ruden Filtre.](media/end-user-report-filter/power-bi-hover-filters.png)
 
 Her er de filtertyper, der kan vises i denne visning:
 
 - Grundlæggende filtre
-
 - Udsnit
-
 - Tværgående fremhævning
-
 - Tværgående filtrering
-
 - Avancerede filtre
-
 - Top N-filtre
-
 - Filtre for Relativ dato
-
 - Udsnitsværktøjer til synkronisering
-
 - Filtre for Inkluder/Ekskluder
-
 - Filtre sendt via en URL-adresse
 
-I eksemplet kan vi følgende:
+I dette eksempel:
+1. **Inkluderet** fortæller os, at visualiseringen er krydsfiltreret. Det betyder, at staterne Utah, Colorado og Texas er valgt i en af de andre visualiseringer på denne rapportside. I dette tilfælde er det kortet. Valget af disse tre stater har forhindret, at data for alle andre stater vises i det valgte søjlediagram.  
 
-1. Søjlediagrammet har tværgående filtrering.
+1. **Dato** er et filter, der anvendes på alle sider i denne rapport, og
 
-1. **Inkluderet** fortæller os, at den tværgående filtrering gælder for **Segment**, og at der er tre inkluderet.
+1. **Område er Central** og **År er 2014** er filtre, der er anvendt på denne rapport side, og
 
-1. Der er anvendt et udsnit på **Kvartal**.
+4. **Producent er VanArsdel, Natura, Aliqui eller Pirum** er et filter, der er anvendt på denne visualisering.
 
-1. **Område** er et filter, der er anvendt på denne rapportside, og
-
-1. **isVanArsdel** og **År** er filtre, der anvendes på denne visualisering.
-
-![Skærmbillede af en rapport og dens filtre, hvor listen over filtre er nummereret, så de matcher ovenstående nummererede liste.](media/end-user-report-filter/power-bi-visual-pop-up.png)
 
 ### <a name="search-in-a-filter"></a>Søg i et filter
 
 Et filter kan nogle gange have en lang liste over værdier. Brug søgefeltet til at søge efter og vælge den ønskede værdi.
 
-![Skærmbillede af, hvordan du kan søge i et filter.](media/end-user-report-filter/power-bi-fiter-search.png)
+![Skærmbillede af, hvordan du kan søge i et filter.](media/end-user-report-filter/power-bi-search.png)
 
 ### <a name="display-filter-details"></a>Vis filteroplysninger
 
 Hvis du vil forstå et filter, kan du se nærmere på de tilgængelige værdier og antal.  Få vist oplysninger om filteret ved at holde markøren over det og vælge pilen ud for filterets navn.
   
-![Skærmbillede af et filter, der viser det vestlige område som valgt.](media/end-user-report-filter/power-bi-expand-filter.png)
+![Skærmbillede af et filter, der viser det vestlige område som valgt.](media/end-user-report-filter/power-bi-filter-expand.png)
 
 ### <a name="change-filter-selections"></a>Rediger filtervalg
 
-En metode til at søge efter dataindsigt er at interagere med filtrene. Du kan ændre filtervalg ved hjælp af rullepilen ud for feltets navn.  Afhængigt af det filter og den datatype, der filtreres i Power BI, vil dine muligheder variere fra enkle valg på en liste til at angive dato- eller talområder. I det avancerede filter nedenfor har vi ændret filteret **Antal enheder i alt ÅTD** på træstrukturen til at være mellem 2.000 og 3.000. Bemærk, at denne ændring fjerner Prirum fra træstrukturen.
+En metode til at søge efter dataindsigt er at interagere med filtrene. Du kan ændre filtervalg ved hjælp af rullepilen ud for feltets navn.  Afhængigt af det filter og den datatype, der filtreres i Power BI, vil dine muligheder variere fra enkle valg på en liste til at angive dato- eller talområder. I det avancerede filter nedenfor har vi ændret filteret **Antal enheder i alt ÅTD** på træstrukturen til at være mellem 2.000 og 3.000. Bemærk, at Pirum fjernes fra træstrukturen med denne ændring.
   
-![Skærmbillede af en rapport og dens filtre, der viser Fashions Direct som valgt.](media/end-user-report-filter/power-bi-filter-treemap.png)
+![Skærmbillede af en rapport og dens filtre, der viser, at en træstrukturvisualisering er valgt.](media/end-user-report-filter/power-bi-treemap-filters.png)
 
 > [!TIP]
 > Hvis du vil vælge mere end én filterværdi ad gangen, skal du holde CTRL-tasten nede. De fleste filtre understøtter valg af flere værdier.
@@ -121,11 +110,13 @@ En metode til at søge efter dataindsigt er at interagere med filtrene. Du kan �
 
 Hvis du vil annullere alle ændringer du har foretaget i filtrene, skal du vælge **Nulstil til standard** fra den øverste menulinje.  Med dette valg vender filtrene tilbage til deres oprindelige tilstand, som var angivet af rapportens designer.
 
-![Skærmbillede af indstillingen Nulstil til standard.](media/end-user-report-filter/power-bi-reset.png)
+![Skærmbillede af indstillingen Nulstil til standard.](media/end-user-report-filter/power-bi-reset-icon.png)
 
 ### <a name="clear-a-filter"></a>Ryd et filter
 
-Hvis der kun er ét filter, du vil angive til **(Alle)** , kan du rydde det ved at vælge viskelæderikonet ![Skærmbillede af viskelæderikonet](media/end-user-report-filter/power-bi-eraser-icon.png). ud for filterets navn.
+Hvis du vil nulstille et filter til (Alle), skal du rydde det ved at vælge viskelæderikonet ud for navnet på filteret.
+
+![Skærmbillede af viskelæderikonet.](media/end-user-report-filter/power-bi-eraser.png)
   
 <!--  too much detail for consumers
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 11/16/2018
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 6d0c4a2dba1dee1c8c40da8fd3371767915729da
-ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.openlocfilehash: c32f4b0a03ba751d5b8cbd6e98633275ece9222b
+ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490314"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70877800"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration af Power BI – ofte stillede spørgsmål
 
@@ -119,7 +119,7 @@ Get-MsolCompanyInformation | fl allow*
 
 ### <a name="how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi"></a>Hvordan kan jeg forhindre mine eksisterne brugere i at begynde at bruge Power BI?
 
-Den Azure AD-indstilling, der styrer dette, er **AllowAdHocSubscriptions**. For de fleste lejere er denne indstilling angivet som sand, hvilket betyder, at den er aktiveret. Hvis du har købt Power BI via en partner, kan indstillingen være angivet som falsk, hvilket betyder, at den er deaktiveret.
+Den Azure AD-indstilling, der styrer dette, er **AllowAdHocSubscriptions**. For de fleste lejere er denne indstilling angivet til *sand*, hvilket betyder, at den er aktiveret. Hvis du har fået Power BI via en partner, kan indstillingen være angivet til *falsk*, hvilket betyder, at den er deaktiveret.
 
 Brug følgende PowerShell-script til at deaktivere ad hoc-abonnementer. ([Få mere at vide om PowerShell][1].)
 
@@ -145,7 +145,7 @@ Brug følgende PowerShell-script til at deaktivere ad hoc-abonnementer. ([Få me
     ```
 
 > [!NOTE]
-> Brug flaget **AllowAdHocSubscriptions** til at kontrollere flere brugeregenskaber i organisationen, herunder muligheden for at brugere kan tilmelde sig Azure Rights Management Service. Alle disse egenskaber påvirkes, hvis flaget ændres.
+> Brug flaget **AllowAdHocSubscriptions** til at kontrollere flere brugeregenskaber i organisationen, herunder muligheden for at brugere kan tilmelde sig Azure Rights Management Service. Alle disse egenskaber påvirkes, hvis flaget ændres. Med indstillingen *falsk* kan brugerne stadig tilmelde sig en Pro-prøveversion.
 
 ### <a name="how-can-i-allow-my-existing-users-to-sign-up-for-power-bi"></a>Hvordan kan jeg tillade mine eksisterende brugere at tilmelde sig Power BI?
 

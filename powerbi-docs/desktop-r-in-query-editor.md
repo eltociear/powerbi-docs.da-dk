@@ -1,6 +1,6 @@
 ---
 title: Brug R i Forespørgselseditor i Power BI
-description: Brug R i Forespørgselseditor i Power BI Desktop til avancerede analyser
+description: Brug R i Power BI Desktop-forespørgselseditoren til avancerede analyser
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/14/2019
+ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e2a970ecbf7b341d4feaba4e90a862841ba8bb17
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: b64b4b736291ce1c3bde02010b7e583a0c3dc406
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560910"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70841519"
 ---
 # <a name="use-r-in-query-editor"></a>Brug R i Forespørgselseditor
 
@@ -85,6 +85,9 @@ For at demonstrere brug af **R** i **Forespørgselseditor** bruger vi et datasæ
        output$completedValues <- completedData$"SMI missing values"
     ```
 
+    > [!NOTE]
+    > Det kan være nødvendigt at overskrive en variabel kaldet *output* for at oprette det nye datasæt med filtrene anvendt.
+
 7. Når du har trykket på **OK**, vises en advarsel om beskyttelse af personlige data i **Forespørgselseditor**.
 
    ![](media/desktop-r-in-query-editor/r-in-query-editor_6.png)
@@ -94,7 +97,7 @@ For at demonstrere brug af **R** i **Forespørgselseditor** bruger vi et datasæ
 
    Når du har valgt **Gem**, kører scriptet. Bemærk den nye kolonne i ruden **Felter** ved navn **completedValues**. Bemærk, at der mangler et par dataelementer, f.eks. i række 15 og 18. Se, hvordan R håndterer dette, i næste afsnit.
 
-   Med blot fem linjer R-script udfyldte **Forespørgselseditor** de manglende værdier med en forudsigende model.
+   Med blot fem linjer R-script udfyldte **Forespørgselseditoren** de manglende værdier med en forudsigende model.
 
 ## <a name="create-visuals-from-r-script-data"></a>Opret visualiseringer på baggrund af data fra R-scripts
 
@@ -115,7 +118,7 @@ Når du har uploadet .pbix-filen til Power BI-tjenesten, skal du udføre yderlig
 
 ## <a name="limitations"></a>Begrænsninger
 
-Der er nogle begrænsninger til forespørgsler, der indeholder R-scripts, der er oprettet i **Forespørgselseditor**:
+Der er nogle begrænsninger til forespørgsler, der indeholder R-scripts, der er oprettet i **Forespørgselseditoren**:
 
 * Alle indstillinger for R-datakilden skal angives til **Offentlige**. Alle andre trin i **Forespørgselseditor** skal også være offentlige. Du henter indstillinger for datakilden ved at vælge **Filer > Indstillinger > Indstillinger for datakilde** i **Power BI Desktop**.
 

@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/12/2019
+ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 0bb8d796af5139cd89f4bdfa0a8da10603acb2ed
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 5385512e534d866a2474fd4e3def10f45d52a1a0
+ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530573"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70903971"
 ---
 # <a name="create-classic-workspaces-in-power-bi"></a>Opret klassiske arbejdsområder i Power BI
 
@@ -23,53 +23,49 @@ I Power BI kan du oprette *arbejdsområder*, som er steder, hvor du kan samarbej
 
 **Vidste du det?** Power BI tilbyder en ny arbejdsområdeoplevelse, som nu er standard. Læs [Organiser arbejde i de nye arbejdsområder](service-new-workspaces.md) for at få oplysninger om de nye arbejdsområder. 
 
-Når du opretter et klassisk arbejdsområde, opretter du en underliggende tilknyttet Office 365-gruppe. Al administration af arbejdsområder foregår i Office 365. Du kan føje kollegaer til disse arbejdsområder som medlemmer eller administratorer. I arbejdsområdet kan alle samarbejde i dashboards, rapporter og andre artikler, som du vil publicere til en større målgruppe. Alle de brugere, du føjer til et apparbejdsområde, skal have en Power BI Pro-licens. 
+Når du opretter et klassisk arbejdsområde, opretter du en underliggende tilknyttet Office 365-gruppe. Al administration af arbejdsområder foregår i Office 365. Du kan føje kollegaer til disse arbejdsområder som medlemmer eller administratorer. I arbejdsområdet kan alle samarbejde i dashboards, rapporter og andre artikler, som du vil publicere til en større målgruppe. Alle de brugere, du føjer til et arbejdsområde, skal have en Power BI Pro-licens. 
 
-## <a name="video-apps-and-app-workspaces"></a>Video: Apps og apparbejdsområder
+## <a name="video-apps-and-workspaces"></a>Video: Apps og arbejdsområder
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Ey5pyrr7Lk8?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-## <a name="create-a-classic-app-workspace-based-on-an-office-365-group"></a>Opret et klassisk apparbejdsområde på baggrund af en Office 365-gruppe
+## <a name="create-a-classic-workspace-based-on-an-office-365-group"></a>Opret et klassisk arbejdsområde på baggrund af en Office 365-gruppe
 
-Når du opretter et apparbejdsområde, oprettes det ud fra en Office 365-gruppe.
+Når du opretter et arbejdsområde, oprettes det ud fra en Office 365-gruppe.
 
 [!INCLUDE [powerbi-service-create-app-workspace](./includes/powerbi-service-create-app-workspace.md)]
 
 Bemærk, at når du opretter arbejdsområdet første gang, skal du muligvis vente omkring en time, før det er overført til Office 365. 
 
-### <a name="add-an-image-to-your-office-365-app-workspace-optional"></a>Føj et billede til dit Office 365-apparbejdsområde (valgfrit)
+### <a name="add-an-image-to-your-office-365-workspace-optional"></a>Føj et billede til dit Office 365-arbejdsområde (valgfrit)
 Power BI opretter som standard en lille farvet cirkel for din app med appens forbogstaver. Det kan også være, at du vil tilpasse den med et billede. Hvis du vil tilføje et billede, skal du have en Exchange Online-licens.
 
 1. Vælg **Arbejdsområder**, vælg de tre prikker (...) ud for navnet på arbejdsområdet og derefter **Medlemmer**. 
    
-     ![Vælg medlemmer af arbejdsområdet](media/service-create-distribute-apps/power-bi-apps-workspace-members.png)
+     ![Vælg medlemmer af arbejdsområdet](media/service-create-workspaces/power-bi-workspace-old-members.png)
    
     Outlook til Office 365-kontoen til arbejdsområdet åbnes i et nyt browservindue.
-2. Når du holder over den farvede cirkel øverst til venstre, bliver den til et blyantsikon. Vælg det.
+2. Vælg blyanten **Rediger**.
    
-     ![Office 365-blyantsikon](media/service-create-distribute-apps/power-bi-apps-workspace-edit-image.png)
-3. Vælg blyantsikonet igen, og find det billede, du vil bruge.
+     ![Office 365-blyantsikon](media/service-create-workspaces/power-bi-workspace-old-edit-group.png)
+3. Vælg kameraikonet, og find det billede, du vil bruge.
    
-     ![Vælg blyanten igen](media/service-create-distribute-apps/power-bi-apps-workspace-edit-group.png)
+     ![Vælg kameraikonet](media/service-create-workspaces/power-bi-workspace-old-camera.png)
 
      Billeder kan være .png-, .jpg- eller .bmp-filer. Filstørrelsen kan være stor – op til 3 MB. 
 
-4. Vælg **Gem**.
-   
-     ![Vælg Gem](media/service-create-distribute-apps/power-bi-apps-workspace-save-image.png)
+4. Vælg **OK** og derefter **Gem**.
    
     Billedet erstatter den farvede cirkel i Office 365 Outlook-vinduet. 
    
-     ![Tilpasset billede](media/service-create-distribute-apps/power-bi-apps-workspace-image-in-office-365.png)
+     ![Tilpasset billede](media/service-create-workspaces/power-bi-workspace-old-new-image.png)
    
     Efter nogle få minutter vises det også i appen i Power BI.
-   
-     ![Tilpasset billede](media/service-create-distribute-apps/power-bi-apps-image.png)
 
-## <a name="add-content-to-your-app-workspace"></a>Føj indhold til dit apparbejdsområde
+## <a name="add-content-to-your-workspace"></a>Føj indhold til dit arbejdsområde
 
-Når du har oprettet et apparbejdsområde, skal du føje indhold til det. Det foregår på samme måde, som når du føjer indhold til Mit arbejdsområde, bortset fra at andre personer i arbejdsområdet også kan se det og arbejde med det. Den store forskel er, at når du er færdig, kan du publicere indholdet som en app. Når du får vist indhold på indholdslisten for et apparbejdsområde, vises navnet på apparbejdsområdet som ejeren.
+Når du har oprettet et arbejdsområde, skal du føje indhold til det. Det foregår på samme måde, som når du føjer indhold til Mit arbejdsområde, bortset fra at andre personer i arbejdsområdet også kan se det og arbejde med det. Den store forskel er, at når du er færdig, kan du publicere indholdet som en app. Når du får vist indhold på indholdslisten for et arbejdsområde, vises navnet på arbejdsområdet som ejeren.
 
-### <a name="connect-to-third-party-services-in-app-workspaces"></a>Opret forbindelse til tredjepartstjenester i apparbejdsområder
+### <a name="connect-to-third-party-services-in-workspaces"></a>Opret forbindelse til tredjepartstjenester i arbejdsområder
 
 Apps leveres til alle de tredjepartstjenester, som Power BI understøtter, hvilket gør det nemt for dig at hente data fra de tjenester, du bruger, f.eks. Microsoft Dynamics CRM, Salesforce eller Google Analytics. Du kan publicere organisationsapps for at give dine brugere de data, de har brug for.
 
@@ -96,7 +92,7 @@ Apps er en udviklet form af organisationsindholdspakker. Hvis du allerede har or
 * Vi vil over tid fraråde organisationsindholdspakker, og vi anbefaler derfor, at du begynder at oprette apps fra nu af.  
 * Med den nye prøveversion af arbejdsområdeoplevelsen tager vi det første skridt mod udfasning af organisationsindholdspakker. Du kan ikke forbruge eller oprette dem i arbejdsområder i prøveversion.
 
-Se [Sådan adskiller de nye apparbejdsområder sig fra eksisterende apparbejdsområder](service-new-workspaces.md#how-the-new-workspaces-are-different) for at sammenligne de to. 
+Se [Sådan adskiller de nye arbejdsområder sig fra eksisterende arbejdsområder](service-new-workspaces.md#how-the-new-workspaces-are-different) for at sammenligne de to. 
 
 ## <a name="next-steps"></a>Næste trin
 * [Installér og brug apps i Power BI](service-create-distribute-apps.md)

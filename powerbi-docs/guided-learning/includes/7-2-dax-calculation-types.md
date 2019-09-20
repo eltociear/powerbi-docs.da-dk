@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6ed1690ec77880467007200c30038d185c98d6c2
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f4043a5a8deac0596b58519183988f6ae574458e
+ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273232"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70847670"
 ---
 Der er to primære beregninger, som du kan oprette ved hjælp af DAX:
 
@@ -26,7 +26,7 @@ Det følgende billede viser en DAX-formel, som oprettes i Power BI:
 
 ![](media/7-2-dax-calculation-types/dax-calc-types_1.png)
 
-Du kan også udelade tabelnavnet helt og blot bruge kolonnenavnet, men det er dårlig praksis for skrivning af tydelige funktioner (og dermed for tydelig DAX-kode). Kolonnenavne skal altid indeholde kantede parenteser.
+Du kan også udelade tabelnavnet helt og blot bruge kolonnenavnet, men dette er ikke bedste praksis for at skrive tydelige funktioner (og dermed tydelig DAX-kode). Kolonnenavne skal altid indeholde kantede parenteser.
 
 Det er bedste praksis *altid* gøre følgende:
 

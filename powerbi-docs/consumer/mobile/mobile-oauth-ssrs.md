@@ -9,23 +9,25 @@ ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/03/2019
-ms.openlocfilehash: 7067d4c7fdc3fc328db417e5d6733569ecc7be01
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 59c376afd384812473d3175df992c628ae5049ca
+ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567824"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "70903648"
 ---
 # <a name="using-oauth-to-connect-to-power-bi-report-server-and-ssrs"></a>Brug OAuth til at oprette forbindelse til Power BI-rapportserver og SSRS
 
-Få mere at vide om, hvordan du konfigurerer dit miljø til at understøtte OAuth-godkendelse med Power BI-mobilappen for at oprette forbindelse til Power BI-rapportserver og SQL Server Reporting Services 2016 eller nyere.
+Du kan bruge OAuth til at oprette forbindelse til Power BI-rapportserver og Reporting Services for at få vist mobilrapporter eller KPI'er. Få mere at vide om, hvordan du konfigurerer dit miljø til at understøtte OAuth-godkendelse med Power BI-mobilappen for at oprette forbindelse til Power BI-rapportserver og SQL Server Reporting Services 2016 eller nyere.
 
-![Opret forbindelse til en server](media/mobile-oauth-ssrs/powerbi-mobile-oauth.png)
+Se, hvordan Adam opretter forbindelse fra Power BI Mobile til SSRS ved hjælp af OAuth:
 
-Du kan bruge OAuth til at oprette forbindelse til Power BI-rapportserver og Reporting Services for at få vist mobilrapporter eller KPI'er. Windows Server 2016 indeholder forbedringer til rollen Web Application Proxy (WAP) for at tillade denne type godkendelse.
 
-   > [!NOTE]
-   > Visning af Power BI-rapporter, der hostes på Power BI-rapportserver ved hjælp af WAP-godkendelse, understøttes nu til iOS- og Android-apps.
+<iframe width="560" height="350" src="https://www.youtube.com/embed/okzPAI2uUek" frameborder="0" allowfullscreen></iframe>
+
+
+> [!NOTE]
+> Visning af Power BI-rapporter, der hostes på Power BI-rapportserver ved hjælp af WAP-godkendelse, understøttes nu til iOS- og Android-apps.
 
 ## <a name="requirements"></a>Krav
 
@@ -33,23 +35,23 @@ Windows Server 2016 er påkrævet til WAP- (Web Application Proxy) og ADFS-serve
 
 ## <a name="domain-name-services-dns-configuration"></a>Konfiguration af DNS (Domain Name Services)
 
-Du skal bestemme den offentlige URL-adresse, som Power BI-mobilappen skal oprette forbindelse til. Den kan f.eks. se ud som følger.
+Den offentlige URL-adresse er den adresse, som Power BI-mobilappen opretter forbindelse til. Den kan f.eks. se ud som følger.
 
 ```https
 https://reports.contoso.com
 ```
 
-Du skal pege din DNS-post for **rapporter** mod den offentlige IP-adresse på WAP-serveren (Web Application Proxy). Du skal også konfigurere en offentlig DNS-post til din ADFS-server. Du kan f.eks. konfigurere ADFS-serveren med følgende URL-adresse.
+Din DNS-post for **rapporter** peger på den offentlige IP-adresse for WAP-serveren (Web Application Proxy). Du skal også konfigurere en offentlig DNS-post for din ADFS-server. Du kan f.eks. konfigurere ADFS-serveren med følgende URL-adresse.
 
 ```https
 https://fs.contoso.com
 ```
 
-Du skal pege din DNS-post for **fs** mod den offentlige IP-adresse på WAP-serveren (Web Application Proxy), da den udgives som en del af WAP-programmet.
+Din DNS-post for **fs** peger på den offentlige IP-adresse for WAP-serveren (Web Application Proxy), da den udgives som en del af WAP-programmet.
 
 ## <a name="certificates"></a>Certifikater
 
-Du skal konfigurere certifikater til både WAP-programmet og ADFS-serveren. Begge disse certifikater skal være en del af et gyldigt nøglecenter, som kan genkendes af dine mobilenheder.
+Du skal konfigurere certifikater for både WAP-programmet og ADFS-serveren. Begge disse certifikater skal være en del af et gyldigt nøglecenter, som kan genkendes af dine mobilenheder.
 
 ## <a name="reporting-services-configuration"></a>Konfiguration af Reporting Services
 
@@ -57,13 +59,13 @@ Der er ikke meget, der skal konfigureres på Reporting Services-siden. Vi skal b
 
 ### <a name="service-principal-name-spn"></a>Tjenestens hovednavn
 
-Tjenestens hovednavn er et entydigt id for en tjeneste, der bruger Kerberos-godkendelse. Du skal sikre dig, at du har en korrekt HTTP-SPN til rapportserveren.
+Tjenestens hovednavn er et entydigt id for en tjeneste, der bruger Kerberos-godkendelse. Du skal sikre, at du har et korrekt HTTP-hovednavn for tjenesten for rapportserveren.
 
 Du kan finde oplysninger om, hvordan du konfigurerer det korrekte hovednavn for tjenesten for rapportserveren, under [Registrer et hovednavn for tjenesten for en rapportserver](https://msdn.microsoft.com/library/cc281382.aspx).
 
 ### <a name="enabling-negotiate-authentication"></a>Aktivering af forhandling af godkendelse
 
-Hvis du vil aktivere, at en rapportserver kan bruge Kerberos-godkendelse, skal du konfigurere, at godkendelsestypen for rapportserveren er RSWindowsNegotiate. Du gør dette i filen rsreportserver.config.
+Hvis du vil gøre det muligt, at en rapportserver kan bruge Kerberos-godkendelse, skal du konfigurere, at godkendelsestypen for rapportserveren er RSWindowsNegotiate. Du gør dette i filen rsreportserver.config.
 
 ```xml
 <AuthenticationTypes>  
@@ -77,15 +79,15 @@ Du kan finde flere oplysninger under [Rediger en Reporting Services-konfiguratio
 
 ## <a name="active-directory-federation-services-adfs-configuration"></a>Konfigurationen af ADFS (Active Directory Federation Services)
 
-Du skal konfigurere ADFS på en Windows-2016-server i dit miljø. Det gør du via Serverstyring ved at vælge Tilføj roller og funktioner under Administrer. Du kan finde flere oplysninger under [Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services).
+Du skal konfigurere ADFS på en Windows 2016-server i dit miljø. Konfigurationen kan udføres via Server Manager og ved at vælge Tilføj roller og funktioner under Administrer. Du kan finde flere oplysninger under [Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/active-directory-federation-services).
 
 ### <a name="create-an-application-group"></a>Opret en programgruppe
 
-På ADFS Management-skærmbilledet opretter du en programgruppe til Reporting Services, som indeholder oplysninger til Power BI-mobilapps.
+På ADFS Management-skærmen skal du oprette en programgruppe til Reporting Services, som indeholder oplysninger til appsene til Power BI – Mobil.
 
 Du kan oprette programgruppen vha. følgende trin.
 
-1. I ADFS Management-appen skal du højreklikke på **Programgrupper** og vælge **Tilføj programgruppe...**
+1. I ADFS Management-appen skal du højreklikke på **Programgrupper** og vælge **Tilføj programgruppe…**
 
    ![Tilføj program i ADFS](media/mobile-oauth-ssrs/adfs-add-application-group.png)
 
@@ -107,7 +109,7 @@ Du kan oprette programgruppen vha. følgende trin.
    mspbi-adal://com.microsoft.powerbimobile  
    mspbi-adalms://com.microsoft.powerbimobilems
 
-   **Android-apps skal kun bruge følgende:**  
+   **Der skal kun bruges følgende trin til Android-apps:**  
    urn:ietf:wg:oauth:2.0:oob
 
    ![ADFS Application Group Wizard 02](media/mobile-oauth-ssrs/adfs-application-group-wizard2.png)
@@ -141,7 +143,7 @@ Når du er færdig, kan du se, at egenskaberne for programgruppen ligner følgen
 
 ## <a name="web-application-proxy-wap-configuration"></a>Konfiguration af WAP (Web Application Proxy)
 
-Du vil aktivere Windows-rollen Web Application Proxy på en server i dit miljø. Det skal ske på en Windows 2016-server. Du kan finde flere oplysninger under [Web Application Proxy i Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server) og [Publicering af programmer vha. ADFS-forhåndsgodkendelse](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
+Du skal aktivere Windows-rollen Web Application Proxy (rolle) på en server i dit miljø. Det skal ske på en Windows 2016-server. Du kan finde flere oplysninger under [Web Application Proxy i Windows Server 2016](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/web-application-proxy-windows-server) og [Publicering af programmer vha. ADFS-forhåndsgodkendelse](https://technet.microsoft.com/windows-server-docs/identity/web-application-proxy/publishing-applications-using-ad-fs-preauthentication#a-namebkmk14apublish-an-application-that-uses-oauth2-such-as-a-windows-store-app).
 
 ### <a name="constrained-delegation-configuration"></a>Konfiguration af begrænset delegering
 
@@ -149,11 +151,11 @@ Hvis du vil skifte fra OAuth-godkendelse til Windows-godkendelse, skal du bruge 
 
 Vi skal konfigurere begrænset delegering på WAP-serverens maskinkonti i Active Directory. Du skal muligvis samarbejde med en domæneadministrator, hvis du ikke har adgang til Active Directory.
 
-Du skal benytte følgende fremgangsmåde for at konfigurere begrænset delegering.
+Du skal udføre følgende trin for at konfigurere begrænset delegering.
 
 1. Start **Active Directory-brugere og -computere** på en computer, hvor Active Directory-værktøjerne er installeret.
 
-2. Find maskinkontoen for WAP-serveren. Som standard er den i computerens objektbeholder.
+2. Find maskinkontoen for WAP-serveren. Den findes som standard i computerens objektbeholder.
 
 3. Højreklik på WAP-serveren, og gå til **Egenskaber**.
 
@@ -171,7 +173,7 @@ Du skal benytte følgende fremgangsmåde for at konfigurere begrænset delegerin
 
 7. Vælg **Brugere eller computere...**
 
-8. Angiv den tjenestekonto, du bruger til Reporting Services. Det er den konto, du føjede tjenestens hovednavn til under konfigurationen af Reporting Services.
+8. Angiv den tjenestekonto, du bruger til Reporting Services. Denne konto er den konto, du føjede tjenestens hovednavn til under konfigurationen af Reporting Services.
 
 9. Vælg tjenestens hovednavn for Reporting Services, og vælg derefter **OK**.
 
@@ -196,14 +198,14 @@ Add-WebApplicationProxyApplication -Name "Contoso Reports" -ExternalPreauthentic
 
 | Parameter | Kommentarer |
 | --- | --- |
-| **ADFSRelyingPartyName** |Dette er det web-API-navn, du oprettede som en del af programgruppen i ADFS. |
-| **ExternalCertificateThumbprint** |Dette er det certifikat, der skal bruges til eksterne brugere. Det er vigtigt, at certifikatet er gyldigt på mobilenheder og stammer fra et nøglecenter, der er tillid til. |
-| **BackendServerUrl** |Dette er URL-adressen til rapportserveren fra WAP-serveren. Hvis WAP-serveren er i en DMZ, skal du bruge et fuldt domænenavn. Kontrollér, at du kan få forbindelse til denne URL-adresse via webbrowseren på WAP-serveren. |
-| **BackendServerAuthenticationSPN** |Dette er det hovednavn for tjenesten, du oprettede som en del af Reporting Services-konfigurationen. |
+| **ADFSRelyingPartyName** |Det Web API-navn, du oprettede som en del af Programgruppen i ADFS. |
+| **ExternalCertificateThumbprint** |Det certifikat, der skal bruges til eksterne brugere. Det er vigtigt, at certifikatet er gyldigt på mobilenheder og stammer fra et nøglecenter, der er tillid til. |
+| **BackendServerUrl** |URL-adressen til rapportserveren fra WAP-serveren. Hvis WAP-serveren er på et perimeternetværk, skal du bruge et fuldt domænenavn. Kontrollér, at du kan få forbindelse til denne URL-adresse via webbrowseren på WAP-serveren. |
+| **BackendServerAuthenticationSPN** |Det hovednavn for tjenesten, du oprettede som en del af konfigurationen af Reporting Services. |
 
 ### <a name="setting-integrated-authentication-for-the-wap-application"></a>Angivelse af integreret godkendelse for WAP-programmet
 
-Når du har tilføjet WAP-programmet, skal du angive, at BackendServerAuthenticationMode skal bruge IntegratedWindowsAuthentication. Hvis du vil angive dette, skal du bruge id'et fra WAP-programmet.
+Når du har tilføjet WAP-programmet, skal du angive, at BackendServerAuthenticationMode skal bruge IntegratedWindowsAuthentication. Du skal bruge id'et fra WAP-programmet for at angive det.
 
 ```powershell
 Get-WebApplicationProxyApplication “Contoso Reports” | fl
@@ -221,7 +223,7 @@ Set-WebApplicationProxyApplication -id 30198C7F-DDE4-0D82-E654-D369A47B1EE5 -Bac
 
 ## <a name="connecting-with-the-power-bi-mobile-app"></a>Oprettelse af forbindelse vha. Power BI-mobilappen
 
-I Power BI-mobilappen skal du oprette forbindelse til Reporting Services-instansen. Det gør du ved at angive den **eksterne URL-adresse** for WAP-programmet.
+I Power BI-mobilappen skal du oprette forbindelse til forekomsten af Reporting Services. Det gør du ved at angive den **eksterne URL-adresse** for WAP-programmet.
 
 ![Skriv serveradressen](media/mobile-oauth-ssrs/powerbi-mobile-app1.png)
 
@@ -241,9 +243,9 @@ Du kan aktivere multifaktorgodkendelse for at aktivere yderligere sikkerhed for 
 
 ![Fejlen "Der kunne ikke logges på SSRS-serveren"](media/mobile-oauth-ssrs/powerbi-mobile-error.png)
 
-Du kan konfigurere, at [Fiddler](http://www.telerik.com/fiddler) skal fungere som en proxy for dine mobilenheder, for at se, hvor langt anmodningen er kommet. Hvis du vil aktivere en Fiddler-proxy for telefonen, skal du konfigurere [CertMaker til iOS og Android](http://www.telerik.com/fiddler/add-ons) på den computer, der kører Fiddler. Dette er et tilføjelsesprogram fra Telerik til Fiddler.
+Du kan konfigurere, at [Fiddler](http://www.telerik.com/fiddler) skal fungere som en proxy for dine mobilenheder, for at se, hvor langt anmodningen er kommet. Hvis du vil aktivere en Fiddler-proxy for din telefon, skal du konfigurere [CertMaker til iOS og Android](http://www.telerik.com/fiddler/add-ons) på den computer, der kører Fiddler. Tilføjelsesprogrammet er fra Telerik til Fiddler.
 
-Hvis det lykkes at logge på vha. Fiddler, kan det være, at du har et certifikatproblem med enten WAP-programmet eller ADFS-serveren. Du kan bruge et værktøj som f.eks. [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) til at kontrollere, om certifikaterne er gyldige.
+Hvis det lykkes at logge på ved hjælp af Fiddler, oplever du måske et certifikatproblem med enten WAP-programmet eller ADFS-serveren. Du kan bruge et værktøj som f.eks. [Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) til at kontrollere, om certifikaterne er gyldige.
 
 ## <a name="next-steps"></a>Næste trin
 

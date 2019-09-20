@@ -269,6 +269,8 @@
               href: desktop-inline-hierarchy-labels.md
             - name: Brug det numeriske interval-udsnitsværktøj
               href: desktop-slicer-numeric-range.md
+            - name: Brug det relative dato-udsnitsværktøj
+              href: desktop-slicer-filter-date-range.md
             - name: 'Opret et udsnit, du kan tilpasse størrelsen på'
               href: power-bi-slicer-filter-responsive.md
             - name: Opret brugerdefinerede svarkort til Cortana
