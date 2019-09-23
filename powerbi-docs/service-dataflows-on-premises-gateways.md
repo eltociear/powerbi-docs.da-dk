@@ -10,22 +10,19 @@ ms.topic: conceptual
 ms.date: 12/06/2018
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 82c8bbb5361730b306cacd14dc9598ca12035027
-ms.sourcegitcommit: c8c126c1b2ab4527a16a4fb8f5208e0f7fa5ff5a
+ms.openlocfilehash: 81dfc6961ff0c00b609f98e50da3532a230cf26d
+ms.sourcegitcommit: 244d110b28d4978f360cbece3a7c896e1a645258
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54276462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61136139"
 ---
-# <a name="using-dataflows-with-on-premises-data-sources-preview"></a>Brug af dataflow med datakilder i det lokale miljø (prøveversion)
+# <a name="using-dataflows-with-on-premises-data-sources"></a>Brug af dataflow med datakilder i det lokale miljø
 
 Ved hjælp af **dataflow** kan du oprette en samling af data fra forskellige kilder, rense dataene, transformere dem og derefter indlæse dem i Power BI-lageret. Når du opretter et dataflow, kan du bruge datakilder i det lokale miljø. I denne artikel afklare de krav, der er forbundet med oprettelse af dataflow, og hvordan din **Enterprise Gateway** skal konfigureres for at aktivere disse forbindelser.
 
 ![Dataflow og gateways](media/service-dataflows-onpremises-gateways/onpremises-gateways_01.png)
 
-> [!NOTE]
-> Dataflowfunktionaliteten er tilgængelig som prøveversion og kan ændres og opdateres, før den bliver generelt tilgængelig.
- 
 ## <a name="configuring-an-enterprise-gateway-for-use-with-dataflows"></a>Konfiguration af en Enterprise Gateway til brug med dataflow
 
 Hvis du vil bruge en datakilde i det lokale miljø i et dataflow, skal de brugere, der opretter dataflowet, have en **Enterprise Gateway** installeret og konfigureret. Den bruger, der opretter dataflowet, skal også være administrator af den pågældende Enterprise Gateway for at kunne bruge den til et dataflow.
@@ -80,8 +77,8 @@ Denne artikel indeholder oplysninger om brug af datakilder i det lokale miljø t
 
 * [Selvbetjent dataforberedelse med dataflow](service-dataflows-overview.md)
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Brug af beregnede enheder i Power BI Premium (prøveversion)](service-dataflows-computed-entities-premium.md)
-* [Udviklerressourcer til Power BI-dataflow (prøveversion)](service-dataflows-developer-resources.md)
+* [Brug af beregnede objekter i Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Udviklerressourcer til Power BI-dataflow](service-dataflows-developer-resources.md)
 
 Du kan finde flere oplysninger om Power-forespørgsel og planlagt opdatering i disse artikler:
 * [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)

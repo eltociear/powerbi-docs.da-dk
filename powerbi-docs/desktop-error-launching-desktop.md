@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 19dc98b4f402176b2ae511236015ea25d7e4178b
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454420"
@@ -44,7 +44,7 @@ Når du starter som administrator og opretter forbindelse, registreres de påkr�
 ## <a name="help-with-other-issues-when-launching-power-bi-desktop"></a>Hjælp til andre problemer, når du starter Power BI Desktop
 Vi bestræber os på at dække så mange af de problemer, der kan opstå i forbindelse med **Power BI Desktop**, som muligt. Vi kigger jævnligt på problemer, der kan påvirke mange kunder, og inkluderer dem i vores artikler.
 
-Hvis problemet med at starte **Power BI Desktop** ikke er knyttet til datagatewayen i det lokale miljø, eller hvis tidligere løsninger ikke virker, kan du sende en supporthændelse til [Power BI-support](https://support.powerbi.com) (https://support.powerbi.com)) for at få hjælp til at identificere og løse problemet.
+Hvis problemet med at starte **Power BI Desktop** ikke er knyttet til datagatewayen i det lokale miljø, eller hvis tidligere løsninger ikke virker, kan du sende en supporthændelse til [Power BI-support](https://support.powerbi.com) (https://support.powerbi.com) ) for at få hjælp til at identificere og løse problemet.
 
 Hvis der fremover opstår andre problemer med **Power BI Desktop** (det håber vi ikke!), er det en god ide at aktivere sporing og indsamle logfiler, så vi bedre kan isolere og identificere problemet. Hvis du vil aktivere sporing, skal du vælge **Filer > Indstillinger > Indstillinger**, vælge **Diagnosticering** og derefter markere **Aktivér sporing** under *Indstillinger for diagnosticering*. Vi er klar over, at **Power BI Desktop** skal køre, for at du kan angive denne indstilling, som er mere nyttig, hvis der fremover opstår problemer med at starte **Power BI Desktop**.
 
