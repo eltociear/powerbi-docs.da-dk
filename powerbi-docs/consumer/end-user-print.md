@@ -5,19 +5,18 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/13/2019
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 02aed3d69ee5d6ce344138a57853bd0b2a06036b
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 4e211677026d66b89631063cf07e38ce1e46ee10
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608559"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100171"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Udskriv fra Power BI-tjenesten
 Udskriv et helt dashboard, et dashboardfelt, en rapportside eller en rapportvisualisering fra Power BI-tjenesten. Rapporter kan kun udskrives med én side ad gangen – du kan ikke udskrive hele rapporten på en gang.
@@ -34,7 +33,7 @@ Udskriv et helt dashboard, et dashboardfelt, en rapportside eller en rapportvisu
    
 
    
-    ![dialogboksen udskriv](./media/end-user-print/pbi_print_dash_new2.png)
+    ![dialogboksen udskriv](./media/end-user-print/power-bi-print-dash.png)
 
 ## <a name="print-a-dashboard-tile"></a>Udskriv et dashboardfelt
 1. Åbn dashboardet i [fuldskærmstilstand](end-user-focus.md) ved at vælge ikonet for fuld skærm ![fuldskærmsikon](./media/end-user-print/power-bi-full-screen-icon.png) på menulinjen foroven.

@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/08/2018
 ms.openlocfilehash: 6699167cecebea5085eff4621c077096fd4c6c2e
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61385137"
@@ -23,13 +23,13 @@ ms.locfileid: "61385137"
 * Maks. 75 kolonner
 * Maks. 75 tabeller
 * Maks. 10.000 rækker pr. enkelt anmodning om POST-rækker  
-* 1.000.000 rækker tilføjet pr. time pr. datasæt  
+* 1\.000.000 rækker tilføjet pr. time pr. datasæt  
 * Maks. 5 ventende anmodninger om POST-rækker pr. datasæt  
 * 120 anmodninger om POST-rækker pr. minut pr. datasæt
 * Hvis tabellen indeholder 250.000 rækker eller flere, 120 anmodninger om POST-rækker pr. time pr. datasæt
 * Maks. 200.000 rækker, der lagres pr. tabel i FIFO datasæt
 * Maks. 5.000.000 rækker, der lagres pr. tabel i 'none rentention policy'-datasæt  
-* 4.000 tegn pr. værdi for strengkolonne i POST-rækkehandling
+* 4\.000 tegn pr. værdi for strengkolonne i POST-rækkehandling
   
 ## <a name="see-also"></a>Se også
 

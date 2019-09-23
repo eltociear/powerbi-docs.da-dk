@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 4507490fc2986ec7934af4c9e7417585523c7a05
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61143343"
@@ -162,9 +162,9 @@ Det kan ske, at der opstår problemer med dataflowet, når der oprettes forbinde
 I denne artikel blev det beskrevet, hvordan du opretter dine egne **dataflow** og opretter et datasæt og en rapport i **Power BI Desktop**, hvor du kan drage fordel af det. Følgende artikler indeholder nyttige oplysninger og scenarier, når du bruger dataflow:
 
 * [Selvbetjent dataforberedelse med dataflow](service-dataflows-overview.md)
-* [Ved hjælp af den beregnede enheder på Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Ved hjælp af dataflows med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power BI dataflows](service-dataflows-developer-resources.md)
+* [Brug af beregnede objekter i Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Brug af dataflow med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI-dataflow](service-dataflows-developer-resources.md)
 * [Integration af dataflow og Azure Data Lake (prøveversion)](service-dataflows-azure-data-lake-integration.md)
 
 Du kan finde flere oplysninger om Common Data Model i denne oversigtsartikel:

@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 05/16/2019
-ms.openlocfilehash: ec70f4c9d6f3e6f51210a32f7efac7f160f462cb
-ms.sourcegitcommit: 24781cdab5fbe43fc14248db636169cc54ef6721
+ms.openlocfilehash: c5d35c1e7fef15c72314738c1d67f81656dc3101
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66498010"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073601"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Integrer med rapportwebdelen i SharePoint Online
 
@@ -157,7 +157,7 @@ Brugere, der ser en rapport i SharePoint, skal enten have en **Power BI Pro-lice
 
 * Power BI understøtter ikke de samme oversatte sprog som SharePoint Online. Derfor ser du muligvis ikke den korrekte oversættelse i den integrerede rapport.
 
-* Der kan opstå tekniske problemer, hvis du bruger Internet Explorer 10. Du kan se de [browsere, der understøttes af Power BI](consumer/end-user-browsers.md) og [Office 365](https://products.office.com/office-system-requirements#Browsers-section).
+* Der kan opstå tekniske problemer, hvis du bruger Internet Explorer 10. <!--You can look at the [browsers support for Power BI](consumer/end-user-browsers.md) and for [Office 365](https://products.office.com/office-system-requirements#Browsers-section). -->
 
 * Power BI-webdelen er ikke tilgængelig til [nationale cloudmiljøer](https://powerbi.microsoft.com/clouds/).
 

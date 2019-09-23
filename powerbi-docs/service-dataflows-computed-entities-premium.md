@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: ccd8569650bd4f3da1a05c0999ad510029e5ab49
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61137812"
@@ -85,8 +85,8 @@ I denne artikel beskrives beregnede objekter og dataflow, der er tilgængelige i
 
 * [Selvbetjent dataforberedelse med dataflow](service-dataflows-overview.md)
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Ved hjælp af dataflows med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power BI dataflows](service-dataflows-developer-resources.md)
+* [Brug af dataflow med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI-dataflow](service-dataflows-developer-resources.md)
 * [Konfigurer indstillinger for dataflow for et arbejdsområde (prøveversion)](service-dataflows-configure-workspace-storage-settings.md)
 * [Føj en CDM-mappe til Power BI som et dataflow (prøveversion)](service-dataflows-add-cdm-folder.md)
 * [Opret forbindelse til Azure Data Lake Storage Gen2 til dataflowlager (eksempelvisning)](service-dataflows-connect-azure-data-lake-storage-gen2.md)

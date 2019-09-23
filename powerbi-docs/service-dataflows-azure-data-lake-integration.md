@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 7532b0b381e43c6e413d27fa141c22e58dfba84e
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61150459"
@@ -84,9 +84,9 @@ Du kan finde flere oplysninger om dataflow, CDM og Azure Data Lake Storage Gen2 
 Du kan finde generelle oplysninger om dataflow i disse artikler:
 
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Ved hjælp af den beregnede enheder på Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Ved hjælp af dataflows med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power BI dataflows](service-dataflows-developer-resources.md)
+* [Brug af beregnede objekter i Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Brug af dataflow med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI-dataflow](service-dataflows-developer-resources.md)
 
 Du kan finde flere oplysninger om Azure-lager i disse artikler:
 * [Sikkerhedsvejledning til Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-security-guide)

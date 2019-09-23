@@ -11,7 +11,7 @@ ms.date: 3/5/2018
 ms.author: pashah
 ms.openlocfilehash: c479b2600dad31756101c57ba2b1c5fc7fa19b2f
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "60976729"
@@ -29,8 +29,8 @@ Under en topologi med fire servere i Power BI-rapportserver og en forventning om
 
 | Arbejdsbelastning | 8 kerner/32 GB RAM | 16 kerner/64 GB RAM |
 | --- | --- | --- |
-| **Power BI tung rapport** (>60 %) |1.000 brugere |3.000 brugere |
-| **Sideinddelt (RDL) tung rapport** (>60 %) |2.000 brugere |3.200 brugere |
+| **Power BI tung rapport** (>60 %) |1\.000 brugere |3\.000 brugere |
+| **Sideinddelt (RDL) tung rapport** (>60 %) |2\.000 brugere |3\.200 brugere |
 
 I hvert forløb var den mest overbelastede ressource CPU'en. Konsekvensen af dette ville være en skærpet systemsikkerhed, hvis man øgede antallet af kerner i Power BI-rapportserveren, end hvis man øgede mængden af hukommelse eller plads på harddisken. 
 
@@ -86,8 +86,8 @@ Hos Microsoft har vi en produktionsinstallation af Power BI-rapportserver, der e
 
 | Arbejdsbelastning | 8 kerner/32 GB | 16 kerner/64 GB |
 | --- | --- | --- |
-| **Power BI tung rapport** |1.000 brugere |3.000 brugere |
-| **Sideinddelt tung rapport** |2.000 brugere |3.200 brugere |
+| **Power BI tung rapport** |1\.000 brugere |3\.000 brugere |
+| **Sideinddelt tung rapport** |2\.000 brugere |3\.200 brugere |
 
 ### <a name="view-results"></a>Vis resultater
 Vælg en rapport for at få vist resultaterne af belastningstesten.

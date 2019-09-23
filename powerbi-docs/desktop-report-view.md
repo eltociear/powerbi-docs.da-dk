@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 153a77cdc7d4749ac450378723d04c82ef938de6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: c76dfc45437fdc2406c89e41a4a076d9ef4e7a44
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514619"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142198"
 ---
 # <a name="report-view-in-power-bi-desktop"></a>Rapportvisning i Power BI Desktop
 Hvis du har arbejdet med Power BI, ved du, hvor let det er at oprette rapporter med dynamiske perspektiver, og som giver indsigt i dine data. Power BI har også mere avancerede funktioner i Power BI Desktop. Med Power BI Desktop kan du oprette avancerede forespørgsler, mikse data fra flere kilder, oprette relationer mellem tabeller med mere.
@@ -61,9 +61,11 @@ Du kan nemt tage en visualisering fra én Power BI Desktop-rapport og indsætte 
 
 Muligheden for at kopiere og indsætte visualiseringer er nyttig for personer, der ofte opretter og opdaterer flere rapporter. Når du kopierer mellem filer, vil indstillinger og formatering, der udtrykkeligt er angivet i formateringsruden, være gældende, og visualiseringer, der afhænger af et tema eller af standardindstillinger, opdateres automatisk, så de matcher temaet i destinationsrapporten. Så når du formaterer en visualisering, og den ser ud præcist, som du ønsker det, kan du kopiere og indsætte den i nye rapporter og bevare alt det gode formateringsarbejde.
 
-![Fejl i kopiering/indsættelse i en visualisering – intet datafelt](media/desktop-report-view/report-view_05.png)
+Hvis felterne i din model er forskellige, får du vist en fejl i visualiseringen og en advarsel om, hvilke felter der ikke findes. Fejlen ligner det, du ser, når du sletter et felt i den model, som en visualisering bruger. 
 
-Hvis felterne i din model er forskellige, får du vist en fejl i visualiseringen og en advarsel om, hvilke felter der ikke findes. Fejlen ligner det, du ser, når du sletter et felt i den model, som en visualisering bruger. Du løser fejlen ved blot at erstatte de brudte felter med de felter, du vil bruge fra modellen i den rapport, som du indsatte visualiseringen i. Hvis du bruger en brugerdefineret visualisering, skal du også importere den brugerdefinerede visualisering til destinationsrapporten.
+![Fejl i kopiering/indsættelse i en visualisering – intet datafelt](media/desktop-report-view/report-view_07.png)
+
+Du løser fejlen ved blot at erstatte de brudte felter med de felter, du vil bruge fra modellen i den rapport, som du indsatte visualiseringen i. Hvis du bruger en brugerdefineret visualisering, skal du også importere den brugerdefinerede visualisering til destinationsrapporten.
 
 
 

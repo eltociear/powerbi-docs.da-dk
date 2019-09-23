@@ -7,20 +7,20 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/16/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 5004b55fa48cdf98aedd019749b738352d68c4cd
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: ead5c8f45e102aaeebeed492ecf4646342747fe1
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560883"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142295"
 ---
 # <a name="data-sources-in-power-bi-desktop"></a>Datakilder i Power BI Desktop
 Med Power BI Desktop kan du oprette forbindelse til data fra mange forskellige kilder. Der findes en komplet liste over tilgængelige datakilder nederst på siden.
 
-Hvis du vil oprette forbindelse til data, skal du vælge **Hent data** på båndet **Start**. Hvis du vælger pil ned eller teksten **Hent data** på knappen, vises menuen med de **mest almindelige** datatyper på følgende billede:
+Hvis du vil oprette forbindelse til data, skal du vælge **Hent data** på båndet **Hjem**. Hvis du vælger pil ned eller teksten **Hent data** på knappen, vises menuen med de **mest almindelige** datatyper på følgende billede:
 
 ![Hent data i Power BI Desktop](media/desktop-data-sources/data-sources-01.png)
 
@@ -191,11 +191,11 @@ Kategorien **Andet** indeholder følgende dataforbindelser:
 * Python-script
 * ODBC
 * OLE DB
-* BI360 – Budgeting & Financial Reporting (Beta)
-* Denado
+* BI360 - Budgeting & Financial Reporting (Beta)
+* Denodo
 * Information Grid (Beta)
 * Paxatas 
-* QubolePresto (beta)
+* QubolePresto (Beta)
 * Roamler (Beta)
 * SurveyMonkey (beta)
 * Tenforce (Smart)List (Beta)
