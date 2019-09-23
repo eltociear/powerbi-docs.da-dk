@@ -903,6 +903,8 @@
       items:
         - name: Køb Power BI Premium
           href: service-admin-premium-purchase.md
+        - name: Konfigurer og administrer kapaciteter
+          href: service-admin-premium-manage.md
         - name: Konfigurer arbejdsbelastninger
           href: service-admin-premium-workloads.md
         - name: Overvåg kapaciteter vha. appen
