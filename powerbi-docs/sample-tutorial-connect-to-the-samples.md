@@ -21,7 +21,7 @@ ms.locfileid: "68391477"
 #  <a name="connect-to-the-samples-in-the-power-bi-service"></a>Opret forbindelse til eksemplerne i Power BI-tjenesten
 
 I denne vejledning lærer du, hvordan du kan: 
-- Importere en eksempelindholdspakke, føje den til Power BI-tjenesten og åbne indholdet. En *indholdspakke* er en eksempeltype, hvor datasættet er pakket sammen med et dashboard og en rapport. 
+- importere en eksempelindholdspakke, føje den til Power BI-tjenesten og åbne indholdet. En *indholdspakke* er en eksempeltype, hvor datasættet er pakket sammen med et dashboard og en rapport. 
 - åbne en .pbix-eksempelfil i Power BI Desktop.
 
 Hvis du gerne vil have flere baggrundsoplysninger, kan du se [Eksempeldatasæt til Power BI](sample-datasets.md). I den artikel lærer du alt om eksemplerne. Hvordan du får fat i dem, hvor du gemmer dem, hvordan du bruger dem og nogle af de historier, som hvert eksempel fortæller. 
@@ -30,7 +30,7 @@ Hvis du gerne vil have flere baggrundsoplysninger, kan du se [Eksempeldatasæt t
 Eksemplerne er tilgængelige for Power BI-tjenesten og Power BI Desktop. Hvis du vil følge med, bruger vi eksemplet på detailhandelsanalyse.
 
 Indholdspakke med eksemplet *Retail Analysis*, der bruges i dette selvstudium, består af et dashboard, en rapport og et datasæt.
-Lær denne indholdspakke og dens scenarie at kende ved at se [Eksempel på detailhandelsanalyse til Power BI: Få en introduktion](sample-retail-analysis.md), før du går i gang.
+Lær denne indholdspakke og dens scenarie at kende ved at se [Eksempel på detailhandelsanalyse til Power BI: Få en præsentation](sample-retail-analysis.md), før du går i gang.
 
 ## <a name="samples-in-the-power-bi-service"></a>Eksempler i Power BI-tjenesten
 
@@ -120,7 +120,7 @@ Når du downloader en PBIX-fil med et eksempel, har du ikke blot downloadet *en 
 
     I Datavisning kan du undersøge, udforske og forstå data i din Power BI Desktop-model. Det er forskelligt fra den måde, du får vist tabeller, kolonner og data på i Forespørgselseditor. Dataene i Datavisning er allerede indlæst i modellen.
 
-    Når du udformer dine data, har du nogle gange brug for at se, hvad der rent faktisk findes i rækkerne og kolonnerne i en tabel uden at skulle oprette en visualisering på rapportcanvasset. Dette er særligt tilfældet, når du opretter målinger og beregnede kolonner, eller du har brug for at identificere en datatype eller datakategori.
+    Når du udformer dine data, har du nogle gange brug for at se, hvad der rent faktisk findes i rækkerne og kolonnerne i en tabel uden at skulle oprette en visualisering på rapportlærredet. Dette er særligt tilfældet, når du opretter målinger og beregnede kolonner, eller du har brug for at identificere en datatype eller datakategori.
 
 1. Skift til [Relationsvisning](desktop-relationship-view.md) ved at vælge følgende ikon: ![Ikonet Relationsvisning](media/sample-tutorial-connect-to-the-samples/power-bi-desktop-relationship-icon.png).
  
@@ -131,7 +131,7 @@ Når du downloader en PBIX-fil med et eksempel, har du ikke blot downloadet *en 
 ## <a name="next-steps"></a>Næste trin
 Det er sikkert at eksperimentere i dette miljø, fordi du kan vælge ikke at gemme dine ændringer. Hvis du gemmer dem, kan du altid vælge **Hent data** for at få en ny kopi af dette eksempel.
 
-Vi håber, at denne rundtur har vist, hvordan dashboards, datasæt, relationer og rapporter i Power BI kan give indsigt i eksempeldata. Nu er det din tur: Opret forbindelse til dine egne data. Med Power BI kan du oprette forbindelse til en lang række datakilder. Du kan få mere at vide i [Introduktion til Power BI-tjenesten](service-get-started.md) og [Introduktion til Power BI Desktop](desktop-getting-started.md).  
+Vi håber, at denne præsentation har vist, hvordan dashboards, datasæt, relationer og rapporter i Power BI kan give indsigt i eksempeldata. Nu er det din tur: Opret forbindelse til dine egne data. Med Power BI kan du oprette forbindelse til en lang række datakilder. Du kan få mere at vide i [Introduktion til Power BI-tjenesten](service-get-started.md) og [Introduktion til Power BI Desktop](desktop-getting-started.md).  
 
 Her finder du flere oplysninger:  
 - [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
