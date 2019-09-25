@@ -4,14 +4,14 @@ description: Start din læring med denne kursusrække, og få en forståelse af 
 layout: LandingPage
 ms.service: powerbi
 ms.author: davidiseminger
-ms.date: 05/10/2019
+ms.date: 09/20/2019
 ms.topic: hub-page
-ms.openlocfilehash: 69bb6ce574c1ee6922c83f4ae2fcc06479eba440
-ms.sourcegitcommit: af2b2238fe77eaa1b2392a19a143a0250b8665cf
+ms.openlocfilehash: 0d42295d3f6a3ccb6f3147d8293f1544ca0a3095
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "65533679"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71192069"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -22,6 +22,7 @@ ms.locfileid: "65533679"
                   <p>Start din læring med denne kursusrække, og få en forståelse af de mange og effektive funktioner i Microsoft Power BI.</p>
               </div>
           </li>
+          
           <li>
             <div class="cardSize">
                 <div class="cardPadding">
@@ -33,18 +34,36 @@ ms.locfileid: "65533679"
                                 <img src="media/logo_power-bi.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-Introduktion </h3>
+                            <a href="https://docs.microsoft.com/learn/modules/explore-power-bi-service" style="text-decoration: none">Udforsk, hvad Power BI kan gøre for dig</a>
+                          </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="https://docs.microsoft.com/learn/paths/create-use-analytics-reports-power-bi/">Kom i gang med Power BI vha. Microsoft Learn</a>
-                                <span style="margin-left: 32px; align-self: center;">47 min</span>
-                              </li>                              
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-power-bi-service/1-why-power-bi">Hvad kan jeg bruge Power BI-tjenesten til som forbruger? </a>
+                                <span style="margin-left: 32px; align-self: center;">12 min.</span>
+                              </li>      
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-power-bi-service/2-find-content">Få vist relateret indhold i Power BI-tjenesten</a>
+                                <span style="margin-left: 32px; align-self: center;">10 min.</span>
+                              </li>     
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-power-bi-service/3-navigate-content">Udforsk vha. dashboards, rapporter og apps i Power BI</a>
+                                <span style="margin-left: 32px; align-self: center;">15 min.</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-power-bi-service/4-collaborate-and-share">Samarbejd og del i Power BI</a>
+                                <span style="margin-left: 32px; align-self: center;">15 min.</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-power-bi-service/5-lab-1">Opret og få vist dashboards og rapporter</a>
+                                <span style="margin-left: 32px; align-self: center;">7 min.</span>
+                              </li>
                           </ul>
                       </div>
                     </div>
                 </div>
             </div>
           </li>
+          
           <li>
             <div class="cardSize">
                 <div class="cardPadding">
@@ -56,31 +75,24 @@ Introduktion </h3>
                                 <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-Hent data </h3>
+                            <a href="https://docs.microsoft.com/learn/modules/analyze-data-power-bi" style="text-decoration: none">Analysér data vha. Power BI</a>
+                          </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingdata.yml?tutorial-step=1">Oversigt over Power BI Desktop</a>
-                                <span style="margin-left: 32px; align-self: center;">4m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/analyze-data-power-bi/1-filtering-data">Filtrer data med Power BI</a>
+                                <span style="margin-left: 32px; align-self: center;">15 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingdata.yml?tutorial-step=2">Kom i gang med Power BI Desktop</a>
-                                <span style="margin-left: 32px; align-self: center;">9m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/analyze-data-power-bi/2-exploring-with-numbers">Få vist dine data</a>
+                                <span style="margin-left: 32px; align-self: center;">5 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingdata.yml?tutorial-step=3">Opret forbindelse til datakilderne i Power BI Desktop</a>
-                                <span style="margin-left: 32px; align-self: center;">8m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/analyze-data-power-bi/3-asking-questions-data">Stil spørgsmål om dine data</a>
+                                <span style="margin-left: 32px; align-self: center;">5 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingdata.yml?tutorial-step=4">Ryd og omdan dine data med Query Editor</a>
-                                <span style="margin-left: 32px; align-self: center;">8m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingdata.yml?tutorial-step=5">Flere avancerede datakilder og transformation</a>
-                                <span style="margin-left: 32px; align-self: center;">8m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="gettingdata.yml?tutorial-step=6">Rens uregelmæssigt formaterede data</a>
-                                <span style="margin-left: 32px; align-self: center;">8m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/analyze-data-power-bi/4-lab-2">Anvend filtre på rapporterne</a>
+                                <span style="margin-left: 32px; align-self: center;">25 min.</span>
                               </li>
                           </ul>
                       </div>
@@ -88,7 +100,8 @@ Hent data </h3>
                 </div>
             </div>
           </li>
-          <li>
+          
+                    <li>
             <div class="cardSize">
                 <div class="cardPadding">
                   <div class="card" style="padding: 0 12px 54px 0;">
@@ -96,38 +109,27 @@ Hent data </h3>
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="media/pbi-modeling.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-Modellering </h3>
+                            <a href="https://docs.microsoft.com/learn/modules/get-started-with-power-bi" style="text-decoration: none">Kom i gang med at bygge med Power BI</a>
+                          </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml?tutorial-step=1">Introduktion til modellering af dine data</a>
-                                <span style="margin-left: 32px; align-self: center;">3m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-started-with-power-bi/1-introduction">Introduktion</a>
+                                <span style="margin-left: 32px; align-self: center;">6 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml?tutorial-step=2">Sådan administreres dataenes relationer</a>
-                                <span style="margin-left: 32px; align-self: center;">9m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-started-with-power-bi/2-using-power-bi">Brug Power BI</a>
+                                <span style="margin-left: 32px; align-self: center;">2 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml?tutorial-step=3">Opret beregnede kolonner</a>
-                                <span style="margin-left: 32px; align-self: center;">9m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-started-with-power-bi/3-building-blocks-of-power-bi">Komponenterne i Power BI</a>
+                                <span style="margin-left: 32px; align-self: center;">12 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml?tutorial-step=4">Optimering af datamodeller</a>
-                                <span style="margin-left: 32px; align-self: center;">8m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml?tutorial-step=5">Opret beregnede målinger</a>
-                                <span style="margin-left: 32px; align-self: center;">14m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml?tutorial-step=6">Opret beregnede tabeller</a>
-                                <span style="margin-left: 32px; align-self: center;">4m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="modeling.yml?tutorial-step=7">Udforsk dine tidsbaserede data</a>
-                                <span style="margin-left: 32px; align-self: center;">6m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-started-with-power-bi/4-exercise-touring-and-using-power-bi">Præsentation og brug af Power BI-tjenesten</a>
+                                <span style="margin-left: 32px; align-self: center;">12 min.</span>
                               </li>
                           </ul>
                       </div>
@@ -135,7 +137,8 @@ Modellering </h3>
                 </div>
             </div>
           </li>
-          <li>
+          
+                    <li>
             <div class="cardSize">
                 <div class="cardPadding">
                   <div class="card" style="padding: 0 12px 54px 0;">
@@ -143,86 +146,39 @@ Modellering </h3>
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="media/pbi-visualizations.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-Visualiseringer </h3>
+                            <a href="https://docs.microsoft.com/learn/modules/get-data-power-bi" style="text-decoration: none">Hent data vha. Power BI Desktop</a>
+                          </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=1">Introduktion til visuelle elementer i Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">2m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-data-power-bi/1-overview-power-bi-desktop">Oversigt over Power BI Desktop</a>
+                                <span style="margin-left: 32px; align-self: center;">5 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=2">Opret og tilpas simple visualiseringer</a>
-                                <span style="margin-left: 32px; align-self: center;">8m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-data-power-bi/2-getting-started-power-bi-desktop">Udforsk Power BI Desktop</a>
+                                <span style="margin-left: 32px; align-self: center;">10 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=3">Kombinationsdiagrammer</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-data-power-bi/3-connect-data-sources-power-bi-desktop">Opret forbindelse til datakilder</a>
+                                <span style="margin-left: 32px; align-self: center;">10 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=4">Udsnit</a>
-                                <span style="margin-left: 32px; align-self: center;">7m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-data-power-bi/3b-data-from-excel">Hent data fra Excel</a>
+                                <span style="margin-left: 32px; align-self: center;">5 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=5">Kortvisualiseringer</a>
-                                <span style="margin-left: 32px; align-self: center;">11m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-data-power-bi/4-clean-data-query-editor">Transformér data, der skal inkluderes i en rapport</a>
+                                <span style="margin-left: 32px; align-self: center;">10 min.</span>
+                                <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-data-power-bi/5-advanced-data-sources-transformation">Kombiner data fra flere kilder</a>
+                                <span style="margin-left: 32px; align-self: center;">10 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=6">Matrixer og tabeller</a>
-                                <span style="margin-left: 32px; align-self: center;">8m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/get-data-power-bi/6-cleaning-data">Ryd op i data, der skal inkluderes i en rapport</a>
+                                <span style="margin-left: 32px; align-self: center;">10 min.</span>
                               </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=7">Punktdiagrammer</a>
-                                <span style="margin-left: 32px; align-self: center;">9m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=8">Vandfalds- og tragtdiagrammer</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=9">Målere og kort med enkelt talværdi</a>
-                                <span style="margin-left: 32px; align-self: center;">7m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=10">Rediger farver i diagrammer og visuelle elementer</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=11">Former, tekstfelter og billeder</a>
-                                <span style="margin-left: 32px; align-self: center;">6m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=12">Sidelayout og formatering</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=13">Gruppeinteraktioner blandt visualiseringer</a>
-                                <span style="margin-left: 32px; align-self: center;">9m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=14">Dupliker en rapportside</a>
-                                <span style="margin-left: 32px; align-self: center;">2m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=15">Vis kategorier uden data</a>
-                                <span style="margin-left: 32px; align-self: center;">3m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=16">Opsummering og indstillinger for kategori</a>
-                                <span style="margin-left: 32px; align-self: center;">9m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=17">Z-rækkefølge</a>
-                                <span style="margin-left: 32px; align-self: center;">3m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=18">Visuelle hierarkier og analyse</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="visualizations.yml?tutorial-step=19">R-integration i Power BI Desktop</a>
-                                <span style="margin-left: 32px; align-self: center;">9m</span>
                               </li>
                           </ul>
                       </div>
@@ -230,7 +186,8 @@ Visualiseringer </h3>
                 </div>
             </div>
           </li>
-          <li>
+          
+                    <li>
             <div class="cardSize">
                 <div class="cardPadding">
                   <div class="card" style="padding: 0 12px 54px 0;">
@@ -238,50 +195,39 @@ Visualiseringer </h3>
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="media/pbi-exploring-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-Udforsk data </h3>
+                            <a href="https://docs.microsoft.com/learn/modules/model-data-power-bi" style="text-decoration: none">Modellér data i Power BI</a>
+                          </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=1">Introduktion til Power BI-tjenesten</a>
-                                <span style="margin-left: 32px; align-self: center;">2m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/model-data-power-bi/1-overview-power-bi">Introduktion til modellering af dine data</a>
+                                <span style="margin-left: 32px; align-self: center;">5 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=2">Hurtig indsigt i Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/model-data-power-bi/2-how-to-manage-data-relationships">Sådan administrerer du dine datarelationer</a>
+                                <span style="margin-left: 32px; align-self: center;">8 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=3">Opret og konfigurer et dashboard</a>
-                                <span style="margin-left: 32px; align-self: center;">6m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/model-data-power-bi/3-create-calculated-columns">Opret beregnede kolonner</a>
+                                <span style="margin-left: 32px; align-self: center;">7 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=4">Stil spørgsmål om dine data med et naturligt sprog</a>
-                                <span style="margin-left: 32px; align-self: center;">9m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/model-data-power-bi/4-optimize-data-models">Optimer datamodeller</a>
+                                <span style="margin-left: 32px; align-self: center;">8 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=5">Opret brugerdefinerede forslag til spørgsmål &amp; svar</a>
-                                <span style="margin-left: 32px; align-self: center;">4m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/model-data-power-bi/4b-create-calculated-measures">Opret beregnede mål</a>
+                                <span style="margin-left: 32px; align-self: center;">15 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=6">Del dashboards med din organisation</a>
-                                <span style="margin-left: 32px; align-self: center;">7m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/model-data-power-bi/5-create-calculated-tables">Opret beregnede tabeller</a>
+                                <span style="margin-left: 32px; align-self: center;">4 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=7">Vis visuelle elementer og felter i fuld skærm</a>
-                                <span style="margin-left: 32px; align-self: center;">4m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=8">Rediger feltoplysninger, og tilføj widgets</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=9">Få mere plads på dit dashboard</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="exploringdata.yml?tutorial-step=10">Installer og konfigurer en personlig gateway</a>
-                                <span style="margin-left: 32px; align-self: center;">11m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/model-data-power-bi/6-explore-time-based-data">Udforsk tidsbaserede data</a>
+                                <span style="margin-left: 32px; align-self: center;">5 min.</span>
                               </li>
                           </ul>
                       </div>
@@ -289,7 +235,8 @@ Udforsk data </h3>
                 </div>
             </div>
           </li>
-          <li>
+          
+                    <li>
             <div class="cardSize">
                 <div class="cardPadding">
                   <div class="card" style="padding: 0 12px 54px 0;">
@@ -297,30 +244,43 @@ Udforsk data </h3>
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="media/logo_excel-blk.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-Power BI og Excel </h3>
+                            <a href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi" style="text-decoration: none">Brug visualiseringer i Power BI</a>
+                          </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="powerbiandexcel.yml?tutorial-step=1">Introduktion til brug af Excel-data i Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">2m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/1-intro-visuals">Introduktion til visualiseringer i Power BI</a>
+                                <span style="margin-left: 32px; align-self: center;">3 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="powerbiandexcel.yml?tutorial-step=2">Overfør Excel-data til Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">4m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/2-create-simple-visuals">Opret og tilpas enkle visualiseringer</a>
+                                <span style="margin-left: 32px; align-self: center;">9 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="powerbiandexcel.yml?tutorial-step=3">Importér Power View og Power Pivot til Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">4m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/4-create-slicers">Opret udsnit</a>
+                                <span style="margin-left: 32px; align-self: center;">9 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="powerbiandexcel.yml?tutorial-step=4">Opret forbindelse mellem OneDrive for Business til Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">8m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/5-map-visualizations">Tilknyt visualiseringer</a>
+                                <span style="margin-left: 32px; align-self: center;">5 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="powerbiandexcel.yml?tutorial-step=5">Excel i Power BI – oversigt</a>
-                                <span style="margin-left: 32px; align-self: center;">2m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/6-create-matrixes-tables">Matrixer og tabel</a>
+                                <span style="margin-left: 32px; align-self: center;">8 min.</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/7-create-scatter-charts">Opret punkt-, vandfalds- og tragtformede diagrammer</a>
+                                <span style="margin-left: 32px; align-self: center;">9 min.</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/10-modify-colors">Rediger farver i diagrammer og visualiseringer</a>
+                                <span style="margin-left: 32px; align-self: center;">6 min.</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/visuals-in-power-bi/12-formatting">Sidelayout og formatering</a>
+                                <span style="margin-left: 32px; align-self: center;">12 min.</span>
                               </li>
                           </ul>
                       </div>
@@ -328,7 +288,8 @@ Power BI og Excel </h3>
                 </div>
             </div>
           </li>
-          <li>
+          
+                    <li>
             <div class="cardSize">
                 <div class="cardPadding">
                   <div class="card" style="padding: 0 12px 54px 0;">
@@ -336,58 +297,47 @@ Power BI og Excel </h3>
                           <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
                             <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
                               <div class="cardImage" style="width: 32px;">
-                                <img src="media/pbi-pub-sharing.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                                <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-Publicer og del </h3>
+                            <a href="https://docs.microsoft.com/learn/modules/explore-data-power-bi" style="text-decoration: none">Udforsk data i Power BI</a>
+                          </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=1">Introduktion til indholdspakker, sikkerhed og grupper</a>
-                                <span style="margin-left: 32px; align-self: center;">2m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/1-introduction-power-bi-service">Introduktion til Power BI-tjenesten</a>
+                                <span style="margin-left: 32px; align-self: center;">6 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=2">Udgiv Power BI Desktop-rapporter</a>
-                                <span style="margin-left: 32px; align-self: center;">2m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/2-quick-insights">Quick insights i Power BI</a>
+                                <span style="margin-left: 32px; align-self: center;">7 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=3">Udskriv og eksportér dashboards og rapporter</a>
-                                <span style="margin-left: 32px; align-self: center;">4m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/3-create-configure-dashboard">Opret og konfigurer et dashboard</a>
+                                <span style="margin-left: 32px; align-self: center;">5 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=4">Publicer igen manuelt, og opdater dine data</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/4-ask-questions">Stil spørgsmål om dine data i et naturligt sprog</a>
+                                <span style="margin-left: 32px; align-self: center;">5 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=5">Introduktion til Power BI Mobil</a>
-                                <span style="margin-left: 32px; align-self: center;">7m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/5-custom-qa">Opret brugerdefinerede forslag til spørgsmål og svar</a>
+                                <span style="margin-left: 32px; align-self: center;">4 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=6">Opret grupper i Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/6-share-dashboards">Del dashboards med din organisation</a>
+                                <span style="margin-left: 32px; align-self: center;">5 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=7">Opret indholdspakker</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/7-display-full-screen">Vis visualiseringer og felter i fuld skærm</a>
+                                <span style="margin-left: 32px; align-self: center;">3 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=8">Brug indholdspakker</a>
-                                <span style="margin-left: 32px; align-self: center;">7m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/8-edit-tile-details">Rediger feltoplysninger, og tilføj widgets</a>
+                                <span style="margin-left: 32px; align-self: center;">5 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=9">Opdater indholdspakker</a>
-                                <span style="margin-left: 32px; align-self: center;">4m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=10">Integrer OneDrive for Business med Power BI</a>
-                                <span style="margin-left: 32px; align-self: center;">3m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=11">Udgiv på internettet</a>
-                                <span style="margin-left: 32px; align-self: center;">5m</span>
-                              </li>
-                              <li style="display: flex; justify-content: space-between;">
-                                <a class="barLink" href="publishingandsharing.yml?tutorial-step=12">Afslutning af Power BI Automatiseret læring</a>
-                                <span style="margin-left: 32px; align-self: center;">4m</span>
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/explore-data-power-bi/9-get-more-space-on-dashboard">Få mere plads på dit dashboard</a>
+                                <span style="margin-left: 32px; align-self: center;">3 min.</span>
                               </li>
                           </ul>
                       </div>
@@ -395,6 +345,65 @@ Publicer og del </h3>
                 </div>
             </div>
           </li>
+          
+                    <li>
+            <div class="cardSize">
+                <div class="cardPadding">
+                  <div class="card" style="padding: 0 12px 54px 0;">
+                      <div class="cardText" style="box-shadow: 0 2px 5px #e8e8e8; border: 1px solid #dbdbdb;">
+                          <h3 class="bgdAccent1" style="padding: 8px; display: flex; background: #f2c811; font-weight: bold; border-bottom: 0; margin-bottom: 0; line-height: 42px">
+                            <div class="cardImageOuter" style="margin: 0 8px 0 10px;">
+                              <div class="cardImage" style="width: 32px;">
+                                <img src="media/pbi-getting-data.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
+                              </div>
+                            </div>
+                            <a href="https://docs.microsoft.com/learn/modules/publish-share-power-bi" style="text-decoration: none">Publicer og del i Power BI</a>
+                          </h3>
+                          <ul class="noBullet" style="margin: 24px;">
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/1-introduction-content-packs">Introduktion til indholdspakker, sikkerhed og grupper</a>
+                                <span style="margin-left: 32px; align-self: center;">5 min.</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/2-publish-reports">Publicer Power BI Desktop-rapporter</a>
+                                <span style="margin-left: 32px; align-self: center;">6 min.</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/3-print-export-reports">Udskriv og eksportér dashboards og rapporter</a>
+                                <span style="margin-left: 32px; align-self: center;">7 min.</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/5-power-bi-mobile">Introduktion til Power BI – Mobil</a>
+                                <span style="margin-left: 32px; align-self: center;">5 min.</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/6-create-groups">Opret nye arbejdsområder i Power BI</a>
+                                <span style="margin-left: 32px; align-self: center;">6 min.</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/7-build-apps">Byg apps</a>
+                                <span style="margin-left: 32px; align-self: center;">7 min.</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/8-use-apps">Brug apps</a>
+                                <span style="margin-left: 32px; align-self: center;">6 min.</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/10-integrate-onedrive">Integrer OneDrive for Business med Power BI</a>
+                                <span style="margin-left: 32px; align-self: center;">7 min.</span>
+                              </li>
+                              <li style="display: flex; justify-content: space-between;">
+                                <a class="barLink" href="https://docs.microsoft.com/learn/modules/publish-share-power-bi/11-publish-web">Udgiv på internettet</a>
+                                <span style="margin-left: 32px; align-self: center;">5 min.</span>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </li>
+     
+          
           <li>
             <div class="cardSize">
                 <div class="cardPadding">
@@ -406,31 +415,32 @@ Publicer og del </h3>
                                 <img src="media/pbi-dax-intro.svg" alt="" data-linktype="absolute-path" class="x-hidden-focus" style="position: relative; top: 6px;">
                               </div>
                             </div>
-Introduktion til DAX </h3>
+                            <a href="introductiontodax.yml?tutorial-step=1" style="text-decoration: none">Introduktion til DAX</a>
+                          </h3>
                           <ul class="noBullet" style="margin: 24px;">
                               <li style="display: flex; justify-content: space-between;">
                                 <a class="barLink" href="introductiontodax.yml?tutorial-step=1">Introduktion til DAX</a>
-                                <span style="margin-left: 32px; align-self: center;">9m</span>
+                                <span style="margin-left: 32px; align-self: center;">9 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
                                 <a class="barLink" href="introductiontodax.yml?tutorial-step=2">DAX-beregningstyper</a>
-                                <span style="margin-left: 32px; align-self: center;">22</span>
+                                <span style="margin-left: 32px; align-self: center;">22 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
                                 <a class="barLink" href="introductiontodax.yml?tutorial-step=3">DAX-funktioner</a>
-                                <span style="margin-left: 32px; align-self: center;">17m</span>
+                                <span style="margin-left: 32px; align-self: center;">17 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
                                 <a class="barLink" href="introductiontodax.yml?tutorial-step=4">Brug af variabler i DAX-udtryk</a>
-                                <span style="margin-left: 32px; align-self: center;">4m</span>
+                                <span style="margin-left: 32px; align-self: center;">4 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
                                 <a class="barLink" href="introductiontodax.yml?tutorial-step=5">Tabelrelationer og DAX</a>
-                                <span style="margin-left: 32px; align-self: center;">13m</span>
+                                <span style="margin-left: 32px; align-self: center;">13 min.</span>
                               </li>
                               <li style="display: flex; justify-content: space-between;">
                                 <a class="barLink" href="introductiontodax.yml?tutorial-step=6">DAX-tabeller og -filtrering</a>
-                                <span style="margin-left: 32px; align-self: center;">32m</span>
+                                <span style="margin-left: 32px; align-self: center;">32 min.</span>
                               </li>
                           </ul>
                       </div>

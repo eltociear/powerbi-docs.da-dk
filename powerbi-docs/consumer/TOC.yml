@@ -92,6 +92,8 @@
               href: end-user-insights.md
             - name: Slå prøveversionsfunktioner til
               href: end-user-preview-features.md
+            - name: Få meddelelser i Power BI-tjenesten
+              href: end-user-notification-center.md
         - name: Hent data
           items:
             - name: Apps i Power BI
