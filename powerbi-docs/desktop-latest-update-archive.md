@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: b61d0e3515b4efb08cb08a49d9bb339a1fbbb5a3
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 0dcc5e3aac4b43a6975a9faa5dd23faa2888b324
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903699"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142206"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -34,7 +34,7 @@ Du kan også se videoen med de **seneste opdateringer** fra starten direkte i ar
 
 I de følgende afsnit beskrives tidligere måneders opdateringer til **Power BI Desktop**.
 
-## <a name="august-2019-update-2715523641"></a>August 2019-opdatering (2.71.5523.641)
+## <a name="august-2019-update-2725556801"></a>Opdatering i august 2019 (2.72.5556.801)
 
 Vores opdateringer i august var hotte og skinnede klart som solen på de rapporter, du oprettede i Power BI Desktop. 
 
@@ -52,7 +52,7 @@ Du kan også se videoen med de **seneste opdateringer** fra starten direkte i ar
 Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
 
 ### <a name="reporting"></a>Rapportering
-* Gruppering af visualiseringer [[video]](https://youtu.be/sf4n7VXoQHY?t=10) [[artikel]](desktop-grouping-visuals.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#grouping) 
+* Gruppering af visuelle elementer [[video]](https://youtu.be/sf4n7VXoQHY?t=10) [[artikel]](desktop-grouping-visuals.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#grouping) 
 * Overflytning af filterrude [[video]](https://youtu.be/sf4n7VXoQHY?t=360) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#filterPane)
 * Ikontypevælger til betinget formatering af ikoner [[video]](https://youtu.be/sf4n7VXoQHY?t=509) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#iconStyles)
 * Advarsler om betinget formatering [[video]](https://youtu.be/sf4n7VXoQHY?t=621)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2019-feature-summary/#conditionalFormatting)
@@ -456,7 +456,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i marts:
 
 
 ### <a name="modeling"></a>Udformning
-* Ny modelleringsvisning er nu offentligt tilgængelig [[video]](https://youtu.be/rBPGH6eYlT0?t=417)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#modellingView) 
+* Ny udformningsvisning er nu offentligt tilgængelig [[video]](https://youtu.be/rBPGH6eYlT0?t=417)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#modellingView) 
 * Nye DAX-funktioner [[video]](https://youtu.be/rBPGH6eYlT0?t=560) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#DAX) 
 
 ### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer

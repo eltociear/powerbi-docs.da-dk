@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 07/25/2019
+ms.date: 09/20/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 260860ba1ac875b097b12a1ac32ef09e983fe08d
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 5551247307e750624006de71a3c8652376b73fcf
+ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655145"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175257"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -47,6 +47,7 @@ Der er ni faner på portalen. Resten af denne artikel indeholder oplysninger om 
 * [Visualiseringer til virksomheder](#organizational-visuals)
 * [Dataflowlager (eksempelvisning)](#dataflowStorage)
 * [Arbejdsområder](#workspaces)
+* [Brugerdefineret branding](#custom-branding)
 
 ## <a name="usage-metrics"></a>Forbrugsdata
 
@@ -428,7 +429,7 @@ Brugere i organisationen kan **kun** downloade og installere skabelonapps fra [A
 
 ### <a name="install-template-apps-not-listed-on-appsource"></a>Installér skabelonapps, der ikke er angivet på AppSource
 
-Styr, hvilke brugere i organisationen der kan downloade og installere skabelonapps, som **ikke er anført på [AppSource](https://appsource.microsoft.com)** .
+Styr, hvilke brugere i organisationen der kan downloade og installere skabelonapps, som **ikke er anført på [AppSource](https://appsource.microsoft.com)**.
 
 ![Power BI-administrationsportal, indstillingen Installér skabelonapps](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-nonappsource.png)
 
@@ -522,7 +523,22 @@ Som administrator kan du få vist de arbejdsområder, der findes i din lejer. Du
 
 ![Liste over arbejdsområder](media/service-admin-portal/workspaces-list.png)
 
+## <a name="custom-branding"></a>Brugerdefineret branding
 
+Som administrator kan du tilpasse udseendet af Power BI for hele organisationen. Der er i øjeblikket tre primære muligheder:
+
+![Brugerdefinerede brandingmuligheder](media/service-admin-portal/power-bi-custom-branding.png)
+
+* **Upload logo**: Du opnår de bedste resultater ved at uploade et logo, der er gemt som en .png-fil på 10 KB eller mindre og mindst 200 x 30 pixel.
+
+* **Upload forsidebillede**: Du opnår de bedste resultater ved at uploade et forsidebillede, der er gemt som en .jpg- eller .png-fil på 1 MB eller mindre og mindst 1920 x 160 pixel.
+
+* **Vælg temafarve**: Du kan vælge dit tema på baggrund af en hex #, RGB, værdi eller fra den angivne palet.
+
+
+Du kan finde flere oplysninger i [Brugerdefineret branding til din organisation](http://aka.ms/orgBranding).
+
+![Liste over arbejdsområder](media/service-admin-portal/workspaces-list.png)
 ## <a name="next-steps"></a>Næste trin
 
 [Administrer Power BI i din organisation](service-admin-administering-power-bi-in-your-organization.md)  

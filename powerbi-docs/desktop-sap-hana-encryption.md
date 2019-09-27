@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 07/26/2019
 ms.author: mblythe
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9047ae7f74a7589d242531a5af18f6094c2b03a6
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 1c8c65d9b0f0b669d46d73d739be24f29f623743
+ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523935"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71164451"
 ---
 # <a name="enable-encryption-for-sap-hana"></a>Aktivér kryptering for SAP HANA
 
@@ -63,7 +63,7 @@ Hent certifikatet, der er signeret af et nøglecenter (CA), som de klienter, der
     openssl x509 -req -days 365 -in Server\_Req.pem -sha256 -extfile /etc/ssl/openssl.cnf -extensions usr\_cert -CA CA\_Cert.pem -CAkey CA\_Key.pem -CAcreateserial -out Server\_Cert.pem
     ```
 
-    Hvis du ikke allerede har et nøglecenter, du kan bruge, kan du selv oprette et rodnøglecenter ved at følge den trinvise vejledning i artiklen om [sikring af kommunikationen mellem SAP HANA Studio og SAP HANA-server via SSL](https://blogs.sap.com/2015/09/28/securing-the-communication-between-sap-hana-studio-and-sap-hana-server-through-ssl/).
+    Hvis du ikke allerede har et nøglecenter, du kan bruge, kan du selv oprette et rodnøglecenter ved at følge trinene i bloggen om [sikring af kommunikationen mellem SAP HANA Studio og SAP HANA Server via SSL](https://blogs.sap.com/2015/09/28/securing-the-communication-between-sap-hana-studio-and-sap-hana-server-through-ssl/).
 
 1. Opret certifikatkæden for HANA-serveren ved at kombinere servercertifikatet, nøglen og nøglecenterets certifikat (navnet key.pem er konventionen for SAP HANA):
 

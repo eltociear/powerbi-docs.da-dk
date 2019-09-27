@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/17/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 14e57f5b19fe4dccea9aa47d21c959eaf93a45ae
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 2621446fe7954297ffb7167823ab67f9b2dd9b11
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70185710"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142337"
 ---
 # <a name="accessibility-in-power-bi-desktop-reports"></a>Tilgængelighed i Power BI Desktop-rapporter
 Power BI indeholder funktioner, der gør det nemmere for personer med et handicap at bruge og interagere med Power BI-rapporter. Funktionerne omfatter muligheden for at bruge en rapport ved hjælp tastaturet eller en skærmlæser, bruge tabulatortasten til at sætte fokus på forskellige objekter på en side og bruge markører i visualiseringer.
@@ -76,7 +76,7 @@ Følgende tip kan hjælpe dig med at oprette **Power BI Desktop**-rapporter med 
   
   ![Alternativ tekst for et hvilket som helst objekt i en rapport kan tilføjes i Visualiseringer > Format > Generelt > feltet Alternativ tekst](media/desktop-accessibility/accessibility-02.png)
   
-  Alternativ tekst kan også ændres dynamisk med et udtryk, der f.eks. afspejler filtre, der er anvendt i en visualisering. Du angiver et udtryk på samme måde som en visualiseringstitel. [Betinget formatering af titler på visualiseringer](desktop-conditional-format-visual-titles.md)
+  Alternativ tekst kan også ændres dynamisk med et udtryk, der f.eks. afspejler filtre, som er anvendt i en visualisering. Du angiver et udtryk på samme måde som en visualiseringstitel. [Betinget formatering af titler på visualiseringer](desktop-conditional-format-visual-titles.md)
   
 * Kontrollér, at der er tilstrækkelig kontrast mellem teksten og eventuelle baggrundsfarver i dine rapporter. Der er flere værktøjer (f.eks. [Colour Contrast Analyser](https://developer.paciellogroup.com/resources/contrastanalyser/)), som du kan bruge til at kontrollere farverne i din rapport. 
 * Brug tekststørrelser og skrifttyper, der er nemme at læse. En lille tekststørrelse eller skrifttyper, der kan være vanskelige at læse, hjælper ikke i forbindelse med tilgængelighed.
@@ -182,8 +182,8 @@ Idet vi løbende forbedrer tilgængeligheden, omfatter ovenstående liste også 
 | Kopiér linjen op/ned | **Skift + Alt + Pil op** / **Pil ned** |
 | Indsæt linje nedenfor | **Ctrl + Enter** |
 | Indsæt linje ovenfor | **Ctrl + Skift + Enter** |
-| Gå til matchende parentes | **Ctrl + Skift +**  \ |
-| Indryk streg/udvid linje til margenen | **Ctrl + ]**  /  **[** |
+| Gå til matchende parentes | **Ctrl + Skift +** \ |
+| Indryk streg/udvid linje til margenen | **Ctrl + ]** / **[** |
 | Indsæt markøren | **Alt + klik** |
 | Vælg den aktuelle linje | **Ctrl + I** |
 | Vælg alle forekomster af det aktuelle valg | **Ctrl + Skift + L** |

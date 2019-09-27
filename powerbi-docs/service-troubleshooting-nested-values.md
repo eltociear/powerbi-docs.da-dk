@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.date: 6/4/2019
 ms.author: gepopell
 LocalizationGroup: Reports
-ms.openlocfilehash: e30a79796fd4d5538406a85a3297a23b2c09a61a
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: d21199d8960df4db5027115704533bd3d5d8097c
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751403"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142252"
 ---
 # <a name="troubleshooting-nested-values-returned-as-text-in-power-bi-service"></a>Fejlfinding af indlejrede værdier, der returneres som tekst i Power BI-tjenesten
 
 ## <a name="cause"></a>Årsag
 
-Tidligere har der været tilfælde, hvor en rapport i Power BI opdateres fint i Desktop, men mislykkes i Power BI-tjenesten med en fejl såsom "Vi kan ikke konvertere værdien "[Tabel]" til typen Tabel". En af årsagerne til denne fejl er, at når Data Privacy Firewall (link her?) gemmer en datakilde i en buffer, konverteres indlejrede værdier, der ikke er skalar (f.eks. tabeller, poster, lister og funktioner), automatisk til tekstværdier (såsom "[Tabel]" eller "[Post]").
+Tidligere har der været tilfælde, hvor en rapport i Power BI opdateres fint i Desktop, men mislykkes i Power BI-tjenesten med en fejl såsom "Vi kan ikke konvertere værdien "[Tabel]" til typen Tabel". En af årsagerne til denne fejl er, at når Data Privacy Firewall gemmer en datakilde i en buffer, konverteres indlejrede værdier, der ikke er skalar (f.eks. tabeller, poster, lister og funktioner), automatisk til tekstværdier (såsom "[Tabel]" eller "[Post]").
 
 Nu, hvor Power BI-tjenesten understøtter indstilling af niveauer for beskyttelse af personlige oplysninger (eller komplet deaktivering af Firewall), kan sådanne fejl undgås ved [at konfigurere indstillingerne for beskyttelse af personlige oplysninger for datakilden](https://powerbi.microsoft.com/en-us/blog/privacy-levels-for-cloud-data-sources/) i Power BI-tjenesten, så de ikke er private.
 

@@ -5,21 +5,20 @@ author: mihart
 manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7222f13d5ee4f25d7d55655bb5a7e5f2f28c77d4
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 5251bf34d7467c2727cdac83c6f6f9faf59aa888
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608623"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141340"
 ---
-# <a name="featured-dashboards-in-power-bi-service"></a>Udvalgte dashboards i Power BI-tjenesten
+# <a name="featured-dashboards-in-the-power-bi-service"></a>Udvalgte dashboards i Power BI-tjenesten
 ## <a name="create-a-featured-dashboard"></a>Opret et udvalgt dashboard
 Mange af os har ét dashboard, som vi besøger oftere end andre.  Det kan være det dashboard, vi bruger til at køre vores virksomhed, eller det kan være et dashboard, der indeholder en sammenlægning af felter fra mange forskellige dashboards og rapporter.
 
@@ -52,7 +51,7 @@ Hvis du senere skifter mening, kan du angive et nyt dashboard som udvalgt.
 1. Følg trin 1 og 2 ovenfor.
    
     ![Vinduet Skift udvalgt dashboard](./media/end-user-featured/power-bi-change-feature.png)
-2. Vælg **Angiv som udvalgt**. Hvis du fjerner markeringen "Udvalgt" for et dashboard, fjernes det ikke fra dit arbejdsområde.  
+2. Vælg **Angiv som udvalgt**. Dashboardet fjernes ikke fra Power BI, selvom du fjerner markeringen af det som udvalgt.  
    
     ![meddelelse om fuldførelse](./media/end-user-featured/power-bi-unfeature-new.png)
 

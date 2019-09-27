@@ -12,12 +12,12 @@ ms.author: davidi
 LocalizationGroup: Data from files
 ms.openlocfilehash: 55571cda4558b5dd9ba28f757f6e11ad4b45f939
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61136357"
 ---
-# <a name="self-service-data-prep-in-power-bi"></a>Selvbetjening dataforberedelse i Power BI
+# <a name="self-service-data-prep-in-power-bi"></a>Selvbetjent dataforberedelse i Power BI
 
 Efterhånden som datamængden vokser, stiger behovet for at konvertere dataene i korrekt udformede oplysninger, som der kan handles på. Vi vil gerne have data, der er klar til analyse, til udfyldning af visuelle elementer, rapporter og dashboards, så vi hurtigt kan konvertere vores datamængder til viden, som der kan handles på. Med **selvbetjening til dataforberedelse** til big data i Power BI kan du gå fra data til Power BI-indsigt med bare nogle få klik.
 
@@ -108,10 +108,10 @@ Ved at gemme forretningsdata i standardiseret format af **Common Data Model**, k
 Denne artikel giver et overblik over dataforberedelse af big data til selvbetjening i Power BI og de mange måder, du kan bruge det på. De følgende artikler kommere nærmere ind på almindelige forbrugsscenarier for dataflows. 
 
 * [Opret og brug dataflow i Power BI](service-dataflows-create-use.md)
-* [Ved hjælp af den beregnede enheder på Power BI Premium](service-dataflows-computed-entities-premium.md)
-* [Ved hjælp af dataflows med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
-* [Udviklerressourcer til Power BI dataflows](service-dataflows-developer-resources.md)
-* [Dataflows og Azure Data Lake-integration](service-dataflows-azure-data-lake-integration.md)
+* [Brug af beregnede objekter i Power BI Premium](service-dataflows-computed-entities-premium.md)
+* [Brug af dataflow med datakilder i det lokale miljø](service-dataflows-on-premises-gateways.md)
+* [Udviklerressourcer til Power BI-dataflow](service-dataflows-developer-resources.md)
+* [Integration af dataflow og Azure Data Lake](service-dataflows-azure-data-lake-integration.md)
 
 Du kan finde flere oplysninger om Power-forespørgsel og planlagt opdatering i disse artikler:
 * [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)

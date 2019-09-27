@@ -1,6 +1,6 @@
 ---
-title: Stikprøvetagning af linjer med høj tæthed i Powerbi
-description: Stikprøvetagning af linjer med høj tæthed i Powerbi
+title: Stikprøvetagning af linjer med høj tæthed i Power BI
+description: Stikprøvetagning af linjer med høj tæthed i Power BI
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -12,21 +12,21 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 357611d36fd59be1b674f06ce72c5aba8d020822
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454320"
 ---
 # <a name="high-density-line-sampling-in-power-bi"></a>Stikprøvetagning af linjer med høj tæthed i Power BI
-Fra og med udgivelsen af **Power BI Desktop** fra juni 2017 og opdateringerne til **Power BI-tjenesten** findes der en ny algoritme til stikprøvetagning, som forbedrer visuelle elementer, der bruger stikprøver af data med høj tæthed. Du kan f.eks. oprette et kurvediagram ud fra dine detailbutikkers salgsresultater, hvor hver butik har mere end ti tusinde salgskvitteringer hvert år. Et kurvediagram med disse salgsoplysninger vil indsamle data (Vælg en relevant repræsentation af disse data for at illustrere, hvordan salget varierer over tid) fra dataene for hver butik, og Opret et kurvediagram med flere serier, der dermed repræsenterer de underliggende data. Dette er almindelig praksis ved visualisering af data med høj tæthed. Stikprøvetagning af data med høj tæthed er blevet forbedret i Power BI Desktop. Der er flere oplysninger om dette i denne artikel.
+Fra og med udgivelsen af **Power BI Desktop** fra juni 2017 og opdateringerne til **Power BI-tjenesten** findes der en ny algoritme til stikprøvetagning, som forbedrer visuelle elementer, der bruger stikprøver af data med høj tæthed. Du kan f.eks. oprette et kurvediagram ud fra dine detailbutikkers salgsresultater, hvor hver butik har mere end ti tusinde salgskvitteringer hvert år. I et kurvediagram med disse salgsoplysninger tages der en datastikprøve (der vælges en relevant repræsentation af disse data for at illustrere, hvordan salget varierer over tid) af dataene for hver enkelt butik, og der oprettes et kurvediagram med flere serier, som dermed repræsenterer de underliggende data. Dette er almindelig praksis ved visualisering af data med høj tæthed. Stikprøvetagning af data med høj tæthed er blevet forbedret i Power BI Desktop. Der er flere oplysninger om dette i denne artikel.
 
 ![](media/desktop-high-density-sampling/high-density-sampling_01.png)
 
 > [!NOTE]
 > Algoritmen **Stikprøvetagning med høj tæthed**, der er beskrevet i denne artikel, er tilgængelig både i **Power BI Desktop** og **Power BI-tjenesten**.
 
-## <a name="how-high-density-line-sampling-works"></a>Hvordan med høj tæthed linje, der fungerer med høj tæthed
-Tidligere valgte **Power BI** en samling af eksempeldatapunkter i alle de underliggende data på en deterministisk måde. I en visualisering af data med høj tæthed, som strækker sig over et kalenderår, kan der f.eks. vises 350 eksempeldatapunkter, som hver især er valgt for at sikre, at det fuldstændige dataområde (den samlede serie underliggende data) er repræsenteret i visualiseringen. Forestil dig afbildning af en aktiekursen over en periode på ét år og valgt 365 datapunkter til at oprette et kurvediagram visualisering (det er ét datapunkt for hver dag) for at hjælpe med at forstå, hvordan dette sker.
+## <a name="how-high-density-line-sampling-works"></a>Sådan fungerer stikprøvetagning af linjer med høj tæthed
+Tidligere valgte **Power BI** en samling af eksempeldatapunkter i alle de underliggende data på en deterministisk måde. I en visualisering af data med høj tæthed, som strækker sig over et kalenderår, kan der f.eks. vises 350 eksempeldatapunkter, som hver især er valgt for at sikre, at det fuldstændige dataområde (den samlede serie underliggende data) er repræsenteret i visualiseringen. For at hjælpe dig med at forstå, hvordan dette sker, kan du forestille dig, at du angiver aktiekursen i løbet af en periode på ét år og vælger 365 datapunkter for at oprette en visualisering i form af et kurvediagram (det er ét datapunkt for hver dag).
 
 I denne situation er der mange værdier til en aktiekurs for hver enkelt dag. Der er naturligvis en daglig største- og mindsteværdi, men de kan optræde når som helst i løbet af dagen, når aktiemarkedet er åbent. Ved stikprøvetagning af linjer med høj tæthed, hvor den underliggende datastikprøve er taget kl. 10:30 og 12:00 hver dag, ville du få et repræsentativt snapshot af de underliggende data (kursen kl. 10:30 og 12:00), men du ville muligvis ikke få de faktiske højeste og laveste aktiekurser for det pågældende repræsentative datapunkt (den pågældende dag). I denne – og andre – situationer repræsenterer stikprøven de underliggende data, men den gengiver ikke altid vigtige punkter, som i dette tilfælde vil være de højeste og laveste aktiekurser for hver dag.
 
@@ -35,7 +35,7 @@ Stikprøver af data med høj tæthed tages pr. definition for at kunne oprette v
 ## <a name="how-the-new-line-sampling-algorithm-works"></a>Sådan fungerer den nye algoritme for linjestikprøvetagning
 Den nye algoritme for stikprøvetagning af linjer med høj tæthed er tilgængelig for visualiseringer i kurvediagrammer og områdediagrammer med en fortløbende X-akse.
 
-Visualisering med høj tæthed, **Power BI** på en smart måde udsnit af dine data i dele videoer i høj opløsning og vælger så vigtige punkter til at repræsentere hvert udsnit. For udsnit med høj opløsning data er specifikt tilpasset for at sikre, at det diagram er visuelt ikke kan skelnes fra gengivelse af alle de underliggende datapunkter, men meget hurtigere og mere interaktiv.
+I en visualisering med høj tæthed opdeler **Power BI** på intelligent vis dine data i dele med høj opløsning og vælger derefter vigtige punkter til at repræsentere hver del. Opdelingen af data med høj opløsning er specifikt tilpasset for at sikre, at det deraf følgende diagram ikke kan skelnes visuelt fra gengivelse af alle de underliggende datapunkter, men måden er væsentlig hurtigere og mere interaktiv.
 
 ### <a name="minimum-and-maximum-values-for-high-density-line-visuals"></a>Minimum- og maksimumværdier for linjevisualiseringer med høj tæthed
 For enhver given visualisering gælder følgende visuelle begrænsninger:
@@ -67,7 +67,7 @@ Det kan lyde som en stor mængde analyse for at sikre, at lejlighedsvise udenfor
 ## <a name="tooltips-and-high-density-line-sampling"></a>Værktøjstip og stikprøvetagning af linjer med høj tæthed
 Det er vigtigt at bemærke, at denne proces til gruppering af data, som resulterer i, at minimum- og maksimumværdien for en given placering registreres og vises, kan påvirke måden, som værktøjstip vises på, når du peger på datapunkterne. For at vise, hvordan og hvorfor dette sker, kan vi gå tilbage til vores eksempel med aktiekurserne.
 
-Lad os sige, at du opretter en visualisering baseret på aktiekursen, og du sammenligner to forskellige aktier, som begge bruger **High-Density med høj tæthed**. De underliggende data for hver serie indeholder mange datapunkter (det kan være, at du registrerer aktiekursen hvert sekund på dagen). Algoritmen til stikprøvetagning af linjer med høj tæthed grupperer i beholdere for hver serie uafhængigt af hinanden.
+Lad os forestille os, at du opretter en visualisering baseret på aktiekursen, og at du sammenligner to forskellige aktier, som begge bruger **Stikprøvetagning med høj tæthed**. De underliggende data for hver serie indeholder mange datapunkter (det kan være, at du registrerer aktiekursen hvert sekund på dagen). Algoritmen til stikprøvetagning af linjer med høj tæthed grupperer i beholdere for hver serie uafhængigt af hinanden.
 
 Nu antager vi, at den første aktie stiger i pris kl. 12:02 og derefter hurtigt falder igen ti sekunder senere. Det er et vigtigt datapunkt. Når gruppering i beholdere finder sted for den pågældende aktie, vil den højeste værdi kl. 12:02 være et repræsentativt datapunkt for denne placering.
 
@@ -75,15 +75,15 @@ Men værdien for den anden aktie var hverken høj eller lav for den beholder, de
 
 Denne situation vil ofte opstå med værktøjstip. De høje og lave værdier for en bestemt placering stemmer muligvis ikke perfekt overens med de ligeligt skalerede værdipunkter på X-aksen, og værktøjstippet vil derfor ikke vise værdien.  
 
-## <a name="how-to-turn-on-high-density-line-sampling"></a>Sådan aktiveres stikprøvetagning af linjer med høj tæthed
-Den nye algoritme er som standard slået **til**. Hvis du vil ændre denne indstilling, skal du gå til den **formatering** ruden i den **generelle** kortet, og langs bunden, kan du se en skyder kaldet **High-Density med høj tæthed**. Hvis du vil slå den fra, skal du skubbe den hen på **Fra**.
+## <a name="how-to-turn-on-high-density-line-sampling"></a>Sådan slår du stikprøvetagning af linje med høj tæthed til
+Den nye algoritme er som standard slået **til**. Hvis du vil ændre denne indstilling, skal du gå til ruden **Formatering** og vælge kortet **Generelt**. Nederst kan du se en til/fra-skyder med navnet **Stikprøvetagning med høj tæthed**. Hvis du vil slå den fra, skal du skubbe den hen på **Fra**.
 
 ![](media/desktop-high-density-sampling/high-density-sampling_02.png)
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 Den nye algoritme for stikprøvetagning af linjer med høj tæthed er en vigtig forbedring af Power BI, men der er et par ting, du skal vide, når du arbejder med værdier med høj tæthed og data.
 
-* På grund af større granulering og processen til gruppering i beholdere vil **Værktøjstip** muligvis kun vise en værdi, hvis de repræsentative data er justeret efter markøren. Se de *værktøjstip og stikprøvetagning af linjer med høj tæthed* afsnit i denne artikel for at få flere oplysninger.
+* På grund af større granulering og processen til gruppering i beholdere vil **Værktøjstip** muligvis kun vise en værdi, hvis de repræsentative data er justeret efter markøren. Se afsnittet *Værktøjstip og stikprøvetagning af linjer med høj tæthed* i denne artikel for at få flere oplysninger.
 * Når størrelsen på en samlet datakilde er for stor, eliminerer den nye algoritme serier (forklaringselementer) for at tilpasse maksimumbegrænsningen for dataimporten.
   
   * I denne situation placerer den nye algoritme forklaringsserier alfabetisk. Den arbejder sig ned ad listen over elementer i forklaringen i alfabetisk rækkefølge, indtil maksimum for importen er nået, og importerer ikke flere serier.

@@ -9,16 +9,16 @@ author: maggiesMSFT
 ms.author: maggies
 ms.reviewer: cfinlan
 ms.date: 08/29/2019
-ms.openlocfilehash: add2f82594d83d1e1f177bfad5045c2e0a34ba84
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: f7f1b777e7c4e54dbdcfb1757fe4df274624a580
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70189363"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075987"
 ---
 # <a name="pass-a-report-parameter-in-a-url-for-a-paginated-report-in-power-bi"></a>Videregiv en rapportparameter i en URL-adresse til en sideinddelt rapport i Power BI 
 
-Du kan videregive rapportparametre til en rapport ved at inkludere dem i en URL-adresse til en sideinddelt rapport. Alle forespørgselsparametre kan have tilsvarende rapportparametre. Derfor videregiver du en forespørgselsparameter til en rapport ved at videregive den tilsvarende rapportparameter. Parameternavnet skal have præfikset `rp:`, så Power BI kan genkende det i URL-adressen. 
+Du kan videregive rapportparametre til en rapport ved at inkludere dem i en URL-adresse til en sideinddelt rapport. Alle forespørgselsparametre kan have tilsvarende rapportparametre. Derfor videregiver du en forespørgselsparameter til en rapport ved at videregive den tilsvarende rapportparameter. Parameternavnet skal have præfikset `rp:`, så Power BI kan genkende det i URL-adressen. 
 
 Der skelnes mellem store og små bogstaver og benyttes specialtegn i rapportparametre: 
 
@@ -60,10 +60,10 @@ Eksempel:
 rp:SalesOrderNumber:isnull=true
 ```
 
-Hvis du vil videregive en boolesk værdi, skal du bruge 0 for falsk og 1 for sand. Hvis du vil videregive en flydende værdi, skal du medtage decimalseparatoren for serverens landestandard.
+Hvis du vil videregive en boolesk værdi, skal du bruge 0 for falsk og 1 for sand. Hvis du vil videregive en flydende værdi, skal du inkludere decimalseparatoren for serverens landestandard.
 
 > [!NOTE]
-> Hvis din rapport indeholder en rapportparameter, som har en standardværdi, og værdien for egenskaben **Spørg** er **falsk** (dvs. egenskaben **Spørg bruger** ikke er valgt i Rapportstyring), kan du ikke videregive en værdi for den pågældende rapportparameter i en URL-adresse. Det giver administratorer mulighed for at forhindre, at slutbrugerne kan tilføje eller ændre værdierne for visse rapportparametre.
+> Hvis din rapport indeholder en rapportparameter, som har en standardværdi, og værdien for egenskaben**Spørg** er **falsk** (dvs. egenskaben **Spørg bruger** ikke er valgt i Rapportstyring), kan du ikke videregive en værdi for den pågældende rapportparameter i en URL-adresse. Det giver administratorer mulighed for at forhindre, at slutbrugerne kan tilføje eller ændre værdierne for visse rapportparametre.
 
 ## <a name="additional-examples"></a>Yderligere eksempler 
 

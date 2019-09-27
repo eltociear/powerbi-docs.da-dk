@@ -13,7 +13,7 @@ ms.date: 08/10/2017
 LocalizationGroup: Data from databases
 ms.openlocfilehash: 51efec6c78dbb29b9c3dc760284c7bb3c8711bdc
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "64769923"
@@ -35,11 +35,11 @@ I Power BI er der to måder du kan oprette forbindelse til en live SQL Server An
 
 2. Vælg **Databaser og mere**.
 
-   ![Opret forbindelse for at få data 1](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_1.png)
+   ![Opret forbindelse til Hent data 1](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_1.png)
 
 3. Vælg **SQL Server Analysis Services** > **Opret forbindelse**.
 
-   ![Opret forbindelse for at få data 2](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
+   ![Opret forbindelse til Hent data 2](media/sql-server-analysis-services-tabular-data/connecttoas_getdata_2.png)
 
 4. Vælg en server. Hvis du ikke kan se nogen servere angivet her, betyder det enten, at en gateway og datakilde ikke er konfigureret, eller din konto ikke er angivet under fanen **Brugere** i datakilden, i gatewayen. Kontakt din administrator.
 

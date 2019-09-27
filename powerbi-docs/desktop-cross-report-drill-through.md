@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 09/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: e735d45a7a49c4a0365e35d5bb95957c6145f934
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 6424180dde3dac0d6d2b66c8a9303810b6aa0dc6
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903763"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100111"
 ---
 # <a name="use-cross-report-drillthrough-in-power-bi-desktop"></a>Brug tværgående detaljeadgang i rapport i Power BI Desktop
 
@@ -32,7 +32,7 @@ Følgende definitioner er vigtige at forstå, før vi begynder at konfigurere og
 
 
 > [!NOTE]
-> Individuelt delte rapporter i *Mit arbejdsområde*, som er rapporter, der vises som *[Delt med mig](service-share-dashboards.md#share-a-dashboard-or-report)* , kan kun åbnes i det arbejdsområde, som de oprindeligt er delt fra. 
+> Med funktionen til detaljeadgang på tværs af rapporter i Power BI Desktop kan du gå fra én rapport til en anden rapport, afhængigt af konteksten. Dette er muligt, når rapporterne er inden for det samme arbejdsområde eller den samme app i Power BI-tjenesten. Dette gælder ikke, når rapporter, der deles enkeltvist i *Mit arbejdsområde*, tilgås ([rapporter, der er delt med mig](service-share-dashboards.md#share-a-dashboard-or-report)). Du skal i stedet tilgå rapporten i det arbejdsområde, hvorfra den oprindeligt blev delt.
 
 
 ## <a name="enable-cross-report-drillthrough"></a>Aktivér tværgående detaljeadgang i rapport

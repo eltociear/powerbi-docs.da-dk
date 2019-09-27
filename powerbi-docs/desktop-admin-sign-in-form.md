@@ -11,7 +11,7 @@ ms.date: 04/15/2019
 ms.author: davidi
 ms.openlocfilehash: 5c31277b640b16882bef5c5f2cd9c56b441ede82
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61329876"
@@ -27,7 +27,7 @@ Administratorer kan bruge følgende registreringsnøgle til at deaktivere logonf
 Key: HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Microsoft Power BI Desktop
 valueName: ShowLeadGenDialog
 ```
-Du kan også prøve følgende nøgle, som er blevet fuldført for nogle kunder, der er baseret på deres konfigurationer:
+Du kan også prøve følgende nøgle, som har været nyttig for nogle kunder baseret på deres konfigurationer:
 
 ```
 Key: HKEY_CURRENT_USER\SOFTWARE\Microsoft\Microsoft Power BI Desktop

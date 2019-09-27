@@ -1,6 +1,6 @@
 ---
-title: Power BI Kom i gang med tredjeparts-apps
-description: Power BI Kom i gang med tredjeparts-apps
+title: Power BI Kom i gang med tredjepartsapps
+description: Power BI Kom i gang med tredjepartsapps
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
@@ -9,18 +9,18 @@ ms.author: mblythe
 manager: kfile
 ms.reviewer: ''
 ms.cunstom: ''
-ms.date: 08/10/2017
+ms.date: 09/16/2019
 LocalizationGroup: Get started
-ms.openlocfilehash: 11afe27ffbca295eec67fd07731cc646bcca56dc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 3de0b5473c6d00013bdf109f262dc0577c3bf290
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769688"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073529"
 ---
 # <a name="get-started-with-third-party-apps"></a>Kom i gang med tredjepartsapps
 
-Med Power BI kan du bruge en app, som er bygget af en virksomhed eller en enkeltperson, som ikke er Microsoft. Du kan f.eks, bruge en tredjeparts-app, som integreres i Power BI-felter i et webprogram med brugerdefinerede. Når du bruger en tredjepartsapp, du bliver bedt om at tildele det pågældende program visse tilladelser til din Power BI-konto og ressourcer. Det er vigtigt, at du kun giver tilladelser til programmer, du kender og har tillid til. Tilladelser til et program kan tilbagekaldes når som helst. Se [Tilbagekald tilladelser for tredjepartsapps](#revoke).
+Med Power BI kan du bruge en app, som er bygget af en virksomhed eller en enkeltperson, som ikke er Microsoft. Du kan f.eks. bruge en tredjepartsapp, som integreres i Power BI-felter i et specialbygget webprogram. Når du bruger en tredjepartsapp, bliver du bedt om at tildele det pågældende program visse tilladelser til din Power BI-konto og dine Power BI-ressourcer. Det er vigtigt, at du kun giver tilladelser til programmer, du kender og har tillid til. Tilladelser til et program kan tilbagekaldes når som helst. Se [Tilbagekald tilladelser for tredjepartsapps](#revoke).
 
 Her er de adgangstyper, et program kan anmode om.
 
@@ -49,14 +49,14 @@ Her er de adgangstyper, et program kan anmode om.
 
 ## <a name="revoke-third-party-app-permissions"></a>Tilbagekald tilladelser for tredjepartsapps
 
-Du tilbagekalder tilladelser til en tredjeparts-app ved at gå til mine Apps i Office 365-webstedet.
+Du tilbagekalder tilladelser fra en tredjepartsapp ved at gå til webstedet Mine apps i Office 365.
 
-På den **Office 365 mine apps** websted, sådan tilbagekalde tilladelser fra tredjepart:
+På webstedet **Mine apps i Office 365** kan du tilbagekalde tilladelser fra tredjepart på følgende måde:
 
 1. Gå til [Office 365-webstedet Mine apps](https://portal.office.com/myapps).
 
-2. På den **mine apps** , finde appen fra tredjepart.
+2. Find tredjepartsappen på siden **Mine apps**.
 
-3. Hold musemarkøren over appfeltet, klik på knappen **(...)** , og klik på **Fjern**.
+3. Hold musemarkøren over appfeltet, klik på knappen **(...)**, og klik på **Fjern**.
 
    ![Fjern](media/service-power-bi-get-started-third-party-apps/remove.png)

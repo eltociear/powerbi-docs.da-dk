@@ -1,6 +1,6 @@
 ---
-title: 'Selvstudium: Byg en model til Maskinindlæring i Power BI (prøveversion)'
-description: I dette selvstudium kan du oprette en model til Maskinindlæring i Power BI.
+title: 'Selvstudium: Byg en model til maskinel indlæring med Power BI (prøveversion)'
+description: I dette selvstudium skal du bygge en model til maskinel indlæring i Power BI.
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -13,187 +13,187 @@ ms.author: davidi
 LocalizationGroup: Connect to services
 ms.openlocfilehash: 611d6f6c923e6cb68af94840c4266a0b6dee7651
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61406579"
 ---
-# <a name="tutorial-build-a-machine-learning-model-in-power-bi-preview"></a>Selvstudium: Byg en model til Maskinindlæring i Power BI (prøveversion)
+# <a name="tutorial-build-a-machine-learning-model-in-power-bi-preview"></a>Selvstudium: Byg en model til maskinel indlæring med Power BI (prøveversion)
 
-I dette selvstudium artikel kan du bruge **automatiseret Machine Learning** til at oprette og anvende en binær forudsigelsesmodel i Power BI. Selvstudiet indeholder vejledning til oprettelse af en Power BI dataflowet og ved hjælp af enhederne, der er defineret i dataflowet til at træne og validere en model til maskinel indlæring direkte i Power BI. Vi bruger derefter denne model for pointsystem til at generere forudsigelser.
+I denne artikel i dette selvstudium skal du bruge **automatiseret maskinel indlæring** til at oprette og anvende en binær forudsigelsesmodel i Power BI. Selvstudiet indeholder en vejledning i, hvordan du opretter et dataflow i Power BI og bruger de enheder, der er defineret i dataflowet, til at oplære og validere en model til maskinel indlæring direkte i Power BI. Derefter bruger vi denne model til at tildele point for at generere forudsigelser.
 
-Først skal opretter du en binær forudsigelse model til maskinel indlæring, for at forudsige formålet køb med online kunder, der er baseret på et sæt af deres online session attributter. Et benchmark machine learning-datasæt, der bruges i denne opgave. Når en model er oplært, vil Power BI automatisk generere en valideringsrapport, der forklarer model resultaterne. Du kan derefter gennemse Valideringsrapporten og anvende modellen til dine data for scoring.
+Først skal du oprette en binær forudsigelsesmodel til maskinel indlæring for at forudsige købshensigten hos onlineshoppere på baggrund af attributterne for deres onlinesession. Vi benytter et benchmarkdatasæt til maskinel indlæring til denne øvelse. Når en model er oplært, opretter Power BI automatisk en valideringsrapport, der forklarer resultaterne af modellen. Du kan derefter gennemgå valideringsrapporten og anvende modellen på dine data for at tildele point.
 
-I dette selvstudium, består af følgende trin:
+Dette selvstudium består af følgende trin:
 
 > [!div class="checklist"]
-> * Opret en dataflow med inputdata
-> * Opret og træne en model til maskinel indlæring
-> * Gennemse rapporten model validering
-> * Anvende modellen til en dataflowet enhed
-> * Ved hjælp af outputtet fra modellen score i en Power BI-rapport
+> * Opret et dataflow med inputdataene
+> * Opret og oplær en model til maskinel indlæring
+> * Gennemse modelvalideringsrapporten
+> * Anvend modellen på en dataflowenhed
+> * Brug af resultatet fra modellen i en Power BI-rapport
 
-## <a name="create-a-dataflow-with-the-input-data"></a>Opret en dataflow med inputdata
+## <a name="create-a-dataflow-with-the-input-data"></a>Opret et dataflow med inputdataene
 
-Den første del af dette selvstudium er at oprette en dataflow med inputdata. Denne proces tager nogle få trin, som vist i følgende afsnit, starter med at hente data.
+Den første del af dette selvstudium består i at oprette et dataflow med inputdata. Denne proces involverer nogle få trin, som vist i følgende afsnit, og begynder med hentning af data.
 
 ### <a name="get-data"></a>Hent data
 
-Det første trin i oprettelsen af en dataflowet er at have dine datakilder, der er klar. I dette tilfælde kan vi bruge et machine learning datasæt fra et sæt online-sessioner, hvoraf nogle culminated i et køb. Datasættet indeholder et sæt af attributter om disse sessioner, som vi bruger til oplæring af vores model.
+Det første trin i oprettelsen af et dataflow er at gøre dine datakilder klar. I vores tilfælde bruger vi et datasæt til maskinel indlæring fra et sæt onlinesessioner, hvoraf nogle af dem resulterede i et køb. Datasættet indeholder et sæt attributter om disse sessioner, som vi bruger til oplæring af vores model.
 
-Du kan downloade datasættet fra Irvine UC-webstedet.  Vi har også det tilgængeligt med henblik på dette selvstudium, fra følgende link: [online_shoppers_intention.csv](https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv).
+Du kan downloade datasættet fra UC Irvine-webstedet.  Til dette selvstudium har vi også adgang til denne fil fra følgende link: [online_shoppers_intention.csv](https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv).
 
-### <a name="create-the-entities"></a>Opret enheder
+### <a name="create-the-entities"></a>Opret enhederne
 
 Log på Power BI-tjenesten for at oprette enhederne i dit dataflow, og gå til et arbejdsområde i den dedikerede kapacitet, som AI-prøveversionen er aktiveret for.
 
-Hvis du ikke allerede har et arbejdsområde, kan du oprette en ved at vælge **arbejdsområder** i navigationsmenuen til venstre i Power BI-tjenesten, og vælg **Opret apparbejdsområde** nederst på panelet, der vises. Dette åbner et panel til højre for at angive oplysninger om arbejdsområde. Angiv et navn til arbejdsområdet, og vælg **Avanceret**. Bekræft, at arbejdsområdet bruger dedikeret kapacitet ved hjælp af knappen radio, og at den er tildelt til en forekomst af dedikeret kapacitet, der har aktiveret prøveversionen AI. Vælg derefter **Gem**.
+Hvis du ikke allerede har et arbejdsområde, kan du oprette et ved at vælge **Arbejdsområder** i menuen til venstre i Power BI-tjenesten og derefter vælge **Opret apparbejdsområde** nederst i det panel, der vises. Herefter åbnes et panel til højre, hvor du kan angive oplysninger om arbejdsområdet. Skriv et navn til arbejdsområdet, og vælg derefter **Avanceret**. Bekræft, at arbejdsområdet bruger dedikeret kapacitet, ved hjælp af alternativknappen, og at det er tildelt til en forekomst af dedikeret kapacitet, hvor AI Preview er slået til. Vælg derefter **Gem**.
 
 ![Opret et arbejdsområde](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-01.png)
 
-Når arbejdsområdet er oprettet, kan du vælge **Skip** nederst til højre på velkomstskærmen, som vist på følgende billede.
+Når arbejdsområdet er blevet oprettet, kan du vælge **Spring over** nederst til højre på velkomstskærmen, som vist på følgende billede.
 
 ![Spring over, hvis du har et arbejdsområde](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-02.png)
 
-Vælg den **Dataflows (prøveversion)** fanen. Vælg den **Opret** knappen øverst til højre på arbejdsområdet, og derefter vælge **dataflowet**.
+Vælg fanen **Dataflow (forhåndsvisning)** . Vælg knappen **Opret** øverst til højre i arbejdsområdet, og vælg derefter **Dataflow**.
 
 ![Opret dataflow](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-03.png)
 
-Vælg **Tilføj nye enheder**. Dette starter en **Power-forespørgsel** -editoren i browseren.
+Vælg **Tilføj nye enheder**. Dette starter en **Power-forespørgselseditor** i browseren.
 
 ![Tilføj ny enhed](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-04.png)
 
-Vælg **tekst/CSV-fil** som en datakilde, vist på følgende billede.
+Vælg **Tekst/CSV-fil** som en datakilde, som vist på følgende billede.
 
-![Tekst/CSF-fil, der er valgt](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-05.png)
+![Tekst/CSV-fil er valgt](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-05.png)
 
-I den **Opret forbindelse til en datakilde** , der vises, næste, skal du indsætte følgende link til den *online_shoppers_intention.csv* i den **filsti eller URL-adresse** , og vælg derefter  **Næste**.
+I **Opret forbindelse til en datakilde**, der vises herefter, skal du indsætte følgende link til *online_shoppers_intention.csv* i feltet **Filsti eller URL-adresse** og derefter vælge  **Næste**.
 
 `https://raw.githubusercontent.com/santoshc1/PowerBI-AI-samples/master/Tutorial_AutomatedML/online_shoppers_intention.csv`
 
 ![Filsti](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-06.png)
 
-Power-Forespørgselseditor kan du se en eksempelvisning af data fra csv-filen. Vælg **transformere tabellen** i kommandoen båndet og derefter vælge **Brug den første række som overskrifter** i den menu, der vises. Dette tilføjer den _Promoveres overskrifter_ forespørgselstrin i den **anvendte trin** afsnit i højre side af skærmen. Du kan omdøbe forespørgslen til et pift navn ved at ændre værdien i den **navn** box, der blev fundet i ruden til højre. Du kan f.eks. ændre navnet på forespørgslen til _Online besøgende_.
+I Power-forespørgselseditor vises et eksempel på dataene fra CSV-filen. Vælg **Transformér tabel** på kommandobåndet, og vælg derefter **Brug den første række som overskrifter** i den menu, der vises. Herefter føjes forespørgselstrinnet _Fremhævede overskrifter_ til afsnittet **Anvendte trin** til højre på skærmen. Du kan omdøbe forespørgslen til et mere brugervenligt navn ved at ændre værdien i feltet **Navn** i ruden til højre. Du kan f.eks. ændre navnet på forespørgslen til _Onlinebesøgende_.
 
 ![Skift til et brugervenligt navn](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-07.png)
 
-Nogle af attributtyperne i data i dette datasæt er _numerisk_ eller _boolesk_, selvom disse kan fortolkes som strenge ved **Power-forespørgsel**. Vælg ikonet attribut type øverst på hver kolonneoverskrift for at ændre de kolonner, der er anført nedenfor til følgende typer:
+Nogle af attributdatatyperne i dette datasæt er _numeriske_ eller _booleske_, selvom de kan fortolkes som strenge af **Power Query**. Vælg attributtypeikonet øverst i hver kolonneoverskrift for at ændre de kolonner, der er angivet nedenfor, til følgende typer:
 
 * **Decimaltal:** Administrative_Duration; Informational_Duration; ProductRelated_Duration; BounceRates; ExitRates; PageValues; SpecialDay
-* **Sand/falsk:** Weekend; Indtægt
+* **Sand/falsk:** Weekend; Revenue
 
 ![Skift datatype](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-08.png)
 
-Den **binære forudsigelse** model, vi vil træne kræver et boolesk felt som en etiket, der identificerer resultater fra de tidligere observationer. I dette datasæt, den _indtægt_ attribut angiver køb, og denne attribut er allerede tilgængelig som en boolesk værdi. Så behøver vi ikke at tilføje en beregnet kolonne til etiketten. I andre datasæt, skal du muligvis at transformere eksisterende etiketattributterne til en boolesk kolonne.
+Den **binære forudsigelsesmodel**, som vi vil oplære, kræver et boolesk felt som et mærkat, der identificerer resultaterne fra de tidligere observationer. I dette datasæt indikerer attributten _Revenue_ køb, og denne attribut er allerede tilgængelig som en boolesk værdi. Vi behøver derfor ikke at tilføje en beregnet kolonne for mærkatet. I andre datasæt kan du blive nødt til at transformere eksisterende mærkatattributter til en boolesk kolonne.
 
-Vælg den **udført** knap til at lukke Forespørgselseditor. Dette viser listen over enheder med den _Online besøgende_ data, vi har tilføjet. Vælg **Gem** i øverste højre hjørne, og Angiv et navn til dataflowet, og vælg derefter **Gem** i dialogboksen, som vist på følgende billede.
+Vælg knappen **Udført** for at lukke Power-forespørgselseditor. Dette viser listen over enheder med de data for _Onlinebesøgende_, som vi har tilføjet. Vælg **Gem** i øverste højre hjørne, angiv et navn til dataflowet, og vælg derefter **Gem** i dialogboksen, som vist på følgende billede.
 
 ![Gem dataflowet](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-09.png)
 
 ### <a name="refresh-the-dataflow"></a>Opdater dataflowet
 
-Lagring af dataflowet resultaterne i en meddelelse, der vises, angiver, at din dataflowet er blevet gemt. Vælg **Opdater nu** til at overføre data fra kilden i dataflowet.
+Hvis du gemmer dataflowet, resulterer det i, at en meddelelse, som angiver, at dataflowet er blevet gemt, vises. Vælg **Opdater nu** for at overføre data fra kilden til dataflowet.
 
 ![Opdater nu](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-10.png)
 
 Vælg **Luk** i øverste højre hjørne, og vent, indtil opdateringen af dataflowet er blevet fuldført.
 
-Du kan også opdatere din dataflowet ved hjælp af den **handlinger** kommandoer. Tidsstemplet viser dataflowet, når opdateringen er fuldført.
+Du kan også opdatere dataflowet ved hjælp af kommandoen **Handlinger**. I dataflowet vises et tidsstempel for, hvornår opdateringen blev fuldført.
 
 ![Tidsstempel for opdatering](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-11.png)
 
-## <a name="create-and-train-a-machine-learning-model"></a>Opret og træne en model til maskinel indlæring
+## <a name="create-and-train-a-machine-learning-model"></a>Opret og oplær en model til maskinel indlæring
 
-Vælg dataflowet, når opdateringen er fuldført. For at tilføje en machine learning-modellen, skal du vælge den **gælder ML-model** knappen i den **handlinger** listen for den grundlæggende enhed, der indeholder dine data og etiket undervisningsoplysninger, og vælg derefter **Tilføj en Machine learning-modellen**.
+Vælg dataflowet, når opdateringen er fuldført. Hvis du vil tilføje en model til maskinel indlæring, skal du bruge knappen **Anvend ML-model** på listen **Handlinger** for den basisenhed, der indeholder dine oplæringsdata og mærkatoplysninger, og derefter vælge **Tilføj en model til maskinel indlæring**.
 
 ![Tilføj en model til maskinel indlæring](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-12.png)
 
-Det første trin til oprettelse af vores machine learning-modellen er at identificere de historiske data, herunder feltet etiket, der skal til at forudsige. Modellen oprettes ved at lære på baggrund af disse data.
+Det første trin til oprettelse af vores model til maskinel indlæring er at identificere de historiske data, herunder det mærkatfelt, som du vil forudsige. Modellen vil blive oprettet ved at lære fra disse data.
 
-Hvis vi bruger datasættet, dette er den **indtægt** felt. Vælg **indtægt** som ' historiske resultatet ' feltværdien og derefter vælge **næste**.
+I forbindelse med det datasæt, som vi benytter, er dette felt **Revenue**. Vælg **Revenue** som værdien for feltet med det historiske resultat, og vælg derefter **Næste**.
 
 ![Vælg historiske data](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-13.png)
 
-Derefter skal vi vælge typen af machine learning-modellen til at oprette. Powerbi analyserer værdierne i feltet historiske resultatet, som du har identificeret og foreslår, hvilke typer af modeller til maskinel indlæring, der kan oprettes for at forudsige dette felt.
+Derefter skal du vælge den type model til maskinel indlæring, der skal oprettes. Power BI analyserer værdierne i det historiske resultatfelt, som du har identificeret, og foreslår de typer modeller til maskinel indlæring, der kan oprettes for at forudsige dette felt.
 
-I dette tilfælde, da vi er ved at forudsige en binær resultatet af om en bruger vil gøre et køb eller ej, vælger **binære forudsigelse** for modeltype og derefter vælge Næste.
+Da vi i dette tilfælde forudsiger et binært udfald af, om en bruger vil foretage et køb eller ej, skal du vælge **Binær forudsigelse** som modeltype og derefter vælge Næste.
 
-![Binær forudsigelse, der er valgt](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-14.png)
+![Binær forudsigelse er valgt](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-14.png)
 
-Derefter skal Power BI har en foreløbig scanning af dataene og foreslår input, som kunne bruge modellen. Du har mulighed for at tilpasse felterne input, der bruges til modellen. I vores organiserede datasæt, for at vælge felterne, markere afkrydsningsfeltet ud for enhedsnavnet på. Vælg **næste** til at acceptere input.
+Derefter foretager Power BI en foreløbig scanning af dataene og foreslår de input, som modellen kan bruge. Du har mulighed for at tilpasse de inputfelter, der bruges til modellen. I vores organiserede datasæt skal du markere afkrydsningsfeltet ud for enhedens navn for at markere alle felterne. Vælg **Næste** for at acceptere inputtene.
 
-![Skal du markere afkrydsningsfeltet Næste](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-15.png)
+![Vælg Næste](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-15.png)
 
-Vi skal angive et navn til vores model samt brugervenlige etiketterne til de resultater, der skal bruges i den automatisk oprettede rapport, der opsummerer resultaterne af valideringen modellen i det sidste trin. Næste vi nødt til at navngive modellen _køb hensigt forudsigelse_, og de etiketter, true og false som _køb_ og _Nej-køb_. Vælg derefter **Gem**.
+I det sidste trin skal du give modellen et navn samt brugervenlige mærkater for de resultater, der skal benyttes i den rapport, der automatisk genereres, og som opsummerer resultaterne af modelvalideringen. Derefter skal du navngive modellen _Purchase Intent Prediction_ og mærkaterne for True og False til henholdsvis _Køb_ og _Intet køb_. Vælg derefter **Gem**.
 
 ![Gem modellen](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-16.png)
 
-Vores machine learning-modellen er nu klar til undervisning. Vælg **Opdater nu** til at starte oplæring af modellen.
+Vores model til maskinel indlæring er nu klar til oplæring. Vælg **Opdater nu** for at begynde at oplære modellen.
 
 ![Opdater nu](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-17.png)
 
-Starter uddannelsesprocessen af med høj tæthed og normalisering af dine historiske data og opdele dit datasæt i to nye enheder *køb hensigt forudsigelse Træningsdata* og *køb hensigt forudsigelse test Data*.
+Oplæringsprocessen starter med at indsamle og normalisere dine historiske data og opdele dit datasæt i to nye enheder *Purchase Intent Prediction Training Data* og *Purchase Intent Prediction Testing Data*.
 
-Afhængigt af størrelsen på datasættet, kan uddannelsesprocessen tage alt fra nogle få minutter til et par timer. På dette tidspunkt kan du se modellen i det **modeller til maskinel indlæring** fanen i dataflowet. Den _klar_ status, der angiver, at modellen er sat i kø til uddannelse eller er under uddannelse.
+Afhængigt af datasættets størrelse kan oplæringen tage alt fra nogle få minutter til et par timer. På dette tidspunkt kan du se modellen på fanen **Modeller til maskinel indlæring** i dataflowet. Statussen _Klar_ angiver, at modellen er sat i kø til oplæring eller er under oplæring.
 
-![Klar til uddannelse](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-18.png)
+![Klar til oplæring](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-18.png)
 
-Mens modellen er uddannelse, kan du ikke kan få vist eller redigere dataflowet. Du kan bekræfte, at modellen er ved at blive oplært og godkendt via status for dataflowet. Det ser ud som en opdatering af data i gang i den **Dataflows** fane i arbejdsområdet.
+Mens modellen oplæres, kan du hverken få vist eller redigere dataflowet. Du kan få bekræftet, at modellen oplæres og valideres, gennem dataflowets status. Dette vises som en igangværende dataopdatering på fanen **Dataflows** i arbejdsområdet.
 
 ![Igangværende](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-19.png)
 
-Når modelundervisning er fuldført, viser dataflowet en opdaterede opdateringstidspunkt. Du kan bekræfte, at modellen er oplært ved at navigere til den **modeller til maskinel indlæring** fane i dataflowet. Du har oprettet modellen skal vise status som **Trained** og **sidste uddannet** tid nu skal opdateres.
+Når oplæringen af modellen er fuldført, viser dataflowet et opdateret opdateringstidspunkt. Du kan få bekræftet, at modellen er oplært, ved at gå til fanen **Modeller til maskinel indlæring** i dataflowet. Den model, du har oprettet, bør have status som **Oplært** og tidspunktet for **Senest oplært** bør nu være opdateret.
 
-![Sidst trænet i](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-20.png)
+![Senest oplært den](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-20.png)
 
-## <a name="review-the-model-validation-report"></a>Gennemse rapporten model validering
+## <a name="review-the-model-validation-report"></a>Gennemse modelvalideringsrapporten
 
-Til at gennemse model validering af rapporten, i den **modeller til maskinel indlæring, s** vælger den **Vis rapport resultater og anvende modellen** knappen i den **handlinger** kolonne til modellen . Denne rapport beskriver, hvordan din machine learning-modellen er sandsynligvis til at udføre.
+Hvis du vil gennemse modelvalideringsrapporten skal du i **Modeller til maskinel indlæring** vælge knappen **Vis performance-rapport, og anvend model** i kolonnen **Handlinger** for modellen. I denne rapport beskrives det, hvordan ydeevnen for din model til maskinel indlæring sandsynligvis vil være.
 
-I den **Modelydeevnen** side i rapporten, vælge **nøgle Lobbyister** til at få vist de øverste indikatorer data til din model. Du kan vælge en af indikatorer data for at se, hvordan resultatet fordelingen er knyttet til denne indikator.
+På siden **Ydeevne af modellen** i rapporten skal du vælge **Nøglefaktorer** for at få vist de vigtigste forudsigelser for din model. Du kan vælge en af forudsigelserne for at få vist fordelingen af det resultat, der er knyttet til den pågældende forudsigelse.
 
-![Model-ydeevne](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-21.png)
+![Ydeevne af modellen](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-21.png)
 
-Du kan bruge den **sandsynlighed tærskel** udsnit på siden Modelydeevnen for at undersøge dens indflydelse på præcision og tilbagekaldelse til modellen.
+Du kan bruge udsnitsværktøjet **Tærskel for sandsynlighed** på siden Ydeevne af modellen til at undersøge dens indflydelse på præcision og genkaldelse for modellen.
 
 ![Tærskel for sandsynlighed](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-22.png)
 
-Andre sider i rapporten beskrive den statistiske præstation til modellen.
+De øvrige sider i rapporten beskriver de statistiske ydeevnemålepunkter for modellen.
 
-Rapporten indeholder også en siden med oplysninger om træning, som beskriver de forskellige gentagelser, der blev kørt, hvordan funktioner blev hentet fra input og hyperparameters for den endelige model, der bruges.
+Rapporten indeholder også siden Oplæringsoplysninger, der beskriver de forskellige gentagelser, der er blevet kørt, hvordan funktionerne blev trukket ud fra inputtet, samt hyperparametrene for den endelige model, der blev anvendt.
 
-## <a name="apply-the-model-to-a-dataflow-entity"></a>Anvende modellen til en dataflowet enhed
+## <a name="apply-the-model-to-a-dataflow-entity"></a>Anvend modellen på en dataflowenhed
 
-Vælg den **Anvend model** knappen øverst i rapporten for at aktivere denne model, når dataflowet opdateres. I den **Anvend** dialogboksen, kan du angive målenheden, der har som modellen skal anvendes i kildedataene.
+Vælg knappen **Anvend model** øverst i rapporten for at aktivere denne model, når dataflowet opdateres. I dialogboksen **Anvend** skal du angive den destinationsenhed, der har de kildedata, som modellen skal anvendes for.
 
 ![Anvend modellen](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-23.png)
 
-Når du bliver spurgt, skal du **Opdater** dataflowet til at få vist resultaterne af din model.
+Du skal **opdatere** dataflowet for at få vist et eksempel på resultatet af din model, når du bliver bedt om det.
 
-Anvendelse af modellen opretter en ny enhed med suffikset **beriget < modelnavn >** føjes til den enhed, hvor du har anvendt modellen. Anvendelse af modellen til i dette tilfælde den **OnlineShoppers** enhed opretter **OnlineShoppers beriget køb hensigt forudsigelse**, som indeholder de forudsagte output fra modellen.
+Hvis du anvender modellen, oprettes en ny enhed med suffikset **enriched <model_name>** , der føjes til den enhed, som du anvendte modellen for. I vores tilfælde vil anvendelse af modellen for enheden **OnlineShoppers** oprette **OnlineShoppers enriched Purchase Intent Prediction**, som omfatter det forudsagte output fra modellen.
 
-Anvendelse af en binær forudsigelsesmodel føjer tre kolonner med forudsagt resultatet, sandsynlighedsscore og de øverste post-specifikke lobbyister for forudsigelse, hver indledes med det angivne kolonnenavn.
+Hvis du anvender en binær forudsigelsesmodel, tilføjes der tre kolonner med et forudsagt resultat, en sandsynlighedsscore og de vigtigste nøglefaktorer for forudsigelsen, der hver især har det angivne kolonnenavn som præfiks.
 
-![Tre kolonner i resultatet](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-24.png)
+![Tre kolonner med resultater](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-24.png)
 
-På grund af et kendt problem der score output kolonnerne i den enhed, der er beriget kun kan tilgås fra Power BI Desktop. Hvis du vil se dem i tjenesten, skal du bruge et særlig forhåndsvisning objekt.
+På grund af et kendt problem kan du kun få adgang til outputkolonner med tildelte point i den forbedrede enhed, fra Power BI Desktop. Hvis du vil have vist disse kolonner i tjenesten, skal du bruge en særlig eksempelenhed.
 
-Når dataflowet opdateringen er fuldført, kan du vælge den **OnlineShoppers beriget køb hensigt forudsigelse prøveversion** enheden for at få vist resultaterne.
+Når dataflowet er blevet opdateret, kan du vælge enheden **OnlineShoppers enriched Purchase Intent Prediction Preview** for at få vist resultaterne.
 
-![Få vist resultaterne](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-25.png)
+![Se resultaterne](media/service-tutorial-build-machine-learning-model/tutorial-build-machine-learning-model-25.png)
 
-## <a name="using-the-scored-output-from-the-model-in-a-power-bi-report"></a>Ved hjælp af outputtet fra modellen score i en Power BI-rapport
+## <a name="using-the-scored-output-from-the-model-in-a-power-bi-report"></a>Brug af resultatet fra modellen i en Power BI-rapport
 
-Hvis du vil bruge score outputtet fra din model til maskinel indlæring, du kan oprette forbindelse til din dataflowet fra Power BI desktop, ved hjælp af Dataflows connector. Den **OnlineShoppers beriget køb hensigt forudsigelse** enhed kan nu bruges til at inkorporere til forudsigelse af din model i Power BI-rapporter.
+Hvis du vil bruge resultatet med tildelte point fra din model til maskinel indlæring, kan du oprette forbindelse til dataflowet fra Power BI Desktop ved hjælp af connectoren Dataflows. Enheden **OnlineShoppers enriched Purchase Intent Prediction** kan nu bruges til at inkorporere forudsigelserne fra din model i Power BI-rapporter.
 
 ## <a name="next-steps"></a>Næste trin
 
-I dette selvstudium kan du har oprettet og anvendes en binær forudsigelsesmodel i Power BI ved hjælp af disse trin:
+I dette selvstudium har du oprettet og anvendt en binær forudsigelsesmodel i Power BI ved hjælp af disse trin:
 
-* Opret en dataflow med inputdata
-* Opret og træne en model til maskinel indlæring
-* Gennemse rapporten model validering
-* Anvende modellen til en dataflowet enhed
-* Ved hjælp af outputtet fra modellen score i en Power BI-rapport
+* Opret et dataflow med inputdataene
+* Opret og oplær en model til maskinel indlæring
+* Gennemse modelvalideringsrapporten
+* Anvend modellen på en dataflowenhed
+* Brug af resultatet fra modellen i en Power BI-rapport
 
-Du kan finde flere oplysninger om Machine Learning automation i Power BI i [automatiseret Machine Learning i Power BI (prøveversion)](service-machine-learning-automated.md).
+Du kan få flere oplysninger om automatiseret maskinel indlæring i Power BI i [Automatiseret maskinel indlæring i Power BI (prøveversion)](service-machine-learning-automated.md).

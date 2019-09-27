@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 06/08/2018
 ms.openlocfilehash: 508f304e2f5033c301db683e3b7557856fb3731b
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61386287"
@@ -31,7 +31,7 @@ id     |  Guid       | Entydigt id for datasættet overalt i systemet.        | 
 navn     | Streng        | Datasættets brugerdefinerede navn.        | Falsk        | Sandt        
 tabeller     | Tabel[]        | Samling af tabeller.        |  Falsk       | Falsk        
 relationer     | Relation[]        | Samling af relationer mellem tabeller.        | Falsk        |  Falsk  
-standardtilstand     | Streng        | Bestemmer, om datasættet udgives, streames, eller begge dele, med værdier af "Overfør" og "Streaming".         | Falsk        |  Falsk
+standardtilstand     | Streng        | Bestemmer, om datasættet sendes via push, streames elle begge dele, med værdierne "Push" og "Streaming".         | Falsk        |  Falsk
 
 ## <a name="table"></a>Tabel
 

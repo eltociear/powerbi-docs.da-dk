@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: c32f4b0a03ba751d5b8cbd6e98633275ece9222b
-ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.openlocfilehash: 4ec7a67b861a747f9f8f654ab9fb3fa5c2951af3
+ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70877800"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175202"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration af Power BI – ofte stillede spørgsmål
 
@@ -38,6 +38,7 @@ Denne artikel omhandler ofte stillede spørgsmål om Power BI-administration. Du
 
 * [Hvordan vil dette ændre den måde, jeg administrerer identiteter for brugerne i organisationen på i dag?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [Hvordan administrerer vi Power BI?](#how-do-we-manage-power-bi)
+* [Hvad er processen til administration af en lejer, der er oprettet af Microsoft for brugerne?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
 * [Kan jeg kontrollere den Office 365-lejer, som brugerne føjes til, hvis jeg har flere domæner?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to)
 * [Hvordan fjerner jeg Power BI for brugere, der allerede er tilmeldt?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Hvordan får jeg besked, når nye brugere tilmelder sig min lejer?](#how-do-i-know-when-new-users-have-joined-my-tenant)
@@ -172,6 +173,14 @@ Der er tre scenarier, der kan gøre sig gældende for brugere i din organisation
 Power BI har en administrationsportal, der giver dig mulighed for at få vist brugsstatistikker, og som indeholder et link til Microsoft 365 Administration, hvor du kan administrere brugere og grupper. Desuden giver portalen mulighed for at styre indstillinger på tværs af lejere.
 
 Hvis du vil bruge Power BI-administrationsportalen, skal du markere din konto som **Global administrator** i Office 365 eller Azure Active Directory, eller nogen skal tildele rollen Power BI-tjenesteadministrator til din brugerkonto. Få mere at vide under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md) og [Power BI-administrationsportalen](service-admin-portal.md).
+
+### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Hvad er processen til administration af en lejer, der er oprettet af Microsoft for brugerne?
+
+Når en bruger via selvbetjening melder sig til en cloudtjeneste, som bruger Azure AD, føjer tjenesten brugeren til en ikke-administreret Azure AD-mappe, der er baseret på brugerens maildomæne. Du kan gøre krav på og administrere den lejer, som nogen har oprettet ved hjælp af en proces, der kaldes *administrationsovertagelse*. Få mere at vide under [Overtag en ikke-administreret mappe som administrator i Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover). Den form for overtagelse, du foretager, afhænger af, om der er en eksisterende administreret lejer knyttet til dit domæne:
+
+* Power BI understøtter intern administratorovertagelse. Når du udfører en _intern_ administratorovertagelse af en ikke-administreret Azure-mappe, tilføjes du som global administrator af den ikke-administrerede mappe. Ingen brugere, domæner eller tjenesteplaner overføres til andre mapper, som du administrerer.
+
+* Power BI understøtter ikke længere ekstern administratorovertagelse. Når du udfører en _ekstern_ administratorovertagelse af en ikke-administreret Azure-mappe, føjer du DNS-domænenavnet for den ikke-administrerede mappe til din administrerede Azure-mappe. Når du tilføjer domænenavnet, oprettes der en tilknytning af brugere til ressourcer i din administrerede Azure-mappe, så disse brugere fortsat kan få adgang til tjenester uden afbrydelser.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to"></a>Kan jeg kontrollere den Office 365-lejer, som brugerne føjes til, hvis jeg har flere domæner?
 

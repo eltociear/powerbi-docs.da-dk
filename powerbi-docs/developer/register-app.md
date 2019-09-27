@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.openlocfilehash: 73cca097ce6693c3bbee538eb1518a2ede19beab
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61269573"
@@ -53,7 +53,7 @@ Sådan registrerer du dit program ved hjælp af værktøjet Power BI App Registr
 
     ![Programtype](media/register-app/register-app-new-design-app-type.png)
 
-5. Hvis du har valgt **serverbaseret webprogram** som programtype, skal du fortsætte med at angive en værdi for **URL-adresse til startside** og **URL-adresse til omdirigering**. Den **URL-adressen til omdirigering** fungerer sammen med enhver gyldig URL-adresse og stemmer overens med det program, du har oprettet. Hvis du har valgt **oprindeligt**, skal du fortsætte til trin 6.
+5. Hvis du har valgt **serverbaseret webprogram** som programtype, skal du fortsætte med at angive en værdi for **URL-adresse til startside** og **URL-adresse til omdirigering**. **URL-adressen til omdirigering** fungerer sammen med en hvilken som helst gyldig URL-adresse og bør stemme overens med det program, du har oprettet. Hvis du har valgt **oprindeligt**, skal du fortsætte til trin 6.
 
 6. Vælg de Power BI-API'er, som dit program har brug for. Du kan få flere oplysninger om adgangstilladelser til Power BI i [Power BI-tilladelser](power-bi-permissions.md). Vælg derefter **Registrer**.
 
@@ -62,7 +62,7 @@ Sådan registrerer du dit program ved hjælp af værktøjet Power BI App Registr
     > [!Important]
     > Hvis du aktiverer tjenesteprincipaler, der skal bruges med Power BI, er Azure Active Directory-tilladelserne ikke længere gældende. Tilladelserne administreres via Power BI-administrationsportalen.
 
-7. Hvis du vælger **oprindelige** for programtypen, derefter derefter får du en **program-ID'ET**. Hvis du vælger **Serverbaseret webprogram** som programtype, modtager du et **program-id** og en **programhemmelighed**.
+7. Hvis du vælger **oprindeligt** som programtype, modtager du et **program-id**. Hvis du vælger **Serverbaseret webprogram** som programtype, modtager du et **program-id** og en **programhemmelighed**.
 
     > [!Note]
     > **Program-id'et** kan hentes fra Azure Portal på et senere tidspunkt, hvis det er nødvendigt. Hvis du mister **programhemmeligheden**, skal du oprette en ny på Azure Portal.
@@ -83,7 +83,7 @@ Din anden mulighed for at registrere dit program er at gør det direkte på Azur
 
 3. Vælg din Azure AD-lejer ved at vælge din konto i øverste højre hjørne af siden.
 
-4. I navigationsruden til venstre, gå til **alle tjenester**, skal du vælge **Appregistreringer** og derefter vælge **registrering af nyt**.
+4. Vælg **Alle tjenester** i navigationsruden til venstre, vælg **Appregistreringer**, og vælg derefter **Ny registrering**.
 
 5. Følg prompterne, og opret et nyt program.
 
@@ -107,21 +107,21 @@ Du skal være logget på enten via *hovedkontoen*, der er brugt til integrering,
 
 1. Gå til [App registrations](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ApplicationsListBlade) (Appregistreringer) i Azure Portal, og vælg den app, du bruger til at integrere.
 
-2. Vælg **API tilladelser** under **Administrer**.
+2. Vælg **API-tilladelser** under **Administrer**.
 
-3. I **API tilladelser**, skal du vælge **Tilføj en tilladelse**, og vælg derefter **Power BI-tjenesten**.
+3. Vælg **Tilføj en tilladelse** under **API-tilladelser**, og vælg derefter **Power BI-tjeneste**.
 
     ![Apptilladelser 03](media/register-app/powerbi-embedded-azuread-app-permissions03.png)
 
-4. Vælg de specifikke tilladelser, du har brug for under **delegeret tilladelser**. Vælg dem én for én for at gemme valgene. Vælg **Gem**, når du er færdig.
+4. Vælg de specifikke tilladelser, du har brug for, under **Delegerede tilladelser**. Vælg dem én for én for at gemme valgene. Vælg **Gem**, når du er færdig.
 
-5. Vælg **give samtykke**.
+5. Vælg **Tildel samtykke**.
 
-    Den **give samtykke** handling, der har brug for til den *hovedkontoen* for at undgå at beder om samtykke af Azure AD. Hvis kontoen, der udfører denne handling, er en Global administrator, giver du tilladelser til alle brugere i organisationen til appen. Hvis kontoen, der udfører denne handling, er *masterkontoen* og ikke en Global administrator, tildeler du kun tilladelser til *masterkontoen* for dette program.
+    Handlingen **Tildel samtykke** skal bruges til *hovedkontoen* for at undgå at blive bedt af Azure AD om at angive dit samtykke. Hvis kontoen, der udfører denne handling, er en Global administrator, giver du tilladelser til alle brugere i organisationen til appen. Hvis kontoen, der udfører denne handling, er *masterkontoen* og ikke en Global administrator, tildeler du kun tilladelser til *masterkontoen* for dette program.
 
 ### <a name="applying-permissions-programmatically"></a>Anvendelse af tilladelser fra et program
 
-1. Du skal hente de eksisterende tjenesteprincipaler (brugere) inden for din lejer. Du kan finde oplysninger om, hvordan du gør dette, i [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta).
+1. Du skal hente de eksisterende tjenesteprincipaler (brugere) inden for din lejer. Du kan finde oplysninger om, hvordan du gør det, i [ servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta).
 
     Du kan kalde API'en *Get servicePrincipal* uden {ID}, så får du alle tjenesteprincipalerne i lejeren.
 
@@ -176,8 +176,8 @@ Du skal være logget på enten via *hovedkontoen*, der er brugt til integrering,
 
    Værdien for **consentType** kan være enten **AllPrincipals** eller **Principal**.
 
-   * **AllPrincipals** kan kun bruges af en lejeradministrator for at tildele tilladelser til alle brugere i lejeren.
-   * **Principal** bruges til at tildele tilladelser for en bestemt bruger. I dette tilfælde skal endnu en egenskab føjes til anmodningens brødtekst – *principalId = {User_ObjectId}* .
+   * **AllPrincipals** kan kun bruges af en lejeradministrator til at give tilladelser til alle brugere i lejeren.
+   * **Principal** bruges til at give tilladelser til en bestemt bruger. I dette tilfælde skal endnu en egenskab føjes til anmodningens brødtekst – *principalId = {User_ObjectId}* .
 
    Du skal bruge *Tildel tilladelser* for masterkontoen for at undgå, at Azure AD beder om dit samtykke, hvilket ikke er muligt, når der ikke logges på interaktivt.
 

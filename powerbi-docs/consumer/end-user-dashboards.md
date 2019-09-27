@@ -3,20 +3,19 @@ title: Hvad er et dashboard, og hvordan åbner jeg det?
 description: Et dashboard er en vigtig funktion i Power BI-tjenesten.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 05/12/2019
+ms.date: 09/12/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 81987b864224b6afd254a3bffe17ecbb019198d0
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: cad6aeeb156534052241d5183a575b222736230a
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65608346"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141934"
 ---
 # <a name="dashboards-for-power-bi-service-consumers"></a>Dashboards til brugere af Power BI-tjenesten
 
@@ -54,8 +53,8 @@ Rapporter forveksles ofte med dashboards, da de også er lærreder med visualise
 | Kan underliggende datasættabeller og felter ses? |Nej. Data kan eksporteres, men tabeller og felter på selve dashboardet kan ikke ses. |Ja. Datasættabeller, felter og værdier kan ses. |
 
 
-## <a name="dashboard-creators-and-dashboard-consumers"></a>Dashboardforfattere og dashboardbrugere
-Som Power BI-***forbruger*** modtager du dashboards fra *oprettere*. Fortsæt med at få mere at vide om dashboards med disse emner:
+## <a name="dashboard-designers-and-dashboard-consumers"></a>Dashboarddesignere og dashboardbrugere
+Som Power BI-***forbruger*** modtager du dashboards fra *designere*. Fortsæt med at få mere at vide om dashboards med disse emner:
 
 * [Få vist et dashboard](end-user-dashboard-open.md)
 * Få mere at vide om [dashboardfelter](end-user-tiles.md), og hvad der sker, når du vælger et.

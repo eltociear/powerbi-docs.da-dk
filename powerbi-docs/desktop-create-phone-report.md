@@ -1,5 +1,5 @@
 ---
-title: Optimer rapporter for de mobile apps – Power BI
+title: Optimer rapporter til mobilapps – Power BI
 description: Få mere at vide om, hvordan du optimerer rapportsider til Power BI-mobilapps ved at oprette en stående version af rapporten specifikt til telefoner og tablets.
 author: maggiesMSFT
 manager: kfile
@@ -12,19 +12,19 @@ ms.author: maggies
 LocalizationGroup: Create reports
 ms.openlocfilehash: f55d1e518c3c710503bb56539667bb652f287aa7
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61310606"
 ---
 # <a name="optimize-reports-for-the-power-bi-mobile-apps"></a>Optimer rapporter til Power BI-mobilapps
-Du kan forbedre oplevelsen af visning af rapporter i mobilapps ved at oprette en stående layout. I Power BI Desktop og Power BI-tjenesten kan du omarrangere og tilpasse størrelsen på visuelle elementer til en optimal oplevelse i stående format.  
+Du kan forbedre visningsoplevelsen af rapporter i mobilapps ved at oprette et stående layout. I Power BI Desktop og Power BI-tjenesten omarrangerer du rapportvisualiseringer og ændrer størrelsen af dem for at få en optimal oplevelse i stående retning.  
 
-Leder du efter oplysninger om i stedet for visning af rapporter på en mobilenhed? Prøv denne hurtige Start [Udforsk dashboards og rapporter i Power BI-mobilappsene](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
+Leder du i stedet efter oplysninger om visning af rapporter på en mobilenhed? Prøv denne hurtig start [Udforsk dashboards og rapporter i Power BI-mobilapps](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
 
 ![Optimeret rapport på en telefon](media/desktop-create-phone-report/desktop-create-phone-report-1.png)
 
-Desuden kan du oprette [ *dynamisk* visualiseringer](#optimize-a-visual-for-any-size) og [dynamiske udsnitsværktøjer](#enhance-slicers-to-work-well-in-phone-reports) , tilpasse størrelsen og hvor som helst. Hvis du føjer filtre til din rapport, vises de automatisk i den optimerede rapport.
+Du kan også oprette [*dynamiske* visualiseringer](#optimize-a-visual-for-any-size) og [dynamiske udsnit](#enhance-slicers-to-work-well-in-phone-reports), der tilpasses flot hvor som helst. Hvis du føjer filtre til din rapport, vises de automatisk i den optimerede rapport.
 
 ## <a name="lay-out-a-portrait-version-of-a-report-page"></a>Opsæt en stående version af en rapportside
 
@@ -44,7 +44,7 @@ Når du har oprettet en rapport, kan du optimere den til telefoner og tablets.
    
     ![Træk og slip en visualisering](media/desktop-create-phone-report/desktop-create-phone-report-4.gif)
    
-    Du kan føje nogle eller alle visualiseringerne på masterrapportsiden til telefonrapportsiden. Du kan kun tilføje hver visualisering én gang. Du behøver ikke at medtage alle visuelle elementer.
+    Du kan føje nogle eller alle visualiseringerne på masterrapportsiden til telefonrapportsiden. Du kan kun tilføje hver visualisering én gang. Du behøver ikke at inkludere alle visualiseringerne.
 
 4. Du kan tilpasse størrelsen på dine visualiseringer i gitteret, ligesom du ville gøre det for felter på dashboards og mobildashboards.
    

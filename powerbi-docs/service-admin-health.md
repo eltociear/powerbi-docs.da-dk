@@ -7,42 +7,42 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 05/14/2019
+ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 37108c88b3a4f1efe2d324d2b182276252072d78
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 579950320c3193e9cc1921a06d5b121ff0b58ae0
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65710459"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71075346"
 ---
 # <a name="track-power-bi-service-health-in-office-365"></a>Registrer Power BI-tjenestetilstand i Office 365
 
-Microsoft 365 admin center indeholder vigtige værktøjer til Power BI-administratorer. Værktøjerne inkluderer aktuelle og historiske oplysninger om tjenestetilstand. For at få adgang til tjenesten statusoplysninger, skal du være i en af følgende roller:
+Microsoft 365 Administration indeholder vigtige værktøjer til Power BI-administratorer. Disse værktøjer omfatter aktuelle og historiske oplysninger om tjenestetilstand. Du skal have en af følgende roller for at få adgang til oplysningerne om tjenestetilstand:
 
 * Power BI Service Administrator
 
 * Office 365 Global Administrator
 
-Du kan finde flere oplysninger om roller, i [administratorroller, der er relateret til Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
+Du kan finde flere oplysninger om roller under [Administratorroller, der er relateret til Power BI](service-admin-administering-power-bi-in-your-organization.md#administrator-roles-related-to-power-bi).
 
 1. Log på [Microsoft 365 Administration](https://portal.office.com/adminportal).
 
-1. Vælg den venstre navigationslinje, **Vis alle** > **Health** > **Service health**. Siden Service health vises:
+1. Vælg **Vis alle** > **Tilstand** > **Tjenestetilstand** på navigationslinjen til venstre. Siden Tjenestetilstand vises:
 
-    ![Skærmbillede af Microsoft 365 administration med Health Service health indstillingerne og påpeges.](media/service-admin-health/service-health-tile.png)
+    ![Skærmbillede af Microsoft 365 Administration, hvor indstillingerne Tilstand og Tjenestetilstand er markeret.](media/service-admin-health/service-health-tile.png)
 
-1. Fra den **alle tjenester** listen, Vælg **sikkerhedsmeddelelser** eller **hændelser** og gennemse resultaterne. På skærmbilledet nedenfor se du én af tre aktive sikkerhedsmeddelelser.
+1. På listen **Alle tjenester** skal du vælge **Varsler** eller **Hændelser** og gennemse resultaterne. På skærmbilledet herunder kan du se et af tre aktive varsler.
 
-    ![Skærmbillede af siden Service health med tre meddelelserne til Power BI og mulighed for Vis detaljer påpeges.](media/service-admin-health/active-advisories.png)
+    ![Skærmbillede af siden Tjenestetilstand, hvor tre varsler til Power BI og indstillingen Vis detaljer er markeret.](media/service-admin-health/active-advisories.png)
 
-1. Du kan se flere oplysninger ved at vælge **Vis oplysninger** for et element. På skærmbilledet nedenfor, kan du se yderligere oplysninger, herunder de seneste statusopdateringer.
+1. Du kan se flere oplysninger ved at vælge **Vis oplysninger** for et element. På skærmbilledet herunder kan du se yderligere detaljer, herunder de nyeste statusopdateringer.
 
-    ![Skærmbillede af Advisory oplysninger.](media/service-admin-health/advisory-details.png)
+    ![Skærmbillede af detaljer om varsler.](media/service-admin-health/advisory-details.png)
 
     Rul ned for at se flere oplysninger, og luk ruden, når du er færdig.
 
-1. Se historiske oplysninger på tværs af alle tjenester, i det øverste højre hjørne af den **Service health** side, Vælg **Vis historik**. Vælg derefter **Seneste 7 dage** eller **Seneste 30 dage**. 
+1. Hvis du vil se historiske oplysninger på tværs af alle tjenester, skal du vælge **Vis historik** øverst til højre på siden **Tjenestetilstand**. Vælg derefter **Seneste 7 dage** eller **Seneste 30 dage**. 
 
 1. Vælg **Vis aktuel status** for at vende tilbage til den aktuelle tjenestetilstand.

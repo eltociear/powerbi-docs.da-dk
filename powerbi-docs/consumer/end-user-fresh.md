@@ -7,47 +7,54 @@ ms.service: powerbi
 ms.custom: ''
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/08/2019
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: dbad2927b64966a459086531fbfbf3e3e5de2eab
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 46f9d40b5e556c0d306aa77243a49835fca9d812
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70751667"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141709"
 ---
 # <a name="your-content-is-up-to-date"></a>Dit indhold er opdateret
 Som *forbruger* interagerer du med indhold, der er oprettet af *designere* og delt med dig. Du undrer dig måske over, om indholdet er opdateret, eller du vil måske blot gerne vide, hvornår indholdet senest blev opdateret. Det giver ro i sindet at vide, at du arbejder med det nyeste indhold.  
  
-![Power BI-dashboard](media/end-user-consumer/power-bi-service.png)
+![Power BI-dashboard](media/end-user-fresh/power-bi-dashboards.png)
 
 
 Når du skal træffe beslutninger, skal du være sikker på, at du har de nyeste data. Hvad kan du gøre for at sikre, at du har det nyeste indhold? I de fleste tilfælde skal du slet ikke gøre noget. De apps, der er blevet delt med dig, bliver automatisk opdateret efter en tidsplan, som appdesigneren har defineret. Det samme gælder de dashboards og rapporter, der er delt med dig. Designeren sørger for, at indholdet er opdateret, og det sker enten manuelt eller automatisk efter en tidsplan.  
 
 Hvis du er i tvivl om, hvorvidt dataene er opdateret, skal du kontakte designeren.
 
-## <a name="how-to-locate-the-name-of-the-designer"></a>Sådan finder du navnet på designeren
+## <a name="how-to-locate-the-name-of-the-designer-or-owner"></a>Sådan finder du navnet på designeren eller ejeren
+
+### <a name="dashboard-or-report"></a>Dashboard eller rapport
+
+Navnet på ejeren findes på titellinjen i dashboards og rapporter. Vælg navnet på rapporten eller dashboardet for at se yderligere detaljer, herunder **Ejer**.
+
+![Ejer af Power BI-dashboard](media/end-user-fresh/power-bi-owner.png)
+
 
 ### <a name="apps"></a>Apps
 
-På appskærmbilledet kan du se både navnet på designeren samt den dato, hvor appen blev oprettet.  
+På appskærmen kan du se både navnet på designeren og den dato, hvor appen sidst blev opdateret.  
 
 1. Vælg **Apps** i venstre navigationsrude.
 
-    ![venstre navigationsrude](media/end-user-fresh/power-bi-nav-apps.png)
+    ![venstre navigationsrude](media/end-user-fresh/power-bi-nav-app.png)
 
-    For hver app kan du se en titel og oprettelsesdatoen. 
 
-2. Hvis du peger på appen, får du vist navnet på designeren. 
+
+2. Hold over appen for at få vist titlen, opdateringsdatoen og navnet på designeren. 
 
     ![2 apps, hvor den ene er valgt](media/end-user-fresh/power-bi-app.png)
 
 
 ### <a name="shared-with-me"></a>Delt med mig
-På skærmbilledet **Delt med mig** kan du se navnet på indholdsejeren, og du kan se, hvilken dato indholdet blev delt med dig.
+På skærmen **Delt med mig** kan du se navnet på ejeren af indholdet samt den dato, hvor indholdet sidst blev delt med dig.
 
-![delt skærm, der viser ændringsdato og ejer](media/end-user-fresh/power-bi-shared-new.png) 
+![delt skærm, der viser ændringsdato og ejer](media/end-user-fresh/power-bi-share.png) 
 
 
 ## <a name="how-to-look-up-the-last-refresh-date"></a>Sådan ser du datoen for seneste opdatering
@@ -58,24 +65,24 @@ For felter i dashboardet kan du se feltet i fokustilstand for at se et tidsstemp
 
 1. Vælg de tre prikker (...) på et felt på dashboardet, og vælg **Åbn i fokustilstand**.
 
-    ![menu, der vises, når du har valgt de tre prikker](media/end-user-fresh/power-bi-focus.png)
+    ![menu, der vises, når du har valgt de tre prikker](media/end-user-fresh/power-bi-focus-mode.png)
 
 2. Datoen for seneste opdatering vises i øverste højre hjørne. Hvis du ikke kan se datoen, kan du udvide browservinduet. 
 
     ![browservindue med visning af seneste opdatering](media/end-user-fresh/power-bi-last-refresh2.png)
 
-### <a name="from-dashboards-and-reports"></a>Fra dashboards og rapporter
-En anden måde, hvorpå du kan se datoen for seneste opdatering, er ved at vælge **Få vist relaterede**.  **Få vist relaterede** findes på den øverste menulinje i Power BI.
+### <a name="dashboards-and-reports"></a>Dashboards og rapporter
+En anden måde, hvorpå du kan se datoen for seneste opdatering, er ved at vælge **Få vist relaterede**.  **Få vist relaterede** bliver tilgængelig, når du vælger ellipsen (…) på den øverste menulinje i Power BI.
 
-![Vælg Få vist relaterede i menuen](media/end-user-fresh/power-bi-view-related.png)
+![Vælg Få vist relaterede i menuen](media/end-user-fresh/power-bi-view-related-dropdown.png)
 
 I ruden **Relateret indhold** kan du se oplysninger om seneste opdatering for det underliggende datasæt til dashboardet eller rapporten.
 
-![Power BI-dashboard](media/end-user-fresh/power-bi-last-refresh.png)
+![Power BI-dashboard](media/end-user-fresh/power-bi-refresh.png)
 
 ## <a name="what-happens-if-an-app-is-deleted-by-the-designer"></a>Hvad sker der, hvis en app slettes af designeren?
 
-Hvis en designer sletter en app, fjernes de dashboards og rapporter, der er knyttet til appen, automatisk fra Power BI-arbejdsområdet. De er ikke længere tilgængelige, og appen vises ikke i navigationsruden.
+Hvis en designer sletter en app, fjernes de dashboards og rapporter, der er knyttet til appen, automatisk fra Power BI-arbejdsområdet. De er ikke længere tilgængelige, og appen vises ikke i objektbeholderen Apps eller andre steder på navigationslinjen.
 
 
 ## <a name="subscribe-to-see-changes"></a>Abonner for at se ændringer
@@ -86,5 +93,5 @@ Vil du have besked, hvis dataene ændres over eller under en grænse, du har ang
 
 ## <a name="next-steps"></a>Næste trin
 [Opret en databesked](end-user-alerts.md)    
-[abonner på dashboards og rapporter](end-user-subscribe.md)    
+[Abonner på dashboards og rapporter](end-user-subscribe.md)    
 [Vis relateret indhold](end-user-related.md)    

@@ -3,20 +3,19 @@ title: Eksportér rapporter fra Power BI til PowerPoint
 description: Se, hvordan du kan eksportere en Power BI-rapport til PowerPoint.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/28/2019
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: f06b67dc0072c125d9430079fa756d963fd99f23
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9a798afead16174f66fadba87c795d5377747e93
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61063628"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141413"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Eksportér rapporter fra Power BI til PowerPoint
 Med Power BI kan du publicere din rapport i **Microsoft PowerPoint** og nemt oprette et slidesæt ud fra din Power BI-rapport. Når du **eksporterer til PowerPoint**, sker der følgende:
@@ -29,27 +28,24 @@ Med Power BI kan du publicere din rapport i **Microsoft PowerPoint** og nemt opr
 Du kan hurtigt eksportere din **Power BI-rapport** til **PowerPoint**. Du skal blot følge de trin, der er beskrevet i det næste afsnit.
 
 ## <a name="how-to-export-your-power-bi-report-to-powerpoint"></a>Sådan eksporterer du en Power BI-rapport til PowerPoint
-Vælg en rapport for at vise den på lærredet i Power BI-tjenesten. Du kan også vælge en rapport fra din **startside**, **Apps** eller en hvilken som helst anden sektion i navigationsruden til venstre.
+Vælg en rapport for at vise den på lærredet i Power BI-tjenesten. Du kan også vælge en rapport fra din **startside**, dine **programmer** eller en hvilken som helst objektbeholder på navigationslinjen til venstre.
 
-![Vælg Filer på menulinjen – pil, der peger på Eksportér til PowerPoint](media/end-user-powerpoint/power-bi-publish.png)
+Når den rapport, du vil eksportere til PowerPoint, vises på lærredet, skal du vælge **Eksportér > PowerPoint** på menulinjen.
 
-Når den rapport, du vil eksportere til PowerPoint, vises på lærredet, skal du vælge **Filer > Eksportér til PowerPoint** på menulinjen i Power BI-tjenesten.
+![Vælg Eksportér på menulinjen](media/end-user-powerpoint/power-bi-export.png)
 
-![Nærbillede af venstre navigationslinje med Mit arbejdsområde valgt – rullemenuen Filer valgt](media/end-user-powerpoint/powerbi_to_powerpoint_1.png)
    
-Der vises et pop op-vindue, hvor du har mulighed for at vælge **Aktuel visning** eller **Standardvisning**.  Med **Aktuel visning** eksporteres rapporten i den aktuelle tilstand, hvilket omfatter de aktive ændringer, du har foretaget i udsnits- og filterværdier.  De fleste brugere vælger denne indstilling.  Alternativt kan du vælge **Standardvisning**, hvor rapporten eksporteres i sin oprindelige tilstand (som forfatteren har delt den), og hvor ændringer, du har foretaget af den oprindelige tilstand, ikke afspejles.
+Der vises et pop op-vindue, hvor du har mulighed for at vælge **Aktuelle værdier** eller **Standardværdier**.  Med **Aktuelle værdier** eksporteres rapporten i den aktuelle tilstand, hvilket omfatter de aktive ændringer, du har foretaget af udsnits- og filterværdier.  De fleste brugere vælger denne indstilling.  Alternativt kan du vælge **Standardværdier**, hvor rapporten eksporteres i sin oprindelige tilstand (som forfatteren har delt den), og hvor ændringer, du har foretaget af den oprindelige tilstand, ikke afspejles.
+
+![Vælg det, der skal eksporteres](media/end-user-powerpoint/power-bi-current-values.png)
     
-Derudover er der et afkrydsningsfelt, hvor du kan markere, om du vil eksportere skjulte faner i en rapport.  Du skal blot markere afkrydsningsfeltet, hvis du kun vil eksportere de rapportfaner, der er synlige for dig i browseren.  Hvis du foretrækker at inkludere alle skjulte faner i din eksport, skal du undlade at markere afkrydsningsfeltet.  Hvis afkrydsningsfeltet er nedtonet, er der ingen skjulte faner i rapporten.  Når du har foretaget dine valg, skal du klikke på **Eksportér** for at fortsætte.
+Derudover er der et afkrydsningsfelt, hvor du kan markere, om du vil eksportere skjulte faner i en rapport.  Du skal blot markere afkrydsningsfeltet, hvis du kun vil eksportere de rapportfaner, der er synlige for dig i browseren.  Hvis du foretrækker at inkludere alle skjulte faner i din eksport, skal du undlade at markere afkrydsningsfeltet.  Hvis afkrydsningsfeltet er nedtonet, er der ingen skjulte faner i rapporten.  Når du har foretaget dine valg, skal du vælge **Eksportér** for at fortsætte.
 
 Du får vist et meddelelsesbanner i øverste højre hjørne af Power BI-tjenestens browservindue, hvor der står, at rapporten eksporteres til PowerPoint. Dette kan tage nogle minutter, og du kan fortsætte med at arbejde i Power BI, mens rapporten eksporteres.
 
-![meddelelse om, at eksport til PowerPoint er i gang](media/end-user-powerpoint/powerbi_to_powerpoint_2.png)
+![meddelelse om, at eksport til PowerPoint er i gang](media/end-user-powerpoint/power-bi-export-progress.png)
 
-Når dette er fuldført, ændres meddelelsesbanneret for at give dig besked om, at Power BI-tjenesten er færdig med eksporten.
-
-![Meddelelse om, at handlingen er fuldført, vises](media/end-user-powerpoint/powerbi_to_powerpoint_3.png)
-
-Derefter finder du din fil der, hvor din browser viser downloadede filer. På det følgende billede vises det som et downloadbanner i bunden af browservinduet.
+Når dette er fuldført, ændres meddelelsesbanneret for at give dig besked om, at Power BI-tjenesten er færdig med eksporten. Derefter finder du din fil der, hvor din browser viser downloadede filer. På det følgende billede vises det som et downloadbanner i bunden af browservinduet.
 
 ![pil, der peger på browsermeddelelsen nederst på skærmen](media/end-user-powerpoint/powerbi_to_powerpoint_4.png)
 

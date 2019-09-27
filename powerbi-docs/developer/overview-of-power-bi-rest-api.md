@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 03/25/2019
 ms.openlocfilehash: fd49c69a14d3dac6b1a045f6aba407ec7aac0deb
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61269408"
@@ -24,12 +24,12 @@ Med REST API for Power BI er det muligt at udføre administrationsopgaver på Po
 
 Her er nogle af de ting, du kan bruge Power BI-API'erne til.
 
-| **Til at få mere at vide** | **Denne referenceoplysninger** |
+| **Få mere at vide** | **Referer til disse oplysninger** |
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Integrer rapporter, dashboards og felter både for brugere af Power BI og brugere, der ikke anvender Power BI. | [Sådan integrerer du Power BI-dashboards, rapporter og felter ](embedding-content.md) |
+| Integrer rapporter, dashboards og felter både for brugere af Power BI og brugere, der ikke anvender Power BI. | [Sådan integreres Power BI-dashboards, -rapporter og -felter](embedding-content.md) |
 | Udfør administrationsopgaver på Power BI-objekter. | [Reference til Power BI REST-API](https://docs.microsoft.com/rest/api/power-bi/) |
-| Udvid en eksisterende forretningsarbejdsproces til at overføre vigtige data til et Power BI-dashboard. | [Overfør data til et dashboard ](walkthrough-push-data.md) |
-| Godkend til Power BI. | [Godkend til Powerbi ](get-azuread-access-token.md) |
+| Udvid en eksisterende forretningsarbejdsproces til at overføre vigtige data til et Power BI-dashboard. | [Send data via push til et dashboard](walkthrough-push-data.md) |
+| Godkend til Power BI. | [Godkend til Power BI](get-azuread-access-token.md) |
 
 > [!NOTE]
 > Power BI-API'erne refererer stadig til apparbejdsområder som grupper. Referencer til grupper betyder, at du arbejder med apparbejdsområder.
@@ -38,8 +38,8 @@ Her er nogle af de ting, du kan bruge Power BI-API'erne til.
 
 | Værktøj(er) | Beskrivelse |  |  |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---|---|
-| [Legeplads, hvor værktøjet](https://microsoft.github.io/PowerBI-JavaScript/demo) | Oplev et komplet eksempel på brug af JavaScript-API'er for Power BI. Med dette værktøj kan du nemt prøve dig frem med forskellige typer Power BI Embedded-eksempler. |  |  |
-| [Power BI JavaScript wiki](https://github.com/Microsoft/powerbi-javascript/wiki) | For at få flere oplysninger om JavaScript-API'er for Power BI. |  |  |
+| [Værktøj til teststed](https://microsoft.github.io/PowerBI-JavaScript/demo) | Oplev et komplet eksempel på brug af JavaScript-API'er for Power BI. Med dette værktøj kan du nemt prøve dig frem med forskellige typer Power BI Embedded-eksempler. |  |  |
+| [JavaScript-wiki til Power BI](https://github.com/Microsoft/powerbi-javascript/wiki) | For at få flere oplysninger om JavaScript-API'er for Power BI. |  |  |
 | [Postman](https://www.getpostman.com/) | Kør anmodninger, test, find fejl, overvåg, kør automatiserede test og meget mere. |
 
 ## <a name="push-data-into-power-bi"></a>Overfør data til Power BI
@@ -58,7 +58,7 @@ Du kan bruge Power BI-API'en til at [sende data til et datasæt via push](walkth
 
 * [Overfør data til et datasæt](walkthrough-push-data.md)
 * [Udvikling af en brugerdefineret visualisering i Power BI](custom-visual-develop-tutorial.md)
-* [Power BI REST API-Reference](rest-api-reference.md)
+* [Reference til Power BI REST API](rest-api-reference.md)
 * [REST-API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

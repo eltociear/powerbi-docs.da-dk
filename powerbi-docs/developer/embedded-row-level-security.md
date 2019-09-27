@@ -1,20 +1,20 @@
 ---
 title: Brug sikkerhed på rækkeniveau med integreret Power BI-indhold
 description: Få mere at vide om, hvordan du integrerer Power BI-indhold i din app.
-author: rkarlin
-ms.author: rkarlin
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 7c58d4a5ce94a8659c85606dc2cbce1b4fc615f5
-ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.openlocfilehash: 2e7100db05b6ace0e4d530964f645e120387a8b2
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67596561"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71073363"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sikkerhed på rækkeniveau med Power BI Embedded
 
@@ -26,7 +26,7 @@ Hvis du integrerer til Power BI-brugere (brugeren ejer dataene) i din organisati
 
 ![Vigtige elementer i forbindelse med sikkerhed på rækkeniveau.](media/embedded-row-level-security/powerbi-embedded-rls-components.png)
 
-Hvis du vil benytte sikkerhed på rækkeniveau, er der tre vigtige begreber, du skal kende: brugere, roller og regler. Lad os se nærmere på dem:
+Hvis du vil benytte sikkerhed på rækkeniveau, er der tre vigtige begreber, du skal kende: brugere, roller og regler. Lad os se nærmere på disse begreber:
 
 **Brugere** – slutbrugere, der får vist artefakten (dashboardet, feltet, rapporten eller datasættet). I Power BI Embedded identificeres brugerne ved hjælp af egenskaben username i et integreringstoken.
 
@@ -77,9 +77,9 @@ Når du anvender filteret på den måde, som vi gjorde her, vises alle de releva
 
 ## <a name="applying-user-and-role-to-an-embed-token"></a>Anvend bruger og rolle for at integrere et token
 
-Nu hvor du har konfigureret roller i Power BI Desktop, er der nogle opgaver, du skal udføre i dit program, så du kan udnytte rollerne.
+Nu, hvor du har konfigureret roller i Power BI Desktop, skal du foretage nogle få yderligere handlinger for at kunne drage fordel af rollerne.
 
-Brugerne godkendes af dit program, og integreringstokens bruges til at give en bruger adgang til en bestemt rapport i Power BI Embedded. Der findes ingen specifikke oplysninger om, hvem brugeren er, i Power BI Embedded. Hvis sikkerhed på rækkeniveau skal fungere, skal du overføre ekstra kontekst som en del af dit integreringstoken i form af identiteter. Du kan overføre identiteterne ved hjælp af API'en [Integrer Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
+Brugere godkendes og autoriseres af dit program, og integreringstokens bruges til at give en bruger adgang til en bestemt rapport i Power BI Embedded. Der findes ingen specifikke oplysninger om, hvem brugeren er, i Power BI Embedded. Hvis sikkerhed på rækkeniveau skal fungere, skal du overføre ekstra kontekst som en del af dit integreringstoken i form af identiteter. Du kan overføre identiteterne ved hjælp af API'en [Integrer Token](https://docs.microsoft.com/rest/api/power-bi/embedtoken).
 
 API'en accepterer en liste over identiteter med angivelse af de relevante datasæt. Hvis sikkerhed på rækkeniveau skal fungere, skal du overføre nedenstående dele som en del af identiteten.
 

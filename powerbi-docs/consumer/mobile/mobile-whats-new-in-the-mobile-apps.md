@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: 5697fd79551d238f095696dcc940afb8ea330d11
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: e74bdacc1b8ee40ec6628337e9e78528e8fdee29
+ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70841380"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71164517"
 ---
 # <a name="whats-new-in-the-mobile-apps-for-power-bi"></a>Hvad er nyt i mobilapps til Power BI
 Du kan finde relaterede oplysninger om nyheder under:
@@ -81,7 +81,7 @@ Brugere kan anvende indbygget beskyttelse af enhed til at sikre Power BI ved at 
 
 ### <a name="one-page-report-slideshow-windows"></a>Slideshow med en rapport med én side (Windows)
 
-Understøttelse af automatisk opdatering også for rapporter med én side i slideshows. Hvis rapportens underliggende datakilde opdateres, så registreres og dataene på siden opdateres også.
+Understøttelse af automatisk opdatering også for rapporter med én side i slideshows. Hvis rapportens underliggende datakilde opdateres, så registreres det, og dataene på siden opdateres også.
 
 
 ## <a name="april-2019"></a>April 2019

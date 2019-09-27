@@ -12,13 +12,13 @@ ms.author: davidi
 LocalizationGroup: Get started
 ms.openlocfilehash: 28b77cfeda1f84f3643216dba45bef40bd6441ff
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65513227"
 ---
 # <a name="enroll-your-us-government-organization-in-the-power-bi-service"></a>Tilmeld din US Government-organisation til Power BI-tjenesten
-**Power BI-tjenesten** har en version tilgængelig for offentlige myndigheder i USA som en del af abonnementer på **Office 365 US Government Community**. Den **Power BI-tjenesten** version, der er beskrevet i denne artikel er beregnet til US Government-kunder, og er separat og adskiller sig fra den kommercielle version af den **Power BI-tjenesten**.
+**Power BI-tjenesten** har en version tilgængelig for offentlige myndigheder i USA som en del af abonnementer på **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der drøftes i denne artikel, er designet til kunder med US Government og er særskilt og forskellig fra den kommercielle version af **Power BI-tjeneten**.
 
 For at få flere oplysninger om **Power BI-tjenesten** til US Government, herunder funktioner og begrænsninger, skal du se [Power BI til offentlige myndigheder i USA – overblik](service-govus-overview.md).
 
@@ -66,7 +66,7 @@ Hvis din organisation er eksisterende **Office Government Cloud**-kunde, men du 
 6. Tildel brugere til kontoen.
    
    ![](media/service-govus-signup/service_govus_signup_5.png)
-7. Log på den **Power BI-tjenesten** for US Government-kunder på [https://app.powerbigov.us](https://app.powerbigov.us)
+7. Log på **Power BI-tjenesten** for kunder med US Government på [https://app.powerbigov.us](https://app.powerbigov.us)
 
 ## <a name="additional-signup-information"></a>Yderligere tilmeldingsoplysninger
 Nedenstående er yderligere oplysninger for tilmelding til **Power BI US Government** i forskellige licensoverflytningssituationer.
@@ -90,14 +90,14 @@ Gå til **Fakturering > Abonnementer**, og vælg **Power BI Pro for Government**
 ### <a name="whitelisting-instructions"></a>Whitelisting-instruktioner
 *Whitelisting* er en proces, som Power BI-teknikere bruger til at flytte kunder fra det kommercielle cloudmiljø til det sikre, Government-cloudmiljø. Dette sikrer, at funktioner, der er tilgængelige i US Government-clouden, fungerer som forventet. Alle eksisterende (eller nye) offentlige myndigheder i USA, der køber US Government **Power BI**-tjenester for første gang, *skal* iværksætte følgende whitelisting-proces. Processen skal udføres inden opsætning eller overflytning til US Government **Power BI**-tjenester. 
 
-Din lejer *whitelisting* for US Government-clouden, skal du kontakte Microsoft-kontoteamet for at få hjælp til whitelisting. Kun administratorer kan foretage denne anmodning. *Whitelisting*-processen tager ca. tre uger, hvor Power BI-teknikere udfører de relevante ændringer for at sikre, at din lejer fungerer korrekt i US Government-clouden.
+Hvis du vil have din lejer på en *hvidliste* for US Government-cloudmiljøet, skal du kontakte Microsoft-kontoteamet for at få hjælp til at få den på hvidlisten. Det er kun administratorer, der kan udføre denne anmodning. *Whitelisting*-processen tager ca. tre uger, hvor Power BI-teknikere udfører de relevante ændringer for at sikre, at din lejer fungerer korrekt i US Government-clouden.
 
 Kunder, der overflyttes fra Power BI **gratis**-licenser til **Power BI US Government** (og pr. definition, overflyttes til de tilknyttede **Pro**-licensfunktioner beskrevet tidligere i denne artikel), vil opleve problemerne, der er beskrevet i det følgende afsnit i denne artikel, indtil deres lejer er overført via *whitelisting* af Power BI-teknikere.
 
 ### <a name="mixed-free-and-pro-licenses-in-us-government-tenants"></a>Blandede gratis- og Pro-licenser i US Government-lejere
 Hvis du har både gratis- og US Government Pro-licenser i din lejer, vil både gratis- og (US Government) Pro-licenser fortsat være til stede, men en af licenstyperne vil ikke fungerer korrekt. Hvis din lejer gennemfører en vellykket *whitelisting*-proces, så sker følgende:
 
-* Brugere af gratislicens vil ikke længere kunne logge på Power BI ved hjælp af **Power BI Desktop**, og de vil opleve funktionalitetshuller, som beskrevet i følgende afsnit.
+* Brugere af en gratis licens kan ikke længere logge på Power BI via **Power BI Desktop**, og de vil opleve funktionalitetshuller, som beskrevet i følgende afsnit.
 * Alle klienter, der er tildelt US Government Pro-licenser, fungerer som forventet, herunder brugen af gateways, Power BI Desktop og Mobile-apps.
 
 Når der bruges en blanding af gratis- og Pro-licenser i en US Government-lejer, og under *whitelisting*-processen, bør følgende forventes:

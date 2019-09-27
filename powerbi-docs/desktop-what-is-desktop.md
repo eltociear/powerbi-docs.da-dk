@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: overview
-ms.date: 05/08/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 711e0252cddcc78437e03a82d91c67441cfc3a55
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 575d66ad6bb10a4e7faa90f5f658e86115402400
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513504"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141960"
 ---
 # <a name="what-is-power-bi-desktop"></a>Hvad er Power BI Desktop?
 
@@ -32,6 +32,16 @@ De mest almindelige anvendelsesområder for **Power BI Desktop** er følgende:
 * Del rapporter med andre ved hjælp af **Power BI-tjenesten**
 
 De personer, der oftest er ansvarlige for sådanne opgaver, opfattes ofte som *dataanalytikere* (kaldes også bare *analytikere*) eller Business Intelligence-medarbejdere (også kaldet *rapportoprettere*). Men mange, der ikke opfatter sig selv som analytiker eller en rapportopretter, bruger **Power BI Desktop** til at oprette overbevisende rapporter eller til at trække data fra forskellige datakilder og oprette datamodeller, som de kan dele med kolleger og organisationer.
+
+Der er tre visninger i Power BI Desktop, som vises langs venstre side af lærredet. Visningerne er som følger (vist i den rækkefølge, de forekommer i):
+* **Rapportvisning** – Det er her, du opretter rapporter og visualiseringer, og hvor du bruger mest tid på oprettelser.
+* **Datavisning** – Her kan du se tabeller, målinger og andre data, der bruges i den datamodel, som er knyttet til din rapport, og transformere dataene til den bedste brug i rapportens model.
+* **Modelvisning** – I denne visning kan du se og administrere relationerne mellem tabeller i din datamodel.
+
+På følgende billede kan du se de tre visninger, som forekommer langs venstre side af lærredet:
+
+![forskellige visninger](media/desktop-what-is-desktop/what-is-desktop-07.png)
+
 
 Med **Power BI Desktop** kan du oprette komplekse og visuelt avancerede rapporter ved hjælp af data fra flere kilder – det hele i én rapport, som du kan dele med andre i din organisation. 
 

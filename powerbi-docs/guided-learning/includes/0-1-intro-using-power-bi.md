@@ -1,7 +1,7 @@
 ---
 ms.openlocfilehash: 1c000b2bfce4b6eeaa40b1a641321a20cea49d13
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "66051112"
@@ -17,7 +17,7 @@ Som Will forklarer, så skal du huske, at de mange aktiviteter og analyser, der 
 
 ![](media/0-1-intro-using-power-bi/c0a1_1.png)
 
-Som nævnt vil du sikkert bruge al tiden i **Power BI-tjenesten** på at hente data og oprette dashboards – det er helt i orden. En anden i dit team bruger måske al tiden i deres **Power BI Desktop**, hvilket er fint for. For at gøre dig fortrolig med det fulde kontinuum i Power BI og programmets funktionalitet så vil vi vise dig alt... du kan derefter afgøre, hvordan du får størst mulig fordel af det.
+Som nævnt vil du sikkert bruge al tiden i **Power BI-tjenesten** på at hente data og oprette dashboards – det er helt i orden. En anden på dit team bruger måske al sin tid i **Power BI Desktop** – det er også helt OK. For at gøre dig fortrolig med det fulde kontinuum i Power BI og programmets funktionalitet så vil vi vise dig alt... du kan derefter afgøre, hvordan du får størst mulig fordel af det.
 
 Lad os springe ud i det og lade Will føre os gennem oplevelsen. Det første punkt på dagsordenen er at blive fortrolig med de grundlæggende byggesten i Power BI, hvilket vil lægge et solidt fundament for at lære, hvordan Power BI forvandler data til smarte rapporter og visuelle elementer.
 

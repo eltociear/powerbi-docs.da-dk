@@ -8,39 +8,39 @@ ms.reviewer: cmfinlan
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 02/14/2019
+ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: e15cb6e09ff493512bb1b87939004c851b31fa10
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 66ac187d002c1606f96694bb45a5d44ba2ad2279
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61047969"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71141297"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Eksportér rapporter fra Power BI til PDF
 Med Power BI kan du publicere din rapport i PDF-format og nemt oprette et dokument ud fra din Power BI-rapport. Når du **eksporterer til PDF**, bliver hver side i Power BI-rapporten en enkelt side i PDF-dokumentet.
 
 ## <a name="how-to-export-your-power-bi-report-to-pdf"></a>Sådan eksporterer du en Power BI-rapport til PDF
-Vælg en rapport for at vise den på lærredet i Power BI-tjenesten. Du kan også vælge en rapport fra din startside, dine programmer eller en hvilken som helst anden sektion i navigationsruden til venstre.
+Vælg en rapport for at vise den på lærredet i Power BI-tjenesten. Du kan også vælge en rapport fra din startside, dine programmer eller en hvilken som helst objektbeholder på navigationslinjen til venstre.
 
-1. Vælg **Fil** > **Eksportér til PDF** på menulinjen.
+1. Vælg **Eksportér** > **PDF** på menulinjen.
 
-    ![Vælg Fil på menulinjen – pil, der peger på Eksportér til PDF](media/end-user-pdf/power-bi-export-pdf.png)
+    ![Vælg Eksport på menulinjen – pil, der peger på Eksportér til PDF](media/end-user-pdf/power-bi-export.png)
 
-    Der vises et pop op-vindue, hvor du har mulighed for at vælge **Aktuel visning** eller **Standardvisning**.  Med **Aktuel visning** eksporteres rapporten i den aktuelle tilstand, hvilket omfatter de aktive ændringer, du har foretaget i udsnits- og filterværdier.  De fleste brugere vælger denne indstilling.  Alternativt kan du vælge **Standardvisning**, hvor rapporten eksporteres i sin oprindelige tilstand (som forfatteren har delt den), og hvor ændringer, du har foretaget af den oprindelige tilstand, ikke afspejles.
+    Der vises et pop op-vindue, hvor du har mulighed for at vælge **Aktuelle værdier** eller **Standardværdier**.  Med **Aktuelle værdier** eksporteres rapporten i den aktuelle tilstand, hvilket omfatter de aktive ændringer, du har foretaget af udsnits- og filterværdier.  De fleste brugere vælger denne indstilling.  Alternativt kan du vælge **Standardværdier**, hvor rapporten eksporteres i sin oprindelige tilstand (som *designeren* har delt den), og hvor ændringer, du har foretaget af den oprindelige tilstand, ikke afspejles.
     
-    Derudover er der et afkrydsningsfelt, hvor du kan markere, om du vil eksportere skjulte faner i en rapport.  Du skal blot markere afkrydsningsfeltet, hvis du kun vil eksportere de rapportfaner, der er synlige for dig i browseren.  Hvis du foretrækker at inkludere alle skjulte faner i din eksport, skal du undlade at markere afkrydsningsfeltet.  Hvis afkrydsningsfeltet er nedtonet, er der ingen skjulte faner i rapporten.  Når du har foretaget dine valg, skal du klikke på knappen Eksportér for at fortsætte.
+    Derudover er der et afkrydsningsfelt, hvor du kan markere, om du vil eksportere skjulte faner i en rapport.  Du skal blot markere afkrydsningsfeltet, hvis du kun vil eksportere de rapportfaner, der er synlige for dig i browseren.  Hvis du foretrækker at inkludere alle skjulte faner i din eksport, skal du undlade at markere afkrydsningsfeltet.  Hvis afkrydsningsfeltet er nedtonet, er der ingen skjulte faner i rapporten.  Når du har foretaget dine valg, skal du vælge knappen Eksportér for at fortsætte.
     
     Der vises en statuslinje i øverste højre hjørne. Det kan tage nogle få minutter at eksportere, og du kan fortsætte med at arbejde i Power BI, mens rapporten eksporteres.
 
-    ![Meddelelse om eksportstatus](media/end-user-pdf/power-bi-export-message.png)
+    ![Meddelelse om eksportstatus](media/end-user-pdf/power-bi-export-progress.png)
 
     Når dette er fuldført, ændres meddelelsesbanneret for at give dig besked om, at Power BI-tjenesten er færdig med eksporten.
 
 2. Derefter finder du din fil der, hvor din browser viser downloadede filer. På det følgende billede vises det som et downloadbanner i bunden af browservinduet.
 
-    ![Placering af den downloadede fil](media/end-user-pdf/power-bi-save-file.png)
+    ![Placering af den downloadede fil](media/end-user-pdf/power-bi-export-done.png)
 
 Så nemt er det. Du kan downloade filen og åbne den med en hvilken som helst PDF-fremviser, f.eks. den der er tilgængelig i Microsoft Edge.
 

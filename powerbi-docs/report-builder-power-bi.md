@@ -1,28 +1,33 @@
 ---
 title: Sideinddelt Report Builder i Power BI
 description: Power BI Paginated Report Builder er et værktøj, der bruges til at oprette sideinddelte rapporter.
-ms.date: 06/06/2019
+ms.date: 09/16/2019
 ms.service: powerbi
 ms.subservice: report-builder
+featuredvideoid: 78TZeiEhveY
 ms.topic: conceptual
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 7ae945be1941fea4303b5cc74f9a2a4f104e8754
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 6d13871ec3ba8a7550a556a8923893a6b7d676ae
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840481"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71076069"
 ---
 # <a name="power-bi-paginated-report-builder"></a>Sideinddelt Report Builder i Power BI
 
  Power BI Paginated Report Builder er et værktøj, der bruges til at oprette sideinddelte rapporter.  Når du designer en sideinddelt rapport, opretter du en rapportdefinition, der angiver, hvilke data der skal hentes, hvor du kan få dem, og hvordan de skal vises. Når du kører rapporten, bruger rapportbehandleren den angivne rapportdefinition, henter dataene og kombinerer dem med rapportlayoutet for at generere rapporten. Du kan få forhåndsvist rapporten i Report Builder. Derefter kan du publicere rapporten i Power BI-tjenesten.
 
+Foretrækker du at lære fra videoer? Se videoserien om sideinddelte rapporter i Power BI på YouTube af Chris Finlan, der er Principal Program Manager for Power BI.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/78TZeiEhveY?list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ" frameborder="0" allowfullscreen></iframe>
+
+Følgende sideinddelte rapport indeholder en matrix med række- og kolonnegrupper, minidiagrammer, indikatorer og en oversigt i form af et cirkeldiagram i hjørnecellen sammen med et kort med to sæt geografiske data, der repræsenteres ved farve og cirkelstørrelse.  
+
 ![Sideinddelt rapport i Power BI-tjenesten](media/report-builder-power-bi/report-builder-get-started-paginated-report.png)
 
- Denne sideinddelte rapport indeholder en matrix med række- og kolonnegrupper, minidiagrammer, indikatorer og en oversigt i form af et cirkeldiagram i hjørnecellen sammen med et kort med to sæt geografiske data, der repræsenteres ved farve og cirkelstørrelse.  
-  
 ##  <a name="JumpStartReptCreation"></a> Kom godt i gang med at oprette rapporter  
  
 -   **Start med guiden Tabel, matrix eller diagram**. Opret en forbindelse til datakilden, træk og slip felter for at oprette en forespørgsel for datasæt, vælg layout og stil, og tilpas din rapport.  
@@ -35,7 +40,7 @@ ms.locfileid: "66840481"
   
 -   **Rapport fra forskellige datakilder.** Du kan oprette rapporter, som bruger relationsdata og flerdimensionelle data fra SQL Server og Analysis Services, Oracle, Power BI-datasæt og andre databaser.  
   
--   **Rediger eksisterende rapporter.** Ved hjælp af Report Builder kan du tilpasse og opdatere rapporter, der er oprettet i Rapportdesigner i SQL Server Data Tools (SSDT).  
+-   **Rediger eksisterende rapporter.** Ved hjælp af Report Builder kan du tilpasse og opdatere rapporter, der blev oprettet i Rapportdesigner i SQL Server Data Tools (SSDT).  
   
 -   **Rediger dine data**. Filtrer, gruppér og sortér data, eller tilføj formler eller udtryk.  
 
@@ -52,6 +57,9 @@ ms.locfileid: "66840481"
 -   **Vælg et præsentationsformat,** når du åbner rapporten, eller efter du har åbnet rapporten. Du kan vælge formaterne weborienteret, sideinddelt og desktopprogram. Formaterne omfatter MHTML, PDF, XML, CSV, Word og Excel.  
   
 -   **Angiv abonnementer.** Når du publicerer rapporten i Power BI-tjenesten, kan du konfigurere rapporten, så den køres på et bestemt tidspunkt, og sende den som et mailabonnement.  
+
 ## <a name="next-steps"></a>Næste trin
 
 - [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)
+
+- Se [videoserien om sideinddelte rapporter i Power BI](https://www.youtube.com/watch?v=78TZeiEhveY&list=PLx7LcKtN_gq-JVzM6L8xNNxX7kts-KflJ) på YouTube af Chris Finlan, der er Principal Program Manager for Power BI

@@ -8,20 +8,20 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/08/2019
+ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1f50fa577cace62adadd0dfc29216445c6c8f269
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 10586d0fa685bb947b27a5c243117596517bdb52
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65454360"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142236"
 ---
 # <a name="enter-data-directly-into-power-bi-desktop"></a>Angiv data direkte i Power BI Desktop
 Med Power BI Desktop kan du skrive data direkte i og bruge dem i dine rapporter og visualiseringer. Du kan for eksempel kopiere dele af en projektmappe eller webside og derefter indsætte det i Power BI Desktop.
 
-Hvis du vil indtaste data direkte, skal du vælge **Indtast data** på båndet **Hjem**.
+Hvis du vil angive data direkte i Power BI Desktop i form af en ny tabel, skal du vælge **Angiv data** på båndet **Hjem**.
 
 ![](media/desktop-enter-data-directly-into-desktop/enter-data-directly_1.png)
 

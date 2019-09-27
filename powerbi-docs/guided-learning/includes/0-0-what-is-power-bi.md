@@ -1,7 +1,7 @@
 ---
 ms.openlocfilehash: 30cd80cbeafe2da4468a0049bfa0c34715bce0d3
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "66051092"
@@ -31,7 +31,7 @@ Disse tre elementer – **Desktop**-programmet, **tjenesten** og **Mobil**-progr
 ## <a name="how-power-bi-matches-your-role"></a>Sådan passer Power BI til din rolle
 Din brug af Power BI kan afhænge af din rolle i et projekt eller på et team. Andre bruger måske Power BI på en anden måde, der svarer til deres rolle, hvilket er helt fint.
 
-Måske bruger du primært **Power BI-tjenesten**, mens en talfokuseret kollega med ansvar for oprettelse af forretningsrapporter overvejende bruger **Power BI Desktop** (og udgiver Desktop-rapporter til Power BI-tjenesten, som du derefter får vist). Og en anden kollega arbejder måske med salg, hovedsageligt bruger Power BI-telefonappen til at holde styr på salgskvoter og til at analysere nye salgsemners oplysninger.
+Måske bruger du primært **Power BI-tjenesten**, mens en talfokuseret kollega med ansvar for oprettelse af forretningsrapporter overvejende bruger **Power BI Desktop** (og udgiver Desktop-rapporter til Power BI-tjenesten, som du derefter får vist). En anden kollega arbejder måske med salg og bruger hovedsageligt Power BI-telefonappen til at overvåge sine salgskvoter og til at analysere nye emners oplysninger.
 
 Du bruger måske også hvert element af **Power BI** på forskellige tidspunkter, afhængigt af hvad du forsøger at opnå, eller hvad din rolle er i et givent projekt eller tiltag.
 

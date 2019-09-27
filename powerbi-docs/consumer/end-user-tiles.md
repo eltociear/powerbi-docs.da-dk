@@ -4,24 +4,23 @@ description: Alt om dashboardfelter i Power BI til forbrugere. Det omfatter felt
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 12/05/2018
+ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 3a341dda238996db4953fa7c68d7053034ca40b8
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 7e6d10a7a06c94c6bc00b06d38194dde461720be
+ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61050071"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71142061"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Dashboardfelter i Power BI
-Et felt er et snapshot af dine data, der er fastgjort til dashboardet af en *designer*. Et felt kan oprettes ud fra en rapport, et datasæt, et dashboard, feltet Spørgsmål og svar, Excel og SQL Server Reporting Services (SSRS) med flere.  Dette skærmbillede viser mange forskellige felter, der er fastgjort til et dashboard.
+Et felt er et snapshot af dine data, der er fastgjort til dashboardet af en *designer*. *Designere* kan oprette felter ud fra en rapport, et datasæt, et dashboard, feltet Spørgsmål og svar, Excel og SQL Server Reporting Services (SSRS) med flere.  Dette skærmbillede viser mange forskellige felter, der er fastgjort til et dashboard.
 
-![Power BI-dashboard](./media/end-user-tiles/power-bi-dashboard.png)
+![Power BI-dashboard](./media/end-user-tiles/power-bi-dash.png)
 
 
 Udover felter, der er fastgjort fra rapporter, kan *designere* føje separate felter direkte til dashboardet ved hjælp af **Tilføj felt**. Separate felter omfatter: tekstfelter, billeder, videoer, streamingdata og webindhold.
@@ -38,15 +37,15 @@ Har du brug for hjælp til at forstå de komponenter, der udgør Power BI?  Se [
 
     - felt, der er oprettet ved hjælp af Spørgsmål og svar
    
-        ![ellipseikon](./media/end-user-tiles/power-bi-menu1.png)
+        ![ellipseikon](./media/end-user-tiles/power-bi-options-1.png)
 
     - felt, der oprettet ud fra en projektmappe
    
-        ![ellipseikon](./media/end-user-tiles/power-bi-menu2.png)
+        ![ellipseikon](./media/end-user-tiles/power-bi-options-2.png)
 
     - felt, der oprettet ud fra en rapport
    
-        ![ellipseikon](./media/end-user-tiles/power-bi-menu3.png)
+        ![ellipseikon](./media/end-user-tiles/power-bi-options-3.png)
    
     Herfra kan du:
    
@@ -56,9 +55,12 @@ Har du brug for hjælp til at forstå de komponenter, der udgør Power BI?  Se [
    
 
    * [Åbn den projektmappe, der blev brugt til at oprette dette felt ](end-user-reports.md) ![regnearksikon](./media/end-user-tiles/power-bi-open-worksheet.png)  
-    * [Få vist feltet i fokustilstand ](end-user-focus.md) ![fokusikon](./media/end-user-tiles/fullscreen-icon.jpg)  
-     * [Køre indsigt](end-user-insights.md) ![indsigtsikon](./media/end-user-tiles/power-bi-insights.png)
-    * [Tilføj en kommentar, og start en diskussion](end-user-comment.md) ![kommentarikon](./media/end-user-tiles/comment-icons.png)
+   * [Få vist feltet i fokustilstand ](end-user-focus.md) ![fokusikon](./media/end-user-tiles/fullscreen-icon.jpg)  
+   * [Vis indsigt](end-user-insights.md) ![ikonet for indsigt](./media/end-user-tiles/power-bi-insights.png)
+   * [Tilføj en kommentar, og start en diskussion](end-user-comment.md) ![kommentarikon](./media/end-user-tiles/comment-icons.png)
+   * [Administrer vigtige beskeder, der er angivet på et dashboardfelt](end-user-alerts.md) ![ikon for vigtig besked](./media/end-user-tiles/power-bi-alert-icon.png)
+   * [Åbn dataene i Excel](end-user-export.md) ![ikonet for eksport](./media/end-user-tiles/power-bi-export-icon.png)
+
 
 3. Vælg et tomt område på canvasset for at lukke handlingsmenuen.
 

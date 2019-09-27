@@ -12,14 +12,14 @@ ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
 ms.openlocfilehash: 8c806f0de021c3857039649876864f47e1fffdb2
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454550"
 ---
 # <a name="certified-custom-visuals"></a>Certificerede brugerdefinerede visuals
 
-## <a name="what-are-certified-custom-visuals"></a>Hvad er **_certificerede_** brugerdefinerede visualiseringer?
+## <a name="what-are-_certified_-custom-visuals"></a>Hvad er **_certificerede_** brugerdefinerede visualiseringer?
 
 Certificerede brugerdefinerede visualiseringer er visualiseringer **Marketplace**, der opfylder visse **angivne kodekrav**, som **Microsoft Power BI-teamet** har testet og godkendt. Når en brugerdefineret visualisering er certificeret, indeholder den flere funktioner. Det kan f.eks. være, at du kan [eksportere til PowerPoint](consumer/end-user-powerpoint.md), og du kan få vist visualiseringen i modtagne mails, når en bruger [abonnerer på rapportsider](consumer/end-user-subscribe.md).
 
@@ -44,34 +44,34 @@ Microsoft kan, efter eget skøn, fjerne en visualisering fra [listen over certif
 Hvis du vil have din brugerdefinerede visualisering [certificeret](#certified-custom-visuals), skal du sørge for, at den er i overensstemmelse med følgende:  
 
 * Godkendt af Microsoft AppSource. Din brugerdefinerede visualisering skal findes på vores [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
-* Den brugerdefinerede visualisering er skrevet med versioneret **API v2.5 blev ikke** eller nyere.
-* Lager er tilgængelig for gennemgang af Power BI-teamet (for forekomst, kildekode (JavaScript- eller TypeScript) i menneskelige læsbare format er tilgængeligt for os, via GitHub).
+* Brugerdefineret visuelt element er skrevet med version **API v2.5** eller nyere.
+* Et kodelager er tilgængeligt til gennemsyn af Power BI-teamet (f.eks. kildekoden (JavaScript eller TypeScript) i formater, der kan læses af mennesker, og som er tilgængeligt via GitHub).
 
     >[!Note]
     > Du behøver ikke at dele din kode offentligt i GitHub.
-* Kodekrav lager:
-   * Den påkrævede mindstemål af filer, skal indeholde:
+* Krav til kodelager:
+   * Skal indeholde det påkrævede minimumantal filer:
       * .gitignore
       * capabilities.json
       * pbiviz.json
       * package.json
-      * pakke-lock.json
+      * package-lock.json
       * tsconfig.json
-   * Må ikke indeholde node_modules mappe (Tilføj node_modules til .gitingore-fil)
-   * **Installér npm** kommandoen skal ikke returnere eventuelle fejl.
-   * **npm audit** kommandoen skal ikke returnere en hvilken som helst advarsler med høj eller moderat niveau.
-   * **pbiviz-pakken** kommandoen skal ikke returnere eventuelle fejl.
-   * Skal indeholde [TSlint fra Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) med ingen tilsidesatte konfiguration, og denne kommando skal ikke returnere en hvilken som helst lint fejl.
-   * Den kompilerede pakke med brugerdefineret Visual skal stemme overens med indsendte pakke (md5-hash for begge filer skal være lig med).
-* Kilde kodekrav:
-   * Det visuelle element skal understøtte [gengivelse af hændelser API](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
-   * Sørg for, at ingen vilkårlige/dynamisk koden køres (forkert: eval(), usikre til brugen af settimeout() requestAnimationFrame() setinterval (en funktion med brugerinput), og kører brugerens input/data).
-   * Sørg for, at der arbejdes med sikkert DOM (forkert: innerHTML, D3.html (< nogle brugerdata/inputtet >), og brug sanitization til brugerens input/data før at føje den til INDLAND
-   * Sørg for, at der er ingen javascript fejl/undtagelser i administratorkonsollen til en hvilken som helst inputdata browser. Brugere kan bruge det visuelle element med en anden række uventede data, så det visuelle element ikke skal mislykkes. Du kan bruge [denne eksempelrapport](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) som et datasæt til test.
+   * Må ikke indeholde mappen include node_modules (add node_modules til .gitingore-fil)
+   * **npm install**-kommandoen må ikke returnere nogen fejl.
+   * **npm audit**-kommandoen må ikke returnere nogen advarsler med et højt eller moderat niveau.
+   * **pbiviz package**-kommandoen må ikke returnere nogen fejl.
+   * Skal indeholde [TSlint fra Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) uden nogen tilsidesat konfiguration, og denne kommando må ikke returnere nogen lint-fejl.
+   * Den kompilerede pakke for det brugerdefinerede visuelle element skal svare til den sendte pakke (md5-hashen for begge filer skal være ens).
+* Kildekodekrav:
+   * Det visuelle element skal understøtte [Rendering Events-API'en](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
+   * Sørg for, at der ikke køres tilfældig/dynamisk kode (bad: eval(), unsafe to use of settimeout(), requestAnimationFrame(), setinterval(some function with user input), running user input/data).
+   * Sørg for, at DOM manipuleres sikkert (bad: innerHTML, D3.html(<some user/data input>), brug rensning af brugerinput/-data, før det føjes til DOM'en.
+   * Sørg for, at der ikke er nogen javascript-fejl/-undtagelser i browserkonsollen for nogen inputdata. Brugerne kan bruge et visuelt element med et andet interval af uventede data. Det visuelle element må derfor ikke mislykkes. Du kan bruge [denne eksempelrapport](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) som et testdatasæt.
 
-* Hvis alle egenskaberne i capabilities.json ændres, skal du kontrollere, at de ikke brydes eksisterende bruger rapporter.
+* Hvis nogle egenskaber i capabilities. JSON ændres, skal du sørge for, at de ikke ødelægger den eksisterende brugers rapporter.
 
-* Sørg for, at den visuelle gengivelse er i overensstemmelse med den [retningslinjer for Power BI-visualiseringer](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Der tillades ingen vandmærker**.
+* Sørg for, at det visuelle element opfylder [retningslinjerne for visuelle elementer i Power BI](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Vandmærker er ikke tilladt**.
 
 * Anvender kun OSS-komponenter, der kan gennemses offentligt (Offentlige JS-biblioteker eller TypeScript. Kildekoden er tilgængelig til gennemsyn og har ikke kendte sikkerhedsrisici). Vi kan ikke bekræfte en brugerdefineret visualisering ved hjælp af en kommerciel komponent.
 

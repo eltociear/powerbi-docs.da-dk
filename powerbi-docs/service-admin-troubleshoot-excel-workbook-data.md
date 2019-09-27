@@ -13,7 +13,7 @@ ms.custom: seodec18
 LocalizationGroup: Troubleshooting
 ms.openlocfilehash: 6fb02e6cbaca30859aa00f58ae07c9a3fd7f6fe0
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65101359"
@@ -25,7 +25,7 @@ ms.locfileid: "65101359"
 
 Når du importerer en Excel-projektmappe til Power BI, kan du se følgende fejl:
 
-*Fejl: Vi kunne ikke finde nogen data, der er formateret som en tabel. Hvis du vil importere fra Excel til Power BI-tjenesten, skal du formatere dataene som en tabel. Vælg alle de data, du ønsker i tabellen, og tryk på Ctrl + T.*
+*Fejl: Vi kunne ikke finde nogen data, der er formateret som en tabel. Hvis du vil importere fra Excel til Power BI-tjenesten, skal du formatere dataene som en tabel. Markér alle de data, du vil have i tabellen, og tryk på CTRL + T.*
 
 ![Data blev ikke fundet i projektmappen](media/service-admin-troubleshoot-excel-workbook-data/power-bi-we-couldnt-find-any-data.png)
 

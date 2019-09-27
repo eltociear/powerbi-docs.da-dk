@@ -10,16 +10,16 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 6f270c28f643736f07c09ceb3e544e473f831ad9
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 4991117cfa8b34d9adbbd2dc29082d1e75b6852d
+ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271860"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71100395"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Oversigt over enkeltlogon (SSO) til gateways i Power BI
 
-Du kan få problemfri forbindelse med enkeltlogon, så Power BI-rapporter og -dashboards kan opdateres fra data i det lokale miljø, ved at konfigurere din datagateway i det lokale miljø med begrænset delegering fra Kerberos eller SAML (Security Assertion Markup Language). Datagatewayen i det lokale miljø faciliterer enkeltlogon ved hjælp af DirectQuery, som den bruger til at oprette forbindelse til datakilder i det lokale miljø.
+Du kan få problemfri forbindelse med enkeltlogon, så Power BI-rapporter og -dashboards kan opdateres i realtid fra data i det lokale miljø, ved at konfigurere din datagateway i det lokale miljø med begrænset delegering fra Kerberos eller SAML (Security Assertion Markup Language). Datagatewayen i det lokale miljø understøtter SSO ved hjælp af DirectQuery, som den bruger til at oprette forbindelse til datakilder i det lokale miljø.
 
 Vi understøtter i øjeblikket følgende datakilder:
 
@@ -52,8 +52,7 @@ Der følger flere oplysninger om disse trin:
 
 ## <a name="next-steps"></a>Næste trin
 
-Nu, hvor du har en grundlæggende forståelse af SSO, kan du læse mere detaljerede oplysninger om Kerberos og SAML:
+Nu, hvor du har en grundlæggende forståelse af SSO via gatewayen, kan du læse mere detaljerede oplysninger om Kerberos og SAML:
 
 * [Enkeltlogon (SSO) – Kerberos](service-gateway-sso-kerberos.md)
-* [Enkeltlogon (SSO) – Kerberos – ressourcebaseret](service-gateway-sso-kerberos-resource.md)
 * [Enkeltlogon (SSO) – SAML](service-gateway-sso-saml.md)

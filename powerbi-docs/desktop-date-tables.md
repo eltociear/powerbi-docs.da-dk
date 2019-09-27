@@ -12,14 +12,14 @@ ms.author: davidi
 LocalizationGroup: Model your data
 ms.openlocfilehash: 9bbe302c7187419abae556bb34f991efa1fdae00
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454371"
 ---
 # <a name="set-and-use-date-tables-in-power-bi-desktop"></a>Angiv og brug datotabeller i Power BI Desktop
 
-**Power BI Desktop** arbejder i baggrunden for automatisk at identificere kolonner, der repræsenterer datoer, og opretter derefter datohierarkier og andre aktiveringsmetadata til din model, på dine vegne. Du kan bruge disse indbyggede hierarkier, når du opretter rapportfunktioner såsom visualiseringer, tabeller, hurtigmålinger, udsnitsværktøjer osv. Power BI Desktop gør dette ved at oprette skjulte tabeller for dig, som du derefter kan bruge til dine rapporter og DAX-udtryk.
+**Power BI Desktop** arbejder i baggrunden for automatisk at identificere kolonner, der repræsenterer datoer, og opretter derefter datohierarkier og andre aktiveringsmetadata til din model for dig. Du kan bruge disse indbyggede hierarkier, når du opretter rapportfunktioner såsom visualiseringer, tabeller, hurtigmålinger, udsnitsværktøjer osv. Power BI Desktop gør dette ved at oprette skjulte tabeller for dig, som du derefter kan bruge til dine rapporter og DAX-udtryk.
 
 Mange dataanalytikere foretrækker at oprette deres egne datotabeller, hvilket er fint. I **Power BI Desktop** kan du angive, hvilken tabel din model skal bruge som sin **datotabel**, og derefter oprette datorelaterede visualiseringer, tabeller, hurtigmålinger osv. ved hjælp af denne tabels data for datoer. Når du angiver din egen datotabel, styrer du de datohierarkier, der oprettes i modellen, og du kan bruge dem i **hurtigmålinger** og andre handlinger, der gør brug af modellens datotabel. 
 
@@ -52,7 +52,7 @@ Når du har angivet en datotabel, kan du vælge, hvilken kolonne i denne tabel d
 
 ![](media/desktop-date-tables/date-tables_03.png)
 
-Vær opmærksom på, at når du angiver din egen datotabel, så opretter **Power BI Desktop** ikke automatisk de hierarkier, som ellers ville blive indbygget i modellen, for dig. Hvis du senere fravælger din datotabel (og ikke længere har en manuelt angivet datotabel), genskaber Power BI Desktop de automatisk oprettede indbyggede datotabeller, for datokolonnerne i tabellen.
+Vær opmærksom på, at når du angiver din egen datotabel, så opretter **Power BI Desktop** ikke automatisk de hierarkier, som ellers ville blive indbygget i modellen, for dig. Hvis du senere fravælger din datotabel (og ikke længere har en manuelt angivet datotabel), genskaber Power BI Desktop de indbyggede datotabeller, der automatisk blev oprettet, for dig for datokolonnerne i tabellen.
 
 Vær også opmærksom på, at når du markerer en tabel som en datotabel, fjernes den indbyggede datotabel (automatisk oprettet), som Power BI Desktop oprettede, og alle visualiseringer eller DAX-udtryk, du tidligere har oprettet på baggrund af disse indbyggede tabeller, fungerer ikke længere korrekt. 
 

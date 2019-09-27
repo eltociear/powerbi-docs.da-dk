@@ -1,6 +1,6 @@
 ---
-title: Punktdiagrammer med høj tæthed i Powerbi
-description: Punktdiagrammer med høj tæthed i Powerbi
+title: Punktdiagrammer med høj tæthed i Power BI
+description: Punktdiagrammer med høj tæthed i Power BI
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -12,7 +12,7 @@ ms.author: davidi
 LocalizationGroup: Create reports
 ms.openlocfilehash: 928e93c724a47f48aff1f87ee51f9a8c907774d6
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65454292"
@@ -25,38 +25,38 @@ Du kan f.eks. oprette et punktdiagram på baggrund af organisationens salgsaktiv
 ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_01.png)
 
 > [!NOTE]
-> Algoritmen **Udsnit med høj tæthed**, der er beskrevet i denne artikel, er tilgængelig i punktdiagrammer i både **Power BI Desktop** og **Power BI-tjenesten**.
+> Algoritmen **Stikprøvetagning med høj tæthed**, der er beskrevet i denne artikel, er tilgængelig i punktdiagrammer i både **Power BI Desktop** og **Power BI-tjenesten**.
 > 
 > 
 
 ## <a name="how-high-density-scatter-charts-work"></a>Sådan fungerer punktdiagrammer med høj tæthed
 Tidligere valgte **Power BI** et udsnit af eksempeldatapunkter i alle de underliggende data på en deterministisk måde for at oprette et punktdiagram. Power BI ville specifikt vælge de første og sidste rækker med data i serien af punktdiagrammer, og derefter ville de resterende rækker blive jævnt fordelt, så 3.500 datapunkter i alt ville blive afbilledet i punktdiagrammet. Hvis udsnittet f.eks. havde 35.000 rækker, ville de første og sidste rækker blive valgt til afbildning, og derefter ville hver 10. række også blive afbildet (35.000/10 = hver 10 række = 3.500 datapunkter). Tidligere blev null-værdier eller punkter, der ikke kunne afbildes (f.eks. tekstværdier) i dataserierne, ikke vist, og derfor blev de ikke taget i betragtning, når visualiseringen skulle genereres. Med denne type udsnit var den viste tæthed i punktdiagrammet også baseret på de repræsentative datapunkter. Den visuelle tæthed, der blev antydet, gjaldt dermed for udsnittet af punkter, ikke for de fuldstændige underliggende data.
 
-Når du aktiverer **High-Density med høj tæthed**, implementeres en algoritme, der fjerner overlappende punkter og sikrer, at punkterne i Visualiseringen kan nås, når der interageres med Visualiseringen i Power BI. Algoritmen sikrer også, at alle punkter i datasættet er repræsenteret i visualiseringen Det giver en kontekst for betydningen af de udvalgte punkter i stedet for bare at afbilde et repræsentativt udsnit.
+Når du aktiverer **Stikprøvetagning med høj tæthed**, implementeres en algoritme i Power BI, der fjerner overlappende punkter og sikrer, at punkterne i visualiseringen kan nås, når der interageres med visualiseringen. Algoritmen sikrer også, at alle punkter i datasættet er repræsenteret i visualiseringen Det giver en kontekst for betydningen af de udvalgte punkter i stedet for bare at afbilde et repræsentativt udsnit.
 
 Udsnit af data med høj tæthed tages pr. definition for at kunne oprette visualiseringer forholdsvist hurtigt og bruge disse visualiseringer interaktivt. For mange datapunkter i et visuelt element kan gøre det for tungt og gøre tendenserne mindre synlige. Udsnitsalgoritmen er derfor udviklet for at udvælge data, så man opnår den bedste visualisering og sikrer, at alle data er repræsenteret. I Power BI er algoritmen nu blevet forbedret for at opnå den bedste kombination af svartid, repræsentation og tydelig bevarelse af vigtige punkter i det samlede datasæt.
 
 > [!NOTE]
-> Punktdiagrammer, der bruger algoritmen **Udsnit med høj tæthed**, afbildes bedst i firkantede visualiseringer, som det er tilfældet med alle punktdiagrammer.
+> Punktdiagrammer, der bruger algoritmen **Stikprøvetagning med høj tæthed**, afbildes bedst i firkantede visualiseringer, som det er tilfældet med alle punktdiagrammer.
 > 
 > 
 
 ## <a name="how-the-new-scatter-chart-sampling-algorithm-works"></a>Sådan fungerer den nye algoritme for udsnit i punktdiagrammer
-Den nye algoritme for **High-Density med høj tæthed** for punktdiagrammer anvender metoder, der fanger og repræsenterer de underliggende data mere effektivt og samtidig fjerner overlappende punkter. Det gøres ved at starte med en lille radius for hvert datapunkt (den synlige cirkelstørrelse for et givet punkt i visualiseringen). Derefter øges radius for alle datapunkterne. Når to (eller flere) datapunkter overlapper hinanden, repræsenterer en enkelt cirkel (med den øgede radiusstørrelse) disse overlappede datapunkter. Algoritmen fortsætter med at øge radius for datapunkterne, indtil radiusværdien resulterer i et rimeligt antal datapunkter – 3.500 – der vises i punktdiagrammet.
+Den nye algoritme for **Stikprøvetagning med høj tæthed** for punktdiagrammer anvender metoder, der registrerer og repræsenterer de underliggende data mere effektivt og fjerner overlappende punkter. Det gøres ved at starte med en lille radius for hvert datapunkt (den synlige cirkelstørrelse for et givet punkt i visualiseringen). Derefter øges radius for alle datapunkterne. Når to (eller flere) datapunkter overlapper hinanden, repræsenterer en enkelt cirkel (med den øgede radiusstørrelse) disse overlappede datapunkter. Algoritmen fortsætter med at øge radius for datapunkterne, indtil radiusværdien resulterer i et rimeligt antal datapunkter – 3.500 – der vises i punktdiagrammet.
 
 Metoderne i denne algoritme sikrer, at udenforliggende værdier repræsenteres i den visualisering, der genereres. Algoritmen respekterer også skaleringen, når overlappet bestemmes, så der visualiseres eksponentielle skaleringer med nøjagtige gengivelser af de underliggende visualiserede punkter.
 
 Algoritmen bevarer også den overordnede form af punktdiagrammet.
 
 > [!NOTE]
-> Når du bruger algoritmen for **Udsnit med høj tæthed** for punktdiagrammer, er målet *korrekt distribution* af dataene, og underforstået visuel tæthed er *ikke* målet. Du kan f.eks. få vist et punktdiagram med mange overlappende cirkler (tæthed) i et bestemt område og forestille dig, hvor mange datapunkter der er samlet der i klynger. Da algoritmen for **Udsnit med høj tæthed** kan bruge én cirkel til at repræsentere mange datapunkter, vises en sådan underforstået visuel tæthed (eller "klyngedannelse") ikke. Hvis du vil have flere detaljer i et bestemt område, kan du bruge udsnitsværktøjerne til at zoome ind.
+> Når du bruger algoritmen for **Stikprøvetagning med høj tæthed** for punktdiagrammer, er målet *korrekt distribution* af dataene, og underforstået visuel tæthed er *ikke* målet. Du kan f.eks. få vist et punktdiagram med mange overlappende cirkler (tæthed) i et bestemt område og forestille dig, hvor mange datapunkter der er samlet der i klynger. Da algoritmen for **Stikprøvetagning med høj tæthed** kan bruge én cirkel til at repræsentere mange datapunkter, vises en sådan underforstået visuel tæthed (eller "klyngedannelse") ikke. Hvis du vil have flere detaljer i et bestemt område, kan du bruge udsnitsværktøjerne til at zoome ind.
 > 
 > 
 
 Desuden kan nogle datapunkter ikke afbildes (f.eks. null-værdier og tekstværdier) og ignoreres derfor, så en anden værdi, der kan afbildes, vælges. Dette sikrer, at punktdiagrammets sande form bevares.
 
 ### <a name="when-the-standard-algorithm-for-scatter-charts-is-used"></a>Når standardalgoritmen for punktdiagrammer anvendes
-Der er omstændigheder, som **High-Density med høj tæthed** kan ikke anvendes på et punktdiagram, og oprindelige algoritme anvendes. Det drejer sig om følgende tilfælde:
+Der er omstændigheder, som gør, at **Stikprøvetagning med høj tæthed** ikke kan anvendes på et punktdiagram, og den oprindelige algoritme anvendes i stedet. Det drejer sig om følgende tilfælde:
 
 * Hvis du højreklikker på en værdi under **Oplysninger** og vælger **Vis elementer uden data** i menuen, returneres punktdiagrammet til den oprindelige algoritme.
   
@@ -68,12 +68,12 @@ Der er omstændigheder, som **High-Density med høj tæthed** kan ikke anvendes 
   ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_03.png)
 
 ## <a name="how-to-turn-on-high-density-sampling-for-a-scatter-chart"></a>Sådan aktiveres udsnit med høj tæthed for et punktdiagram
-At aktivere **High-Density med høj tæthed**ved at vælge et punktdiagram, gå til den **formatering** rude, udvid den **generelle** kort, og i bunden af kortet, skal du skubbe **High-Density med høj tæthed** slå skyderen til **på**.
+Du kan slå **Stikprøvetagning med høj tæthed** til ved at vælge et punktdiagram, gå til ruden **Formatering**, udvide kortet **Generelt** og flytte skyderen **Stikprøvetagning med høj tæthed** i bunden af kortet til indstillingen **Til**.
 
 ![](media/desktop-high-density-scatter-charts/high-density-scatter-charts_04.png)
 
 > [!NOTE]
-> Når skyderen er aktiveret, forsøger Power BI at bruge algoritmen **Udsnit med høj tæthed**, når det er muligt. Når algoritmen ikke kan bruges (hvis du f.eks. anbringer en værdi på aksen *Afspil*), forbliver skyderen i placeringen **Til**, selvom diagrammet er returneret til standardalgoritmen. Hvis du senere fjerner en værdi fra aksen *Afspil* (eller betingelserne ændres, så det er muligt at bruge algoritmen Udsnit med høj tæthed), bruges udsnit med høj tæthed automatisk til diagrammet, fordi funktionen er aktiveret.
+> Når skyderen er aktiveret, forsøger Power BI at bruge algoritmen **Stikprøvetagning med høj tæthed**, når det er muligt. Når algoritmen ikke kan bruges (hvis du f.eks. anbringer en værdi på aksen *Afspil*), forbliver skyderen i placeringen **Til**, selvom diagrammet er returneret til standardalgoritmen. Hvis du senere fjerner en værdi fra aksen *Afspil* (eller betingelserne ændres, så det er muligt at bruge algoritmen Udsnit med høj tæthed), bruges udsnit med høj tæthed automatisk til diagrammet, fordi funktionen er aktiveret.
 > 
 > [!NOTE]
 > Datapunkter grupperes eller vælges af indekset. Hvis der er en forklaring, påvirker den ikke udsnittet for algoritmen. Den påvirker kun rækkefølgen i visualiseringen.
@@ -83,10 +83,10 @@ At aktivere **High-Density med høj tæthed**ved at vælge et punktdiagram, gå 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 Algoritmen Udsnit med høj tæthed er en vigtig forbedring af Power BI, men der er et par ting, du bør være klar over, når du arbejder med værdier med høj tæthed og punktdiagrammer.
 
-* Den **High-Density med høj tæthed** algoritmen fungerer kun med liveforbindelser til Power BI-tjenesten-baserede modeller, importerede modeller eller DirectQuery.
+* Algoritmen for **Stikprøvetagning med høj tæthed** fungerer kun med direkte forbindelser til modeller, der er baseret på Power BI-tjenesten, importerede modeller eller DirectQuery.
 
 ## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om udsnit med høj tæthed i andre diagrammer i følgende artikel.
 
-* [Linjeudsnit med høj tæthed i Power BI](desktop-high-density-sampling.md)
+* [Stikprøvetagning af linje med høj tæthed i Power BI](desktop-high-density-sampling.md)
 

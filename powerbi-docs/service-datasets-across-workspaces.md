@@ -7,19 +7,19 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 09/16/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 258dd735c5ba97122d9e93f888e65cf2030f01eb
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: ace40fed472dc516cce5a761544cc5365566f3cd
+ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530476"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71074114"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Introduktion til datasæt på tværs af arbejdsområder (prøveversion)
 
-Business intelligence er en aktivitet baseret på samarbejde. Det er vigtigt at oprette standardiserede datasæt, der fungerer som fælles udgangspunkt. Derefter er registrering og genbrug af disse standardiserede datasæt helt centralt. Når eksperter inden for datamodellering i din organisation opretter og deler optimerede datasæt, kan forfattere af rapporter bruge disse datasæt som udgangspunkt for at oprette præcise rapporter. Din organisation har derefter ensartede data, når der skal træffes beslutninger, samt en sund datakultur.
+Business intelligence er en aktivitet baseret på samarbejde. Det er vigtigt at oprette standardiserede datasæt, der fungerer som fælles udgangspunkt. Derefter er registrering og genbrug af disse standardiserede datasæt helt centralt. Når eksperter inden for datamodellering i din organisation opretter og deler optimerede datasæt, kan oprettere af rapporter bruge disse datasæt som udgangspunkt for at oprette præcise rapporter. Din organisation har derefter ensartede data, når der skal træffes beslutninger, samt en sund datakultur.
 
 ![Vælg et delt datasæt](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
@@ -55,6 +55,7 @@ Hvis du opretter datasæt, som andre kan få glæde af, kan du gøre det nemmere
 De specifikke funktioner og oplevelser, der er baseret på funktioner for delte datasæt, er givet i licens i henhold til deres eksisterende scenarier. Eksempel:
 
 - Generelt kan alle registrere og oprette forbindelse til delte datasæt. Brugere uden en Pro-licens kan dog kun oprette forbindelse til datasæt, der er placeret i deres egen version af Mit arbejdsområde.
+- Brugere uden en Pro-licens kan kun bruge rapporter og dashboards, der er baseret på et delt datasæt, hvis begge arbejdsområder (det med indholdet og det med datasættet) hostes i en Premium-kapacitet.
 - I Power BI Desktop kan brugere uden en Pro-licens kun se datasæt fra deres egen version af Mit arbejdsområde.
 - Det kræver en Pro-licens at kopiere rapporter mellem arbejdsområder.
 - Hvis du vil kopiere rapporter fra en app, skal du have en Pro-licens, som er påkrævet for organisationsindholdspakker.
@@ -66,7 +67,7 @@ De specifikke funktioner og oplevelser, der er baseret på funktioner for delte 
 - Lad os sige, at du opretter en rapport i arbejdsområde A, der er baseret på et datasæt i arbejdsområde B. Når du opretter en app til arbejdsområde A, kan du kun inkludere den pågældende rapport i appen til arbejdsområde A, hvis du også er medlem af arbejdsområde B.
 - I et klassisk arbejdsområde viser datasæts registreringsoplevelse kun datasættene i det pågældende arbejdsområde.
 - Hvis du vil føje en rapport baseret på et delt datasæt til en app, skal du være medlem af datasættets arbejdsområde. Dette er et kendt problem.
-- "Publicer på internettet" virker ikke for en rapport, der er baseret på et delt datasæt. Dette er tilsigtet.
+- "Publicer på internettet" er designet til ikke at virke for en rapport, der er baseret på et delt datasæt.
 - Hvis to personer er medlem af et arbejdsområde, der åbner et delt datasæt, er det er muligt, at kun én af dem kan se det relaterede datasæt i arbejdsområdet. Det er kun personer, der som minimum har læseadgang til datasættet, som kan se det delte datasæt. 
 
 ## <a name="next-steps"></a>Næste trin

@@ -11,7 +11,7 @@ ms.date: 05/06/2019
 ms.author: maggies
 ms.openlocfilehash: d30a396eeb4d461d7c36cecf9759306236810cab
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "65240023"
@@ -37,7 +37,7 @@ Til dette selvstudium skal du have et Azure-abonnement. Hvis du ikke har en, ska
 
 Power BI-teamet har heldigvis oprettet en VM, der leveres sammen med Power BI-rapportserveren, som allerede er installeret.
 
-1. Vælg Power BI Report Server i Azure Marketplace. Dette link åbner det direkte: [Power BI-rapportserver](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
+1. Vælg Power BI-rapportserver på Azure Marketplace. Med dette links åbnes det direkte: [Power BI-rapportserver](https://azuremarketplace.microsoft.com/marketplace/apps/reportingservices.technical-preview?tab=Overview).  
 
 2. Vælg **Hent det nu**.
 3. Vælg **Fortsæt** for at acceptere udbyderens vilkår for anvendelse og politik om beskyttelse af personlige oplysninger.
@@ -46,13 +46,13 @@ Power BI-teamet har heldigvis oprettet en VM, der leveres sammen med Power BI-ra
 
     ![Opret en virtuel maskine til Power BI-rapportserveren](media/tutorial-explore-report-server-web-portal/power-bi-report-server-create.png)
 
-5. I **trin 1 grundlæggende**, for **VM-navn**, kalde den **reportservervm**.
+5. Angiv **navnet på VM'en** som **reportservervm** under **Trin 1 Grundlæggende**.
 
-    Power BI Report Server VM navnet må ikke indeholde tankestreger.
+    Navnet på VM'en i Power BI-rapportserver må ikke indeholde bindestreger.
 
 5. Opret et brugernavn og en adgangskode.
 
-6. For **ressourcegruppe**, skal du vælge **Opret ny**, og kald den **reportserverresourcegroup** > **OK**.
+6. Som **Ressourcegruppe** skal du vælge **Opret ny** og kalde den for **reportserverresourcegroup** > **OK**.
 
     Hvis du gennemgår selvstudiet mere end én gang, skal du give ressourcegruppen et andet navn efter den første gang. Du kan ikke bruge samme navn på ressourcegruppen to gange i ét abonnement. 
 
@@ -60,15 +60,15 @@ Power BI-teamet har heldigvis oprettet en VM, der leveres sammen med Power BI-ra
 
 7. Bevar de andre standarder > **OK**.
 
-8. I **trin 2 indstillinger**, hold standardindstillingerne > **OK**.
+8. Under **Trin 2 Indstillinger** skal du beholde standarderne > **OK**.
  
-    Den **SQL Storage-konto** og **diagnosticering lagerkonto** værdier skal også være entydigt. Hvis du gennemgå selvstudiet mere end én gang, skal du give dem forskellige navne.
+    Værdierne for **SQL Storage-kontoen** og **Diagnostics Storage-kontoen** skal også være entydige. Hvis du gennemgår selvstudiet mere end én gang, skal du give dem forskellige navne.
 
-9. I **trin 3 oversigt**, gennemse dine valg > **OK**.
+9. Under **Trin 3 Oversigt** skal du gennemse dine valg > **OK**.
 
-10. I **trin 4 købe**, gennemgå vilkårene i bruger- og beskyttelse af personlige oplysninger politikken > **Opret**.
+10. Under **Trin 4 Køb** skal du gennemse Vilkår for anvendelse og Politik om beskyttelse af personlige oplysninger > **Opret**.
 
-    Den **indsender udrulning til Power BI Report Server** kan tage nogle minutter.
+    Processen **Indsendelse af udrulning til Power BI-rapportserver** kan tage flere minutter.
 
 ## <a name="connect-to-your-virtual-machine"></a>Opret forbindelse til din virtuelle maskine
 
@@ -84,13 +84,13 @@ Power BI-teamet har heldigvis oprettet en VM, der leveres sammen med Power BI-ra
 
     ![Opret forbindelse til den virtuelle maskine](media/tutorial-explore-report-server-web-portal/power-bi-report-server-connect-to-virtual-machine.png)
 
-5. I den **Opret forbindelse til en virtuel maskine** ruden holde standardindstillingerne, og vælg **Download RDP-filen**.
+5. I ruden **Opret forbindelse til virtuel maskine** skal du bevare standarderne og vælge **Download RDP-fil**.
 
-1. I den **Fjernskrivebord** dialogboksen Vælg **Connect**.
+1. I dialogboksen **Forbindelse til fjernskrivebord** skal du vælge **Opret forbindelse**.
 
 6. Angiv det navn og den adgangskode, du har oprettet for VM'en > **OK**.
 
-7. Den næste dialogboks siger **identiteten af den eksterne computer ikke kan identificeres**. Vælg **Ja**.
+7. I næste dialogboks står der **Identiteten af fjerncomputeren kan ikke identificeres**. Vælg **Ja**.
 
    Sådan – din nye VM åbnes.
 
@@ -104,7 +104,7 @@ Når din VM åbner, vises følgende elementer på skrivebordet.
 |---------|---------|
 |![Nummer 1](media/tutorial-explore-report-server-web-portal/number-1.png) | Eksempel på Power BI-rapporter (.PBIX) |
 |![Nummer 2](media/tutorial-explore-report-server-web-portal/number-2.png) | Links til dokumentation til Power BI-rapportserveren |
-|![Nummer 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Starter Power BI Desktop optimeret til Power BI Report Server (2019 januar) |
+|![Nummer 3](media/tutorial-explore-report-server-web-portal/number-3.png) | Starter Power BI Desktop optimeret til Power BI-rapportserver (januar 2019) |
 |![Nummer 4](media/tutorial-explore-report-server-web-portal/number-4.png) | Åbner webportalen til Power BI-rapportserveren i browseren |
 |![Nummer 5](media/tutorial-explore-report-server-web-portal/number-5.png) | Starter SQL Server Data Tools for at oprette sideinddelte rapporter (. RDL) |
 
@@ -125,7 +125,7 @@ Dobbeltklik på ikonet **Webportalen Rapportserver**. Browseren åbner `http://l
 ## <a name="tag-your-favorites"></a>Tag dine favoritter
 Du kan mærke rapporter og KPI'er, som skal være favoritter. De er lettere at finde, fordi de alle sammen er samlet i en enkelt Favoritter-mappe, både i webportalen og i Power BI-mobilappsene. 
 
-1. Klik på ellipsen ( **...** ) i øverste højre hjørne af **Avance** > KPI > **Føj til Favoritter**.
+1. Klik på ellipsen (**...**) i øverste højre hjørne af **Avance** > KPI > **Føj til Favoritter**.
    
     ![Føj til Favoritter](media/tutorial-explore-report-server-web-portal/power-bi-report-server-add-to-favorites.png)
 2. Vælg **Favoritter** på båndet på webportalen for at se den sammen med andre favoritter på siden Favoritter på webportalen.
@@ -163,7 +163,7 @@ Du kan få vist og interagere med Power BI-rapporter på webportalen og starte P
 
 1. Vælg **Tillad** for at give dette websted tilladelse til at åbne et program på din computer. 
 
-     Rapporten åbnes i Power BI Desktop. Bemærk, at navnet på den øverste linje, "Power BI Desktop (januar 2019)". Det er den version, der er optimeret til Power BI-rapportserveren.
+     Rapporten åbnes i Power BI Desktop. Bemærk navnet på den øverste linje "Power BI Desktop (januar 2019)". Det er den version, der er optimeret til Power BI-rapportserveren.
 
     Brug den version af Power BI Desktop, der er installeret på VM'en. Du kan ikke skifte mellem domæner for at uploade en rapport.
 

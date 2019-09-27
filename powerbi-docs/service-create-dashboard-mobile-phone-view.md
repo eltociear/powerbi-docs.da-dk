@@ -12,15 +12,15 @@ ms.author: maggies
 LocalizationGroup: Dashboards
 ms.openlocfilehash: f2b8c2c4be343dc135fe1b133bfcb956c1549de4
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61158168"
 ---
 # <a name="optimize-a-dashboard-for-mobile-phones---power-bi"></a>Optimer et dashboard til mobiltelefoner – Power BI 
-Når du får vist dashboards i stående visning på en telefon, kan du opdage dashboardfelterne er placeret et ad gangen efter hinanden, alle de samme størrelse. I Power BI-tjenesten, kan du oprette en tilpasset visning af et dashboard, specielt til stående visning på telefoner. Selv hvis du opretter en telefonvisning, når du vender telefonen sidelæns, ser du dashboardet, som det er arrangeret i tjenesten.
+Når du får vist dashboards i stående retning på en telefon, vil du opdage, at dashboardfelterne har den samme størrelse og er placeret efter hinanden et ad gangen. I Power BI-tjenesten kan du oprette en tilpasset visning af et dashboard specifikt til stående retning på telefoner. Selvom du opretter en telefonvisning, vil du se dashboardet, som det ser ud i tjenesten, når du vender telefonen om på siden.
 
-Leder du efter oplysninger om at få vist dashboards på en mobilenhed? Prøv denne hurtige Start [Udforsk dashboards og rapporter i Power BI-mobilappsene](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md) i stedet.
+Leder du efter oplysninger om visning af dashboards på en mobilenhed? Prøv i stedet denne hurtig start [Udforsk dashboards og rapporter i Power BI-mobilapps](consumer/mobile/mobile-apps-quickstart-view-dashboard-report.md).
 
 > [!NOTE]
 > Når du redigerer telefonvisningen, kan alle, der ser dashboardet på en telefon, i realtid se de ændringer, du foretager. Hvis du eksempelvis frigør alle felter i dashboardets telefonvisning, har dashboardet på telefonen pludseligt ingen felter. 

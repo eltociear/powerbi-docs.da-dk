@@ -1,7 +1,7 @@
 ---
 ms.openlocfilehash: e87ea8470464e458c1da2037f25adfcee857361e
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "61271285"
@@ -16,5 +16,5 @@ Det er intet problem, hvis din projektmappe har **Power View-ark**. Power BI opr
 
 ![](media/5-3-import-powerpivot-powerview/5-3_2.png)
 
-Og her er en af de gode funktioner i Power BI: Hvis du bruger Power-forespørgsel eller Power Pivot til at oprette forbindelse til, forespørge og indlæse data fra en ekstern datakilde, når du har importeret din projektmappe i Power BI, kan du konfigurere **planlagt opdatering**. Via planlagt opdatering bruger Power BI forbindelsesoplysningerne fra din projektmappe til at oprette direkte forbindelse til datakilden og forespørge og indlæse eventuelle data, der er blevet ændret. Alle visualiseringer i rapporterne opdateres også automatisk.
+Her er en af de fantastiske funktioner i Power BI: Hvis du bruger Power Query eller Power Pivot til at oprette forbindelse til, forespørge og indlæse data fra en ekstern datakilde, kan du konfigurere **planlagt opdatering**, når du har importeret din projektmappe i Power BI. Via planlagt opdatering bruger Power BI forbindelsesoplysningerne fra din projektmappe til at oprette direkte forbindelse til datakilden og forespørge og indlæse eventuelle data, der er blevet ændret. Alle visualiseringer i rapporterne opdateres også automatisk.
 
