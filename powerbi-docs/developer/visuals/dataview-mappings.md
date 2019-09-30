@@ -1,20 +1,20 @@
 ---
 title: Forstå tilknytning af datavisning i Power BI-visualiseringer
 description: I denne artikel beskrives det, hvordan Power BI transformerer data, før de sendes til visualiseringer.
-author: asander
-ms.author: asander
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 07989183688045f34d78e71cdaad5045d080f436
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: 77d5d6423c8246712d12dcc041d32ae73f68b72e
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237235"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71193544"
 ---
 # <a name="understand-data-view-mapping-in-power-bi-visuals"></a>Forstå tilknytning af datavisning i Power BI-visualiseringer
 
@@ -618,7 +618,7 @@ Visualiseringen henter sin datastruktur som beskrevet i følgende kode (kun de f
 
 Hvis du vil kontrollere den datamængde, der skal modtages i datavisningen, kan du anvende en algoritme til datareduktion.
 
-Alle brugerdefinerede visualiseringer anvender som standard den øverste datareduktionsalgoritme med *antal* angivet til 1000 datapoint. Det svarer til at angive følgende egenskaber i filen *capabilities.json*:
+Alle Power BI-visualiseringer anvender som standard den øverste datareduktionsalgoritme med *antal* angivet til 1.000 datapunker. Det svarer til at angive følgende egenskaber i filen *capabilities.json*:
 
 ```json
 "dataReductionAlgorithm": {
@@ -628,7 +628,7 @@ Alle brugerdefinerede visualiseringer anvender som standard den øverste datared
 }
 ```
 
-Du kan ændre værdien *antal* til en vilkårligt heltalsværdi på op til 30000. R-baserede brugerdefinerede visuals kan understøtte op til 150000 rækker.
+Du kan ændre værdien *antal* til en vilkårligt heltalsværdi på op til 30000. R-baserede Power BI-visualiseringer kan understøtte op til 150.000 rækker.
 
 ## <a name="data-reduction-algorithm-types"></a>Typer af algoritmer til datareduktion
 

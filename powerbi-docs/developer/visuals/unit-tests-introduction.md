@@ -1,20 +1,20 @@
 ---
 title: Introduktion til enhedstests i Power BI-visualiseringsprojekter
 description: I denne artikel beskrives det, hvordan du skriver enhedstests til visuelle projekter i Power BI
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 06/18/2019
-ms.openlocfilehash: f0040ef53fbbce8c7133e5f645bcbddb0bbfadea
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: bb9835ceba302716c2c4b1e28eda33c6e4b1db42
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70236729"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71192472"
 ---
 # <a name="tutorial-add-unit-tests-for-power-bi-visual-projects"></a>Selvstudium: Tilføj enhedstests i visuelle projekter i Power BI
 
@@ -616,4 +616,4 @@ I filområdet kan du se på kildekoden. Hvis der ikke udføres en bestemt kode u
 
 ## <a name="next-steps"></a>Næste trin
 
-Når din visualisering er klar, kan du sende den til publicering. Se [Publicer brugerdefinerede visualiseringer til AppSource](../office-store.md) for at få flere oplysninger.
+Når din visualisering er klar, kan du sende den til publicering. Du kan få flere oplysninger under [Publicer Power BI-visualiseringer i AppSource](../office-store.md).

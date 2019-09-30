@@ -1,24 +1,24 @@
 ---
 title: Tilføj understøttelse af bogmærker i Power BI-visualiseringer
 description: Power BI-visualiseringer kan håndtere skift mellem bogmærker
-author: zBritva
-ms.author: v-ilgali
+author: KesemSharabi
+ms.author: kesharab
 manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: c7fb8fa6fcf8c07f0d8f466892fff8d03a492a79
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: c19b67a59d0ecb4cbfbcf5ad8dd18886f440e164
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70237271"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194450"
 ---
 # <a name="add-bookmark-support-for-power-bi-visuals"></a>Tilføj understøttelse af bogmærker i Power BI-visualiseringer
 
-Med bogmærker i Power BI-rapporter kan du registrere en konfigureret visning af en rapportside med visualiseringens markeringstilstand og dens filtreringstilstand. Dette kræver dog yderligere handlinger i forbindelse med brugerdefinerede visualiseringer for at understøtte bogmærket og reagere korrekt på ændringer.
+Med bogmærker i Power BI-rapporter kan du registrere en konfigureret visning af en rapportside med visualiseringens markeringstilstand og dens filtreringstilstand. Dette kræver dog yderligere handlinger i forbindelse med Power BI-visualiseringer for at understøtte bogmærket og reagere korrekt på ændringer.
 
 Du kan finde flere oplysninger om bogmærker under [Brug bogmærker til at dele indsigt og oprette tekstenheder i Power BI](https://docs.microsoft.com/power-bi/desktop-bookmarks).
 
@@ -32,7 +32,7 @@ Hvis din visualisering interagerer med andre visualiseringer, vælger datapunkte
 
 2. Opdater visualiseringens API til version 1.11.0 for at bruge `registerOnSelectCallback` i en forekomst af `SelectionManager`. Det er påkrævet til visualiseringer uden filtrering, der bruger den almindelige `SelectionManager` i stedet for `InteractivityService`.
 
-### <a name="how-custom-visuals-interact-with-power-bi-in-report-bookmarks"></a>Sådan interagerer brugerdefinerede visualiseringer med Power BI i bogmærker i rapporter
+### <a name="how-power-bi-visuals-interact-with-power-bi-in-report-bookmarks"></a>Sådan interagerer Power BI-visualiseringer med Power BI i bogmærker i rapporter
 
 Lad os overveje følgende scenarie: du vil oprette flere bogmærker på rapportsiden med en anden markeringstilstand i hvert bogmærke.
 

@@ -1,20 +1,20 @@
 ---
 title: Retningslinjer for Power BI-visualiseringer
 description: Få mere at vide om, hvordan du kan publicere din brugerdefinerede visualisering i AppSource, så andre kan finde, købe og bruge den.
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 07/16/2019
-ms.openlocfilehash: 6a2fce59171ec36241cd5de03d41f6a27f54c664
-ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
+ms.openlocfilehash: 71752a635c69e6712befbb00e942189fa4dacc36
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68380224"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71327721"
 ---
 # <a name="guidelines-for-power-bi-visuals"></a>Retningslinjer for Power BI-visualiseringer
 Før du [publicerer](https://docs.microsoft.com/power-bi/developer/office-store) din visualisering i AppSource, så andre kan finde og bruge den, skal du sørge for at følge retningslinjerne for at skabe en fantastisk oplevelse for dine brugere. 
@@ -25,11 +25,14 @@ Genvejsmenuen bør være aktiveret i alle Power BI-visualiseringer for at sikre 
 
 
 ## <a name="logo-guidelines"></a>Retningslinjer for logo
+> [!NOTE]
+> Ordet logo i denne artikel refererer til et ikon for en vilkårlig kommerciel virksomhed, som beskrevet i nedenstående billeder. 
 
-I dette afsnit beskrives specifikationerne for tilføjelse af logoer og logotyper i visualiseringer. Logoer er ikke obligatoriske. Hvis de tilføjes, skal de følge disse retningslinjer. 
+I dette afsnit beskrives specifikationerne for tilføjelse af logoer i Power BI-visualiseringer. Logoer er ikke obligatoriske. Hvis de tilføjes, skal de følge disse retningslinjer. 
 
 > [!IMPORTANT]
 > Logoer er kun tilladt i *redigeringstilstand*. Logoer *må ikke* vises i visningstilstand.
+
 
 ![Definitioner](media/guidelines-powerbi-visuals/definitions.png)
 
@@ -44,11 +47,13 @@ I dette afsnit beskrives specifikationerne for tilføjelse af logoer og logotype
 ![Redigeringstilstand](media/guidelines-powerbi-visuals/logos-in-edit-mode.png)
 
 
+Eventuelle informative ikoner skal i læsetilstand overholde den farve, størrelse og placering, der er angivet for logoer ovenfor.
+
 ## <a name="guidelines-for-power-bi-visuals-with-additional-purchases"></a>Retningslinjer for Power BI-visualiseringer med ekstra køb
 
 Indtil for nylig accepterede Marketplace (AppSource) kun gratis Power BI-visualiseringer. Denne politik er blevet ændret (december 2018), så du nu også kan indsende visualiseringer til AppSource, som har prismærket "Yderligere køb kan være påkrævet". 
 
-Visualiseringer med "Yderligere køb kan være påkrævet" er ligesom tilføjelsesprogrammer med apptilkøb i Office Store. Udviklere kan også indsende disse visualiseringer til certificering, efter AppSource-teamet har godkendt dem, og de har kontrolleret, at de overholder certificeringskravene. Du kan finde flere oplysninger om kravene i [Certificerede brugerdefinerede visualiseringer](../power-bi-custom-visuals-certified.md).
+Visualiseringer med "Yderligere køb kan være påkrævet" er ligesom tilføjelsesprogrammer med apptilkøb i Office Store. Udviklere kan også indsende disse visualiseringer til certificering, efter AppSource-teamet har godkendt dem, og de har kontrolleret, at de overholder certificeringskravene. Du kan finde flere oplysninger om kravene i [Certificerede Power BI-visualiseringer](../power-bi-custom-visuals-certified.md).
 
 > [!NOTE]
 > En visualisering kan kun certificeres, hvis den ikke har adgang til eksterne tjenester eller ressourcer.

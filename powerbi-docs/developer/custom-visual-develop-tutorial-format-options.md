@@ -1,22 +1,22 @@
 ---
 title: Føj formateringsindstillinger til en brugerdefineret visual i Power BI
 description: Et selvstudium i, hvordan du udvikler formateringsindstillinger for en brugerdefineret visual i Power BI
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 11/21/2018
-ms.openlocfilehash: 56134143a752a094c339248c3eeeab57116d3501
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5fa14e3aa8a303206d52359d04db05850e096d81
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61379810"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194574"
 ---
-# <a name="tutorial-adding-formatting-options-to-a-power-bi-custom-visual"></a>Selvstudium: Føj formateringsindstillinger til en brugerdefineret visual i Power BI
+# <a name="tutorial-adding-formatting-options-to-a-power-bi-visual"></a>Selvstudium: Føj formateringsindstillinger til en visualisering i Power BI
 
 I dette selvstudium gennemgås, hvordan du føjer almindelige egenskaber til din visualisering.
 
@@ -263,4 +263,4 @@ Se [fejlfindingsvejledningen](https://microsoft.github.io/PowerBI-visuals/docs/h
 
 ## <a name="next-steps"></a>Næste trin
 
-Du kan angive din nyligt udviklede visualisering, så andre kan bruge den, ved at sende den til **AppSource**. Du kan finde flere oplysninger om denne proces under [Publicer brugerdefinerede visualiseringer i AppSource](office-store.md).
+Du kan angive din nyligt udviklede visualisering, så andre kan bruge den, ved at sende den til **AppSource**. Du kan finde flere oplysninger om denne proces under [Publicer Power BI-visualiseringer i AppSource](office-store.md).

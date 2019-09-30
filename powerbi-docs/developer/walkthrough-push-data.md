@@ -11,16 +11,16 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.openlocfilehash: 9eb81610044f795b6f9dc5c58aeefad13de06542
 ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: da-DK
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "66222150"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Overfør data til et Power BI-datasæt
 
-Power BI-API'EN gør det muligt at overføre data til et Power BI-datasæt. I denne artikel bruger viser vi, hvordan du overføre et salg og Marketing-datasæt, der indeholder en varetabel, til en eksisterende datasæt.
+Med Power BI-API'en, kan du overføre data til et Power BI-datasæt. I denne artikel viser vi dig, hvordan du kan overføre datasæt for SalesMarkering, der indeholder en produkttabel, til et eksisterende datasæt.
 
-Før du går i gang, du har brug for en Azure Active Directory (Azure AD) og en [Power BI-konto](create-an-azure-active-directory-tenant.md).
+Inden du går i gang, skal du have en Azure AD- (Azure Active Directory) og [Power BI-konto](create-an-azure-active-directory-tenant.md).
 
 ## <a name="steps-to-push-data-into-a-dataset"></a>Sådan overfører du data til et datasæt
 
@@ -34,7 +34,7 @@ Det næste afsnit er en generel beskrivelse af de handlinger i Power BI-API'en, 
 
 ## <a name="power-bi-api-operations-to-push-data"></a>Handlinger i Power BI-API'en til overførsel af data
 
-Med Power BI REST API'en kan du overføre datakilder til Power BI. Når en app føjer rækker til et datasæt, dashboard-felter opdatering automatisk med de nye data. Hvis du vil overføre data, du bruger den [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset) og [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows) handlinger. Du kan finde et datasæt ved brug af [Get Datasets](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets) handling. Du kan overføre et gruppe-ID til at arbejde med en gruppe for alle disse handlinger. For at få en liste med gruppe-ID, du bruger den [Get Groups](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups) handling.
+Med Power BI REST API'en kan du overføre datakilder til Power BI. Når en app føjer rækker til et datasæt, opdateres dashboardfelter automatisk med de nye data. Hvis du vil overføre data, skal du bruge handlingerne [PostDataset](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postdataset) og [PostRows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows). Hvis du vil finde et datasæt, skal du bruge handlingen [Hent datasæt](https://docs.microsoft.com/rest/api/power-bi/datasets/getdatasets). Du kan overføre et gruppe-id for alle disse handlinger, hvis du vil arbejde med en gruppe. Hvis du vil hente en gruppe-id-liste, skal du bruge handlingen [Get Groups](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups).
 
 Her er de handlinger, du skal bruge for at overføre data til et datasæt:
 
@@ -59,7 +59,7 @@ JSON-strengen til et datasæt har følgende format:
         ]
     }
 
-For eksemplet med salg og Marketing datasættet ville du overføre en JSON-streng som vist nedenfor. I dette eksempel **SalesMarketing** er navnet på datasættet, og **produkt** tabelnavnet. Når du definerer tabellen, skal definere du tabelskemaet. For datasættet **SalesMarketing** indeholder tabelskemaet disse kolonner: ProductID, Manufacturer, Category, Segment, Product og IsCompete.
+For eksemplet med SalesMarketing-datasættet ville du overføre en JSON-streng som vist i nedenstående eksempel. I dette eksempel er **SalesMarketing** navnet på datasættet, og **Product** er navnet på tabellen. Når du har defineret tabellen, kan du definere tabelskemaet. For datasættet **SalesMarketing** indeholder tabelskemaet disse kolonner: ProductID, Manufacturer, Category, Segment, Product og IsCompete.
 
 **Eksempeldatasæt JSON-objekt**
 
@@ -105,10 +105,10 @@ Hvis du har et Power BI-tabelskema, kan du bruge følgende datatyper.
 | **Datatype** | **Begrænsninger** |
 | --- | --- |
 | Int64 |Int64.MaxValue og Int64.MinValue er ikke tilladt. |
-| Double |Værdierne Double.MaxValue og Double.MinValue er ikke tilladt. NaN understøttes ikke. + Infinity og -Infinity understøttes ikke i visse funktioner (f.eks, Min, Max). |
+| Double |Værdierne Double.MaxValue og Double.MinValue er ikke tilladt. NaN understøttes ikke. +Infinity og -Infinity understøttes ikke i visse funktioner (f.eks. Min., Maks.). |
 | Boolesk |None |
-| Datetime |Under indlæsning af data, beregnes værdier baseret på brøkdele af dagen af hele intervaller på 1/300 sekunder (3,33 ms). |
-| Streng |I øjeblikket tillader op til 128 tegn. |
+| Datetime |Under indlæsning af data beregnes værdier baseret på brøkdele af dagen i hele multipler af 1/300 sekunder (3,33 ms). |
+| Streng |Tillader i øjeblikket op til 128.000 tegn. |
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>Få mere at vide om at overføre data til Power BI
 

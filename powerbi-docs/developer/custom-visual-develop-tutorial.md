@@ -1,26 +1,26 @@
 ---
 title: Udvikling af en Power BI-visualisering
 description: Et selvstudium i, hvordan du udvikler en brugerdefineret visual i Power BI
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: tutorial
 ms.date: 03/15/2019
-ms.openlocfilehash: 2dc1d0a316319867513dc9f25a195c3f2d1140b9
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: 5d9ed20435069fa31707d9532141558351ec63ba
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415427"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194483"
 ---
 # <a name="tutorial-developing-a-power-bi-visual"></a>Selvstudium: Udvikling af en Power BI-visualisering
 
-Vi gør det nemt for udviklere at tilføje brugerdefinerede visuals i Power BI, som kan bruges i dashboards og rapporter. For at hjælpe dig i gang har vi udgivet koden til alle vores visualiseringer på GitHub.
+Vi gør det nemt for udviklere at tilføje Power BI-visualiseringer i Power BI, som kan bruges i dashboards og rapporter. For at hjælpe dig i gang har vi udgivet koden til alle vores visualiseringer på GitHub.
 
-Ud over visualiseringssystemet stiller vi vores testpakke og -værktøjer til rådighed, så vores community kan udarbejde visuals i høj kvalitet til Power BI.
+Ud over visualiseringssystemet stiller vi vores testpakke og -værktøjer til rådighed, så vores community kan udarbejde Power BI-visualiseringer i høj kvalitet til Power BI.
 
 I dette selvstudium vises, hvordan du udvikler en brugerdefineret Power BI-visual, der kaldes Circle Card, for at få vist en formateret målingsværdi i en cirkel. Visualen Circle Card understøtter tilpasning af fyldfarve og konturens tykkelse.
 
@@ -31,8 +31,8 @@ I Power BI Desktop-rapporten er kortene ændret for at blive til visuals af type
 I dette selvstudium lærer du, hvordan du kan:
 > [!div class="checklist"]
 > * Opret en brugerdefineret visual i Power BI.
-> * Udvikl den brugerdefinerede visualiseringer med visuelle D3-elementer.
-> * Konfigurer databinding med visualiseringer.
+> * Udvikl den brugerdefinerede visual med visuelle D3-elementer.
+> * Konfigurer databinding med visuelle elementer.
 > * Formatér dataværdier.
 
 ## <a name="prerequisites"></a>Forudsætninger
@@ -255,7 +255,7 @@ I dette afsnit tester vi den brugerdefinerede visual CircleCard ved at overføre
     > [!Note]
     > Denne visualisering repræsenterer den brugerdefinerede visual, som du har startet på din computer. Den er kun tilgængelig, når udviklerindstillingerne er blevet aktiveret.
 
-6. Bemærk, at en visualisering er føjet til rapportlærredet.
+6. Bemærk, at en visualisering er føjet til rapportcanvasset.
 
     ![Ny visual](media/custom-visual-develop-tutorial/new-visual-in-report.png)
 
@@ -272,7 +272,7 @@ I dette afsnit tester vi den brugerdefinerede visual CircleCard ved at overføre
 
 Hvis den brugerdefinerede visual ikke længere skal køre i PowerShell, skal du trykke på Ctrl + C. Når du bliver bedt om at afslutte batchjobbet, skal du trykke på Y og derefter trykke på Enter.
 
-## <a name="adding-visual-elements"></a>Tilføj visualiseringer
+## <a name="adding-visual-elements"></a>Tilføj visuelle elementer
 
 Nu skal du installere **JavaScript-biblioteket D3**. D3 er et JavaScript-bibliotek til oprettelse af dynamiske, interaktive datavisualiseringer i webbrowsere. Det bruger SVG HTML5 og CSS-standarder, der er implementeret i vid udstrækning.
 
@@ -326,7 +326,7 @@ Nu kan du udvikle den brugerdefinerede visual til at vise en cirkel med tekst.
 
 8. Gem ændringerne af filen **pbiviz.json**.
 
-### <a name="developing-the-visual-elements"></a>Udvikling af visualiseringer
+### <a name="developing-the-visual-elements"></a>Udvikling af visuelle elementer
 
 Nu kan vi undersøge, hvordan du kan udvikle den brugerdefinerede visual for at få vist en cirkel og eksempeltekst.
 
@@ -437,7 +437,7 @@ Nu kan vi undersøge, hvordan du kan udvikle den brugerdefinerede visual for at 
      .style("font-size", fontSizeLabel + "px");
     ```
 
-    *Denne kode angiver bredden og højden af visualen og initialiserer derefter attributterne og typografierne for visualiseringerne.*
+    *Denne kode angiver bredden og højden af visualen og initialiserer derefter attributterne og typografierne for de visuelle elementer.*
 
 6. Gem filen **visual.ts**.
 
@@ -472,9 +472,9 @@ Nu kan vi undersøge, hvordan du kan udvikle den brugerdefinerede visual for at 
 
     Bemærk, at cirklen og tekstværdien skaleres, så det passer til den tilgængelige dimension af visualen.
 
-    Opdateringsmetoden kaldes løbende i forbindelse med ændring af størrelsen på visualen, og det resulterer i glidende tilpasning af visualiseringer.
+    Opdateringsmetoden kaldes løbende i forbindelse med ændring af størrelsen på visualen, og det resulterer i glidende tilpasning af visuelle elementer.
 
-    Nu har du udviklet visualiseringer.
+    Nu har du udviklet visuelle elementer.
 
 6. Fortsæt med at køre visualen.
 
