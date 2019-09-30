@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
-ms.openlocfilehash: fe8ad0b951fedb17a97007e48808d2bfd7467e88
-ms.sourcegitcommit: 6c2c7a090b0826e3cfc3a897566e802857bbacc8
+ms.openlocfilehash: edda72ab1c9c9901bf71b360d3773b5e8da0a095
+ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68808231"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71401831"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakilder på Power BI-rapportserver
 Power BI-rapporter kan oprette forbindelse til en række datakilder. Der er adgang til forskellige datakilder, afhængigt af hvordan dataene bruges. Dataene kan importeres, eller der kan foretages forespørgsler om data direkte ved hjælp af DirectQuery eller en direkte forbindelse til SQL Server Analysis Services.
@@ -71,7 +71,7 @@ Det er muligt, at andre datakilder fungerer, selvom de ikke står på listen ove
 | SharePoint Online-liste |Ja |Nej |Nej |
 | Snowflake |Ja |Nej |Nej |
 | Sybase-database |Ja |Ja |Nej |
-| Teradata-database |Ja |Ja |Ja |
+| Teradata |Ja |Ja |Ja |
 | Tekst/CSV |Ja |Ja |Nej |
 | Web |Ja |Ja |Nej |
 | XML |Ja |Ja |Nej |
