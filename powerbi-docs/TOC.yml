@@ -973,7 +973,7 @@
           href: report-builder-url-pass-parameters.md
         - name: Udgiv en sideinddelt rapport
           href: paginated-reports-save-to-power-bi-service.md
-- name: Power BI for udviklere
+- name: Power BI til udviklere
   items:
     - name: Hvad kan udviklere bruge Power BI til?
       href: developer/what-can-you-do.md
@@ -1442,11 +1442,13 @@
           href: service-admin-power-bi-security.md
 - name: Vejledning
   items:
-    - name: Bedste praksis i forbindelse med dataflow
-      href: service-dataflows-best-practices.md
+    - name: Oversigt
+      href: guidance/overview.md
     - name: Hvad er et stjerneskema?
       href: guidance/star-schema.md
     - name: Reducer størrelse på datamodel
       href: guidance/import-modeling-data-reduction.md
     - name: DIVIDE-funktion vs. divisionsoperator (/)
       href: guidance/dax-divide-function-operator.md
+    - name: Bedste praksis i forbindelse med dataflow
+      href: service-dataflows-best-practices.md
