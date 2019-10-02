@@ -697,6 +697,8 @@
               href: service-cognitive-services.md
             - name: Automatiseret maskinel indlæring i Power BI (prøveversion)
               href: service-machine-learning-automated.md
+        - name: Dataafstamning
+          href: service-data-lineage.md
         - name: Sideinddelte rapporteri på Power BI
           items:
             - name: Se en sideinddelt rapport
@@ -867,6 +869,8 @@
       items:
         - name: Understøttede sprog og lande/områder
           href: supported-languages-countries-regions.md
+        - name: Understøttede browsere
+          href: power-bi-browsers.md
     - name: Ressourcer
       items:
         - name: Hvidbøger
