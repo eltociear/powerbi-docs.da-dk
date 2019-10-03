@@ -873,16 +873,6 @@
           href: power-bi-browsers.md
     - name: Ressourcer
       items:
-        - name: Hvidbøger
-          items:
-            - name: Oversigt over whitepapers
-              href: whitepapers.md
-            - name: Whitepaper om Power BI-sikkerhed
-              href: whitepaper-powerbi-security.md
-            - name: Power BI Premium-udrulning
-              href: whitepaper-powerbi-premium-deployment.md
-            - name: Distribuer Power BI eksternt vha. Azure Active Directory B2B
-              href: whitepaper-azure-b2b-power-bi.md
         - name: Videoer
           href: videos.md
         - name: Webinarer
@@ -1456,3 +1446,13 @@
       href: guidance/dax-divide-function-operator.md
     - name: Bedste praksis i forbindelse med dataflow
       href: service-dataflows-best-practices.md
+    - name: Hvidbøger
+      items:
+        - name: Oversigt over whitepapers
+          href: whitepapers.md
+        - name: Whitepaper om Power BI-sikkerhed
+          href: whitepaper-powerbi-security.md
+        - name: Power BI Premium-udrulning
+          href: whitepaper-powerbi-premium-deployment.md
+        - name: Distribuer Power BI eksternt vha. Azure Active Directory B2B
+          href: whitepaper-azure-b2b-power-bi.md
