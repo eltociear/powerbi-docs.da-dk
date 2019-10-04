@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5d0ace5c2986b30436838d33037ae3019bd8bdce
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: f54906643bba8c631c8d8052309ad3ff512ad3fa
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70751562"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305750"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicer en app i Power BI
 
@@ -190,6 +190,13 @@ Denne handling fjerner installationen af appen for alle, du har udgivet den til,
 Når forbrugerne af din app åbner din app, kan de se den navigation, du har oprettet, i stedet for Power BI-standardnavigationsruden til venstre. Appnavigationen indeholder en liste over rapporter og dashboards i de sektioner, du har defineret. Den viser også de enkelte sider i de enkelte rapporter og ikke kun navnet på rapporten.
 
 ![App med navigation](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
+
+## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
+Ting, du skal være opmærksom i forbindelse med publicering af apps:
+
+* Du kan højst have 100 brugere eller grupper på adgangslisten til appen. Du kan dog give mere end 100 brugere adgang til appen. Hvis du vil gøre det, skal du bruge en eller flere brugergrupper, der indeholder alle de ønskede brugere.
+* Hvis den bruger, der blev føjet til adgangslisten, allerede havde adgang til appen via arbejdsområdet, vises vedkommende ikke på adgangslisten til appen i forbindelse med den nye arbejdsområdeoplevelse.  
+
 
 ## <a name="next-steps"></a>Næste trin
 * [Opret et arbejdsområde](service-create-workspaces.md)

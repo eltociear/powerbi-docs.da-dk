@@ -1,21 +1,21 @@
 ---
 title: Visualiseringer i Power BI
 description: Brugerdefinerede visualiseringer i Power BI
-author: sranins
-ms.author: rasala
-manager: kfile
+author: KesemSharabi
+ms.author: kesharab
+manager: rkarlin
 ms.reviewer: maghan
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 68048968bf6a3f85f2bc24e55fd1288073be1d56
-ms.sourcegitcommit: 473d031c2ca1da8935f957d9faea642e3aef9839
+ms.openlocfilehash: fde213e29b5168ed990f297e5ace9895bfd44020
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415399"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195723"
 ---
 # <a name="visuals-in-power-bi"></a>Visualiseringer i Power BI
 
@@ -23,11 +23,11 @@ Når du opretter eller redigerer en Power BI-rapport, kan du bruge mange forskel
 
 ![visualiseringer](media/power-bi-custom-visuals/power-bi-visualizations.png)
 
-Du er dog ikke begrænset til dette sæt visualiseringer. Hvis du vælger ellipsen (...) nederst, bliver en anden kilde til rapportvisualiseringer tilgængelig – *brugerdefinerede visualiseringer*.
+Du er dog ikke begrænset til dette sæt visualiseringer. Hvis du vælger ellipsen (...) nederst, bliver en anden kilde til rapportvisualiseringer tilgængelig – *Power BI-visualiseringer*.
 
-Udviklere opretter brugerdefinerede visualiseringer ved hjælp af SDK'et til brugerdefinerede visualiseringer. Disse visualiseringer giver virksomhedsbrugere mulighed for at se deres data på en måde, som passer bedst til deres virksomhed. Forfattere af rapporter kan derefter importere de brugerdefinerede visualiseringsfiler til deres rapporter og bruge dem som en hvilken som helst anden Power BI-visualisering. Brugerdefinerede visualiseringer er førsteklasses komponenter i Power BI, og de kan filtreres, fremhæves, redigeres, deles osv.
+Udviklere opretter Power BI-visualiseringer ved hjælp af SDK'er til Power BI-visualiseringer. Disse visualiseringer giver virksomhedsbrugere mulighed for at se deres data på en måde, som passer bedst til deres virksomhed. Forfattere af rapporter kan derefter importere de brugerdefinerede visualiseringsfiler til deres rapporter og bruge dem som en hvilken som helst anden Power BI-visualisering. Power BI-visualiseringer er førsteklasses komponenter i Power BI, og de kan filtreres, fremhæves, redigeres, deles osv.
 
-Brugerdefinerede visualiseringer udrulles på tre måder:
+Power BI-visualiseringer udrulles på tre måder:
 
 * Brugerdefinerede visualiseringsfiler
 * Visualiseringer til organisationen
@@ -35,29 +35,29 @@ Brugerdefinerede visualiseringer udrulles på tre måder:
 
 ## <a name="custom-visual-files"></a>Brugerdefinerede visualiseringsfiler
 
-Brugerdefinerede visualiseringer er pakker, der indeholder kode til gengivelse af de data, de fodres med. Alle kan oprette en brugerdefineret visualisering og pakke den som en enkelt `.pbiviz`-fil, som derefter kan importeres i en Power BI-rapport.
+Power BI-visualiseringer er pakker, der indeholder kode til gengivelse af de data, de fodres med. Alle kan oprette en brugerdefineret visualisering og pakke den som en enkelt `.pbiviz`-fil, som derefter kan importeres i en Power BI-rapport.
 
 > [!WARNING]
 > En brugerdefineret visualisering kan indeholde kode, der kan udgøre en risiko for sikkerheden eller beskyttelsen af personlige oplysninger. Vær sikker på, at du har tillid til forfatteren og kilden til den brugerdefinerede visualisering, før du importerer den i din rapport.
 
 ## <a name="organizational-visuals"></a>Visualiseringer til organisationen
 
-Power BI-administratorer godkender og udruller brugerdefinerede visualiseringer i deres organisation, som forfattere af rapporter nemt kan finde, opdatere og bruge. Administratorer kan nemt administrere (f.eks. opdatere version, deaktivere/aktivere) disse visualiseringer.
+Power BI-administratorer godkender og udruller Power BI-visualiseringer i deres organisation, som forfattere af rapporter nemt kan finde, opdatere og bruge. Administratorer kan nemt administrere (f.eks. opdatere version, deaktivere/aktivere) disse visualiseringer.
 
  [Læs mere om visualiseringer til organisationer](power-bi-custom-visuals-organization.md).
 
 ## <a name="marketplace-visuals"></a>Visualiseringer på markedspladser
 
-Medlemmer af community'et og Microsoft har begge bidraget med deres brugerdefinerede visualiseringer til offentlig brug og publiceret dem på [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals)-markedspladsen. Du kan downloade disse visualiseringer og føje dem til dine Power BI-rapporter. Microsoft har testet og godkendt disse brugerdefinerede visualiseringer ift. funktionalitet og kvalitet.
+Det er både medlemmer af community'et og Microsoft, der har bidraget med deres Power BI-visualiseringer til offentlig brug og publiceret dem på [AppSource](https://appsource.microsoft.com/marketplace/apps?product=power-bi-visuals)-markedspladsen. Du kan downloade disse visualiseringer og føje dem til dine Power BI-rapporter. Microsoft har testet og godkendt disse Power BI-visualiseringer i forhold til funktionalitet og kvalitet.
 
 Hvad er [AppSource](developer/office-store.md)? Det er det sted, du finder apps, tilføjelsesprogrammer og udvidelser til din Microsoft-software. AppSource forbinder millioner af brugere af produkter som Office 365, Azure, Dynamics 365, Cortana og Power BI med løsninger, der kan hjælpe dem med at arbejde mere effektivt, med større indsigt og smukkere end før.
 
 ### <a name="certified-visuals"></a>Certificerede visualiseringer
 
 Certificerede Power BI-visualiseringer er visualiseringer på markedspladser, der har bestået yderligere strenge kvalitetstest, og understøttes i yderligere scenarier, f.eks. [mailabonnementer](service-report-subscribe.md) og [eksport til PowerPoint](service-publish-to-powerpoint.md).
-Hvis du vil have vist en liste over certificerede brugerdefinerede visualiseringer eller indsende dine egne, skal du se under [Certificerede brugerdefinerede visualiseringer](power-bi-custom-visuals-certified.md).
+Hvis du vil se en liste over certificerede Power BI-visualiseringer eller indsende dine egne, skal du se [Certificerede Power BI-visualiseringer](power-bi-custom-visuals-certified.md).
 
-Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til AppSource? Se under [Udvikling af en brugerdefineret visualisering i Power BI](developer/custom-visual-develop-tutorial.md), og få mere at vide om, hvordan du [publicerer brugerdefinerede visualiseringer i AppSource](developer/office-store.md).
+Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til AppSource? Se [Udvikling af en Power BI-visualisering](developer/custom-visual-develop-tutorial.md), og få mere at vide om, hvordan du [publicerer Power BI-visualiseringer i AppSource](developer/office-store.md).
 
 ### <a name="import-a-custom-visual-from-a-file"></a>Importér en brugerdefineret visualisering fra en fil
 
@@ -95,11 +95,11 @@ Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føj
 
     ![Visualisering org 5](media/power-bi-custom-visuals/power-bi-visual-org-05.png)
 
-## <a name="download-or-import-custom-visuals-from-microsoft-appsource"></a>Download eller importér brugerdefinerede visualiseringer fra Microsoft AppSource
+## <a name="download-or-import-power-bi-visuals-from-microsoft-appsource"></a>Download eller importér Power BI-visualiseringer fra Microsoft AppSource
 
-Du har to muligheder for at downloade og importere brugerdefinerede visualiseringer: fra Power BI og fra [AppSource-webstedet](https://appsource.microsoft.com/).
+Du har to muligheder for at downloade og importere Power BI-visualiseringer: fra Power BI og fra [AppSource-webstedet](https://appsource.microsoft.com/).
 
-### <a name="import-custom-visuals-from-within-power-bi"></a>Importér brugerdefinerede visualiseringer fra Power BI
+### <a name="import-power-bi-visuals-from-within-power-bi"></a>Importér Power BI-visualiseringer fra Power BI
 
 1. Vælg ellipsen på knappen i ruden **Visualiseringer**.
 
@@ -129,13 +129,13 @@ Du har to muligheder for at downloade og importere brugerdefinerede visualiserin
 
     ![visualisering er importeret](media/power-bi-custom-visuals/power-bi-custom-visual-imported.png)
 
-### <a name="download-and-import-custom-visuals-from-microsoft-appsource"></a>Download og importér brugerdefinerede visualiseringer fra Microsoft AppSource
+### <a name="download-and-import-power-bi-visuals-from-microsoft-appsource"></a>Download og importér Power BI-visualiseringer fra Microsoft AppSource
 
 1. Start med [Microsoft AppSource](https://appsource.microsoft.com), og vælg fanen for **Apps**.
 
     ![AppSource](media/power-bi-custom-visuals/power-bi-appsource-apps.png)
 
-2. Gå til [siden med appresultater](https://appsource.microsoft.com/marketplace/apps), hvor du kan få vist de mest populære apps i hver kategori, herunder *Power BI-apps*. Vi leder efter brugerdefinerede visualiseringer, så lad os vælge **Power BI-visualiseringer** på listen i navigationsruden til venstre for at indskrænke resultaterne.
+2. Gå til [siden med appresultater](https://appsource.microsoft.com/marketplace/apps), hvor du kan få vist de mest populære apps i hver kategori, herunder *Power BI-apps*. Vi leder efter Power BI-visualiseringer, så lad os vælge **Power BI-visualiseringer** på listen i navigationsruden til venstre for at indsnævre resultaterne.
 
     ![AppSource-visualiseringer](media/power-bi-custom-visuals/power-bi-appsource-visuals.png)
 
@@ -153,7 +153,7 @@ Du har to muligheder for at downloade og importere brugerdefinerede visualiserin
 
     Downloadsiden indeholder også instruktioner til, hvordan du importerer den brugerdefinerede visualisering i Power BI Desktop og Power BI-tjenesten.
 
-    Du kan også downloade et eksempel på en rapport, der indeholder den brugerdefinerede visual og viser dets egenskaber.
+    Du kan også downloade et eksempel på en rapport, der indeholder den brugerdefinerede visualisering og viser dets egenskaber.
 
     ![Eksempel](media/power-bi-custom-visuals/powerbi-custom-try-sample.png)
 
@@ -165,15 +165,15 @@ Du har to muligheder for at downloade og importere brugerdefinerede visualiserin
 
 * En brugerdefineret visualisering føjes til en bestemt rapport, når den importeres. Hvis du vil bruge visualiseringen i en anden rapport, skal du også importere den i denne rapport. Når du gemmer en rapport med en brugerdefineret visualisering vha. indstillingen **Gem som**, gemmes der en kopi af den brugerdefinerede visualisering sammen med den nye rapport.
 
-* Hvis du ikke kan se ruden **Visualiseringer**, betyder det, at du ikke har redigeringstilladelser til rapporten.  Du kan kun føje brugerdefinerede visualiseringer til rapporter, som du kan redigere, og ikke til rapporter, der kun er blevet delt med dig.
+* Hvis du ikke kan se ruden **Visualiseringer**, betyder det, at du ikke har redigeringstilladelser til rapporten.  Du kan kun føje Power BI-visualiseringer til rapporter, som du kan redigere, og ikke til rapporter, der kun er blevet delt med dig.
 
 ## <a name="troubleshoot"></a>Fejlfind
 
-Hvis du skal foretage fejlfinding, skal du se [Fejlfinding af dine brugerdefinerede visualiseringer i Power BI](power-bi-custom-visuals-troubleshoot.md).
+Hvis du skal foretage fejlfinding, skal du se [Fejlfinding af dine Power BI-visualiseringer](power-bi-custom-visuals-troubleshoot.md).
 
 ## <a name="faq"></a>Ofte stillede spørgsmål
 
-Du kan finde flere oplysninger og få svar på spørgsmål under [Ofte stillede spørgsmål om brugerdefinerede visualiseringer i Power BI](power-bi-custom-visuals-faq.md#organizational-custom-visuals).
+Du kan finde flere oplysninger og få svar på spørgsmål under [Ofte stillede spørgsmål om Power BI-visualiseringer](power-bi-custom-visuals-faq.md#organizational-visuals).
 
 ## <a name="next-steps"></a>Næste trin
 

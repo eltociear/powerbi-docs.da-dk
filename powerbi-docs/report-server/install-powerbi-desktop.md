@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
-ms.openlocfilehash: 54713c9c978554521d68aeb7b4c25d681ddb3d69
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.date: 09/26/2019
+ms.openlocfilehash: bbd9a3884b3b6b0cd235471b0746f605e3872aff
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187430"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325741"
 ---
 # <a name="install-power-bi-desktop-optimized-for-power-bi-report-server"></a>Installér Power BI Desktop optimeret til Power BI-rapportserver
 
@@ -30,28 +30,27 @@ Den nemmeste måde til at sikre, at du har den nyeste version af Power BI Deskto
 
     ![Download Power BI Desktop fra webportalen](media/install-powerbi-desktop/report-server-download-web-portal.png)
 
-    Gå direkte til [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (optimeret til Power BI Report Server – maj 2019) i Microsoft Download Center.
+    Eller gå til hjemmesiden for [Power BI-rapportserver](https://powerbi.microsoft.com/report-server/), og vælg **Avancerede indstillinger for download**.
 
 2. På siden Download Center skal du vælge **Download**.
 
 3. Afhængigt af din computer skal du vælge: 
 
     - **PBIDesktopRS.msi** (32-bit-version) eller
-
     - **PBIDesktopRS_x64.msi** (64-bit-version).
 
-1. Når du har downloadet installationsprogrammet, skal du køre installationsguiden til Power BI Desktop (maj 2019).
+1. Når du har downloadet installationsprogrammet, skal du køre installationsguiden til Power BI Desktop (september 2019).
 
-2. I slutningen af installationen, skal du vælge **Start Power BI Desktop**.
+2. Til sidst i installationsprocessen skal du vælge **Start Power BI Desktop**.
 
     Programmet starter automatisk, og du er klar til at gå i gang.
 
 ## <a name="verify-youre-using-the-correct-version"></a>Kontrollér, at du bruger den korrekte version
-Det er nemt at kontrollere, at du bruger den korrekte version af Power BI Desktop: Se på startskærmen eller titellinjen i Power BI Desktop. I titellinjen kan du se måneden og årstallet for udgivelsen. Farverne i Power BI-logoet er også omvendt: gul på sort i stedet for sort på gul.
+Det er nemt at kontrollere, at du bruger den korrekte version af Power BI Desktop: Se på startskærmen eller titellinjen i Power BI Desktop. Du kan se, at du har den rigtige version, fordi der står **Power BI Desktop (september 2019)** på titellinjen. Farverne i Power BI-logoet er også omvendt: gul på sort i stedet for sort på gul.
 
-![Titellinjen til Power BI Desktop optimeret til Power BI-rapportserveren](media/install-powerbi-desktop/power-bi-report-server-desktop-may-2019.png)
+![Power BI Desktop – september 2019](media/install-powerbi-desktop/power-bi-report-server-desktop-sept-2019.png)
 
-I Power BI Desktop-versionen til Power BI-tjenesten vises måned og årstal ikke i titellinjen.
+I versionen af Power BI Desktop til Power BI-tjenesten vises måned og årstal ikke på titellinjen.
 
 ## <a name="file-extension-association"></a>Tilknytning af filtypenavne
 Hvis du installerer både Power BI Desktop og Power BI Desktop optimeret til Power BI-rapportserver på den samme computer, er den seneste installation af Power BI Desktop tilknyttet filtypenavnet .pbix. Det betyder, at den version af Power BI Desktop, du senest har installeret, startes, når du dobbeltklikker på en .pbix-fil.
@@ -60,7 +59,7 @@ Hvis du har installeret Power BI Desktop og derefter installerer Power BI Deskto
 
 Du kan til enhver tid starte med at åbne den version af Power BI Desktop, du vil bruge. Og derefter kan du åbne filen fra Power BI Desktop.
 
-Redigerer en Power BI-rapport i Power BI-rapportserver eller opretter en ny Power BI-rapport fra webportalen, åbnes altid den korrekte version af Power BI Desktop.
+Hvis du redigerer en Power BI-rapport i Power BI-rapportserver eller opretter en ny Power BI-rapport fra webportalen, er det altid den korrekte version Power BI Desktop, der åbnes.
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
@@ -68,9 +67,9 @@ Power BI-rapporter i Power BI-rapportserver, i Power BI-tjenesten (http://app.po
 
 ### <a name="in-a-browser"></a>I en browser
 
-Rapporter i Power BI-rapportserver understøtter næsten alle visualiseringer, herunder brugerdefinerede visuelle elementer. Rapporter i Power BI-rapportserver understøtter ikke:
+Rapporter i Power BI-rapportserver understøtter alle visualiseringer, herunder brugerdefinerede visualiseringer. Rapporter i Power BI-rapportserver understøtter ikke:
 
-* R-visuals
+* R-visualiseringer
 * ArcGIS-kort
 * Brødkrummer
 * Prøveversionsfunktioner i Power Bi Desktop
@@ -85,17 +84,17 @@ Rapporter i Power BI-rapportserver understøtter al den grundlæggende funktiona
 
 Rapporter i Power BI-rapportserver understøtter ikke disse funktioner i Power BI-mobilappsene:
 
-* R-visuals
+* R-visualiseringer
 * ArcGIS-kort
-* Brugerdefinerede visuals
+* Brugerdefinerede visualiseringer
 * Brødkrummer
-* Geografisk filtrering eller liggende koder
+* Geofiltrering eller stregkoder
 
 ## <a name="power-bi-desktop-for-earlier-versions-of-power-bi-report-server"></a>Power BI Desktop til tidligere versioner af Power BI-rapportserver
 
-Hvis du har en tidligere version af rapportserveren, skal du have den tilsvarende version af Power BI Desktop. Her er linket for at downloade den tidligere version.
+Hvis du har en tidligere version af rapportserveren, skal du have den tilsvarende version af Power BI Desktop. Her er linket til at downloade den tidligere version.
 
-- Microsoft Power BI Desktop ([optimeret til Power BI-rapportserver – januar 2019](https://go.microsoft.com/fwlink/?linkid=2055039))
+- Microsoft Power BI Desktop ([Optimeret til Power BI-rapportserver – januar 2019](https://go.microsoft.com/fwlink/?linkid=2055039))
 
 ## <a name="next-steps"></a>Næste trin
 

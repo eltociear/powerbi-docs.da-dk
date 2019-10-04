@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: overview
-ms.date: 06/06/2019
-ms.openlocfilehash: 9e4d5285b48739e9f16fbe503736c20cb5524e5d
-ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
+ms.date: 09/24/2019
+ms.openlocfilehash: ca090f7251349c9ed4768b49f1372c14e68f0068
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69985714"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305695"
 ---
 # <a name="what-are-paginated-reports-in-power-bi-premium"></a>Hvad er sideinddelte rapporter i Power BI Premium?
 
@@ -36,14 +36,13 @@ Sideinddelte rapporter har deres eget designværktøj, Power BI Report Builder. 
 
 En enkelt sideinddelt rapport kan have en række forskellige datakilder. Til forskel fra Power BI-rapporter har den ikke en underliggende datamodel. I forbindelse med den første version af sideinddelte rapporter i Power BI-tjenesten kan du oprette integrerede datakilder og datasæt i selve rapporten. I øjeblikket kan du ikke bruge delte datakilder eller delte datasæt. Du opretter rapporter i Report Builder på din lokale computer. Hvis en rapport er forbundet med data i det lokale miljø, skal du efter upload af rapporten til Power BI-tjenesten oprette en gateway og omdirigere dataforbindelsen. Her er de datakilder, du kan oprette forbindelse til på nuværende tidspunkt:
 
-- Azure SQL Database og Data Warehouse
+- Azure SQL Database og Data Warehouse (via Basic og oAuth)
 - Azure Analysis Services (via enkeltlogon)
 - SQL Server via en gateway
 - SQL Server Analysis Services via en gateway
-- Power BI Premium-datasæt
+- Power BI-datasæt
 - Oracle
 - Teradata
-- Flere datakilder, i takt med at de tilføjes
 
 ## <a name="design-your-report"></a>Design rapporten  
 
@@ -79,10 +78,10 @@ Du kan finde flere oplysninger i artiklen [Meld dig selv og andre til et abonnem
 Her er nogle andre funktioner, der ikke understøttes i den første version:
 
 - Fastgørelse af rapportsider eller visualiseringer til Power BI-dashboards. Du kan stadig fastgøre visualiseringer til et Power BI-dashboard fra en sideinddelt rapport i det lokale miljø på en Power BI-rapportserver eller en Reporting Services-rapportserver. Du kan finde flere oplysninger under [Fastgør Reporting Services-elementer til Power BI-dashboards](https://docs.microsoft.com/sql/reporting-services/pin-reporting-services-items-to-power-bi-dashboards).
-- Interaktive funktioner, f.eks. dokumentkort og vis/skjul-knapper.
-- Underrapporter og detaljeadgangsrapporter.
+- Dokumentoversigt.
+- Underrapporter og detaljeadgangsrapporter.  Du kan dog overveje at bruge parametre for URL-adresser med sideinddelte rapporter for at få scenarier med detaljeadgang.
 - Delte datakilder og datasæt.
-- Visualiseringer fra Power BI-rapporter.
+
  
 ## <a name="next-steps"></a>Næste trin
 

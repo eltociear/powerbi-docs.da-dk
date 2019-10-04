@@ -9,18 +9,43 @@ ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 03/31/2018
-ms.openlocfilehash: 0aa1d964485297c5e0dae3f4a309cc0dd15b92b2
-ms.sourcegitcommit: 90ad0572a92f640684cdc32c9a6478d299de9dc0
+ms.openlocfilehash: 71c2135092b0b9bb2b02f4559d40c0b10814a51f
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/10/2019
-ms.locfileid: "68940912"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325735"
 ---
 # <a name="changelog-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
 Denne ændringslog er for Power BI-rapportserver, og den viser nye elementer sammen med fejlrettelser til hvert frigivet build.
 
 Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder i Power BI-rapportserver](whats-new.md). 
+
+## <a name="september-2019"></a>September 2019
+
+- **Power BI-rapportserver**          
+    - *Version 1.6.7206.38019 (build 15.0.1102.597), udgivet: 26. september 2019*
+        - Sikkerhedsopdateringer
+        - Fejlrettelser
+           - Sideinddelte rapporter
+             - Rettelse af tilgængelighedsproblemer, der opstod under brug af IE og Edge.
+             - Rettelse af problemer med SAP HANA, mens forbindelsen testes.
+             - Rettelse af problemer, der blev fundet under levering af en liste over mailadresser.
+             - Rettelse til Power BI-rapporter, der bruger en DirectQuery-datakilde og integreret godkendelse.
+             - Rettelse til sideinddelte rapporter, der skal gengives med filterparametre, når et snapshot er aktiveret.
+             - Rettelse til dobbelt udførelse af gemte procedurer under udførelse af en rapport.
+             - Rettelse til standardtjenestekontoen, der tildeles SQL Server-logontilladelser, når den brugerdefinerede tjenestekonto er konfigureret til at køre Power BI-rapportserver.
+             - Rettelse til adgang til modeller, mens der opdateres i en japansk tidszone.
+             - Rettelse til forældede modeller, når en ny version af rapporten uploades under en opdatering.
+             - Rettelse til parameterværdier, der indeholder "&"-tegnet.
+         - Programmering
+             - Opdateret web-API: /PowerBIReports({Id})/DataSources (PATCH), som tillader opdatering af forbindelsesstrenge.
+         
+- **Power BI Desktop (optimeret til Power BI-rapportserver)**
+    - *Version: 2.73.5586.821 (september 2019), udgivet: 26. september 2019* (nyt build og ny version)
+    - Indeholder ændringer, der kræves for at oprette forbindelse til Power BI-rapportserver (september 2019)
+
 
 ## <a name="may-2019"></a>Maj 2019
 
@@ -90,7 +115,7 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
             - Sikkerhedsrisiko ved HTML-indskydelse
             - Eksport til PDF-fil viser ikke Euro-symbolet
             - Lagring af en adgangskode med flere datakilder i Power BI-rapporter gør adgangskoder, der ikke er blevet ændret, ugyldige
-            - Problemer med visning af visuelle elementer i Power BI-mobilappen
+            - Problemer med visning af visualiseringer i Power BI-mobilappen
 
 - **Power BI Desktop (optimeret til Power BI-rapportserver)**
     - *Version: 2.65.5313.1562 (januar 2019), udgivet: 30. januar 2019*
@@ -190,7 +215,7 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
             - Rettelse til grundlæggende godkendelsesscenarier 
             - Rettelse af ugedage, som ikke kunne vælges på siden med tidsplan for abonnementer, planer for opdatering af cache og snapshots af historik på portalen
             - For sideinddelte rapporter (RDL) er der foretaget en rettelse i tilfælde af udtryk i et tekstfelt med egenskaben .KanStrækkes indstillet til falsk, som medfører, at værdier ikke viser farver, og at skrifttyperne ikke er rigtige
-            - For Power BI-rapporter (PBIX) er der foretaget en rettelse for at løse et problem, hvor der vises et tomt visuelt element, når der føjes forklaringer til et kurvediagram
+            - For Power BI-rapporter (PBIX) er der foretaget en rettelse for at løse et problem, hvor der vises en tom visualisering, når der føjes forklaringer til et kurvediagram
 
     - *Version 1.1.6514.9163 (Build 14.0.600.434), udgivet: 1. november, 2017*
         - Fejlrettelser
@@ -241,7 +266,7 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
             - Koden `{{UserId}}` fortolkes som de gemte legitimationsoplysninger i stedet for den bruger, der kører rapporten i Power BI-rapporter
             - Nogle billeder gengives ikke i rapporter i Power BI-rapportserver
             - Det var ikke muligt at ændre navnet på en Power BI-rapport i Power BI-rapportserver
-            - Der kunne ikke indlæses brugerdefinerede visuelle elementer i Power BI-mobilappen (det kræver geninstallation af mobilappen for at rydde op i det lokale cachelager)
+            - Der kunne ikke indlæses brugerdefinerede visualiseringer i Power BI-mobilappen (det kræver geninstallation af mobilappen for at rydde op i det lokale cachelager)
 
     - *Build 14.0.600.271,udgivet: 12. juni, 2017*
         - Første udgivelse af Power BI-rapportserver

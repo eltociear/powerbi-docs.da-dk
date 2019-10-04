@@ -6,44 +6,44 @@ manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
-ms.date: 02/09/2018
+ms.date: 09/25/2019
 ms.author: mshenhav
-ms.openlocfilehash: 828dcb4aeb8b7c5e69292685470f112a2d85cb71
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9a4950a1d52451764c3c62413bf4ecbd036f06c8
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61348653"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305786"
 ---
 # <a name="filter-a-report-by-geographic-location-in-the-power-bi-mobile-apps"></a>Filtrer en rapport efter geografisk placering i Power BI-mobilapps
 Gælder for:
 
-| ![iPhone](./media/mobile-apps-geographic-filtering/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-geographic-filtering/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-geographic-filtering/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-apps-geographic-filtering/android-tablet-logo-50-px.png) | ![Android-tablet](./media/mobile-apps-geographic-filtering/win-10-logo-50-px.png) |
-|:--- |:--- |:--- |:--- |:--- |
-| iPhones |iPad-tablets |Android-telefoner |Android-tablets |Windows 10-telefoner |
+| ![iPhone](./media/mobile-apps-geographic-filtering/iphone-logo-50-px.png) | ![iPad](./media/mobile-apps-geographic-filtering/ipad-logo-50-px.png) | ![Android-telefon](./media/mobile-apps-geographic-filtering/android-phone-logo-50-px.png) | ![Android-tablet](./media/mobile-apps-geographic-filtering/win-10-logo-50-px.png) |
+|:--- |:--- |:--- |:--- |
+| iPhones |iPad-tablets |Android-telefoner |Windows 10-telefoner |
 
 Når du får vist en Power BI-rapport på din mobilenhed, vises der da et lille ikon med en tavlenål i øverste højre hjørne? Hvis der gør det, kan du filtrere rapporten baseret på din geografiske placering.
 
 > [!NOTE]
-> Du kan kun filtrere efter placering, hvis de geografiske navne i rapporten er på engelsk #150; for eksempel "New York City" eller "Germany". Windows 10-tablets og -pc'er understøtter ikke geografisk filtrering, men Windows 10-telefoner gør.
+> Du kan kun filtrere efter placering, hvis de geografiske navne i rapporten er på engelsk, f.eks. "New York City" eller "Germany". Windows 10-tablets og -pc'er understøtter ikke geografisk filtrering, men Windows 10-telefoner gør.
 > 
 > 
 
 ## <a name="filter-your-report-by-your-geographic-location"></a>Filtrer din rapport efter din geografiske placering
 1. Åbn en rapport i Power BI-mobilappen på din mobilenhed.
 2. Hvis rapporten indeholder geografiske data, vises der en meddelelse, hvor du bliver bedt om at give Power BI adgang til din placering. Klik på **Tillad**, og tryk på **Tillad** igen.
-3. Tryk på ikonet med tavlenålen ![Ikon med tavlenål](./media/mobile-apps-geographic-filtering/power-bi-mobile-geo-icon.png). Du kan filtrere efter by, stat/provins eller område/region afhængigt af dataene i rapporten. I filteret kan du kun se de indstillinger, der matcher din aktuelle placering.
+3. Tryk på ikonet med tavlenålen ![Ikon med tavlenål](./media/mobile-apps-geographic-filtering/power-bi-mobile-geo-icon.png). Du kan filtrere efter by, stat/provins eller land/område afhængigt af dataene i rapporten. I filteret kan du kun se de indstillinger, der matcher din aktuelle placering.
    
     ![Filter med tavlenål](./media/mobile-apps-geographic-filtering/power-bi-mobile-geo-map-set-filter.png)
 
 ## <a name="why-dont-i-see-location-tags-on-a-report"></a>Hvorfor kan jeg ikke se placeringskoder i en rapport?
-Alle de tre følgende betingelser skal være opfyldt for at du kan se placeringskoder. 
+Alle tre følgende betingelser skal være opfyldt, før du kan se placeringskoder. 
 
-* Den person, der oprettede rapporten i Power BI Desktop [kategoriserede geografiske data](../../desktop-mobile-geofiltering.md) for mindst én kolonne som By, Stat eller Land/Område.
+* Den person, der oprettede rapporten i Power BI Desktop, skal have [kategoriseret geografiske data](../../desktop-mobile-geofiltering.md) for mindst én kolonne, f.eks. By, Stat eller Land/Område.
 * Du befinder dig på en af de placeringer, hvor der findes data i kolonnen.
 * Du bruger en af disse mobilenheder:
   * iOS (iPad, iPhone, iPod).
-  * Android-telefon eller -tablet.
+  * Android-telefon.
   * Windows 10-telefon (andre typer Windows 10-enheder som pc'er og tablets understøtter ikke geografisk filtrering).
 
 Læs mere om at [konfigurere geografisk filtrering](../../desktop-mobile-geofiltering.md) i Power BI Desktop.

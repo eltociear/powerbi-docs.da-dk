@@ -11,32 +11,32 @@ ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 66ac187d002c1606f96694bb45a5d44ba2ad2279
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 0ad10789977fdb0d5d4cf5b9a4229cd6a8e2b34b
+ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71141297"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256257"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Eksportér rapporter fra Power BI til PDF
-Med Power BI kan du publicere din rapport i PDF-format og nemt oprette et dokument ud fra din Power BI-rapport. Når du **eksporterer til PDF**, bliver hver side i Power BI-rapporten en enkelt side i PDF-dokumentet.
+Med Power BI kan du publicere din rapport i PDF-format og nemt oprette et dokument ud fra din Power BI-rapport. Når du eksporterer til PDF, bliver hver side i Power BI-rapporten en individuel side i PDF-dokumentet.
 
-## <a name="how-to-export-your-power-bi-report-to-pdf"></a>Sådan eksporterer du en Power BI-rapport til PDF
-Vælg en rapport for at vise den på lærredet i Power BI-tjenesten. Du kan også vælge en rapport fra din startside, dine programmer eller en hvilken som helst objektbeholder på navigationslinjen til venstre.
+## <a name="export-your-power-bi-report-to-pdf"></a>Eksportér din Power BI-rapport til PDF
+Vælg en rapport for at vise den på lærredet i Power BI-tjenesten. Du kan også vælge en rapport fra din **startside**, dine **apps** eller en hvilken som helst objektbeholder i navigationsruden til venstre.
 
 1. Vælg **Eksportér** > **PDF** på menulinjen.
 
-    ![Vælg Eksport på menulinjen – pil, der peger på Eksportér til PDF](media/end-user-pdf/power-bi-export.png)
+    ![Vælg Eksportér på menulinjen](media/end-user-pdf/power-bi-export.png)
 
-    Der vises et pop op-vindue, hvor du har mulighed for at vælge **Aktuelle værdier** eller **Standardværdier**.  Med **Aktuelle værdier** eksporteres rapporten i den aktuelle tilstand, hvilket omfatter de aktive ændringer, du har foretaget af udsnits- og filterværdier.  De fleste brugere vælger denne indstilling.  Alternativt kan du vælge **Standardværdier**, hvor rapporten eksporteres i sin oprindelige tilstand (som *designeren* har delt den), og hvor ændringer, du har foretaget af den oprindelige tilstand, ikke afspejles.
+    Der vises et pop op-vindue, hvor du har mulighed for at vælge **Aktuelle værdier** eller **Standardværdier**. Med **Aktuelle værdier** eksporteres rapporten i den aktuelle tilstand, hvilket omfatter de aktive ændringer, du har foretaget af udsnits- og filterværdier. De fleste brugere vælger denne indstilling. Alternativt kan du vælge **Standardværdier**, hvor rapporten eksporteres i sin oprindelige tilstand, som *designeren* har delt den, og hvor ændringer, du har foretaget af den oprindelige tilstand, ikke afspejles.
     
-    Derudover er der et afkrydsningsfelt, hvor du kan markere, om du vil eksportere skjulte faner i en rapport.  Du skal blot markere afkrydsningsfeltet, hvis du kun vil eksportere de rapportfaner, der er synlige for dig i browseren.  Hvis du foretrækker at inkludere alle skjulte faner i din eksport, skal du undlade at markere afkrydsningsfeltet.  Hvis afkrydsningsfeltet er nedtonet, er der ingen skjulte faner i rapporten.  Når du har foretaget dine valg, skal du vælge knappen Eksportér for at fortsætte.
+    Derudover er der et afkrydsningsfelt, hvor du kan markere, om du vil eksportere skjulte faner i en rapport. Markér afkrydsningsfeltet, hvis du kun vil eksportere de rapportfaner, der er synlige for dig i browseren. Hvis du foretrækker at inkludere alle skjulte faner i din eksport, kan du undlade at markere afkrydsningsfeltet. Hvis afkrydsningsfeltet er nedtonet, er der ingen skjulte faner i rapporten. Når du har foretaget dine valg, skal du vælge **Eksportér** for at fortsætte.
     
-    Der vises en statuslinje i øverste højre hjørne. Det kan tage nogle få minutter at eksportere, og du kan fortsætte med at arbejde i Power BI, mens rapporten eksporteres.
+    Der vises en statuslinje i øverste højre hjørne. Eksporten kan tage et par minutter. Du kan fortsætte med at arbejde i Power BI, mens rapporten eksporteres.
 
     ![Meddelelse om eksportstatus](media/end-user-pdf/power-bi-export-progress.png)
 
-    Når dette er fuldført, ændres meddelelsesbanneret for at give dig besked om, at Power BI-tjenesten er færdig med eksporten.
+    Når eksportprocessen er fuldført i Power BI-tjenesten, ændres meddelelsesbanneret for at give dig besked.
 
 2. Derefter finder du din fil der, hvor din browser viser downloadede filer. På det følgende billede vises det som et downloadbanner i bunden af browservinduet.
 
@@ -48,27 +48,17 @@ Så nemt er det. Du kan downloade filen og åbne den med en hvilken som helst PD
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 Der er nogle få overvejelser og begrænsninger, du skal huske på, når du arbejder med funktionen **Eksportér til PDF**.
 
-* **R-visuals** understøttes ikke i øjeblikket. I PDF'en vil disse visualiseringer være tomme, og der vises en fejlmeddelelse.  
-
-* **Brugerdefinerede visuals**, der er blevet **certificeret**, understøttes. Hvis du vil have flere oplysninger om certificerede brugerdefinerede visuals, herunder hvordan du får en brugerdefineret visual certificeret, skal du se [Sådan får du en brugerdefineret visual certificeret](../power-bi-custom-visuals-certified.md). Brugerdefinerede visualiseringer, som ikke er certificeret, understøttes ikke. De vises med en fejlmeddelelse i PDF'en.   
-
+* R-visualiseringer understøttes ikke i øjeblikket. Disse visualiseringer er tomme i PDF'en, og der vises en fejlmeddelelse. 
+* Brugerdefinerede visualiseringer, der er blevet certificeret, understøttes. I [Få en brugerdefineret visualisering certificeret](../power-bi-custom-visuals-certified.md) kan du finde flere oplysninger om certificerede brugerdefinerede visualiseringer, herunder hvordan du får en brugerdefineret visualisering certificeret. Brugerdefinerede visualiseringer, der ikke er blevet certificeret, understøttes ikke. De vises med en fejlmeddelelse i PDF'en. 
 * Rapporter med mere end 30 rapportsider kan ikke eksporteres i øjeblikket.
-
 * Processen med at eksportere rapporten til PDF kan tage nogle minutter at fuldføre, så vær tålmodig. Faktorer, som kan påvirke den tid, det kræver, omfatter rapportens struktur og den aktuelle belastning på Power BI-tjenesten.
-
 * Hvis menuelementet **Eksportér til PDF** ikke er tilgængeligt i Power BI-tjenesten, er det sandsynligvis fordi, din lejeradministrator har deaktiveret funktionen. Kontakt din lejeradministrator for at få flere oplysninger.
-
 * Baggrundsbilleder beskæres med diagrammets omgivende område. Det anbefales, at du fjerner baggrundsbilleder, før du eksporterer til PDF.
-
-* Rapporter, der ejes af en bruger uden for dit Power BI-lejerdomæne (f.eks. en rapport, der ejes af nogen uden for din organisation, og som er delt med dig), kan ikke publiceres til PDF.
-
-* Hvis du deler et dashboard med en person uden for din organisation (og dermed en bruger, der ikke er i din Power BI-lejer), kan denne bruger ikke eksportere det delte dashboards tilknyttede rapporter til PDF. Hvis du f.eks. er aaron@contoso.com, kan du dele med cassie@cohowinery.com. Men cassie@cohowinery.com kan ikke eksportere de tilknyttede rapporter til PDF.
-
-* Når du eksporterer rapporter til PDF, som indeholder et baggrundsbillede, kan du muligvis se et forvrænget billede i eksporten, hvis du bruger indstillingen "Normal" eller "Udfyld" til sidens baggrund.  Det anbefales, at du bruger indstillingen "Tilpas" for at få de bedste resultater og undgå problemer med dit eksporterede dokument.
-
-* I Power BI-tjenesten anvendes din Power BI-sprogindstilling som sprog i forbindelse med PDF-eksporten. Hvis du vil se eller angive dine sprogindstillinger, skal du vælge tandhjulsikonet > **Indstillinger** > **Generelt** > **Sprog**.
-
-* URL-filtre respekteres ikke i øjeblikket, når du vælger "Aktuelle værdier" til din eksport.
+* Rapporter, der ejes af en bruger uden for dit Power BI-lejerdomæne, f.eks. en rapport, der ejes af nogen uden for din organisation, og som er delt med dig, kan ikke publiceres til PDF.
+* Hvis du deler et dashboard med en person uden for din organisation og dermed en bruger, der ikke er i din Power BI-lejer, kan denne bruger ikke eksportere det delte dashboards tilknyttede rapporter til PDF. Hvis du f.eks. er aaron@contoso.com, kan du dele med cassie@cohowinery.com. Men cassie@cohowinery.com kan ikke eksportere de tilknyttede rapporter til PDF.
+* Når du eksporterer rapporter til PDF, som indeholder et baggrundsbillede, kan du muligvis se et forvrænget billede i eksporten, hvis du bruger indstillingen **Normal** eller **Udfyld** til **sidens baggrund**. Du får de bedste resultater ved at bruge indstillingen **Udfyld** for at undgå problemer med dit eksporterede dokument.
+* I Power BI-tjenesten anvendes din Power BI-sprogindstilling som sprog i forbindelse med PDF-eksporten. Hvis du vil se eller angive dine sprogindstillinger, skal du vælge tandhjulsikonet ![Tandhjulsikon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Indstillinger** > **Generelt** > **Sprog**.
+* Filtre for URL-dresser respekteres ikke i øjeblikket, når du vælger **Aktuelle værdier** til din eksport.
 
 ## <a name="next-steps"></a>Næste trin
 [Udskriv en rapport](end-user-print.md)

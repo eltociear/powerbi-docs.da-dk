@@ -1,6 +1,6 @@
 ---
 title: Beskrivelse af rollen som Power BI-administrator
-description: Sådan konfigurerer du sikkerhed på rækkeniveau for importerede datasæt og DirectQuery i Power BI-tjenesten.
+description: I denne artikel beskrives rollen som Power BI-tjenesteadministrator, og hvordan den kan bruges i din organisation.
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -10,18 +10,16 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 2185d7a9c91ed014cf0bed29d6393be0e40556a8
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 8b4d2382f89c48f20767cf72bc0468589c366cfe
+ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074530"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256429"
 ---
 # <a name="understanding-the-power-bi-service-administrator-role"></a>Om rollen Power BI-tjenesteadministrator
 
 Få mere at vide om, hvordan du kan bruge rollen Power BI-tjenesteadministrator i organisationen. Brugere med denne rolle har fuld kontrol over en Power BI-lejer og de tilhørende administrative funktioner (undtagen licensering).
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/PQRbdJgEm3k?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 Rollen Power BI-tjenesteadministrator kan tildeles brugere, som skal have adgang til Power BI-administrationsportalen uden også at tildele dem nogen anden administrativ adgang i Office 365.
 

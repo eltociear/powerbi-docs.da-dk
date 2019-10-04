@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/18/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 1c4a16d0dbe22a154dacfd296bfedab8acb97e81
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 6e89fa21617add5c3c11ada990f7055d305cebf5
+ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867137"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256459"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Understøttede sprog og lande/områder til Power BI
 
@@ -116,14 +116,14 @@ Power BI registrerer dit sprog baseret på den sprogindstilling, der er angivet 
    Du skal muligvis lukke og genåbne browseren for at se ændringen.
 
 ## <a name="choose-the-language-or-locale-of-power-bi-desktop"></a>Vælg sprog eller landestandard for Power BI Desktop
-Du kan få Power BI Desktop på to måder: Du kan downloade det, eller du kan installere det fra Windows Store.
+Du kan få Power BI Desktop på to måder: Du kan downloade det som et separat installationsprogram, eller du kan installere det fra Windows Store.
 
-* Når du [installerer Power BI Desktop fra Windows Store](#choose-a-language-for-power-bi-desktop-installed-from-the-windows-store), installerer den alle sprog og viser det sprog, der svarer til Windows-standardsproget.
-* Når du [downloader Power BI Desktop](#choose-a-language-when-you-download-power-bi-desktop), vælger du sproget, når du downloader den. 
+* Når du installerer Power BI Desktop fra Windows Store, installerer det alle sprog og viser som standard det sprog, der svarer til Windows-standardsproget.
+* Når du downloader Power BI Desktop som et separat installationsprogram, vælger du standardsproget, når du kører installationsprogrammet. Du kan ændre det på et senere tidspunkt.
 * Du kan også [vælge en landestandard, der skal bruges, når du importerer data](#choose-the-locale-for-importing-data-into-power-bi-desktop) til en bestemt rapport.
 
-### <a name="choose-a-language-for-power-bi-desktop-installed-from-the-windows-store"></a>Vælg et sprog til Power BI Desktop installeret fra Windows Store
-1. [Installer Power BI Desktop](http://aka.ms/pbidesktopstore) fra Windows Store.
+### <a name="choose-a-language-for-power-bi-desktop"></a>Vælg et sprog til Power BI Desktop 
+1. Installér Power BI Desktop [fra Windows Store](http://aka.ms/pbidesktopstore) eller som et [separat installationsprogram](http://aka.ms/pbiSingleInstaller).
 2. Søg efter **Windows-indstillinger** på din computer for at ændre sproget. 
 3. Vælg **Tid og sprog**.
    
@@ -140,11 +140,6 @@ Hvis du vil tilsidesætte standarden og bruge Power BI Desktop på et andet spro
 3. Vælg en anden landestandard i feltet **Applikationssprog**. 
 
 Sprogunderstøttelse i Power BI Desktop er begrænset til de sprog, der vises på rullelisten Applikationssprog.
-
-### <a name="choose-a-language-when-you-download-power-bi-desktop"></a>Vælg et sprog, når du downloader Power BI Desktop
-Hvis du bruger. msi-versionen af Power BI Desktop-installationsprogrammet, er sproget angivet på det tidspunkt, hvor du downloader den. Du vælger sproget på siden [Download Power BI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=45331). 
-
-Hvis du vil ændre sproget i Power BI Desktop, når du installerer på denne måde, skal du gå tilbage til downloadsiden og downloade det på et andet sprog.
 
 ### <a name="choose-the-locale-for-importing-data-into-power-bi-desktop"></a>Vælg landestandarden til import af data til Power BI Desktop
 Uanset om du downloader Power BI Desktop eller installerer den fra Windows Store, kan du vælge en landestandard for en bestemt rapport, der skal være en anden end landestandarden i din version af Power BI Desktop. Landestandarden ændrer den måde, data fortolkes på, når de importeres fra datakilden, f.eks. om "3/4/2017" fortolkes som 3. april eller 4. marts. 

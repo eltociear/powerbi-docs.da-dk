@@ -11,20 +11,22 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 857db3240385e9bf1b4e0416cc1200d1a029d73e
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: 65410dc15600307ba11a2c48db1689be5a458383
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867199"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71193285"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tabeller i Power BI-rapporter og -dashboards
 
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 En tabel er et gitter, der indeholder relaterede data i logiske serier af rækker og kolonner. Den kan også indeholde overskrifter og en række til totaler. Tabeller fungerer godt med kvantitative sammenligninger, hvor du får vist mange værdier for en enkelt kategori. I denne tabel vises f.eks. fem forskellige målinger for **Kategori**.
 
-![Skærmbillede af en tabel, der viser fem forskellige målinger for Kategori.](media/power-bi-visualization-tables/table.png)
+![Skærmbillede af en tabel, der viser fem forskellige målinger for Kategori.](media/power-bi-visualization-tables/power-bi-table-grid3.png)
 
-Opret tabeller i rapporter, og udfør tværgående fremhævning af elementer i tabellen med andre visualiseringer på samme rapportside. Du kan vælge rækker, kolonner og endda individuelle celler og tværgående fremhævning. Du kan også kopiere og indsætte de enkelte celler og markeringer med flere celler i andre programmer.
+Opret tabeller i rapporter, og krydsfremhæv elementer i tabellen med andre visualiseringer på samme rapportside. Du kan vælge rækker, kolonner og endda individuelle celler og krydsfremhævning. Du kan også kopiere og indsætte de enkelte celler og markeringer med flere celler i andre programmer.
 
 ## <a name="when-to-use-a-table"></a>Du skal bruge en tabel, til at
 
@@ -36,25 +38,23 @@ Tabeller er et godt valg til at:
 
 * se numeriske data efter kategori.
 
-## <a name="prerequisites"></a>Forudsætninger
+## <a name="prerequisite"></a>Forudsætning
 
-* Power BI-tjenesten eller Power BI Desktop
+I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Rapporten Retail Analysis Sample
+1. Vælg **Fil** > **Åbn** i øverste venstre afsnit af menulinjen
+   
+2. Find din kopi af **PBIX-filen med eksemplet Detailhandelsanalyse**
 
-## <a name="get-the-retail-analysis-sample-report"></a>Hent rapporten Retail Analysis Sample
+1. Åbn **PBIX-filen med eksemplet Detailhandelsanalyse** i rapportvisning ![ikon for skærmbillede af rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-I denne vejledning bruges Retail Analysis Sample (Eksempel på detailhandelsanalyse). Oprettelse af en visualisering kræver redigeringsrettigheder til datasættet og rapporten. Heldigvis kan alle Power BI-eksemplerne redigeres. Hvis en person deler en rapport med dig, kan du ikke oprette visualiseringer i rapporter. Hvis du vil følge med, skal du hente [rapporten Retail Analysis Sample](../sample-datasets.md).
+1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
 
-Når du har hentet datasættet for **Retail Analysis Sample**, kan du komme i gang.
 
 ## <a name="create-a-table"></a>Opret en tabel
 
 Du opretter den tabel, der vises i starten af artiklen, for at få vist salgsværdierne efter varekategori.
 
-1. Vælg **Datasæt** > **Opret en rapport** fra **Mit arbejdsområde**.
-
-    ![Skærmbillede af Datasæt > Opret en rapport.](media/power-bi-visualization-tables/power-bi-create-a-report.png)
 
 1. Vælg **Element** > **Kategori** i ruden **Felter**.
 
@@ -66,11 +66,10 @@ Du opretter den tabel, der vises i starten af artiklen, for at få vist salgsvæ
 
 1. Vælg derefter **Sales > This Year Sales**, og vælg alle tre indstillinger: **Værdi**, **Mål** og **Status**.
 
-1. Find **Værdier** i ruden **Visualiseringer**, og træk værdierne, indtil rækkefølgen af diagramkolonnerne stemmer overens med det første billede på denne side. Du kan nu se følgende under **Værdier**:
+1. I ruden **Visualiseringer** skal du finde brønden **Værdier** og vælge værdier, indtil rækkefølgen af dine diagramsøjler matcher det første billede på denne side. Træk værdierne i brønden, om nødvendigt. Du kan nu se følgende under **Værdier**:
 
     ![Værdibrønd](media/power-bi-visualization-tables/power-bi-table2.png)
 
-1. Fastgør tabellen til dashboardet ved at vælge ikonet med tavlenålen ![thumbtack](media/power-bi-visualization-tables/pbi_pintile.png) i øverste højre hjørne af visualiseringen.
 
 ## <a name="format-the-table"></a>Formatér tabellen
 
@@ -170,10 +169,6 @@ Sådan kopierer du mere end en enkelt celle:
 1. Vælg **Kopiér** > **Kopiér markering**.
 
     ![kopieringsindstillinger](media/power-bi-visualization-tables/power-bi-copy-selection.png)
-
-    Kopien inkluderer kolonne- og rækkeoverskrifterne.
-
-    ![indsætte i Excel](media/power-bi-visualization-tables/power-bi-paste-selection.png)
 
 ## <a name="adjust-the-column-width-of-a-table"></a>Tilpas kolonnebredden i en tabel
 

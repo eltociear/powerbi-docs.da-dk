@@ -11,23 +11,28 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8b0db9aebe72d54aa464ec012e614ae0ec5bc723
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 020d7edcf6bc499623df93a9def30285a37cffc6
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67390638"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71194342"
 ---
 # <a name="radial-gauge-charts-in-power-bi"></a>Radiale målerdiagrammer i Power BI
 
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Et radialt målerdiagram har en cirkulær bue og viser en enkelt værdis status i forhold til et mål eller en KPI (Key Performance Indicator). Linjen (eller *nålen*) repræsenterer målet eller målværdien. Skyggen repræsenterer status i forhold til målet. Værdien i buen repræsenterer statusværdien. Power BI spreder alle de mulige værdier langs buen fra minimumværdien (længst til venstre) til maksimumværdien (længst til højre).
 
-![Skærmbillede af radial måler.](media/power-bi-visualization-radial-gauge-charts/gauge_m.png)
+![Skærmbillede af radial måler.](media/power-bi-visualization-radial-gauge-charts/gauge-m.png)
 
 I dette eksempel er du en bilhandler, der sporer det gennemsnitlige salg pr. måned for salgsteamet. Nålen repræsenterer et salgsmål på 140 biler. Det mindst mulige gennemsnitssalg er 0, og maksimum er 200.  Den blå farve viser, at teamet i øjeblikket er på et salg på 120 i denne måned. Der er heldigvis stadig en uge til at nå målet.
 
 Se med, når Will viser, hvordan du opretter visualiseringer med en enkelt måling: målere, kort og KPI'er.
-
+   > [!NOTE]
+   > I denne video bruges en ældre version af Power BI Desktop.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="when-to-use-a-radial-gauge"></a>Situationer, hvor du kan bruge en radial måler
@@ -44,43 +49,39 @@ Radiale målere er fantastiske til:
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-* Power BI-tjenesten eller Power BI Desktop
+I dette selvstudium bruges [Excel-filen med eksemplet Økonomisk](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Projektmappen Financial Sample: [download eksemplet direkte](http://go.microsoft.com/fwlink/?LinkID=521962).
+1. Vælg **Hent data** > **Excel** i øverste venstre afsnit af menulinjen
+   
+2. Find din kopi af **Excel-filen med eksemplet Økonomisk**
+
+1. Åbn **Excel-filen med eksemplet Økonomisk** i rapportvisning ![ikon for skærmbillede af rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Vælg **financials** og **Sheet1**
+
+1. Klik på **Indlæs**
+
+1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
+
+
 
 ## <a name="create-a-basic-radial-gauge"></a>Opret en grundlæggende radial måler
 
-Denne vejledning bruger Power BI-tjenesten. Følg med ved at logge på Power BI og åbne filen Excel Financial Sample.
+### <a name="step-1-create-a-gauge-to-track-gross-sales"></a>Trin 1: Opret en måler for at spore bruttoomsætningen (Gross Sales)
 
-### <a name="step-1-open-the-financial-sample-excel-file"></a>Trin 1: Åbn filen Financial Sample i Excel
-
-1. Download [Excel-filen Financial Sample](../sample-financial-download.md), hvis du ikke allerede har gjort det. Husk, hvor du gemmer den.
-
-1. Vælg **Hent data** > **Filer** i Power BI-tjenesten.
-
-1. Vælg **Lokal fil**, og gå til den eksempelfilens placering.
-
-1. Vælg **Importér**. Power BI tilføjer Financial Sample-filen i dit arbejdsområde som et datasæt.
-
-1. På indholdslisten **Datasæt** skal du vælge ikonet **Opret rapport** for **Financial Sample**.
-
-    ![Skærmbillede af listen over datasæt med en pil, der peger på ikonet Opret rapport for Financial Sample.](media/power-bi-visualization-radial-gauge-charts/power-bi-dataset.png)
-
-### <a name="step-2-create-a-gauge-to-track-gross-sales"></a>Trin 2: Opret en måler for at spore bruttoomsætningen (Gross Sales)
-
-Da du valgte ikonet **Opret rapport** i det sidste afsnit, oprettede Power BI en tom rapport i redigeringsvisning.
+1. Start på en tom rapportside
 
 1. Vælg **Gross Sales** i ruden **Felter**.
 
-   ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue_new.png)
+   ![](media/power-bi-visualization-radial-gauge-charts/grosssalesvalue-new.png)
 
 1. Ret aggregeringen til **Gennemsnit**.
 
-   ![Skærmbillede af ruden Felter, hvor Gross Sales og aggregeringen Gennemsnit er fremhævet.](media/power-bi-visualization-radial-gauge-charts/changetoaverage_new.png)
+   ![Skærmbillede af ruden Felter, hvor Gross Sales og aggregeringen Gennemsnit er fremhævet.](media/power-bi-visualization-radial-gauge-charts/changetoaverage-new.png)
 
-1. Vælg målerikonet ![Skærmbillede af målerikonet.](media/power-bi-visualization-radial-gauge-charts/gaugeicon_new.png) for at konvertere søjlediagrammet til et målerdiagram.
+1. Vælg målerikonet ![Skærmbillede af målerikonet.](media/power-bi-visualization-radial-gauge-charts/gaugeicon-new.png) for at konvertere søjlediagrammet til et målerdiagram.
 
-    ![Skærmbillede af målerdiagrammet.](media/power-bi-visualization-radial-gauge-charts/gauge_no_target.png)
+    ![Skærmbillede af målerdiagrammet.](media/power-bi-visualization-radial-gauge-charts/gauge-no-target.png)
 
     Afhængigt af, hvornår du henter filen **Financial Sample**, får du muligvis vist tal, der ikke stemmer overens med disse tal.
 
@@ -95,7 +96,7 @@ Da du valgte ikonet **Opret rapport** i det sidste afsnit, oprettede Power BI en
 
    Power BI tilføjer en nål, der repræsenterer målværdien **145,48tusind**.
 
-   ![Skærmbillede af målerdiagrammet, hvor vareforbruget er tilføjet.](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress_new.png)
+   ![Skærmbillede af målerdiagrammet, hvor vareforbruget er tilføjet.](media/power-bi-visualization-radial-gauge-charts/gaugeinprogress-new.png)
 
     Bemærk, at vi er over vores mål.
 
@@ -110,7 +111,7 @@ I trin 2 brugte Power BI feltet **Værdi** til automatisk at angive minimum- og 
 
 1. Ret aggregeringen til **Maksimum**.
 
-   ![Skærmbillede af ruden Felter, hvor Gross Sales og aggregeringen Maksimum er fremhævet.](media/power-bi-visualization-radial-gauge-charts/setmaximum_new.png)
+   ![Skærmbillede af ruden Felter, hvor Gross Sales og aggregeringen Maksimum er fremhævet.](media/power-bi-visualization-radial-gauge-charts/setmaximum-new.png)
 
    Måleren gentegnes med en ny slutværdi, som er på bruttoomsætningen 1,21 millioner.
 
@@ -119,8 +120,6 @@ I trin 2 brugte Power BI feltet **Værdi** til automatisk at angive minimum- og 
 ### <a name="step-5-save-your-report"></a>Trin 5: Gem din rapport
 
 1. [Gem rapporten](../service-report-save.md).
-
-1. [Tilføj målerdiagram som et dashboardfelt](../service-dashboard-pin-tile-from-report.md). 
 
 ## <a name="use-manual-format-options-to-set-minimum-maximum-and-target-values"></a>Brug manuelle formateringsindstillinger til at angive værdierne for Minimum, Maksimum og Mål
 
@@ -136,7 +135,7 @@ I trin 2 brugte Power BI feltet **Værdi** til automatisk at angive minimum- og 
 
 1. Fjern markeringen i indstillingen **COGS** i ruden **Felter** for at fjerne målværdien.
 
-    ![Skærmbillede af indstillingen COGS, hvor markeringen er fjernet.](media/power-bi-visualization-radial-gauge-charts/pbi_remove_target.png)
+    ![Skærmbillede af indstillingen COGS, hvor markeringen er fjernet.](media/power-bi-visualization-radial-gauge-charts/pbi-remove-target.png)
 
 1. Når feltet **Mål** vises under **Målerakse**, skal du angive en værdi.
 

@@ -11,19 +11,24 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 8222194359077cb0d88286a33d1c9b2a05f6bd80
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: d776425d4c19070c00658cbd588c5421d22a0057
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67390933"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71192941"
 ---
 # <a name="scatter-charts-bubble-charts-and-dot-plot-charts-in-power-bi"></a>Punktdiagrammer, boblediagrammer og prikdiagrammer i Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Et punktdiagram har altid to værdiakser, der vises: ét sæt numeriske data langs en vandret akse og et andet sæt numeriske værdier langs en lodret akse. Diagrammet viser punkter ved skæringspunktet for en numerisk x- og y-værdi og kombinerer disse værdier i enkelte datapunkter. Power BI kan fordele disse datapunkter jævnt eller ujævnt på tværs af den vandrette akse. Det afhænger af de data, der repræsenteres i diagrammet.
 
 Se denne video for at se Will oprette et punktdiagram, og følg derefter nedenstående trin for at oprette et selv.
-
+   > [!NOTE]
+   > I denne video bruges en ældre version af Power BI Desktop.
+   > 
+   > 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PVcfPoVE3Ys?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 Du kan fastsætte antallet af datapunkter, højst 10.000.  
@@ -65,7 +70,7 @@ Ud over det, punktdiagrammer kan gøre for dig, er boblediagrammer et godt valg:
 
 ### <a name="dot-plot-charts"></a>Prikdiagrammer
 
-Et prikdiagram svarer til et boblediagram og et punktdiagram, men du kan også plotte numeriske eller kategoriske data langs X-aksen.
+Et prikdiagram ligner et boblediagram og et punktdiagram, men bruges i stedet til at angive kategoriske data langs X-aksen.
 
 ![Skærmbillede af et prikdiagram.](media/power-bi-visualization-scatter/power-bi-dot-plot.png)
 
@@ -73,17 +78,20 @@ De er et godt valg, hvis du vil medtage kategoriske data langs X-aksen.
 
 ## <a name="prerequisites"></a>Forudsætninger
 
-* Power BI-tjenesten
+I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Rapporten Retail Analysis Sample
+1. Vælg **Fil** > **Åbn** i øverste venstre afsnit af menulinjen
+   
+2. Find din kopi af **PBIX-filen med eksemplet Detailhandelsanalyse**
+
+1. Åbn **PBIX-filen med eksemplet Detailhandelsanalyse** i rapportvisning ![ikon for skærmbillede af rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
+
 
 ## <a name="create-a-scatter-chart"></a>Opret et punktdiagram
 
-Hvis du vil følge med, skal du logge på [Power BI-tjenesten](https://app.powerbi.com) og åbne rapporten [Retail Analysis Sample](../sample-datasets.md) i visningen [Rediger rapport](../service-interact-with-a-report-in-editing-view.md).
-
-1. Vælg ![Skærmbillede af det gule plusikon.](media/power-bi-visualization-scatter/power-bi-yellow-plus-icon.png) for at oprette en tom rapportside.
-
-1. I ruden **Felter** skal du vælge disse felter:
+1. Start på en tom rapportside, og vælg følgende felter i ruden **Felter**:
 
     * **Salg** > **Salg pr. kvm.**
 
@@ -113,11 +121,11 @@ Nu tilføjer jeg en tredje dimension.
 
 1. Peg på en boble. Boblens størrelse afspejler værdien af **This Year Sales**.
 
-    ![visning af værktøjstip](media/power-bi-visualization-scatter/pbi_scatter_chart_hover.png)
+    ![visning af værktøjstip](media/power-bi-visualization-scatter/pbi-scatter-chart-hover.png)
 
 1. Hvis du vil angive antallet af datapunkter, der skal vises i dit boblediagram, skal du udvide **Generelt** i ruden **Visualiseringer** i sektionen **Formatér** og justere **Datamængde**.
 
-    ![Skærmbillede af ruden Visualiseringer, hvor ikonet Formatér, rullelisten Generelt og indstillingen Datamængde er fremhævet.](media/power-bi-visualization-scatter/pbi_scatter_data_volume.png)
+    ![Skærmbillede af ruden Visualiseringer, hvor ikonet Formatér, rullelisten Generelt og indstillingen Datamængde er fremhævet.](media/power-bi-visualization-scatter/pbi-scatter-data-volume.png)
 
     Du kan angive, at den maksimale datamængde skal være et vilkårligt tal op til 10.000. Når du når til højere tal, anbefaler vi, at du tester det først for at sikre, at der bibeholdes en brugbar ydeevne.
 
@@ -128,7 +136,7 @@ Nu tilføjer jeg en tredje dimension.
 
     Hvis du vil [forbedre tilgængeligheden](../desktop-accessibility.md), bør du overveje at føje mærkeformer til hver enkelt linje. Hvis du vil vælge mærkeformen, skal du udvide **Figurer**, vælge **Mærkeform** og derefter vælge en form.
 
-    ![Skærmbillede af rullelisten Figurer, hvor indstillingerne for mærkeformerne er fremhævet.](media/power-bi-visualization-scatter/pbi_scatter_marker.png)
+    ![Skærmbillede af rullelisten Figurer, hvor indstillingerne for mærkeformerne er fremhævet.](media/power-bi-visualization-scatter/pbi-scatter-marker.png)
 
     Du kan ændre mærkeformen til en diamant, trekant eller firkant. Hvis du bruger en anden mærkeform for hver enkelt linje, kan brugere af rapporter nemmere adskille linjer (eller områder) fra hinanden.
 
@@ -146,15 +154,15 @@ Fra ruden **X-akse** skal du fjerne **Sales per sq ft** og erstatte det med **Di
 
 Har dit punktdiagram kun ét datapunkt, der aggregerer alle værdierne på X- og Y-aksen?  Eller aggregeres alle værdierne langs en enkelt vandret eller lodret linje?
 
-![Skærmbillede af et punktdiagram med ét datapunkt.](media/power-bi-visualization-scatter/pbi_scatter_tshoot1.png)
+![Skærmbillede af et punktdiagram med ét datapunkt.](media/power-bi-visualization-scatter/pbi-scatter-tshoot1.png)
 
 Tilføj et felt i området **Detaljer** for at angive, hvordan værdierne skal grupperes i Power BI. Feltet skal være entydigt for hvert punkt, der skal afbildes. Et enkelt rækkenummer eller id-felt er nok.
 
-![Skærmbillede af et punktdiagram, hvor RowNum også er føjet til oplysningerne.](media/power-bi-visualization-scatter/pbi_scatter_tshoot.png)
+![Skærmbillede af et punktdiagram, hvor RowNum også er føjet til oplysningerne.](media/power-bi-visualization-scatter/pbi-scatter-tshoot.png)
 
 Hvis det ikke findes i dine data, kan du oprette et felt, der sammensætter X- og Y-værdierne til noget entydigt pr. punkt:
 
-![Skærmbillede af et punktdiagram, hvor TempTime også er føjet til oplysningerne.](media/power-bi-visualization-scatter/pbi_scatter_tshoot2.png)
+![Skærmbillede af et punktdiagram, hvor TempTime også er føjet til oplysningerne.](media/power-bi-visualization-scatter/pbi-scatter-tshoot2.png)
 
 Du kan oprette et nyt felt ved at [bruge Forespørgselseditor i Power BI Desktop til at tilføje en indekskolonne](../desktop-add-custom-column.md) i dit datasæt. Tilføj derefter denne kolonne i området **Detaljer** for din visualisering.
 

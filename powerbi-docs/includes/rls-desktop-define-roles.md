@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 240045c05a35a6583b537b785c6639a39c6aa9d4
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 6e48713315b23cf322b635f1650374251b639e4f
+ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61193690"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71409354"
 ---
 ## <a name="define-roles-and-rules-in-power-bi-desktop"></a>Definer roller og regler i Power BI Desktop
 Du kan definere roller og regler i Power BI Desktop. Når du publicerer til Power BI, publiceres rolledefinitionerne også.
@@ -35,8 +35,14 @@ Følg disse trin for at definere sikkerhedsroller.
    
    ![](./media/rls-desktop-define-roles/powerbi-desktop-security-create-rule.png)
 8. Når du har oprettet DAX-udtrykket, kan du vælge at markere afkrydsningsfeltet over udtryksfeltet for at validere udtrykket.
-   
+      
    ![](./media/rls-desktop-define-roles/powerbi-desktop-security-validate-dax.png)
+   
+   > [!NOTE]
+   > I dette udtryksfelt bruger du kommaer til at adskille argumenter for DAX-funktionen, selvom du bruger en landestandard, der normalt bruger semikolon som separator (f.eks. fransk eller tysk). 
+   >
+   >
+   
 9. Vælg **Gem**.
 
 Du kan ikke tildele brugere til en rolle i Power BI Desktop. Dem tildeler du i Power BI-tjenesten. Du kan aktivere dynamisk sikkerhed i Power BI Desktop ved at bruge DAX-funktionen *username()* eller *userprincipalname()* og have konfigureret de relevante relationer. 

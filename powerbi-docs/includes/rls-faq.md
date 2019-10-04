@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 0592cb7ef076f8094aca565d955cc238b2181068
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: cd0696b44e285119193059304c89cfa04c755771
+ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560975"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71409355"
 ---
 ## <a name="faq"></a>Ofte stillede spørgsmål
 **Spørgsmål:** Hvad hvis jeg på et tidligere tidspunkt har oprettet roller og regler for et datasæt i Power BI-tjenesten? Vil de stadig virke, hvis jeg ikke gør noget?  
@@ -19,3 +19,5 @@ ms.locfileid: "69560975"
 **Spørgsmål:** Vil sikkerhed på rækkeniveau lade mig skjule detaljerede data, men samtidig give adgang til de data, der er opsummeret i visualiseringer?  
 **Svar:** Nej. Du beskytter individuelle rækker, men brugerne kan altid se enten detaljer eller de opsummerede data.
 
+**Spørgsmål:** Der er allerede defineret sikkerhedsroller for min datakilde (f.eks. SQL Server-roller eller SAP BW-roller). Hvad er relationen mellem disse og sikkerhed på rækkeniveau?  
+**Svar:** Svaret afhænger af, om du importerer data eller bruger DirectQuery. Hvis du importerer data til dit Power BI-datasæt, bruges sikkerhedsrollerne i din datakilde ikke. I dette tilfælde skal du definere sikkerhed på rækkeniveau for at gennemtvinge sikkerhedsregler for de brugere, der opretter forbindelse i Power BI. Hvis du bruger DirectQuery, bruges sikkerhedsrollerne i din datakilde. Når en bruger åbner en rapport, sender Power BI en forespørgsel til den underliggende datakilde, som anvender sikkerhedsregler for dataene på baggrund af brugerens legitimationsoplysninger.

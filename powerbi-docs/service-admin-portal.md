@@ -1,6 +1,6 @@
 ---
 title: Power BI-administrationsportal
-description: Administrationsportalen giver adgang til lejeradministration af Power BI i virksomheden. Den indeholder elementer såsom metrikværdier, adgang til Microsoft 365 Administration og indstillinger.
+description: Administrationsportalen giver adgang til lejeradministration af Power BI i organisationen. Den indeholder elementer såsom metrikværdier, adgang til Microsoft 365 Administration og indstillinger.
 author: mgblythe
 ms.author: mblythe
 manager: kfile
@@ -8,15 +8,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 09/20/2019
+ms.date: 09/25/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 5551247307e750624006de71a3c8652376b73fcf
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: f472ee821d0ccf3bbe8e47697f934b91668cd16d
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175257"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305881"
 ---
 # <a name="administering-power-bi-in-the-admin-portal"></a>Administrer Power BI på administrationsportalen
 
@@ -44,14 +44,14 @@ Der er ni faner på portalen. Resten af denne artikel indeholder oplysninger om 
 * [Lejerindstillinger](#tenant-settings)
 * [Kapacitetsindstillinger](#capacity-settings)
 * [Integrer koder](#embed-codes)
-* [Visualiseringer til virksomheder](#organizational-visuals)
+* [Visualiseringer til organisationer](#organizational-visuals)
 * [Dataflowlager (eksempelvisning)](#dataflowStorage)
 * [Arbejdsområder](#workspaces)
 * [Brugerdefineret branding](#custom-branding)
 
-## <a name="usage-metrics"></a>Forbrugsdata
+## <a name="usage-metrics"></a>Forbrugsmålepunkter
 
-Med **Forbrugsdata** kan du overvåge Power BI-forbruget i organisationen. Den giver dig også mulighed for at se, hvilke brugere og grupper, der er mest aktive i Power BI i virksomheden. 
+Med **Forbrugsdata** kan du overvåge Power BI-forbruget i organisationen. Den giver dig også mulighed for at se, hvilke brugere og grupper, der er mest aktive i Power BI i organisationen. 
 
 > [!NOTE]
 > Første gang du tilgår dashboard'et, eller når du besøger det igen efter en lang periode uden at åbne dashboard'et, så får du sandsynligvis vist indlæsningsskærmen, mens vi indlæser dashboard'et.
@@ -199,7 +199,7 @@ På følgende billede ses den meddelelse, som vises, når du deler med en ekster
 
 ### <a name="publish-to-web"></a>Publicer på internettet
 
-Brugere i virksomheden kan publicere rapporter på internettet. [Få mere at vide](service-publish-to-web.md)
+Brugere i organisationen kan publicere rapporter på internettet. [Få mere at vide](service-publish-to-web.md)
 
 På følgende billede ses menuen **Filer** for en rapport, når indstillingen **Publicer på internettet** er aktiveret.
 
@@ -216,7 +216,7 @@ Brugere kan se forskellige indstillinger på brugergrænsefladen afhængigt af i
 
 ### <a name="export-data"></a>Eksportér data
 
-Brugere i virksomheden kan eksportere data fra et felt eller visualisering. [Få mere at vide](visuals/power-bi-visualization-export-data.md)
+Brugere i organisationen kan eksportere data fra et felt eller visualisering. [Få mere at vide](visuals/power-bi-visualization-export-data.md)
 
 På følgende billede ses indstillingen for at eksportere data fra et felt.
 
@@ -235,7 +235,7 @@ På følgende billede ses menuen **Filer** for en rapport, når indstillingen **
 
 ### <a name="print-dashboards-and-reports"></a>Udskriv dashboards og rapporter
 
-Brugere i virksomheden kan udskrive dashboards og rapporter. [Få mere at vide](consumer/end-user-print.md)
+Brugere i organisationen kan udskrive dashboards og rapporter. [Få mere at vide](consumer/end-user-print.md)
 
 På følgende billede ses indstillingen for at udskrive et dashboard.
 
@@ -269,7 +269,7 @@ På følgende billede vises indstillingen **Hele min organisation**, når du opr
 
 ### <a name="create-template-apps-and-organizational-content-packs"></a>Opret skabelonbaserede apps og indholdspakker for organisationen
 
-Brugere i virksomheden kan oprette skabelonbaserede apps og indholdspakker for organisationen, der bruger datasæt baseret på én datakilde i Power BI Desktop. Få mere at vide om [skabelonapps](template-content-pack-authoring.md).
+Brugere i organisationen kan oprette skabelonbaserede apps og indholdspakker for organisationen, der bruger datasæt baseret på én datakilde i Power BI Desktop. Få mere at vide om [skabelonapps](template-content-pack-authoring.md).
 
 ### <a name="push-apps-to-end-users"></a>Push apps til slutbrugere
 
@@ -279,14 +279,14 @@ Rapportoprettere kan dele apps direkte med slutbrugere uden at kræve installati
 
 ### <a name="ask-questions-about-data-using-cortana"></a>Stil spørgsmål til data ved hjælp af Cortana
 
-Brugere i virksomheden kan stille spørgsmål til deres data ved hjælp af Cortana. [Få mere at vide](service-cortana-enable.md)
+Brugere i organisationen kan stille spørgsmål til deres data ved hjælp af Cortana. [Få mere at vide](service-cortana-enable.md)
 
 > [!NOTE]
 > Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
 
 ### <a name="use-analyze-in-excel-with-on-premises-datasets"></a>Brug Analysér i Excel med datasæt i det lokale miljø
 
-Brugere i virksomheden kan bruge Excel til at se og interagere med Power BI-datasæt i det lokale miljø. [Få mere at vide](service-analyze-in-excel.md)
+Brugere i organisationen kan bruge Excel til at se og interagere med Power BI-datasæt i det lokale miljø. [Få mere at vide](service-analyze-in-excel.md)
 
 > [!NOTE]
 > Hvis **Eksportér data** deaktiveres, kan brugere heller ikke anvende funktionen **Analysér i Excel**.
@@ -348,11 +348,11 @@ En værdi på 1 (decimal) aktiverer brugen af ikke-certificerede brugerdefinered
 
 En værdi på 0 (decimal) deaktiverer brugen af ikke-certificerede brugerdefinerede visualiseringer i Power BI (denne indstilling aktiverer kun brugen af [certificerede brugerdefinerede visualiseringer](https://go.microsoft.com/fwlink/?linkid=2002010)).
 
-## <a name="r-visuals-settings"></a>R visuals – indstillinger
+## <a name="r-visuals-settings"></a>Indstillinger for R-visualiseringer
 
 ### <a name="interact-with-and-share-r-visuals"></a>Interager med og del R-visualiseringer
 
-Brugere i virksomheden kan interagere med og dele visuelle elementer oprettet med R-scripts. [Få mere at vide](visuals/service-r-visuals.md)
+Brugere i organisationen kan interagere med og dele visualiseringer oprettet med R-scripts. [Få mere at vide](visuals/service-r-visuals.md)
 
 > [!NOTE]
 > Denne indstilling gælder for hele organisationen og kan ikke begrænses til bestemte grupper.
@@ -361,7 +361,7 @@ Brugere i virksomheden kan interagere med og dele visuelle elementer oprettet me
 
 ### <a name="create-audit-logs-for-internal-activity-auditing-and-compliance"></a>Opret overvågningslogge for intern aktivitetsovervågning og overholdelse
 
-Brugere i virksomheden kan overvåge handlinger, der udføres i Power BI af andre brugere i virksomheden. [Få mere at vide](service-admin-auditing.md)
+Brugere i organisationen kan overvåge handlinger, der udføres i Power BI af andre brugere i organisationen. [Få mere at vide](service-admin-auditing.md)
 
 Denne indstilling skal være aktiveret, for at overvågningslogposter bliver registreret. Der kan være op til 48 timers forsinkelse, fra at du aktiverer overvågning, til at du får vist data i overvågningsloggen. Hvis du ikke får vist data med det samme, skal du tjekke overvågningsloggene senere. Der kan være en lignende forsinkelse mellem at få tilladelse til at få vist overvågningslogge og til at kunne åbne logfilerne.
 
@@ -391,7 +391,7 @@ Brugere i organisationen kan markere dashboards med klassificeringsangivelser, d
 
 ### <a name="embed-content-in-apps"></a>Integrer indhold i apps
 
-Brugere i virksomheden kan integrere Power BI-dashboards og rapporter i Software as a Service (SaaS)-programmer. Hvis denne indstilling deaktiveres, kan brugere ikke anvende REST API'er til at integrere Power BI-indhold i deres program. [Få mere at vide](developer/embedding.md)
+Brugere i organisationen kan integrere Power BI-dashboards og rapporter i Software as a Service (SaaS)-programmer. Hvis denne indstilling deaktiveres, kan brugere ikke anvende REST API'er til at integrere Power BI-indhold i deres program. [Få mere at vide](developer/embedding.md)
 
 ### <a name="allow-service-principals-to-use-power-bi-apis"></a>Tillad, at tjenesteprincipaler bruger Power BI-API'er
 
@@ -429,7 +429,7 @@ Brugere i organisationen kan **kun** downloade og installere skabelonapps fra [A
 
 ### <a name="install-template-apps-not-listed-on-appsource"></a>Installér skabelonapps, der ikke er angivet på AppSource
 
-Styr, hvilke brugere i organisationen der kan downloade og installere skabelonapps, som **ikke er anført på [AppSource](https://appsource.microsoft.com)**.
+Styr, hvilke brugere i organisationen der kan downloade og installere skabelonapps, som **ikke er anført på [AppSource](https://appsource.microsoft.com)** .
 
 ![Power BI-administrationsportal, indstillingen Installér skabelonapps](media/service-admin-portal/power-bi-admin-portal-template-app-settings-installer-nonappsource.png)
 
@@ -453,45 +453,45 @@ Som administrator kan du få vist integreringskoder, der er genereret for din le
 
 ![Integrer koder i Power BI-administrationsportalen](media/service-admin-portal/embed-codes.png)
 
- ## <a name="organizational-visuals">Visualiseringer til virksomheder</a> 
+ ## <a name="organizational-visuals">Visualiseringer til organisationer</a> 
 
-Fanen **Organisationens visuals** giver dig mulighed for at installere og administrere brugerdefinerede visuals i din organisation. Med visuals til organisationer kan du nemt installere privatejede visuals i din organisation, som forfattere af rapporter efterfølgende kan finde og importere i deres rapporter fra Power BI Desktop. [Få mere at vide](power-bi-custom-visuals-organization.md)
+Fanen **Organisationens visualiseringer** giver dig mulighed for at installere og administrere brugerdefinerede visualiseringer i din organisation. Med visualiseringer til organisationer kan du nemt installere privatejede visualiseringer i din organisation, som forfattere af rapporter efterfølgende kan finde og importere i deres rapporter fra Power BI Desktop. [Få mere at vide](power-bi-custom-visuals-organization.md)
 
 > [!WARNING]
-> En brugerdefineret visual kan indeholde kode, der udgør en risiko for sikkerheden eller personlige oplysninger. Sørg for at have tillid til forfatteren af og kilden til den brugerdefinerede visual, før du installerer den i organisationens lager.
+> En brugerdefineret visualisering kan indeholde kode, der udgør en risiko for sikkerheden eller personlige oplysninger. Sørg for at have tillid til forfatteren af og kilden til den brugerdefinerede visualisering, før du installerer den i organisationens lager.
 
-Følgende billede viser alle de brugerdefinerede visuals, der i øjeblikket er installeret i en organisations lager.
+Følgende billede viser alle de brugerdefinerede visualiseringer, der i øjeblikket er installeret i en organisations lager.
 
 ![Organisationens administratorvisualisering](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-01.png)
 
 ### <a name="add-a-new-custom-visual"></a>Tilføj en ny brugerdefineret visualisering
 
-Hvis du vil føje en ny brugerdefineret visual til listen, skal du følge disse trin. 
+Hvis du vil føje en ny brugerdefineret visualisering til listen, skal du følge disse trin. 
 
-1. Vælg **Tilføj en brugerdefineret visual** i ruden til højre.
+1. Vælg **Tilføj en brugerdefineret visualisering** i ruden til højre.
 
-    ![Formular til brugerdefinerede visuals](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
+    ![Formular til brugerdefinerede visualiseringer](media/service-admin-portal/power-bi-custom-visuals-organizational-admin-02.png)
 
-1. Udfyld formularen **Tilføj brugerdefineret visual**:
+1. Udfyld formularen **Tilføj brugerdefineret visualisering**:
 
     * **Vælg en .pbiviz-fil** (påkrævet): Vælg den brugerdefinerede visualiseringsfil, som du vil uploade. Det er kun brugerdefinerede visualiseringer med versioneret API, der understøttes. Læs her, hvad det betyder.
 
     Før du uploader en brugerdefineret visualisering, bør du gennemgå den for at sikre, at sikkerhed og beskyttelse af personlige oplysninger stemmer overens med din virksomheds standarder.
 
-    * **Navngiv din brugerdefinerede visual** (påkrævet): Angiv en kort titel på din visual, så brugerne af Power BI Desktop nemt kan forstå, hvad de kan bruge den til
+    * **Navngiv din brugerdefinerede visualisering** (påkrævet): Angiv en kort titel på din visualisering, så brugerne af Power BI Desktop nemt kan forstå, hvad de kan bruge den til
 
     * **Ikon**: Den ikonfil, der vises på brugergrænsefladen i Power BI Desktop.
 
-    * **Beskrivelse**: En kort beskrivelse af din visual, som giver brugeren mere kontekst og flere oplysninger
+    * **Beskrivelse**: En kort beskrivelse af din visualisering, som giver brugeren mere kontekst og flere oplysninger
 
 1. Vælg **Tilføj** for at starte anmodningen om upload. Hvis uploadet lykkes, kan du se det nye element på listen. Hvis uploadet mislykkes, får du vist en passende fejlmeddelelse
 
 ### <a name="delete-a-custom-visual-from-the-list"></a>Slet en brugerdefineret visualisering fra listen
 
-Hvis du vil slette en visual permanent, skal du vælge ikonet Papirkurv for den pågældende visual i lageret.
+Hvis du vil slette en visualisering permanent, skal du vælge ikonet Papirkurv for den pågældende visualisering i lageret.
 
 > [!IMPORTANT]
-> Du kan ikke fortryde en sletning. Når visualiseringen er slettet, holder den øjeblikkeligt op med at blive gengivet i eksisterende rapporter. Selv om du uploader den samme visual igen, erstatter den ikke den forrige, der blev slettet. Brugerne kan dog importere den nye visual igen og erstatte det eksemplar, de har i deres rapporter.
+> Du kan ikke fortryde en sletning. Når visualiseringen er slettet, holder den øjeblikkeligt op med at blive gengivet i eksisterende rapporter. Selv om du uploader den samme visualisering igen, erstatter den ikke den forrige, der blev slettet. Brugerne kan dog importere den nye visualisering igen og erstatte det eksemplar, de har i deres rapporter.
 
 ### <a name="disable-a-custom-visual-in-the-list"></a>Deaktiver en brugerdefineret visualisering på listen
 
@@ -505,13 +505,13 @@ Visualiseringer, der er angivet bogmærker for, virker dog stadig.
 
 Efter en opdatering eller ændring af administrator skal brugerne af Power BI Desktop genstarte programmet eller opdatere browseren i Power BI-tjenesten for at se opdateringerne.
 
-### <a name="update-a-visual"></a>Opdater en visual
+### <a name="update-a-visual"></a>Opdater en visualisering
 
-Hvis du vil opdatere en visual fra organisationens lager, skal du vælge tandhjulsikonet. Gennemse og upload en ny version af den pågældende visual.
+Hvis du vil opdatere en visualisering fra organisationens lager, skal du vælge tandhjulsikonet. Gennemse og upload en ny version af den pågældende visualisering.
 
 Sørg for, at id'et for visualiseringen ikke ændres. Den nye fil erstatter den forrige fil for alle rapporter i hele organisationen. Hvis der er risiko for, at den nye version af visualiseringen vil bryde brugen eller datastrukturen af den forrige version af visualiseringen, skal du ikke erstatte den forrige version. Du skal i stedet oprette en ny post for den nye version af visualiseringen. Føj f.eks. et nyt versionsnummer (version X.X) til titlen af den nye angivne visualisering. På den måde bliver det tydeligt, at det er den samme visualisering blot med et opdateret versionsnummer, så funktionaliteten i eksisterende rapporter ikke brydes. Sørg igen for, at id'et for visualiseringen ikke ændres. Næste gang brugerne derefter tilgår virksomhedens lager fra Power BI Desktop, kan de importere den nye version, og de bliver spurgt, om de vil erstatte den aktuelle version, de har i rapporten.
 
-Du kan finde flere oplysninger under [Ofte stillede spørgsmål om brugerdefinerede visualiseringer til virksomheder](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
+Du kan finde flere oplysninger under [Ofte stillede spørgsmål om brugerdefinerede visualiseringer til organisationer](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-faq#organizational-custom-visuals)
 
 ## <a name="dataflowStorage">Dataflowlager (eksempelvisning)</a>
 
@@ -522,6 +522,15 @@ Som standard gemmes data, der bruges med Power BI, i et internt lager, der lever
 Som administrator kan du få vist de arbejdsområder, der findes i din lejer. Du kan sortere og filtrere listen over arbejdsområder og få vist detaljerne for hvert arbejdsområde. Kolonnerne i tabellen svarer til de egenskaber, der returneres af [REST API'erne til Power BI Administration](/rest/api/power-bi/admin) for arbejdsområder. Personlige arbejdsområder er af typen **Personlig gruppe**, klassiske arbejdsområder er af typen **Gruppe**, og arbejdsområder med den nye arbejdsområdeoplevelse er af typen **Arbejdsområde**. Du kan finde flere oplysninger under [Opret de nye arbejdsområder i Power BI](service-create-the-new-workspaces.md).
 
 ![Liste over arbejdsområder](media/service-admin-portal/workspaces-list.png)
+
+På fanen **Arbejdsområder** kan du se *tilstanden* for hvert arbejdsområde. I tabellen nedenfor kan du se flere oplysninger om betydningen af disse tilstande.
+
+|Stat  |Beskrivelse  |
+|---------|---------|
+| Aktiv | Et normalt arbejdsområde. Det angiver ikke noget om brug, eller hvad der er indeni, kun at selve arbejdsområdet er "normalt". |
+| Uafhængig | Et arbejdsområde uden en administratorbruger. |
+| Slettet | Et slettet arbejdsområde. Vi bevarer tilstrækkeligt mange metadata til at gendanne arbejdsområdet, hvis det er nødvendigt. |
+| Fjerner | Et arbejdsområde, der er ved at blive slettet, men endnu ikke forsvundet. Brugerne kan slette deres egne arbejdsområder og placere ting i Fjerner og til sidst Slettet. |
 
 ## <a name="custom-branding"></a>Brugerdefineret branding
 

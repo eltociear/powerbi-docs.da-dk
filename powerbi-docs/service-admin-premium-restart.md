@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 02/05/2019
+ms.date: 09/17/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 214b9fe48d5254e1bd2d436dd873b3c2d1d35f98
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1622e06cd7aa394d384954b393d1e547e87df10a
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65564924"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305665"
 ---
 # <a name="restart-a-power-bi-premium-capacity"></a>Genstart en Power BI Premium-kapacitet
 
@@ -31,7 +31,7 @@ Power BI forbedrer konstant, hvordan brugere af Premium-kapacitet beskyttes mod 
 
 ## <a name="is-the-restart-process-safe-will-i-lose-any-data"></a>Er det sikkert at genstarte? Mister jeg nogen data?
 
-Alle de gemte data, definitioner, rapporter og dashboards på din kapacitet forbliver intakte efter genstart. Når du genstarter en kapacitet, stoppes alle igangværende planlagte opdateringer og ad hoc-opdateringer. Tjenesten forsøger at gentage opdateres, når kapaciteten, der er tilgængelig. De brugere, der interagerer med kapaciteten, mister det arbejde, der ikke er gemt. De skal opdatere deres browsere, når genstarten er fuldført.
+Alle de gemte data, definitioner, rapporter og dashboards på din kapacitet forbliver intakte efter genstart. Når du genstarter en kapacitet, stoppes alle igangværende planlagte opdateringer og ad hoc-opdateringer. Tjenesten forsøger at opdatere igen, når kapaciteten er tilgængelig. De brugere, der interagerer med kapaciteten, mister det arbejde, der ikke er gemt. De skal opdatere deres browsere, når genstarten er fuldført.
 
 ## <a name="how-do-i-restart-a-capacity"></a>Hvordan genstarter jeg en kapacitet?
 

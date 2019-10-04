@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/10/2019
+ms.date: 09/14/2019
 ms.author: tebercov
-ms.openlocfilehash: 158345c44f8801a98e19dcd9b4c7dde14aa6126b
-ms.sourcegitcommit: 8c52b3256f9c1b8e344f22c1867e56e078c6a87c
+ms.openlocfilehash: 660fd7c623e8a195f937a3a2b468f758986411e1
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67264524"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71195272"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Installér og distribuer skabelonprogrammer i din organisation – Power BI
 
@@ -82,7 +82,7 @@ Vælg dette link for at åbne AppSource, der er filtreret efter Power BI-program
    >[!NOTE]
    >Du skal anmode om tilladelse fra administratoren for at installere skabelonapps, der ikke er vist på AppSource. Du kan finde flere oplysninger på Power BI[-administrationsportal, indstillingen Skabelonprogram](service-admin-portal.md#template-apps-settings).
 
-## <a name="update-and-distribute-the-app"></a>Opdater og distribuer programmet
+## <a name="customize-and-publish-the-app"></a>Tilpas og publicer appen
 
 Når du har opdateret programmet til din organisation, er du klar til at udgive det. Fremgangsmåden er den samme som udgivelse af et hvilket som helst andet program.
 
@@ -94,7 +94,7 @@ Når du har opdateret programmet til din organisation, er du klar til at udgive 
 
    ![Angiv beskrivelse og farve for programmet](media/service-template-apps-install-distribute/power-bi-install-app-details.png)
 
-3. Under **Indhold** kan du vælge en landingsside enten på dashboardet eller i rapporten.
+3. I **Navigation** kan du bruge den nye navigationsgenerator til din app eller enten vælge dashboardet eller rapporten som landingsside. Du kan få flere oplysninger ved at se [Design navigationsoplevelsen](service-create-distribute-apps.md#design-the-navigation-experience).
 
    ![Angiv programlandingsside](media/service-template-apps-install-distribute/power-bi-install-app-content.png)
 
@@ -106,14 +106,31 @@ Når du har opdateret programmet til din organisation, er du klar til at udgive 
 
 6. Når det er udgivet, kan du kopiere linket og dele det med alle, du har givet adgang til. Når du har delt det med dem, kan de også se det på fanen **Min organisation** i AppSource.
 
-## <a name="next-steps"></a>Næste trin 
+## <a name="update-a-template-app"></a>Opdater en skabelonapp
+
+Forfattere af skabelonapps kan udgive nye versioner af deres skabelonapps via AppSource eller et direkte link. Når de gør det, kan du opdatere skabelonappen, når du installerer appen igen med den samme eller nyere version.
+
+  >[!NOTE]
+  >Hvis du installerer en ny version, overskrives alle de ændringer, du har foretaget af rapporterne og dashboardene. Hvis du vil beholde dine opdaterede rapporter og dashboards, kan du gemme dem med et andet navn eller en anden placering, før du installerer dem.
+
+- **Overskriv en eksisterende version:** Det eksisterende arbejdsområde overskrives med den opdaterede version af skabelonappen.
+
+   ![Opdater en skabelonapp](media/service-template-apps-install-distribute/power-bi-update-app-overwrite.png)
+
+- **Installér i et nyt arbejdsområde:** En ny version af arbejdsområdet og appen installeres, som du skal konfigurere igen
+
+### <a name="overwrite-behavior"></a>Funktionsmåden for overskrivning
+
+* I forbindelse med overskrivning opdateres rapporter, dashboards og datasæt i *arbejdsområdet* og ikke i appen. Navigation i, konfiguration af og tilladelser for appen ændres ikke i forbindelse med overskrivning.
+* Når du har opdateret arbejdsområdet, skal du *opdatere appen* for at anvende ændringer fra arbejdsområdet i organisationsappen.
+* Konfigurerede parametre og godkendelse bevares i forbindelse med overskrivning. Efter opdateringen startes en automatisk opdatering af datasættet. I løbet af denne periode vises oplevelsen med *eksempeldata* i organisationsappen, i rapporter og på dashboards.
+  ![Eksempeldata](media/service-template-apps-install-distribute/power-bi-sample-data.png)
+* I forbindelse med overskrivning vises eksempeldata altid, indtil opdateringen er fuldført. Hvis forfatteren af skabelonappen har foretaget ændringer af datasættet eller parametrene, kan brugerne af arbejdsområdet og appen fortsat se oplevelsen med *eksempeldata*.
+* *Nye* rapporter eller dashboards, du har føjet til arbejdsområdet, slettes aldrig i forbindelse med overskrivning. De oprindelige rapporter og dashboards overskrives med ændringer fra den oprindelige forfatter.
+
+>[!IMPORTANT]
+>Husk, at [opdatere appen](#customize-and-publish-the-app) efter overskrivning for at anvende ændringerne af rapporten og dashboardet for brugerne af din organisationsapp.
+
+## <a name="next-steps"></a>Næste trin
 
 [Opret arbejdsområder med dine kolleger i Power BI](service-create-workspaces.md)
-
-
-
-
-
-￼ 
-
- 

@@ -11,14 +11,16 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 4c28071917dbe5669e6e35bd416236ef7047eb24
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 1de5869bc5b422dc98a13316022f653f62675829
+ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408783"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71192653"
 ---
 # <a name="treemaps-in-power-bi"></a>Trækort i Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
 
 Træstrukturer viser hierarkiske data som et sæt af indlejrede rektangler. Hvert niveau i hierarkiet er repræsenteret af et farvet rektangel (gren), der indeholder mindre rektangler (blade). Power BI baserer størrelsen på pladsen inden i de enkelte rektangler på den målte værdi. Rektanglerne er arrangeret efter størrelse fra øverst til venstre (størst) til nederst til højre (mindst).
 
@@ -40,6 +42,11 @@ Du kan sammenligne antallet af varer, der er solgt på tværs af de andre tøjka
 
 Vil du gerne se en anden oprette en træstruktur først? Gå til 2:10 i denne video for at se Amanda oprette en træstruktur.
 
+   > [!NOTE]
+   > I denne video bruges en ældre version af Power BI Desktop.
+   > 
+   > 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IkJda4O7oGs" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="when-to-use-a-treemap"></a>Hvornår bruger man en træstruktur?
@@ -58,15 +65,18 @@ Træstrukturer er et godt valg:
 
 * til at identificere mønstre, udenforliggende værdier, de vigtigste bidragydere samt undtagelser.
 
-## <a name="prerequisites"></a>Forudsætninger
+## <a name="prerequisite"></a>Forudsætning
 
-* Power BI-tjenesten eller Power BI Desktop
+I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-* Rapporten Retail Analysis Sample
+1. Vælg **Fil** > **Åbn** i øverste venstre afsnit af menulinjen
+   
+2. Find din kopi af **PBIX-filen med eksemplet Detailhandelsanalyse**
 
-## <a name="get-the-retail-analysis-sample-report"></a>Hent rapporten Retail Analysis Sample
+1. Åbn **PBIX-filen med eksemplet Detailhandelsanalyse** i rapportvisning ![ikon for skærmbillede af rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
 
-I denne vejledning bruges Retail Analysis Sample (Eksempel på detailhandelsanalyse). Oprettelse af en visualisering kræver redigeringsrettigheder til datasættet og rapporten. Heldigvis kan alle Power BI-eksemplerne redigeres. Hvis en person deler en rapport med dig, kan du ikke oprette visualiseringer i rapporter. Hvis du vil følge med, skal du hente [rapporten Retail Analysis Sample](../sample-datasets.md).
+1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
+
 
 Når du har hentet datasættet for **Retail Analysis Sample**, kan du komme i gang.
 
@@ -74,25 +84,22 @@ Når du har hentet datasættet for **Retail Analysis Sample**, kan du komme i ga
 
 Du opretter en rapport og tilføjer en grundlæggende træstruktur.
 
-1. Vælg **Datasæt** > **Opret en rapport** fra **Mit arbejdsområde**.
-
-    ![Skærmbillede af Datasæt > Opret en rapport.](media/power-bi-visualization-treemaps/power-bi-create-a-report.png)
 
 1. I ruden **Felter** skal du vælge målingen **Sales** > **Last Year Sales**.
 
-   ![Skærmbillede, hvor Sales > Last Tear Sales er valgt, og af den visualisering, der oprettes.](media/power-bi-visualization-treemaps/treemapfirstvalue_new.png)
+   ![Skærmbillede, hvor Sales > Last Tear Sales er valgt, og af den visualisering, der oprettes.](media/power-bi-visualization-treemaps/treemapfirstvalue-new.png)
 
 1. Vælg ikonet for træstruktur ![Skærmbillede af ikonet for træstruktur](media/power-bi-visualization-treemaps/power-bi-treemap-icon.png) for at konvertere diagrammet til en træstruktur.
 
-   ![Skærmbillede af den ikke-konfigurerede træstruktur.](media/power-bi-visualization-treemaps/treemapconvertto_new.png)
+   ![Skærmbillede af den ikke-konfigurerede træstruktur.](media/power-bi-visualization-treemaps/treemapconvertto-new.png)
 
-1. Træk **Item** > **Category** til feltet **Group**.
+1. Vælg **Element** > **Kategori**, så føjes **Kategori** til brønden **Gruppe**.
 
     I Power BI oprettes en træstruktur, hvor størrelsen af rektanglerne er baseret på det samlede salg, og farven repræsenterer kategorien. Egentlig har du oprettet et hierarki, som visuelt beskriver den relative størrelse af det samlede salg efter kategori. Kategorien **Men's** har det højeste salg, og kategorien **Hosiery** har det laveste.
 
     ![Skærmbillede af den konfigurerede træstruktur.](media/power-bi-visualization-treemaps/power-bi-complete.png)
 
-1. Træk **Store** > **Chain** til feltet **Detaljer** for at fuldende din træstruktur. Nu kan du sammenligne sidste års salg efter kategori og kæde.
+1. Vælg **Butik** > **Kæde**, så føjes **Kæde** til brønden **Detaljer** for at færdiggøre din træstruktur. Nu kan du sammenligne sidste års salg efter kategori og kæde.
 
    ![Skærmbillede af træstrukturen, hvor Store > Chain er føjet til oplysningerne.](media/power-bi-visualization-treemaps/power-bi-details.png)
 
@@ -103,24 +110,19 @@ Du opretter en rapport og tilføjer en grundlæggende træstruktur.
 
     Når du f.eks. fører musen hen over **Fashions Direct** i rektanglet **090-Home**, vises værktøjstippet for Fashion Directs del af kategorien Home.
 
-   ![Skærmbillede af værktøjstippet Hjem, der vises.](media/power-bi-visualization-treemaps/treemaphoverdetail_new.png)
+   ![Skærmbillede af værktøjstippet Hjem, der vises.](media/power-bi-visualization-treemaps/treemaphoverdetail-new.png)
 
-1. Tilføj træstrukturen som et [dashboardfelt (fastgør din visualisering)](../service-dashboard-tiles.md).
-
-1. Gem [rapporten](../service-report-save.md).
 
 ## <a name="highlighting-and-cross-filtering"></a>Fremhævning og krydsfiltrering
 
-Du kan få mere at vide om brug af ruden **Filtre** under [Føj et filter til en rapport](../power-bi-report-add-filter.md).
+Hvis du fremhæver en **Kategori** eller **Detaljer** i en træstruktur, så krydsfremhæves og krydsfiltreres de andre visualiseringer på rapportsiden. For at følge med skal du enten tilføje nogle visualiseringer på denne rapportside eller kopiere træstrukturen til en af de andre sider i denne rapport. Det nedenstående billede, som træstrukturen blev kopieret til, på siden **Oversigt**. 
 
-Hvis du fremhæver **Kategori** eller **Detaljer** i en træstruktur, krydsfremhæves og krydsfiltreres de andre visualiseringer på rapportsiden og omvendt. For at følge med skal du enten tilføje nogle visualiseringer på denne rapportside eller kopiere træstrukturen til en af de andre sider i denne rapport.
+1. Vælg enten **Kategori** eller **Kæde** i en **Kategori** i træstrukturen. Derved krydsfremhæves de andre visualiseringer på siden. Hvis du f.eks. vælger **050-Shoes**, får du vist sidste års salg af sko, som var **$16,352,432**, hvor **Fashions Direct** stod for **$2,174,185** af dette salg.
 
-1. Vælg enten **Kategori** eller **Kæde** i en **Kategori** i træstrukturen. Derved krydsfremhæves de andre visualiseringer på siden. Hvis du f.eks. vælger **050 Shoes**, kan du se, at sidste års salg af sko var **3.640.471 USD**, hvoraf **2.174.185 USD** af dette salg kom fra **Fashions Direct**.
-
-   ![Skærmbillede af rapporten Store Sales Overview, der viser tværgående fremhævning.](media/power-bi-visualization-treemaps/treemaphiliting.png)
+   ![Skærmbillede af rapporten Store Sales Overview, der viser krydsfremhævning.](media/power-bi-visualization-treemaps/treemaphiliting.png)
 
 1. I cirkeldiagrammet **Sidste års salg efter kæde** krydsfiltreres træstrukturen, når du vælger udsnittet **Fashions Direct**.
-   ![GIF-demonstration af funktionen for tværgående filtrering.](media/power-bi-visualization-treemaps/treemapnoowl.gif)
+   ![GIF-demonstration af funktionen for krydsfiltrering.](media/power-bi-visualization-treemaps/treemapnoowl.gif)
 
 1. Hvis du vil administrere, hvordan diagrammer krydsfremhæver og krydsfiltrerer hinanden, skal du se [Skift, hvordan visualiseringer interagerer i en Power BI-rapport](../service-reports-visual-interactions.md).
 

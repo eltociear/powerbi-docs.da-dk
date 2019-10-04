@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 02a81aa47fb7945b2fd76d03a6bdde7712304bdc
-ms.sourcegitcommit: 7eb74b060de080152c190ac7eb6b64767f8d6626
+ms.openlocfilehash: fffb0479865439759167635efcae1799452c4c6f
+ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70919570"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71305723"
 ---
 # <a name="use-custom-format-strings-in-power-bi-desktop"></a>Brug brugerdefinerede formatstrenge i Power BI Desktop
 
@@ -148,13 +148,14 @@ I følgende tabel identificeres de tegn, du kan bruge til at oprette **brugerdef
 | (**E- E+ e- e+** ) | Videnskabeligt format. Hvis formatudtrykket indeholder mindst én cifferpladsholder (**0** eller **#** ) til højre for E-, E+, e- eller e+, vises tallet i videnskabeligt format, og E eller e indsættes mellem tallet og dets eksponent. Antallet af cifferpladsholdere til højre bestemmer antallet af cifre i eksponenten. Brug E- eller e- til at placere et minustegn ved siden af negative eksponenter. Brug E+ eller e+ til at placere et minustegn ved siden af negative eksponenter og et plustegn ved siden af positive eksponenter. |
 | **- + $** ( ) | Viser et bogstaveligt tegn. Hvis du vil have vist et tegn, som ikke er angivet, skal du foranstille det med en omvendt skråstreg (\) eller omslutte det med dobbelte citationstegn (&quot; &quot;). |
 | (* *\** ) | Viser det næste tegn i formatstrengen. Foranstil det med en omvendt skråstreg for at vise et tegn, der har en særlig betydning som et bogstaveligt tegn (\). Selve den omvendte skråstreg vises ikke. Brug af en omvendt skråstreg er det samme som at omslutte det næste tegn med dobbelte citationstegn. Hvis du vil have vist en omvendt skråstreg, skal du bruge to omvendte skråstreger (\\). Eksempler på tegn, der ikke kan vises som bogstavelige tegn er tegn til dato- og klokkeslætsformatering (a, c, d, h, m, n, p, q, s, t, w, y, / og :), numeriske formateringstegn (#, 0, %, E, e, komma og punktum) og tegn til strengformatering (@, &amp;, \&lt;, \&gt;, og !). |
-| (&quot;ABC&quot;) | Viser strengen inde i dobbelte citationstegn (&quot; &quot;). Hvis du vil inkludere en streng i **formatet** fra en kode, skal du bruge **Chr(34)** til at omslutte teksten (34 er tegnkoden for et citationstegn (&quot;)). |
+| (&quot;ABC&quot;) | Viser strengen inde i dobbelte citationstegn (&quot; &quot;). |
 
 
 ## <a name="next-steps"></a>Næste trin
 Du vil måske også være interesseret i følgende artikler:
 
 * [VBA-formatstrenge](https://docs.microsoft.com/office/vba/language/reference/user-interface-help/format-function-visual-basic-for-applications#example)
+* [Målinger i Power BI Desktop](desktop-measures.md)
+* [Datatyper i Power BI Desktop](desktop-data-types.md)
 * [Betinget formatering af tabeller](desktop-conditional-table-formatting.md)
-* [Titler baseret på udtryk i Power BI Desktop](desktop-conditional-format-visual-titles.md)
 

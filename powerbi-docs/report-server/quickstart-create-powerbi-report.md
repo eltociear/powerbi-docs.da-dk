@@ -7,14 +7,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 05/22/2019
+ms.date: 09/26/2019
 ms.author: maggies
-ms.openlocfilehash: 2401064f1f7f3be63c23d72e79987784e1ec7049
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ec1aab13955a4c34861a3f0d8dd39b6c77607696
+ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66187529"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71325654"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Opret en Power BI-rapport til Power BI-rapportserveren
 Du kan gemme og administrere Power BI-rapporter i det lokale miljø på Microsoft Power BI-rapportservers webportal, på samme måde som du kan gemme Power BI-rapporter i skyen i Power BI-tjenesten (https://powerbi.com). Du kan oprette og redigere rapporter i Power BI Desktop og publicere dem på webportalen. Derefter kan rapportlæsere i din organisation få dem vist i en browser eller i en Power BI-mobilapp på en mobilenhed.
@@ -31,7 +31,7 @@ Hvis du allerede har oprettet Power BI-rapporter i Power BI Desktop, er du næst
 
     ![Download Power BI Desktop fra webportalen](media/quickstart-create-powerbi-report/report-server-download-web-portal.png)
 
-    Gå direkte til [Microsoft Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=56723) (optimeret til Power BI Report Server – maj 2019) i Microsoft Download Center.
+    Eller gå til hjemmesiden for [Power BI-rapportserver](https://powerbi.microsoft.com/report-server/), og vælg **Avancerede indstillinger for download**.
 
 2. På siden Download Center skal du vælge **Download**.
 
@@ -41,13 +41,13 @@ Hvis du allerede har oprettet Power BI-rapporter i Power BI Desktop, er du næst
 
     - **PBIDesktopRS_x64.msi** (64-bit-version).
 
-4. Når du har downloadet installationsprogrammet, skal du køre installationsguiden til Power BI Desktop (maj 2019).
+4. Når du har downloadet installationsprogrammet, skal du køre installationsguiden til Power BI Desktop (september 2019).
 
 2. Til sidst i installationsprocessen skal du markere **Start Power BI Desktop nu**.
    
-    Programmet starter automatisk, og du er klar til at gå i gang. Du kan fortælle, at du har den rigtige version, der står "Power BI Desktop (maj 2019)" i titellinjen.
+    Programmet starter automatisk, og du er klar til at gå i gang. Du kan se, at du har den rigtige version, fordi der står **Power BI Desktop (september 2019)** på titellinjen.
 
-    ![Power BI Desktop version i maj 2019](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-may-2019.png)
+    ![Power BI Desktop – september 2019](media/quickstart-create-powerbi-report/power-bi-report-server-desktop-sept-2019.png)
 
 3. Hvis du ikke kender til Power BI Desktop, bør du overveje at se videoerne på velkomstskærmbilledet.
    
@@ -61,7 +61,7 @@ Du kan oprette forbindelse til en række forskellige datakilder. Læs mere om at
     Eller du kan vælge **Hent data** på fanen **Hjem**.
 2. Vælg din datakilde – i dette eksempel **Analysis Services**.
    
-    ![Vælg datakilde](media/quickstart-create-powerbi-report/report-server-get-data-ssas.png)
+    ![Vælg datakilde](media/quickstart-create-powerbi-report/power-bi-report-server-get-data-ssas.png)
 3. Udfyld **Server** og eventuelt **Database**. Sørg for, at **Opret liveforbindelse** er valgt > **OK**.
    
     ![Servernavn](media/quickstart-create-powerbi-report/report-server-ssas-server-name.png)
@@ -70,7 +70,7 @@ Du kan oprette forbindelse til en række forskellige datakilder. Læs mere om at
     ![Valg af rapportserver](media/quickstart-create-powerbi-report/report-server-select-server.png)
 
 ## <a name="step-3-design-your-report"></a>Trin 3: Design rapporten
-Det her er den sjove del: Du får lov at oprette visuals, som illustrerer dine data.
+Det her er den sjove del: Du får lov at oprette visualiseringer, som illustrerer dine data.
 
 Du kan f.eks. oprette et tragtformet diagram over kunder og gruppere værdier efter årsomsætning.
 
