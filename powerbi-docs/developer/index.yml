@@ -1,0 +1,93 @@
+### YamlMime:Landing
+title: Dokumention til Power BI til udviklere
+summary: Med Power BI-dokumentationen får du ekspertoplysninger og svar som løsning på problemerne, uanset hvordan du bruger Power BI.
+metadata:
+  title: Power BI til udviklere
+  description: Med Power BI-dokumentationen får du ekspertoplysninger og svar som løsning på problemerne, uanset hvordan du bruger Power BI.
+  services: powerbi
+  ms.service: powerbi
+  ms.subservice: powerbi-developer
+  ms.topic: landing-page
+  ms.collection: collection
+  author: maggiesMSFT
+  ms.author: maggies
+  ms.date: 10/02/2019
+  ms.openlocfilehash: 11e9bc6d2e848fcc1b827f52985c573cba382415
+  ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+  ms.translationtype: HT
+  ms.contentlocale: da-DK
+  ms.lasthandoff: 10/04/2019
+  ms.locfileid: "71951019"
+landingContent:
+- title: Om Power BI til udviklere
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Hvad kan udviklere bruge Power BI til?
+      url: what-can-you-do.md
+    - text: Visualiseringer i Power BI
+      url: ../power-bi-custom-visuals.md
+    - text: Hvad er integrering med Power BI?
+      url: embedding.md
+    - text: Hvad er Power BI-API?
+      url: overview-of-power-bi-rest-api.md
+  - linkListType: reference
+    links:
+    - text: Power BI Developer Center
+      url: https://powerbi.microsoft.com/developers/
+    - text: Eksempler på Power BI til udviklere
+      url: https://github.com/Microsoft/PowerBI-Developer-Samples
+    - text: Power BI JavaScript-wiki
+      url: https://github.com/Microsoft/powerbi-javascript/wiki
+    - text: REST-API'er til Power BI
+      url: https://docs.microsoft.com/rest/api/power-bi/
+    - text: REST API'er til Azure Resource Manager
+      url: https://docs.microsoft.com/rest/api/power-bi-embedded/
+- title: Power BI-visualiseringer
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Udvikl en Power BI-visualisering
+      url: custom-visual-develop-tutorial.md
+  - linkListType: concept
+    links:
+    - text: Ofte stillede spørgsmål om visualiseringer i Power BI
+      url: ../power-bi-custom-visuals-faq.md
+    - text: Retningslinjer for Power BI-visualiseringer
+      url: guidelines-powerbi-visuals.md
+    - text: Avanceret redigeringstilstand i visualiseringer
+      url: /advanced-edit-mode.md
+  - linkListType: how-to-guide
+    links:
+    - text: Få en visualisering certificeret
+      url: ../power-bi-custom-visuals-certified.md
+    - text: Publicer brugerdefinerede visuals i AppSource
+      url: office-store.md
+- title: Integreret analyse
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Integrer indhold til kunder
+      url: embed-sample-for-customers.md
+    - text: Integrer indhold til din organisation
+      url: embed-sample-for-your-organization.md
+  - linkListType: concept
+    links:
+    - text: Sikkerhed på rækkeniveau
+      url: embedded-row-level-security.md
+    - text: Administrer flere lejere
+      url: embed-multi-tenancy.md
+    - text: Integrerede ofte stillede spørgsmål
+      url: embedded-faq.md
+    - text: Power BI-tilladelser
+      url: power-bi-permissions.md
+  - linkListType: how-to-guide
+    links:
+    - text: Integrer fra apps
+      url: embed-from-apps.md
+    - text: Opret en Azure Active Directory-lejer
+      url: create-an-azure-active-directory-tenant.md
+    - text: Hent et Azure AD-adgangstoken
+      url: get-azuread-access-token.md
+    - text: Spørgsmål og svar i Power BI Embedded
+      url: qanda.md
