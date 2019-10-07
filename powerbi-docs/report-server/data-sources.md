@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/17/2018
 ms.author: maggies
-ms.openlocfilehash: edda72ab1c9c9901bf71b360d3773b5e8da0a095
-ms.sourcegitcommit: bbd9b38f30a4ca5cb8072496c9cacb635b03aa88
+ms.openlocfilehash: 9b7f3adfc7702dee36c43308b227baf72328935a
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71401831"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71945821"
 ---
 # <a name="power-bi-report-data-sources-in-power-bi-report-server"></a>Power BI-rapportdatakilder på Power BI-rapportserver
 Power BI-rapporter kan oprette forbindelse til en række datakilder. Der er adgang til forskellige datakilder, afhængigt af hvordan dataene bruges. Dataene kan importeres, eller der kan foretages forespørgsler om data direkte ved hjælp af DirectQuery eller en direkte forbindelse til SQL Server Analysis Services.
@@ -157,7 +157,7 @@ Power BI-rapportserver understøtter ikke OAuth-baseret godkendelse i forbindels
 | SharePoint Online-liste |Nej |Nej |Nej |Nej |
 | Snowflake |Nej |Nej |Nej |Nej |
 | Sybase-database |Nej |Nej |Ja |Ja |
-| Teradata-database |Nej |Nej |Ja |Ja |
+| Teradata |Nej |Nej |Ja |Ja |
 | appFigures (beta) |Nej |Nej |Nej |Nej |
 | Azure Analysis Services-database (beta) |Nej |Nej |Nej |Nej |
 | Azure Cosmos DB (beta) |Nej |Nej |Nej |Nej |
@@ -204,7 +204,7 @@ Power BI-rapportserver understøtter ikke OAuth-baseret godkendelse i forbindels
 | Oracle Database |Nej |Nej |Ja |Ja |Ja |
 | SAP Business Warehouse-server |Nej |Nej |Ja |Nej |Nej |
 | SAP HANA-database |Nej |Nej |Ja |Ja |Nej |
-| Teradata-database |Nej |Nej |Ja |Ja |Ja |
+| Teradata |Nej |Nej |Ja |Ja |Ja |
 
 
 ## <a name="next-steps"></a>Næste trin

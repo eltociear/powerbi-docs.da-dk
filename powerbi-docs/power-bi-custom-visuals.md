@@ -4,18 +4,18 @@ description: Brugerdefinerede visualiseringer i Power BI
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
-ms.reviewer: maghan
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fde213e29b5168ed990f297e5ace9895bfd44020
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: a782726e34bec4d6a5b8557c88178d469f7987b6
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195723"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71946191"
 ---
 # <a name="visuals-in-power-bi"></a>Visualiseringer i Power BI
 
@@ -153,7 +153,7 @@ Du har to muligheder for at downloade og importere Power BI-visualiseringer: fra
 
     Downloadsiden indeholder også instruktioner til, hvordan du importerer den brugerdefinerede visualisering i Power BI Desktop og Power BI-tjenesten.
 
-    Du kan også downloade et eksempel på en rapport, der indeholder den brugerdefinerede visualisering og viser dets egenskaber.
+    Du kan også downloade et eksempel på en rapport, der indeholder den brugerdefinerede visual og viser dets egenskaber.
 
     ![Eksempel](media/power-bi-custom-visuals/powerbi-custom-try-sample.png)
 

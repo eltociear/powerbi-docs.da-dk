@@ -4,17 +4,17 @@ description: I denne artikel beskrives nogle almindelige problemer, som kan opst
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
-ms.reviewer: maghan
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 11/06/2018
-ms.openlocfilehash: 4d863ff921df2a5cfb5233d85679f2277542bb44
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: e13d0fc5ee0af845cc0bf881cc5a1133ee24f719
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195367"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71946109"
 ---
 # <a name="troubleshoot-power-bi-power-bi-visuals"></a>Foretag fejlfinding af visualiseringer i Power BI
 
@@ -26,16 +26,16 @@ Når du kører `pbiviz` i terminalens kommandolinje, bør du få vist hjælpesk�
 
 **Hvis du ikke kan finde visualiseringen til fejlfinding på fanen Visualiseringer**
 
-Visualiseringen for fejlfinding ligner et prompt-ikon på fanen **Visualiseringer**.
+Visual for fejlfinding ligner et prompt-ikon på fanen **Visualiseringer**.
 
 ![Valg af visualisering](media/power-bi-custom-visuals-troubleshoot/powerbi-developer-visual-selection.png)
 
 Hvis du ikke kan se det, skal du sørge for, at det er aktiveret i Power BI-indstillingerne.
 
 > [!NOTE]
-> Visualiseringen for fejlfinding findes kun i Power BI-tjenesten og ikke i Power BI Desktop eller mobilappen. Den pakkede visualisering fungerer stadig overalt.
+> Visual for fejlfinding findes kun i Power BI-tjenesten og ikke i Power BI Desktop eller mobilappen. Det pakkede visual fungerer stadig overalt.
 
-**Det var ikke muligt at kontakte serveren med din visualisering**
+**Det var ikke muligt at kontakte serveren med dit visual**
 
 Kør visualiseringsserveren med kommandoen `pbiviz start` i terminalens kommandoline fra roden afvisualiseringsprojektet. Hvis serveren ikke kører, er det sandsynligt, at SSL-certifikaterne ikke er installeret korrekt.
 

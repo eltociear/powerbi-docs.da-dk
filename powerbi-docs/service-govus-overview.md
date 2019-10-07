@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: d491ca460d8393e9da308c826e69aad454d0e766
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 748594dcf9f71677057b8641e44f1408bebd1b89
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841620"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715337"
 ---
 # <a name="power-bi-for-us-government-customers"></a>Power BI til kunder i den amerikanske stat
 **Power BI-tjenesten** har en tilgængelig version for kunder i den amerikanske stat som en del af abonnementer for **Office 365 US Government Community**. Versionen af **Power BI-tjenesten**, der er beskrevet i denne artikel, er udviklet specielt til kunder i den amerikanske stat og er separat og adskiller sig fra den kommercielle version af **Power BI-tjenesten**.
@@ -103,7 +103,7 @@ Du kan gøre mange forskellige ting med Power BI. Yderligere oplysninger og lær
 
 * [Tilmeld dig Power BI for US Government](service-govus-signup.md)
 * <a href="https://channel9.msdn.com/Blogs/Azure/Cognitive-Services-HDInsight-and-Power-BI-on-Azure-Government">Demo om Power BI US Government</a>
-* [Automatiseret læring til Power BI](guided-learning/gettingstarted.yml?tutorial-step=1)
+* [Automatiseret læring til Power BI](guided-learning/index.md)
 * [Kom i gang med Power BI-tjenesten](service-get-started.md)
 * [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 

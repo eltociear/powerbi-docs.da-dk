@@ -4,18 +4,18 @@ description: Krav og proces til afsendelse af en brugerdefineret visualisering t
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
-ms.reviewer: maghan
+ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
-ms.openlocfilehash: d806a0ed35a6e8270a154708279faacefeb6e510
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 2203e3a9abddb52902c09fdc98665ba013f604ee
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195701"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71946227"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Få en Power BI-visualisering certificeret
 
@@ -44,7 +44,7 @@ Microsoft kan, efter eget skøn, fjerne en visualisering fra [listen over certif
 Hvis du vil have din brugerdefinerede visualisering [certificeret](#get-a-power-bi-visual-certified), skal du sørge for, at den er i overensstemmelse med følgende:  
 
 * Godkendt af Microsoft AppSource. Din brugerdefinerede visualisering skal findes på vores [Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals).
-* Brugerdefineret visualisering er skrevet med version **API v2.5** eller nyere.
+* Brugerdefineret visuelt element er skrevet med version **API v2.5** eller nyere.
 * Et kodelager er tilgængeligt til gennemsyn af Power BI-teamet (f.eks. kildekoden (JavaScript eller TypeScript) i formater, der kan læses af mennesker, og som er tilgængeligt via GitHub).
 
     >[!Note]
@@ -62,16 +62,16 @@ Hvis du vil have din brugerdefinerede visualisering [certificeret](#get-a-power-
    * **npm audit**-kommandoen må ikke returnere nogen advarsler med et højt eller moderat niveau.
    * **pbiviz package**-kommandoen må ikke returnere nogen fejl.
    * Skal indeholde [TSlint fra Microsoft](https://www.npmjs.com/package/tslint-microsoft-contrib) uden nogen tilsidesat konfiguration, og denne kommando må ikke returnere nogen lint-fejl.
-   * Den kompilerede pakke for den brugerdefinerede visualisering skal svare til den sendte pakke (md5-hashen for begge filer skal være ens).
+   * Den kompilerede pakke for det brugerdefinerede visuelle element skal svare til den sendte pakke (md5-hashen for begge filer skal være ens).
 * Kildekodekrav:
-   * Visualiseringen skal understøtte [Rendering Events-API'en](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
+   * Det visuelle element skal understøtte [Rendering Events-API'en](https://microsoft.github.io/PowerBI-visuals/docs/how-to-guide/rendering-events/).
    * Sørg for, at der ikke køres tilfældig/dynamisk kode (bad: eval(), unsafe to use of settimeout(), requestAnimationFrame(), setinterval(some function with user input), running user input/data).
    * Sørg for, at DOM manipuleres sikkert (bad: innerHTML, D3.html(<some user/data input>), brug rensning af brugerinput/-data, før det føjes til DOM'en.
-   * Sørg for, at der ikke er nogen javascript-fejl/-undtagelser i browserkonsollen for nogen inputdata. Brugerne kan bruge en visualisering med et andet interval af uventede data. Visualiseringen må derfor ikke mislykkes. Du kan bruge [denne eksempelrapport](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) som et testdatasæt.
+   * Sørg for, at der ikke er nogen javascript-fejl/-undtagelser i browserkonsollen for nogen inputdata. Brugerne kan bruge et visuelt element med et andet interval af uventede data. Det visuelle element må derfor ikke mislykkes. Du kan bruge [denne eksempelrapport](https://github.com/Microsoft/PowerBI-visuals/raw/gh-pages/assets/reports/large_data.pbix) som et testdatasæt.
 
 * Hvis nogle egenskaber i capabilities. JSON ændres, skal du sørge for, at de ikke ødelægger den eksisterende brugers rapporter.
 
-* Sørg for, at visualiseringen opfylder [retningslinjerne for visualiseringer i Power BI](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Vandmærker er ikke tilladt**.
+* Sørg for, at det visuelle element opfylder [retningslinjerne for visuelle elementer i Power BI](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Vandmærker er ikke tilladt**.
 
 * Anvender kun OSS-komponenter, der kan gennemses offentligt (Offentlige JS-biblioteker eller TypeScript. Kildekoden er tilgængelig til gennemsyn og har ikke kendte sikkerhedsrisici). Vi kan ikke bekræfte en brugerdefineret visualisering ved hjælp af en kommerciel komponent.
 
@@ -98,10 +98,10 @@ Sådan indsender du en brugerdefineret visualisering til certificering:
 | --- | --- |
 | [3AG Systems – liggende søjlediagram med relativ varians](https://appsource.microsoft.com/en/product/power-bi-visuals/WA104381912) | |
 | [3AG Systems – søjlediagram med relativ varians](https://appsource.microsoft.com/product/power-bi-visuals/WA104381803) | |
-| [Visualisering med avanceret kransediagram](https://appsource.microsoft.com/product/power-bi-visuals/WA104381941) | |
-| [Visualisering med avanceret netværk](https://appsource.microsoft.com/product/power-bi-visuals/WA104381942) | |
-| [Visualisering med avanceret tidsserie](https://appsource.microsoft.com/product/power-bi-visuals/WA104381943) | |
-| [Visualisering med avanceret kombinationsdiagram](https://appsource.microsoft.com/product/power-bi-visuals/WA104381944) | |
+| [Visuelt element med avanceret kransediagram](https://appsource.microsoft.com/product/power-bi-visuals/WA104381941) | |
+| [Visuelt element med avanceret netværk](https://appsource.microsoft.com/product/power-bi-visuals/WA104381942) | |
+| [Visuelt element med avanceret tidsserie](https://appsource.microsoft.com/product/power-bi-visuals/WA104381943) | |
+| [Visuelt element med avanceret kombinationsdiagram](https://appsource.microsoft.com/product/power-bi-visuals/WA104381944) | |
 | [Aster-diagram](https://appsource.microsoft.com/product/power-bi-visuals/WA104380759) | |
 | [Beyondsoft-kalender](https://appsource.microsoft.com/product/power-bi-visuals/WA104381096) | |
 | [Butterflydiagram fra MAQ Software](https://appsource.microsoft.com/product/power-bi-visuals/WA104380838) | [Video](https://youtu.be/So5xKMSpVJI) |

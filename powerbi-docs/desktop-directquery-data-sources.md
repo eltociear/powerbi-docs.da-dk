@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 09/04/2019
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 59c55d2e9322b0b7d76a35f4eec0863efe4959e0
-ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.openlocfilehash: 75b7a606e588ca7f6d1393c5b6e0dd9041f6d63e
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70302649"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71945215"
 ---
 # <a name="data-sources-supported-by-directquery-in-power-bi"></a>Understøttede datakilder i forbindelse med DirectQuery i Power BI
 
@@ -45,7 +45,7 @@ Følgende datakilder understøtter DirectQuery i Power BI:
 * Snowflake
 * Spark (version 0.9 og nyere)
 * SQL Server
-* Teradata-database
+* Teradata
 * Vertica
 
 Datakilder med **(beta)** eller **(prøveversion)** i navnet kan ændres og understøttes ikke til produktionsanvendelse. De understøttes desuden muligvis ikke efter publicering af en rapport til **Power BI-tjenesten**, hvilket betyder, at der kan opstå en fejl, når du åbner en publiceret rapport eller udforsker datasættet.
@@ -82,7 +82,7 @@ I følgende tabel kan du se, om der kræves en **datagateway i det lokale miljø
 | Spark (beta), version 0.9 og nyere |Ja |
 | SQL Server |Ja |
 | Sybase |Ja |
-| Teradata Database |Ja |
+| Teradata |Ja |
 | Vertica |Ja |
 
 

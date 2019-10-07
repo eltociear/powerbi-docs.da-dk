@@ -1,23 +1,23 @@
 ---
-title: Visualiseringer til organisationer i Power BI
-description: Brug, administrer og opret visualiseringer til organisationer i Power BI
+title: Visualiseringer til virksomheder i Power BI
+description: Brug, administrer og opret visualiseringer til virksomheder i Power BI
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
-ms.reviewer: maghan
+ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 12/11/2018
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 9992d1449b814938a5d0ff7370c0cb59a75534b5
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: b10a856a98c892b32e873bd01105c52777d2b413
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195440"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71946175"
 ---
-# <a name="organizational-visuals-in-power-bi"></a>Visualiseringer til organisationer i Power BI
+# <a name="organizational-visuals-in-power-bi"></a>Visualiseringer til virksomheder i Power BI
 
 Du kan bruge Power BI-visualiseringer i Power BI til at oprette en unik type visualiseringer, der er skræddersyet til dig. Power BI-visualiseringer oprettes af udviklere, og de oprettes ofte, når mængden af visualiseringer, der er inkluderet i Power BI, ikke opfylder deres behov.
 
@@ -27,16 +27,16 @@ På følgende billede vises processen for, hvordan Power BI-visualiseringer til 
 
 ![Custom visual pic](media/power-bi-custom-visuals-organizational/custom-visual-org-01.jpg)
 
-Visualiseringer til organisationer udrulles og administreres af Power BI-administratoren via Administrationsportalen. Når visualiseringerne er udrullet i organisationens lager, kan brugerne nemt finde dem og importere Power BI-visualiseringer til organisationer i deres rapporter direkte fra Power BI Desktop.
+Visualiseringer til virksomheder udrulles og administreres af Power BI-administratoren via Administrationsportalen. Når visualiseringerne er udrullet i organisationens lager, kan brugerne nemt finde dem og importere Power BI-visualiseringer til organisationer i deres rapporter direkte fra Power BI Desktop.
 
-I følgende artikel kan du få mere at vide om, hvordan du bruger Power BI-visualiseringer til organisationer i de rapporter, du har oprettet: [Få mere at vide om import af visualiseringer til organisationer i dine rapporter](power-bi-custom-visuals.md).
+I følgende artikel kan du få mere at vide om, hvordan du bruger Power BI-visualiseringer til organisationer i de rapporter, du har oprettet: [Få mere at vide om import af visualiseringer til virksomheder i dine rapporter](power-bi-custom-visuals.md).
 
 ## <a name="administer-organizational-power-bi-visuals"></a>Administrer Power BI-visualisering til organisationer
 
 I følgende artikel kan du få mere at vide om, hvordan du administrerer, udruller og håndterer Power BI-visualiseringer til organisationer i din organisation: [Få mere at vide om udrulning og administration af Power BI-visualiseringer til organisationer](https://go.microsoft.com/fwlink/?linkid=866790).
 
 > [!WARNING]
-> En brugerdefineret visualisering kan indeholde kode, der kan udgøre en risiko for sikkerheden eller beskyttelse af personlige oplysninger. Sørg for, at du har tillid til forfatteren af og kilden til en brugerdefineret visualisering, før du udruller den i organisationens lager.
+> En brugerdefineret visualisering kan indeholde kode, der kan udgøre en risiko for sikkerheden eller beskyttelse af personlige oplysninger. Sørg for, at du har tillid til forfatteren af og kilden til en brugerdefineret visualisering, før du udruller den i virksomhedens lager.
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
@@ -50,7 +50,7 @@ Administrator:
 
 Slutbruger:
 
-* Power BI-visualiseringer er private visualiseringer, der er importeret fra organisationens lager. På samme måde som andre private visualiseringer kan de ikke [eksporteres til PowerPoint](https://docs.microsoft.com/power-bi/consumer/end-user-powerpoint) eller vises i mails, der modtages, når en bruger [abonnerer på rapportsider](https://docs.microsoft.com/power-bi/consumer/end-user-subscribe). Det er kun [certificerede Power BI-visualiseringer](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified), der er importeret direkte fra markedspladsen, som understøtter disse funktioner.
+* Power BI-visualiseringer er private visualiseringer, der er importeret fra organisationens lager. På samme måde som andre private visuals kan de ikke [eksporteres til PowerPoint](https://docs.microsoft.com/power-bi/consumer/end-user-powerpoint) eller vises i mails, der modtages, når en bruger [abonnerer på rapportsider](https://docs.microsoft.com/power-bi/consumer/end-user-subscribe). Det er kun [certificerede Power BI-visualiseringer](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified), der er importeret direkte fra markedspladsen, som understøtter disse funktioner.
 
 * Visio-visualiseringen, PowerApps-visualiseringen, Mapbox-visualiseringen og GlobeMap-visualiseringen fra AppSource-markedspladsen gengives ikke, hvis de udrulles via organisationens lager.
 

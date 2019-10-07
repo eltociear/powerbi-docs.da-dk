@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: 61fc821e63889951aefd0ef815f885ffa8a880cf
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 2c17378c14ef084ad6632e52df2a801832b311d9
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994814"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715193"
 ---
 # <a name="download-a-report-from-the-power-bi-service-to-power-bi-desktop-preview"></a>Download en rapport fra Power BI-tjenesten til Power BI Desktop (prøveversion)
 I Power BI Desktop kan du publicere en rapport (en *.pbix*-fil) fra din lokale computer til Power BI-tjenesten. Power BI-rapporter kan også gå i den modsatte retning: Du kan downloade en rapport fra Power BI-tjenesten til Power BI Desktop. Filtypenavnet for en Power BI-rapport er i begge tilfælde .pbix.
@@ -26,7 +26,7 @@ Der er et par begrænsninger og overvejelser, du skal være opmærksom på, som 
 
 ## <a name="download-the-report-as-a-pbix-file"></a>Download rapporten som en .pbix-fil
 
-Du kan kun downloade rapporter, [der er oprettet med Power BI Desktop](guided-learning/publishingandsharing.yml?tutorial-step=2) efter den 23. november 2016 og opdateret siden da. Hvis den var oprettet før da, er menuindstillingen **Download rapport** nedtonet i Power BI-tjenesten.
+Du kan kun downloade rapporter, [der er oprettet med Power BI Desktop](/learn/modules/publish-share-power-bi/2-publish-reports) efter den 23. november 2016 og opdateret siden da. Hvis den var oprettet før da, er menuindstillingen **Download rapport** nedtonet i Power BI-tjenesten.
 
 Følg disse trin for at downloade .pbix-filen:
 

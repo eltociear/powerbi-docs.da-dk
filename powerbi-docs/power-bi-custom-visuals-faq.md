@@ -4,18 +4,18 @@ description: Gennemse en liste med ofte stillede spørgsmål og svar om Power BI
 author: KesemSharabi
 ms.author: kesharab
 manager: rkarlin
-ms.reviewer: maghan
+ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.custom: ''
 ms.date: 12/17/2018
-ms.openlocfilehash: 5c4c13d021891ad591b2411a1f0b3219b750478d
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: e7374ce6188792b4f4c1c5be2dd40d7694045159
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195446"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71946145"
 ---
 # <a name="frequently-asked-questions-about-power-bi-visuals"></a>Ofte stillede spørgsmål om Power BI-visualiseringer
 
@@ -26,7 +26,7 @@ På administrationsportalen kan du administrere en Power BI-visualisering for di
 ### <a name="how-can-the-admin-manage-the-organizational-power-bi-visuals"></a>Hvordan kan administratoren administrere Power BI-visualiseringer til organisationer?
 
 På Administrationsportalen under fanen "Visualiseringer til organisationer" kan administratoren se og [administrere alle Power BI-visualiseringerne til organisationer i virksomheden](service-admin-portal.md#organizational-visuals): tilføje, deaktivere, aktivere og slette.
-Der er ikke længere grund til at dele disse visualiseringer via mail eller en delt mappe. Når visualiseringerne er udrullet i organisationens lager, kan brugerne nemt finde dem og importere visualiseringerne til organisationer i deres rapporter direkte fra Power BI Desktop eller Power BI-tjenesten. Du kan finde visualiseringerne til organisationer i det indbyggede lager (i Desktop og tjenesten) under fanen *MIN ORGANISATION*. Når administratoren overfører en ny version af en brugerdefineret visualisering til organisationer, får alle i organisationen den samme opdaterede version. Forfattere af rapporter behøver ikke at slette visualiseringen i deres rapporter for at få den nye version af disse visualiseringer, da alle rapporter, der bruger disse visualiseringer, opdateres automatisk. Opdateringsmekanismen svarer til visualiseringer på markedspladser.
+Der er ikke længere grund til at dele disse visualiseringer via mail eller en delt mappe. Når visualiseringerne er udrullet i organisationens lager, kan brugerne nemt finde dem og importere visualiseringerne til organisationer i deres rapporter direkte fra Power BI Desktop eller Power BI-tjenesten. Du kan finde visualiseringerne til organisationer i det indbyggede lager (i Desktop og tjenesten) under fanen *MIN ORGANISATION*. Når administratoren overfører en ny version af en brugerdefineret visual til virksomheden, får alle i organisationen den samme opdaterede version. Forfattere af rapporter behøver ikke at slette visualiseringen i deres rapporter for at få den nye version af disse visualiseringer, da alle rapporter, der bruger disse visualiseringer, opdateres automatisk. Opdateringsmekanismen svarer til visuals på markedspladser.
 
 ### <a name="if-an-admin-uploads-a-custom-visual-from-the-public-marketplace-to-the-organization-store-is-it-automatically-updated-once-a-vendor-updates-the-visual-in-the-public-marketplace"></a>Hvis en administrator uploader en brugerdefineret visualisering fra den offentlige markedsplads til virksomhedslageret, opdateres den så automatisk, når en leverandør opdaterer visualiseringen på den offentlige markedsplads?
 
@@ -43,7 +43,7 @@ Ja, det har ingen indflydelse på organisationslageret, at administratoren deakt
 
 ### <a name="why-does-the-organizational-store-and-organizational-visuals-make-a-great-enterprise-solution"></a>Hvorfor er organisationslageret og visualiseringer til organisationer en fantastisk virksomhedsløsning?
 
-* Alle får den samme version af visualiseringer, der styres af Power BI-administratoren. Når administratoren opdaterer versionen af visualiseringer på administrationsportalen, får alle brugere i organisationen automatisk den opdaterede version.
+* Alle får den samme version af visuals, der styres af Power BI-administratoren. Når administratoren opdaterer versionen af visuals på administrationsportalen, får alle brugere i virksomheden automatisk den opdaterede version.
 
 * Der er ikke længere grund til at dele visualfiler via mail eller delte mapper! Ét sted, som er synligt for alle medlemmer, der er logget på.
 
@@ -53,7 +53,7 @@ Ja, det har ingen indflydelse på organisationslageret, at administratoren deakt
 
 * Administratorer kan styre, hvilke Power BI-visualiseringer der skal være tilgængelige i organisationen.
 
-* Administratorer kan aktivere/deaktivere visualiseringer til test fra administrationsportalen. Bedre håndhævelse af sikkerhed, da disse visualiseringer kun bliver tilladt for medlemmer af organisationen.
+* Administratorer kan aktivere/deaktivere visuals til test fra administrationsportalen. Bedre håndhævelse af sikkerhed, da disse visuals kun bliver tilladt for medlemmer af organisationen.
 
 ## <a name="certified-power-bi-visuals"></a>Certificerede Power BI-visualiseringer
 
