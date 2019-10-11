@@ -1,22 +1,21 @@
 ---
-title: Power BI til rapportforbrugere
-description: Skal du i gang med Power BI? Lær funktionerne og egenskaberne i Power BI at kende, og se, hvad du kan bruge dem til som forbruger eller slutbruger af Power BI.
+title: Power BI til forbrugere
+description: Skal du i gang med Power BI? Lær funktionerne og egenskaberne for Power BI-tjenesten at kende, og se, hvad du kan bruge dem til som forbruger eller slutbruger af Power BI.
 author: mihart
 manager: kvivek
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: hub-page
-ms.date: 09/11/2019
+ms.date: 10/01/2019
 ms.author: mihart
 layout: HubPage
-ms.custom: seodec18
 LocalizationGroup: Get started
-ms.openlocfilehash: d43d1072c9eafa71d336f71e22ac2d6d68144558
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: ec123c29bc6cf942c096ffb78b8bfab10be3bc14
+ms.sourcegitcommit: e371690159f69a72410abc97ff1c2a2bb9c841f5
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073389"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71829624"
 ---
 <div id="main" class="v2">
       <div class="container">
@@ -105,7 +104,8 @@ ms.locfileid: "71073389"
                                                 <p><a href="/power-bi/consumer/end-user-experience" data-linktype="absolute-path">Navigation – find det ønskede indhold hurtigt</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-q-and-a" data-linktype="absolute-path">Spørgsmål &amp; svar – stil spørgsmål på et naturligt sprog</a></p>
                                                 <p><a href="/power-bi/consumer/end-user-report-filter" data-linktype="absolute-path">Interager med filtre og udsnit</a></p>
-                                                <p><a href="/power-bi/consumer/end-user-visual-type" data-linktype="absolute-path">Få mere at vide om typerne af visualiseringer, du kan se i Power BI</a></p>
+                                                <p><a href="/power-bi/consumer/end-user-visual-type" data-linktype="absolute-path">Få mere at vide om typerne af visualiseringer</a></p>
+                                                <p><a href="/power-bi/consumer/end-user-app-marketing" data-linktype="absolute-path">Download et eksempel på en app</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -152,10 +152,10 @@ ms.locfileid: "71073389"
                 </ul>
             </li>
             <li>
-                <a href="#concepts-terminology" data-linktype="self-bookmark"> Koncepter &amp; terminologi</a>
+                <a href="#concepts-terminology" data-linktype="self-bookmark"> Koncepter &amp; begreber</a>
                 <ul id="concepts-terminology">
                     <li>
-                        <a href="#conceptsterminology" data-linktype="self-bookmark"> Koncepter &amp; terminologi</a>
+                        <a href="#conceptsterminology" data-linktype="self-bookmark"> Koncepter &amp; begreber</a>
                         <ul id="conceptsterminology" class="cardsC">
                             <br>
                             <li>

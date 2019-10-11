@@ -7,21 +7,23 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/25/2019
+ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: dcc273dd6bf356d9149086b38b9126e721fe63a2
-ms.sourcegitcommit: 390dc3716d5c83385bedde63dd152431a77020e2
+ms.openlocfilehash: da7652556bc11e47cf238dd969ae1b27e6387299
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68380261"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968785"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Føj et filter til en rapport i Power BI
 
+[!INCLUDE [power-bi-service-new-look-include](includes/power-bi-service-new-look-include.md)]
+
 I denne artikel forklares det, hvordan du føjer et sidefilter, visualiseringsfilter, rapportfilter eller detaljeadgangsfilter til en rapport i Power BI. Eksemplerne i denne artikel er i Power BI-tjenesten. Trinnene er stort set de samme i Power BI Desktop.
 
-**Vidste du det?** Power BI indeholder en ny filtreringsoplevelse, der i øjeblikket findes som en prøveversion. Læs mere om [den nye filtreringsoplevelse i Power BI-rapporter](power-bi-report-filter.md).
+**Vidste du det?** Power BI indeholder en ny filtreringsoplevelse. Læs mere om [den nye filtreringsoplevelse i Power BI-rapporter](power-bi-report-filter.md).
 
 ![Ny filteroplevelse](media/power-bi-report-add-filter/power-bi-filter-reading.png)
 
@@ -37,7 +39,7 @@ Da filtre *bevares*, når du navigerer væk fra rapporten, bevarer Power BI de �
 ![knappen faste filtre](media/power-bi-report-add-filter/power-bi-reset-to-default.png)
 
 ## <a name="levels-of-filters-in-the-filters-pane"></a>Forskellige filterniveauer i ruden Filtre
-Uanset om du bruger Desktop-versionen eller Power BI-tjenesten, vises ruden Filtre i højre side af rapportlærredet. Hvis ruden Filtre ikke er vist, skal du vælge ikonet ">"øverst til højre for at udvide den.
+Uanset om du bruger Desktop-versionen eller Power BI-tjenesten, vises ruden Filtre i højre side af rapportcanvasset. Hvis ruden Filtre ikke er vist, skal du vælge ikonet ">"øverst til højre for at udvide den.
 
 Du kan angive filtre på tre forskellige niveauer for rapporten: filtre på visualiseringsniveau, sideniveau og rapportniveau. Du kan også angive detaljeadgangsfiltre. I denne artikel beskrives de forskellige niveauer.
 
@@ -157,7 +159,7 @@ Lad os se, hvordan filteret til detaljeadgang fungerer.
 3. Vælg i ruden Felter det felt, du vil tilføje som et nyt filter på rapporteringsniveau, og træk det til området **Filtre på rapporteringsniveau**.  
 4. Vælg de værdier, du vil filtrere.
 
-    Visualiseringerne på den aktive side og på alle sider i rapporten ændres for at afspejle det nye filter. Hvis du gemmer din rapport med filteret, kan rapportlæsere interagere med filteret i læsevisning og markere eller fjerne markering af værdier.
+    De visuelle elementer på den aktive side og på alle sider i rapporten ændres for at afspejle det nye filter. Hvis du gemmer din rapport med filteret, kan rapportlæsere interagere med filteret i læsevisning og markere eller fjerne markering af værdier.
 
 1. Vælg tilbage-pilen for at vende tilbage til den forrige rapportside.
 

@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 08/21/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 2d2eb51c5aad44572f1b427248fd85ef19a6306f
-ms.sourcegitcommit: e62889690073626d92cc73ff5ae26c71011e012e
+ms.openlocfilehash: a05924fc093c1514f51c3fabac3162433e2188f7
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69985690"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968920"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurer arbejdsbelastninger i en Premium-kapacitet
 
@@ -59,18 +59,59 @@ AI-arbejdsbelastningen gør det muligt for dig at bruge kognitive tjenester og a
 
 ### <a name="datasets"></a>Datasæt
 
-Arbejdsbelastningen for datasæt er som standard aktiveret og kan ikke deaktiveres. Brug følgende indstillinger til at styre funktionsmåden for arbejdsbelastninger.
+Arbejdsbelastningen for datasæt er som standard aktiveret og kan ikke deaktiveres. Brug følgende indstillinger til at styre funktionsmåden for arbejdsbelastninger. Der er flere brugsoplysninger under tabellen for nogle af indstillingerne.
 
 | Navn på indstilling | Beskrivelse |
 |---------------------------------|----------------------------------------|
 | **Maks. hukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse, som datasæt kan bruge i en kapacitet. |
 | **XMLA-slutpunkt** | Angiver, at forbindelser fra klientprogrammer overholder det medlemskab af sikkerhedsgrupper, der er angivet for arbejdsområdet og appniveauerne. Du kan få mere at vide i [Opret forbindelse til datasæt med klientprogrammer og -værktøjer](service-premium-connect-tools.md). |
-| **Maks. antal mellemliggende rækker** | Det maksimale antal mellemliggende rækker, der blev returneret af DirectQuery. Standardværdien er 1000000, og det tilladte interval er mellem 100000 og 2147483647. Brug denne indstilling til at styre effekten af ressourcetunge eller dårligt designede rapporter. |
-| **Maksimal størrelse på offlinedatasæt (GB)** | Den maksimale størrelse på offlinedatasæt i hukommelsen. Dette er den komprimerede størrelse på disken. Standardværdien er angivet af SKU, og det tilladte interval er mellem 0,1 og 10 GB. Brug denne indstilling for at undgå, at forfattere af rapporter publicerer et stort datasæt, der kan have negativ indvirkning på kapaciteten. |
-| **Maks. antal resulterende rækker** | Det maksimale antal rækker, der returneres i en DAX-forespørgsel. Standardværdien er -1 (ingen grænse), og det tilladte interval er mellem 100000 og 2147483647. Brug denne indstilling til at styre effekten af ressourcetunge eller dårligt designede rapporter. |
-| **Grænse for forespørgselshukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse, der kan bruges til midlertidige resultater i en forespørgsels-eller DAX-måling. Brug denne indstilling til at styre effekten af ressourcetunge eller dårligt designede rapporter. |
-| **Timeout for forespørgsel (sekunder)** | Det maksimale tidsrum, før en forespørgsel udløber. Standarden er 3600 sekunder (1 time). Værdien 0 angiver, at der ikke opstår timeout for forespørgsler. Brug denne indstilling for bedre at bevare kontrollen over forespørgsler, der kører i lang tid. |
+| **Maks. antal mellemliggende rækker** | Det maksimale antal mellemliggende rækker, der blev returneret af DirectQuery. Standardværdien er 1000000, og det tilladte interval er mellem 100000 og 2147483647. |
+| **Maksimal størrelse på offlinedatasæt (GB)** | Den maksimale størrelse på offlinedatasæt i hukommelsen. Dette er den komprimerede størrelse på disken. Standardværdien er angivet af SKU, og det tilladte interval er mellem 0,1 og 10 GB. |
+| **Maks. antal resulterende rækker** | Det maksimale antal rækker, der returneres i en DAX-forespørgsel. Standardværdien er -1 (ingen grænse), og det tilladte interval er mellem 100000 og 2147483647. |
+| **Grænse for forespørgselshukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse, der kan bruges til midlertidige resultater i en forespørgsels-eller DAX-måling. |
+| **Timeout for forespørgsel (sekunder)** | Det maksimale tidsrum, før en forespørgsel udløber. Standarden er 3600 sekunder (1 time). Værdien 0 angiver, at der ikke opstår timeout for forespørgsler. |
 |  |  |  |
+
+#### <a name="max-intermediate-row-set-count"></a>Maks. antal mellemliggende rækker
+
+Brug denne indstilling til at styre effekten af ressourcetunge eller dårligt designede rapporter. Når en forespørgsel til et DirectQuery-datasæt resulterer i et omfattende resultat fra kildedatabasen, kan det medføre en stigning i hukommelsesforbrug og behandlingsomkostningerne. Denne situation kan føre til, at andre brugere og rapporter løber tør for ressourcer. Denne indstilling gør det muligt for kapacitetsadministratoren at justere, hvor mange rækker en individuel forespørgsel kan hente fra datakilden.
+
+Hvis kapaciteten understøtter mere end standarden på 1.000.000 rækker, og du har et stort datasæt, kan du også øge denne indstilling for at hente flere rækker.
+
+Bemærk, at denne indstilling kun påvirker DirectQuery-forespørgsler, mens [Maks. antal resulterende rækker](#max-result-row-set-count) påvirker DAX-forespørgsler.
+
+#### <a name="max-offline-dataset-size"></a>Maksimal størrelse på offlinedatasæt
+
+Brug denne indstilling for at undgå, at forfattere af rapporter publicerer et stort datasæt, der kan have negativ indvirkning på kapaciteten. Bemærk, at Power BI ikke kan bestemme den faktiske størrelse i hukommelsen, før datasættet indlæses i hukommelsen. Det er muligt, at et datasæt med en lille offlinestørrelse kan have et større hukommelsesforbrug end et datasæt med en stor offlinestørrelse.
+
+Hvis du har et eksisterende datasæt, der er større end den størrelse, du angiver for denne indstilling, kan datasættet ikke indlæses, når en bruger forsøger at få adgang til det.
+
+#### <a name="max-result-row-set-count"></a>Maks. antal resulterende rækker
+
+Brug denne indstilling til at styre effekten af ressourcetunge eller dårligt designede rapporter. Hvis denne grænse nås i en DAX-forespørgsel, får rapportbrugeren vist følgende fejl. De bør kopiere oplysninger om fejlen og kontakte en administrator.
+
+![Dataene til denne visualisering kunne ikke indlæses](media/service-admin-premium-workloads/could-not-load-data.png)
+
+Bemærk, at denne indstilling kun påvirker DAX-forespørgsler, mens [Maks. antal mellemliggende rækker](#max-intermediate-row-set-count) påvirker DirectQuery-forespørgsler.
+
+#### <a name="query-memory-limit"></a>Grænse for forespørgselshukommelse
+
+Brug denne indstilling til at styre effekten af ressourcetunge eller dårligt designede rapporter. Nogle forespørgsler og beregninger kan resultere i mellemliggende resultater, der bruger meget hukommelse i kapaciteten. Denne situation kan medføre, at andre forespørgsler kører meget langsomt, at andre datasæt fjernes fra kapaciteten, og der opstår fejl i forbindelse med manglende hukommelse for andre brugere af kapaciteten.
+
+Denne indstilling gælder for dataopdatering og rapportgengivelse. Dataopdatering udfører både opdatering af data fra datakilden og opdatering af forespørgsler, medmindre opdatering af forespørgsler er deaktiveret. Hvis opdatering af forespørgsler ikke er deaktiveret, gælder denne hukommelsesgrænse også for disse forespørgsler. Alle forespørgsler, der mislykkes, medfører, at den planlagte opdateringstilstand rapporteres som en fejl, selvom dataopdateringen lykkedes.
+
+#### <a name="query-timeout"></a>Timeout for forespørgsel
+
+Du kan bruge denne indstilling til at sikre bedre kontrol over forespørgsler, der kører i lang tid, hvilket kan få rapporter til at blive indlæst langsomt for brugerne. Denne indstilling gælder for dataopdatering og rapportgengivelse. Dataopdatering udfører både opdatering af data fra datakilden og opdatering af forespørgsler, medmindre opdatering af forespørgsler er deaktiveret. Hvis opdatering af forespørgsler ikke er deaktiveret, gælder denne timeoutgrænse også for disse forespørgsler.
+
+Denne indstilling gælder for en enkelt forespørgsel og ikke den tid, det tager at køre alle de forespørgsler, der er knyttet til opdatering af et datasæt eller en rapport. Se følgende eksempel:
+
+- Indstillingen **Timeout for forespørgsel** er 1200 (20 minutter).
+- Der er fem forespørgsler, der skal udføres, og hvert forespørgsel kører i 15 minutter.
+
+Den samlede tid for alle forespørgsler er 75 minutter, men indstillingsgrænsen nås ikke, fordi alle de individuelle forespørgsler kører i mindre end 20 minutter.
+
+Vær opmærksom på, at Power BI-rapporter tilsidesætter denne standard med en meget kortere timeout for hver forespørgsel til kapaciteten. Timeouten for hver forespørgsel er typisk ca. tre minutter.
 
 ### <a name="dataflows"></a>Dataflow
 

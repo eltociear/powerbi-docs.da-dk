@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/19/2019
-ms.openlocfilehash: f055cd27f25af399b63336e66aaad526ed740de2
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: f0cc7563fc59a6c1ceeceefcf4b65b0cc1a3aa80
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462322"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968662"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Understøttede datakilder for sideinddelte rapporter i Power BI
 
@@ -27,6 +27,7 @@ Følgende liste over datakilder understøttes i det oprindelige miljø i sideind
 | Datakilde | Godkendelse | Noter |
 | --- | --- | --- |
 | Azure SQL Database <br>Azure SQL Data Warehouse | Basic, enkeltlogon (SSO), OAuth2 |   |
+| Administreret forekomst af Azure SQL | Basic | via det offentlige slutpunkt ved hjælp af Azure SQL Database-udvidelsen  |
 | Azure Analysis Services | SSO, OAuth2 |   |
 | Power BI-datasæt | SSO | Power BI Premium-datasæt og datasæt, der ikke er Premium |
 | Power BI Premium-datasæt (XMLA) | SSO |   |

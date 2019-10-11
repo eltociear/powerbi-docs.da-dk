@@ -10,12 +10,12 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 4991117cfa8b34d9adbbd2dc29082d1e75b6852d
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: a99aad87763edce54996f0a485fde5498fb1df11
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100395"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968601"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Oversigt over enkeltlogon (SSO) til gateways i Power BI
 
@@ -30,6 +30,8 @@ Vi understøtter i øjeblikket følgende datakilder:
 * Spark ([Kerberos](service-gateway-sso-kerberos.md))
 * Impala ([Kerberos](service-gateway-sso-kerberos.md))
 
+Vi understøtter i øjeblikket ikke SSO til [M-udvidelser](https://github.com/microsoft/DataConnectors/blob/master/docs/m-extensions.md).
+
 Når en bruger kommunikerer med en DirectQuery-rapport i Power BI-tjenesten, kan hvert krydsfilter, udsnit, sortering og rapportredigering resultere i forespørgsler, der udføres direkte mod den underliggende datakilde i det lokale miljø. Når SSO er konfigureret for datakilden, udføres forespørgsler i henhold til id'et for den bruger, som interagerer med Power BI (dvs. via weboplevelsen eller Power BI-mobilapps). På den måde får hver bruger præcist de data, som de har tilladelser til i den underliggende datakilde – med enkeltlogon konfigureret er der ingen cachelagring af delte data på tværs af flere brugere.
 
 ## <a name="query-steps-when-running-sso"></a>Forespørgselstrin under kørsel af SSO
@@ -40,13 +42,13 @@ En forespørgsel, der køres med SSO, består af tre trin som vist i følgende d
 
 Der følger flere oplysninger om disse trin:
 
-1. For hver forespørgsel vil **Power BI-tjenesten** medtage *brugerens hovednavn* (UPN), når der sendes en forespørgsel til den konfigurerede gateway.
+1. For hver forespørgsel inkluderer **Power BI-tjenesten** *brugerens hovednavn* (UPN, dvs. det fuldt kvalificerede brugernavn for den bruger, der i øjeblikket er logget på Power BI-tjenesten), når der sendes en anmodning til den konfigurerede gateway.
 
 2. Gatewayen skal tilknytte Azure Active Directory-UPN'et til et lokalt Active Directory-id.
 
    a.  Hvis Azure AD DirSync (også kendt som *Azure AD Connect*) er konfigureret, fungerer tilknytningen automatisk i gatewayen.
 
-   b.  Ellers kan gatewayen søge efter og knytte Azure AD-UPN til en lokal bruger ved at foretage opslag mod det lokale Active Directory-domæne.
+   b.  Ellers kan gatewayen søge efter og knytte Azure AD-UPN'et til en lokal AD-bruger ved at foretage opslag mod det lokale Active Directory-domæne.
 
 3. Processen til gatewaytjenesten repræsenterer den tilknyttede lokale bruger, åbner forbindelsen til den underliggende database og sender forespørgslen. Gatewayen behøver ikke at være installeret på samme computer som databasen.
 

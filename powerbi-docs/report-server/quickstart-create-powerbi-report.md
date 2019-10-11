@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: maggies
-ms.openlocfilehash: ec1aab13955a4c34861a3f0d8dd39b6c77607696
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: f3a52e14271827a043f05d6b170e79718306aa99
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71325654"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715262"
 ---
 # <a name="create-a-power-bi-report-for-power-bi-report-server"></a>Opret en Power BI-rapport til Power BI-rapportserveren
 Du kan gemme og administrere Power BI-rapporter i det lokale miljø på Microsoft Power BI-rapportservers webportal, på samme måde som du kan gemme Power BI-rapporter i skyen i Power BI-tjenesten (https://powerbi.com). Du kan oprette og redigere rapporter i Power BI Desktop og publicere dem på webportalen. Derefter kan rapportlæsere i din organisation få dem vist i en browser eller i en Power BI-mobilapp på en mobilenhed.
@@ -70,7 +70,7 @@ Du kan oprette forbindelse til en række forskellige datakilder. Læs mere om at
     ![Valg af rapportserver](media/quickstart-create-powerbi-report/report-server-select-server.png)
 
 ## <a name="step-3-design-your-report"></a>Trin 3: Design rapporten
-Det her er den sjove del: Du får lov at oprette visualiseringer, som illustrerer dine data.
+Det her er den sjove del: Du får lov at oprette visuals, som illustrerer dine data.
 
 Du kan f.eks. oprette et tragtformet diagram over kunder og gruppere værdier efter årsomsætning.
 
@@ -97,7 +97,7 @@ Når rapporten er klar, kan du gemme den på den Power BI-rapportserver, du har 
 Der er så mange fantastiske ressourcer til at oprette rapporter i Power BI Desktop. Dette link er et godt udgangspunkt.
 
 * [Kom i gang med Power BI Desktop](../desktop-getting-started.md)
-* Kursus med vejledning: [Kom i gang med Power BI Desktop](../guided-learning/gettingdata.yml?tutorial-step=2)
+* Kursus med vejledning: [Udforsk Power BI Desktop](/learn/modules/get-data-power-bi/2-getting-started-power-bi-desktop)
 
 ### <a name="power-bi-report-server"></a>Power BI-rapportserver
 * [Installer Power BI Desktop optimeret til Power BI-rapportserver](install-powerbi-desktop.md)  

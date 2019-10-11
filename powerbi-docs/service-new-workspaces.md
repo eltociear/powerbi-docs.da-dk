@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 9add7ce3c5caf675fde15fd15eea03d9d9b49d9b
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: 32d43ca4b9681495e22db023604afeac31d15e7e
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70750890"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715207"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser arbejde i nye arbejdsområder i Power BI
 
@@ -24,7 +24,7 @@ ms.locfileid: "70750890"
 Den nye arbejdsområdeoplevelse er nu generelt tilgængelig og er nu standardarbejdsområdet. Du kan stadig fortsætte med at oprette og bruge [klassiske arbejdsområder](service-create-workspaces.md), der er baseret på Office 365 Grupper. 
 
 > [!NOTE]
-> Hvis du vil gennemtvinge sikkerhed på rækkeniveau (RLS) for brugere, der gennemser indhold i et arbejdsområde, kan du bruge rollen Fremviser. Hvis rollen Fremviser endnu ikke er tilgængelig i din lejer, kan du fortsætte med at bruge [klassiske arbejdsområder](service-create-workspaces.md) og vælge indstillingen **Medlemmer kan kun få vist Power BI-indhold**. Du kan også udgive en app i Power BI til disse brugere eller bruge deling til at distribuere indhold.
+> Hvis du vil gennemtvinge sikkerhed på rækkeniveau (RLS) for brugere, der gennemser indhold i et arbejdsområde, kan du bruge rollen Fremviser. Hvis du vil gennemtvinge RLS uden at give adgang til arbejdsområdet, kan du publicere en Power BI-app til disse brugere eller bruge deling til at distribuere indhold.
 
 Med de nye arbejdsområder kan du:
 
@@ -63,7 +63,7 @@ Når du tildeler roller til en brugergruppe, har enkeltpersoner i gruppen adgang
 
 Her er egenskaberne for de fire roller: administratorer, medlemmer, bidragydere og fremvisere. Alle disse funktioner, undtagen den sidste, kræver en Power BI Pro-licens.
 
-|Egenskab   | Administrator  | Medlem  | Bidragyder  | Fremviser |
+|Egenskab   | Administrator  | Medlem  | Bidragsyder  | Fremviser |
 |---|---|---|---|---|
 | Opdatere og slette arbejdsområdet.  | X  |   |   |   | 
 | Tilføje/fjerne personer, herunder andre administratorer.  | X  |   |   |   |
@@ -73,11 +73,14 @@ Her er egenskaberne for de fire roller: administratorer, medlemmer, bidragydere 
 | Give andre tilladelse til at dele elementer igen. |  X | X  |   |   |
 | Oprette, redigere og slette indhold i arbejdsområdet.  |  X | X  | X  |   |
 | Publicere rapporter til arbejdsområdet, slette indhold.  |  X | X  | X  |   |
-| Oprette en rapport i et andet arbejdsområde, der er baseret på et datasæt i dette arbejdsområde. |  X | X  | X  | X <sup>1</sup>  |
-| Kopiere en rapport. | X | X | X | X <sup>1</sup> |
+| Oprette en rapport i et andet arbejdsområde, der er baseret på et datasæt i dette arbejdsområde. |  X | X  | X  |   |
+| Kopiere en rapport. | X | X | X |  |
 | Få vist og interager med et element. |  X | X  | X  | X  |
 
-**1** Kræver en Power BI Pro-licens og [oprettelsestilladelser for datasæt](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). 
+> [!NOTE]
+>Hvis du vil kopiere en rapport og oprette en rapport i et andet arbejdsområde, der er baseret på et datasæt i dette arbejdsområde, skal følgende kriterier være opfyldt:
+>- Du skal bruge en licens til Power BI Pro. 
+>- Du skal have Build-tilladelse til datasættet. Personer med rolle som administrator, medlem og bidragyder har Build-tilladelse til datasæt for dette arbejdsområde gennem deres rolle i arbejdsområdet.
  
 ## <a name="licensing"></a>Licensering
 Alle de brugere, du føjer til et arbejdsområde i den delte kapacitet, skal have en Power BI Pro-licens. I arbejdsområdet kan disse brugere samarbejde om dashboards og rapporter, som du vil publicere til en større målgruppe eller måske til hele organisationen. 

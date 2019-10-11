@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 0dcc5e3aac4b43a6975a9faa5dd23faa2888b324
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 1ccf5dd3a84bbbaca7019f8943cf0ab974e4bd06
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71142206"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71944884"
 ---
 # <a name="previous-monthly-updates-to-power-bi-desktop"></a>Tidligere månedlige opdateringer til Power BI Desktop
 
@@ -209,7 +209,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
     * Understøttelse af Cloud RLS
 * Tilgængelighed til dialogboksen Administrer sammenlægninger [[video]](https://youtu.be/7k-nP38uHyQ?t=1213) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#aggregationsAccessibility) 
 
-### <a name="modeling"></a>Udformning
+### <a name="modeling"></a>Modellering
 * Ny = DAX-sammenligningsoperator [[video]](https://youtu.be/7k-nP38uHyQ?t=1267) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2019-feature-summary/#dax) 
 
 
@@ -289,7 +289,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
     * Mobilunderstøttelse
 
 
-### <a name="modeling"></a>Udformning
+### <a name="modeling"></a>Modellering
 * Deaktiver tabeller med automatisk dato for nye rapporter [[video]](https://youtu.be/O8GlHDz8xUQ?t=984)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#autoDate) 
 * Opdater til funktionen ALLSELECTED DAX [[video]](https://youtu.be/O8GlHDz8xUQ?t=1080)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-2019-feature-summary/#dax) 
 
@@ -365,7 +365,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i denne måned:
 * Delvis synonymmatchning for ord i Spørgsmål og svar [[video]](https://youtu.be/vih35kSrEHU?t=912)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#partialMatching) 
 
 
-### <a name="modeling"></a>Udformning
+### <a name="modeling"></a>Modellering
 * Ny DAX-funktion – ALLCROSSFILTERED [[video]](https://youtu.be/vih35kSrEHU?t=970)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-april-2019-feature-summary/#dax) 
 
 ### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
@@ -455,8 +455,8 @@ Følgende opdateringer var nye i **Power BI Desktop** i marts:
 * Visning af datoer som et hierarki er nu offentligt tilgængelig [[video]](https://youtu.be/rBPGH6eYlT0?t=397)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#dateHierarchy) 
 
 
-### <a name="modeling"></a>Udformning
-* Ny udformningsvisning er nu offentligt tilgængelig [[video]](https://youtu.be/rBPGH6eYlT0?t=417)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#modellingView) 
+### <a name="modeling"></a>Modellering
+* Ny modelleringsvisning er nu offentligt tilgængelig [[video]](https://youtu.be/rBPGH6eYlT0?t=417)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#modellingView) 
 * Nye DAX-funktioner [[video]](https://youtu.be/rBPGH6eYlT0?t=560) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-march-2019-feature-summary/#DAX) 
 
 ### <a name="custom-visuals"></a>Brugerdefinerede visualiseringer
@@ -601,7 +601,7 @@ Følgende opdateringer er nye i **Power BI Desktop** i denne måned:
 * Livesupport til forbindelse til Spørgsmål og svar (prøveversion) [[video]](https://youtu.be/AHNlkjRFdYI?t=1037) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#liveConnectQA) 
 
 
-### <a name="modeling"></a>Udformning
+### <a name="modeling"></a>Modellering
 
 * Opdateringer af DAX-formellinje [[video]](https://youtu.be/AHNlkjRFdYI?t=1132) [[artikel]](desktop-modeling-view.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#daxFormulaBar) 
 * Understøttelse af tilgængelighed af datavisning [[video]](https://youtu.be/AHNlkjRFdYI?t=1253) [[artikel]](desktop-composite-models.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-december-2018-feature-summary/#dataView) 
@@ -661,7 +661,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i november:
 * Opfølgningsspørgsmål i stifinder til spørgsmål og svar [[video]](https://youtu.be/1xsXXoyTxfk?t=1429) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23relatedQuestions) 
 
 
-### <a name="modeling"></a>Udformning
+### <a name="modeling"></a>Modellering
 
 * Ny udformningsvisning (prøveversion) [[video]](https://youtu.be/1xsXXoyTxfk?t=1642) [[artikel]](desktop-modeling-view.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23modellingView) 
 * Sammensatte modeller er nu offentligt tilgængelige [[video]](https://youtu.be/1xsXXoyTxfk?t=1941) [[artikel]](desktop-composite-models.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-november-2018-feature-summary/%23compositeModels) 
@@ -706,7 +706,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i oktober:
 * Forbedringer af ydeevne til ArcGIS-kort [[video]](https://youtu.be/cT3L2VzgBRU?t=333) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23esri)
 
 
-### <a name="modeling"></a>Udformning
+### <a name="modeling"></a>Modellering
 
 * Forbedringer af DAX-editor [[video]](https://youtu.be/GO1dhDJhSDY) [[artikel]](desktop-formula-editor.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-october-2018-feature-summary/%23daxEditor) 
 
@@ -806,7 +806,7 @@ Vi fulgte hurtigt op på de store opdateringer fra juli med en frisk buket af au
 
 Følgende opdateringer var nye i **Power BI Desktop** i august:
 
-### <a name="modeling"></a>Udformning
+### <a name="modeling"></a>Modellering
 
 * Datakategorier til målinger  [[video]](https://youtu.be/dgv5HhHxxe8?t=15m27s)  [[artikel]](desktop-measures.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#dataCategory)
 * Statistiske DAX-funktioner  [[video]](https://youtu.be/dgv5HhHxxe8?t=18m56s)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-2018-feature-summary/#dax)
@@ -855,7 +855,7 @@ De store opdateringer i juli omfattede længe ønskede data- og rapporteringsfun
 
 Følgende opdateringer var nye i **Power BI Desktop** i juli:
 
-### <a name="modeling"></a>Udformning
+### <a name="modeling"></a>Modellering
 
 * Sammensatte modeller (prøveversion) [[video]](https://youtu.be/Mtig3rmIUe0?t=15s) [[artikel]](desktop-composite-models.md)  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#compositeModels)
 * Mange til mange-relationer (prøveversion) (knyttet til sammensatte modeller) [[video]](https://youtu.be/Mtig3rmIUe0?t=4m53s) [[artikel]](desktop-many-to-many-relationships.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-2018-feature-summary/#compositeModels)
@@ -925,7 +925,7 @@ Følgende opdateringer var nye i **Power BI Desktop** i juni:
 
 * To nye brugerdefinerede visualiseringer [[video]](https://youtu.be/4VpGtWSrssE?t=17m42s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#customVisuals) 
 
-### <a name="modeling"></a>Udformning
+### <a name="modeling"></a>Modellering
 * Filtrering og sortering i datavisning [[video]](https://youtu.be/4VpGtWSrssE?t=13m11s) [[artikel]](desktop-data-view.md#filtering-in-data-view) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#filterAndSort) 
 * Forbedret filtrering af landestandard [[video]](https://youtu.be/4VpGtWSrssE?t=15m35s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-2018-feature-summary/#locale) 
 
@@ -2290,8 +2290,8 @@ Lad os kaste os ud i flere opdateringer denne måned! Det er skudår, så der er
 
 ### <a name="data-connectivity"></a>Dataconnectors:
 
--   **DirectQuery**-understøttelse af Oracle- og Teradata-databaser
--   **DirectQuery** – understøttelse af oprettelse af beregnede kolonner
+-   **DirectQuery**-understøttelse af Oracle og Teradata
+-   **DirectQuery**-understøttelse af oprettelse af beregnede kolonner
 -   Understøttelse af publicering af Analysis Services Live-rapporter
 -   JSON File-connector
 -   SQL Sentry-connector

@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 07/29/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: 431c1738a5d2e975fd96a8209ca8245cd4414d40
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: d5ada41ef4941f14118b777e37e731337a5282d0
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730173"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715388"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Målinger i Power BI Desktop
 
 Du kan få hjælp af **Power BI Desktop** til at oprette indsigt i dine data med nogle få klik. Men nogle gange indeholder disse data bare ikke alt det, du skal bruge for at få svar på nogle af dine vigtigste spørgsmål. Det kan målinger hjælpe dig med.
 
-Målinger bruges i nogle af de mest almindelige dataanalyser. Enkle opsummeringer, f.eks. sum, gennemsnit, minimum, maksimum og antal, kan angives via feltbrønden, som beskrevet i videoen [Opsummering og kategori](https://docs.microsoft.com/power-bi/guided-learning/visualizations?tutorial-step=16). Du kan selv oprette mere avancerede beregninger ved hjælp af en DAX-formel. De beregnede resultater fra målinger ændres altid som reaktion på din interaktion med dine rapporter. Det giver mulighed hurtig og dynamisk dataudforskning ad hoc. Lad os se nærmere på det.
+Målinger bruges i nogle af de mest almindelige dataanalyser. Enkle opsummeringer, f.eks. sum, gennemsnit, minimum, maksimum og antal, kan angives via kategorien Felter. De beregnede resultater fra målinger ændres altid som reaktion på din interaktion med dine rapporter. Det giver mulighed hurtig og dynamisk dataudforskning ad hoc. Lad os se nærmere på det. Du kan finde flere oplysninger under [Opret beregnede mål](/learn/modules/model-data-power-bi/4b-create-calculated-measures).
 
 ## <a name="understanding-measures"></a>Om målinger
 

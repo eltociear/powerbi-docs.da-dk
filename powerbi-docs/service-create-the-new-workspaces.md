@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: a2de6d79971e59879e65d2e3cf652caf156d80cf
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 5c50ec38da65573e085d9e27b0e31524256ac009
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70904162"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715539"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Opret nye arbejdsområder i Power BI
 
@@ -28,7 +28,7 @@ Her er forskellene. I de nye arbejdsområder kan du:
 - Bruge mere detaljerede arbejdsområderoller til administration af mere fleksible tilladelser i et arbejdsområde.
 
 > [!NOTE]
-> Hvis du vil gennemtvinge sikkerhed på rækkeniveau for Power BI Pro-brugere, der gennemser indhold i et arbejdsområde, skal du fortsætte med at bruge de [klassiske arbejdsområder](service-create-workspaces.md). Vælg indstillingen **Medlemmer kan kun få vist Power BI-indhold**. Du kan også udgive en app i Power BI til disse brugere eller bruge deling til at distribuere indhold. Den forestående Seer-rolle muliggør dette scenarie i fremtidige arbejdsområder med den nye arbejdsområdeoplevelse.
+> Hvis du vil gennemtvinge sikkerhed på rækkeniveau for Power BI Pro-brugere, der gennemser indhold i et arbejdsområde, skal du tildele brugerne læseadgang.
 
 Du kan få mere baggrundsviden i artiklen [nye arbejdsområder](service-new-workspaces.md).
 
@@ -40,9 +40,9 @@ Du kan få mere baggrundsviden i artiklen [nye arbejdsområder](service-new-work
 
 2. Du opretter automatisk et opgraderet arbejdsområde, medmindre du vælger at **gå tilbage til klassisk**.
    
-     ![Den nye arbejdsområdeoplevelse](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
+     ![Ny arbejdsområdeoplevelse](media/service-create-the-new-workspaces/power-bi-new-workspace.png)
      
-     Hvis du vælger **Gå tilbage til klassisk**, opretter du et arbejdsområde baseret på en Office 365-gruppe. Brug denne indstilling, hvis du har brug for indstillingen **Medlemmer kan kun få vist Power BI-indhold** til at gennemtvinge sikkerhed på rækkeniveau for medlemmer af arbejdsområdet.
+     Hvis du vælger **Gå tilbage til klassisk**, opretter du et [arbejdsområde, der er baseret på en Office 365-gruppe](service-create-workspaces.md). 
 
 2. Giv arbejdsområdet et navn. Hvis navnet ikke er tilgængeligt, skal du redigere det, så der angives et entydigt navn.
    

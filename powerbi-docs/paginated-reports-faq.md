@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
-ms.date: 09/04/2019
-ms.openlocfilehash: 6ab7338029118ab6478ad345776e2b9f13c34123
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.date: 10/04/2019
+ms.openlocfilehash: 97b9d68a8fa17a3ce1758eeaa16d2503a38a4743
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70751521"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968507"
 ---
 # <a name="paginated-reports-in-power-bi-faq"></a>Sideinddelte rapporter i Power BI: Ofte stillede spørgsmål 
 
@@ -117,12 +117,13 @@ Du får vist en fejlmeddelelse, hvis du forsøger at uploade en fil, som indehol
 
 ### <a name="what-data-sources-do-you-support-currently-for-paginated-reports"></a>Hvilke datakilder understøttes i øjeblikket for sideinddelte rapporter?
 
-Vi understøtter følgende datakilde – 
+Vi understøtter følgende datakilder – 
 
 - Power BI-datasæt (via enkeltlogon (SSO))
 - Azure Analysis Services (via enkeltlogon (SSO) og oAuth)
 - Azure SQL Data Warehouse
 - Azure SQL Database (brugernavn/adgangskode, SSO og oAuth)
+- Administreret forekomst af Azure SQL via offentligt slutpunkt (brugernavn/adgangskode)
 - SQL Server*
 - SSAS-modeller (SQL Server Analysis Services) i tabelformat (DAX) og multidimensionale (MDX) SSAS-modeller* 
 - Oracle* 

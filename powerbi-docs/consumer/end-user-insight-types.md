@@ -4,23 +4,25 @@ description: Hurtige indsigter og Vis indsigter i Power BI.
 author: mihart
 manager: kvivek
 ms.reviewer: ''
-ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 9/23/2019
+ms.date: 10/2/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 991dd7bb94e79a21c8e4ec877093b81d2ed9b285
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 507d49ba6cdb894667bf66f8f35c5c325b9ff25e
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327768"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71943912"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Indsigtstyper, der understøttes af Power BI
+
+Power BI-tjenesten kan automatisk søge efter indsigter i dine dashboards eller rapporter.
+
 ## <a name="how-does-insights-work"></a>Hvordan fungerer indsigter?
-Power BI søger hurtigt gennem forskellige undersæt i datasættet og anvender samtidig et sæt avancerede algoritmer for at finde indsigt, der kan være interessant. Power BI scanner så meget af et datasæt som muligt i et tildelt tidsrum.
+Power BI søger hurtigt i forskellige undersæt af dit datasæt. I takt med at Power BI søger, anvendes et sæt avancerede algoritmer for at finde indsigt, der kan være interessant. Power BI scanner så meget af et datasæt som muligt i et tildelt tidsrum.
 
 Du kan køre indsigt i forhold til et datasæt eller et dashboardfelt.   
 
@@ -74,8 +76,6 @@ Registrerer for data på tværs af en tidsserie, når der er specifikke datoer o
 
 ## <a name="next-steps"></a>Næste trin
 [Power BI-indsigter](end-user-insights.md)
-
-Hvis du ejer et datasæt, [kan du optimere det til indsigter](../service-insights-optimize.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -7,36 +7,40 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/24/2019
+ms.date: 10/03/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: b95df5c32d9058e4480d7af5e226a971ba581144
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 3a73656d8de462dfc7d1d9e7ac742d588cc8c810
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256290"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71943899"
 ---
 # <a name="how-visuals-cross-filter-each-other-in-a-power-bi-report"></a>Sådan krydsfiltrerer visualiseringer hinanden i en Power BI-rapport
 En af de fantastiske funktioner i Power BI er den måde, som alle visualiseringer på rapportside er forbundet på. Hvis du vælger et datapunkt i en af visualiseringerne, ændres alle andre visualiseringer med disse data på siden på baggrund af dette valg. 
 
 ![video af interaktion mellem visualiseringer](media/end-user-interactions/interactions.gif)
 
-Hvis du vælger et datapunkt i én visualisering på en rapportside, udføres der som standard tværgående filtrering, tværgående fremhævning og analyse af de andre visualiseringer på siden. 
+## <a name="how-visuals-interact-with-each-other"></a>Sådan interagerer visualiseringer med hinanden
 
-Det kan være nyttigt for at identificere, hvordan en værdi i dine data bidrager til en anden. Hvis du f.eks. vælger segmentet Redigering i kransediagrammet, fremhæves bidraget fra dette segment for de enkelte kolonner i diagrammet Antal enheder i alt efter måned, og kurvediagrammet til højre er filtreret.
+Hvis du vælger et datapunkt i én visualisering på en rapportside, udføres der som standard tværgående filtrering og fremhævning af de andre visualiseringer på siden. Lige præcis hvordan visualiseringerne på en side interagerer på, angives af *designeren* af rapporten. *Designere* har mulighed for at slå interaktion mellem visualiseringer til og fra og ændre standardfunktionsmåden for tværgående filtrering, tværgående fremhævning og [analysering](end-user-drill.md). 
+
+Hvis du ikke er stødt på hierarkier eller detailudledning endnu, kan du få mere at vide om disse funktioner ved at læse [detailudledning i Power BI](end-user-drill.md). 
+
+Tværgående filtrering og fremhævning kan være nyttigt for at identificere, hvordan en værdi i dine data bidrager til en anden. Hvis du f.eks. vælger segmentet Redigering i kransediagrammet, fremhæves bidraget fra dette segment for de enkelte kolonner i diagrammet Antal enheder i alt efter måned, og kurvediagrammet filtreres.
 
 ![billede af interaktion mellem visualiseringer](media/end-user-interactions/power-bi-interactions.png)
 
-Se [Om filtrering og fremhævning](../power-bi-reports-filters-and-highlighting.md). 
+Se [Om filtrering og fremhævning](end-user-report-filter.md). 
 
-Lige præcis hvordan visualiseringerne på en side interagerer på, angives af *designeren* af rapporten. Designere har mulighed for at slå interaktion mellem visualiseringer til og fra og ændre standardfunktionsmåden for tværgående filtrering, tværgående fremhævning og analysering. 
+
   
 > [!NOTE]
 > Begreberne *tværgående filter* og *tværgående fremhævning* bruges til at skelne mellem den funktionsmåde, der er beskrevet her, og hvad der sker, når du bruger ruden **Filtre** til at filtrere og fremhæve visualiseringer.  
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
-- Hvis din rapport har en visualisering, der understøtter [detailudledning](../power-bi-visualization-drill-down.md), har det som standard ingen indvirkning på andre visualiseringer på rapportsiden, hvis du foretager detailudledning i én visualisering.     
+- Hvis din rapport har en visualisering, der understøtter [detailudledning](end-user-drill.md), har det som standard ingen indvirkning på andre visualiseringer på rapportsiden, hvis du foretager detailudledning i én visualisering.     
 - Hvis du bruger visual A til at interagere med visual B, anvendes der filtre på visualiseringsniveau fra visual A på visual B.
 
 ## <a name="next-steps"></a>Næste trin

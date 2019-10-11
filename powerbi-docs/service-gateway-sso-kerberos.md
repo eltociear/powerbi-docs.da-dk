@@ -10,16 +10,16 @@ ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9958059fcf0d86323fc95f44f6fcfcb08fe7b52b
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: 0fb52262790c6c1935d8152f043f726a9471817d
+ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100484"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71968988"
 ---
 # <a name="configure-kerberos-based-sso-from-power-bi-service-to-on-premises-data-sources"></a>Konfigurer Kerberos-baseret SSO fra Power BI-tjenesten til datakilder i det lokale miljø
 
-Brug [Begrænset Kerberos-delegering](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) for at muliggøre en problemfri SSO-forbindelse. Aktivering af SSO gør det nemt for Power BI-rapporter og -dashboards at opdatere data fra kilder i det lokale miljø.
+Brug [Begrænset Kerberos-delegering](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) for at muliggøre en problemfri SSO-forbindelse. Aktivering af SSO gør det nemt for Power BI-rapporter og -dashboards at opdatere data fra kilder i det lokale miljø, samtidig med at de tilladelser på brugerniveau, der er konfigureret for disse kilder, overholdes.
 
 Der skal være konfigureret flere elementer, hvis begrænset Kerberos-delegering skal fungere korrekt, herunder _tjenestens hovednavn_ (SPN) og delegeringsindstillinger i tjenestekonti.
 
@@ -83,9 +83,9 @@ Vi skal konfigurere begrænset Kerberos-delegering med protokoloverførsel. Med 
 
 I dette afsnit forudsættes det, at du allerede har konfigureret SPN'er for de underliggende datakilder (f.eks. SQL Server, SAP HANA, SAP BW, Teradata og Spark). Du kan få mere at vide om, hvordan du konfigurerer disse datakildeserveres SPN'er i den tekniske dokumentation til den respektive databaseserver. Du kan også se under overskriften *Hvilken SPN kræver dit program?* i blogindlægget [Min tjekliste til Kerberos](https://techcommunity.microsoft.com/t5/SQL-Server-Support/My-Kerberos-Checklist-8230/ba-p/316160).
 
-I følgende trin antager vi, at vi har et lokalt miljø med to computere: en gatewaycomputer og en databaseserver, der kører SQL Server, og som allerede er blevet konfigureret til Kerberos-baseret SSO. Trinnene kan benyttes for en af de andre understøttede datakilder, så længe datakilden allerede er konfigureret til Kerberos-baseret enkeltlogon. Af hensyn til dette eksempel antager vi også, at vi har følgende indstillinger og navne:
+I følgende trin antager vi, at vi har et lokalt miljø med to computere i det samme domæne: en gatewaycomputer og en databaseserver, der kører SQL Server, og som allerede er blevet konfigureret til Kerberos-baseret SSO. Trinnene kan benyttes for en af de andre understøttede datakilder, så længe datakilden allerede er konfigureret til Kerberos-baseret enkeltlogon. Af hensyn til dette eksempel antager vi også, at vi har følgende indstillinger og navne:
 
-* Active Directory-domæne (Netbios): Contoso
+* Active Directory-domæne (Netbios): **Contoso**
 * Gatewaymaskinens navn: **MyGatewayMachine**
 * Gatewaytjenestekonto: **Contoso\GatewaySvc**
 * Navn på computer med SQL Server-datakilde: **TestSQLServer**
@@ -105,11 +105,11 @@ Her kan du se, hvordan du konfigurerer delegeringsindstillingerne:
 
 6. I den nye dialogboks skal du vælge **Brugere eller computere**.
 
-7. Angiv tjenestekontoen for datakilden; en SQL Server-datakilde kan f.eks. have en tjenestekonto som **Contoso\SQLService**. Når kontoen er tilføjet, skal du vælge **OK**.
+7. Angiv tjenestekontoen for datakilden; en SQL Server-datakilde kan f.eks. have en tjenestekonto som **Contoso\SQLService**. Der skal allerede være angivet et korrekt SPN for datakilden på denne konto. Når kontoen er tilføjet, skal du vælge **OK**.
 
 8. Vælg det hovednavn for tjenesten (SPN), du har oprettet for databaseserveren. I dette eksempel begynder SPN med **MSSQLSvc**. Hvis du har tilføjet både det fulde domænenavn (FQDN) og NetBIOS- SPN til din databasetjeneste, vælges begge dele. Du kan muligvis kun se ét.
 
-9. Vælg **OK**. Du bør nu kunne se SPN'et på listen.
+9. Vælg **OK**. Du bør nu kunne se SPN'et på listen over tjenester, som gatewaytjenestekontoen kan give uddelegerede legitimationsoplysninger til.
 
     ![Skærmbillede af dialogboksen Egenskaber for gatewayconnector](media/service-gateway-sso-kerberos/gateway-connector-properties.png)
 
@@ -124,6 +124,8 @@ Brug [ressourcebaseret Kerberos-begrænset delegering](/windows-server/security/
 
 I følgende trin antager vi, at vi har et lokalt miljø med to computere i forskellige domæner: en gatewaycomputer og en databaseserver, der kører SQL Server, og som allerede er blevet konfigureret til Kerberos-baseret SSO. Trinnene kan benyttes for en af de andre understøttede datakilder, så længe datakilden allerede er konfigureret til Kerberos-baseret enkeltlogon. Af hensyn til dette eksempel antager vi også, at vi har følgende indstillinger og navne:
 
+* Active Directory-frontenddomæne (Netbios): **ContosoFrontEnd**
+* Active Directory-backenddomæne (Netbios): **ContosoBackEnd**
 * Gatewaymaskinens navn: **MyGatewayMachine**
 * Gatewaytjenestekonto: **ContosoFrontEnd\GatewaySvc**
 * Navn på computer med SQL Server-datakilde: **TestSQLServer**
@@ -135,22 +137,26 @@ Med udgangspunkt i disse eksempelnavne og -indstillinger skal du fuldføre følg
 
     ![Egenskaber for gatewayconnector](media/service-gateway-sso-kerberos-resource/gateway-connector-properties.png)
 
-2. Ved hjælp af **Active Directory-brugere og -computere** skal du på domænecontrolleren for domænet **ContosoBackEnd** sørge for, at der ikke er anvendt nogen delegeringsindstillinger for back end-tjenestekontoen. Herudover skal du sikre, at attributten **msDS-AllowedToActOnBehalfOfOtherIdentity** for denne konto heller ikke er angivet. Du kan finde denne attribut i **attributeditoren**, som vist på følgende billede:
+2. Ved hjælp af **Active Directory-brugere og -computere** skal du på domænecontrolleren for domænet **ContosoBackEnd** sørge for, at der ikke er anvendt nogen delegeringsindstillinger for back end-tjenestekontoen.
 
     ![Egenskaber for SQL-tjenesten](media/service-gateway-sso-kerberos-resource/sql-service-properties.png)
 
-3. Opret en gruppe i **Active Directory-brugere og -computere** på domænecontrolleren for domænet **ContosoBackEnd**. Føj gatewaytjenestekontoen til denne gruppe, som vist på følgende billede. På billedet vises en ny gruppe ved navn _ResourceDelGroup_ og gatewaytjenestekontoen **GatewaySvc**, der er føjet til denne gruppe.
+3. Herudover skal du sikre, at attributten **msDS-AllowedToActOnBehalfOfOtherIdentity** for denne konto heller ikke er angivet. Du kan finde denne attribut i **attributeditoren**, som vist på følgende billede:
+
+    ![SQL-tjenesteattributter](media/service-gateway-sso-kerberos-resource/sql-service-attributes.png)
+
+4. Opret en gruppe i **Active Directory-brugere og -computere** på domænecontrolleren for domænet **ContosoBackEnd**. Føj gatewaytjenestekontoen til denne gruppe, som vist på følgende billede. På billedet vises en ny gruppe ved navn _ResourceDelGroup_ og gatewaytjenestekontoen **GatewaySvc**, der er føjet til denne gruppe.
 
     ![Gruppeegenskaber](media/service-gateway-sso-kerberos-resource/group-properties.png)
 
-4. Åbn en kommandoprompt, og kør følgende kommandoer i domænecontrolleren for domænet **ContosoBackEnd** for at opdatere attributten **msDS-AllowedToActOnBehalfOfOtherIdentity** for back end-tjenestekontoen:
+5. Åbn en kommandoprompt, og kør følgende kommandoer i domænecontrolleren for domænet **ContosoBackEnd** for at opdatere attributten **msDS-AllowedToActOnBehalfOfOtherIdentity** for back end-tjenestekontoen:
 
     ```powershell
     $c = Get-ADGroup ResourceDelGroup
     Set-ADUser SQLService -PrincipalsAllowedToDelegateToAccount $c
     ```
 
-5. Du kan bekræfte, at opdateringen afspejles, på fanen "Attributeditor" i egenskaberne for back end-tjenestekontoen i **Active Directory-brugere og -computere.**
+6. Du kan bekræfte, at opdateringen afspejles, på fanen "Attributeditor" i egenskaberne for back end-tjenestekontoen i **Active Directory-brugere og -computere.** **msDS-AllowedToActOnBehalfOfOtherIdentity** bør nu være angivet.
 
 ## <a name="grant-the-gateway-service-account-local-policy-rights-on-the-gateway-machine"></a>Tildel gatewaytjenestekontoen rettigheder til lokale politikker på gatewaymaskinen
 
@@ -158,7 +164,7 @@ På den computer, der kører gatewaytjenesten (**MyGatewayMachine** i eksemplet)
 
 1. Kør: *gpedit.msc* på gatewaycomputeren.
 
-2. Gå til **Lokal computerpolitik** > **Computerkonfiguration** > **Windows-indstillinger** > **Sikkerhedsindstillinger** > **Lokale politikker** > **Tildeling af brugerrettigheder**.
+2. Gå til **Lokal computerpolitik** &gt; **Computerkonfiguration** &gt; **Windows-indstillinger** &gt; **Sikkerhedsindstillinger** &gt; **Lokale politikker** &gt; **Tildeling af brugerrettigheder**.
 
     ![Skærmbillede af mappestrukturen Lokal computerpolitik](media/service-gateway-sso-kerberos/user-rights-assignment.png)
 
@@ -166,7 +172,7 @@ På den computer, der kører gatewaytjenesten (**MyGatewayMachine** i eksemplet)
 
     ![Skærmbillede af politikken Repræsenter en klient](media/service-gateway-sso-kerberos/impersonate-client.png)
 
-    Højreklik, og åbn **Egenskaber**. Se listen over konti. Den skal omfatte gatewaytjenestekontoen (**Contoso\GatewaySvc**).
+    Højreklik, og åbn **Egenskaber**. Se listen over konti. Den skal omfatte gatewaytjenestekontoen (**Contoso\GatewaySvc** eller **ContosoFrontEnd\GatewaySvc**, afhængigt af typen af begrænset delegering).
 
 4. Under **Tildeling af brugerrettigheder** på listen over politikker skal du vælge **Optræd som en del af operativsystemet (SeTcbPrivilege)** . Kontrollér, at gatewaytjenestekontoen også er medtaget på listen over konti.
 
@@ -184,23 +190,23 @@ Hvis du ikke har konfigureret Azure AD Connect, skal du følge disse trin for at
 
     ![Skærmbillede af fanen Tjenester i Jobliste](media/service-gateway-sso-kerberos/restart-gateway.png)
 
-1. For hver bruger af Power BI-tjenesten, du vil aktivere Kerberos-SSO for, skal du angive egenskaben `msDS-cloudExtensionAttribute1` for en lokal Active Directory-bruger (med SSO-tilladelse til din datakilde) til det fulde brugernavn for brugeren af Power BI-tjenesten. Hvis du f.eks. logger på Power BI-tjenesten som `test@contoso.com`, og du vil knytte denne bruger til en lokal Active Directory-bruger med SSO-tilladelser, f.eks. `test@LOCALDOMAIN.COM`, skal du angive `test@LOCALDOMAIN.COM`s attribut `msDS-cloudExtensionAttribute1` til `test@contoso.com`.
+1. For hver bruger af Power BI-tjenesten, du vil aktivere Kerberos-SSO for, skal du angive egenskaben `msDS-cloudExtensionAttribute1` for en lokal Active Directory-bruger (med SSO-tilladelse til din datakilde) til det fulde brugernavn (dvs. UPN) for brugeren af Power BI-tjenesten. Hvis du f.eks. logger på Power BI-tjenesten som `test@contoso.com`, og du vil knytte denne bruger til en lokal Active Directory-bruger med SSO-tilladelser, f.eks. `test@LOCALDOMAIN.COM`, skal du angive `test@LOCALDOMAIN.COM`s attribut `msDS-cloudExtensionAttribute1` til `test@contoso.com`.
 
-Du kan angive egenskaben `msDS-cloudExtensionAttribute1` ved hjælp af MMC-snap-in'en Active Directory-brugere og -computere (Microsoft Management Console).
-
-1. Start MMC-snap-in'en Active Directory-brugere og -computere som domæneadministrator.
-
-1. Højreklik på domænet, vælg Find, og skriv kontonavnet på den lokale Active Directory-bruger, som du vil tilknytte.
-
-1. Vælg fanen **Attributeditor**.
-
-    Find egenskaben `msDS-cloudExtensionAttribute1`, og dobbeltklik på den. Angiv værdien til brugerens fulde brugernavn, som du bruger til at logge på Power BI-tjenesten.
-
-1. Vælg **OK**.
-
-    ![Skærmbillede af dialogboksen Editor til strengattribut](media/service-gateway-sso-kerberos/edit-attribute.png)
-
-1. Vælg **Anvend**. Kontrollér, at den korrekte værdi er blevet angivet i kolonnen **Værdi**.
+    Du kan angive egenskaben `msDS-cloudExtensionAttribute1` ved hjælp af MMC-snap-in'en Active Directory-brugere og -computere (Microsoft Management Console):
+    
+    1. Start Active Directory-brugere og -computere som domæneadministrator.
+    
+    1. Højreklik på domænet, vælg Find, og skriv kontonavnet på den lokale Active Directory-bruger, som du vil tilknytte.
+    
+    1. Vælg fanen **Attributeditor**.
+    
+        Find egenskaben `msDS-cloudExtensionAttribute1`, og dobbeltklik på den. Angiv værdien til brugerens fulde brugernavn (dvs. UPN), som du bruger til at logge på Power BI-tjenesten.
+    
+    1. Vælg **OK**.
+    
+        ![Skærmbillede af dialogboksen Editor til strengattribut](media/service-gateway-sso-kerberos/edit-attribute.png)
+    
+    1. Vælg **Anvend**. Kontrollér, at den korrekte værdi er blevet angivet i kolonnen **Værdi**.
 
 ## <a name="complete-data-source-specific-configuration-steps"></a>Udfør datakildespecifikke konfigurationstrin
 
@@ -211,19 +217,19 @@ SAP HANA og SAP BW har ekstra datakildespecifikke konfigurationskrav og -foruds�
 
 ## <a name="run-a-power-bi-report"></a>Kør Power BI-rapport
 
-Når alle konfigurationstrin er fuldført, kan du bruge siden **Administrer gateway** i Power BI til at konfigurere den datakilde, du vil bruge for SSO. Hvis du har flere gateways, skal du sørge for at vælge den gateway, du har konfigureret til Kerberos SSO. Under **Avancerede indstillinger** skal du derefter sørge for, at afkrydsningsfeltet Brug SSO via Kerberos til DirectQuery-forespørgsler er markeret.
+Når alle konfigurationstrin er fuldført, kan du bruge siden **Administrer gateway** i Power BI til at konfigurere den datakilde, du vil bruge for SSO. Hvis du har flere gateways, skal du sørge for at vælge den gateway, du har konfigureret til Kerberos SSO. Under **Avancerede indstillinger** skal du derefter sørge for, at afkrydsningsfeltet **Brug SSO via Kerberos til DirectQuery-forespørgsler** er markeret.
 
 ![Skærmbillede af Avancerede indstillinger](media/service-gateway-sso-kerberos/advanced-settings.png)
 
  Publicer en **DirectQuery-baseret** rapport fra Power BI Desktop. Denne rapport skal bruge data, der er tilgængelige for den bruger, som er tilknyttet den Azure Active Directory-bruger (AAD), der logger på Power BI-tjenesten. Du skal bruge DirectQuery i stedet for at importere på grund af den måde, opdatering fungerer på. Når du opdaterer importbaserede rapporter, bruger gatewayen de legitimationsoplysninger, du angav i felterne **Brugernavn** og **Adgangskode**, da du oprettede datakilden. Det vil sige, at Kerberos SSO **ikke** bruges. Når du publicerer, skal du desuden sørge for at vælge den gateway, du har konfigureret til SSO, hvis du har flere gateways. I Power BI-tjenesten kan du nu opdatere rapporten eller oprette en ny rapport, der er baseret på det publicerede datasæt.
 
-Denne konfiguration fungerer i de fleste tilfælde. Med Kerberos kan der dog være forskellige konfigurationer afhængigt af dit miljø. Hvis rapporten stadig ikke indlæses, skal du kontakte domæneadministratoren for at få problemet undersøgt yderligere. Hvis din datakilde er SAP BW, kan du også se afsnittet om fejlfinding for de datakildespecifikke konfigurationssider for [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting) og [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting).
+Denne konfiguration fungerer i de fleste tilfælde. Med Kerberos kan der dog være forskellige konfigurationer afhængigt af dit miljø. Hvis rapporten stadig ikke indlæses, skal du kontakte domæneadministratoren for at få problemet undersøgt yderligere. Hvis din datakilde er SAP BW, kan du også se afsnittet om fejlfinding for de datakildespecifikke konfigurationssider for [CommonCryptoLib](service-gateway-sso-kerberos-sap-bw-commoncryptolib.md#troubleshooting) og [gx64krb5/gsskrb5](service-gateway-sso-kerberos-sap-bw-gx64krb.md#troubleshooting), afhængigt af hvilket SNC-bibliotek du har valgt.
 
 ## <a name="next-steps"></a>Næste trin
 
 Du kan finde flere oplysninger om **datagateway i det lokale miljø** og **DirectQuery** i følgende ressourcer:
 
-* [Hvad er en datagateway i det lokale miljø?](/data-integration/gateway/service-gateway-getting-started)
+* [Hvad er en datagateway i det lokale miljø?](/data-integration/gateway/service-gateway-onprem)
 * [DirectQuery i Power BI](desktop-directquery-about.md)
 * [Datakilder, der understøttes af DirectQuery](desktop-directquery-data-sources.md)
 * [DirectQuery og SAP BW](desktop-directquery-sap-bw.md)

@@ -3,20 +3,19 @@ title: Ofte stillede spørgsmål fra slutbrugeren i Power BI
 description: Gennemse en liste over ofte stillede spørgsmål og svar om Power BI-tjenesten og Power BI-mobilappene.
 author: mihart
 manager: kvivek
-ms.custom: seodec18
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 6/17/2019
+ms.date: 10/03/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 5efdb98e0722add361f3b333f773fc03c6ea50a9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: bf3e7b790788c8ce21b222a083a853b06185acc0
+ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "69654133"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71943333"
 ---
 # <a name="frequently-asked-questions-about-power-bi"></a>Ofte stillede spørgsmål om Power BI
 
@@ -33,27 +32,17 @@ Power BI Pro er en individuel licens, der giver adgang til alt indhold og alle f
 
 Power BI Premium indeholder dedikeret kapacitet til at levere en mere ensartet ydeevne. Det understøtter også større datamængder i Power BI. I Premium kan de enkelte brugere udføre omfattende distribution af indhold fra Pro-brugere, og det kræver ikke en licens pr. bruger at få vist indholdet.
 
-## <a name="what-happens-if-my-power-bi-pro-license-expires"></a>Hvad sker der, hvis min Power BI Pro-licens udløber?
-
-Der er en respitperiode, efter en Power BI Pro-licens er udløbet. For licenser, der er en del af et volumenlincenskøb, er respitperioden 90 dage. Hvis du har købt licensen direkte, er respitperioden 30 dage.
-
-Power BI Pro har den samme abonnementslivscyklus som Office 365. Du kan finde flere oplysninger under [Hvad sker der med mine data og adgang, når mit abonnement på Office 365 til virksomheder slutter?](https://support.office.com/article/What-happens-to-my-data-and-access-when-my-Office-365-for-business-subscription-ends-4436582f-211a-45ec-b72e-33647f97d8a3)
-
 ## <a name="what-if-i-have-questions-about-power-bi-premium"></a>Hvad hvis jeg har spørgsmål til Power BI Premium?
 
 For spørgsmål knyttet til Power BI Premium henvises til [Power BI Premium – ofte stillede spørgsmål](../service-premium-faq.md).
 
-## <a name="how-do-i-find-out-who-in-my-organization-has-a-power-bi-account"></a>Hvordan finder jeg ud af, hvem der har en Power BI-konto i min organisation?
-
-Du kan få vist rapporten over integrerede programmer i Azure Active Directory for Power BI for at se de aktive brugere i din organisation. Azure AD-rapporten indikerer ikke, hvilken type licens brugeren har. Den rapporterer kun, hvilke brugere der har logget på Power BI, og hvornår de loggede på. Du kan finde flere oplysninger under [Find Power BI-brugere, der er logget på](../service-admin-access-usage.md).
-
 ## <a name="what-is-power-bi-desktop"></a>Hvad er Power BI Desktop?
 
-Power BI Desktop er et gratis program, du kan installere direkte på dine egne computere. Power BI Desktop fungerer i sammenhæng med Power BI-tjenesten.  Datateknikere, administratorer og udviklere arbejder med Power BI Desktop for at oprette rapporter og gøre dem tilgængelige for brugere af Power BI-tjenesten. Læs mere om [Hvad er Power BI Desktop](../desktop-what-is-desktop.md).
+Power BI Desktop er et gratis program, du kan installere direkte på dine egne computere. Power BI Desktop fungerer i sammenhæng med Power BI-tjenesten.  Datateknikere, administratorer og udviklere arbejder med Power BI Desktop for at oprette rapporter og gøre dem tilgængelige for *forbrugere* af Power BI-tjenesten. Læs mere om [Hvad er Power BI Desktop](../desktop-what-is-desktop.md).
 
 ## <a name="what-do-i-need-to-use-the-power-bi-service"></a>Hvad kræves der, for at jeg kan bruge Power BI-tjenesten?
 
-Kun en webbrowser og arbejdsmailadresse. Du kan tilmelde dig med en *.gov*- og *.mil*-mailadresse. Du kan finde flere oplysninger under [Tilmeld din US Government-organisation til Power BI-tjenesten](../service-govus-signup.md).
+Kun en webbrowser og arbejdsmailadresse. Du kan tilmelde dig med en *.gov*- eller *.mil*-mailadresse. Du kan finde flere oplysninger under [Tilmeld din US Government-organisation til Power BI-tjenesten](../service-govus-signup.md).
 
 ## <a name="why-do-i-have-to-sign-up-with-my-work-email"></a>Hvorfor skal jeg logge på med min arbejdsmail?
 
@@ -88,7 +77,7 @@ Du kan bruge følgende ressourcer til at komme i gang:
 * [Power BI-blog](http://blogs.msdn.com/b/powerbi/)
 * [Webinarer](../webinars.md)
 * Sådan kommer du i gang med vores [YouTube-kanal](https://www.youtube.com/user/mspowerbi)
-* [Kom i gang med Power BI](../service-get-started.md)-artikel
+* Artiklen [Kom i gang med Power BI som en *forbruger*](power-bi-consumer-landing.md)
 * [Tilmeld dig vores community](https://community.powerbi.com/), og stil spørgsmål
 * Se [10 tips til at få hjælp](../service-tips-for-finding-help.md) for at få flere forslag.
 
@@ -126,6 +115,7 @@ Du kan som i mange andre Microsoft-tjenester og -software benytte en nem måde a
 
 ## <a name="next-steps"></a>Næste trin
 
-* [Hvad er Power BI?](../power-bi-overview.md)
+* [Hvad er en Power BI-forbruger?](end-user-consumer.md)
+* [Hvordan benytter en forbruger Power BI?](end-user-reading-view.md)
 * Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 * Har du stadig problemer? Gå til [supportsiden for Power BI](https://powerbi.microsoft.com/support/)

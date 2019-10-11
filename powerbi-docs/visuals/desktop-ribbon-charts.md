@@ -1,6 +1,6 @@
 ---
 title: Brug bånddiagrammer i Power BI
-description: Opret og brug bånddiagrammer i Power BI-tjenesten og Power BI Desktop
+description: Opret og brug bånddiagrammer i Power BI Desktop
 author: mihart
 manager: kvivek
 ms.reviewer: ''
@@ -10,20 +10,34 @@ ms.topic: conceptual
 ms.date: 06/10/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3400071c6b8cee472bb61475e6d3482189680563
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: e6044f3a2cfdbfc40d0497ebde25780336dc1dc4
+ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840108"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71715489"
 ---
 # <a name="use-ribbon-charts-in-power-bi"></a>Brug bånddiagrammer i Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Du kan bruge bånddiagrammer til at visualisere data og hurtigt finde ud af, hvilken kategori af data der har den højeste placering (største værdi). Bånddiagrammer er effektive til at vise ændringer af placeringer, hvor den højeste placering (værdi) altid vises øverst for hver tidsperiode. 
 
-![bånddiagram](media/desktop-ribbon-charts/ribbon-charts_01.png)
+![bånddiagram](media/desktop-ribbon-charts/ribbon-charts-01.png)
+
+## <a name="prerequisites"></a>Forudsætninger
+
+I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+
+1. Vælg **Fil** > **Åbn** i øverste venstre afsnit af menulinjen
+   
+2. Find din kopi af **PBIX-filen med eksemplet Detailhandelsanalyse**
+
+1. Åbn **PBIX-filen med eksemplet Detailhandelsanalyse** i rapportvisning ![ikon for skærmbillede af rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
 
 ## <a name="create-a-ribbon-chart"></a>Opret et bånddiagram
-Hvis du vil følge med, skal du åbne [rapporten over et eksempel på analyse af detailhandel](../sample-retail-analysis.md). 
 
 1. Du opretter et bånddiagram ved at vælge **bånddiagram** på panelet **Visualiseringer**.
 
@@ -31,13 +45,13 @@ Hvis du vil følge med, skal du åbne [rapporten over et eksempel på analyse af
 
     Med bånddiagrammer tilknyttes en kategori af data for den visualiserede tidsperiode ved hjælp af bånd, hvilket gør det muligt at se, hvordan en bestemt kategori placeres over hele diagrammets x-akse (normalt tidslinjen).
 
-2. Vælg felter for **Akse**, **Forklaring** og **Værdi**.  I dette eksempel har vi valgt: **Dato**, **Kategori** og **Dette års salg**.  
+2. Vælg felter for **Akse**, **Forklaring** og **Værdi**.  I dette eksempel har vi valgt: **Butik** > **OpenDate**, **Vare** > **Kategori** og **Salg** > **Dette års salg** > **Værdi**.  
 
     ![valgte felter](media/desktop-ribbon-charts/power-bi-ribbon-values.png)
 
-    Da datasættet kun indeholder data for ét år, har vi fjernet feltet **År** fra brønden **Akse**. 
+    Eftersom datasættet kun indeholder data for ét år, har vi også fjernet feltet **År** og **Kvartal** fra kategorien **Akse**.
 
-3. I bånddiagrammet kan du se placeringen for hver anden måned. Bemærk, hvordan placering ændres over tid.  Kategorien Hjem flytter f.eks. fra tredje til fjerde og tilbage til tredje igen. Kategorien Juniorer flytter fra tredje til femte i juli. 
+3. I bånddiagrammet kan du se placeringen for hver måned. Bemærk, hvordan placering ændres over tid. Kategorien Hjem rykker for eksempel fra anden til femte fra februar til marts.
 
     ![bånddiagram](media/desktop-ribbon-charts/power-bi-ribbon.png)
 
@@ -57,7 +71,7 @@ Da bånddiagrammet ikke har mærkater for y-aksen, kan det være en god idé at 
 
 ![formateringsindstillinger for datamærkater](media/desktop-ribbon-charts/power-bi-labels.png)
 
-Angiv formateringsindstillingerne for dine datamærkater.  I dette eksempel har vi sat tekstfarven til hvid, decimalpladserne til nul og visningsenheder til tusinde. 
+Angiv formateringsindstillingerne for dine datamærkater. I dette eksempel har vi sat tekstfarven til hvid og visningsenheder til tusinde.
 
 ![båndskabelon i ruden Visualisering](media/desktop-ribbon-charts/power-bi-data-labels.png)
 
