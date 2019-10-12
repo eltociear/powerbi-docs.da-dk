@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 508da47272313d9781fdd66c2ca367dcf9e433e5
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 8ecec706c281b2a36c342ea852eebb4a8559a6fd
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715238"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239940"
 ---
 # <a name="key-performance-indicator-kpi-visuals"></a>KPI-visualiseringer (Key Performance Indicator)
 
@@ -50,12 +50,12 @@ Et KPI-datasæt skal indeholde målværdier for en KPI. Hvis dit datasæt ikke i
 I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Vælg **Fil** > **Åbn** i øverste venstre afsnit af menulinjen
-   
-2. Find din kopi af **PBIX-filen med eksemplet Detailhandelsanalyse**
 
-1. Åbn **PBIX-filen med eksemplet Detailhandelsanalyse** i rapportvisning ![ikon for skærmbillede af rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+1. Find din kopi af **PBIX-filen med eksemplet Detailhandelsanalyse**
 
-1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
+1. Åbn **PBIX-filen med eksemplet Detailhandelsanalyse** i rapportvisning. ![Skærmbillede af rapportvisningsikonet.](media/power-bi-visualization-kpi/power-bi-report-view.png)
+
+1. Vælg **+** for at tilføje en ny side. ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png)
 
 ## <a name="how-to-create-a-kpi"></a>Sådan opretter du et KPI
 
