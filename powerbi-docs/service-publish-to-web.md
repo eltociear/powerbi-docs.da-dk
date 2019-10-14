@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/16/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86fc2f8d13cdcd006c01dfff0114c13cc78f5e65
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9824b3340da694c00784f34b0c6245cafbf69383
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987015"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239911"
 ---
 # <a name="publish-to-web-from-power-bi"></a>Publicer på internettet fra Power BI
 
@@ -113,7 +113,7 @@ Når du har oprettet en integreringskode for **Publicer på internettet**, kan d
 
 ## <a name="updates-to-reports-and-data-refresh"></a>Opdateringer af rapporter og data
 
-Når du har oprettet din integreringskode for **Publicer på internettet** og deler den, opdateres rapporten med de ændringer, du foretager, og linket til integreringskoden bliver straks aktivt. Alle, der åbner linket, kan se den. Men efter denne indledende handling kan opdateringer af rapporter eller visuelle elementer tage ca. én time, før de bliver synlige for dine brugere. Hvis dine opdateringer skal være tilgængelige med det samme, kan du slette integreringskoden og oprette en ny. Se afsnittet [**Sådan fungerer det**](#howitworks) senere i denne artikel, hvis du vil vide mere. 
+Når du har oprettet din integreringskode for **Publicer på internettet** og deler den, opdateres rapporten med de ændringer, du foretager, og linket til integreringskoden bliver straks aktivt. Alle, der åbner linket, kan se den. Men efter denne indledende handling kan opdateringer af rapporter eller visuelle elementer tage ca. én time, før de bliver synlige for dine brugere. Se afsnittet [**Sådan fungerer det**](#howitworks) senere i denne artikel, hvis du vil vide mere. 
 
 ## <a name="data-refresh"></a>Opdatering af data
 

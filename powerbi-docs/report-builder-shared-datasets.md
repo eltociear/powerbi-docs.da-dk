@@ -7,12 +7,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 50f78709ce7ce302ce79df5eb383af25f55d539a
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 1a46c1fb8e9f31bd5199fccfaecb16cece144b5a
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68471577"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72021041"
 ---
 # <a name="use-shared-datasets-in-power-bi-report-builder"></a>Brug delte datasæt i Power BI Report Builder
 
@@ -20,14 +20,14 @@ Du kan bruge et datasæt, som du opretter i Power BI Desktop, som en datakilde t
 
 ![Power BI Desktop til Report Builder sideinddelt rapport](media/report-builder-shared-datasets/power-bi-desktop-report-builder-arrow-26-pgs.png)
 
-Datasættet behøver ikke at være i et arbejdsområde i en Premium-kapacitet, og du behøver ikke at være medlem af arbejdsområdet. Du skal blot have [Build-tilladelse](service-datasets-build-permissions.md#build-permissions-for-shared-datasets) til datasættet. Hvis du vil publicere din sideinddelte rapport, skal du have en Power BI Pro-licens. Du skal også som minimum have rollen bidragyder for et arbejdsområde i en Premium-kapacitet.
+Datasættet behøver ikke at være i et arbejdsområde i en Premium-kapacitet, og du behøver ikke at være medlem af arbejdsområdet. Du skal blot have [Build-tilladelse](service-datasets-build-permissions.md) til datasættet. Hvis du vil publicere din sideinddelte rapport, skal du have en Power BI Pro-licens. Du skal også som minimum have rollen bidragyder for et arbejdsområde i en Premium-kapacitet.
 
 ## <a name="what-you-need"></a>Det skal du bruge
 
 Her er en liste over, hvad du skal bruge, og hvad du ikke behøver for at bruge et delt datasæt i Power BI Report Builder.
 
 - Power BI Report Builder. [Download og installér Power BI Report Builder](https://go.microsoft.com/fwlink/?linkid=2086513).
-- Hvis du vil have adgang til et Power BI datasæt, skal du have Build-tilladelse til datasættet. Læs mere om [Build-tilladelse](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+- Hvis du vil have adgang til et Power BI datasæt, skal du have Build-tilladelse til datasættet. Læs mere om [Build-tilladelse](service-datasets-build-permissions.md).
 - Du behøver ikke en Power BI Pro-licens for at oprette en sideinddelt rapport i Report Builder. 
 - Du skal have en Power BI Pro-licens for at publicere din sideinddelte rapport. Du skal også som minimum have rollen bidragyder for et arbejdsområde i en Premium-kapacitet. 
 - Valgfrit: Hvis du vil følge med i denne artikel, kan du downloade filen Power BI Desktop [Retail Analysis sample.pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), åbne den i Power BI Desktop og tilføje en tabel med mange kolonner. Slå **Totaler** fra i ruden **Formular**. Publicer den derefter til et arbejdsområde i Power BI-tjenesten.
