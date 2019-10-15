@@ -15,9 +15,9 @@
         - name: Selvstudier
           items:
             - name: Udvikl en Power BI-visualisering
-              href: custom-visual-develop-tutorial.md
+              href: visuals/custom-visual-develop-tutorial.md
             - name: Tilføj formateringsindstillinger
-              href: custom-visual-develop-tutorial-format-options.md
+              href: visuals/custom-visual-develop-tutorial-format-options.md
             - name: Tilføj enhedstests for det visuelle projekt
               href: visuals/unit-tests-introduction.md
         - name: Begreber
