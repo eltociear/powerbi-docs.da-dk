@@ -165,6 +165,8 @@
               href: desktop-connect-to-web.md
             - name: Opret forbindelse til et Snowflake-databehandlingswarehouse i Power BI Desktop
               href: desktop-connect-snowflake.md
+            - name: Opret forbindelse til Azure Cost Management-data
+              href: desktop-connect-azure-cost-management.md
             - name: Opret forbindelse til Microsoft Azure Consumption Insights data
               href: desktop-connect-azure-consumption-insights.md
             - name: Brug SAP HANA i Power BI Desktop
@@ -217,6 +219,8 @@
               href: desktop-import-and-display-kpis.md
         - name: Opret rapporter
           items:
+            - name: Automatisk sideopdatering i Power BI Desktop (eksempelvisning)
+              href: desktop-automatic-page-refresh.md
             - name: Brug ydeevneanalyse i Power BI Desktop
               href: desktop-performance-analyzer.md
             - name: Visuelle elementer til rapporter
