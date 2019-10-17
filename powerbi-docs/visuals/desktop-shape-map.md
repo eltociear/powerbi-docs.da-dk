@@ -10,14 +10,17 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 1d07c678b02f77689d24d067ca58a4e28ac70cb0
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 6543263c0e6c3395479169e8b02034e4a9c78f7b
+ms.sourcegitcommit: 3b4de8785d17c9e00b041cff7bd4d39829316437
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623926"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72164011"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Figurkort i Power BI Desktop (prøveversion)
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Opret en visualisering af typen **Figurkort** til at sammenligne områder på et kort ved hjælp af farver. I modsætning til visualiseringen **Kort** kan **Figurkort** ikke vise den nøjagtige geografiske placering af datapunkter på et kort. I stedet er dens primære formål at vise relative sammenligninger mellem områder på et kort ved at give dem forskellige farver.
 
 Visualiseringen **Figurkort** er baseret på ESRI/TopoJSON-kort, der kan anvendes med brugerdefinerede kort, som du opretter. Eksempler på brugerdefinerede kort er: geografiske kort, kort over siddepladser, kort over etager med mere. Muligheden for at bruge brugerdefinerede kort er ikke tilgængelig i denne evalueringsversion af **Figurkort**.
@@ -113,7 +116,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="australia-states"></a>Australien: Stater
 
-| id | forkortelse | iso | navn | postal |
+| Id | forkortelse | iso | navn | postal |
 | --- | --- | --- | --- | --- |
 | au-wa |WA |AU-WA |Western Australia |WA |
 | au-vic |Vic |AU-VIC |Victoria |VIC |
@@ -126,7 +129,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="austria-states"></a>Østrig: Stater
 
-| id | iso | navn | navn-en | postnummer |
+| Id | iso | navn | navn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | at-wi |AT-9 |Wien |Vienna |WI |
 | at-vo |AT-8 |Vorarlberg |Vorarlberg |VO |
@@ -140,7 +143,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="brazil-states"></a>Brasilien: Stater
 
-| id |
+| Id |
 | --- |
 | Tocantins |
 | Pernambuco |
@@ -176,7 +179,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="canada-provinces"></a>Canada: Provinser
 
-| id | iso | navn | postnummer |
+| Id | iso | navn | postnummer |
 | --- | --- | --- | --- |
 | ca-nu |CA-NU |Nunavut |NU |
 | ca-nt |CA-NT |Northwest Territories |NT |
@@ -194,7 +197,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="france-regions"></a>Frankrig: Regioner
 
-| id | navn | navn-en |
+| Id | navn | navn-en |
 | --- | --- | --- |
 | Alsace |Alsace |Alsace |
 | Rhone-Alpes |Rhône-Alpes |Rhone-Alpes |
@@ -221,7 +224,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="germany-states"></a>Tyskland: Stater
 
-| id | iso | navn | navn-en | postnummer |
+| Id | iso | navn | navn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | de-be |DE-BE |Berlin |Berlin |BE |
 | de-th |DE-TH |Thüringen |Thuringia |TH |
@@ -242,7 +245,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="ireland-counties"></a>Irland: Amter
 
-| id |
+| Id |
 | --- |
 | Wicklow |
 | Wexford |
@@ -273,7 +276,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="italy-regions"></a>Italien: Regioner
 
-| id | iso | navn | navn-en | postnummer |
+| Id | iso | navn | navn-en | postnummer |
 | --- | --- | --- | --- | --- |
 | it-vn |IT-34 |Veneto |Veneto |VN |
 | it-vd |IT-23 |Valle d'Aosta |Aosta Valley |VD |
@@ -298,7 +301,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="mexico-states"></a>Mexico: Stater
 
-| id | abreviatura | iso | navn | navn-en | postnummer |
+| Id | abreviatura | iso | navn | navn-en | postnummer |
 | --- | --- | --- | --- | --- | --- |
 | mx-zac |Zac. |MX-ZAC |Zacatecas |Zacatecas |ZA |
 | mx-yuc |Yuc. |MX-YUC |Yucatán |Yucatan |YU |
@@ -335,7 +338,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="netherlands-provinces"></a>Nederlandene: Provinser
 
-| id | iso | navn | navn-en |
+| Id | iso | navn | navn-en |
 | --- | --- | --- | --- |
 | nl-zh |NL-ZH |Zuid-Holland |South Holland |
 | nl-ze |NL-ZE |Zeeland |Zeeland |
@@ -352,7 +355,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="uk-countries"></a>Storbritannien: Lande
 
-| id | iso | navn |
+| Id | iso | navn |
 | --- | --- | --- |
 | gb-wls |GB-WLS |Wales |
 | gb-sct |GB-SCT |Skotland |
@@ -361,7 +364,7 @@ Brug følgende **Områdenøgler** i denne prøveversion for at afprøve **Figurk
 
 ### <a name="usa-states"></a>USA: Stater
 
-| id | navn | postnummer |
+| Id | navn | postnummer |
 | --- | --- | --- |
 | us-mi |Michigan |MI |
 | us-ak |Alaska |AK |

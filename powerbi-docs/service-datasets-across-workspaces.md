@@ -7,15 +7,15 @@ ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/16/2019
+ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: ace40fed472dc516cce5a761544cc5365566f3cd
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: e086cc89a24760bce0c4a45efd558dc47495bd04
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074114"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020783"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Introduktion til datasæt på tværs af arbejdsområder (prøveversion)
 
@@ -23,7 +23,7 @@ Business intelligence er en aktivitet baseret på samarbejde. Det er vigtigt at 
 
 ![Vælg et delt datasæt](media/service-datasets-across-workspaces/power-bi-select-shared-dataset.png)
 
-I Power BI kan forfattere af datasæt styre, hvem der har adgang til deres data, ved hjælp af [tilladelsen Opret](service-datasets-build-permissions.md#build-permissions-for-shared-datasets). Forfatterne af datasæt kan også *certificere* eller *fremhæve* datasæt, så andre kan finde dem. På denne måde ved forfattere af rapporter, hvilke datasæt der er i høj kvalitet og officielle, og de kan bruge disse datasæt, uanset hvor de er forfattere i Power BI. Lejeradministratorer har en ny lejerindstilling til at [styre brugen af datasæt på tværs af arbejdsområder](service-datasets-admin-across-workspaces.md).
+I Power BI kan forfattere af datasæt styre, hvem der har adgang til deres data, ved hjælp af [tilladelsen Opret](service-datasets-build-permissions.md). Forfatterne af datasæt kan også *certificere* eller *fremhæve* datasæt, så andre kan finde dem. På denne måde ved forfattere af rapporter, hvilke datasæt der er i høj kvalitet og officielle, og de kan bruge disse datasæt, uanset hvor de er forfattere i Power BI. Lejeradministratorer har en ny lejerindstilling til at [styre brugen af datasæt på tværs af arbejdsområder](service-datasets-admin-across-workspaces.md).
 
 ## <a name="dataset-sharing-and-the-new-workspace-experience"></a>Deling af datasæt og den nye arbejdsområdeoplevelse
 
@@ -44,7 +44,7 @@ Når du finder en rapport, du vil bruge i et arbejdsområde eller en app, kan du
 
 ## <a name="build-permission-for-datasets"></a>Tilladelsen Opret for datasæt
 
-Hvis du er forfatteren af et datasæt, kan du med tilladelsestypen Opret bestemme, hvem i din organisation der kan oprette nyt indhold i dine datasæt. Personer med tilladelsen Opret kan også oprette nyt indhold i datasæt uden for Power BI, f.eks. Excel-ark via Analysér i Excel, XMLA og eksportér. Læs mere om [tilladelsen Opret](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Hvis du er forfatteren af et datasæt, kan du med tilladelsen Opret bestemme, hvem i din organisation der kan oprette nyt indhold i dine datasæt. Personer med tilladelsen Opret kan også oprette nyt indhold i datasæt uden for Power BI, f.eks. Excel-ark via Analysér i Excel, XMLA og eksportér. Læs mere om [tilladelsen Opret](service-datasets-build-permissions.md).
 
 ## <a name="promotion-and-certification"></a>Fremhævning og certificering
 
@@ -54,19 +54,17 @@ Hvis du opretter datasæt, som andre kan få glæde af, kan du gøre det nemmere
 
 De specifikke funktioner og oplevelser, der er baseret på funktioner for delte datasæt, er givet i licens i henhold til deres eksisterende scenarier. Eksempel:
 
-- Generelt kan alle registrere og oprette forbindelse til delte datasæt. Brugere uden en Pro-licens kan dog kun oprette forbindelse til datasæt, der er placeret i deres egen version af Mit arbejdsområde.
-- Brugere uden en Pro-licens kan kun bruge rapporter og dashboards, der er baseret på et delt datasæt, hvis begge arbejdsområder (det med indholdet og det med datasættet) hostes i en Premium-kapacitet.
-- I Power BI Desktop kan brugere uden en Pro-licens kun se datasæt fra deres egen version af Mit arbejdsområde.
+- Generelt kan alle finde og oprette forbindelse til delte datasæt – det er ikke funktion, som er begrænset til Premium.
+- Brugere uden en Pro-licens kan kun bruge datasæt på tværs af arbejdsområder til oprettelse af rapporter, hvis disse datasæt er placeret i brugerens personlige Mit arbejdsområde eller i et Premium-understøttet arbejdsområde. Den samme licensbegrænsning gælder, uanset om de opretter rapporter i Power BI Desktop eller i Power BI-tjenesten.
 - Det kræver en Pro-licens at kopiere rapporter mellem arbejdsområder.
 - Hvis du vil kopiere rapporter fra en app, skal du have en Pro-licens, som er påkrævet for organisationsindholdspakker.
 - Det kræver en Pro-licens at fremhæve og certificere datasæt.
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
+- Som appudgiver skal du være sikker på, at din målgruppe har adgang til datasæt uden for apparbejdsområdet. Ellers vil brugerne opleve problemer, når de interagerer med din app: Rapporter åbnes ikke uden adgang til datasættet, og dashboardfelter vises som låste. Brugerne kan heller ikke åbne appen, hvis det første element i navigationen er en rapport, uden at have adgang til datasættet.
 - Hvis du vil oprette en rapport oven på et datasæt i et andet arbejdsområde, kræver det, at den nye arbejdsområdeoplevelse er begge steder: Rapporten skal være i en ny arbejdsområdeoplevelse og datasættet skal være i en ny arbejdsområdeoplevelse.
-- Lad os sige, at du opretter en rapport i arbejdsområde A, der er baseret på et datasæt i arbejdsområde B. Når du opretter en app til arbejdsområde A, kan du kun inkludere den pågældende rapport i appen til arbejdsområde A, hvis du også er medlem af arbejdsområde B.
 - I et klassisk arbejdsområde viser datasæts registreringsoplevelse kun datasættene i det pågældende arbejdsområde.
-- Hvis du vil føje en rapport baseret på et delt datasæt til en app, skal du være medlem af datasættets arbejdsområde. Dette er et kendt problem.
 - "Publicer på internettet" er designet til ikke at virke for en rapport, der er baseret på et delt datasæt.
 - Hvis to personer er medlem af et arbejdsområde, der åbner et delt datasæt, er det er muligt, at kun én af dem kan se det relaterede datasæt i arbejdsområdet. Det er kun personer, der som minimum har læseadgang til datasættet, som kan se det delte datasæt. 
 

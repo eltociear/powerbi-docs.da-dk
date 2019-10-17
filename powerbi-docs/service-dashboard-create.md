@@ -10,49 +10,46 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: b50d247f54cfe2af4cefbd14b9528b1dfa263acf
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 108882dd0f3b61d6cb19fd18290b44316231f3cb
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624315"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020325"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Opret et Power BI-dashboard fra en rapport
 Du har læst [Introduktion til dashboards i Power BI](service-dashboards.md), og nu vil du oprette dit eget. Der er mange forskellige måder at oprette et dashboard på. Du kan f.eks. oprette et dashboard fra en rapport, fra bunden, fra et datasæt, ved at kopiere et eksisterende dashboard og meget mere.  
 
-Da det kan virke overvældende, når du starter for første gang, begynder vi med hurtigt og nemt at oprette et dashboard, som fastgør visualiseringer fra en rapport, der allerede er oprettet. 
+Vi begynder med at oprette et dashboard hurtigt og nemt, hvor visualiseringer fastgøres fra en rapport, der allerede er oprettet. 
 
-Når du har gennemført denne hurtige start, har du en god forståelse af:
+Når du har gennemgået hele denne artikel, vil du have en god forståelse af:
 - Forholdet mellem dashboards og rapporter
 - Hvordan du åbner redigeringsvisningen i rapporteditoren
 - Sådan fastgøres felter 
 - Sådan navigerer du mellem et dashboard og en rapport 
-
-## <a name="who-can-create-a-dashboard"></a>Hvem kan oprette et dashboard?
-Muligheden for at oprette et dashboard anses som en *opretterfunktion*  og kræver redigeringsrettigheder til rapporten. Redigeringstilladelser er tilgængelige for rapportoprettere og de kolleger, opretteren giver adgang til. Hvis David f.eks. opretter en rapport i workspaceABC og derefter tilføjer dig som medlem af dette arbejdsområde, har både du og David redigeringsrettigheder. På anden side, hvis en rapport er blevet delt med dig direkte eller som en del af en [Power BI-app](service-create-distribute-apps.md) (du *bruger* rapporten), kan du ikke fastgøre felter til et dashboard.
  
 ![Dashboard](media/service-dashboard-create/power-bi-completed-dashboard-small.png)
 
 > [!NOTE] 
-> Dashboards er en funktion i Power BI-tjenesten ikke Power BI Desktop. Selvom der kan ikke oprettes dashboards på Power BI-mobilenheder, kan du [få dem vist og dele dem](consumer/mobile/mobile-apps-view-dashboard.md) der.
+> Dashboards er en funktion i Power BI-tjenesten ikke Power BI Desktop. Selvom du ikke opretter dashboards i Power BI-mobilapps, kan du [få vist og dele](consumer/mobile/mobile-apps-view-dashboard.md) dem der.
 >
 > 
 
 ## <a name="video-create-a-dashboard-by-pinning-visuals-and-images-from-a-report"></a>Video: Opret et dashboard ved at fastgøre visualiseringer og billeder fra en rapport
-Se Amanda oprette et nyt dashboard ved at fastgøre visualiseringer fra en rapport. Følg derefter fremgangsmåden i [Importér et datasæt med en rapport](#import-a-dataset-with-a-report) på egen hånd ved hjælp af Indkøbsanalyse-eksemplet.
+Se Amanda oprette et nyt dashboard ved at fastgøre visualiseringer fra en rapport. Følg derefter fremgangsmåden i det næste afsnit [Importér et datasæt med en rapport](#import-a-dataset-with-a-report) på egen hånd ved hjælp af eksemplet på indkøbsanalyse.
     
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 
 ## <a name="import-a-dataset-with-a-report"></a>Importér et datasæt med en rapport
-Vi importerer et af eksempeldatasættene i Power BI og bruger det til at oprette vores nye dashboard. Det eksempel, vi bruger, er en Excel-projektmappe med to PowerView-ark. Når du importerer projektmappen til Power BI, føjes der et datasæt og en rapport til dit arbejdsområde. Rapporten oprettes automatisk ud fra PowerView-arkene.
+I denne trinvise vejledning importerer vi et af eksempeldatasættene i Power BI og bruger det til at oprette vores nye dashboard. Det eksempel, vi bruger, er en Excel-projektmappe med to PowerView-ark. Når du importerer projektmappen til Power BI, føjes der et datasæt og en rapport til dit arbejdsområde. Rapporten oprettes automatisk ud fra PowerView-arkene.
 
-1. Download [Excel-filen](http://go.microsoft.com/fwlink/?LinkId=529784) med Indkøbsanalyse-eksemplet. Det anbefales, at du gemme den i din OneDrive for Business.
+1. Download Excel-filen med [eksemplet på indkøbsanalyse](http://go.microsoft.com/fwlink/?LinkId=529784). Det anbefales, at du gemme den i din OneDrive for Business.
 2. Åbn Power BI-tjenesten i din browser (app.powerbi.com).
 3. Vælg **Mit arbejdsområde** fra venstre navigationsrude, og vælg derefter **Hent Data**.
 
-    ![Venstre navigationsrude](media/service-dashboard-create/power-bi-get-data3.png)
-5. Vælg **Filer**.
+    ![Venstre navigationsrude](media/service-dashboard-create/power-bi-get-data-new-look.png)
+5. Under **Filer** skal du vælge **Hent**.
 
    ![Hent filer](media/service-dashboard-create/power-bi-select-files.png)
 6. Naviger til den placering, hvor du har gemt Excel-filen med eksempel på indkøbsanalyse. Markér den, og vælg **Opret forbindelse**.
@@ -65,8 +62,11 @@ Vi importerer et af eksempeldatasættene i Power BI og bruger det til at oprette
 
    ![Meddelelse om fuldførelse](media/service-dashboard-create/power-bi-view-datasetnew.png)
 
+> [!TIP]
+> Vidste du det? Du kan indsnævre den venstre navigationslinje ved at vælge ikonet med tre linjer øverst ![ikon for vis eller skjul navigationsrude](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). Det giver dig mere plads til selve rapporten.
+
 ### <a name="open-the-report-and-pin-tiles-to-your-dashboard"></a>Åbn rapporten, og fastgør felter på dit dashboard
-1. I det samme arbejdsområde skal du vælge fanen **Rapporter** og derefter vælge **Indkøbsanalyseeksempel** for at åbne rapporten.
+1. I det samme arbejdsområde skal du vælge fanen **Rapporter** og derefter vælge **Eksempel på indkøbsanalyse** for at åbne rapporten.
 
     ![Fanen Rapporter](media/service-dashboard-create/power-bi-reports.png) Rapporten åbnes som standard i Læsevisning. Bemærk, at den har to faner nederst: **Rabatanalyse** og **Oversigt over forbrug**. Hver fane repræsenterer en side i rapporten.
 

@@ -1,25 +1,25 @@
 ---
 title: Power BI til rapportdesignere
-description: Opretter du forbindelse til data, designer forespørgsler og opretter rapporter og dashboards i Power BI? Er du udvikler, der opretter dine egne apps, eller Power BI-administrator?
+description: Opretter du forbindelse til data, designer forespørgsler og opretter rapporter og dashboards i Power BI? Er du Power BI-administrator?
 author: maggiesMSFT
 manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: landing-page
-ms.date: 03/20/2019
+ms.date: 10/07/2019
 ms.author: maggies
 layout: LandingPage
 LocalizationGroup: Get started
-ms.openlocfilehash: 2ec8f0813807e2b92983398a74a02d46e6d4f280
-ms.sourcegitcommit: 277fadf523e2555004f074ec36054bbddec407f8
+ms.openlocfilehash: 4defed78228805a3f61447def82b3c3d406103d3
+ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68271805"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72239886"
 ---
 # <a name="power-bi-for-report-designers"></a>Power BI til rapportdesignere
 
-Opretter du forbindelse til data, designer forespørgsler og opretter rapporter og dashboards i Power BI? Er du udvikler, der opretter dine egne apps? Administrerer du Power BI? Disse ressourcer hjælper dig med at komme op i fart. Velkommen!
+Opretter du forbindelse til data, designer forespørgsler og opretter rapporter og dashboards i Power BI? Administrerer du Power BI? Disse ressourcer hjælper dig med at komme op i fart. Velkommen!
 
 Er du i højere grad Power BI-forbruger? Velkommen til dig også. Vi anbefaler, at du starter med [Power BI til forbrugere](consumer/power-bi-consumer-landing.md).
 
@@ -157,46 +157,6 @@ Er du i højere grad Power BI-forbruger? Velkommen til dig også. Vi anbefaler, 
                                           <p></p>
                                                 <a href="service-how-to-collaborate-distribute-dashboards-reports.md">Hvordan samarbejder og deler jeg?</a><br/>
                                                 <a href="service-create-workspaces.md">Apparbejdsområder i Power BI-tjenesten</a> 
-                                    </div> 
-                              </div> 
-                        </div> 
-                  </div> 
-            </li>
-            <li> 
-                  <div class="cardSize"> 
-                        <div class="cardPadding"> 
-                              <div class="card"> 
-                                    <div class="cardImageOuter">
-                                          <div class="cardImage">
-                                                <img alt="Develop for Power BI" src="media/power-bi-creator-landing/power-bi-designer-develop-power-bi.svg" data-linktype="relative-path">
-                                          </div>
-                                    </div>
-                                    <div class="cardText"> 
-                                          <h3>Udvikl til Power BI</h3> 
-                                          <p></p>
-                                                <a href="developer/embedding.md">Integrer med Power BI</a><br/> 
-                                                <a href="developer/custom-visual-develop-tutorial.md">Udvikl brugerdefinerede visuelle elementer</a><br/> 
-                                                <a href="https://docs.microsoft.com/rest/api/power-bi">REST-API'er til Power BI</a>
-                                    </div> 
-                              </div> 
-                        </div> 
-                  </div> 
-            </li>
-            <li> 
-                  <div class="cardSize"> 
-                        <div class="cardPadding"> 
-                              <div class="card"> 
-                                    <div class="cardImageOuter">
-                                          <div class="cardImage">
-                                                <img alt="Administer Power BI" src="media/power-bi-creator-landing/power-bi-designer-administer-power-bi.svg" data-linktype="relative-path">
-                                          </div>
-                                    </div>
-                                    <div class="cardText"> 
-                                          <h3>Administrer Power BI</h3> 
-                                          <p></p>
-                                                <a href="service-admin-administering-power-bi-in-your-organization.md">Hvad er Power BI-administration?</a><br/> 
-                                                <a href="service-admin-purchasing-power-bi-pro.md">Køb Power BI Pro-licenser</a><br/>
-                                                <a href="service-admin-reference.md">PowerShell-cmdlet'er, REST-API'er og SDK til .NET</a>
                                     </div> 
                               </div> 
                         </div> 

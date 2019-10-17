@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8d48214cffcc17da9c105f7277b721c03946d5c2
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: eb1940f7d5a4e809590b5b425b8005776040a5cc
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68961803"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020663"
 ---
 # <a name="tutorial-create-and-publish-a-power-bi-organizational-content-pack"></a>Selvstudium: Opret og publicer en organisationsindholdspakke til Power BI
 
@@ -26,7 +26,7 @@ Oprettelse af indholdspakker adskiller sig fra deling af dashboards eller samarb
 Oprettelse af en organisationsindholdspakke kræver en [Power BI Pro-konto](https://powerbi.microsoft.com/pricing) til dig og dine kollegaer.
 
 > [!NOTE]
-> Du kan ikke oprette eller installere organisationsindholdspakker i prøveversionen af nye arbejdsområdeoplevelser. Hvis du ikke er startet endnu, er det et godt tidspunkt at opgradere dine indholdspakker til apps. Få [mere at vide om den nye arbejdsområdeoplevelse](service-create-the-new-workspaces.md).
+> Du kan ikke oprette eller installere organisationsindholdspakker i de nye arbejdsområdeoplevelser. Hvis du ikke er startet endnu, er det et godt tidspunkt at opgradere dine indholdspakker til apps. Få [mere at vide om den nye arbejdsområdeoplevelse](service-create-the-new-workspaces.md).
 
 ## <a name="create-and-publish-a-content-pack"></a>Opret og udgiv en indholdspakke
 

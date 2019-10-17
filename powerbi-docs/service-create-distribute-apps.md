@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: f54906643bba8c631c8d8052309ad3ff512ad3fa
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 7aa9ec22eec07632a071b5ffaadfe06f221897d7
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305750"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020232"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicer en app i Power BI
 
@@ -30,7 +30,7 @@ Forretningsbrugere kan få dine apps på flere måder:
 - Du kan sende dem et direkte link.
 - Du kan automatisk installere dem i dine kollegaers Power BI-konti, hvis Power BI-administratoren giver dig tilladelse til det.
 
-Du kan oprette appen med tilpasset, indbygget navigation, så brugerne nemt kan finde rundt i dit indhold. De kan ikke ændre indholdet af appen. De kan interagere med det enten i Power BI-tjenesten eller en af mobilappsene – og selv filtrere, markere og sortere data. De får automatisk opdateringer, og du kan styre, hvor ofte dataene opdateres. Du kan også give dem adgang til at oprette forbindelse til de underliggende datasæt og oprette kopier af rapporterne i appen. Læs mere om [tilladelsen Opret](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Du kan oprette appen med tilpasset, indbygget navigation, så brugerne nemt kan finde rundt i dit indhold. De kan ikke ændre indholdet af appen. De kan interagere med det enten i Power BI-tjenesten eller en af mobilappsene – og selv filtrere, markere og sortere data. De får automatisk opdateringer, og du kan styre, hvor ofte dataene opdateres. Du kan også give dem tilladelsen Opret for at oprette forbindelse til de underliggende datasæt og oprette kopier af rapporterne i appen. Læs mere om [tilladelsen Opret](service-datasets-build-permissions.md).
 
 ## <a name="licenses-for-apps"></a>Licenser til apps
 Hvis du vil oprette eller opdatere en app, skal du have en Power BI Pro-licens. Der er to muligheder for *forbrugere*.
@@ -166,11 +166,11 @@ Når du markerer indstillingen for at **tillade brugere at oprette forbindelse t
 - Søge efter disse datasæt i Power BI Desktop og i brugergrænsefladen til hentning af data i Power BI-tjenesten.
 - Oprette rapporter og dashboards baseret på disse datasæt.
 
-Når du fjerner markeringen af denne indstilling, får nye brugere, du føjer til appen, ikke længere tilladelsen Opret. Eksisterende tilladelser for de underliggende datasæt for eksisterende brugere af appen ændres dog ikke. Du kan fjerne tilladelsen Opret manuelt fra brugere af appen, som ikke længere skal have den. Læs mere om [tilladelsen Opret](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Når du fjerner markeringen af denne indstilling, får nye brugere, du føjer til appen, ikke længere tilladelsen Opret. Eksisterende tilladelser for de underliggende datasæt for eksisterende brugere af appen ændres dog ikke. Du kan manuelt fjerne tilladelsen Opret fra brugere af appen, som ikke længere skal have den. Læs mere om [tilladelsen Opret](service-datasets-build-permissions.md).
 
 ## <a name="allow-users-to-copy-reports"></a>Tillad brugere at kopiere rapporter
 
-Når du markerer indstillingen **Giv brugerne tilladelse til at lave en kopi af rapporterne i denne app**, giver du brugerne tilladelse til at gemme rapporterne i appen i deres Mit arbejdsområde eller i et andet arbejdsområde. Det er nødvendigt at have en Pro-licens, hvis man vil lave en kopi, selvom den oprindelige rapport er i et arbejdsområde med en Premium-kapacitet. De kan derefter tilpasse rapporterne til deres unikke behov. Du skal markere indstillingen **Giv alle brugere tilladelse til at oprette forbindelse til appens underliggende datasæt ved hjælp af tilladelsen Opret** først. Når du vælger disse indstillinger, aktiverer du den nye funktion til [kopiering af rapporter fra andre arbejdsområder](service-datasets-copy-reports.md).
+Når du markerer indstillingen **Giv brugerne tilladelse til at lave en kopi af rapporterne i denne app**, giver du brugerne tilladelse til at gemme rapporterne i appen i deres Mit arbejdsområde eller i et andet arbejdsområde. Det er nødvendigt at have en Pro-licens, hvis man vil lave en kopi, selvom den oprindelige rapport er i et arbejdsområde med en Premium-kapacitet. De kan derefter tilpasse rapporterne til deres unikke behov. Du skal første markere indstillingen **Giv alle brugere tilladelse til at oprette forbindelse til appens underliggende datasæt ved hjælp af tilladelsen Opret**. Når du vælger disse indstillinger, aktiverer du den nye funktion til [kopiering af rapporter fra andre arbejdsområder](service-datasets-copy-reports.md).
 
 ## <a name="unpublish-an-app"></a>Annuller publicering af en app
 Et medlem af et arbejdsområde kan annullere publicering af appen.

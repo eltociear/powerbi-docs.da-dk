@@ -10,17 +10,20 @@ ms.topic: conceptual
 ms.date: 06/25/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 2f50a6fc9fccc35333257caaf3efeb8185c8caff
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 0015921990bb35a7ac5e6652b018ef16485e5b9c
+ms.sourcegitcommit: 3b4de8785d17c9e00b041cff7bd4d39829316437
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67390380"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72164548"
 ---
 # <a name="use-the-matrix-visual-in-power-bi"></a>Brug matrixvisualiseringen i Power BI
-**Matrix**visualiseringen svarer til en **tabel**.  En tabel understøtter to dimensioner, og dataene er flade, hvilket vil sige, at dublerede værdier vises og samles ikke. En matrix gør det lettere at få vist data på tværs af flere dimensioner på en meningsfuld måde – det understøtter et trinvist layout. Matricen samler automatisk dataene og gør det muligt at foretage detailudledning. 
 
-Du kan oprette matrixvisualiseringer i rapporter i **Power BI Desktop** og **Power BI-tjenesten** og få tværgående fremhævning af elementer i matricen med andre visualiseringer på den pågældende rapportside. Du kan f.eks. vælge rækker, kolonner og endda individuelle celler og tværgående fremhævning. Og enkelte celler og markeringer med flere celler kan kopieres og indsættes i andre programmer. 
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
+Matrixvisualiseringen ligner følgende tabel.  En tabel understøtter to dimensioner, og dataene er flade, hvilket vil sige, at dublerede værdier vises og samles ikke. En matrix gør det lettere at få vist data på tværs af flere dimensioner på en meningsfuld måde – det understøtter et trinvist layout. Matricen samler automatisk dataene og gør det muligt at foretage detailudledning. 
+
+Du kan oprette matrixvisualiseringer i rapporter i **Power BI Desktop** og krydsfremhæve elementer i matrixen med andre visualiseringer på den pågældende rapportside. Du kan f.eks. vælge rækker, kolonner og endda individuelle celler og tværgående fremhævning. Og enkelte celler og markeringer med flere celler kan kopieres og indsættes i andre programmer. 
 
 ![matrix med tværgående fremhævning og kransediagram](media/desktop-matrix-visual/matrix-visual_2a.png)
 
@@ -29,7 +32,7 @@ Der er mange funktioner knyttet til matrixen, og vi vil gennemgå dem i følgend
 
 ## <a name="understanding-how-power-bi-calculates-totals"></a>Sådan beregner Power BI totaler
 
-Før du begynder at læse om, hvordan du bruger **matrix**visualiseringen, er det vigtigt at forstå, hvordan Power BI beregner værdierne for total og subtotal i tabeller og matricer. I rækker med total og subtotal evaluerer Power BI målingen hen over alle rækker i de underliggende data – det er ikke kun en simpel addition af værdierne i de synlige og viste rækker. Det betyder, at du kan ende med at have en anden værdi i rækken Total, end hvad du regnede med.
+Før du begynder at læse om, hvordan du bruger matrixvisualiseringen, er det vigtigt at forstå, hvordan Power BI beregner værdierne for total og subtotal i tabeller og matrixer. I rækker med total og subtotal evaluerer Power BI målingen hen over alle rækker i de underliggende data – det er ikke kun en simpel addition af værdierne i de synlige og viste rækker. Det betyder, at du kan ende med at have en anden værdi i rækken Total, end hvad du regnede med.
 
 Se følgende matrixvisualiseringer. 
 
@@ -83,7 +86,7 @@ Ud over at bruge disse ikoner kan du vælge en af rækkeoverskrifterne og foreta
 
 Bemærk, at der er nogle indstillinger i den viste menu, der udløser forskellige resultater:
 
-Hvis du vælger **Foretag detailudledning**, udvides matricen for *det pågældende* rækkeniveau, og alle andre rækkeoverskrifter *udelades* bortset fra den rækkeoverskrift, der blev valgt. På følgende billede er **Forslag** > **Detailudledning** valgt. Bemærk, at andre rækker på øverste niveau ikke længere vises i matrixen. Funktionen til detailudledning er nyttig, og den er specielt god, når vi kommer til afsnittet om **tværgående fremhævning**.
+Hvis du vælger **Foretag detailudledning**, udvides matricen for *det pågældende* rækkeniveau, og alle andre rækkeoverskrifter *udelades* bortset fra den rækkeoverskrift, der blev valgt. På følgende billede er **Forslag** > **Detailudledning** valgt. Bemærk, at andre rækker på øverste niveau ikke længere vises i matrixen. Funktionen til detailudledning er nyttig, og den er specielt god, når vi kommer til afsnittet om krydsfremhævning.
 
 ![matrix med detailudledning ét niveau ned](media/desktop-matrix-visual/power-bi-drill-down-matrix.png)
 
@@ -100,7 +103,7 @@ Du kan også bruge menupunktet **Udvid** til at styre visningen yderligere.  Væ
 ![Matrix, efter at Udvid er anvendt på Forslag](media/desktop-matrix-visual/power-bi-matrix-expand.png)
 
 ### <a name="drill-down-on-column-headers"></a>Detailudledning på kolonneoverskrifter
-Du kan også foretage detailudledning på **kolonner**, hvilket minder meget om detailudledning på rækker. I det følgende billede er der to felter i feltområdet **Kolonner**, hvilket opretter et hierarki, der minder om det, der blev brugt til rækkerne tidligere i denne artikel. I feltområdet **Kolonner** har vi *Område* og *Segment*. Så snart det andet felt blev føjet til **Kolonner**, blev der vist en ny rullemenu i visualiseringen. Den viser i øjeblikket **Rækker**.
+Du kan også foretage detailudledning for kolonner, hvilket minder meget om detailudledning for rækker. I det følgende billede er der to felter i feltområdet **Kolonner**, hvilket opretter et hierarki, der minder om det, der blev brugt til rækkerne tidligere i denne artikel. I feltområdet **Kolonner** har vi *Område* og *Segment*. Så snart det andet felt blev føjet til **Kolonner**, blev der vist en ny rullemenu i visualiseringen. Den viser i øjeblikket **Rækker**.
 
 ![Matrix, efter at endnu en kolonneværdi blev tilføjet](media/desktop-matrix-visual/power-bi-matrix-row.png)
 
@@ -108,7 +111,7 @@ Hvis du vil foretage detailudledning for kolonner, skal du vælge **Kolonner** i
 
 ![menu til detailudledning for kolonner](media/desktop-matrix-visual/power-bi-matrix-column.png)
 
-Når du vælger **Detailudledning**, vises næste niveau i kolonnehierarkiet for *Område > East*, hvilket i dette tilfælde er *Opportunity count*. Det andet område vises, men er nedtonet.
+Når du vælger **Detailudledning**, vises næste niveau i kolonnehierarkiet for *Område > East*, hvilket i dette tilfælde er *Opportunity count*. Det andet område er skjult.
 
 ![matrix med detailudledning ét niveau ned for kolonner](media/desktop-matrix-visual/power-bi-matrix-column-drill.png)
 
@@ -119,21 +122,21 @@ Resten af punkterne i menuen fungerer i kolonner på samme måde, som de gør i 
 
 ## <a name="stepped-layout-with-matrix-visuals"></a>Trinvist layout med matrixvisualisering
 
-**Matrix**visualiseringen indrykker automatisk underkategorier i et hierarki under hvert overordnet element, hvilket kaldes et **trinvist layout**.
+Matrixvisualiseringen indrykker automatisk underkategorier i et hierarki under hvert overordnet element, hvilket kaldes et trinvist layout.
 
-I den oprindelige version af matrixvisualiseringen blev underkategorier vist i en helt anden kolonne, der optager meget mere plads i visualiseringen. Billedet herunder viser tabellen i den oprindelige **matrixvisualisering**. Bemærk, at underkategorierne er i en separat kolonne.
+I den oprindelige version af matrixvisualiseringen blev underkategorier vist i en helt anden kolonne, der optager meget mere plads i visualiseringen. Billedet herunder viser tabellen i den oprindelige matrixvisualisering. Bemærk, at underkategorierne er i en separat kolonne.
 
 ![Skærmbillede af den gamle matrixvisualisering, der viser, at underkategorierne er i en separat kolonne.](media/desktop-matrix-visual/matrix-visual_14.png)
 
-På det følgende billede kan du se en rigtig **matrix**-visualisering med **trinvist layout**. Bemærk, at kategorien *Computers* har underkategorier (Computers Accessories (Computertilbehør), Desktops (Stationære computere), Laptops (Bærbare computere), Monitors (Skærme) og osv.) let indrykket, hvilket visuelt giver et meget renere og mere komprimeret indtryk.
+På det følgende billede kan du se en matrixvisualisering med trinvist layout. Bemærk, at kategorien *Computers* har underkategorier (Computers Accessories (Computertilbehør), Desktops (Stationære computere), Laptops (Bærbare computere), Monitors (Skærme) og osv.) let indrykket, hvilket visuelt giver et meget renere og mere komprimeret indtryk.
 
 ![den måde, en matrix i øjeblikket formaterer data på](media/desktop-matrix-visual/matrix-visual_13.png)
 
-Du kan nemt justere indstillingerne for det trinvise layout. Når visualiseringen **Matrix** er valgt i sektionen **Format** (malerrulleikonet) i ruden **Visualiseringer**, kan du udvide sektionen **Rækkeoverskrifter**. Du har to muligheder: Til/fra-knappen til **trinvist layout** (som slår det til eller fra) og **indrykningen af det trinvise layout** (angiver mængden af indrykning i pixel).
+Du kan nemt justere indstillingerne for det trinvise layout. Når matrixvisualiseringen er valgt i sektionen **Format** (malerrulleikonet) i ruden **Visualiseringer**, kan du udvide sektionen med rækkeoverskrifter. Du har to muligheder: Til/fra-knappen til trinvist layout (som slår det til eller fra) og indrykning i forbindelse med det trinvise layout (angiver mængden af indrykning i pixel).
 
 ![Rækkeoverskriftskortet, der viser kontrolelementet Trinvist layout](media/desktop-matrix-visual/power-bi-stepped-matrix.png)
 
-Hvis du deaktiverer **Trinvist layout**, viser Power BI underkategorier i en anden kolonne og ikke indrykket under den overordnede kategori.
+Hvis du slår trinvist layout fra, viser Power BI underkategorierne i en anden kolonne og ikke indrykket under den overordnede kategori.
 
 ## <a name="subtotals-with-matrix-visuals"></a>Subtotaler med matrixvisualiseringer
 
@@ -141,7 +144,7 @@ Du kan slå subtotaler til eller fra i matrixvisualiseringer både for rækker o
 
 ![matrix, der viser totaler og subtotaler](media/desktop-matrix-visual/matrix-visual_20.png)
 
-I sektionen **Format** i ruden **Visualiseringer** kan du udvide kortet **Subtotaler** og sætte skyderen **Rækkesubtotaler**  til **Fra**. Når du gør det, vises subtotaler ikke.
+I sektionen Format i ruden Visualiseringer kan du udvide kortet **Subtotaler** og sætte skyderen for rækkesubtotaler til **Fra**. Når du gør det, vises subtotaler ikke.
 
 ![matrix med subtotaler slået fra](media/desktop-matrix-visual/matrix-visual_21.png)
 
@@ -149,16 +152,15 @@ Den samme proces gælder for kolonnesubtotaler.
 
 ## <a name="cross-highlighting-with-matrix-visuals"></a>Tværgående fremhævning med matrixvisualiseringer
 
-Med **matrix**-visualiseringen kan du vælge alle elementer i matrixen som basis for tværgående fremhævning. Når du markerer en kolonne i en **matrix**, fremhæves kolonnen i Power BI, og det samme gør andre visualiseringer på rapportsiden. Denne form for tværgående fremhævning har været en almindelig funktion i andre visualiseringer og markeringer af datapunkter, og nu kan **matrixvisualiseringen** få del i den.
+Med matrixvisualiseringen kan du vælge alle elementer i matrixen som udgangspunkt for krydsfremhævning. Når du markerer en kolonne i en matrix, fremhæves kolonnen i Power BI, og det samme gør andre visualiseringer på rapportsiden. Denne form for krydsfremhævning har været en almindelig funktion i andre visualiseringer og markeringer af datapunkter, og nu tilbydes den samme funktion i matrixvisualiseringen.
 
-Derudover fungerer Ctrl+klik også for tværgående fremhævning. I eksemplet herunder er en samling underkategorier f.eks. markeret i **Matrix**-visualiseringen. Bemærk, hvordan elementer, der ikke er valgt i visualiseringen, er nedtonet, og hvordan de andre visualiseringer på siden afspejler de valg, der er foretaget i **Matrix**-visualiseringen.
+Derudover fungerer Ctrl+klik også for tværgående fremhævning. På følgende billede er der f.eks. markeret en samling underkategorier i matrixvisualiseringen. Bemærk, hvordan elementer, der ikke er markeret i visualiseringen, er nedtonet, og hvordan de andre visualiseringer på siden afspejler de markeringer, der er foretaget i matrixvisualiseringen.
 
-![Skærmbillede af matrixvisualiseringen sammen med to andre visualiseringer, der demonstrerer Ctrl + klik-funktionen for tværgående fremhævning.](media/desktop-matrix-visual/matrix-visual_16.png)
+![Skærmbillede af matrixvisualiseringen sammen med to andre visualiseringer, der demonstrerer Ctrl + klik-funktionen for krydsfremhævning.](media/desktop-matrix-visual/matrix-visual_16.png)
 
 ## <a name="copying-values-from-power-bi-for-use-in-other-applications"></a>Kopiering af værdier fra Power BI til brug i andre programmer
 
 Din matrix eller tabel kan have indhold, som du gerne vil bruge i andre programmer: Dynamics CRM, Excel og andre Power BI-rapporter. Ved at højreklikke i Power BI kan du kopiere en enkelt celle eller en markering med flere celler til udklipsholder. Derefter kan du indsætte det i andet program.
-
 
 
 * Hvis du vil kopiere værdien af en enkelt celle, skal du markere cellen, højreklikke og vælge **Kopiér værdi**. Med den ikke-formaterede celleværdi i din udklipsholder kan du nu indsætte det i et andet program.
@@ -175,8 +177,16 @@ Din matrix eller tabel kan have indhold, som du gerne vil bruge i andre programm
 
     ![Skærmbillede, der viser Excel-rækker og -kolonner med de værdier, der er indsat i dem.](media/desktop-matrix-visual/power-bi-copy-selection.png)
 
+* Hvis du vil oprette en kopi af selve visualiseringen, der kun indeholder de markerede celler, skal du markere en eller flere celler ved hjælp af CTRL + højreklik og vælge **Kopiér visualisering**
+
+    ![Skærmbillede, der viser indstillingen Kopiér visualisering](media/desktop-matrix-visual/power-bi-copy-visual.png)
+
+* Kopien vil være en anden matrixvisualisering, men den vil kun indeholde de kopierede data.
+
+    ![Skærmbillede, der viser eksempel på kopieret visualisering](media/desktop-matrix-visual/power-bi-copy-visual-example.png)
+
 ## <a name="shading-and-font-colors-with-matrix-visuals"></a>Skygge og skrifttypefarver med matrixvisualiseringer
-Når du bruger matrixvisualiseringen, kan du anvende **betinget formatering** (farver og skygge og datalinjer) på baggrunden af celler i matricen, og du kan anvende betinget formatering på selve teksten og værdierne.
+Når du bruger matrixvisualiseringen, kan du anvende betinget formatering (farver, skygge og datalinjer) i cellernes baggrund i matrixen, og du kan anvende betinget formatering på selve teksten og værdierne.
 
 Hvis du vil anvende betinget formatering, skal du vælge matrixvisualiseringen og åbne ruden **Formatér**. Udvid kortet **Betinget formatering**, og indstil skyderen til **Til** for **Baggrundsfarve** eller **Skriftfarve** eller **Datalinjer**. Når du aktiverer en af indstillingerne, vises et link til *avancerede kontrolelementer*, så du kan tilpasse farver og værdier for farveformateringen.
   

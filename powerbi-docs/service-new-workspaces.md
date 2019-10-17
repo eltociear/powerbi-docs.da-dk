@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/05/2019
+ms.date: 09/30/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 32d43ca4b9681495e22db023604afeac31d15e7e
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 15f0ce3910261ed2902603ab7fb3f07f8b695d4c
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715207"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020678"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser arbejde i nye arbejdsområder i Power BI
 
@@ -79,7 +79,7 @@ Her er egenskaberne for de fire roller: administratorer, medlemmer, bidragydere 
 
 > [!NOTE]
 >Hvis du vil kopiere en rapport og oprette en rapport i et andet arbejdsområde, der er baseret på et datasæt i dette arbejdsområde, skal følgende kriterier være opfyldt:
->- Du skal bruge en licens til Power BI Pro. 
+>- Du skal bruge en licens til Power BI Pro. Du kan finde flere oplysninger i det næste afsnit om [Licensering](#licensing).
 >- Du skal have Build-tilladelse til datasættet. Personer med rolle som administrator, medlem og bidragyder har Build-tilladelse til datasæt for dette arbejdsområde gennem deres rolle i arbejdsområdet.
  
 ## <a name="licensing"></a>Licensering
@@ -102,9 +102,9 @@ Vi har givet nogle af funktionerne i de nye arbejdsområder et nyt design. Her e
 - Du kan forbruge en organisationsindholdspakke ud fra et klassisk arbejdsområde. Du kan ikke forbruge en fra nye arbejdsområder.
 
 ## <a name="workspace-contact-list"></a>Liste over arbejdsområdekontakter
-Den nye **kontaktlistefunktion** gør det muligt at angive, hvilke brugere der modtager en meddelelse om de problemer, der opstår i arbejdsområdet. Som standard får alle brugere eller grupper, der er angivet som arbejdsområdeadministrator besked, men du kan tilpasse listen. Brugere eller grupper, der er angivet på listen over kontaktpersoner, vises i brugergrænsefladen for at hjælpe brugerne med at få hjælp i forbindelse med arbejdsområdet. 
+Den nye **kontaktlistefunktion** gør det muligt at angive, hvilke brugere der modtager en meddelelse om de problemer, der opstår i arbejdsområdet. Som standard får alle brugere eller grupper, der er angivet som arbejdsområdeadministrator besked, men du kan tilpasse listen. Brugere eller grupper, der er angivet på listen over kontakter, vises i brugergrænsefladen for at hjælpe brugerne med at få hjælp i forbindelse med arbejdsområdet. 
 
-Læs mere om [angivelse af listen over kontaktpersoner i arbejdsområdet](service-create-the-new-workspaces.md#workspace-contact-list).
+Læs mere om [angivelse af listen over kontakter i arbejdsområdet](service-create-the-new-workspaces.md#workspace-contact-list).
 
 ## <a name="workspace-onedrive"></a>Arbejdsområde for OneDrive
 Funktionen Arbejdsområde for OneDrive giver dig mulighed for at konfigurere en Office 365-gruppe, hvis SharePoint-dokumentbiblioteks fillagring er tilgængelig for arbejdsområdebrugere. Gruppen skal være oprettet uden for Power BI. 
@@ -141,7 +141,7 @@ Nogle funktioner fungerer anderledes i forhold til aktuelle arbejdsområder i de
 - Medlemmer kan eller kan ikke dele igen: erstattet af rollen som bidragyder
 - Skrivebeskyttede arbejdsområder: I stedet for at tildele brugere skrivebeskyttet adgang til et arbejdsområde skal du tildele brugere Fremviser-rollen, hvilket gør det muligt for lignende skrivebeskyttet adgang til indholdet i et arbejdsområde.
 - Brugere med en Pro-licens kan få adgang til arbejdsområdet, hvis det er i en Power BI Premium-kapacitet, også selvom brugerne kun har Fremviser-rollen.
-- Hvis du vil tillade brugere med rollen som Fremviser at eksportere data, skal du sikre, at de har tilladelse til at oprette for datasættene i arbejdsområdet. Læs mere om [tilladelsen Opret for datasæt](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+- Hvis du vil tillade brugere med rollen som Fremviser at eksportere data, skal du sikre, at de har tilladelse til at oprette for datasættene i arbejdsområdet. Læs mere om [tilladelsen Opret for datasæt](service-datasets-build-permissions.md).
 - Knappen **Forlad arbejdsområde** findes ikke.
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål

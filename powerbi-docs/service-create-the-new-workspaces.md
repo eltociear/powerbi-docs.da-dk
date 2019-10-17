@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 09/10/2019
+ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 5c50ec38da65573e085d9e27b0e31524256ac009
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 7d53acc0dc8c669026665347de9593fa1df84c62
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715539"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020128"
 ---
 # <a name="create-the-new-workspaces-in-power-bi"></a>Opret nye arbejdsområder i Power BI
 
@@ -68,7 +68,7 @@ Du kan få mere baggrundsviden i artiklen [nye arbejdsområder](service-new-work
 
 ## <a name="workspace-contact-list"></a>Liste over arbejdsområdekontakter
 
-Med listen over kontakter i det nye arbejdsområde kan du angive, hvilke brugere der modtager meddelelser om problemer, der forekommer i arbejdsområdet. Som standard får alle brugere eller grupper, der er angivet som arbejdsområdeadministrator besked, men du kan tilpasse listen. Brugere eller grupper, der er angivet på listen over kontaktpersoner, vises i brugergrænsefladen for at hjælpe brugerne med at få hjælp i forbindelse med arbejdsområdet.
+Du kan angive, hvilke brugere der skal modtage en meddelelse om de problemer, der opstår i arbejdsområdet. Som standard får alle brugere eller grupper, der er angivet som administrator af arbejdsområdet besked, men du kan tilpasse listen ved at føje dem til *listen over kontakter*. Brugere eller grupper på listen over kontakter vises i brugergrænsefladen for at hjælpe brugerne med at få hjælp til arbejdsområdet.
 
 1. Få adgang til den nye indstilling **Liste over kontakter** på en af to måder:
 
@@ -79,6 +79,9 @@ Med listen over kontakter i det nye arbejdsområde kan du angive, hvilke brugere
     ![Indstillinger for arbejdsområde](media/service-create-the-new-workspaces/power-bi-workspace-new-settings.png)
 
 2. Under **Avanceret** > **Liste over kontakter** skal du acceptere standarden, **Administratorer af arbejdsområde** eller tilføje din egen liste over **Specifikke brugere eller grupper**. 
+
+    ![Kontakter for arbejdsområdet](media/service-create-the-new-workspaces/power-bi-workspace-contacts.png)
+
 3. Vælg **Gem**.
 
 ## <a name="workspace-onedrive"></a>Arbejdsområde for OneDrive
@@ -103,34 +106,15 @@ Power BI synkroniserer ikke tilladelser for brugere eller grupper, der er konfig
 
 ### <a name="access-the-workspace-onedrive-location"></a>Få adgang til arbejdsområdets OneDrive-placering
 
-Når du har konfigureret OneDrive-placeringen, kan du få adgang til den fra et par forskellige steder i arbejdsområdet:
+Når du har konfigureret placeringen af OneDrive, kommer du dertil på samme måde, som du kommer til andre datakilder i Power BI-tjenesten.
 
-- Vælg **Arbejdsområder** > *navn på arbejdsområde* > ellipsemenuen ( **...** ) > **Filer**. 
+1. I navigationsruden til venstre skal du vælge **Hent data** og derefter i feltet **Filer** vælge **Hent**.
 
-    ![Placering af filer i arbejdsområde](media/service-new-workspaces/power-bi-new-workspace-files.png)
+    ![Hent data, hent filer](media/service-create-the-new-workspaces/power-bi-get-data-files.png)
 
-- Vælg ellipsemenuen ( **...** ) i øverste højre hjørne af arbejdsområdet > **Filer**.
-
-    ![Placering af filer i arbejdsområde](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
-    
-- I oplevelsen **Hent data** > **Filer**. Posten **OneDrive – Business** er dit eget OneDrive for Business. Det andet OneDrive er det, du har tilføjet.
+1.  Posten **OneDrive – Business** er dit eget OneDrive for Business. Det andet OneDrive er det, du har tilføjet.
 
     ![Placering af filer i arbejdsområdet – hent data](media/service-create-the-new-workspaces/power-bi-new-workspace-get-data-onedrive.png)
-
-## <a name="add-content-to-your-workspace"></a>Føj indhold til dit arbejdsområde
-
-Når du har oprettet et arbejdsområde med den nye arbejdsområdeoplevelse, er det tid til at føje indhold til det. Tilføjelse af indhold er ens i de nye og klassiske arbejdsområder. Brug knappen Opret, eller brug Hent data til at føje indhold til dit arbejdsområde.
-
-1. På **Velkomstskærmen** for dit nye arbejdsområde, kan du tilføje indhold. 
-
-    ![Velkomstskærm for nyt arbejdsområde](media/service-create-the-new-workspaces/power-bi-workspace-get-data.png)
-
-1. Vælg f.eks. **Eksempler** > **Eksempel på kunderentabilitet**.
-
-> [!NOTE]
-> Du kan ikke føje organisationsindholdspakker eller indholdspakker fra tredjepart til de nye arbejdsområder. Der findes apps til mange indholdspakker fra tredjepart, som du tidligere har brugt. Brug klassiske arbejdsområder, hvis du fortsat har brug for at bruge indholdspakker. Indholdspakker udfases, så det er bedste praksis at bruge apps i stedet.
-
-Når du får vist indhold på indholdslisten for et arbejdsområde, vises navnet på arbejdsområdet som ejeren.
 
 ### <a name="connecting-to-third-party-services-in-new-workspaces"></a>Opret forbindelse til tredjepartstjenester i nye arbejdsområder
 
@@ -142,9 +126,7 @@ I den nye arbejdsområdeoplevelse kan du ikke oprette eller bruge organisationsi
 
 1. Da du er administrator kan du på indholdslisten for arbejdsområder se en ny handling, **Adgang**.
 
-    ![Indholdsliste for arbejdsområder](media/service-create-the-new-workspaces/power-bi-new-workspace-files-ellipsis.png)
-
-1. Vælg **Adgang**.
+    ![Indholdsliste for arbejdsområder](media/service-create-the-new-workspaces/power-bi-workspace-access-icon.png)
 
 1. Føj sikkerhedsgrupper, distributionslister, Office 365-grupper eller enkeltpersoner til disse arbejdsområder som medlemmer, bidragydere eller administratorer. Se [Roller i de nye arbejdsområder](service-new-workspaces.md#roles-in-the-new-workspaces) for at få en forklaring på de forskellige roller.
 

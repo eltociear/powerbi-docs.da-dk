@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: f3c72de197203adcad1020bc244ff0bc215e10bd
-ms.sourcegitcommit: 4222ebad1a3a32d8040f6a615a0b7f173d7869d0
+ms.openlocfilehash: e213bad8e7267abe0b49d1f460717dd817e9832a
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71164490"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72020468"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Opret forbindelse til datasæt i Power BI-tjenesten fra Power BI Desktop
 Du kan oprette en direkte forbindelse til et delt datasæt i Power Bi-tjenesten og oprette mange forskellige rapporter fra det samme datasæt. Det betyder, at du kan oprette en perfekt datamodel i Power BI Desktop og publicere den i Power BI-tjenesten. Derefter kan du og andre oprette flere forskellige rapporter (i separate .pbix-filer) ud fra den samme almindelige datamodel og gemme dem i forskellige arbejdsområder. Denne funktion kaldes **Direkte forbindelse til Power BI-tjeneste**.
@@ -76,7 +76,7 @@ Når den er færdig, viser **Power BI Desktop** dig, at udgivelsen er udført og
 
 Nu, hvor din rapport med tilhørende datasæt befinder sig i Power BI-tjenesten, kan du også *hæve* det for at bekræfte dets kvalitet og pålidelighed. Du kan tilmed anmode om, at det bliver *certificeret* af en central myndighed i din Power BI-lejer. Med begge disse godkendelser vil dit datasæt blive vist på listen over emner, når folk søger efter datasæt. Hvis du er interesseret, kan du læse mere om processen med at [hæve dit datasæt](service-datasets-promote.md). 
 
-Det sidste trin er at angive *tilladelsen Opret* for det datasæt, som rapporten er baseret på. Tilladelsen Opret bestemmer, hvem der kan se og bruge dit datasæt. Du kan konfigurere den i selve arbejdsområdet, eller når du deler et program fra arbejdsområdet. Få mere at vide om angivelse af [tilladelsen Opret](service-datasets-build-permissions.md#build-permissions-for-shared-datasets).
+Det sidste trin er at angive *tilladelsen Opret* for det datasæt, som rapporten er baseret på. Tilladelsen Opret bestemmer, hvem der kan se og bruge dit datasæt. Du kan konfigurere den i selve arbejdsområdet, eller når du deler et program fra arbejdsområdet. Få mere at vide om angivelse af [tilladelsen Opret](service-datasets-build-permissions.md).
 
 Lad os nu se, hvordan andre teammedlemmer, der har adgang til arbejdsområdet, hvor rapporten (og datasættet) blev udgivet, kan oprette forbindelse til datasættet og lave deres egne rapporter.
 

@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/17/2019
+ms.date: 09/19/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7ee083de9800b55c4f7d998a113c1a63df112b7b
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 269b495a41f193c6a2ba02fa75f171c3b5789689
+ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624035"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72019600"
 ---
 # <a name="introduction-to-dashboards-for-power-bi-designers"></a>Introduktion til dashboards for Power BI-designere
 
@@ -29,9 +29,6 @@ Et dashboard er kun en funktion i Power BI-tjenesten. De er ikke tilgængelige i
 
 De visualiseringer, du kan se på dashboardet, kaldes *felter*. Du *fastgør* felter til et dashboard via rapporter. Hvis du ikke har arbejdet med Power BI før, kan du få et godt overblik ved at læse [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md).
 
-> [!IMPORTANT]
-> Du skal have en [Power BI Pro](service-free-vs-pro.md)-licens for at oprette dashboards.
-
 Visualiseringerne på et dashboard stammer fra rapporter, og alle rapporter er baseret på et datasæt. Du kan f.eks. se et dashboard som en måde at få adgang til de underliggende rapporter og datasæt på. Når du vælger en visualisering, bliver du ført til den pågældende rapport (og det pågældende datasæt), som er brugt til oprettelsen af visualiseringen.
 
 ![Diagram, der viser relationer mellem dashboards, rapporter og datasæt](media/service-dashboards/power-bi-diagram.png)
@@ -40,6 +37,13 @@ Visualiseringerne på et dashboard stammer fra rapporter, og alle rapporter er b
 Dashboards er en fantastisk måde at holde øje med din virksomhed på og hurtigt få et overblik over de vigtigste data. Visualiseringer på et dashboard kan stamme fra ét underliggende datasæt eller mange og fra én underliggende rapport eller mange. Et dashboard kombinerer data fra det lokale miljø og cloudmiljøet, hvilket giver dig en samlet visning, uanset hvor dataene er gemt.
 
 Et dashboard er ikke kun et flot billede. Det er yderst interaktivt, og felterne opdateres, når de underliggende data ændres.
+
+## <a name="who-can-create-a-dashboard"></a>Hvem kan oprette et dashboard?
+Muligheden for at oprette et dashboard anses som en *opretterfunktion*  og kræver redigeringsrettigheder til rapporten. Redigeringstilladelser er tilgængelige for rapportoprettere og de kolleger, opretteren giver adgang til. Hvis David f.eks. opretter en rapport i arbejdsområdeABC og tilføjer dig som medlem af dette arbejdsområde, har både du og David redigeringsrettigheder. På den anden side, hvis en rapport er blevet delt med dig direkte eller som en del af en [Power BI-app](service-create-distribute-apps.md), så *bruger* du rapporten. Du kan muligvis ikke fastgøre felter til et dashboard. 
+
+> [!IMPORTANT]
+> Du skal have en [Power BI Pro](service-free-vs-pro.md)-licens for at oprette dashboards i arbejdsområder. Du kan oprette dashboards i dit eget Mit arbejdsområde uden en Power BI Pro-licens.
+
 
 ## <a name="dashboards-versus-reports"></a>Dashboards sammenlignet med rapporter
 [Rapporter](service-reports.md) og dashboards virker ens, da de begge er lærreder fyldt med visualiseringer. Men der er store forskelle, som du kan se i følgende tabel.
