@@ -10,12 +10,12 @@ ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 05/15/2019
 LocalizationGroup: Visualizations
-ms.openlocfilehash: a782726e34bec4d6a5b8557c88178d469f7987b6
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: a8b1be9157fa34e9ed4c987628f0b67624b4c826
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71946191"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307483"
 ---
 # <a name="visuals-in-power-bi"></a>Visualiseringer i Power BI
 
@@ -57,7 +57,7 @@ Hvad er [AppSource](developer/office-store.md)? Det er det sted, du finder apps,
 Certificerede Power BI-visualiseringer er visualiseringer på markedspladser, der har bestået yderligere strenge kvalitetstest, og understøttes i yderligere scenarier, f.eks. [mailabonnementer](service-report-subscribe.md) og [eksport til PowerPoint](service-publish-to-powerpoint.md).
 Hvis du vil se en liste over certificerede Power BI-visualiseringer eller indsende dine egne, skal du se [Certificerede Power BI-visualiseringer](power-bi-custom-visuals-certified.md).
 
-Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til AppSource? Se [Udvikling af en Power BI-visualisering](developer/custom-visual-develop-tutorial.md), og få mere at vide om, hvordan du [publicerer Power BI-visualiseringer i AppSource](developer/office-store.md).
+Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til AppSource? Se under [Udvikling af en brugerdefineret visualisering i Power BI](developer/visuals/custom-visual-develop-tutorial.md), og få mere at vide om, hvordan du [publicerer brugerdefinerede visualiseringer i AppSource](developer/office-store.md).
 
 ### <a name="import-a-custom-visual-from-a-file"></a>Importér en brugerdefineret visualisering fra en fil
 

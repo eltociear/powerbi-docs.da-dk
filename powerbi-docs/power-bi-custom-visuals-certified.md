@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
-ms.openlocfilehash: 2203e3a9abddb52902c09fdc98665ba013f604ee
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 84afdf7072241533bf1e70d6a2a49d18c3da1d8f
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71946227"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307833"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Få en Power BI-visualisering certificeret
 
@@ -31,7 +31,7 @@ Certificeringsprocessen er en valgfri proces, og det er op til udviklerne at bes
 
 **Ikke-certificerede Power BI-visualiseringer** er ikke nødvendigvis ensbetydende med usikre visualiseringer. Nogle visualiseringer er ikke certificeret, fordi de ikke er i overensstemmelse med et eller flere af [certificeringskravene](https://docs.microsoft.com/power-bi/power-bi-custom-visuals-certified?#certification-requirements). Det kan f.eks. være i forbindelse med oprettelse af forbindelse til en ekstern tjeneste, som f.eks. kortvisualiseringer eller visualiseringer, der anvender kommercielle biblioteker.
 
-Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til  **[Microsoft AppSource](https://appsource.microsoft.com)** ? Du kan se under  **[Udvikling af en brugerdefineret Power BI-visualisering for at få mere at vide](developer/custom-visual-develop-tutorial.md)** .
+Er du webudvikler og interesseret i at oprette dine egne visualiseringer og føje dem til  **[Microsoft AppSource](https://appsource.microsoft.com)** ? Du kan se under  **[Udvikling af en brugerdefineret Power BI-visualisering for at få mere at vide](developer/visuals/custom-visual-develop-tutorial.md)** .
 
 ## <a name="removal-of-power-bi-certified-power-bi-visuals"></a>Fjernelse af certificerede Power BI-visualiseringer
 
@@ -196,7 +196,7 @@ Du kan finde flere oplysninger om visualiseringer under [Ofte stillede spørgsm�
 
 ## <a name="next-steps"></a>Næste trin
 
-* [Udvikling af en brugerdefineret visualisering i Power BI](developer/custom-visual-develop-tutorial.md)
+* [Udvikling af en brugerdefineret visualisering i Power BI](developer/visuals/custom-visual-develop-tutorial.md)
 * [Microsofts afspilningsliste for brugerdefinerede visualiseringer på YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)  
 * [Visualiseringer i Power BI](visuals/power-bi-report-visualizations.md)  
 * [Brugerdefinerede visualiseringer i Power BI](power-bi-custom-visuals.md)  

@@ -6,18 +6,21 @@ manager: kvivek
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/22/2019
+ms.date: 10/18/2019
 ms.author: mihart
 LocalizationGroup: Create reports
-ms.openlocfilehash: 0b4da978687afbafcc7f0d48b6df220b240a507f
-ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
+ms.openlocfilehash: 5383b06bbc40953ea9f4322562190b6a7b29db14
+ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71207621"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589436"
 ---
 # <a name="what-are-bookmarks"></a>Hvad er bogmærker?
-Bogmærker henter den aktuelt konfigurerede visning af en rapportside, herunder filtre, udsnitsværktøjer og tilstanden for visualiseringer. Når du vælger et bogmærke, sender Power BI dig tilbage til den pågældende visning. Der er to typer bogmærker – dem, du selv opretter, og dem, der oprettes af *rapportdesignere*.
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
+Bogmærker henter den aktuelt konfigurerede visning af en rapportside, herunder filtre, udsnitsværktøjer og tilstanden for visuals. Når du vælger et bogmærke, sender Power BI dig tilbage til den pågældende visning. Der er to typer bogmærker – dem, du selv opretter, og dem, der oprettes af *rapportdesignere*.
 
 ## <a name="use-bookmarks-to-share-insights-and-build-stories-in-power-bi"></a>Brug bogmærker til at dele indsigt og oprette historier i Power BI 
 Bogmærker kan bruges til mange ting. Lad os sige, at du opdager en interessant indsigt og ønsker at bevare den – opret et bogmærke, så du kan vende tilbage til den senere. Hvis du skal afsted, men ønsker at bevare dit aktuelle arbejde, kan du oprette et bogmærke. Du kan også gøre et bogmærke til din standardvisning af rapporten, så hver gang du vender tilbage, åbnes denne visning af rapportsiden først. 
@@ -45,13 +48,13 @@ Når du opretter et bogmærke, gemmes følgende elementer sammen med bogmærket:
 * Den aktuelle side
 * Filtre
 * Udsnit, herunder udsnitstypen (f.eks. rulleliste eller rullemenu) og udsnitstilstand
-* Tilstand for visuel markering (f.eks. krydsfremhævningsfiltre)
+* Tilstand for visuel markering (f.eks. tværgående fremhævningsfiltre)
 * Sorteringsrækkefølgen
 * Placering af detailudledning
 * Synlighed (for et objekt i ruden **Markering**)
 * Tilstanden Fokus eller **Spotlight** for et synligt objekt
 
-Konfigurer en rapportside, som du ønsker, den skal vises i bogmærket. Når din rapportside og dine visualiseringer er arrangeret, som du ønsker det, skal du vælge **Tilføj** i ruden **Bogmærker** for at tilføje et bogmærke. I dette eksempel har vi tilføjet nogle filtre for område og dato. 
+Konfigurer en rapportside, som du ønsker, den skal vises i bogmærket. Når din rapportside og dine visuelle elementer er arrangeret, som du ønsker det, skal du vælge **Tilføj** i ruden **Bogmærker** for at tilføje et bogmærke. I dette eksempel har vi tilføjet nogle filtre for område og dato. 
 
 ![Tilføj personlige bogmærker.](media/end-user-bookmarks/power-bi-bookmark-personal.png)
 
@@ -85,7 +88,7 @@ I tilstanden **Vis** er der nogle funktioner, du skal lægge mærke til:
 
 ![Diasshow med bogmærker](media/end-user-bookmarks/power-bi-slideshow.png)
 
-Når du er i tilstanden **Vis**, kan du lukke ruden **Bogmærker** (ved at klikke på krydset (X) i ruden) for at give mere plads til præsentationen. Mens du er i tilstanden **Vis**, er alle visualiseringer interaktive og tilgængelige for krydsfremhævning, ligesom når du interagerer med dem. 
+Når du er i tilstanden **Vis**, kan du lukke ruden **Bogmærker** (ved at klikke på krydset (X) i ruden) for at give mere plads til præsentationen. Mens du er i tilstanden **Vis**, er alle visualiseringer interaktive og tilgængelige for tværgående fremhævning, ligesom når du interagerer med dem. 
 
 <!--
 ## Visibility - using the Selection pane
@@ -150,8 +153,8 @@ Note that selecting **Ungroup** for any bookmark from a group takes all bookmark
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 I denne version af **bogmærker** er der nogle få begrænsninger og overvejelser at tage betragtning.
 
-* De fleste brugerdefinerede visualiseringer fungerer fint sammen med bogmærker. Hvis du oplever problemer med et bogmærke og en brugerdefineret visualisering, kan du kontakte forfatteren af denne visualisering og bede om at få føjet understøttelse af bogmærker til deres visualiseringer. 
-* Hvis du tilføjer en visualisering på en rapportside, når du har oprettet et bogmærke, vises visualiseringen i standardtilstanden. Det betyder også, at hvis du vil indføre et udsnitsværktøj på en side, hvor du tidligere har oprettet bogmærker, optræder udsnittet i standardtilstanden.
+* De fleste brugerdefinerede visuals fungerer fint sammen med bogmærker. Hvis du oplever problemer med et bogmærke og en brugerdefineret visual, kan du kontakte forfatteren af denne visual og bede om at få føjet understøttelse af bogmærker til deres visuals. 
+* Hvis du tilføjer et visuelt element på en rapportside, når du har oprettet et bogmærke, vises det visuelle element i standardtilstanden. Det betyder også, at hvis du vil indføre et udsnitsværktøj på en side, hvor du tidligere har oprettet bogmærker, optræder udsnittet i standardtilstanden.
 * Normalt har det ingen indflydelse på dine bogmærker, hvis *rapportdesigneren* opdaterer eller publicerer rapporten igen. Men hvis designeren foretager større ændringer i rapporten, f.eks. fjerner felter, der bruges af et bogmærke, modtager du en fejlmeddelelse, næste gang du forsøger at åbne bogmærket. 
 
 <!--

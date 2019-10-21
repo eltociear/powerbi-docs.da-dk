@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/25/2019
-ms.openlocfilehash: fd49c69a14d3dac6b1a045f6aba407ec7aac0deb
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: cc180c2e9d5275172ad9da75c502ef53d9d7ee66
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269408"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307617"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Hvad kan udviklere bruge Power BI-API'en til?
 
@@ -57,7 +57,7 @@ Du kan bruge Power BI-API'en til at [sende data til et datasæt via push](walkth
 ## <a name="next-steps"></a>Næste trin
 
 * [Overfør data til et datasæt](walkthrough-push-data.md)
-* [Udvikling af en brugerdefineret visualisering i Power BI](custom-visual-develop-tutorial.md)
+* [Udvikling af en brugerdefineret visualisering i Power BI](visuals/custom-visual-develop-tutorial.md)
 * [Reference til Power BI REST API](rest-api-reference.md)
 * [REST-API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/)
 

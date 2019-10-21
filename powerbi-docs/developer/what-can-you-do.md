@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.custom: mvc
 ms.date: 03/15/2019
-ms.openlocfilehash: d2e3ba69cde609638e54eaa1206714f0fb420d18
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 0d4f79714be7d354c26a7bd63adbe8bce07ed4ef
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61262626"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307454"
 ---
 # <a name="what-can-developers-do-with-power-bi"></a>Hvad kan udviklere bruge Power BI til?
 
@@ -44,7 +44,7 @@ Med brugerdefinerede visualiseringer kan du oprette dine egne visualiseringer, s
 
 ![CV-eksempel](media/what-can-you-do/powerbi-custom-visual-store.png)
 
-Hvis du vil have mere at vide om udvikling af brugerdefinerede visualiseringer, kan du se under [Udvikling af en brugerdefineret visualisering i Power BI](custom-visual-develop-tutorial.md).
+Hvis du vil have mere at vide om udvikling af brugerdefinerede visualiseringer, kan du se under [Udvikling af en brugerdefineret visualisering i Power BI](visuals/custom-visual-develop-tutorial.md).
 
 ## <a name="using-api-automation"></a>Brug af API-automatisering
 

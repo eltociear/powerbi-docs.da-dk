@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/10/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: e7a96186fe68ed0d70de7a502e81da4f24f4d802
-ms.sourcegitcommit: db4fc5da8e65e0a3dc35582d7142a64ad3405de7
+ms.openlocfilehash: 7c99b00427ffe742511c0029da79b6ebde02d916
+ms.sourcegitcommit: 83e1e162a037f352e542bd5c198a3c98f5db23c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70903595"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72511682"
 ---
 # <a name="get-power-bi-desktop"></a>Hent Power BI Desktop
 Med **Power BI Desktop** kan du oprette avancerede forespørgsler, modeller og rapporter, som visualiserer data. Med **Power BI Desktop** kan du oprette datamodeller, oprette rapporter og dele dit arbejde ved at udgive det i Power BI-tjenesten.  **Power BI Desktop** kan downloades gratis.
@@ -105,28 +105,6 @@ Følgende liste indeholder minimumkravene til at køre **Power BI Desktop**:
 
 Vi ønsker altid, at du har en fantastisk oplevelse med Power BI Desktop. Det kan ske, at du støder på et problem med Power BI Desktop, så dette afsnit indeholder løsninger eller forslag til at løse problemer, der kan opstå. 
 
-### <a name="installing-power-bi-desktop-on-remote-machines"></a>Installation af Power BI Desktop på eksterne maskiner
-
-Hvis du udruller Power BI Desktop til dine brugere med et værktøj, der kræver en Windows-installationsfil (. msi-fil), kan du udtrække .msi-filen fra .exe-installationsfilen til Power BI Desktop. Du kan bruge tredjepartsværktøjer, f.eks. WiX Toolset, til at opnå dette.
-
-> [!NOTE]
-> Da WiX Toolset er et tredjepartsprodukt, kan indstillingerne blive ændret uden varsel. Tjek deres dokumentation for at få de nyeste oplysninger, og kontakt deres mailliste for brugere for at få hjælp.
-
-* På den computer, hvor du har downloadet Power BI Desktop-installationsprogrammet, skal du downloade og installere den nyeste version af WiX Toolset fra WiX-webstedet på https://wixtoolset.org/.
-* Åbn et kommandolinjevindue som administrator, og naviger til den mappe, hvor du har installeret WiX Toolset.
-* Kør følgende kommando: 
-    
-    ```Dark.exe <path to Power BI Desktop installer> -x <output folder>```
-
-    Kør f.eks.:
-
-    ``` Dark.exe C:\PBIDesktop_x64.exe -x C:\output```
-
-* Outputmappen indeholder en mappe med navnet *AttachedContainer*, som indeholder. msi-filerne.
-
-
-
-
 ### <a name="using-command-line-options-during-installation"></a>Brug af kommandolinjeindstillinger under installationen 
 
 Når du installerer Power BI Desktop, kan du angive egenskaber og indstillinger med kommandolinjeparametre. Dette er især nyttigt for administratorer, der administrerer eller letter installationen af Power BI Desktop på tværs af organisationer. Disse indstillinger gælder for .msi- og .exe-installationer. 
@@ -146,7 +124,6 @@ Når du installerer Power BI Desktop, kan du angive egenskaber og indstillinger 
 
 Du kan også bruge følgende **syntaksparametre**, som er angivet med syntaksen "PROPERTY=VALUE":
 
-
 |Parameter  |Betydning  |
 |---------|---------|
 |ACCEPT_EULA     |Kræver værdien 1 for automatisk at acceptere slutbrugerlicensaftalen         |
@@ -156,12 +133,28 @@ Du kan også bruge følgende **syntaksparametre**, som er angivet med syntaksen 
 |LANGUAGE     |Landestandardkoden, f.eks. en-US, de-DE, pr-BR, til at gennemtvinge standardsproget for programmet. Hvis der ikke er angivet et sprog, vises Windows OS-sproget i Power BI Desktop. Dette kan ændres af brugeren i dialogboksen Indstillinger.         |
 |REG_SHOWLEADGENDIALOG     |Værdien 0 deaktiverer visning af den viste dialogboks, før du har logget på Power BI Desktop         |
 
-
-
-
 Du kan f.eks. køre den med følgende syntaks for at installere uden nogen brugergrænseflade ved hjælp af det tyske sprog: 
 
 ```“-quiet LANG=de-DE ACCEPT_EULA=1”```
+
+### <a name="installing-power-bi-desktop-on-remote-machines"></a>Installation af Power BI Desktop på eksterne maskiner
+
+Hvis du udruller Power BI Desktop til dine brugere med et værktøj, der kræver en Windows-installationsfil (. msi-fil), kan du udtrække .msi-filen fra .exe-installationsfilen til Power BI Desktop. Du kan bruge tredjepartsværktøjer, f.eks. WiX Toolset, til at opnå dette.
+
+> [!NOTE]
+> Da WiX Toolset er et tredjepartsprodukt, kan indstillingerne blive ændret uden varsel. Tjek deres dokumentation for at få de nyeste oplysninger, og kontakt deres mailliste for brugere for at få hjælp.
+
+* På den computer, hvor du har downloadet Power BI Desktop-installationsprogrammet, skal du downloade og installere den nyeste version af WiX Toolset fra WiX-webstedet på https://wixtoolset.org/.
+* Åbn et kommandolinjevindue som administrator, og naviger til den mappe, hvor du har installeret WiX Toolset.
+* Kør følgende kommando: 
+    
+    ```Dark.exe <path to Power BI Desktop installer> -x <output folder>```
+
+    Kør f.eks.:
+
+    ``` Dark.exe C:\PBIDesktop_x64.exe -x C:\output```
+
+* Outputmappen indeholder en mappe med navnet *AttachedContainer*, som indeholder. msi-filerne.
 
 
 ### <a name="issues-when-using-previous-releases-of-power-bi-desktop"></a>Problemer med brug af tidligere udgaver af Power BI Desktop

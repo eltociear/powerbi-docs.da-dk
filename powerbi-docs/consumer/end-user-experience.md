@@ -9,17 +9,19 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: quickstart
-ms.date: 12/06/2018
+ms.date: 10/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: af7f2f0ca5407694b13f0b053ff347f883c8c983
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 14c7f88e0bfb822a73a72958f556443260f6ed76
+ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "68523036"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589444"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Hurtig introduktion – Navigation i Power BI-tjenesten
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 Nu, hvor du kender de grundlæggende funktioner i Power BI, kan vi kigge på **Power BI-tjenesten**. Som tidligere nævnt kan en person i dit team måske bruge al sin tid i **Power BI Desktop** på at kombinere data og oprette rapporter for andre. Mens du på den anden side kan bruge al din tid i Power BI-tjenesten på at se og interagere med indhold, der er oprettet af andre (**brugs**oplevelse). I denne hurtige introduktion skal du importere eksempeldata og bruge disse data til at få mere at vide om Power BI-tjenesten. 
  
