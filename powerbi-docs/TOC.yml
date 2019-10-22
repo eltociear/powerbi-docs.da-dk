@@ -51,7 +51,7 @@
           href: sample-financial-download.md
     - name: Begreber
       items:
-        - name: Hvad er de seneste nyheder i opdateringen til Power BI Desktop?
+        - name: Hvad er nyt i den nyeste opdatering af Power BI Desktop?
           href: desktop-latest-update.md
         - name: Gruppering af visualiseringer i Power BI Desktop
           href: desktop-grouping-visuals.md
@@ -73,7 +73,7 @@
           href: desktop-directquery-about.md
         - name: 'Datakilder, der understøttes af DirectQuery'
           href: desktop-directquery-data-sources.md
-        - name: Forudsætninger for datakilder i Power BI
+        - name: Forudsætninger for Power BI-datakilder
           href: desktop-data-source-prerequisites.md
         - name: Standardmedlem i flerdimensionelle modeller i Power BI
           href: desktop-default-member-multidimensional-models.md
@@ -91,9 +91,9 @@
           href: desktop-create-and-manage-relationships.md
         - name: Datavisning i Power BI Desktop
           href: desktop-data-view.md
-        - name: Forespørgselsoversigt i Power BI Desktop
+        - name: Oversigt over forespørgsler i Power BI Desktop
           href: desktop-query-overview.md
-        - name: Grundlæggende om DAX i Power BI Desktop
+        - name: Grundlæggende DAX i Power BI Desktop
           href: desktop-quickstart-learn-dax-basics.md
         - name: Relationsvisning i Power BI Desktop
           href: desktop-relationship-view.md
@@ -101,7 +101,7 @@
           href: desktop-report-view.md
         - name: Opret forbindelse til flere datakilder i Power BI Desktop
           href: desktop-connect-to-data.md
-        - name: Publicer fra Power BI Desktop
+        - name: Udgiv fra Power BI Desktop
           href: desktop-upload-desktop-files.md
         - name: 'Del 1, Føj visualiseringer til en rapport i Power BI'
           href: visuals/power-bi-report-add-visualizations-i.md
@@ -117,11 +117,11 @@
               href: desktop-data-sources.md
             - name: Opret forbindelse til en webside efter eksempel (eksempelvisning)
               href: desktop-connect-to-web-by-example.md
-            - name: Opret forbindelse til datasæt i Power BI-tjenesten
+            - name: Opret forbindelse til datasæt i Power BI service
               href: desktop-report-lifecycle-datasets.md
             - name: Importer Excel-projektmapper til Power BI Desktop
               href: desktop-import-excel-workbooks.md
-            - name: Opret forbindelse til data ved hjælp af generiske grænseflader
+            - name: Opret forbindelse til data med generiske grænseflader
               href: desktop-connect-using-generic-interfaces.md
             - name: Opret forbindelse til en PDF-fil
               href: desktop-connect-pdf.md
@@ -163,13 +163,13 @@
               href: desktop-connect-redshift.md
             - name: Opret forbindelse til en webside fra Power BI Desktop
               href: desktop-connect-to-web.md
-            - name: Opret forbindelse til et Snowflake Computing-datalager i Power BI Desktop
+            - name: Opret forbindelse til et Snowflake-databehandlingswarehouse i Power BI Desktop
               href: desktop-connect-snowflake.md
             - name: Opret forbindelse til Azure Cost Management-data
               href: desktop-connect-azure-cost-management.md
-            - name: Opret forbindelse til Azure Consumption Insights-data
+            - name: Opret forbindelse til Microsoft Azure Consumption Insights data
               href: desktop-connect-azure-consumption-insights.md
-            - name: Brug af SAP HANA i Power BI Desktop
+            - name: Brug SAP HANA i Power BI Desktop
               href: desktop-sap-hana.md
             - name: Aktivér kryptering for SAP HANA
               href: desktop-sap-hana-encryption.md
@@ -181,11 +181,11 @@
               href: desktop-directquery-sap-bw.md
             - name: DirectQuery og SAP HANA
               href: desktop-directquery-sap-hana.md
-            - name: Indstilling for antagelse af referentiel integritet i Power BI Desktop
+            - name: Indstillingen Antag referentiel integritet i Power BI Desktop
               href: desktop-assume-referential-integrity.md
             - name: Brug SAP BW Connector i Power BI Desktop
               href: desktop-sap-bw-connector.md
-            - name: Brug af OneDrive for Business-links i Power BI Desktop
+            - name: Brug links til OneDrive for Business i Power BI Desktop
               href: desktop-use-onedrive-business-links.md
             - name: 'Tjeneste fra tredjepart: Facebook-connector til Power BI Desktop'
               href: service-facebook-connector.md
@@ -193,11 +193,11 @@
               href: service-google-analytics-connector.md
             - name: 'Project Online: Opret forbindelse til data via Power BI Desktop'
               href: desktop-project-online-connect-to-data.md
-        - name: Omdan og form data
+        - name: Omdan og udform data
           items:
-            - name: Kombiner binære filer
+            - name: Kombiner binære
               href: desktop-combine-binaries.md
-        - name: Modellér dine data
+        - name: Modeller dine data
           items:
             - name: Datakategorisering i Power BI Desktop
               href: desktop-data-categorization.md
@@ -213,7 +213,7 @@
               href: desktop-measures.md
             - name: Rediger et sprogligt skema til Spørgsmål og svar
               href: power-bi-q-and-a-linguistic-schema.md
-            - name: Importér og få vist KPI'er (Preview)
+            - name: Importer og få vist KPI'er (Eksempelvisning)
               href: desktop-import-and-display-kpis.md
         - name: Opret rapporter
           items:
@@ -245,7 +245,7 @@
               href: power-bi-report-filter.md
             - name: Brug Hurtigmålinger
               href: desktop-quick-measures.md
-            - name: Brug af What if-parametre
+            - name: Brug af Hvad hvis-parametre
               href: desktop-what-if.md
             - name: Brug detaljeadgang
               href: desktop-drillthrough.md
@@ -253,13 +253,13 @@
               href: desktop-cross-report-drill-through.md
             - name: Brug et relativt datoudsnit og -filter
               href: visuals/desktop-slicer-filter-date-range.md
-            - name: Brug af gruppering
+            - name: Brug gruppering og gruppering
               href: desktop-grouping-and-binning.md
             - name: Opret Power BI-visualiseringer ved hjælp af R
               href: desktop-r-visuals.md
             - name: Brug R-drevne brugerdefinerede visualiseringer
               href: desktop-r-powered-custom-visuals.md
-            - name: Brug af gitterlinjer og fastgørelse til gitter
+            - name: Brug gitterlinjer og snap-go-grid
               href: desktop-gridlines-snap-to-grid.md
             - name: Indstillinger for sidevisning i en Power BI-rapport
               href: power-bi-report-display-settings.md
@@ -269,7 +269,7 @@
               href: desktop-add-custom-column.md
             - name: Brug indbyggede hierarkietiketter i Power BI Desktop
               href: desktop-inline-hierarchy-labels.md
-            - name: Brug af udsnitsværktøjet til numerisk område
+            - name: Brug det numeriske interval-udsnitsværktøj
               href: desktop-slicer-numeric-range.md
             - name: Brug det relative dato-udsnitsværktøj
               href: desktop-slicer-filter-date-range.md
@@ -295,11 +295,11 @@
               href: desktop-conditional-table-formatting.md
             - name: Betinget udtryksbaseret formatering af titel
               href: desktop-conditional-format-visual-titles.md
-            - name: Sortér efter kolonne i Power BI Desktop
+            - name: Sorter efter kolonne i Power BI Desktop
               href: desktop-sort-by-column.md
             - name: Optimer rapporter til mobilapps
               href: desktop-create-phone-report.md
-            - name: Brug af Vis data og Vis poster
+            - name: Brug Se Data og Se poster
               href: desktop-see-data-see-records.md
             - name: Tip til oprettelse af rapporter
               href: desktop-tips-and-tricks-for-creating-reports.md
@@ -307,7 +307,7 @@
           items:
             - name: Visualiseringer i Power BI
               href: visuals/power-bi-report-visualizations.md
-            - name: Bedste praksis i forbindelse med visualiseringer
+            - name: Bedste praksisser for visualisering
               href: visuals/power-bi-visualization-best-practices.md
             - name: Skift visualiseringstype i en rapport
               href: visuals/power-bi-report-change-visualization-type.md
@@ -325,7 +325,7 @@
               href: visuals/power-bi-visualization-export-data.md
             - name: 'Flyt, tilpas størrelsen på og få en visualisering til at træde frem i en rapport'
               href: visuals/power-bi-visualization-move-and-resize.md
-            - name: 'Rediger den måde, visualiseringer interagerer i en rapport'
+            - name: 'Rediger, hvordan visualiseringer interagerer i en rapport'
               href: service-reports-visual-interactions.md
             - name: Tips og tricks til Power BI-kortvisualiseringer
               href: visuals/power-bi-map-tips-and-tricks.md
@@ -347,12 +347,14 @@
               href: visuals/power-bi-visualization-funnel-charts.md
             - name: Diagrammer fra vigtige lobbyister i Power BI
               href: visuals/power-bi-visualization-influencers.md
-            - name: Stikprøvetagning af linjer med høj tæthed
+            - name: Højdensitets linje-stikprøvetagning
               href: desktop-high-density-sampling.md
             - name: KPI-visualiseringer
               href: visuals/power-bi-visualization-kpi.md
             - name: Matrixvisualisering
               href: visuals/desktop-matrix-visual.md
+            - name: Visualisering til Spørgsmål og svar
+              href: visuals/power-bi-visualization-q-and-a.md
             - name: Opret avancerede analyser og visualiseringer med R-scripts i Power BI
               href: visuals/service-r-visuals.md
             - name: Radiale målerdiagrammer i Power BI
@@ -361,9 +363,9 @@
               href: visuals/desktop-ribbon-charts.md
             - name: Punktdiagrammer i Power BI
               href: visuals/power-bi-visualization-scatter.md
-            - name: Punktdiagrammer med høj tæthed
+            - name: Højdensitets punktdiagrammer
               href: visuals/desktop-high-density-scatter-charts.md
-            - name: Brug af figurkort i Power BI Desktop (Preview)
+            - name: Brug Figurkort i Power BI Desktop (prøveversion)
               href: visuals/desktop-shape-map.md
             - name: Udsnitsværktøjer i Power BI
               href: visuals/power-bi-visualization-slicers.md
@@ -375,6 +377,22 @@
               href: visuals/power-bi-visualization-waterfall-charts.md
             - name: Opret dynamiske referencelinjer
               href: service-analytics-pane.md
+        - name: Naturligt sprog
+          items:
+            - name: Introduktion til Spørgsmål og svar
+              href: natural-language/q-and-a-intro.md
+            - name: Visualisering til Spørgsmål og svar
+              href: visuals/power-bi-visualization-q-and-a.md
+            - name: Værktøjsintroduktion til Spørgsmål og svar
+              href: natural-language/q-and-a-tooling-intro.md
+            - name: Værktøjsundervisning til Spørgsmål og svar
+              href: natural-language/q-and-a-tooling-teach-q-and-a.md
+            - name: Avanceret værktøj til Spørgsmål og svar
+              href: natural-language/q-and-a-tooling-advanced.md
+            - name: Bedste praksis for Spørgsmål og svar
+              href: natural-language/q-and-a-best-practices.md
+            - name: Begrænsninger i Spørgsmål og svar
+              href: natural-language/q-and-a-limitations.md
         - name: Fejlfind
           items:
             - name: 'Løs problemer, når Access-databaser og Excel-regneark importerer til Power BI Desktop og Power Query'
@@ -395,7 +413,7 @@
           href: desktop-trusted-third-party-connectors.md
     - name: Ressourcer
       items:
-        - name: Power BI Desktop-videoer
+        - name: Videoer om Power BI Desktop
           href: desktop-videos.md
         - name: Tidligere månedlige opdateringer til Power BI Desktop
           href: desktop-latest-update-archive.md
@@ -417,7 +435,7 @@
           href: service-service-vs-desktop.md
     - name: Selvstudier
       items:
-        - name: Kom i gang med Power BI
+        - name: Introduktion til Power BI
           href: service-get-started.md
         - name: Opret forbindelse til et eksempel på en GitHub
           href: service-tutorial-connect-to-github.md
@@ -441,7 +459,7 @@
               href: service-the-report-editor-take-a-tour.md
             - name: Power BI-datakilder
               href: service-get-data.md
-            - name: Opdater data i Power BI
+            - name: Opdatering af data i Power BI
               href: refresh-data.md
         - name: Samarbejd i Power BI
           items:
@@ -459,7 +477,7 @@
               href: service-admin-licensing-organization.md
             - name: Funktioner efter licenstype
               href: service-features-license-type.md
-            - name: Power BI til den offentlige sektor i USA
+            - name: Power BI til US Government
               href: service-govus-overview.md
             - name: Ofte stillede spørgsmål til Germany Cloud-kunder
               href: service-govde-faq.md
@@ -575,9 +593,9 @@
               href: service-dashboards-design-tips.md
             - name: Optimer et dashboard til telefoner
               href: service-create-dashboard-mobile-phone-view.md
-            - name: Opret en QR-kode til et felt
+            - name: Opret en QR-kode for et felt
               href: service-create-qr-code-for-tile.md
-            - name: Klassificering af data i dashboard
+            - name: Dashboard-dataklassificering
               href: service-data-classification.md
             - name: Dashboardtemaer
               href: service-dashboard-themes.md
@@ -599,7 +617,7 @@
               href: power-bi-reports-tips-and-tricks-for-creating.md
             - name: Arbejd med samlinger i tjenesten
               href: service-aggregates.md
-            - name: Forbrugsdata til rapporter
+            - name: Forbrugsmetrik for rapporter
               href: service-usage-metrics.md
             - name: Opret en QR-kode for en rapport
               href: service-create-qr-code-for-report.md
@@ -611,7 +629,7 @@
               href: service-edit-sap-variables.md
             - name: Bedste praksis for oprettelse af hurtige og pålidelige rapporter
               href: power-bi-reports-performance.md
-        - name: Stil dine data spørgsmål
+        - name: Stil spørgsmål til dine data
           items:
             - name: Brug spørgsmål og svar til at udforske dine data
               href: power-bi-tutorial-q-and-a.md
@@ -627,9 +645,9 @@
               href: service-q-and-a-direct-query.md
             - name: Introduktion til Cortana til Power BI
               href: service-cortana-intro.md
-            - name: Aktivér Cortana til Power BI
+            - name: Aktiver Cortana til Power BI
               href: service-cortana-enable.md
-            - name: Hurtig indsigt i Power BI
+            - name: Quick Insights i Power BI
               href: service-insights.md
             - name: Optimer data til Hurtig indsigt
               href: service-insights-optimize.md
@@ -661,7 +679,7 @@
               href: service-embed-report-spo.md
             - name: Integrer en rapport på en sikker portal eller et websted
               href: service-embed-secure.md
-            - name: Udgiv fra Power BI på internettet
+            - name: Publicer fra Power BI på internettet
               href: service-publish-to-web.md
             - name: 'Del et dashboard, der linker til en Excel-projektmappe på OneDrive'
               href: service-share-dashboard-that-links-to-excel-onedrive.md
@@ -733,13 +751,13 @@
               href: service-admin-forgot-your-password.md
             - name: Kan du ikke logge på?
               href: power-bi-cannot-sign-in.md
-            - name: Hent flere diagnosticeringsoplysninger til Power BI
+            - name: Hentning af yderligere diagnosticeringsoplysninger til Power BI
               href: service-admin-capturing-additional-diagnostic-information-for-power-bi.md
             - name: Alternativ mailadresse til Power BI
               href: service-admin-alternate-email-address-for-power-bi.md
             - name: Sådan bruger du det samme konto-logon til Power BI og Azure
               href: service-admin-how-to-use-the-same-account-as-azure.md
-            - name: Målrettet Office 365 – kendte problemer
+            - name: Office 365 dedikeret - kendte problemer
               href: service-admin-office-365-dedicated-known-issues.md
             - name: Foretag fejlfinding af opdateringsscenarier
               href: refresh-troubleshooting-refresh-scenarios.md
@@ -753,9 +771,9 @@
               href: desktop-troubleshooting-analyze-in-excel.md
             - name: 'Fejl: Der blev ikke fundet nogen data i din Excel-projektmappe'
               href: service-admin-troubleshoot-excel-workbook-data.md
-            - name: Fejlfind Cortana
+            - name: Fejlfinding af Cortana
               href: service-cortana-troubleshoot.md
-            - name: 'Sådan opdaterer du dine legitimationsoplysninger til din indholdspakke fra Xero, hvis opdateringen mislykkedes'
+            - name: 'Sådan opdaterer du dine legitimationsoplysninger til Xero-indholdspakken, hvis opdatering mislykkedes'
               href: service-refresh-xero-credentials.md
         - name: Andre opgaver
           items:
@@ -763,7 +781,7 @@
               href: service-rename.md
             - name: Angiv elementkontakter
               href: service-item-contact.md
-            - name: Tilmeld din amerikanske offentlige virksomhed
+            - name: Tilmeld din US Government-organisation
               href: service-govus-signup.md
             - name: Slet næsten alt i Power BI
               href: service-delete.md
@@ -787,7 +805,7 @@
                   href: service-connect-to-azure-consumption-insights.md
                 - name: Azure Search
                   href: service-connect-to-azure-search.md
-                - name: Kredsløbs-id
+                - name: Circuit ID
                   href: service-connect-to-circuit-id.md
                 - name: ClickDimensions
                   href: service-connect-to-clickdimensions.md
@@ -803,7 +821,7 @@
                   href: service-connect-to-lithium.md
                 - name: Mandrill
                   href: service-connect-to-mandrill.md
-                - name: Microsoft Dynamics AX
+                - name: Microsoft Dynamics 365
                   href: service-connect-to-microsoft-dynamics-ax.md
                 - name: Microsoft Dynamics CRM
                   href: service-connect-to-microsoft-dynamics-crm.md
@@ -841,7 +859,7 @@
                   href: service-connect-to-uservoice.md
                 - name: VMob
                   href: service-connect-to-vmob.md
-                - name: Windows Dev Center
+                - name: Windows Udviklingscenter
                   href: service-connect-to-windows-dev-center.md
                 - name: Xero
                   href: service-connect-to-xero.md
@@ -981,17 +999,17 @@
           href: report-server/whats-new.md
         - name: Ændringslog
           href: report-server/changelog.md
-        - name: Tidslinje for support
+        - name: Support-tidslinje
           href: report-server/support-timeline.md
-        - name: Krav til hardware og software
+        - name: Hardware- og softwarekrav
           href: report-server/system-requirements.md
-        - name: Browserunderstøttelse
+        - name: Browser-support
           href: report-server/browser-support.md
         - name: Administratoroversigt
           href: report-server/admin-handbook-overview.md
         - name: Grundlæggende om rapportserver
           items:
-            - name: Planlagt opdatering af Power BI-rapport
+            - name: Planlagt opdatering af en Power BI-rapport
               href: report-server/scheduled-refresh.md
             - name: Power BI-rapportdatakilder
               href: report-server/data-sources.md
@@ -1001,7 +1019,7 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=851310'
             - name: Ved hjælp af mobilappen
               href: 'https://go.microsoft.com/fwlink/?linkid=848711'
-            - name: Fejlfind planlagt opdatering
+            - name: Fejlfinding i forbindelse med planlagt opdatering
               href: report-server/scheduled-refresh-troubleshoot.md
         - name: Rapportserver til udviklere
           items:
@@ -1053,7 +1071,7 @@
               href: report-server/configure-powerbi-mobile-apps-remote.md
             - name: Ekstern mobiladgang med Azure AD
               href: 'https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-power-bi'
-            - name: Vær vært for Excel-projektmapper
+            - name: Excel-projektmapper
               href: report-server/excel-oos.md
     - name: Reference
       items:
@@ -1069,7 +1087,7 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=848723'
     - name: Ressourcer
       items:
-        - name: Hvidbog om kapacitetsplanlægning
+        - name: Hvidbog med kapacitetsplanlægning
           href: report-server/capacity-planning.md
 - name: Gateways
   items:
@@ -1093,7 +1111,7 @@
           items:
             - name: Administrer datakilder
               href: service-gateway-data-sources.md
-            - name: Administrer din virksomhedsdatakilde – Analysis Services
+            - name: Administrer din virksomheds datakilde – Analysis Services
               href: service-gateway-enterprise-manage-ssas.md
             - name: Administrer din virksomheds datakilde – SAP HANA
               href: service-gateway-enterprise-manage-sap.md
