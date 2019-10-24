@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 21a7bf05330373febe1e9f121f07df6de0779c69
-ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.openlocfilehash: e6b0d7db9f82d8bc68f230858799f6afbcad1c82
+ms.sourcegitcommit: 83e1e162a037f352e542bd5c198a3c98f5db23c7
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70200960"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72511672"
 ---
 # <a name="data-sources-for-the-power-bi-service"></a>Datakilder til Power BI-tjenesten
 Dataene er i hjertet af Power BI. Lad os antage, at du er i gang med at udforske data. Det kan du gøre ved at oprette diagrammer og dashboards eller stille spørgsmål i **Spørgsmål og svar**. De visualiseringer og svar, du ser, får deres underliggende data fra et datasæt. Men hvor kommer dette datasæt fra? Det kommer fra en datakilde.
@@ -111,7 +111,11 @@ Opdatering af data er en supervigtig del af Power BI og alt for omfattende til a
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 Følgende begrænsninger gælder for alle datakilder, der bruges i Power BI-tjenesten. Der er andre begrænsninger, der gælder for bestemte funktioner, men følgende liste gælder for hele Power BI-tjenesten:
 
-* **Grænse for datasættets størrelse** – der er en grænse på 1 GB for hvert datasæt i Power BI-tjenesten.
-* **Rækkegrænse** – det maksimale antal rækker i dit datasæt, når du ikke bruger **DirectQuery** er 2 milliarder. Tre af disse rækker er reserveret, så resultatet er et anvendeligt maksimum på 1.999.999.997 rækker. Det maksimale antal rækker, når du bruger **DirectQuery**, er 1 million rækker.
-* **Grænse for kolonner** – det maksimale antal kolonner, der er tilladt i et datasæt på tværs af alle tabeller i datasættet, er 16.000 kolonner. Denne grænse gælder for Power BI-tjenesten og de datasæt, der bruges i Power BI Desktop. Power BI bruger en intern rækkenummerkolonne pr. tabel i datasættet, hvilket betyder, at det maksimale antal kolonner er 16.000 minus en for hver tabel i datasættet.
+* **Grænse for datasættets størrelse** – der er en grænse på 1 GB for hvert datasæt, der lagres i delte kapaciteter i Power BI-tjenesten. Hvis du har brug for større datasæt, kan du bruge [Power BI Premium](service-premium-what-is.md).
+
+* **Forskellige værdier i en kolonne**  – når du cachelagrer data i et Power BI-datasæt (også kaldet importtilstand), er der en grænse på 1.999.999.997 for antallet af entydige værdier, der kan lagres i en kolonne.
+
+* **Rækkegrænse**  – når Power BI bruger **DirectQuery** , pålægges der en grænse for de forespørgselsresultater, der sendes til den underliggende datakilde. Hvis den forespørgsel, der sendes til datakilden, returnerer mere end 1.000.000 rækker, får du vist en fejl, og forespørgslen mislykkes. Dine underliggende data kan stadig indeholde mere end 1.000.000 rækker. Det er ikke sandsynligt, at du støder på denne grænse, da de fleste rapporter samler dataene i mindre resultatsæt.
+
+* **Grænse for kolonner** – det maksimale antal kolonner, der er tilladt i et datasæt på tværs af alle tabeller i datasættet, er 16.000 kolonner. Denne grænse gælder for Power BI-tjenesten og de datasæt, der bruges i Power BI Desktop. Power BI sporer antallet af kolonner og tabeller i datasættet, hvilket betyder, at det maksimale antal kolonner er 16.000 minus en for hver tabel i datasættet.
 

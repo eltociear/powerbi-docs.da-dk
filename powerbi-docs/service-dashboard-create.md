@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 07/17/2019
 ms.author: maggies
-ms.openlocfilehash: 108882dd0f3b61d6cb19fd18290b44316231f3cb
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 6d8a6a28d72ce6d0fa6123b15f9e692ed1cc4d44
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020325"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543405"
 ---
 # <a name="create-a-power-bi-dashboard-from-a-report"></a>Opret et Power BI-dashboard fra en rapport
 Du har læst [Introduktion til dashboards i Power BI](service-dashboards.md), og nu vil du oprette dit eget. Der er mange forskellige måder at oprette et dashboard på. Du kan f.eks. oprette et dashboard fra en rapport, fra bunden, fra et datasæt, ved at kopiere et eksisterende dashboard og meget mere.  
@@ -66,11 +66,11 @@ I denne trinvise vejledning importerer vi et af eksempeldatasættene i Power BI 
 > Vidste du det? Du kan indsnævre den venstre navigationslinje ved at vælge ikonet med tre linjer øverst ![ikon for vis eller skjul navigationsrude](media/service-dashboard-create/power-bi-new-look-hide-nav-pane.png). Det giver dig mere plads til selve rapporten.
 
 ### <a name="open-the-report-and-pin-tiles-to-your-dashboard"></a>Åbn rapporten, og fastgør felter på dit dashboard
-1. I det samme arbejdsområde skal du vælge fanen **Rapporter** og derefter vælge **Eksempel på indkøbsanalyse** for at åbne rapporten.
+1. I det samme arbejdsområde skal du vælge fanen **Rapporter** og derefter vælge **Indkøbsanalyseeksempel** for at åbne rapporten.
 
-    ![Fanen Rapporter](media/service-dashboard-create/power-bi-reports.png) Rapporten åbnes som standard i Læsevisning. Bemærk, at den har to faner nederst: **Rabatanalyse** og **Oversigt over forbrug**. Hver fane repræsenterer en side i rapporten.
+    ![Fanen Rapporter](media/service-dashboard-create/power-bi-reports.png) Rapporten åbnes som standard i Læsevisning. Bemærk, at den har to faner til venstre: **Rabatanalyse** og **Oversigt over forbrug**. Hver fane repræsenterer en side i rapporten.
 
-2. Vælg **Rediger rapport** for at åbne rapporten i Redigeringsvisning.
+2. Vælg **Flere indstillinger (...)**  > **Rediger rapport** for at åbne rapporten i redigeringsvisning.
 
     ![Rapport i Læsevisning](media/service-dashboard-create/power-bi-reading-view.png)
 3. Peg på en visualisering for at få vist de tilgængelige indstillinger. Hvis du vil føje en visualisering til et dashboard, skal du vælge ikonet til fastgørelse ![Tegnestiftikon](media/service-dashboard-create/power-bi-pin-icon.png).

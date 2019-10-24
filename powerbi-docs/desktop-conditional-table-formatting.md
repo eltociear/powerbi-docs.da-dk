@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/16/2019
+ms.date: 10/16/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 35f60c0e41a06c8f13931d158fe092184da8838d
-ms.sourcegitcommit: f6ac9e25760561f49d4257a6335ca0f54ad2d22e
+ms.openlocfilehash: bd14437b0833d4c24c37ebeca6524948465bdb1f
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69561071"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544009"
 ---
 # <a name="conditional-formatting-in-tables"></a>Betinget formatering af tabeller 
 Med betinget formatering af tabeller kan du angive brugerdefinerede farver for celler baseret på celleværdier eller baseret på andre værdier eller felter, og du kan bruge gradueringsfarver. Du kan også få vist celleværdier med datalinjer. 
@@ -140,6 +140,9 @@ Du kan bruge en hvilken som helst værdi, der er angivet i CSS-farvespektret på
 Der er et par overvejelser, du skal gøre, når du arbejder med betinget formatering af tabeller:
 
 * Betinget formatering anvendes kun på værdier i **Matrix**visualiseringen og ikke på nogen subtotaler eller samlede totaler. 
+* Betinget formatering anvendes ikke på rækken **Total**
+* Alle tabeller, der ikke har en gruppering, vises som en enkelt række, der ikke understøtter betinget formatering.
+* Hvis du bruger gradueringsformat med automatiske værdier for maksimum/minimum eller regelbaseret formatering med procentregler, kan den betingede formatering ikke anvendes, når dataene indeholder NaN-værdier. NaN står for Not a number (ikke et tal) og skyldes ofte en fejl med division med nul. Du kan bruge [funktionen DIVIDE() DAX](https://docs.microsoft.com/dax/divide-function-dax) til at undgå disse fejl.
 
 
 ## <a name="next-steps"></a>Næste trin

@@ -7,16 +7,16 @@ ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-service
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 12/06/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: c1df7e6293db703922f37c3f28546bb296d1a46a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: f6becb175b8779588ab8d203bb02256945c71ee6
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051006"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544271"
 ---
 # <a name="troubleshooting-tile-errors"></a>Fejlfinding af feltfejl
 Nedenfor er de mest almindelige fejl, der kan opstå med felter, sammen med en forklaring.
@@ -65,16 +65,16 @@ Feltet blev sandsynligvis slettet eller omdøbt. Du kan fjerne det ødelagte fel
 
 Det er normalt et midlertidigt problem. Hvis du prøver igen senere, og du stadig får vist denne meddelelse, skal du kontakte support.
 
-**Felter, der fortsat viser ufiltrerede data efter aktivering af enkeltlogon (SSO).**
+**Felter viser fortsat ufiltrerede data efter aktivering af enkeltlogon (SSO).**
 
-Dette kan ske, hvis det underliggende datasæt er konfigureret til at bruge DirectQuery-tilstand eller en direkte forbindelse til Analysis Services via en datagateway i det lokale miljø. I dette tilfælde fortsætte felterne til at vise ufiltrerede dataene efter aktivere SSO til datakilden, indtil den næste opdatering af dashboardfelt er forfalden. Power BI bruger SSO, som er konfigureret på den næste opdatering af felter, og felterne, der viser de data, der er filtreret i henhold til brugerens identitet. 
+Dette kan ske, hvis det underliggende datasæt er konfigureret til at bruge DirectQuery-tilstand eller en direkte forbindelse til Analysis Services via en datagateway i det lokale miljø. I dette tilfælde fortsætter felterne med at vise de ufiltrerede data efter aktivering af SSO for datakilden indtil næste opdatering af feltet. Ved næste opdatering af feltet bruger Power BI SSO som konfigureret, og felterne viser dataene filtreret i henhold til brugeridentiteten. 
 
-Hvis du vil se de filtrerede data med det samme, du kan gennemtvinge en opdatering af feltet ved at vælge ellipsen (...) i øverste højre hjørne af et dashboard og vælge **Opdater dashboardfelter**.
+Hvis du vil have vist de filtrerede data med det samme, kan du gennemtvinge en opdatering af felter ved at vælge ellipsen (...) i øverste højre hjørne af et dashboard og derefter vælge **Opdater dashboardfelter**.
 
-Du kan også ændre opdateringshyppigheden felt og angive den til 15 minutter at sætte skub i opdatering af felter som datasætejer af et. Vælg tandhjulsikonet i øverste højre hjørne af Power BI-tjenesten og derefter vælge **indstillinger**. På den **indstillinger** side, Vælg den **datasæt** fanen. Udvid **planlagt cacheopdatering** og ændre **opdateringshyppighed**. Kontrollér, at du nulstille konfigurationen oprindelige opdateringshyppigheden, når Power BI udfører den næste opdatering af felter.
+Som ejer af et datasæt kan du også ændre intervallet for opdatering af felter og angive det til 15 minutter for at fremskynde feltopdateringen. Vælg tandhjulsikonet i øverste højre hjørne af Power BI-tjenesten, og vælg derefter **Indstillinger**. Vælg fanen **Datasæt** på siden **Indstillinger**. Udvid **Planlagt cacheopdatering**, og rediger **Opdateringshastighed**. Sørg for at nulstille konfigurationen til den oprindelige opdateringshastighed, når Power BI har udført den næste feltopdatering.
 
 > [!NOTE]
-> Den **planlagt cacheopdatering** afsnit er kun tilgængelig for datasæt i tilstanden DirectQuery/LiveConnection. Datasæt i Import-tilstand kræver ikke en opdatering af separate felter, fordi felterne opdateres automatisk i løbet af den næste planlagte opdatering.
+> Afsnittet **Planlagt cacheopdatering** er kun tilgængeligt for datasæt i tilstanden DirectQuery/direkte forbindelse. Datasæt i importtilstand kræver ikke en separat feltopdatering, fordi felterne opdateres automatisk under den næste planlagte opdatering af data.
 
 ## <a name="contact-support"></a>Kontakt support
 Hvis du stadig har et problem, skal du [kontakte support](https://support.powerbi.com) for at undersøge det yderligere.

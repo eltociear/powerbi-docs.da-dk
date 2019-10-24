@@ -443,7 +443,7 @@
           href: service-tutorial-use-cognitive-services.md
         - name: Integration af Machine Learning
           href: service-tutorial-invoke-machine-learning-model.md
-        - name: Byg en model til maskinel indlæring (eksempelvisning)
+        - name: Byg en Machine Learning-model
           href: service-tutorial-build-machine-learning-model.md
         - name: Opdater data fra SQL Server
           href: service-gateway-sql-tutorial.md
@@ -717,7 +717,7 @@
               href: service-machine-learning-integration.md
             - name: Brug Cognitive Services i Power BI
               href: service-cognitive-services.md
-            - name: Automatiseret maskinel indlæring i Power BI (prøveversion)
+            - name: Automatiseret Machine Learning i Power BI
               href: service-machine-learning-automated.md
         - name: Dataafstamning
           href: service-data-lineage.md
@@ -1161,6 +1161,8 @@
       href: guidance/import-modeling-data-reduction.md
     - name: DIVIDE-funktion vs. divisionsoperator (/)
       href: guidance/dax-divide-function-operator.md
+    - name: Vigtigheden af forespørgselsdelegering
+      href: guidance/power-query-folding.md
     - name: Passende brug af fejlfunktioner
       href: guidance/dax-error-functions.md
     - name: Bedste praksis i forbindelse med dataflow

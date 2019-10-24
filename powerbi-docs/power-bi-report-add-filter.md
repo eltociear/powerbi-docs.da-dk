@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/02/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: da7652556bc11e47cf238dd969ae1b27e6387299
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: be2304e655adadf20f5d33f46840c5a0cb82aa9f
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968785"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544623"
 ---
 # <a name="add-a-filter-to-a-report-in-power-bi"></a>Føj et filter til en rapport i Power BI
 
@@ -51,11 +51,12 @@ Du kan føje et filter på visualiseringsniveau til en bestemt visualisering på
 * Filtrer et felt, der allerede bruges i den pågældende visual.
 * Identificer et felt, der ikke allerede bruges i den pågældende visual, og føj dette felt direkte til bucket'en **Filtre på visualiseringsniveau**.
 
-Denne procedure anvender i øvrigt Retail Analysis-eksemplet, hvis du gerne vil downloade den og følge med. Download [Retail Analysis-eksemplet](sample-retail-analysis.md).
+
+Denne procedure anvender i øvrigt Retail Analysis-eksemplet, hvis du gerne vil downloade den og følge med. Download indholdspakken med [et eksempel på en detailhandelsanalyse](sample-retail-analysis.md#get-the-content-pack-for-this-sample).
 
 ### <a name="filter-the-fields-in-the-visual"></a>Filtrer felterne i denne visual
 
-1. Vælg **Rediger rapport** for at åbne rapporten i redigeringsvisning.
+1. Vælg **Flere indstillinger (...)**  > **Rediger rapport** for at åbne din rapport i redigeringsvisning.
    
    ![Knappen Rediger rapport](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
@@ -85,7 +86,7 @@ Denne procedure anvender i øvrigt Retail Analysis-eksemplet, hvis du gerne vil 
 
 Nu skal vi føje et nyt felt til vores visual som et filter på visualiseringsniveau.
    
-1. Vælg i ruden Felter det felt, du vil tilføje som et nyt filter på visualiseringsniveau, og træk det til **området Filtre på visualiseringsniveau**.  I dette eksempel trækker vi **District Manager** til bucket'en **Filtre på visualiseringsniveau**, søger efter **an** og vælger de tre chefer. 
+1. Vælg i ruden Felter det felt, du vil tilføje som et nyt filter på visualiseringsniveau, og træk det til **området Filtre på visualiseringsniveau**.  I dette eksempel trækker vi **District Manager** til bucket'en **Filtre på visualiseringsniveau**, søger efter **an** og vælger de tre chefer.
      
     ![Tilføj et felt i ruden Filtre](media/power-bi-report-add-filter/power-bi-search-add-visual-filter.png)
 
@@ -105,7 +106,9 @@ Nu skal vi føje et nyt felt til vores visual som et filter på visualiseringsni
 
 Du kan også tilføje et filter på sideniveau for at filtrere en hel side.
 
-1. Vælg **Rediger rapport** for at åbne rapporten i redigeringsvisning.
+1. Åbn rapporten med detailhandelsanalysen i Power BI-tjenesten, og gå derefter til siden **District Monthly Sales**. 
+
+2. Vælg **...**  > **Rediger rapport** for at åbne rapporten i redigeringsvisning.
    
    ![Knappen Rediger rapport](media/power-bi-report-add-filter/power-bi-edit-view.png)
 2. Åbn ruden Visualizations and Filters (Visualiseringer og filtre) og ruden Felter (hvis de ikke allerede er åbne).
@@ -122,19 +125,21 @@ Du kan også tilføje et filter på sideniveau for at filtrere en hel side.
 Med detaljeadgang i Power BI-tjenesten og Power BI Desktop kan du oprette en *destination* på en rapportside, som fokuserer på en bestemt enhed – f.eks. en leverandør, en kunde eller en producent. Nu kan brugere via andre rapportsider højreklikke på et datapunkt for denne enhed og opnå detaljeadgang til den fokuserede side.
 
 ### <a name="create-a-drillthrough-filter"></a>Opret et filter til detaljeadgang
-Følg med ved at downloade [eksemplet Customer Profitability](sample-customer-profitability.md). Antag, at du vil have en side med fokus på overordnede forretningsområder.
+Følg med ved at downloade [eksemplet Customer Profitability](sample-customer-profitability.md#get-the-content-pack-for-this-sample). Antag, at du vil have en side med fokus på overordnede forretningsområder.
 
-1. Vælg **Rediger rapport** for at åbne rapporten i Redigeringsvisning.
+1. Åbn rapporten med detailhandelsanalysen i Power BI-tjenesten, og gå derefter til siden **District Monthly Sales**.
+
+2. Vælg **Flere indstillinger (...)**  > **Rediger rapport** for at åbne din rapport i redigeringsvisning.
    
    ![Knappen Rediger rapport](media/power-bi-report-add-filter/power-bi-edit-view.png)
 
 1. Føj en ny side til rapporten, og kald den **Team Executive**. Denne side bliver *destinationen* for detaljeadgang.
 2. Tilføj visualiseringer, der sporer vigtige målepunkter for teamets overordnede forretningsområder.    
-3. Føj desuden **Executive > Executive Name** til filtrene til detaljeadgang.    
+3. I tabellen **Executives** skal du trække **Executive** til beholderen med detaljeadgangsfiltre.    
    
     ![Føj en værdi til detaljeadgangsfiltre](media/power-bi-report-add-filter/power-bi-drillthrough-filter.png)
    
-    Bemærk, at Power BI føjer en tilbage-pil til rapportsiden.  Når tilbage-pilen vælges, returneres brugere til den *oprindelige* rapportside – den side, de var placeret på, da de valgte detaljeadgang. Tilbage-pil fungerer kun i læsevisning.
+    Bemærk, at Power BI føjer en tilbage-pil til rapportsiden.  Når tilbage-pilen vælges, returneres brugere til den *oprindelige* rapportside – den side, de var placeret på, da de valgte detaljeadgang. I redigeringsvisning skal du holde Ctrl nede for at vælge pil tilbage
    
      ![Tilbage-pilen](media/power-bi-report-add-filter/power-bi-back-arrow.png)
 
@@ -145,7 +150,7 @@ Lad os se, hvordan filteret til detaljeadgang fungerer.
 2. Antag, at du er Andrew Ma, og at du vil have vist rapportsiden Team Executive filtreret udelukkende efter dine data.  Højreklik i områdediagrammet øverst til venstre på et vilkårligt grønt datapunkt for at åbne menupunktet Detaljeadgang.
    
     ![Start detaljeadgangshandlingen](media/power-bi-report-add-filter/power-bi-drillthrough.png)
-3. Vælg **Detaljeadgang > Team Executive** for at få detaljeadgang til rapportsiden med navnet **Team Executive**. Siden filtreres, så den viser oplysninger om det datapunkt, du har højreklikket fra, i dette tilfælde Andrew Ma. Det er kun det felt, der er i Detaljeadgang-filtrene, der sendes videre til rapportsiden med detaljeadgang.  
+3. Vælg **Detaljeadgang > Team Executive** for at få detaljeadgang til rapportsiden med navnet **Team Executive**. Siden filtreres, så den viser oplysninger om det datapunkt, du har højreklikket fra, i dette tilfælde Andrew Ma. Alle filtre på den oprindelige side anvendes på detaljeadgangssiden i rapporten.  
    
     ![Vælg detaljeadgangshandlingen](media/power-bi-report-add-filter/power-bi-drillthrough-executive.png)
 

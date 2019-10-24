@@ -8,14 +8,14 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 10/14/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: a05924fc093c1514f51c3fabac3162433e2188f7
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 2b05ad31612d1960e131028d13552843834a98bd
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968920"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307400"
 ---
 # <a name="configure-workloads-in-a-premium-capacity"></a>Konfigurer arbejdsbelastninger i en Premium-kapacitet
 
@@ -70,6 +70,8 @@ Arbejdsbelastningen for datasæt er som standard aktiveret og kan ikke deaktiver
 | **Maks. antal resulterende rækker** | Det maksimale antal rækker, der returneres i en DAX-forespørgsel. Standardværdien er -1 (ingen grænse), og det tilladte interval er mellem 100000 og 2147483647. |
 | **Grænse for forespørgselshukommelse (%)** | Den maksimale procentdel af tilgængelig hukommelse, der kan bruges til midlertidige resultater i en forespørgsels-eller DAX-måling. |
 | **Timeout for forespørgsel (sekunder)** | Det maksimale tidsrum, før en forespørgsel udløber. Standarden er 3600 sekunder (1 time). Værdien 0 angiver, at der ikke opstår timeout for forespørgsler. |
+| **Automatisk sideopdatering (prøveversion)** | Til/fra-knap for at tillade Premium-arbejdsområder at have rapporter med automatisk sideopdatering. |
+| **Minimumsinterval for opdatering** | Hvis automatisk sideopdatering er slået til, er der angivet et minimumsinterval for sideopdatering. Standardværdien er fem minutter, og den mindste tilladte værdi er ét sekund. |
 |  |  |  |
 
 #### <a name="max-intermediate-row-set-count"></a>Maks. antal mellemliggende rækker
@@ -112,6 +114,19 @@ Denne indstilling gælder for en enkelt forespørgsel og ikke den tid, det tager
 Den samlede tid for alle forespørgsler er 75 minutter, men indstillingsgrænsen nås ikke, fordi alle de individuelle forespørgsler kører i mindre end 20 minutter.
 
 Vær opmærksom på, at Power BI-rapporter tilsidesætter denne standard med en meget kortere timeout for hver forespørgsel til kapaciteten. Timeouten for hver forespørgsel er typisk ca. tre minutter.
+
+#### <a name="automatic-page-refresh-preview"></a>Automatisk sideopdatering (prøveversion)
+
+Når denne indstilling er aktiveret, gør automatisk sideopdatering det muligt for brugere i din Premium-kapacitet at opdatere sider i deres rapport med et angivet interval i forbindelse med DirectQuery-kilder. Som kapacitetsadministrator kan du gøre følgende:
+
+1.  Slå automatisk sideopdatering til og fra.
+2.  Definere et minimumsinterval for opdatering.
+
+På følgende billede vises placeringen af indstillingen for intervallet for automatisk opdatering:
+
+![administratorindstilling for intervallet for automatisk opdatering](media/service-admin-premium-workloads/automatic-refresh-interval.png)
+
+Forespørgsler, der er oprettet ved automatisk sideopdatering, går direkte til datakilden, så det er vigtigt at overveje pålideligheden og belastningen på disse kilder, når du tillader automatisk sideopdatering i din organisation. 
 
 ### <a name="dataflows"></a>Dataflow
 
@@ -181,5 +196,6 @@ Arbejdsbelastninger kan aktiveres og tildeles til en kapacitet ved hjælp af RES
 [Optimering af kapaciteter i Power BI Premium](service-premium-capacity-optimize.md)     
 [Selvbetjent dataforberedelse i Power BI med Dataflow](service-dataflows-overview.md)   
 [Hvad er sideinddelte rapporter i Power BI Premium?](paginated-reports-report-builder-power-bi.md)   
+[Automatisk sideopdatering i Power BI Desktop (prøveversion)](desktop-automatic-page-refresh.md)
 
 Har du flere spørgsmål? [Spørg Power BI-community'et](http://community.powerbi.com/)

@@ -9,19 +9,19 @@ ms.service: powerbi
 ms.custom: seodec18
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/17/2019
+ms.date: 10/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 2e41a3f5b1d1bd945e1ab4566abed1589b20c148
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 2b9fd3fc971d2cf73aabb2033d3a64565333bc67
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67264744"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543756"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>Grundlæggende begreber for forbrugere af Power BI-tjenesten
 
-Denne artikel forudsætter, at du allerede har læst [Oversigt over Power BI](../power-bi-overview.md) og har identificeret dig selv som en Power BI-***forbruger***. Forbrugere modtager Power BI-indhold, f.eks. dashboards og rapporter, fra kolleger. Forbrugere bruger Power BI-tjenesten, som er den webstedsbaserede version af Power BI.
+Denne artikel forudsætter, at du allerede har læst [Oversigt over Power BI](../power-bi-overview.md) og har identificeret dig selv som en [Power BI-***forbruger***](end-user-consumer.md). Forbrugere modtager Power BI-indhold, f.eks. dashboards og rapporter, fra kolleger. Forbrugere bruger Power BI-tjenesten, som er den webstedsbaserede version af Power BI.
 
 Du vil uden tvivl høre begrebet "Power BI Desktop" eller bare "Desktop". Det er det enkeltstående værktøj, der bruges af *designere*, som bygger og deler dashboards og rapporter med dig. Det er vigtigt at vide, at der findes andre Power BI-værktøjer. Så længe du er forbruger, skal du kun arbejde med Power BI-tjenesten. Denne artikel drejer sig kun om Power BI-tjenesten.
 
@@ -35,7 +35,7 @@ De fleste Power BI-forbrugere får Power BI-tjenesten, fordi 1) deres virksomhed
 
 Du kommer i gang ved at åbne en browser og skrive **app.powerbi.com**. Første gang, du åbner Power BI-tjenesten, vil du se noget i stil med følgende:
 
-![Et skærmbillede af velkomstskærmen for Power BI-tjenesten.](media/end-user-basic-concepts/power-bi-open.png)
+![Et skærmbillede af velkomstskærmen for Power BI-tjenesten.](media/end-user-basic-concepts/power-bi-home.png)
 
 I takt med at du bruger Power BI, kan du tilpasse det, du ser, når du åbner webstedet. Nogle personer foretrækker for eksempel, at Power BI åbner med **startsiden**, mens andre har et favoritdashboard, de vil have vist først. Bare rolig, i denne artikel viser vi dig, hvordan du tilpasser din oplevelse.
 
@@ -87,9 +87,9 @@ Hvert datasæt repræsenterer en enkelt datakilde. Kilden kunne f.eks. være en 
 
 Når en designer deler en app med dig, kan du se, hvilke datasæt designeren har inkluderet i appen.
 
-![Skærmbillede af Power BI-brugergrænsefladen, der viser apps, som er valgt og peger på sektionen Datasæt på lærredet.](media/end-user-basic-concepts/power-bi-dataset-list.png)
+![Skærmbillede af Power BI-brugergrænsefladen og en pil, der peger på sektionen Datasæt på lærredet.](media/end-user-basic-concepts/power-bi-dataset-lists.png)
 
-På datasæt...
+Ét datasæt ...
 
 - Kan bruges igen og igen af en rapportdesigner til at oprette dashboards og rapporter
 
@@ -98,10 +98,6 @@ På datasæt...
 - Visualiseringer fra dette ene datasæt kan vises på mange forskellige dashboards
 
   ![En grafik, der viser et datasæt med mange til en-relationer](media/end-user-basic-concepts/drawing2.png)
-
-Derudover kan designere bruge datasæt fra andre arbejdsområder til at oprette indhold (rapporter, dashboards) i deres arbejdsområde. I Power BI vises disse datasæt ved hjælp af ikonet for refereret datasæt:
-
-![Et skærmbillede af en database med et linkikon.](media/end-user-basic-concepts/power-bi-dataset-reference-icon.png)
 
 Videre til næste byggesten: visualiseringer.
 
@@ -131,11 +127,11 @@ _______________________________________________________
 
 En Power BI-rapport er en eller flere sider med visualiseringer, grafik og tekst. Alle visualiseringerne i en rapport stammer fra et enkelt datasæt. *Designere* deler rapporter med *forbrugere*, som [interagerer med rapporterne i *Læsevisning*](end-user-reading-view.md).
 
-![Skærmbillede af en rapport med faner.](media/end-user-basic-concepts/power-bi-report2.png)
+![Skærmbillede af en rapport med faner.](media/end-user-basic-concepts/power-bi-report.png)
 
 Én rapport...
 
-- Kan være knyttet til flere dashboards (felter, der er fastgjort fra den ene rapport, kan vises på flere dashboards).
+- Kan være knyttet til flere dashboards (felter, der er fastgjort fra den ene rapport kan vises på flere dashboards).
 
 - Kan oprettes ved hjælp af data fra kun ét datasæt.  
 
@@ -151,7 +147,7 @@ Et dashboard repræsenterer en brugerdefineret visning af nogle undersæt af de 
 
   ![Skærmbillede af et eksempel på et dashboard](media/end-user-basic-concepts/power-bi-dashboard.png)
 
-Et felt er en gengivelse af en visualisering, som en *designer* *fastgør* f.eks. fra en rapport til et dashboard. Hvert fastgjorte felt viser en [visualisering](end-user-visualizations.md), som Power BI har oprettet ud fra et datasæt og fastgjort til det pågældende dashboard. Et felt kan også indeholde en hel rapportside og data til livestreaming eller en video. *Designere* kan føje felter til dashboards på mange måder. Der er for mange måder, til at vi kan dække dem i denne oversigtsartikel. Du kan få mere at vide i [Dashboard-felter i Power BI](end-user-tiles.md).
+Et felt er en gengivelse af en visualisering, som en *designer* *fastgør* f.eks. fra en rapport til et dashboard. Hvert fastgjorte felt viser en [visualisering](end-user-visualizations.md), som en designer har oprettet ud fra et datasæt og fastgjort til det pågældende dashboard. Et felt kan også indeholde en hel rapportside og data til livestreaming eller en video. *Designere* kan føje felter til dashboards på mange måder. Der er for mange måder, til at vi kan dække dem i denne oversigtsartikel. Du kan få mere at vide i [Dashboard-felter i Power BI](end-user-tiles.md).
 
 Forbrugere kan ikke redigere dashboards. En forbruger kan derimod tilføje kommentarer, få vist relaterede data, angive det som favorit, abonnere og meget mere.
 
@@ -183,7 +179,7 @@ _______________________________________________________
 
 Disse samlinger af dashboards og rapporter organiserer relateret indhold sammen i en enkelt pakke. Power BI-*designere* udarbejder dem og deler dem med enkeltpersoner, grupper, en hel organisation eller offentligheden. Som forbruger kan du være sikker på, at du og dine kolleger arbejder med de samme data – én version, der fungerer som fælles udgangspunkt.
 
-![Skærmbillede af apps, der er valgt i ruden til venstre i Power BI.](media/end-user-basic-concepts/power-bi-app.png)
+![Skærmbillede af apps, der er valgt i ruden til venstre i Power BI.](media/end-user-basic-concepts/power-bi-apps.png)
 
 Det er nemt at finde og installere apps i [Power BI-tjenesten](https://powerbi.com) og på din mobilenhed. Når du har installeret en app, behøver du ikke at huske navnene på mange forskellige dashboards. De er alle samlet i én app, i din browser eller på din mobilenhed.
 

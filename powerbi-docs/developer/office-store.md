@@ -9,18 +9,18 @@ ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 3/27/2019
-ms.openlocfilehash: 44534f2adbc4f1f39a0c65e11d646fd8fd67be71
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 1841311e94ca593093fa3104b615328927365880
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71944810"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307668"
 ---
 # <a name="publish-power-bi-visuals-to-appsource"></a>Publicer Power BI-visualiseringer i AppSource
 
 Få mere at vide om, hvordan du kan udgive din brugerdefinerede visual i AppSource, så andre kan finde og bruge den.
 
-Når du har oprettet en brugerdefineret visual, kan du udgive den i AppSource, så andre kan finde og bruge den. Det kræver nogle forberedelser, før du kan gøre det. Du kan finde flere oplysninger om, hvordan du opretter en brugerdefineret visualisering, under [Udvikling af en brugerdefineret visualisering i Power BI](custom-visual-develop-tutorial.md).
+Når du har oprettet en brugerdefineret visual, kan du udgive den i AppSource, så andre kan finde og bruge den. Det kræver nogle forberedelser, før du kan gøre det. Du kan finde flere oplysninger om, hvordan du opretter en brugerdefineret visualisering, under [Udvikling af en brugerdefineret visualisering i Power BI](visuals/custom-visual-develop-tutorial.md).
 
    ![Office Store](media/office-store/appsource-01.png)
 
@@ -30,7 +30,7 @@ Når du har oprettet en brugerdefineret visual, kan du udgive den i AppSource, s
 
 ## <a name="preparing-to-submit-your-custom-visual"></a>Forberedelser, inden du indsender en brugerdefineret visualisering
 
-Når du er færdig med at læse vores [retningslinjer for Power BI-visuals](guidelines-powerbi-visuals.md) samt kode og [teste den brugerdefinerede visual](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md), og du har føjet den til en pbiviz-fil, skal du sørge for at have følgende klar, når du vil indsende den.
+Når du er færdig med at læse vores [retningslinjer for Power BI-visuals](guidelines-powerbi-visuals.md) samt kode og [teste den brugerdefinerede visual](https://github.com/Microsoft/PowerBI-visuals/blob/master/Tutorial/SubmissionTesting.md), og du har føjet den til en PBIVIZ-fil, skal du sørge for at have følgende klar, når du vil indsende den.
 
 | Element | Påkrævet | Beskrivelse |
 | --- | --- | --- |
@@ -147,7 +147,7 @@ Når du har oprettet din visualisering, kan du vælge at få den certificeret. D
 
 ## <a name="next-steps"></a>Næste trin
 
-[Udvikling af en brugerdefineret visualisering i Power BI](custom-visual-develop-tutorial.md)  
+[Udvikling af en brugerdefineret visualisering i Power BI](visuals/custom-visual-develop-tutorial.md)  
 [Visualiseringer i Power BI](../visuals/power-bi-report-visualizations.md)  
 [Brugerdefinerede visualiseringer i Power BI](../power-bi-custom-visuals.md)  
 [Sådan får du en brugerdefineret visualisering *certificeret*](../power-bi-custom-visuals-certified.md)

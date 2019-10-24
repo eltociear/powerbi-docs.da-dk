@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: ff962335b573c6dd2a03ae5ab4633c1042a77059
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5a4c385b9c8e8a28de3b9a5e1dd84651f87ef000
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770791"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72543040"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Grundlæggende begreber for designere i Power BI-tjenesten
 
@@ -33,10 +33,11 @@ Når du åbner Power BI-tjenesten i en browser, begynder du på startskærmen. H
 3. Power BI-startknap
 4. Ikonknapper, herunder indstillinger, hjælp og feedback
 5. Søgefelt
-6. Felter fra et foretrukket dashboard
-7. Foretrukne og hyppige dashboards og rapporter
+6. Foretrukne og hyppige dashboards, rapporter og arbejdsområder
+7. Seneste dashboards, rapporter og arbejdsområder
+8. Dine arbejdsområder
 
-Dine slutbrugere for dine rapporter og dashboards har den samme startoplevelse i Power BI-tjenesten i en browser.
+Du og dine slutbrugere af dine rapporter og dashboards har den samme startoplevelse i Power BI-tjenesten i en browser.
 
 Vi vil gå i dybden med disse funktioner senere, men lad os først se på nogle Power BI-begreber. Eller måske vil du se denne video først.  I videoen gennemgår Will de grundlæggende begreber og giver en præsentation af Power BI-tjenesten.
 
@@ -44,7 +45,7 @@ Vi vil gå i dybden med disse funktioner senere, men lad os først se på nogle 
 
 
 ## <a name="power-bi-concepts"></a>Power BI-begreber
-De fire overordnede elementer i Power BI er: **_dashboards_**, **_rapporter_**, **_projektmapper_** og **_datasæt_**. Og de er alle organiseret i **_arbejdsområder_**. Det er vigtigt at forstå arbejdsområderne, før vi går videre til de fire overordnede elementer, så lad os starte der.
+De fire overordnede elementer i Power BI er: **_dashboards_** , **_rapporter_** , **_projektmapper_** og **_datasæt_** . Og de er alle organiseret i **_arbejdsområder_** . Det er vigtigt at forstå arbejdsområderne, før vi går videre til de fire overordnede elementer, så lad os starte der.
 
 ## <a name="workspaces"></a>Arbejdsområder
 Arbejdsområder er objektbeholdere til dashboards, rapporter, projektmapper og datasæt i Power BI. Der er to typer arbejdsområder: *Mit arbejdsområde* og *apparbejdsområder*. Hvad er en *app*? En *app* i Power BI er en samling dashboards og rapporter, der er bygget til at levere vigtige metrikker til Power BI-slutbrugerne i organisationen. Apps er interaktive, men slutbrugerne kan ikke redigere dem.
@@ -85,7 +86,7 @@ Datasæt kan opdateres, omdøbes, udforskes og fjernes. Brug et datasæt til at 
 * [Eksempel på datasæt til Power BI](sample-datasets.md)
 
 ## <a name="reports"></a>Rapporter
-En Power BI-rapport er en eller flere sider med visualiseringer, f.eks. kurvediagrammer, kort og træstrukturdiagrammer. Visualiseringer kaldes også **_visualiseringer_**. Alle visualiseringerne i en rapport stammer fra et enkelt datasæt. Du kan oprette rapporter fra bunden i Power BI, importere dem med dashboards, som kolleger deler med dig, eller Power BI kan oprette dem, når du opretter forbindelse til datasæt fra Excel, Power BI Desktop, databaser og SaaS-programmer.  Når du f.eks. opretter forbindelse til en Excel-projektmappe, der indeholder Power View-ark, opretter Power BI en rapport, der er baseret på de ark. Og når du opretter forbindelse til et SaaS-program, importerer Power BI en færdigbygget rapport.
+En Power BI-rapport er en eller flere sider med visualiseringer, f.eks. kurvediagrammer, kort og træstrukturdiagrammer. Visualiseringer kaldes også **_visualiseringer_** . Alle visualiseringerne i en rapport stammer fra et enkelt datasæt. Du kan oprette rapporter fra bunden i Power BI, importere dem med dashboards, som kolleger deler med dig, eller Power BI kan oprette dem, når du opretter forbindelse til datasæt fra Excel, Power BI Desktop, databaser og SaaS-programmer.  Når du f.eks. opretter forbindelse til en Excel-projektmappe, der indeholder Power View-ark, opretter Power BI en rapport, der er baseret på de ark. Og når du opretter forbindelse til et SaaS-program, importerer Power BI en færdigbygget rapport.
 
 Der er to forskellige tilstande, hvor du kan få vist og interagere med rapporter: *Læsevisning* og *Redigeringsvisning*. Når du åbner en rapport, åbnes den i Læsevisning. Hvis du har redigeringstilladelser, kan du se **Rediger rapport** i øverste venstre hjørne, og du kan få vist rapporten i Redigeringsvisning.  Hvis en rapport er i et arbejdsområde, kan alle med rollen *administrator*, *medlem* eller *bidragyder* redigere den. De har adgang til alle egenskaberne til udforskning, design, oprettelse og deling i Redigeringsvisning for den pågældende rapport. De personer, de deler rapporten med, kan udforske og interagere med rapporten i Læsevisning.   
 
@@ -195,8 +196,8 @@ Spørgsmål og svar søger efter et svar i den/de datasæt, der har forbindelse 
 
 Så snart du begynder at skrive dit spørgsmål, fører Spørgsmål og svar dig til siden Spørgsmål og svar. Mens du skriver, hjælper Spørgsmål og svar dig med at stille det rette spørgsmål og finde det bedste svar med omformuleringer, autofyld, forslag og meget mere. Når du har en visualisering (svar), som du synes om, kan du fastgøre den til dashboardet. Du kan få mere at vide i [Spørgsmål og svar i Power BI](power-bi-q-and-a.md).
 
-### <a name="4-icon-buttons"></a>4. **Ikonknapper**
-Ikonerne øverst til højre er dine ressourcer til indstillinger, beskeder, downloads samt til at få hjælp fra og give feedback til Power BI-teamet. Vælg den dobbelte pil for at åbne dashboardet i **fuldskærmsvisning**.  
+### <a name="4-icons-in-the-black-header-bar"></a>4. **Ikoner på den sorte overskriftslinje**
+Ikonerne øverst til højre er dine ressourcer til indstillinger, beskeder, downloads samt til at få hjælp, slå **Nyt udseende** til og fra og give feedback til Power BI-teamet.  
 
 ![ikonknapper](media/service-basic-concepts/power-bi-icons.png)
 
@@ -217,8 +218,8 @@ Hvis du vælger **Power BI**, vender du tilbage til din Power BI-startside.
 
    !["Power BI" i tjenesten](media/service-basic-concepts/version-new.png)
 
-### <a name="8-labeled-icon-buttons"></a>8. **Navngivne ikonknapper**
-Dette område på skærmen indeholder flere indstillinger til at interagere med indholdet (i dette tilfælde dashboardet).  Ud over de navngivne ikoner, som du kan se, vises der også indstillinger til at kopiere, udskrive og opdatere dashboardet og meget mere, når du vælger ellipsen.
+### <a name="8-labeled-icons-in-the-gray-menu-bar"></a>8. **Navngivne ikoner på den grå menulinje**
+Dette område på skærmen indeholder flere indstillinger til at interagere med indholdet (i dette tilfælde dashboardet).  Ud over de navngivne ikoner, som du kan se, vises der også indstillinger til at kopiere, udskrive og opdatere dashboardet og meget mere, når du vælger **Flere indstillinger (…)** .
 
    ![Navngivne ikonknapper](media/service-basic-concepts/power-bi-labeled-icons.png)
 

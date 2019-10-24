@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 06/19/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0123d8123170cfa78b3d13a55ed2f367af0447ae
-ms.sourcegitcommit: 90aa7ea5fcc7cf0fd7f6c3c1efeff5f27e8ef0dd
+ms.openlocfilehash: 2befce7914fc295ff4a6124be10183d5ff20106d
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67299325"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544441"
 ---
 # <a name="filled-maps-choropleths-in-power-bi"></a>Udfyldte kort (Choropleths) i Power BI
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Et udfyldt kort bruger skygger eller toner eller mønstre til at vise, hvordan en værdi varierer i forhold på tværs af et geografisk område eller en region.  Fremvis hurtigt disse relative forskelle med skygger, der går fra lys (mindre-hyppige/lavere) til mørk (mere-hyppige/mere).    
 
 ![USA-kort](media/power-bi-visualization-filled-maps-choropleths/large-map.png)
@@ -44,27 +47,24 @@ Udfyldte kort er et godt valg:
 * For at få et overblik over distributionen på tværs af geografiske placeringer.
 
 ### <a name="prerequisites"></a>Forudsætninger
-- Power BI-tjenesten eller Power BI Desktop
-- Eksempel på salg og marketing
+I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix).
+1. Vælg **Fil** > **Åbn** i det øverste venstre afsnit i menulinjen.
+   
+2. Find din kopi af **PBIX-filen med eksemplet Detailhandelsanalyse**
 
-Hvis du vil følge med, bruges Power BI-tjenesten i dette selvstudium, ikke Power BI Desktop.
+1. Åbn **PBIX-filen med eksemplet Detailhandelsanalyse** i rapportvisning ![ikon for skærmbillede af rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
+
 
 ## <a name="create-a-basic-filled-map"></a>Opret et grundlæggende udfyldt kort
 I denne video opretter Kim et grundlæggende kort og konverterer det til et udfyldt kort.
+   > [!NOTE]
+   > I denne video bruges en ældre version af Power BI Desktop.
+   > 
+   > 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
-
-### <a name="get-data-and-add-a-new-blank-page-to-the-report"></a>Hent data, og tilføj en ny tom side i rapporten
-1. Hvis du vil oprette dit eget udfyldte kort, kan du [downloade salgs- og marketingeksemplet](../sample-datasets.md) ved at logge på Power BI og vælge **Hent data \> Eksempler \> Salg og marketing \> Tilslut**. Eller hent appen **Power BI-salg og -marketing** på appsource.com. 
-
-2. Åbn rapporten Salg og marketing.
-
-   ![Rapporten Salg og marketing åbnes](media/power-bi-visualization-filled-maps-choropleths/power-bi-report-canvas.png)
-3. Power BI åbner rapporten. Vælg **Rediger rapport** for at åbne rapporten i [redigeringsvisning](../service-interact-with-a-report-in-editing-view.md).
-
-4. Tilføj en ny side ved at vælge det gule plusikon nederst på rapportcanvasset.
-
-    ![Rapportfaner](media/power-bi-visualization-filled-maps-choropleths/power-bi-new-page.png)
 
 ### <a name="create-a-filled-map"></a>Opret et kartogram
 1. Fra ruden Fields skal du vælge feltet **Geo** \> **State**.    
@@ -75,9 +75,9 @@ I denne video opretter Kim et grundlæggende kort og konverterer det til et udfy
    ![skabeloner med fremhævet ikon for udfyldte kort](media/power-bi-visualization-filled-maps-choropleths/img003.png)
 3. Filtrer kortet, så du kun ser det kontinentale USA.
 
-   a.  Nederst i ruden Visualizations skal du finde området **Filters**.
+   a.  Til venstre i ruden Visualiseringer skal du finde ruden **Filtre**. Udvid ruden, hvis den er minimeret.
 
-   b.  Hold markøren over **State**, og klik på pilen Udvid  
+   b.  Hold markøren over **State**, og klik på pilen for at udvide.  
    ![Filtre på visualiseringsniveau viser Tilstand (Alle)](media/power-bi-visualization-filled-maps-choropleths/img004.png)
 
    c.  Markér afkrydsningsfeltet ud for **All**, og fjern markeringen ud for **AK**.
@@ -115,11 +115,11 @@ Hvis du fremhæver en placering på et kartogram, krydsfiltreres de andre visual
 
     ![Fanen Synspunkt er valgt](media/power-bi-visualization-filled-maps-choropleths/power-bi-sentiment-tab.png)
 
-4. Flyt og tilpas størrelsen på visualiseringerne på siden for at få mere plads, indsæt derefter kartogrammet med Ctrl + V fra den tidligere rapport.
+4. Flyt og tilpas størrelsen på visualiseringerne på siden for at få mere plads, indsæt derefter kartogrammet med Ctrl + V fra den tidligere rapport. (Se følgende billeder)
 
    ![Kartogram tilføjet på siden Synspunkt](media/power-bi-visualization-filled-maps-choropleths/power-bi-map.png)
 
-5. Vælg en stat på det udfyldte kort.  Dette fremhæver de andre visualiseringer på siden. Hvis jeg f.eks. vælger **Texas**, viser det mig, at synspunktet er 74, Texas ligger i det centrale distrikt \#23.   
+5. Vælg en stat på det udfyldte kort.  Dette krydsfremhæver og krydsfiltrerer de andre visualiseringer på siden. Hvis du f.eks. vælger **Texas**, kan du se, at synspunktet er 75, og at Texas ligger i det centrale distrikt nr. 23.   
    ![Texas valgt](media/power-bi-visualization-filled-maps-choropleths/power-bi-texas.png)
 2. Vælg et datapunkt i kurvediagrammet VanArsdel – tillid efter måned. Derved filtreres kartogrammet for at vise tillidsdata for VanArsdel og ikke deres konkurrenter.  
    ![ny skygge](media/power-bi-visualization-filled-maps-choropleths/power-bi-yes.png)

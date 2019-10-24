@@ -10,19 +10,22 @@ ms.topic: conceptual
 ms.date: 06/11/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: fe1d2a6f086831a4ae6bd78d8669dce9459bffad
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: b7a4021999a39d88b78d31aaa55d7f9c08a93d8e
+ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839848"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72544190"
 ---
 # <a name="basic-area-chart"></a>Basisområdediagram
+
+[!INCLUDE [power-bi-visuals-desktop-banner](../includes/power-bi-visuals-desktop-banner.md)]
+
 Basisområdediagrammet (også kendt som lagdelt områdediagram) er baseret på kurvediagrammet. Området mellem akse og kurve er udfyldt med farver for at angive mængde. 
 
 Områdediagrammer fremhæver omfanget af ændringer over tid og kan bruges til at fremhæve den samlede værdi på tværs af en udvikling. Data, som repræsenterer indtjening over tid, kan f.eks. afbildes i et områdediagram for at fremhæve den samlede indtjening.
 
-![](media/power-bi-visualization-basic-area-chart/powerbi-area-chartnew.png)
+![](media/power-bi-visualization-basic-area-chart/power-bi-chart-example.png)
 
 ## <a name="when-to-use-a-basic-area-chart"></a>Brugsscenarier for et områdediagram
 Basisområdediagrammer er et godt valg:
@@ -31,29 +34,32 @@ Basisområdediagrammer er et godt valg:
 * Når du har enkelte perioder, der repræsenterer et sæt, som kan tælles fysisk.
 
 ### <a name="prerequisites"></a>Forudsætninger
- - Power BI-tjenesten
- - Eksempel på analyse af detailhandel
+I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
-Log på Power BI for at følge fremgangsmåden, og vælg **Hent Data \>Eksempler \> Eksempel på detailhandelsanalyse > Opret forbindelse**, og vælg **Gå til dashboard**. 
+1. Vælg **Fil** > **Åbn** i øverste venstre afsnit af menulinjen
+   
+2. Find din kopi af **PBIX-filen med eksemplet Detailhandelsanalyse**
+
+1. Åbn **PBIX-filen med eksemplet Detailhandelsanalyse** i rapportvisning ![ikon for skærmbillede af rapportvisning.](media/power-bi-visualization-kpi/power-bi-report-view.png).
+
+1. Markér ![Skærmbillede af den gule fane.](media/power-bi-visualization-kpi/power-bi-yellow-tab.png) for at tilføje en ny side.
+
 
 ## <a name="create-a-basic-area-chart"></a>Opret et basisområdediagram
  
 
-1. Vælg feltet **Butikker i alt** fra dashboardet "Eksempel på detailhandelsanalyse" for at åbne rapporten "Eksempel på detailhandelsanalyse".
-2. Vælg **Rediger** for at åbne rapporten i Redigeringsvisning.
-3. Tilføj en ny rapport ved at vælge det gule plusikon (+) nederst i rapporten.
-4. Opret et områdediagram, der viser dette års salg og sidste års salg pr. måned.
+1. Hvis du følger disse trin, kan du oprette et områdediagram, der viser dette års salg og sidste års salg pr. måned.
    
    a. I ruden Felter skal du vælge **Salg \> Sidste års salg** og **Dette års salg > Værdi**.
 
-   ![](media/power-bi-visualization-basic-area-chart/power-bi-bar-chart.png)
+   ![dataværdier for områdediagram](media/power-bi-visualization-basic-area-chart/power-bi-bar-chart.png)
 
    b.  Konvertér diagrammet til et grundlæggende områdediagram ved at vælge ikonet Områdediagram i ruden Visualiseringer.
 
-   ![](media/power-bi-visualization-basic-area-chart/convertchart.png)
+   ![ikon for områdediagram](media/power-bi-visualization-basic-area-chart/convertchart.png)
    
-   c.  Vælg **Tid \> Måned** for at føje det til **Akse**.   
-   ![](media/power-bi-visualization-basic-area-chart/powerbi-area-chartnew.png)
+   c.  Vælg **Time \> FiscalMonth** for at føje elementet til beholderen **Akse**.   
+   ![akseværdier for områdediagram](media/power-bi-visualization-basic-area-chart/powerbi-area-chartnew.png)
    
    d.  Hvis du vil vise diagrammet pr. måned, skal du vælge ellipsemenuen (øverst til højre i visualiseringen) og vælge **Sortér efter måned**. Hvis du vil ændre sorteringsrækkefølgen, skal du vælge ellipsen igen og vælge enten **Sortér stigende** eller **Sortér faldende**.
 
@@ -62,14 +68,11 @@ Du kan få mere at vide om brug af ruden Filters under [Føj et filter til en ra
 
 For at fremhæve et bestemt område i diagrammet skal du markere dette område eller dets øverste kant.  Hvis der er andre visualiseringer på samme side, vil den i modsætning til andre visualiseringstyper ikke krydsfiltrere med de andre visualiseringer på rapportsiden, når et grundlæggende område markeres. Områdediagrammer kan dog krydsfiltreres af andre visualiseringer på rapportsiden. 
 
-1. Prøv det selv ved at vælge dit områdediagram og kopiere det til en anden rapportside (Ctrl + C og Ctrl + V).
-2. Vælg det ene af de nedtonede områder og derefter det andet nedtonede område. Bemærk, at det ikke påvirker de øvrige visualiseringer på siden.
+1. Prøv det selv ved at vælge dit områdediagram og kopiere det til rapportsiden **New Store Analysis** (Ctrl + C og Ctrl + V).
+2. Vælg det ene af de nedtonede områder i områdediagrammet og derefter det andet nedtonede område. Bemærk, at det ikke påvirker de øvrige visualiseringer på siden.
+1. Vælg herefter et element. Læg mærke til, hvordan det påvirker områdediagrammet – det bliver krydsfiltreret.
 
-    ![Dette års salg valgt i områdediagram](media/power-bi-visualization-basic-area-chart/power-bi-select-area.png)
-
-3. Nu skal du vælge et element på en af de andre visualiseringer på siden, f.eks. en søjle i et søjlediagram eller en måned i et kurvediagram. Læg mærke til, hvordan det påvirker områdediagrammet – det bliver filtreret.  
-
-    ![Det liggende søjlediagram FT Oglethorpe valgt](media/power-bi-visualization-basic-area-chart/power-bi-filter.png) 
+    ![Filtereksempler](media/power-bi-visualization-basic-area-chart/power-bi-area-chart-filters.gif) 
 
 Hvis du vil vide mere, kan du se [Visuelle interaktioner i rapporter](../service-reports-visual-interactions.md)
 

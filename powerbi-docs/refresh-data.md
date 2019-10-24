@@ -7,15 +7,15 @@ ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 06/12/2019
+ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 7492651d2b5be8a63c97594fce3f3399b1122cc3
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: f5fe835d2ec423b596460a81ccb2a406b306c3c5
+ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325025"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72307936"
 ---
 # <a name="data-refresh-in-power-bi"></a>Opdatering af data i Power BI
 
@@ -108,7 +108,7 @@ Hvis du har oprettet dit datasæt og dine rapporter på baggrund af en Power BI 
 
 I modsætning til en opdatering af datasæt, hvor Power BI importerer data fra en datakilde til et datasæt, synkroniseres datasæt og rapporter med deres kildefiler under en opdatering af OneDrive. Power BI kontrollerer som standard ca. hver time, om et datasæt, der er forbundet til en fil på OneDrive eller SharePoint Online, kræver synkronisering. Hvis du vil se tidligere synkroniseringscyklusser, skal du kigge på OneDrive-fanen i opdateringshistorikken. På følgende skærmbillede kan du se en fuldført synkroniseringscyklus for et prøvedatasæt.
 
-![Opdateringshistorik](media/refresh-data/refresh-history.png)
+![Opdater historik](media/refresh-data/refresh-history.png)
 
 Som skærmbilledet oven for viser har Power BI identificeret denne opdatering af OneDrive som en **Planlagt** opdatering, men det er ikke muligt at konfigurere opdateringsintervallet. Du kan kun deaktivere opdatering af OneDrive under indstillingerne for datasættet. Deaktivering af en opdatering er nyttigt, hvis du ikke ønsker, at dine datasæt og rapporter i Power BI opfanger eventuelle ændringer fra kildefilerne automatisk.
 
@@ -309,6 +309,13 @@ Advarselsikonet hjælper med at indikere aktuelle problemer med datasættet, men
 > [!NOTE]
 > Du kan finde et link til at få vist opdateringshistorikken under indstillingerne for datasættet. Du kan også hente opdateringshistorikken programmatisk ved hjælp af [REST API'en for Power BI](/rest/api/power-bi/datasets/getrefreshhistoryingroup). Ved hjælp af en brugerdefineret løsning kan du overvåge opdateringshistorikken for flere datasæt på en centraliseret måde.
 
+## <a name="automatic-page-refresh"></a>Automatisk sideopdatering
+
+Automatisk sideopdatering fungerer på rapportsideniveau og giver rapportforfattere mulighed for at angive et opdateringsinterval for visuelle elementer på en side, der kun er aktiv, når siden forbruges. Automatisk sideopdatering er kun tilgængelig for DirectQuery-datakilder. Minimumsintervallet for opdateringen afhænger af, hvilken type arbejdsområde rapporten er publiceret i, samt kapacitetsadministratorens indstillinger for Premium-arbejdsområder.
+
+Få mere at vide om automatisk sideopdatering i artiklen [Automatisk sideopdatering](desktop-automatic-page-refresh.md).
+
+
 ## <a name="best-practices"></a>Bedste praksis
 
 Det er en af de vigtigste dele af bedste praksis at kontrollere opdateringshistorikken regelmæssigt for sine datasæt, da du på den måde kan sikre, at dine rapporter og dashboards bruger de mest aktuelle data. Hvis du finder problemer, bør du løse dem straks og kontakte ejerne af datakilden og gatewayadministratorer, hvis det er nødvendigt.
@@ -324,6 +331,7 @@ Derudover bør du overveje følgende anbefalinger til at etablere og bevare pål
 - Brug en pålidelig udrulning af en datagateway til virksomheder til at forbinde dine datasæt med datakilder i det lokale miljø. Hvis du opdager mislykkede opdateringer i forbindelse med gateways, f.eks. hvis gatewayen ikke er tilgængelig, eller den er overbelastet, skal du kontakte gatewayadministratorerne for enten at føje yderligere gateways til en eksisterende klynge eller udrulle en ny klynge (opskalering i forhold til udskalering).
 - Brug separate datagateways i forbindelse med Import-datasæt og DirectQuery-/LiveConnect-datasæt, så dataimporten under den planlagte opdatering ikke påvirker ydeevnen af rapporter og dashboards oven i DirectQuery-/LiveConnect-datasæt, som sender forespørgsler til datakilderne ved hver brugerinteraktion.
 - Sørg for, at Power BI kan sende meddelelser om mislykkede opdateringer til din postkasse. Spamfiltre kan blokere mails eller flytte dem til en særskilt mappe, hvor du måske ikke bemærker dem med det samme.
+
 
 ## <a name="next-steps"></a>Næste trin
 
