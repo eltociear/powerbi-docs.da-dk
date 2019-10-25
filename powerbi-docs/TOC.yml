@@ -211,8 +211,6 @@
               href: desktop-calculated-tables.md
             - name: Målinger i Power BI Desktop
               href: desktop-measures.md
-            - name: Rediger et sprogligt skema til Spørgsmål og svar
-              href: power-bi-q-and-a-linguistic-schema.md
             - name: Importer og få vist KPI'er (Eksempelvisning)
               href: desktop-import-and-display-kpis.md
         - name: Opret rapporter
@@ -227,8 +225,6 @@
               href: desktop-tooltips.md
             - name: 'Eksportér til PDF, og udskriv rapporter'
               href: desktop-export-to-pdf.md
-            - name: Spørgsmål og svar i Power BI Desktop
-              href: desktop-qna-in-reports.md
             - name: Ruden Analytics i Power BI Desktop
               href: desktop-analytics-pane.md
             - name: Brug indsigter til at forklare stigninger og fald
