@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Power BI til administratorer
-summary: Med Power BI-dokumentationen får du ekspertoplysninger og svar som løsning på problemerne, uanset hvordan du bruger Power BI.
+title: Dokumentation til Power BI-administratorer
+summary: Med dokumentationen til Power BI-administratorer får du ekspertoplysninger og svar som løsning på problemerne, uanset hvordan du bruger Power BI.
 metadata:
-  title: Power BI til administratorer
-  description: Med Power BI-dokumentationen får du ekspertoplysninger og svar som løsning på problemerne, uanset hvordan du bruger Power BI.
+  title: Dokumentation til Power BI-administratorer
+  description: Med dokumentationen til Power BI-administratorer får du ekspertoplysninger og svar som løsning på problemerne, uanset hvordan du bruger Power BI.
   services: powerbi
   ms.service: powerbi
   ms.subservice: powerbi-service
@@ -11,13 +11,13 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 10/04/2019
-  ms.openlocfilehash: 8209cc755b33887c533e9f90b9b1cd7a5021490e
-  ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+  ms.date: 10/25/2019
+  ms.openlocfilehash: 533b8dc4ccc800e3120f3a01c6069e224c2df27e
+  ms.sourcegitcommit: ee0ea65de52b38e5976d6eb15516b0b240fa40f9
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 10/10/2019
-  ms.locfileid: "72245644"
+  ms.lasthandoff: 10/26/2019
+  ms.locfileid: "72959512"
 landingContent:
 - title: Om Power BI til administratorer
   linkLists:

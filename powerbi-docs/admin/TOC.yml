@@ -1,4 +1,6 @@
-- name: Power BI-administration
+- name: Dokumentation til Power BI-administratorer
+  href: index.yml
+  expanded: true
   items:
     - name: Oversigt
       expanded: true
@@ -8,7 +10,7 @@
     - name: Begreber
       expanded: true
       items:
-        - name: Administrationsrolle i Office 365
+        - name: Administrationsrolle i Microsoft 365
           href: ../service-admin-role.md
         - name: Ofte stillede spørgsmål
           href: ../service-admin-faq.md
@@ -22,9 +24,9 @@
               href: ../service-admin-licensing-organization.md
             - name: Køb Power BI Pro
               href: ../service-admin-purchasing-power-bi-pro.md
-            - name: Tilmeld dig en Office 365-prøveversion
+            - name: Tilmeld dig med en Microsoft 365-prøveversion
               href: ../service-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md
-            - name: Tilføj Power BI med en Office 365-partner
+            - name: Tilføj Power BI med en Microsoft 365-partner
               href: ../service-admin-syndication-partner.md
         - name: Brug af administrationsportalen
           href: ../service-admin-portal.md
@@ -32,19 +34,19 @@
           href: ../service-admin-where-is-my-tenant-located.md
         - name: 'Find brugere, der er logget på'
           href: ../service-admin-access-usage.md
-        - name: Overvågning af Power BI
+        - name: Overvågning
           href: ../service-admin-auditing.md
         - name: Spor tjenestetilstand
           href: ../service-admin-health.md
-        - name: Lukker din Power BI-konto
+        - name: Lukning af din konto
           href: ../service-admin-closing-your-account.md
-        - name: Power BI og ExpressRoute
+        - name: ExpressRoute
           href: ../service-admin-power-bi-expressroute.md
         - name: Brug af Azure AD B2B
           href: ../service-admin-azure-ad-b2b.md
-        - name: Sikkerhed på rækkeniveau med Power BI
+        - name: Sikkerhed på rækkeniveau
           href: ../service-admin-rls.md
-        - name: Arkiveret arbejdsområde i Power BI
+        - name: Arkiveret arbejdsområde
           href: ../service-admin-power-bi-archived-workspace.md
         - name: Konfiguration af mobilapps med Intune
           href: ../service-admin-mobile-intune.md

@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: Dokumention til Power BI til udviklere
+title: Dokumentation til Power BI-udvikler
 summary: Med Power BI-dokumentationen får du ekspertoplysninger og svar som løsning på problemerne, uanset hvordan du bruger Power BI.
 metadata:
-  title: Power BI til udviklere
+  title: Dokumentation til Power BI-udvikler
   description: Med Power BI-dokumentationen får du ekspertoplysninger og svar som løsning på problemerne, uanset hvordan du bruger Power BI.
   services: powerbi
   ms.service: powerbi
@@ -11,49 +11,49 @@ metadata:
   ms.collection: collection
   author: maggiesMSFT
   ms.author: maggies
-  ms.date: 10/02/2019
-  ms.openlocfilehash: 04cbb872183f589ad37e39c0dd132a1a17662ce4
-  ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+  ms.date: 10/25/2019
+  ms.openlocfilehash: ac0d2e2955846d7b67e94af923b41c8b5f476996
+  ms.sourcegitcommit: ee0ea65de52b38e5976d6eb15516b0b240fa40f9
   ms.translationtype: HT
   ms.contentlocale: da-DK
-  ms.lasthandoff: 10/14/2019
-  ms.locfileid: "72307645"
+  ms.lasthandoff: 10/26/2019
+  ms.locfileid: "72959538"
 landingContent:
 - title: Om Power BI til udviklere
   linkLists:
   - linkListType: overview
     links:
-    - text: Hvad kan udviklere bruge Power BI til?
+    - text: Hvad kan udviklere foretage sig?
       url: what-can-you-do.md
     - text: Visualiseringer i Power BI
       url: ../power-bi-custom-visuals.md
-    - text: Hvad er integrering med Power BI?
+    - text: Hvad er integrering?
       url: embedding.md
     - text: Hvad er Power BI-API?
       url: overview-of-power-bi-rest-api.md
   - linkListType: reference
     links:
-    - text: Power BI Developer Center
+    - text: Developer Center
       url: https://powerbi.microsoft.com/developers/
-    - text: Eksempler på Power BI til udviklere
+    - text: Eksempler til udviklere
       url: https://github.com/Microsoft/PowerBI-Developer-Samples
-    - text: Power BI JavaScript-wiki
+    - text: JavaScript-wiki
       url: https://github.com/Microsoft/powerbi-javascript/wiki
-    - text: REST-API'er til Power BI
+    - text: REST API'er
       url: https://docs.microsoft.com/rest/api/power-bi/
     - text: REST API'er til Azure Resource Manager
       url: https://docs.microsoft.com/rest/api/power-bi-embedded/
-- title: Power BI-visualiseringer
+- title: Visualiseringer
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Udvikl en Power BI-visualisering
+    - text: Udvikl en visualisering
       url: visuals/custom-visual-develop-tutorial.md
   - linkListType: concept
     links:
-    - text: Ofte stillede spørgsmål om visualiseringer i Power BI
+    - text: Ofte stillede spørgsmål om visualiseringer
       url: ../power-bi-custom-visuals-faq.md
-    - text: Retningslinjer for Power BI-visualiseringer
+    - text: Retningslinjer for visualiseringer
       url: guidelines-powerbi-visuals.md
     - text: Avanceret redigeringstilstand i visualiseringer
       url: /advanced-edit-mode.md
@@ -79,7 +79,7 @@ landingContent:
       url: embed-multi-tenancy.md
     - text: Integrerede ofte stillede spørgsmål
       url: embedded-faq.md
-    - text: Power BI-tilladelser
+    - text: Tilladelser
       url: power-bi-permissions.md
   - linkListType: how-to-guide
     links:
@@ -89,5 +89,5 @@ landingContent:
       url: create-an-azure-active-directory-tenant.md
     - text: Hent et Azure AD-adgangstoken
       url: get-azuread-access-token.md
-    - text: Spørgsmål og svar i Power BI Embedded
+    - text: Spørgsmål og svar-funktionalitet i Power BI Embedded
       url: qanda.md

@@ -1,4 +1,5 @@
-- name: Power BI til udviklere
+- name: Dokumentation til Power BI-udvikler
+  href: index.yml
   items:
     - name: Oversigt
       expanded: true
@@ -129,6 +130,8 @@
               href: register-app.md
             - name: Hent et Azure AD-adgangstoken
               href: get-azuread-access-token.md
+            - name: Dynamisk binding
+              href: embed-dynamic-binding.md
             - name: Integration af Q&A
               href: qanda.md
             - name: Foretag fejlfinding af dit integrerede program
