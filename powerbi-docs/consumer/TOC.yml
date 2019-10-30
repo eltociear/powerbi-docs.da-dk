@@ -48,6 +48,8 @@
               href: end-user-report-open.md
             - name: Skift den måde en rapport vises på
               href: end-user-report-view.md
+            - name: Skift sorteringsrækkefølgen i en visualisering
+              href: end-user-change-sort.md
             - name: Brug filtre i en rapport
               href: end-user-report-filter.md
             - name: 'Få mere at vide om, hvordan rapportvisuals krydsfiltrerer hinanden'
