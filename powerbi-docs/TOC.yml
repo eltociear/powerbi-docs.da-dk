@@ -415,10 +415,20 @@
           href: desktop-latest-update-archive.md
         - name: Privatlivsbeskyttelseserklæringen Send en smiley i Power BI Desktop
           href: desktop-send-smile-privacy-statement.md
-        - name: Tilgængelighed i Power BI-rapporter
-          href: desktop-accessibility.md
         - name: Administrer logonformularen til Power BI Desktop
           href: desktop-admin-sign-in-form.md
+        - name: Tilgængelighed
+          items:
+            - name: Oversigt over tilgængelighed i Power BI
+              href: desktop-accessibility-overview.md
+            - name: Oprettelse af tilgængelige Power BI-rapporter
+              href: desktop-accessibility-creating-reports.md
+            - name: Brug af Power BI-rapporter med tilgængelighedsværktøjer
+              href: desktop-accessibility-consuming-tools.md
+            - name: Oprettelse af Power BI-rapporter med tilgængelighedsværktøjer
+              href: desktop-accessibility-creating-tools.md
+            - name: Tastaturgenveje i forbindelse med tilgængelighed for Power BI-rapporter
+              href: desktop-accessibility-keyboard-shortcuts.md
 - name: Power BI-tjeneste
   items:
     - name: Oversigt
