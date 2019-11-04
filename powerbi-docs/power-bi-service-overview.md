@@ -10,12 +10,12 @@ ms.topic: overview
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: a4d8b094fe10b674d315b1982e1dc34148ba6d1d
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: b8a01839da68a276ff136d7068dafac0ce82f102
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70775734"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060862"
 ---
 # <a name="what-is-the-power-bi-service"></a>Hvad er Power BI-tjenesten?
 **Power BI** er en samling af softwaretjenester, apps og forbindelseskomponenter, der arbejder sammen for at hjælpe dig med at oprette, dele og bruge forretningsmæssig indsigt på den mest hensigtsmæssige måde for dig og din virksomhed. Microsoft Power BI-*tjenesten* (app.powerbi.com), som nogle gange kaldes Power BI-online, er SaaS-delen (*software som en tjeneste*) af Power BI. I Power BI-tjenesten hjælper *dashboards* dig med at holde styr på, hvad der sker i din virksomhed. Der vises *felter* i dashboards, som du kan vælge for at åbne *rapporter*, der skal udforskes yderligere. Dashboards og rapporter opretter forbindelse til flere *datasæt* for at samle alle relevante data på ét sted. 
@@ -26,7 +26,7 @@ Har du brug for hjælp til at forstå de komponenter, der udgør Power BI? Se [G
 > <iframe width="560" height="315" src="https://www.youtube.com/embed/B2vd4MQrz4M" frameborder="0" allowfullscreen></iframe>
 > 
 
-De øvrige hovedkomponenter i Power BI er skrivebordsprogrammet til Windows **Power BI Desktop** og Power BI-**mobilappsene** til Windows-, iOS-og Android-enheder. Du og dine kolleger kan bruge disse tre elementer &mdash; Power BI Desktop, tjenesten og mobilappsene &mdash; til at oprette, dele og bruge forretningsmæssig indsigt. Læs artiklen [Hvad er Power BI?](power-bi-overview.md) for at få en oversigt.
+De øvrige hovedkomponenter i Power BI er skrivebordsprogrammet til Windows **Power BI Desktop** og Power BI-**mobilappsene** til Windows-, iOS-og Android-enheder. Du og dine kolleger kan bruge disse tre elementer &mdash; Power BI Desktop, tjenesten og mobilappsene &mdash; til at oprette, dele og bruge forretningsmæssig indsigt. Læs artiklen [Hvad er Power BI?](fundamentals/power-bi-overview.md) for at få en oversigt.
 
 ## <a name="creating-reports-in-the-service"></a>Oprettelse af rapporter i tjenesten
 I en typisk Power BI-arbejdsproces starter du med at oprette en rapport i Power BI Desktop og derefter publicere den til Power BI-tjenesten.  

@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 09/24/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: a1cc536e83832ab89b8a0aee8e8f01b9ced35a10
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: e0ec01eb4d4ee8134a165d438f29baa4aee22841
+ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256351"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72716948"
 ---
 # <a name="view-power-bi-notifications"></a>Få vist Power BI-meddelelser
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Meddelelsescenteret er et sekventielt feed af oplysninger, der er knyttet til din Power BI-oplevelse. Åbn det for at se meddelelser om nye dashboards, der er delt med dig, oplysninger om Power BI-begivenheder og -møder, vigtige beskeder, du har angivet m.m. Du kan [indstille beskeder i Power BI-tjenesten](end-user-alerts.md) og også i Power BI-mobilapps.
 
 Se, hvordan Amanda gennemser, administrerer og besvarer meddelelser. Følg derefter vejledningen under videoen for selv at prøve det.    

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e912c47c58c96de8d2875b83a530468135e93ef2
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 06fc561d3fbe07cbf553be63c7b19de3ab11992e
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70185920"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060952"
 ---
 # <a name="connect-to-intelliboard-with-power-bi"></a>Opret forbindelse til IntelliBoard med Power BI
 IntelliBoard giver forenklet adgang til dine data i Moodle-systemet til læringsstyring via Reporting Services. IntelliBoard-indholdspakken til Power BI indeholder yderligere analyse, herunder målinger af dine kurser, registrerede brugere, samlet ydeevne og din LMS-aktivitet.
@@ -68,7 +68,7 @@ Indholdspakken indeholder data fra følgende tabeller:
 Der kræves en IntelliBoard-konto med rettigheder til overstående tabeller for at kunne instantiere denne indholdspakke.
 
 ## <a name="next-steps"></a>Næste trin
-[Hvad er Power BI?](power-bi-overview.md)
+[Hvad er Power BI?](fundamentals/power-bi-overview.md)
 
 [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
 

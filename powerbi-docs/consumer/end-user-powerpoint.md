@@ -10,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 8bab7179d8ac344b0cf099fb11352e024d6dfd47
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 3215dfab54d1537ec5f7ca32ee4bd39b9ef997e5
+ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256347"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72717015"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Eksportér rapporter fra Power BI til PowerPoint
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Med Power BI kan du publicere din rapport i Microsoft PowerPoint og nemt oprette et slidesæt ud fra din Power BI-rapport. Når du eksporterer til PowerPoint, sker der følgende:
 
 * Hver side i Power BI-rapporten bliver til en enkelt slide i PowerPoint.
@@ -64,7 +67,7 @@ Når du åbner den PowerPoint-fil, som Power BI har eksporteret, kan du finde no
 Når du skifter til en bestemt slide, kan du se, at hver rapportside er et uafhængigt billede.
 
 >[!NOTE]
-> Det er en ny funktionsmåde at have en visualisering for hver rapportside. Den tidligere funktionsmåde, som viste et uafhængigt billede for hver visualisering, implementeres ikke længere. 
+> Det er en ny funktionsmåde at have en visual for hver rapportside. Den tidligere funktionsmåde, som viste et uafhængigt billede for hver visual, implementeres ikke længere. 
  
 
 ![Skærm, der viser hver visualisering som et separat billede](media/end-user-powerpoint/powerbi_to_powerpoint_6.png)

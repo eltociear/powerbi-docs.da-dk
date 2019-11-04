@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/27/2018
 ms.author: mshenhav
-ms.openlocfilehash: b4977bd043cec08c86fbd3c8893e8f1e185dc1fc
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: d0d9b10c24d3d9da60ecf1afde7347f53d20f224
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "60972350"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73059421"
 ---
 # <a name="view-your-data-offline-in-the-power-bi-mobile-apps"></a>Få vist dine data offline i Power BI-mobilapps
 Gælder for:
@@ -65,5 +65,5 @@ Din feedback hjælper os med at afgøre, hvad der skal implementeres fremover, s
 * [Power BI-apps til mobilenheder](mobile-apps-for-mobile-devices.md)
 * Følg @MSPowerBI på Twitter
 * Deltag i samtalen i [Power BI-communityet](http://community.powerbi.com/)
-* [Hvad er Power BI?](../../power-bi-overview.md)
+* [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)
 

@@ -395,6 +395,8 @@
               href: desktop-access-database-errors.md
             - name: 'Løs problemer, når Power BI Desktop startes'
               href: desktop-error-launching-desktop.md
+            - name: Fejlfinding af DirectQuery-model i Power BI Desktop
+              href: desktop-directquery-troubleshoot.md
     - name: Reference
       items:
         - name: Datatyper i Power BI Desktop
@@ -661,7 +663,7 @@
           items:
             - name: Opret de nye arbejdsområder
               href: service-create-the-new-workspaces.md
-            - name: Opret apparbejdsområder
+            - name: Opret arbejdsområder
               href: service-create-workspaces.md
             - name: Publicer apps fra arbejdsområder
               href: service-create-distribute-apps.md
@@ -1175,6 +1177,8 @@
       href: guidance/dax-error-functions.md
     - name: Bedste praksis i forbindelse med dataflow
       href: service-dataflows-best-practices.md
+    - name: Vejledning til DirectQuery-model i Power BI Desktop
+      href: guidance/directquery-model-guidance.md
     - name: Hvidbøger
       items:
         - name: Oversigt over whitepapers

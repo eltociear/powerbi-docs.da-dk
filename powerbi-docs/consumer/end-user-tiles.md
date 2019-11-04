@@ -10,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7e6d10a7a06c94c6bc00b06d38194dde461720be
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: ffacc95feef1557d5e6aaec2cca72821127d27d6
+ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71142061"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72716630"
 ---
 # <a name="dashboard-tiles-in-power-bi"></a>Dashboardfelter i Power BI
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Et felt er et snapshot af dine data, der er fastgjort til dashboardet af en *designer*. *Designere* kan oprette felter ud fra en rapport, et datasæt, et dashboard, feltet Spørgsmål og svar, Excel og SQL Server Reporting Services (SSRS) med flere.  Dette skærmbillede viser mange forskellige felter, der er fastgjort til et dashboard.
 
 ![Power BI-dashboard](./media/end-user-tiles/power-bi-dash.png)

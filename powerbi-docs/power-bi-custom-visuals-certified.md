@@ -10,12 +10,12 @@ ms.service: powerbi
 ms.topic: conceptual
 ms.subservice: powerbi-custom-visuals
 ms.date: 05/9/2019
-ms.openlocfilehash: 84afdf7072241533bf1e70d6a2a49d18c3da1d8f
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: d0372af2727861a4af0f4ebb983cb447b020b821
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307833"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021366"
 ---
 # <a name="get-a-power-bi-visual-certified"></a>Få en Power BI-visualisering certificeret
 
@@ -71,7 +71,7 @@ Hvis du vil have din brugerdefinerede visualisering [certificeret](#get-a-power-
 
 * Hvis nogle egenskaber i capabilities. JSON ændres, skal du sørge for, at de ikke ødelægger den eksisterende brugers rapporter.
 
-* Sørg for, at det visuelle element opfylder [retningslinjerne for visuelle elementer i Power BI](https://docs.microsoft.com/en-us/power-bi/developer/guidelines-powerbi-visuals#guidelines-for-power-bi-visuals-with-additional-purchases). **Vandmærker er ikke tilladt**.
+* Sørg for, at det visuelle element opfylder [retningslinjerne for visuelle elementer i Power BI](./developer/guidelines-powerbi-visuals.md#guidelines-for-power-bi-visuals-with-additional-purchases). **Vandmærker er ikke tilladt**.
 
 * Anvender kun OSS-komponenter, der kan gennemses offentligt (Offentlige JS-biblioteker eller TypeScript. Kildekoden er tilgængelig til gennemsyn og har ikke kendte sikkerhedsrisici). Vi kan ikke bekræfte en brugerdefineret visualisering ved hjælp af en kommerciel komponent.
 
@@ -192,7 +192,7 @@ Sådan indsender du en brugerdefineret visualisering til certificering:
 
 ## <a name="faq"></a>Ofte stillede spørgsmål
 
-Du kan finde flere oplysninger om visualiseringer under [Ofte stillede spørgsmål om certificerede visualiseringer](#get-a-power-bi-visual-certified).
+Du kan finde flere oplysninger om visualiseringer under [Ofte stillede spørgsmål om certificerede visualiseringer](power-bi-custom-visuals-faq.md#certified-power-bi-visuals).
 
 ## <a name="next-steps"></a>Næste trin
 

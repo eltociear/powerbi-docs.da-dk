@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 53d0deaf68c2c0fde4f5243394914a44b9c59feb
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: cc4f2dc328b58e65f89b5fae4efc0a9303638af4
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61341129"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060195"
 ---
 # <a name="fixing-need-to-update-android-system-webview"></a>Løsning af "Det er nødvendigt at opdatere Android System Webview"
 Når du logger på Android-mobilappen til Microsoft Power B1, kan du få en meddelelse om, at du bliver nødt til at opdatere Android System Webview. 
@@ -30,6 +30,6 @@ Det viser sig, at du rent faktisk skal opgradere din Chrome-app.
 
 ## <a name="next-steps"></a>Næste trin
 * [Download Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867) fra Android App Store.
-* [Hvad er Power BI?](../../power-bi-overview.md)
+* [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

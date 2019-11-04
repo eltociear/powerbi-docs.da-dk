@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: b0a59e6a3d930bc8a0fa69507cae8e958c6175da
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 78bb51a7ef2d7bd7309c7bb93c27b7e9193b85bf
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61063096"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73059419"
 ---
 # <a name="pin-a-dashboard-to-your-windows-10-start-screen-from-the-power-bi-mobile-app"></a>Fastgør dashboard til din startskærm i Windows 10 fra Power BI-mobilappen
 Du kan fastgøre Power BI-dashboards til startskærmen i Windows fra Power BI-mobilappen til Windows 10. De bliver *dynamiske felter*. Når du trykker på feltet på startskærmen, åbner dashboardet i Power BI-mobilappen til Windows 10.
@@ -34,6 +34,6 @@ Du kan fastgøre Power BI-dashboards til startskærmen i Windows fra Power BI-mo
 ## <a name="next-steps"></a>Næste trin
 * [Download Power BI-mobilappen til Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) fra Windows Store  
 * [Kom i gang med Power BI-mobilappen til Windows 10](mobile-windows-10-phone-app-get-started.md)  
-* [Hvad er Power BI?](../../power-bi-overview.md)
+* [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)
 * Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

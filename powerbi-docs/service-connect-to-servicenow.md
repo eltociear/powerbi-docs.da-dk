@@ -9,12 +9,12 @@ ms.subservice: powerbi-template-apps
 ms.topic: conceptual
 ms.date: 10/16/2017
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 9fc0360ccf2e036cca1c68cf21bb538b30adf7e6
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 4abf01163dbf454ee75b04e5d519ec2292b6e80c
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71191003"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060797"
 ---
 # <a name="connect-to-servicenow-with-power-bi-for-incident-reporting"></a>Opret forbindelse til ServiceNow med Power BI til rapportering af hændelser
 ServiceNow byder på flere produkter og løsninger, herunder forretningsrelateret og driftsrelateret administration samt IT-administration, som kan hjælpe med at forbedre din virksomhed. Denne indholdspakke indeholder flere rapporter og giver dig indsigt i dine åbne, seneste løste og nyligt lukkede hændelser.  
@@ -60,7 +60,7 @@ Hvis du oplever en fejl i forbindelse med legitimationsoplysningerne under indl�
 Hvis du oplever lange indlæsningstider, skal du gennemse antallet af hændelser og antallet af dage, du har angivet under oprettelse af forbindelsen, og overveje at reducere dem.
 
 ## <a name="next-steps"></a>Næste trin
-[Hvad er Power BI?](power-bi-overview.md)
+[Hvad er Power BI?](fundamentals/power-bi-overview.md)
 
 [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
 

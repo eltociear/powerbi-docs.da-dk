@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: ddcbee2c6d60541db0d71ea5ccfbfd5e6cf037ac
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: b0e8739e93d24ba10b0ffc72042b847cce1d5fe9
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70184591"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060756"
 ---
 # <a name="connect-to-stripe-with-power-bi"></a>Opret forbindelse til Stripe med Power BI
 Visualiser og udforsk dine Stripe-data i Power BI med Power BI-indholdspakken. Power BI Stripe-indholdspakken trækker data ind om dine kunder, gebyrer, begivenheder og fakturaer. Dataene indeholder de seneste titusinde hændelser og 5.000 gebyrer over de seneste 30 dage. Indholdet opdateres automatisk en gang om dagen med en tidsplan, du styrer. 
@@ -49,7 +49,7 @@ Opret forbindelse til [Stripe-indholdspakken til Power BI](https://app.powerbi.c
 * Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
 ## <a name="next-steps"></a>Næste trin
-[Hvad er Power BI?](power-bi-overview.md)
+[Hvad er Power BI?](fundamentals/power-bi-overview.md)
 
 [Hent data til Power BI](service-get-data.md)
 

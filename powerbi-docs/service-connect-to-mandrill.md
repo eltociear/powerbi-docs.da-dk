@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: aa685ae9b51e1f5044dab883d8de871dcc7ed5da
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: a72a1ef01b12b83e555a547a00ffd0dda0c8a34f
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71945877"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060970"
 ---
 # <a name="connect-to-mandrill-with-power-bi"></a>Opret forbindelse til Mandrill med Power BI
 Power BI-indholdspakken trækker data fra din Mandrill-konto og opretter et dashboard, et sæt rapporter og et datasæt, så du kan udforske dine data. Brug Mandrills analyser til hurtigt for at få overblik over dine nyhedsbreve eller din markedsføringskampagne. Dataene er indstillet til daglig opdatering for at sikre, at de data, du overvåger, er opdaterede.
@@ -49,7 +49,7 @@ Opret forbindelse til [Mandrill-indholdspakken til Power BI.](http://app.powerbi
 * Selvom dit datasæt opdateres dagligt, kan du ændre tidsplanen for opdatering eller prøve at opdatere det efter behov ved hjælp af **Opdater nu**
 
 ## <a name="next-steps"></a>Næste trin
-[Hvad er Power BI?](power-bi-overview.md)
+[Hvad er Power BI?](fundamentals/power-bi-overview.md)
 
 [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
 
