@@ -12,16 +12,18 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 2b9fd3fc971d2cf73aabb2033d3a64565333bc67
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 902bfe11ba3dfa4047ab5918de7081ae05fb9a09
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543756"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060360"
 ---
 # <a name="basic-concepts-for-the-power-bi-service-consumers"></a>Grundlæggende begreber for forbrugere af Power BI-tjenesten
 
-Denne artikel forudsætter, at du allerede har læst [Oversigt over Power BI](../power-bi-overview.md) og har identificeret dig selv som en [Power BI-***forbruger***](end-user-consumer.md). Forbrugere modtager Power BI-indhold, f.eks. dashboards og rapporter, fra kolleger. Forbrugere bruger Power BI-tjenesten, som er den webstedsbaserede version af Power BI.
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
+Denne artikel forudsætter, at du allerede har læst [Oversigt over Power BI](../fundamentals/power-bi-overview.md) og har identificeret dig selv som en [Power BI-***forbruger***](end-user-consumer.md). Forbrugere modtager Power BI-indhold, f.eks. dashboards og rapporter, fra kolleger. Forbrugere bruger Power BI-tjenesten, som er den webstedsbaserede version af Power BI.
 
 Du vil uden tvivl høre begrebet "Power BI Desktop" eller bare "Desktop". Det er det enkeltstående værktøj, der bruges af *designere*, som bygger og deler dashboards og rapporter med dig. Det er vigtigt at vide, at der findes andre Power BI-værktøjer. Så længe du er forbruger, skal du kun arbejde med Power BI-tjenesten. Denne artikel drejer sig kun om Power BI-tjenesten.
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/16/2017
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 1fc8decc70ade009a7c4236686cfe9cf72adb54d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 52ca0405c17339580a971162d13cb4ba67f05979
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61161491"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060509"
 ---
 # <a name="connect-to-sql-sentry-with-power-bi"></a>Opret forbindelse til SQL Sentry med Power BI
 Det er nemt at analysere dine ydelsesdata indsamlet af SQL Sentry med Power BI. Power BI henter dine data og opretter derefter et standarddashboard og relaterede rapporter baseret på disse data.
@@ -93,7 +93,7 @@ Hvis data fra nogle af dine apps ikke vises i Power BI, skal du kontrollere for 
 Hvis du ikke er ejeren af SQL Sentry-databasen, der synkroniseres til <https://cloud.sqlsentry.com>, skal du kontakte administratoren for at sikre, at du har rettigheder til at få vist de indsamlede data.
 
 ## <a name="next-steps"></a>Næste trin
-[Hvad er Power BI?](power-bi-overview.md)
+[Hvad er Power BI?](fundamentals/power-bi-overview.md)
 
 [Hent data til Power BI](service-get-data.md)
 
