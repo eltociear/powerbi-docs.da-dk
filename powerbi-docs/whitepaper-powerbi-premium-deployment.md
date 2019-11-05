@@ -10,22 +10,22 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 1b3d455e0deff676d20c316422d4715773e0a85d
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: eecbc43f26cebc12884ae6c5143a815f6e310ce5
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655066"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432357"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Udrulning og administration af Premium-kapaciteter i Power BI
 
-**Resumé:** Power BI Premium giver dig en mere konsistent ydeevne, understøttelse af større datamængder og fleksibiliteten fra en samlet professionel BI-selvbetjeningsplatform til alle i din organisation. Dette tekniske whitepaper på level 300 henvender sig især til Power BI-administratorer og indholdsforfattere og -udgivere. Det kan hjælpe dem med at forstå potentialet i Power BI Premium og få mere at vide om, hvordan man designer, installerer, overvåger og lokaliserer fejl i forbindelse med skalerbare løsninger.
+**Oversigt:** Power BI Premium giver en mere ensartet ydeevne, understøttelse af store datamængder og fleksibiliteten for en samlet selvbetjenings-og virksomheds BI-platform til alle i din organisation. Dette tekniske whitepaper på level 300 henvender sig især til Power BI-administratorer og indholdsforfattere og -udgivere. Det kan hjælpe dem med at forstå potentialet i Power BI Premium og få mere at vide om, hvordan man designer, installerer, overvåger og lokaliserer fejl i forbindelse med skalerbare løsninger.
 
-**Forfatter:** [Peter Myers](https://www.linkedin.com/in/peterjsmyers) (Data Platform MVP og uafhængig BI-ekspert med Bitwise Solutions)
+**Forfatter:** [Peter Myers](https://www.linkedin.com/in/peterjsmyers) (data platform MVP og uafhængig bi-ekspert med bitvise løsninger)
 
-**Tekniske korrekturlæsere:** Adam Saxton, Akshai Mirchandani, Bhavik Merchant, David Magar, Josh Caplan, Michael Blythe, Nimrod Shalit, Olivier Matrat, Swati Gupta
+**Tekniske reviewere:** Adam Saxton, Akshai Mirchandani, Bhavik handlende, David Magar, Josh Caplan, Michael Blythe, Nimrod Shalit, Olivier Matrat, swati Gupta
 
-**Gælder for:** Power BI-tjeneste, Power BI Premium og Azure Power BI Embedded-kapaciteter
+**Gælder for:** Power BI-tjeneste, Power BI Premium og Azure Power BI Embedded kapaciteter
 
 > [!NOTE]
 > Du kan gemme eller udskrive denne whitepaper ved at vælge **Udskriv** i din browser og derefter vælge **Gem som PDF**.
@@ -34,7 +34,7 @@ ms.locfileid: "69655066"
 
 Power BI er en tjeneste til forretningsanalyser, der er designet til at give indsigt, som gør det muligt at træffe hurtige og velfunderede beslutninger. Siden udgivelsen i 2015 er det hurtigt blevet en populær løsning, der bruges til at levere løsninger til både små og store virksomheder.
 
-Tjenesten er tilgængelig på to måder: Som en cloudtjeneste og som en rapporteringsløsning i det lokale miljø med navnet **Power BI-rapportserver**. \[[1](#endnote-01)\]
+Den gøres tilgængelig på to måder: som en skybaseret tjeneste og som en rapporteringsløsning i det lokale miljø kaldet **Power bi-rapportserver**. \[[1](#endnote-01)\]
 
 Power BI som cloudtjeneste er SaaS (software som en service) \[[2](#endnote-02)\]. Det repræsenterer et sæt tjenester og programmer, der giver organisationer mulighed for at udvikle, udrulle, administrere og dele løsninger for at overvåge deres forretning.
 
@@ -50,13 +50,13 @@ I en delt kapacitet kører dine arbejdsbelastninger på databehandlingsressource
 
 ### <a name="workspaces"></a>Arbejdsområder
 
-Power BI-arbejdsområder er placeret i kapaciteter, og de repræsenterer sikkerheds-, samarbejde- og udrulningsobjektbeholdere. Hver bruger af Power BI har et personligt arbejdsområde, der er kendt som **Mit arbejdsområde**. Flere arbejdsområder kan oprettes for at muliggøre samarbejde og udrulning, og disse kaldes **Apparbejdsområder**. Arbejdsområder – herunder personlige arbejdsområder –oprettes som standard i den delte kapacitet.
+Power BI-arbejdsområder er placeret i kapaciteter, og de repræsenterer sikkerheds-, samarbejde- og udrulningsobjektbeholdere. Hver bruger af Power BI har et personligt arbejdsområde, der er kendt som **Mit arbejdsområde**. Der kan oprettes flere arbejdsområder for at muliggøre samarbejde og installation, og disse kaldes **arbejdsområder**. Arbejdsområder – herunder personlige arbejdsområder –oprettes som standard i den delte kapacitet.
 
 ### <a name="power-bi-content-types"></a>Power BI-indholdstyper
 
 Det er vigtigt at starte med en grundig gennemgang af Power BI-arkitekturen, herunder grundlæggende indholdstyper, når man præsenterer Power BI Premium-emner.
 
-Alt Power BI-indhold gemmes og administreres i arbejdsområder, som er objektbeholdere for Power BI-indhold. De enkelte Power BI-brugere har deres egne personlige arbejdsområde, men den bedste fremgangsmåde generelt er at oprette apparbejdsområder. Apparbejdsområder gør det muligt at eje indhold i fællesskab og samarbejde om det. De indeholder også muligheden for at forberede og distribuere indhold til et bredt publikum som apps.
+Alt Power BI-indhold gemmes og administreres i arbejdsområder, som er objektbeholdere for Power BI-indhold. Hver Power BI bruger har deres eget personlige arbejdsområde, men den generelle bedste fremgangsmåde er at oprette arbejdsområder. Arbejdsområder giver mulighed for medejer af indhold og muligheden for at samarbejde om indhold. De indeholder også muligheden for at forberede og distribuere indhold til et bredt publikum som apps.
 
 Følgende Power BI-indhold er gemt i arbejdsområder:
 
@@ -70,7 +70,7 @@ Følgende Power BI-indhold er gemt i arbejdsområder:
 
 Power BI-dataflows hjælper organisationer med at samle data fra forskellige kilder. De kan blive betragtet som data, der er forberedt og midlertidigt gemt til brug i modeller, men de ikke kan bruges direkte som en kilde til rapportering. De kan udnytte den omfattende samling dataforbindelser til Microsoft for at muliggøre indtagelse af data fra det lokale miljø og cloudbaserede datakilder.
 
-Dataflows kan kun oprettes og administreres i apparbejdsområder, og de gemmes som enheder i CDM (Common Data Model) i Azure Data Lake Storage Gen2. Der er typisk planlagt opdatering på jævnlig basis for at sikre, at de gemte data er opdaterede.
+Dataflows kan kun oprettes og administreres i arbejdsområder, og de gemmes som enheder i Common Data model (CDM) i Azure Data Lake Storage Gen2. Der er typisk planlagt opdatering på jævnlig basis for at sikre, at de gemte data er opdaterede.
 
 Du kan få flere oplysninger i dokumentet [Selvbetjent dataforberedelse i Power BI (prøveversion)](service-dataflows-overview.md).
 
@@ -95,7 +95,7 @@ Oprette af forbindelse til en model, der hostes eksternt, omfatter installation 
 
 ##### <a name="power-bi-desktop-developed-models"></a>Udviklede modeller i Power BI Desktop
 
-Power BI Desktop – et klientprogram, der er beregnet til Power BI-udvikling – kan bruges til at udvikle en model, der er en Analysis Services-tabelmodel i praksis. Modeller kan udvikles ved at importere data fra dataflows, som derefter kan integreres med andre datakilder. Selvom selve modelleringen er uden for dette whitepapers område, er det vigtigt at forstå, at der er tre forskellige typer – eller tilstande – af modeller, der kan udvikles ved hjælp af Power BI Desktop. Disse tilstande afgør, om data importeres til modellen, eller om de forbliver i datakilden. De tre tilstande er: Import, DirectQuery og Sammensat. En komplet beskrivelse af hver tilstand gennemgås i emnet [Modellagertilstande](#model-storage-modes).
+Power BI Desktop – et klientprogram, der er beregnet til Power BI-udvikling – kan bruges til at udvikle en model, der er en Analysis Services-tabelmodel i praksis. Modeller kan udvikles ved at importere data fra dataflows, som derefter kan integreres med andre datakilder. Selvom selve modelleringen er uden for dette whitepapers område, er det vigtigt at forstå, at der er tre forskellige typer – eller tilstande – af modeller, der kan udvikles ved hjælp af Power BI Desktop. Disse tilstande afgør, om data importeres til modellen, eller om de forbliver i datakilden. De tre tilstande er: import, DirectQuery og sammensat. En komplet beskrivelse af hver tilstand gennemgås i emnet [Modellagertilstande](#model-storage-modes).
 
 Modeller, der hostes eksternt, og modeller, der er udviklet i Power BI Desktop kan gennemtvinge sikkerhed på rækkeniveau (RLS) for at begrænse de data, der kan hentes, for en bestemt bruger. Brugere, der er tildelt til sikkerhedsgruppen Sælgere, kan f.eks. kun få vist rapportdata for det eller de salgsområder, vedkommende er blevet tildelt til. RLS-rollerne kan være dynamiske eller statiske. **Dynamiske roller** filtrerer efter rapportbrugeren, mens **statiske roller** anvender de samme filtre for alle de brugere, der er tildelt til rollen.
 
@@ -133,7 +133,7 @@ Du kan finde flere oplysninger i dokumentet [Hent data fra Excel-projektmappefil
 
 #### <a name="reports"></a>Rapporter
 
-Der er to typer rapporter: Power BI-rapporter og sideinddelte rapporter.
+Der findes to typer rapporter: Power BI rapporter og sideinddelte rapporter.
 
 **Power BI-rapporter** leverer en interaktiv datavisualiseringoplevelse, som kun er forbundet med et enkelt datasæt. Rapporter er ofte designet, så de fremmer brugerdeltagelse, og brugerne kan interagere med et ekstraordinært udvalg af funktioner, herunder filtrering, udsnit, tværgående filtrering og fremhævning, visning af færre detaljer, visning af flere detaljer, detaljeret adgang, Spørgsmål og svar i et naturligt sprog, fokusering, sidenavigation, spotlight, visning af bogmærker med mere.
 
@@ -259,7 +259,7 @@ Power BI har tre licenser:
 
 Licensen **Power BI (gratis)** gør det muligt for en person at logge på Power BI-tjenesten og arbejde i sit eget arbejdsområde ved at udgive modeller og rapporter. Det er vigtigt at forstå, at det ikke er muligt at dele Power BI-indhold ved hjælp af denne licens. Denne licens, er, som navnet antyder, gratis.
 
-Licensen **Power BI Pro** giver en person mulighed for at oprette og samarbejde inden for apparbejdsområder og dele og distribuere Power BI-indhold. Det er også muligt at konfigurere opdatering af datasæt for automatisk at holde dataene aktuelle, herunder fra datakilder i det lokale miljø. Herudover er det muligt at overvåge og styre, hvordan der opnås adgang til data, og hvordan dataene bruges. Denne licens er påkrævet for at modtage indhold fra andre brugere, medmindre brugeren er knyttet til en dedikeret kapacitet i Power BI Premium.
+Den **Power bi Pro** licens giver en person mulighed for at oprette og samarbejde i arbejdsområder og dele og distribuere Power bi indhold. Det er også muligt at konfigurere opdatering af datasæt for automatisk at holde dataene aktuelle, herunder fra datakilder i det lokale miljø. Herudover er det muligt at overvåge og styre, hvordan der opnås adgang til data, og hvordan dataene bruges. Denne licens er påkrævet for at modtage indhold fra andre brugere, medmindre brugeren er knyttet til en dedikeret kapacitet i Power BI Premium.
 
 Licensen **Power BI Premium** er en licens på lejerniveau, og den er beskrevet i afsnittet [Introduktion til Power BI Premium](#introducing-power-bi-premium).
 
@@ -289,7 +289,7 @@ Power BI Premium er et Office 365-abonnement på lejerniveau, der er tilgængeli
 - **EM**-SKU'er (EM1-EM3) til integrering kræver en årlig forpligtelse og faktureres månedsvis.
 - **P**-SKU'er (P1-P3) til integrering og virksomhedsfunktioner kræver en månedlig eller årlig forpligtelse, faktureres månedsvis og indeholder en licens til at installere Power BI-rapportserver i det lokale miljø
 
-Der er en alternativ metode til at købe et Azure Power BI Embedded-abonnement, som har en enkelt SKU-familie: **A**-SKU'er (A1-A6) kun til integrerings- og kapacitetstestformål.
+En alternativ tilgang er at købe et Azure Power BI Embedded-abonnement, der har en enkelt SKU-familie: **et** SKU'er (a1-A6) til kun at integrere og kapacitets testformål.
 
 Alle SKU'er leverer v-kerner for at oprette kapaciteter \[[9](#endnote-09)\], men EM-SKU'erne er begrænset til integrering i mindre størrelsesorden. Selvom dette whitepaper fokuserer på P-SKU'er, er meget af det, der gennemgås, også relevant for A-SKU'er.
 
@@ -313,7 +313,7 @@ I dette whitepaper fokuseres på **Premium-kapacitet**, hvilket betyder, at den 
 
 #### <a name="capacity-nodes"></a>Kapacitetsnoder
 
-Som beskrevet i emnet Abonnementer og licenser er der to Power BI Premium SKU-serier: EM og P. Alle Power BI Premium-SKU'er er tilgængelige som kapacitetsnoder, som hver især repræsenterer en bestemt mængde ressourcer, der består af processor, hukommelse og lager. Ud over ressourcer har hver SKU en driftsmæssig begrænsning for antallet af DQ-forbindelser (DirectQuery) og direkte forbindelser pr. sekund og antallet af parallelle modelopdateringer.
+Som beskrevet i emnet om abonnementer og licenser er der to Power BI Premium SKU-familier: EM og P. Alle Power BI Premium-SKU'er er tilgængelige som kapacitets noder, der hver især repræsenterer en angivet mængde ressourcer, der består af processor, hukommelse og lager. Ud over ressourcer har hver SKU en driftsmæssig begrænsning for antallet af DQ-forbindelser (DirectQuery) og direkte forbindelser pr. sekund og antallet af parallelle modelopdateringer.
 
 Behandling opnås ved et angivet antal v-kerner, der er ligeligt fordelt mellem backend og frontend.
 
@@ -327,7 +327,7 @@ Ressourcerne og grænserne for hver Premium-SKU (og A-SKU'er i en tilsvarende st
 
 | Kapacitetsnoder | V-kerner i alt | Backend-v-kerner | RAM (GB) | Frontend-v-kerner | DQ/LC (pr. sek.) | Parallel opdatering af modeller |
 | --- | --- | --- | --- | --- | --- | --- |
-| EM1/A1 | 1 | 0,5 | 2.5 | 0,5 | 3,75 | 1 |
+| EM1/A1 | 1 | 0,5 | 3 | 0,5 | 3,75 | 1 |
 | EM2/A2 | 2 | 1 | 5 | 1 | 7,5 | 2 |
 | EM3/A3 | 4 | 2 | 10 | 2 | 15 | 3 |
 | P1/A4 | 8 | 4 | 25 | 4 | 30 | 6 |
@@ -349,7 +349,7 @@ Kapacitetshandlinger er klassificeret som enten interaktive eller baggrundshandl
 
 Det er vigtigt at forstå, at interaktive handlinger altid går forud for handlinger i baggrunden for at sikre den bedst mulige brugeroplevelse. Hvis der ikke er tilstrækkelige ressourcer, føjes handlinger i baggrunden til en kø for at blive behandlet, når ressourcerne frigøres. Handlinger i baggrunden, f.eks. datasætopdateringer og AI-funktioner, kan stoppes midt i en proces af Power BI-tjenesten og føjes til en kø.
 
-Importmodeller skal være fuldt indlæst i hukommelsen, så de kan forespørges eller opdateres. Power BI-tjenesten administrerer hukommelsesforbrug ved hjælp af avancerede algoritmer for at sikre maksimal anvendelse af den tilgængelige hukommelse og kan overallokere kapaciteten: Selvom det er muligt for en kapacitet at lagre mange importmodeller (op til 100 TB pr. Premium-kapacitet), når deres kombinerede disklager overskrider den understøttede hukommelse (og ekstra hukommelse er påkrævet til forespørgsler og opdateringer), kan de ikke alle indlæses i hukommelsen på samme tid.
+Importmodeller skal være fuldt indlæst i hukommelsen, så de kan forespørges eller opdateres. Power BI-tjeneste administrerer hukommelsesforbruget ved hjælp af avancerede algoritmer for at sikre maksimal brug af den tilgængelige hukommelse og kan opnå en overgang af kapaciteten: det er muligt for en kapacitet at lagre mange import modeller (op til 100 TB pr. Premium-kapacitet). når deres kombinerede disklager overstiger den understøttede hukommelse (og der kræves ekstra hukommelse til forespørgsler og opdatering), kan de ikke indlæses i hukommelsen på samme tid.
 
 Importmodeller indlæses derfor i – og fjernes fra – hukommelseb i henhold til forbrug. En importmodel indlæses, når den forespørges (interaktiv handling) og endnu ikke er i hukommelsen, eller når den skal opdateres (handling i baggrunden).
 
@@ -385,7 +385,7 @@ Der skal være udpeget mindst én kapacitetsadministrator. Brugere, der er udpeg
 
 Kapacitetsadministratorer har ikke adgang til indhold i arbejdsområdet (medmindre vedkommende udtrykkeligt har fået tildelt tilladelser til et arbejdsområde), og de har ikke adgang til alle områder i Power BI Administration (medmindre det udtrykkeligt er blevet tildelt) som f.eks forbrugsdata, overvågningslogge eller lejerindstillinger. Kapacitetsadministratorer har heller ikke tilladelse til at konfigurere nye kapaciteter eller skalere eksisterende kapaciteter. De bliver også udpeget pr. kapacitet, hvilket sikrer, at de kun kan få vist og administrere de kapaciteter, som de er blevet tildelt.
 
-Kapacitetsstørrelsen skal vælges på en tilgængelig liste over SKU-muligheder, som er begrænset af antallet af tilgængelige v-kerner i puljen. Det er muligt at oprette flere kapaciteter fra gruppen, som kan købes fra en eller flere købte SKU'er. En P3-SKU (32 v-kerner) kan f.eks. bruges til at oprette tre kapaciteter: én P2 (16 v-kerner) og to P1 (2 x 8 v-kerner). Der kan opnås forbedret ydeevne og skalering ved at oprette mindre kapaciteter, og dette emne er beskrevet i afsnittet [Optimering af Premium-kapaciteter](#optimizing-premium-capacities). På følgende billede vises et eksempel på opsætning for den fiktive virksomhed Contoso bestående af fem Premium-kapaciteter (3 x P1 og 2 x P3), som hver især indeholder apparbejdsområder og flere arbejdsområder i en delt kapacitet.
+Kapacitetsstørrelsen skal vælges på en tilgængelig liste over SKU-muligheder, som er begrænset af antallet af tilgængelige v-kerner i puljen. Det er muligt at oprette flere kapaciteter fra gruppen, som kan købes fra en eller flere købte SKU'er. En P3-SKU (32 v-kerner) kan f.eks. bruges til at oprette tre kapaciteter: én P2 (16 v-kerner) og to P1 (2 x 8 v-kerner). Der kan opnås forbedret ydeevne og skalering ved at oprette mindre kapaciteter, og dette emne er beskrevet i afsnittet [Optimering af Premium-kapaciteter](#optimizing-premium-capacities). På følgende billede vises et eksempel på en konfiguration for den fiktive contoso-organisation, der består af fem Premium-kapaciteter (3 x P1 og 2 x efter forbrug) med hver enkelt indeholdende arbejdsområder og flere arbejdsområder i delt kapacitet.
 
 ![Et eksempel på opsætning for den fiktive virksomhed Contoso](media/whitepaper-premium-deployment/contoso-organization-example.png)
 
@@ -401,7 +401,7 @@ Administratorer af Power BI-tjenesten og globale Office 365-administratorer kan 
 
 Tildelingstilladelser er påkrævede for at kunne tildele et arbejdsområde til en bestemt Premium-kapacitet. Tilladelserne kan tildeles til hele organisationen, bestemte brugere eller grupper.
 
-Premium-kapaciteter understøtter som standard kun de arbejdsbelastninger, der er tilknyttet kørende Power BI-forespørgsler. Den understøtter også tre yderligere arbejdsbelastninger: **Sideinddelte rapporter**, **dataflows** og **AI**. Hver arbejdsbelastning kræver, at den maksimale hukommelse (som en procentdel af den samlede tilgængelige hukommelse), der kan bruges af arbejdsbelastningen, konfigureres. Det er vigtigt at forstå, at forøgelse af de maksimale hukommelsesallokeringer kan påvirke antallet af aktive modeller, der kan hostes og gennemløbet af opdateringer.
+Premium-kapaciteter understøtter som standard kun de arbejdsbelastninger, der er tilknyttet kørende Power BI-forespørgsler. Den understøtter også tre ekstra arbejdsbelastninger: **sideinddelte rapporter**, **dataflows**og **AI**. Hver arbejdsbelastning kræver, at den maksimale hukommelse (som en procentdel af den samlede tilgængelige hukommelse), der kan bruges af arbejdsbelastningen, konfigureres. Det er vigtigt at forstå, at forøgelse af de maksimale hukommelsesallokeringer kan påvirke antallet af aktive modeller, der kan hostes og gennemløbet af opdateringer.
 
 Hukommelse allokeres dynamisk til dataflow, men den allokeres statisk til sideinddelte rapporter. Årsagen til statisk allokering af den maksimale hukommelse er, at sideinddelte rapporter kører i et sikret område i kapaciteten. Man bør konfigurere hukommelse til sideinddelte rapporter med omhu, da det reducerer den tilgængelige hukommelse til indlæsning af modeller.
 
@@ -416,14 +416,14 @@ Det er muligt at slette en Premium-kapacitet, og det medfører ikke sletning af 
 
 ### <a name="assigning-workspaces-to-capacities"></a>Tildeling af arbejdsområder til kapaciteter
 
-Arbejdsområder kan tildeles til en Premium-kapacitet i **Portalen** **Power BI Administration** eller i ruden **Arbejdsområde** for et apparbejdsområde.
+Arbejdsområder kan tildeles en Premium-kapacitet på **Power bi-administrations**  **portalen** eller – for et arbejdsområde – i ruden **arbejdsområde** .
 
 Kapacitetsadministratorer samt globale Office 365-administratorer eller administratorer af Power BI-tjenesten kan massetildele arbejdsområder i **Portalen** **Power BI Administration**. Massetildelingen kan gælde for:
 
-- **Arbejdsområder efter brugere**: Alle arbejdsområder, der ejes af disse brugere, herunder personlige arbejdsområder, tildeles til Premium-kapaciteten. Dette omfatter tildeling påny af arbejdsområder, når de er allerede er tildelt til en anden Premium-kapacitet. Herudover tildeles brugerne også tilladelser til arbejdsområdetildelinger.
+- **Arbejdsområder efter brugere** : alle arbejdsområder, der ejes af disse brugere, herunder personlige arbejdsområder, tildeles Premium-kapaciteten. Dette omfatter tildeling påny af arbejdsområder, når de er allerede er tildelt til en anden Premium-kapacitet. Herudover tildeles brugerne også tilladelser til arbejdsområdetildelinger.
 
 - **Specifikke arbejdsområder**
-- **Hele organisationens arbejdsområder**: Alle arbejdsområder, herunder personlige arbejdsområder, tildeles til Premium-kapaciteten. Herudover tildeles alle aktuelle og fremtidige brugere også tilladelser til arbejdsområdetildelinger. \[[14](#endnote-14)\]
+- **Hele organisationens arbejdsområder** : alle arbejdsområder, herunder personlige arbejdsområder, tildeles Premium-kapaciteten. Herudover tildeles alle aktuelle og fremtidige brugere også tilladelser til arbejdsområdetildelinger. \[[14](#endnote-14)\]
 
 Et arbejdsområde kan føjes til en Premium-kapacitet ved hjælp af ruden **Arbejdsområde**, hvis brugeren både er arbejdsområdeadministrator og har tildelingstilladelser.
 
@@ -476,7 +476,7 @@ Til sidst i dette afsnit gennemgår vi testmetoder og tilpasning af størrelsen 
 
 Når man forsøger at opnå den bedste udnyttelse og ydeevne, er der nogle bedste fremgangsmåder, som kan betragtes som generelle anbefalinger. Disse omfatter:
 
-- Brug af apparbejdsområder i stedet for personlige arbejdsområder
+- Brug af arbejdsområder i stedet for personlige arbejdsområder
 - Adskillelse af forretningskritisk og SSBI (Self-Service BI) i forskellige kapaciteter
 
   ![Adskillelse af forretningskritisk og SSBI (Self-Service BI) i forskellige kapaciteter](media/whitepaper-premium-deployment/separate-capacities.png)
@@ -586,10 +586,10 @@ Kapacitetsadministratorer (og administratorer af Power BI-tjenesten) kan overvå
 
 Trinvise opdateringer kan reducere dataopdateringsvarigheden væsentligt, især for store modeltabeller. Der er fire fordele, der er forbundet med trinvis opdatering:
 
-- **Opdateringerne udføres hurtigere**: Kun et undersæt af en tabel skal indlæses, hvilket nedbringer CPU- og hukommelsesforbruget, og parallelitet kan være højere ved opdatering af flere partitioner.
-- **Opdateringerne sker kun, når det er påkrævet**: Politikker for trinvis opdatering kan konfigureres til kun at indlæses, når data er blevet ændret.
-- **Opdateringerne er mere pålidelige**: Kortere kørende forbindelser til ustabile datakildesystemer er mindre sårbare over for afbrydelser.
-- **Modellerne forbliver trimmede**: Politikker for trinvis opdatering kan konfigureres til automatisk at fjerne historik ud over et skydevindue.
+- **Opdateringerne er hurtigere** : det er kun et undersæt af en tabel, der skal indlæses, reducere CPU-og hukommelsesforbrug, og parallelitet kan være højere, når der opdateres flere partitioner
+- **Opdateringer sker kun, når** det er påkrævet: politikker for trinvis opdatering kan kun konfigureres til at indlæse, når data er blevet ændret
+- **Opdateringerne er mere pålidelige** : de kortere kørsels forbindelser til de midlertidige datakilde systemer er mindre udsatte til at afbryde forbindelsen
+- **Modeller forbliver trim** : politikker for trinvis opdatering kan konfigureres til automatisk at fjerne historikken ud over et skyde vindue for tid
 
 Du kan få flere oplysninger i dokumentet [Trinvis opdatering i Power BI Premium](service-premium-incremental-refresh.md).
 
@@ -659,7 +659,7 @@ Overvej optimeringsmulighederne for en sammensat model: Husk, at en sammensat mo
 
 - Emnerne om optimering af import- og DirectQuery-modeller gælder generelt for de sammensatte modeltabeller, der anvender disse lagertilstande.
 - Du skal bestræbe dig op at opnå et balanceret design ved at konfigurere tabeller af dimensionstypen (repræsenterer forretningsobjekter) som tabeller med dobbelt lagringstilstand og tabeller af oplysningstypen (ofte store tabeller, der repræsenterer driftsmæssige fakta) som lagringstilstanden DirectQuery. Dobbelt lagringstilstand betyder både import- og DirectQuery-lagringstilstandene og gør det muligt for Power BI-tjenesten at bestemme den mest effektive lagringstilstand, der skal bruges til at generere en oprindelig forespørgsel for passthrough.
-- Sørg for, at gateways har tilstrækkelige ressourcer, helst på dedikerede maskiner, med den nødvendige netværksbåndbredde og i nærheden af datakilderne.
+- Sørge for, at gateways har tilstrækkelige ressourcer, helst på dedikerede maskiner, med den nødvendige netværksbåndbredde og i nærheden af datakilderne.
 - Akkumuleringstabeller, der er konfigureret som importlagringstilstand kan resultere i en væsentlig forbedring af forespørgselsydeevnen, når de bruges til at opsummere tabeller af faktatypen i DirectQuery-lagringstilstand. I dette tilfælde øger akkumuleringstabeller størrelsen af modellen og øger opdateringstiden, hvilket ofte er et acceptabelt kompromis for at opnå hurtigere forespørgsler.
 
 #### <a name="optimizing-externally-hosted-models"></a>Optimering af eksternt hostede modeller
@@ -678,11 +678,11 @@ Det kan være udfordrende at fastlægge størrelsen på og antallet af Premium-k
 
 Kapacitetsadministratorer skal derfor overveje flere forskellige faktorer, der er specifikke for jeres miljø, indhold og forventet brug. Det overordnede mål er at maksimere udnyttelsen af kapaciteter, samtidig med at der leveres ensartede forespørgselstider samt acceptable ventetider og fjernelsesrater. Følgende faktorer bør overvejes:
 
-- **Modelstørrelse og datakarakteristika**: Importmodeller skal være fuldt indlæst i hukommelsen for at muliggøre forespørgsler eller opdateringer. Datasæt med liveforbindelse eller DQ-datasæt kan kræve betydelig processortid og muligvis også meget hukommelse for at evaluere komplekse målinger eller RLS-regler. Hukommelses- og processorstørrelse og gennemløb for forespørgsler med liveforbindelse eller DQ-forespørgsler er begrænset af kapacitetsstørrelsen.
-- **Samtidige aktive modeller** : Den samtidige forespørgsel af forskellige importmodeller leverer den bedste svartid og ydeevne, når de forbliver i hukommelsen. Der skal være tilstrækkelig hukommelse til at hoste alle modeller, der forespørges meget, med ekstra hukommelse for at muliggøre opdateringen af disse modeller.
-- **Opdatering af importmodel** : Opdateringstypen (fuld eller trinvis), varigheden og kompleksiteten af Power-forespørgsler og beregnet tabel-/kolonnelogik kan påvirke hukommelsesforbruget og især processorforbruget. Samtidige opdateringer er begrænset af kapacitetsstørrelsen (1,5 x backend v-kerner, rundet op).
-- **Samtidige forespørgsler** : Mange samtidige forespørgsler kan resultere i rapporter, der ikke svarer, når processor eller live-/DQ-forbindelser overskrider kapacitetsgrænsen. Dette er især tilfældet for rapportsider, der indeholder mange visualiseringer.
-- **Dataflows, sideinddelte rapporter og AI-funktioner**: Kapaciteten kan konfigureres for at understøtte dataflows, sideinddelte rapporter og AI-funktioner, der hver især kræver en konfigurerbar maksimal procentdel af kapacitetshukommelsen. Hukommelsen allokeres dynamisk til dataflows, men den allokeres statisk til sideinddelte rapporter og AI-arbejdsbelastninger.
+- **Model størrelse og dataegenskaber** : import-modeller skal indlæses fuldt ud i hukommelsen, for at der kan foretages forespørgsler eller opdateres. Datasæt med liveforbindelse eller DQ-datasæt kan kræve betydelig processortid og muligvis også meget hukommelse for at evaluere komplekse målinger eller RLS-regler. Hukommelses- og processorstørrelse og gennemløb for forespørgsler med liveforbindelse eller DQ-forespørgsler er begrænset af kapacitetsstørrelsen.
+- **Samtidige aktive modeller** : den samtidige forespørgsel på forskellige import modeller vil give den bedst mulige tilgængelighed og ydeevne, når de forbliver i hukommelsen. Der skal være tilstrækkelig hukommelse til at hoste alle modeller, der forespørges meget, med ekstra hukommelse for at muliggøre opdateringen af disse modeller.
+- **Opdatering af import model** : opdateringstypen (fuld eller trinvis), varighed og kompleksitet for Power-forespørgsel forespørgsler og beregnede tabel-/kolonne logik kan påvirke hukommelsen og især brugen af processoren. Samtidige opdateringer er begrænset af kapacitetsstørrelsen (1,5 x backend v-kerner, rundet op).
+- **Samtidige forespørgsler** : mange samtidige forespørgsler kan resultere i rapporter, der ikke reagerer, når der er overskredet kapacitets grænse i forbindelse med processorer eller LC/DQ-forbindelser. Dette er især tilfældet for rapportsider, der indeholder mange visualiseringer.
+- **Dataflows, sideinddelte rapporter og AI-funktioner** : kapaciteten kan konfigureres til at understøtte dataflows, sideinddelte rapporter og AI-funktioner, hvor hver enkelt kræver en konfigurerbar maksimal procentdel af kapacitets hukommelsen. Hukommelsen allokeres dynamisk til dataflows, men den allokeres statisk til sideinddelte rapporter og AI-arbejdsbelastninger.
 
 Ud over disse faktorer kan kapacitetsadministratorer overveje at oprette flere kapaciteter. Flere kapaciteter gør det muligt at isolere arbejdsbelastninger og kan konfigureres til at sikre, at prioriterede arbejdsbelastninger har garanterede ressourcer. To kapaciteter kan f.eks. oprettes for at adskille forretningskritiske arbejdsbelastninger fra arbejdsbelastninger i BI-selvbetjeningsportalen (SSBI). Den forretningskritiske kapacitet kan bruges til at isolere store virksomhedsmodeller, der giver dem garanterede ressourcer, hvor det kun er it-afdelingen, der har oprettelesadgang. SSBI-kapaciteten kan bruges til at hoste et stigende antal mindre modeller, som forretningsanalytikere har adgang til. SSBI-kapaciteten kan nogle gange opleve ventetider på forespørgsler eller opdateringer, der er acceptable.
 
@@ -696,9 +696,9 @@ Når du har valgt en kapacitetsstørrelse, kan test udføres ved at oprette et k
 
 Testindholdet kan føjes til de arbejdsområder, der er oprettet på Azure-kapaciteten, og en enkelt bruger kan derefter køre rapporter for at generere en realistisk og repræsentativ arbejdsbelastning af forespørgsler. Hvis der er importmodeller, skal der også udføres en opdatering af hver model. Overvågningsværktøjer kan derefter bruges til at gennemse alle målepunkter for at forstå ressourceudnyttelsen.
 
-Det er vigtigt, at testene gentages: Testene skal køres flere gange, og de skal levere ca. det samme resultat hver gang. Et gennemsnit af disse resultater kan bruges til at ekstrapolere og estimere arbejdsbelastning under ægte produktionsbetingelser.
+Det er vigtigt, at testene kan gentages: testene skal køres flere gange, og de skal levere cirka det samme resultat hver gang. Et gennemsnit af disse resultater kan bruges til at ekstrapolere og estimere arbejdsbelastning under ægte produktionsbetingelser.
 
-Hvis du allerede har en kapacitet og de rapporter, du vil udføre en belastningstest for, skal du bruge [værktøjet til generering af PowerShell-belastning](https://aka.ms/PowerBILoadTestingTool) til hurtigt at generere en belastningstest. Værktøjet giver dig mulighed for at vurdere, hvor mange instanser af hver rapport der kan køres af din kapacitet på en time. Du kan bruge værktøjet til at vurdere din kapacitets evne til individuel rapportgengivelse eller til at gengive flere forskellige rapporter parallelt. Du kan finde flere oplysninger i videoen [Microsoft Power BI: Premium-kapacitet](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw).
+Hvis du allerede har en kapacitet og de rapporter, du vil udføre en belastningstest for, skal du bruge [værktøjet til generering af PowerShell-belastning](https://aka.ms/PowerBILoadTestingTool) til hurtigt at generere en belastningstest. Værktøjet giver dig mulighed for at vurdere, hvor mange instanser af hver rapport der kan køres af din kapacitet på en time. Du kan bruge værktøjet til at vurdere din kapacitets evne til individuel rapportgengivelse eller til at gengive flere forskellige rapporter parallelt. Du kan finde flere oplysninger i videoen [Microsoft Power bi: Premium-kapacitet](https://www.youtube.com/watch?time_continue=1860&v=C6vk6wk9dcw).
 
 Hvis du vil generere en mere kompleks test, bør du overveje at udvikle et program til belastningstest for at simulere en realistisk arbejdsbelastning. Du kan finde flere oplysninger i webinaret om [belastningstest af Power BI-programmer med Visual Studio-belastningstest](https://www.youtube.com/watch?v=UFbCh5TaR4w).
 
