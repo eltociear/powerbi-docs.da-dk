@@ -83,7 +83,7 @@
               href: 'https://powerbi.microsoft.com/developers/'
             - name: Eksempler
               href: 'https://microsoft.github.io/PowerBI-visuals/samples/'
-            - name: Git-lager for brugerdefinerede visualiseringer
+            - name: Git-lager til brugerdefinerede visualiseringer
               href: 'https://go.microsoft.com/fwlink/?linkid=848277'
             - name: Oprettelse af SSL-certifikat
               href: visuals/create-ssl-certificate.md
@@ -102,6 +102,8 @@
               href: embed-sample-for-customers.md
             - name: Integrer indhold til din organisation
               href: embed-sample-for-your-organization.md
+            - name: Integrer sideinddelte rapporter til kunder
+              href: embed-paginated-reports-customers.md
             - name: Integrer indhold for nationale cloudmiljøer
               href: embed-sample-for-customers-national-clouds.md
         - name: Begreber
@@ -112,6 +114,8 @@
               href: embed-service-principal.md
             - name: Sikkerhed på rækkeniveau
               href: embedded-row-level-security.md
+            - name: Sideinddelte rapporter med sikkerhed på rækkeniveau
+              href: paginated-reports-row-level-security.md
             - name: Administrer flere lejere
               href: embed-multi-tenancy.md
             - name: Azure-logføring af diagnosticering for Power BI Embedded
@@ -134,7 +138,7 @@
               href: get-azuread-access-token.md
             - name: Dynamisk binding
               href: embed-dynamic-binding.md
-            - name: Integration af Q&A
+            - name: Integrer Spørgsmål og svar
               href: qanda.md
             - name: Foretag fejlfinding af dit integrerede program
               href: embedded-troubleshoot.md
@@ -154,7 +158,7 @@
                   href: migrate-from-powerbi-embedded.md
                 - name: Overførselsværktøj
                   href: migrate-tool.md
-                - name: Overflytning af kodestykker
+                - name: Overførselskodestykker
                   href: migrate-code-snippets.md
         - name: Reference
           items:
@@ -166,7 +170,7 @@
                   href: 'https://msdn.microsoft.com/library/mt147898.aspx'
                 - name: Reference til Power BI REST-API
                   href: rest-api-reference.md
-            - name: Henter .NET SDK
+            - name: .NET SDK Download
               href: 'https://go.microsoft.com/fwlink/?linkid=848274'
             - name: Indlejr brugerdefinerede layout i en app
               href: embedded-custom-layout.md
@@ -180,15 +184,15 @@
               href: 'https://go.microsoft.com/fwlink/?linkid=848279'
             - name: Power BI JavaScript-wiki
               href: 'https://github.com/Microsoft/powerbi-javascript/wiki'
-            - name: Git-lager for JavaScript
+            - name: Git-lager til JavaScript
               href: 'https://go.microsoft.com/fwlink/?linkid=848276'
-            - name: 'Git-lager for Power BI C#'
+            - name: 'Git-lager til Power BI C#'
               href: 'https://go.microsoft.com/fwlink/?linkid=848273'
             - name: Eksempler
               href: 'https://go.microsoft.com/fwlink/?linkid=851293'
             - name: Power BI-community
               href: 'https://go.microsoft.com/fwlink/?linkid=848280'
-            - name: Stack Overflow
+            - name: Stakoverløb
               href: 'https://go.microsoft.com/fwlink/?linkid=848281'
     - name: Automatisering
       expanded: true
@@ -201,7 +205,7 @@
           items:
             - name: Overfør data til et datasæt
               href: walkthrough-push-data.md
-            - name: Hent et adgangstoken til godkendelse
+            - name: Hent et godkendelsesadgangstoken
               href: walkthrough-push-data-get-token.md
             - name: Opret et datasæt
               href: walkthrough-push-data-create-dataset.md
@@ -229,17 +233,17 @@
               href: encrypt-credentials.md
         - name: Reference
           items:
-            - name: REST API'er
+            - name: REST-API'er
               href: 'https://docs.microsoft.com/rest/api/power-bi'
             - name: Reference til Power BI REST-API
               href: rest-api-reference.md
-            - name: Komplet kodeliste
+            - name: Komplet kodevisning
               href: walkthrough-push-data-complete-code.md
         - name: Ressourcer
           items:
             - name: Udviklingscenter
               href: 'https://powerbi.microsoft.com/en-us/developers/'
-            - name: 'Git-lager for Power BI C#'
+            - name: 'Git-lager til Power BI C#'
               href: 'https://go.microsoft.com/fwlink/?linkid=848273'
-            - name: Henter .NET SDK
+            - name: .NET SDK Download
               href: 'https://go.microsoft.com/fwlink/?linkid=848274'
