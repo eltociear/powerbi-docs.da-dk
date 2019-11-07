@@ -9,18 +9,18 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 03/28/2019
 ms.author: maggies
-ms.openlocfilehash: d1289a3e030f0a93c5c2ce3b68b7cf92c378a7e0
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: b7fe09857d7f9d61745dd263353d3467c9cf6fb4
+ms.sourcegitcommit: e4b28c237c6e0dc16239b161a41a4c30a4b534dd
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71194755"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73710775"
 ---
 # <a name="whitepapers-for-power-bi"></a>Whitepapers til Power BI
 
 Whitepapers gør det muligt at udforske Power BI-emner på et mere detaljeret niveau. Her kan du finde en liste over tilgængelige whitepapers til Power BI.
 
-| Whitepaper | Beskrivelse | Dato |
+| Whitepaper | Beskrivelse | Date (dato) |
 | --- | --- | --- |
 | [Planlægning af en Power BI Enterprise-udrulning](https://go.microsoft.com/fwlink/?linkid=2057861) |I denne tekniske hvidbog beskrives, hvilke overvejelser der skal gøres for at få en velfungerende og sikker Power BI-udrulning i organisationen. | Juli 2018 |
 | [Power BI og dataflow](https://go.microsoft.com/fwlink/?linkid=2034388&clcid=0x409)| Denne hvidbog beskriver dataflow i tekniske detaljer, og den beskriver de funktioner og initiativer, der ligger bag dataflowets funktioner og funktionalitet. | November 2018 |
@@ -31,7 +31,6 @@ Whitepapers gør det muligt at udforske Power BI-emner på et mere detaljeret ni
 | [Sikkerhed](service-admin-power-bi-security.md) |Giver en detaljeret beskrivelse af sikkerheden i Power BI. | Marts 2019 |
 | [Distribuer Power BI-indhold til eksterne gæstebrugere vha. Azure Active Directory B2B](whitepaper-azure-b2b-power-bi.md)|I denne rapport forklares det, hvordan indhold kan distribueres til brugere uden for organisationen vha. integrationen af Azure Active Directory Business-to-business (AAD B2B).| Marts 2019 |
 | [Avanceret analyse med Power BI](https://info.microsoft.com/advanced-analytics-with-power-bi.html?Is=Website) |Beskriver de avancerede analysefunktioner i Power BI, herunder forudsigende analyser, brugerdefinerede visualiseringer, R-integration og dataanalyseudtryk. | Februar 2017 |
-| [Bedste praksis for design af rapporter og visualiseringer](visuals/power-bi-visualization-best-practices.md) |Dette whitepaper indeholder bedste praksis for design af rapporter i Power BI. | Juni 2018 |
 | [Tovejsfiltrering](desktop-bidirectional-filtering.md) |Forklarer tovejskrydsfiltrering i Power BI Desktop. Dette whitepaper omhandler også SQL Server Analysis Services 2016, da begge programmer har samme funktionsmåde. | Juli 2018 |
 | [DirectQuery i SQL Server 2016 Analysis Services](https://blogs.msdn.microsoft.com/analysisservices/2017/04/06/directquery-in-sql-server-2016-analysis-services-whitepaper/) |For SQL Server 2016 er DirectQuery blevet ændret for at øge hastighed og forbedre ydeevnen drastisk, men den er nu også mere kompleks at forstå og implementere. | Januar 2017 |
 | [Power BI og SAP BW](https://aka.ms/powerbiandsapbw)| I dette dokument beskrives, hvordan SAP-kunder kan integrere Power BI i eksisterende SAP Business Warehouse (BW)-systemer.| Februar 2018 |
@@ -40,4 +39,4 @@ Whitepapers gør det muligt at udforske Power BI-emner på et mere detaljeret ni
 
 [!INCLUDE [GDPR-related guidance](includes/gdpr-hybrid-note.md)]
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
