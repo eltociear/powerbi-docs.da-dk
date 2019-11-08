@@ -3,19 +3,19 @@ title: Udrulning og administration af Premium-kapaciteter i Power BI
 description: Forstå potentialet i Power BI Premium, og få mere at vide om, hvordan du designer, installerer, overvåger og lokaliserer fejl i forbindelse med skalerbare løsninger.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: eecbc43f26cebc12884ae6c5143a815f6e310ce5
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: f9269b52b1721cd7c6801cd0337911159c0b2494
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432357"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73786333"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Udrulning og administration af Premium-kapaciteter i Power BI
 
@@ -63,7 +63,7 @@ Følgende Power BI-indhold er gemt i arbejdsområder:
 - Dataflow
 - Datasæt
 - Projektmapper
-- Rapporter
+- Reports
 - Dashboards
 
 #### <a name="dataflows"></a>Dataflow
@@ -131,7 +131,7 @@ Det er vigtigt at forstå, at denne indholdstype ikke er tilgængelig som en dat
 
 Du kan finde flere oplysninger i dokumentet [Hent data fra Excel-projektmappefiler](service-excel-workbook-files.md).
 
-#### <a name="reports"></a>Rapporter
+#### <a name="reports"></a>Reports
 
 Der findes to typer rapporter: Power BI rapporter og sideinddelte rapporter.
 

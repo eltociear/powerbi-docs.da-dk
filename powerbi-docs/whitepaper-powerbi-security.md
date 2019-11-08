@@ -3,19 +3,19 @@ title: Whitepaper om sikkerhed i Power BI
 description: I denne whitepaper drøftes og beskrives sikkerhedsarkitektur og implementering for Power BI
 author: davidiseminger
 ms.author: davidi
-manager: kfile
+manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 4cb2ae69044b156d5f8a4bd554f8386808fb6b9e
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 8cbb1c4b25cacae5cb025f85790be6a1657b0482
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430507"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73787752"
 ---
 # <a name="power-bi-security-whitepaper"></a>Whitepaper om sikkerhed i Power BI
 
@@ -34,13 +34,13 @@ ms.locfileid: "73430507"
 
 **Power BI** er en onlinesoftwaretjeneste (_SaaS_ eller Software as a Service) fra Microsoft, der gør det nemt og hurtigt for dig at oprette dashboards, rapporter, datasæt og visualiseringer i forbindelse med selvbetjenings-business intelligence. Med Power BI kan du oprette forbindelse til mange forskellige datakilder, kombinere og forme data fra disse forbindelser og derefter oprette rapporter og dashboards, som kan deles med andre.
 
-Power BI-tjenesten er underlagt [servicebetingelserne for Microsoft Online](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) og [erklæringen om beskyttelse af personlige oplysninger for Microsoft Enterprise](http://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Hvis du vil have mere at vide om placeringen af databehandling, skal du læse vilkår for placering af databehandling i servicebetingelserne for Microsoft Online. Hvis du vil have flere oplysninger om overholdelse af angivne standarder, skal du gå til [Microsoft Trust Center](https://www.microsoft.com/trustcenter), som er den primære ressource for Power BI. Power BI-teamet arbejder hårdt på at give kunderne de nyeste innovationer og produktivitet. Power BI er i øjeblikket i niveau D i [Office 365-kompatibilitets strukturen](http://go.microsoft.com/fwlink/p/?LinkID=618494).
+Power BI-tjenesten er underlagt [servicebetingelserne for Microsoft Online](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31) og [erklæringen om beskyttelse af personlige oplysninger for Microsoft Enterprise](https://www.microsoft.com/privacystatement/OnlineServices/Default.aspx). Hvis du vil have mere at vide om placeringen af databehandling, skal du læse vilkår for placering af databehandling i servicebetingelserne for Microsoft Online. Hvis du vil have flere oplysninger om overholdelse af angivne standarder, skal du gå til [Microsoft Trust Center](https://www.microsoft.com/trustcenter), som er den primære ressource for Power BI. Power BI-teamet arbejder hårdt på at give kunderne de nyeste innovationer og produktivitet. Power BI er i øjeblikket i niveau D i [Office 365-kompatibilitets strukturen](https://go.microsoft.com/fwlink/p/?LinkID=618494).
 
 I denne artikel beskrives sikkerhed i Power BI ved at forklare Power BI-arkitekturen og derefter forklare, hvordan brugerne godkender mod Power BI, så der etableres dataforbindelser. Derefter beskrives, hvordan Power BI gemmer og flytter data via tjenesten. Det sidste afsnit er dedikeret til spørgsmål i forbindelse med sikkerhed, og der gives svar for hvert enkelt spørgsmål.
 
 ## <a name="power-bi-architecture"></a>Power BI-arkitektur
 
-**Power BI**-tjenesten er baseret på **Azure**, som er Microsofts [platform til cloudcomputing](http://azure.microsoft.com/overview/what-is-azure/). Power BI er i øjeblikket udrullet i mange datacentre overalt i verden. Der er mange aktive udrulninger tilgængelige for kunder i de områder, der betjenes af disse datacentre, og et lige antal så stort antal passive udrulninger, der fungerer som sikkerhedskopier for hver aktiv udrulning.
+**Power BI**-tjenesten er baseret på **Azure**, som er Microsofts [platform til cloudcomputing](https://azure.microsoft.com/overview/what-is-azure/). Power BI er i øjeblikket udrullet i mange datacentre overalt i verden. Der er mange aktive udrulninger tilgængelige for kunder i de områder, der betjenes af disse datacentre, og et lige antal så stort antal passive udrulninger, der fungerer som sikkerhedskopier for hver aktiv udrulning.
 
 Hver installation af Power BI består af to klynger – en Web Front End (**WFE**) og en **Back-End**. Disse to klynger vises på følgende billede og udgør baggrunden for resten af denne artikel. 
 
@@ -117,8 +117,8 @@ Power BI tilbydes i bestemte områder baseret på, hvor Power BI-klynger er udru
 
 Følgende links indeholder yderligere oplysninger om Azure-datacentre.
 
-- [Azure-områder](http://azure.microsoft.com/regions/) – oplysninger om Azures globale tilstedeværelse og placeringer
-- [Azure-tjenester efter område](http://azure.microsoft.com/regions/#services) – en komplet liste over Azure-tjenester (både infrastrukturtjenester og platformstjenester) fra Microsoft i hvert område.
+- [Azure-områder](https://azure.microsoft.com/regions/) – oplysninger om Azures globale tilstedeværelse og placeringer
+- [Azure-tjenester efter område](https://azure.microsoft.com/regions/#services) – en komplet liste over Azure-tjenester (både infrastrukturtjenester og platformstjenester) fra Microsoft i hvert område.
 
 Power BI-tjeneste er i øjeblikket tilgængelig i bestemte områder, der behandles af datacentre som beskrevet i [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/business-application-platform/data-location). Følgende link viser et kort over placeringen af Power BI-datacentrene. Du kan placere markøren over et område for at se de datacentre, der er placeret i det pågældende område:
 
@@ -126,7 +126,7 @@ Power BI-tjeneste er i øjeblikket tilgængelig i bestemte områder, der behandl
 
 Microsoft leverer også datacentre til nationale clouds. Du kan finde flere oplysninger om tilgængeligheden af Power BI-tjenesten i nationale cloudmiljøer i [Power BI i nationale cloudmiljøer](https://powerbi.microsoft.com/clouds/).
 
-Du kan finde flere oplysninger om, hvor dine data gemmes, og hvordan de bruges, under [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Forpligtelser i forbindelse med placeringen af kundedata som inaktive data er angivet under **Vilkår for databehandling** i [Vilkår for Microsoft Online Services](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
+Du kan finde flere oplysninger om, hvor dine data gemmes, og hvordan de bruges, under [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Transparency/default.aspx#_You_know_where). Forpligtelser i forbindelse med placeringen af kundedata som inaktive data er angivet under **Vilkår for databehandling** i [Vilkår for Microsoft Online Services](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=31).
 
 ## <a name="user-authentication"></a>Brugergodkendelse
 
@@ -224,7 +224,7 @@ I forbindelse med cloudbaserede datakilder krypterer rollen for Dataflytning kry
         - Hvis datasættet er indstillet til opdatering, gemmes legitimationsoplysningerne krypteret i Azure SQL Database for Dataflytning. Krypteringsnøglen gemmes på den computer, der kører gatewayen på kundens infrastruktur.
         - Hvis datasættet ikke er indstillet til opdatering, er der ikke gemt nogen legitimationsoplysninger for datakilderne
 
-1. Data
+1. data
 
     a. Analysis Services i det lokale miljø og DirectQuery – intet gemmes i Power BI-tjenesten.
 
@@ -242,7 +242,7 @@ Power BI sikrer overvågning af dataintegritet på følgende måder:
 
 * I forbindelse med inaktive data i Azure Blob Storage bruger Power BI kryptering på klientsiden og HTTPS til at overføre data til lageret, som omfatter integritetskontroller under hentning af dataene. Du kan [få mere at vide om sikkerhed i Azure Blob Storage](https://azure.microsoft.com/documentation/articles/storage-security-guide/).
 
-#### <a name="reports"></a>Rapporter
+#### <a name="reports"></a>Reports
 
 1. Metadata (rapportdefinition)
 
@@ -301,7 +301,7 @@ Permanente enheder er enheder, der har hukommelse, der bevares uden konstant str
     c. Data sendt via push – ingen (ikke relevant)
 
     d. ETL – ingen (intet gemmes på computenoden eller på anden måde end forklaret under afsnittet **Inaktive data** ovenfor)
-4. Data
+4. data
 
     Nogle dataartefakter kan blive gemt på disken for computenoderne i en begrænset periode.
 
@@ -341,7 +341,7 @@ I forbindelse med Power BI og ExpressRoute kan du oprette en privat netværksfor
 
 ExpressRoute er en Azure-tjeneste, der giver dig mulighed for at oprette private forbindelser mellem Azure-datacentre (hvor Power BI er placeret) og infrastrukturen i det lokale miljø eller oprette private forbindelser mellem Azure-datacentre og dit colocationsmiljø. Du kan finde yderligere oplysninger i artiklen [Power BI og ExpressRoute](service-admin-power-bi-expressroute.md).
 
-## <a name="power-bi-mobile"></a>Power BI – Mobil
+## <a name="power-bi-mobile"></a>Power BI Mobile
 
 Power BI-Mobil er en samling af apps, der er udviklet til de tre primære mobil platforme: Android-, iOS-og Windows Mobile. Sikkerhedsovervejelser i forbindelse med apps til Power BI – Mobil falder i to kategorier:
 
@@ -371,7 +371,7 @@ Datacachen fra Power BI – Mobil forbliver på enheden i to uger eller indtil: 
 
 Apps til Power BI – Mobil bruger ikke mapper på enheden. 
 
-Alle tre platforme, som Power BI – Mobil er tilgængelig til, understøtter Microsoft Intune, der er en softwaretjeneste, som muliggør administration af mobilenheder og apps. Når Intune er aktiveret og konfigureret, krypteres data på mobilenheden, og selve Power BI-programmet kan ikke installeres på et SD-kort. [Få mere at vide om Microsoft Intune](http://www.microsoft.com/cloud-platform/microsoft-intune).
+Alle tre platforme, som Power BI – Mobil er tilgængelig til, understøtter Microsoft Intune, der er en softwaretjeneste, som muliggør administration af mobilenheder og apps. Når Intune er aktiveret og konfigureret, krypteres data på mobilenheden, og selve Power BI-programmet kan ikke installeres på et SD-kort. [Få mere at vide om Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune).
 
 ## <a name="power-bi-security-questions-and-answers"></a>Spørgsmål og svar om sikkerhed i Power BI
 
@@ -487,7 +487,7 @@ Du kan finde flere oplysninger om Power BI i følgende ressourcer.
 - [Introduktion til Power BI Desktop](https://support.powerbi.com/knowledgebase/articles/471664)
 - [REST API til Power BI – oversigt](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Reference til Power BI-API](https://msdn.microsoft.com/library/mt147898.aspx)
-- [Datagateway i det lokale miljø](service-gateway-onprem.md)
+- [On-premises data gateway (Datagateway i det lokale miljø)](service-gateway-onprem.md)
 - [Power BI og ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Nationale Power BI-cloudmiljøer](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
