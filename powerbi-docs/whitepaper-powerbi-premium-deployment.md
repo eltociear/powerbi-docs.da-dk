@@ -3,19 +3,18 @@ title: Udrulning og administration af Premium-kapaciteter i Power BI
 description: Forstå potentialet i Power BI Premium, og få mere at vide om, hvordan du designer, installerer, overvåger og lokaliserer fejl i forbindelse med skalerbare løsninger.
 author: mgblythe
 ms.author: mblythe
-manager: kfollis
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/06/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: f9269b52b1721cd7c6801cd0337911159c0b2494
-ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
+ms.openlocfilehash: 3ccd4af0f00e132c8bc0bd29a9ff23f89b13a15f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73786333"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880598"
 ---
 # <a name="deploying-and-managing-power-bi-premium-capacities"></a>Udrulning og administration af Premium-kapaciteter i Power BI
 
