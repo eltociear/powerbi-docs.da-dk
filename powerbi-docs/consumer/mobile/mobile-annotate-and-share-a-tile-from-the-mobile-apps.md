@@ -2,19 +2,18 @@
 title: Anmærk og del i Power BI-mobilapps
 description: 'Læs mere om at anmærke og dele felter, rapporter og visualiseringer fra Microsoft Power BI-mobilappen til iOS og Android. '
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 1f7911007d9629c8990fc15ddf7453bafe0e78f5
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 013cbc58a8404fa803a14c73b1668be1215cf642
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70841470"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879505"
 ---
 # <a name="annotate-and-share-a-tile-report-or-visual-in-power-bi-mobile-apps"></a>Anmærk og del et felt, en rapport eller en visualisering i Power BI-mobilapps
 Gælder for:
@@ -74,5 +73,5 @@ Du kan også [dele et felt fra Power BI-mobilappen til Windows 10-enheder](mobil
 
 ## <a name="next-steps"></a>Næste trin
 * [Del et dashboard fra din Power BI-mobilapp](mobile-share-dashboard-from-the-mobile-apps.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 
