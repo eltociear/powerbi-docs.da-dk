@@ -7,12 +7,12 @@ ms.subservice: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 0cf85d2757dd77de854a6640f400c6dd9c70379a
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: c44f90bc29887a5431c893803cf4910e0e5093d3
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431519"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73791279"
 ---
 # <a name="use-shared-datasets-in-power-bi-report-builder"></a>Brug delte datasæt i Power BI Report Builder
 
@@ -30,7 +30,7 @@ Her er en liste over, hvad du skal bruge, og hvad du ikke behøver for at bruge 
 - Hvis du vil have adgang til et Power BI datasæt, skal du have Build-tilladelse til datasættet. Læs mere om [Build-tilladelse](service-datasets-build-permissions.md).
 - Du behøver ikke en Power BI Pro-licens for at oprette en sideinddelt rapport i Report Builder. 
 - Du skal have en Power BI Pro-licens for at publicere din sideinddelte rapport. Du skal også som minimum have rollen bidragyder for et arbejdsområde i en Premium-kapacitet. 
-- Valgfrit: Hvis du vil følge med i denne artikel, kan du downloade filen Power BI Desktop [Retail Analysis sample.pbix](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), åbne den i Power BI Desktop og tilføje en tabel med mange kolonner. Slå **Totaler** fra i ruden **Formular**. Publicer den derefter til et arbejdsområde i Power BI-tjenesten.
+- Valgfrit: Hvis du vil følge med i denne artikel, kan du downloade filen Power BI Desktop [Retail Analysis sample.pbix](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), åbne den i Power BI Desktop og tilføje en tabel med mange kolonner. Slå **Totaler** fra i ruden **Formular**. Publicer den derefter til et arbejdsområde i Power BI-tjenesten.
 
     ![Totaler fra](media/report-builder-shared-datasets/power-bi-desktop-totals-off.png)
 

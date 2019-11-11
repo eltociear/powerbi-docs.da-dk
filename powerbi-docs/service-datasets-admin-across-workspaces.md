@@ -2,7 +2,6 @@
 title: Styr brugen af datasæt på tværs af arbejdsområder (prøveversion) – Power BI
 description: Lær, hvordan du begrænser flowet af oplysninger i Power BI-lejeren.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/31/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 363bf9b107722b3993ed7ac43138c73da03f410a
-ms.sourcegitcommit: 7c426a5209d4fdd1360fc3d0442d57991be1984d
+ms.openlocfilehash: d1ad29bebc148d9f30e8d22240dd149787251a0a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66461781"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872573"
 ---
 # <a name="control-the-use-of-datasets-across-workspaces-preview"></a>Styr brugen af datasæt på tværs af arbejdsområder (prøveversion)
 
@@ -40,4 +39,4 @@ Som lejeradministrator kan du angive en URL-adresse for linket **Få mere at vid
 ## <a name="next-steps"></a>Næste trin
 
 - [Brug datasæt på tværs af arbejdsområder (prøveversion)](service-datasets-across-workspaces.md)
-- Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+- Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

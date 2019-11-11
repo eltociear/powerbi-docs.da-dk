@@ -2,7 +2,6 @@
 title: Brug af en alternativ mailadresse
 description: Brug af en alternativ mailadresse
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/23/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 88432f55fc8cfeefa07b66ea68437bbb23f12531
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 6549ec04d8ec47381b4639d15242e909929b52de
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64906634"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858079"
 ---
 # <a name="use-an-alternate-email-address"></a>Brug af en alternativ mailadresse
 
@@ -70,4 +69,4 @@ Power BI vælger, hvilken mail der bruges, på baggrund af følgende sekvens:
 
 1. Hvis ingen af ovenstående betingelser er til stede, bruger Power BI UPN-adressen.
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
