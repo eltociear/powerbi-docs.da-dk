@@ -2,7 +2,6 @@
 title: Administrer din datakilde – Oracle
 description: Sådan administrerer du en datagateway i det lokale miljø samt de datakilder, der hører til denne gateway.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: ac116cfb2e3f09ceab6c9f78dba33bc18e847784
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: cb7856b0b5ac84684e8d0648b91e45805218cead
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832457"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872476"
 ---
 # <a name="manage-your-data-source---oracle"></a>Administrer din datakilde – Oracle
 
@@ -29,11 +28,11 @@ Oracle Data Provider til .NET (ODP.NET) skal være installeret og konfigureret, 
 
 Til 32-bit versioner af Power BI Desktop skal du bruge følgende link til at downloade og installere 32-bit Oracle-klienten:
 
-* [32-bit Oracle Data Access Components (ODAC) med Oracle Developer Tools til Visual Studio (12.1.0.2.4)](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
+* [32-bit Oracle Data Access Components (ODAC) med Oracle Developer Tools til Visual Studio (12.1.0.2.4)](https://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
 
 Til 64-bit versioner af Power BI Desktop eller til datagatewayen i det lokale miljø skal du bruge følgende link til at downloade og installere 64-bit Oracle-klienten:
 
-* [64-bit ODAC 12.2c Release 1 (12.2.0.1.0) til Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
+* [64-bit ODAC 12.2c Release 1 (12.2.0.1.0) til Windows x64](https://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
 Når klienten er installeret, skal du konfigurere filen tnsnames.ora med de korrekte oplysninger om din database. Power BI Desktop og gatewayen forsvinder fra net_service_name, der er defineret i filen tnsnames.ora. Hvis net_service_name ikke er konfigureret, kan du ikke oprette forbindelse. Standardstien til tnsnames.ora er `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. Se flere oplysninger om, hvordan du konfigurerer tnsnames.ora-filer ved at se [Oracle: Lokale navngivningsparametre (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
 
@@ -83,7 +82,7 @@ Når du har udfyldt alt, skal du vælge **Tilføj**. Du kan nu bruge denne datak
 
 ### <a name="advanced-settings"></a>Avancerede indstillinger
 
-Du kan eventuelt konfigurere niveauet for beskyttelse af personlige oplysninger for datakilden. Denne indstilling styrer, hvordan data kan kombineres. Det bruges kun for planlagte opdateringer. Indstillingen for beskyttelse af personlige oplysninger gælder ikke for DirectQuery. Hvis du vil vide mere om niveauer for beskyttelse af personlige oplysninger, skal du se [Niveauer for beskyttelse af personlige oplysninger (Power Query)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
+Du kan eventuelt konfigurere niveauet for beskyttelse af personlige oplysninger for datakilden. Denne indstilling styrer, hvordan data kan kombineres. Det bruges kun for planlagte opdateringer. Indstillingen for beskyttelse af personlige oplysninger gælder ikke for DirectQuery. Hvis du vil vide mere om niveauer for beskyttelse af personlige oplysninger, skal du se [Niveauer for beskyttelse af personlige oplysninger (Power-forespørgsel)](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540).
 
 ![Angivelse af niveauet for beskyttelse af personlige oplysninger](media/service-gateway-onprem-manage-oracle/datasourcesettings9.png)
 
@@ -132,5 +131,5 @@ Du kan finde yderligere oplysninger om fejlfinding i forbindelse med gatewayen i
 * [Foretag fejlfinding af gateways – Power BI](service-gateway-onprem-tshoot.md)
 * [Power BI Premium](service-premium.md)
 
-Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](http://community.powerbi.com/).
+Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](https://community.powerbi.com/).
 

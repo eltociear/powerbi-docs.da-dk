@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f4043a5a8deac0596b58519183988f6ae574458e
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 4ea1b2141cf9a072f11a3a62789c7c0ec5b500a4
+ms.sourcegitcommit: a5853ef44ed52e80eabee3757bb6887fa400b75b
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70847670"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73799767"
 ---
 Der er to primære beregninger, som du kan oprette ved hjælp af DAX:
 
@@ -65,7 +65,7 @@ De obligatoriske elementer til en beregnet måling er de samme som til en beregn
 * et nyt målingsnavn
 * mindst én funktion eller ét udtryk
 
-> Videoindholdet er fra [Alberto Ferrari, SQLBI](http://www.sqlbi.com/learning-dax)
+> Videoindholdet er fra [Alberto Ferrari, SQLBI](https://www.sqlbi.com/learning-dax)
 > 
 > 
 

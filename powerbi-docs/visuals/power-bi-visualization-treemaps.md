@@ -2,7 +2,6 @@
 title: Trækort i Power BI
 description: Trækort i Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 1de5869bc5b422dc98a13316022f653f62675829
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: b70e9611b22f1df20d39cdbd338fd5b6bfe1b43d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71192653"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880735"
 ---
 # <a name="treemaps-in-power-bi"></a>Trækort i Power BI
 
@@ -67,7 +66,7 @@ Træstrukturer er et godt valg:
 
 ## <a name="prerequisite"></a>Forudsætning
 
-I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Vælg **Fil** > **Åbn** i øverste venstre afsnit af menulinjen
    
@@ -119,10 +118,10 @@ Hvis du fremhæver en **Kategori** eller **Detaljer** i en træstruktur, så kry
 
 1. Vælg enten **Kategori** eller **Kæde** i en **Kategori** i træstrukturen. Derved krydsfremhæves de andre visualiseringer på siden. Hvis du f.eks. vælger **050-Shoes**, får du vist sidste års salg af sko, som var **$16,352,432**, hvor **Fashions Direct** stod for **$2,174,185** af dette salg.
 
-   ![Skærmbillede af rapporten Store Sales Overview, der viser krydsfremhævning.](media/power-bi-visualization-treemaps/treemaphiliting.png)
+   ![Skærmbillede af rapporten Store Sales Overview, der viser tværgående fremhævning.](media/power-bi-visualization-treemaps/treemaphiliting.png)
 
 1. I cirkeldiagrammet **Sidste års salg efter kæde** krydsfiltreres træstrukturen, når du vælger udsnittet **Fashions Direct**.
-   ![GIF-demonstration af funktionen for krydsfiltrering.](media/power-bi-visualization-treemaps/treemapnoowl.gif)
+   ![GIF-demonstration af funktionen for tværgående filtrering.](media/power-bi-visualization-treemaps/treemapnoowl.gif)
 
 1. Hvis du vil administrere, hvordan diagrammer krydsfremhæver og krydsfiltrerer hinanden, skal du se [Skift, hvordan visualiseringer interagerer i en Power BI-rapport](../service-reports-visual-interactions.md).
 

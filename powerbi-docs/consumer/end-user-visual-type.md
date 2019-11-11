@@ -2,7 +2,6 @@
 title: Visualiseringstyper i Power BI til forbrugere
 description: Visualiseringstyper i Power BI-tjeneste
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/21/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: 875e154dbac063c0e4b9d5dc4208387e6d529a93
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 1670d3af200c8da672ac7034e4e15f6f460147a7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70302532"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73861315"
 ---
 # <a name="visual-types-in-power-bi"></a>Visualiseringstyper i Power BI
 Du finder visualiseringer i rapporter, på dashboards og under Spørgsmål og svar. Nogle af disse visualiseringstyper medfølger Power BI som en del af pakken, og nogle er *brugerdefinerede visualiseringer*. Brugerdefinerede visualiseringer oprettes uden for Power BI og på en måde, der gør det muligt for *rapportdesignere* at føje dem til rapporter og dashboards i Power BI. 
@@ -232,4 +231,4 @@ Når du skriver forespørgsler i naturligt sprog med Spørgsmål og svar i Power
 
 ## <a name="next-steps"></a>Næste trin
 [Interager med visualiseringer i rapporter, på dashboards og i apps](end-user-visualizations.md)    
-[Den rette visuelle reference fra sqlbi.com](http://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)
+[Den rette visuelle reference fra sqlbi.com](https://www.sqlbi.com/wp-content/uploads/videotrainings/dashboarddesign/visuals-reference-may2017-A3.pdf)

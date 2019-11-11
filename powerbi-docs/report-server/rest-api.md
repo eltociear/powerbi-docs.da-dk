@@ -3,18 +3,17 @@ title: Foretag udvikling med REST API'er til Power BI-rapportserver
 description: REST API leverer programadgang til objekterne i et katalog til Power BI-rapportserver.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/25/2018
-ms.openlocfilehash: 8f35b7a3c19751b4537a49fa8cb30f4347f080ed
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 9b8e795c4a55f9efd6fd534d92d95b36c93cf2c0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770752"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874065"
 ---
 # <a name="develop-with-the-rest-apis-for-power-bi-report-server"></a>Foretag udvikling med REST API'er til Power BI-rapportserver
 
@@ -41,7 +40,7 @@ Et anmodning/svar-par til en REST API kan opdeles i fem komponenter:
 * Valgfrie HTTP-felter til **brødteksten i anmodningsmeddelelsen** til understøttelse af URI og HTTP-handling. POST-handlinger indeholder f.eks. MIME-kodede objekter, der sendes som komplekse parametre. For POST- eller PUT-handlinger skal MIME-kodningstypen for brødteksten også angives i `Content-type`-anmodningens header. Nogle tjenester kræver, at du bruger en bestemt MIME-type, f.eks. `application/json`.
 * HTTP-felter i **svarmeddelelsens header**:
   
-  * En [HTTP-statuskode](http://www.w3.org/Protocols/HTTP/HTRESP.html), der kan være alt lige fra 2xx succeskoder til 4xx eller 5xx fejlkoder. Alternativt kan der også returneres en statuskode, der er defineret i tjenesten, som angivet i dokumentationen til API.
+  * En [HTTP-statuskode](https://www.w3.org/Protocols/HTTP/HTRESP.html), der kan være alt lige fra 2xx succeskoder til 4xx eller 5xx fejlkoder. Alternativt kan der også returneres en statuskode, der er defineret i tjenesten, som angivet i dokumentationen til API.
   * Valgfrie yderligere headerfelter, som kræves for at understøtte anmodningens svar, f.eks en `Content-type`-svarheader.
 * Valgfrie HTTP-felter til **brødteksten i svarmeddelelsen**:
   
@@ -53,7 +52,7 @@ Til en moderne REST API er der for brug for moderne API-dokumentation. REST API 
 
 ## <a name="testing-api-calls"></a>Test af API-kald
 
-[Fiddler](http://www.telerik.com/fiddler) er et værktøj til test af HTTP-anmodnings-/svarmeddelelser. Fiddler er en gratis webfejlfindingsproxy, der kan opfange dine REST-anmodninger, og som gør det lettere at diagnosticere HTTP-anmodnings-/svarmeddelelser.
+[Fiddler](https://www.telerik.com/fiddler) er et værktøj til test af HTTP-anmodnings-/svarmeddelelser. Fiddler er en gratis webfejlfindingsproxy, der kan opfange dine REST-anmodninger, og som gør det lettere at diagnosticere HTTP-anmodnings-/svarmeddelelser.
 
 ## <a name="next-steps"></a>Næste trin
 

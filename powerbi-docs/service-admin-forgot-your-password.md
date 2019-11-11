@@ -2,7 +2,6 @@
 title: Har du glemt din adgangskode til Power BI?
 description: Hvis du har glemt din adgangskode, kan du bruge et link til at anmode om nulstilling af adgangskoden.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/13/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 6b3e75b9674a8b22948bdee1b8f8b9086eb2b691
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: c4e13871e7ebf432e1478eb8d524f466bed9f0bc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075195"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873599"
 ---
 # <a name="forgot-your-password-for-power-bi"></a>Har du glemt din adgangskode til Power BI?
 
@@ -34,4 +33,4 @@ Det er vigtigt at bemærke, at dette telefonnummer ikke er nummeret til support 
 > [!NOTE]
 > Power BI yder support i den almindelige åbningstid i tidszonen EST (Eastern Standard Time). Der ydes i øjeblikket kun support på engelsk.
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

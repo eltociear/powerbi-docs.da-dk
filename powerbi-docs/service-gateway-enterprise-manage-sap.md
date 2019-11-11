@@ -2,7 +2,6 @@
 title: Administrer din datakilde – SAP HANA
 description: Sådan administrerer du en datagateway i det lokale miljø samt de datakilder, der hører til denne gateway. Denne artikel er specifik for SAP HANA.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/16/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: b3e1ea53abeff39609515b0b615f9e000432e9c6
-ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.openlocfilehash: 577f0b26052ecc5fbe5f4e5b4da624da2b6e06c4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70303186"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881740"
 ---
 # <a name="manage-your-data-source---sap-hana"></a>Administrer din datakilde – SAP HANA
 
@@ -74,5 +73,5 @@ Hvis du er angivet under fanen **Brugere** i den datakilde, der er konfigureret 
 * [Fejlfinding af datagateway i det lokale miljø](/data-integration/gateway/service-gateway-tshoot)
 * [Foretag fejlfinding af gateways – Power BI](service-gateway-onprem-tshoot.md) 
 
-Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](http://community.powerbi.com/).
+Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](https://community.powerbi.com/).
 

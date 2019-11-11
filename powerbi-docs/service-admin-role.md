@@ -2,7 +2,6 @@
 title: Beskrivelse af rollen som Power BI-administrator
 description: I denne artikel beskrives rollen som Power BI-tjenesteadministrator, og hvordan den kan bruges i din organisation.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 8b4d2382f89c48f20767cf72bc0468589c366cfe
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 900734a027a0f1af76f93709f80eec8d8e8b3108
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256429"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73856719"
 ---
 # <a name="understanding-the-power-bi-service-administrator-role"></a>Om rollen Power BI-tjenesteadministrator
 
@@ -111,4 +110,4 @@ Du kan også tildele brugere roller ved hjælp af PowerShell. Brugere administre
 [Administrer Power BI i din organisation](service-admin-administering-power-bi-in-your-organization.md)  
 [Power BI-administrationsportal](service-admin-portal.md)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

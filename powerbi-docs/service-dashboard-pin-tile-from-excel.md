@@ -2,7 +2,6 @@
 title: Sådan fastgør du et felt til et Power BI-dashboard fra Excel
 description: Fastgør et felt til et Power BI-dashboard fra Excel på OneDrive for Business. Fastgør intervaller, diagrammer, tabeller
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: l8JoB7w0zJA
 ms.service: powerbi
@@ -11,18 +10,18 @@ ms.topic: conceptual
 ms.date: 05/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 273cfbd86573a5eceaf9705ac19b0f7928b59176
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d0f258af383327fb25c8f0e896677bbd19eca6c4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61138262"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877420"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-excel"></a>Fastgør et felt til et Power BI-dashboard fra Excel
 Før du kan fastgøre et felt fra din Excel-projektmappe, skal du oprette forbindelse mellem denne projektmappe og Power BI-tjenesten (app.powerbi.com). Når der oprettes forbindelse til en projektmappe, overføres der grundlæggende set en sammenkædet skrivebeskyttet version af denne projektmappe til Power BI-tjenesten, så du kan fastgøre intervaller til dashboards. Du kan endda fastgøre et helt regneark til et dashboard.  
 Hvis en projektmappe er blevet delt med dig, kan du få vist de felter, der er fastgjort af ejeren, men ikke selv oprette nogen felter i dashboardet. 
 
-Du kan finde detaljerede oplysninger om, hvordan Excel og Power BI arbejder sammen, under [Hent data fra Excel-projektmappefiler](http://go.microsoft.com/fwlink/?LinkID=521962).
+Du kan finde detaljerede oplysninger om, hvordan Excel og Power BI arbejder sammen, under [Hent data fra Excel-projektmappefiler](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 Se Will demonstrere flere metoder til at importere data fra, og oprette forbindelse til, Excel-projektmapper.
 
@@ -81,12 +80,12 @@ Hvis du vælger et felt til projektmappen, åbnes den sammenkædede projektmappe
  ![video](media/service-dashboard-pin-tile-from-excel/pin-from-excel.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
-Funktioner, der ikke understøttes: Power BI bruger Excel Services til at hente felterne i projektmappen. Eftersom nogle funktioner fra Excel ikke understøttes i Excel Services REST API, vil de derfor ikke kunne ses på felter i Power BI. Eksempel: Minidiagrammer, betinget formatering angivet via ikoner og klokkeslætsudsnit. Se en fuldstændig liste over ikke-understøttede funktioner i [Ikke-understøttede funktioner i Excel Services REST API](http://msdn.microsoft.com/library/office/ff394477.aspx)
+Funktioner, der ikke understøttes: Power BI bruger Excel Services til at hente felterne i projektmappen. Eftersom nogle funktioner fra Excel ikke understøttes i Excel Services REST API, vil de derfor ikke kunne ses på felter i Power BI. Eksempel: Minidiagrammer, betinget formatering angivet via ikoner og klokkeslætsudsnit. Se en fuldstændig liste over ikke-understøttede funktioner i [Ikke-understøttede funktioner i Excel Services REST API](https://msdn.microsoft.com/library/office/ff394477.aspx)
 
 ## <a name="next-steps"></a>Næste trin
 [Del et dashboard, der indeholder links til en Excel-projektmappe](service-share-dashboard-that-links-to-excel-onedrive.md)
 
 [Hent data fra Excel-projektmapper](service-excel-workbook-files.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

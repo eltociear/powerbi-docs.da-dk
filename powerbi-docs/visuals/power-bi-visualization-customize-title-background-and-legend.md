@@ -2,7 +2,6 @@
 title: Introduktion til formatering af Power BI-visualiseringer
 description: Tilpas visualiseringens titel, baggrund og forklaring
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6228ed70dd78ffca6cd3c8803518b2b27674576f
-ms.sourcegitcommit: 1c96b65a03ec0a0612e851dd58c363f4d56bca38
+ms.openlocfilehash: 011e2b6d3bf5cc998f7db76e96536d2ddab09888
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389930"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880861"
 ---
 # <a name="customize-visualization-titles-legends-and-backgrounds"></a>Tilpas visualiseringernes titler, forklaringer og baggrunde
 
@@ -156,7 +155,7 @@ Her er en liste over de visualiseringer og tilpasningsindstillinger, der er tilg
 | Udsnit | ja | ja | i/t |
 | Tabel | ja | ja | i/t |
 | Tekstfelt | nej | ja | i/t |
-| Treemap | ja | ja | ja |
+| Træstruktur | ja | ja | ja |
 | Vandfaldsdiagram | ja | ja | ja |
 
 ## <a name="next-steps"></a>Næste trin
@@ -167,4 +166,4 @@ Her er en liste over de visualiseringer og tilpasningsindstillinger, der er tilg
 
 - [Grundlæggende begreber for forbrugere af Power BI-tjenesten](../consumer/end-user-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

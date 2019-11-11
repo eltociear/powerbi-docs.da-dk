@@ -6,17 +6,16 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 author: Minewiskan
 ms.author: owend
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 08/10/2017
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 51efec6c78dbb29b9c3dc760284c7bb3c8711bdc
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 00b7c98236f37505fbb0ddec81a45b65bf3e3ee6
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769923"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871180"
 ---
 # <a name="sql-server-analysis-services-live-data-in-power-bi"></a>Dynamiske SQL Server Analysis Services-data i Power BI
 
@@ -63,4 +62,4 @@ Hvis du fastgør visuelle elementer fra en rapport til dashboardet, opdateres de
 * [Administrer Analysis Services-datakilder](service-gateway-enterprise-manage-ssas.md)  
 * [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

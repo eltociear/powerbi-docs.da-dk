@@ -2,19 +2,18 @@
 title: Vejledning til Power BI
 description: Vejledningsdokumentation indeholder anbefalede fremgangsmåder, når du bruger Power BI.
 author: guyinacube
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/27/2019
 ms.author: asaxton
-ms.openlocfilehash: 3e8a4a92ce3a1e5cbc9459732cdd12225ae901e1
-ms.sourcegitcommit: 0687908938e4c3b68401fd511ec1c28fb54ddeb3
+ms.openlocfilehash: e3aeff47e585d9a54edf46f7001f4686e9a76c3a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71691251"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875558"
 ---
 # <a name="guidance-for-power-bi"></a>Vejledning til Power BI
 
@@ -37,6 +36,6 @@ Her kan du finde vejledningen og anbefalede fremgangsmåder til Power BI. Vejled
 
 | Vejledning | Beskrivelse |
 | --- | --- |
-| [Bedste fremgangsmåder i forbindelse med dataflows](/service-dataflows-best-practices.md) | Beskriver de bedste fremgangsmåder i forbindelse med dataflows i Power BI. |
+| [Bedste fremgangsmåder i forbindelse med dataflows](../service-dataflows-best-practices.md) | Beskriver de bedste fremgangsmåder i forbindelse med dataflows i Power BI. |
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

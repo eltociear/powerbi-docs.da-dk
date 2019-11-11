@@ -3,18 +3,17 @@ title: Understøttede datakilder for sideinddelte rapporter i Power BI
 description: I denne artikel får du mere at vide om understøttede datakilder for sideinddelte rapporter i Power BI-tjenesten, og hvordan du opretter forbindelse til datakilder i Azure SQL Database.
 author: onegoodsausage
 ms.author: andremi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 07/19/2019
-ms.openlocfilehash: f0cc7563fc59a6c1ceeceefcf4b65b0cc1a3aa80
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: fcc6e7880a3f27c6b35fe2192e76a0b2cc82abd0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968662"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874863"
 ---
 # <a name="supported-data-sources-for-power-bi-paginated-reports"></a>Understøttede datakilder for sideinddelte rapporter i Power BI
 
@@ -27,7 +26,7 @@ Følgende liste over datakilder understøttes i det oprindelige miljø i sideind
 | Datakilde | Godkendelse | Noter |
 | --- | --- | --- |
 | Azure SQL Database <br>Azure SQL Data Warehouse | Basic, enkeltlogon (SSO), OAuth2 |   |
-| Administreret forekomst af Azure SQL | Basic | via det offentlige slutpunkt ved hjælp af Azure SQL Database-udvidelsen  |
+| Administreret forekomst af Azure SQL | Grundlæggende | via det offentlige slutpunkt ved hjælp af Azure SQL Database-udvidelsen  |
 | Azure Analysis Services | SSO, OAuth2 |   |
 | Power BI-datasæt | SSO | Power BI Premium-datasæt og datasæt, der ikke er Premium |
 | Power BI Premium-datasæt (XMLA) | SSO |   |
@@ -74,4 +73,4 @@ Her er de understøttede godkendelsestyper for Azure SQL Database-datakilder:
 
 [Publicer en sideinddelt rapport i Power BI-tjenesten](paginated-reports-view-power-bi-service.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -2,19 +2,18 @@
 title: Indstil databeskeder i Power BI-mobilapps
 description: Få at vide, hvordan du indstiller beskeder i Power BI-mobilappene til at notificere dig, når data på et dashboard ændres ud over de grænser, du har indstillet.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 12/18/2017
 ms.author: mshenhav
-ms.openlocfilehash: 65e6414cb31c2b8234bb1f5426c7bff295263308
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: c843a3ef8ddfde591dec27ea523cb73857d1a289
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61381055"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870101"
 ---
 # <a name="set-data-alerts-in-the-power-bi-mobile-apps"></a>Indstil databeskeder i Power BI-mobilapps
 Gælder for:
@@ -168,5 +167,5 @@ Datakilder er ofte indstillet til at blive opdateret dagligt, selvom nogle opdat
 ## <a name="next-steps"></a>Næste trin
 * [Administrer dine beskeder i Power BI-tjenesten](../../service-set-data-alerts.md)
 * [Power BI Mobile Meddelelsescenter](mobile-apps-notification-center.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

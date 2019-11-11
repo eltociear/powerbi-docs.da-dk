@@ -2,7 +2,6 @@
 title: Brug rapporttemaer i Power BI Desktop
 description: Få mere at vide om, hvordan du bruger en brugerdefineret farvepalet og anvender den for en hel rapport i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 64be68398ffa2ab8323307b45b5bff09ec511090
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: c97316b0509f7d243befa5cfe5310aa0f5826335
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327843"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880002"
 ---
 # <a name="use-report-themes-in-power-bi-desktop"></a>Brug rapporttemaer i Power BI Desktop
 Med **rapporttemaer** kan du anvende designændringer i hele rapporten, f.eks. bruge virksomhedsfarver, ændre ikonsæt eller anvende ny visuel standardformatering. Når du anvender et **rapporttema**, bruges farver og formatering fra det valgte tema for alle visuelle elementer i rapporten. Der gælder nogle få undtagelser, som er beskrevet senere i denne artikel.
@@ -407,7 +406,7 @@ I følgende tabel defineres værdier for *cardName*. Den første værdi i hver c
 | **cardName** |
 | --- |
 | axis: Målerakse |
-| breakdown: Oversigt |
+| breakdown: Udspecificering |
 | bubbles: Bobler |
 | calloutValue: Billedforklaringsværdi |
 | card: Kort |
@@ -443,7 +442,7 @@ I følgende tabel defineres værdier for *cardName*. Den første værdi i hver c
 | rowHeaders: Rækkeoverskrifter |
 | selection: Kontrolelementer til markering |
 | sentimentColors: Farver for synspunkt |
-| shape: Figur |
+| shape: Form |
 | slider: Skyder |
 | status: Farvekodning |
 | subTotals: Subtotaler |

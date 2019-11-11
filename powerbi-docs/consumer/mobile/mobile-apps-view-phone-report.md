@@ -2,19 +2,18 @@
 title: Få vist Power BI-rapporter, der er optimeret til din telefon
 description: Læs om, hvordan du kan interagere med rapportsider, der er optimeret til visning i Power BI-telefonapps.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/22/2019
 ms.author: mshenhav
-ms.openlocfilehash: 79ca47f83bb39ab9d6df141b5a26dcb54e00c72c
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: f8dba41a15390e4b52227c7daaa603daf7c08939
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "65100956"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870522"
 ---
 # <a name="view-power-bi-reports-optimized-for-your-phone"></a>Få vist Power BI-rapporter, der er optimeret til din telefon
 
@@ -134,5 +133,5 @@ Rapportforfattere kan [definere detaljeadgang](https://docs.microsoft.com/power-
 * [Opret rapporter, der er optimeret til Power BI-telefonapps](../../desktop-create-phone-report.md)
 * [Opret en telefonvisning af et dashboard i Power BI](../../service-create-dashboard-mobile-phone-view.md)
 * [Opret dynamiske visualiseringer, der er optimeret til alle størrelser](../../visuals/desktop-create-responsive-visuals.md)
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

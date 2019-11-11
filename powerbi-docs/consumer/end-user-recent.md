@@ -2,7 +2,6 @@
 title: Vis indhold, du har besøgt for nylig, i Power BI-tjenesten
 description: dokumentation for nyligt indhold i Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/24/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: bae340f89b10253920f8e22d02b4b78c23fa2dd9
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 80c11aef2e985304c824fe1948a6bec867e6cb33
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256250"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862435"
 ---
 # <a name="recent-content-in-the-power-bi-service"></a>**Seneste** indhold i Power BI-tjenesten
 Seneste indhold er de seneste elementer, du har fået vist i Power BI-tjenesten, op til maksimalt 20 elementer.  Dette omfatter: dashboards, rapporter, apps og projektmapper.
@@ -53,5 +52,5 @@ De handlinger, der er tilgængelige for dig, afhænger af de indstillinger, *des
 ## <a name="next-steps"></a>Næste trin
 [Power BI-tjenesteapps](end-user-apps.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

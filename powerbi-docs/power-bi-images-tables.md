@@ -2,7 +2,6 @@
 title: Vis billeder i en tabel eller matrix i en rapport
 description: I Power BI Desktop kan du oprette en kolonne med links til billeder. Derefter skal du i enten Power BI Desktop eller Power BI-tjenesten føje disse links til en rapporttabel, en matrix, et udsnit eller et kort med flere rækker for at få vist billedet.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: cbb04057c8065e998068dd6520539c830a659f72
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: 95b1dc1be3421f19fa8220629ca2003469658480
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715564"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874492"
 ---
 # <a name="display-images-in-a-table-matrix-or-slicer-in-a-report"></a>Vis billeder i en tabel, en matrix eller et udsnit i en rapport
 
@@ -48,5 +47,5 @@ En god måde at forbedre dine rapporter på er ved at føje billeder til dem. St
 
 [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

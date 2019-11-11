@@ -2,7 +2,6 @@
 title: Almindelige forespørgselsopgaver i Power BI Desktop
 description: Almindelige forespørgselsopgaver i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: dc6aa42691c7caa2593b28e441f96985b1e3bcda
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 2b1cf2a7f10fd7249dcdec26b5c5f5d12ff15aca
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65239458"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878661"
 ---
 # <a name="common-query-tasks-in-power-bi-desktop"></a>Almindelige forespørgselsopgaver i Power BI Desktop
 Når du arbejder i vinduet **Forespørgselseditor** i Power BI Desktop, er der nogle få opgaver, der udføres jævnligt. Dette dokument beskriver disse opgaver og indeholder links til flere oplysninger. 
@@ -31,9 +30,9 @@ Følgende almindelige forespørgselsopgaver vises her:
 
 Vi vil bruge dataforbindelser til at udføre disse opgaver. Du kan hente eller oprette forbindelse til disse data, hvis du vil gennemgå opgaverne selv.
 
-Den første dataforbindelse er en Excel-projektmappe, som du kan downloade fra [dette link](http://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx). Den anden er en webressource, som også bruges i andet indhold i hjælpen til Power BI Desktop, og som kan åbnes her:
+Den første dataforbindelse er en Excel-projektmappe, som du kan downloade fra [dette link](https://download.microsoft.com/download/5/7/0/5701F78F-C3C2-450C-BCCE-AAB60C31051D/PBI_Edu_ELSi_Enrollment_v2.xlsx). Den anden er en webressource, som også bruges i andet indhold i hjælpen til Power BI Desktop, og som kan åbnes her:
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 De trin, der er nødvendige for at oprette forbindelse til begge disse datakilder, er, hvor de almindelige forespørgselsopgaver begynder.
 
@@ -142,7 +141,7 @@ Alle anvendte trin for hver forespørgsel bevares som tekst i Forespørgselsedit
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitorbutton.png)
 
-Her kan du se, hvordan **Avanceret editor** ser ud med de forespørgselstrin, der er tilknyttet den viste forespørgsel **USA\_StudentEnrollment**. Disse trin oprettes på det formelsprog i Power-forespørgsel, som ofte kaldes **M**. Du kan finde flere oplysninger i [Få mere at vide om formler i Power-forespørgsel](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). Hvis du vil se selve sprogspecifikationen, skal du downloade [sprogspecifikationen for Microsoft Power-forespørgsel til Excel-formler](http://go.microsoft.com/fwlink/?linkid=320633).
+Her kan du se, hvordan **Avanceret editor** ser ud med de forespørgselstrin, der er tilknyttet den viste forespørgsel **USA\_StudentEnrollment**. Disse trin oprettes på det formelsprog i Power-forespørgsel, som ofte kaldes **M**. Du kan finde flere oplysninger i [Få mere at vide om formler i Power-forespørgsel](https://support.office.com/article/Learn-about-Power-Query-formulas-6bc50988-022b-4799-a709-f8aafdee2b2f). Hvis du vil se selve sprogspecifikationen, skal du downloade [sprogspecifikationen for Microsoft Power-forespørgsel til Excel-formler](/powerquery-m/excel-workbook).
 
 ![](media/desktop-common-query-tasks/queryformulas_advancededitor.png)
 

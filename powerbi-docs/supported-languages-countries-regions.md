@@ -2,7 +2,6 @@
 title: Understøttede sprog og lande/områder til Power BI
 description: Se listen over understøttede sprog og lande/områder til Power BI-tjenesten, Power BI Desktop og Power BI-dokumentationen.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/03/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: efb2ee5ef0ed09cbca1a2bebf6ab3a0f8908efb8
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 951a05247a02e379c56c45176edb622e683af413
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968688"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876907"
 ---
 # <a name="supported-languages-and-countriesregions-for-power-bi"></a>Understøttede sprog og lande/områder til Power BI
 
@@ -126,7 +125,7 @@ Du kan få Power BI Desktop på to måder: Du kan downloade det som et separat i
 > Hvis du installerer den version af Power BI Desktop, der er optimeret til Power BI-rapportserver, vælger du sproget, når du downloader den. Se [Installer Power BI Desktop optimeret til Power BI-rapportserver](report-server/install-powerbi-desktop.md) for at få flere oplysninger.
 
 ### <a name="choose-a-language-for-power-bi-desktop"></a>Vælg et sprog til Power BI Desktop 
-1. Installér Power BI Desktop [fra Windows Store](http://aka.ms/pbidesktopstore) eller som et [separat installationsprogram](http://aka.ms/pbiSingleInstaller).
+1. Installér Power BI Desktop [fra Windows Store](https://aka.ms/pbidesktopstore) eller som et [separat installationsprogram](https://aka.ms/pbiSingleInstaller).
 2. Søg efter **Windows-indstillinger** på din computer for at ændre sproget. 
 3. Vælg **Tid og sprog**.
    
@@ -195,6 +194,6 @@ Hjælp er lokaliseret på disse 10 sprog:
 
 ## <a name="next-steps"></a>Næste trin
 * Bruger du en af Power BI-mobilapperne? Se [Understøttede sprog i Power BI-mobilapperne](consumer/mobile/mobile-apps-supported-languages.md) for at få flere oplysninger.
-* Har du spørgsmål? Prøv at spørge [Power BI-community'et](http://community.powerbi.com/).
+* Har du spørgsmål? Prøv at spørge [Power BI-community'et](https://community.powerbi.com/).
 * Har du stadig problemer? Gå til [supportsiden for Power BI](https://powerbi.microsoft.com/support/).
 

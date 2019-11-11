@@ -2,7 +2,6 @@
 title: Opdater et datasæt, der er oprettet via en Power BI Desktop-fil – lokalt
 description: Opdater et datasæt, der er oprettet via en Power BI Desktop-fil på et lokalt drev
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/04/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 58727627656a3cb22ad7fce626d0c7e6ce746440
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: b96163b433998ad92860ad6c234aac4126cf5486
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816498"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874368"
 ---
 # <a name="refresh-a-dataset-created-from-a-power-bi-desktop-file-on-a-local-drive"></a>Opdater et datasæt, der er oprettet via en Power BI Desktop-fil på et lokalt drev
 
@@ -68,5 +67,5 @@ Nogle gange går opdateringen af data muligvis ikke som forventet. Dette skyldes
 - [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)
 - [Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

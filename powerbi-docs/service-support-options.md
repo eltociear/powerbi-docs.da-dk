@@ -2,19 +2,18 @@
 title: Power BI Pro- og Power BI Premium-supportmuligheder
 description: Denne artikel beskrives de supportmuligheder, der er tilgængelige for kunder med Power BI Pro og Power BI Premium.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/17/2019
 ms.author: mblythe
-ms.openlocfilehash: df14bf127ed6935f9bec445709153a87088f8af0
-ms.sourcegitcommit: 57e45f291714ac99390996a163436fa1f76db427
+ms.openlocfilehash: 4cd007467b2ebd7f08dbb9d9bd3447194aad1f37
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71305825"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871401"
 ---
 # <a name="power-bi-pro-and-power-bi-premium-support-options"></a>Power BI Pro- og Power BI Premium-supportmuligheder
 
@@ -55,4 +54,4 @@ Den giver dig en fuldstændig oversigt over Power BI-funktioner og -egenskaber. 
 
   - **WorkshopPLUS - Data AI: Avanceret dataanalyse med Power BI** Dette kursus giver dig viden til at forstå og implementere de vigtigste principper i forbindelse med datamodellering i Power BI ved hjælp af værktøjer som f.eks Power BI Desktop og den tilhørende cloudtjeneste til publicering og anvendelse af BI-aktiver. Dette kursus dækker derefter de grundlæggende regler for udvikling af rapporter, integreret analyse i Power BI til integration af indholdet i brugerdefinerede programmer, dashboards i realtid og avancerede analyser, der omfatter datavidenskab og udvikling i Power BI.
 
-Kontakt din tekniske account manager hos Microsoft for at få flere oplysninger. Hvis du ikke allerede har en Microsoft Premier Support-kontrakt, kan du få mere at vide på [Premier Support](https://support.microsoft.com/en-us/premier).
+Kontakt din tekniske account manager hos Microsoft for at få flere oplysninger. Hvis du ikke allerede har en Microsoft Premier Support-kontrakt, kan du få mere at vide på [Premier Support](https://support.microsoft.com/premier).

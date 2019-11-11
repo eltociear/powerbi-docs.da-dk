@@ -2,7 +2,6 @@
 title: Brug detaljeadgang i Power BI Desktop
 description: Lær, hvordan du kan analysere data på en ny rapportside i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 7c9d400b196366609caebe9f79bb9a8130a4ad11
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: e093788683d10bc11c09d63ba327611a67f311c0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375181"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879906"
 ---
 # <a name="use-drillthrough-in-power-bi-desktop"></a>Brug detaljeadgang i Power BI Desktop
 Med **detaljeadgang** i **Power BI Desktop** kan du oprette en side i rapporten, som fokuserer på et bestemt objekt – f.eks. en leverandør, en kunde eller en producent. Brugerne kan højreklikke på et datapunkt på andre rapportsider. Derefter de kan få detaljeadgang til den fokuserede side for at få oplysninger, der er filtreret til denne kontekst.
@@ -81,6 +80,6 @@ Så nemt er det at bruge **detaljeadgang** i dine rapporter. Det kan give dig en
 
 Du vil måske også være interesseret i følgende artikler:
 
-* [Brug detaljeadgang på tværs af-rapport i Power BI Desktop](desktop-cross-report-drill-through.md)
+* [Brug tværgående detaljeadgang i rapport i Power BI Desktop](desktop-cross-report-drill-through.md)
 * [Brug af udsnitsværktøjer i Power BI Desktop](visuals/power-bi-visualization-slicers.md)
 

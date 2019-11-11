@@ -2,7 +2,6 @@
 title: Hent data fra filer med kommaseparerede værdier (.CSV)
 description: Få mere at vide om, hvordan du kan hente data fra CSV-filer til Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,17 +9,17 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1a150c2cb4eb819b78b2b08a492087eb98bf6363
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: a33c8a45f4f32efb0a47df82b8af23d42c281ae9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513322"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73855537"
 ---
 # <a name="get-data-from-comma-separated-value-csv-files"></a>Hent data fra filer med kommaseparerede værdier (.CSV)
 ![](media/service-comma-separated-value-files/csv_icon.png)
 
-Filer med kommaseparerede værdier, også kaldet CSV-filer, er simple tekstfiler med rækker med data, hvor de enkelte værdier er adskilt af semikolon. Disse filtyper kan indeholde meget store mængder data i en relativt lille filstørrelse, hvilket gør dem til en ideel datakilde for Power BI. Du kan downloade et eksempel på en .CSV-fil [her](http://go.microsoft.com/fwlink/?LinkID=619356).
+Filer med kommaseparerede værdier, også kaldet CSV-filer, er simple tekstfiler med rækker med data, hvor de enkelte værdier er adskilt af semikolon. Disse filtyper kan indeholde meget store mængder data i en relativt lille filstørrelse, hvilket gør dem til en ideel datakilde for Power BI. Du kan downloade et eksempel på en .CSV-fil [her](https://go.microsoft.com/fwlink/?LinkID=619356).
 
 Hvis du har en .CSV-fil, skal du hente den ind på dit Power BI-websted som et datasæt, hvor du så kan begynde at udforske dine data, oprette nogle dashboards og dele din indsigt med andre.
 

@@ -2,7 +2,6 @@
 title: Brug sammenlægninger i Power BI Desktop
 description: Udfør interaktiv analyse af big data i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/07/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 54264a645160542d7bda6a964164af65bfa45dfd
-ms.sourcegitcommit: fe8a25a79f7c6fe794d1a30224741e5281e82357
+ms.openlocfilehash: ab84795ff5d140f23f19184bbc40e91133854f1f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68325175"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876728"
 ---
 # <a name="aggregations-in-power-bi-desktop"></a>Sammenlægninger i Power BI Desktop
 
@@ -60,7 +59,7 @@ Denne model er vist på det følgende billede.
 ![sammenlægningstabel i en model](media/desktop-aggregations/aggregations_03.jpg)
 
 > [!NOTE]
-> Tabellen **Sales Agg** er en almindelig tabel, så den er fleksibel nok til at kunne indlæses på flere forskellige måder. Eksempelvis kan sammenlægning udføres i kildedatabasen ved hjælp af ETL/ELT-processer eller ved hjælp af [M-udtrykket](https://msdn.microsoft.com/query-bi/m/power-query-m-reference) for tabellen. Den kan bruge lagringstilstanden Import med eller uden [trinvis opdatering i Power BI Premium](service-premium-incremental-refresh.md), eller det kan være DirectQuery og optimeret til hurtige forespørgsler ved hjælp af [kolonnelagerindekser](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview). Denne fleksibilitet muliggør balancerede arkitekturer, der fordeler mængden af forespørgsler for at undgå flaskehalse.
+> Tabellen **Sales Agg** er en almindelig tabel, så den er fleksibel nok til at kunne indlæses på flere forskellige måder. Eksempelvis kan sammenlægning udføres i kildedatabasen ved hjælp af ETL/ELT-processer eller ved hjælp af [M-udtrykket](/powerquery-m/power-query-m-function-reference) for tabellen. Den kan bruge lagringstilstanden Import med eller uden [trinvis opdatering i Power BI Premium](service-premium-incremental-refresh.md), eller det kan være DirectQuery og optimeret til hurtige forespørgsler ved hjælp af [kolonnelagerindekser](https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview). Denne fleksibilitet muliggør balancerede arkitekturer, der fordeler mængden af forespørgsler for at undgå flaskehalse.
 
 ### <a name="storage-mode"></a>Lagertilstand 
 Lad os fortsætte med det eksempel, vi bruger. Vi angiver lagringstilstanden for **Sales Agg** til **Import** for at fremskynde forespørgsler.
@@ -94,7 +93,7 @@ Det eneste tilfælde, hvor en relation *på tværs af kilder* anses for at være
 Se afsnittet herunder om sammenlægninger baseret på kolonner af typen Gruppér efter for at få mere at vide om sammenlægningsforekomster *på tværs af kilder*, der ikke er afhængige af relationer.
 
 ### <a name="aggregation-tables-are-not-addressable"></a>Sammenlægningstabeller er ikke adresserbare
-Brugere med skrivebeskyttet adgang til datasættet kan ikke forespørge på sammenlægningstabeller. Dette forhindrer sikkerhedsproblemer, når de bruges sammen med sikkerhed på rækkeniveau. Brugere og forespørgsler refererer til detaljetabellen, ikke sammenlægningstabellen. De behøver ikke vide, at sammenlægningstabellen eksisterer.
+Brugere med skrivebeskyttet adgang til datasættet kan ikke forespørge på sammenlægningstabeller. Dette forhindrer sikkerhedsproblemer, når de bruges sammen med sikkerhed på rækkeniveau. Brugere og forespørgsler refererer til tabellen med detaljer, ikke sammenlægningstabellen. De behøver ikke vide, at sammenlægningstabellen eksisterer.
 
 Derfor bør tabellen **Sales Agg** være skjult. Hvis den ikke er det, vil dialogboksen Administrer sammenlægninger angive den til at være skjult, når der klikkes på knappen Anvend alle.
 

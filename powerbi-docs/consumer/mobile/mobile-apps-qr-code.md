@@ -2,19 +2,18 @@
 title: Scan en Power BI QR-kode fra din mobilenhed
 description: QR-koder i Power BI kan forbinde noget i den virkelige verden direkte med relaterede BI-oplysninger i Power BI-mobilappen til iPhone-telefoner og Android-enheder.
 author: KesemSharabi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/13/2018
 ms.author: mshenhav
-ms.openlocfilehash: 69c0e5279389c186471aa0a6068d88917cf6fc65
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: ba810bf416a913ddb41ab02c0afe7373e5c107f7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70236756"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879195"
 ---
 # <a name="scan-a-power-bi-qr-code-from-your-mobile-device"></a>Scan en Power BI QR-kode fra din mobilenhed
 Gælder for:
@@ -50,7 +49,7 @@ Hvis din kollega ikke har delt dashboardet eller rapporten med dig, kan du anmod
 
 ### <a name="scan-a-qr-code-from-an-external-scanner-on-your-iphone"></a>Scan en QR-kode fra en ekstern scanner på din iPhone
 1. Brug den scanner, du har installeret på din telefon, og peg på den relevante Power BI QR-kode for at få direkte adgang til feltet eller rapporten. 
-2. Hvis du ikke har installeret Power BI-appen, omdirigeres du til [Apple App Store](http://go.microsoft.com/fwlink/?LinkId=522062), hvor du kan downloade appen til din iPhone.
+2. Hvis du ikke har installeret Power BI-appen, omdirigeres du til [Apple App Store](https://go.microsoft.com/fwlink/?LinkId=522062), hvor du kan downloade appen til din iPhone.
 
 ## <a name="scan-a-power-bi-qr-code-on-your-android-device-with-the-power-bi-scanner"></a>Scan en Power BI QR-kode på din Android-enhed med Power BI-scanneren
 1. Åbn den globale navigationsknap ![](media/mobile-apps-qr-code/power-bi-android-global-nav-icon.png) øverst til venstre i Power BI-mobilappen. 
@@ -67,12 +66,12 @@ Hvis din kollega ikke har delt dashboardet eller rapporten med dig, kan du anmod
 
 ### <a name="scan-a-qr-code-from-an-external-scanner-on-your-android-device"></a>Scan en QR-kode fra en ekstern scanner på din Android-enhed
 1. Brug den scanner, du har installeret på din Android-enhed, og peg på den relevante Power BI QR-kode for at få direkte adgang til feltet eller rapporten. 
-2. Hvis du ikke har installeret Power BI-appen, omdirigeres du til [Google Play Butik](http://go.microsoft.com/fwlink/?LinkID=544867), hvor du kan downloade appen. 
+2. Hvis du ikke har installeret Power BI-appen, omdirigeres du til [Google Play Butik](https://go.microsoft.com/fwlink/?LinkID=544867), hvor du kan downloade appen. 
 
 ## <a name="next-steps"></a>Næste trin
 * [Opret forbindelse til Power BI-data fra den virkelige verden](mobile-apps-data-in-real-world-context.md) med mobilappen
 * [Opret en QR-kode for et felt i Power BI-tjenesten](../../service-create-qr-code-for-tile.md)
 * [Opret en QR-kode for en rapport i Power BI-tjenesten](../../service-create-qr-code-for-report.md)
 * Du kan også [scanne en QR-kode med Power BI til Mixed Reality-appen](mobile-mixed-reality-app.md).
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

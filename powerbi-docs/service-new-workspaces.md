@@ -2,7 +2,6 @@
 title: Organiser arbejde i nye arbejdsområder i Power BI
 description: Få mere at vide om de nye arbejdsområder, der er samlinger af dashboards og rapporter, som er udviklet til at levere vigtige målepunkter for din organisation.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/30/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 15f0ce3910261ed2902603ab7fb3f07f8b695d4c
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 8ff32c2559570514f775d15d7da3f787ab85970a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020678"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872051"
 ---
 # <a name="organize-work-in-the-new-workspaces-in-power-bi"></a>Organiser arbejde i nye arbejdsområder i Power BI
 
@@ -102,9 +101,9 @@ Vi har givet nogle af funktionerne i de nye arbejdsområder et nyt design. Her e
 - Du kan forbruge en organisationsindholdspakke ud fra et klassisk arbejdsområde. Du kan ikke forbruge en fra nye arbejdsområder.
 
 ## <a name="workspace-contact-list"></a>Liste over arbejdsområdekontakter
-Den nye **kontaktlistefunktion** gør det muligt at angive, hvilke brugere der modtager en meddelelse om de problemer, der opstår i arbejdsområdet. Som standard får alle brugere eller grupper, der er angivet som arbejdsområdeadministrator besked, men du kan tilpasse listen. Brugere eller grupper, der er angivet på listen over kontakter, vises i brugergrænsefladen for at hjælpe brugerne med at få hjælp i forbindelse med arbejdsområdet. 
+Den nye **kontaktlistefunktion** gør det muligt at angive, hvilke brugere der modtager en meddelelse om de problemer, der opstår i arbejdsområdet. Som standard får alle brugere eller grupper, der er angivet som arbejdsområdeadministrator besked, men du kan tilpasse listen. Brugere eller grupper, der er angivet på listen over kontaktpersoner, vises i brugergrænsefladen for at hjælpe brugerne med at få hjælp i forbindelse med arbejdsområdet. 
 
-Læs mere om [angivelse af listen over kontakter i arbejdsområdet](service-create-the-new-workspaces.md#workspace-contact-list).
+Læs mere om [angivelse af listen over kontaktpersoner i arbejdsområdet](service-create-the-new-workspaces.md#workspace-contact-list).
 
 ## <a name="workspace-onedrive"></a>Arbejdsområde for OneDrive
 Funktionen Arbejdsområde for OneDrive giver dig mulighed for at konfigurere en Office 365-gruppe, hvis SharePoint-dokumentbiblioteks fillagring er tilgængelig for arbejdsområdebrugere. Gruppen skal være oprettet uden for Power BI. 
@@ -162,4 +161,4 @@ Ja. Da vi understøtter begge typer arbejdsområder samtidig, fortsætter vi med
 * [Opret nye arbejdsområder i Power BI](service-create-the-new-workspaces.md)
 * [Opret klassiske arbejdsområder](service-create-workspaces.md)
 * [Installér og brug apps i Power BI](service-create-distribute-apps.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

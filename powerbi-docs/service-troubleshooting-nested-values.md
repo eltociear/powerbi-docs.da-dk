@@ -2,7 +2,6 @@
 title: Fejlfinding af indlejrede værdier, der returneres som tekst i Power BI-tjenesten
 description: Få mere at vide om, hvordan du løser fejl med indlejrede værdier, der konverteres til en streng, når du bruger forkerte indstillinger for beskyttelse af personlige oplysninger for datakilden
 author: cpopell
-manager: kfile
 ms.reviewer: ''
 ms.custom: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 6/4/2019
 ms.author: gepopell
 LocalizationGroup: Reports
-ms.openlocfilehash: 61181f9317718b6a4fb1cd73a767e4002b5b27f5
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: ab40ca9c415dacf52f4d82eb2c157d57aef92f93
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72544255"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871275"
 ---
 # <a name="troubleshooting-nested-values-returned-as-text-in-power-bi-service"></a>Fejlfinding af indlejrede værdier, der returneres som tekst i Power BI-tjenesten
 
@@ -24,7 +23,7 @@ ms.locfileid: "72544255"
 
 Tidligere har der været tilfælde, hvor en rapport i Power BI opdateres fint i Desktop, men mislykkes i Power BI-tjenesten med en fejl såsom "Vi kan ikke konvertere værdien "[Tabel]" til typen Tabel". En af årsagerne til denne fejl er, at når Data Privacy Firewall gemmer en datakilde i en buffer, konverteres indlejrede værdier, der ikke er skalar (f.eks. tabeller, poster, lister og funktioner), automatisk til tekstværdier (såsom "[Tabel]" eller "[Post]").
 
-Nu, hvor Power BI-tjenesten understøtter indstilling af niveauer for beskyttelse af personlige oplysninger (eller komplet deaktivering af Firewall), kan sådanne fejl undgås ved [at konfigurere indstillingerne for beskyttelse af personlige oplysninger for datakilden](https://powerbi.microsoft.com/en-us/blog/privacy-levels-for-cloud-data-sources/) i Power BI-tjenesten, så de ikke er private.
+Nu, hvor Power BI-tjenesten understøtter indstilling af niveauer for beskyttelse af personlige oplysninger (eller komplet deaktivering af Firewall), kan sådanne fejl undgås ved [at konfigurere indstillingerne for beskyttelse af personlige oplysninger for datakilden](https://powerbi.microsoft.com/blog/privacy-levels-for-cloud-data-sources/) i Power BI-tjenesten, så de ikke er private.
 
 Fra og med juni vil følgende fejl blive produceret i Power BI, når Firewall gemmer en indlejret tabel/post/liste osv. i en buffer, i stedet for at konvertere sådanne værdier til tekst uovervåget: 
 
@@ -57,4 +56,4 @@ Hvis du ikke kan fjerne kolonnen, bør du kunne replikere den tidligere funktion
 `if [MyColumn] is table then "[Table]" else if [MyColumn] is record then "[Record]" else if [MyColumn] is list then "[List]" else if [MyColumn] is function then "[Function]" else [MyColumn]`
 
 Genskabes fejlen i Power BI Desktop, hvis du angiver alle dine indstillinger for beskyttelse af personlige oplysninger for datakilden til Privat?
-Hvis det er tilfældet, bør du kunne løse fejlen ved [at konfigurere indstillingerne for beskyttelse af personlige oplysninger for datakilden](https://powerbi.microsoft.com/en-us/blog/privacy-levels-for-cloud-data-sources/) i Power BI-tjenesten, så de ikke er private.
+Hvis det er tilfældet, bør du kunne løse fejlen ved [at konfigurere indstillingerne for beskyttelse af personlige oplysninger for datakilden](https://powerbi.microsoft.com/blog/privacy-levels-for-cloud-data-sources/) i Power BI-tjenesten, så de ikke er private.

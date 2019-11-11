@@ -2,7 +2,6 @@
 title: Opdater et datasæt, der er baseret på en Excel-projektmappe - cloud
 description: Opdater et datasæt baseret på en Excel-arbejdsmappe på OneDrive eller SharePoint Online
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/06/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 18087514545a2994c021a61aacac02a9f08a4810
-ms.sourcegitcommit: 206806d8ddb6bdfc322c1a46fb34a1b0678acba2
+ms.openlocfilehash: 14377878034a9df614d7885fc6810c3b67f46355
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66816513"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874351"
 ---
 # <a name="refresh-a-dataset-created-from-an-excel-workbook-on-onedrive-or-sharepoint-online"></a>Opdater et datasæt baseret på en Excel-arbejdsmappe på OneDrive eller SharePoint Online
 
@@ -118,5 +117,5 @@ Nogle gange går opdateringen af data muligvis ikke som forventet. Dette skyldes
 - [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)
 - [Fejlfinding af Power BI Gateway – Personlig](service-admin-troubleshooting-power-bi-personal-gateway.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

@@ -2,19 +2,18 @@
 title: Konfigurer rapportinteraktion til enkelt tryk
 description: Lær, hvordan du konfigurerer rapportinteraktion til et enkelt tryk eller et dobbelttryk.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/08/2019
 ms.author: mshenhav
-ms.openlocfilehash: c553b921ebeb30b8fb8ec7ba9f7bce74f6c31dee
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 4288178f702ff3fbfaa05c943adb0fd7ec12f530
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67558972"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879403"
 ---
 # <a name="configure-report-interaction-to-single-tap-or-double-tap"></a>Konfigurer rapportinteraktion til enkelt tryk eller dobbelttryk
 Gælder for:
@@ -46,5 +45,5 @@ Denne artikel gælder for både liggende rapporter og telefonrapporter.
 
 ## <a name="next-steps"></a>Næste trin
 * [Få vist og interager med Power BI-rapporter, der er optimeret til din telefon](mobile-apps-view-phone-report.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

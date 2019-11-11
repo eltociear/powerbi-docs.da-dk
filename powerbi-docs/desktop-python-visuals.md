@@ -2,7 +2,6 @@
 title: Opret Power BI-visualiseringer ved hjælp af Python
 description: Opret Power BI-visualiseringer ved hjælp af Python
 author: otarb
-manager: rajatt
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/20/2018
 ms.author: otarb
 LocalizationGroup: Create reports
-ms.openlocfilehash: b41a50ae7c4aaf8f70c9d7745ea4767b7644a62f
-ms.sourcegitcommit: 09ee1b4697aad84d8f4c9421015d7e4dbd3cf25f
+ms.openlocfilehash: 567b775cb7323dbd343f2a26d4abc0d60885ab7a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70303024"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877989"
 ---
 # <a name="create-power-bi-visuals-using-python"></a>Opret Power BI-visualiseringer ved hjælp af Python
 Med **Power BI Desktop** kan du bruge **Python** til at visualisere dine data.
@@ -158,7 +157,7 @@ Dette selvstudium er udformet, så du kan komme i gang med at oprette visualiser
 * Dokumentation på webstedet [Matplotlib](https://matplotlib.org/). 
 * [Matplotlib-selvstudium: En grundlæggende vejledning i brug af Matplotlib med Python](https://www.datasciencelearner.com/matplotlib-tutorial-complete-guide-to-use-matplotlib-with-python/) 
 * [Matplotlib-selvstudium – Python Matplotlib-bibliotek med eksempler](https://www.edureka.co/blog/python-matplotlib-tutorial/) 
-* [Pandas API-reference](http://pandas.pydata.org/pandas-docs/stable/reference/index.html) 
+* [Pandas API-reference](https://pandas.pydata.org/pandas-docs/stable/reference/index.html) 
 * [Python-visualiseringer i Power BI Service](https://powerbi.microsoft.com/blog/python-visualizations-in-power-bi-service/) 
 * [Brug af Python-visualiseringer i Power BI](https://www.absentdata.com/how-to-user-python-and-power-bi/)
 

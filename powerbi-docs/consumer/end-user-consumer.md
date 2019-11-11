@@ -2,7 +2,6 @@
 title: Hvad er Power BI til "forbruger"?
 description: Oversigt over Power BI til forbrugere (også kaldet slutbrugere eller forretningsbrugere).
 author: mihart
-manager: kvivek
 ms.service: powerbi
 ms.custom: seodec18
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: overview
 ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 8b1876d0990cc21d854ac96329e5ab4a5632f22d
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: bf5e83005e0bd1782e497cdeec1d3689e5749b12
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73430281"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863814"
 ---
 # <a name="the-power-bi-service-for-consumers"></a>Power BI-tjenesten til forbrugere
 
@@ -59,6 +58,6 @@ Det betyder ikke, at du ikke kan gemme dine ændringer. Det kan du. Men disse æ
 ## <a name="next-steps"></a>Næste trin
 
 [Få en præsentation af Power BI-tjenesten for forbrugere](end-user-reading-view.md)    
-[Uddannelse i Power BI-tjenesten for forbrugere](https://docs.microsoft.com/en-us/learn/paths/consume-data-with-power-bi/)    
+[Uddannelse i Power BI-tjenesten for forbrugere](https://docs.microsoft.com/learn/paths/consume-data-with-power-bi/)    
 [Terminologi og begreber for Power BI-*forbrugere*](end-user-basic-concepts.md)    
 

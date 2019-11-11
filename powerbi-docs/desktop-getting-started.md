@@ -2,7 +2,6 @@
 title: Kom i gang med Power BI Desktop
 description: Kom i gang med Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,17 +9,17 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 2049d996c9f6130718e203a8f6d27a2a7fac911f
-ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.openlocfilehash: e533313e20c4e1f994c2ae3d1e552170aef2cbd2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70201021"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868009"
 ---
 # <a name="getting-started-with-power-bi-desktop"></a>Kom i gang med Power BI Desktop
 Velkommen til **Introduktionsvejledning til Power BI Desktop**. Med denne korte præsentation af Power BI Desktop får du en idé om, hvordan det fungerer, og du får mulighed for at sætte skub i oprettelsen af robust datamodeller – sammen med fantastiske rapporter – som styrker din indsats på business intelligence-området. 
 
-Foretrækker du at se noget i stedet for at læse? Du er velkommen til at [ser nærmere på vores introduktionsvideo](desktop-videos.md). Hvis du vil følge med vha. matchende eksempeldata, mens du ser videoen, kan du [downloade denne Excel-projektmappe med eksempler](http://go.microsoft.com/fwlink/?LinkID=521962).
+Foretrækker du at se noget i stedet for at læse? Du er velkommen til at [ser nærmere på vores introduktionsvideo](desktop-videos.md). Hvis du vil følge med vha. matchende eksempeldata, mens du ser videoen, kan du [downloade denne Excel-projektmappe med eksempler](https://go.microsoft.com/fwlink/?LinkID=521962).
 
 ![](media/desktop-getting-started/pbi_gettingstartedsplash_resized.png)
 
@@ -88,7 +87,7 @@ Forestil dig, at du vil pensioneres – du vil bo et sted, hvor der er masser af
 
 Uanset hvad, indeholder følgende webressource interessante data om disse emner med mere:
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 Vælg **Hent data \> Web**, og indsæt adressen.
 
@@ -158,7 +157,7 @@ Dataene omkring de forskellige stater er interessante og kan bruges til at skabe
 
 Vi er heldige. Der er en anden offentlig datakilde, som gør lige præcis dette, men den skal formes en del, før vi kan knytte den til vores pensioneringstabel. Her er webressourcen med forkortelser for stater:
 
-<http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
+<https://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
 
 På båndet **Hjem** i **Forespørgselseditor** vælger vi **Hent data \> Web** og angiver adressen. Derefter vælger vi **OK**, hvorefter resultaterne fra den pågældende webside vises i vinduet  **Navigator**.
 

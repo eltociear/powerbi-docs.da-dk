@@ -2,7 +2,6 @@
 title: DirectQuery til SAP HANA i Power BI
 description: Overvejelser ved brug af DirectQuery med SAP HANA
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/10/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 9d7c5415d084ea7ca9b6a6dd4da3e84662fc6349
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 8d5923c111debb14aab46977d42f3357837d9399
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61303770"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878305"
 ---
 # <a name="directquery-and-sap-hana"></a>DirectQuery og SAP HANA
 Du kan oprette forbindelse til **SAP HANA**-datakilder direkte ved hjælp af **DirectQuery**. Der er to muligheder, når du opretter forbindelse til SAP HANA:
@@ -76,7 +75,7 @@ De primære yderligere begrænsninger for udformning, der gælder, når der opre
 Der er nogle begrænsninger i visualiseringer, når der oprettes forbindelse til SAP HANA ved hjælp af DirectQuery (Behandl som multidimensionel kilde): 
 * **Ingen aggregering af kolonner:** Det er ikke muligt at ændre aggregeringen for en kolonne på en visualisering. Det er altid *Opsummer ikke*.
 
-## <a name="treat-sap-hana-as-a-relational-source"></a>Behandl SAP HANA som en relationel kilde 
+## <a name="treat-sap-hana-as-a-relational-source"></a>Behandl SAP HANA som en relationskilde 
 
 Når du vælger at oprette forbindelse til SAP HANA som en relationel kilde, får du lidt mere fleksibilitet. Du kan f.eks. oprette beregnede kolonner, inkludere data fra flere SAP HANA visninger og oprette relationer mellem de oprettede tabeller. Men når du bruger SAP HANA på denne måde, er det vigtigt at forstå bestemte aspekter af, hvordan forbindelser behandles for at sikre følgende: 
 

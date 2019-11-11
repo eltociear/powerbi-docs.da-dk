@@ -2,19 +2,18 @@
 title: Rette "kommunikationsfejl" i iOS-mobilapps – Power BI
 description: Du kan finde hjælp i denne artikel, hvis du får vist meddelelsen "Vi har registreret kommunikationsfejl. De kan være knyttet til proxyindstillingerne for din Wi-Fi-forbindelse."
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/21/2018
 ms.author: mshenhav
-ms.openlocfilehash: 9e487f4305b663028714cbe45ab76abaaa4a6db9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 14745d1f2b62845ca0eac549b100bf3e06f8f814
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61135681"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879102"
 ---
 # <a name="fixing-communication-failures-in-ios-mobile-apps---power-bi"></a>Rette "kommunikationsfejl" i iOS-mobilapps – Power BI
 
@@ -31,5 +30,5 @@ Du kan få vist denne meddelelse, hvis internetforbindelsen til din iPhone eller
 Vælg en anden forbindelse på din iPhone eller iPad, som ikke kræver en eksplicit HTTP-proxyindstilling (dvs., en, hvor konfiguration som HTTP-proxy er slået fra).
 
 ## <a name="other-issues"></a>Oplever du andre problemer?
-[Prøv at spørge Power BI-community'et](http://community.powerbi.com/).
+[Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
 

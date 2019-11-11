@@ -3,25 +3,24 @@ title: Ofte stillede spørgsmål om Power BI Premium
 description: Gennemse en liste med ofte stillede spørgsmål og svar om tilbuddene i Power BI Premium.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/16/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: f7d23c291e77ebacd3ed19a14ed7ce2921da5673
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 31335f01bd91355587634afbde9a10df5689226b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073340"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881173"
 ---
 # <a name="power-bi-premium-faq"></a>Ofte stillede spørgsmål om Power BI Premium
 
 Denne artikel omhandler ofte stillede spørgsmål om Power BI Premium. Du kan få vist en oversigt i [Hvad er Power BI Premium?](service-premium-what-is.md)
 
-* Hvis du har andre spørgsmål, kan du [prøve at spørge Power BI-community'et](http://community.powerbi.com/).
+* Hvis du har andre spørgsmål, kan du [prøve at spørge Power BI-community'et](https://community.powerbi.com/).
 * Har du stadig problemer? Besøg [supportsiden for Power BI](https://powerbi.microsoft.com/support/).
 
 **Hvad er Power BI Premium?**  

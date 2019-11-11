@@ -3,19 +3,18 @@ title: Løsning af "Der er ikke tillid til din virksomheds SSL-certifikat"
 description: Når du logger på Power BI-appen til Android, kan du få vist meddelelsen "Godkendelsen lykkedes ikke, da denne enhed ikke har tillid til din virksomheds SSL-certifikat
 .": ''
 author: paulinbar
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/28/2019
 ms.author: mshenhav
-ms.openlocfilehash: 19bcdf08d4eacff5e080bf1a2f987ea848e4bfb9
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: cde8a4bbaed9ef10940b7a102d40a8bc6009e9b9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70840913"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879473"
 ---
 # <a name="fixing-corporate-ssl-certificate-is-untrusted---power-bi"></a>Løsning af "Der er ikke tillid til din virksomheds SSL-certifikat" – Power BI
 Når du logger på Microsoft Power BI-appen til Android, kan du få vist meddelelsen "Godkendelsen lykkedes ikke, da denne enhed ikke har tillid til din virksomheds SSL-certifikat. Kontakt virksomhedens it-administrator". 
@@ -41,9 +40,9 @@ Tidszonen kan være angivet forkert på din enhed.
 Gå til **Indstillinger** > **System** > **Dato og klokkeslæt** for at se indstillingerne.
 
 ## <a name="custom-authentication-server"></a>Brugerdefineret godkendelsesserver
-Hvis du bruger en brugerdefineret godkendelsesserver, kan det skyldes, at certifikatet i virksomhedens godkendelsesserver ikke er gyldigt. Arbejd sammen med din organisations it-afdeling for at teste virksomhedens konfiguration af godkendelsesserveren ved hjælp af vejledningen i [denne artikel](https://support.microsoft.com/en-us/help/3203929/using-adal-to-authenticate-from-android-devices-fails-if-additional-ce).
+Hvis du bruger en brugerdefineret godkendelsesserver, kan det skyldes, at certifikatet i virksomhedens godkendelsesserver ikke er gyldigt. Arbejd sammen med din organisations it-afdeling for at teste virksomhedens konfiguration af godkendelsesserveren ved hjælp af vejledningen i [denne artikel](https://support.microsoft.com/help/3203929/using-adal-to-authenticate-from-android-devices-fails-if-additional-ce).
 
 ## <a name="next-steps"></a>Næste trin
-* [Download Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867) fra Android App Store.
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/) 
+* [Download Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867) fra Android App Store.
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/) 
 

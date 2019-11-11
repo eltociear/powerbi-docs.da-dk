@@ -3,18 +3,17 @@ title: Opret en start-URL-adresse
 description: I denne artikel beskrives det, hvordan du åbner URL-adresser på en ny fane ved hjælp af visualiseringer i Power BI.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: sranins
 ms.service: powerbi
 ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
 ms.date: 06/18/2019
-ms.openlocfilehash: 7dff03f0ad192e0598c677d41709447fbdc0688d
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 1bf7bac5631e0d76864620057ba3d95fab3ba3ad
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307311"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879934"
 ---
 # <a name="create-a-launch-url"></a>Opret en start-URL-adresse
 
@@ -31,12 +30,12 @@ Ved at oprette start-URL-adresser kan du åbne en ny browserfane (eller et vindu
 Brug API-kaldet `host.launchUrl()`, hvilket videregiver din destinations-URL-adresse som et strengargument:
 
 ```typescript
-this.host.launchUrl('http://some.link.net');
+this.host.launchUrl('https://some.link.net');
 ```
 
 ## <a name="restrictions"></a>Begrænsninger
 
-* Brug kun absolutte stier og ikke relative stier. Du kan f.eks. bruge en absolut sti såsom `http://some.link.net/subfolder/page.html`. Den relative sti, `/page.html`, åbnes ikke.
+* Brug kun absolutte stier og ikke relative stier. Du kan f.eks. bruge en absolut sti såsom `https://some.link.net/subfolder/page.html`. Den relative sti, `/page.html`, åbnes ikke.
 
 * I øjeblikket understøttes kun protokollerne *HTTP* og *HTTPS*. Undgå *FTP*, *MAILTO* osv.
 

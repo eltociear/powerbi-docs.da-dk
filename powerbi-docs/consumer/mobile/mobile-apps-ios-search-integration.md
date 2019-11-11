@@ -2,19 +2,18 @@
 title: Integration af iOS-enhedssøgning med Power BI
 description: Brug enhedssøgning (spotlight) til at søge efter og få adgang til det indhold, du har brug for
 author: michalfo
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/03/2019
 ms.author: michalfo
-ms.openlocfilehash: 8f40781bb15b06f894a53f16d4ec6754d88e6b53
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: f89895650bb0b81533aeddbc149f225742dc9d3f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "66817070"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879217"
 ---
 # <a name="ios-device-search-spotlight-integration-with-power-bi-mobile-ios-app-preview"></a>Integration af iOS-enhedssøgning (spotlight) med Power BI Mobil-appen til iOS (prøveversion)
 Brug iOS-enhedssøgning (spotlight) til at søge efter og få adgang til det indhold, du har brug for.
@@ -51,7 +50,7 @@ Enhedssøgning via Siri omfatter også forslag, der er baseret på de handlinger
 ## <a name="next-steps"></a>Næste trin
 Få mere at vide om Power BI-mobilappen ved at gøre følgende: 
 
-* Downloade [Power BI-mobilappen til iPhone](http://go.microsoft.com/fwlink/?LinkId=522062)
+* Downloade [Power BI-mobilappen til iPhone](https://go.microsoft.com/fwlink/?LinkId=522062)
 * Følge [@MSPowerBI på Twitter](https://twitter.com/MSPowerBI)
-* Deltage i samtalen i [Power BI-communityet](http://community.powerbi.com/)
+* Deltage i samtalen i [Power BI-communityet](https://community.powerbi.com/)
 

@@ -2,7 +2,6 @@
 title: 10 tips til at få hjælp til dine Power BI-spørgsmål
 description: Her er 10 måder at få hjælp, når du har spørgsmål om, hvordan Power BI fungerer
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 668df24e8e4df2257a78a5f7a843abc65df3ef8f
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: ee272f32dbce4630f8b834187e05fda5739df7be
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060311"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876956"
 ---
 # <a name="10-tips-for-getting-help-with-your-power-bi-questions"></a>10 tips til at få hjælp til dine Power BI-spørgsmål
 Bliver du nogensinde frustreret, når du bruger Power BI, eller har problemer, fordi du ikke kan få svar på dine spørgsmål om Power Bi, når du skal bruge dem – dvs. "lige til tiden"? 
@@ -55,7 +54,7 @@ Du kan finde flere muligheder online, som f.eks.:
 * Søg efter personlige kurser om "**Dashboard in a day**".
 
 ## <a name="7-ask-or-search-in-the-power-bi-community"></a>7 Stil spørgsmål, eller søg i Power BI-community'et
-Stil spørgsmål, og find svar i [Power BI-community'et](http://community.powerbi.com). BI-eksperter rundtomkring i verden er aktive i community'et. Sørg for at udnytte deres viden ved at bruge denne ressource.
+Stil spørgsmål, og find svar i [Power BI-community'et](https://community.powerbi.com). BI-eksperter rundtomkring i verden er aktive i community'et. Sørg for at udnytte deres viden ved at bruge denne ressource.
 
 ## <a name="8-join-or-create-a-power-bi-user-group"></a>8 Deltag i eller opret en Power BI-brugergruppe
 Deltag i en [Power BI-brugergruppe](https://community.powerbi.com/t5/Power-BI-User-Groups/ct-p/Groups), og bed gruppen om hjælp med at besvare dine spørgsmål. Eller du kan starte din egen brugergruppe og oprette et community med personer, der hjælper hinanden, med fokus på dine behov: i dit område, til dine data, i din tidszone.
@@ -70,5 +69,5 @@ Lad os f.eks. sige, at du er usikker på, om du kan dele dashboards med en sikke
 
 ## <a name="next-steps"></a>Næste trin
 * [Hvad er Power BI?](fundamentals/power-bi-overview.md)
-* Prøv at spørge [Power BI-community'et](http://community.powerbi.com/)
+* Prøv at spørge [Power BI-community'et](https://community.powerbi.com/)
 * Har du stadig problemer? Besøg [supportsiden for Power BI](https://powerbi.microsoft.com/support/)

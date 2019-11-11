@@ -2,7 +2,6 @@
 title: Understøttede browsere til Power BI
 description: Se en liste over understøttede browsere til Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/27/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: e27fdf6c57eeaebe554011517d6bea79b7270055
-ms.sourcegitcommit: 35f7ee9280022c76033502b344e8ebc52d3ec1d1
+ms.openlocfilehash: d81e9e7142a05ac49969e98dbada0e0edf2fe3ba
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71705457"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875247"
 ---
 # <a name="supported-browsers-for-power-bi"></a>Understøttede browsere til Power BI
 Power BI kører i følgende browsere:
@@ -30,6 +29,6 @@ Disse browsere understøttes på alle platforme, hvor de er tilgængelige.
 
 ### <a name="next-steps"></a>Næste trin
 * [Hvad er Power BI?](power-bi-overview.md)
-* Prøv at spørge [Power BI-community'et](http://community.powerbi.com/)
+* Prøv at spørge [Power BI-community'et](https://community.powerbi.com/)
 * Har du stadig problemer? Gå til [supportsiden for Power BI](https://powerbi.microsoft.com/support/)
 

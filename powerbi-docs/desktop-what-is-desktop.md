@@ -2,7 +2,6 @@
 title: Hvad er Power BI Desktop?
 description: Få mere at vide om, hvad Power BI Desktop er, og hvordan du kan komme i gang med at bruge det
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: overview
 ms.date: 09/19/2019
 ms.author: davidi
 LocalizationGroup: Get started
-ms.openlocfilehash: 575d66ad6bb10a4e7faa90f5f658e86115402400
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 01e5effcf5f72dd110005815e2ba86c9a6731a70
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71141960"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865141"
 ---
 # <a name="what-is-power-bi-desktop"></a>Hvad er Power BI Desktop?
 
@@ -100,4 +99,4 @@ Når du har valgt **Udgiv**, opretter Power BI Desktop forbindelse til **Power B
 For at komme i gang med **Power BI Desktop** skal du først downloade og installere programmet. Du kan hente **Power BI Desktop** på to måder:
 
 * [Download Power BI Desktop fra internettet](desktop-get-the-desktop.md)
-* [Hent Power BI Desktop fra Windows Store](http://aka.ms/pbidesktopstore)
+* [Hent Power BI Desktop fra Windows Store](https://aka.ms/pbidesktopstore)

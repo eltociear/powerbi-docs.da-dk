@@ -2,7 +2,6 @@
 title: Hvad er Power BI-administration?
 description: Få mere at vide om konfiguration af Power BI-styringspolitikker, overvågning af brug samt klargøring af licenser, kapacitet og organisationens ressourcer.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: overview
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 779dba9262752a4030eb263002822d0186f3e470
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: d33aad1d52a7074873e4b2bb7f5e2f93e2b8ab0e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075783"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873720"
 ---
 # <a name="what-is-power-bi-administration"></a>Hvad er Power BI-administration?
 
@@ -87,4 +86,4 @@ Vi håber, at du ved at læse denne artikel har fået hurtig indsigt i jobbet so
 
 [Ofte stillede spørgsmål om Power BI-administration](service-admin-faq.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

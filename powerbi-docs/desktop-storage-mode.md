@@ -2,7 +2,6 @@
 title: Brug lagringstilstand i Power BI Desktop
 description: Brug lagringstilstand til at kontrollere, om data cachelagres i hukommelsen for rapporter i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/26/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: bf69b2e4c25597eba980137e5ef8b2feb2f4d103
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 8ecb52f0e9f06a2d3b1c16b4231943ea7970a56e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327705"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879611"
 ---
 # <a name="storage-mode-in-power-bi-desktop"></a>Lagringstilstand i Power BI Desktop
 
@@ -25,7 +24,7 @@ I Microsoft Power BI Desktop kan du angive *lagringstilstanden* for tabeller. Du
 
 Angivelse af lagringstilstanden giver mange fordele. Du kan angive lagringstilstanden for hver enkelt tabel i din model. Denne handling gør det muligt at have et enkelt datasæt, hvilket giver følgende fordele:
 
-* **Forespørgselsydeevne**: Når brugere interagerer med visualiseringer i Power BI-rapporter, sendes der DAX-forespørgsler (Data Analysis Expressions) til datasættet. Hvis du cachelagrer data i hukommelsen med en korrekt angivelse af lagringstilstand, kan det øge forespørgslens kvalitet og dine rapporters interaktivitet.
+* **Forespørgselsydeevne**: Når brugere interagerer med visuelle elementer i Power BI-rapporter, sendes der DAX-forespørgsler (Data Analysis Expressions) til datasættet. Hvis du cachelagrer data i hukommelsen med en korrekt angivelse af lagringstilstand, kan det øge forespørgslens kvalitet og dine rapporters interaktivitet.
 
 * **Store datasæt**: Tabeller, der ikke cachelagres, forbruger ikke hukommelse beregnet til cachelagring. Du kan aktivere interaktive analyser over store datasæt, der er for store eller dyre til helt at cachelagre i hukommelsen. Du kan vælge, hvilke tabeller der er værd at cachelagre, og hvilke der ikke er.
 
@@ -33,7 +32,7 @@ Angivelse af lagringstilstanden giver mange fordele. Du kan angive lagringstilst
 
 * **Tidskrav i nærheden af realtid**: Det kan være en fordel at cachelagre tabeller med tidskrav i nærheden af realtid for at mindske dataventetiden.
 
-* **Tilbageførsel**: Tilbageførsel gør det muligt for organisationer at udforske mulige scenarier ved at ændre celleværdier. Brugerdefinerede programmer kan foretage ændringer af datakilden. Tabeller, der ikke er cachelagret, kan straks vise ændringer, og konsekvenserne kan dermed analyseres med det samme.
+* **Tilbageførsel**: Tilbageførsel gør det muligt for virksomheder at udforske mulige scenarier ved at ændre celleværdier. Brugerdefinerede programmer kan foretage ændringer af datakilden. Tabeller, der ikke er cachelagret, kan straks vise ændringer, og konsekvenserne kan dermed analyseres med det samme.
 
 Indstillingen af lagringstilstand i Power BI Desktop er en af tre relaterede funktioner:
 
@@ -41,7 +40,7 @@ Indstillingen af lagringstilstand i Power BI Desktop er en af tre relaterede fun
 
 * **Mange til mange-relationer**: Via *sammensatte modeller* kan du oprette *mange til mange-relationer* mellem tabeller. *Mange til mange-relationer* fjerner kravene for entydige værdier i tabeller. Det fjerner også tidligere løsninger, f.eks. introduktion af nye tabeller, kun for at oprette relationer. Du kan finde flere oplysninger under [Mange til mange-relationer i Power BI Desktop](desktop-many-to-many-relationships.md).
 
-* **Lagringstilstand**: Du kan nu angive, hvilke visualiseringer der kræver en forespørgsel til back end-datakilder. Visualiseringer, der ikke kræver en forespørgsel, importeres, også selvom de er baseret på DirectQuery. Denne funktion hjælper med at forbedre ydeevnen og reducere belastningen af back-end. Tidligere ville selv enkle visualiseringer, f.eks. udsnit, starte forespørgsler, der blev sendt til back end-kilderne. Lagringstilstand er beskrevet nærmere i denne artikel.
+* **Lagringstilstand**: Du kan nu angive, hvilke visualiseringer der kræver en forespørgsel til back end-datakilder. Visuelle elementer, der ikke kræver en forespørgsel, importeres, også selvom de er baseret på DirectQuery. Denne funktion hjælper med at forbedre ydeevnen og reducere belastningen af back-end. Tidligere ville selv enkle visuelle elementer, f.eks. udsnit, starte forespørgsler, der blev sendt til back end-kilderne. Lagringstilstand er beskrevet nærmere i denne artikel.
 
 > [!NOTE]
 > Du kan få vist den aktuelle lagringstilstand ved at vælge visningen **Model**, den relevante tabel og derefter se værdien **Lagringstilstand** i afsnittet **Avanceret** i ruden **Egenskaber**.

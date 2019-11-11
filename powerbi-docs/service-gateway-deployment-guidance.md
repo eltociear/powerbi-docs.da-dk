@@ -2,7 +2,6 @@
 title: Vejledning i at installere en datagateway til Power BI
 description: Få de bedste praksisser og overvejelser ved installation af en gateway til Power BI.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 5a0c29f04e7329373eec5f60af840e503ec22b3c
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: d4a02ccc759f78a4243f34fb59115fb9084ea90d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68729984"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881679"
 ---
 # <a name="guidance-for-deploying-a-data-gateway-for-power-bi"></a>Vejledning i at installere en datagateway til Power BI
 
@@ -69,5 +68,5 @@ Hvis du planlægger at bruge Power BI-gatewayen med Azure Analysis Services, ska
 * [Foretag fejlfinding af gateways – Power BI](service-gateway-onprem-tshoot.md)  
 * [Ofte stillede spørgsmål om datagatewayen i det lokale miljø – Power BI](service-gateway-power-bi-faq.md)  
 
-Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](http://community.powerbi.com/).
+Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](https://community.powerbi.com/).
 

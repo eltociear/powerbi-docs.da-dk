@@ -2,7 +2,6 @@
 title: Opret et dynamisk udsnitsværktøj, som du kan ændre størrelsen på i Power BI
 description: Få mere at vide om, hvordan du opretter et dynamisk udsnitsværktøj, du kan ændre størrelsen på, så det passer til din rapport
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/04/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: fed4119946cb762fb4d9aee3b5300be225a6e379
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: aa7dc612d7a1b16fdc02fb1b40c98257cda3183d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61419749"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877593"
 ---
 # <a name="create-a-responsive-slicer-you-can-resize-in-power-bi"></a>Opret et dynamisk udsnitsværktøj, som du kan ændre størrelsen på i Power BI
 
@@ -81,4 +80,4 @@ Du kan benytte den samme fremgangsmåde til at gøre et udsnitsværktøj til tid
 ## <a name="next-steps"></a>Næste trin
 
 - [Udsnitsværktøjer i Power BI-tjenesten](visuals/power-bi-visualization-slicers.md)
-- Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+- Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

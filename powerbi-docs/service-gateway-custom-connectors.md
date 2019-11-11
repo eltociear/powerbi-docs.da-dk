@@ -3,19 +3,18 @@ title: Brug brugerdefinerede dataconnectors med datagatewayen i det lokale milj�
 description: Du kan bruge brugerdefinerede dataconnectors med datagatewayen i det lokale miljø.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 3c0ef172115dba05deb02d724b663742a2e71c13
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: c76c8fdb635db7724ffeb1a5140e9095c9b2eff5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832532"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881759"
 ---
 # <a name="use-custom-data-connectors-with-the-on-premises-data-gateway"></a>Brug brugerdefinerede dataconnectors med datagatewayen i det lokale miljø
 
@@ -23,7 +22,7 @@ ms.locfileid: "68832532"
 
 Med dataconnectors til Power BI kan du oprette forbindelse til og få adgang til data fra et program, en tjeneste eller en datakilde. Du kan udvikle brugerdefinerede dataconnectors og bruge dem i Power BI Desktop.
 
-Hvis du vil vide mere om, hvordan du udvikler brugerdefinerede dataconnectors til Power BI, skal du se [GitHub-siden om SDK til dataconnector](http://aka.ms/dataconnectors). Dette websted indeholder oplysninger om, hvordan du kommer godt i gang og eksempler til Power BI og Power Query.
+Hvis du vil vide mere om, hvordan du udvikler brugerdefinerede dataconnectors til Power BI, skal du se [GitHub-siden om SDK til dataconnector](https://aka.ms/dataconnectors). Dette websted indeholder oplysninger om, hvordan du kommer godt i gang og eksempler til Power BI og Power Query.
 
 Når du opretter rapporter i Power BI Desktop, der bruger brugerdefinerede dataconnectors, kan du bruge datagatewayen i det lokale miljø til at opdatere rapporterne fra Power BI-tjenesten.
 
@@ -58,4 +57,4 @@ Når denne indstilling er aktiveret, kan du se dine brugerdefinerede connectors 
 * [Konfigurer proxyindstillinger for datagatewayen i det lokale miljø](/data-integration/gateway/service-gateway-proxy)
 * [Brug Kerberos til SSO (enkeltlogon) fra Power BI til datakilder i det lokale miljø](service-gateway-sso-kerberos.md)  
 
-Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](http://community.powerbi.com/).
+Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](https://community.powerbi.com/).

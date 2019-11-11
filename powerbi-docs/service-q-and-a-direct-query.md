@@ -2,7 +2,6 @@
 title: Brug Spørgsmål og svar via direkte forbindelser i Power BI
 description: Dokumentationen til brug for forespørgsler på naturlige sprog via Power BI-spørgsmål og svar med direkte forbindelser til Analysis Services-data og datagateway i lokalt miljø.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: mihart
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/16/2018
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 59c9488def297537cc2ea944f6c0fc4f59ba29ba
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: 8bb3597d2877376431a2249428e88d56bee2c0a1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66720901"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871798"
 ---
 # <a name="enable-qa-for-live-connections-in-power-bi"></a>Aktivér Spørgsmål og svar via direkte forbindelser i Power BI
 ## <a name="what-is-the-on-premises-data-gateway--what-is-a-live-connection"></a>Hvad er datagatewayen i det lokale miljø?  Hvad er en direkte forbindelse?
@@ -66,5 +65,5 @@ Der er nogle begrænsninger for funktionen:
 - [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)  
 - [Spørgsmål og svar i Power BI – Oversigt](consumer/end-user-q-and-a.md)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

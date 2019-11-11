@@ -3,19 +3,18 @@ title: Måder at dele dit arbejde i Power BI på
 description: I Power BI kan du samarbejde om og dele dashboards, rapporter, felter og apps på forskellige måder. De har hver især særskilte fordele.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/06/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 31310900b91924e639ce10a13aef3da996598502
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 7633f0771a87c01d53261d13135d831e95e80136
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841677"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881333"
 ---
 # <a name="ways-to-share-your-work-in-power-bi"></a>Måder at dele dit arbejde i Power BI på
 
@@ -89,13 +88,13 @@ Flere oplysninger om [deling af dashboards og rapporter ](service-share-dashboar
 
 ## <a name="annotate-and-share-from-the-power-bi-mobile-apps"></a>Anmærk og del fra Power BI-mobilapps
 
-Du kan i Power BI-mobilapps til iOS- og Android-enheder anmærke et felt, en rapport eller en visualisering og derefter dele den/det med alle pr. mail.
+Du kan i Power BI-mobilapps til iOS- og Android-enheder anmærke et felt, rapport eller visuelt element og derefter dele det med alle pr. mail.
 
 ![Anmærk og del i mobilappsene](media/service-how-to-collaborate-distribute-dashboards-reports/power-bi-iphone-annotate.png)
 
 Du kan dele et snapshot af feltet, rapporten eller dit visual, og modtagerne ser det, præcist som det var, da du sendte mailen. Mailen indeholder også et link til dashboardet eller rapporten. Hvis modtagerne har en Power BI Pro-licens, eller hvis indholdet er i [Premium-kapacitet](service-premium-what-is.md), og du allerede har delt objektet med dem, kan de åbne det. Du kan sende snapshots af felter til alle – ikke kun til kolleger på samme maildomæne.
 
-Flere oplysninger om [anmærkning og deling af felter, rapporter og visualiseringer](consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) fra iOS- og Android-mobilapps.
+Flere oplysninger om [anmærkning og deling af felter, rapporter og visuelle elementer](consumer/mobile/mobile-annotate-and-share-a-tile-from-the-mobile-apps.md) fra iOS- og Android-mobilapps.
 
 Du kan også [dele et snapshot af et felt](consumer/mobile/mobile-windows-10-phone-app-get-started.md) fra Power BI-appen til Windows 10-enheder.
 
@@ -135,4 +134,4 @@ Med **Publicer på internettet** kan du publicere Power BI-rapporter på hele in
 
 Har du feedback? Indsend dine forslag på [webstedet for Power BI-community'et](https://community.powerbi.com/).
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -2,7 +2,6 @@
 title: Ofte stillede spørgsmål om høj tilgængelighed, failover og it-katastrofeberedskab i Power BI
 description: Forstå, hvordan Power BI-tjenesten leverer høj tilgængelighed og sikrer forretningskontinuitet og it-katastrofeberedskab for brugerne.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: b8f98541b70c3573d9f31b5e59196cd37d322bb3
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: dd2c94b490cdf31bd383c7100b9a1bc372f8e75f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075224"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873678"
 ---
 # <a name="power-bi-high-availability-failover-and-disaster-recovery-faq"></a>Ofte stillede spørgsmål om høj tilgængelighed, failover og it-katastrofeberedskab i Power BI
 
@@ -23,7 +22,7 @@ Denne artikel omhandler, hvordan Power BI-tjenesten leverer høj tilgængelighed
 
 ## <a name="what-does-high-availability-mean-for-power-bi"></a>Hvad betyder "høj tilgængelighed" for Power BI?
 
-Power BI er fuldt administreret software som en service (SaaS).  Microsoft udvikler og styrer denne software, så den er modstandsdygtigt over for fejl i infrastrukturer, og så brugerne altid kan få adgang til deres rapporter.  Tjenesten understøttes af en [SLA på 99,9 %](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
+Power BI er fuldt administreret software som en service (SaaS).  Microsoft udvikler og styrer denne software, så den er modstandsdygtigt over for fejl i infrastrukturer, og så brugerne altid kan få adgang til deres rapporter.  Tjenesten understøttes af en [SLA på 99,9 %](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=37).
 
 ## <a name="what-is-a-power-bi-failover"></a>Hvad er en Power BI-failover?
 
@@ -50,7 +49,7 @@ I begge tilfælde træffer medlemmer af Power BI's overordnede team beslutningen
 
 ## <a name="how-do-i-know-power-bi-is-now-in-failover-mode"></a>Hvordan ved jeg, at Power BI nu er i failovertilstand?
 
-Der slås en meddelelse op på Power BI-supportsiden ([https://powerbi.microsoft.com/en-us/support/](https://powerbi.microsoft.com/en-us/support/)). Meddelelsen indeholder de overordnede handlinger, der ikke er tilgængelige under failover, herunder publicering, opdatering, oprettelse af dashboard, duplikering af dashboard og ændringer af tilladelser.
+Der slås en meddelelse op på Power BI-supportsiden ([https://powerbi.microsoft.com/support/](https://powerbi.microsoft.com/support/)). Meddelelsen indeholder de overordnede handlinger, der ikke er tilgængelige under failover, herunder publicering, opdatering, oprettelse af dashboard, duplikering af dashboard og ændringer af tilladelser.
 
 ## <a name="how-long-does-it-take-power-bi-to-fail-over"></a>Hvor lang tid tager det for Power BI at udføre failover?
 

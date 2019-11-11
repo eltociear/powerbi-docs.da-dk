@@ -2,19 +2,18 @@
 title: Fastgør dashboard til startskærmen i Windows 10 – Power BI-mobilapp
 description: Få mere at vide om, hvordan du kan fastgøre et Power BI-dashboard til startskærmen i Windows 10 fra Power BI-mobilappen, så du kan få et hurtigt overblik over vigtige målinger.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 78bb51a7ef2d7bd7309c7bb93c27b7e9193b85bf
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 556ca293458c6874097a4733aaed453130778848
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059419"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869851"
 ---
 # <a name="pin-a-dashboard-to-your-windows-10-start-screen-from-the-power-bi-mobile-app"></a>Fastgør dashboard til din startskærm i Windows 10 fra Power BI-mobilappen
 Du kan fastgøre Power BI-dashboards til startskærmen i Windows fra Power BI-mobilappen til Windows 10. De bliver *dynamiske felter*. Når du trykker på feltet på startskærmen, åbner dashboardet i Power BI-mobilappen til Windows 10.
@@ -32,8 +31,8 @@ Du kan fastgøre Power BI-dashboards til startskærmen i Windows fra Power BI-mo
    ![Dynamisk felt i Windows 10](./media/mobile-pin-dashboard-start-screen-windows-10-phone-app/pbi_win10ph_startscrn.png)
 
 ## <a name="next-steps"></a>Næste trin
-* [Download Power BI-mobilappen til Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) fra Windows Store  
+* [Download Power BI-mobilappen til Windows 10](https://go.microsoft.com/fwlink/?LinkID=526478) fra Windows Store  
 * [Kom i gang med Power BI-mobilappen til Windows 10](mobile-windows-10-phone-app-get-started.md)  
 * [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

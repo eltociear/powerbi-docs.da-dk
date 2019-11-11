@@ -2,7 +2,6 @@
 title: Del dashboards, der er knyttet til en Excel-fil på OneDrive – Power BI
 description: Læs om deling af dashboards, der er tilknyttet en Excel-projektmappe på OneDrive for Business, med felter, der er fastgjort fra den projektmappe.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7157ddd66c651519f59eb964f5fcf95eb127943c
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: ee32d10ffeb22160b054661ca91c46890a877fa3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721441"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871474"
 ---
 # <a name="share-a-power-bi-dashboard-that-links-to-an-excel-file-in-onedrive"></a>Del et Power BI-dashboard, der linker til en Excel-fil i OneDrive
 I Power BI kan du [oprette forbindelse til Excel-projektmapper på OneDrive for Business](service-excel-workbook-files.md) og fastgøre felter til et dashboard fra den projektmappe. Når du deler det dashboard eller opretter en indholdspakke, der indeholder dette dashboard:
@@ -57,5 +56,5 @@ Deling af et dashboard fra et Power BI-arbejdsområde ligner deling af et dashbo
 ## <a name="next-steps"></a>Næste trin
 * [Fastgør et felt til et Power BI-dashboard fra Excel](service-dashboard-pin-tile-from-excel.md)
 * [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

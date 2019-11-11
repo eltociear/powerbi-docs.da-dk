@@ -2,20 +2,19 @@
 title: Indsigtstyper, der understøttes af Power BI
 description: Hurtige indsigter og Vis indsigter i Power BI.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 10/02/2019
+ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7f754c1164448be88a3269cb8e3d129b63a6115f
-ms.sourcegitcommit: 5410a17c6325406c9d9364585d7c26de4d9488ae
+ms.openlocfilehash: 75462c2414854d0848254a36b89bcdd1de365ec5
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379898"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73863476"
 ---
 # <a name="types-of-insights-supported-by-power-bi"></a>Indsigtstyper, der understøttes af Power BI
 
@@ -32,17 +31,17 @@ Det er nogle af de algoritmer, vi bruger:
 ## <a name="category-outliers-topbottom"></a>Kategori med udenforliggende værdier (top/bund)
 Fremhæver tilfælde, hvor et eller to medlemmer i en dimension for en måling i modellen har meget større værdier end andre medlemmerne i dimensionen.  
 
-![Eksempel på kategori med udenforliggende værdier](./media/end-user-insight-types/pbi_auto_insight_types_category_outliers.png)
+![Eksempel på kategori med udenforliggende værdier](./media/end-user-insight-types/pbi-auto-insight-types-category-outliers.png)
 
 ## <a name="change-points-in-a-time-series"></a>Skift punkter i en tidsserie
 Fremhæver, når der er betydelige ændringer i tendenser i en tidsserie af data.
 
-![Eksempel på skift af punkter i en tidsserie](./media/end-user-insight-types/pbi_auto_insight_types_changepoint.png)
+![Eksempel på skift af punkter i en tidsserie](./media/end-user-insight-types/pbi-auto-insight-types-changepoint.png)
 
 ## <a name="correlation"></a>Korrelation
 Registrerer tilfælde, hvor flere målinger viser en korrelation mellem hinanden, når de afbildes mod en dimension i datasættet.
 
-![Eksempel på korrelation](./media/end-user-insight-types/pbi_auto_insight_types_correlation.png)
+![Eksempel på korrelation](./media/end-user-insight-types/pbi-auto-insight-types-correlation.png)
 
 ## <a name="low-variance"></a>Lav varians
 Registrerer tilfælde, hvor datapunkter ikke er langt fra middelværdien.
@@ -52,30 +51,30 @@ Registrerer tilfælde, hvor datapunkter ikke er langt fra middelværdien.
 ## <a name="majority-major-factors"></a>Majoritet (overordnede faktorer)
 Finder tilfælde, hvor en majoritet af en samlet værdi kan tilskrives en enkelt faktor, når den opdeles på en anden dimension.  
 
-![Eksempel på vigtige faktorer](./media/end-user-insight-types/pbi_auto_insight_types_majority.png)
+![Eksempel på vigtige faktorer](./media/end-user-insight-types/pbi-auto-insight-types-majority.png)
 
 ## <a name="overall-trends-in-time-series"></a>Samlede tendenser i tidsserie
 Registrerer op- eller nedadgående tendenser i tidsseriedata.
 
-![Eksempel på generelle tendenser i tidsserie](./media/end-user-insight-types/pbi_auto_insight_types_trend.png)
+![Eksempel på generelle tendenser i tidsserie](./media/end-user-insight-types/pbi-auto-insight-types-trend.png)
 
 ## <a name="seasonality-in-time-series"></a>Sæsonudsving i tidsserie
 Finder periodiske mønstre i tidsseriedata, f.eks. ugentlige, månedlige eller årlige sæsonudsving.
 
-![Eksempel på sæsonudsving](./media/end-user-insight-types/pbi_auto_insight_types_seasonality_new.png)
+![Eksempel på sæsonudsving](./media/end-user-insight-types/pbi-auto-insight-types-seasonality-new.png)
 
 ## <a name="steady-share"></a>Konstant deling
 Fremhæver tilfælde, hvor der er en overordnet-underordnet-korrelation mellem andelen af en underordnet værdi i forhold til den samlede værdi af den overordnede på tværs af en kontinuerlig variabel.
 
-![Eksempel på konstant deling](./media/end-user-insight-types/pbi_auto_insight_types_steadyshare.png)
+![Eksempel på konstant deling](./media/end-user-insight-types/pbi-auto-insight-types-steadyshare.png)
 
 ## <a name="time-series-outliers"></a>Tidsserier med udenforliggende værdier
 Registrerer for data på tværs af en tidsserie, når der er specifikke datoer og klokkeslæt med værdier, som er væsentligt anderledes end de andre dato-/klokkeslætsværdier.
 
-![Eksempel på tidsserier med udenforliggende værdier](./media/end-user-insight-types/pbi_auto_insight_types_time_series_outliers.png)
+![Eksempel på tidsserier med udenforliggende værdier](./media/end-user-insight-types/pbi-auto-insight-types-time-series-outliers.png)
 
 ## <a name="next-steps"></a>Næste trin
 [Power BI-indsigter](end-user-insights.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

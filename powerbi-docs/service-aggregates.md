@@ -2,7 +2,6 @@
 title: Arbejde med aggregeringer (sum, gennemsnit osv.) i Power BI-tjenesten
 description: Få mere at vide om, hvordan du tilpasser aggregeringen i et diagram (sum, gennemsnit, maksimum osv.) i Power BI-tjenesten.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.date: 05/03/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Reports
-ms.openlocfilehash: 7cee05df6a7d13e18bc31bc1a1f34a5f89711c0d
-ms.sourcegitcommit: b602cdffa80653bc24123726d1d7f1afbd93d77c
+ms.openlocfilehash: 595b5743450aeb8ae6f6e60157742e3563a28fdd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "65710573"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873319"
 ---
 # <a name="work-with-aggregates-sum-average-and-so-on-in-the-power-bi-service"></a>Arbejde med aggregeringer (sum, gennemsnit osv.) i Power BI-tjenesten
 
@@ -50,7 +49,7 @@ Det kan være forvirrende at arbejde med aggregater i Power BI-tjenesten. Du har
 
 Det underliggende problem er typisk feltdefinitionen i datasættet. Det kan være ejeren af datasættet, der har defineret feltet som tekst, hvilket forklarer, hvorfor Power BI ikke kan opsummere eller beregne et gennemsnit. Desværre [kan kun datasættets ejer ændre måden, hvorpå et felt er kategoriseret](desktop-measures.md). Så du kan løse problemet, hvis du har ejertilladelser til datasættet, enten i Desktop eller det program, der blev brugt til at oprette datasættet (f.eks. Excel). Ellers skal du kontakte ejeren af datasættet for at få hjælp.  
 
-Der findes et særligt afsnit sidst i denne artikel kaldet [**Tip og fejlfinding**](#considerations-and-troubleshooting). Her kan du finde tips og vejledning. Hvis du ikke kan finde løsningen her, kan du stille dit spørgsmål i [Power BI-community-forummet](http://community.powerbi.com). Du får hurtigt svar direkte fra Power BI-teamet.
+Der findes et særligt afsnit sidst i denne artikel kaldet [**Tip og fejlfinding**](#considerations-and-troubleshooting). Her kan du finde tips og vejledning. Hvis du ikke kan finde løsningen her, kan du stille dit spørgsmål i [Power BI-community-forummet](https://community.powerbi.com). Du får hurtigt svar direkte fra Power BI-teamet.
 
 ## <a name="change-how-a-numeric-field-is-aggregated"></a>Tilpas måden, hvorpå et numerisk felt aggregeres
 
@@ -188,4 +187,4 @@ Spørgsmål:  Jeg kan ikke se **Opsummer ikke** på rullelisten.
 
 Svar:  Prøv at fjerne feltet og tilføje det igen.
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

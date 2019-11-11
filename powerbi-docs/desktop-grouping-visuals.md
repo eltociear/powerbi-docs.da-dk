@@ -2,7 +2,6 @@
 title: Brug af gruppering i Power BI Desktop
 description: Få mere at vide om, hvordan du grupperer visualiseringer i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 6b6266547704077769174c2ae0a9675503f10dca
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: d67fbacece27ab75a3add89541dad77ce51a91f8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69029574"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73867482"
 ---
 # <a name="use-grouping-in-power-bi-desktop"></a>Brug af gruppering i Power BI Desktop
 Med **gruppering** kan du i **Power BI Desktop** gruppere visuelle elementer i din rapport, f.eks. knapper, tekstfelter, figurbilleder og alle visuelle elementer, som du opretter, på samme måde som du grupperer elementer i PowerPoint. Når du grupperer visuelle elementer i en rapport, kan du behandle gruppen som et enkelt objekt, så det bliver nemmere, hurtigere og mere intuitivt at flytte, tilpasse størrelsen og arbejde med lag i din rapport.

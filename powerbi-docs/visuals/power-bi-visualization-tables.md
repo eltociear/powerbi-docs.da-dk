@@ -2,7 +2,6 @@
 title: Tabelvisualiseringer i Power BI-rapporter og -dashboards
 description: Selvstudium til at arbejde med tabelvisualiseringer i Power BI-rapporter og dashboards, herunder, hvordan du tilpasser kolonnebredder.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 65410dc15600307ba11a2c48db1689be5a458383
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 2bb20b9ecc43e73e85d798416fe0ddaabb98e12b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71193285"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870797"
 ---
 # <a name="tables-in-power-bi-reports-and-dashboards"></a>Tabeller i Power BI-rapporter og -dashboards
 
@@ -26,7 +25,7 @@ En tabel er et gitter, der indeholder relaterede data i logiske serier af række
 
 ![Skærmbillede af en tabel, der viser fem forskellige målinger for Kategori.](media/power-bi-visualization-tables/power-bi-table-grid3.png)
 
-Opret tabeller i rapporter, og krydsfremhæv elementer i tabellen med andre visualiseringer på samme rapportside. Du kan vælge rækker, kolonner og endda individuelle celler og krydsfremhævning. Du kan også kopiere og indsætte de enkelte celler og markeringer med flere celler i andre programmer.
+Opret tabeller i rapporter, og udfør tværgående fremhævning af elementer i tabellen med andre visualiseringer på samme rapportside. Du kan vælge rækker, kolonner og endda individuelle celler og tværgående fremhævning. Du kan også kopiere og indsætte de enkelte celler og markeringer med flere celler i andre programmer.
 
 ## <a name="when-to-use-a-table"></a>Du skal bruge en tabel, til at
 
@@ -40,7 +39,7 @@ Tabeller er et godt valg til at:
 
 ## <a name="prerequisite"></a>Forudsætning
 
-I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Vælg **Fil** > **Åbn** i øverste venstre afsnit af menulinjen
    

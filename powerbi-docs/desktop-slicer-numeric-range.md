@@ -2,7 +2,6 @@
 title: Brug udsnitsværktøjet til numerisk område i Power BI Desktop
 description: Læs om, hvordan du kan bruge et udsnitsværktøj til at begrænse resultatet til numeriske intervaller i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,22 +9,22 @@ ms.topic: conceptual
 ms.date: 06/19/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: fa1311f93cd6b543d552070b990f1bada551a699
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.openlocfilehash: 535dbe2b1765d788e59d928f7303ce4696aa163b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307024"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879684"
 ---
 # <a name="use-the-numeric-range-slicer-in-power-bi-desktop"></a>Brug udsnitsværktøjet til numerisk område i Power BI Desktop
 Med udsnitsværktøjet til numerisk område kan du anvende forskellige filtre på en numerisk kolonne i din datamodel. Der er tre muligheder for at filtrere dine numeriske data: mellem tal, mindre end eller lig med et tal samt større end eller lig med et tal. Det lyder måske enkelt, men det er en effektiv måde at filtrere data på.
 
-![Visualisering med udsnitsværktøjet til numerisk område](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-0.png)
+![Visual med udsnitsværktøjet til numerisk område](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-0.png)
 
-## <a name="use-the-numeric-range-slicer"></a>Brug udsnitsværktøjet til numerisk område
+## <a name="use-the-numeric-range-slicer"></a>Brug det numeriske interval-udsnitsværktøj
 Du kan bruge udsnitsværktøjet til numerisk område ligesom ethvert andet udsnitsværktøj. Du skal blot oprette et **udsnitsværktøj**, der er synligt for din rapport, og derefter vælge en numerisk værdi for **Felt**-værdien. På følgende billede er feltet **LineTotal** markeret.
 
-![Opret et udsnitsværktøj til numerisk område](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-1-create.png)
+![Opret et numerisk interval-udsnitsværktøj](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-1-create.png)
 
 Hvis du vælger linket pil ned i øverste højre hjørne af **udsnitsværktøjet til numerisk område**, vises der en menu.
 
@@ -51,7 +50,7 @@ Sidst men ikke mindst, hvis du vælger **Større end eller lig med**, forsvinder
 
 ![Udsnitsværktøjet til numerisk område med Større end](media/desktop-slicer-numeric-range/desktop-slicer-numeric-range-5-greater-than.png)
 
-## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>Fastgør til heltal ved hjælp af udsnitsværktøjet til numerisk område
+## <a name="snap-to-whole-numbers-with-the-numeric-range-slicer"></a>Fastgør til hele tal ved hjælp af udsnitsværktøj til numerisk område
 
 Et udsnitsværktøj til et numerisk område fastgøres til heltal, hvis datatypen for det underliggende felt er **Heltal**. Med denne funktion kan udsnitsværktøjet nemt afstemmes til heltal. I feltet **Decimaltal** kan du angive eller vælge brøkdele af et tal. Den formatering, der anvendes i tekstfeltet, matcher den formatering, der er anvendt i feltet, selvom du kan angive eller vælge mere præcise tal.
 

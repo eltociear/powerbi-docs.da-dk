@@ -2,7 +2,6 @@
 title: Optimer dine data til Power BI Quick Insights
 description: Optimer dine data til Power BI Quick Insights. Hvis Power BI ikke kan finde indsigter i dine data, kan du benytte følgende tiltag
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/02/2017
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 2d2a0cca984776ea67fca45b39f91e280fe02afa
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 1ed588b0ca183e090d12f9aa0df23460a6037ed4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61235024"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872206"
 ---
 # <a name="optimize-your-data-for-power-bi-quick-insights"></a>Optimer dine data til Power BI Quick Insights
 Vil du forbedre Quick Insights-resultater?  Hvis du er ejer af datasæt, skal du prøve følgende:
@@ -28,5 +27,5 @@ Vil du forbedre Quick Insights-resultater?  Hvis du er ejer af datasæt, skal du
 ### <a name="next-steps"></a>Næste trin
 [Power BI Quick Insights](consumer/end-user-insights.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

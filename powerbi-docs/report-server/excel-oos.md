@@ -3,18 +3,17 @@ title: Host Excel-projektmapper ved hjælp af OOS (Office Online Server) – Pow
 description: Ud over at vise Power BI-rapporter på webportalen kan Power BI Report Server hoste Excel-projektmapper ved hjælp af OOS (Office Online Server).
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 08/21/2018
-ms.openlocfilehash: 5585750fcd5e6237f3cb00591cf5841f91393b84
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 907e65635424b709ec2c0850e4d0d759f4ba6dd3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769580"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874100"
 ---
 # <a name="configure-your-report-server-to-host-excel-workbooks-using-office-online-server-oos"></a>Konfigurer din rapportserver til at være vært for Excel-projektmapper ved hjælp af Office Online Server (OOS)
 
@@ -54,7 +53,7 @@ Udfør disse procedurer på den server, der kører Office Online Server. Servere
 
 Hvis du vil bruge Excel Online-funktioner, der bruger eksterne data (for eksempel Power Pivot, skal du være opmærksom på, at Office Online Server skal være placeret i den samme Active Directory-skov som brugerne og som de eksterne datakilder, som du planlægger at skulle have adgang til med Windows-baseret godkendelse.
 
-1. Download Office Online Server fra [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/p/?LinkId=256561). Du finder overførslen under disse Office-produkter på VLSC-portalen. Til udviklingsmæssige formål kan du downloade OOS fra MSDN-abonnentoverførsler.
+1. Download Office Online Server fra [Volume Licensing Service Center (VLSC)](https://go.microsoft.com/fwlink/p/?LinkId=256561). Du finder overførslen under disse Office-produkter på VLSC-portalen. Til udviklingsmæssige formål kan du downloade OOS fra MSDN-abonnentoverførsler.
 2. Kør Setup.exe.
 3. På siden **Læs licensvilkårene for Microsoft-software** skal du vælge **Jeg accepterer vilkårene i denne aftale** og vælge **Fortsæt**.
 4. På siden **Vælg en filplacering** skal du vælge den mappe, hvor Office Online Server-filerne skal installeres (f.eks. C:\Program Files\Microsoft Office Web Apps\*), og vælge **Installér nu**. Hvis den angivne mappe ikke findes, bliver den oprettet for dig.
@@ -69,7 +68,7 @@ Med sprogpakkerne til Office Online Server kan brugerne få vist webbaserede Off
 
 Følg disse trin for at installere sprogpakker.
 
-1. Download sprogpakkerne til Office Online Server fra [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?LinkId=798136).
+1. Download sprogpakkerne til Office Online Server fra [Microsoft Download Center](https://go.microsoft.com/fwlink/p/?LinkId=798136).
 2. Kør **wacserverlanguagepack.exe**.
 3. I guiden for sprogpakken til Office Online Server skal du vælge **Jeg accepterer vilkårene i denne aftale** på siden **Læs licensvilkårene for Microsoft-software** og derefter vælge **Fortsæt**.
 4. Når Office Online Server er installeret, skal du vælge **Luk**.
@@ -86,7 +85,7 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 
 **Parametre**
 
-* **–InternalURL** er det fuldt kvalificerede domænenavn (FQDN) for den server, der kører Office Online Server, f.eks. `http://servername.contoso.com`.
+* **–InternalURL** er det fuldt kvalificerede domænenavn (FQDN) for den server, der kører Office Online Server, f.eks. `https://servername.contoso.com`.
 * **–ExternalURL** er den FQDN-sti, der kan fås adgang til på internettet.
 * **–CertificateName** er certifikatets læsevenlige navn.
 
@@ -95,12 +94,12 @@ New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "ht
 Brug kommandoen New-OfficeWebAppsFarm til at oprette en ny Office Online Server-farm, der består af en enkelt server, som det kan ses i det følgende eksempel.
 
 ```powershell
-New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp
+New-OfficeWebAppsFarm -InternalURL "https://servername" -AllowHttp
 ```
 
 **Parametre**
 
-* **–InternalURL** er navnet på den server, der kører Office Online Server, f.eks. `http://servername`.
+* **–InternalURL** er navnet på den server, der kører Office Online Server, f.eks. `https://servername`.
 * **–AllowHttp** konfigurerer farmen til at bruge HTTP.
 
 ### <a name="verify-that-the-office-online-server-farm-was-created-successfully"></a>Kontrollér, at Office Online Server-farmen blev oprettet
@@ -168,7 +167,7 @@ Hvis du vil undgå firewallproblemer, skal du åbne portene 2382 og 2383. Du kan
 
 ## <a name="configure-power-bi-report-server-to-use-the-oos-server"></a>Konfigurer Power BI Report Server til at bruge OOS-serveren
 
-Angiv registreringswebadressen til OOS under **Generelt** på siden **Indstillinger for websted**. Registreringswebadressen til OOS er parameteren *InternalUrl*, som blev brugt ved implementeringen af OOS-serveren efterfulgt af */hosting/discovery*. For eksempel `http://servername/hosting/discovery` for HTTP. Og `https://server.contoso.com/hosting/discovery` for HTTPS.
+Angiv registreringswebadressen til OOS under **Generelt** på siden **Indstillinger for websted**. Registreringswebadressen til OOS er parameteren *InternalUrl*, som blev brugt ved implementeringen af OOS-serveren efterfulgt af */hosting/discovery*. For eksempel `https://servername/hosting/discovery` for HTTP. Og `https://server.contoso.com/hosting/discovery` for HTTPS.
 
 Du kommer til **Indstillinger for websted** ved at vælge **tandhjulsikonet** i øverste højre hjørne og vælge **Indstillinger for websted**.
 
@@ -187,6 +186,6 @@ Når du vælger en Excel-projektmappe på webportalen, efter at du har angivet r
 [Administratoroversigt](admin-handbook-overview.md)  
 [Installer Power BI-rapportserver](install-report-server.md)  
 [Download Report Builder](https://www.microsoft.com/download/details.aspx?id=53613)  
-[Download SQL Server Data Tools (SSDT)](http://go.microsoft.com/fwlink/?LinkID=616714)
+[Download SQL Server Data Tools (SSDT)](https://go.microsoft.com/fwlink/?LinkID=616714)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

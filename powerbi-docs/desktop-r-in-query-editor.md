@@ -2,7 +2,6 @@
 title: Brug R i Forespørgselseditor i Power BI
 description: Brug R i Power BI Desktop-forespørgselseditoren til avancerede analyser
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: b64b4b736291ce1c3bde02010b7e583a0c3dc406
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: d2ba33e18701ad147cb38072461804b4528101ea
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841519"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877931"
 ---
 # <a name="use-r-in-query-editor"></a>Brug R i Forespørgselseditor
 
@@ -50,7 +49,7 @@ Sådan installerer du **mice**:
 
 For at demonstrere brug af **R** i **Forespørgselseditor** bruger vi et datasæt, der er indeholdt i en .csv-fil, fra aktiemarkedet som eksempel og gennemgår følgende trin:
 
-1. [Download filen **EuStockMarkets_NA.csv**](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Husk, hvor du gemmer den.
+1. [Download filen **EuStockMarkets_NA.csv**](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/EuStockMarkets_NA.csv). Husk, hvor du gemmer den.
 
 1. Indlæs filen i **Power BI Desktop**: På båndet **Start** skal du vælge **Hent data > Tekst/CSV**.
 
@@ -108,7 +107,7 @@ Nu kan vi oprette en visualisering for at se, hvordan R-scriptkoden udfyldte de 
 Du kan gemme alle fuldførte visualiseringer i én .pbix-fil i **Power BI Desktop** og bruge datamodellen og dens R-scripts i Power BI-tjenesten.
 
 > [!NOTE]
-> Du kan [downloade en .pbix-fil](http://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete%20Values%20with%20R%20in%20PQ.pbix) med alle disse trin fuldført.
+> Du kan [downloade en .pbix-fil](https://download.microsoft.com/download/F/8/A/F8AA9DC9-8545-4AAE-9305-27AD1D01DC03/Complete%20Values%20with%20R%20in%20PQ.pbix) med alle disse trin fuldført.
 
 Når du har uploadet .pbix-filen til Power BI-tjenesten, skal du udføre yderligere trin for at aktivere opdatering af tjenestedata og opdaterede visualiseringer:  
 

@@ -2,7 +2,6 @@
 title: Opret forbindelse til data i Power BI Desktop
 description: Opret forbindelse til data i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,15 +10,15 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 0a582eb5c160685784c6db497353f92d2dd3d2cf
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b9e006cb14d391b82c7a1f48ba760ad9c363062c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514133"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878497"
 ---
 # <a name="connect-to-data-in-power-bi-desktop"></a>Opret forbindelse til data i Power BI Desktop
-I Power BI Desktop kan du nemt oprette forbindelse til en stadig større verden af data. Hvis du ikke har Power BI Desktop, kan du [downloade](http://go.microsoft.com/fwlink/?LinkID=521662) og installere det.
+I Power BI Desktop kan du nemt oprette forbindelse til en stadig større verden af data. Hvis du ikke har Power BI Desktop, kan du [downloade](https://go.microsoft.com/fwlink/?LinkID=521662) og installere det.
 
 I Power BI Desktop findes der *alle mulige* forskellige datakilder. På følgende billede kan du se, hvordan du opretter forbindelse til data ved at vælge båndet **Filer** og derefter **Hent data \> Flere**.
 
@@ -32,7 +31,7 @@ Forestil dig, at du går på pension – du vil gerne bo et sted, hvor der er ma
 
 Uanset hvad, kan du finde en webressource, der indeholder interessante data om disse og andre emner:
 
-[*http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](http://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
+[*https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx*](https://www.bankrate.com/finance/retirement/best-places-retire-how-state-ranks.aspx)
 
 Vælg **Hent data \> Web**, og skriv adressen.
 
@@ -75,7 +74,7 @@ Du kan gøre mange forskellige ting med Power BI Desktop. Du kan finde flere opl
 * [Udform og kombiner data med Power BI Desktop](desktop-shape-and-combine-data.md)
 * [Almindelige forespørgselsopgaver i Power BI Desktop](desktop-common-query-tasks.md)   
 
-Vil du give os feedback? Super! Brug menuelementet **Indsend en idé** i Power BI Desktop, eller besøg [Feedback fra community](http://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). Vi ser frem til at høre fra dig!
+Vil du give os feedback? Super! Brug menuelementet **Indsend en idé** i Power BI Desktop, eller besøg [Feedback fra community](https://community.powerbi.com/t5/Community-Feedback/bd-p/community-feedback). Vi ser frem til at høre fra dig!
 
 ![](media/desktop-connect-to-data/sendfeedback.png)
 

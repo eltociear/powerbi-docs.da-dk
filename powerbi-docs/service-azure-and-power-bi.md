@@ -3,19 +3,18 @@ title: Azure og Power BI
 description: Azure og Power BI
 author: davidiseminger
 ms.author: davidi
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/08/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: 9d48054e4b41c097d51522ad7596b750bd067e6d
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: db988dfd360aae00fed1f6d917376a6ba54f9089
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513354"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873231"
 ---
 # <a name="azure-and-power-bi"></a>Azure og Power BI
 
@@ -31,7 +30,7 @@ Du kan starte med en enkel forbindelse til en Azure SQL Database og oprette rapp
 
 ![SQL til PBI](media/service-azure-and-power-bi/azure_2_sqltopbi.png)
 
-Der findes masser af yderligere oplysninger, som kan lære dig om [Azure SQL Database](http://azure.microsoft.com/services/sql-database/).
+Der findes masser af yderligere oplysninger, som kan lære dig om [Azure SQL Database](https://azure.microsoft.com/services/sql-database/).
 
 ## <a name="transform-shape-and-merge-your-cloud-data"></a>Transformér, formgiv og flet dine clouddata
 
@@ -43,13 +42,13 @@ Du kan også oprette forskellige rapporter til forskellige målgrupper ved hjæl
 
 Hvis du vil have mere at vide, kan du se følgende ressourcer:
 
-* [Azure SQL Database](http://azure.microsoft.com/services/sql-database/)
-* [Azure HDInsight](http://azure.microsoft.com/services/hdinsight/)
-* [Azure Storage](http://azure.microsoft.com/services/storage/) (Blob Storage og Table Storage)
+* [Azure SQL Database](https://azure.microsoft.com/services/sql-database/)
+* [Azure HDInsight](https://azure.microsoft.com/services/hdinsight/)
+* [Azure Storage](https://azure.microsoft.com/services/storage/) (Blob Storage og Table Storage)
 
 ## <a name="get-complex-and-ahead-using-azure-services-and-power-bi"></a>Bliv kompleks (og kom foran) ved hjælp af Azure-tjenester og Power BI
 
-Du kan udvide lige så meget, du har brug for, med Azure og i Power BI. Benyt dig af databehandling med flere kilder, gør brug af omfattende realtidssystemer, brug [Stream Analytics](http://azure.microsoft.com/services/stream-analytics/) og [Event Hubs](http://azure.microsoft.com/services/event-hubs/), og saml dine forskellige SaaS-tjenester i business intelligence-rapporter, der giver din virksomhed kant.
+Du kan udvide lige så meget, du har brug for, med Azure og i Power BI. Benyt dig af databehandling med flere kilder, gør brug af omfattende realtidssystemer, brug [Stream Analytics](https://azure.microsoft.com/services/stream-analytics/) og [Event Hubs](https://azure.microsoft.com/services/event-hubs/), og saml dine forskellige SaaS-tjenester i business intelligence-rapporter, der giver din virksomhed kant.
 
 ![Azure-kompleks](media/service-azure-and-power-bi/azure_4_complex.png)
 
@@ -57,7 +56,7 @@ Du kan udvide lige så meget, du har brug for, med Azure og i Power BI. Benyt di
 
 Integrer flotte, interaktive datavisualiseringer i programmer, websteder, portaler m.m. for at udnytte dine forretningsdata. Hvis du bruger [Power BI Embedded som en ressource i Azure](https://azure.microsoft.com/services/power-bi-embedded/), kan du nemt integrere interaktive rapporter og dashboards, så dine brugere får ensartede oplevelser af høj kvalitet på tværs af enheder.  Power BI, der bruges sammen med integreringsanalyser, skal hjælpe dig med at komme gennem Data -> Viden -> Indsigt -> Handlinger.  Derudover kan du også få mere ud af Power BI og Azure ved at integrere analyser i [organisationens interne programmer og portaler](https://powerbi.microsoft.com/developers/embedded-analytics/organization/).
 
-Der er mange oplysninger om Power BI-API'er på [Power BI-udviklerportalen](http://dev.powerbi.com).
+Der er mange oplysninger om Power BI-API'er på [Power BI-udviklerportalen](https://dev.powerbi.com).
 
 Du kan finde flere oplysninger i [Hvad kan udviklere gøre med Power BI?](developer/what-can-you-do.md)
 

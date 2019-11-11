@@ -2,7 +2,6 @@
 title: Føj et link til et tekstfelt i en rapport
 description: Føj et link til et tekstfelt i Power BI Desktop og Power BI-tjenesten
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 0ceb1749fcbf78ac844ca1c6e4b3f08a6f4c5d3f
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: 2de2cd80dbffc8c65a4577fffd6a8e41bc6116d2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832417"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873783"
 ---
 # <a name="add-a-hyperlink-to-a-text-box-in-a-report"></a>Føj et link til et tekstfelt i en rapport
 Du kan føje et tekstfelt til en rapport i Power BI Desktop eller Power BI-tjenesten. Du kan fastgøre et tekstfelt fra en rapport til et dashboard eller føje et direkte til et dashboard. Uanset hvor tekstfeltet er, kan du altid føje et link til det. I denne artikel kan du se, hvordan du føjer et link til et tekstfelt i en rapport. 
@@ -35,7 +34,7 @@ Du kan finde oplysninger om links i Power BI-tabeller og -matrixer under [Føj l
    Tekstfeltets menu vises.
    
    ![Vælg tekst i tekstfeltet](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-new.png)
-3. Vælg linkikonet ![Ikon for link](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-icon.png) i tekstfeltets menu.
+3. Vælg linkikonet ![Hyperlinkikon](media/service-add-hyperlink-to-text-box/power-bi-hyperlink-icon.png) i tekstfeltets menu.
 
    Linkfeltet vises i tekstfeltets menu.
 
@@ -63,5 +62,5 @@ Du kan finde oplysninger om links i Power BI-tabeller og -matrixer under [Føj l
 ## <a name="next-steps"></a>Næste trin
 [Tekstfelter og figurer i Power BI-rapporter](power-bi-reports-add-text-and-shapes.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/).
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
 

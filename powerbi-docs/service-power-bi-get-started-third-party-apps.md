@@ -1,22 +1,21 @@
 ---
-title: Power BI Kom i gang med tredjepartsapps
-description: Power BI Kom i gang med tredjepartsapps
+title: Power BI Kom i gang med tredjeparts-apps
+description: Power BI Kom i gang med tredjeparts-apps
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.cunstom: ''
 ms.date: 09/16/2019
 LocalizationGroup: Get started
-ms.openlocfilehash: 3de0b5473c6d00013bdf109f262dc0577c3bf290
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: a3c060693a218a4c7a9dc5d0dea726c10e07d276
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073529"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871930"
 ---
 # <a name="get-started-with-third-party-apps"></a>Kom i gang med tredjepartsapps
 
@@ -57,6 +56,6 @@ På webstedet **Mine apps i Office 365** kan du tilbagekalde tilladelser fra tre
 
 2. Find tredjepartsappen på siden **Mine apps**.
 
-3. Hold musemarkøren over appfeltet, klik på knappen **(...)**, og klik på **Fjern**.
+3. Hold musemarkøren over appfeltet, klik på knappen **(...)** , og klik på **Fjern**.
 
    ![Fjern](media/service-power-bi-get-started-third-party-apps/remove.png)

@@ -2,7 +2,6 @@
 title: Tips til udformning af et fantastisk Power BI-dashboard
 description: Tips til udformning af et fantastisk Power BI-dashboard
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 2083fa0d197010ca770422f11c7f1e4b83d0184b
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 95170ec36c5b4da0314c858ae415c3bbcb2ab556
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023763"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877412"
 ---
 # <a name="tips-for-designing-a-great-power-bi-dashboard"></a>Tips til udformning af et fantastisk Power BI-dashboard
 Nu, hvor du har oprettet et dashboard og tilføjet nogle felter, kan du overveje, hvordan du ikke bare gør dit dashboard flot, men også funktionelt. Generelt betyder det, at man skal få de vigtigste oplysninger til at skille sig ud og gør dem tydelige og ikke rodet.
@@ -24,8 +23,6 @@ Nu, hvor du har oprettet et dashboard og tilføjet nogle felter, kan du overveje
 
 > [!TIP]
 > Kan du lide dette dashboard? Du kan downloade dét og relaterede rapporter fra AppSource. Gå til **Hent data** > **Tjenester**. Søg efter **Microsoft Sample - Sales & Marketing** > **Hent det nu**.
-
-Mange af designprincipperne for rapporter gælder også for dashboards. Læs vores hvidbog [Bedste praksis for design af rapporter og visualiseringer](visuals/power-bi-visualization-best-practices.md).
 
 Her er nogle få tip til dashboards.
 
@@ -74,7 +71,7 @@ Undgå at variere visualiseringerne bare for variationens skyld.  Visualiseringe
 Se [Visualiseringstyper i Power BI](visuals/power-bi-visualization-types-for-reports-and-q-and-a.md) for at få en mere visualiseringsspecifik vejledning.  
 
 ## <a name="learn-more-about-dashboard-design"></a>Få mere at vide om dashboarddesign
-For at kunne mestre kunsten at lave et godt dashboarddesign bør du overveje at lære de grundlæggende designprincipper for visuel perception, og hvordan du tydeligt kommunikerer handlingsrettet information i kontekst. Heldigvis findes der allerede et bredt udvalg af ressourcer bl.a. rundt omkring på vores blogs. Nogle få af vores foretrukne bøger er bl.a.:
+For at kunne mestre kunsten at lave et godt dashboard-design bør du overveje at lære de grundlæggende designprincipper for visuel perception, og hvordan du tydeligt kommunikerer handlingsrettet information i kontekst. Heldigvis findes der allerede et bredt udvalg af ressourcer bl.a. rundt omkring på vores blogs. Nogle få af vores foretrukne bøger er bl.a.:
 
 * *Information Dashboard Design* af Stephen Few  
 * *Show Me the Numbers* af Stephen Few  
@@ -85,4 +82,4 @@ For at kunne mestre kunsten at lave et godt dashboarddesign bør du overveje at 
 ## <a name="next-steps"></a>Næste trin
 [Opret et dashboard fra en rapport](service-dashboard-create.md)  
 [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)  
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

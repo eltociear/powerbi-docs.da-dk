@@ -2,7 +2,6 @@
 title: 'Selvstudium: Importér og analysér data fra en webside'
 description: 'Selvstudium: Importér og analysér data fra en webside ved hjælp af Power BI Desktop'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: d6cdcf47b42be4a9b541aa355efb3dd5e9667204
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e4a805db851e63a725a866065a774ef8ecc23c24
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514623"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879583"
 ---
 # <a name="tutorial-analyze-web-page-data-using-power-bi-desktop"></a>Selvstudium: Analysér data på en webside ved hjælp af Power BI Desktop
 
@@ -29,7 +28,7 @@ Som inkarneret fodboldfan vil du oprette en rapport med vinderne af europamester
 
 ## <a name="connect-to-a-web-data-source"></a>Opret forbindelse til en webdatakilde
 
-Du kan få data om europamestrene fra resultattabellen på siden UEFA European Football Championship på Wikipedia på http://en.wikipedia.org/wiki/UEFA_European_Football_Championship. 
+Du kan få data om europamestrene fra resultattabellen på siden UEFA European Football Championship på Wikipedia på https://en.wikipedia.org/wiki/UEFA_European_Football_Championship. 
 
 ![Resultattabellen på Wikipedia](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage1.png)
 
@@ -44,7 +43,7 @@ Sådan importerer du dataene:
    >[!NOTE]
    >Du kan også vælge selve menupunktet **Hent data** eller vælge **Hent data** fra Power BI-dialogboksen **Introduktion**, vælge **Web** fra sektionen **Alle** eller **Andre** i dialogboksen **Hent data** og derefter vælge **Opret forbindelse**.
    
-2. I dialogboksen **Fra web** skal du indsætte URL-adressen `http://en.wikipedia.org/wiki/UEFA_European_Football_Championship` i tekstfeltet **URL-adresse** og derefter vælge **OK**.
+2. I dialogboksen **Fra web** skal du indsætte URL-adressen `https://en.wikipedia.org/wiki/UEFA_European_Football_Championship` i tekstfeltet **URL-adresse** og derefter vælge **OK**.
    
     ![Hent data fra dialogboks](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/get-data-web2.png)
    
@@ -59,7 +58,7 @@ Sådan importerer du dataene:
    
    Der åbnes et eksempel på tabellen i **Power-forespørgselseditor**, hvor du kan anvende transformationer for at rydde op i dataene. 
    
-   ![Power-forespørgselseditor](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
+   ![Power Query-editor](media/desktop-tutorial-importing-and-analyzing-data-from-a-web-page/webpage3.png)
    
 ## <a name="shape-data-in-power-query-editor"></a>Form data i Power-Forespørgselseditor
 
@@ -186,8 +185,8 @@ Hvis du vil ændre kortet til et cirkeldiagram, skal du markere kortet og dereft
 Med Power BI Desktop er det nemt at hente data fra en lang række forskellige datakilder og forme dem til dine analysebehov for at kunne visualisere disse data på omfattende og interaktive måder. Når din rapport er færdig, kan du [uploade den til Power BI](desktop-upload-desktop-files.md) og oprette dashboards ud fra den, som du derefter kan dele med andre Power BI-brugere.
 
 ## <a name="see-also"></a>Se også
-* [Læs andre selvstudier til Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=521937)
-* [Se videoer om Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=519322)
-* [Besøg Power BI-forummet](http://go.microsoft.com/fwlink/?LinkID=519326)
-* [Læs Power BI-bloggen](http://go.microsoft.com/fwlink/?LinkID=519327)
+* [Læs andre selvstudier til Power BI Desktop](https://go.microsoft.com/fwlink/?LinkID=521937)
+* [Se videoer om Power BI Desktop](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Besøg Power BI-forummet](https://go.microsoft.com/fwlink/?LinkID=519326)
+* [Læs Power BI-bloggen](https://go.microsoft.com/fwlink/?LinkID=519327)
 

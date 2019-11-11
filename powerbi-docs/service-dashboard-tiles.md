@@ -2,7 +2,6 @@
 title: Introduktion til dashboardfelter for Power BI-designere
 description: I denne artikel beskrives dashboardfelter i Power BI, hvilket omfatter felter, der er oprettet fra rapporter i SQL Server Reporting Services (SSRS).
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4577ca5d12002e18406b66036244d895fa7ee5fd
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 801af5e9c4d5306a3e77d4e82c787cc90e9cac37
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994853"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872790"
 ---
 # <a name="intro-to-dashboard-tiles-for-power-bi-designers"></a>Introduktion til dashboardfelter for Power BI-designere
 
@@ -38,7 +37,7 @@ Har du brug for hjælp til at forstå de komponenter, der udgør Power BI? Se [G
 ## <a name="pin-a-tile"></a>Fastgør et felt
 Der er mange forskellige måder at føje (fastgøre) et felt til et dashboard på. Du kan fastgøre felter fra:
 
-* [Spørgsmål og svar i Power BI](service-dashboard-pin-tile-from-q-and-a.md)
+* [Power BI Spørgsmål og svar](service-dashboard-pin-tile-from-q-and-a.md)
 * [En rapport](service-dashboard-pin-tile-from-report.md)
 * [Et andet dashboard](service-pin-tile-to-another-dashboard.md)
 * [Excel-projektmappe på OneDrive for Business](service-dashboard-pin-tile-from-excel.md)
@@ -56,7 +55,7 @@ Når du har føjet et felt til et dashboard, kan du flytte og tilpasse størrels
 ### <a name="move-and-resize-a-tile"></a>Flyt og tilpas størrelsen på et felt
 Tag et felt, og [flyt det rundt på dashboardet](service-dashboard-edit-tile.md). Hold over håndtaget ![Felthåndtag](media/service-dashboard-tiles/resize-handle.jpg), og vælg det, for at tilpasse størrelsen af feltet.
 
-### <a name="hover-over-a-tile-to-change-the-appearance-and-behavior"></a>Hold over et felt for at ændre udseende og funktionalitet
+### <a name="hover-over-a-tile-to-change-the-appearance-and-behavior"></a>Peg på et felt for at ændre udseende og funktionalitet
 1. Hold over feltet for at få vist ellipsen.
    
     ![Feltets ellipse](media/service-dashboard-tiles/ellipses_new.png)
@@ -99,8 +98,8 @@ Når du vælger et felt, afhænger næste handling af, hvordan du oprettede felt
 - [Introduktion til dashboards for Power BI-designere](service-dashboards.md)  
 - [Opdatering af data i Power BI](refresh-data.md)
 - [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
-- [Integrering af Power BI-felter i Office-dokumenter](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
+- [Integrering af Power BI-felter i Office-dokumenter](https://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
 - [Fastgør Reporting Services-elementer til Power BI-dashboards](https://msdn.microsoft.com/library/mt604784.aspx)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/).
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
 

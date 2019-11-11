@@ -2,7 +2,6 @@
 title: Brug af målinger i Power BI Desktop
 description: Målinger i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/29/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: d5ada41ef4941f14118b777e37e731337a5282d0
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: c75300a05b58b82230540a1a61ae503d194d53e0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715388"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878134"
 ---
 # <a name="measures-in-power-bi-desktop"></a>Målinger i Power BI Desktop
 
@@ -87,7 +86,7 @@ Endelig kan du oprette en specialtabel, der kun indeholder de målinger, der alt
 ## <a name="learn-more"></a>Få mere at vide
 Vi har kun givet en hurtig introduktion til målinger her, men der er mange flere oplysninger, der kan hjælpe dig med at få mere at vide om, hvordan du opretter dine egne målinger. Husk at se [Selvstudium: Opret dine egne målinger i Power BI Desktop](desktop-tutorial-create-measures.md), hvor du kan downloade en eksempelfil og få trinvise vejledninger i, hvordan du opretter flere målinger.  
 
-Hvis du vil gå mere i dybden med DAX, skal du tjekke [Grundlæggende oplysninger om DAX i Power BI Desktop](desktop-quickstart-learn-dax-basics.md). [Data Analysis Expressions-referencen](https://msdn.microsoft.com/library/gg413422.aspx) indeholder detaljerede artikler om hver enkelt funktion, syntaks, operatorer og navngivningskonventioner. DAX er blevet brugt i flere år i Power Pivot i Excel og SQL Server Analysis Services, så der er også mange andre fantastiske ressourcer tilgængelige. Sørg for at se i [DAX Resource Center Wiki](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx), hvor vigtige medlemmer af BI-community'et deler deres viden om DAX.
+Hvis du vil gå mere i dybden med DAX, skal du tjekke [Grundlæggende oplysninger om DAX i Power BI Desktop](desktop-quickstart-learn-dax-basics.md). [Data Analysis Expressions-referencen](https://msdn.microsoft.com/library/gg413422.aspx) indeholder detaljerede artikler om hver enkelt funktion, syntaks, operatorer og navngivningskonventioner. DAX er blevet brugt i flere år i Power Pivot i Excel og SQL Server Analysis Services, så der er også mange andre fantastiske ressourcer tilgængelige. Sørg for at se i [DAX Resource Center Wiki](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx), hvor vigtige medlemmer af BI-community'et deler deres viden om DAX.
 
 
 

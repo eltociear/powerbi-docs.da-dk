@@ -2,7 +2,6 @@
 title: To måder at dele en filtreret Power BI-rapport på
 description: Få mere at vide om to måder at filtrere Power BI-rapporter på og dele dem med kolleger i din organisation.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 featuredvideoid: 0tUwn8DHo3s
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: c5bc8b32ae61870b794875c1d1720cd07dcf97f8
-ms.sourcegitcommit: 6a44cb5b0328b60ebe7710378287f1e20bc55a25
+ms.openlocfilehash: 79f09b5018efcdae88d74ae26f099ff095fb161a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70877704"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871434"
 ---
 # <a name="two-ways-to-share-a-filtered-power-bi-report"></a>To måder at dele en filtreret Power BI-rapport på
 *Deling* er velegnet til at give nogle få personer adgang til dine dashboards og rapporter. Hvad nu hvis du vil dele en filtreret version af en rapport? Måske en rapport, der kun viser data for en bestemt by eller sælger eller et bestemt år. Prøv at filtrere en rapport og dele den, eller opret en brugerdefineret URL-adresse. Rapporten filtreres, når modtagerne åbner den. De kan fjerne filteret ved at ændre URL-adressen. 
@@ -74,6 +73,6 @@ Se artiklen [Filtrer en rapport ved hjælp af parametre for forespørgselsstreng
 ## <a name="next-steps"></a>Næste trin
 * [Måder at dele dit arbejde på i Power BI](service-how-to-collaborate-distribute-dashboards-reports.md)
 * [Del et dashboard](service-share-dashboards.md)
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/).
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/).
 * Har du feedback? Indsend dine forslag på [webstedet for Power BI-community'et](https://community.powerbi.com/).
 

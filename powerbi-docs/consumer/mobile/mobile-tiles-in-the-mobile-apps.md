@@ -2,19 +2,18 @@
 title: Udforsk felter i Power BI-mobilappsene
 description: Felter er dynamiske øjebliksbilleder af dine data, der er fastgjort til et dashboard. Få mere at vide om, hvordan du interagerer med felter i Power BI-mobilappsene.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 87c223c8ef0be0eac81bb672bde10023dcf79d71
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 570276b8af2862d6aab6dc806cb0c627be8ff157
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059768"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870044"
 ---
 # <a name="explore-tiles-in-the-power-bi-mobile-apps"></a>Udforsk felter i Power BI-mobilappsene
 Kan anvendes med:
@@ -123,5 +122,5 @@ Derefter åbner du felter i fokustilstand i Power BI-mobilappsene og interagerer
 
 ## <a name="next-steps"></a>Næste trin
 * [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 
