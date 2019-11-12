@@ -2,7 +2,6 @@
 title: Hvad er Power BI-tjenesten?
 description: Oversigt over Power BI-tjenesten, og hvordan den passer til de øvrige dele af Power BI.
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 featuredvideoid: B2vd4MQrz4M
@@ -10,12 +9,12 @@ ms.topic: overview
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: b8a01839da68a276ff136d7068dafac0ce82f102
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 22446936f36074379242bd54af15c9bb2864e4a8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060862"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875000"
 ---
 # <a name="what-is-the-power-bi-service"></a>Hvad er Power BI-tjenesten?
 **Power BI** er en samling af softwaretjenester, apps og forbindelseskomponenter, der arbejder sammen for at hjælpe dig med at oprette, dele og bruge forretningsmæssig indsigt på den mest hensigtsmæssige måde for dig og din virksomhed. Microsoft Power BI-*tjenesten* (app.powerbi.com), som nogle gange kaldes Power BI-online, er SaaS-delen (*software som en tjeneste*) af Power BI. I Power BI-tjenesten hjælper *dashboards* dig med at holde styr på, hvad der sker i din virksomhed. Der vises *felter* i dashboards, som du kan vælge for at åbne *rapporter*, der skal udforskes yderligere. Dashboards og rapporter opretter forbindelse til flere *datasæt* for at samle alle relevante data på ét sted. 
