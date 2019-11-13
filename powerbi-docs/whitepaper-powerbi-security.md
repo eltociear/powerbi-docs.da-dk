@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 10/24/2019
 LocalizationGroup: Conceptual
-ms.openlocfilehash: 075d4ea0c243f77ebf0d29020f25bbca6567c6c0
-ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.openlocfilehash: fa9c07be31f5110f44c2f200bbde249c95abe9ed
+ms.sourcegitcommit: 0d7ad791a2d2bef45d5d60e38e0af4c9fc22187b
 ms.translationtype: MT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73870774"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74009824"
 ---
 # <a name="power-bi-security-whitepaper"></a>Whitepaper om sikkerhed i Power BI
 
@@ -334,12 +334,6 @@ Et hurtigt eksempel på forskellen mellem datakilder, der understøtter sikkerhe
 
 Hvis Ralph vil have adgang til det delte dashboard eller den delte rapport, vil den samme sekvens ske på baggrund af hans rolleniveau.
 
-## <a name="power-bi-and-expressroute"></a>Power BI og ExpressRoute
-
-I forbindelse med Power BI og ExpressRoute kan du oprette en privat netværksforbindelse fra din organisation til Power BI (eller bruge en ISP's colocationsfacilitet), der omgår internettet og sørger for bedre sikkerhed for dine følsomme Power BI-data og -forbindelser.
-
-ExpressRoute er en Azure-tjeneste, der giver dig mulighed for at oprette private forbindelser mellem Azure-datacentre (hvor Power BI er placeret) og infrastrukturen i det lokale miljø eller oprette private forbindelser mellem Azure-datacentre og dit colocationsmiljø. Du kan finde yderligere oplysninger i artiklen [Power BI og ExpressRoute](service-admin-power-bi-expressroute.md).
-
 ## <a name="power-bi-mobile"></a>Power BI Mobile
 
 Power BI-Mobil er en samling af apps, der er udviklet til de tre primære mobil platforme: Android-, iOS-og Windows Mobile. Sikkerhedsovervejelser i forbindelse med apps til Power BI – Mobil falder i to kategorier:
@@ -450,7 +444,7 @@ Følgende spørgsmål er almindelige spørgsmål og svar om sikkerhed i Power BI
 
 **Er der andre Power BI-visualiseringer, som sender oplysninger uden for kundens netværk?**
 
-* Ja. Bing Kort og ESRI-visualiseringer overfører data ud af Power BI-tjenesten for visualiseringer, der bruger disse tjenester. Du kan finde flere oplysninger og detaljerede beskrivelser af trafik ud af Power BI-lejeren under [**Power BI og ExpressRoute**](service-admin-power-bi-expressroute.md).
+* Ja. Bing Kort og ESRI-visualiseringer overfører data ud af Power BI-tjenesten for visualiseringer, der bruger disse tjenester.
 
 **I forbindelse med skabelonapps udfører Microsoft da alle vurderinger af skabelonappens sikkerhed eller beskyttelse af personlige oplysninger før udgivelse af elementer i galleriet?**
 * Nej. Appudgiveren er ansvarlig for indholdet, mens kundens ansvar er at gennemse og bestemme, om der er tillid til skabelonappens udgiver. 
@@ -487,7 +481,6 @@ Du kan finde flere oplysninger om Power BI i følgende ressourcer.
 - [REST API til Power BI – oversigt](https://msdn.microsoft.com/library/dn877544.aspx)
 - [Reference til Power BI-API](https://msdn.microsoft.com/library/mt147898.aspx)
 - [On-premises data gateway (Datagateway i det lokale miljø)](service-gateway-onprem.md)
-- [Power BI og ExpressRoute](service-admin-power-bi-expressroute.md)
 - [Nationale Power BI-cloudmiljøer](https://powerbi.microsoft.com/clouds/)
 - [Power BI Premium](https://aka.ms/pbipremiumwhitepaper)
 - [Brug Kerberos til SSO fra Power BI til datakilder i det lokale miljø](service-gateway-sso-overview.md)
