@@ -119,6 +119,8 @@
           items:
             - name: Datakilder i Power BI Desktop
               href: desktop-data-sources.md
+            - name: Opret forbindelse til LinkedIn Sales Navigator (eksempelvisning)
+              href: desktop-connect-linkedin-sales-navigator.md
             - name: Opret forbindelse til en webside efter eksempel (eksempelvisning)
               href: desktop-connect-to-web-by-example.md
             - name: Opret forbindelse til datasæt i Power BI service
@@ -201,6 +203,8 @@
           items:
             - name: Kombiner binære
               href: desktop-combine-binaries.md
+            - name: Brug kunstig intelligens i Power BI Desktop (eksempelvisning)
+              href: desktop-ai-insights.md
         - name: Modeller dine data
           items:
             - name: Datakategorisering i Power BI Desktop
@@ -339,6 +343,8 @@
               href: visuals/power-bi-visualization-card.md
             - name: Kombinationsdiagram i Power BI
               href: visuals/power-bi-visualization-combo-chart.md
+            - name: Opdelingstræ i Power BI (eksempelvisning)
+              href: visuals/power-bi-visualization-decomposition-tree.md
             - name: Kransediagrammer i Power BI
               href: visuals/power-bi-visualization-doughnut-charts.md
             - name: Udfyldte kort (Choropleths) i Power BI
@@ -375,8 +381,6 @@
               href: visuals/power-bi-visualization-treemaps.md
             - name: Vandfaldsdiagrammer i Power BI
               href: visuals/power-bi-visualization-waterfall-charts.md
-            - name: Opret dynamiske referencelinjer
-              href: service-analytics-pane.md
         - name: Naturligt sprog
           items:
             - name: Introduktion til Spørgsmål og svar
@@ -405,6 +409,8 @@
       items:
         - name: Datatyper i Power BI Desktop
           href: desktop-data-types.md
+        - name: Brug det opdaterede bånd i Power BI Desktop (eksempelvisning)
+          href: desktop-ribbon.md
         - name: Genveje i formeleditor til Power BI Desktop
           href: desktop-formula-editor.md
         - name: Niveauer for beskyttelse af personlige oplysninger i Power BI Desktop
