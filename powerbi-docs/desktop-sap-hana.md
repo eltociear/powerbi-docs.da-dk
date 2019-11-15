@@ -2,7 +2,6 @@
 title: Brug SAP HANA i Power BI Desktop
 description: Brug SAP HANA i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,15 +10,15 @@ ms.topic: conceptual
 ms.date: 08/21/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1932848cb2f8ad7d75e841870265cc22308467c2
-ms.sourcegitcommit: a00fe5fb545c3df13b7cd13a701fd6a2b2521a17
+ms.openlocfilehash: bf258597f6369541fb9a221c8d423e8a9078a3a4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70200855"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879752"
 ---
 # <a name="use-sap-hana-in-power-bi-desktop"></a>Brug SAP HANA i Power BI Desktop
-Med Power BI Desktop har du nu adgang til **SAP HANA**-databaser. Hvis du vil bruge **SAP HANA**, skal SAP HANA ODBC-driveren være installeret på den lokale klientcomputer, for at Power BI Desktop **SAP HANA**-dataforbindelsen skal fungere korrekt. Du kan hente SAP HANA ODBC-driveren fra [SAP Software Download Center](https://support.sap.com/swdc). Herfra kan du søge efter SAP HANA CLIENT til Windows-computere. Da strukturen i **SAP Software Download Center** ofte ændres, kan vi ikke give en mere specifik vejledning til, hvordan du henter programmet.
+Med Power BI Desktop har du nu adgang til **SAP HANA**-databaser. Hvis du vil bruge **SAP HANA**, skal SAP HANA ODBC-driveren være installeret på den lokale klientcomputer, for at Power BI Desktop **SAP HANA**-dataforbindelsen skal fungere korrekt. Du kan downloade SAP HANA-klientværktøjer fra [SAP-udviklingsværktøjer](https://tools.hana.ondemand.com/#hanatools), som indeholder den nødvendige ODBC-driver. Du kan også få dem i [SAP software Download Center](https://support.sap.com/swdc). I softwareportalen kan du søge efter SAP HANA CLIENT til Windows-computere. Da strukturen i **SAP Software Download Center** ofte ændres, kan vi ikke give en mere specifik vejledning til, hvordan du henter programmet.
 
 Hvis du vil oprette forbindelse til en **SAP HANA**-database, skal du vælge **Hent data > Database > SAP HANA-database** som vist på følgende billede:
 
@@ -39,7 +38,7 @@ Denne version indeholder mange funktioner til **SAP HANA** som vist på listen n
 * Indeholder optimeret navigation for HANA-modeller.
 * Power BI understøtter **SAP HANA**-parametrene Variabler og Input.
 * VHDI-objektbeholderbaserede beregningsvisninger
-  * Understøttelse af HDI-objektbeholderbaserede beregningsvisninger findes i den offentlige prøveversion i august 2019-udgivelsen af Power BI Desktop. Hvis du vil have adgang til HDI-objektbeholderbaserede beregningsvisninger i Power BI, skal du sørge for, at den eller de HANA-databasebrugere, du bruger sammen med Power BI, har tilladelse til at få adgang til HDI-kørselsobjektbeholderen, der gemmer de visninger, du vil have adgang til. Hvis du vil tildele denne adgang, skal du oprette en rolle, der giver adgang til din HDI-objektbeholder, og tildele rollen til den HANA-databasebruger, du vil bruge sammen med Power BI (denne bruger skal også have tilladelse til at læse fra systemtabeller i \_SYS\_ BI-skemaet som sædvanlig). Se den officielle SAP-dokumentation for at få mere at vide om, hvordan du opretter og tildeler databaseroller. [Dette SAP-blogindlæg](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fblogs.sap.com%2F2018%2F01%2F24%2Fthe-easy-way-to-make-your-hdi-container-accessible-to-a-classic-database-user%2F&data=02%7C01%7Cv-adbold%40microsoft.com%7Cf7e0a405fe334598ba0608d7096ef5b4%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636988244476739316&sdata=PuRu61GPRYp34mLuGbQk6gdbRikdgbxfqo8q1RBQtm0%3D&reserved=0) kan være et godt sted at starte.
+  * Understøttelse af HDI-objektbeholderbaserede beregningsvisninger findes i den offentlige prøveversion i august 2019-udgivelsen af Power BI Desktop. Hvis du vil have adgang til HDI-objektbeholderbaserede beregningsvisninger i Power BI, skal du sørge for, at den eller de HANA-databasebrugere, du bruger sammen med Power BI, har tilladelse til at få adgang til HDI-kørselsobjektbeholderen, der gemmer de visninger, du vil have adgang til. Hvis du vil tildele denne adgang, skal du oprette en rolle, der giver adgang til din HDI-objektbeholder, og tildele rollen til den HANA-databasebruger, du vil bruge sammen med Power BI (denne bruger skal også have tilladelse til at læse fra systemtabeller i \_SYS\_ BI-skemaet som sædvanlig). Se den officielle SAP-dokumentation for at få mere at vide om, hvordan du opretter og tildeler databaseroller. [Dette SAP-blogindlæg](https://blogs.sap.com/2018/01/24/the-easy-way-to-make-your-hdi-container-accessible-to-a-classic-database-user/) kan være et godt sted at starte.
   * Bemærk, at der i øjeblikket er nogle begrænsninger for HANA-variabler, der er knyttet til HDI-baserede beregningsvisninger. Disse begrænsninger skyldes fejl på HANA-siden og bliver behandlet i fremtidige versioner af SAP HANA. For det første er det ikke muligt at anvende en HANA-variabel i en delt kolonne i en HDI-objektbeholderbaseret beregningsvisning. Denne begrænsning kan løses ved at opgradere til HANA 2 version 37.02 og nyere eller HANA 2 version 42 og nyere. For det andet vises standardværdierne for variabler og parametre ikke i brugergrænsefladen i Power BI. Dette skyldes også en fejl i SAP HANA, men SAP har endnu ikke annonceret en rettelse.
 
 ## <a name="limitations-of-sap-hana"></a>Begrænsninger i SAP HANA

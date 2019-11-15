@@ -2,7 +2,6 @@
 title: Brug DirectQuery i Power BI Desktop
 description: Brug DirectQuery, der også kaldes en dynamisk forbindelse, i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6664924a10b89e057765d70499208aede2d7fdad
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: 08b739c5be01efed5abf8258540b5ab66b3b390b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654791"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876078"
 ---
 # <a name="use-directquery-in-power-bi-desktop"></a>Brug DirectQuery i Power BI Desktop
 Når du opretter forbindelse til din datakilde i **Power BI Desktop**, er det altid muligt at importere en kopi af dataene til **Power BI Desktop**. For nogle datakilder findes der en anden mulighed: du kan oprette direkte forbindelse til datakilden med **DirectQuery**.
@@ -70,7 +69,7 @@ Der skal tages højde for følgende tre punkter, når der bruges **DirectQuery**
       The resultset of a query to external data source has exceeded
   
   Denne situation kan opstå med et simpelt diagram, der indeholder en kolonne med høj kardinalitet, hvor indstillingen for aggregering er angivet til *Opsummer ikke*. Visualiseringen skal kun have kolonner med en kardinalitet under 1 million, eller der skal være anvendt relevante filtre.
-* **Sikkerhed** – Alle de brugere, der anvender en publiceret rapport, opretter forbindelse til backend-datakilden ved hjælp af de legitimationsoplysninger, der angives efter publiceringen til Power BI-tjenesten. Det er samme situation som for de data, der er importeret: alle brugere ser de samme data, uanset hvilke sikkerhedsregler der er defineret i backend-kilden. Kunder, der ønsker sikkerhed pr. bruger implementeret med DirectQuery-kilder, skal bruge RLS. [Få mere at vide om RLS](service-admin-rls.md).
+* **Sikkerhed** – Alle de brugere, der anvender en publiceret rapport, opretter som standard forbindelse til backend-datakilden ved hjælp af de legitimationsoplysninger, der angives efter publiceringen til Power BI-tjenesten. Det er samme situation som for de data, der er importeret: alle brugere ser de samme data, uanset hvilke sikkerhedsregler der er defineret i backend-kilden. Kunder, der ønsker sikkerhed pr. bruger, som implementeres med DirectQuery-kilder, skal enten bruge RLS eller konfigurere Kerberos-begrænset godkendelse i forhold til kilden. Kerberos er ikke tilgængelig for alle kilder. [Få mere at vide om RLS](service-admin-rls.md). [Få mere at vide om Kerberos i DirectQuery](https://docs.microsoft.com/power-bi/service-gateway-sso-kerberos). 
 * **Understøttede funktioner**  – Det er ikke alle funktioner i **Power BI Desktop**, der understøttes i **DirectQuery**-tilstand, eller som har begrænsninger. Desuden er der nogle funktioner i Power BI-tjenesten (som *Hurtige indsigter*), der ikke er tilgængelige for de datasæt, hvor der bruges **DirectQuery**. Når du skal beslutte, om du vil bruge **DirectQuery**, skal du derfor tage højde for begrænsningerne for sådanne funktioner i forbindelse med brug af **DirectQuery**.   
 
 ## <a name="publish-to-the-power-bi-service"></a>Publicer til Power BI-tjenesten
@@ -88,7 +87,7 @@ Vinduet **Indstillinger** vises i Power BI. Der skal du vælge fanen **Datasæt*
 
 Indtil der er angivet legitimationsoplysninger, vil det medføre fejl, når der åbnes en publiceret rapport eller et datasæt udforskes med en **DirectQuery**-forbindelse til sådanne datakilder.
 
-I forbindelse med andre datakilder end **Azure SQL Database**, **Azure SQL Data Warehouse** og **Redshift**, der bruger DirectQuery, skal der installeres en **datagateway i det lokale miljø**, og datakilden skal være registreret, før der kan oprettes en dataforbindelse. Du kan [få mere at vide om datagateways i det lokale miljø](http://go.microsoft.com/fwlink/p/?LinkID=627094).
+I forbindelse med andre datakilder end **Azure SQL Database**, **Azure SQL Data Warehouse** og **Redshift**, der bruger DirectQuery, skal der installeres en **datagateway i det lokale miljø**, og datakilden skal være registreret, før der kan oprettes en dataforbindelse. Du kan [få mere at vide om datagateways i det lokale miljø](https://go.microsoft.com/fwlink/p/?LinkID=627094).
 
 ## <a name="next-steps"></a>Næste trin
 Du kan finde flere oplysninger om **DirectQuery** i følgende ressourcer:

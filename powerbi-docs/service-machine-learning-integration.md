@@ -2,7 +2,6 @@
 title: Integrering af Azure Machine Learning i Power BI
 description: Se, hvordan du kan bruge Machine Learning med Power BI
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/31/2019
 ms.author: davidi
 LocalizationGroup: conceptual
-ms.openlocfilehash: 9593296b0e09340fe4f62fff7a2e7722912a4216
-ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
+ms.openlocfilehash: 2f872825c327b8195e7a6e5516e0b533235ddc27
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72259952"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872104"
 ---
 # <a name="azure-machine-learning-integration-in-power-bi"></a>Integrering af Azure Machine Learning i Power BI
 
@@ -43,7 +42,7 @@ Trinnene i denne artikel beskriver, hvordan du tildeler en Power BI-bruger adgan
 
 1. Log på [Azure Portal](https://portal.azure.com).
 
-2. Gå til siden **Abonnementer**. Du finder siden **Abonnementer** via listen **Alle tjenester** i venstre navigationsmenu i Microsoft Azure-portal.
+2. Gå til siden **Abonnementer**. Du finder siden **Abonnementer** via listen **Alle tjenester** i navigationsmenuen i Microsoft Azure-portal.
 
     ![Side med Azure-abonnementer](media/service-machine-learning-integration/machine-learning-integration_01.png)
 
@@ -68,7 +67,7 @@ Trinnene i denne artikel beskriver, hvordan du tildeler en Power BI-bruger adgan
 
 Dataeksperter bruger primært Python til at udvikle og endda installere deres modeller til maskinel indlæring for Machine Learning-tjenesten.  I modsætning til Machine Learning Studio, som hjælper med at automatisere oprettelse af en skemafil for modellen, skal dataspecialisterne eksplicit oprette skemafilen ved hjælp af Python, når det drejer sig om Machine Learning-tjenesten.
 
-Denne skemafil skal inkluderes i den udrullede webtjeneste for modeller i Machine Learning Service. Hvis du vil generere skemaet for webtjenesten automatisk, skal du angive et eksempel på inputtet/outputtet i postscriptet for den udrullede model. Se underafsnittet om (Valgfri) Automatisk generering af Swagger-skema i dokumentationen Udrul modeller med Azure Machine Learning Service. Linket inkluderer eksemplet på postscriptet med sætninger for generering af skemaet. 
+Denne skemafil skal inkluderes i den udrullede webtjeneste for modeller i Machine Learning Service. Hvis du vil generere skemaet for webtjenesten automatisk, skal du angive et eksempel på inputtet/outputtet i postscriptet for den udrullede model. Se underafsnittet om [(Valgfri) Automatisk generering af Swagger-skema i dokumentationen Udrul modeller med Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/service/how-to-deploy-and-where#optional-automatic-schema-generation) Service. Linket inkluderer eksemplet på postscriptet med sætninger for generering af skemaet. 
 
 Funktionerne *\@input_schema* og *\@output_schema* i postscriptet refererer specifikt til eksempelformaterne for input og output i variablerne *input_sample* og *output_sample* og bruger disse eksempler til at generere en OpenAPI-specifikation (Swagger) for webtjenesten under udrulningen.
 
@@ -87,7 +86,7 @@ Når knappen **Rediger** vælges, åbnes Power-forespørgselseditoren for enhede
 
 ![Power Query-editor](media/service-machine-learning-integration/machine-learning-integration_06.png)
 
-Vælg knappen **AI-indsigt** på båndet, og vælg derefter mappen _Azure Machine Learning-modeller_ mappe i venstre navigationsmenu. Alle de Azure Machine Learning-modeller, du har adgang til, er angivet her som funktioner i Power-forespørgsel. Inputparametrene for Azure Machine Learning-modellen er også automatisk tilknyttet som parametre for den tilsvarende funktion i Power-forespørgsel.
+Vælg knappen **AI-indsigt** på båndet, og vælg derefter mappen _Azure Machine Learning-modeller_ i navigationsruden. Alle de Azure Machine Learning-modeller, du har adgang til, er angivet her som funktioner i Power-forespørgsel. Inputparametrene for Azure Machine Learning-modellen er også automatisk tilknyttet som parametre for den tilsvarende funktion i Power-forespørgsel.
 
 For at aktivere en Azure Machine Learning-model kan du angive en af den valgte enheds kolonner som input på rullelisten. Du kan også angive en konstant værdi, der skal bruges som input ved at slå kolonneikonet til venstre for inputdialogboksen til og fra.
 

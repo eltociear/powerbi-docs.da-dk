@@ -1,8 +1,7 @@
 ---
-title: Brug Ydeevneanalyse for at undersøge rapport element ydeevne i Power BI Desktop
-description: Find ud af, hvordan visuelle elementer og elementer i rapporten klarer sig med hensyn til ressourceforbrug og reaktionsevne
+title: Brug Effektivitetsanalyse til at undersøge ydeevnen for rapportelementer i Power BI Desktop
+description: Få mere at vide om, hvordan visualiseringer og rapportelementer fungerer med hensyn til ressourceforbrug og reaktionsevne
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,74 +9,74 @@ ms.topic: conceptual
 ms.date: 05/15/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 1851e0a55bf01073a6591f64de43830a72eca89b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 8bbf391135442d6490033c0fc65b7372154820d2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65854407"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73866436"
 ---
-# <a name="use-performance-analyzer-to-examine-report-element-performance"></a>Brug Ydeevneanalyse for at undersøge rapport element ydeevne
+# <a name="use-performance-analyzer-to-examine-report-element-performance"></a>Brug Effektivitetsanalyse til at undersøge ydeevnen for rapportelementer
 
-I **Power BI Desktop** kan du finde ud af, hvordan hver af dine rapportelementer, f.eks visuelle elementer og DAX-formler, der agerer. Ved hjælp af den **Ydeevneanalyse**, kan du se og post logfører, måle, hvor hver af dine rapportelementer udfører, når brugerne interagerer med dem, og hvilke aspekter af deres ydeevne, er de fleste (eller mindst) ressourcekrævende.
+I **Power BI Desktop** kan du se, hvordan ydeevnen er for alle dine rapportelementer, f. eks. visuals og DAX-formler. Ved hjælp af **Effektivitetsanalyse**kan du se og registrere logfiler, der måler, hvordan ydeevnen skal være for hvert af dine rapportelementer, når brugerne interagerer med dem, og hvilke aspekter af deres ydeevne der er mest (eller mindst) ressourcekrævende.
 
-![Ydeevneanalyse](media/desktop-performance-analyzer/performance-analyzer-01.png)
+![Effektivitetsanalyse](media/desktop-performance-analyzer/performance-analyzer-01.png)
 
-Ydeevneanalyse undersøger og viser den tid, der er nødvendige for at opdatere eller at alle visualiseringer, starte Brugerinteraktioner og indeholder oplysninger, så du kan få vist, analysere ned eller eksportere resultaterne. Ydeevneanalyse kan hjælpe dig med at identificere visualiseringer, der påvirker ydeevnen i dine rapporter, og at identificere årsagen til virkningen.
+Effektivitetsanalyse undersøger og viser den varighed, der er nødvendig til opdatering af alle visuals, som brugerinteraktioner starter, og præsenterer oplysningerne, så du kan få vist, foretage detailudledning eller eksportere resultaterne. Effektivitetsanalyse kan hjælpe dig med at identificere visuals, der påvirker dine rapporters ydeevne, og identificere årsagen til virkningen.
 
-## <a name="displaying-the-performance-analyzer-pane"></a>Få vist ruden Ydeevneanalyse
+## <a name="displaying-the-performance-analyzer-pane"></a>Visning af ruden for Effektivitetsanalyse
 
-I **Power BI Desktop** skal du vælge den **visning** båndet. I den **Vis** område på den **visning** båndet, kan du markere afkrydsningsfeltet ud for **Ydeevneanalyse** at få vist ruden Ydeevneanalyse.
+I **Power BI Desktop** skal du vælge båndet **Vis**. I området **Vis** på båndet **Vis** kan du markere afkrydsningsfeltet ud for **Effektivitetsanalyse** for at få vist ruden Effektivitetsanalyse.
 
-![Vælg Ydeevneanalyse båndet](media/desktop-performance-analyzer/performance-analyzer-02.png)
+![Vælg Effektivitetsanalyse på båndet Vis](media/desktop-performance-analyzer/performance-analyzer-02.png)
 
-Når du har valgt, vises Ydeevneanalyse i sit eget ruden til højre for rapportcanvasset.
+Når Effektivitetsanalyse er valgt, vises den i sin egen rude til højre for rapportlærredet.
 
-## <a name="using-performance-analyzer"></a>Ved hjælp af Ydeevneanalyse
+## <a name="using-performance-analyzer"></a>Brug af Effektivitetsanalyse
 
-Målinger af ydeevnen analyzer behandlingstiden (herunder tid til at oprette eller opdatere en visualisering) kræves for at opdatere elementer i rapporten startet som følge af brugerinput, der resulterer i kørsel af en forespørgsel. Justere et udsnit kræver f.eks, den udsnittet visualisering skal ændres, en forespørgsel sendes til datamodellen, og de berørte visuelle elementer, der skal opdateres på grund af de nye indstillinger. 
+Effektivitetsanalyse måler den behandlingstid (herunder tidspunktet for oprettelse eller opdatering af en visualisering), der er nødvendig for at opdatere rapportelementer, der er startet som følge af enhver brugerinteraktion, der medfører kørsel af en forespørgsel. Hvis du f. eks. justerer et udsnit, kræver det, at udsnits-visual'et ændres, at en forespørgsel sendes til datamodellen, og at berørte visuals opdateres som resultat af de nye indstillinger. 
 
-Hvis du vil have Ydeevneanalyse starte optagelsen, skal du blot vælge **starte optagelsen**
+Hvis du vil have Effektivitetsanalyse til at begynde at optage, skal du blot vælge **Start optagelse**
 
 ![Start optagelse](media/desktop-performance-analyzer/performance-analyzer-03.png)
 
-Handlinger, du tager i rapporten vises og logget i ruden Ydeevneanalyse i den rækkefølge, indlæses den visuelle gengivelse af Power BI. F.eks. måske du have en rapport, som brugere har sagt tager lang tid at opdatere. Eller visse visuelle elementer i en rapport tage lang tid der vises, når en skyder er justeret. Ydeevneanalyse kan se, hvilke visualiseringer er det pågældende element, og identificerer, hvilke aspekter af det visuelle element du benytter dig den længste varighed til at behandle. 
+Alle handlinger, du foretager i rapporten, vises og logføres i ruden Effektivitetsanalyse i den rækkefølge, som visual'et indlæses i fra Power BI. Det kan f. eks. være, at du har en rapport, som brugerne har sagt, tager lang tid at opdatere. Det tager imidlertid lang tid at få vist visse visuals, når en skyder justeres. Med Effektivitetsanalyse kan du se, hvilket visual der er årsag til problemet, og identificere, hvilke aspekter af visual'et der tager længst tid at behandle. 
 
-Når du starter optagelsen, den **starte optagelsen** knappen er nedtonet out (inaktiv, da du allerede er begyndt at optagelse) og **stoppe** knap er aktiv. 
+Når du begynder at optage, er knappen **Start optagelse** nedtonet (inaktiv, da du allerede er begyndt at optage), og knappen **Stop** er aktiv. 
 
-Ydeevneanalyse indsamler og viser oplysninger om måling af ydeevne i realtid. Så hver gang du klikker på et visuelt element, flytte et udsnit, eller på anden måde interagere, viser Ydeevneanalyse med det samme ydeevne resultaterne i ruden.
+Effektivitetsanalyse indsamler og viser oplysninger om ydeevnemåling i realtid. Så hver gang du klikker på et visuelt element, flytter et udsnit eller interagerer på andre måder, viser Effektivitetsanalyse øjeblikkeligt resultaterne i ruden.
 
-Hvis ruden indeholder yderligere oplysninger, end der kan vises, vises et rullepanel til at navigere til yderligere oplysninger.
+Hvis ruden indeholder flere oplysninger, end der kan vises, vises der et rullepanel, der gør det muligt at navigere til flere oplysninger.
 
-Hver interaktion har et afsnit id i den rude, der beskriver den handling, der startede logposterne. På følgende billede er interaktionen, brugerne har ændret et udsnit.
+Hver interaktion har et sektions-id i ruden, der beskriver den handling, som startede posterne i loggen. På følgende billede var interaktionen, at brugerne har ændret et udsnit.
 
-![Afsnit, der er baseret på typen af interaktion](media/desktop-performance-analyzer/performance-analyzer-04.png)
+![Sektioner baseret på interaktionstype](media/desktop-performance-analyzer/performance-analyzer-04.png)
 
-Hver enkelt visualisering logoplysninger indeholder den anvendte tid (varighed) for at fuldføre følgende kategorier af opgaver:
+Hvert enkelt visuals logoplysninger omfatter den tid, der er brugt (varighed) til at udføre følgende opgavekategorier:
 
-* **DAX-forespørgslen** – Hvis en DAX-forespørgsel var påkrævet, er tiden mellem det visuelle element, der sender forespørgslen, og for Analysis Services for at returnere resultaterne.
-* **Visuel visning** -tid, det visuelle element til at tegne på skærmen, herunder påkrævede tid til at hente en hvilken som helst webbilleder eller geokodning. 
-* **Andre** -tid, der kræves af det visuelle element til klargøring af forespørgsler, venter på andre visuelle elementer at fuldføre eller udføre andre behandling i baggrunden.
+* **DAX-forespørgsel** – hvis en DAX-forespørgsel var påkrævet, er dette den tid, der går mellem visual'ets afsendelse af forespørgslen og Analysis Services' returnering af resultaterne.
+* **Visuel visning** – den tid, det tager for visual'et at tegne på skærmen, herunder den tid, der kræves for at hente eventuelle webbilleder eller geokodning. 
+* **Andet** – den tid, det tager for visual'et at forberede forespørgsler, vente på, at andre visuals fuldføres, eller udføre anden baggrundsbehandling.
 
-![elementer af logoplysninger](media/desktop-performance-analyzer/performance-analyzer-06.png)
+![elementer i logoplysninger](media/desktop-performance-analyzer/performance-analyzer-06.png)
 
-Når du har været i forbindelse med elementer i den rapport, du vil måle med Ydeevneanalyse, kan du vælge den **stoppe** knap. Oplysningerne om ydeevne forbliver i ruden, når du har valgt **Stop** for dig at analysere.
+Når du har interageret med elementer i den rapport, du vil måle med Effektivitetsanalyse, kan du vælge knappen **Stop**. Oplysningerne om ydeevne forbliver i ruden, når du har valgt **Stop**, så du kan analysere dem.
 
-Vælg for at rydde ud af oplysningerne i ruden Ydeevneanalyse **Ryd**. Alle oplysninger, der er slettet og gemmes ikke, når du vælger **Ryd**. Se næste afsnit for at se, hvordan du gemmer oplysninger i loggene. 
+Hvis du vil rydde oplysningerne i ruden Effektivitetsanalyse, skal du vælge **Ryd**. Alle oplysninger slettes, og de gemmes ikke, når du vælger **Ryd**. Se det næste afsnit for at få mere at vide om, hvordan du gemmer oplysninger i logge. 
 
-## <a name="refreshing-visuals"></a>Opdatering af visuelle elementer
+## <a name="refreshing-visuals"></a>Opdatering af visuals
 
-Du kan vælge **visualiseringerne** i ruden Ydeevneanalyse at opdatere alle visuelle elementer på den aktuelle side i rapporten, og dermed har Ydeevneanalyse indsamle oplysninger om alle visualiseringer.
+Du kan vælge **Opdater visuals** i ruden Effektivitetsanalyse for at opdatere alle visuals på den aktuelle side i rapporten og dermed få Effektivitetsanalyse til at indsamle oplysninger om alle sådanne visuals.
 
-Du kan også opdatere enkelte visualiseringer. Når Ydeevneanalyse optagelsen, kan du vælge **Opdater denne visual** blev fundet i øverste højre hjørne af hver enkelt visualisering, for at opdatere Visualiseringen, og hente oplysninger om dets ydeevne.
+Du kan også opdatere enkelte visuals. Når Effektivitetsanalyse optager, kan du vælge **Opdater dette visual**, der findes i øverste højre hjørne af de enkelte visuals, for at opdatere det pågældende visual og registrere dets ydeevneoplysninger.
 
-![Opdater et individuelt visuelt element](media/desktop-performance-analyzer/performance-analyzer-07.png)
+![opdater et enkelt visual](media/desktop-performance-analyzer/performance-analyzer-07.png)
 
-## <a name="saving-performance-information"></a>Lagring af ydeevneoplysninger om
+## <a name="saving-performance-information"></a>Lagring af oplysninger om ydeevne
 
-Du kan gemme de oplysninger, der opretter Ydeevneanalyse om en rapport ved at vælge den **Eksportér** knap. Hvis du vælger **Eksportér** opretter en .json fil med oplysninger fra ruden Ydeevneanalyse. 
+Du kan gemme de oplysninger, som Effektivitetsanalyse opretter om en rapport, ved at vælge knappen **Eksporter**. Når du vælger **Eksporter**, oprettes der en .json-fil med oplysninger fra ruden Effektivitetsanalyse. 
 
-![Gem logfilen for Ydeevneanalyse](media/desktop-performance-analyzer/performance-analyzer-05.png)
+![Gem logfilen for Effektivitetsanalyse](media/desktop-performance-analyzer/performance-analyzer-05.png)
 
 
 ## <a name="next-steps"></a>Næste trin

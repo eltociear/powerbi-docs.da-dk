@@ -2,7 +2,6 @@
 title: Tips til oprettelse af flotte rapporter
 description: Tips og tricks til oprettelse af rapporter i Power BI-tjenesten og Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: willthom
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/13/2018
 ms.author: davidi
 LocalizationGroup: Reports
-ms.openlocfilehash: 4d686a807d9413c15b19ff382e5ac54fb696b10b
-ms.sourcegitcommit: 762857c8ca09ce222cc3f8b006fa1b65d11e4ace
+ms.openlocfilehash: d7f2c83cf1d0f29f2c0d0c6e621a253acdd3ce41
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721345"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860896"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop-and-power-bi-service"></a>Tips og tricks til oprettelse af rapporter i Power BI Desktop og Power BI-tjenesten
 For at få mest muligt ud af dine data skal du nogle gange have lidt ekstra hjælp. Vi har samlet nogle tip og tricks, som du kan bruge, når du opretter rapporter i Microsoft Power BI Desktop, Power BI-tjenesten *og* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-udgaver, hvor tilføjelsesprogrammet Power Pivot er aktiveret, og Power-forespørgsel er installeret og aktiveret.
@@ -115,11 +114,11 @@ Lad os tage et kig på et eksempel:
 
 Hvis vi indlæser datasæt fra aktive anmodninger om kundesupport og et andet datasæt med arbejdsopgaver, der har skemaer som følger:
 
-> CustomerInicdents: {IncidentID, CustomerName, IssueName, OpenedDate, Status} WorkItems: {WorkItemID, IncidentID, WorkItemName, OpenedDate, Status, CustomerName }
+> CustomerIncidents: {IncidentID, CustomerName, IssueName, OpenedDate, Status} WorkItems: {WorkItemID, IncidentID, WorkItemName, OpenedDate, Status, CustomerName }
 >
 >
 
-Når vi vil spore alle hændelser og arbejdselementer, der er relateret til et bestemt CustomerName, kan vi ikke bare oprette en relation mellem disse to datasæt.  Nogle arbejdselementer er måske ikke relateret til et CustomerName, så dette felt skal være tomt eller NULL.  Der kan være flere poster i WorkItems og CustomerIncidents for et hvilket som helst CustomerName.  
+Når vi vil spore alle hændelser og arbejdselementer, der er relateret til et bestemt CustomerName, kan vi ikke blot oprette en relation mellem disse to datasæt.  Nogle arbejdselementer er måske ikke relateret til et CustomerName, så dette felt skal være tomt eller NULL.  Der kan være flere poster i WorkItems og CustomerIncidents for et hvilket som helst CustomerName.  
 
 #### <a name="creating-relationships-in-power-bi-desktop-when-the-data-has-null-or-blank-values"></a>Opret relationer i Power BI Desktop, når dataene har null-værdier eller tomme værdier
 Datasæt indeholder ofte kolonner med null-værdier eller tomme værdier.  Det kan skabe problemer, når du prøver at bruge relationer.  Du kan løse problemerne på to måder.  Du kan fjerne de rækker, der indeholder rækker med null-værdier eller tomme værdier.  Det kan du enten gøre ved hjælp af filterfunktioner under forespørgselsfanen eller ved at vælge indstillingen "bevar kun matchende rækker", hvis du fletter forespørgsler. Du kan også erstatte null-værdierne eller de tomme værdier med værdier, der fungerer i relationer, typisk strenge som "NULL" og "(Blank)".   Der findes ikke en korrekt fremgangsmåde her– Hvis du filtrerer rækker ud i forespørgselsfasen, fjernes rækker, og det kan påvirke oversigtsstatistikker og beregninger.  Den sidste fremgangsmåde bevarer disse datarækker, men kan få ikke-relaterede rækker til at se ud, som om de er relateret i modellen, hvilket fører til forkerte beregninger.  Hvis du bruger den sidste løsning, skal du sørge for at bruge filtre for visningen/diagrammet, hvor det er relevant, for at sikre, at du får nøjagtige resultater.  Det vigtigste er, at du evaluerer, hvilke rækker der skal bevares/fjernes, og overordnet forstår, hvad det betyder for analysen.  
@@ -163,12 +162,9 @@ DAX er sproget til beregning af formler i Power BI Desktop.  Det er optimeret ti
 
 [Henvisning til DAX (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx)
 
-[DAX-ressourcecenter](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+[DAX-ressourcecenter](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
 
 ## <a name="power-bi-service-and-power-bi-desktop"></a>Power BI service *og* Power BI Desktop
-
-### <a name="read-the-whitepaper-principles-for-designing-power-bi-reportsvisualspower-bi-visualization-best-practicesmd"></a>Læs dette whitepaper: [Principper for design af Power BI-rapporter](visuals/power-bi-visualization-best-practices.md)
-Denne hvidbog indeholder bedste praksis for design af rapporter i Power BI. Den begynder med planlægning og diskuterer de designprincipper, du kan anvende på dine rapporter samt på de sider og visualiseringer, der udgør rapporten. Meget af denne bedste praksis gælder også for dashboarddesign.
 
 ### <a name="read-andor-watch-how-to-design-visually-stunning-reports-and-dashboards-in-power-bi"></a>Læs og/eller se "Sådan designer du visuelt flotte rapporter (og dashboards) i Power BI"
 Communitymedlem Miguel Myers er Data Scientist og Graphic Designer.
@@ -226,4 +222,4 @@ Nogle få af vores foretrukne bøger er bl.a.:
 
 [Rapporter i Power BI](consumer/end-user-reports.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

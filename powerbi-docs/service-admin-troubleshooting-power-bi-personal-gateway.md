@@ -2,7 +2,6 @@
 title: Fejlfinding af Power BI-gateway (personlig tilstand)
 description: Fejlfinding af Power BI-gateway (personlig tilstand)
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: troubleshooting
 ms.date: 5/06/2019
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: 8916d92eef86be601ceb21112209ab7daa736c11
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 32413c8ae860f5c9e376f8be46290047f67231fc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543529"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873383"
 ---
 # <a name="troubleshooting-power-bi-gateway-personal-mode"></a>Fejlfinding af Power BI-gateway (personlig tilstand)
 
@@ -111,7 +110,7 @@ Hvis du får vist en fejl, når dashboardfelterne opdateres, skal du se [Fejlfin
 ### <a name="refresh-history"></a>Opdater historik
 Med **Opdater historik** kan du se, hvilke fejl der er opstået, og finde nyttige data, hvis du har brug for at oprette en supportanmodning. Du kan få vist både planlagte opdateringer og opdateringer efter behov. Sådan kommer du til **Opdater historik**.
 
-1. Vælg et datasæt i Power BI-navigationsruden i **Datasæt**. Åbn menuen, og vælg **Planlæg opdatering**.
+1. Vælg et datasæt i **Datasæt** i Power BI-navigationsruden. Åbn menuen, og vælg **Planlæg opdatering**.
 
    ![Vælg Planlæg opdatering](media/service-admin-troubleshooting-power-bi-personal-gateway/scheduled-refresh.png)
 1. Under **Indstillinger for...** skal du vælge **Opdater historik**. 
@@ -128,7 +127,7 @@ Loggene **Datastyringsgateway** og **PowerBIGateway** findes under **Program- og
 ![Dataadministrationsgateway og PowerBIGateway-logge](media/service-admin-troubleshooting-power-bi-personal-gateway/event-logs.png)
 
 ### <a name="fiddler-trace"></a>Fiddler-sporing
-[Fiddler](http://www.telerik.com/fiddler) er et gratis værktøj fra Telerik, der overvåger HTTP-trafik. Du kan se kommunikationen vha. Power BI-tjenesten fra klientcomputeren. Denne kommunikation kan vise fejl og andre relaterede oplysninger.
+[Fiddler](https://www.telerik.com/fiddler) er et gratis værktøj fra Telerik, der overvåger HTTP-trafik. Du kan se kommunikationen vha. Power BI-tjenesten fra klientcomputeren. Denne kommunikation kan vise fejl og andre relaterede oplysninger.
 
 ![Fiddler-sporing](media/service-admin-troubleshooting-power-bi-personal-gateway/fiddler.png)
 
@@ -154,5 +153,5 @@ Du kan også gå til Temp-mappen (%temp%) og søge efter filer, der starter med 
 - [Fejlfinding af feltfejl](refresh-troubleshooting-tile-errors.md)  
 - [Fejlfinding af datagateway i det lokale miljø](service-gateway-onprem-tshoot.md) 
  
-Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](http://community.powerbi.com/).
+Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](https://community.powerbi.com/).
 

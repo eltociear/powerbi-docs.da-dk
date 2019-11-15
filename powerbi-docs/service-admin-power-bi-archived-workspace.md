@@ -2,7 +2,6 @@
 title: Arkiveret arbejdsområde i Power BI
 description: Arkiveret arbejdsområde i Power BI efter at have administreret din Office 365-lejer
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 891ffffd885e2b5d59cba64e6e99ce7fe3cf811b
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 66bf203cad577df0c985fbd73bcab3c6d79f6a95
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175653"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873556"
 ---
 # <a name="power-bi-archived-workspace"></a>Arkiveret arbejdsområde i Power BI
 
@@ -24,7 +23,7 @@ ms.locfileid: "71175653"
 
 Med Power BI kan alle tilmelde sig og begynde at bruge tjenesten i løbet af et par minutter.  Det kan være, at din organisations it-afdeling senere måske vælger at overtage administrationen af Power BI for brugere i organisationen.  Hvis dette sker, kan du nyde godt af central administration af brugere og tilladelser i organisationen. Du kan muligvis også drage fordel af strømlinet logon ved hjælp af det samme brugernavn og den samme adgangskode, som du bruger til andre tjenester i organisationen.
 
-Alt indhold, du har oprettet, inden it-afdelingen begyndte at administrere Power BI, placeres i et arkiveret arbejdsområde i Power BI, hvortil der er adgang fra venstre navigationsrude i [Power BI](https://app.powerbi.com). Du skal starte med at oprette nyt Power BI-indhold i Mit arbejdsområde, som sikres og administreres af din organisations it-afdeling.  Dit Arkiverede arbejdsområde vil fortsat eksistere, men der er begrænsninger i de handlinger, du kan udføre vedrørende indholdet i dit Arkiverede arbejdsområde.  Hvis du vil fjerne disse begrænsninger, skal du overføre indholdet fra dit Arkiveret arbejdsområde til Mit arbejdsområde, som administreres af din it-afdeling.
+Alt indhold, du har oprettet, inden it-afdelingen begyndte at administrere Power BI, placeres i et arkiveret arbejdsområde i Power BI, hvortil der er adgang fra navigationsruden i [Power BI](https://app.powerbi.com). Du skal starte med at oprette nyt Power BI-indhold i Mit arbejdsområde, som sikres og administreres af din organisations it-afdeling.  Dit Arkiverede arbejdsområde vil fortsat eksistere, men der er begrænsninger i de handlinger, du kan udføre vedrørende indholdet i dit Arkiverede arbejdsområde.  Hvis du vil fjerne disse begrænsninger, skal du overføre indholdet fra dit Arkiveret arbejdsområde til Mit arbejdsområde, som administreres af din it-afdeling.
 
 ## <a name="restrictions-in-your-archived-workspace"></a>Begrænsninger i dit Arkiverede arbejdsområde
 
@@ -50,5 +49,5 @@ Hvis du fortsat vil bruge Power BI, skal du oprette nyt indhold i Mit arbejdsomr
 
 * **Dashboards**: Dashboards, der er installeret som en del af indholdspakker, genskabes automatisk, når du genopretter forbindelsen til indholdspakken i Mit arbejdsområde. Hvis du oprettede dine egne dashboards via Power BI-tjenesten, skal du genskabe disse dashboards i Mit arbejdsområde.
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

@@ -2,7 +2,6 @@
 title: Interaktion med et ArcGIS-kort, som er blevet delt med dig
 description: Brug ArcGis-kort i læsevisning som forbruger af Power BI-rapport
 author: mihart
-manager: kvivek
 ms.reviewer: willt
 featuredvideoid: ''
 ms.service: powerbi
@@ -10,15 +9,15 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 02/10/2019
 ms.author: mihart
-ms.openlocfilehash: 7fef2c96afadad6fe39d731038f74249a4ccbf6d
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 85a5f50bbccd22041bb035d14b16e4f8b76a3f7b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432311"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880720"
 ---
 # <a name="interacting-with-arcgis-maps-in-power-bi"></a>Interaktion med ArcGIS-kort i Power BI
-Dette emne skrives fra en persons synspunkt, hvor vedkommende *bruger* et ArcGIS-kort i Power BI-tjenesten, på Desktop eller på mobil. Når en forfatter deler et ArcGIS-kort med dig, kan du interagere med kortet på mange måder.  Hvis du vil vide mere om oprettelse af et ArcGIS-kort, kan du se [ArcGIS-kort efter Esri-selvstudium](../visuals/power-bi-visualization-arcgis.md).
+Dette emne skrives af en person, der bruger et ArcGIS-kort i Power BI-tjenesten, på Desktop eller på mobil. Når en forfatter deler et ArcGIS-kort med dig, kan du interagere med kortet på mange måder.  Hvis du vil vide mere om oprettelse af et ArcGIS-kort, kan du se [ArcGIS-kort efter Esri-selvstudium](../visuals/power-bi-visualization-arcgis.md).
 
 Kombinationen af ArcGIS-kort og Power BI tager kort til et helt nyt niveau, som involverer mere end præsentation af punkter på et kort. De tilgængelige indstillinger til grundlæggende kort, placeringstyper, temaer, symboltypografier og referencelag opretter fantastiske informative kortvisualiseringer. Kombinationen af autoritative datalag på et kort (f.eks. census-data) med rumlige analyser giver en bedre forståelse af dataene i visualiseringen.
 
@@ -28,7 +27,7 @@ Kombinationen af ArcGIS-kort og Power BI tager kort til et helt nyt niveau, som 
 
 I det anvendte eksempel ser vi nærmere på sidste års salg efter by og bruger et vejkort, boblesymboler, der repræsenterer størrelse, og et referencelag til gennemsnitlig husstandsindtægt. Kortet indeholder 3 nåle og én radius for køretid (i mørklilla).
 
-![](media/power-bi-visualizations-arcgis/power-bi-arcgis-esri-new.png)
+![ArcGIS-kort, der viser USA med bobler, nåle og køretid](media/power-bi-visualizations-arcgis/power-bi-arcgis-esri-new.png)
 
 > [!TIP]
 > Besøg [Esris side på Power BI](https://www.esri.com/powerbi) for at se de mange eksempler og læse anbefalinger. Og se derefter Esris [side med introduktion til ArcGIS Maps for Power BI](https://doc.arcgis.com/en/maps-for-powerbi/get-started/about-maps-for-power-bi.htm).
@@ -38,23 +37,23 @@ I det anvendte eksempel ser vi nærmere på sidste års salg efter by og bruger 
 <br/>
 
 ## <a name="user-consent"></a>Brugerens samtykke
-Første gang en kollega deler et ArcGIS-kort med dig, viser Power BI en prompt. ArcGIS Maps for Power BI er leveret af Esri (www.esri.com), og din brug af ArcGIS Maps for Power BI er omfattet af Esris vilkår og politik for beskyttelse af personlige oplysninger. Power BI-brugere, der gerne vil bruge ArcGIS-kort til visuelle elementer i Power BI, skal acceptere i dialogboksen til samtykke.
+Første gang en kollega deler et ArcGIS-kort med dig, viser Power BI en prompt. ArcGIS Maps for Power BI er leveret af Esri (https://www.esri.com), og din brug af ArcGIS Maps for Power BI er omfattet af Esris vilkår og politik for beskyttelse af personlige oplysninger. Power BI-brugere, der gerne vil bruge ArcGIS-kort til visuelle elementer i Power BI, skal acceptere i dialogboksen til samtykke.
 
 ## <a name="selection-tools"></a>Markeringsværktøjer
 ArcGIS Maps for Power BI har tre markeringstilstande. Du kan maksimalt vælge 250 datapunkter ad gangen.
 
-![](media/power-bi-visualizations-arcgis/power-bi-esri-selection-tools2.png)
+![Skærmbillede af alle tre markeringsværktøjer](media/power-bi-visualizations-arcgis/power-bi-esri-selection-tools2.png)
 
-![](media/power-bi-visualizations-arcgis/power-bi-esri-selection-single2.png) Vælg individuelle datapunkter.
+![skærmbillede af værktøjet til enkelt valg](media/power-bi-visualizations-arcgis/power-bi-esri-selection-single2.png) Vælg individuelle datapunkter.
 
-![](media/power-bi-visualizations-arcgis/power-bi-esri-selection-marquee2.png) Tegner et rektangel på kortet og markerer de indeholdte datapunkter. Du kan bruge CTRL til at vælge mere end ét rektangulært område.
+![værktøj til flere valg](media/power-bi-visualizations-arcgis/power-bi-esri-selection-marquee2.png) Der tegnes et rektangel på kortet, og de indeholdte datapunkter markeres. Du kan bruge CTRL til at vælge mere end ét rektangulært område.
 
-![](media/power-bi-visualizations-arcgis/power-bi-esri-selection-reference-layer2.png) Muliggør, at grænser eller polygoner i referencelag kan bruges til at vælge indeholdte datapunkter.
+![tredje valgværktøj til grænser](media/power-bi-visualizations-arcgis/power-bi-esri-selection-reference-layer2.png) Tillader, at grænser eller polygoner i referencelag kan bruges til at vælge indeholdte datapunkter.
 
 <br/>
 
 ## <a name="interacting-with-an-arcgis-map"></a>Interaktion med et ArcGIS-kort
-De funktioner, der er tilgængelige for dig, afhænger af om du er *forfatter* (den person, der har udarbejdet kortet) eller *forbruger* (en, som deler et ArcGIS-kort). Hvis du interagerer med et ArcGIS-kort som forbruger (dvs. [Læsevisning](../consumer/end-user-reading-view.md)), har du mulighed for at benytte følgende handlinger.
+De funktioner, der er tilgængelige for dig, afhænger af om du er *forfatter* (den person, der har udarbejdet kortet) eller *forbruger* (en, som deler et ArcGIS-kort). Hvis du interagerer med et ArcGIS-kort som forbruger (også kaldet [Læsevisning](../consumer/end-user-reading-view.md)), har du mulighed for at benytte følgende handlinger.
 
 * Hvis du forbruger Premium med *visnings*tilladelser, kan du [få vist de data, der bruges til at oprette visualiseringen](../consumer/end-user-show-data.md), [abonnere](../consumer/end-user-subscribe.md), se kortet i [fokustilstand og fuldskærmsvisning](../consumer/end-user-focus.md), [få vist relateret indhold](../consumer/end-user-related.md), [arbejde med de filtre](../consumer/end-user-report-filter.md), der er angivet af *rapportopretteren*, [dele rapporten](../service-share-reports.md) og meget mere.
 
@@ -62,28 +61,28 @@ De funktioner, der er tilgængelige for dig, afhænger af om du er *forfatter* (
 
     
 * Udvid ruden **Filtre** for at udforske kortet ved hjælp af filtre.   
-    ![](media/power-bi-visualizations-arcgis/power-bi-filter-newer.png)  
+    ![Ruden Filtre](media/power-bi-visualizations-arcgis/power-bi-filter-newer.png)  
 * Hvis kortet har et referencelag, kan du vælge steder, hvor der skal vises detaljer i et værktøjstip. Her har vi markeret Adams County, og vi kan se data fra referencelaget vedrørende den gennemsnitlige husstandsindtægt, som forfatteren har føjet til kortet.
   
-    ![](media/power-bi-visualizations-arcgis/power-bi-reference-layer.png)  
+    ![Værktøjstip til Adams County](media/power-bi-visualizations-arcgis/power-bi-reference-layer.png)  
   
     I dette tilfælde får vi også et diagram. Vælg en søjle i diagrammet for at gå dybere ned i dataene. Her kan vi se, at 79 familier i Adams County tjener USD 200.000 eller derover.
   
-    ![](media/power-bi-visualizations-arcgis/power-bi-tooltip-chart.png)
+    ![Værktøjstip til en søjle i det oprindelige diagram med værktøjstip](media/power-bi-visualizations-arcgis/power-bi-tooltip-chart.png)
   
     Klik på pilen for at få vist eventuelle yderligere diagrammer.
 * Peg på placeringen af symboler på grundkortet for at få vist detaljer i et værktøjstip.     
-  ![](media/power-bi-visualizations-arcgis/power-bi-arcgis-hover.png)
+  ![værktøjstip til placering](media/power-bi-visualizations-arcgis/power-bi-arcgis-hover.png)
   
   > [!TIP]
   > Du skal muligvis zoome ind for at vælge en bestemt placering.  Hvis der er overlappende placeringer, kan Power BI vise dig mere end ét 1 værktøjstip ad gangen. Klik på pilen for at flytte mellem værktøjstippene
   > 
-  > ![](media/power-bi-visualizations-arcgis/power-bi-3-screens.png)
+  > ![Værktøjstip, der viser tre sider](media/power-bi-visualizations-arcgis/power-bi-3-screens.png)
   > 
   > 
 * Hvis forfatteren har føjet et lag med infografik til ArcGIS-kortet, får du vist yderligere data i øverste højre hjørne af kortet.  Her har forfatteren af kortet f.eks. tilføjet "Børn under 14".
   
-    ![](media/power-bi-visualizations-arcgis/power-bi-demographics.png)
+    ![kort med et infografiklag](media/power-bi-visualizations-arcgis/power-bi-demographics.png)
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 ArcGIS-kort til Power BI er tilgængeligt i følgende tjenester og programmer:
@@ -117,7 +116,7 @@ ArcGIS-kort til Power BI er tilgængeligt i følgende tjenester og programmer:
 </table>
 
 **Hvordan fungerer ArcGIS Maps til Power BI?**
-ArcGIS Maps til Power BI leveres af Esri (www.esri.com). Din brug af ArcGIS Maps til Power BI er omfattet af Esris [vilkår](https://go.microsoft.com/fwlink/?LinkID=8263222) og [politik om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkID=826323). Power BI-brugere, der gerne vil bruge ArcGIS-kort til visuelle elementer i Power BI, skal acceptere i dialogboksen til samtykke (se under Brugersamtykke for at få flere oplysninger).  Brug af Esris ArcGIS Maps til Power BI er underlagt Esris Vilkår og Politik om beskyttelse af personlige oplysninger, der også er linket til i dialogboksen til samtykke. Hver enkelt bruger skal samtykke, før de kan bruge ArcGIS Maps til Power BI første gang. Når brugeren accepterer samtykket, sendes data, der er bundet til visualiseringen til Esris tjenester i hvert fald i forbindelse med geo-kodning. Det vil sige, at placeringsoplysninger transformeres til oplysninger om længdegrad og breddegrad, der kan vises på et kort. Du skal antage, at alle data, der er bundet til datavisualiseringen kan sendes til Esris tjenester. Esri leverer tjenester, såsom kort, afstandsanalyse, geo-kodning osv. ArcGIS Maps til Power BI-visualiseringen interagerer med disse tjenester vha. en SSL-forbindelse, der beskyttes af et certifikat, som leveres og vedligeholdes af Esri. Du kan få flere oplysninger om ArcGIS Maps til Power BI på Esris [produktside for ArcGIS Maps til Power BI](https://www.esri.com/powerbi).
+ArcGIS Maps for Power BI leveres af Esri (https://www.esri.com). Din brug af ArcGIS Maps til Power BI er omfattet af Esris [vilkår](https://go.microsoft.com/fwlink/?LinkID=8263222) og [politik om beskyttelse af personlige oplysninger](https://go.microsoft.com/fwlink/?LinkID=826323). Power BI-brugere, der gerne vil bruge ArcGIS-kort til visuelle elementer i Power BI, skal acceptere i dialogboksen til samtykke (se under Brugersamtykke for at få flere oplysninger).  Brug af Esris ArcGIS Maps til Power BI er underlagt Esris Vilkår og Politik om beskyttelse af personlige oplysninger, der også er linket til i dialogboksen til samtykke. Hver enkelt bruger skal samtykke, før de kan bruge ArcGIS Maps til Power BI første gang. Når brugeren accepterer samtykket, sendes data, der er bundet til visualiseringen til Esris tjenester i hvert fald i forbindelse med geo-kodning. Det vil sige, at placeringsoplysninger transformeres til oplysninger om længdegrad og breddegrad, der kan vises på et kort. Du skal antage, at alle data, der er bundet til datavisualiseringen kan sendes til Esris tjenester. Esri leverer tjenester, såsom kort, afstandsanalyse, geo-kodning osv. ArcGIS Maps til Power BI-visualiseringen interagerer med disse tjenester vha. en SSL-forbindelse, der beskyttes af et certifikat, som leveres og vedligeholdes af Esri. Du kan få flere oplysninger om ArcGIS Maps til Power BI på Esris [produktside for ArcGIS Maps til Power BI](https://www.esri.com/powerbi).
 
 **Power BI Plus**    
 ![Vælg plustegnet for at tilmelde dig, eller log på](media/power-bi-visualizations-arcgis/power-bi-plus.png)

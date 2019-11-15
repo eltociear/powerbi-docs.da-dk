@@ -2,7 +2,6 @@
 title: Den nye filtreringsoplevelse i Power BI-rapporter
 description: Filtrene i Power BI får ny funktionalitet og et nyt design.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/06/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: e5e67863888e5bd6d611ded7a58254fe693f4bb6
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: ab7d8a34211b9cb8addd90daf2cbce7d22f10e61
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841294"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875156"
 ---
 # <a name="the-new-filter-experience-in-power-bi-reports"></a>Den nye filtreringsoplevelse i Power BI-rapporter
 
@@ -44,7 +43,7 @@ Den nye filtreringsoplevelse er som standard slået til for nye rapporter. Du ka
 ### <a name="turn-on-new-filters-for-an-existing-report-in-power-bi-desktop"></a>Slå nye filtre til for en eksisterende rapport i Power BI Desktop
 
 1. I en eksisterende rapport i Power BI Desktop skal du vælge **Filer** > **Indstillinger** > **Indstillinger**
-2. Under **Aktuel fil** på venstre navigationslinje skal du vælge **Rapportindstillinger**.
+2. Under **Aktuel fil** skal du vælge **Rapportindstillinger**.
 3. Under **Filtreringsoplevelse** skal du vælge **Aktivér den opdaterede filtreringsrude, og vis filtre i rapportens visuelle overskrift**.
 
 ### <a name="turn-on-new-filters-for-an-existing-report-in-the-service"></a>Slå nye filtre til for en eksisterende rapport i tjenesten
@@ -238,5 +237,5 @@ Prøv den nye filteroplevelse. Giv os din feedback på denne funktion, og hvorda
 - [Filtre og fremhævning i rapporter](power-bi-reports-filters-and-highlighting.md)
 - [Forskellige typer af filtre i Power BI](power-bi-report-filter-types.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

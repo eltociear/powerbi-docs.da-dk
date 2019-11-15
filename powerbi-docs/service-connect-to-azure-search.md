@@ -2,7 +2,6 @@
 title: Opret forbindelse til Azure Search med Power BI
 description: Azure Search til Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 8b7560570af4f1b459cdde8589c0afdb9194e154
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 511fb6674d84cc0d206fdb1807fcb9ebf9e41d30
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060918"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873117"
 ---
 # <a name="connect-to-azure-search-with-power-bi"></a>Opret forbindelse til Azure Search med Power BI
 Med Azure Search Traffic Analytics kan du overvåge og forstå trafikken til Azure Search-tjenesten. Azure Search-indholdspakken til Power BI giver detaljeret indsigt i dine Search-data, herunder søgning, indeksering, tjenestestatistik og ventetid fra de seneste 30 dage. Flere oplysninger finder du i [Azure-blogindlæg](https://azure.microsoft.com/blog/analyzing-your-azure-search-traffic/).
@@ -25,10 +24,10 @@ Med Azure Search Traffic Analytics kan du overvåge og forstå trafikken til Azu
 Opret forbindelse til [Azure Search-indholdspakken](https://app.powerbi.com/getdata/services/azure-search) til Power BI.
 
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
-1. Vælg **Hent data** nederst i venstre navigationsrude.
+1. Vælg **Hent data** nederst i navigationsruden.
    
    ![](media/service-connect-to-azure-search/pbi_getdata.png) 
-2. Vælg **Hent** i feltet **Tjenester**.
+2. Markér **Hent** i feltet **Tjenester**.
    
    ![](media/service-connect-to-azure-search/pbi_getservices.png) 
 3. Vælg **Azure Search** \> **Hent**.
@@ -40,7 +39,7 @@ Opret forbindelse til [Azure Search-indholdspakken](https://app.powerbi.com/getd
 5. Vælg **Nøgle** som godkendelsesmetode, og angiv din nøgle til lagerkontoen. Klik på **Log på** for at starte indlæsningsprocessen.
    
    ![](media/service-connect-to-azure-search/creds.png)
-6. Når indlæsningen er fuldført, vises der et nyt dashboard, en rapport og model i navigationsruden. Vælg dashboardet for at få vist de importerede data.
+6. Når indlæsningen er fuldført, vises der et nyt dashboard samt en ny rapport og model i navigationsruden. Vælg dashboardet for at få vist de importerede data.
    
     ![](media/service-connect-to-azure-search/dashboard2.png)
 

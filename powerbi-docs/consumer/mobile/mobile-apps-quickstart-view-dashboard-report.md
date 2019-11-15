@@ -2,19 +2,18 @@
 title: 'Hurtig introduktion: Udforsk dashboards og rapporter i mobilappene'
 description: I denne hurtige introduktion udforsker du et eksempeldashboard og en eksempelrapport i Power BI-mobilapps.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: quickstart
 ms.date: 04/18/2019
 ms.author: mshenhav
-ms.openlocfilehash: 173142d9aaf2b445504028e1f7987abe21806c37
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 9af245b51fa2520dca1ccca535ec44f14360a54c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "60975738"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879266"
 ---
 # <a name="quickstart-explore-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Hurtig introduktion: Vis dashboards og rapporter i Power BI-mobilappene
 I denne hurtige introduktion udforsker du et eksempeldashboard og en eksempelrapport i Power BI-mobilappen på en Android-telefon. Du kan også følge med i de andre mobilapps. 
@@ -35,7 +34,7 @@ Dashboards er en portal til din virksomhed og jeres processer. Et dashboard er e
 Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion](https://app.powerbi.com/signupredirect?pbi_source=web), før du begynder.
 
 ### <a name="install-the-power-bi-for-android-app"></a>Installér Power BI til Android-appen
-[Download Power BI til Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867) fra Google Play.
+[Download Power BI til Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867) fra Google Play.
 
 Power BI fungerer på Android-enheder, der kører operativsystemet Android 5.0 eller nyere. Hvis du vil kontrollere det på din enhed, skal du gå til **Indstillinger** > **Om enheden** > **Android-version**.
 
@@ -44,11 +43,11 @@ Det første skridt i den hurtige introduktion er at downloade eksemplet på deta
 
 1. Åbn Power BI-tjenesten i din browser (app.powerbi.com), og log på.
 
-1. Vælg ikonet for global navigation for at åbne venstre navigationsrude.
+1. Vælg ikonet for global navigation for at åbne navigationsruden.
 
     ![ikon for global navigation](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-global-nav-icon.png)
 
-2. Vælg **Arbejdsområder** > **Mit arbejdsområde** i navigationsruden til venstre.
+2. Vælg **Arbejdsområder** > **Mit arbejdsområde** i navigationsruden.
 
     ![Mit arbejdsområde](./media/mobile-apps-quickstart-view-dashboard-report/power-bi-android-quickstart-my-workspace.png)
 
@@ -135,7 +134,7 @@ Når du er færdig med denne hurtige introduktion, kan du slette dashboardet med
 
 1. Åbn Power BI-tjenesten (app.powerbi.com), og log på.
 
-2. Vælg **Arbejdsområder** > **Mit arbejdsområde** i navigationsruden til venstre.
+2. Vælg **Arbejdsområder** > **Mit arbejdsområde** i navigationsruden.
 
     Har du bemærket, at den gule stjerne angiver, at der er tale om en favorit?
 

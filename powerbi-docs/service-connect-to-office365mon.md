@@ -2,7 +2,6 @@
 title: Opret forbindelse til Office365Mon med Power BI
 description: Office365Mon til Power BI
 author: teddybercovitz
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 8/29/2019
 ms.author: tebercov
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 5d31eccd52164bb4d1ff37532d89dc7e147693d3
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 64e8365a6d4e0c01911de9e69998af4d58d59202
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060840"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854730"
 ---
 # <a name="connect-to-office365mon-with-power-bi"></a>Opret forbindelse til Office365Mon med Power BI
 Du kan nemt analysere nedetid i Office 365 og ydeevnedata med Power BI og Office365Mon-skabelonappen. Power BI henter dine data, herunder om nedetid og fra tilstandsundersøgelser, og opretter derefter et færdigt dashboard og rapporter ud fra de pågældende data.
@@ -26,10 +25,10 @@ Opret forbindelse til [Office365Mon-skabelonappen](https://app.powerbi.com/group
 >Det er nødvendigt med en Office365Mon-administratorkonto for at oprette forbindelse til og indlæse Power BI-skabelonappen.
 
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
-1. Vælg **Hent data** nederst i venstre navigationsrude.
+1. Vælg **Hent data** nederst i navigationsruden.
    
    ![](media/service-connect-to-office365mon/pbi_getdata.png)
-2. I feltet **Tjenester** skal du vælge **Hent**.
+2. Markér **Hent** i feltet **Tjenester**.
    
    ![](media/service-connect-to-office365mon/pbi_getservices.png) 
 3. Vælg **Office365Mon** \> **Hent**.
@@ -42,7 +41,7 @@ Opret forbindelse til [Office365Mon-skabelonappen](https://app.powerbi.com/group
    ![](media/service-connect-to-office365mon/creds.png)
    
    ![](media/service-connect-to-office365mon/creds2.png)
-5. Når du importerer data i Power BI, får du vist et nyt dashboard og datasæt samt en ny rapport i venstre navigationsrude. Nye elementer er markeret med en gul stjerne \*, vælg posten Office365Mon.
+5. Når Power BI har importeret dataene, vises der et nyt dashboard, en ny rapport og et nyt datasæt i navigationsruden. Nye elementer er markeret med en gul stjerne \*, vælg posten Office365Mon.
    
    ![](media/service-connect-to-office365mon/dashboard4.png)
 

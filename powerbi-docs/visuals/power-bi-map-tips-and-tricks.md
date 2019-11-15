@@ -2,21 +2,20 @@
 title: Tip og gode råd til kort (herunder integration af Bing Maps)
 description: 'Tip og tricks til Power BI-kortvisualiseringer, visuelle elementer, steder, længdegrad og breddegrad og hvordan de fungerer med Bing Maps. '
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ajTPGNpthcg
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 02/26/2019
+ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 5ae83079ae0dffca42498644f4de628bc626bb5e
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: dd35f06a685d1fd4620ef6a2ee3dc7f90e702a6a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61411697"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881031"
 ---
 # <a name="tips-and-tricks-for-power-bi-map-visualizations"></a>Tip og tricks til Power BI-kortvisualiseringer
 Power BI kan integreres med Bing Maps for at angive standardkortkoordinater (en proces, der kaldes geokodning), så du kan oprette kort. De bruger algoritmer til at identificere den korrekte placering, men nogle gange benyttes et kvalificeret gæt. Hvis Power BI forsøger, men ikke kan oprette kortvisualiseringen selv, bliver der gjort brug af Bing Kort. 
@@ -26,12 +25,13 @@ Du eller din administrator skal muligvis opdatere firewallen for at tillade adga
 * https://platform.bing.com/geo/spatial/v1/public/Geodata
 * https://www.bing.com/api/maps/mapcontrol
 
-Hvis du vil øge sandsynligheden for en korrekt geokodning, kan du følge disse tip. De første par tip er praktiske, hvis du har adgang til selve datasættet. De næste tip er ting, du kan gøre i Power BI, hvis du ikke har adgang til datasættet. Og det sidste sæt er en liste over URL-adresser
+Hvis du vil øge sandsynligheden for en korrekt geokodning, kan du følge disse tip. De første par tip er praktiske, hvis du har adgang til selve datasættet. De næste tip er ting, du kan gøre i Power BI, hvis du ikke har adgang til datasættet. 
 
 ## <a name="what-is-sent-to-bing-maps"></a>Hvad sendes der til Bing Maps?
 Power BI-tjenesten og Power BI Desktop sender de geodata til Bing, der skal bruges til at oprette kortvisualiseringen. Dette kan omfatte dataene i felterne **Placering**, **Breddegrad** og **Længdegrad** samt geofelter under filtrene under **Rapporteringsniveau**, **Sideniveau** eller **Visualiseringsniveau**. Det er korttypen, som afgør, hvad der sendes. Hvis du vil vide mere, skal du læse om [beskyttelse af personlige oplysninger i Bing Maps](https://go.microsoft.com/fwlink/?LinkID=248686).
 
-* Hvis der er angivet længdegrad og breddegrad for et kort (boblekort), sendes der ingen data til Bing. Ellers sendes data i de to buckets **Placering** (og Filter) til Bing.     
+* Hvis der er angivet længdegrad og breddegrad for et kort (boblekort, punktvisningskort og punktplotkort), sendes der ingen data til Bing. Ellers sendes data i de to buckets **Placering** (og Filter) til Bing.     
+
 * Kartogrammer kræver et felt i bucket'en **Placering**, selvom længdegrad og breddegrad er angivet. Uanset hvilke data der er angivet i de tre buckets **Placering**, **Længdegrad** og **Breddegrad**, sendes de til Bing.
   
     I eksemplet herunder bruges feltet **Vendor** til geokodning, så alle leverandørdata sendes til Bing. Data fra felterne **Størrelse** og **Farvemætning** sendes ikke til Bing.
@@ -47,7 +47,7 @@ Hvis du har adgang til det datasæt, der bruges til at oprette kortvisualisering
 
 **1. Kategoriser geografiske felter i Power BI Desktop**
 
-I Power BI Desktop kan du sikre, at felterne er korrekt geokodede ved at angive *Datakategori* for datafelterne. Vælg den ønskede tabel, gå til båndet **Avanceret**, og angiv **Datakategori** til **Adresse**, **By**, **Kontinent**, **Land/område**, **Amt**, **Postnummer**, **Stat** eller **Provins**. Bing bruger disse datakategorier til korrekt kodning af dataene. Du kan finde flere oplysninger under [Kategoriser data i Power BI Desktop](../desktop-data-categorization.md). Hvis du bruger en dynamisk forbindelse til SQL Server Analysis Services, skal du angive datakategoriseringen uden for Power BI ved hjælp af [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt).
+I Power BI Desktop kan du sikre, at felterne er korrekt geokodede ved at angive *Datakategori* for datafelterne. Vælg den ønskede kolonne i datavisning. Vælg fanen **Modellering** på båndet, og angiv derefter **Datakategori** til **Adresse**, **By**, **Kontinent**, **Land/område**, **Amt**, **Postnummer**, **Stat** eller **Provins**. Bing bruger disse datakategorier til korrekt kodning af dataene. Du kan finde flere oplysninger under [Kategoriser data i Power BI Desktop](../desktop-data-categorization.md). Hvis du bruger en dynamisk forbindelse til SQL Server Analysis Services, skal du angive datakategoriseringen uden for Power BI ved hjælp af [SQL Server Data Tools (SSDT)](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt).
 
 **2. Brug mere end én kolonne for placeringen.**     
  Nogle gange er det ikke tilstrækkeligt at indstille datakategorier, for at Bing kan skabe de rette resultater. Nogle betegnelser er tvetydige, fordi placeringen findes i flere lande eller områder. For eksempel findes der en by med navnet ***Southampton*** i både England, Pennsylvania og New York.
@@ -56,7 +56,7 @@ Power BI bruger Bings [ustrukturerede URL-skabelontjeneste](https://msdn.microso
 
  Hvis du for eksempel kun har kolonnen City, kan det være svært for Bing at finde den korrekte geokodning. Tilføj flere geokolonner for at gøre placeringen entydig.  Nogle gange kræver det, at du tilføjer en eller flere placeringskolonner i datasættet – i dette filælde stat/provins. Og glem ikke at kategorisere dataene korrekt (se nr. 1 herover).
 
-Sørg for, at hvert felt kun har de specifikke oplysninger, der er knyttet til kategoriseringen.  Feltet for By skal for eksempel være **Southampton** og ikke **Southampton, New York**.  Felterne for Adresse skal være **1 Microsoft Way** og ikke **1 Microsoft Way, Redmond, WA**.
+Sørg for, at hvert felt kun har en enkelt placeringskategori. Feltet for By skal for eksempel være **Southampton** og ikke **Southampton, New York**.  Felterne for Adresse skal være **1 Microsoft Way** og ikke **1 Microsoft Way, Redmond, WA**.
 
 **3. Brug en specifik breddegrad og længdegrad**
 
@@ -84,14 +84,14 @@ Hvis dit datasæt allerede indeholder forskellige niveauer af placeringsdata, ka
 
 Når du bruger detailudledning med geografiske hierarkier, er det vigtigt at vide, hvordan knapperne virker, og hvad der sendes til Bing Maps. 
 
-* Knappen længst til højre, som kaldes Analysetilstand ![](media/power-bi-map-tips-and-tricks/power-bi-drill-down.png), kan bruges til at vælge en kortplacering og gå længere ned i placeringen ét niveau ad gangen. Hvis du for eksempel aktiverer Analysér ned og klikker på North America, kommer du til næste niveau i hierarkiet, som er stater i Nordamerika. For geokodning sender Power BI kun data om lande og stater for Nordamerika til Bing Maps.  
-* Til venstre er der 2 andre analyseindstillinger. Den første indstilling, ![](media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png) , går til det næste niveau i hierarkiet for alle placeringer på en gang. Hvis du for eksempel ser på lande og derefter bruger denne indstilling for at få til det næste niveau, som er stater, vil Power BI vise data om stater for alle lande. For geokodning sender Power BI data om stater (ikke om lande) til Bing Maps for alle placeringer. Denne indstilling er praktisk, hvis hvert niveau i hierarkiet ikke relaterer til det overliggende niveau. 
+* Analyseknappen yderst til højre med navnet Analysetilstand ![Ikonet Analysetilstand](media/power-bi-map-tips-and-tricks/power-bi-drill-down.png) , kan bruges til at vælge en kortplacering og gå længere ned i placeringen ét niveau ad gangen. Hvis du for eksempel aktiverer Analysér ned og klikker på North America, kommer du til næste niveau i hierarkiet, som er stater i Nordamerika. For geokodning sender Power BI kun data om lande og stater for Nordamerika til Bing Maps.  
+* Til venstre er der 2 andre analyseindstillinger. Den første indstilling, ![ikon for første analyse](media/power-bi-map-tips-and-tricks/power-bi-drill-down2.png) , går til det næste niveau i hierarkiet for alle placeringer på en gang. Hvis du for eksempel ser på lande og derefter bruger denne indstilling for at få til det næste niveau, som er stater, vil Power BI vise data om stater for alle lande. For geokodning sender Power BI data om stater (ikke om lande) til Bing Maps for alle placeringer. Denne indstilling er praktisk, hvis hvert niveau i hierarkiet ikke relaterer til det overliggende niveau. 
 * Den anden indstilling, ![detaljeret visning med kort](./media/power-bi-map-tips-and-tricks/power-bi-drill-down3.png) , svarer til Analysér ned, men du behøver ikke at klikke på kortet.  Det udvides ned til det næste niveau i hierarkiet og husker konteksten for det aktuelle niveau. Hvis du for eksempel kigger på lande og vælger dette ikon, flytter du ned til næste niveau i hierarkiet, som er stater. For geokodning vil Power BI sende data for hver stat og det relaterede land til Bing Maps for at få en mere korrekt geokodning. På de fleste kort vil du enten bruge denne indstilling eller indstillingen Analysér ned længst til højre, så du kan sende flest mulige oplysninger til Bing for at få de mest præcise placeringsoplysninger. 
 
 ## <a name="next-steps"></a>Næste trin
 [Detailudledning i en visualisering i Power BI](../consumer/end-user-drill.md)
 
-[Power BI-visualiseringer](power-bi-report-visualizations.md)
+[Visualiseringer i Power BI](power-bi-report-visualizations.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

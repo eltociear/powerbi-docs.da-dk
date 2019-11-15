@@ -3,17 +3,16 @@ title: Logføring af diagnosticering for Power BI Embedded-tjenesten på Azure |
 description: Få mere at vide om konfiguration af logføring af diagnosticering for Power BI Embedded-tjenesten på Azure.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: power-bi-embedded
 ms.topic: conceptual
 ms.date: 08/13/2018
-ms.openlocfilehash: dc1a034a062ca07fd9f31a847378913fd7ee4002
-ms.sourcegitcommit: 76fadf20c1e19ec43aa8f9c5a5e909b567419ef6
+ms.openlocfilehash: 9065feef76050c6a04e1ecf8ec7907b74be4b0ce
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68289857"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875972"
 ---
 # <a name="diagnostic-logging-for-power-bi-embedded-in-azure"></a>Logføring af diagnosticering for Power BI Embedded på Azure
 
@@ -29,7 +28,7 @@ Ved hjælp af diagnosticering kan du får svar på nogle få scenarier, f.eks.:
 
 ### <a name="azure-portal"></a>Azure-portal
 
-1. På [Azure Portal](https://portal.azure.com) > Power BI Embedded-ressource skal du vælge **Diagnosticeringslogge** i navigationsruden til venstre og derefter vælge **Slå diagnosticering til**.
+1. På [Azure Portal](https://portal.azure.com) > Power BI Embedded-ressource skal du vælge **Diagnosticeringslogge** i navigationsruden og derefter vælge **Slå diagnosticering til**.
 
     ![Slå logføring af diagnosticering til for Power BI Embedded på Azure Portal](media/azure-pbie-diag-logs/azure-pbie-diag-logs-01.png)
 

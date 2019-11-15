@@ -2,7 +2,6 @@
 title: 'Eksempel på detailhandelsanalyse til Power BI: Få en introduktion'
 description: 'Eksempel på detailhandelsanalyse til Power BI: Få en introduktion'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: b3adcf3ba97e83875187a11116fdb7b642e5560b
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: 42e3a95e344e17d1ceba11911fc8aa349ebafd0c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68962226"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858561"
 ---
 # <a name="retail-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på detailhandelsanalyse til Power BI: Få en introduktion
 
@@ -54,11 +53,11 @@ Du behøver ikke en Power BI-licens for at udforske eksemplerne i Power BI Deskt
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hent .pbix-filen knyttet til dette eksempel
 
-Du kan også hente Eksempel på detailhandelsanalyse som en [.pbix-fil](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), som er beregnet til brug med Power BI Desktop. 
+Du kan også hente Eksempel på detailhandelsanalyse som en [.pbix-fil](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix), som er beregnet til brug med Power BI Desktop. 
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hent Excel-projektmappen for dette eksempel
 
-Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529778). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, kan du finde flere oplysninger under [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](https://go.microsoft.com/fwlink/?LinkId=529778). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, kan du finde flere oplysninger under [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="start-on-the-dashboard-and-open-the-report"></a>Start på dashboardet, og åbn rapporten
 
@@ -78,7 +77,7 @@ Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig s
 
    Distriktet **FD-01** har det største gennemsnitlige **Salg pr. kvm**, og FD-02 har den laveste **Samlet salgsvarians** sammenlignet med sidste år. FD-03 og FD-04 klarer sig dårligst samlet set.
 4. Vælg individuelle bobler eller andre diagrammer for at se tværgående fremhævning, som viser effekten af dine valg.
-5. Hvis du vil vende tilbage til dashboardet, skal du vælge **Eksempel på detailhandelsanalyse** på den øverste navigationslinje.
+5. Hvis du vil vende tilbage til dashboardet, skal du vælge **Eksempel på detailhandelsanalyse** i den øverste navigationsrude.
 
    ![Navigationslinje](media/sample-retail-analysis/power-bi-breadcrumbs.png)
 6. På dashboardet, skal du vælge feltet **Dette års salg for nye og eksisterende butikker**, som er svarer til at skrive *Dette års salg* i feltet Spørgsmål og svar.

@@ -12,7 +12,7 @@
         - name: Oversigt
           items:
             - name: Visualiseringer i Power BI
-              href: ../power-bi-custom-visuals.md
+              href: power-bi-custom-visuals.md
         - name: Selvstudier
           items:
             - name: Udvikl en Power BI-visualisering
@@ -24,11 +24,11 @@
         - name: Begreber
           items:
             - name: Visualiseringer til organisationer i Power BI
-              href: ../power-bi-custom-visuals-organization.md
+              href: power-bi-custom-visuals-organization.md
             - name: Retningslinjer for Power BI-visualiseringer
               href: guidelines-powerbi-visuals.md
             - name: Ofte stillede spørgsmål om visualiseringer
-              href: ../power-bi-custom-visuals-faq.md
+              href: power-bi-custom-visuals-faq.md
             - name: Brug af funktionaliteter
               href: visuals/capabilities.md
             - name: Tilknytning af datavisning
@@ -40,12 +40,12 @@
         - name: Sådan gør du
           items:
             - name: Få en visualisering certificeret
-              href: ../power-bi-custom-visuals-certified.md
+              href: power-bi-custom-visuals-certified.md
             - name: Publicer brugerdefinerede visuals i AppSource
               href: office-store.md
             - name: Brug R-drevne brugerdefinerede visuelle elementer i Power BI
-              href: ../desktop-r-powered-custom-visuals.md
-            - name: Tillad interaktioner mellem visualiseringer
+              href: ../desktop-r-powered-custom-visuals.md?toc=/powerbi-docs/developer/toc.json&bc=/powerbi-docs/developer/breadcrumb/toc.json
+            - name: Interaktioner mellem visualiseringer
               href: visuals/visuals-interactions.md
             - name: Tilføj markeringer
               href: visuals/selection-api.md
@@ -68,9 +68,7 @@
             - name: Aktivér synkroniseringsudsnit
               href: visuals/enable-sync-slicers.md
             - name: Fejlfind visualiseringer i Power BI
-              href: ../power-bi-custom-visuals-troubleshoot.md
-            - name: Overfør til de nye powerbi-visualiseringsværktøjer
-              href: visuals/migrate-to-new-tools.md
+              href: power-bi-custom-visuals-troubleshoot.md
         - name: Reference
           items:
             - name: Landingside

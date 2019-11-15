@@ -3,19 +3,18 @@ title: Rediger SAP-variabler i Power BI-tjenesten (prøveversion)
 description: Azure og Power BI
 author: Sujata994
 ms.author: sunaraya
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/12/2019
 LocalizationGroup: Data from databases
-ms.openlocfilehash: db1d4a8a9734c910514b4952b664bf7ebce324c1
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: d78124045767323cca657fa41d4415ca2e929f3d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654887"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881918"
 ---
 # <a name="edit-sap-variables-in-the-power-bi-service-preview"></a>Rediger SAP-variabler i Power BI-tjenesten (prøveversion)
 
@@ -31,7 +30,7 @@ Der er et par krav til at bruge funktionen Rediger SAP-variabler. På følgende 
 
 **Den nye filteroplevelse kræves** – Du skal have aktiveret den [nye filteroplevelse](power-bi-report-filter.md) for din rapport. Her kan du se, hvordan du aktiverer den for din rapport i Power BI Desktop:
 - Vælg **Filer** > **Indstillinger** > **Indstillinger** i Power BI Desktop
-- Under **Aktuel fil** på venstre navigationslinje skal du vælge **Rapportindstillinger**.
+- Under **Aktuel fil** skal du vælge **Rapportindstillinger**.
 - Under **Filtreringsoplevelse** skal du vælge **Aktivér den opdaterede filtreringsrude**.
 
 **DirectQuery-forbindelser kræves** – Du skal oprette forbindelse til SAP-datakilden ved hjælp af DirectQuery. Importforbindelser understøttes ikke.

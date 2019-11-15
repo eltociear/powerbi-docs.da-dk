@@ -2,7 +2,6 @@
 title: 'Eksempel på analyse af it-forbrug til Power BI: Få en introduktion'
 description: 'Eksempel på analyse af it-forbrug til Power BI: Få en introduktion'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: bc6b35b6401f4424a3a5120cb7c28437da9a2a48
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 6f39f8b5c288c1dbff3cd87c7beee27683cfeae2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462256"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873919"
 ---
 # <a name="it-spend-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på analyse af it-forbrug til Power BI: Få en introduktion
 
@@ -54,11 +53,11 @@ Du behøver ikke en Power BI-licens for at udforske eksemplerne i Power BI Deskt
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hent .pbix-filen knyttet til dette eksempel
 
-Du kan også hente eksemplet IT Spend Analysis som en [.pbix-fil](http://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix), som er beregnet til brug med Power BI Desktop.
+Du kan også hente eksemplet IT Spend Analysis som en [.pbix-fil](https://download.microsoft.com/download/E/9/8/E98CEB6D-CEBB-41CF-BA2B-1A1D61B27D87/IT%20Spend%20Analysis%20Sample%20PBIX.pbix), som er beregnet til brug med Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hent Excel-projektmappen for dette eksempel
 
-Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529783). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, kan du finde flere oplysninger under [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](https://go.microsoft.com/fwlink/?LinkId=529783). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, kan du finde flere oplysninger under [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="it-spend-analysis-sample-dashboard"></a>Dashboardet IT Spend Analysis Sample
 De to talfelter til venstre for dashboardet, **Var Plan %** og **Variance Latest Estimate % Quarter 3**, giver os et overblik over, hvor godt vi klarer os i forhold til planen og i forhold til estimatet for det seneste kvartal (LE3 = Latest Estimate Quarter 3). Samlet set er vi omtrent 6 % fra planen. Lad os undersøge årsagen til denne varians: hvornår, hvor og hvilken kategori.
@@ -78,7 +77,7 @@ Men det kan være vildledende kun at kigge på dette diagram og udlede konklusio
     Lad os nu undersøge, hvilken kategori i USA der er skyld i variansen.
 
 ## <a name="ask-questions-of-the-data"></a>Stil spørgsmål til dataene
-1. Vælg **IT Spend Analysis Sample** på den øverste navigationslinje for at vende tilbage til eksempeldashboardet.
+1. Vælg **Eksempel på analyse af it-forbrug** i den øverste navigationsrude for at vende tilbage til eksempeldashboardet.
 2. Vælg **Stil et spørgsmål om dine data**.
 3. På listen **Spørgsmål, som kan hjælpe dig i gang** til venstre skal du vælge **hvad er planen efter it-område**.
 

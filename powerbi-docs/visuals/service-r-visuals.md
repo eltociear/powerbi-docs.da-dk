@@ -2,20 +2,19 @@
 title: Opret avancerede analyser og visualiseringer med R-scripts
 description: Brug R-scripts i Power BI til at oprette avancerede analyser og avancerede visualiseringer
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/16/2019
+ms.date: 10/31/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 93b3be374707b3e49f87d0875795d160f4530410
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: f3b5cd09e77ed3530b9040edec46712171d061dd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655013"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880663"
 ---
 # <a name="creating-r-visuals-in-the-power-bi-service"></a>Opret visuelle R-elementer i Power BI-tjenesten
 Power BI-tjenesten understøtter visning og interaktion med visuelle elementer, der er oprettet med R-scripts. Visuelle elementer, der er oprettet med R-scripts, også kaldet *R-visuals*, kan vise avanceret dataformatering og analyse, f.eks. prognoser, ved hjælp af styrken i R's omfattende analyse- og visualiseringsfunktioner.
@@ -27,23 +26,23 @@ Power BI-tjenesten understøtter visning og interaktion med visuelle elementer, 
 
 Det følgende billede viser et Power BI-dashboard med en samling af visuelle R-elementer, der bruges til avancerede analyser.
 
-![](media/service-r-visuals/r-visuals-service_1.png)
+![Skærmbillede af rapportlærredet for Power BI-tjenesten](media/service-r-visuals/r-visuals-service_1.png)
 
 Visuelle R-elementer oprettes i en [Power BI Desktop-rapport](../desktop-get-the-desktop.md), som rapporten vist på følgende billede.
 
-![](media/service-r-visuals/r-visuals-service_2a.png)
+![Desktop-rapport med to visuals](media/service-r-visuals/r-visuals-service_2a.png)
 
 Når rapporten er oprettet i **Power BI Desktop**, kan du udgive rapporten på Power BI-tjenesten med et eller flere visuelle R-elementer. Visuelle R-elementer kan i øjeblikket kun oprettes i **Power BI Desktop** og derefter publiceres på Power BI-tjenesten. Du kan finde flere oplysninger om oprettelse af visuelle R-elementer, under [Opret visuelle Power BI-elementer ved hjælp af R (Power BI Desktop)](../desktop-r-visuals.md).
 
 Vær opmærksom på, at ikke alle R-pakker understøttes på tjenesten. Se de understøttede pakker sidst i denne artikel for at få vist listen over pakker, der understøttes i øjeblikket på Power BI-tjenesten.
 
-Du kan downloade denne [Power BI Desktop-eksempelfil](http://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix-fil), der indeholder nogle visuelle R-elementer, for at se, hvordan det fungerer, og for at eksperimentere.
+Du kan downloade denne [Power BI Desktop-eksempelfil](https://download.microsoft.com/download/D/9/A/D9A65269-D1FC-49F8-8EC3-1217E3A4390F/RVisual_correlation_plot_sample%20SL.pbix) (.pbix-fil), der indeholder nogle visuelle R-elementer, for at se, hvordan det fungerer, og for at eksperimentere.
 
 Visuelle R-elementer, der er oprettet i **Power BI Desktop**, og derefter publiceres på Power BI-tjenesten, fungerer i de fleste tilfælde som andre visuelle elementer på Power BI-tjenesten. Du kan arbejde med, filtrere, oprette udsnit af og fastgøre dem til et dashboard eller dele dem med andre. Du kan finde flere oplysninger om at dele dashboards og visuelle elementer under [Del et dashboard med kolleger og andre](../service-share-dashboards.md). Én forskel fra andre visuelle elementer er, at visuelle R-elementer ikke kan vise værktøjstip og ikke kan bruges til at filtrere andre visuelle elementer.
 
 Som du kan se på billedet nedenfor, vises og fungerer visuelle R-elementer på Power BI-tjenesten, enten i dashboards eller rapporter, stort set som et hvilken som helst andet visuelt element, og brugerne behøver ikke at være opmærksomme på det underliggende R-script, der oprettede det visuelle element.
 
-![](media/service-r-visuals/r-visuals-service_3a.png)
+![skærmbillede af rapportsiden i Power BI-tjenesten](media/service-r-visuals/r-visuals-service_3a.png)
 
 ## <a name="r-scripts-security"></a>Sikkerhed for R-scripts
 Visuelle R-elementer oprettes ud fra R-scripts, som kan indeholde kode med risici for sikkerhed eller personlige oplysninger.
@@ -61,7 +60,7 @@ Når et R-script støder på en fejl, afbildes det visuelle R-element ikke, og d
 
 Som et andet eksempel viser følgende billede den fejlmeddelelse, der vises, når et R-script ikke blev kørt korrekt på grund af en manglende R-pakke i Azure.
 
-![](media/service-r-visuals/r-visuals-service_5.png)
+![Skærmbillede, der viser en kørselsfejl](media/service-r-visuals/r-visuals-service_5.png)
 
 ## <a name="licensing"></a>Licensering
 Visuelle R-elementer kræver en [Power BI Pro](../service-self-service-signup-for-power-bi.md)-licens for at kunne gengives i rapporter, opdateres, filtreres og filtreres i tværgående retning. Du kan finde flere oplysninger om Power BI Pro-licenser, og hvordan de adskiller sig fra gratis licenser, under [Power BI Pro-indhold – Hvad er det?](../service-admin-purchasing-power-bi-pro.md)

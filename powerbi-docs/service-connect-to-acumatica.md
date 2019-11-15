@@ -2,7 +2,6 @@
 title: Opret forbindelse til Acumatica med Power BI
 description: Acumatica til Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: d2ee7a338f34e4c29fdbefae6518bede9e94badb
-ms.sourcegitcommit: b53a6f5575f5f8bc443ecdca9c72525ce123518f
+ms.openlocfilehash: 09e55aef3a1167143694c8e26a342cb1b8f0875c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70186158"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873209"
 ---
 # <a name="connect-to-acumatica-with-power-bi"></a>Opret forbindelse til Acumatica med Power BI
 Med Power BI Acumatica-indholdspakken kan du hurtigt få indsigt i dine data med salgsmuligheder. Power BI henter dine data, herunder salgsmuligheder og kunder og opretter derefter et standarddashboard og relaterede rapporter, der er baseret på disse data.
@@ -28,10 +27,10 @@ Opret forbindelse til [Acumatica-indholdspakken](https://app.powerbi.com/getdata
 >Denne indholdspakke kræver Acumatica v5.2 eller nyere.
 
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
-1. Vælg **Hent data** nederst i venstre navigationsrude.
+1. Vælg **Hent data** nederst i navigationsruden.
    
    ![](media/service-connect-to-acumatica/getdata3.png)
-2. Vælg **Hent** i feltet **Tjenester**.
+2. Markér **Hent** i feltet **Tjenester**.
    
    ![](media/service-connect-to-acumatica/getdata2.png)
 3. Vælg **Acumatica** \> **Hent**.
@@ -47,7 +46,7 @@ Opret forbindelse til [Acumatica-indholdspakken](https://app.powerbi.com/getdata
 5. Som Godkendelsesmetode skal du vælge **Grundlæggende**. Angiv brugernavnet og adgangskoden fra din Acumatica-konto, og klik derefter på **Log på**.
    
     ![](media/service-connect-to-acumatica/creds2.png)
-6. Når Power BI har importeret dataene, vises der et nyt dashboard, en ny rapport og et nyt datasæt i venstre navigationsrude. Nye elementer er markeret med en gul stjerne \*, som forsvinder, når den er valgt. Når dashboardet vælges, vises et layout svarende til det nedenfor:
+6. Når Power BI har importeret dataene, vises der et nyt dashboard, en ny rapport og et nyt datasæt i navigationsruden. Nye elementer er markeret med en gul stjerne \*, som forsvinder, når den er valgt. Når dashboardet vælges, vises et layout svarende til det nedenfor:
    
     ![](media/service-connect-to-acumatica/dashboard.png)
 

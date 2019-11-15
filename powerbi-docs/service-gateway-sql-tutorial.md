@@ -2,7 +2,6 @@
 title: 'Selvstudium: Opret forbindelse til lokale data i SQL Server'
 description: Få mere at vide om, hvordan du kan bruge SQL Server som gatewaydatakilde, herunder hvordan du opdaterer data.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-gateways
@@ -10,21 +9,21 @@ ms.topic: tutorial
 ms.date: 07/15/2019
 ms.author: mblythe
 LocalizationGroup: Gateways
-ms.openlocfilehash: 54ef11b51fb02b6913b4d591967a140c5affc1b8
-ms.sourcegitcommit: 9d13ef7a257b5006fca5f92acf5b611f5cd143a2
+ms.openlocfilehash: 91b6ee8971004a014b188f94142e90914ae3a3b7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68307387"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881543"
 ---
-# <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Opdater data fra en SQL Server-database i det lokale miljø
+# <a name="refresh-data-from-an-on-premises-sql-server-database"></a>Opdater data fra en lokal SQL Server-database
 
 I dette selvstudium kan udforske, hvordan du opdaterer et Power BI-datasæt fra en relationsdatabase, der findes i det lokale miljø på dit lokale netværk. Dette selvstudium bruger et specifikt eksempel på en SQL Server-database, som Power BI skal have adgang til via en datagateway i det lokale miljø.
 
 I dette selvstudium kan du udføre følgende trin:
 
 > [!div class="checklist"]
-> * Opret og publicer en Power BI Desktop-fil (.pbix), der importerer data fra en SQL Server-database i det lokale miljø.
+> * Opret og publicer en Power BI Desktop-fil (.pbix), der importerer data fra en lokal SQL Server-database.
 > * Konfigurer indstillinger for datakilde og datasæt i Power BI til SQL Server-forbindelsen via en datagateway.
 > * Konfigurer en tidsplan for opdatering at sikre, at dit datasæt i Power BI har de nyeste data.
 > * Udfør en opdatering efter behov af datasættet.
@@ -149,7 +148,7 @@ Nu, hvor du har forbundet dit datasæt i Power BI til din SQL Server-database i 
 
 ## <a name="perform-an-on-demand-refresh"></a>Udfør en opdatering efter behov
 
-Nu, hvor du har konfigureret en tidsplan for opdatering, opdaterer Power BI dit datasæt på det næste planlagte tidspunkt inden for en margen på 15 minutter. Hvis du vil opdatere dataene hurtigere, f.eks. for at teste din gateway og konfigurationen af din datakilde, kan du udføre en opdatering efter behov ved hjælp af indstillingen **Opdater nu** i menuen for datasæt i navigationsruden til venstre. Opdateringer efter behov påvirker ikke det næste planlagte opdateringstidspunkt, men de tæller i forhold til grænsen for antal daglige opdateringer, som er nævnt i foregående sektion.
+Nu, hvor du har konfigureret en tidsplan for opdatering, opdaterer Power BI dit datasæt på det næste planlagte tidspunkt inden for en margen på 15 minutter. Hvis du vil opdatere dataene hurtigere, f.eks. for at teste din gateway og konfigurationen af din datakilde, kan du udføre en opdatering efter behov ved hjælp af indstillingen **Opdater nu** i menuen for datasæt i navigationsruden. Opdateringer efter behov påvirker ikke det næste planlagte opdateringstidspunkt, men de tæller i forhold til grænsen for antal daglige opdateringer, som er nævnt i foregående sektion.
 
 Du kan simulere en ændring af eksempeldataene for at illustrere dette ved at opdatere tabellen DimProduct i databasen AdventureWorksDW ved hjælp af SSMS (SQL Server Management Studio).
 
@@ -163,7 +162,7 @@ WHERE EnglishProductName ='Road-250 Red, 58'
 
 Følg nu disse trin, så de opdaterede data kan bevæge sig gennem gatewayforbindelsen til datasættet og ind i rapporterne i Power BI.
 
-1. I venstre navigationsrude i Power BI-tjenesten skal du vælge og udvide **Mit arbejdsområde**.
+1. Vælg og udvid **Mit arbejdsområde** i navigationsruden i Power BI-tjenesten.
 
 2. Under **Datasæt** skal du vælge ellipsen ( **. . .** ) for datasættet **AdventureWorksProducts** og derefter vælge **Opdater nu**.
 
@@ -200,7 +199,7 @@ Hvis du ikke længere vil bruge eksempeldataene, kan du slippe databasen i SSMS 
 
 ## <a name="next-steps"></a>Næste trin
 
-I dette selvstudium har du undersøgt, hvordan du importerer data fra en SQL Server-database i det lokale miljø til et Power BI-datasæt, og hvordan du opdaterer dette datasæt efter en planlagt tidsplan og efter behov, så du kan holde rapporter og dashboards, der bruger datasættet, opdateret i Power BI. Nu kan du lære mere om at administrere datagateways og datakilder i Power BI. Det kan også være en god idé at læse den konceptuelle artikel om Opdatering af data i Power BI.
+I dette selvstudium har du undersøgt, hvordan du importerer data fra en lokal SQL Server-database til et Power BI-datasæt, og hvordan du opdaterer dette datasæt efter en planlagt tidsplan og efter behov, så du kan holde rapporter og dashboards, der bruger datasættet, opdateret i Power BI. Nu kan du lære mere om at administrere datagateways og datakilder i Power BI. Det kan også være en god idé at læse den konceptuelle artikel om Opdatering af data i Power BI.
 
 - [Administrer en datagateway i det lokale miljø](/data-integration/gateway/service-gateway-manage)
 - [Administrer din datakilde – Import/Planlagt opdatering](service-gateway-enterprise-manage-scheduled-refresh.md)

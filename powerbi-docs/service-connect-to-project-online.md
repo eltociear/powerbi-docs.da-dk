@@ -2,7 +2,6 @@
 title: Opret forbindelse til Project Online med Power BI
 description: Project Online til Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 0978e87167f96b40082819764d7e3ae35e930a4b
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 941981e1f84cf3d7a74a156e4f1c88f57e061ad2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023768"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854651"
 ---
 # <a name="connect-to-project-web-app-with-power-bi"></a>Opret forbindelse til Project Web App med Power BI
 Microsoft Project Web App er en fleksibel onlineløsning til projektporteføljestyring (PPM) og det daglige arbejde. Project Web App gør det muligt for organisationer at komme i gang, prioritere investeringer i projektporteføljen og levere den tilsigtede forretningsværdi. Med Project Web App-skabelonappen til Power BI får du indsigt fra Project Web App, som kan hjælpe dig med at administrere projekter, porteføljer og ressourcer.
@@ -24,7 +23,7 @@ Opret forbindelse til [Project Web App-skabelonappen](https://appsource.microsof
 
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
 
-1. Vælg **Apps** i navigationsruden til venstre > vælg **Hent apps** i øverste højre hjørne.
+1. Vælg **Apps** i navigationsruden > vælg **Hent apps** i øverste højre hjørne.
 
     ![Hent apps](media/service-connect-to-project-online/GetApps.png)
 
@@ -38,7 +37,7 @@ Opret forbindelse til [Project Web App-skabelonappen](https://appsource.microsof
    ![Installér Project Web](media/service-connect-to-project-online/ProjectTile.png)
 5. I ruden **Apps** skal du vælge feltet **Microsoft Project Web App**. 
    
-   ![Microsoft Project-webapp](media/service-connect-to-project-online/getstarted.png)
+   ![Microsoft Project Web App](media/service-connect-to-project-online/getstarted.png)
 6. Under **Kom i gang med din nye app** skal du vælge **Opret forbindelse til data**.
    
    ![Opret forbindelse til data](media/service-connect-to-project-online/mproject.png)
@@ -52,7 +51,7 @@ Opret forbindelse til [Project Web App-skabelonappen](https://appsource.microsof
 
 9. Du får vist en meddelelse, der indikerer, at dine data indlæses. Afhængigt af størrelsen på din konto kan det tage noget tid. Når Power BI importerer dataene, får du vist indholdet af dit nye arbejdsområde. Det kan være nødvendigt at opdatere datasættet for at få de nyeste opdateringer. 
 
-    Når Power BI har importeret dataene, får du vist rapporten med 13 sider og datasættet i navigationsrude til venstre. 
+    Når Power BI har importeret dataene, får du vist rapporten med 13 sider og datasættet i navigationsruden. 
 
 10. Når dine rapporter er klar, kan du gå videre og begynde at udforske dataene i Project Web App. Skabelonappen leveres med 13 omfattende og detaljerede rapporter til oversigt over portefølje (6 rapportsider), oversigt over ressource (5 rapportsider) og projektstatus (2 rapportsider). 
 

@@ -2,19 +2,18 @@
 title: Publicer en app i Power BI
 description: Få mere at vide om, hvordan du publicerer de nye apps, der er samlinger af dashboards og rapporter med indbygget navigation.
 author: maggiesMSFT
-manager: kfile
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 08/15/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 7aa9ec22eec07632a071b5ffaadfe06f221897d7
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 622d01632b9c9cbe6203090b3ac2149d4bc94474
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020232"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853632"
 ---
 # <a name="publish-an-app-in-power-bi"></a>Publicer en app i Power BI
 
@@ -115,7 +114,7 @@ Du kan tilpasse appnavigationen yderligere på følgende måde:
 * Omdøb elementer i **Rapportdetaljer**, **Dashboarddetaljer** og **Projektmappedetaljer**.
 * Skjul bestemte elementer i navigationen.
 * Brug indstillingen **Ny** til at føje **afsnit** til grupperelateret indhold.
-* Brug indstillingen **Ny** til at tilføje et **link** til en ekstern ressource i venstre navigation. 
+* Brug indstillingen **Ny** til at tilføje et **link** til en ekstern ressource i navigationsruden. 
 
 Når du tilføjer et **link**, kan du vælge, hvor linket åbnes, i **Link-detaljer**. Links åbnes som standard under den **aktuelle fane**, men du kan vælge **Ny fane** eller **Indholdsområde**. 
 
@@ -187,7 +186,7 @@ Denne handling fjerner installationen af appen for alle, du har udgivet den til,
 
 ## <a name="view-your-published-app"></a>Se din publicerede app
 
-Når forbrugerne af din app åbner din app, kan de se den navigation, du har oprettet, i stedet for Power BI-standardnavigationsruden til venstre. Appnavigationen indeholder en liste over rapporter og dashboards i de sektioner, du har defineret. Den viser også de enkelte sider i de enkelte rapporter og ikke kun navnet på rapporten.
+Når forbrugerne af din app åbner din app, kan de se den navigation, du har oprettet, i stedet for Power BI-standardnavigationsruden. Appnavigationen indeholder en liste over rapporter og dashboards i de sektioner, du har defineret. Den viser også de enkelte sider i de enkelte rapporter og ikke kun navnet på rapporten.
 
 ![App med navigation](media/service-create-distribute-apps/power-bi-new-apps-navigation.png)
 
@@ -203,4 +202,4 @@ Ting, du skal være opmærksom i forbindelse med publicering af apps:
 * [Installér og brug apps i Power BI](consumer/end-user-apps.md)
 * [Power BI-apps til eksterne tjenester](service-connect-to-services.md)
 * [Power BI-administrationsportal](https://docs.microsoft.com/power-bi/service-admin-portal)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

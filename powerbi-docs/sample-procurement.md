@@ -2,7 +2,6 @@
 title: 'Eksempel på indkøbsanalyse: Få en introduktion'
 description: 'Eksempel på indkøbsanalyse for Power BI: Få en introduktion'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/02/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 9e27d09414167f9625e046204c14a5fb57112cd9
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 0998ebec15a4e02262ab54a3b08593a65f37af4e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462269"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873865"
 ---
 # <a name="procurement-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på indkøbsanalyse for Power BI: Få en introduktion
 
@@ -58,11 +57,11 @@ Før du kan bruge eksemplet, skal du først downloade det som en [indholdspakke]
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hent .pbix-filen knyttet til dette eksempel
 
-Du kan også hente Eksempel på indkøbsanalyse som en [.pbix-fil](http://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix), der er beregnet til brug med Power BI Desktop. 
+Du kan også hente Eksempel på indkøbsanalyse som en [.pbix-fil](https://download.microsoft.com/download/D/5/3/D5390069-F723-413B-8D27-5888500516EB/Procurement%20Analysis%20Sample%20PBIX.pbix), der er beregnet til brug med Power BI Desktop. 
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hent Excel-projektmappen for dette eksempel
 
-Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529784). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, kan du finde flere oplysninger under [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](https://go.microsoft.com/fwlink/?LinkId=529784). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, kan du finde flere oplysninger under [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 
 ## <a name="spending-trends"></a>Udgiftstendenser
@@ -99,7 +98,7 @@ Lad os udforske udgiftsområder i Mexico.
       ![Detailudledning for Indirekte varer og tjenesteydelser for Mexico](media/sample-procurement/pbi_procsample_drill_mexico.png)
 3. Vælg pil op i det øverste venstre hjørne af diagrammet for at gå tilbage i detailudledningen.
 4. Vælg pilen til detailudledning igen for at deaktivere detailudledning.  
-5. Vælg **Eksempel på indkøbsanalyse** på den øverste navigationslinje for at vende tilbage til dashboardet.
+5. Vælg **Eksempel på indkøbsanalyse** i den øverste navigationsrude for at vende tilbage til dashboardet.
 
 ## <a name="evaluate-different-cities"></a>Evaluer forskellige byer
 Vi kan bruge markering til at evaluere forskellige byer.

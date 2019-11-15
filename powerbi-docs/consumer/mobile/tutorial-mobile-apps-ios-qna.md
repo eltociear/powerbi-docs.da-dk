@@ -2,19 +2,18 @@
 title: 'Selvstudium: Stil spørgsmål med den virtuelle Spørgsmål og svar-analytiker i iOS-apps'
 description: I denne vejledning kan du stille spørgsmål om eksempeldata med dine egne ord ved hjælp af den virtuelle Spørgsmål og svar-analytiker i Power BI-mobilappen på din iOS-enhed.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: tutorial
 ms.date: 11/16/2018
 ms.author: mshenhav
-ms.openlocfilehash: 74949d2b71dbdca46bbda9623a962616a72af45e
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: c7fd216d50f918d96392532ccb82f80d619ce8a3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61337185"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869647"
 ---
 # <a name="tutorial-ask-questions-about-your-data-with-the-qa-virtual-analyst-in-the-power-bi-ios-apps"></a>Selvstudium: Stil spørgsmål om dine data ved hjælp af den virtuelle Spørgsmål og svar-analytiker i iOS-apps med Power BI
 
@@ -42,7 +41,7 @@ Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion]
 ## <a name="prerequisites"></a>Forudsætninger
 
 ### <a name="install-the-power-bi-for-ios-app"></a>Installér Power BI til iOS-apps
-[Download iOS-appen](http://go.microsoft.com/fwlink/?LinkId=522062 "Download iPhone-appen") fra Apple App Store til din iPad, iPhone eller iPod Touch.
+[Download iOS-appen](https://go.microsoft.com/fwlink/?LinkId=522062 "Download iPhone-appen") fra Apple App Store til din iPad, iPhone eller iPod Touch.
 
 Disse versioner understøtter Power BI til iOS-app:
 - iPad med iOS 10 eller nyere.
@@ -54,11 +53,11 @@ Det første skridt i vejledningen er at downloade eksemplet på analyse af salgs
 
 1. Åbn Power BI-tjenesten i din browser (app.powerbi.com), og log på.
 
-1. Vælg ikonet for global navigation for at åbne venstre navigationsrude.
+1. Vælg ikonet for global navigation for at åbne navigationsruden.
 
     ![ikon for global navigation](./media/tutorial-mobile-apps-ios-qna/power-bi-android-quickstart-global-nav-icon.png)
 
-2. Vælg **Arbejdsområder** > **Mit arbejdsområde** i navigationsruden til venstre.
+2. Vælg **Arbejdsområder** > **Mit arbejdsområde** i navigationsruden.
 
     ![Mit arbejdsområde](./media/tutorial-mobile-apps-ios-qna/power-bi-android-quickstart-my-workspace.png)
 
@@ -117,7 +116,7 @@ Når du er færdig med selvstudiet, kan du slette dashboardet med eksemplet på 
 
 1. Åbn Power BI-tjenesten (app.powerbi.com), og log på.
 
-2. Vælg **Arbejdsområder** > **Mit arbejdsområde** i navigationsruden til venstre.
+2. Vælg **Arbejdsområder** > **Mit arbejdsområde** i navigationsruden.
 
 3. Under fanen **Dashboards** skal du vælge skraldespandsikonet **Slet** ud for dashboardet Analyse af salgsmuligheder.
 

@@ -2,7 +2,6 @@
 title: Eksportér rapporter til PDF
 description: Få mere at vide om, hvordan du eksporterer en Power BI-rapport til PDF.
 author: mihart
-manager: kvivek
 ms.custom: ''
 ms.reviewer: cmfinlan
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 1d6ddcd11118e0eb9894002c5c97edda134d4635
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: 376ecd007e774a153b47df75417621d4233cc4ce
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72716977"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862857"
 ---
 # <a name="export-reports-from-power-bi-to-pdf"></a>Eksportér rapporter fra Power BI til PDF
 
@@ -25,7 +24,7 @@ ms.locfileid: "72716977"
 Med Power BI kan du publicere din rapport i PDF-format og nemt oprette et dokument ud fra din Power BI-rapport. Når du eksporterer til PDF, bliver hver side i Power BI-rapporten en individuel side i PDF-dokumentet.
 
 ## <a name="export-your-power-bi-report-to-pdf"></a>Eksportér din Power BI-rapport til PDF
-Vælg en rapport for at vise den på lærredet i Power BI-tjenesten. Du kan også vælge en rapport fra din **startside**, dine **apps** eller en hvilken som helst objektbeholder i navigationsruden til venstre.
+Vælg en rapport for at vise den på lærredet i Power BI-tjenesten. Du kan også vælge en rapport fra din **startside**, dine **programmer** eller en hvilken som helst objektbeholder i navigationsruden.
 
 1. Vælg **Eksportér** > **PDF** på menulinjen.
 

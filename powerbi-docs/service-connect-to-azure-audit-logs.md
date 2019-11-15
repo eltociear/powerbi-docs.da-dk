@@ -2,7 +2,6 @@
 title: Opret forbindelse til Azure Audit Logs med Power BI
 description: Azure Audit Logs til Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: 42b56cbad4c47b8cc8133a1f35511ea48ac24055
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: d0bd4e90dac6e71d95c38bed83f1c9507acc4fd3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060604"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73855378"
 ---
 # <a name="connect-to-azure-audit-logs-with-power-bi"></a>Opret forbindelse til Azure Audit Logs med Power BI
 Du kan analysere og visualisere de oplysninger, der er gemt i overvågningsloggene, med Azure Audit Logs-indholdspakken. Power BI henter dataene, opretter et brugsklart dashboard og genererer rapporter ud fra de pågældende data.
@@ -25,10 +24,10 @@ Du kan analysere og visualisere de oplysninger, der er gemt i overvågningslogge
 [Opret forbindelse til Azure Audit Logs-indholdspakken](https://app.powerbi.com/getdata/services/azure-audit-logs), eller få yderligere oplysninger om [Azure Audit Logs-integration](https://powerbi.microsoft.com/integrations/azure-audit-logs) med Power BI.
 
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
-1. Vælg **Hent data** nederst i venstre navigationsrude.  
+1. Vælg **Hent data** nederst i navigationsruden.  
    
     ![](media/service-connect-to-azure-audit-logs/getdata.png)
-2. I feltet **Tjenester** skal du vælge **Hent**.  
+2. Markér **Hent** i feltet **Tjenester**.  
    
     ![](media/service-connect-to-azure-audit-logs/services.png) 
 3. Vælg **Azure Audit Logs** > **Hent**.  

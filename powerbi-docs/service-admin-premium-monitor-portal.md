@@ -3,64 +3,63 @@ title: Overvåg Power BI Premium-kapaciteter ved hjælp af administrationsportal
 description: Brug Power BI-administrationsportalen til at overvåge dine Premium-kapaciteter.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 04/10/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: 36b03a67e7c02702a70b6486880cc8eabf93e823
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 0d1e0da498a7a2c78e86b643b8a86cb87d6d095a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65564907"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73856856"
 ---
 # <a name="monitor-capacities-in-the-admin-portal"></a>Overvåg kapaciteter på administrationsportalen
 
-Den **Health** fanen i den **kapacitetsindstillinger** område i administrationsportalen giver en oversigt over, om din kapacitet og aktiveret arbejdsbelastninger målepunkter.  
+Fanen **Tilstand** i området **Kapacitetsindstillinger** i administrationsportalen indeholder en målepunktsoversigt over din kapacitet og de aktiverede arbejdsbelastninger.  
 
-![Under fanen kapacitet tilstand i portalen](media/service-admin-premium-monitor-portal/admin-portal-health.png)
+![Fanen Kapacitetstilstand på portalen](media/service-admin-premium-monitor-portal/admin-portal-health.png)
 
-Hvis du har brug for mere omfattende målepunkter, kan du bruge den [Power BI Premium-kapacitet målepunkter](service-admin-premium-monitor-capacity.md) app. Appen giver detailudledning og filtrering, og de mest detaljerede målepunkter for næsten alle aspekter påvirker ydeevnen kapacitet. Hvis du vil vide mere, kan du se [Monitor Premium-kapaciteter med appen](service-admin-premium-monitor-capacity.md).
+Hvis du har brug for mere omfattende målepunkter, skal du bruge appen [Power BI Premium-kapacitetsmålinger](service-admin-premium-monitor-capacity.md). Appen indeholder detailudledning og filtrering og de mest detaljerede målepunkter til næsten alle aspekter, der påvirker kapacitetsydeevnen. Du finder flere oplysninger under [Overvåg Premium-kapaciteter vha. appen](service-admin-premium-monitor-capacity.md).
 
-## <a name="system-metrics"></a>Forbrugsdata for system
+## <a name="system-metrics"></a>Systemmålepunkter
 
-På den **Health** fanen CPU-forbruget på det højeste niveau, og brug af hukommelse, der giver et hurtigt overblik over de vigtigste målepunkter for kapaciteten. Disse metrikværdier er akkumuleret, herunder alle aktiveret arbejdsbelastninger for kapaciteten.
-
-| **Målepunkt** | **Beskrivelse** |
-| --- | --- |
-| CPU-FORBRUG | Gennemsnitlig CPU-forbruget, som en procentdel af samlede tilgængelige CPU. |
-| HUKOMMELSESBRUG | Gennemsnitligt hukommelsesforbrug i gigabyte (GB).|
-
-## <a name="workload-metrics"></a>Arbejdsbelastning målepunkter
-
-For hver enkelt arbejdsbelastning, der er aktiveret for kapaciteten. CPU-forbruget og hukommelsesforbrug vises.
+På det højeste niveau under fanen **Tilstand** giver CPU-forbrug og hukommelsesforbrug et hurtigt overblik over de vigtigste målepunkter for kapaciteten. Disse målepunkter er akkumulerede, inklusive alle aktiverede arbejdsbelastninger for kapaciteten.
 
 | **Målepunkt** | **Beskrivelse** |
 | --- | --- |
-| CPU-FORBRUG | Gennemsnitlig CPU-forbruget, som en procentdel af samlede tilgængelige CPU. |
-| HUKOMMELSESBRUG | Gennemsnitligt hukommelsesforbrug i gigabyte (GB).|
+| CPU-UDNYTTELSE | Gennemsnitlig CPU-udnyttelse som en procentdel af den samlede tilgængelige CPU. |
+| HUKOMMELSESFORBRUG | Gennemsnitligt hukommelsesforbrug i gigabyte (GB).|
 
-### <a name="detailed-workload-metrics"></a>Detaljerede arbejdsbelastning målepunkter
+## <a name="workload-metrics"></a>Arbejdsbelastningens målepunkter
 
-Hver enkelt arbejdsbelastning har flere målepunkter. Typen af målepunkter, der vises, afhænger af arbejdsbelastningen. Hvis du vil se detaljerede målepunkter for en arbejdsbelastning, skal du klikke på Udvid (pil ned).
+For hver arbejdsbelastning, der er aktiveret for kapaciteten. CPU-forbrug og hukommelsesforbrug vises.
 
-![Udvid arbejdsbelastning tilstand](media/service-admin-premium-monitor-portal/admin-portal-health-expand.png)
+| **Målepunkt** | **Beskrivelse** |
+| --- | --- |
+| CPU-UDNYTTELSE | Gennemsnitlig CPU-udnyttelse som en procentdel af den samlede tilgængelige CPU. |
+| HUKOMMELSESFORBRUG | Gennemsnitligt hukommelsesforbrug i gigabyte (GB).|
+
+### <a name="detailed-workload-metrics"></a>Detaljerede målepunkter for arbejdsbelastning
+
+Hver arbejdsbelastning har flere målepunkter. Den type målepunkter der vises, afhænger af arbejdsbelastningen. Hvis du vil se detaljerede målepunkter for en arbejdsbelastning, skal du klikke på pilen (ned) til udvidelse.
+
+![Udvidet arbejdsbelastningstilstand](media/service-admin-premium-monitor-portal/admin-portal-health-expand.png)
 
 #### <a name="dataflows"></a>Dataflow
 
-##### <a name="dataflow-operations"></a>Dataflow operationer
+##### <a name="dataflow-operations"></a>Dataflow-handlinger
 
 | **Målepunkt** | **Beskrivelse** |
 | --- | --- |
 | Antal i alt | Det samlede antal opdateringer for hvert dataflow. |
-| Antal succeser | Samlede vellykkede opdateringer for hver dataflowet.|
-| Gennemsnitlig varighed (min.) | Den gennemsnitlige varighed af opdateringen af dataflowet i minutter |
-| Maks varighed (min.) | Varigheden af den længstvarende opdatering af dataflowet i minutter. |
-| Gennemsnitlig ventetid (min.) | Den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starttidspunktet for en opdatering af dataflowet i minutter. |
-| Maks ventetiden (min.) | Den maksimale ventetid for dataflowet i minutter.  |
+| Antal succeser | Det samlede antal gennemførte opdateringer for hvert dataflow.|
+| Gennemsnitlig varighed (minutter) | Den gennemsnitlige varighed af opdateringen af dataflowet i minutter |
+| Maksimal varighed (minutter) | Varigheden af den længstvarende opdatering af dataflowet i minutter. |
+| Gennemsnitlig ventetid (minutter) | Den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starttidspunktet for en opdatering af dataflowet i minutter. |
+| Maks. ventetid (minutter) | Den maksimale ventetid for dataflowet i minutter.  |
 
 #### <a name="datasets"></a>Datasæt
 
@@ -69,13 +68,13 @@ Hver enkelt arbejdsbelastning har flere målepunkter. Typen af målepunkter, der
 | **Målepunkt** | **Beskrivelse** |
 | --- | --- |
 | Antal i alt | Det samlede antal opdateringer for hvert datasæt. |
-| Antal succeser | Samlede vellykkede opdateringer for hvert datasæt. |
-| Antal fejl | Samlet antal mislykkede opdateringer for hvert datasæt. |
-| Hyppighed for fuldførte  | Antallet af vellykkede opdateringer divideret med de samlede opdateringer til at måle. pålidelighed. |
-| Gennemsnitlig varighed (min.) | Den gennemsnitlige varighed af opdateringen af datasættet i minutter.  |
-| Maks varighed (min.) | Varigheden af den længstvarende opdatering af datasættet i minutter. |
-| Gennemsnitlig ventetid (min.) | Den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starttidspunktet for en opdatering af datasættet i minutter. |
-| Maks ventetiden (min.) | Den maksimale ventetid for datasættet i minutter. |
+| Antal succeser | Det samlede antal vellykkede opdateringer for hvert datasæt. |
+| Antal fejl | Det samlede antal mislykkede opdateringer for hvert datasæt. |
+| Succesrate  | Det samlede antal vellykkede opdateringer divideret med det samlede antal opdateringer, der skal måles. pålidelighed. |
+| Gennemsnitlig varighed (minutter) | Den gennemsnitlige varighed af opdateringen af datasættet i minutter.  |
+| Maksimal varighed (minutter) | Varigheden af den længstvarende opdatering af datasættet i minutter. |
+| Gennemsnitlig ventetid (minutter) | Den gennemsnitlige mellemliggende tid mellem det planlagte tidspunkt og starttidspunktet for en opdatering af datasættet i minutter. |
+| Maks. ventetid (minutter) | Den maksimale ventetid for datasættet i minutter. |
 
 ##### <a name="query"></a>Forespørgsel
 
@@ -85,39 +84,39 @@ Hver enkelt arbejdsbelastning har flere målepunkter. Typen af målepunkter, der
 | Gennemsnitlig varighed (minutter) |Den gennemsnitlige varighed af forespørgsler for datasættet i millisekunder|
 | Maksimal varighed (minutter) |Varigheden af den længstvarende forespørgsel i datasættet i millisekunder. |
 | Gennemsnitlig ventetid (minutter) |Den gennemsnitlige ventetid for forespørgsler for datasættet i millisekunder. |
-| Maks. antal ventetid (ms) |Varigheden af den længstventende forespørgsel i datasættet i millisekunder. |
+| Maks. ventetid (minutter) |Varigheden af den længstventende forespørgsel i datasættet i millisekunder. |
 
-##### <a name="eviction"></a>Hård
+##### <a name="eviction"></a>Fjernelse
 
 | **Målepunkt** | **Beskrivelse** |
 | --- | --- |
-| Model-antal | Det samlede antal datasæt evictions for denne kapacitet. Når en kapacitet står over for øget hukommelsesforbrug, fjerner noden et eller flere datasæt fra hukommelsen. Datasæt, der er inaktive (uden forespørgsels-/opdateringshandlinger, der udføres i øjeblikket), ryddes først. Derefter er fjernelsesrækkefølgen baseret på en måling af 'mindst brugt for nylig'. |
+| Antal modeller | Det samlede antal fjernelser af datasættet for denne kapacitet. Når en kapacitet står over for øget hukommelsesforbrug, fjerner noden et eller flere datasæt fra hukommelsen. Datasæt, der er inaktive (uden forespørgsels-/opdateringshandlinger, der udføres i øjeblikket), ryddes først. Derefter er fjernelsesrækkefølgen baseret på en måling af 'mindst brugt for nylig'. |
 
 #### <a name="paginated-reports"></a>Sideinddelte rapporter
 
-##### <a name="report-execution"></a>Rapporteksekvering
+##### <a name="report-execution"></a>Rapportudførelse
 
 | **Målepunkt** | **Beskrivelse** |
 | --- | --- |
-| Antal udførelser  | Antallet gange, som rapporten blev kørt og overvåget af brugere.|
+| Antal udførelser  | Antal gange, rapporten er blevet udført og set af brugere.|
 
-##### <a name="report-usage"></a>Brug
+##### <a name="report-usage"></a>Rapportanvendelse
 
 | **Målepunkt** | **Beskrivelse** |
 | --- | --- |
-| Antal succeser | Antallet gange, som rapporten er blevet vist af en bruger. |
-| Antal fejl |Antallet gange, som rapporten er blevet vist af en bruger.|
+| Antal succeser | Antal gange, rapporten er blevet set af en bruger. |
+| Antal fejl |Antal gange, rapporten er blevet set af en bruger.|
 | Rækkeantal |Antallet af rækker med data i rapporten. |
-| Varighed for hentning af data (ms) |Den gennemsnitlige mængde tid, det tager at hente data til rapporten, i millisekunder. Lange varigheder kan være et tegn på langsomme forespørgsler eller andre datakildeproblemer.  |
-| Varighed af behandling af (ms) |Den gennemsnitlige mængde tid, det tager at behandle dataene til rapporten, i millisekunder. |
-| Gengivelse varighed (ms) |Den gennemsnitlige mængde tid, det tager at gengive en rapport i browseren, i millisekunder. |
+| Varighed af datahentning (minutter) |Den gennemsnitlige mængde tid, det tager at hente data til rapporten, i millisekunder. Lange varigheder kan være et tegn på langsomme forespørgsler eller andre datakildeproblemer.  |
+| Behandlingsvarighed (minutter) |Den gennemsnitlige mængde tid, det tager at behandle dataene til rapporten, i millisekunder. |
+| Gengivelsesvarighed (minutter) |Den gennemsnitlige mængde tid, det tager at gengive en rapport i browseren, i millisekunder. |
 
 > [!NOTE]
-> Detaljerede målepunkter for den **AI** arbejdsbelastning er endnu ikke tilgængelige.
+> Detaljerede målepunkter for **AI**-arbejdsbelastningen er endnu ikke tilgængelige.
 
 ## <a name="next-steps"></a>Næste trin
 
 Nu, hvor du har en forståelse af, hvordan du overvåger Power BI Premium-kapaciteter, kan du få mere at vide om optimering af kapaciteter.
 
 > [!div class="nextstepaction"]
-> [Optimering af Power BI Premium-kapaciteter](service-premium-capacity-optimize.md)
+> [Optimering af kapaciteter i Power BI Premium](service-premium-capacity-optimize.md)

@@ -2,7 +2,6 @@
 title: Præsentation af rapporteditoren
 description: I Power BI Desktop og i Power BI-tjenesten er rapporteditor det sted, hvor du designer de rapporter, som slutbrugerne ser. Det er næsten det samme i de to miljøer.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: IkJda4O7oGs
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/14/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: c3a5454032a4138ce3d93c490fa6b3d5a7fecec5
-ms.sourcegitcommit: a77977a43342db4399a4dffb862b96907d16de35
+ms.openlocfilehash: 800079f20d0c16964b0e5dd5fbac5919e94317f7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69023728"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871347"
 ---
 # <a name="tour-the-report-editor-in-power-bi"></a>Præsentation af rapporteditor i Power BI
 
@@ -34,22 +33,22 @@ I Power BI-tjenesten er rapporteditoren kun tilgængelig i redigeringsvisning. H
 
 Power BI-rapporteditor er inddelt i flere hovedafsnit:  
 
-1. Den øverste navigationslinje
+1. Øverste navigationsrude
 1. Rapportlærred
 1. Ruden Filtre
 1. Ruden Visualiseringer
 1. Ruden Felter
 
-## <a name="1-the-top-navigation-bar"></a>1. Den øverste navigationslinje
-Der er mange handlinger tilgængelige på den øverste navigationslinje, og der tilføjes hele tiden nye handlinger. Brug indholdsfortegnelsen eller søgefeltet i dokumentationen til Power BI for at få oplysninger om en bestemt handling.
+## <a name="1-the-top-nav-pane"></a>1. Den øverste navigationsrude
+Der er mange handlinger tilgængelige i den øverste navigationsrude, og der tilføjes hele tiden nye handlinger. Brug indholdsfortegnelsen eller søgefeltet i dokumentationen til Power BI for at få oplysninger om en bestemt handling.
 
 
-## <a name="2-the-report-canvas"></a>2. Rapportlærredet
-Rapportlærredet er det sted, dit arbejde vises. Når du bruger ruderne Felter, Filtre og Visualiseringer til at oprette visualiseringer, bygges og vises de på dit rapportlærred. Hver fane nederst på lærredet repræsenterer en side i rapporten. Vælg en fane for at åbne siden. 
+## <a name="2-the-report-canvas"></a>2. Rapportcanvasset
+Rapportcanvasset er det sted, dit arbejde vises. Når du bruger ruderne Felter, Filtre og Visualiseringer til at oprette visuelle elementer, bygges og vises de på dit rapportcanvas. Hver fane nederst på canvasset repræsenterer en side i rapporten. Vælg en fane for at åbne siden. 
 
 ## <a name="the-report-editor-panes"></a>Rapporteditorens ruder
 
-Tre ruder er synlige, når du åbner en rapport: Filtre, Visualiseringer og Felter. I de første to ruder til venstre, Filtre og Visualiseringer, styrer du, hvordan dine visualiseringer ser ud: type, farver, filtrering og formatering. I den sidste rude til højre, Felter, administrerer du de underliggende data, der bruges i visualiseringerne. Det indhold, der vises i rapporteditoren, varierer i forhold til valg, du foretager på rapportlærredet. 
+Tre ruder er synlige, når du åbner en rapport: Filtre, Visualiseringer og Felter. I de første to ruder til venstre, Filtre og Visualiseringer, styrer du, hvordan dine visualiseringer ser ud: type, farver, filtrering og formatering. I den sidste rude til højre, Felter, administrerer du de underliggende data, der bruges i visualiseringerne. Det indhold, der vises i rapporteditoren, varierer i forhold til valg, du foretager på rapportcanvasset. 
 
 Når du f.eks. vælger en individuel visualisering, såsom dette søjlediagram:
 
@@ -102,7 +101,7 @@ Du kan finde flere oplysninger i [Føj visualiseringer til en Power BI-rapport](
 
 Denne del af ruden indeholder også indstillinger for at styre [detaljeadgang](desktop-drillthrough.md) og filtreringsfunktionalitet.
 
-### <a name="format-your-visuals"></a>Formatér dine visualiseringer
+### <a name="format-your-visuals"></a>Formatér dine visuelle elementer
 Vælg ikonet med malerullen for at åbne ruden Formatér. De tilgængelige indstillinger afhænger af den valgte type visualisering.
 
 ![Ruden Formatering i rapporteditoren](media/service-the-report-editor-take-a-tour/power-bi-visual-pane-format.png)
@@ -114,11 +113,11 @@ Der er omfattende formateringsmuligheder.  Udforsk selv for at få mere for at v
 * [Tilpas egenskaber for x- og y-akse](visuals/power-bi-visualization-customize-x-axis-and-y-axis.md)
 
 ### <a name="add-analytics-to-your-visualizations"></a>Føj analyser til din visualiseringer
-Vælg forstørrelsesglasikonet for at få vist ruden Analyse. De tilgængelige indstillinger afhænger af den valgte type visualisering.
+Vælg forstørrelsesglasikonet for at få vist ruden Analystics. De tilgængelige indstillinger afhænger af den valgte type visualisering.
 
 ![Ruden Analyse i rapporteditoren](media/service-the-report-editor-take-a-tour/power-bi-visual-pane-analytics.png)
 
-I ruden Analyse i Power BI-tjenesten kan du føje dynamiske referencelinjer til visualiseringer og sætte fokus på vigtige tendenser eller indsigter. Du kan finde flere oplysninger under [Ruden Analyse i Power BI Desktop](desktop-analytics-pane.md).
+I ruden Analytics i Power BI-tjenesten kan du føje dynamiske referencelinjer til visuelle elementer og sætte fokus på vigtige tendenser eller indsigter. Du kan finde flere oplysninger under [Ruden Analyse i Power BI Desktop](desktop-analytics-pane.md).
 
 ## <a name="5-the-fields-pane"></a>5. Ruden Felter
 Ruden Felter indeholder tabellerne, mapperne og felterne i dine data, som er tilgængelige for dig, så du kan bruge dem til at oprette visualiseringer.
@@ -137,11 +136,11 @@ Power BI bruger en række forskellige ikoner til at angive typerne af felter i e
 |Ikon  |Betydning  |
 |---------|---------|
 | ![Mappe](media/service-the-report-editor-take-a-tour/power-bi-field-list-folder.png) | Mappe på listen Felter |
-|![Numerisk felt](media/service-the-report-editor-take-a-tour/power-bi-field-list-numeric.png) | Numerisk felt: Numeriske felter er samlinger, der f.eks. kan sammenlægges eller beregnes som gennemsnit. Samlinger importeres med dataene og defineres i den datamodel, som din rapport er baseret på. Du kan finde flere oplysninger i [Samlinger i Power BI-rapporter](service-aggregates.md). |
+|![Numerisk felt](media/service-the-report-editor-take-a-tour/power-bi-field-list-numeric.png) | Numerisk felt: Numeriske felter er samlinger, der f.eks. kan sammenlægges eller beregnes som gennemsnit. Samlinger importeres med dataene og defineres i den datamodel, som din rapport er baseret på. Du kan finde flere oplysninger i [Aggregeringer i Power BI-rapporter](service-aggregates.md). |
 |![Ikke-numerisk beregnet kolonne](media/service-the-report-editor-take-a-tour/power-bi-field-list-calculated-column.png) | Beregnet kolonne med en datatype, der ikke er numerisk: En ny ikke-numerisk kolonne, du opretter, med en DAX-formel (Data Analysis Expressions), der definerer kolonnens værdier. Læs mere om [beregnede kolonner](desktop-calculated-columns.md). |
 |![Numerisk beregnet kolonne](media/service-the-report-editor-take-a-tour/power-bi-field-list-numeric-calculated-column.png)     |   Numerisk beregnet kolonne: En ny kolonne, du opretter, med en DAX-formel (Data Analysis Expressions), der definerer kolonnens værdier. Læs mere om [beregnede kolonner](desktop-calculated-columns.md). |
 |![Måling](media/service-the-report-editor-take-a-tour/power-bi-field-list-measure.png) |  Måling: Hver måling har sin egen hårdt kodede formel. Du kan ikke ændre beregningen – hvis det f.eks. er en sum, kan det kun være en sum. Værdierne gemmes ikke i en kolonne. De beregnes løbende, udelukkende afhængigt af hvordan de er placeret i en visualisering. Du kan finde flere oplysninger i [Forstå målinger](desktop-measures.md). |
-|![Målingsgruppe](media/service-the-report-editor-take-a-tour/power-bi-field-list-measure-group.png)     | Målingsgruppe  |
+|![Målegruppe](media/service-the-report-editor-take-a-tour/power-bi-field-list-measure-group.png)     | Målegruppe  |
 |![KPI-ikon](media/service-the-report-editor-take-a-tour/power-bi-field-list-kpi.png) |      KPI: Et visuelt tip, der viser statussen mod et målbart mål. Læs mere om [KPI-visualiseringer (Key Performance Indicator)](visuals/power-bi-visualization-kpi.md) |
 |![Ikon for hierarki](media/service-the-report-editor-take-a-tour/power-bi-field-list-hierarchy.png)     |  Felthierarki: Vælg pilen for at se de felter, der udgør hierarkiet.  Du kan få flere oplysninger ved at se denne Power BI-video på YouTube om, [hvordan du opretter og arbejder med hierarkier](https://www.youtube.com/watch?v=q8WDUAiTGeU). |
 |![Geo-data](media/service-the-report-editor-take-a-tour/power-bi-field-list-geo-data.png)     | Geo-data: Disse placeringsfelter kan bruges til at oprette kortvisualiseringer. |
@@ -156,5 +155,5 @@ Læs mere om rapporter i programmerne [Power BI-tjenesten](service-report-create
 
 [Grundlæggende begreber for Power BI-designere](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

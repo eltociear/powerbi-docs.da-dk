@@ -2,7 +2,6 @@
 title: Eksportér data fra en Power BI-visualisering
 description: Eksportér data fra en rapportvisualisering og en dashboardvisualisering, og få dem vist i Excel.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
@@ -11,16 +10,16 @@ ms.topic: conceptual
 ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: be85769d8ae2340843a4ebdeb5c88ffc2ca86920
-ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
+ms.openlocfilehash: 6ee1b0aa9ff6e3b0668d208775cbea50534b1572
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73431103"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880883"
 ---
 # <a name="export-data-from-visualizations"></a>Eksportér data fra visualiseringer
 
-Hvis du gerne vil have vist de data, der bruges til at oprette en visualisering, [kan du få vist de pågældende data i Power BI](service-reports-show-data.md). Du kan også eksportere disse data til Excel som en *.xlsx*- eller *.csv*-fil. Indstillingen for eksport af data kræver en Pro- eller Premium-licens og redigeringstilladelser til datasættet og rapporten.
+Hvis du gerne vil have vist de data, der bruges til at oprette en visualisering, [kan du få vist de pågældende data i Power BI](service-reports-show-data.md). Du kan også eksportere disse data til Excel som en *.xlsx*- eller *.csv*-fil. Indstillingen for eksport af data kræver en Pro- eller Premium-licens og redigeringstilladelser til datasættet og rapporten. <!--If you have access to the dashboard or report but the data is classified as *highly confidential*, Power BI will not allow you to export the data.-->
 
 Se med, når Will eksporterer dataene fra en af visualiseringerne i hans rapport, gemmer dem som en *.xlsx*-fil og åbner dem i Excel. Følg derefter den trinvise vejledning under videoen for at prøve det selv.
 
@@ -152,7 +151,7 @@ Vigtigt! Hvis der er konflikt mellem indstillingerne på Power BI-administratorp
 ## <a name="limitations-and-considerations"></a>Begrænsninger og overvejelser
 Disse begrænsninger og overvejelser gælder for Power BI Desktop og Power BI-tjenesten, herunder Power BI Pro og Premium.
 
-- Hvis du vil eksportere dataene fra en visualisering, skal du have [tilladelse til at oprette for det underliggende datasæt](https://docs.microsoft.com/power-bi/service-datasets-build-permissions#build-permissions-for-shared-datasets).
+- Hvis du vil eksportere dataene fra en visualisering, skal du have [tilladelse til at oprette for det underliggende datasæt](https://docs.microsoft.com/power-bi/service-datasets-build-permissions).
 
 -  Det maksimale antal rækker, som **Power BI Desktop** og **Power BI-tjenesten** kan eksportere fra en **rapport for importtilstand** til en *.csv-fil* er 30.000.
 
@@ -160,13 +159,13 @@ Disse begrænsninger og overvejelser gælder for Power BI Desktop og Power BI-tj
 
 - Eksport ved hjælp af *underliggende data* fungerer ikke, hvis:
 
-  - Datakilden er en direkte Analysis Services-forbindelse.
+  - Datakilden er en direkte Azure Analysis Services-forbindelse eller en direkte SQL Server Analysis Services-forbindelse.
 
   - Versionen er ældre end 2016.
 
   - Tabellerne i modellen ikke har en entydig nøgle.
     
-  -  Hvis en administrator eller rapportdesigner har deaktiveret denne funktion.
+  -  En administrator eller rapportdesigner har deaktiveret denne funktion.
 
 - Eksport ved hjælp af *underliggende data* fungerer ikke, hvis du aktiverer indstillingen *Vis elementer uden data* for den visualisering, som Power BI eksporterer.
 
@@ -196,4 +195,4 @@ Disse begrænsninger og overvejelser gælder for Power BI Desktop og Power BI-tj
 
 - Power BI-administratorer kan deaktivere dataeksporten.
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

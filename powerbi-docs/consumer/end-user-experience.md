@@ -2,22 +2,21 @@
 title: Navigation i Power BI-tjenesten
 description: Oversigt over navigationsoplevelsen i Power BI
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: quickstart
-ms.date: 10/18/2019
+ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 14c7f88e0bfb822a73a72958f556443260f6ed76
-ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
+ms.openlocfilehash: e6be58971b265414440041f4667a0b0cc455cdd4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589444"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851519"
 ---
 # <a name="quickstart---getting-around-in-power-bi-service"></a>Hurtig introduktion – Navigation i Power BI-tjenesten
 
@@ -57,7 +56,7 @@ Under Mit arbejdsområde er dit indhold organiseret i 4 faner: Dashboards, Rappo
 
 ![Skærmbilledet Mit arbejdsområde](./media/end-user-experience/power-bi-my-workspace.png)
 
-Vælg et arbejdsområde i venstre navigationsrude, og fanerne for det tilknyttede indhold (dashboards, rapporter, projektmapper, datasæt) udfylder Power BI-lærredet til højre.
+Vælg et arbejdsområde i navigationsruden, og fanerne for det tilknyttede indhold (dashboards, rapporter, projektmapper, datasæt) udfylder Power BI-lærredet til højre.
 
 Hvis du er ny bruger, kan du kun se ét arbejdsområde – **Mit arbejdsområde**.
 
@@ -82,7 +81,7 @@ Med **Favoritter** kan du hurtigt få adgang til det indhold, der er vigtigst fo
    
    ![fjern favorit](./media/end-user-experience/power-bi-unfavorite2.png)
 
-2. Du kan få vist en liste over alt det indhold, du har tilføjet som favoritter, ved i den venstre navigationsrude at vælge pilen til højre for **Favoritter**. Da den venstre navigationsrude er en permanent funktion i Power BI-tjenesten, har du adgang til denne liste overalt i Power BI-tjenesten.
+2. Du kan få vist en liste over alt det indhold, du har tilføjet som favoritter, ved i navigationsruden at vælge pilen til højre for **Favoritter**. Da den venstre navigationsrude er en permanent funktion i Power BI-tjenesten, har du adgang til denne liste overalt i Power BI-tjenesten.
    
     ![pop op-vinduet favoritter](./media/end-user-experience/power-bi-favorite.png)
    
@@ -92,7 +91,7 @@ Med **Favoritter** kan du hurtigt få adgang til det indhold, der er vigtigst fo
    
    ![markér som favorit](./media/end-user-experience/power-bi-report-favorite.png)
 
-3. Åbn *ruden* **Favoritter** ved at vælge **Favoritter** i venstre navigationsrude eller ved at vælge stjerneikonet ![](media/end-user-experience/powerbi-star-icon.png).
+3. Åbn **ruden** *Favoritter* ved at vælge **Favoritter** i navigationsruden eller ved at vælge stjerneikonet ![screenshot, der viser et gult stjerneikon](media/end-user-experience/powerbi-star-icon.png).
    
    ![åbn skærmbilledet Favoritter](./media/end-user-experience/power-bi-favorite-pane.png)
    
@@ -107,13 +106,13 @@ Du kan få flere oplysninger i [Favoritter](end-user-favorite.md)
 
 ## <a name="locate-your-most-recent-content"></a>Find dit seneste indhold
 
-1. På samme måde som med favoritter kan du hurtigt få adgang til dit seneste indhold overalt i Power BI-tjenesten ved at vælge pilen ud for **Seneste** i venstre navigationsrude.
+1. På samme måde som med favoritter kan du hurtigt få adgang til dit seneste indhold overalt i Power BI-tjenesten ved at vælge pilen ud for **Seneste** i navigationsruden.
 
    ![Pop op-vinduet Seneste](./media/end-user-experience/power-bi-recent-flyout.png)
 
     I pop op-vinduet skal du vælge indhold for at åbne det.
 
-2. Nogle gange ønsker du ikke blot at åbne det seneste indhold, men vil også have vist oplysninger eller udføre andre handlinger, f.eks. få vist Insights eller eksportere til Excel. I sådanne tilfælde skal du åbne ruden **Seneste** ved at vælge **Seneste** eller ved at klikke på ikonet i venstre navigationsrude. Hvis du havde mere end ét arbejdsområde, ville der være indhold fra alle dine arbejdsområder på denne liste.
+2. Nogle gange ønsker du ikke blot at åbne det seneste indhold, men vil også have vist oplysninger eller udføre andre handlinger, f.eks. få vist Insights eller eksportere til Excel. I sådanne tilfælde skal du åbne ruden **Seneste** ved at vælge **Seneste** eller ved at klikke på ikonet i navigationsruden. Hvis du havde mere end ét arbejdsområde, ville der være indhold fra alle dine arbejdsområder på denne liste.
 
    ![Ruden Seneste](./media/end-user-experience/power-bi-recent.png)
 
@@ -138,8 +137,8 @@ Hvis du vil vide mere, kan du se [Power BI-navigation: søg og sortér](end-user
 Når du er færdig med denne hurtige introduktion, kan du slette dashboardet med eksemplet på detailhandelsanalysen samt tilhørende rapport og datasæt, hvis du vil.
 
 1. Åbn Power BI-tjenesten (app.powerbi.com), og log på.    
-2. Vælg **Arbejdsområder > Mit arbejdsområde** i navigationsruden til venstre.  
-    Har du bemærket, at den gul stjerne angiver, at der er tale om en favorit?    
+2. Vælg **Arbejdsområder > Mit arbejdsområde** i navigationsruden.  
+    Har du bemærket, at den gule stjerne angiver, at der er tale om en favorit?    
 3. På fanen **Dashboards** skal du vælge skraldespandsikonet **Slet** ud for dashboardet Analyse af detailhandel.    
 
     ![slet dashboard](./media/end-user-experience/power-bi-cleanup.png)

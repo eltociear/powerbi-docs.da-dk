@@ -2,7 +2,6 @@
 title: Eksportér rapporter fra Power BI til PowerPoint
 description: Se, hvordan du kan eksportere en Power BI-rapport til PowerPoint.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3215dfab54d1537ec5f7ca32ee4bd39b9ef997e5
-ms.sourcegitcommit: 26123c6bb24c8174beb390f4e06fb938d31238ea
+ms.openlocfilehash: 840f2462ea9fc6b2d748b3803445c5ee4b155bdd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72717015"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862906"
 ---
 # <a name="export-reports-from-power-bi-to-powerpoint"></a>Eksportér rapporter fra Power BI til PowerPoint
 
@@ -31,7 +30,7 @@ Med Power BI kan du publicere din rapport i Microsoft PowerPoint og nemt oprette
 Du kan hurtigt eksportere din **Power BI-rapport** til **PowerPoint**. Følg de trin, der er beskrevet i det næste afsnit.
 
 ## <a name="export-your-power-bi-report-to-powerpoint"></a>Eksportér en Power BI-rapport til PowerPoint
-Vælg en rapport for at vise den på lærredet i Power BI-tjenesten. Du kan også vælge en rapport fra din **startside**, dine **apps** eller en hvilken som helst objektbeholder i navigationsruden til venstre.
+Vælg en rapport for at vise den på lærredet i Power BI-tjenesten. Du kan også vælge en rapport fra din **startside**, dine **programmer** eller en hvilken som helst objektbeholder i navigationsruden.
 
 Når den rapport, du vil eksportere til PowerPoint, vises på lærredet, skal du vælge **Eksportér** > **PowerPoint** på menulinjen.
 
@@ -60,7 +59,7 @@ Når du åbner den PowerPoint-fil, som Power BI har eksporteret, kan du finde no
 
 1. Den første side i slidesættet indeholder navnet på din rapport og et link, så du kan få den rapport, som slidesættet er baseret på, **vist i Power BI**.
 2. Du får også nogle nyttige oplysninger om rapporten. Under **Seneste dataopdatering** kan du se den dato og det klokkeslæt, som den eksporterede rapport er baseret på. Under **Downloadet** kan du se den dato og det klokkeslæt, hvor Power BI-rapporten blev eksporteret til en PowerPoint-fil.
-3. Hver rapportside er en separat slide, sådan som det er vist i venstre navigationsrude. 
+3. Hver rapportside er en separat slide, sådan som det er vist i navigationsruden. 
 4. Din publicerede rapport er gengivet på det sprog, der er angivet under dine Power BI-indstillinger, og ellers i henhold til indstillingen for landestandard i din browser. Hvis du vil se eller angive dine sprogindstillinger, skal du vælge tandhjulsikonet ![Tandhjulsikon](media/end-user-powerpoint/power-bi-settings-icon.png) > **Indstillinger** > **Generelt** > **Sprog**. Du kan finde oplysninger om landestandard i [Understøttede sprog og lande eller områder til Power BI](../supported-languages-countries-regions.md).
 5. PowerPoint-præsentationen indeholder en forsideslide med tidspunktet for eksporten i den korrekte tidszone.
 

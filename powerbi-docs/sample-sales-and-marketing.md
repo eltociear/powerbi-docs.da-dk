@@ -2,7 +2,6 @@
 title: 'Eksempel på salg og marketing til Power BI: Få en introduktion'
 description: 'Eksempel på salg og marketing til Power BI: Få en introduktion'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 31f42d7f53b3322717677d586266668fb2c0f26b
-ms.sourcegitcommit: 012f05efc4e97aeb6178fb2fc820b73bcc1ce920
+ms.openlocfilehash: 8085a6c8f5d0e7a2797ef6c5961b6083eb98f346
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68391399"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873823"
 ---
 # <a name="sales-and-marketing-sample-for-power-bi-take-a-tour"></a>Eksempel på salg og marketing til Power BI: Få en introduktion
 
@@ -56,11 +55,11 @@ Før du kan bruge eksemplet, skal du først downloade det som en [indholdspakke]
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hent .pbix-filen knyttet til dette eksempel
 
-Du kan også hente eksemplet fra salg og marketing som en [pbix-fil](http://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), som er beregnet til brug med Power BI Desktop.
+Du kan også hente eksemplet fra salg og marketing som en [pbix-fil](https://download.microsoft.com/download/9/7/6/9767913A-29DB-40CF-8944-9AC2BC940C53/Sales%20and%20Marketing%20Sample%20PBIX.pbix), som er beregnet til brug med Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hent Excel-projektmappen for dette eksempel
 
-Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529785). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, kan du finde flere oplysninger under [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](https://go.microsoft.com/fwlink/?LinkId=529785). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, kan du finde flere oplysninger under [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="what-is-our-dashboard-telling-us"></a>Hvad fortæller vores dashboard os?
 Lad os starte vores rundvisning på dashboardet og tage et kig på de felter, som marketingchefen har valgt at fastgøre. Vi kan se oplysninger om vores markedsandel, salg og tillid. Dataene er opdelt efter region, tid og konkurrence.
@@ -82,7 +81,7 @@ Du kan finde flere oplysninger i dataene ved hjælp af Spørgsmål og svar.
 
    ![Spørgsmål og svar: Antal enheder i alt efter segment for VanArsdel](media/sample-sales-and-marketing/sales2.png)
 3. Vores andel i kategorierne **Indstilling** og **Praktisk** er stor. Det er i disse segmenter, hvor vi konkurrerer.
-4. Gå tilbage til dashboardet ved at vælge **Eksempel på salg og markering** på den øverste navigationslinje.
+4. Gå tilbage til dashboardet ved at vælge **Eksempel på salg og markering** i den øverste navigationsrude.
 
 ### <a name="what-does-total-unit-market-share-look-like-for-category-versus-region"></a>Hvordan ser den samlede markedsandel per enhed ud baseret på kategori (i forhold til region)?
 1. Læg mærke til feltet **Enheder i alt ÅTD efter producent, område**. Hvad er den samlede markedsandel per enhed efter kategori?

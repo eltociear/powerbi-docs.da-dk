@@ -2,7 +2,6 @@
 title: 'Eksempel på analyse af leveringskvalitet til Power BI: Få en introduktion'
 description: 'Eksempel på analyse af leveringskvalitet til Power BI: Få en introduktion'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/19/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: 76e053d34dcd7f1f199f4cbf9f02196e8efc6232
-ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
+ms.openlocfilehash: 156b00c7f7287f12397afea422a38f3870d6c399
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69621323"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858419"
 ---
 # <a name="supplier-quality-analysis-sample-for-power-bi-take-a-tour"></a>Eksempel på analyse af leveringskvalitet til Power BI: Få en introduktion
 
@@ -59,11 +58,11 @@ Før du kan bruge eksemplet, skal du først downloade det som en [indholdspakke]
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hent .pbix-filen knyttet til dette eksempel
 
-Du kan også hente eksemplet på analyse af leverandørkvalitet som en [PBIX-fil](http://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix), som er beregnet til brug sammen med Power BI Desktop.
+Du kan også hente eksemplet på analyse af leverandørkvalitet som en [PBIX-fil](https://download.microsoft.com/download/8/C/6/8C661638-C102-4C04-992E-9EA56A5D319B/Supplier-Quality-Analysis-Sample-PBIX.pbix), som er beregnet til brug sammen med Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hent Excel-projektmappen for dette eksempel
 
-Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529779). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, kan du finde flere oplysninger under [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](https://go.microsoft.com/fwlink/?LinkId=529779). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, kan du finde flere oplysninger under [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="downtime-caused-by-defective-materials"></a>Nedetid på grund af defekte materialer
 Lad os analysere den nedetid, der skyldes defekte materialer, og se, hvilke forhandlere der er ansvarlige.  
@@ -94,7 +93,7 @@ Lad os analysere den nedetid, der skyldes defekte materialer, og se, hvilke forh
     ![Træstrukturen Nedetid (min.) efter leverandør](media/sample-supplier-quality/supplier5.png)  
 
    I træstrukturen kan vi se de otte første leverandører som otte blokke til venstre. Vi kan også se, at de står for 50 % af alle minutterne i nedetiden.  
-3. Vælg **Eksempel på analyse af leverandørkvalitet** på den øverste navigationslinje for at vende tilbage til dashboardet.
+3. Vælg **Eksempel på analyse af leverandørkvalitet** i den øverste navigationsrude for at vende tilbage til dashboardet.
 
 ### <a name="comparing-plants"></a>Sammenligning af anlæg
 Nu vil vi se nærmere på, hvilke anlæg der er bedst til administration af defekte materialer, hvilket resulterer i mindre nedetid.  
@@ -113,7 +112,7 @@ Nu vil vi se nærmere på, hvilke anlæg der er bedst til administration af defe
 3. Vælg boblen **Logistik** i boblediagrammet, og læg mærke til anlæggene i Springfield, IL og Naperville, IL. Naperville ser ud til at klare sig meget bedre inden for administration af defekte leveringer, fordi den har et højt antal kasseringer og få indvirkninger, sammenlignet med Springfield’s høje antal indvirkninger.  
 
    ![Vælg Logistik](media/sample-supplier-quality/supplier8.png)  
-4. Vælg **Eksempel på analyse af leverandørkvalitet** på den øverste navigationslinje for at vende tilbage til dashboardet.
+4. Vælg **Eksempel på analyse af leverandørkvalitet** i den øverste navigationsrude for at vende tilbage til dashboardet.
 
 ## <a name="which-material-type-is-best-managed"></a>Hvilken materialetype er bedst administreret?
 Den bedst administrerede materialetype er den med den korteste nedetid eller ingen indvirkning, uanset antallet af defekter.
@@ -138,7 +137,7 @@ Den bedst administrerede materialetype er den med den korteste nedetid eller ing
 
     ![Diagrammet Samlet antal defekter efter måned og år](media/sample-supplier-quality/supplier11.png)  
 3. Betyder flere defekter mere nedetid? Vi kan stille spørgsmål i Spørgsmål og svar for at finde ud af det.  
-4. Vælg **Eksempel på analyse af leverandørkvalitet** på den øverste navigationslinje for at vende tilbage til dashboardet.  
+4. Vælg **Eksempel på analyse af leverandørkvalitet** i den øverste navigationsrude for at vende tilbage til dashboardet.  
 5. Da vi ved, at råmaterialer har det højeste antal defekter, kan du skrive *Vis materialetyper, år og samlet antal defekter* i spørgsmålsfeltet.  
 
     Der var mange flere defekte råmaterialer i 2014 end i 2013.  

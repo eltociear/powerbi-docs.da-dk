@@ -2,20 +2,19 @@
 title: Store datasæt, datapunktgrænser og datastrategier
 description: Datagrænser for visualiseringer og datareduktionsstrategier
 author: mihart
-manager: kvivek
-ms.reviewer: ''
+ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 11/02/2018
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 6b5f2fa44a45cca06f90474d8c76fd6f06cae3ce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b45d0fb20dbb9a697e6d079a6b28c0fc86290627
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61276399"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881070"
 ---
 # <a name="data-point-limits-and-strategies-by-visual-type"></a>Datapunktgrænser og strategier efter visualiseringstype
 
@@ -114,7 +113,7 @@ Afhængigt af konfigurationen kan et kort have:
 - Breddegrad, længdegrad, størrelse: Øverste 3.500
 - Forklaring, længdegrad, breddegrad: se [punktdiagram med høj tæthed](desktop-high-density-scatter-charts.md)
 - Forklaring, breddegrad, længdegrad, størrelse: Øverste 233-forklaringer, øverste 15-breddegrad og -længdegrad (kan bruge statistikker eller dynamiske grænser)
-- Placering, forklaring, breddegrad, længdegrad som samlinger (+/-størrelse): Øverste 233-placeringer, øverste 15-forklaringer (kan bruge statistikker eller dynamiske grænser)
+- Placering, forklaring, breddegrad og længdegrad som samlinger (+/-størrelse): Øverste 233-placeringer, øverste 15-forklaringer (kan bruge statistikker eller dynamiske grænser)
 
 ### <a name="matrix"></a>Matrix
 - Rækker: Virtualisering ved hjælp af vindue på 500 rækker ad gangen
@@ -147,16 +146,16 @@ Begrænset til 150.000 rækker. Hvis der er valgt flere end 150.000 rækker, bru
         - Kategorier: Eksempel på 500 værdier
         - Serie: Øverste 20-værdier
 
-### <a name="shape-map"></a>Figurkort
-Det udfyldte kort kan bruge statistikker eller dynamisk grænser. 
-- Maksimumpunkter: 10.000
+### <a name="shape-map-preview"></a>Figurkort (prøveversion)
+Figurkortet kan bruge statistikker eller dynamiske grænser. 
+- Maksimumpunkter: 1.500
 - Kategorier: Øverste 500
 - Serie (når både X og Y er til stede): Øverste 20
 
 ### <a name="table"></a>Tabel
 - Værdier: Virtualisering (datavindue) ved hjælp af vindue på 500 rækker ad gangen
 
-### <a name="tree-map-this-could-use-statistics-or-dynamic-limits"></a>Trækort (kan bruge statistikker eller dynamiske grænser)
+### <a name="tree-map-could-use-statistics-or-dynamic-limits"></a>Trækort (kan bruge statistikker eller dynamiske grænser)
 - Maksimumpunkter: 3,500
 - Gruppe: Øverste 500
 - Detaljer: Øverste 20

@@ -2,19 +2,18 @@
 title: Planlagt opdatering af Power BI-rapport på Power BI-rapportserver
 description: Power BI-rapporter kan forbindes til forskellige datakilder. Der er adgang til forskellige datakilder, afhængigt af hvordan dataene bruges.
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 11/01/2017
 ms.author: mblythe
-ms.openlocfilehash: ca2c37a93652bf0f622c7154fe8438faf4c70ac1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ede44316d9dd188787381b26ee3352af13775c0f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66051011"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874003"
 ---
 # <a name="power-bi-report-scheduled-refresh-in-power-bi-report-server"></a>Planlagt opdatering af Power BI-rapport på Power BI-rapportserver
 Planlagt opdatering af Power BI-rapporter gør det muligt at holde dataene til en rapport ajourført.
@@ -34,7 +33,7 @@ Der er flere komponenter involveret, når du bruger en planlagt opdatering til d
 * Datamodellen indlæses i en Analysis Services-forekomst.
 * For nogle datakilder bruges Power Query-miksprogrammet til at oprette forbindelse til datakilder og ændre dataene. Der kan oprettes forbindelse til andre datakilder direkte fra en Analysis Services-tjeneste, som bruges til at hoste datamodeller for Power BI-rapportserver.
 * Nye data indlæses i datamodellen i Analysis Services.
-* Datamodellen kan replikeres på tværs af noder i en scale-out-konfiguration.
+* I en scale-out-konfiguration kan datamodellen replikeres på tværs af noder.
 * Analysis Services behandler dataene og udfører eventuelle nødvendige beregninger.
 
 Power BI-rapportserver opretholder en hændelseskø over alle planlagte handlinger. Den sender forespørgsler til køen med jævne mellemrum for at tjekke, om der er nogen nye hændelser. Som standard scannes køen med ti sekunders interval. Du kan ændre intervallet ved at ændre konfigurationsindstillingerne for **PollingInterval**, **IsNotificationService** og **IsEventService** i RSReportServer.config-filen. **IsDataModelRefreshService** kan også bruges til at indstille, om en rapportserver skal behandle planlagte hændelser.

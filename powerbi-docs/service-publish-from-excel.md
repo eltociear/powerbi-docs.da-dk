@@ -2,7 +2,6 @@
 title: Publicer på Power BI fra Excel 2016
 description: Få mere at vide om, hvordan du publicerer en Excel-projektmappe på Power BI-webstedet.
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: bb9ff3ae6b08111156616a84ee795131c708f42c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 81bc53bae43cb16af92a9ecaf20c26c594a24368
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514785"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881121"
 ---
 # <a name="publish-to-power-bi-from-excel-2016"></a>Publicer på Power BI fra Excel 2016
 Med Excel 2016 kan du publicere dine Excel-projektmapper på dit [Power BI](https://powerbi.microsoft.com)-websted, hvor du kan oprette meget interaktive rapporter og dashboards, der er baseret på data i din projektmappe. Derefter kan du dele din indsigt med andre i organisationen.
@@ -88,5 +87,5 @@ Når du er færdig, kan du gå til Power BI direkte fra Excel.
 
 ## <a name="next-steps"></a>Næste trin
 [Excel-data i Power BI](service-excel-workbook-files.md)  
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

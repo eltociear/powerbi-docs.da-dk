@@ -2,7 +2,6 @@
 title: Afbryd forbindelsen fra en organisationsindholdspakke – Power BI
 description: Læs om, hvordan du fjerner forbindelsen til en organisationsindholdspakke ved at slette dens datasæt i Power BI.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: d83a57b2b1f8e2ca0887f2432f2de43647900b81
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 3936ebfedb1e4e51fe93b948a49de0b9fb133c52
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020630"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881282"
 ---
 # <a name="remove-your-connection-to-a-power-bi-organizational-content-pack"></a>Fjern din forbindelse til en Power BI-organisationsindholdspakke
 
@@ -27,7 +26,7 @@ En kollega har oprettet en indholdspakke. Du har fundet den i AppSource og føje
 
 Hvis du vil fjerne en indholdspakke, skal du fjerne dens datasæt.  
 
-* Vælg ellipsen til højre for datasættet i venstre navigationsrude, og vælg **Fjern \> Ja**.  
+* Vælg ellipsen til højre for datasættet i navigationsruden, og vælg **Fjern \> Ja**.  
   
   ![Fjern indholdspakke](media/service-organizational-content-pack-disconnect/power-bi-remove-organizational-content-pack-dataset.png)
 
@@ -37,5 +36,5 @@ Hvis du fjerner datasættet, fjernes også alle tilknyttede rapporter og dashboa
 * [Introduktion til organisationsindholdspakker](service-organizational-content-pack-introduction.md) 
 * [Opret og distribuer en app i Power BI](service-create-distribute-apps.md) 
 * [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)  
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

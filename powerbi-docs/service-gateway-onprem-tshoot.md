@@ -3,25 +3,24 @@ title: Foretag fejlfinding af gateways – Power BI
 description: Denne artikel indeholder oplysninger om måder, hvorpå du kan foretage fejlfinding af problemer, du har med datagatewayen i det lokale miljø og Power BI. Der angives mulige løsninger på kendte problemer samt værktøjer, der kan være en hjælp for dig.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: troubleshooting
 ms.date: 07/15/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: bfb0546771331e13f3703de0afdbcad6c3219f9c
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: b420c827df3c18796d0d46514f81170f202eafbd
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543831"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881563"
 ---
 # <a name="troubleshoot-gateways---power-bi"></a>Foretag fejlfinding af gateways – Power BI
 
 [!INCLUDE [gateway-rewrite](includes/gateway-rewrite.md)]
 
-I denne artikel beskrives nogle af de almindelige problemer, der kan opstå, når du bruger datagatewayen i det lokale miljø med Power BI. Hvis du støder på et problem, der ikke er angivet her, kan du bruge Power BI [Community](http://community.powerbi.com)-webstedet. Alternativt kan du oprette en [supportanmodning](http://powerbi.microsoft.com/support).
+I denne artikel beskrives nogle af de almindelige problemer, der kan opstå, når du bruger datagatewayen i det lokale miljø med Power BI. Hvis du støder på et problem, der ikke er angivet her, kan du bruge Power BI [Community](https://community.powerbi.com)-webstedet. Alternativt kan du oprette en [supportanmodning](https://powerbi.microsoft.com/support).
 
 ## <a name="configuration"></a>Konfiguration
 
@@ -227,7 +226,7 @@ Du får vist meddelelsen "-10709 Connection failed", hvis din delegering ikke er
 
 Når du bruger gateway'en til en planlagt opdatering, kan **Opdateringshistorik** hjælpe dig med at se, hvilke fejl der er opstået. Den kan også indeholde nyttige data, hvis du har brug for at oprette en supportanmodning. Du kan få vist planlagte opdateringer og opdateringer efter behov. Følgende trin viser, hvordan du kommer til opdateringshistorikken.
 
-1. Vælg et datasæt i Power BI-navigationsruden i **Datasæt**. Åbn menuen, og vælg **Planlæg opdatering**.
+1. Vælg et datasæt i **Datasæt** i Power BI-navigationsruden. Åbn menuen, og vælg **Planlæg opdatering**.
 
     ![Sådan vælger du en planlagt opdatering](media/service-gateway-onprem-tshoot/scheduled-refresh.png)
 
@@ -241,7 +240,7 @@ Du kan finde flere oplysninger om fejlfinding af opdateringsscenarier i [Scenari
 
 ## <a name="fiddler-trace"></a>Fiddler-sporing
 
-[Fiddler](http://www.telerik.com/fiddler) er et gratis værktøj fra Telerik, der overvåger HTTP-trafik. Du kan se det, der sendes frem og tilbage vha. Power BI-tjenesten fra klientcomputeren. Denne trafikliste kan vise fejl og andre relaterede oplysninger.
+[Fiddler](https://www.telerik.com/fiddler) er et gratis værktøj fra Telerik, der overvåger HTTP-trafik. Du kan se det, der sendes frem og tilbage vha. Power BI-tjenesten fra klientcomputeren. Denne trafikliste kan vise fejl og andre relaterede oplysninger.
 
 ![Brug af Fiddler-sporing](media/service-gateway-onprem-tshoot/fiddler.png)
 
@@ -254,4 +253,4 @@ Du kan finde flere oplysninger om fejlfinding af opdateringsscenarier i [Scenari
 * [Administrer din datakilde – SQL Server](service-gateway-enterprise-manage-sql.md)  
 * [Administrer din datakilde – Import/planlagt opdatering](service-gateway-enterprise-manage-scheduled-refresh.md)  
 
-Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](http://community.powerbi.com/).
+Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](https://community.powerbi.com/).

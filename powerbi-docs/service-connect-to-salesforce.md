@@ -2,7 +2,6 @@
 title: Opret forbindelse til Salesforce med Power BI
 description: Salesforce til Power BI
 author: SarinaJoan
-manager: kfile
 ms.reviewer: maggiesMSFT
 ms.service: powerbi
 ms.subservice: powerbi-template-apps
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/30/2019
 ms.author: sarinas
 LocalizationGroup: Connect to services
-ms.openlocfilehash: b351ba2151937b62002dc0cfca849cff58985581
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 6fedd3994a9e6a14ea89637a0c12aa8dd47928a9
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73060803"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73854636"
 ---
 # <a name="connect-to-salesforce-with-power-bi"></a>Opret forbindelse til Salesforce med Power BI
 Med Power BI kan du kan nemt oprette forbindelse til din konto på Salesforce.com. Med denne forbindelse kan du hente dine Salesforce-data og få et dashboard og rapporter automatisk.
@@ -23,7 +22,7 @@ Med Power BI kan du kan nemt oprette forbindelse til din konto på Salesforce.co
 Læs mere om [integrering af Salesforce](https://powerbi.microsoft.com/integrations/salesforce) med Power BI.
 
 ## <a name="how-to-connect"></a>Sådan opretter du forbindelse
-1. Vælg **Hent data** nederst i venstre navigationsrude i Power BI.
+1. Vælg **Hent data** nederst i navigationsruden i Power BI.
    
    ![](media/service-connect-to-salesforce/pbi_getdata.png) 
 2. Markér **Hent** i feltet **Tjenester**.
@@ -53,7 +52,7 @@ Læs mere om [integrering af Salesforce](https://powerbi.microsoft.com/integrati
      
      Hvis du ikke kan se nogen rapporter, kan du tilføje eller oprette dem i din Salesforce-konto og prøve at oprette forbindelse igen.
 
-7. Vælg **Opret forbindelse** for at starte importprocessen. Under importen får du vist en meddelelse om, at importen er i gang. Når importen er fuldført, får du vist et dashboard, en rapport og et datasæt for dine Salesforce-data, som er angivet i navigationsruden til venstre.
+7. Vælg **Opret forbindelse** for at starte importprocessen. Under importen får du vist en meddelelse om, at importen er i gang. Når importen er fuldført, får du vist et dashboard, en rapport og et datasæt for dine Salesforce-data, som er angivet i navigationsruden.
    
    ![](media/service-connect-to-salesforce/pbi_getdatasalesforcedash.png)
 

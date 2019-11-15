@@ -3,18 +3,17 @@ title: Installér Power BI-rapportserver
 description: Find ud af, hvordan du installerer Power BI-rapportserver.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: c0e3666a5838ae8e3849f5defd3858c9ea205a42
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: eecddd9251bbce732e9dc4ef70ad0d855f499d11
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839445"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874147"
 ---
 # <a name="install-power-bi-report-server"></a>Installér Power BI-rapportserver
 
@@ -127,14 +126,14 @@ URL-reservationer består af et præfiks, værtsnavn, en port og en virtuel mapp
 | Del | Beskrivelse |
 | --- | --- |
 | Præfiks |Standardpræfikset er HTTP. Hvis du tidligere har installeret et SSL-certifikat (Secure Sockets Layer), forsøger installationsprogrammet at oprette reservationer, der anvender HTTPS-præfikset. |
-| Værtsnavn |Standardværtsnavnet er et stærkt jokertegn (+). Det angiver, at rapportserveren accepterer eventuelle HTTP-anmodninger på den angivne port for eventuelle værtsnavne, der oversættes til computeren, herunder `http://<computername>/reportserver`, `http://localhost/reportserver` eller `http://<IPAddress>/reportserver.` |
+| Værtsnavn |Standardværtsnavnet er et stærkt jokertegn (+). Det angiver, at rapportserveren accepterer eventuelle HTTP-anmodninger på den angivne port for eventuelle værtsnavne, der oversættes til computeren, herunder `https://<computername>/reportserver`, `https://localhost/reportserver` eller `https://<IPAddress>/reportserver.` |
 | Port |Standardporten er 80. Hvis du bruger en anden port end port 80, skal du udtrykkeligt føje den til URL-adressen, når du åbner webportalen i et browservindue. |
 | Virtuel mappe |Som standard oprettes virtuelle mapper i formatet for ReportServer for Report Server-webtjenesten og Reports for webportalen. For Report Server-webtjenesten er den virtuelle mappe som standard **reportserver**. For webportalen den virtuelle mappe som standard **reports**. |
 
 Et eksempel på den komplette URL-streng kan være som følger:
 
-* `http://+:80/reportserver`, giver adgang til rapportserveren.
-* `http://+:80/reports`, giver adgang til webportalen.
+* `https://+:80/reportserver`, giver adgang til rapportserveren.
+* `https://+:80/reports`, giver adgang til webportalen.
 
 ## <a name="firewall"></a>Firewall
 

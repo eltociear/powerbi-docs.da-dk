@@ -2,19 +2,18 @@
 title: Teknikker til datareduktion i forbindelse med importmodeller
 description: Forstå de forskellige teknikker, der hjælper med at reducere de data, der indlæses i importmodellerne.
 author: peter-myers
-manager: asaxton
 ms.reviewer: asaxton
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
 ms.date: 08/05/2019
 ms.author: v-pemyer
-ms.openlocfilehash: 794ded1bc310cfcecc609f48ee4f0595693ceeb3
-ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.openlocfilehash: c61a21f400de009815ecb685f989b1cdafbcdb22
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69520174"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875613"
 ---
 # <a name="data-reduction-techniques-for-import-modeling"></a>Teknikker til datareduktion i forbindelse med importmodeller
 
@@ -29,7 +28,7 @@ På trods af den effektivitet, der opnås af VertiPaq-lagringsprogrammet, er det
 - Data i mindre modeller opdateres hurtigere, hvilket medfører rapportering om lavere ventetid, højere gennemløb i forbindelse med opdatering af datasæt og mindre tryk på kildesystemet og kapacitetsressourcerne.
 - Et mindre antal tabelrækker kan resultere i hurtigere beregning i forbindelse med evaluering, hvilket kan levere en bedre overordnet ydeevne af forespørgsler.
 
-Der er syv forskellige teknikker til datareduktion, som dækkes i denne artikel. Disse omfatter:
+Der er otte forskellige teknikker til datareduktion, som dækkes i denne artikel. Disse omfatter:
 
 - [Fjern unødvendige kolonner](#remove-unnecessary-columns)
 - [Fjern unødvendige rækker](#remove-unnecessary-rows)
@@ -37,6 +36,7 @@ Der er syv forskellige teknikker til datareduktion, som dækkes i denne artikel.
 - [Optimer kolonnedatatyper](#optimize-column-data-types)
 - [Præference for brugerdefinerede kolonner](#preference-for-custom-columns)
 - [Deaktiver indlæsning Power Query-forespørgsler](#disable-power-query-query-load)
+- [Deaktiver automatisk dato og klokkeslæt](#disable-auto-datetime)
 - [Skift til blandet tilstand](#switch-to-mixed-mode)
 
 ## <a name="remove-unnecessary-columns"></a>Fjern unødvendige kolonner
@@ -85,6 +85,10 @@ I nogle tilfælde vil modelberegnede kolonner dog være et bedre valg. Det kan v
 Power Query-forespørgsler, der er beregnet til at understøtte dataintegration med andre forespørgsler, bør ikke indlæses i modellen. Hvis du vil undgå at indlæse forespørgslen i modellen, skal du sørge for at deaktivere indlæsning af forespørgsler i disse tilfælde.
 
 ![Deaktivering af indlæsning af en Power Query-forespørgsel](media/import-modeling-data-reduction/power-query-disable-query-load.png)
+
+## <a name="disable-auto-datetime"></a>Deaktiver automatisk dato og klokkeslæt
+
+Power BI Desktop indeholder en indstilling, der hedder _Automatisk dato/klokkeslæt_. Når funktionen er aktiveret, oprettes der en skjult automatisk dato-/klokkeslætstabel, så datokolonner kan understøtte rapportforfattere ved konfiguration af filtre, gruppering og detailudledning for kalendertidsperioder. De skjulte tabeller er faktisk beregnede tabeller, der øger modellens størrelse. Du kan finde oplysninger om, hvordan du bruger denne indstilling, i artiklen [Vejledning til automatisk dato/klokkeslæt i Power BI Desktop](../desktop-auto-date-time.md).
 
 ## <a name="switch-to-mixed-mode"></a>Skift til blandet tilstand
 

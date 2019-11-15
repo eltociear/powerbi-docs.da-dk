@@ -2,7 +2,6 @@
 title: Opret og publicer en organisationsindholdspakke – PowerBi
 description: I dette selvstudium opretter du en organisationsindholdspakke, begrænser adgangen til en bestemt gruppe og publicerer den i biblioteket til din organisationsindholdspakke i Power BI.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: eb1940f7d5a4e809590b5b425b8005776040a5cc
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 25b63db2d77e84fb3fc1a3e844ceb46ef1a9bd82
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020663"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871995"
 ---
 # <a name="tutorial-create-and-publish-a-power-bi-organizational-content-pack"></a>Selvstudium: Opret og publicer en organisationsindholdspakke til Power BI
 
@@ -34,9 +33,9 @@ Antag, at du er Release Manager hos Contoso, og at du er ved at gøre klar til l
 
 Vil du følge med? Gå til [Mit arbejdsområde](https://powerbi.com) i **Power BI-tjenesten**. Gå derefter til **Hent data** > **Eksempler** > **Eksempel på analyse af salgsmuligheder** > **Opret forbindelse** for at få din egen kopi.
 
-1. Vælg **Arbejdsområder** > **Mit arbejdsområde** i navigationsruden til venstre.
+1. Vælg **Arbejdsområder** > **Mit arbejdsområde** i navigationsruden.
 
-1. Vælg tandhjulsikonet ![Skærmbillede af tandhjulsikonet](media/service-organizational-content-pack-create-and-publish/cog.png) på den øverste navigationslinje. > **Opret indholdspakke**.
+1. Vælg tandhjulsikonet ![Skærmbillede af tandhjulsikonet](media/service-organizational-content-pack-create-and-publish/cog.png) i den øverste navigationsrude. > **Opret indholdspakke**.
 
    ![Skærmbillede af brugergrænsefladen med fokus på tandhjulsikonet og indstillingen Opret indholdspakke.](media/service-organizational-content-pack-create-and-publish/pbi_create_contpk.png)
 
@@ -100,4 +99,4 @@ Vil du følge med? Gå til [Mit arbejdsområde](https://powerbi.com) i **Power B
 
 * [Hvad er OneDrive for Business?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
 
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

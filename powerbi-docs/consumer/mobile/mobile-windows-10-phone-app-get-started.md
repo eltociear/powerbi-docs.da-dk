@@ -2,19 +2,18 @@
 title: Kom i gang med Power BI-mobilapp til Windows 10
 description: Med Power BI-mobilappen til Windows 10 får du opdateret, touchaktiveret mobiladgang til virksomhedsoplysninger på din tablet eller telefon.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: 3aff2b6a939a53a6246ed69ac5bd76dfe4f0dfe4
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: b2bfe6157653459c2d7b60b85c9f7e8a3e465e23
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059713"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879057"
 ---
 # <a name="get-started-with-the-power-bi-mobile-app-for-windows-10"></a>Kom i gang med Power BI-mobilapp til Windows 10
 Power BI-mobilappen til Windows 10 gør det muligt at bruge Power BI på din tablet eller telefon. Du får opdateret, berøringsfølsom mobiladgang til dine virksomhedsoplysninger. Få vist og interager med virksomhedens dashboards, uanset hvor du er, direkte fra [Start i Windows](mobile-pin-dashboard-start-screen-windows-10-phone-app.md).
@@ -26,16 +25,16 @@ Du kan [oprette dashboards og rapporter i Power BI-tjenesten](../../service-get-
 Derefter kan du interagere med dine dashboards og rapporter, udforske dataene og dele dem. Alt sammen fra Power BI-mobilappen til Windows 10.
 
 ## <a name="first-things-first"></a>Det vigtigste først
-* [**Hent Power BI-mobilappen til Windows 10**](http://go.microsoft.com/fwlink/?LinkID=526478) fra Windows Store.
+* [**Hent Power BI-mobilappen til Windows 10**](https://go.microsoft.com/fwlink/?LinkID=526478) fra Windows Store.
   
   Din enhed skal køre Windows 10. Appen fungerer på enheder med mindst 3 GB RAM og 8 GB internt lager.
    
 * Find ud af, [hvad der er nyt i Power BI-mobilappene](mobile-whats-new-in-the-mobile-apps.md).
 
 ## <a name="sign-up-for-the-power-bi-service-on-the-web"></a>Tilmeld dig Power BI-tjenesten på internettet
-Hvis du endnu ikke har tilmeldt dig, kan du gå til [Power BI-tjenesten](http://powerbi.com/). Tilmeld dig din egen konto for at oprette og lagre dashboards og rapporter samt samle dine data. Log derefter på Power BI fra din Windows 10-enhed for at få vist dine egne dashboards overalt.
+Hvis du endnu ikke har tilmeldt dig, kan du gå til [Power BI-tjenesten](https://powerbi.com/). Tilmeld dig din egen konto for at oprette og lagre dashboards og rapporter samt samle dine data. Log derefter på Power BI fra din Windows 10-enhed for at få vist dine egne dashboards overalt.
 
-1. I Power BI-tjenesten skal du trykke på [Tilmeld](http://go.microsoft.com/fwlink/?LinkID=513879) for at oprette en Power BI-konto.
+1. I Power BI-tjenesten skal du trykke på [Tilmeld](https://go.microsoft.com/fwlink/?LinkID=513879) for at oprette en Power BI-konto.
 2. Gå i gang med at [oprette dine egne dashboards og rapporter](../../service-get-started.md).
 
 ## <a name="get-started-with-the-power-bi-app"></a>Introduktion til Power BI-appen
@@ -87,9 +86,9 @@ Find hurtigt dine dashboards, rapporter og apps ved at skrive i søgefeltet, som
    ![Relevante søgeresultater](./media/mobile-windows-10-phone-app-get-started/pbi_win10_search_m.png)
 
 ## <a name="find-your-content-in-the-power-bi-mobile-apps"></a>Find dit indhold i Power BI-mobilappsene
-Dine dashboards og rapporter gemmes forskellige steder i Power BI-mobilapperne, alt efter hvor de kom fra. Læs [Sådan finder du dit indhold i mobilapperne](mobile-apps-quickstart-view-dashboard-report.md). Desuden kan du altid søge efter noget, du har i Power BI-mobilappsene. 
+Dine dashboards og rapporter gemmes forskellige steder i Power BI-mobilapperne, alt efter hvor de kom fra. Læs [Sådan finder du dit indhold i mobilapperne](mobile-apps-quickstart-view-dashboard-report.md). Desuden kan du altid søge efter noget, du har i Power BI-mobilapperne. 
 
-![Navigation i venstre side af Power BI](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-left-nav.png)
+![Power BI-navigationsrude](./media/mobile-windows-10-phone-app-get-started/power-bi-win10-left-nav.png)
 
 ## <a name="view-your-favorite-dashboards-kpis-and-reports"></a>Få vist de dashboards, KPI'er og rapporter, du har gjort til dine favoritter
 Få vist alle dine foretrukne Power BI-dashboards sammen med Reporting Services-KPI'er og -mobilrapporter på siden Favoritter i mobilappene. Når du gør et dashboard til en *favorit* i Power BI-mobilappen, får du adgang til den fra alle dine enheder, herunder Power BI-tjenesten i din browser. 
@@ -120,7 +119,7 @@ Her er nogle andre ting, du kan foretage dig i Power BI-appen til Windows 10-enh
 * [Opret dine egne mobilrapporter med SQL Server Mobile Report Publisher](https://msdn.microsoft.com/library/mt652547.aspx), og publicer dem på Reporting Services-webportalen.
 
 ## <a name="next-steps"></a>Næste trin
-* [Download Power BI-appen](http://go.microsoft.com/fwlink/?LinkID=526478) fra Windows Store  
+* [Download Power BI-appen](https://go.microsoft.com/fwlink/?LinkID=526478) fra Windows Store  
 * [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

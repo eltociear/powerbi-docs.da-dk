@@ -2,7 +2,6 @@
 title: Registrer Power BI-tjenestetilstand i Office 365
 description: Få mere at vide om, hvordan du får vist aktuelle og tidligere tjenestetilstande i Microsoft 365 Administration.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 579950320c3193e9cc1921a06d5b121ff0b58ae0
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 0e944dfa34bec1e1c1816cf80d7dc2df7252b65a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075346"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73857692"
 ---
 # <a name="track-power-bi-service-health-in-office-365"></a>Registrer Power BI-tjenestetilstand i Office 365
 
@@ -29,7 +28,7 @@ Du kan finde flere oplysninger om roller under [Administratorroller, der er rela
 
 1. Log på [Microsoft 365 Administration](https://portal.office.com/adminportal).
 
-1. Vælg **Vis alle** > **Tilstand** > **Tjenestetilstand** på navigationslinjen til venstre. Siden Tjenestetilstand vises:
+1. Vælg **Vis alle** > **Tilstand** > **Tjenestetilstand** i navigationsruden. Siden Tjenestetilstand vises:
 
     ![Skærmbillede af Microsoft 365 Administration, hvor indstillingerne Tilstand og Tjenestetilstand er markeret.](media/service-admin-health/service-health-tile.png)
 

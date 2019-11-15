@@ -2,7 +2,6 @@
 title: 'HR-eksempel: Få en introduktion'
 description: 'Eksempel på HR til Power BI: Få en introduktion'
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: amac
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: maggies
 LocalizationGroup: Samples
-ms.openlocfilehash: d5670a8077b4de03f6eb866f6177f17cdec7d7f7
-ms.sourcegitcommit: 8aa90f662afb7492ffcfc11ef142cdb0ccecc9aa
+ms.openlocfilehash: 3f0c95673bd6a9a5af2a828869f38d32440b617a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68462333"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858855"
 ---
 # <a name="human-resources-sample-for-power-bi-take-a-tour"></a>Eksempel på HR til Power BI: Få en introduktion
 
@@ -58,11 +57,11 @@ Før du kan bruge eksemplet, skal du først downloade det som en [indholdspakke]
   
 ### <a name="get-the-pbix-file-for-this-sample"></a>Hent .pbix-filen knyttet til dette eksempel
 
-Du kan også hente HR-eksemplet som en [.pbix-fil](http://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix), som er beregnet til brug med Power BI Desktop.
+Du kan også hente HR-eksemplet som en [.pbix-fil](https://download.microsoft.com/download/6/9/5/69503155-05A5-483E-829A-F7B5F3DD5D27/Human%20Resources%20Sample%20PBIX.pbix), som er beregnet til brug med Power BI Desktop.
 
 ### <a name="get-the-excel-workbook-for-this-sample"></a>Hent Excel-projektmappen for dette eksempel
 
-Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkId=529780). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, kan du finde flere oplysninger under [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
+Hvis du vil have vist datakilden for dette eksempel, er den også tilgængelig som en [Excel-projektmappe](https://go.microsoft.com/fwlink/?LinkId=529780). Projektmappen indeholder Power View-ark, som du kan få vist og redigere. Hvis du vil se rådataene, skal du aktivere tilføjelsesprogrammerne Dataanalyse og derefter vælge **Power Pivot > Administrer**. Hvis du vil aktivere tilføjelsesprogrammerne Power-visning og Power Pivot, kan du finde flere oplysninger under [Se nærmere på Excel-eksemplerne fra selve Excel](sample-datasets.md#optional-take-a-look-at-the-excel-samples-from-inside-excel-itself).
 
 ## <a name="new-hires"></a>Nyansættelser
 Lad os undersøge nyansættelser først.
@@ -87,7 +86,7 @@ Lad os undersøge nyansættelser først.
 
 4. Vælg forskellige aldersgrupper og forskelligt køn i diagrammerne for at undersøge relationerne mellem alder, køn, område og etnicitet.
 
-5. Vælg **Human Resource Sample** på den øverste navigationslinje for at vende tilbage til dashboardet.
+5. Vælg **Human Resource Sample** i den øverste navigationsrude for at vende tilbage til dashboardet.
 
    ![Vend tilbage til dashboard](media/sample-human-resources/power-bi-breadcrumbs.png)
 
@@ -133,7 +132,7 @@ Lad os se på rapporten i Redigeringsvisning. Du kan ændre cirkeldiagrammerne, 
 
 8. Du kan også følge de samme trin for cirkeldiagrammet **Antal aktive medarbejdere efter køn** og ændre det til fratrådte i stedet for aktive medarbejdere. Kig på data for frivillig fratrædelse fordelt på køn for at se, om du kan finde andre ting af interesse.
 
-9. Vælg **Human Resource Sample** på den øverste navigationslinje for at vende tilbage til dashboardet. Du kan vælge at gemme de ændringer, du har foretaget i rapporten.
+9. Vælg **Human Resource Sample** i den øverste navigationsrude for at vende tilbage til dashboardet. Du kan vælge at gemme de ændringer, du har foretaget i rapporten.
 
 ## <a name="bad-hires"></a>Forkerte ansættelser
 Det sidste undersøgelsesområde er forkerte ansættelser. Forkerte ansættelser er defineret som medarbejdere, der ikke blev over 60 dage i virksomheden. Vi ansætter mange, men ansætter vi velegnede kandidater?
@@ -147,7 +146,7 @@ Det sidste undersøgelsesområde er forkerte ansættelser. Forkerte ansættelser
 
 3. Hvis du kigger på kransediagrammet **Antal forkerte ansættelser efter køn** og vælger forskellige områder i udsnittet **Område**, kan du se, at det østlige område er det eneste område med flere forkerte ansættelser med kvinder end med mand.  
 
-4. Vælg navnet på dashboardet på øverste navigationslinje for at vende tilbage til dashboardet.
+4. Vælg navnet på dashboard'et i den øverste navigationsrude for at vende tilbage til dashboard'et.
 
 ## <a name="ask-a-question-in-the-dashboard-qa-box"></a>Stil et spørgsmål i dashboardets felt til spørgsmål og svar
 I [feltet til spørgsmål og svar](power-bi-tutorial-q-and-a.md) i dashboardet kan du stille et spørgsmål om dine data på et naturligt sprog. Spørgsmål og svar kan genkende de ord, du skriver, og kan regne ud, hvor i dit datasæt svaret findes.

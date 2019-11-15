@@ -2,7 +2,6 @@
 title: Sådan arbejder du med visualiseringer (visuelle elementer) som forbruger
 description: Power BI-begreber og -terminologi – visualiseringer, visuelle elementer. Hvad er en visualisering/et visuelt element i Power BI?
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 7f72e53fe9f017f5f12893711858cc9179b883dd
-ms.sourcegitcommit: 5410a17c6325406c9d9364585d7c26de4d9488ae
+ms.openlocfilehash: fc663f34b5ed95502f84f3858cb54cdb42f6fead
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379965"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73860974"
 ---
 # <a name="interact-with-visuals-in-reports-dashboards-and-apps"></a>Interager med visualiseringer i rapporter, på dashboards og i apps
 
@@ -52,7 +51,7 @@ I forbindelse med mange af disse indstillinger kan din administrator eller *desi
 |[Bed Power BI om at søge efter interessante fakta eller tendenser](end-user-insights.md) i visualiseringens data for dig.  Disse automatisk genererede visuelle elementer kaldes *indsigt*.     |    ja     |  For hele rapporten, ikke pr. visualisering       | nej   |
 |[Få kun vist én visualisering ad gangen ved hjælp af *fokustilstand*](end-user-focus.md).     | ja        |   ja      | i/t  |
 |[Undersøg, hvornår visualiseringen sidst blev opdateret](end-user-fresh.md).     |  ja       |    ja     | i/t  |
-|[Få kun vist én visualisering ad gangen uden kanter eller navigationslinjer ved hjælp af *fuldskærmsvisning* eller *fokustilstand*](end-user-focus.md).     |   ja      |  ja       | Standard  |
+|[Få kun vist én visualisering ad gangen uden kanter eller navigationsruder ved hjælp af *fuldskærmsvisning* eller *fokus*tilstand](end-user-focus.md).     |   ja      |  ja       | Standard  |
 |[Udskriv](end-user-print.md).     |  ja       |   ja      | nej  |
 |[Se nærmere på visualiseringen ved at tilføje og redigere visualiseringsfiltre.](end-user-report-filter.md)     |    nej     |   ja      | nej  |
 |Hold over en visualisering for at få vist flere oplysninger og værktøjstip.     |    ja     |   ja      | ja  |

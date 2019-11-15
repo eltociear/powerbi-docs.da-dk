@@ -2,7 +2,6 @@
 title: Brug What if-parametre til at visualisere variabler
 description: Opret din egen What if-variabel for at forestille dig og visualisere variabler i Power BI-rapporter
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 2451620c6d4092e5da4605f8e76b0a70e2eecf2b
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 1ad0c7d2a3c3d21d8ccb81354bdc03d845b61f58
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513495"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876058"
 ---
 # <a name="create-and-use-a-what-if-parameter-to-visualize-variables-in-power-bi-desktop"></a>Opret og brug What if-parametre til at visualisere variabler i Power BI Desktop
 Fra og med august 2018-versionen af **Power BI Desktop** kan du oprette **What if**-variabler for dine rapporter, interagere med variablerne som udsnit og visualisere og kvantificere forskellige nøgleværdier i dine rapporter.
@@ -50,7 +49,7 @@ Lad os oprette et simpelt eksempel på, hvordan du kan bruge en **What if**-para
 
 ![](media/desktop-what-if/what-if_05.png)
 
-Den nye måling skal bare være det samlede salgsbeløb, hvor der anvendes en rabatsats. Du kan naturligvis oprette komplekse og interessante målinger, så brugerne af dine egne rapporter kan visualisere variablen i din **What if**-parameter. Du kan f.eks, oprette en rapport, hvor sælgere kan se deres løn, hvis de opfylder visse salgsmål eller -procenter, eller se effekten af øget salg i forhold til større rabatter.
+Den nye måling skal bare være det samlede salgsbeløb, hvor der anvendes en rabatsats. Du kan naturligvis oprette komplekse og interessante målinger, så brugerne af dine egne rapporter kan visualisere variablen i din **What if**-parameter. Du kan f.eks. oprette en rapport, hvor sælgere kan se deres løn, hvis de opfylder visse salgsmål eller -procenter, eller se effekten af øget salg i forhold til større rabatter.
 
 Når vi indtaster formlen for målingen i formellinjen og navnet **Sales after Discount**, kan vi se resultatet:
 

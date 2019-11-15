@@ -2,7 +2,6 @@
 title: Tip og gode råd til oprettelse af rapporter i Power BI
 description: Få mer at vide om de bedste fremgangsmåder til oprettelse af rapporter i Power BI-tjenesten og Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: willthom
 ms.custom: seodec18
 ms.service: powerbi
@@ -10,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
-ms.openlocfilehash: 41e5ff75e9b6fd48e3101d30999e8d570f34a270
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: a6d949f95f463cb988958551d825a4eae824fb70
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514053"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73865833"
 ---
 # <a name="tips-and-tricks-for-creating-reports-in-power-bi-desktop"></a>Tips og tricks til oprettelse af rapporter i Power BI Desktop
 For at få mest muligt ud af dine data skal du nogle gange have lidt ekstra hjælp. Vi har samlet nogle tip og tricks, som du kan bruge, når du opretter rapporter i Microsoft Power BI Desktop *og* i Microsoft Excel 2016 eller Excel 2013 Pro-Plus-udgaver, hvor tilføjelsesprogrammet Power Pivot er aktiveret, og Power-forespørgsel er installeret og aktiveret. 
@@ -33,14 +32,14 @@ Når vi bruger forespørgselseditoren i Power BI Desktop til at indlæse data, k
 Det er vigtigt at huske, at kursiv i datagitteret ikke betyder, at datatypen er angivet korrekt, men blot at dataene ikke betragtes som tekst.
 
 ## <a name="reference-queries-in-the-query-editor"></a>Referenceforespørgsler i forespørgselseditoren
-I Forespørgselseditorens navigator i Power BI Desktop, når du højreklikker på en af forespørgslerne, en indstilling for "Reference" er tilgængelig. Dette er nyttigt af følgende årsag:
+Når du er i forespørgselseditorens navigator i Power BI Desktop, og du højreklikker på en af forespørgslerne, er der en tilgængelig indstilling for "Reference". Dette er nyttigt af følgende årsag:
 
 * Når du bruger filer som datakilde for en forespørgsel, gemmes den absolutte sti til filen i forespørgslen. Når du deler eller flytter en Power BI Desktop-fil eller Excel-projektmappe, sparer du tid, når du opdaterer stierne, ved kun at opdatere den én gang i stedet for stierne.
 
-Som standard indlæses alle forespørgsler enten i en Excel-projektmappe eller i datamodellen (eller begge). Nogle forespørgsler er mellemliggende trin og er beregnet ikke for slutbrugere. Når der refereres til forespørgsler som angivet ovenfor, er det ofte tilfældet. Du kan styre indlæsning af forespørgsler funktionsmåde ved at højreklikke på forespørgslen i navigatoren og slå indstillingen "Aktivér indlæsning". Når *Aktivér indlæsning* har ikke en markering ud for det, forespørgslen er stadig tilgængelig under forespørgselsfanen, og du kan bruge den til andre forespørgsler. Dette er især nyttigt i forbindelse med transformering med fletning, tilføjelse og referencer. Men da resultaterne af forespørgslen ikke indlæses i datamodellen, laver forespørgslen ikke rod på rapportlisten eller i din datamodel. 
+Som standard indlæses alle forespørgsler enten i en Excel-projektmappe eller i datamodellen (eller begge). Nogle forespørgsler er mellemliggende trin og er ikke beregnet til slutbrugere. Når der refereres til forespørgsler som angivet ovenfor, er det ofte tilfældet. Du kan styre funktionsmåden for indlæsning af forespørgsler ved at højreklikke på forespørgslen i navigatoren og slå indstillingen "Aktivér indlæsning" til/fra. Når *Aktivér indlæsning* ikke er markeret, er forespørgslen stadig tilgængelig under forespørgselsfanen, og du kan bruge den sammen med andre forespørgsler. Dette er især nyttigt i forbindelse med transformering med fletning, tilføjelse og referencer. Men da resultaterne af forespørgslen ikke indlæses i datamodellen, laver forespørgslen ikke rod på rapportlisten eller i din datamodel. 
 
 ## <a name="scatter-charts-need-a-point-identifier"></a>Punktdiagrammer skal bruge et punkt-id
-Her er et eksempel på en simpel tabel med temperaturer og tidspunktet for læsning. Hvis du afbilder dette direkte i et punktdiagram, aggregerer Power BI alle værdierne til et enkelt punkt. Hvis du vil vise individuelle datapunkter, skal du føje et felt til bucket'en oplysninger i feltet godt. Det kan du nemt gøre i Power BI Desktop ved at gå til forespørgselsfanen og bruge indstillingen "Tilføj indekskolonne" på båndet "Tilføj kolonne". 
+Her er et eksempel på en simpel tabel med temperaturer og tidspunktet for læsning. Hvis du afbilder dette direkte i et punktdiagram, aggregerer Power BI alle værdierne til et enkelt punkt. Hvis du vil vise individuelle datapunkter, skal du føje et felt til bucket'en Oplysninger i feltet. Det kan du nemt gøre i Power BI Desktop ved at gå til forespørgselsfanen og bruge indstillingen "Tilføj indekskolonne" på båndet "Tilføj kolonne". 
 
 ## <a name="reference-lines-in-your-report"></a>Referencelinjer i rapporten
 Du kan bruge en beregnet kolonne i Power BI Desktop til at definere en referencelinje. Identificer den tabel og den kolonne, som du vil oprette en referencelinje i. Vælg "Ny kolonne" på båndet, og skriv følgende formel i formellinjen:
@@ -50,7 +49,7 @@ Du kan bruge en beregnet kolonne i Power BI Desktop til at definere en reference
 Denne beregnede kolonne returnerer værdien 100, uanset hvor den bruges. Den nye kolonne vises på feltlisten. Føj den beregnede kolonne i målværdien til et kurvediagram for at vise, hvordan alle serier er relateret til den specifikke referencelinje. 
 
 ## <a name="sort-by-another-column"></a>Sortér efter en anden kolonne
-Når du bruger en kategorisk værdi (streng) i Power BI til diagramakser eller i et udsnitsværktøj eller et filter, er rækkefølgen som standard alfabetisk. Hvis du vil tilsidesætte denne rækkefølge, kan for eksempel for dage i ugen eller måneder, og derefter du fortælle Power BI Desktop til at sortere efter en anden kolonne. Hvis du vil vide mere, kan du se [Sortér efter kolonne i Power BI Desktop](desktop-sort-by-column.md).
+Når du bruger en kategorisk værdi (streng) i Power BI til diagramakser eller i et udsnitsværktøj eller et filter, er rækkefølgen som standard alfabetisk. Hvis du vil tilsidesætte denne rækkefølge, for eksempel for dage i ugen eller måneder, kan du bede Power BI Desktop om at sortere efter en anden kolonne. Du kan få mere at vide under [Sorter efter kolonne i Power BI Desktop](desktop-sort-by-column.md).
 
 ## <a name="building-maps-more-easily-with-hints-to-bing"></a>Opret nemmere kort med tip til Bing
 Power BI kan integreres med Bing for at angive standardkortkoordinater (en proces, der kaldes geokodning), så det bliver lettere for dig at oprette kort. Bing bruger nogle algoritmer og tip til at prøve at hente den rette placering, men den gætter. Hvis du vil øge sandsynligheden for en korrekt geokodning, kan du bruge følgende tip:
@@ -62,7 +61,7 @@ Nogle betegnelser er tvetydige, når de ses i forbindelse med flere lande/områd
 Du kan altid angive specifikke placeringer for breddegrad og længdegrad i Power BI-tjenesten eller Power BI Desktop. Hvis du gør det, skal du også angive et placeringsfelt. Ellers aggregeres dataene som standard, så placeringen af breddegrad og længdegrad måske ikke svarer til det, du forventer.
 
 ## <a name="categorizing-geographic-fields-to-hint-bings-geocoding"></a>Kategoriser geografiske felter for at give et tip til Bings geokodning
-En anden måde til at sikre, at felter er geokodet korrekt, er at angive datakategorien i datafelterne. Vælg den ønskede tabel i Power BI Desktop, skal du gå til båndet Avanceret, og angiv derefter datakategori til adresse, by, kontinent, land/område, land, postnummer, stat eller provins. Bing bruger disse datakategorier til korrekt kodning af dataene. Du kan finde flere oplysninger under [Kategoriser data i Power BI Desktop](desktop-data-categorization.md).
+En anden måde til at sikre, at felter er geokodet korrekt, er at angive datakategorien i datafelterne. Vælg den ønskede tabel i Power BI Desktop, gå til båndet Avanceret, og angiv derefter Datakategori til Adresse, By, Kontinent, Land/område, Land, Postnummer, Stat eller Provins. Bing bruger disse datakategorier til korrekt kodning af dataene. Du kan finde flere oplysninger under [Kategoriser data i Power BI Desktop](desktop-data-categorization.md).
 
 ## <a name="better-geocoding-with-more-specific-locations"></a>Bedre geokodning med mere specifikke placeringer
 Nogle gange er det ikke nok at angive datakategorier i forbindelse med kortlægning. Opret en mere specifik placering, f.eks. adressen, ved hjælp af forespørgselseditoren i Power BI Desktop. Brug funktionen Tilføj kolonne til at oprette en brugerdefineret kolonne. Opret derefter den ønskede placering på følgende måde: 
@@ -86,7 +85,7 @@ Definer buckets for at oprette et histogram – Find ud af, hvilken forespørgse
 
 Kontrollér, at datatypen er et tal i den resulterende samlingskolonne. Du kan nu bruge gruppér efter-metoden, der er beskrevet under Nemmeste histogram, for at få det ønskede histogram. Denne indstilling håndterer flere datapunkter, men hjælper stadig ikke med børstning.
 
-Definer et histogram, der understøtter børstning – børstning visuelle elementer er kædet sammen, så når en bruger vælger et datapunkt i ét visuelt element, andre visualiseringer på rapportsiden fremhæve eller filtrere datapunkter, der er relateret til det valgte datapunkt. Da vi manipulerer data på forespørgselstidspunktet, skal vi oprette en relation mellem tabeller og sikre os, at vi ved, hvilket detaljeelement der er relateret til bucket'en i histogrammet, og omvendt.
+Definition af et histogram, der understøtter børstning – Børstning betyder, at visuelle elementer er kædet sammen, så når en bruger vælger et datapunkt i ét visuelt element, fremhæver eller filtrerer andre visuelle elementer datapunkter, der er relateret til det valgte datapunkt. Da vi manipulerer data på forespørgselstidspunktet, skal vi oprette en relation mellem tabeller og sikre os, at vi ved, hvilket detaljeelement der er relateret til bucket'en i histogrammet, og omvendt.
 
 Start processen ved hjælp af indstillingen "Reference" i den forespørgsel, der har det felt, du vil oprette et histogram for. Kald den nye forespørgsel "Buckets". I dette eksempel kan vi kalde den oprindelige forespørgsel "Detaljer". Flyt derefter alle kolonner undtagen den kolonne, du vil bruge som bucket for histogrammet. Nu kan du bruge funktionen "Fjern dubletter" i forespørgslen (den er i genvejsmenuen, når du vælger en kolonne), så de resterende værdier bliver entydige værdier i kolonnen. Hvis du har decimaler, kan du først bruge tippet, der bruges til at definere buckets til oprettelse af et histogram, til at få en sæt buckets, der kan administreres. Nu skal du kontrollere dataene, der vises i forespørgselseksemplet. Hvis du kan se tomme værdier eller null-værdier, skal du rette dette, før du opretter en relation. Se "Opret en relation, hvis mine data har null-værdier eller tomme værdier". Det kan være problematisk at bruge denne fremgangsmåde, da det er nødvendigt at sortere. For at få buckets til at sortere korrekt kan du gå til "Sorteringsrækkefølge: Få vist kategorier i den ønskede rækkefølge". 
 
@@ -161,4 +160,4 @@ DAX er sproget til beregning af formler i Power BI Desktop. Det er optimeret til
 
 [Henvisning til DAX (Data Analysis Expressions)](https://msdn.microsoft.com/library/gg413422.aspx)
 
-[DAX-ressourcecenter](http://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)
+[DAX-ressourcecenter](https://social.technet.microsoft.com/wiki/contents/articles/1088.dax-resource-center.aspx)

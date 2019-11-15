@@ -3,18 +3,17 @@ title: Overfør en rapportserverinstallation
 description: Få mere at vide om, hvordan du overfører din eksisterende SQL Server Reporting Services-forekomst til en forekomst af Power BI-rapportserver.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 01/17/2019
-ms.openlocfilehash: 01c87d425b1ada76e322af411188a4a2717562d0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: bc3b196313266be64e7a63a66f33ef4020574d2a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770180"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73858884"
 ---
 # <a name="migrate-a-report-server-installation"></a>Overfør en rapportserverinstallation
 
@@ -35,7 +34,7 @@ Overførsel er defineret som at flytte programdatafiler til en ny Power BI Repor
 
 Overførsel fra en SSRS-forekomst (oprindelig tilstand) til Power BI Report Server består af nogle få trin.
 
-![Overfør fra oprindelig tilstand i SSRS til Power BI-rapportserver](media/migrate-report-server/migrate-from-ssrs-native.png "Overfør fra oprindelig tilstand i SSRS til Power BI-rapportserver")
+![Overfør fra oprindelig tilstand i SSRS til Microsoft Power BI-rapportserver](media/migrate-report-server/migrate-from-ssrs-native.png "Overfør fra oprindelig tilstand i SSRS til Microsoft Power BI-rapportserver")
 
 > [!NOTE]
 > SQL Server 2008 Reporting Services og nyere understøttes i forbindelse med overførsel.
@@ -55,7 +54,7 @@ Overførsel fra en SSRS-forekomst (oprindelig tilstand) til Power BI Report Serv
 
 Overførsel fra en SSRS (SharePoint-integreret tilstand) til Power BI Report Server er ikke så ligetil som oprindelig tilstand. Selvom disse trin indeholder nogle retningslinjer, kan du have andre filer og aktiver i SharePoint, der skal administreres uden for disse trin.
 
-![Overfør fra SharePoint-integreret tilstand i SSRS til Power BI-rapportserver](media/migrate-report-server/migrate-from-ssrs-sharepoint.png "Overfør fra SharePoint-integreret tilstand i SSRS til Power BI-rapportserver")
+![Overfør fra SSRS SharePoint-integreret tilstand til Microsoft Power BI-rapportserver](media/migrate-report-server/migrate-from-ssrs-sharepoint.png "Overfør fra SSRS SharePoint-integreret tilstand til Microsoft Power BI-rapportserver")
 
 Du skal overføre det specifikke rapportserverindhold fra SharePoint til din Power BI-rapportserver. Du skal have installeret Power BI-rapportserver et eller andet sted i dit miljø. Yderligere oplysninger om installation af Power BI Report Server finder du i [Installer Power BI Report Server](install-report-server.md).
 
@@ -70,10 +69,10 @@ Hvis du vil kopiere rapportserverindholdet fra SharePoint-miljøet til Power BI-
 Sample Script
 rs.exe
 -i ssrs_migration.rss -e Mgmt2010
--s http://SourceServer/_vti_bin/reportserver
+-s https://SourceServer/_vti_bin/reportserver
 -v st="sites/bi" -v f="Shared Documents“
 -u Domain\User1 -p Password
--v ts=http://TargetServer/reportserver
+-v ts=https://TargetServer/reportserver
 -v tu="Domain\User" -v tp="Password"
 ```
 
@@ -81,7 +80,7 @@ rs.exe
 
 Overførsel fra en Power BI-rapportserver er den samme proces som overførsel fra SSRS (oprindelig tilstand).
 
-![Overfør fra Power BI-rapportserver til Power BI-rapportserver](media/migrate-report-server/migrate-from-pbirs.png "Overfør fra Power BI-rapportserver til Power BI-rapportserver")
+![Overfør fra Power BI Report Server til Microsoft Power BI-rapportserver](media/migrate-report-server/migrate-from-pbirs.png "Overfør fra Power BI Report Server til Microsoft Power BI-rapportserver")
 
 * Sikkerhedskopiér database-, program- og konfigurationsfiler
 * Sikkerhedskopiér krypteringsnøglen

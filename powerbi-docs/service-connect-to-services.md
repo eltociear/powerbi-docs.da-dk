@@ -2,19 +2,18 @@
 title: Opret forbindelse til de tjenester, du bruger med Power BI
 description: Opret forbindelse til mange af de tjenester, du bruger til at køre din virksomhed, f.eks. Salesforce, Microsoft Dynamics CRM og Google Analytics.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: maggies
 LocalizationGroup: Connect to services
-ms.openlocfilehash: abecc9b0c5e450d24f29230ad75417b1494e6ce9
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: 41881c1de66293689439364f3d1049f3d6b40607
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70159986"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873012"
 ---
 # <a name="connect-to-the-services-you-use-with-power-bi"></a>Opret forbindelse til de tjenester, du bruger med Power BI
 Med Power BI kan du oprette forbindelse til mange af de tjenester, du bruger til at køre din virksomhed, f.eks. Salesforce, Microsoft Dynamics CRM og Google Analytics. Power BI starter med at bruge dine legitimationsoplysninger til at oprette forbindelse til tjenesten. Den opretter et *arbejdsområde* i Power BI med et dashboard og et sæt Power BI-rapporter, der automatisk viser dine data og giver visuel indsigt om din virksomhed.
@@ -36,7 +35,7 @@ Når du har installeret appen, kan du få vist dashboardet og rapporterne i appe
 ## <a name="edit-the-dashboard-and-reports"></a>Rediger dashboardet og rapporterne
 Når importen er fuldført, vises den nye app vises på siden Apps.
 
-1. Vælg **Apps** i navigationsruden til venstre > vælg appen.
+1. Vælg **Apps** i navigationsruden > vælg appen.
    
      ![Siden Apps](media/service-connect-to-services/power-bi-service-apps-open-app.png)
 2. Du kan stille et spørgsmål ved at skrive det i feltet til spørgsmål og svar eller klikke på et felt for at åbne den underliggende rapport. 
@@ -71,6 +70,6 @@ Hvis du er interesseret i at oprette skabelonprogrammer, som du selv distribuere
 ## <a name="next-steps"></a>Næste trin
 * [Distribuer apps til dine kolleger](service-create-distribute-apps.md)
 * [Opret nye arbejdsområder i Power BI](service-create-the-new-workspaces.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

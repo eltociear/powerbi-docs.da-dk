@@ -2,7 +2,6 @@
 title: Opret og administrer relationer i Power BI Desktop
 description: Opret og administrer relationer i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 04/19/2019
 ms.author: davidi
 LocalizationGroup: Model your data
-ms.openlocfilehash: f2102ad654a056832f7890dc506acc99eb5ef26f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f759992c42cc589d21ed51d5d63775bf54518c3f
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61312291"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869123"
 ---
 # <a name="create-and-manage-relationships-in-power-bi-desktop"></a>Opret og administrer relationer i Power BI Desktop
 Når du importerer flere tabeller, er det muligt, at du skal udføre analyser ved hjælp af data fra alle disse tabeller. Der skal være relationer mellem disse tabeller, før du kan beregne præcise resultater og vise korrekte oplysninger i dine rapporter. I Power BI Desktop er det nemt at oprette disse relationer. I de fleste tilfælde behøver du faktisk ikke at foretage dig noget – funktionen Registrer automatisk kan gøre det for dig. Men i nogle tilfælde skal du muligvis selv oprette relationer, eller det kan være nødvendigt at foretage ændringer i en relation. I begge tilfælde er det vigtigt at forstå relationer i Power BI Desktop, og hvordan du opretter og redigerer dem.
@@ -64,9 +63,9 @@ Når du opretter eller redigerer en relation, kan du konfigurere yderligere inds
 I afsnittet Om yderligere indstillinger senere i denne artikel kan du finde flere oplysninger om, hvornår du skal ændre kardinaliteten.
 
 ## <a name="cross-filter-direction"></a>Tværgående filterretning
-**Begge** – Den mest almindelige standardretning, hvilket betyder, at begge tabeller i forbindelse med filtrering behandles, som om de er en enkelt tabel. **Begge** fungerer fint sammen med en enkelt tabel, der har flere opslagstabeller, som omgiver den. Et eksempel kan være en tabel med faktiske salgsværdier med en opslagstabel for afdeling. Dette kaldes også en stjerneskemakonfiguration (en central tabel med flere opslagstabeller). Men hvis du har to eller flere tabeller, der også har opslagstabeller (hvor nogle af dem er fælles), er det ikke en god ide at bruge indstillingen Begge. Hvis vi fortsætter med eksemplet, skal du i dette tilfælde også have en budgetsalgstabel, der registrerer målbudgettet for hver afdeling. Og afdelingstabellen er knyttet til både salgs- og budgettabellen. Undgå indstillingen Begge for denne form for konfiguration.
+**Begge** – Begge tabeller behandles i forbindelse med filtrering, som om de er en enkelt tabel. **Begge** fungerer fint sammen med en enkelt tabel, der har flere opslagstabeller, som omgiver den. Et eksempel kan være en tabel med faktiske salgsværdier med en opslagstabel for afdeling. Dette kaldes også en stjerneskemakonfiguration (en central tabel med flere opslagstabeller). Men hvis du har to eller flere tabeller, der også har opslagstabeller (hvor nogle af dem er fælles), er det ikke en god ide at bruge indstillingen Begge. Hvis vi fortsætter med eksemplet, skal du i dette tilfælde også have en budgetsalgstabel, der registrerer målbudgettet for hver afdeling. Og afdelingstabellen er knyttet til både salgs- og budgettabellen. Undgå indstillingen Begge for denne form for konfiguration.
 
-**Enkelt** – Filtrering af valg i forbundne tabeller fungerer i den tabel, hvor værdierne aggregeres. Hvis du importerer en datamodel fra Power Pivot i Excel 2013 eller tidligere, har alle relationer en enkelt retning. 
+**Enkelt** – Den mest almindelige standardretning, hvilket betyder, at filtreringsindstillinger i tilknyttede tabeller fungerer i den tabel, hvor værdierne aggregeres. Hvis du importerer en datamodel fra Power Pivot i Excel 2013 eller tidligere, har alle relationer en enkelt retning. 
 
 I afsnittet Om yderligere indstillinger senere i denne artikel kan du finde flere oplysninger om, hvornår du skal ændre den tværgående filterretning.
 

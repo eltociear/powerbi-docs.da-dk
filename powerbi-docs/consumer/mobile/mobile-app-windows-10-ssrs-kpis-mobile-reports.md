@@ -2,19 +2,18 @@
 title: Få vist SSRS-mobilrapporter og KPI'er i Windows 10-mobilappen – Power BI
 description: Power BI-mobilappen til Windows 10 tilbyder live, touchaktiveret mobiladgang til dine vigtige firmaoplysningerne i det lokale miljø.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 06/28/2018
 ms.author: mshenhav
-ms.openlocfilehash: 114cf65e8abb072ab3f0254cbd4041a43a31d1dc
-ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
+ms.openlocfilehash: 4666e7c0e4901a99867ea72ab404df4cbffe110b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73059638"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879368"
 ---
 # <a name="view-reporting-services-ssrs-mobile-reports-and-kpis-in-the-windows-10-power-bi-mobile-app"></a>Få vist SSRS-mobilrapporter (SQL Server Reporting Services) og KPI'er i Windows 10 Power BI-mobilappen
 Power BI-mobilappen til Windows 10 tilbyder live, touchaktiveret mobiladgang til dine vigtige firmaoplysningerne i det lokale miljø via SQL Server 2016 Reporting Services. 
@@ -46,11 +45,11 @@ Selvom du ikke har adgang til en Reporting Services-webportal, kan du stadig udf
 Gennemse eksemplerne for at interagere med KPI'er og mobilrapporter.
 
 ## <a name="connect-to-a-reporting-services-report-server"></a>Opret forbindelse til en Reporting Services-rapportserver
-1. Nederst på navigationslinjen til venstre skal du trykke på **Indstillinger** ![ikonet Indstillinger](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png)
-2. Tryk på **Opret forbindelse til serveren**.
+1. Tryk på **Indstillinger** ![ikonet Indstillinger](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png) nederst i navigationsruden
+2. Tryk på **Opret forbindelse til server**.
 3. Udfyld serveradressen og dit brugernavn og din adgangskode. Brug dette format til serveradressen:
    
-     `http://<servername>/reports` ELLER   `https://<servername>/reports`
+     `https://<servername>/reports` ELLER   `https://<servername>/reports`
    
    > [!NOTE]
    > Inkluder **http** eller **https** i begyndelsen af forbindelsesstrengen.
@@ -60,9 +59,9 @@ Gennemse eksemplerne for at interagere med KPI'er og mobilrapporter.
     Tryk på **Avanceret indstilling** for evt. at give serveren et navn.
 4. Tryk på markeringen for at oprette forbindelse. 
    
-   Nu kan du se serveren på navigationslinjen til venstre.
+   Nu kan du se serveren i navigationsruden.
    
-   ![Server på navigationslinjen til venstre](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-server.png)
+   ![Server i navigationsrude](./media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-ssrs-mobile-report-server.png)
    
    >[!TIP]
    >Tryk på knappen til globale navigation ![knappen til global navigation](././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/powerbi_windows10_options_icon.png) når som helst for at skifte mellem dine Reporting Services-mobilrapporter og dine dashboards i Power BI-tjenesten. 
@@ -96,7 +95,7 @@ Læs mere om [Favoritter i Power BI-mobilappsene](mobile-apps-favorites.md).
 ## <a name="remove-a-connection-to-a-report-server"></a>Fjern en forbindelse til en rapportserver
 Du kan kun oprette forbindelse til én rapportserver ad gangen fra din Power BI-mobilapp. Hvis du vil oprette forbindelse til en anden server, skal du afbryde forbindelsen til den aktuelle.
 
-1. Nederst på navigationslinjen til venstre skal du trykke på **Indstillinger** ![ikonet Indstillinger](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png).
+1. Tryk på **Indstillinger** ![ikonet Indstillinger](./././media/mobile-app-windows-10-ssrs-kpis-mobile-reports/power-bi-settings-icon.png) nederst i navigationsruden.
 2. Tryk på og hold det servernavn nede, som du ikke vil have forbindelse til.
 3. Tryk på **Fjern server**.
    
@@ -111,5 +110,5 @@ Du opretter ikke Reporting Services-KPI'er og -mobilrapporter i Power BI-mobilap
 ## <a name="next-steps"></a>Næste trin
 * [Kom i gang med Power BI-mobilappen til Windows 10](mobile-windows-10-phone-app-get-started.md)  
 * [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)  
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

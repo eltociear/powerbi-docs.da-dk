@@ -3,18 +3,17 @@ title: Overfør data til et datasæt
 description: Overfør data til et Power BI-datasæt
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: madia
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/22/2019
-ms.openlocfilehash: 9eb81610044f795b6f9dc5c58aeefad13de06542
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 5db16bfdc1013668be5103f392d6f298c8faf925
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66222150"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875457"
 ---
 # <a name="push-data-into-a-power-bi-dataset"></a>Overfør data til et Power BI-datasæt
 
@@ -43,7 +42,7 @@ Her er de handlinger, du skal bruge for at overføre data til et datasæt:
 * [Post Rows](https://docs.microsoft.com/rest/api/power-bi/pushdatasets/datasets_postrows)
 * [Hent grupper](https://docs.microsoft.com/rest/api/power-bi/groups/getgroups)
 
-Du kan oprette et datasæt i Power BI ved at overføre en JSON-streng (JavaScript Object Notation) til Power BI-tjenesten. Hvis du vil have mere at vide om JSON, skal du se [Om JSON](http://json.org/).
+Du kan oprette et datasæt i Power BI ved at overføre en JSON-streng (JavaScript Object Notation) til Power BI-tjenesten. Hvis du vil have mere at vide om JSON, skal du se [Om JSON](https://json.org/).
 
 JSON-strengen til et datasæt har følgende format:
 
@@ -112,13 +111,13 @@ Hvis du har et Power BI-tabelskema, kan du bruge følgende datatyper.
 
 ## <a name="learn-more-about-pushing-data-into-power-bi"></a>Få mere at vide om at overføre data til Power BI
 
-Du kan få hjælp til at komme i gang med at overføre data til et datasæt i [Trin 1: Registrer en app med Azure AD](walkthrough-push-data-register-app-with-azure-ad.md) i venstre navigationsrude.
+Du kan få hjælp til at komme i gang med at overføre data til et datasæt i [Trin 1: Registrer en app med Microsoft Azure Active Directory](walkthrough-push-data-register-app-with-azure-ad.md) i navigationsruden.
 
 [Næste trin >](walkthrough-push-data-register-app-with-azure-ad.md)
 
 ## <a name="next-steps"></a>Næste trin
 
 [Tilmeld dig Power BI](create-an-azure-active-directory-tenant.md)  
-[Introduktion til JSON](http://json.org/)  
+[Introduktion til JSON](https://json.org/)  
 [Oversigt over Power BI REST-API](overview-of-power-bi-rest-api.md)  
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

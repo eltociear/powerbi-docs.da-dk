@@ -2,20 +2,19 @@
 title: Brug Figurkort i Power BI Desktop (prøveversion)
 description: Opret relative sammenligninger mellem områder ved hjælp af Figurkort i Power BI Desktop
 author: mihart
-manager: kvivek
-ms.reviewer: ''
+ms.reviewer: amanda
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 06/24/2019
+ms.date: 11/4/2019
 ms.author: mihart
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 6543263c0e6c3395479169e8b02034e4a9c78f7b
-ms.sourcegitcommit: 3b4de8785d17c9e00b041cff7bd4d39829316437
+ms.openlocfilehash: 800f7d3cd7f930f2c3411c21e94cadb7cda94c8c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72164011"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871132"
 ---
 # <a name="shape-maps-in-power-bi-desktop-preview"></a>Figurkort i Power BI Desktop (prøveversion)
 
@@ -61,7 +60,7 @@ Gør følgende for at oprette et **figurkort**:
 3. Du kan derefter redigere kortet ved hjælp af indstillingerne for formatering, f.eks. **Standardfarve**, **Zoom** m.m. Du kan også tilføje en kolonne med kategoridata i bucket'en **Forklaring** og klassificere kortområderne baseret på kategorier.
 
 ## <a name="use-custom-maps"></a>Brug brugerdefinerede kort
-Du kan bruge brugerdefinerede kort med **Figurkort**, hvis de er i formatet **TopoJSON**. Hvis dit kort er i et andet format, kan du bruge onlineværktøjer som [**Map Shaper**](http://mapshaper.org/) til at konvertere dine *figurfiler* eller dine *GeoJSON*-kort til **TopoJSON**-format.
+Du kan bruge brugerdefinerede kort med **Figurkort**, hvis de er i formatet **TopoJSON**. Hvis dit kort er i et andet format, kan du bruge onlineværktøjer som [**Map Shaper**](https://mapshaper.org/) til at konvertere dine *figurfiler* eller dine *GeoJSON*-kort til **TopoJSON**-format.
 
 Hvis du vil bruge kortfilen **TopoJSON**, skal du tilføje visualiseringen Figurkort i din rapport og tilføje nogle data i felterne *Placering* og *Farvemætning*. Derefter skal du i ruden **Visualiseringer** kontrollere, at sektionen **Format** er markeret (som vist på følgende billede som (1)). Udvid dernæst sektionen **Figur**, og vælg **+ Tilføj kort**.
 
@@ -82,7 +81,7 @@ Du kan bruge kortene over de forskellige delstater til mange forskellige ting, o
 
 Hvis du ønsker at eksperimentere med dette datasæt og visualiseringen, kan du downloade den oprindelige PBIX-fil, der blev brugt til at generere rapporten, ved hjælp af følgende link.
 
-* [Demo af .PBIX-filen til et brugerdefineret figurkort](http://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
+* [Demo af .PBIX-filen til et brugerdefineret figurkort](https://download.microsoft.com/download/1/2/8/128943FB-9231-42BD-8A5D-5E2362C9D589/DistrictAttorneyFiscalReport.pbix)
 
 ## <a name="getting-map-data"></a>Hent kortdata
 Hvis du hurtigt vil hente data ind i en model, så du kan teste **Figurkort**, kan du kopiere en af tabellerne sidst i denne artikel og derefter vælge **Angiv data** under fanen **Hjem**.
@@ -108,7 +107,7 @@ Du skal være opmærksom på nogle få ting i forbindelse med denne prøveversio
 * Visualiseringen **Figurkort** er en prøveversion og skal aktiveres i Power BI Desktop. Du aktiverer **Figurkort** ved at vælge **Filer > Indstillinger > Indstillinger > Prøveversionsfunktioner** og derefter markere afkrydsningsfeltet **Visualiseringen Figurkort**.
 * I øjeblikket skal du også angive værdier i feltet **Farvemætning**, for at klassificeringen **Forklaring** fungerer korrekt.
 * Den sidste udgivne version af **Figurkort** vil have en brugergrænseflade, der viser kortnøgler over det aktuelt valgte kort (der er ikke fastsat nogen dato for den sidste udgivelse, og **Figurkort** er stadig en prøveversion). I denne udgivne prøveversion kan du referere til kortets områdenøgler i tabellerne, som findes i sektionen **Områdenøgler** i denne artikel.
-* Den visuelle fremstilling i **Figurkort** kan maksimal vise op til 1.000 datapunkter.
+* Visual'et i **Figurkort** kan maksimalt vise op til 1.500 datapunkter.
 
 ## <a name="region-keys"></a>Områdenøgler
 

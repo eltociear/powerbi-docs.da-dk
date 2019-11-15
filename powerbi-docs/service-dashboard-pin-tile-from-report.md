@@ -2,7 +2,6 @@
 title: Fastgør et felt til et Power BI-dashboard fra en rapport
 description: Fastgør et felt til et Power BI-dashboard fra en rapport.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: lJKgWnvl6bQ
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/23/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: b27cf80985dc1789fff5797430e4592fe361b533
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 24d706108bab274ef6aae8733f1fc11d212f13eb
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624066"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852619"
 ---
 # <a name="pin-a-tile-to-a-power-bi-dashboard-from-a-report"></a>Fastgør et felt til et Power BI-dashboard fra en rapport
 
@@ -52,7 +51,7 @@ Nu skal du oprette dit eget dashboard ved hjælp af en af Power BI-eksempelrappo
    En meddelelse om fuldførelse (i nærheden af øverste højre hjørne) informerer dig om, at visualiseringen blev føjet til dit dashboard som et felt.
    
    ![Meddelelse om fuldførelse](media/service-dashboard-pin-tile-from-report/pinsuccess.png)
-5. Vælg dashboardet med det nye felt fra navigationsruden. [Rediger feltets visning og funktion](service-dashboard-edit-tile.md), eller vælg feltet for at vende tilbage til rapporten.
+5. Vælg dashboardet med det nye felt i navigationsruden. [Rediger feltets visning og funktion](service-dashboard-edit-tile.md), eller vælg feltet for at vende tilbage til rapporten.
 
 ## <a name="pin-an-entire-report-page"></a>Fastgør en hel rapportside
 En anden mulighed er at fastgøre en hel rapportside til et dashboard, som er en nem måde at fastgøre mere end én visualisering ad gangen på. Når du fastgør en hel side, er felterne *dynamiske*. Det vil sige, at du kan interagere med dem på dashboardet. De ændringer, du foretager på visualiseringer i rapporteditoren, f.eks. ved at tilføje et filter eller ændre de felter, der bruges i diagrammet, afspejles også i dashboardfeltet.  
@@ -66,5 +65,5 @@ Du kan få mere at vide under [Fastgør en hel rapportside](service-dashboard-pi
 - [Opdatering af data i Power BI](refresh-data.md)
 - [Grundlæggende begreber for designere i Power BI-tjenesten](service-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

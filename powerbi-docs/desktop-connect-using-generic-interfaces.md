@@ -2,7 +2,6 @@
 title: Opret forbindelse til data med generiske grænseflader i Power BI Desktop
 description: Få mere at vide om, hvordan du opretter forbindelse mellem forskellige datakilder og generiske grænseflader i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 6ac121ee5154a9d343a912904b20d3244ebee59c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: b553d9341723c9b44abce57a384d4c7ba76e00a2
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513731"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73868984"
 ---
 # <a name="connect-to-data-using-generic-interfaces-in-power-bi-desktop"></a>Opret forbindelse til data med generiske grænseflader i Power BI Desktop
 Du kan oprette forbindelse til en lang række forskellige datakilder i **Power BI Desktop** ved hjælp af de indbyggede dataforbindelser, der strækker sig lige fra **Access-databaser** til **Zendesk**-ressourcer, som vist i vinduet **Hent data**. Du kan også oprette forbindelse til mange *andre* typer datakilder for at få endnu flere muligheder for at oprette forbindelse ved hjælp af de generiske grænseflader (f.eks **ODBC** eller **REST API'er**), der er indbygget i **Power BI Desktop**.
@@ -48,16 +47,16 @@ Følgende liste indeholder nogle eksempler på de datakilder, som **Power BI Des
 
 | Generisk connector i Power BI Desktop | Ekstern datakilde | Link til flere oplysninger |
 | --- | --- | --- |
-| ODBC |Cassandra |[Cassandra ODBC-driveren](http://www.simba.com/drivers/cassandra-odbc-jdbc/) |
+| ODBC |Cassandra |[Cassandra ODBC-driveren](https://www.simba.com/drivers/cassandra-odbc-jdbc/) |
 | ODBC |Couchbase DB |[Couchbase og Power BI](https://powerbi.microsoft.com/blog/visualizing-data-from-couchbase-server-v4-using-power-bi/) |
-| ODBC |DynamoDB |[DynamoDB ODBC-driveren](http://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
-| ODBC |Google BigQuery |[BigQuery ODBC-driveren](http://www.simba.com/drivers/bigquery-odbc-jdbc/) |
-| ODBC |HBase |[HBase ODBC-driveren](http://www.simba.com/drivers/hbase-odbc-jdbc/) |
-| ODBC |Hive |[Hive ODBC-driveren](http://www.simba.com/drivers/hive-odbc-jdbc/) |
+| ODBC |DynamoDB |[DynamoDB ODBC-driveren](https://www.simba.com/drivers/dynamodb-odbc-jdbc/) |
+| ODBC |Google BigQuery |[BigQuery ODBC-driveren](https://www.simba.com/drivers/bigquery-odbc-jdbc/) |
+| ODBC |Hbase |[Hbase ODBC-driveren](https://www.simba.com/drivers/hbase-odbc-jdbc/) |
+| ODBC |Hive |[Hive ODBC-driveren](https://www.simba.com/drivers/hive-odbc-jdbc/) |
 | ODBC |IBM Netezza |[IBM Netezza-oplysninger](https://www.ibm.com/support/knowledgecenter/SSULQD_7.2.1/com.ibm.nz.datacon.doc/c_datacon_plg_overview.html) |
-| ODBC |Presto |[Presto ODBC-driveren](http://www.simba.com/drivers/presto-odbc-jdbc/) |
+| ODBC |Presto |[Presto ODBC-driveren](https://www.simba.com/drivers/presto-odbc-jdbc/) |
 | ODBC |Projekt Online |[Project Online-artikel](desktop-project-online-connect-to-data.md) |
-| ODBC |Progress OpenEdge |[Blogindlæg om Progress OpenEdge ODBC-driveren](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.progress.com%2Fblogs%2Fconnect-microsoft-power-bi-to-openedge-via-odbc-driver&data=02%7C01%7CMatt.Masson%40microsoft.com%7C5e63742e6c454308b58a08d4034b5923%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636137069555329811&sdata=gSu2Rq3vZ0uBVOgjaXxd8Y3uBf%2B8DidX6PG33jwAduY%3D&reserved=0) |
+| ODBC |Progress OpenEdge |[Blogindlæg om Progress OpenEdge ODBC-driveren](https://www.progress.com/blogs/connect-microsoft-power-bi-to-openedge-via-odbc-driver) |
 
 ## <a name="data-sources-accessible-through-ole-db"></a>Datakilder, der er tilgængelige via OLE DB
 Med **OLE DB**-connectoren i **Power BI Desktop** kan du importere data fra en OLE DB-driver fra en tredjepart ved at angive en *forbindelsesstreng*. Du kan også vælge at angive en SQL-sætning, som skal køres mod OLE DB-driveren.

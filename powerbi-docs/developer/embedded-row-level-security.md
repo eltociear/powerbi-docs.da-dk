@@ -3,18 +3,17 @@ title: Brug sikkerhed på rækkeniveau med integreret Power BI-indhold
 description: Få mere at vide om, hvordan du integrerer Power BI-indhold i din app.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/10/2019
-ms.openlocfilehash: 2e7100db05b6ace0e4d530964f645e120387a8b2
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 3ef9bd001e17c472216e501c6d38907087219959
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073363"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73875810"
 ---
 # <a name="row-level-security-with-power-bi-embedded"></a>Sikkerhed på rækkeniveau med Power BI Embedded
 
@@ -33,7 +32,7 @@ Hvis du vil benytte sikkerhed på rækkeniveau, er der tre vigtige begreber, du 
 **Roller** – brugerne tilhører roller. En rolle er en objektbeholder til regler og kan have navne i stil med *Sales Manager* eller *Sales Rep*. Du opretter roller i Power BI Desktop. Du kan finde flere oplysninger i [Sikkerhed på rækkeniveau med Power BI Desktop](../desktop-rls.md).
 
 **Regler** – rollerne har regler, og reglerne er de faktiske filtre, der anvendes på dataene. Reglerne kan f.eks. være noget så simpelt som "Country = USA" eller noget, der er meget mere dynamisk.
-Resten af denne artikel indeholder et eksempel på, hvordan du opretter sikkerhed på rækkeniveau og derefter bruger det i et integreret program. Vi bruger PBIX-filen [Retail Analysis Sample](http://go.microsoft.com/fwlink/?LinkID=780547) i eksemplet.
+Resten af denne artikel indeholder et eksempel på, hvordan du opretter sikkerhed på rækkeniveau og derefter bruger det i et integreret program. Vi bruger PBIX-filen [Retail Analysis Sample](https://go.microsoft.com/fwlink/?LinkID=780547) i eksemplet.
 
 ![Eksempel på rapport](media/embedded-row-level-security/powerbi-embedded-report-example.png)
 
@@ -73,7 +72,7 @@ Sådan gør du:
 
     De data, der nu bliver vist i rapporten, er dem, der bliver vist, når du logger på som **AndrewMa**.
 
-Når du anvender filteret på den måde, som vi gjorde her, vises alle de relevante værdier fra tabellerne **District**, **Store** og **Sales**. Men på grund af filtreringsretningen for relationen mellem tabellerne **Sales** og **Time**, vises værdierne fra tabellerne **Sales** og **Item** og **Item** og **Time** ikke. Du kan få mere at vide om tovejskrydsfiltrering ved at downloade hvidbogen [Bidirectional cross-filtering in SQL Server Analysis Services 2016 and Power BI Desktop](http://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
+Når du anvender filteret på den måde, som vi gjorde her, vises alle de relevante værdier fra tabellerne **District**, **Store** og **Sales**. Men på grund af filtreringsretningen for relationen mellem tabellerne **Sales** og **Time**, vises værdierne fra tabellerne **Sales** og **Item** og **Item** og **Time** ikke. Du kan få mere at vide om tovejskrydsfiltrering ved at downloade hvidbogen [Bidirectional cross-filtering in SQL Server Analysis Services 2016 and Power BI Desktop](https://download.microsoft.com/download/2/7/8/2782DF95-3E0D-40CD-BFC8-749A2882E109/Bidirectional%20cross-filtering%20in%20Analysis%20Services%202016%20and%20Power%20BI.docx).
 
 ## <a name="applying-user-and-role-to-an-embed-token"></a>Anvend bruger og rolle for at integrere et token
 
@@ -241,7 +240,7 @@ Når du beslutter dig for at filtrere dine data i en rapport, kan du bruge **RLS
 
 [JavaScript-filtre](https://github.com/Microsoft/PowerBI-JavaScript/wiki/Filters#page-level-and-visual-level-filters) bruges til at tillade brugeren at forbruge en reduceret, omfangsangivet eller filtreret visning af dataene. Men brugeren stadig har adgang til modelskematabeller, -kolonner og -målinger og kan potentielt få adgang til alle dataene der. Begrænset dataadgang kan kun anvendes med sikkerhed på rækkeniveau og ikke via filtrerings-API'er på klientsiden.
 
-## <a name="token-based-identity-with-azure-sql-database-preview"></a>Tokenbaseret identitet med Azure SQL Database (prøveversion)
+## <a name="token-based-identity-with-azure-sql-database"></a>Tokenbaseret identitet med Azure SQL Database
 
 Den **tokenbaserede identitet** giver dig mulighed for at angive den eksisterende identitet for et indlejringstoken ved hjælp af adgangstokenet **AAD (Azure Active Directory)** til en **Azure SQL Database**.
 
@@ -332,7 +331,7 @@ Du kan ikke angive denne tilladelse ved hjælp af administrationsportalen. Denne
 * Hvis det underliggende datasæt er en cloudmodel (cachelagret model eller DirectQuery), skal den eksisterende identitet indeholde mindst én rolle, ellers tildeles der ikke en rolle.
 * En liste over identiteter gør det muligt at have flere identitetstokens ved integrering i dashboardet. For alle andre artefakter vil listen indeholde en enkelt identitet.
 
-### <a name="token-based-identity-limitations-preview"></a>Begrænsninger for tokenbaseret identitet (prøveversion)
+### <a name="token-based-identity-limitations"></a>Begrænsninger for tokenbaseret identitet
 
 * Denne funktion begrænser kun brugen sammen med Power BI Premium.
 * Denne funktion fungerer ikke sammen med SQL Server i det lokale miljø.

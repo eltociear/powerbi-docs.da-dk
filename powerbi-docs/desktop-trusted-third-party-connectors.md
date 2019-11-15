@@ -1,8 +1,7 @@
 ---
-title: Der er tillid til tredjeparts-forbindelser i Powerbi
-description: Hvordan kan have tillid til en signeret tredjeparts-connector i Power BI
+title: Tredjeparts-connectors, der er tillid til, i Power BI
+description: Sådan opnår du er tillid til en signeret tredjeparts-connector i Power BI
 author: cpopell
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,41 +9,41 @@ ms.topic: conceptual
 ms.date: 04/3/2019
 ms.author: gepopell
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 30b7457c6149320c43f24b967a842382821b01b1
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: ac3f795d6a80d5f143daf68436f41f5771b3c2bb
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65607789"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876173"
 ---
-# <a name="trusting-third-party-connectors"></a>Tillid tredjeparts-forbindelser
+# <a name="trusting-third-party-connectors"></a>Tillid til tredjeparts-connectors
 
-## <a name="why-do-you-need-trusted-third-party-connectors"></a>Hvorfor skal du har tillid til tredjeparts-connectors?
+## <a name="why-do-you-need-trusted-third-party-connectors"></a>Hvorfor har du brug for tredjeparts-connectors, der er tillid til?
 
-I Power BI, Generelt anbefales det at holde din 'udvidelse datasikkerhed' niveau på højere niveau, hvilket forhindrer indlæsning af kode, der ikke er certificeret af Microsoft. Der kan dog være mange tilfælde, hvor du vil indlæse specifikke forbindelser – dem, du har skrevet, eller dem, der er leveret til dig af en konsulent eller leverandør uden for Microsoft-certificering stien.
+I Power BI anbefaler vi generelt at bevare niveauet for "sikkerhed for dataudvidelse" på det høje niveau, hvilket forhindrer indlæsning af kode, der ikke er certificeret af Microsoft. Der kan dog være mange tilfælde, hvor du vil indlæse bestemte connectors – dem, du har skrevet, eller dem, du har fået af en konsulent eller leverandør uden for Microsoft-certificeringsstien.
 
-Udvikleren af en bestemt connector kan logge på med et certifikat og giver dig de oplysninger, skal du indlæse dem på en sikker måde uden at sænke sikkerhedsindstillingerne.
+Udvikleren af en given Connector kan signere den med et certifikat og give dig de oplysninger, du har brug for, til at indlæse den sikkert uden at sænke dine sikkerhedsindstillinger.
 
 Hvis du vil vide mere om sikkerhedsindstillingerne, kan du læse om dem [her](https://docs.microsoft.com/power-bi/desktop-connector-extensibility).
 
-## <a name="using-the-registry-to-trust-third-party-connectors"></a>Ved hjælp af registreringsdatabasen kan have tillid til tredjeparts-forbindelser
+## <a name="using-the-registry-to-trust-third-party-connectors"></a>Brug af registreringsdatabasen til at opnå tillid til tredjeparts-connectors
 
-Tillid tredjeparts-forbindelser i Power BI gøres ved at få vist aftrykket af det certifikat, du har tillid til en værdi i den angivne registreringsnøgle. Hvis dette aftryk stemmer overens med aftrykket af det certifikat på forbindelsen, du vil indlæse, vil du kunne indlæse dem i 'Anbefalet' sikkerhedsniveauet for Power BI. 
+Du opnår tillid til tredjeparts-connectors i Power BI ved at vise aftrykket af det certifikat, du vil have tillid til, i en bestemt registreringsdatabaseværdi. Hvis denne miniature matcher certifikatets aftryk på den connector, du vil indlæse, kan du indlæse den på sikkerhedsniveauet 'Anbefalet' i Power BI. 
 
-Registreringsdatabasestien til er HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Power BI Desktop. Sørg for, at stien findes, eller Opret den. Vi har valgt denne placering på grund af det er primært styres af IT-politik, samt der skal have adgang til administration af lokale computer til at redigere. 
+Stien til registreringsdatabasen er HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Power BI Desktop. Kontrollér, at stien findes, eller opret den. Vi har valgt denne placering, da den primært styres af it-politikken og kræver, at du har administrationsadgang til den lokale maskine for at redigere den. 
 
-![Angiv Power BI Desktop registreringsdatabasen med nogen der er tillid til tredjeparts-nøgler](media/desktop-trusted-third-party-connectors/desktoptrustedthird1.png)
+![Power BI Desktop-registreringsdatabasen uden angivelse af tredjepartsnøgler, der er tillid til](media/desktop-trusted-third-party-connectors/desktoptrustedthird1.png)
 
-Tilføj en ny værdi under den sti, der er angivet ovenfor. Typen skal være "Flere strengværdi" (REG_MULTI_SZ), og det skal kaldes "TrustedCertificateThumbprints" 
+Tilføj en ny værdi under den sti, der er angivet ovenfor. Typen skal være "multi-String Value" (REG_MULTI_SZ), og den skal have navnet "TrustedCertificateThumbprints" 
 
-![Power BI Desktop registreringsdatabasen med en post for der er tillid til tredjeparts-forbindelser, men ingen nøgler](media/desktop-trusted-third-party-connectors/desktoptrustedthird2.png)
+![Power BI Desktop-registreringsdatabase med en post for tredjeparts-connectors, der er tillid til, men ingen nøgler](media/desktop-trusted-third-party-connectors/desktoptrustedthird2.png)
 
-Tilføj thumbprints af de certifikater, som du har tillid til. Du kan tilføje flere certifikater ved hjælp af "\0" som en afgrænser eller i registreringsdatabasen editor, højre -> skal du klikke på Rediger og placerer hver aftryk på en ny linje. Eksempel aftryk er taget fra et selvsigneret certifikat. 
+Tilføj aftryk for de certifikater, du vil have tillid til. Du kan tilføje flere certifikater ved at bruge "\0" som en afgrænser eller ved at højreklikke > rediger i registreringseditoren og placere hvert aftryk på en ny linje. Eksempelaftryk hentes fra et selvsigneret certifikat. 
 
- ![Power BI Desktop registreringsdatabasen med tillid til tredjeparts-nøgler](media/desktop-trusted-third-party-connectors/desktoptrustedthird3.png)
+ ![Power BI Desktop-registreringsdatabasen med angivelse af tredjepartsnøgler, der er tillid til](media/desktop-trusted-third-party-connectors/desktoptrustedthird3.png)
 
-Hvis du har fulgt instruktionerne korrekt, og du har fået tildelt de korrekte aftryk af dine udvikler, bør du nu kunne sikkert trust forbindelser signeret med det tilknyttede certifikat.
+Hvis du har fulgt vejledningen korrekt og har fået det rette aftryk af udvikleren, skulle du nu kunne stole på, at der er tillid til connectors, der er signeret med det tilknyttede certifikat.
 
-## <a name="how-to-sign-connectors"></a>Sådan logger du forbindelser
+## <a name="how-to-sign-connectors"></a>Sådan signeres connectors
 
-Hvis du har en connector, du eller en udvikler, skal du logge, kan du læse om det i Power-forespørgsel dokumenter [her](https://docs.microsoft.com/power-query/handlingconnectorsigning).
+Hvis du har en connector, som du eller en udvikler skal bruge til at signere, kan du læse om det i Power Query-dokumentationen [her](https://docs.microsoft.com/power-query/handlingconnectorsigning).
