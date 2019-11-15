@@ -80,7 +80,7 @@
         - name: Standardmedlem i flerdimensionelle modeller i Power BI
           href: desktop-default-member-multidimensional-models.md
         - name: Ofte stillede spørgsmål om visualiseringer
-          href: power-bi-custom-visuals-faq.md
+          href: developer/power-bi-custom-visuals-faq.md
     - name: Sådan gør du
       items:
         - name: Hent Power BI Desktop
@@ -673,6 +673,8 @@
           items:
             - name: Opret de nye arbejdsområder
               href: service-create-the-new-workspaces.md
+            - name: Opgrader klassiske arbejdsområder
+              href: designer/service-upgrade-workspaces.md
             - name: Opret arbejdsområder
               href: service-create-workspaces.md
             - name: Publicer apps fra arbejdsområder

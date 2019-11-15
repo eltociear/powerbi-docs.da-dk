@@ -2,7 +2,6 @@
 title: Favoritter i Power BI-tjenesten (dashboards, rapporter og apps)
 description: Dokumentation om, hvordan du angiver dashboards, rapporter og apps som favoritter i Power BI-tjenesten
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/19/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 165f958cabf3eb6f3cc5c0e61b62667f891d1d48
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 48322b554a7b600bc5cadc7c40fe366c64cd8549
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256372"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852644"
 ---
 # <a name="favorite-dashboards-reports-and-apps-in-the-power-bi-service"></a>Favoritdashboards, -rapporter og -apps i Power BI-tjenesten
 Når du gør indhold til en *favorit*, kan du hurtigt få adgang til det fra indholdslisten **Favoritter** og fra **Power BI Start** > **Favoritter og hyppige**. Favoritter er typisk det indhold, du besøger ofte, og de identificeres med en gul stjerne.
@@ -62,7 +61,7 @@ Du kan også vælge et enkelt dashboard som et [Udvalgt dashboard](end-user-feat
 ## <a name="unfavorite-content"></a>Fjern markering af indhold som favorit
 Hvis du ikke længere bruger en rapport så ofte, som du plejede, kan du fjerne den fra Favoritter. Når du fjerner indhold fra Favoritter, fjernes det fra listen med dine favoritter, men ikke fra Power BI.
 
-1. Vælg **Favoritter** i venstre navigationsrude for at åbne skærmbilledet **Favoritter**.
+1. Vælg **Favoritter** i navigationsruden for at åbne skærmbilledet **Favoritter**.
    
    ![Skærmbilledet Favoritter](./media/end-user-favorite/power-bi-un-favorite.png)
 2. Vælg den gule stjerne ud for det indhold, der skal fjernes som favorit.
@@ -76,5 +75,5 @@ På nuværende tidspunkt kan du angive en app som favorit, og dermed angives all
 
 ## <a name="next-steps"></a>Næste trin
 - [Power BI: Grundlæggende begreber](end-user-basic-concepts.md)
-- Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](http://community.powerbi.com/).
+- Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](https://community.powerbi.com/).
 
