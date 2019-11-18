@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/09/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1fb775bd203fc1e0f6342a0d5cd4d9e382b8342a
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: fc983fe9027f6d94c5394d524a6417a64719a8ac
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70750930"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431699"
 ---
 # <a name="optimizing-premium-capacities"></a>Optimering af Premium-kapaciteter
 
@@ -33,7 +33,7 @@ Til sidst i denne artikel gennemgår vi testmetoder og tilpasning af størrelsen
 
 Når du forsøger at opnå den bedste udnyttelse og ydeevne, er der nogle anbefalede fremgangsmåder, herunder:
 
-- Brug af apparbejdsområder i stedet for personlige arbejdsområder.
+- Brug af arbejdsområder i stedet for personlige arbejdsområder.
 - Adskillelse af forretningskritisk og SSBI (Self-Service BI) i forskellige kapaciteter.
 
   ![Adskillelse af forretningskritisk og SSBI (Self-Service BI) i forskellige kapaciteter](media/service-premium-capacity-optimize/separate-capacities.png)

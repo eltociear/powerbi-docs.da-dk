@@ -8,15 +8,15 @@ featuredvideoid: JbL2-HJ8clE
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/08/2019
+ms.date: 10/21/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: c87a54a0e991af3faa53b9ac4ac6c92893b2ed0a
-ms.sourcegitcommit: 0e50ebfa8762e19286566432870ef16d242ac78f
+ms.openlocfilehash: d1944f139cdd7089d9465e174e554ac7df1d8bf8
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68962561"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060382"
 ---
 # <a name="data-alerts-in-the-power-bi-service"></a>Databeskeder i Power BI-tjenesten
 
@@ -24,7 +24,7 @@ Angiv beskeder, så du får besked, når dataene på dine dashboards ændres ud 
 
 Du kan angive beskeder på felter, hvis du har en Power BI Pro-licens. Du kan også angive beskeder, hvis nogen deler et dashboard, der er i en [Premium-kapacitet](service-premium-what-is.md). Der kan kun angives beskeder på felter, der er fastgjort via rapportvisualiseringer, og kun på målere, KPI'er og kort. Beskeder kan angives på visuelle elementer, der er oprettet ud fra streamingdatasæt, som du fastgør fra en rapport til et dashboard. Der kan ikke angives beskeder for streamingfelter, der er oprettet direkte på dashboardet ved hjælp af **Tilføj felt** > **Brugerdefinerede streamingdata**.
 
-Det er kun dig, der kan se de angivne beskeder, selvom du deler dashboardet. Databeskeder er fuldt synkroniseret på tværs af platforme. Angiv og få vist databeskeder [i Power BI-mobilapps](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) og i Power BI-tjenesten. De er ikke tilgængelige for Power BI Desktop. Du kan endda automatisere og integrere beskeder med Microsoft Flow. Du kan prøve det selv i denne artikel om [Microsoft Flow og Power BI](service-flow-integration.md).
+Det er kun dig, der kan se de angivne beskeder, selvom du deler dashboardet. Selv ejeren af dashboardet kan ikke se de vigtige beskeder, du angiver for din visning af deres dashboard. Databeskeder er fuldt synkroniseret på tværs af platforme. Angiv og få vist databeskeder [i Power BI-mobilapps](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md) og i Power BI-tjenesten. De er ikke tilgængelige for Power BI Desktop. Du kan endda automatisere og integrere beskeder med Microsoft Flow. Du kan prøve det selv i denne artikel om [Microsoft Flow og Power BI](service-flow-integration.md).
 
 ![felter](media/service-set-data-alerts/powerbi-alert-types-new.png)
 
@@ -116,15 +116,13 @@ Der er mange måder at administrere dine beskeder på:
 
 1. Her kan du slå beskeder til og fra, åbne vinduet **Administrer beskeder** for at ændre eller slette beskeden.
 
-## <a name="tips-and-troubleshooting"></a>Tip og fejlfinding
+## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 
 * Beskeder understøttes ikke for kortfelter med målinger for dato/klokkeslæt.
-
 * Beskeder fungerer kun i forbindelse med numeriske datatyper.
-
 * Beskeder fungerer kun for opdaterede data. De fungerer ikke med statiske data.
-
 * Beskeder fungerer kun i forbindelse med streamingdatasæt, hvis du opretter en rapportvisualisering for KPI/kort/måler og derefter fastgør visualiseringen til dashboardet.
+
 
 ## <a name="next-steps"></a>Næste trin
 
@@ -132,6 +130,6 @@ Der er mange måder at administrere dine beskeder på:
 
 * [Angiv databeskeder på din mobilenhed](consumer/mobile/mobile-set-data-alerts-in-the-mobile-apps.md).
 
-* [Hvad er Power BI?](power-bi-overview.md)
+* [Hvad er Power BI?](fundamentals/power-bi-overview.md)
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)

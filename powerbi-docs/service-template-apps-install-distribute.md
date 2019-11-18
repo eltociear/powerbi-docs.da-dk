@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: tebercov
-ms.openlocfilehash: 660fd7c623e8a195f937a3a2b468f758986411e1
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 4db4fbc0dd34ae558514058e0aa7af0a704d8411
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195272"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432333"
 ---
 # <a name="install-and-distribute-template-apps-in-your-organization---power-bi"></a>Installér og distribuer skabelonprogrammer i din organisation – Power BI
 
@@ -57,7 +57,7 @@ Vælg dette link for at åbne AppSource, der er filtreret efter Power BI-program
 
 4. Vælg **Installér** i dialogboksen.
 
-    ![Installér app](media/service-template-apps-install-distribute/power-install-dialog.png) Hvis du har en Power BI Pro-licens, er programmet installeret med dets tilknyttede programarbejdsområde. Du kan tilpasse programmet i det tilknyttede arbejdsområde.
+    ![Installér app](media/service-template-apps-install-distribute/power-install-dialog.png) Hvis du har en Power BI Pro-licens, installeres appen med dets tilknyttede arbejdsområde. Du kan tilpasse programmet i det tilknyttede arbejdsområde.
 
     Når installationen er fuldført, får du vist en meddelelse om, at dit nye program er klar.
 4. Vælg **Gå til program**.
@@ -71,7 +71,7 @@ Vælg dette link for at åbne AppSource, der er filtreret efter Power BI-program
 
     Eller du kan springe denne dialogboks over og få adgang til det tilknyttede arbejdsområde direkte via **Arbejdsområder** i navigationsruden til venstre.
     >[!NOTE]
-    >Installation af en skabelonapp installerer både en *organisationsapp* og et *apparbejdsområde*. Læs mere om [distribution af apps i Power BI](service-create-distribute-apps.md).
+    >Når du installerer en skabelonapp, installeres der både en *organisationsapp* og et *arbejdsområde*. Læs mere om [distribution af apps i Power BI](service-create-distribute-apps.md).
  
 6. Før du deler den med dine kolleger, er det en god idé at oprette forbindelse til dine egne data. Det kan også være en god idé at redigere rapporten eller dashboardet, så de fungerer for din organisation. På dette tidspunkt kan du også tilføje andre rapporter eller dashboards.
 

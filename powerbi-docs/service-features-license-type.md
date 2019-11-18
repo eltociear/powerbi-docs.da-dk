@@ -1,8 +1,7 @@
 ---
 title: Funktioner i Power BI-tjenesten efter licenstype
-description: 'I Power BI-tjenesten har brugerne definerede funktioner, der er baseret på to typer licenser: pr. bruger (gratis og Pro) og kapacitetsbaseret.'
+description: I Power BI-tjenesten har brugere defineret egenskaber baseret på den type licens pr. bruger, de har (Free eller Pro), og om det indhold, de interagerer med, befinder sig i et arbejdsområde, der er tildelt en Power BI Premium-kapacitet.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -11,12 +10,12 @@ ms.date: 12/06/2018
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Get started
-ms.openlocfilehash: 6f44f4b382dacf3850cc5b3aa67f712a607468a6
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 47070a7e215235826a35ba777683c2114ba612ec
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65554427"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881790"
 ---
 # <a name="power-bi-service-features-by-license-type"></a>Funktioner i Power BI-tjenesten efter licenstype
 
@@ -37,7 +36,7 @@ Her er en liste over understøttede funktioner efter licenstypen Pr. bruger.
 | Integration af API'er og kontrolelementer |![Funktionen er ikke tilgængelig](media/features-license-type/not-available.png) |![Funktionen er tilgængelig](media/features-license-type/available.png) |
 | **Samarbejde** | | |
 | Peer-to-peer-deling |![Funktionen er ikke tilgængelig](media/features-license-type/not-available.png) |![Funktionen er tilgængelig](media/features-license-type/available.png) |
-| Apparbejdsområder |![Funktionen er ikke tilgængelig](media/features-license-type/not-available.png) |![Funktionen er tilgængelig](media/features-license-type/available.png) |
+| Arbejdsområder |![Funktionen er ikke tilgængelig](media/features-license-type/not-available.png) |![Funktionen er tilgængelig](media/features-license-type/available.png) |
 | Analysér i Excel, analysér i Power BI Desktop |![Funktionen er ikke tilgængelig](media/features-license-type/not-available.png) |![Funktionen er tilgængelig](media/features-license-type/available.png) |
 
 ## <a name="next-steps"></a>Næste trin

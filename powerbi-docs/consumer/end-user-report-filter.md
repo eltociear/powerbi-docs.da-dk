@@ -2,23 +2,24 @@
 title: Få en rundvisning af ruden Rapportfiltre
 description: Sådan tilføjer du et filter i en rapport i Power BI-tjenesten for forbrugere
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 09/04/2019
+ms.date: 10/22/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: a1dee67279e6f43c0ff8008338f7b8a9f5a2d41a
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: af784c772ddbdd895f7e6c576d91d4e2fec8ffeb
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70841036"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862056"
 ---
 # <a name="take-a-tour-of-the-report-filters-pane"></a>Få en præsentation af ruden Rapportfiltre
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 I denne artikel ser vi nærmere på ruden **Filtre** i rapporter i Power BI-tjenesten. Brug filtre for at få ny indsigt i dine data.
 
@@ -34,11 +35,14 @@ Når en kollega deler en rapport med dig, skal du søge efter ruden **Filtre**. 
 
 Ruden **Filtre** indeholder filtre, der er tilføjet i rapporten af rapportens *designer*. *Forbrugere* som dig selv kan interagere med de eksisterende filtre og gemme ændringer, men forbrugere kan ikke tilføje nye filtre i rapporten. På ovenstående skærmbillede har designeren f.eks. tilføjet tre filtre på sideniveau: **Segment er Alle**, **År er 2014** og **Område er Central**. Du kan interagere med og ændre disse filtre, men du kan ikke tilføje et filter på et fjerde sideniveau.
 
-I Power BI-tjenesten beholder rapporter eventuelle ændringer, du foretager i ruden **Filtre**. Tjenesten overfører også disse ændringer til mobilversionen af rapporten.
+I Power BI-tjenesten beholder rapporter eventuelle ændringer, du foretager i ruden **Filtre**. Tjenesten overfører også disse ændringer til mobilversionen af rapporten. 
 
 Hvis du vil nulstille ruden **Filtre** til designerens standarder, skal du vælge **Nulstil til standard** i den øverste menulinje.
 
 ![Skærmbillede af ikonet Nulstil til standard.](media/end-user-report-filter/power-bi-reset-icon.png) 
+
+> [!NOTE]
+> Hvis du ikke kan se indstillingen **Nulstil til standard**, kan den være deaktiveret af *rapportdesigneren*. *Designeren* kan også låse bestemte filtre, så du ikke kan ændre dem.
 
 ## <a name="view-all-the-filters-for-a-report-page"></a>Vis alle filtrene for en rapportside
 

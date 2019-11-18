@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: tutorial
 ms.date: 11/06/2018
-ms.openlocfilehash: 44af74b722e5d21c7475a382f8097f453854230d
-ms.sourcegitcommit: 797bb40f691384cb1b23dd08c1634f672b4a82bb
+ms.openlocfilehash: 59d3f943ff893024beceff59ce3d0db6bc4d764b
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66839740"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431681"
 ---
 # <a name="tutorial-create-a-paginated-report-and-upload-it-to-the-power-bi-service"></a>Selvstudium: Opret en sideinddelt rapport, og upload den til Power BI-tjenesten
 
@@ -22,7 +22,7 @@ I dette selvstudium kan du oprette forbindelse til et eksempel på en Azure SQL-
 
 ![Sideinddelt rapport i Power BI-tjenesten](media/paginated-reports-quickstart-aw/power-bi-paginated-report-service.png)
 
-Her er de trin, du fuldfører i dette selvstudium:
+Her er de trin, du har fuldført i dette selvstudium:
 
 > [!div class="checklist"]
 > * Oprette et eksempel på en Azure-database.
@@ -44,7 +44,7 @@ Her er forudsætningerne for oprettelse af den sideinddelte rapport:
 Her er forudsætningerne for at overføre din sideinddelte rapport til Power BI-tjenesten:
 
 - Du skal bruge en [licens til Power BI Pro](service-admin-power-bi-pro-in-your-organization.md).
-- Du skal bruge et apparbejdsområde på tjenesten i en [Power BI Premium-kapacitet](service-premium-what-is.md). Den har rombeikonet ![Premium-rombeikon](media/paginated-reports-quickstart-aw/premium-diamond.png) ved siden af navnet på arbejdsområdet.
+- Du skal bruge et arbejdsområde i tjenesten i en [Power BI Premium-kapacitet](service-premium-what-is.md). Den har rombeikonet ![Premium-rombeikon](media/paginated-reports-quickstart-aw/premium-diamond.png) ved siden af navnet på arbejdsområdet.
 
 ## <a name="create-the-matrix-with-a-wizard"></a>Opret matrixen ved hjælp af en guide
   
@@ -287,7 +287,7 @@ Yderligere en forbedring af formateringen, inden du publicerer rapporten til Pow
 
 Nu, hvor du har oprettet denne sideinddelte rapport, er det tid til at uploade den til Power BI-tjenesten.
 
-1. I venstre navigationsrude http://app.powerbi.com) i Power BI-tjenesten skal du vælge **Arbejdsområder** > **Opret apparbejdsområde**.
+1. I Power BI-tjenesten (http://app.powerbi.com) i navigationen til venstre skal du vælge **Arbejdsområder** > **Opret arbejdsområde**.
 
 2. Navngiv dit arbejdsområde **Azure AW** eller et andet entydigt navn. Du er indtil videre det eneste medlem. 
 

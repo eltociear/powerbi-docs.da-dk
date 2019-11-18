@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 5a4c385b9c8e8a28de3b9a5e1dd84651f87ef000
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 80d878cc5a8ed0df294b99390fb87d8099bfccb5
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543040"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431322"
 ---
 # <a name="basic-concepts-for-designers-in-the-power-bi-service"></a>Grundlæggende begreber for designere i Power BI-tjenesten
 
@@ -48,10 +48,10 @@ Vi vil gå i dybden med disse funktioner senere, men lad os først se på nogle 
 De fire overordnede elementer i Power BI er: **_dashboards_** , **_rapporter_** , **_projektmapper_** og **_datasæt_** . Og de er alle organiseret i **_arbejdsområder_** . Det er vigtigt at forstå arbejdsområderne, før vi går videre til de fire overordnede elementer, så lad os starte der.
 
 ## <a name="workspaces"></a>Arbejdsområder
-Arbejdsområder er objektbeholdere til dashboards, rapporter, projektmapper og datasæt i Power BI. Der er to typer arbejdsområder: *Mit arbejdsområde* og *apparbejdsområder*. Hvad er en *app*? En *app* i Power BI er en samling dashboards og rapporter, der er bygget til at levere vigtige metrikker til Power BI-slutbrugerne i organisationen. Apps er interaktive, men slutbrugerne kan ikke redigere dem.
+Arbejdsområder er objektbeholdere til dashboards, rapporter, projektmapper og datasæt i Power BI. Der er to typer arbejdsområder: *Mit arbejdsområde* og *arbejdsområder*. Hvad er en *app*? En *app* i Power BI er en samling dashboards og rapporter, der er bygget til at levere vigtige metrikker til Power BI-slutbrugerne i organisationen. Apps er interaktive, men slutbrugerne kan ikke redigere dem.
 
-- *Mit arbejdsområde* er et personligt arbejdsområde til Power BI-kunder, hvor de kan arbejde med dit indhold. Kun du har adgang til dit Mit arbejdsområde. Du kan dele dashboards og rapporter fra Mit arbejdsområde. Hvis du vil samarbejde om dashboards og rapporter eller oprette en app, skal du arbejde i et apparbejdsområde.      
--  *Apparbejdsområder* bruges til at samarbejde og dele indhold med kolleger. Det er også de steder, hvor du opretter, publicerer og administrerer apps for din organisation. De er en form for midlertidige områder og beholdere for det indhold, der udgør en Power BI-app. Du kan føje kolleger til dine apparbejdsområder og samarbejde om dashboards, rapporter, projektmapper og datasæt. Alle medlemmer af apparbejdsområdet skal have Power BI Pro-licenser. Appforbrugere (dvs. de kolleger, der har adgang til appsene) behøver ikke nødvendigvis at have Pro-licenser. Læs mere om de [nye arbejdsområder](service-create-the-new-workspaces.md).  
+- *Mit arbejdsområde* er et personligt arbejdsområde til Power BI-kunder, hvor de kan arbejde med dit indhold. Kun du har adgang til dit Mit arbejdsområde. Du kan dele dashboards og rapporter fra Mit arbejdsområde. Hvis du vil samarbejde om dashboards og rapporter eller oprette en app, skal du arbejde i et arbejdsområde.      
+-  *Arbejdsområder* bruges til at samarbejde og dele indhold med kolleger. Det er også de steder, hvor du opretter, publicerer og administrerer apps for din organisation. De er en form for midlertidige områder og beholdere for det indhold, der udgør en Power BI-app. Du kan føje kolleger til dine arbejdsområder og samarbejde om dashboards, rapporter, projektmapper og datasæt. Alle medlemmer af arbejdsområdet skal have Power BI Pro-licenser. Appforbrugere (dvs. de kolleger, der har adgang til appsene) behøver ikke nødvendigvis at have Pro-licenser. Læs mere om de [nye arbejdsområder](service-create-the-new-workspaces.md).  
 
 Hvis du vil vide mere om deling generelt, kan du starte med [Måder at dele dashboards for dit arbejde på](service-how-to-collaborate-distribute-dashboards-reports.md).
 
@@ -62,7 +62,7 @@ Et *datasæt* er en samling af data, som du *importerer* eller *opretter forbind
 
 Datasæt er knyttet til *arbejdsområder*, og et enkelt datasæt kan være en del af mange arbejdsområder. Når du åbner et arbejdsområde, vises de tilknyttede datasæt under fanen **Datasæt**. Hvert angivet datasæt repræsenterer en enkelt datakilde, f.eks. en Excel-projektmappe på OneDrive, et lokalt SSAS-tabeldatasæt eller et Salesforce-datasæt. Der er mange forskellige understøttede datakilder, og vi tilføjer hele tiden nye. Se listen over [typer af datasæt, du kan bruge med Power BI](service-get-data.md).
 
-I eksemplet nedenfor har jeg valgt apparbejdsområdet "Salg og marketing" og klikket på fanen for **datasæt**.
+I eksemplet nedenfor har jeg valgt arbejdsområdet "Salg og marketing" og klikket på fanen for **datasæt**.
 
 ![Datasæt er valgt](media/service-basic-concepts/power-bi-datasets.png)
 
@@ -96,7 +96,7 @@ Når du åbner en app, får du vist et dashboard.  Du kan få adgang til en unde
 
 Rapporten åbnes som standard i Læsevisning.  Du skal blot vælge **Rediger rapport** for at åbne den i Redigeringsvisning (hvis du har de nødvendige tilladelser).
 
-I eksemplet nedenfor har jeg valgt apparbejdsområdet "Salg og marketing" og klikket på fanen for **rapporter**.
+I eksemplet nedenfor har jeg valgt arbejdsområdet "Salg og marketing" og klikket på fanen for **rapporter**.
 
 ![Valgte rapporter](media/service-basic-concepts/power-bi-reports.png)
 
@@ -224,7 +224,7 @@ Dette område på skærmen indeholder flere indstillinger til at interagere med 
    ![Navngivne ikonknapper](media/service-basic-concepts/power-bi-labeled-icons.png)
 
 ## <a name="next-steps"></a>Næste trin
-- [Hvad er Power BI?](power-bi-overview.md)  
+- [Hvad er Power BI?](fundamentals/power-bi-overview.md)  
 - [Power BI-videoer](videos.md)  
 - [Rapporteditoren – få en introduktion](service-the-report-editor-take-a-tour.md)
 

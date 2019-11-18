@@ -7,15 +7,15 @@ ms.reviewer: lukaszp
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/02/2018
+ms.date: 10/23/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e54750d928918fd77c2bf93577cf1d3d0634ca97
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: c5f56df51a1f18db7c2080afb79f4ac7abfb2444
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020612"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431733"
 ---
 # <a name="intro-to-organizational-content-packs-in-power-bi"></a>Introduktion til organisationsindholdspakker i Power BI
 > [!NOTE]
@@ -26,7 +26,7 @@ Distribuerer du jævnligt rapporter via mail til dit team? Prøv dette i stedet:
 
 ![](media/service-organizational-content-pack-introduction/power-bi-org-content-packs.png)
 
-Oprettelse af indholdspakker adskiller sig fra deling af dashboards eller samarbejde om dem i et apparbejdsområde. Læs [Hvordan kan jeg samarbejde på og dele dashboards og rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md) for at finde det bedste valg til din situation. 
+Oprettelse af indholdspakker adskiller sig fra deling af dashboards eller samarbejde om dem i et arbejdsområde. Læs [Hvordan kan jeg samarbejde på og dele dashboards og rapporter?](service-how-to-collaborate-distribute-dashboards-reports.md) for at finde det bedste valg til din situation. 
 
 I AppSource kan du gennemse eller søge efter indholdspakker, der er publiceret til hele organisationen, til distribution eller sikkerhedsgrupper og til [Office 365-grupper, du er medlem af](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). Hvis du ikke er medlem af en bestemt gruppe, kan du ikke se indholdspakker, som er delt med denne gruppe. Alle medlemmer af gruppen har samme skrivebeskyttede adgang til indholdspakkens data, rapporter, projektmapper og dashboards (medmindre det er en SSAS-datakilde (SQL Server Analysis Services), hvorved dine rettigheder nedarves sammen med datakilden).
 
@@ -50,7 +50,7 @@ Livscyklus ser noget nær således ud:
 1. I Power BI Pro opretter Nate en indholdspakke og publicerer den til distributionsgruppen Marketing. Indstillingerne for opdatering nedarves i datasættet og kan kun ændres af Nate.
    
    > [!NOTE]
-   > Hvis Nate opretter indholdspakken inde fra et [apparbejdsområde i Power BI](service-create-distribute-apps.md), som han hører til, så kan andre i Power BI-arbejdsområdet overtage ejerskabet, selvom Nate forlader arbejdsområdet.
+   > Hvis Nate opretter indholdspakken inde fra et [Power BI-arbejdsområde](service-create-distribute-apps.md), som han hører til, så kan andre i Power BI-arbejdsområdet overtage ejerskabet, også selvom Nate forlader arbejdsområdet.
    > 
    > 
 2. Nate sender mails til distributionsgruppen, hvor han fortæller dem om den nye indholdspakke.
@@ -58,7 +58,7 @@ Livscyklus ser noget nær således ud:
 4. Måske ønsker Jane at tilpasse det. Jane har nu sin egen kopi af dashboardet og rapporterne. Janes arbejde påvirker ikke kilden, den oprindelige indholdspakke eller andre medlemmer af distributionsgruppen. De arbejder nu på hver sin kopi af dashboardet og rapporten.
 5. Nate foretager opdateringer af dashboardet, og når det er klar, publicerer han en ny version af indholdspakken.
    
-   * Julio, som også er medlem af distributionsgruppen, har ikke tilpasset den oprindelige indholdspakke. De nye ændringer anvendes automatisk på Janes version af indholdspakken.  
+   * Julio, som også er medlem af distributionsgruppen, har ikke tilpasset den oprindelige indholdspakke. De nye ændringer anvendes automatisk på Julios version af indholdspakken.  
    * Jane tilpassede indholdspakken. Jane modtager derefter en meddelelse om, at der er en ny version.  Jane kan gå til AppSource og hente den opdaterede indholdspakke uden at miste sin personligt tilpassede version. Jane har nu to versioner: den personligt tilpassede version og den opdaterede indholdspakke.
 6. Nu ændrer Nate sikkerhedsindstillingerne. Julio og Jane har ikke længere adgang til indholdet. Det kan også være, at de bliver fjernet fra distributionsgruppen Marketing.
    

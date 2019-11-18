@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 1e4d589702bb471a2abc6af9448a6846825adbfe
-ms.sourcegitcommit: c0f4d00d483121556a1646b413bab75b9f309ae9
+ms.openlocfilehash: df3c8b33de32bb9dd42507cc7bb601cee9f6e575
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160361"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432008"
 ---
 # <a name="connect-azure-data-lake-storage-gen2-for-dataflow-storage-preview"></a>Tilslut Azure Data Lake Storage Gen2 for at få et dataflowlager (prøveversion)
 
@@ -183,7 +183,7 @@ Der er også nogle få kendte problemer, som beskrevet i dette afsnit.
 
 Power BI Desktop-kunder kan ikke få adgang til dataflow, der er gemt på en **Azure Data Lake Storage-konto**, medmindre de er ejer af dataflowet, eller de er godkendt til CDM-mappen i den pågældende lake. Scenariet er som følger:
 
-1. Anna har oprettet et nyt apparbejdsområde og konfigureret det til at gemme dataflow i organisationens data lake. 
+1. Anna har oprettet et nyt arbejdsområde og konfigureret det til at gemme dataflow i organisationens datasø. 
 2. Ben, der også er medlem af det arbejdsområde, Anna har oprettet, vil gerne bruge Power BI Desktop og dataflowconnectoren til at hente data fra det dataflow, Anna har oprettet.
 3. Ben får vist en lignende fejl, fordi han ikke er godkendt til dataflowets CDM-mappe i søen.
 

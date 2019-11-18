@@ -1,19 +1,19 @@
 ---
 title: Eksempler på udtryk i Power BI Report Builder
 description: Udtryk bruges ofte i sideinddelte rapporter i Power BI Paginated Report Builder til at styre indhold og rapportens udseende.
-ms.date: 06/06/2019
+ms.date: 10/21/2019
 ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 9f3131749a484380a1352d39ae35ea409f6dc697
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: 06847956eae4dfefc7cff75b5a360fbb8b892c39
+ms.sourcegitcommit: d173e22f5a3e76717adfaa573ea391bde0338ffe
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68624141"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728558"
 ---
 # <a name="expression-examples-in-power-bi-report-builder"></a>Eksempler på udtryk i Power BI Report Builder
 Udtryk bruges ofte i sideinddelte rapporter i Power BI Paginated Report Builder til at styre indhold og rapportens udseende. Udtryk er skrevet i Microsoft Visual Basic, og du kan bruge indbyggede funktioner, brugerdefinerede kode, rapport- og gruppevariabler samt brugerdefinerede variabler. Udtryk begynder med et lighedstegn (=).   
@@ -35,7 +35,7 @@ Dette emne indeholder eksempler på udtryk, der kan bruges til almindelige opgav
 Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge udtryk, og de referencetyper, du kan inkludere i et udtryk, i emnerne under [Udtryk i Power BI Report Builder](report-builder-expressions.md). 
   
 ## <a name="functions"></a>Funktioner  
- Mange udtryk i en rapport indeholder funktioner. Du kan formatere data, anvende logik og få adgang til rapportmetadata ved hjælp af disse funktioner. Du kan skrive udtryk, der bruger funktioner, via kørselsbiblioteket i Microsoft Visual Basic samt via navneområderne `xref:System.Convert` og `xref:System.Math`. Du kan føje referencer til funktioner fra andre assemblies eller brugerdefineret kode. Du kan også bruge klasser fra Microsoft .NET Framework, herunder `xref:System.Text.RegularExpressions`.  
+ Mange udtryk i en rapport indeholder funktioner. Du kan formatere data, anvende logik og få adgang til rapportmetadata ved hjælp af disse funktioner. Du kan skrive udtryk, der bruger funktioner, via kørselsbiblioteket i Microsoft Visual Basic samt via navneområderne `xref:System.Convert` og `xref:System.Math`. Du kan føje referencer til funktioner i brugerdefineret kode. Du kan også bruge klasser fra Microsoft .NET Framework, herunder `xref:System.Text.RegularExpressions`.  
   
 ##  <a name="VisualBasicFunctions"></a> Funktioner i Visual Basic  
  Du kan bruge funktioner i Visual Basic til at håndtere de data, der vises i tekstfelter, eller der bruges til parametre, egenskaber eller andre områder af rapporten. Dette afsnit indeholder eksempler, der demonstrerer nogle af disse funktioner. Du kan finde flere oplysninger i [Medlemmer af kørselsbiblioteket i Visual Basic](https://go.microsoft.com/fwlink/?LinkId=198941) på MSDN.  
@@ -476,7 +476,7 @@ Du kan finde flere oplysninger om simple og komplekse udtryk, hvor du kan bruge 
     ```  
   
 ##  <a name="CustomCode"></a> Brugerdefineret kode  
- Du kan bruge brugerdefineret kode i en rapport. Brugerdefineret kode er enten integreret i en rapport eller gemt i en brugerdefineret assembly, som bruges i rapporten.  
+ Du kan bruge brugerdefineret kode integreret i en rapport. 
   
 ### <a name="using-group-variables-for-custom-aggregation"></a>Brug af gruppevariabler til brugerdefineret aggregering  
  Du kan initialisere værdien for en gruppevariabel, der er lokal for et bestemt gruppeområde, og derefter inkludere en reference til denne variabel i udtryk. En af de måder, du kan bruge gruppevariabler med brugerdefineret kode på, er ved at implementere en brugerdefineret aggregat. 

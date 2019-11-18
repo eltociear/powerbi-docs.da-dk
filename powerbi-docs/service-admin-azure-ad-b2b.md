@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 8b7327a7b32aacd222efc422263187f29285bd73
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 8de1b483f31a540cf27a89d94167d919a2a85e95
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075765"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431437"
 ---
 # <a name="distribute-power-bi-content-to-external-guest-users-with-azure-ad-b2b"></a>Distribuer Power BI-indhold til eksterne gæstebrugere med Azure AD B2B
 
@@ -81,7 +81,7 @@ Når du bruger funktionen [Tillad, at eksterne gæstebrugere kan redigere og adm
 
 ### <a name="use-power-bi-premium"></a>Brug Power BI Premium
 
-Tildeling af apparbejdsområdet til [Power BI Premium-kapacitet](service-premium-what-is.md) giver gæstebrugeren mulighed for at bruge appen uden at have en Power BI Pro-licens. Med Power BI Premium kan apps også drage fordel af andre funktioner, f.eks. øget opdateringshastighed, dedikeret kapacitet og store modelstørrelser.
+Tildeling af arbejdsområdet til [Power BI Premium-kapacitet](service-premium-what-is.md) giver gæstebrugeren mulighed for at bruge appen uden at have en Power BI Pro-licens. Med Power BI Premium kan apps også drage fordel af andre funktioner, f.eks. øget opdateringshastighed, dedikeret kapacitet og store modelstørrelser.
 
 ![Diagram over gæstebrugerens oplevelse med Power BI Premium.](media/service-admin-azure-ad-b2b/license-approach-1.png)
 
@@ -113,6 +113,8 @@ Du kan hjælpe disse brugere med at logge på Power BI ved at give dem lejerens 
 
 * Med ekstern Azure AD B2B begrænses gæster som standard til udelukkende at kunne forbruge indhold. Eksterne Azure AD B2B-gæster kan få vist apps, dashboards og rapporter samt eksportere data og oprette mailabonnementer på dashboards og rapporter. De kan ikke få adgang til arbejdsområder eller udgive deres eget indhold. Disse begrænsninger gælder dog ikke for gæstebrugere, der får adgang via funktionen [Tillad, at eksterne gæstebrugere kan redigere og administrere indhold i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization).
 
+* Hvis du vil invitere gæstebrugere, kræves der en Power BI Pro licens. Brugere af Pro-prøveversioner kan ikke invitere gæstebrugere til Power BI.
+
 * De gæstebrugere, der får adgang via funktionen [Tillad, at eksterne gæstebrugere kan redigere og administrere indhold i organisationen](service-admin-portal.md#allow-external-guest-users-to-edit-and-manage-content-in-the-organization) har dog ikke adgang til alle funktioner. Hvis de skal opdatere eller publicere rapporter, skal de bruge Power BI-tjenestens webgrænseflade, herunder Hent Data for at overføre Power BI Desktop-filer.  Følgende funktioner understøttes ikke:
     * Direkte publicering fra Power BI Desktop til Power BI-tjenesten.
     * Gæstebrugere kan ikke bruge Power BI Desktop til at oprette forbindelse til tjenestedatasæt i Power BI-tjenesten
@@ -127,7 +129,12 @@ Du kan hjælpe disse brugere med at logge på Power BI ved at give dem lejerens 
     * Gæstebrugere kan ikke anvende Analysér i Excel
     * Gæstebrugere må ikke være @mentioned i kommentarer
     * Gæstebrugere kan ikke bruge abonnementer
-    * Gæstebrugere, der bruger denne funktion, skal have en arbejds- eller skolekonto. Der er flere begrænsninger for de gæstebrugere, der bruger personlige konti, på grund af logonbegrænsninger.
+    * Gæstebrugere, der bruger denne funktion, skal have en arbejds- eller skolekonto. 
+    
+* Der er flere begrænsninger for de gæstebrugere, der bruger personlige konti, på grund af logonbegrænsninger.
+    * De kan bruge forbrugsoplevelser i Power BI-tjenesten via en webbrowser
+    * De kan ikke bruge apps til Power BI – Mobil.
+    * De kan ikke logge på for at angive legitimationsoplysninger, hvor der kræves en arbejds- eller skolekonto.
 
 * Denne funktion er i øjeblikket ikke tilgængelig med rapportwebdelen til Power BI SharePoint Online.
 

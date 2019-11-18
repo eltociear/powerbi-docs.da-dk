@@ -2,7 +2,6 @@
 title: Udskriv fra Power BI-tjenesten
 description: Udskriv et dashboard, et felt eller en rapportside fra Power BI-tjenesten.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 4e211677026d66b89631063cf07e38ce1e46ee10
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: ec633b5e41936363663736807979dc08f50820b1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100171"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73862779"
 ---
 # <a name="printing-from-the-power-bi-service"></a>Udskriv fra Power BI-tjenesten
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Udskriv et helt dashboard, et dashboardfelt, en rapportside eller en rapportvisualisering fra Power BI-tjenesten. Rapporter kan kun udskrives med én side ad gangen – du kan ikke udskrive hele rapporten på en gang.
 
    > [!NOTE]
@@ -37,7 +39,7 @@ Udskriv et helt dashboard, et dashboardfelt, en rapportside eller en rapportvisu
 
 ## <a name="print-a-dashboard-tile"></a>Udskriv et dashboardfelt
 1. Åbn dashboardet i [fuldskærmstilstand](end-user-focus.md) ved at vælge ikonet for fuld skærm ![fuldskærmsikon](./media/end-user-print/power-bi-full-screen-icon.png) på menulinjen foroven.
-3. [Åbn feltet i fokustilstand](end-user-focus.md) ved at holde musen over for at få vist ellipsen (...) og vælge **Åbn i fokustilstand** eller ikonet Fokus ![fokusikon](./media/end-user-print/power-bi-focus-icon.png).
+3. [Åbn feltet i Fokustilstand](end-user-focus.md) ved at holde over det for at få vist **Flere indstillinger** (...), og vælg **Åbn i Fokustilstand** eller ikonet for fokus![ikonet Fokus](./media/end-user-print/power-bi-focus-icon.png).
    
     ![ellipsemenu](./media/end-user-print/power-bi-menu-options.png)
 4. Peg på feltet for at få vist menuen Indstillinger.
@@ -79,5 +81,5 @@ Rapporter kan udskrives med én side ad gangen.
 ## <a name="next-steps"></a>Næste trin
 [Del dashboards og rapporter med kollegaer og andre](../service-share-dashboards.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

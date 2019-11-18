@@ -2,7 +2,6 @@
 title: 'Selvstudium: Opret beregnede kolonner i Power BI Desktop'
 description: 'Selvstudium: Opret beregnede kolonner i Power BI Desktop'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 6974e0eccd8c16bdb06a050873e40f1a5be6f75f
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 4c1f6985a2ff88fa9ca595ad68456eed7a55c82e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514551"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876135"
 ---
 # <a name="tutorial-create-calculated-columns-in-power-bi-desktop"></a>Selvstudium: Opret beregnede kolonner i Power BI Desktop
 
@@ -28,7 +27,7 @@ I dette selvstudium lærer du, hvordan du kan oprette beregnede kolonner og brug
 ### <a name="prerequisites"></a>Forudsætninger
 - Denne artikel er beregnet til Power BI-brugere, som allerede har erfaring med Power BI Desktop, så de kan oprette mere avancerede modeller. Du bør allerede have kendskab til at bruge **Hent data** og **Forespørgselseditor** til at importere data, arbejde med flere relaterede tabeller og tilføje felter på dit rapportcanvas. Hvis du ikke har erfaring med Power BI Desktop, skal du se [Introduktion til Power BI Desktop](desktop-getting-started.md).
   
-- I selvstudiet bruges [Contoso Sales Sample for Power BI Desktop](http://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), som er det samme eksempel, der bruges i selvstudiet [Opret dine egne målinger i Power BI Desktop](desktop-tutorial-create-measures.md). Disse salgsdata fra det fiktive firma Contoso, Inc. blev importeret fra en database, så du behøver ikke at oprette forbindelse til datakilden eller se den i Forespørgselseditor. Download og udpak filen på din computer, og åbn den derefter i Power BI Desktop.
+- I selvstudiet bruges [Contoso Sales Sample for Power BI Desktop](https://download.microsoft.com/download/4/6/A/46AB5E74-50F6-4761-8EDB-5AE077FD603C/Contoso%20Sales%20Sample%20for%20Power%20BI%20Desktop.zip), som er det samme eksempel, der bruges i selvstudiet [Opret dine egne målinger i Power BI Desktop](desktop-tutorial-create-measures.md). Disse salgsdata fra det fiktive firma Contoso, Inc. blev importeret fra en database, så du behøver ikke at oprette forbindelse til datakilden eller se den i Forespørgselseditor. Download og udpak filen på din computer, og åbn den derefter i Power BI Desktop.
 
 ## <a name="create-a-calculated-column-with-values-from-related-tables"></a>Opret en beregnet kolonne med værdier fra relaterede tabeller
 
@@ -36,7 +35,7 @@ I din salgsrapport vil du gerne have vist produktkategorier sammen med produktun
 
  ![Kolonner på listen Felter](media/desktop-tutorial-create-calculated-columns/create1.png)
 
-1.  Vælg ellipsen for **flere indstillinger** (...), eller højreklik på tabellen **ProductSubcategory** på listen Felter, og vælg derefter **New Column** (Ny kolonne). Dette opretter den nye kolonne i tabellen ProductSubcategory.
+1.  Vælg **Flere indstillinger** (...), eller højreklik på tabellen **ProductSubcategory** på listen Felter, og vælg derefter **Ny kolonne**. Dette opretter den nye kolonne i tabellen ProductSubcategory.
     
     ![Ny kolonne](media/desktop-tutorial-create-calculated-columns/create2.png)
     

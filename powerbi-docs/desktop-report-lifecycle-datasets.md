@@ -2,7 +2,6 @@
 title: Opret forbindelse til datasæt i Power BI-tjenesten fra Power BI Desktop
 description: Brug et almindeligt datasæt til flere Power BI Desktop-rapporter i flere arbejdsområder, og administrer rapportlevetiden
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/29/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: e213bad8e7267abe0b49d1f460717dd817e9832a
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: d7d48b78ecced3e26a52df12bc8850ab8fed4c1e
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020468"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877886"
 ---
 # <a name="connect-to-datasets-in-the-power-bi-service-from-power-bi-desktop"></a>Opret forbindelse til datasæt i Power BI-tjenesten fra Power BI Desktop
 Du kan oprette en direkte forbindelse til et delt datasæt i Power Bi-tjenesten og oprette mange forskellige rapporter fra det samme datasæt. Det betyder, at du kan oprette en perfekt datamodel i Power BI Desktop og publicere den i Power BI-tjenesten. Derefter kan du og andre oprette flere forskellige rapporter (i separate .pbix-filer) ud fra den samme almindelige datamodel og gemme dem i forskellige arbejdsområder. Denne funktion kaldes **Direkte forbindelse til Power BI-tjeneste**.
@@ -37,7 +36,7 @@ Alle er vilde med Annas rapport og datasæt, og det er her, problemerne begynder
 ### <a name="connect-to-a-power-bi-service-dataset-using-a-live-connection"></a>Opret forbindelse til et Power BI-datasæt ved brug af en direkte forbindelse
 Anna opretter en rapport (og oprettet datasættet, som den er baseret på) og publicerer den derefter i **Power BI-tjenesten**. Så vises den i teamets arbejdsområde i Power BI-tjenesten. Hvis Anna gemmer den i et *arbejdsområde med den nye oplevelse*, kan hun derefter angive tilladelsen Opret for at gøre den tilgængelig for alle, der kommer og går i hendes arbejdsområde, så de kan se den og bruge den.
 
-Hvis du vil vide mere om arbejdsområder med den nye oplevelse, skal du se [programarbejdsområder](service-new-workspaces.md).
+Hvis du vil vide mere om arbejdsområder med den nye oplevelse, skal du se [arbejdsområder](service-new-workspaces.md).
 
 Andre medlemmer af Annas arbejdsområde, der kommer og går, kan nu etablere en direkte forbindelse til hendes delte datamodel (ved hjælp af funktionen **Direkte forbindelse til Power BI-tjeneste**) og oprette deres egne unikke rapporter fra *det oprindelige datasæt* i *deres egne arbejdsområder med den nye oplevelse*.
 

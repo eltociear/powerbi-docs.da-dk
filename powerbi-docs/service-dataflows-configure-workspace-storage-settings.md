@@ -1,6 +1,6 @@
 ---
 title: Konfigurer indstillinger for dataflow for arbejdsområder
-description: Konfigurer et apparbejdsområde i Power BI for at gemme definitionen og datafilerne for dataflowet i Azure Data Lake Storage Gen2
+description: Konfigurer et arbejdsområde i Power BI for at gemme definitionen af dataflowet og datafilerne i Azure Data Lake Storage Gen2
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 12f4f24be9189041d5906844ebe71d6ffb023ec5
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 54c0936510c3d383df32fd8b1f99816726f74d9f
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523508"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431998"
 ---
 # <a name="configure-workspace-dataflow-settings-preview"></a>Konfigurer indstillinger for dataflow for arbejdsområder (prøveversion)
 
@@ -35,11 +35,11 @@ I følgende afsnit gennemgås begge.
 
 ## <a name="create-a-new-workspace-configure-its-dataflow-storage"></a>Opret et nyt arbejdsområde, og konfigurer dets dataflowlager
 
-Hvis du vil oprette et nyt apparbejdsområde i Power BI-tjenesten, skal du vælge **Arbejdsområder > Opret apparbejdsområde**.
+Hvis du vil oprette et nyt arbejdsområde i Power BI-tjenesten, skal du vælge **Arbejdsområder > Opret arbejdsområde**.
 
 ![Tilføj et nyt arbejdsområde](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_01.jpg)
 
-I dialogboksen Opret et apparbejdsområde, vises der muligvis en kasse med titlen **Prøveversion af forbedrede arbejdsområder**. I dette område skal du vælge **Prøv nu**.
+I dialogboksen Opret et arbejdsområde, vises der muligvis et gult felt med titlen **Prøveversion af forbedrede arbejdsområder**. I dette område skal du vælge **Prøv nu**.
 
 ![Eksempelvisning af forbedrede arbejdsområder](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_02.jpg)
 
@@ -47,7 +47,7 @@ I den viste dialogboks kan du give din nyt arbejdsområde et entydigt navn. Væl
 
 ![Navngiv dit nye arbejdsområde](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_03.jpg)
 
-Udvid derefter området **Avanceret** i dialogboksen **Opret et apparbejdsområde**, hvor du kan slå indstillingen **Dataflowlager (prøveversion)** til.
+Udvid derefter området **Avanceret** i dialogboksen **Opret et arbejdsområde**, hvor du kan slå indstillingen **Dataflowlager (prøveversion)** til.
 
 ![Avancerede indstillinger for det nye arbejdsområde](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_04.jpg)
 
@@ -57,7 +57,7 @@ Vælg **Gem** for at oprette det nye arbejdsområde. Alle nye dataflow, der opre
 
 Et alternativ til at oprette et nyt arbejdsområde er, at du kan opdatere et eksisterende arbejdsområde til at gemme definitionsfilen og data på din organisations Azure Data Lake Storage Gen2-konto. Husk, at lagerindstillingen for dataflowet kun kan ændres, hvis arbejdsområdet ikke indeholder nogen dataflow.
 
-Du redigerer et apparbejdsområde ved at vælge ellipsen **(...)** og derefter vælge **Rediger arbejdsområde**. 
+Du redigerer et arbejdsområde ved at vælge ellipsen **(...)** og derefter vælge **Rediger arbejdsområde**. 
 
 ![Rediger arbejdsområde](media/service-dataflows-configure-workspace-storage-settings/dataflow-storage-settings_05.jpg)
 
@@ -103,7 +103,7 @@ På følgende liste er der beskrevet nogle yderligere overvejelser:
 
 **Power BI Desktop**-kunder kan ikke få adgang til dataflow, der er gemt på Azure Data Lake Storage Gen2-kontoen, medmindre de er ejeren af dataflowet. Overvej følgende situation:
 
-1.  Anna opretter et nyt apparbejdsområde og konfigurerer det til at gemme dataflow i organisationens data lake.
+1.  Anna opretter et nyt arbejdsområde og konfigurerer det til at gemme dataflow i organisationens datasø.
 2.  Ben, der også er medlem af det arbejdsområde, Anna har oprettet, vil gerne bruge Power BI Desktop og dataflowconnectoren til at hente data fra det dataflow, Anna har oprettet.
 3.  Ben får vist en fejl, da han ikke er føjet til dataflowets CDM-mappe som en godkendt bruger i datasøen.
 

@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.date: 03/12/2019
 ms.author: davidi
 LocalizationGroup: Connect to services
-ms.openlocfilehash: e0b2036192ace4404816f5ba64ad07569949452e
-ms.sourcegitcommit: 3e72c6d564d930304886d51cdf12b8fc166aa33c
+ms.openlocfilehash: 368f860ed064cf3b4ff73496db1fa993fd3b716a
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67596595"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432218"
 ---
 # <a name="tutorial-invoke-a-machine-learning-studio-model-in-power-bi-preview"></a>Selvstudium: Aktivér en Machine Learning Studio-model i Power BI (prøveversion)
 
@@ -68,7 +68,7 @@ I dette trin forudsættes det, at du har de data, du vil tildele point med din A
 
 Log på Power BI-tjenesten for at oprette enhederne i dit dataflow, og gå til et arbejdsområde i den dedikerede kapacitet, som AI-prøveversionen er aktiveret for.
 
-Hvis du ikke allerede har et arbejdsområde, kan du oprette et ved at vælge **Arbejdsområder** i menuen til venstre og derefter vælge **Opret apparbejdsområde** i det nederste panel.  Dette åbner et panel, hvor du kan angive oplysninger om arbejdsområdet. Skriv et navn til arbejdsområdet, og vælg derefter **Gem**.
+Hvis du ikke allerede har et arbejdsområde, kan du oprette et ved at vælge **Arbejdsområder** i menuen til venstre og derefter vælge **Opret arbejdsområde** i det nederste panel.  Dette åbner et panel, hvor du kan angive oplysninger om arbejdsområdet. Skriv et navn til arbejdsområdet, og vælg derefter **Gem**.
 
 ![Opret arbejdsområde](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_03.png)
 
@@ -78,7 +78,7 @@ Når arbejdsområdet er blevet oprettet, kan du vælge **Spring over** nederst t
 
 Vælg fanen **Dataflow (prøveversion)** , vælg knappen **Opret** øverst til højre i arbejdsområdet, og vælg derefter **Dataflow**.
 
-![Dataflow (forhåndsvisning)](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_05.png)
+![Dataflow (prøveversion)](media/service-tutorial-invoke-machine-learning-model/tutorial-invoke-machine-learning-model_05.png)
 
 Vælg **Tilføj nye enheder**, hvilket starter **Power-forespørgselseditor** i browseren.
 

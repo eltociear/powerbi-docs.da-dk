@@ -11,14 +11,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Consumer
-ms.openlocfilehash: f9979a852028e929b626e76534fef073feca3fd8
-ms.sourcegitcommit: 7a0ce2eec5bc7ac8ef94fa94434ee12a9a07705b
+ms.openlocfilehash: 45c158d15c92b67d945696b6d55ba0b1e4c6d971
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71100620"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019928"
 ---
 # <a name="add-comments-to-a-dashboard-or-report"></a>Føj kommentarer til et dashboard eller en rapport
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Tilføj en personlig kommentar, eller start en samtale om et dashboard eller en rapport med dine kolleger. **Kommentarfunktionen** er bare én af de måder, en *forbruger* kan samarbejde med sine kolleger på. 
 
 ![video om kommentarer](media/end-user-comment/comment.gif)
@@ -64,7 +67,7 @@ Processen til tilføjelse af kommentarer til et dashboard eller en rapport er de
 ### <a name="add-a-comment-to-a-specific-dashboard-or-report-visual"></a>Føj en kommentar til en specifik visualisering på et dashboard eller i en rapport
 Ud over at du kan føje kommentarer til et helt dashboard eller en hel rapport, kan du også føje kommentarer til et enkelt dashboardfelt eller en enkelt visualisering i en rapport. Processerne er ens, og i dette eksempel bruger vi en rapport.
 
-1. Hold musemarkøren over det visuelle element, og vælg ellipsen (...).    
+1. Hold over visualiseringen, og vælg **Flere indstillinger** (...).    
 2. Vælg **Åbn kommentarer** på rullelisten.
 
     ![Tilføj en kommentar er førstevalg](media/end-user-comment/power-bi-report-comment.png)  

@@ -9,12 +9,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/15/2019
 ms.author: tebercov
-ms.openlocfilehash: f936d5df9872d6dec8862709f614b2dc28f2e414
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 836dfcc0569c906b145df3e3f3d14f03c08d4938
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71195407"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432152"
 ---
 # <a name="create-a-template-app-in-power-bi"></a>Opret en skabelonapp i Power BI
 
@@ -33,19 +33,19 @@ Her er kravene til at udarbejde et skabelonprogram:
 - Kendskab til de [grundlæggende begreber i Power BI](service-basic-concepts.md)
 - Tilladelser til at dele en skabelonapp offentligt. Du kan finde flere oplysninger på Power BI[-administrationsportal, indstillingen Skabelonprogram](service-admin-portal.md#template-apps-settings).
 
-## <a name="create-the-template-app-workspace"></a>Opret arbejdsområdet for skabelonprogrammet
+## <a name="create-the-template-workspace"></a>Opret skabelonen for arbejdsområdet
 
-Hvis du vil oprette et skabelonprogram, som du kan distribuere til andre Power BI-lejere, skal du oprette det i et af de nye programarbejdsområder.
+Hvis du vil oprette et skabelonprogram, som du kan distribuere til andre Power BI-lejere, skal du oprette det i et af de nye arbejdsområder.
 
-1. Vælg **Arbejdsområder** > **Opret programarbejdsområde** i Power BI-tjenesten.
+1. Vælg **Arbejdsområder** > **Opret arbejdsområde** i Power BI-tjenesten.
 
-    ![Opret apparbejdsområde](media/service-template-apps-create/power-bi-new-workspace.png)
+    ![Opret arbejdsområde](media/service-template-apps-create/power-bi-new-workspace.png)
 
-2. Vælg **Opgrader til nyt** i **Opret et apparbejdsområde**.
+2. I **Opret et nyt arbejdsområde** skal du vælge **Opgrader til nyt**.
 
     ![Prøv nye arbejdsområder](media/service-template-apps-create/power-bi-upgrade-new.png)
 
-3. Angiv et navn, en beskrivelse (valgfrit) og et logobillede (valgfrit) for dit programarbejdsområde.
+3. Angiv et navn, en beskrivelse (valgfrit) og et logobillede (valgfrit) for dit arbejdsområde.
 
 4. Udvid afsnittet **Avanceret**, og vælg **Udvikl en skabelonapp**.
 
@@ -57,9 +57,9 @@ Hvis du vil oprette et skabelonprogram, som du kan distribuere til andre Power B
 
 ## <a name="create-the-content-in-your-template-app"></a>Opret indhold i dit skabelonprogram
 
-Som med et almindeligt Power BI-programarbejdsområde er dit næste skridt at oprette indholdet i arbejdsområdet.  
+Som med et almindeligt Power BI-arbejdsområde er dit næste skridt at oprette indholdet i arbejdsområdet.  
 
-- [Opret dit Power BI-indhold](power-bi-creator-landing.md) i dit programarbejdsområde.
+- [Opret dit Power BI-indhold](power-bi-creator-landing.md) i dit arbejdsområde.
 
 Hvis du bruger parametre i Power-forespørgsel, skal du kontrollere, at de har veldefinerede typer (f.eks. Text). Typerne Any og Binary understøttes ikke.
 
@@ -69,7 +69,7 @@ Hvis du bruger parametre i Power-forespørgsel, skal du kontrollere, at de har v
 
 Nu, hvor du har indhold i dit arbejdsområde, er du klar til at pakke det i et skabelonprogram. Det første trin er at oprette et testskabelonprogram, som kun er tilgængeligt i din organisation på din lejer.
 
-1. Vælg **Opret program** i arbejdsområdet for skabelonprogrammet.
+1. Vælg **Opret program** i skabelonen for arbejdsområdet.
 
     ![Opret app](media/service-template-apps-create/power-bi-create-app.png)
 
@@ -133,7 +133,7 @@ URL-adressen ændres ikke, når du flytter mellem udgivelsesfaser. Opprioriterin
 
 Lad os gennemgå faserne:
 
-1. Vælg **Udgivelsesadministration** i arbejdsområdet for skabelonprogrammet.
+1. Vælg **Udgivelsesadministration** i skabelonen for arbejdsområdet.
 
     ![Ikon for Udgivelsesadministration](media/service-template-apps-create/power-bi-release-management-icon.png)
 

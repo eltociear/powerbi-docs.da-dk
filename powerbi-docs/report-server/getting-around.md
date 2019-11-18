@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: conceptual
 ms.date: 05/24/2018
 ms.author: maggies
-ms.openlocfilehash: e7a9b4da760f02672f51aa7ace0f3bb19c501834
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 8a5b04c5b3325a9fd4d3bb11aa1943e62cf2c90c
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64770144"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021464"
 ---
 # <a name="manage-content-in-the-web-portal"></a>Administrer indhold på webportalen 
 Webportalen Power BI-rapportserver er en placering i det lokale miljø til visning, lagring og administration af dine Power BI-rapporter, dine mobile og sideinddelte rapporter og KPI'er.
@@ -56,7 +56,7 @@ Programmet til webportalen kører i en browser. Når du starter webportalen, afh
 ## <a name="manage-items-in-the-web-portal"></a>Administrer elementer i webportalen
 Power BI-rapportserver tilbyder detaljeret kontrol over de elementer, som du gemmer på webportalen. For eksempel kan du konfigurere abonnementer, cachelagring, øjebliksbilleder og sikkerhed for hver enkelte sideinddelte rapport.
 
-1. Vælg ellipsen (...) i øverste højre hjørne, og vælg derefter **Administrer**.
+1. Vælg **Flere indstillinger** (...) i øverste højre hjørne af et element, og vælg derefter **Administrer**.
    
     ![Vælg Administrer.](media/getting-around/report-server-web-portal-manage-ellipsis.png)
 2. Vælg den egenskab eller anden funktion, som du vil konfigurere.

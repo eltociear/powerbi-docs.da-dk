@@ -9,12 +9,12 @@ ms.subservice: powerbi-report-server
 ms.topic: tutorial
 ms.date: 05/06/2019
 ms.author: maggies
-ms.openlocfilehash: d30a396eeb4d461d7c36cecf9759306236810cab
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: cd3e032375c5edaba2b0f90f982d0dbe5591c913
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65240023"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021613"
 ---
 # <a name="tutorial-explore-the-power-bi-report-server-web-portal-in-a-vm"></a>Selvstudium: Udforsk webportalen til Power BI-rapportserver i en VM
 I dette selvstudium skal du oprette en virtuel Azure-maskine med Power BI-rapportserver, der allerede er installeret, så du kan få vist, redigere og administrere eksempler på Power BI og sideinddelte rapporter samt KPI'er.
@@ -125,7 +125,7 @@ Dobbeltklik på ikonet **Webportalen Rapportserver**. Browseren åbner `http://l
 ## <a name="tag-your-favorites"></a>Tag dine favoritter
 Du kan mærke rapporter og KPI'er, som skal være favoritter. De er lettere at finde, fordi de alle sammen er samlet i en enkelt Favoritter-mappe, både i webportalen og i Power BI-mobilappsene. 
 
-1. Klik på ellipsen (**...**) i øverste højre hjørne af **Avance** > KPI > **Føj til Favoritter**.
+1. Klik på ellipsen ( **...** ) i øverste højre hjørne af **Avance** > KPI > **Føj til Favoritter**.
    
     ![Føj til Favoritter](media/tutorial-explore-report-server-web-portal/power-bi-report-server-add-to-favorites.png)
 2. Vælg **Favoritter** på båndet på webportalen for at se den sammen med andre favoritter på siden Favoritter på webportalen.
@@ -189,7 +189,7 @@ Du kan få vist og administrere sideinddelte rapporter og starte Report Builder 
 
 ### <a name="manage-a-paginated-report"></a>Administrer en sideinddelt rapport
 
-1. Under **Sideinddelte rapporter** på webportalen skal du vælge ellipsen (...) ud for **Salgsordre** > **Administrer**.
+1. På webportalen under **Sideinddelte rapporter** skal du vælge **Flere indstillinger** (...) ud for **Salgsordre** > **Administrer**.
 
 1. Vælg **Parametre**, og skift standardværdien for **SalesOrderNumber** til **SO50689** > **Anvend**.
 
@@ -219,7 +219,7 @@ Du kan få vist og administrere sideinddelte rapporter og starte Report Builder 
 
 Du kan redigere sideinddelte rapporter i Report Builder, og du kan starte Report Builder direkte fra browseren.
 
-1. På portalen skal du vælge ellipsen (...) ud for **Salgsordre** > **Rediger i Report Builder**.
+1. På webportalen skal du vælge **Flere indstillinger** (...) ud for **Salgsordre** > **Rediger i Report Builder**.
 
 1. Vælg **Tillad** for at give dette websted tilladelse til at åbne et program på din computer.
 

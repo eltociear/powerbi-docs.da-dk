@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 042fee1a55728884b3f4d5792a82973b3ea9fcc4
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: 93301625efda52aa69af172b29e7fbcd94b2a4dd
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832539"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020428"
 ---
 # <a name="add-images-videos-and-more-to-your-dashboard"></a>Føj billeder, videoer og mere til dit dashboard
 
@@ -194,7 +194,7 @@ Du kan indsætte eller skrive HTML-indhold som et felt i din rapport eller på d
    ![Dashboard med fire felter](media/service-dashboard-add-widget/pbi-widget-code-added-new.png)
 
 ### <a name="tips-for-embedding-web-content"></a>Tip til at integrere webindhold
-* Til iFrames skal du bruge en sikker kilde. Hvis du angiver din iFrame-integreringskode og får et tomt felt, skal du bekræfte, at du ikke bruger *http* som iFrame-kilden. Hvis det er tilfældet, skal du ændre den til *https*.
+* Til iframes skal du bruge en sikker kilde. Hvis du angiver din iFrame-integreringskode og får et tomt felt, skal du bekræfte, at du ikke bruger *http* som iFrame-kilden. Hvis det er tilfældet, skal du ændre den til *https*.
   
   ```html
   <iframe src="https://xyz.com">
@@ -232,7 +232,7 @@ Du kan indsætte eller skrive HTML-indhold som et felt i din rapport eller på d
 ## <a name="edit-a-tile"></a>Rediger et felt
 Sådan foretager du ændringer af et eksisterende felt:
 
-1. Hold markøren over feltets øverste højre hjørne, og vælg ellipsen (...).
+1. Hold over det øverste højre hjørne af feltet, og vælg **Flere indstillinger** (...).
    
     ![Vælg feltellipse](media/service-dashboard-add-widget/pbi_ellipses.png)
 2. Vælg **Rediger oplysninger** for at få vinduet **Feltoplysninger**, og foretag ændringer.

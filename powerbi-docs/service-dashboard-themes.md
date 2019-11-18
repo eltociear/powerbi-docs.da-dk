@@ -2,7 +2,6 @@
 title: Brug dashboardtemaer i Power BI-tjenesten
 description: Få mere at vide om, hvordan du bruger en brugerdefineret farvepalet og anvender den for et helt dashboard i Power BI-tjenesten
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/22/2018
 ms.author: maggies
 LocalizationGroup: Create reports
-ms.openlocfilehash: 8e444c78c1f6f9f3f0be1375f96f7381489cc069
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: e2793fe56df462fd5f1bd1c266b75ad14fd9b375
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61143228"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877459"
 ---
 # <a name="use-dashboard-themes-in-power-bi-service"></a>Brug Dashboard-temaer i Power BI-tjenesten
 Med **dashboardtemaer** kan du anvende et farvetema på hele dit dashboard, f.eks virksomhedens farver, sæsonmæssige farver eller andre farvetemaer, som du gerne vil anvende. Når du anvender et **dashboardtema**, bruges farver fra det valgte tema for alle visualiseringer på dashboardet (med nogle få undtagelser, der er beskrevet senere i denne artikel).
@@ -30,7 +29,7 @@ Hvis du ændrer farverne i rapportvisualiseringerne på dashboardet, påvirker d
 
 
 ## <a name="how-dashboard-themes-work"></a>Sådan bruges dashboardtemaer
-Åbn et dashboard, du har oprettet (eller har tilladelse til at redigere), og som du vil tilpasse. Vælg de tre prikker (...), og vælg **Dashboardtema**. 
+Åbn et dashboard, du har oprettet (eller har tilladelse til at redigere), og som du vil tilpasse. Vælg **Flere indstillinger** (...), og vælg **Dashboardtema**. 
 
 ![indstillingen dashboardtema](media/service-dashboard-themes/power-bi-dashboard-theme.png)
 

@@ -3,20 +3,19 @@ title: Tip og trick til at stille spørgsmål ved hjælp af Spørgsmål og svar
 description: Tip og tricks til at stille spørgsmål med Spørgsmål og svar i Power BI
 author: mihart
 manager: kvivek
-ms.reviewer: ''
-ms.custom: seodec18
+ms.reviewer: Mohammad
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 06/26/2019
+ms.date: 10/23/2019
 ms.author: mihart
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 4f6dc7167d64385182ecbd448b6c400fa7f829df
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: a3d70824949d214404b25b401930fc69cb47ad4e
+ms.sourcegitcommit: 23ad768020a9daf129f69a462a2d46d59d2349d2
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "67408180"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72774726"
 ---
 # <a name="tips-for-asking-questions-in-power-bi-qa"></a>Tip til at stille spørgsmål med Spørgsmål og svar i Power BI
 ## <a name="words-and-terminology-that-qa-recognizes"></a>Ord og terminologi, som Spørgsmål og svar genkender
@@ -79,7 +78,9 @@ Spørgsmål og svar gør sit bedste for at forstå og besvare det spørgsmål, d
 * giver et eksempel på svaret i form af en visualisering. Visualiseringen opdateres, mens du skriver og redigerer spørgsmålet (den venter ikke på, at du trykker på Enter).
 * foreslår tilsvarende termer fra det eller de underliggende datasæt, når du flytter markøren tilbage i spørgsmålsfeltet.
 * viser spørgsmålet igen baseret på dataene i det eller de underliggende datasæt. Spørgsmål og svar erstatter de ord, du brugte, med synonymer fra det eller de underliggende datasæt. Ved at læse tilpasningen ved du, om Spørgsmål og svar har forstået dit spørgsmål eller ej. 
-* nedtoner ord, som ikke forstås.
+* føjer en dobbelt understregning til ord, som ikke er forstået.
+* føjer en enkelt understregning til ord, som er forstået.
+* giver dig mulighed for at kontakte ejeren af rapporten eller dashboardet, når dit ord ikke blev fundet, eller hvis dit spørgsmål ikke giver nogen resultater.
 
 ## <a name="dont-stop-now"></a>Stop ikke her
 Hold samtalen i gang, når Spørgsmål og svar har vist dine resultater! Brug de interaktive funktioner i visualiseringen og Spørgsmål og svar til at afdække mere indsigt.

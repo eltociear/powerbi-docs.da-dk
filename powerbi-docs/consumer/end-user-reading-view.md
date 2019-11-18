@@ -13,12 +13,12 @@ ms.tgt_pltfrm: NA
 ms.workload: powerbi
 ms.date: 08/30/2019
 ms.author: mihart
-ms.openlocfilehash: ef955f672bc7266979b1e0b9ddbab6e9b6ae1ff7
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 17a142249abe1162dbbcff79c476f33eb4b80366
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70236857"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019582"
 ---
 # <a name="quickstart-learn-about-the-power-bi-capabilities-for-consumers"></a>Hurtig introduktion: Få mere at vide om egenskaberne for *forbrugere* i Power BI
 I denne hurtige introduktion får du mere at vide om, hvordan du interagerer med Power BI for at få datadrevet forretningsindsigt. Denne artikel er ikke beregnet som en detaljeret gennemgang, men mere som en hurtig gennemgang af de handlinger, der er tilgængelige for Power BI-**forbrugere**.
@@ -118,7 +118,7 @@ Visualiseringer består af datapunkter, og ved at holde musen over et datapunkt 
 ### <a name="favorite-a-dashboard"></a>Gør et dashboard til favorit
 Når du gør indhold til en *favorit*, kan du få adgang til det fra navigationslinjen. Navigationslinjen er synlig fra næsten alle områder i Power BI. Favoritter er normalt de dashboards, rapportsider og apps, du besøger oftest.
 
-I øverste højre hjørne af Power BI-tjenesten skal du vælge **Favoritter** eller ellipsen (...), hvis det ikke vises, og derefter vælge **Foretrukne** på rullelisten. 
+I øverste højre hjørne af Power BI-tjenesten skal du vælge **Favoritter**, og hvis det ikke er synligt, skal du vælge **Flere indstillinger** (...) og derefter vælge **Favoritter** på rullelisten. 
    
 ![ikonet Favoritter](./media/end-user-reading-view/power-bi-favorites.png)
 
@@ -168,7 +168,7 @@ Få mere at vide om [fokustilstand og fuldskærmsvisning](end-user-focus.md)
 ### <a name="sort-a-visualization"></a>Sortér en visualisering
 Visualiseringer på en rapportside kan sorteres og gemmes sammen med dine anvendte ændringer. 
 
-Peg på en visualisering for at aktivere den, og vælg ellipsen (...) for at åbne sorteringsindstillinger.
+Hold over en visualisering for at gøre den aktiv, og vælg **Flere indstillinger** (...) for at åbne sorteringsindstillingerne.
 
 ![sorter et diagram](media/end-user-reading-view/sort.gif) 
 
@@ -177,7 +177,7 @@ Få mere at vide om [sortering af visualiseringer](end-user-search-sort.md)
 ### <a name="show-the-data-used-to-create-a-visualization"></a>Få vist de data, der bruges til at oprette en visualisering
 En Power BI-visualisering oprettes vha. data fra underliggende datasæt. Hvis du vil se bag kulisserne, kan du i Power BI *få vist* de data, der bruges til at oprette visualiseringen. Når du vælger **Vis data**, vises dataene under (eller ud for) visualiseringen i Power BI.
 
-Når en visualisering er aktiv, skal du vælge ellipsen (... ) og vælge **Vis data**.
+Når en visualisering er aktiv, skal du vælge **Flere indstillinger** (...) og vælge **Vis data**.
    
    ![vælg Få vist data](./media/end-user-show-data/power-bi-explore-show-data.png)
 

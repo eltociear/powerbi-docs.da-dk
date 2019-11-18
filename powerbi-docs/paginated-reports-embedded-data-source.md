@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: report-builder
 ms.topic: conceptual
 ms.date: 06/06/2019
-ms.openlocfilehash: 4dda73794c888d89ad67f1af23bfb8c38eb43f61
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: db79c33abe6f9e472dc29db007c4485d7a8d861e
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020791"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431615"
 ---
 # <a name="create-an-embedded-data-source-for-paginated-reports-in-the-power-bi-service"></a>Opret en integreret datakilde for sideinddelte rapporter i Power BI-tjenesten
 
@@ -72,7 +72,7 @@ Se [Rapportdata i Power BI Report Builder](report-builder-data.md) for at få me
 
 Sideinddelte rapporter, der opretter forbindelse til Power BI-datasæt, følger reglerne for delte datasæt i Power BI med nogle mindre ændringer.  For at brugere kan få vist sideinddelte rapporter korrekt ved hjælp af Power BI-datasæt og for at sikre, at sikkerhed på rækkeniveau er aktiveret og gennemtvunget for dine seere, skal du følge disse regler:
 
-### <a name="classic-apps-and-app-workspaces"></a>Klassiske apps og apparbejdsområder
+### <a name="classic-apps-and-workspaces"></a>Klassiske apps og arbejdsområder
 
 - .rdl i samme arbejdsområde som datasæt (samme ejer): Understøttet
 - .rdl i andet arbejdsområde end datasæt (samme ejer): Understøttet
@@ -82,7 +82,7 @@ Sideinddelte rapporter, der opretter forbindelse til Power BI-datasæt, følger 
 - .rdl i et andet arbejdsområde end datasæt (anden bruger): Du skal have tilladelsen Opret tildelt for hver bruger, der får vist rapporten på datasætniveau
 - Sikkerhed på rækkeniveau: Du skal have tilladelsen Opret tildelt for hver bruger, der får vist rapporten på datasætniveau, for at gennemtvinge det.
 
-### <a name="new-experience-apps-and-app-workspaces"></a>Apps og apparbejdsområder med nye oplevelser
+### <a name="new-experience-apps-and-workspaces"></a>Apps og arbejdsområder med den nye oplevelse
 
 - .rdl i samme arbejdsområde som datasæt: Understøttet
 - .rdl i andet arbejdsområde end datasæt (samme ejer): Understøttet

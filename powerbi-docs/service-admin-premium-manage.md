@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 09/17/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: e9214fbb78b501b49e8c2115423ec1c6f55e65d7
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: c3c1b11b4445ceba67e272b7f652d61d8935fc16
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175541"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431412"
 ---
 # <a name="configure-and-manage-capacities-in-power-bi-premium"></a>Konfigurer og administrer kapaciteter i Power BI Premium
 
@@ -98,7 +98,7 @@ Power BI-administratorer og globale Office 365-administratorer kan ændre Power 
 
 ### <a name="manage-user-permissions"></a>Administrer brugertilladelser
 
-Du kan tildele yderligere kapacitetsadministratorer, og du kan tildele brugere, der har tilladelse til at *tildele kapacitet*. Brugere, der har tildelingstilladelser, kan tildele et apparbejdsområde til en kapacitet, hvis de er administratorer af det pågældende arbejdsområde. De kan også tildele deres personlige *Mit arbejdsområde* til kapaciteten. Brugere med tildelingstilladelser har ikke adgang til administrationsportalen.
+Du kan tildele yderligere kapacitetsadministratorer, og du kan tildele brugere, der har tilladelse til at *tildele kapacitet*. Brugere, der har tildelingstilladelser, kan tildele et arbejdsområde til en kapacitet, hvis de er administratorer af det pågældende arbejdsområde. De kan også tildele deres personlige *Mit arbejdsområde* til kapaciteten. Brugere med tildelingstilladelser har ikke adgang til administrationsportalen.
 
 > [!NOTE]
 > Kapacitetsadministratorer til Power BI Embedded er defineret inden for Microsoft Azure-portalen.
@@ -109,7 +109,7 @@ Udvid **Brugere med tildelingstilladelser** under **Brugertilladelser**, og tilf
 
 ## <a name="assign-a-workspace-to-a-capacity"></a>Tildel et arbejdsområde til en kapacitet
 
-Der er to måder at tildele et arbejdsområde til en kapacitet på: i administrationsportalen og fra et apparbejdsområde.
+Der er to måder at tildele et arbejdsområde til en kapacitet på: via administrationsportalen og fra et arbejdsområde.
 
 ### <a name="assign-from-the-admin-portal"></a>Tildel fra administrationsportalen
 
@@ -127,22 +127,22 @@ Ud over Power BI-administratorer og globale Office 365-administratorer kan kapac
    | --- | --- |
    | **Arbejdsområder efter brugere** | Når du tildeler arbejdsområder efter bruger eller gruppe, så tildeles alle arbejdsområder, der ejes af de pågældende brugere, Premium-kapacitet, herunder brugerens personlige arbejdsområde. Disse brugere får automatisk tilladelser til arbejdsområdetildeling.<br>Dette omfatter arbejdsområder, der allerede er tildelt en anden kapacitet. |
    | **Specifikke arbejdsområder** | Angiv navnet på et bestemt arbejdsområde, der skal tildeles til den valgte kapacitet. |
-   | **Arbejdsområder til hele organisationen** | Hvis du tildeler Premium-kapacitet til arbejdsområder til hele organisationen, tildeles alle apparbejdsområder og Mine arbejdsområder i organisationen den pågældende Premium-kapacitet. Desuden får alle aktuelle og fremtidige brugere tilladelse til at gentildele individuelle arbejdsområder til denne kapacitet. |
+   | **Arbejdsområder til hele organisationen** | Hvis du tildeler Premium-kapacitet til alle organisationens arbejdsområder, tildeles alle arbejdsområder og Mine arbejdsområder i organisationen til den pågældende Premium-kapacitet. Desuden får alle aktuelle og fremtidige brugere tilladelse til at gentildele individuelle arbejdsområder til denne kapacitet. |
    | | |
 
 1. Vælg **Anvend**.
 
-### <a name="assign-from-app-workspace-settings"></a>Tildel fra indstillinger for apparbejdsområde
+### <a name="assign-from-workspace-settings"></a>Tildel fra indstillinger for arbejdsområde
 
-Du kan også tildele en Premium-kapacitet til et apparbejdsområde fra det pågældende arbejdsområdes indstillinger. Hvis du vil flytte en kapacitet til et arbejdsområde, skal du have administratortilladelser til det pågældende arbejdsområde og desuden have tilladelser til kapacitetstildeling for den pågældende kapacitet. Bemærk, at arbejdsområdeadministratorer altid kan fjerne et arbejdsområde fra Premium-kapacitet.
+Du kan også tildele et arbejdsområde til en Premium-kapacitet fra det pågældende arbejdsområdes indstillinger. Hvis du vil flytte en kapacitet til et arbejdsområde, skal du have administratortilladelser til det pågældende arbejdsområde og desuden have tilladelser til kapacitetstildeling for den pågældende kapacitet. Bemærk, at arbejdsområdeadministratorer altid kan fjerne et arbejdsområde fra Premium-kapacitet.
 
-1. Rediger et apparbejdsområde ved at vælge **ellipsen (...)**  og vælge **Rediger arbejdsområde**.
+1. Rediger et arbejdsområde ved at vælge **(...)**  og derefter vælge **Rediger arbejdsområde**.
 
     ![Rediger arbejdsområde via ellipsegenvejsmenuen](media/service-admin-premium-manage/edit-app-workspace.png)
 
 1. Under **Rediger arbejdsområde** skal du udvide **Avanceret**.
 
-1. Vælg den kapacitet, du vil tildele dette apparbejdsområde til.
+1. Vælg den kapacitet, du vil tildele dette arbejdsområde til.
 
     ![Rullemenu til valg af kapacitet](media/service-admin-premium-manage/app-workspace-advanced.png)
 

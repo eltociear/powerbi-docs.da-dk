@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/03/2019
 ms.author: painbar
 LocalizationGroup: ''
-ms.openlocfilehash: e91f1d5084957ee7266161b9a34f916e2902d1f4
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: c2cc5f9da8ea12709d8244a1e82d8283f66f2413
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72019576"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021027"
 ---
 # <a name="data-lineage-preview"></a>Dataafstamning (prøveversion)
 I moderne BI-projekter (Business Intelligence) kan det være en udfordring for mange kunder at forstå flowet af data fra datakilden til destinationen. Udfordringen er endnu større, hvis du har oprettet avancerede analyseprojekter, der strækker sig over flere datakilder, artefakter og afhængigheder.  Spørgsmål som "Hvad sker der, hvis jeg ændrer disse data?" eller "Hvorfor er denne rapport ikke ajourført?" kan være vanskelige at besvare. Det kan være nødvendigt med et team af eksperter eller en grundig undersøgelse for at forstå dem. Vi har designet dataafstamningsvisningen for at hjælpe dig med at besvare disse spørgsmål.
@@ -55,7 +55,7 @@ I datasæt får du vist tidspunktet for den seneste opdatering, og om et datasæ
  
 Hvis en rapport i arbejdsområdet er baseret på et datasæt i et andet arbejdsområde, får du vist navnet på kildearbejdsområdet på datasætkortet. Vælg navnet på kildearbejdsområdet for at gå til det pågældende arbejdsområde.
  
-- For alle artefakter skal du vælge ellipsen (...) for at få vist menuen med indstillinger. Den indeholder alle de samme handlinger, der er tilgængelige i listevisningen.
+- For en hvilken som helst artefakt skal du vælge **Flere indstillinger** (...) for at få vist menuen med indstillinger. Den indeholder alle de samme handlinger, der er tilgængelige i listevisningen.
   
 Hvis du vil have vist flere metadata om datasæt, skal du vælge selve datsætkortet. Der vises flere oplysninger om datasættet i en siderude.
 
@@ -89,7 +89,8 @@ Afstamningsvisning er et interaktivt lærred. Du kan bruge musen og touchpad'en 
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
-Afstamningsvisning er ikke tilgængelig i Internet Explorer. Se [Understøttede browsere til Power BI](power-bi-browsers.md) for at få mere at vide.
+- Afstamningsvisning er ikke tilgængelig i Internet Explorer. Se [Understøttede browsere til Power BI](power-bi-browsers.md) for at få mere at vide.
+- Afstamningsvisning er ikke tilgængelig i Mit arbejdsområde.
 
 ## <a name="next-steps"></a>Næste trin
 

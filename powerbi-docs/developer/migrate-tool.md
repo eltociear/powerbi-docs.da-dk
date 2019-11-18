@@ -3,18 +3,17 @@ title: Overførselsværktøj i Power BI Embedded
 description: Du kan bruge dette overførselsværktøj til at kopiere dine rapporter fra Power BI Embedded Azure-tjenesten (PaaS) til Power BI-tjenesten (SaaS).
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 9344a1a3dc4f682925da900cde8accfead783f88
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 2970744f89bf8fdc115be018d00c8f5b73d9ddfc
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61271916"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880581"
 ---
 # <a name="power-bi-embedded-migration-tool"></a>Overførselsværktøj i Power BI Embedded
 
@@ -130,9 +129,9 @@ Der oprettes automatisk en sti for dig. Du kan ændre stien, hvis du vil. Hvis d
 > [!NOTE]
 > Dette udfører ikke den faktiske download. Her angiver du kun den struktur, som rapporterne downloades til.
 
-#### <a name="upload-plan"></a>Upload Plan
+#### <a name="upload-plan"></a>Uploadplan
 
-Her kan du angive et præfiks, der skal bruges til de apparbejdsområder, som oprettes i Power BI-tjenesten. Efter præfikset placeres GUID for det arbejdsområde, der fandtes i Azure.
+Her kan du angive et præfiks, der skal bruges til de arbejdsområder, som oprettes i Power BI-tjenesten. Efter præfikset placeres GUID for det arbejdsområde, der fandtes i Azure.
 
 ![Uploadplan](media/migrate-tool/migrate-tool-upload-plan.png)
 
@@ -167,21 +166,21 @@ Når overførslen er fuldført, skal du vælge fanen **Create Groups**.
 
 ## <a name="step-3-create-groups"></a>Trin 3: Opret grupper
 
-Når du har downloadet rapporterne, kan du gå til fanen **Create Groups**. Under denne fane oprettes apparbejdsområderne i Power BI-tjenesten baseret på den overførselsplan, du har oprettet. Det opretter apparbejdsområdet med det navn, du har angivet under fanen **Upload** under **Analyze & Plan Migration**.
+Når du har downloadet rapporterne, kan du gå til fanen **Create Groups**. Under denne fane oprettes arbejdsområderne i Power BI-tjenesten baseret på den migreringsplan, du har oprettet. Der oprettes arbejdsområder med det navn, du har angivet under fanen **Upload** i **Analysér og planlæg migrering**.
 
 ![Opret grupper](media/migrate-tool/migrate-tool-create-groups.png)
 
-Du kan oprette apparbejdsområder ved enten at vælge **Create Selected Groups** eller **Create All Missing Groups**.
+Du kan oprette arbejdsområder ved enten at vælge **Opret udvalgte grupper** eller **Opret alle manglende grupper**.
 
-Når du har valgt en af disse indstillinger, bliver du bedt om at logge på. *Du skal bruge legitimationsoplysningerne til den Power BI-tjeneste, du vil oprette apparbejdsområderne i.*
+Når du har valgt en af disse indstillinger, bliver du bedt om at logge på. *Du skal bruge dine legitimationsoplysninger til den Power BI-tjeneste, du vil oprette arbejdsområderne i.*
 
 ![Opret gruppelogon](media/migrate-tool/migrate-tool-create-group-sign-in.png)
 
-Dette opretter apparbejdsområdet i Power BI-tjenesten. Det uploader ikke rapporterne til apparbejdsområdet.
+Dermed oprettes arbejdsområdet i Power BI-tjenesten. Rapporterne uploades ikke til arbejdsområdet.
 
-Du kan bekræfte, at apparbejdsområdet blev oprettet, ved at logge på Power BI og kontrollere, at arbejdsområdet findes. Arbejdsområdet er tomt.
+Du kan bekræfte, at arbejdsområdet blev oprettet, ved at logge på Power BI og kontrollere, at det findes. Arbejdsområdet er tomt.
 
-![Apparbejdsområde](media/migrate-tool/migrate-tool-app-workspace.png)
+![arbejdsområde](media/migrate-tool/migrate-tool-app-workspace.png)
 
 Når arbejdsområdet er oprettet, kan du gå videre til fanen **Upload**.
 
@@ -235,9 +234,9 @@ For det element, hvor der opstod fejl, kan jeg ændre navnet for SaaSTargetRepor
 
 Derefter kan jeg åbne planen i overførselsværktøjet og uploade rapporten igen.
 
-Når jeg går tilbage til Power BI, kan vi se, at rapporterne og datasættene er blevet uploadet i apparbejdsområdet.
+Når vi går tilbage til Power BI, kan vi se, at rapporterne og datasættene er blevet uploadet i arbejdsområdet.
 
-![Upload programarbejdsområde](media/migrate-tool/migrate-tool-upload-app-workspace.png)
+![Upload arbejdsområde](media/migrate-tool/migrate-tool-upload-app-workspace.png)
 
 <a name="upload-local-file"></a>
 
@@ -264,7 +263,7 @@ Du kan derefter opdatere forbindelsesstrengen for datasættet i Power BI-tjenest
 
 ## <a name="embedding"></a>Integration
 
-Nu, hvor dine rapporter er overført fra Power BI Embedded Azure-tjenesten til Power BI-tjenesten, kan du opdatere din app og begynde at integrere rapporterne i dette apparbejdsområde.
+Nu, hvor dine rapporter er migreret fra Azure-tjenesten Power BI Embedded til Power BI-tjenesten, kan du opdatere din applikation og begynde at integrere rapporterne i dette arbejdsområde.
 
 Du kan finde flere oplysninger under [Sådan overfører du indhold fra arbejdsområdesamlinger i Power BI Embedded til Power BI](migrate-from-powerbi-embedded.md).
 
@@ -278,4 +277,4 @@ Du kan finde flere oplysninger under [Sådan overfører du indhold fra arbejdsom
 [Integreret JavaScript-eksempel](https://microsoft.github.io/PowerBI-JavaScript/demo/)  
 [Hvidbog til Power BI Premium](https://aka.ms/pbipremiumwhitepaper)  
 
-Flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

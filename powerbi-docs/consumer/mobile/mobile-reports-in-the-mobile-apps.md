@@ -2,19 +2,18 @@
 title: Udforsk rapporter i Power BI-mobilappsene
 description: Se, hvordan du kan få vist og interagere med rapporter i Power BI-mobilappsene på din telefon eller tablet. Du kan oprette rapporter i Power BI-tjenesten eller Power BI Desktop og derefter interagere med dem i mobilappsene.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 08/09/2019
 ms.author: mshenhav
-ms.openlocfilehash: 166b7d88e6ab55481ec56b0cf4f91628cd141bef
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: d4b9a9aeda00dd7f16690d1e92336f5b63adf1da
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "69985736"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73869776"
 ---
 # <a name="explore-reports-in-the-power-bi-mobile-apps"></a>Udforsk rapporter i Power BI-mobilappsene
 Gælder for:
@@ -45,7 +44,7 @@ Der findes to ikoner til rapporter i Power BI-mobilappsene:
 > [!NOTE]
 > Når du holder din telefon i liggende retning, får du altid det liggende layout, selvom rapportsiden har et layout, der er optimeret til telefoner.
 
-Hvis du vil hente en rapport fra et dashboard, skal du trykke på ellipsen (...) i øverste højre hjørne af et felt og derefter trykke på **Åbn rapport**:
+Hvis du vil hente en rapport fra et dashboard, skal du trykke på **Flere indstillinger** (...) i øverste højre hjørne af et felt og derefter trykke på **Åbn rapport**:
   
   ![Åbn rapport](./media/mobile-reports-in-the-mobile-apps/power-bi-android-open-report-tile.png)
   
@@ -59,7 +58,7 @@ Et tryk er det samme som et klik med musen. Så hvis du vil fremhæve rapporten 
 Når du trykker på en udsnitsværdi, vælges værdien, og resten af rapporten opdeles efter den pågældende værdi.
 Når du trykker på et link, en knap eller et bogmærke, vises den handling, der er defineret af rapportens forfatter.
 
-Du har sikkert bemærket, at der vises en kant, når du trykker på et visuelt element. I øverste højre hjørne af kanten vises en ellipse (...). Hvis du trykker på ellipsen, får du vist en menu med handlinger, du kan udføre med det visuelle element:
+Du har sikkert bemærket, at der vises en kant, når du trykker på et visuelt element. I øverste højre hjørne af kanten vises **Flere indstillinger** (...). Hvis du trykker på ellipsen, får du vist en menu med handlinger, du kan udføre med det visuelle element:
 
 ![Visuelt element og menu](./media/mobile-reports-in-the-mobile-apps/report-visual-menu.png)
 
@@ -92,7 +91,7 @@ Du kan få flere oplysninger ved at læse om, hvordan du [tilføjer detaljeadgan
    
    
 ### <a name="using-the-actions-in-the-report-footer"></a>Brug af handlingerne i rapportfoden
-Fra rapportfoden kan du udføre flere handlinger på den aktuelle rapportside eller hele rapporten. Sidefoden giver hurtig adgang til de mest almindeligt anvendte handlinger. Du kan få adgang til andre handlinger ved at trykke på ellipseknappen (...):
+Fra rapportfoden kan du udføre flere handlinger på den aktuelle rapportside eller hele rapporten. Sidefoden giver hurtig adgang til de mest almindeligt anvendte handlinger. Du kan få adgang til andre handlinger ved at trykke på knappen **Flere indstillinger** (...):
 
 ![Rapportfod](./media/mobile-reports-in-the-mobile-apps/report-footer.png)
 
@@ -105,7 +104,7 @@ Du kan flytte mellem rapportsider ved at stryge fra kanten af skærmen til midte
 - Se alle rapporthandlinger.
 
 #### <a name="all-report-actions"></a>Alle rapporthandlinger
-Når du trykker på ellipseknappen (...) i rapportfoden, kan du få vist alle de handlinger, du kan udføre i en rapport:
+Når du trykker på **Flere indstillinger** (...) i rapportsidefoden, får du vist alle de handlinger, du kan udføre i en rapport:
 
 
 ![Alle rapporthandlinger](./media/mobile-reports-in-the-mobile-apps/report-all-actions.png)
@@ -124,5 +123,5 @@ Eksempel:
 ## <a name="next-steps"></a>Næste trin
 * [Få vist og interager med Power BI-rapporter, der er optimeret til din telefon](mobile-apps-view-phone-report.md)
 * [Opret en version af en rapport, der er optimeret til telefoner](../../desktop-create-phone-report.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

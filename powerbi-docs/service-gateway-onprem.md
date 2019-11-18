@@ -3,19 +3,18 @@ title: Datagateway i det lokale miljø
 description: Dene artikel er en oversigt over datagatewayen i det lokale miljø til Power BI. Du kan bruge denne gateway til at arbejde med DirectQuery-datakilder. Du kan også bruge denne gateway til at opdatere clouddatasæt med data i det lokale miljø.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Gateways
 ms.date: 07/15/2019
-ms.openlocfilehash: 883d5c83019df293628d096f5834c9b5c6d425b6
-ms.sourcegitcommit: 73228d0a9038b8369369c059ad06168d2c5ff062
+ms.openlocfilehash: b01a3ef5832541822aa9311df14289285f601b2b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68730280"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872448"
 ---
 # <a name="what-is-an-on-premises-data-gateway"></a>Hvad er en datagateway i det lokale miljø?
 
@@ -42,13 +41,13 @@ Der er to forskellige typer gateways til hvert sit scenarie:
 Du skal udføre fire primære trin, når du vil bruge en gateway.
 
 1. [Download og installér gatewayen](/data-integration/gateway/service-gateway-install) på en lokal computer.
-2. [Konfigurer](/data-integration/gateway/service-gateway-app) gatewayen på baggrund af din firewall og andre netværkskrav.
-3. [Tilføj gatewayadministratorer](/data-integration/gateway/service-gateway-manage), der også kan administrere andre netværkskrav.
-4. [Foretag fejlfinding](service-gateway-onprem-tshoot.md) af gatewayen i tilfælde af fejl.
+1. [Konfigurer](/data-integration/gateway/service-gateway-app) gatewayen på baggrund af din firewall og andre netværkskrav.
+1. [Tilføj gatewayadministratorer](/data-integration/gateway/service-gateway-manage), der også kan administrere andre netværkskrav.
+1. [Brug gatewayen](service-gateway-sql-tutorial.md) til at opdatere en datakilde i det lokale miljø.
+1. [Foretag fejlfinding](service-gateway-onprem-tshoot.md) af gatewayen i tilfælde af fejl.
 
 ## <a name="next-steps"></a>Næste trin
 
 * [Installér datagatewayen i det lokale miljø](/data-integration/gateway/service-gateway-install)
 
-
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -2,71 +2,97 @@
 title: Tilføj en brugerdefineret kolonne i Power BI Desktop
 description: Opret hurtigt en ny brugerdefineret kolonne i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 05/07/2019
+ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Create reports
-ms.openlocfilehash: 5633370259662141296550aa3d5d2343ac4fedaa
-ms.sourcegitcommit: 58c649ec5fd2447a0f9ca4c4d45a0e9fff2f1b6a
+ms.openlocfilehash: 443053bc973005d3e2a655b1222d049a4251e7d7
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67408569"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73878885"
 ---
 # <a name="add-a-custom-column-in-power-bi-desktop"></a>Tilføj en brugerdefineret kolonne i Power BI Desktop
-Du kan nemt føje en ny brugerdefineret kolonne med data til din model ved hjælp af **forespørgselseditoren** i **Power BI Desktop**. Du kan oprette og omdøbe din brugerdefinerede kolonne ved hjælp af knapper til oprettelse af [M-formler](https://msdn.microsoft.com/library/mt270235.aspx), der definerer din brugerdefinerede kolonne. M-formlen har et [indholdssæt med omfattende funktionsreference](https://msdn.microsoft.com/library/mt779182.aspx). 
 
-![](media/desktop-add-custom-column/add-custom-column_01.png)
+I Power BI Desktop kan du nemt føje en ny brugerdefineret kolonne med data til din model ved hjælp af Query Editor. Med Forespørgselseditor kan du oprette og omdøbe din brugerdefinerede kolonne for at oprette [M-formelforespørgsler i PowerQuery](https://docs.microsoft.com/powerquery-m/quick-tour-of-the-power-query-m-formula-language) og definere din brugerdefinerede kolonne. M-formelforespørgsler i PowerQuery indeholder et [indholdssæt med omfattende funktionsreference](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference). 
 
-Du kan også oprette en brugerdefineret kolonne som et andet **anvendt trin** i forbindelse med den forespørgsel, du opretter i **forespørgselseditoren**, hvilken betyder, at den kan ændres, flyttes før eller senere eller redigeres når som helt.
+Når du opretter en brugerdefineret kolonne i Forespørgselseditor, tilføjer Power BI Desktop den som et **Anvendt trin** i **Forespørgselsindstillinger** i forespørgslen. Den kan ændres, flyttes eller redigeres når som helst.
 
-## <a name="use-query-editor-to-add-a-new-custom-column"></a>Brug forespørgselseditoren til at tilføje en ny brugerdefineret kolonne
-Hvis du vil oprette en ny brugerdefineret forespørgsel, skal du starte **forespørgselseditoren**. Det kan du også gøre ved at vælge **Rediger forespørgsler** på båndet **Hjem** i **Power BI Desktop**.
+![Siden Tilføj brugerdefineret kolonne](media/desktop-add-custom-column/add-custom-column_01.png)
 
-![](media/desktop-add-custom-column/add-column-from-example_02.png)
+## <a name="use-query-editor-to-add-a-custom-column"></a>Brug Forespørgselseditor til at tilføje en brugerdefineret kolonne
 
-Når **forespørgselseditoren** er startet, og der er indlæst nogle data, kan du tilføje en brugerdefineret kolonne ved at vælge fanen **Tilføj kolonne** på båndet og derefter vælge **Brugerdefineret kolonne**.
+Følg disse trin for at begynde at oprette en brugerdefineret kolonne:
 
-![](media/desktop-add-custom-column/add-custom-column_02.png)
+1. Start Power BI Desktop, og indlæs nogle data.
 
-Vinduet **Tilføj brugerdefineret kolonne** vises. Vinduet beskrives i det følgende afsnit.
+2. Fra fanen **Start** på båndet skal du vælge **Rediger forespørgsler** og derefter vælge **Rediger forespørgsler** i menuen.
+
+   ![Vælg Rediger forespørgsler](media/desktop-add-custom-column/add-column-from-example_02.png)
+
+   Vinduet **Forespørgselseditor** vises. 
+
+2. Under fanen **Tilføj kolonne** på båndet skal du vælge **Brugerdefineret kolonne**.
+
+   ![Vælg Brugerdefineret kolonne](media/desktop-add-custom-column/add-custom-column_02.png)
+
+   Vinduet **Tilføj brugerdefineret kolonne** vises.
 
 ## <a name="the-add-custom-column-window"></a>Vinduet Tilføj brugerdefineret kolonne
-I vinduet **Tilføj brugerdefineret kolonne** kan du se en liste over tilgængelige felter i ruden til højre, navnet på din brugerdefinerede kolonne øverst (du kan omdøbe den ved ganske enkelt at skrive et nyt navn i dette tekstfelt) og den [**M**-formel](https://msdn.microsoft.com/library/mt779182.aspx), du opretter (eller skriver), afhængigt af hvilke felter du indsætter fra højre, hvilke operatorer du tilføjer, og hvordan du ellers bygger den formel, som din nye brugerdefinerede kolonne defineres ud fra. 
 
-![](media/desktop-add-custom-column/add-custom-column_03.png)
+Vinduet **Tilføj brugerdefineret kolonne** indeholder følgende funktioner: 
+- En liste over tilgængelige kolonner på listen **Tilgængelige kolonner** til højre.
+
+- Det indledende navn på din brugerdefinerede kolonne i feltet **Nyt kolonnenavn**. Du kan omdøbe denne kolonne.
+
+- [M-formelforespørgsler i PowerQuery](https://docs.microsoft.com/powerquery-m/power-query-m-function-reference) i feltet **Formel for brugerdefineret kolonne**. Du kan oprette disse forespørgsler ved at udarbejde den formel, som den nye brugerdefinerede kolonne er defineret på. 
+
+   ![Siden Tilføj brugerdefineret kolonne](media/desktop-add-custom-column/add-custom-column_03.png)
 
 ## <a name="create-formulas-for-your-custom-column"></a>Opret formler til din brugerdefinerede kolonne
-Du kan vælge et felt på listen **Tilgængelige kolonner:** til højre og vælge **<< Indsæt** for at føje dem til formlen for den brugerdefinerede kolonne. Du kan også bare dobbeltklikke på en kolonne på listen for at tilføje den.
 
-Efterhånden som du skriver formlen og bygger din kolonne, kan du nederst i vinduet se en indikator, der fortæller dig i realtid (mens du skriver), om der er registreret syntaksfejl. Hvis alt er, som det skal være, kan du se et grøn markering.
+1. Vælg en kolonne på listen **Tilgængelige kolonner** til højre, og vælg derefter **Indsæt** under listen for at føje dem til formlen for den brugerdefinerede kolonne. Du kan også tilføje en kolonne ved at dobbeltklikke på den på listen.
 
-![](media/desktop-add-custom-column/add-custom-column_04.png)
+2. Bemærk indikatoren nederst i vinduet **Tilføj brugerdefineret kolonne**, når du angiver formlen og opretter kolonnen. 
 
-Hvis der er fejl i syntaksen, vises der i stedet et gult advarselsikon sammen med den registrerede fejl og et link, som placerer markøren (i formlen) der, hvor fejlen er registreret.
+   Hvis der ikke er nogen fejl, får du vist en grøn markering, og meddelelsen *Der er ikke registreret nogen syntaksfejl*.
 
-![](media/desktop-add-custom-column/add-custom-column_05.png)
+   ![Vellykket syntakskontrol på siden Tilføj brugerdefineret kolonne](media/desktop-add-custom-column/add-custom-column_04.png)
 
-Når du vælger **OK**, føjes din brugerdefinerede kolonne til modellen, og trinnet **Tilføjet brugerdefineret** føjes til **Anvendte trin** for din forespørgsel.
+   Hvis der er en syntaksfejl, får du vist et gult advarselsikon sammen med et link til det sted, hvor fejlen opstod i din formel.
 
-![](media/desktop-add-custom-column/add-custom-column_06.png)
+   ![Fejl på siden Tilføj brugerdefineret kolonne](media/desktop-add-custom-column/add-custom-column_05.png)
 
-Hvis du dobbeltklikker på trinnet **Tilføjet brugerdefineret** i ruden **Anvendte trin**, åbnes vinduet **Tilføj brugerdefineret kolonne** igen, og den brugerdefinerede kolonneformel, du allerede har oprettet, er indlæst, så du evt. kan redigere den.
+3. Vælg **OK**. 
 
-## <a name="using-the-advanced-editor-for-custom-columns"></a>Brug de brugerdefinerede kolonner for den avancerede editor
-Du kan også oprette en brugerdefineret kolonne (og for den sags skyld også redigere alle trin i din forespørgsel) ved hjælp af den **avancerede editor**. I **forespørgselseditoren** skal du vælge fanen **Vis** og derefter vælge **Avanceret editor** for at vise den **avancerede editor**.
+   Power BI Desktop føjer din brugerdefinerede kolonne til modellen og føjer trinnet **Tilføjet brugerdefineret** til listen **Anvendte trin** i din forespørgsel under **Forespørgselsindstillinger**.
 
-![](media/desktop-add-custom-column/add-custom-column_07.png)
+   ![Brugerdefineret kolonne føjet til Forespørgselsindstillinger](media/desktop-add-custom-column/add-custom-column_06.png)
 
-Den **avancerede editor** giver dig fuld kontrol over din forespørgsel.
+4. Hvis du vil redigere din brugerdefinerede kolonne, skal du dobbeltklikke på trinnet **Tilføjet brugerdefineret** på listen **Anvendte trin**. 
 
+   Vinduet **Tilføj brugerdefineret kolonne** vises med formlen for den brugerdefinerede kolonne, du har oprettet.
+
+## <a name="use-the-advanced-editor-for-custom-columns"></a>Brug Avanceret editor til brugerdefinerede kolonner
+
+Når du har oprettet din forespørgsel, kan du også bruge **Avanceret editor** til at redigere et hvilket som helst trin i din forespørgsel. Det gør du ved at gennemgå disse trin:
+
+1. I vinduet **Forespørgselseditor** skal du vælge fanen **Vis** på båndet. 
+
+2. Vælg **Avanceret editor**.
+
+   Siden **Avanceret editor** vises og giver dig fuld kontrol over din forespørgsel. 
+
+   ![Siden Avanceret editor](media/desktop-add-custom-column/add-custom-column_07.png)
+
+   
 ## <a name="next-steps"></a>Næste trin
-Du kan også oprette en brugerdefineret kolonne på andre måder, f.eks. ved at oprette en kolonne, der er baseret på eksempler, du angiver i **forespørgselseditoren**. I følgende artikel kan du få flere oplysninger om, hvordan du opretter brugerdefinerede kolonner ud fra eksempler:
 
-* [Tilføj en kolonne ud fra et eksempel i Power BI Desktop](desktop-add-column-from-example.md)
-* [M-reference til Power-forespørgsel](/powerquery-m/power-query-m-reference)  
+- Du kan oprette en brugerdefineret kolonne på andre måder, f.eks. ved at oprette en kolonne baseret på eksempler, du angiver i Forespørgselseditor. Du kan finde flere oplysninger i [Tilføj en kolonne fra et eksempel i Power BI Desktop](desktop-add-column-from-example.md).
+
+- Du kan finde oplysninger om M-reference i Power Query i [M-funktionsreference i Power Query](/powerquery-m/power-query-m-function-reference).
 

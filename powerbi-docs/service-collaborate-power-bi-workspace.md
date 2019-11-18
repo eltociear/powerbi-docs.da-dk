@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 07/25/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 41aaf33602fc8a895d54666736d775ac53d5aaef
-ms.sourcegitcommit: 9665bdabce3bfc31f68dd8256b135bfd56f60589
+ms.openlocfilehash: 860aa1de5a91d98e6a50773250e89581fc1d9801
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68832440"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73021346"
 ---
 # <a name="collaborate-in-a-classic-workspace"></a>Samarbejd i et klassisk arbejdsområde
 Power BI-arbejdsområder er fantastiske steder, hvor du kan samarbejde med dine kolleger om dashboards, rapporter og datasæt for at oprette *apps*. Denne artikel omhandler de oprindelige, *klassiske* arbejdsområder.  
@@ -45,7 +45,7 @@ Når du har oprettet en Power BI Desktop-fil, kan du publicere den i et arbejdso
 ## <a name="collaborate-in-office-365"></a>Samarbejd i Office 365
 Samarbejde i Office 365 starter fra det klassiske arbejdsområde i Power BI.
 
-1. I Power BI-tjenesten skal du vælge pilen ud for **Arbejdsområder** > og derefter vælge ellipsen (…) ud for navnet på dit arbejdsområde. 
+1. I Power BI-tjenesten skal du vælge pilen ud for **Arbejdsområder** > og vælge **Flere indstillinger** (…) ud for navnet på dit arbejdsområde. 
    
    ![Menuen Arbejdsområder](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
 2. I denne menu kan du samarbejde med din gruppe på nogle få måder: 
@@ -56,7 +56,7 @@ Samarbejde i Office 365 starter fra det klassiske arbejdsområde i Power BI.
    Første gang du går til gruppearbejdsområdet i Office 365, kan det tage noget tid. Giv det 15 til 30 minutter, og opdater derefter din browser.
 
 ## <a name="have-a-group-conversation-in-office-365"></a>Hav en gruppesamtale i Office 365
-1. Vælg ellipsen (...) ud for navnet på dit arbejdsområde \> **Samtaler**. 
+1. Vælg **Flere indstillinger** (...) ud for navnet på dit arbejdsområde \> **Samtaler**. 
    
     ![Fanen Samtaler](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    
@@ -66,7 +66,7 @@ Samarbejde i Office 365 starter fra det klassiske arbejdsområde i Power BI.
 2. Læs mere om [gruppesamtaler i Outlook til Office 365](https://support.office.com/Article/Have-a-group-conversation-a0482e24-a769-4e39-a5ba-a7c56e828b22).
 
 ## <a name="schedule-an-event-on-the-group-workspace-calendar"></a>Planlæg en begivenhed i kalenderen for gruppearbejdsområdet
-1. Vælg ellipsen (...) ud for navnet på arbejdsområdet \> **Kalender**. 
+1. Vælg **Flere indstillinger** (...) ud for navnet på arbejdsområdet \> **Kalender**. 
    
    ![Fanen Kalender](media/service-collaborate-power-bi-workspace/power-bi-app-ellipsis.png)
    

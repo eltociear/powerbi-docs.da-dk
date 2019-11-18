@@ -2,7 +2,6 @@
 title: Vælg, hvilket dashboard der skal vises, når du åbner Power BI-tjenesten
 description: Dokumentation for, hvordan du opretter et Udvalgt dashboard i Power BI-tjenesten
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: G26dr2PsEpk
 ms.service: powerbi
@@ -11,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/14/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 7f7f488891ddbdac1f377d25cf32c2eb0468c291
-ms.sourcegitcommit: 02042995df12cc4e4b97eb8a369e62364eb5af36
+ms.openlocfilehash: 412bcf397d550e002957e7379bf41381e8e3eea8
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256316"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73852544"
 ---
 # <a name="featured-dashboards-in-the-power-bi-service"></a>Udvalgte dashboards i Power BI-tjenesten
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Mange af os har ét dashboard, som vi besøger oftere end andre. Det kan være det dashboard, vi bruger til at drive vores virksomhed. Det kan også være et dashboard, der indeholder en sammenlægning af felter fra mange forskellige dashboards og rapporter.
 
 ## <a name="create-a-featured-dashboard"></a>Opret et udvalgt dashboard
@@ -37,7 +39,7 @@ Se, hvordan Amanda opretter et udvalgt dashboard i videoen. Følg derefter trinn
 
 
 1. Åbn det dashboard, du vil angive som udvalgt. 
-2. Vælg ellipsen (...) på den øverste menulinje, og vælg **Angiv som udvalgt**. 
+2. Vælg **Flere indstillinger** (...) på den øverste menulinje, og vælg **Angiv som udvalgt**. 
    
     ![Angiv som udvalgt ikon](./media/end-user-featured/power-bi-dropdown.png)
 3. Bekræft dit valg.
@@ -58,11 +60,11 @@ Hvis du senere ændrer mening, kan du angive et nyt dashboard som udvalgt.
 Hvis du beslutter, at du ikke vil have et dashboard markeret som udvalgt, skal du gøre følgende for at fjerne markeringen.
 
 1. Åbn det dashboard, der i øjeblikket er markeret som udvalgt.
-2. Vælg ellipsen (...) på den øverste menulinje, og fjern markeringen **Deaktiver udvalgt**.
+2. Vælg **Flere indstillinger** (...) på den øverste menulinje, og vælg **Deaktiver udvalgt**.
 
     ![Deaktiver udvalgt dashboard er valgt](./media/end-user-featured/power-bi-unfeature-newer.png)
    
 ## <a name="next-steps"></a>Næste trin
 - [Gør et dashboard til favorit](end-user-favorite.md)
-- Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](http://community.powerbi.com/).
+- Har du flere spørgsmål? Prøv at spørge [Power BI-community'et](https://community.powerbi.com/).
 

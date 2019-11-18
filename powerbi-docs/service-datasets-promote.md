@@ -2,7 +2,6 @@
 title: Fremhæv dit datasæt (prøveversion) – Power BI
 description: Få mere at vide om, hvordan du fremhæver dit datasæt for at guide virksomhedsbrugere til pålidelige datasæt af høj kvalitet.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 07/03/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 681cd9f65713738e2b842bfa3404511f9e3a98f4
-ms.sourcegitcommit: b439ded53bfbbb58be27ecedf93d618f5158df33
+ms.openlocfilehash: 379249ac50f61df07c4adaffe53e0df29a311086
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/04/2019
-ms.locfileid: "67567346"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877123"
 ---
 # <a name="promote-your-dataset-preview"></a>Fremhæv dit datasæt (prøveversion)
 
@@ -30,7 +29,7 @@ Dit datasæt skal være placeret i et arbejdsområde med den nye arbejdsområdeo
 
 1. Gå til listen over datasæt i arbejdsområdet.
  
-1. Vælg ellipsen (...), og vælg derefter **Indstillinger**.
+1. Vælg **Flere indstillinger** (...), og vælg derefter **Indstillinger**.
 
     ![Vælg ellipsen ud for datasættet](media/service-datasets-certify-promote/power-bi-dataset-settings.png)
 
@@ -55,4 +54,4 @@ Din lejeradministrator har identificeret personer i din organisation, som kan ce
 ## <a name="next-steps"></a>Næste trin
 
 * Læs om [Brug af datasæt på tværs af arbejdsområder](service-datasets-across-workspaces.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

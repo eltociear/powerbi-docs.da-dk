@@ -2,19 +2,18 @@
 title: Favoritter i Power BI-mobilapps
 description: Læs, hvordan du føjer dine Power BI-dashboards, -rapporter og -apps samt rapporter og KPI'er i Power BI-rapportserver og Reporting Services til Favoritter og får dem vist i mobilapps.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 05/05/2018
 ms.author: mshenhav
-ms.openlocfilehash: 433bfc6298632eb9b999a23fe4b54417add507a3
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: c4fcf7bea8bf458231533efbc88e307d8d9ba2ab
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61339244"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870694"
 ---
 # <a name="make-and-view-favorites-in-the-power-bi-mobile-apps"></a>Føj til Favoritter, og få dem vist i Power BI-mobilapps
 Gælder for:
@@ -44,7 +43,7 @@ Du kan markere KPI'er og rapporter som favoritter på en Power BI-rapportserver 
   ![Siden Favoritter](./media/mobile-apps-favorites/power-bi-ipad-favorites.png)
 
 ## <a name="make-an-app-a-favorite"></a>Gør en app til favorit
-1. Tryk på ellipsen (...) ud for appen > **Favorit** på listen over apps i mobilappen.
+1. På listen over apps i mobilappen skal du trykke på **Flere indstillinger** (...) ud for appen > **Favoritter**.
    
     ![Appmenuen Favoritter](./media/mobile-apps-favorites/power-bi-android-favorite-app-ellipsis.png)
    
@@ -65,7 +64,7 @@ Du kan føje et Power BI-dashboard eller en Power BI-rapport til Favoritter fra 
 ## <a name="make-a-dashboard-or-report-a-favorite-in-the-android-mobile-apps"></a>Føj et dashboard eller en rapport til Favoritter i Android-mobilapps
 Du kan føje et dashboard eller en rapport til Favoritter fra listen over dashboards eller rapporter eller fra selve dashboardet eller rapporten.
 
-* Tryk på den lodrette ellipse (...) ud for navnet på listen over dashboards eller rapporter i mobilappen, og tryk derefter på **Føj til Favoritter**. Du vil derefter se en gul stjerne ud for navnet ![ikonet Favoritter](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png).
+* På listen over dashboards eller rapporter i mobilappen skal du trykke på knappen **Flere indstillinger** (...) ud for navnet og derefter trykke på **Favoritter**. Du vil derefter se en gul stjerne ud for navnet ![ikonet Favoritter](./././media/mobile-apps-favorites/power-bi-mobile-yes-favorite-icon.png).
   
     ![Android-menuen Favoritter](./media/mobile-apps-favorites/power-bi-android-make-favorite.png)
 * På dashboardet eller i rapporten skal du trykke på den tomme stjerne på båndet ![ikonet Ikke føjet til Favoritter](./././media/mobile-apps-favorites/power-bi-mobile-not-favorite-icon.png). Stjernen bliver mørkegrå ![ikonet Favoritter](./media/mobile-apps-favorites/power-bi-android-favorite-icon.png).
@@ -77,5 +76,5 @@ Du kan se dine foretrukne Power BI-rapportserver- og Reporting Services-rapporte
 
 ## <a name="next-steps"></a>Næste trin
 * [Foretrukne dashboards i Power BI-tjenesten](../end-user-favorite.md) 
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

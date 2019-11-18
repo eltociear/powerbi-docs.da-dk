@@ -8,15 +8,15 @@ ms.custom: seodec18
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: conceptual
-ms.date: 08/30/2019
+ms.date: 10/29/2019
 ms.author: maggies
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b158e968d0fd35859cfd293177a7273e8311d5b2
-ms.sourcegitcommit: d04b9e1426b8544ce16ef25864269cc43c2d9f7b
+ms.openlocfilehash: c53ce84610e68280c915d55466bc7cddd3c0cc92
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "71715303"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060740"
 ---
 # <a name="add-hyperlinks-urls-to-a-table"></a>Føj links (URL-adresser) til en tabel
 I dette emne lærer du, hvordan du føjer links (URL-adresser) til en tabel. Du kan bruge Power BI Desktop til at føje links (URL-adresser) til en tabel eller matrix. Derefter kan du bruge enten Power BI Desktop eller Power BI-tjenesten til at føje disse links til tabeller og matrixer i din rapport. 
@@ -44,7 +44,7 @@ Proceduren for at tilføje et link afhænger af, om du har importeret dataene el
     ![Blå og understregede links](media/power-bi-hyperlinks-in-tables/power-bi-table-with-hyperlinks2.png)
 
     > [!NOTE]
-    > URL-adresserne skal starte med **http:// , https://** eller **www**.
+    > URL-adresser skal starte med bestemte præfikser. Du kan se den komplette liste under [Overvejelser og fejlfinding](#considerations-and-troubleshooting).
     >
    
 1. Hvis du ikke vil vise en lang URL-adresse i en tabel, kan du vise et hyperlinkikon  ![Hyperlinkikon](media/power-bi-hyperlinks-in-tables/power-bi-hyperlink-icon.png) i stedet. Bemærk, at du ikke kan vise ikoner i matricer.
@@ -80,8 +80,9 @@ En anden metode til at tilføje links i dine Power BI-tabeller og -matricer er a
 4. Placer markøren i den kolonne, der indeholder de URL-adresser, du vil lave til links i Power BI-tabellerne.
    
    > [!NOTE]
-   > URL-adresserne skal starte med **http:// , https://** eller **www**.
+   > URL-adresser skal starte med bestemte præfikser. Du kan se den komplette liste under [Overvejelser og fejlfinding](#considerations-and-troubleshooting).
    > 
+   
 5. I gruppen **Egenskaber for rapportering** skal du vælge rullemenuen **Datakategori** og vælge **Web URL / Webadresse**. 
    
    ![Rulleliste med datakategorier i Excel](media/power-bi-hyperlinks-in-tables/createhyperlinksnew.png)
@@ -92,6 +93,16 @@ En anden metode til at tilføje links i dine Power BI-tabeller og -matricer er a
    ![Opret en tabel i Power BI med feltet URL-adresse](media/power-bi-hyperlinks-in-tables/hyperlinksintables.gif)
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
+
+URL-adresser skal starte med en af følgende:
+- http
+- https
+- -mailto
+- fil
+- ftp
+- nyheder
+- telnet
+
 Spørgsmål: Kan jeg bruge en brugerdefineret URL-adresse som et hyperlink i en tabel eller en matrix?    
 Svar: Nej. Du kan bruge et linkikon. Hvis du har brug for brugerdefineret tekst til dine hyperlinks, og din liste over URL-adresser er kort, bør du overveje at bruge et tekstfelt i stedet for.
 

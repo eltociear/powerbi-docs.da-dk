@@ -2,7 +2,6 @@
 title: Fastgør et felt fra ét dashboard til et andet dashboard
 description: Fastgør et felt fra ét dashboard til et andet dashboard
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 4fe3b56f1891423a80019186668dc55f361d580a
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 8e0c598d02b808e997bf0c1f47322e132860100c
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61225841"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881226"
 ---
 # <a name="pin-a-tile-from-one-dashboard-to-another-dashboard"></a>Fastgør et felt fra ét dashboard til et andet dashboard
 Én måde at tilføje et nyt [dashboardfelt](consumer/end-user-tiles.md) er ved at kopiere det fra et andet dashboard. Et klik på hvert af disse felter fungerer som et link tilbage til der, hvor det blev oprettet – enten i Spørgsmål og svar eller i en rapport. 
@@ -26,7 +25,7 @@ ms.locfileid: "61225841"
 ## <a name="pin-a-tile-to-another-dashboard"></a>Fastgør et felt til et andet dashboard
 1. [Hent data](service-get-data.md). Dette eksempel bruger [Eksemplet på analyse af it-forbrug](sample-it-spend.md).
 2. Åbn et [dashboard](consumer/end-user-dashboards.md).
-3. Hold musen over det felt, du vil fastgøre. Vælg ellipserne (...) og **Fastgør felt**.  
+3. Hold over det felt, du vil fastgøre. Vælg **Flere indstillinger** (...), og vælg **Fastgør felt**.  
    
    ![ellipsemenu](media/service-pin-tile-to-another-dashboard/power-bi-pin-another-dash.png)
 4. Fastgør feltet til et eksisterende dashboard eller et nyt dashboard. 
@@ -44,5 +43,5 @@ ms.locfileid: "61225841"
 ## <a name="next-steps"></a>Næste trin
 [Felter i Power BI](consumer/end-user-tiles.md)  
 [Dashboards i Power BI](consumer/end-user-dashboards.md)  
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

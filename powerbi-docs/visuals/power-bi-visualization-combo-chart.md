@@ -2,7 +2,6 @@
 title: Kombinationsdiagram i Power BI
 description: Dette selvstudium om kombinationsdiagrammer forklarer, hvornår de bruges, og hvordan de oprettes i Power BI-tjenesten og Desktop.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 featuredvideoid: lnv66cTZ5ho
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/22/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 97c01966750d888f3420d265eb3f252b3a8f57d3
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: 03a426947787cbd2720661267cac4601a4b9b13a
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71194932"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880951"
 ---
 # <a name="combo-chart-in-power-bi"></a>Kombinationsdiagram i Power BI
 
@@ -36,7 +35,7 @@ Kombinationsdiagrammer er et fantastisk valg i følgende tilfælde:
 * Til at spare plads på lærredet.
 
 ### <a name="prerequisites"></a>Forudsætninger
-I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](http://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
+I dette selvstudium bruges [PBIX-filen med eksemplet Detailhandelsanalyse](https://download.microsoft.com/download/9/6/D/96DDC2FF-2568-491D-AAFA-AFDD6F763AE3/Retail%20Analysis%20Sample%20PBIX.pbix).
 
 1. Vælg **Fil** > **Åbn** i øverste venstre afsnit af menulinjen
    
@@ -67,7 +66,7 @@ Se, hvordan Will opretter et kombinationsdiagram ved hjælp af salgs- og marketi
     c. Vælg **Time**\>**FiscalMonth** for at føje det til beholderen **Axis**.
 
     ![eksempel på selvstudium med kombinationsdiagram](media/power-bi-visualization-combo-chart/combotutorial1new.png)
-5. Vælg ellipsen (...) i øverste højre hjørne af visualiseringen, og vælg **Sortér efter > FiscalMonth**. Hvis du vil ændre sorteringsrækkefølgen, skal du vælge ellipsen igen og vælge enten **Sortér stigende** eller **Sortér faldende**. I dette eksempel bruger vi **Sortér stigende**.
+5. Vælg **Flere indstillinger** (...) i øverste højre hjørne af visualiseringen, og vælg **Sortér efter > FiscalMonth**. Hvis du vil ændre sorteringsrækkefølgen, skal du vælge ellipsen igen og vælge enten **Sortér stigende** eller **Sortér faldende**. I dette eksempel bruger vi **Sortér stigende**.
 
 6. Konvertér søjlediagrammet til et kombinationsdiagram. Der er to kombinationsdiagrammer: **Kurvediagram og stablet søjlediagram** og **Kurvediagram og grupperet søjlediagram**. Vælg søjlediagrammet, og vælg derefter **Line and clustered column chart** fra fanen **Visualizations**.
 
@@ -90,7 +89,7 @@ I januar var BM% på 35 %, den steg til 45 % i april, faldt i juli og steg igen 
 2. Tilføj **This Year Sales > Value** og **Last Year Sales** i kurvediagrammet. Skalaen for **Gross Margin Last Year %** er meget mindre end skalaen for **Sales**, hvilket gør det svært at sammenligne.      
 
    ![eksempel på flatline i kombinationsdiagram](media/power-bi-visualization-combo-chart/flatline-new.png)
-3. Hvis du vil gøre det nemmere at læse og fortolke en visualisering, skal du konvertere kurvediagrammet til et Kurve- og stablet søjlediagram.
+3. Hvis du vil gøre det nemmere at læse og fortolke en visual, skal du konvertere kurvediagrammet til et Kurve- og stablet søjlediagram.
 
    ![eksempel på konvertering til kombinationsdiagram](media/power-bi-visualization-combo-chart/converttocombo-new.png)
 
@@ -122,9 +121,9 @@ Nu kan du f.eks.:
 * [Gem rapporten](../service-report-save.md).
 * [Gør rapporten tilgængelig for personer med handicap](../desktop-accessibility.md).
 
-## <a name="cross-highlighting-and-cross-filtering"></a>Krydsfremhævning og krydsfiltrering
+## <a name="cross-highlighting-and-cross-filtering"></a>Tværgående fremhævning og krydsfiltrering
 
-Fremhævning af en kolonne eller kurve i kombinationsdiagrammet fører til krydsfremhævning og krydsfiltrering af andre visualiseringer på rapportsiden... og omvendt. Hvis du vil ændre denne standardfunktionsmåde, skal du bruge [visuelle interaktioner](../service-reports-visual-interactions.md).
+Fremhævning af en kolonne eller kurve i kombinationsdiagrammet fører til tværgående fremhævning og krydsfiltrering af andre visualiseringer på rapportsiden... og omvendt. Hvis du vil ændre denne standardfunktionsmåde, skal du bruge [visuelle interaktioner](../service-reports-visual-interactions.md).
 
 ## <a name="next-steps"></a>Næste trin
 

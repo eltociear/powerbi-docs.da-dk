@@ -2,7 +2,6 @@
 title: 'Organisationsindholdspakker: Få adgang til, og kopiér'
 description: Læs, hvordan du opretter kopier af og foretager fejlfinding af adgang til organisationsindholdspakkerne i Power BI
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: lukaszp, kayu
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86fa7a7845686fd46e9d58ea138bdddd47a0a097
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: 905e461c69a898b41b45e48405c3aaaa6e09cfec
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72019636"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881320"
 ---
 # <a name="organizational-content-packs-copy-refresh-and-get-access"></a>Organisationsindholdspakker: Kopiér, opdater og få adgang
 
@@ -30,7 +29,7 @@ Oprettelse af indholdspakker adskiller sig fra deling af dashboards eller samarb
 ## <a name="create-a-copy-of-an-organizational-content-pack"></a>Opret en kopi af en organisationsindholdspakke
 Opret din egen kopi af indholdspakken, som ikke kan ses af andre.
 
-1. Klik på de tre prikker (...) ud for indholdspakkens dashboard > Opret en kopi.
+1. Vælg **Flere indstillinger** (...) ud for dashboardet med indholdspakken > Opret en kopi.
 
     ![](media/service-organizational-content-pack-copy-refresh-access/power-bi-create-copy-organizational-content-pack.png)
 2. Vælg **Gem**.  
@@ -58,4 +57,4 @@ Se [Administrer, opdater og slet organisationsindholdspakker](service-organizati
 ## <a name="next-steps"></a>Næste trin
 * [Introduktion til organisationsindholdspakker](service-organizational-content-pack-introduction.md)
 * [Opret en gruppe i Power BI](service-create-distribute-apps.md)
-* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

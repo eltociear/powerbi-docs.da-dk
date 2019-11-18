@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/02/2018
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 86b7a5e93183c06d6cac1445cb1702edde5d4bc9
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: f2a80b075a56cdeccfa4c3675cdf31504b6a7e5d
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020603"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431776"
 ---
 # <a name="manage-update-and-delete-organizational-content-packs"></a>Administrer, opdater og slet organisationsindholdspakker
 > [!NOTE]
@@ -71,14 +71,14 @@ En anden ændring, der er tilgængelig for oprettere af indholdspakker, er at ud
 Da du har oprettet indholdspakken, kan du [planlægge en opdatering af datasættene](refresh-data.md).  Når du opretter og uploader indholdspakken, uploades denne tidsplan for opdatering sammen med datasættet. Hvis du ændrer tidsplanen for opdatering, skal du publicere indholdspakken igen (se ovenfor).
 
 ## <a name="delete-an-organizational-content-pack-from-appsource"></a>Slet en organisationsindholdspakke fra AppSource
-Du kan kun slette en indholdspakke fra AppSource, hvis du har oprettet den. Hvis du har oprettet en organisationsindholdspakke i apparbejdsområdet, og du derefter beslutter, at du vil slette arbejdsområdet, skal du først slette indholdspakken. Hvis du sletter arbejdsområdet uden at slette indholdspakken først, kan du mister al adgang til indholdspakkerne, og du skal kontakte Microsoft Support for at få hjælp. 
+Du kan kun slette en indholdspakke fra AppSource, hvis du har oprettet den. Hvis du har oprettet en organisationsindholdspakke i et arbejdsområde, og du derefter beslutter, at du vil slette dette arbejdsområde, skal du først slette indholdspakken. Hvis du sletter arbejdsområdet uden at slette indholdspakken først, kan du mister al adgang til indholdspakkerne, og du skal kontakte Microsoft Support for at få hjælp. 
 
 > [!TIP]
 > Du kan [slette din forbindelse til en indholdspakke](service-organizational-content-pack-disconnect.md), du ikke har oprettet. Det sletter ikke indholdspakken fra AppSource.
 > 
 > 
 
-1. Hvis du vil slette en indholdspakke fra AppSource, skal du gå til apparbejdsområdet, hvor du oprettede indholdspakken, vælge tandhjulsikonet ![](media/service-organizational-content-pack-manage-update-delete/cog.png) og vælge **Se indholdspakker**.
+1. Hvis du vil slette en indholdspakke fra AppSource, skal du gå til det arbejdsområde, hvor du oprettede indholdspakken, vælge tandhjulsikonet ![](media/service-organizational-content-pack-manage-update-delete/cog.png) og vælge **Se indholdspakker**.
 2. Vælg **Slet \> Slet**. 
    
    * For gruppemedlemmer, som ikke har tilpasset indholdspakken, fjernes de dashboards og rapporter, der er knyttet til denne indholdspakke, automatisk. De er ikke længere tilgængelige, og indholdspakken vises ikke i navigationsruden.

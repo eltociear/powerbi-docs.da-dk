@@ -2,19 +2,18 @@
 title: Del et dashboard eller en rapport fra Power BI-mobilappsene
 description: Inviter andre til at få vist dine dashboards og rapporter ved at dele links fra Power BI-mobilapps. Få mere at vide om, hvordan du gør.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 03/20/2018
 ms.author: mshenhav
-ms.openlocfilehash: 75d315463601110dee61d293a7a41abbf30aaa2d
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 232d311e876a5fe01eb6c8091eb7a83669592cbf
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "61274329"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879090"
 ---
 # <a name="share-a-dashboard-or-report-from-the-power-bi-mobile-apps"></a>Del et dashboard eller en rapport fra Power BI-mobilappsene
 Gælder for:
@@ -86,7 +85,7 @@ Du kan kun stoppe med at dele, hvis du er ejer.
 3. Hvis du vil annullere deling, skal du trykke på den røde cirkel ud for et navn og trykke på **Slet**.
 
 ## <a name="share-from-your-android-device"></a>Del fra din Android-enhed
-1. Tryk på ellipsen (...) på startsiden for dashboardet eller rapporten, og tryk på **Inviter en kollega**.
+1. Tryk på **Flere indstillinger** (...) på startsiden for dashboardet eller rapporten, og tryk på **Inviter en kollega**.
    
    ![Inviter en kollega](./media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-tablet-share-dashboard.png)
 2. Eller tryk på invitationsikonet på et dashboard eller i en rapport ![Ikonet Inviter](././media/mobile-share-dashboard-from-the-mobile-apps/power-bi-android-invite-icon.png).
@@ -147,5 +146,5 @@ Du kan kun stoppe med at dele, hvis du er ejer.
 ## <a name="next-steps"></a>Næste trin
 * [Anmærk og del et snapshot af et felt, en rapport eller en visualisering i mobilapps](mobile-annotate-and-share-a-tile-from-the-mobile-apps.md)
 * [Del et dashboard eller en rapport i Power BI](../../service-share-dashboards.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

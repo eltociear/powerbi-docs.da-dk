@@ -2,7 +2,6 @@
 title: Brug overvågning i din organisation
 description: Få mere at vide om, hvordan du kan bruge overvågning med Power BI til at overvåge og undersøge udførte handlinger. Du kan bruge Security & Compliance Center eller PowerShell.
 author: mgblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.date: 09/09/2019
 ms.author: mblythe
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: aef5a8861a42e566086198c924c99d0b73406f60
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 76de629f1579289ea3b702013583911d05f08408
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71325449"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73873781"
 ---
 # <a name="use-auditing-within-your-organization"></a>Brug overvågning i din organisation
 
@@ -162,7 +161,9 @@ Følgende aktiviteter overvåges af Power BI:
 | Administratoren har knyttet dataflowlagerkontoen til lejer | AdminAttachedDataflowStorageAccountToTenant | Anvendes ikke i øjeblikket                       |
 | Analyseret Power BI-datasæt                         | AnalyzedByExternalApplication               |                                          |
 | Power BI-rapport er analyseret                          | AnalyzeInExcel                              |                                          |
+| Tilknyttet lagerkonto for dataflow                 | AttachedDataflowStorageAccount              |                                          |
 | Bundne Power BI-datasæt til gateway                | BindToGateway                               |                                          |
+| Annulleret opdatering af dataflow                        | CancelDataflowRefresh                       |                                          |
 | Kapacitetstilstand er ændret                            | ChangeCapacityState                         |                                          |
 | Kapacitet for brugertildeling er ændret                  | UpdateCapacityUsersAssignment               |                                          |
 | Power BI-datasætforbindelser er ændret              | SetAllConnections                           |                                          |
@@ -194,6 +195,7 @@ Følgende aktiviteter overvåges af Power BI:
 | Power BI-rapport er slettet                           | DeleteReport                                |                                          |
 | Datakilder til Power BI-datasæt er fundet          | GetDatasources                              |                                          |
 | Downloadet Power BI-rapport                        | DownloadReport                              |                                          |
+| Redigerede egenskaber for dataflow                        | EditDataflowProperties                      |                                          |
 | Power BI-certificeringstilladelse blev redigeret          | EditCertificationPermission                 | Ikke anvendt i øjeblikket                       |
 | Power BI-dashboard er redigeret                         | EditDashboard                               | Anvendes ikke i øjeblikket                       |
 | Power BI-datasæt er redigeret                           | EditDataset                                 |                                          |
@@ -213,7 +215,7 @@ Følgende aktiviteter overvåges af Power BI:
 | Power BI-dashboard er udskrevet                        | PrintDashboard                              |                                          |
 | Power BI-rapportside er udskrevet                      | PrintReport                                 |                                          |
 | Power BI-rapport er publiceret på internettet                  | PublishToWebReport                          |                                          |
-| Power BI-dataflowhemmelighed er modtaget fra Key Vault  | ReceiveDataflowSecretFromKeyVault           | Anvendes ikke i øjeblikket                       |
+| Power BI-dataflowhemmelighed er modtaget fra Key Vault  | ReceiveDataflowSecretFromKeyVault           |                                          |
 | Datakilde fjernet fra Power BI-gateway         | RemoveDatasourceFromGateway                 |                                          |
 | Power BI-gruppemedlemmer er fjernet                    | DeleteGroupMembers                          |                                          |
 | Arbejdsområde er fjernet fra en kapacitet                 | RemoveWorkspacesFromCapacity                |                                          |
@@ -221,6 +223,7 @@ Følgende aktiviteter overvåges af Power BI:
 | Der er anmodet om opdatering af Power BI-dataflowet               | RequestDataflowRefresh                      | Anvendes ikke i øjeblikket                       |
 | Der er anmodet om opdatering af Power BI-datasættet                | RefreshDataset                              |                                          |
 | Power BI-arbejdsområder er hentet                     | GetWorkspaces                               |                                          |
+| Angiv lagringsplacering for et arbejdsområdes dataflow     | SetDataflowStorageLocationForWorkspace      |                                          |
 | Angiv planlagt opdatering af Power BI-dataflow        | SetScheduledRefreshOnDataflow               |                                          |
 | Angiv planlagt opdatering af Power BI-datasæt         | SetScheduledRefresh                         |                                          |
 | Power BI-dashboard er delt                         | ShareDashboard                              |                                          |
@@ -229,10 +232,12 @@ Følgende aktiviteter overvåges af Power BI:
 | Power BI-prøveperiode er startet                            | OptInForProTrial                            |                                          |
 | Power BI-datakilde er overtaget                   | TakeOverDatasource                          |                                          |
 | Power BI-datasæt er overtaget                        | TakeOverDataset                             |                                          |
+| Overtog et Power BI-dataflow                     | TookOverDataflow                             |                                          |
 | Publicering af Power BI-app er fjernet                          | UnpublishApp                                |                                          |
 | Opdater indstillinger for ressourcestyring af kapacitet      | UpdateCapacityResourceGovernanceSettings    | Findes i øjeblikket ikke i Microsoft 365 Administration |
 | Kapacitetsadministrator er opdateret                            | UpdateCapacityAdmins                        |                                          |
 | Vist navn for kapacitet er opdateret                     | UpdateCapacityDisplayName                   |                                          |
+| Opdaterede tilladelser for tildeling af dataflowlager   | UpdatedDataflowStorageAssignmentPermissions |                                          |
 | Power BI-indstillinger for organisation er opdateret          | UpdatedAdminFeatureSwitch                   |                                          |
 | Power BI-appen er opdateret                              | UpdateApp                                   |                                          |
 | Power BI-dataflowet er opdateret                         | UpdateDataflow                              |                                          |
@@ -255,4 +260,4 @@ Følgende aktiviteter overvåges af Power BI:
 
 [Power BI-administrationsportal](service-admin-portal.md)  
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

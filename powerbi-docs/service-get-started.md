@@ -10,15 +10,15 @@ ms.topic: tutorial
 ms.date: 09/05/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 49504343b076d7e2371c45005da24e35831bf506
-ms.sourcegitcommit: 9665997274301b228f45aa7250ba557e90164a4d
+ms.openlocfilehash: 681c55f4425729b96860367858273d7eb1ad73b6
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70751228"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73060405"
 ---
 # <a name="tutorial-get-started-with-the-power-bi-service"></a>Selvstudium: Kom i gang med Power BI-tjenesten
-Dette selvstudium er en introduktion til nogle af funktionerne i *Power BI-tjenesten.* I selvstudiet lærer du, hvordan du opretter forbindelse til data, opretter en rapport og et dashboard samt stiller spørgsmål til dine data. Du kan udføre mange flere opgaver i Power BI-tjenesten, og dette selvstudium er kun ment som en appetitvækker. Hvis du vil have en forståelse af, hvordan Power BI-tjenesten passer sammen med de andre Power BI-tilbud, anbefaler vi, at du læser artiklen [Hvad er Power BI](power-bi-overview.md).
+Dette selvstudium er en introduktion til nogle af funktionerne i *Power BI-tjenesten.* I selvstudiet lærer du, hvordan du opretter forbindelse til data, opretter en rapport og et dashboard samt stiller spørgsmål til dine data. Du kan udføre mange flere opgaver i Power BI-tjenesten, og dette selvstudium er kun ment som en appetitvækker. Hvis du vil have en forståelse af, hvordan Power BI-tjenesten passer sammen med de andre Power BI-tilbud, anbefaler vi, at du læser artiklen [Hvad er Power BI](fundamentals/power-bi-overview.md).
 
 ![Startsiden i Power BI-tjenesten](media/service-get-started/power-bi-service-get-started-home.png)
 
@@ -115,7 +115,7 @@ Nu hvor du har forbindelse til data, kan du begynde at udforske.  Vi har fundet 
    
 8. Vælg det nye felt på dashboardet for at vende tilbage til rapporten. Power BI vender tilbage til rapporten i Læsevisning. 
 
-1. Hvis du vil skifte tilbage til Redigeringsvisning, skal du vælge ellipsen (...) på den øverste navigationslinje > **Rediger**. Når du er tilbage i Redigeringsvisning, kan du fortsætte med at udforske og fastgøre felter.
+1. Hvis du vil skifte tilbage til Redigeringsvisning, skal du vælge **Flere indstillinger** (...) på den øverste navigationslinje > **Rediger**. Når du er tilbage i Redigeringsvisning, kan du fortsætte med at udforske og fastgøre felter.
 
     ![Vælg Rediger for at redigere rapporten](media/service-get-started/power-bi-service-edit-report.png)
 
@@ -200,7 +200,7 @@ Nu, hvor du har gennemført selvstudiet, kan du slette datasættet, rapporten og
 
 1. Sørg for, at du er i **Mit arbejdsområde**, på venstre navigationslinje.
 2. Vælg fanen **Datasæt**, og find det datasæt, du har importeret i dette selvstudium.  
-3. Vælg ellipsen (...) > **Slet**.
+3. Vælg **Flere indstillinger** (...) > **Slet**.
 
     ![Slet datasættet](media/service-get-started/power-bi-service-delete-dataset.png)
 

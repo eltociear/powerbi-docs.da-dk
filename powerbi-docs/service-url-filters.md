@@ -3,20 +3,19 @@ title: Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i U
 description: Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen til URL-adressen, du kan endda filtrere på mere end ét felt.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 07/25/2019
+ms.date: 10/23/2019
 LocalizationGroup: Reports
-ms.openlocfilehash: 9e2b1132e48e824b70ddb0e0d86bfed4efedff2f
-ms.sourcegitcommit: bc688fab9288ab68eaa9f54b9b59cacfdf47aa2e
+ms.openlocfilehash: be45941e67417cbed15433405953cf728fe0aa8d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68623900"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876918"
 ---
 # <a name="filter-a-report-using-query-string-parameters-in-the-url"></a>Filtrer en rapport ved hjælp af parametre for forespørgselsstrengen i URL-adressen
 
@@ -153,7 +152,7 @@ Specialtegn og mellemrum kræver yderligere formatering. Når din forespørgsel 
 |---------|---------|---------|
 |**Tabelnavn**     | Området er 0x20        |  Navn_x0020_på_x0020_tabel       |
 |**Kolonne**@**tal**     |   @ er 0x40     |  Kolonne_x0040_tal       |
-|**[Kolonne]**     |  [ er 0x0058 ] er 0x0050       |  _x0058_Kolonne_x0050_       |
+|**[Kolonne]**     |  [er 0x005B] er 0x005D       |  _x005B_Column_x005D_       |
 |**Kolonne+Plus**     | + er 0x2B        |  Kolonne_x002B_Plus       |
 
 Navn_x0020_på_x0020_tabel/Kolonne_x002B_Plus eq 3 ![specialtegn til gengivelse af tabelvisualisering](media/service-url-filters/power-bi-special-characters1.png)
@@ -195,4 +194,4 @@ Der er et par ting, du skal være opmærksom på, når du bruger parametre for f
 [Fastgør en visualisering til et dashboard](service-dashboard-pin-tile-from-report.md)  
 [Tilmeld dig en gratis prøveversion](https://powerbi.microsoft.com/get-started/)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

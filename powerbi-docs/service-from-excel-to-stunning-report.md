@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/12/2019
 ms.author: maggies
 LocalizationGroup: Data from files
-ms.openlocfilehash: ed4bc9d10e3e1512aba559d77ba8729a39cb8a84
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 6c393611851e05c7c76983674f2e1de7b5454898
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68995134"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020986"
 ---
 # <a name="from-excel-workbook-to-stunning-report-in-the-power-bi-service"></a>Fra Excel-projektmappe til fantastisk rapport i Power BI-tjenesten
 Din chef vil gerne se en rapport om dine seneste salgstal kombineret med dine seneste kampagneannoncer, inden dagen er omme. Men de nyeste data befinder sig i forskellige systemer hos tredjeparter og i filer på din bærbare computer. Tidligere har det taget timer at oprette visuelle elementer og formatere en rapport, og du er ved at være lidt nervøs.
@@ -111,7 +111,7 @@ Hvad med at vise en visual for salg efter produkt og markedssegment? Nemt nok.
 
 2. Du kan ændre diagramtypen ved at vælge et af ikonerne i menuen **Visualiseringer**. Du kan f.eks. ændre det til et **stablet liggende søjlediagram**. 
 
-3. Vælg ellipsen (...) > **Sortér efter** for at sortere diagrammet.
+3. Hvis du vil sortere diagrammet, skal du vælge **Flere indstillinger** (...) > **Sortér efter**.
 
    ![Stablet søjlediagram i rapporteditor](media/service-from-excel-to-stunning-report/pbi_barchart-new.png)
 

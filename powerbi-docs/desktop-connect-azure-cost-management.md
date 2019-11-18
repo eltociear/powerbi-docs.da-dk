@@ -1,6 +1,6 @@
 ---
 title: Opret forbindelse til Azure Cost Management-data i Power BI Desktop
-description: Du kan nemt oprette forbindelse til Azure og få indsigt i forbrugsstyring ved hjælp af Power BI Desktop
+description: Du kan nemt oprette forbindelse til Azure og få indsigt i dine omkostninger og forbrug af Azure ved hjælp af Power BI Desktop
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -11,21 +11,21 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 1ef9deac169873d7faee33abdae9f8f38aa09c6d
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: dccae9f8f9519495da9056599939169e7157873c
+ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72308001"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72891763"
 ---
-# <a name="connect-to-azure-cost-management-data-in-power-bi-desktop"></a>Opret forbindelse til Azure Cost Management-data i Power BI Desktop
+# <a name="connect-to-azure-cost-management-in-power-bi-desktop"></a>Opret forbindelse til Azure Cost Management i Power BI Desktop
 
 Du kan bruge Azure Cost Management Connector til Power BI Desktop til at oprette effektive, brugerdefinerede visualiseringer og rapporter, der hjælper dig med bedre at forstå dit Azure-forbrug. Connectoren Azure Cost Management understøtter i øjeblikket kunder med en [Microsoft-kundeaftale](https://azure.microsoft.com/pricing/purchase-options/microsoft-customer-agreement/) eller en [Enterprise-aftale](https://azure.microsoft.com/pricing/enterprise-agreement/).  
 
-Azure Cost Management-connectoren bruger OAuth 2.0 til godkendelse med Azure. Hvis du vil oprette forbindelse, skal du bruge en [Enterprise-administratorkonto](https://docs.microsoft.com/azure/billing/billing-understand-ea-roles) til Enterprise-aftaler eller en [faktureringskontoejer](https://docs.microsoft.com/azure/billing/billing-understand-mca-roles) for Microsoft-kundeaftaler. 
+Azure Cost Management-connectoren bruger OAuth 2.0 til godkendelse i Azure og identificerer de brugere, der skal bruge connectoren. Tokens, der genereres i denne proces, er gyldige i en bestemt periode. Power BI gemmer tokenet til næste logon. OAuth 2.0 er en standard for den proces, der foregår i baggrunden for at sikre sikker håndtering af disse tilladelser. Hvis du vil oprette forbindelse, skal du bruge en [Enterprise-administratorkonto](https://docs.microsoft.com/azure/billing/billing-understand-ea-roles) til Enterprise-aftaler eller en [faktureringskontoejer](https://docs.microsoft.com/azure/billing/billing-understand-mca-roles) for Microsoft-kundeaftaler. 
 
 > [!NOTE]
-> Denne connector erstatter den tidligere tilgængelige [Azure Cost Management-connector (beta)](desktop-connect-azure-consumption-insights.md). Alle rapporter, der er oprettet med den forrige connector, skal oprettes igen ved hjælp af denne connector.
+> Denne connector erstatter de tidligere tilgængelige connectorer [Azure Consumption Insights og Azure Cost Management (beta)](desktop-connect-azure-consumption-insights.md). Alle rapporter, der er oprettet med den forrige connector, skal oprettes igen ved hjælp af denne connector.
 
 ## <a name="connect-using-azure-cost-management"></a>Opret forbindelse vha. Azure Cost Management
 

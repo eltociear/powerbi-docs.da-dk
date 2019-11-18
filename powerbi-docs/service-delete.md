@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/11/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 087fe859c7b1a8ca732619866d492f143ff413c9
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: b010cfafc15c905cd792b9693777af94149cb1fe
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61157548"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431978"
 ---
 # <a name="delete-almost-anything-in-power-bi-service"></a>Slet næsten alt i Power BI-tjenesten
 I denne artikel kan du lære, hvordan du sletter et dashboard, en rapport, en projektmappe, et datasæt, en app og et arbejdsområde i Power BI-tjenesten.
@@ -71,7 +71,7 @@ Hvis et datasæt er en del af en eller flere [organisationsindholdspakker](servi
 
 ### <a name="to-delete-a-dataset"></a>Sådan sletter du et datasæt
 1. Vælg fanen **Datasæt** i dit arbejdsområde.
-2. Find det datasæt, du vil slette, og vælg ellipserne (...).  
+2. Find det datasæt, du vil slette, og vælg **Flere indstillinger** (...).  
 
     ![Fanen Datasæt](media/service-delete/power-bi-delete-datasetnew.png)
 3. Vælg **Slet** på rullelisten.
@@ -81,40 +81,41 @@ Hvis et datasæt er en del af en eller flere [organisationsindholdspakker](servi
 
    ![Dialogboksen Slet dashboard](media/service-delete/power-bi-delete-dataset-confirm.png)
 
-## <a name="delete-an-app-workspace"></a>Slet et apparbejdsområde
+## <a name="delete-a-workspace"></a>Slet et arbejdsområde
 > [!WARNING]
-> Når du opretter et apparbejdsområde, opretter du en Office 365-gruppe. Når du sletter et apparbejdsområde, sletter du denne Office 365-gruppe. Det betyder, at gruppen også slettes fra andre O365-produkter, f.eks. SharePoint og Microsoft Teams.
+> Når du opretter et arbejdsområde, opretter du en Office 365-gruppe. Når du sletter et arbejdsområde, sletter du denne Office 365-gruppe. Det betyder, at gruppen også slettes fra andre O365-produkter, f.eks. SharePoint og Microsoft Teams.
 >
 >
 
-Som forfatter af apparbejdsområdet, kan du slette det. Når du sletter det, slettes den tilknyttede app også for alle gruppemedlemmer, og den fjernes fra din AppSource, hvis du har udgivet appen i hele organisationen. Sletning af et apparbejdsområde adskiller sig fra at forlade et apparbejdsområde.
+Som forfatter af arbejdsområdet, kan du slette det. Når du sletter det, slettes den tilknyttede app også for alle gruppemedlemmer, og den fjernes fra din AppSource, hvis du har udgivet appen i hele organisationen. Det er ikke det samme at slette et arbejdsområde som at forlade et arbejdsområde.
 
-### <a name="to-delete-an-app-workspace---if-you-are-an-admin"></a>Sådan sletter du et apparbejdsområde – hvis du er administrator
+### <a name="to-delete-a-workspace---if-you-are-an-admin"></a>Sådan sletter du et arbejdsområde – hvis du er administrator
 1. Vælg **Arbejdsområder** i navigationen til venstre.
 
-    ![Apparbejdsområder](media/service-delete/power-bi-delete-workspace.png)
-2. Vælg ellipsen (...) til højre for det arbejdsområde, der skal slettes, og vælg **Rediger arbejdsområde**.
+2. Vælg **Flere indstillinger** (...) til højre for det arbejdsområde, der skal slettes, og vælg **Rediger arbejdsområde**.
 
-   ![ellipsemenu > Rediger arbejdsområde](media/service-delete/power-bi-edit-workspace.png)
+    ![arbejdsområder](media/service-delete/power-bi-delete-workspace.png)
+
 3. I vinduet **Rediger arbejdsområde** skal du vælge **Slet arbejdsområde** > **Slet**.
 
     ![slet arbejdsområde](media/service-delete/power-bi-delete-workspace2.png)
 
-### <a name="to-remove-an-app-workspace-from-your-list"></a>Sådan fjerner du et apparbejdsområde fra din liste
-Hvis du vil ikke længere være medlem af et apparbejdsområde, kan du ***forlade*** det, så fjernes det fra din liste. Selvom du forlader et arbejdsområde, har alle andre medlemmer af arbejdsområdet det stadig.  
+### <a name="to-remove-a-workspace-from-your-list"></a>Sådan fjerner du et arbejdsområde fra din liste
+Hvis du ikke længere vil være medlem af et arbejdsområde, kan du ***forlade*** det, så fjernes det fra din liste. Selvom du forlader et arbejdsområde, har alle andre medlemmer af arbejdsområdet det stadig.  
 
 > [!IMPORTANT]
-> Hvis du er den eneste administrator af apparbejdsområdet, tillader Power BI ikke, at du forlader det.
+> Hvis du er den eneste administrator af arbejdsområdet, tillader Power BI ikke, at du forlader det.
 >
 >
 
-1. Start i det apparbejdsområde, du vil fjerne.
-2. I øverste højre hjørne skal du vælge ellipsen (...) og vælge **Forlad arbejdsområde** > **Forlad**.
+1. Start i det arbejdsområde, du vil fjerne.
+
+2. Vælg **Flere indstillinger** (...) i øverste højre hjørne, og vælg **Forlad arbejdsområde** > **Forlad**.
 
       ![forlad arbejdsområde](media/service-delete/power-bi-leave-workspace.png)
 
    > [!NOTE]
-   > De indstillinger, du kan se på rullelisten, afhænger af, om du er administrator eller medlem af dette apparbejdsområde.
+   > De indstillinger, du kan se på rullelisten, afhænger af, om du er administrator eller medlem af det pågældende arbejdsområde.
    >
    >
 

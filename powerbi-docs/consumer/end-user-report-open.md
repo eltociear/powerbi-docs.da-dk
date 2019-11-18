@@ -9,14 +9,17 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2018
 ms.author: mihart
-ms.openlocfilehash: 2a4c9044f661d9d5b822ba366c3a88c572136b35
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: fab986cbd5c6b0a55c18157d663eea1ca0fd537e
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903805"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019458"
 ---
 # <a name="view-a-report-in-the-power-bi-service-for-consumers"></a>Få vist en rapport i Power BI-tjenesten for *forbrugere*
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 En rapport er en eller flere sider med visualiseringer. Rapporter oprettes af Power BI-*designere* og [deles med *forbrugere* direkte](end-user-shared-with-me.md) eller som en del af en [app](end-user-apps.md). 
 
 Der er mange forskellige måder at åbne en rapport på. Her kan du se to af dem: Åbn fra startsiden, og åbn fra et dashboard. 
@@ -52,7 +55,7 @@ Power BI-*designere* kan dele en individuel rapport direkte med dig via et link 
 
 6. Læg mærke til ruden **Filtre** langs højre side. De filtre, der er anvendt på denne rapportside eller i hele rapporten, vises her.
 
-7. Når du holder markøren over en rapportvisualisering, vises flere ikoner og en ellipse (...). Hvis du vil se de filtre, der er anvendt på en bestemt visualisering, skal du vælge filterikonet. Her har vi valgt filterikonet for kurvediagrammet *Total units by rolling period and region*.
+7. Når du holder over en rapportvisualisering, vises flere ikoner og **Flere indstillinger** (...). Hvis du vil se de filtre, der er anvendt på en bestemt visualisering, skal du vælge filterikonet. Her har vi valgt filterikonet for kurvediagrammet *Total units by rolling period and region*.
 
    ![faner på rapportside](./media/end-user-report-open/power-bi-visual-filters.png)
 
@@ -102,6 +105,7 @@ Når du bliver mere fortrolig med at navigere i Power BI-tjenesten, finder du ud
 - Brug [Få vist relaterede](end-user-related.md)    
 - Via en mail, når nogen [deler med dig](../service-share-reports.md), eller du [angiver en advarsel](end-user-alerts.md)    
 - Fra dit [Meddelelsescenter](end-user-notification-center.md)    
+- Fra et arbejdsområde
 - og meget mere
 
 ## <a name="next-steps"></a>Næste trin

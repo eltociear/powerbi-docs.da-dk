@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 10/01/2018
-ms.openlocfilehash: 8a48ec007f2d8c9c07de5cc0d51049e3dbf19662
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 06901a484ca53881f30cc71d9a7404807ac6cd57
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61269327"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429127"
 ---
 # <a name="power-bi-permissions"></a>Power BI-tilladelser
 
@@ -42,7 +42,7 @@ Med Power BI-tilladelser får et program mulighed for at foretage visse handling
 Et program kan anmode om tilladelser, når det forsøger at logge på en brugers side for første gang, ved at sende de ønskede tilladelser i parameteren for omfanget i forbindelse med kaldet. Hvis tilladelserne gives, returneres der et adgangstoken til appen, som kan bruges ved fremtidige API-kald. Adgangen kan kun bruges af et bestemt program.
 
 > [!NOTE]
-> Power BI-API'erne refererer stadig til apparbejdsområder som grupper. Referencer til grupper betyder, at du arbejder med apparbejdsområder.
+> Power BI-API'erne refererer stadig til arbejdsområder som grupper. Referencer til grupper betyder, at du arbejder med arbejdsområder.
 
 ## <a name="requesting-permissions"></a>Anmodning om tilladelser
 

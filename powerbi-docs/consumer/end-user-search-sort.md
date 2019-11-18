@@ -3,29 +3,32 @@ title: Søg i og sortér dit indhold i Power BI-tjenesten
 description: dokumentation til søgning efter og sortering af indhold i Power BI Mit arbejdsområde
 author: mihart
 manager: kvivek
-ms.reviewer: ''
+ms.reviewer: willt
 ms.custom: ''
 ms.service: powerbi
 ms.subservice: powerbi-consumer
 ms.topic: conceptual
-ms.date: 08/21/2019
+ms.date: 10/21/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: e32f0da4c512434fb316c010f2547de3ad5828e5
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: d5bc5638d9f98c1a35f57edd1d5d838c91c8ebf2
+ms.sourcegitcommit: 96217747f07d923d1a9d31f67a853f1ef1d17b20
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70302840"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72891778"
 ---
 # <a name="navigation-searching-finding-and-sorting-content-in-power-bi-service"></a>Navigation: Søg i, find og sortér dit indhold i Power BI-tjenesten
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Der er mange forskellige måder at navigere rundt i dit indhold i Power BI-tjenesten på. Indholdet organiseres i dit arbejdsområde efter type: dashboards og rapporter.  Indholdet er også sorteret efter forbrug: Favoritter, seneste, apps, delt med mig og udvalgt. På Power BI *Start* organiseres indhold på én og samme side for at sikre samlet navigation. Med disse forskellige stier til dit indhold kan du hurtigt finde det, du søger, i Power BI-tjenesten.  
 
 ## <a name="navigation-within-workspaces"></a>Navigation i arbejdsområder
 
 Power BI-*forbrugere* har typisk kun ét arbejdsområde: **Mit arbejdsområde**. Der er kun indhold på **Mit arbejdsområde**, hvis du har downloadet Microsoft-eksempler eller oprettet eller downloadet dine egne dashboards, rapporter eller apps.  
 
-I **Mit arbejdsområde** opdeler Power BI-tjenesten indholdet efter type: dashboards, rapporter, projektmapper og datasæt. Når du vælger et arbejdsområde, får du vist denne opdeling. I dette eksempel indeholder **Mit arbejdsområde** et dashboard, en rapport, ingen projektmappe og et datasæt.
+I **Mit arbejdsområde** opdeler Power BI-tjenesten indholdet efter type: dashboards, rapporter, projektmapper og datasæt. Når du vælger et arbejdsområde, får du vist denne opdeling. I dette eksempel indeholder **Mit arbejdsområde** ét dashboard, én rapport, ingen projektmappe og ét datasæt.
 
 ![video](./media/end-user-search-sort/myworkspace/myworkspace.gif)
 
@@ -41,13 +44,13 @@ Du kan også sortere indholdet efter navn eller ejer. Læg mærke til pil op til
 
 ![sortér indhold](./media/end-user-experience/power-bi-sort-new.png)
 
-Ikke alle kolonner kan sorteres. Peg på kolonneoverskrifterne for at finde ud af, hvilke der kan sorteres.
+Ikke alle kolonner kan sorteres. Hold over kolonneoverskrifterne for at finde ud af, hvilke der kan sorteres.
 
 ___________________________________________________________________
-## <a name="navigation-using-the-left-nav-bar"></a>Navigation ved hjælp af den venstre navigationslinje
-Ved hjælp af den venstre navigationslinje klassificeres dit indhold, så du nemmere kan finde det, du har brug for, hurtigt.  
+## <a name="navigation-using-the-navigation-pane"></a>Navigation ved hjælp af navigationsruden
+Ved hjælp af navigationsruden klassificeres dit indhold på måder, der hjælper dig med hurtigt at finde det, du har brug for.  
 
-![venstre navigationslinje](./media/end-user-search-sort/power-bi-navbar.png)
+![venstre navigationsrude](./media/end-user-search-sort/power-bi-navbar.png)
 
 
 - Indhold, der er delt med dig, er tilgængeligt under **Delt med mig**.

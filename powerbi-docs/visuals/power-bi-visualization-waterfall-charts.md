@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/24/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: 3ab200194d89eb15892dc4f452079eb56df8a608
-ms.sourcegitcommit: e2de2e8b8e78240c306fe6cca820e5f6ff188944
+ms.openlocfilehash: c4def89d7c91186295e4f2b3f07769792a8892e8
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71191476"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73017784"
 ---
 # <a name="waterfall-charts-in-power-bi"></a>Vandfaldsdiagrammer i Power BI
 
@@ -76,7 +76,7 @@ Du opretter et vandfaldsdiagram, der viser afvigelsen i salg (anslået salg i fo
 
     ![Vandfaldsdiagram](media/power-bi-visualization-waterfall-charts/power-bi-waterfall.png)
 
-1. Kontrollér, at Power BI har sorteret vandfaldsdiagrammet kronologisk. Vælg ellipsen (...) i diagrammets øverste højre hjørne.
+1. Kontrollér, at Power BI har sorteret vandfaldsdiagrammet kronologisk. Vælg **Flere indstillinger** (...) i øverste højre hjørne af diagrammet.
 
     I dette eksempel vælger vi **Sortér stigende**
 

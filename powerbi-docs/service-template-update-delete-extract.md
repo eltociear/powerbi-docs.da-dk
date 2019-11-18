@@ -2,19 +2,18 @@
 title: Opdater, slet og udtræk en Power BI-skabelonapp
 description: Sådan opdaterer, sletter og udtrækker du en skabelonapp.
 author: teddybercovitz
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: tebercov
-ms.openlocfilehash: 2cf655c25bb58ec001bac52b55aea74f887f08d9
-ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
+ms.openlocfilehash: a15a27255f15bdce39ddb14a6cda798d170ba3ad
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71207642"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871370"
 ---
 # <a name="update-delete-and-extract-template-app"></a>Opdater, slet og udtræk en skabelonapp
 
@@ -65,7 +64,7 @@ Det er nu lettere end nogensinde før at gå tilbage til den tidligere version a
 Den nye version af dit arbejdsområde nulstilles, og du kan fortsætte med at udvikle og distribuere skabelonappen fra det arbejdsområde, der er udtrukket for nylig.
 
 ## <a name="delete-template-app-version"></a>Slet version af skabelonapp
-Arbejdsområdet for en skabelonapp er kilden til en aktiv, distribueret skabelonapp. For at beskytte brugere af skabelonappen er det ikke muligt at slette et arbejdsområde uden først at fjerne alle oprettede versioner af appen i arbejdsområdet.
+En skabelon for arbejdsområdet er kilden til en aktiv, distribueret skabelonapp. For at beskytte brugere af skabelonappen er det ikke muligt at slette et arbejdsområde uden først at fjerne alle oprettede versioner af appen i arbejdsområdet.
 Hvis du sletter en appversion, sletter du også URL-adressen til appen, og den vil ikke længere fungere.
 
 1. I ruden til administration af versioner skal du vælge ellipsen **(...)**  og derefter **Slet**.

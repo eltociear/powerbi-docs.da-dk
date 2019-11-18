@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: troubleshooting
 ms.date: 02/05/2019
-ms.openlocfilehash: 08d66df2456917c09b6b0c1d9c40e2de47f53fa5
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 5b9a0de8a3a9301219c15e5566854b591e79ba5e
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543912"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429320"
 ---
 # <a name="troubleshoot-your-embedded-application"></a>Foretag fejlfinding af dit integrerede program
 
@@ -78,8 +78,8 @@ En fiddler-optagelse kan være påkrævet med henblik på yderligere efterforskn
 
 * Brugeren har overskredet antallet af integrerede tokens, der kan genereres på en delt kapacitet. Køb Azure-kapacitet for at generere integreringstokens og tildele arbejdsområdet til den pågældende kapacitet. Se [Opret Power BI Embedded-kapacitet på Azure Portal](https://docs.microsoft.com/azure/power-bi-embedded/create-capacity).
 * Azure AD auth-tokenet kan være udløbet.
-* Den godkendte bruger er ikke medlem af gruppen (programarbejdsområde).
-* Den godkendte bruger er ikke administrator for gruppen (programarbejdsområde).
+* Den godkendte bruger er ikke et medlem af gruppen (arbejdsområde).
+* Den godkendte bruger er ikke en administrator af gruppen (arbejdsområde).
 * Den godkendte bruger har ikke tilladelser. Tilladelser kan opdateres ved hjælp af [refreshUserPermissions API](https://docs.microsoft.com/en-us/rest/api/power-bi/users/refreshuserpermissions)
 * Godkendelsesheaderen kan være angivet forkert. Kontroller for tastefejl.
 

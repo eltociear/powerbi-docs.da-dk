@@ -11,12 +11,12 @@ ms.author: mblythe
 ms.date: 09/09/2019
 ms.custom: seodec18
 LocalizationGroup: Administration
-ms.openlocfilehash: 04a8c8a08d885427e9de43b719674fce4ac2ebbd
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 7d2bfbfb53914fea43014c78d88ac0c66559466c
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71074827"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431361"
 ---
 # <a name="row-level-security-rls-with-power-bi"></a>Sikkerhed på rækkeniveau (RLS) med Power BI
 
@@ -70,7 +70,7 @@ Du kan fjerne medlemmer ved at vælge X ud for medlemmets navn.
 
 Du kan bekræfte, at den rolle, du har defineret, fungerer korrekt, ved at teste rollen. 
 
-1. Vælg **ellipsen (...)** ud for rollen.
+1. Vælg **Flere indstillinger** (...) ud for rollen.
 2. Vælg **Test data som rolle**
 
 ![Test som rolle](media/service-admin-rls/rls-test-role.png)
@@ -89,12 +89,12 @@ Hvis du vil vende tilbage til normal visning, skal du vælge **Tilbage til sikke
 
 [!INCLUDE [include-short-name](./includes/rls-usernames.md)]
 
-## <a name="using-rls-with-app-workspaces-in-power-bi"></a>Brug RLS sammen med apparbejdsområder i Power BI
+## <a name="using-rls-with-workspaces-in-power-bi"></a>Brug sikkerhed på rækkeniveau med arbejdsområder i Power BI
 
-Hvis du publicerer din Power BI Desktop-rapport i et apparbejdsområde i Power BI-tjenesten, anvendes rollerne på medlemmer, som kun har tilladelse til at få vist indhold. Du skal angive, at medlemmer kan få vist Power BI-indhold, i indstillingerne for apparbejdsområdet.
+Hvis du publicerer din Power BI Desktop-rapport i et arbejdsområde i Power BI-tjenesten, anvendes rollerne for medlemmer, som kun har tilladelse til at få vist indhold. Du skal angive, at medlemmerne kan få vist Power BI-indhold, i indstillingerne for arbejdsområdet.
 
 > [!WARNING]
-> Hvis du har konfigureret apparbejdsområdet, således at medlemmerne har redigeringstilladelse, anvendes RLS-rollerne ikke på dem. Brugerne vil kunne se alle dataene.
+> Hvis du har konfigureret arbejdsområdet, så medlemmerne har redigeringstilladelser, anvendes rollerne for sikkerhed på rækkeniveau ikke for dem. Brugerne vil kunne se alle dataene.
 
 ![Gruppeindstillinger](media/service-admin-rls/rls-group-settings.png)
 

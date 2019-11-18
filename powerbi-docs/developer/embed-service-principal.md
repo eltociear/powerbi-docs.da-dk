@@ -3,19 +3,18 @@ title: Tjenesteprincipal med Power BI
 description: Få mere at vide om, hvordan du registrerer et program i Azure Active Directory ved hjælp af en tjenesteprincipal, som kan bruges til at integrere Power BI-indhold.
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: nishalit
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/29/2019
-ms.openlocfilehash: c77d206dbd7fa0604bc60fb4054c09f73cbe442e
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 9bbba47456d9c5bed5c8cd77858b6dbaeefce5a1
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073093"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877666"
 ---
 # <a name="service-principal-with-power-bi"></a>Tjenesteprincipal med Power BI
 
@@ -58,8 +57,8 @@ Der er forskelle mellem at bruge en tjenesteprincipal og en standardmasterkonto 
 |------------------------------------------------------|---------------------|-------------------|
 | Kan logge på Power BI-tjenesten  | Ja | Nej |
 | Aktiveret på Power BI-administrationsportalen | Nej | Ja |
-| [Fungerer sammen med programarbejdsområder (v1)](../service-create-workspaces.md) | Ja | Nej |
-| [Fungerer sammen med programarbejdsområder (v2)](../service-create-the-new-workspaces.md) | Ja | Ja |
+| [Fungerer sammen med arbejdsområder (v1)](../service-create-workspaces.md) | Ja | Nej |
+| [Fungerer sammen med de nye arbejdsområder (v2)](../service-create-the-new-workspaces.md) | Ja | Ja |
 | Man skal være administrator af et arbejdsområde, hvis det bruges med Power BI Embedded | Ja | Ja |
 | Kan bruge REST API'er til Power BI | Ja | Ja |
 | Der skal være en global administrator for at kunne oprettes | Ja | Nej |
@@ -141,7 +140,7 @@ Der er ingen funktion i brugergrænsefladen, som kan bruges til at flytte Power 
 
 ### <a name="how-to-get-the-service-principal-object-id"></a>Sådan får du objekt-id'et for tjenesteprincipalen
 
-Hvis du vil tildele en tjenesteprincipal til et nyt programarbejdsområde, skal du bruge [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). Hvis du vil henvise til en tjenesteprincipal for at udføre handlinger eller foretage ændringer, skal du bruge **objekt-id'et for tjenesteprincipalen**, f.eks. ved anvendelse af en tjenesteprincipal som administrator i et arbejdsområde.
+Hvis du vil tildele en tjenesteprincipal til et nyt arbejdsområde, skal du bruge [REST API'erne til Power BI](https://docs.microsoft.com/rest/api/power-bi/groups/addgroupuser). Hvis du vil henvise til en tjenesteprincipal for at udføre handlinger eller foretage ændringer, skal du bruge **objekt-id'et for tjenesteprincipalen**, f.eks. ved anvendelse af en tjenesteprincipal som administrator i et arbejdsområde.
 
 Herunder finder du trin til at hente objekt'id'et for tjenesteprincipalen fra Azure Portal.
 
@@ -166,7 +165,7 @@ Nedenfor er et eksempel på et script, der kan bruges til at hente objekt-id'et 
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
-* Tjenesteprincipalen fungerer kun med [nye programarbejdsområder](../service-create-the-new-workspaces.md).
+* Tjenesteprincipalen fungerer kun med [nye arbejdsområder](../service-create-the-new-workspaces.md).
 * **Mit arbejdsområde** understøttes ikke til brug sammen med tjenesteprincipalen.
 * Der kræves dedikeret kapacitet for at kunne begynde at producere.
 * Du kan ikke logge på Power BI-portalen ved hjælp af en tjenesteprincipal.

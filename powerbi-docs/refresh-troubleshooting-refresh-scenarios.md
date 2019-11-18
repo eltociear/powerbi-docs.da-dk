@@ -10,12 +10,12 @@ ms.topic: troubleshooting
 ms.date: 09/13/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: 564c3d03a7879cd7788e19055d8c11e4de46013f
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: 7e66cbf11c8177a12dbbf825873adb4cef5f26fd
+ms.sourcegitcommit: ef6de7067ecb2bbc86d912784376a1627acc478d
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72543872"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73169039"
 ---
 # <a name="troubleshooting-refresh-scenarios"></a>Fejlfinding i forbindelse med opdatering af scenarier
 
@@ -25,6 +25,12 @@ Her kan du finde oplysninger om forskellige scenarier, som du kan stå overfor, 
 > Hvis du oplever et scenarie, der ikke er angivet nedenfor, og det medfører problemer for dig, kan du bede om yderligere hjælp på [communitywebstedet](http://community.powerbi.com/), eller du kan oprette en [supportanmodning](https://powerbi.microsoft.com/support/).
 >
 >
+
+## <a name="email-notifications"></a>Mailmeddelelser
+
+Hvis du kommer til denne artikel fra en mailmeddelelse, og du ikke længere vil modtage mails om opdateringsproblemer, skal du kontakte din Power BI-administrator. Bed vedkommende om at fjerne din mailadresse eller en mailliste, du abonnerer på, fra de relevante datasæt i Power BI. Administratoren kan gøre det fra følgende område på Power BI-administrationsportalen.
+
+![Mail med opdateringsmeddelelser](media/refresh-troubleshooting-refresh-scenarios/refresh-email.png)
 
 ## <a name="refresh-using-web-connector-doesnt-work-properly"></a>Opdater ved at bruge Web-connector virker ikke korrekt
 

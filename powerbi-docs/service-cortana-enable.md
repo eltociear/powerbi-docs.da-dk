@@ -9,18 +9,18 @@ ms.topic: conceptual
 ms.date: 05/29/2019
 ms.author: maggies
 LocalizationGroup: Ask questions of your data
-ms.openlocfilehash: 584dacbb3823f1a7c2475c780124985992a4b1d4
-ms.sourcegitcommit: 8bf2419b7cb4bf95fc975d07a329b78db5b19f81
-ms.translationtype: MT
+ms.openlocfilehash: b1792abeed1a4a03cb8e3f49acb4ed8aa53b1be0
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66375143"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020507"
 ---
 # <a name="enable-cortana-to-access-power-bi-reports-and-their-underlying-datasets"></a>Gør Cortana i stand til at få adgang til Power BI-rapporter (og deres underliggende datasæt)
 Du har læst [Introduktion til Cortana og Power BI](service-cortana-intro.md) (hvis ikke, kan du læse den først og derefter vende tilbage). Og nu vil du selv prøve.  Før du kan stille spørgsmål på naturligt sprog i Cortana og finde svar fra data, der er gemt i Power BI-***rapporter***, er der nogle få krav. Du skal specifikt gøre følgende.
 
 > [!IMPORTANT]
-> Integration af Cortana frarådes i Power BI. Fra og med 11. juni, fungerer Cortana ikke længere for alle dashboards og rapporter.
+> Integration med Cortana udfases i Power BI. Fra og med 11. juni vil Cortana ikke længere fungere for nogen dashboards og rapporter.
 
 I Power BI-tjenesten
 
@@ -42,7 +42,7 @@ Du skal logge på Power BI-tjenesten (ikke Power BI Desktop) og gentage disse tr
 2. Det datasæt, der er knyttet til denne rapport, er **Contoso Sales**.
    
     ![Datasættet Contoso Sales](media/service-cortana-enable/power-bi-identify-dataset.png)
-3. Til højre for datasætnavnet skal du vælge **ellipsen (...) > Indstillinger**.  
+3. Til højre for navnet på datasættet skal du vælge **Flere indstillinger** (...) > Indstillinger**.  
    
     ![Vælg indstillinger](media/service-cortana-enable/power-bi-settings-cortana.png)
 4. Vælg **Spørgsmål og svar og Cortana** > **Tillad Cortana at få adgang til dette datasæt** > **Anvend**.

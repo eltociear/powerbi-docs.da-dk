@@ -1,6 +1,6 @@
 ---
 title: Power BI-licenser i din organisation
-description: 'De forskellige licenstyper, der er tilgængelige i Power BI, er: gratis licenser, Power BI Pro og Power BI Premium.'
+description: 'Forstå de forskellige licenstyper, der er tilgængelige i Power BI: gratis licenser, Power BI Pro og Power BI Premium.'
 author: mgblythe
 manager: kfile
 ms.reviewer: ''
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 24cc798814e0c19de4f1dd4d0d6907fc7a0074a6
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: e7a851a890fa734c045bb9cee60d429f87a3a602
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71075418"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442834"
 ---
 # <a name="power-bi-licensing-in-your-organization"></a>Power BI-licenser i din organisation
 
@@ -27,9 +27,9 @@ I denne artikel fokuseres der på licenser pr. bruger fra et administratorperspe
 
 Som administrator kan du købe og tildele Power BI Pro-licenser, og du kan tilmelde dig en Power BI Pro-prøveversion til din organisation. Enkeltpersoner kan også tilmelde sig en Power BI Pro-prøveversion.
 
-### <a name="purchase-power-bi-pro"></a>Køb Power BI Pro
+### <a name="purchase-power-bi-pro-licenses"></a>Køb Power BI Pro-licenser
 
-Du kan købe Power BI Pro-licenser gennem Microsoft Office 365 eller gennem en certificeret Microsoft-partner. Når du køber licenserne, kan du tildele dem til individuelle brugere. Du kan finde flere oplysninger i [Køb og tildel Power BI Pro-licenser](service-admin-purchasing-power-bi-pro.md).
+Som administrator kan du købe Power BI Pro-licenser via Microsoft 365 eller via en certificeret Microsoft-partner. Når du køber licenserne, kan du tildele dem til individuelle brugere. Du kan finde flere oplysninger i [Køb og tildel Power BI Pro-licenser](service-admin-purchasing-power-bi-pro.md).
 
 ### <a name="power-bi-pro-license-expiration"></a>Udløb af Power BI Pro-licens
 
@@ -41,7 +41,7 @@ Power BI Pro har den samme abonnementslivscyklus som Office 365. Du kan finde fl
 
 Enkeltpersoner i din organisation kan tilmelde sig en Power BI Pro-prøveversion. Du kan flere oplysninger i [Tilmelding til Power BI som enkeltperson](service-self-service-signup-for-power-bi.md).
 
-Brugere, der benytter sig af Power BI Pro (prøveversion) i produktet, vises ikke i Microsoft 365 Administration som brugere af prøveversionen af Power BI Pro. De vises som gratis brugere af Power BI. De vises dog som brugere af Power BI Pro (prøveversion) på siden Administrer lager i Power BI.
+Brugere, der benytter sig af Power BI Pro (prøveversion) til enkeltpersoner i produktet, vises ikke i Microsoft 365 Administration som brugere af Power BI Pro (prøveversion). De vises som gratis brugere af Power BI. De vises dog som brugere af Power BI Pro (prøveversion) på siden Administrer lager i Power BI.
 
 ### <a name="power-bi-pro-trial-for-organizations"></a>Power BI Pro-prøveversion til organisationer
 
@@ -49,7 +49,7 @@ Hvis du vil hente og installere Power BI-prøvelicenser til flere brugere i din 
 
 Vær opmærksom på følgende, før du følge trinnene for at tilmelde dig:
 
-* For at kunne tilmelde dig skal du være medlem af rollen [**Global administrator** eller **Faktureringsadministrator**](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) i Office 365.
+* For at kunne tilmelde dig skal du være medlem af rollen [**Global administrator** eller **Faktureringsadministrator**](https://support.office.com/article/about-office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) i Microsoft 365.
 
 * Der er en grænse på én organisationsprøveversion pr. lejer. Det betyder, at hvis en person allerede har anvendt Power BI Pro (prøveversion) på din lejer, kan du ikke gøre det igen. Hvis du har brug for hjælp til dette, kan du kontakte [Office 365-faktureringssupport](https://support.office.microsoft.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?CorrelationId=552bbf37-214f-4202-80cb-b94240dcd671).
 
@@ -79,11 +79,11 @@ Brugerne i organisationen kan få adgang til Power BI (gratis)-licenser på to f
 
 * Du kan tildele dem en licens til Power BI via Microsoft 365 Administration.
 
-* Hvis en bruger [tilmelder sig en Power BI Pro-prøveversion](service-self-service-signup-for-power-bi.md), og prøveversionen udløber, tildeles vedkommende en gratis licens.
+* Hvis en bruger [tilmelder sig en Power BI Pro-konto](service-self-service-signup-for-power-bi.md), får vedkommende tildelt en gratis licens.
 
 ### <a name="requesting-and-assigning-free-licenses"></a>Anmodning om og tildeling af gratis licenser
 
-Hvis du vil administrere licensanmodninger og -tildelinger centralt, skal du først kontrollere, om du allerede har den ubegrænsede Power BI (gratis)-licensblok.
+Hvis du har planer om at administrere licensanmodninger og -tildelinger centralt, skal du først kontrollere, om du allerede har den ubegrænsede Power BI (gratis)-licensblok i din lejer.
 
 Denne licensblok bliver tilgængelig, når en person første gang har tilmeldt sig Power BI som enkeltperson. Under denne proces knyttes licensblokken til din organisation, og der tildeles en licens til den bruger, der tilmelder sig.
 
@@ -125,9 +125,9 @@ Hvis den ubegrænsede licensblok Power BI (gratis) ikke er tilgængelig, og du i
 
 Som administrator kan du vælge at aktivere eller deaktivere individuelle brugertilmeldinger gennem Azure Active Directory (AAD). I dette afsnit af artiklen vises det, hvordan du administrerer tilmeldinger med PowerShell-kommandoer. Du kan finde flere oplysninger om Azure PowerShell, under [Oversigt over Azure PowerShell](/powershell/azure/overview).
 
-Azure AD-indstillingen, som styrer tilmelding, er **AllowAdHocSubscriptions**. For de fleste lejere er denne indstilling indstillet til *sand*, hvilket betyder, at den er aktiveret. Hvis du har købt Power BI via en partner, kan denne være indstillet til *falsk*, hvilket betyder, at den er deaktiveret. Hvis du ændrer indstillingen fra *sand* til *falsk*, blokeres individuel tilmelding for nye brugere i din organisation. Brugere, der har tilmeldt sig Power BI før ændringen af indstillingen bevarer deres licens. Vær opmærksom på, at brugerne med indstillingen *falsk* stadig kan tilmelde sig en Pro-prøveversion.
+Indstillingen i Azure Active Directory, som styrer tilmeldingen, er **AllowAdHocSubscriptions**. For de fleste lejere er denne indstilling indstillet til *sand*, hvilket betyder, at den er aktiveret. Hvis du har købt Power BI via en partner, kan denne være indstillet til *falsk*, hvilket betyder, at den er deaktiveret. Hvis du ændrer indstillingen fra *sand* til *falsk*, blokeres individuel tilmelding for nye brugere i din organisation. Brugere, der har tilmeldt sig Power BI før ændringen af indstillingen bevarer deres licens. Bemærk! Selvom indstillingen er *falsk*, kan brugere med en Power BI (gratis)-licens stadig tilmelde sig en individuel Power BI Pro (prøveversion).
 
-1. Log på Azure Active Directory ved hjælp af dine legitimationsoplysninger til Office 365. I den første linje i følgende PowerShell-script bliver du bedt om dine legitimationsoplysninger. Den anden linje opretter forbindelse til Azure Active Directory.
+1. Log på Azure Active Directory ved hjælp af dine legitimationsoplysninger til Microsoft 365. I den første linje i følgende PowerShell-script bliver du bedt om dine legitimationsoplysninger. Den anden linje opretter forbindelse til Azure Active Directory.
 
     ```powershell
      $msolcred = get-credential

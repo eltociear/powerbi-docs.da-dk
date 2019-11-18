@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.date: 08/06/2019
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 0492b797d75e29145c14a70d8a8058bad295ef18
-ms.sourcegitcommit: d12bc6df16be1f1993232898f52eb80d0c9fb04e
+ms.openlocfilehash: 428e392994a1b6934bf78d9cccbee1821744a622
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68994943"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020233"
 ---
 # <a name="generate-data-insights-automatically-with-power-bi"></a>Generér automatisk dataindsigt med Power BI
 Har du et nyt datasæt, og er du ikke helt sikker på, hvor du skal starte?  Har du brug for hurtigt at oprette et dashboard?  Vil du hurtigt søge efter indsigter, som du måske gik glip af?
@@ -38,7 +38,7 @@ Se Amanda køre Quick Insights på et datasæt, åbne en indsigt i Fokustilstand
 
 Nu er det din tur. Udforsk Insights ved hjælp af [Eksempel på analyse af leverandørkvalitet](sample-supplier-quality.md).
 
-1. Vælg ellipsen (...) på fanen **Datasæt**, og vælg derefter **Få hurtig indsigt**.
+1. På fanen **Datasæt** skal du vælge **Flere indstillinger** (...) og derefter vælge **Få hurtig indsigt**.
    
     ![Fanen Datasæt](media/service-insights/power-bi-ellipses.png)
    
@@ -62,7 +62,7 @@ Nu er det din tur. Udforsk Insights ved hjælp af [Eksempel på analyse af lever
 
 1. Hold markøren over et kort, og vælg ikonet med tegnestiften for at føje visualiseringen til et dashboard.
 
-2. Peg på et kort, vælg ellipsen (...), og vælg derefter **Vis indsigt**. 
+2. Hold over et kort, vælg **Flere indstillinger** (...), og vælg derefter **Vis indsigt**. 
 
     Skærmbilledet Indsigt åbnes i fokustilstand.
    
@@ -86,7 +86,7 @@ Nu er det din tur. Udforsk Insights ved hjælp af [Eksempel på analyse af lever
 I stedet for at søge efter indsigt i et helt datasæt kan du begrænse din søgning og foretage en områdebaseret indsigt for de data, der er brugt til at oprette et enkelt dashboardfelt. 
 
 1. Åbn et dashboard.
-2. Peg på et felt. Vælg ellipsen (...), og vælg derefter **Vis indsigt**. Feltet åbnes i [Fokustilstand](service-focus-mode.md) med indsigtskortene vist langs højre.    
+2. Peg på et felt. vælg **Flere indstillinger** (...), og vælg derefter **Vis indsigt**. Feltet åbnes i [Fokustilstand](service-focus-mode.md) med indsigtskortene vist langs højre.    
    
     ![Fokustilstand](media/service-insights/pbi-insights-tile.png)    
 3. Er der en indsigt, der vækker din interesse? Vælg indsigtskortet for at udforske mere. Den valgte indsigt vises til venstre, og nye indsigtskort, som udelukkende er baseret på dataene i den enkelte indsigt, vises til højre.    

@@ -3,19 +3,18 @@ title: Jeg kan ikke kontakte support til Power BI
 description: Løsninger til oprettelse af en Power BI-sag, hvis en bruger ikke kan logge på
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.custom: ''
 ms.date: 03/12/2019
-ms.openlocfilehash: 830d75aaddd60ce0b678d6abdbeca7cd79a3ab28
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 37bb189f7792410ffdef30e79d36f94cc85478b4
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "64769841"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73874605"
 ---
 # <a name="troubleshooting-sign-in-issues-for-power-bi"></a>Lokalisering af fejl i forbindelse med logon i Power BI Desktop
 
@@ -27,7 +26,7 @@ Hvis du er **lejeradministrator** for din organisation, og du ikke kan logge på
 
 ## <a name="engage-the-support-team"></a>Involver supportteamet
 
-Først skal du prøve at oprette en supportanmodning via [supportsiden for Power BI](https://powerbi.microsoft.com/en-us/support/).
+Først skal du prøve at oprette en supportanmodning via [supportsiden for Power BI](https://powerbi.microsoft.com/support/).
 
 Hvis du ikke kan gennemgå siden til Power BI-support, kan du prøve at oprette en supportanmodning via [supportsiden til Office 365 (O365)](https://support.office.com/home/contact).
 
@@ -50,9 +49,11 @@ En anden mulighed for at kontakte Microsoft-support for at få hjælp er ved at 
 
 Hvis du ikke kan oprette et forumindlæg på communitysiden, skyldes det, at du også skal logge på [Power BI-communityforummet](https://community.powerbi.com/).
 
+> [!Note]
+> Du kan finde flere oplysninger i [communitysupport](https://community.powerbi.com/t5/Community-Support/ct-p/PBI_CommunitySupport).
+
 ## <a name="next-steps"></a>Næste trin
 
 Her er nogle websteder, du kan besøge for at få yderligere support til Power BI:
 
 * [Power BI Microsoft docs](https://docs.microsoft.com/power-bi/)
-* [Oprettelse af supportsager i Power BI](https://blogs.msdn.microsoft.com/charles_sterling/2017/12/01/creating-power-bi-support-cases/)

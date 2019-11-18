@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 6e425f146228d0139b9eec914a44ed5dc732fe98
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 667b6eac288d3be35eac619b669498b6d7381dc3
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514778"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019258"
 ---
 # <a name="use-see-data-and-see-records-in-power-bi-desktop"></a>Brug Vis data og Vis poster i visualiseringer i Power BI Desktop
 I **Power BI Desktop** kan du analysere alle visualiseringers detaljer og få vist en tekstrepræsentation af de underliggende data eller enkelte dataposter for den valgte visual. Disse funktioner kaldes nogle gange for *klikfrekvens*, *detaljeadgang* eller *detaljeadgang til oplysninger*.
@@ -41,7 +41,7 @@ Du kan bruge **Vis data** til at få vist en tekstversion af de værdier, der br
 
 ![Vis data på båndet](media/desktop-see-data-see-records/see-data1.png)
 
-Du kan også få vist dataene ved at højreklikke på en visualisering og derefter vælge **Vis Data** i den menu, der vises, eller ved at vælge ellipsen for **flere indstillinger** (...) i øverste højre hjørne af en visualisering og derefter vælge **Vis Data**.
+Du kan også se dataene ved at højreklikke på en visualisering og derefter vælge **Vis Data** i den menu, der vises, eller ved at vælge **Flere indstillinger** (...) i øverste højre hjørne af en visualisering og derefter vælge **Vis Data**.
 
 ![Vis Data, højreklik](media/desktop-see-data-see-records/see-data2.png)&nbsp;&nbsp;![Vis Data, flere indstillinger](media/desktop-see-data-see-records/see-data3.png)
 

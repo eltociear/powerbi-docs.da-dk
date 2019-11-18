@@ -2,7 +2,6 @@
 title: Opret en kopi af et Power BI-dashboard
 description: 'Duplikering af et Power BI-dashboard '
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 03/02/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: 5507356e42c58574a2d7c6787074fb987ddfeaec
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: ab629c15f1e1e998c3870b95993cdf7348cb15ff
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523177"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872833"
 ---
 # <a name="create-a-copy-of-a-dashboard-in-power-bi-service"></a>Opret en kopi af et dashboard i Power BI-tjenesten
 ![dashboard](media/service-dashboard-copy/power-bi-dashboard.png)
@@ -28,7 +27,7 @@ Du bruger Power BI-tjenesten til at oprette dashboards og kan få dem vist i Pow
 Hvis du vil lave en kopi af et dashboard, skal du være dashboardets *forfatter*. Dashboards, der er blevet delt med dig som en app, kan ikke duplikeres.
 
 1. Åbn dashboardet.
-2. Fra øverste højre hjørne skal du vælge ellipsen (...) og vælge **Dupliker dashboard**.
+2. Vælg **Flere indstillinger** (...) i øverste højre hjørne, og vælg **Dupliker dashboard**.
    
    ![ellipsemenu](media/service-dashboard-copy/power-bi-dulicate.png)
 3. Giv dashboardet et navn, og vælg **Dupliker**. 
@@ -40,15 +39,15 @@ Hvis du vil lave en kopi af et dashboard, skal du være dashboardets *forfatter*
 
 5.    Åbn det nye dashboard, og rediger det efter behov. Nedenfor er nævnt nogle ting, som du nu kan gøre:    
     a. [Flytte, omdøbe, tilpasse størrelsen på samt slette felter](service-dashboard-edit-tile.md).  
-    b. Redigere feltoplysninger og links ved at vælge feltellipserne (...) og vælge **Rediger oplysninger**.  
+    b. Redigere feltoplysninger og links ved at vælge feltet **Flere oplysninger** (...) og vælge **Rediger oplysninger**.  
     c. [Tilføje nye felter fra dashboardets menulinje](service-dashboard-add-widget.md) (**Tilføj felt**)  
     d. Fastgøre nye felter [fra Spørgsmål og svar](service-dashboard-pin-tile-from-q-and-a.md) eller [fra rapporter](service-dashboard-pin-tile-from-report.md).  
-    e. Omdøbe dashboardet, slå Spørgsmål og svar til eller fra og indstille feltflowet på ruden Dashboard-indstillinger.  (vælg dashboardets ellipser (...) på rullelisten, og vælg **Indstillinger**)  
+    e. Omdøbe dashboardet, slå Spørgsmål og svar til eller fra og indstille feltflowet på ruden Dashboard-indstillinger.  (vælg **Flere oplysninger** (...) på rullelisten på dashboardet, og vælg **Indstillinger**)  
     f. Dele dit dashboard direkte med kollegaer, eller som en del af en Power BI-app. 
 
 
 ## <a name="next-steps"></a>Næste trin
 * [Tip til udformning af et fantastisk dashboard](service-dashboards-design-tips.md) 
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

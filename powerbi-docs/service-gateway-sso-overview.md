@@ -1,5 +1,5 @@
 ---
-title: Brug SSO (enkeltlogon) i forbindelse med datakilder i det lokale miljø
+title: Oversigt over enkeltlogon (SSO) til gateways i Power BI
 description: Konfigurer din gateway for at aktivere enkeltlogon (SSO) fra Power BI til datakilder i det lokale miljø.
 author: mgblythe
 ms.author: mblythe
@@ -8,33 +8,33 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 07/15/2019
+ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: b1379bb783b090362215eaf7c317bbea435d1eec
-ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
+ms.openlocfilehash: 53c35210878e442cfdec4d78a97bd76acc65e482
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72259921"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020756"
 ---
 # <a name="overview-of-single-sign-on-sso-for-gateways-in-power-bi"></a>Oversigt over enkeltlogon (SSO) til gateways i Power BI
 
-Du kan få problemfri forbindelse med enkeltlogon, så Power BI-rapporter og -dashboards kan opdateres i realtid fra data i det lokale miljø, ved at konfigurere din datagateway i det lokale miljø med begrænset delegering fra Kerberos eller SAML (Security Assertion Markup Language). Datagatewayen i det lokale miljø understøtter SSO ved hjælp af DirectQuery, som den bruger til at oprette forbindelse til datakilder i det lokale miljø.
+Du kan få problemfri forbindelse med enkeltlogon, så Power BI-rapporter og -dashboards kan opdateres fra data i det lokale miljø i realtid, ved at konfigurere din datagateway i det lokale miljø. Du har mulighed for at konfigurere din gateway med enten begrænset [Kerberos](service-gateway-sso-kerberos.md)-delegering eller [SAML](service-gateway-sso-saml.md) (Security Assertion Markup Language). Datagatewayen i det lokale miljø understøtter SSO ved hjælp af [DirectQuery](desktop-directquery-about.md), som opretter forbindelse til datakilder i det lokale miljø.
 
-Vi understøtter i øjeblikket følgende datakilder:
+Power BI understøtter følgende datakilder:
 
-* SQL Server ([Kerberos](service-gateway-sso-kerberos.md))
-* SAP HANA ([Kerberos](service-gateway-sso-kerberos.md) og [SAML](service-gateway-sso-saml.md))
-* SAP BW-programserver ([Kerberos](service-gateway-sso-kerberos.md))
-* SAP BW-meddelelsesserver ([Kerberos](service-gateway-sso-kerberos.md)) – offentligt tilgængelig prøveversion
-* Oracle ([Kerberos ](service-gateway-sso-kerberos.md)) – offentligt tilgængelig prøveversion
-* Teradata ([Kerberos](service-gateway-sso-kerberos.md))
-* Spark ([Kerberos](service-gateway-sso-kerberos.md))
-* Impala ([Kerberos](service-gateway-sso-kerberos.md))
+* SQL Server (Kerberos)
+* SAP HANA (Kerberos og SAML)
+* SAP BW-programserver (Kerberos)
+* SAP BW-meddelelsesserver (Kerberos) – offentlig prøveversion
+* Oracle (Kerberos) – offentlig prøveversion
+* Teradata (Kerberos)
+* Spark (Kerberos)
+* Impala (Kerberos)
 
 Vi understøtter i øjeblikket ikke SSO til [M-udvidelser](https://github.com/microsoft/DataConnectors/blob/master/docs/m-extensions.md).
 
-Når en bruger kommunikerer med en DirectQuery-rapport i Power BI-tjenesten, kan hvert krydsfilter, udsnit, sortering og rapportredigering resultere i forespørgsler, der udføres direkte mod den underliggende datakilde i det lokale miljø. Når SSO er konfigureret for datakilden, udføres forespørgsler i henhold til id'et for den bruger, som interagerer med Power BI (dvs. via weboplevelsen eller Power BI-mobilapps). På den måde får hver bruger præcist de data, som de har tilladelser til i den underliggende datakilde – med enkeltlogon konfigureret er der ingen cachelagring af delte data på tværs af flere brugere.
+Når en bruger interagerer med en DirectQuery-rapport i Power BI-tjenesten, kan hver handling for krydsfiltrering, udsnit, sortering og rapportredigering resultere i forespørgsler, der udføres direkte i forhold til den underliggende datakilde i det lokale miljø. Når du konfigurerer SSO for datakilden, udføres forespørgsler i henhold til identiteten for den bruger, som interagerer med Power BI (dvs. via weboplevelsen eller Power BI-mobilapps). Derfor ser hver enkelt bruger præcist de data, de har tilladelser til i den underliggende datakilde. Når enkeltlogon er konfigureret, forekommer der ingen cachelagring af delte data på tværs af forskellige brugere.
 
 ## <a name="query-steps-when-running-sso"></a>Forespørgselstrin under kørsel af SSO
 
@@ -42,21 +42,21 @@ En forespørgsel, der køres med SSO, består af tre trin som vist i følgende d
 
 ![SSO-forespørgselstrin](media/service-gateway-sso-overview/sso-query-steps.png)
 
-Der følger flere oplysninger om disse trin:
+Her følger yderligere oplysninger om hvert trin:
 
-1. For hver forespørgsel inkluderer **Power BI-tjenesten** *brugerens hovednavn* (UPN, dvs. det fuldt kvalificerede brugernavn for den bruger, der i øjeblikket er logget på Power BI-tjenesten), når der sendes en anmodning til den konfigurerede gateway.
+1. For hver forespørgsel inkluderer Power BI-tjenesten *brugerens hovednavn*, som er det fuldt kvalificerede brugernavn for den bruger, der i øjeblikket er logget på Power BI-tjenesten, når der sendes en forespørgselsanmodning til den konfigurerede gateway.
 
-2. Gatewayen skal tilknytte Azure Active Directory-UPN'et til et lokalt Active Directory-id.
+2. Gatewayen skal knytte brugerens hovednavn for Azure Active Directory til en lokal Active Directory-identitet:
 
-   a.  Hvis Azure AD DirSync (også kendt som *Azure AD Connect*) er konfigureret, fungerer tilknytningen automatisk i gatewayen.
+   a. Hvis Azure AD DirSync (også kendt som *Azure AD Connect*) er konfigureret, fungerer tilknytningen automatisk i gatewayen.
 
-   b.  Ellers kan gatewayen søge efter og knytte Azure AD-UPN'et til en lokal AD-bruger ved at foretage opslag mod det lokale Active Directory-domæne.
+   b.  Ellers kan gatewayen søge efter og knytte brugerens hovednavn for Azure AD til en lokal AD-bruger ved at foretage opslag mod det lokale Active Directory-domæne.
 
-3. Processen til gatewaytjenesten repræsenterer den tilknyttede lokale bruger, åbner forbindelsen til den underliggende database og sender forespørgslen. Gatewayen behøver ikke at være installeret på samme computer som databasen.
+3. Processen for gatewaytjenesten repræsenterer den tilknyttede lokale bruger, åbner forbindelsen til den underliggende database og sender derefter forespørgslen. Du behøver ikke at installere gatewayen på samme computer som databasen.
 
 ## <a name="next-steps"></a>Næste trin
 
-Nu, hvor du har en grundlæggende forståelse af SSO via gatewayen, kan du læse mere detaljerede oplysninger om Kerberos og SAML:
+Nu, hvor du har en grundlæggende forståelse af aktivering af SSO via gatewayen, kan du læse flere detaljerede oplysninger om Kerberos og SAML:
 
 * [Enkeltlogon (SSO) – Kerberos](service-gateway-sso-kerberos.md)
 * [Enkeltlogon (SSO) – SAML](service-gateway-sso-saml.md)

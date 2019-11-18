@@ -8,39 +8,40 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-gateways
 ms.topic: conceptual
-ms.date: 08/01/2019
+ms.date: 10/10/2019
 LocalizationGroup: Gateways
-ms.openlocfilehash: 9e7bdb0ae2f1e512e3e431cf69395d601cbc7b3f
-ms.sourcegitcommit: 9bf3cdcf5d8b8dd12aa1339b8910fcbc40f4cbe4
+ms.openlocfilehash: 4985e241811558c90298e72cf82cbec634e23eaa
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71968545"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020821"
 ---
 # <a name="use-kerberos-for-single-sign-on-sso-to-sap-hana"></a>Brug Kerberos til enkeltlogon (SSO) til SAP HANA
 
 I denne artikel beskrives, hvordan du konfigurerer din SAP HANA-datakilde for at aktivere SSO fra Power BI-tjenesten.
 
 > [!NOTE]
-> Fuldfør trinnene i denne artikel ud over trinnene i [Konfigurer SSO i Kerberos](service-gateway-sso-kerberos.md), før du forsøger at opdatere en SAP HANA-baseret rapport, der bruger SSO i Kerberos.
+> Før du forsøger at opdatere en SAP HANA-baseret rapport, der bruger Kerberos SSO, skal du fuldføre begge trin i denne artikel og trinnene under [Konfigurer Kerberos SSO](service-gateway-sso-kerberos.md).
 
 ## <a name="enable-sso-for-sap-hana"></a>Aktivér SSO til SAP HANA
 
 Hvis du vil aktivere SSO til SAP HANA, skal du følge disse trin:
 
-* Kontrollér, at SAP HANA-serveren kører den påkrævede minimumversion, hvilket afhænger af niveauet af din SAP HANA-serverplatform:
-  * [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
-  * [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
-  * [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
-* Installér SAP's seneste HANA ODBC-driver på gatewaycomputeren.  Minimumversionen er HANA ODBC version 2.00.020.00 fra august 2017.
+1. Kontrollér, at SAP HANA-serveren kører den påkrævede minimumversion, hvilket afhænger af niveauet af din SAP HANA-serverplatform:
+   - [HANA 2 SPS 01 Rev 012.03](https://launchpad.support.sap.com/#/notes/2557386)
+   - [HANA 2 SPS 02 Rev 22](https://launchpad.support.sap.com/#/notes/2547324)
+   - [HANA 1 SP 12 Rev 122.13](https://launchpad.support.sap.com/#/notes/2528439)
 
-Kontrollér, at SAP HANA-serveren er konfigureret til Kerberos-baseret SSO. Du kan finde flere oplysninger om konfiguration af SSO til SAP HANA ved hjælp af Kerberos under [Enkeltlogon ved hjælp af Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/1885fad82df943c2a1974f5da0eed66d.html) i Sikkerhedsvejledning til SAP HANA. Se også linket på den side – især SAP Note 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory.
+2. På gatewaymaskinen skal du installere den nyeste ODBC-driver til SAP HANA. Minimumversionen er HANA ODBC version 2.00.020.00 fra august 2017.
 
-Det anbefales også, at du følger disse ekstra trin, som kan give en mindre forbedring af ydeevnen.
+3. Kontrollér, at SAP HANA-serveren er konfigureret til Kerberos-baseret SSO. Du kan finde flere oplysninger om konfiguration af SSO til SAP HANA ved hjælp af Kerberos under [Enkeltlogon ved hjælp af Kerberos](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/2.0.03/1885fad82df943c2a1974f5da0eed66d.html) i Sikkerhedsvejledning til SAP HANA. Se også linket på den side – især SAP Note 1837331 – HOWTO HANA DBSSO Kerberos/Active Directory.
 
-1. Find og åbn denne konfigurationsfil i installationsmappen for gatewayen: *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config*.
+Det anbefales også, at du følger disse ekstra trin, som kan give en mindre forbedring af ydeevnen:
 
-2. Find egenskaben *FullDomainResolutionEnabled*, og rediger dens værdi til *True*.
+1. Find og åbn denne konfigurationsfil i installationsmappen for gatewayen: Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config.
+
+2. Find egenskaben `FullDomainResolutionEnabled`, og ret værdien til `True`.
 
     ```xml
     <setting name=" FullDomainResolutionEnabled " serializeAs="String">
@@ -52,7 +53,7 @@ Nu kan du [køre en Power BI-rapport](service-gateway-sso-kerberos.md#run-a-powe
 
 ## <a name="next-steps"></a>Næste trin
 
-Du kan finde flere oplysninger om **datagateway i det lokale miljø** og **DirectQuery** i følgende ressourcer:
+Du kan finde flere oplysninger om datagatewayen i det lokale miljø og DirectQuery i følgende ressourcer:
 
 * [Hvad er en datagateway i det lokale miljø?](/data-integration/gateway/service-gateway-getting-started)
 * [DirectQuery i Power BI](desktop-directquery-about.md)

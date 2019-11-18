@@ -2,7 +2,6 @@
 title: Fejlfinding af feltfejl
 description: Almindelige fejl, der kan opstå, når et felt forsøger at opdatere i Power BI
 author: mgblythe
-manager: kfile
 ms.reviewer: kayu
 ms.custom: seodec18
 ms.service: powerbi
@@ -11,18 +10,18 @@ ms.topic: troubleshooting
 ms.date: 12/06/2018
 ms.author: mblythe
 LocalizationGroup: Troubleshooting
-ms.openlocfilehash: f6becb175b8779588ab8d203bb02256945c71ee6
-ms.sourcegitcommit: e5cf19e16112c7dad1591c3b38d232267ffb3ae1
+ms.openlocfilehash: dbae4c82fb350242ed0fefadeeec217666fc3005
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72544271"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877491"
 ---
 # <a name="troubleshooting-tile-errors"></a>Fejlfinding af feltfejl
 Nedenfor er de mest almindelige fejl, der kan opstå med felter, sammen med en forklaring.
 
 > [!NOTE]
-> Hvis der opstår en fejl, der ikke er angivet nedenfor, og det medfører problemer for dig, kan du bede om yderligere hjælp på [community-webstedet](http://community.powerbi.com/), eller du kan oprette en [supportbillet](https://powerbi.microsoft.com/support/).
+> Hvis der opstår en fejl, der ikke er angivet nedenfor, og det medfører problemer for dig, kan du bede om yderligere hjælp på [community-webstedet](https://community.powerbi.com/), eller du kan oprette en [supportbillet](https://powerbi.microsoft.com/support/).
 > 
 > 
 
@@ -38,7 +37,7 @@ Kontakt ejeren af dashboardet for at sikre, at datakilderne og modellen findes o
 
 **Brugerdefinerede visualiseringer er blevet deaktiveret af din administrator.**
 
-Din Power BI-administrator har deaktiveret brugen af brugerdefinerede visualiseringer for din organisation eller sikkerhedsgruppe. Du kan ikke bruge brugerdefinerede visualiseringer fra [Microsoft Marketplace](https://appsource.microsoft.com/en-us/marketplace/apps?page=1&product=power-bi-visuals) eller importere private visualiseringer fra en fil. Du kan kun bruge de foruddefinerede pakkede sæt af visualiseringer.
+Din Power BI-administrator har deaktiveret brugen af brugerdefinerede visualiseringer for din organisation eller sikkerhedsgruppe. Du kan ikke bruge brugerdefinerede visualiseringer fra [Microsoft Marketplace](https://appsource.microsoft.com/marketplace/apps?page=1&product=power-bi-visuals) eller importere private visualiseringer fra en fil. Du kan kun bruge de foruddefinerede pakkede sæt af visualiseringer.
 
 
 **Dataformer skal indeholde mindst én gruppe eller beregning med data som output. Kontakt ejeren af dashboardet.**
@@ -69,7 +68,7 @@ Det er normalt et midlertidigt problem. Hvis du prøver igen senere, og du stadi
 
 Dette kan ske, hvis det underliggende datasæt er konfigureret til at bruge DirectQuery-tilstand eller en direkte forbindelse til Analysis Services via en datagateway i det lokale miljø. I dette tilfælde fortsætter felterne med at vise de ufiltrerede data efter aktivering af SSO for datakilden indtil næste opdatering af feltet. Ved næste opdatering af feltet bruger Power BI SSO som konfigureret, og felterne viser dataene filtreret i henhold til brugeridentiteten. 
 
-Hvis du vil have vist de filtrerede data med det samme, kan du gennemtvinge en opdatering af felter ved at vælge ellipsen (...) i øverste højre hjørne af et dashboard og derefter vælge **Opdater dashboardfelter**.
+Hvis du vil se de filtrerede data med det samme, kan du gennemtvinge en opdatering af felter ved at vælge **Flere indstillinger** (...) øverst til højre på et dashboard og derefter vælge **Opdater dashboardfelter**.
 
 Som ejer af et datasæt kan du også ændre intervallet for opdatering af felter og angive det til 15 minutter for at fremskynde feltopdateringen. Vælg tandhjulsikonet i øverste højre hjørne af Power BI-tjenesten, og vælg derefter **Indstillinger**. Vælg fanen **Datasæt** på siden **Indstillinger**. Udvid **Planlagt cacheopdatering**, og rediger **Opdateringshastighed**. Sørg for at nulstille konfigurationen til den oprindelige opdateringshastighed, når Power BI har udført den næste feltopdatering.
 
@@ -82,5 +81,5 @@ Hvis du stadig har et problem, skal du [kontakte support](https://support.powerb
 ## <a name="next-steps"></a>Næste trin
 [Fejlfinding af datagatewayen i det lokale miljø](service-gateway-onprem-tshoot.md)  
 [Fejlfinding af Power BI Personal Gateway](service-admin-troubleshooting-power-bi-personal-gateway.md)  
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/25/2019
 ms.author: maggies
 LocalizationGroup: Reports
-ms.openlocfilehash: f2d9046c907b78ce2c1bb2754007c34199877a08
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 1993ac0b300bb582d7b8a1946ff63cf6316c2d52
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523068"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432209"
 ---
 # <a name="create-a-report-in-the-power-bi-service-by-importing-a-dataset"></a>Opret en rapport i Power BI-tjenesten ved at importere et datasæt
 Du har læst [Rapporter i Power BI](consumer/end-user-reports.md), og nu vil du oprette din egen. Der er forskellige måder at oprette en rapport på. I denne artikel starter vi med at oprette en grundlæggende rapport i Power BI-tjenesten ud fra et Excel-datasæt. Når du har forstået de grundlæggende ting i forbindelse med at oprette en rapport, skal du se de [Næste trin](#next-steps) nederst for at se mere avancerede rapportemner.  
@@ -29,7 +29,7 @@ Denne metode til oprettelse af en rapport starter med et datasæt og et tomt rap
 
 1. Vi opretter rapporten i et arbejdsområde i Power BI-tjenesten, så vælg et eksisterende arbejdsområde eller opret et.
    
-   ![liste over apparbejdsområder](media/service-report-create-new/power-bi-workspaces2.png)
+   ![liste over arbejdsområder](media/service-report-create-new/power-bi-workspaces2.png)
 2. Vælg **Hent data** nederst i venstre navigationsrude.
    
    ![Hent data](media/service-report-create-new/power-bi-get-data3.png)
@@ -80,7 +80,7 @@ Vores marketingchef har nogle yderligere spørgsmål, vi skal besvare. Vedkommen
 5. Hvis du vil sortere visualiseringen efter tidsperiode, skal du vælge ellipsen og vælge **Sortér efter periode**.
 6. Nu vil vi tilføje udsnittet. Markér et tomt område på lærredet, og vælg skabelonen Udsnit ![Udsnit-ikon](media/service-report-create-new/power-bi-slicer-icon.png) . Vi har nu et tomt udsnit på vores lærred.
    
-    ![rapportlærred](media/service-report-create-new/power-bi-report-step6.png)    
+    ![rapportcanvas](media/service-report-create-new/power-bi-report-step6.png)    
 7. Vælg **District** > **District** i ruden Fields. Flyt og tilpas størrelsen af udsnitsværktøjet.
    
     ![Rapporteditor, tilføj District](media/service-report-create-new/power-bi-report-step7.png)  

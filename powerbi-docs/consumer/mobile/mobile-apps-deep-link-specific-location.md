@@ -9,12 +9,12 @@ ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 04/24/2019
 ms.author: mshenhav
-ms.openlocfilehash: 4e09b10e38b018f8e5572343b343a243ace3bf81
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: ef7766f8783fef08561a70d8ea77212c138e3148
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "64906519"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429894"
 ---
 # <a name="create-a-link-to-a-specific-location-in-the-power-bi-mobile-apps"></a>Opret et link til en bestemt placering i Power BI-mobilappsene
 Du kan bruge links til at få direkte adgang til bestemte elementer i Power BI: Rapport, Dashboard og Felt.
@@ -69,7 +69,7 @@ https://app.powerbi.com/Redirect?[**QUERYPARAMS**]
 
 #### <a name="links-of-apps-and-items-in-app"></a>Links i apps og elementer i app
 
-For de **apps, rapporter og dashboards, der er en del af en app**, er det nemmest at oprette linket ved at gå til arbejdsområdet for appen og vælge "Opdater app". Derved åbnes oplevelsen "Publicer app", og under fanen Adgang kan du finde sektionen **Links**. Hvis du udvider denne sektion, får du vist en liste over appen og alle appens indholdslinks, som kan bruges til at få direkte adgang til dem.
+For de **apps, rapporter og dashboards, der er en del af en app**, er det nemmest at oprette linket ved at gå til arbejdsområdet og vælge "Opdater app". Derved åbnes oplevelsen "Publicer app", og under fanen Adgang kan du finde sektionen **Links**. Hvis du udvider denne sektion, får du vist en liste over appen og alle appens indholdslinks, som kan bruges til at få direkte adgang til dem.
 
 ![Links til publicering i apps i Power BI ](./media/mobile-apps-links/mobile-link-copy-app-links.png)
 
@@ -118,5 +118,5 @@ Din feedback hjælper os med at afgøre, hvad der skal implementeres fremover, s
 * [Power BI-apps til mobilenheder](mobile-apps-for-mobile-devices.md)
 * Følg @MSPowerBI på Twitter
 * Deltag i samtalen i [Power BI-communityet](http://community.powerbi.com/)
-* [Hvad er Power BI?](../../power-bi-overview.md)
+* [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)
 

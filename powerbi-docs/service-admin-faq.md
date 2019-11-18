@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 09/09/2019
 ms.author: mblythe
 LocalizationGroup: Administration
-ms.openlocfilehash: 4ec7a67b861a747f9f8f654ab9fb3fa5c2951af3
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 6cc29bd1d06e948facf1058411759c15841a8352
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175202"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442927"
 ---
 # <a name="administering-power-bi---frequently-asked-questions-faq"></a>Administration af Power BI – ofte stillede spørgsmål
 
@@ -28,8 +28,8 @@ Denne artikel omhandler ofte stillede spørgsmål om Power BI-administration. Du
 * [Brug af PowerShell](#using-powershell)
 * [Hvordan tilmelder brugerne sig Power BI?](#how-do-users-sign-up-for-power-bi)
 * [Hvordan tilmelder individuelle brugere i min organisation sig?](#how-do-individual-users-in-my-organization-sign-up)
-* [Hvordan kan jeg forhindre brugere i at tilmelde sig min eksisterende Office 365-lejer?](#how-can-i-prevent-users-from-joining-my-existing-office-365-tenant)
-* [Hvordan kan jeg forhindre brugere i at tilmelde sig min eksisterende Office 365-lejer?](#how-can-i-allow-users-to-join-my-existing-office-365-tenant)
+* [Hvordan kan jeg forhindre brugere i at tilmelde sig min eksisterende Office 365-lejer?](#how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant)
+* [Hvordan kan jeg forhindre brugere i at tilmelde sig min eksisterende Office 365-lejer?](#how-can-i-allow-users-to-join-my-existing-microsoft-365-tenant)
 * [Hvordan kontrollerer jeg, om blokering er aktiveret i lejeren?](#how-do-i-check-if-i-have-the-block-on-in-the-tenant)
 * [Hvordan kan jeg forhindre mine eksisterne brugere i at begynde at bruge Power BI?](#how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi)
 * [Hvordan kan jeg tillade mine eksisterende brugere at tilmelde sig Power BI?](#how-can-i-allow-my-existing-users-to-sign-up-for-power-bi)
@@ -39,7 +39,7 @@ Denne artikel omhandler ofte stillede spørgsmål om Power BI-administration. Du
 * [Hvordan vil dette ændre den måde, jeg administrerer identiteter for brugerne i organisationen på i dag?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 * [Hvordan administrerer vi Power BI?](#how-do-we-manage-power-bi)
 * [Hvad er processen til administration af en lejer, der er oprettet af Microsoft for brugerne?](#what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users)
-* [Kan jeg kontrollere den Office 365-lejer, som brugerne føjes til, hvis jeg har flere domæner?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to)
+* [Kan jeg styre den Microsoft 365-lejer, som brugerne føjes til, hvis jeg har flere domæner?](#if-i-have-multiple-domains-can-i-control-the-microsoft-365-tenant-that-users-get-added-to)
 * [Hvordan fjerner jeg Power BI for brugere, der allerede er tilmeldt?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 * [Hvordan får jeg besked, når nye brugere tilmelder sig min lejer?](#how-do-i-know-when-new-users-have-joined-my-tenant)
 * [Er der andet jeg skal være forberedt på?](#are-there-any-additional-things-i-should-prepare-for)
@@ -60,7 +60,7 @@ Nogle af procedurerne i dette afsnit kræver Windows PowerShell-scripts. Hvis du
 
 ### <a name="how-do-users-sign-up-for-power-bi"></a>Hvordan tilmelder brugerne sig Power BI?
 
-Som administrator kan du tilmelde dig Power BI via [Power BI-webstedet](https://powerbi.microsoft.com) eller på siden [Køb tjenester](https://admin.microsoft.com/AdminPortal/Home#/catalog) i Microsoft 365 Administration. Når en administrator tilmelder sig Power BI, kan vedkommende tildele brugerlicenser til brugere, der skal have adgang.
+Som administrator af Microsoft 365 kan du tilmelde dig Power BI via [Power BI-webstedet](https://powerbi.microsoft.com) eller på siden [Køb tjenester](https://admin.microsoft.com/AdminPortal/Home#/catalog) i Microsoft 365 Administration. Når en administrator af Microsoft 365 tilmelder sig Power BI, kan vedkommende tildele brugerlicenser til brugere, der skal have adgang.
 
 Individuelle brugere i din organisation kan derudover muligvis tilmelde sig Power BI på [Power BI-webstedet](https://powerbi.microsoft.com). Når en bruger i organisationen tilmelder sig Power BI, tildeler tjenesten automatisk brugeren en Power BI-licens. Du kan finde flere oplysninger under [Tilmelding til Power BI som enkeltperson](service-self-service-signup-for-power-bi.md) og [Power BI-licenser i din organisation](service-admin-licensing-organization.md).
 
@@ -68,21 +68,21 @@ Individuelle brugere i din organisation kan derudover muligvis tilmelde sig Powe
 
 Der er tre scenarier, der kan gøre sig gældende for brugere i din organisation:
 
-* **Scenarie 1**: Din organisation har allerede et Office 365-miljø, og brugeren, der tilmelder sig Power BI, har allerede en Office 365-konto.
-    I dette scenarie, hvor en bruger allerede har en arbejds- eller skolekonto i lejeren (f.eks. contoso.com), men endnu ikke har Power BI, aktiverer Microsoft blot planen for den pågældende konto. Brugeren får automatisk besked om, hvordan Power BI-tjenesten bruges.
+* **Scenarie 1**: Din organisation har allerede et Microsoft 365-miljø, og brugeren, der tilmelder sig Power BI, har allerede en Microsoft 365-konto.
+    I dette scenarie, hvor en bruger allerede har en arbejds- eller skolekonto i lejeren (f.eks. contoso.com), men endnu ikke har Power BI, aktiverer Microsoft blot planen for Power BI (gratis) for den pågældende konto. Brugeren får automatisk besked om, hvordan Power BI-tjenesten bruges.
 
-* **Scenarie 2**: Din organisation har allerede et Office 365-miljø, men brugeren, der tilmelder sig Power BI, har ikke en Office 365-konto.
-    I dette scenarie, har brugeren en mailadresse på organisationens domæne (f.eks. contoso.com), men brugeren har endnu ikke en Office 365-konto. I dette tilfælde kan brugeren tilmelde sig Power BI og får automatisk en konto. Denne handling giver brugeren adgang til Power BI-tjenesten. Hvis f.eks. en medarbejder, der hedder Nancy, bruger sin arbejdsmailadresse (f.eks. nancy@contoso.com) til at tilmelde sig, tilføjer Microsoft automatisk Nancy som bruger i Contosos Office 365-miljø og aktiverer Power BI for den pågældende konto.
+* **Scenarie 2**: Din organisation har allerede et Microsoft 365-miljø, men brugeren, der tilmelder sig Power BI, har ikke en Microsoft 365-konto.
+    I dette scenarie har brugeren en mailadresse på organisationens domæne (f.eks. contoso.com), men brugeren har endnu ikke en Microsoft 365-konto. I dette tilfælde kan brugeren tilmelde sig Power BI og får automatisk en konto. Denne handling giver brugeren adgang til Power BI-tjenesten. Hvis en medarbejder med navnet Nancy f.eks. bruger sin arbejdsmailadresse (såsom nancy@contoso.com) til at tilmelde sig, tilføjer Microsoft automatisk Nancy som bruger i Microsoft 365-miljøet for Contoso og aktiverer Power BI for den pågældende konto.
 
-* **Scenarie 3**: Din organisation har ikke et Office 365-miljø, der er knyttet til dit maildomæne.
-    Din organisation behøver ikke at udføre nogen administrative handlinger for at kunne nyde godt af Power BI. Tjenesten føjer brugere til en ny brugermappe, der udelukkende bruges i cloudmiljøet. Du kan dog også vælge at overtage rollen som lejeradministrator og administrere dem.
+* **Scenarie 3**: Din organisation har ikke et Microsoft 365-miljø knyttet til dit maildomæne.
+    Din organisation behøver ikke at udføre nogen administrative handlinger for at kunne nyde godt af Power BI. Tjenesten føjer brugere til en ny brugermappe, der udelukkende bruges i cloudmiljøet. Du kan dog også vælge at overtage lejeren som Global administrator i Microsoft 365 og administrere dem.
 
 > [!IMPORTANT]
-> Hvis organisationen har flere maildomæner, og du foretrækker, at alle mailadresseudvidelser er i den samme lejer, skal du føje alle mailadressedomæner til en Azure Active Directory-lejer, før nogen brugere tilmelder sig. Når du først har oprettet brugerne, er der er ikke en automatisk mekanisme, der kan flytte brugerne på tværs af lejere. Få mere at vide om denne proces under [Kan jeg kontrollere den Office 365-lejer, som brugerne føjes til, hvis jeg har flere domæner?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to) senere i denne artikel og i artiklen [Føj et domæne til Office 365](/office365/admin/setup/add-domain/).
+> Hvis organisationen har flere maildomæner, og du foretrækker, at alle mailadresseudvidelser er i den samme lejer, skal du føje alle mailadressedomæner til en Azure Active Directory-lejer, før nogen brugere tilmelder sig. Når du først har oprettet brugerne, er der er ikke en automatisk mekanisme, der kan flytte brugerne på tværs af lejere. Du kan finde flere oplysninger om denne proces under [Kan jeg styre den Microsoft 365-lejer, som brugerne føjes til, hvis jeg har flere domæner?](#if-i-have-multiple-domains-can-i-control-the-microsoft-365-tenant-that-users-get-added-to) senere i denne artikel og [Føj et domæne til Microsoft 365](/office365/admin/setup/add-domain/).
 
-### <a name="how-can-i-prevent-users-from-joining-my-existing-office-365-tenant"></a>Hvordan kan jeg forhindre brugere i at tilmelde sig min eksisterende Office 365-lejer?
+### <a name="how-can-i-prevent-users-from-joining-my-existing-microsoft-365-tenant"></a>Hvordan forhindrer jeg, at brugerne tilmelder sig min eksisterende Microsoft 365-lejer?
 
-Som administrator kan du tage forholdsregler for at forhindre brugere i at tilmelde sig din eksisterende Office 365-lejer. Hvis du blokerer adgangen, mislykkes brugernes forsøg på at tilmelde sig, og der vises en besked om, at de skal kontakte administratoren for deres organisation. Du behøver ikke at gentage denne proces, hvis du allerede har deaktiveret automatisk licensdistribution (f.eks. via Office 365 for Education til studerende, undervisere og ansatte).
+Som Global administrator i Microsoft 365 er der nogle trin, du kan udføre, for at forhindre, at brugerne tilmelder sig din eksisterende Microsoft 365-lejer. Hvis du blokerer adgangen, mislykkes brugernes forsøg på at tilmelde sig, og der vises en besked om, at de skal kontakte administratoren for deres organisation. Du behøver ikke at gentage denne proces, hvis du allerede har deaktiveret automatisk licensdistribution (f.eks. via Office 365 for Education til studerende, undervisere og ansatte).
 
 Brug følgende PowerShell-script til at forhindre, at nye brugere tilmelder sig en administreret lejer. ([Få mere at vide om PowerShell][1].)
 
@@ -96,7 +96,7 @@ Set-MsolCompanySettings -AllowEmailVerifiedUsers $false
 > [!NOTE]
 > Blokering af adgangen forhindrer, at nye brugere i din organisation kan tilmelde sig Power BI. Brugere, der tilmelder sig Power BI før deaktivering af nye tilmeldinger, beholder deres licenser. Hvis du vil fjerne en bruger, skal du se [Hvordan fjerner jeg Power BI for brugere, der allerede er tilmeldt?](#how-do-i-remove-power-bi-for-users-that-already-signed-up) senere i denne artikel.
 
-### <a name="how-can-i-allow-users-to-join-my-existing-office-365-tenant"></a>Hvordan kan jeg forhindre brugere i at tilmelde sig min eksisterende Office 365-lejer?
+### <a name="how-can-i-allow-users-to-join-my-existing-microsoft-365-tenant"></a>Hvordan giver jeg brugerne tilladelse til at tilmelde sig min eksisterende Microsoft 365-lejer ?
 
 Brug følgende PowerShell-script til at gøre det muligt for nye brugere at tilmelde sig en administreret lejer. ([Få mere at vide om PowerShell][1].)
 
@@ -124,7 +124,7 @@ Den Azure AD-indstilling, der styrer dette, er **AllowAdHocSubscriptions**. For 
 
 Brug følgende PowerShell-script til at deaktivere ad hoc-abonnementer. ([Få mere at vide om PowerShell][1].)
 
-1. Log på Azure Active Directory ved hjælp af dine legitimationsoplysninger til Office 365. I den første linje i følgende PowerShell-script bliver du bedt om dine legitimationsoplysninger. Den anden linje opretter forbindelse til Azure Active Directory.
+1. Log på Azure Active Directory ved hjælp af dine legitimationsoplysninger til Microsoft 365. I den første linje i følgende PowerShell-script bliver du bedt om dine legitimationsoplysninger. Den anden linje opretter forbindelse til Azure Active Directory.
 
     ```powershell
      $msolcred = get-credential
@@ -146,7 +146,7 @@ Brug følgende PowerShell-script til at deaktivere ad hoc-abonnementer. ([Få me
     ```
 
 > [!NOTE]
-> Brug flaget **AllowAdHocSubscriptions** til at kontrollere flere brugeregenskaber i organisationen, herunder muligheden for at brugere kan tilmelde sig Azure Rights Management Service. Alle disse egenskaber påvirkes, hvis flaget ændres. Med indstillingen *falsk* kan brugerne stadig tilmelde sig en Pro-prøveversion.
+> Brug flaget **AllowAdHocSubscriptions** til at kontrollere flere brugeregenskaber i organisationen, herunder muligheden for at brugere kan tilmelde sig Azure Rights Management Service. Alle disse egenskaber påvirkes, hvis flaget ændres. Med indstillingen *falsk* kan brugerne stadig tilmelde sig en individuel Power BI Pro-prøveversion.
 
 ### <a name="how-can-i-allow-my-existing-users-to-sign-up-for-power-bi"></a>Hvordan kan jeg tillade mine eksisterende brugere at tilmelde sig Power BI?
 
@@ -158,36 +158,34 @@ Hvis du vil tillade dine eksisterne brugere at tilmelde sig Power BI, skal du k�
 
 Der er tre scenarier, der kan gøre sig gældende for brugere i din organisation:
 
-* **Scenarie 1**: Hvis organisationen allerede har et eksisterende Office 365-miljø, og alle brugerne i organisationen har en Office 365-konto, sker der ingen ændring i, hvordan du administrerer identiteter.
+* **Scenarie 1**: Hvis din organisation allerede har et eksisterende Microsoft 365-miljø, og alle brugerne i organisationen har en Microsoft 365-konto, sker der ingen ændring i den måde, du administrerer identiteter på.
 
-* **Scenarie 2**: Hvis organisationen allerede har et eksisterende Office 365-miljø, men det ikke er alle brugerne i organisationen, der har en Office 365-konto, opretter vi en bruger i lejeren og tildeler licenser på baggrund af brugerens arbejds- eller skolemailadresse.
+* **Scenarie 2**: Hvis din organisation allerede har et eksisterende Microsoft 365-miljø, men det ikke er alle brugerne i organisationen, der har en Microsoft 365-konto, opretter vi en bruger i lejeren og tildeler licenser på baggrund af brugerens arbejds- eller skolemailadresse.
 
     Det betyder, at antallet af brugere, som du administrerer på et givent tidspunkt, stiger, efterhånden som brugerne i organisationen tilmelder sig tjenesten.
 
-* **Scenarie 3**: Hvis din organisation ikke har et Office 365-miljø, der er sluttet til dit maildomæne, sker der ingen ændring i, hvordan du administrerer identiteter.
+* **Scenarie 3**: Hvis din organisation ikke har et Microsoft 365-miljø, der er forbundet til dit maildomæne, sker der ingen ændring i den måde, du administrerer identiteter på.
 
-    Tjenesten føjer brugere til en ny brugermappe, der udelukkende bruges i cloudmiljøet. Du kan dog også vælge at overtage rollen som lejeradministrator og administrere dem.
+    Tjenesten føjer brugere til en ny mappe, der kun findes i cloudmiljøet, som du kan vælge at overtage som Global administrator i Microsoft 365 Global og administrere dem.
 
 ### <a name="how-do-we-manage-power-bi"></a>Hvordan administrerer vi Power BI?
 
-Power BI har en administrationsportal, der giver dig mulighed for at få vist brugsstatistikker, og som indeholder et link til Microsoft 365 Administration, hvor du kan administrere brugere og grupper. Desuden giver portalen mulighed for at styre indstillinger på tværs af lejere.
-
-Hvis du vil bruge Power BI-administrationsportalen, skal du markere din konto som **Global administrator** i Office 365 eller Azure Active Directory, eller nogen skal tildele rollen Power BI-tjenesteadministrator til din brugerkonto. Få mere at vide under [Beskrivelse af rollen som Power BI-administrator](service-admin-role.md) og [Power BI-administrationsportalen](service-admin-portal.md).
+Power BI indeholder en Power BI-administrationsportal til brugere med rollen Global administrator i Microsoft 365 og brugere med rollen Administrator i Power BI-tjenesten. Hvis du vil bruge Power BI-administrationsportalen, skal du markere din konto som **Global administrator** i Microsoft 365 eller Azure Active Directory, eller nogen skal tildele rollen Administrator i Power BI-tjenesten til din brugerkonto. Få mere at vide under [Beskrivelse af rollen som Administrator i Power BI](service-admin-role.md) og [Power BI-administrationsportalen](service-admin-portal.md). Portalen indeholder muligheden for at styre indstillingerne i hele lejeren, få vist brugsstatistikker for Power BI og et link til Microsoft 365-administrationscentret, hvor du kan administrere brugere og grupper.
 
 ### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Hvad er processen til administration af en lejer, der er oprettet af Microsoft for brugerne?
 
-Når en bruger via selvbetjening melder sig til en cloudtjeneste, som bruger Azure AD, føjer tjenesten brugeren til en ikke-administreret Azure AD-mappe, der er baseret på brugerens maildomæne. Du kan gøre krav på og administrere den lejer, som nogen har oprettet ved hjælp af en proces, der kaldes *administrationsovertagelse*. Få mere at vide under [Overtag en ikke-administreret mappe som administrator i Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover). Den form for overtagelse, du foretager, afhænger af, om der er en eksisterende administreret lejer knyttet til dit domæne:
+Når en bruger via selvbetjening melder sig til en cloudtjeneste, som bruger Azure AD, føjer tjenesten brugeren til en ikke-administreret Azure AD-mappe, der er baseret på brugerens maildomæne. Du kan gøre krav på og administrere en lejer, som nogen har oprettet ved hjælp af en proces, der kaldes *administrationsovertagelse*. Få mere at vide under [Overtag en ikke-administreret mappe som administrator i Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover). Den form for overtagelse, du foretager, afhænger af, om der er en eksisterende administreret lejer knyttet til dit domæne:
 
 * Power BI understøtter intern administratorovertagelse. Når du udfører en _intern_ administratorovertagelse af en ikke-administreret Azure-mappe, tilføjes du som global administrator af den ikke-administrerede mappe. Ingen brugere, domæner eller tjenesteplaner overføres til andre mapper, som du administrerer.
 
-* Power BI understøtter ikke længere ekstern administratorovertagelse. Når du udfører en _ekstern_ administratorovertagelse af en ikke-administreret Azure-mappe, føjer du DNS-domænenavnet for den ikke-administrerede mappe til din administrerede Azure-mappe. Når du tilføjer domænenavnet, oprettes der en tilknytning af brugere til ressourcer i din administrerede Azure-mappe, så disse brugere fortsat kan få adgang til tjenester uden afbrydelser.
+* Power BI understøtter ikke længere ekstern administratorovertagelse. Når du udfører en _ekstern_ administratorovertagelse af en ikke-administreret Azure-mappe, føjer du DNS-domænenavnet for den ikke-administrerede mappe til din administrerede Azure-mappe. Ekstern overtagelse medfører tab af adgang til alt Power BI-indhold på den oprindelige lejer, der ikke administreres. Power BI-rapporter skal publiceres igen i den nye lejer, og Power BI-dashboards og -programmer skal oprettes igen i den nye lejer.
 
-### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-get-added-to"></a>Kan jeg kontrollere den Office 365-lejer, som brugerne føjes til, hvis jeg har flere domæner?
+### <a name="if-i-have-multiple-domains-can-i-control-the-microsoft-365-tenant-that-users-get-added-to"></a>Kan jeg styre den Microsoft 365-lejer, som brugerne føjes til, hvis jeg har flere domæner?
 
 Hvis du ikke foretager dig noget, opretter tjenesten en lejer for hvert brugermaildomæne og underdomæne. Hvis du ønsker, at alle brugerne skal være i samme lejer uanset deres mailadresseudvidelser: Opret en destinationslejer i forvejen, eller brug en eksisterende lejer. Tilføj derefter alle eksisterende domæner og underdomæner, der skal konsolideres i den pågældende lejer. Alle brugerne med mailadresser, der slutter med de pågældende domæner og underdomæner, tilføjes automatisk i destinationslejeren, når de tilmelder sig.
 
 > [!IMPORTANT]
-> Når du først har oprettet brugerne, er der er ikke en automatisk mekanisme, der kan flytte brugerne på tværs af lejere. Hvis du vil have mere at vide om tilføjelse af domæner til en enkelt Office 365-lejer, skal du se [Føj dine brugere og domæner til Office 365](/office365/admin/setup/add-domain/).
+> Når du først har oprettet brugerne, er der er ikke en automatisk mekanisme, der kan flytte brugerne på tværs af lejere. Hvis du vil have mere at vide om tilføjelse af domæner til en enkelt Microsoft 365-lejer, skal du se [Føj dine brugere og domæner til Office 365](/office365/admin/setup/add-domain/).
 
 ### <a name="how-do-i-remove-power-bi-for-users-that-already-signed-up"></a>Hvordan fjerner jeg Power BI for brugere, der allerede er tilmeldt?
 
@@ -209,7 +207,7 @@ Hvis en bruger er tilmeldt Power BI, men du ikke længere ønsker, at vedkommend
 
 ### <a name="how-do-i-know-when-new-users-have-joined-my-tenant"></a>Hvordan får jeg besked, når nye brugere slutter sig til min lejer?
 
-Brugere, der har tilmeldt sig lejeren som en del af dette program, tildeles en unik licens, som du kan filtrere efter i din aktive brugerrude i administratordashboardet. Følg disse trin for at oprette denne nye visning.
+Brugere, der har tilmeldt sig lejeren via selvbetjent logon, tildeles en unik licens, som du kan filtrere efter i din aktive brugerrude på administratordashboardet. Følg disse trin for at oprette denne nye visning.
 
 1. Naviger til [Microsoft 365 Administration](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
@@ -251,7 +249,7 @@ Få mere at vide om Power BI-overholdelse ved at se [Microsoft Center for sikker
 
 ### <a name="how-does-security-work-in-power-bi"></a>Hvordan fungerer sikkerhed i Power BI?
 
-Microsoft har bygget Power BI oven på Office 365, der igen er bygget på Azure-tjenester som Azure Active Directory. Se en oversigt over Power BI-arkitektur i [Sikkerhed i Power BI](service-admin-power-bi-security.md).
+Microsoft har skabt Power BI med Microsoft 365 som grundlag, der igen er bygger videre på Azure-tjenester såsom Azure Active Directory. Se en oversigt over Power BI-arkitektur i [Sikkerhed i Power BI](service-admin-power-bi-security.md).
 
 ## <a name="next-steps"></a>Næste trin
 

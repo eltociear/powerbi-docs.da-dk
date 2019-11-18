@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: 546dffe20d6840544eca1360945482630a686069
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: e694add3fd275cc2d3e9e0e6799adc9a16f32bbd
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307978"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429920"
 ---
 # <a name="automatic-page-refresh-in-power-bi-desktop-preview"></a>Automatisk sideopdatering i Power BI Desktop (eksempelvisning)
 
@@ -112,7 +112,7 @@ Vi vil tydeliggøre, hvordan dette fungerer, ved at begynde med nogle baggrundso
 
 I en delt kapacitet kører dine arbejdsbelastninger på databehandlingsressourcer, der deles med andre kunder. Eftersom kapaciteten skal dele ressourcerne, pålægges begrænsninger for at sikre *fair play*, f.eks. den maksimale modelstørrelse (1 GB) og den maksimale daglige opdateringshastighed (otte gange pr. dag).
 
-**Arbejdsområder**  i Power BI er placeret i kapaciteter, og de repræsenterer sikkerheds-, samarbejds- og udrulningsobjektbeholdere. Hver bruger af Power BI har et personligt arbejdsområde, der er kendt som **Mit arbejdsområde**. Flere arbejdsområder kan oprettes for at muliggøre samarbejde og udrulning, og disse kaldes **Apparbejdsområder**. Arbejdsområder, herunder personlige arbejdsområder, oprettes som standard i den **delte kapacitet**.
+**Arbejdsområder**  i Power BI er placeret i kapaciteter, og de repræsenterer sikkerheds-, samarbejds- og udrulningsobjektbeholdere. Hver bruger af Power BI har et personligt arbejdsområde, der er kendt som **Mit arbejdsområde**. Der kan oprettes flere arbejdsområder for at muliggøre samarbejde og udrulning, og disse kaldes **arbejdsområder**. Arbejdsområder, herunder personlige arbejdsområder, oprettes som standard i den **delte kapacitet**.
 
 Her er nogle oplysninger om de to forskellige arbejdsområdescenarier:
 

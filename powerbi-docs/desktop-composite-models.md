@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 08/19/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: ae896fb737eda6f95efa1589f2b3384e7426cf30
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: aef50d58dc11269c2c30010c1ca89843689f45c4
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69654567"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73017689"
 ---
 # <a name="use-composite-models-in-power-bi-desktop"></a>Brug af sammensatte modeller i Power BI Desktop
 
@@ -29,7 +29,7 @@ Sammensatte modeller-funktionaliteten i Power BI Desktop består af tre relatere
 
 * **Mange til mange-relationer**: Via *sammensatte modeller* kan du oprette *mange til mange-relationer* mellem tabeller. Med denne tilgang fjernes kravene for entydige værdier i tabeller. Tidligere midlertidige løsninger, f.eks. introduktion af nye tabeller kun for at oprette relationer, fjernes også. Du kan finde flere oplysninger under [Mange til mange-relationer i Power BI Desktop (prøveversion)](desktop-many-to-many-relationships.md).
 
-* **Lagringstilstand**: Du kan nu angive, hvilke visualiseringer der kræver en forespørgsel til back end-datakilder. Visuelle elementer, der ikke kræver en forespørgsel, importeres, også selvom de er baseret på DirectQuery. Denne funktion hjælper med at forbedre ydeevnen og reducere belastningen af back-end. Tidligere ville selv enkle visuals, f.eks. udsnit, starte forespørgsler, der blev sendt til back end-kilderne. Du kan finde flere oplysninger i [Lagringstilstand i Power BI Desktop (prøveversion)](desktop-storage-mode.md).
+* **Lagringstilstand**: Du kan nu angive, hvilke visualiseringer der kræver en forespørgsel til back end-datakilder. Visualiseringer, der ikke kræver en forespørgsel, importeres, også selvom de er baseret på DirectQuery. Denne funktion hjælper med at forbedre ydeevnen og reducere belastningen af back-end. Tidligere ville selv enkle visuals, f.eks. udsnit, starte forespørgsler, der blev sendt til back end-kilderne. Du kan finde flere oplysninger i [Lagringstilstand i Power BI Desktop (prøveversion)](desktop-storage-mode.md).
 
 
 ## <a name="use-composite-models"></a>Brug sammensatte modeller
@@ -53,7 +53,7 @@ Ved hjælp af sammensatte modeller kan du f.eks. bygge en model, der kombinerer 
 En model, der kombinerer data fra mere end én DirectQuery-kilde, eller som kombinerer DirectQuery med importdata, kaldes en *sammensat model*.
 
 
-Du kan oprette relationer mellem tabeller, som du altid har gjort, selv når disse tabeller kommer fra forskellige kilder, med følgende begrænsninger: Alle relationer, der er oprettet på tværs af kilder, skal være defineret til at have en kardinalitet på *mange-til-mange* , uanset deres faktiske kardinalitet. Disse relationer fungerer som andre *mange-til-mange*-relationer, som beskrevet i [mange-til-mange-relationer i Power BI Desktop (prøveversion)](desktop-many-to-many-relationships.md). 
+Du kan oprette relationer mellem tabeller, som du altid har gjort, selvom de pågældende tabeller kommer fra forskellige kilder. Alle relationer, der er på tværs af kilder, oprettes med en kardinalitet på *mange til mange*, uanset hvad deres faktiske kardinalitet er. Du kan ændre dem til én til mange, mange til én eller én til én. Uanset hvilken kardinalitet du angiver, har relationer på tværs af kilder forskellig adfærd på den måde, at du ikke kan bruge DAX-funktioner til at hente værdier på den en-siden fra mange-siden. Du oplever måske også en indvirkning på ydeevnen i forhold til mange til mange-relationer i samme kilde.
 
 > [!NOTE]
 > I forbindelse med sammensatte modeller er alle importerede tabeller reelt en enkelt kilde, uanset hvilken faktiske underliggende datakilde de er importeret fra.   
@@ -88,7 +88,7 @@ På samme måde ser vi nu i **relationsvisningen** i Power BI Desktop endnu en t
 
 ![Relationsvisning for tabeller](media/desktop-composite-models/composite-models_08.png)
 
-Nu skal vi relatere disse tabeller til de andre tabeller i modellen. Som altid skal vi oprette en relation mellem tabellen **Bike** fra SQL Server og den importerede tabel **ProductManagers**. Det vil sige, at relationen findes mellem *Bike[ProductName]* og *ProductManagers[ProductName]* . Som beskrevet tidligere, skal alle relationer, der går på tværs af kilden, have standardkardinaliteten på *mange-til-mange*. 
+Nu skal vi relatere disse tabeller til de andre tabeller i modellen. Som altid skal vi oprette en relation mellem tabellen **Bike** fra SQL Server og den importerede tabel **ProductManagers**. Det vil sige, at relationen findes mellem *Bike[ProductName]* og *ProductManagers[ProductName]* . Som beskrevet tidligere, skal alle relationer, der går på tværs af kilden, have standardkardinaliteten på *mange til mange*. 
 
 ![Vinduet "Opret relation"](media/desktop-composite-models/composite-models_09.png)
 

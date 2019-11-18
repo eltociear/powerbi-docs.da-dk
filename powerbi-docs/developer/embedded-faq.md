@@ -3,22 +3,21 @@ title: Ofte stillede spørgsmål om Power BI Embedded
 description: Gennemse en liste med ofte stillede spørgsmål og svar om Power BI Embedded.
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 05/27/2019
-ms.openlocfilehash: 62b5498558b2c89a23e2ed2caf3dacdf343d3a79
-ms.sourcegitcommit: d9755602235ba03594c348571b9102c9bf88d732
+ms.openlocfilehash: 9e641b70c9fd6c6d378628d34413b14c59eaea23
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490340"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73864221"
 ---
 # <a name="frequently-asked-questions-about-power-bi-embedded"></a>Ofte stillede spørgsmål om Power BI Embedded
 
-* Hvis du har andre spørgsmål, kan du [prøve at spørge Power BI-community'et](http://community.powerbi.com/).
+* Hvis du har andre spørgsmål, kan du [prøve at spørge Power BI-community'et](https://community.powerbi.com/).
 * Har du stadig problemer? Gå til [supportsiden for Power BI](https://powerbi.microsoft.com/support/).
 
 ## <a name="general"></a>Generelt
@@ -67,7 +66,7 @@ Her er en ufuldstændig liste over funktionsforskelle.
 | Udvalgt | Power BI Embedded | Power BI Premium-kapacitet | Power BI Premium-kapacitet |
 |----------------------------------------------------------------------------------|-------------------|---------------------------|---------------------------|
 |   | Kapacitet for A-varenumre i Azure | Kapacitet for EM-varenumre i O365 | Kapacitet for P-varenumre i O365 |
-| Integrer artefakter fra et Power BI-programarbejdsområde | Ja | Ja | Ja |
+| Integrer artefakter fra et Power BI-arbejdsområde | Ja | Ja | Ja |
 | Forbrug Power BI-rapporter i en integreret applikation – SaaS | Nej | Ja | Ja |
 | Forbrug Power BI-rapporter i en integreret applikation – PaaS | Ja | Ja | Ja |
 | Forbrug Power BI-rapporter i SharePoint | Nej | Ja | Ja |
@@ -146,7 +145,7 @@ Ja. Der er Powershell-cmdlet'er og Azure Resource Manager-REST-API'er, du kan br
 
 ### <a name="what-is-the-pbi-embedded-dedicated-capacity-role-in-a-pbi-embedded-solution"></a>Hvilken rolle har PBI's integrerede dedikerede kapacitet i en PBI-integreret løsning?
 
-Hvis du vil [gøre din løsning produktionsklar](embed-sample-for-customers.md#move-to-production), skal du tildele det Power BI-indhold (apparbejdsområde), dit program bruger, til en Power BI Embedded-kapacitet (A SKU).
+Hvis du vil [gøre din løsning produktionsklar](embed-sample-for-customers.md#move-to-production), skal du tildele det Power BI-indhold (arbejdsområde), dit program bruger, til en Power BI Embedded-kapacitet (A SKU).
 
 ### <a name="in-what-azure-regions-is-pbi-embedded-available"></a>I hvilke Azure-områder er PBI Embedded tilgængelig?
 
@@ -362,4 +361,4 @@ Du kan se, hvordan du redigerer dine Power BI-data, [her](https://docs.microsoft
 
 Du kan finde flere oplysninger under [Fejlfinding af det integrerede program](embedded-troubleshoot.md).
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

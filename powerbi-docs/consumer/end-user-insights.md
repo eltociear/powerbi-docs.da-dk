@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 9/22/2019
 ms.author: mihart
 LocalizationGroup: Dashboards
-ms.openlocfilehash: c157a486b66180de1299144e670210559a53258a
-ms.sourcegitcommit: 3885ae11e695f875a82c212ca157e401db8337c4
+ms.openlocfilehash: e3e360a47d258c6103377fa26a16c10eb2c8d4d5
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71207589"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019618"
 ---
 # <a name="view-data-insights-on-dashboard-tiles-with-power-bi"></a>Få vist dataindsigt på dashboardfelter med Power BI
 Hvert enkelt [visualiseringsfelt](end-user-tiles.md) på dashboardet er en indgang til at udforske data. Når du vælger et felt, åbnes en rapport, eller [Spørgsmål og svar åbnes](end-user-q-and-a.md), hvor du kan filtrere, sortere og fordybe dig i datasættet bag rapporten. Når du kører indsigt, udfører Power BI denne udforskning af data for dig.
@@ -31,7 +31,7 @@ Funktionen Quick Insights er baseret på et voksende [sæt avancerede analytiske
 Når du kører indsigt på et dashboardfelt, søger Power BI kun i de data, der bruges til at oprette dette enkelte dashboardfelt. 
 
 1. [Åbn et dashboard](end-user-dashboards.md).
-2. Peg på et felt. vælg ellipsen (...), og vælg **Vis indsigt**. 
+2. Peg på et felt. vælg **Flere indstillinger** (...), og vælg **Vis indsigt**. 
 
     ![tilstand for ellipsemenuen](./media/end-user-insights/power-bi-hovers.png)
 

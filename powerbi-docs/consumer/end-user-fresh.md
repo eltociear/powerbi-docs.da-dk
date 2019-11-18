@@ -10,14 +10,17 @@ ms.topic: conceptual
 ms.date: 09/18/2019
 ms.author: mihart
 LocalizationGroup: Get started
-ms.openlocfilehash: 46f9d40b5e556c0d306aa77243a49835fca9d812
-ms.sourcegitcommit: 200291eac5769549ba5c47ef3951e2f3d094426e
+ms.openlocfilehash: 5d81b1e69d9cfbba6e3ed57f678af75dab1698c3
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71141709"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019785"
 ---
 # <a name="your-content-is-up-to-date"></a>Dit indhold er opdateret
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
+
 Som *forbruger* interagerer du med indhold, der er oprettet af *designere* og delt med dig. Du undrer dig måske over, om indholdet er opdateret, eller du vil måske blot gerne vide, hvornår indholdet senest blev opdateret. Det giver ro i sindet at vide, at du arbejder med det nyeste indhold.  
  
 ![Power BI-dashboard](media/end-user-fresh/power-bi-dashboards.png)
@@ -63,7 +66,7 @@ Hvis du vil vide, hvor opdateret indholdet er, kan du finde datoen for seneste o
 ### <a name="dashboard-tiles"></a>Dashboardfelter
 For felter i dashboardet kan du se feltet i fokustilstand for at se et tidsstempel for seneste opdatering.
 
-1. Vælg de tre prikker (...) på et felt på dashboardet, og vælg **Åbn i fokustilstand**.
+1. Vælg **Flere indstillinger** (...) på et dashboardfelt, og vælg **Åbn i Fokustilstand**.
 
     ![menu, der vises, når du har valgt de tre prikker](media/end-user-fresh/power-bi-focus-mode.png)
 
@@ -72,7 +75,7 @@ For felter i dashboardet kan du se feltet i fokustilstand for at se et tidsstemp
     ![browservindue med visning af seneste opdatering](media/end-user-fresh/power-bi-last-refresh2.png)
 
 ### <a name="dashboards-and-reports"></a>Dashboards og rapporter
-En anden måde, hvorpå du kan se datoen for seneste opdatering, er ved at vælge **Få vist relaterede**.  **Få vist relaterede** bliver tilgængelig, når du vælger ellipsen (…) på den øverste menulinje i Power BI.
+En anden måde, hvorpå du kan se datoen for seneste opdatering, er ved at vælge **Få vist relaterede**.  **Få vist relaterede** bliver tilgængelig, når du vælger **Flere indstillinger** (…) på den øverste menulinje i Power BI.
 
 ![Vælg Få vist relaterede i menuen](media/end-user-fresh/power-bi-view-related-dropdown.png)
 

@@ -2,19 +2,18 @@
 title: Vis dashboards og rapporter i Power BI-mobilappsene
 description: Opret eller opret forbindelse til dashboards og rapporter i Power BI-tjenesten. Derefter kan du se dem i Power BI-mobilappsene.
 author: mshenhav
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-mobile
 ms.topic: conceptual
 ms.date: 07/05/2019
 ms.author: mshenhav
-ms.openlocfilehash: e5e8df2be443b215a02f196c4f676af1cbff6275
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 1a3450ba4a31679c9e2e4ad844ef1058ebfdf4ee
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "69654615"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73870657"
 ---
 # <a name="view-dashboards-and-reports-in-the-power-bi-mobile-apps"></a>Vis dashboards og rapporter i Power BI-mobilappsene
 Gælder for:
@@ -40,7 +39,7 @@ Her er et Power BI-dashboard i Power BI-tjenesten:
 ## <a name="view-dashboards-on-your-iphone"></a>Få vist dashboards på din iPhone
 1. Åbn Power BI-appen på din iPhone, og log på.
    
-   Skal du først [downloade iPhone-appen](http://go.microsoft.com/fwlink/?LinkId=522062) fra Apple App Store?
+   Skal du først [downloade iPhone-appen](https://go.microsoft.com/fwlink/?LinkId=522062) fra Apple App Store?
 2. Tryk på et dashboard for at åbne det.  
    
     ![Tryk på dashboard](./media/mobile-apps-view-dashboard/power-bi-iphone-dashboard-home.png)
@@ -80,7 +79,7 @@ Du kan også "klemme sammen" med fingrene for at zoome ind og ud på forskellige
 ## <a name="view-dashboards-on-your-ipad"></a>Få vist dashboards på din iPad
 1. Åbn Power BI-appen.
    
-   Skal du først [downloade iPad-appen](http://go.microsoft.com/fwlink/?LinkId=522062) fra Apple App Store?
+   Skal du først [downloade iPad-appen](https://go.microsoft.com/fwlink/?LinkId=522062) fra Apple App Store?
 2. Tryk på **Dashboards** øverst i appen.  
    
    ![Startside for dashboards](./media/mobile-apps-view-dashboard/power-bi-ipad-dashboard-home.png)
@@ -103,7 +102,7 @@ Du kan også "klemme sammen" med fingrene for at zoome ind og ud på forskellige
 ## <a name="view-dashboards-on-your-android-phone"></a>Få vist dashboards på din Android-telefon
 1. Åbn Power BI-appen på din Android-telefon, og log på.
    
-   Skal du først [downloade Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867)?
+   Skal du først [downloade Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867)?
 2. Tryk på et dashboard for at åbne det.   
    
    ![Startside for dashboards](./media/mobile-apps-view-dashboard/power-bi-android-dashboards.png)
@@ -118,7 +117,7 @@ Du kan også "klemme sammen" med fingrene for at zoome ind og ud på forskellige
 
     Hvis du ejer dashboardet, kan du i Power BI-tjenesten [oprette en visning af dashboardet specifikt til telefoner](../../service-create-dashboard-mobile-phone-view.md) i stående format. 
 
-1. Når du er på dashboardet, kan du trykke på de tre lodrette prikker (...) ud for navnet for at invitere en kollega, opdatere eller se oplysninger om dashboardet:
+1. Når du er på dashboardet, kan du trykke på knappen **Flere indstillinger** (...) ud for navnet for at invitere en kollega, opdatere det eller se oplysninger om dashboardet:
    
    ![Menuen med tre prikker](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 2. Stryg op og ned for at se alle [felterne i dashboardet](mobile-tiles-in-the-mobile-apps.md). 
@@ -127,14 +126,14 @@ Du kan også "klemme sammen" med fingrene for at zoome ind og ud på forskellige
 ## <a name="view-dashboards-on-your-android-tablet"></a>Få vist dashboards på din Android-tablet
 1. Åbn Power BI-appen på din Android-tablet, og log på.
    
-   Skal du først [downloade Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867)?
+   Skal du først [downloade Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867)?
 2. Tryk på et dashboard for at åbne det.   
    
    ![Startside for dashboards](./media/mobile-apps-view-dashboard/power-bi-android-tablet-dashboard-home.png)
    
    * De gule stjerner ![Stjerner for favoritter](././././media/mobile-apps-view-dashboard/power-bi-mobile-yes-favorite-icon.png) viser, hvilke dashboards der er favoritter. 
    * Notationen under hvert dashboardnavn (i dette tilfælde "MBI") ![Dataklassifikation](././media/mobile-apps-view-dashboard/power-bi-android-dashboard-medium-classification.png) viser, hvordan dataene i hvert dashboard klassificeres. Læs mere om [dataklassifikation i Power BI](../../service-data-classification.md).
-3. Når du er på dashboardet, kan du trykke på de tre lodrette prikker (...) ud for navnet for at invitere en kollega, opdatere eller se oplysninger om dashboardet:
+3. Når du er på dashboardet, kan du trykke på knappen **Flere indstillinger** (...) ud for navnet for at invitere en kollega, opdatere det eller se oplysninger om dashboardet:
    
    ![Menuen med tre prikker](././media/mobile-apps-view-dashboard/pbi_andr_dashellipsis.png)
 4. Stryg op og ned for at se alle [felterne i dashboardet](mobile-tiles-in-the-mobile-apps.md). 
@@ -154,8 +153,8 @@ Hvis du ejer dashboardet, kan du *i Power BI-tjenesten* oprette en visning af da
 Læs mere om at [oprette en telefonvisning af et dashboard](../../service-create-dashboard-mobile-phone-view.md).
 
 ## <a name="next-steps"></a>Næste trin
-* [Download Android-appen](http://go.microsoft.com/fwlink/?LinkID=544867) fra Google Play  
+* [Download Android-appen](https://go.microsoft.com/fwlink/?LinkID=544867) fra Google Play  
 * [Introduktion til Android-appen til Power BI](mobile-android-app-get-started.md)  
-* [Hvad er Power BI?](../../power-bi-overview.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* [Hvad er Power BI?](../../fundamentals/power-bi-overview.md)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

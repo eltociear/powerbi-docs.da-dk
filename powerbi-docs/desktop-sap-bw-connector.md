@@ -2,7 +2,6 @@
 title: Brug af SAP BW Connector i Power BI Desktop
 description: Brug af SAP BW Connector i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Connect to data
-ms.openlocfilehash: af227d2bcbbba2a27804ec74f14003f54aa89dde
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: f55245fc037f48622bb636e961f59c796f267646
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514684"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73879764"
 ---
 # <a name="use-the-sap-bw-connector-in-power-bi-desktop"></a>Brug af SAP BW Connector i Power BI Desktop
 Med Power BI Desktop har du adgang til data i **SAP Business Warehouse (BW)** .
@@ -236,10 +235,11 @@ Følgende tabel indeholder oplysninger om den aktuelle support af SAP BW.
 |Power BI Gateway     |Importér      | Samme som Power BI Desktop |         |   |   |
 |Power BI Gateway     |DirectQuery | Bruger/adgangskode        | Programserver | I/T  | Ja  |
 |Power BI Gateway     |DirectQuery | Windows via repræsentation (fast bruger, ingen SSO) | Programserver | sapcrypto + gsskrb5/gx64krb5  | Ja  |
-|Power BI Gateway     |DirectQuery | Brug SSO via Kerberos til DirectQuery-forespørgsler | Programserver | *kun med* gsskrb5/gx64krb5   | Ja  |
+|Power BI Gateway     |DirectQuery | Brug SSO via Kerberos til DirectQuery-forespørgsler | Programserver | sapcrypto + gsskrb5/gx64krb5   | Ja  |
 |Power BI Gateway     |DirectQuery | Bruger/adgangskode        | Meddelelsesserver | I/T  | Ja  |
 |Power BI Gateway     |DirectQuery | Windows via repræsentation (fast bruger, ingen SSO) | Meddelelsesserver | sapcrypto + gsskrb5/gx64krb5  | Ja  |
-|Power BI Gateway     |DirectQuery | Brug SSO via Kerberos til DirectQuery-forespørgsler | Meddelelsesserver | sapcrypto + gsskrb5/gx64krb5  | Nej  |
+|Power BI Gateway     |DirectQuery | Brug SSO via Kerberos til DirectQuery-forespørgsler | Meddelelsesserver | gsskrb5/gx64krb5  | Nej  |
+|Power BI Gateway     |DirectQuery | Brug SSO via Kerberos til DirectQuery-forespørgsler | Meddelelsesserver | sapcrypto  | Ja  |
 
 
 

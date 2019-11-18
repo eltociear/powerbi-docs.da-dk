@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/08/2019
 ms.author: maggies
 LocalizationGroup: Get started
-ms.openlocfilehash: 11f60ba14734f40849aec47a492f4bf80c4ef3b5
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: 1612ae952489a047be884a25842bd47fd70d8447
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72239950"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73020198"
 ---
 # <a name="the-new-look-of-the-power-bi-service"></a>Power BI-tjenestens nye udseende
 
@@ -66,7 +66,7 @@ Vi har ikke fjernet nogen funktioner fra det gamle udseende. Du kan finde de eks
 
 ### <a name="where-are-file-menu-actions"></a>Hvor er handlingerne i menuen Filer?
 
-Søger du handlingerne i menuen **Filer**? De handlinger, der plejede at være i menuen **Filer**, er nu også i ellipsemenuen (...). 
+Søger du handlingerne i menuen **Filer**? De handlinger, der plejede at være i menuen **Filer**, er nu også i menuen **Flere indstillinger** (...). 
 
 ![Menuen Filer i det nye udseende](media/service-new-look/power-bi-file-menu-new-look.gif)
 

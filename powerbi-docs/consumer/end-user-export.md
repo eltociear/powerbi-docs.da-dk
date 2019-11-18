@@ -2,21 +2,20 @@
 title: Eksportér data fra et visuelt Power BI-element
 description: Eksportér data fra en rapportvisualisering og en dashboardvisualisering, og få dem vist i Excel.
 author: mihart
-manager: kvivek
 ms.reviewer: cmfinlan
 featuredvideoid: jtlLGRKBvXY
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 10/11/2019
+ms.date: 10/30/2019
 ms.author: mihart
 LocalizationGroup: Consumers
-ms.openlocfilehash: 80033cafbe66303a1d6f55bba61f7d19449dc45b
-ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
+ms.openlocfilehash: 0e8a3ce01356804aa5dcca21895fa01b5908ebd0
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589521"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851323"
 ---
 # <a name="export-data-from-a-visual"></a>Eksportér data fra et visuelt element
 
@@ -26,11 +25,11 @@ Hvis du gerne vil se de data, der bruges til at oprette en visualisering, [kan d
 
 ## <a name="from-a-visual-on-a-power-bi-dashboard"></a>Fra en visualisering på et Power BI-dashboard
 
-1. Start på et Power BI-dashboard. Her bruger vi dashboardet fra appen med ***marketing- og salgseksemplet***. Du kan [downloade denne app fra AppSource.com](https://appsource.microsoft.com/en-us/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample-preview?flightCodes=e2b06c7a-a438-4d99-9eb6-4324ce87f282).
+1. Start på et Power BI-dashboard. Her bruger vi dashboardet fra appen med ***marketing- og salgseksemplet***. Du kan [downloade denne app fra AppSource.com](https://appsource.microsoft.com/product/power-bi/microsoft-retail-analysis-sample.salesandmarketingsample-preview?flightCodes=e2b06c7a-a438-4d99-9eb6-4324ce87f282).
 
     ![Appdashboard](media/end-user-export/power-bi-dashboards.png)
 
-2. Hold over en visualisering for at se ellipserne (...), og klik for at få vist handlingsmenuen.
+2. Hold over en visualisering for at se **Flere indstillinger** (...), og klik for at få vist handlingsmenuen.
 
     ![Menu, der vises, når du vælger ellipserne](media/end-user-export/power-bi-action-menu.png)
 

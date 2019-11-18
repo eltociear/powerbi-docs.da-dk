@@ -17,16 +17,16 @@ helpviewer_keywords:
 - Power BI APIs
 ms.custom: seodec18
 ms.date: 05/15/2019
-ms.openlocfilehash: d2e52ff986bb2bba0caf5168c5038bb55011144a
-ms.sourcegitcommit: c799941c8169cd5b6b6d63f609db66ab2af93891
+ms.openlocfilehash: 501b43b7a17d60bbb277cd68c1a5d13e09b14bd5
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70391522"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73430738"
 ---
 # <a name="embedded-analytics-with-power-bi"></a>Integreret analyse med Power BI
 
-Power BI-tjenesten (SaaS) og tjenesten Power BI Embedded i Azure (PaaS) har API'er, du kan bruge til at integrere dine dashboards og rapporter. Når du integrerer indehold, får du adgang til de nyeste funktioner i Power BI, f.eks. dashboards, gateways og apparbejdsområder.
+Power BI-tjenesten (SaaS) og tjenesten Power BI Embedded i Azure (PaaS) har API'er, du kan bruge til at integrere dine dashboards og rapporter. Når du integrerer indhold, får du adgang til de nyeste funktioner i Power BI, f.eks. dashboards, gateways og arbejdsområder.
 
 Du kan gennemgå [Embedding-konfigurationsværktøjet](https://aka.ms/embedsetup) for hurtigt at komme i gang og downloade en eksempelapp.
 
@@ -85,7 +85,7 @@ Udviklere, der bruger Power BI Embedded, kan fokusere på at udarbejde kernefunk
 > [!IMPORTANT]
 > Selvom integrering kræver Power BI-tjenesten, behøver dine kunder ikke at have en Power BI-konto for at få vist det integrerede indhold i programmet. 
 
-Når du er klar til at overgå til produktion, skal apparbejdsområdet tildeles en dedikeret kapacitet. Power BI Embedded i Microsoft Azure tilbyder [dedikeret kapacitet](azure-pbie-create-capacity.md), som du kan bruge til dine apps.
+Når du er klar til at overgå til produktion, skal arbejdsområdet tildeles til en dedikeret kapacitet. Power BI Embedded i Microsoft Azure tilbyder [dedikeret kapacitet](azure-pbie-create-capacity.md), som du kan bruge til dine apps.
 
 I [Sådan integrerer du Power BI-indhold](embed-sample-for-customers.md) kan de se flere oplysninger om integrering.
 

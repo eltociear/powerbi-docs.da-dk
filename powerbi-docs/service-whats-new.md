@@ -7,15 +7,15 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 05/28/2019
+ms.date: 10/22/2019
 ms.author: nikhilga
 LocalizationGroup: Get started
-ms.openlocfilehash: 7d45b63d3cd97185ce9be9e0592565a491cf195f
-ms.sourcegitcommit: 4a3afe761d2f4a5bd897fafb36b53961739e8466
+ms.openlocfilehash: a6595389a95cbf434bc9deb9f1560f6157910ceb
+ms.sourcegitcommit: d441d350504f8c6d9e100d229757add6237f0bef
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69655048"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061007"
 ---
 # <a name="whats-new-in-the-power-bi-service"></a>Nyheder i Power BI-tjenesten
 Kontrollér denne side for at læse om kendte problemer og nyudgivne funktioner i **Power BI-tjenesten**. Du kan finde relaterede oplysninger om nyheder under:
@@ -30,11 +30,43 @@ Du kan også få mere at vide om nyheder og funktioner på YouTube-kanalerne.
 * [Microsoft Power BI (YouTube)](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
 * [Guy in a Cube (YouTube)](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)
 
-## <a name="may-2019"></a>Maj 2019
-* [Brugerdefineret navigation](service-create-distribute-apps.md) til Power BI-apps.
-* Yderligere typer vedhæftede filer (PPTX, XLSX, DOCX, CSV og XML) er tilgængelige for mailabonnementer i sideinddelte rapporter.
+### <a name="october-2019"></a>Oktober 2019
+* Ny Microsoft Flow-handling, der opdaterer Power BI-datasæt.
+* [Kontaktliste](https://powerbi.microsoft.com/en-us/blog/announcing-new-contact-lists-for-reports-and-dashboards-in-the-power-bi-service/) til rapporter og dashboards i Power BI-tjenesten.
 
 ## <a name="previous-months-2019"></a>Forrige måneder (2019)
+### <a name="september-2019"></a>September 2019
+* Opdateringer til konfiguration af forbindelse for [skabelonapps](service-template-apps-overview.md).
+
+### <a name="august-2019"></a>August 2019
+* Nye indstillinger for kapacitet til Power BI Premium.
+* [Brugerdefineret branding](https://powerbi.microsoft.com/en-us/blog/announcing-custom-branding-for-your-organization/) til din organisation.
+* Opsummeret dataeksport med tilladelsen Opret.
+* Understøttelse af parametre for URL-adresser til [sideinddelte rapporter](paginated-reports-report-builder-power-bi.md).
+* Understøttelse af månedlige mailabonnementer. 
+
+### <a name="july-2019"></a>Juli 2019
+* Understøttelse af datasæt, der ikke er Premium, til [sideinddelte rapporter](paginated-reports-report-builder-power-bi.md).
+* Generel tilgængelighed af Power BI-[sammenlægninger](desktop-aggregations.md).
+* Send meddelelser om opdatering til andre.
+* [Testværktøj](https://powerbi.microsoft.com/en-us/blog/power-bi-premium-know-what-your-premium-capacity-can-handle/) til Power BI Premium-kapaciteter.
+* Offentlig prøveversion af [meddelelser om tilgængelighed af tjeneste](https://powerbi.microsoft.com/en-us/blog/power-bi-introduces-service-availability-notifications/).
+* Offentlig prøveversion af [Nyt udseende](https://powerbi.microsoft.com/en-us/blog/introducing-the-new-look-for-power-bi-service/) til Power BI-rapporter.
+* Nyt Power BI-område i Sydafrika.
+
+### <a name="june-2019"></a>Juni 2019
+* Offentlig prøveversion af [delte og certificerede datasæt](service-datasets-across-workspaces.md).
+* Metrikværdier for kunstig intelligens tilgængelig i [appen Premium Capacity Metrics](service-admin-premium-monitor-capacity.md).
+* Generel tilgængelighed af [skabelonapps](service-template-apps-overview.md) i Power BI.
+* Generel tilgængelighed af [sideinddelte rapporter](paginated-reports-report-builder-power-bi.md) i Power BI.
+* Offentlig prøveversion af [BYOK](service-encryption-byok.md) (Bring Your Own Key) til Power BI Premium.
+* Rollen Fremviser for [oplevelsen med de nye arbejdsområder](service-new-workspaces.md).
+
+### <a name="may-2019"></a>Maj 2019
+* [Brugerdefineret navigation](service-create-distribute-apps.md) til Power BI-apps.
+* Yderligere typer vedhæftede filer (PPTX, XLSX, DOCX, CSV og XML) er tilgængelige for mailabonnementer i sideinddelte rapporter.
+* [Kommentering](https://powerbi.microsoft.com/en-us/blog/announcing-report-commenting-for-power-bi-service-and-mobile/) til Power BI-rapporter i tjenesten.
+
 ### <a name="april-2019"></a>April 2019
 * Generel tilgængelighed af [dataflows](service-dataflows-overview.md) i Power BI.
 * Generel tilgængelighed af den nye arbejdsområdeoplevelse.
@@ -731,7 +763,7 @@ Se [bloggen](http://blogs.msdn.com/b/powerbi/archive/2015/10/06/power-bi-service
 * Pålideligheden ved opdatering med OneDrive er blevet forbedret.  Nogle situationer, hvor projektmapper ikke blev opdateret fra OneDrive, er blevet løst.
 
 ## <a name="next-steps"></a>Næste trin
-[Hvad er Power BI?](power-bi-overview.md)  
+[Hvad er Power BI?](fundamentals/power-bi-overview.md)  
 
 Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
 

@@ -2,7 +2,6 @@
 title: Visning af flere eller færre detaljer i en visualisering
 description: I denne artikel gennemgår vi, hvordan man foretager detailudledning i en visualisering i Microsoft Power BI-tjenesten.
 author: mihart
-manager: kvivek
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/17/2019
 ms.author: mihart
 LocalizationGroup: Visualizations
-ms.openlocfilehash: b200ec86db339e42a708c3db042df06b9513cc6e
-ms.sourcegitcommit: f34acbf9fb1ab568fd89773aaf412a847f88dd34
+ms.openlocfilehash: 21d663b2f29a8090e6cfb7013d16c739ef0a29b3
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589496"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73851446"
 ---
 # <a name="drill-mode-in-a-visual-in-power-bi"></a>Analysetilstand i en visualisering i Power BI
 
@@ -128,7 +127,7 @@ Det er ikke så informativt at have en træstruktur, der kun viser et postnummer
 ## <a name="show-the-data-as-you-drill"></a>Vis dataene under detailudledning
 Brug **Vis data** for at få et overblik over, hvad der sker bag kulisserne. Hver gang du foretager detailudledning eller udvider, viser **Vis data** de data, der bruges til at bygge det visuelle element. Det kan hjælpe dig med at forstå, hvordan hierarkier, analyser og udvidelser fungerer sammen til at bygge visuelle elementer. 
 
-Vælg ellipsen (...) i øverste højre hjørne, og vælg derefter **Vis data**. 
+Vælg **Flere indstillinger** (...) i øverste højre hjørne, og vælg **Vis data**. 
 
 ![Skærmbillede af ellipsemenuen.](./media/end-user-drill/power-bi-ellipses.png)
 
@@ -153,4 +152,4 @@ Detailudledning filtrerer ikke andre visualiseringer i en rapport som standard. 
 
 [Power BI – Grundlæggende begreber](end-user-basic-concepts.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

@@ -3,20 +3,19 @@ title: Overvåg forbrugsdata for dashboards og rapporter
 description: Sådan får du vist, gemmer og bruger forbrugsdata for Power BI-dashboards og -rapporter.
 author: maggiesMSFT
 ms.author: maggies
-manager: kfile
 ms.reviewer: ''
 featuredvideoid: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
-ms.date: 08/15/2019
+ms.date: 10/21/2019
 LocalizationGroup: Dashboards
-ms.openlocfilehash: e77bfdf771e84afbc87335aa77993640d10282b0
-ms.sourcegitcommit: 4d5166944fcc6fe4666cab055ae75e7a0a77866d
+ms.openlocfilehash: 9aa2e11dd2068cae118336268c5c55ead1e25b8b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69530539"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871219"
 ---
 # <a name="monitor-usage-metrics-for-power-bi-dashboards-and-reports"></a>Overvåg forbrugsdata for Power BI-dashboards og -rapporter
 
@@ -86,7 +85,7 @@ Hvis du vil grave dybere ned i rapportdataene eller udarbejde dine egne rapporte
 
 | Data | Dashboard | Rapport | Beskrivelse |
 | --- | --- | --- | --- |
-| Udsnit for distributionsmetode |ja |ja |Hvordan brugerne fik adgang til indholdet. Der er 3 mulige metoder: Brugere kan få adgang til dashboardet eller rapporten ved at være medlem af et [apparbejdsområde](consumer/end-user-experience.md), ved at få indholdet [delt med dem](service-share-dashboards.md) eller ved at installere en indholdspakke/app.  Bemærk, at visninger via en app tælles som "indholdspakke". |
+| Udsnit for distributionsmetode |ja |ja |Hvordan brugerne fik adgang til indholdet. Der er tre mulige metoder: Brugere kan få adgang til dashboardet eller rapporten ved at være medlem af et [arbejdsområde](consumer/end-user-experience.md), ved at få indholdet [delt med dem](service-share-dashboards.md) eller ved at installere en indholdspakke/app.  Bemærk, at visninger via en app tælles som "indholdspakke". |
 | Platformsudsnit |ja |ja |Blev dashboardet eller rapporten tilgået via Power BI-tjenesten (powerbi.com) eller en mobilenhed? Mobil omfatter alle vores iOS-, Android- og Windows-apps. |
 | Udsnit for rapportside |nej |ja |Hvis rapporten indeholder mere end 1 side, skal du opdele rapporten efter de sider, der blev vist. Hvis du får vist en listeindstilling for "Tom", betyder det, at en rapportside blev tilføjet for nylig (inden for 24 timer vises det faktiske navn på den nye side på listen over udsnit), og/eller at rapportsider er blevet slettet. "Tom" henter disse typer situationer. |
 | Visninger pr. dag |ja |ja |Det samlede antal visninger pr. dag – en visning er defineret som en bruger, der indlæser en rapportside eller et dashboard. |
@@ -152,11 +151,18 @@ Power BI fås med forskellige nationale cloudmiljøer. Disse skyløsninger giver
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
-Det er vigtigt at forstå, at der kan opstå forskelle, når du sammenligner forbrugsdata og overvågningslogge, og hvorfor de kan opstå. *Overvågningslogge* indsamles ved hjælp af data fra Power BI-tjenesten, og *Forbrugsdata* indsamles på klienten. Det samlede antal aktiviteter i overvågningslogge stemmer muligvis ikke altid overens med forbrugsdata på grund af følgende:
+### <a name="discrepancies-between-audit-logs-and-usage-metrics"></a>Uoverensstemmelser mellem overvågningslogge og forbrugsdata
+
+Det er vigtigt at forstå, at der kan opstå forskelle, når du sammenligner forbrugsdata og overvågningslogge, og hvorfor de kan opstå. *Overvågningslogge* indsamles ved hjælp af data fra Power BI-tjenesten, og *forbrugsdata* indsamles på klienten. Det samlede antal aktiviteter i overvågningslogge stemmer muligvis ikke altid overens med forbrugsdata på grund af følgende:
 
 * Forbrugsdata kan nogle gange tælle et lavere antal aktiviteter på grund af uensartede netværksforbindelser, programmer til blokering af annoncer eller andre problemer, der kan afbryde afsendelse af hændelserne fra klienten.
 * Visse typer af visninger er ikke inkluderet i forbrugsdata, som det er beskrevet tidligere i denne artikel.
 * Forbrugsdata kan nogle gange tælle et højere antal aktiviteter i situationer, hvor klienten opdateres, uden at der er behov for at sende en anmodning tilbage til Power BI-tjenesten.
+
+### <a name="other-considerations"></a>Andre overvejelser
+
+Du skal have vist indholdet af dit arbejdsområde inde fra det pågældende arbejdsområde mindst én gang. Hvis indholdet ikke vises inde fra selve arbejdsområdet mindst én gang, korreleres dataene ikke fra programvisningerne i rapporten med forbrugsdata. Hvis du vil fjerne blokeringen af databehandling for denne rapport, skal du blot have vist indholdet fra dit arbejdsområde mindst én gang.
+
 
 ## <a name="frequently-asked-questions"></a>Ofte stillede spørgsmål
 
@@ -188,4 +194,4 @@ Ud over eventuelle forskelle mellem forbrugsdata og overvågningslogge kan følg
 
 [Administrer Power BI på administrationsportalen](service-admin-portal.md)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

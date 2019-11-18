@@ -10,12 +10,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 05/20/2019
 LocalizationGroup: Share your work
-ms.openlocfilehash: 3c6dc26ee1cf806ff85a9452c024e7ccbd210a25
-ms.sourcegitcommit: cc4b18d55b2dca8fdb1bef00f53a0a808c41432a
+ms.openlocfilehash: d140e39cdd30f5e2078f24c55fda5ea7040e0ad4
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68867099"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431876"
 ---
 # <a name="embed-a-report-in-a-secure-portal-or-website"></a>Integrer en rapport på en sikker portal eller et websted
 
@@ -49,7 +49,7 @@ Indstillingen **Integrer** understøtter [Filtre for URL-adresser](service-url-f
 
 Indstillingen **Integrer** giver ikke automatisk brugere tilladelse til at få vist rapporten. Visningstilladelser angives i Power BI-tjenesten.
 
-I Power BI-tjenesten kan du dele integrerede rapporter med brugere, der skal have adgang. Hvis du bruger en Office 365-gruppe, kan du angive brugeren som medlem af et apparbejdsområde. Hvis du vil have flere oplysninger, kan du se, hvordan du [administrerer dit apparbejdsområde i Power BI og Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
+I Power BI-tjenesten kan du dele integrerede rapporter med brugere, der skal have adgang. Hvis du bruger en Office 365-gruppe, kan du angive brugeren som medlem af et arbejdsområde. Hvis du vil have flere oplysninger, kan du se, hvordan du [administrerer dit arbejdsområde i Power BI og Office 365](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 ## <a name="licensing"></a>Licensering
 
@@ -62,7 +62,7 @@ Du kan tilpasse brugeroplevelsen ved hjælp af inputindstillingerne for URL-adre
 | Egenskab  | Beskrivelse  |  |  |  |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
 | pageName  | Du kan bruge parameteren **pageName** for forespørgselsstrengen til angive, hvilken side i rapporten der skal åbnes. Du kan finde denne værdi i slutningen af URL-adressen til rapporten, når du får vist en rapport i Power BI-tjenesten, som vist i eksemplet nedenfor. |  |  |  |
-| Filtre for URL-adresser  | Du kan bruge [Filtre for URL-adresser](service-url-filters.md) i den URL-adresse til integrering, du modtog fra brugergrænsefladen i Power BI, til at filtrere integreret indhold. På denne måde kan du skabe integrationer, der kun kræver begrænset kode og helt grundlæggende erfaring med HTML og JavaScript.  |  |  |  |
+| URL-filtre  | Du kan bruge [Filtre for URL-adresser](service-url-filters.md) i den URL-adresse til integrering, du modtog fra brugergrænsefladen i Power BI, til at filtrere integreret indhold. På denne måde kan du skabe integrationer, der kun kræver begrænset kode og helt grundlæggende erfaring med HTML og JavaScript.  |  |  |  |
 
 ## <a name="set-which-page-opens-for-an-embedded-report"></a>Angiv, hvilken side der skal åbnes for en integreret rapport 
 
@@ -76,11 +76,11 @@ Du kan finde værdien **pageName** i slutningen af URL-adressen til rapporten, n
 
     ![Tilføj pageName i slutningen](media/service-embed-secure/secure-embed-append-page-name.png)
 
-## <a name="filter-report-content-using-url-filters"></a>Filtrer rapportens indhold ved hjælp af filtre for URL-adresser 
+## <a name="filter-report-content-using-url-filters"></a>Filtrer rapportens indhold ved hjælp af URL-filtre 
 
 Du kan bruge [Filtre for URL-adresser](service-url-filters.md) til at angive forskellige rapportvisninger. I eksemplet nedenfor filtrerer URL-adressen rapporten, så der kun vises data for energibranchen.
 
-Der kan opnås en stor effekt ved at kombinere **pageName** og [Filtre for URL-adresser](service-url-filters.md). Du kan skabe specifikke oplevelser ved hjælp af grundlæggende HTML og JavaScript.
+Der kan opnås en stor effekt ved at kombinere **pageName** og [URL-filtre](service-url-filters.md). Du kan skabe specifikke oplevelser ved hjælp af grundlæggende HTML og JavaScript.
 
 I dette eksempel kan du f.eks. se en knap, du kan føje en knap til en HTML-side:
 
@@ -122,7 +122,7 @@ Du kan tilføje lige så mange knapper, du vil, og på den måde skabe en bruger
 
 * Understøtter ikke eksterne gæstebrugere med Azure business-to-business (B2B).
 
-* Sikker integrering fungerer for rapporter, der er publiceret til Power BI-tjenesten.
+* Sikker integration fungerer for rapporter, der er publiceret til Power BI-tjenesten.
 
 * Brugeren skal logge på for at få vist rapporten, når vedkommende åbner et nyt browservindue.
 

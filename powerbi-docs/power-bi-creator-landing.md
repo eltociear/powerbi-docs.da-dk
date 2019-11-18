@@ -10,12 +10,12 @@ ms.date: 10/07/2019
 ms.author: maggies
 layout: LandingPage
 LocalizationGroup: Get started
-ms.openlocfilehash: 4defed78228805a3f61447def82b3c3d406103d3
-ms.sourcegitcommit: d02de4ca33d865aee3e3e764b98f221950cb0a10
+ms.openlocfilehash: 64e77a97ec8f316473d6b953b506b323b69bfd0e
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72239886"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431531"
 ---
 # <a name="power-bi-for-report-designers"></a>Power BI til rapportdesignere
 
@@ -37,7 +37,7 @@ Er du i højere grad Power BI-forbruger? Velkommen til dig også. Vi anbefaler, 
                                           <h3>Kom i gang med at oprette vha. Power BI</h3> 
                                           <p></p>
                                                <a href="desktop-what-is-desktop.md">Start med Power BI Desktop</a><br/> 
-                                               <a href="power-bi-overview.md">Start med Power BI-tjenesten</a><br/> 
+                                               <a href="fundamentals/power-bi-overview.md">Start med Power BI-tjenesten</a><br/> 
                                                <a href="report-server/get-started.md">Hvad er Power BI-rapportserveren?</a>
                                     </div> 
                               </div> 
@@ -133,10 +133,10 @@ Er du i højere grad Power BI-forbruger? Velkommen til dig også. Vi anbefaler, 
                                           </div>
                                     </div>
                                     <div class="cardText"> 
-                                          <h3>Opret rapporter, visuelle elementer og dashboards</h3> 
+                                          <h3>Opret rapporter, visualiseringer og dashboards</h3> 
                                           <p></p>
                                                 <a href="desktop-report-view.md">Rapporter i Power BI Desktop</a><br/> 
-                                                <a href="power-bi-report-add-visualizations-i.md">Føj et visuelt element til en rapport</a><br/> 
+                                                <a href="power-bi-report-add-visualizations-i.md">Føj en visualisering til en rapport</a><br/> 
                                                 <a href="service-dashboard-create.md">Dashboards i Power BI-tjenesten</a>
                                     </div> 
                               </div> 
@@ -156,7 +156,7 @@ Er du i højere grad Power BI-forbruger? Velkommen til dig også. Vi anbefaler, 
                                           <h3>Del dit arbejde</h3> 
                                           <p></p>
                                                 <a href="service-how-to-collaborate-distribute-dashboards-reports.md">Hvordan samarbejder og deler jeg?</a><br/>
-                                                <a href="service-create-workspaces.md">Apparbejdsområder i Power BI-tjenesten</a> 
+                                                <a href="service-create-workspaces.md">Arbejdsområder i Power BI-tjenesten</a> 
                                     </div> 
                               </div> 
                         </div> 

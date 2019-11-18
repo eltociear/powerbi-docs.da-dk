@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 10/14/2019
 ms.author: mblythe
 LocalizationGroup: Data refresh
-ms.openlocfilehash: f5fe835d2ec423b596460a81ccb2a406b306c3c5
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 948776a12af2d99da2d84d07c9298f9ec0558c7b
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307936"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442951"
 ---
 # <a name="data-refresh-in-power-bi"></a>Opdatering af data i Power BI
 
@@ -93,14 +93,14 @@ En handling til opdatering af Power BI kan bestå af flere opdateringstyper, her
 
 #### <a name="data-refresh"></a>Opdatering af data
 
-For Power BI-brugere betyder opdatering af data typisk import af data fra de oprindelige datakilder til et datasæt enten på baggrund af en tidsplan for opdatering eller en opdatering on-demand. Du kan udføre flere opdateringer af datasæt dagligt, hvilket kan være nødvendigt, hvis den underliggende kildedata ændres ofte. Power BI begrænser datasæt på en delt kapacitet til otte daglige opdateringer. Hvis datasættet befinder sig på en Premium-kapacitet, kan du udføre op til 48 opdateringer pr. dag. Du kan finde flere oplysninger konfiguration af planlagte opdateringer senere i denne artikel.
+For Power BI-brugere betyder opdatering af data typisk import af data fra de oprindelige datakilder til et datasæt enten på baggrund af en tidsplan for opdatering eller en opdatering on-demand. Du kan udføre flere opdateringer af datasæt dagligt, hvilket kan være nødvendigt, hvis den underliggende kildedata ændres ofte. Power BI begrænser datasæt på en delt kapacitet til otte daglige opdateringer. Hvis datasættet befinder sig på en Premium-kapacitet, kan du planlægge op til 48 opdateringer pr. dag under indstillingerne for datasættet. Du kan finde flere oplysninger konfiguration af planlagte opdateringer senere i denne artikel.
 
-Det er også vigtigt at fremhæve, at begrænsningen for daglige opdateringer gælder for både planlagte opdateringer og opdateringer on-demand. Du kan udløse en opdatering on-demand ved at vælge **Opdater nu** i menuen for datasættet, som vist på følgende skærmbillede. Du kan også udløse en opdatering af data programmatisk ved hjælp af REST API'en for Power BI. Se [Datasæt – Opdater datasæt](/rest/api/power-bi/datasets/refreshdataset), hvis du er interesseret i at udarbejde din egen opdateringsløsning.
+Det er også vigtigt at fremhæve, at begrænsningen for delt kapacitet for daglige opdateringer gælder for både planlagte opdateringer og API-opdateringer. Du kan også udløse en opdatering on-demand ved at vælge **Opdater nu** i menuen for datasættet, som vist på følgende skærmbillede. Opdateringer on-demand er ikke inkluderet i begrænsningen for opdateringer. Bemærk også, at datasæt på en Premium-kapacitet ikke pålægger begrænsninger for API-opdateringer. Hvis du er interesseret i at skabe din egen opdateringsløsning ved hjælp af REST API til Power BI, skal du se [Datasæt – Opdater datasæt](/rest/api/power-bi/datasets/refreshdataset).
 
 ![Opdater nu](media/refresh-data/refresh-now.png)
 
 > [!NOTE]
-> Opdateringer af data skal fuldføres på mindre end 2 timer. Hvis dit datasæt kræver længerevarende opdateringshandlinger, kan du overveje at flytte datasættet til en Premium-kapacitet. For Premium er den maksimale opdateringsvarighed 5 timer.
+> Opdateringer af data skal fuldføres på mindre end 2 timer for en delt kapacitet. Hvis dit datasæt kræver længerevarende opdateringshandlinger, kan du overveje at flytte datasættet til en Premium-kapacitet. For Premium er den maksimale opdateringsvarighed 5 timer.
 
 #### <a name="onedrive-refresh"></a>Opdatering af OneDrive
 
@@ -134,7 +134,7 @@ Efter en opdatering af data er tidligere cachelagrede forespørgselsresultater d
 
 #### <a name="tile-refresh"></a>Opdatering af felter
 
-Power BI bevarer en cache for hver feltvisualisering på dine dashboards og opdaterer proaktivt feltcacherne, når data ændres. Med andre ord forekommer opdatering af felter automatisk efter en opdatering af data. Dette er tilfældet for både planlagte opdateringer og opdateringer on-demand. Du kan desuden gennemtvinge en opdatering af felter ved at vælge ellipsen (...) i øverste højre hjørne af et dashboard og derefter vælge **Opdater dashboardfelter**.
+Power BI bevarer en cache for hver feltvisualisering på dine dashboards og opdaterer proaktivt feltcacherne, når data ændres. Med andre ord forekommer opdatering af felter automatisk efter en opdatering af data. Dette er tilfældet for både planlagte opdateringer og opdateringer on-demand. Du kan desuden gennemtvinge en opdatering af felter ved at vælge **Flere indstillinger** (...) i øverste højre hjørne af et dashboard og derefter vælge **Opdater dashboardfelter**.
 
 ![Opdater dashboardfelter](media/refresh-data/refresh-dashboard-tiles.png)
 

@@ -7,12 +7,12 @@ ms.service: powerbi
 ms.subservice: powerbi-service
 ms.topic: conceptual
 ms.date: 06/30/2018
-ms.openlocfilehash: 7f05da6d49a1aeddedfe145bebf0324e3af51572
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: d06709f16beec025b99b69d82d5c17c248288004
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61270429"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429101"
 ---
 # <a name="how-to-migrate-power-bi-workspace-collection-content-to-power-bi-embedded"></a>Sådan overfører du indhold fra Power BI Workspace Collection til Power BI Embedded
 
@@ -20,7 +20,7 @@ Se, hvordan du overfører fra Power BI Workspace Collection til Power BI Embedde
 
 Microsoft [annoncerede for nylig Power BI Embedded](https://powerbi.microsoft.com/blog/power-bi-embedded-capacity-based-skus-coming-to-azure/), som er en ny kapacitetsbaseret licensmodel, der giver øget fleksibilitet i forhold til den måde, brugerne får adgang til, deler og distribuerer indhold på. Den nye model giver også øget skalerbarhed og ydeevne.
 
-Med Power BI Embedded få du én API-grænseflade, en ensartet række funktioner og adgang til de nyeste funktioner i Power BI, f.eks. dashboards, gateways og apparbejdsområder, når du integrerer indhold. Fremadrettet kan du starte med Power BI Desktop og overgå til udrulning med Power BI Embedded.
+Med Power BI Embedded få du én API-grænseflade, en ensartet række funktioner og adgang til de nyeste funktioner i Power BI, f.eks. dashboards, gateways og arbejdsområder, når du integrerer indhold. Fremadrettet kan du starte med Power BI Desktop og overgå til udrulning med Power BI Embedded.
 
 Den nuværende Power BI Workspace Collection er fortsat tilgængelig i en begrænset periode. Kunder, der har en Enterprise Agreement, får adgang i forbindelse med udløbet af deres eksisterende aftaler. Kunder, der har fået Power BI Workspace Collection via direkte kanaler eller or CSP-kanaler, har fortsat adgang i ét år fra det tidspunkt, hvor Power BI Embedded bliver frigivet som generel tilgængelig.  I denne artikel får du hjælp til at blive overført fra Power BI Workspace Collection til det nye Power BI Embedded, og du kan læse om, hvilke ændringer du kan forvente i applikationen.
 
@@ -56,19 +56,19 @@ Der er et par ting, du skal gøre som forberedelse til at overføre fra Power BI
 Der skal findes følgende konti i din lejer.
 
 > [!NOTE]
-> Disse konti skal have Power BI Pro-licenser for at kunne bruge apparbejdsområder.
+> Disse konti skal have Power BI Pro-licenser for at kunne bruge arbejdsområder.
 
 1. En lejeradministratorbruger.
 
-    Det anbefales, at brugeren er medlem af alle de apparbejdsområder, der oprettes med henblik på integrering.
+    Det anbefales, at brugeren er medlem af alle de arbejdsområder, der oprettes med henblik på integrering.
 
 2. Konti for analytikere, der opretter indhold.
 
-    Disse brugere skal tildeles til apparbejdsområder efter behov.
+    Disse brugere skal tildeles til arbejdsområder efter behov.
 
 3. En *master*brugerkonto eller en Embedded-konto.
 
-    Appens backend gemmer legitimationsoplysninger for denne konto og bruger den til at få et Azure AD-token til brug med Power BI REST API'erne. Denne konto bruges til at generere integreringstokenet til appen. Kontoen skal også være administrator for de apparbejdsområder, der blev oprettet til integrering.
+    Appens backend gemmer legitimationsoplysninger for denne konto og bruger den til at få et Azure AD-token til brug med Power BI REST API'erne. Denne konto bruges til at generere integreringstokenet til appen. Kontoen skal også være administrator for de arbejdsområder, der blev oprettet med henblik på integrering.
 
 > [!NOTE]
 > Dette er blot en almindelig brugerkonto i organisationen, der bruges til integrering.
@@ -83,14 +83,14 @@ Du skal registrere din app i Azure AD, før du kan foretage REST API-kald. Dette
 
 Du bør registrere appen med appens **master**konto.
 
-## <a name="create-app-workspaces-required"></a>Opret apparbejdsområder (påkrævet)
+## <a name="create-workspaces-required"></a>Opret arbejdsområder (påkrævet)
 
-Du kan bruge apparbejdsområder til at sikre en bedre isolation, hvis din app bruges af flere kunder. Dashboards og rapporter bør være isoleret mellem dine kunder. Du kan bruge en Power BI-konto pr. apparbejdsområde for yderligere at isolere appoplevelserne mellem kunderne.
+Du kan drage fordel af arbejdsområder for at sikre en bedre isolation, hvis din app bruges af flere kunder. Dashboards og rapporter bør være isoleret mellem dine kunder. Du kan derefter bruge en Power BI-konto pr. arbejdsområde for at isolere appoplevelserne yderligere mellem kunderne.
 
 > [!IMPORTANT]
 > Du kan ikke bruge et personligt arbejdsområde til integrering til de brugere, der ikke har Power BI.
 
-Når du vil oprette et apparbejdsområde i Power BI, skal du bruge en bruger med en Pro-licens. Den Power BI-bruger, der opretter apparbejdsområdet, skal være standardadministratoren for arbejdsområdet.
+Brugeren skal have en Pro-licens, før der kan oprettes et arbejdsområde i Power BI. Den Power BI-bruger, der opretter arbejdsområdet, bliver som standard administrator af det pågældende arbejdsområde.
 
 > [!NOTE]
 > Appens *master*konto skal være administrator for arbejdsområdet.
@@ -163,7 +163,7 @@ Du kan prøve følgende for at overføre Push API-rapporten fra PaaS til SaaS.
 
 ## <a name="create-and-upload-new-reports"></a>Opret og upload nye rapporter
 
-Ud over det indhold, du overførte fra Power BI Workspace Collection, kan du oprette dine rapporter og datasæt ved hjælp af Power BI Desktop og derefter publicere rapporterne i et apparbejdsområde. Den slutbruger, der udgiver rapporterne, skal have en Power BI Pro-licens for at kunne udgive til et apparbejdsområde.
+Foruden det indhold, du migrerede fra Power BI-arbejdsområdesamlingen, kan du oprette dine rapporter og datasæt ved hjælp af Power BI Desktop og derefter udgive rapporterne til et arbejdsområde. Den slutbruger, der udgiver rapporterne, skal have en Power BI Pro-licens for at kunne udgive til et arbejdsområde.
 
 ## <a name="rebuild-your-application"></a>Byg din app igen
 
@@ -179,9 +179,9 @@ I din app kan du knytte de brugere, du administrerer i appen, til en *master*bru
 
 Når du er klar til at skifte til produktionsmiljøet, skal du bruge følgende.
 
-* Hvis du bruger en separat lejer til udvikling, skal du sikre, at dine apparbejdsområder med dashboards og rapporter er tilgængelige i dit produktionsmiljø. Du skal også sikre, at du har oprettet appen i Azure AD for din produktionslejer, og at du har tildelt de nødvendige apptilladelser som angivet på trin 1.
+* Hvis du bruger en separat lejer til udvikling, skal du sikre, at dine arbejdsområder samt dashboards og rapporter er tilgængelige i dit produktionsmiljø. Du skal også sikre, at du har oprettet appen i Azure AD for din produktionslejer, og at du har tildelt de nødvendige apptilladelser som angivet på trin 1.
 * Køb den kapacitet, der opfylder dine behov. I dette [whitepaper om planlægning af analysekapacitet i Power BI Embedded](https://aka.ms/pbiewhitepaper) kan du få oplysninger, så du kan få en bedre forståelse af, hvor meget kapacitet og hvilken type du har brug for. Du kan [købe kapacitet](https://portal.azure.com/#create/Microsoft.PowerBIDedicated) i Azure.
-* Rediger apparbejdsområdet, og tildel det til en Premium-kapacitet under avanceret.
+* Rediger arbejdsområdet, og tildel det til en Premium-kapacitet under avanceret.
 
     ![Premium-kapacitet](media/migrate-from-powerbi-embedded/powerbi-embedded-premium-capacity02.png)
 

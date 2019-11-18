@@ -2,7 +2,6 @@
 title: Omdøb dashboards, rapporter, arbejdsområder, rapportsider, datasæt
 description: Omdøb næsten alt i Power BI-tjenesten.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/01/2018
 ms.author: maggies
 LocalizationGroup: Common tasks
-ms.openlocfilehash: 905ef263084cf531e6b38fb4640286e4d78697ce
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: de842b95c8f6e023a5207c07abb2525c5fe45878
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61273599"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73871703"
 ---
 # <a name="rename-almost-anything-in-power-bi-service"></a>Omdøb næsten alt i Power BI-tjenesten
 I denne artikel kan du lære at omdøbe et dashboard, en rapport, en rapportside, en projektmappe, et datasæt, en app og et arbejdsområde i Power BI-tjenesten.
@@ -28,9 +27,9 @@ I denne artikel kan du lære at omdøbe et dashboard, en rapport, en rapportside
 | Rapport i et arbejdsområde |Ja |Nej |
 | Projektmappe i et arbejdsområde |Ja |Nej |
 | Datasæt i et arbejdsområde |Ja |Nej |
-| Apparbejdsområde |Ja, hvis du ejer eller har administratortilladelser |Nej |
-| Publicerede apps |Ikke fra appskærmbilledet, men appens navn kan ændres fra apparbejdsområdet og publiceres igen med et nyt navn, hvis du har administratortilladelser |Nej |
-| Appindhold (dashboard, rapport, projektmappe, datasæt) |Ikke fra appskærmbilledet, men appens indhold kan omdøbes fra apparbejdsområdet og publiceres igen med et nyt navn, hvis du har administratortilladelser |Nej |
+| arbejdsområde |Ja, hvis du ejer eller har administratortilladelser |Nej |
+| Publicerede apps |Ikke fra appskærmen, men appens navn kan ændres fra arbejdsområdet og publiceres igen med et nyt navn, hvis du har administratortilladelser |Nej |
+| Appindhold (dashboard, rapport, projektmappe, datasæt) |Ikke fra appskærmen, men appens indhold kan omdøbes fra arbejdsområdet og publiceres igen med et nyt navn, hvis du har administratortilladelser |Nej |
 | Indhold i **Delt med mig** |Nej |Nej |
 
 ## <a name="rename-a-dashboard-report-or-workbook"></a>Omdøb et dashboard, en rapport eller en projektmappe
@@ -45,7 +44,7 @@ I denne artikel kan du lære at omdøbe et dashboard, en rapport, en rapportside
 1. Start i et arbejdsområde, og vælg fanen **Datasæt**.
    
    ![arbejdsområde med fanen Datasæt](media/service-rename/power-bi-ellipses.png)
-2. Hold markøren over elementet for at omdøbe, vælg ellipsen (...), og vælg **Omdøb**.  
+2. Hold over elementet for at omdøbe, vælg **Flere indstillinger** (...), og vælg **Omdøb**.  
    
       ![vælg Omdøb](media/service-rename/power-bi-rename-datasets.png)
    
@@ -57,11 +56,11 @@ I denne artikel kan du lære at omdøbe et dashboard, en rapport, en rapportside
    
      ![Ruden Omdøb](media/service-rename/power-bi-rename.png)
 
-## <a name="rename-an-app-workspace"></a>Omdøb et apparbejdsområde
-Alle med administratortilladelser kan omdøbe et apparbejdsområde.
+## <a name="rename-a-workspace"></a>Omdøb et arbejdsområde
+Alle med administratortilladelser kan omdøbe et arbejdsområde.
 
 1. Start i det arbejdsområde, du vil omdøbe.
-2. I øverste højre hjørne skal du vælge ellipsen (...) og vælge **Rediger arbejdsområde**. Hvis du ikke får vist denne indstilling, har du ikke tilladelser til at omdøbe dette arbejdsområde. 
+2. I øverste højre hjørne skal du vælge **Flere indstillinger** (...) og vælge **Rediger arbejdsområde**. Hvis du ikke får vist denne indstilling, har du ikke tilladelser til at omdøbe dette arbejdsområde. 
    
     ![vælg Rediger arbejdsområde](media/service-rename/power-bi-edit-workspace.png)
 3. Skriv et nyt navn til arbejdsområdet, og vælg **Gem**.
@@ -85,7 +84,7 @@ Kan du ikke lide navnet på en side i din Power BI-rapport?  Et nyt navn er kun 
 
 ## <a name="considerations-and-troubleshooting"></a>Overvejelser og fejlfinding
 * Hvis det element, der skal omdøbes, er blevet delt med dig eller er en del af en indholdspakke, kan du ikke se tandhjulsikonet, og du kan ikke få adgang til Indstillinger.
-* Hvis du ikke kan se ellipsen (...) på fanen **Datasæt**, skal du udvide dit browservindue.
+* Hvis du under fanen **Datasæt** ikke kan se **Flere indstillinger** (...), skal du udvide dit browservindue.
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

@@ -11,12 +11,12 @@ ms.subservice: powerbi-service
 ms.topic: conceptual
 LocalizationGroup: Share your work
 ms.date: 05/16/2019
-ms.openlocfilehash: c5d35c1e7fef15c72314738c1d67f81656dc3101
-ms.sourcegitcommit: a97c0c34f888e44abf4c9aa657ec9463a32be06f
+ms.openlocfilehash: 6fb02a3ea31dd3bed6f1013d5e81237345aef40c
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71073601"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73431898"
 ---
 # <a name="embed-with-report-web-part-in-sharepoint-online"></a>Integrer med rapportwebdelen i SharePoint Online
 
@@ -79,11 +79,11 @@ Integrering af en rapport i SharePoint Online giver ikke automatisk brugerne til
 > [!IMPORTANT]
 > Sørg for at gennemse, hvem der kan få vist rapporten, i Power BI-tjenesten, og giv adgang til dem, der er ikke angivet.
 
-Der er to måder at give adgang til rapporten i Power BI på. Hvis du bruger en Office 365-gruppe til at udarbejde dit SharePoint Online-teamwebsted, er den første måde at angive brugeren som medlem af **apparbejdsområdet i Power BI-tjenesten** og på **SharePoint-siden**. Du kan finde flere oplysninger under [Administrer dit apparbejdsområde](service-manage-app-workspace-in-power-bi-and-office-365.md).
+Der er to måder at give adgang til rapporten i Power BI på. Hvis du bruger en Office 365-gruppe til at udarbejde dit SharePoint Online-teamwebsted, er den første måde, at du skal angive brugeren som medlem af **arbejdsområdet i Power BI-tjenesten** og på **SharePoint-siden**. Hvis du vil have flere oplysninger, skal du se, hvordan du [administrerer et arbejdsområde](service-manage-app-workspace-in-power-bi-and-office-365.md).
 
 Den anden måde er at integrere en rapport i en app og dele den direkte med brugerne:  
 
-1. Forfatteren, som skal være Pro-bruger, opretter en rapport i et apparbejdsområde. For at kunne dele med *brugere af den gratis version af Power BI* skal apparbejdsområdet være angivet som et *Premium-arbejdsområde*.
+1. Forfatteren, som skal være Pro-bruger, opretter en rapport i et arbejdsområde. For at kunne dele med *brugere af den gratis version af Power BI* skal arbejdsområdet være angivet som et *Premium-arbejdsområde*.
 
 2. Forfatteren publicerer appen og installerer den. Forfatteren skal installere appen, så den har adgang til den URL-adresse til rapporten, som bruges til integrering i SharePoint Online.
 
@@ -93,7 +93,7 @@ Den anden måde er at integrere en rapport i en app og dele den direkte med brug
 
 4. Opretteren åbner appen og går til rapporten.
 
-5. Forfatteren kopierer URL-adressen til den integrerede rapport fra den rapport, der er installeret af appen. Brug ikke den oprindelige URL-adresse til rapporten fra apparbejdsområdet.
+5. Forfatteren kopierer URL-adressen til den integrerede rapport fra den rapport, der er installeret af appen. Brug ikke den oprindelige URL-adresse til rapporten fra arbejdsområdet.
 
 6. Opret et nyt teamwebsted i SharePoint Online.
 

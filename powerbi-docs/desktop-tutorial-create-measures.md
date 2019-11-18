@@ -10,12 +10,12 @@ ms.topic: tutorial
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 306738f4df765638c591c9612adf885facdceda0
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
-ms.translationtype: MT
+ms.openlocfilehash: 59567b62c44a386b3890f68de49b9f7aed76aa45
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
+ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65513867"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019359"
 ---
 # <a name="tutorial-create-your-own-measures-in-power-bi-desktop"></a>Selvstudium: Opret dine egne målinger i Power BI Desktop
 Du kan oprette nogle af de mest effektive løsninger til dataanalyse i Power BI Desktop ved hjælp af målinger. Målinger hjælper dig med at udføre beregninger på dine data, når du arbejder med dine rapporter. I dette selvstudium lærer du, hvordan du skal forstå målinger, og hvordan du opretter dine egne grundlæggende målinger i Power BI Desktop.
@@ -60,7 +60,7 @@ Når du har oprettet din egen måling, føjes den til listen Felter i den tabel,
 
 Du vil analysere din nettoomsætning ved at trække rabatter og returneringer fra det samlede salgsbeløb. Uanset hvilken kontekst du har i din visualisering, har du brug for en måling, der trækker summen af DiscountAmount og ReturnAmount fra summen af SalesAmount. Der er ikke noget felt for nettoomsætning på listen Felter, men du har byggeklodserne til at oprette din egen måling, der kan beregne nettoomsætningen. 
 
-1.  Højreklik på tabellen **Sales** i brønden Felter, eller hold over tabellen, og vælg ellipsen **Flere indstillinger** (...). Vælg derefter **Ny måling**. På den måde gemmes din nye måling i tabellen Sales, hvor den er nemmere at finde igen.
+1.  Højreklik på tabellen **Sales** i brønden Felter, eller hold over tabellen, og vælg **Flere indstillinger** (...). Vælg derefter **Ny måling**. På den måde gemmes din nye måling i tabellen Sales, hvor den er nemmere at finde igen.
     
     ![Ny måling](media/desktop-tutorial-create-measures/meastut_netsales_newmeasure.png)
     

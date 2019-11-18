@@ -1,5 +1,5 @@
 ---
-title: Form og kombiner data fra flere kilder
+title: 'Selvstudium: Form og kombiner data i Power BI Desktop'
 description: I dette selvstudium lærer du, hvordan du former og kombinerer data i Power BI Desktop
 author: davidiseminger
 manager: kfile
@@ -7,231 +7,298 @@ ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
 ms.topic: tutorial
-ms.date: 05/08/2019
+ms.date: 10/18/2019
 ms.author: davidi
 LocalizationGroup: Transform and shape data
-ms.openlocfilehash: 2835dd34ce5ba2d7bc6be8659b87eb1f550fdc28
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 19e0fa75426cd3e3f72ce9c01712b8d1c52e4abf
+ms.sourcegitcommit: 17f45a81b0dcbf9e3f1fb2a551584170baecd320
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514586"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72922593"
 ---
 # <a name="tutorial-shape-and-combine-data-in-power-bi-desktop"></a>Selvstudium: Form og kombiner data i Power BI Desktop
 
-I **Power BI Desktop** kan du oprette forbindelse til mange forskellige typer datakilder og derefter forme dataene til dine behov, så du kan oprette visuelle rapporter, som du kan dele med andre. At *forme* data betyder, at dataene skal transformeres – for eksempel omdøbning af kolonner eller tabeller, ændring af tekst til tal, fjernelse af rækker, angivelse af den første række som overskrifter osv. At *kombinere* data betyder, at der oprettes forbindelse til to eller flere datakilde, dataene formes efter behov, og de konsolideres derefter i én forespørgsel.
+Med Power BI Desktop kan du oprette forbindelse til mange forskellige typer datakilder og derefter forme dataene, så de passer til dine behov, hvilket giver dig mulighed for at oprette visuelle rapporter, som du kan dele med andre. At *forme* data betyder, at dataene transformeres: kolonner eller tabeller omdøbes, tekst ændres til tal, rækker fjernes, den første række angives som overskrifter osv. At *kombinere* data betyder, at der oprettes forbindelse til to eller flere datakilder, at dataene formes efter behov, og at de derefter konsolideres i en nyttig forespørgsel.
 
-I dette selvstudium lærer du, hvordan du kan:
+I dette selvstudium lærer du, hvordan du:
 
-* Forme data ved hjælp af **forespørgselseditoren**
-* Oprette forbindelse til en datakilde
-* Oprette forbindelse til en anden datakilde
-* Kombinere datakilderne og oprette en datamodel, der skal bruges i rapporter
+* Former data ved hjælp af Forespørgselseditor.
+* Opretter forbindelse til forskellige datakilder.
+* Kombinerer disse datakilder og oprette en datamodel, der kan bruges i rapporter.
 
-I dette selvstudium vises, hvordan en forespørgsel formes ved hjælp af Power BI Desktop, og nogle af de mest almindelige opgaver fremhæves. Den forespørgsel, der bruges her, er beskrevet mere detaljeret under [Introduktion til Power BI Desktop](desktop-getting-started.md), hvor du også kan se, hvordan de opretter forespørgslen fra bunden.
+I dette selvstudium kan du se, hvordan en forespørgsel formes ved hjælp af Power BI Desktop med fokus på nogle af de mest almindelige opgaver. Den forespørgsel, der bruges her, er beskrevet mere detaljeret under [Introduktion til Power BI Desktop](desktop-getting-started.md), hvor du også kan se, hvordan de opretter forespørgslen fra bunden.
 
-Det er praktisk at vide, at du kan bruge genvejsmenuer og båndet i **Forespørgselseditor** i Power BI Desktop. Det meste af det, du kan vælge på båndet **Transformér**, er også tilgængeligt, hvis du højreklikker på et element (f.eks. en kolonne) og vælger i den viste menu.
+Der gøres udførlig brug af genvejsmenuer og båndet **Transformér** i Forespørgselseditor i Power BI Desktop. Det meste af det, du kan vælge på båndet, er også tilgængeligt, hvis du højreklikker på et element, f.eks. en kolonne, og vælger fra den viste menu.
 
 ## <a name="shape-data"></a>Form data
-Når du former data i Forespørgselseditor, angiver du en trinvis vejledning (som Forespørgselseditor udfører for dig) for at justere datamængden, efterhånden som Forespørgselseditor indlæser og præsenterer dem. Den oprindelige datakilde påvirkes ikke. Det er kun denne bestemte visning af dataene, der justeres eller *formes*.
+Når du former data i Forespørgselseditor, angiver du en trinvis vejledning, som udføres for dig i Forespørgselseditor for at tilpasse dataene, i takt med at de indlæses og præsenteres. Den oprindelige datakilde påvirkes ikke. Det er kun denne bestemte visning af dataene, der tilpasses eller *formes*.
 
-De angivne trin (f.eks. omdøbning af en tabel, transformation af en datatype eller sletning af kolonner) registreres af Forespørgselseditor, og hver gang denne forespørgsel opretter forbindelse til datakilden, udføres disse trin, så dataene er altid er formet på den måde, du angiver. Denne proces foregår, når du bruger Forespørgselseditor i Power BI Desktop, eller hvis andre bruger din delte forespørgsel, for eksempel i **Power BI**-tjenesten. Disse trin er hentet, i rækkefølge, i ruden **Forespørgselsindstillinger** under **Anvendte trin**.
+De angivne trin (f.eks. omdøb en tabel, transformér en datatype, eller slet en kolonne) registreres af Forespørgselseditor. Hver gang denne forespørgsel opretter forbindelse til datakilden, udføres disse trin i Forespørgselseditor, så dataene altid formes på den måde, du angiver. Denne proces foregår, hver gang du bruger Forespørgselseditor, eller hvis andre bruger din delte forespørgsel, for eksempel i Power BI-tjenesten. Disse trin er hentet, i rækkefølge, i ruden **Forespørgselsindstillinger** under **Anvendte trin**. Vi gennemgår hvert af disse trin i de næste par afsnit.
 
-På følgende billede vises ruden **Forespørgselsindstillinger** for en forespørgsel, som er formet – vi gennemgår hvert enkelt trin i de næste afsnit.
+![Anvendte trin under Forespørgselsindstillinger](media/desktop-shape-and-combine-data/shapecombine_querysettingsfinished2.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_querysettingsfinished2.png)
+Hvis vi bruger de pensionsdata fra [Introduktion til Power BI Desktop](desktop-getting-started.md), som vi hentede ved at oprette forbindelse til en webdatakilde, kan vi forme dataene, så de passer til vores behov. Vi tilføjer en brugerdefineret kolonne for at beregne rangering, baseret på at alle data er ligeværdige faktorer, og sammenligner denne kolonne med den eksisterende kolonne **Rangering**.  
 
-Hvis vi bruger de data fra [Introduktion til Power BI Desktop](desktop-getting-started.md), som blev hentet ved at oprette forbindelse til en Web-datakilde, kan vi forme dataene til vores behov.
+1. På båndet **Tilføj kolonne** skal du vælge **Brugerdefineret kolonne**, som giver dig mulighed for at tilføje en brugerdefineret kolonne.
 
-Lad os starte med at tilføje en brugerdefineret kolonne til at beregne rangering, baseret på at alle data er ligeværdige faktorer, og sammenligne dette med _Rangering_ i den eksisterende kolonne.  Her er båndet **Tilføj kolonne** med en pil, der peger mod knappen **Brugerdefineret kolonne**, som du kan bruge til at tilføje en brugerdefineret kolonne.
+    ![Vælg brugerdefineret kolonne](media/desktop-shape-and-combine-data/shapecombine_customcolumn.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_customcolumn.png)
+1. I vinduet **Brugerdefineret kolonne** under **Nyt kolonnenavn** skal du angive _Ny rangering_. Angiv følgende data i **Formel for brugerdefineret kolonne**:
 
-I dialogboksen **Brugerdefineret kolonne** under **Nyt kolonnenavn** skal du angive _Ny rangering_, og under **Formel for brugerdefineret kolonne** skal du angive følgende:
-
+    ```
     ([Cost of living] + [Weather] + [Health care quality] + [Crime] + [Tax] + [Culture] + [Senior] + [#"Well-being"]) / 8
+    ```
+ 
+1. Kontrollér, at der står *Der er ikke registreret nogen syntaksfejl* i statusmeddelelsen, og vælg **OK**.
 
-Kontrollér, at der i statusmeddelelsen står _"Der er ikke registreret nogen syntaksfejl."_ Klik på **OK**.
+    ![Side med brugerdefineret kolonne uden syntaksfejl](media/desktop-shape-and-combine-data/shapecombine_customcolumndialog.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_customcolumndialog.png)
+1. Transformér de nye kolonneværdier til heltal for at sikre, at kolonnedataene er ensartet. Du ændrer dem ved at højreklikke på kolonneoverskriften og vælge **Skift type \> Heltal**. 
 
-For at sikre, at kolonnedataene er ensartet, skal vi transformere de nye kolonneværdier til heltal. Du skal blot højreklikke på kolonneoverskriften og vælge **Skift type \> Heltal** for at ændre dem. 
+    Hvis du har brug for at vælge mere end én kolonne, skal du markere en kolonne, holde **Skift** nede, markere yderligere tilstødende kolonner og derefter højreklikke på en kolonneoverskrift. Du kan også holde **Ctrl** nede for at markere kolonner, der ikke støder op til hinanden.
 
-Hvis du har brug for at markere mere end én kolonne, skal du først markere en kolonne og derefter holde **Skift** nede, vælge yderligere tilstødende kolonner og derefter højreklikke på en kolonneoverskrift for at ændre alle de valgte kolonner. Du kan også holde **Ctrl** nede for at vælge kolonner, der ikke støder op til hinanden.
+    ![Vælg data for kolonnen Heltal](media/desktop-shape-and-combine-data/shapecombine_changetype2.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_changetype2.png)
+1. Hvis du vil *transformere* kolonnedatatyper, hvori du transformerer den aktuelle datatype til en anden, skal du vælge **Tekst for datatype** på båndet **Transformér**. 
 
-Du kan også *transformere* kolonnedatatyper via båndet **Transformér**. Her er båndet **Transformér** med en pil, der peger på knappen **Datatype**, som gør det muligt at transformere den aktuelle datatype til en anden.
+   ![Vælg Tekst for datatype](media/desktop-shape-and-combine-data/queryoverview_transformribbonarrow.png)
 
-![](media/desktop-shape-and-combine-data/queryoverview_transformribbonarrow.png)
+1. I ruden **Forespørgselsindstillinger** afspejler **Anvendte trin** de trin til formning, der er anvendt på dataene. Du fjerner et trin fra processen til formning ved at vælge **X** til venstre for trinnet. 
 
-Bemærk, at i ruden **Forespørgselsindstillinger** vil **Anvendte trin** afspejle de trin til formning, der er anvendt på dataene. Hvis jeg vil fjerne et trin fra formningsprocessen, skal jeg blot vælge **X** til venstre for trinnet. I det følgende billede afspejler **Anvendte trin** de trin, der er udført indtil videre: der er oprettet forbindelse til webstedet (**Kilde**), jeg har valgt tabellen (**Navigation**), og da tabellen blev indlæst, ændrede Forespørgselseditor automatisk tekstbaserede talkolonner fra *Tekst* til *Heltal* (**Ændret type**). De sidste to trin viser vores forrige handlinger med **Tilføjet brugerdefineret** og **Ændret type1**. 
+    På følgende billede afspejler **Anvendte trin** de trin, der er tilføjet indtil videre: 
+     - **Kilde**: Oprettelse af forbindelse til webstedet.
+     - **Navigation**: Valg af tabellen. 
+     - **Ændret type**: Ændring af tekstbaserede nummerkolonner fra *Tekst* til *Heltal*. 
+     - **Tilføjet brugerdefineret**: Tilføjelse af en brugerdefineret kolonne.
+     - **Ændret type1**: Det sidste anvendte trin.
 
-![](media/desktop-shape-and-combine-data/shapecombine_appliedstepsearly2.png)
+       ![Liste over anvendte trin](media/desktop-shape-and-combine-data/shapecombine_appliedstepsearly2.png)
 
-Inden vi kan arbejde med forespørgslen, skal vi foretage nogle ændringer for at kunne arbejde med dataene, som vi gerne vil:
+## <a name="adjust-data"></a>Tilpas data
 
-* *Juster rangering ved at fjerne en kolonne* – Vi har besluttet, at **Cost of living** ikke er en faktor i vores resultater. Når vi har fjernet denne kolonne, er der et problem med, at dataene er uforandret. Det er dog nemt at løse ved hjælp af Power BI Desktop, og når vi gør det, kan vi samtidigt se en fed funktion i **Anvendte trin** i Forespørgsel.
-* *Løs nogle få fejl* – Da vi har fjernet en kolonne, har vi brug for at justere vores beregninger i kolonnen **Ny rangering**. Dette omfatter ændring af en formel.
-* *Sortér data* – På baggrund af kolonnerne **Ny rangering** og **Rangering**. 
-* *Erstat data* – Vi fremhæver, hvordan man erstatter en bestemt værdi og behovet for at indsætte et **Anvendt trin**.
-* *Skift tabelnavnet* – **Tabel 0** er ikke en nyttig beskrivelse, men det er let at ændre navnet.
+Inden vi kan arbejde med denne forespørgsel, skal vi foretage nogle få ændringer for at tilpasse dataene:
 
-Du fjerner kolonnen **Cost of living** ved blot at markere kolonnen, vælge fanen **Hjem** på båndet og derefter trykke på **Fjern kolonner**, som vist på følgende figur.
+   - Tilpas rangeringerne ved at fjerne en kolonne.
 
-![](media/desktop-shape-and-combine-data/shapecombine_removecolumnscostofliving.png)
+       Vi har besluttet, at **Leveomkostninger** ikke er en faktor i vores resultater. Efter vi har fjernet denne kolonne, opdager vi, at dataene forbliver uændret. 
 
-Bemærk, at værdierne i _Ny rangering_ ikke er blevet ændret. Dette skyldes rækkefølgen af trinnene. Da Forespørgselseditor optager trinnene sekventielt, men stadig uafhængigt af hinanden, kan du flytte hvert trin under **Anvendte trin** op eller ned i sekvensen. Højreklik på et trin, hvorefter Forespørgselseditor viser en menu med følgende muligheder: **Omdøb**, **Slet**, **Slet** **indtil slutning** (fjern det aktuelle trin og alle efterfølgende trin), **Flyt op** eller **Flyt ned**. Flyt blot det sidste trin _Fjernede kolonner_ op for at justere over trinnet _Tilføjet brugerdefineret_.
+   - Ret nogle få fejl.
 
-![](media/desktop-shape-and-combine-data/shapecombine_movestep.png)
+       Fordi vi har fjernet en kolonne, skal vi tilpasse vores beregninger igen i kolonnen **Ny rangering**, hvilket omfatter en ændring af formlen.
 
-Vælg derefter trinnet _Tilføjet brugerdefineret_. Bemærk, at dataene nu viser _Fejl_, hvilket vi skal håndtere. 
+   - Sortér dataene.
 
-![](media/desktop-shape-and-combine-data/shapecombine_error2.png)
+       Sortér dataene ud fra kolonnerne **Ny rangering** og **Rangering**.
+ 
+   - Erstat dataene.
 
-Der findes et par metoder til at få vist flere oplysninger om hver enkelt fejl. Du kan markere cellen (uden at klikke på ordet **Fejl**), eller du kan klikke direkte på ordet **Fejl**. Hvis du markerer cellen *uden* at klikke direkte på ordet **Fejl**, vises fejloplysningerne nederst i vinduet Forespørgselseditor.
+       Vi fremhæver, hvordan man erstatter en bestemt værdi og behovet for at indsætte et **Anvendt trin**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_errorinfo2.png)
+   - Skift navnet på tabellen. 
 
-Hvis du klikker direkte på ordet *Fejl*, vil Forespørgselseditor oprette et trin under **Anvendte trin** i ruden **Forespørgselsindstillinger** og vise oplysninger om fejlen. Vi vil ikke gå den vej, så vælg **Annuller**.
+       Da **Tabel 0** ikke er en nyttig beskrivelse af tabellen, ændrer vi navnet.
 
-For at løse fejlene skal du vælge kolonnen _Ny rangering_ og derefter få vist kolonnens dataformel ved at åbne båndet **Vis** og markere afkrydsningsfeltet **Formellinje**. 
+1. Du fjerner kolonnen **Leveomkostninger** ved at markere kolonnen, vælge fanen **Start** på båndet og derefter vælge **Fjern kolonner**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_formulabar.png)
+    ![Vælg Fjern kolonner](media/desktop-shape-and-combine-data/shapecombine_removecolumnscostofliving.png)
 
-Du kan nu fjerne parameteren _Cost of living_ og formindske divisoren ved at ændre formlen til følgende: 
+   Bemærk, at værdierne i **Ny rangering** ikke er blevet ændret pga. rækkefølgen af trinnene. Da Forespørgselseditor registrerer trinnene sekventielt, men stadig uafhængigt af hinanden, kan du flytte hvert **Anvendte trin** op eller ned i sekvensen. 
 
+1. Højreklik på et trin. Forespørgselseditor indeholder en menu, der giver dig mulighed for at udføre følgende opgaver: 
+   - **Omdøb**: Omdøb trinnet.
+   - **Slet**: Slet trinnet.
+   - **Slet** **Indtil slutning**: Fjern det aktuelle trin og alle efterfølgende trin.
+   - **Flyt op**: Flyt trinnet op på listen.
+   - **Flyt ned**: Flyt trinnet ned på listen.
+
+1. Flyt det sidste trin **Fjernede kolonner** op til lige over trinnet **Tilføjet brugerdefineret**.
+
+   ![Flyt trin op i Anvendte trin](media/desktop-shape-and-combine-data/shapecombine_movestep.png)
+
+1. Vælg trinnet **Tilføjet brugerdefineret**. 
+
+   Bemærk, at der nu vises _Fejl_ for dataene, hvilket vi skal håndtere.
+
+   ![Fejlresultat i kolonnedata](media/desktop-shape-and-combine-data/shapecombine_error2.png)
+
+   Der findes et par metoder til at få vist flere oplysninger om hver enkelt fejl. Hvis du markerer cellen uden at klikke på ordet *Fejl*, vises fejloplysningerne nederst i vinduet i Forespørgselseditor.
+
+   ![Fejloplysninger i Forespørgselseditor](media/desktop-shape-and-combine-data/shapecombine_errorinfo2.png)
+
+   Hvis du markerer ordet *Fejl* direkte, oprettes der et **Anvendt trin** i Forespørgselseditor i ruden **Forespørgselsindstillinger**, og der vises oplysninger om fejlen. 
+
+1. Da vi ikke behøver at vise oplysninger om fejlene, skal du vælge **Annuller**.
+
+1. For at rette fejlene skal du markere kolonnen **Ny rangering** og derefter få vist kolonnens dataformel ved at markere afkrydsningsfeltet **Formellinje** under fanen **Vis**. 
+
+   ![Markér Formellinje](media/desktop-shape-and-combine-data/shapecombine_formulabar.png)
+
+1. Fjern parameteren _Leveomkostninger_, og formindsk divisoren ved at ændre formlen på følgende måde: 
+   ```
     Table.AddColumn(#"Removed Columns", "New Rank", each ([Weather] + [Health care quality] + [Crime] + [Tax] + [Culture] + [Senior] + [#"Well-being"]) / 7)
+   ```
 
-Vælg det grønne flueben til venstre for formelfeltet, eller tryk på **Enter**, så bør dataene blive erstattet med reviderede værdier, og trinnet **Tilføjet brugerdefineret** bør nu kunne fuldføres *uden fejl*.
+1. Markér det grønne flueben til venstre for formelfeltet, eller tryk på **Enter**.
 
-> [!NOTE]
-> Du kan også bruge **Fjern fejl** (på båndet eller i genvejsmenuen), som fjerner alle de rækker, som indeholder fejl. Dette ville fjerne alle rækker fra vores data, og det var ikke dét, vi ville gøre – vi vil have alle data med i tabellen.
+  Dataene erstattes med de reviderede værdier i Forespørgselseditor, og trinnet **Tilføjet brugerdefineret** fuldføres uden fejl.
 
-Nu skal vi sortere dataene baseret på kolonnen **Ny rangering**. Vælg først det sidste anvendte trin, **Ændret type1** for at få de nyeste data. Vælg derefter rullemenuen ved siden af overskriften på kolonnen **Ny rangering**, og vælg **Sortér stigende**.
+   > [!NOTE]
+   > Du kan også markere **Fjern fejl** ved hjælp af båndet eller genvejsmenuen, hvilket fjerner alle rækker, der indeholder fejl. Det vil vi dog ikke gøre i dette selvstudium, da vi gerne vil bevare dataene i tabellen.
 
-![](media/desktop-shape-and-combine-data/shapecombine_sort.png)
+1. Sortér dataene ud fra kolonnen **Ny rangering**. Vælg først det sidste anvendte trin, **Ændret type1**, for at få vist de nyeste data. Vælg derefter rullemenuen ved siden af kolonneoverskriften **Ny rangering**, og vælg **Sortér stigende**.
 
-Bemærk, at dataene nu er sorteret i henhold til **Ny rangering**.  Men hvis du kigger i kolonnen **Rangering**, kan du se, at dataene ikke er sorteret korrekt i de tilfælde, hvor værdien **Ny rangering** er lig med Rangering. Du løser dette ved at vælge kolonne **Ny rangering** og ændre formlen i **Formellinjen** til følgende:
+   ![Sortér data i kolonnen Ny rangering](media/desktop-shape-and-combine-data/shapecombine_sort.png)
 
+   Dataene sorteres nu i henhold til **Ny rangering**. Men hvis du kigger i kolonnen **Rangering**, kan du se, at dataene ikke er sorteret korrekt i de tilfælde, hvor værdien **Ny rangering** er lig med Rangering. Vi løser dette i det næste trin.
+
+1. Du løser problemet med sortering af data ved at markere kolonnen **Ny rangering** og ændre formlen i **Formellinjen** til følgende formel:
+
+   ```
     = Table.Sort(#"Changed Type1",{{"New Rank", Order.Ascending},{"Rank", Order.Ascending}})
+   ```
 
-Vælg det grønne flueben til venstre for formelfeltet, eller tryk på **Enter**, så bør rækkerne blive sorteret i henhold til både _Ny rangering_ og _Rangering_.
+1. Markér det grønne flueben til venstre for formelfeltet, eller tryk på **Enter**. 
 
-Du kan desuden vælge et vilkårligt trin på listen **Anvendte trin** og fortsætte med at forme dataene på det trin i sekvensen. Forespørgselseditor vil automatisk indsætte et nyt trin direkte efter det aktuelt valgte trin under **Anvendte trin**. Lad os prøve.
+   Rækkerne sorteres nu i henhold til både **Ny rangering** og **Rangering**. Du kan desuden vælge et vilkårligt trin på listen **Anvendte trin** og fortsætte med at forme dataene på det trin i sekvensen. Der indsættes automatisk et nyt trin direkte efter det aktuelt markerede **Anvendte trin** i Forespørgselseditor. 
 
-Vælg først det **Anvendte trin**, før du tilføjer den brugerdefinerede kolonne. Dette er trinnet _Fjernede kolonner_. Her vil vi erstatte værdien af rangeringen af _Weather_ i Arizona. Højreklik på den relevante celle, der indeholder rangeringen af Arizonas _Weather_, og vælg *Erstat værdier...* i den viste menu. Læg mærke til, hvilket **Anvendt trin** der er valgt i øjeblikket (trinnet før _Tilføjet brugerdefineret_).
+1. Under **Anvendt trin** skal du vælge det trin, der kommer før den brugerdefinerede kolonne, hvilket er trinnet **Fjernede kolonner**. Her erstatter vi værdien af rangeringen **Vejr** i Arizona. Højreklik på den relevante celle, der indeholder rangeringen **Vejr** for Arizona, og vælg derefter **Erstat værdier**. Bemærk, hvilket **Anvendte trin** der er valgt i øjeblikket.
 
-![](media/desktop-shape-and-combine-data/shapecombine_replacevalues2.png)
+   ![Vælg Erstat værdier for kolonnen](media/desktop-shape-and-combine-data/shapecombine_replacevalues2.png)
 
-Da vi indsætter et trin, vises der en advarsel om dette, da efterfølgende trin kan medføre, at forespørgslen ikke fungerer som ventet. Det gælder om at være påpasselig og tænke sig om. Da dette er et selvstudium, vil jeg gerne fremhæve en virkelig sej funktion i Forespørgselseditor, så du kan se, hvordan du kan oprette, slette, indsætte og ændre rækkefølgen af trin. Her vil jeg beskrive funktionen **Indsæt**.
+1. Vælg **Indsæt**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_insertstep.png)
+    Da vi indsætter et trin, vises der en advarsel om faren ved at gøre dette i Forespørgselseditor, da efterfølgende trin kan medføre, at forespørgslen ikke fungerer som ventet. 
 
-Ret værdien til _51_, så erstattes dataene for Arizona. Når der oprettes et nyt trin under Anvendte trin i Forespørgselseditor, navngives det baseret på handlingen, som i dette tilfælde er **Erstattet værdi**. Når du har mere end ét trin med samme navn i din forespørgsel, vil Forespørgselseditor tilføje et tal (i stigende rækkefølge) til hvert efterfølgende trin under **Anvendte trin** for at skelne mellem dem.
+    ![Bekræftelse på Indsæt trin](media/desktop-shape-and-combine-data/shapecombine_insertstep.png)
 
-Vælg nu det sidste **Anvendte trin**, _Sorterede rækker_, og bemærk, at dataene har ændret sig i forhold til Arizonas nye rangering.  Dette skyldes, at vi indsatte trinnet _Erstattet værdi_ det rigtige sted, før trinnet _Tilføjet brugerdefineret_.
+1. Skift dataværdien til _51_. 
 
-Det er blot et eksempel på, hvor effektiv og alsidig Forespørgselseditor kan være.
+   Dataene for Arizona erstattes i Forespørgselseditor. Når du opretter et nyt **Anvendt trin**, navngives det på baggrund af handlingen i Forespørgselseditor. I dette tilfælde **Erstattet værdi**. Hvis du har mere end ét trin med samme navn i din forespørgsel, føjes der et tal (i rækkefølge) til hvert efterfølgende **Anvendte trin** i Forespørgselseditor for at skelne mellem dem.
 
-Til sidst vil jeg ændre navnet på tabellen til noget mere beskrivende. Når der skal oprettes rapporter, er det især praktisk at have beskrivende tabelnavne, hvis der oprettes forbindelse til flere datakilder, og de vises alle i ruden **Felter** i visningen **Rapport**.
+1. Markér det sidste **Anvendte trin**, **Sorterede rækker**. 
 
-Det er nemt at ændre tabelnavnet. Du skal blot skrive det nye navn under **Egenskaber** i ruden **Forespørgselsindstillinger** og trykke på **Enter**. Jeg kalder tabellen *RetirementStats*.
+   Bemærk, at dataene har ændret sig i forhold til Arizonas nye rangering. Denne ændring skyldes, at vi indsatte trinnet **Erstattet værdi** det rigtige sted, før trinnet **Tilføjet brugerdefineret**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_renametable2.png)
+1. Til sidst vil jeg ændre navnet på tabellen til noget mere beskrivende. I ruden **Forespørgselsindstillinger** under **Egenskaber** skal du angive det nye navn på tabellen og derefter vælge **Enter**. Navngiv denne tabel *Pensionsstatistik*.
 
-Nu er dataene blevet formet til det, vi skal bruge. Lad os derefter oprette forbindelse til en anden datakilde og kombinere dataene.
+   ![Omdøb tabellen under Forespørgselsindstillinger](media/desktop-shape-and-combine-data/shapecombine_renametable2.png)
+
+   Når vi begynder at oprette rapporter, er det især praktisk at have beskrivende tabelnavne, når vi opretter forbindelse til flere datakilder, som vises i ruden **Felter** i **Rapportvisning**.
+
+   Vi har nu formet dataene i det omfang, vi har brug for. Lad os derefter oprette forbindelse til en anden datakilde og kombinere dataene.
 
 ## <a name="combine-data"></a>Kombiner data
-Dataene omkring de forskellige stater er interessante og kan bruges til at skabe yderligere analyser og forespørgsler. Men der er et problem: De fleste data anvender forkortelser på to bogstaver for statskoder og ikke statens fulde navn. Vi skal bruge en måde at knytte forkortelserne for staterne til deres navne på.
+Dataene for de forskellige stater er interessante og nyttige til at skabe yderligere analyser og forespørgsler. Men der er et problem: De fleste data anvender forkortelser på to bogstaver for statskoder og ikke statens fulde navn. Vi skal bruge en måde at knytte navnene på staterne til deres forkortelser.
 
-Vi er heldige. Der er en anden offentlig datakilde, som gør lige præcis dette, men den skal formes en del, før vi kan knytte den til vores pensioneringstabel. Her er webressourcen med forkortelser for stater:
+Vi er heldige. Der er en anden offentlig datakilde, som gør lige præcis dette, men den skal formes en del, før vi kan knytte den til vores pensionstabel. Hvis du vil forme dataene, skal du følge disse trin:
 
-<http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations>
+1. På båndet **Start** i Forespørgselseditor skal du vælge **Ny kilde \> Web**. 
 
-På båndet **Hjem** i Forespørgselseditor skal du vælge **Ny kilde\> Web** og skrive adressen. Vælg **Opret forbindelse**, så vises resultaterne fra den pågældende webside i Navigator.
+2. Angiv adressen på webstedet for at finde forkortelser på stater, *http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations* , og vælg derefter **Opret forbindelse**.
 
- ![](media/desktop-shape-and-combine-data/designer_gsg_usstateabbreviationsnavigator2.png)
+   Indholdet af webstedet vises i navigatoren.
 
-Vælg **Koder og forkortelser...** , da det omfatter de ønskede data, men det kræver lidt mere formning af dataene.
+    ![Siden Navigator](media/desktop-shape-and-combine-data/designer_gsg_usstateabbreviationsnavigator2.png)
 
-> [!TIP]
-> Er der en hurtigere eller nemmere måde at udføre disse trin på? Ja, vi kunne oprette en *relation* mellem de to tabeller og forme dataene baseret på relationen. Det er stadig en god idé at følge trinnene herunder, da det er en god måde at lære at arbejde med tabeller på. Du skal bare også vide, at du kan bruge relationer til hurtigt at bruge data fra flere tabeller.
+1. Vælg **Koder og forkortelser**. 
+
+   > [!TIP]
+   > Der kræves en del formning for at få de data, vi vil have, i tabellen. Er der en hurtigere eller nemmere måde at udføre disse trin på? Ja, vi kunne oprette en *relation* mellem de to tabeller og forme dataene baseret på relationen. Nedenstående trin er stadig nyttige at lære, da de bruges, når man arbejder med tabeller. Relationer kan dog hjælpe dig med at bruge data fra flere tabeller hurtigt.
 > 
 > 
 
-Du skal udføre følgende trin for at forme dataene:
+Følg disse trin for at forme dataene:
 
-* Fjern den øverste række – den er resultatet af den måde, websidens tabel blev oprettet på, og den har vi ikke brug for. Vælg **Formindsk rækker \> Fjern rækker \> Fjern de øverste rækker** under fanen **Home** .
+1. Fjern den øverste række. Da den er et resultat af den måde, som websidens tabel er oprettet på, har vi ikke brug for den. Vælg **Formindsk rækker \> Fjern rækker \> Fjern de øverste rækker** under fanen **Home** .
 
-![](media/desktop-shape-and-combine-data/shapecombine_removetoprows.png)
+    ![Vælg Fjern de øverste rækker](media/desktop-shape-and-combine-data/shapecombine_removetoprows.png)
 
-Vinduet **Fjern de øverste rækker** åbnes, og du kan angive, hvor mange rækker du vil fjerne.
+    Vinduet **Fjern de øverste rækker** åbnes, og du kan angive, hvor mange rækker du vil fjerne.
 
->[!NOTE]
->Hvis Power BI tilfældigvis importerer tabeloverskrifterne som en række i din datatabel, kan du vælge **Brug første række som overskrift** på båndet **Hjem** eller på fanen **Transformér** på båndet for at løse problemet i tabellen.
+    > [!NOTE]
+    > Hvis Power BI tilfældigvis importerer tabeloverskrifterne som en række i din datatabel, kan du vælge **Brug første række som overskrift** på båndet **Hjem** eller på fanen **Transformér** på båndet for at løse problemet i tabellen.
 
-* Fjern de nederste 26 rækker – de indeholder alle territorierne, som vi ikke behøver at inkludere. Vælg **Formindsk rækker \> Fjern rækker \> Fjern de nederste rækker** under fanen **Hjem** .
+1. Fjern de nederste 26 rækker. Disse rækker er amerikanske områder, som vi ikke behøver at inkludere. Vælg **Formindsk rækker \> Fjern rækker \> Fjern de nederste rækker** under fanen **Hjem** .
 
-![](media/desktop-shape-and-combine-data/shapecombine_removebottomrows.png)
+    ![Vælg Fjern de nederste rækker](media/desktop-shape-and-combine-data/shapecombine_removebottomrows.png)
 
-* Da tabellen RetirementStats ikke indeholder oplysninger for Washington DC, skal vi filtrere dem fra listen. Vælg rullepilen ud for kolonnen Region Status, og fjern markeringen i afkrydsningsfeltet ud for **Federal district**.
+1. Da tabellen Pensionsstatistik ikke indeholder oplysninger om Washington D.C., har vi brug for at bortfiltrere den fra vores liste. Vælg rullelisten **Områdestatus**, og fjern derefter markeringen i afkrydsningsfeltet ud for **Føderalt distrikt**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
+    ![Fjern markeringen i afkrydsningsfeltet Føderalt distrikt](media/desktop-shape-and-combine-data/shapecombine_filterdc.png)
 
-* Fjern et par unødvendige kolonner – vi behøver kun tilknytningen af staten til den officielle forkortelse på to bogstaver, så vi kan fjerne følgende kolonner: **Column1**, **Column3**, **Column4** og derefter **Column6** til og med **Column11**. Start med at markere **Column1**, hold derefter tasten **Ctrl** nede, og markér de øvrige kolonner, der skal fjernes (du kan dermed markere flere rækker, der ikke støder op til hinanden). Vælg **Fjern kolonner \> Fjern kolonner** under fanen Hjem.
+1. Fjern nogle få unødvendige kolonner. Da vi kun har brug for tilknytningen af hver stat til den officielle forkortelse på to bogstaver, kan vi fjerne følgende kolonner: **Kolonne1**, **Kolonne3**, **Kolonne4** og **Kolonne6** til **Kolonne11**. Markér først **Kolonne1**, hold derefter **Ctrl**-tasten nede, og markér hver af de andre kolonner, som skal fjernes. På fanen **Start** på båndet skal du vælge **Fjern kolonner \> Fjern kolonner**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
+   ![Fjern kolonne](media/desktop-shape-and-combine-data/shapecombine_removecolumns.png)
 
->[!NOTE]
->Dette er et godt tidspunkt at påpege, at *rækkefølgen* af de anvendte trin i Forespørgselseditor er vigtig, og den kan påvirke, hvordan datatypen formes. Det er også vigtigt at overveje, hvordan ét trin kan påvirke efterfølgende trin. Hvis du fjerner et trin fra Anvendte trin, fungerer de efterfølgende trin muligvis ikke som oprindeligt tiltænkt, på grund af effekten af rækkefølgen af trin i forespørgslen.
+   > [!NOTE]
+   > Dette er et godt tidspunkt at påpege, at *rækkefølgen* af de anvendte trin i Forespørgselseditor er vigtig, og den kan påvirke, hvordan datatypen formes. Det er også vigtigt at overveje, hvordan ét trin kan påvirke efterfølgende trin. Hvis du fjerner et trin fra Anvendte trin, fungerer de efterfølgende trin muligvis ikke som oprindeligt tiltænkt, på grund af effekten af rækkefølgen af trin i forespørgslen.
 
->[!NOTE]
->Hvis du gør vinduet med Forespørgselseditor smallere, vil nogle af elementerne på båndet bliver gjort mindre, så den synlige plads kan udnyttes bedre. Hvis du gør vinduet med Forespørgselseditor bredere, udvides elementerne på båndet, så det større område udnyttes bedst muligt.
+   > [!NOTE]
+   > Hvis du gør vinduet med Forespørgselseditor smallere, vil nogle af elementerne på båndet bliver gjort mindre, så den synlige plads kan udnyttes bedre. Hvis du gør vinduet med Forespørgselseditor bredere, udvides elementerne på båndet, så det større område udnyttes bedst muligt.
 
-* Omdøb kolonnerne og selve tabellen – som sædvanligt kan du omdøbe en kolonne på flere måder. Start med at markere kolonnen, og vælg enten **Omdøb** under **Transformér** på båndet, eller højreklik, og vælg **Omdøb** i menuen. I det følgende billede vises pile til begge muligheder. Du skal kun vælge den ene mulighed.
+1. Omdøb kolonnerne og tabellen. Der er et par måder at omdøbe en kolonne på: Først skal du markere kolonnen og derefter enten vælge **Omdøb** under fanen **Transformér** på båndet eller højreklikke og vælge **Omdøb**. I det følgende billede vises pile til begge muligheder. Du skal kun vælge den ene mulighed.
 
-![](media/desktop-shape-and-combine-data/shapecombine_rename.png)
+   ![Omdøb kolonne i Forespørgselseditor](media/desktop-shape-and-combine-data/shapecombine_rename.png)
 
-Jeg vælger at omdøbe dem til *State Name* og *State Code*. Hvis du vil omdøbe tabellen, skal du blot skrive et nyt navn i feltet **Navn** i ruden **Forespørgselsindstillinger**. Lad os kalde tabellen *StateCodes*.
+1. Omdøb kolonnerne til *Statsnavn* og *Statskode*. Du omdøber tabellen ved at angive **Navn** i ruden **Forespørgselsindstillinger**. Navngiv tabellen *Statskoder*.
 
-Nu da tabellen StateCodes er formet til formålet, kan vi kombinere disse to tabeller eller forespørgsler i én. Da de tabeller, vi har nu, er et resultat af de forespørgsler, vi anvendte på dataene, refereres der ofte til dem som *forespørgsler*.
+## <a name="combine-queries"></a>Kombiner forespørgsler
 
-Der er to primære måder at kombinere forespørgsler på – *fletning* og *tilføjelse*.
+Nu, hvor vi har formet tabellen Statskoder, som vi ønsker, kan vi kombinere disse to tabeller eller forespørgsler til én. Da de tabeller, vi har nu, er et resultat af de forespørgsler, vi anvendte på dataene, kaldes de ofte for *forespørgsler*.
 
-Når du har en eller flere kolonner, som du vil føje til en anden forespørgsel, skal du **flette** forespørgslerne. Når du har flere rækker med data, som du vil føje til en eksisterende forespørgsel, skal du **tilføje** forespørgslen.
+Der er to primære måder at kombinere forespørgsler på: *fletning* og *tilføjelse*.
 
-I dette tilfælde vil vi flette forespørgsler. Start med at vælge den forespørgsel i Forespørgselseditor, som den anden forespørgsel skal flettes *ind i*, hvilket i dette tilfælde er *RetirementStats*. Vælg derefter **Kombiner \> Flet forespørgsler** under fanen **Hjem** på båndet.
+- Når du har en eller flere kolonner, som du vil føje til en anden forespørgsel, skal du *flette* forespørgslerne. 
+- Når du har flere rækker med data, som du vil føje til en eksisterende forespørgsel, skal du *tilføje* forespørgslen.
 
-![](media/desktop-shape-and-combine-data/shapecombine_mergequeries.png)
+I dette tilfælde vil vi flette forespørgslerne. Det gør du ved at gennemgå disse trin:
+ 
+1. I ruden til venstre i Forespørgselseditor skal du vælge den forespørgsel, som du vil flette den anden forespørgsel *til*. I dette tilfælde er det **Pensionsstatistik**. 
 
-Du kan blive bedt om at angive beskyttelsesniveauer for at sikre, at dataene kombineres uden at medtage eller overføre data, du ikke ville overføre.
+1. Vælg **Kombiner \> Flet forespørgsler** under fanen **Start** på båndet.
 
-Vinduet **Flet** åbnes, og vi bliver bedt om at vælge, hvilken tabel vi vil flette med den valgte tabel, og derefter de tilsvarende kolonner, der skal bruges til fletningen. Vælg State i tabellen *RetirementStats* (forespørgsel), og vælg derefter forespørgslen *StateCodes* (let i dette tilfælde, da der kun er én anden forespørgsel – når du opretter forbindelse til mange forskellige datakilder, er der mange forespørgsler at vælge imellem). Når vi vælger de korrekte matchende kolonner – **State** fra *RetirementStats* og **State Name** fra *StateCodes* – ser vinduet **Flet** ud som følger, og knappen **OK** er aktiveret.
+   ![Vælg Flet forespørgsler](media/desktop-shape-and-combine-data/shapecombine_mergequeries.png)
 
-![](media/desktop-shape-and-combine-data/shapecombine_merge2.png)
+   Du bliver måske bedt om at angive niveau for beskyttelse af personlige oplysninger for at sikre, at dataene kombineres uden at inkludere eller overføre data, du ikke vil have overført.
 
-Den nye kolonne **NewColumn** oprettes i slutningen af forespørgslen, som er indholdet af tabellen (forespørgsel), der blev flettet med den eksisterende forespørgsel. Alle kolonner fra den flettede forespørgsel samles i **NewColumn**, men du kan vælge at **udvide** tabellen og inkludere de ønskede kolonner.
+   Vinduet **Flet** åbnes. I vinduet bliver du bedt om at vælge, hvilken tabel du vil have flettet med den valgte tabel og de tilsvarende kolonner, der skal bruges til fletningen. 
 
-![](media/desktop-shape-and-combine-data/shapecombine_mergenewcolumn.png)
+1. Vælg **Stat** i tabellen Pensionsstatistik, og vælg derefter forespørgslen **Statskoder**. 
 
-Hvis du vil udvide den flettede tabel og vælge, hvilke kolonner der skal inkluderes, skal du vælge udvidelsesikonet (![Udvid](media/desktop-shape-and-combine-data/icon.png)). Vinduet **Udvid** vises.
+   Når du vælger de korrekte tilsvarende kolonner, aktiveres knappen **OK**.
 
-![](media/desktop-shape-and-combine-data/shapecombine_mergeexpand.png)
+   ![Vinduet Flet](media/desktop-shape-and-combine-data/shapecombine_merge2.png)
 
-I dette tilfælde vil vi kun have kolonnen **State Code**, så vi vælger kun den pågældende kolonne og vælger derefter **OK**. Jeg fjerner markeringen i afkrydsningsfeltet fra Brug det oprindelige kolonnenavn som præfiks, da vi ikke skal bruge det. Hvis vi bevarer markeringen, vil den flettede kolonne blive navngivet **NewColumn.State Code** (det oprindelige kolonnenavn, eller **NewColumn** efterfulgt af et punktum, hvorefter kolonnenavnet føres ind i forespørgslen).
+1. Vælg **OK**.
 
->[!NOTE]
->Vil du prøve at importere tabellen **NewColumn**? Du kan eksperimentere lidt, og hvis du ikke kan lide resultatet, skal du bare slette dette trin på listen **Anvendte trin** i ruden **Forespørgselsindstillinger**. Din forespørgsel vender tilbage til tilstanden før trinnet **Udvid** blev anvendt. Du har mulighed for at prøve det af, så mange gange du har lyst, indtil udvidelsesprocessen ser ud, som den skal.
+   Kolonnen **Ny kolonne** oprettes i slutningen af forespørgslen i Forespørgselseditor med indholdet af den tabel (forespørgsel), der blev flettet med den eksisterende forespørgsel. Alle kolonner fra den flettede forespørgsel komprimeres i kolonnen **Ny kolonne**, men du kan **udvide** tabellen og inkludere alle de kolonner, du vil.
 
-Vi har nu en enkelt forespørgsel (tabel), der kombinerer to datakilder, som er blevet formet efter vores behov. Denne forespørgsel kan fungere som udgangspunkt for mange ekstra, interessante dataforbindelser – f.eks. boligomkostningsstatistikker, demografi eller jobmuligheder i en vilkårlig stat.
+   ![Kolonnen Ny kolonne](media/desktop-shape-and-combine-data/shapecombine_mergenewcolumn.png)
 
-Vælg **Luk og anvend** under fanen **Hjem** for at anvende ændringerne og lukke Forespørgselseditor. Det transformerede datasæt vises i Power BI Desktop, hvor du nu kan bruge det til at oprette rapporter.
+1. Hvis du vil udvide den flettede tabel og vælge, hvilke kolonner der skal inkluderes, skal du vælge ikonet for udvidelse (![Ikonet Udvid](media/desktop-shape-and-combine-data/icon.png)). 
 
-![](media/desktop-shape-and-combine-data/shapecombine_closeandapply.png)
+   Vinduet **Udvid** vises.
+
+   ![Ny kolonne i forespørgsel](media/desktop-shape-and-combine-data/shapecombine_mergeexpand.png)
+
+1. I dette tilfælde vil vi kun have kolonnen **Statskode**. Vælg denne kolonne, fjern markeringen i **Brug oprindeligt kolonnenavn som præfiks**, og vælg derefter **OK**.
+
+   Hvis vi havde beholdt markeringen i afkrydsningsfeltet for **Brug oprindeligt kolonnenavn som præfiks**, ville den flettede kolonne blive navngivet **Ny kolonne.Statskode**.
+
+   > [!NOTE]
+   > Vil du gerne udforske, hvordan du inkluderer tabellen Ny kolonne? Du kan eksperimentere lidt, og hvis du ikke kan lide resultatet, skal du bare slette dette trin på listen **Anvendte trin** i ruden **Forespørgselsindstillinger**. Din forespørgsel vender tilbage til tilstanden før trinnet **Udvid** blev anvendt. Du kan gøre dette, så mange gange du vil, indtil udvidelsesprocessen ser ud, som den skal.
+
+   Vi har nu en enkelt forespørgsel (tabel), hvor to datakilder er kombineret, som hver især er blevet formet efter vores behov. Denne forespørgsel kan fungere som udgangspunkt for mange yderligere og interessante dataforbindelser, f.eks. statistikker for boligomkostninger, demografi eller jobmuligheder i en vilkårlig stat.
+
+1. Vælg **Luk og anvend** under fanen **Start** på båndet for at anvende ændringerne og lukke Forespørgselseditor. 
+
+   Det transformerede datasæt vises i Power BI Desktop, hvor du nu kan bruge det til at oprette rapporter.
+
+   ![Vælg Luk og anvend](media/desktop-shape-and-combine-data/shapecombine_closeandapply.png)
 
 ## <a name="next-steps"></a>Næste trin
-Du kan gøre mange forskellige ting med Power BI Desktop. Du kan finde flere oplysninger om funktionerne i følgende ressourcer:
+Du kan finde flere oplysninger om Power BI Desktop og dets egenskaber i følgende ressourcer:
 
 * [Hvad er Power BI Desktop?](desktop-what-is-desktop.md)
 * [Oversigt over forespørgsler i Power BI Desktop](desktop-query-overview.md)

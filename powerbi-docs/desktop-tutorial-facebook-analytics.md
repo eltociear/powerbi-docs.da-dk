@@ -2,7 +2,6 @@
 title: 'Selvstudium: Facebook-analyse ved hjælp af Power BI Desktop'
 description: 'Selvstudium: Facebook-analyse ved hjælp af Power BI Desktop'
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: tutorial
 ms.date: 09/06/2019
 ms.author: davidi
 LocalizationGroup: Learn more
-ms.openlocfilehash: 73f5d629806826eed0da51f5b7158d884d1c8725
-ms.sourcegitcommit: 226b47f64e6749061cd54bf8d4436f7deaed7691
+ms.openlocfilehash: 96811a2cfd7d08a210c4efd177e989abce16d25d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70841391"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876280"
 ---
 # <a name="tutorial-facebook-analytics-using-power-bi-desktop"></a>Selvstudium: Facebook-analyse ved hjælp af Power BI Desktop
 
@@ -147,7 +146,7 @@ Nu, hvor du har importeret dataene fra Facebook-siden, kan du hurtigt og nemt f�
    
    ![Liggende søjlediagram](media/desktop-tutorial-facebook-analytics/barchart1.png)
    
-4. Vælg ellipsen (...) i øverste højre hjørne af visualiseringen, og vælg derefter **Sortér efter antal kommentarer** for at sortere tabellen faldende efter antallet af kommentarer. 
+4. Vælg **Flere indstillinger** (...) øverst til højre i visualiseringen, og vælg derefter **Sortér efter antal kommentarer** for at sortere tabellen efter antal kommentarer i faldende rækkefølge. 
    
    ![Sortér efter antallet af kommentarer](media/desktop-tutorial-facebook-analytics/barchart2.png)
    
@@ -184,7 +183,7 @@ Der vises ikke nøjagtige værdier på diagrammets X-akse (antal kommentarer), o
 
 Det nærmer sig, men datamærkaterne har alle decimalen **,0**, hvilket er distraherende og misvisende, da **antallet af opslag** antal vil være et heltal. Du skal ændre datatypen for kolonnen **Number of posts** til heltal.
 
-1. Du redigerer datatypen ved at højreklikke på **Query1** på listen Felter eller holde over den og vælge ellipsen **Flere indstillinger** (...) og derefter vælge **Rediger forespørgsel**. Du kan også vælge **Rediger forespørgsel** i området **Eksterne data** under fanen Hjem på båndet og derefter vælge **Rediger forespørgsler** i rullemenuen. **Power-forespørgselseditor** i Power BI Desktop åbnes i et separat vindue.
+1. Hvis du vil redigere datatypen skal du højreklikke på **Query1** på listen Felter eller holde over den og vælge **Flere indstillinger** (...). Vælg derefter **Rediger forespørgsel**. Du kan også vælge **Rediger forespørgsel** i området **Eksterne data** under fanen Hjem på båndet og derefter vælge **Rediger forespørgsler** i rullemenuen. **Power-forespørgselseditor** i Power BI Desktop åbnes i et separat vindue.
    
    ![Rediger forespørgsel via listen Felter](media/desktop-tutorial-facebook-analytics/editquery1.png)     ![Rediger forespørgsler via båndet](media/desktop-tutorial-facebook-analytics/t_fb_editquery.png)
    
@@ -241,8 +240,8 @@ Som du kan se, er det nemt at tilpasse visualiseringer i din rapport, så dataen
 Med Power BI Desktop er det nemt at hente data fra en lang række forskellige datakilder og forme dem til dine analysebehov for at kunne visualisere disse data på omfattende og interaktive måder. Når din rapport er færdig, kan du [uploade den til Power BI-tjenesten](desktop-upload-desktop-files.md) og oprette dashboards ud fra den, som du derefter kan dele med andre Power BI-brugere.
 
 ## <a name="next-steps"></a>Næste trin
-* [Læs andre selvstudier til Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=521937)
-* [Se videoer om Power BI Desktop](http://go.microsoft.com/fwlink/?LinkID=519322)
-* [Besøg Power BI-forummet](http://go.microsoft.com/fwlink/?LinkID=519326)
-* [Læs Power BI-bloggen](http://go.microsoft.com/fwlink/?LinkID=519327)
+* [Læs andre selvstudier til Power BI Desktop](https://go.microsoft.com/fwlink/?LinkID=521937)
+* [Se videoer om Power BI Desktop](https://go.microsoft.com/fwlink/?LinkID=519322)
+* [Besøg Power BI-forummet](https://go.microsoft.com/fwlink/?LinkID=519326)
+* [Læs Power BI-bloggen](https://go.microsoft.com/fwlink/?LinkID=519327)
 

@@ -9,12 +9,12 @@ ms.subservice: powerbi-consumer
 ms.topic: conceptual
 ms.date: 09/04/2019
 ms.author: mihart
-ms.openlocfilehash: b9622a08506c6f5ade900296d91b449c64dc374c
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: a48589e6126203856a306de796c964ce6e347c26
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903668"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429863"
 ---
 # <a name="glossary-for-power-bi-service"></a>Ordliste til Power BI-tjenesten
 Power BI-tjenesten kan introducere terminologi, som er ukendt eller forvirrende. Ordlisten er et godt sted at søge efter terminologi, og du kan endda markere den med et bogmærke. En anden fantastisk ressource, hvor du kan få mere at vide om de komponenter, der udgør Power BI-tjenesten, er [Grundlæggende begreber](end-user-basic-concepts.md). Grundlæggende begreber giver et godt overblik over Power BI-*enheder*, og hvordan de er forbundet.
@@ -37,10 +37,8 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 
 **answer card, answer page (svarkort, svarside)** Se Cortana-svarkort.
 
-**app, apps**
+**app, apps** 
 
- 
-**app workspace (apparbejdsområde)** Alle arbejdsområder i Power BI med undtagelse af mit arbejdsområde er nu apparbejdsområder. Indholdet kan være samlet i en Power BI-app. Det, der er gemt i Premium-kapacitet, kan deles med gratis-brugere. Personlige arbejdsområder (under Mit arbejdsområde) kan hostes i Premium-kapacitet.  
 
 **AppSource** Centraliseret onlinelager, hvor du kan gennemse og udforske dashboards, rapporter, datasæt og apps, som du kan downloade.
 
@@ -54,7 +52,7 @@ Denne ordliste er blevet til takket være communityet.  Er der et ord, du ikke k
 
 **bookmark (bogmærke)** En visning af data, der registreres i ruden Bogmærker i en rapport i Power BI Desktop eller Power BI-tjenesten. I Desktop er bogmærkerne gemt i .pbix-rapportfilen til deling i Power BI-tjenesten
   
-**breadcrumbs (brødkrummer)** Navigationen øverst til venstre, hvor du hurtigt kan skifte mellem apparbejdsområder.
+**breadcrumbs** Navigationen øverst til venstre, hvor du hurtigt kan navigere mellem arbejdsområder.
 
 ## <a name="c"></a>C
 
@@ -177,7 +175,7 @@ Første forekomst: venstre navigation, efterfølgende forekomster eller lidt pla
 
 **modeling (udformning)** [Power BI Desktop] At gøre de data, du har oprettet forbindelse til, klar til brug i Power BI. Dette omfatter oprettelse af relationer mellem tabeller i flere datakilder, oprettelse af målinger og tildeling af målepunkter.
 
-**My workspace (Mit arbejdsområde)** Det arbejdsområde, hvor de enkelte Power BI-kunder kan oprette indhold. Hvis de vil samle noget, der er oprettet her, i en app, og de har *designer*tilladelser, uploader de det til det relevante apparbejdsområde eller opretter et nyt.
+**My workspace (Mit arbejdsområde)** Det arbejdsområde, hvor de enkelte Power BI-kunder kan oprette indhold. Hvis de vil bundte noget, der er oprettet her, i en app, og de har *designertilladelser*, uploader de det til det relevante arbejdsområde eller opretter et nyt.
 
 ## <a name="n"></a>N
 
@@ -222,7 +220,7 @@ Første forekomst: navigationslinje, efterfølgende forekomster eller ved lidt p
 
 **Power BI**, **Power BI-tjenesten**, **Power BI Desktop**, **Power BI – Mobil** Nogle af Power BI-tilbuddene. *Power BI* er det generelle begreb. Det bruges ofte i stedet for det fulde produktnavn, f.eks *Power BI-tjenesten* og *Power BI – Mobil* efter den første forekomst af det fulde produktnavn.
 
-**Power BI Desktop** Kaldes også *Desktop*. Det gratis Windows-program til Power BI, som du kan installere på din lokale computer, og som giver dig mulighed for at oprette forbindelse til, transformere og visualisere dine data. Bruges af rapportdesignere og administratorer. Du kan finde flere oplysninger under [Hvad er Power BI](../power-bi-overview.md)?
+**Power BI Desktop** Kaldes også *Desktop*. Det gratis Windows-program til Power BI, som du kan installere på din lokale computer, og som giver dig mulighed for at oprette forbindelse til, transformere og visualisere dine data. Bruges af rapportdesignere og administratorer. Du kan finde flere oplysninger under [Hvad er Power BI](../fundamentals/power-bi-overview.md)?
 
 **Power BI Embedded** Et produkt, der bruges af udviklere til at integrere Power BI-dashboards og -rapporter i deres egne apps, websteder og -værktøjer.
 
@@ -232,7 +230,7 @@ Første forekomst: navigationslinje, efterfølgende forekomster eller ved lidt p
 
 **Power BI Report Server (Power BI-rapportserver)** Et nyt branded tilbud fra SSRS (SQL Server Reporting Services), der lanceres sammen med Power BI Premium, og som giver organisationer mulighed for at bygge distribuerede hybride BI-systemer (en blanding af udrulninger i cloudmiljøet og i det lokale miljø). Integrationen giver dig en lokaliseret måde at gemme og administrere Power BI-rapporter på.
 
-**Power BI service (Power BI-tjeneste)** En SaaS-onlinetjeneste (Software som en service). Du kan finde flere oplysninger under [Hvad er Power BI](../power-bi-overview.md)?
+**Power BI service (Power BI-tjeneste)** En SaaS-onlinetjeneste (Software som en service). Du kan finde flere oplysninger under [Hvad er Power BI](../fundamentals/power-bi-overview.md)?
 
 **Power BI service connector (Power BI-tjenesteconnector)** Denne connector gør Power BI Desktop-brugere i stand til at oprette forbindelse til datasæt i Power BI-tjenesten fra Desktop. De kan oprette en model én gang og genbruge den i mange rapporter og dashboards.
 
@@ -325,7 +323,7 @@ Power BI-dashboards indeholder rapportfelter.
 
 **workbook (projektmappe)** En Excel-projektmappe, der skal bruges som en datakilde. Projektmapper kan indeholde en datamodel med en eller flere tabeller med data, der er indlæst ved hjælp af sammenkædede tabeller, Power-forespørgsel eller Power Pivot.
 
-**workspace (arbejdsområde)** Objektbeholdere til dashboards, rapporter og datasæt i Power BI. Se apparbejdsområde i denne samling af begreber.
+**workspace (arbejdsområde)** Objektbeholdere til dashboards, rapporter og datasæt i Power BI. Brugerne kan samarbejde om indholdet i et hvilket som helst arbejdsområde undtagen Mit arbejdsområde. Indholdet kan være samlet i en Power BI-app. Det, der er gemt i Premium-kapacitet, kan deles med gratis-brugere. Personlige arbejdsområder (under Mit arbejdsområde) kan hostes i Premium-kapacitet.
 
 ## <a name="x"></a>X
 **x-axis (x-akse)**  

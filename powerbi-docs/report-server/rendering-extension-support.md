@@ -100,13 +100,13 @@ Ikke tilgængelig
 
 Ikke tilgængelig
 
-## <a name="disclaimer"></a>Ansvarsfraskrivelse
+## <a name="disclaimer"></a>Disclaimer
 
-© 2017 Microsoft Corporation. Alle rettigheder forbeholdes. Navnene på de faktiske virksomheder og produkter, der er nævnt heri, kan være varemærker tilhørende deres respektive ejere. De oplysninger, der er indeholdt i dette dokument, repræsenterer den aktuelle visning af Microsoft Corporation om de problemer, der diskuteres på udgivelsesdatoen. Microsoft kan ikke garantere nøjagtigheden af oplysninger, der præsenteres efter udgivelsesdatoen. Microsoft opdaterer jævnligt Microsofts websteder med nye oplysninger om tilgængelighed af produkter, efterhånden som oplysningerne bliver tilgængelige.
+© 2017 Microsoft Corporation. All rights reserved. The names of actual companies and products mentioned herein may be the trademarks of their respective owners. The information contained in this document represents the current view of Microsoft Corporation on the issues discussed as of the date of publication. Microsoft cannot guarantee the accuracy of any information presented after the date of publication. Microsoft regularly updates its websites with new information about the accessibility of products as that information becomes available.
 
-Tilpasning af produktet afviser denne overensstemmelseserklæring fra Microsoft. Kontakt vores leverandører Assistive Technology (AT) angående specifikationer for kompatibilitet for specifikke AT-produkter.
+Customization of the product voids this conformance statement from Microsoft. Please consult with Assistive Technology (AT) vendors for compatibility specifications of specific AT products.
 
-Dette dokument er kun til oplysningsformål. MICROSOFT GIVER INGEN GARANTIER, DET VÆRE SIG UDTRYKKELIGE ELLER UNDERFORSTÅEDE, I DETTE DOKUMENT.
+This document is for informational purposes only. MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS DOCUMENT.
 
 
 ## <a name="next-steps"></a>Næste trin

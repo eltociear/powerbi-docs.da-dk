@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: 4507490fc2986ec7934af4c9e7417585523c7a05
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 38ecb04b45ef45a8345397c5b9ec3e89d9dfd232
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61143343"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432068"
 ---
 # <a name="creating-and-using-dataflows-in-power-bi"></a>Oprettelse og brug af dataflow i Power BI
 
 Med klargøring af avancerede data, som er tilgængelig i **Power BI**, kan du oprette en samling af data, hvilket kaldes et dataflow. Det kan du derefter bruge til at oprette forbindelse til virksomhedens data fra forskellige kilder, rense dataene, transformere dem og derefter indlæse dem i Power BI-lageret.
 
-Et **dataflow** er en samling af *objekter* (objekter er ligesom tabeller), der oprettes og administreres i apparbejdsområder i Power BI-tjenesten. Du kan tilføje og redigere objekter i dataflowet samt administrere tidsplaner for opdatering af data direkte fra det arbejdsområde, hvor dataflowet er oprettet.
+Et **dataflow** er en samling af *objekter* (objekter er ligesom tabeller), der oprettes og administreres i arbejdsområder i Power BI-tjenesten. Du kan tilføje og redigere objekter i dataflowet samt administrere tidsplaner for opdatering af data direkte fra det arbejdsområde, hvor dataflowet er oprettet.
 
 Når du opretter et dataflow, kan du bruge **Power BI Desktop** og **Power BI-tjenesten** til at oprette datasæt, rapporter, dashboards og apps, der er baseret på de data, som du placerer i Power BI-dataflow, og dermed få indsigt i dine forretningsaktiviteter.
 
@@ -36,13 +36,13 @@ Der er tre primære trin til at bruge et dataflow:
 I følgende afsnit gennemgår vi hvert af disse trin og bliver fortrolige med de værktøjer, der skal bruges til at fuldføre hvert trin. Lad os komme i gang.
 
 ## <a name="creating-a-dataflow"></a>Oprettelse af et dataflow
-Du opretter et dataflow ved at starte Power BI-tjenesten i en browser og derefter vælge et **apparbejdsområde** i navigationsruden til venstre på følgende skærm. Dataflow er ikke tilgængelige i *mit arbejdsområde* i Power BI-tjenesten. Du kan også oprette et nyt arbejdsområde, hvor du kan oprette dit nye dataflow. 
+Du opretter et dataflow ved at starte Power BI-tjenesten i en browser og derefter vælge et **arbejdsområde** i navigationsruden til venstre, som vist på følgende skærm. Dataflow er ikke tilgængelige i *Mit arbejdsområde* i Power BI-tjenesten. Du kan også oprette et nyt arbejdsområde, hvor du kan oprette dit nye dataflow. 
 
 ![Opret et dataflow i Power BI](media/service-dataflows-create-use/dataflows-create-use_02a.png)
 
-Når du først er i **apparbejdsområdet**, hvor du kan oprette et dataflow, vises knappen **+ Opret** i øverste højre hjørne på lærredet. Vælg knappen **+ Opret**, og vælg derefter **Dataflow** på rullelisten. 
+Når du først er i **arbejdsområdet**, hvor du kan oprette et dataflow, vises knappen **+ Opret** i øverste højre hjørne på lærredet. Vælg knappen **+ Opret**, og vælg derefter **Dataflow** på rullelisten. 
 
-Det er vigtigt at vide, at der kun er *én ejer* af et hvilket som helst dataflow. Ejeren er den person, der opretter det. Det er kun ejeren, der kan redigere dataflowet. Alle medlemmer af **apparbejdsområdet**, som har læse- eller skrivetilladelser til det apparbejdsområde, hvor dataflowet er oprettet, kan oprette forbindelse til dataflowet fra **Power BI Desktop**, som beskrevet senere i denne artikel.
+Det er vigtigt at vide, at der kun er *én ejer* af et hvilket som helst dataflow. Ejeren er den person, der opretter det. Det er kun ejeren, der kan redigere dataflowet. Alle medlemmer af **arbejdsområdet**, som har læse- eller skrivetilladelser til det arbejdsområde, hvor dataflowet er oprettet, kan oprette forbindelse til dataflowet fra **Power BI Desktop**, som beskrevet senere i denne artikel.
 
 ![Knappen + Opret i Power BI-tjenesten til at oprette et dataflow](media/service-dataflows-create-use/dataflows-create-use_03a.png)
 
@@ -111,7 +111,7 @@ Fantastisk! Nu er du klar til næste trin, hvilket er planlægning af hyppighede
 
 Når dataflowet er blevet gemt, kan du planlægge hyppigheden for opdatering for hver af dine forbundne datakilder.
 
-Power BI-dataflow bruger processen for opdatering af Power BI-data til at holde dine data opdateret. I **Power BI-tjenesten** under afsnittet **apparbejdsområde** er der en samling af områder, hvor dine oplysninger kan angives, herunder dataflow, som vist på følgende billede.
+Power BI-dataflow bruger processen for opdatering af Power BI-data til at holde dine data opdateret. I **Power BI-tjenesten** under afsnittet **arbejdsområde** er der en samling af områder, hvor dine oplysninger kan angives, herunder dataflow, som vist på følgende billede.
 
 ![Administrer dataflow i Power BI-tjenesten](media/service-dataflows-create-use/dataflows-create-use_12.png)
 
@@ -134,7 +134,7 @@ Du opretter forbindelse til dataflowet ved at vælge **Hent data > Power BI > Po
 
 ![Opret forbindelse til dataflow fra Power BI Desktop](media/service-dataflows-create-use/dataflows-create-use_15.png)
 
-Herfra kan du navigere til det **apparbejdsområde**, hvor du gemte dataflowet, vælge dataflowet og derefter vælge de objekter, du har oprettet, på listen.
+Herfra kan du navigere til det **arbejdsområde**, hvor du gemte dataflowet, vælge dataflowet og derefter vælge de objekter, du har oprettet, på listen.
 
 Du kan også bruge **søgelinjen** øverst i vinduet til hurtigt at finde navnet på dit dataflow eller dine objekter blandt mange dataflowobjekter.
 

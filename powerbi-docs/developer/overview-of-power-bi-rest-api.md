@@ -3,18 +3,17 @@ title: Hvad kan jeg bruge Power BI-API'en til?
 description: Hvad kan jeg bruge Power BI-API'en til?
 author: rkarlin
 ms.author: rkarlin
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 03/25/2019
-ms.openlocfilehash: cc180c2e9d5275172ad9da75c502ef53d9d7ee66
-ms.sourcegitcommit: 549401b0e1fad15c3603fe7f14b9494141fbb100
+ms.openlocfilehash: 8a231a426823d40be34e900a32d06e5d5f77108b
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72307617"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73880494"
 ---
 # <a name="what-can-developers-do-with-the-power-bi-api"></a>Hvad kan udviklere bruge Power BI-API'en til?
 
@@ -32,7 +31,7 @@ Her er nogle af de ting, du kan bruge Power BI-API'erne til.
 | Godkend til Power BI. | [Godkend til Power BI](get-azuread-access-token.md) |
 
 > [!NOTE]
-> Power BI-API'erne refererer stadig til apparbejdsområder som grupper. Referencer til grupper betyder, at du arbejder med apparbejdsområder.
+> Power BI-API'erne refererer stadig til arbejdsområder som grupper. Referencer til grupper betyder, at du arbejder med arbejdsområder.
 
 ## <a name="api-developer-tools"></a>API-udviklerværktøjer
 
@@ -61,4 +60,4 @@ Du kan bruge Power BI-API'en til at [sende data til et datasæt via push](walkth
 * [Reference til Power BI REST API](rest-api-reference.md)
 * [REST-API'er til Power BI](https://docs.microsoft.com/rest/api/power-bi/)
 
-Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+Har du flere spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

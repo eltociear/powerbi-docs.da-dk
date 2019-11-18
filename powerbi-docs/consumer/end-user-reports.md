@@ -10,14 +10,16 @@ ms.topic: conceptual
 ms.date: 09/05/2019
 ms.author: mihart
 LocalizationGroup: Reports
-ms.openlocfilehash: 21a77d585707b19cd8a3d06ad44471fac45d7178
-ms.sourcegitcommit: 52aa112ac9194f4bb62b0910c4a1be80e1bf1276
+ms.openlocfilehash: 26741d229b260a0114f5f089018b79f34bc41938
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "70903701"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019323"
 ---
 # <a name="reports-in-power-bi"></a>Rapporter i Power BI
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]
 
 En Power BI-rapport er en visning med flere perspektiver af et datasæt med visualiseringer, som repræsenterer forskellige resultater og indsigter fra dette datasæt.  En rapport kan indeholde en enkelt visualisering eller sider fulde af visualiseringer. Afhængigt af din jobfunktion kan du være en person, der *designer* rapporter. Du også kan være en person, der *forbruger* eller anvender rapporter. Denne artikel er til *forbrugere*.
 
@@ -27,7 +29,7 @@ A. Denne rapport indeholder seks sider (eller faner), og du ser i øjeblikket si
 B. På denne side er der fem forskellige visualiseringer og en sidetitel.    
 C. Ruden *Filtre* viser ét filter, som er anvendt på alle rapportsider. Hvis du vil skjule ruden Filtre, skal du vælge pilen ( **>** ).    
 D. På Power BI-banneret kan du se navnet på rapporten og de seneste opdaterede dato. Vælg pilen for at åbne en menu, der også viser navnet på ejeren af rapporten.    
-E. Handlingslinjen indeholder handlinger, du kan udføre på denne rapport.  Du kan f.eks. tilføje en kommentar, få vist et bogmærke eller eksportere data fra rapporten.  Vælg ellipsen (...) for at få vist en liste over yderligere rapportfunktionalitet.    
+E. Handlingslinjen indeholder handlinger, du kan udføre på denne rapport.  Du kan f.eks. tilføje en kommentar, få vist et bogmærke eller eksportere data fra rapporten.  Vælg **Flere indstillinger** (...) for at få vist en liste over yderligere rapportfunktionalitet.    
 
 Hvis du ikke har arbejdet med Power BI før, kan du få et godt overblik ved at læse [Grundlæggende begreber for forbrugere af Power BI-tjenesten](end-user-basic-concepts.md). Rapporter er tilgængelige til visning, deling og anmærkning på mobilenheder. Du kan få flere oplysninger under: [Udforsk rapporter i Power BI-mobilapps](mobile/mobile-reports-in-the-mobile-apps.md).
 

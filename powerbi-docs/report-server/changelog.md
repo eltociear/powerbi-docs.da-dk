@@ -8,13 +8,13 @@ ms.reviewer: maggies
 ms.service: powerbi
 ms.subservice: powerbi-report-server
 ms.topic: conceptual
-ms.date: 10/09/2019
-ms.openlocfilehash: a3f7e1676c864ff1f5dbf081dd2e7818f30caba6
-ms.sourcegitcommit: e533c65607bbba0f620fddabd6b107e5933772c1
+ms.date: 10/25/2019
+ms.openlocfilehash: 0a4aaa5d9fcb3d5dab6cce0b0c8dd6034581aedb
+ms.sourcegitcommit: 17f45a81b0dcbf9e3f1fb2a551584170baecd320
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72259976"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72922550"
 ---
 # <a name="change-log-for-power-bi-report-server"></a>Ændringslog for Power BI-rapportserver
 
@@ -23,15 +23,22 @@ Denne ændringslog er for Power BI-rapportserver, og den viser nye elementer sam
 Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder i Power BI-rapportserver](whats-new.md). 
 
 ## <a name="september-2019"></a>September 2019
-
 - **Power BI-rapportserver**
+    - *Version: 1.6.7236.4246 (build 15.0.1102.646), udgivet: 25. oktober 2019*
+        - Sikkerhedsopdateringer
+        - Fejlrettelser
+            - Rettelse til et problem, hvor .NET Framework 4.7 ikke er installeret.
+            - Rettelse til sideinddelte rapporter for Teradata med parametre for flere værdier med fejl 110083.
+            - Rettelse til URLRoot-værdien, som ikke fungerer, hvis der er flere bindinger af URL-adresser for webtjenesten, og en af dem er http://+80/reportserver.
+          - Rettelse til sideinddelte rapporter med parametre for flere værdier, der vises uden for rapportområdet.
+          
     - *Version: 1.6.7221.30698 (Build 15.0.1102.620), udgivet: 9. oktober 2019*
         - Fejlrettelser
             - Rettelse til den brugerdefinerede visualisering Tekstfilter.
             - Rettelse af ydeevnen for rullelisteudsnitsværktøjer.
             - Rettelse til Strip PII fra telemetri.
           - Rettelse af URL-adresser, så der ikke skelnes mellem store og små bogstaver.
-             
+          
     - *Version 1.6.7206.38019 (build 15.0.1102.597), udgivet: 26. september 2019*
         - Sikkerhedsopdateringer
         - Fejlrettelser
@@ -50,7 +57,10 @@ Hvis du vil have detaljerede oplysninger om nye funktioner, skal du se [Nyheder 
              - Opdateret web-API: /PowerBIReports({Id})/DataSources (PATCH), som tillader opdatering af forbindelsesstrenge.
          
 - **Power BI Desktop (optimeret til Power BI-rapportserver)**
-
+    - *Version: 2.73.5586.1501 (september 2019), udgivet: 25. oktober 2019*
+        - Fejlrettelser
+            - Rettelse til telemetri.
+            
     - *Version: 2.73.5586.1241 (september 2019), udgivet: 9. oktober 2019*
         - Fejlrettelser
             - Rettelse til den brugerdefinerede visualisering Tekstfilter.

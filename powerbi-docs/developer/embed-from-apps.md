@@ -1,6 +1,6 @@
 ---
 title: Integrer rapporter eller dashboards fra apps
-description: Lær, hvordan du integrerer en rapport eller et dashboard fra en Power BI-app og ikke et apparbejdsområde.
+description: Lær, hvordan du integrerer en rapport eller et dashboard fra en Power BI-app og ikke fra et arbejdsområde.
 author: rkarlin
 ms.author: rkarlin
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.subservice: powerbi-developer
 ms.custom: mvc
 manager: kfile
 ms.date: 11/27/2018
-ms.openlocfilehash: 5a988eb160ce772d2c2e70e8cba2c01d3f0a36a9
-ms.sourcegitcommit: 81ba3572531cbe95ea0b887b94e91f94050f3129
+ms.openlocfilehash: 1883d82b47c32f3c7f03e55a177429d09ce337a2
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66750884"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73430844"
 ---
 # <a name="embed-reports-or-dashboards-from-apps"></a>Integrer rapporter eller dashboards fra apps
 
@@ -42,10 +42,10 @@ I Power BI kan du oprette apps for at samle relaterede dashboards og rapporter p
 
 ## <a name="next-steps"></a>Næste trin
 
-Gennemgå, hvordan du integrerer fra apparbejdsområder til tredjepartskunder og din organisation:
+Gennemse, hvordan du integrerer fra arbejdsområder for dine tredjepartskunder og din organisation:
 
 > [!div class="nextstepaction"]
->[Integrer til tredjepartskunder](embed-sample-for-customers.md)
+>[Integrer for tredjepartskunder](embed-sample-for-customers.md)
 
 > [!div class="nextstepaction"]
->[Integrer til din organisation](embed-sample-for-your-organization.md)
+>[Integrer for din organisation](embed-sample-for-your-organization.md)

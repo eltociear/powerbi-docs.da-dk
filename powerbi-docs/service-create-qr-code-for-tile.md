@@ -2,7 +2,6 @@
 title: Opret en QR-kode for et felt, der skal bruges i Power BI-mobilapps
 description: QR-koder i Power BI kan forbinde noget i den virkelige verden direkte med relaterede BI-oplysninger i Power BI-mobilappen, uden at det er nødvendigt at søge.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 03/07/2018
 ms.author: maggies
 LocalizationGroup: Dashboards
-ms.openlocfilehash: cab65ad12255b7a5ff2e37902684437f0e191723
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 10faca7cf81575dddd2abb29afee1aca0e9f1279
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "61169022"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73853333"
 ---
 # <a name="create-a-qr-code-for-a-tile-in-power-bi-to-use-in-the-mobile-apps"></a>Opret en QR-kode for et felt i Power BI, som skal bruges i mobilappsene
 QR-koder i Power BI kan forbinde noget i den virkelige verden direkte med relaterede BI-oplysninger &#151; du behøver ikke at navigere eller søge.
@@ -27,8 +26,8 @@ De kollegaer, du har delt dashboardet med, kan [scanne QR-koden for at få adgan
 
 ## <a name="create-a-qr-code-for-a-tile"></a>Opret en QR-kode for et felt
 1. Åbn et dashboard i Power BI-tjenesten.
-2. Vælg ellipsen (...) i øverste højre hjørne af feltet, og vælg **Fokustilstand** ![](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
-3. Vælg ellipsen (...) i øverste højre hjørne, og vælg **Generér QR-kode**. 
+2. Vælg **Flere indstillinger** (...) i øverste højre hjørne af feltet, og vælg **Fokustilstand**![](media/service-create-qr-code-for-tile/fullscreen-icon.jpg).
+3. Vælg **Flere indstillinger** (...) i øverste højre hjørne, og vælg **Generér QR-kode**. 
    
     ![](media/service-create-qr-code-for-tile/power-bi-create-qr-code-tile.png)
 4. Der vises en dialogboks med QR-koden. 
@@ -55,5 +54,5 @@ I Power BI oprettes QR-koden som en JPG-fil, der er klar til udskrivning.
 * [Opret forbindelse til Power BI-data fra den virkelige verden](consumer/mobile/mobile-apps-data-in-real-world-context.md) med mobilappsene
 * [Scan en Power BI QR-kode fra din mobilenhed](consumer/mobile/mobile-apps-qr-code.md)
 * [Opret en QR-kode for en rapport](service-create-qr-code-for-report.md)
-* Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+* Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)
 

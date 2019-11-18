@@ -2,7 +2,6 @@
 title: Tilladelsen Opret for delte datasæt (prøveversion)
 description: Få mere at vide om, hvordan du bevarer styringen over, hvem der har adgang til dataene, ved hjælp af tilladelsen Opret.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: 069ec5e0c767bcfcb0a4a41c2180ae78146800f2
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: b17fa4299d2db84f63f0d8f7ed4c17a0c9c437db
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020999"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73872547"
 ---
 # <a name="build-permission-for-shared-datasets-preview"></a>Tilladelsen Opret for delte datasæt (prøveversion)
 
@@ -29,7 +28,7 @@ Du kan give tilladelsen Opret for et datasæt på forskellige måder:
 
 - Medlemmer af et arbejdsområde med mindst en rolle som Bidragyder har automatisk tilladelsen Opret for datasæt i det pågældende arbejdsområde og tilladelse til at kopiere en rapport.
  
-- Medlemmer af arbejdsområdet, hvor datasættet er placeret, kan tildele tilladelsen til specifikke brugere eller sikkerhedsgrupper i centret for tilladelser. Hvis du er medlem af arbejdsområdet, skal du vælge ellipsen (...) ud for et datasæt > **Administrer tilladelser**.
+- Medlemmer af arbejdsområdet, hvor datasættet er placeret, kan tildele tilladelsen til specifikke brugere eller sikkerhedsgrupper i centret for tilladelser. Hvis du er medlem af arbejdsområdet, skal du vælge **Flere indstillinger** (...) ud for et datasæt > **Administrer tilladelser**.
 
     ![Vælg ellipsen](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
@@ -50,11 +49,11 @@ Du kan fjerne tilladelsen Opret for et datasæt fra en person. Hvis du gør det,
 På et tidspunkt kan du få brug for at fjerne tilladelsen Opret for nogle brugere af et delt datasæt. 
 
 1. Gå til siden med listen over **Datasæt** i et arbejdsområde. 
-1. Vælg ellipsen (...) ud for datasættet > **Administrer tilladelser**.
+1. Vælg **Flere indstillinger** (...) ud for datasættet > **Administrer tilladelse**.
 
     ![Administrer tilladelser](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Vælg ellipsen (...) ud for navnet > **Fjern Opret**.
+1. Vælg **Flere indstillinger** (...) ud for et navn > **Fjern Opret**.
 
     ![Fjern tilladelsen Opret](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 
@@ -71,7 +70,7 @@ Lad os sige, at du har distribueret en app fra et arbejdsområde til en gruppe p
 1. På fanen **Tilladelser** skal du vælge **X** for at slette personen eller gruppen. 
 
     ![Vælg X'et](media/service-datasets-build-permissions/power-bi-app-delete-user.png)
-1. Vælg **Opdater app**.
+1. Vælg **Opdater program**.
 
     Du får vist en meddelelse, der forklarer, at du skal gå til **Administrer tilladelser** for at fjerne tilladelsen Opret for brugere med eksisterende adgang. 
 
@@ -80,11 +79,11 @@ Lad os sige, at du har distribueret en app fra et arbejdsområde til en gruppe p
 1. Vælg **Opdater**.
 
 1. Gå til siden med listen over **Datasæt** i arbejdsområdet. 
-1. Vælg ellipsen (...) ud for datasættet > **Administrer tilladelser**.
+1. Vælg **Flere indstillinger** (...) ud for datasættet > **Administrer tilladelse**.
 
     ![Administrer tilladelser](media/service-datasets-build-permissions/power-bi-dataset-permissions-new-look.png)
 
-1. Vælg ellipsen (...) ud for deres navn > **Fjern Opret**.
+1. Vælg **Flere indstillinger** (...) ud for deres navn > **Fjern Opret**.
 
     ![Fjern tilladelsen Opret](media/service-datasets-build-permissions/power-bi-dataset-remove-build-permissions.png)
 
@@ -103,4 +102,4 @@ Du kan fjerne tilladelsen Opret. Hvis du gør det, kan de personer, hvis tillade
 ## <a name="next-steps"></a>Næste trin
 
 - [Brug datasæt på tværs af arbejdsområder (prøveversion)](service-datasets-across-workspaces.md)
-- Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+- Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

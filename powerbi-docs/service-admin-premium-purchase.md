@@ -10,12 +10,12 @@ ms.subservice: powerbi-admin
 ms.topic: conceptual
 ms.date: 03/12/2019
 LocalizationGroup: Premium
-ms.openlocfilehash: a6e37885c5e15dbaaa28fc5cb693089fda747c9e
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 1d2ff47fdbc31598524986742319ab36c8f3e957
+ms.sourcegitcommit: 2b7beec5237a597bab2da8eb6ffe69122a5d2ed9
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175234"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442892"
 ---
 # <a name="how-to-purchase-power-bi-premium"></a>Sådan køber du Power BI Premium
 
@@ -26,21 +26,21 @@ I denne artikel beskrives, hvordan du køber Power BI Premium-kapacitet (P1-P3) 
 
 Forfattere af indhold skal stadig have en Power BI Pro-licens, også selvom organisationen bruger Power BI Premium. Sørg for at købe mindst én Power BI Pro-licens til din organisation.
 
-Hvis et Premium-abonnement udløber, har du 30 dages fuld adgang til din kapacitet. Derefter vil dit indhold igen blive en delt kapacitet. Modeller, der er større 1 GB, understøttes ikke i delt kapacitet.
+Hvis et Premium-abonnement udløber, har du 30 dages fuld adgang til din kapacitet. Derefter vil dit indhold igen blive en delt kapacitet. Modeller, der er større 1 GB, understøttes ikke i delt kapacitet.
 
 ## <a name="create-a-new-tenant-with-power-bi-premium-p1"></a>Opret en ny lejer med Power BI Premium P1
 
-Hvis du ikke har en eksisterende lejer og vil oprette en, kan du købe Power BI Premium samtidigt. Følgende link fører dig gennem processen med at oprette en ny lejer og giver dig mulighed for at købe Power BI Premium: [Tilbud på Power BI Premium P1](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). Når du opretter din lejer, får du automatisk tildelt rollen Global administrator for Office 365 for den pågældende lejer.
+Hvis du ikke har en eksisterende lejer og vil oprette en, kan du købe Power BI Premium samtidigt. Følgende link fører dig gennem processen med at oprette en ny lejer og giver dig mulighed for at købe Power BI Premium: [Tilbud på Power BI Premium P1](https://signup.microsoft.com/Signup?OfferId=b3ec5615-cc11-48de-967d-8d79f7cb0af1). Når du opretter din lejer, får du automatisk tildelt rollen Global administrator for Microsoft 365 for den pågældende lejer.
 
 ## <a name="purchase-a-power-bi-premium-capacity-for-an-existing-organization"></a>Køb Power BI Premium-kapacitet til en eksisterende organisation
 
-Hvis der allerede er registreret en organisation (lejer), skal du have rollen Global administrator eller Faktureringsadministrator for Office 365 for at købe abonnementer og licenser. Du kan finde flere oplysninger i [Om Office 365-administratorroller](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
+Hvis der allerede er registreret en organisation (lejer), skal du have rollen Global administrator eller Faktureringsadministrator for Microsoft 365 for at købe abonnementer og licenser. Du kan finde flere oplysninger i [Om administratorroller i Microsoft 365](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
 Følg disse trin for at købe Premium-kapacitet.
 
-1. Vælg Office 365-appvælgeren i Power BI-tjenesten, og vælg derefter **Administrator**.
+1. Vælg Microsoft 365-appvælgeren i Power BI-tjenesten, og vælg derefter **Administrator**.
 
-    ![Office 365-appvælgeren](media/service-admin-premium-purchase/o365-app-picker.png)
+    ![Microsoft 365-appvælger](media/service-admin-premium-purchase/o365-app-picker.png)
 
     Du kan også navigere til Microsoft 365 Administration. Du kan komme dertil ved at gå til https://portal.office.com og vælge **Administrator**.
 
@@ -66,7 +66,7 @@ Nu, hvor du har en kapacitet, kan du tilføje mere, i takt med at dit behov voks
 
 1. Find det Power BI Premium-element, du vil købe flere af, under **Andre planer**.
 
-1. Peg på **ellipsen (...)** , og vælg derefter **Rediger licensantal**.
+1. Hold over **Flere indstillinger** (...), og vælg derefter **Skift antal licenser**.
 
     ![Skift antal licenser](media/service-admin-premium-purchase/premium-purchase-more.png)
 

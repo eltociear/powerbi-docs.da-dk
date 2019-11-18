@@ -3,19 +3,18 @@ title: Brug R-drevne Power BI-visualiseringer i Power BI
 description: Brug R-drevne Power BI-visualiseringer i Power BI
 author: KesemSharabi
 ms.author: kesharab
-manager: rkarlin
 ms.reviewer: ''
 ms.service: powerbi
-ms.subservice: powerbi-custom-visuals
 ms.topic: conceptual
+ms.subservice: powerbi-custom-visuals
 ms.date: 07/27/2018
 LocalizationGroup: Create reports
-ms.openlocfilehash: ab0c4a7bf529f878796ea4b41177e57d19c79128
-ms.sourcegitcommit: b7a9862b6da940ddebe61bc945a353f91cd0e4bd
+ms.openlocfilehash: 9cc5c40328955f54cb0f37567d7ff91d37a302ce
+ms.sourcegitcommit: 01de0b01f66f28ca45b8d309d7864f261d6c9a85
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71945245"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74128244"
 ---
 # <a name="use-r-powered-power-bi-visuals-in-power-bi"></a>Brug R-drevne Power BI-visualiseringer i Power BI
 
@@ -55,7 +54,7 @@ Her er den fremgangsmåde, du skal benytte for at gennemse og vælge visuals på
    * [CRAN](https://cran.r-project.org/)
    * [MRO](https://mran.microsoft.com/)
 
-4. Når det pågældende visual er downloadet (hvilket svarer til at downloade enhver anden fil via din browser), skal du gå til **Power BI Desktop** og klikke på ellipsen (...) i ruden **Visualiseringer** og vælge **Importér fra fil**.
+4. Når visualiseringen er downloadet (hvilket er ligesom at downloade enhver anden fil via din browser), skal du gå til **Power BI Desktop** og klikke på **Flere indstillinger** (...) i ruden **Visualiseringer**. Vælg derefter **Importér fra fil**.
 
    ![R-visualisering 4a](media/desktop-r-powered-custom-visuals/powerbi-r-powered-custom-viz_4a.png)
 5. Du bliver advaret om at importere en brugerdefineret visualisering, som vist på følgende billede:

@@ -2,7 +2,6 @@
 title: 'Hurtig introduktion: Opret forbindelse til data'
 description: Opret forbindelse til en datakilde i Power BI Desktop
 author: davidiseminger
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-desktop
@@ -10,12 +9,12 @@ ms.topic: quickstart
 ms.date: 05/08/2019
 ms.author: davidi
 LocalizationGroup: quickstart
-ms.openlocfilehash: 253ecbad775a2f4aa7dd1974c534fdcaa222676c
-ms.sourcegitcommit: 60dad5aa0d85db790553e537bf8ac34ee3289ba3
+ms.openlocfilehash: 1366a5281a36293a484f08c12ab9f8891e29123d
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "65514444"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73876202"
 ---
 # <a name="quickstart-connect-to-data-in-power-bi-desktop"></a>Hurtig introduktion: Opret forbindelse til data i Power BI Desktop
 
@@ -28,12 +27,12 @@ Hvis du ikke er tilmeldt Power BI, kan du [tilmelde dig en gratis prøveversion]
 ## <a name="prerequisites"></a>Forudsætninger
 
 Hvis du vil udføre trinnene i denne artikel, skal du gøre følgende:
-* Download og installér **Power BI Desktop**, som er et gratis program, der kører på den lokale computer. Du kan [downloade **Power BI Desktop**](https://powerbi.microsoft.com/desktop) direkte, eller du kan hente det i [**Microsoft Store**](http://aka.ms/pbidesktopstore).
-* [Download dette eksempel på en Excel-projektmappe](http://go.microsoft.com/fwlink/?LinkID=521962), og opret en mappe med navnet *C:\PBID-qs*, hvor du kan gemme Excel-filen. I efterfølgende trin i denne hurtige introduktion forudsættes det, at dette er filplaceringen for den downloadede Excel-projektmappe.
+* Download og installér **Power BI Desktop**, som er et gratis program, der kører på den lokale computer. Du kan [downloade **Power BI Desktop**](https://powerbi.microsoft.com/desktop) direkte, eller du kan hente det i [**Microsoft Store**](https://aka.ms/pbidesktopstore).
+* [Download dette eksempel på en Excel-projektmappe](https://go.microsoft.com/fwlink/?LinkID=521962), og opret en mappe med navnet *C:\PBID-qs*, hvor du kan gemme Excel-filen. I efterfølgende trin i denne hurtige introduktion forudsættes det, at dette er filplaceringen for den downloadede Excel-projektmappe.
 
 ## <a name="launch-power-bi-desktop"></a>Start Power BI Desktop
 
-Når du har installeret **Power BI Desktop**, skal du starte programmet, så det kører på den lokale computer. Du får vist et tomt lærred, hvor du kan oprette visuelle elementer og rapporter ud fra data, du opretter forbindelse til. 
+Når du har installeret **Power BI Desktop**, skal du starte programmet, så det kører på den lokale computer. Du bliver præsenteret for et Power BI-selvstudium. Følg selvstudiet, eller klik for at fjerne det. Start derefter med et tomt lærred, hvor du kan oprette visualiseringer og rapporter ud fra data, du opretter forbindelse til. 
 
 ![Power BI Desktop – tomt lærred](media/desktop-quickstart-connect-to-data/qs-connect-data_01.png)
 

@@ -11,14 +11,16 @@ ms.topic: conceptual
 ms.date: 09/23/2019
 ms.author: mihart
 LocalizationGroup: Common tasks
-ms.openlocfilehash: a52fdbefabf84df22c89b0e933d56352fedf5da1
-ms.sourcegitcommit: e2c5d4561455c3a4806ace85defbc72e4d7573b4
+ms.openlocfilehash: 3a4f120ec64376955433faf04e24dd0e8f623419
+ms.sourcegitcommit: 2aa83bd53faad6fb02eb059188ae623e26503b2a
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71327790"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73019813"
 ---
 # <a name="display-content-in-more-detail-focus-mode-and-full-screen-mode"></a>Vis indhold i flere detaljer: fokustilstand og fuldskærmstilstand
+
+[!INCLUDE [power-bi-service-new-look-include](../includes/power-bi-service-new-look-include.md)]    
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
 
@@ -43,7 +45,7 @@ Hvis du bruger Power BI – Mobil, er [fuld skærm tilgængelig for Windows 10 M
 
 Nogle situationer, hvor det giver mening at bruge fuldskærmstilstand, er følgende:
 
-* Præsentation af dit dashboard, felt, en visualisering eller en rapport på et møde eller en konference.
+* Præsentation af dit dashboard, felt, en visual eller en rapport på et møde eller en konference.
 * Visning på et kontor på en dedikeret stor skærm eller projektor.
 * Visning på en lille skærm.
 * Gennemse i låst tilstand – du kan røre skærmen eller holde musen over felter uden at åbne underliggende rapporter eller dashboards.
@@ -97,11 +99,11 @@ Der er to måder at åbne fokustilstand på; én måde for dashboardfelter og en
 
 1. Åbn et dashboard i Power BI-tjenesten.
 
-2. Hold over et dashboardfelt eller en rapportvisualisering, vælg ellipsen (...), og vælg **Åbn i fokustilstand**.
+2. Hold over et dashboardfelt eller en rapportvisualisering, vælg **Flere indstillinger** (...), og vælg **Åbn i fokustilstand**.
 
     ![ellipsemenu for felt](media/end-user-focus/power-bi-dashboard-focus.png).
 
-2. Feltet åbnes og hele rapportlærredet udfyldes. Bemærk, at du stadig har ruden **Filtre**, som du kan bruge til at interagere med visualiseringen. Ruden **Filtre** kan skjules. 
+2. Feltet åbnes og hele rapportlærredet udfyldes. Bemærk, at du stadig har ruden **Filtre**, som du kan bruge til at interagere med visualiseringen. Ruden **Filtre** kan skjules.
 
    ![feltet udfylder rapportlærred](media/end-user-focus/power-bi-focus-filter.png)
 

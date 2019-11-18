@@ -2,7 +2,6 @@
 title: Introduktion til datasæt på tværs af arbejdsområder (prøveversion)
 description: Få mere at vide om, hvordan du deler et datasæt med brugere på tværs af organisationen. De kan derefter oprette rapporter baseret på dit datasæt i deres egne arbejdsområder.
 author: maggiesMSFT
-manager: kfile
 ms.reviewer: chbraun
 ms.service: powerbi
 ms.subservice: powerbi-service
@@ -10,12 +9,12 @@ ms.topic: conceptual
 ms.date: 10/01/2019
 ms.author: maggies
 LocalizationGroup: Share your work
-ms.openlocfilehash: e086cc89a24760bce0c4a45efd558dc47495bd04
-ms.sourcegitcommit: 5e277dae93832d10033defb2a9e85ecaa8ffb8ec
+ms.openlocfilehash: d30a8012161934ada4ff3cb2ce6852fe62f48892
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72020783"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73877206"
 ---
 # <a name="intro-to-datasets-across-workspaces-preview"></a>Introduktion til datasæt på tværs af arbejdsområder (prøveversion)
 
@@ -62,7 +61,7 @@ De specifikke funktioner og oplevelser, der er baseret på funktioner for delte 
 
 ## <a name="considerations-and-limitations"></a>Overvejelser og begrænsninger
 
-- Som appudgiver skal du være sikker på, at din målgruppe har adgang til datasæt uden for apparbejdsområdet. Ellers vil brugerne opleve problemer, når de interagerer med din app: Rapporter åbnes ikke uden adgang til datasættet, og dashboardfelter vises som låste. Brugerne kan heller ikke åbne appen, hvis det første element i navigationen er en rapport, uden at have adgang til datasættet.
+- Som appudgiver skal du være sikker på, at din målgruppe har adgang til datasæt uden for arbejdsområdet. Ellers vil brugerne opleve problemer, når de interagerer med din app: Rapporter åbnes ikke uden adgang til datasættet, og dashboardfelter vises som låste. Brugerne kan heller ikke åbne appen, hvis det første element i navigationen er en rapport, uden at have adgang til datasættet.
 - Hvis du vil oprette en rapport oven på et datasæt i et andet arbejdsområde, kræver det, at den nye arbejdsområdeoplevelse er begge steder: Rapporten skal være i en ny arbejdsområdeoplevelse og datasættet skal være i en ny arbejdsområdeoplevelse.
 - I et klassisk arbejdsområde viser datasæts registreringsoplevelse kun datasættene i det pågældende arbejdsområde.
 - "Publicer på internettet" er designet til ikke at virke for en rapport, der er baseret på et delt datasæt.
@@ -73,4 +72,4 @@ De specifikke funktioner og oplevelser, der er baseret på funktioner for delte 
 - [Fremhæv datasæt](service-datasets-promote.md)
 - [Certificer datasæt](service-datasets-certify.md)
 - [Styr brugen af datasæt på tværs af arbejdsområder](service-datasets-admin-across-workspaces.md)
-- Har du spørgsmål? [Prøv at spørge Power BI-community'et](http://community.powerbi.com/)
+- Har du spørgsmål? [Prøv at spørge Power BI-community'et](https://community.powerbi.com/)

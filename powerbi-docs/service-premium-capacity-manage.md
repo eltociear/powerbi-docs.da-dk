@@ -3,7 +3,6 @@ title: Administrer Microsoft Power BI Premium-kapaciteter
 description: Beskriver administrationsopgaver for Power BI Premium-kapaciteter.
 author: mgblythe
 ms.author: mblythe
-manager: kfile
 ms.reviewer: ''
 ms.service: powerbi
 ms.subservice: powerbi-admin
@@ -11,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/10/2019
 ms.custom: seodec18
 LocalizationGroup: Premium
-ms.openlocfilehash: 1e8218e19ca3949a96a9c701e4a18f9fb088e2a1
-ms.sourcegitcommit: a6602d84c86d3959731a8d0ba39a522914f13d1a
+ms.openlocfilehash: 5e8becd877165f456793d99951544156a9314290
+ms.sourcegitcommit: 64c860fcbf2969bf089cec358331a1fc1e0d39a8
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 09/21/2019
-ms.locfileid: "71175218"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73881205"
 ---
 # <a name="managing-premium-capacities"></a>Administration af Premium-kapaciteter
 
@@ -42,7 +41,7 @@ Der skal være udpeget mindst én kapacitetsadministrator. Brugere, der er udpeg
 
 Kapacitetsadministratorer kan ikke få adgang til indhold i arbejdsområdet, medmindre der udtrykkeligt er tildelt tilladelser til arbejdsområdet. De har heller ikke adgang til alle områder i Power BI-administration (medmindre det udtrykkeligt er tildelt), f.eks. forbrugsdata, overvågningslogge eller lejerindstillinger. Kapacitetsadministratorer har heller ikke tilladelse til at konfigurere nye kapaciteter eller skalere eksisterende kapaciteter. Administratorer bliver tildelt pr. kapacitet, hvilket sikrer, at de kun kan få vist og administrere de kapaciteter, som de er blevet tildelt.
 
-Kapacitetsstørrelsen vælges på en tilgængelig liste over SKU-muligheder, som er begrænset af antallet af tilgængelige v-kerner i puljen. Det er muligt at oprette flere kapaciteter fra puljen, som kan købes fra en eller flere købte SKU'er. En P3-SKU (32 v-kerner) kan f.eks. bruges til at oprette tre kapaciteter: én P2 (16 v-kerner) og to P1 (2 x 8 v-kerner). Der kan opnås forbedret ydeevne og skalering ved at oprette mindre kapaciteter, som beskrevet i artiklen [Optimering af Premium-kapaciteter](service-premium-capacity-optimize.md). På følgende billede vises et eksempel på opsætning for den fiktive virksomhed Contoso bestående af fem Premium-kapaciteter (3 x P1 og 2 x P3), som hver især indeholder apparbejdsområder og flere arbejdsområder i en delt kapacitet.
+Kapacitetsstørrelsen vælges på en tilgængelig liste over SKU-muligheder, som er begrænset af antallet af tilgængelige v-kerner i puljen. Det er muligt at oprette flere kapaciteter fra puljen, som kan købes fra en eller flere købte SKU'er. En P3-SKU (32 v-kerner) kan f.eks. bruges til at oprette tre kapaciteter: én P2 (16 v-kerner) og to P1 (2 x 8 v-kerner). Der kan opnås forbedret ydeevne og skalering ved at oprette mindre kapaciteter, som beskrevet i artiklen [Optimering af Premium-kapaciteter](service-premium-capacity-optimize.md). På følgende billede vises et eksempel på konfiguration af den fiktive virksomhed Contoso bestående af fem Premium-kapaciteter (3 x P1 og 2 x P3), som hver især indeholder arbejdsområder herunder flere arbejdsområder i en delt kapacitet.
 
 ![Et eksempel på opsætning for den fiktive virksomhed Contoso](media/service-premium-capacity-manage/contoso-organization-example.png)
 
@@ -66,7 +65,7 @@ Det er muligt at slette en Premium-kapacitet, og det medfører ikke sletning af 
 
 ### <a name="assigning-workspaces-to-capacities"></a>Tildeling af arbejdsområder til kapaciteter
 
-Arbejdsområder kan tildeles til en Premium-kapacitet på Power BI-administrationsportalen eller i ruden **Arbejdsområde** for et apparbejdsområde.
+Arbejdsområder kan tildeles til en Premium-kapacitet på Power BI-administrationsportalen eller i ruden **Arbejdsområde** for et arbejdsområde.
 
 Kapacitetsadministratorer samt globale Office 365-administratorer eller administratorer af Power BI-tjenesten kan massetildele arbejdsområder på Power BI-administrationsportalen. Massetildelingen kan gælde for:
 

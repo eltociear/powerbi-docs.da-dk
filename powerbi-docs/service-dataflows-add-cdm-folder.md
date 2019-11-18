@@ -1,6 +1,6 @@
 ---
 title: Føj en CDM-mappe til Power BI som et dataflow
-description: Konfigurer et apparbejdsområde for at gemme definitionen af dataflowet og datafilerne i Azure Data Lake Storage Gen2
+description: Konfigurer et arbejdsområde for at gemme definitionen af dataflowet og datafilerne i Azure Data Lake Storage Gen2
 author: davidiseminger
 manager: kfile
 ms.reviewer: ''
@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.date: 04/02/2019
 ms.author: davidi
 LocalizationGroup: Data from files
-ms.openlocfilehash: bf2f9baff753b71563c9b5075d3b15be7ae833f9
-ms.sourcegitcommit: f05ba39a0e46cb9cb43454772fbc5397089d58b4
+ms.openlocfilehash: 3adc642d539ab8e1c1f1f60981a61fdc58a460ab
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68522756"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432035"
 ---
 # <a name="add-a-cdm-folder-to-power-bi-as-a-dataflow-preview"></a>Føj en CDM-mappe til Power BI som et dataflow (eksempelvisning)
 
@@ -33,7 +33,7 @@ I følgende afsnit beskrives, hvordan du opretter et dataflow fra en CDM-mappe.
 
 ## <a name="create-a-dataflow-from-a-cdm-folder"></a>Opret et dataflow fra en CDM-mappe
 
-Hvis du vil i gang med at oprette et dataflow fra en CDM-mappe, skal du åbne **Power BI-tjenesten** og vælge et **apparbejdsområde**i navigationsruden til venstre. Du kan også oprette et nyt arbejdsområde, hvor du kan oprette dit nye dataflow.
+Du kommer i gang med at oprette et dataflow fra en CDM-mappe ved at åbne **Power BI-tjenesten** og vælge et **arbejdsområde** i navigationsruden til venstre. Du kan også oprette et nyt arbejdsområde, hvor du kan oprette dit nye dataflow.
 
 ![Opret et dataflow i Power BI-tjenesten](media/service-dataflows-add-cdm-folder/dataflow-from-cdm-folder_02.jpg)
 
@@ -72,9 +72,9 @@ Punkterne på følgende liste skal også tages i betragtning:
 * Linkede objekter er ikke tilgængelige for dataflow, der er oprettet via CDM-mapper
 
 
-**Power BI Desktop**-kunderne kan ikke få adgang til dataflow, der er gemt under Azure Data Lake Storage Gen2-kontoen, medmindre de er ejer af dataflowet, eller de udtrykkeligt er godkendt til dataflowets CDM-mappe. Se følgende eksempel:
+**Power BI Desktop**-kunderne kan ikke få adgang til dataflow, der er gemt under Azure Data Lake Storage Gen2-kontoen, medmindre de er ejer af dataflowet, eller de udtrykkeligt er godkendt til dataflowets CDM-mappe. Overvej følgende situation:
 
-1.  Anna opretter et nyt apparbejdsområde og konfigurerer det til at gemme dataflow fra en CDM-mappe.
+1.  Anna opretter et nyt arbejdsområde og konfigurerer det til at gemme dataflow fra en CDM-mappe.
 2.  Ben, der også er medlem af det arbejdsområde, Anna har oprettet, vil gerne bruge Power BI Desktop og dataflowconnectoren til at hente data fra det dataflow, Anna har oprettet.
 3.  Ben får vist en fejl, da han ikke er føjet til dataflowets CDM-mappe som en godkendt bruger i datasøen.
 

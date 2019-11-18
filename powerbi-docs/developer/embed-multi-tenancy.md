@@ -9,12 +9,12 @@ ms.service: powerbi
 ms.subservice: powerbi-developer
 ms.topic: conceptual
 ms.date: 01/11/2019
-ms.openlocfilehash: 3940f677cadc5844cfac9c32781a5586bde0607a
-ms.sourcegitcommit: ba95d4979f1869f49a7d266c591f95e2810fdb29
+ms.openlocfilehash: 3b33e2479ad114a2224c16c9d43e7797784624fc
+ms.sourcegitcommit: 8cc2b7510aae76c0334df6f495752e143a5851c4
 ms.translationtype: HT
 ms.contentlocale: da-DK
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69621282"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73429642"
 ---
 # <a name="manage-multi-tenancy-with-power-bi-embedded-analytics"></a>Administrer flere lejere med Power BI Embedded-analyse
 
@@ -37,7 +37,7 @@ I denne artikel beskrives og analyseres de forskellige tilgange i forhold til fl
 
 **Lejer** – en enkelt kunde (organisation), der bruger SaaS-programmet og alle de ressourcer eller data, som kunden placerer i SaaS-programmet.
 
-**[Power BI](../power-bi-overview.md)** – Power BI-cloudtjenesten, der fungerer som en platform for Power BI Embedded.
+**[Power BI](../fundamentals/power-bi-overview.md)** – Power BI-cloudtjenesten, der fungerer som en platform for Power BI Embedded.
 
 **Power BI-lejer** – et sæt Power BI-ressourcer, der er forbundet med en enkelt AAD-lejer.
 
@@ -55,7 +55,7 @@ I denne artikel beskrives og analyseres de forskellige tilgange i forhold til fl
 
 **Kapacitet** – et sæt ressourcer, der er dedikeret til at køre Power BI-tjenesten. [Power BI Premium-kapaciteter](../service-premium-what-is.md) – beregnet til virksomheder, der bruger Power BI internt, mens [Power BI Embedded-kapaciteter](azure-pbie-create-capacity.md) er beregnet til programudviklere til at udvikle SaaS-programmer til tredjeparter.
 
-**[Power BI Pro-licens](../service-admin-purchasing-power-bi-pro.md)** – en brugerbaseret licens, der giver rettigheder til at publicere indhold i apparbejdsområder, forbruge apps uden Premium-kapacitet, dele dashboards og abonnere på dashboards og rapporter.
+**[Power BI Pro-licens](../service-admin-purchasing-power-bi-pro.md)** – en brugerbaseret licens, der giver rettigheder til at publicere indhold i arbejdsområder, forbruge apps uden Premium-kapacitet, dele dashboards og abonnere på dashboards og rapporter.
 
 **[Data-forbindelsestilstande](../desktop-directquery-about.md)** – knytter datakilder til Power BI, hvilket kan gøres i forskellige tilstande:
 
